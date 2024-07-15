@@ -17,16 +17,16 @@ ht-degree: 51%
 
 # Portal de Forms | Gestión de datos de usuario {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] El portal proporciona componentes que puede utilizar para ver una lista de los formularios adaptables, los formularios de HTML5 y otros recursos de Forms en [!DNL AEM Sites] página. Asimismo, puede configurarla para que muestre los borradores, los formularios adaptables enviados y los formularios HTML5 de un usuario que ha iniciado sesión. Para obtener más información sobre el portal de Forms, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
+El portal [!DNL AEM Forms] proporciona componentes que puede utilizar para ver una lista de los formularios adaptables, los formularios de HTML5 y otros recursos de Forms en la página [!DNL AEM Sites]. Asimismo, puede configurarla para que muestre los borradores, los formularios adaptables enviados y los formularios HTML5 de un usuario que ha iniciado sesión. Para obtener más información sobre el portal de Forms, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
 
-Cuando un usuario que ha iniciado sesión guarda un formulario adaptable como borrador o lo envía, se muestra en las pestañas Borradores y Envíos del portal de Forms. AEM Los datos de los formularios redactados o enviados se almacenan en el almacén de datos configurado para la implementación de la. Los borradores y los envíos de los usuarios anónimos no se muestran en la página del portal de Forms; sin embargo, los datos se almacenan en el almacén de datos configurado. Consulte [Configurar servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
+Cuando un usuario que ha iniciado sesión guarda un formulario adaptable como borrador o lo envía, se muestra en las pestañas Borradores y Envíos del portal de Forms. AEM Los datos de los formularios redactados o enviados se almacenan en el almacén de datos configurado para la implementación de la. Los borradores y los envíos de los usuarios anónimos no se muestran en la página del portal de Forms; sin embargo, los datos se almacenan en el almacén de datos configurado. Consulte [Configuración de servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Almacenamiento de datos y datos de usuarios {#user-data-and-data-stores}
 
 El portal de Forms almacena los datos de los borradores y los formularios enviados en los siguientes casos:
 
 * La acción de envío configurada en el formulario adaptable es **Acción de envío del portal de formularios**.
-* Para acciones de envío distintas de **Acción de envío del portal de Forms**, el **[!UICONTROL Almacenar datos en Forms Portal]** está activada en la **[!UICONTROL Envío]** propiedades del contenedor de formulario adaptable.
+* Para las acciones de envío distintas de **Acción de envío del portal de Forms**, la opción **[!UICONTROL Almacenar datos en el portal de Forms]** está habilitada en las propiedades **[!UICONTROL Envío]** del contenedor del formulario adaptable.
 
 El portal de Forms almacena los siguientes datos sobre todos los borradores y los formularios enviados de los usuarios anónimos y los usuarios que han iniciado sesión:
 
@@ -67,7 +67,7 @@ Puede acceder a los datos de los borradores y los formularios enviados de los us
 
 ### Instancias de AEM {#aem-instances}
 
-Todos los datos de los borradores y los formularios enviados de las instancias de AEM (de autor, publicación o remotas) de los usuarios que han iniciado sesión y los usuarios anónimos se almacenan en el nodo `/content/forms/fp/` del repositorio de AEM aplicable. Cada vez que un usuario anónimo o con la sesión iniciada guarda un borrador o envía un formulario, `draft ID` o `submission ID`, a `user data ID`, y un aleatorio `ID` para cada archivo adjunto (si corresponde). Se asocia al borrador o al envío respectivo.
+Todos los datos de los borradores y los formularios enviados de las instancias de AEM (de autor, publicación o remotas) de los usuarios que han iniciado sesión y los usuarios anónimos se almacenan en el nodo `/content/forms/fp/` del repositorio de AEM aplicable. Cada vez que un usuario anónimo o con la sesión iniciada guarda un borrador o envía un formulario, se genera un `draft ID` o `submission ID`, un `user data ID` y un `ID` aleatorio para cada archivo adjunto (si corresponde). Se asocia al borrador o al envío respectivo.
 
 #### Acceder a los datos de usuario {#access-user-data}
 

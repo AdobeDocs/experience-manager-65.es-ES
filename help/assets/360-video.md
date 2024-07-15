@@ -27,29 +27,29 @@ En esta sección se describe el trabajo con el visualizador de vídeo 360/VR par
 
 Actualmente no se admite audio espacial; si el audio se mezcla en estéreo, el equilibrio (I/D) no cambia a medida que el cliente cambia el ángulo de visión de la cámara.
 
-Consulte también [Administrar ajustes preestablecidos del visor](/help/assets/managing-viewer-presets.md).
+Consulte también [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md).
 
 ## Vídeo 360 en acción {#video-in-action}
 
-Seleccionar [Estación Espacial 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del explorador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero del mouse a una nueva ubicación para cambiar el ángulo de visualización.
+Seleccione [Estación espacial 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del explorador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero del mouse a una nueva ubicación para cambiar el ángulo de visualización.
 
-![Muestra de 360 videos con la estación espacial internacional flotando en el espacio exterior y la tierra y el sol detrás de ella.](assets/6_5_360videoiss_simplified.png)
+![Muestra de 360 vídeos con la estación espacial internacional flotando en el espacio exterior y la tierra y el sol detrás.](assets/6_5_360videoiss_simplified.png)
 *Fotograma de vídeo de la Estación Espacial 360*
 
 ## Vídeo 360/VR y Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
 Puede utilizar Adobe Premier Pro para ver y editar material de archivo de 360/VR. Por ejemplo, puede colocar logotipos y texto correctamente en una escena y aplicar efectos y transiciones diseñados específicamente para medios equirectangulares.
 
-Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
+Ver [Editar vídeo de 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Carga de recursos para utilizarlos con el visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 
-360 recursos de vídeo cargados en Adobe Experience Manager están etiquetados como **Multimedia** en una página de recursos, similar al recurso de vídeo normal.
+360 recursos de vídeo que se han cargado en Adobe Experience Manager están etiquetados como **Multimedia** en una página de Asset, de manera similar a un recurso de vídeo normal.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*Un recurso de vídeo de 360 cargado que se ve en la vista de tarjeta. El recurso está etiquetado como Multimedia.*
+*Se ha cargado un recurso de vídeo de 360 visualizado en la vista de tarjeta. El recurso está etiquetado como Multimedia.*
 
-**Cargar recursos para utilizarlos con el visor de vídeo 360:**
+**Cargar recursos para usarlos con el visor de vídeo 360:**
 
 1. Se ha creado una carpeta dedicada a su recurso de vídeo 360.
 1. [Aplicar un perfil de vídeo adaptable a la carpeta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -79,16 +79,16 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit
 
 Para que un recurso cargado se califique como vídeo 360 que desea utilizar con el visualizador de vídeo 360, el recurso debe tener una proporción de aspecto de 2.
 
-De forma predeterminada, el Experience Manager detecta el vídeo como &quot;360&quot; si su relación de aspecto (anchura/altura) es 2,0. Si es administrador, puede anular la configuración de proporción de aspecto predeterminada de 2 estableciendo la opción opcional `s7video360AR` propiedad en el CRXDE Lite en lo siguiente:
+De forma predeterminada, el Experience Manager detecta el vídeo como &quot;360&quot; si su relación de aspecto (anchura/altura) es 2,0. Si es administrador, puede anular la configuración predeterminada de proporción de aspecto de 2 estableciendo la propiedad opcional `s7video360AR` en el CRXDE Lite en el siguiente enlace:
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
    * **Tipo de propiedad** - Doble
-   * **Valor** - relación de aspecto de punto flotante, predeterminada 2,0.
+   * **Valor** - proporción de aspecto de punto flotante, valor predeterminado 2.0.
 
 Después de establecer esta propiedad, se aplica inmediatamente tanto a los vídeos existentes como a los vídeos cargados recientemente.
 
-La proporción de aspecto se aplica a 360 recursos de vídeo para la página de detalles de recursos y la [Componente WCM multimedia del vídeo 360](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components).
+La proporción de aspecto se aplica a 360 recursos de vídeo para la página de detalles de recursos y el [componente WCM de medios de vídeo 360](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components).
 
 Comience por cargar 360 vídeos.
 
@@ -100,43 +100,43 @@ Consulte también [Editar ajustes preestablecidos de visor](/help/assets/managin
 
 Cuando esté satisfecho con el vídeo 360, puede publicarlo.
 
-Consulte [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
-Consulte [Vinculación de URL en la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
-Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Ver [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
+Ver [URL de vínculo a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Para obtener una vista previa del vídeo 360:**
 
-1. Entrada **[!UICONTROL Assets]**, navegue hasta un vídeo 360 existente que haya creado. Seleccione el recurso de vídeo 360 para poder abrirlo en el modo de vista previa.
+1. En **[!UICONTROL Assets]**, desplácese hasta un vídeo 360 existente que haya creado. Seleccione el recurso de vídeo 360 para poder abrirlo en el modo de vista previa.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
    Seleccione el recurso de vídeo de 360 bits para poder previsualizar el vídeo.
 
-1. En la página de vista previa, cerca de la esquina superior izquierda de la página, seleccione la lista desplegable y, a continuación, seleccione **[!UICONTROL Espectadores]**.
+1. En la página de vista previa, cerca de la esquina superior izquierda de la página, selecciona la lista desplegable y luego selecciona **[!UICONTROL Visualizadores]**.
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
-   En la lista Visualizadores, seleccione **[!UICONTROL Video360_social]**, a continuación, realice una de las siguientes acciones:
+   En la lista Visualizadores, seleccione **[!UICONTROL Video360_social]** y, a continuación, siga uno de estos procedimientos:
 
    * Arrastre el puntero del ratón por el vídeo si desea modificar el ángulo de visualización de la escena estática.
-   * Seleccione el del vídeo **[!UICONTROL Reproducir]** si desea iniciar la reproducción. A medida que se reproduce el vídeo, arrastre el puntero del mouse (ratón) por el vídeo para modificar el ángulo de visualización.
+   * Seleccione el botón **[!UICONTROL Reproducir]** del vídeo si desea que comience la reproducción. A medida que se reproduce el vídeo, arrastre el puntero del mouse (ratón) por el vídeo para modificar el ángulo de visualización.
 
-   ![Captura de pantalla de la estación espacial internacional flotando en el espacio exterior con la Tierra y el Sol de fondo ](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 vídeos.*
+   ![Captura de pantalla de la estación espacial internacional flotando en el espacio exterior con la Tierra y el Sol en segundo plano ](assets/6_5_360video-preview-video360-social.png)*Captura de pantalla de 360 píxeles.*
 
    * En la lista Visualizadores, seleccione **[!UICONTROL Video360VR]**.
 
      El vídeo de realidad virtual (VR) es contenido de vídeo envolvente al que se accede mediante auriculares de realidad virtual. Al igual que con los vídeos normales, puede crear vídeos de realidad virtual al principio cuando se graba o captura un vídeo con cámaras de vídeo de 360 grados.
 
-   ![Captura de pantalla de un primer plano de la estación espacial internacional flotando en el espacio exterior con la tierra y el sol parcialmente visibles en el fondo](assets/6_5_360video-preview-video360vr.png)
-   *Captura de pantalla de un vídeo de RV 360.*
+   ![Captura de pantalla de un primer plano de la estación espacial internacional flotando en el espacio ultraterrestre con la Tierra y el Sol parcialmente visibles en segundo plano](assets/6_5_360video-preview-video360vr.png)
+   *Captura de pantalla de un vídeo de RV de 360.*
 
 1. Cerca de la parte superior derecha de la página de vista previa, seleccione **[!UICONTROL Cerrar]**.
 
 ## Publicación de vídeo 360 {#publishing-video}
 
-Publique el vídeo 360 para poder utilizarlo. La publicación de un vídeo 360 activa la URL y el código de incrustación. También publica el vídeo 360 en la nube de Dynamic Media, que está integrado con una CDN para una entrega escalable y con rendimiento.
+Publish el vídeo 360 para que pueda utilizarlo. La publicación de un vídeo 360 activa la URL y el código de incrustación. También publica el vídeo 360 en la nube de Dynamic Media, que está integrado con una CDN para una entrega escalable y con rendimiento.
 
-Consulte [Publicar recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar el vídeo 360.
-Consulte también [Incrustar el visualizador de imágenes o vídeos en una página web](/help/assets/embed-code.md).
-Consulte también [Vinculación de URL en la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
-Consulte también [Añadir recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Consulte [Recursos de Publish Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar vídeo de 360.
+Consulte también [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
+Ver también [URL de vínculo a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+Consulte también [Agregar recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).

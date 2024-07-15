@@ -38,7 +38,7 @@ Puede realizar las siguientes acciones para procesar un elemento de trabajo:
    * Si el elemento de trabajo se ha asignado a un grupo y luego se ha delegado a un usuario, los miembros del grupo y el grupo están disponibles.
    * Si el elemento de trabajo se asignó a un único usuario, el elemento de trabajo no se puede delegar.
 
-* **Retroceder un paso**
+* **Retroceder**
 
   Si descubre que un paso o una serie de pasos debe repetirse, puede retroceder. Esto permite seleccionar un paso que se produjo anteriormente en el flujo de trabajo para volver a procesarlo. El flujo de trabajo vuelve al paso especificado y continúa desde ahí.
 
@@ -48,7 +48,7 @@ Puede realizar las siguientes acciones para procesar un elemento de trabajo:
 
 Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**), aparecen varias alertas o notificaciones:
 
-* El **Estado** de la consola Sitios web indica cuándo una página está en un flujo de trabajo:
+* La columna **Estado** de la consola Sitios web indica cuándo una página está en un flujo de trabajo:
 
   ![workflowstatus-1](assets/workflowstatus-1.png)
 
@@ -60,25 +60,25 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
 
 Después de realizar la acción indicada, puede completar el elemento de trabajo, lo que permite que el flujo de trabajo continúe. Utilice el siguiente procedimiento para completar el elemento de trabajo.
 
-1. Seleccione el paso del flujo de trabajo y haga clic en **Completar** en la barra de navegación superior.
-1. En el cuadro de diálogo resultante, seleccione **Paso siguiente**; es decir, el paso que se ejecutará a continuación. Una lista desplegable muestra todos los destinos adecuados. A **Comentario** también se puede introducir.
+1. Seleccione el paso del flujo de trabajo y haga clic en el botón **Completar** de la barra de navegación superior.
+1. En el cuadro de diálogo resultante, seleccione **Siguiente paso**; es decir, el paso que se ejecutará a continuación. Una lista desplegable muestra todos los destinos adecuados. **También se puede escribir un comentario**.
 
-   ![workflow complete](assets/workflowcomplete.png)
+   ![flujo de trabajo completado](assets/workflowcomplete.png)
 
    El número de pasos enumerados depende del diseño del modelo del flujo de trabajo.
 
-1. Clic **OK** para confirmar la acción.
+1. Haga clic en **Aceptar** para confirmar la acción.
 
 ### Delegación de una etapa de participante  {#delegating-a-participant-step}
 
 Utilice el siguiente procedimiento para delegar un elemento de trabajo.
 
-1. Haga clic en **Delegar** en la barra de navegación superior.
-1. En el cuadro de diálogo, utilice la lista desplegable para seleccionar la variable **Usuario** para delegar el elemento de trabajo a. También puede agregar un **Comentario**.
+1. Haga clic en el botón **Delegar** de la barra de navegación superior.
+1. En el cuadro de diálogo, utilice la lista desplegable para seleccionar el **Usuario** al que delegar el elemento de trabajo. También puede agregar un **comentario**.
 
-   ![workflowdelegate](assets/workflowdelegate.png)
+   ![delegado de flujo de trabajo](assets/workflowdelegate.png)
 
-1. Clic **OK** para confirmar la acción.
+1. Haga clic en **Aceptar** para confirmar la acción.
 
 ### Realización de un paso hacia atrás durante el paso de participante {#performing-step-back-on-a-participant-step}
 

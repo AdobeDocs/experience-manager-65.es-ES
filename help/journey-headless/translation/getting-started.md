@@ -81,7 +81,7 @@ El arquitecto de contenido trabaja al principio del proyecto para definir esta e
 
 Dado que los modelos de contenido definen la estructura de tu contenido, debes saber qué campos de los modelos se deben traducir. Normalmente, se trabaja con el arquitecto de contenido para definir esto. Para examinar los campos de los modelos de contenido, siga los pasos a continuación.
 
-1. Vaya a **Herramientas** > **Assets** > **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas** > **Assets** > **Modelos de fragmentos de contenido**.
 1. Los modelos de fragmento de contenido generalmente se almacenan en una estructura de carpetas. Haga clic en la carpeta del proyecto.
 1. Se enumeran los modelos. Haga clic en el modelo para ver los detalles.
    ![Modelos de fragmentos de contenido](assets/content-fragment-models.png)
@@ -92,11 +92,11 @@ Dado que los modelos de contenido definen la estructura de tu contenido, debes s
 1. Haga clic en uno de los campos del modelo. AEM los marca y los detalles de ese campo se muestran en la columna derecha.
    ![Detalle del Editor de modelos de fragmento de contenido](assets/content-fragment-model-editor-detail.png)
 
-Tome nota del campo **Nombre de propiedad** para todos los campos que se deben traducir. Necesitará esta información más adelante en el recorrido. Estos **Nombre de propiedad** AEM Es necesario para informar a los usuarios de qué campos del contenido deben traducirse.
+Tome nota del campo **Nombre de propiedad** para todos los campos que se deben traducir. Necesitará esta información más adelante en el recorrido. AEM Estos **nombres de propiedad** s son necesarios para informar a los usuarios de los campos de su contenido que deben traducirse.
 
 >[!TIP]
 >
->Generalmente, el arquitecto de contenido proporciona al especialista en traducción la **Nombre de propiedad** es de todos los campos necesarios para la traducción. Estos nombres de campo son necesarios para más adelante en el recorrido. Los pasos anteriores se proporcionan para la comprensión del especialista en traducción.
+>Por lo general, el arquitecto de contenido proporciona al especialista en traducción los **nombres de propiedad** s de todos los campos necesarios para la traducción. Estos nombres de campo son necesarios para más adelante en el recorrido. Los pasos anteriores se proporcionan para la comprensión del especialista en traducción.
 
 ### Fragmentos de contenido {#content-fragments}
 
@@ -183,7 +183,7 @@ Ahora que ha completado esta parte del recorrido de traducción sin encabezado, 
 * Comprender cómo AEM almacena contenido sin encabezado.
 * Estar familiarizado con las herramientas de traducción de AEM.
 
-AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento a continuación [Configuración de la integración de traducción](configure-connector.md) AEM donde aprenderá a conectarse a un servicio de traducción de forma gratuita.|
+AEM Aproveche este conocimiento y continúe con su recorrido AEM de traducción sin encabezado de la revisando el documento [Configure the translation integration](configure-connector.md), donde aprenderá a conectarse a un servicio de traducción de manera que pueda obtener más información sobre cómo conectarse a un servicio de traducción de manera más rápida y sencilla.|
 
 ## Recursos adicionales {#additional-resources}
 

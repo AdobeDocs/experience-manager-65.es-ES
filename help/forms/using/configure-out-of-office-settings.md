@@ -45,7 +45,7 @@ Realice los siguientes pasos para habilitar la configuración de Fuera de la ofi
 1. Seleccione el botón **[!UICONTROL Habilitar/Deshabilitar]** para habilitar la configuración de Fuera de la oficina.
 1. Especifique la **[!UICONTROL Hora de inicio]** y la **[!UICONTROL Hora de finalización]** para la configuración. Los elementos se delegarán únicamente durante el período especificado. Deje el campo **[!UICONTROL Hora de finalización]** vacío para delegar los elementos durante un período de tiempo indefinido.
 1. Seleccione la casilla de verificación **[!UICONTROL Reenviar mis elementos durante este periodo]**. Si no selecciona la opción y no especifica un usuario asignado, los elementos no se reenvían a ningún usuario. Aunque no esté presente y la configuración esté habilitada, los elementos permanecerán en la Bandeja de entrada.
-1. Seleccione **[!UICONTROL Agregar usuario asignado]**. Especifique un usuario en la **[!UICONTROL Asignado]** para que pueda delegar los elementos. Especifique el **[!UICONTROL Modelo de flujo de trabajo]** para poder delegar en el usuario especificado. Puede seleccionar más de un modelo de flujo de trabajo.
+1. Seleccione **[!UICONTROL Agregar usuario asignado]**. Especifique un usuario en el campo **[!UICONTROL Usuario asignado]** para que pueda delegar los elementos. Especifique el **[!UICONTROL Modelo de flujo de trabajo]** para que pueda delegar al usuario especificado. Puede seleccionar más de un modelo de flujo de trabajo.
 
    Además, para asignar todos los elementos a un usuario determinado independientemente del modelo de flujo de trabajo, seleccione **[!UICONTROL Todos los flujos de trabajo]** en la lista desplegable Modelo de flujo de trabajo. <br>
 

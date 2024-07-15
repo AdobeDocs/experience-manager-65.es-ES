@@ -18,13 +18,13 @@ ht-degree: 7%
 
 # Primeros pasos para los autores{#first-steps-for-authors}
 
-Esta sección le ofrece una descripción general de las tareas principales que utilizará al [inicio del contenido de creación](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) con Adobe Experience Manager AEM ().
+Esta sección le ofrece una descripción general de las tareas principales que utilizará al [empezar a crear contenido](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) con Adobe Experience Manager AEM ().
 
 Abarca:
 
-* [Primeros pasos](#getting-started): detalla la secuencia básica de eventos que necesita para crear y publicar su primera página.
+* [Introducción](#getting-started): Detalla la secuencia básica de eventos que necesitas para crear y publicar tu primera página.
 
-* [Acciones adicionales](#further-actions): Continúe con las muchas otras acciones que puede utilizar durante la creación.
+* [Acciones adicionales](#further-actions): Siguiendo con las muchas otras acciones que puede usar durante la creación.
 
 ## Introducción {#getting-started}
 
@@ -32,7 +32,7 @@ Estos detallan la secuencia básica de eventos que necesita para crear y publica
 
 ### Navegación a la ubicación de la página {#navigating-to-the-page-location}
 
-El contenido del sitio web se mantiene en una estructura de árbol. Para crear o editar una página, debe desplazarse a la ubicación con el [Consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#navigating-with-the-websites-console).
+El contenido del sitio web se mantiene en una estructura de árbol. Para crear o editar una página, debes navegar a la ubicación con la [Consola de sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#navigating-with-the-websites-console).
 
 ### Creación de una nueva página {#creating-a-new-page}
 
@@ -40,11 +40,11 @@ Antes de editar, debe [crear una página](/help/sites-classic-ui-authoring/class
 
 ### Abrir una página {#opening-a-page}
 
-Para realizar muchas acciones, como editar, debe [abrir una página](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
+Para muchas acciones, como editar, debes [abrir una página](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
 ### Edición de una página {#editing-a-page}
 
-Tanto si la instancia ya tiene páginas existentes como si ha creado una nueva página usted mismo puede [editar una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) por:
+Tanto si su instancia ya tiene páginas existentes como si ha creado una nueva página usted mismo, puede [editar una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) mediante:
 
 * [Inserción de un componente (párrafo)](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#inserting-a-component)
 * [Edición de un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)
@@ -52,13 +52,13 @@ Tanto si la instancia ya tiene páginas existentes como si ha creado una nueva p
 * [Eliminación de un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#deleting-a-component)
 * [Cortar/copiar/pegar un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Deshacer y rehacer modificaciones de páginas](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
-* [Uso del modo de previsualización](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (para ver qué aspecto tendrá cuando se publique)
+* [Usando el modo de vista previa](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (para ver qué aspecto tendrá cuando se publique)
 * [Bloquear una página  ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Desbloquear una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Publicación de una página {#publishing-a-page}
 
-Una vez que haya terminado de editar la página, debe hacer lo siguiente [publicar (o activar) su página](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10) para que esté disponible para los visitantes del sitio web.
+Una vez que haya terminado de editar su página, querrá [publicar (o activar) su página](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10) para que esté disponible para los visitantes de su sitio web.
 
 ## Acciones adicionales {#further-actions}
 
@@ -66,15 +66,15 @@ Además de los pasos básicos, hay muchas otras acciones disponibles durante la 
 
 ### Copiar una página {#copying-a-page}
 
-A veces es más fácil [copia de una página](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#copying-and-pasting-a-page) y vuelva a utilizar el contenido en lugar de volver a crear todo desde cero.
+A veces es más fácil [copiar una página](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#copying-and-pasting-a-page) y reutilizar el contenido en lugar de volver a crear todo desde cero.
 
 ### Mover una página o cambiarle el nombre {#moving-or-renaming-a-page}
 
-[Mover páginas y cambiarles el nombre](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#moving-or-renaming-page) se realiza básicamente con la misma acción.
+[Básicamente, mover y cambiar el nombre de las páginas](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#moving-or-renaming-page) se completó con la misma acción.
 
 ### Cancelar la publicación de una página {#unpublishing-a-page}
 
-Para que el contenido publicado anteriormente (o activado) no esté disponible en el sitio web público, debe [cancelar la publicación (o desactivar) de la página](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
+Para que el contenido publicado (o activado) anteriormente no esté disponible en el sitio web público, debe [cancelar la publicación (o desactivar) de la página](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
 
 ### Eliminar una página {#deleting-a-page}
 
@@ -82,12 +82,12 @@ Si ya no necesita una página, es posible que desee [eliminar la página](/help/
 
 ### Configuración de las propiedades de página {#setting-the-page-properties}
 
-Cada [La página tiene propiedades](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) que puede definir para determinar aspectos de su funcionamiento.
+Cada [página tiene propiedades](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) que puede definir para determinar aspectos de su funcionamiento.
 
 ### Crear una versión de una página {#creating-a-version-of-a-page}
 
-Puede [crear una versión de una página](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version) y luego [volver a una versión](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) si es necesario.
+Puede [crear una versión de una página](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version) y luego [revertir a una versión](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) si es necesario.
 
 ## Más información {#more-information}
 
-El acceso a más información sobre la creación se encuentra en [Creación de páginas](/help/sites-classic-ui-authoring/classic-page-author.md) y [Uso del entorno de creación](/help/sites-classic-ui-authoring/author-env.md).
+Encontrará más información sobre la creación en [Creación de páginas](/help/sites-classic-ui-authoring/classic-page-author.md) y [Trabajo con el entorno de creación](/help/sites-classic-ui-authoring/author-env.md).

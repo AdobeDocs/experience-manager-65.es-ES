@@ -19,7 +19,7 @@ ht-degree: 59%
 Si está experimentando lo que cree que es un comportamiento incorrecto o un error en MSM, antes de comenzar y realizar la solución de problemas detallada, asegúrese de lo siguiente:
 
 * Lea las [Preguntas más frecuentes sobre MSM](#faq), pues es posible que sus problemas o preguntas ya se hayan solucionado allí.
-* Compruebe la [Artículo de prácticas recomendadas de MSM](msm-best-practices.md) como varios consejos se ofrecen allí junto con aclaraciones de algunos conceptos erróneos.
+* Lea el [artículo de prácticas recomendadas de MSM](msm-best-practices.md), ya que se ofrecen varias sugerencias y aclaraciones sobre algunos conceptos erróneos.
 
 ## Búsqueda de información avanzada sobre el modelo y el estado de Live Copy {#advanced-info}
 
@@ -44,7 +44,7 @@ Los servlets anteriores devolvían información calculada basada en los nodos y 
 
 * `cq:LiveSync` tipo de mezcla
    * Esto está configurado en los nodos `jcr:content` y define las páginas raíz de Live Copy.
-   * Esas páginas tienen un `cq:LiveSyncConfig` nodo secundario de tipo `cq:LiveCopy` que contienen información básica y obligatoria sobre Live Copy a través de las siguientes propiedades:
+   * Estas páginas tienen un nodo secundario `cq:LiveSyncConfig` de tipo `cq:LiveCopy` que contiene información básica y obligatoria sobre Live Copy a través de las siguientes propiedades:
       * `cq:master` apunta a la página de modelo de Live Copy.
       * `cq:rolloutConfigs` indica las configuraciones de despliegue activas aplicadas a Live Copy.
       * `cq:isDeep` es verdadero si las páginas secundarias de esta página raíz de Live Copy están incluidas en Live Copy.
@@ -84,12 +84,12 @@ Como alternativa, puede hacer lo siguiente:
 
 Si se despliega una página de modelo, actualiza su página de Live Copy o crea una nueva página de Live Copy si aún no existe. Por ejemplo, cuando se despliega por primera vez o cuando la página de Live Copy se eliminó manualmente.
 
-Sin embargo, en este último caso, si una página sin `cq:LiveRelationship` La propiedad existe con el mismo nombre. El nombre de esta página cambia antes de crear la página Live Copy.
+Sin embargo, en este último caso, si una página sin una propiedad `cq:LiveRelationship` existe con el mismo nombre, se cambia el nombre de esta página antes de crear la página Live Copy.
 
 De forma predeterminada, el despliegue espera una página de Live Copy vinculada, a la que se implementan las actualizaciones de los modelos. O bien, no espera ninguna página cuando se crea una página Live Copy.
 
 Si se encuentra una página &quot;independiente&quot;, MSM elige cambiar el nombre de esta página y crear una página de Live Copy separada y vinculada.
 
-Esta página independiente en un subárbol de Live Copy suele ser el resultado de una **Desasociar** o la página anterior de Live Copy fue eliminada manualmente por un autor y luego recreada con el mismo nombre.
+Esta página independiente en un subárbol de Live Copy suele ser el resultado de una operación **Desasociar**, o bien la página anterior de Live Copy fue eliminada manualmente por un autor y luego recreada con el mismo nombre.
 
-Para evitarlo, utilice la Live Copy **Suspender** función en lugar de **Desasociar**. Más detalles sobre la **Desasociar** La acción se puede encontrar en [este artículo.](msm-livecopy.md)
+Para evitarlo, usa la característica de Live Copy **Suspender** en lugar de **Desasociar**. Encontrará más detalles sobre la acción **Desasociar** en [este artículo.](msm-livecopy.md)

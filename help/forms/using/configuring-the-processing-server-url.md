@@ -18,7 +18,7 @@ ht-degree: 62%
 
 # Configurar AEM DS{#configuring-aem-ds-settings}
 
-Este artículo describe cómo configurar el **AEM Servicio de configuración de DS**. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
+AEM Este artículo describe cómo configurar el **Servicio de configuración de DS** de. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
 
 * En Administración de correspondencia
 
@@ -44,7 +44,7 @@ A continuación se indican los pasos para establecer la **[!UICONTROL Configurac
 
 1. Agregue la siguiente información en los campos respectivos:
 
-   **[!UICONTROL URL del servidor de procesamiento]**: el servidor de procesamiento es el servidor en el que se debe activar el flujo de trabajo de Forms AEM o de la. AEM Puede ser la misma URL que la de la instancia de autor del o que la otra URL del servidor (es decir, https://localhost:port/).
+   **[!UICONTROL URL del servidor de procesamiento]**: el servidor de procesamiento es el servidor donde se debe activar el flujo de trabajo de Forms AEM o de la. AEM Puede ser la misma URL que la de la instancia de autor del o que la otra URL del servidor (es decir, https://localhost:port/).
 
    **[!UICONTROL Nombre de usuario del servidor de procesamiento]**: nombre de usuario del usuario del flujo de trabajo [en función de la URL del servidor que se utilice]
 

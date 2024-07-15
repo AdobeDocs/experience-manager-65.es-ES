@@ -38,9 +38,9 @@ Para crear e implementar la aplicación de AEM Forms necesita el hardware, el so
 
 ## Para dispositivos Android™ {#for-android-devices}
 
-* Kit de herramientas de desarrollo de Android™ (paquete ADT) que se puede descargar de [https://developer.android.com/studio](https://developer.android.com/studio)
+* Android™ Development Toolkit (paquete ADT) que se puede descargar de [https://developer.android.com/studio](https://developer.android.com/studio)
 * Si el entorno está configurado en un sistema Mac, el ADT debe instalarse en la carpeta Aplicaciones.
-* Si el ADT está instalado en cualquier otra ubicación de Mac o si el entorno está configurado en un sistema Windows, la ruta del SDK de ADT debe actualizarse en `local.properties` archivo. Este archivo está disponible en el `src\android` carpeta en el archivo de origen extraído `mobileworkspace-src.zip`. En este archivo, señale la variable `sdk.dir` a la ubicación del SDK de ADT en su escritorio.
+* Si el ADT está instalado en cualquier otra ubicación de Mac o si el entorno está configurado en un sistema Windows, la ruta del SDK de ADT debe actualizarse en el archivo `local.properties`. Este archivo está disponible en la carpeta `src\android` del archivo de origen extraído `mobileworkspace-src.zip`. En este archivo, señale la variable `sdk.dir` a la ubicación del SDK de ADT en su escritorio.
 
 >[!NOTE]
 >

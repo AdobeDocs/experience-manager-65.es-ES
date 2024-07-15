@@ -63,9 +63,9 @@ Existen dos métodos para activar una página:
 Puede activar páginas en la consola Sitios web. Después de abrir una página y modificar su contenido, vuelve a la consola Sitios web:
 
 1. En la consola Sitios web, seleccione la página que desea activar.
-1. Seleccionar **Activar**, ya sea en el menú superior o en el menú desplegable del elemento de página seleccionado.
+1. Seleccione **Activar**, ya sea en el menú superior o en el menú desplegable del elemento de página seleccionado.
 
-   Para activar el contenido de la página y de todas sus páginas secundarias, utilice la variable [**Herramientas** consolar](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
+   Para activar el contenido de la página y todas sus páginas secundarias, usa la consola [**Herramientas**](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
 
    ![screen_shot_2012-02-08at13817pm](assets/screen_shot_2012-02-08at13817pm.png)
 
@@ -79,7 +79,7 @@ Puede activar páginas en la consola Sitios web. Después de abrir una página y
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. AEM WCM activa el contenido seleccionado. La página o páginas publicadas aparecen en la [Consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marcado en verde) con información sobre quién activó el contenido y la fecha y hora de activación.
+1. AEM WCM activa el contenido seleccionado. La página o páginas publicadas aparecen en la [consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marcada como verde) con información sobre quién activó el contenido y la fecha y hora de activación.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
@@ -89,8 +89,8 @@ También puede activar una página cuando la tenga abierta para editarla.
 
 Después de abrir la página y modificar su contenido, debe hacer lo siguiente:
 
-1. Seleccione el **Página** en el Sidekick.
-1. Clic **Activar página**.
+1. Seleccione la ficha **Página** en el Sidekick.
+1. Haga clic en **Activar página**.
 Aparece un mensaje en la parte superior derecha de la ventana que confirma que la página se ha activado.
 
 ## Cancelar la publicación de una página {#unpublishing-a-page}
@@ -100,11 +100,11 @@ Para quitar una página del entorno de publicación, se desactiva el contenido.
 Para desactivar una página:
 
 1. En la consola Sitios web, seleccione la página que desea desactivar.
-1. Seleccionar **Desactivar**, ya sea en el menú superior o en el menú desplegable del elemento de página seleccionado. Se le pedirá que confirme la eliminación.
+1. Seleccione **Desactivar**, ya sea en el menú superior o en el menú desplegable del elemento de página seleccionado. Se le pedirá que confirme la eliminación.
 
    ![screen_shot_2012-02-08at14859pm](assets/screen_shot_2012-02-08at14859pm.png)
 
-1. Actualice la [Consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) y el contenido se marca en rojo, lo que indica que ya no se publica.
+1. Actualice la consola [Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) y el contenido se marcará en rojo para indicar que ya no se publicará.
 
    ![screen_shot_2012-02-08at15018pm](assets/screen_shot_2012-02-08at15018pm.png)
 
@@ -114,60 +114,60 @@ Para desactivar una página:
 
 Para programar la activación para un momento posterior:
 
-1. En la consola Sitios web, vaya a **Activar** y seleccione. **Activar más tarde**.
-1. En el cuadro de diálogo que se abre, proporcione la fecha y la hora de activación y haga clic en **OK**. Esto crea una versión de la página que se activa a la hora especificada.
+1. En la consola Sitios web, ve al menú **Activar** y selecciona **Activar más tarde**.
+1. En el cuadro de diálogo que se abre, proporcione la fecha y la hora de activación y haga clic en **Aceptar**. Esto crea una versión de la página que se activa a la hora especificada.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
 La activación posterior inicia un flujo de trabajo para activar esta versión de la página a la hora especificada. Por el contrario, la desactivación posterior inicia un flujo de trabajo para desactivar esta versión de la página en un momento específico.
 
-Si desea cancelar esta activación/desactivación, vaya a [Consola de flujo de trabajo](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) para finalizar el flujo de trabajo correspondiente.
+Si desea cancelar esta activación/desactivación, vaya a la [Consola de flujo de trabajo](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) para finalizar el flujo de trabajo correspondiente.
 
 ### Desactivar más tarde {#deactivate-later}
 
 Para programar la desactivación para un momento posterior:
 
-1. En la consola del sitio web, vaya a **Desactivar** y seleccione. **Desactivar más tarde**.
+1. En la consola del sitio web, ve al menú **Desactivar** y selecciona **Desactivar más tarde**.
 
-1. En el cuadro de diálogo que se abre, proporcione la fecha y la hora de desactivación y haga clic en **OK**.
+1. En el cuadro de diálogo que se abre, proporcione la fecha y la hora de desactivación y haga clic en **Aceptar**.
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
-**Desactivación tardía** o inicia un flujo de trabajo para desactivar esta versión de la página en un momento específico.
+**Al desactivar más tarde** r se inicia un flujo de trabajo para desactivar esta versión de la página en un momento específico.
 
-Si desea cancelar esta desactivación, vaya a [Consola de flujo de trabajo](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) para finalizar el flujo de trabajo correspondiente.
+Si desea cancelar esta desactivación, vaya a la [Consola de flujo de trabajo](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) para finalizar el flujo de trabajo correspondiente.
 
 ## Activación/Desactivación Programadas (Tiempo De Activación/Desactivación) {#scheduled-activation-deactivation-on-off-time}
 
-Puede programar las horas de publicación o cancelación de la publicación de una página mediante el **Tiempo de activación** y **Tiempo de inactividad** que se puede definir en la variable [Propiedades de página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+Puede programar tiempos de publicación/cancelación de publicación de una página usando los valores de **Tiempo de activación** y **Tiempo de inactividad** que se pueden definir en [Propiedades de la página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 ### Determinar el estado de publicación de la página {#determining-page-publication-status-classic-ui}
 
-El estado se puede ver desde la variable [Consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). Los colores indican el estado de publicación.
+El estado se puede ver desde la [consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). Los colores indican el estado de publicación.
 
 ## Activar una sección completa (árbol) del sitio web {#activating-a-complete-section-tree-of-your-website}
 
-Desde el **Sitios web** pestaña puede activar las páginas individuales. Cuando ha introducido o actualizado un número considerable de páginas de contenido (todas ellas residentes en la misma página raíz), puede resultar más fácil activar todo el árbol en una acción. También puede realizar una Ejecución en seco para emular una activación y resaltar qué páginas se activarían.
+Desde la ficha **Sitios web** puede activar las páginas individuales. Cuando ha introducido o actualizado un número considerable de páginas de contenido (todas ellas residentes en la misma página raíz), puede resultar más fácil activar todo el árbol en una acción. También puede realizar una Ejecución en seco para emular una activación y resaltar qué páginas se activarían.
 
-1. Abra el **Herramientas** consola de seleccionándola en la **Bienvenido** y haga doble clic en **Replicación** para abrir la consola ( `https://localhost:4502/etc/replication.html`).
+1. Abra la consola **Herramientas** seleccionándola en la página **Bienvenido** y luego haga doble clic en **Replicación** para abrir la consola (`https://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
-1. En el **Replicación** consola, haga clic en **Activar árbol**.
+1. En la consola **Replicación**, haga clic en **Activar árbol**.
 
-   La siguiente ventana ( `https://localhost:4502/etc/replication/treeactivation.html`) se mostrará.
+   Se mostrará la siguiente ventana ( `https://localhost:4502/etc/replication/treeactivation.html`).
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Introduzca el **Ruta de inicio**. Esto especifica la ruta a la raíz de la sección que desea activar (publicar). Esta página y todas las páginas por debajo se consideran para su activación (o se utilizan en la emulación si se selecciona una Ejecución en seco).
+1. Escriba la **ruta de inicio**. Esto especifica la ruta a la raíz de la sección que desea activar (publicar). Esta página y todas las páginas por debajo se consideran para su activación (o se utilizan en la emulación si se selecciona una Ejecución en seco).
 1. Active los criterios de selección según sea necesario:
 
-   * **Solo modificadas**: activar solo las páginas que se han modificado.
-   * **Solo activadas**: activar solo las páginas que ya se han activado. Actúa como una forma de reactivación.
-   * **Ignorar desactivadas**: ignore cualquier página que se haya desactivado.
+   * **Solo modificadas**: activar solo las páginas modificadas.
+   * **Solo activadas**: activar solo las páginas que (ya) se han activado. Actúa como una forma de reactivación.
+   * **Ignorar desactivadas**: ignore todas las páginas que se hayan desactivado.
 
 1. Seleccione la acción que desea realizar:
 
-   1. Seleccionar **Ejecución en seco** si desea comprobar qué páginas *haría* se activará. Esto es solo una emulación, no se activará ninguna página.
+   1. Seleccione **Ejecución en seco** si desea comprobar qué páginas *se activarían*. Esto es solo una emulación, no se activará ninguna página.
 
-   1. Seleccionar **Activar** si desea activar las páginas.
+   1. Seleccione **Activar** si desea activar las páginas.

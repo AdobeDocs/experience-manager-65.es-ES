@@ -21,25 +21,25 @@ ht-degree: 0%
 
 ## Adición de una columna personalizada a la consola Sitios web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
-La consola Administración de sitios web se puede ampliar para mostrar columnas personalizadas. La consola se basa en un objeto JSON que se puede ampliar creando un servicio OSGI que implemente el `ListInfoProvider` interfaz. Este servicio modifica el objeto JSON que se envía al cliente para crear la consola.
+La consola Administración de sitios web se puede ampliar para mostrar columnas personalizadas. La consola se ha creado a partir de un objeto JSON que se puede ampliar creando un servicio OSGI que implemente la interfaz `ListInfoProvider`. Este servicio modifica el objeto JSON que se envía al cliente para crear la consola.
 
-Este tutorial paso a paso explica cómo mostrar una nueva columna en la consola Administración de sitios web implementando el `ListInfoProvider` interfaz. Consiste en los siguientes pasos:
+Este tutorial paso a paso explica cómo mostrar una nueva columna en la consola Administración de sitios web implementando la interfaz `ListInfoProvider`. Consiste en los siguientes pasos:
 
-1. [Creación del servicio OSGI](#creating-the-osgi-service) AEM e implementando el paquete que lo contiene en el servidor de.
-1. (opcional) [Prueba del nuevo servicio](#testing-the-new-service) al emitir una llamada JSON para solicitar el objeto JSON que se utiliza para crear la consola.
-1. [Visualización de la nueva columna](#displaying-the-new-column) ampliando la estructura de nodos de la consola en el repositorio.
+1. AEM [Creando el servicio OSGI](#creating-the-osgi-service) e implementando el paquete que lo contiene en el servidor de.
+1. (opcional) [Probando el nuevo servicio](#testing-the-new-service) emitiendo una llamada JSON para solicitar el objeto JSON que se usa para compilar la consola.
+1. [Mostrando la nueva columna](#displaying-the-new-column) ampliando la estructura de nodos de la consola en el repositorio.
 
 >[!NOTE]
 >
 >Este tutorial también se puede utilizar para ampliar las siguientes consolas de administración:
 >
->* la consola Recursos digitales
+>* la consola Assets digital
 >* la consola Comunidad
 >
 
 ### Creación del servicio OSGI {#creating-the-osgi-service}
 
-El `ListInfoProvider` La interfaz de define dos métodos:
+La interfaz `ListInfoProvider` define dos métodos:
 
 * `updateListGlobalInfo`, para actualizar las propiedades globales de la lista,
 * `updateListItemInfo`, para actualizar el elemento de lista única.
@@ -52,13 +52,13 @@ Los argumentos para ambos métodos son:
 
 La implementación de ejemplo es la siguiente:
 
-* Agrega un *estrellado* propiedad para cada elemento, que es `true` si el nombre de la página comienza con un *e*, y `false` de lo contrario.
+* Agrega una propiedad *starred* a cada elemento, que es `true` si el nombre de página comienza con *e* y `false` en caso contrario.
 
-* Agrega un *starredCount* , que es global para la lista y contiene el número de elementos de la lista con estrellas.
+* Agrega una propiedad *starredCount*, que es global para la lista y contiene el número de elementos de la lista con estrellas.
 
 Para crear el servicio OSGI:
 
-1. En CRXDE Lite, [crear un paquete](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
+1. En el CRXDE Lite, [cree un paquete](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
 1. Agregue el código de ejemplo siguiente.
 1. Genere el paquete.
 
@@ -107,13 +107,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* Su implementación debe decidir, en función de la solicitud o el recurso proporcionados, si debe agregar la información al objeto JSON o no.
->* Si su `ListInfoProvider` implementation define una propiedad que existe en el objeto response; el valor que proporciona la sobrescribe.
+>* Si la implementación de `ListInfoProvider` define una propiedad que existe en el objeto de respuesta, el valor que proporcione sobrescribirá.
 >
->  Puede utilizar [clasificación de servicios](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) para administrar el orden de ejecución de varios `ListInfoProvider` implementaciones.
+>  Puede usar [clasificación de servicio](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) para administrar el orden de ejecución de varias implementaciones de `ListInfoProvider`.
 
 ### Prueba del nuevo servicio {#testing-the-new-service}
 
-Cuando abre la consola de administración de sitios web y explora su sitio, el explorador emite una llamada Ajax para obtener el objeto JSON utilizado para crear la consola. Por ejemplo, al navegar a `/content/geometrixx` AEM carpeta, se enviará la siguiente solicitud al servidor de para crear la consola:
+Cuando abre la consola de administración de sitios web y explora su sitio, el explorador emite una llamada Ajax para obtener el objeto JSON utilizado para crear la consola. AEM Por ejemplo, cuando se desplaza a la carpeta `/content/geometrixx`, se envía la siguiente solicitud al servidor para crear la consola:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -130,20 +130,20 @@ Para asegurarse de que el nuevo servicio se está ejecutando después de haber i
 
 El último paso consiste en adaptar la estructura de nodos de la consola de administración de sitios web para mostrar la nueva propiedad para todas las páginas de Geometrixx superponiendo `/libs/wcm/core/content/siteadmin`. Proceda como se indica a continuación:
 
-1. En CRXDE Lite, cree la estructura de nodos `/apps/wcm/core/content` con nodos de tipo `sling:Folder` para reflejar la estructura `/libs/wcm/core/content`.
+1. En el CRXDE Lite, cree la estructura de nodos `/apps/wcm/core/content` con nodos de tipo `sling:Folder` para reflejar la estructura `/libs/wcm/core/content`.
 
-1. Copie el nodo `/libs/wcm/core/content/siteadmin` y péguelo debajo `/apps/wcm/core/content`.
+1. Copie el nodo `/libs/wcm/core/content/siteadmin` y péguelo debajo de `/apps/wcm/core/content`.
 
-1. Copie el nodo `/apps/wcm/core/content/siteadmin/grid/assets` hasta `/apps/wcm/core/content/siteadmin/grid/geometrixx` y cambia sus propiedades:
+1. Copie el nodo `/apps/wcm/core/content/siteadmin/grid/assets` en `/apps/wcm/core/content/siteadmin/grid/geometrixx` y cambie sus propiedades:
 
-   * Eliminar **pageText**
+   * Quitar **pageText**
 
-   * Establecer **pathRegex** hasta `/content/geometrixx(/.*)?`
+   * Establecer **pathRegex** en `/content/geometrixx(/.*)?`
 Esto activa la configuración de cuadrícula para todos los sitios web de Geometrixx.
 
-   * Establecer **storeProxySuffix** hasta `.pages.json`
+   * Establecer **storeProxySuffix** en `.pages.json`
 
-   * Edite el **storeReaderFields** propiedad multivalor y agregue `starred` valor.
+   * Edite la propiedad multivalor **storeReaderFields** y agregue el valor `starred`.
 
    * Para activar la funcionalidad de MSM, agregue los siguientes parámetros MSM a la propiedad de varias cadenas **storeReaderFields**:
 
@@ -151,30 +151,30 @@ Esto activa la configuración de cuadrícula para todos los sitios web de Geomet
       * **msm:isInBlueprint**
       * **msm:isLiveCopy**
 
-1. Añadir un `starred` nodo (de tipo **nt:unstructured**) a continuación `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` con las siguientes propiedades:
+1. Agregue un nodo `starred` (de tipo **nt:unstructured**) debajo de `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` con las siguientes propiedades:
 
    * **dataIndex**: `starred` de tipo cadena
 
    * **encabezado**: `Starred` de tipo cadena
 
-   * **xtype**: `gridcolumn` de tipo cadena
+   * **xtype**: `gridcolumn` de tipo String
 
 1. (opcional) Suelte las columnas que no desee mostrar en `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
-1. `/siteadmin` es una ruta de vanidad que, de forma predeterminada, apunta a `/libs/wcm/core/content/siteadmin`.
-Para redireccionar esto a su versión de siteadmin en `/apps/wcm/core/content/siteadmin`, defina la propiedad `sling:vanityOrder` para tener un valor superior al definido en `/libs/wcm/core/content/siteadmin`. El valor predeterminado es 300, por lo que cualquier valor superior es adecuado.
+1. `/siteadmin` es una ruta de acceso mnemónica que, de manera predeterminada, apunta a `/libs/wcm/core/content/siteadmin`.
+Para redirigir esto a su versión de siteadmin en `/apps/wcm/core/content/siteadmin`, defina la propiedad `sling:vanityOrder` para que tenga un valor superior al definido en `/libs/wcm/core/content/siteadmin`. El valor predeterminado es 300, por lo que cualquier valor superior es adecuado.
 
 1. Vaya a la consola de administración de sitios web y navegue hasta el sitio de Geometrixx:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
 
-1. La nueva columna llamada **Estelar** está disponible y muestra la información personalizada de la siguiente manera:
+1. La nueva columna llamada **Starred** está disponible y muestra información personalizada de la siguiente manera:
 
 ![screen_shot_2012-02-14at104602](assets/screen_shot_2012-02-14at104602.png)
 
 >[!CAUTION]
 >
->Si varias configuraciones de cuadrícula coinciden con la ruta solicitada definida por el **pathRegex** , se utiliza la primera y no la más específica, lo que significa que el orden de las configuraciones es importante.
+>Si varias configuraciones de cuadrícula coinciden con la ruta solicitada definida por la propiedad **pathRegex**, se utilizará la primera y no la más específica, lo que significa que el orden de las configuraciones es importante.
 
 ### Paquete de muestra {#sample-package}
 
-El resultado de este tutorial está disponible en la [Personalización de la consola de administración de sitios web](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) paquete en Package Share.
+El resultado de este tutorial está disponible en el paquete [Personalización de la consola de administración de sitios web](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) en Uso compartido de paquetes.

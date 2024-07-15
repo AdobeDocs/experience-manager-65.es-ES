@@ -1,6 +1,6 @@
 ---
 title: Consideraciones y requisitos de red
-description: Explica las consideraciones de red al diseñar una [!DNL Adobe Experience Manager Assets] implementación.
+description: Explica las consideraciones de red al diseñar una implementación de  [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
@@ -21,10 +21,10 @@ Asegúrese de incluir lo siguiente en el diagrama de red:
 
 * Conectividad desde el dispositivo cliente (por ejemplo, equipo, móvil y tableta) a la red.
 * Topología de la red corporativa.
-* Vínculo ascendente a Internet desde la red corporativa y el [!DNL Experience Manager] entorno.
-* Topología de la [!DNL Experience Manager] entorno.
-* Definir consumidores simultáneos de [!DNL Experience Manager] interfaz de red.
-* Flujos de trabajo definidos del [!DNL Experience Manager] implementación.
+* Vínculo superior a Internet desde la red corporativa y el entorno [!DNL Experience Manager].
+* Topología del entorno [!DNL Experience Manager].
+* Definir consumidores simultáneos de la interfaz de red [!DNL Experience Manager].
+* Flujos de trabajo definidos de la implementación [!DNL Experience Manager].
 
 ## Conectividad desde el dispositivo cliente a la red corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -32,7 +32,7 @@ Comience por crear un diagrama de la conectividad entre los dispositivos cliente
 
 ![chlimage_1-353](assets/chlimage_1-353.png)
 
-Los dispositivos cliente se conectan a la red corporativa de varias formas, como WiFi compartida, Ethernet a un conmutador compartido y VPN. La identificación y comprensión de los puntos de interrupción de esta red es importante para [!DNL Assets] planificar y modificar la red.
+Los dispositivos cliente se conectan a la red corporativa de varias formas, como WiFi compartida, Ethernet a un conmutador compartido y VPN. Identificar y comprender los puntos de estrangulamiento de esta red es importante para la planificación de [!DNL Assets] y para modificar la red.
 
 En la parte superior izquierda del diagrama, tres dispositivos se representan compartiendo un punto de acceso WiFi de 48 Mbps. Si todos los dispositivos se cargan simultáneamente, el ancho de banda de la red WiFi se comparte entre los dispositivos. En comparación con el sistema en su conjunto, un usuario puede encontrar un punto de estrangulamiento diferente para los tres clientes a través de este canal dividido.
 
@@ -48,15 +48,15 @@ El equipo mostrado a la derecha tiene un flujo ascendente limitado a la red corp
 
 El diagrama muestra velocidades de enlace ascendente más altas dentro de la red corporativa que las que se utilizan generalmente. Estas canalizaciones son recursos compartidos. Si se espera que el conmutador compartido gestione 50 clientes, puede ser potencialmente un punto de estrangulamiento. En el diagrama inicial, sólo dos equipos comparten la conexión concreta.
 
-## Vínculo ascendente a Internet desde la red corporativa y [!DNL Experience Manager] entorno {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Vincular a Internet desde la red corporativa y el entorno [!DNL Experience Manager] {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 Es importante tener en cuenta factores desconocidos en Internet y en la conexión VPC, ya que el ancho de banda a través de Internet puede verse afectado debido a picos de carga o interrupciones de proveedores a gran escala. En general, la conectividad a Internet es fiable. Sin embargo, a veces puede introducir puntos de estrangulamiento.
 
-En el enlace ascendente de una red corporativa a Internet, puede haber otros servicios utilizando el ancho de banda. Es importante comprender qué parte del ancho de banda se puede dedicar o priorizar para Assets. Por ejemplo, si un vínculo de 1 Gbps ya está en un 80% de utilización, sólo puede asignar un máximo del 20% del ancho de banda para [!DNL Experience Manager Assets].
+En el enlace ascendente de una red corporativa a Internet, puede haber otros servicios utilizando el ancho de banda. Es importante comprender qué parte del ancho de banda se puede dedicar o priorizar para Assets. Por ejemplo, si un vínculo de 1 Gbps ya está en un 80% de uso, sólo puede asignar un máximo del 20% del ancho de banda para [!DNL Experience Manager Assets].
 
-Los servidores de seguridad y los servidores proxy empresariales también pueden configurar el ancho de banda de muchas maneras diferentes. Este tipo de dispositivo puede priorizar el ancho de banda mediante la calidad del servicio, las limitaciones de ancho de banda por usuario o las limitaciones de velocidad de bits por host. Estos son puntos de estrangulamiento importantes que hay que examinar, ya que pueden tener un impacto significativo [!DNL Assets] experiencia del usuario.
+Los servidores de seguridad y los servidores proxy empresariales también pueden configurar el ancho de banda de muchas maneras diferentes. Este tipo de dispositivo puede priorizar el ancho de banda mediante la calidad del servicio, las limitaciones de ancho de banda por usuario o las limitaciones de velocidad de bits por host. Estos son puntos de bloqueo importantes que deben examinarse ya que pueden afectar de manera significativa la experiencia del usuario [!DNL Assets].
 
 En este ejemplo, la empresa tiene un vínculo superior de 10 Gb/s. Debe ser lo suficientemente grande para varios clientes. Además, el cortafuegos impone un límite de velocidad de host de 10 Mbps. Esta limitación puede limitar potencialmente el tráfico a un solo host a 10 Mbps, aunque el vínculo superior a Internet esté a 10 Gbps.
 
@@ -64,21 +64,21 @@ Este es el punto de estrangulamiento más pequeño orientado al cliente. Sin emb
 
 A partir de los diagramas de ejemplo, puede concluir que seis dispositivos comparten un canal conceptual de 10 Mbps. Según el tamaño de los recursos utilizados, esto puede ser insuficiente para satisfacer las expectativas de los usuarios.
 
-## Topología de la [!DNL Experience Manager] entorno {#topology-of-the-aem-environment}
+## Topología del entorno [!DNL Experience Manager] {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-Diseño de la topología del [!DNL Experience Manager] requiere un conocimiento detallado de la configuración del sistema y de cómo está conectada la red dentro del entorno del usuario.
+El diseño de la topología del entorno [!DNL Experience Manager] requiere un conocimiento detallado de la configuración del sistema y de cómo está conectada la red dentro del entorno del usuario.
 
 El escenario de ejemplo incluye una granja de servidores de publicación con cinco servidores, un almacén binario S3 y Dynamic Media configurado.
 
-El despachante comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y el [!DNL Experience Manager] implementación. Para realizar operaciones simultáneas de carga y descarga, se debe dividir este número entre dos. El almacenamiento externo adjunto utiliza una conexión independiente.
+Dispatcher comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y la implementación [!DNL Experience Manager]. Para realizar operaciones simultáneas de carga y descarga, se debe dividir este número entre dos. El almacenamiento externo adjunto utiliza una conexión independiente.
 
-El [!DNL Experience Manager] La implementación comparte su conexión de 1 Gb/s con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un solo canal con distintos servicios.
+La implementación de [!DNL Experience Manager] comparte su conexión de 1 Gb/s con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un solo canal con distintos servicios.
 
-Revisión de la red desde el dispositivo cliente al [!DNL Experience Manager] , el punto de estrangulamiento más pequeño parece ser el acelerador del cortafuegos empresarial de 10 Mbits. Puede utilizar estos valores en la calculadora de tamaño de la [Guía de tamaño de Assets](assets-sizing-guide.md) para determinar la experiencia del usuario.
+Revisando la red desde el dispositivo cliente hasta la implementación [!DNL Experience Manager], el punto de estrangulamiento más pequeño parece ser el límite del firewall empresarial de 10 Mbits. Puede usar estos valores en la calculadora de tamaño de la [Guía de tamaño de Assets](assets-sizing-guide.md) para determinar la experiencia del usuario.
 
-## Flujos de trabajo definidos del [!DNL Experience Manager] implementación {#defined-workflows-of-the-aem-deployment}
+## Flujos de trabajo definidos de la implementación [!DNL Experience Manager] {#defined-workflows-of-the-aem-deployment}
 
 Al considerar el rendimiento de la red, puede ser importante tener en cuenta los flujos de trabajo y la publicación que se producirán en el sistema. Además, S3 u otro almacenamiento conectado a la red que utilice y las solicitudes de E/S consumen ancho de banda de la red. Por lo tanto, incluso en una red totalmente optimizada, el rendimiento puede estar limitado por la E/S del disco.
 

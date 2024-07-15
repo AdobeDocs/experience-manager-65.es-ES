@@ -44,7 +44,7 @@ En la fase anterior del recorrido sin encabezado, se ha aprendido a utilizar la 
 
 Entonces, ¿por qué se necesita otra API?
 
-La API HTTP de Assets sí le permite **Leer** su contenido, pero también le permite **Crear**, **Actualizar** y **Eliminar** contenido: acciones que no son posibles con la API de GraphQL.
+La API HTTP de Assets no le permite **leer** su contenido, pero también le permite **crear**, **actualizar** y **eliminar** contenido: acciones que no son posibles con la API de GraphQL.
 
 La API de REST de Assets está disponible en cada instalación predeterminada de una versión reciente de Adobe Experience Manager.
 
@@ -253,7 +253,7 @@ El uso puede variar en función de si utiliza un entorno de publicación o autor
 
 >[!CAUTION]
 >
->AEM La configuración de Dispatcher en instancias de puede bloquear el acceso a `/api`.
+>AEM La configuración de Dispatcher en instancias de podría bloquear el acceso a `/api`.
 
 >[!NOTE]
 >
@@ -320,7 +320,7 @@ Ahora que ha completado esta parte del recorrido para desarrolladores de AEM sin
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-AEM Debe continuar con el recorrido sin encabezado de la revisando el documento a continuación [Publicación de la aplicación sin encabezado](go-live.md) AEM donde realmente lleva su proyecto sin encabezado en directo de la!
+AEM Debe continuar con su recorrido AEM sin encabezado de la revisando el documento [Cómo poner en marcha su aplicación sin encabezado](go-live.md), donde realmente pone en marcha su proyecto sin encabezado
 
 ## Recursos adicionales {#additional-resources}
 

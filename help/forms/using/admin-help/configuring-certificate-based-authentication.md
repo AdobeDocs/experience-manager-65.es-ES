@@ -18,17 +18,17 @@ ht-degree: 0%
 
 # Configurar la autenticación basada en certificados {#configuring-certificate-based-authentication}
 
-Administración de usuarios suele realizar la autenticación con un nombre de usuario y una contraseña. Administración de usuarios también admite la autenticación basada en certificados, que puede utilizar para autenticar a los usuarios mediante Acrobat o para autenticar a los usuarios mediante programación. Para obtener más información sobre la autenticación de usuarios mediante programación, consulte [AEM Programar con formularios de](https://www.adobe.com/go/learn_aemforms_programming_63).
+Administración de usuarios suele realizar la autenticación con un nombre de usuario y una contraseña. Administración de usuarios también admite la autenticación basada en certificados, que puede utilizar para autenticar a los usuarios mediante Acrobat o para autenticar a los usuarios mediante programación. AEM Para obtener más información sobre cómo autenticar usuarios mediante programación, vea [Programar con formularios de la aplicación de la manera de usar y de usar la aplicación de código de tiempo](https://www.adobe.com/go/learn_aemforms_programming_63).
 
 Para utilizar la autenticación basada en certificados, importe un certificado de entidad emisora de certificados (CA) de confianza en el almacén de confianza y, a continuación, cree una asignación de certificado.
 
 ## Importar el certificado de CA {#import-the-ca-certificate}
 
-Al importar el certificado, seleccione las opciones Confiar en la autenticación de certificados y Confiar en la identidad, así como cualquier otra opción que necesite. Para obtener más información sobre la importación de certificados, consulte [Administración de certificados](/help/forms/using/admin-help/certificates.md#managing-certificates).
+Al importar el certificado, seleccione las opciones Confiar en la autenticación de certificados y Confiar en la identidad, así como cualquier otra opción que necesite. Para obtener detalles acerca de la importación de certificados, vea [Administrar certificados](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
 ## Configurar la asignación de certificados {#configuring-certificate-mapping}
 
-Para habilitar la autenticación basada en certificados para los usuarios, cree una asignación de certificado. A *asignación de certificados* define un mapa entre los atributos de un certificado y los atributos de los usuarios de un dominio. Puede asignar más de un certificado al mismo dominio.
+Para habilitar la autenticación basada en certificados para los usuarios, cree una asignación de certificado. Una *asignación de certificados* define una asignación entre los atributos de un certificado y los atributos de los usuarios de un dominio. Puede asignar más de un certificado al mismo dominio.
 
 Al probar un certificado, Administración de usuarios carga las comprobaciones de certificados para asegurarse de que cumple los siguientes requisitos:
 
@@ -47,9 +47,9 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 1. Haga clic en Nueva asignación de certificado y, en la lista Para emisor, seleccione el alias de certificado según se ha configurado en Administración de almacén de confianza.
 1. Asigne uno de los atributos del certificado al atributo de un usuario. Por ejemplo, puede asignar el nombre común del certificado al ID de inicio de sesión del usuario.
 
-   Si el contenido del atributo en el certificado es diferente del contenido en el atributo del usuario en la base de datos de User Management, puede utilizar una expresión regular de Java (regex) para hacer coincidir los dos atributos. Por ejemplo, si los nombres comunes de los certificados son nombres como *Alex Pink (Authentication)* y *Alex Pink (Firma)* y el nombre común en la base de datos de User Management es *Alex Pink*, utilice una regex para extraer la parte requerida del atributo de certificado (en este ejemplo, *Alex Pink*.) La expresión regular especificada debe ajustarse a la especificación regex de Java.
+   Si el contenido del atributo en el certificado es diferente del contenido en el atributo del usuario en la base de datos de User Management, puede utilizar una expresión regular de Java (regex) para hacer coincidir los dos atributos. Por ejemplo, si los nombres comunes de los certificados son *Alex Pink (Authentication)* y *Alex Pink (Signing)* y el nombre común de la base de datos de administración de usuarios es *Alex Pink*, use una expresión regular para extraer la parte necesaria del atributo del certificado (en este ejemplo, *Alex Pink*). La expresión regular especificada debe ajustarse a la especificación regex de Java.
 
-   Puede transformar la expresión especificando el orden de los grupos en el cuadro Orden personalizado. El orden personalizado se utiliza con `java.util.regex.Matcher.replaceAll()` método. El comportamiento que se ve se corresponderá con el comportamiento de ese método y la cadena de entrada (el orden personalizado) debe especificarse en consecuencia.
+   Puede transformar la expresión especificando el orden de los grupos en el cuadro Orden personalizado. El orden personalizado se usa con el método `java.util.regex.Matcher.replaceAll()`. El comportamiento que se ve se corresponderá con el comportamiento de ese método y la cadena de entrada (el orden personalizado) debe especificarse en consecuencia.
 
    Para probar la regex, introduzca un valor en el cuadro Parámetro de prueba y haga clic en Probar.
 
@@ -65,7 +65,7 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 
    * Para extraer &quot;Alex Pink&quot; de &quot;Alex Pink (Authentication)&quot;
 
-     **Regex:** (.&amp;ast;) \(Autenticación\)
+     **Regex:** (.&amp;ast;) \(Authentication\)
 
    * Para extraer &quot;Alex Pink&quot; de &quot;Alex (Authentication) Pink&quot;
 

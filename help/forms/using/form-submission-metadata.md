@@ -34,7 +34,7 @@ Realice los siguientes pasos para agregar un elemento a los metadatos:
 
 1. Abra el formulario adaptable en el modo Edición.\
    Para abrir el formulario en el modo Edición, seleccione el formulario en Forms Manager y seleccione **Abrir**.
-1. En el modo de edición, seleccione un componente y seleccione ![field-level](assets/field-level.png) > **Contenedor de formulario adaptable**, y luego seleccione ![cmppr](assets/cmppr.png).
+1. En el modo de edición, seleccione un componente, seleccione ![field-level](assets/field-level.png) > **Contenedor de formulario adaptable** y luego seleccione ![cmppr](assets/cmppr.png).
 1. En la barra lateral, haga clic en **Metadatos**.
 1. En la sección Metadatos, haga clic en **Agregar**.
 1. Utilice el campo Valor de la pestaña Metadatos para añadir scripts. Los scripts que agregue recopilarán datos de los elementos del formulario y calcularán los valores de los que se alimentan los metadatos.

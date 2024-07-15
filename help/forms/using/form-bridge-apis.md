@@ -174,7 +174,7 @@ devuelve el número de versión de la biblioteca de scripts.
 
 * **Entrada:** la expresión Som del campo en el que se va a establecer el enfoque.
 * **Salida:** ninguna.
-* **Error:** Inicia una excepción si hay una expresión Som incorrecta
+* **Error:** inicia una excepción si hay una expresión Som incorrecta
 
 **setFieldValue (som, value)**: establece el valor de los campos para las expresiones Som dadas.
 
@@ -184,7 +184,7 @@ devuelve el número de versión de la biblioteca de scripts.
    * **value:** la matriz que contiene los valores correspondientes a las expresiones Som proporcionadas en una matriz **som**. Si el tipo de datos del valor no es el mismo que fieldType, el valor no se modifica.
 
 * **Salida:** ninguna.
-* **Error:** Inicia una excepción si hay una expresión Som incorrecta
+* **Error:** inicia una excepción si hay una expresión Som incorrecta
 
 **getFieldValue (som)**: devuelve el valor de los campos de las expresiones Som dadas.
 

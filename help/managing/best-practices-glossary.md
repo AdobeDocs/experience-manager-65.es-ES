@@ -46,7 +46,7 @@ Asegúrese de que se han concedido los niveles requeridos de acceso al sistema a
 
 ### Lista de comprobación de seguridad de Adobe {#adobe-security-checklist}
 
-El [Lista de comprobación de seguridad de Adobe](/help/sites-administering/security-checklist.md) es la lista de comprobación oficial que se proporciona para garantizar que Adobe Experience Manager AEM () sea seguro durante la instalación. Contiene las medidas de seguridad y verificación que debe realizar para garantizar la integridad de la instancia.
+La [lista de comprobación de seguridad del Adobe](/help/sites-administering/security-checklist.md) es la lista de comprobación oficial que se proporciona para garantizar que Adobe Experience Manager AEM () sea seguro durante la instalación. Contiene las medidas de seguridad y verificación que debe realizar para garantizar la integridad de la instancia.
 
 ### Configuración del proyecto del portal de soporte de Adobe {#adobe-support-portal-project-set-up}
 
@@ -56,19 +56,19 @@ Se pueden registrar detalles; por ejemplo, sobre las tecnologías y versiones im
 
 ### AEM Formación de administrador de {#aem-administrator-training}
 
-Formación del personal administrativo de la solución. Consulte la [Servicios de formación de Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
+Formación del personal administrativo de la solución. Consulte [Servicios de formación en Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
 
 ### AEM Formación de autor de {#aem-author-training}
 
-Formación del personal que producirá (creará) el contenido de la solución. Consulte la [Servicios de formación de Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
+Formación del personal que producirá (creará) el contenido de la solución. Consulte [Servicios de formación en Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
 
 ### AEM Examen de certificación de {#aem-certification-exam}
 
-Asegúrese de que las personas adecuadas estén registradas para tomar las [exámenes de certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Asegúrese de que las personas adecuadas estén registradas para realizar los [exámenes de certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) relevantes.
 
 ### AEM Certificación de {#aem-certified}
 
-Asegúrese de que la persona adecuada haya pasado el valor correspondiente [exámenes de certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Asegúrese de que el usuario apropiado haya pasado los [exámenes de certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) relevantes.
 
 ### AEM Formación técnica de {#aem-technical-training}
 
@@ -92,7 +92,7 @@ La hoja de ruta del cliente consta de hitos de alto nivel y objetivos empresaria
 
 ### Definición de arquitectura de aplicación {#application-architecture-definition}
 
-El [arquitectura de aplicación](/help/managing/best-practices.md#development-preparation) debería definir claramente el comportamiento de las aplicaciones propuestas.
+La [arquitectura de la aplicación](/help/managing/best-practices.md#development-preparation) debe definir claramente el comportamiento de las aplicaciones propuestas.
 
 Se centra en:
 
@@ -109,7 +109,8 @@ Asegúrese de que su equipo esté formado por personal con la formación adecuad
 
 * AEM al menos un desarrollador principal certificado por el administrador de la
 * AEM al menos un arquitecto certificado por el equipo de
-* AEM al menos el 75% de sus desarrolladores certificados; esto permite que los desarrolladores certificados asesoren a desarrolladores junior y garantiza el intercambio de conocimientos y la transparencia
+* AEM al menos el 75 % de sus desarrolladores están certificados por la certificación de la;
+esto permite a los desarrolladores certificados asesorar a los desarrolladores junior y garantiza el intercambio de conocimientos y la transparencia
 
 ### Diagrama de arquitectura {#architecture-diagram}
 
@@ -206,7 +207,8 @@ Los KPI empresariales definen valores mensurables que demuestran la eficacia con
 
 Un documento de requisitos empresariales (BRD, por sus siglas en inglés) detalla la solución empresarial para un proyecto, proporcionando una especificación clara de las necesidades y expectativas comerciales del cliente. El BRD también distingue entre la solución comercial y la solución técnica.
 
-Al examinar la solución empresarial, el BERD debe responder a la pregunta: &quot;¿Qué quiere hacer la empresa?&quot;
+Al examinar la solución empresarial, el BERD debe responder a la pregunta:
+&quot;¿Qué quiere hacer el negocio?&quot;
 
 ### Aprobación empresarial de cualquier ajuste necesario en la solución o arquitectura identificada y alineada con las expectativas de ROI y KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -502,7 +504,7 @@ AEM Resultados de un estudio de viabilidad tanto para el diseño de soluciones d
 
 ### Contrato finalizado {#finalized-contract}
 
-Se necesita un contrato finalizado y firmado antes de continuar con el proyecto. Esto se basa en la variable [Borrador de contrato](#contract-draft).
+Se necesita un contrato finalizado y firmado antes de continuar con el proyecto. Esto se basa en el [Borrador de contrato](#contract-draft).
 
 ### Funcionalidad de la solución aceptada por las partes interesadas {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -871,7 +873,7 @@ Esto se utiliza a menudo en las Pruebas de aceptación de usuarios (UAT).
 
 La Prueba de concepto (POC) se mide en función de los requisitos para garantizar que ambos estén alineados.
 
-### Lista de comprobación posterior a la implementación {#post-deployment-checklist}
+### Lista de comprobación de implementación de Post {#post-deployment-checklist}
 
 Una lista de comprobación para definir la serie de comprobaciones y tareas que se deben realizar después de cada implementación.
 
@@ -901,7 +903,7 @@ Defina el plan de comunicación tanto para las partes interesadas empresariales 
 
 ### Esfuerzos del proyecto - Estimaciones finales {#project-efforts-final-estimates}
 
-El [estimaciones iniciales](#project-efforts-initial-estimates) fueron de alto nivel y se realizaron de acuerdo con los requerimientos de alto nivel para la implementación.
+Las [estimaciones iniciales](#project-efforts-initial-estimates) fueron de alto nivel y se realizaron de acuerdo con los requisitos de alto nivel para la implementación.
 
 Ahora se revisan, refinan y amplían para proporcionar las estimaciones finales. Las estimaciones deben ser entregadas por cada jefe de proyecto apropiado, incluyendo la administración de proyectos, consultoría, arquitectura, pruebas y desarrollo.
 
@@ -966,7 +968,7 @@ Se utiliza con el Runbook para ejecutar los pasos y comprobaciones previos y pos
 
 >[!NOTE]
 >
->Para ver un ejemplo, consulte la [AEM Notas de la versión](/help/release-notes/release-notes.md).
+>AEM Para ver un ejemplo, consulte las [Notas de la versión de](/help/release-notes/release-notes.md).
 
 ### Versión en ejecución en el entorno de producción {#release-running-on-production-environment}
 
@@ -1285,7 +1287,7 @@ El concepto de prueba es la descripción de alto nivel de las pruebas del proyec
 
 ### Planes de prueba {#testing-plans}
 
-Estos planes describen con mayor detalle la ejecución de pruebas para cada fase de desarrollo y se basan en la [Estrategia de prueba](#testing-strategy).
+Estos planes describen con mayor detalle la ejecución de pruebas para cada fase de desarrollo y se basan en la [Estrategia de pruebas](#testing-strategy).
 
 ### Ámbito de prueba {#testing-scope}
 

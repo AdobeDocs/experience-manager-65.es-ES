@@ -30,7 +30,7 @@ Al desarrollar el script jsp de un componente de la interfaz de usuario de Grani
 <%@include file="/libs/granite/ui/global.jsp"%>
 ```
 
-El global también declara el [Biblioteca de Sling](/help/sites-developing/taglib.md#sling-tag-library).
+La biblioteca global también declara la [biblioteca Sling](/help/sites-developing/taglib.md#sling-tag-library).
 
 ```xml
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling" %>
@@ -38,29 +38,29 @@ El global también declara el [Biblioteca de Sling](/help/sites-developing/tagli
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-El `<ui:includeClientLib>` AEM etiqueta Incluye una biblioteca de cliente de html de, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio cómodo para el ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` interfaz de servicio de.
+AEM La etiqueta `<ui:includeClientLib>` incluye una biblioteca de cliente de html de, que puede ser una biblioteca js, css o de temas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio práctico para la interfaz de servicio ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Tiene los atributos siguientes:
 
-**categorías** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas de JavaScript y CSS para las categorías dadas. El nombre de la temática se extrae de la solicitud.
+**categorías**: una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas de JavaScript y CSS para las categorías dadas. El nombre de la temática se extrae de la solicitud.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**tema** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas relacionadas con temáticas (tanto CSS como JS) para las categorías dadas. El nombre de la temática se extrae de la solicitud.
+**tema**: una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas relacionadas con temáticas (tanto CSS como JS) para las categorías dadas. El nombre de la temática se extrae de la solicitud.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas JavaScript para las categorías dadas.
+**js**: una lista de categorías de biblioteca de cliente separadas por coma. Esto incluye todas las bibliotecas de JavaScript para las categorías dadas.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
-**css** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas CSS para las categorías dadas.
+**css**: una lista de categorías de biblioteca de cliente separadas por coma. Esto incluye todas las bibliotecas CSS para las categorías dadas.
 
 Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
-**temático** : Se debe incluir un indicador que indique que solo hay bibliotecas temáticas o no temáticas. Si se omite, se incluyen ambos conjuntos. Solo se aplica a inclusiones JS o CSS puras (no para categorías ni inclusiones de temas).
+**temático**: se debe incluir un indicador que indique que solo se deben incluir bibliotecas temáticas o no temáticas. Si se omite, se incluyen ambos conjuntos. Solo se aplica a inclusiones JS o CSS puras (no para categorías ni inclusiones de temas).
 
-El `<ui:includeClientLib>` la etiqueta se puede utilizar de la siguiente manera en un jsp:
+La etiqueta `<ui:includeClientLib>` se puede usar de la siguiente manera en un jsp:
 
 ```xml
 <%-- all: js + theme (theme-js + css) --%>
@@ -88,7 +88,7 @@ Para utilizar la biblioteca de etiquetas CQ en el script, este debe comenzar con
 
 >[!NOTE]
 >
->Si la variable `/libs/foundation/global.jsp` se incluye en el script, la etiqueta se declara automáticamente.
+>Cuando se incluye el archivo `/libs/foundation/global.jsp` en el script, la biblioteca de etiquetas se declara automáticamente.
 
 AEM Al desarrollar el script jsp de un componente de la, se recomienda incluir el siguiente código en la parte superior del script:
 
@@ -96,37 +96,37 @@ AEM Al desarrollar el script jsp de un componente de la, se recomienda incluir e
 <%@include file="/libs/foundation/global.jsp"%>
 ```
 
-Declara las etiquetas sling, CQ y jstl y expone los objetos de script utilizados regularmente definidos por [`<cq:defineObjects />`](#amp-lt-cq-defineobjects) etiqueta. Esto acorta y simplifica el código jsp del componente.
+Declara las etiquetas sling, CQ y jstl y expone los objetos de script utilizados con regularidad definidos por la etiqueta [`<cq:defineObjects />`](#amp-lt-cq-defineobjects). Esto acorta y simplifica el código jsp del componente.
 
 ### &lt;cq:text> {#cq-text}
 
-El `<cq:text>` es una etiqueta de conveniencia que genera texto de componente en un JSP.
+La etiqueta `<cq:text>` es una etiqueta de conveniencia que genera texto de componente en un JSP.
 
 Tiene los siguientes atributos opcionales:
 
-**propiedad** : nombre de la propiedad que se va a utilizar. El nombre es relativo al recurso actual.
+**propiedad** - Nombre de la propiedad que se va a usar. El nombre es relativo al recurso actual.
 
-**valor** : valor que se utilizará para la salida. Si este atributo está presente, sobrescribe el uso del atributo property.
+**value**: valor que se usará para la salida. Si este atributo está presente, sobrescribe el uso del atributo property.
 
-**oldValue** : valor que se utilizará para la salida de diferencia. Si este atributo está presente, sobrescribe el uso del atributo property.
+**oldValue**: valor que se utilizará para la salida de diferencia. Si este atributo está presente, sobrescribe el uso del atributo property.
 
-**escapeXml** - Define si los caracteres &lt;, >, &amp;, &#39; y &quot; de la cadena resultante deben convertirse a sus códigos de entidad de caracteres correspondientes. El valor predeterminado es false. El escape se aplica después del formato opcional.
+**escapeXml**: define si los caracteres &lt;, >, &amp;, &#39; y &quot; de la cadena resultante deben convertirse a sus códigos de entidad de carácter correspondientes. El valor predeterminado es false. El escape se aplica después del formato opcional.
 
-**formato** : java.text.Format opcional que se utilizará para dar formato al texto.
+**format**: java.text.Format opcional que se utilizará para dar formato al texto.
 
-**noDiff** : Suprime el cálculo de una salida de diferencia, incluso si hay una información de diferencia presente.
+**noDiff**: suprime el cálculo de una salida de diferencia, aunque haya información de diferencia.
 
-**tagClass** : nombre de clase CSS de un elemento que rodeará una salida no vacía. Si está vacío, no se agrega ningún elemento.
+**tagClass**: nombre de clase CSS de un elemento que rodeará una salida no vacía. Si está vacío, no se agrega ningún elemento.
 
-**tagName** : nombre del elemento que rodeará una salida no vacía. El valor predeterminado es DIV.
+**tagName**: nombre del elemento que rodeará una salida no vacía. El valor predeterminado es DIV.
 
-**placeholder** : valor predeterminado que se utilizará para el texto nulo o vacío en el modo de edición, es decir, el marcador de posición. La comprobación predeterminada se realiza después del formato opcional y el escape, es decir, se escribe tal cual en la salida. El valor predeterminado es:
+**placeholder**: valor predeterminado que se usará para texto nulo o vacío en el modo de edición, es decir, el marcador de posición. La comprobación predeterminada se realiza después del formato opcional y el escape, es decir, se escribe tal cual en la salida. El valor predeterminado es:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
-**predeterminado** - Valor predeterminado que se utilizará para el texto nulo o vacío. La comprobación predeterminada se realiza después del formato opcional y el escape, es decir, se escribe tal cual en la salida.
+**default**: valor predeterminado que se usará para texto nulo o vacío. La comprobación predeterminada se realiza después del formato opcional y el escape, es decir, se escribe tal cual en la salida.
 
-Algunos ejemplos muestran cómo la variable `<cq:text>` La etiqueta se puede utilizar en un JSP:
+Algunos ejemplos de cómo se puede utilizar la etiqueta `<cq:text>` en un JSP:
 
 ```xml
 <cq:text property="jcr:title" tagName="h2"/>
@@ -158,34 +158,34 @@ Algunos ejemplos muestran cómo la variable `<cq:text>` La etiqueta se puede uti
 
 ### &lt;cq:setContentBundle> {#cq-setcontentbundle}
 
-El `<cq:setContentBundle>` crea un contexto de localización i18n y lo almacena en el `javax.servlet.jsp.jstl.fmt.localizationContext` variable de configuración.
+La etiqueta `<cq:setContentBundle>` crea un contexto de localización i18n y lo almacena en la variable de configuración `javax.servlet.jsp.jstl.fmt.localizationContext`.
 
 Tiene los atributos siguientes:
 
-**idioma** : El idioma de la configuración regional para la que se recupera el paquete de recursos.
+**idioma**: idioma de la configuración regional para la que se recuperará el paquete de recursos.
 
-**origen** : origen desde el que se debe tomar la configuración regional. Se puede establecer en uno de los siguientes valores:
+**origen**: origen desde el que se debe tomar la configuración regional. Se puede establecer en uno de los siguientes valores:
 
-* **estático** - la configuración regional se toma del `language` atributo si está disponible; en caso contrario, desde la configuración regional predeterminada del servidor.
+* **static**: la configuración regional se toma del atributo `language` si está disponible; de lo contrario, se toma de la configuración regional predeterminada del servidor.
 
-* **página** : la configuración regional se toma del idioma de la página o el recurso actual si está disponible; de lo contrario, se toma del `language` atributo si está disponible; en caso contrario, desde la configuración regional predeterminada del servidor.
+* **página**: la configuración regional se toma del idioma de la página o del recurso actual si está disponible; de lo contrario, se toma del atributo `language` si está disponible; de lo contrario, se toma de la configuración regional predeterminada del servidor.
 
 * **solicitud** - la configuración regional se toma de la configuración regional de la solicitud ( `request.getLocale()`).
 
-* **auto** - la configuración regional se toma del `language` atributo si está disponible; de lo contrario, desde el idioma de la página o el recurso actual, si está disponible; de lo contrario, desde la solicitud.
+* **auto**: la configuración regional se toma del atributo `language` si está disponible; de lo contrario, se toma del idioma de la página o el recurso actual si está disponible; de lo contrario, se toma de la solicitud.
 
-Si la variable `source` no se ha establecido el atributo:
+Si el atributo `source` no está establecido:
 
-* Si la variable `language` se ha establecido el atributo, la variable `source` el atributo toma el valor predeterminado &quot; `static`.
+* Si se establece el atributo `language`, el atributo `source` toma como valor predeterminado &quot;`static`.
 
-* Si la variable `language` no se ha definido el atributo, la variable `source` el atributo toma el valor predeterminado `auto`.
+* Si no se establece el atributo `language`, el valor predeterminado del atributo `source` es `auto`.
 
-El &quot;paquete de contenido&quot; lo puede usar el JSTL estándar `<fmt:message>` etiquetas. La búsqueda de mensajes por claves es doble:
+Las etiquetas JSTL estándar `<fmt:message>` pueden utilizar el &quot;paquete de contenido&quot;. La búsqueda de mensajes por claves es doble:
 
 1. En primer lugar, se buscan traducciones en las propiedades JCR del recurso subyacente que se procesa. Esto permite definir un cuadro de diálogo de componente simple para editar esos valores.
-1. Si el nodo no contiene una propiedad denominada exactamente como la clave, la alternativa es cargar un paquete de recursos desde la solicitud de sling ( `SlingHttpServletRequest.getResourceBundle(Locale)`). El idioma o la configuración regional de este paquete se define mediante los atributos de idioma y origen del `<cq:setContentBundle>` etiqueta.
+1. Si el nodo no contiene una propiedad denominada exactamente como la clave, la alternativa es cargar un paquete de recursos desde la solicitud de sling ( `SlingHttpServletRequest.getResourceBundle(Locale)`). El idioma o la configuración regional de este paquete se define mediante los atributos de idioma y origen de la etiqueta `<cq:setContentBundle>`.
 
-El `<cq:setContentBundle>` la etiqueta se puede utilizar de la siguiente manera en un jsp.
+La etiqueta `<cq:setContentBundle>` se puede usar de la siguiente manera en un jsp.
 
 Para páginas que definen su idioma:
 
@@ -205,7 +205,7 @@ Para páginas personalizadas de usuario:
 
 ### &lt;cq:include> {#cq-include}
 
-El `<cq:include>` incluye un recurso en la página actual.
+La etiqueta `<cq:include>` incluye un recurso en la página actual.
 
 Tiene los atributos siguientes:
 
@@ -243,45 +243,45 @@ Tiene los atributos siguientes:
 </div>
 ```
 
-¿Debe utilizar `<%@ include file="myScript.jsp" %>` o `<cq:include script="myScript.jsp" %>` para incluir un script?
+¿Debería usar `<%@ include file="myScript.jsp" %>` o `<cq:include script="myScript.jsp" %>` para incluir un script?
 
-* El `<%@ include file="myScript.jsp" %>` indica al compilador de JSP que incluya un archivo completo en el archivo actual. Es como si el contenido del archivo incluido se hubiera pegado directamente en el archivo original.
-* Con el `<cq:include script="myScript.jsp">` , el archivo se incluye durante la ejecución.
+* La directiva `<%@ include file="myScript.jsp" %>` indica al compilador JSP que incluya un archivo completo en el archivo actual. Es como si el contenido del archivo incluido se hubiera pegado directamente en el archivo original.
+* Con la etiqueta `<cq:include script="myScript.jsp">`, el archivo se incluye durante la ejecución.
 
-¿Debe utilizar `<cq:include>` o `<sling:include>`?
+¿Debería usar `<cq:include>` o `<sling:include>`?
 
-* AEM A la hora de desarrollar componentes de la, Adobe recomienda utilizar `<cq:include>`.
-* `<cq:include>` permite incluir directamente los archivos de script por su nombre cuando se utiliza el atributo script. Esto tiene en cuenta la herencia de componentes y tipos de recursos, y a menudo es más sencillo que el cumplimiento estricto de la resolución de scripts de Sling mediante selectores y extensiones.
+* AEM A la hora de desarrollar componentes de la, Adobe recomienda usar `<cq:include>`.
+* `<cq:include>` le permite incluir directamente archivos de script por su nombre cuando se utiliza el atributo script. Esto tiene en cuenta la herencia de componentes y tipos de recursos, y a menudo es más sencillo que el cumplimiento estricto de la resolución de scripts de Sling mediante selectores y extensiones.
 
 ### &lt;cq:includeClientLib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` AEM Obsoleto desde la versión 5.. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) debe utilizarse en su lugar.
+>AEM `<cq:includeClientLib>` obsoleto desde la versión 5.6 de la. Se debe usar [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) en su lugar.
 
-El `<cq:includeClientLib>` AEM etiqueta Incluye una biblioteca de cliente html de la comunidad, que puede ser una biblioteca js, una css o una biblioteca de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio cómodo para el `com.day.cq.widget.HtmlLibraryManager` interfaz de servicio de.
+AEM La etiqueta `<cq:includeClientLib>` incluye una biblioteca de cliente de html de, que puede ser una biblioteca js, css o de temas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio práctico para la interfaz de servicio `com.day.cq.widget.HtmlLibraryManager`.
 
 Tiene los atributos siguientes:
 
-**categorías** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas de JavaScript y CSS para las categorías dadas. El nombre de la temática se extrae de la solicitud.
+**categorías**: una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas de JavaScript y CSS para las categorías dadas. El nombre de la temática se extrae de la solicitud.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**tema** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas relacionadas con temáticas (tanto CSS como JS) para las categorías dadas. El nombre de la temática se extrae de la solicitud.
+**tema**: una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas relacionadas con temáticas (tanto CSS como JS) para las categorías dadas. El nombre de la temática se extrae de la solicitud.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas JavaScript para las categorías dadas.
+**js**: una lista de categorías de biblioteca de cliente separadas por coma. Esto incluye todas las bibliotecas de JavaScript para las categorías dadas.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
-**css** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluye todas las bibliotecas CSS para las categorías dadas.
+**css**: una lista de categorías de biblioteca de cliente separadas por coma. Esto incluye todas las bibliotecas CSS para las categorías dadas.
 
 Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
-**temático** : Se debe incluir un indicador que indique que solo hay bibliotecas temáticas o no temáticas. Si se omite, se incluyen ambos conjuntos. Solo se aplica a inclusiones JS o CSS puras (no para categorías ni inclusiones de temas).
+**temático**: se debe incluir un indicador que indique que solo se deben incluir bibliotecas temáticas o no temáticas. Si se omite, se incluyen ambos conjuntos. Solo se aplica a inclusiones JS o CSS puras (no para categorías ni inclusiones de temas).
 
-El `<cq:includeClientLib>` la etiqueta se puede utilizar de la siguiente manera en un jsp:
+La etiqueta `<cq:includeClientLib>` se puede usar de la siguiente manera en un jsp:
 
 ```xml
 <%-- all: js + theme (theme-js + css) --%>
@@ -299,7 +299,7 @@ El `<cq:includeClientLib>` la etiqueta se puede utilizar de la siguiente manera 
 
 ### &lt;cq:defineObjects> {#cq-defineobjects}
 
-El `<cq:defineObjects>` expone los siguientes objetos de script, que se utilizan con regularidad y a los que el desarrollador puede hacer referencia. También expone los objetos definidos por la variable [`<sling:defineObjects>`](#amp-lt-sling-defineobjects) etiqueta.
+La etiqueta `<cq:defineObjects>` expone los siguientes objetos de script, que se utilizan con regularidad y a los que el desarrollador puede hacer referencia. También expone los objetos definidos por la etiqueta [`<sling:defineObjects>`](#amp-lt-sling-defineobjects).
 
 **componentContext**
 
@@ -362,7 +362,7 @@ El `<cq:defineObjects>` expone los siguientes objetos de script, que se utilizan
 
 * heredado de sling
 
-**nodeName**
+**nombreDeNodo**
 
 * heredado de sling
 
@@ -437,17 +437,17 @@ El `<cq:defineObjects>` expone los siguientes objetos de script, que se utilizan
 
 >[!NOTE]
 >
->Si la variable `/libs/foundation/global.jsp` se incluye en la secuencia de comandos, la variable `<cq:defineObjects />` se incluye automáticamente.
+>Cuando el archivo `/libs/foundation/global.jsp` se incluye en el script, la etiqueta `<cq:defineObjects />` se incluye automáticamente.
 
 ### &lt;cq:requestURL> {#cq-requesturl}
 
-El `<cq:requestURL>` escribe la dirección URL de la solicitud actual en JspWriter. Las dos etiquetas [`<cq:addParam>`](#amp-lt-cq-addparam) y [`<cq:removeParam>`](#amp-lt-cq-removeparam) y se pueden usar dentro del cuerpo de esta etiqueta para modificar la URL de la solicitud actual antes de que se escriba.
+La etiqueta `<cq:requestURL>` escribe la dirección URL de la solicitud actual en JspWriter. Las dos etiquetas [`<cq:addParam>`](#amp-lt-cq-addparam) y [`<cq:removeParam>`](#amp-lt-cq-removeparam) y se pueden usar dentro del cuerpo de esta etiqueta para modificar la dirección URL de la solicitud actual antes de que se escriba.
 
 Permite crear vínculos a la página actual con distintos parámetros. Por ejemplo, permite transformar la solicitud:
 
 `mypage.html?mode=view&query=something` en `mypage.html?query=something`.
 
-El uso de `addParam` o `removeParam` Si solo cambia la aparición del parámetro determinado, el resto de parámetros no se verán afectados.
+El uso de `addParam` o `removeParam` solo cambia la aparición del parámetro dado; el resto de parámetros no se ven afectados.
 
 `<cq:requestURL>` no tiene ningún atributo.
 
@@ -463,11 +463,11 @@ Por ejemplo:
 
 ### &lt;cq:addParam> {#cq-addparam}
 
-El `<cq:addParam>` agrega un parámetro de solicitud con el nombre y valor dados al contenedor [`<cq:requestURL>`](#amp-lt-cq-requesturl) etiqueta.
+La etiqueta `<cq:addParam>` agrega un parámetro de solicitud con el nombre y valor dados a la etiqueta [`<cq:requestURL>`](#amp-lt-cq-requesturl) que lo incluye.
 
 Tiene los atributos siguientes:
 
-**name**
+**nombre**
 
 * nombre del parámetro que se va a agregar
 
@@ -483,11 +483,11 @@ Tiene los atributos siguientes:
 
 ### &lt;cq:removeParam> {#cq-removeparam}
 
-El `<cq:removeParam>` elimina un parámetro de solicitud con el nombre y valor dados del contenedor [`<cq:requestURL>`](#amp-lt-cq-requesturl) etiqueta. Si no se proporciona ningún valor, se eliminan todos los parámetros con el nombre dado.
+La etiqueta `<cq:removeParam>` quita un parámetro de solicitud con el nombre y valor dados de la etiqueta [`<cq:requestURL>`](#amp-lt-cq-requesturl) que lo incluye. Si no se proporciona ningún valor, se eliminan todos los parámetros con el nombre dado.
 
 Tiene los atributos siguientes:
 
-**name**
+**nombre**
 
 * nombre del parámetro que se va a eliminar
 
@@ -509,11 +509,11 @@ Cuando se utiliza la biblioteca de etiquetas Sling en el script, este debe comen
 
 >[!NOTE]
 >
->Si la variable `/libs/foundation/global.jsp` se incluye en el script, la etiqueta sling se declara automáticamente.
+>Cuando se incluye el archivo `/libs/foundation/global.jsp` en el script, la biblioteca de etiquetas de sling se declara automáticamente.
 
 ### &lt;sling:include> {#sling-include}
 
-El `<sling:include>` incluye un recurso en la página actual.
+La etiqueta `<sling:include>` incluye un recurso en la página actual.
 
 Tiene los atributos siguientes:
 
@@ -521,7 +521,7 @@ Tiene los atributos siguientes:
 
 * Un booleano que define si se debe vaciar la salida antes de incluir el destino.
 
-**resource**
+**recurso**
 
 * El objeto de recurso que se va a incluir en el procesamiento de solicitud actual. Se debe especificar el recurso o la ruta. Si se especifican ambos, el recurso tiene prioridad.
 
@@ -548,7 +548,7 @@ Tiene los atributos siguientes:
 
 >[!NOTE]
 >
->La resolución del recurso y la secuencia de comandos que se incluyen con el `<sling:include>` es la misma que para una resolución de URL normal de sling. De forma predeterminada, los selectores, la extensión, etc. de la solicitud actual también se utilizan para el script incluido. Se pueden modificar mediante los atributos de etiqueta: por ejemplo, `replaceSelectors="foo.bar"` permite sobrescribir los selectores.
+>La resolución del recurso y el script que se incluyen con la etiqueta `<sling:include>` es la misma que para una resolución de URL normal de sling. De forma predeterminada, los selectores, la extensión, etc. de la solicitud actual también se utilizan para el script incluido. Se pueden modificar mediante los atributos de etiqueta: por ejemplo, `replaceSelectors="foo.bar"` permite sobrescribir los selectores.
 
 Por ejemplo:
 
@@ -578,7 +578,7 @@ Por ejemplo:
 
 ### &lt;sling:defineObjects> {#sling-defineobjects}
 
-El `<sling:defineObjects>` expone los siguientes objetos de script, que se utilizan con regularidad y a los que el desarrollador puede hacer referencia:
+La etiqueta `<sling:defineObjects>` expone los siguientes objetos de scripts que el desarrollador puede hacer referencia y que se utilizan con regularidad:
 
 **slingRequest**
 
@@ -594,15 +594,15 @@ El `<sling:defineObjects>` expone los siguientes objetos de script, que se utili
 
 * El objeto ResourceResolver actual. Es lo mismo que slingRequest.getResourceResolver()
 
-.**cabestrillo**
+.**sling**
 
 * Un objeto SlingScriptHelper, que contiene métodos de conveniencia para scripts, principalmente sling.include(&#39;/some/other/resource&#39;) para incluir las respuestas de otros recursos dentro de esta respuesta (por ejemplo, incrustar fragmentos html de encabezado) y sling.getService(foo.bar.Service.class) para recuperar los servicios OSGi disponibles en Sling (notación de clase según el lenguaje de script).
 
-**resource**
+**recurso**
 
 * el objeto Resource actual que se va a controlar, según la dirección URL de la solicitud. Es lo mismo que slingRequest.getResource().
 
-**currentNode**
+**nodoActual**
 
 * Si el recurso actual apunta a un nodo JCR (como suele ocurrir en Sling), proporciona acceso directo al objeto Node. De lo contrario, este objeto no está definido.
 
@@ -616,9 +616,9 @@ El `<sling:defineObjects>` expone los siguientes objetos de script, que se utili
 
 **responseName**
 
-**nodeName**
+**nombreDeNodo**
 
-l **resourceResolverName de logName**
+l **ogName resourceResolverName**
 
 **slingName**
 
@@ -633,7 +633,7 @@ l **resourceResolverName de logName**
 
 ## Biblioteca de etiquetas JSTL {#jstl-tag-library}
 
-El [Biblioteca de etiquetas estándar de páginas de JavaServer](https://www.oracle.com/java/technologies/java-server-tag-library.html) contiene muchas etiquetas útiles y estándar. Las etiquetas core, formatting y functions se definen mediante la variable `/libs/foundation/global.jsp` como se muestra en el siguiente fragmento de código.
+La [Biblioteca de etiquetas estándar de páginas de JavaServer](https://www.oracle.com/java/technologies/java-server-tag-library.html) contiene muchas etiquetas útiles y estándar. Las etiquetas principales, de formato y de funciones están definidas por `/libs/foundation/global.jsp` tal como se muestra en el siguiente fragmento de código.
 
 ### Extracto de /libs/foundation/global.jsp {#extract-of-libs-foundation-global-jsp}
 
@@ -643,4 +643,4 @@ El [Biblioteca de etiquetas estándar de páginas de JavaServer](https://www.ora
 <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions" %>
 ```
 
-Después de importar el `/libs/foundation/global.jsp` como se ha descrito anteriormente, puede utilizar el `c`, `fmt` y `fn` prefijos para acceder a esas etiquetas. La documentación oficial del JSTL está disponible en [Tutorial de Java™ EE 5: Biblioteca de etiquetas estándar de JavaServer Pages](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).
+Después de importar el archivo `/libs/foundation/global.jsp` como se describió anteriormente, puede usar los prefijos `c`, `fmt` y `fn` para tener acceso a esas etiquetas. La documentación oficial de JSTL está disponible en [The Java™ EE 5 Tutorial - JavaServer Pages Standard Tag Library](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).

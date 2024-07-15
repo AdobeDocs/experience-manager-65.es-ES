@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Estas son algunas cuestiones que se deben tener en cuenta al ejecutar la consola de administración:
 
-* Si accede a la consola de administración mediante la dirección URL `https://[hostname]:'port'/adminui`Sin embargo, el nombre de host especificado no puede contener guiones bajos. De lo contrario, es posible que los vínculos a algunas áreas de la consola de administración no funcionen correctamente.
+* Si accede a la consola de administración mediante la dirección URL `https://[hostname]:'port'/adminui`, el nombre de host especificado no puede contener caracteres de guion bajo. De lo contrario, es posible que los vínculos a algunas áreas de la consola de administración no funcionen correctamente.
 * Si ejecuta una consola de administración en el Explorador de Windows en un sistema operativo japonés, puede encontrar estos problemas:
 
    * Al hacer clic en un vínculo, vuelve a la página de inicio de sesión en lugar de al vínculo esperado.

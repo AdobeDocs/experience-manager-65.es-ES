@@ -19,17 +19,17 @@ ht-degree: 1%
 
 # Procesar formularios en el cliente {#rendering-forms-at-the-client}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
 ## Procesar formularios en el cliente {#rendering-forms-at-the-client-inner}
 
 Puede optimizar la entrega de contenido de PDF y mejorar la capacidad del servicio Forms para gestionar la carga de red mediante la capacidad de procesamiento del lado del cliente de Acrobat o Adobe Reader. Este proceso se conoce como procesar un formulario en el cliente. Para procesar un formulario en el cliente, el dispositivo cliente (normalmente un explorador web) debe utilizar Acrobat 7.0 o Adobe Reader 7.0 o posterior.
 
-Los cambios realizados en un formulario como resultado de la ejecución de scripts del lado del servidor no se reflejan en un formulario que se procese en el cliente a menos que el subformulario raíz contenga el `restoreState` atributo que se establece en `auto`. Para obtener más información sobre este atributo, consulte [Forms Designer.](https://www.adobe.com/go/learn_aemforms_designer_63)
+Los cambios realizados en un formulario como resultado de la ejecución de scripts del lado del servidor no se reflejan en un formulario que se procese en el cliente a menos que el subformulario raíz contenga el atributo `restoreState` establecido en `auto`. Para obtener más información acerca de este atributo, vea [Forms Designer.](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary-of-steps}
 
@@ -47,13 +47,13 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando u
 
 **Crear un objeto de API de cliente de Forms**
 
-Para poder realizar mediante programación una operación de API de cliente de servicio de Forms, debe crear un cliente de servicio de Forms. Si utiliza la API de Java, cree un `FormsServiceClient` objeto. Si utiliza la API del servicio web de Forms, cree un `FormsService` objeto.
+Para poder realizar mediante programación una operación de API de cliente de servicio de Forms, debe crear un cliente de servicio de Forms. Si está usando la API de Java, cree un objeto `FormsServiceClient`. Si está usando la API del servicio web de Forms, cree un objeto `FormsService`.
 
 **Establecer opciones de tiempo de ejecución de procesamiento de cliente**
 
-Establezca la opción de tiempo de ejecución de representación de cliente para procesar un formulario en el cliente estableciendo la variable `RenderAtClient` opción de tiempo de ejecución para `true`. Esto hace que el formulario se envíe al dispositivo cliente donde se representa. If `RenderAtClient` es `auto` (el valor predeterminado), el diseño de formulario determina si el formulario se procesa en el cliente. El diseño de formulario debe ser un diseño de formulario con un diseño fluido.
+Establezca la opción de tiempo de ejecución de representación de cliente para procesar un formulario en el cliente estableciendo la opción de tiempo de ejecución `RenderAtClient` en `true`. Esto hace que el formulario se envíe al dispositivo cliente donde se representa. Si `RenderAtClient` es `auto` (el valor predeterminado), el diseño de formulario determina si el formulario se procesará en el cliente. El diseño de formulario debe ser un diseño de formulario con un diseño fluido.
 
-Una opción de tiempo de ejecución opcional que puede establecer es la `SeedPDF` opción. El `SeedPDF` combina el contenedor de PDF (documento de PDF semilla) con el diseño de formulario y los datos XML. Tanto el diseño de formulario como los datos XML se envían a Acrobat o Adobe Reader, donde se procesa el formulario. El `SeedPDF` se puede utilizar cuando el equipo cliente no tiene fuentes que se utilicen en el formulario, como cuando un usuario final no tiene licencia para utilizar una fuente para la que el propietario del formulario tiene licencia.
+Una opción de tiempo de ejecución opcional que puede establecer es la opción `SeedPDF`. La opción `SeedPDF` combina el contenedor de PDF (documento de PDF semilla) con el diseño de formulario y los datos XML. Tanto el diseño de formulario como los datos XML se envían a Acrobat o Adobe Reader, donde se procesa el formulario. La opción `SeedPDF` se puede usar cuando el equipo cliente no tiene fuentes que se usen en el formulario, como cuando un usuario final no tiene licencia para usar una fuente para la que el propietario del formulario tiene licencia.
 
 Puede utilizar Designer para crear un archivo de PDF dinámico simple para utilizarlo como archivo de PDF semilla. Se requieren los siguientes pasos para realizar esta tarea:
 
@@ -69,7 +69,7 @@ Puede utilizar Designer para crear un archivo de PDF dinámico simple para utili
 
 Para procesar un formulario en el cliente, debe asegurarse de que las opciones de tiempo de ejecución de procesamiento del cliente estén incluidas en la lógica de la aplicación para procesar un formulario.
 
-**Escribir el flujo de datos del formulario en el explorador web del cliente**
+**Escriba el flujo de datos del formulario en el explorador web del cliente**
 
 El servicio Forms crea un flujo de datos de formulario que debe escribir en el explorador web del cliente. Cuando se escribe en el explorador web del cliente, el formulario se procesa mediante Acrobat 7.0 o Adobe Reader 7.0 o posterior y es visible para el usuario.
 
@@ -99,35 +99,35 @@ Procesar un formulario en el cliente mediante la API de Forms (Java):
 
 1. Crear un objeto de API de cliente de Forms
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
-   * Crear un `FormsServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `FormsServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Establecer opciones de tiempo de ejecución de procesamiento de cliente
 
-   * Crear un `PDFFormRenderSpec` mediante su constructor.
-   * Configure las variables `RenderAtClient` en tiempo de ejecución invocando la opción `PDFFormRenderSpec` del objeto `setRenderAtClient` y pasando el valor de enumeración `RenderAtClient.Yes`.
+   * Crear un objeto `PDFFormRenderSpec` mediante su constructor.
+   * Establezca la opción de tiempo de ejecución `RenderAtClient` invocando el método `setRenderAtClient` del objeto `PDFFormRenderSpec` y pasando el valor de enumeración `RenderAtClient.Yes`.
 
 1. Procesar un formulario en el cliente
 
-   Invoque el `FormsServiceClient` del objeto `renderPDFForm` y pasar los siguientes valores:
+   Invoque el método `renderPDFForm` del objeto `FormsServiceClient` y pase los siguientes valores:
 
    * Un valor de cadena que especifica el nombre del diseño del formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de AEM Forms, asegúrese de especificar la ruta de acceso completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `com.adobe.idp.Document` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un vacío `com.adobe.idp.Document` objeto.
-   * A `PDFFormRenderSpec` que almacena las opciones en tiempo de ejecución necesarias para procesar un formulario en el cliente.
-   * A `URLSpec` que contiene valores de URI requeridos por el servicio Forms para procesar un formulario.
-   * A `java.util.HashMap` que almacena archivos adjuntos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+   * Objeto `com.adobe.idp.Document` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un objeto `com.adobe.idp.Document` vacío.
+   * Un objeto `PDFFormRenderSpec` que almacena las opciones en tiempo de ejecución necesarias para procesar un formulario en el cliente.
+   * Un objeto `URLSpec` que contiene valores de URI requeridos por el servicio Forms para procesar un formulario.
+   * Objeto `java.util.HashMap` que almacena datos adjuntos de archivos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
 
-   El `renderPDFForm` El método devuelve un valor `FormsResult` que contiene un flujo de datos de formulario que debe escribirse en el explorador web cliente.
+   El método `renderPDFForm` devuelve un objeto `FormsResult` que contiene una secuencia de datos de formulario que debe escribirse en el explorador web del cliente.
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
-   * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
-   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
-   * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
-   * Crear un `java.io.InputStream` invocando el objeto de `com.adobe.idp.Document` del objeto `getInputStream` método.
-   * Cree una matriz de bytes y rellénela con el flujo de datos de formulario invocando el método `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
-   * Invoque el `javax.servlet.ServletOutputStream` del objeto `write` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes a `write` método.
+   * Cree un objeto `com.adobe.idp.Document` invocando el método `getOutputContent` del objeto `FormsResult`.
+   * Obtenga el tipo de contenido del objeto `com.adobe.idp.Document` invocando su método `getContentType`.
+   * Establezca el tipo de contenido del objeto `javax.servlet.http.HttpServletResponse` invocando su método `setContentType` y pasando el tipo de contenido del objeto `com.adobe.idp.Document`.
+   * Cree un objeto `javax.servlet.ServletOutputStream` utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el método `getOutputStream` del objeto `javax.servlet.http.HttpServletResponse`.
+   * Cree un objeto `java.io.InputStream` invocando el método `getInputStream` del objeto `com.adobe.idp.Document`.
+   * Cree una matriz de bytes y rellénela con la secuencia de datos de formulario invocando el método `read` del objeto `InputStream` y pasando la matriz de bytes como argumento.
+   * Invoque el método `write` del objeto `javax.servlet.ServletOutputStream` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes al método `write`.
 
 **Consulte también**
 
@@ -148,38 +148,38 @@ Procesar un formulario en el cliente mediante la API de Forms (servicio web):
 
 1. Crear un objeto de API de cliente de Forms
 
-   Crear un `FormsService` y establezca los valores de autenticación.
+   Cree un objeto `FormsService` y establezca los valores de autenticación.
 
 1. Establecer opciones de tiempo de ejecución de procesamiento de cliente
 
-   * Crear un `PDFFormRenderSpec` mediante su constructor.
-   * Configure las variables `RenderAtClient` en tiempo de ejecución invocando la opción `PDFFormRenderSpec` del objeto `setRenderAtClient` método y pasar el valor de cadena `RenderAtClient.Yes`.
+   * Crear un objeto `PDFFormRenderSpec` mediante su constructor.
+   * Establezca la opción de tiempo de ejecución `RenderAtClient` invocando el método `setRenderAtClient` del objeto `PDFFormRenderSpec` y pasando el valor de cadena `RenderAtClient.Yes`.
 
 1. Procesar un formulario en el cliente
 
-   Invoque el `FormsService` del objeto `renderPDFForm` y pasar los siguientes valores:
+   Invoque el método `renderPDFForm` del objeto `FormsService` y pase los siguientes valores:
 
    * Un valor de cadena que especifica el nombre del diseño del formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta de acceso completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `BLOB` que contiene datos para combinar con el formulario. Si no desea combinar los datos, apruebe `null`. (Consulte [Rellenado previo de Forms con diseños flexibles](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
-   * A `PDFFormRenderSpec` que almacena las opciones en tiempo de ejecución necesarias para procesar un formulario en el cliente.
-   * A `URLSpec` que contiene valores de URI requeridos por el servicio de Forms.
-   * A `java.util.HashMap` que almacena archivos adjuntos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
-   * Un vacío `com.adobe.idp.services.holders.BLOBHolder` objeto que rellena el método. Este parámetro se utiliza para almacenar el formulario de PDF procesado.
-   * Un vacío `javax.xml.rpc.holders.LongHolder` objeto que rellena el método. (Este argumento almacenará el número de páginas en el formulario).
-   * Un vacío `javax.xml.rpc.holders.StringHolder` objeto que rellena el método. (Este argumento almacenará el valor de configuración regional).
-   * Un vacío `com.adobe.idp.services.holders.FormsResultHolder` que contendrá los resultados de esta operación.
+   * Objeto `BLOB` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`. (Consulte [Rellenado previo de Forms con diseños flexibles](/help/forms/developing/prepopulating-forms-flowable-layouts.md)).
+   * Un objeto `PDFFormRenderSpec` que almacena las opciones en tiempo de ejecución necesarias para procesar un formulario en el cliente.
+   * Un objeto `URLSpec` que contiene valores de URI requeridos por el servicio Forms.
+   * Objeto `java.util.HashMap` que almacena datos adjuntos de archivos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+   * Un objeto `com.adobe.idp.services.holders.BLOBHolder` vacío que ha rellenado el método. Este parámetro se utiliza para almacenar el formulario de PDF procesado.
+   * Un objeto `javax.xml.rpc.holders.LongHolder` vacío que ha rellenado el método. (Este argumento almacenará el número de páginas en el formulario).
+   * Un objeto `javax.xml.rpc.holders.StringHolder` vacío que ha rellenado el método. (Este argumento almacenará el valor de configuración regional).
+   * Un objeto `com.adobe.idp.services.holders.FormsResultHolder` vacío que contendrá los resultados de esta operación.
 
-   El `renderPDFForm` rellena el método `com.adobe.idp.services.holders.FormsResultHolder` que se pasa como el último valor de argumento con un flujo de datos de formulario que debe escribirse en el explorador web del cliente.
+   El método `renderPDFForm` rellena el objeto `com.adobe.idp.services.holders.FormsResultHolder` que se pasa como el último valor de argumento con una secuencia de datos de formulario que debe escribirse en el explorador web del cliente.
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Crear un `FormResult` al obtener el valor de la variable `com.adobe.idp.services.holders.FormsResultHolder` del objeto `value` miembro de datos.
-   * Crear un `BLOB` que contiene datos de formulario invocando el `FormsResult` del objeto `getOutputContent` método.
-   * Obtenga el tipo de contenido del `BLOB` invocando su objeto `getContentType` método.
-   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `BLOB` objeto.
-   * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
-   * Cree una matriz de bytes y rellénela invocando el método `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido del `FormsResult` a la matriz de bytes.
-   * Invoque el `javax.servlet.http.HttpServletResponse` del objeto `write` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes a `write` método.
+   * Cree un objeto `FormResult` obteniendo el valor del miembro de datos `value` del objeto `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Cree un objeto `BLOB` que contenga datos de formulario invocando el método `getOutputContent` del objeto `FormsResult`.
+   * Obtenga el tipo de contenido del objeto `BLOB` invocando su método `getContentType`.
+   * Establezca el tipo de contenido del objeto `javax.servlet.http.HttpServletResponse` invocando su método `setContentType` y pasando el tipo de contenido del objeto `BLOB`.
+   * Cree un objeto `javax.servlet.ServletOutputStream` utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el método `getOutputStream` del objeto `javax.servlet.http.HttpServletResponse`.
+   * Cree una matriz de bytes y rellénela invocando el método `getBinaryData` del objeto `BLOB`. Esta tarea asigna el contenido del objeto `FormsResult` a la matriz de bytes.
+   * Invoque el método `write` del objeto `javax.servlet.http.HttpServletResponse` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes al método `write`.
 
 **Consulte también**
 

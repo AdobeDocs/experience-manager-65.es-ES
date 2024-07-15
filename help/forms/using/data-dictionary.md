@@ -49,7 +49,7 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
 >Para varias cartas que requieran elementos similares, puede crear un diccionario de datos común. Sin embargo, un diccionario de datos de gran tamaño con un gran número de elementos puede provocar problemas de rendimiento al utilizarlo y al cargar los elementos, como en cartas y fragmentos de documento. Si tiene problemas de rendimiento, intente crear diccionarios de datos independientes para cartas diferentes.
 
 1. Seleccione **Forms** > **Diccionarios de datos**.
-1. Seleccionar **Crear diccionario de datos**.
+1. Seleccione **Crear diccionario de datos**.
 1. En la pantalla Propiedades, agregue lo siguiente:
 
    * **Título:** (Opcional) escriba el título del diccionario de datos. Los títulos no tienen que ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés. A las cartas y otros fragmentos de documento se refieren mediante su título (cuando están disponibles), como en miniaturas y propiedades de recursos. Se hace referencia a los diccionarios de datos con sus nombres y no títulos.
@@ -57,7 +57,7 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
 
    * **Descripción**: (Opcional) descripción del diccionario de datos.
    * **Etiquetas:** (Opcional) para crear una etiqueta personalizada, escriba un valor en el campo de texto y pulse Entrar. Puede ver la etiqueta debajo del campo de texto de las etiquetas. Al guardar este texto, también se crean las etiquetas que acaba de agregar.
-   * **Propiedades extendidas**: (Opcional) Seleccione **Añadir campo** para especificar atributos de metadatos para el diccionario de datos. En la columna Nombre de propiedad, escriba un nombre de propiedad único. En la columna Valor, escriba un valor para asociarlo a la propiedad.
+   * **Propiedades extendidas**: (Opcional) Seleccione **Agregar campo** para especificar atributos de metadatos para el diccionario de datos. En la columna Nombre de propiedad, escriba un nombre de propiedad único. En la columna Valor, escriba un valor para asociarlo a la propiedad.
 
    ![Propiedades del diccionario de datos especificadas en alemán](do-not-localize/1_ddproperties.png)
 
@@ -96,7 +96,7 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Opcional) Después de seleccionar un elemento, en la pestaña Avanzado puede agregar propiedades (atributos). También puede seleccionar **Añadir campo** y amplían las propiedades de un elemento DD.
+1. (Opcional) Después de seleccionar un elemento, en la pestaña Avanzado puede agregar propiedades (atributos). También puede seleccionar **Agregar campo** y ampliar las propiedades de un elemento DD.
 
    ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
@@ -152,7 +152,7 @@ Mientras edita o visualiza un diccionario de datos, puede ver qué elementos del
 
 1. En la página Diccionarios de datos, seleccione **Seleccionar**.
 1. Seleccione un diccionario de datos para el que desee descargar datos de prueba y, a continuación, seleccione **Descargar datos XML de ejemplo**.
-1. Seleccionar **OK** en el mensaje de alerta. Se descargará un archivo XML.
+1. Seleccione **Aceptar** en el mensaje de alerta. Se descargará un archivo XML.
 1. Abra el archivo XML con el Bloc de notas u otro editor XML. El archivo XML tiene la misma estructura que el diccionario de datos y las cadenas de marcador de posición de los elementos. Reemplace las cadenas de marcador de posición por los datos con los que desea probar una carta.
 
    ```xml
@@ -198,7 +198,8 @@ Mientras edita o visualiza un diccionario de datos, puede ver qué elementos del
 
 1. Después de realizar las entradas de datos, puede utilizar este archivo XML cuando previsualice una carta con datos de prueba.
 
-   Puede agregar estos datos de prueba con DD (seleccione DD y Cargar datos de prueba y cargar este archivo xml). Después de esto, cuando obtiene una vista previa de la carta normal (no personalizada), estos datos XML se utilizan en la carta. También puede seleccionar Personalizado y, a continuación, cargar este XML.
+   Puede agregar estos datos de prueba con DD (seleccione DD y Cargar datos de prueba y cargar este archivo xml)
+Después de esto, cuando previsualiza la carta normalmente (no personalizada), estos datos XML se utilizan en la carta. También puede seleccionar Personalizado y, a continuación, cargar este XML.
 
 ## Ejemplos {#samples}
 
@@ -413,7 +414,7 @@ Una vez creado un diccionario de datos, puede descargarlo como un archivo de dat
 
 1. En la página Diccionarios de datos, seleccione **Seleccionar** y, a continuación, seleccione un diccionario de datos para seleccionarlo.
 1. Seleccione **Descargar datos XML de ejemplo.**
-1. Seleccionar **OK** en el mensaje de alerta.
+1. Seleccione **Aceptar** en el mensaje de alerta.
 
    Administración de correspondencia creará un archivo XML basado en la estructura del diccionario de datos seleccionado y lo descargará en su equipo con el nombre &lt;data-dictionary-name>-SampleData. Ahora puede editar este archivo en un editor de texto o XML para realizar entradas de datos mientras [crea una carta](../../forms/using/create-letter.md).
 
@@ -424,8 +425,8 @@ Si desea enviar la misma carta en distintos idiomas a sus clientes, puede locali
 ### Localizar un diccionario de datos {#localize-data-dictionary}
 
 1. En la página Diccionarios de datos, seleccione **Seleccionar** y, a continuación, seleccione un diccionario de datos para seleccionarlo.
-1. Seleccionar **Descargar datos de localización**.
-1. Seleccionar **OK** en la alerta. Administración de correspondencia descargará un archivo zip a su equipo con el nombre DataDictionary-&lt;DDname>.zip.
+1. Seleccione **Descargar datos de localización**.
+1. Seleccione **Aceptar** en la alerta. Administración de correspondencia descargará un archivo zip a su equipo con el nombre DataDictionary-&lt;DDname>.zip.
 1. El archivo zip contiene un archivo .properties. Este archivo define el diccionario de datos descargado. El contenido del archivo de propiedades es similar al siguiente:
 
    ```ini

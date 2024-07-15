@@ -22,7 +22,7 @@ Este artículo analiza las estrategias y las prácticas recomendadas que puede i
 
 ## Configuración de caché {#cache-settings}
 
-Puede configurar y controlar la estrategia de almacenamiento en caché de AEM Forms mediante el **Configuraciones de Mobile Forms** AEM en la consola de configuración web de en:
+Puede configurar y controlar la estrategia de almacenamiento en caché de AEM Forms mediante el componente **Configuraciones de Forms AEM móvil** en la consola de configuración web de la, en:
 
 * (AEM Forms en OSGi)`https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms en JEE)`https://'[server]:[port]'/lc/system/console/configMgr`
@@ -47,7 +47,7 @@ Es posible que la configuración de caché predeterminada de AEM Forms no sea l
 
 ## Parámetros de JVM {#jvm-parameters}
 
-Para obtener un rendimiento óptimo, se recomienda utilizar la siguiente JVM `init` argumentos para configurar la variable `Java heap` y `PermGen`.
+Para obtener un rendimiento óptimo, se recomienda utilizar los siguientes argumentos JVM `init` para configurar `Java heap` y `PermGen`.
 
 ```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -90,7 +90,7 @@ Apache puede comunicarse con CRX mediante el protocolo HTTP. El objetivo de las 
 
    >[!NOTE]
    >
-   >En Linux®, la opción predeterminada `APACHE_HOME` es `/etc/httpd/`.
+   >Para Linux®, el valor predeterminado `APACHE_HOME` es `/etc/httpd/`.
 
 1. Configure el proxy en el puerto 4502 de CRX.
 Añada la siguiente configuración en el archivo de configuración `APACHE_HOME/conf/httpd.conf`.
@@ -152,7 +152,7 @@ Para mejorar el rendimiento, puede configurar el software antivirus para que exc
 
 * El directorio temporal del servidor de aplicaciones. La ubicación predeterminada es:
 
-   * (JBoss®) [AEM directorio de instalación de]\jboss\standalone\tmp
+   * AEM (JBoss®) [directorio de instalación de]\jboss\standalone\tmp
    * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (WebSphere®) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
@@ -160,9 +160,9 @@ Para mejorar el rendimiento, puede configurar el software antivirus para que exc
 
    * (JBoss®) [raíz de appserver]/server/&#39;server&#39;/svcnative/DocumentStorage
    * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [raíz de appserver]/installApps/adobe/&#39;server&#39;/DocumentStorage
+   * (WebSphere®) [raíz de appserver]/installerApps/adobe/&#39;server&#39;/DocumentStorage
 
-* **(solo AEM Forms en JEE)** Registros del servidor de AEM Forms y directorio temporal. La ubicación predeterminada es:
+* **(solo AEM Forms en JEE)** registros de AEM Forms Server y directorio temporal. La ubicación predeterminada es:
 
    * Registros del servidor - [Directorio de instalación de AEM Forms]\Adobe\AEM formularios\[servidor de aplicaciones]\server\all\logs
    * Directorio temporal - [Directorio de instalación de AEM Forms]\temp

@@ -18,7 +18,7 @@ ht-degree: 19%
 
 # Configurar extremos de carpetas vigiladas {#configuring-watched-folder-endpoints}
 
-Un administrador puede configurar una carpeta de red, conocida como *carpeta vigilada*, de forma que cuando un usuario coloque un archivo (como un archivo de PDF) en la carpeta inspeccionada, se invoque una operación de servicio configurada y se manipule el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada.
+Un administrador puede configurar una carpeta de red, conocida como *carpeta inspeccionada*, de forma que cuando un usuario coloque un archivo (como un archivo de PDF) en la carpeta inspeccionada, se invoque una operación de servicio configurada y se manipule el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada.
 
 ## Configuración del servicio de carpetas inspeccionadas {#configuring-the-watched-folder-service}
 
@@ -34,7 +34,7 @@ Después de configurar el servicio de carpetas inspeccionadas, agregue un punto 
 Puede crear una carpeta vigilada de las dos maneras siguientes:
 
 * Al configurar los ajustes de un extremo de carpeta inspeccionada, escriba la ruta completa del directorio principal en el cuadro Ruta y anexe el nombre de la carpeta inspeccionada que se va a crear, como se muestra en este ejemplo:
-  `  C:\MyPDFs\MyWatchedFolder`AEM Debido a que la carpeta MyWatchedFolder no existe todavía, los formularios de la aplicación de formularios de la aplicación intenta crearla en esa ubicación.
+  AEM `  C:\MyPDFs\MyWatchedFolder`Debido a que la carpeta MyWatchedFolder no existe, formularios de la aplicación intenta crearla en esa ubicación.
 
 * Cree una carpeta en el sistema de archivos antes de configurar un punto final de carpeta vigilada y, a continuación, escriba la ruta de acceso completa en el cuadro Ruta.
 
@@ -42,12 +42,12 @@ En un entorno agrupado, la carpeta que se utiliza como carpeta vigilada debe ser
 
 En Windows, si el servidor de aplicaciones se está ejecutando como un servicio, debe iniciarse con el acceso adecuado a la carpeta compartida de una de las siguientes maneras:
 
-* Configurar el servicio del servidor de aplicaciones Iniciar sesión como **parámetro** para comenzar como un usuario específico con acceso adecuado a la carpeta vigilada compartida.
+* Configure el servicio del servidor de aplicaciones Iniciar sesión como **parámetro** para que se inicie como un usuario específico con el acceso adecuado a la carpeta vigilada compartida.
 * Configure el servicio del servidor de aplicaciones Iniciar como sistema local para permitir que el servicio interactúe con el escritorio. Esta opción requiere que todos puedan acceder y escribir en la carpeta vigilada compartida.
 
 ## Encadenamiento de carpetas vigiladas {#chaining-together-watched-folders}
 
-Las carpetas inspeccionadas se pueden encadenar para que un documento resultante de una carpeta inspeccionada sea el documento de entrada de la siguiente carpeta inspeccionada. Cada carpeta vigilada puede invocar un servicio diferente. Al configurar las carpetas vigiladas de esta manera, se pueden invocar varios servicios. Por ejemplo, una carpeta inspeccionada podría convertir archivos de PDF a Adobe PostScript® y una segunda carpeta inspeccionada podría convertir los archivos PostScript a formato PDF/A. Para ello, simplemente configure el *resultado* carpeta de la carpeta vigilada definida por el primer punto final para que apunte a *entrada* de la carpeta vigilada definida por el segundo punto de conexión.
+Las carpetas inspeccionadas se pueden encadenar para que un documento resultante de una carpeta inspeccionada sea el documento de entrada de la siguiente carpeta inspeccionada. Cada carpeta vigilada puede invocar un servicio diferente. Al configurar las carpetas vigiladas de esta manera, se pueden invocar varios servicios. Por ejemplo, una carpeta inspeccionada podría convertir archivos de PDF a Adobe PostScript® y una segunda carpeta inspeccionada podría convertir los archivos de PostScript a formato PDF/A. Para ello, simplemente configure la carpeta *result* de la carpeta vigilada definida por el primer punto final para que apunte a la carpeta *input* de la carpeta vigilada definida por el segundo punto final.
 
 El resultado de la primera conversión iría a \path\result. La entrada para la segunda conversión sería \path\result y el resultado de la segunda conversión iría a \path\result\result (o el directorio que defina en el cuadro Carpeta de resultados para la segunda conversión).
 
@@ -96,10 +96,10 @@ El proceso de invocar un servicio mediante carpetas vigiladas es el siguiente:
 1. El provider.file_scan_service realiza estas tareas:
 
 
-   * Analiza la carpeta de entrada en busca de archivos o carpetas que coincidan con el patrón de archivo de inclusión y excluye archivos o carpetas para el patrón de archivo de exclusión especificado. Primero se recogen los archivos o carpetas más antiguos. También se recogen los archivos y carpetas que son anteriores al tiempo de espera. En un análisis, el número de archivos o carpetas que se procesan se basa en el tamaño del lote. Para obtener información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns). Para obtener información sobre la configuración del tamaño del lote, consulte [Configuración del servicio de carpetas inspeccionadas](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
-   * Recopila los archivos o carpetas para su procesamiento. Si los archivos o carpetas no se descargan completamente, se recogerán en el siguiente análisis. Para asegurarse de que las carpetas se descargan completamente, los administradores deben crear una carpeta con un nombre mediante el patrón de exclusión de archivos. Una vez que la carpeta tenga todos los archivos, se debe cambiar el nombre al patrón especificado en el patrón de archivo de inclusión. Este paso garantiza que la carpeta tenga todos los archivos necesarios para invocar el servicio. Para obtener más información sobre cómo garantizar que las carpetas se descarguen completamente, consulte [Sugerencias y trucos para carpetas vigiladas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+   * Analiza la carpeta de entrada en busca de archivos o carpetas que coincidan con el patrón de archivo de inclusión y excluye archivos o carpetas para el patrón de archivo de exclusión especificado. Primero se recogen los archivos o carpetas más antiguos. También se recogen los archivos y carpetas que son anteriores al tiempo de espera. En un análisis, el número de archivos o carpetas que se procesan se basa en el tamaño del lote. Para obtener información acerca de los patrones de archivo, vea [Acerca de los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns). Para obtener información sobre cómo establecer el tamaño del lote, consulte [Configuración del servicio de carpetas inspeccionadas](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
+   * Recopila los archivos o carpetas para su procesamiento. Si los archivos o carpetas no se descargan completamente, se recogerán en el siguiente análisis. Para asegurarse de que las carpetas se descargan completamente, los administradores deben crear una carpeta con un nombre mediante el patrón de exclusión de archivos. Una vez que la carpeta tenga todos los archivos, se debe cambiar el nombre al patrón especificado en el patrón de archivo de inclusión. Este paso garantiza que la carpeta tenga todos los archivos necesarios para invocar el servicio. Para obtener más información sobre cómo asegurar que las carpetas se descarguen completamente, consulte [Sugerencias y trucos para carpetas vigiladas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
    * Mueve los archivos o carpetas a la carpeta de fase después de seleccionarlos para su procesamiento.
-   * Convierte los archivos o carpetas de la carpeta de fase a la entrada adecuada en función de las asignaciones de parámetros de entrada del extremo. Para ver ejemplos de asignaciones de parámetros de entrada, consulte [Sugerencias y trucos para carpetas vigiladas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+   * Convierte los archivos o carpetas de la carpeta de fase a la entrada adecuada en función de las asignaciones de parámetros de entrada del extremo. Para ver ejemplos de asignaciones de parámetros de entrada, vea [Sugerencias y trucos para carpetas vigiladas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 
 1. El servicio de destino configurado para el extremo se invoca sincrónica o asincrónicamente. El servicio de destino se invoca con el nombre de usuario y la contraseña configurados para el extremo.
@@ -109,34 +109,34 @@ El proceso de invocar un servicio mediante carpetas vigiladas es el siguiente:
 
 1. El provider.file_write_results_service administra la respuesta o el error de la invocación del servicio de destino. Cuando se realiza correctamente, la salida se guarda en la carpeta de resultados en función de la configuración del punto de conexión. El provider.file_write_results_service también conserva el origen si el extremo está configurado para conservar los resultados una vez completados correctamente.
 
-   Cuando la invocación del servicio de destino produce un error, provider.file_write_results_service registra el motivo del error en un archivo failure.log y lo coloca en la carpeta de errores. La carpeta de errores se crea en función de los parámetros de configuración especificados para el punto de conexión. Cuando el administrador define la opción Conservar al producirse un error para la configuración del extremo, provider.file_write_results_service también copia los archivos de origen en la carpeta de errores. Para obtener información sobre la recuperación de archivos de la carpeta de errores, consulte [Puntos de error y recuperación](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+   Cuando la invocación del servicio de destino produce un error, provider.file_write_results_service registra el motivo del error en un archivo failure.log y lo coloca en la carpeta de errores. La carpeta de errores se crea en función de los parámetros de configuración especificados para el punto de conexión. Cuando el administrador define la opción Conservar al producirse un error para la configuración del extremo, provider.file_write_results_service también copia los archivos de origen en la carpeta de errores. Para obtener información acerca de cómo recuperar archivos de la carpeta de errores, vea [Puntos de error y recuperación](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Configuración del extremo de carpeta inspeccionada {#watched-folder-endpoint-settings}
 
 Utilice la siguiente configuración para configurar un punto final de carpeta vigilada.
 
-**Nombre:** (Obligatorio) Identifica el punto final. No incluya un carácter &lt; porque truncará el nombre mostrado en Workspace. Si va a introducir una dirección URL como nombre del extremo, asegúrese de que se ajusta a las reglas de sintaxis especificadas en RFC1738.
+**Nombre:** (obligatorio) identifica el extremo. No incluya un carácter &lt; porque truncará el nombre mostrado en Workspace. Si va a introducir una dirección URL como nombre del extremo, asegúrese de que se ajusta a las reglas de sintaxis especificadas en RFC1738.
 
 **Descripción:** Una descripción del extremo. No incluya un carácter &lt; porque truncará la descripción mostrada en Workspace.
 
-**Ruta:** (Obligatorio) Especifica la ubicación de la carpeta vigilada. En un entorno en clúster, esta configuración debe apuntar a una carpeta de red compartida a la que se pueda tener acceso desde todos los equipos del clúster.
+**Ruta de acceso:** (obligatoria) Especifica la ubicación de la carpeta vigilada. En un entorno en clúster, esta configuración debe apuntar a una carpeta de red compartida a la que se pueda tener acceso desde todos los equipos del clúster.
 
 **Asincrónica:** Identifica el tipo de invocación como asincrónico o sincrónico. El valor predeterminado es asíncrono. Se recomienda asincrónico para procesos de larga duración y sincrónico para procesos transitorios o de corta duración.
 
-**Expresión Cron:** Introduzca una expresión cron si la carpeta vigilada debe programarse mediante una expresión cron. Cuando se establece esta configuración, se ignora Repetir intervalo.
+**Expresión cron:** Escriba una expresión cron si la carpeta vigilada debe programarse mediante una expresión cron. Cuando se establece esta configuración, se ignora Repetir intervalo.
 
-**Intervalo de repetición:** Intervalo en segundos para analizar la carpeta vigilada en busca de entradas. A menos que el ajuste Aceleración esté habilitado, el intervalo de repetición debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema puede sobrecargarse. El valor predeterminado es 5. Consulte la descripción del tamaño del lote para obtener más información.
+**Intervalo de repetición:** Intervalo en segundos para analizar la carpeta vigilada para obtener información. A menos que el ajuste Aceleración esté habilitado, el intervalo de repetición debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema puede sobrecargarse. El valor predeterminado es 5. Consulte la descripción del tamaño del lote para obtener más información.
 
 **Recuento de repeticiones:** Número de veces que la carpeta vigilada analiza la carpeta o el directorio. El valor -1 indica un escaneo indefinido. El valor predeterminado es -1.
 
-**Acelerador:** AEM Cuando se selecciona esta opción, limita el número de trabajos de carpetas vigiladas que procesa el formulario en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño del lote. (Consulte Acerca de la restricción.)
+AEM **Aceleración:** Cuando se selecciona esta opción, limita el número de trabajos de carpetas vigiladas que procesa el formulario en un momento dado y que se pueden ver en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño del lote. (Consulte Acerca de la restricción.)
 
-**Nombre de usuario:** (Obligatorio) El nombre de usuario que se utiliza al invocar un servicio de destino desde la carpeta vigilada. El valor predeterminado es SuperAdmin.
+**Nombre de usuario:** (obligatorio) El nombre de usuario que se usa al invocar un servicio de destino desde la carpeta vigilada. El valor predeterminado es SuperAdmin.
 
-**Nombre de dominio:** (Obligatorio) El dominio del usuario. El valor predeterminado es DefaultDom.
+**Nombre de dominio:** (obligatorio) El dominio del usuario. El valor predeterminado es DefaultDom.
 
-**Tamaño del lote:** El número de archivos o carpetas que se recogerán por análisis. Utilizar para evitar sobrecargas en el sistema; el análisis de demasiados archivos al mismo tiempo puede provocar un bloqueo. El valor predeterminado es 2.
+**Tamaño de lote:** El número de archivos o carpetas que se recogerán por análisis. Utilizar para evitar sobrecargas en el sistema; el análisis de demasiados archivos al mismo tiempo puede provocar un bloqueo. El valor predeterminado es 2.
 
 La configuración Intervalo de repetición y Tamaño de lote determina cuántos archivos recoge la carpeta inspeccionada en cada análisis. La carpeta inspeccionada utiliza un grupo de hilos de Quartz para analizar la carpeta de entrada. El grupo de subprocesos se comparte con otros servicios. Si el intervalo de análisis es pequeño, los subprocesos analizarán la carpeta de entrada con frecuencia. Si los archivos se pierden con frecuencia en la carpeta vigilada, deberá reducir el intervalo de análisis. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
 
@@ -144,11 +144,11 @@ Si se pierde un gran volumen de archivos, aumente el tamaño del lote. Por ejemp
 
 Cuando se sueltan los archivos en la carpeta vigilada, se enumeran los archivos en la entrada, lo que puede reducir el rendimiento si la exploración se realiza cada segundo. El aumento del intervalo de análisis puede mejorar el rendimiento. Si el volumen de archivos que se van a soltar es pequeño, ajuste el tamaño del lote y repita el intervalo según corresponda. Por ejemplo, si se sueltan 10 archivos cada segundo, intente establecer el intervalo de repetición en 1 segundo y el tamaño del lote en 10.
 
-**Tiempo de espera:** Tiempo, en milisegundos, que debe esperar antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 3 600 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. El valor predeterminado es 0.
+**Tiempo de espera:** Tiempo, en milisegundos, que debe esperarse antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 3 600 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. El valor predeterminado es 0.
 
 Esta configuración es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Esto evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
 
-**Excluir patrón de archivo:** Un punto y coma **;** lista delimitada de patrones que usa una carpeta vigilada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta con este patrón se analizará para su procesamiento.
+**Patrón de exclusión de archivos:** Lista delimitada por punto y coma **;** de patrones que usa una carpeta vigilada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta con este patrón se analizará para su procesamiento.
 
 Esta configuración es útil cuando la entrada es una carpeta con varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que recogerá la carpeta vigilada. Esto evita que la carpeta inspeccionada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada.
 
@@ -164,7 +164,7 @@ Puede utilizar patrones de archivo para excluir:
 
 Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Incluir patrón de archivo:** (Obligatorio) Un punto y coma **;** lista delimitada de patrones que utiliza la carpeta vigilada para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&amp;ast;, todos los archivos y carpetas que coincidan con input&amp;ast; se recogerán. Esto incluye archivos y carpetas llamados input1, input2, etc.
+**Patrón de archivo de inclusión:** (obligatorio) Lista delimitada por punto y coma **;** de patrones que la carpeta vigilada usa para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&amp;ast;, todos los archivos y carpetas que coincidan con input&amp;ast; se recogerán. Esto incluye archivos y carpetas llamados input1, input2, etc.
 
 El valor predeterminado es &amp;ast; e indica todos los archivos y carpetas.
 
@@ -181,7 +181,7 @@ Puede utilizar patrones de archivo para incluir:
 Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 
-**Carpeta de resultados:** Carpeta en la que se almacenan los resultados guardados. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. Este valor puede ser una ruta absoluta o relativa con los siguientes patrones de archivo:
+**Carpeta de resultados:** Carpeta donde se almacenan los resultados guardados. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. Este valor puede ser una ruta absoluta o relativa con los siguientes patrones de archivo:
 
 * %F = prefijo del nombre de archivo
 * %E = extensión del nombre de archivo
@@ -206,37 +206,37 @@ Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carp
 >
 >Cuanto menor sea el tamaño de las carpetas de resultados, mejor será el rendimiento de la carpeta inspeccionada. Por ejemplo, si la carga estimada para la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es menor (por ejemplo, 1000 archivos por día), puede utilizar un patrón como `result/%Y%M%D`.
 
-**Conservar carpeta:** La ubicación donde se almacenan los archivos después de realizar correctamente el análisis y la recogida. La ruta puede ser absoluta, relativa o nula. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados. El valor predeterminado es preserve/%Y/%M/%D/.
+**Conservar carpeta:** Ubicación en la que se almacenan los archivos después de realizar correctamente el análisis y la recogida. La ruta puede ser absoluta, relativa o nula. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados. El valor predeterminado es preserve/%Y/%M/%D/.
 
-**Carpeta de errores:** Carpeta donde se guardan los archivos de error. Esta ubicación siempre es relativa a la carpeta vigilada. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados.
+**Carpeta de error:** Carpeta donde se guardan los archivos de error. Esta ubicación siempre es relativa a la carpeta vigilada. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados.
 
 Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores.
 
 El valor predeterminado es failure/%Y/%M/%D/.
 
-**Conservar si se produce error:** Conservar archivos de entrada si no se puede ejecutar la operación en un servicio. El valor predeterminado es True.
+**Conservar si se produce un error:** Conservar archivos de entrada si se produce un error al ejecutar la operación en un servicio. El valor predeterminado es True.
 
 **Sobrescribir nombres de archivo duplicados:** Cuando se establece en True, los archivos de la carpeta de resultados y de la carpeta de conservación se sobrescriben. Cuando se establece en False, se utilizan archivos y carpetas con un sufijo de índice numérico para el nombre. El valor predeterminado es False.
 
-**Duración de purga:** (Obligatorio) Los archivos y carpetas de la carpeta de resultados se depuran cuando son anteriores a este valor. Este valor se mide en días. Esta configuración es útil para garantizar que la carpeta de resultados no se llene.
+**Duración de purga:** (obligatorio) Los archivos y carpetas de la carpeta de resultados se purgan cuando son anteriores a este valor. Este valor se mide en días. Esta configuración es útil para garantizar que la carpeta de resultados no se llene.
 
 El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El valor predeterminado es -1.
 
-**Nombre de operación:** (Obligatorio) Una lista de operaciones que se pueden asignar al punto final de la carpeta vigilada.
+**Nombre de operación:** (obligatorio) Una lista de operaciones que se pueden asignar al extremo de la carpeta vigilada.
 
-**Asignaciones de parámetros de entrada:** Se utiliza para configurar la entrada necesaria para procesar el servicio y la operación. La configuración disponible depende del servicio que utilice el punto final de la carpeta vigilada. Estos son los dos tipos de entradas:
+**Asignaciones de parámetros de entrada:** Se usa para configurar la entrada necesaria para procesar el servicio y la operación. La configuración disponible depende del servicio que utilice el punto final de la carpeta vigilada. Estos son los dos tipos de entradas:
 
-**Literal:** La carpeta vigilada utiliza el valor introducido en el campo a medida que se muestra. Se admiten todos los tipos básicos de Java. Por ejemplo, si una API utiliza entradas como String, long, int y Boolean, la cadena se convierte al tipo adecuado y se invoca el servicio.
+**Literal:** La carpeta vigilada usa el valor introducido en el campo tal como se muestra. Se admiten todos los tipos básicos de Java. Por ejemplo, si una API utiliza entradas como String, long, int y Boolean, la cadena se convierte al tipo adecuado y se invoca el servicio.
 
-**Variable:** El valor introducido es un patrón de archivo que la carpeta vigilada utiliza para elegir la entrada. Por ejemplo, si existe el servicio de cifrado de contraseñas, en el que el documento de entrada debe ser un archivo de PDF, el usuario puede utilizar &amp;ast;.pdf como patrón de archivo. La carpeta inspeccionada recogerá todos los archivos de la carpeta inspeccionada que coincidan con este patrón e invocará el servicio para cada archivo. Cuando se utiliza una variable, todos los archivos de entrada se convierten en documentos. Solo se admiten las API que utilizan Document como tipo de entrada.
+**Variable:** El valor introducido es un patrón de archivo que la carpeta vigilada usa para elegir la entrada. Por ejemplo, si existe el servicio de cifrado de contraseñas, en el que el documento de entrada debe ser un archivo de PDF, el usuario puede utilizar &amp;ast;.pdf como patrón de archivo. La carpeta inspeccionada recogerá todos los archivos de la carpeta inspeccionada que coincidan con este patrón e invocará el servicio para cada archivo. Cuando se utiliza una variable, todos los archivos de entrada se convierten en documentos. Solo se admiten las API que utilizan Document como tipo de entrada.
 
-**Asignaciones de parámetros de salida:** Se utiliza para configurar las salidas del servicio y la operación. La configuración disponible depende del servicio que utilice el punto final de la carpeta vigilada.
+**Asignaciones de parámetros de salida:** Se usa para configurar los resultados del servicio y la operación. La configuración disponible depende del servicio que utilice el punto final de la carpeta vigilada.
 
 La salida de la carpeta inspeccionada puede ser un solo documento, una lista de documentos o un mapa de documentos. Estos documentos de salida se guardan en la carpeta de resultados, utilizando el patrón especificado en Asignación de parámetros de salida.
 
 >[!NOTE]
 >
->Especificar nombres que resulten en nombres de archivo de salida únicos mejora el rendimiento. Por ejemplo, considere el caso de que el servicio devuelva un documento de salida y la Asignación de parámetros de salida lo asigne a `%F.%E` (nombre y extensión del archivo de entrada). En este caso, si los usuarios sueltan archivos con el mismo nombre cada minuto y la carpeta de resultados se configura como `result/%Y/%M/%D`, y la opción Sobrescribir nombre de archivo duplicado está desactivada, la carpeta inspeccionada intentará resolver los nombres de archivo duplicados. El proceso de resolver nombres de archivo duplicados puede afectar al rendimiento. En este caso, cambiar la Asignación de parámetros de salida a `%F_%h_%m_%s_%l` para agregar horas, minutos, segundos y milisegundos al nombre, o para garantizar que los archivos colocados tengan nombres únicos, puede mejorar el rendimiento.
+>Especificar nombres que resulten en nombres de archivo de salida únicos mejora el rendimiento. Por ejemplo, considere el caso en el que el servicio devuelve un documento de salida y la Asignación de parámetros de salida lo asigna a `%F.%E` (el nombre de archivo y la extensión del archivo de entrada). En este caso, si los usuarios sueltan archivos con el mismo nombre cada minuto y la carpeta de resultados está configurada en `result/%Y/%M/%D`, y la opción Sobrescribir nombre de archivo duplicado está desactivada, la carpeta inspeccionada intentará resolver los nombres de archivo duplicados. El proceso de resolver nombres de archivo duplicados puede afectar al rendimiento. En este caso, puede mejorar el rendimiento si se cambia la Asignación de parámetros de salida a `%F_%h_%m_%s_%l` para agregar horas, minutos, segundos y milisegundos al nombre o se garantiza que los archivos quitados tengan nombres únicos.
 
 ## Acerca de los patrones de archivo {#about-file-patterns}
 
@@ -270,7 +270,7 @@ Las asignaciones de parámetros de salida también pueden especificar patrones a
 * %F = Nombre de archivo de origen
 * %E = Extensión de nombre de archivo de origen
 
-Si el patrón de asignación de parámetros de salida termina con &quot;File.separator&quot; (que es el separador de rutas), se crea una carpeta y el contenido se copia en esa carpeta. Si el patrón no termina con &quot;File.separator&quot;, el contenido (archivo o carpeta de resultados) se crea con ese nombre. Para obtener más información sobre las asignaciones de parámetros de salida, consulte [Sugerencias y trucos para carpetas vigiladas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+Si el patrón de asignación de parámetros de salida termina con &quot;File.separator&quot; (que es el separador de rutas), se crea una carpeta y el contenido se copia en esa carpeta. Si el patrón no termina con &quot;File.separator&quot;, el contenido (archivo o carpeta de resultados) se crea con ese nombre. Para obtener más información acerca de las asignaciones de parámetros de salida, vea [Sugerencias y trucos para carpetas vigiladas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## Acerca de la restricción {#about-throttling}
 
@@ -317,7 +317,7 @@ Para invocaciones sincrónicas, el equilibrador de carga de Quartz decide qué n
 
 ![en_synchwatchedfoldercluster](assets/en_synchwatchedfoldercluster.png)
 
-Para las invocaciones sincrónicas, cuando un nodo falla, el programador de Quartz envía nuevos eventos de sondeo a otros nodos. Las invocaciones iniciadas en el nodo con error se perderán. Para obtener más información sobre cómo recuperar los archivos asociados con el trabajo fallido, consulte [Puntos de error y recuperación](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+Para las invocaciones sincrónicas, cuando un nodo falla, el programador de Quartz envía nuevos eventos de sondeo a otros nodos. Las invocaciones iniciadas en el nodo con error se perderán. Para obtener más información acerca de cómo recuperar los archivos asociados con el trabajo fallido, vea [Puntos de error y recuperación](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ### Carpeta vigilada asincrónica en un clúster {#asynchronous-watched-folder-in-a-cluster}
@@ -326,7 +326,7 @@ Para invocaciones asincrónicas, el equilibrador de carga de Quartz decide qué 
 
 ![en_asynchwatchedfoldercluster](assets/en_asynchwatchedfoldercluster.png)
 
-Para las invocaciones asincrónicas, cuando un nodo falla, el programador de Quartz envía nuevos eventos de sondeo a otros nodos. Las solicitudes de invocación creadas en el nodo con error se incluirán en la cola de servicio del Administrador de trabajos y se enviarán a otros nodos para su procesamiento. Los archivos para los que no se crean solicitudes de invocación permanecerán en la carpeta de fase. Para obtener más información sobre cómo recuperar los archivos asociados con el trabajo fallido, consulte [Puntos de error y recuperación](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+Para las invocaciones asincrónicas, cuando un nodo falla, el programador de Quartz envía nuevos eventos de sondeo a otros nodos. Las solicitudes de invocación creadas en el nodo con error se incluirán en la cola de servicio del Administrador de trabajos y se enviarán a otros nodos para su procesamiento. Los archivos para los que no se crean solicitudes de invocación permanecerán en la carpeta de fase. Para obtener más información acerca de cómo recuperar los archivos asociados con el trabajo fallido, vea [Puntos de error y recuperación](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Puntos de error y recuperación {#failure-points-and-recovery}
@@ -383,13 +383,13 @@ Estos son algunos consejos y trucos al configurar el punto final de la carpeta i
 * Utilice la duración de la depuración para mantener la carpeta de resultados limpia. La carpeta inspeccionada limpia todos los archivos que son anteriores a la duración mencionada en la duración de la depuración. La duración es en días.
 * Al agregar un punto final de carpeta inspeccionada, después de seleccionar el nombre de la operación, se rellena la asignación de parámetros de entrada. Para cada entrada de la operación, se genera un campo de asignación de parámetros de entrada. Estos son ejemplos de asignaciones de parámetros de entrada:
 
-   * Para `com.adobe.idp.Document` input: Si la operación de servicio tiene una entrada de tipo `Document`, el administrador puede especificar el tipo de asignación como `Variable`. La carpeta inspeccionada recogerá la entrada de la carpeta de entrada de la carpeta inspeccionada en función del patrón de archivo especificado para el parámetro de entrada. Si el administrador especifica `*.pdf` como parámetro, cada archivo que tenga la extensión .pdf se recogerá y convertirá en `com.adobe.idp.Document`y el servicio invocado.
-   * Para `java.util.Map` input: Si la operación de servicio tiene una entrada de tipo `Map`, el administrador puede especificar el tipo de asignación como `Variable` e introduzca un valor de asignación con un patrón como `*.pdf`. Por ejemplo, un servicio necesita un mapa de dos `com.adobe.idp.Document` que representan dos archivos en la carpeta de entrada, como 1.pdf y 2.pdf. La carpeta inspeccionada creará un mapa con la clave como nombre de archivo y el valor como `com.adobe.idp.Document`.
-   * Para `java.util.List` input: Si la operación de servicio tiene una entrada de tipo List, el administrador puede especificar el tipo de asignación como `Variable` e introduzca un valor de asignación con un patrón como `*.pdf`. Cuando se sueltan los archivos del PDF en la carpeta de entrada, la carpeta inspeccionada creará una lista de los `com.adobe.idp.Document` que representa estos archivos e invoca el servicio de destino.
-   * Para `java.lang.String`: el administrador tiene dos opciones. En primer lugar, el administrador puede especificar el tipo de asignación como `Literal` e introduzca un valor de asignación como cadena, como `hello.` La carpeta inspeccionada invocará el servicio con la cadena `hello`. En segundo lugar, el administrador puede especificar el tipo de asignación como `Variable` e introduzca un valor de asignación con un patrón como `*.txt`. En este último caso, los archivos con la extensión .txt se leerán como un documento forzado como una cadena para invocar el servicio.
-   * Tipo primitivo de Java: el administrador puede especificar el tipo de asignación como `Literal` y proporcione el valor. La carpeta inspeccionada invocará el servicio con el valor especificado.
+   * Para la entrada `com.adobe.idp.Document`: si la operación de servicio tiene una entrada de tipo `Document`, el administrador puede especificar el tipo de asignación como `Variable`. La carpeta inspeccionada recogerá la entrada de la carpeta de entrada de la carpeta inspeccionada en función del patrón de archivo especificado para el parámetro de entrada. Si el administrador especifica `*.pdf` como parámetro, cada archivo que tenga la extensión .pdf se recogerá, se convertirá en `com.adobe.idp.Document` y se invocará al servicio.
+   * Para la entrada `java.util.Map`: si la operación de servicio tiene una entrada de tipo `Map`, el administrador puede especificar el tipo de asignación como `Variable` e introducir un valor de asignación con un patrón como `*.pdf`. Por ejemplo, un servicio necesita un mapa de dos objetos `com.adobe.idp.Document` que representen dos archivos en la carpeta de entrada, como 1.pdf y 2.pdf. La carpeta inspeccionada creará un mapa con la clave como nombre de archivo y el valor como `com.adobe.idp.Document`.
+   * Para la entrada `java.util.List`: si la operación de servicio tiene una entrada de tipo Lista, el administrador puede especificar el tipo de asignación como `Variable` e introducir un valor de asignación con un patrón como `*.pdf`. Cuando se sueltan los archivos del PDF en la carpeta de entrada, la carpeta inspeccionada creará una lista de los `com.adobe.idp.Document` objetos que representan estos archivos e invocará el servicio de destino.
+   * Para `java.lang.String`: el administrador tiene dos opciones. En primer lugar, el administrador puede especificar el tipo de asignación como `Literal` e introducir un valor de asignación como cadena, como `hello.` La carpeta inspeccionada invocará el servicio con la cadena `hello`. Segundo, el administrador puede especificar el tipo de asignación como `Variable` e introducir un valor de asignación con un patrón como `*.txt`. En este último caso, los archivos con la extensión .txt se leerán como un documento forzado como una cadena para invocar el servicio.
+   * Tipo primitivo de Java: el administrador puede especificar el tipo de asignación como `Literal` y proporcionar el valor. La carpeta inspeccionada invocará el servicio con el valor especificado.
 
-* La carpeta inspeccionada está diseñada para trabajar con documentos. Los resultados admitidos son `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`y una lista y un mapa de estos tipos. Cualquier otro tipo producirá un resultado de error en la carpeta de errores.
+* La carpeta inspeccionada está diseñada para trabajar con documentos. Los resultados admitidos son `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, y una lista y un mapa de estos tipos. Cualquier otro tipo producirá un resultado de error en la carpeta de errores.
 * Si los resultados no están en la carpeta de resultados, compruebe la carpeta de errores para ver si se ha producido un error.
 * La carpeta inspeccionada funciona mejor si se utiliza en modo asincrónico. En este modo, la carpeta inspeccionada coloca la solicitud de invocación en la cola y devuelve las llamadas. A continuación, la cola se procesa asincrónicamente. Cuando no se establece la opción Asincrónica, la carpeta inspeccionada invoca el servicio de destino sincrónicamente y el motor de procesos espera hasta que el servicio se realiza con la solicitud y se generan los resultados. Si el servicio de destino tarda mucho tiempo en procesar la solicitud, la carpeta inspeccionada puede obtener errores de tiempo de espera.
 * La creación de carpetas vigiladas para operaciones de importación y exportación no permite la abstracción de la extensión del nombre de archivo. Al invocar el servicio de integración de datos de formulario mediante carpetas inspeccionadas, es posible que el tipo de extensión del nombre de archivo del archivo de salida no coincida con el formato de salida deseado para el tipo de objeto de documento. Por ejemplo, si el archivo de entrada a una carpeta inspeccionada que invoca la operación de exportación es un formulario XFA que contiene datos, el resultado debe ser un archivo de datos XDP. Para obtener un archivo de salida con la extensión de nombre de archivo correcta, puede especificarlo en la asignación de parámetros de salida. En este ejemplo, puede utilizar %F.xdp para la asignación de parámetros de salida.
@@ -416,15 +416,15 @@ Para todos los servicios, debe ajustar el tamaño del lote y el intervalo de rep
 ### Generar recomendaciones de servicio del PDF {#generate-pdf-service-recommendations}
 
 * El servicio Generar PDF sólo puede convertir un archivo a la vez para estos tipos de archivos: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Project, AutoCAD, Adobe Photoshop®, Adobe FrameMaker® y PageMaker de Adobe ®. Son trabajos de larga duración; por lo tanto, asegúrese de mantener el tamaño del lote en un valor bajo. Aumente también el intervalo de repetición si hay más nodos en el clúster.
-* Para los tipos de archivo PostScript (PS), PostScript encapsulado (EPS) e imagen, el servicio Generate PDF puede procesar varios archivos en paralelo. Debe ajustar cuidadosamente el tamaño del grupo de inicio de sesión (que gobierna el número de conversiones que se realizarán en paralelo) según la capacidad del servidor y el número de nodos del clúster. A continuación, aumente el tamaño del lote a un número igual al tamaño del grupo de frijoles de sesión para los tipos de archivo que está intentando convertir. La frecuencia de sondeo debe estar dictada por el número de nodos del clúster; sin embargo, como el servicio Generar PDF procesa este tipo de trabajos bastante rápido, puede configurar el intervalo de repetición en un valor bajo como 5 o 10.
+* Para los tipos de archivo de PostScript (PS), PostScript encapsulado (EPS) e imagen, el servicio Generate PDF puede procesar varios archivos en paralelo. Debe ajustar cuidadosamente el tamaño del grupo de inicio de sesión (que gobierna el número de conversiones que se realizarán en paralelo) según la capacidad del servidor y el número de nodos del clúster. A continuación, aumente el tamaño del lote a un número igual al tamaño del grupo de frijoles de sesión para los tipos de archivo que está intentando convertir. La frecuencia de sondeo debe estar dictada por el número de nodos del clúster; sin embargo, como el servicio Generar PDF procesa este tipo de trabajos bastante rápido, puede configurar el intervalo de repetición en un valor bajo como 5 o 10.
 * Aunque el servicio Generate PDF sólo puede convertir un archivo de OpenOffice a la vez, la conversión es bastante rápida. La lógica anterior para PS, EPS y las conversiones de imagen también se aplica a las conversiones de OpenOffice.
 * Para habilitar la distribución de carga uniforme en el clúster, mantenga el tamaño del lote bajo y aumente el intervalo de repetición.
 
 ### recomendaciones del servicio de formularios con códigos de barras {#barcoded-forms-service-recommendations}
 
-* Para obtener el mejor rendimiento al procesar formularios con códigos de barras (archivos pequeños), escriba `10` para el tamaño del lote y `2` para Intervalo de repetición.
-* Cuando se colocan muchos archivos en la carpeta de entrada, se llaman errores con archivos ocultos *thumbs.db* puede ocurrir. Por lo tanto, se recomienda establecer el Patrón de archivo de inclusión para los archivos de inclusión en el mismo valor especificado para la variable de entrada (por ejemplo, `*.tiff`). Esto evita que la carpeta inspeccionada procese los archivos de base de datos.
-* Un valor de tamaño de lote de `5` y el intervalo de repetición de `2` Esto suele ser suficiente porque el servicio de Forms con códigos de barras tarda unos 0,5 segundos en procesar un código de barras.
+* Para obtener el mejor rendimiento al procesar formularios con códigos de barras (archivos pequeños), escriba `10` para Tamaño de lote y `2` para Intervalo de repetición.
+* Cuando se colocan muchos archivos en la carpeta de entrada, pueden producirse errores con archivos ocultos llamados *thumbs.db*. Por lo tanto, se recomienda establecer el Patrón de archivo de inclusión para los archivos de inclusión en el mismo valor especificado para la variable de entrada (por ejemplo, `*.tiff`). Esto evita que la carpeta inspeccionada procese los archivos de base de datos.
+* Normalmente, es suficiente un valor de tamaño de lote de `5` y un intervalo de repetición de `2`, porque el servicio de Forms con códigos de barras tarda aproximadamente 0,5 segundos en procesar un código de barras.
 * La carpeta inspeccionada no espera a que el motor de procesos finalice el trabajo antes de recoger los nuevos archivos o carpetas. Sigue analizando la carpeta vigilada e invocando el servicio de destino. Este comportamiento puede sobrecargar el motor, lo que provoca problemas de recursos y tiempos de espera. Asegúrese de utilizar el intervalo de repetición y el tamaño del lote para restringir la entrada de la carpeta inspeccionada. Puede aumentar el intervalo de repetición y reducir el tamaño del lote si existen más carpetas vigiladas o habilitar la restricción en el extremo. Para obtener información sobre la restricción, consulte [Acerca de la restricción](configuring-watched-folder-endpoints.md#about-throttling).
 * La carpeta inspeccionada suplanta al usuario especificado en el nombre de usuario y el nombre de dominio. La carpeta inspeccionada invoca el servicio como este usuario si se invoca directamente o si el proceso es de corta duración. Para un proceso de larga duración, el proceso se invoca con el contexto System. Los administradores pueden establecer directivas del sistema operativo para la carpeta inspeccionada a fin de determinar a qué usuario permitir o denegar el acceso.
 * Utilice patrones de archivo para organizar carpetas de resultados, errores y conservación. (Consulte [Acerca de los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).)

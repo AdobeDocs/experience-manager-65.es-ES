@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Página Crear Comentarios {#create-comments-page}
 
-**[⇐ componente Comentarios de superposición](overlay-comments.md) [Crear nodos ⇒](overlay-create-nodes.md)**
+**[⇐ Componente Comentarios de superposición](overlay-comments.md) [Crear nodos ⇒](overlay-create-nodes.md)**
 
 ## Página de comentarios {#comments-page}
 
-El [Guía de componentes de la comunidad](components-guide.md) permite superponer fácilmente el componente comentarios.
+La [guía de componentes de la comunidad](components-guide.md) le permite superponer fácilmente el componente de comentarios.
 
 Vea la página en la instancia de autor:
 
@@ -30,4 +30,4 @@ Vea la página en la instancia de autor:
 
 ![comentarios](assets/comments.png)
 
-**[⇐ componente Comentarios de superposición](overlay-comments.md) [Crear nodos ⇒](overlay-create-nodes.md)**
+**[⇐ Componente Comentarios de superposición](overlay-comments.md) [Crear nodos ⇒](overlay-create-nodes.md)**

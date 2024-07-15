@@ -1,6 +1,6 @@
 ---
 title: 'SPA Opcional: cómo crear aplicaciones de una sola página () con Adobe Experience Manager'
-description: En esta continuación opcional del Recorrido AEM SPA AEM SPA para desarrolladores de Adobe Experience Manager () sin encabezado, aprenderá a combinar la entrega sin encabezado con las funciones tradicionales de CMS de pila completa y cómo puede crear plantillas editables utilizando el AEM de trabajo de Editor de.
+description: En esta continuación opcional del Recorrido AEM SPA AEM SPA para desarrolladores de Adobe Experience Manager AEM () sin encabezado, aprenderá a combinar la entrega sin encabezado con las funciones tradicionales de CMS de pila completa y cómo puede crear plantillas editables utilizando el módulo Editor de de trabajo de.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
@@ -14,7 +14,7 @@ ht-degree: 76%
 
 # Creación de aplicaciones de una sola página (SPA) con AEM {#create-spa}
 
-En esta continuación opcional de la [AEM Recorrido de desarrollador sin encabezado,](overview.md) aprenderá cómo Adobe Experience Manager AEM SPA AEM SPA SPA () puede combinar la entrega sin encabezado con las funciones tradicionales de CMS full-stack y cómo puede crear plantillas editables mediante el módulo Editor de e integrar plantillas externas, lo que permite crear funcionalidades de edición según sea necesario.
+En esta continuación opcional del Recorrido para desarrolladores sin encabezado [,](overview.md) aprenderá cómo Adobe Experience Manager AEM SPA AEM SPA SPA (CMS) puede combinar la entrega sin encabezado con las funciones tradicionales de CMS full-stack y cómo puede crear plantillas editables utilizando el AEM de trabajo de Editor de, así como integrar las funcionalidades de edición externas, habilitando las funcionalidades de edición, según sea necesario.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -29,7 +29,7 @@ En este punto, debería haber completado todo el [Recorrido para desarrolladores
 
 AEM Por lo tanto, ahora ya está en funcionamiento con su primer proyecto sin encabezado de la red de trabajo o tiene el conocimiento necesario para hacerlo. Enhorabuena.
 
-Entonces, ¿por qué está leyendo esta continuación adicional y opcional del recorrido? Es probable que lo recuerde en el [Primeros pasos](getting-started.md#integration-levels)AEM Sin embargo, hubo una breve discusión sobre cómo no solo admite la entrega sin encabezado y los modelos full-stack tradicionales, sino que también puede admitir modelos híbridos que combinen las ventajas de ambos. Aunque no es el modelo tradicional sin encabezado, estos modelos híbridos pueden ofrecer una flexibilidad sin precedentes a ciertos proyectos.
+Entonces, ¿por qué está leyendo esta continuación adicional y opcional del recorrido? AEM Probablemente, recuerde que en [Introducción](getting-started.md#integration-levels), hubo una breve discusión sobre cómo no solo admite la entrega sin encabezado y los modelos full-stack tradicionales, sino también admite modelos híbridos que combinan las ventajas de ambos. Aunque no es el modelo tradicional sin encabezado, estos modelos híbridos pueden ofrecer una flexibilidad sin precedentes a ciertos proyectos.
 
 Este artículo se basa en sus conocimientos de AEM sin encabezado para explorar en profundidad cómo puede crear sus propias aplicaciones de una sola página (SPA) que se pueden editar en AEM. SPA SPA AEM De este modo, puede crear contenido y enviarlo sin encabezado a un, pero ese contenido sigue siendo editable en los entornos de trabajo de los que se puede hacer una.
 
@@ -50,7 +50,7 @@ Antes de empezar a trabajar con las SPA en AEM hay varios requisitos.
 
 * Experiencia en desarrollo creando SPA con marcos de trabajo React o Angular.
 * Conocimientos básicos de AEM para crear fragmentos de contenido y utilizar el editor.
-* Asegúrese de revisar el documento [AEM Encabezado y sin encabezado en el](/help/sites-developing/headful-headless.md) SPA para comprender los distintos niveles de integración de la posibles.
+* AEM SPA No olvide revisar el documento [Con encabezado y sin encabezado en la sección de la página de inicio de sesión de la página ](/help/sites-developing/headful-headless.md) para comprender los diversos niveles de integración de la posibles.
 
 ### Herramientas {#tools}
 

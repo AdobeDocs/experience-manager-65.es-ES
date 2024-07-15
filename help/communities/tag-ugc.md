@@ -40,9 +40,9 @@ Las funciones de AEM Communities que se pueden configurar para permitir el etiqu
 
 Consulte [Administración de etiquetas](../../help/sites-administering/tags.md#tagging-console) para crear y administrar áreas de nombres y taxonomías de etiquetas.
 
-Consulte [Tag Essentials](tag.md) para obtener información del desarrollador.
+Consulte [Tag Essentials](tag.md) para obtener información sobre desarrolladores.
 
-Consulte [Uso de Social Tag Cloud](tagcloud.md) para añadir un componente Nube de etiquetas social a una página para facilitar la búsqueda de UGC publicados mediante las etiquetas aplicadas.
+Consulte [Uso de la nube de etiquetas sociales](tagcloud.md) para agregar un componente de la nube de etiquetas sociales a una página con el fin de facilitar la búsqueda de UGC publicados mediante las etiquetas aplicadas.
 
 ### Permisos de etiquetas {#tag-permissions}
 
@@ -52,6 +52,6 @@ Dado que las etiquetas se aplican a UGC en el entorno de publicación, el permis
 
 Consulte [Configuración de permisos de etiquetas](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-A continuación, se muestra cómo aparece en CRXDE cuando un administrador aplica permisos de lectura a `/etc/tag/discussions` para el grupo `Community Engage Members`.
+A continuación se muestra cómo aparece en CRXDE cuando un administrador aplica permisos de lectura a `/etc/tag/discussions` para el grupo `Community Engage Members`.
 
-![tag-permissions](assets/tag-permissions.png)
+![permisos de etiqueta](assets/tag-permissions.png)

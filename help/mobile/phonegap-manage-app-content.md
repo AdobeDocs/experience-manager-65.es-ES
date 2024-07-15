@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-La administración del contenido de la aplicación requiere un esfuerzo colectivo por parte de [desarrolladores](#developer), contenido [autores](#author), y [administradores](#administrator). Los autores manipulan las páginas, que se basan en plantillas y componentes generados por desarrolladores de aplicaciones.
+La administración del contenido de la aplicación requiere un esfuerzo colectivo por parte de [desarrolladores](#developer), [autores](#author) y [administradores](#administrator). Los autores manipulan las páginas, que se basan en plantillas y componentes generados por desarrolladores de aplicaciones.
 
 Por último, los administradores publican de forma estratégica el contenido actualizado de la aplicación.
 
@@ -30,7 +30,7 @@ Por último, los administradores publican de forma estratégica el contenido act
 >
 >**Requisito previo**:
 >
->Entrada [Implementación y mantenimiento](/help/sites-deploying/deploy.md), los desarrolladores se familiarizaron con los componentes y las plantillas del sistema en Adobe Experience Manager AEM ().
+>En [Implementación y mantenimiento](/help/sites-deploying/deploy.md), los desarrolladores se familiarizaron con los componentes y las plantillas del sistema en Adobe Experience Manager AEM ().
 
 ## El mosaico Administrar contenido de la página {#the-manage-page-content-tile}
 
@@ -38,43 +38,43 @@ Por último, los administradores publican de forma estratégica el contenido act
 >
 >Si no utiliza una plantilla de aplicación predeterminada, para habilitar la publicación de contenido nuevo de la aplicación en OTA, debe configurar un controlador de sincronización de contenido.
 >
->Consulte [Móvil con sincronización de contenido](/help/mobile/phonegap-contentsync.md) en la sección Desarrollador para obtener más información.
+>Consulte [Dispositivo móvil con sincronización de contenido](/help/mobile/phonegap-contentsync.md) en la sección del Desarrollador para obtener más información.
 
 En este caso, el contenido se puede crear, editar y eliminar en AEM Mobile de la misma manera que lo haría en AEM Sites.
 
-El **Administrar mosaico de contenido de página** muestra el número de páginas de contenido administrado y modificado por última vez para una carga útil determinada. Puede explorar el contenido para crear, copiar, mover, eliminar y actualizar páginas haciendo clic en cada registro del mosaico.
+El mosaico **Administrar contenido de la página** muestra el número de páginas de contenido administrado y modificadas por última vez para una carga en particular. Puede explorar el contenido para crear, copiar, mover, eliminar y actualizar páginas haciendo clic en cada registro del mosaico.
 
-Una vez actualizado el contenido, los administradores pueden publicar una carga útil de actualización de contenido por aire (OTA) para los clientes a través de **Administrar mosaico de paquetes de contenido.**
+Una vez actualizado el contenido, los administradores pueden publicar una carga útil de actualización de contenido por correo electrónico (OTA) para los clientes a través del mosaico **Administrar paquetes de contenido.**
 
 ![chlimage_1-161](assets/chlimage_1-161.png)
 
 Seleccione uno de los paquetes de contenido enumerados para crear o editar contenido, como crear, editar o eliminar páginas, cambiar la navegación y el orden de las páginas, crear o actualizar contenido como copiar (texto) y medios.
 
-Nota *todo está contenido*, es decir, estilos de aplicación, copiar (texto), medios, páginas, navegación y segmentación de contenido, todos se pueden editar y actualizar con OTA, sin tener que ir a una tienda de aplicaciones.
+Nota *todo es contenido*, lo que significa que los estilos de aplicación, la copia (texto), los medios, las páginas, la navegación y la segmentación del contenido se pueden editar y actualizar en formato OTA, sin tener que ir a una tienda de aplicaciones.
 
-Para editar contenido de AEM Mobile AEM AEM, los autores de **necesitarán comprender bien la interfaz de edición de contenido: [AEM Creación de páginas en la.](/help/sites-authoring/qg-page-authoring.md)
+Para editar el contenido de AEM Mobile AEM AEM AEM, los autores de **necesitarán tener una comprensión sólida de la interfaz de edición de contenido de: [Creación de páginas en el.](/help/sites-authoring/qg-page-authoring.md)
 
 ## El Mosaico Administrar Paquetes De Contenido {#the-manage-content-packages-tile}
 
-Aquí, *AEM Administradores de* puede actualizar sus aplicaciones de forma rápida y sencilla para ofrecer experiencias atractivas y contenido actualizado que impulse la participación de la marca y cumpla los objetivos comerciales, todo sin necesidad de volver a realizar envíos de desarrolladores o tiendas de aplicaciones.
+AEM En este caso, *Los administradores* pueden actualizar sus aplicaciones de forma rápida y sencilla para ofrecer experiencias atractivas y contenido actualizado que promuevan la participación de la marca y cumplan con los objetivos comerciales, todo sin necesidad de que los desarrolladores o las tiendas de aplicaciones vuelvan a enviarlas.
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-Una *AEM Autores de* haber añadido o modificado contenido a través del mosaico Administrar contenido, *AEM Administradores de* Los clientes pueden insertar dichos cambios en los clientes con una actualización de los paquetes de contenido.
+AEM AEM Una vez que *autores* hayan agregado o modificado contenido a través del mosaico Administrar contenido, *Los administradores* pueden insertar esos cambios en los clientes con una actualización de paquetes de contenido.
 
-La acción Paquete de contenido permite al *AEM Autor de* para crear y editar contenido de página mientras el equipo de desarrollo realiza cambios en el diseño y la implementación de una aplicación host, incluidos navegación, estilo, lógica del lado del servidor, plantillas y componentes, y luego envía esos cambios a los clientes sin necesidad de volver a enviarlos a las distintas tiendas para su distribución.
+AEM La acción Paquete de contenido permite al *Autor de* crear y editar el contenido de la página mientras el equipo de desarrollo realiza cambios en el diseño y la implementación de una aplicación host, incluidos la navegación, el estilo, la lógica del lado del servidor, las plantillas y los componentes, y luego enviar esos cambios fuera de OTA a los clientes sin necesidad de volver a enviarlos a las distintas tiendas para su distribución.
 
 **Para publicar contenido nuevo o actualizado**
 
-Seleccione un paquete de contenido del mosaico; en este ejemplo, el paquete en inglés. Observe que un cuadro de diálogo de actualización de contenido muestra los *Sincronización de contenido* configuración. Si el contenido de la aplicación se ha modificado desde una actualización anterior, se muestra el estado *Pendiente*, como se muestra a continuación.
+Seleccione un paquete de contenido del mosaico; en este ejemplo, el paquete en inglés. Observe que un cuadro de diálogo de actualización de contenido enumera la configuración *Sincronización de contenido* relevante. Si el contenido de la aplicación se ha modificado desde una actualización anterior, el estado se mostrará *Pendiente*, como se muestra a continuación.
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
-A continuación, seleccione la **Fase** acción en la parte superior derecha para crear la actualización de contenido. Añada la información de actualización adecuada y pulse Listo.
+A continuación, seleccione la acción **Stage** en la parte superior derecha para crear la actualización de contenido. Añada la información de actualización adecuada y pulse Listo.
 
 ![chlimage_1-164](assets/chlimage_1-164.png)
 
-El *Sincronización de contenido* a continuación, crea los paquetes necesarios formando un delta (un paquete de *solamente* qué ha cambiado). Una vez finalizado, este paquete de contenido de actualización se ha preparado como se muestra a continuación.
+A continuación, el controlador *Content Sync* crea los paquetes necesarios formando un delta (un paquete de *solamente* lo que ha cambiado). Una vez finalizado, este paquete de contenido de actualización se ha preparado como se muestra a continuación.
 
 El ensayo de una actualización de contenido permite realizar varias actualizaciones antes de publicarlas en OTA para dispositivos móviles.
 
@@ -82,11 +82,11 @@ El ensayo de una actualización de contenido permite realizar varias actualizaci
 >
 >AEM El contenido ensayado se puede comprobar mediante la aplicación Verificar el antes de publicar.
 >
->Consulte [AEM Quickstart móvil para la verificación de la](/help/mobile/phonegap-mobile-quickstart.md) AEM para obtener más información sobre la aplicación Verificar el uso de la.
+>AEM AEM Consulte [Inicio rápido móvil para la verificación de datos](/help/mobile/phonegap-mobile-quickstart.md) para obtener más información sobre la aplicación de verificación de datos en el teléfono móvil.
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
-Cuando esté listo para entregar contenido nuevo a los usuarios de la aplicación con la sincronización de contenido OTA, seleccione **Publish** como se muestra a continuación.
+Cuando esté listo para entregar contenido nuevo a los usuarios de su aplicación con Content Sync OTA, seleccione **Publish** como se muestra a continuación.
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 

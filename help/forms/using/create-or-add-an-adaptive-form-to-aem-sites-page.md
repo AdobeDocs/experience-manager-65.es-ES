@@ -28,7 +28,7 @@ Puede utilizar el Editor de páginas de AEM para crear y agregar rápidamente va
 
 AEM Forms proporciona el contenedor del formulario adaptable y los componentes incrustados de formularios adaptables. Puede utilizar el contenedor de formulario adaptable para crear un formulario en un fragmento de experiencia o una página de AEM Sites, mientras que el componente Forms adaptable: incrustado permite agregar un formulario adaptable existente o crear un formulario con el editor de Forms adaptable.
 
-![Formulario adaptable en la página de Sites](/help/forms/using/assets/adaptive-form-in-sites-page.png)
+![Formulario adaptable en la página de sitios](/help/forms/using/assets/adaptive-form-in-sites-page.png)
 
 ## Ventajas del uso del componente Contenedor de formulario adaptable en el editor de páginas o en el fragmento de experiencia de AEM
 
@@ -39,7 +39,7 @@ AEM El uso del contenedor de formulario adaptable en el editor de páginas de pe
 * **Traducción: Integración perfecta de** AEM Sites [con los servicios de traducción](/help/sites-administering/translation.md), lo que le permite traducir fácilmente formularios a varios idiomas. Esta función simplifica el proceso de localización y garantiza que los formularios sean accesibles para una audiencia global. Puede administrar las traducciones de forma eficaz dentro de los proyectos de traducción de AEM, lo que reduce el tiempo y el esfuerzo necesarios para la asistencia con formularios multilingües. Consulte la sección de consideraciones para obtener más información sobre la traducción.
 * **Administración de varios sitios y Live Copy:** AEM Sites proporciona [Funciones de administración de varios sitios y Live Copy](/help/sites-administering/msm.md) sólidas, lo que permite crear y administrar varios sitios web en un único entorno. Ahora esta función le permite reutilizar formularios en diferentes sitios, lo que garantiza la consistencia y reduce los esfuerzos de duplicación. Con el control y la administración centralizados, puede mantener y actualizar de forma eficaz los formularios en varios sitios web.
 * **Temáticas:** Las páginas de AEM Sites proporcionan un marco de trabajo para diseñar y mantener estilos visuales coherentes en varias páginas web. Estas definen colores, fuentes, hojas de estilo y otros elementos visuales que contribuyen a la apariencia general del sitio web. [Puede utilizar las temáticas diseñadas para una página de AEM Sites para un formulario adaptable, lo que ahorra tiempo y esfuerzo](/help/sites-authoring/style-system.md).
-* **Etiquetado:** Las páginas de AEM Sites le permiten [asignar etiquetas a una página, a un recurso o a otro contenido](/help/sites-authoring/tags.md). Las etiquetas son palabras clave o etiquetas de metadatos que proporcionan una forma de categorizar y organizar el contenido en función de criterios específicos. Puede asignar una o más etiquetas a páginas, recursos o a cualquier otro elemento de contenido dentro de AEM para mejorar la búsqueda y la clasificación de los archivos.
+* **Etiquetado:** las páginas de AEM Sites le permiten [asignar etiquetas a una página, a un recurso o a otro contenido](/help/sites-authoring/tags.md). Las etiquetas son palabras clave o etiquetas de metadatos que proporcionan una forma de categorizar y organizar el contenido en función de criterios específicos. Puede asignar una o más etiquetas a páginas, recursos o a cualquier otro elemento de contenido dentro de AEM para mejorar la búsqueda y la clasificación de los archivos.
 * **Bloquear y desbloquear contenido:** AEM Sites permite a los usuarios [controlar el acceso y las modificaciones de páginas](/help/sites-authoring/editing-content.md#locking-a-page-locking-a-page) dentro del entorno de AEM Sites. Cuando una página está bloqueada, significa que está protegida contra cambios o ediciones no autorizados por parte de otros usuarios. Solo el usuario que ha bloqueado el contenido o un administrador designado pueden desbloquearlo para permitir modificaciones.
 
 
@@ -70,7 +70,7 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 +++  Habilitar los componentes principales de formularios adaptables para su entorno
 
-Asegúrese de que la variable [Los componentes principales de Forms adaptables están habilitados para su entorno](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
+Asegúrese de que los [componentes principales de Forms adaptable estén habilitados para su entorno](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
 +++
 
@@ -78,7 +78,7 @@ Asegúrese de que la variable [Los componentes principales de Forms adaptables e
 
 Para habilitar la funcionalidad completa del componente Contenedor de formularios adaptables, añada las bibliotecas de cliente Customheaderlibs y Customfooterlibs a la página de AEM Sites mediante la canalización de implementación. Para añadir las bibliotecas:
 
-1. AEM Inicie sesión en la instancia de autor de la y abra CRX DE. La URL predeterminada de una instancia de autor que se ejecuta localmente es `http://localhost:4502/crx/de`.
+1. AEM Inicie sesión en la instancia de autor de la y abra CRX DE. La dirección URL predeterminada de una instancia de autor que se ejecuta localmente es `http://localhost:4502/crx/de`.
 
 1. Abra el archivo `/apps/[your-sites-project]/components/page/customheaderlibs.html` y añada el siguiente código al archivo:
 
@@ -178,7 +178,7 @@ Para convertir un formulario adaptable en una página de AEM Sites en un Fragmen
 1. Abra la página de AEM Sites que contiene el formulario adaptable (en el componente Contenedor de formularios adaptables) en el modo Editar.
 1. Abra el árbol de contenido y seleccione el **[!UICONTROL Contenedor de formularios adaptables]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios formularios adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de formularios adaptables correcto.
 1. En la barra de menús, seleccione el ![Icono Convertir para la variación del fragmento de experiencia](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg) Icono Convertir en variación de Fragmento de experiencia.
-   ![Conversión de un formulario de una página de Sites en un fragmento de experiencia](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+   ![Convertir formulario de la página de Sites en un fragmento de experiencia](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Aparece un cuadro de diálogo para convertir el contenedor del formulario adaptable a un nuevo fragmento de experiencia o agregar a un fragmento de experiencia existente
 1. En el cuadro de diálogo Convertir en variación de Fragmento de experiencia, establezca los valores de las siguientes opciones:
@@ -236,7 +236,7 @@ Puede utilizar el servicio de rellenado previo del modelo de datos de formulario
 1. Abra el Editor de páginas de AEM o el Fragmento de experiencia que contiene el formulario adaptable.
 1. Abra el árbol de contenido y seleccione el **[!UICONTROL Contenedor de formularios adaptables]** que aloja su formulario adaptable. Una página de AEM Sites puede alojar varios formularios adaptables. Por lo tanto, seleccione cuidadosamente el contenedor de formularios adaptables correcto.
 1. Haga clic en el icono de las propiedades del contenedor del formulario adaptable ![Propiedades del contenedor del formulario adaptable](/help/forms/using/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable para configurar modelos de datos.
-   ![Servicio de prerrellenado fdm editor de páginas de aem sites](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
+   ![Editor de páginas de aem sites del fdm del servicio de relleno previo](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Seleccionar modelo de datos de formulario. Abra la pestaña **[!UICONTROL Básico]**. En el servicio de relleno previo, seleccione **[!UICONTROL Servicio de relleno previo de borrador del portal Forms]**.
 1. Haga clic en **[!UICONTROL Listo]**.
 

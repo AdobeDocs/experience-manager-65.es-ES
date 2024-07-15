@@ -388,7 +388,7 @@ Las siguientes API se utilizan en AEM Forms Workspace.
    <td>Carga una nota en el servidor para una tarea.</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer (también se denomina directamente desde la plantilla html)<br /> </td>
+   <td>uploadRMAToServer (también se llama directamente desde la plantilla html)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
    <td>Carga un archivo adjunto en el servidor para una tarea.</td>

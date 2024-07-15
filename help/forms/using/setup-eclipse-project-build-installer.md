@@ -27,10 +27,10 @@ Para crear la aplicación de Android para AEM Forms, realice los siguientes paso
 
 El paquete del AEM Forms App Source Code hace referencia al archivo `adobe-lc-mobileworkspace-src-<version>.zip`. Este archivo incluye el código fuente necesario para crear una aplicación de AEM Forms personalizada. El archivo está incluido en el paquete `adobe-aemfd-forms-app-src-pkg-<version>.zip` disponible en la Distribución de software.
 
-Para descargar `adobe-aemfd-forms-app-src-pkg-<version>.zip` , realice los siguientes pasos:
+Para descargar el archivo de `adobe-aemfd-forms-app-src-pkg-<version>.zip`, realice los siguientes pasos:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Seleccionar **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
+1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
@@ -54,7 +54,7 @@ Establezca las siguientes variables de entorno antes de iniciar el proceso de ge
 
 ## Creación de una aplicación estándar de AEM Forms {#set-up-the-xcode-project}
 
-Después de guardar adobe-lc-mobileworkspace-src-&lt;version>.zip en el sistema de archivos local y establezca las variables de entorno, cree una aplicación estándar de AEM Forms para Android con cualquiera de las siguientes opciones:
+Después de guardar el archivo adobe-lc-mobileworkspace-src-&lt;version>.zip en el sistema de archivos local y establecer las variables de entorno, cree una aplicación estándar de AEM Forms para Android con cualquiera de las siguientes opciones:
 
 * [Crear una aplicación de AEM Forms con Android Studio](#using-android-studio)
 * [Generar archivos .apk con Android Studio](#generate-apk-android-studio)

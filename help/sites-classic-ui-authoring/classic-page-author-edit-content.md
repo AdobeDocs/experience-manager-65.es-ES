@@ -25,7 +25,7 @@ El contenido se añade empleando los [componentes](/help/sites-classic-ui-author
 
 >[!NOTE]
 >
->Su cuenta necesita el [derechos de acceso adecuados](/help/sites-administering/security.md) y [permissions](/help/sites-administering/security.md#permissions) para editar páginas; por ejemplo, añadir, editar o eliminar componentes, anotar o desbloquear.
+>Su cuenta necesita los [derechos de acceso apropiados](/help/sites-administering/security.md) y [permisos](/help/sites-administering/security.md#permissions) para editar páginas; por ejemplo, agregar, editar o eliminar componentes, anotar o desbloquear.
 >
 >Si se producen problemas, le sugerimos que se ponga en contacto con el administrador del sistema.
 
@@ -53,9 +53,9 @@ Estos proporcionan acceso a una amplia selección de funcionalidades, entre las 
 * [mostrar referencias](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
 * [acceso al registro de auditoría](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log)
 * [modos de conmutación](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
-* [creación](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), [restauración](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) y [comparación](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) versiones
+* [creando](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), [restaurando](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) y [comparando](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) versiones
 
-* [publicación](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [cancelación de publicación](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) una página
+* [publicando](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [cancelando la publicación](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) de una página
 
 * [editar propiedades de página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
@@ -73,14 +73,14 @@ Para insertar un componente nuevo:
 
 1. Existen varios métodos para seleccionar el tipo de párrafo que desea insertar:
 
-   * Haga doble clic en el área denominada **Arrastre componentes o recursos aquí...** - el **Insertar nuevo componente** se abre la barra de herramientas. Seleccione un componente y haga clic en **OK**.
+   * Haga doble clic en el área denominada **Arrastre componentes o recursos aquí...**: se abre la barra de herramientas **Insertar nuevo componente**. Seleccione un componente y haga clic en **Aceptar**.
 
    * Arrastre un componente desde la barra de herramientas flotante (denominada barra de tareas) para insertar un nuevo párrafo.
-   * Haga clic con el botón derecho en un párrafo existente y seleccione **Nuevo...** : se abre la barra de herramientas Insertar nuevo componente. Seleccione un componente y haga clic en **OK**.
+   * Haga clic con el botón derecho en un párrafo existente y seleccione **Nuevo...**: se abrirá la barra de herramientas Insertar nuevo componente. Seleccione un componente y haga clic en **Aceptar**.
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. Tanto en la barra de tareas como en **Insertar nuevo componente** barra de herramientas aparece una lista de los componentes disponibles (tipos de párrafo). Se pueden dividir en varias secciones (por ejemplo, General, Columnas, etc.), que se pueden expandir según sea necesario.
+1. Tanto en la barra de tareas como en la barra de herramientas **Insertar nuevo componente**, verá una lista de los componentes disponibles (tipos de párrafo). Se pueden dividir en varias secciones (por ejemplo, General, Columnas, etc.), que se pueden expandir según sea necesario.
 
    Según el entorno de producción, estas opciones pueden diferir. Para obtener información detallada sobre los componentes, consulte [Componentes predeterminados](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -106,22 +106,22 @@ Esto es válido para los siguientes tipos de recursos (algunos dependerán del s
 Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
 1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
-1. Abra el [Buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#componentplaceholder) muestra dónde se colocará el componente.
+1. Abra [Buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
+1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#componentplaceholder) le muestra dónde se colocará el componente.
 
    Se creará un componente, adecuado para el tipo de recurso, en la ubicación requerida; contendrá el recurso seleccionado.
 
-1. [Editar](#editmovecopypastedelete) Seleccione el componente si es necesario.
+1. [Editar](#editmovecopypastedelete) el componente si es necesario.
 
 ## Edición de un componente (contenido y propiedades) {#editing-a-component-content-and-properties}
 
 Para editar un párrafo existente, realice una de las siguientes acciones:
 
-* **Doble clic** el párrafo para abrirlo. Verá la misma ventana que cuando creó el párrafo con el contenido existente. Realice los cambios y haga clic en **OK**.
+* **Haga doble clic** en el párrafo para abrirlo. Verá la misma ventana que cuando creó el párrafo con el contenido existente. Realice los cambios y haga clic en **Aceptar**.
 
-* **Clic con el botón derecho** Seleccione el párrafo y haga clic en **Editar**.
+* **Haga clic con el botón derecho** en el párrafo y haga clic en **Editar**.
 
-* **Clic** dos veces en el párrafo (un doble clic lento) para entrar en el modo de edición in-situ. Podrá editar directamente el texto de la página, en lugar de hacerlo desde una ventana de diálogo. En este modo, se le proporcionará una barra de herramientas en la parte superior de la página. Simplemente realice los cambios y se guardarán automáticamente.
+* **Haga clic** dos veces en el párrafo (un doble clic lento) para entrar al modo de edición local. Podrá editar directamente el texto de la página, en lugar de hacerlo desde una ventana de diálogo. En este modo, se le proporcionará una barra de herramientas en la parte superior de la página. Simplemente realice los cambios y se guardarán automáticamente.
 
 ## Mover un componente {#moving-a-component}
 
@@ -144,28 +144,28 @@ Para mover un párrafo:
 
 Para eliminar un párrafo:
 
-1. Seleccione el párrafo y **clic con el botón derecho**:
+1. Seleccione el párrafo y **haga clic con el botón secundario**:
 
    ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. Seleccionar **Eliminar** en el menú. AEM WCM solicita la confirmación de que desea eliminar el párrafo, ya que esta acción no se puede deshacer.
-1. Haz clic en **OK**.
+1. Seleccione **Eliminar** en el menú. AEM WCM solicita la confirmación de que desea eliminar el párrafo, ya que esta acción no se puede deshacer.
+1. Haga clic en **OK**.
 
 >[!NOTE]
 >
->Si ha configurado su [Propiedades del usuario para mostrar la barra de herramientas de edición global](/help/sites-classic-ui-authoring/author-env-user-props.md) también puede realizar determinadas acciones en los párrafos utilizando la variable **Copiar**, **Cortar**, **Pegar**, **Eliminar** botones disponibles.
+>Si ha configurado las propiedades de [usuario para que muestren la barra de herramientas de edición global](/help/sites-classic-ui-authoring/author-env-user-props.md), también puede realizar ciertas acciones en los párrafos usando los botones **Copiar**, **Cortar**, **Pegar**, **Eliminar** disponibles.
 >
->Varios [métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) también están disponibles.
+>También hay varios [métodos abreviados de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) disponibles.
 
 ## Cortar/copiar/pegar un componente {#cut-copy-paste-a-component}
 
-Como cuando [Eliminación de un componente](#deleting-a-component) puede utilizar el menú contextual para copiar, cortar o pegar un componente
+Al igual que cuando [Eliminando un componente](#deleting-a-component), puede utilizar el menú contextual para copiar, cortar o pegar un componente
 
 >[!NOTE]
 >
->Si ha configurado su [Propiedades del usuario para mostrar la barra de herramientas de edición global](/help/sites-classic-ui-authoring/author-env-user-props.md) también puede realizar determinadas acciones en los párrafos utilizando la variable **Copiar**, **Cortar**, **Pegar**, **Eliminar** botones disponibles.
+>Si ha configurado las propiedades de [usuario para que muestren la barra de herramientas de edición global](/help/sites-classic-ui-authoring/author-env-user-props.md), también puede realizar ciertas acciones en los párrafos usando los botones **Copiar**, **Cortar**, **Pegar**, **Eliminar** disponibles.
 >
->Varios [métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) también están disponibles.
+>También hay varios [métodos abreviados de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) disponibles.
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ Los componentes heredados pueden ser el producto de distintos escenarios, como p
 
 * [Administración de varios sitios](/help/sites-administering/msm.md); también en combinación con [andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
-* [Lanzamientos](/help/sites-classic-ui-authoring/classic-launches.md) (cuando se basa en livecopy).
+* [Inicios](/help/sites-classic-ui-authoring/classic-launches.md) (cuando se basan en Live Copy).
 * Componentes específicos; por ejemplo, el sistema de párrafos heredado dentro de Geometrixx.
 
 Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto puede estar disponible en:
@@ -194,7 +194,7 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. **Un sistema de párrafos heredado**
+1. **Un Sistema De Párrafos Heredado**
 
    El cuadro de diálogo Configuración. Por ejemplo, como con el sistema de párrafos heredado en Geometrixx:
 
@@ -202,9 +202,9 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
 ## Agregar anotaciones {#adding-annotations}
 
-[Anotaciones](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permite que otros autores proporcionen comentarios sobre el contenido. Esto se utiliza a menudo con fines de revisión y validación.
+[Anotaciones](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permiten que otros autores proporcionen comentarios sobre tu contenido. Esto se utiliza a menudo con fines de revisión y validación.
 
-## Previsualizar páginas   {#previewing-pages}
+## Previsualizar páginas {#previewing-pages}
 
 Hay dos iconos en el borde inferior de la barra de tareas que son importantes para obtener una vista previa de las páginas:
 
@@ -212,7 +212,7 @@ Hay dos iconos en el borde inferior de la barra de tareas que son importantes pa
 
 * El icono de lápiz le muestra que está actualmente en modo de edición, donde puede agregar, modificar, mover o eliminar contenido.
 
-  ![Icono de edición indicado por un símbolo de lápiz.](do-not-localize/chlimage_1-6.png)
+  ![Editar icono indicado por un símbolo de lápiz.](do-not-localize/chlimage_1-6.png)
 
 * El icono de lupa le permite seleccionar el modo de vista previa en el que la página se muestra tal y como se verá en el entorno de publicación (a veces también es necesario actualizar la página):
 
@@ -220,11 +220,11 @@ Hay dos iconos en el borde inferior de la barra de tareas que son importantes pa
 
   En el modo de vista previa, se reducirá la barra de tareas y haga clic en el icono de flecha abajo para volver al modo de edición:
 
-  ![AEM Barra con el título y un icono de modo de edición a la derecha del título, que se indica con un símbolo de flecha hacia abajo.](do-not-localize/chlimage_1-8.png)
+  AEM ![Barra con el título y un icono de modo de edición a la derecha del título indicado por un símbolo de flecha hacia abajo.](do-not-localize/chlimage_1-8.png)
 
 ## Buscar y reemplazar {#find-replace}
 
-Para ediciones a mayor escala de la misma frase a **[Buscar y reemplazar](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** La opción de menú permite buscar y reemplazar varias instancias de una cadena, dentro de una sección del sitio web.
+Para ediciones a mayor escala de la misma frase, una opción de menú **[Buscar y reemplazar](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** le permite buscar y reemplazar varias instancias de una cadena, dentro de una sección del sitio web.
 
 ## Bloquear una página   {#locking-a-page}
 
@@ -236,13 +236,13 @@ AEM permite bloquear páginas para que nadie más pueda cambiar su contenido. Es
 
 Para bloquear una página:
 
-1. En el **Sitios web** , seleccione la página que desea bloquear.
+1. En la ficha **Sitios web**, seleccione la página que desee bloquear.
 1. Haga doble clic en la página para abrirla y editarla.
-1. En el **Página** pestaña de la barra de tareas, seleccione **Bloquear página**:
+1. En la ficha **Página** de la barra de tareas, seleccione **Bloquear página**:
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Aparece un mensaje que indica que la página está bloqueada para otros usuarios. Además, en el panel derecho del **Sitios web** AEM , WCM muestra la página como bloqueada e indica qué usuario ha bloqueado la página.
+   Aparece un mensaje que indica que la página está bloqueada para otros usuarios. AEM Además, en el panel derecho de la consola **Sitios web**, WCM muestra la página como bloqueada e indica qué usuario ha bloqueado la página.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
@@ -250,9 +250,9 @@ Para bloquear una página:
 
 Para desbloquear una página:
 
-1. En el **Sitios web** , seleccione la página que desea desbloquear.
+1. En la ficha **Sitios web**, seleccione la página que desee desbloquear.
 1. Haga doble clic en la página para abrirla.
-1. En el **Página** pestaña de la barra de tareas, seleccione **Desbloquear página**.
+1. En la ficha **Página** de la barra de tareas, seleccione **Desbloquear página**.
 
 ## Deshacer y rehacer modificaciones de páginas {#undoing-and-redoing-page-edits}
 
@@ -271,7 +271,7 @@ Al deshacer o rehacer la eliminación, adición o reubicación de uno o más pá
 
 >[!NOTE]
 >
->El administrador del sistema puede [configurar varios aspectos de las funciones de Deshacer/Rehacer](/help/sites-administering/config-undo.md) según los requisitos de su instancia.
+>El administrador del sistema puede [configurar varios aspectos de las características Deshacer/Rehacer](/help/sites-administering/config-undo.md) según los requisitos de la instancia.
 
 AEM Almacena un historial de las acciones que realiza y la secuencia en que las realizó. Por lo tanto, deshace varias acciones en el orden en que las realizó. A continuación, puede utilizar rehacer para volver a aplicar una o varias acciones.
 
@@ -285,7 +285,7 @@ El comportamiento de los comandos Deshacer y Rehacer es similar al de otros prog
 >
 >* rehacer acciones siempre que no haya realizado una edición de página desde que utilizó deshacer.
 >* deshacer un máximo de 20 acciones de edición (configuración predeterminada).
->* también utilice [Métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para deshacer y rehacer.
+>* use también [métodos abreviados de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para deshacer y rehacer.
 >
 
 Puede usar los comandos Deshacer y Rehacer para los siguientes tipos de cambios de página:

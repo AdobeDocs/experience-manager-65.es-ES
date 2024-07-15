@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM Este artículo tiene como objetivo mejorar el conocimiento sobre las tareas y consideraciones necesarias para implementar correctamente la implementación de (Adobe Experience Manager) con MongoDB.
 
-Para obtener más información relacionada con la implementación, consulte [Implementación y mantenimiento](/help/sites-deploying/deploy.md) de la documentación.
+Para obtener más información relacionada con la implementación, consulte la sección [Implementación y mantenimiento](/help/sites-deploying/deploy.md) de la documentación.
 
 ## AEM Cuándo usar MongoDB con {#when-to-use-mongodb-with-aem}
 
@@ -38,7 +38,7 @@ Si no se cumplen los criterios, se recomienda una implementación activa/en espe
 
 >[!NOTE]
 >
->Encontrará información adicional sobre el tamaño de las instancias de autor y la definición de usuarios simultáneos en el [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel).
+>Encontrará información adicional sobre el tamaño de las instancias de autor y la definición de usuarios simultáneos en las [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel).
 
 ### AEM Implementación mínima de MongoDB para el uso de {#minimal-mongodb-deployment-for-aem}
 
@@ -46,15 +46,15 @@ AEM A continuación se muestra una implementación mínima para la implementaci�
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Una implementación mínima requiere tres `mongod` instancias configuradas como un conjunto de réplicas. Una instancia se selecciona principal y las demás instancias son secundarias, y la elección se administra mediante `mongod`. Cada instancia tiene un disco local adjunto. Por lo tanto, el clúster puede admitir la carga; se recomienda un rendimiento mínimo de 12 MB por segundo con más de 3000 operaciones de E/S por segundo (IOPS).
+Una implementación mínima requiere tres instancias de `mongod` configuradas como un conjunto de réplicas. Una instancia se selecciona como principal y las demás instancias como secundarias. La elección se administra mediante `mongod`. Cada instancia tiene un disco local adjunto. Por lo tanto, el clúster puede admitir la carga; se recomienda un rendimiento mínimo de 12 MB por segundo con más de 3000 operaciones de E/S por segundo (IOPS).
 
-AEM Los autores de la están conectados al `mongod` AEM instancias, con cada autor de la conectándose a las tres `mongod` instancias. Las escrituras se envían a la instancia principal y las lecturas se pueden leer desde cualquiera de las instancias. AEM El tráfico se distribuye en función de la carga que realiza Dispatcher en cualquiera de las instancias de autor de la activa. El almacén de datos de Oak es un `FileDataStore`y la monitorización MongoDB la proporciona MMS o el administrador de operaciones de MongoDB según la ubicación de la implementación. Las soluciones de terceros como Splunk o Ganglia proporcionan monitorización del nivel del sistema operativo y del registro.
+AEM AEM Los autores de la están conectados a las instancias de `mongod`, y cada autor de la se conecta a las tres instancias de `mongod`. Las escrituras se envían a la instancia principal y las lecturas se pueden leer desde cualquiera de las instancias. El tráfico se distribuye en función de la carga realizada por un Dispatcher AEM en cualquiera de las instancias de autor de la activa. El almacén de datos de Oak es un `FileDataStore` y MMS o el administrador de operaciones de MongoDB proporcionan la supervisión de MongoDB en función de la ubicación de la implementación. Las soluciones de terceros como Splunk o Ganglia proporcionan monitorización del nivel del sistema operativo y del registro.
 
 En esta implementación, todos los componentes son necesarios para una implementación correcta. Cualquier componente que falte deja la implementación sin funcionar.
 
 ### Sistemas operativos {#operating-systems}
 
-AEM Para obtener una lista de los sistemas operativos admitidos para la versión 6 de la aplicación, consulte la [Página de requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+AEM Para obtener una lista de los sistemas operativos compatibles con el 6, consulte la [página de requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
 ### Entornos {#environments}
 
@@ -91,31 +91,31 @@ Aunque las mismas limitaciones se aplican al motor de almacenamiento WiredTiger 
 
 ### Almacén de datos {#data-store}
 
-Debido a las limitaciones del conjunto de trabajo de MongoDB, se recomienda que el almacén de datos se mantenga independiente de MongoDB. En la mayoría de los entornos, una `FileDataStore` AEM debe utilizarse el uso de un NAS disponible para todas las instancias de la. Para situaciones en las que se utiliza Amazon Web Service, también hay un `S3 DataStore`. Si, por cualquier motivo, el almacén de datos se mantiene dentro de MongoDB, el tamaño del almacén de datos debe añadirse al tamaño total de la base de datos y los cálculos del conjunto de trabajo deben ajustarse correctamente. Este tamaño puede significar el aprovisionamiento de más RAM para mantener el rendimiento sin errores de página.
+Debido a las limitaciones del conjunto de trabajo de MongoDB, se recomienda que el almacén de datos se mantenga independiente de MongoDB. AEM En la mayoría de los entornos, se debe usar un `FileDataStore` que usa un NAS disponible para todas las instancias de. En las situaciones en las que se usa Amazon Web Service, también existe `S3 DataStore`. Si, por cualquier motivo, el almacén de datos se mantiene dentro de MongoDB, el tamaño del almacén de datos debe añadirse al tamaño total de la base de datos y los cálculos del conjunto de trabajo deben ajustarse correctamente. Este tamaño puede significar el aprovisionamiento de más RAM para mantener el rendimiento sin errores de página.
 
 ## Monitoreo {#monitoring}
 
 La supervisión es vital para una implementación exitosa del proyecto. AEM Con los conocimientos suficientes, es posible ejecutar la ejecución de MongoDB sin tener que realizar un seguimiento de la ejecución de los programas de la. Sin embargo, ese conocimiento normalmente se encuentra en ingenieros especializados para cada sección del despliegue.
 
-Este conocimiento especializado suele incluir a un ingeniero de I+D que trabaja en el Apache Oak Core y a un especialista de MongoDB.
+Este conocimiento especializado suele incluir a un ingeniero de I+D que trabaja en Apache Oak Core y a un especialista de MongoDB.
 
 Sin supervisión en todos los niveles, se requiere un conocimiento detallado del código base para diagnosticar los problemas. Una vez establecida la supervisión y con las directrices adecuadas sobre las estadísticas principales, los equipos de implementación pueden reaccionar adecuadamente ante las anomalías.
 
-Aunque es posible utilizar herramientas de línea de comandos para obtener una instantánea rápida del funcionamiento de un clúster, hacerlo en tiempo real en muchos hosts es casi imposible. Las herramientas de línea de comandos rara vez proporcionan información histórica a partir de unos minutos y nunca permiten la correlación cruzada entre distintos tipos de métricas. Un breve período de lentitud `mongod` La sincronización requiere un esfuerzo manual significativo para correlacionar con la espera de E/S o los niveles de escritura excesivos con un recurso de almacenamiento compartido desde una máquina virtual aparentemente no conectada.
+Aunque es posible utilizar herramientas de línea de comandos para obtener una instantánea rápida del funcionamiento de un clúster, hacerlo en tiempo real en muchos hosts es casi imposible. Las herramientas de línea de comandos rara vez proporcionan información histórica a partir de unos minutos y nunca permiten la correlación cruzada entre distintos tipos de métricas. Un breve período de sincronización lenta de `mongod` en segundo plano requiere un esfuerzo manual significativo para correlacionar con la espera de E/S o niveles de escritura excesivos con un recurso de almacenamiento compartido desde una máquina virtual aparentemente no conectada.
 
-### Cloud Manager de MongoDB {#mongodb-cloud-manager}
+### MongoDB Cloud Manager {#mongodb-cloud-manager}
 
-MongoDB Cloud Manager es un servicio gratuito ofrecido por MongoDB que permite la monitorización y administración de instancias de MongoDB. Proporciona una vista del rendimiento y el estado del clúster de MongoDB en tiempo real. Administra tanto las instancias alojadas en la nube como las privadas siempre que la instancia pueda acceder al servidor de monitorización de Cloud Manager.
+MongoDB Cloud Manager es un servicio gratuito ofrecido por MongoDB que permite la monitorización y administración de instancias de MongoDB. Proporciona una vista del rendimiento y el estado del clúster de MongoDB en tiempo real. Administra tanto las instancias alojadas en la nube como las privadas, siempre que la instancia pueda acceder al servidor de monitorización de Cloud Manager.
 
 Requiere un agente instalado en la instancia de MongoDB que se conecta al servidor de monitorización. Existen tres niveles de agente:
 
 * Un agente de automatización que puede automatizar completamente todo en el servidor MongoDB,
-* Un agente de monitorización que puede monitorizar el `mongod` ejemplo,
+* Un agente de supervisión que puede supervisar la instancia `mongod`,
 * Un agente de copia de seguridad que puede realizar copias de seguridad programadas de los datos.
 
-Aunque el uso de Cloud Manager para la automatización del mantenimiento de un clúster de MongoDB facilita muchas de las tareas rutinarias, no es necesario y tampoco lo utiliza para la copia de seguridad. Sin embargo, al elegir un Cloud Manager para monitorizar, se requiere monitorización.
+Aunque el uso de Cloud Manager para la automatización del mantenimiento de un clúster de MongoDB facilita muchas de las tareas rutinarias, no es necesario y tampoco lo es utilizar para la copia de seguridad. Sin embargo, se requiere monitorización al elegir un Cloud Manager para monitorizar.
 
-Para obtener más información sobre MongoDB Cloud Manager, consulte la [Documentación de MongoDB](https://docs.cloud.mongodb.com/).
+Para obtener más información acerca de MongoDB Cloud Manager, consulte la [documentación de MongoDB](https://docs.cloud.mongodb.com/).
 
 ### Administrador de operaciones de MongoDB {#mongodb-ops-manager}
 
@@ -140,7 +140,7 @@ AEM En esta sección se explican los pasos que debe seguir para asegurarse de qu
 1. Primero, asegúrese de que todos los hosts tengan una entrada DNS
 1. Todos los hosts deben poder resolverse mediante su entrada DNS desde todos los demás hosts enrutables
 1. Todos los hosts de MongoDB se pueden enrutar desde todos los demás hosts de MongoDB en el mismo clúster
-1. Los hosts de MongoDB pueden enrutar paquetes a MongoDB Cloud Manager y a los demás servidores de monitorización
+1. Los hosts de MongoDB pueden enrutar paquetes a MongoDB Cloud Manager y a otros servidores de supervisión
 1. AEM Los servidores pueden enrutar paquetes a todos los servidores de MongoDB
 1. AEM La latencia de paquetes entre cualquier servidor de y cualquier servidor MongoDB es menor de dos milisegundos, sin pérdida de paquetes y con una distribución estándar de un milisegundo o menos.
 1. AEM Asegúrese de que no haya más de dos saltos entre un servidor de y uno de MongoDB
@@ -154,7 +154,7 @@ AEM En esta sección se explican los pasos que debe seguir para asegurarse de qu
 
 AEM AEM Las instancias de deben configurarse para utilizar la configuración de la aplicación con MongoMK. AEM La base de la implementación de MongoMK en es el Almacén de nodos de documentos en el que se realiza la creación de la aplicación.
 
-Para obtener más información sobre cómo configurar los almacenes de nodos, consulte [AEM Configuración de los almacenes de nodos y los almacenes de datos en la](/help/sites-deploying/data-store-config.md).
+AEM Para obtener más información sobre cómo configurar los almacenes de nodos, vea [Configurar los almacenes de nodos y los almacenes de datos en el espacio de trabajo de ](/help/sites-deploying/data-store-config.md).
 
 A continuación se muestra un ejemplo de la configuración del almacén de nodos de documentos para una implementación mínima de MongoDB:
 
@@ -182,17 +182,17 @@ AEM El servidor MongoDB se debe conectar a la. Se establecen conexiones con todo
 Nombre de la base de datos. AEM El valor predeterminado para la es `aem-author`.
 
 * `customBlobStore`
-Si la implementación almacena binarios en la base de datos, forman parte del conjunto de trabajo. Por esa razón, se recomienda no almacenar binarios dentro de MongoDB, prefiriendo un almacén de datos alternativo como un `FileSystem` almacén de datos en un NAS.
+Si la implementación almacena binarios en la base de datos, forman parte del conjunto de trabajo. Por ese motivo, se recomienda no almacenar binarios dentro de MongoDB, prefiriendo un almacén de datos alternativo como un almacén de datos de `FileSystem` en un NAS.
 
 * `cache`
-El tamaño de la caché en megabytes. Este espacio se distribuye entre varias memorias caché utilizadas en el `DocumentNodeStore`. El valor predeterminado es 256 MB. Sin embargo, el rendimiento de lectura de Oak se beneficia de una caché más grande.
+El tamaño de la caché en megabytes. Este espacio se distribuye entre varias memorias caché utilizadas en `DocumentNodeStore`. El valor predeterminado es 256 MB. Sin embargo, el rendimiento de lectura de Oak se beneficia de una caché más grande.
 
 * `blobCacheSize`
 AEM Los blobs utilizados con frecuencia pueden ser almacenados en caché por los para evitar recuperarlos del almacén de datos. Hacerlo afecta más al rendimiento, especialmente al almacenar blobs en la base de datos de MongoDB. Todos los almacenes de datos basados en el sistema de archivos se benefician de la caché de disco en el sistema operativo.
 
 #### Configuración del almacén de datos {#data-store-configuration}
 
-El almacén de datos se utiliza para almacenar archivos de un tamaño mayor que un umbral. Por debajo de ese umbral, los archivos se almacenan como propiedades en el almacén de nodos de documentos. Si la variable `MongoBlobStore` , se crea una colección dedicada en MongoDB para almacenar los blobs. Esta colección contribuye al conjunto de trabajo del `mongod` y requiere que `mongod` tiene más RAM para evitar problemas de rendimiento. Por este motivo, la configuración recomendada es evitar el `MongoBlobStore` para implementaciones y uso de producción `FileDataStore` AEM respaldado por un NAS compartido entre todas las instancias de la. Dado que la caché en el nivel del sistema operativo es eficaz para administrar archivos, el tamaño mínimo de un archivo en disco debe establecerse en un tamaño cercano al tamaño de bloque del disco. Al hacerlo, se asegura de que el sistema de archivos se utiliza de forma eficaz y que muchos documentos pequeños no contribuyen en exceso al conjunto de trabajo del `mongod` ejemplo.
+El almacén de datos se utiliza para almacenar archivos de un tamaño mayor que un umbral. Por debajo de ese umbral, los archivos se almacenan como propiedades en el almacén de nodos de documentos. Si se usa `MongoBlobStore`, se crea una colección dedicada en MongoDB para almacenar los blobs. Esta colección contribuye al conjunto de trabajo de la instancia `mongod` y requiere que `mongod` tenga más RAM para evitar problemas de rendimiento. AEM Por ese motivo, la configuración recomendada es evitar `MongoBlobStore` para implementaciones de producción y usar `FileDataStore` respaldado por un NAS compartido entre todas las instancias de la. Dado que la caché en el nivel del sistema operativo es eficaz para administrar archivos, el tamaño mínimo de un archivo en disco debe establecerse en un tamaño cercano al tamaño de bloque del disco. Al hacerlo, se asegura de que el sistema de archivos se utiliza de forma eficaz y de que muchos documentos pequeños no contribuyen en exceso al conjunto de trabajo de la instancia `mongod`.
 
 AEM Esta es una configuración típica del almacén de datos para una implementación mínima de la con MongoDB:
 
@@ -208,54 +208,54 @@ cacheSizeInMB=128
 Donde:
 
 * `minRecordLength`
-Tamaño en bytes. Los binarios con un tamaño inferior o igual a este se almacenan con el almacén de nodos de documentos. En lugar de almacenar el ID del blob, se almacena el contenido del binario. En el caso de archivos binarios superiores a este tamaño, el identificador del archivo binario se almacena como una propiedad de Document en la colección nodes. Y, el cuerpo del binario se almacena en el `FileDataStore` en el disco. 4096 bytes es un tamaño de bloque típico del sistema de archivos.
+Tamaño en bytes. Los binarios con un tamaño inferior o igual a este se almacenan con el almacén de nodos de documentos. En lugar de almacenar el ID del blob, se almacena el contenido del binario. En el caso de archivos binarios superiores a este tamaño, el identificador del archivo binario se almacena como una propiedad de Document en la colección nodes. Y, el cuerpo del binario se almacena en el `FileDataStore` del disco. 4096 bytes es un tamaño de bloque típico del sistema de archivos.
 
 * `path`
-Ruta a la raíz del almacén de datos. AEM Para una implementación de MongoMK, esta ruta debe ser un sistema de archivos compartido disponible para todas las instancias de. Normalmente se utiliza un servidor de Almacenamiento conectado a la red (NAS). Para implementaciones en la nube como Amazon Web Service, la variable `S3DataFileStore` también está disponible.
+Ruta a la raíz del almacén de datos. AEM Para una implementación de MongoMK, esta ruta debe ser un sistema de archivos compartido disponible para todas las instancias de. Normalmente se utiliza un servidor de Almacenamiento conectado a la red (NAS). Para implementaciones de nube como Amazon Web Service, `S3DataFileStore` también está disponible.
 
 * `cacheSizeInMB`
-Tamaño total de la caché binaria en megabytes. Se utiliza para almacenar en caché binarios menores que el `maxCacheBinarySize` configuración.
+Tamaño total de la caché binaria en megabytes. Se utiliza para almacenar en caché binarios inferiores a la configuración de `maxCacheBinarySize`.
 
 * `maxCachedBinarySize`
 Tamaño máximo en bytes de un archivo binario almacenado en caché en el archivo binario. Si se utiliza un almacén de datos basado en el sistema de archivos, no se recomienda utilizar valores altos para la caché del almacén de datos, ya que el sistema operativo ya almacena en caché los binarios.
 
 #### Desactivación de la sugerencia de consulta {#disabling-the-query-hint}
 
-Se recomienda deshabilitar la sugerencia de consulta enviada con todas las consultas agregando la propiedad `-Doak.mongo.disableIndexHint=true` AEM cuando empiece a. Al hacerlo, MongoDB calcula el índice más apropiado para usar según las estadísticas internas.
+AEM Se recomienda deshabilitar la sugerencia de consulta que se envía con todas las consultas agregando la propiedad `-Doak.mongo.disableIndexHint=true` al iniciar la ejecución de la consulta de forma que se ejecute de forma más rápida y sencilla. En este caso, se recomienda agregar la propiedad  al inicio de la ejecución de la. Al hacerlo, MongoDB calcula el índice más apropiado para usar según las estadísticas internas.
 
 AEM Si la sugerencia de consulta no está deshabilitada, cualquier ajuste de rendimiento de los índices no tiene ningún impacto en el rendimiento de los.
 
 #### Habilitar caché persistente para MongoMK {#enable-persistent-cache-for-mongomk}
 
-Se recomienda habilitar una configuración de caché persistente para implementaciones MongoDB, a fin de maximizar la velocidad para entornos con alto rendimiento de lectura de E/S. Para obtener más información, consulte la [Documentación de Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/nodestore/persistent-cache.html).
+Se recomienda habilitar una configuración de caché persistente para implementaciones MongoDB, a fin de maximizar la velocidad para entornos con alto rendimiento de lectura de E/S. Para obtener más información, consulte la [documentación de Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/nodestore/persistent-cache.html).
 
 ## Optimizaciones del sistema operativo MongoDB {#mongodb-operating-system-optimizations}
 
 ### Compatibilidad con sistemas operativos {#operating-system-support}
 
-MongoDB 2.6 utiliza un motor de almacenamiento asignado a la memoria que es sensible a algunos aspectos de la gestión de nivel del sistema operativo entre la RAM y el disco. El rendimiento de consulta y lectura de la instancia de MongoDB depende de evitar o eliminar las operaciones de E/S lentas, a menudo denominadas errores de página. Estos problemas son errores de página que se aplican al `mongod` proceso en particular. No confunda esto con errores de página del sistema operativo.
+MongoDB 2.6 utiliza un motor de almacenamiento asignado a la memoria que es sensible a algunos aspectos de la gestión de nivel del sistema operativo entre la RAM y el disco. El rendimiento de consulta y lectura de la instancia de MongoDB depende de evitar o eliminar las operaciones de E/S lentas, a menudo denominadas errores de página. Estos problemas son errores de página que se aplican al proceso `mongod` en particular. No confunda esto con errores de página del sistema operativo.
 
 Para un funcionamiento rápido, la base de datos MongoDB solo debe acceder a los datos que ya están en la RAM. Los datos a los que debe acceder están formados por índices y datos. Esta colección de índices y datos se denomina conjunto de trabajo. Cuando el conjunto de trabajo es mayor que la RAM disponible, MongoDB tiene que paginar esos datos desde el disco incurriendo en un coste de E/S, desalojando otros datos que ya están en la memoria. Si la expulsión hace que los datos se vuelvan a cargar desde el disco, los errores de página predominan y el rendimiento se degrada. Cuando el conjunto de trabajo es dinámico y variable, se incurre en más errores de página para admitir operaciones.
 
-MongoDB se ejecuta en varios sistemas operativos, incluidos una amplia variedad de sabores Linux®, Windows y macOS. Consulte [https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms) para obtener más información. Según la elección del sistema operativo, MongoDB tiene diferentes recomendaciones de nivel de sistema operativo. Hay documentos en [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) y se resume aquí para mayor comodidad.
+MongoDB se ejecuta en varios sistemas operativos, incluidos una amplia variedad de sabores Linux®, Windows y macOS. Consulte [https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms) para obtener más información. Según la elección del sistema operativo, MongoDB tiene diferentes recomendaciones de nivel de sistema operativo. Hay documentos en [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) que se resumen aquí por comodidad.
 
 #### Linux® {#linux}
 
-* Desactive las páginas transparentes y desarrástrelas. Consulte [Configuración de páginas enormes y transparentes](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) para obtener más información.
-* [Ajuste la configuración de lectura anticipada](https://docs.mongodb.com/manual/administration/production-notes/#readahead) en los dispositivos que almacenan los archivos de la base de datos para que se adapte a su caso de uso.
+* Desactive las páginas transparentes y desarrástrelas. Para obtener más información, consulte [Configuración de páginas transparentes de gran tamaño](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/).
+* [Ajuste la configuración de lectura anticipada](https://docs.mongodb.com/manual/administration/production-notes/#readahead) en los dispositivos que almacenan los archivos de la base de datos para que se ajuste a su caso de uso.
 
    * Para el motor de almacenamiento MMAPv1, si el conjunto de trabajo es mayor que la RAM disponible y el patrón de acceso a documentos es aleatorio, considere la posibilidad de reducir la lectura anticipada a 32 o 16. Evalúe diferentes configuraciones para poder encontrar un valor óptimo que maximice la memoria residente y reduzca el número de errores de página.
-   * Para el motor de almacenamiento WiredTiger, establezca la lectura anticipada en 0 independientemente del tipo de medio de almacenamiento (giratorio, SSD, etc.). En general, utilice la configuración de lectura anticipada recomendada a menos que las pruebas muestren un beneficio mensurable, repetible y fiable en un valor de lectura anticipada más alto. [Soporte profesional de MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) puede proporcionar consejos y directrices sobre configuraciones de lectura anticipada distintas de cero.
+   * Para el motor de almacenamiento WiredTiger, establezca la lectura anticipada en 0 independientemente del tipo de medio de almacenamiento (giratorio, SSD, etc.). En general, utilice la configuración de lectura anticipada recomendada a menos que las pruebas muestren un beneficio mensurable, repetible y fiable en un valor de lectura anticipada más alto. [El Soporte Profesional de MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) puede proporcionar consejos y orientación sobre configuraciones de lectura anticipada distintas a cero.
 
 * Deshabilite la herramienta optimizada si ejecuta RHEL 7/CentOS 7 en un entorno virtual.
 * Cuando RHEL 7/CentOS 7 se ejecuta en un entorno virtual, la herramienta optimizada invoca automáticamente un perfil de rendimiento derivado del rendimiento de rendimiento, que establece automáticamente la configuración de lectura anticipada en 4 MB. Esta configuración puede afectar negativamente al rendimiento.
 * Utilice los programadores de disco noop o deadline para las unidades SSD.
 * Utilice el programador de discos noop para unidades virtualizadas en VM invitadas.
-* Deshabilitar NUMA o establecer `vm.zone_reclaim_mode` a 0 y ejecute [mongol](https://docs.mongodb.com/manual/administration/production-notes/#readahead) instancias con entrelazado de nodos. Consulte: [Hardware MongoDB y NUMA](https://docs.mongodb.com/manual/administration/production-notes/#readahead) para obtener más información.
+* Deshabilite NUMA o establezca `vm.zone_reclaim_mode` en 0 y ejecute [mongood](https://docs.mongodb.com/manual/administration/production-notes/#readahead) instancias con entrelazado de nodos. Consulte: [MongoDB y NUMA Hardware](https://docs.mongodb.com/manual/administration/production-notes/#readahead) para obtener más información.
 
-* Ajuste los valores límite del hardware para que se ajusten al caso de uso. Si hay varios [mongol](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod) o [mongos](https://docs.mongodb.com/manual/reference/program/mongos/#bin.mongos) Las instancias de se ejecutan bajo el mismo usuario. Escale los valores ulimit en consecuencia. Consulte: [Configuración de UNIX® ulimit](https://docs.mongodb.com/manual/reference/ulimit/) para obtener más información.
+* Ajuste los valores límite del hardware para que se ajusten al caso de uso. Si se están ejecutando varias instancias de [mongood](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod) o [mongos](https://docs.mongodb.com/manual/reference/program/mongos/#bin.mongos) en el mismo usuario, escale los valores ulimit en consecuencia. Consulte: [Configuración de UNIX® ulimit](https://docs.mongodb.com/manual/reference/ulimit/) para obtener más información.
 
-* Usar noatime para [dbPath](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath) punto de montaje.
+* Use noatime para el punto de montaje [dbPath](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath).
 * Configure suficientes identificadores de archivo (fs.file-max), límite pid de kernel (kernel.pid_max) y el máximo de subprocesos por proceso (kernel.threads-max) para su implementación. Para los sistemas grandes, los siguientes valores proporcionan un buen punto de partida:
 
    * valor fs.file-max de 98000,
@@ -285,7 +285,7 @@ Algunas otras operaciones, como soltar una colección, aún requieren un bloqueo
 
 WiredTiger utiliza el Control de concurrencia de varias versiones (MVCC). Al comienzo de una operación, WiredTiger proporciona una instantánea puntual de los datos de la transacción. Una instantánea presenta una vista coherente de los datos en memoria.
 
-Al escribir en el disco, WiredTiger escribe todos los datos en una instantánea en el disco de una manera consistente en todos los archivos de datos. El ahora- [duradero](https://docs.mongodb.com/manual/reference/glossary/#term-durable) los datos actúan como un punto de comprobación en los archivos de datos. El punto de comprobación garantiza que los archivos de datos sean coherentes hasta el último punto de comprobación, incluido. Es decir, los puntos de comprobación pueden actuar como puntos de recuperación.
+Al escribir en el disco, WiredTiger escribe todos los datos en una instantánea en el disco de una manera consistente en todos los archivos de datos. Los datos de [durable](https://docs.mongodb.com/manual/reference/glossary/#term-durable) ahora actúan como punto de comprobación en los archivos de datos. El punto de comprobación garantiza que los archivos de datos sean coherentes hasta el último punto de comprobación, incluido. Es decir, los puntos de comprobación pueden actuar como puntos de recuperación.
 
 MongoDB configura WiredTiger para crear puntos de comprobación (es decir, escribir los datos de instantánea en el disco) a intervalos de 60 segundos o 2 GB de datos de diario.
 
@@ -293,15 +293,15 @@ Durante la escritura de un nuevo punto de comprobación, el punto de comprobaci�
 
 El nuevo punto de comprobación se vuelve accesible y permanente cuando la tabla de metadatos de WiredTiger se actualiza automáticamente para hacer referencia al nuevo punto de comprobación. Una vez que el nuevo punto de control es accesible, WiredTiger libera páginas de los antiguos puntos de control.
 
-Uso de WiredTiger, incluso sin [diario](https://docs.mongodb.com/manual/reference/glossary/#term-durable), MongoDB puede recuperarse del último punto de comprobación; sin embargo, para recuperar los cambios realizados después del último punto de comprobación, ejecute con [diario](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger-journal).
+Con WiredTiger, incluso sin [diario](https://docs.mongodb.com/manual/reference/glossary/#term-durable), MongoDB puede recuperarse del último punto de comprobación; sin embargo, para recuperar los cambios realizados después del último punto de comprobación, ejecute [diario](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger-journal).
 
 #### Diario {#journal}
 
-WiredTiger utiliza una combinación de inicio de sesión de transacción de escritura anticipada con [puntos de comprobación](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger-checkpoints) para garantizar la durabilidad de los datos.
+WiredTiger usa una combinación de inicio de sesión de transacción de escritura anticipada con [puntos de comprobación](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger-checkpoints) para garantizar la durabilidad de los datos.
 
-El diario WiredTiger mantiene todas las modificaciones de datos entre puntos de comprobación. Si MongoDB existe entre puntos de comprobación, utiliza el historial para reproducir todos los datos modificados desde el último punto de comprobación. Para obtener información sobre la frecuencia con la que MongoDB escribe los datos del diario en el disco, consulte [Proceso de diario](https://docs.mongodb.com/manual/core/journaling/#journal-process).
+El diario WiredTiger mantiene todas las modificaciones de datos entre puntos de comprobación. Si MongoDB existe entre puntos de comprobación, utiliza el historial para reproducir todos los datos modificados desde el último punto de comprobación. Para obtener información sobre la frecuencia con la que MongoDB escribe los datos del diario en el disco, vea [Proceso de diario](https://docs.mongodb.com/manual/core/journaling/#journal-process).
 
-El historial WiredTiger se comprime usando el [brusco](https://docs.mongodb.com/manual/core/journaling/#journal-process) biblioteca de compresión. Para especificar un algoritmo de compresión alternativo o que no haya compresión, use [storage.wiredTiger.engineConfig.journalCompressor](https://docs.mongodb.com/manual/reference/configuration-options/#storage.wiredTiger.engineConfig.journalCompressor) configuración.
+El diario WiredTiger está comprimido usando la biblioteca de compresión [snappy](https://docs.mongodb.com/manual/core/journaling/#journal-process). Para especificar un algoritmo de compresión alternativo o sin compresión, use la configuración [storage.wiredTiger.engineConfig.journalCompressor](https://docs.mongodb.com/manual/reference/configuration-options/#storage.wiredTiger.engineConfig.journalCompressor).
 
 Consulte [Diario con WiredTiger](https://docs.mongodb.com/manual/core/journaling/#journaling-wiredtiger).
 
@@ -309,25 +309,25 @@ Consulte [Diario con WiredTiger](https://docs.mongodb.com/manual/core/journaling
 >
 >El tamaño mínimo de registro para WiredTiger es de 128 bytes. Si un registro es de 128 bytes o menor, WiredTiger no comprime ese registro.
 >
->Puede deshabilitar el registro en diario estableciendo [storage.journal.enabled](https://docs.mongodb.com/manual/reference/configuration-options/#storage.journal.enabled) como false, lo que puede reducir los gastos generales de mantenimiento del diario.
+>Puede deshabilitar el diario estableciendo [storage.journal.enabled](https://docs.mongodb.com/manual/reference/configuration-options/#storage.journal.enabled) en false, lo que puede reducir la sobrecarga de mantenimiento del diario.
 >
->Para [independiente](https://docs.mongodb.com/manual/reference/glossary/#term-standalone) instancias, no usar el historial significa que se pierden algunas modificaciones de datos cuando MongoDB sale inesperadamente entre puntos de comprobación. Para miembros de [conjuntos de réplicas](https://docs.mongodb.com/manual/reference/glossary/#term-replica-set), el proceso de replicación puede proporcionar suficientes garantías de durabilidad.
+>Para [instancias independientes](https://docs.mongodb.com/manual/reference/glossary/#term-standalone), no usar el historial significa que se pierden algunas modificaciones de datos cuando MongoDB se cierra inesperadamente entre los puntos de comprobación. Para los miembros de [conjuntos de réplicas](https://docs.mongodb.com/manual/reference/glossary/#term-replica-set), el proceso de replicación puede proporcionar suficientes garantías de durabilidad.
 
 #### Compresión {#compression}
 
 Con WiredTiger, MongoDB admite la compresión para todas las colecciones e índices. La compresión minimiza el uso del almacenamiento a expensas de la CPU adicional.
 
-De forma predeterminada, WiredTiger utiliza la compresión de bloques con la variable [brusco](https://docs.mongodb.com/manual/reference/glossary/#term-snappy) biblioteca de compresión para todas las colecciones y [compresión de prefijo](https://docs.mongodb.com/manual/reference/glossary/#term-prefix-compression) para todos los índices.
+De manera predeterminada, WiredTiger usa compresión de bloques con la biblioteca de compresión [snappy](https://docs.mongodb.com/manual/reference/glossary/#term-snappy) para todas las colecciones y [compresión de prefijo](https://docs.mongodb.com/manual/reference/glossary/#term-prefix-compression) para todos los índices.
 
-Para colecciones, la compresión de bloques con [zlib](https://docs.mongodb.com/manual/reference/glossary/#term-zlib) también está disponible. Para especificar un algoritmo de compresión alternativo o que no haya compresión, use [storage.wiredTiger.collectionConfig.blockCompressor](https://docs.mongodb.com/manual/reference/glossary/#term-zlib) configuración.
+Para las colecciones, también está disponible la compresión de bloques con [zlib](https://docs.mongodb.com/manual/reference/glossary/#term-zlib). Para especificar un algoritmo de compresión alternativo o sin compresión, use la configuración [storage.wiredTiger.collectionConfig.blockCompressor](https://docs.mongodb.com/manual/reference/glossary/#term-zlib).
 
-Para índices, para deshabilitar [compresión de prefijo](https://docs.mongodb.com/manual/reference/glossary/#term-prefix-compression), use el [storage.wiredTiger.indexConfig.prefixCompression](https://docs.mongodb.com/manual/reference/configuration-options/#storage.wiredTiger.indexConfig.prefixCompression) configuración.
+Para los índices, para deshabilitar la [compresión de prefijo](https://docs.mongodb.com/manual/reference/glossary/#term-prefix-compression), use la configuración [storage.wiredTiger.indexConfig.prefixCompression](https://docs.mongodb.com/manual/reference/configuration-options/#storage.wiredTiger.indexConfig.prefixCompression).
 
-Los ajustes de compresión también se pueden configurar por recopilación y por índice durante la recopilación y la creación de índices. Consulte [Especificar opciones del motor de almacenamiento](https://docs.mongodb.com/manual/reference/method/db.createCollection/#create-collection-storage-engine-options) y [db.collection.createIndex() storageEngine](https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/#createindex-options) opción.
+Los ajustes de compresión también se pueden configurar por recopilación y por índice durante la recopilación y la creación de índices. Consulte [Especificar las opciones del motor de almacenamiento](https://docs.mongodb.com/manual/reference/method/db.createCollection/#create-collection-storage-engine-options) y [db.collection.createIndex() storageEngine](https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/#createindex-options).
 
 Para la mayoría de las cargas de trabajo, los ajustes de compresión predeterminados equilibran la eficiencia del almacenamiento y los requisitos de procesamiento.
 
-El diario WiredTiger también está comprimido de forma predeterminada. Para obtener información sobre la compresión de diarios, consulte [Diario](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger-journal).
+El diario WiredTiger también está comprimido de forma predeterminada. Para obtener información sobre la compresión de diarios, consulte [Journal](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger-journal).
 
 #### Uso de memoria {#memory-use}
 
@@ -356,25 +356,25 @@ Para ajustar el tamaño de la caché interna de WiredTiger, consulte [storage.wi
 
 ### NUMA {#numa}
 
-NUMA (Acceso a Memoria No Uniforme) permite que un núcleo administre cómo se asigna la memoria a los núcleos del procesador. Aunque este proceso intenta acelerar el acceso a la memoria de los núcleos, asegurándose de que puedan acceder a los datos necesarios, NUMA interfiere con MAP introduciendo una latencia adicional, ya que las lecturas no se pueden predecir. Como resultado, NUMA debe deshabilitarse para `mongod` procesar en todos los sistemas operativos compatibles.
+NUMA (Acceso a Memoria No Uniforme) permite que un núcleo administre cómo se asigna la memoria a los núcleos del procesador. Aunque este proceso intenta acelerar el acceso a la memoria de los núcleos, asegurándose de que puedan acceder a los datos necesarios, NUMA interfiere con MAP introduciendo una latencia adicional, ya que las lecturas no se pueden predecir. Como resultado, NUMA debe deshabilitarse para el proceso `mongod` en todos los sistemas operativos compatibles.
 
 En esencia, en una arquitectura NUMA, la memoria se conecta a las CPU y las CPU se conectan a un bus. En una arquitectura SMP o UMA, la memoria se conecta al bus y se comparte con las CPU. Cuando un subproceso asigna memoria en una CPU NUMA, se asigna según una directiva. El valor predeterminado es asignar memoria conectada a la CPU local del subproceso a menos que no haya memoria libre, momento en el que utiliza la memoria de una CPU libre a un costo mayor. Una vez asignada, la memoria no se mueve entre las CPU. La asignación se realiza mediante una directiva heredada del subproceso primario, que en última instancia es el subproceso que inició el proceso.
 
-En muchas bases de datos que ven el equipo como una arquitectura de memoria uniforme multinúcleo, este escenario lleva a que la CPU inicial se llene primero y la CPU secundaria se llene más tarde. Es especialmente cierto si un subproceso central es responsable de asignar búferes de memoria. La solución es cambiar la política NUMA del hilo principal utilizado para iniciar el `mongod` procese ejecutando el siguiente comando:
+En muchas bases de datos que ven el equipo como una arquitectura de memoria uniforme multinúcleo, este escenario lleva a que la CPU inicial se llene primero y la CPU secundaria se llene más tarde. Es especialmente cierto si un subproceso central es responsable de asignar búferes de memoria. La solución consiste en cambiar la directiva NUMA del subproceso principal utilizado para iniciar el proceso `mongod` ejecutando el siguiente comando:
 
 ```shell
 numactl --interleaved=all <mongod> -f config
 ```
 
-Esta directiva asigna la memoria de forma circular en todos los nodos de la CPU, lo que garantiza una distribución uniforme en todos los nodos. No genera el mayor acceso de rendimiento a la memoria como en sistemas con varios hardware de CPU. Alrededor de la mitad de las operaciones de memoria son más lentas y sobre el bus, pero `mongod` no se ha escrito para dirigirse a NUMA de una manera óptima, por lo que es un compromiso razonable.
+Esta directiva asigna la memoria de forma circular en todos los nodos de la CPU, lo que garantiza una distribución uniforme en todos los nodos. No genera el mayor acceso de rendimiento a la memoria como en sistemas con varios hardware de CPU. Alrededor de la mitad de las operaciones de memoria son más lentas y superan el bus, pero `mongod` no se ha escrito para dirigir NUMA de una manera óptima, por lo que es un compromiso razonable.
 
 ### Problemas de NUMA {#numa-issues}
 
-Si la variable `mongod` El proceso se inicia desde una ubicación distinta de `/etc/init.d` , es probable que no haya comenzado con la política NUMA correcta. Dependiendo de cuál sea la directiva predeterminada, pueden surgir problemas. El motivo es que los distintos instaladores de Linux® Package Manager para MongoDB también instalan un servicio con archivos de configuración en `/etc/init.d` que realizan el paso descrito anteriormente. Si instala y ejecuta MongoDB directamente desde un archivo ( `.tar.gz`), debe ejecutar manualmente mongood en `numactl` proceso.
+Si el proceso `mongod` se inicia desde una ubicación distinta de la carpeta `/etc/init.d`, es probable que no se haya iniciado con la directiva NUMA correcta. Dependiendo de cuál sea la directiva predeterminada, pueden surgir problemas. El motivo es que los distintos instaladores de Linux® Package Manager para MongoDB también instalan un servicio con archivos de configuración en `/etc/init.d` que realizan el paso descrito anteriormente. Si instala y ejecuta MongoDB directamente desde un archivo (`.tar.gz`), debe ejecutar manualmente mongod en el proceso `numactl`.
 
 >[!NOTE]
 >
->Para obtener más información sobre las políticas de NUMA disponibles, consulte la [documentación de numactl](https://linux.die.net/man/8/numactl).
+>Para obtener más información sobre las directivas NUMA disponibles, consulte la [documentación de numactl](https://linux.die.net/man/8/numactl).
 
 El proceso MongoDB se comporta de forma diferente en diferentes directivas de asignación:
 
@@ -397,7 +397,7 @@ Asigne siempre memoria en el nodo actual, pero utilice todos los nodos en los qu
 * `--preferred=<node>`
 Prefiere la asignación a un nodo, pero regresa a otros si el nodo preferido está lleno. Se puede utilizar la notación relativa para definir un nodo. Además, los subprocesos se ejecutan en todos los nodos.
 
-Algunas de las políticas pueden resultar en menos de toda la RAM disponible para el `mongod` proceso. A diferencia de MySQL, MongoDB evita activamente la paginación a nivel de sistema operativo y, por lo tanto, el `mongod` El proceso puede obtener menos memoria que parece estar disponible.
+Algunas de las directivas pueden dar como resultado que se asigne menos de toda la RAM disponible al proceso `mongod`. A diferencia de MySQL, MongoDB evita activamente la paginación a nivel de sistema operativo y, por lo tanto, el proceso `mongod` puede obtener menos memoria disponible.
 
 #### Intercambio {#swapping}
 
@@ -405,7 +405,7 @@ Debido a la naturaleza intensiva de memoria de las bases de datos, el intercambi
 
 #### Sistemas de archivos remotos {#remote-filesystems}
 
-Los sistemas de archivos remotos como NFS no se recomiendan para los archivos de datos internos de MongoDB (los archivos de base de datos de proceso mongood), porque introducen demasiada latencia. No confunda con el sistema de archivos compartido requerido para el almacenamiento de Oak Blob (FileDataStore), donde se recomienda NFS.
+Los sistemas de archivos remotos como NFS no se recomiendan para los archivos de datos internos de MongoDB (los archivos de base de datos de proceso mongood), porque introducen demasiada latencia. No confunda con el sistema de archivos compartido necesario para el almacenamiento de Oak Blob (FileDataStore), donde se recomienda NFS.
 
 #### Leer más {#read-ahead}
 
@@ -421,11 +421,11 @@ Ajuste la lectura con anticipación para que cuando se registre una página usan
 
 #### Configuración recomendada para discos de base de datos {#recommended-settings-for-database-disks}
 
-**Tiempo de desactivación**
+**Desactivar hora**
 
-Se recomienda que `atime` está desactivado para los discos que contienen las bases de datos.
+Se recomienda desactivar `atime` en los discos que contienen las bases de datos.
 
-**Establezca el programador de discos NOOP**
+**Establecer el programador de discos NOOP**
 
 Haga lo siguiente:
 
@@ -435,7 +435,7 @@ En primer lugar, compruebe el programador de E/S configurado ejecutando el sigui
 cat /sys/block/sdg/queue/scheduler
 ```
 
-Si la respuesta es `noop`No, no hay nada más que usted debe hacer.
+Si la respuesta es `noop`, no debe hacer nada más.
 
 Si NOOP no es el programador de E/S configurado, puede cambiarlo ejecutando:
 
@@ -443,7 +443,7 @@ Si NOOP no es el programador de E/S configurado, puede cambiarlo ejecutando:
 echo noop > /sys/block/sdg/queue/scheduler
 ```
 
-**Ajuste el valor de lectura anticipada**
+**Ajustar el valor de lectura anticipada**
 
 Se recomienda utilizar un valor de 32 para los discos en los que se ejecutan bases de datos MongoDB. Este valor asciende a 16 KB. Puede establecerlo si ejecuta lo siguiente:
 
@@ -467,7 +467,7 @@ Red Hat® Linux® utiliza un algoritmo de administración de memoria denominado 
 
 Puede desactivarla siguiendo el siguiente procedimiento:
 
-1. Abra el `/etc/grub.conf` en el editor de texto que elija.
+1. Abra el archivo `/etc/grub.conf` en el editor de texto que prefiera.
 1. Agregue la línea siguiente al archivo grub.conf:
 
    ```xml
@@ -488,11 +488,11 @@ Puede desactivarla siguiendo el siguiente procedimiento:
 
 >[!NOTE]
 >
->Para obtener más información sobre las páginas enormes transparentes, consulte esto [artículo](https://access.redhat.com/solutions/46111).
+>Para obtener más información sobre las páginas transparentes y enormes, consulte este [artículo](https://access.redhat.com/solutions/46111).
 
 #### Deshabilitar NUMA {#disable-numa}
 
-En la mayoría de las instalaciones en las que NUMA está habilitado, el daemon MongoDB lo desactiva automáticamente si se ejecuta como un servicio desde `/etc/init.d` carpeta.
+En la mayoría de las instalaciones donde NUMA está habilitado, el daemon MongoDB lo deshabilita automáticamente si se ejecuta como un servicio desde la carpeta `/etc/init.d`.
 
 Si este no es el caso, puede deshabilitar NUMA en un nivel de proceso individual. Para deshabilitarlo, ejecute los siguientes comandos:
 
@@ -500,7 +500,7 @@ Si este no es el caso, puede deshabilitar NUMA en un nivel de proceso individual
 numactl --interleave=all <path_to_process>
 ```
 
-Donde `<path_to_process>` es el camino al proceso mongodo.
+Donde `<path_to_process>` es la ruta al proceso mongodo.
 
 A continuación, deshabilite la recuperación de zona ejecutando:
 
@@ -510,25 +510,25 @@ echo 0 > /proc/sys/vm/zone_reclaim_mode
 
 #### Ajuste la configuración de ulimit para el proceso mongood {#tweak-the-ulimit-settings-for-the-mongod-process}
 
-Linux® permite un control configurable sobre la asignación de recursos a través del `ulimit` comando. Esta configuración se puede realizar por usuario o por proceso.
+Linux® permite un control configurable sobre la asignación de recursos mediante el comando `ulimit`. Esta configuración se puede realizar por usuario o por proceso.
 
-Se recomienda configurar ulimit para el proceso mongood según el [Configuración de límite recomendada de MongoDB](https://docs.mongodb.org/manual/reference/ulimit/#recommended-ulimit-settings).
+Se recomienda configurar ulimit para el proceso mongood según la [Configuración de ulimit recomendada de MongoDB](https://docs.mongodb.org/manual/reference/ulimit/#recommended-ulimit-settings).
 
 #### Probar el rendimiento de E/S de MongoDB {#test-mongodb-i-o-performance}
 
-MongoDB proporciona una herramienta llamada `mongoperf` diseñado para probar el rendimiento de E/S. Se recomienda utilizarlo para probar el rendimiento de todas las instancias de MongoDB que conforman su infraestructura.
+MongoDB proporciona una herramienta denominada `mongoperf` que está diseñada para probar el rendimiento de E/S. Se recomienda utilizarlo para probar el rendimiento de todas las instancias de MongoDB que conforman su infraestructura.
 
-Para obtener información sobre cómo utilizar `mongoperf`, vea la [Documentación de MongoDB](https://docs.mongodb.org/manual/reference/program/mongoperf/).
+Para obtener información sobre cómo usar `mongoperf`, vea la [documentación de MongoDB](https://docs.mongodb.org/manual/reference/program/mongoperf/).
 
 >[!NOTE]
 >
->El `mongoperf` es un indicador del rendimiento de MongoDB en la plataforma en la que se ejecuta. Como consecuencia, los resultados no deben considerarse definitivos para el funcionamiento de un sistema de producción.
+>`mongoperf` es un indicador del rendimiento de MongoDB en la plataforma en la que se ejecuta. Como consecuencia, los resultados no deben considerarse definitivos para el funcionamiento de un sistema de producción.
 >
->Para obtener resultados de rendimiento más precisos, puede ejecutar pruebas complementarias con la variable `fio` Herramienta Linux®.
+>Para obtener resultados de rendimiento más precisos, puede ejecutar pruebas complementarias con la herramienta `fio` Linux®.
 
-**Pruebe el rendimiento de lectura en las máquinas virtuales que componen la implementación**
+**Pruebe el rendimiento de lectura en las máquinas virtuales que componen su implementación**
 
-Una vez instalada la herramienta, cambie al directorio de base de datos MongoDB para ejecutar las pruebas. A continuación, inicie la primera prueba ejecutando `mongoperf`con esta configuración:
+Una vez instalada la herramienta, cambie al directorio de base de datos MongoDB para ejecutar las pruebas. A continuación, inicie la primera prueba ejecutando `mongoperf` con esta configuración:
 
 ```shell
 echo "{nThreads:32,fileSizeMB:1000,r:true}" | mongoperf
@@ -536,7 +536,7 @@ echo "{nThreads:32,fileSizeMB:1000,r:true}" | mongoperf
 
 La salida deseada debe alcanzar hasta dos gigabytes por segundo (2 GB/s) y 500.000 IOPS ejecutándose a 32 hilos para todas las instancias de MongoDB.
 
-Ejecute una segunda prueba, esta vez con archivos asignados de memoria, configurando la variable `mmf:true` parámetro:
+Ejecute una segunda prueba, esta vez con archivos asignados en memoria, estableciendo el parámetro `mmf:true`:
 
 ```shell
 echo "{nThreads:32,fileSizeMB:1000,r:true,mmf:true}" | mongoperf
@@ -548,9 +548,9 @@ La salida de la segunda prueba debe ser considerablemente mayor que la primera, 
 >
 >Al realizar las pruebas, compruebe las estadísticas de uso de E/S de las máquinas virtuales en cuestión en el sistema de supervisión del sistema operativo. Si indican valores inferiores al 100 por ciento para las lecturas de E/S, puede haber un problema con la máquina virtual.
 
-**Pruebe el rendimiento de escritura de la instancia principal de MongoDB**
+**Probar el rendimiento de escritura de la instancia principal de MongoDB**
 
-A continuación, compruebe el rendimiento de escritura de E/S de la instancia principal de MongoDB ejecutando `mongoperf` del directorio de base de datos MongoDB con la misma configuración:
+A continuación, compruebe el rendimiento de escritura de E/S de la instancia principal de MongoDB ejecutando `mongoperf` desde el directorio de base de datos de MongoDB con la misma configuración:
 
 ```shell
 echo "{nThreads:32,fileSizeMB:1000,w:true}" | mongoperf
@@ -566,36 +566,36 @@ Si utiliza WMWare ESX para gestionar e implementar sus entornos virtualizados, a
 
 1. Desactivar la ampliación de memoria
 1. Asignación previa y reserva de memoria para las máquinas virtuales que hospedan las bases de datos MongoDB
-1. Utilice el control de E/S de almacenamiento para asignar suficiente E/S a la `mongod` proceso.
-1. Garantizar los recursos de CPU de los equipos que alojan MongoDB mediante la configuración de [Reserva de CPU](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
+1. Utilice el Control de E/S de almacenamiento para asignar suficiente E/S al proceso `mongod`.
+1. Garantizar los recursos de CPU de los equipos que hospedan MongoDB estableciendo [Reserva de CPU](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
 
 1. Considere utilizar controladores de E/S ParaVirtual. <!-- URL is a 404 See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).-->
 
 ### Amazon Web Service {#amazon-web-services}
 
-Para obtener documentación sobre cómo configurar MongoDB con Amazon Web Service, consulte la [Configuración de la integración con AWS](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/) artículo en el sitio web de MongoDB.
+Para obtener documentación sobre cómo configurar MongoDB con Amazon Web Service, consulte el artículo [Configuración de la integración de AWS](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/) en el sitio web de MongoDB.
 
 ## Protección de MongoDB antes de la implementación {#securing-mongodb-before-deployment}
 
-Ver esta publicación en [implementación segura de MongoDB](https://blogs.adobe.com/security/2015/07/securely-deploying-mongodb-3-0.html) para obtener consejos sobre cómo proteger la configuración de las bases de datos antes de la implementación.
+Consulte esta publicación en [Implementación segura de MongoDB](https://blogs.adobe.com/security/2015/07/securely-deploying-mongodb-3-0.html) para obtener consejos sobre cómo proteger la configuración de las bases de datos antes de la implementación.
 
 ## Dispatcher {#dispatcher}
 
 ### Elección del sistema operativo para Dispatcher {#choosing-the-operating-system-for-the-dispatcher}
 
-Para servir correctamente la implementación de MongoDB, el sistema operativo que aloja Dispatcher debe estar en ejecución **Apache httpd** **versión 2.4 o superior.**
+Para ofrecer correctamente su implementación de MongoDB, el sistema operativo que aloja Dispatcher debe ejecutar **Apache httpd** **versión 2.4 o superior.**
 
 Además, asegúrese de que todas las bibliotecas utilizadas en su compilación estén actualizadas para minimizar las implicaciones de seguridad.
 
 ### Configuración de Dispatcher {#dispatcher-configuration}
 
-AEM Una configuración típica de Dispatcher sirve entre diez y 20 veces más el rendimiento de solicitudes de una sola instancia de.
+Una configuración típica de Dispatcher AEM proporciona entre diez y 20 veces más el rendimiento de solicitudes de una sola instancia de.
 
-Como Dispatcher no tiene estado, puede escalarse horizontalmente con facilidad. En algunas implementaciones, se debe restringir el acceso de los autores a ciertos recursos. Se recomienda utilizar una instancia de Dispatcher con las instancias de autor.
+Como el Dispatcher no tiene estado, puede escalarse horizontalmente con facilidad. En algunas implementaciones, se debe restringir el acceso de los autores a ciertos recursos. Se recomienda utilizar una Dispatcher con las instancias de autor.
 
-AEM La ejecución de la ejecución sin un Dispatcher requiere la terminación SSL y el equilibrio de carga que debe realizar otra aplicación. AEM Esto es necesario porque las sesiones deben tener afinidad con la instancia de en la que se crean, un concepto conocido como conexiones fijas. El motivo es garantizar que las actualizaciones del contenido muestren una latencia mínima.
+AEM La ejecución de la ejecución sin un Dispatcher requiere la terminación SSL y el equilibrio de carga para que los realice otra aplicación. AEM Esto es necesario porque las sesiones deben tener afinidad con la instancia de en la que se crean, un concepto conocido como conexiones fijas. El motivo es garantizar que las actualizaciones del contenido muestren una latencia mínima.
 
-Compruebe la [Documentación de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher) para obtener más información sobre cómo configurarlo.
+Consulte la [documentación de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher) para obtener más información sobre cómo configurarla.
 
 ### Configuración adicional {#additional-configuration}
 
@@ -613,7 +613,7 @@ Sin embargo, el uso de este método significa que no hay una manera razonable de
 
 Se garantiza que estas direcciones URL no cambiarán. Cuando el cuerpo del recurso contenido en la URL cambia, los cambios se reflejan en la URL, lo que garantiza que el explorador solicite la versión correcta del recurso.
 
-La configuración predeterminada agrega un selector a HtmlClientLibraryManager. Al ser un selector, el recurso se almacena en caché en Dispatcher con el selector intacto. Además, este selector puede utilizarse para garantizar el comportamiento de caducidad correcto. El selector predeterminado sigue al `lc-.*?-lc` patrón. Las siguientes directivas de configuración httpd de Apache garantizan que todas las solicitudes que coinciden con ese patrón se proporcionen con una hora de caducidad adecuada.
+La configuración predeterminada agrega un selector a HtmlClientLibraryManager. Al ser un selector, el recurso se almacena en caché en Dispatcher con el selector intacto. Además, este selector puede utilizarse para garantizar el comportamiento de caducidad correcto. El selector predeterminado sigue el patrón `lc-.*?-lc`. Las siguientes directivas de configuración httpd de Apache garantizan que todas las solicitudes que coinciden con ese patrón se proporcionen con una hora de caducidad adecuada.
 
 ```xml
 Header set Expires "Tue, 20 Jan 2037 04:20:42 GMT" "expr=(%{REQUEST_STATUS} -eq 200) && (%{REQUEST_URI} =~ /.*lc-.*?-lc.*/)"
@@ -627,7 +627,7 @@ Header unset Pragma "expr=(%{REQUEST_STATUS} -eq 200) && (%{REQUEST_URI} =~ /.*l
 
 Cuando el contenido se envía sin tipo de contenido, muchos exploradores intentan adivinar el tipo de contenido leyendo los primeros bytes. Este método se denomina &quot;olfateo&quot;. El rastreo abre una vulnerabilidad de seguridad, ya que los usuarios que pueden escribir en el repositorio pueden cargar contenido malicioso sin tipo de contenido.
 
-Por este motivo, es aconsejable añadir un `no-sniff` encabezado a recursos proporcionados por Dispatcher. Sin embargo, Dispatcher no almacena en caché los encabezados. AEM Como tal, significa que cualquier contenido servido desde el sistema de archivos local tiene su tipo de contenido determinado por su extensión, en lugar de utilizar el encabezado de tipo de contenido original de su servidor de origen de la.
+Por este motivo, se recomienda agregar un encabezado `no-sniff` a los recursos que proporciona Dispatcher. Sin embargo, Dispatcher no almacena en caché los encabezados. AEM Como tal, significa que cualquier contenido servido desde el sistema de archivos local tiene su tipo de contenido determinado por su extensión, en lugar de utilizar el encabezado de tipo de contenido original de su servidor de origen de la.
 
 No se puede activar ningún fragmento de forma segura si se sabe que la aplicación web nunca proporciona recursos en caché sin un tipo de archivo.
 
@@ -651,21 +651,21 @@ Header setifempty Content-Type application/javascript env=jsonp_request
 
 La configuración predeterminada de Dispatcher permite abrir una directiva de seguridad de contenido, también conocida como CSP. Esta configuración permite que una página cargue recursos de todos los dominios sujetos a las directivas predeterminadas de la zona protegida del explorador.
 
-Es deseable restringir desde dónde se pueden cargar los recursos para evitar cargar código en el motor JavaScript desde servidores externos no fiables o no verificados.
+Es deseable restringir desde dónde se pueden cargar los recursos para evitar cargar código en el motor de JavaScript desde servidores externos no fiables o no verificados.
 
 CSP permite ajustar las directivas. Sin embargo, en una aplicación compleja, los encabezados CSP deben desarrollarse con cuidado, ya que las políticas demasiado restrictivas pueden romper partes de la interfaz de usuario.
 
 >[!NOTE]
 >
->Para obtener más información sobre cómo funciona, consulte la [Página de OWASP sobre Política de seguridad de contenido](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Para obtener más información sobre cómo funciona, consulte la [Página de OWASP sobre la Política de seguridad de contenido](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Tamaño {#sizing}
 
-Para obtener más información sobre el tamaño, consulte la [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md).
+Para obtener más información sobre el tamaño, consulte [Instrucciones de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md).
 
 ### Optimización de rendimiento de MongoDB {#mongodb-performance-optimization}
 
-Para obtener información genérica sobre el rendimiento de MongoDB, consulte [Análisis del rendimiento de MongoDB](https://docs.mongodb.org/manual/administration/analyzing-mongodb-performance/).
+Para obtener información genérica sobre el rendimiento de MongoDB, vea [Análisis del rendimiento de MongoDB](https://docs.mongodb.org/manual/administration/analyzing-mongodb-performance/).
 
 ## Limitaciones conocidas {#known-limitations}
 
@@ -677,8 +677,8 @@ Para solucionar este problema, asegúrese de ejecutar primero la instalación co
 
 ### Longitud del nombre de página {#page-name-length}
 
-AEM Si se está ejecutando en una implementación del administrador de persistencia MongoMK, [los nombres de las páginas están limitados a 150 caracteres.](/help/sites-authoring/managing-pages.md)
+AEM Si se está ejecutando una implementación del administrador de persistencia MongoMK, [los nombres de página están limitados a 150 caracteres.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >
->Consulte la [Documentación de MongoDB](https://docs.mongodb.com/manual/reference/limits/) para que pueda familiarizarse con las limitaciones y umbrales conocidos de MongoDB.
+>Consulte la [documentación de MongoDB](https://docs.mongodb.com/manual/reference/limits/) para familiarizarse con las limitaciones y umbrales conocidos de MongoDB.

@@ -21,13 +21,13 @@ ht-degree: 0%
 
 AEM Cuando se instala la instancia de forma predeterminada, una selección de componentes está disponible inmediatamente en la barra de tareas.
 
-Además de estos, también hay otros componentes disponibles. Puede utilizar el modo Diseño para [Habilitar/deshabilitar estos componentes](#enabledisablecomponentsusingdesignmode). Cuando esté activada y ubicada en la página, puede utilizar el modo Diseño para lo siguiente [configurar aspectos del diseño de componentes](#configuringcomponentsusingdesignmode) editando los parámetros de atributo.
+Además de estos, también hay otros componentes disponibles. Puede usar el modo Diseño para [habilitar o deshabilitar estos componentes](#enabledisablecomponentsusingdesignmode). Cuando esté habilitado y ubicado en su página, puede usar el modo de diseño para [configurar aspectos del diseño del componente](#configuringcomponentsusingdesignmode) al editar los parámetros de atributo.
 
 >[!NOTE]
 >
->Se debe tener cuidado al editar estos componentes. La configuración de diseño suele ser parte integral del diseño de todo el sitio web, por lo que solo debe cambiarla alguien con los privilegios (y experiencia) adecuados, a menudo un administrador o desarrollador. Consulte [Desarrollo de componentes](/help/sites-developing/components.md) para obtener más información.
+>Se debe tener cuidado al editar estos componentes. La configuración de diseño suele ser parte integral del diseño de todo el sitio web, por lo que solo debe cambiarla alguien con los privilegios (y experiencia) adecuados, a menudo un administrador o desarrollador. Consulte [Desarrollar componentes](/help/sites-developing/components.md) para obtener más información.
 
-En realidad, esto implica agregar o quitar los componentes permitidos en el sistema de párrafos de la página. El sistema de párrafos ( `parsys`) es un componente compuesto que contiene todos los demás componentes de párrafo. El sistema de párrafos permite a los autores añadir componentes de diferentes tipos a una página, ya que contiene todos los demás componentes de párrafo. Cada tipo de párrafo se representa como un componente.
+En realidad, esto implica agregar o quitar los componentes permitidos en el sistema de párrafos de la página. El sistema de párrafos (`parsys`) es un componente compuesto que contiene todos los demás componentes de párrafo. El sistema de párrafos permite a los autores añadir componentes de diferentes tipos a una página, ya que contiene todos los demás componentes de párrafo. Cada tipo de párrafo se representa como un componente.
 
 Por ejemplo, el contenido de una página de producto puede contener un sistema de párrafos que contenga lo siguiente:
 
@@ -38,7 +38,7 @@ Por ejemplo, el contenido de una página de producto puede contener un sistema d
 
 >[!NOTE]
 >
->Consulte [Desarrollo de componentes](/help/sites-developing/components.md#paragraphsystem) y [Directrices para el uso de plantillas y componentes](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) para obtener más información acerca de `parsys`.
+>Consulte [Desarrollar componentes](/help/sites-developing/components.md#paragraphsystem) y [Directrices para usar plantillas y componentes](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) para obtener más información sobre `parsys`.
 
 ## Habilitar/deshabilitar componentes {#enable-disable-components}
 
@@ -48,7 +48,7 @@ En el modo Diseño, la barra de tareas se minimiza y tiene la posibilidad de con
 
    ![Modo de diseño](do-not-localize/chlimage_1.png)
 
-1. Clic **Editar** en el sistema de párrafos (**Diseño del par**).
+1. Haga clic en **Editar** en el sistema de párrafos (**Diseño de par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -64,19 +64,19 @@ En el modo Diseño, la barra de tareas se minimiza y tiene la posibilidad de con
 
 ## Configuración del diseño de un componente {#configuring-the-design-of-a-component}
 
-En el modo Diseño, también puede configurar atributos para los componentes individuales. Cada componente tiene sus propios parámetros. En el siguiente ejemplo se muestra el **Imagen** componente:
+En el modo Diseño, también puede configurar atributos para los componentes individuales. Cada componente tiene sus propios parámetros. El siguiente ejemplo muestra el componente **Image**:
 
 1. Para entrar en el modo Diseño, abra una página para editarla y utilice el icono del Sidekick:
 
-   ![Modo de diseño: Sidekick](do-not-localize/chlimage_1-1.png)
+   ![Modo de diseño - Sidekick](do-not-localize/chlimage_1-1.png)
 
 1. Puede configurar el diseño de los componentes.
 
-   Por ejemplo, si hace clic en **Editar** en el componente Imagen (**Diseño de la imagen**) puede configurar los parámetros específicos del componente:
+   Por ejemplo, si hace clic en **Editar** en el componente Imagen (**Diseño de la imagen**), puede configurar los parámetros específicos del componente:
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
-1. Clic **OK** para guardar los cambios.
+1. Haga clic en **Aceptar** para guardar los cambios.
 
 1. El Sidekick minimiza en modo de diseño. Al hacer clic en la flecha, puede maximizar el Sidekick y volver al modo de edición:
 

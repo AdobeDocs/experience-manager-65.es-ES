@@ -65,7 +65,7 @@ La siguiente tabla especifica la compatibilidad de funciones proporcionada para 
   </tr>
   <tr>
    <td>API de scripts XFA</td>
-   <td>Admite las construcciones de scripts XFA más utilizadas. Para ver una lista detallada de las construcciones compatibles, consulte <a href="/help/forms/using/scripting-support.md">compatibilidad con scripts</a>.</td>
+   <td>Admite las construcciones de scripts XFA más utilizadas. Para obtener una lista detallada de las construcciones compatibles, consulte <a href="/help/forms/using/scripting-support.md">compatibilidad con scripts</a>.</td>
    <td>Admite todas las construcciones de scripts XFA.</td>
   </tr>
   <tr>

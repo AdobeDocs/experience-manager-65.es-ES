@@ -52,6 +52,6 @@ Veamos un caso de uso en el que debe crear una secuencia para los pasos de relle
    * **Confirmación**: contiene el componente **Resumen** que muestra un mensaje que confirma el envío del formulario una vez que el usuario lo ha firmado y llega al paso Confirmación (Resumen) de la secuencia. Los autores pueden configurar el texto del componente Resumen, mostrar un mensaje de agradecimiento, mostrar un vínculo al PDF generado, etc.
 
 1. Establezca el diseño del panel raíz como **[!UICONTROL Asistente]**.
-1. Complete los pasos restantes para poder crear la plantilla de formulario. Consulte [Crear una plantilla de formulario adaptable personalizada](../../forms/using/custom-adaptive-forms-templates.md).
+1. Complete los pasos restantes para poder crear la plantilla de formulario. Ver [Crear una plantilla de formulario adaptable personalizada](../../forms/using/custom-adaptive-forms-templates.md).
 
 Una vez definida la secuencia del formulario en la plantilla de formulario, puede utilizarla para crear formularios que tengan la estructura básica definida como la secuencia en contexto. Siempre puede personalizar el formulario para adaptarlo a sus necesidades.

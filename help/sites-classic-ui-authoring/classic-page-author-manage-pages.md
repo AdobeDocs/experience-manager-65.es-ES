@@ -22,7 +22,7 @@ En esta sección se describe cómo crear y administrar páginas con Adobe Experi
 
 >[!NOTE]
 >
->Su cuenta necesita el [derechos de acceso adecuados](/help/sites-administering/security.md) y [permissions](/help/sites-administering/security.md#permissions) para realizar acciones en páginas como, por ejemplo, crear, copiar, mover, editar o eliminar.
+>Su cuenta necesita los [derechos de acceso apropiados](/help/sites-administering/security.md) y [permisos](/help/sites-administering/security.md#permissions) para realizar acciones en las páginas como, por ejemplo, crear, copiar, mover, editar o eliminar.
 >
 >Si se producen problemas, le sugerimos que se ponga en contacto con el administrador del sistema.
 
@@ -37,17 +37,17 @@ También puede usar [carpetas](#creating-a-new-folder) para organizar el conteni
 
 La estructura de un sitio web se puede considerar como una *estructura de árbol* que contiene las páginas de contenido. Los nombres de estas páginas de contenido se utilizan para formar las direcciones URL, mientras que el título se muestra cuando se visualiza el contenido de la página.
 
-A continuación se muestra un extracto del sitio de Geometrixx; donde, por ejemplo, la variable `Triangle` Se accederá a esta página:
+A continuación se muestra un extracto del sitio de Geometrixx; donde, por ejemplo, se tendrá acceso a la página `Triangle`:
 
 * Entorno de creación
 
   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-* Entorno de publicación
+* Entorno de Publish
 
   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-  Según la configuración de la instancia, utilice `/content` puede ser opcional en el entorno de publicación.
+  Según la configuración de la instancia, el uso de `/content` podría ser opcional en el entorno de publicación.
 
 ```xml
   /content
@@ -69,7 +69,7 @@ A continuación se muestra un extracto del sitio de Geometrixx; donde, por ejemp
     /...
 ```
 
-Esta estructura se puede ver desde la consola Sitios web, que puede utilizar para [navegar por la estructura de árbol](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Esta estructura se puede ver desde la consola Sitios web, que puede usar para [navegar por la estructura de árbol](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -87,7 +87,7 @@ Al crear una página, hay dos campos de claves:
    * Se usa para generar la URI.
    * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se obtiene a partir del título.
 
-AEM Al crear una página, se debe hacer lo siguiente [valida el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
+AEM AEM Al crear una página, [valida el nombre de la página según las convenciones ](/help/sites-developing/naming-conventions.md) impuestas por el JCR y el de la página de inicio de sesión de la página (JCR), que son las siguientes:
 
 La implementación y la lista de caracteres permitidos difieren ligeramente según la interfaz de usuario (es más extensa para la interfaz con capacidad táctil), pero el mínimo permitido es:
 
@@ -97,11 +97,11 @@ La implementación y la lista de caracteres permitidos difieren ligeramente seg�
 * _ (guion bajo)
 * `-` (guion/signo menos)
 
-Utilice únicamente estos caracteres si desea asegurarse de que se aceptan o utilizan (si necesita obtener todos los detalles de todos los caracteres permitidos, consulte ) [las convenciones de nomenclatura](/help/sites-developing/naming-conventions.md)).
+Use solo estos caracteres si desea asegurarse de que se aceptan o utilizan (si necesita detalles completos de todos los caracteres permitidos, consulte [las convenciones de nomenclatura](/help/sites-developing/naming-conventions.md)).
 
 #### Título {#title}
 
-Si proporciona solo una página **Título** AEM al crear una página, se deriva la página de forma de **Nombre** de esta cadena y [valide el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR. En ambas IU, una **Título** se aceptará el campo que contenga caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
+AEM AEM Si proporciona solamente una página **Title** al crear una página, deriva la página **Name** de esta cadena y [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por los criterios de y JCR. En el caso de que la página se haya creado, la página se convierte en una página con el nombre Name de esta cadena y se define como {JCR}. En ambas interfaces se acepta un campo **Title** que contiene caracteres no válidos, pero se sustituirán los caracteres no válidos en el nombre derivado. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
@@ -110,12 +110,12 @@ Si proporciona solo una página **Título** AEM al crear una página, se deriva 
 
 #### Nombre {#name}
 
-Si proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
+AEM AEM Si proporciona una página **Name** al crear una página, [valida el nombre según las convenciones ](/help/sites-developing/naming-conventions.md) impuestas por el JCR y el.
 
-En la IU clásica puede **no puede introducir caracteres no válidos** en el **Nombre** field.
+En la IU clásica **no puede escribir caracteres no válidos** en el campo **Nombre**.
 
 >[!NOTE]
->En la IU táctil puede hacer lo siguiente **no se pueden enviar caracteres no válidos** en el **Nombre** field. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
+>En la IU táctil, **no puede enviar caracteres no válidos** en el campo **Nombre**. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de 
 * Vídeo
 * muchos más
 
-Una vez que haya creado y abierto una página, puede [añadir contenido mediante los componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponible en el [compinche](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Una vez que haya creado y abierto una página, puede [agregar contenido mediante los componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponibles en la [barra de tareas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Administrar páginas {#managing-pages}
 
@@ -155,23 +155,23 @@ Una vez que haya creado y abierto una página, puede [añadir contenido mediante
 
 A menos que se hayan creado todas las páginas por adelantado, antes de empezar a crear contenido, debe crear una página:
 
-1. Desde el **Sitios web** , seleccione el nivel en el que desea crear una página.
+1. En la consola **Sitios web**, seleccione el nivel en el que desea crear una página.
 
-   En el ejemplo siguiente, se crea una página en el nivel **Productos** - se muestra en el panel izquierdo; el panel derecho muestra páginas que ya existen en el nivel inferior **Productos**.
+   En el ejemplo siguiente, está creando una página en el nivel **Productos**, que se muestra en el panel izquierdo; el panel derecho muestra páginas que ya existen en el nivel bajo **Productos**.
 
    ![screen_shot_2012-02-15at114413am](assets/screen_shot_2012-02-15at114413am.png)
 
-1. En el **Nuevo...** (haga clic en la flecha situada junto a **Nuevo...**), seleccione **Nueva página...**. El **Crear página** se abre.
+1. En el menú **Nuevo...** (haga clic en la flecha junto a **Nuevo...**), seleccione **Nueva página...**. Se abre la ventana **Crear página**.
 
-   Clic **Nuevo...** también actúa como un acceso directo a la variable **Nueva página...** opción.
+   Hacer clic en **Nuevo...** también actúa como acceso directo a la opción **Nueva página...**.
 
-1. El **Crear página** El cuadro de diálogo le permite:
+1. El cuadro de diálogo **Crear página** le permite:
 
-   * Proporcione un **Título**; esto se muestra al usuario.
-   * Proporcione un **Nombre**; se utiliza para generar el URI. Si no se especifica, el nombre se derivará del título.
+   * Proporcione un **Título**; esto se mostrará al usuario.
+   * Proporcione un **Nombre**; se usa para generar el URI. Si no se especifica, el nombre se derivará del título.
 
-      * Si proporciona una página **Nombre** AEM al crear una página, se debe hacer lo siguiente [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por los JCR y los de la.
-      * En la IU clásica puede: **no puede introducir caracteres no válidos** en el **Nombre** field.
+      * AEM AEM Si proporciona una página **Name** al crear una página, [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por el JCR y el servicio de identidad de la página de usuario de la página (JCR) de la página valida el nombre de acuerdo con las convenciones  impuestas por el JCR y el servicio de identidad de la página de usuario de la página de la página de destino.
+      * En la IU clásica, **no puede escribir caracteres no válidos** en el campo **Nombre**.
 
    * Haga clic en la plantilla que desee utilizar para crear la nueva página.
 
@@ -181,29 +181,29 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
    >
    >Consulte [Convenciones de asignación de nombres a páginas](#page-naming-conventions).
 
-   La información mínima necesaria para crear una página es la siguiente **Título** y la plantilla requerida.
+   La información mínima requerida para crear una página es **Title** y la plantilla requerida.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
    >[!NOTE]
    >
-   >Si desea utilizar caracteres Unicode en las direcciones URL, establezca el Alias ( `sling:alias`) propiedad ([propiedades de página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)).
+   >Si desea usar caracteres Unicode en las direcciones URL, establezca la propiedad Alias (`sling:alias`) ([propiedades de página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)).
 
-1. Clic **Crear** para crear la página. Volverá a la **Sitios web** consola en la que puede ver una entrada para la nueva página.
+1. Haga clic en **Crear** para crear la página. Vuelve a la consola **Sitios web**, donde podrá ver una entrada para la nueva página.
 
    La consola proporciona información sobre la página (por ejemplo, cuándo se editó por última vez y quién la modificó), que se actualiza según sea necesario.
 
    >[!NOTE]
    >
-   >También puede crear una página cuando esté editando una página existente. Uso de **Crear página secundaria** desde el **Página** de la barra de tareas crea una página directamente debajo de la página que se está editando.
+   >También puede crear una página cuando esté editando una página existente. Si usa **Crear página secundaria** de la ficha **Página** de la barra de tareas, se creará una página directamente debajo de la página que se está editando.
 
 ### Abrir una página para su edición {#opening-a-page-for-editing}
 
-Puede abrir la página para que [editado](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) mediante uno de varios métodos:
+Puede abrir la página que desea [editar](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) mediante uno de estos métodos:
 
-* Desde **Sitios web** consola, puede **doble clic** Abra la entrada de página para abrirla y editarla.
+* Desde la consola **Sitios web**, puede **hacer doble clic** en la entrada de página para abrirla y editarla.
 
-* Desde **Sitios web** consola, puede **clic con el botón derecho** (menú contextual) Seleccione el elemento de página y, a continuación, seleccione **Abrir** en el menú.
+* Desde la consola **Sitios web**, puede **hacer clic con el botón derecho** (menú contextual) en el elemento de página y, a continuación, seleccionar **Abrir** en el menú.
 
 * Una vez abierta una página, puede desplazarse a otras páginas del sitio (para editarlas) haciendo clic en los hipervínculos.
 
@@ -214,18 +214,18 @@ Al copiar, puede copiar lo siguiente:
 * una sola página
 * una página junto con todas las subpáginas
 
-1. Desde el **Sitios web** , seleccione la página que desee copiar.
+1. En la consola **Sitios web**, seleccione la página que desee copiar.
 
    >[!NOTE]
    >
    >En este momento, no es relevante si desea copiar una sola página o las subpáginas subyacentes.
 
-1. Clic **Copiar**.
+1. Haga clic en **Copiar**.
 
 1. Vaya a la nueva ubicación y haga clic en:
 
-   * **Pegar** : para pegar la página junto con todas las subpáginas
-   * **Mayús + Pegar** - para pegar solo la página seleccionada
+   * **Pegar**: para pegar la página junto con todas las subpáginas
+   * **Mayús + Pegar**: para pegar solo la página seleccionada
 
    Las páginas se pegan en la nueva ubicación.
 
@@ -235,7 +235,7 @@ Al copiar, puede copiar lo siguiente:
 
    >[!NOTE]
    >
-   >También puede utilizar **Copiar página** desde el **Página** pestaña de la barra de tareas. Se abrirá un cuadro de diálogo en el que puede especificar el destino, etc.
+   >También puede usar **Copiar página** de la ficha **Página** de la barra de tareas. Se abrirá un cuadro de diálogo en el que puede especificar el destino, etc.
 
 ### Mover página o cambiarle el nombre {#moving-or-renaming-page}
 
@@ -255,11 +255,11 @@ Para mover o cambiar el nombre de una página:
 
 1. Existen varios métodos para activar un movimiento:
 
-   * Desde el **Sitios web** consola, haga clic en para seleccionar la página y, a continuación, seleccione **Mover...**
-   * Desde el **Sitios web** consola, también puede seleccionar el elemento de página y, a continuación, **clic con el botón derecho** y seleccione **Mover...**
-   * Al editar una página, puede seleccionar **Mover página** desde el **Página** pestaña de la barra de tareas.
+   * En la consola **Sitios web**, haga clic para seleccionar la página y luego seleccione **Mover...**
+   * Desde la consola **Sitios web**, también puede seleccionar el elemento de página, luego **hacer clic con el botón derecho** y seleccionar **Mover...**
+   * Al editar una página, puede seleccionar **Mover página** de la pestaña **Página** de la barra de tareas.
 
-1. El **Mover** se abre la ventana; aquí puede especificar una nueva ubicación, un nuevo nombre para la página o ambos.
+1. Se abre la ventana **Mover**; aquí puede especificar una nueva ubicación, un nuevo nombre para la página o ambos.
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
@@ -281,7 +281,7 @@ Para mover o cambiar el nombre de una página:
 
      La etiqueta de la página actual se muestra de forma predeterminada. Especifique la nueva etiqueta de página, si es necesario.
 
-   * **Ajuste**
+   * **Ajustar**
 
      AEM Actualice los vínculos de la página enumerada que apunten a la página desplazada: por ejemplo, si la página A tiene vínculos a la página B, ajusta los vínculos de la página A en caso de que mueva la página B, por ejemplo, para la página B.
 
@@ -293,9 +293,9 @@ Para mover o cambiar el nombre de una página:
 
    >[!NOTE]
    >
-   >Si la página ya estaba activada, al mover la página se desactivará automáticamente. De forma predeterminada, se reactivará cuando se complete el movimiento, pero esto puede cambiar desmarcando la opción **Volver a publicar** para la página en el **Mover** ventana.
+   >Si la página ya estaba activada, al mover la página se desactivará automáticamente. De manera predeterminada, se reactivará cuando se complete el movimiento, pero esto puede cambiar si se desmarca el campo **Volver a publicar** para la página en la ventana **Mover**.
 
-1. Clic **Mover**. Se requiere confirmación. Clic **OK** para confirmar.
+1. Haga clic en **Mover**. Se requiere confirmación. Haga clic en **Aceptar** para confirmar.
 
    >[!NOTE]
    >
@@ -305,15 +305,15 @@ Para mover o cambiar el nombre de una página:
 
 1. Puede eliminar una página desde varias ubicaciones:
 
-   * Dentro de **Sitios web** consola, haga clic en para seleccionar la página, haga clic con el botón derecho y seleccione **Eliminar** en el menú resultante.
-   * Dentro de **Sitios web** consola, haga clic en para seleccionar la página y, a continuación, seleccione **Eliminar** en el menú de la barra de herramientas.
-   * En la barra de tareas utilice **Página** pestaña para seleccionar **Eliminar página** : esto elimina la página que está abierta actualmente.
+   * En la consola **Sitios web**, haga clic para seleccionar la página, luego haga clic con el botón derecho y seleccione **Eliminar** en el menú resultante.
+   * En la consola **Sitios web**, haga clic para seleccionar la página y, a continuación, seleccione **Eliminar** en el menú de la barra de herramientas.
+   * En la barra de tareas, use la pestaña **Página** para seleccionar **Eliminar página**; esto eliminará la página que está abierta actualmente.
 
 1. Después de seleccionar eliminar una página, debe confirmar la solicitud, ya que la acción no se puede deshacer.
 
    >[!NOTE]
    >
-   >Después de la eliminación, si la página se ha publicado, puede restaurar la versión más reciente (o una específica), pero es posible que no tenga exactamente el mismo contenido que la última versión si se han realizado más modificaciones. Consulte [Cómo Restaurar Páginas](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages) para obtener más información.
+   >Después de la eliminación, si la página se ha publicado, puede restaurar la versión más reciente (o una específica), pero es posible que no tenga exactamente el mismo contenido que la última versión si se han realizado más modificaciones. Consulte [Cómo restaurar páginas](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages) para obtener más información.
 
 >[!NOTE]
 >
@@ -329,9 +329,9 @@ Puede [bloquear/desbloquear una página](/help/sites-classic-ui-authoring/classi
 >
 >Las carpetas también están sujetas a las [Convenciones de asignación de nombres a páginas](#page-naming-conventions) al especificar el nuevo nombre de carpeta.
 
-1. Abra el **Sitios web** y vaya a la ubicación requerida.
-1. En el **Nuevo...** (haga clic en la flecha situada junto a **Nuevo...**), seleccione **Nueva carpeta...**.
-1. El **Crear carpeta** se abre el cuadro de diálogo. Aquí puede indicar el **Nombre** y el **Título**:
+1. Abra la consola **Sitios web** y vaya a la ubicación requerida.
+1. En el menú **Nuevo...** (haga clic en la flecha junto a **Nuevo...**), seleccione **Nueva carpeta...**.
+1. Se abre el cuadro de diálogo **Crear carpeta**. Aquí puede indicar el **Nombre** y el **Título**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

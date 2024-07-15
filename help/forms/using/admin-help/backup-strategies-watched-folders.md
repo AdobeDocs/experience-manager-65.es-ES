@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Este contenido describe cómo las carpetas vigiladas se ven afectadas por diferentes escenarios de copia de seguridad y recuperación, las limitaciones y los resultados de estos escenarios y cómo minimizar la pérdida de datos.
 
-*Carpeta inspeccionada* es una aplicación basada en el sistema de archivos que invoca operaciones de servicio configuradas que manipulan el archivo en una de las siguientes carpetas de la jerarquía de carpetas vigilada:
+*La carpeta inspeccionada* es una aplicación basada en el sistema de archivos que invoca operaciones de servicio configuradas que manipulan el archivo en una de las siguientes carpetas de la jerarquía de carpetas inspeccionadas:
 
 * Entrada
 * Escenario
@@ -28,7 +28,7 @@ Este contenido describe cómo las carpetas vigiladas se ven afectadas por difere
 * Error
 * Conservar
 
-Un usuario o una aplicación cliente suelta primero el archivo o la carpeta en la carpeta de entrada. A continuación, la operación de servicio mueve el archivo a la carpeta de fase para su procesamiento. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en la carpeta de salida. Los archivos de origen procesados correctamente se mueven a la carpeta de conservación y los archivos de procesamiento erróneos se mueven a la carpeta de errores. Si la variable `Preserve On Failure` para la carpeta vigilada está activada, los archivos de origen procesados con error se mueven a la carpeta de conservación. (Consulte [Configurar extremos de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
+Un usuario o una aplicación cliente suelta primero el archivo o la carpeta en la carpeta de entrada. A continuación, la operación de servicio mueve el archivo a la carpeta de fase para su procesamiento. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en la carpeta de salida. Los archivos de origen procesados correctamente se mueven a la carpeta de conservación y los archivos de procesamiento erróneos se mueven a la carpeta de errores. Cuando el atributo `Preserve On Failure` de la carpeta vigilada está habilitado, los archivos de origen procesados con errores se mueven a la carpeta de conservación. (Consulte [Configuración de puntos finales de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)).
 
 Puede realizar una copia de seguridad de las carpetas vigiladas realizando una copia de seguridad del sistema de archivos.
 
@@ -38,7 +38,7 @@ Puede realizar una copia de seguridad de las carpetas vigiladas realizando una c
 
 ## Cómo funcionan las carpetas vigiladas {#how-watched-folders-work}
 
-Este contenido describe el proceso de manipulación de archivos de carpetas inspeccionadas. Es importante comprender este proceso antes de desarrollar un plan de recuperación. En este ejemplo, la variable `Preserve On Failure` el atributo para la carpeta vigilada está habilitado. Los archivos se procesan en el orden en que llegan.
+Este contenido describe el proceso de manipulación de archivos de carpetas inspeccionadas. Es importante comprender este proceso antes de desarrollar un plan de recuperación. En este ejemplo, el atributo `Preserve On Failure` de la carpeta vigilada está habilitado. Los archivos se procesan en el orden en que llegan.
 
 En la tabla siguiente se describe la manipulación de cinco archivos de ejemplo (archivo1, archivo2, archivo3, archivo4, archivo5) a lo largo del proceso. En la tabla, el eje x representa el tiempo, como Tiempo 1 o T1, y el eje y representa las carpetas dentro de la jerarquía de carpetas vigilada, como Entrada.
 
@@ -113,7 +113,7 @@ El siguiente texto describe la manipulación de archivos cada vez:
 
 **T1:** Los cuatro archivos de ejemplo se colocan en la carpeta de entrada.
 
-**T2:** La operación de servicio mueve file1 a la carpeta de fase para su manipulación.
+**T2:** La operación de servicio mueve el archivo1 a la carpeta de fase para su manipulación.
 
 **T3:** La operación de servicio mueve file2 a la carpeta de fase para su manipulación. Coloca los resultados de archivo1 en la carpeta de salida y mueve archivo1 a la carpeta de conservación.
 
@@ -137,7 +137,7 @@ Por ejemplo, si se realiza una copia de seguridad en el momento T1 y el servidor
 
 Si se ha realizado una copia de seguridad más reciente, puede restaurar los archivos. Al restaurar los archivos, tenga en cuenta en qué carpeta de jerarquía de carpetas inspeccionada reside el archivo actual:
 
-**Escenario:** Los archivos de esta carpeta se vuelven a procesar después de restaurar la carpeta vigilada.
+**Fase:** Los archivos de esta carpeta se procesarán de nuevo una vez restaurada la carpeta vigilada.
 
 **Entrada:** Los archivos de esta carpeta se vuelven a procesar después de restaurar la carpeta vigilada.
 
@@ -154,16 +154,16 @@ Las siguientes estrategias pueden minimizar la pérdida de datos de la carpeta d
 * Realice copias de seguridad de las carpetas de resultados y errores con frecuencia, por ejemplo, cada hora, para evitar la pérdida de archivos de resultados y errores.
 * Haga una copia de seguridad de los archivos de entrada en una carpeta que no sea la carpeta vigilada. Esto garantiza la disponibilidad del archivo después de la recuperación en caso de que no pueda encontrar los archivos en la carpeta de salida o de error. Asegúrese de que el esquema de nomenclatura de archivos sea coherente.
 
-  Por ejemplo, si guarda la salida con `%F.`*extensión*, el archivo de salida tendrá el mismo nombre que el archivo de entrada. Esto le ayuda a determinar qué archivos de entrada se manipulan y cuáles se deben volver a enviar. Si sólo ve archivo1_out en la carpeta de resultados y no archivo2_out, archivo3_out y archivo4_out, debe volver a enviar archivo2, archivo3 y archivo4.
+  Por ejemplo, si está guardando la salida con `%F.`*extensión*, el archivo de salida tendrá el mismo nombre que el archivo de entrada. Esto le ayuda a determinar qué archivos de entrada se manipulan y cuáles se deben volver a enviar. Si sólo ve archivo1_out en la carpeta de resultados y no archivo2_out, archivo3_out y archivo4_out, debe volver a enviar archivo2, archivo3 y archivo4.
 
 * Si la copia de seguridad de la carpeta inspeccionada que está disponible es anterior al tiempo que tarda en procesar el trabajo, debe permitir al sistema crear una carpeta inspeccionada y colocar automáticamente los archivos en la carpeta de entrada.
 * Si la última copia de seguridad disponible no es lo suficientemente reciente, el tiempo de copia de seguridad es menor que el tiempo que tarda en procesar los archivos y se restaura la carpeta vigilada, el archivo se manipuló en una de las siguientes fases diferentes:
 
-   * **Fase 1:** En la carpeta de entrada
-   * **Fase 2:** Se ha copiado en la carpeta de fase, pero el proceso aún no se ha invocado
-   * **Fase 3:** Se copia en la carpeta de fase y se invoca el proceso
-   * **Fase 4:** Manipulación en curso
-   * **Fase 5:** Resultados devueltos
+   * **Fase 1:** en la carpeta de entrada
+   * **Fase 2:** Se copió en la carpeta de fase, pero el proceso aún no se ha invocado
+   * **Fase 3:** copiado en la carpeta de fase y se invoca el proceso
+   * **Fase 4:** manipulación en curso
+   * **Fase 5:** resultados devueltos
 
   Si los archivos se encuentran en la fase 1, se manipularán. Si los archivos se encuentran en las fases 2 o 3, colóquelos en la carpeta de entrada para que la manipulación tenga lugar de nuevo.
 

@@ -18,9 +18,9 @@ ht-degree: 62%
 
 # Diseño adaptable{#responsive-layout}
 
-AEM le permite tener un diseño adaptable para las páginas mediante el uso de la variable **Contenedor de diseño** componente.
+AEM le permite tener un diseño adaptable para sus páginas mediante el componente **Contenedor de diseño**.
 
-Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se utiliza junto con el [**Diseño** modo](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar su diseño interactivo en función del dispositivo.
+Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se usa junto con el modo [**Diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar su diseño interactivo en función del dispositivo.
 
 El contenedor de diseño:
 
@@ -62,11 +62,11 @@ En función del proyecto, el contenedor de diseño se puede utilizar como sistem
 
 >[!NOTE]
 >
->El Adobe proporciona [Documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) AEM AEM del diseño interactivo como referencia que se puede dar a los desarrolladores de front-end para que puedan utilizar la cuadrícula de la fuera de la red de la interfaz de usuario de, por ejemplo, al crear maquetas de HTML AEM estáticos para un sitio futuro en el que se vaya a realizar un seguimiento de la interfaz de usuario de la interfaz de usuario de la aplicación de red.
+>El Adobe AEM AEM proporciona [documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del diseño interactivo como referencia que se puede proporcionar a los desarrolladores de interfaces de usuario, lo que les permite usar la cuadrícula de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de GitHub, por ejemplo, al crear maquetas de HTML AEM estáticos para un sitio de interfaz de usuario en el futuro. El diseño de la interfaz de usuario de GitHub se puede proporcionar a los desarrolladores de interfaces de usuario de usuario de GitHub como una referencia que les permita usar la cuadrícula de la interfaz de usuario de un sitio en el futuro.
 
 >[!NOTE]
 >
->El uso de los mecanismos anteriores se habilita en la configuración de la plantilla. Consulte [Configuración del diseño interactivo](/help/sites-administering/configuring-responsive-layout.md) para obtener más información.
+>El uso de los mecanismos anteriores se habilita en la configuración de la plantilla. Consulte [Configuración de un diseño interactivo](/help/sites-administering/configuring-responsive-layout.md) para obtener más información.
 
 ## Definiciones de diseños, emulación de dispositivos y puntos de interrupción {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -90,7 +90,7 @@ El dispositivo **Escritorio** no tiene una anchura específica y está relaciona
 
 Al seleccionar en el emulador un dispositivo específico para emular y definir el diseño, el punto de interrupción relacionado también quedará resaltado. Cualquier cambio de diseño que realice se aplicará a otros dispositivos a los que se aplique el punto de interrupción, es decir, cualquier dispositivo situado a la izquierda del marcador del punto de interrupción activo, pero antes del marcador del siguiente punto de interrupción.
 
-Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una anchura de 540 píxeles) para emulación y diseño, se activará también el punto de interrupción **Teléfono** (definido como 768 píxeles). Cualquier cambio de diseño que realice en **IPHONE 6** será aplicable a otros dispositivos bajo el **Teléfonos** punto de interrupción, como **IPHONE 5** (definido como 320 píxeles).
+Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una anchura de 540 píxeles) para emulación y diseño, se activará también el punto de interrupción **Teléfono** (definido como 768 píxeles). Cualquier cambio de diseño que hagas en **iPhone 6** se aplicará a otros dispositivos bajo el punto de interrupción de **Phones**, como **iPhone 5** (definido como 320 píxeles).
 
 ![screen_shot_2018-03-23at084058](assets/screen_shot_2018-03-23at084058.png)
 
@@ -110,7 +110,7 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
-   * **Rotar dispositivo** : Permite girar un dispositivo desde la orientación vertical (vertical) a la horizontal (horizontal) y a la inversa.
+   * **Rotar dispositivo**: permite girar un dispositivo desde la orientación vertical (vertical) a la horizontal (horizontal) y a la inversa.
 
      ![Rotar dispositivo](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotar dispositivo](do-not-localize/screen_shot_2018-03-23at084637.png)
 
@@ -132,7 +132,7 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * La línea discontinua azul representa el *doblar* para el dispositivo seleccionado (aquí un **IPHONE 6**).
+   * La línea discontinua azul representa el *pliegue* para el dispositivo seleccionado (aquí un **iPhone 6**).
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
@@ -150,7 +150,7 @@ Un **contenedor de diseño** es un sistema de párrafos que:
 
 >[!NOTE]
 >
->Si no está disponible, la variable **Contenedor de diseño** debe ser explícitamente [activado para un sistema de párrafos o una página](/help/sites-administering/configuring-responsive-layout.md) (por ejemplo, utilizando [**Diseño** modo](/help/sites-authoring/default-components-designmode.md)).
+>Si no está disponible, el **Contenedor de diseño** debe activarse explícitamente [para un sistema de párrafos o una página](/help/sites-administering/configuring-responsive-layout.md) (por ejemplo, usando el modo [**Diseño**](/help/sites-authoring/default-components-designmode.md)).
 
 1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). Desde aquí puede arrastrarlo a la ubicación deseada en la página tras la cual verá el marcador de posición **Arrastrar componentes aquí**.
 1. A continuación, puede agregar componentes al contenedor del diseño. Estos componentes contendrán el contenido real:
@@ -173,7 +173,7 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 
    ![Opción principal](do-not-localize/screen_shot_2018-03-23at085417.png)
 
-1. Si el componente de diseño está anidado, seleccione la opción **Principal** presenta una selección desplegable, que le permite seleccionar el contenedor de diseño anidado o sus elementos principales.
+1. Si el componente de diseño está anidado, al seleccionar la opción **Principal** se muestra una selección desplegable, que le permite seleccionar el contenedor de diseño anidado o sus elementos principales.
 
    Cuando pasa el ratón sobre los nombres de contenedor en la lista desplegable, sus contornos se muestran en la página.
 
@@ -202,7 +202,7 @@ El modo **Diseño** puede iniciarse de dos formas.
    * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
    * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
 
-* Cuándo [edición de un componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
+* Al [editar un componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
    * Mediante la opción **Diseño** en el menú de acción rápida del componente, puede cambiar al modo **Diseño**.
    * El modo **Diseño** persiste mientras se edita el componente y vuelve al modo **Editar** en cuanto el enfoque cambia a otro componente.
@@ -233,7 +233,7 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* Entrada **Diseño** modo en el que puede hacer clic en **Arrastre los componentes aquí** para seleccionar todo el componente. Se mostrará la barra de herramientas de este modo.
+* En el modo **Diseño** puede hacer clic en **Arrastrar componentes aquí** para seleccionar todo el componente. Se mostrará la barra de herramientas de este modo.
 
   La barra de herramientas tendrá diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
 
@@ -241,13 +241,13 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
      ![Principal](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Mostrar componentes ocultos** : Muestre todos los componentes o cada componente por separado. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
+   * **Mostrar componentes ocultos** - Mostrar todos los componentes o los componentes individuales. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
 
      ![Mostrar componentes ocultos](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **Revertir diseño de punto de interrupción**: volver al diseño predeterminado. Esto significa que no se aplicará ningún diseño personalizado.
 
-     ![Revertir diseño de punto de interrupción](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![Diseño del punto de interrupción del servidor](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **Flotar hasta una nueva línea**: suba el componente una posición si el espacio lo permite.
 

@@ -23,10 +23,10 @@ ht-degree: 1%
 
 AEM proporciona lo siguiente:
 
-* [un marco para probar la interfaz de usuario de los componentes](/help/sites-developing/hobbes.md).
+* [un marco de trabajo para probar la IU del componente](/help/sites-developing/hobbes.md).
 * [un mecanismo para probar y depurar componentes](/help/sites-developing/developer-mode.md).
 
-Las siguientes son dos herramientas de prueba de código abierto:
+Las siguientes son dos herramientas de prueba de Open Source:
 
 **Selenio**
 
@@ -52,7 +52,7 @@ Un sistema de seguimiento de errores que se puede configurar según sus propios 
 
 **Hojas de cálculo**
 
-Aunque no es específicamente una herramienta de seguimiento de errores, las hojas de cálculo suelen ser *faltar* se utilizan para este fin, ya que son fáciles de entender y la mayoría de los usuarios tienen experiencia en su funcionalidad.
+Aunque no se trata específicamente de una herramienta de seguimiento de errores, las hojas de cálculo suelen *error* utilizarse para este fin, ya que son fáciles de entender y la mayoría de los usuarios tienen experiencia con su funcionalidad.
 
 Si estas hojas de cálculo se utilizan para el seguimiento, entonces:
 

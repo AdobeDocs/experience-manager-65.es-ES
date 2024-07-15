@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Esta función consta de dos componentes que funcionan juntos: revisiones y resúmenes de revisiones.
 
-Las revisiones son un componente compuesto basado en una [sistema de comentarios](essentials-comments.md) que contiene uno o más [clasificación](rating-basics.md) componentes (tally).
+Las revisiones son un componente compuesto basado en un [sistema de comentarios](essentials-comments.md) que contiene uno o más [componentes de clasificación](rating-basics.md) (recuento).
 
 No se admite la publicación anónima de una revisión. Los visitantes del sitio deben registrarse e iniciar sesión para agregar una revisión. El visitante (miembro) que inició sesión puede actualizar su revisión en cualquier momento.
 
@@ -36,14 +36,14 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
-   <td>Sí, las propiedades se pueden editar en <i>diseño </i>modo</td>
+   <td>Sí, las propiedades se pueden editar en el modo </i>design<i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td>cq.social.hbs.reviews</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td> /libs/social/reviews/components/hbs/reviews/reviews.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/review.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/status.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/toolbar.hbs</td>
   </tr>
   <tr>
@@ -52,7 +52,7 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td>Consulte <a href="reviews.md">Uso de críticas</a></td>
+   <td>Ver <a href="reviews.md">Usando críticas</a></td>
   </tr>
  </tbody>
 </table>
@@ -63,9 +63,9 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
 |---|---|
 | [**incluible**](scf.md#add-or-include-a-communities-component) | Sí, las propiedades se pueden editar en el modo *design *mode |
 | [**clientlibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
-| **templates** | /libs/social/reviews/components/hbs/summary/summary.hbs |
+| **plantillas** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
-| **propiedades** | Consulte [Uso de críticas](reviews.md) |
+| **propiedades** | Ver [Usando críticas](reviews.md) |
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
@@ -82,13 +82,13 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Resumen del proveedor de recursos de almacenamiento](srp.md) - Introducción y descripción general del uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
-* [Refactorización de SocialUtils](socialutils.md) : Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales.
+* [SRP y UGC Essentials](srp-and-ugc.md): métodos y ejemplos de utilidades SRP.
+* [Acceder a UGC con SRP](accessing-ugc-with-srp.md): directrices de codificación.
+* [Refactorización de SocialUtils](socialutils.md): asignando métodos de utilidad obsoletos a métodos de utilidad SRP actuales.

@@ -34,21 +34,21 @@ La función de foro QnA (preguntas y respuestas) proporciona un área para que l
 La documentación describe:
 
 * AEM Adición de la función de foro de control de calidad a un sitio de.
-* Ajustes de configuración para `QnA`componente.
+* Ajustes de configuración para el componente `QnA`.
 
 ## Añadir un foro de preguntas y respuestas a una página {#adding-a-q-a-forum-to-a-page}
 
-Para agregar un `QnA` a una página en modo de autor, utilice el navegador de componentes para localizar `Communities / QnA` y arrástrelo hasta su lugar en una página en la que debería aparecer el foro de control de calidad.
+Para agregar un componente `QnA` a una página en modo de autor, use el explorador de componentes para localizar `Communities / QnA` y arrástrelo a su lugar en una página en la que debería aparecer el foro de control de calidad.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/qna-essentials.md#essentials-for-client-side) están incluidos, así es como se `QnA` el componente aparece:
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](/help/communities/qna-essentials.md#essentials-for-client-side), así es como aparece el componente `QnA`:
 
-![qna-component](assets/qna-component.png)
+![componente qna](assets/qna-component.png)
 
 ### Configuración de QnA {#configuring-qna}
 
-Seleccione el colocado `QnA` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el componente `QnA` colocado para que pueda acceder y seleccionar el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
@@ -56,17 +56,17 @@ Seleccione el colocado `QnA` para que pueda acceder y seleccionar el componente 
 
 #### Pestaña Configuración {#settings-tab}
 
-En el **Configuración** pestaña, especifique la configuración de los temas (preguntas) y respuestas (respuestas):
+En la ficha **Configuración**, especifique la configuración para los temas (preguntas) y las respuestas (respuestas):
 
 * **Permitir miniatura de datos adjuntos**
 
   Si se selecciona, se crea una miniatura de la imagen adjunta.
 
-* **Tamaño máximo de miniatura de adjunto**
+* **Tamaño máximo de miniatura adjunta**
 
   Tamaño máximo (en píxeles) de la imagen en miniatura del archivo adjunto. El valor predeterminado es 800 x 800.
 
-* **Tamaño mínimo de la imagen de la miniatura**
+* **Tamaño mínimo de imagen para la miniatura**
 
   Tamaño mínimo (en bytes) de la imagen para generar miniaturas para imágenes alineadas. El valor predeterminado es 100000 bytes (100 kb).
 
@@ -92,7 +92,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
 * **Permitir etiquetado**
 
-  Si se selecciona esta opción, permite que los miembros agreguen etiquetas de etiqueta a sus publicaciones (consulte **Campo de etiqueta** pestaña). La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, se permite a los miembros agregar etiquetas de etiqueta a sus publicaciones (consulte **Campo de etiqueta** en la pestaña). La opción predeterminada no está seleccionada.
 
 * **Permitir cargas de archivos**
 
@@ -100,7 +100,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
 * **Permitir seguimiento**
 
-  Si se selecciona esta opción, se incluye la siguiente función para las publicaciones del foro, que permite a los miembros [notificado](/help/communities/notifications.md) de nuevos puestos. La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, se debe incluir la siguiente característica para las publicaciones del foro, que permite [notificar](/help/communities/notifications.md) a los miembros las nuevas publicaciones. La opción predeterminada no está seleccionada.
 
 * **Permitir anclaje**
 
@@ -108,15 +108,15 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
 * **Permitir suscripciones por correo electrónico**
 
-  Si se selecciona esta opción, se notificará a los miembros de las nuevas publicaciones por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere que se compruebe Permitir seguimiento y [correo electrónico configurado](/help/communities/email.md). La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, se notificarán las nuevas publicaciones a los miembros por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere que se compruebe Permitir seguimiento y que se configure [correo electrónico](/help/communities/email.md). La opción predeterminada no está seleccionada.
 
 * **Tamaño máximo de archivo**
 
-  Relevante solo si `Allow File Uploads` está marcada. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+  Relevante solo si `Allow File Uploads` está marcado. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
 
 * **Tipos de archivo permitidos**
 
-  Relevante solo si `Allow File Uploads` está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se podrán cargar los que no se hayan especificado. El valor predeterminado es ninguno especificado de modo que **todo** se permiten los tipos de archivo.
+  Relevante solo si `Allow File Uploads` está marcado. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se podrán cargar los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten **todos los** tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
@@ -126,7 +126,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
   Si se selecciona esta opción, se permiten las respuestas a los comentarios publicados en la pregunta. La opción predeterminada no está seleccionada.
 
-* **Permitir votación**
+* **Permitir Votación**
 
   Si se selecciona esta opción, se debe incluir la función de votación con una pregunta. La opción predeterminada no está seleccionada.
 
@@ -142,12 +142,12 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
   Si está habilitado, bloquea el contenido generado por el usuario mientras lo edita en el modo Autor.
 
-* **Mover la respuesta seleccionada a la parte superior**
+* **Mover la respuesta seleccionada al principio**
 
   Si se selecciona, la primera respuesta que se muestra es una respuesta seleccionada. La opción predeterminada no está seleccionada.
-* **Mostrar distintivos**
+* **Mostrar insignias**
 
-  Si se selecciona esta opción, se muestran las ganancias y las asignaciones [distintivos](/help/communities/implementing-scoring.md) con la entrada de blog de un miembro. La opción predeterminada no está seleccionada.
+  Si se selecciona esta opción, se muestran [insignias](/help/communities/implementing-scoring.md) ganadas y asignadas con la entrada de blog de un miembro. La opción predeterminada no está seleccionada.
 
 * **Permitir contenido destacado**
 
@@ -167,7 +167,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas (p
 
 #### Pestaña Moderación de usuario {#user-moderation-tab}
 
-En el **Moderación de usuario** , especifique cómo se administran los temas publicados (preguntas) y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+En la ficha **Moderación de usuarios** especifique cómo se administran los temas publicados (preguntas) y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderar contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
 * **Denegar respuestas**
 
@@ -202,11 +202,11 @@ Si se selecciona, permite que los moderadores de publicación muevan preguntas. 
 
 #### Pestaña Campo de etiqueta {#tag-field-tab}
 
-En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se permiten en la **Configuración** están limitadas según las áreas de nombres seleccionadas.
+En la ficha **Campo de etiqueta**, las etiquetas que se pueden aplicar, si se permiten en la ficha **Configuración**, están limitadas según las áreas de nombres elegidas.
 
 * **Áreas de nombres permitidas**
 
-  Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar están limitadas a las categorías de área de nombres marcadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
+  Relevante si `Allow Tagging` está marcado en la ficha **Configuración**. Las etiquetas que se pueden aplicar están limitadas a las categorías de área de nombres marcadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 
 * **Límite de sugerencias**
 
@@ -214,7 +214,7 @@ En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se
 
 #### Pestaña Configuración de ordenación {#sort-settings-tab}
 
-En el **Configuración de orden** , especifique cómo se ordenan los comentarios publicados cuando se muestran.
+En la ficha **Configuración de ordenación**, especifique cómo se ordenan los comentarios publicados cuando se muestran.
 
 * **Ordenar por**
 
@@ -224,19 +224,19 @@ En el **Configuración de orden** , especifique cómo se ordenan los comentarios
 
   Tire hacia abajo para seleccionar una de las opciones de ordenación seleccionadas y que aparezca como la predeterminada. El valor predeterminado es `Newest`.
 
-* **Seleccione las opciones de hora para la clasificación de Analytics**
+* **Seleccionar opciones de hora para la ordenación de Analytics**
 
-  Desplegable para seleccionar una de `All, Last 24 Hours, Last 7 Days, Last 30 Days`. El valor predeterminado es `All`.
+  Lista desplegable para seleccionar uno de `All, Last 24 Hours, Last 7 Days, Last 30 Days`. El valor predeterminado es `All`.
 
 ## Experiencia del visitante del sitio {#site-visitor-experience}
 
 ### Identificación de respuestas {#identifying-answers}
 
-Una respuesta se puede marcar como correcta o útil usando la variable `Select Answer` botón. Una vez que una pregunta está marcada como Respondida, no se puede seleccionar otra respuesta hasta que se haya anulado la selección de la primera con el `Unmark Chosen Answer` botón.
+Una respuesta se puede marcar como correcta o útil usando el botón `Select Answer`. Una vez que una pregunta está marcada como Respondida, no se puede seleccionar otra respuesta hasta que se haya anulado la selección de la primera con el botón `Unmark Chosen Answer`.
 
-Una vez seleccionada como respuesta viable, se puede anular su selección con la variable `Unmark Chosen Answer` botón.
+Una vez seleccionada como respuesta viable, se puede anular su selección con el botón `Unmark Chosen Answer`.
 
-Una vez seleccionada una respuesta como respuesta viable, una indicación de que la pregunta se ha `Answered` aparece junto al tema de la pregunta en la página principal de control de calidad.
+Una vez que se selecciona una respuesta como respuesta viable, se muestra una indicación de que la pregunta ha sido `Answered` junto al tema de la pregunta en la página principal de control de calidad.
 
 #### Moderadores y administradores {#moderators-and-administrators}
 
@@ -248,7 +248,7 @@ También pueden identificar respuestas.
 
 Cuando los visitantes del sitio inician sesión, según la configuración, pueden:
 
-* Publicar una nueva pregunta.
+* Post tiene una nueva pregunta.
 * Edite o elimine las preguntas que han creado.
 * Marcar preguntas o respuestas de otros miembros.
 * Identifique las respuestas a las preguntas que han creado.
@@ -259,8 +259,8 @@ Los visitantes del sitio que no hayan iniciado sesión solo podrán leer las pre
 
 ## Información adicional {#additional-information}
 
-Encontrará más información en la [Aspectos básicos de QnA](/help/communities/qna-essentials.md) para desarrolladores.
+Encontrará más información en la página de [QnA Essentials](/help/communities/qna-essentials.md) para desarrolladores.
 
-Para ver la moderación de los temas publicados y los comentarios, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+Para moderar los temas publicados y los comentarios, vea [Moderar el contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-Para etiquetar temas y comentarios publicados, consulte [Etiquetado del contenido generado por el usuario](/help/communities/tag-ugc.md).
+Para etiquetar temas y comentarios publicados, consulte [Etiquetado de contenido generado por el usuario](/help/communities/tag-ugc.md).

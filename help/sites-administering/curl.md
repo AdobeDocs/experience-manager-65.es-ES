@@ -28,7 +28,7 @@ cURL es una herramienta de línea de comandos de código abierto que se utiliza 
 
 cURL es una herramienta bien establecida y ampliamente utilizada para obtener o enviar datos mediante la sintaxis de URL y se lanzó originalmente en 1997. El nombre cURL originalmente significaba &quot;ver URL&quot;.
 
-AEM Debido a la naturaleza RESTful del marco de trabajo de Sling en el que se crea la, la mayoría de las tareas se pueden reducir a una llamada URL, que se puede ejecutar con cURL. [Tareas de manipulación de contenido](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) como activar páginas e iniciar flujos de trabajo y [tareas operativas](/help/sites-administering/curl.md#common-operational-aem-curl-commands) como la administración de paquetes y la administración de usuarios, se pueden automatizar mediante cURL. Además, puede hacer lo siguiente [crear su propia cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) AEM comandos para la mayoría de las tareas de la.
+AEM Debido a la naturaleza RESTful del marco de trabajo de Sling en el que se crea la, la mayoría de las tareas se pueden reducir a una llamada URL, que se puede ejecutar con cURL. [Las tareas de manipulación de contenido](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands), como la activación de páginas y el inicio de flujos de trabajo y [las tareas operativas](/help/sites-administering/curl.md#common-operational-aem-curl-commands), como la administración de paquetes y la administración de usuarios, se pueden automatizar mediante cURL. AEM Además, puede [crear sus propios comandos cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) para la mayoría de las tareas de la.
 
 >[!NOTE]
 >
@@ -46,22 +46,22 @@ AEM Los comandos cURL se pueden crear para la mayoría de las operaciones en los
 
 Para encontrar el comando exacto que necesita para una operación en particular, debe utilizar las herramientas para desarrolladores de su explorador para capturar la llamada del POST AEM al servidor cuando ejecute el comando en el que se va a ejecutar el comando en el que se va a ejecutar el comando.
 
-Los siguientes pasos describen cómo hacerlo utilizando la creación de una nueva página dentro del explorador Chrome como ejemplo.
+En los pasos siguientes se describe cómo hacerlo utilizando la creación de una nueva página en el explorador Chrome como ejemplo.
 
-1. AEM Prepare la acción que desea invocar en el espacio de trabajo de la aplicación de. En este caso, se ha procedido al final del **Crear página** asistente, pero aún no ha hecho clic en **Crear**.
+1. AEM Prepare la acción que desea invocar en el espacio de trabajo de la aplicación de. En este caso, hemos seguido hasta el final del asistente para **Crear página**, pero aún no hemos hecho clic en **Crear**.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
-1. Inicie las herramientas para desarrolladores y seleccione **Red** pestaña. Haga clic en **Conservar registro** antes de borrar la consola.
+1. Inicie las herramientas para desarrolladores y seleccione la ficha **Red**. Haga clic en la opción **Conservar registro** antes de borrar la consola.
 
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-1. Clic **Crear** en el **Crear página** asistente para crear el flujo de trabajo.
+1. Haga clic en **Crear** en el asistente para **Crear página** para crear el flujo de trabajo.
 1. Haga clic con el botón derecho en la acción del POST resultante y seleccione **Copiar** > **Copiar como cURL**.
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. Copie el comando cURL en un editor de texto y elimine todos los encabezados del comando, que empiezan por `-H` (resaltado en azul en la imagen siguiente) y añada el parámetro de autenticación adecuado, como `-u <user>:<password>`.
+1. Copie el comando cURL en un editor de texto y quite todos los encabezados del comando, que comienzan por `-H` (resaltado en azul en la imagen siguiente) y agregue el parámetro de autenticación adecuado como `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -75,7 +75,7 @@ AEM Esta es una lista de comandos cURL para tareas administrativas y operativas 
 
 >[!NOTE]
 >
->AEM En los ejemplos siguientes se supone que se está ejecutando en el `localhost` en el puerto `4502` y utiliza el usuario `admin` con contraseña `admin`. Los marcadores de posición de comandos adicionales se establecen entre corchetes angulares.
+>AEM En los ejemplos siguientes se supone que se está ejecutando en `localhost` en el puerto `4502` y que utiliza el usuario `admin` con la contraseña `admin`. Los marcadores de posición de comandos adicionales se establecen entre corchetes angulares.
 
 ### Administración de paquetes {#package-management}
 
@@ -284,23 +284,23 @@ curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:450
 curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
-### Communities {#communities}
+### Comunidades {#communities}
 
 #### Asignar y revocar distintivos {#assign-and-revoke-badges}
 
-Consulte [Puntuación y distintivos de comunidades](/help/communities/implementing-scoring.md#assign-and-revoke-badges) para obtener más información.
+Consulte [Insignias y puntuación de comunidades](/help/communities/implementing-scoring.md#assign-and-revoke-badges) para obtener más información.
 
-Consulte [Elementos esenciales de puntuación e insignias](/help/communities/configure-scoring.md#example-setup) para obtener más información.
+Consulte [Aspectos básicos de puntuación e insignias](/help/communities/configure-scoring.md#example-setup) para obtener más información.
 
 #### Reindexación de MSRP {#msrp-reindexing}
 
-Consulte [MSRP: proveedor de recursos de almacenamiento de MongoDB](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) para obtener más información.
+Consulte [MSRP - Proveedor de recursos de almacenamiento de MongoDB](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) para obtener detalles.
 
 ### Seguridad {#security}
 
 #### Activación y desactivación de CRX DE Lite {#enabling-and-disabling-crx-de-lite}
 
-Consulte [Activación del CRXDE Lite AEM en la](/help/sites-administering/enabling-crxde-lite.md) para obtener más información.
+Consulte [Habilitación del CRXDE Lite AEM en el](/help/sites-administering/enabling-crxde-lite.md) para obtener más información.
 
 ### Recopilación de datos almacenados desechables {#data-store-garbage-collection}
 
@@ -322,7 +322,7 @@ AEM Esta es una lista de comandos cURL para la manipulación de contenido.
 
 >[!NOTE]
 >
->AEM En los ejemplos siguientes se supone que se está ejecutando en el `localhost` en el puerto `4502` y utiliza el usuario `admin` con contraseña `admin`. Los marcadores de posición de comandos adicionales se establecen entre corchetes angulares.
+>AEM En los ejemplos siguientes se supone que se está ejecutando en `localhost` en el puerto `4502` y que utiliza el usuario `admin` con la contraseña `admin`. Los marcadores de posición de comandos adicionales se establecen entre corchetes angulares.
 
 ### Administración de páginas {#page-management}
 

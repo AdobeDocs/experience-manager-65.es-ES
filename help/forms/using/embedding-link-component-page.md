@@ -49,7 +49,7 @@ Siga estos pasos para agregar un componente Vínculo a la página:
 
 1. Abra la pestaña **Avanzado**. Puede especificar los parámetros adicionales en el formato de par clave-valor. Cuando se hace clic en el vínculo, estos parámetros adicionales se pasan junto con el formulario.
 
-   Seleccionar **Listo** para guardar la configuración.
+   Seleccione **Listo** para guardar la configuración.
 
 ## Prácticas recomendadas para usar el componente Vínculo {#best-practices-for-using-link-component-br}
 

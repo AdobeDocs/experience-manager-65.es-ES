@@ -30,7 +30,7 @@ El marco de trabajo utiliza tokens para garantizar que la solicitud del cliente 
 
 ### Dependencias {#dependencies}
 
-Cualquier componente que dependa de `granite.jquery` La dependencia de puede beneficiarse del Marco de protección de CSRF automáticamente. Si no es así, para cualquiera de los componentes, debe declarar una dependencia a `granite.csrf.standalone` antes de poder utilizar el marco de trabajo.
+Cualquier componente que dependa de la dependencia `granite.jquery` puede beneficiarse automáticamente del marco de protección de CSRF. Si no es así, para cualquiera de los componentes, debe declarar una dependencia en `granite.csrf.standalone` antes de poder utilizar el marco de trabajo.
 
 ### Duplicación de la clave criptográfica {#replicating-crypto-keys}
 
@@ -38,10 +38,10 @@ Para utilizar los tokens, debe replicar el binario HMAC en todas las instancias 
 
 >[!NOTE]
 >
->Asegúrese de hacer lo necesario [Cambios de configuración de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) para utilizar el Marco de protección de CSRF.
+>Asegúrese de realizar también los [cambios de configuración de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) necesarios para usar el marco de protección CSRF.
 
 >[!NOTE]
 >
->Si utiliza la caché de manifiesto con la aplicación web, asegúrese de agregar &quot;**&amp;ast;**&quot; al manifiesto para asegurarse de que el token no desconecte la llamada de generación de tokens CSRF. Para obtener más información, consulte [vincular](https://www.w3.org/TR/offline-webapps/).
+>Si usa la caché de manifiesto con su aplicación web, asegúrese de agregar &quot;**&amp;ast;**&quot; al manifiesto para asegurarse de que el token no desconecte la llamada de generación de token CSRF. Para obtener más información, consulte este [vínculo](https://www.w3.org/TR/offline-webapps/).
 >
-Para obtener más información sobre los ataques de CSRF y las formas de mitigarlos, consulte la [Falsificación de solicitudes entre sitios página OWASP](https://owasp.org/www-community/attacks/csrf).
+Para obtener más información sobre los ataques de CSRF y las formas de mitigarlos, consulte la [página OWASP de falsificación de solicitud en sitios múltiples](https://owasp.org/www-community/attacks/csrf).

@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # Configurar la página para la edición masiva de propiedades de página {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[Edición masiva de propiedades de página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) permite editar las propiedades de varias páginas a la vez.
+[La edición masiva de propiedades de página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) le permite editar las propiedades de varias páginas a la vez.
 
 Debido a la posibilidad de que existan diferentes valores, las propiedades de página no están habilitadas para la edición por lotes de forma predeterminada. Deben permitirse explícitamente (habilitarse). Al definir las propiedades de página para que estén disponibles para la edición masiva, debe tener en cuenta determinadas implicaciones, como:
 
@@ -38,7 +38,7 @@ Debido a la posibilidad de que existan diferentes valores, las propiedades de p�
 
 >[!NOTE]
 >
->La edición masiva también está disponible para Assets. Es muy similar, pero difiere en algunos puntos. Consulte [Edición de propiedades de varios recursos](/help/assets/metadata.md) para obtener información completa. Puede personalizar los campos en el editor de metadatos masivos para los recursos mediante el [Editor de esquemas](/help/assets/metadata-schemas.md).
+>La edición masiva también está disponible para Assets. Es muy similar, pero difiere en algunos puntos. Consulte [Edición de propiedades de varios Assets](/help/assets/metadata.md) para obtener información completa. Puede personalizar los campos en el editor de metadatos masivos para Assets mediante [Editor de esquemas](/help/assets/metadata-schemas.md).
 
 ## Activación de un campo {#enabling-a-field}
 
@@ -64,14 +64,14 @@ Los campos están habilitados en el componente de página (*no* en la plantilla)
    >
    >En este ejemplo se supone que los componentes principales se han instalado en la instancia, como sucede si la instancia se ejecuta con contenido de muestra de We.Retail. Consulte la [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) para obtener más información.
 
-1. Vaya al campo requerido dentro de la variable `cq:dialog` definición.
+1. Vaya al campo requerido dentro de la definición de `cq:dialog`.
 1. Defina la siguiente propiedad en el nodo de campo:
 
    * **Nombre**: `allowBulkEdit`
    * **Tipo**: `Boolean`
    * **Valor**: `true`
 
-   Por ejemplo, para la página estándar [componente base](/help/sites-authoring/default-components-foundation.md):
+   Por ejemplo, para la página estándar [foundation component](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
 
@@ -81,13 +81,13 @@ Los campos están habilitados en el componente de página (*no* en la plantilla)
 
    >[!CAUTION]
    >
-   >Usted ***debe*** no cambie nada en el `/libs` ruta.
+   >Usted ***no debe*** cambiar nada en la ruta de acceso `/libs`.
    >
-   >Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+   >Esto se debe a que el contenido de `/libs` se sobrescribirá la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de características).
    >
    >El método recomendado para la configuración y otros cambios es:
    >
    >    1. Vuelva a crear el elemento necesario (es decir, tal como existe en `/libs`) en `/apps`
-   >    1. Realice cualquier cambio en `/apps`
+   >    1. Realizar cambios en `/apps`
 
-1. Seleccionar **Guardar todo** para mantener las actualizaciones.
+1. Seleccione **Guardar todo** para mantener las actualizaciones.

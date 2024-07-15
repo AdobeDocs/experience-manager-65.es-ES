@@ -31,7 +31,7 @@ La funcionalidad de borradores está habilitada de forma predeterminada. Cuando 
 Siga estos pasos para agregar y configurar el componente Borradores y envíos:
 
 1. Arrastre y suelte el componente **Borradores y envíos** en la categoría Servicios de documentos del explorador de componentes de su página.
-1. Seleccione el componente y luego seleccione ![settings_icon](assets/settings_icon.png) para abrir el cuadro de diálogo Editar del componente.
+1. Seleccione el componente y, a continuación, seleccione ![settings_icon](assets/settings_icon.png) para abrir el cuadro de diálogo Editar del componente.
 
    ![Componente Borradores y envíos](assets/drafts-submissions-edit.png)
 

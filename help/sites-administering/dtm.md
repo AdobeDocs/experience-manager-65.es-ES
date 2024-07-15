@@ -18,9 +18,9 @@ ht-degree: 2%
 
 # Integración con Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-Integrar [Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) AEM con para que pueda utilizar sus propiedades web de Dynamic Tag Management AEM para realizar un seguimiento de los sitios de la. Dynamic Tag Management permite a los especialistas en marketing administrar etiquetas para recopilar datos y distribuir datos entre sistemas de marketing digital. Por ejemplo, utilice Dynamic Tag Management AEM para recopilar datos de uso para su sitio web de y distribuir los datos para su análisis en Adobe Analytics o Adobe Target.
+Integre [Dynamic Tag Management AEM de Adobe](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) con los recursos de manera que pueda usar sus propiedades web de Dynamic Tag Management AEM para hacer un seguimiento de los sitios de la. Dynamic Tag Management permite a los especialistas en marketing administrar etiquetas para recopilar datos y distribuir datos entre sistemas de marketing digital. Por ejemplo, utilice Dynamic Tag Management AEM para recopilar datos de uso para su sitio web de y distribuir los datos para su análisis en Adobe Analytics o Adobe Target.
 
-Antes de integrar, cree Dynamic Tag Management [propiedad web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) AEM que realiza un seguimiento del dominio del sitio de la. El [opciones de alojamiento](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) AEM La configuración de la propiedad web debe configurarse para que pueda configurar el acceso a las bibliotecas de Dynamic Tag Management de forma que se pueda configurar el acceso a las mismas.
+Antes de realizar la integración, cree la [propiedad web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) de Dynamic Tag Management AEM que realiza el seguimiento del dominio del sitio de la aplicación de la red de la red de la red de la red de la red de la red de. AEM Las [opciones de hospedaje](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) de la propiedad web deben estar configuradas para que pueda configurar el acceso a las bibliotecas de Dynamic Tag Management para que pueda acceder a las mismas.
 
 Después de configurar la integración, los cambios en las herramientas y reglas de implementación de Dynamic Tag Management no requieren que cambie la configuración de Dynamic Tag Management AEM en la. AEM Los cambios estarán disponibles automáticamente para su.
 
@@ -40,10 +40,10 @@ Las siguientes opciones de implementación afectan a la configuración de la int
 
 AEM La aplicación admite Dynamic Tag Management AEM que está alojado en la nube o en el servidor de correo de.
 
-* Alojado en la nube: las bibliotecas de JavaScript de Dynamic Tag Management AEM se almacenan en la nube y las páginas de la hacen referencia a ellas directamente.
+* Alojadas en la nube: las bibliotecas dinámicas de Tag Management JavaScript AEM se almacenan en la nube y las páginas de la hacen referencia a ellas directamente.
 * AEM alojadas: Dynamic Tag Management genera bibliotecas de JavaScript. AEM utiliza un modelo de flujo de trabajo para obtener e instalar las bibliotecas.
 
-El tipo de alojamiento que utiliza la implementación determina algunas de las tareas de configuración e implementación que realiza. Para obtener información sobre las opciones de alojamiento, consulte [Alojamiento: ficha Insertar](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) en la Ayuda de Dynamic Tag Management.
+El tipo de alojamiento que utiliza la implementación determina algunas de las tareas de configuración e implementación que realiza. Para obtener información acerca de las opciones de alojamiento, consulte [Alojamiento: ficha Insertar](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) en la Ayuda de Dynamic Tag Management.
 
 ### Biblioteca de ensayo y producción {#staging-and-production-library}
 
@@ -57,7 +57,7 @@ Si lo desea, la instancia de autor puede utilizar las bibliotecas de producción
 
 AEM Cuando aloja las bibliotecas de Dynamic Tag Management, puede utilizar el servicio de enlace de implementación de Dynamic Tag Management AEM para insertar automáticamente las actualizaciones de la biblioteca en el. Las actualizaciones de la biblioteca se insertan cuando se realizan cambios en las bibliotecas, como cuando se editan las propiedades web de Dynamic Tag Management.
 
-Para utilizar el vínculo de implementación, Dynamic Tag Management AEM debe poder conectarse a la instancia de implementación que aloja las bibliotecas de. [AEM Habilitar el acceso a la](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) para los servidores de Dynamic Tag Management.
+Para utilizar el vínculo de implementación, Dynamic Tag Management AEM debe poder conectarse a la instancia de implementación que aloja las bibliotecas de. AEM [Habilite el acceso a los servidores de Dynamic Tag Management a la versión {100000000000000000000000000000000000000000000000000000000000 000000000000 00000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service)
 
 AEM AEM En algunas circunstancias, no se puede acceder a los servidores de seguridad, por ejemplo, cuando se encuentran detrás de un servidor de seguridad, por ejemplo, cuando se encuentran en el mismo lugar, se puede acceder a los. AEM En estos casos, puede utilizar la opción del importador de encuestas de para recuperar periódicamente las bibliotecas. Una expresión de trabajo cron dicta la programación de las descargas de biblioteca.
 
@@ -68,7 +68,7 @@ Habilite el servicio de enlace de implementación de Dynamic Tag Management AEM 
 * Ensayo: `107.21.99.31`
 * Producción: `23.23.225.112` y `204.236.240.48`
 
-Realice la configuración utilizando el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o una [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) nodo:
+Realice la configuración mediante la [consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o un nodo [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
 * En la consola web, utilice el elemento Configuración de enlace de implementación de DTM de Adobe de la página Configuración.
 * Para una configuración OSGi, el PID de servicio es `com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`.
@@ -86,7 +86,7 @@ AEM Cree una configuración en la nube para que la instancia de pueda autenticar
 
 >[!NOTE]
 >
->Evite la inclusión de dos códigos de seguimiento de Adobe Analytics en las páginas cuando la propiedad web de DTM incluya la herramienta Adobe Analytics y también esté utilizando [Perspectiva de contenido](/help/sites-authoring/content-insights.md). En su [Configuración de Adobe Analytics Cloud](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), seleccione la opción No incluir código de seguimiento.
+>Evite la inclusión de dos códigos de seguimiento de Adobe Analytics en sus páginas cuando su propiedad web de DTM incluya la herramienta Adobe Analytics y también esté usando [Content Insight](/help/sites-authoring/content-insights.md). En su [configuración de Adobe Analytics Cloud](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics), seleccione la opción No incluir código de seguimiento.
 
 ### Configuración general {#general-settings}
 
@@ -147,15 +147,15 @@ Al alojar las bibliotecas de Dynamic Tag Management AEM AEM en la, configura aut
   </tr>
   <tr>
    <td>Sugerencia de dominio</td>
-   <td><p>AEM (Opcional) El dominio del servidor de que aloja la biblioteca de Dynamic Tag Management. Especifique un valor para poder anular el dominio predeterminado configurado para la variable <a href="/help/sites-developing/externalizer.md">Servicio Day CQ Link Externalizer</a>.</p> <p>Cuando se conecta a Dynamic Tag Management AEM, utiliza este valor para configurar la ruta HTTP de ensayo o la ruta HTTP de producción de las propiedades de descarga de biblioteca de la propiedad web de Dynamic Tag Management.</p> </td>
+   <td><p>AEM (Opcional) El dominio del servidor de que aloja la biblioteca de Dynamic Tag Management. Especifique un valor para que pueda anular el dominio predeterminado configurado para el <a href="/help/sites-developing/externalizer.md">servicio Day CQ Link Externalizer</a>.</p> <p>Cuando se conecta a Dynamic Tag Management AEM, utiliza este valor para configurar la ruta HTTP de ensayo o la ruta HTTP de producción de las propiedades de descarga de biblioteca de la propiedad web de Dynamic Tag Management.</p> </td>
   </tr>
   <tr>
    <td>Sugerencia de dominio seguro</td>
-   <td><p>AEM (Opcional) El dominio del servidor de que aloja la biblioteca de Dynamic Tag Management a través de HTTPS. Especifique un valor para poder anular el dominio predeterminado configurado para la variable <a href="/help/sites-developing/externalizer.md">Servicio Day CQ Link Externalizer</a>.</p> <p>Cuando se conecta a Dynamic Tag Management AEM, utiliza este valor para configurar la ruta HTTPS de ensayo o la ruta HTTPS de producción de las propiedades de descarga de biblioteca de la propiedad web de Dynamic Tag Management.</p> </td>
+   <td><p>AEM (Opcional) El dominio del servidor de que aloja la biblioteca de Dynamic Tag Management a través de HTTPS. Especifique un valor para que pueda anular el dominio predeterminado configurado para el <a href="/help/sites-developing/externalizer.md">servicio Day CQ Link Externalizer</a>.</p> <p>Cuando se conecta a Dynamic Tag Management AEM, utiliza este valor para configurar la ruta HTTPS de ensayo o la ruta HTTPS de producción de las propiedades de descarga de biblioteca de la propiedad web de Dynamic Tag Management.</p> </td>
   </tr>
   <tr>
    <td>Secreto compartido</td>
-   <td><p>(Opcional) Secreto compartido que se utilizará para descifrar la descarga. Obtenga este valor del campo Secreto compartido de la página Descarga de biblioteca de Dynamic Tag Management.</p> <p><strong>Nota:</strong> AEM AEM Debe tener las bibliotecas OpenSSL instaladas en el equipo donde se haya instalado la aplicación de modo que pueda descifrar las bibliotecas descargadas, ya que, de lo contrario, las bibliotecas de OpenSSL deben estar instaladas en el equipo en el que se haya instalado la aplicación de manera que se puedan descifrar las bibliotecas descargadas de manera.</p> </td>
+   <td><p>(Opcional) Secreto compartido que se utilizará para descifrar la descarga. Obtenga este valor del campo Secreto compartido de la página Descarga de biblioteca de Dynamic Tag Management.</p> <p>AEM AEM <strong>Nota:</strong> Debe tener instaladas las bibliotecas OpenSSL en el equipo donde está instalado el sistema de manera que pueda descifrar las bibliotecas descargadas, de manera que el usuario pueda descifrar las bibliotecas que se han descargado de manera que el equipo tenga acceso a las bibliotecas que se han instalado en el equipo donde se ha instalado el sistema de.</p> </td>
   </tr>
   <tr>
    <td>Habilitar el importador de encuestas</td>
@@ -237,7 +237,7 @@ Descargue manualmente las bibliotecas de Dynamic Tag Management AEM para actuali
 >
 >Los archivos descargados se almacenan en `/etc/clientlibs/dtm/my config/companyID/propertyID/servertype`.
 >
->Las siguientes se toman directamente de su [Configuración de DTM](#creating-the-dynamic-tag-management-configuration).
+>Las siguientes se toman directamente de la [configuración de DTM](#creating-the-dynamic-tag-management-configuration).
 >
 >* `myconfig`
 >* `companyID`

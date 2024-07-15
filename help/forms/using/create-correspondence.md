@@ -57,7 +57,7 @@ Seleccione la carta que desea previsualizar mediante los pasos siguientes:
 
    >[!NOTE]
    >
-   >Para obtener más información sobre cómo cambiar entre el modo de procesamiento HTML o PDF de la vista previa de la carta, consulte [Cambiar el modo de procesamiento de la carta](#changerenditionmode). Para obtener más información sobre la compatibilidad de PDF AEM en Administración de correspondencia y, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Para obtener más información sobre cómo cambiar entre el modo de procesamiento HTML o PDF de la vista previa de la carta, consulte [Cambiar el modo de procesamiento de la carta](#changerenditionmode). Para obtener más información acerca de la compatibilidad con PDF AEM en Administración de correspondencia y en la administración de la correspondencia, vea [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Introducir datos {#enterdata}
 
@@ -88,8 +88,8 @@ En la pestaña Contenido, administre el contenido, como los fragmentos del docum
    Para obtener más información sobre las acciones disponibles para varios módulos en la interfaz de usuario Crear correspondencia, consulte [Acciones e información disponible en la interfaz de usuario Crear correspondencia](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
 1. Para localizar módulos de contenido, utilice el campo Buscar. Escriba el nombre completo o parcial o el título del módulo de contenido para buscarlo en la correspondencia.
-1. Seleccione el icono Mostrar ( ![exhibición](assets/display.png)) delante de una lista, texto, condición o área de destino para mostrarlo u ocultarlo en la carta.
-1. Para editar un módulo de texto dentro de la línea o editable, seleccione el **Editar** icono ( ![edittextmodule](assets/edittextmodule.png)) o haga doble clic en el módulo de texto correspondiente en la vista previa de la carta.
+1. Seleccione el icono Mostrar ( ![mostrar](assets/display.png)) delante de una lista, texto, condición o área de destino para mostrarlo u ocultarlo en la carta.
+1. Para editar un módulo de texto dentro de la línea o editable, seleccione el icono **Editar** correspondiente ( ![edittextmodule](assets/edittextmodule.png)) o haga doble clic en el módulo de texto correspondiente en la vista previa de la carta.
 
    El sistema muestra un editor de texto para editar y dar formato al texto.
 
@@ -137,13 +137,13 @@ En la pestaña Contenido, administre el contenido, como los fragmentos del docum
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   Puede seleccionar directamente un color básico `**[A]**` presente en la paleta Colores básicos o seleccione **Seleccionar** después de usar el regulador `**[B]**` para elegir la sombra adecuada del color.
+   Puede seleccionar directamente un color básico `**[A]**` presente en la paleta Colores básicos o seleccionar **Seleccionar** después de usar el control deslizante `**[B]**` para elegir la sombra adecuada del color.
 
-   También puede ir a la pestaña Avanzado para seleccionar el tono, la luminosidad y la saturación adecuados `**[C]**` para crear el color preciso y, a continuación, seleccione Seleccionar `**[D]**` para aplicar el color para resaltar el texto.
+   Opcionalmente, también puede ir a la pestaña Avanzado para seleccionar el tono, la luminosidad y la saturación adecuados `**[C]**` para crear el color preciso y, a continuación, seleccionar Seleccionar `**[D]**` para aplicar el color para resaltar el texto.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
-1. Realice los cambios de contenido y formato adecuados y seleccione **Guardar**. Seleccionar ( ![editnextmoduleccr](assets/editnextmoduleccr.png)) para moverse entre módulos de texto editables, o seleccione **Guardar y siguiente** para guardar los cambios y pasar al siguiente módulo de texto editable.
+1. Realice los cambios de contenido y formato adecuados y seleccione **Guardar**. Seleccione (![editnextmoduleccr](assets/editnextmoduleccr.png)) para moverse entre módulos de texto editables, o seleccione **Guardar y siguiente** para guardar los cambios y pasar al siguiente módulo de texto editable.
 1. El sistema también muestra las variables sin rellenar para cada una de las ramas. Cuando no hay variables no rellenadas, las estas se mostrarán como 0. Si hay variables sin rellenar, puede seleccionar una rama para expandirla y localizarlas. Utilice la barra de herramientas de contenido para eliminar contenido, aumentar/disminuir la sangría del contenido e insertar saltos de página antes o después del contenido.
 
    Puede insertar saltos de página por encima y por debajo de los módulos de datos incluso cuando formen parte de listas y condiciones.
@@ -207,7 +207,7 @@ En la pestaña Contenido, administre el contenido, como los fragmentos del docum
 
 1. Seleccione **Archivos adjuntos**. Administración de correspondencia mostrará los archivos adjuntos disponibles, tal como se configuran al crear la plantilla de la carta.
 1. Puede optar por no enviar un archivo adjunto junto con la carta al pulsar el icono Ver y puede seleccionar la cruz del archivo adjunto para eliminarlo de la carta. Para los archivos adjuntos especificados, al crear una plantilla de carta, como Obligatorio, los iconos Ver y Eliminar están deshabilitados.
-1. Seleccione el acceso a la biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acceder a la Biblioteca de contenido e insertar recursos DAM como archivos adjuntos.
+1. Seleccione el icono Acceder a la biblioteca (![libraryaccess](assets/libraryaccess.png)) para acceder a la biblioteca de contenido e insertar recursos DAM como archivos adjuntos.
 
    >[!NOTE]
    >
@@ -249,9 +249,9 @@ Puede realizar cambios en el diseño y el contenido para garantizar que la carta
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   El cuadro de diálogo Nombre de la carta en estado de borrador aparecerá con el ID de instancia de la carta. Si lo desea, puede editar este ID Anote el ID de la carta y, a continuación, seleccione **Listo**. Más tarde, podrá usar este ID para [volver a cargar el borrador de la carta](submit-letter-topostprocess.md#reloaddraft).
+   El cuadro de diálogo Nombre de la carta en estado de borrador aparecerá con el ID de instancia de la carta. Si lo desea, puede editar este ID Tome nota del ID de la carta y, a continuación, seleccione **Listo**. Más tarde, podrá usar este ID para [volver a cargar el borrador de la carta](submit-letter-topostprocess.md#reloaddraft).
 
-1. Para obtener una vista previa de la carta como PDF aplanado con el diseño exacto y los saltos de página a medida que se envíen, seleccione ( ![previsualización](assets/preview.png)) Vista previa.
+1. Para obtener una vista previa de la carta como PDF aplanado con el diseño exacto y los saltos de página a medida que se envíen, seleccione ( ![preview](assets/preview.png)) Vista previa.
 
    La carta aparecerá como PDF aplanado. El PDF aplanado es la representación exacta de la carta tal como se enviará con las fuentes, los saltos y el diseño correctos.
 
@@ -259,7 +259,7 @@ Puede realizar cambios en el diseño y el contenido para garantizar que la carta
    >
    >Si utiliza Mozilla Firefox y el tipo de representación HTML, para previsualizar la carta como PDF aplanado, asegúrese de utilizar el complemento del explorador nativo y no el complemento de Acrobat. Para seleccionar el complemento nativo del explorador, vaya a la configuración de Mozilla Firefox y, para el tipo de contenido PDF, seleccione Previsualizar en Firefox.
 
-1. Si la vista previa del PDF aplanado es satisfactoria, seleccione **Enviar** para enviar la carta. O bien, para cambiar la carta, seleccione **Salir de vista previa** para volver a la vista previa de la interfaz de usuario Crear correspondencia de la carta y realizar cambios en ella. Al seleccionar Enviar, si la configuración Administrar instancia de carta está habilitada en la instancia de publicación, se genera la instancia de envío de la carta.
+1. Si la vista previa del PDF aplanado es satisfactoria, seleccione **Enviar** para enviar la carta. O bien, para cambiar la carta, seleccione **Salir de la vista previa** para volver a la interfaz de usuario de Crear correspondencia de la carta y realizar cambios en ella. Al seleccionar Enviar, si la configuración Administrar instancia de carta está habilitada en la instancia de Publish, se genera la instancia de envío de la carta.
 
    Para obtener más información, consulte Instancia de borrador en las instancias Guardar borrador y Enviar carta.
 
@@ -289,7 +289,7 @@ Estas instancias solo se pueden guardar cuando la carta se ve en la instancia de
 
 Antes de publicar cartas o guardar borradores en la instancia de publicación, realice los siguientes pasos en las instancias de autor y publicación para habilitar la función Guardar como borrador:
 
-Las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* no se transfieren a la instancia de publicación de forma predeterminada. Para transferir *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* propiedades para publicar la instancia, deshabilite la variable [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Para deshabilitar el componente, haga lo siguiente:
+Las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* no se transfieren a la instancia de publicación de forma predeterminada. Para transferir las propiedades *cq:lastReplicationAction*, *cq:lastreplicated* y *cq:lastReplicatedBy* para publicar instancias, deshabilite el componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Para deshabilitar el componente, haga lo siguiente:
 
 1. En la instancia de autor, abra la consola Componentes de la consola web de Adobe Experience Manager. La URL predeterminada es `http://author-server:port/system/console/components`
 
@@ -356,10 +356,10 @@ A continuación se muestran las ventajas y las funcionalidades disponibles en la
 
 **Ventajas de los formularios móviles/vista previa HTML**
 
-* **Seleccione un valor de campo de datos para resaltar el campo de datos correspondiente**: en la interfaz de usuario Crear correspondencia, puede seleccionar un valor de campo de datos en la carta para resaltar el campo de datos correspondiente en la pestaña Datos. Para obtener más información, consulte [Escribir datos](#enterdata).
+* **Seleccione un valor de campo de datos para resaltar el campo de datos correspondiente**: en la interfaz de usuario de Crear correspondencia, puede seleccionar un valor de campo de datos en la carta para resaltar el campo de datos correspondiente en la pestaña Datos. Para obtener más información, consulte [Escribir datos](#enterdata).
 
 * **Compatibilidad con exploradores**: los exploradores retiran la compatibilidad con NPAPI gradualmente, lo que afecta a la vista previa PDF de la carta. La vista previa de la carta en los formularios HTML/móvil no se ve afectada por esto.
-* **Resaltar contenido editable en una carta**: en la interfaz de usuario Crear correspondencia, puede seleccionar Resaltar contenido editable para resaltar en gris todo el contenido editable de la carta. Para obtener más información, consulte [Administrar contenido](#managecontent).
+* **Resaltar contenido editable en una carta**: en la interfaz de usuario de Crear correspondencia, puede seleccionar Resaltar contenido editable para resaltar en gris todo el contenido editable de la carta. Para obtener más información, consulte [Administrar contenido](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Ventajas de la vista previa PDF**

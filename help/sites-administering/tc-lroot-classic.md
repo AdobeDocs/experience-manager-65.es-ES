@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Creación de una raíz de idioma mediante la IU clásica{#creating-a-language-root-using-the-classic-ui}
 
-El siguiente procedimiento utiliza la IU clásica para crear una raíz de idioma de un sitio. Para obtener más información, consulte [Creación de una raíz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
+El siguiente procedimiento utiliza la IU clásica para crear una raíz de idioma de un sitio. Para obtener más información, vea [Crear una raíz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. En la consola Sitios web, en el árbol Sitios web, seleccione la página raíz del sitio. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Añada una nueva página secundaria que represente la versión de idioma del sitio:
@@ -37,13 +37,13 @@ El siguiente procedimiento utiliza la IU clásica para crear una raíz de idioma
 
    El cuadro de diálogo Copia de idioma muestra una matriz de versiones de idiomas y páginas web disponibles. Una x en una columna de idioma significa que la página está disponible en ese idioma.
 
-   ![languageCopyDialog](assets/languagecopydialog.png)
+   ![languageCopydialog](assets/languagecopydialog.png)
 
 1. Para copiar una página o árbol de páginas existente en una versión de idioma, seleccione la celda de esa página en la columna idioma. Haga clic en la flecha y seleccione el tipo de copia que desea crear.
 
    En el siguiente ejemplo, la página equipamiento/gafas de sol/irian se está copiando a la versión en francés.
 
-   ![Languagecopydilogdropdown](assets/languagecopydilogdropdown.png)
+   ![languageCopydilogdropdown](assets/languagecopydilogdropdown.png)
 
    | Tipo de copia de idioma | Descripción |
    |---|---|

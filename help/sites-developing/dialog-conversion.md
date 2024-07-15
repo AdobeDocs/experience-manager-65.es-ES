@@ -20,4 +20,4 @@ ht-degree: 0%
 
 La herramienta de conversión de cuadros de diálogo se proporciona para ayudar a ampliar los componentes existentes que solo tienen un cuadro de diálogo definido para la IU clásica (basado en ExtJS) o basado en la IU de Granite y Coral 2. La herramienta utiliza el cuadro de diálogo original para crear un cuadro de diálogo duplicado diseñado para la interfaz de usuario estándar, basado en Granite UI y Coral 3.
 
-La herramienta de conversión de diálogos forma parte de la [Conjunto de herramientas de modernización de Adobe](modernization-tools.md).
+La herramienta de conversión de cuadros de diálogo forma parte del [grupo de herramientas de modernización de Adobes](modernization-tools.md).

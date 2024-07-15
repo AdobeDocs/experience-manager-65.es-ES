@@ -30,6 +30,6 @@ Puede especificar la configuración regional utilizada al procesar un formulario
 
 1. En Internacionalización, en la lista Conjunto de caracteres, seleccione un conjunto de caracteres. Esta configuración depende de la API utilizada, renderHTMLForm o renderPDFForm. Para especificar un conjunto de caracteres distinto de los enumerados, seleccione Personalizado y especifique un valor de codificación en el cuadro que se muestra.
 
-   Para las transformaciones de HTML AEM, los formularios de datos de la aplicación admiten valores de codificación de caracteres definidos por el `java.nio.charset` paquete. Si sFormPreference es PDFForm, solo se admiten conjuntos de caracteres específicos. El conjunto de caracteres debe ser un nombre canónico válido. El valor predeterminado es ISO-8859-1.
+   Para las transformaciones de HTML AEM, los formularios de la aplicación admiten valores de codificación de caracteres definidos por el paquete `java.nio.charset`. Si sFormPreference es PDFForm, solo se admiten conjuntos de caracteres específicos. El conjunto de caracteres debe ser un nombre canónico válido. El valor predeterminado es ISO-8859-1.
 
 1. Haga clic en Guardar.

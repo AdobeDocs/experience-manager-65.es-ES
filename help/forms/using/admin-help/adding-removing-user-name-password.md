@@ -22,12 +22,12 @@ Desde la página Administración de almacén de confianza, puede agregar y quita
 
 ## Agregar credencial de nombre de usuario y contraseña {#add-a-user-name-and-password-credential}
 
-1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de almacén de confianza > Credenciales de usuario y contraseña]** y luego haga clic en **[!UICONTROL Añadir]**.
-1. En el **[!UICONTROL Nombre de perfil]** , escriba un nombre para la credencial.
-1. En el **[!UICONTROL Nombre de usuario]** , escriba un nombre de usuario único.
-1. En el **[!UICONTROL Contraseña]** , escriba una contraseña para el usuario y haga clic en **[!UICONTROL OK]**.
+1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración del almacén de confianza > Credenciales de usuario y contraseña]** y, a continuación, haga clic en **[!UICONTROL Agregar]**.
+1. En el cuadro **[!UICONTROL Nombre de perfil]**, escriba un nombre para la credencial.
+1. En el cuadro **[!UICONTROL Nombre de usuario]**, escriba un nombre de usuario único.
+1. En el cuadro **[!UICONTROL Contraseña]**, escriba una contraseña para el usuario y haga clic en **[!UICONTROL Aceptar]**.
 
 ## Eliminar una credencial de nombre de usuario y contraseña {#delete-a-user-name-and-password-credential}
 
-1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de almacén de confianza > Credenciales de usuario y contraseña]**.
-1. Seleccione las casillas de verificación de las credenciales que desee eliminar y haga clic en **[!UICONTROL Eliminar]** y haga clic en **[!UICONTROL OK]**.
+1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración del almacén de confianza > Credenciales de usuario y contraseña]**.
+1. Active las casillas de verificación de las credenciales que desee eliminar, haga clic en **[!UICONTROL Eliminar]** y, a continuación, haga clic en **[!UICONTROL Aceptar]**.

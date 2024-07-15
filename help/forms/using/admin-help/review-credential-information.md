@@ -22,7 +22,7 @@ Las credenciales contienen información que describe su uso previsto y a la que 
 
 1. Abra un explorador web e introduzca esta dirección URL:
 
-   http://localhost:port/ReaderExtensions (donde *puerto* es el número de puerto del servidor de aplicaciones)
+   http://localhost:port/ReaderExtensions (donde *port* es el número de puerto del servidor de aplicaciones)
 
 1. Inicie sesión con el nombre de usuario y la contraseña predeterminados:
 

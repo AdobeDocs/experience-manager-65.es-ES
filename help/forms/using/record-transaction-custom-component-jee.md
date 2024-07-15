@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Registre una transacción para las API de componentes personalizadas para AEM Forms en JEE {#record-a-transaction-for-custom-components}
 
-Al utilizar API facturables en el componente personalizado, puede habilitar la creación de informes de transacciones para el componente. Para habilitar los informes de transacciones, modifique la `component.xml` del componente y añada la etiqueta que se indica a continuación en la operación para la que se deben habilitar los informes de transacciones.
+Al utilizar API facturables en el componente personalizado, puede habilitar la creación de informes de transacciones para el componente. Para habilitar los informes de transacciones, modifique el archivo `component.xml` del componente y agregue la etiqueta que se indica a continuación en la operación para la cual se deben habilitar los informes de transacciones.
 
 **Etiqueta**: `<transaction-operation-type>CONVERT</transaction-operation-type> // Supported values are SUBMIT, CONVERT, RENDER.`
 
@@ -26,14 +26,14 @@ Si debe capturar más de una transacción para una API, como una API por lotes e
 
 **Para registrar el recuento de transacciones variadas:**
 
-1. Importar clase `"com.adobe.idp.dsc.InvocationContextStack"` en el código. La clase forma parte del `adobe-livecycle-client.jar` archivo sdk. El archivo sdk está disponible en `<AEM_Forms_JEE_Install>\sdk\client-libs\common`
+1. Importe la clase `"com.adobe.idp.dsc.InvocationContextStack"` en el código. La clase forma parte del archivo del SDK `adobe-livecycle-client.jar`. El archivo del SDK está disponible en `<AEM_Forms_JEE_Install>\sdk\client-libs\common`
 
    >[!NOTE]
    > Actualice el archivo de cliente compartido anteriormente en el proyecto de cliente con el nuevo archivo en caso de que ya esté empaquetado.
 
 1. En la API para la cual se deben registrar varias transacciones:
-   1. Agregue lógica para poder almacenar el recuento de transacciones en alguna variable entera, como, `transaction_count`.
-   1. Cuando la operación se realice correctamente, agregue. `InvocationContextStack.recordTransactionCount(transaction_count)`.
+   1. Agregue lógica para poder almacenar el recuento de transacciones en alguna variable entera, como `transaction_count`.
+   1. Cuando la operación se realice correctamente, agregue `InvocationContextStack.recordTransactionCount(transaction_count)`.
 
 <!--For example, you can set count for your custom component by importing class `"com.adobe.idp.dsc.InvocationContextStack"` in the code available at `adobe-livecycle-client.jar`  and determine the transaction count basis API input/result and add (In this case we add count is equal to 3):
 `InvocationContextStack.recordTransactionCount(<count>).` to 

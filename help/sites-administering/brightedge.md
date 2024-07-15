@@ -63,10 +63,10 @@ Asocie páginas con una configuración de BrightEdge para enviar datos de págin
 Active una configuración de BrightEdge para replicarla en la instancia de publicación y permitir que las páginas publicadas interactúen con el servicio BrightEdge.
 
 1. En el carril, haga clic en Sitios y, a continuación, busque y seleccione la página que asoció con la configuración de BrightEdge.
-1. Haga clic en el icono Publicar y, a continuación, en Publicar.
+1. Haga clic en el icono Publish y, a continuación, en Publish.
 
    ![chlimage_1-7](assets/chlimage_1-7a.png)
 
-1. En la lista de configuraciones que aparecen, asegúrese de que la configuración de BrightEdge esté seleccionada y, a continuación, haga clic en Publicar.
+1. En la lista de configuraciones que aparecen, asegúrese de que la configuración de BrightEdge esté seleccionada y, a continuación, haga clic en Publish.
 
    ![chlimage_1-8](assets/chlimage_1-8a.png)

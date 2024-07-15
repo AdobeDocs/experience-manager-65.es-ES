@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Uso de versiones semánticas {#use-semantic-versioning}
 
-Las prácticas recomendadas acordadas para la numeración de versiones semánticas se encuentran en [https://semver.org/](https://semver.org/).
+Se pueden encontrar prácticas recomendadas acordadas para la numeración de versiones semánticas en [https://semver.org/](https://semver.org/).
 
 ## No incruste más clases y tarros de los estrictamente necesarios en los paquetes OSGi {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
@@ -34,7 +34,7 @@ Para las dependencias en tiempo de compilación en archivos POM, siempre depende
 
 Cuando se ha exportado un paquete, se ha creado una API de la que otros pueden depender. Asegúrese de exportar lo menos posible y de que lo que se exporta es una API. Es mucho más fácil tomar un método/clase privado y hacerlo público que tomar algo que se exportó anteriormente y hacerlo privado.
 
-Coloque siempre las implementaciones en una ubicación independiente *impl* paquete. De forma predeterminada, la variable *maven-bundle-plugin* exporta cualquier elemento del proyecto que no tenga un *impl* en su nombre.
+Coloque siempre las implementaciones en un paquete *impl* independiente. De manera predeterminada, *maven-bundle-plugin* exporta cualquier elemento del proyecto que no tenga *impl* en su nombre.
 
 ## Siempre defina explícitamente una versión semántica para cada paquete exportado {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 

@@ -28,7 +28,7 @@ El entorno de creación ofrece mecanismos para crear, actualizar y revisar el co
 * Un autor crea y revisa el contenido (que puede ser de varios tipos; por ejemplo, páginas, recursos, publicaciones, etc.)
 * que, en algún momento, se publicará en su sitio web.
 
-![Información general sobre entornos](assets/chlimage_1-132.png)
+![Información general de entornos](assets/chlimage_1-132.png)
 
 AEM En el entorno de creación, la funcionalidad de la creación de informes está disponible a través de dos interfaces de usuario. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
 
@@ -58,15 +58,15 @@ Además, hay tareas administrativas que le ayudan a administrar su contenido:
 
 >[!NOTE]
 >
->AEM también está en la [administrado](/help/sites-administering/home.md) (para la mayoría de las tareas) del entorno de creación.
+>AEM también se [administra](/help/sites-administering/home.md) (para la mayoría de las tareas) a la del entorno de creación.
 
 #### Entorno de publicación {#publish-environment}
 
-AEM Cuando esté listo, el contenido del sitio de la se publica en el **entorno de publicación**. Aquí las páginas del sitio web se ponen a disposición de la audiencia objetivo de acuerdo con la apariencia de la interfaz diseñada.
+AEM Cuando esté listo, el contenido del sitio de la se publicará en el **entorno de publicación**. Aquí las páginas del sitio web se ponen a disposición de la audiencia objetivo de acuerdo con la apariencia de la interfaz diseñada.
 
 Por lo general, el entorno de publicación se encuentra dentro de la zona desmilitarizada; es decir, disponible para Internet, pero ya no bajo la plena protección de la red interna.
 
-AEM Cuando el sitio de la es un [sitio comunitario](/help/communities/overview.md), o incluye [Componentes de Communities](/help/communities/author-communities.md), los visitantes (miembros) del sitio que hayan iniciado sesión pueden interactuar con las funciones de las Comunidades. Por ejemplo, pueden publicar en un foro, publicar un comentario o seguir a otros miembros. A los miembros se les puede conceder permiso para realizar actividades que normalmente se limitan al entorno de creación, como crear páginas nuevas (grupos de la comunidad), artículos de blogs y moderar las publicaciones de otros miembros.
+AEM Si el sitio de la comunidad es un [sitio de la comunidad](/help/communities/overview.md) o incluye [componentes de la comunidad](/help/communities/author-communities.md), los visitantes (miembros) del sitio que hayan iniciado sesión podrán interactuar con las características de la comunidad. Por ejemplo, pueden publicar en un foro, publicar un comentario o seguir a otros miembros. A los miembros se les puede conceder permiso para realizar actividades que normalmente se limitan al entorno de creación, como crear páginas nuevas (grupos de la comunidad), artículos de blogs y moderar las publicaciones de otros miembros.
 
 >[!NOTE]
 >
@@ -84,4 +84,4 @@ AEM Cuando el sitio de la es un [sitio comunitario](/help/communities/overview.m
 
 #### Dispatcher {#dispatcher}
 
-Para optimizar el rendimiento de los visitantes del sitio web, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)** implementa almacenamiento en caché y equilibrio de carga.
+Para optimizar el rendimiento de los visitantes de tu sitio web, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)** implementa almacenamiento en caché y equilibrio de carga.

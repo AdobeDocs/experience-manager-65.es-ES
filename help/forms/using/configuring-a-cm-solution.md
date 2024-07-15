@@ -37,7 +37,7 @@ Siga los siguientes pasos para definir un URL de instancia de autor para la rest
 
 ## Definir la URL de instancia de publicación para ActivationManagerImpl (administrador de activación de instancias públicas) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
-Siga estos pasos para poder definir la URL de instancia de publicación para el administrador de activación de instancias públicas:
+Siga estos pasos para poder definir la URL de instancia de Publish para el administrador de activación de instancias públicas:
 
 1. Vaya a *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Inicie sesión con las credenciales de usuario de la consola de administración OSGi. Las credenciales predeterminadas son admin/admin.
 1. Busque y haga clic en el icono **[!UICONTROL Editar]** junto a la configuración **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]**.

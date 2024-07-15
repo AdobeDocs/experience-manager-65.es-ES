@@ -33,7 +33,7 @@ Una vez que una etiqueta está preparada y lista, el servicio ahora puede aplica
 
 En segundo plano, el servicio de contenido inteligente utiliza el marco de trabajo de Adobe Sensei AI para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar las etiquetas relevantes a un conjunto diferente de recursos.
 
-Smart Content Service es un servicio en la nube alojado en [!DNL Adobe Developer Console]. Para usarlo en [!DNL Adobe Experience Manager], el administrador del sistema debe integrar su [!DNL Experience Manager] implementación con [!DNL Adobe Developer Console].
+El servicio de contenido inteligente es un servicio en la nube que está hospedado en [!DNL Adobe Developer Console]. Para usarlo en [!DNL Adobe Experience Manager], el administrador del sistema debe integrar su implementación de [!DNL Experience Manager] con [!DNL Adobe Developer Console].
 
 En resumen, estos son los pasos principales para utilizar el servicio de contenido inteligente:
 
@@ -46,11 +46,11 @@ En resumen, estos son los pasos principales para utilizar el servicio de conteni
 
 ## Requisitos previos y formatos admitidos {#prerequisites}
 
-Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en [!DNL Adobe Developer Console]:
+Antes de usar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en [!DNL Adobe Developer Console]:
 
 * Una cuenta de Adobe ID con privilegios de administrador para la organización.
 * Habilite el servicio de contenido inteligente para su organización.
-* Para agregar el paquete base de Smart Content Services a una implementación, otorgue una licencia a [!DNL Adobe Experience Manager Sites] Paquete base y [!DNL Assets] complemento de.
+* Para agregar el paquete base de Smart Content Services a una implementación, obtenga la licencia del paquete base [!DNL Adobe Experience Manager Sites] y del complemento [!DNL Assets].
 
 El servicio aplica etiquetas inteligentes a los recursos de los siguientes tipos MIME:
 
@@ -83,35 +83,35 @@ El servicio aplica etiquetas inteligentes a las representaciones de recursos de 
 
 El servicio de contenido inteligente está disponible para su compra como complemento de [!DNL Experience Manager]. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a [!DNL Adobe I/O].
 
-El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con [!DNL Experience Manager]. Para integrar el servicio con [!DNL Experience Manager Assets], consulte [Configuración de etiquetas inteligentes](config-smart-tagging.md).
+El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con [!DNL Experience Manager]. Para integrar el servicio con [!DNL Experience Manager Assets], consulte [Configurar etiquetas inteligentes](config-smart-tagging.md).
 
-El proceso de incorporación se completa cuando el administrador configura el servicio y añade usuarios en [!DNL Experience Manager].
+El proceso de incorporación se completa cuando el administrador configura el servicio y agrega usuarios en [!DNL Experience Manager].
 
 ## Revisión de recursos y etiquetas {#reviewing-assets-and-tags}
 
 Una vez que se haya incorporado, lo primero que debe hacer es identificar un conjunto de etiquetas que describa mejor estas imágenes en el contexto de su negocio.
 
-A continuación, revise las imágenes para identificar el conjunto de imágenes que mejor represente el producto para un requisito empresarial determinado. Asegúrese de que los recursos del conjunto depurado se ajustan a [Directrices de formación de Smart Content Service](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
+A continuación, revise las imágenes para identificar el conjunto de imágenes que mejor represente el producto para un requisito empresarial determinado. Asegúrese de que los recursos del conjunto depurado cumplan las [directrices de formación del servicio de contenido inteligente](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 
 Agregue los recursos a una carpeta y aplique las etiquetas a cada recurso desde la página de propiedades. A continuación, ejecute el flujo de trabajo de formación en esta carpeta. El conjunto depurado de recursos permite al servicio de contenido inteligente formar de forma eficaz más recursos mediante las definiciones de taxonomía.
 
 >[!NOTE]
 >
 >1. La formación es un proceso irrevocable. El Adobe recomienda revisar las etiquetas del conjunto depurado de recursos mucho antes de entrenar al servicio de contenido inteligente en las etiquetas.
->1. Antes de aprender a utilizar una etiqueta, consulte [Directrices de formación de Smart Content Service](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
+>1. Antes de entrenar una etiqueta, consulte [Directrices de aprendizaje del servicio de contenido inteligente](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 >1. Cuando entrena el servicio de contenido inteligente por primera vez, Adobe recomienda que lo imparta en al menos dos etiquetas distintas.
 
 ## Comprender [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes {#understandsearch}
 
-De forma predeterminada, [!DNL Experience Manager] la búsqueda combina los términos de búsqueda con una `AND` Cláusula. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes añade un `OR` para buscar cualquiera de los términos de búsqueda relacionados con las etiquetas inteligentes. Por ejemplo, considere la posibilidad de buscar `woman running`. Recursos con solo `woman` o simplemente `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, un recurso etiquetado con `woman` o `running` el uso de etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Por lo tanto, los resultados de búsqueda son una combinación de:
+De manera predeterminada, la búsqueda [!DNL Experience Manager] combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para buscar cualquiera de los términos de búsqueda relacionados con las etiquetas inteligentes. Por ejemplo, considere buscar `woman running`. Assets con solo `woman` o solo `running` palabra clave en los metadatos no aparece en los resultados de búsqueda de forma predeterminada. Sin embargo, un recurso etiquetado con `woman` o `running` mediante etiquetas inteligentes aparece en dicha consulta de búsqueda. Por lo tanto, los resultados de búsqueda son una combinación de:
 
-* Recursos con `woman` y `running` palabras clave en los metadatos.
+* Assets con palabras clave `woman` y `running` en los metadatos.
 
-* Recursos etiquetados de forma inteligente con cualquiera de las palabras clave.
+* Assets Smart etiquetado con cualquiera de las palabras clave.
 
 Los resultados de búsqueda que coinciden con todos los términos de búsqueda en los campos de metadatos se muestran primero, seguidos de los resultados de búsqueda que coinciden con cualquiera de los términos de búsqueda en las etiquetas inteligentes. En el ejemplo anterior, el orden aproximado de visualización de los resultados de búsqueda es:
 
-1. Coincidencias de `woman running` en los distintos campos de metadatos.
+1. Coincide con `woman running` en los distintos campos de metadatos.
 1. Coincidencias de `woman running` en etiquetas inteligentes.
 1. Coincidencias de `woman` o de `running` en etiquetas inteligentes.
 
@@ -131,7 +131,7 @@ Puede ejecutar el flujo de trabajo de etiquetado periódicamente o siempre que s
 
 ### Etiquetado periódico {#periodic-tagging}
 
-Puede habilitar el Servicio de contenido inteligente para que etiquete periódicamente recursos de una carpeta. Abra la página de propiedades de la carpeta de recursos y seleccione **[!UICONTROL Habilitar etiquetas inteligentes]** en el **[!UICONTROL Detalles]** y guarde los cambios.
+Puede habilitar el Servicio de contenido inteligente para que etiquete periódicamente recursos de una carpeta. Abra la página de propiedades de la carpeta de recursos, seleccione **[!UICONTROL Habilitar etiquetas inteligentes]** en la ficha **[!UICONTROL Detalles]** y guarde los cambios.
 
 Una vez seleccionada esta opción para una carpeta, el servicio de contenido inteligente etiqueta automáticamente los recursos de la carpeta. De forma predeterminada, el flujo de trabajo de etiquetado se ejecuta todos los días a las 12:00 a.m.
 
@@ -145,28 +145,28 @@ Puede almacenar en déclencheur el flujo de trabajo de etiquetado desde la conso
 
 #### Etiquetado de recursos desde la consola de flujo de trabajo {#tagging-assets-from-the-workflow-console}
 
-1. Entrada [!DNL Experience Manager] interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
-1. Desde el **[!UICONTROL Modelos de flujo de trabajo]** , seleccione la **[!UICONTROL Recursos de etiquetas inteligentes DAM]** flujo de trabajo y haga clic en **[!UICONTROL Iniciar flujo de trabajo]** en la barra de herramientas.
+1. En la interfaz de [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el flujo de trabajo **[!UICONTROL Assets de etiquetas inteligentes DAM]** y, a continuación, haga clic en **[!UICONTROL Iniciar flujo de trabajo]** en la barra de herramientas.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. En el **[!UICONTROL Ejecutar flujo de trabajo]** , vaya a la carpeta de carga útil que contiene los recursos en los que desea aplicar las etiquetas automáticamente.
-1. Especifique un título para el flujo de trabajo y un comentario opcional. Clic **[!UICONTROL Ejecutar]**.
+1. En el cuadro de diálogo **[!UICONTROL Ejecutar flujo de trabajo]**, vaya a la carpeta de carga útil que contiene los recursos en los que desea aplicar las etiquetas automáticamente.
+1. Especifique un título para el flujo de trabajo y un comentario opcional. Haga clic en **[!UICONTROL Ejecutar]**.
 
-   ![tagging_dialog](assets/tagging_dialog.png)
+   ![cuadro de diálogo_etiquetado](assets/tagging_dialog.png)
 
    Para comprobar si el servicio de contenido inteligente ha etiquetado correctamente los recursos, vaya a la carpeta de recursos y revise las etiquetas.
 
 #### Etiquetado de recursos de la cronología {#tagging-assets-from-the-timeline}
 
-1. Desde el [!DNL Assets] interfaz de usuario, seleccione la carpeta que contiene los recursos o los recursos específicos a los que desea aplicar las etiquetas inteligentes.
-1. En la esquina superior izquierda, abra el **[!UICONTROL Cronología]**.
-1. Abra las acciones desde la parte inferior de la barra lateral izquierda y haga clic en **[!UICONTROL Iniciar flujo de trabajo]**.
+1. En la interfaz de usuario [!DNL Assets], seleccione la carpeta que contiene los recursos o los recursos específicos a los que desea aplicar las etiquetas inteligentes.
+1. En la esquina superior izquierda, abra la **[!UICONTROL cronología]**.
+1. Abra acciones desde la parte inferior de la barra lateral izquierda y haga clic en **[!UICONTROL Iniciar flujo de trabajo]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Seleccione el **[!UICONTROL Recursos de etiqueta inteligente DAM]** y especifique un título para el flujo de trabajo.
-1. Clic **[!UICONTROL Inicio]**. El flujo de trabajo aplica etiquetas a los recursos. para comprobar si el servicio de contenido inteligente ha etiquetado correctamente los recursos, vaya a la carpeta de recursos y revise las etiquetas.
+1. Seleccione el flujo de trabajo **[!UICONTROL DAM Smart Tag Assets]** y especifique un título para el flujo de trabajo.
+1. Haga clic en **[!UICONTROL Iniciar]**. El flujo de trabajo aplica etiquetas a los recursos. para comprobar si el servicio de contenido inteligente ha etiquetado correctamente los recursos, vaya a la carpeta de recursos y revise las etiquetas.
 
 >[!NOTE]
 >
@@ -183,21 +183,21 @@ También puede asignar una clasificación más alta a una etiqueta para aumentar
 1. En el cuadro de búsqueda, busque recursos basados en una etiqueta como palabra clave.
 1. Para identificar una imagen que no encuentre relevante para la búsqueda, revise los resultados de la búsqueda.
 1. Seleccione la imagen y haga clic en **[!UICONTROL Administrar etiquetas]** en la barra de herramientas.
-1. Desde el **[!UICONTROL Administrar etiquetas]** , revise las etiquetas. Si no desea buscar la imagen en función de una etiqueta específica, seleccione la etiqueta y haga clic en **[!UICONTROL Eliminar]** en la barra de herramientas. También puede hacer clic en `x` símbolo que aparece junto a una etiqueta.
-1. De forma opcional, para asignar una clasificación más alta a una etiqueta, seleccione la etiqueta y haga clic en **[!UICONTROL Promocionar]** en la barra de herramientas. La etiqueta que promueva se moverá al **[!UICONTROL Etiquetas]** sección.
-1. Clic **[!UICONTROL Guardar]** y luego haga clic en **[!UICONTROL OK]**
-1. Vaya a **[!UICONTROL Propiedades]** página para la imagen. Observe que a la etiqueta promocionada se le asigna más relevancia y aparece antes en los resultados de búsqueda.
+1. En la página **[!UICONTROL Administrar etiquetas]**, revise las etiquetas. Si no desea buscar la imagen según una etiqueta específica, seleccione la etiqueta y haga clic en **[!UICONTROL Eliminar]** en la barra de herramientas. También puede hacer clic en el símbolo `x` que aparece junto a una etiqueta.
+1. De manera opcional, para asignar una clasificación más alta a una etiqueta, selecciónela y haga clic en **[!UICONTROL Promocionar]** en la barra de herramientas. La etiqueta que promociones se moverá a la sección **[!UICONTROL Etiquetas]**.
+1. Haga clic en **[!UICONTROL Guardar]** y luego en **[!UICONTROL Aceptar]**
+1. Vaya a la página **[!UICONTROL Propiedades]** de la imagen. Observe que a la etiqueta promocionada se le asigna más relevancia y aparece antes en los resultados de búsqueda.
 
 ## Sugerencias y limitaciones {#tips-best-practices-limitations}
 
 * Para entrenar el modelo, utilice las imágenes más adecuadas. El curso de formación no se puede revertir o el modelo de formación no se puede eliminar. La precisión del etiquetado depende de la formación actual, por lo que debe hacerlo con cuidado.
 * El uso de los servicios de contenido inteligente está limitado a un máximo de 2 millones de imágenes etiquetadas al año. Todas las imágenes duplicadas que se procesan y etiquetan se cuentan como imágenes etiquetadas.
 * Si ejecuta el flujo de trabajo de etiquetado desde la cronología, puede aplicar etiquetas en un máximo de 15 recursos a la vez.
-* Las etiquetas inteligentes solo funcionan para formatos de imagen PNG y JPG. Por lo tanto, los recursos compatibles que tengan representaciones creadas en estos dos formatos se etiquetan con etiquetas inteligentes.
+* JPG Las etiquetas inteligentes solo funcionan para formatos de imagen PNG y. Por lo tanto, los recursos compatibles que tengan representaciones creadas en estos dos formatos se etiquetan con etiquetas inteligentes.
 
 >[!MORELIKETHIS]
 >
->* [Información general y formación sobre etiquetas inteligentes](enhanced-smart-tags.md)
->* [Configuración del etiquetado inteligente](config-smart-tagging.md)
+>* [Información general y cómo entrenar etiquetas inteligentes](enhanced-smart-tags.md)
+>* [Configurar el etiquetado inteligente](config-smart-tagging.md)
 >* [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-oauth.md)
 >* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

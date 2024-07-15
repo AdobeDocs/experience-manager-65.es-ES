@@ -1,5 +1,5 @@
 ---
-title: Comprobaciones posteriores a la actualización y solución de problemas
+title: Comprobación y solución de problemas de actualización de Post
 description: Obtenga información sobre cómo solucionar problemas que podrían aparecer después de una actualización.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 ---
 
-# Comprobaciones posteriores a la actualización y solución de problemas{#post-upgrade-checks-and-troubleshooting}
+# Comprobación y solución de problemas de actualización de Post{#post-upgrade-checks-and-troubleshooting}
 
-## Comprobaciones posteriores a la actualización {#post-upgrade-checks}
+## Comprobaciones de actualización de Post {#post-upgrade-checks}
 
-Siguiendo las [Actualización in situ](/help/sites-deploying/in-place-upgrade.md) se deben ejecutar las siguientes actividades para finalizar la actualización. AEM Se supone que se ha iniciado con el JAR 6.5 y que se ha implementado la base de código actualizada.
+Después de la [actualización in situ](/help/sites-deploying/in-place-upgrade.md), se deben ejecutar las siguientes actividades para finalizar la actualización. AEM Se supone que se ha iniciado con el JAR 6.5 y que se ha implementado la base de código actualizada.
 
 * [Verificar registros para que la actualización se realice correctamente](#main-pars-header-290365562)
 
 * [Verificar paquetes OSGi](#main-pars-header-1637350649)
 
-* [Verificar versión de Oak](#main-pars-header-1293049773)
+* [Verificar la versión de Oak](#main-pars-header-1293049773)
 
 * [Inspect la carpeta PreUpgradeBackup](#main-pars-header-988995987)
 
@@ -46,7 +46,7 @@ Siguiendo las [Actualización in situ](/help/sites-deploying/in-place-upgrade.md
 
 ### Verificación de registros para actualización correcta {#verify-logs-for-upgrade-success}
 
-**upgrade.log**
+**actualización.log**
 
 En el pasado, la inspección del estado posterior a la actualización de la instancia requería una inspección cuidadosa de varios archivos de registro, partes del repositorio y el Launchpad. La generación de un informe posterior a la actualización puede ayudar a detectar actualizaciones defectuosas antes de activarse.
 
@@ -57,7 +57,7 @@ Más concretamente, garantiza que:
 * Los errores de actualización detectados por el marco de actualización están centralizados en un único informe de actualización;
 * El informe de actualización incluye indicadores sobre la intervención manual necesaria.
 
-Para ello, se han realizado cambios en la forma en que se generan los registros en la `upgrade.log` archivo.
+Para dar cabida a esto, se han realizado cambios en la forma en que se generan los registros en el archivo `upgrade.log`.
 
 Este es un informe de ejemplo que muestra que no hay errores durante la actualización:
 
@@ -69,27 +69,27 @@ Este es un informe de ejemplo que muestra un paquete que no se instaló durante 
 
 **error.log**
 
-AEM El error.log debe revisarse cuidadosamente durante y después del inicio de la ejecución de la ejecución de la aplicación utilizando el JAR de la versión de destino. Deben revisarse todas las advertencias o errores. En general, es mejor buscar problemas al principio del registro. Los errores que se producen más adelante en el registro pueden ser en realidad efectos secundarios de una causa raíz que se llama al principio del archivo. Si se producen errores y advertencias repetidos, consulte a continuación para [Análisis de problemas con la actualización](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
+AEM El error.log debe revisarse cuidadosamente durante y después del inicio de la ejecución de la ejecución de la aplicación utilizando el JAR de la versión de destino. Deben revisarse todas las advertencias o errores. En general, es mejor buscar problemas al principio del registro. Los errores que se producen más adelante en el registro pueden ser en realidad efectos secundarios de una causa raíz que se llama al principio del archivo. Si se producen errores y advertencias repetidos, consulte a continuación [Análisis de problemas con la actualización](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
 
 ### Verificar paquetes OSGi {#verify-osgi-bundles}
 
-Vaya a la consola OSGi `/system/console/bundles` y compruebe si no se ha iniciado ningún paquete. Si algún paquete está en estado instalado, consulte el `error.log` para determinar el problema de raíz.
+Vaya a la consola OSGi `/system/console/bundles` y compruebe si no se han iniciado los paquetes. Si algún paquete está en estado instalado, consulte `error.log` para determinar el problema de raíz.
 
-### Verificar versión de Oak {#verify-oak-version}
+### Verificar la versión de Oak {#verify-oak-version}
 
-Después de la actualización, debe ver que la versión de Oak se ha actualizado a **1.10.2**. Para verificar la versión de Oak, vaya a la consola OSGi y observe la versión asociada con los paquetes Oak: Oak Core, Oak Commons, Oak Segment Tar.
+Después de la actualización, debería ver que la versión de Oak se ha actualizado a **1.10.2**. Para comprobar la versión de Oak, vaya a la consola OSGi y observe la versión asociada a los paquetes de Oak: Oak Core, Oak Commons, Segment TAR de Oak.
 
 ### Carpeta PreUpgradeBackup de Inspect {#inspect-preupgradebackup-folder}
 
-AEM Durante la actualización, intenta realizar una copia de seguridad de las personalizaciones y almacenarlas debajo de `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Para ver esta carpeta en CRXDE Lite, es posible que tenga que [habilitar CRXDE Lite temporalmente](/help/sites-administering/enabling-crxde-lite.md).
+AEM Durante la actualización, el usuario intenta realizar una copia de seguridad de las personalizaciones y almacenarlas debajo de `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Para ver esta carpeta en CRXDE Lite, es posible que tengas que [habilitar temporalmente el CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
-La carpeta con la marca de tiempo debe tener una propiedad denominada `mergeStatus` con un valor de `COMPLETED`. El **para procesar** debe estar vacía y la variable **sobrescrito** node indica qué nodos se sobrescribieron durante la actualización. El contenido debajo del nodo de sobras indica contenido que no se pudo combinar de forma segura durante la actualización. Si la implementación depende de cualquiera de los nodos secundarios (y no están ya instalados en el paquete de código actualizado), deben combinarse manualmente.
+La carpeta con la marca de tiempo debe tener una propiedad denominada `mergeStatus` con un valor de `COMPLETED`. La carpeta **to-process** debe estar vacía y el nodo **overwrite** indica qué nodos se sobrescribieron durante la actualización. El contenido debajo del nodo de sobras indica contenido que no se pudo combinar de forma segura durante la actualización. Si la implementación depende de cualquiera de los nodos secundarios (y no están ya instalados en el paquete de código actualizado), deben combinarse manualmente.
 
 Deshabilite el CRXDE Lite después de este ejercicio si se encuentra en un entorno de ensayo o producción.
 
 ### Validación inicial de páginas {#initial-validation-of-pages}
 
-AEM Realice una validación inicial en varias páginas de la lista de distribución de recursos Si actualiza un entorno de autor, abra la página de inicio y la página de bienvenida ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). En los entornos de creación y publicación, abra algunas páginas de aplicación y pruebe a fumar para que se representen correctamente. Si se produce algún problema, consulte la `error.log` para solucionar problemas.
+AEM Realice una validación inicial en varias páginas de la lista de distribución de recursos Si actualiza un entorno de creación, abra la página de inicio y la página de bienvenida ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). En los entornos de autor y de Publish, abra algunas páginas de aplicación y pruebe a fumar para que se representen correctamente. Si ocurre algún problema, consulte `error.log` para solucionar los problemas.
 
 ### AEM Aplicar paquetes de servicio {#apply-aem-service-packs}
 
@@ -97,13 +97,13 @@ AEM Aplique cualquier paquete de servicio pertinente de 6.5 de si se ha publicad
 
 ### AEM Migración de funciones de {#migrate-aem-features}
 
-AEM Varias funciones de requieren pasos adicionales después de la actualización. AEM Puede encontrar una lista completa de estas funciones y los pasos para migrarlas en la versión 6.5 de en el [Actualizar código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md) página.
+AEM Varias funciones de requieren pasos adicionales después de la actualización. AEM Encontrará una lista completa de estas características y los pasos para migrarlas en la versión 6.5 de la aplicación en la página [Actualización del código y las personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md).
 
 ### Verificar las configuraciones de mantenimiento programadas {#verify-scheduled-maintenance-configurations}
 
 #### Activar recolección de basura del almacén de datos {#enable-data-store-garbage-collection}
 
-Si utiliza un almacén de datos de archivos, asegúrese de que la tarea de recolección de elementos no utilizados del almacén de datos esté habilitada y agregada a la lista de mantenimiento semanal. Se describen las instrucciones [aquí](/help/sites-administering/data-store-garbage-collection.md).
+Si utiliza un almacén de datos de archivos, asegúrese de que la tarea de recolección de elementos no utilizados del almacén de datos esté habilitada y agregada a la lista de mantenimiento semanal. Las instrucciones se describen [aquí](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -115,11 +115,11 @@ Si utiliza MongoMK o el nuevo formato de segmento TarMK, asegúrese de que la ta
 
 ### Ejecutar plan de prueba {#execute-test-plan}
 
-Ejecutar plan de prueba detallado según lo definido [Actualizar código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md) en el **Procedimiento de prueba** sección.
+Ejecute un plan de prueba detallado con según se define en [Actualización del código y las personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md) en la sección **Procedimiento de prueba**.
 
 ### Habilitar agentes de replicación {#enable-replication-agents}
 
-Una vez que el entorno de publicación se haya actualizado y validado completamente, habilite los agentes de replicación en el entorno de creación. Compruebe que los agentes puedan conectarse a las respectivas instancias de publicación. Consulte U [Procedimiento de actualización](/help/sites-deploying/upgrade-procedure.md) para obtener más información sobre el orden de los eventos.
+Una vez que el entorno de publicación se haya actualizado y validado completamente, habilite los agentes de replicación en el entorno de creación. Compruebe que los agentes pueden conectarse a las instancias de Publish correspondientes. Consulte U [Procedimiento de actualización](/help/sites-deploying/upgrade-procedure.md) para obtener más información sobre el orden de los eventos.
 
 ### Habilitar trabajos programados personalizados {#enable-custom-scheduled-jobs}
 
@@ -133,25 +133,25 @@ Estos escenarios deberían ayudar a rastrear la causa raíz de los problemas rel
 
 ### Error de migración de repositorio  {#repository-migration-failing-}
 
-La migración de datos de CRX2 a Oak debe ser factible para cualquier escenario que comience con Instancias de origen basadas en CQ 5.4. Asegúrese de seguir exactamente las instrucciones de actualización de este documento, que incluyen la preparación de la `repository.xml`, asegurándose de que no se inicie ningún autenticador personalizado mediante JAAS y de que se haya comprobado la existencia de incoherencias en la instancia antes de iniciar la migración.
+La migración de datos de CRX2 a Oak debe ser factible para cualquier escenario que comience con Instancias de Source basadas en CQ 5.4. Asegúrese de seguir exactamente las instrucciones de actualización de este documento, que incluyen la preparación de `repository.xml`, asegurándose de que no se inicie ningún autenticador personalizado a través de JAAS y de que se haya comprobado la existencia de incoherencias en la instancia antes de iniciar la migración.
 
-Si la migración sigue fallando, puede averiguar cuál es la causa principal inspeccionando el `upgrade.log`. Si el problema aún no se conoce, notifíquelo al Servicio de atención al cliente.
+Si la migración sigue fallando, puede averiguar cuál es la causa principal inspeccionando `upgrade.log`. Si el problema aún no se conoce, notifíquelo al Servicio de atención al cliente.
 
 ### La Actualización No Se Ha Ejecutado {#the-upgrade-did-not-run}
 
-Antes de comenzar los pasos de preparación, asegúrese de ejecutar el **origen** primero, ejecútela con el comando Java™ -jar aem-quickstart.jar. Esto es necesario para asegurarse de que el archivo quickstart.properties se genera correctamente. Si falta, la actualización no funcionará. También puede comprobar si el archivo está presente mirando en `crx-quickstart/conf` en la carpeta de instalación de la instancia de origen. AEM Además, al iniciar la actualización, se debe ejecutar con el comando Java™ -jar aem-quickstart.jar. AEM El inicio desde una secuencia de comandos de inicio no se iniciará en modo de actualización de la aplicación
+Antes de iniciar los pasos de preparación, asegúrese de ejecutar primero la instancia de **source** ejecutándola con el comando Java™ -jar aem-quickstart.jar. Esto es necesario para asegurarse de que el archivo quickstart.properties se genera correctamente. Si falta, la actualización no funcionará. También puede comprobar si el archivo está presente mirando en `crx-quickstart/conf` en la carpeta de instalación de la instancia de origen. AEM Además, al iniciar la actualización, se debe ejecutar con el comando Java™ -jar aem-quickstart.jar. AEM El inicio desde una secuencia de comandos de inicio no se iniciará en modo de actualización de la aplicación
 
 ### Los paquetes no se pueden actualizar  {#packages-and-bundles-fail-to-update-}
 
-Si los paquetes no se instalan durante la actualización, los paquetes que contienen tampoco se actualizarán. Esta categoría de problemas se debe a una configuración incorrecta del almacén de datos. También aparecerán como **ERROR** y **ADVERTIR** mensajes en el error.log. Dado que en la mayoría de estos casos el inicio de sesión predeterminado puede no funcionar, puede utilizar CRXDE directamente para inspeccionar y encontrar los problemas de configuración.
+Si los paquetes no se instalan durante la actualización, los paquetes que contienen tampoco se actualizarán. Esta categoría de problemas se debe a una configuración incorrecta del almacén de datos. También aparecerán como mensajes de **ERROR** y **ADVERTENCIA** en el error.log. Dado que en la mayoría de estos casos el inicio de sesión predeterminado puede no funcionar, puede utilizar CRXDE directamente para inspeccionar y encontrar los problemas de configuración.
 
 ### AEM Algunos paquetes de Bundle no están cambiando al estado activo. {#some-aem-bundles-are-not-switching-to-the-active-state}
 
 Si hay paquetes que no se inician, compruebe si hay dependencias no satisfechas.
 
-En caso de que este problema esté presente, pero se basa en una instalación fallida del paquete que provocó que los paquetes no se actualizaran, se considerarán incompatibles para la nueva versión. Para obtener más información sobre cómo solucionar este problema, consulte **Los paquetes no se pueden actualizar** arriba.
+En caso de que este problema esté presente, pero se basa en una instalación fallida del paquete que provocó que los paquetes no se actualizaran, se considerarán incompatibles para la nueva versión. Para obtener más información sobre cómo solucionar este problema, consulte **Error al actualizar paquetes y paquetes** más arriba.
 
-AEM También se recomienda comparar la lista de paquetes de una instancia nueva de 6.5 con la actualizada para detectar los paquetes que no se actualizaron. Esto proporcionará un ámbito más cercano de lo que se debe buscar en la `error.log`.
+AEM También se recomienda comparar la lista de paquetes de una instancia nueva de 6.5 con la actualizada para detectar los paquetes que no se actualizaron. Esto proporcionará un ámbito más cercano de lo que se debe buscar en `error.log`.
 
 ### Los paquetes personalizados no cambian al estado activo {#custom-bundles-not-switching-to-the-active-state}
 
@@ -173,13 +173,13 @@ Finalmente, compruebe si hay alguna configuración incorrecta con la que JavaScr
 
 Normalmente, las causas raíz de estos problemas son las mismas que para los paquetes que no se inician o los paquetes que no se instalan, con la única diferencia de que los problemas empiezan a producirse al utilizar los componentes por primera vez.
 
-La manera de lidiar con el código personalizado erróneo es realizar primero pruebas de humo para identificar la causa. Una vez encontrado, consulte las recomendaciones de esta sección [vincular] del artículo para ver cómo corregirlos.
+La manera de lidiar con el código personalizado erróneo es realizar primero pruebas de humo para identificar la causa. Cuando lo encuentre, consulte las recomendaciones de esta sección de [vínculo] del artículo para ver formas de solucionarlas.
 
 ### Faltan personalizaciones en /etc {#missing-customizations-under-etc}
 
-`/apps` y `/libs` se gestionan bien mediante la actualización, pero los cambios en `/etc` es posible que deba restaurarse manualmente desde `/var/upgrade/PreUpgradeBackup` después de la actualización. Asegúrese de comprobar esta ubicación para cualquier contenido que deba combinarse manualmente.
+`/apps` y `/libs` se gestionan bien mediante la actualización, pero es posible que sea necesario restaurar manualmente los cambios en `/etc` desde `/var/upgrade/PreUpgradeBackup` después de la actualización. Asegúrese de comprobar esta ubicación para cualquier contenido que deba combinarse manualmente.
 
-### Análisis de error.log y upgrade.log {#analyzing-the-error.log-and-upgrade.log}
+### Analizando error.log y upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
 En la mayoría de los casos, es necesario consultar los registros para detectar errores y encontrar la causa del problema. Sin embargo, con las actualizaciones, también es necesario monitorizar los problemas de dependencia, ya que es posible que los paquetes antiguos no se actualicen correctamente.
 
@@ -191,11 +191,11 @@ grep -v UnrelatedErrorString
 
 Algunos mensajes de error pueden no ser inmediatamente explicativos. En este caso, observar el contexto en el que se producen también puede ayudar a comprender dónde se creó el error. Puede separar el error mediante lo siguiente:
 
-* `grep -B` para añadir líneas antes del error;
+* `grep -B` por agregar líneas antes del error;
 
 o
 
-* `grep -A` para añadir líneas después de.
+* `grep -A` para agregar líneas después de.
 
 En algunos casos, también se pueden encontrar mensajes WARN, ya que puede haber casos válidos que conduzcan a este estado y la aplicación no siempre puede decidir si se trata de un error real. Asegúrese de consultar también estos mensajes.
 

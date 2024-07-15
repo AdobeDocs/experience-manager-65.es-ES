@@ -22,6 +22,6 @@ AEM AEM Si reinicia el SDK de la deteniendo los procesos de Java™, puede provo
 
 ## Solución
 
-AEM Para reiniciar el SDK de la, vaya a la ventana de comandos activa y pulse `Ctrl + C` para reiniciar el SDK.
+AEM Para reiniciar el SDK de la, vaya a la ventana de comandos activa y pulse el comando `Ctrl + C` para reiniciar el SDK.
 
 Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. AEM AEM El reinicio del SDK de la con métodos alternativos, como detener los procesos de Java™, puede generar incoherencias en el entorno de desarrollo de la.

@@ -67,9 +67,9 @@ Un modelo de fragmento de contenido describe una entidad.
 
 Dentro de un modelo:
 
-1. **Tipos de datos** permite definir los atributos individuales.
+1. **Tipos de datos** le permiten definir los atributos individuales.
 Por ejemplo, defina el campo que contiene el nombre de un profesor como **Texto** y sus años de servicio como un **Número**.
-1. Los tipos de datos **Referencia de contenido** y **Referencia a fragmento** AEM permite crear relaciones con otro contenido dentro de los recursos de la aplicación de contenido de la.
+1. AEM Los tipos de datos **Referencia de contenido** y **Referencia de fragmento** le permiten crear relaciones con otro contenido dentro de los elementos de contenido de la.
 1. El tipo de datos **referencia de fragmento** le permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
 
 Por ejemplo:

@@ -18,7 +18,7 @@ ht-degree: 7%
 
 # Uso de recursos{#working-with-assets}
 
-El [Herramientas y entorno de creación](/help/sites-authoring/author-environment-tools.md) proporciona información sobre el uso de [!UICONTROL Buscador de contenido] para buscar y utilizar recursos al editar páginas. AEM Assets proporciona otros métodos para trabajar con recursos:
+La sección [Herramientas y entorno de creación](/help/sites-authoring/author-environment-tools.md) proporciona información sobre cómo usar [!UICONTROL Buscador de contenido] para buscar y usar recursos al editar páginas. AEM Assets proporciona otros métodos para trabajar con recursos:
 
 * [Añadir funciones de Dynamic Media Classic a la página](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Uso de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)

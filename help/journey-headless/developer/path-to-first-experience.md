@@ -18,7 +18,7 @@ En esta parte del [Recorrido para desarrolladores de AEM sin encabezado](overvie
 
 ## La historia hasta ahora {#story-so-far}
 
-AEM En el documento anterior del recorrido sin encabezado de la, [AEM Introducción a la tecnología sin encabezado de](getting-started.md) ha aprendido la teoría básica de lo que es un CMS sin encabezado y ahora debería:
+AEM En el documento anterior del recorrido AEM sin encabezado de la, [Introducción a la sin encabezado](getting-started.md), ha aprendido la teoría básica de lo que es un CMS sin encabezado y ahora debería hacer lo siguiente:
 
 * Comprender los conceptos básicos de las características de AEM sin encabezado.
 * Conozca los requisitos previos para utilizar las características de AEM sin encabezado.
@@ -38,7 +38,7 @@ Este documento le ayudará a comprender los pasos necesarios para implementar su
 
 ## Requisitos  {#requirements}
 
-AEM Antes de continuar con este documento, asegúrese de haber revisado el documento anterior en el Recorrido para desarrolladores sin encabezado, que se encuentra en la sección de la página de inicio de sesión de la página de. [AEM Introducción a la tecnología sin encabezado de](getting-started.md) asegurándose de que:
+AEM Antes de continuar con este documento, asegúrese de haber revisado el documento anterior en el Recorrido AEM para desarrolladores sin encabezado, [Introducción a los desarrolladores sin encabezado](getting-started.md), y asegúrese de lo siguiente:
 
 * Cumplir los requisitos enumerados.
 * Tener en cuenta su propia definición de proyecto, en la que se incluya ámbito, funciones y rendimiento.
@@ -79,7 +79,7 @@ Los autores de contenido crean contenido en función de los modelos de contenido
 
 Antes de empezar con el contenido sin encabezado de AEM, debe asegurarse de que todas las funciones necesarias estén habilitadas. Esta sección describe lo que se requiere. Los pasos reales para realizar estos pasos se detallan más adelante en la sección [Recorrido para desarrolladores de AEM sin encabezado.](#overview.md)
 
-Si lo desea, también puede ver la [recursos adicionales](#additional-resources) para obtener más información sobre los temas concretos.
+Opcionalmente, también puede ver los [recursos adicionales](#additional-resources) para obtener más información sobre los temas individuales.
 
 ### Configuración {#configuration}
 
@@ -146,11 +146,11 @@ Sea cual sea su estilo de aprendizaje, Adobe quiere que tenga éxito a la hora d
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin encabezado revisando el documento [Modelo del contenido como modelos de contenido de AEM,](model-your-content.md) a continuación se incluyen algunos recursos opcionales adicionales que profundizan en varios conceptos mencionados en este documento, pero que no son necesarios para continuar el recorrido sin encabezado.
 
 * [Recorrido de traducción de AEM sin encabezado](/help/journey-headless/translation/overview.md): este recorrido de documentación le ofrece una amplia descripción de la tecnología sin encabezado, cómo sirve AEM el contenido sin encabezado y cómo puede traducirlo.
-* [Desarrollo sin encabezado para AEM Sites](/help/sites-developing/headless/introduction.md) AEM : Una introducción rápida para orientar al desarrollador sin encabezado de la con las funciones necesarias
+* [Desarrollo sin encabezado para AEM Sites AEM](/help/sites-developing/headless/introduction.md): una introducción rápida para orientar al desarrollador sin encabezado con las características necesarias para el desarrollo sin encabezado de la aplicación de la aplicación de código de la aplicación de código de la aplicación de código de tiempo de ejecución de
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.
 * [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
 * [AEM Guides de WKND, GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): este proyecto de GitHub incluye aplicaciones de ejemplo que destacan las API de GraphQL de AEM.
-* [Guía de introducción de Headless](/help/sites-developing/headless/introduction.md#getting-started) AEM AEM : Una introducción rápida a las funciones sin encabezado para los usuarios ya familiarizados con el uso de la tecnología de la información de la.
+* AEM AEM [Guía de introducción sin encabezado](/help/sites-developing/headless/introduction.md#getting-started): Una introducción rápida para la creación de funciones sin encabezado para los usuarios que ya conocen el uso de las funciones sin encabezado para los usuarios que ya tienen conocimientos de las funciones de la.
 * [Crear modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md): documentación técnica sobre los modelos de fragmentos de contenido.
 * [Crear fragmentos de contenido](/help/assets/content-fragments/content-fragments.md): documentación técnica sobre fragmentos de contenido.
 * [Consulta de contenido con GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md): documentación técnica sobre la API de GraphQL.

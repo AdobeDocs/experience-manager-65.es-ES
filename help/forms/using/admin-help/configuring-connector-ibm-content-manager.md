@@ -1,6 +1,6 @@
 ---
 title: Configuración del conector para IBM&reg; Content Manager
-description: Configure el conector de IBM AEM&reg; Content Manager para permitir la comunicación entre los formularios de la y IBM&reg; Content Manager.
+description: Configure el conector para IBM AEM&reg; Content Manager para permitir la comunicación entre formularios y IBM& reg; Content Manager.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Configuración del conector para el administrador de contenido de IBM®{#configuring-connector-for-ibm-content-manager}
 
-El conector para el administrador de contenido de IBMAEM ® permite la comunicación entre los formularios de y el administrador de contenido de IBM®. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
+El conector para el administrador de contenido de IBMAEM ® permite la comunicación entre los formularios de y el administrador de contenido de IBM®. Para obtener información adicional, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Configuración de la conexión de IBM® Content Manager {#configure-the-ibm-content-manager-connection}
 

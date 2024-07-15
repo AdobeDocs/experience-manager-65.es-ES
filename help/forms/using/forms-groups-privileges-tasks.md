@@ -24,9 +24,9 @@ ht-degree: 56%
 | AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
-Puede [creación de grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar directivas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de Adobe Experience Manager AEM (). Estas políticas controlan los privilegios de los usuarios que forman parte del grupo.
+Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar directivas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de Adobe Experience Manager AEM (). Estas políticas controlan los privilegios de los usuarios que forman parte del grupo.
 
-Después de instalar el [Paquete de complemento de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como forms-users y forms-power-user, están disponibles automáticamente para su asignación. En la tabla siguiente se enumeran las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
+Después de instalar el [paquete de complementos de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como forms-users y forms-power-user, estarán disponibles automáticamente para su asignación. En la tabla siguiente se enumeran las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
 
 <table>
  <tbody>
@@ -97,7 +97,7 @@ Después de instalar el [Paquete de complemento de AEM Forms](../../forms/using/
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>AEM Usar aplicaciones de bandeja de entrada<br /> <strong>Nota: </strong>AEM Debe tener asignaciones de cm-agent-users y de grupo de flujo de trabajo-usuarios para acceder a la interfaz de usuario de agente de comunicaciones interactivas en la bandeja de entrada de la.</li> 
+     <li>AEM AEM Usar aplicaciones de Bandeja de entrada de<br /> <strong>Nota: </strong>Debe tener asignaciones de cm-agent-users y de grupo de flujo de trabajo-usuarios para tener acceso a la interfaz de usuario de agente de comunicaciones interactivas en la Bandeja de entrada de la Bandeja de entrada de la.</li> 
      <li>Administrar instancias de flujo de trabajo</li> 
     </ul> </td> 
   </tr>

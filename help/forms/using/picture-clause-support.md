@@ -94,7 +94,7 @@ Expresión admitida para la cláusula de imagen de fecha:
 
 >[!NOTE]
 >
-> Según el diseño, el campo Fecha en HTML5 Forms no admite la variable `MM-YYYY` pattern en formato de edición. Sin embargo, el patrón es compatible con el formato de visualización.
+> Según el diseño, el campo Fecha en HTML5 Forms no admite el patrón `MM-YYYY` en formato de edición. Sin embargo, el patrón es compatible con el formato de visualización.
 
 ## Cláusula de imagen numérica {#numeric-picture-clause}
 

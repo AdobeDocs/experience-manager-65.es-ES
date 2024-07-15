@@ -43,7 +43,7 @@ Se pueden desempeñar diversas funciones en las pruebas y en diversas etapas del
     <ul>
      <li><p>Se proporciona al cliente la experiencia del proyecto que se está desarrollando.</p> </li>
      <li><p>Proporciona comentarios anticipados del cliente.</p> </li>
-     <li><p>Los usuarios suelen expresar sus requisitos en términos de experiencia previa; involucrar a los clientes en las pruebas lo antes posible aumenta su experiencia del nuevo proyecto en términos de <i>práctico</i> experiencia.</p> </li>
+     <li><p>Los usuarios suelen expresar sus requisitos en términos de experiencia previa; involucrar a los clientes en las pruebas lo antes posible aumenta su experiencia del nuevo proyecto en términos de experiencia <i>práctica</i>.</p> </li>
     </ul> </td>
    <td><p>De nuevo, la participación temprana es buena, aunque cualquier versión que utilicen los clientes debería ser estable y tener una funcionalidad razonable.</p> <p>Las primeras impresiones siempre son importantes.</p> </td>
   </tr>

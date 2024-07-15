@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM A continuación se ofrece una descripción general de la creación con la ayuda de la creación de:
 
-* [Primeros pasos para los autores](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - una introducción para nuevos autores
+* [Primeros pasos para los autores](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md): introducción para nuevos autores
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Para ayudarle a crear páginas, el entorno de creación incluye funciones como l
 * **Arrastrar y soltar**
 Los componentes (como texto e imagen) y los recursos digitales (como imágenes) se pueden colocar en la página simplemente arrastrándolos y soltándolos en la ubicación deseada.
 
-* **Edición**
+* **Editando**
 Una vez colocado en la página, se puede abrir un cuadro de diálogo específico del componente para introducir contenido o configurar características de ese componente (por ejemplo, tamaño de imagen).
 
 * **Edición in situ**

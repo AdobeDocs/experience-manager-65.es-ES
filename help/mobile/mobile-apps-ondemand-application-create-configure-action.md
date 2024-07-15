@@ -32,18 +32,18 @@ Los detalles de la aplicación se pueden ver en el panel o en el centro de contr
 >
 >El panel es una serie de mosaicos útiles que proporcionan una visión general del contenido de la aplicación, los metadatos y el estado de conexión de AEM Mobile On-Demand.
 >
->Consulte [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
+>Consulte [Tablero de aplicación de AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
 
 **Para crear una aplicación bajo demanda:**
 
-1. Seleccionar **Móvil** desde la barra lateral.
-1. Seleccionar **Aplicaciones** desde el panel de navegación.
-1. Clic **Crear** y seleccione **Aplicación** de la lista desplegable.
-1. Seleccione la plantilla Aplicación móvil y haga clic en **Siguiente**.
-1. Introduzca las propiedades de la aplicación, como **Título**, **Nombre**, **Descripción**.
+1. Seleccione **Móvil** en el carril lateral.
+1. Seleccione **Aplicaciones** de la navegación.
+1. Haga clic en **Crear** y seleccione **Aplicación** en la lista desplegable.
+1. Elija la plantilla Aplicación móvil y haga clic en **Siguiente**.
+1. Escriba propiedades de la aplicación como **Title**, **Name**, **Description**.
 1. Haga clic en **Siguiente**.
-1. Si lo sabe, introduzca los detalles de configuración de la nube o haga clic en **Crear**.
-1. Clic **Listo** para ver la nueva aplicación de AEM Mobile en el catálogo.
+1. Si lo conoce, escriba los detalles de configuración de la nube; de lo contrario, haga clic en **Crear**.
+1. Haga clic en **Listo** para ver la nueva aplicación de AEM Mobile en el catálogo.
 
 ![chlimage_1](assets/chlimage_1.gif)
 
@@ -64,7 +64,7 @@ Debe tener una plantilla de aplicación móvil existente (o una aplicación inst
 
 Una vez que haya creado una aplicación bajo demanda desde el panel de aplicaciones, el siguiente paso es asociar la aplicación a la configuración en la nube.
 
-Consulte [Asociar la aplicación a la configuración de la nube](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) para obtener más información.
+Consulte [Asociación de la aplicación a la configuración de la nube](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) para obtener más información.
 
 ### Primeros pasos {#getting-ahead}
 
@@ -76,7 +76,7 @@ Una vez que esté familiarizado con la creación de una aplicación bajo demanda
 * [Administración de titulares](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Administración de colecciones](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Carga de recursos compartidos](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publicar contenido para cancelar su publicación](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Cancelar la publicación del contenido de Publish](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 

@@ -37,7 +37,7 @@ Es un modelo de formulario ideal si tiene inversiones en formularios XFA o XDP. 
 * **Usar una definición de esquema XML (XSD) o un esquema JSON**
 Los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema estarán disponibles para su uso en la pestaña Objetos del modelo de datos del Explorador de contenido al crear formularios adaptables.
 
-* **Usar ninguno o no usar un modelo de formulario**
+* **No usar ninguno o no usar un modelo de formulario**
 Los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
 
 Para obtener más información sobre la creación de un formulario adaptable, consulte [Creación de un formulario adaptable](../../forms/using/creating-adaptive-form.md).
@@ -94,7 +94,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
 
   Permite editar las propiedades de un componente. Las propiedades cambian según el componente. Para ver las propiedades del contenedor de formulario adaptable, haga lo siguiente:
 
-  Seleccione un componente y luego seleccione ![field-level](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]**, y luego seleccione ![cmppr](assets/cmppr.png).
+  Seleccione un componente, luego seleccione ![field-level](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y luego seleccione ![cmppr](assets/cmppr.png).
 
 * **Explorador de recursos**
 
@@ -279,14 +279,14 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
 
 Estas son algunas de las prácticas recomendadas y los puntos clave que deben tenerse en cuenta a la hora de trabajar con componentes de formulario adaptable:
 
-* Cada componente tiene propiedades asociadas que controlan su aspecto y su funcionalidad. Para configurar las propiedades de un componente, seleccione el componente y seleccione ![cmppr](assets/cmppr.png) para abrir las propiedades del componente en el explorador de propiedades.
-* Cada componente se identifica con su nombre de elemento. Al seleccionar ![cmppr](assets/cmppr.png), puede cambiar el nombre del componente cambiando la variable **[!UICONTROL Nombre de elemento]** en el explorador de propiedades. El campo Nombre de elemento solo acepta letras, números, guiones (-) y guiones bajos (_). No se permite ningún otro tipo de caracteres especiales, y el nombre del elemento debe comenzar con una letra.
+* Cada componente tiene propiedades asociadas que controlan su aspecto y su funcionalidad. Para configurar las propiedades de un componente, seleccione el componente y seleccione ![cmppr](assets/cmppr.png) para abrir las propiedades del componente en el Explorador de propiedades.
+* Cada componente se identifica con su nombre de elemento. Al seleccionar ![cmppr](assets/cmppr.png), puede cambiar el nombre del componente cambiando el valor del campo **[!UICONTROL Nombre del elemento]** en el explorador de propiedades. El campo Nombre de elemento solo acepta letras, números, guiones (-) y guiones bajos (_). No se permite ningún otro tipo de caracteres especiales, y el nombre del elemento debe comenzar con una letra.
 
 * Puede modificar la propiedad Título de los componentes en línea de un formulario adaptable en el Editor de formularios sin abrir el Explorador de propiedades siempre que el título esté visible en el formulario. Para ello:
 
    1. Seleccione para seleccionar un componente que tenga la propiedad **[!UICONTROL Título]** y cuya propiedad **[!UICONTROL Ocultar título]** esté deshabilitada.
 
-   1. Seleccionar ![aem_6_3_edit](assets/aem_6_3_edit.png) para que el título se pueda editar.
+   1. Seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) para poder editar el título.
 
    1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios.  Seleccione la tecla Esc para descartar los cambios.
 

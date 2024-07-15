@@ -20,22 +20,22 @@ ht-degree: 0%
 
 Para definir qué configuraciones se deben probar, se debe tener en cuenta lo siguiente:
 
-**Desarrollo** - Para la unidad, y ciertas pruebas de integración.
+**Desarrollo** - Para Unidad y ciertas pruebas de integración.
 
 **Pruebas** - Para la mayoría de las pruebas.
 
-**Activo** - Para pruebas de rendimiento y de esfuerzo finales. También para pruebas de aceptación con el cliente.
+**Activo**: para las pruebas de esfuerzo y rendimiento finales. También para pruebas de aceptación con el cliente.
 
 Decida qué instancias necesita y dónde (normalmente al menos una de cada una para todos los niveles de prueba):
 
-**Autor** : Esta instancia permite a los autores introducir y publicar contenido.
+**Autor**: esta instancia permite a los autores introducir y publicar contenido.
 
-**Publish** - Esta instancia presenta el sitio web en su forma publicada para el acceso de los visitantes.
+**Publish**: esta instancia presenta el sitio web en su forma publicada para el acceso de los visitantes.
 
 Probado con Dispatcher.
 
 Por último, debe tenerse en cuenta el hardware real: cualquier prueba de rendimiento debe realizarse en un sistema lo más cerca posible del entorno en directo final. Por este motivo, también se recomienda dividir el lanzamiento del proyecto en un:
 
-**Lanzamiento suave** - Disponibilidad reducida; lo que permite tiempo para pruebas de rendimiento, ajuste y optimización en condiciones realistas en el entorno de producción.
+**Lanzamiento suave**: disponibilidad reducida; lo que permite tiempo para pruebas de rendimiento, ajuste y optimización en condiciones realistas en el entorno de producción.
 
-**Lanzamiento duro** - Disponibilidad total.
+**Lanzamiento duro** - Disponibilidad completa.

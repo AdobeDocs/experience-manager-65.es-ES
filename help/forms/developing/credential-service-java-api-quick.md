@@ -1,6 +1,6 @@
 ---
-title: SOAP Inicio rápido () de la API de Java&trade del servicio de credenciales
-description: Obtenga información sobre cómo importar y eliminar credenciales en AEM Forms SOAP mediante Java&trade; API Quick Start ().
+title: SOAP Inicio rápido (inicio rápido) de la API de Java&trade; API
+description: Obtenga información sobre cómo importar y eliminar credenciales en AEM Forms SOAP mediante Java& trade; API Quick Start ().
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -28,7 +28,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en JBoss® y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en JBoss® y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 ## SOAP Inicio rápido (modo de): Importación de credenciales mediante la API de Java™ {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-En el ejemplo de código siguiente se importa una credencial basada en un archivo denominado *cred.p12*. El valor de alias utilizado para importar la credencial es `Secure`. (Consulte [Importación de credenciales mediante la API de Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+En el siguiente ejemplo de código se importa una credencial basada en un archivo denominado *cred.p12*. El valor de alias utilizado para importar la credencial es `Secure`. (Consulte [Importación de credenciales mediante la API del Administrador de confianza](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -137,7 +137,7 @@ En el ejemplo de código siguiente se importa una credencial basada en un archiv
 
 ## SOAP Inicio rápido (modo de): Eliminación de credenciales mediante la API de Java™ {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-En el ejemplo de código siguiente se elimina una credencial en función de un valor de alias *secure*. (Consulte [Eliminación de credenciales mediante la API de Administrador de confianza](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+En el ejemplo de código siguiente se elimina una credencial basada en un valor de alias *secure*. (Consulte [Eliminación de credenciales mediante la API del Administrador de confianza](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*

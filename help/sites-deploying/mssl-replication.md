@@ -25,10 +25,10 @@ La configuración de MSSL para la replicación implica realizar los siguientes p
 1. Cree o consiga claves y certificados privados para las instancias de autor y publicación.
 1. Instale las claves y los certificados en las instancias de autor y publicación:
 
-   * Autor: clave privada del autor y certificado de Publish.
-   * Publicar: la clave privada de Publish y el certificado de autor. El certificado está asociado a la cuenta de usuario autenticada con el agente de replicación.
+   * Autor: Clave privada del autor y certificado de Publish.
+   * Publicación: clave privada de Publish y certificado de autor. El certificado está asociado a la cuenta de usuario autenticada con el agente de replicación.
 
-1. Configure el servicio HTTP basado en Jetty en la instancia de publicación.
+1. Configure el servicio HTTP basado en Jetty en la instancia de Publish.
 1. Configure las propiedades de transporte y SSL del agente de replicación.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
@@ -45,9 +45,9 @@ Necesita una clave privada y un certificado público para las instancias de auto
 
 ### Formato JKS {#jks-format}
 
-Genere una clave privada y un certificado en formato JKS. La clave privada se almacena en un archivo KeyStore y el certificado se almacena en un archivo TrustStore. Uso [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) para crear ambos.
+Genere una clave privada y un certificado en formato JKS. La clave privada se almacena en un archivo KeyStore y el certificado se almacena en un archivo TrustStore. Use [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) para crear ambos.
 
-Siga estos pasos con Java `keytool` para crear la clave privada y las credenciales:
+Realice los siguientes pasos utilizando Java `keytool` para crear la clave privada y las credenciales:
 
 1. Genere un par de claves pública y privada en un almacén de claves.
 1. Cree o consiga el certificado:
@@ -84,7 +84,7 @@ Utilice el siguiente procedimiento para crear una clave privada y un certificado
 
 ### Formato pkcs#12 {#pkcs-format}
 
-Genere una clave privada y un certificado en formato pkcs#12. Uso [openSSL](https://www.openssl.org/) para generarlos. Utilice el siguiente procedimiento para generar una clave privada y una solicitud de certificado. Para obtener el certificado, firme la solicitud con la clave privada (certificado autofirmado) o envíela a una CA. A continuación, genere el archivo pkcs#12 que contiene la clave privada y el certificado.
+Genere una clave privada y un certificado en formato pkcs#12. Use [openSSL](https://www.openssl.org/) para generarlos. Utilice el siguiente procedimiento para generar una clave privada y una solicitud de certificado. Para obtener el certificado, firme la solicitud con la clave privada (certificado autofirmado) o envíela a una CA. A continuación, genere el archivo pkcs#12 que contiene la clave privada y el certificado.
 
 1. Abra una ventana o terminal de la línea de comandos. Para crear la clave privada, introduzca el siguiente comando, utilizando los valores de opción de la tabla siguiente:
 
@@ -162,7 +162,7 @@ Para realizar el siguiente procedimiento, debe iniciar sesión como administrado
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Instalar el certificado de publicación {#install-the-publish-certificate}
+### Instalación del certificado de Publish {#install-the-publish-certificate}
 
 1. Abra la página Administración de usuarios de la instancia de autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Para abrir las propiedades de la cuenta de usuario, haga clic en el nombre de usuario.
@@ -186,7 +186,7 @@ Instale los siguientes elementos en la instancia de publicación:
 
 Para realizar el siguiente procedimiento, debe iniciar sesión como administrador de la instancia de publicación.
 
-### Instalación de la clave privada de publicación {#install-the-publish-private-key}
+### Instalación de la clave privada de Publish {#install-the-publish-private-key}
 
 1. Abra la página User Management de la instancia de publicación. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Para abrir las propiedades de la cuenta de usuario, haga clic en el nombre de usuario.

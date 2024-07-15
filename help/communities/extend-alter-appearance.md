@@ -29,9 +29,9 @@ Para una demostración sencilla, se elimina una característica visual, el avata
 
 ## Modificación de los scripts HBS {#modify-the-hbs-scripts}
 
-Uso de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Abrir [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Abrir [/apps/custom/components/comments/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Comente la etiqueta que incluye el avatar para una publicación de comentario (~ línea 21):
 
@@ -61,17 +61,17 @@ Una forma de hacerlo es:
 
 * Desde el menú principal
 
-   * Seleccionar **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**.
-   * Seleccionar **[!UICONTROL Activar árbol]**.
-   * Establecer `Start Path` hasta `/apps/custom`.
-   * Anular selección **[!UICONTROL Solo modificadas]**.
-   * Seleccionar **[!UICONTROL Activar]** botón.
+   * Seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**.
+   * Seleccione **[!UICONTROL Activar árbol]**.
+   * Establezca `Start Path` en `/apps/custom`.
+   * Anular la selección de **[!UICONTROL Solo modificadas]**.
+   * Seleccione el botón **[!UICONTROL Activar]**.
 
 ### Ver comentario modificado en la página de muestra publicada {#view-modified-comment-on-published-sample-page}
 
-[Continuación de la experiencia](/help/communities/extend-sample-page.md#publish-sample-page) en la instancia de publicación, que aún tiene la sesión iniciada por el mismo usuario, ahora es posible actualizar la página en el entorno de publicación para ver la modificación y eliminar el avatar:
+[Continuando con la experiencia](/help/communities/extend-sample-page.md#publish-sample-page) en la instancia de publicación, con la sesión iniciada por el mismo usuario, ahora es posible actualizar la página en el entorno de publicación para ver la modificación y eliminar el avatar:
 
-![view-modified-content](assets/view-modified-content.png)
+![ver-contenido modificado](assets/view-modified-content.png)
 
 ### Paquete de extensiones de comentarios de muestra {#sample-comment-extension-package}
 

@@ -38,9 +38,9 @@ Aunque las propiedades se explican por sí mismas, las importantes son las sigui
 
   JVM.
 
-* **Nombre de usuario** AEM - Especifica el nombre de usuario de la cuenta que se utiliza para establecer la comunicación entre la cuenta de usuario y la cuenta de LiveCycle de la cuenta de usuario de la que se dispone para establecer la comunicación entre la cuenta de usuario y la cuenta de. La cuenta es una cuenta de usuario de LiveCycle que tiene los permisos para iniciar los servicios de Acrobat.
+* **Nombre de usuario**- Especifica el nombre de usuario de la cuenta que se usa para establecer la comunicación entre el usuario y el LiveCycle de la cuenta de usuario de la cuenta de usuario que se utiliza para establecer la comunicación entre el usuario y la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de AEM. La cuenta es una cuenta de usuario de LiveCycle que tiene los permisos para iniciar los servicios de Acrobat.
 * **Contraseña**: especifica la contraseña.
-* **Nombre del servicio** - Especifica los servicios que se inician utilizando las credenciales de usuario proporcionadas en los campos Nombre de usuario y Contraseña. De forma predeterminada, no se transfieren credenciales al iniciar los servicios de LiveCycle.
+* **Nombre de servicio** - Especifica los servicios que se inician al usar las credenciales de usuario proporcionadas en los campos Nombre de usuario y Contraseña. De forma predeterminada, no se transfieren credenciales al iniciar los servicios de LiveCycle.
 
 ## Iniciar los servicios de documentos {#starting-document-services}
 
@@ -52,7 +52,7 @@ Las aplicaciones cliente pueden iniciar servicios de LiveCycle mediante programa
 
 El conector de AEM LiveCycle simplifica el flujo al exponer estas instancias de cliente como servicios OSGi a los que se puede acceder mediante OSGi estándar. El conector de LiveCycle ofrece las siguientes características:
 
-* Instancias de cliente como el servicio OSGI: Los clientes empaquetados como paquetes OSGI se enumeran en la [Lista de servicios de Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) sección. Cada cliente jar registra la instancia del cliente como un servicio OSGi con el registro de servicios OSGi.
+* Instancias de cliente como el servicio OSGi: Los clientes empaquetados como paquetes OSGI se enumeran en la sección [Lista de servicios de Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Cada cliente jar registra la instancia del cliente como un servicio OSGi con el registro de servicios OSGi.
 * Propagación de la credencial de usuario: los detalles de conexión necesarios para conectarse al servidor de LiveCycle se administran en un lugar central.
 * Servicio ServiceClientFactory: para iniciar los procesos, la aplicación cliente puede acceder a la instancia de ServiceClientFactory.
 
@@ -80,7 +80,7 @@ Para iniciar un servicio expuesto desde AEM, realice los siguientes pasos:
    </dependency>
    ```
 
-   Para iniciar un servicio, agregue una dependencia Maven correspondiente al servicio. Para ver la lista de dependencias, consulte [Lista de servicios de Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Por ejemplo, para el servicio Generar PDF agregue la siguiente dependencia:
+   Para iniciar un servicio, agregue una dependencia Maven correspondiente al servicio. Para obtener la lista de dependencias, consulte [Lista de servicios de Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Por ejemplo, para el servicio Generar PDF agregue la siguiente dependencia:
 
    ```xml
    <dependency>

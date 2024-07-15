@@ -44,11 +44,11 @@ AEM Los miembros del grupo de creación de aplicaciones son responsables de la c
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Ahora que ha creado el grupo de usuarios Autores de la aplicación, puede añadir miembros individuales del equipo a este nuevo grupo a través del [Admin Console de usuario](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Ahora que ha creado el grupo de usuarios de autores de aplicaciones, puede agregar integrantes individuales del equipo a este nuevo grupo a través de [Admin Console de usuarios](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. AEM Lo siguiente le permite agregar al grupo Autores de contenido de la página de inicio de:
+1. AEM A continuación, se permite agregar al grupo Autores de contenido de:
 
    (Lectura) el
 
@@ -59,7 +59,7 @@ AEM Los miembros del grupo de creación de aplicaciones son responsables de la c
 
 ### Grupo de administradores de aplicaciones de AEM Mobile (grupo de administradores de aplicaciones) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Los miembros del grupo de administradores de aplicaciones pueden crear contenido de la aplicación con los mismos permisos incluidos con los autores de aplicaciones **Y** además, son responsables de:
+Los miembros del grupo de administradores de aplicaciones pueden crear contenido de aplicación con los mismos permisos incluidos con los autores de aplicaciones **Y**. Además, también son responsables de lo siguiente:
 
 * Actualizaciones OTA de ContentSync de ensayo, publicación y borrado de la aplicación
 
@@ -83,7 +83,7 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
    >
    >los usuarios del flujo de trabajo deben realizar la compilación remota con el servicio de PhoneGap Build
 
-1. Vaya a [Consola Permisos](http://localhost:4502/useradmin) y agregue permisos para administrar cloudservices
+1. Vaya a la consola [Permisos](http://localhost:4502/useradmin) y agregue permisos para administrar cloudservices
 
    * (Leer, Modificar, Crear, Eliminar, Replicar) en /etc/cloudservices/mobileservices
 

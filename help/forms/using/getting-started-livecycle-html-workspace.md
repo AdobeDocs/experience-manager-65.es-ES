@@ -64,7 +64,7 @@ Puede establecer las distintas preferencias de AEM Forms Workspace en las sigu
 
 **Fuera de la oficina:** establezca las preferencias para controlar cómo se asignarán las tareas a otras personas mientras esté fuera de la oficina. Consulte [Configuración de las preferencias de Fuera de la oficina](todo-lists.md#setting-out-of-office-preferences).
 
-**Colas:** Establezca sus preferencias para compartir la lista de tareas pendientes con otros usuarios o para solicitar acceso a la lista de otro usuario. Consulte [Trabajo con tareas de grupos y colas compartidas](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
+**Colas:** Establezca preferencias para compartir la lista de tareas pendientes con otros usuarios o para solicitar acceso a la lista de otro usuario. Consulte [Trabajo con tareas de grupos y colas compartidas](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
 **Configuración de la interfaz de usuario:** establezca sus preferencias para interactuar con AEM Forms Workspace. Consulte [Establecer las preferencias de la interfaz de usuario](#set-user-interface-preferences).
 

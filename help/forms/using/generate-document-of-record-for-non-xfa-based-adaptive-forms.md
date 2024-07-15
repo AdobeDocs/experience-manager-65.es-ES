@@ -77,7 +77,7 @@ Para generar el documento de registro de un formularios adaptable, son necesario
 
 **Formulario adaptable**: el formulario adaptable para el que se desea generar un documento de registro.
 
-**Fragmento de formulario adaptable** Fragmento de formulario adaptable para el que desea generar un documento de registro.
+**Fragmento de formulario adaptable**: fragmento de formulario adaptable para el que desea generar un documento de registro.
 
 **Plantilla base (recomendada)**: la plantilla XFA (archivo XDP) creada en AEM Designer. La plantilla base se utiliza para especificar la información de estilo y de personalización de marca de la plantilla del documento de registro.
 
@@ -224,7 +224,7 @@ Los componentes de las tablas de formularios adaptables, como el encabezado, el 
 
 La plantilla base proporciona al documento de registro información relativa al estilo y la apariencia. Permite personalizar el aspecto predeterminado del documento de registro generado automáticamente. Por ejemplo, puede utilizar la plantilla base para agregar el logotipo de su compañía en el encabezado y la información de copyright en el pie de página del documento de registro. La página maestra de la plantilla base se utiliza como página maestra de la plantilla del documento de registro. La página maestra puede incluir información como el encabezado de página, el pie de página y el número de página que puede aplicar al documento de registro. Puede aplicar dicha información al documento de registro mediante la plantilla base para generar automáticamente el documento de registro. El uso de una plantilla base permite cambiar las propiedades predeterminadas de los campos.
 
-Asegúrese de seguir [Convenciones de plantilla base](#base-template-conventions) al diseñar una plantilla base.
+Asegúrese de seguir [convenciones de plantilla base](#base-template-conventions) al diseñar la plantilla base.
 
 ## Convenciones de plantilla base {#base-template-conventions}
 
@@ -240,7 +240,7 @@ Se utiliza una plantilla base para definir el encabezado, el pie de página, el 
 
 **Convenciones de estilo para campos**
 
-* Para aplicar un estilo a los campos del documento de registro, la plantilla base proporciona campos en la variable `AF_FIELDSSUBFORM` subformulario en `AF_METATEMPLATE` subformulario raíz.
+* Para aplicar estilo en los campos del documento de registro, la plantilla base proporciona campos en el subformulario `AF_FIELDSSUBFORM` bajo el subformulario raíz `AF_METATEMPLATE`.
 
 * Las propiedades de estos campos se aplican a los campos del documento de registro. Estos campos deben seguir la convención de nomenclatura de `AF_<name of field in all caps>_XFO`. Por ejemplo, el nombre de campo de la casilla de verificación debe ser `AF_CHECKBOX_XFO`.
 
@@ -312,7 +312,7 @@ Al generar un documento de registro, puede cambiar la información de marca del 
 
 Para localizar la información de marca indicada en la pestaña Documento de registro, asegúrese de que ha establecido correctamente la configuración regional del explorador. Para personalizar la información de marca del documento de registro, siga estos pasos:
 
-1. Seleccione un panel (panel raíz) en el documento de registro y, a continuación, seleccione ![configurar](assets/configure.png).
+1. Seleccione un panel (panel raíz) en el documento de registro y luego seleccione ![configurar](assets/configure.png).
 1. Seleccione ![dortab](/help/forms/using/assets/dortab.png). Aparecerá la pestaña Documento de registro.
 1. Seleccione la plantilla predeterminada o una plantilla personalizada para procesar el documento de registro. Si selecciona la plantilla predeterminada, aparece una vista previa en miniatura del documento de registro debajo de la lista desplegable Plantilla.
 
@@ -422,20 +422,20 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
 * **[!UICONTROL BÁSICO]**
    * **Plantilla:** Puede seleccionar la plantilla Predeterminada o Personalizada.
      ![texto alternativo](image.png)
-   * **Realzar color:** Puede predefinir el color de plantilla del [!UICONTROL Documento de registro].
-   * **Familia de fuentes:** Seleccione Tipo de fuente para la [!UICONTROL Documento de registro] textos.
-   * **Incluir campos no enlazados en documento de registro:** Al establecer la propiedad, se incluyen campos no enlazados del formulario adaptable basado en esquemas en [!UICONTROL Documento de registro]. De forma predeterminada, es True.
-   * **Excluir campos del documento de registro si están ocultos:** Establezca la propiedad para excluir los campos ocultos de [!UICONTROL Documento de registro] al enviar el formulario. Al activar [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del [!UICONTROL Documento de registro]
+   * **Color de énfasis:** Puede predefinir el color de plantilla del [!UICONTROL documento de registro].
+   * **Familia de fuentes:** Seleccione el tipo de fuente para los textos de [!UICONTROL Documento de registro].
+   * **Incluir campos no enlazados en el documento de registro:** Al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en esquema en [!UICONTROL Documento de registro]. De forma predeterminada, es True.
+   * **Excluir campos del documento de registro si están ocultos:** Establezca la propiedad para excluir los campos ocultos del [!UICONTROL documento de registro] al enviar el formulario. Cuando habilita [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir esos campos del [!UICONTROL Documento de registro]
 * **[!UICONTROL PROPIEDADES DEL CAMPO DE FORMULARIO]**
-   * Si marca la opción **Mostrar solo los valores seleccionados para los componentes Casilla de verificación y Botón de radio**, generará una salida de DoR con solo los valores seleccionados.
+   * Si marca la opción **Para el componente Casilla de verificación y Botón de radio, mostrar solo los valores seleccionados**, se generará la salida del documento de registro (DoR) con solo los valores seleccionados.
    * Puede seleccionar Separador para varios valores seleccionados o puede elegir cualquier otro tipo de separador.
    * Alineación de opciones
       * Vertical
       * Horizontal
       * Igual que el formulario adaptable
      >[!NOTE]
-     > La alineación vertical u horizontal sólo es aplicable a los botones de opción y a las casillas de verificación
-* **[!UICONTROL PROPIEDADES DE LA PÁGINA MAESTRA]** Haga clic para obtener más información sobre [Propiedades de la página maestra](#master-page-properties-master-page-properties)
+     > La alineación vertical y horizontal solo es aplicable para     Botón de opción y casilla de verificación
+* **[!UICONTROL PROPIEDADES DE PÁGINA MAESTRA]** Haga clic para obtener más información sobre [propiedades de página maestra](#master-page-properties-master-page-properties)
 
 ## Aplicar un salto de página en un documento de registro {#apply-page-breaks-in-dor}
 
@@ -446,8 +446,8 @@ Para aplicar un salto de página a un documento de registro:
 1. Seleccione el panel y seleccione ![Configurar](/help/forms/using/assets/configure.png)
 1. Expanda **[!UICONTROL Documento de registro]** para ver las propiedades.
 
-1. En el **[!UICONTROL Paginación]** , seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el **[!UICONTROL Lugar]** field.
-1. Seleccionar **[!UICONTROL Parte superior de la página siguiente]** y seleccione **[!UICONTROL Seleccionar]**. También puede seleccionar **[!UICONTROL Parte superior de la página]**, seleccione la página maestra y seleccione **[!UICONTROL Seleccionar]** para aplicar el salto de página.
+1. En la sección **[!UICONTROL Paginación]**, seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Lugar]**.
+1. Seleccione **[!UICONTROL Parte superior de la siguiente página]** y seleccione **[!UICONTROL Seleccionar]**. También puede seleccionar **[!UICONTROL Parte superior de la página]**, seleccionar la página maestra y seleccionar **[!UICONTROL Seleccionar]** para aplicar el salto de página.
 1. Seleccione ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
 
 El panel seleccionado se traslada a la página siguiente.
@@ -464,12 +464,12 @@ Carga una plantilla XDP que incluye cuatro páginas maestras en el servidor de [
 Para aplicar las propiedades de la segunda página maestra a un panel y las propiedades de la tercera página maestra a los paneles siguientes, ejecute los pasos que aparecen a continuación:
 
 1. Seleccione el panel al que aplicar la segunda página maestra y seleccione ![Configurar](assets/cmppr.png).
-1. En el **[!UICONTROL Paginación]** , seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el **[!UICONTROL Lugar]** field.
-1. Seleccionar **[!UICONTROL En la página]**, seleccione la segunda página maestra y seleccione **[!UICONTROL Seleccionar]**.
+1. En la sección **[!UICONTROL Paginación]**, seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Lugar]**.
+1. Seleccione **[!UICONTROL En la página]**, seleccione la segunda página maestra y seleccione **[!UICONTROL Seleccionar]**.
 AEM Forms aplica la segunda página maestra al panel y a todos los paneles posteriores del formulario adaptable.
-1. En el **[!UICONTROL Paginación]** , seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el **[!UICONTROL Después]** field.
-1. Seleccionar **[!UICONTROL Ir a la página]**, seleccione la tercera página maestra y seleccione **[!UICONTROL Seleccionar]**.
-1. Seleccionar ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
+1. En la sección **[!UICONTROL Paginación]**, seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Después]**.
+1. Seleccione **[!UICONTROL Ir a la página]**, seleccione la tercera página maestra y seleccione **[!UICONTROL Seleccionar]**.
+1. Seleccione ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
 AEM Forms aplica la tercera página maestra al panel y a todos los paneles posteriores del formulario adaptable.
 
 >[!NOTE]
@@ -487,7 +487,7 @@ Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en el 
 
 ## Usar un archivo XCI personalizado
 
-Un archivo XCI ayuda a establecer varias propiedades de un documento. <!-- Forms as a Cloud Service has a master XCI file.--> Puede utilizar un archivo XCI personalizado para anular una o varias propiedades predeterminadas especificadas en el archivo XCI existente. Por ejemplo, puede optar por incrustar una fuente en un documento o habilitar la propiedad etiquetada para todos los documentos. La siguiente tabla especifica las opciones de XCI:
+Un archivo XCI ayuda a establecer varias propiedades de un documento. <!-- Forms as a Cloud Service has a master XCI file.-->: puede utilizar un archivo XCI personalizado para anular una o más propiedades predeterminadas especificadas en el archivo XCI existente. Por ejemplo, puede optar por incrustar una fuente en un documento o habilitar la propiedad etiquetada para todos los documentos. La siguiente tabla especifica las opciones de XCI:
 
 | Opción XCI | Descripción |
 |--- |--- |
@@ -533,6 +533,6 @@ Un archivo XCI ayuda a establecer varias propiedades de un documento. <!-- Forms
 ### Utilizar un archivo XCI personalizado en el entorno de desarrollo local de Forms
 
 1. Cargue el archivo XCI en su entorno de desarrollo local.
-1. Abrir <!--Cloud Service SDK--> administrador de configuración. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Abra el administrador de configuración <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 1. Busque y abra la configuración del **[!UICONTROL canal web de comunicaciones interactivas y formularios adaptables]**.
 1. Especifique la ruta del archivo XCI y haga clic en **[!UICONTROL Guardar]**.

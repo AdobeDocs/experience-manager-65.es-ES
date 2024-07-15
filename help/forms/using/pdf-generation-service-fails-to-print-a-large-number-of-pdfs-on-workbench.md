@@ -27,7 +27,7 @@ Esto se debe a que el número máximo de páginas en una solicitud de impresión
 
 ## Se aplica a lo siguiente: {#applies-to}
 
-La solución se aplica a AEM Forms <!--JEE Server and AEM Forms on OSGi Server--> para XMLFM x86_win32.
+La solución se aplica a AEM Forms <!--JEE Server and AEM Forms on OSGi Server--> para x86_win32 XMLFM.
 
 ## Solución {#solution}
 
@@ -37,11 +37,11 @@ El factor más grande que afecta al uso de la memoria es la cantidad de datos de
 
 **Alta**
 
-1. **Subformularios de opción** : Un conjunto de subformularios de opción es una variación del objeto del conjunto de subformularios que permite personalizar la visualización de subformularios específicos desde el conjunto mediante sentencias condicionales.
-1. **Usar texto estático en lugar de títulos** : Casi todos los campos proporcionan un pie de ilustración dentro de, el usuario debe utilizarlo en lugar de tener un texto estático adicional como pie de ilustración.
-1. Uso **Formato de texto enriquecido (RTF)** siempre que sea posible.
+1. **Subformularios de opción**: un conjunto de subformularios de opción es una variación del objeto del conjunto de subformularios que le permite personalizar la visualización de subformularios específicos desde el conjunto mediante instrucciones condicionales.
+1. **Usar texto estático en lugar de subtítulos**: casi todos los campos proporcionan un subtítulo dentro de, el usuario debe utilizarlo en lugar de tener un texto estático adicional como subtítulo.
+1. Utilice **formato de texto enriquecido (RTF)** siempre que sea posible.
 
-**Media**
+**Promedio**
 
 Factores adicionales que se deben tener en cuenta al diseñar la plantilla de formulario para ayudar a mejorar el uso de la memoria:
 
@@ -74,7 +74,7 @@ A continuación se muestran diferentes variantes para tablas que muestran el nú
 
 1. Tabla con una sola columna en la que se generan 5000 páginas de PDF, con un tamaño de archivo de datos de 24 MB y registros de 30 KB.
 
-   ![table_single_column](/help/forms/using/assets/table_single_column.png)
+   ![tabla_columna_única](/help/forms/using/assets/table_single_column.png)
 
 1. Tabla con muchas columnas pequeñas donde se generan 800 páginas de PDF, el tamaño del archivo de datos es de 4,6 MB y registros de 20 KB.
    ![table_many_small_columns](/help/forms/using/assets/table_many_small_columns.png)
@@ -82,6 +82,6 @@ A continuación se muestran diferentes variantes para tablas que muestran el nú
 1. Una tabla con muchas columnas pequeñas, pero un archivo de datos más grande debido al uso de nombres xmlTag más grandes.
 En este caso, todo es igual que el anterior, pero los nombres de etiquetas xml se han hecho grandes (por lo que el tamaño del archivo de datos aumentará sin ningún aumento en los datos efectivos reales), el resultado final (límite superior) es casi el mismo. Aunque el tamaño del archivo de datos aumentó de 4,6 MB a 44,6 MB. Aquí se generan 800 páginas de PDF, el tamaño del archivo de datos es de 44,6 MB y los registros de 20-K.
 
-   ![table_large_xml_tagname](/help/forms/using/assets/table_bigger_xml_tagname.png)
+   ![nombre_etiqueta_xml_table_greater_table](/help/forms/using/assets/table_bigger_xml_tagname.png)
 
 Por lo tanto, es difícil establecer un límite superior general en el tamaño del archivo de datos. Cada formulario es único y, por lo tanto, el consumo de memoria diferiría de una forma a otra.

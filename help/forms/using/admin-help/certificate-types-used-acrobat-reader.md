@@ -33,11 +33,11 @@ SON 2D código de barras de producción completa V6.1 P8 0002054
 
 La cadena contiene los siguientes elementos:
 
-**Tipo de certificado:** AEM Describe los módulos de formularios en forma de que activa el certificado y el nivel de activación, como son código de barras 2D completo. Para obtener una lista de los tipos de certificado disponibles, consulte la columna Tipo en la tabla de la sección Perfiles de certificado.
+AEM **Tipo de certificado:** Describe los módulos de formularios de la forma en que se activa el certificado y el nivel de activación, como son código de barras 2D completo. Para obtener una lista de los tipos de certificado disponibles, consulte la columna Tipo en la tabla de la sección Perfiles de certificado.
 
 **Tipo de implementación:** Indica el uso previsto del certificado, como Producción. El valor puede ser Evaluación o Producción. Para obtener una lista de los tipos de implementación asociados a cada tipo de certificado, consulte la columna Tipo de implementación en la tabla de la sección Perfiles de certificado.
 
-**Versión de derechos de uso:** Describe la versión del algoritmo de derechos de uso para la que se puede utilizar el certificado, como la versión 6.1. Esta versión no significa la versión de extensiones de Acrobat o Acrobat Reader DC.
+**Versión de derechos de uso:** Describe la versión del algoritmo de derechos de uso para la que se puede usar el certificado, como V6.1. Esta versión no significa la versión de extensiones de Acrobat o Acrobat Reader DC.
 
 **Código de perfil:** El código de perfil es una descripción abreviada de las propiedades completas del certificado, como por ejemplo, P8. Para obtener una lista de los códigos de perfil asociados a cada tipo de archivo, consulte la columna Código de perfil en la tabla de la sección Perfiles de certificado.
 
@@ -152,13 +152,13 @@ Los certificados de integración de socios se emiten para los socios comerciales
 
 Los certificados de uso interno de Adobe se utilizan en Adobe para admitir el desarrollo, la integración, la creación de prototipos y la demostración de software. Estos certificados son válidos durante dos años a partir de la fecha de emisión.
 
-Los certificados de producción se emiten para los clientes que compraron extensiones de Acrobat Reader DC. Estos certificados son válidos durante el período máximo permitido por la autoridad de certificación (CA), que se muestra como *Max* en la tabla Perfiles de certificado.
+Los certificados de producción se emiten para los clientes que compraron extensiones de Acrobat Reader DC. Estos certificados son válidos durante el período máximo permitido por la entidad de certificación (CA), que se muestra como *Max* en la tabla Perfiles de certificado.
 
 ## Derechos de uso de extensiones Acrobat Reader DC {#acrobat-reader-dc-extensions-usage-rights}
 
 Al examinar el certificado de extensiones de Acrobat Reader DC en el Visor de certificados, puede seleccionar el elemento de derechos de uso de la pestaña Detalles (si está configurado) para ver una lista desglosada de los derechos de uso de Adobe Reader que el certificado puede habilitar. Los derechos de uso habilitados en un documento en particular pueden ser un subconjunto de los habilitados por el certificado.
 
-Si se requiere realizar comentarios en línea en un entorno no colaborativo, póngase en contacto con el Soporte técnico de Adobe para obtener más información. La propiedad Mode coincide con el tipo de implementación y es *producción* o *evaluación*.
+Si se requiere realizar comentarios en línea en un entorno no colaborativo, póngase en contacto con el Soporte técnico de Adobe para obtener más información. La propiedad Mode coincide con el tipo de implementación y es *production* o *evaluation*.
 
 Los derechos de uso de las extensiones de Acrobat Reader DC permitidas constan de uno o más elementos específicos. Estos elementos se utilizan en diferentes combinaciones para lograr diversas funciones de productos con licencia.
 

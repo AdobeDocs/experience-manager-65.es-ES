@@ -78,7 +78,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 * Se ha mejorado la interfaz de usuario del selector de productos para mejorar la experiencia del usuario, aumentar la eficacia y admitir catálogos de productos complejos
 
-  ![Nuevo selector de productos](/help/assets/CIF/product-picker.png)
+  ![Selector de nuevos productos](/help/assets/CIF/product-picker.png)
 
 * Respetar la propiedad &quot;include_in_menu&quot; en el componente de navegación
 
@@ -102,7 +102,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 * Nueva interfaz de usuario del selector de categorías para mejorar la experiencia del usuario, aumentar la eficacia y ofrecer una mejor compatibilidad con catálogos de productos complejos
 
-  ![Selector de nueva categoría](/help/assets/CIF/category-picker.png)
+  ![Selector de categoría nueva](/help/assets/CIF/category-picker.png)
 
 * CIF Mejor compatibilidad con A11Y para los componentes principales de la
 
@@ -131,7 +131,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
    * Indicador visual para datos de productos clasificados en el modo de creación para una mejor visibilidad de los próximos cambios
    * Nuevo componente de mapa del sitio para páginas de contenido y comercio
 
-* Compatibilidad con [Adobe Commerce Sensei Product Recommendations, con tecnología de Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) AEM en el frente de la tienda de datos con recomendaciones predefinidas o creadas sobre la marcha
+* Compatibilidad con [Adobe Commerce Sensei Product Recommendations, con tecnología Adobe Sensei AEM](https://business.adobe.com/products/magento/product-recommendations.html) en la tienda mediante recomendaciones predefinidas o creadas sobre la marcha
 
 ## Fecha de versión: junio de 2021
 
@@ -220,7 +220,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 * Administración de experiencias de producto: enriquezca las páginas del catálogo de productos individualmente con fragmentos de experiencias.
 
-* Se han ampliado las propiedades de la consola del producto para mostrar los recursos vinculados y los fragmentos de experiencias, incluida la acción para navegar rápidamente al contenido asociado.
+* Se han ampliado las propiedades de la consola del producto para mostrar el Assets vinculado y los fragmentos de experiencias, incluida la acción para navegar rápidamente al contenido asociado.
 
 ### Qué se ha mejorado  {#what-is-improved-february}
 
@@ -238,7 +238,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 ### Novedades {#what-is-new-january}
 
-* Administración de experiencias de producto: nueva pestaña de propiedades &quot;Commerce&quot; para Recursos y Fragmentos de experiencias. Esta pestaña le permite vincular recursos y fragmentos de experiencias a productos y categorías. La pestaña también muestra datos en tiempo real de objetos de comercio vinculados y un vínculo para mostrar detalles en la consola de producto.
+* Administración de experiencias de producto: nueva pestaña de propiedades &quot;Commerce&quot; para Assets y fragmentos de experiencias. Esta pestaña le permite vincular Assets y fragmentos de experiencias a productos y categorías. La pestaña también muestra datos en tiempo real de objetos de comercio vinculados y un vínculo para mostrar detalles en la consola de producto.
 
 ### Qué se ha mejorado  {#what-is-improved-january}
 

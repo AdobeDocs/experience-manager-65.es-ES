@@ -30,7 +30,7 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 ## Propiedades de integración comunes {#common-integration-properties}
 
-| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o valores esperados** | **Descripción** |
+| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o esperados** | **Descripción** |
 |---|---|---|---|
 | dps-id | Cadena |  | asignado por AEM Mobile AEM y almacenado por una vez cargado en AEM Mobile o importado desde AEM Mobile, por el usuario. |
 | dps-resourceType | Cadena | dps:Article | dps:Banner | dps:Collection | propiedad de tipo de entidad |
@@ -49,13 +49,13 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 | dps-shortAbstract | Cadena |  |
 | dps-department | Cadena |  |
 | dps-category | Cadena |  |
-| dps-keywords | Cadena[] |  |
-| dps-internalKeywords | Cadena[] |  |
-| dps-important | Cadena[] | Importancia desde {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| dps-keywords | Cadena [] |  |
+| dps-internalKeywords | Cadena [] |  |
+| dps-important | Cadena [] | Importancia desde {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Artículos {#articles}
 
-| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o valores esperados** |
+| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o esperados** |
 |---|---|---|
 | dps-author | Cadena |  |
 | dps-authorURL | Cadena |  |
@@ -68,9 +68,9 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 ### Banners {#banners}
 
-| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o valores esperados** |
+| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o esperados** |
 |---|---|---|
-| dps-tapAction |  | Tocar acción desde {webLink} |
+| dps-tapAction |  | Pulse Acción desde {webLink} |
 | dps-tapActionUrl |  |  |
 
 ### Colecciones {#collections}

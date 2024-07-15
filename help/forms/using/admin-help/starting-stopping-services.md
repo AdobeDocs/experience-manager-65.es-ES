@@ -38,10 +38,10 @@ AEM Los módulos de formularios de datos (por ejemplo, Forms, Rights Management,
 
 AEM Una implementación completa de los formularios de incluye un servidor de aplicaciones y servicios de base de datos:
 
-* *`[application server]`* AEM para los formularios
-* *`[database]`* AEM para los formularios
+* AEM *`[application server]`* para formularios de
+* AEM *`[database]`* para formularios de
 
-En Windows, se puede acceder a estos servicios a través del **Herramientas administrativas** > **Panel Servicios**. AEM Por ejemplo, si ha instalado formularios en JBoss mediante el método llave en mano, los siguientes servicios están disponibles en el sistema:
+En Windows, se puede acceder a estos servicios a través de **Herramientas administrativas** > **Panel de servicios**. AEM Por ejemplo, si ha instalado formularios en JBoss mediante el método llave en mano, los siguientes servicios están disponibles en el sistema:
 
 * JBoss para formularios Adobe Experience Manager
 * MySQL para formularios Adobe Experience Manager

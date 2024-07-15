@@ -31,7 +31,7 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
-La función de blog está compuesta por dos componentes principales disponibles mediante la adición de [Función Blog](/help/communities/functions.md#blog-function) o añadiendo los componentes a una página en modo de edición de autor.
+La función de blog está compuesta por dos componentes principales que están disponibles al agregar la [función de blog](/help/communities/functions.md#blog-function) o al agregar los componentes a una página en modo de edición de autor.
 
 ### Blog {#blog}
 
@@ -50,7 +50,7 @@ La función de blog está compuesta por dos componentes principales disponibles 
    <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.journal</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td> /libs/social/journal/components/hbs/journal/journal.hbs<br /> /libs/social/journal/components/hbs/entry_topic/list-item.hbs</td>
   </tr>
   <tr>
@@ -59,7 +59,7 @@ La función de blog está compuesta por dos componentes principales disponibles 
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>consulte <a href="/help/communities/blog-feature.md">Función Blog</a></td>
+   <td>ver <a href="/help/communities/blog-feature.md">característica de blog</a></td>
   </tr>
  </tbody>
 </table>
@@ -70,9 +70,9 @@ La función de blog está compuesta por dos componentes principales disponibles 
 |---|---|
 | [**incluible**](/help/communities/scf.md#add-or-include-a-communities-component) | No |
 | [**clientlibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
-| **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
+| **plantillas** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **propiedades** | consulte [Función Blog](/help/communities/blog-feature.md) |
+| **propiedades** | ver [característica de blog](/help/communities/blog-feature.md) |
 
 * [Personalizaciones del lado del cliente](/help/communities/client-customize.md)
 
@@ -80,29 +80,29 @@ La función de blog está compuesta por dos componentes principales disponibles 
 
 * [API de blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Extremos del blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Extremos de blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](/help/communities/server-customize.md)
 
 ### Función Blog {#blog-function}
 
-Una estructura de sitio de la comunidad que incluye [Función Blog](/help/communities/functions.md#blog-function) tiene `Blog` y `Blog Sidebar` componentes configurados. La función Blog admite la identificación de [grupo de usuarios miembros privilegiados](/help/communities/users.md#privileged-members-group).
+Una estructura de sitio de comunidad que incluye la [función Blog](/help/communities/functions.md#blog-function) tiene `Blog` y `Blog Sidebar` componentes configurados. La función Blog permite identificar un [grupo de usuarios miembros privilegiados](/help/communities/users.md#privileged-members-group).
 
 ### Acceso a las entradas de blog (UGC) {#accessing-blog-entries-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](/help/communities/working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](/help/communities/working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Resumen del proveedor de recursos de almacenamiento](/help/communities/srp.md) - introducción y descripción general del uso del repositorio.
-* [SRP y UGC Essentials](/help/communities/srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
-* [Acceso a UGC con SRP](/help/communities/accessing-ugc-with-srp.md) - directrices de codificación.
-* [Refactorización de SocialUtils](/help/communities/socialutils.md) : asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [SRP y UGC Essentials](/help/communities/srp-and-ugc.md): métodos y ejemplos de utilidades SRP.
+* [Acceder a UGC con SRP](/help/communities/accessing-ugc-with-srp.md): directrices de codificación.
+* [Refactorización de SocialUtils](/help/communities/socialutils.md): asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
 
 ## Editor principal {#primary-publisher}
 
@@ -118,6 +118,6 @@ AEM La plataforma bloquea los vínculos de otros sitios web para evitar ataques 
 
 AEM A partir de la versión 6.2 de la versión, las modificaciones que se requerían anteriormente para realizarse manualmente se incluyen en el archivo de configuración predeterminado de AntiSamy.
 
-Los medios enriquecidos se incrustan en un artículo de blog seleccionando la variable `Embed Media from External Sites` icono :
+Los medios enriquecidos están incrustados en un artículo de blog al seleccionar el icono `Embed Media from External Sites`:
 
 ![medios](assets/media-icon.png)

@@ -86,7 +86,7 @@ Puede crear un lanzamiento desde la consola Sites o Lanzamientos:
    * **Título del lanzamiento**: el nombre del lanzamiento. El nombre debe ser significativo para los autores.
    * **Con contenido existente**: el contenido original se utiliza para crear el lanzamiento.
    * **utilice una plantilla nueva para sustituir la página**: consulte [Creación de un lanzamiento con una plantilla nueva](#create-launch-with-new-template) para obtener más información.
-   * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para conseguirlo, esta opción convierte el lanzamiento en una [live copy](/help/sites-administering/msm.md).
+   * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para conseguirlo, esta opción convierte el lanzamiento en [live copy](/help/sites-administering/msm.md).
 
      Esta opción está seleccionada de forma predeterminada.
 
@@ -98,18 +98,18 @@ Puede crear un lanzamiento desde la consola Sites o Lanzamientos:
 
    Si devuelve la consola (con **Listo**) puede ver (y acceder) al lanzamiento desde las ubicaciones siguientes:
 
-   * el [**Lanzamientos** consolar](/help/sites-authoring/launches.md#the-launches-console)
-   * el [**Referencias** en el **Sites** consolar](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * la consola [**Lanzamientos**](/help/sites-authoring/launches.md#the-launches-console)
+   * las [**referencias** en la consola **Sitios**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Creación de un lanzamiento con una plantilla nueva {#create-launch-with-new-template}
 
-Cuándo [creación de un lanzamiento](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) puede seleccionar si desea utilizar una plantilla nueva con la opción: **uso de una nueva plantilla para reemplazar la página**
+Al [crear un lanzamiento](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), puede seleccionar si desea utilizar una plantilla nueva con la opción: **usar una plantilla nueva para reemplazar la página**
 
 >[!CAUTION]
 >
 >Esta opción solo está disponible al crear un lanzamiento desde la consola **Sitios**. No está disponible al crear un lanzamiento desde la consola **Lanzamientos**.
 
-![Utilice una plantilla nueva para reemplazar la página](assets/chlimage_1-228.png)
+![Use una plantilla nueva para reemplazar la página](assets/chlimage_1-228.png)
 
 Al seleccionar esto, ocurrirá lo siguiente:
 
@@ -141,7 +141,7 @@ Crear un lanzamiento anidado desde la consola **Lanzamientos** es básicamente l
 
    ![Seleccionar lanzamiento](assets/chlimage_1-230.png)
 
-1. Continúe con **Siguiente** y complete la **Propiedades** como con cualquier otro lanzamiento.
+1. Continúe con **Siguiente** y complete las **Propiedades** como con cualquier otro lanzamiento.
 
    ![Especificar propiedades](assets/chlimage_1-231.png)
 

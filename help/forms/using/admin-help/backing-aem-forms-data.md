@@ -43,15 +43,15 @@ Si la base de datos se está ejecutando en modo de registro, como se describe en
 Ponga AEM Forms en modo de copia de seguridad segura (instantánea) o de copia de seguridad móvil (cobertura continua). Antes de configurar AEM Forms para que entre en cualquiera de los modos de copia de seguridad, asegúrese de lo siguiente:
 
 * Compruebe la versión del sistema y registre los parches o actualizaciones aplicados desde que se realizó la última copia de seguridad completa de la imagen del sistema.
-* Si utiliza copias de seguridad móviles o en modo de instantánea, asegúrese de que la base de datos está configurada con los valores de registro correctos para permitir copias de seguridad rápidas de la base de datos. (Consulte [base de datos AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
+* Si utiliza copias de seguridad móviles o en modo de instantánea, asegúrese de que la base de datos está configurada con los valores de registro correctos para permitir copias de seguridad rápidas de la base de datos. (Consulte [base de datos de AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
 
 Además de esto, observe las siguientes directrices para el proceso de copia de seguridad y restauración.
 
 * Realice una copia de seguridad del directorio GDS mediante un sistema operativo disponible o una utilidad de copia de seguridad de terceros. (Consulte [Ubicación de GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
 * (Opcional) Realice una copia de seguridad del directorio raíz de almacenamiento de contenido mediante un sistema operativo disponible o una copia de seguridad y una utilidad de terceros. (Consulte [Ubicación raíz del almacenamiento de contenido (entorno independiente)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) o [Ubicación raíz del almacenamiento de contenido (entorno en clúster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Hacer una copia de seguridad de las instancias de autor y publicación (copia de seguridad del repositorio crx).
+* Copia de seguridad   instancias de autor y publicación (copia de seguridad del repositorio crx).
 
-  Para realizar una copia de seguridad del entorno de la solución Administración de correspondencia, realice los pasos en las instancias de autor y publicación tal como se describe en [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md).
+  Para realizar una copia de seguridad del entorno de la solución Administración de correspondencia, realice los pasos en las instancias de autor y publicación que se describen en [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md).
 
   Tenga en cuenta los siguientes puntos al realizar copias de seguridad de las instancias de autor y publicación:
 
@@ -60,14 +60,14 @@ Además de esto, observe las siguientes directrices para el proceso de copia de 
    * Los desarrolladores de Workbench pueden seguir trabajando en sus procesos localmente. No deben implementar ningún proceso nuevo durante la fase de copia de seguridad.
    * La decisión sobre la duración de cada sesión de copia de seguridad (para el modo de copia de seguridad móvil) debe basarse en el tiempo total necesario para realizar una copia de seguridad de todos los datos de AEM Forms AEM (BD, GDS, repositorio de y cualquier otro dato personalizado adicional).
 
-Haga una copia de seguridad de la base de datos de AEM Forms, incluidos los registros de transacciones. Consulte [base de datos AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
+Haga una copia de seguridad de la base de datos de AEM Forms, incluidos los registros de transacciones. Ver [base de datos de AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 
 Para obtener más información, consulte el artículo de la base de conocimiento correspondiente a su base de datos:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
-* [Copia de seguridad y recuperación de oracle para AEM Forms](https://www.adobe.com/go/kb403624)
+* [Copia de seguridad y recuperación en Oracle para AEM Forms](https://www.adobe.com/go/kb403624)
 * [Copia de seguridad y recuperación de MySQL para AEM Forms](https://www.adobe.com/go/kb403625)
 * [Copia de seguridad y recuperación de Microsoft® SQL Server para AEM Forms](https://www.adobe.com/go/kb403623)
-* [Copia de seguridad y recuperación de DB2® para AEM Forms](https://www.adobe.com/go/kb403626)
+* Copia de seguridad y recuperación de [DB2® para AEM Forms](https://www.adobe.com/go/kb403626)
 
 En estos artículos se proporciona orientación sobre las funciones básicas de la base de datos para la copia de seguridad y recuperación de datos. No están pensados como guías técnicas inclusivas de la función de copia de seguridad y recuperación de la base de datos de un proveedor específico. Describen los comandos necesarios para crear una estrategia de copia de seguridad de base de datos fiable para los datos de la aplicación AEM Forms.
 
@@ -91,23 +91,23 @@ Puede utilizar la consola de administración, el comando LCBackupMode o la API d
 
    Este método pone AEM Forms en modo de copia de seguridad indefinidamente (sin tiempo de espera) y entra en modo de instantánea en lugar de modo de copia de seguridad móvil.
 
-**Uso de la opción de línea de comandos para entrar en el modo de copia de seguridad segura**
+**Usando la opción de línea de comandos para entrar en el modo de copia de seguridad segura**
 
-Puede utilizar la interfaz de la línea de comandos `LCBackupMode` secuencias de comandos para poner AEM Forms en modo de copia de seguridad segura.
+Puede usar los scripts de la interfaz de línea de comandos `LCBackupMode` para poner AEM Forms en modo de copia de seguridad seguro.
 
 1. Establezca ADOBE_LIVECYCLE e inicie el servidor de aplicaciones.
-1. Vaya a la `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` carpeta.
-1. Según el sistema operativo, edite el `LCBackupMode.cmd` o `LCBackupMode.sh` para proporcionar los valores predeterminados adecuados para su sistema.
+1. Vaya a la carpeta `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. Según el sistema operativo, edite el script `LCBackupMode.cmd` o `LCBackupMode.sh` para proporcionar los valores predeterminados que sean adecuados para el sistema.
 1. En el símbolo del sistema, ejecute el siguiente comando en una sola línea:
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*nombre de usuario* `] [-password=`*contraseña* `] [-label=`*labelname* `] [-timeout=`*segundos* `]`
-   * (Linux®, UNIX®) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*nombre de usuario* `] [-password=`*contraseña* `] [-label=`*labelname* `]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*nombre host* `] [-port=`*número de puerto* `] [-user=`*nombre de usuario* `] [-password=`*contraseña* `] [-label=`*nombre de etiqueta* `] [-timeout=`*segundos* `]`
+   * (Linux®, UNIX®) `LCBackupMode.sh enter [-host=`*nombre host* `] [-port=`*número de puerto* `] [-user=`*nombre de usuario* `] [-password=`*contraseña* `] [-label=`*nombre de etiqueta* `]`
 
    En los comandos anteriores, los marcadores de posición se definen de la siguiente manera:
 
-   `Host` es el nombre del host en el que se está ejecutando AEM Forms.
+   `Host` es el nombre del host donde se está ejecutando AEM Forms.
 
-   `port` es el puerto WebServices del servidor de aplicaciones en el que se ejecuta AEM Forms.
+   `port` es el puerto WebServices del servidor de aplicaciones en el que se está ejecutando AEM Forms.
 
    `user` es el nombre de usuario del administrador de AEM Forms.
 
@@ -115,7 +115,7 @@ Puede utilizar la interfaz de la línea de comandos `LCBackupMode` secuencias de
 
    `label` es la etiqueta de texto, que puede ser cualquier cadena, para esta copia de seguridad.
 
-   `timeout` es el número de segundos tras los cuales se abandona automáticamente el modo de copia de seguridad. Puede ser de 0 a 10.080. Si es 0, que es el valor predeterminado, el modo de copia de seguridad nunca agota el tiempo de espera.
+   `timeout` es el número de segundos después de los cuales se deja automáticamente el modo de copia de seguridad. Puede ser de 0 a 10.080. Si es 0, que es el valor predeterminado, el modo de copia de seguridad nunca agota el tiempo de espera.
 
    Para obtener más información acerca de la interfaz de línea de comandos para el modo de copia de seguridad, vea el archivo Léame en el directorio BackupRestoreCommandline.
 
@@ -135,29 +135,29 @@ Para utilizar la consola de administración para sacar AEM Forms del modo de cop
 
 Puede utilizar la interfaz de línea de comandos para sacar AEM Forms del modo de copia de seguridad segura (modo de instantánea) o para finalizar la sesión del modo de copia de seguridad actual (modo móvil). No puede utilizar la consola de administración para dejar el modo de copia de seguridad móvil. En el modo de copia de seguridad móvil, los controles Utilidades de copia de seguridad de la consola de administración están desactivados. Utilice la llamada de API o el comando LCBackupMode.
 
-1. Vaya a la `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` carpeta.
-1. Según el sistema operativo, edite el `LCBackupMode.cmd` o `LCBackupMode.sh` para proporcionar los valores predeterminados adecuados para su sistema.
+1. Vaya a la carpeta `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. Según el sistema operativo, edite el script `LCBackupMode.cmd` o `LCBackupMode.sh` para proporcionar los valores predeterminados que sean adecuados para el sistema.
 
    >[!NOTE]
    >
-   >Establezca el directorio JAVA_HOME como se describe en el capítulo apropiado para su servidor de aplicaciones en [Preparación para la instalación de AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >Establezca el directorio JAVA_HOME como se describe en el capítulo apropiado para su servidor de aplicaciones en [Preparación para instalar AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. Ejecute el siguiente comando en una sola línea:
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*nombre de usuario* `] [-password=`*contraseña* `]`
-   * (Linux®, UNIX®) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*nombre de usuario* `] [-password=`*contraseña* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*nombre host* `] [-port=`*número de puerto* `] [-user=`*nombre de usuario* `] [-password=`*contraseña* `]`
+   * (Linux®, UNIX®) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*nombre host* `] [-port=`*número de puerto* `] [-user=`*nombre de usuario* `] [-password=`*contraseña* `]`
 
      En los comandos anteriores, los marcadores de posición se definen de la siguiente manera:
 
-     `Host` es el nombre del host en el que se está ejecutando AEM Forms.
+     `Host` es el nombre del host donde se está ejecutando AEM Forms.
 
-     `port` es el puerto en el que se ejecuta AEM Forms en el servidor de aplicaciones.
+     `port` es el puerto en el que AEM Forms se está ejecutando en el servidor de aplicaciones.
 
      `user` es el nombre de usuario del administrador de AEM Forms.
 
      `password` es la contraseña del administrador de AEM Forms.
 
-     `leaveContinuousCoverage` Utilice esta opción para desactivar completamente el modo de copia de seguridad móvil.
+     `leaveContinuousCoverage` Utilice esta opción para deshabilitar completamente el modo de copia de seguridad móvil.
 
    >[!NOTE]
    >

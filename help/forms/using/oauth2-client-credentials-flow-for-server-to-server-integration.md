@@ -12,7 +12,7 @@ ht-degree: 76%
 
 ---
 
-# Integración de Salesforce con el flujo de credenciales de cliente de OAuth 2.0  {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integración de Salesforce con el flujo de credenciales de cliente de OAuth 2.0 {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -58,7 +58,7 @@ Antes de establecer la comunicación entre una aplicación de Salesforce y un en
 
 1. Cargue el archivo Swagger creado desde el equipo local haciendo clic en **[!UICONTROL Examinar]**.
 1. Seleccione el **[!UICONTROL Tipo de autenticación]** como **[!UICONTROL OAuth 2.0]** y aparecerá el panel **[!UICONTROL Configuración de autenticación]**.
-1. Seleccione el **[!UICONTROL Tipo de concesión]** as **[!UICONTROL Credenciales del cliente]**.
+1. Seleccione **[!UICONTROL Tipo de concesión]** como **[!UICONTROL Credenciales de cliente]**.
 1. Especifique el **[!UICONTROL ID de cliente]** y **[!UICONTROL Secreto del cliente]** obtenido de la aplicación conectada de Salesforce.
 1. Especifique la **[!UICONTROL URL de token de acceso]** con el formato
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`.

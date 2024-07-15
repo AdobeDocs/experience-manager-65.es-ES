@@ -38,30 +38,30 @@ Los aspectos clave se tratan a continuación, mientras que las siguientes págin
 >
 >Para obtener información acerca de:
 >
->* Participación en flujos de trabajo, consulte [Uso de flujos de trabajo](/help/sites-authoring/workflows.md).
->* Administración de flujos de trabajo e instancias de flujo de trabajo, consulte [Administración de flujos de trabajo](/help/sites-administering/workflows.md).
->* Para ver un artículo completo de la comunidad, consulte [Modificación de recursos digitales mediante flujos de trabajo de Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=es)
->* Consulte la [AEM Seminario web para expertos de Adobe sobre flujos de trabajo](https://communities.adobeconnect.com/p5s33iburd54/).
->* Cambios en las ubicaciones de la información consulte [AEM Reestructuración de repositorios en 6.5](/help/sites-deploying/repository-restructuring.md) y [Prácticas recomendadas de flujo de trabajo: ubicaciones](/help/sites-developing/workflows-best-practices.md#locations).
+>* Al participar en flujos de trabajo, consulte [Uso de flujos de trabajo](/help/sites-authoring/workflows.md).
+>* Para administrar flujos de trabajo e instancias de flujo de trabajo, consulte [Administrar flujos de trabajo](/help/sites-administering/workflows.md).
+>* Para ver un artículo completo de la comunidad, consulte [Modificación de Digital Assets mediante flujos de trabajo de Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=es)
+>* AEM Consulte [Preguntar al seminario web de expertos de la sobre los flujos de trabajo](https://communities.adobeconnect.com/p5s33iburd54/).
+>* AEM Cambios en las ubicaciones de la información. Consulte [Reestructuración de repositorios en la versión 6.5](/help/sites-deploying/repository-restructuring.md) de la biblioteca de recursos y [Prácticas recomendadas de flujo de trabajo - Ubicaciones](/help/sites-developing/workflows-best-practices.md#locations).
 >
 
 ## Modelo {#model}
 
-A `WorkflowModel` representa una definición (modelo) de un flujo de trabajo. Está hecho de `WorkflowNodes` y `WorkflowTransitions`. Las transiciones conectan los nodos y definen el *fluir*. El modelo siempre tiene un nodo de inicio y un nodo de finalización.
+Un `WorkflowModel` representa una definición (modelo) de un flujo de trabajo. Está compuesto por `WorkflowNodes` y `WorkflowTransitions`. Las transiciones conectan los nodos y definen *flow*. El modelo siempre tiene un nodo de inicio y un nodo de finalización.
 
 ### Modelo Runtime {#runtime-model}
 
 Los modelos de flujo de trabajo tienen versiones. Al ejecutar una instancia de flujo de trabajo, se utiliza y se mantiene el modelo de tiempo de ejecución del flujo de trabajo, tal como estaba disponible en el momento en que se inició el flujo de trabajo.
 
-Un modelo de tiempo de ejecución es [generado al **Sincronización** se activa en el editor del modelo de flujo de trabajo](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
+Se [genera un modelo en tiempo de ejecución cuando se activa **Sync** en el editor del modelo de flujo de trabajo](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
 
-Ediciones en el modelo de flujo de trabajo que se producen, en los modelos de tiempo de ejecución que se generan o en ambos, *después* la instancia específica que se inició no se aplican a esa instancia.
+Las ediciones realizadas en el modelo de flujo de trabajo, en los modelos de tiempo de ejecución generados o en ambos, *después de* de iniciar la instancia específica no se aplican a esa instancia.
 
 >[!CAUTION]
 >
->Los pasos realizados se definen mediante la variable [modelo de tiempo de ejecución](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model), generado en el momento en que se **Sincronización** la acción se activa en el editor del modelo de flujo de trabajo.
+>Los pasos realizados están definidos por el [modelo de tiempo de ejecución](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model), generado en el momento en que se activa la acción **Sincronizar** en el editor del modelo de flujo de trabajo.
 >
->Si el modelo de flujo de trabajo se cambia después de este punto temporal (sin **Sincronización** se está activando), la instancia de tiempo de ejecución no refleja esos cambios. Solo los modelos en tiempo de ejecución generados después de la actualización reflejan los cambios. Las excepciones son los scripts ECMA subyacentes, que se conservan una sola vez para que se realicen los cambios.
+>Si el modelo de flujo de trabajo cambia después de este momento (sin que se active **Sync**), la instancia de tiempo de ejecución no reflejará dichos cambios. Solo los modelos en tiempo de ejecución generados después de la actualización reflejan los cambios. Las excepciones son los scripts ECMA subyacentes, que se conservan una sola vez para que se realicen los cambios.
 
 ### Paso {#step}
 
@@ -73,23 +73,23 @@ Cada paso realiza una tarea discreta. Existen diferentes tipos de pasos del fluj
 * OR Split/Join: utilice la lógica para decidir qué paso ejecutar en el flujo de trabajo.
 * División/unión AND: permite ejecutar varios pasos simultáneamente.
 
-Todos los pasos comparten las siguientes propiedades comunes: `Autoadvance` y `Timeout` alertas (con scripts).
+Todos los pasos comparten las siguientes propiedades comunes: `Autoadvance` y `Timeout` alertas (que se pueden usar como scripts).
 
 ### Transición {#transition}
 
-A `WorkflowTransition` representa una transición entre dos `WorkflowNodes` de a `WorkflowModel`.
+Un(a) `WorkflowTransition` representa una transición entre dos `WorkflowNodes` de un(a) `WorkflowModel`.
 
 * Define el vínculo entre dos pasos consecutivos.
 * Es posible aplicar reglas.
 
 ### WorkItem {#workitem}
 
-A `WorkItem` es la unidad que pasa a través de un `Workflow` instancia de a `WorkflowModel`. Contiene el `WorkflowData` que la instancia actúa en y una referencia a `WorkflowNode` que describe el paso de flujo de trabajo subyacente.
+Un(a) `WorkItem` es la unidad que se pasa a través de una instancia `Workflow` de un(a) `WorkflowModel`. Contiene el `WorkflowData` en el que actúa la instancia y una referencia al `WorkflowNode` que describe el paso de flujo de trabajo subyacente.
 
 * Se utiliza para identificar la tarea y se coloca en la bandeja de entrada correspondiente.
-* Una instancia de flujo de trabajo puede tener una o varias `WorkItems` al mismo tiempo (según el modelo de flujo de trabajo).
-* El `WorkItem` hace referencia a la instancia de flujo de trabajo.
-* En el repositorio, la variable `WorkItem` se almacena debajo de la instancia de flujo de trabajo.
+* Una instancia de flujo de trabajo puede tener uno o varios `WorkItems` al mismo tiempo (según el modelo de flujo de trabajo).
+* `WorkItem` hace referencia a la instancia de flujo de trabajo.
+* En el repositorio, `WorkItem` se almacena debajo de la instancia de flujo de trabajo.
 
 ### Carga útil {#payload}
 
@@ -112,9 +112,9 @@ Se archivan las instancias completadas y terminadas.
 
 ### Bandeja de entrada {#inbox}
 
-Cada cuenta de usuario tiene su propia bandeja de entrada de flujo de trabajo en la que se asigna el elemento `WorkItems` son accesibles.
+Cada cuenta de usuario tiene su propia bandeja de entrada de flujo de trabajo en la que se puede acceder a los `WorkItems` asignados.
 
-El `WorkItems` se asignan a la cuenta de usuario directamente o al grupo al que pertenecen.
+Los(as) `WorkItems` se asignan a la cuenta de usuario directamente o al grupo al que pertenecen.
 
 ### Tipos de flujo de trabajo {#workflow-types}
 
@@ -154,27 +154,27 @@ Se han introducido flujos de trabajo transitorios para cargar muchos recursos, d
 >Cuando un modelo de flujo de trabajo se marca como Transitorio, hay algunos escenarios en los que la información de tiempo de ejecución debe persistir:
 >
 >* El tipo de carga útil (por ejemplo, vídeo) requiere pasos externos para el procesamiento; en estos casos, el historial de tiempo de ejecución es necesario para la confirmación de estado.
->* El flujo de trabajo introduce un **División Y**. En estos casos, el historial de tiempo de ejecución es necesario para la confirmación de estado.
+>* El flujo de trabajo introduce **AND Split**. En estos casos, el historial de tiempo de ejecución es necesario para la confirmación de estado.
 >* Cuando el flujo de trabajo transitorio introduce un paso de participante, cambia de modo, durante la ejecución, a no transitorio. Como la tarea se pasa a una persona, el historial debe persistir.
 >
 
 >[!CAUTION]
 >
->Dentro de un flujo de trabajo transitorio, no debe utilizar un **Paso Ir a**.
+>Dentro de un flujo de trabajo transitorio, no debería usar un **Paso Ir a**.
 >
->El motivo es que la variable **Paso Ir a** crea un trabajo de sling para continuar el flujo de trabajo en la `goto` punto. Evita el propósito de hacer que el flujo de trabajo sea transitorio y genera un error en el archivo de registro.
+>El motivo es que **Ir al paso** crea un trabajo de sling para continuar el flujo de trabajo en el punto `goto`. Evita el propósito de hacer que el flujo de trabajo sea transitorio y genera un error en el archivo de registro.
 >
->Uso **División O** para realizar opciones dentro de un flujo de trabajo transitorio.
+>Use **OR Split** para hacer elecciones dentro de un flujo de trabajo transitorio.
 
 >[!NOTE]
 >
->Consulte [Prácticas recomendadas para Assets](/help/assets/performance-tuning-guidelines.md#transient-workflows) para obtener más información sobre cómo afectan los flujos de trabajo transitorios al rendimiento de los recursos.
+>Consulte las [Prácticas recomendadas para Assets](/help/assets/performance-tuning-guidelines.md#transient-workflows) para obtener más información sobre cómo los flujos de trabajo transitorios afectan el rendimiento de los recursos.
 
 ### Compatibilidad con varios recursos {#multi-resource-support}
 
-Activando **Compatibilidad con varios recursos** para el modelo de flujo de trabajo significa que se inicia una sola instancia de flujo de trabajo incluso cuando se seleccionan varios recursos. Cada uno se adjunta como un paquete.
+Activar **Compatibilidad con varios recursos** para el modelo de flujo de trabajo significa que se inicia una sola instancia de flujo de trabajo incluso cuando se seleccionan varios recursos. Cada uno se adjunta como un paquete.
 
-If **Compatibilidad con varios recursos** no está activada para el modelo de flujo de trabajo y se han seleccionado varios recursos; a continuación, se inicia una instancia de flujo de trabajo individual para cada recurso.
+Si **Compatibilidad con varios recursos** no está activada para el modelo de flujo de trabajo y se seleccionan varios recursos, se inicia una instancia de flujo de trabajo individual para cada recurso.
 
 >[!NOTE]
 >
@@ -182,18 +182,18 @@ If **Compatibilidad con varios recursos** no está activada para el modelo de fl
 
 ### Fases del flujo de trabajo {#workflow-stages}
 
-Las fases del flujo de trabajo ayudan a visualizar el progreso de un flujo de trabajo al administrar tareas. Se pueden utilizar para proporcionar una visión general de hasta dónde llega el flujo de trabajo a través del procesamiento. Cuando se ejecuta el flujo de trabajo, el usuario puede ver el progreso descrito por **Fase** (a diferencia de los pasos individuales).
+Las fases del flujo de trabajo ayudan a visualizar el progreso de un flujo de trabajo al administrar tareas. Se pueden utilizar para proporcionar una visión general de hasta dónde llega el flujo de trabajo a través del procesamiento. Cuando se ejecuta el flujo de trabajo, el usuario puede ver el progreso descrito por **Stage** (a diferencia del paso individual).
 
 Como los nombres de paso individuales pueden ser específicos y técnicos, los nombres de fase se pueden definir para proporcionar una vista conceptual del progreso del flujo de trabajo.
 
 Por ejemplo, para un flujo de trabajo con seis pasos y cuatro fases:
 
-1. Puede [Configure las fases del flujo de trabajo (que muestran el progreso del flujo de trabajo) y luego asigne la fase adecuada a cada paso del flujo de trabajo](/help/sites-developing/workflows-models.md#configuring-workflow-stages-that-show-workflow-progress):
+1. Puede [configurar las fases del flujo de trabajo (que muestran el progreso del flujo de trabajo) y luego asignar la fase adecuada a cada paso del flujo de trabajo](/help/sites-developing/workflows-models.md#configuring-workflow-stages-that-show-workflow-progress):
 
    * Se pueden crear varios nombres de fase.
    * A continuación, se asigna un nombre de etapa individual a cada paso (se puede asignar un nombre de etapa a uno o más pasos).
 
-   | **Nombre del paso** | **Fase (asignada a la etapa)** |
+   | **Nombre del paso** | **Fase (asignada al paso)** |
    |---|---|
    | Etapa 1 | Crear |
    | Etapa 2 | Crear |
@@ -202,14 +202,14 @@ Por ejemplo, para un flujo de trabajo con seis pasos y cuatro fases:
    | Etapa 5 | Completado |
    | Etapa 6 | Completado |
 
-1. Cuando se ejecuta el flujo de trabajo, el usuario puede ver el progreso según los nombres de las fases (en lugar de los nombres de las fases). El progreso del flujo de trabajo se muestra en [Pestaña INFORMACIÓN DEL FLUJO DE TRABAJO de la ventana de detalles de tarea del elemento de flujo de trabajo](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) enumerados en la [Bandeja de entrada](/help/sites-authoring/inbox.md).
+1. Cuando se ejecuta el flujo de trabajo, el usuario puede ver el progreso según los nombres de las fases (en lugar de los nombres de las fases). El progreso del flujo de trabajo se muestra en la pestaña [WORKFLOW INFO de la ventana de detalles de la tarea del elemento de flujo de trabajo](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) enumerado en la [bandeja de entrada](/help/sites-authoring/inbox.md).
 
 ### Flujos de trabajo y Forms {#workflows-and-forms}
 
-AEM Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en la. Puede ser con el [componentes principales de componentes de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) AEM disponible en una instancia de estándar o con [solución de AEM Forms](/help/forms/using/aem-forms-workflow.md).
+AEM Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en la. AEM Se puede combinar con los [componentes principales de los componentes de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponibles en una instancia de estándar o con la [solución de AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Al crear un formulario, el envío del formulario se puede asociar fácilmente a un modelo del flujo de trabajo. Por ejemplo, para almacenar el contenido en una ubicación concreta del repositorio o para notificar a un usuario el envío del formulario y su contenido.
 
 ### Flujos de trabajo y traducción {#workflows-and-translation}
 
-Los flujos de trabajo también forman parte del [Traducción](/help/sites-administering/translation.md) proceso.
+Los flujos de trabajo también forman parte del proceso [Translation](/help/sites-administering/translation.md).

@@ -14,7 +14,7 @@ ht-degree: 87%
 
 # Creación para usuarios sin encabezado con AEM: una introducción {#author-headless-introduction}
 
-En esta parte del [AEM Recorrido de autor de contenido sin encabezado](overview.md), puede aprender los conceptos (básicos) y la terminología necesarios para comprender la creación de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager AEM ().
+AEM En esta parte del [Recorrido para autores de contenido sin encabezado](overview.md), puede aprender los conceptos (básicos) y la terminología necesarios para comprender la creación de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager AEM ().
 
 ## Objetivo {#objective}
 

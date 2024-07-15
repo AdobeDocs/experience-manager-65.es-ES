@@ -26,16 +26,16 @@ Las Guías de introducción sin encabezado establecen una ruta sencilla para cre
 >
 >Esta guía de introducción asume el conocimiento de tecnologías de AEM y sin encabezado.
 >
->AEM Si acaba de empezar en o no tiene encabezado, consulte la sección sobre la configuración de la página de la página de. [Recorridos de documentación sin encabezado](/help/journey-headless/overview.md) AEM para obtener una introducción completa a sin encabezado y a cómo lo admite la aplicación de forma.
+>AEM Si no tiene experiencia previa con la documentación sin encabezado o con la que no tiene encabezado, consulte los [Recorrido AEM de documentación sin encabezado](/help/journey-headless/overview.md) para obtener una introducción completa a la documentación sin encabezado y a cómo la admite la documentación sin encabezado y con la que la tiene la.
 
 ## Audiencia {#audience}
 
-AEM Las tareas descritas en las Guías de introducción sin encabezado son necesarias para una demostración completa básica de las capacidades sin encabezado de la aplicación de la tecnología sin encabezado. Cualquier persona con acceso de administrador a una instancia de AEM de prueba puede seguir estas guías para comprender la entrega sin encabezado en AEM, aunque es ideal alguien con experiencia de desarrollador.
+Las tareas descritas en las Guías de introducción sin encabezado son necesarias para una demostración completa básica de cómo AEM las capacidades sin encabezado. Cualquier persona con acceso de administrador a una instancia de AEM de prueba puede seguir estas guías para comprender la entrega sin encabezado en AEM, aunque es ideal alguien con experiencia de desarrollador.
 
 Sin embargo, en una situación de producción, las tareas suelen realizarlas diferentes personas varias veces. Por ejemplo:
 
 * Los **administradores** tienen que configurar la configuración inicial y la estructura de carpetas para el contenido normalmente solo una vez o de forma esporádica.
-* **Arquitectos de información** añada nuevos modelos a medida que evolucionen las necesidades de la organización.
+* **Los arquitectos de la información** agregan nuevos modelos a medida que evolucionan las necesidades de la organización.
 * Los **autores de contenido** crean continuamente contenido como fragmentos basados en los modelos definidos por los arquitectos.
 
 Las guías de introducción sin encabezado indican quién suele realizar las tareas descritas y con qué frecuencia.

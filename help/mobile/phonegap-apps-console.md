@@ -68,18 +68,18 @@ La página principal o la página index.html de una variación de idioma de una 
 Las aplicaciones móviles se basan en un modelo que define una estructura de página y propiedades. Puede configurar las siguientes propiedades de la aplicación:
 
 * **Título:** El título de la aplicación.
-* **Ruta de destino:** La ubicación en el repositorio donde se almacena la aplicación. Deje el valor predeterminado para crear una ruta basada en el nombre de la aplicación.
+* **Ruta de destino:** Ubicación en el repositorio donde se almacena la aplicación. Deje el valor predeterminado para crear una ruta basada en el nombre de la aplicación.
 
-* **Nombre:** El valor predeterminado es el valor de la propiedad Title sin los caracteres de espacio. El nombre se utiliza dentro de CQ para hacer referencia a la aplicación, por ejemplo, para el nodo del repositorio que representa la aplicación.
+* **Nombre:** El valor predeterminado es el valor de la propiedad Título con caracteres de espacio eliminados. El nombre se utiliza dentro de CQ para hacer referencia a la aplicación, por ejemplo, para el nodo del repositorio que representa la aplicación.
 * **Descripción:** Una descripción de la aplicación.
-* **URL del servidor:** La dirección URL que proporciona actualizaciones de contenido OTA (Over-the-Air) en la aplicación. El valor predeterminado es la URL del servidor de publicación de la instancia que se utiliza para crear una aplicación (tomada del servicio externalizador). Tenga en cuenta que debe ser una instancia del servidor de publicación en lugar de un autor, lo que requiere autenticación.
+* **URL del servidor:** URL que proporciona actualizaciones de contenido de transmisión (OTA) a la aplicación. El valor predeterminado es la URL del servidor de publicación de la instancia que se utiliza para crear una aplicación (tomada del servicio externalizador). Tenga en cuenta que debe ser una instancia del servidor de publicación en lugar de un autor, lo que requiere autenticación.
 
 También puede proporcionar un archivo de imagen para utilizarlo como miniatura de la aplicación, seleccionar la configuración de PhoneGap Build que desea utilizar y seleccionar la configuración de análisis de aplicaciones móviles que desea utilizar. Esta imagen solo se utiliza como miniatura para representar la aplicación móvil dentro de la consola de aplicaciones móviles en Experience Manager.
 
 Existen pestañas adicionales (y opcionales) para crear un servicio en la nube e integrar el complemento SDK de Adobe Mobile Services en su aplicación.
 
 * Generar: Haga clic en Administrar configuraciones y configure el servicio de compilación de build.phonegap.com aquí. A continuación, en la lista desplegable, podrá seleccionar el servicio en la nube de PhoneGap Build recién creado.
-* Analytics: Haga clic en Administrar configuraciones y configure los [SDK de Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) servicio en la nube. A continuación, en la lista desplegable, podrá seleccionar el Mobile Service recién creado para integrarlo en su aplicación móvil.
+* Analytics: haga clic en Administrar configuraciones y configure el servicio en la nube de [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). A continuación, en la lista desplegable, podrá seleccionar el Mobile Service recién creado para integrarlo en su aplicación móvil.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ El siguiente procedimiento utiliza la interfaz de usuario táctil para crear una
 1. En el carril, haga clic en Aplicaciones.
 1. Haga clic en el icono Create.
 
-   ![El icono Crear se indica con un signo más dentro de un cuadrado.](do-not-localize/chlimage_1-7.png)
+   ![Icono Crear indicado por un signo más dentro de un cuadrado.](do-not-localize/chlimage_1-7.png)
 
 1. (Opcional) En la pestaña Avanzado, proporcione una descripción para la aplicación y cambie la dirección URL del servidor si es necesario.
 1. (Opcional) Si utiliza PhoneGap Build para compilar la aplicación, en la pestaña Generar, seleccione la Configuración que desea utilizar.
@@ -113,7 +113,7 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 1. En el carril, haga clic en Aplicaciones.
 1. Seleccione la aplicación que desea configurar y haga clic en el icono Ver propiedades de página.
 
-   ![El icono Ver propiedades de página está indicado por la letra I dentro de un círculo.](do-not-localize/chlimage_1-8.png)
+   ![Icono Ver propiedades de página indicado por la letra I dentro de un círculo.](do-not-localize/chlimage_1-8.png)
 
 1. Para cambiar los valores de las propiedades, haga clic en el icono Edit.
 
@@ -121,14 +121,14 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 
 1. Configure las propiedades Básico y Avanzado y, a continuación, haga clic en el icono Listo.
 
-   ![El icono Listo aparece indicado mediante un símbolo de marca de verificación.](do-not-localize/chlimage_1-10.png)
+   ![Icono de Listo indicado por un símbolo de marca de verificación.](do-not-localize/chlimage_1-10.png)
 
 #### Configurar una variación de idioma de la aplicación {#configure-a-language-variation-of-the-application}
 
 1. En el carril, haga clic en Aplicaciones.
 1. Haga clic para explorar en profundidad la aplicación móvil que desea editar en el Admin Console de aplicaciones. Seleccione la versión de idioma de la aplicación que desea configurar y haga clic en el icono Ver propiedades de la aplicación.
 
-   ![El icono Ver propiedades de la aplicación está indicado por la letra I dentro de un círculo.](do-not-localize/chlimage_1-11.png)
+   ![Icono Ver propiedades de la aplicación indicado por la letra I dentro de un círculo.](do-not-localize/chlimage_1-11.png)
 
 1. Para cambiar los valores de las propiedades, haga clic en el icono Edit.
 
@@ -136,7 +136,7 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 
 1. Configure las propiedades en las pestañas Básico, Avanzado, Generar y Analytics y, a continuación, haga clic en el icono Listo.
 
-   ![El icono Listo aparece indicado mediante un símbolo de marca de verificación.](do-not-localize/chlimage_1-13.png)
+   ![Icono de Listo indicado por un símbolo de marca de verificación.](do-not-localize/chlimage_1-13.png)
 
 ### Creación del contenido de una aplicación móvil {#authoring-the-content-of-a-mobile-application}
 
@@ -166,7 +166,7 @@ Realice el siguiente procedimiento en la instancia en la que desea actualizar la
 1. En el carril, haga clic en Aplicaciones y, a continuación, haga clic en la aplicación.
 1. Seleccione la página de bienvenida y, a continuación, haga clic en el icono Actualizar caché.
 
-   ![El icono Actualizar caché está indicado por un barril rayado con un símbolo de reciclaje encima.](do-not-localize/chlimage_1-14.png)
+   ![El icono Actualizar caché indicado por un barril a rayas con un símbolo de reciclaje encima.](do-not-localize/chlimage_1-14.png)
 
 ### Uso de plantillas de aplicación {#using-app-templates}
 
@@ -290,7 +290,7 @@ Tenga en cuenta que las imágenes aparecen en el carrusel para páginas asociada
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-**Pestaña Propiedades del carrusel**
+**Pestaña Propiedades de carrusel**
 
 Configure el comportamiento del carrusel:
 
@@ -298,7 +298,7 @@ Configure el comportamiento del carrusel:
 * Tiempo de transición: duración en milisegundos de la animación para transiciones de imagen.
 * Estilo de controles: tipo de controles que se proporcionan para desplazarse entre imágenes.
 
-**Pestaña Propiedades de lista**
+**Ficha Propiedades de lista**
 
 Especifique cómo se genera la lista de páginas:
 
@@ -333,7 +333,7 @@ Rellene la lista con los resultados de una búsqueda de palabras clave. La búsq
 
 **Búsqueda avanzada**
 
-Rellene la lista con un [Querybuilder](/help/sites-developing/querybuilder-api.md) consulta.
+Rellene la lista con una consulta [Querybuilder](/help/sites-developing/querybuilder-api.md).
 
 ### Imagen {#image}
 

@@ -26,11 +26,11 @@ El usuario no puede realizar operaciones como Enviar PDF por correo electrónico
 
 1. Descargue jar como [java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar) y descomprima el archivo jar descargado para obtener el archivo de manifiesto.
 
-1. Utilizar el archivo de manifiesto de `java.mail-1.0.jar` recuperado del paso 1 para crear un archivo jar personalizado, como `java.mail-1.5.jar`.
+1. Utilice el archivo de manifiesto de `java.mail-1.0.jar` recuperado del paso 1 para crear un archivo jar personalizado, por ejemplo, `java.mail-1.5.jar`.
 
 1. Abra el archivo de manifiesto y reemplace todas las ocurrencias de `1.5.0` con `1.5.6` y `Bundle-Version: 1.0` con `Bundle-Version:1.5`
 
-1. Crear un JAR personalizado (`java.mail-1.5.jar`) usando el siguiente comando en `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` carpeta como:
+1. Cree un archivo jar personalizado (`java.mail-1.5.jar`) con el siguiente comando en la carpeta `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` como:
    `jar -cfm java.mail-1.5.jar manifest.mf`
 
    En el comando anterior, *manifest.mf* es el nombre del archivo de manifiesto y *java.mail-1.5.jar* es el nombre del archivo que se crearía después de ejecutar el comando anterior.
@@ -39,18 +39,18 @@ El usuario no puede realizar operaciones como Enviar PDF por correo electrónico
 
 1. Navegue hasta `http://<server name>:<port>/lc/system/console/bundles` y elimine el paquete con un nombre como `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
 
-1. Instalar `java.mail-1.5.jar` obtenido en el paso 3. Este paso reinicia las propiedades sling de la implementación JEE. Espere a que se instalen los paquetes en `http://<server name>:<port>/lc/system/console/bundles` para mostrar el estado como **Activo**.
+1. Instale `java.mail-1.5.jar` obtenido del paso 3. Este paso reinicia las propiedades sling de la implementación JEE. Espere a que se instalen los paquetes en `http://<server name>:<port>/lc/system/console/bundles` para mostrar el estado como **Activo**.
 
-   >En caso de que el estado siga siendo **InActive**, reiniciar   **JBoss®** desde el **Consola de servicios**.
+   >Si el estado sigue siendo **InActive**, reinicie   **JBoss®** de la **Consola de servicios**.
 
 
 1. Instale el archivo `javax.mail-1.5.6.redhat-1.jar` descargado mediante el paso 5.
 
-1. Detener **JBoss®** desde el **Consola de servicios** y añada las siguientes propiedades a **Sling.properties** archivo:
+1. Detenga **JBoss®** desde la **Consola de servicios** y anexe las siguientes propiedades al archivo **Sling.properties**:
    * `org.osgi.framework.system.packages.extra=javax.activation; version\=1.2.0`
    * `sling.bootdelegation.activation=javax.activation.*`
 
-1. Restart **JBoss®**.
+1. Reinicie **JBoss®**.
 
 >[!NOTE]
 >

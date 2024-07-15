@@ -1,5 +1,5 @@
 ---
-title: Estrategia de copia de seguridad para usuarios de Connector para Documentum&reg; de EMC
+title: Estrategia de copia de seguridad para usuarios de Connector para EMC Documentum&reg;
 description: Consulte cómo crear una estrategia de copia de seguridad para los usuarios de Connector for EMC Documentum&reg;.
 contentOwner: admin
 content-type: reference
@@ -23,7 +23,7 @@ Si tiene instalado Connector para EMC Documentum®, además de las instrucciones
 AEM Haga una copia de seguridad del entorno de formularios de la utilizando el repositorio de ECM y realizando las siguientes tareas:
 
 * AEM Realice una copia de seguridad de los formularios de la aplicación siguiendo las instrucciones descritas en este documento.
-* Realice una copia de seguridad del sistema ECM Documentum® siguiendo las instrucciones indicadas en [Copia de seguridad de EMC Documentum® Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
+* Realice una copia de seguridad del sistema ECM Documentum® siguiendo las instrucciones de [Copia de seguridad de EMC Documentum® Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
 
 AEM Restaurar el entorno de formularios utilizando el repositorio de ECM y realizando las siguientes tareas:
 

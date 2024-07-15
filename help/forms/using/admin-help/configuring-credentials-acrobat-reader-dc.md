@@ -22,7 +22,7 @@ Para aplicar derechos de uso a documentos de PDF AEM, configure formularios de c
 
 Si utiliza una credencial de evaluación, reemplácela por una credencial de producción al pasar al entorno de producción. Para actualizar una credencial caducada o de evaluaciones, primero elimine la credencial antigua de extensiones de Acrobat Reader DC.
 
-Para obtener información sobre cómo obtener una credencial, consulte [AEM Preparación para la instalación de formularios (un solo servidor)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
+AEM Para obtener información acerca de cómo obtener una credencial, vea [Preparar la instalación de formularios en un solo servidor (Single Server)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
 El almacén de confianza puede contener más de una credencial de extensiones de Acrobat Reader DC. Designe una de esas credenciales como credencial predeterminada de las extensiones de Reader. La credencial predeterminada se utiliza cuando un usuario de Workbench no puede determinar qué credencial utilizar durante la creación del proceso. Estas reglas se aplican a las credenciales predeterminadas:
 
@@ -33,7 +33,7 @@ El almacén de confianza puede contener más de una credencial de extensiones de
 
 >[!NOTE]
 >
->También puede importar y eliminar credenciales mediante programación. (Consulte [AEM Programar con formularios de](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).)
+>También puede importar y eliminar credenciales mediante programación. AEM (Consulte [Programar con formularios de la lista de distribución de formularios ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es)).
 
 ## Importar una credencial de extensiones de Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
 

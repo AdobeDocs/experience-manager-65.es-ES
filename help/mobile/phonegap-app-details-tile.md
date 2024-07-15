@@ -22,17 +22,17 @@ ht-degree: 1%
 >
 >Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-El **`Manage App`** El mosaico en el Tablero de la aplicación le permite editar los detalles de la aplicación. Para abrir la página Detalles, haga clic en **`Manage App`** vínculo de detalles del mosaico. Desde dentro de **`Manage App`** , puede editar la configuración de la aplicación PhoneGap (config.xml) y preparar la aplicación para su envío a las distintas tiendas de aplicaciones.
+El mosaico **`Manage App`** en el panel de la aplicación le permite editar detalles sobre la aplicación. Para abrir la página Detalles, haga clic en el vínculo de detalles del mosaico **`Manage App`**. Desde la página **`Manage App`**, puede editar la configuración de la aplicación PhoneGap (config.xml) y preparar la aplicación para enviarla a las distintas tiendas de aplicaciones.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-## Explicación de la `Manage App` mosaico {#understanding-the-manage-app-tile}
+## Explicación del mosaico `Manage App` {#understanding-the-manage-app-tile}
 
-Puede explorar en profundidad cada mosaico del **`Manage App`** mosaico para ver o editar detalles haciendo clic en &#39;...&#39; en la esquina inferior derecha.
+Puede explorar en profundidad cada mosaico del mosaico **`Manage App`** para ver o editar detalles haciendo clic en &#39;...&#39;, en la esquina inferior derecha.
 
 ### La pestaña Básico {#the-basic-tab}
 
-Puede editar la variable **Nombre**, **Autor**, **Descripción breve**, y el **Descripción** para su aplicación desde esta pestaña.
+En esta pestaña, puede editar **Nombre**, **Autor**, **Descripción breve** y **Descripción** para su aplicación.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -55,7 +55,7 @@ Cada tienda de aplicaciones de proveedores (por ejemplo, Apple App Store o Googl
 >
 >AEM AEM La aplicación Verificar el le permite enviar capturas de pantalla directamente a los detalles de la aplicación en la aplicación de la manera más sencilla y sencilla.
 >
->Consulte [AEM Quickstart móvil para la verificación de la](/help/mobile/phonegap-mobile-quickstart.md) para obtener más información.
+>AEM Consulte [Inicio rápido móvil para la verificación de la](/help/mobile/phonegap-mobile-quickstart.md) para obtener más información.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -63,7 +63,7 @@ Cada tienda de aplicaciones de proveedores (por ejemplo, Apple App Store o Googl
 
 >[!NOTE]
 >
->Una vez que conozca el **`Manage App`** mosaico, consulte [Edición de metadatos de aplicación](/help/mobile/phonegap-editmetadata.md) para ver y editar los metadatos.
+>Una vez que esté familiarizado con el mosaico **`Manage App`**, consulte [Edición de metadatos de aplicación](/help/mobile/phonegap-editmetadata.md) para ver y editar los metadatos.
 
 #### Metadatos comunes {#common-metadata}
 
@@ -73,11 +73,11 @@ Hay configuraciones y metadatos comunes en todas las plataformas.
 
 En esta sección, defina la URL del servidor de actualización de contenido, la página de aterrizaje de la aplicación móvil, la versión de PhoneGap para la compilación, la versión de la aplicación, el nombre, la descripción, etc.
 
-**Versión de aplicación** es la versión de trabajo de la aplicación. La práctica recomendada habitual es utilizar una notación de 3 decimales y comenzar por debajo de 1.0.0 antes de la primera versión.
+**Versión de la aplicación** es la versión de trabajo de su aplicación. La práctica recomendada habitual es utilizar una notación de 3 decimales y comenzar por debajo de 1.0.0 antes de la primera versión.
 
-**Versión de PhoneGap** es la versión en la que se desea compilar la aplicación con PhoneGap. La práctica recomendada es mantenerse al día con la versión actual para asegurarse de obtener las últimas y mejores funciones y correcciones de errores.
+**PhoneGap Version** es la versión en la que deseas compilar tu aplicación con PhoneGap. La práctica recomendada es mantenerse al día con la versión actual para asegurarse de obtener las últimas y mejores funciones y correcciones de errores.
 
-**URL del servidor de actualización de contenido** es la dirección URL que utiliza la aplicación para llamar a las actualizaciones de ContentSync. Se debe establecer en la dirección URL de Dispatcher o, si no utiliza un Dispatcher, en una de las instancias de publicación que se utiliza para proporcionar actualizaciones de ContentSync a la aplicación.
+**URL del servidor de actualización de contenido** es la URL que usa su aplicación para llamar a las actualizaciones de ContentSync. Se debe establecer en la dirección URL de Dispatcher o, si no utiliza un Dispatcher, en una de las instancias de publicación que se utiliza para proporcionar actualizaciones de ContentSync a la aplicación.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -91,7 +91,7 @@ En esta sección, defina la URL del servidor de actualización de contenido, la 
 
 Cada plataforma definida en el archivo config.xml de PhoneGap puede contener propiedades de plataforma personalizadas. AEM Un desarrollador de debe contribuir con la estructura de contenido para capturar estas propiedades. Se puede encontrar un ejemplo proporcionado de propiedades específicas de la plataforma para iOS.
 
-Los metadatos de todas las plataformas configuradas ahora se muestran al mismo tiempo en la pestaña Avanzado del `Manage App` mosaico.
+Los metadatos de todas las plataformas configuradas ahora se muestran al mismo tiempo en la ficha Avanzadas del mosaico `Manage App`.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ AEM AEM En el caso de las plataformas que no comprende el usuario, un desarrolla
 
 Apple AppStore requiere metadatos adicionales para enviar la aplicación y distribuirlos. La sección de metadatos de iOS intenta recopilar la información necesaria que puede utilizar la herramienta iTMSTransporter de Apple para publicar los metadatos en la cuenta del desarrollador de Apple asociado.
 
-Para obtener los metadatos específicos de Apple, cree la aplicación en [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Al crear la aplicación, Apple genera los metadatos que requiere la sección de metadatos de iOS si desea utilizar la herramienta Apple iTMSTransporter para validar y cargar los metadatos en itunesconnect.apple.com. Si desea obtener los metadatos que desea recopilar, no tiene que rellenar los metadatos específicos de iOS. Puede seguir exportando los metadatos que combinan el iOS y los metadatos comunes, y recopilar todas las capturas de pantalla en un archivo zip que se puede descargar en cualquier momento.
+Para obtener los metadatos específicos de Apple, cree su aplicación en [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Al crear la aplicación, Apple genera los metadatos que requiere la sección de metadatos de iOS si desea utilizar la herramienta Apple iTMSTransporter para validar y cargar los metadatos en itunesconnect.apple.com. Si desea obtener los metadatos que desea recopilar, no tiene que rellenar los metadatos específicos de iOS. Puede seguir exportando los metadatos que combinan el iOS y los metadatos comunes, y recopilar todas las capturas de pantalla en un archivo zip que se puede descargar en cualquier momento.
 
 El archivo zip descargado contiene un archivo itmsp que se puede inspeccionar para buscar el archivo metadata.xml. El archivo itmsp contiene los metadatos exportados (dentro del archivo metadata.xml ), junto con todas las capturas de pantalla asociadas.
 
@@ -113,7 +113,7 @@ La funcionalidad de exportación se utiliza para proporcionar una forma cómoda 
 
 #### Metadatos de Android™ {#android-metadata}
 
-Al seleccionar la plataforma de Android™, no hay metadatos personalizados en este momento que se puedan configurar. Al hacer clic en el botón de descarga, se genera un archivo zip con un archivo de propiedades que contiene todos los metadatos y las capturas de pantalla asociadas.
+Al seleccionar la plataforma Android™, no hay metadatos personalizados en este momento que se puedan configurar. Al hacer clic en el botón de descarga, se genera un archivo zip con un archivo de propiedades que contiene todos los metadatos y las capturas de pantalla asociadas.
 
 La funcionalidad de exportación se utiliza para proporcionar una forma cómoda de recopilar las capturas de pantalla y los metadatos que se pueden pasar al editor de la aplicación para su entrada en el almacén de aplicaciones específico del proveedor.
 
@@ -133,23 +133,23 @@ La propiedad URL del servidor de actualización de contenido es la dirección UR
 
 ### La pestaña Plugins {#the-plugins-tab}
 
-El **Complementos** describe los complementos asociados a su aplicación. Esta información se utiliza para recuperar el complemento adecuado durante una compilación.
+La pestaña **Plugins** describe los plugins asociados con su aplicación. Esta información se utiliza para recuperar el complemento adecuado durante una compilación.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### La pestaña Capturas de pantalla {#the-screenshots-tab}
 
-El **Capturas de pantalla** La pestaña muestra las resoluciones de captura de pantalla admitidas en diferentes plataformas.
+La pestaña **Capturas de pantalla** muestra las resoluciones de captura de pantalla admitidas en diferentes plataformas.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 >[!NOTE]
 >
->Para agregar y eliminar capturas de pantalla, consulte [Edición de metadatos de aplicación](/help/mobile/phonegap-editmetadata.md).
+>Para agregar y quitar capturas de pantalla, consulte [Edición de metadatos de aplicación](/help/mobile/phonegap-editmetadata.md).
 
 ### La pestaña Autenticación {#the-authentication-tab}
 
-El **Autenticación** La pestaña permite seleccionar un cliente de OAuth para asociarlo a la aplicación y permite a un desarrollador utilizar la autenticación OAuth de Adobe Experience Manager.
+La pestaña **Authentication** le permite seleccionar un cliente de OAuth para asociarlo a su aplicación y permite a un desarrollador utilizar la autenticación OAuth de Adobe Experience Manager.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 

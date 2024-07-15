@@ -20,7 +20,7 @@ ht-degree: 88%
 
 ## Información general {#overview}
 
-La solución Administración de correspondencia le permite agregar acciones personalizadas a la interfaz de usuario Administrar recursos.
+La solución Administración de correspondencia le permite agregar acciones personalizadas a la interfaz de usuario Administrar Assets.
 
 Puede agregar una acción personalizada a la vista Listado de recursos para lo siguiente:
 

@@ -22,7 +22,7 @@ Los usuarios y administradores utilizan las páginas web de Document Security pa
 
 >[!NOTE]
 >
->También puede iniciar sesión en Document Security a través de Acrobat y otras aplicaciones cliente con su cuenta de inicio de sesión de usuario. (Consulte [Configuración del acceso a Document Security desde aplicaciones cliente](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
+>También puede iniciar sesión en Document Security a través de Acrobat y otras aplicaciones cliente con su cuenta de inicio de sesión de usuario. (Consulte [Configuración del acceso a Document Security desde aplicaciones cliente](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications)).
 
 Para abrir las páginas web, necesita un explorador y la dirección URL y la información de inicio de sesión para Document Security. La dirección URL de los usuarios es diferente de la de los administradores.
 
@@ -34,9 +34,9 @@ Para iniciar sesión como administrador, debe tener asignada la función de admi
 
 Para iniciar sesión en las páginas web mediante un explorador, necesita la URL de Document Security y una cuenta de. La dirección URL de los usuarios es diferente de la de los administradores. Los administradores también pueden iniciar sesión en las páginas de usuario para crear directivas.
 
-Si tiene acceso a más de una instalación de Document Security, necesita la URL para la instancia de Document Security a la que desea acceder. Consulte al administrador si no dispone de esta información. La URL predeterminada para las páginas de usuario es `https://[host]:[port]/edc`. Es posible que en algunos casos no se requiera el número de puerto. Solicite más información a su administrador.
+Si tiene acceso a más de una instalación de Document Security, necesita la URL para la instancia de Document Security a la que desea acceder. Consulte al administrador si no dispone de esta información. La dirección URL predeterminada para las páginas de usuario es `https://[host]:[port]/edc`. Es posible que en algunos casos no se requiera el número de puerto. Solicite más información a su administrador.
 
-La URL predeterminada para los administradores es `https://[host]:[port]/adminui`.
+La dirección URL predeterminada para los administradores es `https://[host]:[port]/adminui`.
 
 Para los administradores, se crea una cuenta de superadministrador predeterminada durante la instalación. Puede utilizar esta cuenta para iniciar sesión cuando Document Security se instale por primera vez.
 
@@ -48,7 +48,7 @@ Para los administradores, se crea una cuenta de superadministrador predeterminad
 
    URL de seguridad de documento: `https://[host]:[port]/edc`
 
-   o URL de la consola de administración: `https://[host]:[port]/adminui`
+   o la URL de la consola de administración: `https://[host]:[port]/adminui`
 
 1. En la ventana de inicio de sesión, escriba su nombre de usuario y contraseña y haga clic en Aceptar.
 1. En la consola de administración, haga clic en Servicios > Document Security.
@@ -73,7 +73,7 @@ Utilice estos vínculos para acceder a las distintas páginas, donde puede crear
 
 1. Haga clic en el vínculo de navegación en la parte superior de la página de la página a la que desea volver.
 
-**Actualizar el listado de datos en una página**
+**Actualizar la lista de datos en una página**
 
 1. En la página principal, haga clic en el vínculo a la página que desee actualizar.
 
@@ -83,7 +83,7 @@ Utilice estos vínculos para acceder a las distintas páginas, donde puede crear
 
 ## Configuración del acceso a Document Security desde aplicaciones cliente {#setting-up-access-to-document-security-from-client-applications}
 
-Las aplicaciones cliente deben configurarse para conectarse a Document Security para proteger documentos, abrir documentos protegidos por directivas y conectarse a las páginas web de Document Security. Consulte *Ayuda de Acrobat* o el adecuado *Ayuda de RightsManagementExtension* para obtener información sobre cómo configurar la conexión en la aplicación cliente.
+Las aplicaciones cliente deben configurarse para conectarse a Document Security para proteger documentos, abrir documentos protegidos por directivas y conectarse a las páginas web de Document Security. Consulte la *Ayuda de Acrobat* o la *Ayuda de RightsManagementExtension* adecuada para obtener información sobre cómo configurar la conexión en la aplicación cliente.
 
 Se accede a la seguridad de los documentos a través de Secure Sockets Layer (SSL). Instale el certificado del sitio web en el almacén de certificados para poder acceder a la seguridad de los documentos a través de las aplicaciones cliente.
 
@@ -91,7 +91,7 @@ Se accede a la seguridad de los documentos a través de Secure Sockets Layer (SS
 
 Estas instrucciones son específicas de Internet Explorer, pero puede instalar el certificado utilizando cualquier explorador web admitido. Para obtener más información, consulte la Ayuda del explorador.
 
-**Instalación del certificado del servidor mediante Internet Explorer**
+**Instale el certificado de servidor mediante Internet Explorer**
 
 1. Abra el explorador web y escriba la dirección URL base de Document Security en el cuadro Dirección. Por ejemplo, escriba `https://[host]:[port]`. Aparecerá un cuadro de diálogo Alerta de seguridad.
 1. Haga clic en Ver certificado y, a continuación, haga clic en Instalar certificado y seleccione los valores predeterminados para la instalación. El certificado debe instalarse en las entidades emisoras de certificados raíz de confianza.

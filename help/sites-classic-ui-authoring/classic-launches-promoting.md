@@ -29,15 +29,15 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 
 Para promocionar páginas, realice los siguientes pasos mientras edita la página de lanzamiento que desea promocionar:
 
-1. En el **Página** en el Sidekick, haga clic en **Promocionar lanzamiento**.
+1. En la ficha **Página** del Sidekick, haga clic en **Promocionar lanzamiento**.
 1. Especifique las páginas que promocionar:
 
-   * (Predeterminado) Para promocionar solo la página actual, seleccione **Promocionar Cambios De Página En La Versión De Producción**.
+   * (Predeterminado) Para promocionar solo la página actual, seleccione **Promocionar cambios de página a la versión de producción**.
    * Para promocionar también las páginas secundarias de la página actual, seleccione **Incluir páginas secundarias**.
-   * Para promocionar todas las páginas del lanzamiento, seleccione **Promocionar Lanzamiento Completo En La Versión De Producción**.
+   * Para promocionar todas las páginas del lanzamiento, seleccione **Promocionar lanzamiento completo a la versión de producción**.
 
-1. Para añadir las páginas de producción a un paquete de flujo de trabajo, seleccione **Añadir a paquete de flujo de trabajo** y luego seleccione el paquete de flujo de trabajo.
-1. Clic **Promocionar**.
+1. Para agregar las páginas de producción a un paquete de flujo de trabajo, seleccione **Agregar a paquete de flujo de trabajo** y luego seleccione el paquete de flujo de trabajo.
+1. Haga clic en **Promocionar**.
 
 ## Procesamiento de páginas promocionadas mediante el flujo de trabajo de AEM {#processing-promoted-pages-using-aem-workflow}
 
@@ -47,7 +47,7 @@ Utilice modelos de flujo de trabajo para realizar procesamientos masivos de pág
 1. Cuando los autores promocionan páginas de lanzamiento, las guardan en el paquete de flujo de trabajo.
 1. Inicie un modelo de flujo de trabajo con el paquete como carga útil.
 
-Para iniciar un flujo de trabajo automáticamente cuando se promocionan páginas, [configuración de un lanzador de flujo de trabajo](/help/sites-administering/workflows-starting.md#workflows-launchers) para el nodo del paquete.
+Para iniciar un flujo de trabajo automáticamente cuando se promocionen páginas, [configure un iniciador de flujo de trabajo](/help/sites-administering/workflows-starting.md#workflows-launchers) para el nodo de paquete.
 
 Por ejemplo, puede generar automáticamente solicitudes de activación de página cuando los autores promocionen páginas de lanzamiento. Configure un lanzador de flujo de trabajo para iniciar el flujo de trabajo de activación de solicitud cuando se modifique el nodo del paquete.
 

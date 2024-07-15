@@ -28,7 +28,7 @@ Con Dynamic Media, tiene varias opciones:
 
    * Incrustar el vídeo o la imagen en el sitio web.
    * Vincule las URL a la aplicación web. Utilice la vinculación cuando desee distribuir un reproductor de vídeo como ventana emergente o modal.
-   * Si su sitio es adaptable, puede hacer lo siguiente [ofrecer imágenes optimizadas](/help/assets/responsive-site.md).
+   * Si tu sitio es interactivo, puedes [ofrecer imágenes optimizadas](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
@@ -50,4 +50,4 @@ Para obtener más información, consulte los temas siguientes:
 
 Experience Manager ahora admite la entrega de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, hay disponible una URL publicada o código incrustado para la imagen o el vídeo que se va a integrar con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega mediante el protocolo HTTP/2. Este método de entrega mejora la forma en que los navegadores y servidores se comunican, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
 
-Para obtener más información, consulte [Entrega HTTP/2 de contenido: preguntas más frecuentes](/help/sites-administering/scene7-http2faq.md).
+Para obtener más información, consulte [Entrega HTTP/2 de contenido con las preguntas más frecuentes](/help/sites-administering/scene7-http2faq.md).

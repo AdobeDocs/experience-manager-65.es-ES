@@ -1,5 +1,5 @@
 ---
-title: AEM Notas de la versión de Content and Commerce de 2023
+title: Notas de la versión 2023 de AEM Commerce y contenido de
 description: Contenido de Adobe Experience Manager y notas de la versión de Commerce 2023.
 exl-id: 00349400-6860-4e3c-ba56-fa12afc5db1d
 solution: Experience Manager,Commerce
@@ -54,4 +54,4 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 ### Novedades {#what-is-new-july}
 
-* Ganchos de filtro de producto en `ProductList` componente
+* Enlaces de filtros de productos en el componente `ProductList`

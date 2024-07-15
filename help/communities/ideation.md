@@ -34,10 +34,10 @@ Esta página proporciona la información esencial para trabajar con la función 
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.hbs.vote<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
+   <td>cq.social.hbs.vote<br /> cq.social.hbs.like<br /> cq.social.hbs.ideation</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td> /libs/social/ideation/components/hbs/ideation/ideation.hbs<br /> /libs/social/ideation/components/hbs/ideation/ideationlists.hbs<br /> /libs/social/ideation/components/hbs/ideation/composer.hbs</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Esta página proporciona la información esencial para trabajar con la función 
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="ideation-feature.md">Función ideación</a></td>
+   <td>Ver <a href="ideation-feature.md">característica de ideación</a></td>
   </tr>
  </tbody>
 </table>
@@ -55,4 +55,4 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ### Función ideación {#ideation-function}
 
-Una estructura de sitio de la comunidad que incluye [Función ideación](functions.md#ideation-function), incluye un configurado `ideation` componente.
+Una estructura de sitio de comunidad que incluye la [función Ideation](functions.md#ideation-function), incluye un componente `ideation` configurado.

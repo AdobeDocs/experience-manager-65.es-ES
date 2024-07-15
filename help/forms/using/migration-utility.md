@@ -20,7 +20,7 @@ ht-degree: 53%
 
 # Migrar recursos y documentos de AEM Forms{#migrate-aem-forms-assets-and-documents}
 
-La utilidad de migración convierte el [Recursos de Forms adaptables](../../forms/using/introduction-forms-authoring.md), [configuraciones en la nube](/help/sites-developing/extending-cloud-config.md), y [Recursos de Administración de correspondencia](/help/forms/using/cm-overview.md) del formato utilizado en versiones anteriores al formato utilizado en Adobe Experience Manager AEM () 6.5 Forms. Al ejecutar la utilidad de migración, se migran los siguientes elementos:
+La utilidad de migración convierte los [recursos adaptables de Forms](../../forms/using/introduction-forms-authoring.md), las [configuraciones en la nube](/help/sites-developing/extending-cloud-config.md) y los [recursos de Administración de correspondencia](/help/forms/using/cm-overview.md) del formato utilizado en versiones anteriores al formato utilizado en Adobe Experience Manager AEM () 6.5 Forms. Al ejecutar la utilidad de migración, se migran los siguientes elementos:
 
 * Componentes personalizados para formularios adaptables
 * Plantillas de formularios adaptables y Administración de correspondencia
@@ -33,21 +33,21 @@ La utilidad de migración convierte el [Recursos de Forms adaptables](../../form
 
 ## Método de migración {#approach-to-migration}
 
-Puede [actualización](../../forms/using/upgrade.md) a la última versión de AEM Forms 6.5 desde AEM Forms 6.4, 6.3 o 6.2, o una nueva instalación. Dependiendo de si ha actualizado la instalación anterior o si ha realizado una instalación nueva, debe realizar una de las siguientes acciones:
+Puede [actualizar](../../forms/using/upgrade.md) a la versión más reciente de AEM Forms 6.5 desde AEM Forms 6.4, 6.3 o 6.2, o una instalación nueva. Dependiendo de si ha actualizado la instalación anterior o si ha realizado una instalación nueva, debe realizar una de las siguientes acciones:
 
-**Si hay una actualización in situ**
+**Si hay una actualización local**
 
-Si ha realizado una actualización in situ, la instancia actualizada ya contiene los recursos y los documentos. Sin embargo, para poder utilizar los recursos y los documentos, debe instalar el [Paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) (incluye el paquete de compatibilidad de Administración de correspondencia)
+Si ha realizado una actualización in situ, la instancia actualizada ya contiene los recursos y los documentos. Sin embargo, para poder usar los recursos y los documentos, debe instalar el [paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) (incluye el paquete de compatibilidad de Administración de correspondencia)
 
-A continuación, debe actualizar los recursos y los documentos mediante [ejecución de la utilidad de migración](#runningmigrationutility).
+A continuación, debe actualizar los recursos y los documentos al [ejecutar la utilidad de migración](#runningmigrationutility).
 
 **Si hay una instalación fuera del sitio**
 
-Si se trata de una instalación fuera del sitio (nueva), antes de poder utilizar los recursos y documentos, debe instalar el [Paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) (incluye el paquete de compatibilidad de Administración de correspondencia).
+Si se trata de una instalación fuera del sitio (nueva), para poder usar los recursos y documentos, debe instalar el [paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) (incluye el paquete de compatibilidad de Administración de correspondencia).
 
-A continuación, debe importar el paquete de recursos (zip o cmp) en la nueva configuración y, después, actualizar los recursos y los documentos mediante [ejecución de la utilidad de migración](#runningmigrationutility). Adobe recomienda crear recursos en la nueva configuración solo después de ejecutar la utilidad de migración.
+A continuación, debe importar el paquete de recursos (zip o cmp) en la nueva configuración y, después, actualizar los recursos y los documentos [ejecutando la utilidad de migración](#runningmigrationutility). Adobe recomienda crear recursos en la nueva configuración solo después de ejecutar la utilidad de migración.
 
-Debido a [compatibilidad con versiones anteriores](/help/sites-deploying/backward-compatibility.md) Si cambia, se cambian las ubicaciones de algunas carpetas en el repositorio crx. Exportar e importar manualmente dependencias (bibliotecas y recursos personalizados) de la configuración anterior a un entorno nuevo.
+Debido a [cambios relacionados con la compatibilidad con versiones anteriores](/help/sites-deploying/backward-compatibility.md), las ubicaciones de algunas carpetas en el repositorio crx se cambian. Exportar e importar manualmente dependencias (bibliotecas y recursos personalizados) de la configuración anterior a un entorno nuevo.
 
 ## Antes de continuar con la migración {#prerequisites}
 
@@ -61,7 +61,7 @@ Para los recursos de Administración de correspondencia:
 * El historial de versiones de los recursos no se migra y no está disponible después de la migración. El historial de versiones posterior a la migración se conserva.
 * El estado Listo para publicación está obsoleto desde AEM Forms 6.1, por lo que todos los recursos con este estado se cambian al estado Modificado.
 * Dado que la interfaz de usuario se ha actualizado en AEM Forms 6.3, los pasos para realizar las personalizaciones también son diferentes. Vuelva a realizar la personalización si está migrando desde una versión anterior a la 6.3.
-* Los fragmentos de diseño se mueven desde `/content/apps/cm/layouts/fragmentlayouts/1001` hasta `/content/apps/cm/modules/fragmentlayouts`. La referencia del diccionario de datos en los recursos muestra la ruta del diccionario de datos en lugar de su nombre.
+* Los fragmentos de diseño se mueven de `/content/apps/cm/layouts/fragmentlayouts/1001` a `/content/apps/cm/modules/fragmentlayouts`. La referencia del diccionario de datos en los recursos muestra la ruta del diccionario de datos en lugar de su nombre.
 * Se deben reajustar los espacios de tabulación que se utilizan para la alineación en los módulos de texto. Para obtener más información, consulte [Administración de correspondencia - Use el espaciado del tabulador para organizar el texto](https://helpx.adobe.com/es/aem-forms/kb/cm-tab-spacing-limitations.html).
 * Las configuraciones del Compositor de recursos cambian a las configuraciones de Administración de correspondencia.
 * Los recursos se mueven a carpetas con nombres como Existing Text y Existing List.
@@ -93,7 +93,7 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 
 1. Para realizar la migración, realice los siguientes pasos:
 
-   * Para migrar **activos**, seleccione Migración de recursos de AEM Forms y, en la pantalla siguiente, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
+   * Para migrar **recursos**, seleccione Migración de AEM Forms Assets y, en la siguiente pantalla, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
       * Formularios adaptables
       * Fragmentos de documento
@@ -105,18 +105,18 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
    >
    >Durante la migración de recursos, puede encontrar mensajes de advertencia como &quot;Se ha detectado un conflicto entre...&quot;. Estos mensajes indican que no se han podido migrar las reglas de algunos de los componentes de los formularios adaptables. Por ejemplo, si el componente tenía un evento con reglas y scripts, si las reglas se aplican después de uno de los scripts, no se migran ninguna de las reglas del componente. Puede [migrar estas reglas abriendo el Editor de reglas](#migrate-rules) durante la creación de los formularios adaptables.
 
-   * Para migrar componentes de formulario adaptable personalizados, seleccione **Migración de componentes personalizados de Forms adaptable** y en la página Migración de componentes personalizados, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
+   * Para migrar componentes de formulario adaptable personalizados, seleccione **Migración de componentes personalizados de Forms adaptable** y, en la página Migración de componentes personalizados, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
       * Componentes personalizados escritos para formularios adaptables
       * Superposiciones de componentes, si las hay.
 
-   * Para migrar plantillas de formulario adaptable, seleccione **Migración de plantillas de Forms adaptable** y en la página Migración de componentes personalizados, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
+   * Para migrar plantillas de formulario adaptable, seleccione **Migración de plantillas de Forms adaptable** y, en la página Migración de componentes personalizados, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
       * Plantillas de formulario adaptable creadas en `/apps` o `/conf` con el Editor de plantillas de AEM.
 
-   * Migre los servicios de configuración de AEM Forms Cloud para utilizar el nuevo paradigma de servicios en la nube sensibles al contexto, que incluye la interfaz de usuario táctil (en `/conf`). Cuando migre los servicios de configuración de AEM Forms Cloud, los servicios en la nube de `/etc` se mueven a `/conf`. Si no tiene personalizaciones de servicios en la nube que dependan de rutas heredadas (`/etc`), el Adobe recomienda ejecutar la utilidad de migración después de actualizar a la versión 6.5; utilizar la interfaz de usuario táctil de la configuración en la nube para cualquier trabajo posterior. Si tiene personalizaciones de servicios en la nube existentes, continúe usando la IU clásica en la configuración actualizada hasta que las personalizaciones se actualicen para que se alineen con las rutas migradas (`/conf`) y luego ejecute la utilidad de migración.
+   * Migre los servicios de configuración de AEM Forms Cloud para utilizar el nuevo paradigma de servicios en la nube sensibles al contexto, que incluye la interfaz de usuario táctil (en `/conf`). Cuando migre los servicios de configuración de AEM Forms Cloud, los servicios en la nube de `/etc` se mueven a `/conf`. Si no tiene personalizaciones de servicios en la nube que dependan de rutas heredadas (`/etc`), Adobe recomienda ejecutar la utilidad de migración después de actualizar a la versión 6.5; usar la interfaz de usuario táctil de la configuración en la nube para cualquier trabajo posterior. Si tiene personalizaciones de servicios en la nube existentes, continúe usando la IU clásica en la configuración actualizada hasta que las personalizaciones se actualicen para que se alineen con las rutas migradas (`/conf`) y luego ejecute la utilidad de migración.
 
-   Para migrar **AEM Forms Cloud Services**, que incluyen lo siguiente, seleccione Migración de configuración de AEM Forms Cloud (la migración de configuración en la nube es independiente del paquete de compatibilidad de AEMFD). Seleccione Migración de configuraciones de AEM Forms Cloud y, a continuación, en la página Migración de configuración, seleccione **Iniciar migración**:
+   Para migrar **servicios en la nube de AEM Forms**, que incluyen lo siguiente, seleccione Migración de configuración de AEM Forms Cloud (la migración de configuración en la nube es independiente del paquete de compatibilidad de AEMFD). Seleccione Migración de configuraciones de AEM Forms Cloud y, a continuación, en la página Migración de configuración, seleccione **Iniciar migración**:
 
    * Servicios en la nube del modelo de datos de formulario
 
@@ -140,7 +140,7 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 
    La ventana del explorador muestra lo siguiente a medida que se produce el proceso de migración:
 
-   * Cuando se actualizan los recursos: Los recursos se actualizan correctamente.
+   * Cuando se actualizan los recursos: Assets se actualiza correctamente.
    * Cuando se complete la migración: Migración de recursos finalizada.
 
    Cuando se ejecuta, la utilidad de migración realiza las siguientes acciones:

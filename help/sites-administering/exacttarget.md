@@ -26,7 +26,7 @@ La integración ofrece las siguientes funciones:
 * AEM La capacidad de crear correos electrónicos en las listas de distribución y publicarlos en Exact Target para su distribución.
 * AEM La capacidad de establecer la acción de un formulario de para crear un suscriptor de Target exacto.
 
-Una vez configurado ExactTarget, puede publicar boletines informativos o correos electrónicos en ExactTarget. Consulte [Publicación de boletines en un servicio de correo electrónico](/help/sites-authoring/personalization.md).
+Una vez configurado ExactTarget, puede publicar boletines informativos o correos electrónicos en ExactTarget. Ver [Publicar boletines en un servicio de correo electrónico](/help/sites-authoring/personalization.md).
 
 ## Creación de una configuración de ExactTarget {#creating-an-exacttarget-configuration}
 
@@ -37,26 +37,26 @@ Las configuraciones de ExactTarget se pueden agregar mediante Cloud Services o H
 Para crear una configuración de ExactTarget en Cloud Service:
 
 1. En la página de bienvenida, haga clic en **Cloud Service**. (O acceda directamente a en `https://<hostname>:<port>/etc/cloudservices.html`.)
-1. Clic **ExactTarget** y luego **Configurar**. Se abre la ventana de configuración de ExactTarget.
+1. Haga clic en **ExactTarget** y luego en **Configurar**. Se abre la ventana de configuración de ExactTarget.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
-1. Introduzca un título y, opcionalmente, un nombre y haga clic en **Crear**. El **Configuración de ExactTarget** se abre la ventana de configuración.
+1. Escriba un título y, opcionalmente, un nombre y haga clic en **Crear**. Se abre la ventana de configuración **Configuración de ExactTarget**.
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Introduzca el nombre de usuario y la contraseña, y seleccione un punto final de API (por ejemplo, **https://webservice.exacttarget.com/Service.asmx**).
-1. Clic **Conectar con ExactTarget.** Cuando se haya conectado correctamente, verá un cuadro de diálogo de éxito. clic en cuadro **OK** para salir de la ventana.
+1. Escriba el nombre de usuario y la contraseña, y seleccione un extremo de API (por ejemplo, **https://webservice.exacttarget.com/Service.asmx**).
+1. Haga clic en **Conectar con ExactTarget.** Cuando se haya conectado correctamente, verá un cuadro de diálogo de éxito. cuadro Haga clic en **Aceptar** para salir de la ventana.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-1. Seleccione una cuenta, si está disponible. La cuenta es para clientes de Enterprise 2.0. Haz clic en **OK**.
+1. Seleccione una cuenta, si está disponible. La cuenta es para clientes de Enterprise 2.0. Haga clic en **OK**.
 
-   Se ha configurado ExactTarget. Puede editar la configuración haciendo clic en **Editar**. Puede ir a ExactTarget haciendo clic en **Ir a ExactTarget**.
+   Se ha configurado ExactTarget. Puede editar la configuración haciendo clic en **Editar**. Para ir a ExactTarget, haga clic en **Ir a ExactTarget**.
 
-1. AEM ahora proporciona una función de extensión de datos de. Puede importar columnas de extensión de datos de ExactTarget. Se puede configurar haciendo clic en el signo &quot;+&quot; que aparece además de la configuración de ExactTarget creada correctamente. Cualquiera de las extensiones de datos existentes se puede seleccionar en la lista desplegable. Para obtener más información sobre cómo configurar las extensiones de datos, consulte [Documentación de ExactTarget](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5).
+1. AEM ahora proporciona una función de extensión de datos de. Puede importar columnas de extensión de datos de ExactTarget. Se puede configurar haciendo clic en el signo &quot;+&quot; que aparece además de la configuración de ExactTarget creada correctamente. Cualquiera de las extensiones de datos existentes se puede seleccionar en la lista desplegable. Para obtener más información sobre cómo configurar extensiones de datos, consulte [Documentación de ExactTarget](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5).
 
-   Las columnas de extensión de datos importadas se pueden utilizar posteriormente a través de **Texto y personalización** componente.
+   Las columnas de extensión de datos importadas se pueden usar posteriormente mediante el componente **Texto y Personalization**.
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -64,18 +64,18 @@ Para crear una configuración de ExactTarget en Cloud Service:
 
 Para crear una configuración de ExactTarget en Herramientas:
 
-1. En la página de bienvenida, haga clic en **Herramientas**. O vaya directamente a la página `https://<hostname>:<port>/misadmin#/etc`.
-1. Seleccionar **Herramientas**, entonces **Configuraciones de Cloud Service,** entonces **ExactTarget**.
-1. Clic **Nuevo** para abrir la ventana **Crear página**.
+1. En la página de bienvenida, haga clic en **Herramientas**. O bien, vaya directamente a `https://<hostname>:<port>/misadmin#/etc`.
+1. Seleccione **Herramientas**, luego **Configuraciones de Cloud Service** y después **ExactTarget**.
+1. Haga clic en **Nuevo** para abrir la ventana **Crear página **.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 
-1. Introduzca el **Título** y, opcionalmente, el **Nombre** y haga clic en **Crear**.
+1. Escriba **Title** y, opcionalmente, **Name**, y haga clic en **Crear**.
 1. Introduzca la información de configuración como se describe en el paso 4 del procedimiento anterior. Siga ese procedimiento para finalizar la configuración de ExactTarget.
 
 ### Añadir varias configuraciones {#adding-multiple-configurations}
 
 Para agregar varias configuraciones:
 
-1. En la página de bienvenida, haga clic en **Cloud Service** y haga clic en **ExactTarget**. Clic **Mostrar configuraciones** que aparece si hay una o más configuraciones de ExactTarget disponibles. Se muestran todas las configuraciones disponibles.
-1. Haga clic en **+** junto a Configuraciones disponibles. Esto abre el **Crear configuraciones** ventana. Siga el procedimiento de configuración anterior para crear una configuración.
+1. En la página de bienvenida, haga clic en **Cloud Service** y luego en **ExactTarget**. Haga clic en **Mostrar configuraciones** que aparece si hay una o más configuraciones de ExactTarget disponibles. Se muestran todas las configuraciones disponibles.
+1. Haga clic en el signo **+** junto a Configuraciones disponibles. Esto abre la ventana **Crear configuraciones**. Siga el procedimiento de configuración anterior para crear una configuración.

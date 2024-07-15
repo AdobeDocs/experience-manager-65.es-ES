@@ -18,9 +18,9 @@ ht-degree: 2%
 
 # AEM Reestructuración común de repositorios en 6.5 {#common-repository-restructuring-in-aem}
 
-Como se describe en el elemento principal [AEM Reestructuración de repositorios en 6.5](/help/sites-deploying/repository-restructuring.md) AEM , los clientes que actualicen a la versión 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que pueden afectar a todas las soluciones. AEM Algunos cambios requieren un esfuerzo durante el proceso de actualización de la versión 6.5 de la, mientras que otros se pueden aplazar hasta una actualización futura.
+AEM AEM Como se describe en la página principal [Reestructuración del repositorio en la página de la versión 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a la versión 6.5 deberían usar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que podrían afectar a todas las soluciones. AEM Algunos cambios requieren un esfuerzo durante el proceso de actualización de la versión 6.5 de la, mientras que otros se pueden aplazar hasta una actualización futura.
 
-**Con actualización a 6.5**
+**Con Actualización 6.5**
 
 * [Configuración de ContextHub](#contexthub-6.5)
 * [Instancias de flujo de trabajo](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
@@ -35,7 +35,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
 * [Diseños de paneles clásicos](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-dashboards-designs)
 * [Diseños clásicos de informes](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-reports-designs)
 * [Diseños predeterminados](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#default-designs)
-* [Punto final de JavaScript de Adobe DTM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-javascript-endpoint)
+* [Extremo de JavaScript de Adobe DTM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-javascript-endpoint)
 * [Punto final de enlace web de Adobe DTM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#adobe-dtm-web-hook-endpoint)
 * [Tareas de bandeja de entrada](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#inbox-tasks)
 * [Configuraciones del modelo de administración de varios sitios](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
@@ -54,18 +54,18 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
 
 ### Configuraciones de ContextHub {#contexthub-6.5}
 
-AEM A partir de la versión 6.4, no hay ninguna configuración predeterminada de ContextHub. Por lo tanto, en el nivel raíz del sitio a `cq:contextHubPathproperty` debe configurarse para indicar qué configuración debe utilizarse.
+AEM A partir de la versión 6.4, no hay ninguna configuración predeterminada de ContextHub. Por lo tanto, en el nivel raíz del sitio, se debe establecer un `cq:contextHubPathproperty` para indicar qué configuración se debe utilizar.
 
 1. Vaya a la raíz del sitio.
-1. Abra las propiedades de página de la página raíz y seleccione la pestaña Personalización.
+1. Abra las propiedades de página de la página raíz y seleccione la pestaña Personalization.
 1. En el campo Ruta de Contexthub, introduzca su propia ruta de configuración de ContextHub.
 
-Además, en la configuración de ContextHub, la variable `sling:resourceType` debe actualizarse para que sea relativo y no absoluto.
+Además, en la configuración de ContextHub, `sling:resourceType` debe actualizarse para que sea relativo y no absoluto.
 
-1. Abra las propiedades del nodo de configuración de ContextHub en CRX DE Lite, por ejemplo, `/apps/settings/cloudsettings/legacy/contexthub`
-1. Cambiar `sling:resourceType` de `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` hasta `granite/contexthub/cloudsettings/components/baseconfiguration`
+1. Abra las propiedades del nodo de configuración de ContextHub en CRX DE Lite; por ejemplo, `/apps/settings/cloudsettings/legacy/contexthub`
+1. Cambiar `sling:resourceType` de `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` a `granite/contexthub/cloudsettings/components/baseconfiguration`
 
-Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relativa en lugar de absoluta.
+Es decir, el `sling:resourceType` de la configuración de ContextHub debe ser relativo en lugar de absoluto.
 
 ### Modelos de flujo de trabajo {#workflow-models}
 
@@ -84,17 +84,17 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
    <td><p>Cualquier modelo de flujo de trabajo nuevo o modificado debe migrarse a /conf/global/workflow/models.</p>
     <ol>
      <li>AEM Implemente los modelos de flujo de trabajo modificados en una instancia de desarrollo local de 6.5, de modo que existan en la ubicación Anterior.</li>
-     <li>AEM AEM Edite el modelo de flujo de trabajo mediante el Editor del modelo de flujo de trabajo de la interfaz de usuario de la interfaz de usuario de &gt; Herramientas &gt; Flujo de trabajo &gt; Modelos.</li>
+     <li>AEM AEM Edite el modelo de flujo de trabajo mediante el Editor del modelo de flujo de trabajo de en &gt; Herramientas &gt; Flujo de trabajo &gt; Modelos.</li>
      <li>AEM Al migrar modelos de flujo de trabajo proporcionados por el usuario modificados
       <ol>
        <li>Con el Editor del modelo de flujo de trabajo abierto, modifique la dirección URL del explorador y reemplace el segmento de ruta /libs/settings/workflow/models por /etc/workflow/models.
         <ul>
-         <li>Por ejemplo, cambie: <em>http://localhost:4502/editor.html<strong>/libs/settings/workflow/models</strong>/dam/update_asset.html</em> hasta <em>http://localhost:4502/editor.html<strong>/etc/workflow/models</strong>/dam/update_asset.html</em></li>
+         <li>Por ejemplo, cambie: <em>http://localhost:4502/editor.html<strong>/libs/settings/workflow/models</strong>/dam/update_asset.html</em> a <em>http://localhost:4502/editor.html<strong>/etc/workflow/models</strong>/dam/update_asset.html</em></li>
         </ul> </li>
       </ol> </li>
      <li>Habilite el modo de edición en el Editor del modelo de flujo de trabajo, que copiará la definición del modelo de flujo de trabajo en /conf/global/workflow/models.</li>
      <li>Seleccione el botón Sincronizar para sincronizar los cambios en el Modelo de flujo de trabajo en tiempo de ejecución en /var/workflow/models.</li>
-     <li>Exporte ambos modelos de flujo de trabajo (/conf/global/workflow/models/&lt;workflow-model&gt;) y Modelo de flujo de trabajo en tiempo de ejecución (/var/workflow/models/&lt;workflow-model&gt;AEM ) e integrarlo en el proyecto de.
+     <li>AEM Exporte el Modelo de flujo de trabajo (/conf/global/workflow/models/&lt;workflow-model&gt;) y el Modelo de flujo de trabajo de tiempo de ejecución (/var/workflow/models/&lt;workflow-model&gt;) e integre en el proyecto de la.
       <ol>
        <li>Por ejemplo, exportar:
         <ul>
@@ -135,9 +135,9 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
   <tr>
    <td><strong>Notas</strong></td>
    <td>Cualquier referencia de ruta explícita en
-    <code>
+    El código <code>
      custom
-    </code> El código de la Ubicación anterior también debe tener en cuenta la Nueva ubicación. AEM Se recomienda refactorizar este código para utilizar las API de flujo de trabajo de la.</td>
+    </code> de la ubicación anterior también debe tener en cuenta la nueva ubicación. AEM Se recomienda refactorizar este código para utilizar las API de flujo de trabajo de la.</td>
   </tr>
  </tbody>
 </table>
@@ -158,7 +158,7 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
    <td><strong>Directrices de reestructuración</strong></td>
    <td><p>Cualquier lanzador de flujo de trabajo nuevo o modificado debe migrarse a <code>/conf/global/workflow/launcher/config</code>.</p>
     <ol>
-     <li>Copie cualquier configuración nueva o modificada del lanzador de flujos de trabajo de la ubicación anterior a la nueva ubicación (<code>/conf/global</code>).</li>
+     <li>Copie cualquier configuración del lanzador de flujos de trabajo nueva o modificada de la ubicación anterior a la nueva ubicación (<code>/conf/global</code>).</li>
     </ol> </td>
   </tr>
   <tr>
@@ -168,7 +168,7 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
      <li><code>/conf/global/settings/workflow/launcher</code></li>
      <li><code>/libs/settings/workflow/launcher</code></li>
      <li><code>/etc/workflow/launcher</code></li>
-    </ol> <p>AEM Por lo tanto, cualquier personalización del lanzador de flujos de trabajo proporcionado por el usuario que persista en la ubicación anterior debe moverse a la ubicación nueva (<code>/conf/global/settings/workflow/launcher</code> AEM si se van a conservar, de lo contrario, se sustituirán por la definición de lanzador de flujos de trabajo proporcionada por el usuario en el que se ha proporcionado el flujo de trabajo en el que se ha <code>/libs/settings/workflow/launcher</code>.</p> </td>
+    </ol> <p>AEM AEM Por lo tanto, cualquier personalización del lanzador de flujos de trabajo proporcionado por el usuario que persista en la ubicación anterior debe moverse a la ubicación nueva (<code>/conf/global/settings/workflow/launcher</code>) si se va a conservar; de lo contrario, se reemplazarán con la definición del lanzador de flujos de trabajo proporcionada por el usuario que se haya proporcionado con el usuario en la en <code>/libs/settings/workflow/launcher</code>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -227,7 +227,7 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
      <li>Copie cualquier configuración de ContextHub nueva o modificada de la ubicación anterior a la nueva ubicación.</li>
      <li>AEM AEM Asocie las configuraciones de aplicables con las jerarquías de contenido de la.
       <ol>
-       <li><strong>Jerarquías de páginas de AEM Sites a través de AEM Sites &gt; Página &gt; Propiedades de página &gt; Pestaña Avanzadas &gt; Configuración de nube</strong>.</li>
+       <li><strong>Jerarquías de páginas de AEM Sites mediante AEM Sites &gt; Página &gt; Propiedades de página &gt; Pestaña Avanzadas &gt; Configuración de nube</strong>.</li>
       </ol> </li>
      <li>AEM Desasocie las configuraciones de ContextHub heredadas migradas de las jerarquías de contenido de la mencionadas anteriormente.</li>
     </ol> </td>
@@ -255,20 +255,20 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
    <td><strong>Directrices de reestructuración</strong></td>
    <td><p>Para cualquier diseño que se administre en SCM y no se escriba en en tiempo de ejecución mediante cuadros de diálogo de diseño.</p>
     <ol>
-     <li>Copie los diseños de la Ubicación anterior en la Ubicación nueva (<code>/apps</code>).</li>
-     <li>Convierta cualquier recurso CSS, JavaScript y estático de Design a un <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
-     <li>Actualice las referencias a la Ubicación anterior en la <span class="code">
+     <li>Copie los diseños de la ubicación anterior en la nueva ubicación (<code>/apps</code>).</li>
+     <li>Convierta cualquier recurso CSS, JavaScript y estático del diseño en una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
+     <li>Actualizar referencias a la ubicación anterior en <span class="code">
        <code>
         cq
        </code>:
-       <code>
+       Propiedad <code>
         designPath
-       </code></span> propiedad.</li>
+       </code></span>.</li>
      <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de clientes (esto requiere la actualización del código de implementación de la página).</li>
      <li>AEM Actualice las reglas de Dispatcher para permitir el servicio de bibliotecas de cliente a través de /etc.clientlibs/. servlet proxy.</li>
     </ol> <p>Para cualquier diseño que NO se haya administrado en SCM y que se haya modificado en tiempo de ejecución mediante cuadros de diálogo de diseño.</p>
     <ul>
-     <li>No saque los diseños con autor de <code>/etc</code>.</li>
+     <li>No mueva los diseños que permiten crear de <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -295,19 +295,19 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
    <td><p>Para cualquier diseño que se administre en SCM y no se escriba en en tiempo de ejecución mediante cuadros de diálogo de diseño.</p>
     <ol>
      <li>Copie los diseños de la Ubicación anterior a la Nueva ubicación (/apps).</li>
-     <li>Convierta cualquier recurso CSS, JavaScript y estático de Design a un <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
+     <li>Convierta cualquier recurso CSS, JavaScript y estático del diseño en una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
      <li>Actualice las referencias a la Ubicación anterior en la
       <code>
        cq
       </code>:
-      <code>
+      Propiedad <code>
        designPath
-      </code> propiedad.</li>
+      </code>.</li>
      <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de clientes (esto requiere la actualización del código de implementación de la página).</li>
      <li>AEM Actualice las reglas de Dispatcher para permitir el servicio de bibliotecas de cliente a través de /etc.clientlibs/. servlet proxy.</li>
     </ol> <p>Para cualquier diseño que NO se haya administrado en SCM y que se haya modificado en tiempo de ejecución mediante cuadros de diálogo de diseño.</p>
     <ul>
-     <li>No saque los diseños con autor de <code>/etc</code>.</li>
+     <li>No mueva los diseños que permiten crear de <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -334,19 +334,19 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
    <td><p>Para cualquier diseño que se administre en SCM y no se escriba en en tiempo de ejecución mediante cuadros de diálogo de diseño.</p>
     <ol>
      <li>Copie los diseños de la Ubicación anterior a la Nueva ubicación (/apps).</li>
-     <li>Convierta cualquier recurso CSS, JavaScript y estático de Design a un <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
+     <li>Convierta cualquier recurso CSS, JavaScript y estático del diseño en una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
      <li>Actualice las referencias a la Ubicación anterior en la
       <code>
        cq
       </code>:
-      <code>
+      Propiedad <code>
        designPath
-      </code> propiedad.</li>
+      </code>.</li>
      <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de clientes (esto requiere la actualización del código de implementación de la página).</li>
      <li>AEM Actualice las reglas de Dispatcher para permitir el servicio de bibliotecas de cliente a través de /etc.clientlibs/. servlet proxy.</li>
     </ol> <p>Para cualquier diseño que NO se haya administrado en SCM y que se haya modificado en tiempo de ejecución mediante cuadros de diálogo de diseño.</p>
     <ul>
-     <li>No saque los diseños con autor de <code>/etc</code>.</li>
+     <li>No mueva los diseños que permiten crear de <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -373,19 +373,19 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
    <td><p>Para cualquier diseño que se administre en SCM y no se escriba en en tiempo de ejecución mediante cuadros de diálogo de diseño.</p>
     <ol>
      <li>Copie los diseños de la Ubicación anterior a la Nueva ubicación (/apps).</li>
-     <li>Convierta cualquier recurso CSS, JavaScript y estático de Design a un <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
+     <li>Convierta cualquier recurso CSS, JavaScript y estático del diseño en una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
      <li>Actualice las referencias a la Ubicación anterior en la
       <code>
        cq
       </code>:
-      <code>
+      Propiedad <code>
        designPath
-      </code> propiedad.</li>
+      </code>.</li>
      <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de clientes (esto requiere la actualización del código de implementación de la página).</li>
      <li>AEM Actualice las reglas de Dispatcher para permitir el servicio de bibliotecas de cliente a través de /etc.clientlibs/. servlet proxy.</li>
     </ol> <p>Para cualquier diseño que NO se haya administrado en SCM y que se haya modificado en tiempo de ejecución mediante cuadros de diálogo de diseño.</p>
     <ul>
-     <li>No saque los diseños con autor de <code>/etc</code>.</li>
+     <li>No mueva los diseños que permiten crear de <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -395,7 +395,7 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
  </tbody>
 </table>
 
-### Punto final de JavaScript de Adobe DTM {#adobe-dtm-javascript-endpoint}
+### Extremo de JavaScript de Adobe DTM {#adobe-dtm-javascript-endpoint}
 
 <table style="table-layout:auto">
  <tbody>
@@ -455,7 +455,7 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td>Utilice el <strong>Tarea de mantenimiento de purga de bandeja de entrada</strong> para quitar las tareas antiguas de la ubicación anterior según sea necesario.</td>
+   <td>Use la <strong>Tarea de mantenimiento de purga de la bandeja de entrada</strong> para quitar las tareas antiguas de la ubicación anterior según sea necesario.</td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
@@ -484,8 +484,8 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
    <td><strong>Directrices de reestructuración</strong></td>
    <td>
     <ol>
-     <li>Copiar configuraciones personalizadas de <code>/etc/blueprints</code> hasta <code>/apps/msm</code>.</li>
-     <li>Eliminar <code>/etc/blueprints</code>.</li>
+     <li>Copiar configuraciones personalizadas de <code>/etc/blueprints</code> a <code>/apps/msm</code>.</li>
+     <li>Quitar <code>/etc/blueprints</code>.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -539,7 +539,7 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>Las plantillas de correo electrónico de notificación de replicación nuevas o modificadas deben migrarse a la nueva ubicación (<code>/apps</code>)</p>
+   <td><p>Cualquier plantilla de correo electrónico de notificación de replicación nueva o modificada debe migrarse a la nueva ubicación (<code>/apps</code>)</p>
     <ol>
      <li>Copie las plantillas de correo electrónico de notificación de replicación nuevas o modificadas de la ubicación anterior a la nueva ubicación (<code>/apps</code>).</li>
      <li>Quite las plantillas de correo electrónico de notificación de replicación migradas de la ubicación anterior.</li>
@@ -576,12 +576,12 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
     <ol>
      <li>Copie todas las etiquetas de la ubicación anterior a la nueva ubicación.</li>
      <li>Quitar todas las etiquetas de la ubicación anterior.</li>
-     <li>AEM A través de la consola web de, reinicie el paquete OSGi de etiquetado de Day Communication 5 en <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> AEM para reconocer que la nueva ubicación contiene contenido y debe utilizarse.</li>
+     <li>AEM AEM A través de la consola web de, reinicie el paquete OSGi de etiquetado de la comunicación de día 5 en <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> para que el usuario reconozca que la nueva ubicación contiene contenido y se debe usar.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td><p>Al reiniciar el paquete OSGi de etiquetado comunitario de día, solo se registrará la nueva ubicación como raíz de etiqueta si la ubicación anterior está vacía.</p> <p>AEM Las referencias a la ubicación anterior seguirán funcionando después de migrar a la nueva ubicación para todas las funcionalidades que utilicen la API de TagManager para la resolución de etiquetas de la forma que se usa en la aplicación de etiquetas de forma independiente.</p> <p>Cualquier código personalizado que haga referencia explícita a la ruta <code>/etc/tags</code> debe actualizarse a <span class="code">/content/
+   <td><p>Al reiniciar el paquete OSGi de etiquetado comunitario de día, solo se registrará la nueva ubicación como raíz de etiqueta si la ubicación anterior está vacía.</p> <p>AEM Las referencias a la ubicación anterior seguirán funcionando después de migrar a la nueva ubicación para todas las funcionalidades que utilicen la API de TagManager de la aplicación para la resolución de etiquetas de la aplicación de forma predeterminada, que se utiliza para la resolución de etiquetas de forma predeterminada.</p> <p>Cualquier código personalizado que haga referencia explícita a la ruta de acceso <code>/etc/tags</code> debe actualizarse a <span class="code">/content/
       <code>
        cq
       </code>
@@ -610,16 +610,16 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
     <ol>
      <li>Migre las configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ul>
-       <li>Vuelva a crear manualmente las nuevas configuraciones de Cloud Service AEM de traducción mediante la interfaz de usuario de creación de en <strong>Herramientas &gt; Cloud Service &gt; Cloud Service de traducción</strong>.<br /> O </li>
+       <li>Vuelva a crear manualmente las nuevas configuraciones de los Cloud Service AEM de traducción mediante la interfaz de usuario de creación de en <strong>Herramientas &gt; Cloud Service &gt; Cloud Service de traducción</strong>.<br /> O </li>
        <li>Copie las nuevas configuraciones de Cloud Service de traducción de la ubicación anterior a la nueva ubicación (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>AEM AEM Asocie las configuraciones de aplicables con las jerarquías de contenido de la.
       <ol>
        <li>Jerarquías de páginas de AEM Sites mediante <strong>AEM Sites &gt; Página &gt; Propiedades de página &gt; Pestaña Avanzadas &gt; Configuración de nube</strong>.</li>
-       <li>AEM Jerarquías de fragmento de experiencia mediante <strong>AEM Fragmentos de experiencias de usuario &gt; Fragmento de experiencias &gt; Propiedades &gt; Pestaña Cloud Service &gt; Configuración de nube</strong>.</li>
-       <li>AEM jerarquías de carpetas de fragmentos de experiencias mediante <strong>AEM Fragmentos de experiencias de usuario &gt; Carpeta &gt; Propiedades &gt; Pestaña Cloud Service &gt; Configuración de nube</strong>.<br /> </li>
+       <li>AEM AEM las jerarquías de fragmentos de experiencias a través de <strong>Fragmentos de experiencias Fragmento de experiencias &gt; Propiedades &gt; Pestaña Cloud Service &gt; Configuración de nube</strong>.</li>
+       <li>AEM AEM las jerarquías de carpetas de fragmentos de experiencias mediante <strong>Fragmentos de experiencias de la aplicación &gt; Carpeta &gt; Propiedades &gt; Pestaña Cloud Service &gt; Configuración de la nube</strong>.<br /> </li>
        <li>Jerarquías de carpetas de AEM Assets mediante <strong>AEM Assets &gt; Carpeta &gt; Propiedades de carpeta &gt; Pestaña Cloud Service &gt; Configuración</strong>.</li>
-       <li>AEM Proyectos mediante <strong>AEM Proyectos &gt; Proyecto &gt; Propiedades del proyecto &gt; Pestaña Avanzadas &gt; Configuración de nube</strong>.</li>
+       <li>AEM AEM Proyectos a través de <strong>Proyectos de &gt; Proyecto &gt; Propiedades del proyecto &gt; pestaña Avanzadas &gt; Configuración de nube</strong>.</li>
       </ol> </li>
      <li>Desasocie los Cloud Service AEM de traducción heredados migrados de las jerarquías de contenido de la mencionadas.</li>
     </ol> </td>
@@ -682,7 +682,7 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>Se debe migrar un archivo XML de reglas de traducción modificado a la nueva ubicación (<code>/apps</code>, o <code>/conf/global</code>).</p> <p>1. Copie el fichero XML de reglas de conversión modificado de la ubicación anterior a la nueva ubicación.</p> </td>
+   <td><p>Se debe migrar un archivo XML de reglas de traducción modificado a la nueva ubicación (<code>/apps</code> o <code>/conf/global</code>).</p> <p>1. Copie el fichero XML de reglas de conversión modificado de la ubicación anterior a la nueva ubicación.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
@@ -716,19 +716,19 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
    <td><p>Para cualquier diseño que se administre en SCM y no se escriba en en tiempo de ejecución mediante cuadros de diálogo de diseño.</p>
     <ol>
      <li>Copie los diseños de la Ubicación anterior a la Nueva ubicación (/apps).</li>
-     <li>Convierta cualquier recurso CSS, JavaScript y estático de Design a un <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
+     <li>Convierta cualquier recurso CSS, JavaScript y estático del diseño en una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
      <li>Actualice las referencias a la Ubicación anterior en la
       <code>
        cq
       </code>:
-      <code>
+      Propiedad <code>
        designPath
-      </code> propiedad.</li>
+      </code>.</li>
      <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de clientes (esto requiere la actualización del código de implementación de la página).</li>
      <li>AEM Actualice las reglas de Dispatcher para permitir el servicio de bibliotecas de cliente a través de /etc.clientlibs/. servlet proxy.</li>
     </ol> <p>Para cualquier diseño que NO se haya administrado en SCM y que se haya modificado en tiempo de ejecución mediante cuadros de diálogo de diseño.</p>
     <ul>
-     <li>No saque los diseños con autor de <code>/etc</code>.</li>
+     <li>No mueva los diseños que permiten crear de <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -742,9 +742,9 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
 
 | **Ubicación anterior** | `/etc/replication/treeactivation` |
 |---|---|
-| **Nueva ubicación(es)** | `/libs/replication/treeactivation` |
+| **Nueva(s) ubicación(es)** | `/libs/replication/treeactivation` |
 | **Directrices de reestructuración** | No se requiere ninguna acción. |
-| **Notas** | La consola web de activación de árbol ya está disponible a través de **Herramientas > Implementación > Replicación > Activar árbol**. |
+| **Notas** | La consola web de activación de árbol ahora está disponible a través de **Herramientas > Implementación > Replicación > Activar árbol**. |
 
 {style="table-layout:auto"}
 
@@ -764,20 +764,20 @@ Es decir, el `sling:resourceType` La configuración de ContextHub debe ser relat
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>Los nuevos Cloud Service de Conector de traducción de proveedor deben migrarse a la nueva ubicación (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</p>
+   <td><p>Cualquier nuevo Cloud Service de conector de traducción de proveedor debe migrarse a la nueva ubicación (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</p>
     <ol>
      <li>Migre las configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ul>
-       <li>Cree manualmente configuraciones de Cloud Service de conector de traducción de proveedor nuevas a través de la <strong>AEM Interfaz de usuario de creación de en Herramientas &gt; Cloud Service &gt; Cloud Service de traducción</strong>.<br /> O </li>
-       <li>Copie cualquier nueva configuración de Cloud Service de conector de traducción de proveedor de la ubicación anterior a la nueva ubicación (<code>/apps</code>, <code>/conf/global </code>o <code>/conf/&lt;tenant&gt;</code>).</li>
+       <li>Cree manualmente nuevas configuraciones de Cloud Service AEM de Vendor Translation Connector a través de la interfaz de usuario de creación de <strong>en Herramientas &gt; Cloud Service &gt; Cloud Service de traducción</strong>.<br /> O </li>
+       <li>Copie las nuevas configuraciones de Cloud Service de conector de traducción de proveedor de la ubicación anterior a la nueva ubicación (<code>/apps</code>, <code>/conf/global </code>o <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>AEM AEM Asocie las configuraciones de aplicables con las jerarquías de contenido de la.
       <ol>
        <li>Jerarquías de páginas de AEM Sites mediante <strong>AEM Sites &gt; Página &gt; Propiedades de página &gt; Pestaña Avanzadas &gt; Configuración de nube</strong>.</li>
-       <li>AEM Jerarquías de fragmento de experiencia mediante <strong>AEM Fragmentos de experiencias de usuario &gt; Fragmento de experiencias &gt; Propiedades &gt; Pestaña Cloud Service &gt; Configuración de nube</strong>.</li>
-       <li>AEM jerarquías de carpetas de fragmentos de experiencias mediante <strong>AEM Fragmentos de experiencias de usuario &gt; Carpeta &gt; Propiedades &gt; Pestaña Cloud Service &gt; Configuración de nube</strong>.</li>
+       <li>AEM AEM las jerarquías de fragmentos de experiencias a través de <strong>Fragmentos de experiencias Fragmento de experiencias &gt; Propiedades &gt; Pestaña Cloud Service &gt; Configuración de nube</strong>.</li>
+       <li>AEM AEM las jerarquías de carpetas de fragmentos de experiencias a través de <strong>Fragmentos de experiencias de usuario &gt; Carpeta &gt; Propiedades &gt; Pestaña Cloud Service &gt; Configuración de nube</strong>.</li>
        <li>Jerarquías de carpetas de AEM Assets mediante <strong>AEM Assets &gt; Carpeta &gt; Propiedades de carpeta &gt; Pestaña Cloud Service &gt; Configuración</strong>.</li>
-       <li>AEM Proyectos mediante <strong>AEM Proyectos &gt; Proyecto &gt; Propiedades del proyecto &gt; Pestaña Avanzadas &gt; Configuración de nube</strong>.</li>
+       <li>AEM AEM Proyectos a través de <strong>Proyectos de &gt; Proyecto &gt; Propiedades del proyecto &gt; pestaña Avanzadas &gt; Configuración de nube</strong>.</li>
       </ol> </li>
      <li>Desasocie los Cloud Service AEM de traducción heredados migrados de las jerarquías de contenido de la mencionadas.</li>
     </ol> </td>

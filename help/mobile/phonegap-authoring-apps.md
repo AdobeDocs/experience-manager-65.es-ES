@@ -24,21 +24,21 @@ ht-degree: 0%
 
 El panel de AEM Mobile le permite crear, crear e implementar su aplicación móvil, así como crear, eliminar y editar metadatos de aplicación. Una vez que la aplicación esté activa, puede analizar los análisis de la aplicación, incluidas las métricas de ciclo de vida y uso, para mejorar la conversión del cliente y la lealtad de la marca.
 
-Para crear la aplicación para AEM Mobile, consulte la [Creación de aplicaciones móviles](/help/mobile/building-app-mobile-phonegap.md) página.
+Para crear su aplicación de AEM Mobile, consulte la página [Crear aplicaciones móviles](/help/mobile/building-app-mobile-phonegap.md).
 
-Para configurar su entorno y empezar, consulte [AEM AEM Administración de la para utilizar PhoneGap Enterprise de la red de](/help/mobile/administer-phonegap.md).
+AEM AEM Para configurar su entorno y comenzar, consulte [Administración de la para usar PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
 ## El catálogo de aplicaciones de AEM Mobile {#the-aem-mobile-apps-catalog}
 
-El [Catálogo de aplicaciones de AEM Mobile](http://localhost:4502/aem/apps.html/content/phonegap) AEM muestra toda la aplicación móvil gestionada en el servicio de asistencia de la aplicación de.
+El [catálogo de aplicaciones de AEM Mobile AEM](http://localhost:4502/aem/apps.html/content/phonegap) muestra toda la aplicación móvil administrada en la aplicación de forma que se pueda administrar de forma independiente.
 
 Piense en este catálogo como en la &quot;página de aterrizaje&quot; de AEM Mobile, donde los administradores pueden iniciar una nueva aplicación de AEM Mobile creando a partir de una plantilla o cargando una aplicación existente ya iniciada por un desarrollador móvil.
 
 Siga estos pasos para llegar a la página de aterrizaje del catálogo de aplicaciones:
 
-1. Navegar a **Navegación** y luego elija **Móvil**.
+1. Vaya a **Navegación** y, a continuación, elija **Móvil**.
 
-1. Elegir **Aplicaciones** para abrir el catálogo de aplicaciones.
+1. Elija **Aplicaciones** para abrir el catálogo de aplicaciones.
 
 ![Catálogo de aplicaciones de AEM Mobile](assets/chlimage_1-135.png)
 
@@ -54,13 +54,13 @@ Puede expandirse a cada mosaico del panel de AEM Mobile para ver o editar detall
 
 El mosaico Administrar aplicación muestra el icono de su aplicación, el nombre, la descripción, las plataformas admitidas, la dirección URL de inicio de la llamada para obtener actualizaciones e información de la versión. Puede explorar en profundidad este mosaico para editar y mantener la Configuración de la aplicación PhoneGap (config.xml) y preparar la aplicación para enviarla a las distintas tiendas de aplicaciones para su distribución.
 
-Clic [aquí](/help/mobile/phonegap-app-details-tile.md) para obtener más información.
+Haga clic [aquí](/help/mobile/phonegap-app-details-tile.md) para obtener detalles.
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
 ### El mosaico Administrar contenido de la página {#the-manage-page-content-tile}
 
-El contenido se puede crear, actualizar y eliminar en AEM Mobile de la misma manera que se hace en AEM Sites. El **Administrar mosaico de contenido de página** muestra el número de páginas de contenido administrado y modificadas por última vez. Puede explorar el contenido para crear, copiar, mover, eliminar y actualizar páginas haciendo clic en cada registro del mosaico. Una vez actualizado el contenido, puede enviar una actualización de contenido a sus clientes a través del **Mosaico Administrar paquetes de contenido.**
+El contenido se puede crear, actualizar y eliminar en AEM Mobile de la misma manera que se hace en AEM Sites. El **mosaico Administrar contenido de página** muestra el número de páginas de contenido administrado y modificadas por última vez. Puede explorar el contenido para crear, copiar, mover, eliminar y actualizar páginas haciendo clic en cada registro del mosaico. Una vez que se haya actualizado el contenido, puede enviar una actualización de contenido a sus clientes a través del **mosaico Administrar paquetes de contenido.**
 
 ![Mosaico de contenido](assets/chlimage_1-138.png)
 
@@ -72,27 +72,27 @@ AEM AEM El paquete de contenido permite al autor de la aplicación de administra
 
 El paquete de contenido crea un archivo ZIP, considerado un paquete de liberación de contenido, para cada actualización. Estos paquetes contienen recursos html y páginas html que se generan al procesar la aplicación y son lo suficientemente inteligentes como para empaquetar solo aquellos archivos que se han modificado desde la última actualización.
 
-El mosaico Administrar paquete de contenido **Tipo** La columna muestra &quot;Aplicación&quot; para indicar contenido de Application Shell como, por ejemplo, el marco de trabajo o la infraestructura de la aplicación gestionada por un desarrollador, o bien &quot;Contenido&quot;, que representa el contenido de la página gestionado por el autor del contenido.
+La columna **Tipo** del mosaico Administrar paquete de contenido muestra &quot;Aplicación&quot; para indicar contenido de Application Shell, por ejemplo, el marco de trabajo o la infraestructura de la aplicación administrada por un desarrollador, o bien, &quot;Contenido&quot;, que representa el contenido de la página administrado por el autor del contenido.
 
 El contenido puede representarse como un idioma o como una parte concreta de la aplicación en la que la aplicación consume varios paquetes de Content Release. La elección de cómo empaquetar el contenido es flexible y depende totalmente de cómo desee administrar el contenido de la aplicación.
 
-El **Modificado** indica cuándo se modificaron las páginas más recientemente.
+La columna **Modificado** indica cuándo se modificaron las páginas más recientemente.
 
-El **Ensayado** La columna muestra cuándo se creó la última actualización de contenido. Para crear una actualización de contenido y almacenar en zona intermedia los cambios, abra cualquier registro del mosaico y cree una actualización.
+La columna **Ensayado** muestra cuándo se creó la última actualización de contenido. Para crear una actualización de contenido y almacenar en zona intermedia los cambios, abra cualquier registro del mosaico y cree una actualización.
 
-El **Publicado** Esta columna muestra cuándo se publicó la última actualización de contenido y cuándo sus clientes la pusieron a disposición para su consumo. Para publicar contenido, primero debe almacenarlo en el escenario y luego publicar la actualización explorando en este mosaico y publicando desde la consola Detalles de la versión de contenido.
+La columna **Publicado** muestra cuándo se publicó la última actualización de contenido y cuándo sus clientes la pusieron a disposición para su consumo. Para publicar contenido, primero debe almacenarlo en el escenario y luego publicar la actualización explorando en este mosaico y publicando desde la consola Detalles de la versión de contenido.
 
-![Mosaico de publicación de contenido](assets/chlimage_1-139.png) ![Paquete ContentSync para el shell de la aplicación](do-not-localize/chlimage_1-5.png)
+![Título de la versión del contenido](assets/chlimage_1-139.png) ![Paquete ContentSync para el shell de la aplicación](do-not-localize/chlimage_1-5.png)
 
 Este icono representa un paquete de versión de contenido para el shell de la aplicación
 
-![Icono de paquete de liberación de contenido indicado por dos símbolos de paquete cuadrados superpuestos.](do-not-localize/chlimage_1-6.png)
+![Icono de paquete de publicación de contenido indicado por dos símbolos de paquete cuadrados superpuestos.](do-not-localize/chlimage_1-6.png)
 
 Estos iconos representan un paquete de publicación de contenido para el contenido de la aplicación
 
 ### El mosaico del PhoneGap Build {#the-phonegap-build-tile}
 
-El **Mosaico de PhoneGap Build** conecta con `https://build.phonegap.com` para generar y alojar compilaciones remotas. Una vez creada, la compilación está disponible como descarga o directamente en el dispositivo mediante un código QR.
+El **Mosaico de PhoneGap Build** se conecta con `https://build.phonegap.com` para generar y alojar compilaciones remotas. Una vez creada, la compilación está disponible como descarga o directamente en el dispositivo mediante un código QR.
 
 También puede descargar el origen del dispositivo para compilarlo localmente mediante la CLI de PhoneGap (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
@@ -108,7 +108,7 @@ También puede descargar el origen del dispositivo para compilarlo localmente me
 
 AEM Mobile se integra con Adobe Analytics mediante [SDK de Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
 
-El Centro de control **Mosaico de métricas** muestra análisis de resumen extraídos de AMS para su aplicación. Puede explorar en profundidad el panel de análisis haciendo clic en &#39;...&#39; en la parte inferior derecha.
+El mosaico **Métricas** del Centro de control muestra análisis de resumen extraídos de AMS para su aplicación. Puede explorar en profundidad el panel de análisis haciendo clic en &#39;...&#39; en la parte inferior derecha.
 
 ![Mosaico de métricas](assets/chlimage_1-141.png)
 
@@ -116,7 +116,7 @@ El Centro de control **Mosaico de métricas** muestra análisis de resumen extra
 
 El mosaico Administrar contenido de la entidad le permite añadir y administrar definiciones de aplicaciones. Las definiciones de aplicación son una forma de identificar qué espacios (y otras configuraciones) son adecuados para la aplicación. De este modo, se puede añadir un nuevo espacio sin tener que volver a compilar la aplicación. La definición de la aplicación se actualiza y eso incluye la información de cualquier espacio nuevo.
 
-Clic [aquí](/help/mobile/phonegap-app-definitions.md) para crear y administrar las definiciones de aplicaciones.
+Haga clic [aquí](/help/mobile/phonegap-app-definitions.md) para crear y administrar las definiciones de su aplicación.
 
 Puede explorar en profundidad el panel de contenido de la entidad administrada haciendo clic en &quot;...&quot; en la parte inferior derecha.
 

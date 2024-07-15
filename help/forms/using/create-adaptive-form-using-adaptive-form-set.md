@@ -141,7 +141,7 @@ Realice los siguientes pasos para agregar un formulario adaptable como formulari
 
 1. Abra el formulario principal en modo de edición.
 1. En la barra lateral, haga clic en **Recursos** ![assets-browser](assets/assets-browser.png). En Recursos, seleccione **Formulario adaptable** de la lista desplegable.
-   [![Seleccionar un formulario adaptable en Recursos](assets/asset.png)](assets/asset-1.png)
+   [![Seleccionar formulario adaptable en Assets](assets/asset.png)](assets/asset-1.png)
 
 1. Arrastre y suelte el formulario adaptable que desee agregar como formulario secundario.
    [![Arrastre y suelte el formulario adaptable en el sitio](assets/drag-drop.png)](assets/drag-drop-1.png)El formulario adaptable que suelte se agregará como formulario secundario.

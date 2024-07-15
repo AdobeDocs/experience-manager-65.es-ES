@@ -20,9 +20,9 @@ ht-degree: 2%
 
 Para desarrollar sus aplicaciones JCR, Apache Sling o Adobe Experience Manager AEM (), están disponibles los siguientes conjuntos de herramientas:
 
-* un conjunto formado por [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) y WebDAV. CRXDE Lite AEM está incrustado en CRX/y le permite realizar tareas de desarrollo estándar en el explorador. Con CRXDE Lite, puede crear y editar archivos (como .jsp y .java), carpetas, plantillas, componentes, cuadros de diálogo, nodos, propiedades y paquetes al registrar e integrar con SVN.
+* un conjunto formado por [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) y WebDAV. CRXDE Lite está incrustado en CRX AEM/y le permite realizar tareas de desarrollo estándar en el explorador. Con CRXDE Lite, puede crear y editar archivos (como .jsp y .java), carpetas, plantillas, componentes, cuadros de diálogo, nodos, propiedades y paquetes al registrar e integrar con SVN.
 
-  Se recomienda utilizar CRXDE Lite AEM cuando no tenga acceso directo al servidor CRX/, cuando desarrolle una aplicación ampliando o modificando los componentes predeterminados y los paquetes Java™ o cuando no necesite un depurador dedicado, finalización de código y resaltado de sintaxis.
+  Se recomienda utilizar CRXDE Lite cuando no tenga acceso directo al servidor de CRX AEM/, cuando desarrolle una aplicación ampliando o modificando los componentes predeterminados y los paquetes Java™ o cuando no necesite un depurador dedicado, finalización de código y resaltado de sintaxis.
 
 * un conjunto formado por lo siguiente:
    * Un Entorno De Desarrollo Integrado. Por ejemplo, [Eclipse](/help/sites-developing/howto-projects-eclipse.md) o [IntelliJ](/help/sites-developing/ht-intellij.md).
@@ -59,7 +59,7 @@ AEM Se envía con otras herramientas que facilitan el desarrollo:
 Herramientas que facilitan la creación de nuevos proyectos:
 
 * [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
-* [AEM Plantillas de Lazybones](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
+* AEM [Plantillas de huesos labiales de](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
 
 >[!NOTE]
 >

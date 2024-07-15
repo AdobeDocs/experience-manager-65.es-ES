@@ -35,10 +35,10 @@ Cuando se ha creado un lanzamiento para una página (o conjunto de páginas), pu
 
 ### Editar páginas de lanzamiento sujetas a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Si el lanzamiento se basa en una [live copy](/help/sites-administering/msm.md) a continuación, hará lo siguiente:
+Si el lanzamiento se basa en [Live Copy](/help/sites-administering/msm.md), deberá hacer lo siguiente:
 
 * consulte símbolos de bloqueo (pequeños candados) cuando edite un componente (contenido o propiedades).
-* consulte la **Live Copy** pestaña en **Propiedades de página**
+* consulte la ficha **Live Copy** en **Propiedades de página**
 
 Se utiliza una Live Copy para sincronizar contenido *desde* la rama de origen *a* la rama de lanzamiento (para mantener el lanzamiento actualizado con los cambios realizados en la fuente).
 
@@ -53,11 +53,11 @@ Consulte [Cambio del contenido de Live Copy](/help/sites-administering/msm-livec
 
 Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias** y comparar la página de lanzamiento con la página de origen:
 
-1. En el **Sites** consola, [vaya a la página de origen del lanzamiento y selecciónela](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
+1. En la consola **Sites**, [vaya a la página de origen del lanzamiento y selecciónela](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
 1. Abra el panel **[Referencias](/help/sites-authoring/basic-handling.md#references)** y seleccione **Lanzamientos**.
 1. Seleccione el lanzamiento específico y luego **Comparar con el origen**:
 
-   ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
+   ![captura de pantalla_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
 
 1. Las dos páginas (inicio y origen) se abrirán una junto a la otra.
 
@@ -109,4 +109,4 @@ Las propiedades del lanzamiento se pueden editar en cualquier momento:
 
 El estado se muestra al seleccionar un lanzamiento específico en la pestaña Referencias (consulte [Lanzamientos en referencias (consola Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
-![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)
+![captura de pantalla_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)

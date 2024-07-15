@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Introducción {#introduction}
 
-La función de foro proporciona un área para que los visitantes del sitio (miembros de la comunidad) que han iniciado sesión en el entorno de publicación puedan hacer lo siguiente:
+La función de foro proporciona un área para que los visitantes del sitio (miembros de la comunidad) conectados en el entorno de Publish puedan hacer lo siguiente:
 
 * Crear temas
 * Ver y responder a temas
@@ -33,11 +33,11 @@ La función de foro proporciona un área para que los visitantes del sitio (miem
 Esta sección de la documentación describe lo siguiente:
 
 * AEM Adición de la función de foro a un sitio de.
-* Ajustes de configuración para `Forum` componente.
+* Ajustes de configuración para el componente `Forum`.
 
 ### Adición de un foro a una página {#adding-a-forum-to-a-page}
 
-Para agregar un `Forum` a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un componente `Forum` a una página en modo de autor, use el explorador de componentes para localizar
 
 * `Communities / Forum`
 
@@ -45,27 +45,27 @@ Y arrástrelo a su lugar en una página en la que debería aparecer el foro.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/essentials-forum.md#essentials-for-client-side) están incluidos, así es como se `Forum` el componente aparece:
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](/help/communities/essentials-forum.md#essentials-for-client-side), así es como aparece el componente `Forum`:
 
 ![forum-component](assets/forum-component.png)
 
 ### Configuración de un foro {#configuring-a-forum}
 
-Seleccione el colocado `Forum` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el componente `Forum` colocado para que pueda acceder y seleccionar el icono `Configure` que abre el cuadro de diálogo de edición.
 
-![configure-new](assets/configure-new.png)
+![configurar-nuevo](assets/configure-new.png)
 
 ![forum-config](assets/forum-config.png)
 
 #### Pestaña Configuración {#settings-tab}
 
-En el **Configuración** pestaña, especifique la configuración de los temas y las respuestas:
+En la ficha **Configuración**, especifique la configuración de los temas y las respuestas:
 
 * **Permitir miniatura de datos adjuntos**
 
   Si se selecciona, se crea una miniatura de la imagen adjunta.
 
-* **Tamaño máximo de miniatura de adjunto**
+* **Tamaño máximo de miniatura adjunta**
 
   Tamaño máximo (en píxeles) de la imagen en miniatura del archivo adjunto. El valor predeterminado es 800 x 800.
 
@@ -92,7 +92,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas y 
 
 * **Permitir etiquetado**
 
-  Si se selecciona esta opción, permite que los miembros agreguen etiquetas de etiqueta a sus publicaciones (consulte **Campo de etiqueta** pestaña). El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se permite a los miembros agregar etiquetas de etiqueta a sus publicaciones (consulte **Campo de etiqueta** en la pestaña). El valor predeterminado está desmarcado.
 
 * **Permitir cargas de archivos**
 
@@ -100,7 +100,7 @@ En el **Configuración** pestaña, especifique la configuración de los temas y 
 
 * **Permitir seguimiento**
 
-  Si se selecciona esta opción, se incluye la siguiente función para las publicaciones del foro, que permite a los miembros [notificado](/help/communities/notifications.md) de nuevos puestos. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se debe incluir la siguiente característica para las publicaciones del foro, que permite [notificar](/help/communities/notifications.md) a los miembros las nuevas publicaciones. El valor predeterminado está desmarcado.
 
 * **Permitir anclaje**
 
@@ -112,24 +112,24 @@ En el **Configuración** pestaña, especifique la configuración de los temas y 
 
 * **Permitir suscripciones por correo electrónico**
 
-  Si se selecciona esta opción, se notificará a los miembros de las nuevas publicaciones por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere `Allow Following` que se van a comprobar y [correo electrónico configurado](/help/communities/email.md). El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se notificarán las nuevas publicaciones a los miembros por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere que se compruebe `Allow Following` y que se configure [correo electrónico](/help/communities/email.md). El valor predeterminado está desmarcado.
 
 * **Tamaño máximo de archivo**
 
-  Relevante solo si `Allow File Uploads` está marcada. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+  Relevante solo si `Allow File Uploads` está marcado. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
 
 * **Tipos de archivo permitidos**
 
-  Relevante solo si `Allow File Uploads` está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se podrán cargar los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
+  Relevante solo si `Allow File Uploads` está marcado. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se podrán cargar los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 Solo es relevante si está marcada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 (2 Mb).
 
-* **Permitir respuestas de debate**
+* **Permitir respuestas de subprocesos**
 
   Si se selecciona esta opción, se permiten las respuestas a los comentarios publicados en el tema. El valor predeterminado está desmarcado.
 
-* **Permitir votación**
+* **Permitir Votación**
 
   Si se selecciona esta opción, se debe incluir la función de votación con un tema. El valor predeterminado está desmarcado.
 
@@ -141,9 +141,9 @@ Solo es relevante si está marcada la opción Permitir cargas de archivos. Núme
 
   Si se selecciona, se muestran las rutas de exploración de navegación en las páginas de temas. La opción predeterminada está activada.
 
-* **Mostrar distintivos**
+* **Mostrar insignias**
 
-  Si se selecciona esta opción, se muestran las ganancias y las asignaciones [distintivos](/help/communities/implementing-scoring.md) con la entrada de blog de un miembro. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se muestran [insignias](/help/communities/implementing-scoring.md) ganadas y asignadas con la entrada de blog de un miembro. El valor predeterminado está desmarcado.
 
 * **Permitir miembros privilegiados**
 
@@ -171,13 +171,13 @@ Solo es relevante si está marcada la opción Permitir cargas de archivos. Núme
 
 >[!NOTE]
 >
->Puede ser necesario comprobar ambos `AllowThreaded Replies` y `Allow users to Delete Comments and Topics` para habilitar los comentarios sobre un tema.
+>Es posible que sea necesario comprobar `AllowThreaded Replies` y `Allow users to Delete Comments and Topics` para habilitar los comentarios en un tema.
 
 #### Pestaña Moderación de usuario {#user-moderation-tab}
 
-En el **Moderación de usuario** , especifique cómo se administran los temas expuestos y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+En la ficha **Moderación de usuarios** especifique cómo se administran los temas publicados y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderar contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-* **Denegar entradas**
+* **Denegar publicaciones**
 
   Si se selecciona, los moderadores de confianza pueden denegar las publicaciones e impedir que aparezcan en el foro público. El valor predeterminado está desmarcado.
 
@@ -211,11 +211,11 @@ En el **Moderación de usuario** , especifique cómo se administran los temas ex
 
 #### Pestaña Campo de etiqueta {#tag-field-tab}
 
-En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se permiten en la **Configuración** están limitadas según las áreas de nombres seleccionadas.
+En la ficha **Campo de etiqueta**, las etiquetas que se pueden aplicar, si se permiten en la ficha **Configuración**, están limitadas según las áreas de nombres elegidas.
 
 * **Áreas de nombres permitidas**
 
-  Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
+  Relevante si `Allow Tagging` está marcado en la ficha **Configuración**. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 
 * **Límite de sugerencias**
 
@@ -223,7 +223,7 @@ En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se
 
 #### Pestaña Traducción {#translation-tab}
 
-En el **Traducción** pestaña, si la traducción está habilitada para el sitio de la comunidad, la traducción puede configurarse para traducir todo el tema o las publicaciones seleccionadas.
+En la ficha **Traducción**, si la traducción está habilitada para el sitio de la comunidad, la traducción puede establecerse para traducir todo el tema o las publicaciones seleccionadas.
 
 * **Traducir todo**
 
@@ -231,17 +231,17 @@ En el **Traducción** pestaña, si la traducción está habilitada para el sitio
 
 #### Pestaña Configuración de ordenación {#sort-settings-tab}
 
-En el **Configuración de orden** , especifique cómo se ordenan los comentarios publicados cuando se muestran.
+En la ficha **Configuración de ordenación**, especifique cómo se ordenan los comentarios publicados cuando se muestran.
 
 * **Ordenar por**
 
-  Compruebe todas las selecciones de ordenación permitidas: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. El valor predeterminado es `Newest, Oldest, Last Updated`.
+  Comprobar todas las selecciones de ordenación permitidas: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. El valor predeterminado es `Newest, Oldest, Last Updated`.
 
 * **Establecer como predeterminado**
 
   Tire hacia abajo para seleccionar una de las opciones de ordenación seleccionadas y que aparezca como la predeterminada. El valor predeterminado es `Newest`.
 
-* **Seleccione las opciones de hora para la clasificación de Analytics**
+* **Seleccionar opciones de hora para la ordenación de Analytics**
 
   Tire hacia abajo para seleccionar una de las siguientes opciones: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
 
@@ -249,10 +249,10 @@ En el **Configuración de orden** , especifique cómo se ordenan los comentarios
 
 ### Información adicional {#additional-information}
 
-Puede encontrar más información en la [Forum Essentials](/help/communities/essentials-forum.md) para desarrolladores.
+Encontrará más información en la página de [Forum Essentials](/help/communities/essentials-forum.md) para desarrolladores.
 
-Para ver la moderación de los temas publicados y los comentarios, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+Para moderar los temas publicados y los comentarios, vea [Moderar el contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-Para etiquetar temas y comentarios publicados, consulte [Etiquetado del contenido generado por el usuario](/help/communities/tag-ugc.md).
+Para etiquetar temas y comentarios publicados, consulte [Etiquetado de contenido generado por el usuario](/help/communities/tag-ugc.md).
 
-Para ver la traducción de los temas publicados y los comentarios, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
+Para obtener la traducción de los temas y comentarios publicados, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).

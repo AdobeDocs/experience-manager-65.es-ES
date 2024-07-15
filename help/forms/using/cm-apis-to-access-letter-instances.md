@@ -40,7 +40,7 @@ Administración de correspondencia expone las API para recuperar instancias de c
 
 ### Usar getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-La siguiente API encuentra las instancias de la carta en función del objeto de consulta (tanto enviados como borradores). Si el objeto de consulta es nulo, devolverá todas las instancias de cartas. Esta API devuelve una lista de [LetterInstanceVO](https://helpx.adobe.com/es/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objetos, que se pueden utilizar para extraer información adicional de la instancia de carta.
+La siguiente API encuentra las instancias de la carta en función del objeto de consulta (tanto enviados como borradores). Si el objeto de consulta es nulo, devolverá todas las instancias de cartas. Esta API devuelve una lista de [objetos LetterInstanceVO](https://helpx.adobe.com/es/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que pueden utilizarse para extraer información adicional de la instancia de carta.
 
 **Sintaxis**: `List getAllLetterInstances(Query query) throws ICCException;`
 

@@ -17,11 +17,11 @@ ht-degree: 0%
 
 Puede configurar el Editor de texto enriquecido en Adobe Experience Manager para que tenga varios editores locales. Cuando está configurado, puede seleccionar el contenido adecuado y abrir el editor correspondiente.
 
-![Un editor in situ específico](assets/rte-inplace-editor.png)
+![Un editor local específico](assets/rte-inplace-editor.png)
 
 ## Configuración de varios editores {#configure-multiple-editors}
 
-Para habilitar varios editores locales, utilice la estructura de un `cq:InplaceEditingConfig` el tipo de nodo se ha mejorado con la definición de `cq:ChildEditorConfig` tipo de nodo.
+Para habilitar varios editores locales, se ha mejorado la estructura de un tipo de nodo `cq:InplaceEditingConfig` con la definición del tipo de nodo `cq:ChildEditorConfig`.
 
 Por ejemplo:
 
@@ -58,7 +58,7 @@ Por ejemplo:
 
 Para configurar varios editores, siga estos pasos:
 
-1. En el nodo `cq:inplaceEditing` (de tipo `cq:InplaceEditingConfig`) defina las siguientes propiedades:
+1. En el nodo `cq:inplaceEditing` (de tipo `cq:InplaceEditingConfig`), defina las siguientes propiedades:
 
    * Nombre:`editorType`
    * Tipo: `String`
@@ -69,14 +69,14 @@ Para configurar varios editores, siga estos pasos:
    * Nombre: `cq:ChildEditors`
    * Tipo: `nt:unstructured`
 
-1. En `cq:childEditors` , cree un nodo para cada editor en contexto:
+1. En el nodo `cq:childEditors`, cree un nodo para cada editor local:
 
    * Nombre: el nombre de cada nodo es el nombre de la propiedad que representa, como en el caso de los destinos de colocación. Por ejemplo, `image` y `text`.
    * Tipo: `cq:ChildEditorConfig`
 
    >[!NOTE]
    >
-   >Existe una correlación entre los destinos de colocación definidos y los editores secundarios. El nombre del `cq:ChildEditorConfig` El nodo se considera como el ID de destino de colocación, para utilizarlo como parámetro del editor secundario seleccionado. Si el subárea editable no tiene un destino de colocación, por ejemplo, en un componente de texto, el nombre del editor secundario se seguirá considerando como un ID para identificar el área editable correspondiente.
+   >Existe una correlación entre los destinos de colocación definidos y los editores secundarios. El nombre del nodo `cq:ChildEditorConfig` se considera como el ID de destino de colocación, para su uso como parámetro del editor secundario seleccionado. Si el subárea editable no tiene un destino de colocación, por ejemplo, en un componente de texto, el nombre del editor secundario se seguirá considerando como un ID para identificar el área editable correspondiente.
 
 1. En cada uno de estos nodos (`cq:ChildEditorConfig`) defina las propiedades:
 
@@ -88,7 +88,7 @@ Para configurar varios editores, siga estos pasos:
 
 ### Configuración adicional para editores de texto enriquecido {#additional-configuration-for-rich-text-editors}
 
-La configuración de varios editores de texto enriquecido es ligeramente diferente, ya que puede configurar cada instancia de RTE individual por separado. Para obtener más información, consulte [configuración del Editor de texto enriquecido](/help/sites-administering/rich-text-editor.md). Para que varios RTE creen una configuración para cada RTE local. El Adobe recomienda crear el nuevo nodo de configuración en `cq:InplaceEditingConfig` ya que cada RTE individual puede tener una configuración diferente. En el nuevo nodo, cree cada configuración de RTE individual.
+La configuración de varios editores de texto enriquecido es ligeramente diferente, ya que puede configurar cada instancia de RTE individual por separado. Para obtener más información, consulte [configurar el Editor de texto enriquecido](/help/sites-administering/rich-text-editor.md). Para que varios RTE creen una configuración para cada RTE local. El Adobe recomienda crear el nuevo nodo de configuración en `cq:InplaceEditingConfig`, ya que cada RTE individual puede tener una configuración diferente. En el nuevo nodo, cree cada configuración de RTE individual.
 
 ```xml
     texttext
@@ -105,7 +105,7 @@ La configuración de varios editores de texto enriquecido es ligeramente diferen
 
 >[!NOTE]
 >
->Sin embargo, para RTE, la variable `configPath` La propiedad se admite cuando solo hay una instancia del editor de texto (subárea editable) en el componente. Este uso de `configPath` se proporciona para admitir la compatibilidad con versiones anteriores de los cuadros de diálogo de interfaz de usuario del componente.
+>Sin embargo, para RTE, la propiedad `configPath` se admite cuando solo hay una instancia del editor de texto (subárea editable) en el componente. Este uso de `configPath` se proporciona para admitir la compatibilidad con versiones anteriores de los cuadros de diálogo de interfaz de usuario del componente.
 
 >[!CAUTION]
 >
@@ -113,12 +113,12 @@ La configuración de varios editores de texto enriquecido es ligeramente diferen
 
 ## Muestras de código {#code-samples}
 
-Puede encontrar el código de esta página en [proyecto aem-authoring-hybrideditors en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Puede descargar el proyecto completo como [un archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
+Puede encontrar el código de esta página en el [proyecto aem-authoring-hybrideditors de GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Puede descargar el proyecto completo como [un archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
 
 ## Adición de un editor in situ {#add-an-in-place-editor}
 
-Para obtener información general sobre cómo agregar un editor in situ, consulte el documento [personalizar la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
+Para obtener información general sobre cómo agregar un editor local, consulte el documento [personalizar la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
 
 >[!MORELIKETHIS]
 >
->* [Configuración del editor de texto enriquecido en Experience Manager](/help/sites-administering/rich-text-editor.md).
+>* [Configuración del editor de texto enriquecido en el Experience Manager](/help/sites-administering/rich-text-editor.md).

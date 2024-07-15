@@ -16,9 +16,9 @@ ht-degree: 2%
 
 # SCF Handlebars Helpers {#scf-handlebars-helpers}
 
-| **[⇐ aspectos básicos de funciones](essentials.md)** | **[⇒ de personalización del lado del servidor](server-customize.md)** |
+| **[⇐ elementos esenciales de la característica](essentials.md)** | **[⇒ de personalización del lado del servidor](server-customize.md)** |
 |---|---|
-|   | **[⇒ de personalización de cliente](client-customize.md)** |
+|   | **[⇒ de personalización del lado del cliente](client-customize.md)** |
 
 Handlebars Helpers (ayudantes) son métodos a los que se puede llamar desde scripts Handlebars para facilitar el trabajo con componentes SCF.
 
@@ -44,7 +44,7 @@ Si safeString se establece en true, la cadena devuelta es SafeString.
 
 ### Parámetros {#parameters}
 
-* **contexto**: cadena
+* **context**: String
 
   (Opcional) La cadena predeterminada está vacía
 
@@ -56,7 +56,7 @@ Si safeString se establece en true, la cadena devuelta es SafeString.
 
   (Opcional) El valor por defecto es el número de palabras de la cadena recortada.
 
-* **safeString**: booleano
+* **safeString**: Booleano
 
   (Opcional) Devuelve un valor Handlebars.SafeString() si es true. El valor predeterminado es false.
 
@@ -92,7 +92,7 @@ Un asistente puede agregar dos espacios bajo un div, uno para el texto completo 
 
 ### Parámetros {#parameters-1}
 
-* **contexto**: cadena
+* **context**: String
 
   (Opcional) El valor predeterminado es la cadena vacía.
 
@@ -100,15 +100,15 @@ Un asistente puede agregar dos espacios bajo un div, uno para el texto completo 
 
   (Opcional) El número de caracteres que se mostrarán cuando no se muestre texto completo. El valor predeterminado es 100.
 
-* **moreText**: cadena
+* **moreText**: String
 
   (Opcional) Texto que se mostrará para indicar que hay más texto que mostrar. El valor predeterminado es &quot;más&quot;.
 
-* **ellipsesText**: cadena
+* **ellipsesText**: String
 
   (Opcional) Texto que se mostrará para indicar que hay texto oculto. El valor predeterminado es &quot;...&quot;.
 
-* **safeString**: booleano
+* **safeString**: Booleano
 
   (Opcional) Valor booleano que indica si se debe aplicar Handlebars.SafeString() antes de devolver el resultado. El valor predeterminado es false.
 
@@ -136,7 +136,7 @@ Un asistente para devolver una cadena de fecha con formato.
 
   (Opcional) un valor de milisegundos de desplazamiento desde el 1 de enero de 1970 (epoch). El valor predeterminado es la fecha actual.
 
-* **formato**: cadena
+* **format**: String
 
   (Opcional) Formato de fecha que se aplicará. El valor predeterminado es &quot;`YYYY-MM-DDTHH:mm:ss.sssZ`&quot; y el resultado aparece como &quot;`2015-03-18T18:17:13-07:00`&quot;
 
@@ -160,11 +160,11 @@ Un asistente para devolver contenido en función de un condicional de igualdad.
 
 ### Parámetros {#parameters-3}
 
-* **lvalue**: cadena
+* **lvalue**: String
 
   El valor de la izquierda que se va a comparar.
 
-* **rvalue**: cadena
+* **rvalue**: String
 
   El valor de la derecha que se va a comparar.
 
@@ -180,17 +180,17 @@ Un asistente para devolver contenido en función de un condicional de igualdad.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Un asistente de bloque que prueba el valor actual de [Modo WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) con una lista de modos separados por cadenas.
+Un asistente de bloque que prueba el valor actual de [modo WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) con una lista de modos separados por cadenas.
 
 ### Parámetros {#parameters-4}
 
-* **contexto**: cadena
+* **context**: String
 
   (Opcional) La cadena que se va a traducir. Obligatorio si no se proporciona ningún valor predeterminado.
 
 * **modo**: cadena
 
-  (Opcional) Una lista separada por comas de [Modos WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) para comprobar si está configurado.
+  (Opcional) Una lista separada por comas de [modos WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) para comprobar si están configurados.
 
 ### Ejemplos {#example-2}
 
@@ -206,15 +206,15 @@ Un asistente de bloque que prueba el valor actual de [Modo WCM](https://develope
 
 Este asistente anula el asistente Handlebars &#39;i18n&#39;.
 
-Consulte también [Internacionalización de cadenas en código JavaScript](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+Consulte también [Internacionalización de cadenas en JavaScript Code](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
 
 ### Parámetros {#parameters-5}
 
-* **contexto**: cadena
+* **context**: String
 
   (Opcional) La cadena que se va a traducir. Obligatorio si no se proporciona ningún valor predeterminado.
 
-* **predeterminado**: cadena
+* **valor predeterminado**: cadena
 
   (Opcional) La cadena predeterminada que se va a traducir. Obligatorio si no se proporciona ningún contexto.
 
@@ -233,23 +233,23 @@ Consulte también [Internacionalización de cadenas en código JavaScript](../..
 
 Un asistente para incluir un componente como recurso no existente en una plantilla.
 
-Este método permite personalizar el recurso mediante programación con mayor facilidad de lo que es posible para un recurso agregado como nodo JCR. Consulte [Agregar o incluir un componente de Communities](scf.md#add-or-include-a-communities-component).
+Este método permite personalizar el recurso mediante programación con mayor facilidad de lo que es posible para un recurso agregado como nodo JCR. Consulte [Agregar o incluir un componente de comunidades](scf.md#add-or-include-a-communities-component).
 
 Solo se pueden incluir algunos de los componentes de las comunidades que se han seleccionado. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
-Este asistente, que solo es adecuado en el lado del servidor, proporciona una funcionalidad similar a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
+Este asistente, apropiado solo en el lado del servidor, proporciona una funcionalidad similar a [cq:include](../../help/sites-developing/taglib.md) para scripts JSP.
 
 ### Parámetros {#parameters-6}
 
-* **contexto**: cadena u objeto
+* **context**: cadena u objeto
 
   (Opcional, a menos que se proporcione una ruta relativa)
 
-  Uso `this` para pasar el contexto actual.
+  Use `this` para pasar el contexto actual.
 
-  Uso `this.id` para obtener el recurso en `id` para procesar el resourceType solicitado.
+  Use `this.id` para obtener el recurso en `id` para procesar el resourceType solicitado.
 
-* **resourceType**: cadena
+* **resourceType**: String
 
   (Opcional) El tipo de recurso toma por defecto el tipo de recurso del contexto.
 
@@ -277,21 +277,21 @@ Incluye un nuevo componente de comentarios en `this.id` + /comments.
 
 AEM Un asistente que incluye una biblioteca de cliente de HTML de, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en el script Handlebars.
 
-Este asistente, que solo es adecuado en el lado del servidor, proporciona una funcionalidad similar a [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
+Este asistente, apropiado solo en el lado del servidor, proporciona una funcionalidad similar a [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
 
 ### Parámetros {#parameters-7}
 
-* **categorías**: cadena
+* **categorías**: String
 
-  (Opcional) Una lista de categorías de biblioteca de cliente separadas por comas. Incluya todas las bibliotecas JavaScript y CSS para las categorías dadas. El nombre de la temática se extrae de la solicitud.
+  (Opcional) Una lista de categorías de biblioteca de cliente separadas por comas. Incluya todas las bibliotecas de JavaScript y CSS para las categorías dadas. El nombre de la temática se extrae de la solicitud.
 
 * **tema**: cadena
 
   (Opcional) Una lista de categorías de biblioteca de cliente separadas por comas. Incluya todas las bibliotecas relacionadas con temas (tanto CSS como JS) para las categorías dadas. El nombre de la temática se extrae de la solicitud.
 
-* **js**: cadena
+* **js**: String
 
-  (Opcional) Una lista de categorías de biblioteca de cliente separadas por comas. Incluye todas las bibliotecas JavaScript para las categorías dadas.
+  (Opcional) Una lista de categorías de biblioteca de cliente separadas por comas. Incluye todas las bibliotecas de JavaScript de las categorías dadas.
 
 * **css**: cadena
 
@@ -410,9 +410,9 @@ NOTA: Este asistente no es un validador y no debe utilizarse para escribir atrib
 
 ## Xss-jsString {#xss-jsstring}
 
-Un asistente que codifica una cadena de origen para escribir en el contenido de la cadena JavaScript para ayudar a protegerse contra XSS.
+Un asistente que codifica una cadena de origen para escribir en contenido de cadena de JavaScript para ayudar a protegerse contra XSS.
 
-NOTA: Este asistente no es un validador y no debe utilizarse para escribir en JavaScript arbitrario.
+NOTA: Este asistente no es un validador y no debe usarse para escribir en JavaScript arbitrario.
 
 ### Parámetros {#parameters-11}
 
@@ -446,13 +446,13 @@ NOTA: Este asistente puede devolver una cadena vacía.
 
 ## Información general básica de Handlebars.js {#handlebars-js-basic-overview}
 
-* Una llamada de ayuda de Handlebars es un identificador simple (la variable *name* del asistente), seguido de cero o más parámetros separados por espacios.
+* Una llamada de ayuda de Handlebars es un identificador simple (el *nombre* del asistente), seguido de cero o más parámetros separados por espacios.
 * Los parámetros pueden ser un objeto simple String, number, boolean o JSON y una secuencia opcional de pares clave-valor (argumentos hash) como últimos parámetros.
 * Las claves de los argumentos hash deben ser identificadores simples.
 * Los valores de los argumentos hash son expresiones Handlebars: identificadores simples, rutas o cadenas.
 * El contexto actual, `this`, siempre está disponible para los ayudantes de Handlebars.
 * El contexto puede ser una cadena, un número, un booleano o un objeto de datos JSON.
-* Es posible pasar un objeto anidado en el contexto actual como contexto, como `this.url` o `this.id` (consulte los siguientes ejemplos de ayudantes simples y de bloque).
+* Es posible pasar un objeto anidado en el contexto actual como contexto, como `this.url` o `this.id` (vea los siguientes ejemplos de ayudantes simples y de bloque).
 
 * Los ayudantes de bloque son funciones a las que se puede llamar desde cualquier lugar de la plantilla. Pueden invocar un bloque de la plantilla cero o más veces con un contexto diferente cada vez. Contienen un contexto entre `{{#*name*}}` y `{{/*name*}}`.
 
@@ -488,7 +488,7 @@ template(context);
 Se renderizaría:
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>¡Publica!&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Post!&lt;/a>&lt;/li>
 &lt;/ul>
 
 ### Un ejemplo de un asistente de bloque de la documentación de Handlebars.js: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
@@ -523,7 +523,7 @@ Los asistentes personalizados deben implementarse en el lado del servidor y del 
 
 ### Ayudantes personalizados del lado del servidor {#server-side-custom-helpers}
 
-Para implementar y registrar un asistente SCF personalizado en el lado del servidor, simplemente implemente la interfaz Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), conviértalo en un [Servicio OSGi](../../help/sites-developing/the-basics.md#osgi) e instálelo como parte de un paquete OSGi.
+Para implementar y registrar un asistente SCF personalizado en el lado del servidor, simplemente implemente la interfaz Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), conviértala en un [servicio OSGi](../../help/sites-developing/the-basics.md#osgi) e instálelo como parte de un paquete OSGi.
 
 Por ejemplo:
 
@@ -592,12 +592,12 @@ function(Handlebars, SCF, $CQ) {
 Los ayudantes personalizados del lado del cliente deben agregarse a una biblioteca de cliente personalizada.
 La clientlib debe:
 
-* Incluir una dependencia en `cq.social.scf`.
+* Incluya una dependencia en `cq.social.scf`.
 * Cargar después de cargar Handlebars.
-* Be [incluido](clientlibs.md).
+* Ser [incluido](clientlibs.md).
 
-Nota: Los ayudantes de SCF se definen en `/etc/clientlibs/social/commons/scf/helpers.js`.
+Nota: los ayudantes de SCF se definen en `/etc/clientlibs/social/commons/scf/helpers.js`.
 
-| **[⇐ aspectos básicos de funciones](essentials.md)** | **[⇒ de personalización del lado del servidor](server-customize.md)** |
+| **[⇐ elementos esenciales de la característica](essentials.md)** | **[⇒ de personalización del lado del servidor](server-customize.md)** |
 |---|---|
-|   | **[⇒ de personalización de cliente](client-customize.md)** |
+|   | **[⇒ de personalización del lado del cliente](client-customize.md)** |

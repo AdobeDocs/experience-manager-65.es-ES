@@ -32,11 +32,11 @@ Cree una marca con la que se asocien sus ofertas. Abra una marca en la consola d
 
 Cuando crea una marca mediante la consola Ofertas, también aparece en la [Consola Actividades](/help/sites-authoring/activitylib.md) donde puede añadir y administrar actividades para la marca.
 
-1. En la consola de navegación, haga clic en **Personalización** > **Ofertas**.
+1. En la consola de navegación, haga clic en **Personalization** > **Ofertas**.
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Clic **Crear** y luego **Crear** **Marca**.
+1. Haz clic en **Crear** y luego en **Crear** **Marca**.
 1. Seleccione la plantilla de marca y haga clic en **Siguiente**.
 1. Escriba un título para la marca tal como desea que aparezca en las consolas Ofertas y Actividades. De forma opcional, escriba o seleccione una o varias etiquetas para asociarlas a la marca.
 1. Haga clic en **Crear**.
@@ -46,9 +46,9 @@ Cuando crea una marca mediante la consola Ofertas, también aparece en la [Conso
 Añada una carpeta a la biblioteca de ofertas de una marca para organizar y almacenar las ofertas. Puede crear una carpeta debajo de la marca o de otras carpetas.
 
 1. En la consola Ofertas, abra la ubicación en la que desea crear la carpeta. Por ejemplo, abra la marca para crear una carpeta de nivel superior o abra otra carpeta de la biblioteca.
-1. Clic **Crear** > **Crear carpeta u oferta**.
+1. Haga clic en **Crear** > **Crear carpeta u oferta**.
 
-   ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
+   ![captura de pantalla_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
 1. Seleccione **Carpeta** y haga clic en **Siguiente**.
 1. Escriba un título para la carpeta tal y como desea que aparezca en la biblioteca de ofertas y escriba o seleccione las etiquetas.
@@ -64,11 +64,11 @@ Añada una oferta a la biblioteca de ofertas de una marca para que se pueda aña
 Después de crear la oferta, puede abrirla para crear el contenido.
 
 1. En la consola Ofertas, abra la ubicación donde desea crear la oferta. Por ejemplo, abra la marca para crear una oferta de nivel superior o abra una carpeta en la biblioteca.
-1. Clic **Crear** > **Crear carpeta u oferta**.
+1. Haga clic en **Crear** > **Crear carpeta u oferta**.
 
    ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Seleccione el **Página de oferta** y haga clic en **Siguiente**.
+1. Seleccione la plantilla **Página de ofertas** y haga clic en **Siguiente**.
 1. Escriba un título para la oferta y, opcionalmente, seleccione o escriba una o más etiquetas para asociarlas a la oferta. A continuación, haga clic en **Crear**.
 1. En el cuadro de diálogo de confirmación, para abrir la oferta y editarla, haga clic en **Abrir página**.
 
@@ -78,7 +78,7 @@ Abra una oferta y edite el contenido tal como desea que aparezca en las experien
 
 Puede abrir una oferta desde una carpeta de una biblioteca de ofertas o desde los resultados de búsqueda. También puede abrir una oferta desde una experiencia que utilice la oferta.
 
-1. En la consola Ofertas, haga clic en el icono situado junto a la oferta y seleccione **Editar**.
+1. En la consola Ofertas, haga clic en el icono situado junto a la oferta y, a continuación, haga clic en **Editar**.
 1. Añada los componentes a la oferta y edite el contenido como de costumbre.
 
 ## Eliminación de una oferta {#deleting-an-offer}
@@ -91,17 +91,17 @@ Puede eliminar una oferta mientras ve el contenido de cualquiera de las carpetas
 
    Seleccione la oferta y haga clic en **Eliminar**.
 
-1. Haga clic en el cuadro de diálogo que aparece **Eliminar** para confirmar la eliminación.
+1. En el cuadro de diálogo que aparece, haga clic en **Eliminar** para confirmar la eliminación.
 1. Si la oferta se utiliza en una o más experiencias, aparece un cuadro de diálogo para indicar que se hace referencia a la oferta:
 
-   * Para eliminar la oferta y eliminarla de las experiencias, haga clic en **Forzar eliminación**.
+   * Para eliminar la oferta y quitarla de las experiencias, haga clic en **Forzar eliminación**.
    * Para conservar la oferta, haga clic en **Cancelar**.
 
 ## Búsqueda de ofertas {#searching-for-offers}
 
 Busque ofertas de cualquier marca utilizando palabras clave para hacer coincidir el título.
 
-![screen-shot_2019-03-05at124731](assets/screen-shot_2019-03-05at124731.png)
+![captura de pantalla_2019-03-05at124731](assets/screen-shot_2019-03-05at124731.png)
 
 Los criterios de búsqueda actuales aparecen junto a los resultados. También puede ordenar los recursos en orden ascendente o descendente. Puede realizar una búsqueda desde todas las carpetas de cualquier biblioteca de ofertas. Los resultados de la búsqueda son los mismos independientemente de la carpeta actual.
 

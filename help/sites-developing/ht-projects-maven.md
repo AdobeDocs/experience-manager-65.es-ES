@@ -20,8 +20,8 @@ AEM AEM.5 se adhiere a las prácticas recomendadas más recientes para la admini
 >
 >Para obtener más información, consulte:
 >
->* El [AEM Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) AEM artículo en la documentación as a Cloud Service AEM de la sobre cómo estructurar proyectos modernos.
->* El [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) AEM documentación sobre cómo iniciar un nuevo proyecto de con el tipo de archivo.
->* El [Complemento Maven del paquete de contenido de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) AEM artículo de la documentación as a Cloud Service AEM de la sobre cómo implementar aplicaciones de la aplicación.
+>* AEM El artículo de [Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) de la documentación de AEM as a Cloud Service AEM sobre cómo estructurar proyectos de proyectos de proyectos de proyectos modernos.
+>* AEM AEM La documentación de [Proyecto de Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) para obtener información sobre cómo iniciar un nuevo proyecto de proyecto de código abierto usando el arquetipo.
+>* El artículo [Complemento Maven del paquete de contenido de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) de la documentación de AEM as a Cloud Service AEM sobre cómo implementar aplicaciones de.
 >
 >AEM Los tres documentos se aplican a la versión 6.5 de la.

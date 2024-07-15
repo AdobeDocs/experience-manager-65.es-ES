@@ -48,11 +48,11 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->Inicio rápido en Programación con AEM Forms se basan en el sistema operativo del servidor de Forms. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Inicio rápido en Programación con AEM Forms se basan en el sistema operativo del servidor de Forms. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## SOAP Inicio rápido (modo de): Creación de una directiva mediante la API de Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
-El siguiente ejemplo de código Java crea una nueva directiva denominada *Permitir copia*. El nombre del conjunto de directivas al que se agrega la directiva es *Conjunto de directivas globales*. Este conjunto de directivas existe de forma predeterminada. (Consulte [Creación de directivas](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
+El siguiente ejemplo de código Java crea una directiva nueva denominada *Permitir copia*. El conjunto de directivas al que se agrega la directiva se denomina *Conjunto de directivas globales*. Este conjunto de directivas existe de forma predeterminada. (Consulte [Creación de directivas](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
 ```java
  /*
@@ -181,7 +181,7 @@ El siguiente ejemplo de código Java crea una nueva directiva denominada *Permit
 
 ## SOAP Inicio rápido (modo de): Modificación de una directiva mediante la API de Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
-El siguiente ejemplo de código Java modifica una directiva denominada *Permitir copia* estableciendo el período de concesión sin conexión en 40 días. (Consulte [Modificación de directivas](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
+El siguiente ejemplo de código Java modifica una directiva denominada *Permitir copia* al establecer el período de concesión sin conexión en 40 días. (Consulte [Modificar directivas](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
 ```java
  /*
@@ -282,7 +282,7 @@ El siguiente ejemplo de código Java modifica una directiva denominada *Permitir
 
 ## SOAP Inicio rápido (modo de): Eliminación de una directiva mediante la API de Java {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
 
-El siguiente ejemplo de código Java elimina una directiva denominada *Permitir copia*. (Consulte [Eliminación de directivas](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
+El siguiente ejemplo de código Java elimina una directiva denominada *Permitir copia*. (Consulte [Eliminar directivas](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
 
 ```java
  /*
@@ -374,7 +374,7 @@ El siguiente ejemplo de código Java elimina una directiva denominada *Permitir 
 
 ## SOAP Inicio rápido (modo de): Aplicación de una directiva a un documento de PDF mediante la API de Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código Java aplica una directiva denominada *Permitir copia* a un documento de PDF denominado *Loan.pdf*. El nombre del conjunto de directivas al que se agrega la directiva es *Conjunto de directivas globales*. El documento protegido por una directiva se guarda como un archivo de PDF denominado *PolicyProtectedLoanDoc.pdf. *(Consulte [Aplicación de directivas a documentos de PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
+El siguiente ejemplo de código Java aplica una directiva denominada *Permitir copia* a un documento de PDF denominado *Loan.pdf*. El conjunto de directivas al que se agrega la directiva se denomina *Conjunto de directivas globales*. El documento protegido por una directiva se guarda como un archivo de PDF denominado *PolicyProtectedLoanDoc.pdf. *(Consulte [Aplicar directivas a documentos de PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
 ```java
  /*
@@ -480,7 +480,7 @@ El siguiente ejemplo de código Java aplica una directiva denominada *Permitir c
 
 ## SOAP Inicio rápido (modo de): Eliminación de una directiva de un documento de PDF mediante la API de Java {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
 
-En el ejemplo de código siguiente se quita una directiva de un documento de PDF denominado *PolicyProtectedLoanDoc.pdf*. El documento de PDF no protegido se guarda como *unProtectedLoan.pdf*. (Consulte [Quitar directivas de documentos de PDF](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).)
+En el ejemplo de código siguiente se quita una directiva de un documento de PDF denominado *PolicyProtectedLoanDoc.pdf*. El documento de PDF no protegido se guardará como *unProtectedLoan.pdf*. (Consulte [Quitar directivas de los documentos del PDF](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).)
 
 ```java
  /*
@@ -587,7 +587,7 @@ En el ejemplo de código siguiente se quita una directiva de un documento de PDF
 
 ## SOAP Inicio rápido (modo de): Revocar un documento mediante la API de Java {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
 
-El siguiente ejemplo de código Java revoca un documento protegido por una directiva denominado *PolicyProtectedLoanDoc.pdf*. Hay un documento de PDF revisado en la siguiente ubicación URL `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Consulte [Revocar acceso a documentos](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
+El siguiente ejemplo de código Java revoca un documento protegido por una directiva denominado *PolicyProtectedLoanDoc.pdf*. Se encuentra un documento de PDF revisado en la siguiente ubicación de URL `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Consulte [Revocar acceso a documentos](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
 
 ```java
  /*
@@ -819,7 +819,7 @@ El siguiente ejemplo de código Java inspecciona un documento de PDF protegido p
 
 ## SOAP Inicio rápido (modo de): Restablecimiento del acceso a un documento revocado mediante la API de Java {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
 
-El siguiente ejemplo de código Java restablece el acceso a un documento de PDF revocado denominado *PolicyProtectedLoanDoc.pdf*. (Consulte [Restablecer el acceso a los documentos revocados](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents).)
+El siguiente ejemplo de código Java restablece el acceso a un documento de PDF revocado denominado *PolicyProtectedLoanDoc.pdf*. (Consulte [Restablecer el acceso a documentos revocados](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents).)
 
 ```java
  /*
@@ -925,7 +925,7 @@ El siguiente ejemplo de código Java restablece el acceso a un documento de PDF 
 
 ## SOAP Inicio rápido (modo de): Creación de una marca de agua de PDF mediante la API de Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
 
-En el siguiente ejemplo de código Java se crea una nueva marca de agua de PDF denominada Sample PDF Watermark. Esta marca de agua contiene un solo elemento (Consulte [Creación de marcas de agua](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
+En el siguiente ejemplo de código Java se crea una nueva marca de agua de PDF denominada Sample PDF Watermark. Esta marca de agua contiene un solo elemento (consulte [Creación de marcas de agua](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
 ```java
 /*
@@ -1058,7 +1058,7 @@ public class PDFWatermarksSOAPMode {
 
 ## SOAP Inicio rápido (modo de): Creación de una marca de agua de texto con la API de Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
 
-El siguiente ejemplo de código Java crea una nueva marca de agua de texto denominada *Marca de agua de texto de muestra*. Esta marca de agua contiene un solo elemento.
+En el siguiente ejemplo de código Java se crea una nueva marca de agua de texto denominada *Sample Text Watermark*. Esta marca de agua contiene un solo elemento.
 
 ```java
 /*
@@ -1319,7 +1319,7 @@ public class ModifyWatermarks {
 
 ## SOAP Inicio rápido (modo de): Modificación de una marca de agua mediante la API de Java {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
 
-El siguiente ejemplo de código Java modifica una marca de agua denominada *Confidencial* modificando el valor de la variable `opacity` a 80.
+El siguiente ejemplo de código Java modifica una marca de agua denominada *Confidential* al modificar el valor del atributo `opacity` a 80.
 
 ```java
  /*
@@ -1530,7 +1530,7 @@ El siguiente ejemplo de código Java busca el evento de creación de directiva.
 
 ## SOAP Inicio rápido (): Aplicar una directiva a un documento de Word mediante la API de Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-El siguiente ejemplo de código Java aplica una directiva denominada *Permitir copia* a un documento de Word denominado *Loan.doc*. El nombre del conjunto de directivas al que se agrega la directiva es *Conjunto de directivas globales*. El documento protegido por una directiva se guarda como un archivo DOC denominado *PolicyProtectedLoanDoc.doc. *(Consulte [Aplicación de directivas a documentos de PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
+El siguiente ejemplo de código Java aplica una directiva denominada *Permitir copia* a un documento de Word denominado *Loan.doc*. El conjunto de directivas al que se agrega la directiva se denomina *Conjunto de directivas globales*. El documento protegido por una directiva se guarda como un archivo DOC denominado *PolicyProtectedLoanDoc.doc. *(Consulte [Aplicar directivas a documentos de PDF](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
 ```java
  /*
@@ -1645,7 +1645,7 @@ El siguiente ejemplo de código Java aplica una directiva denominada *Permitir c
 
 ## SOAP Inicio rápido (modo de): Quitar una directiva de un documento de Word mediante la API de Java {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
 
-En el ejemplo de código siguiente se quita una directiva de un documento de Word denominado *PolicyProtectedLoanDoc.doc*. El documento de Word no protegido se guarda como *unProtectedLoan.doc*. (Consulte [Quitar directivas de documentos de Word](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
+En el ejemplo de código siguiente se quita una directiva de un documento de Word denominado *PolicyProtectedLoanDoc.doc*. El documento de Word no protegido se guardará como *unProtectedLoan.doc*. (Consulte [Quitar directivas de documentos de Word](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
 
 ```java
  /*

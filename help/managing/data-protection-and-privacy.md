@@ -91,23 +91,23 @@ AEM Consulte las secciones siguientes para obtener documentación reglamentaria 
 
 ## AEM Fundamento de {#aem-foundation}
 
-Consulte [AEM Gestión de solicitudes de protección de datos y privacidad para la Fundación de la](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+AEM Ver [Tratamiento de solicitudes de privacidad y protección de datos para la base de datos de la](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ## AEM En La Recopilación De Estadísticas De Uso Agregado {#aem-opting-into-aggregate-usage-statistics-collection}
 
-Consulte [Recopilación de estadísticas de uso agregadas](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+Ver [Recopilación de estadísticas de uso agregadas](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 ## AEM Sites {#aem-sites}
 
-Consulte [AEM Sites: Protección de datos y preparación para la privacidad.](/help/sites-administering/gdpr-compliance-sites.md)
+Consulte [AEM Sites - Preparación para la protección de datos y la privacidad.](/help/sites-administering/gdpr-compliance-sites.md)
 
 ## AEM Commerce {#aem-commerce}
 
-Consulte [AEM Commerce: Protección de datos y preparación para la privacidad](/help/sites-administering/gdpr-compliance-commerce.md).
+AEM Consulte [Commerce - Preparación para la protección de datos y la privacidad](/help/sites-administering/gdpr-compliance-commerce.md).
 
 ## AEM Mobile {#aem-mobile}
 
-Consulte [AEM Mobile: Protección de datos y preparación para la privacidad](/help/mobile/aem-mobile-gdpr-compliance.md).
+Consulte [AEM Mobile - Preparación para la protección de datos y la privacidad](/help/mobile/aem-mobile-gdpr-compliance.md).
 
 ## AEM Integración de con Adobe Target y Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
@@ -121,7 +121,7 @@ Para obtener más información, consulte lo siguiente:
 
 ## Comunidades AEM {#aem-communities}
 
-AEM Communities otorga a los interesados el derecho a su portabilidad de datos, derecho de acceso y derecho al olvido por parte de [API listas para usar.](/help/communities/user-ugc-management-service.md). Estas API permiten la eliminación en lotes y la exportación en lotes del contenido generado por el usuario, así como la desactivación de las cuentas de usuario identificadas mediante sus ID autorizados. Sin embargo, la eliminación permanente de la cuenta de usuario se puede realizar mediante la eliminación del nodo de usuario en el CRXDE Lite, lo que aborda la necesidad de una exclusión sencilla del sistema.
+AEM Communities otorga a los interesados el derecho a su portabilidad de datos, derecho de acceso y derecho al olvido mediante [API predeterminadas](/help/communities/user-ugc-management-service.md). Estas API permiten la eliminación en lotes y la exportación en lotes del contenido generado por el usuario, así como la desactivación de las cuentas de usuario identificadas mediante sus ID autorizados. Sin embargo, la eliminación permanente de la cuenta de usuario se puede realizar mediante la eliminación del nodo de usuario en el CRXDE Lite, lo que aborda la necesidad de una exclusión sencilla del sistema.
 
 Además, AEM Communities ofrece privacidad por diseño gracias a su consola de moderación masiva, que permite a los miembros privilegiados encontrar y eliminar las contribuciones y los detalles de los usuarios. La consola de administración de miembros permite limitar hasta el punto de prohibir a un colaborador. Además, autoriza a los interesados a eliminar las contribuciones creadas por ellos.
 
@@ -133,6 +133,6 @@ AEM Forms incluye componentes y flujos de trabajo que capturan, procesan y almac
 * [Administración de correspondencia](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Integrar con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [Flujos de trabajo centrados en Forms en OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [Flujos de trabajo JEE de Forms](/help/forms/using/forms-workflow-jee-handling-user-data.md) (solo AEM Forms JEE)
-* [Document Security](/help/forms/using/document-security-handling-user-data.md) (solo AEM Forms JEE)
+* [Flujos de trabajo de Forms JEE](/help/forms/using/forms-workflow-jee-handling-user-data.md) (solo AEM Forms JEE)
+* [Seguridad de documentos](/help/forms/using/document-security-handling-user-data.md) (solo AEM Forms JEE)
 * [Administración de usuarios](/help/forms/using/user-management-handling-user-data.md) (solo AEM Forms JEE)

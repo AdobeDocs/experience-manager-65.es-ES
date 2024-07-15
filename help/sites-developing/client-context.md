@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->ContextHub ha reemplazado a Client Context. Consulte la [documentación relacionada](/help/sites-developing/contexthub.md) para obtener más información.
+>ContextHub ha reemplazado a Client Context. Consulte la [documentación relacionada](/help/sites-developing/contexthub.md) para obtener detalles.
 
 Client Context representa una colección ensamblada dinámicamente de datos de usuario. Puede utilizar los datos para determinar el contenido que se mostrará en una página web en una situación determinada (segmentación de contenido). Los datos también están disponibles para el análisis de sitios web y para cualquier JavaScript de la página.
 
@@ -29,7 +29,7 @@ Client Context consta principalmente de los siguientes aspectos:
 
 * El almacén de sesión que contiene los datos de usuario.
 * Interfaz de usuario que muestra los datos del usuario y proporciona herramientas para simular la experiencia del usuario.
-* A [API de JavaScript](/help/sites-developing/ccjsapi.md) para interactuar con almacenes de sesión.
+* Una [API de JavaScript](/help/sites-developing/ccjsapi.md) para interactuar con almacenes de sesión.
 
 Para crear un almacén de sesiones independiente y agregarlo a Client Context, o para crear un almacén de sesiones vinculado a un componente de almacén de contexto. Adobe Experience Manager AEM () instala varios componentes de Context Store que puede utilizar de inmediato. Puede utilizar estos componentes como base para sus componentes.
 
@@ -40,9 +40,9 @@ Para obtener información sobre cómo abrir Client Context, configurar la inform
 Client Context incluye varios almacenes de sesiones que contienen datos de usuario. Los datos de almacenamiento proceden de las siguientes fuentes:
 
 * El explorador web del cliente.
-* El servidor de (consulte [Almacenamiento JSONP](/help/sites-administering/client-context.md#main-pars-variable-8) para almacenar información de fuentes de terceros)
+* El servidor (consulte [Almacén JSONP](/help/sites-administering/client-context.md#main-pars-variable-8) para almacenar información de fuentes de terceros)
 
-El marco de Client Context proporciona un [API de JavaScript](/help/sites-developing/ccjsapi.md) que puede utilizar para interactuar con almacenes de sesión y leer y escribir datos de usuario, así como para escuchar y reaccionar a eventos de almacenamiento. También puede crear almacenes de sesión para los datos de usuario que utilice para la segmentación de contenido u otros fines.
+El módulo de Client Context proporciona una [API de JavaScript](/help/sites-developing/ccjsapi.md) que puede usar para interactuar con almacenes de sesión a fin de leer y escribir datos de usuario, así como para escuchar y reaccionar ante eventos de almacén. También puede crear almacenes de sesión para los datos de usuario que utilice para la segmentación de contenido u otros fines.
 
 Los datos del almacén de sesión permanecen en el cliente. Client Context no vuelve a escribir datos en el servidor. Para enviar datos al servidor, utilice un formulario o desarrolle JavaScript personalizado.
 
@@ -64,7 +64,7 @@ Un almacén de sesiones se puede mantener entre sesiones de explorador o solo pu
 
 >[!NOTE]
 >
->La persistencia del almacenamiento utiliza el almacenamiento del explorador o cookies (las `SessionPersistence` cookie). El almacenamiento del explorador es más común.
+>La persistencia del almacenamiento utiliza el almacenamiento del explorador o cookies (la cookie `SessionPersistence`). El almacenamiento del explorador es más común.
 >
 >Cuando se cierra y se vuelve a abrir el explorador, se puede cargar un almacén de sesiones con los valores de un almacén persistente. Es necesario borrar la caché del explorador para eliminar los valores antiguos.
 
@@ -79,21 +79,21 @@ Los componentes del almacén de contexto pueden incluir los siguientes elementos
 * Cuadros de diálogo de edición para configurar instancias de componente.
 * JavaScript que inicializa el almacén de sesión.
 
-Para obtener una descripción de los componentes de tienda de contexto instalados que puede agregar al almacén de contexto, consulte [Componentes de Client Context disponibles](/help/sites-administering/client-context.md#available-client-context-components).
+Para obtener una descripción de los componentes de Context Store instalados que puede agregar al Context Store, consulte [Componentes de Client Context disponibles](/help/sites-administering/client-context.md#available-client-context-components).
 
 >[!NOTE]
 >
->Los datos de página ya no están en el contexto de cliente como componente predeterminado. Si es necesario, puede agregarlo editando el contexto de cliente y agregando el **Propiedades de almacenamiento genérico** y, a continuación, configure para definir el componente **Almacenar** as `pagedata`.
+>Los datos de página ya no están en el contexto de cliente como componente predeterminado. Si es necesario, puede agregarlo editando el contexto del cliente, agregando el componente **Propiedades de almacenamiento genérico** y configurándolo para definir **Almacén** como `pagedata`.
 
 ### Entrega de contenido segmentado {#targeted-content-delivery}
 
-La información de perfil también se utiliza para el envío [contenido de destino](/help/sites-authoring/content-targeting-touch.md).
+La información de perfil también se usa para entregar [contenido de destino](/help/sites-authoring/content-targeting-touch.md).
 
 ![clientcontext_targetedcontentdelivery](assets/clientcontext_targetedcontentdelivery.png) ![clientcontext_targetedcontentdeliverydetail](assets/clientcontext_targetedcontentdeliverydetail.png)
 
 ## Añadir Client Context A Una Página {#adding-client-context-to-a-page}
 
-Incluya el componente Client Context en la sección del cuerpo de las páginas web para habilitar Client Context. La ruta del nodo del componente Client Context es `/libs/cq/personalization/components/clientcontext`. Para incluir el componente, agregue el siguiente código al archivo JSP del componente de página, ubicado justo debajo de la etiqueta `body` de la página:
+Incluya el componente Client Context en la sección del cuerpo de las páginas web para habilitar Client Context. La ruta del nodo del componente Client Context es `/libs/cq/personalization/components/clientcontext`. Para incluir el componente, agregue el siguiente código al archivo JSP del componente de página, ubicado justo debajo del elemento `body` de su página:
 
 ```java
 <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
@@ -118,29 +118,29 @@ Para ampliar Client Context, cree un almacén de sesiones y, opcionalmente, mues
 
 >[!NOTE]
 >
->Si tiene (o crea) un `JSONP` que puede proporcionar los datos, puede utilizar simplemente el `JSONP` componente de almacén de contexto y asígnelo al servicio JSONP. Esto administra el almacén de sesión.
+>Si tiene (o crea) un servicio `JSONP` que puede proporcionar los datos, simplemente puede utilizar el componente de almacén de contexto `JSONP` y asignarlo al servicio JSONP. Esto administra el almacén de sesión.
 
 ### Creación de un almacén de sesión {#creating-a-session-store}
 
 Cree un almacén de sesión para los datos que debe agregar y recuperar de Client Context. Por lo general, utilice el siguiente procedimiento para crear un almacén de sesiones:
 
-1. Cree una carpeta de biblioteca de cliente que tenga un `categories` valor de propiedad de `personalization.stores.kernel`. Client Context carga automáticamente las bibliotecas de cliente de esta categoría.
+1. Cree una carpeta de biblioteca de cliente que tenga un valor de propiedad `categories` de `personalization.stores.kernel`. Client Context carga automáticamente las bibliotecas de cliente de esta categoría.
 
-1. Configure la carpeta de la biblioteca de cliente para que dependa de `personalization.core.kernel` carpeta de la biblioteca del cliente. El `personalization.core.kernel` La biblioteca de cliente de proporciona la API de JavaScript de Client Context.
+1. Configure la carpeta de biblioteca de cliente para que dependa de la carpeta de biblioteca de cliente `personalization.core.kernel`. La biblioteca de cliente `personalization.core.kernel` proporciona la API de JavaScript de Client Context.
 
-1. Agregue el JavaScript que crea e inicializa el almacén de sesión.
+1. Agregue el JavaScript que crea e inicializa el almacén de sesiones.
 
-Si se incluye JavaScript en la biblioteca de cliente personalization.store.kernel, el almacén se creará cuando se cargue el marco de Client Context.
+Al incluir JavaScript en la biblioteca de cliente personalization.store.kernel, se crea el almacén cuando se carga el marco de Client Context.
 
 >[!NOTE]
 >
->Si está creando un almacén de sesiones como parte de un componente de almacén de contexto, puede colocar alternativamente JavaScript en el archivo init.js.jsp del componente. En este caso, el almacén de sesiones se crea únicamente si el componente se agrega a Client Context.
+>Si está creando un almacén de sesiones como parte de un componente de almacén de contexto, puede colocar alternativamente la JavaScript en el archivo init.js.jsp del componente. En este caso, el almacén de sesiones se crea únicamente si el componente se agrega a Client Context.
 
 #### Tipos de almacenes de sesión {#types-of-session-stores}
 
 Los almacenes de sesión se crean y quedan disponibles durante una sesión del explorador, o se conservan en el almacenamiento del explorador o en las cookies. La API de JavaScript de Client Context define varias clases que representan ambos tipos de almacenes de datos:
 
-* ` [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)`: estos objetos residen únicamente en el DOM de la página. Los datos se crean y persisten durante la duración de la página.
+* ` [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)`: estos objetos solo residen en el DOM de la página. Los datos se crean y persisten durante la duración de la página.
 * ` [CQ_Analytics.PerstistedSessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore)`: estos objetos residen en el DOM de la página y se conservan en el almacenamiento del explorador o en las cookies. Los datos están disponibles en todas las páginas y en todas las sesiones de usuario.
 
 La API también proporciona extensiones de estas clases especializadas en almacenar datos JSON o datos JSONP:
@@ -151,7 +151,7 @@ La API también proporciona extensiones de estas clases especializadas en almace
 
 #### Creación del objeto de almacén de sesiones {#creating-the-session-store-object}
 
-El JavaScript de la carpeta de biblioteca del cliente crea e inicializa el almacén de sesión. El almacén de sesión debe registrarse mediante el Administrador de tienda de contexto. En el siguiente ejemplo se crea y registra un [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) objeto.
+La JavaScript de la carpeta de biblioteca del cliente crea e inicializa el almacén de sesiones. El almacén de sesión debe registrarse mediante el Administrador de tienda de contexto. En el ejemplo siguiente se crea y registra un objeto [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore).
 
 ```
 //Create the session store
@@ -167,7 +167,7 @@ if (CQ_Analytics.ClientContextMgr){
 }
 ```
 
-Para almacenar datos JSON, el siguiente ejemplo crea y registra un [CQ_Analytics.JSONStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) objeto.
+Para almacenar datos JSON, en el siguiente ejemplo se crea y registra un objeto [CQ_Analytics.JSONStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore).
 
 ```
 if (!CQ_Analytics.myJSONStore) {
@@ -188,11 +188,11 @@ Cree un componente de almacén de contexto para procesar los datos del almacén 
 
 AEM proporciona los componentes genericstore y genericstoreproperties del almacén de contexto que puede ampliar. La estructura de los datos de la tienda determina el componente que se amplía:
 
-* Pares propiedad-valor: ampliar el `GenericStoreProperties` componente. Este componente procesa automáticamente los almacenes de pares propiedad-valor. Se proporcionan varios puntos de interacción:
+* Pares propiedad-valor: ampliar el componente `GenericStoreProperties`. Este componente procesa automáticamente los almacenes de pares propiedad-valor. Se proporcionan varios puntos de interacción:
 
    * `prolog.jsp` y `epilog.jsp`: interacción de componentes que permite agregar lógica del lado del servidor antes o después del procesamiento del componente.
 
-* Datos complejos: ampliar el `GenericStore` componente. El almacén de sesiones necesita un método de &quot;procesador&quot; al que se llame cada vez que se deba representar el componente. La función de procesamiento se llama con dos parámetros:
+* Datos complejos: ampliar el componente `GenericStore`. El almacén de sesiones necesita un método de &quot;procesador&quot; al que se llame cada vez que se deba representar el componente. La función de procesamiento se llama con dos parámetros:
 
    * `@param {String} store`
 El almacén que se procesará
@@ -202,27 +202,27 @@ El ID del div en el que se debe procesar el almacén.
 
 >[!NOTE]
 >
->Todos los componentes de Client Context son extensiones de los componentes Almacén genérico o Propiedades de almacenamiento genérico. Hay varios ejemplos instalados en la variable `/libs/cq/personalization/components/contextstores` carpeta.
+>Todos los componentes de Client Context son extensiones de los componentes Almacén genérico o Propiedades de almacenamiento genérico. Hay varios ejemplos instalados en la carpeta `/libs/cq/personalization/components/contextstores`.
 
 #### Configuración del aspecto visual en el Sidekick {#configuring-the-appearance-in-sidekick}
 
-Al editar Client Context, los componentes del almacén de contexto aparecen en Sidekick. Como con todos los componentes, la variable `componentGroup` y `jcr:title` las propiedades del componente Client Context determinan el grupo y el nombre del componente.
+Al editar Client Context, los componentes del almacén de contexto aparecen en Sidekick. Al igual que con todos los componentes, las propiedades `componentGroup` y `jcr:title` del componente Client Context determinan el grupo y el nombre del componente.
 
-Todos los componentes que tienen un `componentGroup` valor de propiedad de `Client Context` aparecen en el Sidekick de forma predeterminada. Si utiliza un valor diferente para `componentGroup` , debe añadir manualmente el componente al Sidekick mediante el modo Diseño.
+Todos los componentes que tienen un valor de propiedad `componentGroup` de `Client Context` aparecen en el Sidekick de forma predeterminada. Si utiliza un valor diferente para la propiedad `componentGroup`, debe agregar manualmente el componente al Sidekick mediante el modo de diseño.
 
 #### Instancias de componente de tienda de contexto {#context-store-component-instances}
 
-Cuando se agrega un componente de almacén de contexto a Client Context, a continuación se crea un nodo que representa la instancia del componente `/etc/clientcontext/default/content/jcr:content/stores`. Este nodo contiene los valores de propiedad que se configuran mediante el cuadro de diálogo de edición del componente.
+Cuando agrega un componente de almacén de contexto a Client Context, se crea un nodo que representa la instancia del componente debajo de `/etc/clientcontext/default/content/jcr:content/stores`. Este nodo contiene los valores de propiedad que se configuran mediante el cuadro de diálogo de edición del componente.
 
 Cuando se inicializa Client Context, se procesan estos nodos.
 
 #### Inicialización del almacén de sesión asociado {#initializing-the-associated-session-store}
 
-Agregue un archivo init.js.jsp al componente para generar código JavaScript que inicialice el almacén de sesión que utiliza el componente de almacén de contexto. Por ejemplo, utilice el script de inicialización para recuperar las propiedades de configuración del componente y utilizarlas para rellenar el almacén de sesiones.
+Agregue un archivo init.js.jsp al componente para generar código JavaScript que inicialice el almacén de sesiones que utiliza el componente de almacén de contexto. Por ejemplo, utilice el script de inicialización para recuperar las propiedades de configuración del componente y utilizarlas para rellenar el almacén de sesiones.
 
-El JavaScript que se genera se agrega a la página cuando Client Context se inicializa al cargar la página en las instancias de autor y publicación. Este JSP se ejecuta antes de que se cargue y procese la instancia del componente de almacén de contexto.
+La JavaScript que se genera se agrega a la página cuando Client Context se inicializa al cargar la página tanto en la instancia de autor como en la de publicación. Este JSP se ejecuta antes de que se cargue y procese la instancia del componente de almacén de contexto.
 
-El código debe establecer el tipo MIME del archivo en `text/javascript`, o no se ejecuta.
+El código debe establecer el tipo MIME del archivo en `text/javascript`; de lo contrario, no se ejecutará.
 
 >[!CAUTION]
 >
@@ -231,7 +231,7 @@ El código debe establecer el tipo MIME del archivo en `text/javascript`, o no s
 El siguiente procedimiento crea el archivo de secuencias de comandos init.js.jsp y agrega el código que establece el tipo mime correcto. El código que realiza la inicialización del almacén sería el siguiente.
 
 1. Haga clic con el botón derecho en el nodo de componente de almacén de contexto y haga clic en Crear > Crear archivo.
-1. En el campo Nombre, escriba `init.js.jsp` y, a continuación, haga clic en Aceptar.
+1. En el campo Nombre, escriba `init.js.jsp` y haga clic en Aceptar.
 1. En la parte superior de la página, agregue el siguiente código y haga clic en Guardar todo.
 
    ```java
@@ -244,7 +244,7 @@ Muestra los datos del almacén de sesión en Client Context mediante un formato 
 
 #### Visualización de datos de propiedad {#displaying-property-data}
 
-Las etiquetas de personalización proporcionan lo siguiente `personalization:storePropertyTag` que muestra el valor de una propiedad de un almacén de sesiones. Para utilizar la etiqueta, incluya la siguiente línea de código en su archivo JSP:
+Las etiquetas de personalización proporcionan la etiqueta `personalization:storePropertyTag` que muestra el valor de una propiedad de un almacén de sesiones. Para utilizar la etiqueta, incluya la siguiente línea de código en su archivo JSP:
 
 ```xml
 <%@taglib prefix="personalization" uri="https://www.day.com/taglibs/cq/personalization/1.0" %>
@@ -256,7 +256,7 @@ La etiqueta tiene el siguiente formato:
 <personalization:storePropertyTag propertyName="property_name" store="session_store_name"/>
 ```
 
-El `propertyName` attribute es el nombre de la propiedad store que se va a mostrar. El `store` attribute es el nombre del almacén registrado. La siguiente etiqueta de ejemplo muestra el valor de `authorizableId` propiedad del `profile` tienda:
+El atributo `propertyName` es el nombre de la propiedad de almacén que se va a mostrar. El atributo `store` es el nombre del almacén registrado. La siguiente etiqueta de ejemplo muestra el valor de la propiedad `authorizableId` del almacén `profile`:
 
 ```xml
 <personalization:storePropertyTag propertyName="authorizableId" store="profile"/>
@@ -291,7 +291,7 @@ La carpeta de la biblioteca de cliente personalization.ui (/etc/clientlibs/found
 </div>
 ```
 
-El `/libs/cq/personalization/components/contextstores/profiledata` el componente de almacén de contexto utiliza esta estructura para mostrar los datos del almacén de sesiones de perfil. El `cq-cc-thumbnail` La clase coloca la imagen en miniatura. El `cq-cc-store-property-level*x*` Las clases dan formato a los datos alfanuméricos:
+El componente de almacén de contexto `/libs/cq/personalization/components/contextstores/profiledata` utiliza esta estructura para mostrar los datos del almacén de sesión de perfil. La clase `cq-cc-thumbnail` coloca la imagen en miniatura. Las clases `cq-cc-store-property-level*x*` dan formato a los datos alfanuméricos:
 
 * level0, level1 y level2 se distribuyen verticalmente y utilizan una fuente blanca.
 * level3 y los niveles adicionales se distribuyen horizontalmente y utilizan una fuente blanca con un fondo más oscuro.
@@ -307,7 +307,7 @@ Para procesar datos de almacén mediante un componente genéricos, debe hacer lo
 
 #### Identificación del almacén de sesiones de genericstore {#identifying-the-genericstore-session-store}
 
-Las etiquetas de personalización proporcionan lo siguiente `personalization:storePropertyTag` que muestra el valor de una propiedad de un almacén de sesiones. Para utilizar la etiqueta, incluya la siguiente línea de código en su archivo JSP:
+Las etiquetas de personalización proporcionan la etiqueta `personalization:storePropertyTag` que muestra el valor de una propiedad de un almacén de sesiones. Para utilizar la etiqueta, incluya la siguiente línea de código en su archivo JSP:
 
 ```xml
 <%@taglib prefix="personalization" uri="https://www.day.com/taglibs/cq/personalization/1.0" %>
@@ -323,18 +323,20 @@ La etiqueta tiene el siguiente formato:
 
 El almacén de sesiones necesita un método de &quot;procesador&quot; al que se llame cada vez que se deba representar el componente. La función de procesamiento se llama con dos parámetros:
 
-* @param {String} store El almacén que se procesará
-* @param {String} divId Id Id del div en el que se debe representar el almacén.
+* @param almacén {String}
+El almacén que se procesará
+* @param {String} divId
+El ID del div en el que se debe procesar el almacén.
 
 ## Interactuar con almacenes de sesiones {#interacting-with-session-stores}
 
-Utilice JavaScript para interactuar con almacenes de sesión.
+Utilice JavaScript para interactuar con almacenes de sesiones.
 
 ### Acceso a almacenes de sesión {#accessing-session-stores}
 
-Obtenga un objeto de almacén de sesión para leer o escribir datos en el almacén. [CQ_Analytics.ClientContextMgr](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextmgr) proporciona acceso a las tiendas en función del nombre de la tienda. Una vez obtenido, utilice los métodos del [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) o [CQ_Analytics.PersistedSessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore) para interactuar con los datos de la tienda.
+Obtenga un objeto de almacén de sesión para leer o escribir datos en el almacén. [CQ_Analytics.ClientContextMgr](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextmgr) proporciona acceso a las tiendas en función del nombre de la tienda. Una vez obtenido, use los métodos de [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) o [CQ_Analytics.PersistedSessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore) para interactuar con los datos del almacén.
 
-El siguiente ejemplo obtiene la variable `profile` y, a continuación, recupera el `formattedName` de la tienda.
+El ejemplo siguiente obtiene el almacén `profile` y, a continuación, recupera la propiedad `formattedName` del almacén.
 
 ```
 function getName(){
@@ -351,9 +353,9 @@ function getName(){
 
 La sesión almacena eventos de activación, por lo que es posible añadir oyentes y eventos de déclencheur basados en estos eventos.
 
-Los almacenes de sesión se basan en la variable `Observable` patrón. Se extienden [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) que proporciona el ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` método.
+Los almacenes de sesión se basan en el patrón `Observable`. Extienden [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) que proporciona el método ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)`.
 
-En el siguiente ejemplo se agrega un agente de escucha al `update` evento de la `profile` almacén de sesión.
+En el siguiente ejemplo se agrega un agente de escucha al evento `update` del almacén de sesión `profile`.
 
 ```
 var profileStore = ClientContextMgr.getRegisteredStore("profile");
@@ -374,18 +376,18 @@ if( profileStore ) {
 Los almacenes de sesión no están disponibles hasta que se cargan e inicializan con datos. Los siguientes factores pueden afectar al tiempo de disponibilidad del almacén de sesiones:
 
 * Carga de página
-* Carga de JavaScript
+* JavaScript cargando
 * Tiempo de ejecución de JavaScript
 * Tiempos de respuesta para solicitudes XHR
 * Cambios dinámicos en el almacén de sesión
 
-Utilice el [CQ_Analytics.ClientContextUtils](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextutils) del objeto [onStoreRegistered](/help/sites-developing/ccjsapi.md#onstoreregistered-storename-callback) y [onStoreInitialized](/help/sites-developing/ccjsapi.md#onstoreinitialized-storename-callback-delay) métodos para acceder a los almacenes de sesión solo cuando están disponibles. Estos métodos permiten registrar detectores de eventos que reaccionan a los eventos de registro e inicialización de sesión.
+Use los métodos [onStoreRegistered](/help/sites-developing/ccjsapi.md#onstoreregistered-storename-callback) y [onStoreInitialized](/help/sites-developing/ccjsapi.md#onstoreinitialized-storename-callback-delay) del objeto [CQ_Analytics.ClientContextUtils](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextutils) para obtener acceso a los almacenes de sesión únicamente cuando estén disponibles. Estos métodos permiten registrar detectores de eventos que reaccionan a los eventos de registro e inicialización de sesión.
 
 >[!CAUTION]
 >
 >Si depende de otra tienda, debe tener en cuenta el caso de que la tienda nunca se haya registrado.
 
-El ejemplo siguiente utiliza el `onStoreRegistered` evento de la `profile` almacén de sesión. Cuando se registra el almacén, se agrega un agente de escucha al `update` del almacén de sesiones. Cuando se actualiza el almacén, el contenido del `<div class="welcome">` en la página se actualiza con el nombre del elemento `profile` tienda.
+El ejemplo siguiente utiliza el evento `onStoreRegistered` del almacén de sesión `profile`. Cuando se registra el almacén, se agrega un agente de escucha al evento `update` del almacén de sesión. Cuando se actualiza el almacén, el contenido del elemento `<div class="welcome">` de la página se actualiza con el nombre del almacén `profile`.
 
 ```
 //listen for the store registration
@@ -415,9 +417,9 @@ function getName(){
 
 ### Exclusión de una propiedad de la cookie sessionpersistence {#excluding-a-property-from-the-sessionpersistence-cookie}
 
-Para evitar una propiedad de un `PersistedSessionStore` de persistir (es decir, excluirlo del `sessionpersistence` cookie), agregue la propiedad a la lista de propiedades no persistentes del almacén de sesiones persistentes.
+Para evitar que una propiedad de `PersistedSessionStore` se mantenga (es decir, que se excluya de la cookie `sessionpersistence`), agregue la propiedad a la lista de propiedades no persistentes del almacén de sesiones persistentes.
 
-Consulte ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
+Ver ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
 
 ```
 CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) {
@@ -432,14 +434,14 @@ CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) 
 
 ### Condiciones {#conditions}
 
-La página actual debe tener una página móvil correspondiente; esto se determina únicamente si la página tiene un LiveCopy configurado con una configuración de despliegue móvil ( `rolloutconfig.path.toLowerCase` contains `mobile`).
+La página actual debe tener una página móvil correspondiente; esto se determina únicamente si la página tiene un LiveCopy configurado con una configuración de despliegue móvil ( `rolloutconfig.path.toLowerCase` contiene `mobile`).
 
 #### Configuración {#configuration}
 
 Al cambiar de la página de escritorio a su equivalente móvil:
 
 * Se carga el DOM de la página móvil.
-* El principal `div` (obligatorio) que contiene el contenido, se extrae y se inserta en la página de escritorio actual.
+* El elemento principal `div` (obligatorio) que contiene el contenido, se extrae y se inserta en la página de escritorio actual.
 
 * Las clases CSS y body que se cargan deben configurarse manualmente.
 
@@ -480,7 +482,7 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 En este ejemplo, se crea un componente de almacén de contexto que recupera datos de un servicio externo y los almacena en el almacén de sesiones:
 
 * Extiende el componente genericstoreproperties.
-* Inicializa un almacén con un objeto JavaScript CQ_Analytics.JSONPStore.
+* Inicializa un almacén con un objeto CQ_Analytics.JSONPStore de JavaScript.
 * Llama a un servicio JSONP para recuperar datos y agregarlos al almacén.
 * Procesa los datos en Client Context.
 
@@ -489,9 +491,9 @@ En este ejemplo, se crea un componente de almacén de contexto que recupera dato
 Cree una aplicación CQ y agregue el componente geoloc.
 
 1. Abra el CRXDE Lite en el explorador web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
-1. Haga clic con el botón derecho en `/apps` y haga clic en Crear > Crear carpeta. Especifique un nombre para `myapp` y, a continuación, haga clic en Aceptar.
-1. Del mismo modo, a continuación `myapp`, cree una carpeta llamada `contextstores`. &quot;
-1. Haga clic con el botón derecho en `/apps/myapp/contextstores` y haga clic en Crear > Crear componente. Especifique los siguientes valores de propiedad y haga clic en Siguiente:
+1. Haga clic con el botón derecho en la carpeta `/apps` y haga clic en Crear > Crear carpeta. Especifique un nombre de `myapp` y haga clic en Aceptar.
+1. Del mismo modo, debajo de `myapp`, cree una carpeta llamada `contextstores`. &quot;
+1. Haga clic con el botón derecho en la carpeta `/apps/myapp/contextstores` y haga clic en Crear > Crear componente. Especifique los siguientes valores de propiedad y haga clic en Siguiente:
 
    * Etiqueta: geoloc
    * Título: Tienda de ubicación
@@ -505,15 +507,15 @@ Cree una aplicación CQ y agregue el componente geoloc.
 
 El componente de almacén de contexto requiere un cuadro de diálogo de edición. El cuadro de diálogo de edición geográfica contiene un mensaje estático que indica que no hay propiedades que configurar.
 
-1. Haga clic con el botón derecho en `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` y haga clic en Copiar.
-1. Haga clic con el botón derecho en `/apps/myapp/contextstores/geoloc` y haga clic en pegar.
+1. Haga clic con el botón derecho en el nodo `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` y haga clic en Copiar.
+1. Haga clic con el botón derecho en el nodo `/apps/myapp/contextstores/geoloc` y haga clic en pegar.
 1. Elimine todos los nodos secundarios debajo del nodo /apps/myapp/contextstore/geoloc/dialog/items/items/tab1/items:
 
    * almacenar
    * propiedades
    * miniatura
 
-1. Haga clic con el botón derecho en `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` y haga clic en Crear > Crear nodo. Especifique los siguientes valores de propiedad y haga clic en Aceptar:
+1. Haga clic con el botón derecho en el nodo `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` y haga clic en Crear > Crear nodo. Especifique los siguientes valores de propiedad y haga clic en Aceptar:
 
    * Nombre: static
    * Tipo: cq:Widget
@@ -560,7 +562,7 @@ Agregue el código al archivo JSP del componente geoloc para procesar los datos 
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. En CRXDE Lite, abra el `/apps/myapp/contextstores/geoloc/geoloc.jsp` archivo.
+1. En el CRXDE Lite, abra el archivo `/apps/myapp/contextstores/geoloc/geoloc.jsp`.
 1. Agregue el siguiente código HTML debajo del código auxiliar:
 
    ```xml
@@ -593,11 +595,11 @@ Agregue el código al archivo JSP del componente geoloc para procesar los datos 
 
 Agregue el componente Almacén de ubicaciones a Client Context para que se inicialice cuando se cargue la página.
 
-1. Abra la página de inicio de los Geometrixx Outdoors en la instancia de autor ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Abra la página principal de los Geometrixx Outdoors en la instancia de autor ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Haga clic en Ctrl-Alt-c (Windows) o control-opción-c (Mac) para abrir Client Context.
-1. Haga clic en el icono de edición en la parte superior de Client Context para abrir el Diseñador de Client Context.
+1. Haga clic en el icono de edición en la parte superior de Client Context para abrir Client Context Designer.
 
-   ![Icono de edición indicado por un lápiz dentro de un cuadrado.](do-not-localize/chlimage_1.png)
+   ![Editar icono indicado por un lápiz dentro de un cuadrado.](do-not-localize/chlimage_1.png)
 
 1. Arrastre el componente Almacén de ubicaciones a Client Context.
 

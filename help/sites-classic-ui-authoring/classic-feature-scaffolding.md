@@ -25,47 +25,47 @@ Con el andamiaje, puede crear un formulario (un andamio) con campos que reflejen
 
 >[!NOTE]
 >
->Andamiaje (en la IU clásica) [respeta la herencia de MSM](#scaffolding-with-msm-inheritance).
+>El andamiaje (en la IU clásica) [respeta la herencia de MSM](#scaffolding-with-msm-inheritance).
 
 ## Cómo funciona el andamiaje {#how-scaffolding-works}
 
-Los andamios se almacenan en **Herramientas** consola del administrador del sitio.
+Los andamios se almacenan en la consola **Tools** del administrador del sitio.
 
-* Abra el **Herramientas** y haga clic en **Andamiaje de página predeterminada**.
-* En, haga clic en **Geometrixx**.
-* En **Geometrixx**, encontrará un *página de andamio* llamado **Noticias**. Haga doble clic para abrir esta página.
+* Abra la consola **Herramientas** y haga clic en **Andamiaje de página predeterminado**.
+* En esta sección, haga clic en **Geometrixx**.
+* En **Geometrixx**, se encuentra una *página de andamio* llamada **Noticias**. Haga doble clic para abrir esta página.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
-El andamiaje consiste en un formulario con un campo para cada parte de contenido que conformará la página que se va a crear y cuatro parámetros importantes a los que se accede a través del **Propiedades de página** de la página andamiaje.
+El andamio consiste en un formulario con un campo para cada parte de contenido que conformará la página que se va a crear y cuatro parámetros importantes a los que se accede a través de las **Propiedades de página** de la página del andamio.
 
-![pageprops](assets/pageprops.png)
+![props de página](assets/pageprops.png)
 
 Las propiedades de la página de andamiaje son:
 
-* **Texto del título**: Este es el nombre de la propia página de andamiaje. En este ejemplo, se llama &quot;News&quot;.
-* **Descripción**: Aparece debajo del título en la página de andamiaje.
-* **Plantilla de destino**: Esta es la plantilla que utilizará este andamio cuando cree una página. En este ejemplo, es un *Página de contenido de Geometrixx* plantilla.
+* **Texto de título**: Este es el nombre de la página de andamiaje. En este ejemplo, se llama &quot;News&quot;.
+* **Descripción**: esto aparece debajo del título en la página de andamiaje.
+* **Plantilla de destino**: Esta es la plantilla que este andamio usará cuando cree una página. En este ejemplo, es una plantilla *Página de contenido de Geometrixx*.
 * **Ruta de destino**: Esta es la ruta de la página principal por debajo de la cual este andamio creará páginas. En este ejemplo, la ruta es */content/geometrixx/en/news*.
 
-El cuerpo del andamio es la forma. Cuando un usuario desea crear una página con el andamio, rellena el formulario y hace clic en *Crear*, en la parte inferior. En el **Noticias** Un ejemplo sobre el formulario tiene los siguientes campos:
+El cuerpo del andamio es la forma. Cuando un usuario desea crear una página con el andamio, rellena el formulario y hace clic en *Crear*, en la parte inferior. En el ejemplo **Noticias** anterior, el formulario tiene los campos siguientes:
 
-* **Título**: Es el nombre de la página que se va a crear. Este campo siempre está presente en cada andamio.
-* **Texto**: este campo corresponde a un componente Texto en la página resultante.
+* **Título**: Este es el nombre de la página que se va a crear. Este campo siempre está presente en cada andamio.
+* **Texto**: Este campo corresponde a un componente Texto en la página resultante.
 * **Imagen**: este campo corresponde a un Componente de imagen en la página resultante.
-* **Imagen/Avanzado**: **Título**: título de la imagen.
-* **Imagen/Avanzado**: **Texto alternativo**: el texto alternativo de la imagen.
-* **Imagen/Avanzado**: **Descripción**: la descripción de la imagen.
+* **Imagen/Avanzado**: **Título**: El título de la imagen.
+* **Imagen/Avanzado**: **Texto alternativo**: Texto alternativo de la imagen.
+* **Imagen/Avanzado**: **Descripción**: La descripción de la imagen.
 * **Imagen/Avanzado**: **Tamaño**: El tamaño de la imagen.
-* **Etiquetas/Palabras clave**: metadatos que se asignarán a esta página. Este campo siempre está presente en cada andamio.
+* **Etiquetas/palabras clave**: metadatos que se asignarán a esta página. Este campo siempre está presente en cada andamio.
 
 ### Creación de un andamio {#creating-a-scaffold}
 
-Para crear un andamio, vaya al **Herramientas** consola, entonces **Andamiaje de página predeterminada** y cree una página. Hay disponible un tipo de plantilla de una sola página, la variable *Plantilla de andamiaje.*
+Para crear un andamio, ve a la consola **Herramientas**, luego a **Andamiaje de página predeterminado** y crea una página. Hay disponible un solo tipo de plantilla de página, *Plantilla de andamiaje.*
 
-Vaya a la **Propiedades de página** de la nueva página y configure el *Texto del título*, *Descripción*, *Plantilla de destino*, y *Ruta de destino*, tal como se ha descrito anteriormente.
+Vaya a **Propiedades de página** de la nueva página y establezca el *Texto de título*, la *Descripción*, la *Plantilla de destino* y la *Ruta de destino*, tal como se ha descrito anteriormente.
 
-A continuación, debe definir la estructura de la página que creará este andamio. Para ello, vaya a **[modo de diseño](/help/sites-authoring/page-authoring.md#sidekick)** en la página andamiaje. Aparece un vínculo que le permite editar el andamio en la **editor de diálogos**.
+A continuación, debe definir la estructura de la página que creará este andamio. Para ello, vaya a **[modo de diseño](/help/sites-authoring/page-authoring.md#sidekick)** en la página del andamio. Aparece un vínculo que le permite editar el andamio en el **editor de diálogos**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -73,19 +73,19 @@ Con el editor de diálogos, se especifican las propiedades que se crearán cada 
 
 La definición del cuadro de diálogo de un andamio funciona de manera similar a la de un componente (consulte [Componentes](/help/sites-developing/components.md)). Sin embargo, se aplican algunas diferencias importantes:
 
-* Las definiciones de cuadros de diálogo de componentes se representan como cuadros de diálogo normales (como se muestra en el panel central del editor de cuadros de diálogo), mientras que las definiciones de cuadros de diálogo de andamios, aunque aparecen como cuadros de diálogo normales en el editor de cuadros de diálogo, se representan en la página de andamio como un formulario de andamio (como se muestra en la **Noticias** andamio arriba).
+* Las definiciones de cuadros de diálogo de componentes se representan como cuadros de diálogo normales (como se muestra en el panel central del editor de diálogos), mientras que las definiciones de cuadros de diálogo de andamios, aunque aparecen como cuadros de diálogo normales en el editor de diálogos, se representan en la página de andamio como un formulario de andamio (como se muestra en el andamio **News** anterior).
 * Los cuadros de diálogo de componentes proporcionan campos solo para aquellos valores necesarios para definir el contenido de un componente específico único. Un cuadro de diálogo de andamiaje debe proporcionar campos para cada propiedad en cada párrafo de la página que se va a crear.
-* Si hay cuadros de diálogo de componentes, el componente utilizado para procesar el contenido especificado es implícito y, por lo tanto, la variable `sling:resourceType` La propiedad del párrafo se rellena automáticamente cuando se crea el párrafo. Con un andamiaje, toda la información que defina el contenido y el componente asignado para un párrafo determinado debe proporcionarla el propio cuadro de diálogo. En los cuadros de diálogo de andamiaje, esta información debe proporcionarse utilizando *Oculto* campos para enviar esta información al crear la página.
+* Si hay cuadros de diálogo de componentes, el componente utilizado para procesar el contenido especificado está implícito y, por lo tanto, la propiedad `sling:resourceType` del párrafo se rellena automáticamente cuando se crea el párrafo. Con un andamiaje, toda la información que defina el contenido y el componente asignado para un párrafo determinado debe proporcionarla el propio cuadro de diálogo. En los cuadros de diálogo de andamiaje, esta información debe proporcionarse usando los campos *Oculto* para enviar esta información al crear la página.
 
-Un vistazo al ejemplo **Noticias** el cuadro de diálogo andamiaje del editor de diálogos ayuda a explicar cómo funciona. Vaya al modo de diseño en la página del andamio y haga clic en el vínculo del editor de diálogos.
+Un vistazo al diálogo de andamiaje de ejemplo **News** en el editor de diálogos ayuda a explicar cómo funciona esto. Vaya al modo de diseño en la página del andamio y haga clic en el vínculo del editor de diálogos.
 
-Ahora, haga clic en el campo de diálogo **Cuadro de diálogo > Panel de pestañas > Texto > Texto**, así:
+Ahora, haga clic en el campo de diálogo **Cuadro de diálogo > Panel de fichas > Texto > Texto**, de esta manera:
 
 ![textedit](assets/textedit.png)
 
 La lista de propiedades de este campo aparece a la derecha del editor de diálogos, de esta manera:
 
-![list_of_properties](assets/list_of_properties.png)
+![lista_de_propiedades](assets/list_of_properties.png)
 
 Observe la propiedad name de este campo. Tiene el valor
 
@@ -95,30 +95,30 @@ Es el nombre de la propiedad en la que se escribirá el contenido de este campo 
 
 Define la ubicación del almacenamiento de contenido para el texto que se introduce en este campo. Sin embargo, también es necesario especificar dos características más para este contenido:
 
-* El hecho de que la cadena que se almacena aquí debe interpretarse como *texto enriquecido*, y
+* El hecho de que la cadena que se está almacenando aquí debe interpretarse como *texto enriquecido*, y
 * qué componente debe utilizarse para procesar este contenido en la página resultante.
 
 En un cuadro de diálogo de componente normal no tendría que especificar esta información porque está implícita en el hecho de que el cuadro de diálogo ya está enlazado a un componente específico.
 
-Para especificar estos dos fragmentos de información, se utilizan campos ocultos. Haga clic en el primer campo oculto **Cuadro de diálogo > Panel de pestañas > Texto > Oculto**, así:
+Para especificar estos dos fragmentos de información, se utilizan campos ocultos. Haga clic en el primer campo oculto **Cuadro de diálogo > Panel de fichas > Texto > Oculto**, de esta manera:
 
 ![oculto](assets/hidden.png)
 
 Las propiedades de este campo oculto son las siguientes:
 
-![hidden_list_props](assets/hidden_list_props.png)
+![props_lista_oculta](assets/hidden_list_props.png)
 
 La propiedad name de este campo oculto es
 
 `./jcr:content/par/text/textIsRich`
 
-Es una propiedad booleana que se utiliza para interpretar la cadena de texto almacenada en `./jcr:content/par/text/text`.
+Esta es una propiedad booleana que se usa para interpretar la cadena de texto almacenada en `./jcr:content/par/text/text`.
 
-Como sabemos que el texto debe interpretarse como texto enriquecido, vamos a especificar el `value` propiedad de este campo como `true`.
+Como sabemos que el texto debe interpretarse como texto enriquecido, vamos a especificar la propiedad `value` de este campo como `true`.
 
 >[!CAUTION]
 >
->El editor de diálogos permite al usuario cambiar los valores de *existente* propiedades en la definición del cuadro de diálogo. Para agregar una nueva propiedad, el usuario debe utilizar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por ejemplo, cuando se agrega un nuevo campo oculto a una definición de cuadro de diálogo con el editor de diálogos, no tiene un *valor* propiedad (es decir, una propiedad con el nombre &quot;value&quot;). Si el campo oculto en cuestión requiere que se establezca una propiedad de valor predeterminada, esta propiedad debe agregarse manualmente con una de las herramientas CRX. El valor no se puede agregar con el propio editor de diálogos. Sin embargo, una vez que la propiedad está presente, su valor se puede editar con el editor de diálogos.
+>El editor de diálogos permite al usuario cambiar los valores de *propiedades existentes* en la definición del diálogo. Para agregar una nueva propiedad, el usuario debe usar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por ejemplo, cuando se agrega un nuevo campo oculto a una definición de diálogo con el editor de diálogos, no tiene una propiedad *value* (es decir, una propiedad con el nombre &quot;value&quot;). Si el campo oculto en cuestión requiere que se establezca una propiedad de valor predeterminada, esta propiedad debe agregarse manualmente con una de las herramientas de CRX. El valor no se puede agregar con el propio editor de diálogos. Sin embargo, una vez que la propiedad está presente, su valor se puede editar con el editor de diálogos.
 
 El segundo campo oculto se puede ver haciendo clic en él de esta manera:
 
@@ -136,13 +136,13 @@ Y el valor fijo especificado para esta propiedad es
 
 `foundation/components/textimage`
 
-Esto especifica que el componente que se utilizará para representar el contenido de texto de este párrafo es el siguiente *Imagen de texto* componente. Uso de con `isRichText` especificado en el otro campo oculto, el componente puede procesar la cadena de texto real almacenada en `./jcr:content/par/text/text` de la manera deseada.
+Esto especifica que el componente que se utilizará para procesar el contenido de texto de este párrafo es el componente *Imagen de texto*. Usando con el booleano `isRichText` especificado en el otro campo oculto, el componente puede procesar la cadena de texto real almacenada en `./jcr:content/par/text/text` de la manera deseada.
 
 ### Andamiaje con herencia MSM {#scaffolding-with-msm-inheritance}
 
 En la IU clásica, el andamiaje está totalmente integrado con la herencia de MSM (cuando corresponda).
 
-Cuando abre una página en **Andamiaje** modo (con el icono de la parte inferior de la barra de tareas), los componentes sujetos a herencia se indicarán de la siguiente manera:
+Al abrir una página en modo **Andamiaje** (con el icono de la parte inferior de la barra de tareas), los componentes sujetos a herencia se indicarán de la siguiente manera:
 
 * un símbolo de bloqueo (para la mayoría de los componentes; por ejemplo, Texto y Título)
 * una máscara con el texto **Haga clic para cancelar la herencia** (para componentes de imagen)
@@ -166,4 +166,4 @@ Después de desbloquear, puede restaurar la herencia haciendo clic en el símbol
 
 >[!NOTE]
 >
->Si la herencia se cancela en el nivel de página (desde la pestaña LiveCopy de Propiedades de página), todos los componentes se pueden editar en **Andamiaje** modo (se muestran en estado desbloqueado).
+>Si la herencia se cancela en el nivel de página (desde la pestaña Livecopy de Propiedades de página), todos los componentes se pueden editar en el modo **Andamiaje** (se muestran en estado desbloqueado).

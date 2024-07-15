@@ -44,14 +44,14 @@ Se utiliza un modo [especial](/help/sites-authoring/author-environment-tools.md#
 
 >[!NOTE]
 >
->No lo olvide [comentarios](/help/sites-authoring/basic-handling.md#timeline) también están disponibles para proporcionar comentarios sobre una página.
+>No olvide que [comentarios](/help/sites-authoring/basic-handling.md#timeline) también están disponibles para proporcionar comentarios sobre una página.
 
 >[!NOTE]
 >
 >Puede realizar anotaciones en una variedad de recursos:
 >
->* [Anotación de recursos](/help/assets/manage-assets.md#annotating)
->* [Anotación de recursos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
+>* [Anotando recursos](/help/assets/manage-assets.md#annotating)
+>* [Anotando recursos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 
 ### Anotación de un componente {#annotating-a-component}
@@ -85,11 +85,11 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
      El cursor cambiará a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.
 
-     ![Bosquejar](do-not-localize/screen_shot_2018-03-22at110640.png)
+     ![Sketch](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Elegir o cambiar el color:
 
-     ![Elegir/cambiar color](do-not-localize/chlimage_1-19.png)
+     ![Elegir o cambiar color](do-not-localize/chlimage_1-19.png)
 
    * Eliminar la anotación.
 

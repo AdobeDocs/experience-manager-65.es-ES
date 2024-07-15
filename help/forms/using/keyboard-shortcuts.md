@@ -44,7 +44,7 @@ En este artículo se enumeran los métodos abreviados de teclado que se pueden u
 
 >[!NOTE]
 >
->Los métodos abreviados marcados con &quot;*&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
+>Los métodos abreviados marcados con &quot;&amp;ast;&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Selección múltiple en un dispositivo de escritorio:
 
 >[!NOTE]
 >
-Los métodos abreviados marcados con &quot;*&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
+Los métodos abreviados marcados con &quot;&amp;ast;&quot; funcionan tanto con las teclas Ctrl como con Comando en macOS.
 
 ## Explorador de contenido  {#contentbrowser}
 
@@ -79,8 +79,8 @@ Los métodos abreviados marcados con &quot;*&quot; funcionan tanto con las tecla
 | Seleccionar el siguiente elemento en el árbol Objetos de formulario | Flecha abajo | Flecha abajo |
 | Seleccionar el elemento anterior en el árbol Objetos de formulario | Flecha arriba | Flecha arriba |
 
-[1] Reemplaza Ctrl + Flecha derecha en Windows y Comando + Flecha derecha en macOS.\
-[2] Reemplaza Ctrl + Flecha izquierda en Windows y Comando + Flecha izquierda en macOS.
+[1] reemplaza Ctrl + Flecha derecha en Windows y Comando + Flecha derecha en macOS.\
+[2] reemplaza Ctrl + Flecha izquierda en Windows y Comando + Flecha izquierda en macOS.
 
 ## Administración de correspondencia {#correspondence-management}
 

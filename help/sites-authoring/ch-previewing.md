@@ -18,14 +18,14 @@ ht-degree: 24%
 
 # Obtención de vista previa de páginas mediante los datos de ContextHub{#previewing-pages-using-contexthub-data}
 
-El [ContextHub](/help/sites-developing/contexthub.md) La barra de herramientas de muestra datos de los almacenes de ContextHub y permite cambiar los datos de los almacenes. La barra de herramientas de ContextHub resulta útil para obtener una vista previa del contenido determinado por los datos de un almacén de ContextHub.
+La barra de herramientas [ContextHub](/help/sites-developing/contexthub.md) muestra datos de los almacenes de ContextHub y le permite cambiar datos de los almacenes. La barra de herramientas de ContextHub resulta útil para obtener una vista previa del contenido determinado por los datos de un almacén de ContextHub.
 
 La barra de herramientas consta de una serie de modos de interfaz de usuario que contienen uno o más módulos de interfaz de usuario.
 
 * Los modos de interfaz de usuario son iconos que aparecen en la parte izquierda de la barra de herramientas. Al hacer clic en un icono, la barra de herramientas muestra los módulos de interfaz de usuario que contiene.
 * Los módulos de IU muestran datos de uno o más almacenes de ContextHub. Algunos módulos de IU también permiten manipular los datos de almacenamiento.
 
-ContextHub instala varios modos de interfaz de usuario y módulos de IU. Es posible que el administrador tenga [ContextHub configurado](/help/sites-developing/ch-configuring.md) para mostrar diferentes.
+ContextHub instala varios modos de interfaz de usuario y módulos de IU. Es posible que el administrador haya [configurado ContextHub](/help/sites-developing/ch-configuring.md) para que muestre otros.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 
@@ -41,7 +41,7 @@ La barra de herramientas de ContextHub está disponible en el modo de vista prev
 
 1. Para mostrar la barra de herramientas, haga clic en el icono de ContextHub.
 
-   ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
+   ![ContextHub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
 ## Funciones del módulo de IU {#ui-module-features}
 

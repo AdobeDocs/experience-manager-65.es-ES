@@ -39,11 +39,11 @@ La página Cambiar licencia muestra información sobre la licencia:
 1. AEM Lea el contrato de licencia para el usuario final de formularios de la plantilla, seleccione Acepto si está de acuerdo con los términos del contrato y, a continuación, haga clic en Siguiente.
 1. En la página Cambiar licencia, seleccione un tipo de licencia:
 
-   * **EVAL:** Licencia de evaluación de 60 días
-   * **DESARROLLO:** Licencia de desarrollo permanente
-   * **NFR:** Licencia de evaluación de 2 años
-   * **IDEV:** Suscripción de 1 año al programa Adobe Developer
-   * **Producción:** Licencia permanente
+   * **EVAL:** licencia de evaluación de 60 días
+   * **DEV:** Licencia de desarrollo permanente
+   * **NFR:** licencia de evaluación de 2 años
+   * **IDEV:** suscripción de 1 año al programa Adobe Developer
+   * **Producción:** Licencia perpetua
 
 1. Seleccione Sí, El Cambio De Licencia Es Válido Para Todos Los Módulos Implementados.
 1. Haga clic en Confirmar cambio de licencia. Aparece un mensaje que indica que la licencia se ha actualizado correctamente.

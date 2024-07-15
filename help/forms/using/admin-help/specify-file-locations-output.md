@@ -26,15 +26,15 @@ Puede especificar las ubicaciones en las que Output busca determinados tipos de 
 
 ## Configuración de ubicaciones {#locations-settings}
 
-**URI de raíz de contenido:** URI o ubicación absoluta del repositorio desde el que se recuperan los formularios. Este valor se combina con el parámetro sForm, especificado mediante la API, para construir la ruta absoluta al formulario que se recupera. Este valor puede hacer referencia a un directorio o a una ubicación web a la que se puede acceder mediante HTTP.
+**URI de raíz de contenido:** URI o ubicación absoluta del repositorio del que se recuperan los formularios. Este valor se combina con el parámetro sForm, especificado mediante la API, para construir la ruta absoluta al formulario que se recupera. Este valor puede hacer referencia a un directorio o a una ubicación web a la que se puede acceder mediante HTTP.
 
 El valor predeterminado es una cadena vacía.
 
-**Archivo de configuración XCI:** La ubicación relativa o absoluta del archivo de configuración XCI que el servicio Output utiliza para el procesamiento. AEM Para un valor relativo, se da por hecho que el archivo XCI reside en el archivo EAR implementable de formularios en el que se puede implementar el formulario de la.
+**Archivo de configuración XCI:** Ubicación relativa o absoluta del archivo de configuración XCI que el servicio Output utiliza para la representación. AEM Para un valor relativo, se da por hecho que el archivo XCI reside en el archivo EAR implementable de formularios en el que se puede implementar el formulario de la.
 
 El valor predeterminado es `com/adobe/formServer/PA/pa_output.xci`.
 
-**Ubicación de caché:** Especifica la ubicación de la caché del disco de salida. Al cambiar esta configuración, se restablece toda la información de caché existente de la ubicación actual y se crea una nueva caché en la nueva ubicación. Seleccione una de las siguientes opciones:
+**Ubicación de la caché:** Especifica la ubicación de la caché del disco de salida. Al cambiar esta configuración, se restablece toda la información de caché existente de la ubicación actual y se crea una nueva caché en la nueva ubicación. Seleccione una de las siguientes opciones:
 
 **Ubicación predeterminada:** Esta es la selección predeterminada. Cuando se selecciona esta opción, la caché se crea en una ubicación que depende del servidor de aplicaciones que esté utilizando:
 
@@ -42,7 +42,7 @@ El valor predeterminado es `com/adobe/formServer/PA/pa_output.xci`.
 * **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[Forms Server name]\Output\Cache`
 * **WebSphere:** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 
-**Directorio temporal de LC:** AEM La caché se crea en un subdirectorio del directorio temporal de los formularios de la, que se especifica en la consola de administración en Configuración > Configuración del sistema principal > Configuraciones > Ubicación del directorio temporal. El nombre del subdirectorio es `adobeoutput_[servername]`.
+AEM **Directorio temporal LC:** La caché se crea en un subdirectorio del directorio temporal de Forms, que se especifica en la consola de administración en Configuración > Configuración del sistema principal > Configuraciones > Ubicación del directorio temporal. El nombre del subdirectorio es `adobeoutput_[servername]`.
 
 >[!NOTE]
 >

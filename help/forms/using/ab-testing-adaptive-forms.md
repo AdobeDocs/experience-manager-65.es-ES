@@ -44,8 +44,8 @@ El código de cliente identifica la cuenta de cliente de Adobe Target y se utili
 
 1. En el servidor de AEM, vaya a https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
 
-1. En el **Adobe Target** , haga clic en **Mostrar configuraciones** y luego el **+** para añadir una configuración.
-Si está configurando un destinatario por primera vez, haga clic en **Configurar ahora.**
+1. En la sección **Adobe Target**, haga clic en **Mostrar configuraciones** y, a continuación, en el icono **+** para agregar una configuración.
+Si está configurando un destino por primera vez, haga clic en **Configurar ahora.**
 
 1. En el cuadro de diálogo Crear configuración, especifique un **Título** y opcionalmente un **Nombre** para la configuración.
 
@@ -53,7 +53,7 @@ Si está configurando un destinatario por primera vez, haga clic en **Configurar
 1. Especifique los detalles de la cuenta de Target, como el código de cliente, el correo electrónico y la contraseña.
 1. Seleccione **Rest** de la lista desplegable Tipo de API.
 
-1. Clic **Conectar con Adobe Target** para poder inicializar la conexión con Target. Si la conexión se realiza correctamente, aparecerá el mensaje Conexión correcta. Haga clic en **Aceptar** en el mensaje y, a continuación, **Aceptar** en el cuadro de diálogo. La cuenta de Target está configurada.
+1. Haga clic en **Conectarse a Adobe Target** para poder inicializar la conexión con Target. Si la conexión se realiza correctamente, aparecerá el mensaje Conexión correcta. Haga clic en **Aceptar** en el mensaje y, a continuación, **Aceptar** en el cuadro de diálogo. La cuenta de Target está configurada.
 
 1. Cree una estructura de Target como se describe en [Agregar un marco de trabajo](/help/sites-administering/target.md).
 
@@ -61,7 +61,7 @@ Si está configurando un destinatario por primera vez, haga clic en **Configurar
 
 1. Haga clic en **Configuración de AEM Forms Target**.
 1. Seleccione un **Marco de trabajo de Target**.
-1. En el **URL de destino** , especifique todas las direcciones URL donde se ejecutan las pruebas A/B. Por ejemplo, https://&lt;*hostname*>:&lt;*puerto*>/ para AEM Forms Server en OSGi o https://&lt;*hostname*>:&lt;*puerto*>/lc/ para AEM Forms Server en JEE.
+1. En el campo **URL de destino**, especifique todas las direcciones URL donde se ejecutan las pruebas A/B. Por ejemplo, https://&lt;*hostname*>:&lt;*port*>/ para AEM Forms Server en OSGi o https://&lt;*hostname*>:&lt;*port*>/lc/ para AEM Forms Server en JEE.
 Tenga en cuenta que desea configurar una URL de destino para una instancia de Publish y que los clientes pueden acceder a ella mediante el nombre del host o la dirección IP. En este caso, debe configurar como direcciones URL de destino mediante el nombre de host y la dirección IP. Si configura solo una de las direcciones URL, la prueba A/B no se ejecuta para los clientes que provienen de la otra dirección URL. Haga clic en **+** para especificar varias direcciones URL.
 
 1. Haga clic en **Guardar**.
@@ -72,7 +72,7 @@ Si tiene una licencia completa para utilizar Adobe Target, inicie el servidor co
 
 `parameter -Dabtesting.enabled=true java -Xmx2048m -XX:MaxPermSize=512M -jar -Dabtesting.enabled=true`
 
-AEM Si la instancia de se ejecuta en JBoss®, iniciado como servicio desde turnkey, en `jboss\bin\standalone.conf.bat` , agregue el parámetro -Dabtesting.enabled=true en la siguiente entrada:
+AEM Si la instancia de se está ejecutando en JBoss®, iniciado como servicio desde turnkey, en el archivo `jboss\bin\standalone.conf.bat`, agregue el parámetro -Dabtesting.enabled=true en la siguiente entrada:
 
 `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
@@ -87,15 +87,15 @@ Además del servidor JBoss®, puede agregar el argumento -Dabtesting.enabled=tru
 
 AEM permite crear una audiencia y utilizarla para una prueba A/B. La audiencia que cree en AEM estará disponible en AEM Forms. AEM Para crear audiencias dentro de las audiencias de, haga lo siguiente:
 
-1. En la instancia de creación, seleccione **Adobe Experience Manager** > **Personalización** > **Audiencias**.
+1. En la instancia de creación, seleccione **Adobe Experience Manager** > **Personalization** > **Audiencias**.
 
-1. En la página Audiencias, seleccione **Crear audiencia > Crear audiencia de Target**.
+1. En la página Audiencias, seleccione **Crear audiencia > Crear audiencia de destino**.
 1. En el cuadro de diálogo Configuración de Adobe Target, seleccione una configuración de Target y haga clic en **Aceptar**.
 1. En la página Crear audiencia, cree reglas. Las reglas permiten clasificar la audiencia. Por ejemplo, debe categorizar las audiencias en función del sistema operativo. La audiencia A proviene de Windows y la audiencia B procede de Linux®.
 
-   1. Para categorizar una audiencia según Windows, en la Regla #1, seleccione la **SO** tipo de atributo. En la lista desplegable Cuándo, seleccione **Windows.**
+   1. Para categorizar una audiencia según Windows, en la Regla #1, seleccione el tipo de atributo **OS**. En la lista desplegable Cuándo, seleccione **Windows.**
 
-   1. Para categorizar la audiencia según Linux®, en la Regla #2, seleccione **SO** tipo de atributo. Desde el **Cuándo** menú desplegable, seleccione **Linux®** y haga clic en **Siguiente**.
+   1. Para categorizar la audiencia según Linux®, en la Regla #2, seleccione el tipo de atributo **OS**. En el menú desplegable **Cuándo**, seleccione **Linux®** y haga clic en **Siguiente**.
 
 1. Especifique un nombre para la audiencia creada y haga clic en **Guardar**.
 
@@ -107,7 +107,7 @@ Puede seleccionar la audiencia cuando configure las pruebas A/B para un formular
 
 1. Vaya a la carpeta que contiene el formulario adaptable.
 1. Haga clic en la herramienta **Seleccionar** en la barra de herramientas y seleccione el formulario adaptable.
-1. Clic **Más** en la barra de herramientas y seleccione **Configurar prueba A/B**. Se abrirá la página Configurar prueba A/B.
+1. Haga clic en **Más** en la barra de herramientas y seleccione **Configurar pruebas A/B**. Se abrirá la página Configurar prueba A/B.
 
 [](assets/ab-test-configure-1.png)
 
@@ -117,7 +117,7 @@ Puede seleccionar la audiencia cuando configure las pruebas A/B para un formular
 
 1. En el campo **Distribución de experiencias** para las experiencias A y B, especifique la distribución, en términos de porcentaje, para determinar la distribución de experiencias entre la audiencia total. Por ejemplo, si especifica 40 o 60 para las experiencias A y B, respectivamente, la experiencia A se sirve al 40 % de la audiencia y el 60 % restante ve la experiencia B.
 1. Haga clic en **Configurar**. Aparecerá un cuadro de diálogo para confirmar la creación de la prueba A/B.
-1. Clic **Editar experiencia B** para poder abrir el formulario adaptable en el modo edición. Modifique el formulario creando una experiencia diferente a la experiencia predeterminada A. Las posibles variaciones permitidas en la Experiencia B son cambios en lo siguiente:
+1. Haga clic en **Editar experiencia B** para poder abrir el formulario adaptable en modo de edición. Modifique el formulario creando una experiencia diferente a la experiencia predeterminada A. Las posibles variaciones permitidas en la Experiencia B son cambios en lo siguiente:
 
    * CSS o estilo
    * Orden de los campos en diferentes paneles o en el mismo panel
@@ -156,7 +156,7 @@ Para ver y analizar el informe de prueba A/B:
 [](assets/ab-test-report-3.png)
 
 1. Analice el informe y compruebe si tiene suficientes datos para declarar como ganadora a la experiencia con mejor rendimiento. Puede optar por continuar con la misma prueba A/B durante más tiempo o declarar un ganador y finalizarla.
-1. Para declarar un ganador y finalizarla, haga clic en el icono **Finalizar prueba A/B** en el panel de informes. Un cuadro de diálogo le pedirá que declare una de las dos experiencias como ganadoras. Elija un ganador y confirme que desea finalizar la prueba A/B.
+1. Para declarar un ganador y finalizar la prueba A/B, haga clic en el botón **Finalizar prueba A/B** en el panel de informes. Un cuadro de diálogo le pedirá que declare una de las dos experiencias como ganadoras. Elija un ganador y confirme que desea finalizar la prueba A/B.
 Como alternativa, puede declarar un ganador primero si hace clic en el botón **Declarar ganador** de la experiencia correspondiente. Le solicitará que confirme el ganador. Haga clic en **Sí** para finalizar la prueba A/B.
 
 Si eligió la experiencia A como ganadora, la prueba A/B finaliza y, en adelante, solo se ofrecerá la experiencia A a las audiencias.

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Consola web{#web-console}
 
-La consola web de Adobe Experience Manager AEM () se basa en la variable [Consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo de la comunidad para implementar la plataforma de servicio OSGi R4, que incluye el marco OSGi y los servicios estándar.
+La consola web de Adobe Experience Manager AEM () se basa en [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo de la comunidad para implementar la plataforma de servicio OSGi R4, que incluye el marco OSGi y los servicios estándar.
 
 >[!NOTE]
 >
@@ -27,25 +27,25 @@ La consola web de Adobe Experience Manager AEM () se basa en la variable [Consol
 
 La consola web ofrece una selección de pestañas para mantener los paquetes OSGi, que incluyen:
 
-* [Configuración](#configuration)AEM : se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar los parámetros del sistema de
-* [Paquetes](#bundles): se utiliza para instalar paquetes
-* [Componentes](#components)AEM : se utiliza para controlar el estado de los componentes necesarios para la
+* AEM [Configuración](#configuration): se usa para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar parámetros del sistema de la
+* [Paquetes](#bundles): utilizados para instalar paquetes
+* AEM [Componentes](#components): se usan para controlar el estado de los componentes necesarios para el uso de los elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos necesarios para la
 
 Los cambios realizados se aplican inmediatamente al sistema en ejecución. No es necesario reiniciar.
 
-Se puede acceder a la consola desde `../system/console`; por ejemplo:
+Se puede tener acceso a la consola desde `../system/console`; por ejemplo:
 
 `http://localhost:4502/system/console/components`
 
 ## Configuración {#configuration}
 
-El **Configuración** AEM se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar los parámetros del sistema de la.
+AEM La pestaña **Configuration** se usa para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar parámetros del sistema de la.
 
 >[!NOTE]
 >
 >Consulte [Configuración de OSGi con la consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) para obtener más información.
 
-El **Configuración** se puede acceder a la pestaña mediante:
+Se puede acceder a la ficha **Configuración** mediante:
 
 * El menú desplegable:
 
@@ -104,7 +104,7 @@ A continuación, puede actualizar los parámetros según sea necesario y:
 
 ## Paquetes {#bundles}
 
-El **Paquetes** AEM es el mecanismo para instalar los paquetes OSGi necesarios para la instalación de los paquetes OSGi que se requieren para la instalación de la. Se puede acceder a la pestaña mediante cualquiera de los siguientes métodos:
+AEM La pestaña **Paquetes** es el mecanismo para instalar los paquetes OSGi necesarios para la instalación de los paquetes OSGi que se requieren para la instalación de los. Se puede acceder a la pestaña mediante cualquiera de los siguientes métodos:
 
 * El menú desplegable:
 
@@ -122,9 +122,9 @@ Con esta pestaña puede:
 
 * **Instalar o actualizar**
 
-  Puede **Examinar** para buscar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y en el cual **Nivel de inicio**.
+  Puede **Examinar** para buscar el archivo que contiene su paquete y especificar si debe **Iniciar** inmediatamente y en qué **Nivel de inicio**.
 
-* **Recargar**
+* **Volver a cargar**
 
   Actualiza la lista mostrada.
 
@@ -152,11 +152,11 @@ Con esta pestaña puede:
 
 >[!NOTE]
 >
->Después **Actualizar**, el Adobe recomienda que realice una **Actualizar paquetes**.
+>Después de **Actualizar**, el Adobe recomienda que realice **Actualizar paquetes**.
 
 ## Componentes {#components}
 
-El **Componentes** La pestaña permite activar o desactivar los distintos componentes. Se puede acceder a ella mediante:
+La pestaña **Componentes** le permite Habilitar o Deshabilitar los distintos componentes. Se puede acceder a ella mediante:
 
 * El menú desplegable:
 
@@ -176,6 +176,6 @@ Al hacer clic en el nombre de un componente en particular, se muestra más infor
 
 >[!NOTE]
 >
->AEM Habilitar o deshabilitar un componente solo se aplica hasta que se reinicia CRX/CRX
+>AEM Activar o desactivar un componente solo se aplica hasta que se reinicia el usuario o el usuario de CRX en el equipo de la aplicación.
 >
 >El estado de inicio se define dentro del descriptor del componente, que se genera durante el desarrollo y se almacena en el paquete en el momento de la creación del paquete.

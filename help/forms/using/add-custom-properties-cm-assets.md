@@ -778,7 +778,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
 
 1. En la carpeta de agregados recién creada, agregue un nodo cm:resource. Y en cm:resource, agregue un nodo llamado include0.
 
-   1. Haga clic con el botón derecho en la carpeta agregados y seleccione **Crear** > **Crear nodo**. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
+   1. Haga clic con el botón derecho en la carpeta de agregados y seleccione **Crear** > **Crear nodo**. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
 
       **Nombre:** cm:resource
 

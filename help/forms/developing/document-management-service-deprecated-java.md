@@ -22,7 +22,7 @@ Los siguientes tutoriales rápidos están disponibles para el servicio Administr
 
 >[!NOTE]
 >
->A partir del 5 de agosto de 2011, Adobe migrará los clientes de Content Services ES a Adobe Digital Enterprise Platform Experience Services. La hoja de ruta del producto para los clientes que utilizan servicios de contenido es pasar al nuevo ADEP Experience Services - Core, que incluye un repositorio de contenido nativo creado sobre la moderna arquitectura CRX modular, adquirida durante la adquisición por parte del Adobe del software Day.
+>A partir del 5 de agosto de 2011, Adobe migrará los clientes de Content Services ES a Adobe Digital Enterprise Platform Experience Services. La hoja de ruta del producto para los clientes que utilizan servicios de contenido es pasar al nuevo ADEP Experience Services - Core, que incluye un repositorio de contenido nativo creado sobre la arquitectura moderna y modular de CRX, adquirido durante la Adobe de la adquisición de Day Software.
 
 [SOAP Inicio rápido (modo de): Crear espacios de servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -44,11 +44,11 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## SOAP Inicio rápido (modo de): Crear espacios de Content Services con la API de Java (obsoleto) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java crea un nuevo espacio denominado *Directorio de prueba* en la página principal de la compañía. El valor de identificación del nuevo espacio se escribe en la consola.
+En el siguiente ejemplo de código Java se crea un nuevo espacio denominado *Directorio de pruebas* en la página de inicio de la compañía. El valor de identificación del nuevo espacio se escribe en la consola.
 
 ```java
  /*
@@ -367,7 +367,7 @@ El siguiente ejemplo de código Java agrega un archivo de PDF denominado *Mortga
 
 ## SOAP Inicio rápido (modo de): Recuperar contenido de los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java recupera un archivo de PDF denominado *MortgageForm.pdf* desde la página de inicio /Company. El archivo del PDF se guarda en el sistema de archivos local y se denomina *UpdatedMortgageForm.pdf*.
+El siguiente ejemplo de código Java recupera un archivo de PDF denominado *MortgageForm.pdf* de la página principal de /Company. El archivo del PDF se guardará en el sistema de archivos local y se llamará *UpdatedMortgageForm.pdf*.
 
 ```java
  /*
@@ -473,7 +473,7 @@ El siguiente ejemplo de código Java recupera un archivo de PDF denominado *Mort
 
 ## SOAP Inicio rápido (modo de): Mover contenido de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java mueve un archivo de PDF denominado *MortgageForm.pdf* de /Company Home/Test Directory a /Company Home. El valor de identificación del contenido movido se escribe en la consola.
+El siguiente ejemplo de código Java mueve un archivo de PDF llamado *MortgageForm.pdf* de /Company Home/Test Directory a /Company Home. El valor de identificación del contenido movido se escribe en la consola.
 
 ```java
  /*
@@ -797,7 +797,7 @@ El siguiente código Java busca en /Company Home un documento que contenga el te
 
 ## SOAP Inicio rápido (modo de): Configuración de permisos de servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java establece un permiso para un usuario denominado tony blue. El dominio especificado es el dominio predeterminado. Se especifica el permiso de Consumidor y el nodo es `/Company Home/Test Directory`.
+El siguiente ejemplo de código Java establece un permiso para un usuario denominado tony blue. El dominio especificado es el dominio predeterminado. Se especificó el permiso de Consumidor y el nodo es `/Company Home/Test Directory`.
 
 ```java
  /*

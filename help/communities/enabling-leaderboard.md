@@ -21,18 +21,18 @@ ht-degree: 2%
 
 ## Introducción {#introduction}
 
-El `Leaderboard` Este componente le ayuda a hacerse una idea de cómo interactúan los miembros dentro de la comunidad clasificando a los miembros según los puntos obtenidos (puntuación básica) o su experiencia (puntuación avanzada).
+El componente `Leaderboard` le ayuda a tener una idea de cómo interactúan los miembros dentro de la comunidad mediante la clasificación de los miembros según los puntos obtenidos (puntuación básica) o su experiencia (puntuación avanzada).
 
-Antes de incluir el componente de tabla de posiciones en una página, es necesario configurar [Puntuación y distintivos de comunidades](/help/communities/implementing-scoring.md).
+Antes de incluir el componente de tabla de clasificación en una página, es necesario configurar [insignias y puntuación de comunidades](/help/communities/implementing-scoring.md).
 
 Esta sección de la documentación describe lo siguiente:
 
-* Añadir el `Leaderboard` componente a [sitio comunitario](/help/communities/overview.md#community-sites).
-* Ajustes de configuración para `Leaderboard` componente.
+* Agregando el componente `Leaderboard` a [sitio de la comunidad](/help/communities/overview.md#community-sites).
+* Ajustes de configuración para el componente `Leaderboard`.
 
 ### Agregar una tabla de posiciones a una página {#adding-a-leaderboard-to-a-page}
 
-Para agregar un `Leaderboard` a una página en modo de autor, busque el componente
+Para agregar un componente `Leaderboard` a una página en modo de autor, busque el componente
 
 * `Communities / Leaderboard`
 
@@ -46,20 +46,20 @@ Cuando se coloca por primera vez en una página de un sitio de la comunidad, as�
 
 ### Configurar tabla de posiciones {#configuring-leaderboard}
 
-Seleccione el colocado `Leaderboard` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el componente `Leaderboard` colocado para que pueda acceder y seleccionar el icono `Configure` que abre el cuadro de diálogo de edición.
 
-![configure-new](assets/configure-new.png)
+![configurar-nuevo](assets/configure-new.png)
 
-![configure-leader-board](assets/configure-leaderboard.png)
+![configurar tabla de clasificación](assets/configure-leaderboard.png)
 
 #### Pestaña Configuración {#settings-tab}
 
-En el **[!UICONTROL Configuración]** , especifique qué información relacionada con el miembro se muestra :
+En la ficha **[!UICONTROL Configuración]**, especifique qué información relacionada con el miembro se muestra:
 
 * **Nombre para mostrar**
 
   Un nombre descriptivo para mostrar para el tablero, que refleje las reglas seleccionadas para mostrar insignias y puntuaciones.
-El valor predeterminado es `Leaderboard` si no se introduce nada.
+El valor predeterminado es `Leaderboard` si no se escribe nada.
 
 * **Insignia**
 
@@ -78,9 +78,9 @@ El valor predeterminado está desmarcado.
 
 #### Pestaña Reglas {#rules-tab}
 
-En el **Reglas** , el sitio de la comunidad y sus reglas de puntuación y distintivos
+En la ficha **Reglas**, el sitio de la comunidad y sus reglas de puntuación y distintivos
 
-* **Ubicación de regla**
+* **Ubicación de la regla**
 
   (Obligatorio) Ubicación donde se configura la regla de puntuación/distintivos.
 
@@ -88,7 +88,7 @@ En el **Reglas** , el sitio de la comunidad y sus reglas de puntuación y distin
 
   (Obligatorio) Regla específica que genera las puntuaciones que se van a mostrar.
 
-* **Regla de distintivos**
+* **Regla de identificación**
 
   (Obligatorio) Regla específica que genera el distintivo que se va a mostrar.
 
@@ -113,7 +113,7 @@ Configuración de componentes de clasificación:
 
 * Pestaña Reglas:
 
-   * Ubicación de regla = `/content/sites/<site name>/jcr:content`
+   * Ubicación de la regla = `/content/sites/<site name>/jcr:content`
    * Regla de puntuación = `/libs/settings/community/scoring/rules/forums-scoring`
    * Regla de distintivos = `/libs/settings/community/badging/rules//reference-badging`
    * Límite de visualización = `10`
@@ -136,7 +136,7 @@ Configuración de componentes de clasificación:
 
 * Pestaña Reglas:
 
-   * Ubicación de regla = `/content/sites/<site name>/jcr:content`
+   * Ubicación de la regla = `/content/sites/<site name>/jcr:content`
    * Regla de puntuación = `/libs/settings/community/scoring/rules/adv-forums-scoring`
    * Regla de distintivos = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Límite de visualización = `10`
@@ -145,6 +145,6 @@ Configuración de componentes de clasificación:
 
 ### Información adicional {#additional-information}
 
-Puede encontrar más información en la [Leaderboard Essentials](/help/communities/leaderboard.md) para desarrolladores.
+Encontrará más información en la página de [Elementos esenciales de la tabla de clasificación](/help/communities/leaderboard.md) para desarrolladores.
 
-Las instrucciones para la creación de reglas se proporcionan en [Puntuación y distintivos de comunidades](/help/communities/implementing-scoring.md) para administradores.
+Encontrará instrucciones para crear reglas en la página [Insignias y puntuación de comunidades](/help/communities/implementing-scoring.md) para los administradores.

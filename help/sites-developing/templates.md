@@ -21,9 +21,9 @@ ht-degree: 0%
 
 AEM Las plantillas se utilizan en varios puntos de la lista de elementos
 
-* [Al crear una página, se selecciona una plantilla](#templates-pages). Esta plantilla se utiliza como base para la nueva página. La plantilla define la estructura de la página, cualquier contenido inicial y el [componentes](/help/sites-authoring/default-components.md) que se pueden utilizar (propiedades de diseño).
+* [Cuando crea una página, selecciona una plantilla](#templates-pages). Esta plantilla se utiliza como base para la nueva página. La plantilla define la estructura de la página, cualquier contenido inicial y los [componentes](/help/sites-authoring/default-components.md) que se pueden usar (propiedades de diseño).
 
-* [Al crear un fragmento de contenido, también se selecciona una plantilla](#templates-content-fragments). Esta plantilla define la estructura, los elementos iniciales y las variaciones.
+* [Cuando crea un fragmento de contenido, también selecciona una plantilla](#templates-content-fragments). Esta plantilla define la estructura, los elementos iniciales y las variaciones.
 
 Las siguientes plantillas se tratan en detalle:
 
@@ -38,7 +38,7 @@ AEM ahora ofrece dos tipos básicos de plantillas para crear páginas:
 
 >[!NOTE]
 >
->Cuando se usa una plantilla para lo siguiente [crear una página](/help/sites-authoring/managing-pages.md#creating-a-new-page)Sin embargo, no hay ninguna diferencia visible (para el autor de la página) ni indicación del tipo de plantilla que se utiliza.
+>Al usar una plantilla para [crear una página](/help/sites-authoring/managing-pages.md#creating-a-new-page), no hay ninguna diferencia visible (para el autor de la página) ni ninguna indicación del tipo de plantilla que se está usando.
 
 ### Plantillas editables {#editable-templates}
 
@@ -46,7 +46,7 @@ AEM Ahora, las plantillas editables se consideran prácticas recomendadas para d
 
 Las ventajas de las plantillas editables:
 
-* Puede ser [created](/help/sites-authoring/templates.md#creating-a-new-template-template-author) y [editado](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) por sus autores.
+* Sus autores pueden [crear](/help/sites-authoring/templates.md#creating-a-new-template-template-author) y [editar](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
 * Se han introducido para permitirle definir lo siguiente para cualquier página creada con la plantilla:
 
@@ -71,7 +71,7 @@ Plantillas estáticas:
 * AEM El sistema de creación de plantillas original de la aplicación de plantillas de que ha estado disponible para muchas versiones.
 * Una plantilla estática es una jerarquía de nodos que tiene la misma estructura que la página que se va a crear, pero sin contenido real.
 * Se copian para crear la página, no existe ninguna conexión dinámica posteriormente.
-* Usos [Modo de diseño](/help/sites-authoring/default-components-designmode.md) para conservar las propiedades de diseño.
+* Utiliza [Modo de diseño](/help/sites-authoring/default-components-designmode.md) para mantener las propiedades de diseño.
 * Se almacenan en `/apps`
 * Consulte [Plantillas estáticas](/help/sites-developing/page-templates-static.md) para obtener más información.
 
@@ -79,51 +79,51 @@ Plantillas estáticas:
 >
 >AEM A partir de la versión 6.5, el uso de plantillas estáticas no se considera una práctica recomendada. En su lugar, utilice Plantillas editables.
 >
->[AEM Modernización de](modernization-tools.md) Las herramientas de pueden ayudarle a migrar de plantillas estáticas a editables.
+>AEM Las herramientas de [modernización de la](modernization-tools.md) pueden ayudarle a migrar de plantillas estáticas a editables.
 
 ### Disponibilidad de la plantilla {#template-availability}
 
 >[!CAUTION]
 >
->AEM ofrece varias propiedades para controlar las plantillas permitidas en **Sites**. Sin embargo, combinarlas puede dar lugar a reglas complejas difíciles de rastrear y administrar.
+>AEM ofrece varias propiedades para controlar las plantillas permitidas en **Sitios**. Sin embargo, combinarlas puede dar lugar a reglas complejas difíciles de rastrear y administrar.
 >
 >Por lo tanto, Adobe recomienda empezar de forma sencilla definiendo:
 >
->* solo el `cq:allowedTemplates` propiedad
+>* solo la propiedad `cq:allowedTemplates`
 >
 >* solo en la raíz del sitio
 >
->Por ejemplo, consulte We.Retail: `/content/we-retail/jcr:content`
+>Para ver un ejemplo, vea We.Retail: `/content/we-retail/jcr:content`
 >
->Las propiedades `allowedPaths`, `allowedParents`, y `allowedChildren` también se puede colocar en las plantillas para definir reglas más sofisticadas. Sin embargo, cuando es posible, lo es *mucho* más fácil de definir `cq:allowedTemplates` propiedades en subsecciones del sitio si es necesario restringir aún más las plantillas permitidas.
+>Las propiedades `allowedPaths`, `allowedParents` y `allowedChildren` también se pueden colocar en las plantillas para definir reglas más sofisticadas. Sin embargo, cuando es posible, es *mucho* más fácil definir más propiedades de `cq:allowedTemplates` en subsecciones del sitio si es necesario restringir aún más las plantillas permitidas.
 >
->Una ventaja adicional es que el `cq:allowedTemplates` Las propiedades puede actualizarlas un autor en el **Avanzadas** de la pestaña **Propiedades de página**. Las demás propiedades de la plantilla no se pueden actualizar mediante la interfaz de usuario (estándar), por lo que se necesitaría un desarrollador para mantener las reglas y una implementación de código para cada cambio.
+>Una ventaja adicional es que un autor puede actualizar las propiedades de `cq:allowedTemplates` en la ficha **Avanzadas** de **Propiedades de página**. Las demás propiedades de la plantilla no se pueden actualizar mediante la interfaz de usuario (estándar), por lo que se necesitaría un desarrollador para mantener las reglas y una implementación de código para cada cambio.
 
 Al crear una página en la interfaz de administración del sitio, la lista de plantillas disponibles depende de la ubicación de la nueva página y de las restricciones de colocación especificadas en cada plantilla.
 
-Las siguientes propiedades determinan si una plantilla `T` se utiliza para que una nueva página se coloque como elemento secundario de la página `P`. Cada una de estas propiedades es una cadena de varios valores que contiene cero o más expresiones regulares que se utilizan para la coincidencia con rutas:
+Las siguientes propiedades determinan si se utiliza una plantilla `T` para colocar una nueva página como secundaria de la página `P`. Cada una de estas propiedades es una cadena de varios valores que contiene cero o más expresiones regulares que se utilizan para la coincidencia con rutas:
 
-* El `cq:allowedTemplates` propiedad del `jcr:content` subnodo de `P` o un antecesor de `P`.
+* La propiedad `cq:allowedTemplates` del subnodo `jcr:content` de `P` o un antecesor de `P`.
 
-* El `allowedPaths` propiedad de `T`.
+* La propiedad `allowedPaths` de `T`.
 
-* El `allowedParents` propiedad de `T`.
+* La propiedad `allowedParents` de `T`.
 
-* El `allowedChildren` propiedad de la plantilla de `P`.
+* La propiedad `allowedChildren` de la plantilla de `P`.
 
 La evaluación funciona de la siguiente manera:
 
-* La primera no vacía `cq:allowedTemplates` se encontró la propiedad al ascender la jerarquía de páginas que empieza por `P` se compara con la ruta de `T`. Si ninguno de los valores coincide, `T` se ha rechazado.
+* Se comparó la primera propiedad `cq:allowedTemplates` que no está vacía al ascender la jerarquía de páginas que comienza por `P` con la ruta de acceso de `T`. Si ninguno de los valores coincide, `T` se rechaza.
 
-* If `T` tiene un no vacío `allowedPaths` , pero ninguno de los valores coincide con la ruta de `P`, `T` se ha rechazado.
+* Si `T` tiene una propiedad `allowedPaths` que no está vacía, pero ninguno de los valores coincide con la ruta de acceso de `P`, se rechaza `T`.
 
-* Si ambas propiedades anteriores están vacías o no existen, `T` se rechaza a menos que pertenezca a la misma aplicación que `P`. `T` pertenece a la misma aplicación que `P` if y only si el nombre del segundo nivel de la ruta de `T` es el mismo que el nombre del segundo nivel de la ruta de `P`. Por ejemplo, la plantilla `/apps/geometrixx/templates/foo` pertenece a la misma aplicación que la página `/content/geometrixx`.
+* Si ambas propiedades están vacías o no existen, se rechaza `T` a menos que pertenezca a la misma aplicación que `P`. `T` pertenece a la misma aplicación que `P` solo si el nombre del segundo nivel de la ruta de acceso de `T` es el mismo que el nombre del segundo nivel de la ruta de acceso de `P`. Por ejemplo, la plantilla `/apps/geometrixx/templates/foo` pertenece a la misma aplicación que la página `/content/geometrixx`.
 
-* If `T` tiene un no vacío `allowedParents` , pero ninguno de los valores coincide con la ruta de `P`, `T` se ha rechazado.
+* Si `T` tiene una propiedad `allowedParents` que no está vacía, pero ninguno de los valores coincide con la ruta de acceso de `P`, se rechaza `T`.
 
-* Si la plantilla de `P` tiene un no vacío `allowedChildren` , pero ninguno de los valores coincide con la ruta de `T`, `T` se ha rechazado.
+* Si la plantilla de `P` tiene una propiedad `allowedChildren` que no está vacía, pero ninguno de los valores coincide con la ruta de acceso de `T`, se rechaza `T`.
 
-* En todos los demás casos, `T` está permitido.
+* En todos los demás casos, se permite `T`.
 
 El diagrama siguiente muestra el proceso de evaluación de la plantilla:
 
@@ -131,12 +131,12 @@ El diagrama siguiente muestra el proceso de evaluación de la plantilla:
 
 #### Limitación de plantillas utilizadas en páginas secundarias {#limiting-templates-used-in-child-pages}
 
-Para limitar qué plantillas se pueden utilizar para crear páginas secundarias en una página determinada, utilice la variable `cq:allowedTemplates` propiedad de `jcr:content` de la página para especificar la lista de plantillas que pueden utilizarse como páginas secundarias. Cada valor de la lista debe ser una ruta absoluta a una plantilla para una página secundaria permitida, por ejemplo, `/apps/geometrixx/templates/contentpage`.
+Para limitar qué plantillas se pueden usar para crear páginas secundarias en una página determinada, use la propiedad `cq:allowedTemplates` del nodo `jcr:content` de la página para especificar la lista de plantillas que se permitirán como secundarias. Cada valor de la lista debe ser una ruta absoluta a una plantilla para una página secundaria permitida, por ejemplo, `/apps/geometrixx/templates/contentpage`.
 
-Puede usar el complemento `cq:allowedTemplates` propiedad en la plantilla  `jcr:content` para que esta configuración se aplique a todas las páginas recién creadas que utilicen esta plantilla.
+Puede usar la propiedad `cq:allowedTemplates` en el nodo `jcr:content` de la plantilla para aplicar esta configuración a todas las páginas recién creadas que usen esta plantilla.
 
-Si desea agregar más restricciones, por ejemplo, con respecto a la jerarquía de plantillas, puede utilizar la variable `allowedParents/allowedChildren` propiedades en la plantilla. A continuación, puede especificar explícitamente que las páginas creadas a partir de una plantilla T tengan que ser páginas principales o secundarias de páginas creadas a partir de una plantilla T.
+Si desea agregar más restricciones, por ejemplo, con respecto a la jerarquía de plantillas, puede utilizar las propiedades `allowedParents/allowedChildren` en la plantilla. A continuación, puede especificar explícitamente que las páginas creadas a partir de una plantilla T tengan que ser páginas principales o secundarias de páginas creadas a partir de una plantilla T.
 
 ## Plantillas: fragmentos de contenido {#templates-content-fragments}
 
-Consulte [Plantillas de fragmentos de contenido](/help/sites-developing/content-fragment-templates.md).
+Ver [Plantillas de fragmentos de contenido](/help/sites-developing/content-fragment-templates.md).

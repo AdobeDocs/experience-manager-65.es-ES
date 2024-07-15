@@ -24,7 +24,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Si no utiliza Adobe AEM Experience Manager () como fuente de administración de contenido, consulte [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Si no usa Adobe AEM Experience Manager () como fuente de administración de contenido, consulte la [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## Administrador de AEM {#aem-administrator}
 
@@ -32,17 +32,17 @@ ht-degree: 2%
 >
 >**Requisito previo:**
 >
->Antes de empezar a configurar su entorno para AEM Mobile On-demand Services, consulte [AEM Mobile Application Dashboard o el Centro de control](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Antes de comenzar a configurar su entorno para AEM Mobile On-demand Services, consulte [Panel de aplicaciones de AEM Mobile o el Centro de control](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Un ***AEM administrador de*** es responsable de añadir una aplicación al catálogo de AEM Mobile, ya sea creando una aplicación con el asistente de creación o importando una aplicación existente. AEM administradores de que crean una aplicación con el de AEM Mobile *asistente de creación* normalmente, seleccione una de las plantillas de aplicación que desee entre las muestras de referencia predeterminadas de Adobe o (normalmente) una plantilla de aplicación personalizada creada por *AEM desarrolladores de.*
+AEM Un ***administrador de*** es responsable de agregar una aplicación al catálogo de AEM Mobile, ya sea creando una aplicación con el asistente para la creación o importando una aplicación existente. AEM Los administradores de la aplicación que crean una aplicación con el *asistente para la creación de aplicaciones* de AEM Mobile suelen seleccionar una de las plantillas de aplicaciones deseadas de las muestras de referencia listas para usar de Adobe AEM o (normalmente) una plantilla de aplicación personalizada creada por los desarrolladores de *.*
 
 >[!NOTE]
 >
->AEM Para obtener más información sobre la configuración de grupos de usuarios y permisos, haga clic en [Creación de funciones de usuario y concesión de acceso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) en la Ayuda en línea.
+>AEM Para obtener más información sobre cómo configurar grupos de usuarios y permisos, haga clic en [Crear roles de usuario y conceder acceso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) en la Ayuda en línea.
 
 AEM Un administrador de la aplicación es responsable de las siguientes tareas al crear una aplicación mediante AEM Mobile On-demand Services:
 
-* [Configuración de AEM Mobile](/help/mobile/aem-mobile-setup.md) que cubre
+* [Configurando AEM Mobile](/help/mobile/aem-mobile-setup.md) que cubre
 
    * Aprovisionamiento de AEM Mobile
    * Creación de proyectos para AEM Mobile

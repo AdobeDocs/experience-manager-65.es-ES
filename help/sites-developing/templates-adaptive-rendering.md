@@ -39,17 +39,17 @@ Recuerde al configurar los grupos de dispositivos:
 
 ## Configuración {#configuration}
 
-Los selectores de procesamiento adaptable se pueden configurar para grupos de dispositivos existentes o para [grupos que ha creado usted mismo.](/help/sites-developing/mobile.md#device-groups)
+Los selectores de procesamiento adaptable se pueden configurar para grupos de dispositivos existentes o para [grupos que usted mismo haya creado.](/help/sites-developing/mobile.md#device-groups)
 
-Para este ejemplo, va a configurar el grupo de dispositivos existente **Teléfonos inteligentes** para tener un selector de procesamiento adaptable como parte de **Página de experiencia** plantilla dentro de We.Retail.
+Para este ejemplo, va a configurar el grupo de dispositivos existente **Teléfonos inteligentes** para que tenga un selector de procesamiento adaptable como parte de la plantilla **Página de experiencia** en We.Retail.
 
 1. Edite el grupo de dispositivos que requiere un selector adaptable en `http://localhost:4502/miscadmin#/etc/mobile/groups`
 
-   Establezca la opción **Desactivar emulador** y guarde.
+   Establece la opción **Deshabilitar emulador** y guarda.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. El selector está disponible para **BlackBerry®** y **IPHONE 4** proporcionado por el grupo de dispositivos **Teléfono inteligente** se añade a las estructuras de plantilla y página en los pasos siguientes.
+1. El selector está disponible para **BlackBerry®** y **iPhone 4**, siempre que el grupo de dispositivos **Teléfono inteligente** se agregue a las estructuras de plantilla y página en los pasos siguientes.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -63,19 +63,19 @@ Para este ejemplo, va a configurar el grupo de dispositivos existente **Teléfon
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. Con el CRXDE Lite, permita que el grupo de dispositivos se utilice en el sitio agregándolo a la propiedad de cadena de varios valores `cq:deviceGroups` en la estructura del sitio.
+1. Con el CRXDE Lite, permita que se utilice el grupo de dispositivos en el sitio agregándolo a la propiedad de cadena de varios valores `cq:deviceGroups` en la estructura del sitio.
 
    `/content/<your-site>/jcr:content`
 
-   Por ejemplo, si desea permitir el **Teléfono inteligente** grupo de dispositivos:
+   Por ejemplo, si desea permitir el grupo de dispositivos **Teléfono inteligente**:
 
    `/content/we-retail/jcr:content`
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-Ahora, al usar el [emulador](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) en el editor de páginas (como cuando [modificación del diseño](/help/sites-authoring/responsive-layout.md)) y elige un dispositivo del grupo de dispositivos configurado, la página se procesa con un selector como parte de la dirección URL.
+Ahora, al usar el [emulador](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) en el editor de páginas (como cuando [modifica el diseño](/help/sites-authoring/responsive-layout.md)) y elige un dispositivo del grupo de dispositivos configurado, la página se procesa con un selector como parte de la dirección URL.
 
-En este ejemplo, al editar una página basada en la variable **Página de experiencia** y, al elegir iPhone 4 en el emulador, se procesa la página incluyendo el selector de como `arctic-surfing-in-lofoten.smart.html` en lugar de `arctic-surfing-in-lofoten.html`
+En este ejemplo, al editar una página basada en la plantilla **Experience Page** y elegir iPhone 4 en el emulador, la página se representa incluyendo el selector como `arctic-surfing-in-lofoten.smart.html` en lugar de `arctic-surfing-in-lofoten.html`
 
 También se puede llamar directamente a la página utilizando este selector.
 

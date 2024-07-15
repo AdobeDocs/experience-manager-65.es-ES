@@ -46,7 +46,7 @@ En la aplicación AEM Forms, el gesto de deslizar el dedo hacia la izquierda ab
 
    `"EventName Selector": "Function"`
 
-   Al almacenar en déclencheur un evento de JavaScript denominado `EventName`en un elemento de HTML especificado por `Selector`, el `Function`se llama.
+   Cuando se almacena en déclencheur un evento de JavaScript denominado `EventName` en un elemento HTML especificado por `Selector`, se llama al `Function`.
 
 1. Busque
 

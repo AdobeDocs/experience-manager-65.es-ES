@@ -19,21 +19,21 @@ ht-degree: 7%
 
 # Configurar formularios de búsqueda{#configuring-search-forms}
 
-Uso **Buscar Forms** AEM para personalizar la selección de predicados de búsqueda utilizados en los paneles de búsqueda disponibles en varias consolas de o paneles del entorno de creación. La personalización de estos paneles hace que la funcionalidad de búsqueda sea versátil según sus necesidades específicas.
+Use **Buscar en Forms AEM** para personalizar la selección de predicados de búsqueda utilizados en los paneles de búsqueda disponibles en varias consolas de o paneles del entorno de creación. La personalización de estos paneles hace que la funcionalidad de búsqueda sea versátil según sus necesidades específicas.
 
-A [rango de predicado](#predicates-and-their-settings)Las están disponibles de forma predeterminada. Puede agregar varios predicados, incluido (entre otros) el predicado Propiedad, para buscar recursos que coincidan con una sola propiedad especificada por usted. O bien, el predicado Opciones para buscar recursos que coincidan con uno o varios valores especificados para una propiedad en particular.
+Hay un [rango de predicados](#predicates-and-their-settings)s disponibles de forma predeterminada. Puede agregar varios predicados, incluido (entre otros) el predicado Propiedad, para buscar recursos que coincidan con una sola propiedad especificada por usted. O bien, el predicado Opciones para buscar recursos que coincidan con uno o varios valores especificados para una propiedad en particular.
 
-Puede [configuración de los formularios de búsqueda](#configuring-your-search-forms) se utiliza en varias consolas y en el explorador de recursos (al editar páginas). El [cuadros de diálogo para configurar estos formularios](#configuring-your-search-forms) se puede acceder a través de:
+Puede [configurar los formularios de búsqueda](#configuring-your-search-forms) que se usan en varias consolas y en el explorador de recursos (al editar páginas). Se puede acceder a los [cuadros de diálogo para configurar estos formularios](#configuring-your-search-forms) a través de:
 
 * **Herramientas**
 
    * **General**
 
-      * **Buscar Forms**
+      * **Buscar en Forms**
 
-Cuando acceda por primera vez a esta consola, verá que todas las configuraciones tienen un símbolo de candado. Esto indica que la configuración adecuada es la predeterminada (predeterminada) y no se puede eliminar. Después de personalizar la configuración, el bloqueo desaparece a menos que [elimine la configuración personalizada](#deleting-a-configuration-to-reinstate-the-default). En tal caso, se restablece el valor predeterminado (y el indicador de candado).
+Cuando acceda por primera vez a esta consola, verá que todas las configuraciones tienen un símbolo de candado. Esto indica que la configuración adecuada es la predeterminada (predeterminada) y no se puede eliminar. Después de haber personalizado la configuración, el bloqueo desaparece a menos que [elimine su configuración personalizada](#deleting-a-configuration-to-reinstate-the-default). En tal caso, se restablece el valor predeterminado (y el indicador de candado).
 
-![Ventana Buscar formularios](assets/chlimage_1-374.png)
+![Ventana de formularios de búsqueda](assets/chlimage_1-374.png)
 
 ## Configuraciones {#configurations}
 
@@ -63,7 +63,7 @@ Las configuraciones predeterminadas disponibles son las siguientes:
 
   Esta configuración define las opciones disponibles al buscar productos en el explorador de recursos (al editar una página).
 
-* **Editor de páginas (Dynamic Media Classic) [anteriormente Scene7] search)**:
+* **Editor de páginas (búsqueda de Dynamic Media Classic [anteriormente Scene7])**:
 
   Esta configuración define las opciones disponibles al buscar recursos de Scene7 en el explorador de recursos (al editar una página).
 
@@ -77,7 +77,7 @@ Las configuraciones predeterminadas disponibles son las siguientes:
 
 * **Carril de búsqueda de administración de Assets:**
 
-  Esta configuración define las opciones de búsqueda disponibles para el usuario al utilizar la consola Recursos.
+  Esta configuración define las opciones de búsqueda disponibles para el usuario al utilizar la consola de Assets.
 
 * **Carril de búsqueda de administración de catálogos:**
 
@@ -87,11 +87,11 @@ Las configuraciones predeterminadas disponibles son las siguientes:
 
   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar pedidos comerciales.
 
-* **Carril de búsqueda de administración de colecciones de productos:**
+* Carril de búsqueda de administración de **colecciones de productos:**
 
   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar colecciones de productos de comercio.
 
-* **Carril de búsqueda de administración de productos:**
+* Carril de búsqueda de administración de **productos:**
 
   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar productos de comercio.
 
@@ -194,7 +194,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Opciones </td>
-   <td><p>Las opciones son nodos de contenido creados por el usuario.</p> <p>Consulte <a href="#addinganoptionspredicate">Adición de un predicado de opciones</a> para obtener más información.</p> </td>
+   <td><p>Las opciones son nodos de contenido creados por el usuario.</p> <p>Consulte <a href="#addinganoptionspredicate">Agregar un predicado de opciones</a> para obtener más información.</p> </td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -212,7 +212,7 @@ Los siguientes predicados están disponibles, según la configuración:
     <ul>
      <li>Etiqueta de campo</li>
      <li>Nombre de propiedad*</li>
-     <li>Ruta del nodo de opciones<br /> </li>
+     <li>Ruta del nodo de opciones <br /> </li>
      <li>Selección única</li>
      <li>Descripción</li>
     </ul> </td>
@@ -276,7 +276,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Clasificación </td>
-   <td>Busque recursos según su clasificación.<br /> </td>
+   <td>Buscar recursos según su clasificación.<br /> </td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -287,7 +287,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Fecha relativa </td>
-   <td>Busque recursos en función de la fecha relativa de su creación<br /> </td>
+   <td>Buscar recursos en función de la fecha relativa de su creación <br /> </td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -339,7 +339,7 @@ Los siguientes predicados están disponibles, según la configuración:
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Están en desuso y solo están disponibles para la compatibilidad con versiones anteriores.
 >
->Esta información es solo de referencia. No cambiar `/libs`.
+>Esta información es solo de referencia. No cambie `/libs`.
 
 ### Configuración de predicado {#predicate-settings}
 
@@ -353,15 +353,15 @@ En función del predicado, hay una selección de opciones disponibles para la co
 
   Detalles descriptivos del usuario.
 
-* **Marcador**
+* **Marcador de posición**
 
   Texto vacío o el marcador de posición del predicado en caso de que no se introduzca ningún texto de filtrado.
 
 * **Nombre de propiedad**
 
-  Propiedad en la que se va a buscar. Utiliza una ruta relativa y los comodines `*/*/*` especifique la profundidad de la propiedad en relación con `jcr:content` nodo (cada asterisco representa un nivel de nodo).
+  Propiedad en la que se va a buscar. Utiliza una ruta relativa y los caracteres comodín `*/*/*` especifican la profundidad de la propiedad en relación con el nodo `jcr:content` (cada asterisco representa un nivel de nodo).
 
-  Si desea buscar únicamente en un nodo secundario de primer nivel del recurso que tiene la variable `x` propiedad en el `jcr:content` uso de nodo `*/jcr:content/x`
+  Si desea buscar únicamente en un nodo secundario de primer nivel del recurso que tiene la propiedad `x` en el nodo `jcr:content`, utilice `*/jcr:content/x`
 
 * **Profundidad de propiedad**
 
@@ -375,37 +375,37 @@ En función del predicado, hay una selección de opciones disponibles para la co
 
 * **Texto de intervalo**
 
-  La etiqueta del campo de rango en la variable **Intervalo de fechas** predicado.
+  La etiqueta del campo de intervalo en el predicado **Date Range**.
 
 * **Ruta de opción**
 
-  El usuario puede seleccionar la ruta mediante el Explorador de rutas en la pestaña de configuración de predicado. Después de seleccionar **+**, se utiliza el icono para añadir la selección a la lista de opciones válidas (y luego el icono **-** para eliminar, si es necesario).
+  El usuario puede seleccionar la ruta mediante el Explorador de rutas en la pestaña de configuración de predicado. Después de seleccionar **+**, se usa el icono para agregar la selección a la lista de opciones válidas (a continuación, se usa el icono **-** para quitar, si es necesario).
 
   Las opciones son nodos de contenido creados por el usuario que tienen la siguiente estructura:
 
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Ruta del nodo de opciones**
-Efectivamente igual que el **Ruta de opciones**, solo esto se encuentra en el campo de predicado común, el otro es específico para los recursos.
+Igual que en la práctica **Ruta de opciones**, solo que esto se encuentra en el campo de predicado común y el otro es específico para los recursos.
 
 * **Selección única**
 Si se selecciona, las opciones se representan como casillas de verificación que permiten solo una selección. Si se selecciona por error, se puede anular la selección de una casilla de verificación.
 
-* **Nombres de propiedades de publicación y Live Copy**
+* **Nombres de propiedades de Publish y Live Copy**
 Las etiquetas de las casillas de verificación de publicación y Live Copy para el predicado específico de Sites.
 
-* &amp;ast; en las etiquetas de campo de la **Configuración** significa que los campos son obligatorios y que, si se deja en blanco, aparece un mensaje de error.
+* La &amp;ast; de las etiquetas de campo de la ficha **Configuración** indica que los campos son obligatorios y, si se deja en blanco, aparece un mensaje de error.
 
 ## Configuración de Search Forms {#configuring-your-search-forms}
 
 ### Creación/apertura de una configuración personalizada {#creating-opening-a-customized-configuration}
 
-1. Vaya a **Herramientas** >>  **General** >> **Buscar Forms**.
+1. Vaya a **Herramientas** >> **General** >> **Buscar en Forms**.
 
 1. Seleccione la configuración que desee personalizar.
-1. Utilice el **Editar** para abrir la configuración y actualizarla.
-1. Si hay una nueva personalización, es probable que desee [añada nuevos campos de predicado y defina la configuración](#add-edit-a-predicate-field-and-define-field-settings) según sea necesario. Si ya existe una personalización, puede seleccionar un campo existente y [actualizar la configuración](#add-edit-a-predicate-field-and-define-field-settings).
-1. Seleccionar **Listo** para guardar la configuración.
+1. Use el icono **Editar** para abrir la configuración y actualizarla.
+1. Si hay una nueva personalización, es probable que desee [agregar nuevos campos de predicado y definir la configuración](#add-edit-a-predicate-field-and-define-field-settings) según sea necesario. Si hay una personalización existente, puede seleccionar un campo existente y [actualizar la configuración](#add-edit-a-predicate-field-and-define-field-settings).
+1. Seleccione **Listo** para guardar la configuración.
 
    >[!NOTE]
    >
@@ -418,43 +418,43 @@ Las etiquetas de las casillas de verificación de publicación y Live Copy para 
 
 Puede añadir o editar campos y definir o actualizar su configuración:
 
-1. [Abra la configuración personalizada](#creating-opening-a-customized-configuration) para actualizar.
-1. Si desea agregar un campo, abra el **Seleccionar predicado** y arrastre el predicado necesario a la ubicación requerida. Por ejemplo, la variable **Predicado de intervalo de fechas**:
+1. [Abra la configuración personalizada](#creating-opening-a-customized-configuration) para actualizarla.
+1. Si desea agregar un campo, abra la ficha **Seleccionar predicado** y arrastre el predicado requerido a la ubicación requerida. Por ejemplo, el **Predicado de intervalo de fechas**:
 
-   ![Edición de un formulario de búsqueda](assets/chlimage_1-375.png)
+   ![Editando un formulario de búsqueda](assets/chlimage_1-375.png)
 
 1. En función de si:
 
    * Va a añadir un campo:
 
-     Después de agregar el predicado, la variable **Configuración** se abre la pestaña y muestra las propiedades que se pueden definir.
+     Después de agregar el predicado, se abre la ficha **Configuración** y se muestran las propiedades que se pueden definir.
 
    * Desea actualizar un predicado existente:
 
-     Seleccione el campo de predicado (a la derecha) y abra la variable **Configuración** pestaña.
+     Seleccione el campo de predicado (a la derecha) y, a continuación, abra la ficha **Configuración**.
 
-   Por ejemplo, la configuración de **Predicado de intervalo de fechas**:
+   Por ejemplo, la configuración del **Predicado de intervalo de fechas**:
 
    ![Propiedades del predicado de intervalo de fechas](assets/chlimage_1-376.png)
 
-1. Realice los cambios necesarios y confirme con **Listo**.
+1. Realice los cambios según sea necesario y confirme con **Listo**.
 
 ### Previsualización de la configuración de búsqueda {#previewing-the-search-configuration}
 
 1. Seleccione el icono Vista previa:
 
-   ![Previsualizar formularios de búsqueda](do-not-localize/chlimage_1-31.png)
+   ![Vista previa de formularios de búsqueda](do-not-localize/chlimage_1-31.png)
 
 1. Esto muestra los formularios de búsqueda tal como se muestran (totalmente expandidos) en la columna Buscar de la consola adecuada.
 
    ![Vista previa del formulario de búsqueda](assets/chlimage_1-377.png)
 
-1. **Cerrar** la vista previa para que pueda devolver y finalizar la configuración.
+1. **Cerrar** la vista previa para que puedas regresar y finalizar la configuración.
 
 ### Eliminación de un campo de predicado {#deleting-a-predicate-field}
 
-1. [Abra la configuración personalizada](#creating-opening-a-customized-configuration) para actualizar.
-1. Seleccione el campo de predicado (a la derecha) y abra el **Configuración** y, a continuación, seleccione **Eliminar** (abajo a la izquierda).
+1. [Abra la configuración personalizada](#creating-opening-a-customized-configuration) para actualizarla.
+1. Seleccione el campo de predicado (a la derecha), abra la ficha **Configuración** y, a continuación, seleccione el icono **Eliminar** (abajo a la izquierda).
 
    ![Icono Eliminar](do-not-localize/chlimage_1-32.png)
 
@@ -472,9 +472,9 @@ Después de personalizar una configuración, se anulan los valores predeterminad
 
 La eliminación de una configuración personalizada se realiza desde la consola:
 
-1. Seleccione la configuración necesaria (por ejemplo, **Editor de páginas (búsqueda de párrafos)**) y luego el **Eliminar** en la barra de herramientas:
+1. Seleccione la configuración necesaria (por ejemplo, **Editor de páginas (búsqueda de párrafos)**) y, a continuación, el icono **Eliminar** de la barra de herramientas:
 
-   ![Eliminación de un formulario](assets/chlimage_1-378.png)
+   ![Eliminando un formulario](assets/chlimage_1-378.png)
 
 1. La configuración personalizada se elimina y se restaura el valor predeterminado (esto se indica con la reaparición del símbolo de candado en la consola).
 
@@ -490,28 +490,28 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
    Los nodos de las opciones individuales necesitan las propiedades:
 
-   * `jcr:title` - la etiqueta del campo que se mostrará en el carril de búsqueda
-   * `value` : el valor de propiedad en el que se va a buscar
+   * `jcr:title`: etiqueta de campo que se mostrará en el carril de búsqueda
+   * `value`: el valor de propiedad en el que se va a buscar
 
-   ![Agregar opciones en CRXDE](assets/chlimage_1-379.png)
+   ![Agregando opciones en CRXDE](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
-   >Hacer ***no*** cambiar cualquier cosa en `/libs` ruta.
+   >***no*** cambia nada en la ruta de acceso `/libs`.
    >
-   >Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+   >Esto se debe a que el contenido de `/libs` se sobrescribirá la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de características).
    >
    >El método recomendado para la configuración y otros cambios es:
    >
-   >1. Vuelva a crear el elemento necesario, tal como existe en `/libs`, en `/apps`. En este caso de:
+   >1. Vuelva a crear el elemento requerido, tal como existe en `/libs`, en `/apps`. En este caso de:
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. Realice cualquier cambio en `/apps.`
+   >1. Realizar cambios en `/apps.`
 
-1. Abra el **Buscar Forms** y seleccione la configuración que desee actualizar. Por ejemplo, **Carril de búsqueda de administración de sitios**.
+1. Abra la consola **Buscar en Forms** y seleccione la configuración que desee actualizar. Por ejemplo, **Carril de búsqueda de administración de sitios**.
 
-   Luego haga clic en **Editar formularios de búsqueda** icono.
+   Luego haga clic en el icono **Editar formularios de búsqueda**.
 
-1. Según la configuración, añada una **Opciones** o **Propiedad Options** a la configuración.
+1. Según la configuración, agregue una **Options** u **Options Property** a la configuración.
 1. Actualice los campos, en particular:
 
    * **Nombre de propiedad**
@@ -526,10 +526,10 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
      `/apps/cq/gui/content/common/options/predicates/templatetype`
 
-   ![Agregando ruta de propiedad](assets/chlimage_1-380.png)
+   ![Agregando ruta de acceso de propiedad](assets/chlimage_1-380.png)
 
-1. Seleccionar **Listo** para guardar la configuración.
-1. Vaya a la consola adecuada (en este ejemplo, **Sites**) y abra el **Buscar** carril. Los formularios de búsqueda recién definidos, junto con las distintas opciones, están visibles. Seleccione la opción necesaria para poder ver los resultados de búsqueda:
+1. Seleccione **Listo** para guardar la configuración.
+1. Vaya a la consola adecuada (en este ejemplo, **Sitios**) y abra el carril **Buscar**. Los formularios de búsqueda recién definidos, junto con las distintas opciones, están visibles. Seleccione la opción necesaria para poder ver los resultados de búsqueda:
 
    ![Los resultados finales](assets/chlimage_1-381.png)
 
@@ -545,15 +545,15 @@ En la tabla siguiente se enumeran los permisos necesarios para realizar acciones
   </tr>
   <tr>
    <td>Editar </td>
-   <td>Permisos de lectura y escritura en <code>/apps </code>nodo.</td>
+   <td>Permisos de lectura y escritura en el nodo <code>/apps </code>.</td>
   </tr>
   <tr>
    <td>Eliminar</td>
-   <td>Permisos de lectura, escritura y eliminación en <code>/apps</code> nodo</td>
+   <td>Permisos de lectura, escritura y eliminación en el nodo <code>/apps</code></td>
   </tr>
   <tr>
    <td>Vista previa</td>
-   <td>Permisos de lectura, escritura y eliminación en <code>/var/dam/content</code> nodo.<br /> Permisos de lectura y escritura en <code>/apps</code> nodo.</td>
+   <td>Permisos de lectura, escritura y eliminación en el nodo <code>/var/dam/content</code>.<br /> Permisos de lectura y escritura en el nodo <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>

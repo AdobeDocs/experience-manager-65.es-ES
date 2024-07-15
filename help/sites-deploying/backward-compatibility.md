@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Para obtener una lista de los cambios de contenido y configuración que no están dentro del ámbito del paquete de compatibilidad, consulte [AEM Reestructuración de repositorios en el sector de la](/help/sites-deploying/repository-restructuring.md).
+>AEM Para obtener una lista de los cambios de contenido y configuración que no están dentro del ámbito del paquete de compatibilidad, vea [Reestructuración del repositorio en el espacio de trabajo](/help/sites-deploying/repository-restructuring.md).
 
 En Adobe Experience Manager AEM () 6.5, todas las funciones se han desarrollado teniendo en cuenta la compatibilidad con versiones anteriores.
 
@@ -37,7 +37,7 @@ AEM AEM El paquete de compatibilidad permite ejecutar la compatibilidad en modo 
 >
 >AEM El paquete de compatibilidad es solo una solución temporal para aplazar el desarrollo necesario para ser compatible con la versión 6.5 de la versión de. El Adobe solo lo recomienda como última opción si no puede abordar los problemas de compatibilidad mediante el desarrollo inmediatamente después de la actualización. Además, Adobe recomienda cambiar al modo nativo y desinstalar el paquete de compatibilidad una vez que decida continuar con el desarrollo personalizado basado en 6.5 y disponer de la funcionalidad completa de 6.5.
 
-![malla](assets/sase.png)
+![sase](assets/sase.png)
 
 El paquete de compatibilidad tiene dos modos: **Enrutamiento habilitado** y **Enrutamiento deshabilitado**.
 
@@ -57,14 +57,14 @@ El modo de compatibilidad es para clientes que tienen personalizaciones de inter
 
 AEM El modo heredado es para clientes que tienen interfaces personalizadas basadas en código heredado o obsoleto de los que se ha movido el código del paquete de compatibilidad.
 
-![sapete](assets/sapte.png)
+![sapte](assets/sapte.png)
 
 ## Configuración {#how-to-set-up}
 
-El **AEM Paquete de compatibilidad de 6.4 para.5** se puede instalar como paquete utilizando el Administrador de paquetes. Puede descargar el [AEM Paquete de compatibilidad de.4 para 6.5 desde Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) sitio.
+AEM El paquete de compatibilidad de **6.4 para 6.5** se puede instalar como paquete mediante el Administrador de paquetes. AEM Puede descargar el [Paquete de compatibilidad de 6.4 para 6.5 de desde el sitio Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64).
 
 Una vez instalado el paquete de compatibilidad, el enrutamiento se puede habilitar o deshabilitar mediante un conmutador en la configuración OSGI, como se muestra a continuación:
 
-![Conmutadores de compatibilidad](assets/compat-switches.png)
+![Conmutadores compactos](assets/compat-switches.png)
 
 Una vez instalado y configurado el paquete de compatibilidad, las funciones se utilizan en función del modo de compatibilidad que se haya elegido.

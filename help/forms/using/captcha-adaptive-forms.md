@@ -46,14 +46,14 @@ Los usuarios de AEM Forms pueden utilizar el servicio reCAPTCHA de Google para i
 
 ### Configuración de reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
 
-1. Crear un [proyecto reCAPTCHA Enterprise](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) habilitado con [API de reCAPTCHA Enterprise](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
-1. [Obtener](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) el ID del proyecto.
-1. Crear un [Clave de API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) y una [clave del sitio para sitios web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
+1. Cree un [proyecto empresarial reCAPTCHA](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) habilitado con [API empresarial reCAPTCHA](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
+1. [Obtener](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) el identificador de proyecto.
+1. Cree una [clave API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) y una [clave de sitio para sitios web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. Crear un contenedor de configuración para los servicios en la nube.
 
    1. Vaya a **[!UICONTROL Herramientas > General > Explorador de configuración]**. Consulte la documentación del [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
    1. Haga lo siguiente para habilitar la carpeta global para configuraciones de nube u omita este paso para crear y configurar otra carpeta para configuraciones de servicios en la nube.
-      1. En el Explorador de configuración, seleccione **[!UICONTROL global]** carpeta y seleccione **[!UICONTROL Propiedades]**.
+      1. En el Explorador de configuración, seleccione la carpeta **[!UICONTROL global]** y seleccione **[!UICONTROL Propiedades]**.
       1. En el cuadro de diálogo Propiedades de configuración, habilite **[!UICONTROL Configuraciones de nube]**.
       1. Selecciona **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
 
@@ -65,8 +65,8 @@ Los usuarios de AEM Forms pueden utilizar el servicio reCAPTCHA de Google para i
    1. En la instancia de autor Experience Manager, vaya a ![herramientas-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. Selecciona **[!UICONTROL reCAPTCHA]**. Se abre la página de configuración. Seleccione el contenedor de configuración creado en el paso anterior y seleccione **[!UICONTROL Crear]**.
    1. Seleccione la versión como reCAPTCHA Enterprise y especifique el nombre, el ID de proyecto, la clave del sitio y la clave de API (obtenida en los pasos 2 y 3) para el servicio reCAPTCHA Enterprise.
-   1. Seleccione el tipo de clave, el tipo de clave debe ser el mismo que la clave del sitio configurada en el proyecto de Google Cloud, por ejemplo, **Clave de sitio de casilla** o **Clave de sitio basada en puntuación**.
-   1. Especifique una puntuación de umbral en el rango 0-1 ([Haga clic para obtener más información sobre la puntuación](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Las puntuaciones superiores o iguales a las puntuaciones de umbral identifican la interacción humana; de lo contrario, se considera interacción de bots.
+   1. Seleccione el tipo de clave, el tipo de clave debe ser el mismo que la clave del sitio configurada en el proyecto de Google Cloud, por ejemplo, **Clave de sitio de casilla de verificación** o **Clave de sitio basada en la puntuación**.
+   1. Especifique una puntuación de umbral en el intervalo de 0 a 1 ([Haga clic para obtener más información sobre la puntuación](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Las puntuaciones superiores o iguales a las puntuaciones de umbral identifican la interacción humana; de lo contrario, se considera interacción de bots.
 
       > Nota:
       >
@@ -74,7 +74,7 @@ Los usuarios de AEM Forms pueden utilizar el servicio reCAPTCHA de Google para i
 
    1. Selecciona **[!UICONTROL Crear]** para crear la configuración del servicio en la nube.
 
-   1. En el cuadro de diálogo Editar componente, especifique el nombre, el ID de proyecto, la clave del sitio, la clave de API (obtenida en los pasos 2 y 3), seleccione el tipo de clave e introduzca la puntuación de umbral. Seleccionar **[!UICONTROL Guardar configuración]** y luego seleccione **[!UICONTROL OK]** para completar la configuración.
+   1. En el cuadro de diálogo Editar componente, especifique el nombre, el ID de proyecto, la clave del sitio, la clave de API (obtenida en los pasos 2 y 3), seleccione el tipo de clave e introduzca la puntuación de umbral. Seleccione **[!UICONTROL Guardar configuración]** y, a continuación, seleccione **[!UICONTROL Aceptar]** para completar la configuración.
 
 Una vez habilitado el servicio empresarial de reCAPTCHA, estará disponible para su uso en formularios adaptables. Ver [el uso de CAPTCHA en los formularios adaptables](#using-reCAPTCHA).
 
@@ -88,7 +88,7 @@ Una vez habilitado el servicio empresarial de reCAPTCHA, estará disponible para
    1. Vaya a **[!UICONTROL Herramientas > General > Explorador de configuración]**. Consulte la documentación del [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
    1. Haga lo siguiente para habilitar la carpeta global para configuraciones de nube u omita este paso para crear y configurar otra carpeta para configuraciones de servicios en la nube.
 
-      1. En el Explorador de configuración, seleccione **[!UICONTROL global]** carpeta y seleccione **[!UICONTROL Propiedades]**.
+      1. En el Explorador de configuración, seleccione la carpeta **[!UICONTROL global]** y seleccione **[!UICONTROL Propiedades]**.
 
       1. En el cuadro de diálogo Propiedades de configuración, habilite **[!UICONTROL Configuraciones de nube]**.
       1. Selecciona **[!UICONTROL Guardar y cerrar]** para guardar la configuración y salir del cuadro de diálogo.
@@ -134,9 +134,9 @@ Para usar reCAPTCHA en formularios adaptables haga lo siguiente:
 1. En el menú desplegable **servicio Captcha**, seleccione **reCAPTCHA** para habilitarlo si lo configuró como se describe en el [servicio reCAPTCHA de Google](#google-reCAPTCHA).
 1. Seleccione una configuración en la lista desplegable Configuración.
 1. **Si la configuración seleccionada tiene la versión reCAPTCHA Enterprise**:
-   1. Puede seleccionar la configuración de nube reCAPTCHA con **tipo de clave** as **casilla de verificación**. En el tipo de clave de casilla de verificación, el mensaje de error personalizado aparece como un mensaje en línea si falla la validación captcha. Puede seleccionar el tamaño como **[!UICONTROL normal]** y **[!UICONTROL compacto]**.
-   1. Puede seleccionar la configuración de nube reCAPTCHA con **tipo de clave** as **basado en puntuación**. En el tipo de clave basada en puntuación, el mensaje de error personalizado se muestra como un mensaje emergente si falla la validación captcha.
-   1. Al seleccionar un **[!UICONTROL Referencia de enlace]** los datos enviados son datos enlazados; de lo contrario, son datos no enlazados. A continuación se muestran ejemplos XML de datos no enlazados y enlazados (con referencia de enlace como SSN) respectivamente, cuando se envía un formulario.
+   1. Puede seleccionar la configuración de nube reCAPTCHA con **tipo de clave** como **casilla de verificación**. En el tipo de clave de casilla de verificación, el mensaje de error personalizado aparece como un mensaje en línea si falla la validación captcha. Puede seleccionar el tamaño como **[!UICONTROL normal]** y **[!UICONTROL compacto]**.
+   1. Puede seleccionar la configuración de nube reCAPTCHA con **tipo de clave** como **basada en puntuación**. En el tipo de clave basada en puntuación, el mensaje de error personalizado se muestra como un mensaje emergente si falla la validación captcha.
+   1. Al seleccionar una **[!UICONTROL referencia de enlace]**, los datos enviados son datos enlazados; de lo contrario, son datos no enlazados. A continuación se muestran ejemplos XML de datos no enlazados y enlazados (con referencia de enlace como SSN) respectivamente, cuando se envía un formulario.
 
       ```xml
           <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -213,7 +213,7 @@ Para usar reCAPTCHA en formularios adaptables haga lo siguiente:
 
 
    **Si la configuración seleccionada tiene la versión reCAPTCHA v2**:
-   1. Seleccione el tamaño como **[!UICONTROL Normal]** o **[!UICONTROL Compacto]** para el widget reCAPTCHA. También puede seleccionar la variable **[!UICONTROL Invisible]** para mostrar el desafío CAPTCHA solo si hay actividad sospechosa. El distintivo **protegido por reCAPTCHA**, que se muestra a continuación, aparece en los formularios protegidos.
+   1. Seleccione el tamaño **[!UICONTROL Normal]** o **[!UICONTROL Compacto]** para el widget reCAPTCHA. También puede seleccionar la opción **[!UICONTROL Invisible]** para mostrar el desafío CAPTCHA solamente si hay actividad sospechosa. El distintivo **protegido por reCAPTCHA**, que se muestra a continuación, aparece en los formularios protegidos.
 
       ![Distintivo protegido por reCAPTCHA de Google](/help/forms/using/assets/google-recaptcha-v2.png)
 
@@ -238,7 +238,7 @@ Selecciona **[!UICONTROL Valor de moneda]** en el formulario y crea las siguient
 
 >[!NOTE]
 >
-> * Si selecciona la configuración de reCAPTCHA v2 con el tamaño como **[!UICONTROL Invisible]** o claves basadas en la puntuación de reCAPTCHA Enterprise, la opción mostrar/ocultar no es aplicable.
+> * Si selecciona la configuración de reCAPTCHA v2 con un tamaño de **[!UICONTROL Invisible]** o claves basadas en la puntuación empresarial de reCAPTCHA, la opción mostrar/ocultar no es aplicable.
 
 ### Validar CAPTCHA {#validate-captcha}
 
@@ -263,7 +263,7 @@ Para validar un CAPTCHA basado en condiciones y acciones del usuario:
    >[!NOTE]
    >
    >
-   > Si selecciona la configuración de reCAPTCHA v2 con el tamaño como **[!UICONTROL Invisible]** o reCAPTCHA Enterprise score based keys, entonces el Captcha válido en una acción del usuario no es aplicable.
+   > Si selecciona la configuración de reCAPTCHA v2 con un tamaño de **[!UICONTROL Invisible]** o claves basadas en la puntuación empresarial de reCAPTCHA, el valor de Captcha válido en una acción del usuario no es aplicable.
 
 [!DNL Experience Manager Forms] ofrece la API `ValidateCAPTCHA` para validar un CAPTCHA con condiciones predefinidas. Puede invocar la API utilizando una acción de envío personalizada o definiendo reglas sobre los componentes de un formulario adaptable.
 

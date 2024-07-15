@@ -52,7 +52,7 @@ Los desarrolladores son responsables de desarrollar y personalizar el proyecto p
 * Realizan el diseño.
 * Desarrollan los servicios y secuencias de comandos necesarias para implementar la funcionalidad requerida.
 
-La configuración del [desarrollo](/help/sites-developing/best-practices.md) El entorno puede depender de varios factores, aunque consta de:
+La configuración del entorno [development](/help/sites-developing/best-practices.md) puede depender de varios factores, aunque se compone de:
 
 * Un sistema de desarrollo integrado con control de versiones para proporcionar una base de código integrada. Se utiliza para combinar y consolidar código de los entornos de desarrollo individuales utilizados por cada desarrollador.
 * Un entorno personal para cada desarrollador que normalmente reside en su equipo local. A intervalos adecuados, el código se sincroniza con el sistema de control de versiones
@@ -61,7 +61,7 @@ Según la escala del sistema, el entorno de desarrollo puede tener instancias de
 
 ### Garantía de calidad {#quality-assurance}
 
-El equipo de garantía de la calidad utiliza este entorno para [prueba](/help/sites-developing/test-plan.md) su nuevo sistema; diseño y función. Debe tener entornos de creación y de publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto de todas las aplicaciones de pruebas.
+El equipo de garantía de la calidad utiliza este entorno para [probar](/help/sites-developing/test-plan.md) exhaustivamente el nuevo sistema; el diseño y la función. Debe tener entornos de creación y de publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto de todas las aplicaciones de pruebas.
 
 ### Ensayo {#staging}
 
@@ -139,6 +139,6 @@ El contenido de producción debe trasladarse del entorno de producción al entor
 Se puede transferir contenido:
 
 * Entre los distintos entornos, mediante la exportación e importación de paquetes.
-* Entre diferentes instancias: replicando directamente ([AEM replicación de](/help/sites-deploying/replication.md)), el contenido (mediante una conexión HTTP o HTTPS).
+* AEM Entre diferentes instancias: replicando directamente ([replicación de la](/help/sites-deploying/replication.md)), el contenido (usando una conexión HTTP o HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

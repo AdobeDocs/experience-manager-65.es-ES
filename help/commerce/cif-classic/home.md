@@ -21,8 +21,8 @@ AEM CIF En esta página se muestran los recursos informativos relacionados con l
 >
 >CIF La versión clásica de la está en modo de mantenimiento.
 >
->* Los nuevos proyectos deben utilizar [AEM CIF](/help/commerce/cif/introduction.md).
->* CIF El clásico existente debería [AEM CIF migrar a la](/help/commerce/cif/migration.md).
+>* AEM CIF Los nuevos proyectos deben usar [](/help/commerce/cif/introduction.md).
+>* CIF AEM CIF El clásico existente debería [migrar a la versión de la versión de](/help/commerce/cif/migration.md).
 
 ## CIF Artículos Clásicos Clave {#key-articles}
 

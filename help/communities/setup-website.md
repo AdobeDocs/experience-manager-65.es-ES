@@ -32,7 +32,7 @@ Para configurar el sitio web, las instrucciones siguientes describen las carpeta
 
   Aquí es donde residen las páginas web descargables.
 
-El código de este tutorial depende de que el nombre de la carpeta principal sea el mismo para la aplicación, el diseño y el contenido. Si elige otro nombre para el sitio web, reemplace siempre `an-scf-sandbox` con el nombre que ha elegido.
+El código de este tutorial depende de que el nombre de la carpeta principal sea el mismo para la aplicación, el diseño y el contenido. Si elige otro nombre para el sitio web, reemplace siempre `an-scf-sandbox` por el nombre que haya elegido.
 
 >[!NOTE]
 >
@@ -51,31 +51,31 @@ El directorio /apps en el repositorio contiene el código con implementa el comp
 
 El directorio /apps está protegido y no es accesible públicamente, como los directorios /content y /etc/designs.
 
-1. Crear `/apps/an-scf-sandbox` carpeta.
+1. Crear la carpeta `/apps/an-scf-sandbox`.
 
-   Uso de **[!UICONTROL CRXDE Lite]**, en el panel del explorador
+   Usando **[!UICONTROL CRXDE Lite]**, en el panel del explorador
 
-   1. Seleccione el `/apps` carpeta.
-   1. Clic con el botón derecho **[!UICONTROL Crear]**... o tire hacia abajo del **[!UICONTROL Crear...]** menú.
-   1. Seleccionar **[!UICONTROL Crear carpeta...]**.
-   1. En el **[!UICONTROL Crear carpeta]** diálogo, introduzca `an-scf-sandbox`.
-   1. Haz clic en **[!UICONTROL OK]**.
+   1. Seleccione la carpeta `/apps`.
+   1. Haz clic con el botón derecho en **[!UICONTROL Crear]**... o baja el menú **[!UICONTROL Crear...]**.
+   1. Seleccione **[!UICONTROL Crear carpeta...]**.
+   1. En el diálogo **[!UICONTROL Crear carpeta]**, escriba `an-scf-sandbox`.
+   1. Haga clic en **[!UICONTROL OK]**.
 
 1. Crear **[!UICONTROL componentes]** subcarpeta.
 
-   1. Seleccione el `/apps/an-scf-sandbox` carpeta.
-   1. Clic **[!UICONTROL Crear > Crear carpeta]**.
-   1. En el **[!UICONTROL Crear carpeta]** diálogo, introduzca **[!UICONTROL componentes]**.
-   1. Haz clic en **[!UICONTROL OK]**.
+   1. Seleccione la carpeta `/apps/an-scf-sandbox`.
+   1. Haga clic en **[!UICONTROL Crear > Crear carpeta]**.
+   1. En el diálogo **[!UICONTROL Crear carpeta]**, escriba **[!UICONTROL componentes]**.
+   1. Haga clic en **[!UICONTROL OK]**.
 
-1. Crear **[!UICONTROL templates]** subcarpeta.
+1. Crear **[!UICONTROL plantillas]** subcarpeta.
 
-   1. Seleccione el `/apps/an-scf-sandbox` carpeta.
-   1. Clic **[!UICONTROL Crear > Crear carpeta]**.
-   1. En el **[!UICONTROL Crear carpeta]** diálogo, introduzca **[!UICONTROL templates]**.
-   1. Haz clic en **[!UICONTROL OK]**.
+   1. Seleccione la carpeta `/apps/an-scf-sandbox`.
+   1. Haga clic en **[!UICONTROL Crear > Crear carpeta]**.
+   1. En el diálogo **[!UICONTROL Crear carpeta]**, escriba **[!UICONTROL plantillas]**.
+   1. Haga clic en **[!UICONTROL OK]**.
    1. Volver a seleccionar `/apps/an-scf-sandbox`.
-   1. Seleccionar **[!UICONTROL Guardar todo]**.
+   1. Seleccione **[!UICONTROL Guardar todo]**.
 
    Al igual que con cualquier proceso de edición, debe guardar con frecuencia. Si tiene problemas para introducir datos, puede deberse a que se ha agotado el tiempo de espera de inicio de sesión o a que debe guardar las ediciones anteriores.
 
@@ -87,21 +87,21 @@ El directorio /apps está protegido y no es accesible públicamente, como los di
 
 El directorio /etc/designs contiene las imágenes, los scripts y las hojas de estilo que se van a descargar junto con el contenido de la página.
 
-1. Para utilizar la herramienta Diseñador en la IU clásica, vaya a [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
+1. Para usar la herramienta Designer en la IU clásica, vaya a [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
-   Nota: Si utiliza el CRXDE Lite para crear un nodo de tipo `cq:Page`, el Control de acceso y la Replicación no se establecerían en la configuración predeterminada de una página.
+   Nota: Si utiliza el CRXDE Lite para crear un nodo de tipo `cq:Page`, el control de acceso y la replicación no se establecerían en la configuración predeterminada de una página.
 
-1. En el panel del explorador, seleccione **[!UICONTROL Diseños]** y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**.
+1. En el panel del explorador, seleccione la carpeta **[!UICONTROL Diseños]** y, a continuación, haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**.
 
    Escriba
 
    * Título: **[!UICONTROL Una zona protegida de SCF]**
    * Nombre: **[!UICONTROL an-scf-sandbox]**
-   * Seleccionar **[!UICONTROL Plantilla de página de diseño]**
+   * Seleccionar **[!UICONTROL plantilla de página de diseño]**
 
    Haga clic en **[!UICONTROL Crear]**.
 
-   ![design-template](assets/design-template.png)
+   ![plantilla de diseño](assets/design-template.png)
 
 1. Actualice el panel del explorador si no aparece la carpeta &quot;Zona protegida de SCF&quot;.
 
@@ -115,4 +115,4 @@ El directorio /etc/designs contiene las imágenes, los scripts y las hojas de es
 
 El directorio /content del repositorio es donde reside el contenido del sitio web. Las rutas en /content comprenden las rutas de la URL para las solicitudes del explorador.
 
-*Después* el [plantilla de página](initial-app.md#createthepagetemplate) se crea como parte de la aplicación inicial, el contenido de la página inicial se puede crear en función de la plantilla.... [**⇒**](initial-app.md)
+*Después* de crear la [plantilla de página](initial-app.md#createthepagetemplate) como parte de la aplicación inicial, el contenido de la página inicial se puede crear a partir de la plantilla.... [**⇒**](initial-app.md)

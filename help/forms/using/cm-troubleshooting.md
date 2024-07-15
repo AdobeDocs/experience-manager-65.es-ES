@@ -50,5 +50,5 @@ Restablezca la memoria caché de la carta en la instancia de publicación median
 1. Vaya a **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e inicie sesión como administrador.
 1. Seleccione **Configuraciones de Administración de correspondencia**.
 1. En **Configuraciones de Administración de correspondencia**, deshabilite **Habilitar memoria caché de la carta** y haga clic en **Guardar**.
-1. Marque **Habilitar memoria caché de carta** y luego haga clic en **Guardar**.
+1. Marque **Habilitar memoria caché de la carta** y haga clic en **Guardar**.
 1. Vuelva a intentar visualizar la carta.

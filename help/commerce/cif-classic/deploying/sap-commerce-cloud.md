@@ -29,26 +29,26 @@ ht-degree: 1%
 >
 >`Geometrixx Outdoors Site English (US)`
 
-Implementación de [Paquetes de comercio electrónico necesarios](#packages-needed-for-ecommerce-with-hybris) proporciona la funcionalidad completa del marco de comercio electrónico, junto con una implementación de referencia de la funcionalidad de comercio electrónico, tal como se proporciona con una implementación de hybris (incluido un catálogo de demostración)
+La implementación de los [paquetes de comercio electrónico necesarios](#packages-needed-for-ecommerce-with-hybris) proporciona todas las funciones del marco de comercio electrónico, junto con una implementación de referencia de la funcionalidad de comercio electrónico, tal como se proporciona con una implementación de hybris (incluido un catálogo de demostración)
 
 Esta opción está disponible en la rama en inglés (EE.UU.) ( `/content/geometrixx-outdoors/en_US`) del sitio de Geometrixx Outdoors:
 
 * [Información del producto](#productinformationwithcolorvariants) (con variantes de color cuando corresponda)
 
 * [Resumen del contenido del carro de compras](#shoppingcartcontentoverview)
-* [Registro de cliente](#customersignup) y [Inicio de sesión de cliente](#customersignin)
+* [Registro de cliente](#customersignup) y [Registro de cliente](#customersignin)
 
 * [Acceso a la consola de administración de hybris](#accesstothehybrismanagementconsole)
 
 ### Requisitos técnicos - hybris Server {#technical-requirements-hybris-server}
 
-La extensión hybris del marco de integración de comercio electrónico se ha actualizado para admitir Hybris 5 (de forma predeterminada), aunque se mantiene la compatibilidad con versiones anteriores de [Hybris 4](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#developing-for-hybris).
+La extensión hybris de eCommerce Integration Framework se ha actualizado para admitir Hybris 5 (de forma predeterminada), manteniendo al mismo tiempo la compatibilidad con versiones anteriores de [Hybris 4](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
 >* Compatible con las versiones 18.11 y posteriores.
->* Necesita Java™ 7 para ejecutar el [servidor hybris 5.](https://www.sap.com/products/crm.html)
->* El complemento hybris, el [Acelerador de telecomunicaciones](https://www.sap.com/products/crm.html)AEM , no es compatible con la extensión de.
+>* Necesita Java™ 7 para ejecutar el servidor [hybris 5.](https://www.sap.com/products/crm.html)
+>* AEM El complemento hybris, [Acelerador de telecomunicaciones](https://www.sap.com/products/crm.html), no es compatible con la extensión de.
 >
 
 ### Paquetes necesarios para el comercio electrónico con hybris {#packages-needed-for-ecommerce-with-hybris}
@@ -75,12 +75,12 @@ Para instalar la funcionalidad de comercio electrónico, necesita:
 
 Para instalar una configuración completa (con el catálogo de demostración, Geometrixx Outdoors), los pasos básicos son los siguientes:
 
-1. [AEM Instalación de](/help/sites-deploying/deploy.md).
+1. AEM [Instalar](/help/sites-deploying/deploy.md).
 1. Instalación del paquete Geometrixx-all
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. Instale los paquetes de contenido de demostración con la variable [Administrador de paquetes](/help/sites-administering/package-manager.md):
+1. Instale los paquetes de contenido de demostración con el [Administrador de paquetes](/help/sites-administering/package-manager.md):
 
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
@@ -88,9 +88,9 @@ Para instalar una configuración completa (con el catálogo de demostración, Ge
 1. [Descargue y cree su servidor hybris](#download-and-build-your-hybris-server).
 1. Construya su catálogo en su motor de comercio electrónico:
 
-   1. [Configurar la tienda de Geometrixx Outdoor](#setup-the-geometrixx-outdoors-store).
+   1. [Configurar la tienda de Geometrixx para exteriores](#setup-the-geometrixx-outdoors-store).
 
-1. [Autor](/help/sites-authoring/qg-page-authoring.md) AEM cualquier página complementaria que necesite en la creación de la página de.
+1. AEM [Autor](/help/sites-authoring/qg-page-authoring.md) cualquier página adicional que necesite en el trabajo de la creación de la página de la página de la página de la página de la página de la página de la página de la.
 
 >[!CAUTION]
 >
@@ -98,7 +98,7 @@ Para instalar una configuración completa (con el catálogo de demostración, Ge
 
 >[!NOTE]
 >
->Para desarrolladores, [Documentación de API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) también está disponible para descargar.
+>Para los desarrolladores, [la documentación de la API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) también está disponible para descargar.
 
 ### Descargue y cree su servidor hybris {#download-and-build-your-hybris-server}
 
@@ -110,15 +110,15 @@ Los pasos de este procedimiento permiten descargar y crear el servidor hybris. T
 
 >[!NOTE]
 >
->Para completar esto, necesita lo siguiente [Fantástico](https://groovy-lang.org/) instalado en el sistema.
+>Para completar esto, necesitas instalar [Groovy](https://groovy-lang.org/) en tu sistema.
 
-1. Descargue la **hybris Commerce Suite** distribución desde el sitio de descarga de hybris.
+1. Descargue la distribución **hybris Commerce Suite** desde el sitio de descarga de hybris.
 
    >[!CAUTION]
    >
    >Necesita una cuenta (de hybris) para acceder a esto.
 
-1. Descomprima el archivo de distribución en la ubicación requerida (denominada &lt;hybris-root-directory>).
+1. Descomprima el archivo de distribución en la ubicación requerida (denominado &lt;hybris-root-directory>).
 1. Desde la línea de comandos, ejecute lo siguiente:
 
    ```shell
@@ -134,7 +134,7 @@ Los pasos de este procedimiento permiten descargar y crear el servidor hybris. T
    >
    >`ant clean all`
    >
-   >Prensa `Return` cuando sea necesario.
+   >Presione `Return` cuando sea necesario.
 
 1. Descargue los siguientes archivos en la carpeta raíz de la distribución de hybris extraída,
 
@@ -170,13 +170,13 @@ Los pasos de este procedimiento permiten descargar y crear el servidor hybris. T
    >
    >Según el sistema, varios de estos pasos pueden tardar varios minutos en completarse.
 
-1. En el explorador, vaya a **consola de administración de hybris** a las:
+1. En su explorador, vaya a la **consola de administración de hybris** en:
 
    [http://localhost:9002](http://localhost:9002)
 
-1. Clic **Inicializar** y, a continuación, confirme la acción de inicialización (ya que elimina los datos existentes).
+1. Haga clic en **Inicializar** y confirme la acción de inicialización (ya que elimina los datos existentes).
 
-   El progreso se muestra en la consola, con `FINISHED` que indica finalización.
+   El progreso se muestra en la consola, `FINISHED` indica que se ha completado.
 
    >[!NOTE]
    >
@@ -193,7 +193,7 @@ Este procedimiento carga y configura el almacén de demostración: Geometrixx On
    sh hybrisserver.sh
    ```
 
-1. En el explorador, vaya a **consola de administración de hybris** a las:
+1. En su explorador, vaya a la **consola de administración de hybris** en:
 
    [https://localhost:9002/backoffice](https://localhost:9002/backoffice)
 
@@ -201,27 +201,27 @@ Este procedimiento carga y configura el almacén de demostración: Geometrixx On
    * nombre de usuario: admin
    * contraseña: nimda
 
-1. En la barra lateral de navegación, expanda **Sistema** y **Herramientas**. A continuación seleccione **Importar** para abrir **Asistente: importación de CSV** ventana.
-1. En el **Configuración** pestaña, **Cargar** lo siguiente **Importar archivo**:
+1. Desde la barra lateral, expanda **Sistema** y **Herramientas**. A continuación, seleccione **Importar** para abrir la ventana **Asistente: Importar CSV**.
+1. En la ficha **Configuración**, **Cargar** el siguiente **archivo de importación**:
 
 [Obtener archivo](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
 
-1. Configure las variables **Configuración regional** hasta:
+1. Establecer la **configuración regional** en:
 
    `en_US - English (United States)`
 
-1. Abra el **Recursos** pestaña.
-1. **Cargar** lo siguiente **Media-Zip**:
+1. Abra la ficha **Recursos**.
+1. **Cargar** los siguientes **medios-zip**:
 
 [Obtener archivo](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
-1. Clic **Inicio** para importar los archivos especificados. El **Resultado** La pestaña muestra cualquier entrada de registro.
+1. Haga clic en **Iniciar** para importar los archivos especificados. La ficha **Result** muestra las entradas de registro.
 
-1. Clic **Listo** para cerrar la ventana de importación.
+1. Haga clic en **Listo** para cerrar la ventana de importación.
 
-1. En la barra lateral, seleccione **Sistema**, entonces **Herramientas**, entonces **Importar**.
+1. En la barra lateral, selecciona **Sistema**, luego **Herramientas** y después **Importar**.
 
-1. **Cargar** lo siguiente **Importar archivo**:
+1. **Cargar** el siguiente **archivo de importación**:
 
 [Obtener archivo](/help/sites-deploying/assets/base-store.csv)
 
@@ -229,13 +229,13 @@ Este procedimiento carga y configura el almacén de demostración: Geometrixx On
 
 [Obtener archivo](/help/sites-deploying/assets/base-store-5_7.csv)
 
-1. Configure las variables **Configuración regional** hasta:
+1. Establecer la **configuración regional** en:
 
    `en_US - English (United States)`
 
-1. Clic **Inicio** para importar los archivos especificados. El **Resultado** La pestaña muestra cualquier entrada de registro.
+1. Haga clic en **Iniciar** para importar los archivos especificados. La ficha **Result** muestra las entradas de registro.
 
-1. Clic **Listo** para cerrar la ventana de importación.
+1. Haga clic en **Listo** para cerrar la ventana de importación.
 
 1. Ahora puede utilizar la cabina de productos para ver los catálogos y los productos importados:
 

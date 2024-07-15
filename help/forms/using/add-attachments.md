@@ -20,7 +20,7 @@ ht-degree: 76%
 
 ## Agregar archivos adjuntos en formularios sincronizados con el servidor de flujo de trabajo de AEM Forms (AEM Forms en JEE) {#adding-annotations}
 
-La aplicación de AEM Forms permite adjuntar imágenes, notas garabateadas y notas de texto al formulario sincronizado con el servidor JEE de AEM Forms. Si el formulario se carga desde un servidor del flujo de trabajo de AEM Forms, los archivos adjuntos se agregan al formulario. Puede seleccionar el botón Archivo adjunto ![attachments-app](assets/attachments-app.png) para ver todos los archivos adjuntos de un formulario juntos. La notificación roja especifica el número de archivos adjuntos en el formulario. Si no hay datos adjuntos en el formulario, no verá el botón de notificaciones rojo. Si no hay datos adjuntos en el formulario, al seleccionar el botón Datos adjuntos ![sujetar](assets/attch.png), tiene opciones para adjuntar fotos o garabatos.
+La aplicación de AEM Forms permite adjuntar imágenes, notas garabateadas y notas de texto al formulario sincronizado con el servidor JEE de AEM Forms. Si el formulario se carga desde un servidor del flujo de trabajo de AEM Forms, los archivos adjuntos se agregan al formulario. Puede seleccionar el botón de datos adjuntos ![attachments-app](assets/attachments-app.png) para ver todos los archivos adjuntos de un formulario juntos. La notificación roja especifica el número de archivos adjuntos en el formulario. Si no hay datos adjuntos en el formulario, no verá el botón de notificaciones rojo. Si no hay datos adjuntos en el formulario, al seleccionar el botón de datos adjuntos ![adjuntar](assets/attch.png), obtendrá opciones para adjuntar fotos o garabatos.
 
 Las opciones son las siguientes:
 
@@ -47,15 +47,15 @@ Puede usar el botón **+** de la pantalla de archivos adjuntos para adjuntar otr
 
 Puede utilizar la cámara del dispositivo móvil o guardar imágenes en el dispositivo para adjuntar una imagen en el formulario.
 
-1. Seleccione el botón Archivo adjunto ![sujetar](assets/attch.png) en la parte inferior de la ventana.
-1. Seleccionar **Galería** o **Cámara** en la ventana emergente que aparece.
+1. Seleccione el botón de datos adjuntos ![attch](assets/attch.png) en la parte inferior de la ventana.
+1. Seleccione **Galería** o **Cámara** en la ventana emergente que aparece.
 1. En función de la opción seleccionada, realice lo siguiente:
 
    1. Si selecciona **Cámara**.
 
-      Tome una foto. A continuación, seleccione la **Uso** ![use-pic](assets/use-pic.png) botón.
+      Tome una foto. A continuación, seleccione el botón **Usar** ![use-pic](assets/use-pic.png).
 
-      O seleccione la opción **Repetir** ![retake](assets/retake.png) para volver a tomar la fotografía.
+      O bien, selecciona el botón **Repetir** ![repetir](assets/retake.png) para volver a tomar la fotografía.
 
    1. Si selecciona **Galería**.
 
@@ -65,8 +65,8 @@ Puede utilizar la cámara del dispositivo móvil o guardar imágenes en el dispo
 
 La opción **Notas** permite agregar garabatos hechos a mano alzada y archivos adjuntos de texto en el formulario.
 
-1. Seleccione el botón Archivo adjunto ![sujetar](assets/attch.png) en la parte inferior de la ventana.
-1. Seleccionar **Notas** en la ventana emergente que aparece.
+1. Seleccione el botón de datos adjuntos ![attch](assets/attch.png) en la parte inferior de la ventana.
+1. Seleccione **Notas** en la ventana emergente que aparece.
 1. En la interfaz de usuario de Notas que se inicia, realice un garabato a mano alzada.
 
    ![Interfaz de Garabatos](assets/scribble-ui.png)

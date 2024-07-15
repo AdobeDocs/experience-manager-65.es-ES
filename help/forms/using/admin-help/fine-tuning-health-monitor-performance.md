@@ -65,16 +65,16 @@ AEM La recopilación de las estadísticas del sistema que rellenan el Monitor de
 ## Agregar opciones de Java a JBoss {#add-java-options-to-jboss}
 
 1. Detenga el servidor de aplicaciones JBoss.
-1. Abra el *[raíz de appserver]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y añada cualquiera de las opciones de Java según sea necesario.
+1. Abra *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y agregue cualquiera de las opciones de Java según sea necesario.
 1. Reinicie el servidor.
 
 ## Añadir opciones de Java a WebLogic {#add-java-options-to-weblogic}
 
-1. Inicie la consola de administración de WebLogic escribiendo https://[nombre de host]: &#39;port&#39;/console en la línea URL de un navegador web.
+1. Inicie la consola de administración de WebLogic escribiendo https://[nombre de host]:&#39;puerto&#39;/consola en la línea URL de un explorador web.
 1. Escriba el nombre de usuario y la contraseña que ha creado para el dominio de WebLogic Server y haga clic en Registrar en Centro de cambios y haga clic en Bloquear y editar.
 1. En Estructura de dominio, haga clic en Entorno > Servidores y, en el panel derecho, haga clic en el nombre del servidor administrado.
 1. En la siguiente pantalla, haga clic en la pestaña Configuración > pestaña Inicio del servidor.
-1. En el cuadro Argumentos, agregue los argumentos necesarios al final del contenido actual. Por ejemplo, si agrega - `Dadobe.healthmonitor.enabled=false` deshabilita el Monitor de estado.
+1. En el cuadro Argumentos, agregue los argumentos necesarios al final del contenido actual. Por ejemplo, al agregar - `Dadobe.healthmonitor.enabled=false` se deshabilita el Monitor de estado.
 1. Haga clic en Guardar y luego en Activar cambios.
 1. Reinicie el servidor administrado por WebLogic.
 

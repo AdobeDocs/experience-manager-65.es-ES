@@ -29,14 +29,14 @@ SPA SPA AEM La función de creación de ofrece una solución completa para la as
 
 ## Introducción {#introduction}
 
-AEM SPA SPA SPA AEM Gracias al contrato sencillo y ligero que requiere la aplicación y que se establece entre el Editor de la y el Editor de la, es sencillo tomar una aplicación JavaScript existente y adaptarla para usarla con un en el uso.
+AEM SPA SPA Gracias al contrato sencillo y ligero que requiere el usuario y que se establece entre el editor de la y el editor de la misma, es sencillo tomar una aplicación de JavaScript SPA AEM existente y adaptarla para su uso con un en la aplicación de la que ya se dispone en el editor de la misma, ya que es un asunto sencillo.
 
 SPA Este artículo ilustra el ejemplo del componente meteorológico en la muestra de We.Retail Journal.
 
-Debe estar familiarizado con las [SPA AEM estructura de una aplicación de para la](/help/sites-developing/spa-getting-started-react.md) antes de leer este artículo.
+SPA AEM Antes de leer este artículo, debería estar familiarizado con la estructura [de una aplicación de para el recurso de la aplicación de la aplicación de la aplicación de la](/help/sites-developing/spa-getting-started-react.md).
 
 >[!CAUTION]
->Este documento usa el [Aplicación de diario We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) únicamente con fines de demostración. No lo utilice para ningún trabajo de proyecto.
+>Este documento usa la [aplicación We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) únicamente con fines de demostración. No lo utilice para ningún trabajo de proyecto.
 >
 >Cualquier proyecto AEM debería utilizar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA que utilizan React o Angular y aprovecha el SDK de SPA.
 
@@ -62,20 +62,20 @@ El cambio se mantiene y el componente se actualiza automáticamente con nuevos d
 
 ### Implementación del componente meteorológico {#weather-component-implementation}
 
-El componente meteorológico se basa en un componente React disponible públicamente, llamado [Tiempo abierto en React](https://www.npmjs.com/package/react-open-weather). SPA Se ha adaptado para que funcione como un componente dentro de la aplicación de ejemplo de We.Retail Journal.
+El componente meteorológico se basa en un componente React disponible públicamente, llamado [React Open Weather](https://www.npmjs.com/package/react-open-weather). SPA Se ha adaptado para que funcione como un componente dentro de la aplicación de ejemplo de We.Retail Journal.
 
 Los siguientes son fragmentos de la documentación de NPM del uso del componente React Open Weather.
 
 ![screen_shot_2018-06-08at144723](assets/screen_shot_2018-06-08at144723.png) ![screen_shot_2018-06-08at144215](assets/screen_shot_2018-06-08at144215.png)
 
-Revisión del código del componente meteorológico personalizado ( `Weather.js`) en la aplicación We.Retail Journal:
+Revisando el código del componente meteorológico personalizado (`Weather.js`) en la aplicación We.Retail Journal:
 
 * **Línea 16**: El widget React Open Weather se carga según sea necesario.
-* **Línea 46**: La `MapTo` AEM SPA relaciona este componente de React con un componente correspondiente de manera que se pueda editar en el Editor de la.
+* AEM SPA **Línea 46**: La función `MapTo` relaciona este componente de React con un componente de correspondiente para que se pueda editar en el Editor de la.
 
-* **Líneas 22-29**: La `EditConfig` está definida, comprobando si la ciudad se ha rellenado y definiendo el valor si está vacío.
+* **Líneas 22-29**: se define `EditConfig`, comprobando si la ciudad se ha rellenado y definiendo el valor si está vacío.
 
-* **Líneas 31-44**: El componente Tiempo amplía la variable `Component` y proporciona los datos necesarios tal como se definen en la documentación de uso de NPM para el componente React Open Weather y procesa el componente.
+* **Líneas 31-44**: El componente Meteorológico amplía la clase `Component` y proporciona los datos necesarios definidos en la documentación de uso de NPM para el componente React Open Weather y procesa el componente.
 
 ```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -130,4 +130,4 @@ SPA Aunque ya debe existir un componente back-end, el desarrollador front-end pu
 
 ## Siguiente paso {#next-step}
 
-SPA AEM Para obtener más información sobre el desarrollo de la para obtener más información, consulte el artículo [SPA AEM Desarrollo de la](/help/sites-developing/spa-architecture.md).
+SPA AEM SPA AEM Para obtener más información acerca del desarrollo de la para obtener más información, consulte el artículo [Desarrollo de la para el usuario ](/help/sites-developing/spa-architecture.md).

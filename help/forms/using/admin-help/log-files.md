@@ -20,19 +20,19 @@ ht-degree: 3%
 
 Los eventos, como los errores en tiempo de ejecución o de inicio, se registran en los archivos de registro del servidor de aplicaciones. Si tiene algún problema al implementar en el servidor de aplicaciones, puede utilizar los archivos de registro para ayudarle a encontrar el problema. Puede abrir los archivos de registro con cualquier editor de texto.
 
-Los siguientes archivos de registro se encuentran en la variable `[appserver root]/server/'server'/log` directorio:
+(JBoss) Los siguientes archivos de registro se encuentran en el directorio `[appserver root]/server/'server'/log`:
 
 * boot.log
 * server.log.*[aaaa-mm-dd]*
 * server.log
 
-(WebLogic) Los archivos de registro de dominio se encuentran en la `[appserverdomain]` y los archivos de registro del servidor se encuentran en la `[appserverdomain]/servers/[appserver name]/logs` directorio:
+(WebLogic) Los archivos de registro del dominio se encuentran en el directorio `[appserverdomain]` y los archivos de registro del servidor se encuentran en el directorio `[appserverdomain]/servers/[appserver name]/logs`:
 
 * `access.log`
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) Los siguientes archivos de registro se encuentran en la `[appserver root]/profiles/default/logs/[appserver name]` directorio:
+(WebSphere) Los siguientes archivos de registro se encuentran en el directorio `[appserver root]/profiles/default/logs/[appserver name]`:
 
 * SystemErr.log
 * SystemOut.log

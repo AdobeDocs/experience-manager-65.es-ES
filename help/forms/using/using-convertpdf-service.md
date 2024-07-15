@@ -1,6 +1,6 @@
 ---
 title: Servicio ConvertPDF
-description: Utilice el servicio Adobe Experience Manager Forms ConvertPDF para convertir documentos de PDF en archivos PostScript o archivos de imagen.
+description: Utilice el servicio Adobe Experience Manager Forms ConvertPDF para convertir documentos de PDF en archivos de PostScript o de imagen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services

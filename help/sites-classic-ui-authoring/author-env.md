@@ -20,13 +20,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La siguiente documentación se centra en la IU clásica. Para obtener información sobre la creación en la IU moderna y táctil, consulte la [Documentación de creación estándar](/help/assets/assets.md).
+>La siguiente documentación se centra en la IU clásica. Para obtener información sobre la creación en la IU moderna y táctil, consulte la [documentación de creación estándar](/help/assets/assets.md).
 
 El entorno de creación permite realizar tareas relacionadas con lo siguiente:
 
-* [Creación](/help/sites-authoring/author.md) (incluido [creación de páginas](/help/sites-authoring/qg-page-authoring.md) y [administrar recursos](/help/assets/assets.md))
+* [Creación](/help/sites-authoring/author.md) (incluyendo [creación de páginas](/help/sites-authoring/qg-page-authoring.md) y [administración de recursos](/help/assets/assets.md))
 
-* [Administración](/help/sites-administering/administer-best-practices.md) tareas que necesita al generar y mantener el contenido del sitio web
+* [Administrar](/help/sites-administering/administer-best-practices.md) tareas que necesita al generar y mantener el contenido del sitio web
 
 Se proporcionan dos interfaces gráficas de usuario para conseguirlo, a las que se puede acceder mediante cualquier navegador moderno:
 
@@ -36,7 +36,7 @@ Se proporcionan dos interfaces gráficas de usuario para conseguirlo, a las que 
    * Es predominantemente verde.
    * Fue diseñado para su uso en dispositivos de escritorio.
    * Ya no se mantiene.
-   * La siguiente documentación se centra en esta IU clásica. Para obtener información sobre la creación en la IU moderna y táctil, consulte la [Documentación de creación estándar](/help/sites-authoring/author.md).
+   * La siguiente documentación se centra en esta IU clásica. Para obtener información sobre la creación en la IU moderna y táctil, consulte la [documentación de creación estándar](/help/sites-authoring/author.md).
 
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -44,8 +44,8 @@ Se proporcionan dos interfaces gráficas de usuario para conseguirlo, a las que 
 
    * AEM Esta es la interfaz de usuario moderna y estándar de la interfaz de usuario de la.
    * Es predominantemente gris, con una interfaz limpia y plana.
-   * Está diseñado para su uso tanto en dispositivos táctiles como de escritorio (optimizado para el tacto). Sin embargo, el aspecto es el mismo en todos los dispositivos [visualización y selección de los recursos](/help/sites-authoring/basic-handling.md) difiere ligeramente (pulse o haga clic).
-   * Consulte la [Documentación de creación estándar](/help/sites-authoring/author.md) para obtener más información sobre cómo crear contenido con la IU táctil. La siguiente documentación se centra en la IU clásica.
+   * Está diseñado para su uso tanto en dispositivos táctiles como de escritorio (optimizado para el tacto). El aspecto es el mismo en todos los dispositivos, aunque [ver y seleccionar tus recursos](/help/sites-authoring/basic-handling.md) difiere un poco (se puede tocar o hacer clic).
+   * Consulte la [documentación de creación estándar](/help/sites-authoring/author.md) para obtener más información sobre cómo crear contenido mediante la interfaz de usuario táctil. La siguiente documentación se centra en la IU clásica.
 
    * Escritorio:
 

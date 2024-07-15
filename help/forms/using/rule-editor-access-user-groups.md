@@ -24,7 +24,7 @@ ht-degree: 61%
 
 Existen diferentes tipos de usuarios con diversas aptitudes que trabajan con formularios adaptables. Aunque es posible que los usuarios expertos tengan los conocimientos necesarios para trabajar con scripts y reglas complejas, puede haber usuarios de nivel básico que únicamente necesiten trabajar con el diseño y las propiedades básicas de los formularios adaptables.
 
-AEM Forms permite limitar el acceso de los usuarios al Editor de reglas en función de su rol o función. En los ajustes del servicio de configuración de Forms adaptable, puede especificar la variable [grupos de usuarios](/help/sites-administering/security.md) que pueden ver y acceder al editor de reglas.
+AEM Forms permite limitar el acceso de los usuarios al Editor de reglas en función de su rol o función. En los ajustes del servicio de configuración de Forms adaptable, puede especificar los [grupos de usuarios](/help/sites-administering/security.md) que pueden ver y acceder al editor de reglas.
 
 ## Especificar qué grupos de usuarios pueden acceder al Editor de reglas {#specify-user-groups-that-can-access-rule-editor}
 
@@ -33,9 +33,9 @@ AEM Forms permite limitar el acceso de los usuarios al Editor de reglas en funci
 
    ![1-2](assets/1-2.png)
 
-1. En la ventana Consola web, busque y haga clic en **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]**. **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]** aparece el cuadro de diálogo. No cambie ningún valor y haga clic en **Guardar**.
+1. En la ventana Consola web, busque y haga clic en **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]**. Aparece el cuadro de diálogo **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]**. No cambie ningún valor y haga clic en **Guardar**.
 
-   Crea el archivo /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config en el repositorio CRX.
+   Crea el archivo /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config en el repositorio de CRX.
 
 1. Inicie sesión en CRXDE como administrador. Abra el archivo /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config para editarlo.
 1. Utilice la siguiente propiedad para especificar el nombre de un grupo que puede acceder al Editor de reglas (por ejemplo, RuleEditorsUserGroup) y haga clic en **Guardar todo**.
@@ -48,7 +48,7 @@ AEM Forms permite limitar el acceso de los usuarios al Editor de reglas en funci
 
    ![Crear usuario](assets/create_user_new.png)
 
-   Ahora, cuando un usuario que no forma parte del grupo de usuarios especificado (aquí RuleEditorsUserGroup) pulse un campo, aparecerá el icono Editar regla ( ![edit-rules1](assets/edit-rules1.png)) no está disponible para ellos en la barra de herramientas de componentes:
+   Ahora, cuando un usuario que no forma parte del grupo de usuarios especificado (aquí RuleEditorsUserGroup) pulse un campo, el icono Editar regla ( ![edit-rules1](assets/edit-rules1.png)) no estará disponible para ellos en la barra de herramientas Componentes:
 
    ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 

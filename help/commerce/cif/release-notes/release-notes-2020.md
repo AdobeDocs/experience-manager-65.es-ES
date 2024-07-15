@@ -116,7 +116,7 @@ ht-degree: 8%
 
 * CIF CIF El sitio de referencia de Venia se extrajo del repositorio de tipo de archivo de GitHub y ahora es un repositorio independiente de GitHub.
 
-* CIF AEM Tipo de archivo de combinado con el tipo de archivo del proyecto de. Para nuevos proyectos, utilice [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) como punto de partida.
+* CIF AEM Tipo de archivo de combinado con el tipo de archivo del proyecto de. AEM Para nuevos proyectos, use [Arquetipo de proyecto de](https://github.com/adobe/aem-project-archetype) como punto de partida.
 
 * Se agregó la administración de la libreta de direcciones para permitir que los usuarios que iniciaron sesión administren sus direcciones.
 
@@ -192,7 +192,7 @@ CIF Esta es la primera versión de los componentes principales de la aplicación
 
 ### Novedades {#what-is-new-april}
 
-* CIF Los ajustes de configuración para el conector de están unificados y simplificados. Para obtener más información, cierre de compra [Primeros pasos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=es) o [AEM CIF Nueva configuración del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=es)
+* CIF Los ajustes de configuración para el conector de están unificados y simplificados. AEM CIF Para obtener más información, vea [Introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=es) o [Nueva configuración del proyecto de la](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=es)
 
 ### Qué se ha mejorado {#what-is-improved-april}
 

@@ -51,7 +51,7 @@ Por ejemplo, si se comparan versiones, la versión actual se muestra a la izquie
 
 El origen de ambas páginas se muestra claramente en la barra de encabezado de la parte superior de la ventana del navegador.
 
-![Origen mostrado en el encabezado](assets/chlimage_1-109.png)
+![Source mostrado en el encabezado](assets/chlimage_1-109.png)
 
 La comparación de diferencias detecta los cambios en el nivel de componente y de HTML. Los elementos modificados se resaltan con colores diferentes.
 
@@ -77,7 +77,7 @@ Para centrarse en un contenido determinado, puede hacer clic en el icono de pant
 
 El lado seleccionado llenará toda la ventana, pero la barra permanecerá en la parte superior para que pueda cambiar entre las dos páginas.
 
-![La barra superior permite cambiar entre páginas](assets/chlimage_1-110.png)
+![La barra en la parte superior le permite cambiar entre las páginas](assets/chlimage_1-110.png)
 
 También puede cerrar la vista de pantalla completa haciendo clic en el icono para salir del modo de pantalla completa.
 
@@ -101,4 +101,4 @@ Hay algunas situaciones en las que la comparación de diferencias de la página 
 
 >[!NOTE]
 >
->Para obtener más información sobre el funcionamiento del mecanismo de diferencia de página y las limitaciones que pueden afectar a dicho mecanismo, consulte la [documentación para desarrolladores](/help/sites-developing/pagediff.md) de esta función.
+>Para obtener más información sobre el funcionamiento del mecanismo de diferencia de página y las limitaciones que pueden afectar a dicho mecanismo, consulte la [documentación para desarrolladores](/help/sites-developing/pagediff.md) de esta característica.

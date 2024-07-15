@@ -105,7 +105,7 @@ Cuando abre y reclama una tarea de un grupo o lista compartida, la tarea se muev
 
 Después de abrir una tarea, las pestañas que se muestran en el panel principal y las herramientas disponibles dependen de la tarea. Las pestañas que puede ver se describen a continuación:
 
-* **Resumen de tareas**: cuando se abre una tarea, el panel Resumen de tareas le permite mostrar información sobre la tarea, si existe, mediante una URL especificada en el proceso del paso Asignar tarea. Si utiliza el Panel de resumen de tareas, se puede mostrar información adicional y relevante para una tarea a fin de agregar más valor para el usuario final de AEM Forms Workspace. Esta pestaña no está disponible si la dirección URL del resumen de tareas no existe.
+* **Resumen de tareas**: cuando se abre una tarea, el panel Resumen de tareas le permite mostrar información sobre la tarea, si existe, mediante una dirección URL especificada en el proceso del paso Asignar tarea. Si utiliza el Panel de resumen de tareas, se puede mostrar información adicional y relevante para una tarea a fin de agregar más valor para el usuario final de AEM Forms Workspace. Esta pestaña no está disponible si la dirección URL del resumen de tareas no existe.
 
 * **Detalles**: proporciona información sobre la tarea y el proceso actuales a los que pertenece.
 
@@ -198,7 +198,7 @@ Se le puede permitir agregar, actualizar, eliminar o guardar archivos adjuntos l
    >
    >Para obtener más información, consulte Guardar borrador periódicamente en [Preferencias de administración](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. En el cuadro de diálogo Guardar como borrador, especifique un nombre único para la tarea y seleccione **OK**.
+1. En el cuadro de diálogo Guardar como borrador, especifique un nombre único para la tarea y seleccione **Aceptar**.
 
    ![saveasdraftdialog_name](assets/saveasdraftdialog_name.png)
 

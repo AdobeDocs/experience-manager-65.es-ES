@@ -20,15 +20,15 @@ ht-degree: 0%
 
 AEM Analytics le permite realizar un seguimiento de la interacción del usuario con el sitio web. Como desarrollador, es posible que tenga que:
 
-* Rastree cómo los visitantes interactúan con los componentes. Esto se puede hacer con [Eventos personalizados.](#custom-events)
-* [Acceder a valores en ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
-* [Añadir llamadas de retorno de registro](#adding-record-callbacks).
+* Rastree cómo los visitantes interactúan con los componentes. Esto se puede hacer con [eventos personalizados.](#custom-events)
+* [Valores de acceso en ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
+* [Agregar devoluciones de llamadas de registro](#adding-record-callbacks).
 
 >[!NOTE]
 >
->Esta información es básicamente genérica, pero utiliza [Adobe Analytics](/help/sites-administering/adobeanalytics.md) para ver ejemplos específicos.
+>Básicamente, esta información es genérica, pero usa [Adobe Analytics](/help/sites-administering/adobeanalytics.md) para ejemplos específicos.
 >
->Para obtener información general sobre el desarrollo de componentes y cuadros de diálogo, consulte [Desarrollo de componentes](/help/sites-developing/components.md).
+>Para obtener información general sobre el desarrollo de componentes y cuadros de diálogo, vea [Desarrollar componentes](/help/sites-developing/components.md).
 
 ## Eventos personalizados {#custom-events}
 
@@ -38,7 +38,7 @@ Los eventos personalizados hacen un seguimiento de cualquier elemento que depend
 
 Esto se puede hacer con el pseudoatributo `data-tracking` (el atributo de registro anterior sigue siendo compatible con la compatibilidad con versiones anteriores). Puede añadir esto a cualquier etiqueta de HTML.
 
-La sintaxis para `data-tracking` es
+La sintaxis de `data-tracking` es
 
 * `data-tracking="{'event': ['eventName'], 'values': {'key': 'value', 'nextKey': 'nextValue'}, componentPath: 'myapp/component/mycomponent'}"`
 
@@ -59,11 +59,11 @@ Un ejemplo podría tener el siguiente aspecto:
 </span>
 ```
 
-Al cargar la página, todos `data-tracking` Los atributos se recopilan y agregan al almacén de eventos de ContextHub, donde se pueden asignar a eventos de Adobe Analytics. Adobe Analytics no rastreará los eventos que no estén asignados. Consulte [Conexión a Adobe Analytics](/help/sites-administering/adobeanalytics.md) para obtener más información sobre la asignación de eventos.
+Al cargar la página, se recopilarán todos los atributos de `data-tracking` y se agregarán al almacén de eventos de ContextHub, donde se pueden asignar a eventos de Adobe Analytics. Adobe Analytics no rastreará los eventos que no estén asignados. Consulte [Conectarse a Adobe Analytics](/help/sites-administering/adobeanalytics.md) para obtener más información sobre la asignación de eventos.
 
 ### Seguimiento de eventos personalizados después de cargar la página {#tracking-custom-events-after-page-load}
 
-Para realizar un seguimiento de los eventos que se producen después de cargar una página (como las interacciones del usuario), utilice el `CQ_Analytics.record` Función JavaScript:
+Para hacer un seguimiento de los eventos que se producen después de cargar una página (como las interacciones del usuario), use la función JavaScript `CQ_Analytics.record`:
 
 * `CQ_Analytics.record({event: 'eventName', values: { valueName: 'VALUE' }, collect: false, options: { obj: this, defaultLinkType: 'X' }, componentPath: '<%=resource.getResourceType()%>'})`
 
@@ -72,12 +72,12 @@ Donde
 * `events` es una cadena o una matriz de cadenas (para varios eventos).
 
 * `values` contiene todos los valores que se van a rastrear
-* `collect` es opcional y devuelve una matriz que contiene el evento y el objeto de datos.
-* `options` es opcional y contiene opciones de seguimiento de vínculos como un elemento HTML `obj` y ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
+* `collect` es opcional y devolverá una matriz que contiene el evento y el objeto de datos.
+* `options` es opcional y contiene opciones de seguimiento de vínculos como el elemento HTML `obj` y ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 
 * `componentPath` es un atributo necesario y se recomienda establecerlo en `<%=resource.getResourceType()%>`
 
-Por ejemplo, con la siguiente definición, un usuario hace clic en **Saltar al principio** el vínculo provocará los dos eventos, `jumptop` y `headlineclick`, que se activará:
+Por ejemplo, con la siguiente definición, si un usuario hace clic en el vínculo **Saltar al principio**, se activarán los dos eventos, `jumptop` y `headlineclick`:
 
 ```xml
 <h1 data-tracking="{event: 'headline', values: {level:'1'}, componentPath: '<%=resource.getResourceType()%>'}">
@@ -87,11 +87,11 @@ Por ejemplo, con la siguiente definición, un usuario hace clic en **Saltar al p
 
 ## Acceso a los valores en ContextHub {#accessing-values-in-the-contexthub}
 
-La API de JavaScript de ContextHub tiene un `getStore(name)` función que devuelve el almacén especificado, si está disponible. La tienda tiene un `getItem(key)` función que devuelve el valor de la clave especificada, si está disponible. Uso del `getKeys()` función es posible recuperar una matriz de claves definidas para el almacén específico.
+La API de JavaScript de ContextHub tiene una función `getStore(name)` que devuelve el almacén especificado, si está disponible. El almacén tiene una función `getItem(key)` que devuelve el valor de la clave especificada, si está disponible. Mediante la función `getKeys()` es posible recuperar una matriz de claves definidas para el almacén específico.
 
-Se le pueden notificar los cambios de valor en un almacén enlazando una función utilizando `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` función.
+Se le pueden notificar los cambios de valor en un almacén enlazando una función mediante la función `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)`.
 
-La mejor manera de recibir notificaciones sobre la disponibilidad inicial de ContextHub es utilizar `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` función.
+La mejor manera de recibir notificaciones sobre la disponibilidad inicial de ContextHub es utilizar la función `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);`.
 
 **Eventos adicionales para ContextHub:**
 
@@ -105,7 +105,7 @@ Específico de la tienda:
 
 >[!NOTE]
 >
->Consulte también la información completa [Referencia de API de ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Ver también la [Referencia de la API de ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
 
 ## Adición de devoluciones de llamada de registro {#adding-record-callbacks}
 

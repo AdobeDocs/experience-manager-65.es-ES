@@ -26,13 +26,13 @@ Para obtener más información, consulte lo siguiente:
 
 >[!NOTE]
 >
->Dado que el marco de comercio electrónico se puede utilizar con cualquier solución de comercio electrónico, consulte [Desarrollo (genérico)](/help/commerce/cif-classic/developing/generic.md) para obtener más información sobre las posibilidades de desarrollo.
+>Dado que el marco de comercio electrónico se puede usar con cualquier solución de comercio electrónico, consulte [Desarrollo (genérico)](/help/commerce/cif-classic/developing/generic.md) para obtener más información sobre las posibilidades de desarrollo.
 
 >[!NOTE]
 >
->Para utilizar el marco de integración con proveedores de comercio electrónico externos, primero debe instalar los paquetes necesarios. Para obtener más información, consulte [Implementar eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Para utilizar el marco de integración con proveedores de comercio electrónico externos, primero debe instalar los paquetes necesarios. Para obtener más información, consulte [Implementación del comercio electrónico](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Para obtener información sobre los conceptos y la administración de las implementaciones de comercio electrónico, consulte [Administración de eCommerce](/help/commerce/cif-classic/administering/ecommerce.md).
+>Para obtener información sobre los conceptos y la administración de las implementaciones de comercio electrónico, consulte [Administración de comercio electrónico](/help/commerce/cif-classic/administering/ecommerce.md).
 
 ## Documentación de API {#api-documentation}
 
@@ -40,4 +40,4 @@ Los paquetes proporcionan la API de comercio electrónico:
 
 `com.adobe.cq.commerce.*`
 
-Consulte la [Documentación de API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) para obtener más información.
+Consulte la [documentación de la API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) para obtener más información.

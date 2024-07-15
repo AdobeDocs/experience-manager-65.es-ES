@@ -23,11 +23,11 @@ AEM En la siguiente sección se tratan algunos problemas que pueden producirse a
 
 >[!NOTE]
 >
->AEM Si está solucionando problemas relacionados con la creación de documentos en la documentación de, consulte la sección [Solución de problemas para autores.](/help/sites-authoring/troubleshooting.md)
+>AEM Si está solucionando problemas en la creación de documentos en el sitio de trabajo, consulte [Solución de problemas para autores.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
->Cuando experimenta problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) para su instancia (versión y paquetes de servicio).
+>Si tiene problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) de su instancia (versiones y paquetes de servicio).
 
 ## Escenarios de resolución de problemas para administradores {#troubleshooting-scenarios-for-administrators}
 
@@ -78,8 +78,8 @@ El volcado de hilos es una lista de todos los hilos Java™ que están activos a
 
 ### Uso del volcado de hilos Sling {#using-sling-thread-dumper}
 
-1. Abra el **AEM Consola web de**; por ejemplo, en `https://localhost:4502/system/console/`.
-1. Seleccione el **Threads** bajo **Estado** pestaña.
+1. AEM Abra la **consola web de**; por ejemplo, en `https://localhost:4502/system/console/`.
+1. Seleccione la ficha **Threads** bajo **estado**.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -87,7 +87,7 @@ El volcado de hilos es una lista de todos los hilos Java™ que están activos a
 
 1. AEM Busque el PID (ID de proceso) de la instancia de Java™ de la.
 
-   Por ejemplo, puede utilizar `ps -ef` o `jps`.
+   Por ejemplo, puede usar `ps -ef` o `jps`.
 
 1. Ejecutar:
 
@@ -97,11 +97,11 @@ El volcado de hilos es una lista de todos los hilos Java™ que están activos a
 
 >[!NOTE]
 >
->Puede anexar los volcados de procesos a un archivo de registro utilizando el `>>` redirección de salida:
+>Puede anexar los volcados de subprocesos a un archivo de registro utilizando la redirección de salida `>>`:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte la [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) para obtener más información
+Consulte la documentación de [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) para obtener más información
 
 ### Comprobación de sesiones JCR sin cerrar {#checking-for-unclosed-jcr-sessions}
 
@@ -111,14 +111,14 @@ AEM Cuando la funcionalidad está desarrollada para WCM, se pueden abrir sesione
 * Puede ver gran parte de CacheManager: resizeAll entradas en el archivo de registro; el siguiente número (size=&lt;x>) muestra el número de cachés, cada sesión abre varias cachés.
 * De vez en cuando, el sistema se queda sin memoria (después de unas pocas horas, días o semanas, según la gravedad).
 
-Para analizar las sesiones no cerradas y averiguar qué código no está cerrando una sesión, consulte el artículo de la Base de conocimiento [Analizar sesiones no cerradas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Para analizar las sesiones no cerradas y averiguar qué código no cierra una sesión, consulte el artículo de Knowledge Base [Analizar sesiones no cerradas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
 
 ### Uso de la consola web de Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
 El estado de los paquetes OSGi también puede proporcionar una indicación temprana de posibles problemas.
 
-1. Abra el **AEM Consola web de**; por ejemplo, en `https://localhost:4502/system/console/`.
-1. Seleccionar **Paquetes** bajo **OSGI** pestaña.
+1. AEM Abra la **consola web de**; por ejemplo, en `https://localhost:4502/system/console/`.
+1. Seleccione **paquetes** en la ficha **OSGI**.
 1. Marque:
 
    * el estado de los paquetes. Si alguno de ellos está Inactivo o Insatisfecho, intente detener y reiniciar el paquete. Si el problema persiste, investigue más a fondo con otros métodos.

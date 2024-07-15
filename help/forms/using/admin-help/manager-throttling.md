@@ -56,11 +56,11 @@ Puede configurar la restricción para Work Manager, de modo que los elementos de
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>
-   <td><p>Establezca esta opción como <code>true</code> para habilitar el modo de depuración o en false para deshabilitarlo. </p><p>En el modo de depuración, se registran los mensajes relativos a las infracciones de directivas de Work Manager y a las acciones de pausa/reanudación de Work Manager. Establezca esta opción en true solo cuando solucione problemas.</p></td>
+   <td><p>Establezca esta opción en <code>true</code> para habilitar el modo de depuración, o en false para deshabilitarlo. </p><p>En el modo de depuración, se registran los mensajes relativos a las infracciones de directivas de Work Manager y a las acciones de pausa/reanudación de Work Manager. Establezca esta opción en true solo cuando solucione problemas.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.enabled</code></td>
-   <td><p>Establezca esta opción como <code>true</code> para habilitar la restricción en función de la configuración de control de memoria que se describe a continuación, o para <code>false</code> para deshabilitar la restricción.</p></td>
+   <td><p>Establezca esta opción en <code>true</code> para habilitar la restricción basada en la configuración de control de memoria que se describe a continuación, o en <code>false</code> para deshabilitar la restricción.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.high-limit</code></td>
@@ -80,10 +80,10 @@ Puede configurar la restricción para Work Manager, de modo que los elementos de
 **Agregar opciones de Java a JBoss**
 
 1. Detenga el servidor de aplicaciones JBoss.
-1. Abra el *[raíz de appserver]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y añada cualquiera de las opciones de Java según sea necesario, con el formato `-Dproperty=value`.
+1. Abra *[appserver root]*/bin/run.bat (Windows) o run.sh (Linux o UNIX) en un editor y agregue cualquiera de las opciones de Java según sea necesario, en el formato `-Dproperty=value`.
 1. Reinicie el servidor.
 
-**Añadir opciones de Java a WebLogic**
+**Agregar opciones de Java a WebLogic**
 
 1. Inicie la consola de administración de WebLogic escribiendo `https://[host name]:[port]/console` en un explorador web.
 1. Escriba el nombre de usuario y la contraseña que ha creado para el dominio de WebLogic Server y haga clic en Registrar en Centro de cambios y haga clic en Bloquear y editar.

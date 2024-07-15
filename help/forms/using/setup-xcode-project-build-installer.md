@@ -23,7 +23,7 @@ AEM Forms proporciona el código fuente completo de la aplicación de AEM Forms.
 Para obtener la fuente de la aplicación de AEM Forms, realice los siguientes pasos:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Seleccionar **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
+1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.

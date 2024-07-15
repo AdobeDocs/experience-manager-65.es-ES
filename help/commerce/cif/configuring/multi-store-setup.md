@@ -32,13 +32,13 @@ AEM AEM CIF Para conectar un sitio de y los componentes principales de la a una 
 
 ## Configuración {#configuration}
 
-1. Configure varias tiendas y vistas de las tiendas según el patrón descrito en [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+1. Configure varias tiendas y vistas de tiendas según el patrón descrito en [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 2. AEM Asegúrese de que funcione la conexión entre y Adobe Commerce.
 
 3. Cree una configuración secundaria de la configuración del CIF de Cloud Service siguiendo estos pasos:
 
-   * AEM En el paso de la página, vaya a Herramientas > General > [Explorador de configuración](/help/sites-administering/configurations.md#using-configuration-browser)
+   * AEM En la página de inicio, vaya a Herramientas > General > [Explorador de configuración](/help/sites-administering/configurations.md#using-configuration-browser)
    * Seleccione la configuración base que ha creado
    * Cree una configuración siguiendo los pasos descritos anteriormente en el punto 2
 
@@ -54,7 +54,7 @@ AEM AEM CIF Para conectar un sitio de y los componentes principales de la a una 
    * Navegue hasta la región o la raíz de idioma de la estructura del sitio, por ejemplo, /content/venia/us _o_ /content/venia/us/es para la página de muestra de Venia
    * Seleccione la página y abra las propiedades de página
    * Seleccione la pestaña Avanzadas.
-   * En el `Configuration` , seleccione la configuración que creó en el paso
+   * En la sección `Configuration`, seleccione la configuración que creó en el paso
 
 ## Recursos adicionales
 

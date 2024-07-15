@@ -31,7 +31,7 @@ Consulte lo siguiente:
 * [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
 * [Segmentación de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
-Anteriormente, debe tener [AEM integrado con Adobe Campaign](/help/sites-administering/campaign.md).
+AEM Anteriormente, debe tener [integrado con el de Adobe Campaign](/help/sites-administering/campaign.md).
 
 Además, si desea personalizar las integraciones, consulte los temas siguientes:
 

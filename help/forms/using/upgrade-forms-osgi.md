@@ -44,7 +44,7 @@ Haga lo siguiente para actualizar de AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 For
 1. Instalar el paquete de complementos para AEM Forms. A continuación se detallan los pasos que debe seguir:
 
    1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-   1. Seleccionar **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
+   1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
    1. En la sección **[!UICONTROL Filtros]**:
       1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
       1. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.

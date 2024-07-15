@@ -21,37 +21,37 @@ ht-degree: 1%
 
 ## Introducción {#introduction}
 
-El `Community Activity List` Este componente permite agregar información de tendencias sobre las publicaciones y las vistas de los miembros, así como las publicaciones y las vistas del contenido.
+El componente `Community Activity List` le permite agregar información de tendencias con respecto a las publicaciones y vistas de los miembros, así como publicaciones y vistas del contenido.
 
 El documento describe:
 
-* Añadir el `Community Activity List` componente a [sitio comunitario](/help/communities/overview.md#community-sites).
+* Agregando el componente `Community Activity List` a [sitio de la comunidad](/help/communities/overview.md#community-sites).
 
-* Ajustes de configuración para `Community Activity List` componente.
+* Ajustes de configuración para el componente `Community Activity List`.
 
 ### Requisito {#requirement}
 
-Datos de la `Community Activity List` solo está disponible cuando Adobe Analytics tiene licencia y está configurado para el sitio de la comunidad.
+Los datos de `Community Activity List` solo están disponibles cuando Adobe Analytics tiene licencia y está configurado para el sitio de la comunidad.
 
-Consulte [Configuración de Analytics para funciones de Communities](/help/communities/analytics.md).
+Consulte [Configuración de Analytics para funciones de comunidades](/help/communities/analytics.md).
 
 ### Agregar una lista de actividades de la comunidad a una página {#adding-a-community-activity-list-to-a-page}
 
-Para agregar un `Community Activity List` a una página en modo de autor, busque el componente `Communities / Community Activity List` y arrástrela a su lugar en una página.
+Para agregar un componente `Community Activity List` a una página en modo de autor, busque el componente `Communities / Community Activity List` y arrástrelo a su lugar en una página.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
 Cuando se coloca por primera vez en una página de un sitio de la comunidad, así es como aparece el componente:
 
-![actividad de la comunidad](assets/community-activity.png)
+![actividad-comunidad](assets/community-activity.png)
 
 ### Configurar la lista de actividades de comunidad  {#configuring-community-activity-list}
 
-Seleccione el colocado `Community Activity List` y, a continuación, seleccione el componente `Configure` para abrir el cuadro de diálogo de edición.
+Seleccione el componente `Community Activity List` colocado y, a continuación, seleccione el icono `Configure` para poder abrir el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
-En el **Comentarios** , especifique si aparecen los comentarios de los archivos cargados y cómo:
+En la ficha **Comentarios**, especifique si los comentarios de los archivos cargados aparecen y cómo:
 
 ![propiedades](assets/activity-list-properties.png)
 
@@ -66,12 +66,12 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
   El valor predeterminado es `Members`.
 
-* **Mostrar título**
+* **Título para mostrar**
 
   Título descriptivo que se mostrará sobre los datos, como `Trending Content`.
 El valor predeterminado es sin título.
 
-* **Mostrar recuento**
+* **Recuento de pantalla**
 
   Número de elementos que se van a enumerar.
 El valor predeterminado es 10.
@@ -81,7 +81,7 @@ El valor predeterminado es 10.
   Seleccione una de las siguientes opciones:
 
    * `Views`(visitas a la página)
-   * `Posts`(creación de UGC)
+   * `Posts`(creando UGC)
    * `Follows`
    * `Likes`
 
@@ -100,24 +100,24 @@ El valor predeterminado es 10.
 
   El valor predeterminado es `Total`.
 
-* **Ruta de contexto**
+* **Ruta de acceso de contexto**
 
   Esto permite definir el ámbito de la actividad en un subconjunto del sitio, como un blog específico, por ejemplo.
 De forma predeterminada, se muestra todo el sitio de la comunidad.
 
-* **Suma de recuento de miembros**
+* **Agregación de recuento de miembros**
 
-  Cuando no está seleccionada (desactivada), solo se cuentan las publicaciones de nivel superior. Por ejemplo, si el contexto es la página raíz (el valor predeterminado), un `Activity Type` de `Posts` nunca muestra ninguna actividad, ya que no hay capacidad para publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
+  Cuando no está seleccionada (desactivada), solo se cuentan las publicaciones de nivel superior. Por ejemplo, si el contexto es la página raíz (la predeterminada), entonces un `Activity Type` de `Posts` nunca mostrará ninguna actividad, ya que no hay capacidad para publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
 La opción predeterminada está activada.
 
 ### Página de ejemplo con cuatro componentes {#example-page-with-components}
 
-**Visitantes principales** config: Tipo = Miembros, Tipo de actividad = Vistas
+**Configuración de visitantes principales**: Tipo = Miembros, Tipo de actividad = Vistas
 
-**Colaboradores principales** config: Tipo = Miembros, Tipo de actividad = Entradas
+**Colaboradores principales** configuración: Tipo = Miembros, Tipo de actividad = Publicaciones
 
-**Contenido principal** config: Tipo = Contenido, Tipo de actividad = Vistas,
+**Contenido principal** configuración: Tipo = Contenido, Tipo de actividad = Vistas,
 
-**Contenido de tendencias** config: Tipo = Contenido, Tipo de actividad = Publicaciones
+**Contenido de tendencias** configuración: Tipo = Contenido, Tipo de actividad = Publicaciones
 
 ![componentes](assets/activity-list-components.png)

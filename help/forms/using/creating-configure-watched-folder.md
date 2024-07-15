@@ -36,9 +36,9 @@ Antes de configurar una carpeta vigilada, asegúrese de lo siguiente:
 
 Realice los siguientes pasos para crear una carpeta vigilada:
 
-1. Seleccionar **Adobe Experience Manager** en la esquina superior izquierda de la pantalla.
-1. Seleccionar **Herramientas** > **Forms** > **Configurar carpeta inspeccionada.** Se mostrará una lista de las carpetas vigiladas ya configuradas.
-1. Seleccionar **Nuevo**. Se mostrará una lista de los campos necesarios para crear la carpeta vigilada:
+1. Seleccione el icono **Adobe Experience Manager** en la esquina superior izquierda de la pantalla.
+1. Seleccione **Herramientas** > **Forms** > **Configurar carpeta inspeccionada.** Se mostrará una lista de las carpetas vigiladas ya configuradas.
+1. Seleccione **Nuevo**. Se mostrará una lista de los campos necesarios para crear la carpeta vigilada:
 
    * **Nombre**: identifica la carpeta vigilada. Utilice solo caracteres alfanuméricos para el nombre.
    * **Ruta**: especifica la ubicación de la carpeta vigilada. En un entorno de clúster, esta configuración debe apuntar a una carpeta de red compartida a la que puedan acceder todos los usuarios que ejecuten AEM en diferentes nodos de un clúster.
@@ -62,7 +62,7 @@ Realice los siguientes pasos para crear una carpeta vigilada:
 
    * **Patrón del archivo de salida**: especifique una lista delimitada por punto y coma (;) de patrones que usa una carpeta vigilada para determinar el nombre y la ubicación de los archivos y carpetas de salida. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
-1. Seleccionar **Avanzadas**. La pestaña Avanzadas contiene más campos. La mayoría de estos campos contienen un valor predeterminado.
+1. Seleccione **Avanzado**. La pestaña Avanzadas contiene más campos. La mayoría de estos campos contienen un valor predeterminado.
 
    * **Filtro de asignador de cargas útiles:** cuando se crea una carpeta vigilada, se crea una estructura de carpetas dentro de la carpeta que se ve. La estructura de carpetas tiene carpetas de fase, resultado, conservación, entrada y error. La estructura de carpetas puede servir como carga útil de entrada al flujo de trabajo y aceptar la salida de un flujo de trabajo. También puede enumerar los puntos de error, si los hay. La estructura de una carga útil es diferente de la de una carpeta vigilada. Puede escribir scripts personalizados para asignar la estructura de una carpeta vigilada a la carga útil. Este script se denomina filtro de asignador de cargas útiles. Hay dos implementaciones de asignador de carga útil listas para usar. Si no tiene [una implementación personalizada](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilice una predeterminada:
 
@@ -107,7 +107,7 @@ Realice los siguientes pasos para crear una carpeta vigilada:
 
    * **Acelerador activado:** cuando esta opción está habilitada, limita el número de trabajos de carpetas vigiladas que procesa AEM Forms en un momento dado. El valor Tamaño de lote determina el número máximo de trabajos. Para obtener más información, consulte [acelerador](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
    * **Sobrescribir archivos existentes con un nombre similar**: cuando se establece en True, los archivos de la carpeta de resultados y de la carpeta de preservación se sobrescribirán. Cuando se establece en False, se utilizan archivos y carpetas con un sufijo de índice numérico para el nombre. El valor predeterminado es False.
-   * **Conservar archivos si se produce error:** Cuando se establece en True, los archivos de entrada se conservan si se produce un error. El valor predeterminado es True.
+   * **Conservar archivos en caso de error:** Cuando se establece en True, los archivos de entrada se conservan en caso de error. El valor predeterminado es True.
    * **Incluir archivos con patrón:** especifique una lista delimitada por punto y coma (;) de patrones que la carpeta vigilada usa para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si se introduce el Patrón de archivo de inclusión, se recogerán todos los archivos y carpetas que coincidan con la entrada. Para obtener más información, consulte [Ayuda de administración](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
    * **Invocar la carpeta vigilada asincrónicamente:** identifica el tipo de invocación como asíncrono o sincrónico. El valor predeterminado es asíncrono. Se recomienda asincrónico para procesos de larga duración y sincrónico para procesos transitorios o de corta duración.
    * **Habilitar carpeta vigilada:** cuando esta opción está habilitada, la carpeta vigilada está habilitada. El valor predeterminado es True.
@@ -116,7 +116,7 @@ Realice los siguientes pasos para crear una carpeta vigilada:
 
 Además de cambiar el nombre de la carpeta vigilada, puede modificar todas las propiedades de una carpeta vigilada existente. Realice los siguientes pasos para modificar las propiedades de una carpeta vigilada existente:
 
-1. Seleccione el **Adobe Experience Manager** en la esquina superior izquierda de la pantalla.
-1. Seleccionar **Herramientas** > **Forms** > **Configurar carpeta inspeccionada.** Se mostrará una lista de las carpetas vigiladas ya configuradas.
+1. Seleccione el icono **Adobe Experience Manager** en la esquina superior izquierda de la pantalla.
+1. Seleccione **Herramientas** > **Forms** > **Configurar carpeta inspeccionada.** Se mostrará una lista de las carpetas vigiladas ya configuradas.
 1. En la parte izquierda de la pantalla Carpeta vigilada, seleccione la carpeta vigilada y seleccione **Editar.** Se mostrará una lista de los campos necesarios para crear la carpeta vigilada. Los campos enumerados en la pestaña **Básico** son obligatorios. La pestaña Avanzadas contiene más campos. La mayoría de estos campos contienen un valor predeterminado. Puede modificar estas propiedades según sus necesidades.
 1. Después de modificar las propiedades, seleccione **Actualizar**. Las propiedades modificadas se guardarán.

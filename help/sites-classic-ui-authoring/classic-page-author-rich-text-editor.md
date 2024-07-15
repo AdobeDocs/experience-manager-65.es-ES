@@ -49,19 +49,19 @@ Podrá editar directamente el texto de la página, en lugar de hacerlo desde una
 >
 >Si el buscador de contenido no está abierto, la barra de herramientas no se mostrará.
 
-Actualmente, el modo de edición local está habilitado para los elementos de página generados por **Texto** y **Título** componentes.
+Actualmente, el modo de edición local está habilitado para los elementos de página generados por los componentes **Text** y **Title**.
 
 >[!NOTE]
 >
->El [!UICONTROL Título] está diseñado para contener un texto corto sin saltos de línea. Al editar un título en el modo de edición local, al introducir un salto de línea se abre un nuevo **Texto** Componente debajo del título.
+>El componente [!UICONTROL Title] está diseñado para contener un texto corto sin saltos de línea. Al editar un título en el modo de edición local, al introducir un salto de línea se abre un nuevo componente **Texto** debajo del título.
 
 ## Funciones del editor de texto enriquecido {#features-of-the-rich-text-editor}
 
-El Editor de texto enriquecido proporciona una serie de funciones, que [dependen de la configuración](/help/sites-administering/rich-text-editor.md) del componente individual. Las funciones están disponibles tanto para la interfaz de usuario táctil optimizada como para la clásica.
+El Editor de texto enriquecido proporciona una serie de características, que [dependen de la configuración](/help/sites-administering/rich-text-editor.md) del componente individual. Las funciones están disponibles tanto para la interfaz de usuario táctil optimizada como para la clásica.
 
 ### Formatos de caracteres básicos {#basic-character-formats}
 
-![Barra de herramientas Formato de caracteres](do-not-localize/cq55_rte_basicchars.png)
+![Barra de herramientas de formato de caracteres](do-not-localize/cq55_rte_basicchars.png)
 
 Aquí puede aplicar formato a los caracteres seleccionados (resaltados); algunas opciones también tienen teclas de método abreviado:
 
@@ -79,7 +79,7 @@ Todos funcionan como una alternativa, por lo que la reselección elimina el form
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-La instalación puede incluir estilos y formatos predefinidos. Están disponibles con el **[!UICONTROL Estilo]** y **[!UICONTROL Formato]** listas desplegables y se pueden aplicar al texto seleccionado.
+La instalación puede incluir estilos y formatos predefinidos. Están disponibles con las listas desplegables **[!UICONTROL Estilo]** y **[!UICONTROL Formato]** y se pueden aplicar al texto que haya seleccionado.
 
 Se puede aplicar un estilo a una cadena específica (un estilo se correlaciona con CSS):
 
@@ -89,7 +89,7 @@ Mientras que un formato se aplica a todo el párrafo de texto (un formato se bas
 
 ![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
-Un formato específico solo se puede cambiar (el formato predeterminado es **[!UICONTROL Párrafo]**).
+Solamente se puede cambiar un formato específico (el formato predeterminado es **[!UICONTROL Párrafo]**).
 
 Se puede quitar un estilo; coloque el cursor dentro del texto al que se ha aplicado y haga clic en el icono Quitar:
 
@@ -99,13 +99,14 @@ Se puede quitar un estilo; coloque el cursor dentro del texto al que se ha aplic
 
 ### Cortar, Copiar, Pegar {#cut-copy-paste}
 
-![Barra de herramientas Cortar, Copiar y Pegar](do-not-localize/cq55_rte_cutcopypaste.png)
+![Cortar, copiar y pegar la barra de herramientas](do-not-localize/cq55_rte_cutcopypaste.png)
 
-Las funciones estándar de **[!UICONTROL Cortar]** y **[!UICONTROL Copiar]** están disponibles. Varios sabores de **[!UICONTROL Pegar]** se proporcionan para adaptarse a diferentes formatos.
+Las funciones estándar de **[!UICONTROL Cortar]** y **[!UICONTROL Copiar]** están disponibles. Se proporcionan varios tipos de **[!UICONTROL Pegar]** para adaptarse a diferentes formatos.
 
 * Cortar (Ctrl-X)
 * Copiar (Ctrl-C)
-* Pegar Este es el mecanismo de pegado predeterminado (Ctrl-V) para el componente; cuando se instala de forma predeterminada, se configura para que sea [!UICONTROL Pegar desde Word].
+* Pegar
+Este es el mecanismo de pegado predeterminado (Ctrl-V) para el componente; cuando se instala de forma predeterminada, está configurado para ser [!UICONTROL Pegar desde Word].
 
 * Pegar como texto: elimina todos los estilos y formatos para pegar únicamente el texto sin formato.
 
@@ -113,7 +114,7 @@ Las funciones estándar de **[!UICONTROL Cortar]** y **[!UICONTROL Copiar]** est
 
 ### Deshacer, Rehacer {#undo-redo}
 
-![Deshacer, barra de herramientas Rehacer](do-not-localize/cq55_rte_undoredo.png)
+![Deshacer, rehacer barra de herramientas](do-not-localize/cq55_rte_undoredo.png)
 
 AEM mantiene un registro de las últimas 50 acciones del componente actual, retenidas en orden cronológico. Estas acciones se pueden deshacer (y luego rehacer) en orden estricto, si es necesario.
 
@@ -135,15 +136,15 @@ El texto puede estar alineado a la izquierda, al centro o a la derecha.
 
 ### Sangría {#indentation}
 
-![Barra de herramientas Sangría](do-not-localize/cq55_rte_indent.png)
+![Barra de herramientas de sangría](do-not-localize/cq55_rte_indent.png)
 
 La sangría de un párrafo se puede aumentar o reducir. Se aplicará sangría al párrafo seleccionado y el texto nuevo introducido conservará el nivel actual de sangría.
 
-![cq55_rte_int_use](assets/cq55_rte_indent_use.png)
+![cq55_rte_dent_use](assets/cq55_rte_indent_use.png)
 
 ### Listas {#lists}
 
-![Barra Listas](do-not-localize/cq55_rte_lists.png)
+![Barra de herramientas de listas](do-not-localize/cq55_rte_lists.png)
 
 Se pueden crear listas con viñetas y numeradas dentro del texto. Seleccione el tipo de lista y empiece a escribir o resalte el texto que desea convertir. En ambos casos, una línea de alimentación inicia un nuevo elemento de lista.
 
@@ -155,7 +156,7 @@ El estilo de una lista se puede cambiar simplemente colocando el cursor dentro d
 
 ### Vínculos {#links}
 
-![Barra de vínculos](do-not-localize/cq55_rte_links.png)
+![Barra de herramientas de vínculos](do-not-localize/cq55_rte_links.png)
 
 Un vínculo a una dirección URL (ya sea dentro del sitio web o una ubicación externa) se genera resaltando el texto requerido y haciendo clic en el icono de hipervínculo:
 
@@ -169,25 +170,25 @@ Puede hacer lo siguiente:
 
 * Escriba un URI directamente
 * Utilice el mapa del sitio para seleccionar una página del sitio web
-* Introduzca el URI y, a continuación, añada el anclaje de destino; por ejemplo, `www.TargetUri.org#AnchorName`
-* Introducir solo un anclaje (para hacer referencia a &quot;la página actual&quot;); por ejemplo, `#anchor`
+* Introduzca el URI y, a continuación, anexe el anclaje de destino; por ejemplo, `www.TargetUri.org#AnchorName`
+* Escriba solo un anclaje (para hacer referencia a &quot;la página actual&quot;); por ejemplo, `#anchor`
 * Busque una página en el buscador de contenido y arrastre y suelte el icono de página en el cuadro de diálogo Hipervínculo
 
 >[!NOTE]
 >
->El URI se puede anteponer a cualquiera de los protocolos configurados para la instalación. En una instalación estándar, estos son `https://`, `ftp://`, y `mailto:`. Los protocolos no configurados para la instalación se rechazarán y se marcarán como no válidos.
+>El URI se puede anteponer a cualquiera de los protocolos configurados para la instalación. En una instalación estándar, estos son `https://`, `ftp://` y `mailto:`. Los protocolos no configurados para la instalación se rechazarán y se marcarán como no válidos.
 
-Para romper el vínculo, coloque el cursor en cualquier lugar dentro del texto del vínculo y haga clic en [!UICONTROL Desvincular] icono:
+Para romper el vínculo, coloque el cursor en cualquier lugar dentro del texto del vínculo y haga clic en el icono [!UICONTROL Desvincular]:
 
 ![Icono de desvincular](do-not-localize/chlimage_1-10.png)
 
 ### Anclajes {#anchors}
 
-![Barra de herramientas Anclajes](do-not-localize/cq55_rte_anchor.png)
+![Barra de herramientas de anclajes](do-not-localize/cq55_rte_anchor.png)
 
-Se puede crear un anclaje en cualquier lugar dentro del texto colocando el cursor o seleccionando texto. Luego haga clic en **Anclaje** para abrir el cuadro de diálogo.
+Se puede crear un anclaje en cualquier lugar dentro del texto colocando el cursor o seleccionando texto. A continuación, haga clic en el icono **Anclaje** para abrir el cuadro de diálogo.
 
-Introduzca el nombre del anclaje y haga clic en **OK** para guardar.
+Escriba el nombre del anclaje y haga clic en **Aceptar** para guardar.
 
 ![cq55_rte_anchor_use](assets/cq55_rte_anchor_use.png)
 
@@ -197,17 +198,17 @@ El anclaje se muestra cuando se edita el componente y ahora se puede utilizar en
 
 ### Buscar y reemplazar {#find-and-replace}
 
-![Barra de herramientas Buscar y reemplazar](do-not-localize/cq55_rte_findreplace.png)
+![Buscar y reemplazar barra de herramientas](do-not-localize/cq55_rte_findreplace.png)
 
-AEM proporciona tanto una como una **Buscar** y una **Reemplazar** función (buscar y reemplazar).
+AEM proporciona una función **Buscar** y **Reemplazar** (buscar y reemplazar).
 
-Ambos tienen un **Buscar siguiente** para buscar el texto especificado en el componente abierto. También puede especificar si necesita que coincidan las mayúsculas y minúsculas (upper/lower).
+Ambos tienen un botón **Buscar siguiente** para buscar el texto especificado en el componente abierto. También puede especificar si necesita que coincidan las mayúsculas y minúsculas (upper/lower).
 
 La búsqueda siempre comenzará desde la posición actual del cursor dentro del texto. Cuando se llega al final del componente, un mensaje le informa de que la siguiente operación de búsqueda comenzará desde arriba.
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
-El **Reemplazar** La opción le permite **Buscar**, entonces **Reemplazar** una instancia individual con el texto especificado o hasta **Reemplazar todo** instancias en el componente actual.
+La opción **Reemplazar** le permite **Buscar** y **Reemplazar** una instancia individual con el texto especificado o **Reemplazar todas** las instancias del componente actual.
 
 ![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png)
 
@@ -219,7 +220,7 @@ Las imágenes se pueden arrastrar desde el buscador de contenido para añadirlas
 
 >[!NOTE]
 >
->AEM También ofrece componentes especializados para una configuración de imagen más detallada. Por ejemplo, la variable **Imagen** y **Imagen de texto** componentes están disponibles.
+>AEM También ofrece componentes especializados para una configuración de imagen más detallada. Por ejemplo, los componentes **Imagen** y **Imagen de texto** están disponibles.
 
 ### Corrector ortográfico {#spelling-checker}
 
@@ -233,31 +234,31 @@ Se resaltarán las palabras incorrectas:
 
 >[!NOTE]
 >
->El corrector ortográfico funcionará en el idioma del sitio web tomando la propiedad idioma del subárbol o extrayendo el idioma de la dirección URL. Por ejemplo, la variable `en` La sucursal se revisará para ver si está en inglés y `de` sucursal para alemán.
+>El corrector ortográfico funcionará en el idioma del sitio web tomando la propiedad idioma del subárbol o extrayendo el idioma de la dirección URL. Por ejemplo, se comprobará que la rama `en` esté en inglés y la rama `de` en alemán.
 
 ### Tablas {#tables}
 
 Las tablas están disponibles tanto:
 
-* Como el **Tabla** componente
+* Como componente **Table**
 
-  ![Componente Tabla](assets/chlimage_1-105.png)
+  ![Componente de tabla](assets/chlimage_1-105.png)
 
-* Desde dentro de **Texto** componente
+* Desde el componente **Texto**
 
-  ![Barra de herramientas Texto](do-not-localize/chlimage_1-11.png)
+  ![Barra de herramientas de texto](do-not-localize/chlimage_1-11.png)
 
   >[!NOTE]
   >
-  >Aunque las tablas están disponibles en el RTE, se recomienda utilizar el **Tabla** al crear tablas.
+  >Aunque las tablas están disponibles en RTE, se recomienda usar el componente **Table** al crear tablas.
 
-En ambos **Texto** y **Tabla** la funcionalidad de la tabla componentes está disponible a través del menú contextual (normalmente el botón derecho del ratón) en el que se hace clic dentro de la tabla; por ejemplo:
+En los componentes **Text** y **Table**, la funcionalidad de la tabla está disponible a través del menú contextual (normalmente el botón secundario del mouse) donde se hizo clic dentro de la tabla; por ejemplo:
 
 ![cq55_rte_tablemenu](assets/cq55_rte_tablemenu.png)
 
 >[!NOTE]
 >
->En el **Tabla** también está disponible una barra de herramientas especializada, que incluye varias funciones estándar del editor de texto enriquecido, junto con un subconjunto de las funciones específicas de la tabla.
+>En el componente **Tabla**, también hay disponible una barra de herramientas especializada, que incluye varias funciones estándar del editor de texto enriquecido, junto con un subconjunto de las funciones específicas de la tabla.
 
 Las funciones específicas de la tabla son:
 
@@ -275,15 +276,15 @@ Las funciones específicas de la tabla son:
 
 ![cq55_rte_tableproperties_icon](assets/cq55_rte_tableproperties_icon.png)
 
-Las propiedades básicas de la tabla se pueden configurar antes de hacer clic en **OK** para guardar:
+Las propiedades básicas de la tabla se pueden configurar antes de hacer clic en **Aceptar** para guardar:
 
 ![cq55_rte_tableproperties_dialog](assets/cq55_rte_tableproperties_dialog.png)
 
 * **Ancho**: Ancho total de la tabla.
 
-* **Altura**: altura total de la tabla.
+* **Altura**: Altura total de la tabla.
 
-* **Borde**: tamaño del borde de la tabla.
+* **Borde**: El tamaño del borde de la tabla.
 
 * **Margen de celdas**: define el espacio en blanco entre el contenido de la celda y sus bordes.
 
@@ -305,12 +306,12 @@ Se pueden configurar las propiedades de una celda específica o de una serie de 
 
 ![cq55_rte_cellproperties_dialog](assets/cq55_rte_cellproperties_dialog.png)
 
-* **Ancho**
+* **Anchura**
 * **Altura**
-* **Alineación horizontal** - Izquierda, centro o derecha
-* **Alineación vertical** - Superior, Medio, Inferior o Línea de base
+* **Alineación horizontal** - Izquierda, Centro o Derecha
+* **Alineación vertical**: superior, central, inferior o línea de base
 * **Tipo de celda**- Datos o encabezado
-* **Aplicar a:** Una celda, toda la fila, toda la columna
+* **Aplicar a:** Una sola celda, toda la fila, toda la columna
 
 #### Agregar o eliminar filas {#add-or-delete-rows}
 
@@ -367,11 +368,11 @@ Al crear una tabla anidada, se crea una tabla independiente dentro de la celda a
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
 
-Utilice la opción para quitar la tabla de la tabla de **[!UICONTROL Texto]** componente.
+Utilice la opción para quitar la tabla del componente **[!UICONTROL Text]**.
 
 ### Caracteres especiales {#special-characters}
 
-![Barra de herramientas Caracteres especiales](do-not-localize/cq55_rte_specialchars.png)
+![Barra de herramientas con caracteres especiales](do-not-localize/cq55_rte_specialchars.png)
 
 Se pueden poner caracteres especiales a disposición del editor de texto enriquecido; estos pueden variar según la instalación.
 
@@ -379,9 +380,9 @@ Se pueden poner caracteres especiales a disposición del editor de texto enrique
 
 Pase el ratón para ver una versión ampliada del carácter y, a continuación, haga clic en para que se incluya en la ubicación actual del texto.
 
-### Modo de edición de origen {#source-editing-mode}
+### Modo de edición de Source {#source-editing-mode}
 
-![Barra de herramientas del modo de edición de origen](do-not-localize/cq55_rte_sourceedit.png)
+![Barra de herramientas en modo de edición de Source](do-not-localize/cq55_rte_sourceedit.png)
 
 El modo de edición de origen permite ver y editar el HTML subyacente del componente.
 

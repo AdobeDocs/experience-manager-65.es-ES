@@ -31,12 +31,12 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Realizar una comprobación de coherencia {#perform-a-consistency-check}
 
-Para realizar una comprobación de coherencia, vaya a la página de administración del MBean JMX **com.adobe.granite (Repositorio)**. AEM En la pantalla principal de la, vaya a:
+Para realizar una comprobación de coherencia, vaya a la página de administración del Mbean JMX **com.adobe.granite (Repository)**. AEM En la pantalla principal de la, vaya a:
 
 **Herramientas > Consola web > Principal (en la barra de menús) > JMX > com.adobe.granite (Repositorio)**
 
-En una instalación predeterminada, se encuentra aquí:  **[|Mostrarme|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
+En una instalación predeterminada, se encuentra aquí: **[|Mostrar|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
-En el **Operaciones** de la página, encontrará dos métodos: **`traversalCheck`** y **`consistencyCheck`**. Para ejecutar una comprobación, haga clic en la operación e introduzca los parámetros deseados.
+En la sección **Operaciones** de la página, se encuentran dos métodos: **`traversalCheck`** y **`consistencyCheck`**. Para ejecutar una comprobación, haga clic en la operación e introduzca los parámetros deseados.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)

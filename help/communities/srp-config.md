@@ -33,7 +33,7 @@ Para ver un análisis de las opciones de almacenamiento y las topologías de imp
 
 En el entorno de creación, para acceder a la consola de configuración de Storage.
 
-* En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Communities]** > **[!UICONTROL Configuración de almacenamiento]**
+* En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuración de almacenamiento]**
 
 Para seleccionar una opción de almacenamiento que no sea el JCR predeterminado:
 
@@ -50,10 +50,10 @@ Para seleccionar una opción de almacenamiento que no sea el JCR predeterminado:
 
 AEM Si no se realiza ninguna selección, el valor predeterminado es el repositorio de, JCR.
 
-JCR es *no* un almacén común compartido por los entornos Author y Publish. El contenido de la comunidad solo es visible desde el entorno de creación o publicación en el que se creó.
+JCR *no es* un almacén común compartido por los entornos Author y Publish. El contenido de la comunidad solo es visible desde el entorno de autor o Publish en el que se creó.
 
-Visita [Almacén JCR](jsrp.md) para obtener más información.
+Visite [Tienda JCR](jsrp.md) para obtener más información.
 
 >[!NOTE]
 >
->La ausencia del nodo `srpc` bajo `/etc/socialconfig` indica el valor predeterminado [Almacén JCR](jsrp.md).
+>La ausencia del nodo `srpc` en `/etc/socialconfig` indica el almacén JCR [predeterminado](jsrp.md).

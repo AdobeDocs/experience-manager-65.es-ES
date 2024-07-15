@@ -23,7 +23,7 @@ ht-degree: 0%
 
 La administración de modelos implica la creación y administración de modelos para asociarlos con objetos de datos posibles. Cada modelo incluye todas las propiedades y definiciones de campo necesarias para facilitar la creación y la renderización de objetos.
 
-Administración de modelos implica la creación de **modelos**, **entidades**, y **espacios**. AEM El diagrama siguiente ilustra la relación entre el contenido de la y los modelos.
+La administración de modelos implica la creación de **modelos**, **entidades** y **espacios**. AEM El diagrama siguiente ilustra la relación entre el contenido de la y los modelos.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -50,7 +50,7 @@ Los modelos se utilizan para determinar cómo se crean las entidades. AEM Define
 >Existe un modelo fuera de una aplicación, ya que más de una aplicación puede utilizarlo.
 >
 
-Para crear y administrar modelos en el tablero y el repositorio, consulte **[Modelos](/help/mobile/administer-mobile-apps.md)**.
+Para crear y administrar modelos en el tablero y el repositorio, vea **[Modelos](/help/mobile/administer-mobile-apps.md)**.
 
 ### Entidades en el modelo de contenido {#entities-in-content-model}
 
@@ -58,7 +58,7 @@ Una entidad es una instancia de un modelo de contenido. Una entidad se expone a 
 
 AEM AEM Si hay contenido de existente, se genera una entidad mediante un modelo y la fuente de contenido de la. AEM Por ejemplo, una entidad de página es un objeto independiente del canal y del diseño que se genera a partir de una página de la página y del modelo de página de la página de la página de la página de la aplicación.
 
-Los cambios en el contenido referenciado de una entidad dan como resultado un cambio en la entidad. Por ejemplo, si *cq:page* se actualiza, entonces también se actualiza cualquier entidad basada en esa página.
+Los cambios en el contenido referenciado de una entidad dan como resultado un cambio en la entidad. Por ejemplo, si se actualiza un *cq:page*, también se actualizarán las entidades que estén basadas en esa página.
 
 Para crear entidades personalizadas a partir de modelos, consulte **[Uso de entidades](/help/mobile/spaces-and-entities.md)**.
 
@@ -75,7 +75,7 @@ AEM Por el lado de la, un espacio es una forma cómoda de administrar las entida
 
 *Por ejemplo*,
 
-Un usuario tiene tres clasificaciones generales de entidades. Una es solo para uso interno, otra está aprobada para uso público y una tercera es para entidades comunes que son utilizadas por muchas aplicaciones. Para facilitar la administración, el usuario crea tres espacios, a saber: *interno*, *público* (con contenido en inglés y francés), y *común* para gestionar las entidades adecuadas como se indica a continuación:
+Un usuario tiene tres clasificaciones generales de entidades. Una es solo para uso interno, otra está aprobada para uso público y una tercera es para entidades comunes que son utilizadas por muchas aplicaciones. Para facilitar la administración, el usuario crea tres espacios, a saber *interno*, *público* (con contenido en inglés y francés) y *común*, para administrar las entidades adecuadas, como se menciona a continuación:
 
 * /content/entities/internal
 * /content/entities/public/es
@@ -94,4 +94,4 @@ Consulte **[Espacios y entidades](/help/mobile/spaces-and-entities.md)** para cr
 
 Las carpetas permiten a los usuarios organizar las entidades según sea necesario y facilitan un control ACL más preciso. Los espacios pueden incluir carpetas para ayudar a organizar aún más el contenido y los recursos del espacio. Un usuario puede crear su propia jerarquía bajo un espacio.
 
-Para crear y administrar carpetas dentro de un espacio, consulte **[Trabajar con carpetas en un espacio](/help/mobile/spaces-and-entities.md)**.
+Para crear y administrar carpetas en un espacio, vea **[Trabajar con carpetas en un espacio](/help/mobile/spaces-and-entities.md)**.

@@ -22,15 +22,15 @@ Tally es una clase abstracta que proporciona un método estándar de recopilar c
 
 Se puede crear un componente de recuento personalizado ampliando la clase de recuento abstracto.
 
-[Gusto](essentials-liking.md) es una implementación de recuento que es una forma simple de expresar una opinión positiva.
+[Me gusta](essentials-liking.md) es una implementación de recuento que es una forma sencilla de expresar una opinión positiva.
 
-[Votación](essentials-voting.md) es una implementación de recuento que es una forma simple de expresar una opinión positiva o negativa.
+[Votar](essentials-voting.md) es una implementación de recuento que es una forma simple de expresar una opinión positiva o negativa.
 
-[Clasificación](rating-basics.md) es una implementación de recuento que utiliza un sistema de estrellas para expresar una amplia gama de opiniones desde positivas a negativas.
+[Clasificación](rating-basics.md) es una implementación de recuento que usa un sistema de estrella para expresar una amplia gama de opiniones, desde positivas a negativas.
 
 AEM A partir de la versión 6.1, el componente de encuesta ya no está disponible.
 
-[Críticas](reviews-basics.md) es un componente SCF que es híbrido de [comentarios](essentials-comments.md) y [clasificación](rating-basics.md).
+[Críticas](reviews-basics.md) es un componente SCF que es un híbrido de [comentarios](essentials-comments.md) y [clasificación](rating-basics.md).
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
@@ -40,7 +40,7 @@ AEM A partir de la versión 6.1, el componente de encuesta ya no está disponibl
 
 * [API de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Extremos de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Puntos finales de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
@@ -49,13 +49,13 @@ AEM A partir de la versión 6.1, el componente de encuesta ya no está disponibl
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Resumen del proveedor de recursos de almacenamiento](srp.md) - Introducción y descripción general del uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
-* [Refactorización de SocialUtils](socialutils.md) : Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales.
+* [SRP y UGC Essentials](srp-and-ugc.md): métodos y ejemplos de utilidades SRP.
+* [Acceder a UGC con SRP](accessing-ugc-with-srp.md): directrices de codificación.
+* [Refactorización de SocialUtils](socialutils.md): asignando métodos de utilidad obsoletos a métodos de utilidad SRP actuales.

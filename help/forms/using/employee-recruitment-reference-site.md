@@ -85,7 +85,7 @@ La página de inicio de We.Finance y la página Empleo son páginas de AEM Sites
 
 ### Puede verlo usted mismo {#see-it-yourself}
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` y haga clic en **[!UICONTROL Empleo]**. Clic **[!UICONTROL Buscar]** para rellenar la lista de trabajos y, a continuación, haga clic en **[!UICONTROL Aplicar]** para un trabajo. Rellene los detalles del formulario y envíe la solicitud.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` y haga clic en **[!UICONTROL Empleo]**. Haga clic en **[!UICONTROL Buscar]** para rellenar la lista de trabajos y, a continuación, haga clic en **[!UICONTROL Aplicar]** para un trabajo. Rellene los detalles del formulario y envíe la solicitud.
 
 Asegúrese de especificar un correo electrónico válido en la solicitud, ya que cualquier comunicación a través de este tutorial se enviará al ID de correo electrónico especificado.
 

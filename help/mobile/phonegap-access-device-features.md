@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ## Creación de componentes de Adobe Experience Manager AEM () que acceden a las funciones del dispositivo {#building-aem-components-that-access-device-features}
 
-El [AEM Fregadero de cocina PhoneGap](https://github.com/blefebvre/aem-phonegap-kitchen-sink) AEM El repositorio de GitHub proporciona a los desarrolladores una aplicación funcional de que ilustra el uso de varias API principales de Cordova. Cuando se ejecuta en iOS o Android™ a través de la CLI de PhoneGap, la aplicación se abre en la siguiente página, que incluye un vínculo a cada API de dispositivo que muestra:
+AEM AEM El repositorio de GitHub [PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) proporciona a los desarrolladores una aplicación funcional que ilustra el uso de varias API principales de Cordova. Cuando se ejecuta en iOS o Android™ a través de la CLI de PhoneGap, la aplicación se abre en la siguiente página, que incluye un vínculo a cada API de dispositivo que muestra:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -34,4 +34,4 @@ Para obtener más información sobre el uso de cada API, consulte la documentaci
 
 ## Pasos siguientes {#the-next-steps}
 
-Consulte [Seguimiento del rendimiento de las aplicaciones con Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md).
+Ver [Seguimiento del rendimiento de la aplicación con Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md).

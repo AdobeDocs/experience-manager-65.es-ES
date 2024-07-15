@@ -28,15 +28,15 @@ AEM utiliza el repositorio de como almacenamiento para varias actividades intern
 * Paquetes creados y descargados
 * Archivos temporales creados para la replicación de publicación
 * Cargas del flujo de trabajo
-* Recursos creados temporalmente durante el procesamiento DAM
+* Assets creado temporalmente durante el procesamiento DAM
 
-Cuando cualquiera de estos objetos temporales es lo suficientemente grande como para requerir almacenamiento en el almacén de datos y cuando el objeto deja de usarse, el registro del almacén de datos permanece como &quot;basura&quot;. En una aplicación típica de WCM de autor/publicación, la mayor fuente de residuos de este tipo suele ser el proceso de activación de la publicación. Cuando los datos se replican en Publish, se recopilan primero en colecciones en un formato de datos eficaz llamado &quot;Durbo&quot; y se almacenan en el repositorio en `/var/replication/data`. Los paquetes de datos suelen superar el umbral de tamaño crítico para el almacén de datos y, por lo tanto, terminan almacenados como registros del almacén de datos. Cuando se complete la replicación, el nodo en `/var/replication/data` se elimina, pero el registro del almacén de datos permanece como &quot;basura&quot;.
+Cuando cualquiera de estos objetos temporales es lo suficientemente grande como para requerir almacenamiento en el almacén de datos y cuando el objeto deja de usarse, el registro del almacén de datos permanece como &quot;basura&quot;. En una aplicación típica de WCM de autor/publicación, la mayor fuente de residuos de este tipo suele ser el proceso de activación de la publicación. Cuando los datos se replican en Publish, se recopilan por primera vez en colecciones en un formato de datos eficaz denominado &quot;Durbo&quot; y se almacenan en el repositorio en `/var/replication/data`. Los paquetes de datos suelen superar el umbral de tamaño crítico para el almacén de datos y, por lo tanto, terminan almacenados como registros del almacén de datos. Cuando se complete la replicación, se eliminará el nodo de `/var/replication/data`, pero el registro del almacén de datos permanecerá como &quot;basura&quot;.
 
 Otra fuente de residuos recuperables son los paquetes. Los datos del paquete, como todo lo demás, se almacenan en el repositorio y, por lo tanto, para los paquetes que superan los 4 KB, en el almacén de datos. En el transcurso de un proyecto de desarrollo o a lo largo del tiempo mientras se mantiene un sistema, los paquetes se pueden crear y reconstruir muchas veces, cada compilación resulta en un nuevo registro de almacén de datos, dejando huérfano el registro de la compilación anterior.
 
 ## ¿Cómo funciona la recolección de elementos no utilizados del almacén de datos? {#how-does-data-store-garbage-collection-work}
 
-Si el repositorio se ha configurado con un almacén de datos externo, [la recolección de elementos no utilizados del almacén de datos se ejecutará automáticamente](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) como parte de la ventana de mantenimiento semanal. El administrador del sistema también puede [ejecutar la colección de residuos del almacén de datos manualmente](#running-data-store-garbage-collection) según sea necesario. En general, se recomienda que la recolección de elementos no utilizados del almacén de datos se realice periódicamente, pero que se tengan en cuenta los siguientes factores al planificar las colecciones de elementos no utilizados del almacén de datos:
+Si el repositorio se ha configurado con un almacén de datos externo, [la recolección de elementos no utilizados del almacén de datos se ejecutará automáticamente](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) como parte de la ventana de mantenimiento semanal. El administrador del sistema también puede [ejecutar la recolección de elementos no utilizados del almacén de datos manualmente](#running-data-store-garbage-collection) según sea necesario. En general, se recomienda que la recolección de elementos no utilizados del almacén de datos se realice periódicamente, pero que se tengan en cuenta los siguientes factores al planificar las colecciones de elementos no utilizados del almacén de datos:
 
 * Las recopilaciones de elementos no utilizados del almacén de datos tardan tiempo y pueden afectar al rendimiento, por lo que se deben planificar en consecuencia.
 * La eliminación de los registros de basura del almacén de datos no afecta al rendimiento normal, por lo que no se trata de una optimización del rendimiento.
@@ -61,10 +61,10 @@ Este método funciona bien para un solo nodo con un almacén de datos privado. S
 
 AEM Existen tres formas de ejecutar la recolección de elementos no utilizados del almacén de datos, según la configuración del almacén de datos en el que se esté ejecutando el almacenamiento de datos:
 
-1. Mediante [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md) : mecanismo de recolección de elementos no utilizados que generalmente se utiliza para la limpieza del almacén de nodos.
+1. Mediante [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md): un mecanismo de recolección de elementos no utilizados que se usa generalmente para la limpieza del almacén de nodos.
 
-1. Mediante [Recopilación de residuos del almacén de datos](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) : un mecanismo de recopilación de elementos no utilizados específico para almacenes de datos externos, disponible en el tablero de operaciones.
-1. Mediante el [Consola JMX](/help/sites-administering/jmx-console.md).
+1. Mediante [recolección de elementos no utilizados del almacén de datos](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard): un mecanismo de recolección de elementos no utilizados específico para los almacenes de datos externos, disponible en el tablero de operaciones.
+1. Mediante la [consola JMX](/help/sites-administering/jmx-console.md).
 
 Si TarMK se usa como almacén de nodos y como almacén de datos, Revision Cleanup se puede usar para la recolección de elementos no utilizados tanto del almacén de nodos como del almacén de datos. Sin embargo, si se configura un almacén de datos externo como el almacén de datos del sistema de archivos, la recopilación de elementos no utilizados del almacén de datos se debe activar explícitamente de forma independiente de la Limpieza de revisión. La recopilación de elementos no utilizados del almacén de datos se puede activar mediante el tablero de operaciones o la consola JMX.
 
@@ -73,7 +73,7 @@ AEM En la tabla siguiente se muestra el tipo de recolección de elementos no uti
 <table>
  <tbody>
   <tr>
-   <td><strong>Almacenamiento de nodos</strong><br /> </td>
+   <td><strong>Almacén de nodos</strong><br /> </td>
    <td><strong>Almacén de datos</strong></td>
    <td><strong>Mecanismo de recolección de basura</strong><br /> </td>
   </tr>
@@ -102,18 +102,18 @@ AEM En la tabla siguiente se muestra el tipo de recolección de elementos no uti
 
 ### Ejecución de la recopilación de basura del almacén de datos mediante el tablero de operaciones {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-La ventana de mantenimiento semanal integrada, disponible a través de la [Tablero de operaciones](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para almacenar en déclencheur la recolección de basura del almacén de datos a la 1 a. m. los domingos.
+La ventana de mantenimiento semanal integrada, disponible a través de [Operations Dashboard](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para almacenar en déclencheur la recolección de elementos no utilizados del almacén de datos a la 1 a. m. los domingos.
 
 Si necesita ejecutar la recolección de basura del almacén de datos fuera de este tiempo, se puede activar manualmente a través del Tablero de operaciones.
 
 Antes de ejecutar la recolección de elementos no utilizados del almacén de datos, debe comprobar que no se estén ejecutando copias de seguridad en ese momento.
 
-1. Abrir el tablero de operaciones por **Navegación** > **Herramientas** > **Operaciones** > **Mantenimiento**.
+1. Abra el tablero de operaciones en **Navegación** > **Herramientas** > **Operaciones** > **Mantenimiento**.
 1. Haga clic en **Ventana de mantenimiento semanal**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Seleccione el **Recopilación de residuos del almacén de datos** y, a continuación, haga clic en **Ejecutar** icono.
+1. Seleccione la tarea **Recopilación de residuos del almacén de datos** y, a continuación, haga clic en el icono **Ejecutar**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -123,7 +123,7 @@ Antes de ejecutar la recolección de elementos no utilizados del almacén de dat
 
 >[!NOTE]
 >
->La tarea de recolección de elementos no utilizados del almacén de datos solo estará visible si ha configurado un almacén de datos de archivo externo. Consulte [AEM Configuración de almacenes de nodos y almacenes de datos en el 6](/help/sites-deploying/data-store-config.md#file-data-store) para obtener información sobre cómo configurar un almacén de datos de archivo.
+>La tarea de recolección de elementos no utilizados del almacén de datos solo estará visible si ha configurado un almacén de datos de archivo externo. AEM Consulte [Configuración de almacenes de nodos y almacenes de datos en el 6](/help/sites-deploying/data-store-config.md#file-data-store) para obtener información sobre cómo configurar un almacén de datos de archivos.
 
 ### Ejecución de la recopilación de basura del almacén de datos mediante la consola JMX {#running-data-store-garbage-collection-via-the-jmx-console}
 
@@ -135,16 +135,16 @@ Esta sección trata sobre la ejecución manual de la recopilación de residuos d
 
 Para ejecutar la recolección de elementos no utilizados:
 
-1. En la consola de administración de Apache Felix OSGi, resalte la **Principal** y seleccione **JMX** en el siguiente menú.
-1. A continuación, busque y haga clic en **Administrador de repositorios** MBean (o vaya a `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
-1. Clic **startDataStoreGC(boolean markOnly)**.
-1. introduzca &quot;`true`&quot; para el `markOnly` parámetro si es necesario:
+1. En la consola de administración de Apache Felix OSGi, resalte la pestaña **Main** y seleccione **JMX** del siguiente menú.
+1. A continuación, busque y haga clic en el MBean **Administrador de repositorios** (o vaya a `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
+1. Haga clic en **startDataStoreGC(boolean markOnly)**.
+1. escriba &quot;`true`&quot; para el parámetro `markOnly` si es necesario:
 
    | **Opción** | **Descripción** |
    |---|---|
    | boolean markOnly | Establezca como true para marcar únicamente referencias y no barrer en la operación de marca y barrido. Este modo se utiliza cuando el BlobStore subyacente se comparte entre varios repositorios diferentes. En todos los demás casos, establézcalo en False para realizar la recolección de elementos no utilizados completa. |
 
-1. Clic **Invocar**. CRX ejecuta la recolección de elementos no utilizados e indica cuándo se ha completado.
+1. Haga clic en **Invocar**. CRX ejecuta la recolección de elementos no utilizados e indica cuándo se ha completado.
 
 >[!NOTE]
 >
@@ -152,13 +152,13 @@ Para ejecutar la recolección de elementos no utilizados:
 
 >[!NOTE]
 >
->La tarea de recolección de elementos no utilizados del almacén de datos solo se iniciará si ha configurado un almacén de datos de archivo externo. Si no se ha configurado un almacén de datos de archivo externo, la tarea devolverá el mensaje `Cannot perform operation: no service of type BlobGCMBean found` después de invocar. Consulte [AEM Configuración de almacenes de nodos y almacenes de datos en el 6](/help/sites-deploying/data-store-config.md#file-data-store) para obtener información sobre cómo configurar un almacén de datos de archivo.
+>La tarea de recolección de elementos no utilizados del almacén de datos solo se iniciará si ha configurado un almacén de datos de archivo externo. Si no se ha configurado un almacén de datos de archivo externo, la tarea devolverá el mensaje `Cannot perform operation: no service of type BlobGCMBean found` después de invocar. AEM Consulte [Configuración de almacenes de nodos y almacenes de datos en el 6](/help/sites-deploying/data-store-config.md#file-data-store) para obtener información sobre cómo configurar un almacén de datos de archivos.
 
 ## Automatización de la recolección de basura del almacén de datos {#automating-data-store-garbage-collection}
 
 Si es posible, la recolección de elementos no utilizados del almacén de datos debe ejecutarse cuando haya poca carga en el sistema, por ejemplo, por la mañana.
 
-La ventana de mantenimiento semanal integrada, disponible a través de la [Tablero de operaciones](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para almacenar en déclencheur la recolección de basura del almacén de datos a la 1 a. m. los domingos. También debe comprobar que no hay copias de seguridad en ejecución en este momento. El inicio de la ventana de mantenimiento se puede personalizar mediante el panel de control según sea necesario.
+La ventana de mantenimiento semanal integrada, disponible a través de [Operations Dashboard](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para almacenar en déclencheur la recolección de elementos no utilizados del almacén de datos a la 1 a. m. los domingos. También debe comprobar que no hay copias de seguridad en ejecución en este momento. El inicio de la ventana de mantenimiento se puede personalizar mediante el panel de control según sea necesario.
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Si no desea ejecutar la recolección de elementos no utilizados del almacén de 
 
 >[!CAUTION]
 >
->En el ejemplo siguiente `curl` comandos es posible que se deban configurar varios parámetros para la instancia; por ejemplo, el nombre de host ( `localhost`), puerto ( `4502`), contraseña de administrador ( `xyz`) y varios parámetros para la recolección de elementos no utilizados del almacén de datos real.
+>En el siguiente ejemplo `curl` comandos es posible que se deban configurar varios parámetros para la instancia; por ejemplo, el nombre de host ( `localhost`), el puerto ( `4502`), la contraseña de administrador ( `xyz`) y varios parámetros para la recolección de elementos no utilizados del almacén de datos real.
 
 Este es un ejemplo de comando curl para invocar la recolección de elementos no utilizados del almacén de datos a través de la línea de comandos:
 
@@ -182,11 +182,11 @@ El comando curl vuelve inmediatamente.
 
 La comprobación de coherencia del almacén de datos informará de cualquier binario del almacén de datos que falte, pero al que aún se haga referencia. Para iniciar una comprobación de coherencia, siga estos pasos:
 
-1. Vaya a la consola JMX. Para obtener información sobre cómo utilizar la consola JMX, consulte [este artículo](/help/sites-administering/jmx-console.md#using-the-jmx-console).
-1. Busque la variable **BlobGarbageCollection** Mbean y haga clic en él.
-1. Haga clic en `checkConsistency()` vínculo.
+1. Vaya a la consola JMX. Para obtener información sobre cómo usar la consola JMX, consulte [este artículo](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Busque el MBean **BlobGarbageCollection** y haga clic en él.
+1. Haga clic en el vínculo `checkConsistency()`.
 
-Una vez completada la comprobación de coherencia, un mensaje mostrará el número de binarios notificados como faltantes. Si el número es mayor que 0, compruebe el `error.log` para obtener más información sobre los binarios que faltan.
+Una vez completada la comprobación de coherencia, un mensaje mostrará el número de binarios notificados como faltantes. Si el número es mayor que 0, compruebe `error.log` para obtener más detalles sobre los binarios que faltan.
 
 A continuación, se muestra un ejemplo de cómo se informan los binarios que faltan en los registros:
 

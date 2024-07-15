@@ -18,22 +18,22 @@ ht-degree: 1%
 
 # Trabajar con utilidades PDF {#working-with-pdf-utilities}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-**Acerca del servicio Utilidades del PDF**
+**Acerca del servicio Utilidades de PDF**
 
 El servicio Utilidades de PDF puede realizar conversiones entre los formatos de archivo PDF y XDP, establecer y recuperar propiedades de documento de PDF XMP y manipular metadatos de. Por ejemplo, antes de convertir un documento de PDF a otro formato, es útil inspeccionar sus propiedades para determinar qué operación de servicio invocar para la conversión.
 
 Puede realizar estas tareas mediante el servicio Utilidades de PDF:
 
 * Convertir documentos de PDF en documentos XDP.
-* Convierta documentos XDP en documentos de PDF. (Consulte [Convertir documentos XDP en documentos de PDF](pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
-* Recupere las propiedades del documento del PDF. (Consulte [Recuperando propiedades de documento de PDF](pdf-utilities.md#retrieving-pdf-document-properties).)
-* Guarde un documento de PDF y optimícelo para una visualización web rápida. (Consulte [Estableciendo modos de guardado de documentos de PDF](pdf-utilities.md#setting-pdf-document-save-modes).)
+* Convierta documentos XDP en documentos de PDF. (Consulte [Conversión de documentos XDP en documentos de PDF](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)).
+* Recupere las propiedades del documento del PDF. (Consulte [Recuperando propiedades de documentos del PDF](pdf-utilities.md#retrieving-pdf-document-properties).)
+* Guarde un documento de PDF y optimícelo para una visualización web rápida. (Consulte [Configurar los modos de guardado de documentos del PDF](pdf-utilities.md#setting-pdf-document-save-modes).)
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Utilidades de PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Utilidades de PDF, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Convertir documentos de PDF en documentos XDP {#converting-pdf-documents-into-xdp-documents}
 
@@ -41,7 +41,7 @@ Puede utilizar las API de Java y de servicios web de Utilidades de PDF para conv
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Utilidades de PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Utilidades de PDF, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary-of-steps}
 
@@ -57,9 +57,9 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando u
 
 **Crear un cliente de PDFUtilityService**
 
-Para poder realizar mediante programación una operación de Utilidades de PDF, debe crear un cliente PDFUtilityService. Con la API de Java, esto se logra creando un `PDFUtilityServiceClient` objeto. Con la API del servicio web, esto se logra mediante una `PDFUtilityServiceService` objeto.
+Para poder realizar mediante programación una operación de Utilidades de PDF, debe crear un cliente PDFUtilityService. Con la API de Java, esto se logra creando un objeto `PDFUtilityServiceClient`. Con la API del servicio web, esto se logra mediante el uso de un objeto `PDFUtilityServiceService`.
 
-**Invocar la operación de conversión del PDF a XDP**
+**Invocar al PDF a la operación de conversión XDP**
 
 Después de crear el cliente de servicio, puede invocar la operación de conversión del PDF a XDP.
 
@@ -83,11 +83,11 @@ Convierta documentos de PDF en documentos XDP mediante la API de utilidades de P
 
 1. Crear un cliente de PDFUtilityService
 
-   Crear un `PDFUtilityServiceClient` mediante su constructor y pasando un objeto `ServiceClientFactory` que contiene las propiedades de conexión.
+   Cree un objeto `PDFUtilityServiceClient` utilizando su constructor y pasando un objeto `ServiceClientFactory` que contenga propiedades de conexión.
 
 1. Invocar la operación de conversión del PDF a XDP
 
-   Para realizar la conversión, invoque el `PDFUtilityServiceClient` del objeto `convertPDFtoXDP` método y pasar un `com.adobe.idp.Document` que representa el archivo del PDF. El método devuelve un valor `com.adobe.idp.Document` que representa el archivo XDP recién creado.
+   Para realizar la conversión, invoque el método `convertPDFtoXDP` del objeto `PDFUtilityServiceClient` y pase un objeto `com.adobe.idp.Document` que represente el archivo del PDF. El método devuelve un objeto `com.adobe.idp.Document` que representa el archivo XDP recién creado.
 
 **Consulte también**
 
@@ -108,11 +108,11 @@ Convierta documentos de PDF en documentos XDP mediante la API de Utilidades de P
 
 1. Crear un cliente de PDFUtilityService
 
-   Crear un `PDFUtilityServiceService` mediante el constructor de la clase de proxy.
+   Cree un objeto `PDFUtilityServiceService` con el constructor de clase de proxy.
 
 1. Invocar la operación de conversión del PDF a XDP
 
-   Invoque el `PDFUtilityServiceService` del objeto `convertPDFtoXDP` método y pasar un `BLOB` que representa el archivo del PDF. El método devuelve un valor `BLOB` que representa el archivo XDP recién creado.
+   Invoque el método `convertPDFtoXDP` del objeto `PDFUtilityServiceService` y pase un objeto `BLOB` que represente el archivo del PDF. El método devuelve un objeto `BLOB` que representa el archivo XDP recién creado.
 
 **Consulte también**
 
@@ -128,7 +128,7 @@ Puede utilizar las API de Java y de servicios web de Utilidades de PDF para conv
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Utilidades de PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Utilidades de PDF, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-1}
 
@@ -144,9 +144,9 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando u
 
 **Crear un cliente de PDFUtilityService**
 
-Para poder realizar mediante programación una operación de Utilidades de PDF, debe crear un cliente PDFUtilityService. Con la API de Java, esto se logra creando un `PDFUtilityServiceClient` objeto. Con la API del servicio web, esto se logra mediante una `PDFUtilityServiceService` objeto.
+Para poder realizar mediante programación una operación de Utilidades de PDF, debe crear un cliente PDFUtilityService. Con la API de Java, esto se logra creando un objeto `PDFUtilityServiceClient`. Con la API del servicio web, esto se logra mediante el uso de un objeto `PDFUtilityServiceService`.
 
-**Invoque el XDP para la operación de conversión del PDF**
+**Invocar el XDP para la operación de conversión del PDF**
 
 Después de crear el cliente de servicios, puede invocar el XDP para la operación de conversión del PDF.
 
@@ -170,11 +170,11 @@ Convierta documentos XDP en documentos de PDF mediante la API de utilidades de P
 
 1. Crear un cliente de PDFUtilityService
 
-   Crear un `PDFUtilityServiceClient` mediante su constructor y pasando un objeto `ServiceClientFactory` que contiene las propiedades de conexión.
+   Cree un objeto `PDFUtilityServiceClient` utilizando su constructor y pasando un objeto `ServiceClientFactory` que contenga propiedades de conexión.
 
 1. Invoque el XDP para la operación de conversión del PDF
 
-   Para realizar la conversión, invoque el `PDFUtilityServiceClient` del objeto `convertXDPtoPDF` método y pasar un `com.adobe.idp.Document` que representa el archivo XDP. El método devuelve un valor `com.adobe.idp.Document` que representa el archivo de PDF recién creado.
+   Para realizar la conversión, invoque el método `convertXDPtoPDF` del objeto `PDFUtilityServiceClient` y pase un objeto `com.adobe.idp.Document` que represente el archivo XDP. El método devuelve un objeto `com.adobe.idp.Document` que representa el archivo de PDF recién creado.
 
 **Consulte también**
 
@@ -195,11 +195,11 @@ Convierta documentos XDP en documentos de PDF mediante la API de utilidades de P
 
 1. Crear un cliente de PDFUtilityService
 
-   Crear un `PDFUtilityServiceService` mediante el constructor de la clase de proxy.
+   Cree un objeto `PDFUtilityServiceService` con el constructor de clase de proxy.
 
 1. Invoque el XDP para la operación de conversión del PDF
 
-   Para realizar la conversión, invoque el `PDFUtilityServiceService` del objeto `convertXDPtoPDF` método y pasar un `BLOB` que representa el archivo XDP. El método devuelve un valor `BLOB` que representa el archivo de PDF recién creado.
+   Para realizar la conversión, invoque el método `convertXDPtoPDF` del objeto `PDFUtilityServiceService` y pase un objeto `BLOB` que represente el archivo XDP. El método devuelve un objeto `BLOB` que representa el archivo de PDF recién creado.
 
 **Consulte también**
 
@@ -215,7 +215,7 @@ Puede utilizar las API de Java y del servicio web de Utilidades de PDF para recu
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Utilidades de PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)
+>Para obtener más información acerca del servicio Utilidades de PDF, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)
 
 ### Resumen de los pasos {#summary_of_steps-2}
 
@@ -231,7 +231,7 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando u
 
 **Crear un cliente de PDFUtilityService**
 
-Para poder realizar mediante programación una operación de Utilidades de PDF, debe crear un cliente PDFUtilityService. Con la API de Java, esto se logra creando un `PDFUtilityServiceClient` objeto. Con la API del servicio web, esto se logra mediante una `PDFUtilityServiceService` objeto.
+Para poder realizar mediante programación una operación de Utilidades de PDF, debe crear un cliente PDFUtilityService. Con la API de Java, esto se logra creando un objeto `PDFUtilityServiceClient`. Con la API del servicio web, esto se logra mediante un objeto `PDFUtilityServiceService`.
 
 **Invocar la operación de recuperación de propiedades**
 
@@ -257,16 +257,16 @@ Recupere las propiedades del documento del PDF mediante la API de Utilidades del
 
 1. Crear un cliente de PDFUtilityService
 
-   Crear un `PDFUtilityServiceClient` mediante su constructor y pasando un objeto `ServiceClientFactory` que contiene las propiedades de conexión.
+   Cree un objeto `PDFUtilityServiceClient` utilizando su constructor y pasando un objeto `ServiceClientFactory` que contenga propiedades de conexión.
 
 1. Invocar la operación de recuperación de propiedades
 
-   Para realizar la conversión, invoque el `PDFUtilityServiceClient` del objeto `getPDFProperties` y pase lo siguiente:
+   Para realizar la conversión, invoque el método `getPDFProperties` del objeto `PDFUtilityServiceClient` y pase lo siguiente:
 
-   * A `com.adobe.idp.Document` que representa el documento del PDF.
-   * A `PDFPropertiesOptionSpec` que contiene las propiedades que se van a evaluar.
+   * Un objeto `com.adobe.idp.Document` que representa el documento del PDF.
+   * Objeto `PDFPropertiesOptionSpec` que contiene las propiedades que se van a evaluar.
 
-   El método devuelve un valor `PDFPropertiesResult` que contiene los resultados de la consulta.
+   El método devuelve un objeto `PDFPropertiesResult` que contiene los resultados de la consulta.
 
 **Consulte también**
 
@@ -287,16 +287,16 @@ Recupere las propiedades del documento del PDF mediante la API del servicio web 
 
 1. Crear un cliente de PDFUtilityService
 
-   Crear un `PDFUtilityServiceService` mediante el constructor de la clase de proxy.
+   Cree un objeto `PDFUtilityServiceService` con el constructor de clase de proxy.
 
 1. Invocar la operación de recuperación de propiedades
 
-   Para realizar la conversión, invoque el `PDFUtilityServiceService` del objeto `getPDFProperties` y pase lo siguiente:
+   Para realizar la conversión, invoque el método `getPDFProperties` del objeto `PDFUtilityServiceService` y pase lo siguiente:
 
-   * A `BLOB` que representa el documento del PDF.
-   * A `PDFPropertiesOptionSpec` que contiene las propiedades que se van a evaluar.
+   * Un objeto `BLOB` que representa el documento del PDF.
+   * Objeto `PDFPropertiesOptionSpec` que contiene las propiedades que se van a evaluar.
 
-   El método devuelve un valor `PDFPropertiesResult` que contiene los resultados de la consulta.
+   El método devuelve un objeto `PDFPropertiesResult` que contiene los resultados de la consulta.
 
 **Consulte también**
 
@@ -312,7 +312,7 @@ Puede utilizar la Java del servicio Utilidades de PDF y las API del servicio web
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Utilidades de PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Utilidades de PDF, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-3}
 
@@ -330,15 +330,15 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando u
 
 **Crear un cliente de PDFUtilityService**
 
-Para poder realizar mediante programación una operación de Utilidades de PDF, debe crear un cliente PDFUtilityService. Con la API de Java, esto se logra creando un `PDFUtilityServiceClient` objeto. Con la API del servicio web, esto se logra mediante una `PDFUtilityServiceService` objeto.
+Para poder realizar mediante programación una operación de Utilidades de PDF, debe crear un cliente PDFUtilityService. Con la API de Java, esto se logra creando un objeto `PDFUtilityServiceClient`. Con la API del servicio web, esto se logra mediante un objeto `PDFUtilityServiceService`.
 
-**Configuración del modo Guardar**
+**Establecer el modo de guardado**
 
 Puede elegir una de las siguientes opciones de guardado:
 
-* `INCREMENTAL`: Para guardar de forma incremental para reducir el tiempo necesario para guardar
-* `FAST_WEB_VIEW`: guarde para visualizar la web rápidamente
-* `FULL`: Para guardar mediante un guardado completo (sin optimizaciones)
+* `INCREMENTAL`: para guardar de forma incremental a fin de reducir el tiempo necesario para guardar
+* `FAST_WEB_VIEW`: guardar para visualización web rápida
+* `FULL`: para guardar usando un guardado completo (sin optimizaciones)
 
 **Invocar la operación de guardar estilo**
 
@@ -346,11 +346,11 @@ Después de crear el cliente de servicios, puede invocar la operación de recupe
 
 **Pase el documento del PDF a otra operación de AEM Forms**
 
-Una vez que el servicio Utilidades del PDF haya establecido el modo Guardar especificado, pase el documento del PDF a otra operación de AEM Forms. Una vez devuelta la operación, el documento del PDF se guarda en el modo especificado. Por ejemplo, si utiliza el servicio Utilidades del PDF para configurar la variable `FAST_WEB_VIEW` y, a continuación, pase el documento del PDF al `encryptUsingPassword` operación, el documento de PDF devuelto se cifra con una contraseña y se guarda en `FAST_WEB_VIEW` modo.
+Una vez que el servicio Utilidades del PDF haya establecido el modo Guardar especificado, pase el documento del PDF a otra operación de AEM Forms. Una vez devuelta la operación, el documento del PDF se guarda en el modo especificado. Por ejemplo, si utiliza el servicio Utilidades de PDF para establecer el modo `FAST_WEB_VIEW` y, a continuación, pasa el documento de PDF a la operación `encryptUsingPassword` del servicio de cifrado, el documento de PDF devuelto se cifra con una contraseña y se guarda en el modo `FAST_WEB_VIEW`.
 
 >[!NOTE]
 >
->El Inicio rápido asociado a esta sección establece lo siguiente `FAST_WEB_VIEW` y, a continuación, pasa el documento del PDF al `encryptUsingPassword` operación.
+>El Inicio rápido asociado a esta sección establece el modo `FAST_WEB_VIEW` y, a continuación, pasa el documento del PDF a la operación `encryptUsingPassword` del servicio Encryption.
 
 **Consulte también**
 
@@ -374,26 +374,26 @@ Defina las opciones de guardado de documentos de PDF mediante la API de Utilidad
 
 1. Crear un cliente de PDFUtilityService
 
-   Crear un `PDFUtilityServiceClient` mediante su constructor y pasando un objeto `ServiceClientFactory` que contiene las propiedades de conexión.
+   Cree un objeto `PDFUtilityServiceClient` utilizando su constructor y pasando un objeto `ServiceClientFactory` que contenga propiedades de conexión.
 
 1. Configuración del modo Guardar
 
-   * Crear un `PDFUtilitySaveMode` mediante su constructor.
-   * Configure el modo de guardado invocando el `PDFUtilitySaveMode` del objeto `setSaveStyle` y pasando un valor de cadena que especifica el modo de guardado. Por ejemplo, para guardar para ver rápidamente en la web, pase `FAST_WEB_VIEW`.
+   * Crear un objeto `PDFUtilitySaveMode` mediante su constructor.
+   * Establezca el modo de guardado invocando el método `setSaveStyle` del objeto `PDFUtilitySaveMode` y pasando un valor de cadena que especifica el modo de guardado. Por ejemplo, para guardar para ver rápidamente en la web, pase `FAST_WEB_VIEW`.
 
 1. Invocar la operación de guardar estilo
 
-   Invoque el `PDFUtilityServiceClient` del objeto `setSaveMode` y pasar los siguientes valores:
+   Invoque el método `setSaveMode` del objeto `PDFUtilityServiceClient` y pase los siguientes valores:
 
-   * A `com.adobe.idp.Document` que representa el documento del PDF.
-   * A `PDFUtilitySaveMode` que contiene el estilo de guardado que se va a utilizar.
+   * Un objeto `com.adobe.idp.Document` que representa el documento del PDF.
+   * Objeto `PDFUtilitySaveMode` que contiene el estilo de guardado que se va a utilizar.
    * Valor booleano que se utiliza para determinar si se debe anular la configuración anterior.
 
-   El método devuelve un valor `com.adobe.idp.Document` objeto formateado con el estilo de guardado especificado.
+   El método devuelve un objeto `com.adobe.idp.Document` al que se ha dado formato utilizando el estilo de guardado especificado.
 
 1. Pase el documento del PDF a otra operación de AEM Forms
 
-   * Pase el devuelto `com.adobe.idp.Document` objeto a otra operación de AEM Forms.
+   * Pase el objeto `com.adobe.idp.Document` devuelto a otra operación de AEM Forms.
 
 **Consulte también**
 
@@ -414,26 +414,26 @@ Defina las opciones de guardado de documentos del PDF mediante la API de Utilida
 
 1. Crear un cliente de PDFUtilityService
 
-   Crear un `PDFUtilityServiceService` mediante el constructor de la clase de proxy.
+   Cree un objeto `PDFUtilityServiceService` con el constructor de clase de proxy.
 
 1. Configuración del modo Guardar
 
-   * Crear un `PDFUtilitySaveMode` mediante su constructor.
-   * Configure el modo de guardado asignando un valor de cadena a la variable `PDFUtilitySaveMode` del objeto `saveStyle` que especifica el modo de guardado. Por ejemplo, para guardar para visualizar rápidamente en la web, especifique `FAST_WEB_VIEW`.
+   * Crear un objeto `PDFUtilitySaveMode` mediante su constructor.
+   * Establezca el modo de guardado asignando un valor de cadena al método `saveStyle` del objeto `PDFUtilitySaveMode` que especifica el modo de guardado. Por ejemplo, para guardar para la visualización rápida en la web, especifique `FAST_WEB_VIEW`.
 
 1. Invocar la operación de guardar estilo
 
-   Invoque el `PDFUtilityServiceService` del objeto `setSaveMode` y pasar los siguientes valores:
+   Invoque el método `setSaveMode` del objeto `PDFUtilityServiceService` y pase los siguientes valores:
 
-   * A `BLOB` que representa el documento del PDF.
-   * A `PDFUtilitySaveMode` que contiene el estilo de guardado que se va a utilizar.
+   * Un objeto `BLOB` que representa el documento del PDF.
+   * Objeto `PDFUtilitySaveMode` que contiene el estilo de guardado que se va a utilizar.
    * Valor booleano que se utiliza para determinar si se debe anular la configuración anterior.
 
-   El método devuelve un valor `BLOB` objeto formateado con el estilo de guardado especificado. A continuación, puede guardar ese objeto como un documento de PDF.
+   El método devuelve un objeto `BLOB` al que se ha dado formato utilizando el estilo de guardado especificado. A continuación, puede guardar ese objeto como un documento de PDF.
 
 1. Pase el documento del PDF a otra operación de Forms
 
-   * Pase el devuelto `BLOB` objeto a otra operación de AEM Forms.
+   * Pase el objeto `BLOB` devuelto a otra operación de AEM Forms.
 
 **Consulte también**
 
@@ -449,7 +449,7 @@ Puede utilizar las API de Java de Utilidades de PDF para convertir mediante prog
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Utilidades de PDF, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Utilidades de PDF, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-4}
 
@@ -465,9 +465,9 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Para crear una apl
 
 **Crear un cliente de PDFUtilityService**
 
-Para poder realizar mediante programación una operación de saneamiento, debe crear un cliente PDFUtilityService. Con la API de Java, esto se logra creando un `PDFUtilityServiceClient` objeto.
+Para poder realizar mediante programación una operación de saneamiento, debe crear un cliente PDFUtilityService. Con la API de Java, esto se logra creando un objeto `PDFUtilityServiceClient`.
 
-**Invocar la operación de conversión del PDF a XDP**
+**Invocar al PDF a la operación de conversión XDP**
 
 Después de crear el cliente de servicios, puede invocar la operación de saneamiento.
 
@@ -491,11 +491,11 @@ Limpieza de documentos mediante la API de Utilidades del PDF (Java):
 
 1. Crear un cliente de PDFUtilityService
 
-   Crear un `PDFUtilityServiceClient` mediante su constructor y pasando un objeto `ServiceClientFactory` que contiene las propiedades de conexión.
+   Cree un objeto `PDFUtilityServiceClient` utilizando su constructor y pasando un objeto `ServiceClientFactory` que contenga propiedades de conexión.
 
 1. Invocar la operación de conversión del PDF a XDP
 
-   Para realizar la conversión, invoque el `PDFUtilityServiceClient` del objeto `convertPDFtoXDP` método y pasar un `com.adobe.idp.Document` que representa el archivo del PDF. El método devuelve un valor `com.adobe.idp.Document` que representa el archivo XDP recién creado.
+   Para realizar la conversión, invoque el método `convertPDFtoXDP` del objeto `PDFUtilityServiceClient` y pase un objeto `com.adobe.idp.Document` que represente el archivo del PDF. El método devuelve un objeto `com.adobe.idp.Document` que representa el archivo XDP recién creado.
 
 **Consulte también**
 

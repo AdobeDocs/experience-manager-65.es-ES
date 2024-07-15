@@ -26,22 +26,22 @@ Al generar una versión, se crea una “instantánea” de una página en un mom
 
 Puede crear una versión de su recurso desde:
 
-* el [Carril de cronología](#creating-a-new-version-timeline)
-* el [Crear](#creating-a-new-version-create-with-a-selected-resource) opción (cuando hay un recurso seleccionado)
+* el [carril de escala de tiempo](#creating-a-new-version-timeline)
+* la opción [Crear](#creating-a-new-version-create-with-a-selected-resource) (cuando hay un recurso seleccionado)
 
 ### Crear una nueva versión: línea de tiempo {#creating-a-new-version-timeline}
 
 1. Desplácese hasta mostrar la página para la que desea crear una versión.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra el **Cronología** columna.
+1. Abra la columna **Cronología**.
 1. Haga clic en la punta de flecha junto al campo Comentario para mostrar las opciones:
 
    ![Cronología: guardar como versión](assets/screen-shot_2019-03-05at112335.png)
 
 1. Seleccione **Guardar como versión**.
-1. Introduzca una **Etiqueta** y **Comentario** si es necesario.
+1. Escriba una **Etiqueta** y **Comentario** si es necesario.
 
-   ![Crear versión: añadir etiqueta y comentario](assets/chlimage_1-42.png)
+   ![Crear versión - agregar etiqueta y comentario](assets/chlimage_1-42.png)
 
 1. Confirme la nueva versión con **Crear**.
 
@@ -51,10 +51,10 @@ Puede crear una versión de su recurso desde:
 
 1. Desplácese hasta mostrar la página para la que desea crear una versión.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Seleccione el **Crear** en la barra de herramientas para abrir el cuadro de diálogo.
-1. En el cuadro de diálogo, puede introducir un **Etiqueta** y una **Comentario**, si es necesario:
+1. Seleccione la opción **Crear** en la barra de herramientas para abrir el cuadro de diálogo.
+1. En el cuadro de diálogo, puede escribir una **Etiqueta** y un **Comentario**, si es necesario:
 
-   ![Introduzca una etiqueta y un comentario](assets/screen_shot_2012-02-15at105050am.png)
+   ![Escriba una etiqueta y un comentario](assets/screen_shot_2012-02-15at105050am.png)
 
 1. Confirme la nueva versión con **Crear**.
 
@@ -186,9 +186,9 @@ Para comparar una versión anterior con la página actual, haga lo siguiente:
 1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**.
 1. Se muestran las versiones de la página. Seleccione la versión que desea comparar:
 
-   ![Versiones de página enumeradas: seleccionar versión](assets/screen-shot_2019-03-05at112505-2.png)
+   ![Versiones de página en la lista - seleccionar versión](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Seleccione **Comparar con actual**. El [diferencia de página](/help/sites-authoring/page-diff.md) se abre para mostrar las diferencias.
+1. Seleccione **Comparar con actual**. Se abre [diferencia de página](/help/sites-authoring/page-diff.md) para mostrar las diferencias.
 
 ## Deformación de tiempo   {#timewarp}
 
@@ -196,12 +196,12 @@ Deformación de tiempo es una función diseñada para simular el estado *publica
 
 >[!TIP]
 >
->[La Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-authoring/launches.md) AEM al ejecutar la versión 6.5.10.0 o posterior de la versión de.
+>AEM [Deformación de tiempo también se puede usar con Lanzamientos para obtener una vista previa del futuro](/help/sites-authoring/launches.md) cuando se ejecute la versión 6.5.10.0 o posterior de la aplicación.
 
 La creación de contenido es un proceso continuo y colaborativo. El propósito de Deformación de tiempo es permitir que los autores rastreen el sitio web publicado con el paso del tiempo, para ayudarles a comprender cómo ha cambiado el contenido. Esta función utiliza las versiones de página para determinar el estado del entorno de publicación:
 
 * El sistema busca la versión de página que estaba activa en el momento seleccionado.
-   * Se creó/activó esta versión de la página *antes* el punto temporal seleccionado en Deformación de tiempo.
+   * Esta versión de página se creó o activó *antes de* el momento seleccionado en Deformación de tiempo.
 * Al navegar a una página que se haya eliminado, también se procesa, siempre que las versiones anteriores de la página estén disponibles en el repositorio.
 * Si no se encuentra ninguna versión publicada, Deformación de tiempo vuelve al estado actual de la página en el entorno de creación (para evitar una página de error/404, lo que impediría el examen).
 
@@ -211,7 +211,7 @@ Deformación de tiempo es un [modo](/help/sites-authoring/author-environment-too
 
 1. Inicie el editor para la página donde desea iniciar Deformación de tiempo y, a continuación, seleccione **Deformación de tiempo** en la selección de modo.
 
-   ![Seleccione Deformación de tiempo en la selección de modo](assets/wwpv-01.png)
+   ![Seleccionar Deformación de tiempo en la selección de modo](assets/wwpv-01.png)
 
 1. En el cuadro de diálogo, establezca una fecha y una hora de destino y haga clic en **Establecer fecha**. Si no selecciona una hora, la hora actual se toma como predeterminada.
 
@@ -219,7 +219,7 @@ Deformación de tiempo es un [modo](/help/sites-authoring/author-environment-too
 
 1. La página se muestra en función de la fecha establecida. El modo Deformación de tiempo se indica mediante la barra de estado azul en la parte superior de la ventana. Utilice los vínculos de la barra de estado para seleccionar una nueva fecha objetivo o salir del modo Deformación de tiempo.
 
-   ![Indicador Deformación de tiempo](assets/wwpv-03.png)
+   ![Indicador de deformación de tiempo](assets/wwpv-03.png)
 
 ### Limitaciones de Deformación de tiempo {#timewarp-limitations}
 
@@ -229,9 +229,9 @@ Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en 
 * **Deformación de tiempo emplea las versiones de página**: si se desplaza a una página que se ha eliminado del repositorio, se procesa correctamente si aún hay versiones antiguas de la página en el repositorio.
 * **Las versiones eliminadas afectan a la función Deformación de tiempo**: si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar resultados correctos.
 
-* **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, debe hacerlo manualmente mediante [restaurar](#reverting-to-a-page-version).
+* **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, debe hacerlo manualmente usando [restore](#reverting-to-a-page-version).
 
-* **Deformación de tiempo solo se basa en el contenido de la página** : Si los elementos para procesar el sitio web han cambiado, la vista difiere de la que era originalmente, ya que esos elementos no están versionados en el repositorio. Estos elementos incluyen código, css, activos/imágenes, entre otros.
+* **Deformación de tiempo se basa solamente en el contenido de la página**: si los elementos para representar el sitio web han cambiado, la vista difiere de lo que era originalmente, ya que esos elementos no tienen versiones en el repositorio. Estos elementos incluyen código, css, activos/imágenes, entre otros.
 
 >[!CAUTION]
 >

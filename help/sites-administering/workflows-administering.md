@@ -22,7 +22,7 @@ La consola de flujo de trabajo proporciona varias herramientas para administrar 
 
 >[!NOTE]
 >
->El [consola JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) proporciona operaciones de mantenimiento de flujo de trabajo adicionales.
+>La [consola JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) proporciona operaciones de mantenimiento de flujo de trabajo adicionales.
 
 Hay una serie de consolas disponibles para administrar los flujos de trabajo. Utilice la variable [navegación global](/help/sites-authoring/basic-handling.md#global-navigation) para abrir el panel **Herramientas** y, a continuación, seleccione **Flujo de trabajo**:
 
@@ -36,7 +36,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 ## Monitorización del estado de las instancias de flujo de trabajo {#monitoring-the-status-of-workflow-instances}
 
 1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
-1. Seleccionar **Instancias** para poder mostrar la lista de instancias de flujo de trabajo en curso.
+1. Seleccione **Instancias** para poder mostrar la lista de instancias de flujo de trabajo en curso.
 
    ![wf-96](assets/wf-96.png)
 
@@ -65,7 +65,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 ## Suspender, reanudar y finalizar una instancia de flujo de trabajo {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
-1. Seleccionar **Instancias** para poder mostrar la lista de instancias de flujo de trabajo en curso.
+1. Seleccione **Instancias** para poder mostrar la lista de instancias de flujo de trabajo en curso.
 
    ![wf-96-1](assets/wf-96-1.png)
 
@@ -76,7 +76,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 ## Visualización de flujos de trabajo archivados {#viewing-archived-workflows}
 
 1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
-1. Seleccionar **Archivar** para poder mostrar la lista de instancias de flujo de trabajo que se completaron correctamente.
+1. Seleccione **Archivo** para que pueda mostrar la lista de instancias de flujo de trabajo que se completaron correctamente.
 
    ![wf-98](assets/wf-98.png)
 
@@ -93,22 +93,22 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 
 ## Corrección de errores de instancias de flujo de trabajo {#fixing-workflow-instance-failures}
 
-AEM Cuando falla un flujo de trabajo, proporciona el valor de la variable **Errores** consola para que pueda investigar y tomar las medidas adecuadas una vez que se haya manejado la causa original:
+AEM Cuando falla un flujo de trabajo, proporciona la consola **Failures** para que usted pueda investigar y tomar las medidas adecuadas una vez que se haya manejado la causa original:
 
 * **Detalles del error**
-Abre una ventana para mostrar el **Mensaje de error**, **Etapa**, y **Pila de errores**.
+Abre una ventana para mostrar **Mensaje de error**, **Paso** y **Pila de errores**.
 
 * **Abrir historial**
 Muestra detalles del historial del flujo de trabajo.
 
-* **Paso de reintento** : vuelve a ejecutar la instancia del componente Paso de script. Utilice el comando Paso de reintento después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el Paso de proceso.
-* **Finalizar** : Finalice el flujo de trabajo si el error ha provocado una situación irreconciliable. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio, que ya no son válidas para la instancia de flujo de trabajo.
-* **Finalizar y volver a intentar** - Similar a **Finalizar** excepto que se inicia una nueva instancia de flujo de trabajo utilizando la carga útil, el título y la descripción originales.
+* **Paso de reintento**: vuelve a ejecutar la instancia del componente Paso de script. Utilice el comando Paso de reintento después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el Paso de proceso.
+* **Finalizar**: finalice el flujo de trabajo si el error ha provocado una situación irreconciliable. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio, que ya no son válidas para la instancia de flujo de trabajo.
+* **Finalizar y reintentar** - Similar a **Finalizar** excepto que se inicia una nueva instancia de flujo de trabajo usando la carga útil, el título y la descripción originales.
 
 Para investigar los errores y luego reanudar o finalizar el flujo de trabajo más tarde, siga estos pasos:
 
 1. Mediante la Navegación, seleccione **Herramientas** y, luego, **Flujo de trabajo**.
-1. Seleccionar **Errores** para poder mostrar la lista de instancias de flujo de trabajo que no se completaron correctamente.
+1. Seleccione **Errores** para que pueda mostrar la lista de instancias de flujo de trabajo que no se completaron correctamente.
 1. Seleccione un elemento específico y luego la acción apropiada:
 
    ![wf-47](assets/wf-47.png)
@@ -121,7 +121,7 @@ Configure **Configuración de depuración del flujo de trabajo de Adobe Granite*
 
 También puede crear varias configuraciones del servicio para depurar instancias de flujo de trabajo que cumplan distintos criterios. Por ejemplo, cree una configuración que depure las instancias de un modelo de flujo de trabajo concreto cuando se ejecuten durante más tiempo del esperado. Cree otra configuración que depure todos los flujos de trabajo completados después de un determinado número de días para minimizar el tamaño del repositorio.
 
-Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente, se describen las propiedades que necesita para cualquiera de los métodos.
+Para configurar el servicio, puede usar la [consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [agregar una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente, se describen las propiedades que necesita para cualquiera de los métodos.
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deployi
   <tr>
    <td>Modelos para purgar</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>El ID de los modelos de flujo de trabajo que se van a depurar. El ID es la ruta al nodo del modelo, por ejemplo:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Para especificar varios modelos, haga clic en el botón + de la consola web. </p> <p>No especifique ningún valor para depurar instancias de todos los modelos de flujo de trabajo.</p> </td>
+   <td><p>El ID de los modelos de flujo de trabajo que se van a depurar. El identificador es la ruta al nodo del modelo, por ejemplo:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Para especificar varios modelos, haga clic en el botón + de la consola web. </p> <p>No especifique ningún valor para depurar instancias de todos los modelos de flujo de trabajo.</p> </td>
   </tr>
   <tr>
    <td>Edad del flujo de trabajo</td>
@@ -169,7 +169,7 @@ Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deployi
 
 ## Configuración del tamaño máximo de la bandeja de entrada {#setting-the-maximum-size-of-the-inbox}
 
-Puede establecer el tamaño máximo de la bandeja de entrada configurando **Adobe Granite Workflow Service**, usando el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describe la propiedad que se configura para cualquiera de los métodos.
+Puede establecer el tamaño máximo de la bandeja de entrada configurando el **Servicio de flujo de trabajo de Granite de Adobe**, usando la [consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [agregando una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describe la propiedad que se configura para cualquiera de los métodos.
 
 >[!NOTE]
 >

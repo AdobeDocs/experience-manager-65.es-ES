@@ -29,7 +29,7 @@ En los modelos de flujo de trabajo de AEM, puede hacer lo siguiente:
 
 * [Crear una variable](../../forms/using/variable-in-aem-workflows.md#create-a-variable) de un tipo de datos basada en el tipo de información que desea almacenar en él.
 * [Configurar un valor para la variable](../../forms/using/variable-in-aem-workflows.md#set-a-variable) mediante el paso del flujo de trabajo Establecer variable.
-* [Usar la variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) en todos los pasos del flujo de trabajo de AEM Forms para recuperar el valor almacenado y en los pasos OR Split y Goto para definir una expresión de enrutamiento.
+* [Use la variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) en todos los pasos del flujo de trabajo de AEM Forms para recuperar el valor almacenado y en los pasos OR Split y Goto para definir una expresión de enrutamiento.
 
 En el siguiente vídeo se muestra cómo crear, establecer y utilizar variables en los modelos de flujo de trabajo de AEM:
 
@@ -302,4 +302,4 @@ Siga estos pasos para eliminar una variable:
 
 ## Referencias {#references}
 
-Para obtener más ejemplos sobre el uso de variables en los pasos del flujo de trabajo de AEM Forms, consulte [AEM Variables en flujos de trabajo de](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=es).
+Para obtener más ejemplos sobre el uso de variables en los pasos del flujo de trabajo de AEM Forms AEM, consulte [Variables en flujos de trabajo de la](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=es).

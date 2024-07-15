@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Referencia del proceso de flujo de trabajo{#workflow-process-reference}
 
-AEM proporciona varios pasos de proceso que se pueden utilizar para crear modelos de flujo de trabajo. También se pueden agregar pasos de proceso personalizados para tareas que no están cubiertas por los pasos integrados (consulte [Creación de modelos de flujo de trabajo](/help/sites-developing/workflows-models.md)).
+AEM proporciona varios pasos de proceso que se pueden utilizar para crear modelos de flujo de trabajo. También se pueden agregar pasos de proceso personalizados para tareas que no estén cubiertas por los pasos integrados (consulte [Creación de modelos de flujo de trabajo](/help/sites-developing/workflows-models.md)).
 
 ## Características del proceso {#process-characteristics}
 
@@ -35,7 +35,7 @@ Los pasos del proceso se definen mediante una clase Java™ o ECMAScript.
 
 La carga útil es la entidad en la que actúa una instancia de flujo de trabajo. La carga útil se selecciona implícitamente mediante el contexto en el que se inicia una instancia de flujo de trabajo.
 
-AEM Por ejemplo, si se aplica un flujo de trabajo a una página de la *P* entonces *P* se pasa de un paso a otro a medida que avanza el flujo de trabajo, y cada paso actúa de forma opcional en consecuencia *P* de alguna manera.
+AEM Por ejemplo, si se aplica un flujo de trabajo a una página de *P*, *P* se pasa de un paso a otro a medida que avanza el flujo de trabajo, y cada paso opcionalmente actúa en *P* de alguna manera.
 
 AEM En el caso más común, la carga útil es un nodo JCR en el repositorio (por ejemplo, una página o un recurso de la página o el recurso). La carga útil de un nodo JCR se pasa como una cadena que es una ruta JCR o un identificador JCR (UUID). A veces, la carga útil puede ser una propiedad JCR (pasada como ruta JCR), una URL, un objeto binario o un objeto Java™ genérico. Los pasos de proceso individuales que sí actúan en la carga útil generalmente esperan una carga útil de un tipo determinado o actúan de forma diferente según el tipo de carga útil. Para cada proceso descrito a continuación, se describe el tipo de carga útil esperado, de haber.
 
@@ -43,7 +43,7 @@ AEM En el caso más común, la carga útil es un nodo JCR en el repositorio (por
 
 Algunos procesos de flujo de trabajo aceptan argumentos que el administrador especifica al configurar el paso del flujo de trabajo.
 
-Los argumentos se introducen como una sola cadena en la variable **Argumentos del proceso** propiedad en el **Propiedades** del editor de flujo de trabajo. Para cada proceso que se describe a continuación, el formato de la cadena de argumento se describe en una gramática EBNF simple. Por ejemplo, lo siguiente indica que la cadena de argumento consta de uno o más pares delimitados por comas, donde cada par consta de un nombre (que es una cadena) y un valor, separados por dos puntos:
+Los argumentos se especifican como una sola cadena en la propiedad **Argumentos del proceso** del panel **Propiedades** del editor de flujo de trabajo. Para cada proceso que se describe a continuación, el formato de la cadena de argumento se describe en una gramática EBNF simple. Por ejemplo, lo siguiente indica que la cadena de argumento consta de uno o más pares delimitados por comas, donde cada par consta de un nombre (que es una cadena) y un valor, separados por dos puntos:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -58,7 +58,7 @@ Después de este período de tiempo de espera, el paso del flujo de trabajo deja
 
 ### Permisos {#permissions}
 
-La sesión pasada a `WorkflowProcess` está respaldado por el usuario de servicio para el servicio de proceso de flujo de trabajo, que tiene los siguientes permisos en la raíz del repositorio:
+La sesión pasada a `WorkflowProcess` está respaldada por el usuario de servicio para el servicio de proceso de flujo de trabajo, que tiene los siguientes permisos en la raíz del repositorio:
 
 * `jcr:read`
 * `rep:write`
@@ -66,7 +66,7 @@ La sesión pasada a `WorkflowProcess` está respaldado por el usuario de servici
 * `jcr:lockManagement`
 * `crx:replicate`
 
-Si ese conjunto de permisos no es suficiente para su `WorkflowProcess` de, debe utilizar una sesión de con los permisos necesarios.
+Si ese conjunto de permisos no es suficiente para la implementación de `WorkflowProcess`, debe usar una sesión con los permisos requeridos.
 
 La manera recomendada de hacerlo es utilizar un usuario de servicio creado con el subconjunto necesario, pero mínimo, de permisos necesarios.
 
@@ -74,17 +74,17 @@ La manera recomendada de hacerlo es utilizar un usuario de servicio creado con e
 >
 >AEM Si está actualizando desde una versión anterior a la 6.2, es posible que tenga que actualizar la implementación de.
 >
->En versiones anteriores, la sesión de administrador se pasaba al `WorkflowProcess` implementaciones de y podrían tener acceso completo al repositorio sin tener que definir ACL específicas.
+>En versiones anteriores, la sesión de administración se pasaba a las implementaciones de `WorkflowProcess` y, a continuación, podía tener acceso completo al repositorio sin tener que definir ACL específicas.
 >
 >Los permisos ahora se definen como arriba ([Permisos](#permissions)). Como es el método recomendado para actualizar la implementación.
 >
 >También hay disponible una solución a corto plazo para fines de compatibilidad con versiones anteriores cuando no es posible realizar cambios en el código:
 >
->* Uso de la consola web ( `/system/console/configMgr` busque el **Servicio de configuración de flujo de trabajo de Adobe Granite**
+>* Usando la consola web (`/system/console/configMgr`), busque el **Servicio de configuración del flujo de trabajo de Adobe Granite**
 >
->* habilite el **Modo heredado de proceso de flujo de trabajo**
+>* habilitar el **Modo heredado del proceso de flujo de trabajo**
 >
->Esto vuelve al antiguo comportamiento de proporcionar una sesión de administración a `WorkflowProcess` y proporcionan acceso sin restricciones a la totalidad del repositorio una vez más.
+>Esto revierte al comportamiento anterior de proporcionar una sesión de administración a la implementación de `WorkflowProcess` y proporcionar acceso sin restricciones a la totalidad del repositorio una vez más.
 
 ## Procesos de control de flujo {#workflow-control-processes}
 
@@ -92,30 +92,30 @@ Los siguientes procesos no realizan ninguna acción en el contenido. Sirven para
 
 ### AbsoluteTimeAutoAdvancer (Absolute Time Auto Advancer) {#absolutetimeautoadvancer-absolute-time-auto-advancer}
 
-El `AbsoluteTimeAutoAdvancer` (Absolute Time Auto Advancer) se comporta de forma idéntica a **AutoAdvancer**, excepto que se agota el tiempo de espera en una fecha y hora determinadas, en lugar de después de un periodo determinado.
+El proceso `AbsoluteTimeAutoAdvancer` (Absolute Time Auto Advancer) se comporta de manera idéntica a **AutoAdvancer**, excepto que se agota el tiempo de espera en una fecha y hora determinadas, en lugar de después de un período de tiempo determinado.
 
 * **Clase Java™**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
-* **Carga útil**: Ninguno.
+* **Carga**: Ninguna.
 * **Argumentos**: Ninguno.
 * **Tiempo de espera**: El proceso agota el tiempo de espera cuando se llega a la hora y fecha establecidas.
 
 ### AutoAdvancer (Auto Advancer) {#autoadvancer-auto-advancer}
 
-El `AutoAdvancer` process avanza automáticamente el flujo de trabajo al siguiente paso. Si hay más de un paso siguiente posible (por ejemplo, si hay una división O), este proceso impulsará el flujo de trabajo a lo largo del *ruta predeterminada*, si se ha especificado uno, de lo contrario el flujo de trabajo no avanzará.
+El proceso `AutoAdvancer` avanza automáticamente el flujo de trabajo al paso siguiente. Si hay más de un paso siguiente posible (por ejemplo, si hay una división O), este proceso hará avanzar el flujo de trabajo a lo largo de la *ruta predeterminada*, si se ha especificado una, de lo contrario el flujo de trabajo no avanzará.
 
 * **Clase Java™**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
-* **Carga útil**: Ninguno.
+* **Carga**: Ninguna.
 * **Argumentos**: Ninguno.
-* **Tiempo de espera**: El proceso agota el tiempo de espera después de un período de tiempo establecido.
+* **Tiempo de espera**: El proceso expira después de un período de tiempo establecido.
 
 ### ProcessAssembler (ensamblador de procesos) {#processassembler-process-assembler}
 
-El `ProcessAssembler` process ejecuta varios subprocesos secuencialmente en un solo paso del flujo de trabajo. Para usar la variable `ProcessAssembler`, cree un solo paso de este tipo en el flujo de trabajo y defina sus argumentos para indicar los nombres y argumentos de los subprocesos que desea ejecutar.
+El proceso `ProcessAssembler` ejecuta varios subprocesos secuencialmente en un solo paso del flujo de trabajo. Para utilizar `ProcessAssembler`, cree un solo paso de este tipo en el flujo de trabajo y establezca sus argumentos para indicar los nombres y argumentos de los subprocesos que desea ejecutar.
 
 * **Clase Java™**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **Carga útil** AEM : un recurso DAM, una página de la página de la página o ninguna carga útil (depende de los requisitos de los subprocesos).
+* AEM **Carga útil**: Un recurso DAM, una página de la página de la base de datos o ninguna carga útil (depende de los requisitos de los subprocesos).
 * **Argumentos**:
 
 ```
@@ -151,9 +151,9 @@ Los siguientes procesos realizan tareas sencillas o sirven como ejemplos.
 
 >[!CAUTION]
 >
->No cambie nada en el `/libs` ruta.
+>No cambie nada en la ruta de acceso `/libs`.
 >
->Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una revisión o un paquete de funciones).
+>Esto se debe a que el contenido de `/libs` se sobrescribirá la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una revisión o un paquete de características).
 
 ### eliminar {#delete}
 
@@ -161,9 +161,9 @@ Se elimina el elemento de la ruta determinada.
 
 * **Ruta de ECMAScript**: `/libs/workflow/scripts/delete.ecma`
 
-* **Carga útil**: Ruta JCR
+* **Carga útil**: ruta JCR
 * **Argumentos**: Ninguno
-* **Tiempo de espera**: ignorado
+* **Tiempo de espera**: omitido
 
 ### noop {#noop}
 
@@ -171,19 +171,19 @@ Este es el proceso nulo. No realiza ninguna operación, pero registra un mensaje
 
 * **Ruta de ECMAScript**: `/libs/workflow/scripts/noop.ecma`
 
-* **Carga útil**: Ninguno
+* **Carga**: Ninguna
 * **Argumentos**: Ninguno
-* **Tiempo de espera**: ignorado
+* **Tiempo de espera**: omitido
 
 ### rule-false {#rule-false}
 
-Este es un proceso nulo que devuelve `false` en el `check()` método.
+Este es un proceso nulo que devuelve `false` en el método `check()`.
 
 * **Ruta de ECMAScript**: `/libs/workflow/scripts/rule-false.ecma`
 
-* **Carga útil**: Ninguno
+* **Carga**: Ninguna
 * **Argumentos**: Ninguno
-* **Tiempo de espera**: ignorado
+* **Tiempo de espera**: omitido
 
 ### muestra {#sample}
 
@@ -191,9 +191,9 @@ Este es un ejemplo de proceso ECMAScript.
 
 * **Ruta de ECMAScript**: `/libs/workflow/scripts/sample.ecma`
 
-* **Carga útil**: Ninguno
+* **Carga**: Ninguna
 * **Argumentos**: Ninguno
-* **Tiempo de espera**: ignorado
+* **Tiempo de espera**: omitido
 
 ### LockProcess {#lockprocess}
 
@@ -203,7 +203,7 @@ Bloquea la carga útil del flujo de trabajo.
 
 * **Carga útil:** JCR_PATH y JCR_UUID
 * **Argumentos:** Ninguno
-* **Tiempo de espera:** Ignorado
+* **Tiempo de espera:** omitido
 
 El paso no tiene efecto en las siguientes circunstancias:
 
@@ -218,7 +218,7 @@ Desbloquea la carga útil del flujo de trabajo.
 
 * **Carga útil:** JCR_PATH y JCR_UUID
 * **Argumentos:** Ninguno
-* **Tiempo de espera:** Ignorado
+* **Tiempo de espera:** omitido
 
 El paso no tiene efecto en las siguientes circunstancias:
 
@@ -233,8 +233,8 @@ El siguiente proceso realiza una tarea relacionada con la versión.
 
 AEM Crea una versión de la carga útil del flujo de trabajo (página de o recurso DAM).
 
-* **clase Java™**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
+* **Clase Java™**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 
-* **Carga útil**: una ruta JCR o UUID que hace referencia a una página o recurso DAM
+* **Carga útil**: Una ruta JCR o UUID que hace referencia a una página o recurso DAM
 * **Argumentos**: Ninguno
 * **Tiempo de espera**: Respetado

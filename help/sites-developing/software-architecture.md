@@ -36,9 +36,9 @@ SOLID es un acrónimo que describe cinco principios arquitectónicos a los que h
 
 * **S** Principio de responsabilidad único: cada módulo, clase, método, etc., solo debe tener una responsabilidad.
 * **O** Principio abierto/Cerrado: los módulos deben estar abiertos para su extensión y cerrados para su modificación.
-* **L** Principio de sustitución de iskov: los tipos deben ser reemplazables por sus subtipos.
-* **I** Principio de segregación de interfaz: no se debe obligar a ningún cliente a depender de métodos que no utiliza.
-* **D** Principio de inversión de dependencia: los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambas deberían depender de abstracciones. Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones.
+* **L** principio de sustitución de iskov: los tipos deben ser reemplazables por sus subtipos.
+* **I** Principio de segmentación de interfaz: no se debe obligar a ningún cliente a depender de métodos que no utiliza.
+* Principio de inversión de dependencia **D** Los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambas deberían depender de abstracciones. Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones.
 
 La lucha por el cumplimiento de estos cinco principios debería dar como resultado un sistema que tenga una estricta separación de intereses.
 

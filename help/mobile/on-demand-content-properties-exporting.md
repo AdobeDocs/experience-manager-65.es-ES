@@ -22,13 +22,13 @@ ht-degree: 3%
 >
 >Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Las aplicaciones se representan como *cq:Páginas* AEM en la.
+AEM Las aplicaciones se representan como *cq:Pages* en la lista de direcciones de correo electrónico de.
 
-Comparten las mismas propiedades comunes encontradas en cualquier *cq:Page* además de otros que se muestran a continuación y que representan propiedades de compatibilidad con la integración.
+Comparten las mismas propiedades comunes que se encuentran en cualquier *cq:Page*, además de otras que se muestran a continuación y que representan propiedades compatibles con la integración.
 
 ## Propiedades de la aplicación {#app-properties}
 
-La siguiente tabla muestra **Propiedades y nodos de la aplicación**.
+La tabla siguiente muestra **Propiedades y nodos de la aplicación**.
 
 <table>
  <tbody>
@@ -45,7 +45,7 @@ La siguiente tabla muestra **Propiedades y nodos de la aplicación**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>Cadena:Ruta</td>
-   <td><p>Ruta a las configuraciones de exportación de la aplicación. La configuración de exportación es una carpeta con 2 plantillas de configuración de exportación de ContentSync secundarias;</p> <p><i>dps-article</i>: Configuración de exportación de ContentSync para exportar el contenido del artículo</p> <p><i>dps-HTMLResources</i>: Configuración de exportación de ContentSync para exportar recursos compartidos de aplicaciones/artículos</p> </td>
+   <td><p>Ruta a las configuraciones de exportación de la aplicación. La configuración de exportación es una carpeta con 2 plantillas de configuración de exportación de ContentSync secundarias;</p> <p><i>dps-article</i>: la configuración de exportación de ContentSync para exportar el contenido del artículo</p> <p><i>dps-HTMLResources</i>: la configuración de exportación de ContentSync para exportar recursos compartidos de aplicaciones/artículos</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -80,12 +80,12 @@ La siguiente tabla muestra **Propiedades y nodos de la aplicación**.
   <tr>
    <td>sling:resourceType</td>
    <td>Cadena:Ruta</td>
-   <td><p>Ruta a un cq:Component que es o extiende <i>mobileapps/core/components/instance.</i></p> <p>Esto proporciona la presencia y el procesamiento en el catálogo de aplicaciones.</p> </td>
+   <td><p>Ruta a cq:Component que es o amplía <i>mobileapps/core/components/instance.</i></p> <p>Esto proporciona la presencia y el procesamiento en el catálogo de aplicaciones.</p> </td>
   </tr>
  </tbody>
 </table>
 
-Puede utilizar ***Propiedades del contenido*** para crear contenido. Consulte los siguientes recursos para crear y exportar artículos y recursos compartidos:
+Puede usar ***Propiedades de contenido*** para crear contenido. Consulte los siguientes recursos para crear y exportar artículos y recursos compartidos:
 
 * [Propiedades del contenido](/help/mobile/content-properties.md)
 * [Creando configuración de exportación del artículo](/help/mobile/creating-article-export-configuration.md)

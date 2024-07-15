@@ -43,15 +43,15 @@ Inicie el servidor en la línea de comandos:
 
 `<host>`
 
-Esta es la dirección de host de la instancia CRX a la que desea conectarse. Si la instancia está en el equipo local, este es `localhost`.
+Esta es la dirección de host de la instancia de CRX a la que desea conectarse. Si la instancia se encuentra en el equipo local, entonces se trata de `localhost`.
 
 `<remoteport>`
 
-Este es el puerto host de la instancia CRX de destino. AEM Por ejemplo, el valor predeterminado de una instalación recién instalada es el siguiente: **`4502`** AEM y el valor predeterminado para una instancia de autor recién instalada es `4502`.
+Este es el puerto host de la instancia de CRX de destino. AEM AEM Por ejemplo, el valor predeterminado de una instalación recién instalada de la es **`4502`** y el valor predeterminado de una instancia de autor recién instalada es `4502`.
 
 `<localport>`
 
-Este es el puerto del equipo local al que desea conectarse para acceder a la instancia CRX a través del proxy.
+Este es el puerto del equipo local al que desea conectarse para acceder a la instancia de CRX a través del proxy.
 
 **Opciones**
 
@@ -67,13 +67,13 @@ Si está buscando combinaciones de bytes específicas en el tráfico, habilite e
 
 Agrega una marca de tiempo a cada salida de registro. La marca de tiempo está en segundos, por lo que es posible que no sea adecuada para comprobar solicitudes únicas. Utilícelo para localizar eventos que se produjeron en un momento específico si utiliza el servidor proxy durante un período de tiempo más largo.
 
-`-logfile <filename>`(escribir en el archivo de registro)
+`-logfile <filename>`(escribir en archivo de registro)
 
 Escribe la conversación cliente-servidor en un archivo de registro. Este parámetro también funciona en modo silencioso.
 
 **`-i <numIndentions>`**(agregar sangría)
 
-Cada conexión activa tiene una sangría para mejorar la legibilidad. El valor predeterminado es 16 niveles. Esta función se introdujo con `proxy.jar version 1.16`.
+Cada conexión activa tiene una sangría para mejorar la legibilidad. El valor predeterminado es 16 niveles. Esta característica se introdujo con `proxy.jar version 1.16`.
 
 ### Formato de registro {#log-format}
 
@@ -88,7 +88,7 @@ Por ejemplo, una solicitud de página Web puede tener el siguiente aspecto:
 * C significa que esta entrada proviene del cliente (es una solicitud de una página web)
 * 0 es el número de conexión (el contador de conexión comienza en 0)
 * #00000 el desplazamiento en la secuencia de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
-* `[GET <?>]` es el contenido de la solicitud; en el ejemplo, uno de los encabezados HTTP (url).
+* `[GET <?>]` es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
 
 Cuando se cierra una conexión, se registra la siguiente información:
 
@@ -97,7 +97,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Muestra el número de bytes que pasaron entre el cliente ( `C`) y el servidor ( `S`) en la sexta conexión y a la velocidad media.
+Muestra el número de bytes que pasaron entre el cliente (`C`) y el servidor (`S`) en la sexta conexión y a la velocidad promedio.
 
 **Ejemplo de salida de registro**
 
@@ -131,7 +131,7 @@ AEM Suponiendo que la instancia de se esté ejecutando en `localhost:4502`, el p
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Ahora se puede acceder a la instancia de CQ/CRX a través del proxy en `localhost:4444` y todas las comunicaciones a través de este puerto se registran en `test.log`.
+Ahora se puede acceder a la instancia de CQ/CRX a través del proxy en `localhost:4444` y toda la comunicación a través de este puerto se ha registrado en `test.log`.
 
 AEM Si ahora observa la salida del proxy, verá la interacción entre el explorador y la instancia de la.
 
@@ -146,7 +146,7 @@ A continuación, abra un explorador y acceda a la página de prueba:
 
 `http://localhost:4444/content/test.html`
 
-Y se ve que el navegador hace una `GET` solicitud de la página:
+Y verá que el explorador realiza una solicitud de `GET` para la página:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -163,7 +163,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-AEM La instancia de respuesta responde con el contenido del archivo `test.html`:
+AEM La instancia responde con el contenido del archivo `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -195,7 +195,7 @@ El siguiente ejemplo de entrada de registro muestra todas las cookies y sus valo
 
 `C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]`
 
-**Comprobación de encabezados y sus valores**
+**Comprobando encabezados y sus valores**
 
 El siguiente ejemplo de entrada de registro muestra que el servidor puede realizar una conexión persistente y que el encabezado de longitud de contenido se ha establecido correctamente:
 
@@ -205,7 +205,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
  S-7-#000107 -> [Content-Length: 124 ]
 ```
 
-**Comprobar si Keep-Alive funciona**
+**Comprobando si Keep-Alive funciona**
 
 Keep-alive es una función de HTTP que permite a un cliente reutilizar la conexión TCP con el servidor para realizar varias solicitudes (para el código de página, imágenes, hojas de estilo, etc.). Sin la conexión persistente, el cliente debe establecer una nueva conexión para cada solicitud.
 
@@ -216,7 +216,7 @@ Para comprobar si la conexión persistente funciona:
 * Si la conexión persistente funciona, el contador de conexiones nunca debe superar las 5 a 10 conexiones.
 * Si la conexión persistente no funciona, el contador de conexiones aumenta rápidamente.
 
-**Búsqueda de solicitudes perdidas**
+**Buscando solicitudes perdidas**
 
 Si pierde solicitudes en una configuración de servidor compleja, por ejemplo, con un cortafuegos y un Dispatcher, puede utilizar el servidor proxy para averiguar dónde se perdió la solicitud. Si hay un cortafuegos:
 

@@ -24,13 +24,13 @@ AEM Puede recibir notificaciones de varias áreas de la, como notificaciones sob
 Estas notificaciones se reciben en dos bandejas de entrada, separadas por el tipo de notificaciones:
 
 * En la siguiente sección se describe una bandeja de entrada en la que puede ver las notificaciones que recibe como resultado de las suscripciones.
-* Una bandeja de entrada especializada para elementos de flujo de trabajo se describe en la [Participación en flujos de trabajo](/help/sites-classic-ui-authoring/classic-workflows-participating.md) documento.
+* En el documento [Participar en flujos de trabajo](/help/sites-classic-ui-authoring/classic-workflows-participating.md) se describe una bandeja de entrada especializada para elementos de flujo de trabajo.
 
 ## Visualización de las notificaciones {#viewing-your-notifications}
 
 Para ver las notificaciones:
 
-1. Abra la bandeja de entrada de notificaciones: en **Sitios web** , haga clic en el botón user en la esquina superior derecha y seleccione **Bandeja de entrada de notificaciones**.
+1. Abra la bandeja de entrada de notificaciones: en la consola **Sitios web**, haga clic en el botón de usuario en la esquina superior derecha y seleccione **Bandeja de entrada de notificaciones**.
 
    ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
 
@@ -52,7 +52,7 @@ Para ver las notificaciones:
 
 Para suscribirse a las notificaciones:
 
-1. Abra la bandeja de entrada de notificaciones: en **Sitios web** , haga clic en el botón user en la esquina superior derecha y seleccione **Bandeja de entrada de notificaciones**.
+1. Abra la bandeja de entrada de notificaciones: en la consola **Sitios web**, haga clic en el botón de usuario en la esquina superior derecha y seleccione **Bandeja de entrada de notificaciones**.
 
    ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
 
@@ -63,18 +63,18 @@ Para suscribirse a las notificaciones:
    >
    >`https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. Clic **Configurar...** en la esquina superior izquierda para abrir el cuadro de diálogo de configuración.
+1. Haga clic en **Configurar...** en la esquina superior izquierda para abrir el cuadro de diálogo de configuración.
 
    ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
 
 1. Seleccione el canal de notificación:
 
-   * **Bandeja de entrada** AEM : las notificaciones se muestran en la bandeja de entrada de la.
+   * AEM **Bandeja de entrada**: las notificaciones se muestran en la Bandeja de entrada de la.
    * **Correo electrónico**: las notificaciones se envían por correo electrónico a la dirección de correo electrónico definida en el perfil de usuario.
 
    >[!NOTE]
    >
-   >Se deben configurar algunos ajustes para recibir notificaciones por correo electrónico. También es posible personalizar la plantilla de correo electrónico o añadir una plantilla de correo electrónico para un nuevo idioma. Consulte [Configuración de notificaciones por correo electrónico](/help/sites-administering/notification.md#configuringemailnotification) AEM para configurar las notificaciones por correo electrónico en la.
+   >Se deben configurar algunos ajustes para recibir notificaciones por correo electrónico. También es posible personalizar la plantilla de correo electrónico o añadir una plantilla de correo electrónico para un nuevo idioma. AEM Consulte [Configuración de notificaciones por correo electrónico](/help/sites-administering/notification.md#configuringemailnotification) para configurar las notificaciones por correo electrónico en el servicio de notificaciones por correo electrónico de.
 
 1. Seleccione las acciones de página para las que desea recibir notificaciones:
 
@@ -90,23 +90,23 @@ Cuando se elimina o mueve una página, se replica automáticamente una acción d
 
 1. Defina las rutas de las páginas para las que se le notificará:
 
-   * Clic **Añadir** para agregar una nueva fila a la tabla.
-   * Haga clic en **Ruta** y escriba la ruta, por ejemplo, `/content/docs`.
+   * Haga clic en **Agregar** para agregar una fila nueva a la tabla.
+   * Haga clic en la celda de tabla **Path** e introduzca la ruta de acceso, por ejemplo, `/content/docs`.
 
-   * Para recibir notificaciones de todas las páginas que pertenecen al subárbol, establezca **¿Exacto?** hasta **No**.
-Para recibir notificaciones solo para acciones en la página definida por la ruta, establezca **¿Exacto?** hasta **Sí**.
+   * Para recibir notificaciones de todas las páginas que pertenecen al subárbol, establezca **¿Exacto?** a **No**.
+Para que solo se le notifique por las acciones en la página definida por la ruta, establezca **¿Exacto?** a **Sí**.
 
-   * Para permitir la regla, establezca **Regla** hasta **Permitir**. Si se establece en **Denegar**, la regla se deniega, pero no se elimina, y se puede permitir más adelante.
+   * Para permitir la regla, establezca **Rule** en **Allow**. Si se establece en **Denegar**, la regla se deniega, pero no se elimina y se puede permitir más adelante.
 
-   Para quitar una definición, seleccione la fila haciendo clic en una celda de la tabla y haga clic en **Eliminar**.
+   Para quitar una definición, seleccione la fila haciendo clic en una celda de tabla y haga clic en **Eliminar**.
 
-1. Clic **OK** para guardar la configuración.
+1. Haga clic en **Aceptar** para guardar la configuración.
 
 ## Procesamiento de notificaciones {#processing-your-notifications}
 
-AEM Si ha elegido recibir notificaciones en la bandeja de entrada de la bandeja de entrada de la, esta se rellenará con notificaciones. Puede [ver las notificaciones](#viewing-your-notifications), luego seleccione las notificaciones necesarias para:
+AEM Si ha elegido recibir notificaciones en la bandeja de entrada de la bandeja de entrada de la, esta se rellenará con notificaciones. Puedes [ver tus notificaciones](#viewing-your-notifications) y luego seleccionar las notificaciones necesarias para:
 
-* Acéptelo haciendo clic en **Aprobar**: el valor en la variable **Leer** se establece en **true**.
+* Acéptelo haciendo clic en **Aprobar**: el valor de la columna **Leer** está establecido en **verdadero**.
 
 * Elimínelo haciendo clic en **Eliminar**.
 

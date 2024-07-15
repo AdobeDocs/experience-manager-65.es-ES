@@ -27,7 +27,7 @@ ht-degree: 1%
 >
 >Está sujeto a cambios con el lanzamiento del paquete de servicio 1 de 6.3.
 
-AEM Mobile AEM Content Services es una función ligera para solicitar contenido que administra el usuario de forma independiente. AEM Esto proporciona a todos los desarrolladores de aplicaciones una forma de alto rendimiento de recuperar contenido sin tener que tener conocimientos profundos de repositorio de contenido (JCR) y marco de trabajo web (Sling). Permite que las aplicaciones solicitantes se disocien del repositorio de contenido.
+AEM Mobile AEM Content Services es una función ligera para solicitar contenido que administra el usuario de forma independiente. AEM Esto proporciona a todos los desarrolladores de aplicaciones una forma de alto rendimiento de recuperar contenido sin tener que tener conocimientos profundos sobre el repositorio de contenido (JCR) y el marco de trabajo web (Sling) de los que se dispone en la aplicación. Permite que las aplicaciones solicitantes se disocien del repositorio de contenido.
 
 AEM AEM Content Services introduce varias construcciones de nuevas que permiten a un desarrollador acceder a contenido administrado por el usuario sin tener conocimiento de la estructura del repositorio de ese contenido.
 
@@ -41,7 +41,7 @@ Los servicios de contenido pueden entregar el contenido como recursos, HTML empa
 >
 >Antes de empezar a usar los servicios de contenido, asegúrese de habilitar el indicador Servicios de contenido. Para habilitar la creación y administración de modelos en la aplicación, habilite los modelos de datos en el Explorador de configuración.
 >
->Consulte **[Administración de servicios de contenido](/help/mobile/developing-content-services.md)** y el [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
+>Consulte **[Administración de servicios de contenido](/help/mobile/developing-content-services.md)** y la documentación de [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

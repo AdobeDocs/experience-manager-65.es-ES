@@ -38,11 +38,11 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->No puede buscar tareas asignadas a usuarios mediante la API de servicio web. El motivo es que no puede invocar el `taskList` , que es una llamada de método necesaria para realizar esta tarea.
+>No puede buscar tareas asignadas a usuarios mediante la API de servicio web. El motivo es que no puede invocar el método `taskList`, que es una llamada de método necesaria para realizar esta tarea.
 
 >[!NOTE]
 >
->Inicio rápido en Programación con AEM Forms se basan en el sistema operativo del servidor de Forms. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Inicio rápido en Programación con AEM Forms se basan en el sistema operativo del servidor de Forms. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## SOAP Inicio rápido (modo de): Asignación de tareas mediante la API de Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -268,7 +268,7 @@ El siguiente ejemplo de código Java bloquea una tarea que corresponde al valor 
 
 ## SOAP Inicio rápido (modo de): Recuperación de tareas asignadas a usuarios mediante la API de Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera todas las tareas asignadas a un usuario denominado *azul tony*. Observe que este usuario está especificado en las propiedades de conexión. Se muestra información sobre las tareas devueltas, como su valor identificador y descripción.
+El siguiente ejemplo de código Java recupera todas las tareas asignadas a un usuario denominado *tony blue*. Observe que este usuario está especificado en las propiedades de conexión. Se muestra información sobre las tareas devueltas, como su valor identificador y descripción.
 
 ```java
  /*
@@ -394,7 +394,7 @@ El siguiente ejemplo de código Java recupera todas las tareas asignadas a un us
 
 ## SOAP Inicio rápido (modo de): Recuperación de datos de formulario de tareas mediante la API de Java {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera los datos de formulario de una tarea con el valor de identificador 304. Los datos del formulario se escriben en un archivo XML denominado *FormData.xml* se encuentra en C:\Adobe.
+El siguiente ejemplo de código Java recupera los datos de formulario de una tarea con el valor de identificador 304. Los datos del formulario se escriben en un archivo XML denominado *FormData.xml* ubicado en C:\Adobe.
 
 ```java
  /*
@@ -500,7 +500,7 @@ El siguiente ejemplo de código Java recupera los datos de formulario de una tar
 
 ## SOAP Inicio rápido (modo de): Modificación de datos de formulario mediante la API de Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-El siguiente ejemplo de código Java actualiza un formulario con datos que se encuentran en la variable *FormData.xml* archivo.
+El siguiente ejemplo de código Java actualiza un formulario con datos que se encuentran en el archivo *FormData.xml*.
 
 ```java
  /*
@@ -714,7 +714,7 @@ El siguiente ejemplo de código Java recupera los archivos adjuntos. Cada archiv
 
 ## SOAP Inicio rápido (modo de): Recuperación de información de la tarea mediante la API de Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera todas las tareas basadas en un proceso denominado *Préstamo Hipotecario - Preconstruido*. El estado de cada tarea devuelta se comprueba para garantizar que se trate de una tarea completada. Se recupera y muestra información como el nombre del usuario que completó la tarea y la fecha en que se completó.
+El siguiente ejemplo de código Java recupera todas las tareas que se basan en un proceso denominado *MortgageLoan - Prebuilt*. El estado de cada tarea devuelta se comprueba para garantizar que se trate de una tarea completada. Se recupera y muestra información como el nombre del usuario que completó la tarea y la fecha en que se completó.
 
 ```java
  /*

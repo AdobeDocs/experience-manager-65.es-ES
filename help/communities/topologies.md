@@ -24,26 +24,26 @@ AEM Este enfoque es fundamentalmente diferente de la forma en que la plataforma 
 
 AEM La plataforma de utiliza un almacén de nodos que replica el contenido del sitio desde el autor hasta la publicación, mientras que AEM Communities utiliza un único almacén común para UGC que nunca se replica.
 
-Para la tienda UGC común, es necesario elegir una [proveedor de recursos de almacenamiento (SRP)](working-with-srp.md). Las opciones recomendadas son:
+Para el almacén UGC común, es necesario elegir un [proveedor de recursos de almacenamiento (SRP)](working-with-srp.md). Las opciones recomendadas son:
 
 * [DSRP: proveedor de recursos de almacenamiento de base de datos relacional](dsrp.md)
 * [MSRP: proveedor de recursos de almacenamiento de MongoDB](msrp.md)
 * [ASRP: proveedor de recursos de almacenamiento de Adobe](asrp.md)
 
-Otra opción de SRP, [JSRP: proveedor de recursos de almacenamiento de JCR](jsrp.md), no admite un almacén UGC común para los entornos de creación y publicación tanto para el acceso como para el acceso.
+Otra opción de SRP, [JSRP - Proveedor de recursos de almacenamiento JCR](jsrp.md), no admite un almacén UGC común para los entornos de creación y publicación para el acceso a ambos.
 
 Si se requiere un almacén común, se recomiendan las siguientes topologías.
 
 >[!NOTE]
 >
->Para AEM Communities, [UGC nunca se replica](working-with-srp.md#ugc-never-replicated).
+>Para AEM Communities, [UGC nunca se replicará](working-with-srp.md#ugc-never-replicated).
 >
->Cuando la implementación no incluye un [almacén común](working-with-srp.md)AEM , UGC solo estará visible en la instancia de publicación o autor en la que se haya introducido el código de acceso del usuario (UGC) en la que se haya publicado el código.
+>AEM Cuando la implementación no incluye un [almacén común](working-with-srp.md), UGC solo será visible en la instancia de publicación o autor en la que se ingresó en la publicación o en la instancia de autor en la que se haya ingresado.
 >
 
 >[!NOTE]
 >
->AEM Para obtener más información sobre la plataforma de la, consulte [Implementaciones recomendadas](../../help/sites-deploying/recommended-deploys.md) y [AEM Introducción a la plataforma de](../../help/sites-deploying/data-store-config.md).
+>AEM AEM Para obtener más información acerca de la plataforma de, consulte [Implementaciones recomendadas](../../help/sites-deploying/recommended-deploys.md) e [Introducción a la plataforma de la](../../help/sites-deploying/data-store-config.md).
 
 ## Para producción {#for-production}
 
@@ -53,15 +53,15 @@ Dos ejemplos:
 
 1. Si el volumen esperado de UGC es alto y es posible una instancia local de MongoDB, la opción sería [MSRP](msrp.md).
 
-1. Para obtener un rendimiento óptimo del contenido de la página, elija una [publicar conjunto de servidores](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) y [ASRP](asrp.md) proporcionaría una escala óptima de UGC con operaciones relativamente sencillas.
+1. Para obtener un rendimiento óptimo del contenido de la página, la elección de [conjunto de servidores de publicación](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) y [ASRP](asrp.md) proporcionaría un escalado óptimo de UGC con operaciones relativamente sencillas.
 
 Para ambos, la implementación puede basarse en cualquier microkernel de OAK.
 
-Para elegir el almacén común adecuado, tenga en cuenta la variable única [características](working-with-srp.md#characteristics-of-srp-options) de cada uno.
+Para elegir el almacén común apropiado, tenga en cuenta las [características](working-with-srp.md#characteristics-of-srp-options) únicas de cada uno.
 
 Para obtener más información sobre los microkernals de Oak, visite [Implementaciones recomendadas](../../help/sites-deploying/recommended-deploys.md).
 
-### Granja de publicación TarMK {#tarmk-publish-farm}
+### TarMK Publish Farm {#tarmk-publish-farm}
 
 Cuando la topología es un conjunto de servidores de publicación, los temas importantes relevantes son:
 
@@ -82,13 +82,13 @@ Cuando la topología es un conjunto de servidores de publicación, los temas imp
 | Implementación | REPOSITORIO DE CONTENIDO DEL SITIO | REPOSITORIO DE CONTENIDO GENERADO POR EL USUARIO | PROVEEDOR DE RECURSOS DE ALMACENAMIENTO | ALMACÉN COMÚN |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | Granja TarMK (predeterminada) | JCR | JCR | JSRP | No |
-| Oak Cluster | JCR | JCR | JSRP | Sí solo para el entorno de publicación |
+| Clúster Oak | JCR | JCR | JSRP | Sí solo para el entorno de publicación |
 
 ## Para desarrollo {#for-development}
 
-Para entornos que no son de producción, [JSRP](jsrp.md) permite configurar de forma sencilla un entorno de desarrollo con una instancia de autor y una instancia de publicación.
+En los entornos que no son de producción, [JSRP](jsrp.md) proporciona una configuración sencilla de un entorno de desarrollo con una instancia de autor y una instancia de publicación.
 
-Si elige [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) para la producción, también es posible configurar un entorno de desarrollo similar utilizando el almacenamiento bajo demanda de Adobe o MongoDB. Para ver un ejemplo, consulte [Cómo configurar MongoDB para la demostración](demo-mongo.md).
+Si elige [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) para producción, también es posible configurar un entorno de desarrollo similar usando almacenamiento bajo demanda de Adobe o MongoDB. Para ver un ejemplo, vea [Cómo configurar MongoDB para la demostración](demo-mongo.md).
 
 ## Referencias {#references}
 

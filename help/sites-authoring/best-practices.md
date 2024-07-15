@@ -22,7 +22,7 @@ AEM Las prácticas recomendadas de creación describen cómo utilizar los recurs
 
 Las siguientes áreas tienen documentación disponible sobre las prácticas recomendadas:
 
-* [Assets](#assets)
+* [Recursos](#assets)
 * [Sites](#sites)
 * [Formularios](#forms)
 
@@ -34,7 +34,7 @@ Para conocer las prácticas recomendadas sobre la administración, la implementa
 
 En las tablas siguientes se describen y vinculan documentos específicos.
 
-## Assets {#assets}
+## Recursos {#assets}
 
 Las prácticas recomendadas en Assets, incluidas la capacidad de Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
 
@@ -42,7 +42,7 @@ Las prácticas recomendadas en Assets, incluidas la capacidad de Dynamic Media y
  <tbody>
   <tr>
    <td>Formatos de archivo</td>
-   <td><a href="/help/assets/assets-file-format-best-practices.md">Prácticas recomendadas para formatos de archivo de Assets</a></td>
+   <td><a href="/help/assets/assets-file-format-best-practices.md">Prácticas recomendadas para los formatos de archivo Assets</a></td>
    <td>Describe las prácticas recomendadas sobre la compatibilidad con archivos en AEM Assets.</td>
   </tr>
   <tr>
@@ -56,7 +56,7 @@ Las prácticas recomendadas en Assets, incluidas la capacidad de Dynamic Media y
    <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o si se integra con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
-   <td>Recursos multilingües</td>
+   <td>Multi-lingual Assets</td>
    <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Prácticas recomendadas de traducción</a></td>
    <td>AEM Describe las prácticas recomendadas para traducir recursos de forma eficaz.</td>
   </tr>

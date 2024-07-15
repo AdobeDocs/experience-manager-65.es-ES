@@ -30,7 +30,7 @@ AEM Esto podría servir como evaluación de las actividades de desarrollo que se
 
 ## Configuración {#how-to-set-up}
 
-Pattern Detector se libera por separado como [un paquete](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) AEM AEM trabajar con cualquier versión de origen de la versión 6.1 a la versión 6.5 con segmentación a partir de la actualización a la versión 6.5 de la versión 6.100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 Se puede instalar utilizando el complemento [Administrador de paquetes](/help/sites-administering/package-manager.md).
+AEM AEM Pattern Detector se presenta por separado como [un paquete](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona en cualquier versión de origen desde la versión 6.1 a la versión 6.5, con objetivo de actualización a la versión 6.5 de la versión 6.1000000000000000000000000000000000000000000000. Se puede instalar usando el [Administrador de paquetes](/help/sites-administering/package-manager.md).
 
 ## Usos {#how-to-use}
 
@@ -41,18 +41,18 @@ Pattern Detector se libera por separado como [un paquete](https://experience.ado
 >* aumentar la tasa de detección
 >* evitar cualquier ralentización en las instancias esenciales para el negocio
 >
->ambos al mismo tiempo, se recomienda ejecutarlo **en entornos de ensayo** lo más cerca posible de las de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
+>ambos al mismo tiempo, se recomienda ejecutarlo **en entornos de ensayo** lo más cerca posible de los de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
 
 Puede utilizar varios métodos para comprobar el resultado de Pattern Detector:
 
 * **A través de la consola Felix Inventory:**
 
-1. AEM Vaya a la consola web de navegando hasta *https://serveraddress:serverport/system/console/configMgr*
-1. Seleccionar **Estado: detector de patrones** como se muestra en la siguiente imagen:
+1. AEM Vaya a la consola web de la navegando a *https://serveraddress:serverport/system/console/configMgr*
+1. Seleccione **Estado - Detector de patrones** como se muestra en la siguiente imagen:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **A través de una interfaz JSON reactiva basada en texto o normal**
+* **A través de una interfaz JSON normal o basada en texto reactivo**
 * **A través de una interfaz de líneas JSON reactiva, **que genera un documento JSON independiente en cada línea.
 
 Ambos métodos se detallan a continuación:
@@ -82,7 +82,7 @@ El resultado será similar al siguiente:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-El progreso se puede filtrar mediante la variable `grep` comando:
+El progreso se puede filtrar usando el comando `grep`:
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -98,7 +98,7 @@ Lo que da como resultado el siguiente resultado:
 
 ## Gestión de la interfaz JSON {#handling-the-json-interface}
 
-Del mismo modo, JSON se puede procesar mediante la variable [herramienta jq](https://stedolan.github.io/jq/) en cuanto se publique.
+Del mismo modo, JSON se puede procesar mediante la [herramienta jq](https://stedolan.github.io/jq/) en cuanto se publique.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -208,7 +208,7 @@ Con la salida:
 
 >[!NOTE]
 >
->El método recomendado es guardar toda la salida desde curl en el archivo y luego procesarla mediante `jq` o `grep` para filtrar el tipo de información.
+>El método recomendado es guardar todo el resultado de curl en el archivo y, a continuación, procesarlo mediante `jq` o `grep` para filtrar el tipo de información.
 
 ## Ámbito de detección {#scope}
 

@@ -29,7 +29,7 @@ Todas las páginas de We.Retail se basan en plantillas editables, lo que permite
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. El selector de modo ya no ofrece el modo Diseño. Todas las páginas de We.Retail se basan en plantillas editables y, para modificar el diseño de las plantillas editables, deben editarse en el editor de plantillas.
-1. Desde el **Información de página** selección de menú **Editar plantilla**.
+1. En el menú **Información de página**, seleccione **Editar plantilla**.
 1. Ahora está editando la plantilla Página principal.
 
    El modo de estructura de la página permite modificar la estructura de la plantilla. Esto incluye, por ejemplo, los componentes permitidos en el contenedor de diseño.
@@ -66,12 +66,12 @@ Todas las páginas de We.Retail se basan en plantillas editables, lo que permite
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. En el editor de plantillas, puede utilizar el selector de modo para cambiar a **Contenido inicial** modo para definir qué contenido se requiere en la página.
+1. En el editor de plantillas, puede usar el selector de modo para cambiar al modo **Contenido inicial** y definir qué contenido se requiere en la página.
 
-   **Diseño** El modo se puede utilizar tal como está en una página normal para definir el diseño de la plantilla.
+   El modo **Diseño** se puede usar tal cual en una página normal para definir el diseño de la plantilla.
 
 ## Más información {#more-information}
 
-Para obtener más información, consulte el documento de creación [Creación de plantillas de página](/help/sites-authoring/templates.md) o el documento para desarrolladores Página [Plantillas: editables](/help/sites-developing/page-templates-editable.md) para obtener información técnica completa sobre las plantillas editables.
+Para obtener más información, consulte el documento de creación [Creación de plantillas de página](/help/sites-authoring/templates.md) o el documento para desarrolladores Página [Plantillas: editables](/help/sites-developing/page-templates-editable.md) para obtener detalles técnicos completos sobre plantillas editables.
 
-También es posible que desee investigar [componentes principales](/help/sites-developing/we-retail-core-components.md). Consulte el documento de creación [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) para obtener una descripción general de las funciones de los componentes principales y del documento para desarrolladores [Desarrollo de componentes principales](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obtener información general técnica.
+Quizá también desee investigar [componentes principales](/help/sites-developing/we-retail-core-components.md). Consulte el documento de creación [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) para obtener una descripción general de las capacidades de los componentes principales y el documento para desarrolladores [Desarrollo de componentes principales](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obtener una descripción general técnica.

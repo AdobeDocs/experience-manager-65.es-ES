@@ -182,5 +182,5 @@ Para eliminar un usuario:
 
 1. Vaya a `https://'[server]:[port]'/lc/useradmin` con las credenciales de administrador de AEM.
 1. Busque un usuario y haga doble clic en el nombre de usuario para abrir las propiedades de usuario. Copie la propiedad `Path`.
-1. AEM Ir a la CRXDE Lite de en `https://'[server]:[port]'/lc/crx/de/index.jsp` y navegue o busque la ruta del usuario.
+1. AEM Vaya al CRXDE Lite de la en `https://'[server]:[port]'/lc/crx/de/index.jsp` y navegue o busque la ruta del usuario.
 1. Elimine la ruta y haga clic en **[!UICONTROL Guardar todo]** para eliminar permanentemente el usuario del repositorio de AEM.

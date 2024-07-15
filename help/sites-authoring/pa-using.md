@@ -34,12 +34,12 @@ Cada columna muestra un valor para el período de informe actual e indica si el 
 
 >[!NOTE]
 >
->Para cambiar el periodo de actualización, [configuración del intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>Para cambiar el período de actualización, [configure el intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Abra el **Sites** consola; por ejemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. En el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá del [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Abra la consola **Sitios**; por ejemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
+1. En el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá de la [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. De nuevo, en el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono y seleccione **Configuración de vista**. El **Configurar columnas** se abre. Realice los cambios necesarios y confirme con **Actualizar**.
+1. De nuevo, en el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono y seleccione **Ver configuración**. Se abre el cuadro de diálogo **Configurar columnas**. Realice los cambios necesarios y confirme con **Actualizar**.
 
    ![aa-04](assets/aa-04.png)
 
@@ -62,11 +62,11 @@ Los miembros del grupo de usuarios administradores de Analytics pueden configura
 >
 >Cuando un árbol de páginas contiene elementos secundarios asociados con diferentes configuraciones de nube de Adobe Analytics, no se pueden configurar las columnas de datos disponibles para las páginas.
 
-1. En Vista de lista, utilice los selectores de vista (a la derecha de la barra de herramientas), seleccione **Configuración de vista** y luego **Añadir datos personalizados de Analytics**.
+1. En la vista de lista, use los selectores de vista (a la derecha de la barra de herramientas), seleccione **Ver configuración** y, a continuación, **Agregar datos personalizados de Analytics**.
 
    ![aa-15](assets/aa-15.png)
 
-1. Seleccione las métricas que desea exponer a los autores en la consola Sitios y, a continuación, haga clic en **Añadir**.
+1. Seleccione las métricas que desee exponer a los autores en la consola Sitios y, a continuación, haga clic en **Agregar**.
 
    Las columnas que aparecen se recuperan de Adobe Analytics.
 
@@ -74,7 +74,7 @@ Los miembros del grupo de usuarios administradores de Analytics pueden configura
 
 ### Apertura de perspectivas de contenido desde sitios {#opening-content-insights-from-sites}
 
-Abrir [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
+Abra [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la efectividad de la página.
 
 1. En la consola Sitios, seleccione la página para la que desea ver las perspectivas de contenido.
 1. En la barra de herramientas, haga clic en el icono Analytics y Recommendations.
@@ -85,25 +85,25 @@ Abrir [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desd
 
 >[!NOTE]
 >
->Esto se muestra si la variable [Se ha configurado el Activity Map](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) para su sitio web.
+>Esto se muestra si el Activity Map [se ha configurado](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) para su sitio web.
 
 >[!NOTE]
 >
 >Los datos del Activity Map se toman de Adobe Analytics.
 
-Cuando su sitio web se haya [configurado para Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puede utilizar el [Activity Map de modo](/help/sites-authoring/author-environment-tools.md#page-modes) para ver los datos relevantes. Por ejemplo:
+Cuando tu sitio web se haya [configurado para Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puedes usar el [Activity Map de modo](/help/sites-authoring/author-environment-tools.md#page-modes) para ver los datos relevantes. Por ejemplo:
 
 ![aa-07](assets/aa-07.png)
 
 ### Acceso al Activity Map {#accessing-the-activity-map}
 
-Después de seleccionar el [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) modo, se le pedirá que introduzca sus credenciales de Adobe Analytics.
+Después de seleccionar el modo [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes), se le pedirá que introduzca sus credenciales de Adobe Analytics.
 
 ![aa-03](assets/aa-03.png)
 
-El **Analytics** se muestra la barra de herramientas flotante; aquí puede:
+Se muestra la barra de herramientas flotante **Analytics**; aquí puede:
 
-* cambie el formato de la barra de herramientas con las flechas dobles (**>>**)
+* cambiar el formato de la barra de herramientas con las flechas dobles (**>**)
 * Alternar Detalles de página (icono en forma de ojo)
 * Configuración del Activity Map (icono del engranaje)
 * Seleccione los análisis que desea mostrar (varios selectores desplegables)
@@ -115,11 +115,11 @@ El **Analytics** se muestra la barra de herramientas flotante; aquí puede:
 
 Puede seleccionar los datos analíticos que se van a mostrar y cómo se deben mostrar, utilizando los distintos criterios:
 
-* **Standard**/**Activo**
+* **Estándar**/**Activo**
 
 * tipo de evento
 * grupo de usuarios
-* **Burbujas**/**Degradación**/**Ganadores y perdedores**/**Desactivado**
+* **Burbujas**/**Degradado**/**Ganadores y perdedores**/**Desactivado**
 
 * período que se mostrará
 
@@ -127,11 +127,11 @@ Puede seleccionar los datos analíticos que se van a mostrar y cómo se deben mo
 
 ### Configuración del Activity Map {#configuring-the-activity-map}
 
-Utilice el **Mostrar configuración** para abrir el **Configuración del Activity Map** diálogo.
+Use el icono **Mostrar configuración** para abrir el cuadro de diálogo **Configuración del Activity Map**.
 
 ![aa-04-1](assets/aa-04-1.png)
 
-El **Configuración del Activity Map** proporciona una serie de opciones en tres pestañas:
+El cuadro de diálogo **Configuración del Activity Map** proporciona una serie de opciones en tres fichas:
 
 ![aa-06](assets/aa-06.png)
 

@@ -18,4 +18,4 @@ ht-degree: 14%
 
 # Umbral máximo de cursores abiertos de la base de datos de Oracle {#oracle-database-maximum-open-cursors-threshold}
 
-Para configurar un valor máximo para cursores abiertos en Oracle, es posible que tenga que ajustar este valor a un número que sea apropiado para su aplicación. Es evidente que bajo una carga moderada, el promedio de cursores abiertos fue de 2700. Se recomienda comenzar con un límite superior de 3000. Para obtener más información, vaya a [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Para configurar un valor máximo para cursores abiertos en Oracle, es posible que tenga que ajustar este valor a un número que sea apropiado para su aplicación. Es evidente que bajo una carga moderada, el promedio de cursores abiertos fue de 2700. Se recomienda comenzar con un límite superior de 3000. Para obtener más información, ve a [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).

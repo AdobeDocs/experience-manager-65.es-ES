@@ -122,7 +122,7 @@ En el mismo sistema pueden coexistir distintas versiones de Designer, por ejempl
   </tr>
   <tr>
    <td><p>Designer (independiente)</p> </td>
-   <td><p>Ninguna. <br />La versión de Designer incluida con Workbench solo está disponible en inglés. <br />El instalador de Workbench no vuelve a instalar una nueva versión de Designer. En su lugar, se aplica un parche a una versión actualizada integrada en el instalador de Workbench. Esto también le permite utilizar una versión localizada de Designer en Workbench.<br /> </p> </td>
+   <td><p>Ninguna. <br />La versión de Designer incluida con Workbench solo está disponible en inglés. <br />El instalador de Workbench no reinstala una nueva versión de Designer. En su lugar, se aplica un parche a una versión actualizada integrada en el instalador de Workbench. Esto también le permite utilizar su versión localizada de Designer en Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -195,7 +195,7 @@ De forma predeterminada, el valor del tiempo de espera de Workbench es de dos ho
 
 ### Configurar Workbench para que se conecte a través de HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
-Para conectar Workbench a un servidor de AEM Forms a través de HTTPS, debe asegurarse de que Workbench reconozca la autoridad de certificación (CA) que emitió la clave pública como de confianza. Si no se reconoce que el certificado proviene de una fuente de confianza, debe actualizar el archivo cacert en el [Workbench_HOME]directorio /workbench/jre/lib/security.
+Para conectar Workbench a un servidor de AEM Forms a través de HTTPS, debe asegurarse de que Workbench reconozca la autoridad de certificación (CA) que emitió la clave pública como de confianza. Si no se reconoce que el certificado proviene de una fuente de confianza, debe actualizar el archivo cacert en el directorio [Workbench_HOME]/workbench/jre/lib/security.
 
 >[!NOTE]
 >
@@ -208,7 +208,7 @@ Asegúrese de conectarse a HTTPS utilizando el nombre especificado en el certifi
 
    >[!NOTE]
    >
-   >Para exportar el certificado, abra un explorador web e inicie sesión en la consola de administración. Instale el certificado en el explorador y, a continuación, exporte el certificado desde el explorador a una ubicación de almacenamiento temporal (o directamente al [Workbench_HOME]directorio /workbench/jre/lib/security).
+   >Para exportar el certificado, abra un explorador web e inicie sesión en la consola de administración. Instale el certificado en el explorador y exporte el certificado desde el explorador a una ubicación de almacenamiento temporal (o directamente al directorio [Workbench_HOME]/workbench/jre/lib/security).
 
 1. Copie el certificado en el directorio [Workbench_HOME]/workbench/jre/lib/security.
 
@@ -219,7 +219,7 @@ donde:
    * certname es el certificado seleccionado en el paso 1.
    * Por ejemplo, el alias que elija para el certificado. Este valor se puede cambiar.
 
-1. Cuando se le pida que confíe en el certificado, escriba Yes y pulse la tecla Intro. keytool procede a importar el archivo cacerts en [Workbench_HOME]directorio /workbench/jre/lib/security.
+1. Cuando se le pida que confíe en el certificado, escriba Yes y pulse la tecla Intro. keytool procede a importar el archivo cacerts en el directorio [Workbench_HOME]/workbench/jre/lib/security.
 
 1. Cierre y reinicie Workbench para aplicar los cambios.
 
@@ -273,7 +273,7 @@ Antes de que el administrador de la impresora de red utilice el Editor XDC, cam
 
 **Para obtener los archivos XDC de ejemplo**:
 
-1. En AEM Forms Server, busque la carpeta XDC en [raíz de AEM Forms]\sdk\samples\Output\IVS.
+1. En el servidor de AEM Forms, busque la carpeta XDC en [AEM Forms root]\sdk\samples\Output\IVS.
 1. Copie el contenido de esta carpeta en un directorio al que se pueda acceder desde el sistema Workbench o Eclipse.
 
 **Para obtener ayuda sobre el Editor XDC**:

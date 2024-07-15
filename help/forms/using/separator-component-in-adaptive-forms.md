@@ -35,7 +35,7 @@ Para especificar las propiedades de un componente separador:
 1. Seleccione un componente separador y seleccione ![cmppr](assets/cmppr.png). Las propiedades se abren en la barra lateral.
 1. Haga clic en una pestaña de la sección Propiedades CSS en línea para especificar las propiedades CSS. Por ejemplo: a. En la pestaña Campo, haga clic en **Agregar elemento**. Se añade una fila con dos campos.
 1. En el primer campo de la izquierda, especifique la propiedad CSS3 que desee aplicar. Por ejemplo, **border**. También puede seleccionar una propiedad haciendo clic en el botón de flecha hacia abajo. La lista desplegable no es exhaustiva y puede especificar cualquier nombre de propiedad CSS3 admitido en este campo.
-1. En el campo adyacente, especifique un valor válido para la propiedad CSS3 especificada. Por ejemplo, **3 px solid black**.
+1. En el campo adyacente, especifique un valor válido para la propiedad CSS3 especificada. Por ejemplo, **negro sólido de 3 píxeles**.
 1. Haga clic en **Agregar elemento** para especificar otra propiedad y su valor.
-1. Clic **Previsualizar** para poder obtener una vista previa de los cambios en el formulario.
-1. Clic **OK** si desea confirmar los cambios o **Cancelar** para salir del cuadro de diálogo sin ningún cambio.
+1. Haga clic en **Vista previa** para obtener una vista previa de los cambios en el formulario.
+1. Haga clic en **Aceptar** si desea confirmar los cambios o en **Cancelar** para salir del cuadro de diálogo sin ningún cambio.

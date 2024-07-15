@@ -1,10 +1,10 @@
 ---
 title: Configuración del carro de compras y Dispatcher
-description: Obtenga información sobre el carro de compras y la configuración de Adobe Experience Manager Dispatcher.
+description: Obtenga información acerca del carro de compras y la configuración de Adobe Experience Manager Dispatcher.
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 79%
+source-wordcount: '94'
+ht-degree: 68%
 
 ---
 
@@ -18,5 +18,5 @@ Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-c
 Puede encontrar más información sobre este tema en los siguientes recursos:
 
 - [Carro de compras](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
-- [AEM Dispatcher con el proxy de Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
+- [Dispatcher con AEM Adobe Commerce Proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
 - [Docker Hub](https://hub.docker.com/)

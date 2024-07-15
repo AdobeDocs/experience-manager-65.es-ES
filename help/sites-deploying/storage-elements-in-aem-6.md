@@ -36,7 +36,7 @@ AEM Actualmente, hay dos implementaciones de almacenamiento de nodos disponibles
 
 >[!CAUTION]
 >
->El PID del almacén de nodos de segmentos ha cambiado de org.apache.jackrabbit.oak.**complementos** AEM AEM .segment.SegmentNodeStoreService en versiones anteriores de la versión 6 a la versión 8 de la aplicación, en lugar de la versión 6.3 de la aplicación, de la versión 6 de la aplicación, a la versión 6.3 de la aplicación. Asegúrese de que se realizan los ajustes de configuración necesarios para que se reflejen los cambios.
+>El PID del almacén de nodos de segmentos ha cambiado de org.apache.jackrabbit.oak.AEM AEM **plugins**.segment.SegmentNodeStoreService en versiones anteriores del 6 a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService en la versión 6.3 de. Asegúrese de que se realizan los ajustes de configuración necesarios para que se reflejen los cambios.
 
 AEM De forma predeterminada, el 6 utiliza el almacenamiento Tar para almacenar nodos y binarios, utilizando las opciones de configuración predeterminadas. Puede configurar manualmente su configuración de almacenamiento haciendo lo siguiente:
 
@@ -45,14 +45,14 @@ AEM De forma predeterminada, el 6 utiliza el almacenamiento Tar para almacenar n
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Cree una carpeta llamada `crx-quickstart\install` en el directorio de instalación.
+1. Cree una carpeta con el nombre `crx-quickstart\install` en el directorio de instalación.
 
 1. Cree un archivo llamado `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` en la carpeta recién creada.
 
-1. Edite el archivo y defina las opciones de configuración. AEM Las siguientes opciones están disponibles para el almacén de nodos de segmentos, que es la base de la implementación del almacenamiento de Tar de la:
+1. Edite el archivo y defina las opciones de configuración. AEM Las siguientes opciones están disponibles para el almacén de nodos de segmentos, que es la base para la implementación del almacenamiento de Tar de la base de la instalación de la implementación de almacenamiento de Tar de la:
 
    * `repository.home`: ruta al inicio del repositorio en el que se almacenan varios datos relacionados con el repositorio. De forma predeterminada, los archivos de segmento se almacenarían en el directorio crx-quickstart/segmentstore.
-   * `tarmk.size`: Tamaño máximo de un segmento en MB. El valor predeterminado es 256 MB.
+   * `tarmk.size`: tamaño máximo de un segmento en MB. El valor predeterminado es 256 MB.
 
 1. AEM Inicio de.
 
@@ -67,19 +67,19 @@ AEM Se puede configurar 6 para que se ejecute con el almacenamiento MongoDB sigu
 
    `java -jar cq-quickstart-6.jar -unpack`
 
-1. Asegúrese de que MongoDB está instalado y es una instancia de `mongod` se está ejecutando. Para obtener más información, consulte [Instalación de MongoDB](https://docs.mongodb.org/manual/installation/).
-1. Cree una carpeta llamada `crx-quickstart\install` en el directorio de instalación.
-1. Configure el almacén de nodos creando un archivo de configuración con el nombre de la configuración que desea utilizar en `crx-quickstart\install` directorio.
+1. Asegúrese de que MongoDB está instalado y de que se está ejecutando una instancia de `mongod`. Para obtener más información, consulte [Instalar MongoDB](https://docs.mongodb.org/manual/installation/).
+1. Cree una carpeta con el nombre `crx-quickstart\install` en el directorio de instalación.
+1. Configure el almacén de nodos creando un archivo de configuración con el nombre de la configuración que desea utilizar en el directorio `crx-quickstart\install`.
 
-   AEM El almacén de nodos de documentos (que es la base de la implementación de almacenamiento de MongoDB en la que se basa) utiliza un archivo denominado `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   AEM El almacén de nodos de documentos (que es la base para la implementación de almacenamiento de MongoDB de la aplicación de datos) utiliza un archivo denominado `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Edite el archivo y defina las opciones de configuración. Las opciones disponibles son las siguientes:
 
-   * `mongouri`: La [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) necesario para conectarse a la base de datos de Mongo. El valor predeterminado es `mongodb://localhost:27017`
-   * `db`: Nombre de la base de datos Mongo. AEM De forma predeterminada, las nuevas instalaciones de utilizan **aem-author** como nombre de la base de datos.
+   * `mongouri`: el [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) necesario para conectarse a la base de datos de Mongo. El valor predeterminado es `mongodb://localhost:27017`
+   * `db`: nombre de la base de datos Mongo. AEM De manera predeterminada, las nuevas instalaciones de la nueva base de datos de 6 utilizan **aem-author** como nombre de la base de datos.
    * `cache`: tamaño de la caché en megabytes. Este tamaño de caché se distribuye entre varias cachés utilizadas en DocumentNodeStore. El valor predeterminado es 256.
-   * `changesSize`: Tamaño en MB de la colección limitada utilizada en Mongo para almacenar en caché la salida de diferencia. El valor predeterminado es 256.
-   * `customBlobStore`: Valor booleano que indica que se utiliza un almacén de datos personalizado. El valor predeterminado es false.
+   * `changesSize`: tamaño en MB de la colección limitada utilizada en Mongo para almacenar en caché la salida de diferencia. El valor predeterminado es 256.
+   * `customBlobStore`: valor booleano que indica que se utiliza un almacén de datos personalizado. El valor predeterminado es false.
 
 1. Cree un archivo de configuración con el PID del almacén de datos que desea utilizar y edite el archivo para establecer las opciones de configuración. Para obtener más información, consulte [Configuración de almacenes de nodos y almacenes de datos](/help/sites-deploying/data-store-config.md).
 
@@ -89,14 +89,14 @@ AEM Se puede configurar 6 para que se ejecute con el almacenamiento MongoDB sigu
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Donde está el modo de ejecución back-end **`-r`** A continuación, el ejemplo comienza con la compatibilidad con MongoDB.
+   Donde el modo de ejecución back-end es **`-r`**, el ejemplo comienza con compatibilidad con MongoDB.
 
 #### Desactivación de páginas enormes transparentes {#disabling-transparent-huge-pages}
 
 Red Hat® Linux® utiliza un algoritmo de administración de memoria denominado Transparent Huge Pages (THP). AEM Mientras realiza lecturas y escrituras específicas, el lenguaje HTTP está optimizado para operaciones grandes. Por lo tanto, se recomienda deshabilitar THP en el almacenamiento Tar y Mongo. Para desactivar el algoritmo, siga estos pasos:
 
-1. Abra el `/etc/grub.conf` en el editor de texto que elija.
-1. Añada la línea siguiente a **grub.conf** archivo:
+1. Abra el archivo `/etc/grub.conf` en el editor de texto que prefiera.
+1. Agregue la línea siguiente al archivo **grub.conf**:
 
    ```
    transparent_hugepage=never
@@ -118,10 +118,10 @@ Red Hat® Linux® utiliza un algoritmo de administración de memoria denominado 
 >
 >Consulte los siguientes recursos:
 >
->* Para obtener más información sobre Transparent Huge Pages en Red Hat® Linux®, consulte esto [artículo](https://access.redhat.com/solutions/46111).
->* Para obtener sugerencias de optimización de Linux®, consulte esto [artículo](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es).
+>* Para obtener más información acerca de Transparent Huge Pages on Red Hat® Linux®, consulte este [artículo](https://access.redhat.com/solutions/46111).
+>* Para obtener sugerencias de optimización de Linux®, consulte este [artículo](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es).
 >
 
 ## Mantenimiento del repositorio {#maintaining-the-repository}
 
-Cada actualización del repositorio crea una revisión de contenido. Como resultado, con cada actualización el tamaño del repositorio aumenta. Para evitar el crecimiento incontrolado del repositorio, las revisiones antiguas deben limpiarse para liberar recursos de disco. Esta funcionalidad de mantenimiento se denomina Limpieza de revisión. El mecanismo Revision Cleanup recupera el espacio en disco eliminando los datos obsoletos del repositorio. Para obtener más información acerca de Revision Cleanup, lea la [Página Limpieza de revisión](/help/sites-deploying/revision-cleanup.md).
+Cada actualización del repositorio crea una revisión de contenido. Como resultado, con cada actualización el tamaño del repositorio aumenta. Para evitar el crecimiento incontrolado del repositorio, las revisiones antiguas deben limpiarse para liberar recursos de disco. Esta funcionalidad de mantenimiento se denomina Limpieza de revisión. El mecanismo Revision Cleanup recupera el espacio en disco eliminando los datos obsoletos del repositorio. Para obtener más información acerca de Revision Cleanup, lea la [página Revision Cleanup](/help/sites-deploying/revision-cleanup.md).

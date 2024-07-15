@@ -23,7 +23,7 @@ En las prácticas recomendadas de implementación se describe cómo implementar 
 Las siguientes áreas tienen documentación disponible sobre la implementación y el mantenimiento de las prácticas recomendadas y recomendaciones:
 
 * [Oak](#oak)
-* [Communities](#communities)
+* [Comunidades](#communities)
 * [IU](#ui)
 * [Rendimiento](#performance)
 
@@ -37,7 +37,7 @@ En las tablas siguientes se describen y vinculan documentos específicos.
 
 ## Oak {#oak}
 
-[Oak](/help/sites-deploying/platform.md) AEM es un repositorio de contenido jerárquico escalable y con buen rendimiento que es la base de la creación de recursos
+[Oak AEM](/help/sites-deploying/platform.md) es un repositorio de contenido jerárquico escalable y con buen rendimiento que es la base de la creación de recursos de la red de distribución de contenido ().
 
 <table>
  <tbody>
@@ -47,7 +47,7 @@ En las tablas siguientes se describen y vinculan documentos específicos.
    <td>Proporciona un documento técnico en el que se describen las características técnicas de agilidad, alto rendimiento y recuperación ante desastres con sonido</td>
   </tr>
   <tr>
-   <td>Implementaciones de Oak recomendadas</td>
+   <td>Implementaciones recomendadas de Oak</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">Implementaciones recomendadas</a></td>
    <td>Describe escenarios de implementación</td>
   </tr>
@@ -69,13 +69,13 @@ En las tablas siguientes se describen y vinculan documentos específicos.
  </tbody>
 </table>
 
-## Communities {#communities}
+## Comunidades {#communities}
 
 AEM Communities simplifica la creación y administración de comunidades locales. Las prácticas recomendadas para AEM Communities se describen aquí:
 
-[Almacenamiento de contenido de comunidad](/help/communities/working-with-srp.md) : analiza la nueva función de almacenamiento compartido para el contenido generado por el usuario (UGC) y las consideraciones para elegir el subyacente [topología](/help/communities/topologies.md).
+[Almacén de contenido de la comunidad](/help/communities/working-with-srp.md): describe la nueva característica de almacenamiento compartido para el contenido generado por el usuario (UGC) y las consideraciones para elegir la [topología](/help/communities/topologies.md) subyacente.
 
-[Implementaciones recomendadas para comunidades](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Describe las implementaciones recomendadas para Communities. |
+[Implementaciones recomendadas para comunidades](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities): Describe las implementaciones recomendadas para comunidades. |
 
 ## IU {#ui}
 
@@ -94,7 +94,7 @@ Las prácticas recomendadas en cuanto a rendimiento se enumeran a continuación:
   <tr>
    <td>Prácticas recomendadas para el control de calidad</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Prácticas recomendadas para el control de calidad</a></td>
-   <td>Una visión general estandarizada de los problemas relacionados con la definición de un concepto de prueba específicamente para pruebas de rendimiento en su <em>publicar</em> entorno. Esto es principalmente de interés para los ingenieros de control de calidad, gestores de proyectos y administradores de sistemas.</td>
+   <td>Una visión general estandarizada de los problemas relacionados con la definición de un concepto de prueba específicamente para pruebas de rendimiento en su entorno <em>publish</em>. Esto es principalmente de interés para los ingenieros de control de calidad, gestores de proyectos y administradores de sistemas.</td>
   </tr>
   <tr>
    <td>Utilizar Dispatcher con una CDN</td>

@@ -86,9 +86,9 @@ Para crear una nueva configuración de traducción haga lo siguiente:
 
    ![Crear configuración de traducción](assets/create-translation-configuration.png)
 
-1. Clic **Crear** y el **Editar configuración** aparece una ventana donde puede configurar las propiedades de configuración.
+1. Haga clic en **Crear** y aparecerá la ventana **Editar configuración** donde puede configurar las propiedades de configuración.
 
-1. Recuerde que los fragmentos de contenido se almacenan como recursos en AEM. Haga clic en **Assets** pestaña.
+1. Recuerde que los fragmentos de contenido se almacenan como recursos en AEM. Haga clic en la ficha **Assets**.
 
 ![Propiedades de configuración de traducción](assets/translation-configuration.png)
 
@@ -119,7 +119,7 @@ Para ello, vaya a la raíz de idioma del contenido. Como ejemplo, sería lo sigu
 
 1. Vaya a la navegación global y luego a **Navegación** > **Recursos** > **Archivos**.
 1. En la consola de recursos, seleccione la raíz de idioma que desea configurar y haga clic en **Propiedades**.
-1. Haga clic en **Cloud Service** pestaña.
+1. Haga clic en la ficha **Cloud Service**.
 1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione el conector. Debe aparecer en el menú desplegable cuando haya instalado su paquete como [descritos anteriormente.](#connect-translation-provider)
 1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione también la configuración.
 1. Haga clic en **Guardar y cerrar**.
@@ -133,7 +133,7 @@ Ahora que ha completado esta parte del recorrido de traducción sin encabezado, 
 * Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
 
-AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento a continuación [Configuración de reglas de traducción,](translation-rules.md) donde aprenderá a definir qué contenido traducir.
+AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento [Configuración de reglas de traducción,](translation-rules.md) donde aprenderá a definir qué contenido traducir.
 
 ## Recursos adicionales {#additional-resources}
 

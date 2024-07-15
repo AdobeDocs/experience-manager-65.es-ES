@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Modo de desarrollador{#developer-mode}
 
-Al editar páginas en Adobe Experience Manager AEM (), varias [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) están disponibles, incluido el modo de desarrollador. Se abrirá un panel lateral con varias pestañas que proporcionan al desarrollador información sobre la página actual. Las tres pestañas son:
+Al editar páginas en Adobe Experience Manager AEM (), hay varios [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) disponibles, incluido el modo de desarrollador. Se abrirá un panel lateral con varias pestañas que proporcionan al desarrollador información sobre la página actual. Las tres pestañas son:
 
 * **[Componentes](#components)** para ver información de estructura y rendimiento.
 * **[Pruebas](#tests)** para ejecutar pruebas y analizar los resultados.
@@ -39,7 +39,7 @@ Esto ayuda a un desarrollador a lo siguiente:
 >* No está disponible en dispositivos móviles ni en ventanas pequeñas en equipos de escritorio (debido a restricciones de espacio).
 >
 >   * Esto ocurre cuando la anchura es inferior a 1024 píxeles.
->* Solo está disponible para los usuarios que son miembros de `administrators` grupo.
+>* Solo está disponible para los usuarios que sean miembros del grupo `administrators`.
 
 >[!CAUTION]
 >
@@ -56,8 +56,8 @@ Esto ayuda a un desarrollador a lo siguiente:
 >
 >Consulte:
 >
->* Artículo de Knowledge Base, [AEM Solución de problemas de IU táctil](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obtener más sugerencias y herramientas.
->* AEM Sesión de Gems sobre [AEM Modo de desarrollador de.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
+>* AEM Artículo de la base de conocimiento, [Resolución de problemas de IU táctil de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obtener más sugerencias y herramientas.
+>* AEM AEM Sesión de Gems sobre [Modo de desarrollador de 6.0 de la](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Abriendo modo de desarrollador {#opening-developer-mode}
@@ -68,9 +68,9 @@ El modo de desarrollador se implementa como panel lateral en el editor de págin
 
 El panel se divide en dos pestañas:
 
-* **[Componentes](/help/sites-developing/developer-mode.md#components)** - Muestra un árbol de componentes, similar al [árbol de contenido](/help/sites-authoring/author-environment-tools.md#content-tree) para autores
+* **[Componentes](/help/sites-developing/developer-mode.md#components)**: muestra un árbol de componentes, similar al [árbol de contenido](/help/sites-authoring/author-environment-tools.md#content-tree) para autores
 
-* **[Errores](/help/sites-developing/developer-mode.md#errors)** - Cuando se producen problemas, se muestran los detalles de cada componente.
+* **[Errores](/help/sites-developing/developer-mode.md#errors)**: cuando se producen problemas, se muestran los detalles de cada componente.
 
 ### Componentes {#components}
 
@@ -117,18 +117,18 @@ Cada entrada de componente puede mostrar (por ejemplo):
 
 >[!CAUTION]
 >
->Algunos vínculos dirigen a scripts en `/libs`. Sin embargo, solo son para referencia, **no debe** editar cualquier elemento en `/libs`, ya que cualquier cambio que realice podría perderse. Esto se debe a que esta rama puede sufrir cambios cada vez que actualice o aplique una revisión o un paquete de funciones. Realice los cambios que necesite en `/apps`. Consulte [Superposiciones y anulaciones](/help/sites-developing/overlays.md).
+>Algunos vínculos apuntan a scripts bajo `/libs`. Sin embargo, solo son para referencia, **no debe** editar nada debajo de `/libs`, ya que cualquier cambio que realice podría perderse. Esto se debe a que esta rama puede sufrir cambios cada vez que actualice o aplique una revisión o un paquete de funciones. Realice los cambios que necesite en `/apps`. Ver [Superposiciones y invalidaciones](/help/sites-developing/overlays.md).
 
 ### Errores {#errors}
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-Espero que el **Errores** La pestaña siempre estará vacía (como se muestra arriba), pero cuando se producen problemas se muestran los siguientes detalles para cada componente:
+Esperamos que la ficha **Errores** siempre esté vacía (como se ha indicado anteriormente), pero cuando se producen problemas, se muestran los siguientes detalles para cada componente:
 
 * Una advertencia si el componente escribe una entrada en el registro de errores, junto con detalles del error y vínculos directos al código adecuado dentro de CRXDE Lite.
 * Advertencia si el componente abre una sesión de administración.
 
-Por ejemplo, en una situación en la que se llama a un método indefinido, el error resultante se muestra en la variable **Errores** pestaña:
+Por ejemplo, en una situación en la que se llama a un método indefinido, el error resultante se muestra en la ficha **Errores**:
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -140,4 +140,4 @@ La entrada del componente en el árbol de la pestaña Componentes también se ma
 >
 >AEM En la versión 6.2, las funciones de prueba del modo de desarrollador se volvieron a implementar como una aplicación de herramientas independiente.
 >
->Para obtener más información, consulte [Prueba de la IU](/help/sites-developing/hobbes.md).
+>Para obtener información detallada, consulta [Probar la interfaz de usuario](/help/sites-developing/hobbes.md).

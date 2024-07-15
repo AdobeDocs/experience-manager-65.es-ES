@@ -45,11 +45,11 @@ Las siguientes páginas le ayudan a configurar la integración:
 * [Configuración del seguimiento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 * [Clasificaciones de Adobe](/help/sites-administering/adobeanalytics-classifications.md)
 
-También puede utilizar la variable [Asistente de inclusión](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
+También puede usar el [Asistente de inclusión](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
 
 >[!NOTE]
 >
->Consulte también el artículo de procedimientos: [AEM Integración de los recursos de la con Adobe Target y Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>AEM Consulte también el artículo de procedimientos: [Integración de los usuarios de Adobe Target y Adobe Analytics con el uso de DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Información adicional {#further-information}
 

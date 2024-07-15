@@ -33,17 +33,17 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 
 ## Requisitos previos {#prerequisites}
 
-Los clientes que utilizan GraphQL AEM deben instalar el fragmento de contenido de la aplicación con el paquete de índice 1.0.5 de GraphQL. Consulte la [Notas de versión](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obtener más información.
+Los clientes que utilizan GraphQL AEM deben instalar el fragmento de contenido de la aplicación con el paquete de índice 1.0.5 de GraphQL. Consulte las [Notas de la versión](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obtener más información.
 
 ## La API de GraphQL {#graphql-api}
 
 GraphQL es:
 
-* “*...un idioma de consulta para API y un tiempo de ejecución para cumplir esas consultas con los datos existentes. GraphQL proporciona una descripción completa y comprensible de los datos de su API. Ofrece a los clientes la posibilidad de preguntar exactamente lo que necesitan y nada más, facilita la evolución de las API con el paso del tiempo y habilita potentes herramientas para desarrolladores.*&quot;.
+* “*...un idioma de consulta para API y un tiempo de ejecución para cumplir esas consultas con los datos existentes. GraphQL proporciona una descripción completa y comprensible de los datos de su API. Le da a los clientes el poder de preguntar exactamente lo que necesitan y nada más, facilita la evolución de las API con el tiempo y habilita potentes herramientas para desarrolladores.*&quot;.
 
   Consulte [GraphQL.org](https://graphql.org)
 
-* “*...una especificación abierta para una capa de API flexible. Coloque GraphQL sobre los backends existentes para poder crear productos más rápido que nunca....*&quot;.
+* “*...una especificación abierta para una capa de API flexible. Coloque GraphQL sobre los backends existentes para que pueda generar productos más rápido que nunca....*&quot;.
 
   Consulte [Exploración de GraphQL](https://graphql.com/).
 
@@ -102,11 +102,11 @@ Con GraphQL puede realizar consultas para devolver lo siguiente:
 
 * Una **[lista de entradas](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM proporciona capacidades para convertir consultas (ambos tipos) a [Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md) que Dispatcher y la CDN almacenan en caché.
+AEM proporciona capacidades para convertir consultas (ambos tipos) a [Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md) que Dispatcher y CDN almacenan en caché.
 
 ### Prácticas recomendadas para consultas de GraphQL (Dispatcher y CDN) {#graphql-query-best-practices}
 
-[Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md) son el método recomendado para utilizar en instancias de publicación como:
+[Las consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md) son el método recomendado para usar en instancias de publicación como:
 
 * Se almacenan en caché.
 * AEM se gestionan centralmente mediante el sistema de gestión de la
@@ -128,7 +128,7 @@ Consulte [Habilitar el almacenamiento en caché de consultas persistentes](#enab
 
 ## Interfaz de GraphiQL {#graphiql-interface}
 
-Una implementación de la norma [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) AEM La interfaz de está disponible para su uso con GraphQL de.
+AEM Hay una implementación de la interfaz estándar de [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) disponible para su uso con el GraphQL de la.
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ AEM Los casos de uso pueden depender del tipo de entorno de:
 
 Los permisos son necesarios para acceder a Assets.
 
-Las consultas de GraphQL AEM se ejecutan con el permiso del usuario de la solicitud subyacente que se ha creado en la página de la aplicación. Si el usuario no tiene acceso de lectura a algunos fragmentos (almacenados como Recursos), no forman parte del conjunto de resultados.
+Las consultas de GraphQL AEM se ejecutan con el permiso del usuario de la solicitud subyacente que se ha creado en la página de la aplicación. Si el usuario no tiene acceso de lectura a algunos fragmentos (almacenados como Assets), no forman parte del conjunto de resultados.
 
 Además, el usuario debe tener acceso a un extremo de GraphQL para poder ejecutar consultas de GraphQL.
 
@@ -174,7 +174,7 @@ Además, el usuario debe tener acceso a un extremo de GraphQL para poder ejecuta
 
 GraphQL es una API con tipo, lo que significa que los datos deben estar claramente estructurados y organizados por tipo.
 
-La especificación de GraphQL proporciona una serie de directrices sobre cómo crear una API robusta para buscar datos en una instancia determinada. Para completar estas directrices, un cliente debe recuperar la variable [Esquema](#schema-generation), que contiene todos los tipos necesarios para una consulta.
+La especificación de GraphQL proporciona una serie de directrices sobre cómo crear una API robusta para buscar datos en una instancia determinada. Para completar estas instrucciones, un cliente debe obtener el [Esquema](#schema-generation), que contiene todos los tipos necesarios para una consulta.
 
 Para los fragmentos de contenido, los esquemas (estructura y tipos) de GraphQL se basan en [Modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-models.md) **habilitados** y sus tipos de datos.
 
@@ -195,9 +195,10 @@ Por ejemplo, si un usuario crea un modelo de fragmento de contenido denominado `
 
    Esta imagen muestra que el tipo generado `ArticleModel` contiene varios [campos](#fields).
 
-   * Tres de ellos han sido controlados por el usuario: `author`, `main`, y `referencearticle`.
+   * El usuario ha controlado tres de ellos: `author`, `main` y `referencearticle`.
 
-   * AEM Los demás campos se añadieron automáticamente mediante la creación de segmentos y representan métodos útiles para proporcionar información acerca de un determinado fragmento de contenido. En este ejemplo, (la variable [campos de ayuda](#helper-fields)) `_path`, `_metadata`, `_variations`.
+   * AEM Los demás campos se añadieron automáticamente mediante la creación de segmentos y representan métodos útiles para proporcionar información acerca de un determinado fragmento de contenido. En este ejemplo,
+(los [campos de ayuda](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Después de que un usuario cree un fragmento de contenido basado en el modelo de artículo, se puede buscar a través de GraphQL. Para ver ejemplos, consulte las [Consultas de muestra](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (basadas en una [estructura de fragmentos de contenido de muestra para usar con GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -213,15 +214,15 @@ Por ejemplo, si:
 
 1. A continuación, modifique `Content-Fragment-Model-2`:
 
-   1. Solo el `Model-2` El tipo de GraphQL se actualiza.
+   1. Solo se actualiza el tipo de GraphQL `Model-2`.
 
-   1. Considerando `Model-1` permanece igual.
+   1. Mientras que `Model-1` permanece igual.
 
 >[!NOTE]
 >
 >Este detalle es importante tenerlo en cuenta solo en caso de que desee realizar actualizaciones masivas en los modelos de fragmentos de contenido a través de la API de REST o de otro modo.
 
-El esquema se sirve a través del mismo punto de conexión que las consultas de GraphQL, y el cliente gestiona el hecho de que se llama al esquema con la extensión `GQLschema`. Por ejemplo, realizar una `GET` solicitud de `/content/cq:graphql/global/endpoint.GQLschema` da como resultado la salida del esquema con el tipo de contenido: `text/x-graphql-schema;charset=iso-8859-1`.
+El esquema se sirve a través del mismo punto de conexión que las consultas de GraphQL, y el cliente gestiona el hecho de que se llama al esquema con la extensión `GQLschema`. Por ejemplo, realizar una solicitud `GET` simple en `/content/cq:graphql/global/endpoint.GQLschema` da como resultado la salida del esquema con el tipo de contenido: `text/x-graphql-schema;charset=iso-8859-1`.
 
 ### Generación de esquemas: modelos no publicados {#schema-generation-unpublished-models}
 
@@ -231,7 +232,7 @@ Cuando los fragmentos de contenido están anidados, puede ocurrir que se publiqu
 >
 >AEM La interfaz de usuario de evita que esto ocurra, pero si la publicación se realiza mediante programación o con paquetes de contenido, puede ocurrir.
 
-AEM Cuando esto sucede, el usuario genera un error de tipo de *incompleto* Esquema del modelo de fragmento de contenido principal. Significa que la referencia de fragmento, que depende del modelo no publicado, se elimina del esquema.
+AEM Cuando esto sucede, el usuario genera un esquema *incompleto* para el modelo de fragmento de contenido principal, el cual se generará de manera predeterminada Significa que la referencia de fragmento, que depende del modelo no publicado, se elimina del esquema.
 
 ## Campos {#fields}
 
@@ -241,9 +242,9 @@ Dentro del esquema, hay campos individuales, de dos categorías básicas:
 
   Una selección de [Tipos de datos](#data-types) se utiliza para crear campos en función de cómo configure el modelo de fragmentos de contenido. Los nombres de campo se toman del campo **Nombre de propiedad** del **Tipo de datos**.
 
-   * También está el **Procesar como** configuración que se debe tener en cuenta, ya que los usuarios pueden configurar ciertos tipos de datos. Por ejemplo, un campo de texto de una sola línea se puede configurar para que contenga varios textos de una sola línea eligiendo `multifield` en el menú desplegable.
+   * También se debe tener en cuenta la configuración **Procesar como**, ya que los usuarios pueden configurar ciertos tipos de datos. Por ejemplo, se puede configurar un campo de texto de una sola línea para que contenga varios textos de una sola línea eligiendo `multifield` de la lista desplegable.
 
-* GraphQL AEM para la creación de informes también genera varios [campos de ayuda](#helper-fields).
+* GraphQL AEM para la también genera [campos de ayuda](#helper-fields).
 
   Estos campos se utilizan para identificar un fragmento de contenido o para obtener más información sobre uno.
 
@@ -261,13 +262,13 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Lista desglosada |  `String` |  Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 |  Etiquetas |  `[String]` |  Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido |  `String` |  Se utiliza para mostrar la ruta hacia otro recurso en AEM |
-| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado directamente <br><br>Multicampo, con un tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos referenciados: `[AllFragmentModels]` : matriz de todos los tipos de modelo, a la que se hace referencia desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
+| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, al que se hace referencia directamente <br><br>Multicampo, con un tipo al que se hace referencia: `[Model]` - Matriz de tipo `Model`, al que se hace referencia directamente desde la matriz <br><br>Multicampo, con varios tipos a los que se hace referencia: `[AllFragmentModels]` - Matriz de todos los tipos de modelo, a la que se hace referencia desde la matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
 
 {style="table-layout:auto"}
 
 ### Campos de ayuda {#helper-fields}
 
-Además de los tipos de datos de los campos generados por el usuario, GraphQL AEM para la también genera varios *ayudante* campos para ayudar a identificar un fragmento de contenido o para proporcionar información adicional acerca de un fragmento de contenido.
+Además de los tipos de datos de los campos generados por el usuario, GraphQL AEM para la distribución de contenido también genera varios campos *Helper* para ayudar a identificar un fragmento de contenido o para proporcionar información adicional acerca de un fragmento de contenido.
 
 Estos [campos de ayuda](#helper-fields) se marcan con un `_` que los precede para distinguir entre lo que ha definido el usuario y lo que se ha generado automáticamente.
 
@@ -278,7 +279,7 @@ El campo de ruta se utiliza como identificador en AEM GraphQL. Representa la rut
 * es único dentro de AEM,
 * se puede recuperar fácilmente.
 
-El siguiente código muestra las rutas de todos los fragmentos de contenido creados en función del modelo de fragmento de contenido `Person`.
+El siguiente código muestra las rutas de acceso de todos los fragmentos de contenido creados basándose en el modelo de fragmento de contenido `Person`.
 
 ```graphql
 {
@@ -315,7 +316,7 @@ A través de GraphQL, AEM también expone los metadatos de un fragmento de conte
 * la descripción de un fragmento de contenido
 * y la fecha de creación, entre otras.
 
-Dado que los metadatos se generan mediante el Editor de esquemas y, como tales, no tienen una estructura específica, el tipo de GraphQL `TypedMetaData` se ha implementado para exponer los metadatos de un fragmento de contenido. El `TypedMetaData` expone la información agrupada por los siguientes tipos escalares:
+Dado que los metadatos se generan mediante el Editor de esquemas y, como tales, no tienen una estructura específica, el tipo de GraphQL `TypedMetaData` se ha implementado para exponer los metadatos de un fragmento de contenido. `TypedMetaData` expone la información agrupada por los siguientes tipos escalares:
 
 | Campo |
 |--- |
@@ -359,7 +360,7 @@ Puede ver todos los tipos de metadatos de GraphQL si ve el esquema de GraphQL ge
 >**Diferencia entre metadatos normales y de matriz**
 >Tenga en cuenta que `StringMetadata` y `StringArrayMetadata` hacen referencia a lo que se almacena en el repositorio, no a cómo se recuperan.
 >
->Por ejemplo, llamando a `stringMetadata` , recibirá una matriz de todos los metadatos almacenados en el repositorio como `String`. Y si llamas `stringArrayMetadata`, recibirá una matriz de todos los metadatos almacenados en el repositorio como `String[]`.
+>Por ejemplo, llamando al campo `stringMetadata`, recibirá una matriz de todos los metadatos almacenados en el repositorio como `String`. Y si llama a `stringArrayMetadata`, recibirá una matriz de todos los metadatos almacenados en el repositorio como `String[]`.
 
 Consulte [Consulta de muestra para metadatos: enumera los metadatos de los premios titulados GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb).
 
@@ -379,7 +380,7 @@ El campo `_variations` se ha implementado para simplificar la consulta de las va
 
 >[!NOTE]
 >
->El `_variations` el campo no contiene un `master` variación, como técnicamente los datos originales (referenciados como *Principal* en la interfaz de usuario) no se considera una variación explícita.
+>El campo `_variations` no contiene una variación `master`, ya que técnicamente los datos originales (a los que se hace referencia como *Principal* en la interfaz de usuario) no se consideran una variación explícita.
 
 Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation).
 
@@ -450,7 +451,7 @@ El filtrado utiliza una sintaxis basada en operadores lógicos y expresiones.
 
 La parte más atómica es una sola expresión que se puede aplicar al contenido de un campo determinado. Compara el contenido del campo con un valor constante determinado.
 
-Por ejemplo, la siguiente expresión compararía el contenido del campo con el valor `some text`, y tendrá éxito si el contenido es igual al valor. De lo contrario, la expresión falla.:
+Por ejemplo, la siguiente expresión compararía el contenido del campo con el valor `some text`, y tendría éxito si el contenido es igual al valor. De lo contrario, la expresión falla.:
 
 ```graphql
 {
@@ -465,9 +466,9 @@ Los siguientes operadores pueden utilizarse para comparar campos con un determin
 |--- |--- |--- |
 | `EQUALS` | `String`, `ID`, `Boolean` | ... el valor es el mismo que el contenido del campo |
 | `EQUALS_NOT` | `String`, `ID` | ... el valor *no* es igual que el contenido del campo |
-| `CONTAINS` | `String` | ... el contenido del campo contiene el valor (`{ value: "mas", _op: CONTAINS }` matches `Christmas`, `Xmas`, `master`, ...) |
+| `CONTAINS` | `String` | ... el contenido del campo contiene el valor (`{ value: "mas", _op: CONTAINS }` coincide con `Christmas`, `Xmas`, `master`, ...) |
 | `CONTAINS_NOT` | `String` | ... el contenido del campo *no* contiene el valor |
-| `STARTS_WITH` | `ID` | ... el ID comienza con un determinado valor (`{ value: "/content/dam/", _op: STARTS_WITH` matches `/content/dam/path/to/fragment`, pero no `/namespace/content/dam/something` |
+| `STARTS_WITH` | `ID` | ... el identificador comienza con un determinado valor (`{ value: "/content/dam/", _op: STARTS_WITH` coincide con `/content/dam/path/to/fragment`, pero no con `/namespace/content/dam/something` |
 | `EQUAL` | `Int`, `Float` | ... el valor es el mismo que el contenido del campo |
 | `UNEQUAL` | `Int`, `Float` | ... el valor *no* es igual que el contenido del campo |
 | `GREATER` | `Int`, `Float` | ... el contenido del campo es mayor que el valor |
@@ -485,20 +486,20 @@ Algunos tipos también permiten especificar opciones adicionales que modifican c
 
 | Opción | Tipos | Descripción |
 |--- |--- |--- |
-| `_ignoreCase` | `String` | Omite las mayúsculas y minúsculas de una cadena como, por ejemplo, un valor de `time` matches `TIME`, `time`, `tImE`, ... |
+| `_ignoreCase` | `String` | Omite las mayúsculas y minúsculas de una cadena; por ejemplo, un valor de `time` coincide con `TIME`, `time`, `tImE`, ... |
 | `_sensitiveness` | `Float` | Permite un cierto margen para que los valores `float` se consideren iguales (para sortear las limitaciones técnicas debidas a la representación interna de los valores `float`; debe evitarse, ya que esta opción podría repercutir negativamente en el rendimiento |
 
 Las expresiones se pueden combinar en un conjunto con la ayuda de un operador lógico (`_logOp`):
 
-* `OR` - el conjunto de expresiones se ejecuta correctamente si al menos una expresión se ejecuta correctamente
-* `AND` : el conjunto de expresiones se ejecuta correctamente si todas las expresiones se realizan correctamente (valor predeterminado)
+* `OR`: el conjunto de expresiones se ejecuta correctamente si al menos una expresión se ejecuta correctamente
+* `AND`: el conjunto de expresiones se realizará correctamente si todas las expresiones se realizan correctamente (predeterminado)
 
 Cada campo se puede filtrar por su propio conjunto de expresiones. Los conjuntos de expresiones de todos los campos mencionados en el argumento de filtro se combinan finalmente con su propio operador lógico.
 
 Una definición de filtro (que se transfiere como el argumento `filter` a una consulta) contiene lo siguiente:
 
-* Una subdefinición para cada campo (se puede acceder al campo a través de su nombre, por ejemplo, hay un `lastName` en el filtro para el `lastName` campo en el Tipo de datos (campo)
-* Cada subdefinición contiene la variable `_expressions` , proporcionando el conjunto de expresiones y `_logOp` campo que define el operador lógico con el que se deben combinar las expresiones
+* Una subdefinición para cada campo (se puede acceder al campo a través de su nombre, por ejemplo, hay un campo `lastName` en el filtro para el campo `lastName` en el Tipo de datos (campo))
+* Cada subdefinición contiene la matriz `_expressions`, que proporciona el conjunto de expresiones, y el campo `_logOp` que define el operador lógico con el que se deben combinar las expresiones
 * Cada expresión está definida por el valor (campo `value`) y el operador (campo `_operator`), el contenido de un campo debe compararse con
 
 Puede omitir `_logOp` si desea combinar elementos con `AND` y `_operator` si desea comprobar la igualdad, ya que estos valores son predeterminados.
@@ -530,11 +531,11 @@ El siguiente ejemplo muestra una consulta completa que filtra todas las personas
 }
 ```
 
-Al ejecutar una consulta de GraphQL con variables opcionales, si un valor específico es **no** Cuando se proporcione para la variable opcional, la variable se omitirá en la evaluación del filtro. Esto significa que los resultados de la consulta contendrán todos los valores, ambos `null` y no `null`, para la propiedad relacionada con la variable de filtro.
+Cuando se ejecuta una consulta de GraphQL usando variables opcionales, si se proporciona un valor específico **no** para la variable opcional, entonces la variable se omitirá en la evaluación del filtro. Esto significa que los resultados de la consulta contendrán todos los valores, tanto `null` como no `null`, de la propiedad relacionada con la variable de filtro.
 
 >[!NOTE]
 >
->Si un `null` el valor es *explícitamente* especificado para dicha variable, el filtro solo coincidirá con `null` valores de la propiedad correspondiente.
+>Si se especifica un valor `null` *explícitamente* para dicha variable, el filtro coincidirá únicamente con `null` valores para la propiedad correspondiente.
 
 Por ejemplo, en la consulta siguiente, donde no se especifica ningún valor para la propiedad `lastName`:
 
@@ -593,7 +594,7 @@ Para ver más ejemplos, consulte lo siguiente:
 
 >[!NOTE]
 >
->Para obtener el mejor rendimiento, tenga en cuenta [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Para obtener el mejor rendimiento, considere [Actualizar los fragmentos de contenido para paginar y ordenar en el filtrado de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Esta función permite ordenar los resultados de la consulta según un campo especificado.
 
@@ -662,7 +663,7 @@ query {
 
 >[!NOTE]
 >
->Para obtener el mejor rendimiento, tenga en cuenta [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Para obtener el mejor rendimiento, considere [Actualizar los fragmentos de contenido para paginar y ordenar en el filtrado de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Esta función permite realizar paginación en los tipos de consulta que devuelven una lista. Se proporcionan dos métodos:
 
@@ -708,7 +709,7 @@ El tipo de consulta `...Paginated` reutiliza la mayoría de las funciones de tip
 * `first`: los primeros `n` artículos que se van a devolver.
 El valor predeterminado es `50`.
 El número máximo es `100`.
-* `after`: el cursor que determina el principio de la página solicitada. El elemento representado por el cursor no se incluye en el conjunto de resultados. El cursor de un elemento está determinado por la variable `cursor` del campo `edges` estructura.
+* `after`: el cursor que determina el comienzo de la página solicitada. El elemento representado por el cursor no se incluye en el conjunto de resultados. El cursor de un elemento está determinado por el campo `cursor` de la estructura `edges`.
 
 Por ejemplo, mostrar la página de resultados que contiene hasta cinco aventuras, empezando por el elemento de cursor dado en la lista de resultados *completa*:
 
@@ -742,15 +743,15 @@ query {
 
 >[!CAUTION]
 >
->Si el almacenamiento en caché en Dispatcher está habilitado, la variable [Filtro CORS](#cors-filter) no es necesario y, por lo tanto, esa sección se puede ignorar.
+>Si el almacenamiento en caché en Dispatcher está habilitado, el [filtro CORS](#cors-filter) no es necesario, y por lo tanto esa sección se puede ignorar.
 
-El almacenamiento en caché de consultas persistentes no está habilitado de forma predeterminada en Dispatcher. La activación predeterminada no es posible, ya que los clientes que utilizan CORS (Intercambio de recursos de origen cruzado) con varios orígenes deben revisar y posiblemente actualizar su configuración de Dispatcher.
+El almacenamiento en caché de consultas persistentes no está habilitado de forma predeterminada en Dispatcher. La activación predeterminada no es posible, ya que los clientes que utilizan CORS (Intercambio de recursos de origen cruzado) con varios orígenes deben revisar, y posiblemente actualizar, su configuración de Dispatcher.
 
 >[!NOTE]
 >
->Dispatcher no almacena en caché el `Vary` encabezado.
+>Dispatcher no almacena en caché el encabezado `Vary`.
 >
->El almacenamiento en caché de otros encabezados relacionados con CORS se puede habilitar en Dispatcher, pero puede ser insuficiente cuando hay varios orígenes CORS.
+>El almacenamiento en caché de otros encabezados relacionados con CORS se puede habilitar en Dispatcher, pero puede ser insuficiente cuando hay varios orígenes de CORS.
 
 ### Habilitar el almacenamiento en caché de consultas persistentes {#enable-caching-persisted-queries}
 
@@ -766,7 +767,7 @@ Para habilitar el almacenamiento en caché de consultas persistentes, se requier
 
   >[!NOTE]
   >
-  >Dispatcher agrega el sufijo `.json` a todas las direcciones URL de consulta persistentes, de modo que el resultado se pueda almacenar en caché.
+  >Dispatcher agrega el sufijo `.json` a todas las direcciones URL de consultas persistentes para que el resultado se pueda almacenar en caché.
   >
   >Esto sirve para garantizar que la consulta se ajuste a los requisitos de Dispatcher para los documentos que se pueden almacenar en caché. Para obtener más información, consulte [¿Cómo devuelve documentos Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
 
@@ -781,10 +782,10 @@ Para habilitar el almacenamiento en caché de consultas persistentes, se requier
 
 Es posible que los clientes que utilizan solicitudes CORS tengan que revisar y actualizar su configuración CORS en Dispatcher.
 
-* El `Origin` AEM no se debe pasar a la publicación mediante la interfaz de usuario de Dispatcher para que la publique:
-   * Compruebe la `clientheaders.any` archivo.
+* AEM No se debe pasar el encabezado `Origin` a la publicación de la a través de Dispatcher:
+   * Compruebe el archivo `clientheaders.any`.
 * En su lugar, las solicitudes CORS deben evaluarse para detectar orígenes permitidos en el nivel de Dispatcher. Este enfoque también garantiza que los encabezados relacionados con CORS se establezcan correctamente, en un solo lugar, en todos los casos.
-   * Esta configuración debe agregarse al `vhost` archivo. A continuación se muestra un ejemplo de configuración; para simplificar, solo se ha proporcionado la parte relacionada con CORS. Puede adaptarlo para sus casos de uso específicos.
+   * Esta configuración se debe agregar al archivo `vhost`. A continuación se muestra un ejemplo de configuración; para simplificar, solo se ha proporcionado la parte relacionada con CORS. Puede adaptarlo para sus casos de uso específicos.
 
   ```xml
   <VirtualHost *:80>
@@ -876,7 +877,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
       * [Una consulta paginada con primero y después](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#paginated-first-after)
    * Consulte [Consulta de muestra: toda la información acerca de todas las ciudades](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
 
-* El filtro `includeVariations` está incluido en el `List` tipo de consulta. Para recuperar las variaciones de fragmentos de contenido en los resultados de la consulta, la variable `includeVariations` el filtro debe establecerse en `true`.
+* El filtro `includeVariations` se incluye en el tipo de consulta `List`. Para recuperar las variaciones de fragmentos de contenido en los resultados de la consulta, el filtro `includeVariations` debe establecerse en `true`.
 
   >[!CAUTION]
   >El filtro `includeVariations` no se puede usar junto con el campo generado por el sistema `_variation`.
@@ -920,7 +921,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
          * Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
 
-      * `_tags` : para revelar los ID de los fragmentos de contenido o las variaciones que contienen etiquetas; esta lista es una matriz de `cq:tags` identificadores.
+      * `_tags` : para revelar los identificadores de los fragmentos de contenido o las variaciones que contienen etiquetas; esta lista es una matriz de `cq:tags` identificadores.
 
          * Consulte [Consulta de muestra: nombres de todas las ciudades etiquetadas como escapadas](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
          * Consulte [Consulta de muestra para variaciones de fragmentos de contenido de un modelo determinado que tienen una etiqueta específica adjunta](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -948,23 +949,23 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
 * Alternativa cuando se consultan fragmentos anidados:
 
-   * Si la variación solicitada no existe en un fragmento anidado, la variable **Principal** se devuelve la variación.
+   * Si la variación solicitada no existe en un fragmento anidado, se devuelve la variación **Principal**.
 
 ### Filtro CORS {#cors-filter}
 
 >[!CAUTION]
 >
->If [se ha habilitado el almacenamiento en caché en Dispatcher](#graphql-persisted-queries-enabling-caching-dispatcher) Por lo tanto, el filtro CORS no es necesario y, por lo tanto, esta sección se puede ignorar.
+>Si se ha habilitado el almacenamiento en caché de [en Dispatcher](#graphql-persisted-queries-enabling-caching-dispatcher), no es necesario el filtro CORS y, por lo tanto, se puede ignorar esta sección.
 
 >[!NOTE]
 >
->AEM Para obtener una descripción detallada de la política de uso compartido de recursos CORS en el sector de la, consulte [Comprender el Intercambio de Recursos de Origen Cruzado (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es#understand-cross-origin-resource-sharing-(cors)).
+>AEM Para obtener una descripción detallada de la política de uso compartido de recursos CORS en el sitio web de, consulte [Comprender el Intercambio de Recursos de Origen Cruzado (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es#understand-cross-origin-resource-sharing-(cors)).
 
 Para acceder al extremo de GraphQL, configure una política CORS en el repositorio Git del cliente. Esta configuración se realiza agregando un archivo de configuración OSGi CORS apropiado para uno o más extremos deseados.
 
-Esta configuración debe especificar un origen de sitio web de confianza `alloworigin` o `alloworiginregexp` para los que se debe conceder acceso.
+Esta configuración debe especificar un origen de sitio web de confianza `alloworigin` o `alloworiginregexp` para el cual se debe conceder acceso.
 
-Por ejemplo, para conceder acceso al extremo de GraphQL y al extremo de consultas persistentes para `https://my.domain` puede utilizar:
+Por ejemplo, para conceder acceso al extremo de GraphQL y al extremo de consultas persistentes para `https://my.domain`, puede utilizar:
 
 ```xml
 {
@@ -1040,7 +1041,7 @@ Por ejemplo, para conceder acceso a solicitudes con el referente `my.domain` pue
 >
 >* solo conceder acceso a dominios de confianza
 >* asegúrese de que no se expone ninguna información confidencial
->* no utilizar un comodín [*] sintaxis; esta funcionalidad deshabilita el acceso autenticado al extremo de GraphQL y también lo expone a todo el mundo.
+>* no usar sintaxis de comodín [*]; esta funcionalidad deshabilita el acceso autenticado al extremo de GraphQL y también lo expone a todo el mundo.
 
 >[!CAUTION]
 >
@@ -1048,7 +1049,7 @@ Por ejemplo, para conceder acceso a solicitudes con el referente `my.domain` pue
 >
 >Esta funcionalidad significa que debe asegurarse de que no hay datos confidenciales disponibles, ya que podrían filtrarse de esta manera. Por ejemplo, incluye información que podría estar presente como nombres de campo en la definición del modelo.
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 Para protegerse de posibles problemas, se han impuesto limitaciones predeterminadas a las consultas:
 
@@ -1062,7 +1063,7 @@ También debe tener en cuenta lo siguiente:
 
    * Entonces, ¿dónde?
 
-      * Dos (o más modelos) se utilizan como posibles referencias; cuando se definen como un permitido **Tipo de modelo** en la Referencia del fragmento de contenido.
+      * Dos (o más modelos) se usan como posibles referencias; cuando se definen como un **Tipo de modelo** permitido en la referencia de fragmento de contenido.
 
      y:
 
@@ -1074,12 +1075,12 @@ También debe tener en cuenta lo siguiente:
 
    * Por ejemplo:
 
-      * Cuando hay dos (o más) fragmentos con modelos diferentes (por ejemplo, `M1`, `M2`) se utilizan como posibles referencias (Referencia de contenido o Referencia de fragmento) de otro fragmento; por ejemplo, `Fragment1` `MultiField/List`
-      * Y estos dos fragmentos con diferentes modelos (`M1`, `M2`) tienen campos con el mismo nombre, pero de tipos diferentes.
+      * Cuando se usan dos (o más) fragmentos con modelos diferentes (por ejemplo, `M1`, `M2`) como posibles referencias (Referencia de contenido o Referencia de fragmento) de otro fragmento; por ejemplo, `Fragment1` `MultiField/List`
+      * Y estos dos fragmentos con diferentes modelos (`M1`, `M2`) tienen campos con el mismo nombre, pero de diferentes tipos.
 Como ejemplo:
-         * `M1.Title` as `Text`
-         * `M2.Title` as `Text/MultiField`
-      * Entonces, se producirá un error de conflicto de campos si la consulta de GraphQL contiene el `Title` field.
+         * `M1.Title` como `Text`
+         * `M2.Title` como `Text/MultiField`
+      * Entonces, se producirá un error de conflicto de campos si la consulta de GraphQL contiene el campo `Title`.
 
 ## Autenticación {#authentication}
 
@@ -1092,7 +1093,7 @@ Preguntas que han surgido:
 1. **P**: “*¿En qué se diferencia la API de GraphQL para AEM de la API Generador de consultas?*”
 
    * **R**: “*La API de GraphQL de AEM ofrece control total sobre la salida JSON y es un estándar en la industria para consultar contenido.
-AEM AEM En el futuro, el tiene previsto invertir en la API de GraphQL de la.*&quot;
+AEM AEM En el futuro, el planea invertir en la API de GraphQL de la.*&quot;
 
 ## Tutorial: Introducción a AEM Headless y GraphQL {#tutorial}
 

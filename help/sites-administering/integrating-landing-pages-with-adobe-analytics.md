@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Integración de páginas de destino con Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM ha integrado la solución de páginas de aterrizaje de con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mediante los siguientes componentes de llamada a la acción (CTA):
+AEM La ha integrado la solución de páginas de aterrizaje con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mediante los siguientes componentes de llamada a la acción (CTA):
 
 1. Componente Clic
 1. Componente Vínculo gráfico
@@ -27,11 +27,11 @@ Estos componentes exponen ciertos atributos que se pueden asignar a través de v
 
 ## Requisitos previos {#prerequisites}
 
-El Adobe recomienda que revise las [AEM integración existente con Adobe Analytics](/help/sites-administering/adobeanalytics.md) para comprender cómo funciona esta integración.
+El Adobe AEM recomienda que revise la [integración existente de Adobe Analytics con el servicio de integración de](/help/sites-administering/adobeanalytics.md) para comprender cómo funciona esta integración.
 
 ## Componentes disponibles para asignación {#components-available-for-mapping}
 
-AEM En el caso de los **Llamada a acción** componentes - **ClickThroughLink** y **GraphicalLink** : mostrado aquí en la barra de tareas, se puede asignar a variables de Adobe Analytics.
+AEM En la barra de tareas, los componentes de **Llamada a la acción** - **ClickThroughLink** y **GraphicalLink** - que se muestran aquí, se pueden asignar a variables de Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -71,24 +71,24 @@ Para asignar componentes de página de aterrizaje a Adobe Analytics:
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clickthroughImageTarget</i> <br /> </td>
+   <td><i>eventdata.clicktroughImageTarget</i> <br /> </td>
    <td>El destino al que se le lleva al hacer clic en la imagen que contiene un vínculo</td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clickthroughImageAsset</i> <br /> </td>
+   <td><i>eventdata.clicktroughImageAsset</i> <br /> </td>
    <td>La ruta al recurso de imagen en el repositorio </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.events.clickthroughImageClick</i> <br /> </td>
+   <td><i>eventdata.events.clicktroughImageClick</i> <br /> </td>
    <td>El evento de clic</td>
   </tr>
  </tbody>
 </table>
 
 1. Asigne estos atributos expuestos con cualquier variable de Adobe Analytics desde el buscador de contenido. El marco de trabajo ya está listo para usarse.
-1. Ahora puede crear una página de aterrizaje o abrir una existente con componentes de CTA existentes y hacer clic en **Cloud Service** pestaña en **Propiedades de página** en la barra de tareas (en la IU táctil optimizada, seleccione **Abrir propiedades** y haga clic en **Cloud Service**) y configure el marco de trabajo para utilizarlo con la página de aterrizaje. Seleccione el marco de trabajo de la lista desplegable.
+1. Ahora puede crear una página de aterrizaje o abrir una página de aterrizaje existente con componentes de CTA existentes, hacer clic en la pestaña **Cloud Service** en **Propiedades de página** desde la barra de tareas (en la interfaz de usuario táctil optimizada, seleccione **Abrir propiedades** y haga clic en **Cloud Service**) y configurar el módulo que se utilizará con la página de aterrizaje. Seleccione el marco de trabajo de la lista desplegable.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

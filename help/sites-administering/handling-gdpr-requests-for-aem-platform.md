@@ -27,7 +27,7 @@ AEM En el nivel de base de datos de usuario, los datos personales almacenados so
 
 ### Pasos manuales {#manual-steps}
 
-1. Abra la consola Administración de usuarios navegando hasta **[!UICONTROL Configuración - Seguridad - Usuarios]** o directamente a `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Abra la consola Administración de usuarios navegando a **[!UICONTROL Configuración - Seguridad - Usuarios]** o directamente a `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -87,11 +87,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    La interfaz de usuario indica que el usuario está desactivado atenuando y añadiendo un candado a la tarjeta del perfil:
 
-   ![disableduser](assets/disableduser.png)
+   ![usuario deshabilitado](assets/disableduser.png)
 
 ### Eliminación de información del perfil de usuario {#delete-user-profile-information}
 
-1. Inicie sesión en el CRXDE Lite y busque `[!UICONTROL userId]`:
+1. Inicie sesión en el CRXDE Lite y luego busque `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -101,23 +101,23 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 1. Elimine los nodos de perfil y todos sus elementos secundarios. AEM Existen dos formatos para los nodos de perfil, según la versión de la:
 
-   1. El perfil privado predeterminado en `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`AEM , para los nuevos perfiles creados con la versión 6.5 de la versión de.
+   1. El perfil privado predeterminado bajo `[!UICONTROL /profile]`
+   1. AEM `[!UICONTROL /profiles]`, para los nuevos perfiles creados con la versión 6.5 de la.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### API del HTTP {#http-api-1}
 
-Los siguientes procedimientos utilizan el `curl` herramienta de línea de comandos para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL escrutinio]** `userId` y eliminar perfiles de `cavery` que están disponibles en la ubicación predeterminada.
+Los siguientes procedimientos utilizan la herramienta de línea de comandos `curl` para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL captura]** `userId` y eliminar perfiles de `cavery` que están disponibles en la ubicación predeterminada.
 
-* *Descubrimiento del inicio del usuario*
+* *Descubriendo el inicio del usuario*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-* *Desactivación del usuario*
+* *Deshabilitando el usuario*
 
 Uso de la ruta del nodo desde la propiedad del inicio de la carga útil JSON devuelta desde el comando anterior:
 

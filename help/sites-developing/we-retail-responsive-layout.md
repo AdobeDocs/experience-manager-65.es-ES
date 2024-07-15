@@ -18,7 +18,7 @@ ht-degree: 6%
 
 # Prueba del diseño interactivo en We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseño proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se utiliza junto con el **Diseño** en el editor de páginas, lo que le permite crear y editar su diseño interactivo en función del dispositivo.
+Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseño proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se usa junto con el modo **Diseño** en el editor de páginas, lo que le permite crear y editar su diseño interactivo en función del dispositivo.
 
 ## Probando a cabo {#trying-it-out}
 
@@ -26,7 +26,7 @@ Todas las páginas de We.Retail utilizan el componente Contenedor de diseño par
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Cambiar a **Previsualizar** para ver la página tal como se representaría para un visitante del sitio web. Desplácese hacia abajo hasta el contenido del artículo *Espíritus Aloha en Noruega del Norte*.
+1. Cambie a **Vista previa** para ver la página tal como se representaría para un visitante del sitio web. Desplácese hacia abajo hasta el contenido del artículo *Espíritus Aloha en Noruega del Norte*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -46,4 +46,4 @@ Todas las páginas de We.Retail utilizan el componente Contenedor de diseño par
 
 ## Información adicional {#further-information}
 
-Para obtener más información, consulte el documento de creación [Diseño interactivo](/help/sites-authoring/responsive-layout.md) o el documento del administrador [Configuración del contenedor y el modo de diseño](/help/sites-administering/configuring-responsive-layout.md) para obtener información técnica completa.
+Para obtener más información, consulte el documento de creación [Diseño adaptable](/help/sites-authoring/responsive-layout.md) o el documento del administrador [Configuración del contenedor de diseño y el modo de diseño](/help/sites-administering/configuring-responsive-layout.md) para obtener detalles técnicos completos.

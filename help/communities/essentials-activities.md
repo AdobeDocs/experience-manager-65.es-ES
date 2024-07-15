@@ -23,7 +23,7 @@ Las actividades de un miembro de la comunidad que ha iniciado sesión, como publ
 
 La capacidad de seguir agrega otro conjunto de actividades cuando los miembros de la comunidad siguen publicaciones de interés u otros miembros de la comunidad.
 
-Todo [sitios de la comunidad](/help/communities/overview.md#communitiessites) incluya una página de perfil de usuario para el miembro conectado que mostrará las actividades de los miembros de la misma manera.
+Todos los [sitios de la comunidad](/help/communities/overview.md#communitiessites) incluyen una página de perfil de usuario para el miembro que ha iniciado sesión que mostrará las actividades de los miembros de la misma manera.
 
 ## Conceptos  {#concepts}
 
@@ -31,9 +31,9 @@ Un *flujo de actividad* es la lista de actividades recientes realizadas por un m
 
 Un miembro puede seguir un flujo de actividad, ya sea siguiendo a otro individuo o contenido.
 
-A *suministro de noticias* es una combinación de los flujos de actividad que sigue un miembro en un solo flujo.
+Una fuente de noticias *news feed* es una combinación de los flujos de actividad seguidos por un miembro en un solo flujo.
 
-A *[gráfico social](/help/communities/essentials-socialgraph.md)* registra las siguientes relaciones de un miembro a otro.
+Un *[gráfico social](/help/communities/essentials-socialgraph.md)* captura las siguientes relaciones de un miembro a otro.
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
@@ -52,7 +52,7 @@ A *[gráfico social](/help/communities/essentials-socialgraph.md)* registra las 
    <td>cq.social.hbs.activitystreams</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td> /libs/social/activitystreams/components/hbs/activitystreams/activitystreams.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity-title.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity.hbs</td>
   </tr>
   <tr>
@@ -61,7 +61,7 @@ A *[gráfico social](/help/communities/essentials-socialgraph.md)* registra las 
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="/help/communities/activities.md">Función Flujos de actividad</a></td>
+   <td>Ver <a href="/help/communities/activities.md">Función de flujos de actividad</a></td>
   </tr>
  </tbody>
 </table>
@@ -78,4 +78,4 @@ A *[gráfico social](/help/communities/essentials-socialgraph.md)* registra las 
 
 ### Función Secuencia de actividades {#activity-stream-function}
 
-Una estructura de sitio de la comunidad que incluye [Función Secuencia de actividades](/help/communities/functions.md#activity-stream-function), incluye un configurado `activity streams` componente.
+Una estructura de sitio de comunidad que incluye la [función de flujo de actividad](/help/communities/functions.md#activity-stream-function), incluye un componente `activity streams` configurado.

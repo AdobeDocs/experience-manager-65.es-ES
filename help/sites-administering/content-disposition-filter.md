@@ -24,12 +24,12 @@ Una vez instalado, el filtro bloquea el acceso a todos los recursos. Por ejemplo
 
 ## Configurar el filtro de disposición de contenido {#configure-content-disposition-filter}
 
-Puede ver el [Filtro de disposición de contenido de Apache Sling en GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
+Puede ver el filtro de disposición de contenido de [Apache Sling en GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
 
 Las opciones del Filtro de disposición de contenido proporcionan las siguientes funciones:
 
-* **Rutas de disposición de contenido:** Una lista de rutas donde se aplica el filtro seguida de una lista de tipos MIME que se excluirán de esa ruta. Esta ruta debe ser absoluta y puede contener un comodín (`*`) al final, para hacer coincidir cada ruta de recurso con el prefijo de ruta dado. Por ejemplo: `/content/*:image/jpeg,image/svg+xml` aplica el filtro a todos los nodos de `/content?` excepto las imágenes de JPG y SVG.
+* **Rutas de disposición de contenido:** Una lista de rutas donde se aplica el filtro seguida de una lista de tipos MIME que se excluirán en esa ruta. Esta ruta de acceso debe ser una ruta de acceso absoluta y puede contener un comodín (`*`) al final, para que coincida cada ruta de acceso de recurso con el prefijo de ruta de acceso dado. Por ejemplo: `/content/*:image/jpeg,image/svg+xml` aplica el filtro a todos los nodos de `/content?`, excepto a las imágenes de JPG y SVG.
 
-* **Rutas de recursos excluidas:** Una lista de recursos excluidos, cada ruta de recurso debe darse como ruta absoluta y completa. No se admiten coincidencias de prefijos ni comodines.
+* **Rutas de recursos excluidos:** Una lista de recursos excluidos, cada ruta de recursos debe darse como ruta absoluta y completa. No se admiten coincidencias de prefijos ni comodines.
 
-* **Habilitar Para Todas Las Rutas De Recursos:** Este indicador controla si se activa este filtro para todas las rutas, excepto para las rutas excluidas definidas por Rutas de recursos excluidas. Si establece este indicador como &quot;true&quot;, se ignoran las rutas de disposición de contenido. Independientemente de la configuración, solo se tratan las rutas de recurso que contienen una propiedad denominada `jcr:data` o `jcr:content/jcr:data`.
+* **Habilitar para todas las rutas de recursos:** Este indicador controla si se habilita este filtro para todas las rutas, excepto para las rutas excluidas definidas por las rutas de recursos excluidas. Si establece este indicador como &quot;true&quot;, se ignoran las rutas de disposición de contenido. Independientemente de la configuración, solo se tratan las rutas de recursos que contienen una propiedad denominada `jcr:data` o `jcr:content/jcr:data`.

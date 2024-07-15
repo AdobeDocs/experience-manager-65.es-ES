@@ -26,7 +26,7 @@ Las acciones de Content Management son los componentes básicos que ayudan a cre
 
 >[!NOTE]
 >
->Para obtener más información sobre consideraciones de diseño para aplicaciones de AEM Mobile, consulte [Consideraciones de diseño para aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
+>Para obtener más información sobre las consideraciones de diseño de las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño de las aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
 
 >[!CAUTION]
 >
@@ -36,16 +36,16 @@ Las acciones de Content Management son los componentes básicos que ayudan a cre
 
 Normalmente, el contenido, como los artículos, debe tener la misma apariencia en todos los autores e incluso en las aplicaciones. Por lo tanto, es esencial poner scripts, css y fuentes a disposición de todos. Esta operación envía estos recursos compartidos a Mobile On-Demand, que luego se puede consumir según sea necesario.
 
-Una vez configurada y asociada la aplicación a una configuración de nube, puede cargar los recursos compartidos. Para ver los pasos detallados sobre cómo asociar la aplicación a una configuración en la nube, haga clic en [aquí](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
+Una vez configurada y asociada la aplicación a una configuración de nube, puede cargar los recursos compartidos. Para ver los pasos detallados sobre cómo asociar la aplicación a una configuración de nube, haz clic [aquí](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
 >[!NOTE]
 >
->Recursos compartidos utiliza ContentSync para recopilar todos los recursos diferentes. Consulte [Móvil con ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para obtener más información.
+>Recursos compartidos utiliza ContentSync para recopilar todos los recursos diferentes. Consulte [Sincronización móvil con ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para obtener más información.
 
 Siga estos pasos para cargar los recursos compartidos de un artículo:
 
-1. Seleccione el artículo de **Administrar artículos** mosaico.
-1. Clic **Cargar medios compartidos** para cargar los recursos compartidos de HTML.
+1. Seleccione el artículo del mosaico **Administrar artículos**.
+1. Haga clic en **Cargar recursos compartidos** para cargar los recursos compartidos de HTML.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

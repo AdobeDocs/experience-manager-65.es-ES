@@ -38,7 +38,7 @@ El soporte de las SPA en AEM introduce una capa delgada de JS que interactúa co
 Para obtener más información sobre las SPA en AEM, consulte los siguientes documentos:
 
 * [Modelo de SPA](/help/sites-developing/spa-blueprint.md) para los requisitos técnicos de una SPA
-* [SPA AEM Introducción a la administración de la](/help/sites-developing/spa-getting-started-react.md) SPA para un rápido recorrido por un sencillo entorno de la vida
+* SPA AEM SPA [Introducción a la en el ](/help/sites-developing/spa-getting-started-react.md) para ver un recorrido rápido por un sencillo espacio de trabajo de la.
 
 ## Diseño {#design}
 
@@ -46,7 +46,7 @@ El componente de página de una SPA no proporciona los elementos HTML de sus com
 
 ### Administración de modelos de página {#page-model-management}
 
-La resolución y la gestión del modelo de página se delegan a la biblioteca `PageModel`. SPA SPA La biblioteca debe utilizar la biblioteca de modelo de página para inicializarse y ser creada por el Editor de modelos de página (). La biblioteca Modelo de página se proporciona indirectamente al componente de Página de AEM a través del npm `aem-react-editable-components`. El Modelo de página es un intérprete entre el AEM y las SPA y, por lo tanto, siempre debe estar presente. Cuando se cree la página, una biblioteca adicional `cq.authoring.pagemodel.messaging` debe añadirse para habilitar la comunicación con el editor de páginas.
+La resolución y la gestión del modelo de página se delegan a la biblioteca `PageModel`. SPA SPA La biblioteca debe utilizar la biblioteca de modelo de página para inicializarse y ser creada por el Editor de modelos de página (). La biblioteca Modelo de página se proporciona indirectamente al componente de Página de AEM a través del npm `aem-react-editable-components`. El Modelo de página es un intérprete entre el AEM y las SPA y, por lo tanto, siempre debe estar presente. Cuando se crea la página, se debe agregar una biblioteca adicional `cq.authoring.pagemodel.messaging` para habilitar la comunicación con el editor de páginas.
 
 Si el componente de página de las SPA hereda del componente principal de página, hay dos opciones para hacer que la categoría de la biblioteca de cliente `cq.authoring.pagemodel.messaging` esté disponible:
 
@@ -140,7 +140,7 @@ Esta es una descripción más detallada de la interacción cliente-servidor al e
 
 Esta es una descripción más detallada que se centra en la experiencia de creación.
 
-![spa_content_authingmodel](assets/spa_content_authoringmodel.png)
+![modelo spa_content_authingmodel](assets/spa_content_authoringmodel.png)
 
 1. La SPA toma el modelo de página.
 1. **2a** El modelo de página proporciona al editor los datos necesarios para la creación.
@@ -158,7 +158,7 @@ Esta es una descripción más detallada que se centra en la experiencia de creac
 
 ## Requisitos y limitaciones {#requirements-limitations}
 
-Para permitir que el autor utilice el editor de páginas para editar el contenido de una SPA, la aplicación de SPA debe implementarse para interactuar con el SDK del editor de SPA de AEM. Consulte [SPA AEM Introducción a la administración de la](/help/sites-developing/spa-getting-started-react.md) por lo mínimo que necesita saber para poner en marcha el suyo.
+Para permitir que el autor utilice el editor de páginas para editar el contenido de una SPA, la aplicación de SPA debe implementarse para interactuar con el SDK del editor de SPA de AEM. SPA AEM Consulte [Introducción a la en el ](/help/sites-developing/spa-getting-started-react.md) para obtener información sobre lo mínimo que necesita saber para poner en marcha la suya.
 
 ### Marcos de trabajo compatibles {#supported-frameworks}
 
@@ -171,20 +171,20 @@ Las versiones anteriores de estos marcos de trabajo pueden funcionar con el Edit
 
 ### Marcos de trabajo adicionales {#additional-frameworks}
 
-Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de SDK de SPA de AEM. Consulte la [SPA Modelo de](/help/sites-developing/spa-blueprint.md) AEM SPA para los requisitos que debe cumplir un marco de trabajo para crear una capa específica del marco de trabajo compuesta de módulos, componentes y servicios para trabajar con el Editor de la.
+Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de SDK de SPA de AEM. SPA AEM SPA Consulte el [Modelo de trabajo](/help/sites-developing/spa-blueprint.md) para conocer los requisitos que debe cumplir un marco de trabajo para crear una capa específica del marco de trabajo compuesta de módulos, componentes y servicios para trabajar con el Editor de la.
 
 ### Uso de varios selectores {#multiple-selectors}
 
-Se pueden definir y utilizar selectores personalizados adicionales como parte de un SPA desarrollado para el SDK de SPA de AEM. Sin embargo, esta compatibilidad requiere que `model` selector sea el primer selector y la extensión sea `.json` as [requerido por el exportador JSON.](json-exporter-components.md#multiple-selectors)
+Se pueden definir y utilizar selectores personalizados adicionales como parte de un SPA desarrollado para el SDK de SPA de AEM. Sin embargo, esta compatibilidad requiere que el selector `model` sea el primer selector y que la extensión sea `.json`, ya que [el exportador JSON lo requiere.](json-exporter-components.md#multiple-selectors)
 
 ### Requisitos del editor de texto {#text-editor-requirements}
 
 Si desea utilizar el editor in situ de un componente de texto creado en la SPA, se requiere una configuración adicional.
 
-1. Establezca un atributo (puede ser cualquiera) en el elemento contenedor que encierra el texto HTML. Si hay contenido de muestra de WKND Journal, es un `<div>` y el selector que se ha utilizado es `data-rte-editelement`.
+1. Establezca un atributo (puede ser cualquiera) en el elemento contenedor que encierra el texto HTML. Si hay contenido de muestra de WKND Journal, es un elemento `<div>` y el selector que se ha utilizado es `data-rte-editelement`.
 1. Establezca la configuración `editElementQuery` en el componente de texto de AEM correspondiente `cq:InplaceEditingConfig` que apunte a ese selector, por ejemplo, `data-rte-editelement`. Esto permite al editor saber qué elemento de HTML ajusta el texto HTML.
 
-Para ver un ejemplo de cómo se hace, consulte la [Contenido de muestra del WKND Journal.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+Para ver un ejemplo de cómo se hace, vea el contenido de muestra de [WKND Journal.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
 Para obtener información adicional acerca de la propiedad `editElementQuery` y la configuración del editor de texto enriquecido, consulte [Configuración del Editor de texto enriquecido.](/help/sites-administering/rich-text-editor.md)
 

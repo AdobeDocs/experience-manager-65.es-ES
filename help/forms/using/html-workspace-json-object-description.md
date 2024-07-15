@@ -273,7 +273,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>taskFormType<br /> </td>
    <td>T</td>
-   <td>Contiene el tipo de formulario de la tarea. Con este campo, la tarea se procesa en el cliente como un formulario pdf, swf, etc.<br /> </td>
+   <td>Contiene el tipo de formulario de la tarea. Con este campo, la tarea se representa en el cliente como un formulario pdf, swf, etc.<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
@@ -481,7 +481,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td>
    <td>T</td>
-   <td>Contiene una lista de usuarios que un usuario que ha iniciado sesión ha buscado hasta la fecha.<br type="_moz" /> </td>
+   <td>Contiene una lista de usuarios que han buscado los usuarios que han iniciado sesión hasta la fecha.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>

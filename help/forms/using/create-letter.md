@@ -168,7 +168,7 @@ Analice cada carta para descubrir las partes que la componen. El especialista en
 
 **Crear el diccionario de datos** Habrá valores de datos como “ID del cliente” y “Nombre del cliente” que son comunes en muchas cartas. Puede preparar una lista consolidada de todos estos valores de datos. Normalmente, se consulta a alguien del equipo de middleware empresarial para planificar la estructura. Esto forma la base para crear el diccionario de datos.
 
-**Abastecimiento de datos desde sistemas empresariales back-end** También conocerá todos los valores de datos necesarios y de dónde se obtienen los datos del sistema empresarial. A continuación, puede crear la implementación para extraer los datos del sistema empresarial y alimentarlos con la solución Cartas.
+**Abastecimiento de datos de sistemas empresariales back-end** También conocerá todos los valores de datos necesarios y desde dónde se obtienen los datos del sistema empresarial. A continuación, puede crear la implementación para extraer los datos del sistema empresarial y alimentarlos con la solución Cartas.
 
 **Calcular la complejidad de las cartas** Es importante determinar lo complejo que será crear una correspondencia determinada. Este análisis ayuda a determinar la cantidad de tiempo y conjuntos de aptitudes que se necesitarán para crear las plantillas de cartas. Esto, a su vez, ayudará a estimar los recursos y el gasto de la implementación de la solución Cartas.
 
@@ -247,7 +247,7 @@ Primero necesita lo siguiente para crear una correspondencia:
 
    ![Seleccione un diseño para crear una carta](assets/selectlayout.png)
 
-1. Introduzca las propiedades de la correspondencia y seleccione **Guardar:**
+1. Escriba las propiedades de la correspondencia y seleccione **Guardar:**
 
    * **Título (opcional):** escriba el título de la carta. Los títulos no tienen que ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés.
    * **Nombre:** nombre único de la carta. No puede haber dos cartas en ningún estado con el mismo nombre. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título. Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
@@ -258,11 +258,11 @@ Primero necesita lo siguiente para crear una correspondencia:
 
    ![Propiedades de Correspondencia](assets/createcorrespondenceproperties.png)
 
-1. El sistema mostrará el mensaje: “Carta creada correctamente”. (en el mensaje de alerta) Seleccione **Abrir** para configurar los módulos de datos y los fragmentos de diseño que contiene. O seleccione **Listo** para volver a la página anterior.
+1. El sistema mostrará el mensaje: “Carta creada correctamente”. (en el mensaje de alerta) Seleccione **Abrir** para configurar los módulos de datos y los fragmentos de diseño que contiene. O bien, seleccione **Listo** para regresar a la página anterior.
 
    ![Mensaje de alerta: carta creada correctamente](assets/createcorrespondencecreated.png)
 
-   **Siguiente**: cuando selecciona **Abrir**, Administración de correspondencia mostrará una representación del diseño con todos los componentes del diseño (XDP) enumerados. Inserte los [módulos de datos y fragmentos de diseño y configúrelos](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Siguiente**: al seleccionar **Abrir**, Administración de correspondencia mostrará una representación del diseño con todos los componentes del diseño (XDP) enumerados. Inserte los [módulos de datos y fragmentos de diseño y configúrelos](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
 
 ### Inserte módulos de datos y fragmentos de diseño en una carta y configúrelos {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
@@ -272,7 +272,7 @@ Después de crear una correspondencia, si selecciona Abrir, Administración de c
 >
 >También puede seleccionar el icono Editar de una carta en la página Cartas para Insertar módulos de datos y fragmentos de diseño en una carta y configurarlos.
 
-1. Seleccionar **Insertar** para cada uno de los subformularios y seleccione Módulos de datos o un fragmento de diseño para insertar en cada uno de ellos.
+1. Seleccione **Insertar** para cada uno de los subformularios y seleccione Módulos de datos o un fragmento de diseño para insertar en cada uno de ellos.
 
    ![Insertar módulos de datos y fragmentos de diseño](assets/insertdmandlf.png)
 
@@ -302,8 +302,8 @@ Después de crear una correspondencia, si selecciona Abrir, Administración de c
    En esta página, también puede hacer lo siguiente para cada uno de los recursos de los subformularios:
 
    1. **Cambiar el orden de los recursos**: arrastre y suelte un recurso que contenga el icono de reordenar de un recurso ( ![dragndrop](assets/dragndrop.png)).
-   1. **Eliminar recursos**: seleccione el icono Eliminar junto a un recurso para eliminarlo.
-   1. **Previsualización de recursos**: seleccione el icono mostrar vista previa ( ![showpreview](assets/showpreview.png)) junto a un recurso.
+   1. **Eliminar recursos**: seleccione el icono Eliminar situado junto a un recurso para eliminarlo.
+   1. **Previsualizar recursos**: seleccione el icono Mostrar vista previa ( ![showpreview](assets/showpreview.png)) que está junto a un recurso.
 
 1. Seleccione **Siguiente**.
 1. La página Datos detalla cómo se utilizan los campos de datos y las variables en la plantilla. Los datos se pueden vincular a fuentes de datos como un diccionario de datos o entradas del usuario. Cada campo define propiedades desde las que el diccionario de datos asigna datos o qué rótulo se muestra para los campos de entrada del usuario.
@@ -341,9 +341,9 @@ Después de crear una correspondencia, si selecciona Abrir, Administración de c
 
 1. Seleccione **Agregar recurso**.
 1. En la pantalla Seleccionar recurso, seleccione los recursos que desea adjuntar a la carta y seleccione **Listo**. Debe tener los recursos que cargó primero en Recursos. Se recomienda adjuntar únicamente documentos PDF y de Microsoft Office, pero también imágenes. Para obtener más información sobre la carga de recursos en DAM, consulte [Cargar recursos](/help/assets/manage-assets.md).
-1. Para bloquear el orden de los recursos en la lista de modo que el Administrador de reclamaciones no pueda cambiar el orden, seleccione **Bloquear orden**. Si no selecciona esta opción, el Administrador de reclamaciones puede cambiar el orden de los artículos de la lista.
+1. Para bloquear el orden de los recursos de la lista de modo que el Administrador de reclamaciones no pueda cambiarlo, seleccione **Bloquear orden**. Si no selecciona esta opción, el Administrador de reclamaciones puede cambiar el orden de los artículos de la lista.
 1. Para cambiar el orden de los recursos, arrastre y suelte un recurso que contenga el icono de reordenar de un recurso ( ![dragndrop](assets/dragndrop.png)).
-1. Seleccionar **Editar** delante de un archivo adjunto y especifique un archivo adjunto como obligatorio si no desea que el autor pueda eliminarlo. Especifique un archivo adjunto como Seleccionado si desea que se preseleccione en la interfaz de CCR.
+1. Seleccione **Editar** delante de un archivo adjunto y especifique un archivo adjunto como obligatorio si no desea que el autor pueda eliminarlo. Especifique un archivo adjunto como Seleccionado si desea que se preseleccione en la interfaz de CCR.
 1. Seleccione **Acceso a la biblioteca** para conceder acceso a la biblioteca. Si el acceso a la biblioteca está habilitado, el Administrador de reclamaciones podrá acceder a la biblioteca de contenido al crear una carta e insertar archivos adjuntos.
 1. Seleccione **Configuración de archivos adjuntos** y especifique el número máximo de archivos adjuntos.
 

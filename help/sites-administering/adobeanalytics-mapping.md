@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Asignación de datos de componente con propiedades de Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
-Agregue componentes al marco de trabajo que recopilen los datos para enviarlos a Adobe Analytics. Los componentes diseñados para recopilar datos de análisis almacenan los datos en el repositorio adecuado **variable CQ**. Cuando se agrega un componente de este tipo a un marco de trabajo, el marco de trabajo muestra la lista de variables de CQ para que pueda establecer el vínculo con el entorno adecuado **Variable de Analytics**.
+Agregue componentes al marco de trabajo que recopilen los datos para enviarlos a Adobe Analytics. Los componentes diseñados para recopilar datos de análisis almacenan los datos en la **variable CQ** correspondiente. Cuando se agrega un componente de este tipo a un marco de trabajo, el marco de trabajo muestra la lista de variables de CQ para que pueda agregarlas a la **variable de Analytics** correspondiente.
 
 ![aa-11](assets/aa-11.png)
 
-Si la variable **AEM vista de** está abierto, las variables de Analytics aparecen en el buscador de contenido.
+AEM Cuando la **vista de** está abierta, las variables de Analytics aparecen en el buscador de contenido.
 
 ![aa-12](assets/aa-12.png)
 
-Puede asignar varias variables de Analytics con el mismo **variable CQ**.
+Puede asignar varias variables de Analytics con la misma **variable CQ**.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -38,13 +38,13 @@ Los datos asignados se envían a Adobe Analytics cuando se carga la página y se
 
 Utilice el siguiente procedimiento para asignar variables de componente CQ con propiedades de informe de Adobe Analytics.
 
-1. En el **AEM vista de**, arrastre un componente de seguimiento desde la barra de tareas al marco de trabajo. Por ejemplo, arrastre el **Página** del componente de **General** categoría.
+1. AEM En la **vista de**, arrastre un componente de seguimiento desde la barra de tareas al marco de trabajo. Por ejemplo, arrastre el componente **Página** desde la categoría **General**.
 
    ![aa-13](assets/aa-13.png)
 
-   Hay varios grupos de componentes predeterminados: **General**, **Comercio**, **Communities**, y **Otros**. AEM La instancia se puede configurar para que muestre grupos y componentes diferentes.
+   Hay varios grupos de componentes predeterminados: **General**, **Commerce**, **Communities** y **Other**. AEM La instancia se puede configurar para que muestre grupos y componentes diferentes.
 
-1. Para asignar variables de Adobe Analytics con variables definidas en el componente, arrastre un **Variable de Analytics** desde el buscador de contenido a un campo en el componente de seguimiento. Por ejemplo, arrastre `Page Name (pageName)` hasta `pagedata.title`.
+1. Para asignar variables de Adobe Analytics con variables definidas en el componente, arrastre una **variable de Analytics** desde el buscador de contenido a un campo del componente de seguimiento. Por ejemplo, arrastre `Page Name (pageName)` a `pagedata.title`.
 
    ![aa-14](assets/aa-14.png)
 
@@ -63,9 +63,9 @@ Utilice el siguiente procedimiento para asignar variables de componente CQ con p
    >Se recomienda encarecidamente que:
    >
    >* `eVars` y `props` están asignados a variables de CQ que comienzan por `pagedata.X` o `eventdata.X`
-   >* que los eventos deben asignarse a variables que empiecen por `eventdata.events.X`
+   >* los eventos deben asignarse a variables que empiecen por `eventdata.events.X`
 
-1. Para que el marco de trabajo esté disponible en la instancia de publicación del sitio, abra **Página** pestaña de la barra de tareas y haga clic en **Activar marco.**
+1. Para que el marco de trabajo esté disponible en la instancia de publicación del sitio, abra la pestaña **Página** de la barra de tareas y haga clic en **Activar marco de trabajo**.
 
 ## Asignación de variables relacionadas con el producto {#mapping-product-related-variables}
 
@@ -78,7 +78,7 @@ AEM utiliza una convención de nombres de variables y eventos relacionados con p
 | `product.quantity` | `product.quantity` (variable de conversión) | Número de productos que se están comprando. |
 | `product.price` | `product.price` (variable de conversión) | El precio del producto. |
 | `product.events.<eventName>` | Los eventos de éxito que se asociarán con el producto en el informe. | `product.events` es el prefijo de los eventos llamados *eventName.* |
-| `product.evars.<eVarName>` | Las variables de conversión ( `eVar`) para asociarlo al producto. | `product.evars` es el prefijo de las variables de eVar denominadas *eVarName.* |
+| `product.evars.<eVarName>` | Las variables de conversión (`eVar`) que se van a asociar con el producto. | `product.evars` es el prefijo de las variables de eVar denominadas *eVarName.* |
 
 AEM Varios componentes de Commerce utilizan estos nombres de variables.
 
@@ -90,7 +90,7 @@ AEM Varios componentes de Commerce utilizan estos nombres de variables.
 
 1. Inicie sesión en el sitio web de Adobe Analytics AEM con las mismas credenciales proporcionadas a los usuarios de la plataforma de inicio de sesión de la plataforma de.
 1. Asegúrese de que el RSID seleccionado sea el utilizado en los pasos anteriores.
-1. Entrada **Informes** (en el lado izquierdo de la página) seleccione **Conversión personalizada**, entonces **Conversión personalizada 1-10** y seleccione la variable correspondiente a `eVar7`
+1. En **Informes** (en el lado izquierdo de la página), seleccione **Conversión personalizada**, luego **Conversión personalizada 1-10** y seleccione la variable correspondiente a `eVar7`
 
 1. Según la versión de Adobe Analytics que utilice, debe esperar una media de 45 minutos para que el informe se actualice con el término de búsqueda utilizado; por ejemplo, berenjena en el ejemplo
 
@@ -103,18 +103,18 @@ Inicialmente, cuando se abre un marco de trabajo de Adobe Analytics, el buscador
 * Eventos
 
 Cuando se selecciona un RSID, todas las variables que pertenecen a ese RSID se agregan a la lista.\
-El `cf#` es necesario para asignar variables de Analytics a las variables de CQ presentes en los distintos componentes de seguimiento. Consulte Configuración de un marco de trabajo para el seguimiento básico.
+`cf#` es necesario para asignar variables de Analytics a las variables de CQ presentes en los diferentes componentes de seguimiento. Consulte Configuración de un marco de trabajo para el seguimiento básico.
 
 AEM Según la vista seleccionada para el marco de trabajo, el buscador de contenido se rellenará con variables de Analytics (en la vista de) o con variables de CQ (en la vista de Analytics).
 
 La lista se puede manipular de las siguientes maneras:
 
-1. En **AEM vista de** Por lo tanto, la lista se puede filtrar según el tipo de variable seleccionada mediante los tres botones de filtro:
+1. AEM En la **vista de datos**, la lista se puede filtrar según el tipo de variable que se seleccione con los tres botones de filtro:
 
-   * If *sin botón* está seleccionado, la lista muestra la lista completa.
-   * Si la variable **Tráfico** cuando se selecciona el botón, la lista solo muestra las variables que pertenecen a la sección Tráfico.
-   * Si la variable **Conversión** Cuando se selecciona este botón, la lista solo muestra las variables que pertenecen a la sección Conversión.
-   * Si la variable **Eventos** Cuando se selecciona este botón, la lista solo muestra las variables que pertenecen a la sección Eventos.
+   * Si *no hay ningún botón* seleccionado, la lista muestra la lista completa.
+   * Si el botón **Tráfico** está seleccionado, la lista solo mostrará las variables que pertenecen a la sección Tráfico.
+   * Si el botón **Conversión** está seleccionado, la lista solo mostrará las variables que pertenecen a la sección Conversión.
+   * Si se selecciona el botón **Events**, la lista solo mostrará las variables que pertenecen a la sección Events.
 
    >[!NOTE]
    >
@@ -127,7 +127,7 @@ La lista se puede manipular de las siguientes maneras:
 
 1. En la vista Adobe Analytics, el Buscador de contenido muestra todas las variables de CQ que pertenecen a los componentes de seguimiento arrastrados en la vista CQ.
 
-   * Por ejemplo, en el caso de que la variable **Descargar componente** es el *solo uno arrastrado* en la vista CQ (que tiene dos variables asignables) *eventdata.downloadLink* y *eventdata.events.startDownload*), el buscador de contenido tendrá este aspecto al cambiar a la vista de Adobe Analytics:
+   * Por ejemplo, en caso de que **Download component** sea el *único arrastrado* en la vista CQ (que tiene dos variables asignables *eventdata.downloadLink* y *eventdata.events.startDownload*), el buscador de contenido tendrá este aspecto al cambiar a la vista Adobe Analytics:
 
    ![aa-22](assets/aa-22.png)
 
@@ -147,13 +147,13 @@ En cualquier momento dado, los usuarios pueden cambiar entre dos formas de ver l
 
 ![aa-23](assets/aa-23.png)
 
-Tomando la imagen anterior como ejemplo, la variable **AEM vista de** tiene las siguientes propiedades:
+AEM Tomando la imagen anterior como ejemplo, la **vista de la vista de la** tiene las siguientes propiedades:
 
 1. Esta es la vista predeterminada cuando se abre el marco de trabajo.
 1. Izquierda: el buscador de contenido (cf#) se rellena con variables de Adobe Analytics basadas en los RSID seleccionados.
-1. Encabezados de pestañas (**AEM vista de** y **Vista de Analytics**): utilícelos para cambiar entre las dos vistas.
+1. AEM Encabezados de pestañas (**vista de datos** y **vista de Analytics**): úselos para cambiar entre las dos vistas.
 
-1. **AEM vista de**:
+1. AEM **Vista de la**:
 
    1. Si el marco de trabajo tiene componentes heredados de su elemento principal, se enumerarán aquí, junto con las variables asignadas a los componentes.
 
@@ -161,7 +161,7 @@ Tomando la imagen anterior como ejemplo, la variable **AEM vista de** tiene las 
       1. Para desbloquear un componente heredado, haga doble clic en el candado situado junto al nombre del componente
       1. Para revertir la herencia, elimine el componente desbloqueado; después, recuperará su estado de bloqueado.
 
-   1. **Arrastre los componentes aquí para incluirlos en el marco de análisis**: los componentes se pueden arrastrar desde el Sidekick y soltar aquí.
+   1. **Arrastre los componentes aquí para incluirlos en el módulo de análisis**: los componentes se pueden arrastrar desde el Sidekick y soltar aquí.
    1. Puede encontrar todos los componentes que están incluidos actualmente en el marco de Analytics:
 
       1. Para agregar un componente, arrastre uno desde la pestaña Componentes de la barra de tareas
@@ -172,27 +172,27 @@ Tomando la imagen anterior como ejemplo, la variable **AEM vista de** tiene las 
 
 ![aa-24](assets/aa-24.png)
 
-1. Se puede acceder a esta vista cambiando a **Vista de Analytics** en el marco de trabajo.
+1. Se puede acceder a esta vista cambiando a la pestaña **Analytics view** del marco de trabajo.
 1. Izquierda: el buscador de contenido (cf#) se rellena con variables CQ basadas en los componentes arrastrados al marco de trabajo en la vista CQ.
-1. Encabezados de pestañas (**AEM vista de** y **Vista de Analytics**): utilícelos para cambiar entre las dos vistas.
+1. AEM Encabezados de pestañas (**vista de datos** y **vista de Analytics**): úselos para cambiar entre las dos vistas.
 
 1. Las tres tablas (Tráfico, Conversión, Evento) enumeran todas las variables de Adobe Analytics disponibles. pertenecen a los RSID seleccionados. AEM Las asignaciones que se muestran aquí deben ser las mismas que en la vista de la:
 
    * **Tráfico**:
 
-      * Variable de tráfico ( `prop1`) asignado a una variable de CQ ( `eventdata.downloadLink`)
+      * Variable de tráfico (`prop1`) asignada a una variable de CQ (`eventdata.downloadLink`)
 
       * Cuando el componente tiene un candado junto a él, significa que se hereda de un marco principal y, por lo tanto, no se puede editar
 
    * **Conversión**:
 
-      * Variable de conversión ( `eVar1`) asignado a una variable de CQ ( `pagedata.title`)
+      * Variable de conversión (`eVar1`) asignada a una variable de CQ (`pagedata.title`)
 
-      * Variable de conversión ( `eVar3`) asignado a una expresión JavaScript agregada en línea al hacer doble clic en el campo de la variable CQ e introducir el código manualmente
+      * La variable de conversión (`eVar3`) asignada a una expresión de JavaScript se agregó en línea al hacer doble clic en el campo de la variable CQ e ingresar el código manualmente
 
    * **Evento**:
 
-      * Variable de evento ( `event1`) asignado a un evento CQ ( `eventdata.events.pageView`)
+      * Variable de evento (`event1`) asignada a un evento CQ ( `eventdata.events.pageView`)
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Tomando la imagen anterior como ejemplo, la variable **AEM vista de** tiene las 
 >
 >Por ejemplo, junto a `prop3` puede agregar lo siguiente:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
->para enviar el *title* de una página concatenada con su *sección del sitio* usando *:* (dos puntos) y con el prefijo *Adobe* as `prop3`
+>para enviar el *título* de una página concatenada con su *sección del sitio* usando *:* (dos puntos) y con el prefijo *Adobe* como `prop3`
 >
 
 >[!CAUTION]

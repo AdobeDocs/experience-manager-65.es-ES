@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Inicio rápido de la API del servicio de backup y restauración {#backup-and-restore-service-apiquick-starts}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
 SOAP Inicio rápido (inicio rápido) de la API de Java™ está disponible para la API del servicio de copia de seguridad y restauración.
 
@@ -30,11 +30,11 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->Los inicios rápidos en programación con AEM Forms se basan en el sistema operativo Forms. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Los inicios rápidos en programación con AEM Forms se basan en el sistema operativo Forms. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## SOAP Inicio rápido (modo de): Introducción del modo de copia de seguridad mediante la API de Java™ {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java™ entra en modo de copia de seguridad con una etiqueta única durante dos horas. Una vez transcurrido el tiempo de copia de seguridad o si se sale explícitamente del modo de copia de seguridad, Forms Server vuelve a depurar los archivos de Global Document Storage. (Consulte [Introducción del modo de copia de seguridad en Forms Server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+El siguiente ejemplo de código Java™ entra en modo de copia de seguridad con una etiqueta única durante dos horas. Una vez transcurrido el tiempo de copia de seguridad o si se sale explícitamente del modo de copia de seguridad, Forms Server vuelve a depurar los archivos de Global Document Storage. (Consulte [Introducción del modo de copia de seguridad en Forms Server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)).
 
 ```java
  /*

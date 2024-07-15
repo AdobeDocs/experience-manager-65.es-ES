@@ -26,19 +26,19 @@ ht-degree: 0%
 >
 >**Requisito previo**:
 >
->Antes de aprender a crear y modificar recursos compartidos, consulte [Sincronización de contenido](/help/mobile/mobile-ondemand-contentsync.md) para comprender los conceptos básicos.
+>Antes de aprender a crear y modificar recursos compartidos, consulta [Sincronización de contenido](/help/mobile/mobile-ondemand-contentsync.md) para comprender los conceptos básicos.
 
 Los usuarios de AEM Mobile utilizan la sincronización de contenido para exportar contenido en directo a contenido estático para su uso en aplicaciones móviles. Esta exportación se produce cuando el contenido se carga en Mobile On-Demand Services desde AEM Mobile.
 
-La propiedad ***dps-exportTemplate*** mencionado en la tabla anterior, define la ruta a las configuraciones de exportación de la aplicación. Establezca esta propiedad para crear y modificar recursos compartidos.
+La propiedad ***dps-exportTemplate*** mencionada en la tabla anterior define la ruta a las configuraciones de exportación de la aplicación. Establezca esta propiedad para crear y modificar recursos compartidos.
 
 En los siguientes recursos se describe la exportación de contenido desde Adobe Experience Manager AEM () para su carga en AEM Mobile.
 
 Los artículos tienen contenido que debe exportarse y cargarse. Parte de este contenido se puede compartir entre artículos.
 
-Uso [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para recopilar el contenido y crear una ***Recursos compartidos*** paquete.
+Use [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para reunir el contenido y crear un paquete de ***Recursos compartidos***.
 
-La configuración de ContentSync se encuentra en **&lt;dps-exporttemplate>/dps-article>** debe configurarse para exportar todo el contenido y los artículos necesarios para la propiedad de procesamiento estático en el dispositivo.
+La configuración de ContentSync encontrada en **&lt;dps-exportTemplate>/dps-article>** debe configurarse para exportar todo el contenido y el artículo necesarios para la representación estática de la propiedad en el dispositivo.
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ La configuración de ContentSync se encuentra en **&lt;dps-exporttemplate>/dps-a
 Para ver un ejemplo de recurso compartido, consulte los pasos a continuación:
 
 1. Abra el CRXDE Lite AEM en el servidor de la.
-1. Examinar esta ruta [/etc/contentsync/templates/dps-we-limited-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article), para ver los recursos compartidos de ejemplo.
+1. Vaya a esta ruta [/etc/contentsync/templates/dps-we-ilimitado-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article) para ver los recursos compartidos de ejemplo.
 
    Puede ver todas las propiedades necesarias para crear los recursos compartidos, como se muestra en la figura siguiente:
 

@@ -44,7 +44,7 @@ La herramienta Inspector de nombres y descripciones accesibles (ANDI) ayuda a id
 * Detecta problemas de accesibilidad del teclado y del contraste de color
 * Identifica claramente el contenido del lector de pantalla de acuerdo con los estándares
 
-ANDI trabaja con los principales exploradores de Internet. Consulte [Documentación de ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
+ANDI trabaja con los principales exploradores de Internet. Consulte la [documentación de ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
 
 ### Descargue e instale la temática Ultramarine-Accessible
 

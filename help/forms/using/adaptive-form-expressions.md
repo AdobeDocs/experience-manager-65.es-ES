@@ -195,7 +195,7 @@ Los métodos para agregar validaciones en un campo son los siguientes:
 
 ### Requerido {#required}
 
-Para hacer que un componente sea obligatorio, en el diálogo **Editar** del componente, puede seleccionar la opción **Título y texto > Requerido**. También puede añadir las variables **mensaje obligatorio** (opcional) también.
+Para hacer que un componente sea obligatorio, en el diálogo **Editar** del componente, puede seleccionar la opción **Título y texto > Requerido**. También puede agregar el **mensaje necesario** apropiado (opcional).
 
 ### motivos de validación {#validation-patterns}
 

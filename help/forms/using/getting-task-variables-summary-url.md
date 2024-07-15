@@ -62,7 +62,7 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
    1. Cree el proceso **Crear resumen de PTO** y utilícelo como subproceso antes de la operación **Asignar tarea** en su orquestación.
    1. Establezca **employeeName**, **employeeID**, **ptoReason**, **totalDays** y **nodeName** como las variables de entrada del nuevo proceso. Estas variables se pasarán como los datos de formulario enviados.
 
-      Defina también una variable de salida **ptoNodePath** que se utiliza al configurar la URL de resumen.
+      Defina también una variable de salida **ptoNodePath** que se use al establecer la URL de resumen.
 
    1. En el proceso **Crear resumen de PTO** proceso, utilice el componente **Establecer valor** para establecer los detalles de entrada en una asignación **nodeProperty**(**nodeProps**).
 

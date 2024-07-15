@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Cuando la capacidad de auditoría está habilitada, Document Security permite supervisar ciertos tipos de eventos. Los eventos que puede ver dependen de su función:
 
-**Usuarios:** Puede ver eventos auditados para sus documentos protegidos por directivas y para cualquier documento protegido que reciba y utilice.
+**Usuarios:** pueden ver eventos auditados para sus documentos protegidos por directivas y para cualquier documento protegido que reciban y utilicen.
 
-**Coordinadores del conjunto de directivas:** Puede ver eventos auditados, incluidos los eventos de documentos y directivas, para documentos protegidos por directivas desde sus conjuntos de directivas.
+**Coordinadores de conjuntos de directivas:** pueden ver eventos auditados, incluidos eventos de documentos y directivas, para documentos protegidos por directivas desde sus conjuntos de directivas.
 
-**Administradores:** Puede ver eventos auditados relacionados con todos los documentos y usuarios protegidos por directivas. Los administradores también pueden realizar el seguimiento de otros tipos de eventos, como eventos de usuario, documento, directiva y sistema.
+**Administradores:** pueden ver eventos auditados relacionados con todos los documentos y usuarios protegidos por directivas. Los administradores también pueden realizar el seguimiento de otros tipos de eventos, como eventos de usuario, documento, directiva y sistema.
 
 >[!NOTE]
 >
@@ -46,9 +46,9 @@ Estos requisitos de configuración deben cumplirse para que se realice la audito
 
 * El sistema o el administrador deben habilitar la capacidad de auditoría para el servidor.
 
-  (Consulte [Configuración de la auditoría de eventos y la privacidad](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
+  (Consulte [Configuración de auditoría de eventos y configuración de privacidad](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
 
-* La directiva que utilice para proteger el documento debe tener habilitada la auditoría. (Consulte [Crear y editar directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
+* La directiva que utilice para proteger el documento debe tener habilitada la auditoría. (Consulte [Creación y edición de directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
 ## Búsqueda de un evento {#search-for-an-event}
 
@@ -56,30 +56,32 @@ Puede buscar en la lista de eventos y ver descripciones más detalladas sobre lo
 
 Puede buscar eventos en la página Eventos usando una combinación de criterios de búsqueda de eventos y las fechas en que se produjeron los eventos. Los eventos que puede buscar dependen de su función:
 
-**Usuarios:** Puede ver eventos auditados para sus documentos protegidos por directivas y para cualquier documento protegido que reciba y utilice. Estas opciones de búsqueda están disponibles:
+**Usuarios:** pueden ver eventos auditados para sus documentos protegidos por directivas y para cualquier documento protegido que reciban y utilicen. Estas opciones de búsqueda están disponibles:
 
-**Eventos relacionados conmigo:** Los usuarios pueden encontrar eventos para cualquier documento protegido por políticas que hayan creado o recibido. Por ejemplo, si un usuario abre, visualiza o imprime un documento protegido por otra persona, solo verá estos eventos para ese documento.
+**Eventos relacionados
+para mí:** Los usuarios pueden encontrar eventos para cualquier documento protegido por directivas que hayan creado o recibido. Por ejemplo, si un usuario abre, visualiza o imprime un documento protegido por otra persona, solo verá estos eventos para ese documento.
 
 **Eventos relacionados con mis documentos:** Los usuarios pueden encontrar todos los eventos relacionados con sus propios documentos protegidos por directivas. Los usuarios ven los eventos que generan todas las personas que administran sus documentos.
 
-**Coordinadores del conjunto de directivas:** Puede ver eventos auditados, incluidos los eventos de documentos y directivas, para documentos protegidos por directivas desde sus conjuntos de directivas. Estas opciones están disponibles:
+**Coordinadores de conjuntos de directivas:** pueden ver eventos auditados, incluidos eventos de documentos y directivas, para documentos protegidos por directivas desde sus conjuntos de directivas. Estas opciones están disponibles:
 
-**Documentar eventos en los que soy coordinador de conjuntos de políticas:** Los coordinadores de conjuntos de directivas que tienen el permiso Ver evento pueden encontrar eventos relacionados con documentos que protegen las directivas de sus conjuntos de directivas.
+**Eventos de documento donde
+Soy coordinador de conjuntos de directivas:** Los coordinadores de conjuntos de directivas que tienen el permiso de ver eventos pueden encontrar eventos relacionados con documentos que protegen las directivas de sus conjuntos de directivas.
 
-**Eventos de directivas en los que soy coordinador de un conjunto de directivas:** Los coordinadores de conjuntos de directivas que tienen el permiso Ver eventos pueden encontrar eventos relacionados con directivas en sus conjuntos de directivas.
+**Eventos de directivas de los que soy coordinador de conjuntos de directivas:** Los coordinadores de conjuntos de directivas que tengan permiso para ver eventos pueden encontrar eventos relacionados con directivas en sus conjuntos de directivas.
 
-**Administradores:** Puede ver eventos auditados relacionados con todos los documentos y usuarios protegidos por directivas. Los administradores también pueden realizar el seguimiento de otros tipos. Además, los administradores pueden subdividir aún más las búsquedas de eventos según el tipo de usuario:
+**Administradores:** pueden ver eventos auditados relacionados con todos los documentos y usuarios protegidos por directivas. Los administradores también pueden realizar el seguimiento de otros tipos. Además, los administradores pueden subdividir aún más las búsquedas de eventos según el tipo de usuario:
 
 **Usuarios conocidos:** Los usuarios se encuentran en los directorios de origen o están registrados como usuarios externos.
 
-**Usuarios anónimos:** Usuarios desconocidos que acceden a un documento protegido mediante una directiva que permite el acceso anónimo.
+**Usuarios anónimos:** Usuarios desconocidos que tienen acceso a un documento protegido por una directiva que permite el acceso anónimo.
 
 **Usuarios del sistema:** Eventos iniciados por el servidor, como una sincronización de directorios.
 
 1. En la página Document Security, haga clic en Eventos.
 1. En la lista Buscar, seleccione los criterios de búsqueda que desee utilizar. Según la selección realizada en la lista Buscar, se mostrará una segunda lista que proporciona criterios de búsqueda adicionales. Si procede, en el cuadro de texto, escriba los criterios de búsqueda.
 
-   Para obtener más información sobre los tipos de eventos específicos, consulte [Opciones de auditoría de eventos](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
+   Para obtener más información acerca de los tipos de eventos específicos, vea [Opciones de auditoría de eventos](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
 
 1. En la lista Usuario, seleccione el tipo de usuario que realizó el evento:
 

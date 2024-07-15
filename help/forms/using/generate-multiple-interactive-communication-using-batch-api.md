@@ -83,18 +83,18 @@ Para crear una comunicación interactiva a partir de los registros guardados en 
 
 1. Cree una [Carpeta inspeccionada](/help/forms/using/creating-configure-watched-folder.md) y configúrela para utilizar la API por lotes:
    1. Inicie sesión en la instancia de autor de AEM Forms.
-   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta inspeccionada]**. Seleccionar **[!UICONTROL Nuevo]**.
+   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta inspeccionada]**. Seleccione **[!UICONTROL Nuevo]**.
    1. Especifique el **[!UICONTROL Nombre]** y la **[!UICONTROL Ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
    1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]**.
    1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo **[!UICONTROL Nombre de servicio]**.
-   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
+   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el %F/ [patrón](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
 1. Configure los parámetros avanzados:
    1. Abra la pestaña **[!UICONTROL Avanzadas]** y agregue las siguientes propiedades personalizadas:
 
       | Propiedad | Tipo | Descripción |
       |--- |--- |--- |
       | templatePath | Cadena | Especifique la ruta de la plantilla de comunicación interactiva que desea utilizar. Por ejemplo, `/content/dam/formsanddocuments/testsample/mediumic`. Es una propiedad obligatoria. |
-      | recordPath | Cadena | El valor del campo recordPath permite establecer el nombre de una comunicación interactiva. Puede establecer la ruta del campo de un registro como el valor del campo recordPath. Por ejemplo, si especifica /employee/Id, el valor del campo ID se convierte en el nombre de la comunicación interactiva correspondiente. El valor predeterminado es [UUID aleatorio](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
+      | recordPath | Cadena | El valor del campo recordPath permite establecer el nombre de una comunicación interactiva. Puede establecer la ruta del campo de un registro como el valor del campo recordPath. Por ejemplo, si especifica /employee/Id, el valor del campo ID se convierte en el nombre de la comunicación interactiva correspondiente. El valor predeterminado es un [UUID aleatorio](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | Booleano | Establezca el valor en False. Puede utilizar el parámetro usePrefillService para rellenar previamente la comunicación interactiva con los datos recuperados del servicio de relleno previo configurado para la comunicación interactiva correspondiente. Cuando usePrefillService se establece en True, los datos JSON de entrada (de cada registro) se tratan como argumentos FDM. El valor predeterminado es False. |
       | batchType | Cadena | Establezca el valor en PRINT, WEB o WEB_AND_PRINT. El valor predeterminado es WEB_AND_PRINT. |
       | locale | Cadena | Especifique la configuración regional de la comunicación interactiva de salida. El servicio predeterminado no utiliza la opción Configuración regional, pero puede crear un servicio personalizado para generar comunicaciones interactivas localizadas. El valor predeterminado es en_US. |
@@ -143,18 +143,18 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
 
 1. Cree una [carpeta inspeccionada](/help/forms/using/creating-configure-watched-folder.md) y configúrela para utilizar el servicio de la API por lotes:
    1. Inicie sesión en la instancia de autor de AEM Forms.
-   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta inspeccionada]**. Seleccionar **[!UICONTROL Nuevo]**.
+   1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta inspeccionada]**. Seleccione **[!UICONTROL Nuevo]**.
    1. Especifique el **[!UICONTROL Nombre]** y la **[!UICONTROL Ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
    1. Seleccione la opción **[!UICONTROL Servicio]** en el campo **[!UICONTROL Procesar archivo usando]**.
    1. Seleccione el servicio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** en el campo **[!UICONTROL Nombre de servicio]**.
-   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
+   1. Especifique un **[!UICONTROL Patrón de archivo de salida]**. Por ejemplo, el %F/ [patrón](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) especifica que la carpeta inspeccionada puede encontrar archivos de entrada en una subcarpeta de la carpeta Watched Folder\input.
 1. Configure los parámetros avanzados:
    1. Abra la pestaña **[!UICONTROL Avanzadas]** y agregue las siguientes propiedades personalizadas:
 
       | Propiedad | Tipo | Descripción |
       |--- |--- |--- |
       | templatePath | Cadena | Especifique la ruta de la plantilla de comunicación interactiva que desea utilizar. Por ejemplo, /content/dam/formsanddocuments/testsample/mediumic. Es una propiedad obligatoria. |
-      | recordPath | Cadena | El valor del campo recordPath permite establecer el nombre de una comunicación interactiva. Puede establecer la ruta del campo de un registro como el valor del campo recordPath. Por ejemplo, si especifica /employee/Id, el valor del campo ID se convierte en el nombre de la comunicación interactiva correspondiente. El valor predeterminado es [UUID aleatorio](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
+      | recordPath | Cadena | El valor del campo recordPath permite establecer el nombre de una comunicación interactiva. Puede establecer la ruta del campo de un registro como el valor del campo recordPath. Por ejemplo, si especifica /employee/Id, el valor del campo ID se convierte en el nombre de la comunicación interactiva correspondiente. El valor predeterminado es un [UUID aleatorio](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
       | usePrefillService | Booleano | Establezca el valor en True. El valor predeterminado es false. Cuando el valor se establece en true, la API por lotes lee los datos del modelo de datos de formulario configurado y los cumplimenta en la comunicación interactiva. Cuando usePrefillService se establece en True, los datos JSON de entrada (de cada registro) se tratan como argumentos FDM. |
       | batchType | Cadena | Establezca el valor en PRINT, WEB o WEB_AND_PRINT. El valor predeterminado es WEB_AND_PRINT. |
       | locale | Cadena | Especifique la configuración regional de la comunicación interactiva de salida. El servicio predeterminado no utiliza la opción Configuración regional, pero puede crear un servicio personalizado para generar comunicaciones interactivas localizadas. El valor predeterminado es en_US. |
@@ -177,7 +177,7 @@ Antes de implementar el servlet Java™, asegúrese de que tiene una comunicaci�
 
 1. Inicie sesión en la instancia de AEM y cree una comunicación interactiva. Para utilizar la comunicación interactiva mencionada en el código de ejemplo que aparece a continuación, [haga clic aquí](assets/SimpleMediumIC.zip).
 1. [Creación e implementación de un proyecto AEM mediante Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html) en la instancia de AEM.
-1. Añadir [AEM Forms Client SDK versión 6.0.12 o posterior](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) AEM en la lista de dependencias del archivo POM de su proyecto de. Por ejemplo,
+1. Agregue [AEM Forms AEM Client SDK versión 6.0.12 o posterior](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) en la lista de dependencias del archivo POM de su proyecto de la. Por ejemplo,
 
    ```xml
        <dependency>

@@ -24,7 +24,7 @@ Si la base de datos AEM Forms DB2® empieza a ejecutarse lentamente, la ejecuci�
 
    (Windows) Seleccione Inicio > Programas > IBM® DB2® > Herramientas generales de administración > Centro de control.
 
-   (Linux® y UNIX®) Desde un símbolo del sistema, escriba el `db2jcc` comando.
+   (Linux® y UNIX®) Desde un símbolo del sistema, escriba el comando `db2jcc`.
 
 1. En el árbol de objetos del Centro de control de DB2®, haga clic en Todas las bases de datos.
 1. Haga clic en la base de datos que ha creado para AEM Forms y haga clic en la carpeta Tablas.

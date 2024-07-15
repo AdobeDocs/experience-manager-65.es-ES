@@ -19,14 +19,14 @@ ht-degree: 21%
 
 ## Problema
 
-Después de instalar el paquete de servicio 19 de AEM Forms 6.5, al intentar utilizar el servicio Output, el servicio Forms o el servicio de documento de registro (DoR), puede producirse un error `Connection to failed service` error.
+Después de instalar el paquete de servicio 19 de AEM Forms 6.5, al intentar usar el servicio Output, el servicio Forms o el servicio de documento de registro (DoR), puede producirse un error de `Connection to failed service`.
 
 ## Solución
 
 Para resolver el problema:
 
 1. AEM Detenga la instancia de Forms de 6.5.
-1. Descargue e instale [Versión de 64 bits de los paquetes redistribuibles de Microsoft Visual C++ para Visual Studio 2015, 2017, 2019 y 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) AEM en el equipo en el que está instalado Forms de.5.
+1. Descargue e instale la versión de [64 bits de los paquetes redistribuibles de Microsoft AEM Visual C++ para Visual Studio 2015, 2017, 2019 y 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) en el equipo en el que esté instalado Forms de 6.50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 1. Reinicie el servidor de AEM Forms.
 
    >[!NOTE]

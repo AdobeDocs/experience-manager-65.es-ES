@@ -21,7 +21,7 @@ ht-degree: 78%
 
 En AEM Forms Workspace, los administradores ahora pueden acceder a las tareas asignadas a cualquier persona de su jerarquía (informes directos o indirectos) y realizar diversas acciones en ellas. Las tareas están disponibles en la pestaña Tareas pendientes de AEM Forms Workspace. Las acciones compatibles con las tareas de los informes directos son las siguientes:
 
-**Avanzar** - Reenviar una tarea desde un informe directo a cualquier usuario.
+**Reenviar**: reenvía una tarea desde un informe directo a cualquier usuario.
 
 **Reclamar** - Reclamar una tarea de un informe directo.
 

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 AEM AEM Al actualizar a la versión 6.3 de, se desinstalarán automáticamente los siguientes paquetes, según la versión en la que se haya realizado la actualización:
 
-**AEM.1:**
+AEM **6.1:**
 
 * org.eclipse.equinox.region, versión 1.1.0.v20120522-1841, activa
 * org.apache.sling.installer.factory.subsystems, versión 1.0.0, Active
@@ -40,7 +40,7 @@ AEM AEM Al actualizar a la versión 6.3 de, se desinstalarán automáticamente l
 * com.day.cq.dam.commons.nekohtml, versión 0.9.5, Activo
 * com.day.cq.mcm.cq-mcm-silverpop-integration, versión 1.2.2, Active
 
-**AEM.0:**
+AEM **6.0:**
 
 * org.apache.sling.discovery.impl, versión 1.1.6, Activo
 * com.adobe.granite.installer.patch, versión 0.4.0, Activo

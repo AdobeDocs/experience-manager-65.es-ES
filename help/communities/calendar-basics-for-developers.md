@@ -37,7 +37,7 @@ Esta página proporciona información esencial sobre cómo trabajar con la funci
    <td>cq.social.hbs.calendar</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td>/libs/social/calendar/components/hbs/calendar/calendar.hbs</td>
    <td> </td>
   </tr>
@@ -47,7 +47,7 @@ Esta página proporciona información esencial sobre cómo trabajar con la funci
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>consulte <a href="calendar.md">Uso de calendarios</a></td>
+   <td>vea <a href="calendar.md">Usar calendarios</a></td>
   </tr>
  </tbody>
 </table>
@@ -64,17 +64,17 @@ Esta página proporciona información esencial sobre cómo trabajar con la funci
 
 ### Función Calendario {#calendar-function}
 
-Una estructura de sitio de la comunidad que incluye [Función Calendario](functions.md#calendar-function) tiene un `calendar` componente configurado. La función Calendario admite la identificación de un [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
+Una estructura de sitio de comunidad que incluye la [función Calendario](functions.md#calendar-function) tiene configurado un componente `calendar`. La función Calendario admite la identificación de un [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
 
 ### Acceso a las publicaciones del calendario (UGC) {#accessing-calendar-posts-ugc}
 
-AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Resumen del proveedor de recursos de almacenamiento](srp.md) - introducción y descripción general del uso del repositorio
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - directrices de codificación
-* [Refactorización de SocialUtils](socialutils.md) - Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales
+* [SRP y UGC Essentials](srp-and-ugc.md): métodos y ejemplos de utilidades SRP
+* [Acceder a UGC con SRP](accessing-ugc-with-srp.md): directrices de codificación
+* [Refactorización de SocialUtils](socialutils.md): asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales

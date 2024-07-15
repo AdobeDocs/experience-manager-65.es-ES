@@ -25,4 +25,4 @@ AEM Con la funcionalidad táctil que alcanza la paridad con la IU clásica y que
 
 >[!NOTE]
 >
->Para obtener más información sobre el estado de la paridad de las características con la IU clásica, consulte la [Paridad de funciones de IU táctil](/help/release-notes/touch-ui-features-status.md) documento.
+>Para obtener más información sobre el estado de la paridad de características con la IU clásica, consulte el documento [Paridad de características de la IU táctil](/help/release-notes/touch-ui-features-status.md).

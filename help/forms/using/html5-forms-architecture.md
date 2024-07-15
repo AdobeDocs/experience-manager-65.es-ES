@@ -172,7 +172,7 @@ Los perfiles son nodos de recursos de Sling que representan un formulario o una 
 
 #### Procesadores de perfiles {#profile-renderers}
 
-El nodo Perfil tiene una propiedad **sling:resourceSuperType** con el valor **xfaforms/profile**. Esta propiedad envía internamente solicitudes al script de Sling para los nodos de perfil en **/libs/xfaforms/profile** carpeta. Estos scripts son páginas JSP, las cuales son contenedores para recopilar los formularios HTML y los artefactos JS/CSS requeridos. Las páginas incluyen referencias a:
+El nodo Perfil tiene una propiedad **sling:resourceSuperType** con el valor **xfaforms/profile**. Esta propiedad envía internamente solicitudes al script de Sling para los nodos de perfil en la carpeta **/libs/xfaforms/profile**. Estos scripts son páginas JSP, las cuales son contenedores para recopilar los formularios HTML y los artefactos JS/CSS requeridos. Las páginas incluyen referencias a:
 
 * **xfaforms.I18N.&lt;locale>**: esta biblioteca contiene datos localizados.
 * **xfaforms.profile**: esta biblioteca contiene la implementación para el motor de diseño y los scripts XFA.

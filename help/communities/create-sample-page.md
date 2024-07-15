@@ -22,43 +22,43 @@ AEM Como en las comunidades de 6.1, la forma más sencilla de crear una página 
 
 Esto incluye un componente parsys para que pueda [habilitar componentes para la creación](basics.md#accessing-communities-components).
 
-Otra opción para la exploración con componentes de muestra es utilizar las funciones presentadas en la variable [Guía de componentes de la comunidad](components-guide.md).
+Otra opción para la exploración con componentes de ejemplo es utilizar las características presentadas en la [Guía de componentes de la comunidad](components-guide.md).
 
 ## Crear un sitio de la comunidad {#create-a-community-site}
 
 Esto es similar a crear un sitio descrito en [Introducción a AEM Communities](getting-started.md).
 
-La principal diferencia es que este tutorial crea una plantilla del sitio de la comunidad que solo contiene el [Page, función](functions.md#page-function) para crear un sitio de comunidad sencillo. Esto se realiza sin necesidad de otras funciones (además de las funciones precableadas básicas para todos los sitios de la comunidad).
+La diferencia principal es que este tutorial crea una plantilla de sitio de comunidad que solo contiene la [función Página](functions.md#page-function) para crear un sitio de comunidad simple. Esto se realiza sin necesidad de otras funciones (además de las funciones precableadas básicas para todos los sitios de la comunidad).
 
 ### Crear nueva plantilla del sitio {#create-new-site-template}
 
-Para empezar, cree un [plantilla del sitio de la comunidad](sites.md).
+Para empezar, cree una [plantilla del sitio de la comunidad](sites.md) sencilla.
 
-En la navegación global en una instancia de autor, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Communities]** > **[!UICONTROL Plantillas de sitio]**.
+Desde la navegación global en una instancia de autor, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Plantillas de sitio]**.
 
 ![create-site-template](assets/create-site-template1.png)
 
 * Seleccionar `Create button`
 * INFORMACIÓN BÁSICA
 
-   * `Name`: Plantilla de una sola página
+   * `Name`: plantilla de una sola página
    * `Description`: una plantilla que consta de una sola función Página.
    * Seleccionar `Enabled`
 
-![site-template-editor](assets/site-template-editor.png)
+![editor-plantilla-sitio](assets/site-template-editor.png)
 
 * ESTRUCTURA
 
-   * Arrastre una `Page` al Generador de plantillas
+   * Arrastre una función `Page` al Generador de plantillas
    * Para Detalles de la función de configuración, introduzca
 
-      * `Title`: Una página
+      * `Title`: una sola página
       * `URL`: página
 
-![site-template-editor-structure](assets/site-template-editor1.png)
+![estructura-editor-de-plantillas-de-sitio](assets/site-template-editor1.png)
 
-* Seleccionar **`Save`** para la configuración
-* Seleccionar **`Save`** para la plantilla del sitio
+* Seleccione **`Save`** para la configuración
+* Seleccione **`Save`** para la plantilla del sitio
 
 ### Crear nuevo sitio de la comunidad {#create-new-community-site}
 
@@ -68,15 +68,15 @@ Después de crear la plantilla del sitio, en navegación global, seleccione **[!
 
 ![create-community-site](assets/create-community-site1.png)
 
-* Seleccionar **`Create`** icono
+* Icono Seleccionar **`Create`**
 
 * Paso `1 - Site Template`
 
-   * `Title`: Sitio de comunidad simple
-   * `Description`: sitio de la comunidad que consta de una sola página para la experimentación.
+   * `Title`: sitio de comunidad simple
+   * `Description`: sitio de la comunidad que consta de una sola página para experimentación.
    * `Community Site Root: (leave blank)`
    * `Community Site Base Language: English`
-   * `Name`: muestra
+   * `Name`: ejemplo
 
       * url = http://localhost:4502/content/sites/sample
 
@@ -98,24 +98,24 @@ Después de crear la plantilla del sitio, en navegación global, seleccione **[!
 
   ![create-community-site](assets/create-community-site.png)
 
-## Publicación del sitio {#publish-the-site}
+## Publish el sitio {#publish-the-site}
 
-![publish-site](assets/publish-site.png)
+![sitio de publicación](assets/publish-site.png)
 
-Desde el [consola sitios de la comunidad](sites-console.md), seleccione el icono de publicación para publicar el sitio, de forma predeterminada, en http://localhost:4503.
+En la consola [sitios de la comunidad](sites-console.md), seleccione el icono Publicar para publicar el sitio, de forma predeterminada en http://localhost:4503.
 
 ## Abrir el sitio en Autor en modo de edición {#open-the-site-on-author-in-edit-mode}
 
-![de sitio abierto](assets/open-site.png)
+![sitio abierto](assets/open-site.png)
 
 Seleccione el icono de abrir sitio para poder ver el sitio en modo de edición.
 
-La URL es [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
+La dirección URL es [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
-![Author-Site](assets/author-site.png)
+![sitio-autor](assets/author-site.png)
 
 En la página de inicio simple, es posible ver lo que está preconfigurado a través de las funciones y plantillas de la comunidad, y jugar con la adición y configuración de componentes de la comunidad.
 
-## Ver sitio al publicar {#view-site-on-publish}
+## Ver sitio en Publish {#view-site-on-publish}
 
-Después de publicar la página, ábrala en el [instancia de publicación](http://localhost:4503/content/sites/sample/en.html) para experimentar con las funciones como visitante anónimo del sitio, miembro conectado o administrador. El vínculo Administración visible en el entorno de creación no aparece en el entorno de publicación a menos que un administrador inicie sesión.
+Después de publicar la página, ábrala en la [instancia de publicación](http://localhost:4503/content/sites/sample/en.html) para experimentar con las características como visitante anónimo del sitio, miembro con sesión iniciada o administrador. El vínculo Administración visible en el entorno de creación no aparece en el entorno de publicación a menos que un administrador inicie sesión.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Sincronizar directorios {#synchronizing-directories}
 
-Para sincronizar dominios, puede elegir realizar una sincronización manual o programada. A *sincronización manual* sincroniza cualquier dominio seleccionado. A *sincronización programada* sincroniza todos los dominios.
+Para sincronizar dominios, puede elegir realizar una sincronización manual o programada. Una *sincronización manual* sincroniza los dominios seleccionados. Una *sincronización programada* sincroniza todos los dominios.
 
 La sincronización de directorios se utiliza para extraer detalles de los servidores de directorios especificados en la configuración de directorios de la base de datos de Administración de usuarios. Posteriormente, también puede realizar una sincronización manual si se producen cambios o actualizaciones en los servidores de directorios. Por ejemplo, puede realizar una sincronización manual si se agregan usuarios y grupos o si se realizan cambios en la cuenta de un usuario.
 
@@ -36,7 +36,7 @@ También puede especificar si desea insertar información de usuarios y grupos e
 
 >[!NOTE]
 >
->Adobe LiveCycle® ® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Consulte [Documento de ciclo vital de producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe LiveCycle® ® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Ver [documento de ciclo de vida del producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Habilitar sincronización de directorios delta {#enable-delta-directory-synchronization}
 
@@ -54,7 +54,7 @@ Administración de usuarios realiza los siguientes pasos cuando está habilitada
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. En Sincronización delta, active la casilla de verificación y haga clic en Guardar.
-1. Edite la configuración de directorio para cada uno de los dominios de empresa que utilizarán la función de sincronización de directorios delta. En las páginas Configuración de usuario y Configuración de grupo, busque la opción Modificar marca de tiempo e introduzca `modify TimeStamp` como el valor. Para obtener más información sobre la edición de dominios empresariales, consulte [Editar y convertir dominios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+1. Edite la configuración de directorio para cada uno de los dominios de empresa que utilizarán la función de sincronización de directorios delta. En las páginas Configuración de usuario y Configuración de grupo, busque la opción Modificar marca de tiempo y escriba `modify TimeStamp` como valor. Para obtener más información sobre cómo editar dominios empresariales, consulte [Editar y convertir dominios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Habilitar o deshabilitar el registro detallado durante la sincronización {#enable-or-disable-detailed-logging-during-synchronization}
 

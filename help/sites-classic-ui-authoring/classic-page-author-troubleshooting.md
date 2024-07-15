@@ -22,21 +22,21 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 >[!NOTE]
 >
->Cuando experimenta problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) para su instancia (versión y paquetes de servicio).
+>Cuando tenga problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) de su instancia (versiones y paquetes de servicio).
 
 >[!NOTE]
 >
->AEM Los usuarios que tienen privilegios de administrador y que desean solucionar problemas con la solución de problemas con la solución de problemas con la solución de problemas, pueden utilizar los métodos de solución de problemas descritos en [AEM Solución de problemas (para administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, consulte al administrador del sistema para obtener información sobre la solución de problemas de la solución de problemas de la.
+>AEM AEM Los usuarios que tengan privilegios de administrador y que deseen solucionar problemas con los recursos de administración, pueden utilizar los métodos de solución de problemas descritos en [Solución de problemas de los usuarios (para los administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, consulte al administrador del sistema para obtener información sobre la solución de problemas de la solución de problemas de la.
 
 ## La versión anterior de la página sigue en el sitio publicado {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Ha realizado cambios en una página y replicado la página en el sitio de publicación, pero la variable *viejo* La versión de la página se sigue mostrando en el sitio de publicación.
+   * Ha realizado cambios en una página y replicado la página en el sitio de publicación, pero la versión *antigua* de la página se sigue mostrando en el sitio de publicación.
 
 * **Motivo**:
 
-   * Esto puede tener varias causas, la mayoría de las veces la caché (el explorador local o Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
+   * Esto puede tener varias causas, la mayoría de las veces la memoria caché (el explorador local o el Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
 
 * **Soluciones**:
 
@@ -69,11 +69,11 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Problema:**
 
-   * Al usar el **Buscar y reemplazar** opción puede ocurrir que no todas las instancias de la variable `find` Los términos se reemplazan en una página.
+   * Al usar la opción **Buscar y reemplazar**, puede ocurrir que no todas las instancias del término `find` se reemplacen en una página.
 
 * **Motivo**:
 
-   * La capacidad de **Buscar y reemplazar** depende de cómo se guarde el contenido y de si se puede buscar. Por ejemplo, un texto de blog se almacena en `jcr:text` propiedad que no está configurada para ser buscada. El ámbito predeterminado del servlet de búsqueda y reemplazo cubre las siguientes propiedades:
+   * La capacidad de **Buscar y reemplazar** depende de cómo se guarde el contenido y de si se puede buscar en él. Por ejemplo, el texto de un blog se almacena en la propiedad `jcr:text`, que no está configurada para ser buscada. El ámbito predeterminado del servlet de búsqueda y reemplazo cubre las siguientes propiedades:
 
       * `jcr:title`
       * `jcr:description`
@@ -82,6 +82,6 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Solución**:
 
-   * Estas definiciones se pueden cambiar con la configuración de **Día en que CQ WCM encuentre el servlet de reemplazo** uso del **Consola web**; por ejemplo, en
+   * Estas definiciones se pueden cambiar con la configuración de **Day CQ WCM Find Replace Servlet** mediante la **consola web**; por ejemplo, en
 
      `http://localhost:4502/system/console/configMgr`

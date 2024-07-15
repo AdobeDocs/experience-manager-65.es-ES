@@ -33,7 +33,7 @@ Seleccione el botón Sincronizar ![sync-app](assets/sync-app.png) en la esquina 
 
 **Para modificar la frecuencia de sincronización**
 
-1. Para ir a la pantalla Configuración, seleccione el botón de menú en la esquina superior izquierda de la pantalla Inicio y, a continuación, seleccione **Configuración**.
+1. Para ir a la pantalla Configuración, selecciona el botón de menú en la esquina superior izquierda de la pantalla Inicio y, a continuación, selecciona **Configuración**.
 1. En la pantalla Configuración, seleccione la pestaña General.
 
    ![Configuración de frecuencia de sincronización en la ventana Configuración general](assets/gen-settings-2.png)

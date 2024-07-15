@@ -3,7 +3,7 @@ title: Mensajes de error sobre API obsoletas en registros de errores
 description: Mensajes de error sobre API obsoletas en registros de errores
 source-git-commit: b05666883645ca11784292e4bfb5bf9c1e35a43b
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '94'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ El problema se aplica a las siguientes versiones:
 ## Problema {#issue}
 
 * Los siguientes mensajes de error aparecen en el archivo error.log:
-   ` *WARN* [default task-36] org.apache.jackrabbit.oak.spi.security.principal.AclGroupDeprecation use of deprecated java.acl.Group-related API - this method is going to be removed in future Oak releases - see OAK-7358 for details` (NPR-38282)
+  ` *WARN* [default task-36] org.apache.jackrabbit.oak.spi.security.principal.AclGroupDeprecation use of deprecated java.acl.Group-related API - this method is going to be removed in future Oak releases - see OAK-7358 for details` (NPR-38282)
 
 ## Resolución {#workaround}
 

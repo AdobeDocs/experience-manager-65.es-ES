@@ -99,7 +99,7 @@ Ejecute los siguientes comandos de base de datos para poder exportar los datos d
 
 >[!NOTE]
 >
->Los siguientes comandos utilizan nombres de tabla de base de datos en bases de datos My SQL y IBM® DB2®. Cuando ejecute estos comandos en bases de datos de Oracle y MS® SQL, reemplace `EdcPolicySetPrincipalEntity` con `EdcPolicySetPrincipalEnt` en los comandos.
+>Los siguientes comandos utilizan nombres de tabla de base de datos en bases de datos My SQL y IBM® DB2®. Cuando ejecute estos comandos en bases de datos de Oracle y MS® SQL, reemplace `EdcPolicySetPrincipalEntity` por `EdcPolicySetPrincipalEnt` en los comandos.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -160,7 +160,7 @@ Haga lo siguiente para eliminar los datos de seguridad del documento para un ID 
 
    >[!NOTE]
    >
-   >Elimine el blob completo dentro de la `Principal` para un ID principal o el XML de directiva puede dañarse o inutilizarse.
+   >Elimine el blob completo dentro de la etiqueta `Principal` para un ID principal o el XML de directiva podría dañarse o inutilizarse.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -193,7 +193,7 @@ Haga lo siguiente para eliminar los datos de seguridad del documento para un ID 
 
    **Usar la consola de administración**
 
-   1. Inicie sesión como administrador en la consola de administración de Forms JEE en https://[*server*]:[*puerto*]/adminui.
+   1. Inicie sesión como administrador en la consola de administración de Forms JEE en https://[*server*]:[*port*]/adminui.
    1. Navegue hasta **[!UICONTROL Servicios > Seguridad de documentos > Conjuntos de directivas]**.
    1. Abra un conjunto de directivas y elimine el usuario de la directiva.
 
@@ -201,7 +201,7 @@ Haga lo siguiente para eliminar los datos de seguridad del documento para un ID 
 
    Los usuarios de seguridad de documentos que tengan permisos para crear directivas personales pueden eliminar datos de usuario de sus directivas. Para ello:
 
-   1. Los usuarios que tengan directivas personales deben iniciar sesión en la página web de seguridad de documentos en https://[*server*]:[*puerto*]/edc.
+   1. Los usuarios que tengan directivas personales deben iniciar sesión en su página web de seguridad de documentos en https://[*server*]:[*port*]/edc.
    1. Navegar hasta **[!UICONTROL Servicios > Seguridad de documentos > Mis directivas]**.
    1. Abrir una directiva y eliminar el usuario de ella.
 

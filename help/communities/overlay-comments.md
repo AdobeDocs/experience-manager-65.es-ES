@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Superponer componentes de Communities {#overlay-communities-components}
 
-La intención de [superposición](/help/communities/client-customize.md#overlays) un componente predeterminado es modificar el aspecto o el comportamiento de un componente globalmente, para todas las referencias relativas al componente. Se basa en la naturaleza de sling para resolver en la carpeta /apps antes de buscar en la carpeta /libs. Por lo tanto, la ruta al componente es idéntica a la ruta al componente predeterminado, excepto que se encuentra en la carpeta /apps y no en la carpeta /libs.
+La intención de [superponer](/help/communities/client-customize.md#overlays) un componente predeterminado es modificar el aspecto o el comportamiento de un componente globalmente, para todas las referencias relativas al componente. Se basa en la naturaleza de sling para resolver en la carpeta /apps antes de buscar en la carpeta /libs. Por lo tanto, la ruta al componente es idéntica a la ruta al componente predeterminado, excepto que se encuentra en la carpeta /apps y no en la carpeta /libs.
 
 ## Ejemplos {#example}
 
-**Componente Comentarios de superposición**
+**Componente de comentarios de superposición**
 
 Supongamos que desea modificar la función de comentarios para que coincida con el diseño del sitio web, cambiando el encabezado del comentario para que ya no muestre el avatar de ningún comentario. Las soluciones para ocultar el avatar utilizan CSS o, como se describe aquí, superponen header.jsp en la carpeta de aplicaciones para que el HTML que contiene el avatar nunca se envíe al cliente.
 
@@ -33,11 +33,11 @@ Para superponer comentarios, debe:
 1. [Crear nodos](/help/communities/overlay-create-nodes.md)
 1. [Modificar el aspecto](/help/communities/overlay-alter-appearance.md)
 
-**Correos electrónicos de notificaciones superpuestas**
+**Correos electrónicos de notificaciones de superposición**
 
-Supongamos que desea personalizar el mensaje de las notificaciones por correo electrónico, puede hacerlo [superposición](/help/communities/client-customize.md#overlays) las plantillas en `/libs/settings/community/templates/email/html`.
+Supongamos que desea personalizar el mensaje de las notificaciones por correo electrónico, para ello, [superponga](/help/communities/client-customize.md#overlays) las plantillas en `/libs/settings/community/templates/email/html`.
 
-Por ejemplo, supongamos que desea editar las notificaciones de las menciones por correo electrónico (para un componente específico de Communities en el que se crea UGC). En estos casos, añada un **if** condición para verbo **mencionar** en las plantillas de los componentes para los que habilitó la variable **@mentions** soporte.
+Por ejemplo, supongamos que desea editar las notificaciones de las menciones por correo electrónico (para un componente específico de Communities en el que se crea UGC). En estos casos, agregue una condición **if** para el verbo **mención** en las plantillas de los componentes para los que habilitó la compatibilidad con **@mentions**.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -45,4 +45,4 @@ Por ejemplo, supongamos que desea editar las notificaciones de las menciones por
 {{/equals}}\
 ```
 
-Para modificar la plantilla de notificaciones de correo electrónico para @mention en los comentarios del blog, coloque la plantilla predeterminada en: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`
+Para modificar la plantilla de notificaciones de correo electrónico para @mention en comentarios de blog, coloque la plantilla predeterminada en: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`

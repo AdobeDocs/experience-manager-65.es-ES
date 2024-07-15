@@ -290,7 +290,7 @@ En las instancias de autor, los valores predeterminados son:
 Estos:
 
 * no se puede sobrescribir con una configuración OSGi
-* puede sobrescribirse con una solicitud que defina la configuración del encabezado HTTP mediante cURL; debe incluir la configuración adecuada para `cache-control` y/o `surrogate-control`; para ver ejemplos, consulte [Administración de caché en el nivel de consulta persistente](#cache-persisted-query-level)
+* se puede sobrescribir con una solicitud que defina la configuración del encabezado HTTP mediante cURL; debe incluir la configuración adecuada para `cache-control` o `surrogate-control`; para ver ejemplos, vea [Administrar caché en el nivel de consulta persistente](#cache-persisted-query-level)
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -353,7 +353,7 @@ El `cache-control` se puede configurar en el momento de la creación (PUT) o má
 
 ### Administración de la caché con una configuración OSGi {#cache-osgi-configration}
 
-Para administrar la caché globalmente, puede hacer lo siguiente [configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para el **Configuración del servicio de consultas persistentes**. De lo contrario, esta configuración de OSGi utiliza el [valores predeterminados para instancias de publicación](#publish-instances).
+Para administrar la caché globalmente, puede [configurar las opciones de OSGi](/help/sites-deploying/configuring-osgi.md) para la **configuración del servicio de consultas persistentes**. De lo contrario, esta configuración de OSGi usa los [valores predeterminados para las instancias de publicación](#publish-instances).
 
 >[!NOTE]
 >
@@ -403,9 +403,9 @@ Para crear un paquete, haga lo siguiente:
 1. Cree un paquete tocando **Crear paquete**. Se abrirá un cuadro de diálogo para definir el paquete.
 1. En el cuadro de diálogo Definición de paquete, en **General** introduzca un **Nombre** como “wknd-persistent-queries”.
 1. Escriba un número de versión como “1.0”.
-1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para `wknd` configuración la ruta completa será `/conf/wknd/settings/graphql/persistentQueries`.
-1. Seleccionar **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
-1. Seleccione el **Generar** en la definición del paquete recién creada.
+1. En **Filtros**, agregue un nuevo **Filtro**. Utilice el Buscador de rutas para seleccionar la carpeta `persistentQueries` debajo de la configuración. Por ejemplo, para la configuración `wknd`, la ruta completa será `/conf/wknd/settings/graphql/persistentQueries`.
+1. Seleccione **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
+1. Seleccione el botón **Generar** en la definición del paquete recién creada.
 
 Una vez creado el paquete, puede hacer lo siguiente:
 

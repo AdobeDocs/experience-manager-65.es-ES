@@ -23,7 +23,7 @@ Administrador de varios sitios (MSM) le permite utilizar el mismo contenido del 
 * Con MSM puede lograr lo siguiente:
 
    * Crear contenido una vez y después
-   * Copie este contenido en otras áreas y vuelva a utilizarlo ([live copies](#live-copies)) del mismo sitio u otros.
+   * Copie este contenido y reúna este contenido en otras áreas ([Live Copies](#live-copies)) del mismo sitio u otros.
 
 * A continuación, MSM mantiene las relaciones (activas) entre el contenido de origen y sus Live Copies para lo siguiente:
 
@@ -124,21 +124,21 @@ Se puede acceder directamente a MSM desde la IU mediante varias opciones desde l
 
 * **Crear sitio** (**Sitios**)
 
-   * MSM le ayuda a administrar varios sitios web que comparten contenido común. Por ejemplo: los sitios web suelen estar destinados a audiencias internacionales, de modo que la mayor parte del contenido es común en todos los países, con un subconjunto del contenido específico de cada país. MSM le permite [crear live copies que actualicen automáticamente uno o varios sitios en función del sitio de origen](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Esto también le ayuda a aplicar una estructura base común, utilizar el contenido común en varios sitios, mantener un aspecto y un enfoque comunes y enfocar los esfuerzos en administrar el contenido que difiere entre los sitios.
+   * MSM le ayuda a administrar varios sitios web que comparten contenido común. Por ejemplo: los sitios web suelen estar destinados a audiencias internacionales, de modo que la mayor parte del contenido es común en todos los países, con un subconjunto del contenido específico de cada país. MSM le permite [crear Live Copies que actualicen automáticamente uno o más sitios según su sitio de origen](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Esto también le ayuda a aplicar una estructura base común, utilizar el contenido común en varios sitios, mantener un aspecto y un enfoque comunes y enfocar los esfuerzos en administrar el contenido que difiere entre los sitios.
    * Requiere una configuración de modelo predefinida para especificar el origen.
    * Crea una Live Copy del origen (predefinido).
-   * Proporciona al usuario la **Despliegue** botón.
+   * Proporciona al usuario el botón **Despliegue**.
 
 * **Creación de Live Copy** (**Sites**)
 
-   * MSM le permite [crear una live copy ad-hoc (única) de una página o subrama individual de un sitio web](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); por ejemplo, duplicar una subrama para proporcionar información acerca de una versión nueva o actualizada de un producto.
+   * MSM le permite [crear una Live Copy ad-hoc (única) de una página o subrama individual de un sitio web](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); por ejemplo, duplicar una subrama para proporcionar información sobre una versión nueva o actualizada de un producto.
    * Crea una Live Copy ad-hoc (no se requiere configuración de modelo).
    * Se puede utilizar para crear (inmediatamente) una Live Copy de cualquier página o rama.
    * Requiere **Sincronizar** (no proporciona el botón **Despliegue**).
 
 * **Ver propiedades** (**Sitios**)
 
-   * Si procede, esta opción le ayuda a [monitorización de live copy](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy) facilitando información sobre los **Live Copy** y o **Modelo**.
+   * Si corresponde, esta opción le ayuda a [monitorizar Live Copy](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy) al proporcionar información sobre **Live Copy** y o **modelo** relacionados.
 
 * **Referencias** (**Sitios**)
 
@@ -146,15 +146,15 @@ Se puede acceder directamente a MSM desde la IU mediante varias opciones desde l
 
 * **Información general de Live Copy** (**Sites**)
 
-   * Esta consola le permite [vea y administre su modelo y sus live copies](/help/sites-administering/msm-livecopy-overview.md).
+   * Esta consola le permite [ver y administrar su modelo y sus Live Copies](/help/sites-administering/msm-livecopy-overview.md).
 
 * **Modelos** (**Herramientas** - **Sites**)
 
-   * Esta consola le permite [crear y administrar las configuraciones de modelo](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+   * Esta consola le permite [crear y administrar sus configuraciones de modelo](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
->MSM se puede utilizar con ambas páginas y [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) ya que estos fragmentos forman parte de una experiencia (página).
+>MSM se puede usar con ambas páginas y [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md), ya que estos fragmentos son parte de una experiencia (página).
 
 >[!NOTE]
 >
@@ -188,12 +188,12 @@ Como introducción, la siguiente tabla proporciona una descripción general de l
   </tr>
   <tr>
    <td><strong>Relación activa</strong><br /> </td>
-   <td>Definición efectiva de la herencia para un recurso determinado; las conexiones entre el origen y las Live Copies.<br /> </td>
+   <td>Definición efectiva de la herencia para un recurso determinado; las conexiones entre el origen y Live Copies.<br /> </td>
    <td>Garantiza que los cambios en el origen se puedan sincronizar con la Live Copy.</td>
   </tr>
   <tr>
    <td><strong>Modelo</strong></td>
-   <td>Sinónimo de origen.</td>
+   <td>Sinónimo de Source.</td>
    <td>Se puede definir mediante una configuración de modelo.</td>
   </tr>
   <tr>
@@ -203,12 +203,12 @@ Como introducción, la siguiente tabla proporciona una descripción general de l
   </tr>
   <tr>
    <td><strong>Sincronización</strong></td>
-   <td>Término genérico para la sincronización de contenido entre el origen y las Live Copies (por ambos) <strong>Despliegue</strong> y <strong>Sincronizar</strong>).</td>
+   <td>Término genérico para la sincronización de contenido entre el origen y las Live Copies (por <strong>Despliegue</strong> y <strong>Sincronizar</strong>).</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Despliegue</strong><br /> </td>
-   <td>Sincroniza desde el origen a la Live Copy.<br /> Se puede activar mediante un autor (en una página de modelo) o mediante un evento del sistema (tal como se define en la configuración de despliegue).</td>
+   <td>Sincroniza desde el origen a la Live Copy.<br />: se puede activar mediante un autor (en una página de modelo) o mediante un evento del sistema (tal como se define en la configuración de despliegue).</td>
    <td> </td>
   </tr>
   <tr>
@@ -240,7 +240,7 @@ Como introducción, la siguiente tabla proporciona una descripción general de l
    <td><strong>Restablecer</strong></td>
    <td><p>Restablecer una página de Live Copy a:</p>
     <ul>
-     <li>Elimine todas las cancelaciones de herencia y<br /> </li>
+     <li>Quitar todas las cancelaciones de herencia y <br /> </li>
      <li>Devuelva la página al mismo estado que la página de origen.</li>
     </ul> <p>Restablecer afecta a los cambios realizados en las propiedades de la página, el sistema de párrafos y los componentes.</p> </td>
    <td> </td>
@@ -260,7 +260,7 @@ Como introducción, la siguiente tabla proporciona una descripción general de l
 
 >[!NOTE]
 >
->Consulte [Información general sobre la API de Java™](/help/sites-developing/extending-msm.md#overview-of-the-java-api) para los nombres de objeto.
+>Consulte [Información general de la API de Java™](/help/sites-developing/extending-msm.md#overview-of-the-java-api) para ver los nombres de los objetos.
 
 ## Live Copies {#live-copies}
 
@@ -279,9 +279,9 @@ En el ejemplo anterior, `/content/we-retail/language-masters/en` es la ubicació
 
 * El contenido siguiente `/content/we-retail/language-masters/en` es el origen.
 
-* El contenido siguiente `/content/we-retail/language-masters/en` se copia debajo de `/content/we-retail/us/en/`, `/content/we-retail/gb/en`, `/content/we-retail/ca/en`, y `/content/we-retail/au/en` nodos. Estas son las Live Copies.
+* El contenido siguiente a `/content/we-retail/language-masters/en` se copia debajo de los nodos `/content/we-retail/us/en/`, `/content/we-retail/gb/en`, `/content/we-retail/ca/en` y `/content/we-retail/au/en`. Estas son las Live Copies.
 
-* Los autores pueden cambiar las páginas a continuación `/content/we-retail/language-masters/en`.
+* Los autores pueden cambiar de página por debajo de `/content/we-retail/language-masters/en`.
 * Cuando se activa, MSM sincroniza estos cambios con las Live Copies.
 
 ### Live Copies: composición {#live-copies-composition}
@@ -319,7 +319,7 @@ AEM AEM Cuando crea una Live Copy en, puede ver y navegar por la rama de Live Co
 
 #### Live Copies anidadas {#nested-live-copies}
 
-Cuando usted (o un proceso) crea un [página dentro de una live copy existente](#live-copy-with-non-live-copy-pages)Sin embargo, esta nueva página también se puede configurar como una Live Copy de un modelo diferente. Esto se conoce como Live Copy anidada, donde el comportamiento de la segunda Live Copy (interna) se ve afectado por la primera Live Copy (externa) de la siguiente manera:
+Cuando usted (o un proceso) crea una página [dentro de una Live Copy existente](#live-copy-with-non-live-copy-pages), esta nueva página también se puede configurar como una Live Copy de un modelo diferente. Esto se conoce como Live Copy anidada, donde el comportamiento de la segunda Live Copy (interna) se ve afectado por la primera Live Copy (externa) de la siguiente manera:
 
 * Se puede continuar con un despliegue profundo activado para Live Copy de nivel superior en la Live Copy anidada (por ejemplo, si el déclencheur coincide).
 * Cualquier vínculo entre los orígenes se reescribe dentro de las Live Copies.
@@ -336,14 +336,14 @@ Cuando usted (o un proceso) crea un [página dentro de una live copy existente](
 
 Una Live Copy se conoce como Live Copy apilada cuando se crea como el elemento secundario de una Live Copy superficial. Se comporta de la misma manera que una [Live Copy anidada](#nested-live-copies).
 
-### Fuentes, modelos y configuraciones de modelo {#source-blueprints-and-blueprint-configurations}
+### Configuraciones de Source, modelos y modelos {#source-blueprints-and-blueprint-configurations}
 
 Cualquier página o rama de páginas puede utilizarse como origen de una Live Copy.
 
 Sin embargo, MSM también le permite definir una configuración de modelo que especifica una ruta de origen. Los beneficios de utilizar una configuración de modelo son los siguientes:
 
-* Permiten que el autor use **Despliegue** opción en un modelo: para insertar (explícitamente) modificaciones en live copies que hereden de este modelo.
-* Permitir que el autor utilice **Crear sitio**; esto permite al usuario seleccionar idiomas fácilmente y configurar la estructura de la live copy.
+* Permiten que el autor use la opción **Despliegue** en un modelo para insertar (explícitamente) modificaciones en Live Copies que hereden de este modelo.
+* Permitir que el autor use **Crear sitio**; esto permite al usuario seleccionar idiomas fácilmente y configurar la estructura de la Live Copy.
 * Defina una configuración de despliegue predeterminada para Live Copies que tengan una relación con el modelo.
 
 El origen de una Live Copy pueden ser tanto páginas normales como páginas incluidas en una configuración de modelo; ambos son casos de uso válidos.
@@ -365,15 +365,15 @@ El origen forma el modelo para la Live Copy. El modelo se define al:
 Un despliegue es la acción central de MSM que sincroniza Live Copies con su origen. Puede realizar despliegues manualmente o pueden producirse automáticamente:
 
 * Una [configuración de despliegue](#rollout-configurations) puede definirse de modo que [eventos](/help/sites-administering/msm-sync.md#rollout-triggers) específicos puedan provocar un despliegue automáticamente.
-* Al crear una página de modelo, puede utilizar el [Despliegue](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) para insertar los cambios en live copy.
+* Al crear una página de modelo, puede usar el comando [Despliegue](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) para insertar cambios en la Live Copy.
 
-  **El Despliegue** El comando está disponible en una página de modelo a la que se hace referencia mediante una configuración de modelo.
+  **El comando Despliegue** está disponible en una página de modelo a la que hace referencia una configuración de modelo.
 
   ![Despliegue](assets/chlimage_1-370.png)
 
-* Al crear una página de Live Copy, puede utilizar el complemento [Sincronizar](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) para extraer cambios del origen a la live copy.
+* Al crear una página de Live Copy, puede usar el comando [Sincronizar](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) para extraer cambios del origen a la Live Copy.
 
-  El **Sincronizar** el comando siempre está disponible en la página live copy (independientemente de si la página de origen/modelo está incluida en una configuración de modelo).
+  El comando **Sincronizar** siempre está disponible en la página de Live Copy (independientemente de si la página de origen/modelo está incluida en una configuración de modelo).
 
   ![Sincronizar](assets/chlimage_1-371.png)
 
@@ -397,19 +397,19 @@ Las configuraciones de despliegue se pueden reutilizar, de modo que más de una 
 
 ### Despliegue de conflictos {#rollout-conflicts}
 
-AEM Los despliegues se pueden complicar, especialmente cuando los autores editan contenido tanto en el origen como en la Live Copy, por lo que es útil tener en cuenta cómo se gestiona el contenido en los informes de forma más rápida y sencilla. En este caso, puede resultar útil tener en cuenta las posibles complicaciones que se pueden dar a la creación de contenido [conflictos que pueden producirse durante el despliegue](/help/sites-administering/msm-rollout-conflicts.md).
+AEM Los despliegues se pueden complicar, especialmente cuando los autores editan contenido tanto en el origen como en la Live Copy, por lo que es útil tener en cuenta cómo gestiona el usuario los [conflictos que puedan producirse durante el despliegue](/help/sites-administering/msm-rollout-conflicts.md).
 
 ### Suspender y cancelar la herencia y sincronización {#suspending-and-cancelling-inheritance-and-synchronization}
 
 Cada página y componente de una Live Copy está asociado con su página de origen y componente a través de una relación dinámica. La relación dinámica configura la sincronización de contenido de Live Copy desde el origen.
 
-Puede **Suspender** la herencia live copy de una página live copy para poder cambiar las propiedades y los componentes de la página. Al suspender la herencia, las propiedades y los componentes de la página ya no se sincronizan con el origen.
+Puede **Suspender** la herencia de Live Copy de una página de Live Copy para poder cambiar las propiedades y los componentes de la página. Al suspender la herencia, las propiedades y los componentes de la página ya no se sincronizan con el origen.
 
 Al editar una página individual, los autores pueden **Cancelar la herencia** de un componente. Cuando se cancela la herencia, la relación dinámica se suspende y la sincronización no se produce para ese componente. Cancelar la herencia y la sincronización resulta útil cuando se deben personalizar las subsecciones del contenido.
 
 ### Desasociación de una Live Copy {#detaching-a-live-copy}
 
-También puede [desasociar una live copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) de su modelo para eliminar todas las conexiones.
+También puede [desasociar una Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) de su modelo para eliminar todas las conexiones.
 
 >[!CAUTION]
 >
@@ -419,7 +419,7 @@ La opción Desasociar elimina permanentemente la relación activa entre una Live
 
 >[!NOTE]
 >
->Consulte [Desasociar una Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) para obtener información detallada, incluido el impacto relacionado en las páginas principales y secundarias.
+>Consulte [Desasociar una Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) para obtener información detallada; incluido el impacto relacionado en las páginas principales y secundarias.
 
 ## Pasos estándar para usar MSM {#standard-steps-for-using-msm}
 
@@ -429,23 +429,23 @@ Los siguientes pasos describen el procedimiento estándar para utilizar MSM para
 1. Determine la configuración de despliegue que desea utilizar.
 
    1. MSM [instala varias configuraciones de despliegue](/help/sites-administering/msm-sync.md#installed-rollout-configurations) que pueden satisfacer varios casos de uso.
-   1. Opcionalmente, puede [creación de una configuración de despliegue](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) si es necesario.
+   1. Opcionalmente, puede [crear una configuración de despliegue](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) si es necesario.
 
-1. Determine dónde debe [especifique las configuraciones de despliegue que se utilizarán](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) y configúrelo según sea necesario.
-1. Si es necesario, [crear una configuración de modelo](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration) que identifica el contenido de origen de live copy.
-1. [Creación de una Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy).
+1. Determine dónde debe [especificar las configuraciones de despliegue que se usarán](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) y configúrelas según sea necesario.
+1. Si es necesario, [cree una configuración de modelo](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration) que identifique el contenido de origen de Live Copy.
+1. [Crear una Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy).
 1. Cambie el contenido de origen según sea necesario. Utilice el proceso normal de revisión y aprobación de contenido que ha establecido su organización.
-1. [Desplegar](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) el modelo, o [sincronización de live copy](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) con los cambios.
+1. [Despliegue](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) el modelo o [sincronice la Live Copy](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) con los cambios.
 
 ## Personalización de MSM {#customizing-msm}
 
 MSM proporciona herramientas para que su implementación se pueda adaptar a las complejidades excepcionales que pueden existir al compartir contenido:
 
 * **Configuraciones de despliegue personalizadas**
-  [Creación de una configuración de despliegue](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) cuando las configuraciones de despliegue instaladas no cumplen con sus requisitos. Puede utilizar cualquier activador de despliegue y acción de sincronización disponible.
+  [Crear una configuración de despliegue](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) cuando las configuraciones de despliegue instaladas no cumplan con sus requisitos. Puede utilizar cualquier activador de despliegue y acción de sincronización disponible.
 
 * **Acciones de sincronización personalizadas**
-  [Crear una acción de sincronización personalizada](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) cuando las acciones instaladas no cumplen los requisitos específicos de la aplicación. MSM proporciona una API de Java™ para crear acciones de sincronización personalizadas.
+  [Cree una acción de sincronización personalizada](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) cuando las acciones instaladas no cumplan los requisitos específicos de la aplicación. MSM proporciona una API de Java™ para crear acciones de sincronización personalizadas.
 
 ## Prácticas recomendadas {#best-practices}
 

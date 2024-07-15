@@ -23,24 +23,24 @@ ht-degree: 1%
 >
 >AEM A partir de la versión 6.5, el marco de prueba de la interfaz de usuario de hobbes.js quedará obsoleto. Adobe no planea realizar más mejoras en él y recomienda a los clientes utilizar la automatización de Selenium.
 >
->Consulte [Funciones en desuso y eliminadas](/help/release-notes/deprecated-removed-features.md).
+>Ver [Funciones obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-AEM AEM proporciona un marco de trabajo para automatizar pruebas para la interfaz de usuario de la. Con el marco de trabajo, puede escribir y ejecutar pruebas de interfaz de usuario directamente en un explorador web. El marco de trabajo proporciona una API de JavaScript para la creación de pruebas.
+AEM AEM proporciona un marco de trabajo para automatizar pruebas para la interfaz de usuario de la. Con el marco de trabajo, puede escribir y ejecutar pruebas de interfaz de usuario directamente en un explorador web. El marco de trabajo proporciona una API de JavaScript para crear pruebas.
 
 AEM El marco de trabajo de prueba utiliza Hobbes.js, una biblioteca de prueba escrita en JavaScript. AEM El marco de Hobbes.js se desarrolló para realizar pruebas de la manera de hacer las pruebas de los productos de la red como parte del proceso de desarrollo. AEM El marco de trabajo ya está disponible para uso público para probar sus aplicaciones de.
 
 >[!NOTE]
 >
->Consulte Hobbes.js [documentación](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) para obtener información detallada sobre la API.
+>Consulte la [documentación](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) de Hobbes.js para obtener información detallada sobre la API.
 
 ## Estructura de las pruebas {#structure-of-tests}
 
 AEM Al utilizar pruebas automatizadas en el marco de la aplicación de, es importante comprender los términos siguientes:
 
-| Acción | Un **Acción** es una actividad específica de una página web, como hacer clic en un vínculo o en un botón. |
+| Acción | Una **acción** es una actividad específica de una página web, como hacer clic en un vínculo o en un botón. |
 |---|---|
-| Caso de prueba | A **Caso de prueba** es una situación específica que puede estar compuesta por una o más **Acciones**. |
-| Grupo de pruebas | A **Grupo de pruebas** es un grupo de **Casos de prueba** que junto prueban un caso de uso específico. |
+| Caso de prueba | Un **caso de prueba** es una situación específica que puede estar compuesta por una o más **acciones**. |
+| Grupo de pruebas | Un **grupo de pruebas** es un grupo de **casos de prueba** relacionados que juntos prueban un caso de uso específico. |
 
 ## Ejecución de pruebas {#executing-tests}
 
@@ -62,7 +62,7 @@ Los grupos de pruebas se pueden ejecutar individualmente. Al ejecutar un grupo d
 
 Un icono de marca de verificación indica que la prueba se ha superado:
 
-![Icono de verificación.](do-not-localize/chlimage_1-2.png)
+![Icono de marca de verificación.](do-not-localize/chlimage_1-2.png)
 
 El icono &quot;X&quot; indica que la prueba ha fallado:
 
@@ -74,7 +74,7 @@ Para ejecutar un grupo de pruebas:
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Clic **Ejecutar prueba**.
+1. Haga clic en **Ejecutar prueba**.
 
    ![Imagen del botón Ejecutar pruebas, indicada por un puntero orientado a la derecha dentro de un círculo.](do-not-localize/chlimage_1-4.png)
 
@@ -82,7 +82,7 @@ Para ejecutar un grupo de pruebas:
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Revise los resultados del caso de prueba tocando o haciendo clic en la descripción para abrir **Resultado** panel. Toque o haga clic en el nombre del caso de prueba en la **Resultado** el panel muestra todos los detalles.
+1. Revise los resultados del caso de prueba tocando o haciendo clic en la descripción para abrir el panel **Resultado**. Al tocar o hacer clic en el nombre del caso de prueba en el panel **Resultado**, se muestran todos los detalles.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -92,23 +92,23 @@ Los grupos de pruebas se ejecutan secuencialmente en el orden en que aparecen en
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. En el panel Pruebas, haga clic en **Ejecutar todas las pruebas** o el botón **Ejecutar pruebas** botón situado debajo del título del grupo de pruebas que desea ejecutar.
+1. En el panel Pruebas, haga clic en el botón **Ejecutar todas las pruebas** o en el botón **Ejecutar pruebas** situado debajo del título del grupo de pruebas que desee ejecutar.
 
-   ![Imagen del botón Ejecutar todas las pruebas y del botón Ejecutar pruebas, indicados por un puntero orientado a la derecha dentro de un círculo.](do-not-localize/chlimage_1-5.png)
+   ![Imagen del botón Ejecutar todas las pruebas y del botón Ejecutar pruebas, indicados por un puntero derecho dentro de un círculo.](do-not-localize/chlimage_1-5.png)
 
-1. Para ver los resultados de cada caso de prueba, haga clic en el título del caso de prueba. Al hacer clic en el nombre de la prueba en el **Resultado** el panel muestra todos los detalles.
+1. Para ver los resultados de cada caso de prueba, haga clic en el título del caso de prueba. Al hacer clic en el nombre de la prueba en el panel **Result**, se muestran todos los detalles.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
 ## Crear y usar un grupo de pruebas simple {#creating-and-using-a-simple-test-suite}
 
-El siguiente procedimiento le guía durante la creación y ejecución de un grupo de pruebas utilizando [Contenido de We.Retail](/help/sites-developing/we-retail.md), pero puede modificar fácilmente la prueba para que utilice una página web diferente.
+El siguiente procedimiento lo guía durante la creación y ejecución de un grupo de pruebas con [contenido de We.Retail](/help/sites-developing/we-retail.md), pero puede modificar fácilmente la prueba para que utilice una página web diferente.
 
-Para obtener información detallada sobre la creación de sus propios grupos de pruebas, consulte la [Documentación de la API Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+Para obtener información detallada sobre cómo crear sus propios grupos de pruebas, consulte la [documentación de la API de Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
 
 1. Abra CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
-1. Haga clic con el botón derecho en `/etc/clientlibs` y haga clic en **Crear > Crear carpeta**. Tipo `myTests` para el nombre y haga clic en **OK**.
-1. Haga clic con el botón derecho en `/etc/clientlibs/myTests` y haga clic en **Crear > Crear nodo**. Utilice los siguientes valores de propiedad y haga clic en **OK**:
+1. Haga clic con el botón derecho en la carpeta `/etc/clientlibs` y haga clic en **Crear > Crear carpeta**. Escriba `myTests` para el nombre y haga clic en **Aceptar**.
+1. Haga clic con el botón derecho en la carpeta `/etc/clientlibs/myTests` y haga clic en **Crear > Crear nodo**. Use los siguientes valores de propiedad y haga clic en **Aceptar**:
 
    * Nombre: `myFirstTest`
    * Tipo: `cq:ClientLibraryFolder`
@@ -117,8 +117,8 @@ Para obtener información detallada sobre la creación de sus propios grupos de 
 
    | Nombre | Tipo | Valor  |
    |---|---|---|
-   | `categories` | Cadena[] | `granite.testing.hobbes.tests` |
-   | `dependencies` | Cadena[] | `granite.testing.hobbes.testrunner` |
+   | `categories` | Cadena [] | `granite.testing.hobbes.tests` |
+   | `dependencies` | Cadena [] | `granite.testing.hobbes.testrunner` |
 
    >[!NOTE]
    >
@@ -134,17 +134,17 @@ Para obtener información detallada sobre la creación de sus propios grupos de 
    >**dependencias**: `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
 1. Haga clic en **Guardar todo**.
-1. Haga clic con el botón derecho en `myFirstTest` y haga clic en **Crear > Crear archivo**. Asigne un nombre al archivo `js.txt` y haga clic en **OK**.
-1. En el `js.txt` , escriba el siguiente texto:
+1. Haga clic con el botón derecho en el nodo `myFirstTest` y haga clic en **Crear > Crear archivo**. Asigne un nombre al archivo `js.txt` y haga clic en **Aceptar**.
+1. En el archivo `js.txt`, escriba el siguiente texto:
 
    ```
    #base=.
    myTestSuite.js
    ```
 
-1. Clic **Guardar todo** y, a continuación, cierre el `js.txt` archivo.
-1. Haga clic con el botón derecho en `myFirstTest` y haga clic en **Crear > Crear archivo**. Asigne un nombre al archivo `myTestSuite.js` y haga clic en **OK**.
-1. Copie el siguiente código en la `myTestSuite.js` a continuación, guarde el archivo:
+1. Haga clic en **Guardar todo** y, a continuación, cierre el archivo `js.txt`.
+1. Haga clic con el botón derecho en el nodo `myFirstTest` y haga clic en **Crear > Crear archivo**. Asigne un nombre al archivo `myTestSuite.js` y haga clic en **Aceptar**.
+1. Copie el siguiente código en el archivo `myTestSuite.js` y, a continuación, guarde el archivo:
 
    ```
    new hobs.TestSuite("Experience Content Test Suite", {path:"/etc/clientlibs/myTests/myFirstTest/myTestSuite.js"})
@@ -159,4 +159,4 @@ Para obtener información detallada sobre la creación de sus propios grupos de 
    );
    ```
 
-1. Vaya a **Pruebas** para probar el grupo de pruebas.
+1. Vaya a la consola **Pruebas** para probar el grupo de pruebas.

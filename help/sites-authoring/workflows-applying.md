@@ -43,7 +43,7 @@ Los flujos de trabajo se pueden iniciar desde:
 
 >[!NOTE]
 >
->AEM Los administradores de pueden [iniciar flujos de trabajo mediante varios métodos](/help/sites-administering/workflows-starting.md).
+>AEM Los administradores de pueden [iniciar flujos de trabajo mediante otros métodos](/help/sites-administering/workflows-starting.md).
 
 ## Inicio de un flujo de trabajo desde la consola Sites {#starting-a-workflow-from-the-sites-console}
 
@@ -75,7 +75,7 @@ Desde la **Cronología** puede iniciar un flujo de trabajo para aplicarlo al rec
 1. [Seleccione el recurso](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) y abra [Cronología](/help/sites-authoring/basic-handling.md#timeline) (o abra Cronología y seleccione el recurso).
 1. La punta de flecha junto al campo Comentario puede utilizarse para mostrar **Iniciar flujo de trabajo**:
 
-   ![screen-shot_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
+   ![captura de pantalla_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
 
 1. El asistente **Crear flujo de trabajo** le ayudará a [especificar los detalles del flujo de trabajo](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -106,7 +106,7 @@ Puede especificar los detalles:
 
    >[!NOTE]
    >
-   >El **Mantener paquete de flujo de trabajo** está disponible cuando el flujo de trabajo se ha configurado para [Compatibilidad con varios recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) y se han seleccionado varios recursos.
+   >La opción **Mantener paquete de flujo de trabajo** está disponible cuando el flujo de trabajo se ha configurado para [Compatibilidad con varios recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) y se han seleccionado varios recursos.
 
    Cuando haya terminado, seleccione **Siguiente** para continuar.
 
@@ -114,7 +114,7 @@ Puede especificar los detalles:
 
 1. En la etapa **Ámbito**, puede seleccionar lo siguiente:
 
-   * **Añadir contenido** para abrir [explorador de rutas](/help/sites-authoring/author-environment-tools.md#path-browser) y seleccione recursos adicionales; en el explorador, haga clic en **Seleccionar** para añadir el contenido a la instancia de flujo de trabajo.
+   * **Agregar contenido** para abrir el [explorador de rutas](/help/sites-authoring/author-environment-tools.md#path-browser) y seleccionar recursos adicionales; en el explorador, haga clic en **Seleccionar** para agregar el contenido a la instancia de flujo de trabajo.
 
    * Un recurso existente para ver acciones adicionales:
 

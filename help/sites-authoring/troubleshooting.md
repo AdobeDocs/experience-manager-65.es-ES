@@ -22,21 +22,21 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 >[!NOTE]
 >
->Cuando experimenta problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) para su instancia (versión y paquetes de servicio).
+>Cuando tenga problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) de su instancia (versiones y paquetes de servicio).
 
 >[!NOTE]
 >
->AEM Los usuarios que tienen privilegios de administrador y que desean solucionar problemas con la solución de problemas con la solución de problemas con la solución de problemas, pueden utilizar los métodos de solución de problemas descritos en [AEM Solución de problemas (para administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, consulte al administrador del sistema para obtener información sobre la solución de problemas de la solución de problemas de la.
+>AEM AEM Los usuarios que tengan privilegios de administrador y que deseen solucionar problemas con los recursos de administración, pueden utilizar los métodos de solución de problemas descritos en [Solución de problemas de los usuarios (para los administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, consulte al administrador del sistema para obtener información sobre la solución de problemas de la solución de problemas de la.
 
 ## La versión anterior de la página sigue en el sitio publicado {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Ha realizado cambios en una página y replicado la página en el sitio de publicación, pero la variable *viejo* La versión de la página se sigue mostrando en el sitio de publicación.
+   * Ha realizado cambios en una página y replicado la página en el sitio de publicación, pero la versión *antigua* de la página se sigue mostrando en el sitio de publicación.
 
 * **Motivo**:
 
-   * Esto puede tener varias causas, la mayoría de las veces la caché (el explorador local o Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
+   * Esto puede tener varias causas, la mayoría de las veces la memoria caché (el explorador local o el Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
 
 * **Soluciones**:
 

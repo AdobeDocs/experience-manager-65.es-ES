@@ -26,35 +26,35 @@ El Reglamento General de Protección de Datos de la Unión Europea sobre los der
 
 AEM Sites está preparado para ayudar a los clientes con sus obligaciones de cumplimiento del RGPD. Esta página guía a los clientes a través de los procedimientos para gestionar las solicitudes de RGPD en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o mediante programación.
 
-Para obtener más información, consulte la [Página de RGPD en el Centro de privacidad de Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Para obtener más información, consulte la página [RGPD en el Centro de privacidad de Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Consulte [AEM Preparación para el RGPD de](/help/managing/data-protection-and-privacy.md) para obtener más información.
+>AEM Consulte [Preparación para el RGPD de la](/help/managing/data-protection-and-privacy.md) para obtener más información.
 
 ## Servidor de creación {#author-server}
 
-Las cuentas de usuario y el contenido generado por usuarios en el servidor de creación se tratan en la [Documentación del RGPD de Platform](/help/managing/data-protection-and-privacy.md).
+Las cuentas de usuario y el contenido generado por usuarios en el servidor de creación se tratan en [Documentación del RGPD de la plataforma](/help/managing/data-protection-and-privacy.md).
 
-## Servidor de publicación {#publish-server}
+## Servidor de Publish {#publish-server}
 
-Las cuentas de usuario utilizadas para autenticar a los visitantes en el sitio y el contenido generado por usuarios en el servidor de publicación se tratan en la [Documentación del RGPD de Platform](/help/managing/data-protection-and-privacy.md).
+Las cuentas de usuario utilizadas para autenticar a los visitantes en el sitio y el contenido generado por usuarios en el servidor de publicación se tratan en la [Documentación del RGPD de la plataforma](/help/managing/data-protection-and-privacy.md).
 
 De forma predeterminada, los componentes de AEM Sites no almacenan los datos de formulario introducidos por los visitantes en el servidor de publicación. Se recomienda reenviar los datos a un sistema de terceros o a Adobe Campaign para un procesamiento posterior.
 
 ## Inclusión/exclusión {#opt-in-opt-out}
 
-AEM tiene un [servicio de exclusión de cookies](/help/sites-developing/cookie-optout.md) que se puede utilizar para administrar la inclusión/exclusión de los usuarios.
+AEM tiene un servicio de exclusión de [cookies](/help/sites-developing/cookie-optout.md) que se puede usar para administrar la inclusión/exclusión de los usuarios.
 
 ## Perspectivas mejoradas de Analytics {#enhanced-insights-by-analytics}
 
 AEM Sites incluye una integración opcional con Enhanced Insights by Analytics que utiliza la funcionalidad dentro del servicio bajo demanda de Adobe Analytics.
 
-Para obtener más información sobre la administración de solicitudes de titulares de los datos del RGPD relacionadas con Adobe Analytics, consulte [Adobe Analytics y el RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
+Para obtener más información sobre la administración de solicitudes de titulares de los datos del RGPD relacionadas con Adobe Analytics, consulte [Adobe Analytics y RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Personalización mejorada por Target {#enhanced-personalization-by-target}
+## Personalization mejorado por Target {#enhanced-personalization-by-target}
 
-AEM Sites incluye una integración opcional con Enhanced Personalization by Target que utiliza la funcionalidad dentro del servicio bajo demanda de Adobe Target.
+AEM Sites incluye una integración opcional con Personalization mejorado por Target que utiliza la funcionalidad dentro del servicio bajo demanda de Adobe Target.
 
 Para obtener más información sobre la administración de solicitudes de titulares de los datos del RGPD relacionadas con Adobe Target, consulte [Adobe Target: Reglamento general de protección de datos](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
 

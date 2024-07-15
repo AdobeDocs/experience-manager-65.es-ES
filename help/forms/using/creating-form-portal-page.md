@@ -56,13 +56,13 @@ Componente Buscar y listar en una página con diseño de cuadrícula
 
 El panel Lista es un área en la que se enumeran los formularios. El componente Buscar y listar proporciona varias opciones de configuración que puede utilizar para controlar la visualización de formularios en el panel Lista.
 
-Para configurar el panel Lista, seleccione el componente Buscar y listar y, a continuación, seleccione ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo **[!UICONTROL Editar componente]**.
+Para configurar el panel Lista, seleccione el componente Buscar y listar y luego seleccione ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo **[!UICONTROL Editar componente]**.
 
 ![Panel Lista en modo de edición](assets/edit-list.png)
 
 Panel Lista en modo de edición
 
-El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan las opciones de configuración descritas en la siguiente tabla. Seleccionar **OK** para guardar la configuración, cuando haya terminado.
+El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan las opciones de configuración descritas en la siguiente tabla. Seleccione **Aceptar** para guardar la configuración cuando haya terminado.
 
 <table>
  <tbody>
@@ -149,7 +149,7 @@ El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan las o
   <tr>
    <td><span class="uicontrol"><strong>Estilo</strong></code></td>
    <td>Tipo de estilo</td>
-   <td>Permite especificar <strong>Sin estilo, estilo predeterminado</strong>, o <strong>Estilo personalizado </strong>para enumerar los formularios.</td>
+   <td>Permite especificar <strong>Sin estilo, estilo predeterminado</strong> o <strong>estilo personalizado </strong>para enumerar los formularios.</td>
   </tr>
   <tr>
    <td> </td>
@@ -186,7 +186,7 @@ Para configurar el componente Predicado Fecha:
    * **Etiqueta Fecha de finalización:** etiqueta o rótulo para el campo de la fecha de finalización
    * **Ocultar:** aplicar el filtro de fecha predeterminado a los formularios de lista
 
-1. Seleccionar **OK**
+1. Seleccionar **Aceptar**
 
 #### Predicado de texto completo {#full-text-predicate}
 
@@ -196,7 +196,7 @@ Para configurar el componente Predicado Texto completo, haga lo siguiente:
 
 1. Seleccione el componente y luego seleccione ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
 1. Especifique el título en el campo **Título principal**.
-1. Seleccionar **Ok**
+1. Seleccionar **Aceptar**
 
 #### Predicado Propiedades {#properties-predicate}
 
@@ -207,12 +207,12 @@ Para configurar el componente Predicado Propiedades, haga lo siguiente:
 1. Seleccione el componente y luego seleccione ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
 1. En la pestaña General, especifique la etiqueta de búsqueda. El valor predeterminado es **Propiedades**
 
-1. En la pestaña Opciones, seleccione **Agregar elemento.**
+1. En la ficha Opciones, seleccione **Agregar elemento.**
 1. Seleccione una propiedad de la lista desplegable y especifique una etiqueta de búsqueda para ella en el campo situado debajo de la lista desplegable.
 1. Repita el paso 4 para agregar más propiedades. También puede especificar un valor de filtro predeterminado para enumerar formularios en función de los criterios especificados y ocultar la propiedad para que la busquen los usuarios finales. Seleccione la casilla Ocultar de una propiedad y especifique el valor de filtro predeterminado.
 Por ejemplo, si desea mostrar formularios que contengan “Viajar” en sus títulos, seleccione Ocultar junto a la propiedad Título. Además, especifique Viajar en el cuadro de texto con valor de filtro predeterminado.
 
-1. Seleccionar **OK**
+1. Seleccionar **Aceptar**
 
 #### Predicado Etiquetas {#tags-predicate}
 
@@ -223,7 +223,7 @@ Para configurar el componente Predicado Etiquetas:
 1. Seleccione el componente y luego seleccione ![settings_icon](assets/settings_icon.png). Se abrirá el cuadro de diálogo Editar.
 1. Seleccione el botón de flecha hacia abajo situado junto al campo Etiquetas.
 1. Seleccione las etiquetas adecuadas
-1. Seleccionar **OK**
+1. Seleccionar **Aceptar**
 
 Las etiquetas seleccionadas aparecerán en el panel Buscar junto con las casillas de verificación para seleccionarlas. Ahora los usuarios pueden limitar la búsqueda en función de las etiquetas.
 

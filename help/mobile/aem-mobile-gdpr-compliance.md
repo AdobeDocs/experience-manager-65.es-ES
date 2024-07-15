@@ -41,21 +41,21 @@ Se requieren los siguientes ID para localizar los datos del cliente. Cualquier s
 
 Obligatorio:
 
-* ID de contrato del cliente: *dpsc-ContractId*
+* Id. de contrato del cliente: *dpsc-ContractId*
 
 Proporcione al menos una de las siguientes opciones:
 
 * ID de OAuth proporcionado por el cliente del usuario final (el ID utilizado en el sistema de derechos directos del cliente): *dpsc-directEntitlementId*
-* En el caso de los usuarios de aplicaciones de Windows, el App Store ID del usuario final: *dpsc-windowsAppStoreId*
-* La dirección de correo electrónico que el usuario final utilizó para interactuar con la aplicación DPS: *email*
+* Para usuarios de aplicaciones Windows, el App Store ID del usuario final: *dpsc-windowsAppStoreId*
+* La dirección de correo electrónico que el usuario final usó para interactuar con la aplicación DPS: *email*
 
 ### Preguntas más frecuentes (FAQ) {#frequently-asked-questions-faq}
 
-**¿El Adobe está eliminando mis compras de App Store al iniciar una solicitud de DELETE?**
+**¿Hay Adobes al eliminar mis compras de App Store al iniciar una solicitud de DELETE?**
 
 El Adobe elimina la información que tiene sobre las compras en la tienda de aplicaciones (suscripciones, etc.), pero las compras siguen registradas en las tiendas de aplicaciones. Si la aplicación (usuario final) ha iniciado sesión en la tienda de aplicaciones, esos recibos se recogen de nuevo y se envían al Adobe. Más adelante, se consideran nuevas compras y son restauradas por la aplicación, con acceso de nuevo.
 
-**¿El Adobe elimina los derechos proporcionados por el cliente al iniciar una solicitud de DELETE?**
+**¿El Adobe está eliminando los derechos proporcionados por el cliente al iniciar una solicitud de DELETE?**
 
 El Adobe elimina la información que tiene de las asignaciones de derechos directos adicionales del cliente. Si la aplicación (usuario final) inicia sesión en el mecanismo de OAuth que el cliente ha utilizado, envía información al Adobe y los servicios vuelven a recoger los derechos adicionales.
 
@@ -63,7 +63,7 @@ El Adobe elimina la información que tiene de las asignaciones de derechos direc
 
 Dado que la clave para asignar derechos a la aplicación reside en el dispositivo como parte del software del visualizador, el usuario final debe desinstalar la aplicación. El usuario final debe tener en cuenta que, si vuelve a instalar la aplicación, las compras existentes (asociadas al usuario de la tienda de aplicaciones) y las asignaciones de derechos directos (asociadas al usuario de OAuth del cliente) se restauran.
 
-**¿Qué sucede cuando una aplicación se comparte entre personas en un dispositivo?**
+**¿Qué sucede cuando se comparte una aplicación entre personas de un dispositivo?**
 
 El Adobe tiene una información mínima que se asocia directamente con un usuario específico. Asocia los datos mediante un UUID creado aleatoriamente que se almacena en los datos de la aplicación y se pasa en cada solicitud que inicia la aplicación. Esto significa que los usuarios finales que comparten la aplicación en el mismo dispositivo utilizan el mismo UUID y que todos los datos se consideran propiedad de la persona que realiza la solicitud de RGPD. Tanto para las solicitudes de acceso como para las de eliminación, DPSC considera que las personas que comparten una aplicación son una sola persona.
 

@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Tutoriales {#tutorials}
 
-Estos son ejemplos para ayudar a aprender y trabajar con las comunidades de Adobe Experience Manager AEM () 6.1 [marco de componentes sociales (SCF)](scf.md).
+Estos son ejemplos para ayudar a aprender y trabajar con Adobe Experience Manager AEM () 6.1 Communities [social component framework (SCF)](scf.md).
 
 ## Personalización del lado del cliente {#client-side-customization}
 
@@ -34,13 +34,13 @@ Consulte también lo siguiente:
 
 ## Personalización del lado del servidor {#server-side-customization}
 
-Consulte también [Personalización del lado del servidor SCF](server-customize.md).
+Consulte también [personalización del lado del servidor SCF](server-customize.md).
 
-El código de muestra está disponible en la variable [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repositorio:
+Código de muestra disponible en el repositorio [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud):
 
 * [Personalizar muestra de componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
-* [Superponer muestra de componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [Ejemplo de componente SCF de superposición](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
 * [Ampliar muestra de componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
@@ -60,13 +60,13 @@ El código de muestra está disponible en la variable [Adobe Experience Cloud Gi
 
 ## Usuarios de demostración {#demo-users}
 
-El paquete de muestras de Geometrixx incluye usuarios de demostración. A menudo existe una diferencia en la experiencia entre ser visitante (sin sesión iniciada) o miembro (con sesión iniciada). Y, siempre que los paquetes de muestras de Geometrixx permanezcan instalados, puede utilizar estos usuarios para simular un estado de inicio de sesión al explorar con [Guía de componentes de la comunidad](components-guide.md).
+El paquete de muestras de Geometrixx incluye usuarios de demostración. A menudo existe una diferencia en la experiencia entre ser visitante (sin sesión iniciada) o miembro (con sesión iniciada). Y, siempre que los paquetes de muestras de Geometrixx permanezcan instalados, puede utilizar estos usuarios para simular un estado de inicio de sesión al explorar con la [guía de componentes de la comunidad](components-guide.md).
 
-Para obtener una lista completa de los usuarios de la demostración, vaya utilizando el carril a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Seguridad > Usuarios]**. O utilice la IU clásica [consola de seguridad](http://localhost:4502/useradmin) para administrar usuarios y grupos.
+Para obtener una lista completa de los usuarios de la demostración, vaya con el carril a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Seguridad > Usuarios]**. O use la IU clásica [consola de seguridad](http://localhost:4502/useradmin) para administrar usuarios y grupos.
 
-Si un [se ha creado el sitio de la comunidad](getting-started.md), es posible asignar usuarios de demostración a su [grupos de usuarios de la comunidad](users.md).
+Si se ha creado un [sitio de la comunidad](getting-started.md), es posible asignar usuarios de demostración a sus [grupos de usuarios de la comunidad](users.md).
 
-***id de usuario* / *contraseña***:
+***id. de usuario* / *contraseña***:
 
 * aaron.mcdonald@mailinator.com / contraseña
 * emily.andrews@mailinator.com / contraseña

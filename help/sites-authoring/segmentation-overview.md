@@ -32,7 +32,7 @@ El contenido puede personalizarse según las necesidades y los intereses del vis
 
 ## Uso de la segmentación {#using-segmentation}
 
-Los segmentos se definen en [Configuración de segmentación](/help/sites-administering/campaign-segmentation.md). Se utilizan para dirigir el contenido real que visualiza un público objetivo específico.
+Los segmentos se definen en [Configuración de la segmentación](/help/sites-administering/campaign-segmentation.md). Se utilizan para dirigir el contenido real que visualiza un público objetivo específico.
 
 ## Terminología de segmentación {#segmentation-terminology}
 
@@ -64,7 +64,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 
 **Características derivadas**: Algunas características demográficas son difíciles de determinar sin registro, pero se pueden obtener combinando características demográficas y de comportamiento.
 
-Por ejemplo, combinar la dirección URL de referencia (como característica de comportamiento) con datos demográficos (adquiridos a partir de herramientas como [Google Ad Planner](https://www.google.com/adplanner/)) permiten a los propietarios del sitio derivar características demográficas de sus visitantes.
+Por ejemplo, si combina la dirección URL de referencia (como característica de comportamiento) con datos demográficos (adquiridos con herramientas como [Google Ad Planner](https://www.google.com/adplanner/)), los propietarios del sitio podrán obtener características demográficas de los visitantes.
 
 **Subsegmentos**: Un segmento se puede subdividir en varios subsegmentos. Esto se lleva a cabo definiendo características adicionales.
 

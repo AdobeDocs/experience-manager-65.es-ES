@@ -15,12 +15,12 @@ ht-degree: 2%
 
 # Uso del paquete de demostración para Assets Insights {#using-demo-package-for-asset-insights}
 
-Con el paquete de demostración, puede habilitar Adobe Assets Insights para capturar datos y generar perspectivas para una página web de ejemplo.
+Con el paquete de demostración, puede habilitar Adobe Assets Insights para capturar datos de y generar perspectivas para una página web de ejemplo.
 
-## [!DNL Use Experience Manager Assets] Perspectivas con la página web de muestra  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] datos con la página web de ejemplo  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configure Assets Insights siguiendo las instrucciones de [Configuración de Assets Insights](configure-asset-insights.md).
-1. Descargue el paquete de recursos de ejemplo de abajo e instale el paquete desde el Administrador de paquetes CRXDE.
+1. Descargue el paquete de Assets de ejemplo de abajo e instale el paquete desde el Administrador de paquetes CRXDE.
 
 [Obtener archivo](assets/insightsdemo.zip)
 
@@ -36,4 +36,4 @@ Con el paquete de demostración, puede habilitar Adobe Assets Insights para capt
 
    >[!NOTE]
    >
-   >La página web externa puede estar en [!DNL Experience Manager] sí mismo.
+   >La página web externa puede estar en [!DNL Experience Manager].

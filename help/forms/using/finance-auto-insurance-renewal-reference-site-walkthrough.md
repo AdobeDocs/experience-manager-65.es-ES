@@ -37,7 +37,7 @@ El escenario de la solicitud de un seguro de coche de We.Finance es una narraci�
 
 ### Gloria envía una comunicación sobre la renovación de la póliza del seguro desde We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-AEM Gloria inicia sesión en la instancia de, hace clic en **Renovación del seguro del coche,** y luego hace clic en **Abrir la interfaz de usuario del agente**. El clic rellena previamente el documento del seguro con los datos de la póliza de Sarah Rose. Gloria hace clic **Enviar** y se muestra un mensaje en la pantalla &quot;Envío iniciado&quot; y, a continuación, en unos segundos &quot;Enviado correctamente&quot;.
+AEM Gloria inicia sesión en la instancia de, hace clic en **Renovación del seguro del coche** y, a continuación, hace clic en **Abrir la interfaz de usuario del agente**. El clic rellena previamente el documento del seguro con los datos de la póliza de Sarah Rose. Gloria hace clic en **Enviar** y se muestra un mensaje en la pantalla &quot;Envío iniciado&quot; y luego, en unos segundos, &quot;Enviado correctamente&quot;.
 
 Sarah recibe un correo electrónico con el asunto &quot;Renovación del seguro del coche&quot;.
 
@@ -67,7 +67,7 @@ El botón Renovar ahora del correo electrónico está vinculado a la solicitud R
 
 Debería haber recibido un correo electrónico con un PDF adjunto. El PDF es una versión impresa de la póliza de su seguro del coche. Haga clic en **Renovar ahora** para acceder a la versión web de la póliza. Compruebe sus datos personales y los datos de la póliza y haga clic en la opción **Renovar ahora**, la cual le redirigirá a otra comunicación interactiva.
 
-El **Renovar ahora** en el correo electrónico dirige a Sarah a la póliza de la web. Puede visitar la siguiente URL:
+El botón **Renovar ahora** del correo electrónico dirige a Sarah a la póliza de la web. Puede visitar la siguiente URL:
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 

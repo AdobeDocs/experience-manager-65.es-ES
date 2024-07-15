@@ -42,7 +42,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 ### Crear texto {#create-text}
 
 1. Seleccione **Forms** > **Fragmentos de documento**.
-1. Seleccionar **Crear** > **Texto** O seleccione un recurso de texto y seleccione **Editar**.
+1. Seleccione **Crear** > **Texto** O seleccione un recurso de texto y seleccione **Editar**.
 1. Especifique la siguiente información para el texto:
 
    * **Título: (Opcional)** introduzca el título del recurso de texto. Los títulos no tienen por qué ser únicos, y pueden contener caracteres especiales y caracteres que no sean de inglés. Se hace referencia a los textos por sus títulos (cuando están disponibles); por ejemplo en las miniaturas y las propiedades de recursos.
@@ -51,7 +51,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
    * **Diccionario de datos**: si lo desea, puede seleccionar el diccionario de datos que desea asignar al texto. Este atributo permite agregar referencias a elementos de diccionario de datos en el recurso de texto.
    * **Etiquetas**: si lo prefiere, puede crear una etiqueta personalizada introduciendo el valor en el campo de texto y pulsando Intro. Puede ver la etiqueta debajo del campo de texto de las etiquetas. Al guardar este texto, también se crean las etiquetas que acaba de agregar.
 
-1. Seleccionar **Siguiente**. Administración de correspondencia muestra la página Editor, donde puede agregar párrafos de texto y elementos de datos al texto.
+1. Seleccione **Siguiente**. Administración de correspondencia muestra la página Editor, donde puede agregar párrafos de texto y elementos de datos al texto.
 
    El corrector ortográfico predeterminado del explorador comprueba la ortografía en el Editor de texto. Para administrar la revisión ortográfica y gramatical, puede editar la configuración del corrector ortográfico del explorador o instalar complementos del explorador para revisar la ortografía y la gramática.
 
@@ -63,7 +63,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 
    * **Vínculo**: inserte un vínculo de [hipertexto](#insert-hyperlink) en el texto.
    * **Repetir**: Repetir imprime el elemento de colección en el diccionario de datos con un delimitador.
-   * **Condición**: seleccione para insertar una condición. Inserte texto basado en una condición. Si la condición es verdadera, el texto es visible en la carta; de lo contrario, no.
+   * **Condición**: seleccione esta opción para insertar una condición. Inserte texto basado en una condición. Si la condición es verdadera, el texto es visible en la carta; de lo contrario, no.
    * **Agregar descripción**: agregue anotaciones a un fragmento de texto. Es un metadato visible para el autor, pero no forma parte de la carta creada.
    * **Salto de página**: si establece el atributo de salto de página de un módulo de texto en False, el módulo de texto no se divide entre las páginas.
 
@@ -76,7 +76,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
    ![Barra de herramientas Párrafo](assets/fonteditingtoolbar.png)
 
    Barra de herramientas Párrafo
-   [![Barra de herramientas Alineación](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra de herramientas Alineación
+   [![Barra de herramientas de alineación](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Barra de herramientas de alineación
 
    ![Barra de herramientas de lista ](assets/bulleteditingtoolbar.png)
 
@@ -110,9 +110,9 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 
    ![textbackgroundcolorapplied](assets/textbackgroundcolorapplied.png)
 
-   Puede seleccionar directamente un color básico `**[A]**` presente en la paleta Colores básicos o seleccione **Seleccionar** después de usar el regulador `**[B]**` para elegir la sombra adecuada del color.
+   Puede seleccionar directamente un color básico `**[A]**` presente en la paleta Colores básicos o seleccionar **Seleccionar** después de usar el control deslizante `**[B]**` para elegir la sombra adecuada del color.
 
-   También puede ir a la pestaña Avanzado para seleccionar el tono, la luminosidad y la saturación adecuados `**[C]**` para crear el color preciso y, a continuación, seleccione Seleccionar `**[D]**` para aplicar el color para resaltar el texto.
+   Opcionalmente, también puede ir a la pestaña Avanzado para seleccionar el tono, la luminosidad y la saturación adecuados `**[C]**` para crear el color preciso y, a continuación, seleccionar Seleccionar `**[D]**` para aplicar el color para resaltar el texto.
 
    ![textbackgroundcolor-1](assets/textbackgroundcolor-1.png)
 
@@ -120,7 +120,7 @@ La solución de Administración de correspondencia admite dos tipos de elementos
 
    A:
 
-   * Añada un elemento de diccionario de datos al texto, seleccione un elemento de datos de la lista y seleccione Insertar ( ![insertar](assets/insert.png)). Si selecciona Protegido, el elemento del diccionario de datos es de solo lectura y aparece en el Editor de cartas, pero no en la interfaz de usuario Crear correspondencia o Creador de correspondencia.
+   * Agregue un elemento de diccionario de datos al texto, seleccione un elemento de datos de la lista y seleccione Insertar ( ![insert](assets/insert.png)). Si selecciona Protegido, el elemento del diccionario de datos es de solo lectura y aparece en el Editor de cartas, pero no en la interfaz de usuario Crear correspondencia o Creador de correspondencia.
    * Agregue un elemento de marcador de posición en el texto; en el panel Elementos de datos, seleccione Crear nuevo, introduzca los detalles del nuevo elemento de datos y seleccione Crear para agregar el nuevo elemento a la lista. El nuevo marcador de posición se puede insertar en el texto del mismo modo que el elemento de diccionario de datos. Para editar un marcador de posición, seleccione un marcador y haga clic en Editar.
 
    ![Elementos de marcador de posición](assets/placeholder_elements_in_xmldata.png)
@@ -142,7 +142,7 @@ Realice los siguientes pasos para crear un hipervínculo en un recurso de texto:
 
 1. Seleccione el texto o el objeto del modelo de datos en el Editor de texto.
 
-2. Seleccionar **[!UICONTROL Vínculo]**. Seleccionar **[!UICONTROL Texto alternativo]** para quitar el texto o nombre del objeto del modelo de datos existente.
+2. Seleccione **[!UICONTROL Vínculo]**. Seleccione el campo **[!UICONTROL Texto alternativo]** para quitar el texto o nombre del objeto del modelo de datos existente.
 
 3. Especifique la URL y seleccione ![Guardar](assets/save_icon.svg).
 
@@ -241,23 +241,23 @@ Una lista es un grupo de contenido relacionado que se puede utilizar en una plan
    * **Nombre:** el nombre único de la lista. No pueden existir dos recursos (texto, condición o lista) con el mismo nombre en ningún estado. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente con el valor del campo Título. Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
    * **Descripción (opcional)**: escriba una descripción para el recurso.
    * **Diccionario de datos (opcional)**: si lo desea, puede seleccionar el diccionario de datos al que desea conectarse. Solo se pueden agregar a la lista recursos que utilicen el mismo diccionario de datos que la lista, o recursos que no tengan asignado ningún diccionario de datos. Asignar un diccionario de datos a una lista facilita a la persona que crea una plantilla de carta la tarea de encontrar la lista adecuada.
-   * **Etiquetas (opcional)**: seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una etiqueta nueva y crearla. (La etiqueta nueva se crea al seleccionar **Guardar**.)
+   * **Etiquetas (opcional)**: seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una etiqueta nueva y crearla. (La etiqueta nueva se crea al seleccionar **Guardar**).
 
 1. Seleccione **Siguiente**.
 1. Seleccione **Agregar recurso**.
-1. Para añadir recursos a la lista, selecciónelos en la página Seleccionar recursos y seleccione **Listo**.
+1. Para agregar recursos a la lista, selecciónelos en la página Seleccionar Assets y seleccione **Listo**.
 
    ![Seleccionar recursos para agregarlos a la lista](assets/selectassets.png)
 
 1. Los recursos se agregan a la página Lista de elementos.
-Para cambiar el orden de los recursos de la lista, seleccione y mantenga presionado el icono en forma de flechas ( ![dragndrop](assets/dragndrop.png) ) y arrastrar y soltar. Cuando el usuario abre una plantilla de carta en la interfaz de usuario Crear correspondencia, el contenido se organiza en el orden definido aquí.
+Para cambiar el orden de los recursos dentro de la lista, seleccione y mantenga presionado el icono en forma de flechas ( ![dragndrop](assets/dragndrop.png) ), y después arrástrelo y suéltelo. Cuando el usuario abre una plantilla de carta en la interfaz de usuario Crear correspondencia, el contenido se organiza en el orden definido aquí.
 
    ![Reordenar y configurar recursos en una lista](assets/listitems.png)
 
 1. Puede seleccionar las siguientes opciones para especificar cómo se comporta la lista en la interfaz de usuario de CCR:
 
-   * **Acceso a biblioteca**: Para habilitar el acceso a la biblioteca para agregar recursos, seleccione Acceso a la biblioteca. Cuando el acceso a la biblioteca está habilitado, el Administrador de reclamaciones puede añadir más contenido a la lista. De lo contrario, el Administrador de reclamaciones se limita al contenido que haya definido para la lista.
-   * **Bloquear orden**: para bloquear el orden de los recursos en la lista de modo que el Administrador de reclamaciones no pueda cambiarlo, seleccione Bloquear orden. Si no selecciona esta opción, el Administrador de reclamaciones puede cambiar el orden de los artículos de la lista.
+   * **Acceso a la biblioteca**: Para habilitar el acceso a la biblioteca para agregar recursos, seleccione Acceso a la biblioteca. Cuando el acceso a la biblioteca está habilitado, el Administrador de reclamaciones puede añadir más contenido a la lista. De lo contrario, el Administrador de reclamaciones se limita al contenido que haya definido para la lista.
+   * **Bloquear orden**: para bloquear el orden de los recursos de la lista de modo que el Administrador de reclamaciones no pueda cambiarlo, seleccione Bloquear orden. Si no selecciona esta opción, el Administrador de reclamaciones puede cambiar el orden de los artículos de la lista.
 
    * **Agregar viñetas**: utilice esta opción para aplicar una viñeta o un estilo de numeración al módulo. Puede utilizar un estilo de lista prediseñado o personalizado. También puede especificar el texto que se mostrará antes y después de cada uno de los elementos de la lista.
    * **Salto de página**: seleccione esta opción ( ![salto](assets/break.png)) para agregar un salto de página entre los contenidos de la lista. Cuando esta opción no está seleccionada ( ![sin_salto](assets/nobreak.png)), si el contenido de la lista se desborda hasta la siguiente página, toda la lista pasa a esa página en lugar de insertar un salto de página en medio de la lista.
@@ -271,7 +271,7 @@ Para cambiar el orden de los recursos de la lista, seleccione y mantenga presion
    * **Seleccionado:** cuando se selecciona esta opción, el contenido se preselecciona en la interfaz de usuario Crear correspondencia.
    * **Omitir estilo:** cuando se selecciona esta opción, el contenido omite las viñetas y la numeración en la interfaz de usuario Crear correspondencia. (Esta opción no está disponible para los módulos Imagen. Además, no es posible aplicar conjuntamente las opciones Omitir estilo, Compuesto e Ignorar estilo de lista al mismo módulo. Puede utilizar una de ellas si selecciona Agregar viñetas en ese módulo).
    * **Sangría:** puede cambiar el nivel de sangría de cada módulo/contenido seleccionado como parte de la lista. La sangría se especifica en términos de Niveles (empezando por cero), de forma que cada nivel de sangría corresponde a un relleno de 36 puntos.
-   * **Compuesto:** Al seleccionarla, la numeración compuesta se aplica como una combinación del estilo de la lista externa (principal) y su propio estilo. La numeración compuesta de esta lista anidada se basa en el orden en el que aparece en la lista externa.
+   * **Compuesto:** Cuando se selecciona, la numeración compuesta se aplica como una combinación del estilo de la lista externa (principal) y su propio estilo. La numeración compuesta de esta lista anidada se basa en el orden en el que aparece en la lista externa.
    * **Ignorar estilo de lista:** si la opción Numeración compuesta no está seleccionada, se activa la opción Ignorar estilo de lista. Esta selección ignora el estilo de la lista anidada, y la numeración continúa desde la lista externa. Por lo tanto, los módulos de la lista anidada se tratan como parte de la propia lista externa, sin tener en cuenta los estilos especificados en la lista anidada. Si la opción Ignorar estilo de lista no está seleccionada para una lista anidada, los módulos que forman parte de esa lista tienen su propio estilo de numeración.
    * **Mantener con siguiente:** establece el salto de página de los recursos contenidos en una lista. Si establece la propiedad Mantener con siguiente del recurso de una lista en **Activado**, ese recurso y el siguiente permanecerán en la misma página. Eso significa que el contenido del recurso seleccionado y el del siguiente no se dividirán en varias páginas.
 
@@ -313,20 +313,20 @@ El Editor de condiciones permite especificar una condición predeterminada. Si e
    * **Nombre:** el nombre único de la condición. No pueden existir dos recursos (texto, condición o lista) con el mismo nombre en ningún estado. En el campo Nombre, solo se pueden introducir caracteres, números y guiones en inglés. El campo Nombre se rellena automáticamente en función del campo Título. Los caracteres especiales, espacios, números y caracteres que no sean de inglés introducidos en el campo Título se sustituyen por guiones en el campo Nombre. Aunque el valor del campo Título se copia automáticamente en Nombre, puede editarlo.
    * **Descripción (opcional):** escriba una descripción para la condición.
    * **Diccionario de datos (opcional)**: si lo desea, puede seleccionar el diccionario de datos al que desea conectarse. Solo se pueden agregar a la lista recursos que utilicen el mismo diccionario de datos que la condición, o recursos que no tengan asignado un diccionario de datos. Asignar un diccionario de datos a una lista facilita a la persona que crea una plantilla de carta la tarea de encontrar la condición adecuada.
-   * **Etiquetas (opcional)**: si lo desea, seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una etiqueta nueva y crearla. (La etiqueta nueva se crea al seleccionar **Guardar**.)
+   * **Etiquetas (opcional)**: si lo desea, seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una etiqueta nueva y crearla. (La etiqueta nueva se crea al seleccionar **Guardar**).
 
 1. Seleccione **Siguiente**.
 1. Seleccione **Agregar recurso**.
-1. Para añadir un recurso a la condición, selecciónelo en la página Seleccionar recursos y seleccione **Listo**. Los recursos se agregan al panel Expresión.
+1. Para agregar un recurso a la condición, selecciónelo en la página Seleccionar Assets y seleccione **Listo**. Los recursos se agregan al panel Expresión.
 1. Puede seleccionar las siguientes opciones para especificar el comportamiento de la condición durante la ejecución:
 
    * **Deshabilitar evaluación de varios resultados\Habilitar evaluación de varios resultados**: Cuando esta opción está habilitada (aparece como &quot;Habilitar evaluación...&quot;), todas las condiciones se evalúan, y el resultado es la suma de todas las condiciones True. Si esta opción está desactivada (aparece como &quot;Deshabilitar evaluación...&quot;), solo se evalúa la primera condición que resulta ser True, y se convierte en el resultado de la condición.
    * **Salto de página**: seleccione esta opción ( ![salto](assets/break.png)) para agregar un salto de página entre los módulos de las condiciones. Cuando esta opción no está seleccionada (![sin_salto](assets/nobreak.png)), si una condición se desborda hasta la siguiente página, toda la condición se pasa a esa página en lugar de insertar un salto de página en medio de la condición.
 
-1. Para cambiar el orden de los recursos dentro de la condición, seleccione y mantenga presionado el icono en forma de flechas ( ![dragndrop](assets/dragndrop.png) ) y arrastrar y soltar. Cuando el usuario abre una plantilla de carta en la interfaz de usuario Crear correspondencia, el contenido se organiza en el orden definido aquí.
-1. Seleccionar **Eliminar** para eliminar la fila. Si selecciona Eliminar para la fila predeterminada, solo se borra la información del recurso.
-1. Seleccionar **Copiar** para duplicar una fila.
-1. Seleccionar **Editar** para cambiar el recurso o editar la expresión.
+1. Para cambiar el orden de los recursos dentro de la condición, seleccione y mantenga presionado el icono en forma de flechas ( ![dragndrop](assets/dragndrop.png)), y después arrástrelo y suéltelo. Cuando el usuario abre una plantilla de carta en la interfaz de usuario Crear correspondencia, el contenido se organiza en el orden definido aquí.
+1. Seleccione **Delete** para eliminar la fila. Si selecciona Eliminar para la fila predeterminada, solo se borra la información del recurso.
+1. Seleccione **Copiar** para duplicar una fila.
+1. Seleccione **Editar** para cambiar el recurso o editar la expresión.
 
    Además:
 
@@ -388,7 +388,7 @@ Tenga en cuenta los siguientes puntos al diseñar tablas:
    * encabezado y pie de página de una columna adicional
    * proporción de anchura de cada columna
 
-Puede anidar fragmentos en una carta. Eso significa que puede agregar un fragmento dentro de otro. La solución de Administración de correspondencia admite hasta cuatro niveles de anidación dentro de una carta: **Carta *>*Fragmento *>*Fragmento *>*Fragmento *>*Fragmento.**
+Puede anidar fragmentos en una carta. Eso significa que puede agregar un fragmento dentro de otro. La solución Administración de correspondencia admite hasta cuatro niveles de anidamiento dentro de una carta: **Carta *>*Fragmento *>*Fragmento *>*Fragmento *>*Fragmento.**
 
 Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragmentos de diseño, consulte [Ejemplo con archivos de ejemplo: uso de tablas estáticas y dinámicas en una carta](#examplewithsamplefiles).
 
@@ -403,7 +403,7 @@ Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragm
    * **Descripción (opcional)**: la descripción que aparece en la lista de la interfaz de usuario Administrar recursos.
    * **Etiquetas (opcional)**: si lo desea, seleccione las etiquetas que desea aplicar a la condición. También puede escribir el nombre de una etiqueta nueva y crearla.
 
-1. Seleccione el **Tabla** y especifique la siguiente información para el diseño:
+1. Seleccione la ficha **Tabla** y especifique la siguiente información para el diseño:
 
    * **Configuración para**: seleccione la tabla que está configurando. El sufijo del nombre de tabla en la lista desplegable es (Estático) si la tabla es estática o (Dinámico) si la tabla es dinámica. Las tablas estáticas contienen un número fijo de filas. Las tablas estáticas pueden contener campos y áreas de destino. Estos campos y áreas de destino no se pueden enlazar a DDE repetitivos. Los datos enlazados a celdas de tabla determinan el número de filas de las tablas dinámicas.
 

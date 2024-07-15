@@ -25,13 +25,13 @@ El contenido se añade empleando los [componentes](/help/sites-authoring/default
 
 >[!NOTE]
 >
->Su cuenta necesita el [derechos de acceso adecuados](/help/sites-administering/security.md) y [permissions](/help/sites-administering/security.md#permissions) para editar páginas.
+>Su cuenta necesita los [derechos de acceso apropiados](/help/sites-administering/security.md) y [permisos](/help/sites-administering/security.md#permissions) para editar páginas.
 >
 >Si encuentra algún problema, el Adobe le sugiere que se ponga en contacto con el administrador del sistema.
 
 >[!NOTE]
 >
->Si su página, plantilla o ambas están correctamente configuradas, puede utilizar un [diseño interactivo](/help/sites-authoring/responsive-layout.md) al editar.
+>Si tu página, plantilla o ambas están configuradas correctamente, puedes usar un [diseño interactivo](/help/sites-authoring/responsive-layout.md) al editar.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ El contenido se añade empleando los [componentes](/help/sites-authoring/default
 
 La barra de herramientas de página ofrece acceso a las funciones correspondientes, en función de la configuración de la página.
 
-![Barra de herramientas Página](assets/screen_shot_2018-03-22at111338.png)
+![Barra de herramientas de la página](assets/screen_shot_2018-03-22at111338.png)
 
 La barra de herramientas ofrece acceso a numerosas opciones. En función del contexto y la configuración actuales, puede que algunas opciones no estén disponibles.
 
@@ -53,7 +53,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
 * **Información de la página**
 
-  Proporciona acceso al [Información de página](/help/sites-authoring/author-environment-tools.md#page-information) menú que incluye detalles de página y acciones que se pueden realizar en la página, incluida la visualización y edición de información de página, la visualización de propiedades de página y la publicación/cancelación de publicación de la página.
+  Proporciona acceso al menú [Información de página](/help/sites-authoring/author-environment-tools.md#page-information), incluidos los detalles de página y las acciones que se pueden realizar en la página, como ver y editar información de página, ver propiedades de página y publicar y cancelar la publicación de la página.
 
   ![Información de la página](do-not-localize/screen_shot_2018-03-22at111437.png)
 
@@ -65,9 +65,9 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
 * **ContextHub**
 
-  Abre el [Context Hub](/help/sites-authoring/ch-previewing.md). Solo está disponible en el modo de vista previa.
+  Abre [context hub](/help/sites-authoring/ch-previewing.md). Solo está disponible en el modo de vista previa.
 
-  ![Context Hub](assets/screen_shot_2018-03-22at111543.png)
+  ![ContextHub](assets/screen_shot_2018-03-22at111543.png)
 
 * **Título de página**
 
@@ -77,7 +77,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
 * **Selector de modo**
 
-  Muestra el actual [modo](/help/sites-authoring/author-environment-tools.md#page-modes) y permite seleccionar otro modo, como edición, diseño, deformación de tiempo o segmentación.
+  Muestra el [modo](/help/sites-authoring/author-environment-tools.md#page-modes) actual y le permite seleccionar otro modo, como edición, diseño, deformación de tiempo o segmentación.
 
   ![Selector de modo](assets/chlimage_1-120.png)
 
@@ -89,7 +89,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
 * **Anotar**
 
-  Le permite añadir [anotaciones](/help/sites-authoring/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones de la página.
+  Le permite agregar [anotaciones](/help/sites-authoring/annotations.md) a la página al revisar una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones de la página.
 
   ![Anotar](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -105,17 +105,17 @@ Si una página es parte de uno o varios [flujos de trabajo](/help/sites-authorin
 
 La notificación enumera el flujo de trabajo que se ejecuta en la página. Si el usuario participa en el paso del flujo de trabajo actual, también dispondrá de opciones que [tengan efecto sobre el estado del flujo de trabajo](/help/sites-authoring/workflows-participating.md) y podrá obtener más información sobre el flujo de trabajo, como la siguiente:
 
-* **Completar** - Abre el **Completar elemento de trabajo** cuadro de diálogo
+* **Completar** - Abre el cuadro de diálogo **Completar elemento de trabajo**
 
-* **Delegar** - Abre el **Completar elemento de trabajo** cuadro de diálogo
+* **Delegar** - Abre el cuadro de diálogo **Completar elemento de trabajo**
 
 * **Ver detalles**: abre la ventana **Detalles** del flujo de trabajo.
 
-Completar y delegar los pasos del flujo de trabajo mediante la barra de notificaciones funciona igual que cuando [participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md) de la bandeja de entrada Notificación.
+Completar y delegar los pasos del flujo de trabajo mediante la barra de notificaciones funciona igual que cuando [participa en flujos de trabajo](/help/sites-authoring/workflows-participating.md) desde la bandeja de entrada de notificaciones.
 
 Si la página está sujeta a varios flujos de trabajo, el número de los mismos se muestra en el extremo derecho de la notificación, junto con botones de flecha que permiten desplazarse por los flujos de trabajo.
 
-![Notificación del número de flujos de trabajo](assets/chlimage_1-122.png)
+![Notificación para el número de flujos de trabajo](assets/chlimage_1-122.png)
 
 ## Marcador de posición de componente {#component-placeholder}
 
@@ -123,17 +123,17 @@ El marcador de posición de componente es un indicador para mostrar la posición
 
 * Al añadir un componente a la página (arrastrando desde el explorador de componentes):
 
-  ![adición de un nuevo componente](assets/screen_shot_2018-03-22at111928.png)
+  ![agregando un nuevo componente](assets/screen_shot_2018-03-22at111928.png)
 
 * Al mover un componente existente:
 
-  ![mover un componente existente](assets/screen_shot_2018-03-22at112445.png)
+  ![moviendo un componente existente](assets/screen_shot_2018-03-22at112445.png)
 
 ## Insertar un componente {#inserting-a-component}
 
 ### Inserción de un componente desde el navegador de componentes {#inserting-a-component-from-the-components-browser}
 
-Puede añadir un componente mediante el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). El [marcador de posición de componente](#component-placeholder) le muestra dónde se coloca el componente:
+Puede agregar un componente mediante el [explorador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). El [marcador de posición de componente](#component-placeholder) le muestra dónde se coloca el componente:
 
 1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-authoring/author-environment-tools.md#page-modes)
 1. Abra el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
@@ -147,18 +147,18 @@ Puede añadir un componente mediante el [navegador de componentes](/help/sites-a
 
 ### Inserción de un componente desde el sistema de párrafos {#inserting-a-component-from-the-paragraph-system}
 
-Puede añadir un componente mediante el **Arrastre los componentes aquí** del sistema de párrafos:
+Puede agregar un componente mediante el cuadro **Arrastrar componentes aquí** del sistema de párrafos:
 
 1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-authoring/author-environment-tools.md#page-modes)
 1. Existen dos formas de seleccionar y agregar un componente desde el sistema de párrafos:
 
    * Seleccione la opción **Insertar componente** (+) de la barra de herramientas de un componente existente o del cuadro **Arrastrar componentes aquí**.
 
-   ![Insertar selección de componentes](assets/screen_shot_2018-03-22at112536.png)
+   ![Insertar selección de componente](assets/screen_shot_2018-03-22at112536.png)
 
-   * Si está en un dispositivo de escritorio, puede hacer doble clic en el **Arrastre los componentes aquí** cuadro.
+   * Si está en un dispositivo de escritorio, puede hacer doble clic en el cuadro **Arrastrar componentes aquí**.
 
-   El **Insertar nuevo componente** se abre el cuadro de diálogo para que pueda seleccionar el componente requerido:
+   Se abre el cuadro de diálogo **Insertar nuevo componente** para que pueda seleccionar el componente requerido:
 
    ![Insertar nuevo componente](assets/screen_shot_2018-03-22at112650.png)
 
@@ -194,7 +194,7 @@ Esto es válido para los siguientes tipos de recursos (algunos dependen del sist
   </tr>
   <tr>
    <td>Fragmento de contenido</td>
-   <td>Fragmento de contenido<br /> </td>
+   <td>Fragmento de contenido <br /> </td>
   </tr>
  </tbody>
 </table>
@@ -207,7 +207,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
 1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-authoring/author-environment-tools.md#page-modes)
 1. Abra el [explorador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#component-placeholder) muestra dónde se encuentra el componente.
+1. Arrastre el recurso en cuestión hasta la posición deseada. El [marcador de posición de componente](#component-placeholder) le muestra dónde está colocado el componente.
 
    Se crea en la posición requerida un componente apropiado para el tipo de recurso y que contiene el recurso seleccionado.
 
@@ -217,7 +217,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 >
 >En un dispositivo móvil, el explorador de recursos rellena toda la pantalla. Cuando comienza a arrastrar un recurso, el explorador se cierra para mostrar de nuevo la página y poder colocarlo.
 
-Al examinar los recursos, si descubre que debe realizar algún cambio rápido en alguno de ellos, haga clic en el icono de edición que aparece junto al nombre del recurso para iniciar la acción [Editor de recursos](/help/assets/manage-assets.md).
+Al examinar los recursos, si descubre que debe realizar algún cambio rápido en alguno de ellos, haga clic en el icono de edición que aparece junto al nombre del recurso para iniciar [Editor de recursos](/help/assets/manage-assets.md).
 
 ![icono de edición](assets/screen_shot_2018-03-22at112735.png)
 
@@ -227,7 +227,7 @@ Al seleccionar un componente, se abre la barra de herramientas. Esto proporciona
 
 Las acciones disponibles para el usuario se muestran según corresponda y es posible que no todas las acciones se describan aquí.
 
-![opciones de barra de herramientas de componentes](assets/screen_shot_2018-03-22at112909.png)
+![opciones de la barra de herramientas de componentes](assets/screen_shot_2018-03-22at112909.png)
 
 * **Editar**
 
@@ -237,7 +237,7 @@ Las acciones disponibles para el usuario se muestran según corresponda y es pos
 
 * **Configurar**
 
-  [Depende del tipo de componente](/help/sites-authoring/default-components.md) esto permite editar y configurar las propiedades del componente. A menudo se abre un cuadro de diálogo.
+  [En función del tipo de componente](/help/sites-authoring/default-components.md), esto le permite editar y configurar las propiedades del componente. A menudo se abre un cuadro de diálogo.
 
   ![Configurar](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -261,7 +261,7 @@ Las acciones disponibles para el usuario se muestran según corresponda y es pos
 
 * **Insertar componente**
 
-  Esto abre el cuadro de diálogo para lo siguiente [añadir un componente](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  Esto abre el cuadro de diálogo para [agregar un componente](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
   ![Insertar componente](do-not-localize/screen_shot_2018-03-22at113017.png)
 
@@ -293,13 +293,13 @@ Las acciones disponibles para el usuario se muestran según corresponda y es pos
 
 * **Diseño**
 
-  Esto permite modificar la variable [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente seleccionado. Esta opción se aplica únicamente al componente seleccionado y no activa el [modo de diseño](/help/sites-authoring/author-environment-tools.md#page-modes) para toda la página.
+  Esto le permite modificar [el diseño](/help/sites-authoring/editing-content.md#edit-component-layout) del componente seleccionado. Esta opción se aplica únicamente al componente seleccionado y no activa el [modo de diseño](/help/sites-authoring/author-environment-tools.md#page-modes) para toda la página.
 
   ![Diseño](do-not-localize/screen_shot_2018-03-22at113044.png)
 
-* **Conversión en una variación de Fragmento de experiencia**
+* **Convertir en una variación de fragmento de experiencia**
 
-  Esto permite crear una [Fragmento de experiencia](/help/sites-authoring/experience-fragments.md) del componente seleccionado o añadirlo a un fragmento de experiencia existente.
+  Esto le permite crear un [Fragmento de experiencia](/help/sites-authoring/experience-fragments.md) a partir del componente seleccionado o agregarlo a un Fragmento de experiencia existente.
 
   ![Convertir en variación de fragmento de experiencia](do-not-localize/screen_shot_2018-03-22at113033.png)
 
@@ -318,7 +318,7 @@ Las opciones de edición exactas dependen del componente. Para algunos component
 
 * [Componente de texto](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-  ![Componente Texto](assets/screen_shot_2018-03-22at120215.png)
+  ![Componente de texto](assets/screen_shot_2018-03-22at120215.png)
 
 * Componente de imagen
 
@@ -329,15 +329,15 @@ Las opciones de edición exactas dependen del componente. Para algunos component
   >La edición no funciona con un componente de imagen vacío.
   >
   >
-  >[Arrastre o cargue una imagen (con Configurar)](/help/sites-authoring/default-components-foundation.md#image) antes de empezar a editarlo.
+  >[Arrastre o cargue una imagen (mediante Configurar)](/help/sites-authoring/default-components-foundation.md#image) para poder empezar a editarla.
 
 * Componente de imagen: pantalla completa
 
   [La introducción del modo de pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) para el componente de imagen permite disponer de más espacio para editar la imagen y mostrar opciones de edición adicionales como **Iniciar mapa** y **Restablecer zoom**. Además, la pantalla completa permite seleccionar ajustes preestablecidos de recorte.
 
-  ![Pantalla completa de componente de imagen](assets/screen_shot_2018-03-22at120529.png)
+  ![Pantalla completa del componente de imagen](assets/screen_shot_2018-03-22at120529.png)
 
-* Componentes construidos a partir de más de un componente básico, como [Componente de base Texto e imagen](/help/sites-authoring/default-components-foundation.md#text-image), primero pídale que confirme qué conjunto de opciones de edición desea utilizar:
+* Los componentes construidos a partir de más de un componente básico, como el [componente de base Texto e Imagen](/help/sites-authoring/default-components-foundation.md#text-image), primero le piden que confirme qué conjunto de opciones de edición desea utilizar:
 
   ![Opciones de edición de componentes](assets/chlimage_1-123.png)
 
@@ -374,7 +374,7 @@ Para mover un componente de párrafo:
 1. Seleccione el párrafo que desea mover con las funciones de seleccionar y mantener pulsado o de mantener pulsado.
 1. Arrastre el párrafo a la nueva ubicación. AEM indica dónde se puede depositar el párrafo. Colóquelo en la ubicación que desee.
 
-   ![mover componente de párrafo](assets/screen_shot_2018-03-22at121821.png)
+   ![moviendo componente de párrafo](assets/screen_shot_2018-03-22at121821.png)
 
 1. Se mueve el párrafo.
 
@@ -384,13 +384,13 @@ Para mover un componente de párrafo:
 
 ## Editar diseño de componente {#edit-component-layout}
 
-En lugar de cambiar repetidamente de edición a [modo de diseño](/help/sites-authoring/responsive-layout.md) para ajustar un componente, puede seleccionar la opción **Diseño** acción para que un componente cambie el diseño de ese componente. Esto ahorra tiempo al no tener que salir del modo de edición.
+En lugar de cambiar repetidamente de la edición al [modo de diseño](/help/sites-authoring/responsive-layout.md) para ajustar un componente, puede seleccionar la acción **Diseño** para que un componente cambie el diseño de ese componente. Esto ahorra tiempo al no tener que salir del modo de edición.
 
-1. En el **Editar** modo de la consola sitios, al seleccionar un componente, se muestra su barra de herramientas.
+1. En el modo **Editar** de la consola Sitios, al seleccionar un componente, se muestra la barra de herramientas del componente.
 
    ![Modo de edición en el formulario](assets/screen_shot_2018-03-22at133756.png)
 
-   Haga clic en **Diseño** para que pueda ajustar el diseño del componente.
+   Haga clic en la acción **Diseño** para que pueda ajustar el diseño del componente.
 
    ![Barra de herramientas de los componentes](do-not-localize/chlimage_1-21.png)
 
@@ -400,11 +400,11 @@ En lugar de cambiar repetidamente de edición a [modo de diseño](/help/sites-au
    * La barra de herramientas del emulador aparece en la parte superior de la pantalla.
    * En la barra de herramientas del componente se muestran las acciones de diseño en vez de las acciones de edición normales.
 
-   ![Vista previa de formularios en varios dispositivos](assets/screen_shot_2018-03-22at133843.png)
+   ![Vista previa de formulario en varios dispositivos](assets/screen_shot_2018-03-22at133843.png)
 
    Ahora puede modificar el diseño del componente como haría en el [modo de diseño](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
-1. Después de realizar los cambios necesarios, haga clic en **Cerrar** en el menú de acciones del componente para detener la modificación del diseño del componente. La barra de herramientas del componente recuperará su estado de edición normal.
+1. Después de realizar los cambios necesarios en el diseño, haga clic en **Cerrar** en el menú de acciones del componente para detener la modificación del diseño. La barra de herramientas del componente recuperará su estado de edición normal.
 
    ![Cerrar](do-not-localize/screen_shot_2018-03-22at133920.png)
 
@@ -436,13 +436,13 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
   O bien, vuelva a habilitar la herencia si ya se ha cancelado:
 
-  ![Volver a habilitar herencia](do-not-localize/screen_shot_2018-03-22at134417.png)
+  ![Volver a habilitar la herencia](do-not-localize/screen_shot_2018-03-22at134417.png)
 
   La acción Despliegue también está disponible en el modelo o en el origen de Live Copy:
 
   ![Despliegue](do-not-localize/screen_shot_2018-03-22at134516.png)
 
-* **Un sistema de párrafos heredado**
+* **Un Sistema De Párrafos Heredado**
 
   El cuadro de diálogo de configuración. Por ejemplo, como con el sistema de párrafos heredados:
 
@@ -450,9 +450,9 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
 ## Edición de las plantilla de página {#editing-the-page-template}
 
-Si la página está basada en un [plantilla editable](/help/sites-authoring/templates.md#editable-and-static-templates), puede cambiar fácilmente al [editor de plantillas](/help/sites-authoring/templates.md#editing-templates-template-authors) seleccionando **Editar plantilla** en el [Menú Información de página](/help/sites-authoring/author-environment-tools.md#page-information).
+Si la página se basa en una [plantilla editable](/help/sites-authoring/templates.md#editable-and-static-templates), puede cambiar fácilmente al [editor de plantillas](/help/sites-authoring/templates.md#editing-templates-template-authors) seleccionando **Editar plantilla** en el [menú Información de página](/help/sites-authoring/author-environment-tools.md#page-information).
 
-Si la página está basada en un [plantilla estática](/help/sites-authoring/templates.md#editable-and-static-templates), puede cambiar a [Modo de diseño](/help/sites-authoring/default-components-designmode.md) uso del [selector de modo de página](/help/sites-authoring/author-environment-tools.md#page-modes) en la barra de herramientas para habilitar o deshabilitar componentes para su uso en la página.
+Si la página se basa en una [plantilla estática](/help/sites-authoring/templates.md#editable-and-static-templates), puede cambiar a [modo de diseño](/help/sites-authoring/default-components-designmode.md) con el [selector de modo de página](/help/sites-authoring/author-environment-tools.md#page-modes) de la barra de herramientas para habilitar o deshabilitar los componentes y usarlos en la página.
 
 Puede ver fácilmente en qué plantilla se basa la página al seleccionar la página en la vista [Columna](/help/sites-authoring/basic-handling.md#column-view) o en la [vista Lista](/help/sites-authoring/basic-handling.md#list-view).
 
@@ -492,11 +492,11 @@ Existen dos métodos para visualizar la vista previa de una página:
 
 ### Modo de vista previa {#preview-mode}
 
-Al editar contenido, puede obtener una vista previa de la página mediante la vista previa [modo](/help/sites-authoring/author-environment-tools.md#page-modes). Este modo le permite hacer lo siguiente:
+Al editar contenido, puede obtener una vista previa de la página mediante el modo de vista previa [mode](/help/sites-authoring/author-environment-tools.md#page-modes). Este modo le permite hacer lo siguiente:
 
 * Oculte los distintos mecanismos de edición para poder tener una vista rápida del aspecto de la página cuando se publique.
 * Utilice los vínculos para desplazarse.
-* Sí lo tiene **no** actualice el contenido de la página.
+* No actualiza **no** el contenido de la página.
 
 Durante la creación, el modo de vista previa está disponible mediante el icono situado en la parte superior derecha del editor de páginas:
 
@@ -517,11 +517,11 @@ Las páginas se pueden bloquear desde:
    1. Seleccione la página con el [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Seleccione el icono de bloqueo.
 
-  ![Icono de bloqueo](assets/screen_shot_2018-03-22at134928.png)
+  ![Icono de candado](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
 
-   1. Para abrir el menú, seleccione la **Información de página** icono.
+   1. Para abrir el menú, seleccione el icono **Información de la página**.
    1. Seleccione la opción **bloquear página**.
 
 Una vez bloqueada, se actualiza la información de la vista de la consola y, al editar, se muestra un símbolo de bloqueo en la barra de herramientas.
@@ -530,7 +530,7 @@ Una vez bloqueada, se actualiza la información de la vista de la consola y, al 
 
 >[!CAUTION]
 >
->El bloqueo de páginas se puede realizar cuando [suplantación de un usuario](/help/sites-administering/security.md#impersonating-another-user). Sin embargo, una página bloqueada de este modo solo puede ser desbloqueada por el usuario que se ha suplantado o por el administrador.
+>El bloqueo de páginas se puede realizar al [suplantar a un usuario](/help/sites-administering/security.md#impersonating-another-user). Sin embargo, una página bloqueada de este modo solo puede ser desbloqueada por el usuario que se ha suplantado o por el administrador.
 >
 >Las páginas no se pueden desbloquear al suplantar al usuario que ha bloqueado la página.
 
@@ -544,7 +544,7 @@ El menú Información de página muestra la opción **Desbloquear** y el icono B
 
 >[!CAUTION]
 >
->El bloqueo de páginas se puede realizar cuando [suplantación de un usuario](/help/sites-administering/security.md#impersonating-another-user). Sin embargo, una página bloqueada de este modo solo puede ser desbloqueada por el usuario que se ha suplantado o por el administrador.
+>El bloqueo de páginas se puede realizar al [suplantar a un usuario](/help/sites-administering/security.md#impersonating-another-user). Sin embargo, una página bloqueada de este modo solo puede ser desbloqueada por el usuario que se ha suplantado o por el administrador.
 >
 >Las páginas no se pueden desbloquear al suplantar al usuario que ha bloqueado la página.
 
@@ -568,7 +568,7 @@ Los iconos siguientes permiten deshacer o rehacer una acción. Se muestran en la
 
 >[!NOTE]
 >
->El administrador del sistema puede [configurar varios aspectos de las funciones de Deshacer/Rehacer](/help/sites-administering/config-undo.md) según los requisitos de su instancia.
+>El administrador del sistema puede [configurar varios aspectos de las características Deshacer/Rehacer](/help/sites-administering/config-undo.md) según los requisitos de la instancia.
 
 AEM Almacena un historial de las acciones que realiza y la secuencia en que las realizó. Esta funcionalidad significa que puede deshacer varias acciones en el orden en que las realizó y rehacerlas para volver a aplicar una o más acciones, si es necesario.
 

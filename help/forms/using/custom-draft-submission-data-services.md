@@ -21,22 +21,22 @@ ht-degree: 47%
 
 AEM Forms permite a los usuarios guardar un formulario adaptable como borrador. La funcionalidad Borrador proporciona a los usuarios la opción de mantener un formulario de trabajo en curso. Un usuario puede completar y enviar el formulario en cualquier momento desde cualquier dispositivo.
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío en la instancia de publicación en `/content/forms/fp` nodo.
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío en la instancia de Publish en el nodo `/content/forms/fp`.
 
 Sin embargo, los componentes del portal de AEM Forms proporcionan servicios de datos que le permiten personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar los datos en un repositorio de datos implementado en su organización actualmente.
 
-Para personalizar el almacenamiento de los datos de usuario, debe implementar la variable [Borrador de datos](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) y [Datos de envío](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) servicios.
+Para personalizar el almacenamiento de los datos de usuario, debe implementar los servicios [Datos de borrador](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) y [Datos de envío](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
 
 ## Requisitos previos {#prerequisites}
 
-* Activar [Componentes del portal de Forms](/help/forms/using/enabling-forms-portal-components.md)
-* Crear un [Página del portal de Forms](/help/forms/using/creating-form-portal-page.md)
-* Activar [formularios adaptables para Forms Portal](/help/forms/using/draft-submission-component.md)
+* Habilitar [componentes del portal de Forms](/help/forms/using/enabling-forms-portal-components.md)
+* Crear una [página del portal de Forms](/help/forms/using/creating-form-portal-page.md)
+* Habilitar [formularios adaptables para el portal de Forms](/help/forms/using/draft-submission-component.md)
 * Más información sobre los [detalles de implementación del almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Servicio Datos de borrador {#draft-data-service}
 
-Para personalizar el almacenamiento de los datos de borrador del usuario, debe proporcionar implementación para todos los métodos del `DraftAFDataService` interfaz.
+Para personalizar el almacenamiento de los datos de borrador del usuario, debe proporcionar implementación para todos los métodos de la interfaz `DraftAFDataService`.
 
 En el siguiente ejemplo de código de la interfaz se proporciona una descripción de los métodos y sus argumentos:
 
@@ -83,7 +83,7 @@ public interface DraftAFDataService {
 
 ## Servicio Envío de datos {#submission-data-service}
 
-Para personalizar el almacenamiento de los datos de envío de los usuarios, debe proporcionar implementación para todos los métodos del `SubmittedAFDataService` interfaz.
+Para personalizar el almacenamiento de los datos de envío de los usuarios, debe proporcionar implementación para todos los métodos de la interfaz `SubmittedAFDataService`.
 
 En el siguiente ejemplo de código de la interfaz se proporciona una descripción de los métodos y sus argumentos:
 

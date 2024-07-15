@@ -31,7 +31,7 @@ Los principios utilizados para desarrollar las configuraciones se han basado en 
 * Referido desde nodos de análisis por ruta.
 * Fácilmente extensible.
 * Tiene la flexibilidad de adaptarse a configuraciones más complejas, como [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Compatibilidad con dependencias (por ejemplo, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Los complementos de necesitan un [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configuración).
+* Compatibilidad con dependencias (por ejemplo, los complementos de [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) necesitan una configuración de [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)).
 
 ## Estructura {#structure}
 
@@ -52,7 +52,7 @@ Para proporcionar una configuración para nuevos servicios, haga lo siguiente:
    * una plantilla de configuración
    * un componente de configuración
 
-La plantilla y el componente deben heredar la variable `sling:resourceSuperType` desde la plantilla base:
+La plantilla y el componente deben heredar `sling:resourceSuperType` de la plantilla base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -70,7 +70,7 @@ La plantilla amplía la plantilla base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-Y defina una `resourceType` que señala al componente personalizado.
+Y defina un `resourceType` que apunte al componente personalizado.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -122,8 +122,8 @@ El modelo de contenido se almacena como `cq:Page` en:
 
 Las configuraciones se almacenan en el subnodo `jcr:content`.
 
-* Las propiedades fijas definidas en un cuadro de diálogo deben almacenarse en `jcr:node` directamente.
-* Elementos dinámicos (uso de `parsys` o `iparsys`) utilice un subnodo para almacenar los datos del componente.
+* Las propiedades fijas definidas en un cuadro de diálogo deben almacenarse directamente en `jcr:node`.
+* Los elementos dinámicos (que utilizan `parsys` o `iparsys`) utilizan un subnodo para almacenar los datos del componente.
 
 ```xml
 /etc/cloudservices/service/config/jcr:content as nt:unstructured
@@ -136,11 +136,11 @@ propertyname
 
 ### API {#api}
 
-Para obtener documentación de referencia sobre la API, consulte [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Para obtener documentación de referencia sobre la API, consulte [com.day.cq.wcm.webserviceSupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### AEM Integración de {#aem-integration}
 
-Los servicios disponibles se enumeran en la **Cloud Service** de la pestaña **Propiedades de página** (de cualquier página que herede de `foundation/components/page` o `wcm/mobile/components/page`).
+Los servicios disponibles se enumeran en la ficha **Cloud Service** del cuadro de diálogo **Propiedades de página** (de cualquier página que herede de `foundation/components/page` o `wcm/mobile/components/page`).
 
 La pestaña también proporciona lo siguiente:
 
@@ -151,19 +151,19 @@ La pestaña también proporciona lo siguiente:
 
 Al almacenar las credenciales de usuario del servicio, se deben cifrar todas las contraseñas.
 
-Puede conseguirlo si agrega un campo de formulario oculto. Este campo debe tener la anotación `@Encrypted` en el nombre de la propiedad; es decir, para el `password` campo el nombre se escribiría de la siguiente manera:
+Puede conseguirlo si agrega un campo de formulario oculto. Este campo debe tener la anotación `@Encrypted` en el nombre de propiedad; es decir, para el campo `password` el nombre se escribiría como:
 
 `password@Encrypted`
 
-La propiedad se cifrará automáticamente (con el `CryptoSupport` servicio) por el `EncryptionPostProcessor`.
+La propiedad será cifrada automáticamente (mediante el servicio `CryptoSupport`) por el `EncryptionPostProcessor`.
 
 >[!NOTE]
 >
->Esto es similar al estándar ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` anotaciones.
+>Esto es similar a las anotaciones estándar de ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)`.
 
 >[!NOTE]
 >
->De forma predeterminada, la variable `EcryptionPostProcessor` solo cifra `POST` solicitudes realizadas a `/etc/cloudservices`.
+>De manera predeterminada, `EcryptionPostProcessor` solo cifra `POST` solicitudes realizadas a `/etc/cloudservices`.
 
 #### Propiedades adicionales para la página de servicio jcr:nodos de contenido {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -175,11 +175,11 @@ La propiedad se cifrará automáticamente (con el `CryptoSupport` servicio) por 
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Ruta de referencia a un componente que se incluirá automáticamente en la página.<br /> Se utiliza para funcionalidades adicionales e inclusiones de JS.<br /> Esto incluye el componente de la página donde<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> se incluye (normalmente antes de que <code>body</code> ).<br /> En caso de que se publique Adobe Analytics y Adobe Target, se usa para incluir funcionalidades adicionales, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td>
+   <td>Ruta de referencia a un componente que se incluirá automáticamente en la página.<br />: se utiliza para funcionalidad adicional e inclusiones de JS.<br /> Esto incluye el componente en la página donde se incluye <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente antes de la etiqueta <code>body</code>).<br /> En caso de que Adobe Analytics y Adobe Target se comporten de esta manera, se usa para incluir funcionalidades adicionales, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td>
   </tr>
   <tr>
    <td>descripción</td>
-   <td>Breve descripción del servicio.<br /> </td>
+   <td>Descripción breve del servicio.<br /> </td>
   </tr>
   <tr>
    <td>descriptionExtended</td>
@@ -216,7 +216,7 @@ La propiedad se cifrará automáticamente (con el `CryptoSupport` servicio) por 
 
 Estos servicios se proporcionan de forma predeterminada:
 
-* [Fragmentos de rastreador](/help/sites-administering/external-providers.md) (Google, WebTrends, etc.)
+* [Fragmentos de seguimiento](/help/sites-administering/external-providers.md) (Google, WebTrends, etc.)
 * [API de Rest](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->

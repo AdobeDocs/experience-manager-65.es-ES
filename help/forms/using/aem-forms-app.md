@@ -57,9 +57,9 @@ Para sincronizar su formulario en la aplicación de AEM Forms:
 1. En la instancia de autor, seleccione un formulario y haga clic en **[!UICONTROL Ver propiedades]**.
 
 1. En la página Propiedades, haga clic en **[!UICONTROL Avanzadas]**.
-1. En Avanzadas, active la opción: **[!UICONTROL Sincronizar con la aplicación de AEM Forms]** y seleccione **[!UICONTROL Guardar]**.
+1. En Avanzadas, habilita la opción: **[!UICONTROL Sincronizar con la aplicación de AEM Forms]** y selecciona **[!UICONTROL Guardar]**.
 
-Cuando se publique el formulario, la aplicación se sincronizará con el servidor y recuperará el formulario. Para sincronizar varios formularios, en la instancia de autor, seleccione varios formularios en el administrador de formularios y seleccione **[!UICONTROL Sincronizar con la aplicación de AEM Forms]**.
+Cuando se publique el formulario, la aplicación se sincronizará con el servidor y recuperará el formulario. Para sincronizar varios formularios, en la instancia de autor, selecciona varios formularios en el administrador de formularios y selecciona **[!UICONTROL Sincronizar con la aplicación de AEM Forms]**.
 
 ## Compatibilidad con dispositivos móviles {#mobile-device-support}
 
@@ -122,7 +122,7 @@ Consulte [Usar el guardado automático en la aplicación de AEM Forms](/help/for
 
 ## Diferencias entre la bandeja de entrada de AEM y las características de la aplicación de AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son la [Bandeja de entrada de AEM](/help/forms/using/manage-applications-inbox.md) y la aplicación de AEM Forms. Sin embargo, las capacidades de la bandeja de entrada de AEM y de la aplicación de AEM Forms. AEM La bandeja de entrada de solo funciona con [Flujos de trabajo centrados en Forms](/help/forms/using/aem-forms-workflow.md) mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con la administración de procesos. Para obtener más información sobre las diferencias entre la Bandeja de entrada de AEM y las funciones de la aplicación de AEM Forms, consulte [Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms](capabilities-osgi-jee-workflows.md).
+Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son la [Bandeja de entrada de AEM](/help/forms/using/manage-applications-inbox.md) y la aplicación de AEM Forms. Sin embargo, las capacidades de la bandeja de entrada de AEM y de la aplicación de AEM Forms. AEM La Bandeja de entrada de solo funciona con [flujos de trabajo centrados en Forms](/help/forms/using/aem-forms-workflow.md), mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con la administración de procesos. Para obtener más información sobre las diferencias entre la Bandeja de entrada de AEM y las funciones de la aplicación de AEM Forms, consulte [Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms](capabilities-osgi-jee-workflows.md).
 
 ## Formularios compatibles {#supported-forms}
 
@@ -182,7 +182,7 @@ El código fuente de la aplicación de AEM Forms se puede extraer del `adobe-lc-
 Para obtener la fuente de la aplicación de AEM Forms, realice los siguientes pasos:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Seleccionar **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
+1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.

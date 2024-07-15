@@ -22,20 +22,20 @@ El Verificador de vínculos se ejecuta automáticamente para ayudar a los autore
 * Mostrar una lista de todos los vínculos externos del contenido
 * Realización de transformaciones de vínculos
 
-El Verificador de vínculos tiene varias opciones [opciones de configuración](#configuring) como definir la validación interna, permitir que determinados vínculos o patrones de vínculo se omitan en la validación y reescribir las reglas de reescritura de vínculos.
+El Verificador de vínculos tiene varias [opciones de configuración](#configuring), como definir la validación interna, permitir que ciertos vínculos o patrones de vínculos se omitan de la validación y reescribir las reglas de reescritura de vínculos.
 
-El Verificador de vínculos valida ambos [vínculos internos](#internal) y [vínculos externos.](#external)
+El Verificador de vínculos valida [vínculos internos](#internal) y [vínculos externos.](#external)
 
 >[!NOTE]
 >
->Dado que el Verificador de vínculos comprueba los vínculos de todas las páginas de contenido, puede afectar al rendimiento de los repositorios grandes. En estos casos, es posible que deba [configurar la frecuencia con la que se ejecuta el Verificador de vínculos](#configuring) o [deshabilitarlo.](#disabling)
+>Dado que el Verificador de vínculos comprueba los vínculos de todas las páginas de contenido, puede afectar al rendimiento de los repositorios grandes. En estos casos, es posible que tenga que [configurar la frecuencia con la que se ejecuta el Verificador de vínculos](#configuring) o [deshabilitarlo.](#disabling)
 
 ## Comprobación de vínculos internos {#internal}
 
 AEM Los vínculos internos son vínculos a otro contenido del repositorio de la. Los vínculos internos se pueden agregar utilizando el selector de rutas en RTE o utilizando un componente personalizado. Por ejemplo:
 
 * Su página `/content/wknd/us/en/adventures/ski-touring.html`
-* Contiene un vínculo a `/content/wknd/us/en/adventures/extreme-ironing.html` en un [Componente Texto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* Contiene un vínculo a `/content/wknd/us/en/adventures/extreme-ironing.html` en un [componente Texto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Los vínculos internos se validan en cuanto el autor de contenido añade un vínculo interno a una página. Si el vínculo deja de ser válido:
 
@@ -49,7 +49,7 @@ Los vínculos internos se validan en cuanto el autor de contenido añade un vín
 AEM Los vínculos externos son vínculos al contenido fuera del repositorio de la. Se pueden añadir vínculos externos mediante RTE o mediante un componente personalizado. Por ejemplo:
 
 * Su página `/content/wknd/us/en/adventures/ski-touring.html`
-* Contiene un vínculo a `https://bunwarmerthermalunderwear.com` en un [Componente Texto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* Contiene un vínculo a `https://bunwarmerthermalunderwear.com` en un [componente Texto.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
 Los vínculos externos se validan para la sintaxis y comprobando su disponibilidad. Esta comprobación se realiza de forma asíncrona en un entorno interno configurable. Si el Verificador de vínculos encuentra un vínculo externo no válido:
 
@@ -58,69 +58,69 @@ Los vínculos externos se validan para la sintaxis y comprobando su disponibilid
 
 ![Vínculo interno roto al crear una página](assets/link-checker-invalid-link-external.png)
 
-Además, la variable [Comprobador de vínculos externos](#external-link-checker) proporciona una descripción general de todos los vínculos externos de las páginas de contenido.
+Además, la interfaz [Comprobador de vínculos externos](#external-link-checker) proporciona una descripción general de todos los vínculos externos de las páginas de contenido.
 
 ### Uso del Comprobador de vínculos externos {#external-link-checker}
 
 Para utilizar el Comprobador de vínculos externos:
 
-1. Uso de **Navegación**, seleccione **Herramientas**, entonces **Sites**.
-1. Seleccionar **Comprobador de vínculos externos** y se muestra una lista de todos los vínculos externos.
+1. Usando **Navegación**, seleccione **Herramientas** y luego **Sitios**.
+1. Seleccione **Comprobador de vínculos externos** y se mostrará una lista de todos los vínculos externos.
 
 ![La ventana Comprobador de vínculos externos](assets/external-link-checker.png)
 
 Se muestra la siguiente información:
 
 * **Estado** - El estado de validación del vínculo que puede ser uno de los siguientes:
-   * **Válido** : el verificador de vínculos puede acceder al vínculo externo
-   * **Pendiente** : el vínculo externo se añadió al contenido del sitio, pero el verificador de vínculos aún no lo ha validado
+   * **Válido**: el verificador de vínculos puede acceder al vínculo externo
+   * **Pendiente**: el vínculo externo se agregó al contenido del sitio, pero el Verificador de vínculos aún no lo ha validado
    * **No válido** - El verificador de vínculos no puede acceder al vínculo externo
-* **URL** - El vínculo externo
-* **Referente** : la página de contenido que contiene el vínculo externo
+* **URL**: el vínculo externo
+* **Referente**: la página de contenido que contiene el vínculo externo
    * Esto solo se rellena [si está configurado.](#configuring)
 * **Última comprobación** - La última vez que el Verificador de vínculos validó el vínculo externo
-   * Frecuencia con la que se comprueban los vínculos [se puede configurar.](#configuring)
-* **Último estado** - El último código de estado del HTML devuelto cuando el vínculo activado comprobó por última vez el vínculo externo
-* **Última disponibilidad** - Tiempo transcurrido desde la última vez que el vínculo estuvo disponible para el Verificador de vínculos
-* **Último acceso** - tiempo transcurrido desde que se accedió por última vez a la página con el vínculo externo en la interfaz de creación
+   * La frecuencia con la que se comprueban los vínculos [ es configurable.](#configuring)
+* **Último estado**: el último código de estado del HTML devuelto cuando el vínculo activado comprobó por última vez el vínculo externo
+* **Última disponibilidad** - Tiempo desde la última vez que el vínculo estuvo disponible para el Verificador de vínculos
+* **Último acceso**: tiempo transcurrido desde que se accedió por última vez a la página con el vínculo externo en la interfaz de creación
 
 Puede manipular el contenido de la ventana mediante los dos botones situados en la parte superior de la lista de vínculos:
 
 * **Actualizar** - Para actualizar el contenido de la lista
-* **Marque** - Para comprobar un vínculo externo individual seleccionado en la lista
+* **Comprobar** - Para comprobar un vínculo externo individual seleccionado en la lista
 
 ### Funcionamiento del Comprobador de vínculos externos {#how-it-works}
 
-Aunque es fácil de usar, el Comprobador de vínculos externos depende de varios servicios y comprender cómo funcionan le ayuda a comprender cómo hacerlo [configuración del Verificador de vínculos](#configuring) para satisfacer sus necesidades.
+Aunque es fácil de usar, el Verificador de vínculos externos depende de varios servicios y comprender cómo funcionan te ayuda a comprender cómo [configurar el Verificador de vínculos](#configuring) para satisfacer tus necesidades.
 
 1. Cada vez que un autor de contenido guarda un vínculo a una página, se activa un controlador de eventos.
-1. El controlador de eventos recorre todo el contenido de `/content` y comprueba los vínculos nuevos o actualizados y los añade a una caché para el Verificador de vínculos.
-1. El **Servicio Day CQ Link Checker** a continuación, se ejecuta con una programación regular para comprobar si las entradas de la caché contienen sintaxis válida.
-1. A continuación, los vínculos validados con sintaxis aparecen en la variable [Comprobador de vínculos externos](#external-link-checker) ventana. Sin embargo, estarán en un **Pendiente** estado.
-1. El **Tarea del verificador de vínculos CQ diarios** a continuación, se ejecuta de forma regular para validar los vínculos realizando una llamada de GET.
-1. El **Tarea del verificador de vínculos CQ diarios** a continuación, actualiza las entradas de la ventana Comprobador de vínculos externos con los resultados de las llamadas de GET.
+1. El controlador de eventos recorre todo el contenido de `/content`, busca vínculos nuevos o actualizados y los agrega a una caché para el Verificador de vínculos.
+1. A continuación, el **servicio Day CQ Link Checker** se ejecuta de forma regular para comprobar si las entradas de la caché contienen sintaxis válida.
+1. Los vínculos validados por sintaxis aparecerán en la ventana [Comprobador de vínculos externos](#external-link-checker). Sin embargo, estarán en estado **Pendiente**.
+1. A continuación, **Day CQ Link Checker Task** se ejecuta de forma regular para validar los vínculos mediante una llamada de GET.
+1. La **tarea Day CQ Link Checker** actualiza las entradas de la ventana External Link Checker con los resultados de las llamadas de GET.
 
 ## Configuración del Verificador de vínculos {#configuring}
 
 AEM El Verificador de vínculos está disponible automáticamente de forma predeterminada en la aplicación de la función de verificación de vínculos de la interfaz de usuario de. Sin embargo, hay varias configuraciones de OSGi que se pueden modificar para cambiar su comportamiento:
 
-* **Day CQ Link Checker Info Storage Service** : Este servicio define el tamaño de la caché del Verificador de vínculos en el repositorio.
-* **Servicio Day CQ Link Checker** : Este servicio realiza una comprobación asíncrona de la sintaxis de los vínculos externos. Puede definir el periodo de comprobación y qué tipos de vínculos omite el verificador, entre otras opciones.
-* **Tarea del verificador de vínculos CQ diarios** : Este servicio realiza la validación de GET de vínculos externos. Permite definir por separado los intervalos para comprobar los vínculos buenos y malos, entre otras opciones.
-* **Day CQ Link Checker Transformer** : permite convertir vínculos en función de un conjunto de reglas definidas por el usuario.
+* **Servicio Day CQ Link Checker Info Storage**: este servicio define el tamaño de la caché del Verificador de vínculos en el repositorio.
+* **Servicio Day CQ Link Checker**: este servicio realiza una comprobación asincrónica de la sintaxis de los vínculos externos. Puede definir el periodo de comprobación y qué tipos de vínculos omite el verificador, entre otras opciones.
+* **Tarea del verificador de vínculos CQ de día**: este servicio realiza la validación de GET de los vínculos externos. Permite definir por separado los intervalos para comprobar los vínculos buenos y malos, entre otras opciones.
+* **Day CQ Link Checker Transformer**: permite convertir vínculos según un conjunto de reglas definido por el usuario.
 
-Ver el documento [Ajustes de configuración de OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obtener más información sobre cómo cambiar la configuración de OSGi.
+Consulte el documento [Configuración de OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obtener más información sobre cómo cambiar la configuración de OSGi.
 
 ## Desactivación del Verificador de vínculos {#disabling}
 
 Puede optar por desactivar el Verificador de vínculos por completo. Para ello:
 
 1. Abra la consola OSGi.
-1. Edite el **Day CQ Link Checker Transformer**
+1. Editar el **transformador Day CQ Link Checker**
 1. Marque las opciones que desee desactivar:
-   * **Desactivar comprobación** : para deshabilitar la validación de vínculos
-   * **Deshabilitar reescritura** : para deshabilitar las transformaciones de vínculos
+   * **Deshabilitar comprobación** - para deshabilitar la validación de vínculos
+   * **Deshabilitar la reescritura** - para deshabilitar las transformaciones de vínculos
 
 >[!NOTE]
 >
->Si deshabilita la comprobación de vínculos después de empezar a crear el contenido, es posible que siga viendo entradas en la [Ventana Comprobador de vínculos externos](#external-link-checker), pero ya no se actualizarán.
+>Si deshabilita la comprobación de vínculos después de empezar a crear el contenido, es posible que siga viendo las entradas en la ventana [Comprobador de vínculos externos](#external-link-checker), pero ya no se actualizarán.

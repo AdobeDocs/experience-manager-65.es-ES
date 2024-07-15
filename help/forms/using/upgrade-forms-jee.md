@@ -20,7 +20,7 @@ ht-degree: 77%
 
 AEM 6.5.18.0 Forms en JEE proporciona dos tipos de instaladores: Programa de instalación completo y Programa de instalación de parches.
 
-**Programa de instalación completo**: Puede utilizar el [AEM 6.5.18.0 en el instalador completo de JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) para configurar nuevas instancias de AEM Forms AEM o realizar actualizaciones de Forms AEM 6.5.x.x en JEE a 6.5.18.0 Forms en JEE.
+**Programa de instalación completo**: Puede usar el [6.5.18.0 del programa de instalación completo de JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) para configurar nuevas instancias de AEM Forms o realizar actualizaciones desde la versión 6.5.x.x de Forms en JEE a la versión 6.5.18.0 de Forms en JEE, o bien puede usar el programa de instalación completo de JEE 6.5.18.0 para configurar nuevas instancias de AEM o realizar actualizaciones desde la versión 6.5.x.x de AEM en JEE a la versión 6.5.18.0 de AEM en JEE.
 
 **Programa de instalación de parches**: [El programa de instalación de parches AEM 6.5.18.0 en JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) es para clientes que ya utilizan versiones de AEM 6.5.x.x. Puede utilizar el programa de instalación de parches para actualizar a la versión más reciente de AEM Forms.
 

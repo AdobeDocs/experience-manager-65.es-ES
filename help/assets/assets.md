@@ -21,13 +21,13 @@ ht-degree: 4%
 | AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/overview) |
 | AEM 6.5 | Este artículo |
 
-AEM [!DNL Assets] es una herramienta de administración de activos digitales (DAM) que forma parte de [!DNL Experience Manager] y permite a su empresa gestionar y distribuir recursos digitales. Los usuarios de una organización pueden administrar, almacenar y acceder a muchos tipos de recursos digitales, como imágenes, vídeos, documentos, clips de audio, archivos 3D y medios enriquecidos, para usarlos en la web, en la impresión y para la distribución digital.
+AEM [!DNL Assets] es una herramienta de administración de activos digitales (DAM) que forma parte de la plataforma [!DNL Experience Manager] y permite a su empresa administrar y distribuir recursos digitales. Los usuarios de una organización pueden administrar, almacenar y acceder a muchos tipos de recursos digitales, como imágenes, vídeos, documentos, clips de audio, archivos 3D y medios enriquecidos, para usarlos en la web, en la impresión y para la distribución digital.
 
 ## ¿Qué es la administración de activos digitales? {#what-is-digital-asset-management}
 
-[!DNL Assets] permite compartir y distribuir en toda la empresa los recursos digitales clave de la organización. CIF Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales, como imágenes, gráficos, audio, vídeo y documentos, a través de una interfaz web (o una carpeta de o WebDAV).
+[!DNL Assets] proporciona uso compartido y distribución en toda la empresa de los recursos digitales clave de una organización. CIF Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales, como imágenes, gráficos, audio, vídeo y documentos, a través de una interfaz web (o una carpeta de o WebDAV).
 
-[!DNL Assets] capacidad de [!DNL Experience Manager] permite hacer lo siguiente:
+La capacidad [!DNL Assets] de [!DNL Experience Manager] le permite hacer lo siguiente:
 
 * Agregue y comparta imágenes, documentos, archivos de audio y archivos de vídeo en varios formatos de archivo.
 * Administre los recursos agrupándolos por etiquetas, lightbox o estrellas (sus favoritos). Agregar anotaciones a recursos.
@@ -38,7 +38,7 @@ AEM [!DNL Assets] es una herramienta de administración de activos digitales (DA
 
 ### [!DNL Experience Manager Assets] está integrado con [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
-[!DNL Assets] se integra completamente con [!DNL Sites] y funciona perfectamente para todos los casos de uso. Por ejemplo, al crear páginas web, la variable [!DNL Sites] Los creadores pueden encontrar y utilizar los recursos digitales a través del buscador de contenido. La interfaz de usuario de [!DNL Assets] es igual que el de [!DNL Sites]. Consulte un [descripción general de Sites](/help/sites-authoring/page-authoring.md) para obtener información detallada.
+[!DNL Assets] se integra completamente con [!DNL Sites] y funciona sin problemas en todos los casos de uso. Por ejemplo, al crear páginas web, los autores de [!DNL Sites] pueden encontrar y utilizar los recursos digitales mediante el buscador de contenido. La interfaz de usuario de [!DNL Assets] es la misma que la de [!DNL Sites]. Vea [información general de Sites](/help/sites-authoring/page-authoring.md) para obtener detalles completos.
 
 La interfaz de usuario básica es la misma que la de [!DNL Sites]. Consulte [Información general de los sitios](/help/sites-authoring/page-authoring.md) para obtener información detallada.
 
@@ -57,31 +57,31 @@ Un recurso es esencialmente un binario más metadatos más representaciones más
 
 >[!CAUTION]
 >
->La carga o edición de un gran volumen de recursos (especialmente imágenes) puede afectar al rendimiento de su [!DNL Experience Manager] implementación.
+>Cargar o editar un gran volumen de recursos (especialmente imágenes) puede afectar el rendimiento de su implementación de [!DNL Experience Manager].
 
-### [!DNL Experience Manager Assets] terminología {#aem-assets-terminology}
+### Terminología de [!DNL Experience Manager Assets] {#aem-assets-terminology}
 
-Cuando se trabaja con recursos digitales en [!DNL Experience Manager], le resultará útil si comprende la siguiente terminología:
+Cuando se trabaja con recursos digitales en [!DNL Experience Manager], es útil entender la siguiente terminología:
 
 * **Colección**: una colección de recursos, ya sea en función de la ubicación física (carpeta), las propiedades comunes (carpeta de búsqueda guardada) o la selección del usuario (carpetas Lightbox).
 
-* **Metadatos** [!DNL Assets] tienen metadatos; por ejemplo, autor, fecha de caducidad e información de DRM (Digital Rights Management). Los metadatos están bajo control de acceso. [!DNL Assets] admite los siguientes esquemas de metadatos comunes predeterminados:
+* **Los metadatos** [!DNL Assets] tienen metadatos; por ejemplo, autor, fecha de caducidad e información de DRM (Digital Rights Management). Los metadatos están bajo control de acceso. [!DNL Assets] admite los siguientes esquemas de metadatos comunes de forma predeterminada:
 
    * Núcleo de Dublín: incluye autor, descripción, fecha, asunto, etc.
    * IPTC: incluye evento, modelo, ubicación, etc.
-   * WCM: incluidas las propiedades de página, [!UICONTROL Tiempo de activación] y [!UICONTROL Tiempo de inactividad], etc.
+   * WCM: incluyendo propiedades de página, [!UICONTROL Tiempo de activación] y [!UICONTROL Tiempo de inactividad], etc.
 
-* **Etiquetado**: [!DNL Assets] pueden etiquetarse y clasificarse. Consulte [organización de recursos](/help/assets/organize-assets.md).
+* **Etiquetado**: [!DNL Assets] se puede etiquetar y clasificar. Consulte [organización de recursos](/help/assets/organize-assets.md).
 
-* **Representaciones**: una representación es la representación binaria de un recurso. [!DNL Assets] siempre tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones adicionales que se crean, por ejemplo, mediante pasos de flujo de trabajo personalizados o cuando se carga un recurso. Las representaciones pueden tener un tamaño diferente, con una resolución diferente, con una marca de agua agregada o cualquier otra característica modificada.
+* **Representaciones**: una representación es la representación binaria de un recurso. [!DNL Assets] siempre tiene una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones adicionales que se crean, por ejemplo, mediante pasos de flujo de trabajo personalizados o cuando se carga un recurso. Las representaciones pueden tener un tamaño diferente, con una resolución diferente, con una marca de agua agregada o cualquier otra característica modificada.
 
-* **Versiones**: el control de versiones crea una instantánea de los recursos digitales en un momento específico. Puede restaurar los recursos a versiones anteriores. Consulte [versiones en [!DNL Assets]](manage-assets.md#asset-versioning).
+* **Versiones**: el control de versiones crea una instantánea de los recursos digitales en un momento específico. Puede restaurar los recursos a versiones anteriores. Ver [versiones en [!DNL Assets]](manage-assets.md#asset-versioning).
 
-* **Subrecursos**: los subrecursos son recursos que conforman un recurso, por ejemplo, capas de un [!DNL Adobe Photoshop] archivo o páginas en un archivo de PDF. Entrada [!DNL Assets], puede administrar subrecursos del mismo modo que lo haría con los recursos.
+* **Subrecursos**: Los subrecursos son recursos que constituyen un recurso, por ejemplo, capas de un archivo de [!DNL Adobe Photoshop] o páginas de un archivo de PDF. En [!DNL Assets], puede administrar subrecursos como lo haría con los recursos.
 
 ### Cómo trabajar con recursos digitales {#how-to-work-with-assets}
 
-Realiza una acción en un recurso o una colección. Las acciones pueden crear o modificar recursos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar, guardar subrecursos) almacenan en déclencheur los flujos de trabajo preconfigurados. Se activan automáticamente en [!DNL Assets] y se describen detalladamente en [!DNL Assets] controladores de medios.
+Realiza una acción en un recurso o una colección. Las acciones pueden crear o modificar recursos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar, guardar subrecursos) almacenan en déclencheur los flujos de trabajo preconfigurados. Se activan automáticamente en [!DNL Assets] y se describen en detalle en los controladores de medios [!DNL Assets].
 
 Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 
@@ -90,7 +90,7 @@ Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 * Generar representaciones y miniaturas del recurso, incluido el cambio de tamaño y el recorte automáticos cuando sea necesario.
 * Transcodifique el recurso donde sea necesario. Por ejemplo, el vídeo para uso móvil y web se transcodifica con 24 fotogramas por segundo y el vídeo de descarga con 30 fotogramas por segundo. El audio para uso móvil y web se transcodifica con 128 Kbps, el audio para descarga con 192 Kbps.
 
-También puede aplicar flujos de trabajo manualmente. Consulte [Controladores de medios de recursos](media-handlers.md)para obtener una lista de flujos de trabajo predeterminados.
+También puede aplicar flujos de trabajo manualmente. Consulte [Controladores de Assets Media](media-handlers.md)para obtener una lista de flujos de trabajo predeterminados.
 
 ## [!DNL Experience Manager Assets] y [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 

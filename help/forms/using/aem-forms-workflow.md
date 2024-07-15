@@ -17,7 +17,7 @@ ht-degree: 95%
 
 # Flujo de trabajo centrado en Forms en OSGi{#forms-centric-workflow-on-osgi}
 
-![imagen de héroe](do-not-localize/header.png)
+![imagen a pantalla completa](do-not-localize/header.png)
 
 Las empresas recopilan datos de cientos y miles de formularios, varios sistemas back-end y fuentes de datos en línea o sin conexión. También tienen un conjunto dinámico de usuarios para tomar decisiones sobre los datos, lo que implica procesos de revisión y aprobación iterativos.
 
@@ -69,7 +69,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 1. Abra la consola Modelos de flujo de trabajo. La URL predeterminada es `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleccione **Crear** y, a continuación, **Crear modelo**. Aparecerá el cuadro de diálogo Agregar modelo del flujo de trabajo.
 1. Escriba el **Título** y el **Nombre** (opcional). Por ejemplo, una solicitud hipotecaria. Seleccione **Listo**.
-1. Seleccione el modelo del flujo de trabajo recién creado y seleccione **Editar**. Ahora puede agregar pasos al flujo de trabajo para crear lógica empresarial. La primera vez que cree un modelo del flujo de trabajo, contendrá:
+1. Seleccione el modelo de flujo de trabajo recién creado y seleccione **Editar**. Ahora puede agregar pasos al flujo de trabajo para crear lógica empresarial. La primera vez que cree un modelo del flujo de trabajo, contendrá:
 
    * Los pasos: Inicio del flujo y Fin del flujo. Estos pasos representan el principio y el final del flujo de trabajo. Estos pasos son obligatorios y no se pueden editar ni eliminar.
    * Un ejemplo de paso de participante denominado Paso 1. Este paso está configurado para asignar un elemento de trabajo al administrador. Elimine este paso.
@@ -217,7 +217,7 @@ Puede configurar un formulario adaptable para sincronizar, enviar y habilitar un
 Un administrador (un miembro del grupo de administradores de fd) puede configurar una carpeta de red para ejecutar un flujo de trabajo preconfigurado cuando un usuario coloca un archivo (como un archivo PDF) en la carpeta. Una vez finalizado el flujo de trabajo, puede guardar el archivo resultante en una carpeta de salida especificada. Esta carpeta se conoce como [Carpeta vigilada](../../forms/using/watched-folder-in-aem-forms.md). Realice el siguiente procedimiento para configurar una carpeta vigilada para iniciar un flujo de trabajo:
 
 1. En la instancia de autor de AEM, vaya a ![herramientas-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta vigilada]**. Se mostrará una lista de las carpetas vigiladas ya configuradas.
-1. Seleccionar **[!UICONTROL Nuevo]**. Se mostrará una lista de campos. Especifique un valor para los siguientes campos para configurar una carpeta vigilada para un flujo de trabajo:
+1. Seleccione **[!UICONTROL Nuevo]**. Se mostrará una lista de campos. Especifique un valor para los siguientes campos para configurar una carpeta vigilada para un flujo de trabajo:
 
 <table>
  <tbody>
@@ -235,7 +235,7 @@ Un administrador (un miembro del grupo de administradores de fd) puede configura
   </tr>
   <tr>
    <td><span class="uicontrol">Procesar archivos mediante</code></td>
-   <td>Seleccione el <span class="uicontrol">Flujo de trabajo </code>JVM. </td>
+   <td>Seleccionar el <span class="uicontrol">flujo de trabajo </code>JVM. </td>
   </tr>
   <tr>
    <td><span class="uicontrol">Modelo de flujo de trabajo</code></td>
@@ -248,7 +248,7 @@ Un administrador (un miembro del grupo de administradores de fd) puede configura
  </tbody>
 </table>
 
-1. Seleccionar **Avanzadas**. Especifique un valor para el siguiente campo y pulse **Crear**. La carpeta vigilada está configurada para iniciar un flujo de trabajo. Ahora, cada vez que se coloque un archivo en el directorio de entrada de la carpeta vigilada, se activará el flujo de trabajo especificado.
+1. Seleccione **Avanzado**. Especifique un valor para el siguiente campo y pulse **Crear**. La carpeta vigilada está configurada para iniciar un flujo de trabajo. Ahora, cada vez que se coloque un archivo en el directorio de entrada de la carpeta vigilada, se activará el flujo de trabajo especificado.
 
    | Campo | Descripción |
    |---|---|
@@ -276,7 +276,7 @@ Al minimizar el número de instancias del flujo de trabajo, aumenta el rendimien
 
 ## Parametrizar datos confidenciales a variables de flujo de trabajo y almacenarlos en repositorios de datos externos {#externalize-wf-variables}
 
-Cualquier dato enviado desde formularios adaptables a flujos de trabajo [!DNL Experience Manager]pueden tener PII (información de identificación personal) o SPD (datos personales confidenciales) de los usuarios finales de su empresa. Sin embargo, no es obligatorio almacenar los datos almacenados en el [!DNL Adobe Experience Manager] [Repositorio JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=es). Puede externalizar el almacenamiento de datos del usuario final en el almacenamiento de datos administrado (por ejemplo, Azure Blob Storage) al parametrizar la información en [variables de flujo de trabajo](/help/forms/using/variable-in-aem-workflows.md).
+Cualquier dato enviado desde formularios adaptables a flujos de trabajo [!DNL Experience Manager]pueden tener PII (información de identificación personal) o SPD (datos personales confidenciales) de los usuarios finales de su empresa. Sin embargo, no es obligatorio almacenar los datos almacenados en el [!DNL Adobe Experience Manager] [Repositorio JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=es). Puede externalizar el almacenamiento de datos del usuario final en el almacenamiento de datos administrado (por ejemplo, el almacenamiento del blob de Azure) al parametrizar la información en [variables de flujo de trabajo](/help/forms/using/variable-in-aem-workflows.md).
 
 En un [!DNL Adobe Experience Manager] flujo de trabajo de Forms, los datos se procesan y pasan a través de una serie de pasos de flujo de trabajo mediante variables de flujo de trabajo. Estas variables se denominan propiedades o pares clave-valor que se almacenan en el nodo de metadatos de instancias de flujo de trabajo; por ejemplo, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Estas variables de flujo de trabajo se pueden externalizar en un repositorio independiente que no sea JCR y luego procesar mediante [!DNL Adobe Experience Manager] flujos de trabajo. [!DNL Adobe Experience Manager] proporciona API `[!UICONTROL UserMetaDataPersistenceProvider]` para almacenar las variables de flujo de trabajo en el almacenamiento externo administrado. Para obtener más información sobre el uso de variables de flujo de trabajo para repositorios de datos de propiedad del cliente en [!DNL Adobe Experience Manager], consulte [Administrar variables de flujo de trabajo para repositorios de datos externos](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] proporciona el siguiente [ejemplo](https://github.com/adobe/workflow-variable-externalizer) para almacenar variables desde el mapa de metadatos del flujo de trabajo al almacenamiento del blob de Azure, con la API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). En líneas similares, puede utilizar el ejemplo como guía para utilizar la API [UserMetaDataPersistenceProvider] para externalizar las variables de flujo de trabajo en cualquier otro almacenamiento de datos externo a [!DNL Adobe Experience Manager] y administrar lo mismo.
@@ -336,7 +336,7 @@ Para configurar un modelo de flujo de trabajo de AEM para un almacenamiento de d
 
 ### Directrices para los flujos de trabajo de AEM de un almacenamiento de datos externo {#guidelines-workflows-external-data-storage}
 
-Estas son las directrices a seguir a la hora de utilizar [!DNL Adobe Experience Manager] flujos de trabajo y almacenamiento de datos en almacenamientos de datos externos (por ejemplo, el servidor de almacenamiento de Microsoft Azure):
+Estas son las directrices a seguir a la hora de usar flujos de trabajo de [!DNL Adobe Experience Manager] y almacenar datos en almacenes de datos externos (por ejemplo, el servidor de almacenamiento de Microsoft Azure):
 
 * Utilice variables para almacenar los datos al definir los archivos de datos de entrada y salida y los archivos adjuntos en los pasos del modelo de flujo de trabajo. No seleccione las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]**. Las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** no se mostrarán automáticamente una vez que [ [!DNL Adobe Experience Manager] haya configurado un modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model).
 

@@ -30,4 +30,4 @@ AEM La interfaz de usuario táctil es la nueva interfaz de usuario estándar par
 
 ## Concepto de creación (y publicación) {#concept-of-authoring-and-publishing}
 
-Independientemente de la elección de la interfaz de usuario, hay ciertos conceptos e ideas comunes a la creación, que se describen bien [aquí en la documentación de creación estándar](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).
+Independientemente de la elección de la interfaz de usuario, hay ciertos conceptos e ideas comunes en la creación, que se describen bien [aquí en la documentación de creación estándar](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).

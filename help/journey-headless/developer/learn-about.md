@@ -123,11 +123,11 @@ Gracias por empezar con el recorrido de contenido sin encabezado de AEM Ahora qu
 * Comprenda por qué y cuándo es necesario el contenido sin encabezado.
 * Conocer en un nivel superior cómo se utilizan los conceptos del contenido sin encabezado y cómo se interrelacionan.
 
-AEM Aproveche este conocimiento y continúe con su recorrido sin encabezado de la revisando el documento a continuación [AEM Introducción a la tecnología sin encabezado de](getting-started.md) AEM donde aprenderá a configurar las herramientas necesarias y a pensar en cómo aborda la entrega de contenido sin encabezado y sus requisitos previos, de manera más sencilla.
+AEM Aproveche este conocimiento y continúe con su recorrido AEM AEM sin encabezado de la revisando el documento [Introducción a la sin encabezado](getting-started.md) donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en cómo aborda la entrega de contenido sin encabezado y sus requisitos previos.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin encabezado revisando el documento [AEM Introducción a la tecnología sin encabezado de](getting-started.md)Sin embargo, los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar con el recorrido sin encabezado.
+Aunque se recomienda pasar a la siguiente parte del recorrido AEM de desarrollo sin encabezado revisando el documento [Introducción a la tecnología sin encabezado](getting-started.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar con el recorrido sin encabezado.
 
 * Una [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 * El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)

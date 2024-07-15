@@ -84,12 +84,12 @@ Haga lo siguiente para poder habilitar el registro de depuración para los flujo
    https://&#39;[server]:[puerto]&#39;/system/console/configMgr
 
 1. Seleccione **[!UICONTROL Sling]** > **[!UICONTROL Compatibilidad de registros]**.
-1. Seleccionar **[!UICONTROL Añadir nuevo registrador.]**
+1. Seleccione **[!UICONTROL Agregar nuevo registrador.]**
 1. Seleccione **[!UICONTROL Depuración]** como **[!UICONTROL Nivel de registro]**.
 1. Especifique la ubicación del archivo de registro. La ubicación predeterminada para el archivo de registro es *logs\error.log*.
 1. Especifique el nombre del paquete como **com.adobe.granite.workflow.core** en la columna **[!UICONTROL Registrador]**.
 
-   La ejecución de estos pasos permite almacenar los registros de depuración del paquete **com.adobe.granite.workflow.core**. Seleccionar **[!UICONTROL +]** y añada los siguientes nombres de paquete a la lista:
+   La ejecución de estos pasos permite almacenar los registros de depuración del paquete **com.adobe.granite.workflow.core**. Seleccione **[!UICONTROL +]** y agregue los siguientes nombres de paquete a la lista:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

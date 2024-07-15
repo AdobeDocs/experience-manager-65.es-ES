@@ -22,7 +22,7 @@ ht-degree: 2%
 >
 >Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-El **Administrar aplicación** El mosaico y la página &quot;Administrar aplicación&quot; proporcionan un medio para ver y editar los metadatos de la aplicación. Los metadatos de la aplicación son detalles necesarios para lanzar una aplicación en la tienda de un proveedor. Esto puede incluir metadatos comunes, metadatos de iOS y capturas de pantalla. Consulte la [Administrar mosaico de aplicación](/help/mobile/phonegap-app-details-tile.md) para obtener más información sobre metadatos comunes y de iOS.
+El mosaico **Administrar aplicación** y la página &quot;Administrar aplicación&quot; proporcionan los medios para ver y editar los metadatos de la aplicación. Los metadatos de la aplicación son detalles necesarios para lanzar una aplicación en la tienda de un proveedor. Esto puede incluir metadatos comunes, metadatos de iOS y capturas de pantalla. Consulte [Administrar mosaico de aplicación](/help/mobile/phonegap-app-details-tile.md) para obtener más información sobre metadatos comunes y de iOS.
 
 ## Edición de los datos de la aplicación {#editing-the-app-data}
 
@@ -32,7 +32,7 @@ Para editar los metadatos de la aplicación:
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Para ver o editar detalles, haga clic en &#39;...&#39; en la esquina inferior derecha de la **Administrar aplicación** mosaico.
+1. Para ver o editar los detalles, haz clic en &#39;...&#39; en la esquina inferior derecha del mosaico **Administrar aplicación**.
 
 1. Introduzca o vea los detalles en cualquiera de las cinco pestañas disponibles, como se muestra en la figura siguiente.
 
@@ -42,7 +42,7 @@ Para editar los metadatos de la aplicación:
 
 Puede editar los metadatos comunes y de IOS:
 
-* Seleccione el **Avanzadas** de la página de descripción de la aplicación.
+* Seleccione la ficha **Avanzado** en la página de descripción de la aplicación.
 * Edite o vea los metadatos comunes y de IOS. Consulte las cifras siguientes para obtener más detalles.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
@@ -57,12 +57,12 @@ Puede incluir capturas de pantalla de la aplicación en el resumen de metadatos.
 
 Para agregar un recurso como captura de pantalla:
 
-1. En el modo de edición de **Administrar aplicación** , haga clic en agregar (icono de signo más).
-1. Seleccione el recurso y haga clic en **Seleccionar** para agregar el recurso.
+1. En el modo de edición de la página **Administrar aplicación**, haga clic en agregar (icono de signo +).
+1. Seleccione el recurso y haga clic en **Seleccionar** para agregarlo.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. Seleccione el recurso y haga clic en **Seleccionar** para agregar el recurso.
+1. Seleccione el recurso y haga clic en **Seleccionar** para agregarlo.
 
 >[!NOTE]
 >

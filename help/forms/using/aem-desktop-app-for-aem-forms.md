@@ -36,7 +36,7 @@ AEM La aplicación de escritorio de ® utiliza el protocolo WebDAV en MicrosoftW
 
 1. Inicie sesión en AEM Forms como administrador.
 1. En la instancia de autor, haga clic en ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Herramientas]** ![hammer](assets/hammer.png) **[!UICONTROL > Implementación > Operaciones> Consola Web]**. La consola web se abre en una nueva ventana.
-1. En la ventana de la consola web, busque y abra **[!UICONTROL Configuración del complemento FormsManager]** opción.
+1. En la ventana Consola web, busque y abra la opción **[!UICONTROL Configuración del complemento FormsManager]**.
 1. En el cuadro de diálogo Configuración del complemento FormsManager, anule la selección de **[!UICONTROL Sincronizar recursos asincrónicamente]** y haga clic en **[!UICONTROL Guardar]**.
 1. Reinicie AEM Forms Server. Después del reinicio, el servidor de AEM Forms AEM está habilitado para aceptar y compartir contenido con la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la.
 1. Abra la aplicación y conéctese al servidor de AEM Forms.

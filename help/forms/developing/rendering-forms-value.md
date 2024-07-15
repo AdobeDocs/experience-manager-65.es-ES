@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Procesar formularios por valor {#rendering-forms-by-value}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
 Normalmente, un diseño de formulario creado en Designer se pasa por referencia al servicio de Forms. Los diseños de formulario pueden ser grandes y, como resultado, es más eficaz pasarlos por referencia para evitar tener que calcular las referencias de los bytes de diseño de formulario por valor. El servicio Forms también puede almacenar en caché el diseño de formulario para que, cuando se almacene en caché, no tenga que leer continuamente el diseño de formulario.
 
@@ -43,7 +43,7 @@ Cuando se pasa un diseño de formulario por valor, se aplican las siguientes lim
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
@@ -65,7 +65,7 @@ Para poder importar datos mediante programación en una API de cliente de formul
 
 **Hacer referencia al diseño de formulario**
 
-Al procesar un formulario por valor, debe crear un `com.adobe.idp.Document` que contiene el diseño de formulario que se va a procesar. Puede hacer referencia a un archivo XDP existente o puede crear dinámicamente un diseño de formulario en tiempo de ejecución y rellenar un `com.adobe.idp.Document` con esos datos.
+Al procesar un formulario por valor, debe crear un objeto `com.adobe.idp.Document` que contenga el diseño de formulario que desea procesar. Puede hacer referencia a un archivo XDP existente o puede crear dinámicamente un diseño de formulario en tiempo de ejecución y rellenar un `com.adobe.idp.Document` con esos datos.
 
 >[!NOTE]
 >
@@ -73,13 +73,13 @@ Al procesar un formulario por valor, debe crear un `com.adobe.idp.Document` que 
 
 **Procesar un formulario por valor**
 
-Para procesar un formulario por valor, pase un `com.adobe.idp.Document` instancia que contiene el diseño de formulario en el método de procesamiento `inDataDoc` parámetro (puede ser cualquiera de las `FormsServiceClient` métodos de procesamiento del objeto, como `renderPDFForm`, `(Deprecated) renderHTMLForm`, etc.). Este valor de parámetro se reserva normalmente para los datos que se combinan con el formulario. Del mismo modo, pase un valor de cadena vacío a `formQuery` parámetro. Normalmente, este parámetro requiere un valor de cadena que especifica el nombre del diseño de formulario.
+Para procesar un formulario por valor, pase una instancia de `com.adobe.idp.Document` que contenga el diseño de formulario al parámetro `inDataDoc` del método de procesamiento (puede ser cualquiera de los métodos de procesamiento del objeto `FormsServiceClient`, como `renderPDFForm`, `(Deprecated) renderHTMLForm`, etc.). Este valor de parámetro se reserva normalmente para los datos que se combinan con el formulario. Igualmente, pase un valor de cadena vacío al parámetro `formQuery`. Normalmente, este parámetro requiere un valor de cadena que especifica el nombre del diseño de formulario.
 
 >[!NOTE]
 >
->Si desea mostrar datos dentro del formulario, los datos deben especificarse dentro del `xfa:datasets` Elemento. Para obtener información acerca de la arquitectura XFA, vaya a [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
+>Si desea mostrar datos dentro del formulario, los datos deben especificarse dentro del elemento `xfa:datasets`. Para obtener información acerca de la arquitectura XFA, vaya a [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
-**Escribir el flujo de datos del formulario en el explorador web del cliente**
+**Escriba el flujo de datos del formulario en el explorador web del cliente**
 
 Cuando el servicio Forms procesa un formulario por valor, devuelve un flujo de datos de formulario que debe escribir en el explorador web del cliente. Cuando se escribe en el explorador web del cliente, el formulario es visible para el usuario.
 
@@ -109,36 +109,36 @@ Procesar un formulario por valor mediante la API de Forms (Java):
 
 1. Crear un objeto de API de cliente de Forms
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
-   * Crear un `FormsServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `FormsServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Hacer referencia al diseño de formulario
 
-   * Crear un `java.io.FileInputStream` que representa el diseño de formulario que se va a procesar mediante su constructor y pasando un valor de cadena que especifica la ubicación del archivo XDP.
-   * Crear un `com.adobe.idp.Document` usando su constructor y pasando el objeto `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el diseño de formulario que se va a procesar mediante su constructor y pasando un valor de cadena que especifique la ubicación del archivo XDP.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Procesar un formulario por valor
 
-   Invoque el `FormsServiceClient` del objeto `renderPDFForm` y pasar los siguientes valores:
+   Invoque el método `renderPDFForm` del objeto `FormsServiceClient` y pase los siguientes valores:
 
    * Un valor de cadena vacío. (Normalmente, este parámetro requiere un valor de cadena que especifica el nombre del diseño de formulario).
-   * A `com.adobe.idp.Document` que contiene el diseño de formulario. Normalmente, este valor de parámetro se reserva para los datos que se combinan con el formulario.
-   * A `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Este es un parámetro opcional y puede especificar `null` si no desea especificar opciones en tiempo de ejecución.
-   * A `URLSpec` que contiene valores de URI requeridos por el servicio de Forms.
-   * A `java.util.HashMap` que almacena archivos adjuntos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+   * Objeto `com.adobe.idp.Document` que contiene el diseño de formulario. Normalmente, este valor de parámetro se reserva para los datos que se combinan con el formulario.
+   * Objeto `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Este es un parámetro opcional y puede especificar `null` si no desea especificar opciones en tiempo de ejecución.
+   * Un objeto `URLSpec` que contiene valores de URI requeridos por el servicio Forms.
+   * Objeto `java.util.HashMap` que almacena datos adjuntos de archivos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
 
-   El `renderPDFForm` El método devuelve un valor `FormsResult` que contiene un flujo de datos de formulario que se puede escribir en el explorador web del cliente.
+   El método `renderPDFForm` devuelve un objeto `FormsResult` que contiene una secuencia de datos de formulario que se puede escribir en el explorador web del cliente.
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` del objeto `getOutputContent` método.
-   * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
-   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
-   * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
-   * Crear un `java.io.InputStream` invocando el objeto de `com.adobe.idp.Document` del objeto `getInputStream` método.
-   * Cree una matriz de bytes y asigne el tamaño del `InputStream` objeto. Invoque el `InputStream` del objeto `available` para obtener el tamaño del objeto `InputStream` objeto.
-   * Rellene la matriz de bytes con el flujo de datos de formulario invocando el método `InputStream` del objeto `read`y pasando la matriz de bytes como argumento.
-   * Invoque el `javax.servlet.ServletOutputStream` del objeto `write` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes a `write` método.
+   * Cree un objeto `com.adobe.idp.Document` invocando el método `getOutputContent` del objeto `FormsResult`.
+   * Obtenga el tipo de contenido del objeto `com.adobe.idp.Document` invocando su método `getContentType`.
+   * Establezca el tipo de contenido del objeto `javax.servlet.http.HttpServletResponse` invocando su método `setContentType` y pasando el tipo de contenido del objeto `com.adobe.idp.Document`.
+   * Cree un objeto `javax.servlet.ServletOutputStream` utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el método `getOutputStream` del objeto `javax.servlet.http.HttpServletResponse`.
+   * Cree un objeto `java.io.InputStream` invocando el método `getInputStream` del objeto `com.adobe.idp.Document`.
+   * Cree una matriz de bytes y asigne el tamaño del objeto `InputStream`. Invoque el método `available` del objeto `InputStream` para obtener el tamaño del objeto `InputStream`.
+   * Rellene la matriz de bytes con la secuencia de datos de formulario invocando el método `read` del objeto `InputStream` y pasando la matriz de bytes como argumento.
+   * Invoque el método `write` del objeto `javax.servlet.ServletOutputStream` para enviar la secuencia de datos de formulario al explorador web del cliente. Pase la matriz de bytes al método `write`.
 
 **Consulte también**
 
@@ -161,41 +161,41 @@ Procesar un formulario por valor utilizando la API de Forms (servicio web):
 
 1. Crear un objeto de API de cliente de Forms
 
-   Crear un `FormsService` y establezca los valores de autenticación.
+   Cree un objeto `FormsService` y establezca los valores de autenticación.
 
 1. Hacer referencia al diseño de formulario
 
-   * Crear un `java.io.FileInputStream` mediante su constructor. Pase un valor de cadena que especifique la ubicación del archivo XDP.
-   * Crear un `BLOB` mediante su constructor. El `BLOB` se utiliza para almacenar un documento de PDF cifrado con una contraseña.
-   * Cree una matriz de bytes que almacene el contenido del `java.io.FileInputStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `java.io.FileInputStream` tamaño del objeto con su `available` método.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `java.io.FileInputStream` del objeto `read` y pasando la matriz de bytes.
-   * Rellene el `BLOB` invocando su objeto `setBinaryData` y pasando la matriz de bytes.
+   * Crear un objeto `java.io.FileInputStream` mediante su constructor. Pase un valor de cadena que especifique la ubicación del archivo XDP.
+   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar un documento de PDF cifrado con una contraseña.
+   * Cree una matriz de bytes que almacene el contenido del objeto `java.io.FileInputStream`. Puede determinar el tamaño de la matriz de bytes obteniendo el tamaño del objeto `java.io.FileInputStream` mediante su método `available`.
+   * Rellene la matriz de bytes con datos de secuencia invocando el método `read` del objeto `java.io.FileInputStream` y pasando la matriz de bytes.
+   * Rellene el objeto `BLOB` invocando su método `setBinaryData` y pasando la matriz de bytes.
 
 1. Procesar un formulario por valor
 
-   Invoque el `FormsService` del objeto `renderPDFForm` y pasar los siguientes valores:
+   Invoque el método `renderPDFForm` del objeto `FormsService` y pase los siguientes valores:
 
    * Un valor de cadena vacío. (Normalmente, este parámetro requiere un valor de cadena que especifica el nombre del diseño de formulario).
-   * A `BLOB` que contiene el diseño de formulario. Normalmente, este valor de parámetro se reserva para los datos que se combinan con el formulario.
-   * A `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Este es un parámetro opcional y puede especificar `null` si no desea especificar opciones en tiempo de ejecución.
-   * A `URLSpec` que contiene valores de URI requeridos por el servicio de Forms.
-   * A `java.util.HashMap` que almacena archivos adjuntos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
-   * Un vacío `com.adobe.idp.services.holders.BLOBHolder` objeto que rellena el método. Se utiliza para almacenar el formulario de PDF procesado.
-   * Un vacío `javax.xml.rpc.holders.LongHolder` objeto que rellena el método. (Este argumento almacena el número de páginas del formulario.)
-   * Un vacío `javax.xml.rpc.holders.StringHolder` objeto que rellena el método. (Este argumento almacena el valor de configuración regional.)
-   * Un vacío `com.adobe.idp.services.holders.FormsResultHolder` que contendrá los resultados de esta operación.
+   * Objeto `BLOB` que contiene el diseño de formulario. Normalmente, este valor de parámetro se reserva para los datos que se combinan con el formulario.
+   * Objeto `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Este es un parámetro opcional y puede especificar `null` si no desea especificar opciones en tiempo de ejecución.
+   * Un objeto `URLSpec` que contiene valores de URI requeridos por el servicio Forms.
+   * Objeto `java.util.HashMap` que almacena datos adjuntos de archivos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+   * Un objeto `com.adobe.idp.services.holders.BLOBHolder` vacío que ha rellenado el método. Se utiliza para almacenar el formulario de PDF procesado.
+   * Un objeto `javax.xml.rpc.holders.LongHolder` vacío que ha rellenado el método. (Este argumento almacena el número de páginas del formulario.)
+   * Un objeto `javax.xml.rpc.holders.StringHolder` vacío que ha rellenado el método. (Este argumento almacena el valor de configuración regional.)
+   * Un objeto `com.adobe.idp.services.holders.FormsResultHolder` vacío que contendrá los resultados de esta operación.
 
-   El `renderPDFForm` rellena el método `com.adobe.idp.services.holders.FormsResultHolder` que se pasa como el último valor de argumento con un flujo de datos de formulario que debe escribirse en el explorador web del cliente.
+   El método `renderPDFForm` rellena el objeto `com.adobe.idp.services.holders.FormsResultHolder` que se pasa como el último valor de argumento con una secuencia de datos de formulario que debe escribirse en el explorador web del cliente.
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Crear un `FormResult` al obtener el valor de la variable `com.adobe.idp.services.holders.FormsResultHolder` del objeto `value` miembro de datos.
-   * Crear un `BLOB` que contiene datos de formulario invocando el `FormsResult` del objeto `getOutputContent` método.
-   * Obtenga el tipo de contenido del `BLOB` invocando su objeto `getContentType` método.
-   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `BLOB` objeto.
-   * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
-   * Cree una matriz de bytes y rellénela invocando el método `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido del `FormsResult` a la matriz de bytes.
-   * Invoque el `javax.servlet.http.HttpServletResponse` del objeto `write` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes a `write` método.
+   * Cree un objeto `FormResult` obteniendo el valor del miembro de datos `value` del objeto `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Cree un objeto `BLOB` que contenga datos de formulario invocando el método `getOutputContent` del objeto `FormsResult`.
+   * Obtenga el tipo de contenido del objeto `BLOB` invocando su método `getContentType`.
+   * Establezca el tipo de contenido del objeto `javax.servlet.http.HttpServletResponse` invocando su método `setContentType` y pasando el tipo de contenido del objeto `BLOB`.
+   * Cree un objeto `javax.servlet.ServletOutputStream` utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el método `getOutputStream` del objeto `javax.servlet.http.HttpServletResponse`.
+   * Cree una matriz de bytes y rellénela invocando el método `getBinaryData` del objeto `BLOB`. Esta tarea asigna el contenido del objeto `FormsResult` a la matriz de bytes.
+   * Invoque el método `write` del objeto `javax.servlet.http.HttpServletResponse` para enviar la secuencia de datos de formulario al explorador web del cliente. Pase la matriz de bytes al método `write`.
 
 **Consulte también**
 

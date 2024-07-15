@@ -23,7 +23,7 @@ El entorno de creación AEM ofrece varios mecanismos para organizar y editar el 
 
 ## Administración del sitio {#site-administration}
 
-El **Sitios web** La consola de le permite administrar y navegar por el sitio web. Mediante los dos paneles, se puede expandir la estructura del sitio web y realizar acciones en el elemento requerido:
+La consola **Sitios web** le permite administrar y navegar por el sitio web. Mediante los dos paneles, se puede expandir la estructura del sitio web y realizar acciones en el elemento requerido:
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -37,17 +37,17 @@ Hay un editor de páginas independiente con la IU clásica, que utiliza el busca
 
 ## Acceso a la Ayuda   {#accessing-help}
 
-Varios **Ayuda** AEM se puede acceder directamente a los recursos desde dentro de las siguientes ubicaciones:
+AEM Se puede acceder directamente a varios recursos de **Ayuda** desde dentro de los siguientes puntos de acceso:
 
-Además de acceder a [ayuda de las barras de herramientas de la consola](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), también puede acceder a la ayuda de la barra de tareas (mediante el icono ? icono) al editar una página:
+Además de obtener acceso a [ayuda desde las barras de herramientas de la consola](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), también puede obtener acceso a la ayuda desde la barra de tareas (mediante el icono ? icono) al editar una página:
 
 ![Sidekick contraído](do-not-localize/sidekick-collapsed-2.png)
 
-O utilizando el **Ayuda** en el cuadro de diálogo de edición de componentes específicos; esto mostrará la ayuda contextual.
+O usando el botón **Ayuda** en el cuadro de diálogo de edición de componentes específicos; esto mostrará ayuda contextual.
 
 ## Sidekick {#sidekick}
 
-El **Componentes** de la barra de tareas le permite examinar los componentes disponibles para añadirlos a la página actual. El grupo requerido se puede expandir y, a continuación, un componente se arrastra a la ubicación requerida en la página.
+La pestaña **Componentes** de la barra de tareas le permite examinar los componentes disponibles para agregarlos a la página actual. El grupo requerido se puede expandir y, a continuación, un componente se arrastra a la ubicación requerida en la página.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -65,9 +65,9 @@ Puede utilizar el buscador de contenido para localizar una amplia gama de recurs
 
 * [Párrafos](#referencing-paragraphs-from-other-pages)
 * [Productos](#products)
-* O a [examinar el sitio web por estructura de repositorio](#the-content-finder)
+* O para [examinar el sitio web según la estructura del repositorio](#the-content-finder)
 
-Con todas las opciones puede [buscar elementos específicos](#the-content-finder).
+Con todas las opciones, puede [buscar elementos específicos](#the-content-finder).
 
 ### Búsqueda de imágenes {#finding-images}
 
@@ -143,14 +143,14 @@ lo encontrarán los siguientes patrones de búsqueda (y cualquier otra imagen qu
 
 * `name:*nmv*`
 * `name:AD*`
-la coincidencia de caracteres es *no* distingue mayúsculas de minúsculas.
+la coincidencia de caracteres es *no* con distinción de mayúsculas y minúsculas.
 
 * `name:ad?nm??is.*`
 puede utilizar cualquier número de caracteres comodín en una consulta.
 
 >[!NOTE]
 >
->También puede utilizar [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) buscar.
+>También puede usar la búsqueda [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Mostrando referencias {#showing-references}
 
@@ -158,11 +158,11 @@ AEM le permite ver qué páginas están vinculadas a la página en la que está 
 
 Para mostrar referencias de página directas:
 
-1. En la barra de tareas, seleccione **Página** Icono de pestaña.
+1. En la barra de tareas, seleccione el icono de la ficha **Página**.
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Seleccionar **Mostrar referencias...** AEM Se abrirá la ventana Referencias (References) y se mostrarán las páginas que hacen referencia a la página seleccionada, incluidas sus rutas.
+1. AEM Seleccionar **Mostrar referencias...** abre la ventana Referencias y muestra las páginas que hacen referencia a la página seleccionada, incluidas sus rutas.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -173,17 +173,17 @@ En determinadas situaciones, el Sidekick puede realizar otras acciones, como las
 
 * [Modelo](/help/sites-administering/msm-best-practices.md)
 
-Otros [las relaciones entre páginas se pueden ver en la consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
+Se pueden ver otras [relaciones entre páginas en la consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
 ## Registro de auditorías {#audit-log}
 
-El **Registro de auditoría** se puede acceder a desde el **Información** pestaña de la barra de tareas. Enumera las acciones recientes realizadas en la página actual; por ejemplo:
+Se puede acceder al **Registro de auditoría** desde la ficha **Información** de la barra de tareas. Enumera las acciones recientes realizadas en la página actual; por ejemplo:
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
 ## Información de la página {#page-information}
 
-La consola Sitio web también [proporciona información sobre el estado actual de la página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicación, modificación, bloqueado, livecopy, etc.
+La consola del sitio web también [proporciona información sobre el estado actual de la página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), como publicación, modificación, bloqueado, Live Copy, etc.
 
 ## Modos de página   {#page-modes}
 
@@ -196,7 +196,7 @@ La fila de iconos de la parte inferior del Sidekick se utiliza para cambiar los 
 * [Editar](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 Este es el modo predeterminado y permite editar la página, añadir o eliminar componentes y realizar otros cambios.
 
-* [Previsualizar](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
+* [Vista previa](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
 Este modo permite obtener una vista previa de la página como si apareciera en el sitio web en su forma final.
 
 * [Diseño](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
@@ -207,7 +207,7 @@ En este modo, puede editar el diseño de la página configurando los componentes
 >También hay otras opciones disponibles:
 >
 >* [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [Client Context](/help/sites-administering/client-context.md)
+>* [Contexto de cliente](/help/sites-administering/client-context.md)
 >* Sitios web: abre la consola Sitios web.
 >* Volver a cargar: actualizará la página.
 

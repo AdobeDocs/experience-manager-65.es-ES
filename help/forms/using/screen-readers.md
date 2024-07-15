@@ -37,7 +37,7 @@ Todos los accesos directos y las pulsaciones de teclas predeterminados funcionan
 
 ### VoiceOver {#voiceover}
 
-Los formularios HTML5 son compatibles con todas las pulsaciones de teclas y gestos predeterminados de Voice Over. Para obtener más información sobre la configuración y el uso de VoiceOver, consulte [https://www.apple.com/accessibility/vision/](https://www.apple.com/accessibility/vision/).
+Los formularios HTML5 son compatibles con todas las pulsaciones de teclas y gestos predeterminados de Voice Over. Para obtener más información sobre cómo configurar y usar VoiceOver, consulte [https://www.apple.com/accessibility/vision/](https://www.apple.com/accessibility/vision/).
 
 ## Problemas conocidos {#known-issues}
 

@@ -18,7 +18,7 @@ Obtenga información sobre cómo habilitar determinadas funcionalidades de fragm
 
 ## Habilitación de la funcionalidad de fragmento de contenido para la instancia {#enable-content-fragment-functionality-instance}
 
-Antes de usar fragmentos de contenido, use **Explorador de configuración** para habilitar lo siguiente:
+Antes de usar fragmentos de contenido, usa el **Explorador de configuración** para habilitar lo siguiente:
 
 * **Modelos de fragmentos de contenido**: obligatorio
 * **Consultas persistentes de GraphQL**: opcional
@@ -27,8 +27,8 @@ Antes de usar fragmentos de contenido, use **Explorador de configuración** para
 >
 >Si no habilita **Modelos de fragmentos de contenido**:
 >
->* el **Crear** La opción no estará disponible para crear modelos.
->* no puede [seleccione la configuración de Sites para crear el punto final relacionado](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
+>* la opción **Crear** no estará disponible para crear modelos.
+>* no puede [seleccionar la configuración de Sites para crear el extremo relacionado](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
 Para habilitar la funcionalidad de fragmento de contenido, debe hacer lo siguiente:
 
@@ -37,11 +37,11 @@ Para habilitar la funcionalidad de fragmento de contenido, debe hacer lo siguien
 
 ### Habilitación de la funcionalidad de fragmento de contenido en el Explorador de configuración {#enable-content-fragment-functionality-in-configuration-browser}
 
-Hasta [usar ciertas funciones de fragmentos de contenido](#creating-a-content-fragment-model), usted **debe** habilite primero estas opciones a través de **Explorador de configuración**:
+Para [usar ciertas funciones de fragmentos de contenido](#creating-a-content-fragment-model), **debe** habilitarlas primero mediante el **Explorador de configuración**:
 
 >[!NOTE]
 >
->Para obtener más información, consulte [Explorador de configuración:](/help/sites-administering/configurations.md#using-configuration-browser).
+>Para obtener más información, vea [Explorador de configuración:](/help/sites-administering/configurations.md#using-configuration-browser).
 
 1. Vaya a **Herramientas**, **General**, luego abra el **Explorador de configuración**.
 
@@ -60,8 +60,8 @@ Hasta [usar ciertas funciones de fragmentos de contenido](#creating-a-content-fr
 
 ### Aplicación de la configuración a la carpeta Recursos {#apply-the-configuration-to-your-assets-folder}
 
-Cuando la configuración **global** está habilitado para la funcionalidad de fragmento de contenido y se aplica a cualquier carpeta de recursos.
+Cuando la configuración **global** está habilitada para la funcionalidad de fragmento de contenido, se aplica a cualquier carpeta de Assets.
 
-Para utilizar otras configuraciones (es decir, excluidas las globales) con una carpeta de Assets comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la pestaña **Cloud Services** de las **Propiedades de carpeta** de la carpeta correspondiente.
+Para utilizar otras configuraciones (es decir, excluyendo global) con una carpeta de Assets comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la pestaña **Cloud Services** de las **Propiedades de carpeta** de la carpeta correspondiente.
 
 ![Aplicar configuración](assets/cfm-conf-02.png)

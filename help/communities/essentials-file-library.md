@@ -37,7 +37,7 @@ Esta página proporciona la información fundamental para trabajar con la funci�
    <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.filelibrary</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td> /libs/social/filelibrary/components/hbs/filelibrary/filelibrary.hbs<br /> /libs/social/filelibrary/components/hbs/folder/folder.hbs<br /> /libs/social/filelibrary/components/hbs/folder/item.hbs<br /> /libs/social/filelibrary/components/hbs/document/document.hbs<br /> /libs/social/filelibrary/components/hbs/document/item.hbs<br /> </td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Esta página proporciona la información fundamental para trabajar con la funci�
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="file-library.md">Función Biblioteca de archivos</a></td>
+   <td>Ver <a href="file-library.md">característica de biblioteca de archivos</a></td>
   </tr>
  </tbody>
 </table>
@@ -63,20 +63,20 @@ Esta página proporciona la información fundamental para trabajar con la funci�
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de la comunidad que incluye [Función Biblioteca de archivos](functions.md#file-library-function), incluye un configurado `file library` componente.
+Una estructura de sitio de la comunidad que incluye la [función Biblioteca de archivos](functions.md#file-library-function), incluye un componente `file library` configurado.
 
 ### Acceder a los comentarios publicados para las bibliotecas de archivos (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Resumen del proveedor de recursos de almacenamiento](srp.md) - introducción y descripción general del uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - directrices de codificación.
-* [Refactorización de SocialUtils](socialutils.md) : asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [SRP y UGC Essentials](srp-and-ugc.md): métodos y ejemplos de utilidades SRP.
+* [Acceder a UGC con SRP](accessing-ugc-with-srp.md): directrices de codificación.
+* [Refactorización de SocialUtils](socialutils.md): asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.

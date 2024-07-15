@@ -73,7 +73,7 @@ Para crear un perfil personalizado, realice los siguientes pasos:
 Después de crear un perfil personalizado, agregue información de procesamiento a este perfil. Al recibir una solicitud para el nuevo perfil, CRX verifica la existencia de la carpeta /apps para que se represente la página JSP. Cree la página JSP en la carpeta /apps.
 
 1. En el panel izquierdo, navegue hasta la carpeta `/apps`.
-1. Haga clic con el botón derecho en `/apps` y elija crear una carpeta con el nombre **hrform**.
+1. Haga clic con el botón derecho en la carpeta `/apps` y elija crear una carpeta con el nombre **hrform**.
 1. Dentro de la carpeta **hrform** cree una carpeta llamada **demo**.
 1. Haga clic en el botón **Guardar todo**.
 1. Navegue hasta `/libs/xfaforms/profile/html.jsp` y copie el nodo **html.jsp**.

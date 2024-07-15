@@ -24,11 +24,11 @@ La consola Audiencias permite crear, organizar y administrar las audiencias de l
 * Añadir públicos: de Adobe Target o segmentos de ContextHub.
 * Administrar públicos.
 
-Una audiencia, llamada *segmento* en ContextHub y Client Context, es una clase de visitantes definidos por criterios específicos y que, a continuación, determina quién ve una actividad de destino. Al segmentar una actividad, puede seleccionar audiencias directamente en el proceso de segmentación o crear más en la consola Audiencias.
+Una audiencia denominada *segment* en ContextHub y Client Context es una clase de visitantes definidos por criterios específicos y que, a su vez, determina quién ve una actividad de destino. Al segmentar una actividad, puede seleccionar audiencias directamente en el proceso de segmentación o crear más en la consola Audiencias.
 
 En la consola de públicos, estos se organizan por marca.
 
-Las audiencias están disponibles en el modo Segmentación de [creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md), donde también puede crear audiencias (pero debe crear audiencias de Adobe Target en la consola Audiencias). Los públicos que crea en el modo Segmentación aparecen en la consola de públicos.
+Las audiencias están disponibles en el modo Segmentación de [contenido de destino de creación](/help/sites-authoring/content-targeting-touch.md), donde también puede crear audiencias (pero debe crear audiencias de Adobe Target en la consola Audiencias). Los públicos que crea en el modo Segmentación aparecen en la consola de públicos.
 
 Los públicos se muestran con una etiqueta que describe el tipo de público que se define:
 
@@ -42,10 +42,10 @@ Puede crear un segmento de ContextHub en la consola de públicos o durante el pr
 
 Para crear un segmento de ContextHub en la consola de audiencias:
 
-1. En la consola de navegación, haga clic en **Personalización**. Clic **Audiencias**.
-1. Clic **Crear segmento de ContextHub**.
+1. En la consola de navegación, haga clic en **Personalization**. Haga clic en **Audiencias**.
+1. Haga clic en **Crear segmento de ContextHub**.
 
-   ![screen-shot_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
+   ![captura de pantalla_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
 
 1. En cuadro de diálogo **Nuevo segmento de ContextHub**, introduzca un título, ajuste el aumento y haga clic en **Crear**. El nuevo segmento de ContextHub aparece en la lista de audiencias.
 
@@ -53,7 +53,7 @@ Para crear un segmento de ContextHub en la consola de audiencias:
    >
    >Puede ordenar la lista modificada pulsando o haciendo clic en **Modificado** para clasificar en orden descendente y ver las audiencias recién creadas.
 
-Para obtener más información sobre la creación de segmentos con ContextHub, consulte la [Configuración de la segmentación con ContextHub](/help/sites-administering/segmentation.md) documentación.
+Para obtener más información sobre cómo crear segmentos con ContextHub, consulte la documentación de [Configuración de la segmentación con ContextHub](/help/sites-administering/segmentation.md).
 
 ## Creación de un público de Adobe Target mediante la consola de públicos {#creating-an-adobe-target-audience-using-the-audience-console}
 
@@ -65,23 +65,23 @@ Al utilizar más de una regla, estas reglas se combinan según el operador boole
 
 >[!NOTE]
 >
->Si no ve **Crear audiencia de Target **en la **Crear** , no tiene los permisos necesarios para crear una audiencia. Necesita permisos de escritura en **/etc/segmentation** para poder crear audiencias. Los autores de contenido del grupo tienen permisos de escritura de forma predeterminada.
+>Si no ve **Crear audiencia de Target **en el menú **Crear**, no tiene los permisos necesarios para crear una audiencia. Necesita permisos de escritura en **/etc/segmentation** para poder crear audiencias. Los autores de contenido del grupo tienen permisos de escritura de forma predeterminada.
 
 Para crear una audiencia de Adobe Target:
 
-1. En la consola de navegación, haga clic en **Personalización**. Clic **Audiencias**.
+1. En la consola de navegación, haga clic en **Personalization**. Haga clic en **Audiencias**.
 
-   ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
+   ![captura de pantalla_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. En la consola Audiencias, haga clic en **Crear** y luego** Crear audiencia de Target**.
+1. En la consola Audiencias, haga clic en **Crear** y, a continuación** Crear audiencia de destino**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. En el **Configuración de Adobe Target** , seleccione la configuración de destino y haga clic en **OK**.
+1. En el cuadro de diálogo **Configuración de Adobe Target**, seleccione la configuración de destino y haga clic en **Aceptar**.
 1. En el área Rule#1, haga clic en el tipo de atributo e introduzca la información de atributo en los campos disponibles. Cuando termine, seleccione la marca de verificación a la derecha del atributo para guardarlo. Consulte [Atributos y sus opciones](#attributes-and-their-options) para obtener información sobre todos los atributos.
 1. Haga clic en **Agregar regla** para añadir otra regla. Escriba tantas reglas como sea necesario. Las reglas se combinan con el operador boolean AND, lo que significa que la audiencia debe cumplir todos los requisitos de cada regla para poder optar a una actividad.
 1. Haga clic en **Siguiente**.
-1. Introduzca un nombre para la audiencia y haga clic en **Guardar**.
+1. Escriba un nombre para la audiencia y haga clic en **Guardar**.
 1. Haga clic en **Guardar**. El público se enumera en la lista de públicos.
 
 ### Atributos y sus opciones {#attributes-and-their-options}
@@ -106,6 +106,6 @@ Puede crear reglas de segmentación para cada uno de los atributos siguientes:
 
 Puede editar cualquier audiencia de ContextHub o Client Context desde la consola Audiencias. También puede editar audiencias de Adobe Target AEM, pero solo las que se hayan creado en la siguiente:
 
-1. En la consola de navegación, haga clic en **Personalización**. Clic **Audiencias**.
-1. Haga clic en el icono situado junto al segmento de ContextHub o Client Context que desea editar y, a continuación, haga clic en **Editar**.
-1. Haga los cambios necesarios en el editor de segmentos. Consulte [Client Context](/help/sites-administering/campaign-segmentation.md) o [ContextHub](/help/sites-developing/ch-configuring.md) documentación.
+1. En la consola de navegación, haga clic en **Personalization**. Haga clic en **Audiencias**.
+1. Haga clic en el icono situado junto al segmento de ContextHub o Client Context que desee editar y, a continuación, haga clic en **Editar**.
+1. Haga los cambios necesarios en el editor de segmentos. Consulte la documentación de [Client Context](/help/sites-administering/campaign-segmentation.md) o [ContextHub](/help/sites-developing/ch-configuring.md).

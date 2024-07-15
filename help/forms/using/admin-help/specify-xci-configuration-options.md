@@ -29,6 +29,6 @@ De forma predeterminada, Output anula algunas de las opciones especificadas en e
 
 Puede seleccionar opciones que cancelen la anulación de las opciones enumeradas anteriormente, en cuyo caso la salida utiliza los valores especificados en el archivo XCI personalizado.
 
-1. En la consola de administración, haga clic en **Servicios** > salida.
+1. En la consola de administración, haga clic en **Servicios** > resultado.
 1. Seleccione o anule la selección de la casilla de verificación Usar opciones XCI predeterminadas del sistema. Cuando se selecciona esta opción, Output utiliza sus valores predeterminados para la configuración de paquetes, creator, producer y compressObjectStream. Cuando esta opción no está seleccionada, la salida utiliza los valores especificados en el archivo XCI personalizado.
 1. Haga clic en **Guardar**.

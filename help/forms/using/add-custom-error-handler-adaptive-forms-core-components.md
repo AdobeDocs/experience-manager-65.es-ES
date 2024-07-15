@@ -67,7 +67,7 @@ El siguiente código ilustra la estructura de respuesta a errores existente:
 Donde:
 
 * `errorCausedBy` describe el motivo del error.
-* `errors` mencione el nombre de campo completo de los campos en los que se han producido errores en los criterios de validación junto con el mensaje de error de validación.
+* `errors` menciona el nombre de campo completo de los campos en los que se produjeron errores en los criterios de validación junto con el mensaje de error de validación.
 * El campo `originCode` añadido por AEM que contiene el código de estado HTTP devuelto por el servicio externo.
 * El campo `originMessage` añadido por AEM que contiene los datos de error sin procesar devueltos por el servicio externo.
 
@@ -169,7 +169,7 @@ Algunas de las opciones para mostrar las respuestas de error son las siguientes:
 
 Antes de utilizar el controlador de error en un Forms adaptable:
 
-* [Habilitar los componentes principales de Forms adaptables para su entorno](enable-adaptive-forms-core-components.md).
+* [Habilite los componentes principales de Forms adaptable para su entorno](enable-adaptive-forms-core-components.md).
 * Conocimientos básicos para [crear una función personalizada](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Instalar la última versión de [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -218,7 +218,7 @@ Puede añadir una función del controlador de errores personalizado para realiza
 
 Además de las acciones mencionadas, los controladores de errores personalizados se pueden utilizar para ejecutar funciones personalizadas que cumplan con los requisitos específicos del usuario.
 
-El controlador de errores personalizado es una función (Biblioteca de cliente) diseñada para responder a los errores devueltos por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales. Cualquier biblioteca de cliente con anotación `@errorHandler` se considera que es una función del controlador de errores personalizado. Esta anotación ayuda a identificar la función de controlador de error especificada en la variable `.js` archivo.
+El controlador de errores personalizado es una función (Biblioteca de cliente) diseñada para responder a los errores devueltos por un servicio externo y proporcionar una respuesta personalizada a los usuarios finales. Cualquier biblioteca de cliente con anotación `@errorHandler` se considera que es una función del controlador de errores personalizado. Esta anotación ayuda a identificar la función de controlador de error especificada en el archivo `.js`.
 
 Para comprender cómo crear y utilizar un controlador de errores personalizado con la acción [Invocar servicio del editor de reglas](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=es#invoke), vamos a ver un ejemplo de formulario adaptable con dos campos, **ID de mascota** y **Nombre de mascota**. Además, usar un controlador de errores personalizado en el campo **ID de mascota** para comprobar si hay varios errores devueltos por el punto final REST configurado para invocar un servicio externo, por ejemplo, `200 - OK`, `404 - Not Found` y `400 - Bad Request`.
 
@@ -232,12 +232,12 @@ Para añadir y utilizar un controlador de errores personalizado en un formulario
 Para crear una función de error personalizada, realice los siguientes pasos:
 
 1. Iniciar sesión en `http://server:port/crx/de/index.jsp#`.
-1. Cree una carpeta dentro de la carpeta `/apps`. Por ejemplo, cree una carpeta denominada como `experience-league`.
+1. Cree una carpeta dentro de la carpeta `/apps`. Por ejemplo, cree una carpeta con el nombre `experience-league`.
 1. Guarde los cambios.
-1. Vaya a la carpeta creada y cree un nodo de tipo `cq:ClientLibraryFolder` as `clientlibs`.
-1. Vaya al recién creado `clientlibs` y añada la `allowProxy` y `categories` propiedades:
+1. Vaya a la carpeta creada y cree un nodo de tipo `cq:ClientLibraryFolder` como `clientlibs`.
+1. Vaya a la carpeta `clientlibs` recién creada y agregue las propiedades `allowProxy` y `categories`:
 
-   ![Propiedades del nodo de biblioteca personalizado](/help/forms/using/assets/customlibrary-properties.png)
+   ![Propiedades del nodo de la biblioteca personalizada](/help/forms/using/assets/customlibrary-properties.png)
 
    >[!NOTE]
    >
@@ -245,14 +245,14 @@ Para crear una función de error personalizada, realice los siguientes pasos:
 
 1. Guarde los cambios.
 
-1. Cree una carpeta llamada `js` en el `clientlibs` carpeta.
-1. Cree un archivo JavaScript llamado `functions.js` en el `js` carpeta
-1. Cree un archivo llamado `js.txt` en el `clientlibs` carpeta.
+1. Cree una carpeta llamada `js` en la carpeta `clientlibs`.
+1. Cree un archivo de JavaScript llamado `functions.js` en la carpeta `js`
+1. Cree un archivo denominado `js.txt` en la carpeta `clientlibs`.
 1. Guarde los cambios.
 La estructura de carpetas creada tiene este aspecto:
 
    ![Estructura de carpetas de la biblioteca de cliente creada](/help/forms/using/assets/customclientlibrary_folderstructure.png)
-1. Haga doble clic en `functions.js` para abrir el editor. El archivo contiene el código del controlador de errores personalizado.
+1. Haga doble clic en el archivo `functions.js` para abrir el editor. El archivo contiene el código del controlador de errores personalizado.
 Vamos a añadir el siguiente código al archivo JavaScript para mostrar la respuesta y los encabezados, recibidos del extremo del servicio REST, en la consola del explorador.
 
    ```javascript

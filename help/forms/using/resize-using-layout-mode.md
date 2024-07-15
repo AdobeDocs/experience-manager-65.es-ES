@@ -31,7 +31,7 @@ Puede utilizar el modo Diseño para cambiar el tamaño de los componentes de tod
 Seleccione **Diseño** en la lista desplegable que aparece en la parte superior de la interfaz de creación de formularios adaptables junto a la opción **Vista previa**. El formulario se muestra en el modo Diseño.
 
 1. Inicie sesión en la instancia de autor de AEM y navegue hasta **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
-1. Crear un [formulario adaptable](../../forms/using/creating-adaptive-form.md) o abra una existente.
+1. Crear un [formulario adaptable](../../forms/using/creating-adaptive-form.md) o abrir uno existente.
 1. Seleccione **Diseño** en la lista desplegable que aparece en la parte superior junto a la opción **Vista previa**. El formulario se muestra en el modo Diseño.
 
    ![Modo Diseño](assets/layout_mode_ic_new.png)
@@ -125,7 +125,7 @@ Puede desactivar el modo Diseño para formularios con un diseño adaptable antig
 Siga estos pasos para desactivar el modo Diseño:
 
 1. Seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Plantillas]** y abra la plantilla utilizada en el formulario en el modo **[!UICONTROL Editar]**.
-1. Seleccione el contenedor de documentos en el panel izquierdo y seleccione **[!UICONTROL Política.]**
+1. Seleccione el contenedor del documento en el panel izquierdo y seleccione **[!UICONTROL Directiva.]**
 
    ![Desactivar el modo Diseño](assets/policy_disable_layout_mode.png)
 

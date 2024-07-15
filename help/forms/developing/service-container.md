@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Contenedor de servicio {#service-container}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
 Los servicios de AEM Forms en el contenedor de servicios (incluidos los servicios estándar como el servicio Encryption y los procesos de larga y corta duración) se pueden invocar mediante varios proveedores, como un proveedor EJB. Un proveedor EJB permite invocar los servicios de AEM Forms a través de RMI/IIOP. SOAP SOAP Un proveedor de servicios web expone los servicios como servicios web (generación de WSDL) mediante estándares como el/HTTP y el/JMS.
 
@@ -34,11 +34,11 @@ En la tabla siguiente se describen las diferentes formas en que se puede invocar
  <tbody>
   <tr>
    <td><p>Integración remota</p></td>
-   <td><p>La integración remota permite a los clientes de Flex invocar operaciones de servicio. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Invocar AEM Forms AEM mediante (obsoleto para formularios) AEM Forms Remoting</a>.)</p></td>
+   <td><p>La integración remota permite a los clientes de Flex invocar operaciones de servicio. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Invocación de AEM Forms AEM mediante (obsoleto para formularios en forma de) AEM Forms Remoting</a>).</p></td>
   </tr>
   <tr>
    <td><p>API de Java</p></td>
-   <td><p>Una API de Java puede invocar un servicio de AEM Forms. La API de Java está organizada en bibliotecas de cliente y la API de invocación de Java. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">Invocar AEM Forms mediante la API de Java</a>.)</p></td>
+   <td><p>Una API de Java puede invocar un servicio de AEM Forms. La API de Java está organizada en bibliotecas de cliente y la API de invocación de Java. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">Invocar AEM Forms mediante la API de Java</a>).</p></td>
   </tr>
   <tr>
    <td><p>Servicios web</p></td>
@@ -46,7 +46,7 @@ En la tabla siguiente se describen las diferentes formas en que se puede invocar
   </tr>
   <tr>
    <td><p>Solicitudes REST</p></td>
-   <td><p>AEM Forms admite solicitudes REST. Se puede invocar un servicio directamente desde una página de HTML. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Invocar AEM Forms mediante solicitudes REST</a>.)</p></td>
+   <td><p>AEM Forms admite solicitudes REST. Se puede invocar un servicio directamente desde una página de HTML. (Consulte <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Invocación de AEM Forms mediante solicitudes REST</a>).</p></td>
   </tr>
  </tbody>
 </table>
@@ -55,11 +55,11 @@ La siguiente ilustración proporciona una representación visual de las diferent
 
 >[!NOTE]
 >
->Además de utilizar el SDK de AEM Forms para crear aplicaciones cliente que puedan invocar servicios de AEM Forms, también puede crear componentes que se pueden implementar en el contenedor de servicios. Por ejemplo, puede crear un componente Bank que contenga tipos de datos personalizados que se puedan utilizar en procesos. Es decir, se puede crear un tipo de datos como `com.adobe.idp.BankAccount`. A continuación, puede crear `com.adobe.idp.BankAccount` instancias en las aplicaciones cliente.
+>Además de utilizar el SDK de AEM Forms para crear aplicaciones cliente que puedan invocar servicios de AEM Forms, también puede crear componentes que se pueden implementar en el contenedor de servicios. Por ejemplo, puede crear un componente Bank que contenga tipos de datos personalizados que se puedan utilizar en procesos. Es decir, puede crear un tipo de datos como `com.adobe.idp.BankAccount`. A continuación, puede crear `com.adobe.idp.BankAccount` instancias en las aplicaciones cliente.
 
 El contenedor de servicio proporciona las siguientes funciones:
 
-* Permite que los servicios de AEM Forms se invoquen mediante diferentes métodos. Puede configurar un servicio estableciendo puntos finales para que se pueda invocar mediante todos los métodos: Remoting, la API de Java, los servicios web y REST. (Consulte [Administrar extremos mediante programación](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
+* Permite que los servicios de AEM Forms se invoquen mediante diferentes métodos. Puede configurar un servicio estableciendo puntos finales para que se pueda invocar mediante todos los métodos: Remoting, la API de Java, los servicios web y REST. (Consulte [Administrar puntos de conexión mediante programación](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
 * Convierte un mensaje en un formato normalizado denominado solicitud de invocación. Se envía una solicitud de invocación desde una aplicación cliente (u otro servicio) a un servicio en el contenedor de servicios. Una solicitud de invocación contiene información como el nombre del servicio que se va a invocar y los valores de datos necesarios para realizar la operación. Muchos servicios requieren un documento para realizar una operación. Por lo tanto, una solicitud de invocación suele contener un documento, que puede ser datos de PDF, datos XDP, datos XML, etc.
 * Enruta las solicitudes de invocación a los servicios adecuados (el nombre del servicio que se va a invocar forma parte de la solicitud de invocación).
 * Realiza tareas como determinar si el llamador tiene permiso para invocar la operación de servicio especificada. AEM La solicitud de invocación debe contener un nombre de usuario y una contraseña de formularios de datos válidos.

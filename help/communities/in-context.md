@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Para AEM Communities, la moderación pueden realizarla administradores y miembros de la comunidad de confianza directamente en la página publicada en la que se publicó el contenido de la comunidad.
 
-Cuando se utiliza un [consola de moderación](moderation.md), la información mostrada para el contenido incluye un vínculo a la página publicada para permitir el acceso a acciones de moderación adicionales disponibles al moderar en contexto.
+Al usar [consola de moderación](moderation.md), la información mostrada para el contenido incluye un vínculo a la página publicada para permitir el acceso a acciones de moderación adicionales disponibles al moderar en contexto.
 
 ## Acciones de moderación {#moderation-actions}
 
-Visite la información general de la moderación para ver una descripción de [acciones de moderación](moderate-ugc.md#moderation-actions).
+Visite el resumen de moderación para obtener una descripción de [acciones de moderación](moderate-ugc.md#moderation-actions).
 
 ## IU de moderación {#moderation-ui}
 
@@ -38,11 +38,11 @@ La interfaz de usuario presentada al moderador en la instancia de publicación s
 
 ## Ejemplos {#example}
 
-Uso del [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) sitio creado cuando [Introducción a AEM Communities](getting-started.md), es posible configurar un hilo en un foro en el que experimentar diversas actividades de moderación en el entorno de publicación. Consulte a continuación.
+Con el sitio [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creado al [Comenzar con AEM Communities](getting-started.md), es posible configurar un hilo en un foro en el que experimentar diversas actividades de moderación en el entorno de Publish. Consulte a continuación.
 
-Aaron McDonald (`aaron.mcdonald@mailinator.com`) se identificó como un miembro de confianza de la comunidad al agregarlo al grupo de moderadores de participación de la comunidad al crear el sitio.
+Aaron McDonald (`aaron.mcdonald@mailinator.com`) se identificó como un miembro de confianza de la comunidad agregándolo al grupo de moderadores de participación de la comunidad al crear el sitio.
 
-Rebekah Larsen (`rebekah.larsen@trashymail.com`) se puede agregar como miembro del grupo de miembros de la comunidad que utilizan el [Consola Miembros](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) se puede agregar como miembro del grupo de miembros de la comunidad mediante la [consola Miembros](members.md).
 
 Para obtener más información sobre los grupos de usuarios de la comunidad, visite [Administración de usuarios y grupos de usuarios](users.md).
 
@@ -51,7 +51,7 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
 * Iniciar sesión como Rebekah Larsen (rebekah.larsen@trashymail.com)
 
    * Seleccionar foro
-   * Seleccionar nueva publicación
+   * Seleccione Nuevo Post
    * Introduzca el asunto
 
      Cuándo cambiar el néctar en Humming Bird Feeder
@@ -60,14 +60,14 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
 
      No he tenido mucho éxito cuando cuelgo un alimentador de colibrí cada año. Parece que vienen un día o dos, entonces eso es todo. Lo cambio una vez a la semana, ¿es demasiado largo? ¿Debo cambiarlo antes?
 
-   * Seleccionar publicación
+   * Seleccionar Post
    * Seleccione Cerrar sesión
 
 * Iniciar sesión como Aaron McDonald (aaron.mcdonald@mailinator.com)
 
    * Seleccionar foro
    * Para el tema de Hummingbird, seleccione Leer más
-   * Escriba el comentario para la respuesta de publicación
+   * Escriba el comentario para la respuesta de Post
 
      Me cambio la mía una vez a la semana y las recibo de mayo a octubre.
 
@@ -78,7 +78,7 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
 
    * Seleccionar foro
    * Para el tema de Hummingbird, seleccione Leer más
-   * Escriba el comentario para la respuesta de publicación
+   * Escriba el comentario para la respuesta de Post
 
      Vendo néctar y alimentadores - visita https://my.viral.url/
 
@@ -91,13 +91,13 @@ A continuación se muestra una vista del foro vista por un visitante del sitio q
 
 Un visitante anónimo del sitio solo puede ver el foro, pero no puede publicar ningún contenido ni realizar ninguna acción de moderación.
 
-![community-forum-visitor](assets/community-forum-visitor.png)
+![visitante-foro-comunidad](assets/community-forum-visitor.png)
 
 ### Nuevo miembro (#4) {#new-member}
 
-En autor, inicie sesión como administrador y agregue Boyd Larsen (boyd.larsen@dodgit.com) como un nuevo miembro del grupo de miembros de participación de la comunidad mediante [Consola Miembros](members.md)y, a continuación, Cerrar sesión.
+En el autor, inicie sesión como administrador y agregue Boyd Larsen (boyd.larsen@dodgit.com) como nuevo miembro del grupo de miembros de la comunidad mediante la [consola de miembros](members.md). A continuación, cierre la sesión.
 
-En la publicación, inicie sesión como Boyd Larsen y acceda al hilo seleccionando `Forum`, y luego `Read more` para el poste de colibrí.
+En la publicación, inicie sesión como Boyd Larsen y acceda al subproceso seleccionando `Forum` y, a continuación, `Read more` para la publicación de colibrí.
 
 Aviso:
 
@@ -109,7 +109,7 @@ Haga que Boyd seleccione Marcar para marcar el contenido publicado por Andrew.
 
 Cerrar sesión
 
-![community-forum-member](assets/community-forum-member.png)
+![miembro-foro-comunidad](assets/community-forum-member.png)
 
 ### Administrador (#3) {#administrator}
 
@@ -122,7 +122,7 @@ Aviso:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Seleccione el elemento de menú Administración para poder acceder al [consola de moderación](moderation.md) desde el entorno de publicación.
+Seleccione el elemento de menú Administración para poder acceder a la [consola de moderación](moderation.md) desde el entorno de Publish.
 
 Tenga en cuenta que, para un administrador, todo el contenido moderable es visible, no solo el contenido del sitio de la comunidad de Geometrixx Engage.
 
@@ -134,7 +134,7 @@ Cerrar sesión.
 
 ### Moderador de la comunidad (#2) {#community-moderator}
 
-Iniciar sesión como Aaron McDonald (`aaron.mcdonal@mailinator.com`), un moderador de la comunidad, y acceda al hilo seleccionando Foro, y luego Leer más para la publicación colibrí.
+Inicie sesión como Aaron McDonald (`aaron.mcdonal@mailinator.com`), un moderador de la comunidad, y acceda al hilo seleccionando Foro y, a continuación, Leer más para la publicación de colibrí.
 
 Aviso:
 
@@ -143,9 +143,9 @@ Aviso:
 * Aaron puede Cortar el tema del foro para moverlo a otro foro para el que modera.
 * Aaron puede seleccionar Administración para acceder a la consola de moderación.
 
-![community-forum-moderator](assets/community-forum-moderator.png)
+![moderador-foro-comunidad](assets/community-forum-moderator.png)
 
-Seleccione el elemento de menú Administración para poder acceder al [consola de moderación](moderation.md) desde el entorno de publicación.
+Seleccione el elemento de menú Administración para poder acceder a la [consola de moderación](moderation.md) desde el entorno de Publish.
 
 Tenga en cuenta que, para un moderador de la comunidad, solo está visible el contenido moderable del sitio de la comunidad de Geometrixx Engage.
 
@@ -157,7 +157,7 @@ Cerrar sesión.
 
 ### Autor de contenido (#1) {#content-author}
 
-Iniciar sesión como Rebekah Larsen (`rebekah.larsen@mailinator.com`), un miembro de la comunidad que inició el hilo, y accedió al hilo seleccionando Foro, y luego Leer más para la publicación colibrí.
+Inicie sesión como Rebekah Larsen (`rebekah.larsen@mailinator.com`), un miembro de la comunidad que inició el hilo, y acceda al hilo seleccionando Foro y, a continuación, Más información para la publicación de colibrí.
 
 Aviso:
 

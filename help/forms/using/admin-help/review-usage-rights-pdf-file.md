@@ -20,7 +20,7 @@ ht-degree: 14%
 
 Al cargar un archivo de PDF en la aplicación web de extensiones de Acrobat Reader DC, puede ver esta información para ver si está extendida por Reader, si se han aplicado derechos de uso y sus fechas de caducidad.
 
-1. Inicie sesión en la aplicación web de extensiones de Acrobat Reader DC en `http://[localhost]:[port]/ReaderExtensions` (donde *[puerto]* es el número de puerto del servidor de aplicaciones).
+1. Inicie sesión en la aplicación web Acrobat Reader DC Extensions en `http://[localhost]:[port]/ReaderExtensions` (donde *[port]* es el número de puerto del servidor de aplicaciones).
 1. Haga clic en Examinar para cargar el archivo del PDF y, a continuación, haga clic en Información. La información aparece debajo del nombre de archivo.
 
    Consulte la Ayuda de extensiones de Acrobat Reader DC para obtener más información sobre la modificación de los derechos de uso del archivo.

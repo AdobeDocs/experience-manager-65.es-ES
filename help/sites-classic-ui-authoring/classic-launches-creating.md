@@ -21,7 +21,7 @@ ht-degree: 54%
 
 Cree un lanzamiento para poder actualizar las páginas web existentes a la versión nueva que se activará más adelante. Al crear un lanzamiento, especificará un título y la página de origen:
 
-* El título aparece en la **Sidekick**, desde donde los autores pueden acceder a ellas para trabajar en ellas.
+* El título aparece en el **Sidekick**, desde donde los autores pueden obtener acceso a él para trabajar con él.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar únicamente la página de origen.
 * De forma predeterminada, [Live Copy](/help/sites-administering/msm.md) actualiza automáticamente las páginas de lanzamiento a medida que cambian las páginas de origen. Puede especificar que se cree una copia estática para evitar cambios automáticos.
 
@@ -32,13 +32,13 @@ De forma opcional, puede especificar la **fecha de lanzamiento** (y hora) para e
 El siguiente procedimiento crea un lanzamiento.
 
 1. Abra la página de administración del sitio web ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
-1. Clic **Nuevo...** entonces **Nuevo lanzamiento...**.
-1. En el **Crear lanzamiento** , especifique valores para las siguientes propiedades:
+1. Haga clic en **Nuevo...** y después en **Nuevo lanzamiento...**.
+1. En el cuadro de diálogo **Crear lanzamiento**, especifique valores para las siguientes propiedades:
 
    * **Título del lanzamiento**: el nombre del lanzamiento. El nombre debe ser significativo para los autores.
-   * **Página de origen**: Ruta a la página para la que se crea el lanzamiento. De forma predeterminada, se incluyen todas las páginas secundarias.
-   * **Excluir páginas secundarias**: seleccione esta opción para crear el lanzamiento solo para la página de origen y no para las secundarias. Esta opción no está seleccionada de forma predeterminada.
-   * **Mantener en sincronización**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Esto se logra haciendo que el lanzamiento sea una [live copy](/help/sites-administering/msm.md).
+   * **Página de Source**: La ruta de acceso a la página para la que se va a crear el lanzamiento. De forma predeterminada, se incluyen todas las páginas secundarias.
+   * **Excluir páginas secundarias**: seleccione esta opción para crear el lanzamiento solo para la página de origen y no para las páginas secundarias. Esta opción no está seleccionada de forma predeterminada.
+   * **Mantener sincronizado**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Esto se logra convirtiendo el lanzamiento en [live copy](/help/sites-administering/msm.md).
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-99](assets/chlimage_1-99a.png)
@@ -49,8 +49,8 @@ El siguiente procedimiento crea un lanzamiento.
 
 También puede eliminar un lanzamiento.
 
-1. En el [consola lanzamientos](/help/sites-classic-ui-authoring/classic-launches.md), seleccione el lanzamiento requerido.
-1. Clic **Eliminar** - se requiere confirmación:
+1. En la [consola de lanzamientos](/help/sites-classic-ui-authoring/classic-launches.md), seleccione el lanzamiento requerido.
+1. Haga clic en **Eliminar**; se requiere confirmación:
 
    ![chlimage_1-100](assets/chlimage_1-100a.png)
 

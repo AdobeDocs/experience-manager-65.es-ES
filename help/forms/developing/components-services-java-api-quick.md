@@ -1,6 +1,6 @@
 ---
-title: SOAP Componentes y servicios Java&trade; Inicio rápido de la API ()
-description: Aprenda a manipular mediante programación los componentes y servicios de AEM Forms SOAP mediante Java&trade; Inicio rápido de la API ().
+title: SOAP Componentes y servicios Java& trade; Inicio rápido de la API ()
+description: Aprenda a manipular mediante programación los componentes y servicios de AEM Forms SOAP mediante Java& trade; API Quick Start ().
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -42,7 +42,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en JBoss® y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en JBoss® y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ El siguiente ejemplo de Java™ implementa un componente basado en un archivo JA
 
 ## SOAP Inicio rápido (modo de): Configuración del contexto de ejecución de un servicio mediante la API de Java™ {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-En el siguiente ejemplo de código Java™ se establece el contexto de ejecución del invocador Run-As en un servicio de ejemplo denominado *EncryptDocument*.
+En el siguiente ejemplo de código Java™ se establece el contexto de ejecución del Invocador de ejecución en un servicio de ejemplo denominado *EncryptDocument*.
 
 ```java
  /* 

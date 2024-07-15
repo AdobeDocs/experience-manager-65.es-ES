@@ -29,16 +29,16 @@ AEM Compruebe si las llamadas HTTP se envían y reciben en ambas soluciones (> A
 
 * AEM AEM Para obtener la funcionalidad de la, puede ver que las llamadas de JSON se solicitan desde la interfaz de autor de la aplicación
    * Estas llamadas no deberían provocar el error HTTP-500.
-   * Si ve errores de HTTP-500, consulte la `error.log` para obtener más información.
+   * Si ve errores HTTP-500, compruebe `error.log` para obtener más información.
 * AEM Elevar el nivel de depuración de las clases de campaña en la también puede ayudar a solucionar problemas.
 
 ## Si la conexión falla {#when-the-connection-fails}
 
-Compruebe que ha configurado la variable **`aemserver`** en Adobe Campaign Classic.
+Compruebe que ha configurado el operador **`aemserver`** en Adobe Campaign Classic.
 
 ## Si las imágenes no aparecen en la consola de Adobe Campaign Classic {#if-images-do-not-appear-in-the-adobe-campaign-console}
 
-Compruebe el origen del HTML y valide que puede abrir la dirección URL desde el equipo cliente. Si la dirección URL tiene `localhost:4503` AEM en él, y luego cambie la configuración de Day CQ Link Externalizer en la instancia de autor de la. Haga que apunte a una instancia de publicación a la que se pueda acceder desde el equipo de consola de Adobe Campaign Classic.
+Compruebe el origen del HTML y valide que puede abrir la dirección URL desde el equipo cliente. AEM Si la dirección URL contiene `localhost:4503`, cambie la configuración del Externalizador de vínculos de CQ de día en la instancia de autor de la. Haga que apunte a una instancia de publicación a la que se pueda acceder desde el equipo de consola de Adobe Campaign Classic.
 
 Consulte [Configuración del externalizador.](/help/sites-administering/campaignstandard.md#configuring-the-externalizer)
 
@@ -58,7 +58,7 @@ Para solucionar este problema, cambie lo siguiente en `$CAMPAIGN_HOME/conf/confi
 
 En Adobe Campaign Classic, asegúrese de que no tiene una barra diagonal (`/`) después del número de puerto.
 
-![Adobe Campaign Classic: asegúrese de que no haya una barra diagonal después del número de puerto](assets/chlimage_1-149.png)
+![Adobe Campaign Classic: asegúrese de que no hay barra diagonal después del número de puerto](assets/chlimage_1-149.png)
 
 ## Si recibe una advertencia sobre setlocale {#if-you-get-a-warning-about-your-setlocale}
 
@@ -66,8 +66,8 @@ Al iniciar el servicio Apache HTTPD para Adobe Campaign Classic, puede ver el er
 
 Asegúrese de que tiene `en_CA.ISO-8859-15 locale` instalado en el servidor de Adobe Campaign Classic.
 
-* Puede comprobar si está instalado utilizando `local -a`.
-* Si no está instalado, puede aplicar parches al `/usr/local/neolane/nl6/env.sh` y cambie la configuración regional a una instalada.
+* Puede comprobar si está instalado usando `local -a`.
+* Si no está instalado, puede aplicar parches al script `/usr/local/neolane/nl6/env.sh` y cambiar la configuración regional a una instalada.
 
 ## Si se produce un error al compilar el script &quot;get_nms_amcGetSeedMetaData_jssp&quot; {#if-you-get-an-error-while-compiling-script-get-nms-amcgetseedmetadata-jssp}
 
@@ -79,23 +79,23 @@ Utilice la siguiente solución en el servidor de Adobe Campaign Classic.
 
 1. Abrir archivo `$CAMPAIGN_HOME/datakit/nms/fra/js/amcIntegration.js`
 1. Modificar línea 467 del método `amcGetSeedMetaData`
-1. Cambiar `label : [inclView.@label](mailto:inclView.@label)` hasta `label : String([inclView.@label](mailto:inclView.@label))`
+1. Cambiar `label : [inclView.@label](mailto:inclView.@label)` a `label : String([inclView.@label](mailto:inclView.@label))`
 1. Guardar.
 1. Vuelva a iniciar el servidor.
 
 ## Si Adobe Campaign Classic muestra un error al hacer clic en el botón Sincronizar {#if-adobe-campaign-displays-an-error-when-clicking-the-synchronize-button}
 
-Al hacer clic en **Sincronizar** en Adobe Campaign Classic, puede ver el siguiente error.
+Al hacer clic en el botón **Sincronizar** en Adobe Campaign Classic, es posible que vea el siguiente error.
 
 * `Error while executing the method 'aemListContent' of service [nms:delivery](https://nmsdelivery/)`
 
-AEM Para solucionar este problema, asegúrese de que la dirección URL de conexión de la red está configurada en la variable **Cuentas externas** en Adobe Campaign Classic es accesible desde el equipo.
+AEM Para solucionar este problema, asegúrese de que la dirección URL de conexión de la red de seguridad configurada en **Cuentas externas** en Adobe Campaign Classic es accesible desde el equipo.
 
-Un interruptor de `localhost` La migración a una dirección IP para la URL puede resolver este problema con frecuencia.
+Este problema se suele resolver cambiando de `localhost` a una dirección IP para la dirección URL.
 
 ## Si recibe un error &quot;No se puede analizar la fecha y hora XTK &quot;indefinido&quot;&quot; {#if-you-get-a-cannot-parse-xtk-date-time-undefined-error}
 
-Después de hacer clic **Sincronizar** AEM en el caso de que reciba un error por el que se ha producido un script en las páginas.
+AEM Después de hacer clic en **Sincronizar** en la, es posible que reciba un error que indique que se ha producido un script en las páginas.
 
 * `Cannot parse XTK Date+Time 'undefined': not a valid XTK value.`
 
@@ -107,7 +107,7 @@ Este error se produce si hay información de Adobe Campaign Classic AEM obsoleta
 
 ## Si una conexión a SSL muestra un error al configurar el Cloud Service {#if-a-connection-to-ssl-displays-an-error-when-setting-up-the-cloud-service}
 
-Envíe un ticket al equipo de asistencia de Adobe Campaign si ve lo siguiente en la `error.log` AEM de la.
+Envíe un ticket al equipo de asistencia de Adobe Campaign AEM si ve lo siguiente en la `error.log` de la aplicación de.
 
 ```text
 javax.net.ssl.SSLProtocolException: handshake alert:  unrecognized_name
@@ -130,18 +130,18 @@ Al intentar sincronizar el contenido en la entrega de Adobe Campaign Classic AEM
 Para resolver este problema, haga lo siguiente:
 
 * AEM El Dispatcher o el proxy inverso deben configurarse para pasar el protocolo original como un encabezado.
-* El **Filtro SSL del servicio Http de Apache Felix** AEM en la configuración OSGi de la debe configurarse con la configuración de encabezado requerida.
+* AEM El **filtro SSL del servicio Http Apache Felix** en la configuración OSGi de la aplicación debe estar configurado con los valores de encabezado requeridos.
    * `https://<host>:<port>/system/console/configMgr`
-   * Consulte [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
+   * Ver [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
 
 ## No se puede seleccionar una plantilla personalizada en las propiedades de la página {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 
-AEM Al crear una plantilla de correo electrónico en la para Adobe Campaign Classic, debe incluir la propiedad `acMapping` con el valor `mapRecipient` en el `jcr:content` nodo de la plantilla. Si no lo hace, no puede seleccionar la plantilla Adobe Campaign Classic en **Propiedades de página** AEM de la. El campo aparece desactivado.
+AEM Al crear una plantilla de correo electrónico en la para Adobe Campaign Classic, debe incluir la propiedad `acMapping` con el valor `mapRecipient` en el nodo `jcr:content` de la plantilla. Si no lo hace, no podrá seleccionar la plantilla de Adobe Campaign Classic AEM en **Propiedades de página** de la. El campo aparece desactivado.
 
 ## AEM Si ve el error &quot;com.day.cq.mcm.campaign.servlets.util.ParameterMapper&quot; en los registros de la {#if-you-get-the-error-com-day-cq-mcm-campaign-servlets-util-parametermapper-in-your-logs}
 
-Puede ver el error `com.day.cq.mcm.campaign.servlets.util.ParameterMapper` AEM en los registros de la al utilizar una plantilla personalizada.
+AEM Es posible que vea el error `com.day.cq.mcm.campaign.servlets.util.ParameterMapper` en los registros de trabajo de la al utilizar una plantilla personalizada.
 
-Este error se produce si la variable `acMapping` La propiedad se ha establecido en un valor distinto de `recipient.firstName`, se crea un valor en blanco en el Administrador de Adobe Campaign.
+Este error se produce si la propiedad `acMapping` se establece en un valor distinto de `recipient.firstName` y se crea un valor en blanco en el Administrador de Adobe Campaign.
 
-AEM Si se produce este error, instale el paquete de funciones 6576 para la instalación de la versión de la aplicación de para la instalación de la aplicación de la [Package Share](/help/sites-administering/package-manager.md#package-share).
+AEM Si se produce este error, instale el paquete de características 6576 para su instalación en el espacio de trabajo de [Uso compartido de paquetes](/help/sites-administering/package-manager.md#package-share).

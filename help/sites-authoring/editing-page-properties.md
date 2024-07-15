@@ -71,7 +71,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
   La descripción de la página, su propósito o cualquier otro detalle que desee agregar.
 
-* **Tiempo de activación**
+* **A Tiempo**
 
   La fecha y la hora en que se activa la página publicada. Cuando se publica, esta página permanece inactiva hasta el momento especificado.
 
@@ -87,7 +87,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
   Introduzca una URL de vanidad para esta página, que puede permitirle tener una URL más corta o expresiva.
 
-  Por ejemplo, si la URL de vanidad está configurada en `welcome`a la página identificada por la ruta `/v1.0/startpage`para el sitio web `http://example.com,` entonces `http://example.com/welcome`sería la URL de vanidad de `http://example.com/content/v1.0/startpage`
+  Por ejemplo, si la URL de vanidad se establece en `welcome` para la página identificada por la ruta de acceso `/v1.0/startpage` para el sitio web `http://example.com,`, `http://example.com/welcome` sería la URL de vanidad de `http://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
   >
@@ -110,7 +110,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
   El idioma de la página.
 
-* **Raíz del idioma**
+* **Raíz de idioma**
 
   Si la página es la raíz de una copia en un idioma, es necesario marcar esta opción.
 
@@ -120,7 +120,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Design**
 
-  Indique el [diseño](/help/sites-developing/designer.md) para utilizar en esta página.
+  Indique el [diseño](/help/sites-developing/designer.md) que se usará para esta página.
 
 * **Alias**
 
@@ -129,7 +129,7 @@ Las propiedades se distribuyen entre varias pestañas.
    * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, se puede acceder a esta página también mediante `/content/wknd/us/en/magazine/private`
    * La creación de un alias establece la propiedad `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
    * No se pueden publicar páginas a las que se accede mediante alias en el editor. Las [Opciones de publicación](/help/sites-authoring/publishing-pages.md) del editor solo están disponibles para las páginas a las que se accede a través de sus rutas reales.
-   * Para obtener más información, consulte [Nombres de páginas localizados bajo Prácticas recomendadas de administración de direcciones SEO y URL](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Para obtener más información, consulte [Nombres de páginas localizados en Procedimientos recomendados para la administración de direcciones URL y SEO](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Heredado de &lt;*ruta*>**
 
@@ -141,9 +141,9 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Plantillas permitidas**
 
-  [Defina la lista de plantillas disponibles](/help/sites-authoring/templates.md#allowingatemplate) dentro de esta subrama.
+  [Defina la lista de plantillas disponibles](/help/sites-authoring/templates.md#allowingatemplate) dentro de esta rama secundaria.
 
-* **Activar** (Requisito de autenticación)
+* **Habilitar** (requisito de autenticación)
 
   Habilite (o deshabilite) el uso de la autenticación para poder acceder a la página.
 
@@ -153,12 +153,12 @@ Las propiedades se distribuyen entre varias pestañas.
 
   >[!CAUTION]
   >
-  >El **[Permisos](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite editar las configuraciones de CUG en función de la presencia del `granite:AuthenticationRequired` mixin. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de `cq:cugEnabled` propiedad, se muestra un mensaje de advertencia en **Requisito de autenticación** y la opción no es editable, como tampoco lo son la [Permisos](/help/sites-authoring/editing-page-properties.md#permissions) editable.
+  >La pestaña **[Permisos](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite editar las configuraciones de CUG en función de la presencia del mixin `granite:AuthenticationRequired`. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de la propiedad `cq:cugEnabled`, se muestra un mensaje de advertencia en **Requisito de autenticación** y la opción no se puede editar, como tampoco lo son los [Permisos](/help/sites-authoring/editing-page-properties.md#permissions).
   >
   >
-  >En tal caso, los permisos de CUG deben editarse en la variable [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+  >En tal caso, los permisos de CUG deben editarse en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
-* **Página de inicio**
+* **Página de inicio de sesión**
 
   La página que se utilizará para iniciar sesión.
 
@@ -170,7 +170,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 Muestra la miniatura de la página. Puede hacer lo siguiente:
 
-* **Generar previsualización**
+* **Generar vista previa**
 
   Genere una previsualización de la página que desee utilizar como miniatura.
 
@@ -190,7 +190,7 @@ Muestra la miniatura de la página. Puede hacer lo siguiente:
 
 * **Compartir en redes sociales**
 
-  Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [Uso compartido del componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
+  Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de uso compartido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
 
    * **Habilitar el uso compartido de usuarios en Facebook**
    * **Habilitar el uso compartido de usuarios en Pinterest**
@@ -201,13 +201,13 @@ Definir la variación del fragmento de experiencia que se utiliza para generar m
 
 * **Cloud Services**
 
-  Definir propiedades para [cloud services](/help/sites-developing/extending-cloud-config.md).
+  Defina propiedades para [servicios en la nube](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalización {#personalization}
 
 * **Configuración de ContextHub**
 
-  Seleccione el [Configuración de ContextHub](/help/sites-developing/ch-configuring.md) y [Ruta de segmentos](/help/sites-administering/segmentation.md).
+  Seleccione la [configuración de ContextHub](/help/sites-developing/ch-configuring.md) y la [ruta de acceso de los segmentos](/help/sites-administering/segmentation.md).
 
 * **Configuración de ámbito**
 
@@ -229,14 +229,14 @@ Definir la variación del fragmento de experiencia que se utiliza para generar m
 
   >[!CAUTION]
   >
-  >El **Permisos** permite editar las configuraciones de CUG en función de la presencia del `granite:AuthenticationRequired` mixin. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de `cq:cugEnabled` , se muestra un mensaje de advertencia y los permisos de CUG no se pueden editar, ni tampoco el requisito de autenticación de la propiedad [Avanzadas](/help/sites-authoring/editing-page-properties.md#advanced) pestaña editable.
+  >La pestaña **Permisos** permite editar las configuraciones de CUG en función de la presencia del mixin `granite:AuthenticationRequired`. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de la propiedad `cq:cugEnabled`, se muestra un mensaje de advertencia y los permisos de CUG no se pueden editar, ni se puede editar el requisito de autenticación de la pestaña [Advanced](/help/sites-authoring/editing-page-properties.md#advanced).
   >
   >
-  >En tal caso, los permisos de CUG deben editarse en la variable [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+  >En tal caso, los permisos de CUG deben editarse en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
   >[!NOTE]
   >
-  >La pestaña Permisos no permite la creación de grupos de CUG vacíos, lo que puede resultar útil como una forma sencilla de denegar el acceso a todos los usuarios. Para ello, se debe utilizar el Explorador CRX. Ver el documento [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md) para obtener más información.
+  >La pestaña Permisos no permite la creación de grupos de CUG vacíos, lo que puede resultar útil como una forma sencilla de denegar el acceso a todos los usuarios. Para ello, se debe utilizar el Explorador de CRX. Consulte el documento [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md) para obtener más información.
 
 ### Modelo {#blueprint}
 
@@ -248,11 +248,11 @@ Definir la variación del fragmento de experiencia que se utiliza para generar m
 
 * **Live Copy**
 
-  Definir propiedades para una página Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagan las modificaciones desde el modelo.
+  Defina propiedades para una página Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagan las modificaciones desde el modelo.
 
 ### Estructura del sitio    {#site-structure}
 
-* Proporcionar vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros.
+* Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros.
 
 ## Edición de las propiedades de página   {#editing-page-properties-1}
 
@@ -260,7 +260,7 @@ Puede definir las propiedades de la página:
 
 * Desde la consola **Sitios**:
 
-   * [Creación de una página](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un subconjunto de las propiedades)
+   * [Creando una página](/help/sites-authoring/managing-pages.md#creating-a-new-page) (un subconjunto de las propiedades)
 
    * Pulsando o haciendo clic en **Propiedades**
 
@@ -286,11 +286,11 @@ Tocando o haciendo clic en **Propiedades** para definir las propiedades de la p�
 
 1. Visualice o edite las propiedades según sea oportuno. 
 
-1. A continuación utilice **Guardar** para guardar las actualizaciones, seguido de **Cerrar** para poder volver a la consola.
+1. A continuación, usa **Guardar** para guardar las actualizaciones, seguido de **Cerrar** para poder volver a la consola.
 
 ### Al editar una página {#when-editing-a-page}
 
-Al editar una página, puede utilizar **Información de página** para definir las propiedades de la página:
+Al editar una página, puede usar **Información de página** para definir las propiedades de la página:
 
 1. Abra la página para la que desee editar las propiedades.
 
@@ -298,7 +298,7 @@ Al editar una página, puede utilizar **Información de página** para definir l
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Seleccionar **Abrir propiedades** y se abre un cuadro de diálogo que permite editar las propiedades, ordenadas por la pestaña correspondiente. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
+1. Seleccione **Abrir propiedades** y se abrirá un cuadro de diálogo que le permitirá editar las propiedades, ordenadas por la pestaña correspondiente. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
 
    * **Cancelar**
    * **Guardar y cerrar**
@@ -307,13 +307,13 @@ Al editar una página, puede utilizar **Información de página** para definir l
 
 ### Desde la consola Sitios: varias páginas {#from-the-sites-console-multiple-pages}
 
-Desde el **Sites** consola, puede seleccionar varias páginas y luego utilizar **Ver propiedades** para ver o editar las propiedades de la página. Esto se conoce como edición masiva de propiedades de página.
+Desde la consola **Sitios**, puede seleccionar varias páginas y luego usar **Ver propiedades** para ver o editar las propiedades de la página. Esto se conoce como edición masiva de propiedades de página.
 
 >[!NOTE]
 >
->La edición de propiedades por lotes también está disponible para los archivos. Es similar, pero difiere en unos pocos puntos. Consulte [Edición de propiedades de varios recursos](/help/assets/metadata.md) para obtener más información.
+>La edición de propiedades por lotes también está disponible para los archivos. Es similar, pero difiere en unos pocos puntos. Consulte [Edición de propiedades de varios Assets](/help/assets/metadata.md) para obtener más información.
 >
->También está el [Editor por lotes](/help/sites-administering/bulk-editor.md). Este editor le permite buscar contenido de varias páginas con GQL (Google Query Language) y, a continuación, editar el contenido directamente con el Editor por lotes antes de guardar los cambios en las páginas de origen.
+>También está el [Editor en lotes](/help/sites-administering/bulk-editor.md). Este editor le permite buscar contenido de varias páginas con GQL (Google Query Language) y, a continuación, editar el contenido directamente con el Editor por lotes antes de guardar los cambios en las páginas de origen.
 
 Puede seleccionar varias páginas para editarlas por lotes mediante varios métodos, entre ellos:
 
@@ -355,7 +355,7 @@ Una vez introducida la edición masiva, puede hacer lo siguiente:
    * Propiedades comunes con un valor común
 
       * En el modo Ver solo se muestran las propiedades con un valor común.
-      * Cuando el campo tiene varios valores (por ejemplo, Etiquetas), los valores solo se muestran cuando *todo* son comunes. Si solo algunas son comunes, solo se muestran al editar.
+      * Cuando el campo es de varios valores (por ejemplo, Etiquetas), los valores solo se muestran cuando *todos* son comunes. Si solo algunas son comunes, solo se muestran al editar.
 
   Cuando no existen propiedades con un valor común, se muestra un mensaje. 
 
@@ -368,8 +368,8 @@ Una vez introducida la edición masiva, puede hacer lo siguiente:
       * Los nuevos valores se aplican a todas las páginas seleccionadas cuando selecciona **Listo**.
       * Cuando el campo tiene varios valores (por ejemplo, Etiquetas), puede anexar un nuevo valor o quitar un valor común.
 
-   * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se indican con un valor especial, como el texto `<Mixed Entries>`.
+   * Los campos que son comunes, pero que tienen valores diferentes en las distintas páginas, se indican con un valor especial como el texto `<Mixed Entries>`.
 
 >[!NOTE]
 >
->El componente de página se puede configurar para especificar los campos disponibles para la edición por lotes. Consulte [Configurar la página para la edición masiva de propiedades de página](/help/sites-developing/bulk-editing.md).
+>El componente de página se puede configurar para especificar los campos disponibles para la edición por lotes. Consulte [Configuración de la página para editar las propiedades de la página](/help/sites-developing/bulk-editing.md).

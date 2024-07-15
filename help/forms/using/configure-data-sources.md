@@ -54,7 +54,7 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
    >Asegúrese de cifrar información confidencial como contraseñas antes de configurar la fuente de datos. Para cifrarla, haga lo siguiente:
    >
    > 1. Vaya a https://&#39;[server]:[port]&#39;/system/console/crypto.
-   > 1. En el **[!UICONTROL Texto sin formato]** , especifique la contraseña o cualquier cadena que desee cifrar y seleccione **[!UICONTROL Protect]**.
+   > 1. En el campo **[!UICONTROL Texto sin formato]**, especifique la contraseña o cualquier cadena que desee cifrar y seleccione **[!UICONTROL Protect]**.
    >
    >El texto cifrado aparece en el campo Texto protegido que puede especificar en la configuración.
 
@@ -75,7 +75,7 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
 Puede configurar el perfil de usuario de AEM mediante la configuración del conector de perfil de usuario en la consola web de AEM. Haga lo siguiente:
 
 1. Vaya a la consola web de AEM en https://&#39;[server]:[port]&#39;system/console/configMgr.
-1. Buscar: **[!UICONTROL Integraciones de datos de AEM Forms: configuración del conector de perfil de usuario]** y seleccione para abrir la configuración en modo de edición.
+1. Busque **[!UICONTROL Integraciones de datos de AEM Forms - Configuración del conector de perfil de usuario]** y seleccione para abrir la configuración en modo de edición.
 1. En el cuadro de diálogo Configuración del conector de perfil de usuario, puede agregar, quitar o actualizar las propiedades del perfil de usuario. Las propiedades especificadas están disponibles para su uso en el modelo de datos de formulario. Utilice el siguiente formato para especificar las propiedades del perfil del usuario:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -136,7 +136,7 @@ Haga lo siguiente para configurar los servicios RESTful:
       * Ruta base: El prefijo URL de todas las rutas de API. Es un campo opcional.\
         Si es necesario, edite los valores rellenados previamente para estos campos.
 
-   * Seleccione el tipo de autenticación — Ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica, Clave de API, Autenticación personalizada o Autenticación mutua: para acceder al servicio RESTful y facilitar los detalles correspondientes para la autenticación.
+   * Seleccione el tipo de autenticación (ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica, Clave de API, Autenticación personalizada o Autenticación mutua) para acceder al servicio RESTful y facilitar los detalles correspondientes para la autenticación.
 
    Si selecciona **[!UICONTROL clave de la API]** como tipo de autenticación, especifique el valor de la clave de la API. La clave de la API se puede enviar como encabezado de solicitud o como parámetro de consulta. Seleccione una de estas opciones en la lista desplegable **[!UICONTROL Ubicación]** y especifique el nombre del encabezado o el parámetro de consulta en el campo **[!UICONTROL Nombre del parámetro]**.
 
@@ -151,7 +151,7 @@ Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos
 
 1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms] como administrador y vaya a los paquetes de la consola web de [!DNL Experience Manager]. La URL predeterminada es [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
-1. Seleccionar **[!UICONTROL Configuración del cliente Http del modelo de datos del formulario para fuente de datos REST]**.
+1. Seleccione **[!UICONTROL Configuración del cliente Http del modelo de datos del formulario para la fuente de datos REST]**.
 
 1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos del formulario para fuente de datos REST: ]
 
@@ -178,7 +178,7 @@ Los servicios web basados en SOAP se describen utilizando [Especificaciones del 
 
    * URL de WSDL para el servicio web.
    * Punto final de servicio. Especifique un valor en este campo para anular el punto final de servicio mencionado en WSDL.
-   * Seleccione el tipo de autenticación — Ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica, Autenticación personalizada, Token X509 o Autenticación mutua: para acceder al servicio SOAP y facilitar los detalles correspondientes para la autenticación.
+   * SOAP Seleccione el tipo de autenticación (ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica, Autenticación personalizada, Token X509 o Autenticación mutua) para acceder al servicio de autenticación y facilitar los detalles correspondientes para la autenticación.
 
      Si selecciona **[!UICONTROL Token X509]** como tipo de autenticación, configure el certificado X509. Para obtener más información, consulte [Configurar certificados](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Especifique el alias de KeyStore para el certificado X509 en el campo **[!UICONTROL Alias de la clave]**. Especifique el tiempo, en segundos, durante los que la solicitud de autenticación será válida en el campo **[!UICONTROL Tiempo de vida]**. De forma opcional, seleccione para firmar el cuerpo del mensaje, el encabezado de la marca de tiempo o ambos.
@@ -204,7 +204,7 @@ Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics
 1. Especifique los siguientes detalles para el servicio OData:
 
    * URL raíz del servicio para configurar el servicio OData.
-   * Seleccione el tipo de autenticación — Ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica o Autenticación personalizada: para acceder al servicio OData y facilitar los detalles correspondientes para la autenticación.
+   * Seleccione el tipo de autenticación (ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica o Autenticación personalizada) para acceder al servicio OData y facilitar los detalles correspondientes para la autenticación.
 
    >[!NOTE]
    >
@@ -218,11 +218,11 @@ AEM Cuando se habilita la autenticación mutua para el modelo de datos de formul
 
 1. Cargue la clave privada (certificado) en el servidor [!DNL AEM Forms]. Para cargar la clave privada haga lo siguiente:
    1. Inicie sesión en su servidor [!DNL AEM Forms] como administrador.
-   1. Navegue hasta **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]**. Seleccione el `fd-cloudservice` usuario y seleccione **[!UICONTROL Propiedades]**.
-   1. Abra el **[!UICONTROL Keystore]** , expanda la pestaña **[!UICONTROL Añadir clave privada del archivo de KeyStore]** , cargue el archivo de KeyStore, especifique los alias, las contraseñas y seleccione **[!UICONTROL Enviar]**. El certificado se ha cargado.  El alias de la clave privada se menciona en el certificado y se establece al crearlo.
+   1. Navegue hasta **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]**. Seleccione el usuario `fd-cloudservice` y seleccione **[!UICONTROL Propiedades]**.
+   1. Abra la pestaña **[!UICONTROL Keystore]**, expanda la opción **[!UICONTROL Agregar clave privada desde el archivo KeyStore]**, cargue el archivo KeyStore, especifique los alias, las contraseñas y seleccione **[!UICONTROL Enviar]**. El certificado se ha cargado.  El alias de la clave privada se menciona en el certificado y se establece al crearlo.
 1. Cargar certificado de confianza al repositorio de confianza global. Para cargar el certificado haga lo siguiente:
    1. Navegue hasta **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL repositorio de confianza]**.
-   1. Expanda el **[!UICONTROL Agregar certificado del archivo CER]** , seleccione **[!UICONTROL Seleccionar archivo de certificado]**, cargue el certificado y seleccione **[!UICONTROL Enviar]**.
+   1. Expanda la opción **[!UICONTROL Agregar certificado del archivo CER]**, seleccione **[!UICONTROL Seleccionar archivo de certificado]**, cargue el certificado y seleccione **[!UICONTROL Enviar]**.
 1. Configure los servicios web [SOAP](#configure-soap-web-services) o [RESTful](#configure-restful-web-services) como fuente de datos y seleccione **[!UICONTROL Autenticación mutua]** como tipo de autenticación. Si configura varios certificados autofirmados para el usuario `fd-cloudservice`, especifique el nombre del alias de la clave para el certificado.
 
 ## Pasos siguientes {#next-steps}

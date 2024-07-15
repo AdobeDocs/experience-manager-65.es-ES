@@ -18,9 +18,9 @@ ht-degree: 3%
 
 # Codificar y descifrar documentos PDF {#encrypting-and-decrypting-pdf-documents}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-**Acerca del servicio Encryption**
+**Acerca del servicio de cifrado**
 
 El servicio Encryption permite cifrar y descifrar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está encriptado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está encriptado con un certificado, el usuario debe desencriptar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para encriptarlo.
 
@@ -31,11 +31,11 @@ Puede realizar estas tareas mediante el servicio Encryption:
 * Quitar el cifrado basado en contraseña de un documento de PDF. (Consulte [Quitar el cifrado de contraseña](encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 * Quitar el cifrado basado en certificados de un documento de PDF. (Consulte [Quitar el cifrado basado en certificados](encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
 * Desbloquee el documento del PDF para que se puedan realizar otras operaciones de servicio. Por ejemplo, después de desbloquear un documento PDF cifrado con contraseña, puede aplicarle una firma digital. (Consulte [Desbloquear documentos cifrados de PDF](encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
-* Determine el tipo de cifrado de un documento de PDF protegido. (Consulte [Determinar el tipo de cifrado](encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
+* Determine el tipo de cifrado de un documento de PDF protegido. (Consulte [Determinación del tipo de cifrado](encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Encryption, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Encryption, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Cifrar documentos de PDF con una contraseña {#encrypting-pdf-documents-with-a-password}
 
@@ -47,7 +47,7 @@ Cuando se cifra un documento PDF con una contraseña, cualquier usuario deberá 
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Encryption, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Encryption, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary-of-steps}
 
@@ -95,11 +95,11 @@ Al cifrar un documento de PDF, puede especificar los permisos asociados al docum
 >
 >Los permisos se especifican como `PasswordEncryptionPermission` valores de enumeración.
 
-**Añadir la contraseña**
+**Agregar la contraseña**
 
 Después de recuperar un documento de PDF no protegido y establecer los valores de cifrado en tiempo de ejecución, puede agregar una contraseña al documento de PDF.
 
-**Guarde el documento de PDF cifrado como un archivo de PDF**
+**Guardar el documento de PDF cifrado como archivo de PDF**
 
 Puede guardar el documento de PDF cifrado con contraseña como un archivo de PDF.
 
@@ -127,37 +127,37 @@ Cifrar un documento de PDF con una contraseña mediante la API de cifrado (Java)
 
 1. Crear una API de cliente de cifrado.
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
-   * Crear un `EncryptionServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Obtenga un documento de PDF para cifrar.
 
-   * Crear un `java.io.FileInputStream` que representa el documento de PDF que se va a cifrar utilizando su constructor y pasando un valor de cadena que especifica la ubicación del documento de PDF.
-   * Crear un `com.adobe.idp.Document` usando su constructor y pasando el objeto `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF que se va a cifrar utilizando su constructor y pasando un valor de cadena que especifique la ubicación del documento de PDF.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Establecer opciones de cifrado en tiempo de ejecución.
 
-   * Crear un `PasswordEncryptionOptionSpec` invocando su constructor.
-   * Especifique los recursos de documento de PDF que se van a cifrar invocando el `PasswordEncryptionOptionSpec` del objeto `setEncryptOption` método y pasar un `PasswordEncryptionOption` valor de enumeración que especifica los recursos de documento que se van a cifrar. Por ejemplo, para cifrar todo el documento de PDF, incluidos sus metadatos y sus archivos adjuntos, especifique `PasswordEncryptionOption.ALL`.
-   * Crear un `java.util.List` que almacena los permisos de cifrado mediante el objeto `ArrayList` constructor.
-   * Especifique un permiso invocando el `java.util.List` objeto ‘s `add` y pasando un valor de enumeración que corresponde al permiso que desea establecer. Por ejemplo, para establecer el permiso que permite a un usuario copiar datos en el documento de PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita este paso para cada permiso que desee establecer).
-   * Especifique la opción de compatibilidad de Acrobat invocando la variable `PasswordEncryptionOptionSpec` del objeto `setCompatability` y pasando un valor de enumeración que especifica el nivel de compatibilidad de Acrobat. Por ejemplo, puede especificar `PasswordEncryptionCompatability.ACRO_7`.
-   * Especifique el valor de contraseña que permite a un usuario abrir el documento de PDF cifrado invocando el `PasswordEncryptionOptionSpec` del objeto `setDocumentOpenPassword` y pasando un valor de cadena que representa la contraseña de apertura.
-   * Especifique el valor de la contraseña maestra que permite al usuario quitar el cifrado del documento del PDF invocando el `PasswordEncryptionOptionSpec` del objeto `setPermissionPassword` y pasando un valor de cadena que representa la contraseña maestra.
+   * Cree un objeto `PasswordEncryptionOptionSpec` invocando su constructor.
+   * Especifique los recursos de documentos de PDF que se van a cifrar invocando el método `setEncryptOption` del objeto `PasswordEncryptionOptionSpec` y pasando un valor de enumeración `PasswordEncryptionOption` que especifica los recursos de documento que se van a cifrar. Por ejemplo, para cifrar todo el documento del PDF, incluidos sus metadatos y sus datos adjuntos, especifique `PasswordEncryptionOption.ALL`.
+   * Cree un objeto `java.util.List` que almacene los permisos de cifrado mediante el constructor `ArrayList`.
+   * Especifique un permiso invocando el método `add` del objeto `java.util.List` y pasando un valor de enumeración que corresponda al permiso que desea establecer. Por ejemplo, para establecer el permiso que permite a un usuario copiar datos en el documento del PDF, especifique `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Repita este paso para cada permiso que desee establecer).
+   * Especifique la opción de compatibilidad de Acrobat invocando el método `setCompatability` del objeto `PasswordEncryptionOptionSpec` y pasando un valor de enumeración que especifique el nivel de compatibilidad de Acrobat. Por ejemplo, puede especificar `PasswordEncryptionCompatability.ACRO_7`.
+   * Especifique el valor de contraseña que permite a un usuario abrir el documento de PDF cifrado invocando el método `setDocumentOpenPassword` del objeto `PasswordEncryptionOptionSpec` y pasando un valor de cadena que representa la contraseña de apertura.
+   * Especifique el valor de la contraseña maestra que permite a un usuario quitar el cifrado del documento de PDF invocando el método `setPermissionPassword` del objeto `PasswordEncryptionOptionSpec` y pasando un valor de cadena que representa la contraseña maestra.
 
 1. Añada la contraseña.
 
-   Cifre el documento del PDF invocando el `EncryptionServiceClient` del objeto `encryptPDFUsingPassword` y pasando los siguientes valores:
+   Cifre el documento del PDF invocando el método `encryptPDFUsingPassword` del objeto `EncryptionServiceClient` y pasando los siguientes valores:
 
-   * El `com.adobe.idp.Document` que contiene el documento de PDF que se va a cifrar con la contraseña.
-   * El `PasswordEncryptionOptionSpec` que contiene opciones de cifrado en tiempo de ejecución.
+   * El objeto `com.adobe.idp.Document` que contiene el documento de PDF que se va a cifrar con la contraseña.
+   * El objeto `PasswordEncryptionOptionSpec` que contiene opciones de cifrado en tiempo de ejecución.
 
-   El `encryptPDFUsingPassword` El método devuelve un valor `com.adobe.idp.Document` que contiene un documento de PDF cifrado con contraseña.
+   El método `encryptPDFUsingPassword` devuelve un objeto `com.adobe.idp.Document` que contiene un documento de PDF cifrado con contraseña.
 
 1. Guarde el documento de PDF cifrado como un archivo de PDF.
 
-   * Crear un `java.io.File` y asegúrese de que la extensión del archivo es .pdf.
-   * Invoque el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo. Asegúrese de utilizar el `com.adobe.idp.Document` objeto que ha devuelto el `encryptPDFUsingPassword` método.
+   * Cree un objeto `java.io.File` y asegúrese de que la extensión del archivo sea .pdf.
+   * Invoque el método `copyToFile` del objeto `com.adobe.idp.Document` para copiar el contenido del objeto `com.adobe.idp.Document` en el archivo. Asegúrese de utilizar el objeto `com.adobe.idp.Document` devuelto por el método `encryptPDFUsingPassword`.
 
 **Consulte también**
 
@@ -180,52 +180,52 @@ Cifrar un documento de PDF con una contraseña mediante la API de cifrado (servi
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que hospeda AEM Forms.
 
 1. Cree un objeto de API de cliente de cifrado.
 
-   * Crear un `EncryptionServiceClient` mediante su constructor predeterminado.
-   * Crear un `EncryptionServiceClient.Endpoint.Address` mediante el uso del objeto `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario que utilice el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
-   * Crear un `System.ServiceModel.BasicHttpBinding` al obtener el valor de la variable `EncryptionServiceClient.Endpoint.Binding` field. Convierta el valor devuelto en `BasicHttpBinding`.
-   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` field a `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `EncryptionServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `EncryptionServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
+   * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario del formulario de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * AEM Asigne el nombre de usuario de los formularios de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenga un documento de PDF para cifrar.
 
-   * Crear un `BLOB` mediante su constructor. El `BLOB` se utiliza para almacenar un documento de PDF cifrado con una contraseña.
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento de PDF que se va a cifrar y el modo en que se va a abrir el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `System.IO.FileStream` del objeto `Length` propiedad.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de la secuencia que se va a leer.
-   * Rellene el `BLOB` asignando el contenido de la matriz de bytes al objeto `BLOB` del objeto `MTOM` miembro de datos.
+   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar un documento de PDF cifrado con una contraseña.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF que se va a cifrar y el modo en que se va a abrir el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
+   * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream` y pasando a leer la matriz de bytes, la posición inicial y la longitud de secuencia.
+   * Rellene el objeto `BLOB` asignando el contenido de la matriz de bytes al miembro de datos `MTOM` del objeto `BLOB`.
 
 1. Establecer opciones de cifrado en tiempo de ejecución.
 
-   * Crear un `PasswordEncryptionOptionSpec` mediante su constructor.
-   * Especifique los recursos de documento de PDF que se van a cifrar asignando un `PasswordEncryptionOption` valor de enumeración para `PasswordEncryptionOptionSpec` del objeto `encryptOption` miembro de datos. Para cifrar todo el PDF, incluidos sus metadatos y archivos adjuntos, asigne a `PasswordEncryptionOption.ALL` a este miembro de datos.
-   * Especifique la opción de compatibilidad de Acrobat asignando un `PasswordEncryptionCompatability` valor de enumeración para `PasswordEncryptionOptionSpec` del objeto `compatability` miembro de datos. Por ejemplo, asigne a `PasswordEncryptionCompatability.ACRO_7` a este miembro de datos.
-   * Especifique el valor de contraseña que permite a un usuario abrir el documento de PDF cifrado asignando un valor de cadena que representa la contraseña de apertura a `PasswordEncryptionOptionSpec` del objeto `documentOpenPassword` miembro de datos.
-   * Especifique el valor de contraseña que permite al usuario quitar el cifrado del documento del PDF asignando un valor de cadena que represente la contraseña maestra al `PasswordEncryptionOptionSpec` del objeto `permissionPassword` miembro de datos.
+   * Crear un objeto `PasswordEncryptionOptionSpec` mediante su constructor.
+   * Especifique los recursos de documentos del PDF que se van a cifrar asignando un valor de enumeración `PasswordEncryptionOption` al miembro de datos `encryptOption` del objeto `PasswordEncryptionOptionSpec`. Para cifrar todo el PDF, incluidos los metadatos y los datos adjuntos, asigne `PasswordEncryptionOption.ALL` a este miembro de datos.
+   * Especifique la opción de compatibilidad de Acrobat asignando un valor de enumeración `PasswordEncryptionCompatability` al miembro de datos `compatability` del objeto `PasswordEncryptionOptionSpec`. Por ejemplo, asigne `PasswordEncryptionCompatability.ACRO_7` a este miembro de datos.
+   * Especifique el valor de contraseña que permite a un usuario abrir el documento de PDF cifrado asignando un valor de cadena que representa la contraseña de apertura al miembro de datos `documentOpenPassword` del objeto `PasswordEncryptionOptionSpec`.
+   * Especifique el valor de contraseña que permite a un usuario quitar el cifrado del documento del PDF asignando un valor de cadena que represente la contraseña maestra al miembro de datos `permissionPassword` del objeto `PasswordEncryptionOptionSpec`.
 
 1. Añada la contraseña.
 
-   Cifre el documento del PDF invocando el `EncryptionServiceClient` del objeto `encryptPDFUsingPassword` y pasando los siguientes valores:
+   Cifre el documento del PDF invocando el método `encryptPDFUsingPassword` del objeto `EncryptionServiceClient` y pasando los siguientes valores:
 
-   * El `BLOB` que contiene el documento de PDF que se va a cifrar con la contraseña.
-   * El `PasswordEncryptionOptionSpec` que contiene opciones de cifrado en tiempo de ejecución.
+   * El objeto `BLOB` que contiene el documento de PDF que se va a cifrar con la contraseña.
+   * El objeto `PasswordEncryptionOptionSpec` que contiene opciones de cifrado en tiempo de ejecución.
 
-   El `encryptPDFUsingPassword` El método devuelve un valor `BLOB` que contiene un documento de PDF cifrado con contraseña.
+   El método `encryptPDFUsingPassword` devuelve un objeto `BLOB` que contiene un documento de PDF cifrado con contraseña.
 
 1. Guarde el documento de PDF cifrado como un archivo de PDF.
 
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación de archivo del documento de PDF protegido.
-   * Cree una matriz de bytes que almacene el contenido de datos del `BLOB` objeto que ha devuelto el `encryptPDFUsingPassword` método. Rellene la matriz de bytes obteniendo el valor de `BLOB` del objeto `MTOM` miembro de datos.
-   * Crear un `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream` objeto.
-   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF protegido.
+   * Cree una matriz de bytes que almacene el contenido de datos del objeto `BLOB` devuelto por el método `encryptPDFUsingPassword`. Rellene la matriz de bytes obteniendo el valor del miembro de datos `MTOM` del objeto `BLOB`.
+   * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
+   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `Write` del objeto `System.IO.BinaryWriter` y pasando la matriz de bytes.
 
 **Consulte también**
 
@@ -237,7 +237,7 @@ Cifrar un documento de PDF con una contraseña mediante la API de cifrado (servi
 
 ## Cifrar documentos de PDF con certificados {#encrypting-pdf-documents-with-certificates}
 
-El cifrado basado en certificados permite cifrar un documento para destinatarios específicos mediante tecnología de clave pública. Se pueden otorgar permisos a varios destinatarios diferentes para el documento. Muchos aspectos del cifrado son posibles gracias a la tecnología de claves públicas. Se utiliza un algoritmo para generar dos números grandes, conocidos como *teclas*, que tienen las siguientes propiedades:
+El cifrado basado en certificados permite cifrar un documento para destinatarios específicos mediante tecnología de clave pública. Se pueden otorgar permisos a varios destinatarios diferentes para el documento. Muchos aspectos del cifrado son posibles gracias a la tecnología de claves públicas. Se usa un algoritmo para generar dos números grandes, conocidos como *claves*, que tienen las siguientes propiedades:
 
 * Se utiliza una clave para cifrar un conjunto de datos. Posteriormente, solo se puede utilizar la otra clave para descifrar los datos.
 * Es imposible distinguir una clave de la otra.
@@ -252,11 +252,11 @@ Un certificado de clave pública contiene la clave pública y la información de
 
 >[!NOTE]
 >
->Para poder cifrar un documento de PDF con un certificado, debe asegurarse de agregar el certificado a AEM Forms. Se agrega un certificado mediante la consola de administración o mediante programación mediante la API de Administrador de confianza. (Consulte [Importación de credenciales mediante la API de Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+>Para poder cifrar un documento de PDF con un certificado, debe asegurarse de agregar el certificado a AEM Forms. Se agrega un certificado mediante la consola de administración o mediante programación mediante la API de Administrador de confianza. (Consulte [Importación de credenciales mediante la API del Administrador de confianza](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Encryption, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Encryption, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-1}
 
@@ -284,7 +284,7 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 **Crear un objeto de API de cliente de cifrado**
 
-Para realizar mediante programación una operación de servicio Encryption, debe crear un cliente de servicio Encryption. Si utiliza la API del servicio de cifrado de Java, cree un `EncrytionServiceClient` objeto. Si utiliza la API del servicio de cifrado del servicio web, cree un `EncryptionServiceService` objeto.
+Para realizar mediante programación una operación de servicio Encryption, debe crear un cliente de servicio Encryption. Si está usando la API del servicio de cifrado de Java, cree un objeto `EncrytionServiceClient`. Si está usando la API del servicio de cifrado del servicio web, cree un objeto `EncryptionServiceService`.
 
 **Obtener un documento de PDF para cifrar**
 
@@ -304,7 +304,7 @@ Especifique los recursos del documento de PDF que desea cifrar. Puede cifrar tod
 
 Después de recuperar un documento de PDF no protegido, hacer referencia al certificado y establecer las opciones en tiempo de ejecución, puede crear un documento de PDF cifrado mediante certificado. Una vez cifrado el documento del PDF, se necesita la clave pública correspondiente para descifrarlo.
 
-**Guarde el documento de PDF cifrado como un archivo de PDF**
+**Guardar el documento de PDF cifrado como archivo de PDF**
 
 Puede guardar el documento de PDF cifrado como un archivo de PDF.
 
@@ -332,48 +332,48 @@ Cifrar un documento de PDF con un certificado mediante la API de cifrado (Java):
 
 1. Cree un objeto de API de cliente de cifrado.
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
-   * Crear un `EncryptionServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Obtenga un documento de PDF para cifrar.
 
-   * Crear un `java.io.FileInputStream` que representa el documento de PDF que se va a cifrar utilizando su constructor y pasando un valor de cadena que especifica la ubicación del documento de PDF.
-   * Crear un `com.adobe.idp.Document` usando su constructor y pasando el objeto `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF que se va a cifrar utilizando su constructor y pasando un valor de cadena que especifique la ubicación del documento de PDF.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Haga referencia al certificado.
 
-   * Crear un `java.util.List` que almacena información de permisos utilizando su constructor.
-   * Especifique el permiso asociado con el documento cifrado invocando el `java.util.List` del objeto `add` método y pasar un `CertificateEncryptionPermissions` valor de enumeración que representa los permisos concedidos al usuario que abre el documento de PDF protegido. Por ejemplo, para especificar todos los permisos, apruebe `CertificateEncryptionPermissions.PKI_ALL_PERM`.
-   * Crear un `Recipient` mediante su constructor.
-   * Crear un `java.io.FileInputStream` que representa el certificado que se utiliza para cifrar el documento del PDF utilizando su constructor y pasando un valor de cadena que especifica la ubicación del certificado.
-   * Crear un `com.adobe.idp.Document` usando su constructor y pasando el objeto `java.io.FileInputStream` que representa el certificado.
-   * Invoque el `Recipient` del objeto `setX509Cert` y pase el `com.adobe.idp.Document` que contiene el certificado. (Además, la variable `Recipient`El objeto puede tener un alias de certificado de Truststore o una URL LDAP como origen de certificado.)
-   * Crear un `CertificateEncryptionIdentity` que almacena información de permisos y certificados utilizando su constructor.
-   * Invoque el `CertificateEncryptionIdentity` del objeto `setPerms` y pase el `java.util.List` que almacena información de permisos.
-   * Invoque el `CertificateEncryptionIdentity` del objeto `setRecipient` y pase el `Recipient` objeto que almacena información de certificado.
-   * Crear un `java.util.List` que almacena información de certificados utilizando su constructor.
-   * Invoque el `java.util.List` método add del objeto y pase el `CertificateEncryptionIdentity` objeto. (Esta `java.util.List` El objeto de se pasa como parámetro a `encryptPDFUsingCertificates` método.)
+   * Cree un objeto `java.util.List` que almacene información de permisos mediante su constructor.
+   * Especifique el permiso asociado con el documento cifrado invocando el método `add` del objeto `java.util.List` y pasando un valor de enumeración `CertificateEncryptionPermissions` que representa los permisos concedidos al usuario que abre el documento de PDF protegido. Por ejemplo, para especificar todos los permisos, pase `CertificateEncryptionPermissions.PKI_ALL_PERM`.
+   * Crear un objeto `Recipient` mediante su constructor.
+   * Cree un objeto `java.io.FileInputStream` que represente el certificado que se utiliza para cifrar el documento del PDF utilizando su constructor y pasando un valor de cadena que especifique la ubicación del certificado.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream` que representa el certificado.
+   * Invoque el método `setX509Cert` del objeto `Recipient` y pase el objeto `com.adobe.idp.Document` que contiene el certificado. (Además, el objeto `Recipient` puede tener un alias de certificado de Truststore o una URL LDAP como origen de certificado).
+   * Cree un objeto `CertificateEncryptionIdentity` que almacene información de permisos y certificados mediante su constructor.
+   * Invoque el método `setPerms` del objeto `CertificateEncryptionIdentity` y pase el objeto `java.util.List` que almacena la información de permisos.
+   * Invoque el método `setRecipient` del objeto `CertificateEncryptionIdentity` y pase el objeto `Recipient` que almacena información de certificado.
+   * Cree un objeto `java.util.List` que almacene información de certificado mediante su constructor.
+   * Invoque el método add del objeto `java.util.List` y pase el objeto `CertificateEncryptionIdentity`. (Este objeto `java.util.List` se pasa como parámetro al método `encryptPDFUsingCertificates`.)
 
 1. Establecer opciones de cifrado en tiempo de ejecución.
 
-   * Crear un `CertificateEncryptionOptionSpec` invocando su constructor.
-   * Especifique los recursos de documento de PDF que se van a cifrar invocando el `CertificateEncryptionOptionSpec` del objeto `setOption` método y pasar un `CertificateEncryptionOption` valor de enumeración que especifica los recursos de documento que se van a cifrar. Por ejemplo, para cifrar todo el documento de PDF, incluidos sus metadatos y sus archivos adjuntos, especifique `CertificateEncryptionOption.ALL`.
-   * Especifique la opción de compatibilidad de Acrobat invocando la variable `CertificateEncryptionOptionSpec` del objeto `setCompat` método y pasar un `CertificateEncryptionCompatibility` valor de enumeración que especifica el nivel de compatibilidad de Acrobat. Por ejemplo, puede especificar `CertificateEncryptionCompatibility.ACRO_7`.
+   * Cree un objeto `CertificateEncryptionOptionSpec` invocando su constructor.
+   * Especifique los recursos de documentos de PDF que se van a cifrar invocando el método `setOption` del objeto `CertificateEncryptionOptionSpec` y pasando un valor de enumeración `CertificateEncryptionOption` que especifica los recursos de documento que se van a cifrar. Por ejemplo, para cifrar todo el documento del PDF, incluidos sus metadatos y sus datos adjuntos, especifique `CertificateEncryptionOption.ALL`.
+   * Especifique la opción de compatibilidad de Acrobat invocando el método `setCompat` del objeto `CertificateEncryptionOptionSpec` y pasando un valor de enumeración `CertificateEncryptionCompatibility` que especifica el nivel de compatibilidad de Acrobat. Por ejemplo, puede especificar `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. Cree un documento de PDF cifrado mediante certificado.
 
-   Cifre el documento del PDF con un certificado invocando el `EncryptionServiceClient` del objeto `encryptPDFUsingCertificates` y pasando los siguientes valores:
+   Cifre el documento del PDF con un certificado invocando el método `encryptPDFUsingCertificates` del objeto `EncryptionServiceClient` y pasando los siguientes valores:
 
-   * El `com.adobe.idp.Document` que contiene el documento de PDF que se va a cifrar.
-   * El `java.util.List` objeto que almacena información de certificado.
-   * El `CertificateEncryptionOptionSpec` que contiene opciones de cifrado en tiempo de ejecución.
+   * El objeto `com.adobe.idp.Document` que contiene el documento de PDF que se va a cifrar.
+   * El objeto `java.util.List` que almacena información de certificado.
+   * El objeto `CertificateEncryptionOptionSpec` que contiene opciones de cifrado en tiempo de ejecución.
 
-   El `encryptPDFUsingCertificates` El método devuelve un valor `com.adobe.idp.Document` que contiene un documento de PDF cifrado mediante certificado.
+   El método `encryptPDFUsingCertificates` devuelve un objeto `com.adobe.idp.Document` que contiene un documento de PDF cifrado mediante certificado.
 
 1. Guarde el documento de PDF cifrado como un archivo de PDF.
 
-   * Crear un `java.io.File` y asegúrese de que la extensión del nombre de archivo es .pdf.
-   * Invoque el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo. Asegúrese de utilizar el `com.adobe.idp.Document` objeto que ha devuelto el `encryptPDFUsingCertificates` método.
+   * Cree un objeto `java.io.File` y asegúrese de que la extensión de nombre de archivo sea .pdf.
+   * Invoque el método `copyToFile` del objeto `com.adobe.idp.Document` para copiar el contenido del objeto `com.adobe.idp.Document` en el archivo. Asegúrese de utilizar el objeto `com.adobe.idp.Document` devuelto por el método `encryptPDFUsingCertificates`.
 
 **Consulte también**
 
@@ -395,64 +395,64 @@ Cifrar un documento de PDF con un certificado mediante la API de cifrado (servic
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que hospeda AEM Forms.
 
 1. Cree un objeto de API de cliente de cifrado.
 
-   * Crear un `EncryptionServiceClient` mediante su constructor predeterminado.
-   * Crear un `EncryptionServiceClient.Endpoint.Address` mediante el uso del objeto `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario que utilice el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
-   * Crear un `System.ServiceModel.BasicHttpBinding` al obtener el valor de la variable `EncryptionServiceClient.Endpoint.Binding` field. Convierta el valor devuelto en `BasicHttpBinding`.
-   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` field a `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `EncryptionServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `EncryptionServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
+   * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario del formulario de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * AEM Asigne el nombre de usuario de los formularios de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenga un documento de PDF para cifrar.
 
-   * Crear un `BLOB` mediante su constructor. El `BLOB` se utiliza para almacenar un documento de PDF cifrado con un certificado.
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento de PDF que se va a cifrar y el modo en que se va a abrir el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `System.IO.FileStream` del objeto `Length` propiedad.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de la secuencia que se va a leer.
-   * Rellene el `BLOB` al asignar su `MTOM` con el contenido de la matriz de bytes.
+   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar un documento de PDF cifrado con un certificado.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF que se va a cifrar y el modo en que se va a abrir el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
+   * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream` y pasando a leer la matriz de bytes, la posición inicial y la longitud de secuencia.
+   * Rellene el objeto `BLOB` asignando su propiedad `MTOM` con el contenido de la matriz de bytes.
 
 1. Haga referencia al certificado.
 
-   * Crear un `Recipient` mediante su constructor. Este objeto almacenará información de certificado.
-   * Crear un `BLOB` mediante su constructor. Esta `BLOB` almacenará el certificado que cifra el documento del PDF.
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del certificado y el modo en que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `System.IO.FileStream` del objeto `Length` propiedad.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de la secuencia que se va a leer.
-   * Rellene el `BLOB` asignando el contenido de la matriz de bytes al objeto `BLOB` del objeto `MTOM` miembro de datos.
-   * Asigne el `BLOB` que almacena el certificado en el `Recipient` del objeto `x509Cert` miembro de datos.
-   * Crear un `CertificateEncryptionIdentity` que almacena información de certificados utilizando su constructor.
-   * Asigne el `Recipient` que almacena el certificado en el `CertificateEncryptionIdentity`miembro de datos de destinatario del objeto.
-   * Crear un `Object` y asigne la variable `CertificateEncryptionIdentity` al primer elemento del objeto `Object` matriz. Esta `Object` La matriz se pasa como parámetro a `encryptPDFUsingCertificates` método.
+   * Crear un objeto `Recipient` mediante su constructor. Este objeto almacenará información de certificado.
+   * Crear un objeto `BLOB` mediante su constructor. Este objeto `BLOB` almacenará el certificado que cifra el documento del PDF.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del certificado y el modo en que se va a abrir el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
+   * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream` y pasando a leer la matriz de bytes, la posición inicial y la longitud de secuencia.
+   * Rellene el objeto `BLOB` asignando el contenido de la matriz de bytes al miembro de datos `MTOM` del objeto `BLOB`.
+   * Asigne el objeto `BLOB` que almacena el certificado al miembro de datos `x509Cert` del objeto `Recipient`.
+   * Cree un objeto `CertificateEncryptionIdentity` que almacene información de certificado mediante su constructor.
+   * Asigne el objeto `Recipient` que almacena el certificado al miembro de datos de destinatario del objeto `CertificateEncryptionIdentity`.
+   * Cree una matriz `Object` y asigne el objeto `CertificateEncryptionIdentity` al primer elemento de la matriz `Object`. Esta matriz `Object` se pasa como parámetro al método `encryptPDFUsingCertificates`.
 
 1. Establecer opciones de cifrado en tiempo de ejecución.
 
-   * Crear un `CertificateEncryptionOptionSpec` mediante su constructor.
-   * Especifique los recursos de documento de PDF que se van a cifrar asignando un `CertificateEncryptionOption` valor de enumeración para `CertificateEncryptionOptionSpec` del objeto `option` miembro de datos. Para cifrar todo el documento del PDF, incluidos sus metadatos y sus archivos adjuntos, asigne a `CertificateEncryptionOption.ALL` a este miembro de datos.
-   * Especifique la opción de compatibilidad de Acrobat asignando un `CertificateEncryptionCompatibility` valor de enumeración para `CertificateEncryptionOptionSpec` del objeto `compat` miembro de datos. Por ejemplo, asigne a `CertificateEncryptionCompatibility.ACRO_7` a este miembro de datos.
+   * Crear un objeto `CertificateEncryptionOptionSpec` mediante su constructor.
+   * Especifique los recursos de documentos del PDF que se van a cifrar asignando un valor de enumeración `CertificateEncryptionOption` al miembro de datos `option` del objeto `CertificateEncryptionOptionSpec`. Para cifrar todo el documento del PDF, incluidos los metadatos y los datos adjuntos, asigne `CertificateEncryptionOption.ALL` a este miembro de datos.
+   * Especifique la opción de compatibilidad de Acrobat asignando un valor de enumeración `CertificateEncryptionCompatibility` al miembro de datos `compat` del objeto `CertificateEncryptionOptionSpec`. Por ejemplo, asigne `CertificateEncryptionCompatibility.ACRO_7` a este miembro de datos.
 
 1. Cree un documento de PDF cifrado mediante certificado.
 
-   Cifre el documento del PDF con un certificado invocando el `EncryptionServiceService` del objeto `encryptPDFUsingCertificates` y pasando los siguientes valores:
+   Cifre el documento del PDF con un certificado invocando el método `encryptPDFUsingCertificates` del objeto `EncryptionServiceService` y pasando los siguientes valores:
 
-   * El `BLOB` que contiene el documento de PDF que se va a cifrar.
-   * El `Object` matriz que almacena información de certificados.
-   * El `CertificateEncryptionOptionSpec` que contiene opciones de cifrado en tiempo de ejecución.
+   * El objeto `BLOB` que contiene el documento de PDF que se va a cifrar.
+   * Matriz `Object` que almacena información de certificado.
+   * El objeto `CertificateEncryptionOptionSpec` que contiene opciones de cifrado en tiempo de ejecución.
 
-   El `encryptPDFUsingCertificates` El método devuelve un valor `BLOB` que contiene un documento de PDF cifrado mediante certificado.
+   El método `encryptPDFUsingCertificates` devuelve un objeto `BLOB` que contiene un documento de PDF cifrado mediante certificado.
 
 1. Guarde el documento de PDF cifrado como un archivo de PDF.
 
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación de archivo del documento de PDF protegido.
-   * Cree una matriz de bytes que almacene el contenido de datos del `BLOB` objeto que ha devuelto el `encryptPDFUsingCertificates` método. Rellene la matriz de bytes obteniendo el valor de `BLOB` del objeto `binaryData` miembro de datos.
-   * Crear un `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream` objeto.
-   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF protegido.
+   * Cree una matriz de bytes que almacene el contenido de datos del objeto `BLOB` devuelto por el método `encryptPDFUsingCertificates`. Rellene la matriz de bytes obteniendo el valor del miembro de datos `binaryData` del objeto `BLOB`.
+   * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
+   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `Write` del objeto `System.IO.BinaryWriter` y pasando la matriz de bytes.
 
 **Consulte también**
 
@@ -468,7 +468,7 @@ El cifrado basado en certificados se puede quitar de un documento de PDF para qu
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Encryption, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Encryption, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-2}
 
@@ -494,7 +494,7 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 **Crear un cliente de servicio de cifrado**
 
-Para realizar mediante programación una operación de servicio Encryption, debe crear un cliente de servicio Encryption. Si utiliza la API del servicio de cifrado de Java, cree un `EncrytionServiceClient` objeto. Si utiliza la API del servicio de cifrado del servicio web, cree un `EncryptionServiceService` objeto.
+Para realizar mediante programación una operación de servicio Encryption, debe crear un cliente de servicio Encryption. Si está usando la API del servicio de cifrado de Java, cree un objeto `EncrytionServiceClient`. Si está usando la API del servicio de cifrado del servicio web, cree un objeto `EncryptionServiceService`.
 
 **Obtener el documento de PDF cifrado**
 
@@ -502,7 +502,7 @@ Obtenga un documento de PDF cifrado para quitar el cifrado basado en certificado
 
 **Quitar cifrado**
 
-Para quitar el cifrado basado en certificados de un documento de PDF cifrado, necesita un documento de PDF cifrado y la clave privada que corresponde a la clave utilizada para cifrar el documento de PDF. El valor de alias de la clave privada se especifica al quitar el cifrado basado en certificados de un documento PDF cifrado. Para obtener información sobre la clave pública, consulte [Cifrar documentos de PDF con certificados](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).
+Para quitar el cifrado basado en certificados de un documento de PDF cifrado, necesita un documento de PDF cifrado y la clave privada que corresponde a la clave utilizada para cifrar el documento de PDF. El valor de alias de la clave privada se especifica al quitar el cifrado basado en certificados de un documento PDF cifrado. Para obtener información acerca de la clave pública, vea [Cifrar documentos de PDF con certificados](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).
 
 >[!NOTE]
 >
@@ -534,27 +534,27 @@ Quite el cifrado basado en certificados de un documento de PDF mediante la API d
 
 1. Cree un cliente de servicio de cifrado.
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
-   * Crear un `EncryptionServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Obtenga el documento cifrado del PDF.
 
-   * Crear un `java.io.FileInputStream` que representa el documento PDF cifrado utilizando su constructor y pasando un valor de cadena que especifica la ubicación del documento PDF cifrado.
-   * Crear un `com.adobe.idp.Document` usando su constructor y pasando el objeto `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF cifrado utilizando su constructor y pasando un valor de cadena que especifique la ubicación del documento de PDF cifrado.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Elimine el cifrado.
 
-   Quite el cifrado basado en certificados del documento de PDF invocando el `EncryptionServiceClient` del objeto `removePDFCertificateSecurity` y pasando los siguientes valores:
+   Quite el cifrado basado en certificados del documento de PDF invocando el método `removePDFCertificateSecurity` del objeto `EncryptionServiceClient` y pasando los siguientes valores:
 
-   * El `com.adobe.idp.Document` que contiene el documento de PDF cifrado.
+   * El objeto `com.adobe.idp.Document` que contiene el documento de PDF cifrado.
    * Valor de cadena que especifica el nombre de alias de la clave privada que corresponde a la clave utilizada para cifrar el documento PDFf.
 
-   El `removePDFCertificateSecurity` El método devuelve un valor `com.adobe.idp.Document` que contiene un documento de PDF no protegido.
+   El método `removePDFCertificateSecurity` devuelve un objeto `com.adobe.idp.Document` que contiene un documento de PDF no protegido.
 
 1. Guarde el documento del PDF.
 
-   * Crear un `java.io.File` y asegúrese de que la extensión del archivo es .pdf.
-   * Invoque el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `Document` al archivo. Asegúrese de utilizar el `com.adobe.idp.Document` objeto que ha devuelto el `removePDFCredentialSecurity` método.
+   * Cree un objeto `java.io.File` y asegúrese de que la extensión del archivo sea .pdf.
+   * Invoque el método `copyToFile` del objeto `com.adobe.idp.Document` para copiar el contenido del objeto `Document` en el archivo. Asegúrese de utilizar el objeto `com.adobe.idp.Document` devuelto por el método `removePDFCredentialSecurity`.
 
 **Consulte también**
 
@@ -576,44 +576,44 @@ Quite el cifrado basado en certificados mediante la API Encryption (servicio web
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que hospeda AEM Forms.
 
 1. Cree un cliente de servicio de cifrado.
 
-   * Crear un `EncryptionServiceClient` mediante su constructor predeterminado.
-   * Crear un `EncryptionServiceClient.Endpoint.Address` mediante el uso del objeto `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario que utilice el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
-   * Crear un `System.ServiceModel.BasicHttpBinding` al obtener el valor de la variable `EncryptionServiceClient.Endpoint.Binding` field. Convierta el valor devuelto en `BasicHttpBinding`.
-   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` field a `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `EncryptionServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `EncryptionServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
+   * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario del formulario de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * AEM Asigne el nombre de usuario de los formularios de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenga el documento cifrado del PDF.
 
-   * Crear un `BLOB` mediante su constructor. El `BLOB` se utiliza para almacenar el documento de PDF cifrado.
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF cifrado y el modo en que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `System.IO.FileStream` del objeto `Length` propiedad.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de la secuencia que se va a leer.
-   * Rellene el `BLOB` asignando el contenido de la matriz de bytes al objeto `BLOB` del objeto `MTOM` miembro de datos.
+   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar el documento de PDF cifrado.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF cifrado y el modo en que desea abrir el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
+   * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream` y pasando a leer la matriz de bytes, la posición inicial y la longitud de secuencia.
+   * Rellene el objeto `BLOB` asignando el contenido de la matriz de bytes al miembro de datos `MTOM` del objeto `BLOB`.
 
 1. Elimine el cifrado.
 
-   Invoque el `EncryptionServiceClient` del objeto `removePDFCertificateSecurity` y pasar los siguientes valores:
+   Invoque el método `removePDFCertificateSecurity` del objeto `EncryptionServiceClient` y pase los siguientes valores:
 
-   * El `BLOB` que contiene datos de secuencia de archivos que representan un documento de PDF cifrado.
+   * El objeto `BLOB` que contiene datos de secuencia de archivos que representa un documento de PDF cifrado.
    * Valor de cadena que especifica el nombre de alias de la clave pública correspondiente a la clave privada utilizada para cifrar el documento PDFf.
 
-   El `removePDFCredentialSecurity` El método devuelve un valor `BLOB` que contiene un documento de PDF no protegido.
+   El método `removePDFCredentialSecurity` devuelve un objeto `BLOB` que contiene un documento de PDF no protegido.
 
 1. Guarde el documento del PDF.
 
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación de archivo del documento de PDF no protegido.
-   * Cree una matriz de bytes que almacene el contenido del `BLOB` objeto que ha devuelto el `removePDFPasswordSecurity` método. Rellene la matriz de bytes obteniendo el valor de `BLOB` del objeto `MTOM` miembro de datos.
-   * Crear un `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream` objeto.
-   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF no protegido.
+   * Cree una matriz de bytes que almacene el contenido del objeto `BLOB` devuelto por el método `removePDFPasswordSecurity`. Rellene la matriz de bytes obteniendo el valor del miembro de datos `MTOM` del objeto `BLOB`.
+   * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
+   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `Write` del objeto `System.IO.BinaryWriter` y pasando la matriz de bytes.
 
 **Consulte también**
 
@@ -629,7 +629,7 @@ El cifrado basado en contraseña se puede quitar de un documento de PDF para que
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Encryption, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Encryption, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-3}
 
@@ -655,13 +655,13 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 **Crear un cliente de servicio de cifrado**
 
-Para realizar mediante programación una operación de servicio Encryption, debe crear un cliente de servicio Encryption. Si utiliza la API del servicio de cifrado de Java, cree un `EncrytionServiceClient` objeto. Si utiliza la API del servicio de cifrado del servicio web, cree un `EncryptionServiceService` objeto.
+Para realizar mediante programación una operación de servicio Encryption, debe crear un cliente de servicio Encryption. Si está usando la API del servicio de cifrado de Java, cree un objeto `EncrytionServiceClient`. Si está usando la API del servicio de cifrado del servicio web, cree un objeto `EncryptionServiceService`.
 
 **Obtener el documento de PDF cifrado**
 
 Obtenga un documento de PDF cifrado para quitar el cifrado basado en contraseña. Si intenta quitar el cifrado de un documento de PDF que no está cifrado, se generará una excepción.
 
-**Eliminar la contraseña**
+**Quitar la contraseña**
 
 Para quitar el cifrado basado en contraseña de un documento de PDF cifrado, necesita un documento de PDF cifrado y un valor de contraseña maestra que se utilice para quitar el cifrado del documento de PDF. La contraseña utilizada para abrir un documento de PDF cifrado con contraseña no se puede utilizar para quitar el cifrado. Se especifica una contraseña maestra cuando el documento del PDF se cifra con una contraseña. (Consulte [Cifrar documentos de PDF con una contraseña](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
@@ -689,27 +689,27 @@ Elimine el cifrado basado en contraseña de un documento de PDF mediante la API 
 
 1. Cree un cliente de servicio de cifrado.
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
-   * Crear un `EncryptionServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Obtenga el documento cifrado del PDF.
 
-   * Crear un `java.io.FileInputStream` que representa el documento PDF cifrado utilizando su constructor y pasando un valor de cadena que especifica la ubicación del documento PDF.
-   * Crear un `com.adobe.idp.Document` usando su constructor y pasando el objeto `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF cifrado utilizando su constructor y pasando un valor de cadena que especifique la ubicación del documento de PDF.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Elimine la contraseña.
 
-   Quite el cifrado basado en contraseña del documento de PDF invocando el `EncryptionServiceClient` del objeto `removePDFPasswordSecurity` y pasando los siguientes valores:
+   Quite el cifrado basado en contraseña del documento de PDF invocando el método `removePDFPasswordSecurity` del objeto `EncryptionServiceClient` y pasando los siguientes valores:
 
-   * A `com.adobe.idp.Document` que contiene el documento de PDF cifrado.
+   * Un objeto `com.adobe.idp.Document` que contiene el documento de PDF cifrado.
    * Valor de cadena que especifica el valor de la contraseña maestra que se utiliza para quitar el cifrado del documento de PDF.
 
-   El `removePDFPasswordSecurity` El método devuelve un valor `com.adobe.idp.Document` que contiene un documento de PDF no protegido.
+   El método `removePDFPasswordSecurity` devuelve un objeto `com.adobe.idp.Document` que contiene un documento de PDF no protegido.
 
 1. Guarde el documento del PDF.
 
-   * Crear un `java.io.File` y asegúrese de que la extensión del nombre de archivo es .pdf.
-   * Invoque el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `Document` al archivo. Asegúrese de utilizar el `Document` objeto que ha devuelto el `removePDFPasswordSecurity` método.
+   * Cree un objeto `java.io.File` y asegúrese de que la extensión de nombre de archivo sea .pdf.
+   * Invoque el método `copyToFile` del objeto `com.adobe.idp.Document` para copiar el contenido del objeto `Document` en el archivo. Asegúrese de utilizar el objeto `Document` devuelto por el método `removePDFPasswordSecurity`.
 
 **Consulte también**
 
@@ -725,44 +725,44 @@ Quite el cifrado basado en contraseña utilizando la API Encryption (servicio we
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que hospeda AEM Forms.
 
 1. Cree un cliente de servicio de cifrado.
 
-   * Crear un `EncryptionServiceClient` mediante su constructor predeterminado.
-   * Crear un `EncryptionServiceClient.Endpoint.Address` mediante el uso del objeto `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario que utilice el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
-   * Crear un `System.ServiceModel.BasicHttpBinding` al obtener el valor de la variable `EncryptionServiceClient.Endpoint.Binding` field. Convierta el valor devuelto en `BasicHttpBinding`.
-   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` field a `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `EncryptionServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `EncryptionServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
+   * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario del formulario de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * AEM Asigne el nombre de usuario de los formularios de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenga el documento cifrado del PDF.
 
-   * Crear un `BLOB` mediante su constructor. El `BLOB` se utiliza para almacenar un documento de PDF cifrado con contraseña.
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF cifrado y el modo en que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `System.IO.FileStream` del objeto `Length` propiedad.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de la secuencia que se va a leer.
-   * Rellene el `BLOB` asignando el contenido de la matriz de bytes al objeto `BLOB` del objeto `MTOM` miembro de datos.
+   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar un documento de PDF cifrado con contraseña.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF cifrado y el modo en que desea abrir el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
+   * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream` y pasando a leer la matriz de bytes, la posición inicial y la longitud de secuencia.
+   * Rellene el objeto `BLOB` asignando el contenido de la matriz de bytes al miembro de datos `MTOM` del objeto `BLOB`.
 
 1. Elimine la contraseña.
 
-   Invoque el `EncryptionServiceService` del objeto `removePDFPasswordSecurity` y pasar los siguientes valores:
+   Invoque el método `removePDFPasswordSecurity` del objeto `EncryptionServiceService` y pase los siguientes valores:
 
-   * El `BLOB` que contiene datos de secuencia de archivos que representan un documento de PDF cifrado.
+   * El objeto `BLOB` que contiene datos de secuencia de archivos que representa un documento de PDF cifrado.
    * Valor de cadena que especifica el valor de contraseña que se utiliza para quitar el cifrado del documento de PDF. Este valor se especifica al cifrar el documento del PDF con una contraseña.
 
-   El `removePDFPasswordSecurity` El método devuelve un valor `BLOB` que contiene un documento de PDF no protegido.
+   El método `removePDFPasswordSecurity` devuelve un objeto `BLOB` que contiene un documento de PDF no protegido.
 
 1. Guarde el documento del PDF.
 
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación de archivo del documento de PDF no protegido.
-   * Cree una matriz de bytes que almacene el contenido del `BLOB` objeto que ha devuelto el `removePDFPasswordSecurity` método. Rellene la matriz de bytes obteniendo el valor de `BLOB` del objeto `MTOM` miembro de datos.
-   * Crear un `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream` objeto.
-   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF no protegido.
+   * Cree una matriz de bytes que almacene el contenido del objeto `BLOB` devuelto por el método `removePDFPasswordSecurity`. Rellene la matriz de bytes obteniendo el valor del miembro de datos `MTOM` del objeto `BLOB`.
+   * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
+   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `Write` del objeto `System.IO.BinaryWriter` y pasando la matriz de bytes.
 
 **Consulte también**
 
@@ -776,7 +776,7 @@ Un documento de PDF cifrado con contraseña o cifrado con certificado debe estar
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Encryption, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Encryption, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-4}
 
@@ -802,7 +802,7 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 **Crear un cliente de servicio de cifrado**
 
-Para realizar mediante programación una operación de servicio Encryption, debe crear un cliente de servicio Encryption. Si utiliza la API del servicio de cifrado de Java, cree un `EncrytionServiceClient` objeto. Si utiliza la API del servicio de cifrado del servicio web, cree un `EncryptionServiceService` objeto.
+Para realizar mediante programación una operación de servicio Encryption, debe crear un cliente de servicio Encryption. Si está usando la API del servicio de cifrado de Java, cree un objeto `EncrytionServiceClient`. Si está usando la API del servicio de cifrado del servicio web, cree un objeto `EncryptionServiceService`.
 
 **Obtener el documento de PDF cifrado**
 
@@ -840,39 +840,39 @@ Desbloquee un documento de PDF cifrado mediante la API de cifrado (Java):
 
 1. Cree un cliente de servicio de cifrado.
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
-   * Crear un `EncryptionServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Obtenga el documento cifrado del PDF.
 
-   * Crear un `java.io.FileInputStream` que representa el documento PDF cifrado utilizando su constructor y pasando un valor de cadena que especifica la ubicación del documento PDF cifrado.
-   * Crear un `com.adobe.idp.Document` usando su constructor y pasando el objeto `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF cifrado utilizando su constructor y pasando un valor de cadena que especifique la ubicación del documento de PDF cifrado.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Desbloquee el documento.
 
-   Desbloquee un documento de PDF cifrado invocando el `EncryptionServiceClient` del objeto `unlockPDFUsingPassword` o `unlockPDFUsingCredential` método.
+   Desbloquee un documento de PDF cifrado invocando el método `unlockPDFUsingPassword` o `unlockPDFUsingCredential` del objeto `EncryptionServiceClient`.
 
-   Para desbloquear un documento de PDF cifrado con una contraseña, invoque el `unlockPDFUsingPassword` y pasar los siguientes valores:
+   Para desbloquear un documento de PDF cifrado con una contraseña, invoque el método `unlockPDFUsingPassword` y pase los siguientes valores:
 
-   * A `com.adobe.idp.Document` que contiene el documento de PDF cifrado con contraseña.
+   * Un objeto `com.adobe.idp.Document` que contiene el documento de PDF cifrado con contraseña.
    * Valor de cadena que especifica el valor de contraseña que se utiliza para abrir un documento de PDF cifrado con contraseña. Este valor se especifica al cifrar el documento del PDF con una contraseña.
 
-   Para desbloquear un documento de PDF cifrado con un certificado, invoque el `unlockPDFUsingCredential` y pasar los siguientes valores:
+   Para desbloquear un documento de PDF cifrado con un certificado, invoque el método `unlockPDFUsingCredential` y pase los siguientes valores:
 
-   * A `com.adobe.idp.Document` que contiene el documento de PDF cifrado mediante certificado.
+   * Un objeto `com.adobe.idp.Document` que contiene el documento de PDF cifrado mediante certificado.
    * Valor de cadena que especifica el nombre de alias de la clave pública correspondiente a la clave privada utilizada para cifrar el documento de PDF.
 
-   El `unlockPDFUsingPassword` y `unlockPDFUsingCredential` ambos métodos devuelven un `com.adobe.idp.Document` objeto que se pasa a otro método Java de AEM Forms para realizar una operación.
+   Los métodos `unlockPDFUsingPassword` y `unlockPDFUsingCredential` devuelven un objeto `com.adobe.idp.Document` que se pasa a otro método Java de AEM Forms para realizar una operación.
 
 1. Realice una operación de AEM Forms.
 
-   Realice una operación AEM Forms en el documento de PDF desbloqueado para satisfacer sus necesidades empresariales. Por ejemplo, suponiendo que desea aplicar derechos de uso a un documento de PDF desbloqueado, pase el `com.adobe.idp.Document` objeto devuelto por el método `unlockPDFUsingPassword` o `unlockPDFUsingCredential` métodos para la `ReaderExtensionsServiceClient` del objeto `applyUsageRights` método.
+   Realice una operación AEM Forms en el documento de PDF desbloqueado para satisfacer sus necesidades empresariales. Por ejemplo, suponiendo que desea aplicar derechos de uso a un documento de PDF desbloqueado, pase el objeto `com.adobe.idp.Document` devuelto por los métodos `unlockPDFUsingPassword` o `unlockPDFUsingCredential` al método `applyUsageRights` del objeto `ReaderExtensionsServiceClient`.
 
 **Consulte también**
 
 [Resumen de los pasos](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[SOAP Inicio rápido (modo de): Desbloquear un documento de PDF cifrado mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) SOAP (modo de)
+SOAP [Inicio rápido (modo de): desbloqueando un documento de PDF SOAP cifrado mediante la API de Java](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) (modo de)
 
 [Aplicar derechos de uso a documentos de PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
@@ -890,48 +890,48 @@ Desbloquee un documento de PDF cifrado mediante la API de cifrado (servicio web)
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que hospeda AEM Forms.
 
 1. Cree un cliente de servicio de cifrado.
 
-   * Crear un `EncryptionServiceClient` mediante su constructor predeterminado.
-   * Crear un `EncryptionServiceClient.Endpoint.Address` mediante el uso del objeto `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario que utilice el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
-   * Crear un `System.ServiceModel.BasicHttpBinding` al obtener el valor de la variable `EncryptionServiceClient.Endpoint.Binding` field. Convierta el valor devuelto en `BasicHttpBinding`.
-   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` field a `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `EncryptionServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `EncryptionServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
+   * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario del formulario de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * AEM Asigne el nombre de usuario de los formularios de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenga un documento de PDF cifrado.
 
-   * Crear un `BLOB` mediante su constructor.
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF cifrado y el modo en que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `System.IO.FileStream` del objeto `Length` propiedad.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de la secuencia que se va a leer.
-   * Rellene el `BLOB` asignando el contenido de la matriz de bytes al objeto `BLOB` del objeto `MTOM` miembro de datos.
+   * Crear un objeto `BLOB` mediante su constructor.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF cifrado y el modo en que desea abrir el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
+   * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream` y pasando a leer la matriz de bytes, la posición inicial y la longitud de secuencia.
+   * Rellene el objeto `BLOB` asignando el contenido de la matriz de bytes al miembro de datos `MTOM` del objeto `BLOB`.
 
 1. Desbloquee el documento.
 
-   Desbloquee un documento de PDF cifrado invocando el `EncryptionServiceClient` del objeto `unlockPDFUsingPassword` o `unlockPDFUsingCredential` método.
+   Desbloquee un documento de PDF cifrado invocando el método `unlockPDFUsingPassword` o `unlockPDFUsingCredential` del objeto `EncryptionServiceClient`.
 
-   Para desbloquear un documento de PDF cifrado con una contraseña, invoque el `unlockPDFUsingPassword` y pasar los siguientes valores:
+   Para desbloquear un documento de PDF cifrado con una contraseña, invoque el método `unlockPDFUsingPassword` y pase los siguientes valores:
 
-   * A `BLOB` que contiene el documento de PDF cifrado con contraseña.
+   * Un objeto `BLOB` que contiene el documento de PDF cifrado con contraseña.
    * Valor de cadena que especifica el valor de contraseña que se utiliza para abrir un documento de PDF cifrado con contraseña. Este valor se especifica al cifrar el documento del PDF con una contraseña.
 
-   Para desbloquear un documento de PDF cifrado con un certificado, invoque el `unlockPDFUsingCredential` y pasar los siguientes valores:
+   Para desbloquear un documento de PDF cifrado con un certificado, invoque el método `unlockPDFUsingCredential` y pase los siguientes valores:
 
-   * A `BLOB` que contiene el documento de PDF cifrado mediante certificado.
+   * Un objeto `BLOB` que contiene el documento de PDF cifrado mediante certificado.
    * Valor de cadena que especifica el nombre de alias de la clave pública correspondiente a la clave privada utilizada para cifrar el documento PDFf.
 
-   El `unlockPDFUsingPassword` y `unlockPDFUsingCredential` ambos métodos devuelven un `com.adobe.idp.Document` objeto que se pasa a otro método AEM Forms para realizar una operación.
+   Los métodos `unlockPDFUsingPassword` y `unlockPDFUsingCredential` devuelven un objeto `com.adobe.idp.Document` que se pasa a otro método AEM Forms para realizar una operación.
 
 1. Realice una operación de AEM Forms.
 
-   Realice una operación AEM Forms en el documento de PDF desbloqueado para satisfacer sus necesidades empresariales. Por ejemplo, suponiendo que desea aplicar derechos de uso al documento de PDF desbloqueado, pase el `BLOB` objeto devuelto por el método `unlockPDFUsingPassword` o `unlockPDFUsingCredential` métodos para la `ReaderExtensionsServiceClient` del objeto `applyUsageRights` método.
+   Realice una operación AEM Forms en el documento de PDF desbloqueado para satisfacer sus necesidades empresariales. Por ejemplo, suponiendo que desea aplicar derechos de uso al documento de PDF desbloqueado, pase el objeto `BLOB` devuelto por los métodos `unlockPDFUsingPassword` o `unlockPDFUsingCredential` al método `applyUsageRights` del objeto `ReaderExtensionsServiceClient`.
 
 **Consulte también**
 
@@ -954,7 +954,7 @@ Un documento de PDF puede protegerse con los siguientes tipos de cifrado:
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Encryption, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Encryption, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-5}
 
@@ -977,9 +977,9 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
 * jbossall-client.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
 
-**Creación de un cliente de servicios**
+**Crear un cliente de servicio**
 
-Para realizar mediante programación una operación de servicio Encryption, debe crear un cliente de servicio Encryption. Si utiliza la API del servicio de cifrado de Java, cree un `EncrytionServiceClient` objeto. Si utiliza la API del servicio de cifrado del servicio web, cree un `EncryptionServiceService` objeto.
+Para realizar mediante programación una operación de servicio Encryption, debe crear un cliente de servicio Encryption. Si está usando la API del servicio de cifrado de Java, cree un objeto `EncrytionServiceClient`. Si está usando la API del servicio de cifrado del servicio web, cree un objeto `EncryptionServiceService`.
 
 **Obtener el documento de PDF cifrado**
 
@@ -1013,18 +1013,18 @@ Determine el tipo de cifrado que protege un documento del PDF mediante la API de
 
 1. Cree un cliente de servicios.
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
-   * Crear un `EncryptionServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Obtenga el documento cifrado del PDF.
 
-   * Crear un `java.io.FileInputStream` que representa el documento de PDF utilizando su constructor y pasando un valor de cadena que especifica la ubicación del documento de PDF.
-   * Crear un `com.adobe.idp.Document` usando su constructor y pasando el objeto `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF utilizando su constructor y pasando un valor de cadena que especifique la ubicación del documento de PDF.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Determine el tipo de cifrado.
 
-   * Determine el tipo de cifrado invocando el `EncryptionServiceClient` del objeto `getPDFEncryption` y pasando el `com.adobe.idp.Document` que contiene el documento de PDF. Este método devuelve un `EncryptionTypeResult` objeto.
-   * Invoque el `EncryptionTypeResult` del objeto `getEncryptionType` método. Este método devuelve un `EncryptionType` valor de enumeración que especifica el tipo de cifrado. Por ejemplo, si el documento de PDF está protegido con cifrado basado en contraseña, este método devuelve `EncryptionType.PASSWORD`.
+   * Determine el tipo de cifrado invocando el método `getPDFEncryption` del objeto `EncryptionServiceClient` y pasando el objeto `com.adobe.idp.Document` que contiene el documento del PDF. Este método devuelve un objeto `EncryptionTypeResult`.
+   * Invoque el método `getEncryptionType` del objeto `EncryptionTypeResult`. Este método devuelve un valor de enumeración `EncryptionType` que especifica el tipo de cifrado. Por ejemplo, si el documento de PDF está protegido con cifrado basado en contraseña, este método devuelve `EncryptionType.PASSWORD`.
 
 **Consulte también**
 
@@ -1046,33 +1046,33 @@ Determine el tipo de cifrado que protege un documento del PDF mediante la API de
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que hospeda AEM Forms.
 
 1. Cree un cliente de servicios.
 
-   * Crear un `EncryptionServiceClient` mediante su constructor predeterminado.
-   * Crear un `EncryptionServiceClient.Endpoint.Address` mediante el uso del objeto `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`.) No es necesario que utilice el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
-   * Crear un `System.ServiceModel.BasicHttpBinding` al obtener el valor de la variable `EncryptionServiceClient.Endpoint.Binding` field. Convierta el valor devuelto en `BasicHttpBinding`.
-   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` field a `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
+   * Cree un objeto `EncryptionServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `EncryptionServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/EncryptionService?WSDL`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `EncryptionServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
+   * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario del formulario de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * AEM Asigne el nombre de usuario de los formularios de la al campo `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenga el documento cifrado del PDF.
 
-   * Crear un `BLOB` mediante su constructor.
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento PDF cifrado y el modo en que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `System.IO.FileStream` del objeto `Length` propiedad.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de la secuencia que se va a leer.
-   * Rellene el `BLOB` asignando el contenido de la matriz de bytes al objeto `BLOB` del objeto `MTOM` miembro de datos.
+   * Crear un objeto `BLOB` mediante su constructor.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF cifrado y el modo en que desea abrir el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
+   * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream` y pasando a leer la matriz de bytes, la posición inicial y la longitud de secuencia.
+   * Rellene el objeto `BLOB` asignando el contenido de la matriz de bytes al miembro de datos `MTOM` del objeto `BLOB`.
 
 1. Determine el tipo de cifrado.
 
-   * Invoque el `EncryptionServiceClient` del objeto `getPDFEncryption` y pase el `BLOB` que contiene el documento de PDF. Este método devuelve un `EncryptionTypeResult` objeto.
-   * Obtener el valor de `EncryptionTypeResult` del objeto `encryptionType` método de datos. Por ejemplo, si el documento de PDF está protegido con cifrado basado en contraseña, el valor de este miembro de datos es `EncryptionType.PASSWORD`.
+   * Invoque el método `getPDFEncryption` del objeto `EncryptionServiceClient` y pase el objeto `BLOB` que contiene el documento de PDF. Este método devuelve un objeto `EncryptionTypeResult`.
+   * Obtenga el valor del método de datos `encryptionType` del objeto `EncryptionTypeResult`. Por ejemplo, si el documento de PDF está protegido con cifrado basado en contraseña, el valor de este miembro de datos es `EncryptionType.PASSWORD`.
 
 **Consulte también**
 

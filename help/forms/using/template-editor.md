@@ -115,7 +115,7 @@ Por ejemplo, puede agregar el componente Encabezado en la plantilla. Al seleccio
 
 Cuando se selecciona la opción Contenido inicial, el contenedor de formulario adaptable de la plantilla se abrirá como un formulario adaptable para su edición. Al igual que la creación de un formulario adaptable, puede especificar la configuración inicial, como seleccionar una temática y enviar acciones.
 
-Los autores de formularios lo utilizan como base para crear un formulario. La estructura del flujo de contenido se especifica en la capa Contenido inicial de la plantilla. Para cambiar a la edición del contenido inicial de la plantilla de formulario, antes de Vista previa en la barra de herramientas de la página, seleccione ![lista desplegable de lienzo](assets/canvas-drop-down.png) **> Contenido inicial**.
+Los autores de formularios lo utilizan como base para crear un formulario. La estructura del flujo de contenido se especifica en la capa Contenido inicial de la plantilla. Para cambiar a la edición del contenido inicial de la plantilla de formulario, antes de Vista previa en la barra de herramientas de la página, seleccione ![canvas-drop-down](assets/canvas-drop-down.png) **> Contenido inicial**.
 ![Capa de contenido inicial en el Editor de plantillas](assets/initial-content-layer.png)
 
 La capa de contenido inicial en el Editor de plantillas muestra el contenedor del formulario adaptable seleccionado para especificar propiedades.
@@ -193,7 +193,7 @@ Siga estos pasos para mostrar y ocultar plantillas:
 1. Busque y abra la **Configuración de FormsManager**:
 
    * Para mostrar u ocultar la plantilla de formularios adaptables preestablecida, marque o desmarque la casilla **Incluir plantillas predeterminadas AF y AD**.
-   * Para mostrar u ocultar las plantillas de formulario adaptables predeterminadas que se agregaron en las versiones de AEM 6.0 Forms o AEM 6.1 Forms pero que ahora están en desuso, marque o desmarque la opción **Incluir plantillas AF de AEM 6.0**. Si esta opción está activada, para que tenga efecto, se requiere la variable **Incluir plantillas predeterminadas AF y AD** para activar la configuración de.
+   * Para mostrar u ocultar las plantillas de formulario adaptables predeterminadas que se agregaron en las versiones de AEM 6.0 Forms o AEM 6.1 Forms pero que ahora están en desuso, marque o desmarque la opción **Incluir plantillas AF de AEM 6.0**. Si se marca esta opción, para que tenga efecto, se requiere que la configuración **Incluir plantillas predeterminadas AF y AD** esté habilitada.
 
 1. Haga clic en **Guardar**. Se cambian las opciones de visualización de las plantillas predeterminadas.
 

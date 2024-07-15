@@ -1351,4 +1351,4 @@ Los siguientes eventos XFA del lado del cliente son compatibles:
 
 >[!NOTE]
 >
->Los formularios HTML5 se representan en el lado del cliente (explorador). Uso del lado del cliente **validate** y **calcular** scripts en lugar de scripts del lado del servidor.
+>Los formularios HTML5 se representan en el lado del cliente (explorador). Use scripts del lado del cliente **validate** y **calculate** en lugar de scripts del lado del servidor.

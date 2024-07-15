@@ -48,7 +48,7 @@ Para agregar objetos y servicios del modelo de datos:
 
 1. Inicie sesión en la instancia de autor de AEM, vaya a **[!UICONTROL Formularios > Integraciones de datos]** y abra el modelo de datos de formulario en el que desea agregar objetos.
 1. En el panel Fuentes de datos, amplíe las opciones para ver los objetos y servicios disponibles del modelo de datos.
-1. Seleccione los objetos y servicios del modelo de datos que desea agregar al modelo de datos de formulario y seleccione **[!UICONTROL Agregar selección]**.
+1. Seleccione los objetos y servicios del modelo de datos que desee agregar al modelo de datos de formulario y seleccione **[!UICONTROL Agregar selección]**.
 
    ![selected-objects](assets/selected-objects.png)
 
@@ -94,7 +94,7 @@ Para crear un objeto de modelo de datos sin fuentes de datos:
 
 1. Inicie sesión en la instancia de autor de AEM, vaya a **[!UICONTROL Formularios > Integraciones de datos]** y abra el modelo de datos de formulario en el que desea crear una entidad u objeto del modelo de datos.
 1. Selecciona **[!UICONTROL Crear entidad]**.
-1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y seleccione **[!UICONTROL Añadir]**. Se agrega un objeto de modelo de datos al modelo de datos del formulario. El objeto del modelo de datos recién agregado no está enlazado a una fuente de datos y no tiene propiedades como se muestra en la siguiente imagen.
+1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y seleccione **[!UICONTROL Agregar]**. Se agrega un objeto de modelo de datos al modelo de datos del formulario. El objeto del modelo de datos recién agregado no está enlazado a una fuente de datos y no tiene propiedades como se muestra en la siguiente imagen.
 
    ![new-entity](assets/new-entity.png)
 
@@ -184,7 +184,7 @@ En este ejemplo, los detalles asociados con **4367655678**, como el valor del ar
 
 Seleccione **[!UICONTROL Atributo de perfil de usuario]** del menú desplegable **[!UICONTROL Enlace a]** e indique el nombre del atributo en el campo **[!UICONTROL Valor de enlace]**. Los detalles del usuario que ha iniciado sesión en la instancia de AEM se recuperan de la fuente de datos en función del nombre del atributo.
 
-El nombre de atributo especificado en la variable **[!UICONTROL Valor de enlace]** Este campo debe incluir la ruta de enlace completa hasta el nombre del atributo del usuario. Abra la siguiente URL para acceder a los detalles del usuario sobre CRXDE:
+El nombre de atributo especificado en el campo **[!UICONTROL Valor de enlace]** debe incluir la ruta de enlace completa hasta el nombre de atributo del usuario. Abra la siguiente URL para acceder a los detalles del usuario sobre CRXDE:
 
 `https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
@@ -315,7 +315,7 @@ Una propiedad calculada es aquella cuyo valor se calcula en función de una regl
 
 Por ejemplo, puede crear una propiedad calculada **FullName** cuyo valor es resultado de la concatenación de las propiedades **FirstName** y **LastName**. Para ello:
 
-1. Cree una propiedad con el nombre `FullName` cuyo tipo de datos es Cadena.
+1. Cree una propiedad con el nombre `FullName` cuyo tipo de datos sea Cadena.
 1. Habilita la opción **[!UICONTROL Calculada]** y selecciona **[!UICONTROL Listo]** para crear la propiedad.
 
    ![computed](assets/computed.png)
@@ -409,7 +409,7 @@ A continuación, puede utilizar los datos de ejemplo para prerrellenar y probar 
 
 El modelo de datos de formulario está configurado, pero antes de ponerlo en uso, es posible que desee comprobar si los objetos y servicios funcionan según lo esperado. Para probar los objetos y servicios del modelo de datos:
 
-1. Seleccione un objeto del modelo de datos o un servicio en el modelo de datos de formulario y seleccione **[!UICONTROL Probar objeto de modelo]** o **[!UICONTROL Probar servicio]**, respectivamente.
+1. Seleccione un objeto del modelo de datos o un servicio en el modelo de datos de formulario y seleccione **[!UICONTROL Objeto del modelo de prueba]** o **[!UICONTROL Servicio de prueba]**, respectivamente.
 
    Se abre la ventana Modelo de datos de formulario de prueba.
 

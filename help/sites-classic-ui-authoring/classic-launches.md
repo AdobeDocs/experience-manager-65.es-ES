@@ -24,9 +24,9 @@ Se crea un lanzamiento para permitirle realizar cambios listos para su publicaci
 
 >[!NOTE]
 >
->La teoría subyacente a los lanzamientos se describe en detalle en [Lanzamientos](/help/sites-authoring/launches.md) en la documentación de creación estándar.
+>La teoría detrás de los lanzamientos se describe en detalle en [Lanzamientos](/help/sites-authoring/launches.md) en la documentación de creación estándar.
 >
->La información específica sobre el uso de lanzamientos en la IU clásica se encuentra en la siguiente documentación junto con [Creación de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edición de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-editing.md), y [Promoción de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>Encontrará información específica sobre el uso de lanzamientos en la IU clásica en la siguiente documentación, junto con [Creación de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edición de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-editing.md) y [Promoción de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >

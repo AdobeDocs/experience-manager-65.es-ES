@@ -33,14 +33,14 @@ Para integrarse con Target, realice las siguientes tareas:
 
 1. O bien, haga lo siguiente:
 
-   1. [Inclusión en Adobe Target](/help/sites-administering/opt-in.md): el asistente de inclusión toma la información de la cuenta de Target y crea una configuración de nube de Adobe Target y un marco de trabajo de Target. El asistente también asocia los sitios con el marco de trabajo de Target. Si el asistente no se puede conectar al destino, consulte la [solución de problemas de conexión](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sección. Puede hacer lo siguiente [Modificar las configuraciones de nube predeterminadas](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): Si es necesario, modifique la configuración y el marco de trabajo de la nube que creó el asistente de inclusión. Por ejemplo, modifique el marco de trabajo para enviar datos de contexto adicionales a Target. Si desea utilizar Adobe Analytics como fuente de informes para Adobe Target, debe modificar la configuración en la nube para que apunte a la configuración de A4T.
-   1. [Integración manual con Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
+   1. [Adhesión a Adobe Target](/help/sites-administering/opt-in.md): el asistente de inclusión toma la información de su cuenta de Target y crea una configuración de nube de Adobe Target y un marco de trabajo de Target. El asistente también asocia los sitios con el marco de trabajo de Target. Si el asistente no se puede conectar al destino, consulte la sección [solución de problemas de conexión](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems). A continuación, puede [modificar las configuraciones de nube predeterminadas](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): si es necesario, modifique la configuración de nube y el marco de trabajo que creó el asistente de inclusión. Por ejemplo, modifique el marco de trabajo para enviar datos de contexto adicionales a Target. Si desea utilizar Adobe Analytics como fuente de informes para Adobe Target, debe modificar la configuración en la nube para que apunte a la configuración de A4T.
+   1. [Integrar manualmente con Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
 1. [Configurar actividades](/help/sites-authoring/activitylib.md): asocie sus actividades a la configuración de nube de Target.
 
 >[!NOTE]
 >
->Consulte también [AEM Integración de los recursos de la con Adobe Target y Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>AEM Consulte también [Integración de con Adobe Target y Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Para integrarse con Target, realice las siguientes tareas:
 >
 >Consulte [Requisitos previos para la integración con Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) para obtener información detallada.
 
-Cuando se complete la integración, puede [crear contenido de destino](/help/sites-authoring/content-targeting-touch.md) para enviar datos sobre visitantes a Adobe Target. Tenga en cuenta que los componentes de página requieren un código específico para habilitar la segmentación de contenido. (Consulte [Desarrollo de contenido de destino](/help/sites-developing/target.md).)
+Cuando se complete la integración, puede [crear contenido de destino](/help/sites-authoring/content-targeting-touch.md) para enviar datos sobre visitantes a Adobe Target. Tenga en cuenta que los componentes de página requieren un código específico para habilitar la segmentación de contenido. (Consulte [Desarrollo de contenido de destino](/help/sites-developing/target.md)).
 
 >[!NOTE]
 >

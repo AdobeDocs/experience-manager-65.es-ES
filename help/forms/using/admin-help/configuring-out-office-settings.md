@@ -31,7 +31,7 @@ Al crear un proceso, el usuario de Workbench puede especificar si una tarea se p
 
    Seleccione la opción Buscar por nombre. Escriba todo o parte del nombre de usuario y haga clic en Buscar. Si deja el campo en blanco, el flujo de trabajo de Forms devuelve una lista de todos los usuarios.
 
-   **Buscar por intervalo de fechas**
+   **Buscar por intervalo de fecha**
 
    Seleccione la opción Buscar por intervalo de fechas. Especifique las fechas inicial y final junto con las marcas de tiempo deseadas para reducir el resultado de búsqueda. Haga clic en Buscar.
 
@@ -41,7 +41,7 @@ Al crear un proceso, el usuario de Workbench puede especificar si una tarea se p
 
 1. Busque el usuario, tal como se describe en [Ver la información de Fuera de la oficina de un usuario](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Haga clic en el nombre del usuario que desea cambiar.
-1. Desde el *Nombre de usuario* está actualmente en la lista, seleccione En la oficina o Fuera de la oficina.
+1. En la lista *Nombre de usuario* actualmente, seleccione En la oficina o Fuera de la oficina.
 1. Haga clic en Guardar.
 
 ## Agregar un intervalo de fechas de Fuera de la oficina para un usuario {#add-an-out-of-office-date-range-for-a-user}

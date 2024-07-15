@@ -30,7 +30,7 @@ Las dos imágenes siguientes muestran la diferencia entre los estilos predetermi
 
 1. **Elija un perfil al que agregar estilos personalizados**
 
-   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija uno existente. Para obtener información sobre cómo crear un perfil, consulte [Creación de un perfil](/help/forms/using/custom-profile.md)
+   Acceda a la interfaz CRX DE en la URL: **https://&lt;server>:&lt;port>/crx/de** y cree un perfil o elija uno existente. Para saber cómo crear un perfil, consulte [Crear un perfil](/help/forms/using/custom-profile.md)
 
 1. **Crear una hoja de estilos CSS para aplicar estilo a los formularios HTML5**
 

@@ -23,7 +23,7 @@ ht-degree: 95%
 | AEM 6.5 | Este artículo |
 
 
-![imagen de héroe](do-not-localize/data-integration.png)
+![imagen a pantalla completa](do-not-localize/data-integration.png)
 
 La integración de datos de AEM Forms ofrece una interfaz de usuario intuitiva para crear y trabajar con modelos de datos de formulario. Un modelo de datos de formulario se basa en fuentes de datos para el intercambio de datos; sin embargo, puede crear un modelo de datos de formulario con o sin una fuente de datos. Existen dos métodos para crear un modelo de datos de formulario en función de si ha configurado fuentes de datos:
 
@@ -41,7 +41,7 @@ Asegúrese de haber configurado las fuentes de datos que desea utilizar en el mo
 
 1. En la instancia de autor de AEM, navegue hasta **[!UICONTROL Formularios > Integraciones de datos]**.
 1. Seleccione **[!UICONTROL Crear > Modelo de datos de formulario]**.
-1. En el cuadro de diálogo Crear un modelo de datos de formulario:
+1. En el cuadro de diálogo Crear un modelo de datos de formulario, haga lo siguiente:
 
    * Especifique un nombre para el modelo de datos del formulario.
    * (**Opcional**) Especifique el título, la descripción y las etiquetas del modelo de datos del formulario.
@@ -50,7 +50,7 @@ Asegúrese de haber configurado las fuentes de datos que desea utilizar en el mo
    Seleccione **[!UICONTROL Siguiente]**.
 
 1. (**Aplicable únicamente si se han configurado fuentes de datos**). La pantalla **[!UICONTROL Seleccionar fuente de datos]** enumera las fuentes de datos disponibles, si las hay. Seleccione las fuentes de datos que desee utilizar en el modelo de datos de formulario.
-1. Seleccionar **[!UICONTROL Crear]** y en el cuadro de diálogo de confirmación, seleccione **[!UICONTROL Abrir]** para abrir el editor del modelo de datos de formulario.
+1. Seleccione **[!UICONTROL Crear]** y, en el cuadro de diálogo de confirmación, seleccione **[!UICONTROL Abrir]** para abrir el editor del modelo de datos de formulario.
 
 Revisemos los diferentes componentes de la interfaz de usuario del editor del modelo de datos de formulario.
 
@@ -74,7 +74,7 @@ Para obtener más información sobre el editor del modelo de datos de formulario
 
 Haga lo siguiente para agregar o actualizar fuentes de datos a un modelo de datos de formulario existente.
 
-1. Ir a **[!UICONTROL Forms > Integraciones de datos]**, seleccione el modelo de datos de formulario en el que desea agregar o actualizar las fuentes de datos y seleccione **[!UICONTROL Propiedades]**.
+1. Vaya a **[!UICONTROL Forms > Integraciones de datos]**, seleccione el modelo de datos de formulario en el que desea agregar o actualizar las fuentes de datos y seleccione **[!UICONTROL Propiedades]**.
 1. En las propiedades del modelo de datos de formulario, vaya a la pestaña **[!UICONTROL Actualizar fuente]**.
 
    En la pestaña Actualizar fuente:

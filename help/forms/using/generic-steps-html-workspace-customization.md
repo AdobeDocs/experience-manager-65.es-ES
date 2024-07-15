@@ -22,9 +22,9 @@ ht-degree: 73%
 Los pasos genéricos para realizar cualquier personalización son los siguientes:
 
 1. Inicie sesión en CRXDE Lite accediendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Crear un `sling:Folder` carpeta con el nombre `ws` en `/apps`, si no existe. Para crear una carpeta `sling:Folder`, haga clic con el botón derecho en la carpeta `apps` y seleccione **[!UICONTROL Crear]** > **[!UICONTROL Crear nodo]**. Especifique el nombre como `ws`, seleccione el tipo como `sling:Folder`y haga clic en **[!UICONTROL OK]**. Haga clic en **[!UICONTROL Guardar todo]**.
+1. Cree una carpeta `sling:Folder` con el nombre `ws` en `/apps`, si no existe. Para crear una carpeta `sling:Folder`, haga clic con el botón derecho en la carpeta `apps` y seleccione **[!UICONTROL Crear]** > **[!UICONTROL Crear nodo]**. Especifique el nombre como `ws`, seleccione el tipo como `sling:Folder` y haga clic en **[!UICONTROL Aceptar]**. Haga clic en **[!UICONTROL Guardar todo]**.
 1. Vaya a `/apps/ws` y desplácese hasta la pestaña **[!UICONTROL Control de acceso]**.
-1. Seleccione la opción **[!UICONTROL Repositorio]**. En el **[!UICONTROL Control de acceso]** , haga clic en **[!UICONTROL +]** para añadir una entrada. Vuelva a hacer clic en **[!UICONTROL +]**.
+1. Seleccione la opción **[!UICONTROL Repositorio]**. En la lista **[!UICONTROL Control de acceso]**, haga clic en **[!UICONTROL +]** para agregar una entrada. Vuelva a hacer clic en **[!UICONTROL +]**.
 1. Busque y seleccione el principal **PERM_WORKSPACE_USER**.
 
    ![Seleccione el principal PERM_WORKSPACE_USER como parte de los pasos genéricos para personalizar HTML Workspace](assets/perm_workspace_user.png).
@@ -41,9 +41,9 @@ Los pasos genéricos para realizar cualquier personalización son los siguientes
 
 1. Siga los siguientes pasos para llevar a cabo las personalizaciones de CSS:
 
-   1. Vaya a `/apps/ws` y cree una carpeta denominada `css`.
+   1. Vaya a la carpeta `/apps/ws` y cree una carpeta llamada `css`.
 
-   1. En el `css` carpeta, cree un archivo con el nombre `newStyle.css`.
+   1. En la carpeta `css`, cree un archivo denominado `newStyle.css`.
 
    1. Abra `/apps/ws/html`.jsp y cambie
 
@@ -94,6 +94,6 @@ Los pasos genéricos para realizar cualquier personalización son los siguientes
 
    1. Copie /libs/ws/js/registry.js en `/apps/ws/js/registry.js`.
 
-1. Clic **[!UICONTROL Guardar todo]**, borre la caché y actualice el espacio de trabajo de AEM Forms.
+1. Haga clic en **[!UICONTROL Guardar todo]**, borre la caché y actualice el espacio de trabajo de AEM Forms.
 
    Acceda a la dirección URL `https://'[server]:[port]'/lc/ws` e inicie sesión con las credenciales de administrador/contraseña. El explorador le redirigirá a `https://'[server]:[port]'/lc/apps/ws/index.html`.

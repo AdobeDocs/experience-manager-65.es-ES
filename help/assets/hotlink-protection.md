@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Activar la protección de vínculos interactivos en Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-La vinculación activa se produce cuando un sitio web de terceros utiliza un código de HTML para mostrar una imagen del sitio web. Utilizan el ancho de banda cada vez que se solicita la imagen, ya que el explorador del visitante accede a ella directamente desde el servidor. Hotlink *protección* es un método para evitar que otros sitios web se vinculen directamente a imágenes, CSS o JavaScript de sus páginas web. Este tipo de escudo ayuda a reducir el uso innecesario del ancho de banda en su cuenta de Dynamic Media.
+La vinculación activa se produce cuando un sitio web de terceros utiliza un código de HTML para mostrar una imagen del sitio web. Utilizan el ancho de banda cada vez que se solicita la imagen, ya que el explorador del visitante accede a ella directamente desde el servidor. La protección de vínculos interactivos *protection* es un método para evitar que otros sitios web se vinculen directamente a imágenes, CSS o JavaScript en sus páginas web. Este tipo de escudo ayuda a reducir el uso innecesario del ancho de banda en su cuenta de Dynamic Media.
 
-[Asistencia al cliente de Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=es#support) Puede configurar un filtro de referente en el nivel de CDN (red de distribución de contenido) para que el contenido de Dynamic Media solo se proporcione a los sitios web de la lista de sitios web permitidos para el dominio.
+[Atención al cliente Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=es#support) puede configurar un filtro de referente en el nivel de CDN (red de distribución de contenido) para que el contenido de Dynamic Media solo se ofrezca a los sitios web de su lista de sitios web permitidos para el dominio.
 
 >[!NOTE]
 >

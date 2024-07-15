@@ -24,15 +24,16 @@ Esta sección contiene preocupaciones comunes y problemas conocidos al soluciona
 
 ### Error de recuperación de Dispatcher {#dispatcher-refetch-fails}
 
-Cuando se utiliza Dispatcher 4.1.5 con una versión más reciente de Jetty, una recuperación puede dar como resultado &quot;No se puede recibir respuesta del servidor remoto&quot; después de esperar a que se agote el tiempo de espera de la solicitud.
+Al utilizar Dispatcher 4.1.5 con una versión más reciente de Jetty, una recuperación puede dar como resultado &quot;No se puede recibir respuesta del servidor remoto&quot; después de esperar a que se agote el tiempo de espera de la solicitud.
 
 El uso de Dispatcher 4.1.6 o posterior resuelve este problema.
 
-### No se puede acceder a la publicación de foro después de actualizar desde CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
+### No se puede acceder al foro de Post después de actualizar desde CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
 AEM Si se crea un foro sobre CQ 5.4 y se publican temas y, a continuación, el sitio se actualiza a la versión 5.6.1 o posterior de, intentar ver las publicaciones existentes puede provocar un error en la página:
 
-Carácter de patrón no válido &#39;a&#39; No se puede entregar la solicitud a `/content/demoforums/forum-test.html` en este servidor y los registros contienen lo siguiente:
+Carácter de patrón no válido &#39;a&#39;
+No se puede entregar la solicitud a `/content/demoforums/forum-test.html` en este servidor y los registros contienen lo siguiente:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -45,12 +46,12 @@ El problema es que la cadena de formato para com.day.cq.commons.date.RelativeTim
 
 Por lo tanto, cualquier código que utilice la API RelativeTimeFormat() debe cambiar:
 
-* Desde: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
-* Hasta: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
+* De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
+* Para: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-El error es diferente en Autor y Publicación. En Autor, falla de forma silenciosa y simplemente no muestra los temas del foro. En Publish, se muestra el error en la página.
+El error es diferente en Autor y Publish. En Autor, falla de forma silenciosa y simplemente no muestra los temas del foro. En Publish, genera el error en la página.
 
-Consulte la [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API para obtener más información.
+Consulte la API [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) para obtener más información.
 
 ## Inquietudes comunes {#common-concerns}
 
@@ -58,9 +59,9 @@ Consulte la [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe
 
 Durante el inicio (no el primero, sino todos los posteriores), se puede ver la siguiente advertencia en los registros:
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` se ha reemplazado por `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` ha sido reemplazado por `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Esta advertencia se puede ignorar de forma segura como `jknack.handlebars.Handlebars`, utilizado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda i18n. AEM Al inicio, se reemplaza con un específico de la [i18n helper](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
+Esta advertencia se puede ignorar de forma segura, ya que `jknack.handlebars.Handlebars`, utilizada por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda i18n. AEM Al iniciarse, se reemplaza con un [ayudante i18n](handlebars-helpers.md#i-n) específico de la. Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
 
 ### Advertencia en registros: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

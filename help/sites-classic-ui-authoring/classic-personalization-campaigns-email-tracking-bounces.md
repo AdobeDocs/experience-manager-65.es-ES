@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >El Adobe AEM de no planea mejorar aún más el seguimiento de los correos electrónicos abiertos/rechazados enviados por el servicio SMTP de la.
 >
->La recomendación es [Uso de Adobe Campaign AEM y su integración con el](/help/sites-administering/campaign.md).
+>Se recomienda [usar Adobe Campaign AEM y su integración con el servicio de asistencia técnica](/help/sites-administering/campaign.md).
 
 Cuando envía una newsletter a muchos usuarios, suele haber algunas direcciones de correo electrónico no válidas en la lista. El envío de boletines a esas direcciones se recupera. AEM Puede administrar esas devoluciones y puede dejar de enviar boletines informativos a esas direcciones después de que se exceda el contador de devoluciones configurado. De forma predeterminada, la tasa de salida hacia otro sitio se establece en 3, pero se puede configurar.
 
@@ -34,9 +34,9 @@ El importador de fuentes le permite importar repetidamente contenido de fuentes 
 
 Para configurar el importador de fuentes para el seguimiento de correos electrónicos rechazados, haga lo siguiente:
 
-1. Entrada **Herramientas**, seleccione el Importador de fuentes.
+1. En **Herramientas**, seleccione el Importador de fuentes.
 
-1. Clic **Añadir** para crear una configuración.
+1. Haga clic en **Agregar** para crear una configuración.
 
    ![chlimage_1](assets/chlimage_1a.png)
 
@@ -44,9 +44,9 @@ Para configurar el importador de fuentes para el seguimiento de correos electró
 
    Todas las configuraciones necesitan información sobre lo siguiente en la dirección URL de sondeo:
 
-   `username`: El nombre de usuario que se utiliza para la conexión
+   `username`: nombre de usuario utilizado para la conexión
 
-   `password`: La contraseña utilizada para conectarse
+   `password`: la contraseña utilizada para la conexión
 
    Además, según el protocolo, puede configurar ciertas opciones.
 
@@ -54,7 +54,7 @@ Para configurar el importador de fuentes para el seguimiento de correos electró
 
    `pop3.leave.on.server`: define si se deben dejar los mensajes en el servidor o no. Si se establece en true, los mensajes se dejarán en el servidor; en caso contrario, en false. El valor predeterminado es True.
 
-   **Ejemplos POP3:**
+   **ejemplos POP3:**
 
    | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret | Uso de pop3 sobre SSL para conectarse a GMail en el puerto 995 con usuario/secreto, dejando los mensajes en el servidor de forma predeterminada |
    |---|---|
@@ -64,11 +64,11 @@ Para configurar el importador de fuentes para el seguimiento de correos electró
 
    Permite establecer marcas para buscar.
 
-   `imap.flag.SEEN`:Establezca false para los mensajes nuevos o no vistos, true para los mensajes ya leídos
+   `imap.flag.SEEN`: establecer falso para mensaje nuevo/no visto, verdadero para mensajes ya leídos
 
    Consulte [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) para obtener la lista completa de indicadores.
 
-   **Ejemplos de IMAP:**
+   **ejemplos de IMAP:**
 
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Uso de IMAP sobre SSL para conectarse a GMail en el puerto 993 con usuario/secreto. Recibir mensajes nuevos solo de forma predeterminada. |
    |---|---|
@@ -83,7 +83,7 @@ Después de configurar el importador de fuentes, configure la Dirección de orig
 
 Para configurar el servicio del boletín informativo:
 
-1. En la consola OSGi, en `<host>:<port>/system/console/configMgr`, vaya a **Newsletter de MCM**.
+1. En la consola de OSGi, en `<host>:<port>/system/console/configMgr`, vaya a **Boletín de MCM**.
 
 1. Configure el servicio y guarde los cambios cuando termine.
 

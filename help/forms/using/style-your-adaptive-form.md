@@ -17,7 +17,7 @@ ht-degree: 54%
 
 Aprenda a crear una temática personalizada, aplicar estilo a componentes individuales y utilizar Web Fonts en una temática.
 
-![imagen de héroe](do-not-localize/08-style_your_adaptiveformmain.png)
+![imagen a pantalla completa](do-not-localize/08-style_your_adaptiveformmain.png)
 
 Este tutorial es un paso en la serie [Crear su primer formulario adaptable](Https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). El Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
 
@@ -48,14 +48,14 @@ Descargue las siguientes imágenes de estilo de encabezado y logotipo en su equi
 
 El editor de formularios adaptables proporciona varias temáticas predeterminadas. Si no pretende utilizar un estilo personalizado para el formulario adaptable, también puede publicar los formularios adaptables con una temática incorporada. Las temáticas son independientes de los formularios adaptables. Puede aplicar la misma temática a varios formularios adaptables.
 
-**Para aplicar una temática al formulario adaptable, haga lo siguiente:**
+**Para aplicar un tema a su formulario adaptable:**
 
 1. Abra el formulario adaptable para editarlo.
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Abra las propiedades del **[!UICONTROL Contenedor de formularios adaptables]**. En el explorador de propiedades, navegue hasta **[!UICONTROL Básico]** > **[!UICONTROL Temática del formulario adaptable]**. El campo **[!UICONTROL Temática del formulario adaptable]** enumera todas las temáticas predeterminadas y personalizadas. De forma predeterminada, se aplica la temática Lienzo.
-1. Seleccione una temática del campo **[!UICONTROL Temática del formulario adaptable]**. Por ejemplo, **Temática de encuesta**. Seleccionar ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para que pueda aplicar la temática seleccionada.
+1. Seleccione una temática del campo **[!UICONTROL Temática del formulario adaptable]**. Por ejemplo, **Temática de encuesta**. Seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para poder aplicar el tema seleccionado.
 
    ![Formulario adaptable con la temática predeterminada](assets/default-adaptive-form.png)
 
@@ -69,7 +69,7 @@ El editor de formularios adaptables proporciona varias temáticas predeterminada
 
 El diseño que se muestra más arriba requiere cambios en el texto del marcador de posición y en el logotipo de su formulario adaptable.
 
-**Para actualizar el formulario adaptable, haga lo siguiente:**
+**Para actualizar el formulario adaptable:**
 
 1. Cambie el logotipo y el texto existentes del encabezado. Para eliminar el logotipo, haga lo siguiente:
 
@@ -77,24 +77,24 @@ El diseño que se muestra más arriba requiere cambios en el texto del marcador 
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Seleccione la imagen del logotipo en la [!UICONTROL encabezado] Componente y seleccione ![cmppr](assets/cmppr.png) **[!UICONTROL propiedades]**. En el [!UICONTROL imagen] , seleccione X para eliminar la imagen del logotipo existente.
-   1. Seleccionar **[!UICONTROL cargar]**, seleccione el logo.png y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios. La imagen se descargó en la sección [Antes de comenzar](/help/forms/using/style-your-adaptive-form.md#before-you-start).
-   1. Seleccionar texto de encabezado, `We.Retail`y seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL editar]**. Cambie el texto del encabezado a `we retail`. Aplique formato de negrita solo a `we`en `we retail`.
+   1. Seleccione la imagen del logotipo en el componente [!UICONTROL header] y seleccione ![cmppr](assets/cmppr.png) **[!UICONTROL properties]**. En la propiedad [!UICONTROL image], seleccione X para eliminar la imagen del logotipo existente.
+   1. Seleccione **[!UICONTROL upload]**, seleccione el logo.png y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios. La imagen se descargó en la sección [Antes de comenzar](/help/forms/using/style-your-adaptive-form.md#before-you-start).
+   1. Seleccione el texto del encabezado `We.Retail` y seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL edit]**. Cambie el texto del encabezado a `we retail`. Aplique formato de negrita solo a `we`en `we retail`.
 
       ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Elimine el título y agregue un texto de marcador de posición:
 
-   1. Seleccione el campo ID de cliente y luego seleccione ![cmppr](assets/cmppr.png) propiedades.
+   1. Seleccione el campo ID de cliente y seleccione las propiedades ![cmppr](assets/cmppr.png).
    1. Copie el contenido del campo **[!UICONTROL Título]** en el campo **[!UICONTROL Texto del marcador de posición]**.
-   1. Eliminar el contenido del **[!UICONTROL Título]** y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Elimine el contenido del campo **[!UICONTROL Title]** y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Repita los tres pasos anteriores para todos los cuadros de texto, cuadros numéricos y campos de correo electrónico del formulario.
 
       ![updated-adaptive-form](assets/updated-adaptive-form.png)
 
 ## Paso 3: Crear una temática personalizada para el formulario adaptable {#step-create-a-custom-theme-for-your-adaptive-form}
 
-Puede usar el complemento [editor de temáticas](/help/forms/using/themes.md) para crear temáticas personalizadas. El editor de temáticas es un poderoso editor WYSIWYG. Es un método visual para aplicar CSS a varios componentes de un formulario adaptable. Proporciona controles más precisos para aplicar estilo a los componentes y los paneles de un formulario adaptable.
+Puede usar el [editor de temáticas](/help/forms/using/themes.md) para crear temáticas personalizadas. El editor de temáticas es un poderoso editor WYSIWYG. Es un método visual para aplicar CSS a varios componentes de un formulario adaptable. Proporciona controles más precisos para aplicar estilo a los componentes y los paneles de un formulario adaptable.
 
 Una temática es una entidad independiente como los formularios adaptables. Contiene estilos (CSS) para los componentes y paneles de un formulario adaptable. Los estilos incluyen propiedades CSS como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se aplica a los componentes correspondientes de un formulario adaptable.
 
@@ -103,16 +103,16 @@ En este tutorial, aplicará estilo al encabezado y al pie de página, a los comp
 ### Crear una temática {#create-a-theme}
 
 1. Inicie sesión en la instancia de autor de AEM y navegue hasta **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Temáticas]**. La dirección URL predeterminada es [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
-1. Seleccionar **[!UICONTROL Crear]** y seleccione **[!UICONTROL Tema]**. Aparecerá la página [!UICONTROL Crear temática] con los campos necesarios para crear una temática. Los campos **[!UICONTROL Título]** y **[!UICONTROL Nombre]** son obligatorios:
+1. Seleccione **[!UICONTROL Crear]** y seleccione **[!UICONTROL Tema]**. Aparecerá la página [!UICONTROL Crear temática] con los campos necesarios para crear una temática. Los campos **[!UICONTROL Título]** y **[!UICONTROL Nombre]** son obligatorios:
 
    * **Título:** especifique un título para la temática. Por ejemplo, **Temática Global.** El título le ayuda a identificar la temática en la lista de temáticas.
    * **Nombre:** especifique el nombre de la temática. Por ejemplo, **Temática Global.** Se crea un nodo con el nombre especificado en el repositorio. A medida que empieza a escribir un título, el valor del campo de nombre se genera automáticamente. Puede cambiar el valor sugerido. El campo de nombre solo puede incluir caracteres alfanuméricos, guiones y guiones bajos. Todas las entradas no válidas se sustituyen por guiones.
 
-1. Seleccione **[!UICONTROL Crear]**. Se crea una temática y aparece un cuadro de diálogo para abrir el formulario y editarlo. Seleccionar **[!UICONTROL Abrir]** para abrir la temática recién creada en una pestaña nueva. La temática se abre en el editor de temáticas. Para aplicar estilo, el editor de temáticas utiliza un formulario adaptable incorporado que se incluye con AEM [!DNL Forms].
+1. Seleccione **[!UICONTROL Crear]**. Se crea una temática y aparece un cuadro de diálogo para abrir el formulario y editarlo. Seleccione **[!UICONTROL Abrir]** para abrir el tema recién creado en una pestaña nueva. La temática se abre en el editor de temáticas. Para aplicar estilo, el editor de temáticas utiliza un formulario adaptable incorporado que se incluye con AEM [!DNL Forms].
 
-   Para obtener información sobre el uso de la interfaz de usuario del editor de temáticas, consulte [Acerca del editor de temáticas](/help/forms/using/themes.md#aboutthethemeeditor).
+   Para obtener información acerca del uso de la interfaz de usuario del editor de temáticas, consulte [Acerca del editor de temáticas](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Seleccionar **[!UICONTROL Opciones del tema]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurar]**. En el **[!UICONTROL Previsualizar formulario]** , seleccione el campo **shipping-address-add-update-form** formulario adaptable, seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), seleccione **[!UICONTROL Guardar]**. Ahora, el editor de temáticas está configurado para usar su propio formulario adaptable en lugar del formulario adaptable predeterminado. Seleccionar **[!UICONTROL Cancelar]** para volver al editor de temáticas.
+1. Seleccione **[!UICONTROL Opciones de tema]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configurar]**. En el campo **[!UICONTROL Vista previa del formulario]**, seleccione el formulario adaptable **shipping-address-add-update-form**, seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), seleccione **[!UICONTROL Guardar]**. Ahora, el editor de temáticas está configurado para usar su propio formulario adaptable en lugar del formulario adaptable predeterminado. Seleccione **[!UICONTROL Cancelar]** para volver al editor de temáticas.
 
    ![custom-theme](assets/custom-theme.png)
 
@@ -128,7 +128,7 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
 
 1. Navegue hasta la opción **[!UICONTROL Encabezado]** > **[!UICONTROL Texto]** en el panel Selectores. El panel Selectores se encuentra a la izquierda del editor de temáticas. Si el panel no está visible, seleccione ![toggle-side-panel](assets/toggle-side-panel.png) Alternar panel lateral.
 
-1. Establezca las siguientes propiedades en la **[!UICONTROL Texto]** acordeón y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Establezca las siguientes propiedades en el acordeón **[!UICONTROL Text]** y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propiedad | Valor |
    |---|---|
@@ -136,10 +136,10 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
    | Color de fuente | FFFFFF |
    | Tamaño de fuente | 54 px |
 
-1. Seleccione el [!UICONTROL encabezado] widget y seleccionar **[!UICONTROL Header]**. Las opciones para aplicar estilo al widget de encabezado aparecen a la izquierda. Expanda el **[!UICONTROL Dimension y posición]** acordeón, configure el **[!UICONTROL Altura]** hasta `120px`y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el widget [!UICONTROL header] y seleccione **[!UICONTROL Header]**. Las opciones para aplicar estilo al widget de encabezado aparecen a la izquierda. Expanda el acordeón **[!UICONTROL Dimension y posición]**, establezca la **[!UICONTROL altura]** a `120px` y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Expanda el acordeón del widget de encabezado **[!UICONTROL Fondo]**, establezca el **[!UICONTROL Color de fondo]** a `F6921E.`
 
-   Pase el ratón sobre **[!UICONTROL Imagen y degradación]** > **[!UICONTROL + Agregar]**, seleccione **[!UICONTROL Imagen]**. Establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Pase el ratón sobre **[!UICONTROL Imagen y degradado]** > **[!UICONTROL + Agregar]** y seleccione **[!UICONTROL Imagen]**. Establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Propiedad | Valor |
    |---|---|
@@ -147,7 +147,7 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
    | Posición | Inferior Derecha |
    | Mosaico | No repetir |
 
-1. En el editor de temáticas, seleccione el logotipo en el encabezado y seleccione **[!UICONTROL Logotipo de encabezado]**. Expanda el acordeón Dimension y posición, establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. En el editor de temáticas, selecciona el logotipo en el encabezado y selecciona **[!UICONTROL Logotipo de encabezado]**. Expanda el acordeón Dimension y posición, establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -162,7 +162,7 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
         <li>Superior: 1,5 rem</li> 
         <li>Inferior: -35 px</li> 
         <li>Izquierda: 1rem<strong><br /> </strong></li> 
-       </ul> <p><strong>Sugerencia:</strong> Seleccione el <img src="assets/link.png"> icono de vínculo para proporcionar un valor diferente a cada campo.<br /> </p> </td> 
+       </ul> <p><strong>Sugerencia:</strong> Seleccione el icono de vínculo <img src="assets/link.png"> para proporcionar un valor diferente a cada campo.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Altura</td> 
@@ -171,13 +171,13 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
     </tbody> 
    </table>
 
-1. Seleccione el widget de pie de página y seleccione **[!UICONTROL Pie]**. Expanda el **[!UICONTROL Fondo]** acordeón, configure el **[!UICONTROL Color de fondo]** hasta `F6921E`y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el widget de pie de página y seleccione **[!UICONTROL Pie de página]**. Expanda el acordeón **[!UICONTROL Fondo]**, establezca el **[!UICONTROL Color de fondo]** en `F6921E` y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 ### Aplicar un estilo al componente de captura de datos y un fondo al formulario adaptable {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 Puede utilizar varios componentes en un formulario adaptable para capturar datos. Por ejemplo, cuadro de texto y cuadro numérico. Puede proporcionar un estilo idéntico a todos los componentes de captura de datos o a uno independiente para cada componente. En este tutorial, se aplica un estilo idéntico a los cuadros numéricos (ID de cliente, código postal) y los cuadros de texto (ID de cliente, nombre, dirección de envío, estado, correo electrónico). Para aplicar estilo a los componentes de captura de datos, haga lo siguiente:
 
-1. Seleccione el **[!UICONTROL ID de cliente]** y seleccione el campo **[!UICONTROL Widget del campo]** opción. Establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el campo **[!UICONTROL ID de cliente]** y luego seleccione la opción **[!UICONTROL Widget del campo]**. Establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -233,7 +233,7 @@ Puede utilizar varios componentes en un formulario adaptable para capturar datos
     </tbody> 
     </table>
 
-1. Seleccione el área vacía encima de **[!UICONTROL ID de cliente]** y seleccione **[!UICONTROL Contenedor del panel interactivo]**. Configure el **[!UICONTROL Contexto]** > **[!UICONTROL Color de fondo]** a F1F2F2. Seleccionar ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el área vacía encima del campo **[!UICONTROL ID de cliente]** y seleccione **[!UICONTROL Contenedor del panel interactivo]**. Configure el **[!UICONTROL Contexto]** > **[!UICONTROL Color de fondo]** a F1F2F2. Seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![Contenedor de panel interactivo](do-not-localize/responsive-panel-container.png)
 
@@ -241,7 +241,7 @@ Puede utilizar varios componentes en un formulario adaptable para capturar datos
 
 Puede utilizar una temática personalizada para aplicar un estilo idéntico a todos los botones del formulario adaptable y [aplicar estilo dentro de la línea](/help/forms/using/inline-style-adaptive-forms.md) para aplicar un estilo a un botón específico. Para aplicar estilo a los botones, haga lo siguiente:
 
-1. Seleccione el **[!UICONTROL Enviar]** y seleccione el botón **[!UICONTROL Botón]** opción. Establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el botón **[!UICONTROL Enviar]** y luego seleccione la opción **[!UICONTROL Botón]**. Establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -302,14 +302,14 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
 
    ![style-option](assets/style-option.png)
 
-1. Seleccione el **[!UICONTROL Adjuntar]** y seleccione el botón ![aem_6_3_edit](assets/aem_6_3_edit.png)icono. Establezca las siguientes propiedades en el acordeón **[!UICONTROL Dimensiones y posición]**:
+1. Seleccione el botón **[!UICONTROL Adjuntar]** y seleccione el icono ![aem_6_3_edit](assets/aem_6_3_edit.png)Icon. Establezca las siguientes propiedades en el acordeón **[!UICONTROL Dimensiones y posición]**:
 
    | Propiedad | Valor |
    |---|---|
    | Flotante | Izquierda |
    | Anchura | 10 % |
 
-1. Seleccione el **[!UICONTROL Prueba de dirección aprobada por el gobierno]** y seleccione la opción ![aem_6_3_edit](assets/aem_6_3_edit.png)icono. Establezca las siguientes propiedades:
+1. Seleccione la opción **[!UICONTROL Prueba de dirección aprobada por el gobierno]** y seleccione el icono ![aem_6_3_edit](assets/aem_6_3_edit.png)icono. Establezca las siguientes propiedades:
 
    <table> 
     <tbody> 
@@ -399,7 +399,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
     </tbody> 
    </table>
 
-1. Seleccione el **[!UICONTROL Enviar]** y seleccione el botón ![aem_6_3_edit](assets/aem_6_3_edit.png) icono. Establezca las siguientes propiedades:
+1. Seleccione el botón **[!UICONTROL Enviar]** y seleccione el icono ![aem_6_3_edit](assets/aem_6_3_edit.png). Establezca las siguientes propiedades:
 
    <table> 
     <tbody> 
@@ -467,24 +467,24 @@ Puede utilizar varias fuentes para diseñar un formulario adaptable. Es posible 
 2. Asigne un nombre al proyecto web.
 3. Seleccione las casillas de verificación para seleccionar los pesos y estilos de fuente que desee incluir.
 
-   ![añadir una biblioteca de fuentes](assets/add-a-font-window.png)
+   ![agregar una biblioteca de fuentes](assets/add-a-font-window.png)
 
-4. Seleccionar **Clic** para crear el proyecto.
+4. Seleccione **Haga clic** para crear el proyecto.
 5. Copie el código incrustado y la dirección URL desde la pantalla.
    ![código incrustado y dirección URL](assets/font-add-url.png)
 
-6. Clic **Listo** para cerrar la ventana del proyecto web.
+6. Haga clic en **Listo** para cerrar la ventana del proyecto web.
 7. AEM Inicie sesión en la instancia de y vaya a la dirección URL `http://server:port/crx/de/index.jsp#`
 8. Cree una estructura de carpetas en CRXDE, por ejemplo `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
-9. Vaya al recién creado `clientlibs` y añada la `allowProxy` y `categories` propiedades.
+9. Vaya a la carpeta `clientlibs` recién creada y agregue las propiedades `allowProxy` y `categories`.
 10. Vaya a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` y cree una carpeta css.
-11. Vaya a la carpeta CSS creada y cree un archivo. Por ejemplo, cree un archivo como `fonts.css` y pegue el código de incrustación junto con la dirección URL.
+11. Vaya a la carpeta CSS creada y cree un archivo. Por ejemplo, cree un archivo como `fonts.css` y pegue el código incrustado junto con la dirección URL.
    ![Estructura de carpetas](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Guarde los cambios.
 
 >[!NOTE]
 >
-> Para utilizar las fuentes personalizadas agregadas en un formulario adaptable, asegúrese de que el nombre de la biblioteca de cliente en la variable **[!UICONTROL Categoría de biblioteca de cliente]** se alinea con el nombre especificado en la opción categories de la carpeta clientlib.
+> Para utilizar las fuentes personalizadas agregadas en un formulario adaptable, asegúrese de que el nombre de la biblioteca de cliente de la **[!UICONTROL Categoría de biblioteca de cliente]** se ajuste al nombre especificado en la opción categories de la carpeta clientlib.
 
 Ahora el formulario adaptable puede acceder a las fuentes incluidas a través de la siguiente biblioteca de cliente de fuentes personalizada.
 

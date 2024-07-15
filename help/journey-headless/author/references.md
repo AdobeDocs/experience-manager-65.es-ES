@@ -126,7 +126,7 @@ Ahora que ha aprendido acerca de referencias y estructuras en los fragmentos de 
       * [Modelos de fragmento de contenido: propiedades](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * Guías de introducción
-   * [Guía de inicio rápido Creación de una carpeta de recursos sin encabezado](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [Guía de inicio rápido Creación de una carpeta de Assets sin encabezado](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Recorrido para arquitectos de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
 

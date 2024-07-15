@@ -56,14 +56,14 @@ Su cuenta se habrá configurado con los privilegios que necesite. Si tiene algú
 
 La primera vez que inicie sesión, un breve tutorial en línea resalta algunas de las funciones principales de la interfaz de usuario.
 
-A continuación, puede utilizar el panel de navegación para acceder a las áreas clave de AEM. Para los fragmentos de contenido se utiliza la variable **Consola de recursos**.
+A continuación, puede utilizar el panel de navegación para acceder a las áreas clave de AEM. Para los fragmentos de contenido usará la **consola de Assets**.
 
 Para abrir el panel de navegación, seleccione el icono de Adobe en la parte superior izquierda, seguido del icono de una pequeña brújula:
 
 ![Panel de navegación](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->AEM Aunque los fragmentos de contenido son una característica de los fragmentos de **Sites**, se encuentran en la variable **Assets** consola. Se trata de un detalle técnico que no debería afectarle, pero que es útil conocer.
+>AEM Aunque los fragmentos de contenido son una característica de **Sitios**, se encuentran en la consola **Assets**. Se trata de un detalle técnico que no debería afectarle, pero que es útil conocer.
 
 En la consola, puede seleccionar carpetas para desplazarse hasta el fragmento de contenido o las rutas de exploración (en el encabezado) para desplazarse hacia atrás en el árbol.
 
@@ -71,7 +71,7 @@ En la consola, puede seleccionar carpetas para desplazarse hasta el fragmento de
 
 ### Acciones: selección y visualización {#actions-selecting-viewing}
 
-El **Assets** La consola de ha dedicado **Barras de herramientas de acciones**, y **Acciones rápidas** que puede utilizar después de seleccionar un recurso (por ejemplo, una carpeta o un fragmento de contenido).
+La consola **Assets** tiene **barras de herramientas de acción** y **acciones rápidas** dedicadas que puede usar después de seleccionar un recurso (por ejemplo, una carpeta o un fragmento de contenido).
 
 Las Acciones rápidas están disponibles para un único recurso, consulte **Basilea** en el ejemplo siguiente:
 
@@ -79,7 +79,7 @@ Las Acciones rápidas están disponibles para un único recurso, consulte **Basi
 
 La barra de herramientas de acciones proporciona acceso a toda la gama de acciones, aplicables al escenario actual. Las acciones disponibles pueden cambiar, por ejemplo, en función de su ubicación o de si ha seleccionado varios recursos:
 
-![Barra de herramientas Acción](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+![Barra de herramientas de acciones](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
 Puede seleccionar el formato para ver los recursos con el Selector de vista:
 
@@ -87,7 +87,7 @@ Puede seleccionar el formato para ver los recursos con el Selector de vista:
 
 Puede ver información adicional sobre los elementos mediante el Selector de carril. Esto también proporciona acceso a acciones adicionales.
 
-![Carril izquierdo](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+![Carril Izquierdo](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
 
 ## Creación de fragmentos de contenido {#authoring-content-fragments}
 
@@ -101,7 +101,7 @@ A menos que tenga muy pocos fragmentos de contenido, querrá organizarlos para q
 
 #### Creación de una carpeta {#creating-folder}
 
-Para ello, cree una serie de carpetas en **Archivos** de la consola Recursos. Seleccione la opción **Crear** (parte superior derecha), seguido de **Carpeta**:
+Puede hacerlo creando una serie de carpetas en la sección **Files** de la consola de Assets. Seleccione la opción **Crear** (parte superior derecha), seguido de **Carpeta**:
 
 ![Opción Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -129,7 +129,7 @@ A continuación, desplácese por estas carpetas para crear y editar los fragment
 
 Por si acaso...
 
-Probablemente, se le dará una carpeta inicial donde podrá crear sus carpetas. Así es como deben aplicarse algunos detalles de configuración (normalmente por un desarrollador o administrador del sistema) a la carpeta raíz. Esto probablemente no le interese, pero si es necesario puede consultar la **Configuración** en el **Cloud Service** de la carpeta **Propiedades**:
+Probablemente, se le dará una carpeta inicial donde podrá crear sus carpetas. Así es como deben aplicarse algunos detalles de configuración (normalmente por un desarrollador o administrador del sistema) a la carpeta raíz. Probablemente no le interese, pero si es necesario, puede comprobar la **Configuración** en los **Cloud Service** de la carpeta **Propiedades**:
 
 ![Propiedades de Crear carpeta: configuración](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -139,23 +139,23 @@ Probablemente, se le dará una carpeta inicial donde podrá crear sus carpetas. 
 
 ### Creación de un fragmento de contenido {#creating-fragment}
 
-La creación de un fragmento de contenido es muy similar: solo tiene que usar el **Fragmento de contenido** en su lugar:
+La creación de un fragmento de contenido es muy similar: solo tiene que usar la opción **Fragmento de contenido**:
 
 ![Opción Crear fragmento de contenido](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
 Esta vez se abre un asistente. El primer paso es seleccionar el Modelo de fragmento de contenido en el que se basará el fragmento:
 
-![Crear fragmento de contenido: seleccionar modelo](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+![Crear fragmento de contenido - seleccionar modelo](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Después de continuar con **Siguiente** puede proporcionar los detalles (**Básico** y **Avanzadas**) para el fragmento:
+Después de continuar con **Siguiente**, puedes proporcionar los detalles (**Básico** y **Avanzado**) para tu fragmento:
 
 ![Crear fragmento de contenido: proporcionar nombre](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-Confirmar con **Crear** y entonces puede **Abrir** Seleccione el fragmento en el editor.
+Confirma con **Crear** y podrás **abrir** tu fragmento en el editor.
 
 ### Edición de un fragmento {#editing-fragment}
 
-Puede abrir un fragmento inmediatamente después de crearlo o seleccionarlo en la consola Recursos.
+Puede abrir un fragmento inmediatamente después de crearlo o seleccionarlo en la consola de Assets.
 
 Cuando se abra el editor por primera vez, verá lo siguiente:
 
@@ -220,7 +220,7 @@ Los modelos de fragmento de contenido son vitales para los fragmentos de conteni
 
 Una vez completado el fragmento, puede **Publicarlo** para que esté disponible para las aplicaciones sin encabezado.
 
-Las acciones de publicación están disponibles en el editor (o en la barra de herramientas del **Assets** consola):
+Las acciones de publicación están disponibles en el editor (o en la barra de herramientas de la consola **Assets**):
 
 ![Editor de fragmentos de contenido: mi fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -265,7 +265,7 @@ Ahora que ha aprendido lo básico, el siguiente paso es [Obtener información so
       * [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * Guías de introducción
-   * [Guía de inicio rápido Creación de una carpeta de recursos sin encabezado](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [Guía de inicio rápido Creación de una carpeta de Assets sin encabezado](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Recorrido para arquitectos de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
 

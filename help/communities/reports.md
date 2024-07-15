@@ -29,7 +29,7 @@ En general, los distintos informes son:
 
   Proporciona un gráfico de vistas del contenido realizadas por los miembros de la comunidad y los visitantes del sitio para cualquier sitio de la comunidad.
 
-* [Informe de anuncios](#posts-report)
+* [Informe de entradas](#posts-report)
 
   Proporciona un gráfico de varios tipos de publicaciones realizadas por los miembros de la comunidad en cualquier sitio de la comunidad.
 
@@ -39,7 +39,7 @@ Los informes tabulares se pueden exportar en formato .csv para su posterior proc
 
 ### Informes de sitios de la comunidad {#reports-for-community-sites}
 
-* Desde la navegación global: **[!UICONTROL Navegación]** > **[!UICONTROL Communities]** >  **[!UICONTROL Informes]**
+* Desde la navegación global: **[!UICONTROL Navegación]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Informes]**
 
 * Elija entre:
 
@@ -47,7 +47,7 @@ Los informes tabulares se pueden exportar en formato .csv para su posterior proc
 
       * Genere un informe para el sitio, el usuario o el grupo y la asignación de la comunidad seleccionados.
 
-   * **[!UICONTROL Informe de anuncios]**
+   * **[!UICONTROL Informe de entradas]**
 
       * Genere un informe para el sitio de la comunidad, el tipo de contenido y el período de tiempo seleccionados.
 
@@ -61,7 +61,7 @@ Los informes tabulares se pueden exportar en formato .csv para su posterior proc
 
 La consola Vistas permite que las funciones de la comunidad generen informes en las vistas de página durante un período de tiempo determinado.
 
-![view-report](assets/view-report.png)
+![informe de vista](assets/view-report.png)
 
 Seleccione los criterios del informe:
 
@@ -73,7 +73,7 @@ Seleccione los criterios del informe:
 
   Puede elegir Todo el contenido o seleccionar una de las funciones que están presentes en el sitio.
 
-* **[!UICONTROL Lapso de tiempo]**
+* **[!UICONTROL Periodo de tiempo]**
 
   Seleccione una de las siguientes opciones:
 
@@ -82,7 +82,7 @@ Seleccione los criterios del informe:
    * Últimos 90 días
    * Año pasado
 
-Seleccionar **[!UICONTROL Generar]** para crear el informe.
+Seleccione **[!UICONTROL Generar]** para crear el informe.
 
 ![generate-views](assets/generate-views.png)
 
@@ -90,7 +90,7 @@ Seleccionar **[!UICONTROL Generar]** para crear el informe.
 
 La consola Publicaciones permite generar informes sobre el número de publicaciones en las funciones de la comunidad durante un período de tiempo determinado.
 
-![post-report](assets/posts-report.png)
+![posts-report](assets/posts-report.png)
 
 Seleccione los criterios del informe:
 
@@ -102,7 +102,7 @@ Seleccione los criterios del informe:
 
   Puede elegir Todo el contenido o seleccionar una de las funciones que están presentes en el sitio.
 
-* **[!UICONTROL Lapso de tiempo]**
+* **[!UICONTROL Periodo de tiempo]**
 
   Seleccione una de las siguientes opciones:
 
@@ -111,9 +111,9 @@ Seleccione los criterios del informe:
    * Últimos 90 días
    * Año pasado
 
-Seleccionar **[!UICONTROL Generar]** para crear el informe.
+Seleccione **[!UICONTROL Generar]** para crear el informe.
 
-![generate-report](assets/generate-posts-report.png)
+![generar-informe](assets/generate-posts-report.png)
 
 ## Resolución de problemas {#troubleshooting}
 
@@ -123,6 +123,6 @@ Si no aparece ningún sitio de la comunidad, asegúrese de que Adobe Analytics s
 
 ### AEM Los informes no se muestran en instancia de autor {#reports-do-not-show-in-aem-author-instance}
 
-AEM Si los informes no se muestran en la instancia de autor de la, compruebe las personalizaciones, como la asignación de URL en la instancia de publicación. AEM AEM Si la asignación de URL solo se realiza en la instancia de publicación de la comunidad del sitio de comunidades, asegúrese de que se haya configurado la misma en la instancia de autor de la en **Fábrica de componentes sociales de informe de tendencias del sitio** configuración.
+AEM Si los informes no aparecen en la instancia de autor de la, compruebe las personalizaciones, como la asignación de URL en la instancia de Publish. AEM Si la asignación de direcciones URL solo se realiza en la instancia de Publish AEM de la comunidad de, asegúrese de que se haya configurado lo mismo en la instancia de autor de la comunidad en la configuración de **Fábrica de componentes sociales de informe de tendencias del sitio**.
 
-![AEM Asignación de URL en el autor del](assets/sitetrend.png)
+AEM ![Asignación de URL en el autor de la](assets/sitetrend.png)

@@ -63,7 +63,7 @@ Las tareas asignadas a un grupo aparecen en la bandeja de entrada de todos los m
 Al abrir una tarea, puede ver los detalles de la tarea y realizar las acciones disponibles. Las acciones disponibles para una tarea se definen en la Etapa de tarea de asignación del flujo de trabajo del formulario asociado.
 
 1. Seleccione para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea seleccionada aparecen en la parte superior.
-1. Seleccionar **Abrir** para ver los detalles de la tarea. Se abre la vista de tareas detallada. En esta vista, puede ver los detalles de la tarea y trabajar en ella.
+1. Seleccione **Abrir** para ver los detalles de la tarea. Se abre la vista de tareas detallada. En esta vista, puede ver los detalles de la tarea y trabajar en ella.
 
    >[!NOTE]
    >

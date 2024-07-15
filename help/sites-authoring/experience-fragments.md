@@ -33,7 +33,7 @@ Puede utilizar los fragmentos de experiencias:
 
 * Si un autor desea reutilizar partes (un fragmento de una experiencia) de una página, debe copiar y pegar ese fragmento. Crear y mantener estas experiencias de copia y pegado es un proceso laborioso y es posible que el usuario cometa errores. Los fragmentos de experiencias eliminan la necesidad de copiar y pegar.
 * Para admitir el caso práctico de CMS sin encabezado. Los autores quieren utilizar AEM solo para la creación, pero no para la entrega al cliente. Un punto de contacto o sistema de terceros consumiría esa experiencia y luego la entregaría al usuario final.
-* Con [Administración de varios sitios (MSM)](/help/sites-administering/msm.md); como fragmento de experiencia forma parte de una página. Esto se aplica tanto a los fragmentos individuales como a las carpetas en las que residen.
+* Con [Multi Site Management (MSM)](/help/sites-administering/msm.md); como fragmento de experiencia forma parte de una página. Esto se aplica tanto a los fragmentos individuales como a las carpetas en las que residen.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Los fragmentos de experiencias deben usarse en las siguientes situaciones:
 
 * Al utilizar el comercio omnicanal.
 
-   * Uso compartido de contenido comercial en [medios sociales](/help/sites-developing/experience-fragments.md#social-variations) canales a escala
+   * Compartir contenido relacionado con el comercio en [medios sociales](/help/sites-developing/experience-fragments.md#social-variations) canales a escala
    * Hacer transaccionales los puntos de contacto
 
 ## Organización de los fragmentos de experiencias {#organizing-your-experience-fragments}
@@ -177,7 +177,7 @@ Para crear un fragmento de experiencia:
 
 1. Introduzca las **propiedades** del **fragmento de experiencia**.
 
-   Es obligatorio escribir un **título**. Si la variable **Nombre** si se deja en blanco, se derivará del **Título**.
+   Es obligatorio escribir un **título**. Si se deja **Name** en blanco, se derivará del **Title**.
 
    ![xf-04](assets/xf-04.png)
 
@@ -205,11 +205,11 @@ El editor de fragmentos de experiencias ofrece funcionalidades similares a las d
 
 El siguiente procedimiento de ejemplo ilustra cómo crear un teaser para un producto:
 
-1. Arrastrar y soltar una **Teaser** desde el [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Arrastre y suelte un **Teaser** desde el [Explorador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-05](assets/xf-05.png)
 
-1. Seleccionar **[Configurar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** en la barra de herramientas de componentes.
+1. Seleccione **[Configurar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** en la barra de herramientas de componentes.
 1. Agregue el **recurso** y defina las **propiedades** según sea necesario.
 1. Confirme las definiciones con **Listo** (icono del tic).
 1. Agregue más componentes según sea necesario.
@@ -223,26 +223,26 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **Crear** permite crear:
+1. **Crear** le permite crear:
 
    * **Variación**
-   * **Variación como [live-copy](/help/sites-administering/msm.md#live-copies)**.
+   * **Variación como [Live Copy](/help/sites-administering/msm.md#live-copies)**.
 
      >[!NOTE]
      >
-     >Al crear una variación inicial como Live Copy, se heredará el título utilizando el origen de Live Copy como variación principal.
+     >Al crear una variación inicial como Live Copy, se heredará el título mediante Live Copy Source como variación principal.
 
 1. Defina las propiedades necesarias:
 
    * **Plantilla**
    * **Título**
-   * **Nombre**; si se deja en blanco, se deriva del Título
+   * **Nombre**; si se deja en blanco, se derivará del Título
    * **Descripción**
    * **Etiquetas de variación**
 
    ![xf-06](assets/xf-06.png)
 
-1. Confirmar con **Listo** (icono del tic), la nueva variación se muestra en el panel:
+1. Confirme con **Listo** (icono del tic), la nueva variación se mostrará en el panel:
 
    ![xf-07](assets/xf-07.png)
 
@@ -264,8 +264,8 @@ Ahora puede utilizar el fragmento de experiencia para crear páginas:
 
 1. Agregue el fragmento de experiencia real a la instancia de componente; o bien:
 
-   * Arrastre el fragmento necesario desde el Explorador de recursos y suéltelo en el componente
-   * Seleccionar **Configurar** en la barra de herramientas de componentes y especifique el fragmento que desea utilizar, confirme con **Listo** (marca)
+   * Arrastre el fragmento necesario desde el explorador Assets y suéltelo en el componente
+   * Seleccione **Configurar** en la barra de herramientas de componentes y especifique el fragmento que desea utilizar. Confirme con **Listo** (marca)
 
    ![xf-09](assets/xf-09.png)
 
@@ -293,7 +293,7 @@ Para crear un bloque de creación:
 
    ![xf-11](assets/xf-11.png)
 
-1. El **Bloque de creación** se muestra en la pestaña y se puede seleccionar en el sistema de párrafos:
+1. El **bloque de creación** se muestra en la pestaña y se puede seleccionar en el sistema de párrafos:
 
    ![xf-12](assets/xf-12.png)
 
@@ -343,7 +343,7 @@ Se pueden ver los detalles del fragmento:
       * **Número total de variantes**: solo información
 
       * **Número de variantes web**: solo información
-      * **Número de variantes no web** - inf **Solo formación**
+      * **Número de variantes que no son de web** - solo inf **formación**
 
       * **Número de páginas que utilizan este fragmento**: solo información
 

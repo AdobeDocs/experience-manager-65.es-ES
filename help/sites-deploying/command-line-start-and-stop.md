@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Iniciar Adobe Experience Manager desde la línea de comandos {#starting-adobe-experience-manager-from-the-command-line}
 
-El `start` El script está disponible en *el &lt;cq-installation>/bin* directorio. Se proporcionan las versiones UNIX® y Windows. La secuencia de comandos inicia la instancia instalada en *&lt;cq-installation>* directorio.
+El script `start` está disponible en *el directorio &lt;cq-installation>/bin*. Se proporcionan las versiones UNIX® y Windows. El script inicia la instancia instalada en el directorio *&lt;cq-installation>*.
 
 Estas dos versiones admiten una lista de variables de entorno que pueden utilizarse para iniciar y ajustar la instancia de Adobe Experience Manager AEM ().
 
@@ -32,7 +32,7 @@ Estas dos versiones admiten una lista de variables de entorno que pueden utiliza
   </tr>
   <tr>
    <td>CQ_PORT</td>
-   <td>Puerto TCP utilizado para secuencias de comandos de estado y detención<br /> </td>
+   <td>Puerto TCP utilizado para los scripts de estado y detención <br /> </td>
   </tr>
   <tr>
    <td>CQ_HOST</td>
@@ -40,15 +40,15 @@ Estas dos versiones admiten una lista de variables de entorno que pueden utiliza
   </tr>
   <tr>
    <td>CQ_INTERFACE</td>
-   <td>Interfaz que este servidor debe escuchar<br /> </td>
+   <td>Interfaz que este servidor debe escuchar <br /> </td>
   </tr>
   <tr>
    <td>CQ_RUNMODE</td>
-   <td>Modos de ejecución separados por comas<br /> </td>
+   <td>Modos de ejecución separados por comas <br /> </td>
   </tr>
   <tr>
    <td>CQ_JARFILE</td>
-   <td>Nombre del archivo jar<br /> </td>
+   <td>Nombre del archivo jarr<br /> </td>
   </tr>
   <tr>
    <td>CQ_USE_JAS</td>
@@ -56,7 +56,7 @@ Estas dos versiones admiten una lista de variables de entorno que pueden utiliza
   </tr>
   <tr>
    <td>CQ_JAS_CONFIG</td>
-   <td>Ruta de la configuración de JAAS<br /> </td>
+   <td>Ruta de acceso de la configuración de JAAS <br /> </td>
   </tr>
   <tr>
    <td>CQ_JVM_OPTS</td>
@@ -67,7 +67,7 @@ Estas dos versiones admiten una lista de variables de entorno que pueden utiliza
 
 >[!CAUTION]
 >
->AEM Algunos modos de ejecución, entre ellos autor y publicación, deben configurarse antes de comenzar la ejecución por primera vez y no se pueden cambiar posteriormente. AEM Antes de configurar una instancia de que se utilice en la producción, consulte [documentación sobre los modos de ejecución](/help/sites-deploying/configure-runmodes.md) para obtener más información.
+>AEM Algunos modos de ejecución, entre ellos autor y publicación, deben configurarse antes de comenzar la ejecución por primera vez y no se pueden cambiar posteriormente. AEM Antes de configurar una instancia de que se usa en la producción, consulte [documentación sobre los modos de ejecución](/help/sites-deploying/configure-runmodes.md) para obtener más información.
 
 ### Ejemplo de script start.bat de la plataforma Windows {#windows-platform-start-bat-script-example}
 
@@ -83,7 +83,7 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->AEM La secuencia de comandos de inicio inicia el inicio rápido de la aplicación instalado en *el &lt;cq-installation>/app* carpeta.
+>AEM El script de inicio inicia el inicio rápido de la aplicación instalado en la carpeta &lt;cq-installation>/app *de*.
 
 ## Detención de Adobe Experience Manager {#stopping-adobe-experience-manager}
 
@@ -91,16 +91,16 @@ AEM Para detener la, siga uno de estos procedimientos:
 
 * Según la plataforma que utilice:
 
-   * AEM Si ha empezado a utilizar el comando desde una secuencia de comandos o desde la línea de comandos, pulse **Ctrl + C** para apagar el servidor.
+   * AEM Si ha iniciado el proceso desde un script o desde la línea de comandos, presione **Ctrl+C** para apagar el servidor.
    * AEM Si ha utilizado la secuencia de comandos de inicio en UNIX®, debe utilizar la secuencia de comandos de detención para detener la ejecución de los programas de la aplicación de la.
 
-* AEM Si ha empezado a hacer clic en el archivo jar, haga clic en el botón de la barra de herramientas. **Activado** en la ventana de inicio (el botón cambia a **Desactivado**) para apagar el servidor.
+* AEM Si ha empezado a hacer clic en el archivo jar, haga clic en el botón **Activar** de la ventana de inicio (el botón cambia a **Desactivar**) para cerrar el servidor.
 
   ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ## Detención de Adobe Experience Manager desde la línea de comandos {#stopping-adobe-experience-manager-from-the-command-line}
 
-El `stop` El script está disponible en *el &lt;cq-installation>/bin* directorio. Se proporcionan las versiones UNIX® y Windows. El script detiene la instancia en ejecución instalada en *&lt;cq-installation>* directorio.
+El script `stop` está disponible en *el directorio &lt;cq-installation>/bin*. Se proporcionan las versiones UNIX® y Windows. El script detiene la instancia en ejecución instalada en el directorio *&lt;cq-installation>*.
 
 ### Ejemplo de script de detención de plataforma UNIX® {#unix-platform-stop-script-example}
 
@@ -116,7 +116,7 @@ El `stop` El script está disponible en *el &lt;cq-installation>/bin* directorio
 
 Si solo desea preconfigurar el repositorio (sin reubicarlo), solo tiene que:
 
-* Extract `repository.xml` a la ubicación requerida
+* Extraer `repository.xml` a la ubicación requerida
 
 * actualizar `repository.xml` según sea necesario
 

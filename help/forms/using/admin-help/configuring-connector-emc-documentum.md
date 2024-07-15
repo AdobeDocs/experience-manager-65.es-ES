@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Configurar Connector para Documentum de EMC {#configuring-connector-for-emc-documentum}
 
-AEM Connector para EMC Documentum permite la comunicación entre formularios de la aplicación y EMC Documentum. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
+AEM Connector para EMC Documentum permite la comunicación entre formularios de la aplicación y EMC Documentum. Para obtener información adicional, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
 La configuración de Connector para Documentum de EMC implica la configuración de la conexión del servidor y las credenciales del repositorio.
 
@@ -60,7 +60,7 @@ Si escribe un nombre de usuario o una contraseña incorrectos, obtendrá los sig
 
 Puede configurar qué proveedor de servicios de repositorio utilizar con Documentum. Las llamadas al servicio del repositorio se delegan al proveedor que configure. Las opciones disponibles son las siguientes:
 
-**Nombre del proveedor de servicios del repositorio actual:** El nombre del proveedor de servicios del repositorio actual
+**Nombre actual del proveedor de servicios del repositorio:** Nombre del proveedor de servicios del repositorio actual
 
 **Proveedor del repositorio de Documentum de ECM:** Convierte al proveedor del repositorio de Documentum en el proveedor del repositorio. Esta opción ha quedado obsoleta
 
@@ -102,7 +102,7 @@ Si se están ejecutando el servicio Content Repository Connector for EMC Documen
 
 Si se están ejecutando el servicio Content Repository Connector for EMC Documentum o el servicio Repository Service for EMC Documentum, la información de credenciales se comprueba con el repositorio especificado antes de almacenarse en la base de datos. Si las credenciales no son válidas o existen, se muestra un mensaje de error.
 
-## Habilitar la solicitud para compartir las colas de tareas de Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
+## Habilitar la solicitud para compartir colas de tareas de Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
 
 Se requieren algunos pasos manuales para garantizar que la función Solicitud de uso compartido de colas de tareas de Workspace funcione correctamente con Connector para Documentum de EMC.
 

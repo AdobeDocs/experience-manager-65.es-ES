@@ -70,15 +70,15 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 
    1. Seleccione **Modelo de datos de formulario** de la sección **Modelo de datos**.
 
-   1. Seleccionar **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
+   1. Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
 
    1. Seleccione **Siguiente**.
 
-1. Seleccione el **Variables** en el panel izquierdo y seleccione **Crear**.
+1. Seleccione la ficha **Variables** en el panel izquierdo y seleccione **Crear**.
 1. En la sección **Crear variable**:
 
    1. Escriba **Invoicenumber** como nombre de la variable.
-   1. Seleccionar **Cadena** como el tipo.
+   1. Seleccione **Cadena** como tipo.
    1. Seleccione **Crear**.
 
    ![Crear variable de tipo Cadena](assets/variable_create_string_new.png)
@@ -107,7 +107,7 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
-1. Clic **Guardar** para crear el fragmento de documento Detalles de la factura.
+1. Haga clic en **Guardar** para crear el fragmento de documento Detalles de la factura.
 
 ## Paso 2: Crear fragmento de documento Detalles del cliente {#step-create-customer-details-text-document-fragment}
 
@@ -134,15 +134,15 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 
    1. Seleccione **Modelo de datos de formulario** de la sección **Modelo de datos**.
 
-   1. Seleccionar **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
+   1. Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
 
    1. Seleccione **Siguiente**.
 
-1. Seleccione el **Variables** en el panel izquierdo y seleccione **Crear**.
+1. Seleccione la ficha **Variables** en el panel izquierdo y seleccione **Crear**.
 1. En la sección **Crear variable**:
 
    1. Escriba **Placesupply** como nombre de la variable.
-   1. Seleccionar **Cadena** como el tipo.
+   1. Seleccione **Cadena** como tipo.
    1. Seleccione **Crear**.
 
    Repita los pasos 4 y 5 para crear las siguientes variables:
@@ -172,7 +172,7 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 
    ![Detalles del cliente](assets/customer_details_df2_new.png)
 
-1. Clic **Guardar** para crear el fragmento de documento Detalles del cliente.
+1. Haga clic en **Guardar** para crear el fragmento de documento de texto Detalles del cliente.
 
 ## Paso 3: Crear fragmento de documento Resumen de la factura {#step-create-bill-summary-text-document-fragment}
 
@@ -197,11 +197,11 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 
    1. Seleccione **Modelo de datos de formulario** de la sección **Modelo de datos**.
 
-   1. Seleccionar **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
+   1. Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
 
    1. Seleccione **Siguiente**.
 
-1. Seleccione el **Variables** en el panel izquierdo y seleccione **Crear**.
+1. Seleccione la ficha **Variables** en el panel izquierdo y seleccione **Crear**.
 1. En la sección **Crear variable**:
 
    1. Escriba **Saldo anterior** como nombre de la variable.
@@ -236,7 +236,7 @@ Para crear variables para campos con la interfaz de usuario del agente como fuen
 
    ![Resumen de la factura](assets/bill_summary_static_variables_new.png)
 
-1. Clic **Guardar** para crear el fragmento de documento Detalles del cliente.
+1. Haga clic en **Guardar** para crear el fragmento de documento de texto Detalles del cliente.
 
 ## Paso 4: Crear fragmento de documento Resumen de gastos {#step-create-summary-of-charges-text-document-fragment}
 
@@ -264,7 +264,7 @@ Para crear texto estático y utilizar elementos del modelo de datos de formulari
 
    1. Seleccione **Modelo de datos de formulario** de la sección **Modelo de datos**.
 
-   1. Seleccionar **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
+   1. Seleccione **FDM_Create_First_IC** como modelo de datos de formulario y seleccione **Seleccionar**.
 
    1. Seleccione **Siguiente**.
 
@@ -295,7 +295,7 @@ Para crear texto estático y utilizar elementos del modelo de datos de formulari
 
    ![Resumen de gastos](assets/summary_charges_static_fdm_new.png)
 
-1. Seleccione el texto en la **Cargos por servicios de valor agregado** fila y seleccione **Crear regla** para crear una condición basada en la que se muestra la fila en la comunicación interactiva:
+1. Seleccione el texto de la fila **Gastos por servicios de valor agregado** y seleccione **Crear regla** para crear una condición basada en la cual se muestre la fila en la comunicación interactiva:
 1. En la ventana emergente **Crear regla**:
 
    1. Seleccione **Modelos y variables de datos** y luego **facturas** > **callcharges**.
@@ -307,4 +307,4 @@ Para crear texto estático y utilizar elementos del modelo de datos de formulari
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
-1. Clic **Guardar** para crear el fragmento de documento Resumen de gastos.
+1. Haga clic en **Guardar** para crear el fragmento de documento Resumen de gastos.

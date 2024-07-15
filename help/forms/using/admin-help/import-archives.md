@@ -39,12 +39,12 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 1. Si hace clic en Configurar, aparecerá la página Configurar puntos de conexión, donde podrá realizar los cambios necesarios:
 
    * Para cambiar el nombre de un extremo o editar su descripción, haga clic en él.
-   * Para agregar un extremo del Administrador de tareas, haga clic en Agregar Administrador de tareas. Para obtener más información sobre la configuración del Administrador de tareas, consulte [Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Para agregar un punto final de carpeta inspeccionada, haga clic en Agregar carpeta inspeccionada. Para obtener más información sobre la configuración de la carpeta inspeccionada, consulte [Configuración del extremo de carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Para añadir un extremo de correo electrónico, haga clic en Añadir correo electrónico. Para obtener más información sobre la configuración de correo electrónico, consulte [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Para agregar un extremo del Administrador de tareas, haga clic en Agregar Administrador de tareas. Para obtener detalles acerca de la configuración del Administrador de tareas, vea [Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Para agregar un punto final de carpeta inspeccionada, haga clic en Agregar carpeta inspeccionada. Para obtener más información acerca de la configuración de la carpeta inspeccionada, consulte [Configuración del extremo de la carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Para añadir un extremo de correo electrónico, haga clic en Añadir correo electrónico. Para obtener más información acerca de la configuración de correo electrónico, consulte [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para agregar un extremo de EJB, haga clic en Agregar EJB y especifique un nombre y una descripción para el extremo.
    * SOAP SOAP Para agregar un punto final de, haga clic en Agregar y especifique un nombre y una descripción para el punto final.
-   * Para agregar un extremo Remoting, haga clic en Agregar Remoting. Para obtener detalles acerca de la configuración de Remoting, consulte [Configuración del extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Para agregar un extremo Remoting, haga clic en Agregar Remoting. Para obtener detalles acerca de la configuración de Remoting, consulte [Configuración de extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para agregar un extremo REST, haga clic en Agregar REST y especifique un nombre y una descripción para el extremo. Tenga en cuenta la URL de invocación de REST que se muestra en la página Agregar extremo de REST.
    * Para quitar un extremo, seleccione la casilla que hay junto a él y haga clic en Quitar.
 
@@ -54,17 +54,17 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 
    * **Requerir que los llamadores se autentiquen:** Esta configuración indica si el servicio se puede invocar con o sin credenciales.
 
-     If *Actualmente, se requiere la autenticación de los llamadores* se muestra, el llamador del servicio debe estar autenticado y el principal de usuario de ese llamador debe estar autorizado para invocar el servicio; de lo contrario, se rechazará el intento de invocación. Para eliminar la necesidad de autenticarse, haga clic en Permitir llamadores no autenticados.
+     Si se muestran *los llamadores que deben autenticarse* en este momento, el llamador del servicio debe estar autenticado y la entidad de seguridad del usuario para ese llamador debe estar autorizada para invocar el servicio; de lo contrario, se rechazará el intento de invocación. Para eliminar la necesidad de autenticarse, haga clic en Permitir llamadores no autenticados.
 
-     If *No es necesario que los llamadores se autentiquen* se muestra, no es necesario autenticar al llamador del servicio. La invocación del servicio siempre se realizará correctamente porque no hay ninguna comprobación de autorización. Para requerir autenticación, haga clic en Requerir que los llamadores se autentiquen.
+     Si se muestra *No se requiere que los llamadores se autentiquen*, no es necesario autenticar al llamador del servicio. La invocación del servicio siempre se realizará correctamente porque no hay ninguna comprobación de autorización. Para requerir autenticación, haga clic en Requerir que los llamadores se autentiquen.
 
    * **Ejecutar como:** Especifica la identidad en tiempo de ejecución utilizada por un servicio después de invocarlo. Para cambiar esta opción, haga clic en Cambiar. Elija entre las siguientes opciones:
 
-     **No especificado:** Se utiliza el comportamiento predeterminado.
+     **Sin especificar:** Se usa el comportamiento predeterminado.
 
-     **Invocador:** Utiliza la misma identidad que el usuario que invocó el servicio.
+     **Invocador:** Usa la misma identidad que el usuario que invocó el servicio.
 
-     **Sistema:** Ejecuta el servicio con privilegios completos. Esta es la configuración predeterminada para procesos de larga duración.
+     **Sistema:** ejecuta el servicio con privilegios completos. Esta es la configuración predeterminada para procesos de larga duración.
 
      **Usuario designado:** Permite ejecutar el servicio como un usuario específico. Esta es la configuración predeterminada para procesos de corta duración. Cuando seleccione esta opción, haga clic en Seleccionar usuario para mostrar la página Seleccionar principal, donde puede buscar y seleccionar al usuario.
 
@@ -82,7 +82,7 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 
      **CREATE_VERSION_PERM:** Para crear una versión del servicio
 
-     **DELETE_VERSIÓN_PERM:** Para eliminar una versión del servicio
+     **DELETE_VERSION_PERM:** Para eliminar una versión del servicio
 
      **MODIFY_VERSION_PERM:** Para modificar una versión del servicio
 
@@ -106,12 +106,12 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 1. Aparecerá la página Configurar extremos, donde podrá realizar los cambios que necesite:
 
    * Para cambiar el nombre de un extremo o editar su descripción, haga clic en él.
-   * Para agregar un extremo del Administrador de tareas, haga clic en Agregar Administrador de tareas. Para obtener más información sobre la configuración del Administrador de tareas, consulte [Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Para agregar un punto final de carpeta inspeccionada, haga clic en Agregar carpeta inspeccionada. Para obtener más información sobre la configuración de la carpeta inspeccionada, consulte [Configuración del extremo de carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Para añadir un extremo de correo electrónico, haga clic en Añadir correo electrónico. Para obtener más información sobre la configuración de correo electrónico, consulte [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Para agregar un extremo del Administrador de tareas, haga clic en Agregar Administrador de tareas. Para obtener detalles acerca de la configuración del Administrador de tareas, vea [Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Para agregar un punto final de carpeta inspeccionada, haga clic en Agregar carpeta inspeccionada. Para obtener más información acerca de la configuración de la carpeta inspeccionada, consulte [Configuración del extremo de la carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Para añadir un extremo de correo electrónico, haga clic en Añadir correo electrónico. Para obtener más información acerca de la configuración de correo electrónico, consulte [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para agregar un extremo de EJB, haga clic en Agregar EJB y especifique un nombre y una descripción para el extremo.
    * SOAP SOAP Para agregar un punto final de, haga clic en Agregar y especifique un nombre y una descripción para el punto final.
-   * Para agregar un extremo Remoting, haga clic en Agregar Remoting. Para obtener detalles acerca de la configuración de Remoting, consulte [Configuración del extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Para agregar un extremo Remoting, haga clic en Agregar Remoting. Para obtener detalles acerca de la configuración de Remoting, consulte [Configuración de extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para agregar un extremo REST, haga clic en Agregar REST y especifique un nombre y una descripción para el extremo. Tenga en cuenta la URL de invocación de REST que se muestra en la página Agregar extremo de REST.
    * Para quitar un extremo, seleccione la casilla que hay junto a él y haga clic en Quitar.
 
@@ -121,17 +121,17 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 
    * **Requerir que los llamadores se autentiquen:** Esta configuración indica si el servicio se puede invocar con o sin credenciales.
 
-     If *Actualmente, se requiere la autenticación de los llamadores* se muestra, el llamador del servicio debe estar autenticado y el principal de usuario de ese llamador debe estar autorizado para invocar el servicio; de lo contrario, se rechazará el intento de invocación. Para eliminar la necesidad de autenticarse, haga clic en Permitir llamadores no autenticados.
+     Si se muestran *los llamadores que deben autenticarse* en este momento, el llamador del servicio debe estar autenticado y la entidad de seguridad del usuario para ese llamador debe estar autorizada para invocar el servicio; de lo contrario, se rechazará el intento de invocación. Para eliminar la necesidad de autenticarse, haga clic en Permitir llamadores no autenticados.
 
-     If *No es necesario que los llamadores se autentiquen* se muestra, el llamador del servicio puede o no estar autenticado. La invocación del servicio siempre se realizará correctamente porque no hay ninguna comprobación de autorización. Para requerir autenticación, haga clic en Requerir que los llamadores se autentiquen.
+     Si se muestra *No se requiere que los llamadores se autentiquen*, el llamador del servicio puede o no estar autenticado. La invocación del servicio siempre se realizará correctamente porque no hay ninguna comprobación de autorización. Para requerir autenticación, haga clic en Requerir que los llamadores se autentiquen.
 
    * **Ejecutar como:** Especifica la identidad en tiempo de ejecución utilizada por un servicio después de invocarlo. Para cambiar esta opción, haga clic en Cambiar. Elija entre las siguientes opciones:
 
-     **No especificado:** Se utiliza el comportamiento predeterminado.
+     **Sin especificar:** Se usa el comportamiento predeterminado.
 
-     **Invocador:** Utiliza la misma identidad que el usuario que invocó el servicio.
+     **Invocador:** Usa la misma identidad que el usuario que invocó el servicio.
 
-     **Sistema:** Ejecuta el servicio con privilegios completos. Esta es la configuración predeterminada para procesos de larga duración.
+     **Sistema:** ejecuta el servicio con privilegios completos. Esta es la configuración predeterminada para procesos de larga duración.
 
      **Usuario designado:** Permite ejecutar el servicio como un usuario específico. Esta es la configuración predeterminada para procesos de corta duración. Cuando seleccione esta opción, haga clic en Seleccionar usuario para mostrar la página Seleccionar principal, donde puede buscar y seleccionar al usuario.
 
@@ -149,7 +149,7 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 
      **CREATE_VERSION_PERM:** Para crear una versión del servicio
 
-     **DELETE_VERSIÓN_PERM:** Para eliminar una versión del servicio
+     **DELETE_VERSION_PERM:** Para eliminar una versión del servicio
 
      **MODIFY_VERSION_PERM:** Para modificar una versión del servicio
 

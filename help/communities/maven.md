@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Esta sección de la documentación de las Comunidades de Adobe Experience Manager AEM () se suma a lo siguiente:
 
-* [AEM Creación de proyectos de con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* AEM [Creación de proyectos de mediante Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Solo hay un artefacto &quot;uber&quot; que reemplaza artefactos individuales:
 
-* AEM [JAR de API de Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [JAR de API de Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar) de la
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Solo hay un artefacto &quot;uber&quot; que reemplaza artefactos individuales:
 >
 >Manténgase al día con la última versión de Communities.
 >
->Consulte la [Últimas versiones](deploy-communities.md#latest-releases) sección en la que se puede identificar la versión más reciente.
+>Consulte la sección [Últimas versiones](deploy-communities.md#latest-releases), donde podrá identificar la versión más reciente.
 
 ## Ejemplo de dependencia de Maven {#maven-dependency-example}
 
@@ -49,7 +49,7 @@ Solo hay un artefacto &quot;uber&quot; que reemplaza artefactos individuales:
 
 >[!NOTE]
 >
->Consulte la [AEM Repositorio jar de Uber](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) donde puede identificar el último artefacto de Uber jar.
+>AEM Consulte el [repositorio jar de Uber ](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar)donde puede identificar el último artefacto jar de Uber.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

@@ -32,9 +32,9 @@ Adobe Experience Manager AEM AEM () es una parte integral de los formularios de 
 
 AEM La estrategia de copia de seguridad de formularios incluye dos tipos de copias de seguridad:
 
-**Imagen del sistema:** Una copia de seguridad completa del sistema que puede utilizar para restaurar el contenido del equipo si el disco duro o todo el equipo deja de funcionar. AEM Una copia de seguridad de imagen del sistema solo es necesaria antes de la implementación de producción de los formularios de. Las políticas corporativas internas dictan con qué frecuencia se requieren los backups de imágenes del sistema.
+**Imagen del sistema:** Copia de seguridad completa del sistema que puede usar para restaurar el contenido del equipo si el disco duro o todo el equipo deja de funcionar. AEM Una copia de seguridad de imagen del sistema solo es necesaria antes de la implementación de producción de los formularios de. Las políticas corporativas internas dictan con qué frecuencia se requieren los backups de imágenes del sistema.
 
-**AEM Datos específicos de los formularios de:** AEM Los datos de la aplicación existen en la base de datos, el almacenamiento global de documentos (GDS) y el repositorio de la, y se debe realizar una copia de seguridad de ellos en tiempo real. GDS es un directorio que se utiliza para almacenar archivos de larga duración que se utilizan dentro de un proceso. Estos archivos pueden incluir PDF, directivas o plantillas de formulario.
+AEM AEM **Datos específicos de formularios de:** Los datos de la aplicación existen en la base de datos, en el almacenamiento global de documentos (GDS) y en el repositorio de la aplicación, y se debe realizar una copia de seguridad en tiempo real. GDS es un directorio que se utiliza para almacenar archivos de larga duración que se utilizan dentro de un proceso. Estos archivos pueden incluir PDF, directivas o plantillas de formulario.
 
 >[!NOTE]
 >
@@ -42,17 +42,17 @@ AEM La estrategia de copia de seguridad de formularios incluye dos tipos de copi
 
 La base de datos se utiliza para almacenar artefactos de formulario, configuraciones de servicio, estados de proceso y referencias de base de datos a archivos GDS. Si ha habilitado el almacenamiento de documentos en la base de datos, los datos persistentes y los documentos del GDS también se almacenan en la base de datos. Se puede realizar una copia de seguridad y recuperar la base de datos utilizando los métodos siguientes:
 
-* **Copia de seguridad de instantáneas** AEM Este modo indica que el sistema de formularios de la está en modo de copia de seguridad indefinidamente o durante un número determinado de minutos, después de lo cual el modo de copia de seguridad ya no estará habilitado. Para entrar o salir del modo de copia de seguridad de instantánea, puede utilizar una de las siguientes opciones. Después de un escenario de recuperación, el modo de copia de seguridad de instantáneas no debe estar habilitado.
+* AEM **El modo de copia de seguridad de instantáneas** indica que el sistema de formularios de la aplicación está en modo de copia de seguridad indefinidamente o durante un número determinado de minutos, después de lo cual el modo de copia de seguridad ya no está habilitado. Para entrar o salir del modo de copia de seguridad de instantánea, puede utilizar una de las siguientes opciones. Después de un escenario de recuperación, el modo de copia de seguridad de instantáneas no debe estar habilitado.
 
    * Utilice la página Valores de Copia de Seguridad de la Consola de Administración. Para entrar en el modo de instantánea, active la casilla de verificación Operar en modo de copia de seguridad segura. Anule la selección de la casilla de verificación para salir del modo de instantánea.
-   * Utilice el script LCBackupMode (consulte [Realizar una copia de seguridad de los directorios raíz de la base de datos, GDS y Almacenamiento de contenido](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Para salir del modo de copia de seguridad de instantáneas, en el argumento script, establezca el valor `continuousCoverage` parámetro a `false` o use el `leaveContinuousCoverage` opción.
-   * Utilice la API de copia de seguridad/recuperación proporcionada. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+   * Use el script LCBackupMode (consulte [Realizar una copia de seguridad de la base de datos, GDS y los directorios raíz de almacenamiento de contenido](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Para salir del modo de copia de seguridad de instantáneas, en el argumento script, establezca el parámetro `continuousCoverage` en `false` o use la opción `leaveContinuousCoverage`.
+   * Usar la API de copia de seguridad/recuperación proporcionada. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
-* **Copia de seguridad** Este modo indica que el sistema está siempre en modo de copia de seguridad, con una nueva sesión de modo de copia de seguridad que se inicia en cuanto se libera la sesión anterior. No hay tiempo de espera asociado al modo de copia de seguridad móvil. Cuando se llama al script LCBackupMode o a las API para dejar el modo de copia de seguridad móvil, se inicia una nueva sesión de modo de copia de seguridad móvil. Este modo es útil para admitir copias de seguridad continuas, pero sigue permitiendo que los documentos antiguos e innecesarios se limpien del directorio GDS. El modo de copia de seguridad móvil no es compatible a través de la página Copia de seguridad y recuperación. Después de un escenario de recuperación, el modo de copia de seguridad móvil sigue habilitado. Puede salir del modo de copia de seguridad continua (modo de copia de seguridad móvil) utilizando el script LCBackupMode con el `leaveContinuousCoverage` opción.
+* El modo **Copia de seguridad móvil** indica que el sistema siempre está en modo de copia de seguridad, con una nueva sesión en modo de copia de seguridad que se inicia en cuanto se libera la sesión anterior. No hay tiempo de espera asociado al modo de copia de seguridad móvil. Cuando se llama al script LCBackupMode o a las API para dejar el modo de copia de seguridad móvil, se inicia una nueva sesión de modo de copia de seguridad móvil. Este modo es útil para admitir copias de seguridad continuas, pero sigue permitiendo que los documentos antiguos e innecesarios se limpien del directorio GDS. El modo de copia de seguridad móvil no es compatible a través de la página Copia de seguridad y recuperación. Después de un escenario de recuperación, el modo de copia de seguridad móvil sigue habilitado. Puede salir del modo de copia de seguridad continua (modo de copia de seguridad móvil) utilizando el script LCBackupMode con la opción `leaveContinuousCoverage`.
 
 >[!NOTE]
 >
->Si se abandona el modo de copia de seguridad móvil inmediatamente, se iniciará una nueva sesión de modo de copia de seguridad. Para desactivar completamente el modo de copia de seguridad móvil, utilice el `leaveContinuousCoverage` en el script, que sobrescribe la sesión de copia de seguridad móvil existente. En el modo de copia de seguridad de instantáneas, puede dejar el modo de copia de seguridad como lo hace habitualmente.
+>Si se abandona el modo de copia de seguridad móvil inmediatamente, se iniciará una nueva sesión de modo de copia de seguridad. Para deshabilitar completamente el modo de copia de seguridad móvil, use la opción `leaveContinuousCoverage` en el script, que sobrescribe la sesión de copia de seguridad móvil existente. En el modo de copia de seguridad de instantáneas, puede dejar el modo de copia de seguridad como lo hace habitualmente.
 
 AEM Para evitar la pérdida de datos, se debe realizar una copia de seguridad de los datos específicos de los formularios de forma que se garantice que los documentos del directorio raíz de GDS y de almacenamiento de contenido se correlacionen con las referencias de la base de datos.
 
@@ -81,10 +81,10 @@ Antes de reiniciar el servidor de Forms después de una recuperación, haga lo s
 1. Inicie el sistema en modo de mantenimiento.
 1. AEM Haga lo siguiente para asegurarse de que el administrador de formularios se sincroniza con los formularios de la en el modo de mantenimiento:
 
-   1. Vaya a https://&lt;*server*>:&lt;*puerto*>/lc/fm e inicie sesión con las credenciales de administrador/contraseña.
+   1. Vaya a https://&lt;*server*>:&lt;*port*>/lc/fm e inicie sesión con las credenciales de administrador/contraseña.
    1. Haga clic en el nombre del usuario (en este caso, Super Administrator) en la esquina superior derecha.
-   1. Clic **Opciones de administración**.
-   1. Clic **Inicio** para sincronizar recursos del repositorio.
+   1. Haga clic en **Opciones de administración**.
+   1. Haga clic en **Iniciar** para sincronizar recursos del repositorio.
 
 1. AEM En un entorno agrupado, el nodo principal (con respecto a los nodos de datos) debe estar activo antes que los nodos secundarios.
 1. SOAP Asegúrese de que no se inician procesos desde orígenes internos o externos como los iniciadores de procesos Web, o EJB hasta que se valide el funcionamiento normal del sistema.
@@ -105,10 +105,10 @@ AEM Si cambia las rutas del sistema de archivos de un nodo independiente, debe a
 
 En un entorno agrupado, la configuración de la ruta del sistema de archivos del repositorio debe ser la misma para todos los nodos del clúster antes de la copia de seguridad y después de la recuperación.
 
-Utilice el `LCSetGDS`secuencia de comandos en `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` para establecer la ruta de acceso de GDS después de cambiar las rutas del sistema de archivos. Consulte la `ReadMe.txt` en la misma carpeta para obtener más información. Si no se puede utilizar la ruta de acceso al directorio GDS anterior, `LCSetGDS` AEM debe utilizarse una secuencia de comandos para establecer la nueva ruta en el GDS antes de iniciar los formularios de la.
+Use el script `LCSetGDS` de la carpeta `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` para establecer la ruta de acceso de GDS después de cambiar las rutas de acceso del sistema de archivos. Consulte el archivo `ReadMe.txt` en la misma carpeta para obtener detalles. AEM Si no se puede usar la ruta de acceso al directorio GDS anterior, se debe usar el script `LCSetGDS` para establecer la nueva ruta de acceso al GDS antes de iniciar los formularios de la aplicación de inicio de la aplicación de GDS.
 
 >[!NOTE]
 >
->Esta circunstancia es la única en la que debería usar esta secuencia de comandos para cambiar la ubicación de GDS. AEM Para cambiar la ubicación de GDS mientras se está ejecutando el formulario de GDS, utilice la consola de administración. (Consulte [AEM Configurar opciones generales de formularios](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
+>Esta circunstancia es la única en la que debería usar esta secuencia de comandos para cambiar la ubicación de GDS. AEM Para cambiar la ubicación de GDS mientras se está ejecutando el formulario de GDS, utilice la consola de administración. AEM (Consulte [Configurar la configuración general de los formularios en la página de inicio de sesión](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
 Después de establecer la ruta de acceso de GDS, inicie el servidor de Forms en modo de mantenimiento y utilice la consola de administración para actualizar las rutas de acceso restantes del sistema de archivos para el nuevo nodo. AEM Después de comprobar que se han actualizado todas las configuraciones necesarias, reinicie y pruebe los formularios de la aplicación de prueba de la aplicación de prueba de la aplicación de.

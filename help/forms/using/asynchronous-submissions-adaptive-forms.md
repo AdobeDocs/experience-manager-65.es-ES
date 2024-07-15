@@ -35,7 +35,7 @@ Siga leyendo para obtener más información sobre el envío asincrónico en form
 
 Para configurar el envío asincrónico en un formulario adaptable haga lo siguiente:
 
-1. En el modo Autor del formulario adaptable, seleccione el objeto Contenedor de formularios y seleccione ![cmppr1](assets/cmppr1.png) para abrir sus propiedades.
+1. En el modo Autor del formulario adaptable, seleccione el objeto Contenedor de formulario y seleccione ![cmppr1](assets/cmppr1.png) para abrir sus propiedades.
 1. En la sección de propiedades de **[!UICONTROL Envío]**, habilite **[!UICONTROL Usar envío asincrónico]**.
 1. En la sección **[!UICONTROL Al enviar]**, seleccione una de las siguientes opciones para realizarla cuando se envíe correctamente del formulario.
 
@@ -104,9 +104,9 @@ Los desarrolladores y autores de formularios pueden escribir reglas a nivel de f
 
 Realice los siguientes pasos para escribir reglas en el editor de código para controlar los eventos de éxito y error.
 
-1. Abra el formulario adaptable en el modo Autor, seleccione cualquier objeto del formulario y seleccione ![edit-rules1](assets/edit-rules1.png) para abrir el editor de reglas.
+1. Abra el formulario adaptable en el modo Autor, seleccione cualquier objeto de formulario y seleccione ![edit-rules1](assets/edit-rules1.png) para abrir el editor de reglas.
 1. Seleccione **[!UICONTROL Formulario]** en el árbol Objetos de formulario y seleccione **[!UICONTROL Crear]**.
 1. Seleccione **[!UICONTROL Editor de código]** de la lista desplegable de modo de selección.
-1. En el editor de código, seleccione **[!UICONTROL Editar código]**. Seleccionar **[!UICONTROL Editar]** en el cuadro de diálogo de confirmación.
+1. En el editor de código, seleccione **[!UICONTROL Editar código]**. Seleccione **[!UICONTROL Editar]** en el cuadro de diálogo de confirmación.
 1. Elija **[!UICONTROL Envío correcto]** o **[!UICONTROL Error en el envío]** de la lista desplegable **[!UICONTROL Evento]**.
 1. Escriba una regla para el evento seleccionado y seleccione **[!UICONTROL Listo]** para guardar la regla.

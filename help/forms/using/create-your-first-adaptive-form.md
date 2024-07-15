@@ -26,7 +26,7 @@ ht-degree: 71%
 
 ## Introducción {#introduction}
 
-¿Está buscando una aplicación compatible con dispositivos móviles **experiencia de formularios** que simplifica la inscripción, aumenta la participación y reduce el tiempo de respuesta, **formularios adaptables** es un ajuste perfecto para usted. Los formularios adaptables proporcionan una experiencia adaptada para móviles, automatizada y analítica. Puede crear fácilmente formularios que sean interactivos y adaptables, utilizar procesos automatizados para reducir las tareas administrativas y repetitivas y utilizar análisis de datos para mejorar y personalizar la experiencia que los clientes tienen con sus formularios.
+¿Está buscando una experiencia de **formularios** compatible con dispositivos móviles que simplifique la inscripción, aumente la participación y reduzca el tiempo de respuesta? **los formularios adaptables** son perfectos para usted. Los formularios adaptables proporcionan una experiencia adaptada para móviles, automatizada y analítica. Puede crear fácilmente formularios que sean interactivos y adaptables, utilizar procesos automatizados para reducir las tareas administrativas y repetitivas y utilizar análisis de datos para mejorar y personalizar la experiencia que los clientes tienen con sus formularios.
 
 Este tutorial proporciona un marco de trabajo completo para crear un formulario adaptable. El tutorial está organizado en un caso de uso y en varias guías. Cada guía le ayuda a aprender y agregar nuevas características al formulario adaptable que cree en este tutorial. Después de cada guía, tendrá un formulario adaptable operativo. La guía para crear un formulario adaptable está disponible. Próximamente habrá más guías. Al final de este tutorial, debería poder hacer lo siguiente:
 
@@ -45,7 +45,7 @@ El sitio web se ejecuta en Adobe Experience Manager (AEM) y utiliza AEM [!DNL Fo
 
 ### Requisitos previos {#prerequisite}
 
-* Configuración de un [AEM instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
+* AEM Configurar una [instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Instalar el [Complemento de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) en la instancia de autor.
 * Obtener el controlador de base de datos JDBC (archivo JAR) del proveedor de la base de datos. Los ejemplos del tutorial se basan en la base de datos [!DNL MySQL] y utiliza el [!DNL Oracle's] [Controlador de base de datos JDBC de MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -76,8 +76,8 @@ Un modelo de datos de formulario permite conectar un formulario adaptable a dist
 
 Objetivos:
 
-* Configurar la instancia de base de datos del sitio web ([!DNL MySQL] base de datos) como fuente de datos.
-* Crear el modelo de datos de formulario mediante [!DNL MySQL] como fuente de datos.
+* Configure la instancia de base de datos del sitio web (base de datos [!DNL MySQL]) como origen de datos.
+* Cree el modelo de datos de formulario con la base de datos [!DNL MySQL] como origen de datos.
 * Agregar objetos del modelo de datos para poder formar el modelo de datos.
 * Configure los servicios de lectura y escritura para el modelo de datos de formulario.
 * Probar el modelo de datos de formulario y los servicios configurados con datos de prueba.
@@ -99,7 +99,7 @@ Objetivos:
 
 ## Paso 4: Estilo del formulario adaptable {#step-style-your-adaptive-form}
 
-![adapative-form-styling](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
+![estilo-formulario-adaptable](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
 Los formularios adaptables proporcionan temáticas y un [editor](../../forms/using/themes.md) para crear temáticas para los formularios adaptables. Una temática contiene detalles de estilo para componentes y paneles y se puede reutilizar el mismo en distintos formularios. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar la temática al formulario, el estilo especificado se reflejará en los componentes correspondientes del formulario. Los formularios adaptables también admiten el estilo en línea para estilos específicos de un formulario.
 
@@ -119,8 +119,8 @@ Puede publicar formularios adaptables como un formulario independiente (aplicaci
 
 Objetivos:
 
-* AEM Publique el formulario adaptable como una página de la.
-* AEM Incrustar el formulario adaptable en una aplicación de tipo de formulario [!DNL Sites] Página.
+* Publish AEM usa el formulario adaptable como una página de.
+* AEM Incruste el formulario adaptable en una página de [!DNL Sites] de la.
 * AEM AEM Incruste el formulario adaptable en una página web externa (una página web que no sea de tipo alojada fuera de la página).
 
 [![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

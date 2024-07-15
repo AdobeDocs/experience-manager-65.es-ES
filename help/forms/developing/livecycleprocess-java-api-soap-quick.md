@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # SOAP Inicio rápido de la API de Java de LiveCycleProcess () {#livecycleprocess-java-api-soap-quick-start}
 
-El Inicio rápido de la API de Java (SOAP) está disponible para los procesos de. A *instancia de proceso* es una ocurrencia de un proceso específico que se inició mediante un método de invocación como la API de invocación o desde Workspace.
+SOAP El Inicio rápido de la API de Java () está disponible para los procesos de. Una *instancia de proceso* es una ocurrencia de un proceso específico iniciado por un método de invocación como la API de invocación o desde Workspace.
 
 [SOAP Inicio rápido (modo de): Búsqueda de instancias de proceso mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -36,11 +36,11 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->Los inicios rápidos en Programación con AEM Forms se basan en Forms si utiliza otro sistema operativo, como Unix, y reemplaza las rutas específicas de Windows por rutas admitidas por el sistema operativo aplicable. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Los inicios rápidos en Programación con AEM Forms se basan en Forms si utiliza otro sistema operativo, como Unix, y reemplaza las rutas específicas de Windows por rutas admitidas por el sistema operativo aplicable. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## SOAP Inicio rápido (modo de): Búsqueda de instancias de proceso mediante la API de Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-El siguiente ejemplo de código Java busca instancias de proceso basadas en la variable *Préstamo Hipotecario - Preconstruido* proceso.
+El siguiente ejemplo de código Java busca instancias de proceso basadas en el proceso *MortgageLoan - Prebuilt*.
 
 ```java
  /*
@@ -429,7 +429,7 @@ El siguiente ejemplo de código Java finaliza una instancia de proceso con el va
 
 ## SOAP Inicio rápido (modo de): Depuración de datos de proceso mediante la API de Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-El siguiente código Java depura los datos de un proceso denominado *SecureDocument*. Se utiliza un filtro que especifica la depuración de datos para las instancias de proceso en las que la variable de proceso denominada *inValue* mayor que 200.
+El siguiente código Java purga datos de un proceso denominado *SecureDocument*. Se usa un filtro que especifica la depuración de datos de las instancias de proceso en las que la variable de proceso *inValue* es mayor que 200.
 
 ```java
  /*

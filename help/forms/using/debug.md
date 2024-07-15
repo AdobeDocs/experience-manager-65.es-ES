@@ -123,7 +123,7 @@ Compruebe los siguientes parámetros:
 
 ## Problema: No se muestran los mensajes de error localizados {#problem-localized-error-messages-do-not-display}
 
-1. Procesar el formulario con parámetros de consulta adicionales **debugClientLibs=true** en el explorador de escritorio y, a continuación, vaya a Herramientas para desarrolladores > Recursos y busque el archivo I18N.css.
+1. Procese el formulario con un parámetro de consulta adicional **debugClientLibs=true** en el explorador de escritorio y, a continuación, vaya a Herramientas para desarrolladores > Recursos y busque el archivo I18N.css.
 1. Si el archivo no está disponible, inicie sesión en CRX DE en https://&lt;server>:&lt;port>/crx/de.
 1. En la jerarquía de carpetas de la izquierda, navegue hasta /libs/fd/xfaforms/clientlibs/I18N y asegúrese de que existan los siguientes archivos y carpetas:
 

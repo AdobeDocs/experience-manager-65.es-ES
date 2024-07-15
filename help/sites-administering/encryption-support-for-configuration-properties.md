@@ -32,21 +32,21 @@ Se agregó compatibilidad con el complemento de configuración OSGi para descifr
 
 Estos pasos muestran cómo cifrar la contraseña SMTP del servicio de correo. Puede completar estos pasos para una propiedad OSGI que desee cifrar.
 
-1. AEM Vaya a la consola web de en *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. En la esquina superior izquierda, vaya a **Principal: compatibilidad con cifrado**
+1. AEM Vaya a la consola web de la en *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. En la esquina superior izquierda, vaya a **Principal - Crypto Support**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. El **Compatibilidad con cifrado de la consola web de Adobe Experience Manager** se muestra la página.
+1. Se muestra la página **Compatibilidad con cifrado de la consola web de Adobe Experience Manager**.
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. En el **Texto sin formato** , introduzca el texto de los datos confidenciales que desea proteger.
-1. Seleccionar **Protect**. El texto protegido se muestra como texto cifrado.
+1. En el campo **Texto sin formato**, escriba el texto de los datos confidenciales que desea proteger.
+1. Seleccione **Protect**. El texto protegido se muestra como texto cifrado.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Copie el texto protegido del paso n.º 5 y péguelo en el valor del formulario OSGI. En este ejemplo, la variable **Contraseña SMTP** se añade a *Day CQ Mail Service*.
+1. Copie el texto protegido del paso n.º 5 y péguelo en el valor del formulario OSGI. En este ejemplo, la **contraseña SMTP** cifrada se agrega al *servicio Day CQ Mail*.
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 

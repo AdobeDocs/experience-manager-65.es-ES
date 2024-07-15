@@ -35,7 +35,7 @@ Actualmente, las insignias que gana un miembro de la comunidad, o que se le asig
 
 En el entorno de creación, vaya a la consola Insignias:
 
-* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Communities]** > **[!UICONTROL Insignias]**
+* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Insignias]**
 
 Esta consola muestra los distintivos disponibles actualmente y desde los cuales se pueden agregar nuevos distintivos.
 
@@ -43,23 +43,23 @@ Esta consola muestra los distintivos disponibles actualmente y desde los cuales 
 
 ## Crear distintivo {#create-badge}
 
-Un distintivo se crea cargando una imagen convenientemente pequeña (72 ppp con una altura que varía entre 26 y 32 píxeles) y proporcionando un nombre. La imagen del distintivo se almacena en el repositorio en `/libs/settings/community/badging/images` y se duplican automáticamente en el entorno de publicación.
+Un distintivo se crea cargando una imagen convenientemente pequeña (72 ppp con una altura que varía entre 26 y 32 píxeles) y proporcionando un nombre. La imagen del distintivo se almacena en el repositorio en `/libs/settings/community/badging/images` y se replica automáticamente en el entorno de publicación.
 
-Si el entorno de publicación es una granja de editores, es necesario configurar [sincronización de usuarios](/help/communities/sync.md).
+Si el entorno de publicación es una granja de editores, es necesario configurar la [sincronización de usuarios](/help/communities/sync.md).
 
-![create-badge](assets/create-badge.png)
+![crear distintivo](assets/create-badge.png)
 
 * **Cargar imagen**
 
-  (*Requerido*) Imagen de distintivo con un tamaño recomendado de 32 x 32 píxeles a 72 ppp en formato JPEG o PNG.
+  (*Obligatorio*) Una imagen de distintivo con un tamaño recomendado de 32 x 32 píxeles a 72 ppp en formato JPEG o PNG.
 
 * **Nombre**
 
-  (*Requerido*) El nombre del distintivo. Es la opción predeterminada `Display Name` y el nombre del nodo del repositorio. Si la variable `Name` no es un nombre de nodo de repositorio válido, se ha modificado.
+  (*Requerido*) El nombre del distintivo. Es el valor predeterminado `Display Name` y el nombre del nodo del repositorio. Si `Name` no es un nombre de nodo de repositorio válido, se modifica.
 
 * **Nombre para mostrar**
 
-  (*Opcional*) Nombre que se mostrará para el distintivo en la interfaz de usuario. El valor por defecto es el texto sin modificar introducido para `Name`.
+  (*Opcional*) El nombre que se mostrará para el distintivo en la interfaz de usuario. El valor predeterminado es el texto sin modificar especificado para `Name`.
 
 * **Descripción**
 
@@ -67,6 +67,6 @@ Si el entorno de publicación es una granja de editores, es necesario configurar
 
 ## Información adicional {#additional-information}
 
-Para obtener más información sobre la configuración de reglas de puntuación e insignias, consulte [Puntuación y distintivos](/help/communities/implementing-scoring.md).
+Para obtener más información sobre la configuración de reglas de puntuación e insignias, consulte [Puntuación e insignias](/help/communities/implementing-scoring.md).
 
-Para administrar insignias para miembros, consulte [Consola Miembros](/help/communities/members.md).
+Para administrar distintivos para miembros, consulte [Consola de miembros](/help/communities/members.md).

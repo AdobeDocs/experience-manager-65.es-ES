@@ -20,14 +20,14 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-A partir de comunidades [FP1](deploy-communities.md#latestfeaturepack)Por lo tanto, los miembros de la comunidad pueden interactuar con la comunidad por correo electrónico mediante una función denominada suscripciones.
+A partir de las comunidades [FP1](deploy-communities.md#latestfeaturepack), los miembros de la comunidad pueden interactuar con la comunidad por correo electrónico mediante una función denominada suscripciones.
 
-Las suscripciones son similares a [notificaciones](notifications.md) como miembros pueden suscribirse al seguir artículos de blogs, temas de foros o preguntas de control de calidad.
+Las suscripciones son similares a [notifications](notifications.md), ya que los miembros pueden suscribirse cuando siguen artículos de blogs, temas de foros o preguntas de control de calidad.
 
 Lo que distingue las suscripciones de las notificaciones es:
 
 * Los Miembros no podrán suscribirse cuando sigan a otros Miembros.
-* La única acción que pueden realizar los miembros es seleccionar `Email Subscriptions` al seguir.
+* La única acción que deben realizar los miembros es seleccionar `Email Subscriptions` al seguir.
 * Cuando se configura la respuesta al correo electrónico, los miembros pueden publicar contenido de manera efectiva simplemente respondiendo al correo electrónico recibido.
 
 ### Requisitos  {#requirements}
@@ -36,21 +36,21 @@ Lo que distingue las suscripciones de las notificaciones es:
 
 El correo electrónico debe configurarse para que las suscripciones funcionen y para que los miembros respondan por correo electrónico.
 
-Para obtener instrucciones sobre la configuración del correo electrónico, consulte [Configurar correo electrónico](email.md).
+Para obtener instrucciones sobre cómo configurar el correo electrónico, consulte [Configuración del correo electrónico](email.md).
 
 **Habilitar suscripciones y seguir**
 
-Los componentes deben configurarse para habilitar las suscripciones *y* siguiente. Las funciones que permiten suscripciones son [blog](blog-feature.md), [foro](forum.md) y [QnA](working-with-qna.md).
+Los componentes deben configurarse para habilitar las suscripciones *y* siguientes. Las características que permiten suscripciones son [blog](blog-feature.md), [foro](forum.md) y [QnA](working-with-qna.md).
 
 ## Suscripciones de los siguientes {#subscriptions-from-following}
 
-![subscripción-siguiente](assets/subscription-following.png)
+![suscripción-siguiente](assets/subscription-following.png)
 
-El **Seguir** El botón proporciona un medio para seguir las entradas como actividades, suscripciones o notificaciones. Cada vez que **Seguir** botón está seleccionado, es posible activar o desactivar una selección.
+El botón **Seguir** proporciona un medio para seguir las entradas como actividades, suscripciones o notificaciones. Cada vez que se selecciona el botón **Seguir**, es posible activar o desactivar una selección.
 
-Si se selecciona cualquier método de seguimiento, el texto del botón cambia a **Siguientes**. Para su comodidad, es posible seleccionar `Unfollow All` para desactivar todos los métodos.
+Si se selecciona cualquier método de seguimiento, el texto del botón cambia a **Siguiendo**. Para su comodidad, es posible seleccionar `Unfollow All` para desactivar todos los métodos.
 
-El **Seguir** El botón incluirá el `Email Subscriptions` opción solo cuando un foro, control de calidad o blog está configurado para habilitar suscripciones por correo electrónico. Este botón aparecerá:
+El botón **Seguir** incluirá la opción `Email Subscriptions` solo cuando haya configurado un foro, control de calidad o blog para habilitar las suscripciones por correo electrónico. Este botón aparecerá:
 
 * En la página de características principal del foro, control de calidad o blog habilitados, se enviará un correo electrónico con todas las actividades incluidas en dicha función.
 
@@ -58,11 +58,11 @@ El **Seguir** El botón incluirá el `Email Subscriptions` opción solo cuando u
 
 ## Responder por correo electrónico {#reply-by-email}
 
-Cuando el correo electrónico es [configurado para responder por correo electrónico](email.md#configure-polling-importer), el miembro que se haya suscrito recibirá un correo electrónico con el contenido publicado y un enlace al contenido en línea.
+Cuando el correo electrónico esté [configurado para responder por correo electrónico](email.md#configure-polling-importer), el miembro que se suscribió recibirá un correo electrónico con el contenido publicado y un vínculo al contenido en línea.
 
 Si responde al correo electrónico, el contenido que introduce en la respuesta aparece como contenido en línea.
 
-![email-reply](assets/email-reply.png)
+![correo electrónico-respuesta](assets/email-reply.png)
 
 La cantidad de tiempo que tarda una respuesta en publicarse está controlada por el [intervalo de actualización del importador de encuestas](email.md#configure-polling-importer).
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Aceptación y firma{#acceptance-and-sign-off}
 
-Como se mencionó, [Pruebas de aceptación](/help/sites-developing/planning.md) son una categoría especial de ensayo utilizada para verificar que:
+Como se ha mencionado anteriormente, [Pruebas de aceptación](/help/sites-developing/planning.md) son una categoría especial de prueba que se utiliza para comprobar que:
 
 * Project cumple los requisitos del cliente.
 * El cliente acepta el proyecto.

@@ -25,7 +25,7 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
 1. **El fragmento de contenido como una sola entidad.**
 
    * **Caso de uso**: un usuario que necesita editar/actualizar un fragmento de contenido: **y eliminar un fragmento completo**.
-   * **Permisos**: La [Eliminar](/help/sites-administering/security.md#actions) el permiso puede ser [asignado mediante Administración de usuarios o grupos](/help/sites-administering/security.md#managing-permissions).
+   * **Permisos**: el permiso [Eliminar](/help/sites-administering/security.md#actions) se puede [asignar mediante Administración de usuarios o grupos](/help/sites-administering/security.md#managing-permissions).
 
 2. **Las diversas subentidades que conforman un fragmento de contenido; por ejemplo, variaciones, subnodos.**
 
@@ -36,11 +36,11 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
 
 >[!NOTE]
 >
->Cuando un usuario no tiene ninguna [Eliminar](/help/sites-administering/security.md#actions) permisos, el editor de fragmentos de contenido funciona en *de solo lectura* modo.
+>Cuando un usuario no tiene permisos de [Delete](/help/sites-administering/security.md#actions), el editor de fragmentos de contenido funciona en modo de *solo lectura*.
 
 >[!NOTE]
 >
->Consulte también [AEM Cómo auditar las operaciones de administración de usuarios en el](/help/sites-administering/audit-user-management-operations.md).
+>AEM Consulte también [Cómo auditar las operaciones de administración de usuarios en el espacio de trabajo de {10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/audit-user-management-operations.md)
 
 ## Permisos necesarios para la funcionalidad del editor únicamente {#permissions-required-for-editor-functionality-only}
 
@@ -50,7 +50,7 @@ Por ejemplo, al manipular variaciones; también al editar metadatos o administra
 
 >[!NOTE]
 >
->Los permisos de eliminación, necesarios para editar o actualizar un fragmento de contenido, se incluyen en el permiso Eliminar [asignado mediante Administración de usuarios o grupos](/help/sites-administering/security.md#managing-permissions).
+>Los permisos de eliminación, necesarios para editar o actualizar un fragmento de contenido, se incluyen en el permiso de eliminación [asignado mediante Administración de usuarios o grupos](/help/sites-administering/security.md#managing-permissions).
 
 Los permisos necesarios para editar o actualizar un fragmento deben aplicarse al nodo que contiene el fragmento de contenido o a un nodo principal adecuado (en cualquier nivel de `/content/dam`). Cuando se asigna a un nodo principal de este tipo, los permisos se aplican a todos los nodos dentro de esa rama.
 
@@ -82,10 +82,10 @@ Los permisos previos para permitir que un usuario o grupo específico edite o ac
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`, `jcr:removeNode`
 
-Estos `remove` los privilegios deben ser [administradas mediante Listas de control de acceso, dentro de CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Estos privilegios de `remove` deben ser [administrados mediante Listas de control de acceso, dentro del CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-El `add` y `modify` Los privilegios también se pueden administrar en CRXDE Lite o mediante la consola de User Management.
+Los privilegios `add` y `modify` también se pueden administrar en el CRXDE Lite o mediante la consola Administración de usuarios.
 
-Por ejemplo, la definición de `remove` privilegios para un grupo `content-authors-no-delete`:
+Por ejemplo, la definición de los privilegios de `remove` para un grupo `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)

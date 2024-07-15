@@ -30,7 +30,7 @@ Antes de configurar un extremo de correo electrónico, cree una cuenta de correo
 
 Todos los extremos de correo electrónico se configuran con un nombre de usuario y una contraseña autorizados para la bandeja de entrada de correo electrónico, que son necesarios al invocar el servicio. La cuenta de correo electrónico está protegida por el sistema de servidor de correo en el que está configurada.
 
-Si los usuarios envían documentos con caracteres del idioma de Europa occidental en los nombres de archivo y de ruta de conversión, deben utilizar una aplicación de correo electrónico que admita los tipos de codificación requeridos (Latin1 [ISO-8859-1], Europa Occidental [Windows], o UTF-8). Para obtener más información, consulte la *AEM Instalación e implementación de formularios* para el servidor de aplicaciones.
+Si los usuarios envían documentos con caracteres del idioma de Europa occidental en los nombres de ruta de archivo y de conversión, deben utilizar una aplicación de correo electrónico que admita los tipos de codificación requeridos (Latin1 [ISO-8859-1], Europa occidental [Windows] o UTF-8). AEM Para obtener más información, consulte el documento *Instalación e implementación de formularios de la aplicación* para su servidor de aplicaciones.
 
 Antes de configurar un extremo de correo electrónico, configure el servicio de correo electrónico. (Consulte [Configurar opciones predeterminadas de extremo de correo electrónico](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Los parámetros de configuración del servicio de correo electrónico tienen dos propósitos:
 
@@ -49,7 +49,7 @@ Puede configurar POP3, IMAP o SMTP para utilizar Secure Sockets Layer (SSL) en u
 
    `keytool -import -file client_certificate -alias myalias -keystore BEA_HOME\jdk150_04\jre\security\cacerts`
 
-1. Cuando se le pida, introduzca la contraseña (en Java, la contraseña predeterminada es `changeit`). Recibirá un mensaje que indica que el certificado se importó correctamente.
+1. Cuando se le pida, escriba la contraseña (para Java, la contraseña predeterminada es `changeit`). Recibirá un mensaje que indica que el certificado se importó correctamente.
 1. Utilice la consola de administración para agregar el extremo de correo electrónico al servicio.
 1. Cree el extremo de correo electrónico en la consola de administración. Al configurar los valores del extremo, seleccione POP3/IMAP SSL Enabled para los mensajes entrantes y SMTP SSL Enabled para los mensajes salientes y cambie las propiedades del puerto en consecuencia.
 
@@ -71,93 +71,93 @@ Para que el flujo de trabajo de formularios reciba y administre mensajes de corr
 
 ### Configuración predeterminada de extremo de correo electrónico {#default-email-endpoint-settings}
 
-**Expresión Cron:** La expresión cron utilizada por quartz para programar el sondeo del directorio de entrada.
+**Expresión cron:** La expresión cron utilizada por quartz para programar el sondeo del directorio de entrada.
 
-**Intervalo de repetición:** El número de veces que se repite el sondeo de directorios. El intervalo de repetición predeterminado es en segundos si este valor no se especifica en la configuración del extremo. El valor predeterminado es 10. Este valor no puede ser menor que 10.
+**Intervalo de repetición:** Número de veces que se repite el sondeo de directorios. El intervalo de repetición predeterminado es en segundos si este valor no se especifica en la configuración del extremo. El valor predeterminado es 10. Este valor no puede ser menor que 10.
 
 **Recuento de repeticiones:** El número de veces que se sondea el directorio de entrada. Recuento de repetición predeterminado que se utilizará si este valor no se especifica en la configuración del extremo. El valor -1 indica un análisis indefinido del directorio. El valor predeterminado es -1.
 
-**Retraso al iniciar el trabajo:** El valor predeterminado, en segundos, para el retraso antes de que el trabajo empiece a analizar el punto final. El valor predeterminado es 0.
+**Retraso al iniciarse el trabajo:** El valor predeterminado, en segundos, para el retraso antes de que el trabajo empiece a analizar el extremo. El valor predeterminado es 0.
 
-**Tamaño del lote:** El número de correos electrónicos que el receptor procesa por análisis para obtener un rendimiento óptimo. El valor -1 indica todos los correos electrónicos. El valor predeterminado es 2.
+**Tamaño de lote:** Número de correos electrónicos que el receptor procesa por análisis para obtener un rendimiento óptimo. El valor -1 indica todos los correos electrónicos. El valor predeterminado es 2.
 
 **Asincrónica:** Identifica el tipo de invocación como asincrónico o sincrónico. Los procesos transitorios y sincrónicos solo se pueden invocar sincrónicamente. El valor predeterminado es asíncrono.
 
-**Patrón de dominio:** Patrón de nombre de dominio que se utiliza para filtrar los correos electrónicos entrantes. Por ejemplo, si se utiliza adobe.com, solo se procesará el correo electrónico de adobe.com; se omitirá el correo electrónico de otros dominios.
+**Patrón de dominio:** Patrón de nombre de dominio que se usa para filtrar correos electrónicos entrantes. Por ejemplo, si se utiliza adobe.com, solo se procesará el correo electrónico de adobe.com; se omitirá el correo electrónico de otros dominios.
 
 **Patrón de archivo:** Patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones específicas (&amp;ast;.dat, &amp;ast;.xml), nombres específicos (data) y expresiones compuestas en el nombre y la extensión (.[dD][aA]&#39;port&#39;). El valor predeterminado es &amp;ast;.&amp;ast;.
 
-**Destinatarios de trabajo correctos:** Una o más direcciones de correo electrónico que se utilizan para enviar correos electrónicos para indicar trabajos correctos. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente del trabajo inicial. Se admiten hasta 100 destinatarios. Para desactivar esta configuración, deje este campo en blanco.
+**Destinatarios de trabajo exitosos:** Una o más direcciones de correo electrónico que se usan para enviar correos electrónicos para indicar trabajos exitosos. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente del trabajo inicial. Se admiten hasta 100 destinatarios. Para desactivar esta configuración, deje este campo en blanco.
 
-**Destinatarios del trabajo con errores:** Una o más direcciones de correo electrónico que se utilizan para enviar correos electrónicos para indicar trabajos fallidos. De forma predeterminada, siempre se envía un mensaje de trabajo con errores al remitente que envió el trabajo inicial. Se admiten hasta 100 destinatarios. Para desactivar esta configuración, deje este campo en blanco.
+**Destinatarios del trabajo con errores:** Una o más direcciones de correo electrónico que se utilizan para enviar correos electrónicos para indicar trabajos con errores. De forma predeterminada, siempre se envía un mensaje de trabajo con errores al remitente que envió el trabajo inicial. Se admiten hasta 100 destinatarios. Para desactivar esta configuración, deje este campo en blanco.
 
-**Host de bandeja de entrada:** El nombre de host de la bandeja de entrada o la dirección IP del proveedor de correo electrónico que se va a analizar.
+**Host de bandeja de entrada:** Nombre de host de bandeja de entrada o Dirección IP para que el proveedor de correo electrónico analice.
 
-**Puerto de bandeja de entrada:** Número de puerto de bandeja de entrada del proveedor de correo electrónico que se va a analizar. Si el valor es 0, se utiliza el puerto IMAP o POP3 predeterminado.
+**Puerto de bandeja de entrada:** Número de puerto de bandeja de entrada para que el proveedor de correo electrónico lo analice. Si el valor es 0, se utiliza el puerto IMAP o POP3 predeterminado.
 
-**Protocolo de bandeja de entrada:** Protocolo de correo electrónico para el extremo de correo electrónico que se utilizará para analizar la bandeja de entrada. Las opciones son IMAP o POP3. El servidor de correo host de bandeja de entrada debe admitir estos protocolos.
+**Protocolo de bandeja de entrada:** Protocolo de correo electrónico para que el extremo de correo electrónico se utilice para analizar la bandeja de entrada. Las opciones son IMAP o POP3. El servidor de correo host de bandeja de entrada debe admitir estos protocolos.
 
-**Tiempo de espera de bandeja:** Especifica la cantidad de tiempo que el extremo esperará antes de cancelar cuando intente conectarse a la bandeja de entrada. Si no se adquiere una conexión antes de que se alcance el valor de tiempo de espera, la bandeja de entrada no se sondea.
+**Tiempo de espera de la bandeja de entrada:** Especifica la cantidad de tiempo que el extremo esperará antes de cancelar al intentar conectarse a la bandeja de entrada. Si no se adquiere una conexión antes de que se alcance el valor de tiempo de espera, la bandeja de entrada no se sondea.
 
 **Usuario de bandeja de entrada:** El nombre de usuario necesario para iniciar sesión en la cuenta de correo electrónico. Según el servidor de correo electrónico y la configuración, este nombre solo puede ser la parte del nombre de usuario del correo electrónico o puede ser la dirección de correo electrónico completa.
 
-**Contraseña de bandeja de entrada:** La contraseña del usuario de la bandeja de entrada.
+**Contraseña de Bandeja de entrada:** Contraseña del usuario de Bandeja de entrada.
 
-**SSL habilitado para POP3/IMAP:** Cuando se selecciona, habilita SSL.
+**Habilitado para SSL POP3/IMAP:** Al seleccionarlo, se habilita SSL.
 
-**Host SMTP:** El nombre de host del servidor de correo que el proveedor de correo electrónico utiliza para enviar resultados y mensajes de error. Por ejemplo, mail.example.com.
+**Host SMTP:** El nombre de host del servidor de correo que el proveedor de correo electrónico utiliza para enviar los resultados y los mensajes de error. Por ejemplo, mail.example.com.
 
-**Puerto SMTP:** El puerto que se utiliza para conectarse al servidor de correo. El valor predeterminado es 25.
+**Puerto SMTP:** El puerto que se usa para conectarse al servidor de correo. El valor predeterminado es 25.
 
-**Usuario de SMTP:** Cuenta de usuario que utiliza el proveedor de correo electrónico cuando envía correos electrónicos en busca de resultados y errores.
+**Usuario SMTP:** Cuenta de usuario que el proveedor de correo electrónico debe usar cuando envíe correo electrónico para obtener resultados y errores.
 
-**Contraseña de SMTP:** Contraseña de la cuenta SMTP. Algunos servidores de correo no requieren una contraseña SMTP.
+**Contraseña SMTP:** Contraseña de la cuenta SMTP. Algunos servidores de correo no requieren una contraseña SMTP.
 
 **Enviar desde:** La dirección de correo electrónico (por ejemplo, user@company.com) utilizada para enviar notificaciones por correo electrónico de resultados y errores. Si no especifica un valor Enviar desde, el servidor de correo electrónico intenta determinar la dirección de correo electrónico combinando el valor especificado en la configuración Usuario de SMTP con un dominio predeterminado configurado en el servidor de correo electrónico. Si el servidor de correo electrónico no tiene un dominio predeterminado y no especifica ningún valor para Enviar desde, pueden producirse errores. Para asegurarse de que los mensajes de correo electrónico tengan la dirección remitente correcta, especifique un valor para la configuración Enviar desde.
 
-**SSL de SMTP activado:** Cuando se selecciona esta opción, se habilita SSL a través de SMTP.
+**SSL SMTP habilitado:** Cuando se selecciona, habilita SSL a través de SMTP.
 
-**Incluya El Cuerpo Del Correo Electrónico Original Como Archivo Adjunto:** De forma predeterminada, cuando se envía un correo electrónico al servidor de Forms, el texto original del mensaje se incluye en el cuerpo del mensaje. Para incluir el texto como datos adjuntos, seleccione esta opción.
+**Incluir el cuerpo original del correo electrónico como datos adjuntos:** De forma predeterminada, cuando envía un correo electrónico al servidor de Forms, el texto original del mensaje se incluye en el cuerpo del mensaje. Para incluir el texto como datos adjuntos, seleccione esta opción.
 
-**Utilice La Línea De Asunto Original Para Los Correos Electrónicos De Resultados:** De forma predeterminada, el servidor de Forms utiliza los valores especificados en la configuración Asunto del correo electrónico de éxito y Asunto del correo electrónico de error como línea de asunto al enviar mensajes de correo electrónico de resultados. Para utilizar en su lugar la misma línea de asunto que el correo electrónico original enviado al servidor, seleccione esta opción.
+**Usar la línea de asunto original para los correos electrónicos de resultados:** De forma predeterminada, el servidor de Forms usa los valores especificados en la configuración Asunto del correo electrónico de éxito y Asunto del correo electrónico de error como línea de asunto al enviar mensajes de correo electrónico de resultados. Para utilizar en su lugar la misma línea de asunto que el correo electrónico original enviado al servidor, seleccione esta opción.
 
-**Asunto de correo electrónico de éxito:** Después de enviar un correo electrónico a un extremo de correo electrónico para iniciar o continuar un proceso, recibe un mensaje de correo electrónico de retorno del servidor de AEM Forms. Si el correo electrónico se ha enviado correctamente, recibirá un mensaje de correo electrónico con el resultado deseado. Si el correo electrónico falla, recibe un correo electrónico que le informa de por qué ha fallado. Esta configuración le permite especificar la línea de asunto de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
+**Asunto del correo electrónico de éxito:** Después de enviar un correo electrónico a un extremo de correo electrónico para iniciar o continuar un proceso, recibirá un mensaje de correo electrónico de retorno del servidor de AEM Forms. Si el correo electrónico se ha enviado correctamente, recibirá un mensaje de correo electrónico con el resultado deseado. Si el correo electrónico falla, recibe un correo electrónico que le informa de por qué ha fallado. Esta configuración le permite especificar la línea de asunto de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
 
-**Cuerpo del correo electrónico de éxito:** Permite especificar el texto del cuerpo de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
+**Cuerpo del mensaje de correo electrónico de éxito:** Permite especificar el texto del cuerpo de los mensajes de correo electrónico de éxito enviados para este extremo.
 
-**Error de prefijo de asunto de correo electrónico:** Permite especificar el texto utilizado al principio de la línea de asunto de los mensajes de correo electrónico de error enviados para este punto de conexión.
+**Prefijo del asunto del correo electrónico de error:** Permite especificar el texto utilizado al principio de la línea de asunto de los mensajes de correo electrónico de error enviados para este extremo.
 
-**Asunto de correo electrónico de error:** Permite especificar la línea de asunto de los mensajes de correo electrónico de error enviados para este extremo. Este texto se muestra después del prefijo del asunto del correo electrónico de error.
+**Asunto del correo electrónico de error:** Permite especificar la línea de asunto de los mensajes de correo electrónico de error enviados para este extremo. Este texto se muestra después del prefijo del asunto del correo electrónico de error.
 
-**Cuerpo del correo electrónico de error:** Permite especificar la primera línea del texto del cuerpo de los mensajes de correo electrónico de error enviados para este extremo.
+**Cuerpo del mensaje de correo electrónico de error:** Permite especificar la primera línea del texto del cuerpo de los mensajes de correo electrónico de error enviados para este extremo.
 
-**Información de resumen de correo electrónico:** Cada mensaje de éxito o error incluye una sección que contiene el texto de correo electrónico original que ha enviado al servidor de Forms. Esta configuración especifica el texto que aparece encima de esa sección.
+**Información de resumen de correo electrónico:** Cada mensaje de éxito o error incluye una sección que contiene el texto original del correo electrónico enviado al servidor de Forms. Esta configuración especifica el texto que aparece encima de esa sección.
 
-**Validar Bandeja De Entrada Antes De Crear/Actualizar Este Extremo:** Cuando se selecciona esta opción, el servidor de Forms comprueba si la configuración de SMTP/POP3 es correcta antes de crear el extremo. Al hacer clic en Agregar, aparece un mensaje que indica si la cuenta de la bandeja de entrada es válida. Si esta opción no está seleccionada, el servidor de AEM Forms crea el extremo sin validar la bandeja de entrada.
+**Validar Bandeja de entrada antes de crear o actualizar este extremo:** Cuando se selecciona esta opción, el servidor de Forms comprueba si la configuración de SMTP/POP3 es correcta antes de crear el extremo. Al hacer clic en Agregar, aparece un mensaje que indica si la cuenta de la bandeja de entrada es válida. Si esta opción no está seleccionada, el servidor de AEM Forms crea el extremo sin validar la bandeja de entrada.
 
 **Codificación del conjunto de caracteres:** Formato de codificación que se utilizará para el mensaje de correo electrónico. El valor predeterminado es UTF-8, que usará la mayoría de los usuarios fuera de Japón. Los usuarios en un entorno japonés pueden elegir ISO2022-JP.
 
-**Carpeta de correos electrónicos enviados con errores:** Especifica un directorio en el que almacenar los resultados si el servidor de correo SMTP no está operativo.
+**Carpeta de correo electrónico enviado con error:** Especifica un directorio en el que almacenar los resultados si el servidor de correo SMTP no está operativo.
 
 ## Configuración de extremo de correo electrónico {#email-endpoint-settings}
 
 Utilice la siguiente configuración para configurar un extremo de correo electrónico.
 
-**Nombre:** Una configuración obligatoria que identifica el punto de conexión. No incluya un carácter &lt; porque trunca el nombre mostrado en Workspace. Si introduce una dirección URL como nombre del extremo, asegúrese de que se ajuste a las reglas de sintaxis especificadas en RFC1738.
+**Nombre:** Una configuración obligatoria que identifica el extremo. No incluya un carácter &lt; porque trunca el nombre mostrado en Workspace. Si introduce una dirección URL como nombre del extremo, asegúrese de que se ajuste a las reglas de sintaxis especificadas en RFC1738.
 
 **Descripción:** Una descripción del extremo. No incluya un carácter &lt; porque trunca la descripción mostrada en Workspace.
 
-**Expresión Cron:** Introduzca una expresión cron si el correo electrónico debe programarse mediante una expresión cron.
+**Expresión cron:** Escriba una expresión cron si el correo electrónico debe programarse mediante una expresión cron.
 
 **Recuento de repeticiones:** Número de veces que el extremo de correo electrónico analiza la carpeta o el directorio. El valor -1 indica un escaneo indefinido. El valor predeterminado es -1.
 
-**Intervalo de repetición:** Frecuencia de análisis que utiliza el receptor para comprobar si hay correo entrante.
+**Intervalo de repetición:** Velocidad de análisis que utiliza el receptor para comprobar el correo entrante.
 
-**Retraso al iniciar el trabajo:** Tiempo de espera para analizar después de iniciar el planificador.
+**Retraso al iniciarse el trabajo:** Tiempo de espera para analizar después de que se inicie el planificador.
 
-**Tamaño del lote:** El número de correos electrónicos que el receptor procesa por análisis para obtener un rendimiento óptimo. El valor -1 indica todos los correos electrónicos. El valor predeterminado es 2.
+**Tamaño de lote:** Número de correos electrónicos que el receptor procesa por análisis para obtener un rendimiento óptimo. El valor -1 indica todos los correos electrónicos. El valor predeterminado es 2.
 
-**Nombre de usuario:** Una configuración obligatoria, que es el nombre de usuario que se utiliza al invocar un servicio de destino desde el correo electrónico. El valor predeterminado es SuperAdmin.
+**Nombre de usuario:** Una configuración obligatoria, que es el nombre de usuario que se usa al invocar un servicio de destino desde el correo electrónico. El valor predeterminado es SuperAdmin.
 
 **Nombre de dominio:** Una configuración obligatoria, que es el dominio del usuario. El valor predeterminado es DefaultDom.
 
@@ -165,75 +165,75 @@ Utilice la siguiente configuración para configurar un extremo de correo electr�
 
 **Patrón de archivo:** Especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones específicas (&amp;ast;.dat, &amp;ast;.xml), nombres específicos (data) o expresiones compuestas en el nombre y la extensión (&amp;ast;).[dD][aA]&#39;port&#39;).
 
-**Destinatarios de trabajo correctos:** Una dirección de correo electrónico a la que se envían mensajes para indicar que los trabajos se han realizado correctamente. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe sender, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, separados por comas (,).
+**Destinatarios de trabajo correctos:** Dirección de correo electrónico a la que se envían mensajes para indicar trabajos correctos. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe sender, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, separados por comas (,).
 
 Para desactivar esta configuración, deje el campo en blanco. En algunos casos, desea almacenar en déclencheur un proceso y no desea recibir una notificación del resultado por correo electrónico.
 
-**Destinatarios del trabajo con errores:** Una dirección de correo electrónico a la que se envían mensajes para indicar trabajos fallidos. De forma predeterminada, siempre se envía un mensaje de trabajo con errores al remitente. Si escribe sender, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, separados por comas (,).
+**Destinatarios del trabajo con errores:** Dirección de correo electrónico a la que se envían mensajes para indicar trabajos con errores. De forma predeterminada, siempre se envía un mensaje de trabajo con errores al remitente. Si escribe sender, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, separados por comas (,).
 
 Para desactivar esta configuración, deje el campo en blanco. En algunos casos, desea almacenar en déclencheur un proceso y no desea recibir una notificación del resultado por correo electrónico.
 
-**Host de bandeja de entrada:** El nombre de host de la bandeja de entrada o la dirección IP del proveedor de correo electrónico que se va a analizar.
+**Host de bandeja de entrada:** Nombre de host de bandeja de entrada o Dirección IP para que el proveedor de correo electrónico analice.
 
 **Puerto de bandeja de entrada:** El puerto que utiliza el servidor de correo electrónico. El valor predeterminado de POP3 es 110 y el de IMAP es 143. Si SSL está habilitado, el valor predeterminado para POP3 es 995 y para IMAP es 993.
 
-**Protocolo de bandeja de entrada:** Protocolo de correo electrónico para el extremo de correo electrónico que se utilizará para analizar la bandeja de entrada. Los valores son IMAP o POP3. El servidor de correo host de bandeja de entrada debe admitir estos protocolos.
+**Protocolo de bandeja de entrada:** Protocolo de correo electrónico para que el extremo de correo electrónico se utilice para analizar la bandeja de entrada. Los valores son IMAP o POP3. El servidor de correo host de bandeja de entrada debe admitir estos protocolos.
 
-**Tiempo de espera de bandeja:** Tiempo de espera, en segundos, para que el proveedor de correo electrónico espere respuestas de la bandeja de entrada.
+**Tiempo de espera de la bandeja de entrada:** Tiempo de espera, en segundos, para que el proveedor de correo electrónico espere las respuestas de la bandeja de entrada.
 
-**Usuario de bandeja de entrada:** El nombre de usuario necesario para iniciar sesión en la cuenta de correo electrónico. Según el servidor de correo electrónico y la configuración, este valor puede ser solo la parte del nombre de usuario del correo electrónico o puede ser la dirección de correo electrónico completa.
+**Usuario de la Bandeja de entrada:** Nombre de usuario necesario para iniciar sesión en la cuenta de correo electrónico. Según el servidor de correo electrónico y la configuración, este valor puede ser solo la parte del nombre de usuario del correo electrónico o puede ser la dirección de correo electrónico completa.
 
-**Contraseña de bandeja de entrada:** Contraseña del usuario de la bandeja de entrada.
+**Contraseña de la Bandeja de entrada:** Contraseña del usuario de la Bandeja de entrada.
 
-**SSL habilitado para POP3/IMAP:** Seleccione esta configuración para obligar al proveedor de correo electrónico a utilizar SSL para analizar la bandeja de entrada. Asegúrese de que el servidor de correo admita SSL.
+**SSL POP3/IMAP habilitado:** Seleccione esta opción para forzar al proveedor de correo electrónico a usar SSL para analizar la bandeja de entrada. Asegúrese de que el servidor de correo admita SSL.
 
-**Host SMTP:** El nombre de host del servidor de correo que el proveedor de correo electrónico utiliza para enviar resultados y mensajes de error.
+**Host SMTP:** Nombre de host del servidor de correo que el proveedor de correo electrónico utiliza para enviar resultados y mensajes de error.
 
-**Puerto SMTP:** El valor predeterminado del puerto SMTP es 25.
+**Puerto SMTP:** El valor predeterminado para el puerto SMTP es 25.
 
-**Usuario de SMTP:** Cuenta de usuario que utiliza el proveedor de correo electrónico cuando envía notificaciones por correo electrónico de resultados y errores.
+**Usuario SMTP:** Cuenta de usuario que el proveedor de correo electrónico debe usar cuando envíe notificaciones por correo electrónico de resultados y errores.
 
-**Contraseña de SMTP:** Contraseña de la cuenta SMTP. Algunos servidores de correo no requieren una contraseña SMTP.
+**Contraseña SMTP:** Contraseña de la cuenta SMTP. Algunos servidores de correo no requieren una contraseña SMTP.
 
 **Enviar desde:** La dirección de correo electrónico (por ejemplo, user@company.com) utilizada para enviar notificaciones por correo electrónico de resultados y errores. Si no especifica un valor Enviar desde, el servidor de correo electrónico intenta determinar la dirección de correo electrónico combinando el valor especificado en la configuración Usuario de SMTP con un dominio predeterminado configurado en el servidor de correo electrónico. Si el servidor de correo electrónico no tiene un dominio predeterminado y no especifica ningún valor para Enviar desde, pueden producirse errores. Para asegurarse de que los mensajes de correo electrónico tengan la dirección remitente correcta, especifique un valor para la configuración Enviar desde.
 
-**SSL de SMTP activado:** Seleccione esta configuración para obligar al proveedor de correo electrónico a utilizar SSL para analizar la bandeja de entrada. Asegúrese de que el servidor de correo admita SSL.
+**SSL SMTP habilitado:** Seleccione esta configuración para forzar al proveedor de correo electrónico a usar SSL para analizar la bandeja de entrada. Asegúrese de que el servidor de correo admita SSL.
 
-**Carpeta de correos electrónicos enviados con errores:** Especifica un directorio en el que almacenar los resultados si el servidor de correo SMTP no está operativo.
+**Carpeta de correo electrónico enviado con error:** Especifica un directorio en el que almacenar los resultados si el servidor de correo SMTP no está operativo.
 
-**asíncrono:** Cuando se establece en sincrónico, se procesan todos los documentos de entrada y se devuelve una sola respuesta. Cuando se establece en asíncrono, se envía una respuesta por cada documento procesado.
+**asincrónico:** Cuando se establece en sincrónico, se procesan todos los documentos de entrada y se devuelve una única respuesta. Cuando se establece en asíncrono, se envía una respuesta por cada documento procesado.
 
 Por ejemplo, se crea un extremo de correo electrónico para un servicio que toma un único documento de Word y devuelve ese documento como un archivo de PDF. Se puede enviar un correo electrónico a la bandeja de entrada del extremo que contiene varios (3) documentos de Word. Cuando se procesan los tres documentos, si el punto de conexión está configurado como sincrónico, se envía un único correo electrónico de respuesta con los tres documentos adjuntos. Si el extremo es asincrónico, se envía un mensaje de correo electrónico de respuesta después de que cada documento de Word se convierta en PDF. El resultado son tres correos electrónicos, cada uno con un archivo adjunto de PDF único.
 
 El valor predeterminado es asíncrono.
 
-**Incluir el cuerpo del correo electrónico original como datos adjuntos:** De forma predeterminada, cuando se envía un correo electrónico al servidor de Forms, el texto original del mensaje se incluye en el cuerpo del mensaje. Para incluir el texto como datos adjuntos, seleccione esta opción.
+**Incluir el cuerpo original del correo electrónico como datos adjuntos:** De forma predeterminada, cuando envía un correo electrónico al servidor de Forms, el texto original del mensaje se incluye en el cuerpo del mensaje. Para incluir el texto como datos adjuntos, seleccione esta opción.
 
-**Utilice la línea de asunto original para los correos electrónicos de resultados:** De forma predeterminada, el servidor de Forms utiliza los valores especificados en la configuración Asunto del correo electrónico de éxito y Asunto del correo electrónico de error como línea de asunto al enviar mensajes de correo electrónico de resultados. Para utilizar en su lugar la misma línea de asunto que el correo electrónico original enviado al servidor, seleccione esta opción.
+**Usar la línea de asunto original para los mensajes de correo electrónico con resultados:** De forma predeterminada, el servidor de Forms usa los valores especificados en la configuración Asunto del mensaje de correo electrónico de éxito y Asunto del correo electrónico de error como línea de asunto al enviar mensajes de correo electrónico con resultados. Para utilizar en su lugar la misma línea de asunto que el correo electrónico original enviado al servidor, seleccione esta opción.
 
-**Asunto de correo electrónico de éxito:** Después de enviar un correo electrónico a un extremo de correo electrónico para iniciar o continuar un proceso, recibe un mensaje de correo electrónico de retorno del servidor de AEM Forms. Si el correo electrónico se ha enviado correctamente, recibirá un mensaje de correo electrónico con el resultado deseado. Si el correo electrónico falla, recibe un correo electrónico que le informa de por qué ha fallado. Esta configuración le permite especificar la línea de asunto de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
+**Asunto del correo electrónico de éxito:** Después de enviar un correo electrónico a un extremo de correo electrónico para iniciar o continuar un proceso, recibirá un mensaje de correo electrónico de retorno del servidor de AEM Forms. Si el correo electrónico se ha enviado correctamente, recibirá un mensaje de correo electrónico con el resultado deseado. Si el correo electrónico falla, recibe un correo electrónico que le informa de por qué ha fallado. Esta configuración le permite especificar la línea de asunto de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
 
-**Cuerpo del correo electrónico de éxito:** Permite especificar el texto del cuerpo de los mensajes de correo electrónico de éxito enviados para este punto de conexión.
+**Cuerpo del mensaje de correo electrónico de éxito:** Permite especificar el texto del cuerpo de los mensajes de correo electrónico de éxito enviados para este extremo.
 
-**Error de prefijo de asunto de correo electrónico:** Permite especificar el texto utilizado al principio de la línea de asunto de los mensajes de correo electrónico de error enviados para este punto de conexión.
+**Prefijo del asunto del correo electrónico de error:** Permite especificar el texto utilizado al principio de la línea de asunto de los mensajes de correo electrónico de error enviados para este extremo.
 
-**Asunto de correo electrónico de error:** Permite especificar la línea de asunto de los mensajes de correo electrónico de error enviados para este extremo. Este texto se muestra después del prefijo del asunto del correo electrónico de error.
+**Asunto del correo electrónico de error:** Permite especificar la línea de asunto de los mensajes de correo electrónico de error enviados para este extremo. Este texto se muestra después del prefijo del asunto del correo electrónico de error.
 
-**Cuerpo del correo electrónico de error:** Permite especificar la primera línea del texto del cuerpo de los mensajes de correo electrónico de error enviados para este extremo.
+**Cuerpo del mensaje de correo electrónico de error:** Permite especificar la primera línea del texto del cuerpo de los mensajes de correo electrónico de error enviados para este extremo.
 
-**Información de resumen de correo electrónico:** Cada mensaje de éxito o error incluye una sección que contiene el texto de correo electrónico original que ha enviado al servidor de Forms. Esta configuración especifica el texto que aparece encima de esa sección.
+**Información de resumen de correo electrónico:** Cada mensaje de éxito o error incluye una sección que contiene el texto original del correo electrónico enviado al servidor de Forms. Esta configuración especifica el texto que aparece encima de esa sección.
 
-**Valide la bandeja de entrada antes de crear o actualizar este punto de conexión:** Cuando se selecciona esta opción, el servidor de Forms comprueba si la configuración de SMTP/POP3 es correcta antes de crear el extremo. Al hacer clic en Agregar, aparece un mensaje que indica si la cuenta de la bandeja de entrada es válida. Si esta opción no está seleccionada, el servidor de AEM Forms crea el extremo sin validar la bandeja de entrada.
+**Validar Bandeja de entrada antes de crear o actualizar este extremo:** Cuando se selecciona esta opción, el servidor de Forms comprueba si la configuración de SMTP/POP3 es correcta antes de crear el extremo. Al hacer clic en Agregar, aparece un mensaje que indica si la cuenta de la bandeja de entrada es válida. Si esta opción no está seleccionada, el servidor de AEM Forms crea el extremo sin validar la bandeja de entrada.
 
 **Nombre de operación:** Esta configuración es obligatoria. Una lista de operaciones que se pueden asignar al extremo de correo electrónico. La operación que seleccione aquí determina qué campos se muestran en las secciones Asignaciones de parámetros de entrada y Asignaciones de parámetros de salida.
 
-**Asignaciones de parámetros de entrada:** Se utiliza para configurar la entrada necesaria para procesar el servicio y la operación. Los dos tipos de entrada son literales y variables:
+**Asignaciones de parámetros de entrada:** Se usa para configurar la entrada necesaria para procesar el servicio y la operación. Los dos tipos de entrada son literales y variables:
 
-**Literal:** El correo electrónico utiliza el valor introducido en el campo a medida que se muestra.
+**Literal:** El correo electrónico utiliza el valor introducido en el campo tal como se muestra.
 
-**Variable:** Puede asignar una cadena desde el asunto del correo electrónico, el cuerpo, el encabezado o la dirección de correo electrónico del remitente. Para ello, utilice una de las siguientes palabras clave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Por ejemplo, si utiliza %SUBJECT%, el contenido del asunto del correo electrónico se utiliza como parámetro de entrada. Para recoger archivos adjuntos, introduzca un patrón de archivo que el extremo de correo electrónico pueda utilizar para seleccionar los documentos adjuntos. Por ejemplo, al introducir &amp;ast;.pdf se selecciona cualquier documento adjunto que tenga la extensión de nombre de archivo .pdf. Al escribir &amp;ast; se selecciona cualquier documento adjunto. Al introducir example.pdf, se selecciona cualquier documento adjunto denominado example.pdf.
+**Variable:** Puede asignar una cadena a partir del asunto, cuerpo, encabezado o dirección de correo electrónico del remitente. Para ello, utilice una de las siguientes palabras clave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Por ejemplo, si utiliza %SUBJECT%, el contenido del asunto del correo electrónico se utiliza como parámetro de entrada. Para recoger archivos adjuntos, introduzca un patrón de archivo que el extremo de correo electrónico pueda utilizar para seleccionar los documentos adjuntos. Por ejemplo, al escribir &amp;ast;.pdf se selecciona cualquier documento adjunto que tenga la extensión de nombre de archivo .pdf. Al introducir &amp;ast; se selecciona cualquier documento adjunto. Al introducir example.pdf, se selecciona cualquier documento adjunto denominado example.pdf.
 
-**Asignaciones de parámetros de salida:** Se utiliza para configurar la salida del servicio y la operación. Los siguientes caracteres de los valores de asignación de parámetros de salida se expanden en el nombre del archivo adjunto:
+**Asignaciones de parámetros de salida:** Se usó para configurar la salida del servicio y la operación. Los siguientes caracteres de los valores de asignación de parámetros de salida se expanden en el nombre del archivo adjunto:
 
 **%F** Representa el nombre de archivo del archivo de origen (sin incluir una extensión).
 
@@ -241,13 +241,13 @@ El valor predeterminado es asíncrono.
 
 Cualquier aparición de la barra invertida (\) se reemplaza por %%.
 
-***nota **: si el mensaje de solicitud de servicio incluye varios archivos adjuntos, no puede utilizar los parámetros %F y %E para la propiedad Asignaciones de parámetros de salida del extremo. Si la respuesta de los servicios devuelve varios archivos adjuntos, no se puede especificar el mismo nombre de archivo para más de un archivo adjunto. Si no sigue estas recomendaciones, el servicio invocado creará los nombres de los archivos devueltos y los nombres no serán predecibles.*
+***nota **: si el mensaje de solicitud de servicio incluye varios archivos adjuntos, no puede usar los parámetros %F y %E para la propiedad Asignaciones de parámetros de salida del extremo. Si la respuesta de los servicios devuelve varios archivos adjuntos, no se puede especificar el mismo nombre de archivo para más de un archivo adjunto. Si no sigue estas recomendaciones, el servicio invocado creará los nombres de los archivos devueltos y los nombres no serán predecibles.*
 
 Los valores disponibles son los siguientes:
 
-**Objeto único:** El proveedor de correo electrónico no tiene el destino de la carpeta de origen; los resultados se devuelven como archivos adjuntos. El patrón es Result/%F.ps y devuelve Result%%sourcefilename.ps como datos adjuntos del nombre de archivo.
+**Objeto único:** El proveedor de correo electrónico no tiene el destino de la carpeta de origen; los resultados se devuelven como datos adjuntos. El patrón es Result/%F.ps y devuelve Result%%sourcefilename.ps como datos adjuntos del nombre de archivo.
 
-**Lista:** El patrón es Result/%F/ y devuelve Result%%sourcefilename%%file1 como datos adjuntos del nombre de archivo.
+**Lista:** El patrón es Result/%F/ y devuelve Result%%sourcefilename%%file1 como archivo adjunto.
 
 **Mapa:** El patrón es Result/%F/ y el destino de origen es Result%%sourcefilename%%file1 y Result%%sourcefilename%%file2. Si la asignación contiene más de un objeto y el patrón es Result/%F.ps, los archivos adjuntos de respuesta son Result%%sourcefilename1.ps (salida 1) y Result%%sourcefilename2.ps (salida 2).
 
@@ -265,8 +265,8 @@ Para que el flujo de trabajo de formularios reciba y administre mensajes de corr
 1. En el cuadro Usuario de SMTP, escriba la cuenta de usuario que el proveedor de correo electrónico utilizará cuando envíe correos electrónicos para obtener resultados y errores. Esta cuenta de usuario puede tener el mismo valor que utilizó para el usuario de la bandeja de entrada.
 1. En el cuadro Contraseña SMTP, escriba la contraseña de la cuenta SMTP.
 1. En la lista Nombre de operación, seleccione invocar.
-1. En la lista attachmentMap, seleccione Variable y tipo `*.*` en el cuadro adyacente. Esto envía todos los archivos adjuntos de los mensajes de correo entrante a una variable de asignación para el proceso de completar tarea.
-1. En la lista mailBody, seleccione variable y tipo `%BODY%` en el cuadro adyacente.
-1. En la lista mailFrom, seleccione Variable y tipo `%SENDER%` en el cuadro adyacente. Esto asigna la dirección del remitente a los datos del proceso de la tarea completa.
+1. En la lista attachmentMap, seleccione Variable y escriba `*.*` en el cuadro adyacente. Esto envía todos los archivos adjuntos de los mensajes de correo entrante a una variable de asignación para el proceso de completar tarea.
+1. En la lista mailBody, seleccione la variable y escriba `%BODY%` en el cuadro adyacente.
+1. En la lista mailFrom, seleccione Variable y escriba `%SENDER%` en el cuadro adyacente. Esto asigna la dirección del remitente a los datos del proceso de la tarea completa.
 1. En el cuadro de resultados, escriba `results`. Esto hace que Complete Task o Start Process devuelvan una cadena de resultado.
 1. Haga clic en Agregar.

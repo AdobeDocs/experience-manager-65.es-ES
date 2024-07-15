@@ -31,11 +31,11 @@ Para crear una página de aterrizaje de newsletter efectiva, debe hacer lo sigui
 >[!NOTE]
 >
 >El Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
->La recomendación es utilizar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
+>Se recomienda usar [Adobe Campaign AEM y la integración con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
 
 ## Creación de una lista para la newsletter {#creating-a-list-for-the-newsletter}
 
-Cree una lista, por ejemplo, **Newsletter de Geometrixx**, en MCM para la newsletter a la que deben suscribirse las personas. La creación de listas se describe en [Creación de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
+Cree una lista, por ejemplo, **Boletín de Geometrixx**, en MCM para el boletín al que las personas deben suscribirse. La creación de listas se describe en [Creación de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
 
 A continuación se muestra un ejemplo de lista:
 
@@ -45,7 +45,7 @@ A continuación se muestra un ejemplo de lista:
 
 Cree un formulario de registro de newsletter que permita a los usuarios suscribirse a las etiquetas. El sitio web de Geometrixx de ejemplo proporciona una página de newsletter en la barra de herramientas de Geometrixx donde puede crear el formulario.
 
-Para crear su propio formulario de newsletter, consulte la información sobre la creación de formularios en la [Documentación de Forms](/help/sites-authoring/default-components.md#form). La newsletter utiliza las etiquetas de la Biblioteca de etiquetas. Para añadir etiquetas adicionales, consulte [Administración de etiquetas](/help/sites-authoring/tags.md#tagadministration).
+Para crear tu propio formulario de newsletter, consulta la información sobre la creación de formularios en la [documentación de Forms](/help/sites-authoring/default-components.md#form). La newsletter utiliza las etiquetas de la Biblioteca de etiquetas. Para agregar etiquetas adicionales, consulte [Administración de etiquetas](/help/sites-authoring/tags.md#tagadministration).
 
 Los campos ocultos en el siguiente ejemplo proporcionan la mínima cantidad de información (correo electrónico); además, puede agregar más campos más adelante, pero esto afectará a la tasa de conversión.
 
@@ -55,9 +55,9 @@ El siguiente ejemplo es un formulario creado en https://localhost:4502/cf#/conte
 
    ![mcm_newsletterpage](assets/mcm_newsletterpage.png)
 
-1. Clic **Editar** en el componente Formulario para configurar el formulario y que vaya a una página de agradecimiento (consulte [Creación de páginas de agradecimiento](#creating-a-thank-you-page)).
+1. Haga clic en **Editar** en el componente Formulario para configurar el formulario y que vaya a una página de agradecimiento (consulte [Creación de páginas de agradecimiento](#creating-a-thank-you-page)).
 
-   ![dc_formstart_thankyou](assets/dc_formstart_thankyou.png)
+   ![dc_formstart_thank](assets/dc_formstart_thankyou.png)
 
 1. Establezca la acción Formulario (que es lo que ocurrirá cuando envíe el formulario) y configure el grupo para asignar usuarios registrados a la lista creada anteriormente (por ejemplo, newsletter de Geometrixx).
 
@@ -65,23 +65,23 @@ El siguiente ejemplo es un formulario creado en https://localhost:4502/cf#/conte
 
 ### Creación de una página de agradecimiento {#creating-a-thank-you-page}
 
-Cuando los usuarios hagan clic **Suscribirse ahora**, desea que una página de agradecimiento se abra automáticamente. Cree la página de agradecimiento en la página de la newsletter de Geometrixx. Después de crear el formulario de la newsletter, edite el componente Formulario y añada la ruta a la página de agradecimiento.
+Cuando los usuarios hagan clic en **Suscribirse ahora**, desearán que se abra automáticamente una página de agradecimiento. Cree la página de agradecimiento en la página de la newsletter de Geometrixx. Después de crear el formulario de la newsletter, edite el componente Formulario y añada la ruta a la página de agradecimiento.
 
-Al enviar la solicitud, el usuario pasa a un **Gracias.** página tras la cual recibirán un correo electrónico. Esta página de agradecimiento se ha creado en /content/geometrixx/en/toolbar/newsletter/thank_you.
+Al enviar la solicitud, el usuario pasará a una página de **Gracias** tras la cual recibirá un correo electrónico. Esta página de agradecimiento se ha creado en /content/geometrixx/en/toolbar/newsletter/thank_you.
 
-![mcm_newsletter_thank_youpage](assets/mcm_newsletter_thankyoupage.png)
+![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
 
 ### Añadir teasers {#adding-teasers}
 
-Añadir [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) para dirigirse a audiencias específicas. Por ejemplo, puede agregar teasers a la página de agradecimiento y a la página de registro de la newsletter.
+Agregue [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) a audiencias específicas de destino. Por ejemplo, puede agregar teasers a la página de agradecimiento y a la página de registro de la newsletter.
 
 Para agregar teasers para crear una página de aterrizaje de newsletter efectiva:
 
-1. Cree un párrafo de teaser para un regalo de registro. Seleccionar **Primero** como estrategia e incluir texto que les informe qué regalo recibirán.
+1. Cree un párrafo de teaser para un regalo de registro. Seleccione **Primero** como estrategia e incluya un texto que les indique qué regalo recibirán.
 
-   ![dc_teaser_thank_you](assets/dc_teaser_thankyou.png)
+   ![dc_teaser_thank](assets/dc_teaser_thankyou.png)
 
-1. Cree un párrafo de teaser para la página de agradecimiento. Seleccionar **Primero** como estrategia e incluir texto que indique que el regalo está en camino.
+1. Cree un párrafo de teaser para la página de agradecimiento. Seleccione **Primero** como estrategia e incluya texto que indique que el regalo está en camino.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 

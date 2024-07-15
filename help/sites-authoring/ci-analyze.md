@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Análisis del rendimiento de la página{#analyzing-page-performance}
 
-Abra el [Perspectiva de contenido](/help/sites-authoring/content-insights.md) para analizar el rendimiento de la página que está creando. Configure el periodo del informe para centrar el análisis.
+Abra la página [Perspectiva de contenido](/help/sites-authoring/content-insights.md) para analizar el rendimiento de la página que está creando. Configure el periodo del informe para centrar el análisis.
 
 ## Abrir Analytics y Recommendations para una página {#opening-analytics-and-recommendations-for-a-page}
 
@@ -30,9 +30,9 @@ Utilice el siguiente procedimiento para ver Analytics y Recommendations de una p
 
    >[!NOTE]
    >
-   >Analytics y Recommendations AEM para una página solo aparecen si ha configurado la configuración de la página de forma que se devuelva el valor de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de [integración con Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
+   >Analytics y Recommendations AEM para una página solo aparecen si ha configurado la integración de [con Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
 
-   ![screen-shot_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
+   ![captura de pantalla_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
 
 ### Modificación del período de informe {#changing-the-reporting-period}
 
@@ -53,7 +53,7 @@ Para cambiar el período de informe de una página de perspectiva de contenido:
 
 1. Si el periodo no aparece en la parte superior de la página, haga clic en el icono Alternar periodo de tiempo.
 
-   ![Alternar intervalo](do-not-localize/chlimage_1-22.png)
+   ![Alternar intervalo de tiempo](do-not-localize/chlimage_1-22.png)
 
 1. Para cambiar la fecha de inicio del período de informe, arrastre el círculo que aparece a la izquierda del área sombreada hasta la fecha de inicio deseada.
 
@@ -85,7 +85,7 @@ El estado de la recomendación SEO indica cuándo se crea la tarea, pero aún no
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Cuando se crea, la tarea aparece en la lista Tareas del usuario. Para obtener información sobre las tareas, consulte [Uso de tareas](/help/sites-authoring/task-content.md).
+Cuando se crea, la tarea aparece en la lista Tareas del usuario. Para obtener información acerca de las tareas, vea [Trabajar con tareas](/help/sites-authoring/task-content.md).
 
 Utilice el siguiente procedimiento para crear una tarea para una recomendación de SEO.
 
@@ -106,6 +106,6 @@ Utilice el siguiente procedimiento para crear una tarea para una recomendación 
    * Prioridad de la tarea: Prioridad de la tarea.
    * Fecha de vencimiento: fecha límite en la que se debe completar la tarea.
 
-   **Nota:** La tarea que se crea también incluye la ruta a la página a la que se aplica la recomendación SEO.
+   **Nota:** La tarea que se crea también incluye la ruta de acceso a la página a la que se aplica la recomendación SEO.
 
 1. Haga clic en Listo para cerrar el mensaje Creación de la tarea.

@@ -19,9 +19,9 @@ AEM Las prácticas recomendadas de creación describen cómo utilizar los recurs
 
 Las siguientes áreas tienen documentación disponible sobre las prácticas recomendadas:
 
-* [Assets](#assets)
+* [Recursos](#assets)
 * [Sites](#sites)
-* [Forms](#forms)
+* [Formularios](#forms)
 
 Para conocer las prácticas recomendadas sobre la administración, la implementación, el mantenimiento o el desarrollo, vea una de las siguientes opciones:
 
@@ -31,15 +31,15 @@ Para conocer las prácticas recomendadas sobre la administración, la implementa
 
 En las tablas siguientes se describen y vinculan documentos específicos.
 
-## Assets {#assets}
+## Recursos {#assets}
 
-Las prácticas recomendadas en Assets, incluidas la funcionalidad Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
+Las prácticas recomendadas en Assets, incluidas la capacidad Dynamic Media y la integración Dynamic Media Classic, se describen en los siguientes temas:
 
 <table>
  <tbody>
   <tr>
    <td>Formatos de archivo</td>
-   <td><a href="/help/assets/assets-file-format-best-practices.md">Prácticas recomendadas para formatos de archivo de Assets</a></td>
+   <td><a href="/help/assets/assets-file-format-best-practices.md">Prácticas recomendadas para los formatos de archivo Assets</a></td>
    <td>Describe las prácticas recomendadas sobre la compatibilidad con archivos en AEM Assets.</td>
   </tr>
   <tr>
@@ -53,7 +53,7 @@ Las prácticas recomendadas en Assets, incluidas la funcionalidad Dynamic Media 
    <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o si se integra con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
-   <td>Recursos multilingües</td>
+   <td>Multi-lingual Assets</td>
    <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Prácticas recomendadas de traducción</a></td>
    <td>AEM Describe las prácticas recomendadas para traducir recursos de forma eficaz.</td>
   </tr>
@@ -64,10 +64,10 @@ Las prácticas recomendadas en Assets, incluidas la funcionalidad Dynamic Media 
 
 La administración y creación del contenido del sitio web tiene algunas prácticas recomendadas descritas a continuación:
 
-Creación: [Herramientas y entorno de creación](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) : Proporciona información general sobre cómo crear páginas.
+Creación: [Herramientas y entorno de creación](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md): proporciona información general sobre cómo crear páginas.
 
-## Forms {#forms}
+## Formularios {#forms}
 
-Formularios adaptables: [Prácticas recomendadas para trabajar con formularios adaptables](/help/forms/using/adaptive-forms-best-practices.md) : Describe las prácticas recomendadas para configurar, crear y personalizar formularios adaptables.
+Formularios adaptables: [Prácticas recomendadas para trabajar con formularios adaptables](/help/forms/using/adaptive-forms-best-practices.md): Describe las prácticas recomendadas para configurar, crear y personalizar formularios adaptables.
 
-formularios de HTML5: [Prácticas recomendadas para diseñar formularios de HTML5](/help/forms/using/best-practices-for-html5-forms.md) : describe las prácticas recomendadas para trabajar en la presentación y el diseño de formularios de HTML5.
+Formularios de HTML 5: [Prácticas recomendadas para diseñar formularios de HTML 5](/help/forms/using/best-practices-for-html5-forms.md): Describe las prácticas recomendadas para trabajar en la presentación y el diseño de formularios de HTML 5.

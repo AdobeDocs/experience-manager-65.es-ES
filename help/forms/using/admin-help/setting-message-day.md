@@ -24,17 +24,17 @@ Si es necesario, puede utilizar las etiquetas de HTML admitidas por Adobe Flash 
 
 * &lt;a> Etiqueta de anclaje
 * &lt;b> Etiqueta en negrita
-* &lt;br> Romper etiqueta
+* &lt;br> Etiqueta de interrupción
 * &lt;font> Etiqueta de fuente
-* &lt;img> Etiqueta de imagen
+* Etiqueta de imagen &lt;img>
 * &lt;i> Etiqueta en cursiva
 * &lt;li> Etiqueta de elemento de lista
 * &lt;p> Etiqueta de párrafo
 * &lt;span> Etiqueta de alcance
-* &lt;textformat> Etiqueta de formato de texto
+* Etiqueta de formato de texto &lt;textformat>
 * &lt;u> Etiqueta de subrayado
 
-Para obtener más información sobre las etiquetas admitidas, consulte la definición del `htmlText` para la clase TextField en el [Referencia del lenguaje Flex](https://flex.apache.org/).
+Para obtener más información acerca de las etiquetas admitidas, vea la definición de la propiedad `htmlText` para la clase TextField en [Referencia del lenguaje Flex](https://flex.apache.org/).
 
 ## Establecer el mensaje del día {#set-the-message-of-the-day}
 
@@ -44,4 +44,4 @@ Para obtener más información sobre las etiquetas admitidas, consulte la defini
 
 >[!NOTE]
 >
->El espacio de trabajo de Flex AEM está obsoleto para la versión de formularios en.
+>Flex Workspace AEM ya no se utiliza para la versión de formularios en la que se puede utilizar el formulario.

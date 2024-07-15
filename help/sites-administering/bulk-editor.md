@@ -29,13 +29,13 @@ El editor en bloque permite una edición eficaz cuando el contexto de la página
 
 >[!NOTE]
 >
->También puede importar contenido en el repositorio, pero de forma predeterminada está desactivado para el Editor por lotes como está disponible en la **Herramientas** consola.
+>También puede importar contenido en el repositorio, pero de forma predeterminada está deshabilitado para el editor en lotes, tal y como está disponible en la consola **Herramientas**.
 
-En esta sección se describe cómo trabajar con el editor en masa en **Herramientas** consola. Normalmente, los administradores utilizan el Editor por lotes para buscar y editar varios elementos. Para ello, rellene la tabla con una consulta GQL y, a continuación, seleccione los elementos de contenido en los que desea trabajar. Los autores suelen utilizar el Editor por lotes como parte de una aplicación de editor por lotes personalizada, accesible a través del [lista de productos](/help/sites-authoring/default-components.md#productlist) componente.
+En esta sección se describe cómo trabajar con el editor en lotes en la consola **Herramientas**. Normalmente, los administradores utilizan el Editor por lotes para buscar y editar varios elementos. Para ello, rellene la tabla con una consulta GQL y, a continuación, seleccione los elementos de contenido en los que desea trabajar. Los autores suelen utilizar el Editor por lotes como parte de una aplicación de Editor por lotes personalizada, a la que se puede acceder mediante el componente [listado de productos](/help/sites-authoring/default-components.md#productlist).
 
 >[!CAUTION]
 >
->Con el [desaprobación de la IU clásica](/help/release-notes/deprecated-removed-features.md) AEM En la versión 6.4, el editor en bloque también se ha quedado obsoleto y, por lo tanto, Adobe no tiene previsto mejorar aún más el editor en bloque.
+>AEM Con la [obsolescencia de la IU clásica](/help/release-notes/deprecated-removed-features.md) en la versión 6.4 de la versión, el editor en masa también se ha quedado obsoleto, por lo que el Adobe no tiene previsto mejorar aún más el editor en masa.
 
 ## Ejemplo de caso de uso para el editor en bloque {#example-use-case-for-the-bulk-editor}
 
@@ -43,8 +43,8 @@ Por ejemplo, si necesita todos los nombres y direcciones de correo electrónico 
 
 En el sitio web del Geometrixx se incluye un ejemplo que ilustra un caso de uso de este tipo:
 
-1. Vaya a **Asistencia** y luego a la página **Satisfacción del servicio al cliente** encuesta.
-1. **Editar** el **Inicio de formulario** párrafo. En el cuadro de diálogo, haga clic en **Avanzadas** , expanda la pestaña **Configuración de acción**, luego haga clic en **Ver datos...**.
+1. Vaya a la página **Asistencia** y luego a la encuesta **Satisfacción con el servicio al cliente**.
+1. **Editar** el párrafo de **Inicio del formulario**. En el cuadro de diálogo, haga clic en la ficha **Avanzado**, expanda **Configuración de acción** y, a continuación, haga clic en **Ver datos...**.
 
    ![Ejemplo de encuesta de satisfacción del cliente](assets/custsatsurvey.png)
 
@@ -65,8 +65,8 @@ El Editor por lotes le permite:
 
 Para utilizar el Editor por lotes para editar varios elementos a la vez:
 
-1. En el **Herramientas** consola, haga clic en **importadores** para expandirla.
-1. Haga doble clic en **Editor por lotes**.
+1. En la consola **Herramientas**, haga clic en la carpeta **importadores** para expandirla.
+1. Haga doble clic en **Editor en lotes**.
 1. Introduzca los requisitos de selección:
 
 <table>
@@ -81,11 +81,11 @@ Para utilizar el Editor por lotes para editar varios elementos a la vez:
   </tr>
   <tr>
    <td>Parámetros de consulta</td>
-   <td>Con los parámetros GQL, introduzca la cadena de búsqueda que desea que busque el Editor por lotes en el repositorio. Por ejemplo, <code>type:Page</code> busca todas las páginas de la ruta raíz, <code>text:professional</code> busca todas las páginas que contengan la palabra "profesional", y <code>"jcr:title":English</code> busca todas las páginas que tengan el título en "inglés". Solo puede buscar cadenas.</td>
+   <td>Con los parámetros GQL, introduzca la cadena de búsqueda que desea que busque el Editor por lotes en el repositorio. Por ejemplo, <code>type:Page</code> busca todas las páginas en la ruta de acceso raíz, <code>text:professional</code> busca todas las páginas que contengan la palabra "profesional" y <code>"jcr:title":English</code> busca todas las páginas que tengan el título en "inglés". Solo puede buscar cadenas.</td>
   </tr>
   <tr>
    <td>Casilla Modo de contenido</td>
-   <td>Active esta casilla de verificación para poder leer las propiedades dentro del <code>jcr:content</code> subnodo de los resultados de búsqueda si existe. Se utiliza solo para páginas. Los nombres de propiedad llevan el prefijo <code>"jcr:content/"</code></td>
+   <td>Active esta casilla de verificación para poder leer las propiedades dentro del subnodo <code>jcr:content</code> de los resultados de búsqueda, si existe. Se utiliza solo para páginas. Los nombres de propiedad llevan el prefijo <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Propiedades/Columnas</td>
@@ -93,16 +93,16 @@ Para utilizar el Editor por lotes para editar varios elementos a la vez:
   </tr>
   <tr>
    <td>Columnas y propiedades personalizadas</td>
-   <td>Introduzca cualquier otra propiedad que no aparezca en la lista de <strong>Propiedades/Columnas</strong> field. Estas propiedades personalizadas aparecen en el panel de resultados. Puede agregar varias propiedades utilizando una coma para separar las propiedades. <i>Nota:</i> AEM Si agrega una propiedad personalizada que aún no existe, WCM muestra una celda vacía en la pantalla de WCM, en la que se muestra el nombre de la propiedad que aún no existe. Al modificar la celda vacía y guardarla, la propiedad se agrega al nodo. La propiedad recién creada debe respetar las restricciones de tipo de nodo y los espacios de nombres de propiedad.</td>
+   <td>Escriba cualquier otra propiedad que no aparezca en el campo <strong>Propiedades/Columnas</strong>. Estas propiedades personalizadas aparecen en el panel de resultados. Puede agregar varias propiedades utilizando una coma para separar las propiedades. AEM <i>Nota:</i> Si agrega una propiedad personalizada que aún no existe, WCM muestra una celda vacía en la pantalla de WCM. Al modificar la celda vacía y guardarla, la propiedad se agrega al nodo. La propiedad recién creada debe respetar las restricciones de tipo de nodo y los espacios de nombres de propiedad.</td>
   </tr>
  </tbody>
 </table>
 
 Por ejemplo:
 
-![Opciones de filtro del editor en lotes](assets/searchfilter.png)
+![Opciones de filtro de editor en lotes](assets/searchfilter.png)
 
-1. Clic **Buscar**. El Editor por lotes muestra los resultados.
+1. Haga clic en **Buscar**. El Editor por lotes muestra los resultados.
 En el ejemplo anterior, todas las páginas que cumplen los criterios de búsqueda se devuelven y se muestran con las columnas solicitadas.
 
    ![Resultados del editor en lotes](assets/chlimage_1-39.png)
@@ -111,19 +111,19 @@ En el ejemplo anterior, todas las páginas que cumplen los criterios de búsqued
 
    ![Edición en lotes](assets/srchresultedit.png)
 
-1. Clic **Guardar** para guardar los cambios (la variable **Guardar** se activa después de editar una celda).
+1. Haga clic en **Guardar** para guardar los cambios (el botón **Guardar** se activará después de haber editado una celda).
 
    >[!CAUTION]
    >
-   >Los cambios que realice aquí se escriben en el contenido del repositorio; por ejemplo, la página a la que se hace referencia en **Ruta**.
+   >Los cambios que realice aquí se escribirán en el contenido del repositorio; por ejemplo, la página a la que se hace referencia en **Ruta**.
 
 #### Parámetros de consulta GQL adicionales {#additional-gql-query-parameters}
 
-* **ruta:** solo buscar nodos debajo de esta ruta. Si especifica más de un término con un prefijo de ruta, solo se tendrá en cuenta el último.
-* **tipo:** solo devuelven nodos del tipo de nodo dado. Esto incluye los tipos principal y de mezcla. Puede especificar varios tipos de nodos separados por comas. GQL devuelve nodos que son de cualquiera de los tipos especificados.
-* **pedido:** ordene el resultado según las propiedades dadas. Puede especificar varios nombres de propiedades separados por comas. Para ordenar el resultado en orden descendente, simplemente anteponga un signo menos al nombre de la propiedad. Por ejemplo, order:-name. El uso de un signo más devuelve el resultado en orden ascendente, que también es el valor predeterminado.
-* **límite:** limita el número de resultados mediante un intervalo. Por ejemplo, límite:10..20 El intervalo está basado en cero, inicio es inclusivo y fin es exclusivo. También puede especificar una apertura `interval:limit:10..` o `limit:..20`
-Si se omiten los puntos y solo se especifica un valor, GQL devuelve como máximo este número de resultados. Por ejemplo, `limit:10` (devuelve los diez primeros resultados).
+* **ruta de acceso:** solo busca nodos debajo de esta ruta de acceso. Si especifica más de un término con un prefijo de ruta, solo se tendrá en cuenta el último.
+* **tipo:** solo devuelve nodos del tipo de nodo dado. Esto incluye los tipos principal y de mezcla. Puede especificar varios tipos de nodos separados por comas. GQL devuelve nodos que son de cualquiera de los tipos especificados.
+* **ordenar:** ordenar el resultado por las propiedades dadas. Puede especificar varios nombres de propiedades separados por comas. Para ordenar el resultado en orden descendente, simplemente anteponga un signo menos al nombre de la propiedad. Por ejemplo, order:-name. El uso de un signo más devuelve el resultado en orden ascendente, que también es el valor predeterminado.
+* **límite:** limita el número de resultados usando un intervalo. Por ejemplo, límite:10..20 El intervalo está basado en cero, inicio es inclusivo y fin es exclusivo. También puede especificar un `interval:limit:10..` o `limit:..20` abierto
+Si se omiten los puntos y solo se especifica un valor, GQL devuelve como máximo este número de resultados. Por ejemplo, `limit:10` (devuelve los primeros diez resultados).
 
 ### Exportación de contenido {#exporting-content}
 
@@ -132,13 +132,13 @@ Si es necesario, exporte el contenido a una hoja de cálculo de Excel para reali
 Para exportar contenido:
 
 1. Busque contenido como se describe en [Búsqueda y edición de contenido](#searching-and-editing-content).
-1. Clic **Exportar** para poder exportar los cambios a una hoja de cálculo de Excel separada por tabulaciones. AEM WCM le preguntará dónde desea descargar el archivo.
+1. Haga clic en **Exportar** para poder exportar los cambios a una hoja de cálculo de Excel separada por tabuladores. AEM WCM le preguntará dónde desea descargar el archivo.
 
    >[!NOTE]
    >
-   >De forma predeterminada, los cambios se codifican en [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (también conocido como CP-1252). Puede marcar UTF-8 para exportar los cambios en UTF-8.
+   >De manera predeterminada, los cambios se codifican en [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (también conocido como CP-1252). Puede marcar UTF-8 para exportar los cambios en UTF-8.
 
-   ![Exportación de resultados](assets/srchrsesultexport.png)
+   ![Exportando resultados](assets/srchrsesultexport.png)
 
 1. Seleccione la ubicación y confirme que desea descargar el archivo.
 1. Después de descargar el archivo, puede abrirlo desde el programa de hoja de cálculo, por ejemplo, Microsoft® Excel. El programa de hoja de cálculo importa el archivo y lo convierte a un formato de hoja de cálculo.
@@ -147,7 +147,7 @@ Para exportar contenido:
 
 ### Importación de contenido {#importing-content}
 
-De forma predeterminada, la funcionalidad de importación está oculta al abrir el Editor por lotes. Simplemente añadiendo el parámetro `hib=false` a la dirección URL muestra el **Importar** en la página Editor por lotes. Puede importar contenido desde cualquier archivo separado por tabulaciones ( `.tsv`) archivo. Para que la importación funcione correctamente, los encabezados de columna (primera fila de celdas) deben coincidir con los encabezados de columna de la tabla a la que se va a importar.
+De forma predeterminada, la funcionalidad de importación está oculta al abrir el Editor por lotes. Al agregar el parámetro `hib=false` a la dirección URL, se muestra el botón **Importar** en la página Editor por lotes. Puede importar contenido de cualquier archivo separado por tabulaciones (`.tsv`). Para que la importación funcione correctamente, los encabezados de columna (primera fila de celdas) deben coincidir con los encabezados de columna de la tabla a la que se va a importar.
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ De forma predeterminada, la funcionalidad de importación está oculta al abrir 
 Para importar contenido:
 
 1. Abra el Editor por lotes.
-1. Añadir `?hib=false` a la dirección URL, por ejemplo:
+1. Agregue `?hib=false` a la dirección URL, por ejemplo:
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 1. Haga clic en **Importar**.
-1. Seleccione el `.tsv` archivo. Los datos se importan en el repositorio.
+1. Seleccione el archivo `.tsv`. Los datos se importan en el repositorio.

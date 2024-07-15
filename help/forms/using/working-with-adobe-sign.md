@@ -132,15 +132,15 @@ Realice los siguientes pasos para agregar campos a un formulario adaptable y per
    >
    >
 
-1. Seleccione el **[!UICONTROL Bloque de Adobe Sign]** y seleccione el componente **Editar** ![aem_6_3_edit](assets/aem_6_3_edit.png) icono. Muestra las opciones para agregar campos y formatear la apariencia de un campo.
+1. Seleccione el componente **[!UICONTROL Bloque de Adobe Sign]** y seleccione el icono **Editar** ![aem_6_3_edit](assets/aem_6_3_edit.png). Muestra las opciones para agregar campos y formatear la apariencia de un campo.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** Seleccione y agregue campos de [!DNL Adobe Sign]. **B.** Amplíe el bloque [!DNL Adobe Sign] a vista de pantalla completa.
 
-1. Seleccione el **[!UICONTROL Adobe Sign] Campo** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) icono. Muestra las opciones para seleccionar y agregar campos de [!DNL Adobe Sign].
+1. Seleccione el icono **[!UICONTROL Adobe Sign] Field** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png). Muestra las opciones para seleccionar y agregar campos de [!DNL Adobe Sign].
 
-   Expanda el **[!UICONTROL Tipo]** campo desplegable para seleccionar una [!DNL Adobe Sign] y seleccione el campo Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para añadir el campo seleccionado a [!DNL Adobe Sign] Bloque. El campo desplegable **[!UICONTROL Tipo]** incluye los tipos de campo Firma, Información de firmante y Datos. La integración de [!DNL Adobe Sign] con AEM [!DNL Forms] admite campos enumerados solo en el cuadro desplegable [!UICONTROL Tipo]. Para obtener información detallada sobre los campos de [!DNL Adobe Sign], consulte [Documentación de Adobe Sign](https://helpx.adobe.com/es/sign/help/field-types.html).
+   Amplíe el campo desplegable **[!UICONTROL Tipo]** para seleccionar un campo de [!DNL Adobe Sign] y seleccione el icono de ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) Listo para agregar el campo seleccionado al bloque de [!DNL Adobe Sign]. El campo desplegable **[!UICONTROL Tipo]** incluye los tipos de campo Firma, Información de firmante y Datos. La integración de [!DNL Adobe Sign] con AEM [!DNL Forms] admite campos enumerados solo en el cuadro desplegable [!UICONTROL Tipo]. Para obtener información detallada sobre los campos de [!DNL Adobe Sign], consulte [Documentación de Adobe Sign](https://helpx.adobe.com/es/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -182,7 +182,7 @@ Siga estos pasos para seleccionar un servicio en la nube y el orden de firma:
 
    En orden simultáneo, varios firmantes pueden firmar un formulario a la vez.
 
-1. [Agregar firmantes a un formulario adaptable](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) y seleccione el botón Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios.
+1. [Agregue firmantes a un formulario adaptable](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) y seleccione el icono Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios.
 
 
 ### Agregar firmantes a un formulario adaptable {#addsignerstoanadaptiveform}
@@ -191,7 +191,7 @@ Solo se puede tener un firmante o varios firmantes para un formulario adaptable.
 
 1. En el explorador de contenido, seleccione **[!UICONTROL Contenedor de formulario]** y seleccione el icono **[!UICONTROL Configurar]** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades con las propiedades del contenedor de formularios adaptables.
 1. En el navegador de propiedades, amplíe el acordeón **[!UICONTROL Firma electrónica]** y seleccione la opción **[!UICONTROL Habilitar Adobe Sign]**. Se habilita [!DNL Adobe Sign] para un formulario adaptable.
-1. Seleccionar **[!UICONTROL Agregar signatario]** bajo **[!UICONTROL Configuración del signatario]**. Agrega un firmante al formulario adaptable. Puede agregar varios firmantes [!DNL Adobe Sign] a un formulario adaptable.
+1. Seleccione **[!UICONTROL Agregar firmante]** en **[!UICONTROL Configuración del firmante]**. Agrega un firmante al formulario adaptable. Puede agregar varios firmantes [!DNL Adobe Sign] a un formulario adaptable.
    ![phone-details](assets/phone-details.png)
 
 1. Haga clic en el icono **Editar** ![aem_6_3_edit](assets/aem_6_3_edit.png) para especificar la siguiente información sobre el firmante:
@@ -200,7 +200,7 @@ Solo se puede tener un firmante o varios firmantes para un formulario adaptable.
 
    * **[!UICONTROL ¿El firmante y quien rellena el formulario son la misma persona?]:** Seleccione **Sí**, si la persona que rellena el formulario y el primer firmante son la misma persona. Si la opción se establece en **No,** a continuación, no utilice el componente paso de firma en el formulario adaptable. Si el formulario contiene un componente Paso de firma, el campo se establece automáticamente como Sí.
 
-   * **[!UICONTROL Dirección de correo electrónico del firmante]:** Especifique la dirección de correo electrónico del firmante. El firmante recibe los documentos/formularios a firmar en la dirección de correo electrónico especificada. Puede elegir utilizar una dirección de correo electrónico proporcionada en un campo de formulario, en el perfil de AEM del usuario que ha iniciado sesión o escribir manualmente una dirección de correo electrónico. Es un paso obligatorio. Asegúrese de que la dirección de correo electrónico del primer firmante o del único firmante (si hay solo uno) no sea idéntica a [!DNL Adobe Sign] AEM cuenta utilizada para configurar servicios en la nube de.
+   * **[!UICONTROL Dirección de correo electrónico del firmante]:** Especifique la dirección de correo electrónico del firmante. El firmante recibe los documentos/formularios a firmar en la dirección de correo electrónico especificada. Puede elegir utilizar una dirección de correo electrónico proporcionada en un campo de formulario, en el perfil de AEM del usuario que ha iniciado sesión o escribir manualmente una dirección de correo electrónico. Es un paso obligatorio. AEM Asegúrese de que la dirección de correo electrónico del primer firmante o del único firmante (si hay solo uno) no sea idéntica al de la cuenta de [!DNL Adobe Sign] utilizada para configurar los servicios en la nube de.
 
    * **[!UICONTROL Método de autenticación del firmante]:** Especifique el método para autenticar a un usuario antes de abrir un formulario para su firma. Puede elegir entre teléfono, base de conocimiento y autenticación social basada en identidad. Para Adobe Acrobat Sign Solutions para Administración Pública, solo están disponibles las opciones de autenticación por teléfono y basada en conocimientos.
 
@@ -216,7 +216,7 @@ Solo se puede tener un firmante o varios firmantes para un formulario adaptable.
 
    La imagen anterior tiene dos ejemplos del bloque [!DNL Adobe Sign]: Información personal y detalles de Office
 
-   Seleccione el botón Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icono. Se agrega y configura el firmante.
+   Seleccione el icono Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). Se agrega y configura el firmante.
 
 ### Seleccionar la acción de envío para un formulario adaptable {#selectsubmitactionforanadaptiveform}
 
@@ -242,13 +242,13 @@ Después de [editar las propiedades del formulario adaptable para Adobe Sign](..
 
    ![Bloque de firma](assets/sign-block-new.png)
 
-1. Seleccione el **[!UICONTROL Bloque de Adobe Sign]** y seleccione el componente **Editar** ![aem_6_3_edit](assets/aem_6_3_edit.png) icono. Muestra las opciones para agregar campos y formatear la apariencia de un campo.
+1. Seleccione el componente **[!UICONTROL Bloque de Adobe Sign]** y seleccione el icono **Editar** ![aem_6_3_edit](assets/aem_6_3_edit.png). Muestra las opciones para agregar campos y formatear la apariencia de un campo.
 
    ![adobe-sign-block-select-fields](assets/adobe-sign-block-select-fields.png)
 
    **A.** Seleccione y agregue campos de [!DNL Adobe Sign]. **B.** Amplíe el bloque [!DNL Adobe Sign] a vista de pantalla completa.
 
-1. Seleccione el **[!UICONTROL Campo de Adobe Sign]** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) icono. Muestra las opciones para seleccionar y agregar campos de [!DNL Adobe Sign].
+1. Seleccione el icono **[!UICONTROL Campo de Adobe Sign]** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png). Muestra las opciones para seleccionar y agregar campos de [!DNL Adobe Sign].
 
    Amplíe el campo desplegable **[!UICONTROL Tipo]** para seleccionar **[!UICONTROL Firma digital]** y seleccione el icono **Listo** para agregar el campo seleccionado al bloque de [!DNL Adobe Sign].
 
@@ -258,7 +258,7 @@ Después de [editar las propiedades del formulario adaptable para Adobe Sign](..
 
    Aplicar firmas digitales al formulario adaptable mediante:
 
-   * Firmas en la nube: firmar con [ID digital](https://helpx.adobe.com/es/sign/kb/digital-certificate-providers.html) alojado por un proveedor de servicios de confianza. La opción Firma en la nube no está disponible para Adobe Acrobat Sign Solutions para Administración Pública.
+   * Firmas en la nube: firme con un [ID digital](https://helpx.adobe.com/es/sign/kb/digital-certificate-providers.html) alojado por un proveedor de servicios de confianza. La opción Firma en la nube no está disponible para Adobe Acrobat Sign Solutions para Administración Pública.
 
    * Adobe Acrobat o Reader: descargue y abra el documento con Adobe Acrobat o Reader para firmarlo con una tarjeta inteligente, un token USB o un ID digital basado en archivos.
 
@@ -285,7 +285,7 @@ Utilice el componente Paso de firma para proporcionar un área donde firmar elec
 Realice los siguientes pasos para configurar el componente Paso de firma:
 
 1. Arrastre y suelte el componente **[!UICONTROL Paso de firma]** del explorador de componentes al formulario.
-1. Seleccione el componente del paso Firma recién agregado y seleccione el **Configurar** ![configurar](assets/configure.png) icono. Se abrirá el explorador de propiedades, donde verá las propiedades del Paso de firma. Configure las siguientes propiedades:
+1. Seleccione el componente del paso Firma recién agregado y seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del Paso de firma. Configure las siguientes propiedades:
 
    * **[!UICONTROL Nombre]**: Especifique el nombre del componente.
 
@@ -299,7 +299,7 @@ Realice los siguientes pasos para configurar el componente Paso de firma:
 
    * **[!UICONTROL Clase CSS]**: Especifique la clase CSS para el componente.
 
-   Seleccione el botón Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios.
+   Seleccione el icono Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios.
 
    ![Paso de firma](assets/signature_step_new.png)
 
@@ -354,7 +354,7 @@ Cuando el servicio de [!DNL Adobe Sign] está configurado para un formulario ada
 * Asegúrese de que la aplicación API en el servidor [!DNL Adobe Sign] utilizada para configurar [!DNL Adobe Sign] Cloud Service tiene los permisos necesarios.
 * Si utiliza varios servicios de [!DNL Adobe Sign] Cloud Services, señale la **[!UICONTROL URL oAuth]** de todos los servicios al mismo sistema para **[!UICONTROL compartir de Adobe Sign]**.
 
-* Use direcciones de correo electrónico independientes para configurar la cuenta de [!DNL Adobe Sign] y para el primer y único firmante. La dirección de correo electrónico del primer firmante o del único firmante (si hay solo uno) no puede ser idéntica a [!DNL Adobe Sign] AEM cuenta utilizada para configurar servicios en la nube de.
+* Use direcciones de correo electrónico independientes para configurar la cuenta de [!DNL Adobe Sign] y para el primer y único firmante. AEM La dirección de correo electrónico del primer firmante o del único firmante (si hay solo uno) no puede ser idéntica al de la cuenta de [!DNL Adobe Sign] utilizada para configurar los servicios en la nube de.
 
 ### El flujo de trabajo de AEM [!DNL Forms] configurado para un formulario adaptable habilitado para [!DNL Adobe Sign] no se inicia {#adobe-sign-aem-form-workflow-failures}
 

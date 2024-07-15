@@ -27,10 +27,10 @@ Adobe Experience Platform Launch es la forma recomendada de implementar Analytic
 
 ## Tutorial {#tutorial}
 
-SPA Para comprender cómo integrar su con Adobe Experience Platform Launch, consulte [este artículo y tutorial de la base de conocimiento](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es), que le guía a través de la configuración de Launch e implementa el Experience Cloud de en, creado con Angular o React.
+SPA Para entender cómo integrar su con Adobe Experience Platform Launch, consulte [este artículo y tutorial de la base de conocimiento](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es), que le guiará a través de la configuración de Launch e implementará el Experience Cloud en, generado con Angular o React.
 
 >[!NOTE]
 >
 >La BC a la que se hace referencia se ha creado para habilitar la integración de Adobe Experience Platform Launch con las que no utilizan el Editor de código de Adobe Experience Manager SPA (SPA Editor). Estos métodos también deben permitir que la integración de Adobe Experience Platform Launch SPA SPA coexista con los creados para utilizar el Editor de.
 >
->SPA No se ha explorado completamente el uso de Redux junto con las bibliotecas de JavaScript. SPA La compatibilidad con Redux está prevista en una versión futura del Editor de la.
+>No se ha explorado completamente el uso de Redux junto con las bibliotecas de JavaScript SPA. SPA La compatibilidad con Redux está prevista en una versión futura del Editor de la.

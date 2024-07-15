@@ -733,7 +733,7 @@ var c = {
 >Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
 -->
 
-También puede utilizar funciones personalizadas en el editor de reglas. Para obtener instrucciones sobre la creación de funciones personalizadas, consulte el artículo [Funciones personalizadas en Forms adaptable](/help/forms/using/create-and-use-custom-functions.md).
+También puede utilizar funciones personalizadas en el editor de reglas. Para obtener instrucciones sobre cómo crear funciones personalizadas, consulte el artículo [Funciones personalizadas en Forms adaptable](/help/forms/using/create-and-use-custom-functions.md).
 
 ## Administrar reglas {#manage-rules}
 
@@ -748,7 +748,7 @@ Puede realizar las siguientes acciones en reglas:
 * **Reordenar**: cualquier regla nueva que cree se apilará en la parte inferior de la lista de reglas. Las reglas se ejecutan de arriba a abajo. La regla de la parte superior se ejecuta primero, seguida de otras reglas del mismo tipo. Por ejemplo, si tiene las reglas When, Show, Enable y When en las posiciones primera, segunda, tercera y cuarta desde la parte superior, respectivamente, la regla When en la parte superior se ejecuta primero, seguida de la regla When en la cuarta posición. A continuación, se ejecutan las reglas Mostrar y Habilitar.
 Puede cambiar el orden de una regla al pulsar ![sort-rules](assets/sort-rules.png) o arrástrela hasta el orden deseado en la lista.
 
-* **Editar**: para editar una regla, active la casilla de verificación situada junto al título de la misma. Aparecerán las opciones para editar y eliminar la regla. Seleccionar **Editar** para abrir la regla seleccionada en el editor de reglas en modo visual o editor de código, según el modo utilizado para crearla.
+* **Editar**: para editar una regla, active la casilla de verificación situada junto al título de la misma. Aparecerán las opciones para editar y eliminar la regla. Seleccione **Editar** para abrir la regla seleccionada en el editor de reglas en modo visual o editor de código, según el modo utilizado para crearla.
 
 * **Eliminar**: para eliminar una regla, selecciónela y presione **Eliminar**.
 

@@ -20,8 +20,8 @@ ht-degree: 1%
 
 En esta sección, cree lo siguiente:
 
-* El **[plantilla](#createthepagetemplate)** que se utiliza para crear páginas de contenido en el sitio web de ejemplo.
-* El **[componente y script](#create-the-template-s-rendering-component)** que se utiliza para procesar las páginas del sitio web.
+* La **[plantilla](#createthepagetemplate)** que se usa para crear páginas de contenido en el sitio web de ejemplo.
+* El **[componente y script](#create-the-template-s-rendering-component)** que se usa para procesar las páginas del sitio web.
 
 ## Creación de la plantilla de contenido {#create-the-content-template}
 
@@ -40,13 +40,13 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
    * Título: `An SCF Sandbox Play Template`
    * Descripción: `An SCF Sandbox template for play pages`
    * Tipo de medio: `an-scf-sandbox/components/playpage`
-   * Clasificación: &lt;leave as=&quot;&quot; default=&quot;&quot;>
+   * Clasificación: &lt;dejar como predeterminado>
 
    Label se utiliza para el nombre del nodo.
 
-   El Tipo de recurso aparece en la `playpage`de `jcr:content` nodo como propiedad `sling:resourceType`. Identifica el componente (recurso) que procesa el contenido cuando un explorador lo solicita.
+   El tipo de recurso aparece en el nodo `jcr:content` de `playpage` como la propiedad `sling:resourceType`. Identifica el componente (recurso) que procesa el contenido cuando un explorador lo solicita.
 
-   En este caso, todas las páginas creadas con `playpage` Las plantillas son procesadas por `an-scf-sandbox/components/playpage` componente. Por convención, la ruta al componente es relativa, lo que permite a Sling buscar el recurso primero en la `/apps` y, si no se encuentra, en la carpeta `/libs` carpeta.
+   En este caso, el componente `an-scf-sandbox/components/playpage` procesa todas las páginas creadas con la plantilla `playpage`. De forma predeterminada, la ruta de acceso al componente es relativa, lo que permite a Sling buscar el recurso primero en la carpeta `/apps` y, si no se encuentra, en la carpeta `/libs`.
 
    ![create-content-template](assets/create-content-template-1.png)
 
@@ -54,13 +54,13 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
 
    Haga clic en **[!UICONTROL Siguiente]**.
 
-1. &quot;Rutas permitidas&quot; se refiere a las rutas de las páginas que utilizan esta plantilla, de modo que la plantilla se enumera para la variable **[!UICONTROL Nueva página]** diálogo.
+1. &quot;Rutas permitidas&quot; se refiere a las rutas de las páginas que usan esta plantilla, de modo que la plantilla se enumera para el cuadro de diálogo **[!UICONTROL Nueva página]**.
 
-   Para añadir una ruta, haga clic en el botón &quot;+&quot; `+` y tipo `/content(/.&ast;)?` en el cuadro de texto que aparece. Si utiliza copiar/pegar, asegúrese de que no haya espacios iniciales o finales.
+   Para agregar una ruta de acceso, haga clic en el botón más `+` y escriba `/content(/.&ast;)?` en el cuadro de texto que aparece. Si utiliza copiar/pegar, asegúrese de que no haya espacios iniciales o finales.
 
-   Nota: El valor de la propiedad de ruta permitida es un *expresión regular*. Las páginas de contenido que tienen una ruta que coincide con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta del **/content** y todas sus subpáginas.
+   Nota: El valor de la propiedad de ruta de acceso permitida es una *expresión regular*. Las páginas de contenido que tienen una ruta que coincide con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta de acceso de la carpeta **/content** y todas sus subpáginas.
 
-   Cuando un autor crea una página a continuación `/content`, el `playpage` La plantilla titulada &quot;An SCF Sandbox Page Template&quot; aparece en una lista de plantillas disponibles para su uso.
+   Cuando un autor crea una página por debajo de `/content`, la plantilla `playpage` titulada &quot;Una plantilla de página de espacio aislado de SCF&quot; aparece en una lista de plantillas disponibles para usar.
 
    Una vez creada la página raíz a partir de la plantilla, el acceso a la plantilla podría restringirse a este sitio web editando la propiedad para incluir la ruta raíz en la expresión regular.
 
@@ -70,40 +70,40 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
 
 1. Haga clic en **[!UICONTROL Siguiente]**.
 
-   Clic **[!UICONTROL Siguiente]** en el **[!UICONTROL Principales permitidos]** panel.
+   Haga clic en **[!UICONTROL Siguiente]** en el panel **[!UICONTROL Padres permitidos]**.
 
-   Clic **[!UICONTROL Siguiente]** en el **[!UICONTROL Elementos secundarios permitidos]** panel.
+   Haga clic en **[!UICONTROL Siguiente]** en el panel **[!UICONTROL Elementos secundarios permitidos]**.
 
-   Haz clic en **[!UICONTROL OK]**.
+   Haga clic en **[!UICONTROL OK]**.
 
-1. Después de hacer clic en Aceptar y terminar de crear la plantilla, observe los triángulos rojos que se muestran en las esquinas de los valores de la ficha Propiedades para la nueva plantilla `playpage` plantilla. Estos triángulos rojos indican ediciones que no se han guardado.
+1. Después de hacer clic en Aceptar y terminar de crear la plantilla, observe los triángulos rojos que se muestran en las esquinas de los valores de la ficha Propiedades para la nueva plantilla `playpage`. Estos triángulos rojos indican ediciones que no se han guardado.
 
-   Clic **[!UICONTROL Guardar todo]** para guardar la nueva plantilla en el repositorio.
+   Haga clic en **[!UICONTROL Guardar todo]** para guardar la nueva plantilla en el repositorio.
 
    ![verify-content-template](assets/verify-content-template.png)
 
 ### Crear el componente de procesamiento de la plantilla {#create-the-template-s-rendering-component}
 
-Cree el *componente* que define el contenido y procesa cualquier página creada en función de la variable [plantilla de página de reproducción](#createthepagetemplate).
+Cree el *componente* que define el contenido y procesa cualquier página creada en función de la [plantilla playpage](#createthepagetemplate).
 
-1. En CRXDE Lite, haga clic con el botón derecho **`/apps/an-scf-sandbox/components`** y haga clic en **[!UICONTROL Crear > Componente]**.
-1. Estableciendo el nombre del nodo (Label) en *página de reproducción*, la ruta al componente es
+1. En el CRXDE Lite, haga clic con el botón secundario en **`/apps/an-scf-sandbox/components`** y haga clic en **[!UICONTROL Crear > Componente]**.
+1. Al establecer el nombre del nodo (Label) en *playpage*, la ruta al componente es
 
    `/apps/an-scf-sandbox/components/playpage`
 
-   que corresponde al Tipo de recurso de la plantilla de página de reproducción (opcionalmente menos el inicial) **`/apps/`** parte de la ruta).
+   que corresponde al Tipo de recurso de la plantilla de página de reproducción (opcionalmente menos la parte inicial **`/apps/`** de la ruta).
 
-   En el **[!UICONTROL Crear componente]** , escriba los siguientes valores de propiedad:
+   En el cuadro de diálogo **[!UICONTROL Crear componente]**, escriba los siguientes valores de propiedad:
 
    * Etiqueta: **página de reproducción**
    * Título: **Un componente de reproducción de zona protegida SCF**
-   * Descripción: **Este es el componente que procesa el contenido de una página de zona protegida SCF.**
-   * Supertipo: *&lt;leave blank=&quot;&quot;>*
-   * Grupo: *&lt;leave blank=&quot;&quot;>*
+   * Descripción: **Este es el componente que procesa el contenido de una página de espacio aislado de SCF.**
+   * Supertipo: *&lt;dejar en blanco>*
+   * Grupo: *&lt;dejar en blanco>*
 
    ![create-template-component](assets/create-template-component.png)
 
-1. Clic **[!UICONTROL Siguiente]** hasta que **[!UICONTROL Elementos secundarios permitidos]** aparece el panel del cuadro de diálogo:
+1. Haga clic en **[!UICONTROL Siguiente]** hasta que aparezca el panel **[!UICONTROL Elementos secundarios permitidos]** del cuadro de diálogo:
 
    * Haga clic en **[!UICONTROL Aceptar]**.
    * Haga clic en **[!UICONTROL Guardar todo]**.
@@ -112,6 +112,6 @@ Cree el *componente* que define el contenido y procesa cualquier página creada 
 
    >[!CAUTION]
    >
-   >La correspondencia entre la ruta al componente de página de reproducción y el `sling:resourceType` La propiedad de la plantilla de página de reproducción es crucial para el correcto funcionamiento del sitio web.
+   >La correspondencia entre la ruta al componente de página de reproducción y la propiedad `sling:resourceType` de la plantilla de página de reproducción es crucial para el correcto funcionamiento del sitio web.
 
    ![verify-template-component](assets/verify-template-component.png)

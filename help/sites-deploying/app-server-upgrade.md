@@ -16,9 +16,9 @@ ht-degree: 0%
 
 AEM En esta sección se describe el procedimiento que debe seguirse para actualizar las instalaciones del servidor de aplicaciones en el servidor de aplicaciones de forma que se puedan actualizar los datos de la instalación de un servidor de aplicaciones.
 
-AEM Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de aplicaciones e implican que ya tiene implementada una versión de trabajo de la aplicación de. El procedimiento está diseñado para documentar las actualizaciones realizadas desde **AEM Versión de 6.4 a 6.5**.
+AEM Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de aplicaciones e implican que ya tiene implementada una versión de trabajo de la aplicación de. AEM El procedimiento está diseñado para documentar las actualizaciones realizadas desde la **versión 6.4 a la versión 6.5**.
 
-1. Primero, inicia TomCat. En la mayoría de los casos, puede hacerlo ejecutando la variable `./catalina.sh` inicie el script de inicio ejecutando este comando desde el terminal:
+1. Primero, inicia TomCat. En la mayoría de los casos, puede hacerlo ejecutando el script de inicio `./catalina.sh`, ejecutando este comando desde el terminal:
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
@@ -61,15 +61,15 @@ AEM Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de ap
 
 1. Elimine los archivos y carpetas que ya no sean necesarios. Los elementos que debe eliminar específicamente son los siguientes:
 
-   * El **carpeta launchpad/startup**. Puede eliminarlo ejecutando el siguiente comando en el terminal: `rm -rf crx-quickstart/launchpad/startup`
+   * La **carpeta de inicio/bloc de notas**. Puede eliminarlo ejecutando el siguiente comando en el terminal: `rm -rf crx-quickstart/launchpad/startup`
 
    * El **archivo base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
-   * El **Archivo BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * El **archivo BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
    * Eliminar **sling.options.file** ejecutando: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. AEM Ahora, cree el almacén de nodos y el almacén de datos que se utiliza con la versión 6.5 de. Para ello, cree dos archivos con los siguientes nombres en `crx-quickstart\install`:
+1. AEM Ahora, cree el almacén de nodos y el almacén de datos que se utiliza con la versión 6.5 de. Puede hacerlo creando dos archivos con los siguientes nombres bajo `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
@@ -78,11 +78,11 @@ AEM Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de ap
 
 1. Edite los archivos de configuración para que estén listos para usarlos. Más concretamente:
 
-   * Añada la línea siguiente a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
+   * Agregar la línea siguiente a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
      `customBlobStore=true`
 
-   * A continuación, añada las siguientes líneas a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
+   * Luego agregue las líneas siguientes a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
      ```
      path=./crx-quickstart/repository/datastore
@@ -95,7 +95,7 @@ AEM Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de ap
    jar xvf aem-quickstart-6.5.0.war
    ```
 
-1. Una vez extraído el contenido, vaya a **WEB-INF** y edite el archivo web.xml para cambiar los modos de ejecución. Para encontrar la ubicación donde están configurados en el XML, busque la variable `sling.run.modes` cadena. Una vez encontrado, cambie los modos de ejecución en la siguiente línea de código, que de forma predeterminada está configurada como author:
+1. Una vez extraído el contenido, vaya a la carpeta **WEB-INF** y edite el archivo web.xml para cambiar los modos de ejecución. Para encontrar la ubicación donde se establecen en el XML, busque la cadena `sling.run.modes`. Una vez encontrado, cambie los modos de ejecución en la siguiente línea de código, que de forma predeterminada está configurada como author:
 
    ```bash
    <param-value >author</param-value>

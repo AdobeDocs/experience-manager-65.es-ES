@@ -17,9 +17,9 @@ ht-degree: 3%
 
 # Reestructuración de repositorios para AEM Communities en 6.5 {#repository-restructuring-for-aem-communities-in}
 
-Como se describe en el elemento principal [AEM Reestructuración de repositorios en 6.4](/help/sites-deploying/repository-restructuring.md) AEM , los clientes que actualicen a la versión 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de AEM Communities. AEM Algunos cambios requieren un esfuerzo durante el proceso de actualización de la versión 6.5 de la, mientras que otros se pueden aplazar hasta una actualización futura.
+AEM AEM Como se describe en la página principal [Reestructuración del repositorio en la página de 6.4](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a la versión 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de AEM Communities. AEM Algunos cambios requieren un esfuerzo durante el proceso de actualización de la versión 6.5 de la, mientras que otros se pueden aplazar hasta una actualización futura.
 
-**Con actualización a 6.5**
+**Con Actualización 6.5**
 
 * [Plantillas de notificación de correo electrónico](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#e-mail-notification-templates)
 * [Configuraciones de suscripción](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#subscription-configurations)
@@ -52,7 +52,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>La migración manual es necesaria si desea pasar a la nueva ruta en "<code>/apps/settings</code>". Puede utilizar el Administrador de configuración de Granite para realizar la migración.</p> <p>Puede realizar la migración estableciendo la propiedad <code>mergeList</code> hasta <code>true</code> en el "<code>/libs/settings/community/subscriptions</code>" y añada un <code>nt:unstructured</code> nodo secundario.</p> </td>
+   <td><p>La migración manual es necesaria si desea pasar a la nueva ruta en "<code>/apps/settings</code>". Puede utilizar el Administrador de configuración de Granite para realizar la migración.</p> <p>Puede realizar la migración estableciendo la propiedad <code>mergeList</code> en <code>true</code> en el nodo "<code>/libs/settings/community/subscriptions</code>" y agregando un nodo secundario <code>nt:unstructured</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
@@ -75,7 +75,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>La migración manual es necesaria si desea pasar a la nueva ruta en "<code>/apps/settings</code>". Puede utilizar el Administrador de configuración de Granite para realizar la migración.</p> <p>Puede realizar la migración estableciendo la propiedad <code>mergeList</code> hasta <code>true</code> en el "<code>/libs/settings/community/subscriptions</code>" y añada un <code>nt:unstructured</code> nodo secundario.</p> </td>
+   <td><p>La migración manual es necesaria si desea pasar a la nueva ruta en "<code>/apps/settings</code>". Puede utilizar el Administrador de configuración de Granite para realizar la migración.</p> <p>Puede realizar la migración estableciendo la propiedad <code>mergeList</code> en <code>true</code> en el nodo "<code>/libs/settings/community/subscriptions</code>" y agregando un nodo secundario <code>nt:unstructured</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
@@ -98,7 +98,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td>Hay disponible una tarea Migración diferida para limpiar las Configuraciones de las comunidades.<br /> <p>La tarea mueve palabras observadas de <code>/etc/watchwords</code> hasta <code>/conf/global/settings/community/watchwords</code>.</p> <p>Si las palabras observadas personalizadas se almacenan en SCM, se deben implementar en <code>/apps/settings/...</code> y debe asegurarse de que no haya una superposición <code>/conf/global/settings/...</code> que tendrían prioridad.</p> <p>La tarea de migración elimina <code>/etc</code> ubicaciones.</p> </td>
+   <td>Hay disponible una tarea de migración diferida para limpiar las configuraciones de comunidades.<br /> <p>La tarea mueve palabras clave de <code>/etc/watchwords</code> a <code>/conf/global/settings/community/watchwords</code>.</p> <p>Si las palabras observadas personalizadas se almacenan en SCM, se deben implementar en <code>/apps/settings/...</code> y debe asegurarse de que no haya una configuración de <code>/conf/global/settings/...</code> superpuesta que tenga prioridad.</p> <p>La tarea de migración elimina <code>/etc</code> ubicaciones.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
@@ -125,13 +125,13 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
    <td><strong>Directrices de reestructuración</strong></td>
    <td><p>Se requiere la migración manual.</p> <p>Si la instancia ha personalizado las reglas de distintivo/puntuación, no hay una forma automatizada de colocar todas las reglas debajo de un bloque. Necesita las entradas del cliente sobre el bloque conf (global o específico del sitio) que desea utilizar para su sitio.</p> <p>No hay ninguna interfaz de usuario disponible para configurar las insignias y la puntuación de un sitio.</p> <p>Para alinearse con la nueva estructura del repositorio:</p>
     <ol>
-     <li>Cree un bloque de contexto de sitio con <strong>Explorador de configuración</strong> bajo <strong>Herramientas</strong></li>
+     <li>Cree un bloque de contexto de sitio usando <strong>Explorador de configuración</strong> en <strong>Herramientas</strong></li>
      <li>Ir a la raíz del sitio</li>
-     <li>Establecer <code>cq:confproperty</code> hasta la ruta del contenedor en la que desea almacenar todos los ajustes. Lo mismo se puede configurar a través del sitio <strong>Asistente de edición: Establecer entrada de configuración de nube</strong>.</li>
-     <li>Mover las reglas de distintivo y de puntuación relevantes de <code>/etc/community/*</code> al bloque de contexto de sitio creado en el paso anterior.</li>
+     <li>Establezca <code>cq:confproperty</code> en la ruta de acceso del contenedor en la que desea almacenar toda la configuración. Lo mismo se puede establecer a través del sitio <strong>Asistente de edición - Establecer entrada de configuración de nube</strong>.</li>
+     <li>Mueva las reglas de distintivos y de puntuación relevantes de <code>/etc/community/*</code> al bloque de contexto del sitio creado en el paso anterior.</li>
      <li>Ajuste las propiedades de las reglas de identificación y de las reglas de puntuación en la raíz del sitio para tener referencias relativas a las nuevas ubicaciones de reglas.
       <ol>
-       <li>Por ejemplo, si la propiedad para <code>cq:conf = /conf/we-retail</code>, entonces <code>badgingRules [] = community/badging/rules</code> si las reglas se mueven ahora a este nuevo bloque.</li>
+       <li>Por ejemplo, si la propiedad de <code>cq:conf = /conf/we-retail</code>, entonces <code>badgingRules [] = community/badging/rules</code> si las reglas se mueven ahora a este nuevo bloque.</li>
       </ol> </li>
      <li>Del mismo modo, ajuste las referencias a las reglas de puntuación en un nodo de regla de identificación para que tengan una ruta relativa.</li>
     </ol> <p> </p> <p>Finalmente, limpie eliminando el recurso <code>/etc/community/badging</code></p> </td>
@@ -185,10 +185,10 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
     <ol>
      <li>Migre las configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ol>
-       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Facebook AEM mediante la interfaz de usuario de creación de en <strong>Herramientas &gt; Cloud Service &gt; Configuración de inicio de sesión social de Facebook</strong>.<br /> o <br /> </li>
+       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Facebook AEM mediante la interfaz de usuario de creación de la en <strong>Herramientas &gt; Cloud Service &gt; Configuración de inicio de sesión social de Facebook</strong>.<br /> o <br /> </li>
        <li>Copie cualquier configuración de nube de Facebook nueva de la ubicación anterior a la ubicación nueva correspondiente, en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva configuración de inicio de sesión social de Facebook estableciendo el <code>[cq:Page]/jcr:content@cq:conf</code> a la ruta absoluta en la Nueva ubicación.</li>
+     <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva configuración de inicio de sesión social de Facebook estableciendo la propiedad <code>[cq:Page]/jcr:content@cq:conf</code> en la ruta absoluta en la nueva ubicación.</li>
      <li>Desasocie el Cloud Service de Facebook Connect heredado de cualquier raíz del sitio de AEM Communities actualizada para hacer referencia a la nueva ubicación.</li>
     </ol> </td>
   </tr>
@@ -241,10 +241,10 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
     <ol>
      <li>Migre las configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ol>
-       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Pinterest AEM mediante la interfaz de usuario de creación de en <strong>Herramientas &gt; Cloud Service &gt; Configuración de inicio de sesión social de Pinterest</strong>.<br /> o</li>
-       <li>Copie cualquier nueva configuración de nube de Pinterest de la ubicación anterior a la ubicación nueva correspondiente en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Pinterest AEM mediante la interfaz de usuario de creación de la en <strong>Herramientas &gt; Cloud Service &gt; Configuración de inicio de sesión social de Pinterest</strong>.<br /> o</li>
+       <li>Copie cualquier configuración de nube de Pinterest nueva de la ubicación anterior a la ubicación nueva correspondiente en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva configuración de inicio de sesión social de Pinterest mediante la configuración de <code>[cq:Page]/jcr:content@cq:conf</code> a la ruta absoluta en la Nueva ubicación.</li>
+     <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva configuración de inicio de sesión social de Pinterest estableciendo la propiedad <code>[cq:Page]/jcr:content@cq:conf</code> en la ruta absoluta en la nueva ubicación.</li>
      <li>Desasocie el Cloud Service de Pinterest Connect heredado de cualquier raíz del sitio de AEM Communities actualizada para hacer referencia a la nueva ubicación.</li>
     </ol> </td>
   </tr>
@@ -272,12 +272,12 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
    <td><p>Para alinearse con la nueva estructura del repositorio, las reglas de puntuación se pueden almacenar en <code>/apps/settings/</code> o /<code>conf/.../settings</code></p>
     <ol>
      <li>Para <code>/apps/settings</code>, esto actuaría como reglas globales o predeterminadas administradas en SCM.</li>
-    </ol> <p>Creación de configuraciones según el contexto en <code>/conf/</code> mediante CRXDELite:</p>
+    </ol> <p>Crear configuraciones según el contexto en <code>/conf/</code> mediante CRXDELite:</p>
     <ol>
-     <li>Cree las configuraciones en el <code>/conf/.../settings</code> ubicación<br /> </li>
-     <li>El sitio de comunidades debe tener <code>cq:conf </code>propiedad conjunto de propiedades.
+     <li>Cree las configuraciones en la ubicación <code>/conf/.../settings</code> deseada<br /> </li>
+     <li>El sitio de comunidades debe tener establecida la propiedad <code>cq:conf </code>.
       <ol>
-       <li>Si no <code>cq:conf</code> , las reglas de puntuación se leerían directamente desde la ruta dada para la propiedad '<code>scoringRules</code>' en el nodo raíz del sitio, por ejemplo: <code>/content/we-retail/us/en/community/jcr:content</code></li>
+       <li>Si no se establece ningún <code>cq:conf</code>, las reglas de puntuación se leerían directamente desde la ruta de acceso dada para la propiedad '<code>scoringRules</code>' en el nodo raíz del sitio, por ejemplo: <code>/content/we-retail/us/en/community/jcr:content</code></li>
       </ol> </li>
     </ol> <p>Limpieza: elimine el recurso <code>/etc/community/scoring</code></p> </td>
   </tr>
@@ -307,10 +307,10 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
     <ol>
      <li>Migre las configuraciones existentes en la ubicación anterior a la nueva ubicación.
       <ol>
-       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Twitter AEM a través de la IU de creación de en <strong>Herramientas &gt; Cloud Service &gt; Configuración de inicio de sesión social de Twitter</strong>.<br /> o <br /> </li>
+       <li>Vuelva a crear manualmente las nuevas configuraciones de inicio de sesión social de Twitter AEM a través de la IU de creación de la en <strong>Herramientas &gt; Cloud Service &gt; Configuración de inicio de sesión social de Twitter</strong>.<br /> o <br /> </li>
        <li>Copie cualquier nueva configuración de nube de Twitter de la ubicación anterior a la ubicación nueva correspondiente, en <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva configuración de inicio de sesión social de Twitter estableciendo el <code>[cq:Page]/jcr:content@cq:conf</code> a la ruta absoluta en la Nueva ubicación.</li>
+     <li>Actualice cualquier raíz del sitio de AEM Communities para hacer referencia a la nueva configuración de inicio de sesión social de Twitter estableciendo la propiedad <code>[cq:Page]/jcr:content@cq:conf</code> en la ruta absoluta en la nueva ubicación.</li>
      <li>Desasocie el Cloud Service de Twitter Connect heredado de cualquier raíz del sitio de AEM Communities actualizada para hacer referencia a la nueva ubicación.</li>
     </ol> </td>
   </tr>

@@ -36,12 +36,12 @@ Cada columna muestra un valor para el período de informe actual e indica si el 
 
 >[!NOTE]
 >
->Para cambiar el periodo de actualización, [configuración del intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>Para cambiar el período de actualización, [configure el intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Abra el **Sites** consola; por ejemplo, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
-1. En el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá del [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Abra la consola **Sitios**; por ejemplo, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. En el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá de la [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. De nuevo, en el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono y seleccione **Configuración de vista**. El **Configurar columnas** se abre. Realice los cambios necesarios y confirme con **Actualizar**.
+1. De nuevo, en el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic en el icono y seleccione **Ver configuración**. Se abre el cuadro de diálogo **Configurar columnas**. Realice los cambios necesarios y confirme con **Actualizar**.
 
    ![spad-02](assets/spad-02.png)
 
@@ -65,11 +65,11 @@ Los miembros del grupo de usuarios administradores de Analytics pueden configura
 >
 >Cuando un árbol de páginas contiene elementos secundarios asociados con diferentes configuraciones de nube de Adobe Analytics, no se pueden configurar las columnas de datos disponibles para las páginas.
 
-1. En Vista de lista, utilice los selectores de vista (a la derecha de la barra de herramientas), seleccione **Configuración de vista** y luego **Añadir datos personalizados de Analytics**.
+1. En la vista de lista, use los selectores de vista (a la derecha de la barra de herramientas), seleccione **Ver configuración** y, a continuación, **Agregar datos personalizados de Analytics**.
 
    ![spad-03](assets/spad-03.png)
 
-1. Seleccione las métricas que desea exponer a los autores en la consola Sitios y, a continuación, haga clic en **Añadir**.
+1. Seleccione las métricas que desee exponer a los autores en la consola Sitios y, a continuación, haga clic en **Agregar**.
 
    Las columnas que aparecen se recuperan de Adobe Analytics.
 
@@ -77,7 +77,7 @@ Los miembros del grupo de usuarios administradores de Analytics pueden configura
 
 ### Apertura de perspectivas de contenido desde sitios {#opening-content-insights-from-sites}
 
-Abrir [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
+Abra [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la efectividad de la página.
 
 1. En la consola Sitios, seleccione la página para la que desea ver las perspectivas de contenido.
 1. En la barra de herramientas, haga clic en el icono Analytics y Recommendations.
@@ -90,4 +90,4 @@ Abrir [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desd
 >
 >Debido a los cambios de seguridad dentro de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map AEM incluida en el programa de trabajo de.
 >
->El [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es) debería utilizarse ahora.
+>Ahora se debe usar el complemento [ActivityMap proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es).

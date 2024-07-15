@@ -37,7 +37,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 
 * **Formularios enviados:** Cuando los datos se envían desde cualquier tipo de formulario creado con AEM Forms y los datos se envían a cualquier repositorio de almacenamiento de datos o base de datos, se considera envío de formulario. Por ejemplo, el envío de un formulario adaptable, un formulario HTML5, PDF Forms y un conjunto de formularios se contabilizan como formularios enviados. Cada formulario de un conjunto de formularios se considera un envío. Por ejemplo, si un conjunto de formularios tiene 5 formularios, cuando se envía el conjunto de formularios, el servicio de informes de transacciones lo contabiliza como 5 envíos.
 
-* **Documentos representados:** La generación de un documento mediante la combinación de una plantilla y datos, la firma o certificación digitalmente de un documento, el uso de una API de servicios de documentos facturables para servicios de documento o la conversión de un documento de un formato a otro se contabilizan como documentos representados.
+* **Documentos representados:** La generación de un documento mediante la combinación de una plantilla y datos, la firma o certificación digitalmente de un documento, el uso de una API de servicios de documentos facturables para servicios de documentos o la conversión de un documento de un formato a otro se contabilizan como documentos representados.
 
 >[!NOTE]
 >

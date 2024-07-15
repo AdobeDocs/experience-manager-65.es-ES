@@ -31,11 +31,11 @@ El cuadro de diálogo de configuración **Usuario** le da acceso a lo siguiente:
 
 * Suplantar como
 
-   * Con el [Suplantar como](/help/sites-administering/security.md#impersonating-another-user) funcionalidad un usuario puede trabajar en nombre de otro usuario.
+   * Con la funcionalidad [Suplantar como](/help/sites-administering/security.md#impersonating-another-user), un usuario puede trabajar en nombre de otro usuario.
 
 * Perfil
 
-   * Ofrece un práctico enlace a su [configuración de usuario](/help/sites-administering/security.md))
+   * Ofrece un práctico vínculo a la [configuración de usuario](/help/sites-administering/security.md))
 
 * [Mis preferencias](/help/sites-authoring/user-properties.md#my-preferences)
 
@@ -49,7 +49,7 @@ Puede acceder al cuadro de diálogo **Preferencias** a través de la opción [Us
 
 Cada usuario puede establecer determinadas propiedades por sí mismo.
 
-![screen-shot_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
+![captura de pantalla_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
 
 * **Idioma**
 
@@ -108,12 +108,12 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
 
 * **Usar experiencia de creación clásica**
 
-  Esta opción habilita [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)Creación de páginas basada en. De forma predeterminada, se utiliza la interfaz de usuario estándar.
+  Esta opción habilita la creación de páginas basada en la IU [clásica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md). De forma predeterminada, se utiliza la interfaz de usuario estándar.
 
 * **Activar la página principal de los recursos**
 
-  Esta opción solo está disponible si el administrador del sistema ha habilitado la experiencia de la página principal de los recursos para toda la organización.
+  Esta opción solo está disponible si el administrador del sistema ha habilitado la experiencia de la página principal de Assets para toda la organización.
 
 * **Configuración de Stock**
 
-  Esta opción le permite especificar la configuración preferida de Adobe Stock y solo está disponible si el administrador del sistema ha activado [Integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Esta opción le permite especificar la configuración de Adobe Stock preferida y solo está disponible si el administrador del sistema ha habilitado la [integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

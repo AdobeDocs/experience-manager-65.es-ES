@@ -35,46 +35,46 @@ Una vez configurado Silverpop Engage, puede publicar boletines informativos o co
 
 ## Creación de una configuración de Silverpop {#creating-a-silverpop-configuration}
 
-Las configuraciones de Silverpop se pueden añadir mediante **Cloud Service**, **Herramientas**, o **Puntos finales de API**. Todos los métodos se describen en esta sección.
+Las configuraciones de Silverpop se pueden agregar mediante **Cloud Service**, **Herramientas** o **puntos finales de API**. Todos los métodos se describen en esta sección.
 
 ### Configuración de Silverpop mediante Cloud Service {#configuring-silverpop-via-cloudservices}
 
 Para crear una configuración de Silverpop en Cloud Service:
 
-1. AEM En, haga clic en **Herramientas** > **Implementación** > **Cloud Service**. (O acceda directamente a en `https://<hostname>:<port>/etc/cloudservices.html`.)
-1. En Servicios de terceros, haga clic en **Silverop Engage** y luego **Configurar**. Se abre la ventana de configuración de Silverpop.
+1. AEM En la pantalla, haga clic en **Herramientas** > **Implementación** > **Cloud Service**. (O acceda directamente a en `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. En servicios de terceros, haga clic en **Silverop Engage** y luego en **Configurar**. Se abre la ventana de configuración de Silverpop.
 
    >[!NOTE]
    >
    >Silverpop Engage no está disponible como opción en los servicios de terceros a menos que descargue el paquete desde Package Share.
 
-1. Introduzca un título y, opcionalmente, un nombre y haga clic en **Crear**. Se abre la ventana de configuración de ** Configuración ** Silverpop.
+1. Escriba un título y, opcionalmente, un nombre y haga clic en **Crear**. Se abre la ventana de configuración de ** Configuración ** Silverpop.
 1. Introduzca el nombre de usuario y la contraseña, y seleccione un punto final de API en la lista desplegable.
-1. Clic **Conéctese a Silverpop.** Cuando se haya conectado correctamente, verá un cuadro de diálogo de éxito. Clic **OK** así que sales de la ventana. Puede ir a Silverpop haciendo clic en **Ir a Silverpop Engage**.
+1. Haga clic en **Conectar con Silverpop.** Cuando se haya conectado correctamente, verá un cuadro de diálogo correcto. Haz clic en **Aceptar** para salir de la ventana. Para ir a Silverpop, haga clic en **Ir a Silverpop Engage**.
 1. Silverpop se ha configurado. Puede editar la configuración haciendo clic en **Editar**.
 1. Además, el marco de Silverpop Engage se puede configurar para acciones personalizadas proporcionando título y nombre (opcional). Al hacer clic en Crear, se crea correctamente el marco de trabajo para la conexión de Silverpop ya configurada.
 
-   AEM Las columnas de extensión de datos importadas se pueden utilizar posteriormente a través del componente de: **Texto y personalización**.
+   AEM Las columnas de extensión de datos importadas se pueden usar posteriormente a través del componente de datos: **Texto y Personalization**.
 
 ### Configuración de Silverpop mediante Herramientas {#configuring-silverpop-via-tools}
 
 Para crear una configuración de Silverpop en Herramientas:
 
-1. AEM En, haga clic en **Herramientas** > **Implementación** > **Cloud Service**. O vaya directamente a la página `https://<hostname>:<port>/misadmin#/etc`.
-1. Seleccionar **Herramientas**, entonces **Configuraciones de Cloud Service,** entonces **Silverpop Engage**.
-1. Clic **Nuevo**.
+1. AEM En la pantalla, haga clic en **Herramientas** > **Implementación** > **Cloud Service**. O bien, vaya directamente a `https://<hostname>:<port>/misadmin#/etc`.
+1. Seleccione **Herramientas**, luego **Configuraciones de Cloud Service** y después **Silverpop Engage**.
+1. Haga clic en **Nuevo**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
-1. En el **Crear página** , introduzca la **Título** y, opcionalmente, el **Nombre** y haga clic en **Crear**.
+1. En la ventana **Crear página**, escriba el **Título** y, opcionalmente, el **Nombre**, y haga clic en **Crear**.
 1. Introduzca la información de configuración como se describe en el paso 4 del procedimiento anterior. Siga ese procedimiento para poder finalizar la configuración de Silverpop.
 
 ### Añadir varias configuraciones {#adding-multiple-configurations}
 
 Para agregar varias configuraciones:
 
-1. En la página de bienvenida, haga clic en **Cloud Service** y haga clic en **Silverpop Engage**. Clic **Mostrar configuraciones** que aparece si hay una o más configuraciones de Silverpop disponibles. Se muestran todas las configuraciones disponibles.
-1. Haga clic en **+** junto a Configuraciones disponibles. Se abre el **Crear configuraciones** ventana. Siga el procedimiento de configuración anterior para poder crear una configuración.
+1. En la página de bienvenida, haga clic en **Cloud Service** y luego en **Silverpop Engage**. Haga clic en el botón **Mostrar configuraciones** que aparece si hay una o más configuraciones de Silverpop disponibles. Se muestran todas las configuraciones disponibles.
+1. Haga clic en el signo **+** junto a Configuraciones disponibles. Abre la ventana **Crear configuraciones**. Siga el procedimiento de configuración anterior para poder crear una configuración.
 
 ### Configuración de puntos finales de API para conectarse a Silverpop {#configuring-api-end-points-for-connecting-to-silverpop}
 
@@ -83,8 +83,8 @@ AEM Actualmente, tiene seis puntos finales no seguros (Participación 1 a 6). Si
 Para configurar los puntos finales de la API:
 
 1. Ir a `/libs/mcm/silverpop/components/silverpoppage/dialog/items/general/items/apiendpoint/options node` el `https://<hostname>:<port>/crxde.`
-1. Haga clic con el botón derecho y seleccione **Crear**, entonces **Crear nodo**.
-1. Introduzca el **Nombre** as `sp-e0` y elija **Tipo** as `cq:Widget`.
+1. Haga clic con el botón derecho y seleccione **Crear**, luego **Crear nodo**.
+1. Escriba **Name** como `sp-e0` y elija **Type** como `cq:Widget`.
 1. Agregue dos propiedades al nodo recién agregado:
 
    1. **Nombre**: `text`, **Tipo**: `String`, **Valor**: `Engage 0`
@@ -94,7 +94,7 @@ Para configurar los puntos finales de la API:
 
    Haga clic en &quot;Guardar todo&quot;.
 
-1. Cree un nodo más con **Nombre** as `sp-e7` y **Tipo** as `cq:Widget`.
+1. Cree uno o más nodos con **Name** como `sp-e7` y **Type** como `cq:Widget`.
 
    Agregue dos propiedades al nodo recién agregado:
 

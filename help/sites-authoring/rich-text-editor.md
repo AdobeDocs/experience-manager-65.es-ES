@@ -22,7 +22,7 @@ El editor de texto enriquecido (RTE) es un bloque de creación básico para inse
 
 ## Edición in situ {#in-place-editing}
 
-Si se selecciona un componente basado en texto con un solo clic, se muestra el [barra de herramientas de componentes](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) como con cualquier componente.
+Si se selecciona un componente basado en texto con un solo clic, se mostrará [la barra de herramientas de componentes](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste), como con cualquier otro componente.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -32,7 +32,7 @@ Si vuelve a pulsar o hacer clic en el componente, o si inicialmente lo seleccion
 
 Esta barra de herramientas ofrece las opciones siguientes:
 
-* **Formato**: esto permite establecer Negrita, Cursiva y Subrayado.
+* **Formato**: Esto le permite establecer negrita, cursiva y subrayado.
 * **Listas**: con esta opción puede crear listas con viñetas o números, o establecer la sangría.
 * **Hipervínculo**
 * **Desvincular**
@@ -42,7 +42,7 @@ Esta barra de herramientas ofrece las opciones siguientes:
 
 ## Edición en pantalla completa {#full-screen-editing}
 
-Para los componentes basados en texto, pulse el modo de pantalla completa en la barra de herramientas ![Modo de edición de pantalla completa](do-not-localize/screen_shot_2018-03-21at163236.png) abre el editor de texto enriquecido y oculta el resto del contenido de la página.
+Para los componentes basados en texto, al pulsar el modo de pantalla completa en la barra de herramientas ![Modo de edición de pantalla completa](do-not-localize/screen_shot_2018-03-21at163236.png) se abre el editor de texto enriquecido y se oculta el resto del contenido de la página.
 
 El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la creación. La disponibilidad es opciones [depende de la configuración](/help/sites-administering/rich-text-editor.md).
 

@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Las comunidades de Adobe Experience Manager AEM () simplifican la creación y personalización de funciones de la comunidad, como foros, grupos de usuarios, blogs, preguntas y respuestas, calendarios, comentarios, revisiones, votaciones, clasificaciones y asignaciones. Estas funciones hacen que el contenido generado por el usuario (UGC) se introduzca en el entorno de publicación.
 
-La base de una [sitio comunitario](overview.md#communitiessites) es el [marco de componentes sociales](scf.md) (SCF). La creación de un sitio de la comunidad comienza con la selección de un [plantilla del sitio de la comunidad](sites-console.md) que se compone de [funciones de comunidad](functions.md).
+La base de un [sitio de comunidad](overview.md#communitiessites) es el [marco de trabajo de componente social](scf.md) (SCF). La creación de un sitio de la comunidad comienza con la selección de una [plantilla del sitio de la comunidad](sites-console.md) compuesta por [funciones de la comunidad](functions.md).
 
 Para obtener información general y tutoriales de introducción, visite:
 
@@ -31,26 +31,26 @@ Para obtener información general y tutoriales de introducción, visite:
 
 >[!NOTE]
 > 
->Se recomienda encarecidamente mantenerse al día con el [últimas versiones](deploy-communities.md#latest-releases).
+>Se recomienda encarecidamente mantenerse actualizado con las [últimas versiones](deploy-communities.md#latest-releases).
 
 ## Implementaciones recomendadas {#recommended-deployments}
 
-* [Almacenamiento de contenido de comunidad](working-with-srp.md): analiza las opciones disponibles del proveedor de recursos sociales (SRP) para un almacén común de UGC
-* [Topologías recomendadas para comunidades](topologies.md): analiza topologías basadas en casos de uso y opciones de SRP
+* [Almacenamiento de contenido de la comunidad](working-with-srp.md): analiza las opciones disponibles del proveedor de recursos sociales (SRP) para un almacén común de UGC
+* [Topologías recomendadas para comunidades](topologies.md): analiza las topologías en función del caso de uso y la opción de SRP
 
 ## Marco del componente social {#social-component-framework}
 
-* [Marco del componente social](scf.md): información general sobre el marco de trabajo y las API.
+* [Marco de componente social](scf.md): información general sobre el marco de trabajo y las API.
 * [SCF Handlebars Helpers](handlebars-helpers.md): ayudantes predeterminados y cómo escribir ayudantes personalizados.
-* [Personalización del lado del cliente](client-customize.md): personalizar el código que se ejecuta en el explorador.
-* [Personalización del lado del servidor](server-customize.md): personalizar el código que se ejecuta en el servidor.
+* [Personalización del lado del cliente](client-customize.md): personalizando el código que se ejecuta en el explorador.
+* [Personalización del lado del servidor](server-customize.md): personalizando el código que se ejecuta en el servidor.
 * [Proveedor de recursos de almacenamiento (SRP)](srp.md): información general sobre el almacenamiento de contenido de la comunidad.
 * [Directrices de codificación](code-guide.md): directrices, sugerencias y trucos.
 * [Guía de componentes de la comunidad](components-guide.md): herramienta de desarrollo interactiva.
 
 ## Aspectos básicos de componentes, funciones y funciones {#component-function-and-feature-essentials}
 
-Los componentes, las funciones y las funciones de AEM Communities proporcionan los componentes básicos para [sitios de la comunidad](sites-console.md).
+Los componentes, las funciones y las características de AEM Communities constituyen los componentes básicos de [sitios de la comunidad](sites-console.md).
 
 * [Aspectos básicos de componentes, funciones y funciones](essentials.md)
 * [Componentes de Clientlibs para Communities](clientlibs.md)
@@ -65,7 +65,7 @@ Los componentes, las funciones y las funciones de AEM Communities proporcionan l
 
 ## Grupos de la comunidad {#community-groups}
 
-[Grupos de comunidad](overview.md#communitygroups) son el concepto de permitir que los miembros de la comunidad formen subcomunidades dentro del sitio de la comunidad. La creación de un grupo de comunidad puede producirse en el entorno de publicación o creación.
+[Los grupos de la comunidad](overview.md#communitygroups) son el concepto de permitir que los miembros de la comunidad formen subcomunidades dentro del sitio de la comunidad. La creación de un grupo de comunidad puede producirse en el entorno de publicación o creación.
 
 * [Elementos esenciales del grupo de comunidad](essentials-groups.md)
 * [Función Grupos](functions.md#groups-function)
@@ -75,8 +75,8 @@ Los componentes, las funciones y las funciones de AEM Communities proporcionan l
 
 ## Administración de datos {#managing-data}
 
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad API de SRP
-* [Tag Essentials](tag.md) - capacidad de los miembros de la comunidad de etiquetar recursos de habilitación catalogados o UGC
+* [SRP y UGC Essentials](srp-and-ugc.md): métodos y ejemplos de la utilidad API de SRP
+* [Elementos esenciales de la etiqueta](tag.md): capacidad de los miembros de la comunidad para etiquetar recursos de habilitación catalogados o UGC
 
 ## Tutoriales {#tutorials}
 
@@ -91,8 +91,8 @@ Los componentes, las funciones y las funciones de AEM Communities proporcionan l
 
 ## Documentación de comunidades relacionadas {#related-communities-documentation}
 
-* Visita [Implementación de comunidades](deploy-communities.md) para obtener más información sobre las implementaciones recomendadas y la configuración de Dispatcher.
+* Visite [Implementación de comunidades](deploy-communities.md) para obtener más información sobre las implementaciones recomendadas y la configuración de Dispatcher.
 
-* Visita [Administración de sitios de Communities](administer-landing.md) para obtener más información sobre la creación de un sitio de la comunidad, la configuración de las plantillas de sitio de la comunidad, la moderación del contenido de la comunidad, la administración de miembros y la configuración de la mensajería.
+* Visite [Administración de sitios de comunidades](administer-landing.md) para obtener información sobre cómo crear un sitio de comunidad, configurar plantillas de sitios de comunidad, moderar el contenido de la comunidad, administrar miembros y configurar mensajes.
 
-* Visita [Componentes de comunidades de creación](author-communities.md) para aprender a crear y configurar componentes de Communities.
+* Visite [Creación de componentes de comunidades](author-communities.md) para aprender a crear y configurar componentes de comunidades.

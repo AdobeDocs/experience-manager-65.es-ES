@@ -18,11 +18,11 @@ ht-degree: 3%
 
 # Plantillas de sitios {#site-templates}
 
-La consola Plantillas de sitio es similar a [Plantillas de grupo](tools-groups.md) , que se centra en funciones de interés para los grupos de la comunidad.
+La consola Plantillas de sitio es similar a la consola [Plantillas de grupo](tools-groups.md), que se centra en funciones de interés para los grupos de la comunidad.
 
 >[!NOTE]
 >
->Las consolas para la creación de [sitios de la comunidad](sites-console.md), [plantillas de sitio de comunidad](sites.md), [plantillas de grupo de comunidad](tools-groups.md), y [funciones de comunidad](functions.md) solo se utilizan en el entorno de creación.
+>Las consolas para la creación de [sitios de la comunidad](sites-console.md), [plantillas de sitios de la comunidad](sites.md), [plantillas de grupos de la comunidad](tools-groups.md) y [funciones de la comunidad](functions.md) solo se pueden usar en el entorno de creación.
 
 ## Consola de plantillas del sitio {#site-templates-console}
 
@@ -30,9 +30,9 @@ En el entorno de creación, para llegar a la consola de sitios de la comunidad:
 
 * Desde la navegación global: **[!UICONTROL Herramientas > Comunidades > Plantillas de sitio]**
 
-Esta consola muestra las plantillas desde las que se puede crear una [sitio comunitario](sites-console.md) se puede crear y permite crear nuevas plantillas de sitio.
+Esta consola muestra las plantillas a partir de las cuales se puede crear un [sitio de la comunidad](sites-console.md) y permite crear nuevas plantillas de sitio.
 
-![site-template](assets/site-template.png)
+![plantilla del sitio](assets/site-template.png)
 
 ## Crear plantilla del sitio {#create-site-template}
 
@@ -42,25 +42,25 @@ Se abrirá el panel Editor del sitio, que contiene tres subpaneles:
 
 ### Información básica {#basic-info}
 
-![site-template-basicinfo](assets/site-template-basicinfo.png)
+![información básica sobre la plantilla del sitio](assets/site-template-basicinfo.png)
 
 En el panel Información básica, se configura un nombre, una descripción y si la plantilla está habilitada o deshabilitada:
 
-* **[!UICONTROL Nombre de plantilla del sitio de comunidad]**
+* **[!UICONTROL Nombre de plantilla de sitio de comunidad]**
 
   ID del nombre de la plantilla.
 
-* **[!UICONTROL Descripción de plantilla del sitio de comunidad]**
+* **[!UICONTROL Descripción de la plantilla del sitio de la comunidad]**
 
   La descripción de la plantilla.
 
-* **[!UICONTROL Desactivado/Habilitado]**
+* **[!UICONTROL Deshabilitado/Habilitado]**
 
   Conmutador que controla si la plantilla es referenciable.
 
 ### Miniatura    {#thumbnail}
 
-![miniatura del sitio](assets/site-thumbnail.png)
+![miniatura de sitio](assets/site-thumbnail.png)
 
 (Opcional) Seleccione el icono Cargar imagen para mostrar una miniatura junto con el nombre y la descripción a los creadores de los sitios de la comunidad.
 
@@ -78,9 +78,9 @@ La función de página proporciona una página vacía. La función Grupos permit
 
 >[!CAUTION]
 >
->La función Grupos debe *no ser el primero ni el único* función en la estructura del sitio.
+>La función Grupos debe *no ser la primera ni la única función* en la estructura del sitio.
 >
->Cualquier otra función, como la [función de página](functions.md#page-function), debe incluirse y enumerarse primero.
+>Cualquier otra función, como [page function](functions.md#page-function), debe incluirse y enumerarse primero.
 
 ![editor del sitio](assets/site-editor.png)
 
@@ -90,16 +90,16 @@ Al incluir una función Grupos en la plantilla del sitio, la configuración requ
 
 >[!CAUTION]
 >
->La función Grupos debe *no ser el primero ni el único* función en la estructura del sitio.
+>La función Grupos debe *no ser la primera ni la única función* en la estructura del sitio.
 
-![site-functions](assets/site-functions.png)
+![funciones del sitio](assets/site-functions.png)
 
 Al seleccionar dos o más plantillas de grupo de comunidad, se proporciona una opción al administrador del grupo al crear realmente un grupo en la comunidad.
 
-![site-function](assets/site-functions1.png)
+![función del sitio](assets/site-functions1.png)
 
 ## Editar plantilla del sitio {#edit-site-template}
 
-Cuando se visualizan plantillas de sitio en el [Consola Plantillas del sitio](#site-templates-console), es posible seleccionar una plantilla de sitio existente para editarla.
+Al ver las plantillas de sitio en la [consola de plantillas de sitio](#site-templates-console) principal, es posible seleccionar una plantilla de sitio existente para editarla.
 
-Este proceso proporciona los mismos paneles que [creación de una plantilla del sitio](#create-site-template).
+Este proceso proporciona los mismos paneles que [creando una plantilla de sitio](#create-site-template).

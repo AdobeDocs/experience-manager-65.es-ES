@@ -14,7 +14,7 @@ ht-degree: 53%
 
 # Cómo hacer un lanzamiento con su aplicación sin encabezado {#go-live}
 
-En esta parte del [AEM Recorrido de desarrollador sin encabezado](overview.md), aprenda a implementar una aplicación sin encabezado en directo.
+AEM En esta parte del [Recorrido para desarrolladores sin encabezado](overview.md), aprenda a implementar una aplicación sin encabezado en directo.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -53,13 +53,13 @@ AEM Además del SDK de la, necesita herramientas adicionales que faciliten el de
 * La biblioteca Node.js
 * El IDE de su elección
 
-AEM AEM Como es una aplicación de Java™, debe instalar Java™ y el SDK de Java™ para admitir el desarrollo de as a Cloud Service.
+AEM Como es una aplicación Java™, debe instalar Java™ y el SDK de Java™ para admitir el desarrollo de AEM as a Cloud Service.
 
 Git es lo que se utiliza para administrar el control de origen y para registrar los cambios en Cloud Manager y luego implementarlos en una instancia de producción.
 
 AEM utiliza Apache Maven para crear proyectos generados a partir del arquetipo del proyecto Maven de AEM. Todos los IDE principales proporcionan compatibilidad con la integración de Maven.
 
-AEM Node.js es un entorno de tiempo de ejecución de JavaScript que se utiliza para trabajar con los recursos front-end de los recursos de un proyecto de `ui.frontend` proyecto secundario. Node.js se distribuye con npm, que es el administrador de paquetes de facto de Node.js, que se utiliza para administrar las dependencias de JavaScript.
+Node.js es un entorno de tiempo de ejecución de JavaScript AEM que se utiliza para trabajar con los recursos front-end de un subproyecto `ui.frontend` de un proyecto de. Node.js se distribuye con npm, que es el administrador de paquetes de facto de Node.js, que se utiliza para administrar las dependencias de JavaScript.
 
 ## Generalidades de los componentes del sistema AEM {#components-of-an-aem-system-at-a-glance}
 
@@ -69,7 +69,7 @@ Un entorno de AEM completo está formado por un Autor, una Publicación y un Dis
 
 * **El servicio de creación** es donde los usuarios internos crean, administran y previsualizan contenido.
 
-* **El servicio de publicación** se considera el entorno &quot;activo&quot; y suele ser con el que interactúan los usuarios finales. El contenido, después de editarse y aprobarse en el servicio de creación, se distribuye (replica) al de publicación. El patrón de implementación más común con las aplicaciones sin encabezado de AEM es tener la versión de producción de la aplicación conectada a un servicio de publicación de AEM.
+* **El servicio Publish** se considera el entorno &quot;activo&quot; y suele ser con el que interactúan los usuarios finales. El contenido, después de editarse y aprobarse en el servicio de creación, se distribuye (replica) al servicio de Publish. El patrón de implementación más común con las aplicaciones sin encabezado de AEM es tener la versión de producción de la aplicación conectada a un servicio de publicación de AEM.
 
 * **Dispatcher** es un servidor web estático ampliado con el módulo Dispatcher de AEM. Almacena en la caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
 
@@ -107,7 +107,7 @@ AEM Ahora es el momento de preparar su aplicación sin encabezado para el lanzam
 
 ### Proteja su aplicación sin encabezado antes del lanzamiento {#secure-and-scale-before-launch}
 
-1. Preparar [Autenticación](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) para sus solicitudes de GraphQL
+1. Prepare [autenticación](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) para sus solicitudes de GraphQL
 
 ### Estructura del modelo frente al output de GraphQL {#structure-vs-output}
 
@@ -133,24 +133,24 @@ AEM Ahora es el momento de preparar su aplicación sin encabezado para el lanzam
 * Asegúrese de que los clientes HTTP utilicen HTTP/2.
 * Asegúrese de que los clientes HTTP acepten la solicitud de encabezados para gzip.
 * Minimice el número de dominios utilizados para alojar el formato JSON y los artefactos de referencia.
-* Uso `Last-modified-since` para actualizar recursos.
+* Use `Last-modified-since` para actualizar recursos.
 * Use la salida `_reference` en el archivo JSON para iniciar la descarga de los recursos sin tener que analizar los archivos JSON completos.
 
 <!-- End of CDN Review -->
 
 ## Implementación de la producción {#deploy-to-production}
 
-La implementación en producción puede depender de si tiene un *tradicional* AEM Instancia de que se implementa mediante Maven o que se encuentran en Adobe Managed Services (AMS) y, por lo tanto, utilizan Cloud Manager.
+AEM La implementación en producción puede depender de si tiene una instancia de *tradicional* que se implementa mediante Maven o si está en Adobe Managed Services (AMS) y, por lo tanto, utiliza Cloud Manager.
 
 ## Implementación en producción mediante Maven {#deploy-to-production-maven}
 
-Para un *tradicional* implementación (que no es AMS) con Maven, consulte la [Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) para obtener una descripción general.
+Para una implementación *tradicional* (que no es AMS) que use Maven, consulte el [Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) para obtener una descripción general.
 
-## Implementar en producción mediante Cloud Manager {#deploy-to-production-cloud-manager}
+## Implementación en producción mediante Cloud Manager {#deploy-to-production-cloud-manager}
 
-Si es cliente de AMS que utiliza Cloud Manager, después de asegurarse de que todo está probado y funciona correctamente, puede insertar las actualizaciones de código en un [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
+Si es cliente de AMS que usa Cloud Manager, después de asegurarse de que todo está probado y funciona correctamente, puede insertar las actualizaciones de código en un [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
 
-AEM Una vez cargadas las actualizaciones en Cloud Manager, impleméntelas para que se puedan usar con el fin de crear una versión más completa de la aplicación de [Canalización de CD/CI de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=es).
+Una vez que las actualizaciones se hayan cargado en Cloud Manager AEM, impleméntelas en el repositorio mediante la canalización de CD/CI de [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=es).
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -211,23 +211,23 @@ AEM Ya ha iniciado su primer proyecto sin encabezado o ya tiene todos los conoci
 
 ### Explorar aplicaciones de una sola página {#explore-spa}
 
-AEM Sin embargo, no hay necesidad de detener las tiendas sin encabezado en la. En el [Introducción como parte del recorrido](getting-started.md#integration-levels)AEM Además, se explica cómo no solo admite la entrega sin encabezado y los modelos tradicionales de pila completa, sino también modelos híbridos que combinan las ventajas de ambos.
+AEM Sin embargo, no hay necesidad de detener las tiendas sin encabezado en la. En la parte de [Introducción del recorrido AEM](getting-started.md#integration-levels), se explica cómo no solo admite la entrega sin encabezado y los modelos tradicionales full-stack, sino también admite modelos híbridos que combinan las ventajas de ambos.
 
-Si este tipo de flexibilidad es algo que necesita para su proyecto, continúe con la parte opcional adicional del recorrido, [SPA AEM Cómo crear aplicaciones de una sola página () con la aplicación de una sola página ().](create-spa.md)
+Si este tipo de flexibilidad es algo que necesita para su proyecto, continúe con la parte opcional adicional del recorrido SPA AEM, [Cómo crear aplicaciones de una sola página () con el método de creación de proyectos de página ().](create-spa.md)
 
 ## Recursos adicionales {#additional-resources}
 
-* [AEM Guía de desarrollo de](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
+* AEM [Guía de desarrollo de la](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
 * [Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
 
-* [AEM Cloud Manager para](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es)
+* [Cloud Manager AEM para la aplicación de datos de la aplicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es)
 
 * Caché de CDN
 
-   * [Control de una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
+   * [Controlar una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * Configuración de la [Reescritura CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*buscar reescritura de CDN*)
+   * Configurando la [reescritura de CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*buscar reescritura de CDN*)
 
 * [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 * [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)

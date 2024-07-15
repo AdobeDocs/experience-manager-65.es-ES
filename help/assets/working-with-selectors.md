@@ -34,29 +34,29 @@ Al seleccionar (en lugar de introducir manualmente) a dónde se dirigen las zona
 
 Utilice el selector de productos para elegir un producto cuando desee un punto interactivo o un mapa de imagen para proporcionar una vista rápida a un producto específico del catálogo de productos.
 
-1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y seleccione **[!UICONTROL Acciones]** pestaña (solo disponible si ha definido un punto interactivo o un mapa de imagen).
+1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y seleccione la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
-   El selector de productos se encuentra en **[!UICONTROL Tipo de acción]** área.
+   El selector de productos se encuentra en el área **[!UICONTROL Tipo de acción]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Seleccione el **[!UICONTROL Selector de productos]** (lupa) y vaya a un producto del catálogo.
+1. Seleccione el icono **[!UICONTROL Selector de productos]** (lupa) y desplácese hasta un producto del catálogo.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   Filtre por palabra clave o etiqueta tocando **[!UICONTROL Filtrar]** y escribir palabras clave, seleccionar etiquetas o ambas cosas.
+   Filtre por palabra clave o etiqueta tocando **[!UICONTROL Filter]** e introduciendo palabras clave, o seleccionando etiquetas, o ambas cosas.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Cambie la ubicación del Experience Manager para buscar datos de productos tocando **[!UICONTROL Examinar]** y desplazarse a otra carpeta.
+   Para cambiar la ubicación donde el Experience Manager busca los datos del producto, pulsa **[!UICONTROL Examinar]** y navega a otra carpeta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Seleccionar **[!UICONTROL Ordenar]** seleccione para cambiar si Experience Manager ordena de más reciente a más antiguo o de más antiguo a más reciente.
+   Seleccione **[!UICONTROL Ordenar]** por para cambiar si el Experience Manager ordena de más reciente a más antiguo o de más antiguo a más reciente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Seleccionar **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos: **[!UICONTROL Vista de lista]** o **[!UICONTROL Vista de tarjeta]**.
+   Seleccione **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos: **[!UICONTROL Vista de lista]** o **[!UICONTROL Vista de tarjeta]**.
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -64,7 +64,7 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. En **[!UICONTROL Previsualizar]** , puede seleccionar el punto interactivo o el mapa de imagen y ver el aspecto de la vista rápida.
+1. En el modo **[!UICONTROL Vista previa]**, puede seleccionar el punto interactivo o el mapa de imagen y ver el aspecto de la vista rápida.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
@@ -72,13 +72,13 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
 Utilice el selector de sitio para elegir una página web cuando desee vincular un punto interactivo o un mapa de imagen a una página web administrada en Experience Manager Sites.
 
-1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y seleccione **[!UICONTROL Acciones]** pestaña (solo disponible si ha definido un punto interactivo o un mapa de imagen).
+1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y seleccione la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
    El Selector de sitio se encuentra en el área **[!UICONTROL Tipo de acción]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Seleccione el **[!UICONTROL Selector del sitio]** (carpeta con lupa) y vaya a una página de Experience Manager Sites a la que desee vincular el punto interactivo o el mapa de imagen.
+1. Seleccione el icono **[!UICONTROL Selector de sitio]** (carpeta con lupa) y navegue a una página de su Experience Manager Sites a la que desee vincular el punto interactivo o el mapa de imagen.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -86,30 +86,30 @@ Utilice el selector de sitio para elegir una página web cuando desee vincular u
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. En **[!UICONTROL Previsualizar]** modo si selecciona el punto interactivo o el mapa de imagen, se desplaza a la página del sitio del Experience Manager especificada.
+1. En el modo **[!UICONTROL Vista previa]**, si selecciona el punto interactivo o el mapa de imagen, irá a la página del sitio del Experience Manager que haya especificado.
 
 ## Uso del Selector de recursos {#selecting-assets}
 
-Utilice este selector para elegir imágenes para utilizarlas en un titular de carrusel, un vídeo interactivo, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros. En el vídeo interactivo, el selector de recursos está disponible al seleccionar **[!UICONTROL Seleccionar recursos]** en el **[!UICONTROL Contenido]** pestaña. En los conjuntos de carrusel, el selector de recursos está disponible al crear una diapositiva. En conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros, el selector de recursos está disponible al crear un conjunto de imágenes, un conjunto de medios mixtos o un conjunto de giros, respectivamente.
+Utilice este selector para elegir imágenes para utilizarlas en un titular de carrusel, un vídeo interactivo, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros. En el vídeo interactivo, el selector de recursos está disponible cuando selecciona **[!UICONTROL Seleccionar Assets]** en la pestaña **[!UICONTROL Contenido]**. En los conjuntos de carrusel, el selector de recursos está disponible al crear una diapositiva. En conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros, el selector de recursos está disponible al crear un conjunto de imágenes, un conjunto de medios mixtos o un conjunto de giros, respectivamente.
 
 Consulte también [Selector de recursos](search-assets.md#assetpicker) para obtener más información.
 
-1. Vaya al conjunto de carrusel y cree una diapositiva. O bien, vaya al vídeo interactivo y luego al **[!UICONTROL Contenido]** y seleccione recursos. O bien, cree un conjunto de medios mixtos, un conjunto de imágenes o un conjunto de giros.
-1. Seleccione el **[!UICONTROL Selector de recursos]** (carpeta con lupa) y navegue hasta un recurso.
+1. Vaya al conjunto de carrusel y cree una diapositiva. O bien, vaya al vídeo interactivo, vaya a la pestaña **[!UICONTROL Contenido]** y seleccione los recursos. O bien, cree un conjunto de medios mixtos, un conjunto de imágenes o un conjunto de giros.
+1. Seleccione el icono **[!UICONTROL Selector de recursos]** (carpeta con lupa) y desplácese hasta un recurso.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   Filtre por palabra clave o etiqueta tocando **[!UICONTROL Filtrar]** y escribir palabras clave, agregar criterios o ambas cosas.
+   Filtre por palabra clave o etiqueta tocando **[!UICONTROL Filter]** e introduciendo palabras clave, o agregando criterios, o ambas cosas.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Cambie la ubicación de los recursos en Experience Manager navegando a otra carpeta en la **[!UICONTROL Ruta]** field.
+   Cambie la ubicación de los recursos en la que Experience Manager los busca navegando a otra carpeta en el campo **[!UICONTROL Ruta]**.
 
-   Seleccionar **[!UICONTROL Colección]** para buscar solo recursos dentro de colecciones.
+   Seleccione **[!UICONTROL Colección]** para buscar solamente recursos dentro de las colecciones.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Seleccionar **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos: **[!UICONTROL Vista de lista]**, **[!UICONTROL Vista de columna]**, o **[!UICONTROL Vista de tarjeta]**.
+   Seleccione **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos: **[!UICONTROL Vista de lista]**, **[!UICONTROL Vista de columna]** o **[!UICONTROL Vista de tarjeta]**.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 

@@ -29,7 +29,7 @@ Esta página proporciona la información esencial para trabajar con la función 
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">include</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">incluir</a></td>
    <td>No</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Esta página proporciona la información esencial para trabajar con la función 
   </tr>
   <tr>
    <td> propiedades</td>
-   <td>Consulte <a href="working-with-qna.md">Función de foro de preguntas y respuestas</a></td>
+   <td>Ver <a href="working-with-qna.md">función de foro de preguntas y respuestas</a></td>
   </tr>
  </tbody>
 </table>
@@ -57,26 +57,26 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 * [API de QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [Puntos finales de control de calidad](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [Puntos finales de QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ### Función Preguntas y respuestas {#qna-function}
 
-Una estructura de sitio de la comunidad que incluye [Función QnA](functions.md#qna-function) tiene un configurado `QnA` componente y configuración que afecta a la moderación y el etiquetado. La función de control de calidad admite la identificación de [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
+Una estructura de sitio de la comunidad que incluye la función [QnA](functions.md#qna-function) tiene un componente `QnA` configurado y opciones que afectan a la moderación y al etiquetado. La función QnA admite la identificación de un [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
 
 ### Acceso a las publicaciones del foro de control de calidad (UGC) {#accessing-qna-forum-posts-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
-Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
+Consulte [Moderar contenido generado por el usuario](moderate-ugc.md).
 
-AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Resumen del proveedor de recursos de almacenamiento](srp.md) - introducción y descripción general del uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - directrices de codificación.
-* [Refactorización de SocialUtils](socialutils.md) : asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [SRP y UGC Essentials](srp-and-ugc.md): métodos y ejemplos de utilidades SRP.
+* [Acceder a UGC con SRP](accessing-ugc-with-srp.md): directrices de codificación.
+* [Refactorización de SocialUtils](socialutils.md): asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.

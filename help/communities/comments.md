@@ -26,7 +26,7 @@ La función de comentarios se utiliza para permitir que los visitantes (miembros
 El documento describe:
 
 * Agregando `Comments` a una página.
-* Ajustes de configuración para `Comments` componente.
+* Ajustes de configuración para el componente `Comments`.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ El documento describe:
 
 ### Agregar comentarios a una página {#adding-comments-to-a-page}
 
-Para agregar un `Comments` a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un componente `Comments` a una página en modo de autor, use el explorador de componentes para localizar
 
 * `Communities / Comments`
 
@@ -42,25 +42,25 @@ y arrástrela a su lugar en una página, como una posición relativa a la funci�
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/essentials-comments.md#essentials-for-client-side) están incluidos, así es como se `Comments` aparece el componente.
+Cuando se incluyen las [bibliotecas requeridas del cliente](/help/communities/essentials-comments.md#essentials-for-client-side), así es como aparece el componente `Comments`.
 
-![comments-component](assets/comments-component.png)
+![comentarios-componente](assets/comments-component.png)
 
 >[!NOTE]
 >
->Solo uno `Comments` puede existir un componente en una página. Tenga en cuenta que varias funciones de Communities ya incluyen comentarios, como un blog, un calendario, un foro, un control de calidad y revisiones.
+>Solo puede existir un componente `Comments` en una página. Tenga en cuenta que varias funciones de Communities ya incluyen comentarios, como un blog, un calendario, un foro, un control de calidad y revisiones.
 
 ### Configuración de comentarios {#configuring-comments}
 
-Seleccione el colocado `Comments` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el componente `Comments` colocado al que desee acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![icono de configuración](assets/configure.png)
 
-![comentariosconfiguración](assets/commentssettings.png)
+![comentssettings](assets/commentssettings.png)
 
 #### Pestaña Comentarios {#comments-tab}
 
-En el **Comentarios** , especifique cómo los visitantes introducen los comentarios.
+En la ficha **Comentarios**, especifique cómo los visitantes escriben los comentarios.
 
 * **Permitir respuestas**
 
@@ -90,7 +90,7 @@ En el **Comentarios** , especifique cómo los visitantes introducen los comentar
 
   Si se selecciona, los comentarios se introducen con marcado. La opción predeterminada no está seleccionada.
 
-* **Permitir votación**
+* **Permitir Votación**
 
   Si se selecciona, la opción para votar hacia arriba o hacia abajo se presenta con el cuadro de entrada de texto. La opción predeterminada no está seleccionada.
 
@@ -98,15 +98,15 @@ En el **Comentarios** , especifique cómo los visitantes introducen los comentar
 
   Si se selecciona esta opción, se permite que los miembros sigan los comentarios. La opción predeterminada no está seleccionada.
 
-* **Mostrar distintivos**
+* **Mostrar insignias**
 
   Si se selecciona esta opción, se muestran las insignias obtenidas y concedidas. La opción predeterminada no está seleccionada.
 
 #### Pestaña Moderación de usuario {#user-moderation-tab}
 
-En el **Moderación de usuario** , especifique cómo se administran los comentarios publicados. Para obtener más información, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+En la ficha **Moderación de usuarios**, especifique cómo se administran los comentarios publicados. Para obtener más información, consulte [Moderar contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-* **Premoderación**
+* **Moderación previa**
 
   Si se selecciona, los comentarios deben aprobarse antes de aparecer en un sitio de publicación. La opción predeterminada no está seleccionada.
 
@@ -118,7 +118,7 @@ En el **Moderación de usuario** , especifique cómo se administran los comentar
 
   Si se selecciona, permite que los moderadores denieguen comentarios. La opción predeterminada no está seleccionada.
 
-* **Cerrar / volver a abrir comentarios**
+* **Cerrar/volver a abrir comentarios**
 
   Si se selecciona esta opción, los moderadores pueden cerrar y volver a abrir los comentarios. La opción predeterminada no está seleccionada.
 
@@ -140,45 +140,45 @@ En el **Moderación de usuario** , especifique cómo se administran los comentar
 
 * **Límite de indicación**
 
-  Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser mayor o igual que **Umbral de moderación**. El valor predeterminado es 5.
+  Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser mayor o igual que el **umbral de moderación**. El valor predeterminado es 5.
 
 #### Pestaña Configuración de ordenación {#sort-settings-tab}
 
-En el **Configuración de orden** , especifique cómo se ordenan los comentarios publicados cuando se muestran.
+En la ficha **Configuración de ordenación**, especifique cómo se ordenan los comentarios publicados cuando se muestran.
 
 * **Campo de ordenación**
 
-  Tire hacia abajo para seleccionar una de `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, o `Most Liked`.
+  Tire hacia abajo para seleccionar uno de `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed` o `Most Liked`.
 
 * **Orden de clasificación**
 
-  Tire hacia abajo para seleccionar una de `Ascending` o `Descending`.
+  Tire hacia abajo para seleccionar uno de `Ascending` o `Descending`.
 
 ### Cambio a un tipo de comentario personalizado {#changing-to-a-custom-comment-type}
 
 Al cambiar el Tipo de recurso de comentario, el sistema de comentarios ya no genera una instancia de un comentario con el valor predeterminado, sino una que han personalizado (ampliado) los desarrolladores.
 
-Una vez conocidos los tipos de recursos personalizados, escriba [Modo de diseño](/help/sites-authoring/default-components-designmode.md) y haga doble clic en el elemento colocado `Comments` para abrir un cuadro de diálogo con una pestaña adicional.
+Una vez que se conozcan los tipos de recursos personalizados, ingrese [Modo de diseño](/help/sites-authoring/default-components-designmode.md) y haga doble clic en el componente `Comments` colocado para abrir un cuadro de diálogo con una ficha adicional.
 
-En el **Tipos de recursos** pestaña, especifique el resourceType personalizado para las nuevas instancias de la `Comments or Voting` componentes:
+En la ficha **Tipos de recursos**, especifique el resourceType personalizado para las nuevas instancias de los componentes `Comments or Voting`:
 
-![resource-type](assets/resource-type.png)
+![tipo de recurso](assets/resource-type.png)
 
 * **Tipo de medio de comentario**
 
-  Navegue hasta el resourceType de un `comment` componente (comentario único) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`
+  Vaya al resourceType de un componente `comment` extendido (un solo comentario) en /apps. Por ejemplo, `/apps/social/commons/components/hbs/comments/comment`
 
   Este recurso identifica el resourceType del UGC creado cuando un visitante publica un comentario.
 
 * **Tipo de medio de votación**
 
-  Navegue hasta el resourceType de un `voting` en /apps. Por ejemplo, `/apps/social/components/hbs/voting`
+  Vaya al resourceType de un componente `voting` extendido en /apps. Por ejemplo, `/apps/social/components/hbs/voting`
 
   Este recurso identifica el tipo de recurso de UGC creado cuando un visitante publica un voto.
 
-* **Tipo de medio de sistema de comentario**
+* **Tipo de recurso de sistema de comentario**
 
-  Navegue hasta el resourceType de un `comments`(Sistema de comentarios) en /apps. Dejar en blanco a menos que la plantilla de página [incluye dinámicamente](/help/communities/scf.md#add-or-include-a-communities-component) Utilice el sistema de comentarios en la secuencia de comandos subyacente en lugar de añadirse a la página como recurso (nodo de comentarios). Para obtener más información, lea la [`{{include}}` ayudante](/help/communities/handlebars-helpers.md#include).
+  Vaya al resourceType de un componente `comments` extendido (sistema de comentarios) en /apps. Déjelo en blanco a menos que la plantilla de página [incluya](/help/communities/scf.md#add-or-include-a-communities-component) dinámicamente el sistema de comentarios en el script subyacente en lugar de agregarse a la página como recurso (nodo de comentarios). Obtenga más información leyendo sobre el [`{{include}}` asistente](/help/communities/handlebars-helpers.md#include).
 
 ### Experiencia del visitante del sitio {#site-visitor-experience}
 
@@ -190,7 +190,7 @@ Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o admin
 
 Cuando el visitante del sitio inicia sesión, según la configuración, puede ser
 
-* Publicar un nuevo comentario
+* Post agrega un nuevo comentario
 * Editar su propio comentario
 * Eliminar su propio comentario
 * Marcar comentarios de otros usuarios
@@ -201,8 +201,8 @@ Los visitantes del sitio que no hayan iniciado sesión solo pueden leer los come
 
 ### Información adicional {#additional-information}
 
-Puede encontrar más información en la [Comments Essentials](/help/communities/essentials-comments.md) para desarrolladores.
+Encontrará más información en la página de [Comments Essentials](/help/communities/essentials-comments.md) para desarrolladores.
 
-Para ver la moderación de los comentarios publicados, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+Para moderar los comentarios publicados, consulte [Moderar el contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-Para ver la traducción de los comentarios publicados, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
+Para obtener la traducción de los comentarios publicados, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).

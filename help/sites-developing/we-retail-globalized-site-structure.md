@@ -41,11 +41,11 @@ We.Retail se ha creado con una estructura de sitio globalizada que ofrece un for
 
    ![chlimage_1-90](assets/chlimage_1-90a.png)
 
-1. Con el Idioma principal de inglés seleccionado, abra el **Referencias** en la consola sitios y seleccione **Copias de idioma**.
+1. Con el Idioma principal en inglés seleccionado, abra el carril **Referencias** en la consola Sitios y seleccione **Copias de idioma**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. Marque la casilla que aparece junto a la etiqueta **Copias de idioma** para seleccionar todas las copias de idioma. En el **Actualizar copias de idioma** del carril, seleccione la opción para **Creación de un nuevo proyecto de traducción**. Proporcione un nombre al proyecto y haga clic en **Actualizar**.
+1. Marque la casilla que está junto a la etiqueta **Copias de idioma** para seleccionar todas las copias de idioma. En la sección **Actualizar copias de idioma** del carril, seleccione la opción para **Crear un nuevo proyecto de traducción**. Proporcione un nombre para el proyecto y haga clic en **Actualizar**.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -53,21 +53,21 @@ We.Retail se ha creado con una estructura de sitio globalizada que ofrece un for
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Haga clic en alemán para ver los detalles del proyecto de traducción. El estado es **Borrador**. Para iniciar la traducción con el servicio de traducción de Microsoft®, haga clic en las comillas angulares junto al icono **Trabajo de traducción** encabezado y seleccione **Inicio**.
+1. Haga clic en alemán para ver los detalles del proyecto de traducción. El estado se encuentra en **Borrador**. Para iniciar la traducción con el servicio de traducción de Microsoft®, haga clic en las comillas angulares junto al encabezado **Trabajo de traducción** y seleccione **Iniciar**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Se inicia el proyecto de traducción. Haga clic en los puntos suspensivos en la parte inferior de la tarjeta denominada Trabajo de traducción para ver los detalles. Páginas con el estado **Listo para revisión** ya han sido traducidos por el servicio de traducción.
+1. Se inicia el proyecto de traducción. Haga clic en los puntos suspensivos en la parte inferior de la tarjeta denominada Trabajo de traducción para ver los detalles. El servicio de traducción ya ha traducido las páginas con el estado **Listo para revisión**.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
-1. Seleccionar una de las páginas de la lista y, a continuación, **Vista previa en sitios** en la barra de herramientas, se abre la página traducida en el editor de páginas.
+1. Al seleccionar una de las páginas de la lista y, a continuación, **Vista previa en Sites** en la barra de herramientas, se abre la página traducida en el editor de páginas.
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
 >[!NOTE]
 >
->Este procedimiento demostró la integración integrada con la traducción automática de Microsoft®. Uso del [AEM Marco de integración de traducción](/help/sites-administering/translation.md)AEM , puede integrarlo con muchos servicios de traducción estándar para organizar la traducción de los recursos de traducción de la manera más rápida y sencilla
+>Este procedimiento demostró la integración integrada con la traducción automática de Microsoft®. AEM AEM Con el [Marco de trabajo de integración de traducciones](/help/sites-administering/translation.md), se puede integrar con muchos servicios de traducción estándar para organizar la traducción de las traducciones.
 
 ## Más información {#further-information}
 

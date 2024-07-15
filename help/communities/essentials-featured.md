@@ -40,7 +40,7 @@ A diferencia de anclar una publicación en la parte superior de un foro, esta fu
    <td> <i>predeterminado</i></td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td> /libs/social/commons/components/hbs/featuredcontent/featuredcontent.hbs<br /> /libs/social/commons/components/hbs/featuredtopic/featuredtopic.hbs</td>
   </tr>
   <tr>
@@ -49,7 +49,7 @@ A diferencia de anclar una publicación en la parte superior de un foro, esta fu
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="featured.md">Contenido destacado</a></td>
+   <td>Ver <a href="featured.md">Contenido destacado</a></td>
   </tr>
  </tbody>
 </table>
@@ -58,4 +58,4 @@ A diferencia de anclar una publicación en la parte superior de un foro, esta fu
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de la comunidad que incluye [Función Contenido destacado](functions.md#featured-content-function), incluye un configurado `featured content` componente.
+Una estructura de sitio de comunidad que incluye la [función Contenido destacado](functions.md#featured-content-function), incluye un componente `featured content` configurado.

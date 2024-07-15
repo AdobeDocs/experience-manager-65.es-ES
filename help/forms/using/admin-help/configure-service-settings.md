@@ -31,30 +31,30 @@ AEM Puede usar la página Administración de servicios para configurar las opcio
 
 
 1. Haga clic en la ficha Seguridad y establezca la configuración de seguridad del servicio. Consulte [Modificación de la configuración de seguridad de un servicio](configure-service-settings.md#modifying-security-settings-for-a-service).
-1. Si el servicio tiene una pestaña Puntos finales, utilícela para cambiar la configuración del punto de conexión. Consulte [Administrar extremos](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md).
-1. Haga clic en la ficha Agrupamiento y defina la configuración de agrupación. Consulte [Configuración de la agrupación para un servicio](configure-service-settings.md#configuring-pooling-for-a-service).
+1. Si el servicio tiene una pestaña Puntos finales, utilícela para cambiar la configuración del punto de conexión. Consulte [Administración de extremos](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md).
+1. Haga clic en la ficha Agrupamiento y defina la configuración de agrupación. Consulte [Configuración de agrupación para un servicio](configure-service-settings.md#configuring-pooling-for-a-service).
 1. Haga clic en Guardar para guardar los cambios o haga clic en Cancelar para descartarlos.
 1. Seleccione la casilla de verificación situada junto al nombre del servicio y haga clic en Start para reiniciarlo.
 
 ## Configuración del servicio Auditar flujo de trabajo {#audit-workflow-service-settings}
 
-Workbench proporciona la capacidad de registrar instancias de proceso a medida que se ejecutan en tiempo de ejecución y luego reproducirlas para observar el comportamiento del proceso. (Consulte [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Para ahorrar espacio en el sistema de archivos del servidor de Forms, puede limitar la cantidad de datos de registro de procesos que se almacenan. Puede configurar las siguientes propiedades del servicio Flujo de trabajo de auditoría ( `AuditWorkflowService`):
+Workbench proporciona la capacidad de registrar instancias de proceso a medida que se ejecutan en tiempo de ejecución y luego reproducirlas para observar el comportamiento del proceso. (Consulte la [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)). Para ahorrar espacio en el sistema de archivos del servidor de Forms, puede limitar la cantidad de datos de registro de procesos que se almacenan. Puede configurar las siguientes propiedades del servicio de flujo de trabajo de auditoría ( `AuditWorkflowService`):
 
-**maxNumberOfRecordingInstances:** Número máximo de grabaciones almacenadas. Cuando se almacena el número máximo, la grabación más antigua se elimina del sistema de archivos cuando se crea una nueva grabación. Esta propiedad es útil si tiende a crear muchas grabaciones y desea quitar automáticamente las antiguas. El valor predeterminado es 50.
+**maxNumberOfRecordingInstances:** El número máximo de grabaciones almacenadas. Cuando se almacena el número máximo, la grabación más antigua se elimina del sistema de archivos cuando se crea una nueva grabación. Esta propiedad es útil si tiende a crear muchas grabaciones y desea quitar automáticamente las antiguas. El valor predeterminado es 50.
 
 **MaxNumberOfRecordingEntries:** Número máximo de entradas de datos que se pueden almacenar para cada grabación. Las entradas de datos son información sobre las operaciones del proceso. Se almacenan varias entradas para cada ejecución de una operación, como si se inició la operación, si se completó la operación y si se completó la ruta que lleva a la operación. Esta propiedad es útil cuando los procesos pueden incluir muchas ejecuciones de operaciones, por ejemplo, cuando se encuentra un bucle interminable. El valor predeterminado es 50.
 
 ## configuración del servicio de formularios con códigos de barras {#barcoded-forms-service-settings}
 
-El servicio de Forms con códigos de barras `(BarcodedFormsService)` extrae datos de código de barras de imágenes escaneadas. El servicio acepta un formulario con códigos de barras (TIFF o PDF) como entrada y extrae la representación automática de los datos codificados por el código de barras.
+El servicio de formularios con códigos de barras `(BarcodedFormsService)` extrae datos de códigos de barras de imágenes digitalizadas. El servicio acepta un formulario con códigos de barras (TIFF o PDF) como entrada y extrae la representación automática de los datos codificados por el código de barras.
 
 Las siguientes configuraciones están disponibles para el servicio de formularios con códigos de barras.
 
-**Lectura izquierda:** Cuando se seleccionan, las imágenes de código de barras se escanean horizontalmente de derecha a izquierda.
+**Leer a la izquierda:** Cuando se seleccionan, las imágenes de código de barras se analizan horizontalmente de derecha a izquierda.
 
-**Leer a la derecha:** Cuando se seleccionan, las imágenes de código de barras se escanean horizontalmente de izquierda a derecha.
+**Leer a la derecha:** Cuando se seleccionan, las imágenes de código de barras se analizan horizontalmente de izquierda a derecha.
 
-**Leer más:** Cuando se seleccionan, las imágenes de código de barras se escanean verticalmente de abajo a arriba.
+**Leer:** Cuando se seleccionan, las imágenes de código de barras se analizan verticalmente de abajo a arriba.
 
 **Leer más abajo:** Cuando se seleccionan, las imágenes de código de barras se analizan verticalmente de arriba abajo.
 
@@ -62,13 +62,13 @@ Las siguientes configuraciones están disponibles para el servicio de formulario
 >
 >De forma predeterminada, se seleccionan todas las opciones. Anule la selección de una opción solo si está seguro de que no aparecerán códigos de barras de esa manera en los formularios.
 
-**Ruta del archivo base:** Ruta de acceso de archivo relativa a la que se resuelven los parámetros de archivo de entrada y salida por lotes para las operaciones Ejecutar trabajo de archivo XML y Ejecutar trabajo de archivo sin formato. En las configuraciones agrupadas, la ruta de acceso base del archivo debe ser una ubicación compartida del sistema de archivos a la que todos los nodos del clúster tengan acceso de lectura y escritura.
+**Ruta de acceso del archivo base:** Ruta de acceso del archivo relativa a la cual se resuelven los parámetros de archivo de entrada y salida del lote para las operaciones Ejecutar trabajo de archivo XML y Ejecutar trabajo de archivo plano. En las configuraciones agrupadas, la ruta de acceso base del archivo debe ser una ubicación compartida del sistema de archivos a la que todos los nodos del clúster tengan acceso de lectura y escritura.
 
-**Nombre de fuente de datos:** Nombre de la fuente de datos que se utiliza para mantener la información de estado e historial de los trabajos de procesamiento por lotes. La fuente de datos especificada debe admitir transacciones globales (XA).
+**Nombre de Data Source:** Nombre del origen de datos que se usa para mantener la información de estado e historial de los trabajos de procesamiento por lotes. La fuente de datos especificada debe admitir transacciones globales (XA).
 
-## Configuración del servicio de puente de migración central (obsoleto) {#central-migration-bridge-service-settings}
+## Configuración del servicio Bridge de migración central (obsoleto) {#central-migration-bridge-service-settings}
 
-El servicio del puente de migración central ( `CentralMigrationBridge`) invoca un subconjunto de la funcionalidad de Adobe Central Pro Output Server (Central), que incluye los comandos JFMERGE, JFTRANS y XMLIMPORT. AEM Las operaciones del servicio Puente de migración central permiten reutilizar los siguientes recursos centrales en formularios de la:
+El servicio Bridge de migración central ( `CentralMigrationBridge`) invoca un subconjunto de la funcionalidad de Adobe Central Pro Output Server (central), que incluye los comandos JFMERGE, JFTRANS y XMLIMPORT. Las operaciones del servicio de migración central de Bridge AEM le permiten reutilizar los siguientes recursos centrales en los formularios de la:
 
 * diseño de plantilla (&amp;ast;.ifd)
 * plantillas de salida (&amp;ast;.mdf)
@@ -76,19 +76,19 @@ El servicio del puente de migración central ( `CentralMigrationBridge`) invoca 
 * archivos de preámbulo (archivos &amp;ast;.pre)
 * archivos de definición de datos (&amp;ast;.tdf)
 
-La siguiente configuración está disponible para el servicio Puente de migración central.
+La siguiente configuración está disponible para el servicio Bridge de migración central.
 
 **Directorio de instalación central:** El directorio donde está instalado Adobe Central 5.7.
 
 ## Configuración del servicio Conector del repositorio de contenido para Documentum de EMC {#content-repository-connector-for-emc-documentum-service-settings}
 
-El servicio Content Repository Connector for EMC Documentum ( `EMCDocumentumContentRepositoryConnector`) permite crear procesos que interactúen con el contenido almacenado en un repositorio de Documentum.
+El servicio Content Repository Connector for EMC Documentum ( `EMCDocumentumContentRepositoryConnector`) permite crear procesos que interactúen con contenido almacenado en un repositorio de Documentum.
 
 La siguiente configuración está disponible para el servicio Content Repository Connector for EMC Documentum.
 
-**Ruta predeterminada de objeto de vínculo de recurso:** Parte predeterminada de la ruta de acceso del repositorio de Documentum para almacenar el objeto Asset Link. AEM La ruta real consiste en la ruta predeterminada y la ubicación de la plantilla de formulario en el repositorio de formularios de la aplicación de forma de la aplicación de la plantilla de formulario de la aplicación de datos de formulario de la.
+**Ruta predeterminada del objeto Asset Link:** La parte predeterminada de la ruta en el repositorio de Documentum para almacenar el objeto Asset Link. AEM La ruta real consiste en la ruta predeterminada y la ubicación de la plantilla de formulario en el repositorio de formularios de la aplicación de forma de la aplicación de la plantilla de formulario de la aplicación de datos de formulario de la.
 
-Por ejemplo, si la ruta predeterminada está configurada en `/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects`y la plantilla de formulario se almacenará en una carpeta `/Docbase/forms/`, el objeto Asset Link se almacena en la siguiente ubicación:
+Por ejemplo, si la ruta predeterminada está establecida en `/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects` y la plantilla de formulario está almacenada en una carpeta `/Docbase/forms/`, el objeto Asset Link se almacena en la siguiente ubicación:
 
 `/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects/Docbase/forms/`
 
@@ -100,9 +100,9 @@ El Conector del repositorio de contenido para IBM FileNet permite crear procesos
 
 La siguiente configuración está disponible para el Conector del repositorio de contenido para el servicio FileNet de IBM.
 
-**Ruta predeterminada de objeto de vínculo de recurso:** La parte predeterminada de la ruta de acceso en el repositorio FileNet de IBM para almacenar el objeto Asset Link. AEM La ruta real consiste en la ruta predeterminada y la ubicación de la plantilla de formulario en el repositorio de formularios de la aplicación de forma de la aplicación de la plantilla de formulario de la aplicación de datos de formulario de la.
+**Ruta predeterminada del objeto Asset Link:** La parte predeterminada de la ruta en el repositorio FileNet de IBM para almacenar el objeto Asset Link. AEM La ruta real consiste en la ruta predeterminada y la ubicación de la plantilla de formulario en el repositorio de formularios de la aplicación de forma de la aplicación de la plantilla de formulario de la aplicación de datos de formulario de la.
 
-Por ejemplo, si la ruta predeterminada está configurada en `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects`y la plantilla de formulario se almacenará en una carpeta `/Docbase/forms/`, el objeto Asset Link se almacena en la siguiente ubicación:
+Por ejemplo, si la ruta predeterminada está establecida en `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects` y la plantilla de formulario está almacenada en una carpeta `/Docbase/forms/`, el objeto Asset Link se almacena en la siguiente ubicación:
 
 `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects/Docbase/forms/`
 
@@ -110,19 +110,19 @@ El valor predeterminado de esta configuración es `/LiveCycleES/ConnectorforIBMF
 
 ## Convertir configuración del servicio del PDF {#convert-pdf-service-settings}
 
-El servicio ConvertPDF ( `ConvertPdfService`) convierte documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento de PDF en un archivo de TIFF de varias páginas es práctico cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos de PDF.
+El servicio PDF de conversión (`ConvertPdfService`) convierte los documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento de PDF en un archivo de TIFF de varias páginas es práctico cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos de PDF.
 
 Las siguientes configuraciones están disponibles para el servicio Convertir PDF.
 
 **Tipo de transacción:** Especifica cómo se debe propagar un contexto de transacción a una operación.
 
-**Requerido:** Admite un contexto de transacción si existe; de lo contrario, se crea un nuevo contexto de transacción. Este es el valor predeterminado.
+**Requerido:** Admite un contexto de transacción si existe uno; de lo contrario, se crea un nuevo contexto de transacción. Este es el valor predeterminado.
 
-**Requiere nuevo:** Crea siempre un nuevo contexto de transacción. Si existe un contexto de transacción activo, se suspende.
+**Requiere nuevo:** Siempre crea un nuevo contexto de transacción. Si existe un contexto de transacción activo, se suspende.
 
-**Tiempo de espera de transacción (en segundos):** El número de segundos que el proveedor de transacciones subyacente debe esperar antes de revertir una transacción que está ajustando esta operación. Este valor se ignorará si se propaga un contexto de transacción existente. El valor predeterminado es 180.
+**Tiempo de espera de transacción (en segundos):** El número de segundos que el proveedor de transacción subyacente debe esperar antes de revertir una transacción que está ajustando esta operación. Este valor se ignorará si se propaga un contexto de transacción existente. El valor predeterminado es 180.
 
-**Resolución de umbral para el suavizado (en ppp):** La resolución de imagen por debajo de la cual se aplica el suavizado (o suavizado) al texto, las ilustraciones de líneas y las imágenes, si ha seleccionado la opción &quot;Aplicar suavizado a&quot; para esos elementos.
+**Resolución de umbral para el suavizado (en ppp):** Resolución de imagen por debajo de la cual se aplica el suavizado (o suavizado) al texto, las ilustraciones de líneas y las imágenes, si ha seleccionado las opciones &quot;Aplicar suavizado a&quot; para esos elementos.
 
 **Aplicar suavizado al texto:** Controla el suavizado del texto. Para deshabilitar el suavizado del texto y hacer que el texto sea más nítido y fácil de leer con un ampliador de pantalla, desactive esta casilla de verificación.
 
@@ -132,7 +132,7 @@ Las siguientes configuraciones están disponibles para el servicio Convertir PDF
 
 ## Configuración del servicio de Distiller {#distiller-service-settings}
 
-El servicio Distiller ( `DistillerService`) convierte los archivos PostScript, PostScript encapsulado (EPS) y PRN en archivos de PDF a través de una red.
+El servicio Distiller (`DistillerService`) convierte los archivos PostScript, Encapsulated PostScript (EPS) y PRN en archivos de PDF a través de una red.
 
 Las siguientes configuraciones están disponibles para el servicio Distiller.
 
@@ -150,59 +150,59 @@ Las siguientes configuraciones están disponibles para el servicio Distiller.
 
 Se pueden crear nuevas configuraciones a través de la interfaz de usuario del PDF Generator.
 
-**Configuración de seguridad:** Configuración de seguridad preconfigurada que se aplica a documentos de PDF generados. El valor predeterminado es Sin seguridad. Cree la configuración de seguridad mediante el PDF Generator y, a continuación, introduzca la configuración aquí.
+**Configuración de seguridad:** Configuración de seguridad preconfigurada que se aplica a los documentos de PDF generados. El valor predeterminado es Sin seguridad. Cree la configuración de seguridad mediante el PDF Generator y, a continuación, introduzca la configuración aquí.
 
-**Tamaño del grupo:** El tamaño inicial de la piscina. Cuando se implementa el servicio Distiller, este número se utiliza para determinar el número de instancias de implementación del servicio que se crean y asignan al grupo libre a la espera de solicitudes de invocación. El contenedor de servicio puede responder inmediatamente a las solicitudes de invocación sin tener que inicializar primero una instancia de servicio.
+**Tamaño de grupo:** El tamaño inicial del grupo. Cuando se implementa el servicio Distiller, este número se utiliza para determinar el número de instancias de implementación del servicio que se crean y asignan al grupo libre a la espera de solicitudes de invocación. El contenedor de servicio puede responder inmediatamente a las solicitudes de invocación sin tener que inicializar primero una instancia de servicio.
 
 ## Configuración del servicio de Administración de documentos {#document-management-service-settings}
 
 >[!NOTE]
 >
->Adobe LiveCycle® ® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Consulte [Documento de ciclo vital de producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe LiveCycle® ® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Ver [documento de ciclo de vida del producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
-El servicio Administración de documentos ( `DocumentManagementService`) permite que los procesos utilicen la funcionalidad de administración de contenido proporcionada por los servicios de contenido (obsoleto). Las operaciones de Administración de documentos proporcionan tareas básicas que son necesarias para mantener espacios y contenido en el sistema de administración de contenido. Algunos ejemplos de estas tareas son copiar, eliminar, mover, recuperar y almacenar contenido, crear espacios y asociaciones y obtener y establecer atributos de contenido.
+El servicio Administración de documentos (`DocumentManagementService`) habilita los procesos para que utilicen la funcionalidad de administración de contenido proporcionada por los servicios de contenido (obsoleto). Las operaciones de Administración de documentos proporcionan tareas básicas que son necesarias para mantener espacios y contenido en el sistema de administración de contenido. Algunos ejemplos de estas tareas son copiar, eliminar, mover, recuperar y almacenar contenido, crear espacios y asociaciones y obtener y establecer atributos de contenido.
 
 Las siguientes configuraciones están disponibles para el servicio Administración de documentos.
 
-**Esquema de tienda:** Esquema del almacén en el que se encuentra el contenido. El valor predeterminado es Workspace.
+**Esquema de almacenamiento:** Esquema del almacén en el que se encuentra el contenido. El valor predeterminado es Workspace.
 
-**Puerto HTTP:** El puerto utilizado para acceder a Content Services (obsoleto). El valor predeterminado es 8080.
+**Puerto HTTP:** El puerto usado para acceder a Content Services (obsoleto). El valor predeterminado es 8080.
 
 ## Configuración del servicio de correo electrónico {#email-service-settings}
 
-El correo electrónico se utiliza comúnmente para distribuir contenido o proporcionar información de estado como parte de un proceso automatizado. El servicio de correo electrónico ( `EmailService`) permite a los procesos recibir mensajes de correo electrónico de un servidor POP3 o IMAP y enviarlos a un servidor SMTP.
+El correo electrónico se utiliza comúnmente para distribuir contenido o proporcionar información de estado como parte de un proceso automatizado. El servicio de correo electrónico (`EmailService`) permite a los procesos recibir mensajes de correo electrónico de un servidor POP3 o IMAP y enviar mensajes de correo electrónico a un servidor SMTP.
 
 Por ejemplo, un proceso utiliza el servicio de correo electrónico para enviar un mensaje de correo electrónico con un archivo adjunto de formulario de PDF. El servicio de correo electrónico se conecta a un servidor SMTP para enviar el mensaje de correo electrónico con el archivo adjunto. El formulario de PDF está diseñado para permitir al destinatario hacer clic en Enviar después de completar el formulario. La acción hace que el formulario se devuelva como archivo adjunto al servidor de correo electrónico designado. El servicio de correo electrónico recupera el mensaje de correo electrónico devuelto y almacena el formulario completado en una variable de formulario de datos de proceso.
 
 Las siguientes configuraciones están disponibles para el servicio de correo electrónico.
 
-**Host SMTP:** La dirección IP o URL del servidor SMTP que se utilizará para enviar correo electrónico.
+**Host SMTP:** Dirección IP o URL del servidor SMTP que se utilizará para enviar correo electrónico.
 
-**Número de puerto SMTP:** El puerto utilizado para conectarse al servidor SMTP.
+**Número de puerto SMTP:** El puerto usado para conectarse al servidor SMTP.
 
 **Autenticar SMTP:** Seleccione si se requiere autenticación de usuario para conectarse al servidor SMTP.
 
-**Usuario de SMTP:** Nombre de usuario de la cuenta de usuario que se va a utilizar para iniciar sesión en el servidor SMTP.
+**Usuario SMTP:** Nombre de usuario de la cuenta de usuario que se va a usar para iniciar sesión en el servidor SMTP.
 
-**Contraseña de SMTP:** La contraseña asociada a la cuenta de usuario SMTP.
+**Contraseña SMTP:** La contraseña asociada a la cuenta de usuario SMTP.
 
-**Seguridad de transporte SMTP:** Protocolo de seguridad que se utiliza para conectarse al servidor SMTP:
+**Seguridad de transporte SMTP:** Protocolo de seguridad que se utilizará para la conexión con el servidor SMTP:
 
 * Seleccione Ninguno si no se utiliza ningún protocolo (los datos se envían sin cifrar)
 * Seleccione SSL si utiliza el protocolo Secure Sockets Layer.
 * Seleccione TLS si se utiliza la seguridad de la capa de transporte.
 
-**Host POP3/IMAP:** La dirección IP o URL del servidor POP3 o IMAP que se utilizará para enviar correo electrónico.
+**Host POP3/IMAP:** Dirección IP o URL del servidor POP3 o IMAP que se va a utilizar para enviar correo electrónico.
 
 **Nombre de usuario POP3/IMAP:** Nombre de usuario de la cuenta de usuario que se va a utilizar para iniciar sesión en el servidor POP3 o IMAP.
 
-**Contraseña POP3/IMAP:** La contraseña asociada a la cuenta de usuario POP3 o IMAP.
+**Contraseña POP3/IMAP:** Contraseña asociada a la cuenta de usuario POP3 o IMAP.
 
 **Número de puerto POP3/IMAP:** El puerto utilizado para conectarse al servidor POP3 o IMAP.
 
-**POP3/IMAP:** Protocolo que se utiliza para enviar y recibir correo electrónico.
+**POP3/IMAP:** Protocolo que se va a utilizar para enviar y recibir correo electrónico.
 
-**Seguridad de transporte de recepción:** Protocolo de seguridad que se utiliza para conectarse al servidor SMTP:
+**Recibir seguridad de transporte:** El protocolo de seguridad que se va a usar para conectarse al servidor SMTP:
 
 * Seleccione Ninguno si no se utiliza ningún protocolo (los datos se envían sin cifrar).
 * Seleccione SSL si utiliza el protocolo Secure Sockets Layer.
@@ -210,7 +210,7 @@ Las siguientes configuraciones están disponibles para el servicio de correo ele
 
 ## Configuración del servicio de cifrado {#encryption-service-settings}
 
-El servicio Encryption ( `EncryptionService`) permite cifrar y descifrar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está encriptado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está encriptado con un certificado, el usuario debe desencriptar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para encriptarlo.
+El servicio Encryption (`EncryptionService`) permite cifrar y descifrar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está encriptado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está encriptado con un certificado, el usuario debe desencriptar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para encriptarlo.
 
 Los siguientes ajustes están disponibles para el servicio Encryption.
 
@@ -218,7 +218,7 @@ Los siguientes ajustes están disponibles para el servicio Encryption.
 
 **Puerto LDAP predeterminado al que conectarse:** Número de puerto del servidor LDAP.
 
-**Nombre de usuario LDAP predeterminado:** Si el servidor LDAP requiere autenticación, especifique el nombre de usuario que se va a utilizar para conectarse al servidor LDAP.
+**Nombre de usuario LDAP predeterminado:** Si el servidor LDAP requiere autenticación, especifique el nombre de usuario que se utilizará para conectarse al servidor LDAP.
 
 **Contraseña LDAP predeterminada:** Si el servidor LDAP requiere autenticación, especifique la contraseña que corresponde al nombre de usuario que se va a utilizar para conectarse al servidor LDAP.
 
@@ -230,53 +230,54 @@ Los siguientes ajustes están disponibles para el servicio Encryption.
 
 ## Configuración del servicio FTP {#ftp-service-settings}
 
-El servicio FTP ( `FTP`) permite que los procesos interactúen con un servidor FTP. Las operaciones del servicio FTP pueden recuperar archivos del servidor FTP, colocarlos en él y eliminarlos del servidor FTP. Por ejemplo, documentos como informes generados a partir de un proceso se pueden almacenar en un servidor FTP para su distribución. O un sistema externo puede generar algunos archivos basados en pasos anteriores de un proceso. En un paso posterior del proceso, los archivos se pueden transferir a una ubicación remota.
+El servicio FTP (`FTP`) permite que los procesos interactúen con un servidor FTP. Las operaciones del servicio FTP pueden recuperar archivos del servidor FTP, colocarlos en él y eliminarlos del servidor FTP. Por ejemplo, documentos como informes generados a partir de un proceso se pueden almacenar en un servidor FTP para su distribución. O un sistema externo puede generar algunos archivos basados en pasos anteriores de un proceso. En un paso posterior del proceso, los archivos se pueden transferir a una ubicación remota.
 
 Los siguientes ajustes están disponibles para el servicio FTP.
 
-**Host predeterminado:** La dirección IP o URL del servidor FTP.
+**Host predeterminado:** Dirección IP o URL del servidor FTP.
 
-**Puerto predeterminado:** El puerto utilizado para conectarse al servidor FTP. El valor predeterminado es 21.
+**Puerto predeterminado:** El puerto usado para conectarse al servidor FTP. El valor predeterminado es 21.
 
-**Nombre de usuario predeterminado:** Nombre de la cuenta de usuario que puede utilizar para acceder al servidor FTP. La cuenta de usuario debe tener privilegios suficientes para realizar las operaciones de FTP que requiere este servicio.
+**Nombre de usuario predeterminado:** Nombre de la cuenta de usuario que puede usar para tener acceso al servidor FTP. La cuenta de usuario debe tener privilegios suficientes para realizar las operaciones de FTP que requiere este servicio.
 
 **Contraseña predeterminada:** Contraseña que se utilizará con el nombre de usuario especificado para autenticarse en el servidor FTP.
 
 ## Generar configuración del servicio de PDF {#generate-pdf-service-settings}
 
-El servicio Generar PDF ( `GeneratePDFService`) convierte archivos en varios formatos nativos a documentos de PDF y convierte documentos de PDF a varios formatos de archivo.
+El servicio Generate PDF ( `GeneratePDFService`) convierte archivos en varios formatos nativos en documentos de PDF y convierte documentos de PDF en varios formatos de archivo.
 
 Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
-**Configuración de Adobe PDF:** Nombre de la configuración de Adobe PDF preconfigurada que se aplicará a un trabajo de conversión si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración de Adobe PDF se establece en la consola de administración, haciendo clic en Servicios > PDF Generator > Configuración de Adobe PDF. Esta configuración solo es aplicable a las conversiones basadas en PDFMaker.
+**Configuración de Adobe PDF:** Nombre de la configuración preconfigurada de Adobe PDF que se aplicará a un trabajo de conversión, si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración de Adobe PDF se establece en la consola de administración, haciendo clic en Servicios > PDF Generator > Configuración de Adobe PDF. Esta configuración solo es aplicable a las conversiones basadas en PDFMaker.
 
 **Configuración de seguridad:** Nombre de la configuración de seguridad preconfigurada que se aplicará a un trabajo de conversión, si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración de seguridad se establece en la consola de administración, haciendo clic en Servicios > PDF Generator > Configuración de seguridad.
 
 **Configuración de tipo de archivo:** Nombre de la configuración de tipo de archivo preconfigurada que se aplicará a un trabajo de conversión, si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración del tipo de archivo se establece en la consola de administración, haciendo clic en Servicios > PDF Generator > Configuración del tipo de archivo.
 
-**Utilizar WebCapture (sólo Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat para todas las conversiones de HTML a PDF. Esto puede mejorar la calidad de los archivos del PDF producidos a partir de HTML, aunque el rendimiento puede ser ligeramente inferior. El valor predeterminado es False.
+**Usar WebCapture (sólo para Windows):** Si esta configuración es verdadera, el servicio Generate PDF usa Acrobat para todas las conversiones de HTML a PDF. Esto puede mejorar la calidad de los archivos del PDF producidos a partir de HTML, aunque el rendimiento puede ser ligeramente inferior. El valor predeterminado es False.
 
-**Conversor principal para conversiones de HTML a PDF:** El servicio Generate PDF proporciona varias rutas para convertir archivos de HTML en documentos de PDF: Webkit, WebCapture (solo Windows) y WebToPDF. Esta configuración permite al usuario seleccionar el convertidor principal para convertir el HTML en PDF. De forma predeterminada, la opción WebToPDF está seleccionada.
+**Convertidor principal para conversiones de HTML a PDF:** El servicio Generate PDF proporciona varias rutas para convertir archivos de HTML en documentos de PDF: Webkit, WebCapture (sólo Windows) y WebToPDF. Esta configuración permite al usuario seleccionar el convertidor principal para convertir el HTML en PDF. De forma predeterminada, la opción WebToPDF está seleccionada.
 
-**Conversión de reserva de HTML a PDF:** Especifique el convertidor para las conversiones de HTML a PDF si falla el convertidor principal. De forma predeterminada, la opción WebCapture (sólo Windows) está seleccionada.
+**Convertidor de reserva para conversiones de HTML a PDF:** Especifique el convertidor para conversiones de HTML a PDF si falla el convertidor principal. De forma predeterminada, la opción WebCapture (sólo Windows) está seleccionada.
 
-**Utilizar la conversión de imágenes de Acrobat (solo Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat para todas las conversiones de imagen a PDF. Esta configuración solo es útil si el mecanismo de conversión predeterminado de Java puro no puede convertir correctamente una proporción significativa de las imágenes de entrada. El valor predeterminado es False.
+**Usar la conversión de imágenes de Acrobat (solo para Windows):** Si esta configuración es verdadera, el servicio Generate PDF usa Acrobat para todas las conversiones de imágenes a PDF. Esta configuración solo es útil si el mecanismo de conversión predeterminado de Java puro no puede convertir correctamente una proporción significativa de las imágenes de entrada. El valor predeterminado es False.
 
-**Activar conversiones de AutoCAD basadas en Acrobat (sólo para Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat para todas las conversiones de DWG a PDF. Esta configuración sólo es útil si AutoCAD no está instalado en el servidor o si el mecanismo de conversión de AutoCAD no puede convertir archivos correctamente.
+**Habilitar conversiones de AutoCAD basadas en Acrobat (sólo para Windows):** Si esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat para todas las conversiones de DWG a PDF. Esta configuración sólo es útil si AutoCAD no está instalado en el servidor o si el mecanismo de conversión de AutoCAD no puede convertir archivos correctamente.
 
-**Expresiones Regulares Para Encontrar Caracteres Especiales Prohibidos En El Nombre De Usuario (Solo Windows):** Especifica caracteres que interfieren con las operaciones del Export PDF y del Optimize PDF cuando los caracteres aparecen en el nombre de un usuario.
+**Expresiones Regulares Para Averiguar La Oferta Especial Prohibida
+Caracteres en el nombre de usuario (sólo Windows):** Especifica caracteres que interfieren con las operaciones del Export PDF y del Optimize PDF cuando aparecen en el nombre de un usuario.
 
 **Tamaño del grupo ImageToPDF:** El tamaño del grupo del convertidor predeterminado (Java puro) de imagen a PDF en el servicio Generate PDF. Esta opción controla el número máximo de conversiones simultáneas de imagen a PDF que puede realizar el servicio Generate PDF. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores.
 
-**Tamaño del grupo de HTML a PDF:** El tamaño del grupo del convertidor HTML a PDF en el servicio Generar PDF. Esta opción controla el número máximo de conversiones simultáneas de HTML a PDF que puede realizar el servicio Generate PDF. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores.
+**Tamaño del grupo de HTML a PDF:** El tamaño del grupo del convertidor de HTML a PDF en el servicio Generar PDF. Esta opción controla el número máximo de conversiones simultáneas de HTML a PDF que puede realizar el servicio Generate PDF. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores.
 
-**Tamaño del grupo de OCR:** Tamaño del grupo de PaperCaptureService que utiliza el PDF Generator para OCR. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores. Esta configuración sólo es válida en sistemas Windows.
+**Tamaño del grupo de OCR:** El tamaño del grupo de PaperCaptureService que utiliza el PDF Generator para OCR. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores. Esta configuración sólo es válida en sistemas Windows.
 
-**Páginas máximas de ImageToPDF en la memoria para conversiones de TIFF:** Esta configuración determina el número máximo de páginas de una imagen de TIFF que pueden permanecer en la memoria antes de vaciarse en el disco durante la conversión a PDF. El valor predeterminado de esta configuración es 500, que se puede aumentar si se asigna memoria adicional al proceso de conversión de ImageToPDF.
+**Máximo de páginas de ImageToPDF en memoria para las conversiones de TIFF:** Esta configuración determina el número máximo de páginas de una imagen de TIFF que pueden permanecer en memoria antes de vaciarse en el disco durante la conversión a PDF. El valor predeterminado de esta configuración es 500, que se puede aumentar si se asigna memoria adicional al proceso de conversión de ImageToPDF.
 
-**Familia De Fuentes De Reserva Para Conversiones De HTML A PDF:** Nombre de la familia de fuentes que se utilizará en los documentos del PDF cuando la fuente utilizada en el HTML original no esté disponible para AEM Forms Server. Especifique una familia de fuentes si espera convertir páginas de HTML que utilicen fuentes no disponibles. Por ejemplo, las páginas creadas en idiomas regionales podrían utilizar fuentes no disponibles.
+**Familia de fuentes de reserva para conversiones de HTML a PDF:** Nombre de la familia de fuentes que se utilizará en los documentos de PDF cuando la fuente utilizada en el HTML original no esté disponible para el servidor de AEM Forms. Especifique una familia de fuentes si espera convertir páginas de HTML que utilicen fuentes no disponibles. Por ejemplo, las páginas creadas en idiomas regionales podrían utilizar fuentes no disponibles.
 
-**Lógica de reintento para conversiones nativas** Rige los reintentos de generación de PDF si el primer intento de conversión ha fallado:
+**La lógica de reintento para conversiones nativas** rige los reintentos de generación de PDF si el primer intento de conversión ha fallado:
 
 * **Sin reintento**
 
@@ -294,7 +295,7 @@ Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
 Al crear una guía, algunos recursos, como la definición de la guía, están incrustados en la guía. Los recursos también pueden existir como referencias a recursos de la aplicación almacenados localmente o en el servidor de AEM Forms. La Guía no contiene datos, y los valores de la ubicación de envío y las entradas no son adecuados para todos los entornos externos.
 
-En la mayoría de los casos, los servicios de procesamiento predeterminados de las guías son suficientes para preparar una guía para usarla en Workspace u otros entornos externos. (En la vista Servicios, en Workbench, el servicio predeterminado es Guías (sistema)/Procesos/Guía de procesamiento - 1.0). El servicio Utilidades de guía ( `GuidesUtility`) permite crear un proceso personalizado para procesar una guía, si es necesario.
+En la mayoría de los casos, los servicios de procesamiento predeterminados de las guías son suficientes para preparar una guía para usarla en Workspace u otros entornos externos. (En la vista Servicios, en Workbench, el servicio predeterminado es Guías (sistema)/Procesos/Guía de procesamiento - 1.0). El servicio Utilidades de guía (`GuidesUtility`) le permite crear un proceso personalizado para procesar una guía, si es necesario.
 
 Las operaciones de Utilidades de la guía permiten añadir las siguientes tareas de renderización de la guía a un proceso:
 
@@ -311,25 +312,25 @@ Los valores predeterminados del servicio Utilidades de guía admiten la mayoría
 
 **publicPaths:** Esta opción ha quedado obsoleta. AEM No utilice esta opción con formularios.
 
-**pathInfoExpiryInSeconds:** Intervalo tras el cual caduca una solicitud de información de ruta de un cliente. El valor predeterminado es 1.
+**pathInfoExpiryInSeconds:** Intervalo tras el cual caduca una solicitud de información de ruta de acceso de un cliente. El valor predeterminado es 1.
 
-**garantíaCaducidadEnSegundos:** Intervalo tras el cual caduca una solicitud de garantía de un cliente. El valor predeterminado es 315576000.
+**garantíaExpiryInSeconds:** Intervalo después del cual caduca una solicitud de garantía de un cliente. El valor predeterminado es 315576000.
 
 **mismatchExpiryInSeconds:** Intervalo tras el cual caduca una solicitud de garantía de un cliente, cuando la eTag (etiqueta de entidad) no coincide. (Una eTag es un encabezado de respuesta HTTP). El valor predeterminado es 1.
 
 **guideContext:** Raíz de contexto de la aplicación web Guides. Coincide con el valor establecido mediante la aplicación web Guides. El valor predeterminado es /Guides/.
 
-**secureRandomAlgorithm:** Algoritmo que se utiliza al generar claves e identificadores. Este valor se pasa al método getInstance de la clase Java SecureRandom. El valor predeterminado es SHA1PRNG.
+**secureRandomAlgorithm:** Algoritmo que se debe usar al generar claves e identificadores. Este valor se pasa al método getInstance de la clase Java SecureRandom. El valor predeterminado es SHA1PRNG.
 
 **idBytes:** El número de bytes aleatorios que se utilizarán para un identificador de clave. El valor predeterminado es 6.
 
-**macAlgorithm:** Algoritmo MAC (código de autenticación de mensaje) que se utiliza para la verificación de URL de garantías. Este método se pasa al método getInstance de la clase Mac. El valor predeterminado es HmacSHA1.
+**macAlgorithm:** Algoritmo de MAC (código de autenticación de mensaje) que se utilizará para la verificación de URL de garantías. Este método se pasa al método getInstance de la clase Mac. El valor predeterminado es HmacSHA1.
 
 **macRefreshIntervalInMinutes:** Cantidad de tiempo que una clave está activa. Cuando una clave ha estado activa para este intervalo, se genera una nueva clave. La nueva clave se convierte en la clave activa. La clave activa anteriormente se conserva durante el 10 % del intervalo de actualización. Este comportamiento permite que las direcciones URL que se generan mediante la clave antigua sigan funcionando a través del conmutador de claves. El valor predeterminado es 144000.
 
-**macOverlapIntervalInMinutes:** Período de tiempo que la clave anterior seguirá siendo válida después de que se genere una nueva. El valor predeterminado es 1440 minutos (1 día).
+**macOverlapIntervalInMinutes:** Tiempo que la clave anterior seguirá siendo válida después de que se genere una nueva. El valor predeterminado es 1440 minutos (1 día).
 
-**macKeySeed:** Un valor semilla para generar la dirección URL segura. Cuando esta opción está activada, la clave nunca se actualiza. Si se establece la misma semilla en diferentes servidores, estos generarán direcciones URL seguras compatibles. Esto puede resultar útil si hay varios servidores de Forms en uso detrás de un equilibrador de carga. Introduzca una secuencia aleatoria de caracteres y números como origen.
+**macKeySeed:** Un valor de inicialización para generar la dirección URL segura. Cuando esta opción está activada, la clave nunca se actualiza. Si se establece la misma semilla en diferentes servidores, estos generarán direcciones URL seguras compatibles. Esto puede resultar útil si hay varios servidores de Forms en uso detrás de un equilibrador de carga. Introduzca una secuencia aleatoria de caracteres y números como origen.
 
 ### Uso de guías en un clúster de servidores {#using-guides-in-a-server-cluster}
 
@@ -345,7 +346,7 @@ Reinicie el clúster porque macSeedValue es de solo lectura al iniciar el sistem
 
 ## Configuración del servicio JDBC {#jdbc-service-settings}
 
-El servicio JDBC ( `JdbcService`) permite que los procesos interactúen con las bases de datos.
+El servicio JDBC (`JdbcService`) permite que los procesos interactúen con las bases de datos.
 
 La siguiente configuración está disponible para el servicio JDBC.
 
@@ -353,13 +354,13 @@ La siguiente configuración está disponible para el servicio JDBC.
 
 ## Configuración del servicio JMS {#jms-service-settings}
 
-El servicio JMS ( `JMS`) permite la interacción con proveedores de Java Messaging System (JMS) que implementan la mensajería de punto a punto y la mensajería de publicación/suscripción.
+El servicio JMS ( `JMS`) habilita la interacción con proveedores de Java Messaging System (JMS) que implementan la mensajería punto a punto y la mensajería de publicación/suscripción.
 
 Configure el servicio JMS con propiedades predeterminadas para que las operaciones del servicio puedan conectarse e interactuar con un proveedor JMS y un servicio JNDI asociado. Los valores de las propiedades del servicio se establecen en valores predeterminados basados en el servidor de aplicaciones JBoss. AEM Cambie estos valores si utiliza un servidor de aplicaciones diferente para alojar formularios en el servidor de la aplicación de la aplicación de la aplicación.
 
 Las siguientes configuraciones están disponibles para el servicio JMS.
 
-**URL del proveedor:** La URL del proveedor de servicios JNDI. El valor predeterminado se basa en el servidor de aplicaciones JBoss. AEM Las siguientes direcciones URL son valores predeterminados para los servidores de aplicaciones compatibles con los formularios de:
+**Dirección URL del proveedor:** Dirección URL del proveedor de servicios JNDI. El valor predeterminado se basa en el servidor de aplicaciones JBoss. AEM Las siguientes direcciones URL son valores predeterminados para los servidores de aplicaciones compatibles con los formularios de:
 
 **JBoss:** `<server name>:1099`
 
@@ -367,11 +368,11 @@ Las siguientes configuraciones están disponibles para el servicio JMS.
 
 **WebSphere:** `<server name>:2809`
 
-**Nombre de usuario de JNDI:** El nombre de usuario de la cuenta que se utilizará para la autenticación con el proveedor de servicios JNDI que se utiliza para buscar nombres de colas y temas. El valor predeterminado es invitado.
+**Nombre de usuario JNDI:** Nombre de usuario de la cuenta que se va a utilizar para autenticarse con el proveedor de servicios JNDI que se utiliza para buscar nombres de temas y colas. El valor predeterminado es invitado.
 
-**Contraseña de JNDI:** La contraseña asociada al nombre de usuario especificado para el nombre de usuario JNDI. El valor predeterminado es invitado.
+**Contraseña JNDI:** La contraseña asociada al nombre de usuario especificado para el nombre de usuario JNDI. El valor predeterminado es invitado.
 
-**Fábrica de contexto inicial:** La clase Java que se utilizará como generador de contexto inicial. El servicio JMS utiliza esta clase para crear un contexto inicial, que es el punto de partida para resolver nombres de temas y colas. El valor predeterminado es la fábrica de contexto inicial para el servicio JMS en JBoss. AEM Las siguientes clases son las fábricas de contexto iniciales para los servidores de aplicaciones compatibles con los formularios de la aplicación de los formularios de la:
+**Fábrica de contexto inicial:** La clase Java que se va a utilizar como fábrica de contexto inicial. El servicio JMS utiliza esta clase para crear un contexto inicial, que es el punto de partida para resolver nombres de temas y colas. El valor predeterminado es la fábrica de contexto inicial para el servicio JMS en JBoss. AEM Las siguientes clases son las fábricas de contexto iniciales para los servidores de aplicaciones compatibles con los formularios de la aplicación de los formularios de la:
 
 **JBoss:** org.jnp.interfaces.NamingContextFactory
 
@@ -379,35 +380,35 @@ Las siguientes configuraciones están disponibles para el servicio JMS.
 
 **WebSphere:** com.ibm.websphere.namespace.WsnInitialContextFactory
 
-**Nombre de usuario de conexión:** La contraseña asociada al nombre de usuario especificado para el nombre de usuario de la conexión. El valor predeterminado es invitado.
+**Nombre de usuario de conexión:** La contraseña asociada al nombre de usuario especificado para el Nombre de usuario de conexión. El valor predeterminado es invitado.
 
-**Contraseña de conexión:** La contraseña asociada al nombre de usuario especificado para el nombre de usuario de la conexión. El valor predeterminado es invitado.
+**Contraseña de conexión:** La contraseña asociada al nombre de usuario especificado para el nombre de usuario de conexión. El valor predeterminado es invitado.
 
 **Otras propiedades:** Pares de nombre y valor de propiedad que puede pasar al proveedor de servicios JNDI. Estas propiedades dependen de la implementación y configuración del proveedor que utilice.
 
-Los pares de nombre de propiedad y valor están separados por punto y coma **;**. Por ejemplo, el siguiente texto muestra el valor que se especificaría para dos propiedades denominadas name1 y name2, con valores value1 y value2, respectivamente:
+Los pares de nombre y valor de la propiedad están separados por punto y coma **;**. Por ejemplo, el siguiente texto muestra el valor que se especificaría para dos propiedades denominadas name1 y name2, con valores value1 y value2, respectivamente:
 
 `name1=value1;name2=value2`
 
 ## Configuración del servicio LDAP {#ldap-service-settings}
 
-El servicio LDAP ( `LDAPService`) proporciona operaciones para consultar directorios LDAP. Los directorios LDAP se utilizan generalmente para almacenar información sobre las personas, los grupos y los servicios de una organización.
+El servicio LDAP (`LDAPService`) proporciona operaciones para consultar directorios LDAP. Los directorios LDAP se utilizan generalmente para almacenar información sobre las personas, los grupos y los servicios de una organización.
 
 Las siguientes configuraciones están disponibles para el servicio LDAP.
 
-**Fábrica de contexto inicial:** La clase Java que se utilizará como generador de contexto. Esta clase se utiliza para crear una conexión con el servidor LDAP. El valor predeterminado es com.sun.jndi.ldap.LdapCtxFactory, que es adecuado para la mayoría de los servidores LDAP.
+**Fábrica de contexto inicial:** La clase Java que se va a utilizar como fábrica de contexto. Esta clase se utiliza para crear una conexión con el servidor LDAP. El valor predeterminado es com.sun.jndi.ldap.LdapCtxFactory, que es adecuado para la mayoría de los servidores LDAP.
 
-**URL del proveedor:** Dirección URL que se utiliza para conectarse al servicio LDAP. El formato del valor es `ldap://server name:port`
+**Dirección URL del proveedor:** Dirección URL que se va a utilizar para conectarse al servicio LDAP. El formato del valor es `ldap://server name:port`
 
-*nombre del servidor* es el nombre del equipo que aloja el servidor LDAP
+*nombre de servidor* es el nombre del equipo que hospeda el servidor LDAP
 
 *puerto* es el puerto de comunicaciones que utiliza el servicio LDAP. El valor predeterminado es 389, que es el puerto estándar utilizado para las conexiones LDAP.
 
 **Nombre de usuario:** Nombre de usuario de la cuenta de usuario que se va a utilizar para iniciar sesión en el servidor LDAP. La cuenta de usuario debe tener permiso para conectarse al servidor y leer la información del directorio LDAP.
 
-Según el servidor LDAP, el nombre de usuario podría ser un nombre de usuario sencillo como `myname` o un DN, como `cn=myname,cn=users,dc=myorg`.
+Según el servidor LDAP, el nombre de usuario podría ser un nombre de usuario simple como `myname` o un DN, como `cn=myname,cn=users,dc=myorg`.
 
-**Contraseña:** Contraseña que corresponde al nombre de usuario proporcionado para la configuración Nombre de usuario.
+**Contraseña:** Contraseña que corresponde al nombre de usuario proporcionado para la configuración de nombre de usuario.
 
 **Otras propiedades:** Valor de cadena que representa otras propiedades y sus valores correspondientes que puede proporcionar al servidor LDAP. El valor tiene el siguiente formato:
 
@@ -415,7 +416,7 @@ Según el servidor LDAP, el nombre de usuario podría ser un nombre de usuario s
 
 ## Ajustes del servicio de configuración de Microsoft SharePoint {#microsoft-sharepoint-configuration-service-settings}
 
-El servicio de configuración de Microsoft SharePoint `(MSSharePointConfigService)`AEM permite especificar credenciales para el usuario de formularios en forma de que tenga permisos de suplantación. Para obtener información sobre los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
+El servicio de configuración de Microsoft SharePoint AEM `(MSSharePointConfigService)` le permite especificar credenciales para el usuario de formularios de la aplicación que tiene permisos de suplantación. Para obtener información acerca de los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 Los siguientes ajustes están disponibles para el servicio de configuración de Microsoft SharePoint:
 
@@ -428,37 +429,37 @@ Los siguientes ajustes están disponibles para el servicio de configuración de 
 
 **Cifrado:** Especifica si se deben cifrar los datos almacenados en el dispositivo móvil.
 
-**Aplicación de Forms:** Habilita la función Forms en las aplicaciones cliente móviles. Cuando se selecciona esta opción, los usuarios pueden abrir formularios e iniciar procesos desde sus dispositivos móviles.
+**Aplicación Forms:** Habilita la característica Forms en las aplicaciones cliente móviles. Cuando se selecciona esta opción, los usuarios pueden abrir formularios e iniciar procesos desde sus dispositivos móviles.
 
-**Aplicación de tareas:** Habilita la función Tareas en las aplicaciones cliente móviles. Cuando se selecciona esta opción, los usuarios pueden acceder a sus listas de tareas y completar tareas desde sus dispositivos móviles.
+**Aplicación Tasks:** habilita la característica Tasks en las aplicaciones cliente móviles. Cuando se selecciona esta opción, los usuarios pueden acceder a sus listas de tareas y completar tareas desde sus dispositivos móviles.
 
-**Aplicación de servicios de contenido:** Habilita la función Servicios de contenido en la aplicación cliente móvil. Esta función solo está disponible para iOS. Si se selecciona esta opción, los usuarios de iPhone y iPad pueden acceder a los archivos almacenados en el servidor WebDAV de su organización.
+**Aplicación de servicios de contenido:** Habilita la característica Servicios de contenido en la aplicación cliente móvil. Esta función solo está disponible para iOS. Si se selecciona esta opción, los usuarios de iPhone y iPad pueden acceder a los archivos almacenados en el servidor WebDAV de su organización.
 
-**Compatibilidad sin conexión:** Permite a los usuarios seguir utilizando las aplicaciones cliente móviles incluso cuando no tienen conexión con el servidor (por ejemplo, cuando están fuera del rango de celdas o en modo avión). Los usuarios también deben habilitar la configuración Compatibilidad con conexión en sus dispositivos móviles. Esta función está disponible para dispositivos Android y iOS. Esta función está desactivada de forma predeterminada.
+**Compatibilidad sin conexión:** Permite a los usuarios seguir usando las aplicaciones cliente móviles incluso cuando no tienen conexión con el servidor (por ejemplo, cuando están fuera del intervalo de celdas o en modo avión). Los usuarios también deben habilitar la configuración Compatibilidad con conexión en sus dispositivos móviles. Esta función está disponible para dispositivos Android y iOS. Esta función está desactivada de forma predeterminada.
 
 >[!NOTE]
 >
 >Si se ha habilitado la compatibilidad sin conexión y, a continuación, la deshabilita, los perfiles de aprovisionamiento de los usuarios se actualizan inmediatamente o en cuanto están en línea. Si un usuario ha estado trabajando sin conexión, todas las tareas pendientes se devuelven a su lista Tareas y todos los elementos de su Cola, incluidos los formularios pendientes, las tareas y los formularios que contienen errores de validación, se eliminan de la Cola.
 
-**Android:** Permite que los dispositivos Android se conecten al servidor.
+**Android:** permite que los dispositivos Android se conecten al servidor.
 
-**Apple iOS:** Permite que los iPhones y los iPads se conecten al servidor.
+**Apple iOS:** permite que los iPhones y los iPads se conecten al servidor.
 
-**AIR:** Permite que los dispositivos que ejecutan aplicaciones basadas en Adobe AIR® se conecten al servidor.
+**AIR:** permite que los dispositivos que ejecutan aplicaciones basadas en Adobe AIR® se conecten al servidor.
 
-**BlackBerry:** Permite que los dispositivos BlackBerry se conecten al servidor.
+**BlackBerry:** permite que los dispositivos BlackBerry se conecten al servidor.
 
-**Android Microsoft Exchange ActiveSync Requerido:** Especifica si el administrador de directivas de Microsoft EA Exchange ActiveSync () debe estar instalado y activo en los dispositivos Android. EA Cuando se selecciona esta opción, los parámetros deben aplicarse en el dispositivo Android. Cuando esta opción no está seleccionada, no se realiza ninguna comprobación, aunque siguen aplicándose otros requisitos.
+**Se requiere Android Microsoft Exchange ActiveSync:** Especifica si el administrador de directivas de Microsoft EA Exchange ActiveSync () debe estar instalado y activo en los dispositivos Android. EA Cuando se selecciona esta opción, los deben aplicarse en el dispositivo Android. Cuando esta opción no está seleccionada, no se realiza ninguna comprobación, aunque siguen aplicándose otros requisitos.
 
 **Longitud mínima del PIN de Android:** Los dispositivos Android deben tener una configuración global que exija que el PIN o la contraseña tengan al menos esta longitud. No basta con tener un PIN de la longitud especificada. El sistema debe aplicar la longitud del PIN para que los usuarios no puedan quitarlo ni acortarlo más tarde. El valor predeterminado es 4.
 
-**Máximo de reintentos de contraseña de Android antes de borrar:** Los dispositivos Android tienen una configuración global que borra el sistema después de un número determinado de intentos de contraseña no válidos. Esta configuración global está habilitada y es igual o inferior al valor especificado aquí. El valor predeterminado es 5.
+**Máximo de reintentos de contraseña de Android antes del borrado:** Los dispositivos Android tienen una configuración global que borra el sistema después de un número especificado de intentos de contraseña no válidos. Esta configuración global está habilitada y es igual o inferior al valor especificado aquí. El valor predeterminado es 5.
 
-**Borrar de Android al eliminar:** Especifica lo que sucede cuando se produce una infracción de directiva en un dispositivo Android. Cuando se selecciona esta opción, se elimina la cuenta. Cuando esta opción no está seleccionada, se eliminan la contraseña de la cuenta almacenada y los datos almacenados en caché. No se realizan más intentos de sincronización hasta que el usuario corrige la infracción de directiva.
+**Borrar Android al quitar:** Especifica lo que sucede cuando se produce una infracción de directiva en un dispositivo Android. Cuando se selecciona esta opción, se elimina la cuenta. Cuando esta opción no está seleccionada, se eliminan la contraseña de la cuenta almacenada y los datos almacenados en caché. No se realizan más intentos de sincronización hasta que el usuario corrige la infracción de directiva.
 
 ## Configuración del servicio de salida {#output-service-settings}
 
-El servicio Output `(OutputService)`AEM permite combinar datos de formulario XML con un diseño de formulario creado en Designer de formularios en la forma de un documento para crear una secuencia de salida en uno de los formatos siguientes:
+AEM El servicio Output `(OutputService)` le permite combinar datos de formulario XML con un diseño de formulario creado en Designer de formularios de forma de formulario para crear una secuencia de salida de documento en uno de los siguientes formatos:
 
 * Flujo de salida de documento de PDF o PDF/A.
 * Un flujo de salida de Adobe PostScript.
@@ -471,9 +472,9 @@ Los siguientes ajustes están disponibles para el servicio Output.
 
 **Tipo de transacción:** Especifica cómo se debe propagar un contexto de transacción a una operación:
 
-**Requerido:** admite un contexto de transacción si ya existe; de lo contrario, se crea un nuevo contexto de transacción. Este es el valor predeterminado.
+**Requerido:** admite un contexto de transacción si ya existe uno; de lo contrario, se crea un nuevo contexto de transacción. Este es el valor predeterminado.
 
-**Requiere nuevo:** Crea siempre un nuevo contexto de transacción. Si existe un contexto de transacción activo, se suspende.
+**Requiere nuevo:** Siempre crea un nuevo contexto de transacción. Si existe un contexto de transacción activo, se suspende.
 
 **Tiempo de espera de transacción (en segundos):** El número de segundos que el proveedor de transacciones subyacente espera antes de revertir una transacción que está ajustando esta operación. Este valor se ignora si se propaga un contexto de transacción existente.
 
@@ -481,25 +482,25 @@ Al procesar archivos de datos de gran tamaño o trabajar en un servidor ocupado,
 
 ## Configuración del servicio de configuración PDFG {#pdfg-config-service-settings}
 
-Las siguientes opciones están disponibles para el servicio de configuración de PDFG ( `PDFGConfigService`).
+Las siguientes opciones de configuración están disponibles para el servicio de configuración de PDFG ( `PDFGConfigService`).
 
-**Directorio de opciones de trabajos de usuario:** Ruta de la carpeta del sistema de archivos donde el servicio C escribe los archivos de opciones de trabajo a los que Acrobat Pro Extended tiene acceso. El valor predeterminado es [user.home]/Datos de aplicación/Adobe/Adobe PDF/Configuración.
+**Directorio de opciones de trabajos de usuario:** Ruta de acceso a la carpeta del sistema de archivos donde el servicio c escribe los archivos de opciones de trabajo a los que Acrobat Pro Extended tiene acceso. El valor predeterminado es [user.home]/Application Data/Adobe/Adobe PDF/Settings.
 
-**Directorio de inicio de PS:** Ruta de la carpeta del sistema de archivos donde se guardan los archivos de inicio requeridos por Adobe Acrobat Distiller. El valor predeterminado es [user.home]/Application/Data/Adobe/Adobe PDF/Distiller/Startup.
+**Directorio de inicio de PS:** Ruta de acceso a la carpeta del sistema de archivos donde se guardan los archivos de inicio requeridos por Adobe Acrobat Distiller. El valor predeterminado es [user.home]/Application Data/Adobe/Adobe PDF/Distiller/Startup.
 
 **Archivo de inicio de PS:** Nombre del archivo de inicio requerido por Adobe Acrobat Distiller. El valor predeterminado es example.ps.
 
-**Tiempo de espera de conversión del servidor:** Tiempo de espera máximo de conversión de trabajo (en segundos) para el servicio Generar PDF y el servicio Distiller. Esta configuración limita el tiempo de espera máximo de conversión que se puede especificar en el archivo config.xml y en las páginas de la consola de administración de PDF Generator. El valor predeterminado es 270.
+**Tiempo de espera de conversión del servidor:** Tiempo de espera máximo de conversión del trabajo (en segundos) para el servicio Generar PDF y el servicio Distiller. Esta configuración limita el tiempo de espera máximo de conversión que se puede especificar en el archivo config.xml y en las páginas de la consola de administración de PDF Generator. El valor predeterminado es 270.
 
 **Tiempo de espera global del servidor:** Al realizar conversiones de PDF, un servidor de Forms tiene en cuenta el límite de tiempo de espera. Configure el valor timeout para resolver el problema.
 
-**Prefijo de opciones de trabajo:** Prefijo utilizado por el servicio Generate PDF para anteponer una cadena corta a los archivos de opciones de trabajo que crea temporalmente para su uso en Acrobat Distiller. El valor predeterminado es pdfg.
+**Prefijo de opciones de trabajo:** Prefijo utilizado por el servicio Generar PDF para anteponer una cadena corta a los archivos de opciones de trabajo que crea temporalmente para su uso en Acrobat Distiller. El valor predeterminado es pdfg.
 
 **Aplicaciones no Unicode:** Lista separada por comas de nombres de aplicaciones que se sabe que no admiten Unicode. Esta lista se rellena previamente con los nombres de varias aplicaciones, cuya compatibilidad está preconfigurada en PDF Generator. Si decide añadir compatibilidad con las conversiones de PDF a través de otras aplicaciones de terceros que no admiten Unicode, debe añadirlas a esta lista. El valor predeterminado es Autocad, Excel, PowerPoint, Project, Publisher, Visio, Word y WordPerfect.
 
-**Recuento de grupos de subprocesos del servidor:** Controla el tamaño del grupo de hilos que el servicio Generate PDF utiliza internamente para atender las solicitudes de conversión de HTML a PDF que implican la creación de vínculos (conversión de páginas vinculadas accesibles desde la página principal). El valor predeterminado es 20.
+**Recuento de grupos de subprocesos del servidor:** controla el tamaño del grupo de subprocesos que el servicio PDF de generación utiliza internamente para atender las solicitudes de conversión de HTML a PDF que implican el uso de un elemento de raíz (convertir páginas vinculadas accesibles desde la página principal). El valor predeterminado es 20.
 
-**Segundos del análisis de limpieza de PDF Generator:** Consulte la sección Segundos de caducidad del trabajo para obtener más información.
+**Segundos del análisis de limpieza de PDFG:** Consulte la sección Segundos de caducidad del trabajo para obtener más información.
 
 **Segundos de caducidad del trabajo:** El servicio Generar PDF elimina los archivos de entrada en cuanto se convierten. Almacena los archivos de salida temporalmente durante un periodo determinado por la configuración Segundos del análisis de limpieza de PDF Generator y Segundos de caducidad del trabajo.
 
@@ -509,7 +510,7 @@ Por ejemplo, si Segundos de caducidad del trabajo se establece en 100 y Segundos
 
 El valor predeterminado de Segundos del análisis de limpieza de PDF Generator es `43200` (12 horas). El valor predeterminado de Segundos de caducidad del trabajo es `86400` (24 horas).
 
-**Configuración regional predeterminada:** Se utiliza para anular la configuración regional predeterminada (país + idioma) del servidor donde se implementa el servicio Generate PDF. Si no se especifica este parámetro, la configuración regional predeterminada se determina a partir del sistema operativo en el que se implementa el servicio. Este parámetro controla el idioma en el que se devuelven los mensajes de error a las API.
+**Configuración regional predeterminada:** Se usa para invalidar la configuración regional predeterminada (país + idioma) del servidor donde se implementa el servicio Generar PDF. Si no se especifica este parámetro, la configuración regional predeterminada se determina a partir del sistema operativo en el que se implementa el servicio. Este parámetro controla el idioma en el que se devuelven los mensajes de error a las API.
 
 ## Configuración del servicio de servicios de datos del flujo de trabajo Forms {#forms-workflow-data-services-service-settings}
 
@@ -521,17 +522,17 @@ Los siguientes servicios amplían los servicios de datos y exponen ensambladores
 
 ## Configuración del servicio remoto {#remoting-service-settings}
 
-AEM AEM La mayoría de los servicios están configurados para que pueda acceder a ellos a través de la comunicación remota (obsoleta para formularios de la lista de obsoletos) de los formularios de la lista de distribución remota de formularios de. AEM AEM Para obtener información sobre la comunicación remota (obsoleta para formularios de la lista de formularios de la lista de obsoletos), consulte la sección Remoting de formularios de la lista [AEM Programar con formularios de](https://adobe.com/go/learn_aemforms_programming_63).
+AEM AEM La mayoría de los servicios están configurados para que pueda acceder a ellos a través de la comunicación remota (obsoleta para formularios de la lista de obsoletos) de los formularios de la lista de distribución remota de formularios de. AEM AEM AEM Para obtener información sobre la comunicación remota (obsoleta para formularios de la serie de formularios de la lista de formularios en uso), consulte [Programación con formularios de la lista de formularios en uso](https://adobe.com/go/learn_aemforms_programming_63).
 
 Los siguientes ajustes están disponibles para el servicio Remoting.
 
-**Método de autenticación de cliente de Flex:** Determina el tipo de respuesta que el servidor devuelve al cliente cuando el servicio invocado está habilitado para la seguridad, la operación invocada no admite invocaciones anónimas y el cliente pasa credenciales no válidas o no válidas. Elija entre Personalizado o Básico. El valor predeterminado es Básico.
+**Método de autenticación de cliente de Flex:** Determina el tipo de respuesta que el servidor devuelve al cliente cuando el servicio invocado está habilitado para la seguridad, la operación invocada no admite invocaciones anónimas y el cliente pasa credenciales no válidas. Elija entre Personalizado o Básico. El valor predeterminado es Básico.
 
-**Permitir La Serialización De Clases No Serializables:** AEM La mayoría de los extremos de formularios solo permiten que se utilicen clases serializables para la invocación. En versiones anteriores, el extremo remoto permitía que se utilizaran clases no serializables para la invocación desde clientes basados en Flex. Se ha cambiado para evitar una vulnerabilidad de seguridad descrita en APS11-15. Si desea seguir utilizando clases no serializables con el extremo de comunicación remota de Flex, active esta casilla de verificación.
+AEM **Permitir la serialización de clases no serializables:** La mayoría de los extremos de formularios de la mayoría de los formularios permiten que solo se utilicen clases serializables para la invocación. En versiones anteriores, el extremo remoto permitía que se utilizaran clases no serializables para la invocación desde clientes basados en Flex. Se ha cambiado para evitar una vulnerabilidad de seguridad descrita en APS11-15. Si desea seguir utilizando clases no serializables con el extremo de comunicación remota de Flex, active esta casilla de verificación.
 
 ## Configuración del servicio de repositorio {#repository-service-settings}
 
-El servicio Repositorio ( `RepositoryService`AEM ) proporciona servicios de administración y almacenamiento de recursos a los formularios de la. Cuando los desarrolladores crean una aplicación, pueden implementar los recursos en el repositorio en lugar de en un sistema de archivos. Los recursos pueden incluir cualquier tipo de material colateral, incluidos formularios XML, PDF forms (incluidos formularios Acrobat), fragmentos de formulario, imágenes, perfiles, directivas, archivos de SWF, archivos DDX, esquemas XML, archivos WSDL y datos de prueba.
+AEM El servicio de repositorio (`RepositoryService`) proporciona servicios de administración y almacenamiento de recursos a los formularios de la. Cuando los desarrolladores crean una aplicación, pueden implementar los recursos en el repositorio en lugar de en un sistema de archivos. Los recursos pueden incluir cualquier tipo de material colateral, incluidos formularios XML, PDF forms (incluidos formularios Acrobat), fragmentos de formulario, imágenes, perfiles, directivas, archivos de SWF, archivos DDX, esquemas XML, archivos WSDL y datos de prueba.
 
 AEM Puede utilizar el repositorio predeterminado que se incluye con los formularios de la o utilizar un repositorio de terceros (EMC Documentum Content Server, IBM FileNet Content Manager o IBM Content Manager).
 
@@ -539,57 +540,61 @@ El servicio Proveedor de repositorio es un delegado de servicio que actúa como 
 
 La siguiente configuración está disponible para el servicio Repositorio.
 
-**Servicio de proveedor:** El nombre del servicio que se utiliza como proveedor de almacenamiento. El valor predeterminado es RepositoryProviderService.
+**Servicio de proveedor:** Nombre del servicio que se usa como proveedor de almacenamiento. El valor predeterminado es RepositoryProviderService.
 
 ## Configuración del servicio de firma {#signature-service-settings}
 
-El servicio Signature ( `SignatureService`) permite a su organización proteger la seguridad y privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que los documentos no se modifiquen. Al modificar un documento, se rompe su firma. Debido a que las funciones de seguridad se aplican al propio documento, éste permanece seguro y controlado durante todo su ciclo de vida; más allá del cortafuegos, cuando se descarga sin conexión y cuando se devuelve a su organización.
+El servicio Signature ( `SignatureService`) permite a su organización proteger la seguridad y la privacidad de los documentos de Adobe PDF que distribuye y recibe. Este servicio utiliza firmas digitales y certificación para garantizar que los documentos no se modifiquen. Al modificar un documento, se rompe su firma. Debido a que las funciones de seguridad se aplican al propio documento, éste permanece seguro y controlado durante todo su ciclo de vida; más allá del cortafuegos, cuando se descarga sin conexión y cuando se devuelve a su organización.
 
 Los siguientes ajustes están disponibles para el servicio Signature.
 
-**Nombre del servicio SPI de HSM remoto:** Esta opción se utiliza cuando el HSM está instalado en un equipo remoto. AEM Especifique esta opción cuando los formularios de la aplicación se instalen en un Windows de 64 bits y utilice dispositivos HSM para firmar.
+**Nombre del servicio SPI de HSM remoto:** Esta opción está destinada a utilizarse cuando el HSM está instalado en un equipo remoto. AEM Especifique esta opción cuando los formularios de la aplicación se instalen en un Windows de 64 bits y utilice dispositivos HSM para firmar.
 
-**URL Del Servicio Web HSM Remoto:** AEM Especifique esta opción cuando los formularios de la aplicación se instalen en Windows de 64 bits y utilice dispositivos HSM para firmar.
+AEM **URL del servicio web HSM remoto:** Especifique esta opción cuando se instalen formularios de la aplicación en Windows de 64 bits y utilice dispositivos HSM para firmar.
 
-**Certificación Para Incluir Cambios De Carga De Formulario:** Cuando se selecciona esta opción, el estado del formulario XFA se certifica además de la plantilla XFA. Tenga en cuenta que habilitar esta opción puede tener un impacto negativo en el rendimiento. El valor predeterminado es True.
+**Certificación para incluir cambios en la carga de formularios:** Cuando se selecciona esta opción, el estado del formulario XFA se certifica además de la plantilla XFA. Tenga en cuenta que habilitar esta opción puede tener un impacto negativo en el rendimiento. El valor predeterminado es True.
 
-**Ejecutar documento Scripts de JavaScript:** Especifica si se ejecutan scripts de JavaScript de documentos durante las operaciones de firma. El valor predeterminado es False.
+**Ejecutar scripts de Document JavaScript:** Especifica si se ejecutarán scripts de Document JavaScript durante operaciones de firma. El valor predeterminado es False.
 
 **Procesar documentos con compatibilidad con Acrobat 9:** Especifica si se habilita la compatibilidad con Acrobat 9. Por ejemplo, cuando se selecciona esta opción, se activa la certificación visible en PDF dinámicos. El valor predeterminado es False.
 
 **Incrustar información de revocación al firmar:** Especifica si la información de revocación está incrustada al firmar el documento de PDF. El valor predeterminado es False.
 
-**Incrustar Información De Revocación Al Certificar:** Especifica si la información de revocación está incrustada al certificar el documento de PDF. El valor predeterminado es False.
+**Incrustar información de revocación al certificar:** Especifica si la información de revocación está incrustada al certificar el documento de PDF. El valor predeterminado es False.
 
-**Aplicar incrustación de información de revocación para todos los certificados durante la firma o certificación:** Especifica si una operación de firma o certificación falla si no está incrustada la información de revocación válida de todos los certificados. Tenga en cuenta que si un certificado no contiene información de CRL u OCSP, se considera válido, incluso si no se recupera ninguna información de revocación. El valor predeterminado es False.
+**Aplicar incrustación de información de revocación para todos los certificados
+Durante la firma o certificación:** Especifica si una operación de firma o certificación falla si no está incrustada la información de revocación válida para todos los certificados. Tenga en cuenta que si un certificado no contiene información de CRL u OCSP, se considera válido, incluso si no se recupera ninguna información de revocación. El valor predeterminado es False.
 
-**Orden de comprobación de revocación:** Especifica el orden de comprobación de revocación cuando la comprobación es posible mediante los mecanismos Lista de revocación de certificados (CRL) y Protocolo de estado de certificado en línea (OCSP). El valor predeterminado es OCSPFirst.
+**Orden de comprobación de revocación:** Especifica el orden de comprobación de revocación cuando es posible realizar la comprobación mediante los mecanismos Lista de revocación de certificados (CRL) y Protocolo de estado de certificado en línea (OCSP). El valor predeterminado es OCSPFirst.
 
-**Tamaño Máximo De La Información De Archivo De Revocación:** Tamaño máximo de la información de archivo de revocación en kilobytes. AEM Los formularios de intentan almacenar la mayor cantidad posible de información de revocación sin superar el límite. El valor predeterminado es 10 KB.
+**Tamaño máximo de la información de archivo de revocación:** Tamaño máximo de la información de archivo de revocación en kilobytes. AEM Los formularios de intentan almacenar la mayor cantidad posible de información de revocación sin superar el límite. El valor predeterminado es 10 KB.
 
-**Firmas De Soporte Creadas A Partir De Versiones Previas De Productos De Adobe:** Si se selecciona esta opción, la firma creada con la versión preliminar de los productos de Adobe se validará correctamente. El valor predeterminado es False.
+**Firmas De Soporte Creadas A Partir De Compilaciones Previas Al Lanzamiento De
+Productos de Adobe:** Si se selecciona esta opción, la firma creada con la versión preliminar de los productos de Adobe se validará correctamente. El valor predeterminado es False.
 
-**Opción de tiempo de verificación:** Especifica la hora de verificación del certificado de un firmante. El valor predeterminado es Proteger hora actual u otra hora.
+**Opción de tiempo de comprobación:** Especifica la hora de verificación del certificado de un firmante. El valor predeterminado es Proteger hora actual u otra hora.
 
-**Utilizar la información de revocación archivada en la firma durante la validación:** Especifica si la información de revocación archivada con la firma se utiliza para la comprobación de revocación. El valor predeterminado es True.
+**Usar información de revocación archivada en la firma durante
+Validación:** Especifica si la información de revocación archivada con la firma se usa para la comprobación de revocación. El valor predeterminado es True.
 
-**Utilizar La Información De Validación Almacenada En El Documento Para La Validación De Firmas:** Si se selecciona esta opción, se utiliza la información de validación (incluida la información de revocación y de marca de tiempo) incrustada en el documento para validar las firmas. El valor predeterminado es True.
+**Usar Información De Validación Almacenada En El Documento Para
+Validación de firmas:** Si se selecciona esta opción, se utiliza la información de validación (incluida la información de revocación y de marca de tiempo) incrustada en el documento para validar firmas. El valor predeterminado es True.
 
 **Máximo de sesiones de verificación anidadas permitidas:** Número máximo de sesiones de verificación anidadas permitidas. AEM Los formularios utilizan este valor para evitar un bucle infinito al verificar los certificados del firmante de OCSP o CRL cuando el certificado de OCSP o CRL no está configurado correctamente. El valor predeterminado es 10.
 
-**Desviación máxima del reloj para la verificación:** Tiempo máximo, en minutos, que puede ser el tiempo de firma después del tiempo de validación. Si la desviación del reloj es mayor que este valor, la firma no será válida. El valor predeterminado es 65 minutos.
+**Desviación máxima del reloj para la verificación:** Tiempo máximo, en minutos, que puede ser posterior al tiempo de validación. Si la desviación del reloj es mayor que este valor, la firma no será válida. El valor predeterminado es 65 minutos.
 
-**Caché de duración de certificado:** Duración de un certificado, recuperado en línea o por otros medios, en la caché. El valor predeterminado es 1 día.
+**Caché de duración del certificado:** Duración de un certificado, recuperado en línea o por otros medios, en la caché. El valor predeterminado es 1 día.
 
 ### Opciones de transporte {#transport-options}
 
-**Host de proxy:** La URL del host de proxy. Se utiliza solo si se proporciona algún valor válido. No hay valor predeterminado.
+**Host proxy:** La dirección URL del host proxy. Se utiliza solo si se proporciona algún valor válido. No hay valor predeterminado.
 
-**Puerto de proxy:** El puerto proxy. Escriba cualquier número de puerto válido de 0 a 65535. El valor predeterminado es 80.
+**Puerto Proxy:** El puerto proxy. Escriba cualquier número de puerto válido de 0 a 65535. El valor predeterminado es 80.
 
-**Nombre de usuario de inicio de sesión proxy:** El nombre de usuario de inicio de sesión proxy. Solo se usa si se proporciona algún valor válido para el host y el puerto proxy. No hay valor predeterminado.
+**Nombre de usuario de inicio de sesión de proxy:** Nombre de usuario de inicio de sesión de proxy. Solo se usa si se proporciona algún valor válido para el host y el puerto proxy. No hay valor predeterminado.
 
-**Contraseña de inicio de sesión de proxy:** La contraseña de inicio de sesión del proxy. Solo se usa si se proporciona algún valor válido para el host proxy, el puerto proxy y el nombre de usuario de inicio de sesión proxy. No hay valor predeterminado.
+**Contraseña de inicio de sesión de proxy:** Contraseña de inicio de sesión de proxy. Solo se usa si se proporciona algún valor válido para el host proxy, el puerto proxy y el nombre de usuario de inicio de sesión proxy. No hay valor predeterminado.
 
 **Límite máximo de descarga:** Cantidad máxima de datos, en MB, que se pueden recibir por conexión. El valor mínimo es 1 MB y el valor máximo es 1024 MB. El valor predeterminado es 16 MB.
 
@@ -601,25 +606,25 @@ Los siguientes ajustes están disponibles para el servicio Signature.
 
 **Requerir directiva explícita:** Especifica si la ruta de acceso debe ser válida para al menos una de las directivas de certificado asociadas al anclaje de confianza del certificado del firmante. El valor predeterminado es False.
 
-**Inhibir CUALQUIER política:** Especifica si el identificador de objeto de directiva (OID) debe procesarse si se incluye en un certificado. El valor predeterminado es False.
+**Inhibir CUALQUIER directiva:** Especifica si el identificador de objeto de directiva (OID) debe procesarse si se incluye en un certificado. El valor predeterminado es False.
 
-**Inhibir asignación de directiva:** Especifica si se permite la asignación de directivas en la ruta de certificación. El valor predeterminado es False.
+**Inhibir asignación de directiva:** Especifica si se permite la asignación de directiva en la ruta de certificación. El valor predeterminado es False.
 
-**Marcar todas las rutas:** Especifica si todas las rutas deben validarse o si la validación debe detenerse después de encontrar la primera ruta válida. Seleccione true o false. El valor predeterminado es False.
+**Comprobar todas las rutas:** Especifica si todas las rutas deben validarse o si la validación debe detenerse después de encontrar la primera ruta válida. Seleccione true o false. El valor predeterminado es False.
 
 **Servidor LDAP:** Servidor LDAP utilizado para buscar certificados para la validación de rutas. No hay valor predeterminado.
 
-**Seguir URI en AIA de certificado:** Especifica si los identificadores uniformes de recursos (URI) de AIA de certificado se procesan durante la detección de rutas. El valor predeterminado es False.
+**Seguir URI en el AIA de certificado:** Especifica si los identificadores uniformes de recursos (URI) del AIA de certificado se procesan durante la detección de rutas. El valor predeterminado es False.
 
-**Extensión de restricciones básicas requerida en certificados de CA:** Especifica si la extensión de certificado Restricciones básicas de la entidad emisora de certificados (CA) debe estar presente para los certificados de CA. Algunos de los primeros certificados raíz certificados alemanes (7 y anteriores) no cumplen con RFC 3280 y no contienen la extensión de restricción básica. Si se sabe que el certificado EE de un usuario se encadena a una raíz alemana de este tipo, anule la selección de esta casilla de verificación. El valor predeterminado es True.
+**Se requiere la extensión de restricciones básicas en los certificados de CA:** Especifica si la extensión de certificado de restricciones básicas de la entidad de certificación (CA) debe estar presente para los certificados de CA. Algunos de los primeros certificados raíz certificados alemanes (7 y anteriores) no cumplen con RFC 3280 y no contienen la extensión de restricción básica. Si se sabe que el certificado EE de un usuario se encadena a una raíz alemana de este tipo, anule la selección de esta casilla de verificación. El valor predeterminado es True.
 
-**Requerir Una Firma De Certificado Válida Durante La Creación De Cadenas:** Especifica si el generador de cadenas requiere firmas válidas en los certificados utilizados para generar cadenas. Cuando se activa esta casilla de verificación, el generador de cadenas no generará cadenas con firmas RSA no válidas en los certificados. Considere la cadena CA > ICA > EE donde la firma de la CA en una ICA no es válida. Si esta configuración es verdadera, el edificio de cadenas se detendrá en el ICA y el CA no se incluirá en la cadena. Si esta configuración es falsa, se genera la cadena de certificados de 3 certificados completa. Esta configuración no afecta a las firmas DSA. El valor predeterminado es False.
+**Requerir firma de certificado válida durante la generación de cadenas:** Especifica si el generador de cadenas requiere firmas válidas en los certificados utilizados para generar cadenas. Cuando se activa esta casilla de verificación, el generador de cadenas no generará cadenas con firmas RSA no válidas en los certificados. Considere la cadena CA > ICA > EE donde la firma de la CA en una ICA no es válida. Si esta configuración es verdadera, el edificio de cadenas se detendrá en el ICA y el CA no se incluirá en la cadena. Si esta configuración es falsa, se genera la cadena de certificados de 3 certificados completa. Esta configuración no afecta a las firmas DSA. El valor predeterminado es False.
 
 ### Opciones del proveedor de marcas de hora {#timestamp-provider-options}
 
-**URL del servidor TSP:** Dirección URL del proveedor de marca de tiempo predeterminado. Se utiliza solo si se proporciona algún valor válido. No hay valor predeterminado.
+**URL de servidor TSP:** URL del proveedor de marca de tiempo predeterminado. Se utiliza solo si se proporciona algún valor válido. No hay valor predeterminado.
 
-**Nombre de usuario del servidor TSP:** El nombre de usuario si lo necesita el proveedor de marca de tiempo. Se utiliza solo si se proporciona algún valor válido para la dirección URL. No hay valor predeterminado.
+**Nombre de usuario del servidor TSP:** El nombre de usuario si lo necesita el proveedor de marcas de tiempo. Se utiliza solo si se proporciona algún valor válido para la dirección URL. No hay valor predeterminado.
 
 **Contraseña del servidor TSP:** La contraseña del nombre de usuario anterior si es necesario por el proveedor de marca de tiempo. Se utiliza solo si se proporciona algún valor válido para la dirección URL y el nombre de usuario. No hay valor predeterminado.
 
@@ -627,17 +632,17 @@ Los siguientes ajustes están disponibles para el servicio Signature.
 
 **Estilo de comprobación de revocación:** Especifica el estilo de comprobación de revocación utilizado para determinar el estado de confianza del certificado del proveedor de marca de tiempo a partir de su estado de revocación observado. El valor predeterminado es Mejor esfuerzo.
 
-**Enviar nonce:** Especifica si se envía una cadena nonce con la solicitud del proveedor de marca de tiempo. Un nonce puede ser una marca de tiempo, un contador de visitas en una página web o un marcador especial destinado a limitar o evitar la reproducción o reproducción no autorizada de un archivo. El valor predeterminado es True.
+**Enviar cadena nonce:** Especifica si se envía una cadena nonce con la solicitud del proveedor de marca de tiempo. Un nonce puede ser una marca de tiempo, un contador de visitas en una página web o un marcador especial destinado a limitar o evitar la reproducción o reproducción no autorizada de un archivo. El valor predeterminado es True.
 
-**Usar Marcas De Hora Caducadas Durante La Validación:** Cuando se selecciona esta opción, se pueden utilizar marcas de tiempo caducadas para recuperar los tiempos de validación de las firmas. El valor predeterminado es True.
+**Usar marcas de hora caducadas durante la validación:** Si se selecciona esta opción, se pueden usar marcas de hora caducadas para recuperar las horas de validación de las firmas. El valor predeterminado es True.
 
-**Tamaño de respuesta de TSP:** Tamaño estimado, en bytes, de la respuesta del TSP. Este valor debe representar el tamaño máximo de la respuesta de marca de tiempo que el proveedor de marca de tiempo configurado podría devolver. No cambie esto a menos que esté absolutamente seguro. El valor mínimo es 60B y el valor máximo es 10240B. El valor predeterminado es 4096B.
+**Tamaño de respuesta TSP:** Tamaño estimado, en bytes, de la respuesta TSP. Este valor debe representar el tamaño máximo de la respuesta de marca de tiempo que el proveedor de marca de tiempo configurado podría devolver. No cambie esto a menos que esté absolutamente seguro. El valor mínimo es 60B y el valor máximo es 10240B. El valor predeterminado es 4096B.
 
-**Omitir extensión de servidor TimeStamp**: seleccione la **Omitir extensión de servidor TimeStamp** para impedir que el servidor de AEM Forms se ponga en contacto con el servidor de marca de tiempo especificado. La selección de la opción ayuda a evitar errores de proceso que se producen debido al tiempo de espera de conexión entre AEM Forms y los servidores de marca de hora.
+**Omitir extensión de servidor TimeStamp**: seleccione la opción **Omitir extensión de servidor TimeStamp** para evitar que el servidor de AEM Forms se ponga en contacto con el servidor de marca de hora especificado. La selección de la opción ayuda a evitar errores de proceso que se producen debido al tiempo de espera de conexión entre AEM Forms y los servidores de marca de hora.
 
 ### Opciones de lista de revocación de certificados {#certificate-revocation-list-options}
 
-**Consulte primero el URI local:** Especifica si la ubicación de CRL proporcionada en URI local o en Búsqueda de CRL debe tener preferencia sobre cualquier ubicación especificada dentro de un certificado con el fin de comprobar la revocación. El valor predeterminado es False.
+**Consultar primero el URI local:** Especifica si la ubicación de CRL proporcionada en el URI local o en la búsqueda de CRL debe tener preferencia sobre cualquier ubicación especificada dentro de un certificado con el fin de comprobar la revocación. El valor predeterminado es False.
 
 **URI local para búsqueda de CRL:** URL del proveedor de CRL local. Este valor solo se consulta si la configuración Consultar URI local primero está establecida en verdadero. No hay valor predeterminado.
 
@@ -645,9 +650,9 @@ Los siguientes ajustes están disponibles para el servicio Signature.
 
 **Servidor LDAP para búsqueda de CRL:** Servidor LDAP utilizado para obtener las CRL (como www.ldap.com). Todas las consultas basadas en DN para CRL se dirigirán a este servidor. No hay valor predeterminado.
 
-**Conectarse:** Especifica si se va a conectar para recuperar una CRL. Si es false, solo se consultan las CRL en caché (en el disco local o las incrustadas con la firma). El valor predeterminado es True.
+**Conectarse:** Especifica si se conecta para obtener una CRL. Si es false, solo se consultan las CRL en caché (en el disco local o las incrustadas con la firma). El valor predeterminado es True.
 
-**Ignorar fechas de validez:** Especifica si se omiten las horas thisUpdate y nextUpdate de la respuesta, lo que evita que estos tiempos tengan un efecto negativo en la validez de la respuesta. El valor predeterminado es False.
+**Ignorar fechas de validez:** Especifica si se deben ignorar las horas thisUpdate y nextUpdate de la respuesta, lo que impide que estos tiempos tengan un efecto negativo en la validez de la respuesta. El valor predeterminado es False.
 
 **Requerir extensión AKI en CRL:** Especifica si la extensión Identificador de clave de entidad emisora debe incluirse en una CRL. El valor predeterminado es False.
 
@@ -655,53 +660,53 @@ Los siguientes ajustes están disponibles para el servicio Signature.
 
 **URL del servidor OCSP:** URL del servidor OCSP predeterminado. El uso del servidor OCSP especificado mediante esta dirección URL depende de la configuración de la opción URL a consultar. No hay valor predeterminado.
 
-**Opción URL a consultar:** Controla la lista y el orden de los servidores de OCSP que se utilizan para realizar la comprobación de estado. El valor predeterminado es UseAIAInCert.
+**Opción URL a consultar:** Controla la lista y el orden de los servidores de OCSP que se usan para realizar la comprobación de estado. El valor predeterminado es UseAIAInCert.
 
-**Estilo de comprobación de revocación:** Especifica el estilo de comprobación de revocación que se utiliza al verificar el certificado del servidor OCSP. El valor predeterminado es CheckIfAvailable.
+**Estilo de comprobación de revocación:** Especifica el estilo de comprobación de revocación que se usa al comprobar el certificado del servidor OCSP. El valor predeterminado es CheckIfAvailable.
 
-**Enviar nonce:** Especifica si se envía una cadena nonce con la solicitud de OCSP. Un nonce puede ser una marca de tiempo, un contador de visitas en una página web o un marcador especial destinado a limitar o evitar la reproducción o reproducción no autorizada de un archivo. El valor predeterminado es True.
+**Enviar número:** Especifica si se envía un número con la solicitud de OCSP. Un nonce puede ser una marca de tiempo, un contador de visitas en una página web o un marcador especial destinado a limitar o evitar la reproducción o reproducción no autorizada de un archivo. El valor predeterminado es True.
 
-**Tiempo de sesgo de reloj máximo:** Desviación máxima permitida, en minutos, entre el tiempo de respuesta y la hora local. El valor mínimo es 0 y el valor máximo es 2147483647 m. El valor predeterminado es 5 m.
+**Tiempo máximo de sesgo del reloj:** Desviación máxima permitida, en minutos, entre el tiempo de respuesta y la hora local. El valor mínimo es 0 y el valor máximo es 2147483647 m. El valor predeterminado es 5 m.
 
-**Tiempo de actualización de respuesta:** Tiempo máximo, en minutos, para el cual se considera válida una respuesta OCSP preconstruida. El valor mínimo es 1 m y el valor máximo permitido es 2147483647. El valor predeterminado es 525600 (un año).
+**Tiempo de actualización de la respuesta:** Tiempo máximo, en minutos, para el que una respuesta OCSP preconstruida se considera válida. El valor mínimo es 1 m y el valor máximo permitido es 2147483647. El valor predeterminado es 525600 (un año).
 
-**Firmar solicitud de OCSP:** Especifica si la solicitud de OCSP debe firmarse. El valor predeterminado es False.
+**Firmar solicitud de OCSP:** Especifica si se debe firmar la solicitud de OCSP. El valor predeterminado es False.
 
-**Alias de credencial de firmante de solicitud:** Especifica el alias de credencial que se utiliza para firmar la solicitud de OCSP si la firma está habilitada. Solo se utiliza si la firma de la solicitud de OCSP está habilitada. No hay valor predeterminado.
+**Alias de credencial de firmante de solicitud:** Especifica el alias de credencial que se utilizará para firmar la solicitud de OCSP si la firma está habilitada. Solo se utiliza si la firma de la solicitud de OCSP está habilitada. No hay valor predeterminado.
 
-**Conectarse:** Especifica si se va a conectar para realizar la comprobación de revocación. El valor predeterminado es True.
+**Conectarse:** Especifica si se conecta para realizar la comprobación de revocación. El valor predeterminado es True.
 
-**Ignore las horas thisUpdate y nextUpdate de la respuesta:** Especifica si se omiten las horas thisUpdate y nextUpdate de la respuesta, lo que evita que estos tiempos tengan un efecto negativo en la validez de la respuesta. El valor predeterminado es False.
+**Ignorar las horas thisUpdate y nextUpdate de la respuesta:** Especifica si se deben ignorar las horas thisUpdate y nextUpdate de la respuesta, lo que impide que estos tiempos tengan un efecto negativo en la validez de la respuesta. El valor predeterminado es False.
 
-**Permitir extensión de OCSPNoCheck:** Especifica si la extensión OCSPNoCheck está permitida en el certificado de firma de respuesta. El valor predeterminado es True.
+**Permitir extensión OCSPNoCheck:** Especifica si la extensión OCSPNoCheck está permitida en el certificado de firma de respuesta. El valor predeterminado es True.
 
-**Requerir extensión CertHash OCSP ISIS-MTT:** Especifica si se debe incluir una extensión de hash de clave pública de certificado en las respuestas de OCSP. El valor predeterminado es False.
+**Requerir extensión CertHash OCSP ISIS-MTT:** Especifica si se debe incluir una extensión hash de clave pública de certificado en las respuestas OCSP. El valor predeterminado es False.
 
 ### Opciones de control de errores para depuración {#error-handling-options-for-debugging}
 
-**Purgar caché de certificados en la siguiente llamada de API:** Especifica si se purga la caché de certificados cuando se llama a la siguiente operación de servicio de firma. Una vez realizada la operación, esta opción se vuelve a establecer en false. El valor predeterminado es False.
+**Purgar caché de certificados en la siguiente llamada de API:** Especifica si se purgará la caché de certificados cuando se realice la siguiente operación de servicio de firma. Una vez realizada la operación, esta opción se vuelve a establecer en false. El valor predeterminado es False.
 
-**Purgar caché de CRL en la siguiente llamada de API:** Especifica si se depura la caché de CRL cuando se llama a la siguiente operación de servicio de firma. Una vez realizada la operación, esta opción se vuelve a establecer en false. El valor predeterminado es False.
+**Purgar caché de CRL en la siguiente llamada de API:** Especifica si se purga la caché de CRL cuando se llama a la siguiente operación de servicio de firma. Una vez realizada la operación, esta opción se vuelve a establecer en false. El valor predeterminado es False.
 
-**Purgar la caché de OCSP en la siguiente llamada de API:** Especifica si se depura la caché de OCSP cuando se llama a la siguiente operación de servicio de firma. Una vez realizada la operación, esta opción se vuelve a establecer en false. El valor predeterminado es False.
+**Purgar la caché de OCSP en la siguiente llamada de API:** Especifica si se purgará la caché de OCSP cuando se realice la siguiente operación de servicio de firma. Una vez realizada la operación, esta opción se vuelve a establecer en false. El valor predeterminado es False.
 
 ## Configuración del servicio de carpetas inspeccionadas {#watched-folder-service-settings}
 
-El servicio de carpetas inspeccionadas ( `WatchedFolder`) configura atributos que son comunes para todos los extremos de carpetas vigiladas. También proporciona valores predeterminados para los extremos de carpeta observados. (Consulte [Configurar extremos de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Las aplicaciones cliente externas no lo invocan ni lo utilizan en los procesos creados en Workbench.
+El servicio de carpetas inspeccionadas (`WatchedFolder`) configura atributos que son comunes para todos los extremos de carpetas inspeccionadas. También proporciona valores predeterminados para los extremos de carpeta observados. (Consulte [Configuración de puntos finales de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)). Las aplicaciones cliente externas no lo invocan ni lo utilizan en los procesos creados en Workbench.
 
 Las siguientes configuraciones están disponibles para el servicio de carpetas inspeccionadas.
 
-**Expresión Cron:** La expresión cron utilizada por quartz para programar el sondeo del directorio de entrada.
+**Expresión cron:** La expresión cron utilizada por quartz para programar el sondeo del directorio de entrada.
 
 **Recuento de repeticiones:** El número de veces que se sondea el directorio de entrada. Recuento de repetición predeterminado que se utilizará si este valor no se especifica en la configuración del extremo. El valor -1 indica un análisis indefinido del directorio. El valor predeterminado es -1.
 
-**Intervalo de repetición:** El número predeterminado si hay segundos entre cada encuesta. Este valor se utiliza como intervalo de repetición a menos que se especifique un valor diferente en la configuración del extremo de la carpeta vigilada. El valor predeterminado es 5. Consulte la descripción de la configuración del tamaño del lote para obtener más información.
+**Intervalo de repetición:** El número predeterminado en segundos entre cada sondeo. Este valor se utiliza como intervalo de repetición a menos que se especifique un valor diferente en la configuración del extremo de la carpeta vigilada. El valor predeterminado es 5. Consulte la descripción de la configuración del tamaño del lote para obtener más información.
 
 **Asincrónica:** Identifica el tipo de invocación como asincrónico o sincrónico. Los procesos transitorios y sincrónicos solo se pueden invocar sincrónicamente. El valor predeterminado es asíncrono.
 
-**Tiempo de espera:** El valor predeterminado del tiempo, en segundos, tras el cual se recuperan los archivos de las carpetas de entrada. Si el archivo o la carpeta es anterior al tiempo especificado en el tiempo de espera, se recoge para su procesamiento. El valor predeterminado es 0.
+**Tiempo de espera:** El valor predeterminado de tiempo, en segundos, tras el cual se recuperarán los archivos de las carpetas de entrada. Si el archivo o la carpeta es anterior al tiempo especificado en el tiempo de espera, se recoge para su procesamiento. El valor predeterminado es 0.
 
-**Tamaño del lote:** El valor predeterminado para el número de archivos o carpetas que se procesan por análisis. El valor predeterminado es 2.
+**Tamaño de lote:** El valor predeterminado para el número de archivos o carpetas que se procesan por análisis. El valor predeterminado es 2.
 
 La configuración Intervalo de repetición y Tamaño de lote determina cuántos archivos recoge la carpeta inspeccionada en cada análisis. La carpeta inspeccionada utiliza un grupo de hilos de Quartz para analizar la carpeta de entrada. El grupo de subprocesos se comparte con otros servicios. Si el intervalo de análisis es pequeño, los subprocesos analizan la carpeta de entrada con frecuencia. Si los archivos se pierden con frecuencia en la carpeta vigilada, reduzca el intervalo de análisis. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
 
@@ -709,13 +714,13 @@ Si se pierde un gran volumen de archivos, aumente el tamaño del lote. Por ejemp
 
 Cuando se sueltan los archivos en la carpeta vigilada, se enumeran los archivos en la entrada, lo que puede reducir el rendimiento si la exploración se realiza cada segundo. El aumento del intervalo de análisis puede mejorar el rendimiento. Si el volumen de archivos que se van a soltar es pequeño, ajuste el tamaño del lote y repita el intervalo según corresponda. Por ejemplo, si se sueltan 10 archivos cada segundo, intente establecer el intervalo de repetición en 1 segundo y el tamaño del lote en 10.
 
-En una configuración de clúster, el tamaño de lote de un extremo de carpeta vigilada no se escala a varios nodos de clúster. Por ejemplo, si el tamaño del lote está establecido en `2` para un clúster de dos nodos y la opción Aceleración está seleccionada, los nodos procesan los archivos colectivamente en lotes de dos en lugar de que cada nodo procese dos archivos a la vez.
+En una configuración de clúster, el tamaño de lote de un extremo de carpeta vigilada no se escala a varios nodos de clúster. Por ejemplo, si el tamaño del lote se establece en `2` para un clúster de dos nodos y se selecciona la opción Aceleración, los nodos procesan los archivos de forma colectiva en lotes de dos en lugar de que cada nodo procese dos archivos a la vez.
 
 **Sobrescribir nombres de archivo duplicados:** Una cadena booleana que especifica si la carpeta vigilada sobrescribe los nombres de archivo de resultados duplicados y si se deben sobrescribir los documentos conservados con el mismo nombre.
 
-**Conservar carpeta:** El valor predeterminado para la carpeta de conservación. Esta carpeta se utiliza para copiar los archivos de origen en si la entrada se procesa correctamente. Este valor puede ser una ruta vacía, relativa o absoluta con un patrón de archivo como se describe para la configuración Carpeta de resultados.
+**Conservar carpeta:** Valor predeterminado para la carpeta de conservación. Esta carpeta se utiliza para copiar los archivos de origen en si la entrada se procesa correctamente. Este valor puede ser una ruta vacía, relativa o absoluta con un patrón de archivo como se describe para la configuración Carpeta de resultados.
 
-**Carpeta de errores:** Nombre de la carpeta donde se copian los archivos de error. Este valor puede ser una ruta vacía, relativa o absoluta con un patrón de archivo como se describe para la configuración Carpeta de resultados.
+**Carpeta de error:** Nombre de la carpeta donde se copian los archivos de error. Este valor puede ser una ruta vacía, relativa o absoluta con un patrón de archivo como se describe para la configuración Carpeta de resultados.
 
 **Carpeta de resultados:** El nombre predeterminado de la carpeta de resultados. Esta carpeta se utiliza para copiar los archivos de resultados en. Este valor puede ser una ruta vacía, relativa o absoluta con el siguiente patrón de archivo.
 
@@ -742,17 +747,17 @@ Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carp
 >
 >Cuanto menor sea el tamaño de las carpetas de resultados, mejor será el rendimiento de la carpeta inspeccionada. Por ejemplo, si la carga estimada para la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es menor (por ejemplo, 1000 archivos por día), puede utilizar un patrón como `result/%Y%M%D`.
 
-**Carpeta de fase:** El nombre predeterminado para la carpeta de fase dentro de la carpeta vigilada.
+**Carpeta de fase:** El nombre predeterminado de la carpeta de fase dentro de la carpeta vigilada.
 
-**Carpeta de entrada:** Nombre predeterminado de la carpeta de entrada dentro de la carpeta vigilada.
+**Carpeta de entrada:** El nombre predeterminado de la carpeta de entrada dentro de la carpeta vigilada.
 
-**Conservar si se produce error:** Si el valor es True, los archivos originales se conservan en la carpeta de errores si se produce un error.
+**Conservar si se produce error:** Si el valor es True, los archivos originales se conservarán en la carpeta de errores si se produce un error.
 
-**Acelerador:** AEM Cuando se selecciona esta opción, limita el número de trabajos de carpetas vigiladas que procesa el formulario en un momento determinado. El valor Tamaño de lote determina el número máximo de trabajos (consulte Acerca de la restricción).
+AEM **Aceleración:** Cuando se selecciona esta opción, limita el número de trabajos de carpetas vigiladas que procesa el formulario en un momento dado y que se pueden ver en un momento determinado. El valor Tamaño de lote determina el número máximo de trabajos (consulte Acerca de la restricción).
 
 ## Configuración del servicio Web {#web-service-service-settings}
 
-El servicio Web ( `WebService`) permite a los procesos invocar operaciones de servicio web.
+El servicio Web (`WebService`) habilita procesos para invocar operaciones de servicio Web.
 
 El servicio Web permite a los procesos invocar operaciones del servicio Web. Por ejemplo, una organización puede querer integrar un proceso para almacenar y recuperar información, como los detalles de contacto y cuenta, invocando los servicios web expuestos de un proveedor de servicios. El servicio Web Service invoca un servicio Web especificado y pasa los valores de cada uno de sus parámetros. A continuación, guarda los valores devueltos de la operación en una variable designada dentro de un proceso.
 
@@ -764,18 +769,18 @@ Las siguientes opciones de configuración están disponibles para el servicio We
 
 **Contraseña de almacén de claves:** Contraseña del archivo de almacén de claves.
 
-**Tipo de almacén de claves:** Tipo del almacén de claves. No proporcione ningún valor para utilizar el tipo de almacén de claves predeterminado configurado para la JVM que ejecuta el servidor de Forms. De lo contrario, proporcione uno de los siguientes valores:
+**Tipo de almacén de claves:** Tipo de almacén de claves. No proporcione ningún valor para utilizar el tipo de almacén de claves predeterminado configurado para la JVM que ejecuta el servidor de Forms. De lo contrario, proporcione uno de los siguientes valores:
 
 * jks
 * pkcs12
 * cms
 * jceks
 
-**Almacén de confianza:** Ruta de acceso completa del archivo de almacén de confianza que contiene la clave pública del servidor de servicio web.
+**Almacén de confianza:** Ruta de acceso completa del archivo del almacén de confianza que contiene la clave pública del servidor de servicio web.
 
-**Contraseña de almacén de confianza:** Contraseña del archivo truststore.
+**Contraseña del almacén de confianza:** Contraseña del archivo truststore.
 
-**Tipo de almacén de confianza:** Tipo del almacén de confianza. No proporcione ningún valor para utilizar el tipo de almacén de claves predeterminado configurado para la JVM que ejecuta el servidor de Forms. De lo contrario, proporcione uno de los siguientes valores:
+**Tipo de almacén de confianza:** Tipo de almacén de confianza. No proporcione ningún valor para utilizar el tipo de almacén de claves predeterminado configurado para la JVM que ejecuta el servidor de Forms. De lo contrario, proporcione uno de los siguientes valores:
 
 * jks
 * pkcs12
@@ -784,11 +789,11 @@ Las siguientes opciones de configuración están disponibles para el servicio We
 
 ## Configuración del servicio de transformación XSLT {#xslt-transformation-service-settings}
 
-El servicio de transformación XSLT ( `XSLTService`) permite a los procesos aplicar transformaciones XSL (Extensible Stylesheet Language Transformations) en documentos XML.
+El servicio de transformación XSLT (`XSLTService`) permite a los procesos aplicar transformaciones XSLT (Extensible Stylesheet Language Transformations) en documentos XML.
 
 La siguiente configuración está disponible para el servicio Transformación XSLT.
 
-**Nombre de fábrica:** Nombre completo de la clase Java que se va a utilizar para realizar transformaciones XSLT. Si no se especifica ningún valor, se utiliza el generador predeterminado configurado en la máquina virtual Java que ejecuta el servidor de Forms.
+**Nombre de fábrica:** El nombre completo de la clase Java que se va a utilizar para realizar transformaciones XSLT. Si no se especifica ningún valor, se utiliza el generador predeterminado configurado en la máquina virtual Java que ejecuta el servidor de Forms.
 
 ## Modificación de la configuración de seguridad de un servicio {#modifying-security-settings-for-a-service}
 
@@ -812,9 +817,9 @@ Se instalan los perfiles de seguridad predeterminados, que se pueden configurar 
 
    Para especificar la identidad en tiempo de ejecución utilizada por un servicio para ejecutar operaciones, seleccione Especificar Ejecutar como, seleccione una opción de la lista asociada y, a continuación, haga clic en Guardar. Elija entre las siguientes opciones:
 
-   **Invocador:** Utiliza la misma identidad que el usuario que invocó el servicio.
+   **Invocador:** Usa la misma identidad que el usuario que invocó el servicio.
 
-   **Sistema:** Utiliza el usuario del sistema para ejecutar el servicio con privilegios completos.
+   **Sistema:** utiliza al usuario del sistema para ejecutar el servicio con privilegios completos.
 
    **Usuario designado:** Permite ejecutar el servicio como un usuario específico. Cuando seleccione esta opción, haga clic en Seleccionar usuario para mostrar la página Seleccionar principal, donde puede buscar y seleccionar al usuario.
 
@@ -834,19 +839,19 @@ Se instalan los perfiles de seguridad predeterminados, que se pueden configurar 
    * **START_STOP_PERM:** Para iniciar y detener un servicio
    * **ADD_REMOVE_ENDPOINTS_PERM:** Para agregar, quitar y modificar extremos de un servicio
    * **CREATE_VERSION_PERM:** Para crear una versión del servicio
-   * **DELETE_VERSIÓN_PERM:** Para eliminar una versión del servicio
+   * **DELETE_VERSION_PERM:** Para eliminar una versión del servicio
    * **MODIFY_VERSION_PERM:** Para modificar una versión del servicio
    * **READ_PERM:** Para ver el servicio
-   * **PROCESS_OWNER_PERM:** AEM Para su uso en una versión futura de formularios de la. No utilice este permiso.
-   * **SERVICE_MANAGER_PERM:** AEM Para su uso en una versión futura de formularios de la. No utilice este permiso.
-   * **SERVICE_AGENT_PERM:** AEM Para su uso en una versión futura de formularios de la. No utilice este permiso.
+   * AEM **PROCESS_OWNER_PERM:** Para su uso en una versión futura de formularios de la. No utilice este permiso.
+   * AEM **SERVICE_MANAGER_PERM:** Para su uso en una versión futura de formularios de la lista de distribución de formularios de la lista de distribución. No utilice este permiso.
+   * AEM **SERVICE_AGENT_PERM:** Para su uso en una versión futura de formularios de la lista de distribución de formularios de la lista de distribución. No utilice este permiso.
 
 1. Haga clic en Agregar.
 
 ### Quitar el principal de un perfil de seguridad {#remove-the-principal-from-a-security-profile}
 
 1. En la página Administración de servicios, seleccione el servicio que desea configurar.
-1. Haga clic en **Seguridad** , seleccione el perfil de seguridad que desea quitar y haga clic en **Eliminar**.
+1. Haga clic en la ficha **Seguridad**, seleccione el perfil de seguridad que desea quitar y haga clic en **Quitar**.
 
 ## Configuración de la agrupación para un servicio {#configuring-pooling-for-a-service}
 

@@ -32,7 +32,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->SOAP AEM El Inicio rápido de la API de Java () en Programación con formularios de la aplicación se basa en Forms si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo aplicable. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>SOAP AEM El Inicio rápido de la API de Java () en Programación con formularios de la aplicación se basa en Forms si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo aplicable. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## SOAP Inicio rápido (modo de): Implementar aplicaciones mediante la API de Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 

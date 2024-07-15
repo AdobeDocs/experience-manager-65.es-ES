@@ -24,7 +24,7 @@ El servicio Forms permite crear aplicaciones cliente de captura de datos interac
 * como HTML en varios entornos de explorador, incluido un procesamiento XHTML 1.0 compatible
 * como guías de formulario en varios entornos de explorador que admiten el Flash Player de Adobe.
 
-Para obtener más información sobre el servicio Forms, consulte [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
+Para obtener información adicional acerca del servicio Forms, consulte [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
 Con la página Forms de la consola de administración, puede configurar el comportamiento del servicio de Forms. Esta configuración se aplica a todas las invocaciones del servicio. AEM Cualquier parámetro enviado a través del SDK de formularios de la anula la configuración establecida en la consola de administración; sin embargo, solo afecta a esa invocación en particular.
 

@@ -56,7 +56,7 @@ Solo deben aplicarse otras restricciones de datos, como obligatorias o restricci
 
 #### Ejemplos {#example-1}
 
-El ejemplo anterior de uso de una `lastModified` La propiedad Fecha en, por ejemplo, el nodo &quot;publicación de blog&quot;, no significa realmente que sea necesario un tipo de nodo especial. Definitivamente me vendría bien `nt:unstructured` para los nodos de mi entrada de blog al menos inicialmente. Ya que en mi aplicación de blogs, todo lo que voy a hacer es mostrar la fecha de lastModified de todos modos (posiblemente &quot;ordenar por&quot;) apenas me importa si es una fecha en absoluto. Porque confío implícitamente en mi aplicación de escritura de blogs para poner una &quot;fecha&quot; de todos modos, no hay realmente necesidad de declarar la presencia de una `lastModified` fecha en forma de tipo de nodo.
+El ejemplo anterior de usar una propiedad Fecha `lastModified` en, por ejemplo, el nodo &quot;publicación de blog&quot;, no significa que sea necesario un tipo de nodo especial. Definitivamente usaría `nt:unstructured` para los nodos de mis publicaciones de blog al menos inicialmente. Ya que en mi aplicación de blogs, todo lo que voy a hacer es mostrar la fecha de lastModified de todos modos (posiblemente &quot;ordenar por&quot;) apenas me importa si es una fecha en absoluto. Como confío implícitamente en la aplicación de escritura de blogs para poner una &quot;fecha&quot; de todas formas, no es necesario declarar la presencia de una fecha `lastModified` en forma de nodo.
 
 ### #2 de reglas: Controle la jerarquía de contenido; no permita que esto ocurra. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -74,7 +74,7 @@ Personalmente, prefiero las convenciones de jerarquía sobre el sistema de escri
 >
 >La forma en que se estructura un repositorio de contenido también puede afectar al rendimiento. Para obtener el mejor rendimiento, el número de nodos secundarios adjuntos a nodos individuales en un repositorio de contenido no debe superar 1000.
 >
->Consulte [¿Cuántos datos puede gestionar CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
+>Vea [¿Cuántos datos puede manejar CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Ejemplos {#example-2}
 
@@ -100,7 +100,7 @@ Con el modelo de contenido anterior, puedo permitir fácilmente que el usuario &
 
 #### Explicación {#explanation-3}
 
-Si no utiliza `clone()`, `merge()` o `update()` en su aplicación, un solo espacio de trabajo es probablemente el camino a seguir.
+Si no usa los métodos `clone()`, `merge()` o `update()` en su aplicación, es probable que un solo espacio de trabajo sea el camino a seguir.
 
 &quot;Nodos correspondientes&quot; es un concepto definido en la especificación JCR. Básicamente, se reduce a nodos que representan el mismo contenido, en diferentes espacios de trabajo.
 
@@ -173,13 +173,13 @@ Creo que hay casos prácticos en los que un sistema no puede funcionar si una re
 
 #### Explicación {#explanation-6}
 
-Si un modelo de contenido expone algo que incluso huele remotamente como un archivo o una carpeta, intento usar (o ampliar desde) `nt:file`, `nt:folder`, y `nt:resource`.
+Si un modelo de contenido expone algo que incluso huele remotamente a archivo o carpeta, intento usar (o ampliar desde) `nt:file`, `nt:folder` y `nt:resource`.
 
 En mi experiencia, muchas aplicaciones genéricas permiten la interacción con nt:folder y nt:files implícitamente y saben cómo manejar y mostrar esos eventos si están enriquecidos con metainformación adicional. CIF Por ejemplo, una interacción directa con implementaciones de servidor de archivos como o WebDAV que se encuentran encima de JCR quedan implícitas.
 
-Creo que como buena regla general se podría utilizar lo siguiente: Si debe almacenar el nombre de archivo y el tipo MIME, entonces `nt:file`/ `nt:resource` es una buena coincidencia. Si puede tener varios &quot;archivos&quot;, nt:folder es un buen lugar para almacenarlos.
+Creo que, como buena regla general, se podría utilizar lo siguiente: Si debe almacenar el nombre de archivo y el tipo MIME, `nt:file`/ `nt:resource` es una buena coincidencia. Si puede tener varios &quot;archivos&quot;, nt:folder es un buen lugar para almacenarlos.
 
-Si debe añadir información meta para el recurso, por ejemplo, una propiedad &quot;author&quot; o &quot;description&quot;, amplíe `nt:resource` no el `nt:file`. Rara vez extiendo nt:file y con frecuencia extiendo `nt:resource`.
+Si debe agregar información meta para su recurso, por ejemplo una propiedad &quot;author&quot; o &quot;description&quot;, extienda `nt:resource` no `nt:file`. Rara vez extiendo nt:file y con frecuencia extiendo `nt:resource`.
 
 #### Ejemplos {#example-6}
 
@@ -207,13 +207,13 @@ En las bases de datos relacionales, los ID son un medio necesario para expresar 
 
 Si el modelo de contenido está lleno de propiedades que terminan en &quot;Id&quot;, es probable que no esté utilizando la jerarquía correctamente.
 
-Es cierto que algunos nodos necesitan una identificación estable a lo largo de su ciclo de vida; menos de lo que podría pensar. Pero `mix:referenceable` tiene un mecanismo de este tipo integrado en el repositorio, por lo que no es necesario idear un medio adicional para identificar un nodo de forma estable.
+Es cierto que algunos nodos necesitan una identificación estable a lo largo de su ciclo de vida; menos de lo que podría pensar. Sin embargo, `mix:referenceable` tiene un mecanismo de este tipo integrado en el repositorio, por lo que no es necesario idear un medio adicional para identificar un nodo de forma estable.
 
 Tenga en cuenta también que los elementos se pueden identificar por ruta. Y, a pesar de que los &quot;enlaces simbólicos&quot; tienen mucho más sentido para la mayoría de los usuarios que los enlaces duros en un sistema de archivos UNIX®, una ruta tiene sentido para la mayoría de las aplicaciones para referirse a un nodo de destino.
 
-Más importante aún, lo es **mezclar**: referenciable, lo que significa que se puede aplicar a un nodo en el momento en que realmente debe hacer referencia a él.
+Y lo que es más importante, es **mix**:referenciable, lo que significa que se puede aplicar a un nodo en el momento en el que realmente debe hacer referencia a él.
 
-Por lo tanto, el hecho de que desee poder hacer referencia a un nodo de tipo &quot;Documento&quot; no significa que el tipo de nodo &quot;Documento&quot; tenga que extenderse desde `mix:referenceable` de forma estática. Esto se debe a que se puede agregar dinámicamente a cualquier instancia del documento.
+Por lo tanto, el hecho de que desee poder hacer referencia potencialmente a un nodo de tipo &quot;Documento&quot; no significa que el tipo de nodo &quot;Documento&quot; tenga que extenderse desde `mix:referenceable` de forma estática. Esto se debe a que se puede agregar dinámicamente a cualquier instancia del documento.
 
 #### Ejemplos {#example-7}
 

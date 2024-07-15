@@ -25,11 +25,11 @@ Esto tiene el siguiente impacto:
 * Descarga solicitudes desde la infraestructura del servidor.
 * Aumenta el rendimiento de la carga de páginas, ya que el explorador almacena en caché los objetos de la caché del explorador.
 
-El estándar HTTP especifica las caducidades en relación con la &quot;caducidad&quot; de los archivos (por ejemplo, consulte el capítulo 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Protocolo de transferencia de hipertexto — HTTP 1.1&quot;). Este estándar utiliza el encabezado para permitir a los clientes almacenar en caché los objetos hasta que se consideren obsoletos; dichos objetos se almacenan en caché durante el tiempo especificado sin que se realice ninguna comprobación de estado en el servidor de origen.
+El estándar HTTP especifica las caducidades con respecto a la &quot;caducidad&quot; de los archivos (por ejemplo, consulte el capítulo 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Este estándar utiliza el encabezado para permitir a los clientes almacenar en caché los objetos hasta que se consideren obsoletos; dichos objetos se almacenan en caché durante el tiempo especificado sin que se realice ninguna comprobación de estado en el servidor de origen.
 
 >[!NOTE]
 >
->Esta configuración es independiente de Dispatcher (y no funcionará para).
+>Esta configuración es independiente de (y no funcionará para) Dispatcher.
 >
 >El propósito de Dispatcher es almacenar en caché los datos delante de Adobe Experience Manager AEM ().
 
@@ -37,7 +37,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pue
 
 >[!CAUTION]
 >
->Tenga cuidado al definir el período de tiempo durante el cual se considera que un objeto está actualizado. Como hay *no se realizará ninguna comprobación hasta que haya transcurrido el período de tiempo especificado*, el cliente puede terminar presentando contenido antiguo desde la caché.
+>Tenga cuidado al definir el período de tiempo durante el cual se considera que un objeto está actualizado. Como no hay *ninguna comprobación hasta que haya transcurrido el período de tiempo especificado*, el cliente puede terminar presentando contenido antiguo de la caché.
 
 1. **Para una instancia de autor:**
 
@@ -51,7 +51,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pue
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la del explorador) almacene archivos CSS, JavaScript, PNG y GIF durante un máximo de un mes, hasta que caduquen. AEM Esto significa que no es necesario solicitarlas desde o desde el servidor web, pero pueden permanecer en la caché del explorador.
+   Esto permite que la caché intermedia (por ejemplo, la del explorador) almacene archivos CSS, JavaScript, PNG y de GIF durante un mes, hasta que caduquen. AEM Esto significa que no es necesario solicitarlas desde o desde el servidor web, pero pueden permanecer en la caché del explorador.
 
    Otras secciones del sitio no deben almacenarse en caché en una instancia de autor, ya que están sujetas a cambios en cualquier momento.
 
@@ -73,7 +73,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pue
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la caché del explorador) almacene archivos CSS, JavaScript, PNG y GIF durante un máximo de un día en las cachés de cliente. Aunque este ejemplo ilustra la configuración global de todo lo siguiente `/content` y `/etc/designs`, debe hacerlo más granular.
+   Esto permite que la caché intermedia (por ejemplo, la caché del explorador) almacene archivos CSS, JavaScript, PNG y de GIF durante un máximo de un día en las cachés de cliente. Aunque este ejemplo ilustra la configuración global de todo lo que está por debajo de `/content` y `/etc/designs`, debería hacerlo más granular.
 
    Dependiendo de la frecuencia con la que se actualice el sitio, también puede considerar el almacenamiento en caché de las páginas del HTML. Un período de tiempo razonable sería de una hora:
 
@@ -83,4 +83,4 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pue
    </Location>
    ```
 
-Una vez configurados los objetos estáticos, realice el análisis `request.log`, al seleccionar páginas que contienen estos objetos, para confirmar que no se realizan solicitudes (innecesarias) para objetos estáticos.
+Después de configurar los objetos estáticos, analice `request.log`, mientras selecciona las páginas que contienen dichos objetos, para confirmar que no se realizan solicitudes (innecesarias) de objetos estáticos.

@@ -42,7 +42,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Creación de modelos de fragmento de contenido {#creating-content-fragment-models}
 
-A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en Herramientas > Recursos > Modelos de fragmentos de contenido.
+A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en Herramientas > Assets > Modelos de fragmentos de contenido.
 
 ![Modelos de fragmento de contenido en Herramientas](assets/cfm-tools.png)
 
@@ -113,7 +113,7 @@ Ahora que ha aprendido los conceptos básicos, el siguiente paso es comenzar a c
 
 * [Conceptos de creación](/help/sites-authoring/author.md)
 
-* [Gestión básica](/help/sites-authoring/basic-handling.md) - esta página se basa principalmente en el **Sites** , pero muchas/la mayoría de las funciones también son relevantes para navegar hasta y realizar acciones en, **Modelos de fragmento de contenido** en el **Assets** consola.
+* [Gestión básica](/help/sites-authoring/basic-handling.md): esta página se basa principalmente en la consola de **Sites**, pero muchas/la mayoría de las características también son relevantes para navegar a **Modelos de fragmentos de contenido** y tomar medidas al respecto en la consola de **Assets**.
 
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 

@@ -29,8 +29,8 @@ Este artículo utiliza el componente de tarjeta típico como ejemplo de uso. Las
 Los siguientes modelos para admitir los casos de uso de componentes compuestos requieren los siguientes requisitos previos.
 
 * AEM La instancia de desarrollo de la se está ejecutando localmente en el puerto 4502 con un proyecto de ejemplo.
-* Tiene una aplicación de React externa en funcionamiento [AEM habilitado para editar en la.](spa-edit-external.md)
-* AEM La aplicación React se carga en el editor de [mediante el componente RemotePage.](spa-remote-page.md)
+* AEM Tiene una aplicación React externa en funcionamiento [habilitada para la edición en el.](spa-edit-external.md)
+* AEM La aplicación React se cargó en el editor de [mediante el componente RemotePage.](spa-remote-page.md)
 
 ## SPA Adición de componentes compuestos a un grupo de componentes {#adding-composite-components}
 
@@ -47,13 +47,13 @@ En las siguientes secciones se proporcionan ejemplos de implementación de cada 
 Comience creando los componentes que compondrán el componente compuesto, es decir, los componentes para la imagen y su texto.
 
 1. AEM Cree el componente de texto en el proyecto de.
-1. Añadir el correspondiente `resourceType` del proyecto en el del componente `editConfig` nodo.
+1. Agregue el(la) `resourceType` correspondiente del proyecto en el nodo `editConfig` del componente.
 
    ```text
     resourceType: 'wknd-spa/components/text' 
    ```
 
-1. Utilice el `withMappable` para habilitar la edición para el componente.
+1. Use el asistente de `withMappable` para habilitar la edición del componente.
 
    ```text
    export const AEMText = withMappable(Text, TextEditConfig); 
@@ -88,7 +88,7 @@ export const Text = ({ cqPath, richText, text }) => {
 export const AEMText = withMappable(Text, TextEditConfig);
 ```
 
-Si crea un componente de imagen de forma similar, puede combinarlo con la variable `AEMText` en un nuevo componente de tarjeta, utilizando los componentes de imagen y texto como elementos secundarios.
+Si crea un componente de imagen de forma similar, puede combinarlo con el componente `AEMText` en un nuevo componente de tarjeta, utilizando los componentes de imagen y texto como elementos secundarios.
 
 ```javascript
 import React from 'react';
@@ -121,7 +121,7 @@ function Home() {
 }
 ```
 
-Esto mostrará un marcador de posición vacío para un texto y una imagen en el editor. Al introducir valores para estos elementos mediante el editor, se almacenan en la ruta de página especificada, es decir `/content/wknd-spa/home`  en el nivel raíz con los nombres especificados en `itemPath`.
+Esto mostrará un marcador de posición vacío para un texto y una imagen en el editor. Al introducir valores para estos elementos mediante el editor, se almacenan en la ruta de página especificada, es decir, `/content/wknd-spa/home` en el nivel raíz con los nombres especificados en `itemPath`.
 
 ![Componente de tarjeta compuesta en el editor](assets/composite-card.png)
 
@@ -133,7 +133,7 @@ AEM En este caso, el componente de tarjeta ya se ha creado en el proyecto de que
 
 SPA A continuación, puede agregarlo a la y recuperar su contenido.
 
-1. SPA Cree un componente correspondiente en la lista de componentes para este elemento AEM SPA Asegúrese de que los componentes secundarios estén asignados a sus tipos de recursos de la correspondientes dentro del proyecto de la aplicación. En este ejemplo utilizamos el mismo `AEMText` y `AEMImage` componentes según se detalla [en el caso anterior.](#component-does-not-exist)
+1. SPA Cree un componente correspondiente en la lista de componentes para este elemento AEM SPA Asegúrese de que los componentes secundarios estén asignados a sus tipos de recursos de la correspondientes dentro del proyecto de la aplicación. En este ejemplo utilizamos los mismos componentes `AEMText` y `AEMImage` que se detallaron [en el caso anterior.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -149,7 +149,7 @@ SPA A continuación, puede agregarlo a la y recuperar su contenido.
    MapTo('wknd-spa/components/image')(Image, ImageEditConfig);
    ```
 
-1. Dado que no hay contenido para `imagecard` , añada la tarjeta a la página. AEM SPA Incluya el contenedor existente de la lista de en el cuadro de diálogo de la.
+1. Dado que no hay contenido para el componente `imagecard`, agregue la tarjeta a la página. AEM SPA Incluya el contenedor existente de la lista de en el cuadro de diálogo de la.
    * AEM SPA AEM Si ya hay un contenedor en el proyecto de, podemos incluirlo en la lista de distribución en su lugar y agregar el componente al contenedor desde la lista de distribución en su lugar, en la lista de distribución en la que se va a incluir el componente en la lista de distribución en el proyecto de.
    * SPA Asegúrese de que el componente de tarjeta esté asignado al tipo de recurso correspondiente en la tarjeta de.
 
@@ -159,9 +159,9 @@ SPA A continuación, puede agregarlo a la y recuperar su contenido.
     itemPath='root/responsivegrid' />
    ```
 
-1. Añada el creado `wknd-spa/components/imagecard` a los componentes permitidos para el componente contenedor [en la plantilla de página.](/help/sites-authoring/templates.md)
+1. Agregue el componente `wknd-spa/components/imagecard` creado a los componentes permitidos para el componente contenedor [ en la plantilla de página.](/help/sites-authoring/templates.md)
 
-Ahora, la `imagecard` AEM El componente se puede añadir directamente al contenedor en el editor de.
+AEM Ahora el componente `imagecard` se puede agregar directamente al contenedor en el editor de.
 
 ![Tarjeta compuesta en el editor](assets/composite-card.gif)
 
@@ -177,4 +177,4 @@ AEM SPA Si el contenido existe en la, se puede incluir directamente en la misma 
 
 ![Ruta compuesta en la estructura del nodo](assets/composite-path.png)
 
-El `AEMCard` el componente es el mismo que se definió [en el caso de uso anterior.](#content-does-not-exist) AEM SPA Aquí se incluye en la lista el contenido definido en la ubicación anterior del proyecto de la.
+El componente `AEMCard` es el mismo que se definió [ en el caso de uso anterior.AEM SPA ](#content-does-not-exist) Aquí se incluye en la lista el contenido definido en la ubicación anterior del proyecto de la.

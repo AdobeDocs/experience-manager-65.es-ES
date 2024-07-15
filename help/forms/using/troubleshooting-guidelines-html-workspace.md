@@ -158,9 +158,9 @@ En AEM Forms Workspace:
 
 Los scripts y los estilos se pueden depurar en distintos exploradores.
 
-* **Depuración en IE**: para depurar AEM Forms Workspace en IE, consulte: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
+* **Depuración en IE**: Para depurar el espacio de trabajo de AEM Forms en IE, consulte: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Depuración en Chrome**: para abrir el depurador en Chrome, utilice el método abreviado: Ctrl + Mayús + I. Para obtener más información, consulte: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
+* **Depuración en Chrome**: para abrir el depurador en Chrome, use el método abreviado: Ctrl+Mayús+I. Para obtener más información, consulte: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
 * **Depuración en Firefox**: Hay varios complementos disponibles para depurar scripts y estilos en Firefox. Por ejemplo, Firebug es una de estas utilidades de depuración ([https://getfirebug.com](https://getfirebug.com)).
 

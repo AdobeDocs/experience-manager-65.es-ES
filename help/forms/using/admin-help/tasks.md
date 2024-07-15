@@ -44,19 +44,19 @@ Los resultados de una búsqueda de tareas se muestran en la página Lista de tar
 
 Las tareas se muestran con la siguiente información:
 
-**ID de tarea:** El entero positivo que asigna el flujo de trabajo de Forms cuando se crea una instancia de la tarea (iniciada por un usuario). Puede utilizar este identificador para realizar un seguimiento de la tarea a lo largo de su ciclo de vida. Haga clic en un ID de tarea para ver los detalles sobre el historial de tareas o para reasignar la tarea a otro usuario.
+**Id. de tarea:** El entero positivo que el flujo de trabajo de formularios asigna cuando se crea una instancia de la tarea (iniciada por un usuario). Puede utilizar este identificador para realizar un seguimiento de la tarea a lo largo de su ciclo de vida. Haga clic en un ID de tarea para ver los detalles sobre el historial de tareas o para reasignar la tarea a otro usuario.
 
-**Estado:** Asignada significa que la tarea está asignada actualmente al usuario. Sin asignar significa que la tarea se asignó anteriormente al usuario. El estado también puede ser Completado.
+**Estado:** Asignado significa que la tarea está actualmente asignada al usuario. Sin asignar significa que la tarea se asignó anteriormente al usuario. El estado también puede ser Completado.
 
 **Actividad:** Muestra el formulario y el nombre de una operación inicial o de la operación de proceso que generó la tarea.
 
-**ID de proceso:** Este entero positivo que asigna el flujo de trabajo de formularios cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia un proceso). Puede utilizar este identificador para realizar un seguimiento de la instancia de proceso a lo largo de su ciclo de vida.
+**ID. de proceso:** Este entero positivo que el flujo de trabajo de formularios asigna cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia un proceso). Puede utilizar este identificador para realizar un seguimiento de la instancia de proceso a lo largo de su ciclo de vida.
 
 **Nombre del proceso - Versión:** El nombre del proceso, tal como se define en Workbench.
 
-**Aplicación:** El nombre de la aplicación a la que pertenece el proceso, tal como se define en Workbench.
+**Aplicación:** Nombre de la aplicación a la que pertenece el proceso, tal como se define en Workbench.
 
-**Fecha de creación:** Fecha y hora de creación de la tarea.
+**Fecha de creación:** Fecha y hora en que se creó la tarea.
 
 ## Ver el historial de tareas y reasignar tareas {#viewing-task-history-and-reassigning-tasks}
 
@@ -66,27 +66,27 @@ Para cada asignación de tarea, la lista muestra la siguiente información:
 
 **Nombre:** El nombre del usuario.
 
-**Estado:** Asignada significa que la tarea está actualmente asignada al usuario. Sin asignar significa que la tarea se asignó anteriormente al usuario.
+**Estado:** asignado significa que la tarea está asignada actualmente al usuario. Sin asignar significa que la tarea se asignó anteriormente al usuario.
 
-**ID de lista de trabajo:** El identificador numérico de la cola de usuario a la que pertenece la tarea. Un proceso se puede compartir entre varios usuarios.
+**Id. de lista de trabajo:** Identificador numérico de la cola de usuario a la que pertenece la tarea. Un proceso se puede compartir entre varios usuarios.
 
 **Tipo:** Indica cómo se asignó la tarea:
 
 **Inicial:** Al usuario se le asignó originalmente la tarea.
 
-**Avanzar:** El propietario de la tarea original asignó la tarea a otro usuario.
+**Reenviar:** El propietario original de la tarea asignó la tarea a otro usuario.
 
 **Rechazar:** Se rechazó una tarea reenviada o se devolvió una tarea a una lista de trabajo sin haberse completado.
 
-**Reclamación:** El usuario reclamó la tarea en una lista de trabajo compartida.
+**Notificación:** El usuario reclamó la tarea en una lista de trabajo compartida.
 
-**Escalación:** Tiempo transcurrido predeterminado (como se establece en la acción del usuario en Workbench) sin interacción del usuario y se asignó la tarea a otro usuario.
+**Escalación:** Transcurrió un tiempo predeterminado (tal como se establece en la acción del usuario en Workbench) sin la interacción del usuario y se asignó la tarea a otro usuario.
 
-**Consulte:** El propietario de la tarea ha reenviado esta tarea a otro usuario para su consulta, que puede abrir el formulario, guardar datos, modificar los archivos adjuntos y las notas, pero no puede completar el paso. El usuario debe devolver la tarea al propietario de la tarea que consultó con el usuario.
+**Consultar:** El propietario de la tarea ha reenviado esta tarea a otro usuario para su consulta, que puede abrir el formulario, guardar datos, modificar los archivos adjuntos y las notas, pero no puede completar el paso. El usuario debe devolver la tarea al propietario de la tarea que consultó con el usuario.
 
 **Reasignación de administrador:** Un administrador reasignó la tarea.
 
-**Fecha de asignación:** La fecha y la hora en que se asignó la tarea al usuario.
+**Fecha de asignación:** Fecha y hora en que se asignó la tarea al usuario.
 
 ### Asignar un nuevo usuario a una tarea {#assigning-a-new-user-to-a-task}
 

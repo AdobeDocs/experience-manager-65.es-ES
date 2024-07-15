@@ -44,7 +44,7 @@ AEM En este tema se describen las siguientes estrategias para realizar una copia
 ### Copia de seguridad sin conexión con tiempo de inactividad {#offline-backup-with-downtime}
 
 1. Apague todo el clúster y los servicios relacionados. (consulte [Iniciar y detener servicios](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. En cualquier nodo, haga una copia de seguridad de la base de datos, GDS y Connectors. (consulte [Archivos para realizar copias de seguridad y recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. En cualquier nodo, haga una copia de seguridad de la base de datos, GDS y Connectors. (vea [Archivos para realizar copias de seguridad y recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. AEM Para realizar una copia de seguridad sin conexión del repositorio de, realice los siguientes pasos:
 
    1. Para cada nodo de clúster, haga una copia de seguridad del archivo que contiene el identificador del nodo de clúster.
@@ -63,7 +63,7 @@ AEM En este tema se describen las siguientes estrategias para realizar una copia
    Deje el modo de copia de seguridad móvil después de una recuperación.
 
 1. AEM Cierre cualquiera de los nodos secundarios del clúster en lo que respecta a la. (consulte [Iniciar y detener servicios](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. En cualquier nodo, haga una copia de seguridad de la base de datos, GDS y Connectors. (consulte [Archivos para realizar copias de seguridad y recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. En cualquier nodo, haga una copia de seguridad de la base de datos, GDS y Connectors. (vea [Archivos para realizar copias de seguridad y recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. AEM Para realizar una copia de seguridad sin conexión del repositorio de, realice los siguientes pasos:
 
    1. Para cada nodo de clúster, haga una copia de seguridad del archivo que contiene el identificador del nodo de clúster.
@@ -82,7 +82,7 @@ AEM En este tema se describen las siguientes estrategias para realizar una copia
    Deje el modo de copia de seguridad móvil después de una recuperación.
 
 1. AEM Cierre cualquiera de los nodos secundarios del clúster en lo que respecta a la. (consulte [Iniciar y detener servicios](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. En cualquier nodo, haga una copia de seguridad de la base de datos, GDS y Connectors. (consulte [Archivos para realizar copias de seguridad y recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. En cualquier nodo, haga una copia de seguridad de la base de datos, GDS y Connectors. (vea [Archivos para realizar copias de seguridad y recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. AEM Para realizar una copia de seguridad en línea del repositorio de, realice los siguientes pasos:
 
    1. Para cada nodo de clúster, haga una copia de seguridad del archivo que contiene cluster_node.id.
@@ -120,7 +120,7 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
 
 1. Vuelva a crear el sistema físico a partir de una imagen del sistema.
 1. AEM Aplique parches o actualizaciones a los formularios de la aplicación desde que se creó la imagen. Esta información se registró durante el procedimiento de copia de seguridad. AEM Los formularios se deben recuperar al mismo nivel de parche que cuando se realizó la copia de seguridad del sistema.
-1. (*Opcional* AEM ) Si todos los demás nodos funcionan bien, es posible que el repositorio de la también esté dañado. AEM En este caso, verá un mensaje de desincronización del repositorio en el archivo error.log del repositorio de la.
+1. AEM (*Opcional*) Si todos los demás nodos funcionan bien, es posible que el repositorio de la también esté dañado. AEM En este caso, verá un mensaje de desincronización del repositorio en el archivo error.log del repositorio de la.
 
    Para restaurar el repositorio, realice los siguientes pasos.
 
@@ -176,15 +176,15 @@ Si todo el clúster falla debido a errores como el bloqueo de la base de datos, 
 
 ## Realizar una copia de seguridad y restaurar el nodo de publicación de Administración de correspondencia {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-El nodo del editor no tiene ninguna relación principal-secundaria en un entorno agrupado. Puede realizar una copia de seguridad de cualquier nodo de Publisher de la siguiente manera [Copia de seguridad y restauración](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+El nodo del editor no tiene ninguna relación principal-secundaria en un entorno agrupado. Puede realizar una copia de seguridad de cualquier nodo de Publisher siguiendo [Copia de seguridad y restauración](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Recuperación de un solo nodo de editor {#recover-a-single-publisher-node}
 
 1. Cierre el nodo que debe recuperarse y no realice ninguna actividad de publicación hasta que el nodo vuelva a estar activo.
-1. Restaure el nodo de Publish mediante [Restauración de la copia de seguridad](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure el nodo Publish mediante [Restaurando la copia de seguridad](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Recuperar un clúster {#recover-a-cluster}
 
 1. Cierre el clúster.
-1. Restaure el nodo de Publish mediante [Restauración de la copia de seguridad](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure el nodo Publish mediante [Restaurando la copia de seguridad](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 1. Inicie el nodo principal seguido del nodo secundario del clúster de creación.

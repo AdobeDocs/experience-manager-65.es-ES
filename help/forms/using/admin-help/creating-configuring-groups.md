@@ -22,7 +22,7 @@ La creación de grupos de usuarios permite asignar funciones al grupo en lugar d
 
 Hay dos tipos diferentes de grupos disponibles. Puede crear manualmente un grupo y agregarle usuarios y otros grupos. También puede crear grupos dinámicos que incluyan automáticamente a todos los usuarios que cumplan un conjunto especificado de reglas.
 
-Los usuarios pueden experimentar un tiempo de respuesta más lento si pertenecen a muchos grupos (por ejemplo, 500 o más) o si los grupos están profundamente anidados (por ejemplo, 30 niveles). AEM Si tiene este problema, puede configurar los formularios de la para que recuperen previamente información de ciertos dominios. (Consulte [AEM Configurar formularios para recuperar previamente información de dominio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information).)
+Los usuarios pueden experimentar un tiempo de respuesta más lento si pertenecen a muchos grupos (por ejemplo, 500 o más) o si los grupos están profundamente anidados (por ejemplo, 30 niveles). AEM Si tiene este problema, puede configurar los formularios de la para que recuperen previamente información de ciertos dominios. AEM (Consulte [Configurar formularios de para recuperar previamente información de dominio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)).
 
 ## Crear un grupo manualmente {#create-a-group-manually}
 
@@ -35,7 +35,7 @@ Si utiliza Content Services (obsoleto), puede seleccionar la opción Seleccionar
 
    El nombre canónico es un identificador único para el grupo. Cada grupo y usuario de un dominio debe tener un nombre canónico único. Seleccione la casilla de verificación Generado por el sistema para permitir que la Administración de usuarios asigne un valor único o desmarque la casilla de verificación y especifique un valor personalizado para el Nombre canónico.
 
-   Evite utilizar caracteres de guion bajo (_) en nombres canónicos, por ejemplo, `sample_group`. Al buscar grupos en función de su nombre canónico, no se devuelven los que contienen caracteres de guion bajo.
+   Evite utilizar caracteres de subrayado (_) en nombres canónicos, por ejemplo, `sample_group`. Al buscar grupos en función de su nombre canónico, no se devuelven los que contienen caracteres de guion bajo.
 
 1. Para agregar usuarios y grupos a este nuevo grupo, haga clic en Buscar usuarios/grupos y realice las siguientes tareas:
 
@@ -62,7 +62,7 @@ En un grupo dinámico, no selecciona individualmente los usuarios que pertenecen
 
 Utilice una de estas dos formas de crear grupos dinámicos:
 
-* Habilite la creación automática de grupos dinámicos basados en dominios de correo electrónico, como @adobe.com. AEM Al habilitar esta función, Administración de usuarios crea un grupo dinámico para cada dominio de correo electrónico único de la base de datos de formularios de la. AEM Utilice una expresión CRON para especificar la frecuencia con la que Administración de usuarios busca nuevos dominios de correo electrónico en la base de datos de formularios. Estos grupos dinámicos se agregan al dominio local DefaultDom y se denominan &quot;Todos los usuarios con una *`[email domain]`* ID de correo electrónico&quot;.
+* Habilite la creación automática de grupos dinámicos basados en dominios de correo electrónico, como @adobe.com. AEM Al habilitar esta función, Administración de usuarios crea un grupo dinámico para cada dominio de correo electrónico único de la base de datos de formularios de la. AEM Utilice una expresión CRON para especificar la frecuencia con la que Administración de usuarios busca nuevos dominios de correo electrónico en la base de datos de formularios. Estos grupos dinámicos se agregan al dominio local DefaultDom y se denominan &quot;Todos los usuarios con un ID de correo *`[email domain]`*&quot;.
 * Cree un grupo dinámico en función de criterios especificados, incluidos el dominio de correo electrónico, la descripción, el nombre canónico y el nombre de dominio del usuario. Para pertenecer al grupo dinámico, un usuario debe cumplir todos los criterios especificados. Para configurar una condición &quot;o&quot;, cree dos grupos dinámicos independientes y agréguelos a un grupo local. Por ejemplo, utilice ese método para crear un grupo de usuarios que pertenezcan al dominio de correo electrónico @adobe.com o cuyo nombre canónico contenga ou=adobe.com. Sin embargo, los usuarios no necesariamente tienen que cumplir ambas condiciones.
 
 Un grupo dinámico contiene sólo usuarios. No puede contener otros grupos. Sin embargo, un grupo dinámico puede pertenecer a un grupo principal.
@@ -74,7 +74,7 @@ Un grupo dinámico contiene sólo usuarios. No puede contener otros grupos. Sin 
 1. Especifique cuándo el administrador de usuarios comprueba los nuevos dominios de correo electrónico. Este tiempo debe ser posterior al tiempo de sincronización del dominio porque la creación de grupos dinámicos es lógica sólo si se ha completado la sincronización del dominio.
 
    * Para habilitar la sincronización automática diariamente, escriba la hora en formato de 24 horas en el cuadro Se produce a diario a las. Al guardar la configuración, este valor se convierte en una expresión cron, que se muestra en el cuadro siguiente.
-   * Para programar la sincronización en un día concreto de la semana o del mes, o en un mes concreto, seleccione la expresión cron adecuada en el cuadro. El valor predeterminado es `0 00 4 ? * *`(lo que significa comprobar a las 4 a.m. todos los días).
+   * Para programar la sincronización en un día concreto de la semana o del mes, o en un mes concreto, seleccione la expresión cron adecuada en el cuadro. El valor predeterminado es `0 00 4 ? * *` (lo que significa comprobar a las 4 a. m. todos los días).
 
      El uso de expresiones cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
 

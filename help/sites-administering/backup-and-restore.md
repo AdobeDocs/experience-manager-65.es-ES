@@ -32,7 +32,7 @@ Si necesita realizar una copia de seguridad o recuperar una pequeña cantidad de
 * Puede recuperar los datos de otro sistema mediante un paquete
 * Para restaurar la copia de seguridad en un sistema temporal, cree un paquete de contenido e impleméntelo en el sistema donde falte este contenido.
 
-Para obtener más información, consulte [Copia de seguridad](/help/sites-administering/backup-and-restore.md#package-backup) más abajo.
+Para obtener más información, consulte [Copia de seguridad de paquetes](/help/sites-administering/backup-and-restore.md#package-backup) a continuación.
 
 ## Programación {#timing}
 
@@ -52,7 +52,7 @@ Dado que la copia de seguridad de la instantánea solo tarda unos segundos, el t
 
 ## Online Backup {#online-backup}
 
-AEM Este método de copia de seguridad crea una copia de seguridad de todo el repositorio, incluidas las aplicaciones implementadas debajo de él, como los archivos de copia de seguridad de la base de datos, como los archivos de la base de datos de la base de datos. La copia de seguridad incluye contenido, historial de versiones, configuración, software, revisiones, aplicaciones personalizadas, archivos de registro, índices de búsqueda, etc. Si utiliza clústeres y si la carpeta compartida es un subdirectorio de `crx-quickstart` (físicamente o mediante un vínculo de software), también se realiza una copia de seguridad del directorio compartido.
+AEM Este método de copia de seguridad crea una copia de seguridad de todo el repositorio, incluidas las aplicaciones implementadas debajo de él, como los archivos de copia de seguridad de la base de datos, como los archivos de la base de datos de la base de datos. La copia de seguridad incluye contenido, historial de versiones, configuración, software, revisiones, aplicaciones personalizadas, archivos de registro, índices de búsqueda, etc. Si usa clústeres y la carpeta compartida es un subdirectorio de `crx-quickstart` (ya sea físicamente o mediante un vínculo flexible), también se realizará una copia de seguridad del directorio compartido.
 
 Puede restaurar todo el repositorio (y cualquier aplicación) más adelante.
 
@@ -60,18 +60,18 @@ Este método funciona como una copia de seguridad &quot;activa&quot; o &quot;en 
 
 Al crear una copia de seguridad, tiene las siguientes opciones:
 
-* AEM Copia de seguridad en un directorio mediante el uso de la herramienta de copia de seguridad integrada.
+* AEM Copia de seguridad en un directorio mediante la herramienta de copia de seguridad integrada de la.
 * Copia de seguridad en un directorio mediante una instantánea del sistema de archivos
 
 En cualquier caso, la copia de seguridad crea una imagen (o instantánea) del repositorio. A continuación, el agente de backup de sistemas debe encargarse de transferir esta imagen a un sistema de backup dedicado (unidad de cinta).
 
 >[!NOTE]
 >
->AEM AEM Si se utiliza la función Copia de seguridad en línea de la en una instancia de que tenga una configuración de almacén de blobs personalizada, se recomienda configurar la ruta del almacén de datos para que esté fuera de &quot; `crx-quickstart`&quot; y haga una copia de seguridad del almacén de datos por separado.
+>AEM AEM Si se utiliza la característica Copia de seguridad en línea de la en una instancia que tenga una configuración personalizada de almacén de blobs, se recomienda configurar la ruta del almacén de datos para que esté fuera del directorio `crx-quickstart` y hacer una copia de seguridad del almacén de datos por separado.
 
 >[!CAUTION]
 >
->La copia de seguridad en línea sólo realiza una copia de seguridad del sistema de archivos. Si almacena el contenido del repositorio o los archivos del repositorio en una base de datos, es necesario realizar una copia de seguridad de esa base de datos por separado. AEM Si está utilizando la con MongoDB, consulte la documentación sobre cómo utilizar el [Herramientas de copia de seguridad nativas MongoDB](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
+>La copia de seguridad en línea sólo realiza una copia de seguridad del sistema de archivos. Si almacena el contenido del repositorio o los archivos del repositorio en una base de datos, es necesario realizar una copia de seguridad de esa base de datos por separado. AEM Si está usando las herramientas de copia de seguridad nativas de [MongoDB](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/), consulte la documentación sobre cómo usar las herramientas de copia de seguridad nativas de MongoDB.
 
 ### AEM Copia de seguridad en línea {#aem-online-backup}
 
@@ -79,13 +79,13 @@ Una copia de seguridad en línea del repositorio le permite crear, descargar y e
 
 >[!CAUTION]
 >
->AEM No ejecutar la copia de seguridad en línea de la simultáneamente con [Recopilación de residuos del almacén de datos](/help/sites-administering/data-store-garbage-collection.md) o [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Afectará negativamente al rendimiento del sistema.
+>AEM No ejecute la copia de seguridad en línea de la simultáneamente con [Recopilación de residuos del almacén de datos](/help/sites-administering/data-store-garbage-collection.md) o [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Afectará negativamente al rendimiento del sistema.
 
-Al iniciar una copia de seguridad, puede especificar un **Ruta de destino** y/o un **Demora**.
+Al iniciar una copia de seguridad, puede especificar una **ruta de destino** o un **retraso**.
 
-**Ruta de destino** Los archivos de copia de seguridad generalmente se guardan en la carpeta principal de la carpeta que contiene el archivo jar de inicio rápido (.jar). AEM AEM Por ejemplo, si tiene el archivo jar de ubicado en /InstallationKits/, la copia de seguridad se generará en /InstallationKits. También puede especificar un destino a una ubicación de su elección.
+**Ruta de acceso de destino** Los archivos de copia de seguridad generalmente se guardan en la carpeta principal de la carpeta que contiene el archivo jar de inicio rápido (.jar). AEM AEM Por ejemplo, si tiene el archivo jar de ubicado en /InstallationKits/, la copia de seguridad se generará en /InstallationKits. También puede especificar un destino a una ubicación de su elección.
 
-Si la variable **TargetPath** es un directorio, la imagen del repositorio se crea en este directorio. Si el mismo directorio se utiliza varias veces (o siempre) para almacenar la copia de seguridad,
+Si **TargetPath** es un directorio, la imagen del repositorio se creará en este directorio. Si el mismo directorio se utiliza varias veces (o siempre) para almacenar la copia de seguridad,
 
 * Los archivos modificados en el repositorio se modifican en consecuencia en TargetPath
 * Los archivos eliminados en el repositorio se eliminan en TargetPath
@@ -93,7 +93,7 @@ Si la variable **TargetPath** es un directorio, la imagen del repositorio se cre
 
 >[!NOTE]
 >
->If **TargetPath** se establece en nombre de archivo con la extensión **.zip**, se realiza una copia de seguridad del repositorio en un directorio temporal y, a continuación, el contenido de este directorio temporal se comprime y almacena en el archivo ZIP.
+>Si **TargetPath** se establece en el nombre de archivo con la extensión **.zip**, se realiza una copia de seguridad del repositorio en un directorio temporal y, a continuación, el contenido de este directorio temporal se comprime y se almacena en el archivo ZIP.
 >
 >Este enfoque se desaconseja porque
 >
@@ -104,25 +104,25 @@ Si la variable **TargetPath** es un directorio, la imagen del repositorio se cre
 >
 >Si necesita crear un ZIP como formato de copia de seguridad, debe hacer una copia de seguridad en un directorio y, a continuación, utilizar un programa de compresión para crear el archivo zip.
 
-**Demora** Indica un retraso de tiempo (en milisegundos), de modo que el rendimiento del repositorio no se ve afectado. De forma predeterminada, la copia de seguridad del repositorio se ejecuta a toda velocidad. Puede ralentizar la creación de una copia de seguridad en línea para que no ralentice otras tareas.
+**Retraso** indica un retraso de tiempo (en milisegundos) para que el rendimiento del repositorio no se vea afectado. De forma predeterminada, la copia de seguridad del repositorio se ejecuta a toda velocidad. Puede ralentizar la creación de una copia de seguridad en línea para que no ralentice otras tareas.
 
 Cuando utilice un retraso muy grande, asegúrese de que el backup en línea no tarde más de 24 horas. Si es así, descarte esta copia de seguridad, ya que es posible que no contenga todos los binarios.
 Un retraso de 1 milisegundo suele resultar en un 10% de uso de CPU, y un retraso de 10 milisegundos suele resultar en menos del 3% de uso de CPU. El retraso total en segundos se puede calcular de la siguiente manera: Tamaño del repositorio en MB, multiplicado por el retraso en milisegundos, dividido por 2 (si se utiliza la opción zip) o dividido por 4 (cuando se realiza la copia de seguridad en un directorio). Esto significa que una copia de seguridad en un directorio de un repositorio de 200 MB con un retraso de 1 ms aumenta el tiempo de copia de seguridad en unos 50 segundos.
 
 >[!NOTE]
 >
->Consulte [AEM Funcionamiento de Copia de seguridad en línea](#how-aem-online-backup-works) para obtener detalles internos del proceso.
+>AEM Consulte [Funcionamiento de la copia de seguridad en línea de la](#how-aem-online-backup-works) para obtener detalles internos del proceso.
 
 Para crear una copia de seguridad:
 
 1. AEM Inicie sesión en el servicio de administración de la cuenta de usuario de.
 
-1. Ir a **Herramientas - Operaciones - Backup.**
+1. Vaya a **Herramientas - Operaciones - Copia de seguridad.**
 1. Haga clic en **Crear**. Se abrirá la consola de copia de seguridad.
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
 
-1. En la consola de copia de seguridad, especifique **[Ruta de destino](#aem-online-backup)** y **[Demora](#aem-online-backup)**.
+1. En la consola de copia de seguridad, especifique la **[Ruta de destino](#aem-online-backup)** y **[Demora](#aem-online-backup)**.
 
    ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -133,11 +133,11 @@ Para crear una copia de seguridad:
    >
    >` https://<*hostname*>:<*port-number*>/libs/granite/backup/content/admin.html`
 
-1. Clic **Guardar**, una barra de progreso indicará el progreso de la copia de seguridad.
+1. Haga clic en **Guardar**, una barra de progreso indicará el progreso de la copia de seguridad.
 
    >[!NOTE]
    >
-   >Puede **Cancelar** un backup en ejecución en cualquier momento.
+   >Puedes **Cancelar** una copia de seguridad en ejecución en cualquier momento.
 
 1. Cuando se completa la copia de seguridad, los archivos zip se muestran en la ventana de copia de seguridad.
 
@@ -155,19 +155,19 @@ Para crear una copia de seguridad:
 
 Si es posible, la copia de seguridad en línea debe ejecutarse cuando haya poca carga en el sistema, por ejemplo, por la mañana.
 
-Las copias de seguridad se pueden automatizar mediante el `wget` o `curl` Clientes HTTP. A continuación se muestran ejemplos de cómo automatizar la copia de seguridad mediante curl.
+Las copias de seguridad se pueden automatizar mediante los clientes HTTP `wget` o `curl`. A continuación se muestran ejemplos de cómo automatizar la copia de seguridad mediante curl.
 
 #### Copia de seguridad en el directorio de destino predeterminado {#backing-up-to-the-default-target-directory}
 
 >[!CAUTION]
 >
->En el ejemplo siguiente, varios parámetros de la variable `curl` es posible que haya que configurar el comando para la instancia; por ejemplo, el nombre de host ( `localhost`), puerto ( `4502`), contraseña de administrador ( `xyz`) y nombre de archivo ( `backup.zip`).
+>En el siguiente ejemplo, es posible que se deban configurar varios parámetros en el comando `curl` para la instancia; por ejemplo, el nombre de host ( `localhost`), el puerto ( `4502`), la contraseña de administrador ( `xyz`) y el nombre de archivo ( `backup.zip`).
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=backup.zip
 ```
 
-El archivo/directorio de copia de seguridad se crea en el servidor de la carpeta principal de la carpeta que contiene el `crx-quickstart` carpeta (igual que si estuviera creando la copia de seguridad mediante el explorador). AEM Por ejemplo, si ha instalado en el directorio de, haga lo siguiente: `/InstallationKits/crx-quickstart/`, la copia de seguridad se creará en `/InstallationKits` directorio.
+El archivo o directorio de copia de seguridad se crea en el servidor de la carpeta principal de la carpeta que contiene la carpeta `crx-quickstart` (igual que si estuviera creando la copia de seguridad con el explorador). AEM Por ejemplo, si ha instalado la en el directorio `/InstallationKits/crx-quickstart/`, la copia de seguridad se creará en el directorio `/InstallationKits`.
 
 El comando curl vuelve inmediatamente, por lo que debe supervisar este directorio para ver cuándo el archivo zip está listo. Mientras se crea la copia de seguridad, se puede ver un directorio temporal (con el nombre basado en el del archivo zip final), al final se comprimirá. Por ejemplo:
 
@@ -176,9 +176,9 @@ El comando curl vuelve inmediatamente, por lo que debe supervisar este directori
 
 #### Copia de seguridad en un directorio de destino no predeterminado {#backing-up-to-a-non-default-target-directory}
 
-Normalmente, el archivo/directorio de copia de seguridad se crea en el servidor de la carpeta principal de la carpeta que contiene el `crx-quickstart` carpeta.
+Normalmente, el archivo o directorio de copia de seguridad se crea en el servidor de la carpeta principal de la carpeta que contiene la carpeta `crx-quickstart`.
 
-Si desea guardar la copia de seguridad (de cualquier tipo) en una ubicación diferente, puede establecer una ruta absoluta &quot;a la `target` en el campo `curl` comando.
+Si desea guardar la copia de seguridad (de cualquier tipo) en una ubicación diferente, puede establecer una ruta de acceso absoluta &quot;al parámetro `target` en el comando `curl`.
 
 Por ejemplo, para generar `backupJune.zip` en el directorio `/Backups/2012`:
 
@@ -192,7 +192,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->También se puede activar un backup [AEM mediante los MBeans proporcionados por el usuario de la aplicación](/help/sites-administering/jmx-console.md).
+>AEM También se puede activar una copia de seguridad [mediante los MBeans proporcionados por el método de copia de seguridad ](/help/sites-administering/jmx-console.md) que proporciona el método de copia de seguridad {MBeans}.
 
 ### Copia de seguridad de instantáneas del sistema {#filesystem-snapshot-backup}
 
@@ -215,12 +215,12 @@ La copia de seguridad en línea utiliza el siguiente algoritmo:
 
 1. Al crear un archivo zip, el primer paso es crear o localizar el directorio de destino.
 
-   * Si realiza una copia de seguridad en un archivo zip, se crea un directorio temporal. El nombre del directorio empieza por `backup.` y termina por `.temp`; por ejemplo, `backup.f4d3.temp`.
+   * Si realiza una copia de seguridad en un archivo zip, se crea un directorio temporal. El nombre del directorio comienza con `backup.` y termina con `.temp`; por ejemplo, `backup.f4d3.temp`.
    * Si se realiza una copia de seguridad en un directorio, se utiliza el nombre especificado en la ruta de destino. Se puede utilizar un directorio existente; de lo contrario, se creará un nuevo directorio.
 
-     Un archivo vacío denominado `backupInProgress.txt` se crea en el directorio de destino cuando se inicia la copia de seguridad. Este archivo se elimina cuando finaliza la copia de seguridad.
+     Se crea un archivo vacío denominado `backupInProgress.txt` en el directorio de destino cuando se inicia la copia de seguridad. Este archivo se elimina cuando finaliza la copia de seguridad.
 
-1. Los archivos se copian del directorio de origen al directorio de destino (o al directorio temporal al crear un archivo zip). El almacén de segmentos se copia antes del almacén de datos para evitar daños en el repositorio. Los datos de índice y de caché se omiten al crear la copia de seguridad. Como resultado, los datos de `crx-quickstart/repository/cache` y `crx-quickstart/repository/index` no se incluye en la copia de seguridad. El indicador de barra de progreso del proceso está entre 0% y 70% al crear un archivo zip o entre 0% y 100% si no se crea ningún archivo zip.
+1. Los archivos se copian del directorio de origen al directorio de destino (o al directorio temporal al crear un archivo zip). El almacén de segmentos se copia antes del almacén de datos para evitar daños en el repositorio. Los datos de índice y de caché se omiten al crear la copia de seguridad. Como resultado, los datos de `crx-quickstart/repository/cache` y `crx-quickstart/repository/index` no se incluyen en la copia de seguridad. El indicador de barra de progreso del proceso está entre 0% y 70% al crear un archivo zip o entre 0% y 100% si no se crea ningún archivo zip.
 
 1. Si la copia de seguridad se realiza en un directorio preexistente, se eliminan los archivos &quot;antiguos&quot; del directorio de destino. Los archivos antiguos son archivos que no existen en el directorio de origen.
 
@@ -237,7 +237,7 @@ Los archivos se copian en el directorio de destino en cuatro fases:
 1. Según el objetivo:
 
    * Si se ha especificado un archivo zip, ahora se crea desde el directorio temporal. Indicador de progreso 70% - 100%. A continuación, se elimina el directorio temporal.
-   * Si el destino era un directorio, el archivo vacío llamado `backupInProgress.txt` se elimina para indicar que la copia de seguridad ha finalizado.
+   * Si el destino era un directorio, se elimina el archivo vacío denominado `backupInProgress.txt` para indicar que la copia de seguridad ha finalizado.
 
 ## Restauración de la copia de seguridad {#restoring-the-backup}
 
@@ -250,7 +250,7 @@ Puede restaurar una copia de seguridad de la siguiente manera:
 
 Para realizar una copia de seguridad y restaurar contenido, puede utilizar uno de los Administrador de paquetes, que utiliza el formato Paquete de contenido para realizar una copia de seguridad y restaurar contenido. El Administrador de paquetes proporciona más flexibilidad para definir y administrar paquetes.
 
-Para obtener más información sobre las características y los aspectos clave de cada uno de estos formatos de paquete de contenido individual, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md).
+Para obtener más información sobre las características y las ventajas y desventajas de cada uno de estos formatos de paquete de contenido individual, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md).
 
 ### Ámbito de la copia de seguridad {#scope-of-backup}
 

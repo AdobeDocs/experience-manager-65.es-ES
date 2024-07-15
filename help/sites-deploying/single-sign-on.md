@@ -33,33 +33,33 @@ Configure los dos servicios siguientes para reconocer el nombre del atributo que
 * El módulo de inicio de sesión.
 * El servicio de autenticación SSO.
 
-Especifique el mismo nombre de atributo para ambos servicios. El atributo se incluye en la variable `SimpleCredentials` que se proporciona a `Repository.login`. El valor del atributo es irrelevante e ignorado, su mera presencia es importante y verificada.
+Especifique el mismo nombre de atributo para ambos servicios. El atributo está incluido en `SimpleCredentials` que se proporciona a `Repository.login`. El valor del atributo es irrelevante e ignorado, su mera presencia es importante y verificada.
 
 ## Configuración de SSO {#configuring-sso}
 
-AEM Para configurar el SSO de una instancia de, configure el [Controlador de autenticación SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+AEM Para configurar SSO para una instancia de, configure el [Controlador de autenticación SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+1. AEM Al trabajar con los servicios, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
    Por ejemplo, para el conjunto NTLM:
 
-   * **Ruta:** según sea necesario; por ejemplo, `/`
+   * **Ruta de acceso:** según sea necesario; por ejemplo, `/`
    * **Nombres de encabezado**: `LOGON_USER`
-   * **Formato de ID**: `^<DOMAIN>\\(.+)$`
+   * **Formato de identificador**: `^<DOMAIN>\\(.+)$`
 
-     Donde `<*DOMAIN*>` se reemplaza por el nombre de su propio dominio.
+     Donde `<*DOMAIN*>` se reemplaza con el nombre de su propio dominio.
 
    Para firmar conjuntamente:
 
-   * **Ruta:** según sea necesario; por ejemplo, `/`
-   * **Nombres de encabezado**: usuario_remoto
-   * **Formato de ID:** AsIs
+   * **Ruta de acceso:** según sea necesario; por ejemplo, `/`
+   * **Nombres de encabezado**: remote_user
+   * **Formato De Id.:** Tal Cual
 
    Para SiteMinder:
 
-   * **Ruta:** según sea necesario; por ejemplo, `/`
+   * **Ruta de acceso:** según sea necesario; por ejemplo, `/`
    * **Nombres de encabezado:** SM_USER
-   * **Formato de ID**: tal cual
+   * **Formato de ID**: Tal cual
 
 1. Confirme que el inicio de sesión único funciona según sea necesario, incluida la autorización.
 
@@ -76,39 +76,39 @@ AEM Para configurar el SSO de una instancia de, configure el [Controlador de aut
 
 >[!NOTE]
 >
->El inicio de sesión único se utiliza a menudo con [LDAP](/help/sites-administering/ldap-config.md).
+>El inicio de sesión único se usa a menudo con [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Si también está utilizando la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) con Microsoft® Internet Information Server (IIS), se requiere una configuración adicional en:
+>Si también usa [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) con Microsoft® Internet Information Server (IIS), se requiere configuración adicional en:
 >
 >* `disp_iis.ini`
 >* IIS
 >
->Entrada `disp_iis.ini` set:
->(consulte [instalar Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) para obtener información detallada)
+>En el conjunto `disp_iis.ini`:
+>(consulte [instalación de Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) para obtener información detallada)
 >
 >* `servervariables=1` (reenvía variables del servidor IIS como encabezados de solicitud a la instancia remota)
 >* `replaceauthorization=1` (reemplaza cualquier encabezado denominado &quot;Autorización&quot; que no sea &quot;Básico&quot; por su equivalente &quot;Básico&quot;)
 >
 >En IIS:
 >
->* disable **Acceso anónimo**
+>* deshabilitar **acceso anónimo**
 >
->* habilitar **Autenticación de Windows integrada**
+>* habilitar **autenticación de Windows integrada**
 >
 
-Puede ver qué controlador de autenticación se está aplicando a cualquier sección del árbol de contenido utilizando **Autenticador** de la Consola Felix; por ejemplo:
+Puede ver qué controlador de autenticación se está aplicando a cualquier sección del árbol de contenido mediante la opción **Authenticator** de la Consola Felix; por ejemplo:
 
 `http://localhost:4502/system/console/slingauth`
 
-Primero se consulta el controlador que mejor coincida con la ruta. Por ejemplo, si configura el controlador A para la ruta `/` y el controlador B para la ruta `/content`, luego una solicitud a `/content/mypage.html` consultará primero el controlador-B.
+Primero se consulta el controlador que mejor coincida con la ruta. Por ejemplo, si configura el controlador A para la ruta de acceso `/` y el controlador B para la ruta de acceso `/content`, una solicitud a `/content/mypage.html` consultará primero el controlador B.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Ejemplos {#example}
 
-Para una solicitud de cookie (mediante la dirección URL) `http://localhost:4502/libs/wcm/content/siteadmin.html`):
+Para una solicitud de cookie (mediante la dirección URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 
 ```xml
 GET /libs/cq/core/content/welcome.html HTTP/1.1
@@ -126,7 +126,7 @@ Usar la siguiente configuración:
 
 * **Nombres de parámetros**: `TestParameter`
 
-* **Formato de ID**: `AsIs`
+* **Formato de identificador**: `AsIs`
 
 La respuesta sería:
 
@@ -149,7 +149,7 @@ Transfer-Encoding: chunked
 Esto también funciona si solicita:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-O puede utilizar el siguiente comando curl para enviar la variable `TestHeader` encabezado a `admin:`
+O puede usar el siguiente comando curl para enviar el encabezado `TestHeader` a `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
@@ -158,18 +158,18 @@ O puede utilizar el siguiente comando curl para enviar la variable `TestHeader` 
 
 ## AEM Eliminación de vínculos de cierre de sesión {#removing-aem-sign-out-links}
 
-AEM Al utilizar SSO, el inicio y cierre de sesión se gestionan externamente, por lo que los vínculos de cierre de sesión propios ya no son aplicables y deben eliminarse.
+AEM Al utilizar SSO, el inicio y cierre de sesión se gestionan externamente, por lo que los vínculos de inicio y cierre de sesión propios ya no son aplicables y deben eliminarse.
 
 El vínculo de cierre de sesión en la pantalla de bienvenida se puede eliminar siguiendo estos pasos.
 
-1. Superposición `/libs/cq/core/components/welcome/welcome.jsp` hasta `/apps/cq/core/components/welcome/welcome.jsp`
+1. Superponer `/libs/cq/core/components/welcome/welcome.jsp` a `/apps/cq/core/components/welcome/welcome.jsp`
 1. elimine la siguiente parte del jsp.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 Para eliminar el vínculo de cierre de sesión disponible en el menú personal del usuario en la esquina superior derecha, siga estos pasos:
 
-1. Superposición `/libs/cq/ui/widgets/source/widgets/UserInfo.js` hasta `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. Superponer `/libs/cq/ui/widgets/source/widgets/UserInfo.js` a `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 
 1. Elimine la siguiente parte del archivo:
 

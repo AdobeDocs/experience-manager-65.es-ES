@@ -33,7 +33,7 @@ Para cargar la plantilla, debe ser miembro del grupo de usuarios de formularios.
 
 1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos]**.
 
-1. Seleccionar **[!UICONTROL Crear]** > **[!UICONTROL Carga de archivos]**.
+1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Carga de archivo]**.
 
    Desplácese, seleccione la plantilla de canal de impresión (XDP) adecuada y seleccione **[!UICONTROL Abrir]**.
 
@@ -49,7 +49,7 @@ Para crear una plantilla de canal web, complete los siguientes pasos:
 
 1. Cree una carpeta de plantilla para mantener las plantillas web de comunicación interactiva, si todavía no dispone de una. Para obtener más información, consulte Carpetas de plantilla en [Plantillas de página: editables](/help/sites-developing/page-templates-editable.md).
 
-   1. Seleccionar **[!UICONTROL Herramientas]** ![herramientas](assets/tools.png) > **[!UICONTROL Explorador de configuración]**.
+   1. Seleccione **[!UICONTROL Herramientas]** ![herramientas](assets/tools.png) > **[!UICONTROL Explorador de configuración]**.
       * Consulte la documentación del [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
    1. En la página Explorador de configuración, seleccione **[!UICONTROL Crear]**.
    1. En el cuadro de diálogo Crear configuración, especifique un título para la carpeta, marque **[!UICONTROL Plantillas editables]** y seleccione **[!UICONTROL Crear]**.
@@ -60,12 +60,12 @@ Para crear una plantilla de canal web, complete los siguientes pasos:
 
    1. Vaya a la carpeta de plantillas adecuada al seleccionar **[!UICONTROL Herramientas]** > **[!UICONTROL Plantillas]** > **`[Folder]`**.
    1. Seleccione **[!UICONTROL Crear]**.
-   1. Seleccionar **[!UICONTROL Comunicación interactiva - Canal web]** y seleccione **[!UICONTROL Siguiente]**.
-   1. Introduzca un título y una descripción de plantilla y, a continuación, seleccione **[!UICONTROL Crear]**.
+   1. Seleccione **[!UICONTROL Comunicación interactiva - Canal web]** y seleccione **[!UICONTROL Siguiente]**.
+   1. Escriba un título y una descripción de plantilla y luego seleccione **[!UICONTROL Crear]**.
 
       La plantilla se crea y aparece un cuadro de diálogo.
 
-   1. Seleccionar **[!UICONTROL Abrir]** para abrir la plantilla que ha creado en el Editor de plantillas.
+   1. Seleccione **[!UICONTROL Abrir]** para abrir la plantilla que creó en el Editor de plantillas.
 
       Aparecerá el editor de plantillas.
 
@@ -75,8 +75,8 @@ Para crear una plantilla de canal web, complete los siguientes pasos:
 
 1. Para permitir el uso de esta plantilla para la creación de comunicaciones interactivas, habilite la plantilla.
 
-   1. Seleccionar **[!UICONTROL Herramientas]** ![herramientas](assets/tools.png) > **[!UICONTROL Plantillas]**.
-   1. Vaya a la plantilla adecuada, selecciónela y seleccione **[!UICONTROL Activar]** y en el mensaje de alerta, seleccione **[!UICONTROL Activar]**.
+   1. Seleccione **[!UICONTROL Herramientas]** ![herramientas](assets/tools.png) > **[!UICONTROL Plantillas]**.
+   1. Vaya a la plantilla adecuada, selecciónela y seleccione **[!UICONTROL Habilitar]**. En el mensaje de alerta, seleccione **[!UICONTROL Habilitar]**.
 
       La plantilla está habilitada y su estado se muestra como Habilitada. Ahora puede continuar creando una comunicación interactiva en la que puede utilizar la plantilla de canal web recién creada.
 

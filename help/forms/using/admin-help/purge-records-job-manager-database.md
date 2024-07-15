@@ -20,9 +20,9 @@ ht-degree: 2%
 
 AEM Los datos de proceso que se generan cuando se invoca un proceso de larga duración pueden llegar a ser demasiado grandes, lo que da como resultado un rendimiento de formularios más bajo y el uso de espacio en disco innecesario. Se recomienda depurar los datos de proceso cuando ya no son necesarios los registros.
 
-Puede utilizar la consola de administración para realizar una depuración única de registros obsoletos o para programar depuraciones automáticas regulares. Otros métodos para depurar registros obsoletos se describen en [Depuración de datos de proceso](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
+Puede utilizar la consola de administración para realizar una depuración única de registros obsoletos o para programar depuraciones automáticas regulares. En [Depuración de datos de proceso](/help/forms/using/admin-help/purging-process-data.md#purging-process-data) se describen otros métodos para purgar registros obsoletos.
 
-**Acceso a la página Planificador de Depuración de Trabajos**
+**Acceder a la página Planificador de purga de trabajos**
 
 1. En la consola de administración, haga clic en Monitor de estado en la esquina superior derecha de la página.
 1. Haga clic en la pestaña Programador de Depuración de Trabajos.
@@ -50,7 +50,7 @@ La información sobre cualquier depuración programada actualmente se muestra en
 
 1. Haga clic en Iniciar planificador. Cualquier configuración del programador programada anteriormente se reemplaza por la nueva configuración.
 
-**Configuración de una planificación de depuración automática**
+**Configurar una programación de depuración automática**
 
 1. Seleccione Recurrir cada y especifique el número de días o semanas entre depuraciones.
 1. En el área Filtro Purgar registros completados, especifique el número de días o semanas después de los cuales un registro se considera obsoleto y está listo para la depuración. No puede establecer el valor en `0`.

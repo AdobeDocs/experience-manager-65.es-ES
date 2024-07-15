@@ -67,7 +67,7 @@ En la pestaña Contenido, administre el contenido de la comunicación interactiv
 
    Si pulsa Resaltar los módulos seleccionados en el contenido ( ![ccr_resaltar_módulos_seleccionados_en_contenido](assets/highlightselectedmodulesincontentccr.png)) en la parte superior izquierda de la vista previa de las pestañas Contenido o Datos, puede deshabilitar o habilitar la funcionalidad para ir al fragmento de documento pulsando o seleccionando el texto, el párrafo o el campo de datos relevantes en la vista previa.
 
-   Los fragmentos que el agente puede editar al crear la comunicación interactiva incluyen Editar contenido seleccionado ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)) icono. Seleccione el icono Editar contenido seleccionado para iniciar el fragmento en modo de edición y realizar cambios en él. Utilice las siguientes opciones para dar formato y administrar el texto:
+   Los fragmentos que el agente puede editar al crear la comunicación interactiva incluyen el icono Editar contenido seleccionado ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Seleccione el icono Editar contenido seleccionado para iniciar el fragmento en modo de edición y realizar cambios en él. Utilice las siguientes opciones para dar formato y administrar el texto:
 
    * [Opciones de formato](#formattingtext)
 
@@ -95,7 +95,7 @@ En la pestaña Contenido, administre el contenido de la comunicación interactiv
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Seleccione el acceso a la biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acceder a la Biblioteca de contenido e insertar recursos DAM como archivos adjuntos.
+1. Seleccione el icono Acceder a la biblioteca (![libraryaccess](assets/libraryaccess.png)) para acceder a la biblioteca de contenido e insertar recursos DAM como archivos adjuntos.
 
    >[!NOTE]
    >
@@ -104,7 +104,7 @@ En la pestaña Contenido, administre el contenido de la comunicación interactiv
 1. Si el orden de los archivos adjuntos no estaba bloqueado al crear la comunicación interactiva, puede reordenarlos seleccionando un archivo y pulsando las flechas abajo y arriba.
 1. Utilice las opciones Vista previa en la web y Vista previa de impresión para ver si las dos salidas se ajustan a sus necesidades.
 
-   Si las vistas previas son satisfactorias, seleccione **[!UICONTROL Enviar]** para enviar la comunicación interactiva a un proceso de publicación. Si desea realizar cambios, salga de la vista previa para llevarlos a cabo.
+   Si encuentra que las vistas previas son satisfactorias, seleccione **[!UICONTROL Enviar]** para enviar la comunicación interactiva a un proceso de publicación. Si desea realizar cambios, salga de la vista previa para llevarlos a cabo.
 
 ## Aplicar formato al texto {#formattingtext}
 
@@ -185,22 +185,22 @@ La función Guardar como borrador no está activada de forma predeterminada. Sig
    La SPI permite guardar la versión de borrador de la comunicación interactiva en la base de datos con un ID de borrador como identificador único. Estas instrucciones dar por sentado que tiene conocimientos previos sobre cómo construir un paquete OSGi usando un proyecto Maven.
 
    Para ver la implementación de la SPI de ejemplo, consulte [Ejemplo de implementación de la SPI de ccrDocumentInstance](#sample-ccrDocumentInstance-spi).
-1. Abrir `http://<hostname>:<port>/ system/console/bundles` y seleccione **[!UICONTROL Instalar/actualizar]** para cargar el paquete OSGi. Compruebe que el estado del paquete cargado se muestra como **Activo**. Reinicie el servidor si el estado del paquete no se muestra como **Activo**.
+1. Abra `http://<hostname>:<port>/ system/console/bundles` y seleccione **[!UICONTROL Instalar/actualizar]** para cargar el paquete OSGi. Compruebe que el estado del paquete cargado se muestra como **Activo**. Reinicie el servidor si el estado del paquete no se muestra como **Activo**.
 1. Vaya a `https://'[server]:[port]'/system/console/configMgr`.
-1. Seleccionar **[!UICONTROL Configuración de Crear correspondencia]**.
-1. Seleccionar **[!UICONTROL Habilitar Guardar usando CCRDocumentInstanceService]** y seleccione **[!UICONTROL Guardar]**.
+1. Seleccione **[!UICONTROL Crear configuración de correspondencia]**.
+1. Seleccione **[!UICONTROL Habilitar Guardar usando CCRDocumentInstanceService]** y seleccione **[!UICONTROL Guardar]**.
 
 ### Guardar una comunicación interactiva como borrador {#save-as-draft-agent-ui}
 
 Realice los siguientes pasos para guardar una comunicación interactiva como borrador:
 
-1. Seleccione una comunicación interactiva en Forms Manager y haga clic en **[!UICONTROL Abrir la interfaz de usuario del agente]**.
+1. Seleccione una comunicación interactiva en Forms Manager y seleccione **[!UICONTROL Abrir la interfaz de usuario del agente]**.
 
 1. Realice los cambios correspondientes en la interfaz de usuario del agente y seleccione **[!UICONTROL Guardar como borrador]**.
 
-1. Especifique el nombre del borrador en la **[!UICONTROL Nombre]** y seleccione **[!UICONTROL Listo]**.
+1. Especifique el nombre del borrador en el campo **[!UICONTROL Nombre]** y seleccione **[!UICONTROL Listo]**.
 
-Una vez guardada la comunicación interactiva como borrador, seleccione **[!UICONTROL Guardar cambios]** para guardar cualquier cambio adicional realizado en el borrador.
+Una vez guardada la comunicación interactiva como borrador, seleccione **[!UICONTROL Guardar cambios]** para guardar cualquier cambio adicional que haya realizado en el borrador.
 
 ### Recuperar el borrador de una comunicación interactiva {#retrieve-draft}
 

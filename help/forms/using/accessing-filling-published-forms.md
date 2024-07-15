@@ -24,11 +24,11 @@ Esto suele provocar problemas con la administración de los retrasos de configur
 
 El portal de formularios reduce los gastos generales de administración y los retrasos en la producción. Proporciona a los desarrolladores web componentes para crear y personalizar un portal de Forms en sitios web creados con Adobe Experience Manager AEM ().
 
-Para obtener más información sobre el portal de Forms y sus funciones, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
+Para obtener más información acerca del portal de Forms y sus características, vea [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
 
 ## Introducción al portal de Forms {#getting-started-with-forms-portal}
 
-Navegue hasta la página publicada del portal de Forms. Para obtener más información sobre la creación de una página de portal de Forms, consulte [Creación de una página de portal de Forms](../../forms/using/creating-form-portal-page.md).
+Navegue hasta la página publicada del portal de Forms. Para obtener más información sobre cómo crear una página de portal de Forms, consulte [Crear una página de portal de Forms](../../forms/using/creating-form-portal-page.md).
 
 El componente Buscar y listar del portal de Forms muestra los formularios disponibles en la instancia de Publish AEM del servidor de. Esta lista incluye todos los formularios o los formularios definidos en el filtro en el momento de crear la página del portal de Forms. Una página del portal de Forms tiene un aspecto similar al que se muestra en la siguiente imagen:
 
@@ -75,7 +75,7 @@ Cada formulario contiene información de ayuda que permite al usuario rellenarlo
 
 #### Borradores y envíos {#drafts-and-submission}
 
-Si lo desea, el usuario puede guardar el borrador de un formulario haciendo clic en **Guardar**. Esto permite al usuario trabajar en un formulario durante un periodo de tiempo antes de enviarlo.
+Un usuario puede, opcionalmente, guardar un borrador de un formulario al hacer clic en **Guardar**. Esto permite al usuario trabajar en un formulario durante un periodo de tiempo antes de enviarlo.
 
 Los datos rellenados en el formulario (incluidos los archivos adjuntos) se guardarán como borrador en el servidor. El borrador de un formulario se puede guardar cualquier número de veces. El formulario guardado aparecerá en la pestaña Borradores del componente Borradores y envíos de la página.
 
@@ -93,7 +93,7 @@ Componente Borradores y envíos
 
 Algunos formularios que debe rellenar y enviar con frecuencia. Por ejemplo, el formulario para presentar una declaración de impuestos individual se envía cada año. En estos casos, mientras que parte de la información cambia cada vez que se rellena el formulario, la mayoría de ella, como los detalles personales y familiares, no cambia. Sin embargo, debe rellenar todo el formulario de nuevo, desde cero.
 
-AEM Forms puede ayudar a optimizar la experiencia de cumplimentación de formularios y reducir significativamente el tiempo para rellenar y enviar un formulario de nuevo. Los usuarios finales pueden iniciar un nuevo formulario con los datos de un formulario enviado. Esta funcionalidad está integrada en el [Componente Borradores y envíos](../../forms/using/draft-submission-component.md). Cuando agregue el componente Borradores y envíos a la página del portal de Forms y lo publique, los usuarios finales verán una opción en las pestañas Enviado Forms y Borrador de Forms. La opción permite iniciar un nuevo formulario con los datos de un formulario enviado. La siguiente imagen resalta esa opción.
+AEM Forms puede ayudar a optimizar la experiencia de cumplimentación de formularios y reducir significativamente el tiempo para rellenar y enviar un formulario de nuevo. Los usuarios finales pueden iniciar un nuevo formulario con los datos de un formulario enviado. Esta funcionalidad está integrada en [Borradores y envíos](../../forms/using/draft-submission-component.md). Cuando agregue el componente Borradores y envíos a la página del portal de Forms y lo publique, los usuarios finales verán una opción en las pestañas Enviado Forms y Borrador de Forms. La opción permite iniciar un nuevo formulario con los datos de un formulario enviado. La siguiente imagen resalta esa opción.
 
 ![start-a-new-form](assets/start-a-new-form.png)
 

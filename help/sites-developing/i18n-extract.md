@@ -21,7 +21,7 @@ ht-degree: 1%
 Utilice xgettext-maven-plugin para extraer cadenas del código fuente que necesiten traducción. El complemento Maven extrae cadenas a un archivo XLIFF que envía para su traducción. Las cadenas se extraen de las siguientes ubicaciones:
 
 * Archivos de origen Java
-* Archivos de origen JavaScript
+* Archivos de origen de JavaScript
 * Representaciones XML de recursos SVN (nodos JCR)
 
 ## Configurar la extracción de cadenas {#configuring-string-extraction}
@@ -135,9 +135,9 @@ mvn xgettext:extract
 ### Archivos de salida {#output-files}
 
 * `raw.xliff`: cadenas extraídas
-* `warn.log`: advertencias (si las hay), si `CQ.I18n.getMessage()` La API de se utiliza incorrectamente. Estos siempre necesitan una corrección y luego una nueva ejecución.
+* `warn.log`: advertencias (si las hay), si la API `CQ.I18n.getMessage()` se utiliza incorrectamente. Estos siempre necesitan una corrección y luego una nueva ejecución.
 
 * `parserwarn.log`: advertencias del analizador (si las hay), por ejemplo, problemas con el analizador de js
-* `potentials.xliff`: candidatos &quot;potenciales&quot; que no se extraen, pero que pueden ser cadenas legibles por humanos que necesiten traducción (se pueden ignorar, y siguen produciendo una gran cantidad de falsos positivos)
+* `potentials.xliff`: candidatos &quot;potenciales&quot; que no se extraen, pero que podrían ser cadenas legibles por humanos que necesitan traducción (se pueden ignorar, pero que aún producen una gran cantidad de falsos positivos)
 * `strings.xliff`: archivo xliff aplanado, que se importará en ALF
 * `backrefs.txt`: permite la búsqueda rápida de ubicaciones de código fuente para una cadena determinada

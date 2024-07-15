@@ -48,7 +48,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 ### Novedades {#what-is-new-july}
 
 * AEM AEM Asociación de páginas de productos a productos y categorías a través de las propiedades de página de la página de productos más información general en la cabina de productos
-  ![asociación de página de cabina de productos](/help/assets/CIF/product_cockpit_page_association.png)
+  ![asociación de páginas de la cabina de productos](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Fecha de versión: junio de 2022
 

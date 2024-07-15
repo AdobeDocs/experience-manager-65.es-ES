@@ -23,11 +23,11 @@ Puede crear fácilmente vídeos interactivos (también conocidos como vídeos de
 
 Cuando termina el vídeo, se muestra un resumen visual de todas las ofertas para impulsar una llamada a la acción. Los clientes tienen otra oportunidad de seleccionar el artículo que desean. Las experiencias procesables y específicas como estas aumentan la participación y las conversiones de los clientes.
 
-Consulte también [Imágenes interactivas](/help/assets/interactive-images.md).
+Vea también [imágenes interactivas](/help/assets/interactive-images.md).
 
 ## Vídeo interactivo en acción {#interactive-video-in-action}
 
-Para ver un vídeo interactivo y de ventas en acción, seleccione [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), desplácese hasta el **[!UICONTROL Medios de ventas]** encabezado en la página y, a continuación, seleccione el vídeo de ventas.
+Para ver un vídeo interactivo y de ventas en acción, seleccione [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), desplácese hasta el encabezado de **[!UICONTROL Medios de ventas]** de la página y, a continuación, seleccione el vídeo de ventas.
 
 * Durante la reproducción, a medida que los productos se utilizan en el vídeo, el producto idéntico aparece a la derecha como una imagen en miniatura.
 
@@ -35,15 +35,15 @@ Para ver un vídeo interactivo y de ventas en acción, seleccione [Demostracione
 
 <!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
-![Un fotograma de un vídeo interactivo de ventas](assets/chlimage_1-126.png) *Captura de un fotograma de vídeo interactivo de ventas.*
+![Fotograma de un vídeo interactivo de ventas](assets/chlimage_1-126.png) *Captura de fotograma de vídeo de un vídeo interactivo de ventas.*
 
 >[!NOTE]
 >
->Si crea un vídeo interactivo para iniciar una página web cuando un usuario selecciona una imagen en miniatura, algunos dispositivos bloquean la apertura de la página web emergente. En estos casos, debe cambiar la configuración del bloqueador de ventanas emergentes en el dispositivo. Por ejemplo, en un iPhone 6 de Apple, navegue hasta **[!UICONTROL Configuración]** > **Safari** > **Bloquear elementos emergentes**, luego deslice el control a **[!UICONTROL Desactivado]**. Ahora, cuando se reproduce un vídeo interactivo y se selecciona una miniatura, se le preguntará si desea abrir la ventana emergente. Si acepta, se abrirá la página web.
+>Si crea un vídeo interactivo para iniciar una página web cuando un usuario selecciona una imagen en miniatura, algunos dispositivos bloquean la apertura de la página web emergente. En estos casos, debe cambiar la configuración del bloqueador de ventanas emergentes en el dispositivo. Por ejemplo, en un Apple iPhone 6, ve a **[!UICONTROL Configuración]** > **Safari** > **Bloquear elementos emergentes** y, a continuación, desliza el control a **[!UICONTROL Desactivado]**. Ahora, cuando se reproduce un vídeo interactivo y se selecciona una miniatura, se le preguntará si desea abrir la ventana emergente. Si acepta, se abrirá la página web.
 
 ### Vea cómo se crean los vídeos interactivos {#watch-how-interactive-videos-are-created}
 
-Reproducir un tutorial en [cómo se crean los vídeos interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 minutos y 30 segundos).
+Reproducir un tutorial sobre [cómo se crean los vídeos interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 minutos y 30 segundos).
 Aunque el tutorial de vídeo está marcado con Assets on Demand, los principios y pasos siguen aplicándose a Vídeo interactivo en Adobe Experience Manager Assets.
 
 ### Seminario web sobre soluciones para clientes de Adobe {#adobe-customer-success-webinar}
@@ -52,13 +52,13 @@ El seminario web Uso compartido de vínculos, vídeo interactivo y YouTube en Ex
 
 >[!NOTE]
 >
->[Uso de vídeo interactivo, uso compartido de vínculos y uso compartido de YouTube en Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>[Uso compartido de vínculos, vídeo interactivo y YouTube en Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Inicio rápido: vídeos interactivos {#quick-start-interactive-videos}
 
 La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para ayudarle a ponerse en marcha rápidamente con los vídeos interactivos de Dynamic Media.
 
-Busque la variable **Ejemplo** dentro de algunas de las tareas de Inicio rápido. Contiene un breve tutorial basado en esta página web de demostración inicial que *no tiene* aún no se le ha agregado interactividad:
+Busque el encabezado **Ejemplo** dentro de algunas de las tareas de inicio rápido. Contiene un breve tutorial basado en esta página web de demostración inicial que *aún no* tiene interactividad agregada:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
@@ -70,31 +70,31 @@ Cuando termine el tutorial en la última sección Ejemplo, la página web de dem
 
 Pasos del vídeo interactivo:
 
-1. **(Opcional) Identificar variables de Quickview** : Comience identificando las variables dinámicas utilizadas por la implementación de Quickview existente. Las variables se utilizan para asignar miniaturas de producto a la vista rápida de producto correspondiente al crear el vídeo interactivo. Consulte [(Opcional) Identificar variables de Quickview](#optional-identifying-quickview-variables).
+1. **(Opcional) Identifique las variables de Quickview** - Comience identificando las variables dinámicas utilizadas por la implementación de Quickview existente. Las variables se utilizan para asignar miniaturas de producto a la vista rápida de producto correspondiente al crear el vídeo interactivo. Consulte [(Opcional) Identificar variables de Quickview](#optional-identifying-quickview-variables).
    *Este paso solo es necesario si se cumplen todas las condiciones siguientes*:
    * Desea añadir interactividad al vídeo activando en Vista rápida.
-   * La implementación de Experience Manager hace lo siguiente *no* utilice un marco de integración de comercio electrónico para extraer datos de productos en Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, Hybris o Intershop. Consulte [Conceptos de comercio electrónico en Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+   * Su implementación de Experience Manager *no* utiliza un módulo de integración de comercio electrónico para extraer datos de productos en Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, Hybris o Intershop. Ver [conceptos de comercio electrónico en Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
-1. **(Opcional) Cree un ajuste preestablecido de visualizador de vídeo interactivo** - Personalice el aspecto y el comportamiento de varios componentes que conforman el reproductor, como el depurador de vídeo y las miniaturas interactivas.
-No es necesario crear sus propios ajustes preestablecidos de visualizador de vídeo interactivo si desea utilizar los ajustes preestablecidos de visualizador de vídeo interactivo integrados `Shoppable_Video_Light` o `Shoppable_Video_Dark` en su lugar.
-Consulte [Crear un ajuste preestablecido de visor](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (opcional) y [Consideraciones especiales para crear un ajuste preestablecido de visualizador interactivo](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
+1. **(opcional) crear un ajuste preestablecido de visualizador de vídeo interactivo**: personalice el aspecto y el comportamiento de varios componentes que conforman el reproductor, como la selección manual de vídeo y las miniaturas interactivas.
+No es necesario crear su propio ajuste preestablecido de visualizador de vídeo interactivo si desea utilizar en su lugar los ajustes preestablecidos de visualizador de vídeo interactivo `Shoppable_Video_Light` o `Shoppable_Video_Dark` predeterminados.
+Consulte [Crear un ajuste preestablecido de visor](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (opcional) y [Consideraciones especiales para crear un ajuste preestablecido de visor interactivo](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
 
-1. **Cargar un vídeo y sus recursos de imagen asociados** : cargue un vídeo y las imágenes asociadas que desee hacer interactivas.
-Consulte [Cargar un vídeo y sus recursos de miniaturas asociados](#uploading-a-video-and-its-associated-thumbnail-assets).
+1. **Cargar un vídeo y sus recursos de imagen asociados**: cargue un vídeo y las imágenes asociadas que desee hacer interactivas.
+Ver [Cargar un vídeo y sus recursos de miniaturas asociados](#uploading-a-video-and-its-associated-thumbnail-assets).
 
    >[!NOTE]
    >
    >El formato de vídeo MXF aún no se admite para su uso con vídeos interactivos en Dynamic Media.
 
-1. **Añada interactividad al vídeo** : Añada uno o más segmentos de tiempo al vídeo. A continuación, asocie miniaturas de imágenes dentro de esos segmentos de tiempo. Asigne cada miniatura de imagen a una acción, como un hipervínculo, una vista rápida o un fragmento de experiencia.
+1. **Agregar interactividad al vídeo** - Agregue uno o más segmentos de tiempo al vídeo. A continuación, asocie miniaturas de imágenes dentro de esos segmentos de tiempo. Asigne cada miniatura de imagen a una acción, como un hipervínculo, una vista rápida o un fragmento de experiencia.
 (El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites).
-Para terminar, publique los recursos de vídeo interactivo. La publicación crea el código incrustado o la dirección URL que finalmente copia y aplica a la página de aterrizaje del sitio web. Consulte [Añada interactividad al vídeo](#adding-interactivity-to-your-video).
-Consulte [Publicar recursos](/help/assets/publishing-dynamicmedia-assets.md).
+Para terminar, publique los recursos de vídeo interactivo. La publicación crea el código incrustado o la dirección URL que finalmente copia y aplica a la página de aterrizaje del sitio web. Ver [Agregar interactividad al vídeo](#adding-interactivity-to-your-video).
+Consulte [Publish Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. **Añada un vídeo interactivo al sitio web o a su sitio web en Experience Manager** : Si utiliza Experience Manager Sites, eCommerce o ambos, puede añadir el vídeo interactivo a una página web. Arrastre el componente Medios interactivos a la página en Experience Manager. Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
-Utilice el código incrustado o la URL para integrar el vídeo interactivo con las experiencias del sitio web. Consulte [Integración de un vídeo interactivo con el sitio web](#integrating-an-interactive-video-with-your-website).
-Si utiliza un WCM (Administrador de contenido web) de terceros, debe integrar el nuevo vídeo interactivo con la implementación de vista rápida existente que se utiliza en el sitio web. Consulte [Integración de un vídeo interactivo con una vista rápida existente](#integrating-an-interactive-video-with-an-existing-quickview).
-   [Añadir recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md)
+1. **Agregue un vídeo interactivo al sitio web o al sitio web en Experience Manager**. Si usa Experience Manager Sites, comercio electrónico o ambos, puede agregar el vídeo interactivo a una página web. Arrastre el componente Medios interactivos a la página en Experience Manager. Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Utilice el código incrustado o la URL para integrar el vídeo interactivo con las experiencias del sitio web. Ver [Integrar un vídeo interactivo con el sitio web](#integrating-an-interactive-video-with-your-website).
+Si utiliza un WCM (Administrador de contenido web) de terceros, debe integrar el nuevo vídeo interactivo con la implementación de vista rápida existente que se utiliza en el sitio web. Ver [Integrar un vídeo interactivo con una vista rápida existente](#integrating-an-interactive-video-with-an-existing-quickview).
+   [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 ## (Opcional) Identificar variables de Quickview {#optional-identifying-quickview-variables}
 
@@ -103,7 +103,7 @@ Si utiliza un WCM (Administrador de contenido web) de terceros, debe integrar el
 >Esta tarea solo es necesaria si se cumplen los siguientes criterios:
 >
 >* Desea añadir interactividad al vídeo activando en Vista rápida.
->* La implementación de Experience Manager hace lo siguiente *no* utilice un marco de integración de comercio electrónico para extraer datos de productos en Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, Hybris o Intershop. Consulte [Conceptos de comercio electrónico en Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+>* Su implementación de Experience Manager *no* utiliza un módulo de integración de comercio electrónico para extraer datos de productos en Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, Hybris o Intershop. Ver [conceptos de comercio electrónico en Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 >
 >Si la implementación de Experience Manager utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente.
 
@@ -126,15 +126,15 @@ Por lo tanto, el método consiste en visitar diferentes áreas del sitio web exi
 
 Normalmente no es necesario utilizar herramientas de depuración especializadas. Los navegadores web modernos cuentan con inspectores web que hacen un trabajo adecuado. A continuación se muestran algunos ejemplos de exploradores web que incluyen inspectores web:
 
-* Para ver todas las solicitudes HTTP salientes en Google Chrome, pulse **F12** (Windows) o **Comando + Opciones + I** (Mac) para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la **Red** pestaña.
+* Para ver todas las solicitudes HTTP salientes en Google Chrome, presione **F12** (Windows) o **Comando+Opciones+I** (Mac) para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la ficha **Red**.
 
-* En Firefox, puede activar el complemento Firebug pulsando **F12** (Windows) o **Comando + Opción + I** (Mac) y utilice su **`[Net]`** o puede utilizar la herramienta Inspector integrada y su ficha Red.
+* En Firefox, puede activar el complemento Firebug pulsando **F12** (Windows) o **Comando+Opción+I** (Mac) y usar su pestaña **`[Net]`**, o bien puede usar la herramienta Inspector integrada y su pestaña Red.
 
-* En Internet Explorer, active la herramienta de depuración pulsando **F12**.
+* En Internet Explorer, active la herramienta de depuración presionando **F12**.
 
 Cuando la monitorización de red está activada en el navegador, almacene en déclencheur la vista rápida en la página.
 
-Ahora busque la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para un análisis futuro. Normalmente, cuando almacena en déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras en la lista. Tiene una parte de cadena de consulta o una ruta compleja y su tipo MIME de respuesta es `text/html`, `text/xml`, o `text/javascript`.
+Ahora busque la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para un análisis futuro. Normalmente, cuando almacena en déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras en la lista. Tiene una parte de cadena de consulta o una ruta de acceso compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
 
 Durante este proceso, es importante visitar diferentes áreas del sitio web, con diferentes categorías y tipos de productos. El motivo es que las direcciones URL de Quickview pueden tener partes que son comunes para una categoría de sitio web determinada, pero que solo cambian si visita una zona diferente del sitio web.
 
@@ -154,7 +154,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>La única parte de la variable en la URL es el valor de <code>productId=</code> parámetro de cadena de consulta y es claramente un valor SKU. Por lo tanto, las miniaturas solo necesitan campos SKU con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
+    </ul> <p>La única parte de la variable en la dirección URL es el valor del parámetro de cadena de consulta <code>productId=</code> y es claramente un valor SKU. Por lo tanto, las miniaturas solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU único, encontrado en la ruta URL.</p> </td>
@@ -163,7 +163,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>La parte variable está en la última parte de la ruta y se convierte en el valor SKU de las miniaturas del Experience Manager: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+    </ul> <p>La parte de la variable se encuentra en la última parte de la ruta y se convierte en el valor SKU de las miniaturas del Experience Manager: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU e ID de categoría en la cadena de consulta.</p> </td>
@@ -172,7 +172,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>En este caso, la dirección URL consta de dos partes diferentes. El SKU se almacena en <code>prodId</code> y el ID de categoría se almacena en la variable <code>category=</code> parámetro.</p> <p>Como tal, las definiciones de miniaturas son pares. Es decir, un valor SKU y una variable adicional llamada <code>categoryId</code>. Los pares resultantes son los siguientes:</p>
+    </ul> <p>En este caso, la dirección URL consta de dos partes diferentes. El SKU se almacena en el parámetro <code>prodId</code> y el ID de categoría en el parámetro <code>category=</code>.</p> <p>Como tal, las definiciones de miniaturas son pares. Es decir, un valor SKU y una variable adicional llamada <code>categoryId</code>. Los pares resultantes son los siguientes:</p>
     <ul>
       <li>El SKU es <code>305466</code> y <code>categoryId</code> es <code>1100004</code></li>
       <li>El SKU es <code>310181</code> y <code>categoryId</code> es <code>1100004</code></li>
@@ -220,7 +220,7 @@ Dada esta información, toda la URL de vista rápida tiene el siguiente patrón:
 
 `/datafeed/$categoryId$-$SKU$.json`
 
-En función de este análisis, puede concluir que puede utilizar las dos variables siguientes para las miniaturas: `categoryId` y `SKU`.
+Basándose en este análisis, puede concluir que puede utilizar las dos variables siguientes para las miniaturas: `categoryId` y `SKU`.
 
 Ya está listo para cargar un vídeo y sus recursos de miniaturas asociados.
 
@@ -236,19 +236,19 @@ Si lo desea, puede crear su propio ajuste preestablecido de visualizador de víd
 
 Un ajuste preestablecido de visualizador de vídeo interactivo procesa correctamente el vídeo y todos los segmentos de cronología que ha agregado. También utiliza una vista rápida predeterminada de ejemplo al seleccionar una miniatura de producto en el modo de vista previa, para poder probar su interactividad antes de publicar.
 
-Después de guardar el ajuste preestablecido de visualizador, su estado se establece automáticamente como **Activado** en la página Ajustes preestablecidos de visor. Este estado significa que está visible en el componente Dynamic Media y siempre que se obtiene una vista previa de un vídeo con él. Asegúrese de publicar también manualmente el nuevo ajuste preestablecido de visualizador.
+Después de guardar el ajuste preestablecido de visor, su estado se establece automáticamente en **Activado** en la página Ajustes preestablecidos de visor. Este estado significa que está visible en el componente Dynamic Media y siempre que se obtiene una vista previa de un vídeo con él. Asegúrese de publicar también manualmente el nuevo ajuste preestablecido de visualizador.
 
-Consulte [Crear un nuevo ajuste preestablecido de visor](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) para crear su propio ajuste preestablecido de visualizador de vídeo interactivo.
+Consulte [Crear un nuevo ajuste preestablecido de visualizador](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) para crear su propio ajuste preestablecido de visualizador de vídeo interactivo.
 
 ## Cargar un vídeo y sus recursos de miniaturas asociados {#uploading-a-video-and-its-associated-thumbnail-assets}
 
-Si ya ha cargado el vídeo y los recursos de miniaturas, continúe en [Añada interactividad al vídeo](#adding-interactivity-to-your-video).
+Si ya has cargado tus recursos de vídeo y miniaturas, continúa con [Agregar interactividad al vídeo](#adding-interactivity-to-your-video).
 
 >[!NOTE]
 >
 >El formato de vídeo MXF aún no se admite para su uso con vídeos interactivos en Dynamic Media.
 
-Si ha cargado vídeos o imágenes incorrectos, o si desea eliminar vídeos o imágenes cargados que ya no necesita, consulte [Eliminar recursos](/help/assets/manage-assets.md#deleting-assets).
+Si has subido vídeos o imágenes incorrectos, o si deseas eliminar vídeos o imágenes cargados que ya no necesites, consulta [Eliminar recursos](/help/assets/manage-assets.md#deleting-assets).
 
 Para cargar un vídeo y sus recursos de miniaturas asociados:
 
@@ -265,7 +265,7 @@ Los segmentos de cronología se añaden a un vídeo mediante el editor visual lo
 
 Después de agregar segmentos de cronología, agregue imágenes en miniatura dentro de cada segmento. Por cada miniatura que agregue, le aplicará una acción. Por ejemplo, puede aplicar una vista rápida a la miniatura o puede asignarle un hipervínculo o un Fragmento de experiencia.
 
-Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
+Ver [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
@@ -279,28 +279,28 @@ Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la pág
 
 Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista previa. Desde allí, puede seleccionar un ajuste preestablecido de visualizador de vídeo interactivo y reproducir el vídeo para ver una representación aproximada de cómo aparece a los clientes.
 
-**Para añadir interactividad al vídeo:**
+**Para agregar interactividad al vídeo:**
 
-1. En la vista Recursos, vaya al vídeo que ha cargado y que desea hacer interactivo.
+1. En la vista de Assets, vaya al vídeo que ha cargado y que desea hacer interactivo.
 1. Realice una de las siguientes acciones:
 
-   * Pase el ratón sobre la imagen y seleccione **[!UICONTROL Seleccionar]** (icono de marca de verificación). En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
+   * Pase el ratón sobre la imagen y, a continuación, seleccione **[!UICONTROL Seleccionar]** (icono de marca de verificación). En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 
-   * Pase el ratón sobre la imagen y seleccione **[!UICONTROL Más acciones]** (icono de tres puntos) **[!UICONTROL > Editar]**.
+   * Pase el ratón sobre la imagen y luego seleccione **[!UICONTROL Más acciones]** (icono de tres puntos) **[!UICONTROL > Editar]**.
 
    * Seleccione la imagen para poder abrirla en la página Vista de detalles. En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 
 1. En la página Crear vídeo interactivo, realice una de las siguientes acciones:
 
-   * Para empezar a reproducir el vídeo, seleccione la **[!UICONTROL Reproducir]** botón. Cuando un producto, servicio o detalle en particular que desee resaltar sea visible, seleccione **[!UICONTROL Añadir segmento]** en la barra de herramientas. Repita el proceso hasta que haya llegado al final del vídeo.
+   * Para empezar a reproducir el vídeo, selecciona el botón **[!UICONTROL Reproducir]**. Cuando un producto, servicio o detalle en particular que desee resaltar aparezca en la vista, seleccione **[!UICONTROL Agregar segmento]** en la barra de herramientas. Repita el proceso hasta que haya llegado al final del vídeo.
 
      Para cada segmento de tiempo que agregue, asígnele una o más imágenes en miniatura y, a continuación, vincule esas miniaturas a las páginas de producto de vista rápida para que los clientes compren o a las páginas web para obtener más información.
 
-   * Para empezar a reproducir el vídeo, seleccione la **[!UICONTROL Reproducir]** botón. Cuando un producto, servicio o detalle en particular que desee resaltar sea visible, seleccione **[!UICONTROL Pausar]**. Seleccionar **[!UICONTROL Añadir segmento]**.
+   * Para empezar a reproducir el vídeo, selecciona el botón **[!UICONTROL Reproducir]**. Cuando un producto, servicio o detalle en particular que desee resaltar aparezca a la vista, seleccione **[!UICONTROL Pausa]**. Seleccione **[!UICONTROL Agregar segmento]**.
 
      Continúe reproduciendo y pausando el vídeo en los puntos de la cronología en los que desee añadir un segmento hasta que llegue al final del vídeo.
 
-1. (Opcional) Arrastre la barra a la **[!UICONTROL Regulador de escala de cronología]** izquierda para ampliar o derecha para alejar, de modo que pueda controlar cuánto detalle se ve de los segmentos que ha agregado.
+1. (Opcional) Arrastre la barra en el **[!UICONTROL Regulador de la escala de tiempo]** a la izquierda para acercar o a la derecha para alejar, de modo que pueda controlar cuántos detalles se ven de los segmentos que ha agregado.
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
@@ -375,13 +375,13 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
 
    * Para eliminar un segmento
 
-     Seleccione el último segmento de la cronología y, en la barra de herramientas, seleccione **[!UICONTROL Eliminar segmento]**. Si se seleccionan dos o más segmentos, **[!UICONTROL Eliminar segmento]** está deshabilitada.
+     Seleccione el último segmento de la cronología y, a continuación, en la barra de herramientas, seleccione **[!UICONTROL Eliminar segmento]**. Si se seleccionan dos o más segmentos, se deshabilita **[!UICONTROL Eliminar segmento]**.
 
      Solo puede eliminar el último segmento. Por ejemplo, si desea eliminar todos los segmentos de la cronología, siempre debe seleccionar el último y, a continuación, seleccionar **[!UICONTROL Eliminar segmento]**.
 
 1. Seleccione un segmento de tiempo al que desee asociar una o varias imágenes en miniatura.
-1. A la derecha del vídeo, seleccione la **[!UICONTROL Contenido]** pestaña.
-1. En la pestaña Contenido, seleccione **[!UICONTROL Seleccionar recursos]**, luego examine y seleccione todos los recursos de imagen que desee utilizar con el vídeo. Los recursos seleccionados se agregan al panel Selector de recursos en la pestaña Contenido.
+1. A la derecha del vídeo, seleccione la ficha **[!UICONTROL Contenido]**.
+1. En la pestaña Contenido, seleccione **[!UICONTROL Seleccionar Assets]** y, a continuación, examine y seleccione todos los recursos de imagen que desee usar con el vídeo. Los recursos seleccionados se agregan al panel Selector de recursos en la pestaña Contenido.
 
 1. En el selector de recursos que se encuentra debajo de la pestaña Contenido, realice una de las siguientes acciones:
 
@@ -395,7 +395,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
         <td>Para quitar una miniatura del segmento de escala de tiempo seleccionado</td>
         <td><p>Realice una de las siguientes acciones:</p>
           <ul>
-          <li>En el panel del selector de recursos, seleccione una imagen con una marca de verificación para anular su selección. El recurso de imagen se elimina del segmento de cronología.<br /> </li>
+          <li>En el panel del selector de recursos, seleccione una imagen con una marca de verificación para anular su selección. El recurso de imagen se ha eliminado del segmento de escala de tiempo.<br /> </li>
           <li>En el segmento de cronología seleccionado, seleccione una imagen y, en la barra de herramientas, seleccione <strong>Eliminar producto</strong>.</li>
           </ul> </td>
         </tr>
@@ -406,7 +406,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
 
    Al seleccionar una imagen en el panel selector de recursos, se agrega al segmento de cronología seleccionado.
 
-1. Seleccione una sola imagen en miniatura en uno de los segmentos de la cronología y, a continuación, seleccione la opción **[!UICONTROL Acciones]** pestaña.
+1. Seleccione una sola imagen en miniatura en uno de los segmentos de la cronología y, a continuación, seleccione la ficha **[!UICONTROL Acciones]**.
 1. Realice una de las siguientes acciones:
    <table> 
     <tbody> 
@@ -416,16 +416,16 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
        <ul> 
        <li>Observe que el campo de texto Valor de SKU está rellenado previamente con el SKU (código de referencia) del producto seleccionado, que es un identificador único para cada producto o servicio distinto que ofrece. Este valor se rellena automáticamente cuando la imagen está asociada a un producto en Experience Manager Commerce.</li> 
        <li>Si el SKU rellenado previamente es incorrecto, seleccione el icono del selector de productos (lupa) para abrir la página Seleccionar producto. Seleccione el producto que desea utilizar y, a continuación, active la marca de verificación situada en la esquina superior derecha de la página para volver al editor de vídeo interactivo.</li> 
-       </ul> <p> Si es usted <em>no</em> un cliente de Experience Manager Sites o de comercio electrónico</p> 
+       </ul> <p> Si usted es <em>no</em> cliente de Experience Manager Sites o de comercio electrónico</p> 
        <ul> 
        <li>Consulte <a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">Identificación de variables de punto interactivo</a>. Se deben definir las variables.  </li> 
        <li>De forma predeterminada, este SKU utiliza el nombre de archivo del recurso de imagen sin la extensión. Si sigue una convención de nombres estándar para sus archivos basada en SKU, este nombre de archivo no suele requerir ediciones adicionales. </li> 
        <li>De lo contrario, edite el valor predeterminado e introduzca el valor SKU correcto. En el campo de texto Valor de SKU, escriba la SKU del producto (unidad de stock), que es un identificador único para cada producto o servicio distinto que ofrece. El valor de SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida para que el sistema sepa que debe asociar la imagen seleccionada con la vista rápida de una SKU en particular.</li> 
-       </ul> <p>(Opcional) Si hay otras variables dentro de la vista rápida que debe utilizar para identificar un producto con más detalle, seleccione <strong>Añadir variable genérica</strong>. En el campo de texto, especifique una variable adicional. Por ejemplo, <code>category=Womens</code> es una variable añadida.</p> <p> </p> </td> 
+       </ul> <p>(Opcional) Si hay otras variables dentro de la vista rápida que debe usar para identificar aún más un producto, seleccione <strong>Agregar variable genérica</strong>. En el campo de texto, especifique una variable adicional. Por ejemplo, <code>category=Womens</code> es una variable agregada.</p> <p> </p> </td> 
       </tr> 
       <tr> 
       <td>Para asociar la miniatura seleccionada con un hipervínculo</td> 
-      <td><p>En Tipo de acción, seleccione <strong>Hipervínculo</strong>, a continuación, realice una de las siguientes acciones:</p> 
+      <td><p>En Tipo de acción, seleccione <strong>Hipervínculo</strong> y, a continuación, siga uno de estos procedimientos:</p> 
        <ul> 
        <li>Si es cliente de Experience Manager Sites, seleccione el icono Selector de sitio (carpeta) para navegar a una página web. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.</li> 
        <li>Si es cliente independiente de Dynamic Media, en el campo de texto HREF, especifique la ruta de URL completa a una página web vinculada.</li> 
@@ -433,20 +433,20 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
       </tr> 
       <tr> 
       <td>Para asociar la imagen en miniatura seleccionada con un fragmento de experiencia</td> 
-      <td><p>En Tipo de acción, seleccione <strong>Fragmento de experiencia</strong>, luego haga lo siguiente:<p> 
+      <td><p>En Tipo de acción, seleccione <strong>Fragmento de experiencia</strong> y, a continuación, haga lo siguiente:<p> 
        <ul> 
-       <li>Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee utilizar y, a continuación, seleccione <strong>Seleccionar </strong>en la esquina superior derecha de la página para poder volver al panel Acciones de la página anterior.<br /> Consulte <a href="/help/sites-authoring/experience-fragments.md">Fragmentos de experiencias</a>.</li> 
+       <li>Si es cliente de Experience Manager Sites, seleccione el icono Buscar (lupa) para abrir la página Fragmento de experiencia. Seleccione el fragmento de experiencia que desee usar y, a continuación, seleccione <strong>Seleccionar </strong>en la esquina superior derecha de la página para poder volver al panel Acciones de la página anterior.<br /> Ver <a href="/help/sites-authoring/experience-fragments.md">Fragmentos de experiencias</a>.</li> 
       </ul> 
        <ul> 
        <li>Especifique la anchura y altura del fragmento de experiencia tal como desea que aparezca en el vídeo.</li>
-       </ul><strong>Nota</strong>: las herramientas de uso compartido de medios sociales de Vídeo interactivo no son compatibles cuando se incrusta el visualizador en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.</p></tr>&lt; 
+       </ul><strong>Nota</strong>: Las herramientas para compartir en medios sociales de Vídeo interactivo no se admiten cuando se incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido de medios sociales. Estos ajustes preestablecidos de visualizador le permiten incrustarlo correctamente en los fragmentos de experiencias.</p></tr>&lt; 
       <tr> 
       <td>Para editar una acción ya asignada a una imagen en miniatura</td> 
-      <td>En un segmento de la cronología, seleccione una imagen en miniatura que tenga un vínculo de cadena a la derecha de su etiqueta de texto. El vínculo de cadena indica que se le ha asignado una acción. Seleccione el <strong>Acciones</strong> para que pueda realizar los cambios.</td> 
+      <td>En un segmento de la cronología, seleccione una imagen en miniatura que tenga un vínculo de cadena a la derecha de su etiqueta de texto. El vínculo de cadena indica que se le ha asignado una acción. Seleccione la ficha <strong>Acciones</strong> para poder realizar los cambios.</td> 
       </tr> 
       <tr> 
       <td>Para cambiar la etiqueta de texto de una imagen en miniatura</td> 
-      <td><p>De forma predeterminada, la etiqueta de texto utiliza la imagen en miniatura de <code>Title</code> campo de metadatos. If <code>Title</code> no está presente, se utiliza el nombre de archivo de la imagen en miniatura, pero sin la extensión.</p> <p>Para cambiar la etiqueta de texto de una imagen en miniatura, en la <strong>Acciones </strong>, directamente debajo del recurso de imagen que se muestra, introduzca el texto deseado. Consulte la captura de pantalla siguiente.</p> <p>La nueva etiqueta de texto solo la utiliza el reproductor de vídeo y el texto en miniatura que se muestra en el segmento de cronología. El cambio de etiqueta no afecta al campo de metadatos Título de la imagen en miniatura ni a su nombre de archivo.</p> </td> 
+      <td><p>De forma predeterminada, la etiqueta de texto utiliza el campo de metadatos <code>Title</code> de la imagen en miniatura. Si <code>Title</code> no está presente, se utiliza el nombre de archivo de la imagen en miniatura, pero sin la extensión.</p> <p>Para cambiar la etiqueta de texto de una imagen en miniatura, en la pestaña <strong>Acciones </strong>, directamente debajo del recurso de imagen que se muestra, escriba el texto deseado. Consulte la captura de pantalla siguiente.</p> <p>La nueva etiqueta de texto solo la utiliza el reproductor de vídeo y el texto en miniatura que se muestra en el segmento de cronología. El cambio de etiqueta no afecta al campo de metadatos Título de la imagen en miniatura ni a su nombre de archivo.</p> </td> 
       </tr> 
       <tr> 
       <td>Para revertir un cambio:</td> 
@@ -466,29 +466,29 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
 
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * **[!UICONTROL Combinar segmento]** : Puede combinar dos segmentos adyacentes (con o sin miniaturas de productos asignadas a ellos) en un segmento.
+   * **[!UICONTROL Combinar segmento]**: puede combinar dos segmentos adyacentes (con o sin miniaturas de productos asignadas) en un segmento.
 
      En la cronología, seleccione dos o más segmentos contiguos que desee combinar en uno. No hay puntos de control de arrastre ovalados azules en los dos segmentos seleccionados en la captura de pantalla siguiente.
 
-     Seleccionar **[!UICONTROL Combinar segmento]** en la barra de herramientas.
+     Seleccione **[!UICONTROL Combinar segmento]** en la barra de herramientas.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
    Combinación de dos segmentos de cinco segundos seleccionados en un segmento de diez segundos.
 
-   * **[!UICONTROL Dividir segmento]** : Puede dividir un solo segmento en dos segmentos de tiempo iguales. Si ya hay miniaturas de productos asignadas al segmento, las miniaturas se combinan en el segmento izquierdo.
+   * **[!UICONTROL Dividir segmento]**: puede dividir un solo segmento en dos segmentos de tiempo iguales. Si ya hay miniaturas de productos asignadas al segmento, las miniaturas se combinan en el segmento izquierdo.
 
      En la cronología, seleccione el segmento que desee dividir por la mitad y, a continuación, seleccione **[!UICONTROL Dividir segmento]** en la barra de herramientas.
 
-     Si se seleccionan dos o más segmentos, se deshabilita la opción **[!UICONTROL Dividir segmento]** función.
+     Si se seleccionan dos o más segmentos, se deshabilita la característica **[!UICONTROL Dividir segmento]**.
 
    ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Dividir un segmento seleccionado de diez segundos en dos segmentos de cinco segundos cada uno.
 
-1. Cerca de la esquina superior derecha de la **[!UICONTROL Crear vídeo interactivo]** , se mostrará el nombre del ajuste preestablecido de visualizador seleccionado actualmente que se utiliza con el vídeo. Seleccione el nombre si desea seleccionar un ajuste preestablecido de visualizador diferente.
+1. Cerca de la esquina superior derecha de la página **[!UICONTROL Crear vídeo interactivo]**, se muestra el nombre del ajuste preestablecido de visor seleccionado que se usa con el vídeo. Seleccione el nombre si desea seleccionar un ajuste preestablecido de visualizador diferente.
 
-   Por ejemplo, la variable `Shoppable_Video_light` el ajuste preestablecido de visualizador le permite reproducir el vídeo con un área de visualización blanca junto al vídeo. El área de visualización es donde se muestran las imágenes en miniatura seleccionables durante la reproducción. El `Shoppable_Video_dark` el ajuste preestablecido de visualizador le permite reproducir el vídeo con una zona de visualización negra junto al vídeo.
+   Por ejemplo, el ajuste preestablecido de visualizador `Shoppable_Video_light` le permite reproducir el vídeo con un área de visualización blanca junto al vídeo. El área de visualización es donde se muestran las imágenes en miniatura seleccionables durante la reproducción. El ajuste preestablecido de visualizador `Shoppable_Video_dark` le permite reproducir el vídeo con un área de visualización negra junto al vídeo.
 
    Si ha creado su propio ajuste preestablecido de visualizador de vídeo interactivo, lo verá en la lista de ajustes preestablecidos entre los que puede elegir.
 
@@ -496,34 +496,34 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
 
    >[!NOTE]
    >
-   >Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El `.vtt` El archivo se guardará en `_VTT` carpeta en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
+   >Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El archivo `.vtt` se guardó en la carpeta `_VTT` en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
 
-1. Publique el vídeo interactivo. La publicación crea el código incrustado o la dirección URL que finalmente copia y pega en las experiencias del sitio web.
+1. Publish el vídeo interactivo. La publicación crea el código incrustado o la dirección URL que finalmente copia y pega en las experiencias del sitio web.
 
    Si ha agregado interactividad con Quickview, utilice únicamente el código incrustado; si ha agregado interactividad con páginas web hipervinculadas, también puede utilizar la dirección URL publicada. Sin embargo, tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 
-   Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
+   Consulte [recursos de Publish](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
    >
    >Para publicar un vídeo de ventas con Quickview, asegúrese de publicar también cada uno de los recursos de imagen relacionados del vídeo desde su área de comercio, por separado.
 
-   Después de agregar segmentos de cronología y publicar el vídeo interactivo, está listo para agregarlo a la página de aterrizaje del sitio web existente. Consulte [Integración de un vídeo interactivo con el sitio web](#integrating-an-interactive-video-with-your-website).
+   Después de agregar segmentos de cronología y publicar el vídeo interactivo, está listo para agregarlo a la página de aterrizaje del sitio web existente. Ver [Integrar un vídeo interactivo con el sitio web](#integrating-an-interactive-video-with-your-website).
 
-## Publicar recursos de vídeo interactivo {#publishing-interactive-video-assets}
+## Recursos de vídeo interactivo de Publish {#publishing-interactive-video-assets}
 
-Consulte [Publicar recursos](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de vídeo interactivo.
+Consulte [recursos de Publish](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de vídeo interactivos.
 
 ## Integración de un vídeo interactivo con el sitio web {#integrating-an-interactive-video-with-your-website}
 
 Después de cargar un vídeo, añadir segmentos de cronología y publicar el vídeo interactivo, ya puede añadirlo a su sitio web.
 
-Si es cliente de Experience Manager Sites, puede agregar el vídeo interactivo arrastrando el componente Medios interactivos a su página. Consulte [Añadir recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Si es cliente de Experience Manager Sites, puede agregar el vídeo interactivo arrastrando el componente Medios interactivos a su página. Consulte [Agregar recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Si es cliente independiente de Experience Manager Assets, puede añadir manualmente el vídeo interactivo a su sitio web como se describe en esta sección.
 
 1. Copie el código incrustado o la URL del vídeo interactivo publicado.
-Consulte [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
+Ver [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
 Si ha agregado interactividad con Quickview, utilice únicamente el código incrustado; si ha agregado interactividad con páginas web hipervinculadas, también puede utilizar la dirección URL publicada. Sin embargo, tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 
 1. En el código de la página web de destino, identifique dónde se encuentra el vídeo estático.
@@ -652,7 +652,7 @@ El código incrustado devuelto por el Experience Manager ya tiene un controlador
 
 Por lo tanto, solo es necesario descomentar el fragmento de código resaltado arriba y reemplazar el cuerpo de los controladores ficticios con código específico de la página web en particular.
 
-Hay dos controladores de devolución de llamada predeterminados en el código incrustado estándar: `quickViewActivate` y `initComplete`. El `quickViewActivate` déclencheur del controlador cuando se selecciona una miniatura en el visor. Utilícelo para integrar el visor con la lógica de activación de Vista rápida. El `initComplete` déclencheur del controlador solo una vez cuando el visor se carga en la página. Este controlador se utiliza para ajustar la ubicación del cuadro de diálogo de vista rápida en el DOM de la página web.
+Hay dos controladores de devolución de llamada predeterminados en el código incrustado estándar: `quickViewActivate` y `initComplete`. El controlador `quickViewActivate` entra en déclencheur cuando se selecciona una miniatura en el visor. Utilícelo para integrar el visor con la lógica de activación de Vista rápida. El controlador `initComplete` déclencheur solo una vez cuando el visor se carga en la página. Este controlador se utiliza para ajustar la ubicación del cuadro de diálogo de vista rápida en el DOM de la página web.
 
 El proceso de construir la URL de vista rápida es opuesto al proceso de identificar variables de miniaturas que se trató anteriormente en este tema. Con los ejemplos de URL de vista rápida identificados anteriormente, puede ver cómo se construye la URL de vista rápida en cada caso:
 
@@ -693,7 +693,7 @@ Puede ver cómo se aplican estos pasos al sitio web de demostración para integr
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
-Es fácil reconstruir esta dirección URL dentro de `quickViewActivate` mediante el uso de `categoryId` y `sku` campos disponibles en la `inData` objeto pasado al controlador mediante el código del visor como en el siguiente ejemplo:
+Es fácil reconstruir esta dirección URL dentro del controlador `quickViewActivate` mediante los campos `categoryId` y `sku` disponibles en el objeto `inData` pasado al controlador mediante el código del visor, como se muestra a continuación:
 
 ```xml
 var sku=inData.sku;
@@ -701,7 +701,7 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-El sitio web de demostración activa el cuadro de diálogo de vista rápida con un `loadQuickView()` llamada de función. Esta función solo toma un argumento, que es la URL de datos de vista rápida. Por lo tanto, el último paso para integrar el vídeo interactivo es añadir la siguiente línea de código a `quickViewActivate` controlador:
+El sitio web de demostración está activando el cuadro de diálogo Vista rápida mediante una simple llamada a la función `loadQuickView()`. Esta función solo toma un argumento, que es la URL de datos de vista rápida. Por lo tanto, el último paso para integrar el vídeo interactivo es agregar la siguiente línea de código al controlador `quickViewActivate`:
 
 ```xml
 loadQuickView(quickViewUrl);
@@ -714,11 +714,11 @@ var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInner
 var inner_container = document.getElementById(sdkContainerId);
 ```
 
-Donde `inner_container` es una referencia a un `DIV` elemento gestionado por el visor. Desea que el cuadro de diálogo sea secundario de eso `DIV`.
+Donde `inner_container` es una referencia a un elemento `DIV` administrado por el visor. Desea que el cuadro de diálogo sea secundario de ese(a) `DIV`.
 
 Los pasos para localizar realmente el elemento de cuadro de diálogo modal y adjuntarlo al contenedor anterior son específicos de mayúsculas y minúsculas. De nuevo, puede buscar la ayuda de su desarrollador front-end que esté familiarizado con la implementación de Quickview que necesita.
 
-Si utiliza el sitio web de ejemplo, el cuadro de diálogo modal de vista rápida se implementa como `DIV` con el ID quickview-modal adjunto directamente al documento `BODY`. Por lo tanto, el código para mover ese cuadro de diálogo al contenedor del visor es tan sencillo como el siguiente:
+Si usa el sitio web de ejemplo, el cuadro de diálogo modal de vista rápida se implementa como `DIV` con el identificador modal de vista rápida adjunto directamente al documento `BODY`. Por lo tanto, el código para mover ese cuadro de diálogo al contenedor del visor es tan sencillo como el siguiente:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -775,4 +775,4 @@ El sitio web de demostración final con el vídeo interactivo completamente inte
 
 ## Creación de ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-Consulte [Creación de ventanas emergentes personalizadas con Quickview](/help/assets/custom-pop-ups.md).
+Ver [Crear ventanas emergentes personalizadas con Quickview](/help/assets/custom-pop-ups.md).

@@ -14,7 +14,7 @@ ht-degree: 63%
 
 # Recorridos sin AEM {#aem-headless-journeys}
 
-Comience aquí para obtener una descripción general de los recorrido AEM guiados disponibles para comprender potentes funciones sin encabezado.
+Comience aquí para obtener una descripción general de los recorrido AEM guiados disponibles para comprender las potentes funciones sin encabezado de los que se dispone en la práctica, a la hora de crear informes de usuario
 
 ## Introducción {#introduction}
 

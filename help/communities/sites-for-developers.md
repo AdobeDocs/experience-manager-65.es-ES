@@ -27,7 +27,7 @@ Para ello:
 * Cree una plantilla personalizada.
 * Superponga la ruta de la plantilla de sitio predeterminada.
 * Añada la plantilla personalizada a la ruta de la superposición.
-* Especifique la plantilla personalizada agregando un `page-template` a la propiedad `configuration` nodo.
+* Especifique la plantilla personalizada agregando una propiedad `page-template` al nodo `configuration`.
 
 **Plantilla predeterminada**:
 
@@ -39,7 +39,7 @@ Para ello:
 
 **Propiedad**: page-template
 
-**Tipo**: cadena
+**Tipo**: Cadena
 
 **Valor**: `template-name` (sin extensión)
 
@@ -51,44 +51,44 @@ Por ejemplo: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
->Todos los nodos de la ruta superpuesta solo deben ser del tipo `Folder`.
+>Todos los nodos de la ruta superpuesta sólo deben ser del tipo `Folder`.
 
 >[!CAUTION]
 >
->Si a la plantilla personalizada se le asigna el nombre *sitepage.hbs*, todos los sitios de la comunidad se personalizan.
+>Si a la plantilla personalizada se le asigna el nombre *sitepage.hbs*, todos los sitios de la comunidad se personalizarán.
 
 ### Ejemplo de plantilla de sitio personalizada {#custom-site-template-example}
 
-A modo de ejemplo, `vertical-sitepage.hbs` es una plantilla de sitio que coloca vínculos de menú verticalmente hacia abajo en el lado izquierdo de la página, en lugar de horizontalmente debajo del titular.
+Por ejemplo, `vertical-sitepage.hbs` es una plantilla de sitio que da como resultado la colocación de vínculos de menú verticalmente hacia abajo en el lado izquierdo de la página, en lugar de horizontalmente debajo del titular.
 
 [Obtener archivo](assets/vertical-sitepage.hbs)
 Coloque la plantilla de sitio personalizada en la carpeta de superposición:
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
-Identificar la plantilla personalizada agregando un `page-template` al nodo de configuración:
+Identifique la plantilla personalizada agregando una propiedad `page-template` al nodo de configuración:
 
 `/content/sites/sample/en/configuration`
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Asegúrese de **Guardar todo** y replicar código personalizado en todas las instancias de Adobe Experience Manager AEM () (el código personalizado no se incluye cuando el contenido del sitio de la comunidad se publica desde la consola).
+Asegúrese de **Guardar todo** y replicar el código personalizado en todas las instancias de Adobe Experience Manager AEM () (el código personalizado no se incluye cuando el contenido del sitio de la comunidad se publica desde la consola).
 
-La práctica recomendada para replicar código personalizado es [creación de un paquete](../../help/sites-administering/package-manager.md#creating-a-new-package) e implementarlo en todas las instancias.
+La práctica recomendada para replicar el código personalizado es [crear un paquete](../../help/sites-administering/package-manager.md#creating-a-new-package) e implementarlo en todas las instancias.
 
 ## Exportar un sitio de la comunidad {#exporting-a-community-site}
 
 AEM Una vez creado un sitio de la comunidad, es posible exportar el sitio como un paquete de almacenado en el Administrador de paquetes y disponible para descargar y cargar.
 
-Esta opción está disponible en [Consola Sitios de Communities](sites-console.md#exporting-the-site).
+Está disponible en la [consola Sitios de comunidades](sites-console.md#exporting-the-site).
 
 El código UGC y el código personalizado no se incluyen en el paquete del sitio de la comunidad.
 
-Para exportar UGC, utilice el [Herramienta de migración de UGC para AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), una herramienta de migración de código abierto disponible en GitHub.
+Para exportar UGC, usa la [Herramienta de migración de UGC para AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), una herramienta de migración de código abierto disponible en GitHub.
 
 ## Eliminar un sitio de la comunidad {#deleting-a-community-site}
 
-A partir de AEM Communities 6.3 Service Pack 1, el icono Eliminar sitio aparece al pasar el ratón por encima del sitio de la comunidad desde **[!UICONTROL Communities]** > **[!UICONTROL Sites]** consola. Durante el desarrollo, si desea eliminar un sitio de la comunidad y empezar de nuevo, puede utilizar esta funcionalidad. Al eliminar un sitio de la comunidad, se eliminan los siguientes elementos asociados con ese sitio:
+A partir de AEM Communities 6.3 Service Pack 1, el icono Eliminar sitio aparece al pasar el ratón por encima del sitio de la comunidad desde la consola **[!UICONTROL Communities]** > **[!UICONTROL Sites]**. Durante el desarrollo, si desea eliminar un sitio de la comunidad y empezar de nuevo, puede utilizar esta funcionalidad. Al eliminar un sitio de la comunidad, se eliminan los siguientes elementos asociados con ese sitio:
 
 * [UGC](#user-generated-content)
 * [Grupos de usuarios](#community-user-groups)
@@ -100,15 +100,15 @@ Para identificar el ID único del sitio asociado al sitio de la comunidad median
 
 * Vaya a la raíz de idioma del sitio, como `/content/sites/*<site name>*/en/rep:policy`.
 
-* Busque el `allow<#>` nodo con un `rep:principalName` en este formato `rep:principalName = *community-enable-nrh9h-members*`.
+* Busque el nodo `allow<#>` con un `rep:principalName` en este formato `rep:principalName = *community-enable-nrh9h-members*`.
 
-* El ID del sitio es el tercer componente de `rep:principalName`
+* El identificador del sitio es el tercer componente de `rep:principalName`
 
   Por ejemplo, si `rep:principalName = community-enable-nrh9h-members`
 
    * **nombre del sitio** = *habilitar*
-   * **ID del sitio** = *nrh9h*
-   * **ID único de sitio** = *enable-nrh9h*
+   * **Id. de sitio** = *nrh9h*
+   * **ID de sitio único** = *enable-nrh9h*
 
 ### Contenido generado por el usuario {#user-generated-content}
 
@@ -126,9 +126,9 @@ Esto solo elimina el contenido generado por el usuario (introducido al publicar)
 
 ### Grupos de usuarios de la comunidad {#community-user-groups}
 
-En todas las instancias de autor y publicación, desde el [consola de seguridad](../../help/sites-administering/security.md), busque y quite el [grupos de usuarios](users.md) que son:
+En todas las instancias de autor y publicación, desde la [consola de seguridad](../../help/sites-administering/security.md), busque y quite los [grupos de usuarios](users.md) que están:
 
 * Con el prefijo `community`
-* Seguido de [id de sitio único](#community-unique-site-id)
+* Seguido de [id. de sitio único](#community-unique-site-id)
 
 Por ejemplo, `community-engage-x0e11-members`.

@@ -1,5 +1,5 @@
 ---
-title: Publicación de colecciones en Brand Portal
+title: Colecciones de Publish a Brand Portal
 description: Obtenga información sobre cómo publicar y cancelar la publicación de colecciones en Brand Portal.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -17,22 +17,22 @@ ht-degree: 30%
 
 ---
 
-# Publicación de colecciones en Brand Portal {#publish-collections-to-brand-portal}
+# Colecciones de Publish a Brand Portal {#publish-collections-to-brand-portal}
 
-Como administrador de recursos de Adobe Experience Manager AEM (), puede publicar colecciones en la instancia de AEM Assets Brand Portal de su organización. Sin embargo, primero debe integrar AEM Assets con Brand Portal. Para obtener más información, consulte [Configurar AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
+Como administrador de Adobe Experience Manager AEM () Assets, puede publicar colecciones en la instancia de AEM Assets Brand Portal de su organización. Sin embargo, primero debe integrar AEM Assets con Brand Portal. Para obtener más información, consulte [Configurar AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 Si realiza las modificaciones posteriores a la colección original en AEM Assets, los cambios no se reflejarán en Brand Portal hasta que vuelva a publicar la colección. Esta característica garantiza que los cambios en curso no estén disponibles en Brand Portal. Solo los cambios aprobados publicados por un administrador están disponibles en Brand Portal.
 
 >[!NOTE]
 >
->Los fragmentos de contenido no se pueden publicar en Brand Portal. AEM Por lo tanto, si selecciona fragmentos de contenido en Autor de la, **Publicar en Brand Portal** La acción no está disponible.
+>Los fragmentos de contenido no se pueden publicar en Brand Portal. AEM Por lo tanto, si selecciona fragmentos de contenido en Autor de, la acción **Publish to Brand Portal** no estará disponible.
 >
 >AEM Si las colecciones que contienen fragmentos de contenido se publican desde el Autor de la publicación a Brand Portal, todo el contenido de la carpeta, excepto los fragmentos de contenido, se replicará en la interfaz de Brand Portal.
 
-## Publicación de una colección en Brand Portal {#publish-a-collection-to-brand-portal}
+## Publish una colección a Brand Portal {#publish-a-collection-to-brand-portal}
 
 1. En la interfaz de usuario de AEM Assets, haga clic en el logotipo de AEM.
-1. Desde **Navegación** página, vaya a **Recursos > Colecciones**.
+1. Desde la página **Navegación**, vaya a **Assets > Colecciones**.
 1. En la consola Colecciones, seleccione la colección que desea publicar en Brand Portal.
 
    ![select_collection](assets/select_collection.png)

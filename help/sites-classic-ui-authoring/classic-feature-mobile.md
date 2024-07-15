@@ -24,22 +24,22 @@ Los dispositivos se agrupan en las categorías característica, inteligente y t�
 
 >[!NOTE]
 >
->Para crear un sitio móvil basado en un sitio estándar existente, cree una Live Copy del sitio estándar. (Consulte [Creación de una Live Copy para diferentes canales](/help/sites-administering/msm-livecopy.md).)
+>Para crear un sitio móvil basado en un sitio estándar existente, cree una Live Copy del sitio estándar. (Consulte [Creación de una Live Copy para diferentes canales](/help/sites-administering/msm-livecopy.md)).
 >
 >Los desarrolladores de AEM pueden crear nuevos grupos de dispositivos. (Consulte [Creación de filtros de grupo de dispositivos.](/help/sites-developing/groupfilters.md))
 
 Utilice el siguiente procedimiento para crear una página para móvil:
 
-1. En el explorador, vaya a **Siteadmin** consola.
-1. Abra el **Productos** página siguiente **Sitios web** >> **Sitio de demostración de Geometrixx Mobile** >> **Inglés**.
+1. En su explorador, vaya a la consola **Siteadmin**.
+1. Geometrixx Abra la página **Productos** debajo de **Sitios web** >> **Sitio de demostración móvil** >> **Inglés**.
 
 1. Cambie a un emulador diferente. Para ello, puede hacer lo siguiente:
 
    * Haga clic en el icono del dispositivo en la parte superior de la página.
-   * Haga clic en **Editar** botón en el **Sidekick** y seleccione el dispositivo en el menú desplegable.
+   * Haga clic en el botón **Editar** del **Sidekick** y seleccione el dispositivo en el menú desplegable.
 
-1. Arrastre y suelte el **Texto e imagen** de la pestaña Móvil del Sidekick a la página.
-1. Edite el componente y añada texto. Clic **OK** para guardar los cambios.
+1. Arrastre y suelte el componente **Texto e imagen** de la pestaña Móvil del Sidekick a la página.
+1. Edite el componente y añada texto. Haga clic en **Aceptar** para guardar los cambios.
 
 La página tiene el mismo aspecto que el siguiente:
 

@@ -40,7 +40,7 @@ La siguiente configuración del perfil de su dispositivo afecta al funcionamient
 
 * **Permitir el uso de la cámara** en la sección **Funcionalidad del dispositivo**
 
-Si desactiva **Permitir el uso de la cámara**, la función de cámara del [Anotación fotográfica](/help/forms/using/add-attachments.md) no funciona. Active esta opción para utilizar la cámara en la aplicación.
+Si deshabilita **Permitir el uso de la cámara**, la característica de cámara de [Anotación fotográfica](/help/forms/using/add-attachments.md) no funcionará. Active esta opción para utilizar la cámara en la aplicación.
 
 * **Requerir contraseña en el dispositivo** en la sección directivas de contraseñas
 

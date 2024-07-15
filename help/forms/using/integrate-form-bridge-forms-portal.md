@@ -32,7 +32,7 @@ Una aplicación de HTML existente puede utilizar la API de FormBridge para inter
    1. Inicie sesión con credenciales de administrador.
    1. Cree un perfil o seleccione un perfil existente.
 
-      Para obtener más información sobre cómo crear un perfil, consulte [Creación de un perfil](/help/forms/using/custom-profile.md).
+      Para obtener más información sobre cómo crear un perfil, consulte [Crear un perfil](/help/forms/using/custom-profile.md).
 
 1. **Modificación del perfil del HTML**
 

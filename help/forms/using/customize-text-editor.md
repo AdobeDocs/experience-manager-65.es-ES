@@ -166,7 +166,7 @@ Para personalizar fuentes al editar el archivo tbxeditor-config.xml, haga lo sig
       * Valores predeterminados de la familia de fuentes y el formato de tamaño, altura, espaciado entre letras y fecha
       * Sangrías de viñetas
 
-      Por ejemplo, para agregar una fuente japonesa llamada Sazanami Mincho Medium, debe realizar la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También debe tener esta fuente instalada en el equipo cliente para acceder y trabajar con la personalización de fuentes. Para obtener más información, consulte [Agregar fuentes personalizadas al equipo cliente](#addcustomfonts).
+      Por ejemplo, para agregar una fuente japonesa denominada Sazanami Mincho Medium, debe escribir la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También debe tener esta fuente instalada en el equipo cliente para acceder y trabajar con la personalización de fuentes. Para obtener más información, consulte [Agregar fuentes personalizadas al equipo cliente](#addcustomfonts).
 
       También puede cambiar los valores predeterminados de varios aspectos del texto y, al quitar las entradas, quitar las fuentes del editor de texto.
 
@@ -183,7 +183,7 @@ Para obtener más información sobre la instalación de fuentes, consulte lo sig
 
 ## Acceder a las personalizaciones de fuente {#access-font-customizations}
 
-Después de cambiar las fuentes en la `tbxeditor-config.xml` en CRX e instaló las fuentes necesarias en el equipo cliente utilizado para acceder a AEM Forms, los cambios aparecerán en el editor de texto.
+Después de cambiar las fuentes del archivo `tbxeditor-config.xml` en CRX e instalar las fuentes necesarias en el equipo cliente utilizado para acceder a AEM Forms, los cambios aparecerán en el editor de texto.
 
 Por ejemplo, la fuente Sazanami Mincho Medium agregada en el procedimiento [Personalizar fuentes al editar el archivo tbxeditor-config.xml en CRX](#customizefonts), aparece en la interfaz de usuario del editor de texto de la siguiente manera:
 

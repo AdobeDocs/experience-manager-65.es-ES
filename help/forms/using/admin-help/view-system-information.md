@@ -36,39 +36,39 @@ Puede arrastrar el puntero a lo largo de la cronología para obtener los valores
 
 El panel izquierdo de la ficha Sistema muestra la siguiente información sobre el servidor o nodo:
 
-**Máquina virtual:** Versión de Java Virtual Machine (JVM) en el servidor.
+**Máquina virtual:** Versión de máquina virtual Java (JVM) en el servidor.
 
-**Proveedor de máquina virtual:** Fabricante de JVM.
+**Proveedor de máquina virtual:** fabricante de JVM.
 
 **Versión de máquina virtual:** Número de versión de JVM
 
-**Nombre de la máquina:** AEM Nombre del host del servidor en el que se instalan los formularios de.
+AEM **Nombre de equipo:** Nombre de host del servidor donde se instalaron los formularios de la.
 
-**Tiempo de actividad:** El tiempo, en horas y minutos, que ha estado ejecutando el servidor.
+**Tiempo de actividad:** El tiempo, en horas y minutos, que el servidor ha estado funcionando.
 
-**Compilador justo a tiempo:** Nombre del compilador que se está utilizando.
+**Compilador Just-In-Time:** nombre del compilador que se está utilizando.
 
 **Tiempo de compilación:** Cantidad de tiempo empleado en la compilación.
 
-**Número de Live Threads:** AEM Número total de subprocesos presentes actualmente en el sistema de formularios de la.
+**Número de subprocesos de Live Threads AEM:** Número total de subprocesos presentes actualmente en el sistema de formularios de la.
 
-**Número máximo de Threads:** Número máximo de subprocesos activos registrados en el sistema.
+**Número máximo de Threads:** El mayor número de subprocesos activos registrados en el sistema.
 
 **Número de clases cargadas:** Número de clases cargadas en la JVM.
 
-**Número de clases descargadas:** Número de clases descargadas de la JVM.
+**Número de clases descargadas:** Número de clases descargadas de JVM.
 
-**Montón mínimo:** Cantidad mínima de pila que se ha utilizado.
+**Montón mínimo:** Cantidad mínima de montón que se utilizó.
 
-**Montón máximo:** Cantidad máxima de pila que se ha utilizado.
+**Montón máximo:** Cantidad máxima de montón que se ha utilizado.
 
-**Nombre del sistema operativo:** Nombre del sistema operativo que se ejecuta en el servidor de AEM Forms.
+**Nombre del sistema operativo:** El nombre del sistema operativo que se ejecuta en el servidor de AEM Forms.
 
 **Versión del sistema operativo:** Número de versión del sistema operativo que se ejecuta en AEM Forms Server.
 
-**Arco del sistema operativo:** Arquitectura del sistema operativo en la que se ejecuta JVM.
+**Arco del sistema operativo:** Arquitectura del sistema operativo en la que se está ejecutando JVM.
 
-**Número de procesadores:** Número de procesadores del sistema.
+**Número de procesadores:** El número de procesadores del sistema.
 
 **Argumentos de máquina virtual:** Argumento utilizado por JVM.
 
@@ -78,24 +78,24 @@ El panel izquierdo de la ficha Sistema muestra la siguiente información sobre e
 
 **Ruta de clase de arranque:** Ruta de clase de arranque utilizada por JVM.
 
-**Tipo de servidor de aplicaciones:** AEM Tipo de servidor de aplicaciones que se utiliza para ejecutar formularios en la.
+AEM **Tipo de servidor de aplicaciones:** Tipo de servidor de aplicaciones usado para ejecutar formularios de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación.
 
-**Versión del servidor de aplicaciones:** AEM Número de versión del servidor de aplicaciones que se utiliza para ejecutar formularios de la.
+AEM **Versión del servidor de aplicaciones:** Número de versión del servidor de aplicaciones utilizado para ejecutar formularios de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación.
 
-**Proveedor de servidor de aplicaciones:** AEM Fabricante del servidor de aplicaciones que se utiliza para ejecutar los formularios de la.
+AEM **Proveedor del servidor de aplicaciones:** Fabricante del servidor de aplicaciones que se usa para ejecutar formularios de la.
 
-**Fecha de instalación:** AEM Fecha (en formato aaaa-mm-dd) en la que se instalaron los formularios de la.
+AEM **Fecha de instalación:** Fecha (en formato aaaa-mm-dd) en la que se instalaron los formularios de la.
 
-**AEM Versión de formularios de:** AEM Versión de los formularios instalados.
+AEM AEM **Versión de formularios de:** Versión de los formularios de formularios instalados.
 
-**Versión del parche:** AEM Número de parche de formularios de.
+AEM **Versión del parche:** número de parche de formularios de la aplicación de formularios de la aplicación.
 
-**Nombre de base de datos:** AEM Tipo de base de datos utilizada por los formularios de.
+AEM **Nombre de base de datos:** Tipo de base de datos usada por los formularios de la base de datos de los formularios de la.
 
-**Versión de base de datos:** AEM Número de versión de la base de datos utilizada por los formularios de.
+AEM **Versión de la base de datos:** Número de versión de la base de datos usada por los formularios de la base de datos de los formularios de la base de datos de los formularios de datos.
 
-**Nombre de unidad de base de datos:** Nombre del controlador utilizado por JVM para conectarse a la base de datos.
+**Nombre de la unidad de base de datos:** Nombre del controlador utilizado por JVM para conectarse a la base de datos.
 
-**Versión del controlador de base de datos:** La versión del controlador utilizado por JVM para conectarse a la base de datos.
+**Versión del controlador de base de datos:** Versión del controlador utilizado por JVM para conectarse a la base de datos.
 
-El **Guardar** permite guardar esta información del sistema en un archivo de propiedades.
+El botón **Guardar** le permite guardar esta información del sistema en un archivo de propiedades.

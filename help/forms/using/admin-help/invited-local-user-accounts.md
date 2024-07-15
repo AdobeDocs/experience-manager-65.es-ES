@@ -81,7 +81,7 @@ Puede habilitar una cuenta de usuario local que esté deshabilitada actualmente.
 1. En la lista de usuarios, seleccione el usuario adecuado.
 1. En la página Detalles del usuario local, haga clic en Deshabilitar cuenta.
 
-**Restablecimiento de una cuenta de usuario**
+**Restablecer una cuenta de usuario**
 
 1. Haga clic en Usuarios invitados y locales y, a continuación, en la ficha Usuarios locales.
 1. En la lista de usuarios, seleccione el usuario adecuado.

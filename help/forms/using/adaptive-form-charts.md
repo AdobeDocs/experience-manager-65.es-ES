@@ -44,7 +44,7 @@ AEM El componente Gráfico está disponible en la barra lateral de la de forma p
 > 
 > Antes de configurar el gráfico, asegúrese de que el panel o la fila de tabla para los que está configurando el gráfico estén configurados en repetibles. Puede especificar recuentos mínimos y máximos para el panel repetible o la fila de tabla en la pestaña Configuración de repetición del cuadro de diálogo Editar componente.
 
-Para configurar el gráfico, haga clic en el componente Gráfico y en ![Configuración](cmppr1.png) para abrir el cuadro de diálogo Editar gráfico. El cuadro de diálogo incluye las pestañas Título y texto, Configuración, Opciones avanzadas y Estilo que le permiten configurar el gráfico.
+Para configurar el gráfico, haga clic en el componente Gráfico y haga clic en ![Configuración](cmppr1.png) para abrir el cuadro de diálogo Editar gráfico. El cuadro de diálogo incluye las pestañas Título y texto, Configuración, Opciones avanzadas y Estilo que le permiten configurar el gráfico.
 
 ### Básica {#basic}
 
@@ -52,24 +52,24 @@ En la pestaña Básico, puede configurar las siguientes propiedades:
 
 ![Propiedades del gráfico](assets/chart-properties.png)
 
-* **Nombre del elemento**: Un identificador para el elemento de gráfico en la estructura de contenido JCR. No está visible en el gráfico, pero resulta útil cuando se hace referencia al elemento desde otros componentes, scripts y expresiones SOM.
-* **Tipo de gráfico**: especifica el tipo de gráfico que desea generar. Las opciones disponibles son Circular, Anillo, Barra, Columna, Línea, Línea y punto, Punto y Área. En el ejemplo, el tipo de gráfico es Columna.
-* **Nombre de fila repetida o nombre de panel para la fuente de datos**: especifica el nombre del elemento de la fila de la tabla o del panel repetible desde el que se originarán los datos. En el ejemplo, statementDetails es el nombre de elemento de la fila repetible de la tabla Detalles de instrucciones.
+* **Nombre de elemento**: Identificador del elemento de gráfico en la estructura de contenido JCR. No está visible en el gráfico, pero resulta útil cuando se hace referencia al elemento desde otros componentes, scripts y expresiones SOM.
+* **Tipo de gráfico**: Especifica el tipo de gráfico que desea generar. Las opciones disponibles son Circular, Anillo, Barra, Columna, Línea, Línea y punto, Punto y Área. En el ejemplo, el tipo de gráfico es Columna.
+* **Nombre de fila repetida o Nombre de panel para datos Source**: Especifica el nombre de elemento de la fila de tabla o del panel repetible desde el que se obtendrán los datos. En el ejemplo, statementDetails es el nombre de elemento de la fila repetible de la tabla Detalles de instrucciones.
 * **Eje X > Título**: especifica el título del eje X. En el ejemplo, el título del eje X es Categoría.
 * **Eje X > Campo**: especifica el nombre del elemento del campo (o una celda de una tabla) que se va a trazar en el eje X. En el ejemplo, las categorías se configuran en el eje X. El nombre del elemento para la celda de tabla de la columna Category de la tabla de ejemplo es category.
-* **Eje X > Usar función**: especifica la función estadística que se utiliza para calcular los valores en el eje X. En el ejemplo, la opción seleccionada es None. Para obtener más información sobre las funciones, consulte Usar funciones en el gráfico.
+* **Eje X > Usar función**: especifica la función estadística que se utilizará para calcular los valores en el eje X. En el ejemplo, la opción seleccionada es None. Para obtener más información sobre las funciones, consulte Usar funciones en el gráfico.
 * **Eje Y > Título**: especifica el título del eje Y. En el ejemplo, el título del eje Y es Expense.
 * **Eje Y > Campo**: especifica el nombre del elemento del campo (o la celda de una tabla) que se va a trazar en el eje Y. En el ejemplo, configure amount on Y-axis. El nombre del elemento para la celda de tabla de la columna Amount de la tabla de ejemplo es amount.
-* **Eje Y > Usar función**: especifica la función estadística que se utiliza para calcular los valores en el eje Y. En el ejemplo, se añade la cantidad gastada en cada categoría y el valor calculado se traza en el eje Y. Por lo tanto, seleccione Suma de la lista desplegable Usar función. Para obtener más información sobre las funciones, consulte Usar funciones en el gráfico.
+* **Eje Y > Usar función**: especifica la función estadística que se utilizará para calcular los valores en el eje Y. En el ejemplo, se añade la cantidad gastada en cada categoría y el valor calculado se traza en el eje Y. Por lo tanto, seleccione Suma de la lista desplegable Usar función. Para obtener más información sobre las funciones, consulte Usar funciones en el gráfico.
 * **Posición de leyenda**: especifica la posición del pie de ilustración con respecto al gráfico. Las opciones disponibles son Derecha, Izquierda, Superior e Inferior.
 * **Mostrar leyenda**: muestra una leyenda para el gráfico cuando está habilitado.
-* **Sugerencia**: especifica el formato en el que aparece la información del objeto al pasar el ratón sobre un punto de datos del gráfico. El valor predeterminado es **\${x}(\${y})**. Según el tipo de gráfico, cuando el ratón señala un punto, barra o fracción del gráfico, las variables **\${x}** y **\${y}** se sustituyen dinámicamente por los valores correspondientes del eje X y del eje Y y se muestran en la información del objeto. Como se muestra en el ejemplo siguiente, la información del objeto se muestra como **Tiendas minoristas (5870)** al apuntar con el ratón a la columna Tiendas minoristas. Para deshabilitar la información del objeto, deje en blanco el campo Información del objeto. Esta opción no es aplicable a los gráficos de líneas y áreas.
-* **Configuraciones específicas de gráficos**: Además de las configuraciones comunes, está disponible la siguiente configuración específica del gráfico:
+* **Información de objeto**: especifica el formato en el que aparece la información de objeto al pasar el ratón sobre un punto de datos del gráfico. El valor predeterminado es **\${x}(\${y})**. Según el tipo de gráfico, cuando el ratón señala un punto, barra o fracción del gráfico, las variables **\${x}** y **\${y}** se reemplazarán dinámicamente con los valores correspondientes del eje X y del eje Y y se mostrarán en la información del objeto. Como se muestra en el ejemplo siguiente, la información del objeto se muestra como **Tiendas minoristas(5870)** al apuntar con el ratón a la columna Tiendas minoristas. Para deshabilitar la información del objeto, deje en blanco el campo Información del objeto. Esta opción no es aplicable a los gráficos de líneas y áreas.
+* **Configuraciones específicas de gráficos**: además de las configuraciones comunes, está disponible la siguiente configuración específica de gráficos:
 * **Radio interior**: disponible para gráficos de anillo para especificar el radio (en píxeles) del círculo interior del gráfico.
 * **Color de línea**: disponible para gráficos de líneas, líneas y puntos y áreas para especificar el valor hexadecimal del color de la línea del gráfico.
 * **Color de punto**: disponible para gráficos de puntos y líneas y puntos para especificar el valor hexadecimal del color de los puntos del gráfico.
 * **Color de área**: disponible para gráficos de área para especificar el valor hexadecimal del color para el área bajo la línea del gráfico.
-* **Clase CSS**: especifique el nombre de una clase CSS en el campo CSS class para aplicar un estilo personalizado al gráfico.
+* **Clase CSS**: especifique el nombre de una clase CSS en el campo Clase CSS para aplicar un estilo personalizado al gráfico.
 
 ### Configuración {#configuration}
 
@@ -83,7 +83,7 @@ Para ello, debe trazar las categorías en el eje X y, en el eje Y, trazar el gas
 
 La instrucción de tarjeta de crédito utilizada en este ejemplo es un documento de formulario adaptable y la sección de detalles de la instrucción es una tabla, que tiene el siguiente aspecto en el modo de creación.
 
-![Creación de detalles de declaración](assets/statement-details-authoring.png)
+![Creación de detalles de la instrucción](assets/statement-details-authoring.png)
 
 Consideremos los siguientes requisitos y condiciones para generar el gráfico:
 
@@ -99,15 +99,15 @@ Consideremos los siguientes requisitos y condiciones para generar el gráfico:
 
 El pie de ilustración y la información del objeto aparecen de la siguiente manera.
 
-![Información sobre leyenda de gráfico](assets/chart-legend-tooltip.png)
+![Información sobre la leyenda del gráfico](assets/chart-legend-tooltip.png)
 
 ### Estilo {#styling}
 
 En el modo Estilo, puede configurar la anchura, en porcentaje de la anchura total disponible en el formulario o documento, y la altura, en píxeles, del gráfico. Otras opciones incluyen texto, fondo, borde, efectos y anulaciones de CSS.
 
-Para cambiar al modo Estilo, en la barra de herramientas de la página, haga lo siguiente: **pulse>>Estilo**.
+Para cambiar al modo Estilo, en la barra de herramientas de la página, **pulse>>Estilo**.
 
-![Propiedades del gráfico disponibles para aplicar estilo](assets/chart-styling.png)
+![Propiedades de gráfico disponibles para el estilo](assets/chart-styling.png)
 
 ## Usar funciones en el gráfico {#use-functions}
 
@@ -124,15 +124,15 @@ Las siguientes funciones están disponibles de forma predeterminada con el compo
 * **Media (media)**: Devuelve la media de los valores del eje X o Y para un valor determinado del otro eje.
 * **Sum**: Devuelve la suma de todos los valores del eje X o Y para un valor determinado del otro eje.
 * **Máximo**: Devuelve el máximo de los valores del eje X o Y para un valor determinado del otro eje.
-* **Frecuencia**: Devuelve el número de valores en el eje X o Y para un valor determinado del otro eje.
-* **Intervalo**: Devuelve la diferencia entre el máximo y el mínimo de los valores del eje X o Y para un valor determinado del otro eje.
-* **Mediana**: Devuelve el valor que separa los valores más altos e inferiores a la mitad en el eje X o Y para un valor determinado en el otro eje.
+* **Frecuencia**: Devuelve el número de valores del eje X o Y para un valor determinado del otro eje.
+* **Rango**: Devuelve la diferencia entre el máximo y el mínimo de los valores del eje X o Y para un valor determinado del otro eje.
+* **Mediana**: Devuelve el valor que separa los valores más altos e inferiores a la mitad en los ejes X o Y para un valor determinado en el otro eje.
 * **Mínimo**: Devuelve el mínimo de los valores del eje X o Y para un valor determinado del otro eje.
-* **Modo**: Devuelve el valor con la mayoría de las incidencias en el eje X o Y para un valor determinado en el otro eje
+* **Modo**: Devuelve el valor con la mayoría de las ocurrencias en el eje X o Y para un valor determinado en el otro eje
 
 ### Funciones personalizadas {#custom-functions}
 
-Además de utilizar las funciones predeterminadas en los gráficos, puede escribir [funciones personalizadas](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) en JavaScript y haga que estén disponibles en la lista de funciones del componente Gráfico.
+Además de usar las funciones predeterminadas en los gráficos, puede escribir [funciones personalizadas](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) en JavaScript y ponerlas a disposición en la lista de funciones del componente Gráfico.
 
 Una función toma una matriz o valores y un nombre de categoría como entradas y devuelve un valor. Por ejemplo:
 
@@ -151,8 +151,8 @@ Una vez que haya escrito una función personalizada, haga lo siguiente para que 
 1. Agregue la función personalizada en la biblioteca de cliente asociada al formulario o documento adaptable.
 1. En CRXDE Lite, cree un nodo nt:unstructured en la carpeta de aplicaciones con las siguientes propiedades:
    * Establezca guideComponentType en fd/af/reducer. (obligatorio)
-   * Establezca este valor en un nombre completo de la función de JavaScript personalizada. (obligatorio)
-   * Establezca jcr:description con un nombre significativo. Aparece en el **Usar función** lista desplegable. Por ejemplo, **Multiplicar**.
+   * Establezca este valor en un nombre completo de la función personalizada de JavaScript. (obligatorio)
+   * Establezca jcr:description con un nombre significativo. Aparece en la lista desplegable **Usar función**. Por ejemplo, **Multiplicar**.
    * Establezca qtip para una breve descripción de la función. Aparece como información del objeto al pasar el puntero sobre el nombre de la función en la lista desplegable Usar función.
    * Haga clic en **Guardar todo** para guardar la configuración.
    * La función ahora está disponible para usarla en el gráfico.
@@ -169,7 +169,7 @@ Un gráfico se actualiza automáticamente cuando los usuarios realizan una de la
 
 ## Usar tipo de gráfico en reglas de formularios adaptables {#chart-in-rules}
 
-La propiedad chartType especifica el tipo de gráfico. Los valores posibles son circular, circular, barra, línea, punto de línea, punto y área. Es una propiedad que se puede utilizar como script, lo que significa que se puede utilizar en [reglas de formularios adaptables](/help/forms/using/rule-editor.md) para manipular las configuraciones de gráficos. Vamos a entenderlo con la ayuda de un ejemplo.
+La propiedad chartType especifica el tipo de gráfico. Los valores posibles son circular, circular, barra, línea, punto de línea, punto y área. Es una propiedad que se puede utilizar como script, lo que significa que se puede usar en [reglas de formularios adaptables](/help/forms/using/rule-editor.md) para manipular las configuraciones de gráficos. Vamos a entenderlo con la ayuda de un ejemplo.
 
 Tenga en cuenta que ha configurado un gráfico de columnas. Sin embargo, también desea proporcionar a los usuarios una opción para seleccionar un tipo de gráfico diferente de una lista desplegable y volver a dibujar el gráfico. Puede conseguirlo utilizando la propiedad chartType en una regla de la siguiente manera:
 
@@ -177,12 +177,12 @@ Tenga en cuenta que ha configurado un gráfico de columnas. Sin embargo, tambié
 1. Seleccione el componente y pulse ![Configuración](cmppr1.png).
 1. Especifique un título para la lista desplegable. Por ejemplo, Seleccionar tipo de gráfico.
 1. Agregue los tipos de gráficos admitidos en la sección Elementos para rellenar la lista desplegable. Haga clic en **Listo**.
-   ![Menú desplegable Seleccionar gráfico](chart-drop-down.png)
+   ![Menú desplegable de selección de gráfico](chart-drop-down.png)
 
 1. Seleccione el componente desplegable y pulse ![Texto alternativo](rule_editor_icon.png). En el editor de reglas, escriba una regla en el editor de reglas visual como se muestra a continuación.
-   ![Configuración de reglas de gráfico](assets/chart-rules.png)
+   ![Estableciendo reglas de gráficos](assets/chart-rules.png)
 
-   En este ejemplo, el nombre del elemento del componente del gráfico es **myChart**.
+   En este ejemplo, el nombre de elemento del componente de gráfico es **myChart**.
 
    Como alternativa, puede escribir las siguientes reglas en el editor de código.
 

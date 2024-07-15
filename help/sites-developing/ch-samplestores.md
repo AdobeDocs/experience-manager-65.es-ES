@@ -32,13 +32,13 @@ ContextHub proporciona varios candidatos de tienda de muestra que puede utilizar
 
 Almacenar para segmentos de ContextHub resueltos y no resueltos. Recupera automáticamente segmentos del Administrador de segmentos de ContextHub.
 
-### Ubicación de origen {#source-location-segmentation}
+### Ubicación de Source {#source-location-segmentation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
 ### Implementación de base {#base-implementation-segmentation}
 
-El candidato del almacén de aem.segmentation amplía [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+El candidato del almacén de segmentación aem.js amplía [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuración {#configuration-segmentation}
 
@@ -58,13 +58,13 @@ Al crear un almacén de segmentación de aem.js, no es necesario proporcionar un
 
 El candidato del almacén de muestra contexthub.geolocation utiliza Google Maps para obtener y almacenar información sobre la ubicación del cliente.
 
-### Ubicación de origen {#source-location-geolocation}
+### Ubicación de Source {#source-location-geolocation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
 ### Implementación de base {#base-implementation-geolocation}
 
-El candidato del almacén contexthub.geolocation amplía [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+El candidato del almacén de contexthub.geolocation amplía [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuración {#configuration-geolocation}
 
@@ -110,13 +110,13 @@ El almacén utiliza un árbol de datos similar al siguiente ejemplo:
 
 >[!NOTE]
 >
->Una política de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. AEM AEM Por lo tanto, se fuerza el uso de https para las llamadas a la API de geolocalización si también se está ejecutando en https, por lo que también se fuerza el uso de https. De lo contrario, http se utiliza para cumplir con la política del mismo origen. Consulte [esta publicación de blog de Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obtener más información sobre el cambio en Chrome.
+>Una directiva de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. AEM AEM Por lo tanto, se fuerza el uso de https para las llamadas a la API de geolocalización si también se está ejecutando en https, por lo que también se fuerza el uso de https. De lo contrario, http se utiliza para cumplir con la política del mismo origen. Consulte [esta publicación de blog de Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obtener más información sobre el cambio en Chrome.
 
 ## contexthub.surferinfo Candidato de tienda de muestra {#contexthub-surferinfo-sample-store-candidate}
 
 Almacena información sobre el entorno del cliente actual, como el dispositivo, la ventana, el explorador, la fecha y la hora.
 
-### Ubicación de origen {#source-location-surferinfo}
+### Ubicación de Source {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
@@ -183,13 +183,13 @@ Las tiendas que utilizan este candidato de tienda tienen un árbol de datos simi
 
 El candidato del almacén de muestra granite.emulators almacena información sobre los dispositivos cliente.
 
-### Ubicación de origen {#source-location-emulators}
+### Ubicación de Source {#source-location-emulators}
 
 `/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
 ### Implementación de base {#base-implementation-emulators}
 
-El candidato del almacén contexthub.geolocation amplía [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+El candidato del almacén de contexthub.geolocation amplía [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuración {#configuration-emulators}
 
@@ -316,7 +316,7 @@ El árbol de datos de tienda es similar al siguiente ejemplo:
 
 Almacena información sobre el usuario actual.
 
-### Ubicación de origen {#source-location-profile}
+### Ubicación de Source {#source-location-profile}
 
 `/libs/settings/cloudsettings/legacy/contexthub/profile`
 

@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Rating Essentials {#rating-essentials}
 
-El componente de calificación, a [corresponder](tally.md) subclase, permite a los miembros de la comunidad que iniciaron sesión clasificar una función del sitio web.
+El componente de clasificación, una subclase [tally](tally.md), permite que los miembros de la comunidad que iniciaron sesión clasifiquen una característica del sitio web.
 
-Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con un único `tally name` propiedad.
+Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con una propiedad `tally name` única.
 
 No se admite la publicación anónima de una clasificación. Los visitantes del sitio deben registrarse e iniciar sesión para participar en una valoración solo una vez. El visitante (miembro) que ha iniciado sesión puede cambiar su clasificación en cualquier momento.
 
@@ -34,14 +34,14 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
-   <td>Sí, las propiedades se pueden editar en <i>diseño </i>modo</td>
+   <td>Sí, las propiedades se pueden editar en el modo </i>design<i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td> cq.social.hbs.rating</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td><p> /libs/social/tally/components/hbs/rating/rating.hbs<br /> /libs/social/tally/components/hbs/rating/display.hbs<br /> /libs/social/tally/components/hbs/rating/histogram.hbs</p> </td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td><p>Consulte <a href="rating.md">Uso de clasificación</a></p> </td>
+   <td><p>Ver <a href="rating.md">Usando clasificación</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -61,7 +61,7 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
 
 * [API de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Extremos de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Puntos finales de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
@@ -70,13 +70,13 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Resumen del proveedor de recursos de almacenamiento](srp.md) - introducción y descripción general del uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - directrices de codificación.
-* [Refactorización de SocialUtils](socialutils.md) : asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [SRP y UGC Essentials](srp-and-ugc.md): métodos y ejemplos de utilidades SRP.
+* [Acceder a UGC con SRP](accessing-ugc-with-srp.md): directrices de codificación.
+* [Refactorización de SocialUtils](socialutils.md): asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.

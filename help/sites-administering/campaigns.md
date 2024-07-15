@@ -22,9 +22,9 @@ La administración de campañas ofrece a los especialistas en marketing digital 
 
 Si está administrando campañas (incluidas páginas de aterrizaje), es posible que tenga que hacer lo siguiente:
 
-* **Definición de segmentos** : Debe definir segmentos y estrategias para el contenido de destino.
-* **Preparar el HTML para las páginas de aterrizaje** AEM - Las páginas de aterrizaje permiten a los autores importar diseño y contenido directamente en una página de la de forma rápida y sencilla. Debe preparar el HTML para que los recursos se puedan importar correctamente. Las páginas de aterrizaje son útiles al crear páginas de aterrizaje de marketing que solo están activas durante un tiempo limitado y deben crearse rápidamente.
-* **Integración con SiteCatalyst** : Puede integrar páginas de aterrizaje con el SiteCatalyst.
+* **Definir segmentos**: debe definir segmentos y estrategias para el contenido de destino.
+* **Preparar HTML AEM para páginas de aterrizaje**: las páginas de aterrizaje permiten a los autores importar diseño y contenido directamente en una página de de forma rápida y sencilla. Debe preparar el HTML para que los recursos se puedan importar correctamente. Las páginas de aterrizaje son útiles al crear páginas de aterrizaje de marketing que solo están activas durante un tiempo limitado y deben crearse rápidamente.
+* **Integrar con el SiteCatalyst**: puede integrar páginas de aterrizaje con el SiteCatalyst.
 
 Consulte las siguientes páginas:
 

@@ -31,7 +31,7 @@ Esta página proporciona información general sobre los componentes de Adobe Exp
 * Disponen de una interfaz de usuario estandarizada.
 * Tienen un comportamiento de edición que se puede configurar.
 * Utilice cuadros de diálogo creados con subelementos basados en componentes de la interfaz de usuario de Granite
-* Se desarrollan utilizando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) (recomendado) o JSP.
+* Se han desarrollado con [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) (recomendado) o JSP.
 * Se pueden desarrollar para crear componentes personalizados que amplíen la funcionalidad predeterminada.
 
 Como los componentes son modulares, puede hacer lo siguiente:
@@ -45,11 +45,11 @@ Cada componente AEM:
 
 * Es un tipo de recurso.
 * Es una colección de scripts que realizan completamente una función específica.
-* Puede funcionar en *aislamiento* AEM , es decir, dentro de un portal o un portal.
+* AEM Puede funcionar en *aislamiento*, lo que significa que está dentro de un portal o dentro de un portal.
 
 ## AEM Componentes de serie dentro de la configuración de la interfaz de usuario de la aplicación {#out-of-the-box-components-within-aem}
 
-AEM La variedad de productos incluye una gran variedad de [componentes listos para usar](/help/sites-authoring/default-components.md) que proporcionan funcionalidades completas, entre las que se incluyen:
+AEM viene con una variedad de [componentes listos para usar](/help/sites-authoring/default-components.md) que proporcionan funcionalidades completas, entre las que se incluyen:
 
 * Sistema de párrafos ( `parsys`)
 * Página ( `responsivegrid` - solo IU táctil)
@@ -57,7 +57,7 @@ AEM La variedad de productos incluye una gran variedad de [componentes listos pa
 * Imagen, con texto adjunto
 * Barra de herramientas
 
-Los componentes proporcionados y su uso dentro de [sitios web de We.Retail de muestra](/help/sites-developing/we-retail.md) Los componentes proporcionados ilustran cómo implementar y utilizar componentes de. Los componentes se proporcionan con todo el código fuente y se pueden utilizar tal cual o como puntos de partida para los componentes modificados o ampliados.
+Los componentes proporcionados y su uso en [los sitios web de We.Retail de ejemplo](/help/sites-developing/we-retail.md) proporcionados ilustran cómo implementar y utilizar componentes. Los componentes se proporcionan con todo el código fuente y se pueden utilizar tal cual o como puntos de partida para los componentes modificados o ampliados.
 
 ### Componentes principales y componentes básicos {#core-components-and-foundation-components}
 
@@ -66,19 +66,19 @@ Hay dos conjuntos de componentes de la aplicación proporcionados por el Adobe A
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Componentes de base](/help/sites-authoring/default-components-foundation.md)
 
-**Componentes principales** AEM se han introducido con la versión 6.3 de la aplicación y ofrecen funciones flexibles y personalizables de creación de contenido. El [Sitio de referencia de We.Retail](/help/sites-developing/we-retail.md) ilustra cómo se pueden utilizar los componentes principales y representa las prácticas recomendadas actuales de desarrollo de componentes.
+AEM Los **componentes principales** se introdujeron con la versión 6.3 y ofrecen funciones flexibles y personalizables para la creación de contenido. El [sitio de referencia de We.Retail](/help/sites-developing/we-retail.md) ilustra cómo se pueden utilizar los componentes principales y representa las prácticas recomendadas actuales de desarrollo de componentes.
 
-**Componentes básicos** AEM AEM han estado disponibles con la opción de instalación de para muchas versiones y están disponibles de forma predeterminada en una instalación estándar de la versión de la instalación de la aplicación de la versión de la aplicación de la versión de la aplicación de la manera predeterminada Aunque se siguen admitiendo, la mayoría han quedado obsoletas, ya no se mejoran y se basan en tecnologías heredadas.
+AEM AEM **Los componentes de base** han estado disponibles con la opción de instalación de muchas versiones y están disponibles de forma predeterminada en una instalación de tipo de instalación estándar de la versión de la base de datos de la versión de la aplicación de la versión de la aplicación de. Aunque se siguen admitiendo, la mayoría han quedado obsoletas, ya no se mejoran y se basan en tecnologías heredadas.
 
 >[!NOTE]
 >
 >[Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) representan las prácticas recomendadas actuales para el diseño y el desarrollo de componentes y sirven como implementaciones de referencia.
 >
->[AEM Herramientas de modernización de](modernization-tools.md) puede ayudar en la migración a los componentes principales.
+>AEM [Las herramientas de modernización de](modernization-tools.md) pueden ayudar en la migración a los componentes principales.
 
 ### Visualización de componentes disponibles {#viewing-available-components}
 
-AEM Para obtener una descripción general de todos los componentes disponibles en la instancia de la, utilice el [Consola Componentes](/help/sites-authoring/default-components-console.md).
+AEM Para obtener una descripción general de todos los componentes disponibles en la instancia de la, use la [Consola de componentes](/help/sites-authoring/default-components-console.md).
 
 Como alternativa, también puede utilizar CRXDE Lite para obtener una lista de todos los componentes disponibles en el repositorio.
 

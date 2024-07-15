@@ -31,9 +31,9 @@ Después de crear la configuración, debe [activarla](#activating-the-translator
 
 El siguiente procedimiento crea una configuración de Microsoft Translator.
 
-1. En el [panel de navegación,](/help/sites-authoring/basic-handling.md#first-steps) click **Herramientas** > **Cloud Service** > **Cloud Service de traducción**.
+1. En el panel de navegación [haga clic en **Herramientas** > **Cloud Service** > **Cloud Service de traducción**.](/help/sites-authoring/basic-handling.md#first-steps)
 1. Vaya a donde desea crear la configuración. Normalmente, se encuentra en la raíz del sitio o puede ser una configuración global predeterminada.
-1. Haga clic en **Crear** botón.
+1. Haga clic en el botón **Crear**.
 1. Defina la configuración.
    1. Seleccione **Microsoft Translator** en la lista desplegable.
    1. Escriba un título para la configuración. El título identifica la configuración en la consola Cloud Services y en las listas desplegables de propiedades de página.
@@ -46,26 +46,26 @@ El siguiente procedimiento crea una configuración de Microsoft Translator.
 
    ![Edición de la configuración de traducción](assets/edit-translation-config.png)
 
-1. Clic **Connect** para verificar la conexión.
+1. Haga clic en **Conectar** para verificar la conexión.
 1. Haga clic en **Guardar y cerrar**.
 
 ## Actualización de la configuración de la licencia de versión de prueba de Microsoft Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Las páginas de configuración de Microsoft Translation proporcionan un práctico vínculo al sitio web de Microsoft para obtener una suscripción de cuenta adecuada para los sistemas de producción.
 
-1. En el [panel de navegación,](/help/sites-authoring/basic-handling.md#first-steps) click **Herramientas** > **Cloud Service** > **Cloud Service de traducción**.
+1. En el panel de navegación [haga clic en **Herramientas** > **Cloud Service** > **Cloud Service de traducción**.](/help/sites-authoring/basic-handling.md#first-steps)
 1. Haga clic en la configuración existente de Microsoft Translator.
-1. Clic **Editar**.
-1. En el **Editar configuración** , haga clic en **Actualizar suscripción**. Se abre una página web de Microsoft con más detalles acerca del servicio.
+1. Haga clic en **Editar**.
+1. En la ventana **Editar configuración**, haga clic en **Actualizar suscripción**. Se abre una página web de Microsoft con más detalles acerca del servicio.
 
 ## Personalización del motor de Microsoft Translator {#customizing-your-microsoft-translator-engine}
 
 Las páginas de configuración de Microsoft Translation proporcionan un práctico vínculo al sitio web de Microsoft para personalizar el motor de Microsoft Translator.
 
-1. En el [panel de navegación,](/help/sites-authoring/basic-handling.md#first-steps) click **Herramientas** > **Cloud Service** > **Cloud Service de traducción**.
+1. En el panel de navegación [haga clic en **Herramientas** > **Cloud Service** > **Cloud Service de traducción**.](/help/sites-authoring/basic-handling.md#first-steps)
 1. Haga clic en la configuración existente de Microsoft Translator.
-1. Clic **Editar**.
-1. En el **Editar configuración** , haga clic en **Personalizar Translator**. Utilice la página web de Microsoft que se abre para personalizar el servicio.
+1. Haga clic en **Editar**.
+1. En la ventana **Editar configuración**, haga clic en **Personalizar traductor**. Utilice la página web de Microsoft que se abre para personalizar el servicio.
 
 ## Activación de las configuraciones del servicio de traducción {#activating-the-translator-service-configurations}
 

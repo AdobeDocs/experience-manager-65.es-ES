@@ -26,11 +26,11 @@ La función de calendario permite proporcionar información de eventos de la com
 Esta sección de la documentación describe
 
 * AEM Adición de la función de calendario a un sitio de
-* Ajustes de configuración para `Calendar` componentes
+* Ajustes de configuración para componentes de `Calendar`
 
 ## Agregar un calendario a una página {#adding-a-calendar-to-a-page}
 
-Para agregar un `Calendar` a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un componente `Calendar` a una página en modo de autor, use el explorador de componentes para localizar
 
 * `Communities / Calendar`
 
@@ -38,21 +38,21 @@ Y arrástrela a su lugar en una página, como una posición relativa a la funci�
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) están incluidos, así es como se `Calendar` aparece el componente.
+Cuando se incluyen las [bibliotecas requeridas del cliente](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side), así es como aparece el componente `Calendar`.
 
 ![componente de calendario](assets/calendar-component.png)
 
 ### Configurar el calendario {#configuring-calendar}
 
-Seleccione el colocado `Calendar` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el componente `Calendar` colocado para que pueda acceder y seleccionar el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
-![configure-calendar](assets/configure-calendar1.png)
+![configurar-calendario](assets/configure-calendar1.png)
 
 #### Pestaña Configuración {#settings-tab}
 
-En el **Configuración** , especifique si desea permitir que se apliquen etiquetas a las entradas del calendario.
+En la ficha **Configuración**, especifique si desea permitir que se apliquen etiquetas a las entradas del calendario.
 
 * **Eventos por página**
 
@@ -72,7 +72,7 @@ En el **Configuración** , especifique si desea permitir que se apliquen etiquet
 
 * **Permitir etiquetado**
 
-  Si se selecciona esta opción, permite a los miembros agregar etiquetas de etiqueta a los eventos que publican (consulte **Campo de etiqueta** pestaña). La opción predeterminada está activada.
+  Si se selecciona esta opción, se permite a los miembros agregar etiquetas de etiqueta a los eventos que publican (consulte **Campo de etiqueta** en la pestaña). La opción predeterminada está activada.
 
 * **Permitir cargas de archivos**
 
@@ -84,11 +84,11 @@ En el **Configuración** , especifique si desea permitir que se apliquen etiquet
 
 * **Tamaño máximo de archivo**
 
-  Relevante solo si `Allow File Uploads` está marcada. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+  Relevante solo si `Allow File Uploads` está marcado. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
 
 * **Tipos de archivo permitidos**
 
-  Relevante solo si `Allow File Uploads` está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se podrán cargar los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
+  Relevante solo si `Allow File Uploads` está marcado. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se podrán cargar los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
@@ -98,7 +98,7 @@ En el **Configuración** , especifique si desea permitir que se apliquen etiquet
 
   Lista separada por comas de las extensiones de archivo de imagen con el separador de &quot;puntos&quot;. El valor predeterminado es `.jpg,.jpeg,.png,.gif,.bmp`.
 
-* **Permitir respuestas de debate**
+* **Permitir respuestas de subprocesos**
 
   Si se selecciona esta opción, se permiten las respuestas a los comentarios publicados en el evento del calendario. La opción predeterminada está activada.
 
@@ -106,7 +106,7 @@ En el **Configuración** , especifique si desea permitir que se apliquen etiquet
 
   Si se selecciona esta opción, permite que los miembros eliminen los comentarios y los eventos de calendario que hayan publicado. La opción predeterminada está activada.
 
-* **Permitir votación**
+* **Permitir Votación**
 
   Si se selecciona, se debe incluir la función de votación con un evento de calendario. La opción predeterminada está activada.
 
@@ -114,7 +114,7 @@ En el **Configuración** , especifique si desea permitir que se apliquen etiquet
 
   Mostrar rutas en la página de eventos. La opción predeterminada está activada.
 
-* **Filtro de intervalo de fechas**
+* **Filtro de intervalo de fecha**
 
   Define el número de días agregados a la fecha actual para calcular el valor &quot;Hasta&quot; del filtro de página con lista de eventos de calendario. El número predeterminado es 30.
 
@@ -122,15 +122,15 @@ En el **Configuración** , especifique si desea permitir que se apliquen etiquet
 
   Si se selecciona, la idea se puede identificar como [contenido destacado](/help/communities/featured.md). El valor predeterminado está desmarcado.
 
-En el **Moderación de usuario** , especifique cómo se administran los temas expuestos y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+En la ficha **Moderación de usuarios** especifique cómo se administran los temas publicados y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderar contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
 #### Pestaña Moderación de usuario {#user-moderation-tab}
 
-* **Denegar entradas**
+* **Denegar publicaciones**
 
   Si se selecciona, se permite a los moderadores miembros de confianza denegar publicaciones e impedir que aparezcan en el foro público. La opción predeterminada está activada.
 
-* **Cerrar/volver a abrir eventos**
+* **Cerrar/Volver a abrir eventos**
 
   Si se selecciona, los moderadores de miembros de confianza pueden cerrar un evento para realizar más ediciones y comentarios, y también pueden volver a abrir un evento. La opción predeterminada está activada.
 
@@ -156,11 +156,11 @@ En el **Moderación de usuario** , especifique cómo se administran los temas ex
 
 #### Pestaña Campo de etiqueta {#tag-field-tab}
 
-En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se permiten en la **Configuración** están limitadas según las áreas de nombres seleccionadas.
+En la ficha **Campo de etiqueta**, las etiquetas que se pueden aplicar, si se permiten en la ficha **Configuración**, están limitadas según las áreas de nombres elegidas.
 
 * **Áreas de nombres permitidas**
 
-  Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
+  Relevante si `Allow Tagging` está marcado en la ficha **Configuración**. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 
 * **Límite de sugerencias**
 
@@ -168,11 +168,11 @@ En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se
 
 >[!NOTE]
 >
->Visita [Administración de etiquetas](/help/sites-administering/tags.md) donde puede aprender a añadir un área de nombres de etiqueta (taxonomía).
+>Visite [Administración de etiquetas](/help/sites-administering/tags.md), donde aprenderá a agregar un área de nombres de etiqueta (taxonomía).
 
 #### Pestaña Traducción {#translation-tab}
 
-En el **Traducción** , si la traducción está habilitada para el sitio de la comunidad, la traducción puede configurarse para traducir todo el hilo (evento y comentarios) en lugar de publicaciones específicas.
+En la ficha **Traducción**, si la traducción está habilitada para el sitio de la comunidad, la traducción puede configurarse para traducir todo el hilo (evento y comentarios) en lugar de publicaciones específicas.
 
 * **Traducir todo**
 
@@ -188,18 +188,18 @@ Otras capacidades dependen de si el visitante del sitio es un moderador, adminis
 
 ### Moderadores y administradores {#moderators-and-administrators}
 
-Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar lo siguiente [tareas de moderación](/help/communities/moderate-ugc.md) (según lo permitido por la configuración del componente) en todos los eventos de calendario y comentarios publicados en un evento.
+Cuando el usuario que inició sesión tiene privilegios de moderador o administrador, puede realizar [tareas de moderación](/help/communities/moderate-ugc.md) (según lo permita la configuración del componente) en todos los eventos de calendario y comentarios publicados en un evento.
 
-![moderators-view](assets/moderators-view.png)
+![moderadores-ver](assets/moderators-view.png)
 
 #### Miembros {#members}
 
-Cuando el usuario que ha iniciado sesión es miembro de la comunidad o [miembro privilegiado](/help/communities/users.md#privileged-members-group) (según la configuración), pueden seleccionar `New Event` para crear y publicar un nuevo evento de calendario.
+Cuando el usuario que inició sesión es un miembro de la comunidad o [miembro privilegiado](/help/communities/users.md#privileged-members-group) (según la configuración), puede seleccionar `New Event` para crear y publicar un nuevo evento de calendario.
 
 Concretamente, pueden:
 
 * Creación de un evento de calendario
-* Publicar un comentario en un evento de calendario
+* Post un comentario a un evento de calendario
 * Editar su propio evento o comentario del calendario
 * Eliminar su propio evento o comentario del calendario
 * Marcar los eventos o comentarios del calendario de otros usuarios
@@ -212,14 +212,14 @@ Concretamente, pueden:
 
 Los visitantes del sitio que no hayan iniciado sesión solo pueden leer los eventos de calendario publicados, traducirlos si se admiten, pero no pueden agregar un evento o comentario ni marcar los eventos o comentarios de otros.
 
-![anonymous-user-view](assets/anonymous-user-view1.png)
+![vista-de-usuario-anónimo](assets/anonymous-user-view1.png)
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) para desarrolladores.
+Encontrará más información en la página de [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) para desarrolladores.
 
-Para ver la moderación de los eventos de calendario y los comentarios, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+Para moderar eventos de calendario y comentarios, vea [Moderar contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
 Para etiquetar eventos de calendario y comentarios, consulte [Etiquetado del contenido generado por el usuario](/help/communities/tag-ugc.md).
 
-Para ver la traducción de los eventos de calendario y los comentarios, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
+Para obtener la traducción de eventos de calendario y comentarios, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).

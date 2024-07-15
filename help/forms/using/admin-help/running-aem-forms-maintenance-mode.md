@@ -25,7 +25,7 @@ Evite invocar procesos mientras el servidor se encuentra en modo de mantenimient
 * Si el proceso es de larga duración, se añade a la base de datos de trabajos, pero no se inicia. AEM Al salir del modo de mantenimiento, los formularios de la procesan los trabajos de larga duración en su cola, incluso si el servidor se reinició mientras estaba en modo de mantenimiento.
 * Si el proceso es de corta duración, se procesa de inmediato.
 
-**AEM Poner formularios en modo de mantenimiento**
+AEM **Poner formularios en modo de mantenimiento**
 
 1. En un explorador web, introduzca:
 
@@ -37,7 +37,7 @@ Evite invocar procesos mientras el servidor se encuentra en modo de mantenimient
    >
    >Si apaga el servidor mientras está en modo de mantenimiento, cuando se reinicia aún estará en modo de mantenimiento. Desactive el modo de mantenimiento cuando haya terminado sus tareas de mantenimiento.
 
-**AEM Comprobar si el formulario de la se está ejecutando en modo de mantenimiento**
+AEM **Compruebe si formularios en la que se está ejecutando el servicio de mantenimiento**
 
 1. En un explorador web, introduzca:
 

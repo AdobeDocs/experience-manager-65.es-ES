@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # Pasar documentos al servicio de Forms {#passing-documents-to-the-formsservice}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-El servicio AEM Forms procesa PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Un formulario PDF interactivo se basa en un diseño de formulario que normalmente se guarda como archivo XDP y se crea en Designer. A partir de AEM Forms, puede pasar un `com.adobe.idp.Document` que contiene el diseño de formulario al servicio Forms. A continuación, el servicio Forms procesa el diseño de formulario en la variable `com.adobe.idp.Document` objeto.
+El servicio AEM Forms procesa PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Un formulario PDF interactivo se basa en un diseño de formulario que normalmente se guarda como archivo XDP y se crea en Designer. A partir de AEM Forms, puede pasar un objeto `com.adobe.idp.Document` que contenga el diseño de formulario al servicio Forms. A continuación, el servicio Forms procesa el diseño de formulario en el objeto `com.adobe.idp.Document`.
 
-Una ventaja de pasar un `com.adobe.idp.Document` objeto del servicio de Forms es que otras operaciones del servicio devuelven un `com.adobe.idp.Document` ejemplo. Es decir, puede obtener una `com.adobe.idp.Document` instancia de otra operación de servicio y procesarla. Por ejemplo, supongamos que un archivo XDP se almacena en un nodo de Content Services (obsoleto) denominado `/Company Home/Form Designs`, como se muestra en la siguiente ilustración.
+Una ventaja de pasar un objeto `com.adobe.idp.Document` al servicio Forms es que otras operaciones del servicio devuelven una instancia `com.adobe.idp.Document`. Es decir, puede obtener una instancia de `com.adobe.idp.Document` de otra operación de servicio y procesarla. Por ejemplo, supongamos que un archivo XDP se almacena en un nodo de Content Services (obsoleto) denominado `/Company Home/Form Designs`, como se muestra en la siguiente ilustración.
 
-Puede recuperar mediante programación Loan.xdp de Content Services (obsoleto) (obsoleto) y pasar el archivo XDP al servicio de Forms dentro de un `com.adobe.idp.Document` objeto.
+Puede recuperar mediante programación Loan.xdp de Content Services (obsoleto) (obsoleto) y pasar el archivo XDP al servicio de Forms dentro de un objeto `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
@@ -45,21 +45,21 @@ Para pasar un documento obtenido de Content Services (obsoleto) (obsoleto) al se
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente con Java, incluya los archivos JAR necesarios. Si utiliza servicios web, incluya los archivos proxy.
 
-**Crear un objeto de API de cliente de Forms y Administración de documentos**
+**Crear un Forms y un objeto de API de cliente de administración de documentos**
 
 Para poder realizar mediante programación una operación de API de servicio de Forms, cree un objeto de API de cliente de Forms. Además, como este flujo de trabajo recupera un archivo XDP de los servicios de contenido (obsoleto), cree un objeto de API de administración de documentos.
 
-**Recuperar el diseño de formulario de Content Services (obsoleto)**
+**Recuperar el diseño de formulario de los servicios de contenido (obsoleto)**
 
-Recupere el archivo XDP de los servicios de contenido (obsoleto) mediante Java o la API de servicio web. El archivo XDP se devuelve en un `com.adobe.idp.Document` instancia de (o un `BLOB` si utiliza servicios web). A continuación, puede pasar el `com.adobe.idp.Document` al servicio Forms.
+Recupere el archivo XDP de los servicios de contenido (obsoleto) mediante Java o la API de servicio web. El archivo XDP se devuelve en una instancia `com.adobe.idp.Document` (o en una instancia `BLOB` si utiliza servicios web). A continuación, puede pasar la instancia `com.adobe.idp.Document` al servicio Forms.
 
-**Procesar un formulario interactivo de PDF**
+**Procesar un formulario de PDF interactivo**
 
-Para procesar un formulario interactivo, pase el `com.adobe.idp.Document` instancia devuelta por Content Services (obsoleta) al servicio Forms.
+Para procesar un formulario interactivo, pase la instancia `com.adobe.idp.Document` devuelta por Content Services (obsoleta) al servicio Forms.
 
 >[!NOTE]
 >
->Puede pasar un `com.adobe.idp.Document` que contiene el diseño de formulario al servicio Forms. Dos nuevos métodos llamados `renderPDFForm2` y `renderHTMLForm2` aceptar un `com.adobe.idp.Document` que contiene un diseño de formulario.
+>Puede pasar un(a) `com.adobe.idp.Document` que contenga el diseño de formulario al servicio Forms. Dos nuevos métodos denominados `renderPDFForm2` y `renderHTMLForm2` aceptan un objeto `com.adobe.idp.Document` que contiene un diseño de formulario.
 
 **Realizar una acción con el flujo de datos del formulario**
 
@@ -83,41 +83,41 @@ Pase un documento obtenido de Content Services (obsoleto) mediante el servicio F
 
 1. Crear un objeto de API de cliente de Forms y Administración de documentos
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión. (Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Crear un `FormsServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
-   * Crear un `DocumentManagementServiceClientImpl` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión. (Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Cree un objeto `FormsServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
+   * Cree un objeto `DocumentManagementServiceClientImpl` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Recuperar el diseño de formulario de Content Services (obsoleto)
 
-   Invoque el `DocumentManagementServiceClientImpl` del objeto `retrieveContent` y pasar los siguientes valores:
+   Invoque el método `retrieveContent` del objeto `DocumentManagementServiceClientImpl` y pase los siguientes valores:
 
    * Un valor de cadena que especifica el almacén donde se agrega el contenido. El almacén predeterminado es `SpacesStore`. Este valor es un parámetro obligatorio.
-   * Un valor de cadena que especifica la ruta completa del contenido que se va a recuperar (por ejemplo, `/Company Home/Form Designs/Loan.xdp`). Este valor es un parámetro obligatorio.
+   * Valor de cadena que especifica la ruta de acceso completa del contenido que se va a recuperar (por ejemplo, `/Company Home/Form Designs/Loan.xdp`). Este valor es un parámetro obligatorio.
    * Un valor de cadena que especifica la versión. Este valor es un parámetro opcional y puede pasar una cadena vacía. En este caso, se recupera la versión más reciente.
 
-   El `retrieveContent` El método devuelve un valor `CRCResult` que contiene el archivo XDP. Obtenga una `com.adobe.idp.Document` invocando el método `CRCResult` del objeto `getDocument` método.
+   El método `retrieveContent` devuelve un objeto `CRCResult` que contiene el archivo XDP. Obtenga una instancia `com.adobe.idp.Document` invocando el método `getDocument` del objeto `CRCResult`.
 
 1. Procesar un formulario interactivo de PDF
 
-   Invoque el `FormsServiceClient` del objeto `renderPDFForm2` y pasar los siguientes valores:
+   Invoque el método `renderPDFForm2` del objeto `FormsServiceClient` y pase los siguientes valores:
 
-   * A `com.adobe.idp.Document` que contiene el diseño de formulario recuperado de Content Services (obsoleto).
-   * A `com.adobe.idp.Document` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un vacío `com.adobe.idp.Document` objeto.
-   * A `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Este valor es un parámetro opcional y puede especificar `null` si no desea especificar opciones en tiempo de ejecución.
-   * A `URLSpec` que contiene valores de URI. Este valor es un parámetro opcional y puede especificar `null`.
-   * A `java.util.HashMap` que almacena archivos adjuntos. Este valor es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+   * Un objeto `com.adobe.idp.Document` que contiene el diseño de formulario recuperado de Content Services (obsoleto).
+   * Objeto `com.adobe.idp.Document` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un objeto `com.adobe.idp.Document` vacío.
+   * Objeto `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Este valor es un parámetro opcional y puede especificar `null` si no desea especificar opciones en tiempo de ejecución.
+   * Objeto `URLSpec` que contiene valores de URI. Este valor es un parámetro opcional y puede especificar `null`.
+   * Objeto `java.util.HashMap` que almacena datos adjuntos de archivos. Este valor es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
 
-   El `renderPDFForm` El método devuelve un valor `FormsResult` que contiene un flujo de datos de formulario que debe escribirse en el explorador web cliente.
+   El método `renderPDFForm` devuelve un objeto `FormsResult` que contiene una secuencia de datos de formulario que debe escribirse en el explorador web del cliente.
 
 1. Realizar una acción con el flujo de datos del formulario
 
-   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
-   * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
-   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
-   * Crear un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
-   * Crear un `java.io.InputStream` invocando el objeto de `com.adobe.idp.Document` del objeto `getInputStream` método.
-   * Cree una matriz de bytes y rellénela con el flujo de datos de formulario invocando el método `InputStream` del objeto `read` método. Pase la matriz de bytes como argumento.
-   * Invoque el `javax.servlet.ServletOutputStream` del objeto `write` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes a `write` método.
+   * Cree un objeto `com.adobe.idp.Document` invocando el método `getOutputContent` del objeto `FormsResult`.
+   * Obtenga el tipo de contenido del objeto `com.adobe.idp.Document` invocando su método `getContentType`.
+   * Establezca el tipo de contenido del objeto `javax.servlet.http.HttpServletResponse` invocando su método `setContentType` y pasando el tipo de contenido del objeto `com.adobe.idp.Document`.
+   * Cree un objeto `javax.servlet.ServletOutputStream` utilizado para escribir el flujo de datos de formulario en el explorador web del cliente invocando el método `getOutputStream` del objeto `javax.servlet.http.HttpServletResponse`.
+   * Cree un objeto `java.io.InputStream` invocando el método `getInputStream` del objeto `com.adobe.idp.Document`.
+   * Cree una matriz de bytes y rellénela con la secuencia de datos de formulario invocando el método `read` del objeto `InputStream`. Pase la matriz de bytes como argumento.
+   * Invoque el método `write` del objeto `javax.servlet.ServletOutputStream` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes al método `write`.
 
 **Consulte también**
 
@@ -133,68 +133,68 @@ Pase un documento obtenido de Content Services (obsoleto) mediante el servicio F
 
 1. Incluir archivos de proyecto
 
-   Cree un proyecto de Microsoft .NET que utilice MTOM. Dado que esta aplicación cliente invoca dos servicios de AEM Forms, cree dos referencias de servicio. Utilice la siguiente definición de WSDL para la referencia de servicio asociada al servicio de Forms: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
+   Cree un proyecto de Microsoft .NET que utilice MTOM. Dado que esta aplicación cliente invoca dos servicios de AEM Forms, cree dos referencias de servicio. Utilice la siguiente definición WSDL para la referencia de servicio asociada al servicio Forms: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
 
    Utilice la siguiente definición de WSDL para la referencia de servicio asociada al servicio de administración de documentos: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   Debido a que el `BLOB` El tipo de datos es común a ambas referencias de servicio. Califique completamente el `BLOB` tipo de datos al utilizarlo. En el inicio rápido del servicio web correspondiente, todas las etiquetas `BLOB` Las instancias de están totalmente cualificadas.
+   Dado que el tipo de datos `BLOB` es común a ambas referencias de servicio, califique completamente el tipo de datos `BLOB` al utilizarlo. En el inicio rápido del servicio web correspondiente, todas las instancias de `BLOB` están completamente calificadas.
 
    >[!NOTE]
    >
-   >Reemplazar `localhost`con la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que hospeda AEM Forms.
 
 1. Crear un objeto de API de cliente de Forms y Administración de documentos
 
-   * Crear un `FormsServiceClient` mediante su constructor predeterminado.
-   * Crear un `FormsServiceClient.Endpoint.Address` mediante el uso del objeto `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/FormsService?WSDL`). No es necesario que utilice el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio).
-   * Crear un `System.ServiceModel.BasicHttpBinding` al obtener el valor de la variable `FormsServiceClient.Endpoint.Binding` field. Convierta el valor devuelto en `BasicHttpBinding`.
-   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` field a `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
+   * Cree un objeto `FormsServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `FormsServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/FormsService?WSDL`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio).
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `FormsServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
+   * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario del formulario de la al campo `FormsServiceClient.ClientCredentials.UserName.UserName`.
+      * AEM Asigne el nombre de usuario de los formularios de la al campo `FormsServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `FormsServiceClient.ClientCredentials.UserName.Password`.
-      * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
    >
-   >Repita estos pasos para el `DocumentManagementServiceClient`cliente de servicio.
+   >Repita estos pasos para el cliente de servicio `DocumentManagementServiceClient`.
 
 1. Recuperar el diseño de formulario de Content Services (obsoleto)
 
-   Recupere contenido invocando el `DocumentManagementServiceClient` del objeto `retrieveContent` y pasando los siguientes valores:
+   Recupere contenido invocando el método `retrieveContent` del objeto `DocumentManagementServiceClient` y pasando los siguientes valores:
 
    * Un valor de cadena que especifica el almacén donde se agrega el contenido. El almacén predeterminado es `SpacesStore`. Este valor es un parámetro obligatorio.
-   * Un valor de cadena que especifica la ruta completa del contenido que se va a recuperar (por ejemplo, `/Company Home/Form Designs/Loan.xdp`). Este valor es un parámetro obligatorio.
+   * Valor de cadena que especifica la ruta de acceso completa del contenido que se va a recuperar (por ejemplo, `/Company Home/Form Designs/Loan.xdp`). Este valor es un parámetro obligatorio.
    * Un valor de cadena que especifica la versión. Este valor es un parámetro opcional y puede pasar una cadena vacía. En este caso, se recupera la versión más reciente.
    * Un parámetro de salida de cadena que almacena el valor del vínculo de exploración.
-   * A `BLOB` parámetro de salida que almacena el contenido. Puede utilizar este parámetro de salida para recuperar el contenido.
-   * A `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` parámetro de salida que almacena atributos de contenido.
-   * A `CRCResult` parámetro de salida. En lugar de utilizar este objeto, puede utilizar la variable `BLOB` parámetro de salida para obtener el contenido.
+   * Parámetro de salida `BLOB` que almacena el contenido. Puede utilizar este parámetro de salida para recuperar el contenido.
+   * Parámetro de salida `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` que almacena atributos de contenido.
+   * Un parámetro de salida `CRCResult`. En lugar de usar este objeto, puede usar el parámetro de salida `BLOB` para obtener el contenido.
 
 1. Procesar un formulario interactivo de PDF
 
-   Invoque el `FormsServiceClient` del objeto `renderPDFForm2` y pasar los siguientes valores:
+   Invoque el método `renderPDFForm2` del objeto `FormsServiceClient` y pase los siguientes valores:
 
-   * A `BLOB` que contiene el diseño de formulario recuperado de Content Services (obsoleto).
-   * A `BLOB` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un vacío `BLOB` objeto.
-   * A `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Este valor es un parámetro opcional y puede especificar `null` si no desea especificar opciones en tiempo de ejecución.
-   * A `URLSpec` que contiene valores de URI. Este valor es un parámetro opcional y puede especificar `null`.
-   * A `Map` que almacena archivos adjuntos. Este valor es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+   * Un objeto `BLOB` que contiene el diseño de formulario recuperado de Content Services (obsoleto).
+   * Objeto `BLOB` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un objeto `BLOB` vacío.
+   * Objeto `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Este valor es un parámetro opcional y puede especificar `null` si no desea especificar opciones en tiempo de ejecución.
+   * Objeto `URLSpec` que contiene valores de URI. Este valor es un parámetro opcional y puede especificar `null`.
+   * Objeto `Map` que almacena datos adjuntos de archivos. Este valor es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
    * Un parámetro de salida largo que se utiliza para almacenar el recuento de páginas.
    * Un parámetro de salida de cadena que se utiliza para almacenar el valor de configuración regional.
-   * A `FormsResult` parámetro de salida que se utiliza para almacenar el formulario del PDF interactivo `.`
+   * Un parámetro de salida `FormsResult` que se usa para almacenar el formulario de PDF interactivo `.`
 
-   El `renderPDFForm2` El método devuelve un valor `FormsResult` que contiene el formulario PDF interactivo.
+   El método `renderPDFForm2` devuelve un objeto `FormsResult` que contiene el formulario PDF interactivo.
 
 1. Realizar una acción con el flujo de datos del formulario
 
-   * Crear un `BLOB` que contiene datos de formulario al obtener el valor del objeto `FormsResult` del objeto `outputContent` field.
-   * Crear un `System.IO.FileStream` invocando su constructor. Pase un valor de cadena que represente la ubicación del archivo del documento interactivo del PDF y el modo en que se abrirá el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `BLOB` objeto recuperado del `FormsResult` objeto. Rellene la matriz de bytes obteniendo el valor de `BLOB` del objeto `MTOM` miembro de datos.
-   * Crear un `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream` objeto.
-   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
+   * Cree un objeto `BLOB` que contenga datos de formulario obteniendo el valor del campo `outputContent` del objeto `FormsResult`.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor. Pase un valor de cadena que represente la ubicación del archivo del documento interactivo del PDF y el modo en que se abrirá el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `BLOB` recuperado del objeto `FormsResult`. Rellene la matriz de bytes obteniendo el valor del miembro de datos `MTOM` del objeto `BLOB`.
+   * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
+   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `Write` del objeto `System.IO.BinaryWriter` y pasando la matriz de bytes.
 
 **Consulte también**
 

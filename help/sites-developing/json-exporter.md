@@ -30,13 +30,13 @@ AEM Con los fragmentos de contenido que utilizan contenido estructurado, puede p
 
 >[!NOTE]
 >
->La funcionalidad descrita aquí está disponible para todos los componentes principales desde [versión 1.1.0 de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
+>La funcionalidad descrita aquí está disponible para todos los componentes principales desde la [versión 1.1.0 de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es).
 
 ## Exportador JSON con componentes principales de fragmentos de contenido {#json-exporter-with-content-fragment-core-components}
 
 AEM AEM Con el exportador de JSON de, puede enviar el contenido de cualquier página de la página de la aplicación en formato de modelo de datos JSON de la página de la aplicación. Este método lo pueden consumir sus propias aplicaciones.
 
-AEM Dentro de, la entrega se logra usando el selector de `model` y `.json` extensión.
+AEM Dentro de, la entrega se logra usando el selector `model` y la extensión `.json`.
 
 `.model.json`
 
@@ -52,7 +52,7 @@ AEM Dentro de, la entrega se logra usando el selector de `model` y `.json` exten
 
 Como alternativa, puede entregar el contenido de un fragmento de contenido estructurado segmentándolo específicamente.
 
-Utilice la ruta completa al fragmento (a través del `jcr:content`); por ejemplo, con un sufijo como.
+Utilice toda la ruta de acceso al fragmento (mediante `jcr:content`); por ejemplo, con un sufijo como.
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
@@ -70,11 +70,11 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 
   >[!NOTE]
   >
-  >Puede [adaptar sus propios componentes](/help/sites-developing/json-exporter-components.md) para acceder y utilizar estos datos.
+  >Puede [adaptar sus propios componentes](/help/sites-developing/json-exporter-components.md) para acceder a estos datos y utilizarlos.
 
   >[!NOTE]
   >
-  >Aunque no es una implementación estándar, [se admiten varios selectores,](json-exporter-components.md#multiple-selectors) pero `model` debe ser el primero.
+  >Aunque no es una implementación estándar, se admiten [varios selectores,](json-exporter-components.md#multiple-selectors) pero `model` debe ser el primero.
 
 ### Información adicional {#further-information}
 
@@ -86,7 +86,7 @@ Consulte también lo siguiente:
 
 * Modelos Sling:
 
-   * [Modelos Sling: asociación de una clase de modelo con un tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Modelos Sling: asociando una clase de modelo con un tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM con JSON:
 
@@ -96,10 +96,10 @@ Consulte también lo siguiente:
 
 Para obtener más información, consulte:
 
-* El [Tema Fragmentos de contenido en la guía del usuario de Assets](/help/assets/content-fragments/content-fragments.md)
+* El tema [Fragmentos de contenido en la guía del usuario de Assets](/help/assets/content-fragments/content-fragments.md)
 
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Creación con fragmentos de contenido](/help/sites-authoring/content-fragments.md)
 * [Activación de la exportación de JSON para un componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el [componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=es)

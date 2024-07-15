@@ -42,7 +42,7 @@ El administrador puede agregar compatibilidad para más caracteres especiales pe
 Siga estos pasos para agregar compatibilidad con caracteres especiales personalizados:
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta llamada **[!UICONTROL specialcharacters]** con una ruta/estructura similar a la carpeta specialcharacters (en la carpeta textEditorConfig en libs):
+1. En la carpeta de aplicaciones, cree una carpeta denominada **[!UICONTROL specialcharacters]** con una ruta o estructura similares a la carpeta de caracteres especiales (en la carpeta textEditorConfig en libs):
 
    1. Haga clic con el botón derecho en la carpeta **specialcharacters** en la siguiente ruta y seleccione **Nodo de superposición**:
 

@@ -35,7 +35,7 @@ Cada plantilla le presenta una selección de componentes disponibles para su uso
 
 Una plantilla es la base de una página.
 
-Para crear una página, se debe copiar la plantilla (árbol de nodos) **/apps/&lt;myapp>/templates/&lt;mytemplate>**) a la posición correspondiente en el árbol del sitio: esto es lo que sucede si se crea una página con el **Sitios web** pestaña.
+Para crear una página, la plantilla debe copiarse (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) a la posición correspondiente en el árbol del sitio: esto es lo que sucede si se crea una página con la pestaña **Sitios web**.
 
 Esta acción de copia también proporciona a la página su contenido inicial (normalmente solo contenido de nivel superior) y la propiedad sling:resourceType, la ruta al componente de página que se utiliza para procesar la página (todo en el nodo secundario jcr:content).
 
@@ -50,10 +50,10 @@ Se crea una plantilla en un nodo de tipo **cq:Template**.
 
 Se pueden configurar varias propiedades, en particular:
 
-* **jcr:título** - título de la plantilla; aparece en el cuadro de diálogo al crear una página.
-* **jcr:description** - descripción de la plantilla; aparece en el cuadro de diálogo al crear una página.
+* **jcr:title** - título de la plantilla; aparece en el cuadro de diálogo al crear una página.
+* **jcr:description**: descripción de la plantilla; aparece en el cuadro de diálogo al crear una página.
 
-Este nodo contiene *a.jcr:content (cq:PageContent)* que se utiliza como base para el nodo de contenido de las páginas resultantes. Esto hace referencia a, mediante *sling:resourceType*, el componente que se utilizará para procesar el contenido real de una nueva página.
+Este nodo contiene *un nodo jcr:content (cq:PageContent)* que se usa como base para el nodo de contenido de las páginas resultantes. Esto hace referencia, usando *sling:resourceType*, al componente que se va a usar para procesar el contenido real de una nueva página.
 
 >[!NOTE]
 >

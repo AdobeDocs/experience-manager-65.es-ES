@@ -22,24 +22,24 @@ Adobe Experience Manager AEM () viene con un controlador de error estándar para
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-Existen secuencias de comandos proporcionadas por el sistema (en `/libs/sling/servlet/errorhandler`) para responder a los códigos de error, de forma predeterminada están disponibles las siguientes opciones con una instancia de CQ estándar:
+Los scripts proporcionados por el sistema existen (en `/libs/sling/servlet/errorhandler`) para responder a códigos de error. De forma predeterminada, los siguientes scripts están disponibles con una instancia de CQ estándar:
 
 * 403.jsp
 * 404.jsp
 
 >[!NOTE]
 >
->AEM Se basa en Apache Sling. Como tal, consulte [Control de errores](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html) para obtener información detallada sobre la gestión de errores de Sling.
+>AEM Se basa en Apache Sling. Como tal, consulte [Control de errores](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html) para obtener información detallada sobre el control de errores de Sling.
 
 >[!NOTE]
 >
->En una instancia de autor, la variable [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
+>En una instancia de autor, el [filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está habilitado de manera predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
 >
->En una instancia de publicación, el filtro de depuración de CQ WCM es *siempre* desactivado (incluso si está configurado como activado).
+>En una instancia de publicación, el filtro de depuración de CQ WCM está *siempre* deshabilitado (incluso si está configurado como habilitado).
 
 ## Personalizar páginas mostradas por el controlador de error {#how-to-customize-pages-shown-by-the-error-handler}
 
-Puede desarrollar sus propias secuencias de comandos para personalizar las páginas que muestra el controlador de errores cuando se produce un error. Las páginas personalizadas se crean en `/apps` y superponer las páginas predeterminadas (que se encuentran en `/libs`).
+Puede desarrollar sus propias secuencias de comandos para personalizar las páginas que muestra el controlador de errores cuando se produce un error. Sus páginas personalizadas se crean en `/apps` y se superponen a las páginas predeterminadas (que se encuentran en `/libs`).
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Puede desarrollar sus propias secuencias de comandos para personalizar las pági
 
 Los errores de HTTP 500 se deben a excepciones del lado del servidor.
 
-* **[500 Error interno del servidor](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+* **[Error interno del servidor 500](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
 El servidor encontró una condición inesperada que le impedía cumplir la solicitud.
 
 AEM Cuando el procesamiento de solicitudes resulta en una excepción, el marco de trabajo de Apache Sling (en el que se basa ese):
@@ -82,16 +82,16 @@ AEM Cuando el procesamiento de solicitudes resulta en una excepción, el marco d
 
   en el cuerpo de la respuesta.
 
-Por [personalización de las páginas mostradas por el controlador de error](#how-to-customize-pages-shown-by-the-error-handler) a `500.jsp` se puede crear el script. Sin embargo, solo se utiliza si `HttpServletResponse.sendError(500)` se ejecuta explícitamente; es decir, desde un receptor de excepciones.
+Si [personaliza las páginas mostradas por el controlador de error](#how-to-customize-pages-shown-by-the-error-handler), se puede crear un script `500.jsp`. Sin embargo, solo se usa si `HttpServletResponse.sendError(500)` se ejecuta explícitamente; es decir, desde un receptor de excepciones.
 
-De lo contrario, el código de respuesta se establece en 500, pero la variable `500.jsp` no se ejecuta el script.
+De lo contrario, el código de respuesta se establece en 500, pero no se ejecuta el script `500.jsp`.
 
-Para controlar 500 errores, el nombre de archivo de la secuencia de comandos del controlador de errores debe ser el mismo que la clase de excepción (o superclase). Para gestionar todas estas excepciones, puede crear un script `/apps/sling/servlet/errorhandler/Throwable.js`p o `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Para controlar 500 errores, el nombre de archivo de la secuencia de comandos del controlador de errores debe ser el mismo que la clase de excepción (o superclase). Para controlar todas estas excepciones, puede crear un script `/apps/sling/servlet/errorhandler/Throwable.js`p o `/apps/sling/servlet/errorhandler/Exception.jsp`.
 
 >[!CAUTION]
 >
->En una instancia de autor, la variable [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está activada de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
+>En una instancia de autor, el [filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está habilitado de manera predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
 >
->Para un controlador de error personalizado, se necesitan respuestas con código 500, por lo que la variable [El filtro de depuración de CQ WCM debe estar desactivado](/help/sites-deploying/osgi-configuration-settings.md). Esto garantiza que se devuelva el código de respuesta 500, lo que a su vez déclencheur el controlador de error de Sling correcto.
+>Para un controlador de error personalizado, se necesitan respuestas con código 500, por lo que el filtro de depuración de [CQ WCM debe deshabilitarse](/help/sites-deploying/osgi-configuration-settings.md). Esto garantiza que se devuelva el código de respuesta 500, lo que a su vez déclencheur el controlador de error de Sling correcto.
 >
->En una instancia de publicación, el filtro de depuración de CQ WCM es *siempre* desactivado (incluso si está configurado como activado).
+>En una instancia de publicación, el filtro de depuración de CQ WCM está *siempre* deshabilitado (incluso si está configurado como habilitado).

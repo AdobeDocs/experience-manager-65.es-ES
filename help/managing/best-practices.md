@@ -23,40 +23,40 @@ La administración de un proyecto para implementar Adobe Experience Manager AEM 
 
 Para ayudarle, las prácticas recomendadas consisten en:
 
-* Un [lista de comprobación interactiva](/help/managing/best-practices-checklist.md) que le permite realizar un seguimiento y supervisar su progreso con estas prácticas recomendadas.
+* [lista de comprobación interactiva](/help/managing/best-practices-checklist.md) que le permite realizar un seguimiento y supervisar su progreso con estas prácticas recomendadas.
 
    * Define entradas y entregas según la fase, el hito y el perfil.
    * Proporciona descripciones generales automatizadas (calidad, estado y integridad) para indicar el progreso y el estado del proyecto.
 
-* Documentación basada en el [lista de comprobación](/help/managing/best-practices-checklist.md) que detalla lo siguiente:
+* Documentación basada en [lista de comprobación](/help/managing/best-practices-checklist.md) que detalla lo siguiente:
 
-   * [Latido del proyecto](#projectheartbeat) análisis.
-   * [Estado por rol](#status-by-role) información general.
+   * Análisis de [Project Heartbeat](#projectheartbeat).
+   * Información general sobre [Estado por rol](#status-by-role).
    * [Fases e hitos](#phases-and-milestones).
-   * [Persona clave](#persona) y su participación en cada fase (pertinente).
-   * A [Glosario](/help/managing/best-practices-glossary.md) de la [Documentos y entregables requeridos](#required-documents-and-deliverables).
+   * [Persona clave](#persona) y su participación en cada fase (relevante).
+   * Un [Glosario](/help/managing/best-practices-glossary.md) de [documentos y entregables requeridos](#required-documents-and-deliverables).
 
-* [Referencia adicional](/help/managing/best-practices-further-reference.md) material para proporcionar más detalles sobre áreas específicas.
+* [Más material de referencia](/help/managing/best-practices-further-reference.md) para proporcionar más detalles sobre áreas específicas.
 
 ## Tablero de Heartbeat del proyecto {#project-heartbeat-dashboard}
 
-El **Latido del proyecto** Esta hoja de cálculo proporciona información general gráfica sobre las métricas esenciales para el proyecto:
+La hoja de cálculo de **Project Heartbeat** proporciona una descripción general gráfica de las métricas críticas para su proyecto:
 
 * **Calidad de fase**
 
-   * Indica la calidad del [Documentos y entregables requeridos](#required-documents-and-deliverables) en todo el proyecto.
+   * Indica la calidad de [documentos y entregas requeridos](#required-documents-and-deliverables) en todo el proyecto.
 
 * **Estado de fase**
 
    * Un indicador de estado de alto nivel para su proyecto; útil para resaltar áreas que puedan estar en riesgo.
 
-* **Complejidad de fase**
+* **Finalización de fase**
 
    * En cualquier momento durante el proyecto, esto indica cuánto se ha completado ya para cada fase del proyecto.
 
 ## Estado por rol {#status-by-role}
 
-El **Estado por rol** La hoja de cálculo muestra el desglose detallado de [**Salud**, **Calidad y **Integridad**](#projectheartbeat) por **[Fase](#phases-and-milestones)** y **[Persona](#persona)**.
+La hoja de cálculo **Estado por rol** muestra un desglose detallado de [**Salud**, **Calidad y **Complejidad**](#projectheartbeat) por **[Fase](#phases-and-milestones)** y **[Persona](#persona)**.
 
 ## Fases e hitos {#phases-and-milestones}
 
@@ -72,7 +72,7 @@ Cada fase contiene sus propios hitos. Para cada [persona](#persona) (o función)
 
 La preparación del proyecto forma la base de todo el proyecto. Defina los requisitos clave junto con objetivos y expectativas claros para:
 
-* **Razones comerciales**
+* **Motivo comercial**
 
    * Las razones fundamentales y la justificación para emprender el proyecto.
 
@@ -124,7 +124,7 @@ La planificación del proyecto consolida la preparación. Aquí debería empezar
 
 #### Hitos {#milestones-1}
 
-* **Entrega**
+* **Envío**
 
   Un traspaso limpio garantiza que las personas/grupos adecuados sean conscientes de sus responsabilidades dentro del proyecto.
 
@@ -144,7 +144,7 @@ La planificación del proyecto consolida la preparación. Aquí debería empezar
    * Desde la misma base de información
    * Con los mismos canales
 
-* **Comenzar**
+* **Inicio**
 
   La reunión de inicio se utiliza para concienciar sobre el inicio del proyecto. Es una buena oportunidad para:
 
@@ -162,7 +162,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
 #### Hitos {#milestones-2}
 
-* **Equipo de desarrollo con personal y formación**
+* **Equipo de desarrollo con personal y capacitación**
 
   Antes de comenzar cualquier proyecto, debe asegurarse de que el equipo de desarrollo tenga el personal adecuado y de que todos los miembros del equipo estén formados para la tarea en cuestión.
 
@@ -176,7 +176,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
    * Contenido de soporte (incluidas etiquetas y conceptos de etiquetado)
    * Estrategias de almacenamiento en caché y reutilización de contenido
 
-* **Arquitectura del sistema**
+* **Arquitectura de sistema**
 
   La arquitectura del sistema define la vista conceptual del sistema, que incluye (entre otra información):
 
@@ -184,11 +184,11 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
    * Subsistemas
    * Sistemas de terceros
    * Interfaces; hardware, software e interacción humana
-   * Servidores para cada entorno; consulte la [Requisitos técnicos](/help/sites-deploying/technical-requirements.md) y [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md)
+   * Servidores para cada entorno; consulte los [Requisitos técnicos](/help/sites-deploying/technical-requirements.md) y las [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md)
 
    * Procesos para cada entorno; por ejemplo, requisitos de implementación y mantenimiento
    * Actividades de mantenimiento (optimización del almacén de datos, TarPM, etc.)
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) almacenamiento en caché
+   * Almacenamiento en caché de [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
    * [Clúster](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
    * Rendimiento del lado del cliente (minificación de JS, concat, sprites css, número total de solicitudes http, etc.)
 
@@ -210,16 +210,16 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
    * Diseño de los flujos de trabajo requeridos por la solución (por ejemplo, creación de contenido, aprobación, publicación, transformaciones, importaciones y exportaciones)
    * Consideración especial para cualquier módulo complejo, como MSM, Commerce o integración de terceros
 
-* **Integración del sistema**
+* **Integración de sistemas**
 
   La integración del sistema requiere que planifique (y luego implemente):
 
-   * Cómo todos los subsistemas y [integraciones de soluciones](/help/sites-administering/integration.md) para funcionar como un sistema coherente
+   * Cómo se unen todos los subsistemas y las [integraciones de soluciones](/help/sites-administering/integration.md) para funcionar como un sistema coherente
    * Forma en que se integran los sistemas de terceros, junto con cualquier consideración especial, como la gestión sin conexión/en línea, del lado del cliente/del lado del explorador o de la caída de un sistema de terceros cuando éste no funciona
 
 * **Concepto de prueba**
 
-  Antes de comenzar el desarrollo, debe elaborar un concepto profundo y completo de todos los [prueba](/help/sites-developing/planning.md) requisitos para el proyecto.
+  Antes de comenzar el desarrollo, debe elaborar un concepto detallado y completo de todos los requisitos de [prueba](/help/sites-developing/planning.md) para su proyecto.
 
   Esto debe incluir (entre otros):
 
@@ -239,7 +239,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
   Antes del desarrollo, deben establecerse todos los procesos de compatibilidad necesarios para implementar, publicar, probar e informar de problemas.
 
-  Consulte también la [Portal de asistencia de Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support).
+  Consulte también el [Portal de soporte técnico de Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support).
 
 ### Planificación de operaciones y operaciones {#operations-planning-and-operations}
 
@@ -253,22 +253,22 @@ Del mismo modo, las operaciones deben planificarse correctamente para garantizar
 
   Por ejemplo:
 
-   * Una lista de funciones (es decir, grupos) con `read`/ `write` acceder a las definiciones de cada
+   * Una lista de funciones (es decir, grupos) con definiciones de acceso de `read`/ `write` para cada una
 
    * Definición del uso de privilegios que afectan al entorno de publicación; por ejemplo, `replicate`
    * Para los usuarios con privilegios mínimos, se deben definir los flujos de trabajo
-   * Usuarios en `editor` el grupo no debería tener `admin` ni formar parte de la `administrators` grupo
+   * Los usuarios del grupo `editor` no deben tener derechos de `admin` ni formar parte del grupo `administrators`
 
   Para obtener más información, consulte [Administración de usuarios y seguridad](/help/sites-administering/security.md).
 
-* **Monitorización y mantenimiento**
+* **Supervisión y mantenimiento**
 
   La monitorización y el mantenimiento son aspectos clave para garantizar el funcionamiento sin problemas de la solución una vez que se ponga en marcha. Para ello, debe definir lo siguiente:
 
    * Qué necesita monitorización
    * Tareas de mantenimiento; tanto regulares como para casos especiales
 
-  Consulte también [Monitorización y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md) para obtener más información.
+  Consulte también [Supervisión y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md) para obtener más información.
 
 * **Migración**
 
@@ -322,12 +322,12 @@ El desarrollo es una fase crucial que requiere algo más que codificación.
    * Cadencia de implementación
    * Integración/dependencias de software de terceros
    * Configuración de seguridad
-   * Rendimiento de línea de base verificado ejecutando [Pruebas dificiles](/help/sites-developing/tough-day.md) en la configuración de producción
+   * Rendimiento de línea de base verificado ejecutando [pruebas de día difíciles](/help/sites-developing/tough-day.md) en la configuración de producción
    * Requisitos para las pruebas de rendimiento; consulte [Prácticas recomendadas para el control de calidad](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integración**
 
-  Planifique, documente y pruebe todos los aspectos del sistema y [integración de soluciones](/help/sites-administering/integration.md), incluidos:
+  Planifique, documente y pruebe todos los aspectos del sistema y la [integración de soluciones](/help/sites-administering/integration.md), incluidos:
 
    * Una estrategia de pruebas automatizadas
    * Procesos automatizados para [mover aplicaciones de desarrollo a prueba y después a producción](/help/managing/enterprise-devops.md#code-movement)
@@ -354,7 +354,7 @@ El desarrollo es una fase crucial que requiere algo más que codificación.
 
 ### Rendimiento y pruebas {#performance-and-testing}
 
-Una vez que la nueva aplicación está disponible, debe someterse a rigurosas pruebas, tanto por su funcionalidad como por [rendimiento](/help/sites-deploying/configuring-performance.md).
+Una vez que la nueva aplicación esté disponible, deberá someterse a rigurosas pruebas, tanto para la funcionalidad como para el [rendimiento](/help/sites-deploying/configuring-performance.md).
 
 >[!NOTE]
 >
@@ -366,7 +366,7 @@ Una vez que la nueva aplicación está disponible, debe someterse a rigurosas pr
 
 * **Prueba de aceptación de usuario final**
 
-  [Pruebas de aceptación del usuario](/help/sites-developing/acceptance-signoff.md) (UAT) es crucial para garantizar que:
+  [Las pruebas de aceptación del usuario](/help/sites-developing/acceptance-signoff.md) (UAT) son cruciales para asegurar que:
 
    * La solución satisface los requisitos del usuario/cliente
    * El cliente o los usuarios aceptan la solución (función, diseño y rendimiento)
@@ -402,9 +402,9 @@ El despliegue de la nueva aplicación requiere una planificación cuidadosa para
 
   Asegurarse de que todo el personal involucrado haya recibido formación.
 
-  Consulte [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) en el catálogo de cursos.
+  Ver [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) en el catálogo de cursos.
 
-* **Administradores formados**
+* **Administradores capacitados**
 
   Asegúrese de que los administradores de su solución tengan:
 
@@ -412,7 +412,7 @@ El despliegue de la nueva aplicación requiere una planificación cuidadosa para
    * Se recibió el material de capacitación apropiado
    * Se ha recibido la documentación adecuada
 
-* **Usuarios formados**
+* **Usuarios capacitados**
 
   Asegúrese de que los autores tengan:
 
@@ -464,7 +464,7 @@ Desea que el lanzamiento sea lo más fluido posible. De nuevo, los pasos finales
 
 Las listas de comprobación están diseñadas por persona. Son las funciones con participación significativa en el ciclo de vida del proyecto.
 
-También hay algunos [otra persona](#other-persona) que participan en tareas específicas.
+También hay [otros personajes](#other-persona) que están involucrados en tareas específicas.
 
 ### Patrocinador de proyecto {#project-sponsor}
 
@@ -577,16 +577,16 @@ El posible cliente de seguridad:
 
 ## Documentos y entregables requeridos {#required-documents-and-deliverables}
 
-Las listas de comprobación cubren lo siguiente **Documentos requeridos** y **Entregables** para cada hito.
+Las listas de comprobación cubren los **documentos necesarios** y **entregables** para cada hito.
 
 * No existe una relación 1:1 entre ellos; por ejemplo, un grupo de documentos requeridos puede dar como resultado un solo resultado.
 * Una entrega de una persona puede ser un documento obligatorio para otra persona durante el mismo hito.
 
 ### Documentos requeridos {#required-documents}
 
-El **Documentos requeridos** son necesarios para el usuario adecuado al producir sus entregables.
+Los **documentos requeridos** los necesita el usuario apropiado al producir sus entregables.
 
-Para cada **Documento obligatorio**, la persona debe indicar:
+Para cada **documento requerido**, el personaje debe indicar:
 
 * **S/N**: si se ha recibido.
 * **1-3**: una indicación de la calidad del documento recibido.
@@ -595,11 +595,11 @@ Para cada **Documento obligatorio**, la persona debe indicar:
 
 Para cada hito, las personas adecuadas son responsables de entregar documentos específicos y, por lo tanto, de cumplir con sus responsabilidades en un hito específico.
 
-Para cada **Entregable**, la persona debe indicar:
+Para cada **entrega**, el usuario debe indicar:
 
 * **S/N**: si se ha completado.
 
-Los entregables se utilizan a menudo como **Documentos requeridos** para el hito actual o uno posterior.
+Las entregas se utilizan a menudo como **Documentos requeridos** para el hito actual o posterior.
 
 ## Prácticas recomendadas relacionadas {#related-best-practices}
 
@@ -610,14 +610,15 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
    * [Operaciones de desarrollo empresarial](/help/managing/enterprise-devops.md)
    * [Prácticas recomendadas para la optimización de los motores de búsqueda y administración URL](/help/managing/seo-and-url-management.md)
    * [AEM Directrices de accesibilidad web de y](/help/managing/web-accessibility.md)
-   * [Reglamento general de protección de datos](/help/managing/data-protection-and-privacy.md)* [Implementación y mantenimiento de prácticas recomendadas](/help/sites-deploying/best-practices.md)
+   * [Reglamento General de Protección de Datos](/help/managing/data-protection-and-privacy.md)* [Prácticas recomendadas de implementación y mantenimiento](/help/sites-deploying/best-practices.md)
 * [Prácticas recomendadas de administración](/help/sites-administering/administer-best-practices.md)
 * [Desarrollo de prácticas recomendadas](/help/sites-developing/best-practices.md)
 * [Prácticas recomendadas de creación](/help/sites-authoring/best-practices.md)
 
 ## Áreas clave de documentación {#key-documentation-areas}
 
-* AEM AEM Documentación Además, las siguientes secciones de documentación de la son de especial interés (sin embargo, esta lista no es exhaustiva):
+* AEM Documentación de
+AEM Además, revisten especial interés las siguientes secciones de la documentación de la (sin embargo, esta lista no es exhaustiva):
 
    * [Seguridad](/help/sites-developing/security.md)
    * [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
@@ -631,4 +632,4 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
 
 * Documentación relacionada
 
-   * ADOBE EXPERIENCE CLOUD - [Planificación de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [Planificación de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

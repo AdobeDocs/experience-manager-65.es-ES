@@ -23,21 +23,21 @@ Hay varios métodos disponibles para el seguimiento de eventos de vídeo, dos de
 
 >[!NOTE]
 >
->Antes de continuar, asegúrese de que dispone de un **vídeo reproducible** AEM cargado dentro de un intervalo de fechas.
+>AEM Antes de continuar, asegúrate de que has subido un **vídeo reproducible** en el que se puede hacer clic en el botón de.
 >
->Para asegurarse de que los vídeos se reproduzcan en la página, consulte **[este tutorial](/help/sites-authoring/default-components-foundation.md#video)** AEM para obtener información acerca de cómo transcodificar archivos de vídeo en la.
+>AEM Para asegurarte de que tus vídeos se reproduzcan en la página, consulta **[este tutorial](/help/sites-authoring/default-components-foundation.md#video)** para obtener información sobre cómo transcodificar archivos de vídeo en la.
 
 Utilice el siguiente procedimiento para configurar un marco de trabajo para el seguimiento de vídeo con cada método.
 
 >[!NOTE]
 >
->Para nuevas implementaciones, se recomienda que **no utilice** las opciones heredadas de seguimiento de vídeo. Utilice el **Hitos** en su lugar.
+>Para nuevas implementaciones, se recomienda que **no use** las opciones heredadas para el seguimiento de vídeo. En su lugar, use el método **Milestones**.
 
 ## Pasos comunes {#common-steps}
 
-1. Configurar una página web arrastrando un **componente de vídeo** de la barra de tareas y añadir un elemento reproducible **vídeo como recurso** para el componente
+1. Configure una página web arrastrando un **componente de vídeo** de la barra de tareas y agregando un **vídeo como recurso** que se puede reproducir para el componente
 
-1. [Creación de una configuración y un marco de trabajo de Adobe Analytics](/help/sites-administering/adobeanalytics.md).
+1. [Crear una configuración y un módulo de Adobe Analytics](/help/sites-administering/adobeanalytics.md).
 
    * Los ejemplos de las secciones siguientes utilizan el nombre **my-sc-configuration** para la configuración y **videofw** para el marco de trabajo.
 
@@ -80,7 +80,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr>
   <tr>
    <td>eventdata.videoName </td>
-   <td>Las variables asignadas a esto contendrán el <strong>fácil de usar</strong> name (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece, el <strong>nombre de archivo</strong> se enviarán en su lugar. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
+   <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envía una vez, al principio de la reproducción de un vídeo.</td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -104,15 +104,15 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>Se envía cuando termina de reproducirse el vídeo<br /> </td>
+   <td>Se envió cuando el vídeo terminó de reproducirse<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestoneX </td>
-   <td>Enviado cuando se pasa el hito determinado, X significa el segundo en el que se activa el hito<br /> </td>
+   <td>Enviado cuando se pase el hito dado, X significa el segundo en que el hito se activa en <br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>Se envía en cada hito; aparece como pev3 en la llamada de Adobe Analytics y normalmente se envía como "vídeo"<br /> </td>
+   <td>Enviado en cada hito; aparece como pev3 en la llamada de Adobe Analytics, normalmente se envía como "vídeo"<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -127,7 +127,7 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
 
 >[!NOTE]
 >
->Puede establecer el de un vídeo **fácil de usar** nombre abriendo el vídeo para editarlo en el DAM y configurando el **Título** campo de metadatos con el nombre deseado.
+>Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado.
 
 1. Después de seleccionar Hitos como método de seguimiento, en el cuadro Desplazamiento de seguimiento, escriba una lista de desplazamientos de seguimiento separados por comas en segundos. Por ejemplo, el siguiente valor define hitos a los 4, 8, 16, 20 y 28 segundos después del inicio del vídeo:
 
@@ -139,10 +139,10 @@ En la tabla siguiente se describen las variables de CQ predeterminadas que se pr
 
 1. Para asignar las variables CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable CQ en el componente.
 
-   Para obtener información sobre cómo optimizar las asignaciones, consulte la [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guía.
+   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
-1. [Añadir el marco de trabajo](/help/sites-administering/adobeanalytics.md) a la página.
-1. Para probar la configuración en **Modo de previsualización**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
+1. [Agregar el marco de trabajo](/help/sites-administering/adobeanalytics.md) a la página.
+1. Para probar la configuración en **modo de vista previa**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
 
 Los siguientes ejemplos de datos de seguimiento de Adobe Analytics se aplican al seguimiento de Milestone mediante desplazamientos de seguimiento de 4, 8, 16, 20 y 24, y a las siguientes asignaciones para las variables de CQ:
 
@@ -170,7 +170,7 @@ Los siguientes ejemplos de datos de seguimiento de Adobe Analytics se aplican al
   </tr>
   <tr>
    <td>eventdata.events.a.media.timePlayed</td>
-   <td>event2<br /> </td>
+   <td>evento2<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.view </td>
@@ -178,7 +178,7 @@ Los siguientes ejemplos de datos de seguimiento de Adobe Analytics se aplican al
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>event4<br /> </td>
+   <td>evento4<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestone4</td>
@@ -217,7 +217,7 @@ Los siguientes ejemplos de datos de seguimiento de Adobe Analytics se aplican al
 
 Para este ejemplo, el componente Vídeo aparece de la siguiente manera en la página de marco de trabajo:
 
-![video1](assets/video1.png)
+![vídeo1](assets/video1.png)
 
 >[!NOTE]
 >
@@ -227,28 +227,28 @@ Las llamadas a Adobe Analytics que utilicen el ejemplo proporcionado deberían t
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Este es el **primera llamada**realizado en Adobe Analytics que contiene los siguientes valores:*
+*Esta es la **primera llamada**a Adobe Analytics que contiene los siguientes valores:*
 
 * *prop1 y eVar 1 para eventdata.a.media.name,*
-* *props2-4, junto con eVar 2 y eVar 3 que contienen contentType (vídeo) y segmento (1):O:1-4)*
-* *event3, que se ha asignado a eventdata.events.a.media.view.*
+* *props2-4, junto con eVar 2 y eVar 3 que contienen contentType (vídeo) y segmento (1:O:1-4)*
+* *event3 asignado a eventdata.events.a.media.view.*
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Este es el **tercera llamada**realizado en Adobe Analytics:*
+*Esta es la **tercera llamada**realizada a Adobe Analytics:*
 
 * *prop1 y eVar 1 contienen a.media.name;*
 * *evento1 porque se ha visto un segmento*
-* *event2 enviado con tiempo de reproducción = 4*
-* *event11 enviado porque se ha alcanzado eventdata.events.milestone8*
-* *no se envían prop2 a 4 (ya que eventdata.events.a.media.view no se activó)*
+* *evento2 enviado con tiempo de reproducción = 4*
+* *evento11 enviado porque se ha alcanzado eventdata.events.milestone8*
+* *prop2 a 4 no se envían (ya que eventdata.events.a.media.view no se activó)*
 
 ## Hitos no heredados {#non-legacy-milestones}
 
 El método de hitos no heredados es similar al método de hitos, excepto que los hitos se definen mediante porcentajes de la longitud de la pista. Los elementos comunes son los siguientes:
 
 * Cuando la reproducción de un vídeo supera un hito, la página llama a Adobe Analytics para realizar un seguimiento del evento.
-* El [conjunto estático de variables CQ](#cqvars) que se definen para su asignación con propiedades de Adobe Analytics.
+* El [conjunto estático de variables CQ](#cqvars) que se definen para su asignación con propiedades Adobe Analytics.
 * Para cada hito que defina, el componente creará una variable de CQ que puede asignar a una propiedad de Adobe Analytics.
 
 El nombre de estas variables de CQ utiliza el siguiente formato:
@@ -274,14 +274,14 @@ eventdata.events.milestoneXX
 
 1. Para asignar las variables CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder junto a la variable CQ en el componente.
 
-   Para obtener información sobre cómo optimizar las asignaciones, consulte la [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guía.
+   Para obtener información sobre cómo optimizar las asignaciones, consulte la guía [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
-1. [Añadir el marco de trabajo](/help/sites-administering/adobeanalytics.md) a la página.
-1. Para probar la configuración en **Modo de previsualización**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
+1. [Agregar el marco de trabajo](/help/sites-administering/adobeanalytics.md) a la página.
+1. Para probar la configuración en **modo de vista previa**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
 
 ## Hitos heredados {#legacy-milestones}
 
-Este método es similar al método Milestones con la diferencia de que los hitos especificados en la variable *Desplazamiento de seguimiento* son porcentajes en lugar de puntos establecidos dentro del vídeo.
+Este método es similar al método Milestones con la diferencia de que los hitos especificados en el campo *Desplazamiento de seguimiento* son porcentajes en lugar de puntos de conjunto dentro del vídeo.
 
 >[!NOTE]
 >
@@ -297,7 +297,7 @@ Este método es similar al método Milestones con la diferencia de que los hitos
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>Las variables asignadas a esto contendrán el <strong>fácil de usar</strong> name (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, el <strong>nombre de archivo</strong> se enviarán en su lugar. Solo se envía una vez, al principio de la reproducción de un vídeo.<br /> </td>
+   <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envió una vez, al principio de la reproducción de un vídeo.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -312,29 +312,29 @@ Este método es similar al método Milestones con la diferencia de que los hitos
 
 >[!NOTE]
 >
->Puede establecer el de un vídeo **fácil de usar** nombre abriendo el vídeo para editarlo en el DAM y configurando el **Título** campo de metadatos con el nombre deseado. También debe Guardar los cambios realizados cuando termine.
+>Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado. También debe Guardar los cambios realizados cuando termine.
 
 1. Asigne estas variables a las props 1 a 3
 
-   El **resto de la información pertinente** en la llamada se enviará concatenado a **uno** variable denominada **pev3**.
+   El **resto de la información relevante** en la llamada se enviará concatenado en **una** variable denominada **pev3**.
 
-   **Llamadas de ejemplo** Las conexiones a Adobe Analytics mediante el ejemplo proporcionado deberían tener este aspecto cuando se visualizan con DigitalPulse Debugger:
+   **Las llamadas de muestra** a Adobe Analytics que usen el ejemplo proporcionado deberían tener este aspecto cuando se visualicen con DigitalPulse Debugger:
 
    ![hitos1](assets/lmilestones1.png)
 
-   *El **pev3**enviada en la llamada de contiene la siguiente información:*
+   *La variable **pev3**enviada en la llamada contiene la siguiente información:*
 
    * *Nombre* - El nombre del archivo de vídeo (*film.avi*)
 
-   * *Longitud* : duración del archivo de vídeo, en segundos (*100*)
+   * *Longitud* - La longitud del archivo de vídeo, en segundos (*100*)
 
-   * *Nombre del reproductor* - Reproductor de vídeo utilizado para reproducir el archivo de vídeo (*vídeo de HTML5*)
+   * *Nombre del reproductor* - El reproductor de vídeo usado para reproducir el archivo de vídeo (*vídeo del HTML 5*)
 
    * *Segundos totales reproducidos* - El número total de segundos que se reprodujo el vídeo (*25*)
 
-   * *Marca de tiempo de inicio* - Marca de tiempo que identifica cuándo comenzó la reproducción del vídeo (*1331035567*)
+   * *Iniciar marca de tiempo* - Marca de tiempo que identifica cuándo comenzó la reproducción de vídeo (*1331035567*)
 
-   * *Reproducir sesión* - Los detalles de la sesión de juego. Este campo indica cómo interactuó el usuario con el vídeo. Esto puede incluir datos como dónde comenzaron a reproducir el vídeo, si utilizaron el deslizador de vídeo para avanzar el vídeo y dónde dejaron de reproducirlo (*L10E24S58L58: el vídeo se detuvo a los segundos. 25 de la sección L10, y después se salta a sec. 48*)
+   * *Sesión de reproducción*: Los detalles de la sesión de reproducción. Este campo indica cómo interactuó el usuario con el vídeo. Esto puede incluir datos como dónde empezaron a reproducir el vídeo, si usaron el control deslizante de vídeo para avanzar el vídeo y dónde dejaron de reproducirlo (*L10E24S58L58: el vídeo se detuvo a los segundos. 25 de la sección L10, y después se salta a sec. 48*)
 
 ## Segundos heredados {#legacy-seconds}
 
@@ -354,7 +354,7 @@ Al utilizar el método ** legacy seconds**, las llamadas de Adobe Analytics se a
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>Las variables asignadas a esto contendrán el <strong>fácil de usar</strong> name (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, el <strong>nombre de archivo</strong> se enviarán en su lugar. Solo se envía una vez, al principio de la reproducción de un vídeo.<br /> </td>
+   <td>Las variables asignadas a esto contendrán el <strong>nombre descriptivo</strong> (<strong>Título</strong>) del vídeo si se establece en DAM; si no se establece el Título, se enviará el <strong>nombre de archivo</strong> del vídeo en su lugar. Solo se envió una vez, al principio de la reproducción de un vídeo.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -369,17 +369,17 @@ Al utilizar el método ** legacy seconds**, las llamadas de Adobe Analytics se a
 
 >[!NOTE]
 >
->Puede establecer el de un vídeo **fácil de usar** nombre abriendo el vídeo para editarlo en el DAM y configurando el **Título** campo de metadatos con el nombre deseado. También debe Guardar los cambios realizados cuando termine.
+>Puede establecer el nombre **fácil de usar** de un vídeo abriendo el vídeo para editarlo en DAM y estableciendo el campo de metadatos **Título** en el nombre deseado. También debe Guardar los cambios realizados cuando termine.
 
 1. Asigne estas variables a prop1, prop2 y prop3
 
-   El **resto de la información pertinente** en la llamada se enviará concatenado a **uno** variable denominada **pev3**.
+   El **resto de la información relevante** de la llamada se enviará concatenado a la variable **one** denominada **pev3**.
 
    Las llamadas a Adobe Analytics que utilicen el ejemplo proporcionado deberían tener este aspecto cuando se visualicen con DigitalPulse Debugger:
 
    ![lseconds](assets/lseconds.png)
 
-   *La llamada es similar a la llamada a los hitos heredados anterior. Ver la información de pev3 **[proporcionado allí](/help/sites-administering/adobeanalytics.md)**.*
+   *La llamada es similar a la llamada de hitos heredados anterior. Vea la información sobre pev3 **[proporcionada allí](/help/sites-administering/adobeanalytics.md)**.*
 
 **Referencias utilizadas en este tutorial:**
 

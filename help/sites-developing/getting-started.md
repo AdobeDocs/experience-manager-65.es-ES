@@ -44,6 +44,6 @@ La implementación del tutorial utiliza muchas funciones potentes de AEM. El sit
 
 Avance por el tutorial antes de profundizar en los conceptos anteriores en detalle.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
-Una vez que haya completado la [tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), considere revisar el documento [AEM Conceptos principales de](/help/sites-developing/the-basics.md) AEM para comprender mejor algunas de las tecnologías subyacentes y los paradigmas de desarrollo de los programas de desarrollo de la industria de la.
+AEM AEM Una vez que haya completado el [tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), considere la posibilidad de revisar el documento [Conceptos principales](/help/sites-developing/the-basics.md) para obtener una mejor comprensión de algunas de las tecnologías subyacentes y los paradigmas de desarrollo de la.

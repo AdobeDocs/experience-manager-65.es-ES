@@ -23,7 +23,7 @@ ht-degree: 8%
 1. En la consola de administración, haga clic en Servicios > Formularios.
 1. En Salida de formulario, en la lista Tipo de salida, seleccione una de las siguientes opciones:
 
-   **HTML completo:** Para procesar el formulario con las HTML completas (una página completa del HTML). Este valor es el predeterminado.
+   **HTML completo:** Para procesar el formulario con etiquetas de HTML completas (una página de HTML completa). Este valor es el predeterminado.
 
    **Cuerpo del formulario:** Para procesar el formulario en `<BODY>` etiquetas (no es una página de HTML completa).
 
@@ -33,11 +33,11 @@ ht-degree: 8%
 
 1. En Salida de formulario, en la lista Procesar en, seleccione una de las siguientes opciones:
 
-   **Cliente:** Para procesar PDF forms en Adobe Acrobat o Adobe Reader. AEM El procesamiento del lado del cliente mejora el rendimiento de los formularios de la y se aplica solo a la transformación del formulario PDF.
+   **Cliente:** para procesar PDF forms en Adobe Acrobat o Adobe Reader. AEM El procesamiento del lado del cliente mejora el rendimiento de los formularios de la y se aplica solo a la transformación del formulario PDF.
 
-   **Servidor:** Para procesar PDF forms en el servidor de aplicaciones.
+   **Servidor:** para procesar PDF forms en el servidor de aplicaciones.
 
-   **Automático:** Para procesar el formulario de PDF en la ubicación especificada por la variable `dynamicRender` valor de configuración del archivo XDP. Este valor es el predeterminado.
+   **Automático:** Para procesar el formulario de PDF en la ubicación especificada por el valor de configuración `dynamicRender` del archivo XDP. Este valor es el predeterminado.
 
 1. Haga clic en Guardar.
 
@@ -46,11 +46,11 @@ ht-degree: 8%
 Siga los siguientes pasos para habilitar la función:
 
 1. Inicie sesión en la consola de administración.
-1. Ir a **Servicios** > **formularios**.
+1. Vaya a **Servicios** > **formularios**.
 1. Especifique el Tipo de salida como Cuerpo del formulario.
 1. Guarde la configuración.
-1. Declare una variable JavaScript, __CUSTOM_SCRIPTS_VERSION, en la sección head del código de HTML y establezca su valor en 1.
+1. Declare una variable de JavaScript, __CUSTOM_SCRIPTS_VERSION, en la sección del encabezado del código del HTML y establezca su valor en 1.
 
    >[!NOTE]
    >
-   >*Para deshabilitar esta función, puede quitar la variable JavaScript o establecer su valor en 0.*
+   >*Para deshabilitar esta característica, puede quitar la variable JavaScript o establecer su valor en 0.*

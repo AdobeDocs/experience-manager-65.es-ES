@@ -154,7 +154,7 @@ Al igual que al crear un proyecto, al añadir páginas, se añaden copias de las
 
 1. Haga clic en Start.
 
-## Adición de páginas o activos a un trabajo de traducción {#adding-pages-assets-to-a-translation-job}
+## Adición de páginas o Assets a un trabajo de traducción {#adding-pages-assets-to-a-translation-job}
 
 Puede añadir páginas, recursos, etiquetas o diccionarios i18n al trabajo de traducción de su proyecto de traducción. Para agregar páginas o activos:
 
@@ -162,7 +162,7 @@ Puede añadir páginas, recursos, etiquetas o diccionarios i18n al trabajo de tr
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Haga clic en Agregar y en Páginas/recursos.
+1. Haga clic en Agregar y en Páginas/Assets.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
@@ -198,7 +198,7 @@ El diccionario está ahora en su trabajo de traducción.
 
 >[!NOTE]
 >
->Para obtener más información sobre los diccionarios i18n, lea [Usar Translator para administrar diccionarios](/help/sites-developing/i18n-translator.md).
+>Para obtener más información sobre diccionarios i18n, lea [Uso del traductor para administrar diccionarios](/help/sites-developing/i18n-translator.md).
 
 ## Adición de etiquetas a un trabajo de traducción {#adding-tags-to-a-translation-job}
 
@@ -222,9 +222,9 @@ Las etiquetas se añadirán ahora al trabajo de traducción.
 
 ## Ver detalles del proyecto de traducción {#seeing-translation-project-details}
 
-El mosaico Resumen de traducción contiene las propiedades configuradas para un proyecto de traducción. Además del genérico [información del proyecto](/help/sites-authoring/projects.md#project-info), la pestaña Traducción contiene propiedades específicas de la traducción:
+El mosaico Resumen de traducción contiene las propiedades configuradas para un proyecto de traducción. Además de la [información del proyecto](/help/sites-authoring/projects.md#project-info) genérica, la ficha Traducción contiene propiedades específicas de la traducción:
 
-* Idioma de origen: el idioma de las páginas que se están traduciendo.
+* Idioma de Source: el idioma de las páginas que se están traduciendo.
 * Idioma de destino: el idioma al que se traducen las páginas.
 * Método de traducción: flujo de trabajo de traducción. Se admite la traducción humana o la traducción automática.
 * Proveedor de traducción: el proveedor de servicios de traducción que realiza la traducción.
@@ -265,7 +265,7 @@ Para ver el estado de cada archivo en el trabajo, haga clic en los puntos suspen
 Especifique la fecha antes de la cual el proveedor de traducción debe devolver los archivos traducidos. Puede establecer la fecha límite del proyecto o de un trabajo específico:
 
 * **Proyecto:** Los trabajos de traducción del proyecto heredan la fecha de vencimiento.
-* **Trabajo:** La fecha de vencimiento que ha establecido para el trabajo anula la fecha de vencimiento establecida para el proyecto.
+* **Trabajo:** La fecha límite que estableció para el trabajo anula la fecha límite establecida para el proyecto.
 
 La configuración de la fecha de entrega funciona correctamente solo cuando el proveedor de traducción que está utilizando admite esta función.
 
@@ -329,7 +329,7 @@ Después de iniciar el trabajo de traducción, el mosaico Trabajo de traducción
 
 ## Cancelación de un trabajo de traducción {#canceling-a-translation-job}
 
-Cancelar un trabajo de traducción para detener el proceso de traducción e impedir que el proveedor de traducción realice más traducciones. Puede cancelar un trabajo cuando el trabajo tenga `Committed For Translation` o `Translation In Progress` estado.
+Cancelar un trabajo de traducción para detener el proceso de traducción e impedir que el proveedor de traducción realice más traducciones. Puede cancelar un trabajo cuando el trabajo tenga el estado `Committed For Translation` o `Translation In Progress`.
 
 1. En la consola Proyectos, abra el proyecto de traducción.
 1. En el mosaico Trabajo de traducción, haga clic en el menú de comandos y, a continuación, haga clic en Cancelar.
@@ -370,8 +370,8 @@ Cuando el contenido se traduce para una copia de idioma existente, revise las tr
 
 Para comparar las copias de idioma con el idioma principal:
 
-1. En el **Sites** , vaya a la copia de idioma que desee comparar.
-1. Abra el **[Referencias](/help/sites-authoring/basic-handling.md#references)** panel.
+1. En la consola **Sites**, vaya a la copia de idioma que desee comparar.
+1. Abra el panel **[Referencias](/help/sites-authoring/basic-handling.md#references)**.
 1. En el encabezado **Copias**, seleccione **Copias de idioma.**
 1. Seleccione la copia de idioma específica y, a continuación, puede hacer clic en **Comparar con maestro **o **Comparar con anterior **si procede.
 
@@ -415,24 +415,24 @@ Rellene la copia de idioma para que albergue contenido de la lengua principal qu
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}
 
-Si una página de origen ya traducida necesita ser [cambiado de nombre o movido](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado crea una copia de idioma basada en el nuevo nombre/ubicación de página. La copia de idioma antigua basada en el nombre/ubicación anterior sigue ahí. Para evitarlo, puede utilizar la funcionalidad de actualización de copia de idioma después del movimiento:
+Si una página de origen ya traducida necesita [cambiarle el nombre o moverla](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), al volver a traducir la página después del traslado se creará una copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior sigue ahí. Para evitarlo, puede utilizar la funcionalidad de actualización de copia de idioma después del movimiento:
 
 1. Mueva una página que tenga una copia de idioma.
 1. Seleccione la raíz de la copia de idioma.
-1. Abra el **Referencias** panel.
-1. Seleccionar **Copias de idiomas**.
+1. Abra el panel **Referencias**.
+1. Seleccione **Copias de idiomas**.
 1. Seleccione los idiomas de destino que desee actualizar.
-1. Seleccionar **Actualizar copias de idioma**.
+1. Seleccione **Actualizar copias de idioma**.
 
-   ![update-language-copies](assets/translation-move-to.png)
+   ![copias de idioma de actualización](assets/translation-move-to.png)
 
-1. Clic **Actualizar**. A [Launch](/help/sites-authoring/launches-promoting.md) se creará.
+1. Haga clic en **Actualizar**. Se creará un [lanzamiento](/help/sites-authoring/launches-promoting.md).
 1. Vaya a la raíz de idioma necesaria y selecciónela.
-1. Uso del **Referencias** panel, seleccionar **Lanzamientos**.
+1. En el panel **Referencias**, seleccione **Inicios**.
 
    ![promote-launch-translation](assets/promote-launch-translation.png)
 
-1. Haga clic en el lanzamiento creado y haga clic en **Promocionar lanzamiento**.
+1. Haga clic en el lanzamiento que creó y luego en **Promocionar lanzamiento**.
 
 Ahora se ha movido la página de origen y se ha copiado la copia de idioma asociada.
 
@@ -447,8 +447,8 @@ Puede crear manualmente un proyecto de traducción si prefiere utilizar la conso
 Cuando cree manualmente un proyecto de traducción, debe proporcionar valores para las siguientes propiedades relacionadas con la traducción, además de las [propiedades básicas](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
 
 * **Nombre:** Nombre del proyecto.
-* **Idioma de origen:** El idioma del contenido de origen.
-* **Idioma de destino:** El idioma al que se traduce el contenido.
+* **Idioma de Source:** El idioma del contenido de origen.
+* **Idioma de destino:** Idioma al que se está traduciendo el contenido.
 * **Método de traducción:** Seleccione Traducción humana para indicar que la traducción se debe realizar manualmente.
 
 1. En la barra de herramientas de la consola Proyectos, haga clic en Crear.

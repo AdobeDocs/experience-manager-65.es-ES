@@ -30,15 +30,15 @@ A la hora de aplicar el flujo de trabajo, se especifica la siguiente informació
 
 >[!NOTE]
 >
->AEM Los administradores de pueden iniciar flujos de trabajo mediante [varios métodos más](/help/sites-administering/workflows-starting.md).
+>AEM Los administradores de la aplicación pueden iniciar flujos de trabajo utilizando [otros métodos](/help/sites-administering/workflows-starting.md).
 
 ## Aplicación de flujos de trabajo {#applying-workflows}
 
 Los flujos de trabajo se pueden iniciar desde la consola Sitios web o, al editar una página, desde el Sidekick.
 
-El **Estado** en la columna **Sitios web** La consola de indica si se ha aplicado un flujo de trabajo a una página:
+La columna **Estado** de la consola **Sitios web** indica si se ha aplicado un flujo de trabajo a una página:
 
-![workflow status](assets/workflowstatus.png)
+![estado del flujo de trabajo](assets/workflowstatus.png)
 
 ### Inicio de un flujo de trabajo desde la consola Sitios web {#starting-a-workflow-from-the-websites-console}
 
@@ -52,8 +52,8 @@ El **Estado** en la columna **Sitios web** La consola de indica si se ha aplicad
 1. Abra la consola Sitios web.
 1. Abra la página requerida.
 1. Seleccione la pestaña Workflow del Sidekick.
-1. Expanda el **Flujo de trabajo** , lo que permite seleccionar el **Flujo de trabajo** y, opcionalmente, introduzca **Título de flujo de trabajo** y **Comentario**.
+1. Expanda el cuadro de diálogo **Flujo de trabajo**, lo que le permite seleccionar **Flujo de trabajo** y, opcionalmente, escribir **Título del flujo de trabajo** y **Comentario**.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
-1. Clic **Iniciar flujo de trabajo** para iniciar una nueva instancia de flujo de trabajo con las propiedades configuradas y la página actual como carga útil. Ahora el flujo de trabajo se está ejecutando.
+1. Haga clic en **Iniciar flujo de trabajo** para iniciar una nueva instancia de flujo de trabajo con las propiedades que configuró y la página actual como carga útil. Ahora el flujo de trabajo se está ejecutando.

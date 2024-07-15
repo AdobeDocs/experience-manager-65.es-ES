@@ -34,7 +34,7 @@ Los formularios PDF son procesados por `PdfTaskForm View`.
 
 Cuando se procesa un formulario XDP como PDF, el servicio FormsAugmenter agrega un `FormBridge` JavaScript™. Este JavaScript™ (dentro del formulario PDF) ayuda a realizar acciones como enviar, guardar o quitar formularios sin conexión.
 
-En AEM Forms Workspace, la vista PDFTaskForm se comunica con el `FormBridge`JavaScript, a través de un HTML intermediario presente en `/lc/libs/ws/libs/ws/pdf.html`. El flujo es:
+En AEM Forms Workspace, la vista PDFTaskForm se comunica con `FormBridge`JavaScript mediante un HTML intermedio presente en `/lc/libs/ws/libs/ws/pdf.html`. El flujo es:
 
 **Vista de PDFTaskForm: pdf.html**
 
@@ -42,7 +42,7 @@ Se comunica mediante `window.postMessage` / `window.attachEvent('message')`
 
 Este método es la forma estándar de comunicación entre un marco principal y un iframe. Los oyentes de eventos existentes de los formularios PDF abiertos anteriormente se quitan antes de agregar uno nuevo. Esta depuración también tiene en cuenta el cambio entre la pestaña del formulario y la del historial en la vista de detalles de la tarea.
 
-**pdf.html - `FormBridge`JavaScript dentro del PDF representado**
+**pdf.html - `FormBridge`JavaScript dentro del PDF procesado**
 
 Se comunica mediante `pdfObject.postMessage` / `pdfObject.messageHandler`
 
@@ -58,7 +58,7 @@ La vista de NewHTMLTaskForm representa los nuevos formularios HTML.
 
 Cuando un formulario XDP se procesa como HTML mediante el paquete de formularios móviles implementado en CRX, también agrega `FormBridge` JavaScript para el formulario, que expone diferentes métodos para guardar y enviar datos de formulario.
 
-Este JavaScript es diferente del mencionado en los PDF forms anteriores, pero tiene un propósito similar.
+Esta JavaScript es diferente de la mencionada en los PDF forms anteriores, pero tiene un propósito similar.
 
 >[!NOTE]
 >
@@ -68,11 +68,11 @@ Este JavaScript es diferente del mencionado en los PDF forms anteriores, pero ti
 
 SwfTaskForm procesa los formularios Flex, y las vistas de HtmlTaskFormlas procesan las guías, respectivamente.
 
-En AEM Forms Workspace, estas vistas se comunican con el SWF Flex® real que conforma el formulario o la guía mediante un SWF intermediario presente en `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+En AEM Forms Workspace, estas vistas se comunican con el SWF Flex® real que conforma el formulario o la guía mediante un SWF intermedio presente en `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 La comunicación se produce mediante `swfObject.postMessage` / `window.flexMessageHandler`.
 
-Este protocolo se define mediante `WsNextAdapter.swf`. Los `flexMessageHandlers` existentes en el objeto window, de los formularios SWF abiertos previamente se quitan antes de agregar uno nuevo. La lógica también tiene en cuenta el cambio entre la pestaña del formulario y la del historial en la vista de detalles de la tarea. El `WsNextAdapter.swf` se utiliza para realizar varias acciones de formulario, como guardar o enviar.
+Este protocolo se define mediante `WsNextAdapter.swf`. Los `flexMessageHandlers` existentes en el objeto window, de los formularios SWF abiertos previamente se quitan antes de agregar uno nuevo. La lógica también tiene en cuenta el cambio entre la pestaña del formulario y la del historial en la vista de detalles de la tarea. `WsNextAdapter.swf` se usa para realizar diversas acciones de formulario, como guardar o enviar.
 
 >[!NOTE]
 >
@@ -94,4 +94,4 @@ Si los botones de acción directa de AEM Forms Workspace están visibles, llama 
 
 Por ejemplo, una aplicación de Flex puede definir `ExternalInterface.addCallback('getMessage', listener)` para apoyar esta comunicación. Si la aplicación de terceros desea administrar el envío de formularios mediante sus propios botones, debe especificar `hideDirectActions = true() in the runtimeMap` y puede omitir este oyente. Por lo tanto, esta construcción es opcional.
 
-Puede leer más sobre la integración de aplicaciones de terceros con respecto a Administración de correspondencia en [Integración de Administración de correspondencia en AEM Forms Workspace](/help/forms/using/integrating-correspondence-management-html-workspace.md).
+Puede leer más sobre la integración de aplicaciones de terceros con respecto a Administración de correspondencia en [Integración de Administración de correspondencia en el espacio de trabajo de AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).

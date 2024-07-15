@@ -25,11 +25,11 @@ Para configurar un área de este tipo dentro del sitio web, debe:
 
 * [crear el grupo de usuarios cerrado real y asignar miembros](#creating-the-user-group-to-be-used).
 
-* [aplicar este grupo a las páginas requeridas](#applying-your-closed-user-group-to-content-pages) y seleccione (o cree) la página de inicio de sesión para que la utilicen los miembros del CUG; también se especifica al aplicar un CUG a una página de contenido.
+* [aplique este grupo a las páginas requeridas](#applying-your-closed-user-group-to-content-pages) y seleccione (o cree) la página de inicio de sesión para que la utilicen los miembros del CUG; también se especifica al aplicar un CUG a una página de contenido.
 
-* [crear un vínculo, de algún tipo, al menos a una página dentro del área protegida](#linking-to-the-cug-pages), de lo contrario, no será visible.
+* [cree un vínculo, de algún tipo, al menos a una página dentro del área protegida](#linking-to-the-cug-pages); de lo contrario, no será visible.
 
-* [configurar Dispatcher](#configure-dispatcher-for-cugs) en uso.
+* [configurar Dispatcher](#configure-dispatcher-for-cugs) si está en uso.
 
 >[!CAUTION]
 >
@@ -43,27 +43,27 @@ Para configurar un área de este tipo dentro del sitio web, debe:
 
 Para crear un grupo de usuarios cerrado:
 
-1. Ir a **Herramientas - Seguridad** AEM desde la pantalla de inicio de la.
+1. AEM Vaya a **Herramientas - Seguridad** desde la pantalla principal de la pantalla de inicio de la.
 
    >[!NOTE]
    >
-   >Consulte [Administración de usuarios y grupos](/help/sites-administering/security.md#managing-users-and-groups) para obtener información completa sobre la creación y configuración de usuarios y grupos.
+   >Consulte [Administración de usuarios y grupos](/help/sites-administering/security.md#managing-users-and-groups) para obtener información completa sobre cómo crear y configurar usuarios y grupos.
 
-1. Seleccione el **Grupos** de la siguiente pantalla.
+1. Seleccione la tarjeta **Grupos** en la siguiente pantalla.
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Pulse el botón **Crear** en la esquina superior derecha, para crear un grupo.
+1. Presione el botón **Crear** en la esquina superior derecha para crear un grupo.
 1. Asigne un nombre al nuevo grupo. Por ejemplo, `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
-1. Vaya a la **Miembros** y asigne los usuarios necesarios a este grupo.
+1. Vaya a la ficha **Miembros** y asigne los usuarios necesarios a este grupo.
 
    ![screenshot_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
 
 1. Active los usuarios que haya asignado a su CUG; en este caso, todos los miembros de `cug_access`.
-1. Activar el grupo de usuarios cerrado para que esté disponible en el entorno de publicación; en este ejemplo, `cug_access`.
+1. Active el grupo de usuarios cerrado para que esté disponible en el entorno de publicación; en este ejemplo, `cug_access`.
 
 ## Aplicación Del Grupo De Usuarios Cerrado A Las Páginas De Contenido {#applying-your-closed-user-group-to-content-pages}
 
@@ -74,18 +74,18 @@ Para aplicar el CUG a una o varias páginas:
 
    ![screenshot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
-1. En la siguiente ventana, abra el **Avanzadas** pestaña.
+1. En la siguiente ventana, abre la pestaña **Avanzado**.
 
-1. Desplácese hacia abajo hasta el **Requisito de autenticación** sección.
+1. Desplácese hacia abajo hasta la sección **Requisito de autenticación**.
 
-   1. Activar el **Activar** tickbox.
+   1. Activar la casilla de verificación **Habilitar**.
 
-   1. Añada la ruta a su **Página de inicio**.
+   1. Agregue la ruta a su **página de inicio de sesión**.
 Es opcional; si se deja en blanco, se utiliza la página de inicio de sesión estándar.
 
-   ![CUG añadido](assets/cug-authentication-requirement.png)
+   ![CUG agregado](assets/cug-authentication-requirement.png)
 
-1. A continuación, vaya a **Permisos** y seleccione **Editar grupo de usuarios cerrado**.
+1. A continuación, vaya a la pestaña **Permisos** y seleccione **Editar grupo de usuarios cerrado**.
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
@@ -93,19 +93,19 @@ Es opcional; si se deja en blanco, se utiliza la página de inicio de sesión es
    >
    >Tenga en cuenta que los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
    >
-   >Para obtener más información, consulte [esta página](closed-user-groups.md#aem-livecopy).
+   >Para obtener más información, vea [esta página](closed-user-groups.md#aem-livecopy).
 
-1. El **Editar grupo de usuarios cerrado** se abre. Aquí puede buscar y seleccionar su CUG y confirmar la selección del grupo con **Guardar**.
+1. Se abre el cuadro de diálogo **Editar grupo de usuarios cerrado**. Aquí puede buscar y seleccionar su CUG y confirmar la selección del grupo con **Guardar**.
 
    El grupo se agregará a la lista; por ejemplo, el grupo **cug_access**.
 
-   ![CUG añadido](assets/cug-added.png)
+   ![CUG agregado](assets/cug-added.png)
 
 1. Confirme los cambios con **Guardar y cerrar**.
 
 >[!NOTE]
 >
->Consulte [Identity Management](/help/sites-administering/identity-management.md) para obtener información sobre los perfiles en el entorno de publicación y proporcionar formularios para iniciar y cerrar sesión.
+>Consulte [Identity Management](/help/sites-administering/identity-management.md) para obtener información sobre los perfiles del entorno de publicación y proporcionar formularios para iniciar y cerrar sesión.
 
 ## Vinculación a las páginas de CUG {#linking-to-the-cug-pages}
 
@@ -113,17 +113,17 @@ Dado que el usuario anónimo no puede ver el destino de los vínculos a las pág
 
 Para evitarlo, es aconsejable crear páginas de redireccionamiento no protegidas que apunten a páginas dentro del área de CUG. A continuación, las entradas de navegación se representan sin que el verificador de vínculos tenga problemas. Solo al acceder realmente a la página de redireccionamiento se redirige al usuario dentro del área de CUG, después de proporcionar correctamente sus credenciales de inicio de sesión.
 
-## Configurar Dispatcher para CUG {#configure-dispatcher-for-cugs}
+## Configuración de Dispatcher para CUG {#configure-dispatcher-for-cugs}
 
 Si utiliza Dispatcher, debe definir una granja de Dispatcher con las siguientes propiedades:
 
-* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): Coincide con la ruta a las páginas a las que se aplica el CUG.
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): coincide con la ruta de acceso a las páginas a las que se aplica el CUG.
 * \sessionmanagement: consulte la información siguiente.
-* [escondrijo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Un directorio de caché dedicado a los archivos a los que se aplica el CUG.
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): Un directorio de caché dedicado a los archivos a los que se aplica el CUG.
 
-### Configuración de la administración de sesiones de Dispatcher para CUG {#configuring-dispatcher-session-management-for-cugs}
+### Configuración de Dispatcher Session Management para CUG {#configuring-dispatcher-session-management-for-cugs}
 
-Configurar [administración de sesiones en el archivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) para el CUG. El controlador de autenticación que se utiliza cuando se solicita acceso para páginas de CUG determina cómo se configura la administración de sesiones.
+Configure la administración de [sesión en el archivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) para el CUG. El controlador de autenticación que se utiliza cuando se solicita acceso para páginas de CUG determina cómo se configura la administración de sesiones.
 
 ```xml
 /sessionmanagement
@@ -134,10 +134,10 @@ Configurar [administración de sesiones en el archivo dispatcher.any](https://ex
 
 >[!NOTE]
 >
->Cuando una granja de Dispatcher tiene habilitada la administración de sesiones, todas las páginas que administra la granja no se almacenan en caché. Para almacenar en caché las páginas que están fuera de CUG, cree una segunda granja en dispatcher.any
+>Cuando una granja de servidores de Dispatcher tiene habilitada la administración de sesiones, todas las páginas que administra la granja de servidores no se almacenan en caché. Para almacenar en caché las páginas que están fuera de CUG, cree una segunda granja en dispatcher.any
 >que gestiona las páginas que no son de CUG.
 
-1. Configurar [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) al definir `/directory`; por ejemplo:
+1. Configure [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) definiendo `/directory`; por ejemplo:
 
    ```xml
    /sessionmanagement
@@ -147,4 +147,4 @@ Configurar [administración de sesiones en el archivo dispatcher.any](https://ex
      }
    ```
 
-1. Establecer [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) hasta `0`.
+1. Establezca [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) en `0`.

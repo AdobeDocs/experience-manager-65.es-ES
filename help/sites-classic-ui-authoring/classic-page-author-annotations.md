@@ -92,12 +92,12 @@ Los bocetos son una función de las anotaciones que permiten crear gráficos de 
 
    * recto:
 
-     mantener presionado `ALT` y haga clic en los puntos inicial y final; finalice con un doble clic.
+     mantenga presionado `ALT` y haga clic en los puntos inicial y final; finalice con un doble clic.
 
 * Una vez que haya salido del módulo de esbozo, puede pulsar en una línea de esbozo para seleccionarla.
 * Para mover un boceto, selecciónelo y arrástrelo a la posición que desee.
 * Un boceto superpone el contenido. Esto significa que, dentro de las cuatro esquinas del boceto, no se puede hacer clic en el párrafo subyacente. Por ejemplo, si debe editar o acceder a un vínculo. Si esto se convierte en un problema (por ejemplo, si tiene un boceto que cubre una gran área de la página), minimice la anotación adecuada, ya que esto también minimizará todos los bocetos relacionados, lo que le dará acceso al área subyacente.
-* Para eliminar un boceto individual, seleccione el boceto necesario y, a continuación, pulse la tecla **Eliminar** clave (**fan**-**retroceso** en un Mac).
+* Para eliminar un boceto individual, selecciona el boceto requerido y luego oprime la tecla **Delete** (**fn**-**backspace** en un Mac).
 
 * Si mueve o copia un párrafo, las anotaciones relacionadas y sus bocetos también se moverán o copiarán; su posición en relación con el párrafo seguirá siendo la misma.
 * Si elimina una anotación, también se eliminarán todos los bocetos adjuntos a esa anotación.

@@ -26,11 +26,11 @@ La función de biblioteca de archivos proporciona un lugar para que los visitant
 Esta sección de la documentación describe lo siguiente:
 
 * AEM Agregar la función de biblioteca de archivos a un sitio de la.
-* Ajustes de configuración para `File Library` componente.
+* Ajustes de configuración para el componente `File Library`.
 
 ### Agregar una biblioteca de archivos a una página {#adding-a-file-library-to-a-page}
 
-Para agregar un `File Library` a una página en modo de autor, busque el componente:
+Para agregar un componente `File Library` a una página en modo de autor, busque el componente:
 
 * `Communities / File Library`
 
@@ -38,21 +38,21 @@ Y arrástrela a su lugar en una página.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) están incluidos, es como se `File Library` el componente aparece:
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](/help/communities/essentials-file-library.md#essentials-for-client-side), así es como aparece el componente `File Library`:
 
-![file-library1](assets/file-library1.png)
+![biblioteca de archivos1](assets/file-library1.png)
 
 ### Configurar la biblioteca de archivos {#configuring-file-library}
 
-Seleccione el colocado `File Library` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el componente `File Library` colocado para que pueda acceder y seleccionar el icono `Configure` que abre el cuadro de diálogo de edición.
 
-![configure-new](assets/configure-new.png)
+![configurar-nuevo](assets/configure-new.png)
 
-![file-library2](assets/file-library2.png)
+![biblioteca de archivos2](assets/file-library2.png)
 
 #### Pestaña Comentarios {#comments-tab}
 
-En el **Comentarios** , especifique si aparecen los comentarios de los archivos cargados y cómo:
+En la ficha **Comentarios**, especifique si los comentarios de los archivos cargados aparecen y cómo:
 
 * **Permitir comentarios sobre los archivos**
 
@@ -94,13 +94,13 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
   Si la opción Permitir etiquetado está activada, esta configuración limita el número de etiquetas sugeridas que se deben mostrar. Si se establece en -1, no hay límite. El valor predeterminado es -1.
 
-* **Permitir votación**
+* **Permitir Votación**
 
   Si se selecciona, se habilita la capacidad de votar por un archivo. El valor predeterminado está desmarcado.
 
 * **Permitir seguimiento**
 
-  Si se selecciona esta opción, se incluye la siguiente característica para artículos de blog, que permite a los miembros [notificado](/help/communities/notifications.md) de nuevos puestos. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se debe incluir la siguiente característica para artículos de blog, que permite [notificar](/help/communities/notifications.md) a los miembros las nuevas publicaciones. El valor predeterminado está desmarcado.
 
 * **Habilitar la mención**
 
@@ -114,15 +114,15 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
   Especifique la cadena de patrón permitida para etiquetar (@mention) al usuario registrado en una publicación. Por ejemplo, `~{{familyName}}{{givenName}}`.
 
-* **Permitir respuestas de debate**
+* **Permitir respuestas de subprocesos**
 
   Si está activado, permitir respuestas a comentarios publicados. El valor predeterminado está desmarcado.
 
 #### Pestaña Moderación de usuario {#user-moderation-tab}
 
-En el **Moderación de usuario** pestaña, configurar la moderación de los comentarios, si se permiten los comentarios:
+En la ficha **Moderación de usuarios**, configure la moderación de los comentarios, si se permiten los comentarios:
 
-* **Premoderación**
+* **Moderación previa**
 
   Si se selecciona, los comentarios deben aprobarse antes de aparecer en un sitio de publicación. El valor predeterminado está desmarcado.
 
@@ -134,7 +134,7 @@ En el **Moderación de usuario** pestaña, configurar la moderación de los come
 
   Si se selecciona esta opción, se permite que los moderadores de confianza denieguen comentarios. El valor predeterminado está desmarcado.
 
-* **Cerrar / volver a abrir comentarios**
+* **Cerrar/volver a abrir comentarios**
 
   Si se selecciona esta opción, permite que los moderadores de miembros de confianza cierren y abran de nuevo los comentarios. El valor predeterminado está desmarcado.
 
@@ -156,7 +156,7 @@ En el **Moderación de usuario** pestaña, configurar la moderación de los come
 
 * **Límite de indicación**
 
-  Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser mayor o igual que **Umbral de moderación**. El valor predeterminado es 5.
+  Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser mayor o igual que el **umbral de moderación**. El valor predeterminado es 5.
 
 ### Pestaña Configuración de ordenación {#sort-settings-tab}
 
@@ -166,8 +166,8 @@ Establecer como predeterminado
 
 ### Información adicional {#additional-information}
 
-Puede encontrar más información en la [Elementos básicos de biblioteca de archivos](/help/communities/essentials-file-library.md) para desarrolladores.
+Encontrará más información en la página de [File Library Essentials](/help/communities/essentials-file-library.md) para desarrolladores.
 
-Para ver la moderación de los temas publicados y los comentarios, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+Para moderar los temas publicados y los comentarios, vea [Moderar el contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-Para etiquetar temas y comentarios publicados, consulte [Etiquetado del contenido generado por el usuario](/help/communities/tag-ugc.md).
+Para etiquetar temas y comentarios publicados, consulte [Etiquetado de contenido generado por el usuario](/help/communities/tag-ugc.md).

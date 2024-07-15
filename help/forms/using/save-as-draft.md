@@ -24,7 +24,7 @@ Puede [actualizar el formulario](/help/forms/using/working-with-form.md), [anota
 Para habilitar la función Guardar como borrador para formularios guardados en el portal de formularios, consulte [Guardar un formulario HTML5 como borrador](/help/forms/using/saving-html5-form-draft.md).
 Para configurar el envío de formularios adaptables, consulte [Componente Borradores y envíos](/help/forms/using/draft-submission-component.md). (No válido para formularios sincronizados con el servidor JEE de AEM Forms).
 
-Para crear un borrador, abra el formulario y seleccione. **Guardar como borrador** ![save-as-draft](assets/save-as-draft.png). Proporcione el nombre del borrador y seleccione **Guardar**. El borrador se guardará en la carpeta Borradores y se sincronizará con el servidor. Se guardará en la carpeta Bandeja de salida si la aplicación está sin conexión.
+Para crear un borrador, abra el formulario y seleccione **Guardar como borrador** ![save-as-draft](assets/save-as-draft.png). Proporcione el nombre del borrador y seleccione **Guardar**. El borrador se guardará en la carpeta Borradores y se sincronizará con el servidor. Se guardará en la carpeta Bandeja de salida si la aplicación está sin conexión.
 
 Si actualiza el formulario correspondiente posteriormente, los cambios se reflejarán inmediatamente. Al sincronizar la aplicación de AEM Forms con el servidor de AEM Forms, el borrador se cargará en el servidor de AEM Forms. Además, el borrador se moverá de la Bandeja de salida a la carpeta Tareas o Borradores. Aparece un icono de edición junto a él.
 

@@ -22,18 +22,18 @@ Al administrar flujos de trabajo, puede iniciarlos mediante varios métodos:
 
 * Manualmente:
 
-   * Desde una [Modelo de flujo de trabajo](#workflow-models).
-   * Uso de un paquete de flujo de trabajo para [procesamiento por lotes](#workflow-packages-for-batch-processing).
+   * De un [modelo de flujo de trabajo](#workflow-models).
+   * Usando un paquete de flujo de trabajo para [procesamiento por lotes](#workflow-packages-for-batch-processing).
 
 * Automáticamente:
 
-   * En respuesta a cambios de nodo; [Uso de un lanzador](#workflows-launchers).
+   * En respuesta a cambios de nodo; [usando un lanzador](#workflows-launchers).
 
 >[!NOTE]
 >
 >Otros métodos también están disponibles para los autores; para obtener más información, consulte:
 >
->* [Aplicación de flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md)
+>* [Aplicar flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md)
 >* [Cómo aplicar flujos de trabajo a recursos DAM](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Proyectos de traducción](/help/sites-administering/tc-manage.md)
@@ -41,13 +41,13 @@ Al administrar flujos de trabajo, puede iniciarlos mediante varios métodos:
 
 ## Modelos de flujo de trabajo {#workflow-models}
 
-Puede iniciar un flujo de trabajo [basado en uno de los modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) en la consola Modelos de flujo de trabajo. La única información obligatoria es la carga útil, aunque también se puede añadir un título o un comentario.
+Puede iniciar un flujo de trabajo [basado en uno de los modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) enumerados en la consola Modelos de flujo de trabajo. La única información obligatoria es la carga útil, aunque también se puede añadir un título o un comentario.
 
 ## Iniciadores de flujos de trabajo {#workflows-launchers}
 
 El iniciador del flujo de trabajo supervisa los cambios en el repositorio de contenido para iniciar flujos de trabajo que dependen de la ubicación y el tipo de recurso del nodo modificado.
 
-Uso del **Lanzador** puede:
+Con **Launcher** puede:
 
 * Consulte los flujos de trabajo ya iniciados para nodos específicos.
 * Seleccione un flujo de trabajo que iniciar cuando se haya creado, modificado o eliminado un determinado tipo de nodo o nodo.
@@ -56,7 +56,7 @@ Uso del **Lanzador** puede:
 Se puede crear un lanzador para cualquier nodo. Sin embargo, los cambios en ciertos nodos no inician flujos de trabajo. Los cambios en los nodos de las siguientes rutas no hacen que se inicien los flujos de trabajo:
 
 * `/var/workflow/instances`
-* Cualquier nodo de bandeja de entrada de flujo de trabajo ubicado en cualquier parte del `/home/users` ramificación
+* Cualquier nodo de bandeja de entrada de flujo de trabajo ubicado en cualquier lugar de la rama `/home/users`
 * `/tmp`
 * `/var/audit`
 * `/var/classes`
@@ -65,7 +65,7 @@ Se puede crear un lanzador para cualquier nodo. Sin embargo, los cambios en cier
 * `/var/mobile`
 * `/var/statistics`
 
-   * Excepción: cambios en los nodos siguientes `/var/statistics/tracking` *hacer* iniciar flujos de trabajo.
+   * Excepción: los cambios en los nodos por debajo de `/var/statistics/tracking` *do* hacen que se inicien los flujos de trabajo.
 
 La instalación estándar incluye varias definiciones. Se utilizan para tareas de colaboración social y administración de activos digitales:
 
@@ -85,19 +85,19 @@ Un paquete de flujo de trabajo:
 
 ## Inicio de un flujo de trabajo desde la consola Modelos {#starting-a-workflow-from-the-models-console}
 
-1. Vaya a **Modelos** consola con **Herramientas**, **Flujo de trabajo**, entonces **Modelos**.
+1. Vaya a la consola **Modelos** con **Herramientas**, **Flujo de trabajo** y, a continuación, **Modelos**.
 1. Seleccione el flujo de trabajo (según la vista de la consola); también puede utilizar Buscar (parte superior izquierda) si es necesario:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >El **[Transitorio](/help/sites-developing/workflows.md#transient-workflows)** El indicador muestra los flujos de trabajo para los que el historial de flujos de trabajo no persiste.
+   >El indicador **[Transient](/help/sites-developing/workflows.md#transient-workflows)** muestra los flujos de trabajo para los que no persiste el historial de flujos de trabajo.
 
-1. Seleccionar **Iniciar flujo de trabajo** en la barra de herramientas.
+1. Seleccione **Iniciar flujo de trabajo** en la barra de herramientas.
 1. Se abre el cuadro de diálogo Ejecutar flujo de trabajo, que permite especificar:
 
-   * **Carga útil**
+   * **Carga**
 
      Puede ser una página, nodo, recurso o paquete, entre otros recursos.
 
@@ -113,8 +113,8 @@ Un paquete de flujo de trabajo:
 
 ## Creación de una configuración de lanzador {#creating-a-launcher-configuration}
 
-1. Vaya a **Iniciadores de flujo de trabajo** consola con **Herramientas**, **Flujo de trabajo**, entonces **Lanzadores**.
-1. Seleccionar **Crear**, entonces **Añadir lanzador** para abrir el cuadro de diálogo:
+1. Vaya a la consola de **Iniciadores de flujo de trabajo** con **Herramientas**, **Flujo de trabajo** y después **Iniciadores**.
+1. Seleccione **Crear** y después **Agregar lanzador** para abrir el cuadro de diálogo:
 
    ![wf-105](assets/wf-105.png)
 
@@ -126,7 +126,7 @@ Un paquete de flujo de trabajo:
       * Modificado
       * Eliminado
 
-   * **Nodetype**
+   * **Tipo de nodo**
 
      El tipo de nodo al que se aplica el iniciador del flujo de trabajo.
 
@@ -136,7 +136,7 @@ Un paquete de flujo de trabajo:
 
    * **Modo(s) de ejecución**
 
-     El tipo de servidor al que se aplica el iniciador del flujo de trabajo. Seleccionar **Autor**, **Publish**, o **Crear y publicar**.
+     El tipo de servidor al que se aplica el iniciador del flujo de trabajo. Seleccione **Autor**, **Publish** o **Autor y Publish**.
 
    * **Condiciones**
 
@@ -144,11 +144,11 @@ Un paquete de flujo de trabajo:
 
      name==User
 
-   * **Funciones**
+   * **Características**
 
      Lista de funciones que se van a habilitar. Seleccione las funciones necesarias mediante el selector desplegable.
 
-   * **Funciones desactivadas**
+   * **Características deshabilitadas**
 
    Lista de funciones que se van a deshabilitar. Seleccione las funciones necesarias mediante el selector desplegable.
 
@@ -164,8 +164,8 @@ Un paquete de flujo de trabajo:
 
      Controla si el lanzador del flujo de trabajo está activado:
 
-      * Seleccionar **Activar** para iniciar flujos de trabajo cuando se cumplan las propiedades de configuración.
-      * Seleccionar **Deshabilitar** cuando el flujo de trabajo no debe ejecutarse (ni siquiera cuando se cumplan las propiedades de configuración).
+      * Seleccione **Habilitar** para iniciar flujos de trabajo cuando se cumplan las propiedades de configuración.
+      * Seleccione **Deshabilitar** cuando el flujo de trabajo no deba ejecutarse (ni siquiera cuando se cumplan las propiedades de configuración).
 
    * **Lista de exclusión**
 
@@ -173,8 +173,8 @@ Un paquete de flujo de trabajo:
 
      Esta propiedad del lanzador es una lista de elementos separados por comas: &quot;
 
-      * `property-name` ignorar cualquiera `jcr` evento que se activó en el nombre de propiedad especificado. &quot;
-      * `event-user-data:<*someValue*>` pasa por alto cualquier evento que contenga `*<someValue*`> `user-data` configurar a través de [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `property-name` ignora cualquier evento `jcr` que se haya activado en el nombre de propiedad especificado. &quot;
+      * `event-user-data:<*someValue*>` ignora cualquier evento que contenga `*<someValue*`> `user-data` establecido a través de la API [`ObservationManager`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Por ejemplo:
 
@@ -184,10 +184,10 @@ Un paquete de flujo de trabajo:
 
      `event-user-data:changedByWorkflowProcess`
 
-1. Seleccionar **Crear**, para crear el lanzador y volver a la consola.
+1. Seleccione **Crear** para crear el lanzador y volver a la consola.
 
    Cuando se produce el evento correspondiente, el iniciador se activa y se inicia el flujo de trabajo.
 
 ## Administración de una configuración de lanzador {#managing-a-launcher-configuration}
 
-Una vez creada la configuración del iniciador, puede utilizar la misma consola para seleccionar la instancia y, a continuación, **Ver propiedades** (y editarlos) o **Eliminar**.
+Después de crear la configuración del iniciador, puede usar la misma consola para seleccionar la instancia y, a continuación, **Ver propiedades** (y editarlas) o **Eliminar**.

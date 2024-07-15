@@ -18,9 +18,9 @@ ht-degree: 15%
 
 # Aspectos básicos de componentes, funciones y funciones  {#component-function-and-feature-essentials}
 
-Las funciones de las comunidades de Adobe Experience Manager AEM () requieren que los visitantes del sitio se conviertan en miembros e inicien sesión en [sitio comunitario](overview.md#communitiessites) antes de poder publicar contenido. Por lo tanto, [plantillas de sitio de comunidad](sites.md), desde el que se crea un sitio de comunidad [created](sites-console.md), están diseñadas para incluir una función de inicio de sesión y perfiles de usuario, mensajería, búsqueda, moderación y traducción.
+Las características de las comunidades Adobe Experience Manager AEM () requieren que los visitantes del sitio se conviertan en miembros e inicien sesión en el [sitio de la comunidad](overview.md#communitiessites) antes de poder publicar contenido. Por lo tanto, las [plantillas de sitio de la comunidad](sites.md), desde las cuales se [crea un sitio de la comunidad](sites-console.md), están diseñadas para incluir una característica de inicio de sesión y perfiles de usuario, mensajería, búsqueda, moderación y traducción.
 
-Un sitio de la comunidad permite a los miembros crear grupos de la comunidad cuando la variable [función de grupos comunitarios](functions.md#groups-function) se incluye en la plantilla de sitio de la comunidad seleccionada.
+Un sitio de comunidad admite miembros que crean grupos de comunidad cuando la función [grupos de comunidad](functions.md#groups-function) se incluye en la plantilla de sitio de comunidad seleccionada.
 
 A continuación se muestran vínculos a información esencial para los componentes, las funciones y las características de las comunidades.
 
@@ -33,12 +33,12 @@ A continuación se muestran vínculos a información esencial para los component
    * [Me está gustando](essentials-liking.md)
    * [Clasificación](rating-basics.md)
    * [Votación](essentials-voting.md)
-   * *Encuesta (ya no disponible)*
+   * *Sondeo (ya no disponible)*
 
 ## Componentes con funciones {#components-with-functions}
 
 * [Flujos de actividad](essentials-activities.md)
-* [Blog](blog-developer-basics.md) ( `Journal`)
+* [Blog](blog-developer-basics.md) (`Journal`)
 
 * [Calendario](calendar-basics-for-developers.md)
 * [Contenido destacado](essentials-featured.md)
@@ -66,10 +66,10 @@ A continuación se muestran vínculos a información esencial para los component
 
 ## Javadocs {#javadocs}
 
-El [javadocs en línea](../../help/sites-developing/reference-materials.md) AEM Reflejar las API disponibles en la versión 6.3 de.
+AEM Los [javadocs en línea](../../help/sites-developing/reference-materials.md) reflejan las API disponibles en la versión 6.3 de la versión en línea de la versión 6.3.
 Las API de Communities están en `com.adobe.cq.social.*` paquetes.
 
-Para cada [paquete de funciones](deploy-communities.md#latestfeaturepack), hay disponible un jar de javadoc. Para obtener más información, visite [Uso de Maven para comunidades](maven.md#javadocs).
+Para cada [paquete de funciones](deploy-communities.md#latestfeaturepack), hay disponible un jar de javadoc. Para obtener más información, visite [Usar Maven para las comunidades](maven.md#javadocs).
 
 ## Información adicional {#additional-information}
 

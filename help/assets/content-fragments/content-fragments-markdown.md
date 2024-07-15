@@ -14,7 +14,7 @@ ht-degree: 88%
 
 # Markdown {#markdown}
 
-Cuando usted es [creación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza *markdown* sintaxis para permitirle escribir fácilmente contenido sin encabezado:
+Cuando [crea](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido usa la sintaxis *markdown* para permitirle escribir fácilmente contenido sin encabezado:
 
 ![Editor de Markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

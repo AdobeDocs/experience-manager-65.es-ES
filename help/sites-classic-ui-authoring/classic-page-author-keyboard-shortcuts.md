@@ -18,11 +18,11 @@ ht-degree: 15%
 
 # Métodos abreviados de teclado al editar páginas{#keyboard-shortcuts-when-editing-pages}
 
-Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros, en la [uso de consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros, en el [uso de las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->En las tablas siguientes, para las combinaciones de teclas en la variable **Acceso directo** , las teclas Ctrl y Comando funcionan en macOS.
+>En las tablas siguientes, para las combinaciones de teclas de la columna **Método abreviado**, las teclas Ctrl y Comando funcionan en macOS.
 
 >[!NOTE]
 >
@@ -94,12 +94,12 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forzar el menú contextual predeterminado (explorador).<br /> <strong>Nota:</strong> AEM Los menús contextuales solo se muestran en la interfaz de usuario clásica.</td>
+   <td>Forzar el menú contextual predeterminado (explorador).AEM <br /> <strong>Nota:</strong> los menús contextuales de la solo se producen en la IU clásica.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Alt-c</code></strong></td>
-   <td>Muestra el <a href="/help/sites-administering/client-context.md">Client Context</a>.</td>
+   <td>Muestra el <a href="/help/sites-administering/client-context.md">contexto de cliente</a>.</td>
   </tr>
   <tr>
    <td>Editor de texto enriquecido<br /> </td>
@@ -164,7 +164,7 @@ Hay métodos abreviados de teclado adicionales disponibles para los desarrollado
   </tr>
   <tr>
    <td>Modo de edición</td>
-   <td>Establezca el siguiente sufijo en la dirección URL:<br /> <code>?debugClientLibs=true</code><br /> A continuación utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Establezca el siguiente sufijo en la dirección URL: <br /> <code>?debugClientLibs=true</code><br /> A continuación, utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Para ver las estadísticas de tiempo de carga de la página.</td>
   </tr>
  </tbody>

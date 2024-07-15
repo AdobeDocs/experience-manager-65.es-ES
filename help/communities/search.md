@@ -20,11 +20,11 @@ ht-degree: 1%
 
 La función de búsqueda funciona con varias otras funciones, como foros, para proporcionar la capacidad de buscar contenido.
 
-A la hora de añadir la capacidad de buscar publicaciones introducidas por los miembros de la comunidad, denominadas contenido generado por el usuario (UGC), hay dos componentes: [Buscar](#search) y [Resultados de búsqueda](#search-results).
+Al agregar la capacidad de buscar publicaciones ingresadas por miembros de la comunidad, lo que se conoce como contenido generado por el usuario (UGC), hay dos componentes: [Buscar](#search) y [Resultados de búsqueda](#search-results).
 
-La página que incluye el `Search Results` Este componente admite la búsqueda y la visualización de resultados.
+La página que incluye el componente `Search Results` admite tanto la búsqueda como la visualización de los resultados.
 
-La página que incluye el `Search` proporciona un lugar para iniciar una búsqueda con los resultados que aparecen en la `Search Results` página.
+La página que incluye el componente `Search` proporciona un lugar para iniciar una búsqueda con los resultados que aparecen en la página `Search Results`.
 
 La función de búsqueda se puede utilizar con cualquier otra función que permita a los visitantes y miembros del sitio ver el contenido.
 
@@ -32,23 +32,23 @@ La función de búsqueda se puede utilizar con cualquier otra función que permi
 
 ### Agregar la búsqueda a una página {#add-search-to-a-page}
 
-Para agregar un `Search` a una página en modo de autor, utilice el navegador de componentes para localizar `Communities / Search` y arrástrela a su lugar en una página. Uso de `Search` requiere una segunda página para `Search Results.`
+Para agregar un componente `Search` a una página en modo de autor, use el explorador de componentes para localizar `Communities / Search` y arrástrelo hasta su lugar en una página. El uso de `Search` requiere una segunda página para `Search Results.`
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](basics.md).
 
-Cuando la biblioteca del lado del cliente requerida, `cq.social.hbs.search`, se incluye, así es como `Search` El componente aparecerá.
+Cuando se incluya la biblioteca necesaria del lado del cliente `cq.social.hbs.search`, así es como aparecerá el componente `Search`.
 
 ![add-search](assets/add-search.png)
 
 ### Configuración de la búsqueda añadida {#configure-the-added-search}
 
-Seleccione el colocado `Search` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el componente `Search` colocado al que desee acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
-En el **[!UICONTROL Configuración de búsqueda]** , especifique cómo se buscan las rutas cuando un visitante introduce una consulta.
+En la ficha **[!UICONTROL Configuración de búsqueda]**, especifique las rutas que se buscarán cuando un visitante introduzca una consulta.
 
-![search-settings](assets/search-settings.png)
+![configuración de búsqueda](assets/search-settings.png)
 
 * **[!UICONTROL Rutas de búsqueda]**
 Al agregar rutas de búsqueda mediante el botón Agregar elemento, la búsqueda de contenido está limitada. Por ejemplo, para limitar la búsqueda a un foro específico, seleccione un componente de foro ubicado en una página:
@@ -56,33 +56,33 @@ Al agregar rutas de búsqueda mediante el botón Agregar elemento, la búsqueda 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Página de resultados]**
-Los resultados aparecerán en una página independiente especificada utilizando el explorador para seleccionar una página que contenga la variable `Search Results` componente.
+Los resultados aparecerán en una página independiente especificada mediante el explorador para seleccionar una página que contenga el componente `Search Results`.
 
 ## Resultados de la búsqueda {#search-results}
 
 ### Agregar resultados de búsqueda a una página {#add-search-results-to-a-page}
 
-Para agregar un `Search Results` a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un componente `Search Results` a una página en modo de autor, use el explorador de componentes para localizar
 
 * `Communities / Search Results`
 
 y arrástrela a su lugar en una página. A diferencia del componente Buscar, no se necesita una segunda página, ya que los resultados se muestran en la misma página.
 
-Si utiliza Buscar en otra parte del sitio web, esta página contiene `Search Results` puede configurarse para que sea el `Result Page` para una o todas las instancias de `Search`.
+Si usa la búsqueda en otro lugar del sitio web, esta página con `Search Results` puede configurarse para que sea la `Result Page` de cualquiera o todas las instancias de `Search`.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](basics.md).
 
-Cuando la biblioteca del lado del cliente requerida, `cq.social.hbs.search`, se incluye, así es como `Search Result` el componente aparecerá:
+Cuando se incluya la biblioteca del lado del cliente necesaria, `cq.social.hbs.search`, así es como aparecerá el componente `Search Result`:
 
-![search-result](assets/search-result1.png)
+![resultado de búsqueda](assets/search-result1.png)
 
 ### Configurar el resultado de búsqueda agregado {#configure-the-added-search-result}
 
-Seleccione el colocado `Search Results` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el componente `Search Results` colocado al que desee acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
-En el **[!UICONTROL Configuración de resultados de búsqueda]** , es posible especificar qué rutas se incluyen en la búsqueda cuando un visitante introduce una consulta.
+En la ficha **[!UICONTROL Configuración de resultados de búsqueda]**, es posible especificar las rutas que se incluyen en la búsqueda cuando un visitante introduce una consulta.
 
 ![search-result-settings](assets/search-result-settings.png)
 
@@ -96,4 +96,4 @@ En el **[!UICONTROL Configuración de resultados de búsqueda]** , es posible es
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la [Search Essentials](search-implementation.md) para desarrolladores.
+Encontrará más información en la página de [Search Essentials](search-implementation.md) para desarrolladores.

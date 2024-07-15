@@ -67,7 +67,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva mediante 
 
       * **Mensaje de agradecimiento**: escriba un mensaje con el editor de texto enriquecido para mostrarlo después del envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
       * **Página de agradecimiento**: examine y seleccione la página que desea mostrar después del envío del formulario. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
-      * **Actualizar página al enviar**: habilítelo para poder actualizar la página que contiene el formulario adaptable incrustado para mostrar la página de agradecimiento. De lo contrario, la página de agradecimiento reemplazará al formulario adaptable en el contenedor de AEM Forms sin actualizar la página de Sites subyacente. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
+      * **Actualizar página en envío**: habilítelo para que pueda actualizar la página que contiene el formulario adaptable incrustado y mostrar la página de agradecimiento. De lo contrario, la página de agradecimiento reemplazará al formulario adaptable en el contenedor de AEM Forms sin actualizar la página de Sites subyacente. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
 
    * **Temática**: seleccione una temática que defina el estilo de los componentes del formulario adaptable o de la comunicación interactiva. El estilo incluye propiedades de apariencia, como el estilo de fuente, el color de fondo, las dimensiones y la alineación.
    * **Altura**: especifique la altura del contenedor. Déjelo en blanco para cambiar automáticamente el tamaño del contenedor.
@@ -90,7 +90,7 @@ La página de AEM Sites mantiene una referencia al formulario adaptable y a la 
 Para modificar cualquier configuración o propiedad del formulario adaptable o de la comunicación interactiva incrustados, realice una de las siguientes acciones.
 
 * Abra el formulario original en formularios adaptables o comunicaciones interactivas en sus respectivos editores y modifíquelos.
-* Seleccione el formulario adaptable o la comunicación interactiva desde la página de Sites en el modo Edición y, a continuación, seleccione **[!UICONTROL Editar en una nueva ventana]**. El formulario original se abrirá en el modo de edición, donde puede modificarlo.
+* Seleccione el formulario adaptable o la comunicación interactiva desde la página del sitio en modo de edición y, a continuación, seleccione **[!UICONTROL Editar en una nueva ventana]**. El formulario original se abrirá en el modo de edición, donde puede modificarlo.
 
 >[!NOTE]
 >

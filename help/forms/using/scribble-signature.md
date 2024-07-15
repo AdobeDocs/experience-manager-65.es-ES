@@ -101,5 +101,5 @@ Haga clic en el icono **Pinceles** para mostrar una lista de los tamaños de plu
 
 Para eliminar las firmas del formulario, haga lo siguiente:
 
-* (Dispositivos móviles) Pulse durante mucho tiempo el campo de firma y, en el cuadro de diálogo de confirmación, seleccione **Sí**.
+* (Dispositivos móviles) Presione durante mucho tiempo el campo de firma y, en el cuadro de diálogo de confirmación, seleccione **Sí**.
 * (Escritorio) Pase el ratón sobre el campo de firma y haga clic en el botón **Cancelar** y, en el cuadro de diálogo de confirmación, haga clic en **Sí**.

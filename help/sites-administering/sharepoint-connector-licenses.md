@@ -40,7 +40,7 @@ En la tabla siguiente se enumeran las bibliotecas de terceros que se utilizan en
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| concurrente | [Simultáneo](#concurrent) (Dominio público) |
+| concurrente | [Simultáneo](#concurrent) (dominio público) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -59,12 +59,12 @@ En la tabla siguiente se enumeran las bibliotecas de terceros que se utilizan en
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-api | [Apache](#apache) (contiene partes cubiertas por las licencias de Public Domain y W3C Software) |
+| xml-api | [Apache](#apache) (contiene partes cubiertas por licencias de dominio público y software W3C) |
 | XmlSchema | [Apache](#apache) |
 
-## Información general sobre las bibliotecas de terceros CRX {#overview-of-crx-rd-party-libraries}
+## Información general sobre las bibliotecas de terceros de CRX {#overview-of-crx-rd-party-libraries}
 
-La siguiente tabla enumera las bibliotecas de terceros utilizadas en CRX, junto con las licencias, los avisos de copyright o las exenciones de responsabilidad legal a las que están cubiertas:
+En la siguiente tabla se enumeran las bibliotecas de terceros que se utilizan en CRX, así como las licencias, los avisos de copyright o las exenciones de responsabilidad legal a las que están sujetas:
 
 <table>
  <colgroup>

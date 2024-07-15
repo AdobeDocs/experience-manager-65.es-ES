@@ -21,7 +21,7 @@ AEM Forms proporciona el código fuente completo de la aplicación de AEM Forms.
 Para obtener la fuente de la aplicación de AEM Forms, realice los siguientes pasos:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Seleccionar **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
+1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
@@ -112,7 +112,7 @@ Existen dos maneras de instalar la aplicación en un dispositivo Windows.
 
 ### Al adquirir la licencia de desarrollador {#by-acquiring-the-developer-license}
 
-1. Haga clic con el botón secundario en el archivo de PowerShell ( `Add-AppDevPackage.ps1)`y elija **Ejecutar con PowerShell**.
+1. Haga clic con el botón secundario en el archivo de PowerShell ( `Add-AppDevPackage.ps1)` y elija **Ejecutar con PowerShell**.
 
 1. La configuración le solicitará una licencia para desarrolladores. Utilice las credenciales de la cuenta de Microsoft para adquirir una licencia de desarrollador.\
    Esta licencia es válida durante 30 días y puede renovarla gratis.
@@ -135,7 +135,7 @@ Para implementar la aplicación, haga lo siguiente:
 
 1. En el dispositivo, ejecute `gpedit.msc`.
 1. Navegue hasta **Configuración del equipo > Plantillas administrativas > Componente de Windows > Implementar el paquete de aplicaciones**.
-1. Clic con el botón derecho **Permitir la instalación de todas las aplicaciones de confianza**.
+1. Haga clic con el botón derecho en **Permitir que todas las aplicaciones de confianza instalen**.
 1. Haga clic en **Editar** y seleccione **Habilitado**.
 
 1. Haga clic en **Aceptar**.

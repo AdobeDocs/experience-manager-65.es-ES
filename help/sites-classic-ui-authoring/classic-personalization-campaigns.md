@@ -39,13 +39,13 @@ La administración de campañas se compone de varios elementos:
 En Adobe Experience Manager AEM (), las marcas son la unidad de nivel superior y forman una colección de **Campañas**.
 
 * **Campañas**
-Una campaña es una colección de individuos **Experiencias**.
+Una campaña es una colección de **experiencias** individuales.
 
 * **Experiencias**
-El contenido centrado forma las distintas experiencias, presentadas al visitante en **Touchpoints**. Hay varios tipos de experiencia disponibles:
+El contenido enfocado forma las distintas experiencias que se presentan al visitante en **puntos de contacto**. Hay varios tipos de experiencia disponibles:
 
    * **Teasers**
-     [Páginas teaser/párrafos](#teasers) se utilizan para dirigir a visitantes específicos **Segmentos** al contenido que se centra en sus intereses.
+     [Páginas teaser / Párrafos](#teasers) se usan para dirigir a visitantes específicos **Segmentos** a contenido que se centra en sus intereses.
 
      Las páginas teaser pueden:
 
@@ -54,15 +54,15 @@ El contenido centrado forma las distintas experiencias, presentadas al visitante
 
      Normalmente, una página teaser es una acción temporal que dura un período de tiempo específico, hasta que se reemplaza por la siguiente página de teaser.
 
-   * **Newsletters**
+   * **Boletines**
 
-     [Comunicaciones por correo electrónico](#emailmarketing) se utilizan para atraer a los usuarios y animarlos a que visiten su sitio web. Normalmente se envían en forma de newsletter a su **Posibles clientes** (agrupadas en **Listas**). **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad. La recomendación es [uso de Adobe Campaign AEM y la integración para la creación de informes de](/help/sites-administering/campaign.md).
+     Las [comunicaciones por correo electrónico](#emailmarketing) se utilizan para atraer a los usuarios y animarlos a que visiten su sitio web. Suelen adoptar la forma de una newsletter, que se envía a los **posibles clientes** (que se agrupan en **Listas**). **Nota:** el Adobe no planea mejorar más esta capacidad. Se recomienda [usar Adobe Campaign AEM y la integración para](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
      Esto permite la integración con Adobe Target (anteriormente Test&amp;Target), que proporciona a los especialistas en mercadotecnia una herramienta de optimización de sitios web de conversión con las funciones necesarias para garantizar que el contenido y las ofertas en línea sean relevantes para los clientes, lo que resultará en una mayor conversión. Adobe Target proporciona una interfaz intuitiva para diseñar y ejecutar pruebas, crear segmentos de audiencia y segmentar contenido desde una sola aplicación.
 
-* **Touchpoints**
+* **Puntos de contacto**
 
   Estos son los puntos de contacto entre el visitante y la campaña. Los puntos de contacto están conectados a las experiencias que ha creado.
 
@@ -70,15 +70,15 @@ El contenido centrado forma las distintas experiencias, presentadas al visitante
 
 * **Posibles clientes**
 
-  La información que ha recopilado sobre sus visitantes y cómo ponerse en contacto con ellos forma la base de sus posibles clientes. **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
+  La información que ha recopilado sobre sus visitantes y cómo ponerse en contacto con ellos forma la base de sus posibles clientes. **Nota:** el Adobe no planea mejorar más esta capacidad.
 
-  La recomendación es [uso de Adobe Campaign AEM y la integración para la creación de informes de](/help/sites-administering/campaign.md).
+  Se recomienda [usar Adobe Campaign AEM y la integración para](/help/sites-administering/campaign.md).
 
 * **Listas**
 
-  Los posibles clientes se agrupan en listas para que pueda realizar acciones colectivas en consecuencia. Nota: **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
+  Los posibles clientes se agrupan en listas para que pueda realizar acciones colectivas en consecuencia. Nota: **Nota:** El Adobe no planea mejorar más esta capacidad.
 
-  La recomendación es [utilice Adobe Campaign AEM y la integración para.](/help/sites-administering/campaign.md)
+  Se recomienda [usar Adobe Campaign AEM y la integración para.](/help/sites-administering/campaign.md)
 
 * **Segmentos**
 

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Desarrollar contenido de zona protegida  {#develop-sandbox-content}
 
-**[Añadir Clientlibs](add-clientlibs.md)**
+**[Agregar Clientlibs](add-clientlibs.md)**
 
-En este punto, es posible explorar las funciones de la comunidad en la zona protegida junto con el uso de [Comunidad We-Retail](../../help/sites-developing/we-retail.md), el [Guía de componentes de la comunidad](components-guide.md), y [Aspectos básicos de funciones](essentials.md) como referencia.
+En este punto, es posible explorar las características de la comunidad en la zona protegida junto con [We-Retail Community](../../help/sites-developing/we-retail.md), la [Guía de componentes de la comunidad](components-guide.md) y [Feature Essentials](essentials.md) como referencia.

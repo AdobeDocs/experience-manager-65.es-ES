@@ -26,22 +26,22 @@ Las representaciones codificadas en DM se almacenan en el servidor proxy y se pr
 
 Experience Manager Assets proporciona compatibilidad de reproducción para estas representaciones en el lado del cliente.
 
-Para ver las representaciones de un recurso de vídeo concreto, abra su página de recursos y seleccione el icono Navegación global. A continuación, elija **[!UICONTROL Representaciones]** de la lista.
+Para ver las representaciones de un recurso de vídeo concreto, abra su página de recursos y seleccione el icono Navegación global. A continuación, elija **[!UICONTROL Representaciones]** en la lista.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-La lista de representaciones de vídeo se muestra en la **[!UICONTROL Representaciones]** panel.
+La lista de representaciones de vídeo se muestra en el panel **[!UICONTROL Representaciones]**.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Para configurar el servidor proxy para representaciones con codificación DM, [configurar Dynamic Media Cloud Services](config-dynamic.md).
+Para configurar el servidor proxy para representaciones con codificación DM, [configure Dynamic Media Cloud Services](config-dynamic.md).
 
-Para generar representaciones de vídeo con los parámetros deseados, [crear un perfil de vídeo correspondiente](video-profiles.md).
+Para generar representaciones de vídeo con los parámetros deseados, [cree un perfil de vídeo correspondiente](video-profiles.md).
 
 Después de configurar el servidor proxy y crear perfiles de vídeo, puede incluir este ajuste preestablecido de vídeo en un perfil de procesamiento y aplicar el perfil de procesamiento a una carpeta.
 
 >[!NOTE]
 >
->La reproducción de audio no funciona para archivos OGG y WAV en Microsoft® Internet Explorer 11. Un error `Invalid Source` se muestra en la página de detalles del recurso para los recursos con extensión OGG o WAV.
+>La reproducción de audio no funciona para archivos OGG y WAV en Microsoft® Internet Explorer 11. Se muestra un error `Invalid Source` en la página de detalles del recurso para los recursos con la extensión OGG o WAV.
 >
 >En MS® Edge y iPad, los archivos OGG no se reproducen y generan un error de formato no admitido.

@@ -1,5 +1,5 @@
 ---
-title: 'AEM Desarrollo: directrices y prácticas recomendadas'
+title: 'Desarrollo de AEM: directrices y prácticas recomendadas'
 description: AEM Directrices y prácticas recomendadas para el desarrollo de soluciones en el área de la
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,11 +12,11 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# AEM Desarrollo: directrices y prácticas recomendadas{#aem-development-guidelines-and-best-practices}
+# Desarrollo de AEM: directrices y prácticas recomendadas{#aem-development-guidelines-and-best-practices}
 
 ## Directrices para el uso de plantillas y componentes {#guidelines-for-using-templates-and-components}
 
@@ -51,7 +51,7 @@ Las siguientes reglas generales para desarrolladores tienen sentido en la mayor�
 
 Al crear sus propios componentes o personalizar un componente existente, a menudo es más fácil (y seguro) reutilizar las definiciones existentes. AEM Los mismos principios se aplican también a otros elementos dentro de la aplicación de, por ejemplo, el controlador de errores.
 
-Esto se puede hacer copiando y superponiendo la definición existente. Es decir, copiar la definición de `/libs` hasta `/apps/<your-project>`. Esta nueva definición, en `/apps`, se puede actualizar según sus necesidades.
+Esto se puede hacer copiando y superponiendo la definición existente. En otras palabras, copiando la definición de `/libs` a `/apps/<your-project>`. Esta nueva definición, en `/apps`, se puede actualizar según sus necesidades.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Por ejemplo:
 
   Esto implicaba superponer una definición de componente:
 
-   * Creación de una carpeta de componentes en `/apps/<website-name>/components/<MyComponent>` copiando un componente existente:
+   * Cree una carpeta de componentes en `/apps/<website-name>/components/<MyComponent>` copiando un componente existente:
 
       * Por ejemplo, para personalizar la copia del componente Texto:
 
@@ -81,14 +81,14 @@ Por ejemplo:
 
 >[!CAUTION]
 >
->**No hacer** cambiar cualquier cosa en `/libs` ruta.
+>**No** cambie nada en la ruta de acceso `/libs`.
 >
->El motivo es que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+>El motivo es que el contenido de `/libs` se sobrescribirá la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de características).
 >
 >Para cambios de configuración y de otro tipo:
 >
->1. copie el elemento en `/libs` hasta `/apps`
->1. realice cambios en `/apps`
+>1. copiar el elemento de `/libs` en `/apps`
+>1. realice cualquier cambio dentro de `/apps`
 
 ## Cuándo utilizar Consultas JCR y cuándo no utilizarlas {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
@@ -109,14 +109,14 @@ Para procesar contenido, utilice el acceso de navegación al árbol de contenido
 
 >[!NOTE]
 >
->Si usa el [Generador de consultas](/help/sites-developing/querybuilder-api.md), utilice Consultas JCR, ya que el Generador de consultas genera Consultas JCR bajo el capó.
+>Si usa el [Generador de consultas](/help/sites-developing/querybuilder-api.md), usará Consultas JCR, ya que el Generador de consultas genera Consultas JCR bajo el capó.
 >
 
 ## Consideraciones de seguridad {#security-considerations}
 
 >[!NOTE]
 >
->También merece la pena hacer referencia a la [lista de comprobación de seguridad](/help/sites-administering/security-checklist.md).
+>También vale la pena hacer referencia a la [lista de comprobación de seguridad](/help/sites-administering/security-checklist.md).
 
 ### Sesiones JCR (repositorio) {#jcr-repository-sessions}
 
@@ -132,7 +132,7 @@ El proceso de ejecución de scripts en sitios múltiples (XSS) permite a los ata
 
 AEM Se aplica el principio de filtrado de todo el contenido proporcionado por el usuario en la salida. La prevención de XSS tiene la máxima prioridad tanto durante el desarrollo como durante las pruebas.
 
-Además, un cortafuegos de aplicaciones web, como [mod_security para Apache](https://modsecurity.org), puede proporcionar un control central y fiable sobre la seguridad del entorno de implementación y proteger contra ataques de scripts entre sitios que no se habían detectado anteriormente.
+Además, un firewall de aplicaciones web, como [mod_security para Apache](https://modsecurity.org), puede proporcionar un control central y confiable sobre la seguridad del entorno de implementación y protegerlo contra ataques de scripts entre sitios que no se habían detectado anteriormente.
 
 >[!CAUTION]
 >
@@ -159,10 +159,10 @@ Esto se aplica a la información que es confidencial para el sistema (como la co
 
 AEM Las páginas de error se pueden personalizar para la creación de informes de. Esto es aconsejable para que la instancia no muestre los seguimientos de sling en los errores internos del servidor.
 
-Consulte [Personalizar páginas de error mostradas por el controlador de error](/help/sites-developing/customizing-errorhandler-pages.md) para obtener información detallada.
+Consulte [Personalización de páginas de error mostradas por el controlador de error](/help/sites-developing/customizing-errorhandler-pages.md) para obtener información detallada.
 
 ### Abrir archivos en el proceso de Java™ {#open-files-in-the-java-process}
 
-AEM Debido a que puede acceder a muchos archivos, se recomienda que el número de [abrir archivos para un proceso de Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) AEM se configurarán explícitamente para la configuración de la.
+AEM AEM Debido a que puede acceder a muchos archivos, se recomienda que el número de [archivos abiertos para un proceso Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) se configure explícitamente para su.
 
 Para minimizar este problema, el desarrollo debe garantizar que cualquier archivo abierto se cierre correctamente cuando (de forma significativa) sea posible.

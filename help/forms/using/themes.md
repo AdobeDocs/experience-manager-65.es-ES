@@ -180,7 +180,7 @@ Lista de metapropiedades de una temática (que se encuentran en la página de pr
      <li>Ruta del repositorio definida por el usuario dentro de “etc” donde se almacenan los clientlibs correspondientes a esta temática.</li>
      <li>Valor predeterminado: “/etc/clientlibs/fd/themes” + ruta relativa del recurso de la temática.</li>
      <li>Si la ubicación no existe, la jerarquía de carpetas se generará automáticamente.</li>
-     <li>Cuando se cambia este valor, la estructura del nodo clientlib se mueve a la nueva ubicación introducida.<br /> <em><strong>Nota:</strong> Si cambia la ubicación clientlib predeterminada, en el repositorio CRXDE asigne a <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> hasta <code>forms-users</code> y <code>crx:replicate</code>, <code>jcr:read</code> hasta <code>fd-service</code> en la nueva ubicación. Adjunte también otra ACL al agregar <code>deny jcr:addChildNodes</code> para <code>forms-user</code></em></li>
+     <li>Cuando se cambia este valor, la estructura del nodo clientlib se mueve a la nueva ubicación introducida.<br /> <em><strong>Nota:</strong> Si cambia la ubicación clientlib predeterminada, en el repositorio CRXDE asigne <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> a <code>forms-users</code> y <code>crx:replicate</code>, <code>jcr:read</code> a <code>fd-service</code> en la nueva ubicación. Adjunte también otra ACL al agregar <code>deny jcr:addChildNodes</code> para <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -455,7 +455,7 @@ Siga estos pasos para personalizar el estilo de un componente en particular (un 
 1. Al seleccionar el cuadro numérico, puede ver la barra de herramientas de componentes con tres opciones:
 
    * **Widget del cuadro numérico**
-   * **Widget del campo** ![field-level](assets/field-level.png)
+   * **Widget del campo** ![nivel de campo](assets/field-level.png)
 
 1. Seleccione **Widget del cuadro numérico**.
 1. El título de la barra lateral cambia a Widget del cuadro numérico y muestra las opciones para personalizar su aspecto. 

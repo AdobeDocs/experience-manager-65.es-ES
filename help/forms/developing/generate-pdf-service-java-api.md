@@ -30,11 +30,11 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->Inicio rápido en Programación con AEM Forms se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss y en el sistema operativo Microsoft Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Inicio rápido en Programación con AEM Forms se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss y en el sistema operativo Microsoft Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## SOAP Inicio rápido (modo de): Conversión de un documento de Microsoft Word en un documento de PDF mediante la API de Java {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
-En el ejemplo de código siguiente se convierte un archivo de Word denominado *Loan.doc* a un documento de PDF denominado *Loan.pdf*. (Consulte [Convertir documentos de Word en documentos de PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
+El ejemplo de código siguiente convierte un archivo de Word denominado *Loan.doc* en un documento de PDF denominado *Loan.pdf*. (Consulte [Conversión de documentos de Word a documentos de PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
 
 ```java
  /*
@@ -148,7 +148,7 @@ En el ejemplo de código siguiente se convierte un archivo de Word denominado *L
 
 ## SOAP Inicio rápido (modo de): Conversión del contenido del HTML a un documento del PDF mediante la API de Java {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código Java convierte el contenido de HTML ubicado en https://www.adobe.com en un documento de PDF denominado *AdobeHTML.pdf*. (Consulte [Conversión de Documentos de HTML en Documentos de PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
+El siguiente ejemplo de código Java convierte el contenido de HTML ubicado en https://www.adobe.com en un documento de PDF denominado *AdobeHTML.pdf*. (Consulte [Conversión de documentos de HTML a documentos de PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
 
 ```java
  /*
@@ -254,7 +254,7 @@ El siguiente ejemplo de código Java convierte el contenido de HTML ubicado en h
 
 ## SOAP Inicio rápido (modo de): Conversión de un documento de PDF SOAP a un archivo RTF mediante la API de Java (modo de) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
 
-En el ejemplo de código siguiente se convierte un documento de PDF denominado *Loan.pdf* a un documento RTF denominado *Loan.rtf*. (Consulte [Conversión de documentos de PDF a formatos que no sean imágenes](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
+El siguiente ejemplo de código convierte un documento de PDF denominado *Loan.pdf* en un documento RTF denominado *Loan.rtf*. (Consulte [Conversión de documentos de PDF a formatos que no son imágenes](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats)).
 
 ```java
  /*

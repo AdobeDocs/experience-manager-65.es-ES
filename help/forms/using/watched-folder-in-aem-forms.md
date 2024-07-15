@@ -25,7 +25,7 @@ Un administrador puede configurar una carpeta de red, conocida como carpeta insp
 Puede utilizar uno de los siguientes métodos para crear una carpeta inspeccionada en el sistema de archivos:
 
 * Al configurar las propiedades de un nodo de configuración de carpeta inspeccionada, escriba la ruta completa del directorio principal en la propiedad folderPath y agregue el nombre de la carpeta inspeccionada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`
-El `MyWatchedFolder`no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
+La carpeta `MyWatchedFolder`no existe; AEM Forms intenta crear la carpeta en la ruta especificada.
 
 * Cree una carpeta en el sistema de archivos antes de configurar un punto final de carpeta inspeccionada y, a continuación, proporcione la ruta completa en la propiedad folderPath. Para obtener información detallada sobre la propiedad folderPath, consulte [Propiedades de la carpeta inspeccionada](#watchedfolderproperties).
 
@@ -162,7 +162,7 @@ Para obtener más información sobre los patrones de archivo, consulte [Acerca d
 * **throttleOn (Boolean)**: Cuando se selecciona esta opción, limita el número de trabajos de carpeta inspeccionada que procesa AEM Forms en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño del lote. El valor predeterminado es True. (Consulte [Acerca de la restricción](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (Boolean)**: Cuando se establece en True, los archivos de la carpeta de resultados y de la carpeta de conservación se sobrescriben. Cuando se establece en False, se utilizan archivos y carpetas con un sufijo de índice numérico para el nombre. El valor predeterminado es False.
-* **preserveOnFailure (booleano)**: Conservar archivos de entrada si no se puede ejecutar la operación en un servicio. El valor predeterminado es True.
+* **preserveOnFailure (Boolean)**: Conservar archivos de entrada si no se puede ejecutar la operación en un servicio. El valor predeterminado es True.
 * **inputFilePattern (String)**: Especifica el patrón de los archivos de entrada para una carpeta inspeccionada. Crea una lista de permitidos de los archivos.
 * **asynch (Boolean)**: Identifica el tipo de invocación como asincrónico o sincrónico. El valor predeterminado es True (asincrónico). El procesamiento de archivos es una tarea que consume recursos. Mantenga el valor del indicador asíncrono en True para evitar que se bloquee el hilo principal del trabajo de análisis. En un entorno agrupado, es fundamental mantener el indicador en True para permitir el equilibrio de carga para los archivos que se procesan en los servidores disponibles. Si el indicador es False, el trabajo de análisis intenta realizar secuencialmente el procesamiento de cada archivo/carpeta de nivel superior dentro de su propio hilo. No establezca el indicador en False sin un motivo específico, como el procesamiento basado en flujos de trabajo en una configuración de un solo servidor.
 

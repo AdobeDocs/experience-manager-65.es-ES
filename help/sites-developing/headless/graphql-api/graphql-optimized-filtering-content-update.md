@@ -18,7 +18,7 @@ Para optimizar el rendimiento de los filtros de GraphQL, ejecute un procedimient
 
 >[!NOTE]
 >
->Después de actualizar los fragmentos de contenido, puede seguir las recomendaciones de [Optimización de consultas de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
+>Después de actualizar los fragmentos de contenido, puede seguir las recomendaciones de [Optimización de las consultas de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
 
 ## Requisitos previos {#prerequisites}
 
@@ -28,14 +28,14 @@ AEM Asegúrese de que tiene un mínimo de 6.5.17.0 de la versión de.
 
 Para ejecutar el procedimiento, siga estos pasos:
 
-1. [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para el **Configuración del trabajo de migración de fragmentos de contenido**:
+1. [Configure las opciones de OSGi](/help/sites-deploying/configuring-osgi.md) para la **Configuración del trabajo de migración de fragmentos de contenido**:
 
    ![Configuración del trabajo de migración de fragmentos de contenido OSGi](assets/cfm-graphql-update-01.png "Configuración del trabajo de migración de fragmentos de contenido OSGi")
 
 1. En el cuadro de diálogo, establezca estos dos parámetros de la siguiente manera:
 
    * **ContentFragmentMigration:Enabled** : `1`
-   * **ContentFragmentMigration:Aplicar** : `1`
+   * **ContentFragmentMigration:Enforce** : `1`
 
 1. **Guardar** las especificaciones: se inicia el procedimiento de actualización.
 
@@ -43,12 +43,12 @@ Para ejecutar el procedimiento, siga estos pasos:
 
 1. Vuelva a la configuración de OSGi para desactivar el procedimiento.
 
-   En el cuadro de diálogo de **Configuración del trabajo de migración de fragmentos de contenido** establezca estos dos parámetros de la siguiente manera:
+   En el cuadro de diálogo de la **Configuración del trabajo de migración de fragmentos de contenido** establezca estos dos parámetros de la siguiente manera:
 
    * **ContentFragmentMigration:Enabled** : `0`
-   * **ContentFragmentMigration:Aplicar** : `0`
+   * **ContentFragmentMigration:Enforce** : `0`
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
 Tenga en cuenta las siguientes limitaciones:
 

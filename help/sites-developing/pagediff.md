@@ -23,7 +23,7 @@ ht-degree: 10%
 
 La creación de contenido es un proceso iterativo. La creación con eficiencia de contenido requiere poder ver qué ha cambiado de una iteración a otra. Visualizar la versión de la página y luego otra es un proceso poco eficaz y propenso a errores. Un autor desea poder comparar la página actual con una versión anterior en paralelo con las diferencias resaltadas.
 
-La diferencia de página permite al usuario comparar la página actual con lanzamientos, versiones anteriores, etc. Para obtener más información sobre esta función de usuario, consulte [Diferencias de página](/help/sites-authoring/page-diff.md).
+La diferencia de página permite al usuario comparar la página actual con lanzamientos, versiones anteriores, etc. Para obtener detalles sobre esta característica de usuario, consulte [Diferencias de página](/help/sites-authoring/page-diff.md).
 
 ## Detalles de operación {#operation-details}
 
@@ -39,7 +39,7 @@ Se ejecuta automáticamente una tarea de limpieza para limpiar este contenido te
 
 ## Permisos {#permissions}
 
-AEM Anteriormente, en la IU clásica, se tenía que tener especial consideración en el desarrollo para facilitar la diferenciación de los recursos (por ejemplo, el uso de ) `cq:text` biblioteca de etiquetas o integración personalizada de `DiffService` servicio OSGi en componentes). Esto ya no es necesario para la nueva función de diferencia, ya que la diferencia se produce en el lado del cliente mediante la comparación DOM.
+AEM Anteriormente, en la IU clásica, se debía tener en cuenta un desarrollo especial para facilitar la diferenciación de las etiquetas (por ejemplo, usar la biblioteca de etiquetas `cq:text` o la integración personalizada del servicio OSGi `DiffService` en los componentes). Esto ya no es necesario para la nueva función de diferencia, ya que la diferencia se produce en el lado del cliente mediante la comparación DOM.
 
 Sin embargo, hay algunas limitaciones que el desarrollador debe tener en cuenta.
 

@@ -22,13 +22,13 @@ AEM La opción permite generar gráficos que incorporen texto tomado dinámicame
 
 Para ello, también puede cargar y utilizar sus propias fuentes.
 
-Actualmente, todas las implementaciones de la plataforma Java son compatibles [TrueType](https://en.wikipedia.org/wiki/Truetype) fuentes.
+Actualmente todas las implementaciones de la plataforma Java admiten [TrueType](https://en.wikipedia.org/wiki/Truetype) fuentes.
 
 1. Abra el CRXDE Lite y vaya a la carpeta de la aplicación del proyecto:
 
    `/apps/<your-project>/`
 
-1. En `/apps/<your-project>/` cree un nodo:
+1. En `/apps/<your-project>/`, cree un nodo:
 
    * **Nombre**: `fonts`
    * **Tipo**: `sling:Folder`
@@ -41,10 +41,10 @@ Actualmente, todas las implementaciones de la plataforma Java son compatibles [T
    >
    >Los archivos de fuente del repositorio deben tener el sufijo `*.ttf` o `*.TTF`.
 
-1. Actualice el [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) de [Ayuda de fuentes GFX de Day Commons](/help/sites-deploying/osgi-configuration-settings.md). Añada la ruta a la carpeta de fuentes; es decir, `/apps/<your-project>/fonts`.
+1. Actualice la [configuración de OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Agregue la ruta a la carpeta de fuentes; es decir, `/apps/<your-project>/fonts`.
 
-1. Volver a CRXDE Lite. Ahora debería ver una `.fontlist` nodo de la carpeta que contiene el nombre de las fuentes importadas.
+1. Volver a CRXDE Lite. Ahora debería ver un nodo `.fontlist` en la carpeta que contiene el nombre de las fuentes importadas.
 
    Estas fuentes ya están listas para utilizarse en la API de Java.
 
-Para obtener más información sobre cómo utilizar las fuentes con la API de Java, consulte la [Documentación de la clase Font de la API de Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
+Para obtener información detallada sobre cómo usar las fuentes con la API de Java, consulte la [documentación de la clase Font de la API de Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).

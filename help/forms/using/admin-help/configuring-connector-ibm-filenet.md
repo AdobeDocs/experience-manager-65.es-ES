@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Configurar el conector para IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-El conector para IBM AEM FileNet permite la comunicación entre los formularios de y IBM FileNet. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
+El conector para IBM AEM FileNet permite la comunicación entre los formularios de y IBM FileNet. Para obtener información adicional, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ El motor de contenido IBM FileNet P8 proporciona servicios de software para admi
 1. En la lista Esquema de protección de credenciales, seleccione uno de estos niveles de protección:
 
    * **Borrar:** Envía credenciales a través de la red en modo no protegido
-   * **Simétrico:** Envía credenciales cifradas por la red
+   * **Simétrico:** envía credenciales cifradas a través de la red
 
 1. En el cuadro Ubicación del archivo de cifrado, escriba la ruta de acceso al archivo de cifrado:
 
@@ -81,7 +81,7 @@ Las opciones disponibles son las siguientes:
 
 **Nombre del proveedor del repositorio actual:** El nombre del proveedor de servicios del repositorio actual
 
-**Proveedor del repositorio de IBM FileNet:** Convierte al proveedor del repositorio de FileNet en el proveedor del repositorio. Esta opción ha quedado obsoleta.
+**Proveedor del repositorio de IBM FileNet:** Hace que el proveedor del repositorio de FileNet sea el proveedor del repositorio. Esta opción ha quedado obsoleta.
 
 **proveedor del repositorio:** Convierte al proveedor del repositorio nativo en el proveedor del repositorio
 

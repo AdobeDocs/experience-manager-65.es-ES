@@ -18,13 +18,13 @@ SPA AEM SPA AEM A la hora de decidir qué nivel de integración desea tener entr
 
 ## Información general {#overview}
 
-El componente RemotePage obtiene todos los recursos necesarios del contenido generado por la aplicación `asset-manifest.json` SPA AEM y utiliza esto para procesar los dentro de la.
+SPA AEM El componente RemotePage obtiene todos los recursos necesarios del `asset-manifest.json` generado por la aplicación y los utiliza para representar los recursos de la aplicación en el espacio de trabajo de la.
 
 * SPA AEM RemotePage permite insertar los scripts y las hojas de estilo de una página en el cuerpo de un componente de página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la aplicación.
 * AEM SPA Los componentes de front-end virtuales le permiten marcar secciones como editables en el editor de.
 * SPA AEM Juntos, un alojado en un dominio diferente se puede convertir en editable en el espacio de trabajo de la aplicación de la versión de.
 
-Consulte el artículo [SPA AEM Edición de una externa dentro de un grupo de informes](spa-edit-external.md) SPA AEM para obtener más información sobre las funciones editables y externas, haga clic en.
+SPA AEM SPA AEM Consulte el artículo [Edición de un recurso externo en el espacio de tiempo de trabajo de la aplicación de la](spa-edit-external.md) para obtener más información sobre los recursos editables y externos en el espacio de trabajo de la.
 
 ## Requisitos  {#requirements}
 
@@ -38,11 +38,11 @@ Consulte el artículo [SPA AEM Edición de una externa dentro de un grupo de inf
 
   ![Puntos de entrada](assets/asset-manifest-entrypoints.png)
 
-* La aplicación debe poder inicializarse en un `<div id="root"></div>` debajo del elemento de cuerpo. Si se espera un marcado diferente para que la aplicación cree una instancia, esto debe ajustarse en consecuencia en los scripts HTL del componente proxy que tenga un `sling:resourceSuperType="spa-project-core/components/remotepage`.
+* La aplicación debe poder inicializarse en un(a) `<div id="root"></div>` debajo del elemento body. Si se espera un marcado diferente para que la aplicación cree una instancia, esto debe ajustarse en consecuencia en los scripts HTL del componente proxy que tiene un `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
-## Restricciones {#limitations}
+## Limitaciones {#limitations}
 
-* El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como el siguiente [encontrado aquí.](https://github.com/shellscape/webpack-manifest-plugin) Sin embargo, el componente RemotePage solo se ha probado para funcionar con el marco de React (y Next.js a través del componente remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como Angular.
+* El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como el que se encuentra aquí [.](https://github.com/shellscape/webpack-manifest-plugin) Sin embargo, el componente RemotePage solo se ha probado para que funcione con el marco de React (y Next.js a través del componente remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como el Angular.
 * El CSS interno definido en el archivo HTML AEM raíz de la aplicación y el CSS en línea en el nodo DOM raíz no estarán disponibles al realizar el procesamiento remoto en el.
 
 ## Detalles técnicos {#technical-details}

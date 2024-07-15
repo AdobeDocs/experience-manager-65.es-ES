@@ -33,7 +33,7 @@ Este documento describe lo siguiente:
 
 Para configurar cómo sus sitios comparten contenido personalizado, debe realizar los pasos siguientes:
 
-1. [Crear un área](#creating-new-areas) o [crear un área como live copy](#creating-new-areas). Un área incluye todas las actividades disponibles para un *área* de la página; es decir, la ubicación en la página a la que se dirige el componente. Crear un área crea un área vacía, mientras que crear un área como Live Copy permite heredar el contenido en las estructuras del sitio.
+1. [Crear un área](#creating-new-areas) o [crear un área como Live Copy](#creating-new-areas). Un área incluye todas las actividades disponibles para un *área* de la página; es decir, la ubicación en la página a la que se dirige el componente. Crear un área crea un área vacía, mientras que crear un área como Live Copy permite heredar el contenido en las estructuras del sitio.
 
 1. [Vincular el sitio o la página](#linking-sites-to-an-area) a un área.
 
@@ -59,7 +59,7 @@ Un sitio o Live Copy vincula un área que contiene las actividades que deben est
 
 ## Casos de uso {#use-cases}
 
-Puede configurar la compatibilidad de varios sitios para el contenido de destino de varias formas, según el caso de uso. En esta sección se describe cómo puede funcionar esta opción, en teoría, con una marca. Además, en [Ejemplo: Segmentación de contenido según la geografía](#example-targeting-content-based-on-geography), puede ver una aplicación real de contenido de segmentación en varios sitios.
+Puede configurar la compatibilidad de varios sitios para el contenido de destino de varias formas, según el caso de uso. En esta sección se describe cómo puede funcionar esta opción, en teoría, con una marca. Además, en [Ejemplo: segmentación de contenido basado en áreas geográficas](#example-targeting-content-based-on-geography), puede ver una aplicación real de segmentación de contenido en varios sitios.
 
 El contenido de destino se agrupa en las denominadas áreas, que definen el ámbito de los sitios o las páginas. Estas áreas se definen en el nivel de la marca. Una marca puede contener varias áreas. Las áreas pueden ser diferentes entre marcas. Si bien una marca solo puede contener el área principal y, por lo tanto, se comparte entre todas las marcas, otra marca puede contener varias marcas (por ejemplo, según la región). Por lo tanto, las marcas no necesitan reflejar el conjunto de áreas entre ellas.
 
@@ -156,12 +156,12 @@ Las áreas pueden abarcar actividades y ofertas. Después de crear un área en a
 
 >[!NOTE]
 >
->El área predeterminada denominada Área maestra se contrae de forma predeterminada al hacer clic en el nombre de una marca **hasta** se crea otra área. A continuación, cuando selecciona una marca en la consola **Actividad** u **Ofertas**, llegará a la consola **Área**.
+>El área predeterminada denominada Área maestra se contrae de forma predeterminada al hacer clic en el nombre de una marca **hasta** que cree otra área. A continuación, cuando selecciona una marca en la consola **Actividad** u **Ofertas**, llegará a la consola **Área**.
 
 Para crear un área:
 
 1. Vaya a **Personalización** > **Actividades** u **Ofertas** y, a continuación, a su marca.
-1. Clic **Crear área**.
+1. Haga clic en **Crear área**.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
@@ -180,7 +180,7 @@ Cree una zona como una Live Copy para heredar el contenido de destino a través 
 Para crear un área como una Live Copy, haga lo siguiente:
 
 1. Vaya a **Personalización** > **Actividades** u **Ofertas** y, a continuación, a su marca.
-1. Clic **Crear área como Live Copy**.
+1. Haga clic en **Crear área como Live Copy**.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
@@ -222,12 +222,12 @@ Para vincular un sitio a un área:
 
 1. Desplácese hasta el sitio (o página) que desee vincular a un área.
 1. Seleccione el sitio o la página y haga clic en **Ver propiedades**.
-1. Haga clic en **Personalización** pestaña.
+1. Haga clic en la ficha **Personalization**.
 1. En el menú **Marca**, seleccione la marca que desea vincular al área. Después de seleccionar la marca, las áreas están disponibles en el menú **Referencia de área**.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Seleccione el área de la **Referencia de área** y haga clic en. **Guardar**.
+1. Seleccione el área del menú desplegable **Referencia de área** y haga clic en **Guardar**.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
@@ -251,8 +251,8 @@ Una actividad que se hereda de otro sitio aparece en verde junto al nombre de la
 
 Para suspender o desasociar la herencia del contenido de destino en una actividad:
 
-1. Vaya a la página en la que desea desasociar o suspender la herencia y haga clic en **Segmentación** en el menú desplegable mode.
-1. Si la página está vinculada a un área que es una Live Copy, se ve el estado de la herencia. Clic **Iniciar segmentación**.
+1. Vaya a la página donde desea desasociar o suspender la herencia y haga clic en **Segmentación** en el menú desplegable de modo.
+1. Si la página está vinculada a un área que es una Live Copy, se ve el estado de la herencia. Haga clic en **Iniciar segmentación**.
 1. Para suspender una actividad, siga uno de estos procedimientos:
 
    1. Seleccione un elemento de la actividad, como el público. AEM muestra automáticamente el cuadro de diálogo de confirmación Suspender Live Copy. (Puede suspender Live Copy pulsando o haciendo clic en cualquier elemento durante el proceso de Segmentación).
@@ -260,7 +260,7 @@ Para suspender o desasociar la herencia del contenido de destino en una activida
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Clic **Suspender** para suspender la actividad. Las actividades suspendidas están marcadas en rojo.
+1. Haga clic en **Suspender** para suspender la actividad. Las actividades suspendidas están marcadas en rojo.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -268,10 +268,10 @@ Para suspender o desasociar la herencia del contenido de destino en una activida
 
 Para interrumpir la herencia del contenido de destino en una actividad:
 
-1. Vaya a la página donde desea separar la Live Copy del patrón y haga clic en **Segmentación** en el menú desplegable mode.
-1. Si la página está vinculada a un área que es una Live Copy, se ve el estado de la herencia. Clic **Iniciar segmentación**.
+1. Vaya a la página donde desea desasociar la Live Copy del patrón y haga clic en **Segmentación** en el menú desplegable de modo.
+1. Si la página está vinculada a un área que es una Live Copy, se ve el estado de la herencia. Haga clic en **Iniciar segmentación**.
 1. Seleccione **Separar Live Copy** en el menú desplegable de la barra de herramientas. AEM confirma que desea separar la Live Copy.
-1. Clic **Desasociar** para desasociar la live copy de la actividad. Una vez desvinculada, ya no se muestra el menú desplegable de la herencia. La actividad es ahora una actividad local.
+1. Haga clic en **Desasociar** para desasociar la Live Copy de la actividad. Una vez desvinculada, ya no se muestra el menú desplegable de la herencia. La actividad es ahora una actividad local.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
@@ -281,13 +281,13 @@ Si ha suspendido la herencia del contenido de destino en una actividad, puede re
 
 Para restaurar la herencia del contenido de destino de una actividad, haga lo siguiente:
 
-1. Vaya a la página donde desea restaurar la herencia y haga clic en **Segmentación** en el menú desplegable mode.
-1. Clic **Iniciar segmentación**.
+1. Vaya a la página donde desea restaurar la herencia y haga clic en **Segmentación** en el menú desplegable del modo.
+1. Haga clic en **Iniciar segmentación**.
 1. Seleccione **Reanudar Live Copy** en el menú desplegable de la barra de herramientas.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
 
-1. Clic **Reanudar** para confirmar que desea reanudar la herencia de live copy. Las modificaciones realizadas en la actividad actual se pierden si se reanuda la herencia.
+1. Haga clic en **Reanudar** para confirmar que desea reanudar la herencia de Live Copy. Las modificaciones realizadas en la actividad actual se pierden si se reanuda la herencia.
 
 ## Eliminación de áreas {#deleting-areas}
 
@@ -297,4 +297,4 @@ Para eliminar un área:
 
 1. Desplácese a **Personalización** > **Actividades** o **Ofertas** y luego a su marca.
 1. Haga clic en el icono situado junto al área que desee eliminar.
-1. Clic **Eliminar** y confirme que desea eliminar el área.
+1. Haga clic en **Eliminar** y confirme que desea eliminar el área.

@@ -38,7 +38,7 @@ Además de la funcionalidad estándar, se pueden agregar controladores de confli
 
 ### Escenario de ejemplo {#example-scenario}
 
-En las secciones siguientes, debe utilizar el ejemplo de una página nueva `b`, creada tanto en el modelo como en la rama de live copy (creada manualmente), para ilustrar los distintos métodos de resolución de conflictos:
+En las secciones siguientes, debe utilizar el ejemplo de una nueva página `b`, creada tanto en el modelo como en la rama de Live Copy (creada manualmente), para ilustrar los distintos métodos de resolución de conflictos:
 
 * modelo: `/b`
 
@@ -48,7 +48,7 @@ En las secciones siguientes, debe utilizar el ejemplo de una página nueva `b`, 
 
   Una página creada manualmente en la rama de Live Copy; con una página secundaria, `lc-level-1`.
 
-   * Activado al publicar como `/b`, junto con la página secundaria.
+   * Se activó al publicar como `/b`, junto con la página secundaria.
 
 **Antes del despliegue**
 
@@ -67,7 +67,7 @@ En las secciones siguientes, debe utilizar el ejemplo de una página nueva `b`, 
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code><br /> <br /> (creado manualmente en la rama de live copy)<br /> </td>
-   <td><code> /lc-level-1</code><br /> <br /> (contiene el contenido de la página<br /> child-level-1 (que se creó manualmente en la rama de live copy)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (contiene el contenido de la página <br /> child-level-1 que se creó manualmente en la rama de live copy)</td>
   </tr>
  </tbody>
 </table>
@@ -76,7 +76,7 @@ En las secciones siguientes, debe utilizar el ejemplo de una página nueva `b`, 
 
 El administrador de despliegue le permite activar o desactivar la administración de conflictos.
 
-Esto se realiza utilizando [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) de **Administrador de despliegue de CQ WCM por día**:
+Esto se hace con la [configuración OSGi](/help/sites-deploying/configuring-osgi.md) del **Administrador de despliegue de CQ WCM por día**:
 
 * **Controlar conflictos con páginas creadas manualmente**:
 
@@ -84,7 +84,7 @@ Esto se realiza utilizando [Configuración de OSGi](/help/sites-deploying/config
 
   Se establece en true si el administrador de despliegue debe gestionar los conflictos de una página creada en Live Copy con un nombre que exista en el modelo.
 
-AEM ha de [comportamiento predefinido cuando se ha desactivado la administración de conflictos](#behavior-when-conflict-handling-deactivated).
+AEM tiene [comportamiento predefinido cuando se ha desactivado la administración de conflictos](#behavior-when-conflict-handling-deactivated).
 
 ## Controladores de conflictos {#conflict-handlers}
 
@@ -103,12 +103,12 @@ AEM proporciona lo siguiente:
 
 El controlador de conflictos predeterminado:
 
-* Se llama a `ResourceNameRolloutConflictHandler`
+* Se llama `ResourceNameRolloutConflictHandler`
 
 * Con este controlador, la página de modelo tiene prioridad.
-* La clasificación de servicio de este controlador se establece en un nivel bajo (es decir, por debajo del valor predeterminado para `service.ranking` ), ya que se supone que los controladores personalizados necesitan una clasificación más alta. Sin embargo, la clasificación no está al nivel mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
+* La clasificación de servicio de este controlador se establece en un nivel bajo (es decir, por debajo del valor predeterminado para la propiedad `service.ranking`), ya que se supone que los controladores personalizados necesitan una clasificación más alta. Sin embargo, la clasificación no está al nivel mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
 
-Este controlador de conflictos da prioridad al modelo. La página Live Copy `/b` se mueve (dentro de la rama de live copy) a `/b_msm_moved`.
+Este controlador de conflictos da prioridad al modelo. La página Live Copy `/b` se ha movido (dentro de la rama de Live Copy) a `/b_msm_moved`.
 
 * live copy: `/b`
 
@@ -118,9 +118,9 @@ Este controlador de conflictos da prioridad al modelo. La página Live Copy `/b`
 
 * modelo: `/b`
 
-  Se despliega en la página de live copy `/b`.
+  Se despliega en la página de Live Copy `/b`.
 
-   * `bp-level-1` se despliega en la live copy.
+   * `bp-level-1` se ha implementado en la Live Copy.
 
 **Después del despliegue**
 
@@ -130,8 +130,8 @@ Este controlador de conflictos da prioridad al modelo. La página Live Copy `/b`
    <td><strong>modelo tras el despliegue</strong></td>
    <td><strong>live copy después del despliegue</strong><br /> </td>
    <td></td>
-   <td><strong>live copy después del despliegue</strong><br /> <br /> <br /> </td>
-   <td><strong>publicar tras el despliegue</strong><br /> <br /> </td>
+   <td><strong>Live Copy después del despliegue</strong><br /> <br /> <br /> </td>
+   <td><strong>publicar después del despliegue</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>
@@ -158,9 +158,9 @@ Los controladores de conflicto personalizados pueden tener lo siguiente:
 
 * Nombrado según sus necesidades.
 * Desarrollado/configurado según sus necesidades; por ejemplo, puede desarrollar un controlador para que la página de Live Copy tenga prioridad.
-* Diseñado para configurarse con la [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md); en particular:
+* Diseñado para configurarse con la [configuración OSGi](/help/sites-deploying/configuring-osgi.md); en particular:
 
-   * **Clasificación de servicios**:
+   * **Clasificación del servicio**:
 
      Define el orden relacionado con otros controladores de conflictos ( `service.ranking`).
 
@@ -168,13 +168,13 @@ Los controladores de conflicto personalizados pueden tener lo siguiente:
 
 ### Comportamiento Cuando Se Desactiva La Gestión De Conflictos {#behavior-when-conflict-handling-deactivated}
 
-Si utiliza manualmente [desactivar gestión de conflictos](#rollout-manager-and-conflict-handling)AEM , entonces no realiza ninguna acción en ninguna página en conflicto (las páginas que no entran en conflicto se despliegan según lo esperado).
+AEM Si [desactiva manualmente la administración de conflictos](#rollout-manager-and-conflict-handling), entonces no realiza ninguna acción en ninguna página en conflicto (las páginas que no entran en conflicto se despliegan según lo esperado).
 
 >[!CAUTION]
 >
 >AEM no da ninguna indicación de que se estén ignorando los conflictos, ya que este comportamiento debe configurarse explícitamente, por lo que se supone que es el comportamiento requerido.
 
-En este caso, la Live Copy tiene prioridad. La página de modelo `/b` no se copia y la página live copy `/b` no se toca.
+En este caso, la Live Copy tiene prioridad. La página de modelo `/b` no se copia y la página de Live Copy `/b` no se modifica.
 
 * modelo: `/b`
 
@@ -191,8 +191,8 @@ En este caso, la Live Copy tiene prioridad. La página de modelo `/b` no se copi
  <tbody>
   <tr>
    <td><strong>modelo tras el despliegue</strong></td>
-   <td><strong>live copy después del despliegue</strong><br /> <br /> <br /> </td>
-   <td><strong>publicar tras el despliegue</strong><br /> <br /> </td>
+   <td><strong>Live Copy después del despliegue</strong><br /> <br /> <br /> </td>
+   <td><strong>publicar después del despliegue</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>

@@ -44,7 +44,7 @@ Un emulador:
 * Su aspecto se regula mediante CSS.
 * Admite complementos (por ejemplo, el complemento de rotación de dispositivos móviles).
 * Solo está activo en el autor.
-* Su componente base se encuentra en `/libs/wcm/emulator/components/base`.
+* Su componente base está en `/libs/wcm/emulator/components/base`.
 
 ### Cómo el emulador transforma el contenido {#how-the-emulator-transforms-the-content}
 
@@ -88,9 +88,9 @@ se transforma en el siguiente código html después del inicio del emulador:
 
 Se han añadido dos etiquetas de div:
 
-* el div con id `cq-emulator` sujetando el emulador en su totalidad y
+* el div con id `cq-emulator` que contiene el emulador en su totalidad y
 
-* el div con id `cq-emulator-content` que representa el área de contenido/pantalla/ventanilla del dispositivo en la que reside el contenido de la página.
+* el div con id `cq-emulator-content` que representa el área de contenido/pantalla/ventanilla del dispositivo donde reside el contenido de la página.
 
 Las nuevas clases CSS también se asignan a los nuevos divs de emulador: representan el nombre del emulador actual.
 
@@ -113,13 +113,13 @@ Los emuladores móviles existentes:
 
 Cuando el componente de página depende del componente de página móvil ( `/libs/wcm/mobile/components/page`), la funcionalidad del emulador se integra automáticamente en la página mediante el siguiente mecanismo:
 
-* El componente de página móvil `head.jsp` incluye el componente init del emulador asociado del grupo de dispositivos (solo en modo de autor) y el CSS de procesamiento del grupo de dispositivos a través de:
+* El componente de página móvil `head.jsp` incluye el componente de inicialización del emulador asociado del grupo de dispositivos (solo en el modo de autor) y el CSS de procesamiento del grupo de dispositivos mediante:
 
   `deviceGroup.drawHead(pageContext);`
 
-* El método `DeviceGroup.drawHead(pageContext)` incluye el componente init del emulador, es decir, llama al método `init.html.jsp` del componente emulador. Si el componente del emulador no tiene su propio `init.html.jsp` y se basa en el emulador de base móvil ( `wcm/mobile/components/emulators/base)`, el script de inicio del emulador base móvil se llama ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* El método `DeviceGroup.drawHead(pageContext)` incluye el componente init del emulador, es decir, llama al `init.html.jsp` del componente del emulador. Si el componente del emulador no tiene su propio `init.html.jsp` y depende del emulador de base móvil ( `wcm/mobile/components/emulators/base)`), se llama al script de inicio del emulador de base móvil ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
-* El script de inicio del emulador base móvil define mediante JavaScript:
+* El script de inicio del emulador base móvil define a través de JavaScript:
 
    * La configuración de todos los emuladores definidos para la página (emulatorConfigs)
    * El administrador del emulador, que integra la funcionalidad del emulador en la página mediante:
@@ -134,11 +134,11 @@ Cuando el componente de página depende del componente de página móvil ( `/lib
 
 Para crear un emulador móvil personalizado:
 
-1. Abajo `/apps/myapp/components/emulators` crear el componente `myemulator` (tipo de nodo: `cq:Component`).
+1. Debajo de `/apps/myapp/components/emulators` cree el componente `myemulator` (tipo de nodo: `cq:Component`).
 
-1. Configure las variables `sling:resourceSuperType` propiedad a `/libs/wcm/mobile/components/emulators/base`
+1. Establecer la propiedad `sling:resourceSuperType` en `/libs/wcm/mobile/components/emulators/base`
 
-1. Definir una biblioteca de cliente CSS con categoría `cq.wcm.mobile.emulator` para el aspecto del emulador: name = `css`, tipo de nodo = `cq:ClientLibrary`
+1. Defina una biblioteca de cliente CSS con la categoría `cq.wcm.mobile.emulator` para el aspecto del emulador: nombre = `css`, tipo de nodo = `cq:ClientLibrary`
 
    Por ejemplo, puede hacer referencia al nodo `/libs/wcm/mobile/components/emulators/iPhone/css`
 
@@ -146,7 +146,7 @@ Para crear un emulador móvil personalizado:
 
    Por ejemplo, puede hacer referencia al nodo `/libs/wcm/mobile/components/emulators/base/js`
 
-1. Si el emulador admite funcionalidades específicas definidas por complementos (como el desplazamiento táctil), cree un nodo de configuración debajo del emulador: name = `cq:emulatorConfig`, tipo de nodo = `nt:unstructured` y agregue la propiedad que define el complemento:
+1. Si el emulador admite funcionalidades específicas definidas por complementos (como el desplazamiento táctil), cree un nodo de configuración debajo del emulador: name = `cq:emulatorConfig`, node type = `nt:unstructured` y agregue la propiedad que define el complemento:
 
    * Nombre = `canRotate`, Tipo = `Boolean`, Valor = `true`: para incluir la funcionalidad de rotación.
 

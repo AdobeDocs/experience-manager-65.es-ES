@@ -24,7 +24,7 @@ El mantenimiento del registro de auditoría incluye varias partes de funcionalid
 
 Se implementa como una tarea de mantenimiento semanal configurable y se puede acceder a ella a través de la consola de monitorización del tablero de operaciones.
 
-Para obtener más información, consulte la [Documentación del Operations Dashboard](/help/sites-administering/operations-dashboard.md).
+Para obtener más información, consulte la [Documentación del tablero de operaciones](/help/sites-administering/operations-dashboard.md).
 
 Existen tres tipos de opciones de depuración de registros de auditoría:
 
@@ -32,13 +32,13 @@ Existen tres tipos de opciones de depuración de registros de auditoría:
 1. [Depuración del registro de auditoría DAM](/help/sites-administering/operations-audit-log.md#configure-dam-audit-log-purging)
 1. [Purga del registro de auditoría de replicación](/help/sites-administering/operations-audit-log.md#configure-replication-audit-log-purging)
 
-AEM Cada una de ellas se puede configurar creando reglas en la consola web de. Una vez configuradas, puede almacenarlas en déclencheur en el menú **Herramientas - Operaciones - Mantenimiento - Ventana de mantenimiento semanal** y ejecutar el **Tarea de mantenimiento de AuditLog**.
+AEM Cada una de ellas se puede configurar creando reglas en la consola web de. Una vez configurados, puede almacenarlos en déclencheur en **Herramientas - Operaciones - Mantenimiento - Ventana de mantenimiento semanal** y ejecutando **Tarea de mantenimiento de AuditLog**.
 
 ## Configurar depuración del registro de auditoría de página {#configure-page-audit-log-purging}
 
 Siga estos pasos para configurar la depuración del registro de auditoría:
 
-1. Vaya al administrador de la consola web seleccionando el explorador `http://localhost:4502/system/console/configMgr/`
+1. Vaya al administrador de la consola web señalando el explorador a `http://localhost:4502/system/console/configMgr/`
 
 1. Busque un elemento llamado **Regla de purga de registros de auditoría de páginas** y haga clic en él.
 
@@ -46,21 +46,21 @@ Siga estos pasos para configurar la depuración del registro de auditoría:
 
 1. A continuación, configure el planificador de depuración según sus necesidades. Las opciones disponibles son:
 
-   * **Nombre de la regla:** el nombre de la regla de política de auditoría;
-   * **Ruta de contenido:** la ruta del contenido al que se aplicará la regla;
-   * **Edad mínima:** el tiempo en días que deben conservarse los registros de auditoría;
+   * **Nombre de regla:** nombre de la regla de directiva de auditoría;
+   * **Ruta de acceso de contenido:** la ruta de acceso del contenido al que se aplicará la regla;
+   * **Edad mínima:** el tiempo en días que se deben guardar los registros de auditoría;
    * **Tipo de registro de auditoría:** el tipo de registro de auditoría que se debe purgar.
 
    >[!NOTE]
    >
-   >La ruta de contenido solo se aplica a los elementos secundarios del `/var/audit/com.day.cq.wcm.core.page` en el repositorio.
+   >La ruta de contenido solo se aplica a los elementos secundarios del nodo `/var/audit/com.day.cq.wcm.core.page` en el repositorio.
 
 1. Guarde la regla.
-1. La regla que ha creado debe exponerse en el tablero de operaciones para que se ejecute. Para ello, vaya a **Herramientas - Operaciones - Mantenimiento** AEM en la pantalla de bienvenida de la.
+1. La regla que ha creado debe exponerse en el tablero de operaciones para que se ejecute. AEM Para ello, vaya a **Herramientas - Operaciones - Mantenimiento** desde la pantalla de bienvenida de la pantalla de bienvenida de la página de inicio de la sesión de bienvenida.
 
-1. Pulse el botón **Ventana de mantenimiento semanal** Tarjeta de.
+1. Presione la tarjeta **Ventana de mantenimiento semanal**.
 
-1. La tarea de mantenimiento ya está presente en la **Tarea de mantenimiento de AuditLog** Tarjeta de.
+1. Encontrará la tarea de mantenimiento ya presente en la tarjeta **Tarea de mantenimiento de AuditLog**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -68,7 +68,7 @@ Siga estos pasos para configurar la depuración del registro de auditoría:
 
 AEM En la versión 6.3, si la ventana de mantenimiento programado se cierra antes de que se complete la tarea Purga del registro de auditoría, la tarea se detendrá automáticamente. Se reanudará cuando se abra la siguiente ventana de mantenimiento.
 
-**AEM Con 6,5**, puede detener manualmente una tarea de purga de registros de auditoría en ejecución haciendo clic en **Detener** icono. En la siguiente ejecución, la tarea se reanudará de forma segura.
+AEM **Con la versión 6.5**, puede detener manualmente una tarea de purga del registro de auditoría en ejecución haciendo clic en el icono **Detener**. En la siguiente ejecución, la tarea se reanudará de forma segura.
 
 >[!NOTE]
 >
@@ -77,25 +77,25 @@ AEM En la versión 6.3, si la ventana de mantenimiento programado se cierra ante
 ## Configurar depuración del registro de auditoría DAM {#configure-dam-audit-log-purging}
 
 1. Vaya a la consola del sistema en *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. Buscar por **Purga del registro de auditoría DAM** y haga clic en el resultado.
+1. Busque la regla **Depuración del registro de auditoría DAM** y haga clic en el resultado.
 1. En la siguiente ventana, configure la regla en consecuencia. Las opciones son:
 
-   * **Nombre de la regla:** el nombre de la regla de política de auditoría;
+   * **Nombre de regla:** nombre de la regla de directiva de auditoría;
    * **Ruta de contenido:** la ruta del contenido al que se aplicará la regla
-   * **Edad mínima:** el tiempo en días que deben conservarse los registros de auditoría
-   * **Tipos de eventos Dam de registro de auditoría:** los tipos de eventos de auditoría DAM que deben purgarse.
+   * **Edad mínima:** el tiempo en días que se deben conservar los registros de auditoría
+   * **Tipos de eventos DAM de registro de auditoría:** los tipos de eventos de auditoría DAM que se deben purgar.
 
-1. Clic **Guardar** para guardar la configuración
+1. Haga clic en **Guardar** para guardar la configuración
 
 ## Configurar depuración del registro de auditoría de replicación  {#configure-replication-audit-log-purging}
 
 1. Vaya a la consola del sistema en *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. Buscar por **Programador de purga del registro de auditoría de replicación** y haga clic en el resultado
+1. Busque **Planificador de purga del registro de auditoría de replicación** y haga clic en el resultado
 1. En la siguiente ventana, configure la regla en consecuencia. Las opciones son:
 
-   * **Nombre de la regla:** nombre de la regla de directiva de auditoría
+   * **Nombre de regla:** el nombre de la regla de directiva de auditoría
    * **Ruta de contenido:** la ruta del contenido al que se aplicará la regla
-   * **Edad mínima:** el tiempo en días que deben conservarse los registros de auditoría
+   * **Edad mínima:** el tiempo en días que se deben conservar los registros de auditoría
    * **Tipos de eventos de replicación de registros de auditoría:** los tipos de eventos de auditoría de replicación que deben purgarse
 
-1. Clic **Guardar** para guardar la configuración.
+1. Haga clic en **Guardar** para guardar la configuración.

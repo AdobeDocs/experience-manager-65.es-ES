@@ -24,12 +24,12 @@ Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de
 
 ## Prácticas recomendadas para el formato de imagen (`&fmt=`) {#best-practices-for-image-format-fmt}
 
-* JPG o PNG son las mejores opciones para ofrecer imágenes de buena calidad y con un tamaño y peso manejables.
-* Si no se proporciona ningún comando de formato en la dirección URL, la opción predeterminada de Dynamic Media Image Delivery es JPG para la entrega.
-* El JPG comprime en una proporción de 10:1 y normalmente produce tamaños de archivo de imagen más pequeños. PNG comprime en una proporción de aproximadamente 2:1, excepto a veces, como cuando las imágenes contienen un fondo blanco. Sin embargo, normalmente, los tamaños de archivo PNG son mayores que los archivos de JPG.
-* El JPG utiliza la compresión con pérdida, lo que significa que los elementos de la imagen (píxeles) se pierden durante la compresión. PNG, por otro lado, utiliza compresión sin pérdidas.
-* El JPG suele comprimir las imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
-* Si las imágenes contienen transparencias, utilice PNG porque JPG no las admite.
+* Las opciones más adecuadas para ofrecer imágenes de buena calidad y con un peso y tamaño manejables son las de formato JPG o PNG.
+* Si no se proporciona ningún comando de formato en la dirección URL, el valor predeterminado de Dynamic Media Image Delivery es el de JPG para la entrega de la imagen de forma predeterminada.
+* El JPG comprime en una proporción de 10:1 y generalmente produce tamaños de archivo de imagen más pequeños. PNG comprime en una proporción de aproximadamente 2:1, excepto a veces, como cuando las imágenes contienen un fondo blanco. Normalmente, sin embargo, los tamaños de archivo PNG son más grandes que los archivos de formato JPG.
+* El JPG utiliza la compresión con pérdidas, lo que significa que los elementos de la imagen (píxeles) se pierden durante la compresión. PNG, por otro lado, utiliza compresión sin pérdidas.
+* A menudo, el JPG comprime las imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
+* Si las imágenes contienen transparencias, utilice PNG porque el JPG no admite la transparencia.
 
 Como práctica recomendada para el formato de imagen, comience con la configuración más común `&fmt=JPG`.
 
@@ -37,16 +37,16 @@ Como práctica recomendada para el formato de imagen, comience con la configurac
 
 La reducción dinámica del tamaño de la imagen es una de las tareas más comunes. Implica especificar el tamaño y, opcionalmente, qué modo de disminución de resolución se utiliza para reducir la escala de la imagen.
 
-* Para el tamaño de la imagen, el enfoque mejor y más directo es utilizar `&wid=<value>` y `&hei=<value>,`o simplemente `&hei=<value>`. Estos parámetros establecen automáticamente el ancho de la imagen de acuerdo con la relación de aspecto.
-* `&resMode=<value>`controla el algoritmo utilizado para la disminución de resolución. Comience por `&resMode=sharp2`. Este valor proporciona la mejor calidad de imagen. Mientras se utiliza la disminución de resolución `value =bilin` es más rápido, a menudo resulta en el solapamiento de artefactos.
+* Para cambiar el tamaño de la imagen, el método más sencillo es usar `&wid=<value>` y `&hei=<value>,`o solo `&hei=<value>`. Estos parámetros establecen automáticamente el ancho de la imagen de acuerdo con la relación de aspecto.
+* `&resMode=<value>`controla el algoritmo utilizado para reducir la resolución. Comience por `&resMode=sharp2`. Este valor proporciona la mejor calidad de imagen. Aunque el uso de la disminución de resolución de `value =bilin` es más rápido, a menudo provoca el solapamiento de artefactos.
 
-Como práctica recomendada para el tamaño de imágenes, utilice `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
+Como práctica recomendada para el tamaño de imagen, use `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
 
 ## Prácticas recomendadas para el enfoque de imágenes {#best-practices-for-image-sharpening}
 
 El enfoque de imágenes es el aspecto más complejo del control de imágenes en su sitio web y donde se cometen muchos errores. Tómese el tiempo necesario para obtener más información sobre el funcionamiento de las máscaras de enfoque y enfoque en Experience Manager consultando los siguientes recursos útiles:
 
-Documentación técnica sobre prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) que también se aplica al Experience Manager.
+Documento técnico sobre prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf), que también se aplica al Experience Manager.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
@@ -55,13 +55,13 @@ Con Experience Manager, puede enfocar las imágenes durante la ingesta, la entre
 
 Existen dos métodos de enfoque de imagen que puede utilizar:
 
-* Enfoque simple ( `&op_sharpen`): similar al filtro de enfoque utilizado en Photoshop, el enfoque simple aplica un enfoque básico a la vista final de la imagen después del cambio de tamaño dinámico. Sin embargo, este método no se puede configurar por el usuario. Se recomienda no utilizar &amp;op_sharpen a menos que sea necesario.
-* Máscara de enfoque ( `&op_USM`) - Máscara de enfoque es un filtro de enfoque estándar de la industria. La práctica recomendada es enfocar las imágenes con máscara de enfoque siguiendo las directrices que se indican a continuación. El enmascaramiento de enfoque permite controlar los tres parámetros siguientes:
+* Enfoque simple (`&op_sharpen`): al igual que el filtro de enfoque utilizado en Photoshop, el enfoque simple aplica un enfoque básico a la vista final de la imagen tras el cambio de tamaño dinámico. Sin embargo, este método no se puede configurar por el usuario. Se recomienda no utilizar &amp;op_sharpen a menos que sea necesario.
+* Máscara de enfoque (`&op_USM`): la máscara de enfoque es un filtro de enfoque estándar del sector. La práctica recomendada es enfocar las imágenes con máscara de enfoque siguiendo las directrices que se indican a continuación. El enmascaramiento de enfoque permite controlar los tres parámetros siguientes:
 
    * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL *cantidad *]**(0-5, intensidad del efecto.)
-      * **[!UICONTROL *radio *]**(0-250, anchura de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medida en píxeles.)
+      * **[!UICONTROL *cantidad *]**(0-5, intensidad del efecto).
+      * **[!UICONTROL *radio *]**(0-250, ancho de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medido en píxeles.)
 
      Tenga en cuenta que los parámetros radio y cantidad funcionan entre sí. La reducción del radio puede compensarse aumentando la cantidad. El radio permite un control más preciso, ya que un valor más bajo enfoca únicamente los píxeles del borde, mientras que un valor más alto enfoca una banda más ancha de píxeles.
 
@@ -80,35 +80,35 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
 Se recomienda comenzar con el parámetro radio de la máscara de enfoque. Los ajustes de radio con los que puede empezar son los siguientes:
 
 * **[!UICONTROL Sitio web]** - 0,2-0,3 píxeles
-* **[!UICONTROL Impresión fotográfica (250-300 ppi)]** - 0,3-0,5 píxeles
-* **[!UICONTROL Impresión offset (266-300 ppi)]** - 0,7-1,0 píxeles
+* **[!UICONTROL Impresión fotográfica (250-300 ppp)]** - 0,3-0,5 píxeles
+* **[!UICONTROL Impresión en offset (266-300 ppi)]** - 0,7-1,0 píxeles
 * **[!UICONTROL Impresión en lienzo (150 ppp)]** - 1,5-2,0 píxeles
 
 Aumente gradualmente la cantidad de 1,75 a 4. Si el enfoque sigue sin ser el deseado, aumente el radio en un punto decimal y vuelva a ejecutar la cantidad de 1,75 a 4. Repita el proceso según sea necesario.
 
 Deje el parámetro monocromo en 0.
 
-### Prácticas recomendadas para la compresión JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
+### Prácticas recomendadas para la compresión del JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
-* Este parámetro controla la calidad de codificación JPG. Un valor más alto significa una imagen de mayor calidad pero un tamaño de archivo grande; alternativamente, un valor más bajo significa una imagen de menor calidad pero un tamaño de archivo más pequeño. El rango de este parámetro es de 0 a 100.
-* Para optimizar la calidad, no establezca el valor del parámetro en 100. La diferencia entre un ajuste de 90 o 95 y 100 es casi imperceptible, pero 100 aumenta innecesariamente el tamaño del archivo de imagen. Por lo tanto, para optimizar la calidad pero evitar que los archivos de imagen se vuelvan demasiado grandes, establezca el `qlt= value` a 90 o 95.
-* Para optimizar para un tamaño de archivo de imagen pequeño pero mantener la calidad de imagen en un nivel aceptable, establezca el `qlt= value` a 80. Los valores por debajo de 70 a 75 dan como resultado una degradación significativa de la calidad de imagen.
-* Como práctica recomendada, para permanecer en el medio, configure el `qlt= value` a 85 para permanecer en el medio.
+* JPG Este parámetro controla la calidad de codificación de la. Un valor más alto significa una imagen de mayor calidad pero un tamaño de archivo grande; alternativamente, un valor más bajo significa una imagen de menor calidad pero un tamaño de archivo más pequeño. El rango de este parámetro es de 0 a 100.
+* Para optimizar la calidad, no establezca el valor del parámetro en 100. La diferencia entre un ajuste de 90 o 95 y 100 es casi imperceptible, pero 100 aumenta innecesariamente el tamaño del archivo de imagen. Por lo tanto, para optimizar la calidad pero evitar que los archivos de imagen sean demasiado grandes, establezca `qlt= value` en 90 o 95.
+* Para optimizar para un archivo de imagen pequeño pero mantener la calidad de la imagen en un nivel aceptable, establezca `qlt= value` en 80. Los valores por debajo de 70 a 75 dan como resultado una degradación significativa de la calidad de imagen.
+* Como práctica recomendada, para permanecer en el medio, establezca `qlt= value` en 85 para permanecer en el medio.
 * Uso del indicador de croma en `qlt=`
 
-   * El `qlt=` tiene un segundo ajuste que permite activar la disminución de resolución de cromaticidad del RGB con el valor `,1` o desactivado con el valor `,0`.
+   * El parámetro `qlt=` tiene una segunda configuración que le permite activar la disminución de resolución de cromaticidad del RGB con el valor `,1` o desactivar con el valor `,0`.
    * Para que sea sencillo, comience con la disminución de resolución de cromaticidad RGB desactivada (`,0`). Esta configuración suele mejorar la calidad de imagen, especialmente en imágenes sintéticas con muchos bordes nítidos y contraste.
 
-Como práctica recomendada para el uso de compresión JPG `&qlt=85,0`.
+Como práctica recomendada para la compresión en JPG, use `&qlt=85,0`.
 
 ## Prácticas recomendadas para el tamaño de JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize es un parámetro útil si desea garantizar que una imagen no supere un tamaño determinado para su entrega a dispositivos con memoria limitada.
 
 * Este parámetro se establece en kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Define el tamaño máximo permitido para la entrega de imágenes.
-* `&jpegSize=` interactúa con el parámetro de compresión del JPG `&qlt=`. Si la respuesta del JPG con el parámetro de compresión del JPG especificado (`&qlt=`) no supera el valor jpegSize, la imagen se devuelve con `&qlt=` como se define. De lo contrario, `&qlt=` disminuye gradualmente hasta que la imagen se ajusta al tamaño máximo permitido o hasta que el sistema determina que no se ajusta y devuelve un error.
+* `&jpegSize=` interactúa con el parámetro de compresión `&qlt=` del JPG de la aplicación. Si la respuesta del JPG con el parámetro de compresión del JPG de la aplicación especificado (`&qlt=`) no excede el valor jpegSize, la imagen se devuelve con `&qlt=` tal como se definió. De lo contrario, `&qlt=` se reducirá gradualmente hasta que la imagen se ajuste al tamaño máximo permitido o hasta que el sistema determine que no se ajusta y devuelva un error.
 
-Como práctica recomendada, establezca `&jpegSize=` y añada el parámetro `&qlt=` si ofrece imágenes JPG a dispositivos con memoria limitada.
+JPG Como práctica recomendada, establezca `&jpegSize=` y agregue el parámetro `&qlt=` si va a enviar imágenes de calidad superior a dispositivos con memoria limitada.
 
 ## Resumen de prácticas recomendadas {#best-practices-summary}
 

@@ -20,5 +20,5 @@ ht-degree: 24%
 
 En la página Preferencias, puede controlar el número de servicios, extremos, categorías y archivos que se muestran en cada una de las páginas Web Aplicaciones y servicios.
 
-1. En la consola de administración, **[!UICONTROL Haga clic en Servicios > Aplicaciones y servicios > Preferencias]**.
-1. En la página Preferencias, escriba el número de servicios, extremos, categorías y archivos que se pueden mostrar en cada página y haga clic en **[!UICONTROL Guardar]**.
+1. En la consola de administración, **[!UICONTROL haga clic en Servicios > Aplicaciones y servicios > Preferencias]**.
+1. En la página Preferencias, escriba el número de servicios, extremos, categorías y archivos que se pueden mostrar en cada página y, a continuación, haga clic en **[!UICONTROL Guardar]**.

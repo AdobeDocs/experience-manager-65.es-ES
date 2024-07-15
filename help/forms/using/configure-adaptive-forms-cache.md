@@ -24,7 +24,7 @@ Una caché es un mecanismo para acortar los tiempos de acceso a los datos, reduc
 
 1. Vaya al Administrador de configuración de la consola web de AEM en `https://[server]:[port]/system/console/configMgr`.
 1. Haga clic en **[!UICONTROL Configuración del canal Web de comunicaciones interactivas y formularios adaptables]** para editar sus valores de configuración.
-1. En el [!UICONTROL editar valores de configuración] AEM , especifique el número máximo de formularios, o documentos, una instancia del cuadro de diálogo de [!DNL Forms] El servidor puede almacenar en caché en **[!UICONTROL Número de Forms adaptables]** field. El valor predeterminado es 100.
+1. AEM En el cuadro de diálogo [!UICONTROL editar valores de configuración] especifique el número máximo de formularios o documentos que una instancia del servidor [!DNL Forms] de la puede almacenar en caché en el campo **[!UICONTROL Número de Forms adaptables]**. El valor predeterminado es 100.
 
    >[!NOTE]
    >
@@ -37,7 +37,7 @@ Una caché es un mecanismo para acortar los tiempos de acceso a los datos, reduc
 Su entorno está configurado para utilizar la memoria caché de los formularios adaptables y los recursos relacionados.
 
 
-## (Opcional) Configurar la caché de un formulario adaptable en Dispatcher {#configure-the-cache}
+## (Opcional) Configurar la memoria caché de un formulario adaptable en Dispatcher {#configure-the-cache}
 
 También puede configurar el almacenamiento en caché de un formulario adaptable en Dispatcher para mejorar el rendimiento.
 
@@ -60,7 +60,7 @@ También puede configurar el almacenamiento en caché de un formulario adaptable
 
 Para habilitar y configurar el almacenamiento en caché de los formularios adaptables en Dispatcher, realice los siguientes pasos:
 
-1. Abra la siguiente URL para cada instancia de publicación de su entorno y [habilitar el agente de vaciado para publicar instancias de su entorno](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Abra la siguiente URL en cada instancia de publicación de su entorno y [habilite el agente de vaciado para publicar instancias de su entorno](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Agregue lo siguiente al archivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
@@ -126,7 +126,7 @@ Para habilitar y configurar el almacenamiento en caché de los formularios adapt
       }
    ```
 
-El entorno de AEM está configurado para almacenar en la memoria caché los formularios adaptables. Almacena en la memoria caché todo tipo de formularios adaptables. Si necesita comprobar los permisos de acceso de los usuarios de una página antes de enviar la página almacenada en caché, consulte [almacenamiento en caché de contenido protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es).
+El entorno de AEM está configurado para almacenar en la memoria caché los formularios adaptables. Almacena en la memoria caché todo tipo de formularios adaptables. Si necesita comprobar los permisos de acceso de los usuarios de una página antes de enviar la página almacenada en caché, vea [almacenar en caché el contenido protegido](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=es).
 
 ## Resolución de problemas {#troubleshooting}
 
@@ -134,7 +134,7 @@ El entorno de AEM está configurado para almacenar en la memoria caché los form
 
 #### Problema {#issue1}
 
-Cuando selecciona y agrega imágenes o vídeos a un formulario adaptable mediante el Explorador de recursos y estas imágenes y vídeos se editan en el Editor de recursos, el formulario adaptable que las contiene no se invalida automáticamente en la caché de Dispatcher.
+Cuando selecciona y agrega imágenes o vídeos a un formulario adaptable mediante el explorador de recursos y estas imágenes y vídeos se editan en el editor de Assets, el formulario adaptable que las contiene no se invalida automáticamente en la caché de Dispatcher.
 
 #### Solución {#Solution1}
 
@@ -144,7 +144,7 @@ Después de publicar las imágenes y el vídeo, cancele la publicación y publiq
 
 #### Problema {#issue3}
 
-Cuando la URL del formulario adaptable no contiene información de localización, y **[!UICONTROL Usar configuración regional del explorador]** cuando el administrador de configuración está habilitado, se proporciona una versión localizada del formulario adaptable. Solo la primera instancia del formulario adaptable se almacena en caché y se entrega a todos los usuarios subsiguientes.
+Cuando la URL del formulario adaptable no contiene información de localización y **[!UICONTROL Usar configuración regional del explorador]** está habilitado en el administrador de configuración, se proporciona una versión localizada del formulario adaptable. Solo la primera instancia del formulario adaptable se almacena en caché y se entrega a todos los usuarios subsiguientes.
 
 #### Solución {#Solution3}
 

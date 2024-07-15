@@ -34,7 +34,7 @@ Para aplicar un diseño personalizado a un campo, haga lo siguiente:
 ### Personalizar el diseño de un solo campo {#customize-layout-of-a-single-field}
 
 1. Abra el formulario en el modo **Estilo**. Para abrir el formulario en modo Estilo, en la barra de herramientas de la página, seleccione ![lista desplegable de lienzo](assets/canvas-drop-down.png) > **Estilo**.
-1. En la barra lateral, debajo de **Objetos de formulario**, seleccione el campo y seleccione el botón editar ![edit-button](assets/edit-button.png).
+1. En la barra lateral, en **Objetos de formulario**, seleccione el campo y el botón de edición ![edit-button](assets/edit-button.png).
 1. Seleccione el estado del campo que desea personalizar y especifique el estilo para ese estado.
 
    ![Especificar el estilo en línea de un campo](assets/edit-error-state.png)
@@ -82,7 +82,7 @@ Cree una temática con el Editor de temáticas para personalizar la presentació
    ```
 
 1. Para mejorar el aspecto y el comportamiento, incluya la biblioteca de cliente creada en el archivo del diseño (errorOnRight.jsp).
-1. Abra el cuadro de diálogo de edición del campo y seleccione **Estilo** pestaña. En el cuadro desplegable **Configuración del diseño del campo**, seleccione el diseño recién creado y haga clic en **Aceptar**.
+1. Abra el cuadro de diálogo de edición del campo y seleccione la ficha **Estilo**. En el cuadro desplegable **Configuración del diseño del campo**, seleccione el diseño recién creado y haga clic en **Aceptar**.
 
 El paquete ErrorOnRight.zip contiene código para mostrar mensajes de error en el lado derecho de los campos.
 

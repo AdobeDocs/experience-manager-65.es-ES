@@ -28,5 +28,5 @@ En los siguientes temas se describe cómo administrar los recursos de Dynamic Me
 
 * [Práctica recomendada para optimizar la calidad de las imágenes](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Vista previa de recursos de Dynamic Media](/help/assets/previewing-assets.md)
-* [Publicación de recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
+* [Publicación de Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md)
 * [Uso de selectores](/help/assets/working-with-selectors.md)

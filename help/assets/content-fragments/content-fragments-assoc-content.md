@@ -1,6 +1,6 @@
 ---
 title: Contenido asociado
-description: AEM Comprenda cómo la función de contenido asociada proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento cuando se añada a una página de contenido, lo que añade flexibilidad adicional a la entrega de contenido sin encabezado.
+description: AEM Comprender cómo la función de contenido asociada de la aplicación proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento cuando se añada a una página de contenido, lo que añade flexibilidad adicional a la entrega de contenido sin encabezado.
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
@@ -14,7 +14,7 @@ ht-degree: 51%
 
 # Contenido asociado{#associated-content}
 
-AEM La función de contenido asociado proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad para la entrega de contenido sin encabezado mediante [proporcionar una serie de recursos a los que acceder al utilizar el fragmento de contenido en una página,](/help/sites-authoring/content-fragments.md#using-associated-content) además de ayudar a reducir el tiempo necesario para buscar el recurso adecuado.
+AEM función de contenido asociado proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad para la entrega de contenido sin encabezado al [proporcionar una amplia gama de recursos a los que tener acceso al usar el fragmento de contenido en una página,](/help/sites-authoring/content-fragments.md#using-associated-content) al tiempo que ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
 
 ## Adición de contenido asociado {#adding-associated-content}
 
@@ -22,7 +22,7 @@ AEM La función de contenido asociado proporciona la conexión para que los recu
 >
 >Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento y/o página.
 
-Para realizar la asociación, primero debe [añadir los recursos multimedia a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede hacer lo siguiente:
+Para realizar la asociación, primero debe [agregar los recursos multimedia a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede hacer lo siguiente:
 
 1. Abrir el fragmento y seleccionar **Contenido asociado** en el panel lateral.
 

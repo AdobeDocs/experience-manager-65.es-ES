@@ -16,7 +16,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->Los clientes de Adobe utilizan el [Consola de Adobe Developer](https://developer.adobe.com/console) para generar credenciales que permitan el acceso a varias API. Los clientes seleccionan entre varios tipos de credenciales, que van de servidor a servidor OAuth a aplicaciones de una sola página. El tipo de credencial Cuenta de servicio (JWT) ya no se utiliza en favor de las credenciales de servidor a servidor OAuth con Service Pack 20. Este cambio se puede volver a portar a paquetes de servicio anteriores, empezando por Service Pack 11 hasta Service Pack 20, con el uso de una revisión que puede descargar [aquí](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Los clientes de Adobe usan [Adobe Developer Console](https://developer.adobe.com/console) para generar credenciales que habiliten el acceso a varias API. Los clientes seleccionan entre varios tipos de credenciales, que van de servidor a servidor OAuth a aplicaciones de una sola página. El tipo de credencial Cuenta de servicio (JWT) ya no se utiliza en favor de las credenciales de servidor a servidor OAuth con Service Pack 20. Este cambio se puede volver a portar a Service Packs antiguos, empezando por Service Pack 11 hasta Service Pack 20 con el uso de una revisión que puede descargar [aquí](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
 Adobe Experience Manager AEM () se puede integrar con muchas otras soluciones de Adobe. Por ejemplo, Adobe Target y Adobe Analytics, entre otras.
 
@@ -40,7 +40,7 @@ Las integraciones utilizan una integración de IMS configurada con S2S OAuth.
 
 ## Credenciales en Developer Console {#credentials-in-the-developer-console}
 
-Como primer paso, debe configurar las credenciales de OAuth en la consola de Adobe Developer.
+Como primer paso, debe configurar las credenciales de OAuth en Adobe Developer Console.
 
 Para obtener más información sobre cómo realizar esta configuración, consulte la documentación de Developer Console, según sus necesidades:
 
@@ -103,4 +103,4 @@ Para migrar una integración de IMS de Adobe existente basada en las credenciale
    ![Complete los detalles de OAuth](assets/ims-migrate-jwt-complete-oauth-details.png)
 
 1. Use **Guardar y cerrar** para conservar las actualizaciones.
-Cuando vuelva a la consola, la variable **Credenciales de JWT (obsoletas)** la advertencia ha desaparecido.
+Cuando vuelva a la consola, la advertencia **Credenciales JWT (obsoletas)** desaparecerá.

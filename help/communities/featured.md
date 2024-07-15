@@ -35,11 +35,11 @@ Se puede permitir o no la capacidad de incluir contenido por componente.
 Esta sección de la documentación describe lo siguiente:
 
 * Añadir contenido destacado a un sitio de la comunidad.
-* Ajustes de configuración para `Featured Content` componente.
+* Ajustes de configuración para el componente `Featured Content`.
 
 ## Adición de contenido destacado a una página {#adding-featured-content-to-a-page}
 
-Para agregar un `Featured Content` a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un componente `Featured Content` a una página en modo de autor, use el explorador de componentes para localizar
 
 * `Communities / Featured Content`
 
@@ -47,21 +47,21 @@ Y arrástrelo a su lugar en una página donde debería aparecer el contenido des
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](essentials-featured.md#essentials-for-client-side) están incluidos, así es como se `Featured Content` el componente aparece:
+Cuando se incluyen las [bibliotecas requeridas del lado del cliente](essentials-featured.md#essentials-for-client-side), así es como aparece el componente `Featured Content`:
 
 ![contenido destacado](assets/featuredcontent.png)
 
 ## Configuración del contenido destacado {#configuring-featured-content}
 
-Seleccione el colocado `Featured Content` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el componente `Featured Content` colocado para que pueda acceder y seleccionar el icono `Configure` que abre el cuadro de diálogo de edición.
 
-![configure-new](assets/configure-new.png)
+![configurar-nuevo](assets/configure-new.png)
 
 ![contenido destacado1](assets/featuredcontent1.png)
 
 ### Pestaña Configuración {#settings-tab}
 
-En el **[!UICONTROL Configuración]** pestaña, identifique el contenido que se va a mostrar:
+En la ficha **[!UICONTROL Configuración]**, identifique el contenido que se va a incluir:
 
 * **[!UICONTROL Nombre para mostrar]**
 
@@ -69,7 +69,7 @@ En el **[!UICONTROL Configuración]** pestaña, identifique el contenido que se 
 
 * **[!UICONTROL Ubicación del contenido destacado]**
 
-  *(Obligatorio)* Vaya a la página que contiene el contenido que se puede mostrar (los componentes de esa página deben configurarse para Permitir contenido destacado). Por ejemplo, `/content/sites/engage/en/forum`.
+  *(obligatorio)* Vaya a la página que contiene el contenido que puede aparecer en pantalla (los componentes de esa página deben configurarse para permitir contenido destacado). Por ejemplo, `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Límite de visualización]**
 
@@ -79,20 +79,20 @@ En el **[!UICONTROL Configuración]** pestaña, identifique el contenido que se 
 
 La capacidad de marcar contenido como contenido destacado requiere privilegios de moderador.
 
-Cuando un moderador ve el contenido publicado, tiene acceso a las marcas de moderación en contexto, que incluyen la nueva `Feature` Indicador.
+Cuando un moderador ve el contenido publicado, tiene acceso a las marcas de moderación en contexto, que incluyen la nueva marca `Feature`.
 
-![site-visitor-experience](assets/site-visitor-experience.png)
+![experiencia-visitante-del-sitio](assets/site-visitor-experience.png)
 
-Una vez marcada como característica, la marca de moderación pasa a llamarse `Unfeature`.
+Una vez que se haya marcado como característica, la marca de moderación se convierte en `Unfeature`.
 
-La página que contiene el `Featured Content` componente, ahora incluye esta publicación.
+La página que contiene el componente `Featured Content`, ahora incluye esta publicación.
 
-![site-visitor-experience1](assets/site-visitor-experience1.png)
+![experiencia-visitante-del-sitio1](assets/site-visitor-experience1.png)
 
-El `Read More` vínculos a la publicación real.
+El `Read More` vincula a la publicación real.
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la [Contenido destacado](essentials-featured.md) para desarrolladores.
+Encontrará más información en la página [Contenido destacado](essentials-featured.md) para desarrolladores.
 
-Para marcar el contenido como destacado, consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
+Para marcar contenido como destacado, consulte [Moderar contenido generado por el usuario](moderate-ugc.md).

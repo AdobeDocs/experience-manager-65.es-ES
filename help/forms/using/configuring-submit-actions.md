@@ -165,7 +165,7 @@ Puede configurar un formulario adaptable para ejecutar un flujo de nube de Micro
 * Realizar cálculos complejos en los datos capturados
 * Guardar datos de formularios adaptables en sistemas de almacenamiento con una programación predefinida
 
-El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para utilizar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [Conecte su instancia de AEM Forms con Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
+El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para usar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [Conecte la instancia de AEM Forms con Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)
 
 Después de una configuración correcta, utilice la acción de envío [Invocar un flujo de Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) para enviar datos a un flujo de Power Automate.
 
@@ -175,14 +175,14 @@ Después de una configuración correcta, utilice la acción de envío [Invocar u
 >
 La función Enviar a Microsoft® SharePoint AEM List se introdujo con el paquete de servicio 19 (6.5.19.0) de Forms de 6.5.
 
-El **[!UICONTROL Enviar a SharePoint]** La acción de envío conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® SharePoint conectado.
+La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® SharePoint conectado.
 
 ### Conectar un formulario adaptable a la lista de Microsoft® SharePoint {#connect-af-sharepoint-list}
 
 Para conectar un formulario adaptable a la lista de Microsoft® SharePoint:
 
 1. [Crear una configuración de lista de SharePoint](#create-sharepoint-list-configuration): conecta AEM Forms a su almacenamiento de de lista de Sharepoint de Microsoft®.
-1. [Utilice el **Enviar mediante modelo de datos de formulario** enviar acción en un formulario adaptable](#use-submit-using-fdm): envía los datos del formulario adaptable al Microsoft® SharePoint configurado.
+1. [Use la acción de envío **Enviar mediante el modelo de datos de formulario** en un formulario adaptable](#use-submit-using-fdm): envía los datos del formulario adaptable al SharePoint de Microsoft® configurado.
 
 #### Crear configuración de lista de SharePoint {#create-sharepoint-list-configuration}
 
@@ -194,7 +194,7 @@ Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 1. Especifique el **[!UICONTROL Título]**, **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL URL de OAuth]**. Para obtener información sobre cómo recuperar el ID de cliente, el secreto de cliente o el ID de inquilino para la URL de OAuth, consulte [Documentación de Microsoft®](https://learn.microsoft.com/es-es/graph/auth-register-app-v2).
    * Puede recuperar la variable `Client ID` y `Client Secret` de su aplicación desde el portal de Microsoft® Azure.
    * En el portal de Microsoft® Azure, añada el URI de redireccionamiento como `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Reemplace `[author-instance]` por la URL de su instancia de autor.
-   * Adición de los permisos de API `offline_access` y `Sites.Manage.All` en la pestaña **Microsoft® Graph** para proporcionar permisos de lectura y escritura. Añadir `AllSites.Manage` permiso en el **Sharepoint** para interactuar de forma remota con los datos de SharePoint.
+   * Adición de los permisos de API `offline_access` y `Sites.Manage.All` en la pestaña **Microsoft® Graph** para proporcionar permisos de lectura y escritura. Agregue el permiso `AllSites.Manage` en la ficha **Sharepoint** para interactuar de forma remota con los datos de SharePoint.
    * Use la URL de OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Reemplace `<tenant-id>` por el `tenant-id` de su aplicación desde el portal de Microsoft® Azure.
 
      >[!NOTE]
@@ -211,7 +211,7 @@ Puede utilizar la configuración de lista de SharePoint creada en un formulario 
 
 1. [Crear un modelo de datos de formulario con Microsoft](/help/forms/using/create-form-data-model.md)
 1. [Configurar el modelo de datos de formulario para recuperar y enviar datos](/help/forms/using/work-with-form-data-model.md#configure-services)
-1. [Creación de un formulario adaptable](/help/forms/using/create-adaptive-form.md).
+1. [Crear un formulario adaptable](/help/forms/using/create-adaptive-form.md).
 1. [Configurar la acción de envío mediante un modelo de datos de formulario](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
 
 Al enviar el formulario, los datos se guardan en el almacenamiento de lista de Sharepoint de Microsoft® especificado.

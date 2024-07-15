@@ -26,4 +26,4 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->AEM La aplicación Verificar el uso de la está en desuso. La aplicación se ha eliminado de la Apple AppStore y de la Android PlayStore.
+>AEM La aplicación Verificar el uso de la está en desuso. La aplicación se ha eliminado de Apple AppStore y Android PlayStore.

@@ -30,7 +30,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
 
 -->
 
-A continuación se muestra la lista de las API facturables de JEE. Buscar la lista de [API facturables para AEM Forms en OSGi](/help/forms/using/transaction-reports-billable-apis.md).
+A continuación se muestra la lista de las API facturables de JEE. Encuentra la lista de [API facturables para AEM Forms en OSGi](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## API de servicios de documentos facturables {#billable-document-services-apis}
 
@@ -64,12 +64,12 @@ A continuación se muestra la lista de las API facturables de JEE. Buscar la lis
    <td>Conversión<br /> </td>
   </tr>
   <tr>
-   <td><a>ExportPDF2</a></td>
+   <td><a>EXPORTPDF2</a></td>
    <td><p>Exporta el PDF a los tipos de archivo compatibles.</p> </td>
    <td>Conversión<br /> </td>
   </tr>
   <tr>
-   <td><a>ExportPDF3</a></td>
+   <td><a>EXPORTPDF3</a></td>
    <td>Exporta el PDF a los tipos de archivo compatibles.</td>
    <td>Conversión<br /> </td>
   </tr>
@@ -101,7 +101,7 @@ A continuación se muestra la lista de las API facturables de JEE. Buscar la lis
    <td>Categoría del informe de transacción</td>
   </tr>
   <tr>
-   <td><a>Firmar/certificar</a><br /> </td>
+   <td><a>Firmar/Certificar</a><br /> </td>
    <td>Esta API le permite proteger su documento. Puede utilizar la API para firmar y certificar un documento de PDF.</td>
    <td>Conversión</td>
   </tr>
@@ -306,14 +306,14 @@ A continuación se muestra la lista de las API facturables de JEE. Buscar la lis
 </table>
 
 El uso de la API de invocación se cuenta como una transacción, cuando realiza una o más de las siguientes operaciones:
-1. Conversión de formatos que no son de PDF a formatos de PDF. Por ejemplo, la conversión de formato XDP a formato de PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. Conversión de formatos que no son de PDF a formatos de PDF. Por ejemplo, la conversión del formato XDP al formato de PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. Conversión de formato PDF a formato PDF/A.
 1. Conversión de formato PDF a formatos no PDF. Algunos ejemplos son la transformación de PDF a formato de imagen o la conversión de PDF a formato de texto.
 
 >[!NOTE]
 >
->* El API de invocación del servicio de ensamblador puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, la `invoke API` puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
->* Un solo documento de PDF producido mediante el servicio de ensamblador, como `invoke` y `invokeDDX`, puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de los datos suministrados <!--DDX--> código.
+>* El API de invocación del servicio de ensamblador puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, `invoke API` puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
+>* Un solo documento de PDF producido mediante un servicio de ensamblador como `invoke` y `invokeDDX` puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende del código <!--DDX--> proporcionado.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}

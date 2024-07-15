@@ -53,7 +53,7 @@ ht-degree: 1%
 
 ## Comparación de los servicios de OSGi {#comparison-of-osgi-services}
 
-**AEM Versiones anteriores de la**
+AEM **Versiones de la versión más antigua de la**
 
 Etiqueta: Soporte de Adobe Granite Closed User Group (CUG)
 
@@ -87,7 +87,7 @@ Servicio para configurar la lista de exclusión de principales que no deben vers
 
   >[!NOTE]
   > 
-  >Si la variable `CugExcludeImpl` no está configurado, el `CugConfiguration` vuelve al valor predeterminado.
+  >Si `CugExcludeImpl` no está configurado, `CugConfiguration` vuelve al valor predeterminado.
 
   Es posible conectar una implementación personalizada de CugExclude si hay necesidades especiales.
 

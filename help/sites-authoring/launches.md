@@ -35,7 +35,7 @@ También se puede realizar lo siguiente:
 * Se han creado lanzamientos para varias ramas de raíz. Si bien puede crear el lanzamiento para todo el sitio (y realizar los cambios allí), este método es poco práctico, ya que es necesario copiar todo el sitio. Cuando hay cientos o incluso miles de páginas implicadas, los requisitos del sistema y el rendimiento se ven afectados por la acción de copiar y, posteriormente, por las comparaciones necesarias para las tareas de promoción.
 * Cree lanzamientos anidados (un lanzamiento dentro de otro lanzamiento). Esto permite crear un lanzamiento a partir de uno existente, de modo que los autores puedan aprovechar los cambios ya realizados, en lugar de tener que realizar los mismos cambios varias veces para cada lanzamiento.
 
-En esta sección se describe cómo crear, editar y promocionar (y, si es necesario) [eliminar](/help/sites-authoring/launches-creating.md#deleting-a-launch)) páginas de lanzamiento desde la consola Sitios o [la consola Lanzamientos](#the-launches-console):
+En esta sección se describe cómo crear, editar y promocionar (y, si es necesario, [eliminar](/help/sites-authoring/launches-creating.md#deleting-a-launch)) páginas de lanzamiento desde la consola Sitios o [la consola Lanzamientos](#the-launches-console):
 
 * [Creación de lanzamientos](/help/sites-authoring/launches-creating.md)
 * [Edición de lanzamientos](/help/sites-authoring/launches-editing.md)
@@ -54,7 +54,7 @@ Los lanzamientos le permiten:
 
       * Las páginas de origen puedan obtenerse de varias ramas (separadas).
 
-  ![Información general sobre las acciones de lanzamiento](assets/chlimage_1-111.png)
+  ![Información general sobre las acciones de inicio](assets/chlimage_1-111.png)
 
 * Edite la configuración de lanzamiento:
 
@@ -74,7 +74,7 @@ Los lanzamientos le permiten:
       * El campo **Fecha**(**Live**) **de lanzamiento**: esto se puede establecer al crear o editar un lanzamiento. 
 
       * El indicador **Producción lista**: esto solo se puede establecer al editar un lanzamiento.
-      * Si la variable **Producción lista** Si se establece el indicador, el lanzamiento se promocionará automáticamente a las páginas de producción del especificado **Launch**(**Activo**) **fecha**. Después de la promoción, las páginas de producción se publican automáticamente.\
+      * Si se establece el indicador **Listo para la producción**, el lanzamiento se promocionará automáticamente a las páginas de producción en el **Lanzamiento**(**Activo**) **fecha** especificado. Después de la promoción, las páginas de producción se publican automáticamente.\
         Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
 
 * Actualice las páginas de origen y de lanzamiento en paralelo:
@@ -82,7 +82,7 @@ Los lanzamientos le permiten:
    * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 
    * Los cambios en la copia de lanzamiento se pueden realizar sin interrumpir las actualizaciones automáticas o las páginas de origen. 
 
-  ![Resumen de las actualizaciones](assets/chlimage_1-112.png)
+  ![Información general sobre actualizaciones](assets/chlimage_1-112.png)
 
 * [Crear un lanzamiento anidado](/help/sites-authoring/launches-creating.md#creating-a-nested-launch): un lanzamiento dentro de un lanzamiento:
 
@@ -120,10 +120,10 @@ La consola Lanzamientos proporciona una descripción general de los lanzamientos
 
 1. En la consola **Sites**, vaya al origen de los lanzamientos.
 1. Abra el carril **Referencias** y seleccione la página de origen.
-1. Seleccionar **Lanzamientos**, se enumerarán los lanzamientos existentes:
+1. Seleccione **Lanzamientos**, se enumerarán los lanzamientos existentes:
 
-   ![Pestaña Referencia: Lanzamientos](assets/screen-shot_2019-03-05at121901-1.png)
+   ![Pestaña Referencia: lanzamientos](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Haga clic en el lanzamiento adecuado. Se mostrará una lista de acciones posibles:
 
-   ![Seleccione iniciar para mostrar las posibles acciones](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Seleccionar lanzamiento para mostrar posibles acciones](assets/screen-shot_2019-03-05at121952-1.png)

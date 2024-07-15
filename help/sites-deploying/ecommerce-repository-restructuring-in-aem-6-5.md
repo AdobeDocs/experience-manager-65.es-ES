@@ -1,5 +1,5 @@
 ---
-title: AEM Reestructuración del repositorio de comercio electrónico en la versión 6.5 de
+title: Reestructuración de repositorios de E-Commerce AEM en la versión 6.5 de la
 description: AEM Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorios en la versión 6.5 de la versión para E-Commerce, en la versión 6.5 de la aplicación.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -15,9 +15,9 @@ ht-degree: 2%
 
 ---
 
-# AEM Reestructuración del repositorio de comercio electrónico en la versión 6.5 de{#e-commerce-repository-restructuring-in-aem}
+# Reestructuración de repositorios de E-Commerce AEM en la versión 6.5 de la{#e-commerce-repository-restructuring-in-aem}
 
-Como se describe en el elemento principal [AEM Reestructuración de repositorios en 6.5](/help/sites-deploying/repository-restructuring.md) AEM AEM Los clientes que actualicen a la versión 6.5 de la página de, deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de E-Commerce de la solución de. AEM Algunos cambios requieren un esfuerzo durante el proceso de actualización de la versión 6.5 de la, mientras que otros se pueden aplazar hasta una actualización futura.
+AEM AEM AEM Como se describe en la página principal [Reestructuración del repositorio en la página de 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a la versión 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de E-Commerce en la que se encuentran los. AEM Algunos cambios requieren un esfuerzo durante el proceso de actualización de la versión 6.5 de la, mientras que otros se pueden aplazar hasta una actualización futura.
 
 ## Con actualización a 6.5 {#with-upgrade}
 
@@ -35,7 +35,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>Puede usar un <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migración diferida</a> tarea para migrar datos de E-Commerce.</p> <p>Realiza los siguientes pasos:</p>
+   <td><p>Puede utilizar una tarea <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migración diferida</a> para migrar datos de E-Commerce.</p> <p>Realiza los siguientes pasos:</p>
     <ul>
      <li>ajusta las referencias a la ubicación antigua para que apunten a la nueva ubicación</li>
      <li>mueve contenido de la ubicación antigua a la nueva</li>

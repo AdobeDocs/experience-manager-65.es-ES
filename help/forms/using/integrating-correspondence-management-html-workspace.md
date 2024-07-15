@@ -101,7 +101,7 @@ Siga estos pasos para crear una tarea para procesar y enviar una carta en AEM W
    ```
 
    [Obtener archivo](assets/dscsample.zip)
-Descargar DSC: hay disponible un DSC de ejemplo en el archivo DSCSample.zip adjunto anteriormente. Descargue y descomprima el archivo DSCSample.zip. Antes de utilizar el servicio DSC, debe configurarlo. Consulte [Configuración del servicio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+Descargar DSC: hay disponible un DSC de ejemplo en el archivo DSCSample.zip adjunto anteriormente. Descargue y descomprima el archivo DSCSample.zip. Antes de utilizar el servicio DSC, debe configurarlo. Consulte [Configurar el servicio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    En el cuadro de diálogo Definir actividad, seleccione la actividad adecuada, como getLetterInstanceInfo, y haga clic en **Aceptar**.
 

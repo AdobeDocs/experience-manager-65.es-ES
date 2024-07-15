@@ -38,7 +38,7 @@ Por último, los administradores publican de forma estratégica el contenido act
 
 ## El mosaico Administrar aplicación {#the-manage-app-tile}
 
-El **Administrar aplicación** El mosaico muestra la información de la aplicación disponible:
+El mosaico **Administrar aplicación** muestra la información disponible de la aplicación:
 
 * Título
 * Descripción
@@ -50,7 +50,7 @@ El **Administrar aplicación** El mosaico muestra la información de la aplicaci
 
 ## El mosaico Administrar conexión {#the-manage-connection-tile}
 
-El **Administrar conexión** el mosaico muestra la información de conexión de AEM Mobile On-demand Services:
+El mosaico **Administrar conexión** muestra la información de conexión de AEM Mobile On-demand Services:
 
 * Nombre de configuración de nube
 * Nombre e ID del proyecto
@@ -76,16 +76,16 @@ Cada mosaico se puede expandir para proporcionar una vista de lista más detalla
 
 ### El mosaico Administrar titulares {#the-manage-banners-tile}
 
-El **Administrar titulares** El mosaico permite administrar el contenido de un titular. Se muestra la siguiente información para un titular:
+El mosaico **Administrar titulares** le permite administrar el contenido de un titular. Se muestra la siguiente información para un titular:
 
 * image
-* **TÍTULO**: nombre del titular
-* **MODIFICADO** AEM : última modificación en el
-* **CARGADO** AEM : última carga desde el
-* **PUBLICADO** AEM : formulario de solicitud de la última publicación
-* **ORIGEN** AEM : origen (local o remoto de la fuente de datos de Mobile On-Demand)
+* **TITLE**: nombre del titular
+* AEM **MODIFICADO**: modificado por última vez en el año de
+* AEM **CARGADO**: subido por última vez desde el servidor de correo de
+* AEM **PUBLICADO**: formulario de solicitud de última publicación
+* **SOURCE AEM**: origen (local o remoto desde Mobile On-Demand):
 
-La siguiente imagen muestra el **Administrar titulares** mosaico en el panel de aplicaciones de AEM Mobile:
+La siguiente imagen muestra el mosaico **Administrar titulares** en el panel de aplicaciones de AEM Mobile:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -95,16 +95,16 @@ La siguiente imagen muestra el **Administrar titulares** mosaico en el panel de 
 
 ### El mosaico Administrar artículos {#the-manage-articles-tile}
 
-El **Administrar artículos** El mosaico permite administrar el contenido de un artículo. Se muestra la siguiente información para un artículo:
+El mosaico **Administrar artículos** le permite administrar el contenido de un artículo. Se muestra la siguiente información para un artículo:
 
 * image
-* **TÍTULO**: nombre del artículo
-* **MODIFICADO** AEM : última modificación en el
-* **CARGADO** AEM : última carga desde el
-* **PUBLICADO** AEM : formulario de solicitud de la última publicación
-* **ORIGEN** AEM : origen (local o remoto de la fuente de datos de Mobile On-Demand)
+* **TITLE**: nombre del artículo
+* AEM **MODIFICADO**: modificado por última vez en el año de
+* AEM **CARGADO**: subido por última vez desde el servidor de correo de
+* AEM **PUBLICADO**: formulario de solicitud de última publicación
+* **SOURCE AEM**: origen (local o remoto de la red de distribución local o de la red de distribución local)
 
-La siguiente imagen muestra el **Administrar artículos** mosaico en el panel de aplicaciones de AEM Mobile:
+La siguiente imagen muestra el mosaico **Administrar artículos** en el panel de aplicaciones de AEM Mobile:
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -114,16 +114,16 @@ La siguiente imagen muestra el **Administrar artículos** mosaico en el panel de
 
 ### El mosaico Administrar colecciones {#the-manage-collections-tile}
 
-El **Administrar colecciones** El mosaico permite administrar el contenido de una colección. Se muestra la siguiente información para una colección:
+El mosaico **Administrar colecciones** le permite administrar el contenido de una colección. Se muestra la siguiente información para una colección:
 
 * image
-* **TÍTULO**: nombre de la colección
-* **MODIFICADO** AEM : última modificación en el
-* **CARGADO** AEM : última carga desde el
-* **PUBLICADO** AEM : formulario de solicitud de la última publicación
-* **ORIGEN** AEM : origen (local o remoto de la fuente de datos de Mobile On-Demand)
+* **TITLE**: nombre de la colección
+* AEM **MODIFICADO**: modificado por última vez en el año de
+* AEM **CARGADO**: subido por última vez desde el servidor de correo de
+* AEM **PUBLICADO**: formulario de solicitud de última publicación
+* **SOURCE AEM**: origen (local o remoto de la red de distribución local o de la red de distribución local)
 
-La siguiente imagen muestra el **Administrar colecciones** mosaico en el panel de aplicaciones de AEM Mobile:
+La siguiente imagen muestra el mosaico **Administrar colecciones** en el panel de aplicaciones de AEM Mobile:
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 

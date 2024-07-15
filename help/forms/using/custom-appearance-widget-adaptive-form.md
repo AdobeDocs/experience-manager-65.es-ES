@@ -20,7 +20,7 @@ ht-degree: 96%
 
 ## Introducción {#introduction}
 
-Los formularios adaptables utilizan el [marco de apariencia](/help/forms/using/introduction-widgets.md) para ayudarle a crear apariencias personalizadas para campos de formularios adaptables y proporcionar una experiencia de usuario diferente. Por ejemplo, reemplace los botones de radio y las casillas de verificación por botones de alternancia o utilice complementos jQuery personalizados para restringir las entradas de los usuarios en campos como números de teléfono o ID de correo electrónico.
+Los formularios adaptables utilizan el [marco de trabajo de apariencia](/help/forms/using/introduction-widgets.md) para ayudarle a crear apariencias personalizadas para campos de formularios adaptables y proporcionar una experiencia de usuario diferente. Por ejemplo, reemplace los botones de radio y las casillas de verificación por botones de alternancia o utilice complementos jQuery personalizados para restringir las entradas de los usuarios en campos como números de teléfono o ID de correo electrónico.
 
 En este documento se explica cómo utilizar un complemento jQuery para crear estas experiencias alternativas para campos de formularios adaptables. Además, muestra un ejemplo para crear una apariencia personalizada para que el componente de campo numérico aparezca como un salto numérico o un control deslizante.
 

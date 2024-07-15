@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->[Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) Se recomiendan para crear todos los fragmentos de contenido nuevos.
+>Se recomiendan [modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-models.md) para crear todos los fragmentos de contenido nuevos.
 >
 >Los modelos de fragmento de contenido se utilizan para todos los ejemplos en WKND.
 
@@ -49,15 +49,15 @@ El orden de prioridad es (en orden descendente) `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
->Usted ***debe*** no cambie nada en el `/libs` ruta.
+>Usted ***no debe*** cambiar nada en la ruta de acceso `/libs`.
 >
->Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+>Esto se debe a que el contenido de `/libs` se sobrescribirá la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de características).
 >
 >El método recomendado para la configuración y otros cambios es:
 >
 >1. Vuelva a crear el elemento necesario (es decir, tal como existe en `/libs`) en `/apps`
 >
->1. Realice cualquier cambio en `/apps`
+>1. Realizar cambios en `/apps`
 >
 
 La estructura básica de una plantilla se encuentra debajo de:
@@ -121,12 +121,12 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>obligatorio<br /> </p> </td>
-     <td>El título de la plantilla (mostrado en la <strong>Crear fragmento</strong> asistente).</td>
+     <td>El título de la plantilla (se muestra en el asistente <strong>Crear fragmento</strong>).</td>
     </tr>
     <tr>
      <td><code>jcr:description</code></td>
      <td><p><code>String</code></p> <p>opcional</p> </td>
-     <td>Un texto que describe el propósito de la plantilla (mostrado en el <strong>Crear fragmento</strong> asistente).</td>
+     <td>Un texto que describe el propósito de la plantilla (mostrado en el asistente <strong>Crear fragmento</strong>).</td>
     </tr>
     <tr>
      <td><code>initialAssociatedContent</code></td>
@@ -158,7 +158,7 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>Requerido</p> </td>
-     <td><p>Nodo que contiene la definición de los elementos del fragmento de contenido. Es obligatorio y debe contener al menos un nodo secundario para <strong>Principal</strong> , pero puede contener [1..n] nodos secundarios.</p> <p>Cuando se utiliza la plantilla, la subrama de elementos se copia en la subrama del modelo del fragmento.</p> <p>El primer elemento (tal como se ve en el CRXDE Lite) se considera automáticamente como el <i>main</i> elemento; el nombre del nodo es irrelevante y el nodo en sí no tiene una relevancia especial, aparte del hecho de que está representado por el recurso principal; los demás elementos se gestionan como subrecursos.</p> </td>
+     <td><p>Nodo que contiene la definición de los elementos del fragmento de contenido. Es obligatorio y debe contener al menos un nodo secundario para el elemento <strong>Main</strong>, pero puede contener [1..n] nodos secundarios.</p> <p>Cuando se utiliza la plantilla, la subrama de elementos se copia en la subrama del modelo del fragmento.</p> <p>El primer elemento (tal como se ve en el CRXDE Lite) se considera automáticamente como el elemento <i>main</i>; el nombre del nodo es irrelevante y el nodo en sí no tiene una relevancia especial, aparte del hecho de que está representado por el recurso principal; los demás elementos se gestionan como subrecursos.</p> </td>
     </tr>
    </tbody>
   </table>
@@ -185,12 +185,12 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <td><code>defaultContent</code></td>
      <td><p><code>String</code></p> <p>opcional</p> <p>predeterminado: ""</p> </td>
-     <td>Contenido inicial del elemento; solo se utiliza si <code>precreateElements</code><i> = </i><code>true</code></td>
+     <td>Contenido inicial del elemento; sólo se usa si <code>precreateElements</code><i> = </i><code>true</code></td>
     </tr>
     <tr>
      <td><code>initialContentType</code></td>
      <td><p><code>String</code></p> <p>opcional</p> <p>valor predeterminado: <code>text/html</code></p> </td>
-     <td><p>Tipo de contenido inicial del elemento; solo se utiliza si <code>precreateElements</code><i> = </i><code>true</code>; compatible actualmente:</p>
+     <td><p>Tipo de contenido inicial del elemento; sólo se usa si <code>precreateElements</code><i> = </i><code>true</code>; actualmente se admite:</p>
       <ul>
        <li><code>text/html</code></li>
        <li><code>text/plain</code></li>
@@ -234,18 +234,18 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obligatorio si hay un nodo de variación</p> </td>
-     <td><p>Define una variación inicial.<br /> La variación se agrega a todos los elementos del fragmento de contenido de forma predeterminada.</p> <p>La variación tendrá el mismo contenido inicial que el elemento respectivo (consulte <code class="code">defaultContent/
+     <td><p>Define una variación inicial.<br /> La variación se agrega de manera predeterminada a todos los elementos del fragmento de contenido.</p> <p>La variación tendrá el mismo contenido inicial que el elemento respectivo (consulte <code class="code">defaultContent/
        initialContentType</code>)</p> </td>
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>Requerido</p> </td>
-     <td>El título de la variación (mostrado en el del editor de fragmentos) <strong>Variación</strong> pestaña (carril izquierdo).</td>
+     <td>El título de la variación (mostrado en la pestaña <strong>Variación</strong> del editor del fragmento (carril izquierdo)).</td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
      <td><p><code>String</code></p> <p>opcional</p> <p>predeterminado: ""</p> </td>
-     <td>Un texto que proporciona una descripción de la variación <span>(mostrado en el del editor de fragmentos) <strong>Variación</strong> pestaña (carril izquierdo).</code></td>
+     <td>Un texto que proporciona una descripción de la variación <span>(mostrada en la ficha <strong>Variación</strong> del editor del fragmento (carril izquierdo)).</code></td>
     </tr>
    </tbody>
   </table>

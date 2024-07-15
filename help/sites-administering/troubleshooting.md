@@ -25,8 +25,8 @@ Esta sección incluye información detallada sobre los registros disponibles par
 >
 >Para obtener más información sobre los registros, consulte:
 >
->* [AEM Mantenimiento del registro de auditoría en el](/help/sites-administering/operations-audit-log.md)
->* [Trabajar con registros de auditoría y archivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
+>* AEM [Mantenimiento del registro de auditoría en el](/help/sites-administering/operations-audit-log.md)
+>* [Trabajando con registros de auditoría y archivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 CRX registra los registros detallados. Después de desempaquetar e iniciar Quickstart, puede encontrar registros en las siguientes ubicaciones:
 
@@ -38,7 +38,7 @@ CRX registra los registros detallados. Después de desempaquetar e iniciar Quick
 
 El nivel de registro predeterminado es INFO, es decir, los mensajes de DEPURACIÓN no se registran.
 
-Para activar el nivel de registro DEBUG, utilice el explorador CRX para establecer la variable
+Para activar el nivel de registro DEBUG, utilice el explorador de CRX para establecer el
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
@@ -57,7 +57,7 @@ Los niveles de registro son los siguientes:
 | 0 | Error grave | La acción ha fallado y el instalador no puede continuar. |
 |---|---|---|
 | 1 | Error | La acción ha fallado. La instalación continúa, pero una parte de CRX no se instaló correctamente y no funcionará. |
-| 2 | Advertencia | La acción se realizó correctamente pero se encontraron problemas. CRX puede funcionar o no correctamente. |
+| 2 | Advertencia | La acción se realizó correctamente pero se encontraron problemas. Es posible que CRX funcione o no correctamente. |
 | 3 | Información | La acción se ha realizado correctamente. |
 
 ## Opción detallada utilizada para la resolución de problemas {#verbose-option-used-for-troubleshooting}

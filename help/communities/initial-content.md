@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Contenido inicial de zona protegida {#initial-sandbox-content}
 
-En esta sección, cree las siguientes páginas, que utilizan la variable [plantilla de página](initial-app.md#createthepagetemplate):
+En esta sección, creará las siguientes páginas, todas las cuales utilizan la [plantilla de página](initial-app.md#createthepagetemplate):
 
 * Sitio de zona protegida de SCF, que redirige a la versión en inglés de la página principal.
 
@@ -30,45 +30,45 @@ Este tutorial no profundiza en [copias de idioma](../../help/sites-administering
 
 ## Crear primeras páginas {#create-first-pages}
 
-Ahora que hay un [plantilla de página](initial-app.md#createthepagetemplate), puede establecer la página raíz del sitio web en el directorio /content.
+Ahora que hay una [plantilla de página](initial-app.md#createthepagetemplate), puede establecer la página raíz del sitio web en el directorio /content.
 
 1. Actualmente, la IU estándar proporciona modelos para la creación de sitios. Como este tutorial crea un sitio simple, la IU clásica resulta útil.
 
-   Para cambiar a la IU clásica, seleccione navegación global y pase el ratón sobre la parte derecha del icono Proyectos. Seleccione el *Cambiar a IU clásica* icono que aparece:
+   Para cambiar a la IU clásica, seleccione navegación global y pase el ratón sobre la parte derecha del icono Proyectos. Seleccione el icono *Cambiar a la IU clásica* que aparece:
 
-   ![classic-ui](assets/classic-ui.png)
+   ![iu clásica](assets/classic-ui.png)
 
-   La capacidad para cambiar a la IU clásica debe ser [activado por un administrador](../../help/sites-administering/enable-classic-ui.md).
+   Un administrador debe [habilitar la capacidad para cambiar a la IU clásica](../../help/sites-administering/enable-classic-ui.md).
 
-1. Desde el [Página de bienvenida de IU clásica](http://localhost:4502/welcome.html), seleccione **[!UICONTROL Sitios web]**.
+1. En la [página de bienvenida clásica de la interfaz de usuario](http://localhost:4502/welcome.html), seleccione **[!UICONTROL Sitios web]**.
 
    ![classic-ui-website](assets/classic-ui-website.png)
 
-   También puede acceder a la IU clásica de los sitios web directamente desde el vínculo a [/siteadmin.](http://localhost:4502/siteadmin)
+   También puede obtener acceso directo a la IU clásica de los sitios web si navega a [/siteadmin.](http://localhost:4502/siteadmin)
 
-1. En el panel del explorador, seleccione **[!UICONTROL Sitios web]** y, en la barra de herramientas, seleccione **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**.
+1. En el panel del explorador, seleccione **[!UICONTROL Sitios web]** y, a continuación, en la barra de herramientas, seleccione **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**.
 
-   En el **[!UICONTROL Crear página]** , introduzca lo siguiente:
+   En el cuadro de diálogo **[!UICONTROL Crear página]**, escriba lo siguiente:
 
    * Título: `SCF Sandbox Site`
    * Nombre: `an-scf-sandbox`
-   * Seleccionar **[!UICONTROL Una plantilla de reproducción de zona protegida SCF]**
+   * Seleccione **[!UICONTROL Una plantilla de reproducción de espacio aislado de SCF]**
    * Haga clic en **[!UICONTROL Crear]**
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
-1. En el panel del explorador, seleccione la página que ha creado, `/Websites/SCF Sandbox Site`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**:
+1. En el panel del explorador, seleccione la página que creó, `/Websites/SCF Sandbox Site`, y haga clic en **[!UICONTROL Nueva]** > **[!UICONTROL Nueva página]**:
 
    * Título: `SCF Sandbox`
    * Nombre: `en`
-   * Seleccionar **[!UICONTROL Una plantilla de reproducción de zona protegida SCF]**
+   * Seleccione **[!UICONTROL Una plantilla de reproducción de espacio aislado de SCF]**
    * Haga clic en **[!UICONTROL Crear]**
 
-1. En el panel del explorador, seleccione la página que ha creado, `/Websites/SCF Sandbox Site/SCF Sandbox`y haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**
+1. En el panel del explorador, seleccione la página que creó, `/Websites/SCF Sandbox Site/SCF Sandbox`, y haga clic en **[!UICONTROL Nueva]** > **[!UICONTROL Nueva página]**
 
    * Título: `SCF Play`
    * Nombre: `play`
-   * Seleccionar **[!UICONTROL Una plantilla de reproducción de zona protegida SCF]**
+   * Seleccione **[!UICONTROL Una plantilla de reproducción de espacio aislado de SCF]**
    * Haga clic en **[!UICONTROL Crear]**
 
 1. Así es como aparece ahora el sitio web en la consola Sitios web. Observe que las páginas secundarias del elemento seleccionado en el panel del explorador se muestran en el panel derecho donde se pueden administrar.
@@ -81,11 +81,11 @@ Ahora que hay un [plantilla de página](initial-app.md#createthepagetemplate), p
 
 ## Añadir la ruta de diseño {#add-the-design-path}
 
-Cuándo ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` se ha creado utilizando la sección diseños de la consola Herramientas, la propiedad &quot;
+Cuando se creó ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` con la sección de diseños de la consola Herramientas, la propiedad &quot;
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-Se definió, lo que proporciona la capacidad opcional de hacer referencia a los recursos de diseño en una secuencia de comandos utilizando `currentDesign.getPath()`. Por ejemplo
+Se definió, lo que proporciona la capacidad opcional de hacer referencia a los recursos de diseño en un script con `currentDesign.getPath()`. Por ejemplo
 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
@@ -94,16 +94,16 @@ Se definió, lo que proporciona la capacidad opcional de hacer referencia a los 
    * Tipo: `String`
    * Valor: `/etc/designs/an-scf-sandbox`
 
-* Haga clic en el icono verde `[+] Add`
+* Haga clic en el elemento verde `[+] Add`
 
 El repositorio debe aparecer de la siguiente manera:
 
 ![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
-* Clic **[!UICONTROL Guardar todo]**
+* Haga clic en **[!UICONTROL Guardar todo]**
 
 Si hay algún problema al guardar la configuración, vuelva a iniciar sesión y configure de nuevo.
 
 >[!NOTE]
 >
->El uso de `cq:designPath` es opcional y no está relacionado con el [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que son necesarios, ya que los componentes de SCF utilizan [clientlibs](client-customize.md#clientlibs-for-scf) para administrar su JS y CSS.
+>El uso de `cq:designPath` es opcional y no está relacionado con el [uso de clientlibs](develop-app.md#includeclientlibsintemplate), que son necesarios ya que los componentes de SCF utilizan [clientlibs](client-customize.md#clientlibs-for-scf) para administrar su JS y CSS.

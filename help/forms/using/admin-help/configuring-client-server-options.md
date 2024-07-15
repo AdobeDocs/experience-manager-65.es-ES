@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Ajustes de configuración del servidor {#server-configuration-settings}
 
-**URL básica:** La URL base de Document Security, que contiene el nombre y el puerto del servidor. La información adjunta a la base crea direcciones URL de conexión. Por ejemplo, /edc/Main.do se anexa para tener acceso a las páginas web. Los usuarios también responden a las invitaciones de registro de usuarios externos a través de esta dirección URL.
+**Dirección URL base:** Dirección URL base de Document Security que contiene el nombre y el puerto del servidor. La información adjunta a la base crea direcciones URL de conexión. Por ejemplo, /edc/Main.do se anexa para tener acceso a las páginas web. Los usuarios también responden a las invitaciones de registro de usuarios externos a través de esta dirección URL.
 
 Si utiliza IPv6, escriba la dirección URL base como nombre del equipo o el nombre DNS. Si utiliza una dirección IP numérica, Acrobat no podrá abrir los archivos protegidos por directivas. Además, utilice una URL HTTP segura (HTTPS) para su servidor.
 
@@ -31,17 +31,17 @@ Si utiliza IPv6, escriba la dirección URL base como nombre del equipo o el nomb
 >
 >La dirección URL base está incrustada en archivos protegidos por directivas. Las aplicaciones cliente utilizan la dirección URL base para volver a conectarse al servidor. Los archivos protegidos seguirán conteniendo la dirección URL base, incluso si se cambia más adelante. Si cambia la dirección URL base, la información de configuración debe actualizarse para todos los clientes que se conectan.
 
-**Período de concesión sin conexión predeterminado:** Período de tiempo predeterminado durante el cual un usuario puede utilizar un documento protegido sin conexión. Esta configuración determina el valor inicial de la configuración Período de concesión sin conexión automática al crear una directiva. (Consulte Creación y edición de directivas). Cuando caduca el período de concesión, el destinatario debe sincronizar de nuevo el documento para seguir utilizándolo.
+**Período de concesión sin conexión predeterminado:** Período de tiempo predeterminado que un usuario puede utilizar un documento protegido sin conexión. Esta configuración determina el valor inicial de la configuración Período de concesión sin conexión automática al crear una directiva. (Consulte Creación y edición de directivas). Cuando caduca el período de concesión, el destinatario debe sincronizar de nuevo el documento para seguir utilizándolo.
 
-Para ver cómo funciona la concesión y sincronización sin conexión, consulte [Introducción a la configuración de la concesión y sincronización sin conexión](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
+Para ver cómo funciona la concesión y sincronización sin conexión, consulte [Manual sobre la configuración de la concesión y sincronización sin conexión](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
 
-**Período de sincronización sin conexión predeterminado:** El tiempo máximo que se puede utilizar un documento sin conexión desde que se protegió inicialmente.
+**Período de sincronización sin conexión predeterminado:** Tiempo máximo desde el que se puede utilizar cualquier documento sin conexión cuando se protege inicialmente.
 
-**Tiempo de espera de sesión de cliente:** El tiempo, en minutos, después del cual Document Security se desconecta si un usuario que ha iniciado sesión a través de una aplicación cliente no interactúa con Document Security.
+**Tiempo de espera de sesión de cliente:** Período de tiempo, en minutos, tras el cual Document Security se desconecta si un usuario que ha iniciado sesión a través de una aplicación cliente no interactúa con Document Security.
 
 **Permitir el acceso de usuarios anónimos:** Seleccione esta opción para habilitar la capacidad de crear directivas compartidas y personales que permitan a los usuarios anónimos abrir documentos protegidos por directivas. (Los usuarios que no tengan cuentas de pueden acceder al documento, pero no pueden iniciar sesión en Document Security ni utilizar otros documentos protegidos por directivas).
 
-**Deshabilitar el acceso a los clientes de la versión 7:** Especifica si los usuarios pueden utilizar Acrobat o Reader 7.0 para conectarse al servidor. Cuando se selecciona esta opción, los usuarios deben utilizar Acrobat o Reader 8.0 y versiones posteriores para completar las operaciones de seguridad de los documentos en los documentos de PDF. Si las directivas requieren que Acrobat o Reader 8.0 y posteriores se ejecuten en modo certificado al abrir documentos protegidos por directivas, debe deshabilitar el acceso a Acrobat o Reader 7. (Consulte Especificar los permisos de documento para usuarios y grupos).
+**Deshabilitar el acceso a los clientes de la versión 7:** Especifica si los usuarios pueden usar Acrobat o Reader 7.0 para conectarse al servidor. Cuando se selecciona esta opción, los usuarios deben utilizar Acrobat o Reader 8.0 y versiones posteriores para completar las operaciones de seguridad de los documentos en los documentos de PDF. Si las directivas requieren que Acrobat o Reader 8.0 y posteriores se ejecuten en modo certificado al abrir documentos protegidos por directivas, debe deshabilitar el acceso a Acrobat o Reader 7. (Consulte Especificar los permisos de documento para usuarios y grupos).
 
 **Permitir acceso sin conexión por documento** Seleccione esta opción para especificar el acceso sin conexión por documento. Si esta opción está habilitada, el usuario sólo tendrá acceso sin conexión a los documentos que haya abierto en línea al menos una vez.
 
@@ -51,15 +51,15 @@ Para ver cómo funciona la concesión y sincronización sin conexión, consulte 
 
 **Permitir autenticación de certificado de cliente:** Seleccione esta opción para permitir que las aplicaciones cliente utilicen autenticación de certificado al conectarse al servidor.
 
-**Permitir autenticación extendida** Seleccione para habilitar la autenticación extendida y luego introduzca la URL de aterrizaje de autenticación extendida.
+**Permitir autenticación extendida** Seleccione esta opción para habilitar la autenticación extendida y, a continuación, escriba la dirección URL de aterrizaje de autenticación extendida.
 
-Al seleccionar esta opción, las aplicaciones cliente pueden utilizar la autenticación extendida. La autenticación extendida proporciona procesos de autenticación personalizados y diferentes opciones de autenticación configuradas en el servidor de AEM Forms. AEM Por ejemplo, ahora los usuarios pueden experimentar la autenticación basada en SAML en lugar de utilizar el nombre de usuario y la contraseña de los formularios de Acrobat y el cliente Reader en los formularios de los formularios de los formularios. De forma predeterminada, la dirección URL de aterrizaje contiene *localhost* como nombre del servidor. Sustituya el nombre del servidor por un nombre de host completo. El nombre de host de la dirección URL de aterrizaje se rellena automáticamente desde la dirección URL base si la autenticación extendida aún no está habilitada. Consulte [Agregar el proveedor de autenticación extendida](configuring-client-server-options.md#add-the-extended-authentication-provider).
+Al seleccionar esta opción, las aplicaciones cliente pueden utilizar la autenticación extendida. La autenticación extendida proporciona procesos de autenticación personalizados y diferentes opciones de autenticación configuradas en el servidor de AEM Forms. AEM Por ejemplo, ahora los usuarios pueden experimentar la autenticación basada en SAML en lugar de utilizar el nombre de usuario y la contraseña de los formularios de Acrobat y el cliente Reader en los formularios de los formularios de los formularios. De manera predeterminada, la dirección URL de aterrizaje contiene *localhost* como nombre de servidor. Sustituya el nombre del servidor por un nombre de host completo. El nombre de host de la dirección URL de aterrizaje se rellena automáticamente desde la dirección URL base si la autenticación extendida aún no está habilitada. Consulte [Agregar el proveedor de autenticación extendida](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
-***nota **: la autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posteriores.*
+***nota **: La autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posterior.*
 
-**Anchura de control de HTML preferida para la autenticación extendida** Especifique la anchura del cuadro de diálogo de autenticación extendida que se abre en Acrobat para introducir las credenciales de usuario.
+**Ancho de control de HTML preferido para la autenticación extendida** Especifique el ancho del cuadro de diálogo de autenticación extendida que se abre en Acrobat para introducir las credenciales de usuario.
 
-**Altura de control de HTML preferida para la autenticación extendida** Especifique la altura del cuadro de diálogo de autenticación extendida que se abre en Acrobat para introducir las credenciales de usuario.
+**Altura de control de HTML preferida para la autenticación extendida** Especifique la altura del cuadro de diálogo de autenticación extendida que se abre en Acrobat para introducir las credenciales del usuario.
 
 ***nota **: Los límites de anchura y altura de este cuadro de diálogo son los siguientes:*
 Anchura: mínima = 400, máxima = 900
@@ -84,7 +84,7 @@ La lista de usuarios y grupos visibles está visible para el coordinador de conj
 
 1. AEM Después de instalar y configurar el entorno de formularios de la con Document Security, configure todos los dominios adecuados en Administración de usuarios. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***nota **: la creación de dominios debe realizarse antes de poder crear cualquier directiva.*
+   ***nota **: la creación de dominios debe realizarse antes de poder crear directivas.*
 
 1. En la consola de administración, haga clic en Servicios > Administración de documentos > Directivas y, a continuación, haga clic en la pestaña Conjuntos de directivas.
 1. Seleccione Conjunto de directivas globales y, a continuación, haga clic en la ficha Usuarios y grupos visibles.
@@ -101,13 +101,13 @@ AEM Los formularios de datos proporcionan una configuración de ejemplo que pued
 >La autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posteriores.
 
 1. Obtenga el archivo WAR de muestra para implementarlo. Consulte la guía de instalación adecuada para su servidor de aplicaciones.
-1. Asegúrese de que el servidor de Forms tiene un nombre completo en lugar de direcciones IP como dirección URL base y que es una dirección URL HTTPS. Consulte [Ajustes de configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
-1. Habilite Autenticación extendida desde la página Configuración del servidor. Consulte [Ajustes de configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
-1. Añada las URL de redireccionamiento de SSO requeridas en el archivo de configuración de User Management. Consulte [Añadir URL de redireccionamiento de SSO para la autenticación extendida](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
+1. Asegúrese de que el servidor de Forms tiene un nombre completo en lugar de direcciones IP como dirección URL base y que es una dirección URL HTTPS. Consulte [Configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
+1. Habilite Autenticación extendida desde la página Configuración del servidor. Consulte [Configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
+1. Añada las URL de redireccionamiento de SSO requeridas en el archivo de configuración de User Management. Consulte [Agregar URL de redireccionamiento de SSO para la autenticación extendida](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
 ### Añadir URL de redireccionamiento de SSO para la autenticación extendida {#add-sso-redirect-urls-for-extended-authentication}
 
-Con la autenticación extendida habilitada, los usuarios que abren un documento protegido por una directiva en Acrobat XI o en el Reader XI obtienen un cuadro de diálogo para la autenticación. Este cuadro de diálogo carga la página del HTML que especificó como URL de aterrizaje de autenticación extendida en la configuración del servidor de Document Security. Consulte [Ajustes de configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
+Con la autenticación extendida habilitada, los usuarios que abren un documento protegido por una directiva en Acrobat XI o en el Reader XI obtienen un cuadro de diálogo para la autenticación. Este cuadro de diálogo carga la página del HTML que especificó como URL de aterrizaje de autenticación extendida en la configuración del servidor de Document Security. Consulte [Configuración del servidor](configuring-client-server-options.md#server-configuration-settings).
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Con la autenticación extendida habilitada, los usuarios que abren un documento 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Configuración > Importar y exportar archivos de configuración.
 1. Haga clic en Exportar y guarde el archivo de configuración en el disco.
 1. Abra el archivo en un editor y busque el nodo AllowedUrls.
-1. En el `AllowedUrls` , añada las líneas siguientes: `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
+1. En el nodo `AllowedUrls`, agregue las líneas siguientes: `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
    ```xml
    <entry key="sso-l" value="/ssoexample/login.jsp"/>
@@ -130,7 +130,7 @@ Con la autenticación extendida habilitada, los usuarios que abren un documento 
 
 Document Security permite utilizar documentos protegidos por directivas sin conexión sin conexión a Internet o a la red. Esta capacidad requiere que la directiva permita el acceso sin conexión, tal como se describe en [Especifique los permisos de documento para usuarios y grupos](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). Para que un documento que tenga una directiva de este tipo pueda utilizarse sin conexión, el destinatario debe abrir el documento mientras está en línea y habilitar el acceso sin conexión haciendo clic en Sí cuando se le solicite. También se puede solicitar al destinatario que autentique su identidad. A continuación, el destinatario puede utilizar los documentos sin conexión durante el período de concesión sin conexión especificado en la directiva.
 
-Cuando finaliza el período de concesión sin conexión, el destinatario debe volver a sincronizarse con Document Security abriendo un documento en línea o utilizando un comando de menú de extensiones de Acrobat o Acrobat Reader DC para sincronizar. (Consulte *Ayuda de Acrobat* o el adecuado *Ayuda de extensiones de Acrobat Reader DC*.)
+Cuando finaliza el período de concesión sin conexión, el destinatario debe volver a sincronizarse con Document Security abriendo un documento en línea o utilizando un comando de menú de extensiones de Acrobat o Acrobat Reader DC para sincronizar. (Consulte la *Ayuda de Acrobat* o la *Ayuda de las extensiones de Acrobat Reader DC* correspondiente).
 
 Dado que los documentos que permiten el acceso sin conexión requieren almacenar en caché el material clave en el equipo donde los archivos se almacenan sin conexión, el archivo puede verse potencialmente comprometido si un usuario no autorizado puede obtener el material clave. Para compensar esta posibilidad, se proporcionan opciones de sustitución de claves programadas y manuales que puede configurar para evitar que una persona no autorizada utilice la clave para acceder al documento.
 
@@ -146,7 +146,7 @@ Puede configurar un período de concesión sin conexión predeterminado. El per�
 
 ### Administración de rollovers de claves {#manage-key-rollovers}
 
-Document Security utiliza algoritmos de cifrado y licencias para proteger los documentos. Cuando cifra un documento, Document Security genera y administra una clave de descifrado denominada *DocKey* que pasa a la aplicación cliente. Si la directiva que protege un documento permite el acceso sin conexión, una clave sin conexión se denomina *clave principal* también se genera para cada usuario que tiene acceso sin conexión al documento.
+Document Security utiliza algoritmos de cifrado y licencias para proteger los documentos. Cuando cifra un documento, Document Security genera y administra una clave de descifrado denominada *DocKey* que pasa a la aplicación cliente. Si la directiva que protege un documento permite el acceso sin conexión, también se genera una clave sin conexión denominada *clave principal* para cada usuario que tenga acceso sin conexión al documento.
 
 >[!NOTE]
 >
@@ -160,7 +160,7 @@ Sin embargo, una sustitución de claves afecta a todas las claves principales, n
 
 En el ejemplo siguiente, Key1 es la carpeta de las dos claves principales y Key2 es la más reciente. Al hacer clic en el botón Claves de desplazamiento ahora la primera vez, Key1 deja de ser válida y se genera una clave principal válida más reciente (Key3). Los usuarios obtienen la clave 3 cuando se sincronizan con Document Security, normalmente abriendo un documento protegido en línea. Sin embargo, los usuarios no están obligados a sincronizar con Document Security hasta que alcancen el período máximo de concesión sin conexión especificado en una directiva. Después de la primera sustitución de claves, los usuarios que permanecen sin conexión pueden seguir abriendo documentos sin conexión, incluidos los protegidos por Key3, hasta que alcancen el período máximo de concesión sin conexión. Cuando haga clic en el botón Claves de rollover ahora por segunda vez, Key2 deja de ser válida y se crea Key4. Los usuarios que permanecen sin conexión durante las dos rollovers de claves no pueden abrir documentos protegidos con Key3 o Key4 hasta que se sincronizan con Document Security.
 
-**Cambio de la frecuencia de rollover de clave**
+**Cambiar la frecuencia de sustitución de claves**
 
 Por motivos de confidencialidad, cuando utiliza documentos sin conexión, Document Security proporciona una opción de sustitución automática de claves con un periodo de frecuencia predeterminado de 20 días. Puede cambiar la frecuencia de rollover; sin embargo, evite establecer un valor inferior a 14 días, ya que se puede impedir que las personas vean documentos sin conexión y el rendimiento del sistema puede verse afectado.
 
@@ -168,7 +168,7 @@ Por motivos de confidencialidad, cuando utiliza documentos sin conexión, Docume
 1. En el cuadro Frecuencia de rollover de clave, escriba el número de días para el período de rollover.
 1. Haga clic en Aceptar.
 
-**Invertir manualmente sobre las claves principales**
+**Redistribuir manualmente las claves principales**
 
 Para mantener la confidencialidad de los documentos sin conexión, puede pasar manualmente las claves principales. Es posible que necesite pasar manualmente una clave (por ejemplo, si alguien que la obtenga de un equipo en el que esté almacenada en caché la clave para habilitar el acceso sin conexión a un documento).
 
@@ -284,21 +284,21 @@ Puede habilitar y deshabilitar la auditoría de eventos y especificar los tipos 
 
 **Cerrar documento:** Un destinatario cierra un documento protegido por una directiva.
 
-**Imprimir Baja resolución** Un destinatario imprime un documento protegido por una directiva con la opción de baja resolución especificada.
+**Imprimir de baja resolución** Un destinatario imprime un documento protegido por una directiva con la opción de baja resolución especificada.
 
-**Imprimir Alta resolución:** Un destinatario imprime un documento protegido por una directiva con la opción de alta resolución especificada.
+**Imprimir alta resolución:** Un destinatario imprime un documento protegido por una directiva con la opción de alta resolución especificada.
 
-**Agregar anotación al documento:** Un destinatario agrega una anotación a un documento del PDF.
+**Agregar anotación al documento:** Un destinatario agrega una anotación a un documento de PDF.
 
-**Revocar documento:** Un usuario o administrador anula el acceso a un documento protegido por una directiva.
+**Revocar documento:** Un usuario o administrador revoca el acceso a un documento protegido por una directiva.
 
-**Anular revocación de documento:** Un usuario o administrador restablece el acceso a un documento protegido por una directiva.
+**Anular la revocación del documento:** Un usuario o administrador restablece el acceso a un documento protegido por una directiva.
 
-**Rellenado de formularios:** Un destinatario introduce información en un documento del PDF que es un formulario que se puede rellenar.
+**Relleno de formularios:** Un destinatario introduce información en un documento de PDF que es un formulario que se puede rellenar.
 
-**Directiva eliminada:** Un editor elimina una directiva de un documento para retirar las protecciones de seguridad.
+**Directiva eliminada:** Un editor quita una directiva de un documento para retirar las protecciones de seguridad.
 
-**Cambiar URL de revocación de documento:** Una llamada desde el nivel de API cambia la URL de revocación especificada para acceder a un nuevo documento que reemplaza a un documento revocado.
+**Cambiar URL de revocación de documento:** Una llamada desde el nivel de API cambia la URL de revocación especificada para obtener acceso a un nuevo documento que reemplaza a un documento revocado.
 
 **Modificar documento:** Un destinatario cambia el contenido de un documento protegido por una directiva.
 
@@ -308,11 +308,11 @@ Puede habilitar y deshabilitar la auditoría de eventos y especificar los tipos 
 
 **Cambiar directiva en el documento:** Un usuario o administrador cambia la directiva adjunta a un documento.
 
-**Publicar documento como:** Se registra en el servidor un nuevo documento cuyo nombre de documento y licencia son idénticos a los de un documento existente, y los documentos no tienen una relación principal-secundario. AEM Este evento se puede activar mediante el SDK de formularios de la.
+**Documento de Publish como:** Un nuevo documento cuyo documentName y licencia son idénticos a un documento existente está registrado en el servidor y los documentos no tienen una relación principal-secundario. AEM Este evento se puede activar mediante el SDK de formularios de la.
 
-**Iterar documento:** Se registra en el servidor un nuevo documento cuyo nombre de documento y licencia son idénticos a los de un documento existente, y los documentos tienen una relación principal-secundario. AEM Este evento se puede activar mediante el SDK de formularios de la.
+**Documento iterativo:** Un nuevo documento cuyo documentName y licencia son idénticos a un documento existente está registrado en el servidor, y los documentos tienen una relación principal-secundario. AEM Este evento se puede activar mediante el SDK de formularios de la.
 
-**Eventos de política**
+**Eventos de directiva**
 
 **Directiva creada:** Un usuario o administrador crea una directiva.
 
@@ -332,25 +332,26 @@ Puede habilitar y deshabilitar la auditoría de eventos y especificar los tipos 
 
 **Registrar usuario invitado:** Un usuario externo se registra con Document Security.
 
-**Inicio de sesión correcto:** Intentos de inicio de sesión correctos por parte de administradores o usuarios.
+**Inicio de sesión correcto:** intentos de inicio de sesión correctos de administradores o usuarios.
 
-**Usuarios invitados:** La seguridad de los documentos invita al usuario a registrarse.
+**Usuarios invitados:** Document Security invita a un usuario a registrarse.
 
-**Usuarios activados:** Los usuarios externos activan sus cuentas utilizando la dirección URL del correo electrónico de activación, o un administrador habilita una cuenta.
+**Usuarios activados:** Los usuarios externos activan sus cuentas mediante la dirección URL del correo electrónico de activación o un administrador habilita una cuenta.
 
-**Cambiar contraseña:** Los usuarios invitados cambian sus contraseñas o un administrador restablece una contraseña para un usuario local.
+**Cambiar contraseña:** Los usuarios invitados cambiarán sus contraseñas o un administrador restablecerá una contraseña para un usuario local.
 
-**Error de inicio de sesión:** Los administradores o usuarios no pueden iniciar sesión.
+**Error de inicio de sesión:** intentos de inicio de sesión erróneos por parte de administradores o usuarios.
 
 **Usuarios desactivados:** Un administrador deshabilita una cuenta de usuario local.
 
-**Actualización de perfil:** Los usuarios invitados cambian su nombre, nombre de la organización y contraseña.
+**Actualización de perfil:** Los usuarios invitados cambiaron su nombre, nombre de organización y contraseña.
 
 **Cuenta bloqueada:** Un administrador bloquea una cuenta.
 
-**Eventos del conjunto de directivas**
+**Eventos de conjunto de directivas**
 
-**Conjunto de directivas creado:** Un administrador o coordinador de conjuntos de directivas crea un conjunto de directivas.
+**Creado
+Conjunto de directivas:** Un administrador o coordinador de conjuntos de directivas crea un conjunto de directivas.
 
 **Conjunto de directivas eliminado:** Un administrador o coordinador de conjuntos de directivas elimina un conjunto de directivas.
 
@@ -358,21 +359,22 @@ Puede habilitar y deshabilitar la auditoría de eventos y especificar los tipos 
 
 **Eventos del sistema**
 
-**Sincronización de directorio completa:** Esta información no está disponible en la página Eventos. La información de sincronización de directorios actual, incluido el estado y la hora de sincronización actual de la última sincronización, se muestra en la página Administración de dominios. Para acceder a la página Administración de dominios en la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
+**Directorio
+Sincronización completada:** Esta información no está disponible en la página Eventos. La información de sincronización de directorios actual, incluido el estado y la hora de sincronización actual de la última sincronización, se muestra en la página Administración de dominios. Para acceder a la página Administración de dominios en la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 
-**Habilitar acceso sin conexión de cliente:** Un usuario habilitó el acceso sin conexión a documentos protegidos contra el servidor en el equipo del usuario.
+**Cliente habilitado para el acceso sin conexión:** Un usuario habilitó el acceso sin conexión a documentos protegidos contra el servidor en el equipo del usuario.
 
-**Cliente sincronizado** La aplicación cliente debe sincronizar la información con el servidor para permitir el acceso sin conexión.
+**La aplicación cliente sincronizada** debe sincronizar la información con el servidor para permitir el acceso sin conexión.
 
-**No coinciden las versiones:** AEM Se ha intentado conectar al servidor una versión del SDK de formularios de la aplicación que no es compatible con el servidor.
+AEM **La versión no coincide:** Una versión del SDK de formularios de la aplicación que es incompatible con el servidor intentó conectarse al servidor.
 
 **Información de sincronización de directorios:** Esta información no está disponible en la página Eventos. La información de sincronización de directorios actual, incluido el estado y la hora de sincronización actual de la última sincronización, se muestra en la página Administración de dominios. Para acceder a la página Administración de dominios en la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 
-**Cambio de configuración del servidor:** Cambios en la configuración del servidor que se realizan a través de las páginas web o manualmente mediante la importación de un archivo config.xml. Esto incluye cambios en la dirección URL base, tiempos de espera de sesión, bloqueos de inicio de sesión, configuración de directorios, rollovers de claves, configuración del servidor SMTP para registro externo, configuración de marcas de agua, opciones de visualización, etc.
+**Cambio de configuración del servidor:** cambios en la configuración del servidor que se realizan a través de las páginas web o manualmente mediante la importación de un archivo config.xml. Esto incluye cambios en la dirección URL base, tiempos de espera de sesión, bloqueos de inicio de sesión, configuración de directorios, rollovers de claves, configuración del servidor SMTP para registro externo, configuración de marcas de agua, opciones de visualización, etc.
 
 ## Configuración del seguimiento de uso extendido {#configuring-extended-usage-tracking}
 
-La seguridad de los documentos puede realizar un seguimiento de varios eventos personalizados que se pueden realizar en un documento protegido. Puede habilitar el seguimiento de eventos desde el servidor de Document Security a nivel global o a nivel de directiva. A continuación, puede configurar un JavaScript para capturar acciones específicas realizadas dentro del documento de PDF protegido, como hacer clic en un botón o guardar el documento. Estos datos de uso se envían como un archivo XML en pares clave-valor, que puede utilizar para un análisis más amplio. Los usuarios finales que accedan a los documentos protegidos pueden permitir o rechazar dicho seguimiento desde la aplicación cliente.
+La seguridad de los documentos puede realizar un seguimiento de varios eventos personalizados que se pueden realizar en un documento protegido. Puede habilitar el seguimiento de eventos desde el servidor de Document Security a nivel global o a nivel de directiva. A continuación, puede configurar una JavaScript para capturar acciones específicas realizadas dentro del documento de PDF protegido, como hacer clic en un botón o guardar el documento. Estos datos de uso se envían como un archivo XML en pares clave-valor, que puede utilizar para un análisis más amplio. Los usuarios finales que accedan a los documentos protegidos pueden permitir o rechazar dicho seguimiento desde la aplicación cliente.
 
 Si el seguimiento está habilitado a nivel global, puede anular esta configuración a nivel de directiva y deshabilitarla para una directiva en particular. La anulación de nivel de directiva no es posible si el seguimiento está deshabilitado a nivel global. La lista de eventos rastreados se inserta automáticamente en el servidor cuando el recuento de eventos alcanza 25 o cuando se cierra el documento. También puede configurar el script para que inserte explícitamente la lista de eventos según sus necesidades. Puede personalizar el seguimiento de eventos accediendo a las propiedades y los métodos del objeto de seguridad de documentos.
 
@@ -380,13 +382,13 @@ Después de habilitar el seguimiento, todas las directivas que se creen posterio
 
 ### Habilitar o deshabilitar el seguimiento de uso extendido {#enable-or-disable-extended-usage-tracking}
 
-Antes de empezar, asegúrese de que la Auditoría de servidores está habilitada. Consulte [Configuración de la auditoría de eventos y la privacidad](configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings) para obtener más información sobre la auditoría.
+Antes de empezar, asegúrese de que la Auditoría de servidores está habilitada. Consulte [Configuración de auditoría de eventos y configuración de privacidad](configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings) para obtener más información sobre la auditoría.
 
 1. En la consola de administración, haga clic en Servicios > Seguridad de documentos > Configuración > Configuración de auditoría y privacidad.
 1. Para configurar el seguimiento de uso extendido, en Habilitar seguimiento, seleccione Sí o No.
 1. Para establecer la selección de la casilla de verificación Permitir la recopilación de datos de uso detallados en la página de inicio de sesión, en Habilitar el seguimiento predeterminado, seleccione Sí o No.
 
-Para ver los eventos rastreados, puede utilizar el filtro Eventos de documento en la página Eventos. Los eventos rastreados con JavaScript se etiquetan como Seguimiento detallado del uso. Consulte [Monitorización de eventos](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) para obtener más información sobre los eventos.
+Para ver los eventos rastreados, puede utilizar el filtro Eventos de documento en la página Eventos. Los eventos rastreados con JavaScript se etiquetan como Seguimiento detallado del uso. Consulte [Supervisar eventos](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) para obtener más información sobre los eventos.
 
 ## Configurar la configuración de visualización de Document Security {#configure-document-security-display-settings}
 
@@ -395,35 +397,36 @@ Para ver los eventos rastreados, puede utilizar el filtro Eventos de documento e
 
 ### Configuración de visualización {#display-settings}
 
-**Filas para mostrar para los resultados de búsqueda:** Número de filas que aparecen en una página cuando se realizan las búsquedas.
+**Filas para mostrar para resultados de búsqueda:** Número de filas que aparecen en una página cuando se realizan búsquedas.
 
-**Personalización del cuadro de diálogo de inicio de sesión del cliente**
+**Personalización para el cuadro de diálogo de inicio de sesión de cliente**
 
 Esta configuración controla el texto que se muestra en la solicitud de inicio de sesión que aparece cuando un usuario inicia sesión en Document Security a través de una aplicación cliente.
 
 **Texto de bienvenida:** El texto del mensaje de bienvenida, como &quot;Inicie sesión con su nombre de usuario y contraseña&quot;. El texto del mensaje de bienvenida debe contener información sobre cómo iniciar sesión en Document Security y cómo ponerse en contacto con un administrador u otra persona de soporte designada de su organización para obtener ayuda. Por ejemplo, es posible que los usuarios externos deban ponerse en contacto con un administrador si olvidan sus contraseñas o necesitan ayuda con el proceso de registro o inicio de sesión. La longitud máxima del texto de bienvenida es de 512 caracteres.
 
-**Texto del nombre de usuario:** Etiqueta de texto para el cuadro de nombre de usuario.
+**Texto de nombre de usuario:** Etiqueta de texto para el cuadro de nombre de usuario.
 
 **Texto de contraseña:** Etiqueta de texto para el cuadro de contraseña.
 
-**Personalización del cuadro de diálogo de autenticación de certificados de cliente**
+**Personalización para el cuadro de diálogo de autenticación de certificado de cliente**
 
 Esta configuración controla el texto mostrado en el cuadro de diálogo de autenticación de certificado.
 
-**Elija el texto del tipo de autenticación:** Texto mostrado para indicar al usuario que seleccione un tipo de autenticación.
+**Elegir
+Texto del tipo de autenticación:** Texto mostrado para indicar al usuario que seleccione un tipo de autenticación.
 
-**Elija el texto del certificado:** Texto que se muestra para indicar al usuario que seleccione un tipo de certificado.
+**Elegir texto de certificado:** Se muestra el texto para indicar al usuario que seleccione un tipo de certificado.
 
-**Texto de error de certificados no disponibles:** Mensaje de hasta 512 caracteres para mostrar cuando el certificado seleccionado no esté disponible.
+**Certificados no disponibles Texto de error:** Mensaje de hasta 512 caracteres para mostrar cuando el certificado seleccionado no está disponible.
 
-**Personalización para la visualización de certificados de cliente**
+**Personalización para la visualización del certificado de cliente**
 
-**Mostrar solo los emisores de credenciales de confianza:** AEM Cuando se selecciona esta opción, la aplicación cliente presenta al usuario únicamente certificados de los emisores de credenciales en los que está configurado para confiar el formulario de las credenciales (consulte Administración de certificados y credenciales.) Cuando no se selecciona esta opción, se presenta al usuario una lista de todos los certificados del sistema del usuario.
+AEM **Mostrar solo los emisores de credenciales de confianza:** Cuando se selecciona esta opción, la aplicación cliente presenta al usuario únicamente certificados de emisores de credenciales en los que se ha configurado la confianza de los formularios de credenciales (consulte Administración de certificados y credenciales). Cuando no se selecciona esta opción, se presenta al usuario una lista de todos los certificados del sistema del usuario.
 
 ## Configurar marcas de agua dinámicas {#configure-dynamic-watermarks}
 
-Con Document Security, puede configurar los valores predeterminados de la opción de marca de agua dinámica que puede aplicar al crear directivas. A *filigrana* es una imagen que se superpone sobre el texto del documento. Resulta útil para rastrear el contenido de un documento y puede ayudar a identificar el uso ilegal del contenido.
+Con Document Security, puede configurar los valores predeterminados de la opción de marca de agua dinámica que puede aplicar al crear directivas. Una *marca de agua* es una imagen que se superpone sobre el texto del documento. Resulta útil para rastrear el contenido de un documento y puede ayudar a identificar el uso ilegal del contenido.
 
 Una marca de agua dinámica puede constar de texto compuesto por variables definidas, como ID de usuario y fecha y texto personalizado, o contenido enriquecido dentro de un PDF. Puede configurar marcas de agua con varios elementos, cada uno con su propia posición y formato.
 
@@ -443,12 +446,12 @@ Por ejemplo, si desea especificar texto diferente en el encabezado, pie de pági
 
 Normalmente, las marcas de agua basadas en PDF se utilizan para incluir contenido gráfico como logotipos o símbolos especiales como derechos de autor o marcas comerciales registradas.
 
-Puede cambiar los límites del número de elementos de marca de agua y el tamaño del archivo del PDF modificando el archivo de configuración de Document Security. Consulte [Cambiar los parámetros de configuración de filigrana](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
+Puede cambiar los límites del número de elementos de marca de agua y el tamaño del archivo del PDF modificando el archivo de configuración de Document Security. Consulte [Cambiar los parámetros de configuración de marca de agua](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
 
 Tenga en cuenta lo siguiente al configurar las marcas de agua:
 
 * No puede utilizar un documento de PDF protegido por contraseña como elemento de marca de agua. Sin embargo, si la marca de agua que crea contiene otros elementos que no están protegidos con contraseña, se aplicarán como parte de la marca de agua.
-* Puede cambiar el tamaño máximo del archivo PDF que desea utilizar como elemento de marca de agua. Sin embargo, los documentos de PDF grandes utilizados como marcas de agua degradan el rendimiento durante la sincronización sin conexión de los documentos aplicados con dichas marcas de agua. Consulte [Cambiar los parámetros de configuración de filigrana](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
+* Puede cambiar el tamaño máximo del archivo PDF que desea utilizar como elemento de marca de agua. Sin embargo, los documentos de PDF grandes utilizados como marcas de agua degradan el rendimiento durante la sincronización sin conexión de los documentos aplicados con dichas marcas de agua. Consulte [Cambiar los parámetros de configuración de marca de agua](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
 * Solo se utiliza la primera página del PDF seleccionado como marca de agua. Asegúrese de que la información que desea que aparezca como marca de agua esté disponible en la primera página.
 * Aunque puede especificar la escala del documento de PDF, tenga en cuenta el tamaño de página y el diseño del PDF si planea utilizarlo como marca de agua en el encabezado, pie de página o márgenes.
 * Cuando especifique el nombre de la fuente, introduzca el nombre correctamente. AEM Los formularios de datos sustituyen la fuente especificada si no está presente en el equipo cliente donde se abre el documento.
@@ -482,24 +485,24 @@ Puede crear plantillas de marcas de agua dinámicas. Estas plantillas siguen est
 1. Haga clic en Nuevo.
 1. En el cuadro Nombre, escriba un nombre para la nueva marca de agua.
 
-   ***nota **: no se pueden utilizar algunos caracteres especiales en los nombres o descripciones de marcas de agua o elementos de marcas de agua. Consulte las restricciones enumeradas en [Consideraciones para editar directivas](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
+   ***nota **: no se pueden utilizar algunos caracteres especiales en los nombres o descripciones de marcas de agua o elementos de marcas de agua. Vea las restricciones enumeradas en [Consideraciones para editar directivas](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
 
 1. En Nombre, junto al signo más, escriba un nombre significativo en el elemento de marca de agua, como Encabezado, agregue una descripción y expanda el signo más para mostrar las opciones.
-1. En Origen, seleccione el tipo de marca de agua como Texto o PDF.
+1. En Source, seleccione el tipo de marca de agua como Texto o PDF.
 1. Si ha seleccionado Texto, haga lo siguiente:
 
    * Seleccione los tipos de marcas de agua que desea incluir. Si selecciona Texto personalizado, en el cuadro adyacente, escriba el texto que se mostrará para la marca de agua. Tenga en cuenta la longitud del texto que aparecerá como marca de agua.
    * Especifique las propiedades de formato de texto, como el nombre de la fuente, el tamaño de fuente, el color de primer plano y el color de fondo del contenido del texto de la marca de agua. Especifique el color de primer plano y de fondo como valores hexadecimales.
 
-     ***nota **: Si selecciona la opción de escalado como Ajustar a la página, la propiedad de tamaño de fuente no estará disponible para la edición.*
+     ***nota **: Si selecciona la opción de escalado como Ajustar a página, la propiedad de tamaño de fuente no estará disponible para la edición.*
 
-1. Si seleccionó PDF para las opciones de marca de agua enriquecida, haga clic en **Examinar** junto a Seleccionar PDF de filigrana para seleccionar el documento de PDF que desea utilizar como filigrana.
+1. Si seleccionó PDF para las opciones de marca de agua enriquecida, haga clic en **Examinar** junto a Seleccionar PDF de marca de agua para seleccionar el documento de PDF que desea utilizar como marca de agua.
 
-   ***nota **: no utilice un documento de PDF protegido por contraseña. Si especifica un PDF protegido por contraseña como elemento de marca de agua, la marca de agua no se aplica.*
+   ***nota **: no use un documento de PDF protegido por contraseña. Si especifica un PDF protegido por contraseña como elemento de marca de agua, la marca de agua no se aplicará.*
 
 1. En Usar como fondo, seleccione Sí o No.
 
-   **nota**: Actualmente, la marca de agua aparece en primer plano independientemente de esta configuración.
+   **nota**: actualmente, la marca de agua aparece en primer plano independientemente de esta configuración.
 
 1. Para controlar dónde se muestra la marca de agua en el documento, configure las opciones Alineación vertical y Alineación horizontal.
 1. Seleccione Ajustar a página o seleccione % y escriba un porcentaje en el cuadro. El valor debe ser un número entero, no una fracción. Para configurar el tamaño de la marca de agua, puede utilizar un valor que sea el porcentaje de la página o establecer la marca de agua para que se ajuste al tamaño de la página.
@@ -515,7 +518,7 @@ Puede crear plantillas de marcas de agua dinámicas. Estas plantillas siguen est
 
    Seleccione dónde desea que aparezca la marca de agua. De forma predeterminada, la marca de agua aparece tanto en la copia flexible (en línea) como en la impresa (impresa).
 
-1. Clic **Nuevo** en Elementos de filigrana para añadir más elementos de filigrana si es necesario.
+1. Haga clic en **Nuevo** en Elementos de filigrana para agregar más elementos de filigrana si es necesario.
 1. Haga clic en Aceptar.
 
 ### Edición de una plantilla de marca de agua dinámica {#edit-a-dynamic-watermark-template}
@@ -537,7 +540,7 @@ Cuando se elimina una marca de agua dinámica, ya no está disponible para agreg
 
 Los usuarios externos a su organización pueden registrarse en Document Security. Los usuarios invitados que se registren y activen sus cuentas pueden iniciar sesión en Document Security utilizando su dirección de correo electrónico y la contraseña que crean al registrarse. Los usuarios invitados registrados pueden utilizar documentos protegidos por directivas para los que tienen permisos.
 
-Cuando se activan los usuarios invitados, estos se convierten en usuarios locales. Los usuarios locales se pueden configurar y administrar utilizando el área Usuarios invitados y locales. (Consulte [Administración de cuentas de usuario invitadas y locales](/help/forms/using/admin-help/invited-local-user-accounts.md#managing-invited-and-local-user-accounts).)
+Cuando se activan los usuarios invitados, estos se convierten en usuarios locales. Los usuarios locales se pueden configurar y administrar utilizando el área Usuarios invitados y locales. (Consulte [Administración de cuentas de usuarios invitados y locales](/help/forms/using/admin-help/invited-local-user-accounts.md#managing-invited-and-local-user-accounts).)
 
 Según las capacidades que habilite para los usuarios invitados, también podrán utilizar estas funciones de seguridad de documentos:
 
@@ -552,7 +555,7 @@ Document Security genera automáticamente un correo electrónico de invitación 
 
 El correo electrónico de registro contiene un vínculo a una página de registro e información sobre cómo registrarse. Una vez que el usuario invitado se registra, Document Security emite un correo electrónico de activación con un vínculo a una página de activación. Cuando se activa, la cuenta sigue siendo válida hasta que se desactiva o elimina.
 
-Si activa el registro integrado, debe especificar el servidor SMTP, los detalles del correo electrónico de registro, las funcionalidades de acceso y restablecer la información del correo electrónico de la contraseña solo una vez. Antes de habilitar el registro integrado, asegúrese de haber creado un dominio local en Administración de usuarios y de haber asignado la función &quot;Invitar usuario&quot; de Document Security a los usuarios y grupos adecuados de su organización. (Consulte [Añadir un dominio local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) y [Creación y configuración de funciones](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) AEM Si no utiliza el registro integrado, debe tener su propio sistema de registro de usuario creado mediante el SDK de formularios de la aplicación de la versión de usuario de. AEM Consulte la ayuda de &quot;Desarrollo de SPI para formularios de&quot; en [AEM Programar con formularios de](/help/forms/developing/introducing-java-api-soap-quick.md). Si no utiliza la opción Registro integrado, se recomienda configurar un mensaje en el correo electrónico de activación y en la pantalla de inicio de sesión del cliente para notificar a los usuarios cómo ponerse en contacto con el administrador para obtener una nueva contraseña o para obtener otra información.
+Si activa el registro integrado, debe especificar el servidor SMTP, los detalles del correo electrónico de registro, las funcionalidades de acceso y restablecer la información del correo electrónico de la contraseña solo una vez. Antes de habilitar el registro integrado, asegúrese de haber creado un dominio local en Administración de usuarios y de haber asignado la función &quot;Invitar usuario&quot; de Document Security a los usuarios y grupos adecuados de su organización. (Consulte [Agregar un dominio local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) y [Crear y configurar roles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) AEM Si no utiliza el registro integrado, debe tener su propio sistema de registro de usuario creado mediante el SDK de formularios de la aplicación de la versión de usuario de. AEM AEM Consulte la ayuda en &quot;Desarrollo de SPI para formularios de la&quot; en [Programación con formularios de la lista de permitidos](/help/forms/developing/introducing-java-api-soap-quick.md). Si no utiliza la opción Registro integrado, se recomienda configurar un mensaje en el correo electrónico de activación y en la pantalla de inicio de sesión del cliente para notificar a los usuarios cómo ponerse en contacto con el administrador para obtener una nueva contraseña o para obtener otra información.
 
 **Habilitar y configurar el registro de usuarios invitados**
 
@@ -579,7 +582,7 @@ La siguiente configuración se encuentra en el área Filtro de restricción de c
 
 **Exclusión:** Escriba la dirección de correo electrónico de un usuario o grupo que desee excluir. Para excluir varios usuarios o grupos, escriba cada dirección de correo electrónico en una nueva línea. Para excluir a todos los usuarios que pertenecen a un dominio en particular, introduzca un comodín y el nombre de dominio. Por ejemplo, para excluir todos los usuarios del dominio example.com, escriba &amp;ast;.example.com.
 
-**Inclusión:** Escriba la dirección de correo electrónico de un usuario o grupo para incluirla. Para incluir varios usuarios o grupos, escriba cada dirección de correo electrónico en una nueva línea. Para incluir a todos los usuarios que pertenecen a un dominio en particular, introduzca un comodín y el nombre de dominio. Por ejemplo, para incluir a todos los usuarios en el dominio example.com, escriba &amp;ast;.example.com.
+**Inclusión:** Escriba la dirección de correo electrónico de un usuario o grupo que desee incluir. Para incluir varios usuarios o grupos, escriba cada dirección de correo electrónico en una nueva línea. Para incluir a todos los usuarios que pertenecen a un dominio en particular, introduzca un comodín y el nombre de dominio. Por ejemplo, para incluir a todos los usuarios en el dominio example.com, escriba &amp;ast;.example.com.
 
 ### Parámetros de servidor y cuenta de registro {#server-and-registration-account-parameters}
 
@@ -597,11 +600,11 @@ Si es necesario para el host SMTP, escriba la información necesaria en los cuad
 
 **Dirección de correo electrónico de redirección:** Cuando especifica una dirección de correo electrónico para esta configuración, cualquier nueva invitación se envía a la dirección proporcionada. Esta configuración puede resultar útil para realizar pruebas.
 
-**Usar dominios locales:** Seleccione el dominio adecuado. En una instalación nueva, asegúrese de crear el dominio mediante Administración de usuarios. Si se trata de una actualización, durante la misma se creó un dominio de usuario externo que se puede utilizar.
+**Usar dominios locales:** Seleccione el dominio apropiado. En una instalación nueva, asegúrese de crear el dominio mediante Administración de usuarios. Si se trata de una actualización, durante la misma se creó un dominio de usuario externo que se puede utilizar.
 
-**Use SSL para el servidor SMTP:** Seleccione esta opción para habilitar SSL para el servidor SMTP.
+**Usar SSL para el servidor SMTP:** Seleccione esta opción para habilitar SSL para el servidor SMTP.
 
-**Mostrar vínculo de inicio de sesión en la página de registro:** Muestra un vínculo de inicio de sesión en la página de registro para los usuarios invitados.
+**Mostrar vínculo de inicio de sesión en la página de registro:** Muestra un vínculo de inicio de sesión en la página de registro que se muestra a los usuarios invitados.
 
 **Para habilitar la seguridad de la capa de transporte (TLS) para el servidor SMTP**
 
@@ -633,13 +636,13 @@ Cuando el destinatario activa la cuenta, el usuario se convierte en un usuario l
 
 Los siguientes ajustes se encuentran en el área Configuración del correo electrónico de invitación de la página Registro de usuario invitado.
 
-**Desde:** La dirección de correo electrónico desde la que se envía el correo electrónico de invitación. El formato predeterminado de la dirección de correo electrónico De es postmaster@[your_installation_domain].com.
+**De:** Dirección de correo electrónico desde la que se envía el mensaje de correo electrónico de invitación. El formato predeterminado de la dirección de correo electrónico De es postmaster@[your_installation_domain].com.
 
-**Asunto:** Asunto predeterminado del mensaje de correo electrónico de invitación.
+**Asunto:** Asunto predeterminado para el mensaje de correo electrónico de invitación.
 
 **Tiempo de espera:** Número de días tras los cuales caduca la invitación de registro si el usuario externo no se registra. El valor predeterminado es 30 días.
 
-**Mensaje:** Texto que aparece en el cuerpo del mensaje que invita al usuario a registrarse.
+**Mensaje:** El texto que aparece en el cuerpo del mensaje que invita al usuario a registrarse.
 
 ### Configuración de correo electrónico de activación {#activation-email-settings}
 
@@ -653,9 +656,9 @@ Las siguientes opciones se encuentran en el área Configuración del correo elec
 >
 >También se recomienda configurar un mensaje en la pantalla de inicio de sesión para aconsejar a los usuarios externos cómo ponerse en contacto con su administrador para obtener una nueva contraseña o para obtener más información.
 
-**Desde:** La dirección de correo electrónico desde la que se envía el correo electrónico de activación. Esta dirección de correo electrónico recibe notificaciones de envío fallidas del host de correo electrónico del registrante, así como cualquier mensaje que el destinatario envíe en respuesta al correo electrónico de registro. El formato predeterminado de la dirección de correo electrónico De es postmaster@[your_installation_domain].com.
+**De:** Dirección de correo electrónico desde la que se envía el correo electrónico de activación. Esta dirección de correo electrónico recibe notificaciones de envío fallidas del host de correo electrónico del registrante, así como cualquier mensaje que el destinatario envíe en respuesta al correo electrónico de registro. El formato predeterminado de la dirección de correo electrónico De es postmaster@[your_installation_domain].com.
 
-**Asunto:** Asunto predeterminado del mensaje de correo electrónico de activación.
+**Asunto:** Asunto predeterminado para el mensaje de correo electrónico de activación.
 
 **Tiempo de espera:** Número de días tras los cuales caduca la invitación de activación si el usuario no activa la cuenta. El valor predeterminado es 30 días.
 
@@ -667,19 +670,19 @@ Si tiene que restablecer la contraseña de un usuario invitado, se genera un cor
 
 La siguiente configuración se encuentra en el área Restablecer correo electrónico de contraseña de la página Registro de usuario invitado.
 
-**Desde:** Dirección de correo electrónico desde la que se envía el mensaje de correo electrónico para restablecer la contraseña. El formato predeterminado de la dirección de correo electrónico De es postmaster@[your_installation_domain].com.
+**De:** Dirección de correo electrónico desde la que se envía el mensaje de correo electrónico para restablecer la contraseña. El formato predeterminado de la dirección de correo electrónico De es postmaster@[your_installation_domain].com.
 
 **Asunto:** Asunto predeterminado para el mensaje de correo electrónico restablecido.
 
-**Mensaje:** El texto que aparece en el cuerpo del mensaje contiene un mensaje que indica que se restablece la contraseña de usuario externa del destinatario.
+**Mensaje:** El texto que aparece en el cuerpo del mensaje contiene un mensaje que indica que se restablece la contraseña de usuario externo del destinatario.
 
 ## Permitir que los usuarios y grupos creen directivas {#enable-users-and-groups-to-create-policies}
 
 La página Configuración tiene un vínculo a la página Mis directivas, donde puede especificar qué usuarios finales pueden crear mis directivas y qué usuarios y grupos están visibles en los resultados de búsqueda. La página Mis directivas tiene dos pestañas:
 
-**Pestaña Crear directivas:** Use para configurar permisos de usuario para crear directivas personalizadas.
+**Ficha Crear directivas:** Use para configurar permisos de usuario para crear directivas personalizadas.
 
-**Pestaña Usuarios y grupos visibles:** Se utiliza para controlar qué usuarios y grupos son visibles en los resultados de búsqueda de usuarios. El superusuario o el administrador de conjuntos de directivas deben seleccionar y agregar dominios, creados en Administración de usuarios, al usuario y grupo visibles para cada conjunto de directivas. Esta lista es visible para el coordinador de conjuntos de directivas y se utiliza para establecer límites en los dominios que el coordinador de conjuntos de directivas puede examinar al elegir usuarios para agregarlos a las directivas.
+**Ficha Usuarios y grupos visibles:** Use para controlar qué usuarios y grupos son visibles en los resultados de búsqueda de usuarios. El superusuario o el administrador de conjuntos de directivas deben seleccionar y agregar dominios, creados en Administración de usuarios, al usuario y grupo visibles para cada conjunto de directivas. Esta lista es visible para el coordinador de conjuntos de directivas y se utiliza para establecer límites en los dominios que el coordinador de conjuntos de directivas puede examinar al elegir usuarios para agregarlos a las directivas.
 
 Antes de conceder permiso a los usuarios para crear directivas personalizadas, considere cuánto acceso o control desea que tengan los usuarios individuales. Además, tenga en cuenta la exposición que desea que estén sus usuarios y grupos al hacerlos visibles para las búsquedas.
 
@@ -756,12 +759,12 @@ De forma predeterminada, la sincronización se produce automáticamente cada cua
 En el fichero de configuración de Document Security, se puede especificar la frecuencia por defecto de la sincronización automática en segundo plano. Esta configuración actúa como el período de tiempo de espera predeterminado para las aplicaciones cliente, a menos que el cliente establezca explícitamente su propio valor de tiempo de espera.
 
 1. Exporte el archivo de configuración de Document Security. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Abra el archivo de configuración en un editor y busque el `PolicyServer` nodo. En ese nodo, busque `ServerSettings` nodo.
-1. En el `ServerSettings` , agregue esta entrada y, a continuación, guarde el archivo:
+1. Abra el archivo de configuración en un editor y busque el nodo `PolicyServer`. En ese nodo, busque el nodo `ServerSettings`.
+1. En el nodo `ServerSettings`, agregue esta entrada y, a continuación, guarde el archivo:
 
    `<entry key="BackgroundSyncFrequency" value="`*hora* `"/>`
 
-   donde *hora* es el número de segundos entre sincronizaciones automáticas en segundo plano. Si envió este valor a `0`, la sincronización siempre se produce. El valor predeterminado es `14400` segundos (cada cuatro horas).
+   donde *time* es el número de segundos entre sincronizaciones automáticas en segundo plano. Si envió este valor a `0`, siempre se produce la sincronización. El valor predeterminado es `14400` segundos (cada cuatro horas).
 
 1. Importe el archivo de configuración. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
@@ -769,8 +772,8 @@ En el fichero de configuración de Document Security, se puede especificar la fr
 
 Puede configurar Document Security para denegar servicios a aplicaciones que cumplan criterios específicos. Los criterios pueden especificar un único atributo, como un nombre de plataforma, o varios conjuntos de atributos. Esta función puede ayudarle a controlar las solicitudes que debe gestionar Document Security. Estas son algunas aplicaciones de esta función:
 
-* **Protección de ingresos:** Puede que desee denegar el acceso a cualquier aplicación cliente que no admita sus convenciones de ingresos.
-* **Compatibilidad de aplicaciones:** Algunas aplicaciones pueden ser incompatibles con las directivas o el comportamiento del servidor de Document Security.
+* **Protección de ingresos:** Es posible que desee denegar el acceso a cualquier aplicación cliente que no admita las convenciones de ingresos.
+* **Compatibilidad de aplicaciones:** Es posible que algunas aplicaciones sean incompatibles con las directivas o el comportamiento del servidor de Document Security.
 
 Cuando las aplicaciones cliente intentan establecer un vínculo con Document Security, proporcionan información de la aplicación, la versión y la plataforma. Document Security compara esta información con la configuración de denegaciones que obtiene del archivo de configuración de Document Security.
 
@@ -796,30 +799,30 @@ Si alguna información no es aplicable, la aplicación cliente deja en blanco el
 
 Varias aplicaciones de Adobe incluyen información del producto al solicitar servicios de seguridad de documentos, incluidas las extensiones de Acrobat, Adobe Reader y Acrobat Reader DC para Microsoft Office.
 
-**ACROBAT y ADOBE READER**
+**Acrobat y Adobe Reader**
 
 Cuando Acrobat o Adobe Reader solicitan un servicio de Document Security, proporcionan la siguiente información del producto:
 
 * **Integrador:** Adobe Systems, Inc.
-* **Versión de Integrator:** 1,0
+* **Versión de Integrator:** 1.0
 * **Familia de aplicaciones:** Acrobat
-* **Nombre de la aplicación:** Acrobat
-* **Versión de la aplicación:** 9.0.0
+* **Nombre de aplicación:** Acrobat
+* **Versión de aplicación:** 9.0.0
 
 **Extensiones de Acrobat Reader DC para Microsoft Office**
 
 Extensiones de Acrobat Reader DC para Microsoft Office es un complemento que se utiliza con los productos de Microsoft Office Microsoft Word, Microsoft Excel y Microsoft PowerPoint. Cuando solicita un servicio, proporciona la siguiente información:
 
 * **Integrador:** Adobe Systems Incorporated
-* **Versión de Integrator:** 8,2
-* **Familia de aplicaciones:** Extensiones de Acrobat Reader DC para Microsoft Office
-* **Nombre de la aplicación:** Microsoft Word, Microsoft Excel o Microsoft PowerPoint
+* **Versión de Integrator:** 8.2
+* **Familia de aplicaciones:** extensiones de Acrobat Reader DC para Microsoft Office
+* **Nombre de aplicación:** Microsoft Word, Microsoft Excel o Microsoft PowerPoint
 * **Versión de la aplicación:** 2003 o 2007
 
-**Configure Document Security para denegar servicios a aplicaciones específicas**
+**Configurar Document Security para denegar servicios a aplicaciones específicas**
 
 1. Exporte el archivo de configuración de Document Security. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Abra el archivo de configuración en un editor y busque el `PolicyServer` nodo. Añadir un `ClientVersionRules` nodo como elemento secundario inmediato de `PolicyServer` nodo, si no existe:
+1. Abra el archivo de configuración en un editor y busque el nodo `PolicyServer`. Agregue un nodo `ClientVersionRules` como elemento secundario inmediato del nodo `PolicyServer`, si no existe:
 
    ```xml
     <node name="ClientVersionRules">
@@ -851,26 +854,26 @@ Extensiones de Acrobat Reader DC para Microsoft Office es un complemento que se 
 
    donde:
 
-   `SDKPlatforms` especifica la plataforma que aloja la aplicación cliente. Los valores posibles son:
+   `SDKPlatforms` especifica la plataforma que hospeda la aplicación cliente. Los valores posibles son:
 
    * Microsoft Windows
    * APPLE OS X
    * Sun Solaris
    * HP-UX
 
-   `SDKVersions` especifica la versión de la API de cliente de C++ de Document Security que utiliza la aplicación cliente. Por ejemplo, `"8.2"`.
+   `SDKVersions` especifica la versión de la API de cliente de C++ de Document Security utilizada por la aplicación cliente. Por ejemplo, `"8.2"`.
 
-   `APPFamilies` se define mediante la API de cliente.
+   La API de cliente define `APPFamilies`.
 
-   `AppName`especifica el nombre de la aplicación cliente. Las comas se utilizan como separadores de nombres. Para incluir una coma en un nombre, escríbalo con un carácter de barra invertida (\). Por ejemplo, *&quot;Adobe Systems\, Inc.&quot;*.
+   `AppName` especifica el nombre de la aplicación cliente. Las comas se utilizan como separadores de nombres. Para incluir una coma en un nombre, escríbalo con un carácter de barra invertida (\). Por ejemplo, *&quot;Adobe Systems\, Inc.&quot;*.
 
    `AppVersions` especifica la versión de la aplicación cliente.
 
-   `Integrators` especifica el nombre de la empresa o el grupo que desarrolló el complemento o la aplicación integrada.
+   `Integrators` especifica el nombre de la compañía o el grupo que desarrolló el complemento o la aplicación integrada.
 
    `IntegratorVersions` es la versión del complemento o de la aplicación integrada.
 
-1. Para cada conjunto adicional de datos de denegación, agregue otro *MyEntryName* Elemento.
+1. Para cada conjunto adicional de datos de denegación, agregue otro elemento *MyEntryName*.
 1. Guarde el archivo de configuración.
 1. Importe el archivo de configuración. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
@@ -944,15 +947,15 @@ En este ejemplo, se deniegan todas las solicitudes de una instalación de Micros
 
 De forma predeterminada, se puede especificar un máximo de cinco elementos en una marca de agua. Además, el tamaño máximo de archivo del documento de PDF que desea utilizar como marca de agua está limitado a 100 KB. Puede cambiar estos parámetros en el archivo config.xml.
 
-***nota **: estos parámetros se deben cambiar con precaución.*
+***nota **: debe cambiar estos parámetros con precaución.*
 
 1. Exporte el archivo de configuración de Document Security. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Abra el archivo de configuración en un editor y busque el `ServerSettings` nodo.
-1. En el `ServerSettings` , agregue las siguientes entradas y, a continuación, guarde el archivo: `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
+1. Abra el archivo de configuración en un editor y busque el nodo `ServerSettings`.
+1. En el nodo `ServerSettings`, agregue las siguientes entradas y guarde el archivo: `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
 
-   La primera entrada, *tamaño máximo de archivo* es el tamaño máximo de archivo (en KB) permitido para un elemento de marca de agua de PDF. El valor predeterminado es 100 KB.
+   La primera entrada, *tamaño máximo de archivo* es el tamaño máximo de archivo (en KB) permitido para un elemento de marca de agua PDF. El valor predeterminado es 100 KB.
 
-   La segunda entrada, *máximo de elementos* es el número máximo de elementos permitidos en una marca de agua. El valor predeterminado es 5.
+   La segunda entrada, *max elements*, es el número máximo de elementos permitidos en una marca de agua. El valor predeterminado es 5.
 
    ```xml
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
@@ -963,7 +966,7 @@ De forma predeterminada, se puede especificar un máximo de cinco elementos en u
 
 ### Desactivación de vínculos externos {#disabling-external-links}
 
-Muchos usuarios de Document Security no tienen acceso a vínculos externos como **www.adobe.com** mientras utilizan las interfaces de usuario de Right Management:
+Muchos usuarios de Document Security no tienen acceso a vínculos externos como **www.adobe.com** mientras usan las interfaces de usuario de Right Management:
 
 * `https://[host]:'port'/adminui`
 * `https://[host]:'port'/edc`.
@@ -971,8 +974,8 @@ Muchos usuarios de Document Security no tienen acceso a vínculos externos como 
 Los siguientes cambios en config.xml desactivan todos los vínculos externos de las interfaces de usuario de Right Management.
 
 1. Exporte el archivo de configuración de Document Security. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Abra el archivo de configuración en un editor y busque el `DisplaySettings` nodo.
-1. Para deshabilitar todos los vínculos externos, en la `DisplaySettings` , agregue la siguiente entrada y, a continuación, guarde el archivo: `<entry key="ExternalLinksAllowed" value="false"/>`
+1. Abra el archivo de configuración en un editor y busque el nodo `DisplaySettings`.
+1. Para deshabilitar todos los vínculos externos, en el nodo `DisplaySettings`, agregue la siguiente entrada y, a continuación, guarde el archivo: `<entry key="ExternalLinksAllowed" value="false"/>`
 
    ```xml
    <entry key="ExternalLinksAllowed" value="false"/>
@@ -985,21 +988,21 @@ Los siguientes cambios en config.xml desactivan todos los vínculos externos de 
 Los siguientes cambios en config.xml habilitan la compatibilidad con TLS para la función Registro de usuarios invitados.
 
 1. Exporte el archivo de configuración de Document Security. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Abra el archivo de configuración en un editor y busque el `DisplaySettings` nodo.
+1. Abra el archivo de configuración en un editor y busque el nodo `DisplaySettings`.
 1. Busque el siguiente nodo: `<node name="ExternalUser">`
 
    ```xml
    <node name="ExternalUser">
    ```
 
-1. Establezca el valor del `SmtpUseTls` clave en el `ExternalUser` nodo a **true**.
-1. Establezca el valor del `SmtpUseSsl` clave en el `ExternalUser` nodo a **false**.
-1. Guarde el `config.xml`.
+1. Establezca el valor de la clave `SmtpUseTls` en el nodo `ExternalUser` en **true**.
+1. Establezca el valor de la clave `SmtpUseSsl` en el nodo `ExternalUser` en **false**.
+1. Guarde `config.xml`.
 1. Importe el archivo de configuración. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Deshabilitar los extremos SOAP para documentos de Document Security {#disable-soap-endpoints-for-document-security-documents}
+### SOAP Deshabilitar puntos finales de para documentos de Document Security {#disable-soap-endpoints-for-document-security-documents}
 
-Los siguientes cambios en config.xml para deshabilitar los extremos SOAP para los documentos de Document Security.
+SOAP Los siguientes cambios en el archivo config.xml para deshabilitar los extremos de la para los documentos de Document Security.
 
 1. Exporte el archivo de configuración de Document Security. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Abra el archivo de configuración en un editor y busque el siguiente nodo: `<node name="DRM">`
@@ -1008,11 +1011,11 @@ Los siguientes cambios en config.xml para deshabilitar los extremos SOAP para lo
    <node name="DRM">
    ```
 
-1. En el nodo DRM, busque `entry` nodo:
+1. En el nodo DRM, busque el nodo `entry`:
 
    `<entry key="AllowUnencryptedVoucher" value="true"/>`
 
-1. Para deshabilitar los extremos SOAP para los documentos de Document Security, establezca el atributo value en **false**.
+1. SOAP Para deshabilitar los puntos finales de los documentos de seguridad de documentos, establezca el atributo value en **false**.
 
    ```xml
    <node name="DRM">
@@ -1022,7 +1025,7 @@ Los siguientes cambios en config.xml para deshabilitar los extremos SOAP para lo
    </node>
    ```
 
-1. Guarde el `config.xml`.
+1. Guarde `config.xml`.
 1. Importe el archivo de configuración. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### Aumento de la escalabilidad del servidor de Document Security {#increasingscalability}
@@ -1033,7 +1036,7 @@ Puede aumentar la escalabilidad del servidor de Document Security limitando la i
 
 1. Exporte el archivo de configuración de Document Security. (Consulte [Edición manual del archivo de configuración de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Abra el archivo de configuración en un editor y busque el nodo ServerSettings.
-1. En el nodo ServerSettings, establezca el valor del `DisableGlobalOfflineSynchronizationData`propiedad a `true`.
+1. En el nodo ServerSettings, establezca el valor de la propiedad `DisableGlobalOfflineSynchronizationData`en `true`.
 
    `<entry key="DisableGlobalOfflineSynchronizationData" value="true"/>`
 
@@ -1041,6 +1044,6 @@ Puede aumentar la escalabilidad del servidor de Document Security limitando la i
 
    >[!NOTE]
    >
-   >De forma predeterminada, el valor de `DisableGlobalOfflineSynchronizationData`La clave está configurada en `false`.
+   >De manera predeterminada, el valor de la clave `DisableGlobalOfflineSynchronizationData` está establecido en `false`.
 
 1. Guarde e importe el archivo de configuración. (Consulte [Edición manual del archivo de configuración de Document Security](/help/forms/using/admin-help/configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)

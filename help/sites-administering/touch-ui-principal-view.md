@@ -38,7 +38,7 @@ CRXDE para administrar privilegios y restricciones avanzados. Se ha consolidado 
 
 ![Vista del grupo &quot;todos&quot;](assets/unu-1.png)
 
-Hay un filtro que permite al usuario seleccionar el tipo de entidades de seguridad que desea ver **Usuarios**, **Grupos**, o **Todo** y buscar cualquier principal **.**
+Hay un filtro que permite al usuario seleccionar el tipo de principales para ver **usuarios**, **grupos** o **todos** y buscar cualquier principal **.**
 
 ![Buscar tipos de identidades](assets/image2019-3-20_23-52-51.png)
 
@@ -46,7 +46,7 @@ Hay un filtro que permite al usuario seleccionar el tipo de entidades de segurid
 
 El marco de la izquierda permite a los usuarios desplazarse hacia abajo para encontrar cualquier principal o buscar un grupo o un usuario en función del filtro seleccionado, como se muestra a continuación:
 
-![Ver permisos para una entidad principal](assets/doi-1.png)
+![Ver permisos para un principal](assets/doi-1.png)
 
 Al hacer clic en el nombre, se muestran los permisos asignados a la derecha. El panel de permisos muestra la lista de entradas de control de acceso en rutas específicas junto con las restricciones configuradas.
 
@@ -60,13 +60,13 @@ Se pueden agregar nuevos permisos agregando una Entrada de control de acceso. Si
 
 Esto abre la ventana que se muestra a continuación. El siguiente paso es elegir una ruta en la que se debe configurar el permiso.
 
-![Configuración de la ruta de permisos](assets/cinci-1.png)
+![Configurar ruta de acceso de permisos](assets/cinci-1.png)
 
-Aquí se selecciona una ruta en la que se puede configurar un permiso para **dam-users**:
+Aquí se selecciona una ruta donde puede configurar un permiso para **dam-users**:
 
 ![Ejemplo de configuración para usuarios dam](assets/sase-1.png)
 
-Una vez seleccionada la ruta, el flujo de trabajo vuelve a esta pantalla, donde el usuario puede seleccionar uno o varios privilegios de las áreas de nombres disponibles (como `jcr`, `rep` o `crx`) como se muestra a continuación.
+Una vez seleccionada la ruta de acceso, el flujo de trabajo vuelve a esta pantalla, donde el usuario puede seleccionar uno o más de los privilegios de las áreas de nombres disponibles (como `jcr`, `rep` o `crx`), como se muestra a continuación.
 
 Los privilegios se pueden añadir buscando en el campo de texto y seleccionando a continuación en la lista.
 
@@ -74,7 +74,7 @@ Los privilegios se pueden añadir buscando en el campo de texto y seleccionando 
 >
 >Para obtener una lista completa de privilegios y descripciones, consulte [esta página](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Permiso de búsqueda para una ruta determinada.](assets/image2019-3-21_0-5-47.png) ![Añada una nueva entrada para &quot;dam-users&quot; como se muestra en una ruta seleccionada en columnas verticales.](assets/image2019-3-21_0-6-53.png)
+![Permiso de búsqueda para una ruta de acceso determinada.](assets/image2019-3-21_0-5-47.png) ![Agregar nueva entrada para &#39;dam-users&#39; como se muestra en una ruta seleccionada en columnas verticales.](assets/image2019-3-21_0-6-53.png)
 
 Una vez seleccionada la lista de privilegios, el usuario puede elegir el Tipo de permiso : Denegar o Permitir, como se muestra a continuación.
 
@@ -88,13 +88,13 @@ Además de la lista de privilegios y el Tipo de permiso en una ruta determinada,
 
 >[!NOTE]
 >
->Para obtener más información sobre el significado de cada restricción, consulte [Documentación de Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Para obtener más información sobre el significado de cada restricción, consulte [la documentación de Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html?lang=es).
 
-Las restricciones se pueden añadir como se muestra a continuación seleccionando el tipo de restricción, introduciendo el valor y pulsando el botón **+** icono.
+Las restricciones se pueden agregar como se muestra a continuación eligiendo el tipo de restricción, introduciendo el valor y pulsando el icono **+**.
 
-![Añadir el tipo de restricción](assets/sapte-1.png) ![Añadir el tipo de restricción](assets/opt-1.png)
+![Agregar el tipo de restricción](assets/sapte-1.png) ![Agregar el tipo de restricción](assets/opt-1.png)
 
-La nueva ACE se refleja en la Lista de control de acceso como se muestra a continuación. Tenga en cuenta que `jcr:write` es un privilegio agregado que incluye `jcr:removeNode` que se añadió anteriormente, pero no se muestra a continuación como cubierto en `jcr:write`.
+La nueva ACE se refleja en la Lista de control de acceso como se muestra a continuación. Tenga en cuenta que `jcr:write` es un privilegio agregado que incluye `jcr:removeNode` que se agregó anteriormente, pero no se muestra a continuación como cubierto en `jcr:write`.
 
 ### Edición de ACE {#editing-aces}
 
@@ -102,17 +102,17 @@ Las entradas de control de acceso se pueden editar seleccionando un principal y 
 
 Por ejemplo, aquí puede editar la siguiente entrada para **dam-users** haciendo clic en el icono de lápiz a la derecha:
 
-![Añadir restricción](assets/image2019-3-21_0-35-39.png)
+![Agregar restricción](assets/image2019-3-21_0-35-39.png)
 
 La pantalla de edición se muestra con las entradas de control de acceso configuradas preseleccionadas, que se pueden eliminar haciendo clic en el icono en forma de cruz junto a ellas o se pueden añadir nuevos privilegios para la ruta dada, como se muestra a continuación.
 
 ![Editar entrada](assets/noua-1.png)
 
-Aquí el `addChildNodes` se agrega el privilegio para **dam-users** en la ruta dada.
+Aquí se agrega el privilegio `addChildNodes` para **dam-users** en la ruta dada.
 
-![Privilegio Add](assets/image2019-3-21_0-45-35.png)
+![Agregar privilegio](assets/image2019-3-21_0-45-35.png)
 
-Los cambios se pueden guardar haciendo clic en el **Guardar** en la parte superior derecha, y los cambios se reflejan en los nuevos permisos para **dam-users** como se muestra a continuación:
+Los cambios se pueden guardar haciendo clic en el botón **Guardar** de la parte superior derecha, y se reflejan en los nuevos permisos para **dam-users**, como se muestra a continuación:
 
 ![Guardar cambios](assets/zece-1.png)
 
@@ -120,7 +120,7 @@ Los cambios se pueden guardar haciendo clic en el **Guardar** en la parte superi
 
 Las entradas de control de acceso se pueden eliminar para eliminar todos los permisos otorgados a una entidad de seguridad en una ruta específica. El icono X situado junto a ACE puede utilizarse para eliminarlo, como se muestra a continuación:
 
-![Eliminar ACE](assets/image2019-3-21_0-53-19.png) ![Eliminar ACE](assets/unspe.png)
+![Eliminar elementos ACE](assets/image2019-3-21_0-53-19.png) ![Eliminar elementos ACE](assets/unspe.png)
 
 ### Combinaciones de privilegios de IU clásica {#classic-ui-privilege-combinations}
 

@@ -24,13 +24,13 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
 
 **Aplicaciones procesadas del lado del servidor**
 
-1. Cargar inicialización del trabajador de servicio (`srvinit.js`) al incluir la siguiente secuencia de comandos en la sección de encabezado de la página del HTML:
+1. Cargue el inicio del trabajador de servicio (`srvinit.js`) incluyendo el siguiente script en la sección del encabezado de la página del HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   El Adobe recomienda cargar este script _antes_ cualquier otro script para que el trabajador de servicio inicie la inicialización de inmediato.
+   Adobe recomienda cargar este script _antes de_ cualquier otro script para que el trabajador de servicio inicie la inicialización de inmediato.
 
 1. Incluya el siguiente código de etiqueta de imagen DPR en la parte superior de la sección del cuerpo de la página de HTML:
 
@@ -43,7 +43,7 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   Es obligatorio incluir este código de etiqueta de imagen DPR _antes_ todas las imágenes estáticas de la página del HTML.
+   Es obligatorio incluir este código de etiqueta de imagen DPR _antes_ de todas las imágenes estáticas en la página de HTML.
 
 **Aplicaciones procesadas del lado del cliente**
 
@@ -56,12 +56,12 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
 
    Puede combinar ambos scripts de DPR en uno para evitar varias solicitudes de red.
 
-   El Adobe recomienda cargar estos scripts _antes_ cualquier otro script de la página del HTML.
-El Adobe también recomienda almacenar la aplicación en Bootstrap con la etiqueta de HTML de diferencia en lugar de con un elemento de cuerpo. La razón es porque `dprImageInjection.js` inserta dinámicamente la etiqueta de imagen en la parte superior de la sección del cuerpo en la página del HTML.
+   El Adobe recomienda cargar estos scripts _antes_ de cualquier otro script en la página del HTML.
+El Adobe también recomienda almacenar la aplicación en Bootstrap con la etiqueta de HTML de diferencia en lugar de con un elemento de cuerpo. El motivo es que `dprImageInjection.js` inserta dinámicamente la etiqueta de imagen en la parte superior de la sección del cuerpo de la página del HTML.
 
 ## Descarga de archivos JavaScript {#client-side-dpr-script}
 
-Los siguientes archivos JavaScript de la descarga se proporcionan solo como referencia de ejemplo. Si tiene intención de utilizar estos archivos en páginas de HTML, asegúrese de editar el código de cada archivo para adaptarlo a sus necesidades.
+Los siguientes archivos JavaScript de la descarga solo se proporcionan como referencia de ejemplo. Si tiene intención de utilizar estos archivos en páginas de HTML, asegúrese de editar el código de cada archivo para adaptarlo a sus necesidades.
 
 * `dprImageInjection.js`
 * `srvinit.js`

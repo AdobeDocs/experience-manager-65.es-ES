@@ -22,7 +22,7 @@ El archivo de configuración contiene la información de conversión del PDF Gen
 
 >[!NOTE]
 >
->No puede cambiar la configuración de tiempo de espera para PDF Generator importando un archivo native2pdfconfig.xml personalizado. La configuración de tiempo de espera de ese archivo es solo informativa y muestra la configuración actual en PDF Generator. Para cambiar la configuración de tiempo de espera, consulte &quot;Configuración de parámetros de rendimiento del PDF Generator&quot; en [AEM Instalación e implementación de formularios](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>No puede cambiar la configuración de tiempo de espera para PDF Generator importando un archivo native2pdfconfig.xml personalizado. La configuración de tiempo de espera de ese archivo es solo informativa y muestra la configuración actual en PDF Generator. Para cambiar la configuración de tiempo de espera, consulte &quot;Configuración de parámetros de rendimiento del PDF Generator AEM&quot; en [Instalación e implementación de formularios de la](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
 ## Exportar el archivo de configuración actual {#export-your-current-configuration-file}
 
@@ -52,7 +52,7 @@ De forma predeterminada, PDF Generator convierte sólo la capa predeterminada de
 
 1. En la consola de administración, haga clic en Servicios > PDF Generator > Archivos de configuración > Exportar configuración.
 1. Seleccione Descargar configuración completa y haga clic en Descargar.
-1. En un editor de texto, abra el archivo descargado y, en `AutoCAD` dentro de la `PDFMaker` , añada el texto `convertAllPages="true"`.
+1. En un editor de texto, abra el archivo descargado y, en la etiqueta `AutoCAD` dentro de la etiqueta `PDFMaker`, agregue el texto `convertAllPages="true"`.
 1. En la consola de administración, haga clic en Servicios > PDF Generator > Archivos de configuración > Importar configuración.
 1. Seleccione Importar un archivo de configuración existente, especifique el archivo actualizado y haga clic en Importar.
 

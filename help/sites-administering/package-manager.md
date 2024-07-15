@@ -35,7 +35,7 @@ Un paquete también contiene metainformación de Vault, incluidas las definicion
 
 ## El administrador de paquetes {#package-manager}
 
-AEM El Administrador de paquetes administra los paquetes en la instalación de la. Después de que tenga [ha asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager) puede utilizar el Administrador de paquetes para realizar diversas acciones, como configurar, crear, descargar e instalar paquetes.
+AEM El Administrador de paquetes administra los paquetes en la instalación de la. Una vez que [haya asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager), podrá usar el Administrador de paquetes para diversas acciones, como configurar, generar, descargar e instalar los paquetes.
 
 ### Permisos necesarios {#required-permissions}
 
@@ -54,20 +54,20 @@ Para crear, modificar, cargar e instalar paquetes, los usuarios deben tener los 
 
 Puede acceder al Administrador de paquetes de tres formas:
 
-1. AEM En el menú principal de la > **Herramientas** > **Implementación** > **Paquetes**
-1. Desde [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) uso de la barra superior del conmutador
-1. Directamente accediendo a `http://<host>:<port>/crx/packmgr/`
+1. AEM Desde el menú principal de la > **Herramientas** > **Implementación** > **Paquetes**
+1. De [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) mediante la barra de conmutación superior
+1. Accediendo directamente a `http://<host>:<port>/crx/packmgr/`
 
 ### IU del Administrador de paquetes {#ui}
 
 El Administrador de paquetes se divide en cuatro áreas funcionales principales:
 
-* **Panel de navegación izquierdo** : Este panel le permite filtrar y ordenar la lista de paquetes.
-* **Lista de paquetes** : Esta es la lista de paquetes de la instancia filtrados y ordenados por selecciones en el panel de navegación izquierdo.
-* **Registro de actividad** : Este panel se minimiza al principio y se expande para detallar la actividad del Administrador de paquetes, como cuando se crea o instala un paquete. Hay botones adicionales en la pestaña Registro de actividad para:
+* **Panel de navegación izquierdo**: este panel le permite filtrar y ordenar la lista de paquetes.
+* **Lista de paquetes**: esta es la lista de paquetes de su instancia filtrados y ordenados por selecciones en el panel de navegación izquierdo.
+* **Registro de actividad**: este panel se minimiza al principio y se amplía para detallar la actividad del Administrador de paquetes, como cuándo se crea o instala un paquete. Hay botones adicionales en la pestaña Registro de actividad para:
    * **Borrar registro**
-   * **Mostrar/ocultar**
-* **Barra de herramientas** : La barra de herramientas contiene botones de actualización para el panel de navegación izquierdo y la lista de paquetes, así como botones para buscar, crear y cargar paquetes.
+   * **Mostrar/Ocultar**
+* **Barra de herramientas**: La barra de herramientas contiene botones de actualización para el panel de navegación izquierdo y la lista de paquetes, así como botones para buscar, crear y cargar paquetes.
 
 ![IU del Administrador de paquetes](assets/package-manager-ui.png)
 
@@ -85,7 +85,7 @@ Existen varias acciones que se pueden realizar en un paquete a través de los bo
 * [Descargar](#downloading-packages-to-your-file-system)
 * [Compartir](#share)
 
-Más acciones están disponibles debajo de la **Más** botón.
+Hay más acciones disponibles debajo del botón **Más**.
 
 * [Eliminar](#deleting-packages)
 * [Cobertura](#package-coverage)
@@ -107,7 +107,7 @@ Si el paquete se ha cambiado o nunca se ha creado, el estado se presenta como un
 
 ## Configuración de paquetes {#package-settings}
 
-Un paquete es esencialmente un conjunto de filtros y los datos del repositorio basados en esos filtros. Con la interfaz de usuario del administrador de paquetes, puede hacer clic en un paquete y luego en el icono **Editar** para ver los detalles de un paquete, incluida la siguiente configuración.
+Un paquete es esencialmente un conjunto de filtros y los datos del repositorio basados en esos filtros. Con la interfaz de usuario del Administrador de paquetes, puede hacer clic en un paquete y luego en el botón **Editar** para ver los detalles de un paquete, incluida la siguiente configuración.
 
 * [Configuración general](#general-settings)
 * [Filtros de paquetes](#package-filters)
@@ -119,7 +119,7 @@ Un paquete es esencialmente un conjunto de filtros y los datos del repositorio b
 
 Puede editar una variedad de configuraciones de paquetes para definir información como la descripción del paquete, las dependencias y los detalles del proveedor.
 
-El **Configuración de paquetes** está disponible a través de la **Editar** botón cuando [creación](#creating-a-new-package) o [edición](#viewing-and-editing-package-information) un paquete. Una vez realizados los cambios, haga clic en **Guardar**.
+El cuadro de diálogo **Configuración del paquete** está disponible a través del botón **Editar** al [crear](#creating-a-new-package) o [editar](#viewing-and-editing-package-information) un paquete. Una vez que haya realizado cambios, haga clic en **Guardar**.
 
 ![Cuadro de diálogo Editar paquete, configuración general](assets/general-settings.png)
 
@@ -143,39 +143,39 @@ Revisión oficial
 
 AEM Instalación oficial de la extensión de
 
-![AEM Miniatura oficial de instalación o extensión de la aplicación](assets/official-installation.png)
+AEM ![Miniatura oficial de instalación o extensión](assets/official-installation.png)
 
 Paquete de servicio oficial
 
-![AEM Icono oficial de Service Pack](assets/official-service-pack.png)
+AEM ![Icono oficial de Service Pack](assets/official-service-pack.png)
 
 Utilice un icono único para el paquete. No reutilice un icono utilizado por el Adobe.
 
 ### Filtros de paquetes {#package-filters}
 
-Los filtros identifican los nodos del repositorio que se van a incluir en el paquete. A **Definición de filtro** especifica la siguiente información:
+Los filtros identifican los nodos del repositorio que se van a incluir en el paquete. Una **definición de filtro** especifica la siguiente información:
 
-* El **Ruta raíz** del contenido que desea incluir
+* **Ruta raíz** del contenido que se va a incluir
 * **Reglas** que incluyen o excluyen nodos específicos debajo de la ruta raíz
 
-Añadir reglas mediante el **+** botón. Elimine las reglas con la variable **-** botón.
+Agregar reglas utilizando el botón **+**. Quitar reglas con el botón **-**.
 
-Las reglas se aplican según su orden, por lo que las coloca según sea necesario utilizando la variable **Arriba** y **Abajo** botones de flecha.
+Las reglas se aplican según su orden, así que colóquelas según sea necesario utilizando los botones de flecha **Arriba** y **Abajo**.
 
 Los filtros pueden incluir cero o más reglas. Cuando no se define ninguna regla, el paquete contiene todo el contenido por debajo de la ruta raíz.
 
 Puede definir una o más definiciones de filtro para un paquete. Utilice más de un filtro para incluir contenido de varias rutas raíz.
 
-![Pestaña Filtros](assets/edit-filter.png)
+![Ficha Filtros](assets/edit-filter.png)
 
 Al crear reglas, defina una expresión regular (también conocida como regex, regexp o expresión racional) para especificar todos los nodos que desee incluir o excluir.
 
 | Tipo de regla | Descripción |
 |---|---|
-| include | Include incluirá todos los archivos y carpetas del directorio especificado que coincidan con la expresión regular. Incluir **no** incluir otros archivos o carpetas de la ruta raíz especificada. |
+| include | Include incluirá todos los archivos y carpetas del directorio especificado que coincidan con la expresión regular. Incluir **no** incluirá otros archivos o carpetas de la ruta raíz especificada. |
 | excluir | Excluir excluirá todos los archivos y carpetas que coincidan con la expresión regular. |
 
-Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree el paquete.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a crearse para actualizar su contenido en función de las nuevas definiciones de filtro.
+Los filtros de paquetes se definen con mayor frecuencia la primera vez que [crea el paquete.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a generarse para actualizar su contenido en función de las nuevas definiciones de filtro.
 
 >[!TIP]
 >
@@ -183,11 +183,11 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree
 
 >[!TIP]
 >
->Para obtener información general, consulte [Apache Jackrabbit: filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html) documentación.
+>Para obtener información básica, consulte la [Documentación de Apache Jackrabbit - Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html).
 
 ### Dependencias {#dependencies}
 
-![Pestaña Dependencias](assets/dependencies.png)
+![Ficha Dependencias](assets/dependencies.png)
 
 | Campo | Descripción | Ejemplo/Detalles |
 |---|---|---|
@@ -198,21 +198,21 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [cree
 
 ### Configuración avanzada {#advanced-settings}
 
-![Pestaña Configuración avanzada](assets/advanced-settings.png)
+![Ficha Configuración avanzada](assets/advanced-settings.png)
 
 | Campo | Descripción | Ejemplo/Detalles |
 |---|---|---|
 | Nombre | El nombre del proveedor del paquete | `WKND Media Group` |
 | URL | URL del proveedor | `https://wknd.site` |
 | Vínculo | Vínculo específico del paquete a una página de proveedor | `https://wknd.site/package/` |
-| Requiere | Define si hay alguna restricción al instalar el paquete | **Administrador** - El paquete solo debe instalarse con privilegios de administrador <br>**Restart** AEM - se debe reiniciar el paquete después de instalarlo. |
-| Administración de AC | Especifica cómo se administra la información de control de acceso definida en el paquete cuando se importa el paquete | **Ignorar** - Conservar ACL en el repositorio <br>**Sobrescribir** - Sobrescribir ACL en el repositorio <br>**Combinar** - Combinar ambos conjuntos de ACL <br>**MergePreserve** - Combine el control de acceso del contenido con el proporcionado con el paquete añadiendo las entradas de control de acceso de las entidades principales no presentes en el contenido <br>**Borrar** - Borrar ACL |
+| Requiere | Define si hay alguna restricción al instalar el paquete | AEM **Administrador** - El paquete solo debe instalarse con privilegios de administrador <br>**Reiniciar** - se debe reiniciar después de instalar el paquete, por lo que se requiere un reinicio de la instalación del paquete. |
+| Administración de AC | Especifica cómo se administra la información de control de acceso definida en el paquete cuando se importa el paquete | **Ignorar** - Conservar ACL en el repositorio <br>**Sobrescribir** - Sobrescribir ACL en el repositorio <br>**Combinar** - Combinar ambos conjuntos de ACL <br>**MergePreserve** - Combinar el control de acceso en el contenido con el proporcionado con el paquete agregando las entradas de control de acceso de las principales que no están presentes en el contenido <br>**Borrar** - Borrar ACL |
 
 ### Capturas de pantalla de paquetes {#package-screenshots}
 
 Puede adjuntar varias capturas de pantalla al paquete para proporcionar una representación visual del aspecto del contenido.
 
-![Pestaña Capturas de pantalla](assets/screenshots.png)
+![Ficha Capturas de pantalla](assets/screenshots.png)
 
 ## Acciones de paquete {#package-actions}
 
@@ -222,43 +222,43 @@ Se pueden realizar muchas acciones en un paquete.
 
 1. [Acceda al Administrador de paquetes.](#accessing)
 
-1. Clic **Crear paquete**.
+1. Haga clic en **Crear paquete**.
 
    >[!TIP]
    >
    >Si la instancia tiene muchos paquetes, puede haber una estructura de carpetas configurada. En estos casos, es más fácil navegar a la carpeta de destino requerida antes de crear el nuevo paquete.
 
-1. En el **Nuevo paquete** , introduzca los campos siguientes:
+1. En el cuadro de diálogo **Nuevo paquete**, introduzca los campos siguientes:
 
    ![Cuadro de diálogo Nuevo paquete](assets/new-package-dialog.png)
 
-   * **Nombre del paquete** - Seleccione un nombre descriptivo para ayudarle (y a otros) a identificar fácilmente el contenido del paquete.
+   * **Nombre del paquete**: seleccione un nombre descriptivo para ayudarle (y a otros) a identificar fácilmente el contenido del paquete.
 
-   * **Versión** - Este es un campo de texto para que usted indique una versión. Se anexa al nombre del paquete para formar el nombre del archivo zip.
+   * **Versión**: este es un campo de texto para que usted indique una versión. Se anexa al nombre del paquete para formar el nombre del archivo zip.
 
-   * **Grupo** : nombre del grupo de destino (o carpeta). Los grupos le ayudan a organizar sus paquetes. Se crea una carpeta para el grupo si aún no existe. Si deja el nombre del grupo en blanco, se creará el paquete en la lista de paquetes principal.
+   * **Grupo**: este es el nombre del grupo de destino (o carpeta). Los grupos le ayudan a organizar sus paquetes. Se crea una carpeta para el grupo si aún no existe. Si deja el nombre del grupo en blanco, se creará el paquete en la lista de paquetes principal.
 
-1. Clic **OK** para crear el paquete.
+1. Haga clic en **Aceptar** para crear el paquete.
 
 1. AEM La lista de paquetes nuevos se encuentra en la parte superior de la lista de paquetes.
 
    ![Nuevo paquete](assets/new-package.png)
 
-1. Clic **Editar** para definir el [contenido del paquete.](#package-contents) Clic **Guardar** cuando haya terminado de editar la configuración.
+1. Haga clic en **Editar** para definir el contenido del [paquete.](#package-contents) Haz clic en **Guardar** cuando hayas terminado de editar la configuración.
 
-1. Ahora puede [Generar](#building-a-package) su paquete.
+1. Ahora puede [compilar](#building-a-package) su paquete.
 
 No es obligatorio crear inmediatamente el paquete después de crearlo. Un paquete sin compilar no contiene contenido y consiste únicamente en los datos de filtro y otros metadatos del paquete.
 
 ### Creación de un paquete {#building-a-package}
 
-A menudo, los paquetes se crean al mismo tiempo que usted [creación del paquete](#creating-a-new-package), pero puede volver más tarde para compilar o volver a compilar el paquete. Esto puede resultar útil si el contenido del repositorio ha cambiado o los filtros del paquete han cambiado.
+Un paquete se crea a menudo al mismo tiempo que [crea el paquete](#creating-a-new-package), pero puede volver más tarde para compilarlo o reconstruirlo. Esto puede resultar útil si el contenido del repositorio ha cambiado o los filtros del paquete han cambiado.
 
 1. [Acceda al Administrador de paquetes.](#accessing)
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Generar**. Un cuadro de diálogo le pedirá que confirme que desea crear el paquete, ya que el contenido existente se sobrescribirá.
+1. Haga clic en **Generar**. Un cuadro de diálogo le pedirá que confirme que desea crear el paquete, ya que el contenido existente se sobrescribirá.
 
 1. Haga clic en **Aceptar**. AEM crea el paquete, enumerando todo el contenido añadido al paquete tal y como lo hace en la lista de actividad. AEM Cuando se completa, muestra una confirmación de que el paquete se ha creado y (al cerrar el cuadro de diálogo) actualiza la información de la lista de paquetes.
 
@@ -270,11 +270,11 @@ AEM Una vez cargado un paquete en el repositorio de, puede modificar su configur
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Editar** y actualice el **[Configuración de paquetes](#package-settings)** según sea necesario.
+1. Haga clic en **Editar** y actualice **[Configuración del paquete](#package-settings)** según sea necesario.
 
-1. Clic **Guardar** para guardar.
+1. Haga clic en **Guardar** para guardar.
 
-Es posible que tenga que [reconstruir el paquete](#building-a-package) para actualizar su contenido en función de los cambios realizados.
+Es posible que tenga que [reconstruir el paquete](#building-a-package) para actualizar su contenido en función de los cambios que ha realizado.
 
 ### Reajuste de un paquete {#rewrapping-a-package}
 
@@ -284,11 +284,11 @@ Una vez que se ha creado un paquete, se puede volver a empaquetar. Al volver a a
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Editar** y actualice el **[Configuración de paquetes](#package-settings)** según sea necesario.
+1. Haga clic en **Editar** y actualice **[Configuración del paquete](#package-settings)** según sea necesario.
 
-1. Clic **Guardar** para guardar.
+1. Haga clic en **Guardar** para guardar.
 
-1. Clic **Más** > **Reajustar** y un cuadro de diálogo le pedirá confirmación.
+1. Haga clic en **Más** > **Reajustar** y un cuadro de diálogo solicitará confirmación.
 
 ### Visualización de otras versiones de paquetes {#other-versions}
 
@@ -298,7 +298,7 @@ Dado que cada versión de un paquete aparece en la lista como cualquier otro paq
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Más** > **Otras versiones** y se abre un cuadro de diálogo con una lista de otras versiones del mismo paquete con información de estado.
+1. Haga clic en **Más** > **Otras versiones** y se abrirá un cuadro de diálogo con una lista de otras versiones del mismo paquete con información de estado.
 
 ### Visualización del contenido del paquete y prueba de la instalación {#viewing-package-contents-and-testing-installation}
 
@@ -308,11 +308,11 @@ Una vez creado un paquete, puede ver su contenido.
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Para ver el contenido, haga clic en **Más** > **Contenido** y Administrador de paquetes muestra todo el contenido del paquete en el registro de actividades.
+1. Para ver el contenido, haga clic en **Más** > **Contenido** y el Administrador de paquetes mostrará todo el contenido del paquete en el registro de actividades.
 
    ![Contenido del paquete](assets/package-contents.png)
 
-1. Para realizar una ejecución en seco de la instalación, haga clic en **Más** > **Probar instalación** y el Administrador de paquetes registran los resultados como si se hubiera realizado la instalación.
+1. Para realizar una ejecución en seco de la instalación, haga clic en **Más** > **Probar la instalación** y en los informes del Administrador de paquetes del registro de actividad para ver los resultados como si se hubiera realizado la instalación.
 
    ![Probar instalación](assets/test-install.png)
 
@@ -322,13 +322,13 @@ Una vez creado un paquete, puede ver su contenido.
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Haga clic en **Descargar** o el nombre de archivo vinculado del paquete en el área de detalles del paquete.
+1. Haga clic en el botón **Descargar** o en el nombre de archivo vinculado del paquete en el área de detalles del paquete.
 
 1. AEM Descarga el paquete en su equipo.
 
 ### Uso compartido de un paquete {#share}
 
-Package Share era un servicio público centralizado para distribuir paquetes de contenido. Package Share ha sido reemplazado por [Distribución de software](#software-distribution) y este botón ya no funciona.
+Package Share era un servicio público centralizado para distribuir paquetes de contenido. Uso compartido de paquetes ha sido reemplazado por [Distribución de software](#software-distribution) y este botón ya no funciona.
 
 ### Carga de paquetes desde el sistema de archivos {#uploading-packages-from-your-file-system}
 
@@ -336,18 +336,18 @@ Package Share era un servicio público centralizado para distribuir paquetes de 
 
 1. Seleccione la carpeta del grupo en la que desea cargar el paquete.
 
-1. Haga clic en **Cargar paquete** botón.
+1. Haga clic en el botón **Cargar paquete**.
 
 1. Proporcione la información necesaria sobre el paquete cargado.
 
-   ![Cuadro de diálogo Cargar paquete](assets/package-upload-dialog.png)
+   ![Cuadro de diálogo de carga de paquetes](assets/package-upload-dialog.png)
 
-   * **Paquete** - Utilice el **Examinar...** para seleccionar el paquete necesario del sistema de archivos local.
-   * **Forzar carga** : Si ya existe un paquete con este nombre, esta opción fuerza la carga y sobrescribe el paquete existente.
+   * **Paquete** - Utilice el botón **Examinar...** para seleccionar el paquete requerido de su sistema de archivos local.
+   * **Forzar carga**: si ya existe un paquete con este nombre, esta opción fuerza la carga y sobrescribe el paquete existente.
 
-1. Clic **OK** y el paquete seleccionado se carga y la lista de paquetes se actualiza en consecuencia.
+1. Haga clic en **Aceptar**, el paquete seleccionado se cargará y la lista de paquetes se actualizará en consecuencia.
 
-AEM El contenido del paquete ahora existe en la, pero para que el contenido esté disponible para su uso, asegúrese de lo siguiente [instalar el paquete](#installing-packages).
+AEM El contenido del paquete ahora existe en la, pero para que el contenido esté disponible para su uso, asegúrese de [instalar el paquete](#installing-packages).
 
 ### Validación de paquetes {#validating-packages}
 
@@ -363,11 +363,11 @@ El Administrador de paquetes puede realizar las siguientes validaciones:
 
 ##### Validar importaciones de paquetes OSGi {#osgi-package-imports}
 
-**Qué se marca**
+**Lo que se ha comprobado**
 
-Esta validación inspecciona el paquete para todos los archivos JAR (paquetes OSGi) y extrae su `manifest.xml` AEM (que contiene las dependencias con versiones en las que se basa dicho paquete OSGi) y verifica la instancia de la exporta dichas dependencias con las versiones correctas.
+AEM Esta validación inspecciona el paquete para todos los archivos JAR (paquetes OSGi), extrae sus `manifest.xml` (que contienen las dependencias con versiones de las que depende dicho paquete OSGi) y verifica la instancia que exporta las exportaciones de las instancias mencionadas dependencias con las versiones correctas.
 
-**Cómo se realiza el informe**
+**Cómo se informa**
 
 AEM Cualquier dependencia con versiones que la instancia de la instancia de la aplicación no pueda satisfacer se enumera en el registro de actividad del administrador de paquetes.
 
@@ -381,11 +381,11 @@ Para resolver errores debido a paquetes OSGi no satisfechos, se debe ajustar la 
 
 ##### Validar capas {#overlays}
 
-**Qué se marca**
+**Lo que se ha comprobado**
 
 AEM Esta validación determina si el paquete que se está instalando contiene un archivo que ya se superpone en la instancia de destino de la.
 
-Por ejemplo, dada una superposición existente en `/apps/sling/servlet/errorhandler/404.jsp`, un paquete que contiene `/libs/sling/servlet/errorhandler/404.jsp`, de forma que cambie el archivo existente en `/libs/sling/servlet/errorhandler/404.jsp`.
+Por ejemplo, dada una superposición existente en `/apps/sling/servlet/errorhandler/404.jsp`, un paquete que contiene `/libs/sling/servlet/errorhandler/404.jsp`, de forma que cambiará el archivo existente en `/libs/sling/servlet/errorhandler/404.jsp`.
 
 **Cómo se informa**
 
@@ -397,7 +397,7 @@ Un estado de error significa que el paquete intenta implementar un archivo que y
 
 **Resolución de errores**
 
-Para resolver este problema, el responsable del archivo de superposición en `/apps` debe revisar los cambios en el archivo superpuesto en `/libs` e incorporar los cambios según sea necesario en la superposición ( `/apps`) y vuelva a implementar el archivo superpuesto.
+Para resolver este problema, el mantenedor del archivo de superposición en `/apps` debe revisar los cambios del archivo superpuesto en `/libs` e incorporar los cambios según sea necesario en la superposición ( `/apps`), y volver a implementar el archivo superpuesto.
 
 >[!NOTE]
 >
@@ -405,11 +405,11 @@ Para resolver este problema, el responsable del archivo de superposición en `/a
 
 ##### Validar ACL {#acls}
 
-**Qué se marca**
+**Lo que se ha comprobado**
 
 Esta validación comprueba qué permisos se están agregando, cómo se administrarán (combinar/reemplazar) y si los permisos actuales se verán afectados.
 
-**Cómo se realiza el informe**
+**Cómo se informa**
 
 Los permisos se describen en el registro de actividad del administrador de paquetes.
 
@@ -440,9 +440,9 @@ La validación siempre debe producirse después de cargar el paquete, pero antes
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Para validar el paquete, haga clic en **Más** > **Validate**,
+1. Para validar el paquete, haga clic en **Más** > **Validar**,
 
-1. En el cuadro de diálogo modal que aparece a continuación, utilice las casillas de verificación para seleccionar los tipos de validación y comenzar la validación haciendo clic en **Validate**.
+1. En el cuadro de diálogo modal que aparece a continuación, utilice las casillas de verificación para seleccionar los tipos de validación y comience la validación haciendo clic en **Validar**.
 
 1. Las validaciones seleccionadas se ejecutan y los resultados se muestran en el registro de actividad del administrador de paquetes.
 
@@ -454,13 +454,13 @@ La solicitud del POST tiene la siguiente forma.
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
 ```
 
-El `type` puede ser cualquier lista sin ordenar, separada por comas, que consta de:
+El parámetro `type` puede ser cualquier lista desordenada separada por comas que consista en:
 
 * `osgiPackageImports`
 * `overlays`
 * `acls`
 
-El valor de `type` el valor predeterminado es `osgiPackageImports` si no se pasa explícitamente.
+El valor predeterminado de `type` es `osgiPackageImports` si no se pasa explícitamente.
 
 Cuando utilice cURL, ejecute una instrucción similar a la siguiente:
 
@@ -478,7 +478,7 @@ Los paquetes se definen mediante sus filtros. Puede hacer que el Administrador d
 
 1. Abra los detalles del paquete en la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Más** > **Cobertura**.
+1. Haga clic en **Más** > **Cobertura**.
 
 1. Los detalles de cobertura se enumeran en el registro de actividad.
 
@@ -500,45 +500,45 @@ Antes de la instalación del paquete, el Administrador de paquetes crea automát
 >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* A continuación, cuando finalice la instalación, reactive WorkflowLauncher.
 >
->Al desactivar WorkflowLauncher, se garantiza que el marco del importador de recursos no manipule los recursos (de forma involuntaria) durante la instalación.
+>Al desactivar WorkflowLauncher, se garantiza que el marco del importador de Assets no manipule (involuntariamente) los recursos durante la instalación.
 
 1. [Acceda al Administrador de paquetes.](#accessing)
 
 1. Abra los detalles del paquete que desea instalar desde la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Haga clic en **Instalar** en los detalles del elemento o en el **Instalar** en el estado del paquete.
+1. Haga clic en el botón **Instalar** en los detalles del elemento o en el vínculo **Instalar** en el estado del paquete.
 
 1. Un cuadro de diálogo solicitará confirmación y permitirá que se especifiquen opciones adicionales.
 
-   * **Extraer solo** : extraiga el paquete solo para que no se cree ninguna instantánea y, por lo tanto, no sea posible la desinstalación
-   * **Guardar umbral** : Número de nodos transitorios hasta que se activa el guardado automático (aumento si se producen excepciones de modificación simultáneas)
+   * **Extraer solo**: extraiga el paquete solamente para que no se cree ninguna instantánea y, por lo tanto, no sea posible realizar la desinstalación
+   * **Guardar umbral**: número de nodos transitorios hasta que se activa el guardado automático (aumente si se producen excepciones de modificación simultáneas)
    * **Extraer subpaquetes** - Habilitar la extracción automática de subpaquetes
-   * **Administración de control de acceso** - Especifica cómo se gestiona la información de control de acceso definida en el paquete cuando se instala el paquete (las opciones son las mismas que las [configuración avanzada de paquetes](#advanced-settings))
-   * **Administración de dependencias** - Especificar cómo se gestionan las dependencias durante la instalación
+   * **Control de acceso**: especifica cómo se administra la información de control de acceso definida en el paquete cuando se instala el paquete (las opciones son las mismas que la [configuración avanzada del paquete](#advanced-settings))
+   * **Administración de dependencias**: especifique cómo se administran las dependencias durante la instalación
 
-1. Clic **Instalar**.
+1. Haga clic en **Instalar**.
 
 1. El registro de actividad detalla el progreso de la instalación.
 
-Una vez finalizada y correcta la instalación, se actualiza la lista de paquetes y se añade la palabra **Instalado** aparece en el estado del paquete.
+Una vez completada y completada la instalación, se actualiza la lista de paquetes y aparece la palabra **Instalado** en el estado del paquete.
 
 ### Reinstalación de paquetes {#reinstalling-packages}
 
-La reinstalación de paquetes realiza los mismos pasos en un paquete ya instalado que se procesan cuando [instalar inicialmente el paquete.](#installing-packages)
+La reinstalación de paquetes realiza los mismos pasos en un paquete ya instalado que se procesan al [instalar inicialmente el paquete.](#installing-packages)
 
 ### Carga e instalación basadas en el sistema de archivos {#file-system-based-upload-and-installation}
 
 Puede renunciar por completo al Administrador de paquetes al instalar paquetes. AEM Puede detectar paquetes colocados en una ubicación específica del sistema de archivos local del equipo host y cargarlos e instalarlos automáticamente.
 
-1. AEM En la carpeta de instalación de la, hay un `crx-quicksart` carpeta junto al frasco y `license.properties` archivo. Cree una carpeta llamada `install` bajo `crx-quickstart` que genera la ruta `<aem-home>/crx-quickstart/install`.
+1. AEM En la carpeta de instalación de la, hay una carpeta `crx-quicksart` junto al archivo jar y `license.properties`. Cree una carpeta con el nombre `install` en `crx-quickstart`, dando como resultado la ruta de acceso `<aem-home>/crx-quickstart/install`.
 
 1. En esta carpeta, añada los paquetes. Se cargarán e instalarán automáticamente en su instancia.
 
 1. Una vez completada la carga y la instalación, puede ver los paquetes en el Administrador de paquetes como si hubiera utilizado la interfaz de usuario del Administrador de paquetes para instalarlos.
 
-Si la instancia se está ejecutando, la carga y la instalación comienzan inmediatamente cuando la añade al paquete en `install` carpeta
+Si la instancia se está ejecutando, la carga y la instalación comienzan inmediatamente cuando la agrega al paquete en la carpeta `install`
 
-Si la instancia no se está ejecutando, los paquetes se colocan en la variable `install` Las carpetas se instalan al inicio en orden alfabético.
+Si la instancia no se está ejecutando, los paquetes colocados en la carpeta `install` se instalan al inicio en orden alfabético.
 
 ### Desinstalación de paquetes {#uninstalling-packages}
 
@@ -548,7 +548,7 @@ Al desinstalar un paquete, el contenido del repositorio se revierte a la instant
 
 1. Abra los detalles del paquete que desea desinstalar de la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Más** > **Desinstalar**, para eliminar el contenido de este paquete del repositorio.
+1. Haga clic en **Más** > **Desinstalar** para quitar el contenido de este paquete del repositorio.
 
 1. Un cuadro de diálogo solicitará confirmación y enumerará todos los cambios que se realizan.
 
@@ -562,7 +562,7 @@ Al eliminar un paquete, solo se eliminan sus detalles del Administrador de paque
 
 1. Abra los detalles del paquete que desee eliminar de la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. El Administrador de paquetes solicita confirmación para eliminar el paquete. Clic **OK** para confirmar la eliminación.
+1. El Administrador de paquetes solicita confirmación para eliminar el paquete. Haga clic en **Aceptar** para confirmar la eliminación.
 
 1. La información del paquete se elimina y los detalles se incluyen en el registro de actividad.
 
@@ -574,7 +574,7 @@ Repita el contenido de un paquete para instalarlo en la instancia de publicació
 
 1. Abra los detalles del paquete que desee duplicar desde la lista de paquetes haciendo clic en el nombre del paquete.
 
-1. Clic **Más** > **Replicar**.
+1. Haga clic en **Más** > **Replicar**.
 
 1. El paquete se duplica y los detalles se incluyen en el registro de actividad.
 
@@ -582,9 +582,9 @@ Repita el contenido de un paquete para instalarlo en la instancia de publicació
 
 AEM AEM Los paquetes de se pueden utilizar para crear y compartir contenido entre entornos de trabajo de la comunidad de la comunidad de usuarios.
 
-[Distribución de software](https://downloads.experiencecloud.adobe.com) AEM es un servicio centralizado, diseñado para simplificar la búsqueda y descarga de paquetes de la aplicación de la.
+AEM [Distribución de software](https://downloads.experiencecloud.adobe.com) es un servicio centralizado diseñado para simplificar la búsqueda y la descarga de paquetes de software de la red de distribución de software.
 
-Para obtener más información, consulte la [Documentación de distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
+Para obtener más información, consulte la [documentación de distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
 
 >[!NOTE]
 >

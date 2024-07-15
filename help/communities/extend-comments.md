@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Componente Ampliar comentarios  {#extend-comments-component}
 
-La intención de [extensivo](client-customize.md#extensions) un componente predeterminado es modificar el aspecto o el comportamiento de un componente para usos específicos.
+La intención de [ampliar](client-customize.md#extensions) un componente predeterminado es modificar el aspecto o el comportamiento de un componente para usos específicos.
 
 La ruta al componente es única y hace referencia al componente predeterminado como un supertipo de recurso. Hay menos riesgo, ya que el ámbito es limitado en comparación con el ámbito global de una superposición de componentes.
 
 >[!NOTE]
 >
->Ampliación de un [superpuesto](client-customize.md#overlays) no es compatible.
+>No se admite la ampliación de un componente [overlay](client-customize.md#overlays).
 
 ## Ejemplos {#example}
 
@@ -32,7 +32,7 @@ AEM Supongamos que el encabezado del componente Comentario debe mostrarse con un
 
 Para implementar esta solución, cree un componente que amplíe (anule) el existente y modifique el script Handlebars. El área del sitio que utiliza los nuevos comentarios puede utilizar la ampliada, mientras que los sitios que utilizan la apariencia predeterminada no se ven afectados.
 
-El componente de comentario es en realidad uno de los dos componentes que componen el sistema de comentarios. Por lo tanto, hay dos componentes que se deben ampliar: *comentarios* y *comentario*. La secuencia de comandos que se va a editar se encuentra en *comentario* de componente `header.hbs` archivo, mientras que el principal *comentarios* (el sistema de comentarios) es lo que un autor añade a la página.
+El componente de comentario es en realidad uno de los dos componentes que componen el sistema de comentarios. Por lo tanto, hay dos componentes que ampliar: *comments* y *comment*. El script que se va a editar se encuentra en el archivo `header.hbs` del componente *comment*, mientras que el componente principal *comments* (el sistema de comentarios) es lo que un autor agrega a la página.
 
 Para ampliar los comentarios, debe:
 

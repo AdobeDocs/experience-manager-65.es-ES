@@ -24,4 +24,4 @@ Con el andamiaje puede crear un formulario (un andamio) con campos que reflejen 
 
 >[!NOTE]
 >
->Aunque hay un andamiaje [modo](/help/sites-authoring/author-environment-tools.md#page-modes) Si está disponible, el mantenimiento y la creación de andamios y la creación de nuevas páginas a partir de andamios se realizan en la IU clásica. Consulte [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) en la documentación de creación de la IU clásica para obtener más información.
+>Aunque hay un modo de andamiaje [mode](/help/sites-authoring/author-environment-tools.md#page-modes) disponible, el mantenimiento y la creación de andamios y la creación de páginas nuevas a partir de andamios se realizan en la IU clásica. Consulte [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) en la documentación de creación de IU clásica para obtener más información.

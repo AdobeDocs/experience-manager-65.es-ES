@@ -46,7 +46,7 @@ En la vista de Backbone, hay un mapa de eventos que asigna los distintos eventos
 
 Cuando se inicializa una vista, esta llama a su modelo correspondiente para recuperar datos del servidor. Una vez que todos los datos requeridos por una vista estén disponibles, la vista procesará los datos en el formato especificado por la plantilla HTML. Varias vistas pueden compartir el mismo modelo para la comunicación.
 
-![AEM vista de Backbone de formularios](do-not-localize/aem_forms_workflow.png)
+AEM ![Vista de red troncal de formularios de](do-not-localize/aem_forms_workflow.png)
 
 Un ejemplo:
 

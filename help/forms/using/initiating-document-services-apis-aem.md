@@ -53,14 +53,14 @@ La pestaña Opciones de entorno le permite establecer varias opciones de procesa
 * *Nivel de registro de trabajo*: especifica el nivel de registro para los registros de procesamiento.
 * *Validar solo*: comprueba la validez del DDX de entrada.
 
-* *Finalizar al producirse un error*: especifica si la llamada al servicio Assembler debe fallar si hay un error. El valor predeterminado es False.
+* *Fallo al producirse el error*: especifica si la llamada al servicio Assembler debe fallar en caso de error. El valor predeterminado es False.
 
 #### Documentos de salida {#output-documents}
 
 En función del DDX de entrada, la API de invocación puede producir varios documentos de salida. La pestaña Documentos de salida permite seleccionar dónde se guardará el documento de salida.
 
 1. *Guardar salida en carga útil*: guarda los documentos de salida en la carpeta de carga útil o sobrescribe la carga útil, en el caso de que esta sea un archivo.
-1. *Mapa del documento de salida*: permite especificar explícitamente dónde guardar cada documento de salida agregando una entrada por documento. Cada entrada especifica el documento y la ubicación de guardado. Un documento de salida puede sobrescribir la carga útil o guardarse en la carpeta de carga útil. Resulta útil cuando hay varios documentos de salida.
+1. *Mapa del documento de salida*: le permite especificar explícitamente dónde guardar cada documento de salida agregando una entrada por documento. Cada entrada especifica el documento y la ubicación de guardado. Un documento de salida puede sobrescribir la carga útil o guardarse en la carpeta de carga útil. Resulta útil cuando hay varios documentos de salida.
 
 1. *Registro de trabajo*: especifica dónde guardar el documento de registro de trabajo, lo que resulta útil para solucionar errores.
 

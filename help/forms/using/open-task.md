@@ -32,11 +32,11 @@ Otros formularios se guardan como borrador en la pestaña Borradores. Consulte [
 
 1. Seleccione la tarea para abrirla.
 
-   Puede seleccionar **Ver resumen** para ver instrucciones adicionales especificadas en el proceso de Workbench.
+   Puede seleccionar **Ver resumen** para ver las instrucciones adicionales especificadas en el proceso de Workbench.
 
 **Para abrir una aplicación**
 
-1. Seleccione el **aplicación** en el **Forms** pestaña.
+1. Seleccione la **aplicación** en la ficha **Forms**.
 
    Al seleccionar una aplicación, la descripción de la aplicación se muestra debajo de su nombre. Después de la descripción, se muestran la acción o las acciones de usuario asociadas con la aplicación.
 
@@ -45,4 +45,4 @@ Otros formularios se guardan como borrador en la pestaña Borradores. Consulte [
 
 1. Seleccione la tarea para abrirla.
 
-   Puede seleccionar **Ver resumen** para ver instrucciones adicionales especificadas para la aplicación.
+   Puede seleccionar **Ver resumen** para ver las instrucciones adicionales especificadas para la aplicación.

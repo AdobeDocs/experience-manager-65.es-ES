@@ -20,24 +20,24 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->En esta sección se describe la configuración de la segmentación al utilizar ContextHub. Si utiliza la funcionalidad de Client Context, consulte la documentación pertinente para [configuración de la segmentación para Client Context](/help/sites-administering/campaign-segmentation.md).
+>En esta sección se describe la configuración de la segmentación al utilizar ContextHub. Si utiliza la funcionalidad Client Context, consulte la documentación pertinente para [configurar la segmentación para Client Context](/help/sites-administering/campaign-segmentation.md).
 >
 
 La segmentación es una consideración clave al crear una campaña. Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md) para obtener información sobre cómo funciona la segmentación y los términos clave.
 
 Según la información que ya haya recopilado acerca de los visitantes del sitio y los objetivos que desee lograr, debe definir los segmentos y las estrategias necesarios para el contenido de destino.
 
-Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la variable [Personalización](/help/sites-authoring/personalization.md) de la página web. Las [Actividades](/help/sites-authoring/activitylib.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
+Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la sección [Personalization](/help/sites-authoring/personalization.md) del sitio web. Las [Actividades](/help/sites-authoring/activitylib.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
 AEM Le permite personalizar fácilmente la experiencia de sus usuarios. También le permite verificar los resultados de las definiciones de segmentos.
 
 ## Acceso a segmentos {#accessing-segments}
 
-El [Audiencias](/help/sites-authoring/managing-audiences.md) La consola de se utiliza para administrar segmentos para ContextHub o Client Context y audiencias para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub. Para [Segmentos de ClientContext](/help/sites-administering/campaign-segmentation.md) y segmentos de Adobe Target, consulte la documentación pertinente.
+La consola [Audiencias](/help/sites-authoring/managing-audiences.md) se usa para administrar segmentos para ContextHub o Client Context y audiencias para tu cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub. Para [segmentos de Client Context](/help/sites-administering/campaign-segmentation.md) y segmentos de Adobe Target, consulte la documentación pertinente.
 
-Para acceder a sus segmentos, debe seleccionar su configuración. En la navegación global, seleccione **Navegación > Personalización > Audiencias**. Verá las configuraciones disponibles:
+Para acceder a sus segmentos, debe seleccionar su configuración. En la navegación global, seleccione **Navegación > Personalization > Audiencias**. Verá las configuraciones disponibles:
 
-![Audiencias: configuraciones](assets/segmentation-access-confs.png)
+![Audiencias - Configuraciones](assets/segmentation-access-confs.png)
 
 Seleccione la configuración para ver los segmentos como, por ejemplo, WKND Site:
 
@@ -45,13 +45,13 @@ Seleccione la configuración para ver los segmentos como, por ejemplo, WKND Site
 
 ## Editor de segmentos {#segment-editor}
 
-El **Editor de segmentos** permite modificar fácilmente un segmento. Para editar un segmento, seleccione uno en la [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) y haga clic en **Editar** botón.
+El **Editor de segmentos** le permite modificar fácilmente un segmento. Para editar un segmento, seleccione uno en la [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) y haga clic en el botón **Editar**.
 
-![segmenteditor](assets/segmenteditor.png)
+![editor de segmentos](assets/segmenteditor.png)
 
 Con el explorador de componentes, puede añadir contenedores **AND** y **OR** para definir la lógica del segmento. A continuación, agregue componentes adicionales para comparar propiedades y valores o secuencias de comandos de referencia y otros segmentos para definir los criterios de selección (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) y el escenario exacto para seleccionar el segmento.
 
-Cuando toda la instrucción se evalúa como verdadera, el segmento se ha resuelto. Si hay varios segmentos aplicables, la variable **Aumentar** también se utiliza el factor. Consulte [Creación de un nuevo segmento](#creating-a-new-segment) para obtener más información sobre [factor de ampliación.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Cuando toda la instrucción se evalúa como verdadera, el segmento se ha resuelto. Si hay varios segmentos aplicables, también se usa el factor **Aumento**. Consulte [Creación de un nuevo segmento](#creating-a-new-segment) para obtener más información sobre el [factor de ampliación.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -65,10 +65,10 @@ Los siguientes contenedores están disponibles de forma predeterminada y le perm
  <tbody>
   <tr>
    <td>Contenedor AND<br /> </td>
-   <td>El operador booleano AND<br /> </td>
+   <td>El operador booleano AND <br /> </td>
   </tr>
   <tr>
-   <td>Contenedor O<br /> </td>
+   <td>Contenedor OR<br /> </td>
    <td>El operador boolean OR</td>
   </tr>
  </tbody>
@@ -81,16 +81,16 @@ Las siguientes comparaciones de segmentos están disponibles y listas para usars
 <table>
  <tbody>
   <tr>
-   <td>Propiedad-Valor<br /> </td>
+   <td>Valor de propiedad<br /> </td>
    <td>Compara una propiedad de un almacén con un valor definido<br /> </td>
   </tr>
   <tr>
    <td>Propiedad-Propiedad</td>
-   <td>Compara una propiedad de un almacén con otra propiedad<br /> </td>
+   <td>Compara una propiedad de un almacén con otra propiedad <br /> </td>
   </tr>
   <tr>
    <td>Propiedad-Referencia de segmento</td>
-   <td>Compara una propiedad de un almacén con otro segmento referenciado<br /> </td>
+   <td>Compara una propiedad de un almacén con otro segmento al que se hace referencia<br /> </td>
   </tr>
   <tr>
    <td>Propiedad-Referencia de script</td>
@@ -120,7 +120,7 @@ Las siguientes referencias están disponibles listas para usarse y para vincular
 <table>
  <tbody>
   <tr>
-   <td>Referencia de segmentos<br /> </td>
+   <td>Referencia de segmento<br /> </td>
    <td>Evaluación del segmento al que se hace referencia</td>
   </tr>
   <tr>
@@ -136,11 +136,11 @@ Para definir el nuevo segmento:
 
 1. Después de [acceder a los segmentos](/help/sites-administering/segmentation.md#accessing-segments), [vaya a la carpeta](#organizing-segments) donde desea crear el segmento.
 
-1. haga clic en el botón Create y seleccione **Crear segmento de ContextHub**.
+1. haga clic en el botón Crear y seleccione **Crear segmento de ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. En el **Nuevo segmento de ContextHub**, introduzca un título para el segmento y un valor de ampliación si es necesario y, a continuación, haga clic en **Crear**.
+1. En el **Nuevo segmento de ContextHub**, escribe un título para el segmento y un valor de ampliación si es necesario y, a continuación, haz clic en **Crear**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -156,7 +156,7 @@ Para definir el nuevo segmento:
 
    Establezca siempre un **Tipo de datos** si es posible, para garantizar que las comparaciones se evalúen correctamente. Consulte [Comparaciones](/help/sites-administering/segmentation.md#comparisons) para obtener más información.
 
-1. Clic **OK** para guardar su definición:
+1. Haga clic en **Aceptar** para guardar la definición:
 1. Agregue más componentes según sea necesario. Puede formular expresiones boolean utilizando los componentes de contenedor para las comparaciones AND y OR (consulte [Uso de los contenedores AND y OR](/help/sites-administering/segmentation.md#using-and-and-or-containers) más abajo). Con el editor de segmentos puede eliminar componentes que ya no se necesitan o arrastrarlos a nuevas posiciones dentro de la instrucción.
 
 ### Uso de contenedores AND y OR {#using-and-and-or-containers}
@@ -236,7 +236,7 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 ### Cree una nueva carpeta {#create-folder}
 
-1. Después [acceso a los segmentos](#accessing-segments), haga clic en **Crear** y seleccione **Carpeta**.
+1. Después de [acceder a los segmentos](#accessing-segments), haga clic en el botón **Crear** y seleccione **Carpeta**.
 
    ![Agregar carpeta](assets/contexthub-create-segment.png)
 
@@ -259,11 +259,11 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 ### Modificar carpetas existentes {#modify-folders}
 
-1. Después [acceso a los segmentos](#accessing-segments), haga clic en la carpeta que desee modificar para seleccionarla.
+1. Después de [acceder a los segmentos](#accessing-segments), haga clic en la carpeta que desee modificar para seleccionarla.
 
    ![Seleccionar carpeta](assets/contexthub-select-folder.png)
 
-1. Clic **Cambiar nombre** en la barra de herramientas para cambiar el nombre de la carpeta.
+1. Haga clic en **Cambiar nombre** en la barra de herramientas para cambiar el nombre de la carpeta.
 
 1. Proporcione un nuevo **Título de carpeta** y haga clic en **Guardar**.
 
@@ -275,25 +275,25 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 
 ### Eliminar una carpeta
 
-1. Después [acceso a los segmentos](#accessing-segments), haga clic en la carpeta que desee modificar para seleccionarla.
+1. Después de [acceder a los segmentos](#accessing-segments), haga clic en la carpeta que desee modificar para seleccionarla.
 
    ![Seleccionar carpeta](assets/contexthub-select-folder.png)
 
-1. Clic **Eliminar** en la barra de herramientas para eliminar la carpeta.
+1. Haga clic en **Eliminar** en la barra de herramientas para eliminar la carpeta.
 
 1. Un cuadro de diálogo presenta una lista de carpetas seleccionadas para su eliminación.
 
    ![Confirmar eliminación](assets/contexthub-confirm-segment-delete.png)
 
-   * Clic **Eliminar** para confirmar.
-   * Clic **Cancelar** para cancelar.
+   * Haga clic en **Eliminar** para confirmar.
+   * Haga clic en **Cancelar** para cancelar.
 
 1. Si alguna de las carpetas seleccionadas contiene subcarpetas o segmentos, su eliminación debe confirmarse.
 
    ![Confirmar la eliminación de tareas secundarias](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Clic **Forzar eliminación** para confirmar.
-   * Clic **Cancelar** para cancelar.
+   * Haga clic en **Forzar eliminación** para confirmar.
+   * Haga clic en **Cancelar** para cancelar.
 
 >[!NOTE]
 >
@@ -322,7 +322,7 @@ O si no se resuelve:
 
 Estas pruebas también se pueden realizar en páginas de contenido y en combinación con contenido de destino y **Actividades** y **Experiencias** relacionadas.
 
-Si ha configurado una actividad y experiencia utilizando el ejemplo de segmento de grupo de edad principal anterior, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre la configuración de una actividad de, consulte la [documentación sobre creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md).
+Si ha configurado una actividad y experiencia utilizando el ejemplo de segmento de grupo de edad principal anterior, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre cómo configurar una actividad, consulte la [documentación sobre la creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md).
 
 1. En el modo de edición de una página en la que ha configurado contenido de destino, puede ver que el contenido se orienta mediante un icono de flecha en el contenido.
 

@@ -1,5 +1,5 @@
 ---
-title: Guía de inicio rápido Creación de una carpeta de recursos sin encabezado
+title: Guía de inicio rápido Creación de una carpeta de Assets sin encabezado
 description: Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 solution: Experience Manager, Experience Manager Sites
@@ -12,7 +12,7 @@ ht-degree: 78%
 
 ---
 
-# Guía de inicio rápido Creación de una carpeta de recursos sin encabezado {#creating-an-assets-folder}
+# Guía de inicio rápido Creación de una carpeta de Assets sin encabezado {#creating-an-assets-folder}
 
 Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado. A continuación, los fragmentos de contenido se almacenan en carpetas de recursos.
 
@@ -22,14 +22,14 @@ Utilice modelos de fragmentos de contenido de AEM para definir la estructura de 
 
 Sin embargo, primero debe crear una carpeta de recursos en la que almacenarlos.
 
-Las carpetas de recursos se utilizan para lo siguiente [organizar recursos de contenido tradicionales](/help/assets/manage-assets.md) le gustan las imágenes y el vídeo y los fragmentos de contenido.
+Las carpetas de Assets se usan para [organizar recursos de contenido tradicionales](/help/assets/manage-assets.md), como imágenes y fragmentos de contenido y vídeo.
 
 ## Cómo crear una carpeta de recursos {#how-to-create-an-assets-folder}
 
 Un administrador solo tendría que crear carpetas ocasionalmente para organizar el contenido a medida que se crea. Para los fines de esta guía de introducción, solo necesitamos crear una carpeta.
 
-1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Navegación > Recursos > Archivos**.
-1. Clic **Crear > Carpeta**.
+1. AEM Inicie sesión en el menú principal y seleccione **Navegación > Assets > Archivos**.
+1. Haga clic en **Crear > Carpeta**.
 1. Proporcione un **Título** y **Nombre** para su carpeta.
    * El **Título** debe ser descriptivo.
    * El **Nombre** se convertirá en el nombre de nodo en el repositorio.
@@ -37,12 +37,12 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
       * Se puede modificar si es necesario.
 
    ![Crear carpeta](assets/assets-folder-create.png)
-1. Seleccione la carpeta que ha creado y, a continuación, seleccione **Propiedades** en la barra de herramientas (o utilice la variable `p` [método abreviado de teclado.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Seleccione la carpeta que ha creado y, a continuación, seleccione **Propiedades** en la barra de herramientas (o utilice el método abreviado de teclado `p` [teclado.](/help/sites-authoring/keyboard-shortcuts.md))
 1. En la ventana **Propiedades**, seleccione la pestaña **Servicios de nube**.
 1. Para la **Configuración de nube**, seleccione la [configuración que creó anteriormente.](create-configuration.md)
    ![Configurar la carpeta de recursos](assets/assets-folder-configure.png)
 1. Haga clic en **Guardar y cerrar**.
-1. Clic **OK** en la ventana de confirmación.
+1. Haga clic en **Aceptar** en la ventana de confirmación.
 
    ![Ventana de confirmación](assets/assets-folder-confirmation.png)
 

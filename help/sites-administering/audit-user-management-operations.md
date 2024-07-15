@@ -29,22 +29,22 @@ La mejora permite auditar las acciones CRUD (Crear, Leer, Actualizar, Eliminar) 
 * Se está agregando un usuario a un grupo
 * Cambios de permisos de un usuario o grupo existente
 
-De forma predeterminada, las entradas se escriben en `error.log` archivo. Para facilitar la monitorización, se recomienda redirigirlos a un archivo de registro independiente. Encontrará más información sobre cómo hacerlo en el párrafo siguiente.
+De manera predeterminada, las entradas se escriben en el archivo `error.log`. Para facilitar la monitorización, se recomienda redirigirlos a un archivo de registro independiente. Encontrará más información sobre cómo hacerlo en el párrafo siguiente.
 
 ## Redirigir la salida a un archivo de registro independiente {#redirecting-the-output-to-a-separate-log-file}
 
-Para redirigir el resultado del registro a un archivo de registro independiente, cree un **Registrador de registro de Apache Sling** configuración. Vamos a usar `useraudit.log` como el nombre del archivo independiente en el ejemplo siguiente.
+Para redirigir el resultado del registro a un archivo de registro independiente, cree una configuración de **Registrador de registros de Apache Sling**. Usemos `useraudit.log` como nombre del archivo independiente en el ejemplo siguiente.
 
-1. Vaya a la consola web navegando hasta *https://serveraddress:serverport/system/console/configMgr*
-1. Buscar por **Configuración del registrador de Apache Sling**. A continuación, pulse el signo + en el lado derecho de la entrada para crear una configuración de fábrica.
+1. Vaya a la consola web explorando *https://serveraddress:serverport/system/console/configMgr*
+1. Busque **Configuración del registrador de Apache Sling**. A continuación, pulse el signo + en el lado derecho de la entrada para crear una configuración de fábrica.
 1. Cree la siguiente configuración:
 
-   * **Nivel de registro:** Información
+   * **Nivel de registro:** información
    * **Archivo de registro:** logs/useraudit.log
    * **Patrón de mensaje:** nivel predeterminado
    * **Registrador:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Para introducir ambos registradores en **Logger** , debe introducir el nombre del primer campo y, a continuación, crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
+   Para introducir ambos registradores en el campo **Registrador**, debe introducir el nombre del primero y luego crear otro campo presionando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
 
 ## Salida de ejemplo {#example-output}
 

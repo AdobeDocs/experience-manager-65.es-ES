@@ -23,7 +23,7 @@ ht-degree: 4%
 >* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de Adobe Experience Manager AEM (). Utiliza la consola **Sitios** como base. 
 >
 >* Algunas funcionalidades no están disponibles en todas las consolas y otras adicionales en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se trata con más detalle en otras páginas.
->* AEM Los métodos abreviados del teclado están disponibles en todo el mundo En particular, cuando [uso de consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [edición de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* AEM Los métodos abreviados del teclado están disponibles en todo el mundo En particular cuando [usa las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [edita páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## La pantalla de bienvenida {#the-welcome-screen}
@@ -49,12 +49,12 @@ Las consolas principales son:
    <td>AEM Proporciona información general y acceso directo (mediante vínculos) a la funcionalidad principal de los recursos de la.</td>
   </tr>
   <tr>
-   <td><strong>Recursos digitales</strong><br /> </td>
-   <td>Estas consolas permiten importar y <a href="/help/sites-classic-ui-authoring/classicui-assets.md">administrar recursos digitales</a> como imágenes, vídeos, documentos y archivos de audio. AEM Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de. </td>
+   <td><strong>Assets digital</strong><br /> </td>
+   <td>Estas consolas le permiten importar y <a href="/help/sites-classic-ui-authoring/classicui-assets.md">administrar recursos digitales</a>, como imágenes, vídeos, documentos y archivos de audio. AEM Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de. </td>
   </tr>
   <tr>
    <td><strong>Lanzamientos</strong></td>
-   <td>Esto le ayuda a administrar sus <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanzamientos</a>; esto le permite desarrollar el contenido para una versión futura de una o más páginas web activadas.<br /> <i>Nota: En la IU táctil, gran parte de la misma funcionalidad está disponible en la consola Sitios, junto con el carril Referencias.</i> <i>Si es necesario, esta consola está disponible en la consola Herramientas; seleccione Operaciones y luego Lanzamientos.</i></td>
+   <td>Esto le ayuda a administrar sus <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanzamientos</a>; lo cual le permite desarrollar el contenido para una versión futura de una o más páginas web activadas.<br /> <i>Nota: en la IU táctil, gran parte de la misma funcionalidad está disponible en la consola Sitios, junto con el carril Referencias.</i> <i>Si es necesario, esta consola está disponible en la consola Herramientas; seleccione Operaciones y luego Inicios.</i></td>
   </tr>
   <tr>
    <td><strong>Bandeja de entrada </strong></td>
@@ -62,19 +62,19 @@ Las consolas principales son:
   </tr>
   <tr>
    <td><strong>Etiquetado</strong></td>
-   <td>Las consolas de etiquetado permiten administrar etiquetas. Las etiquetas son nombres cortos o frases que se pueden utilizar para clasificar y anotar fragmentos de contenido, lo que facilita su búsqueda y organización. Para obtener más información, consulte <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Uso y administración de etiquetas</a>.</td>
+   <td>Las consolas de etiquetado permiten administrar etiquetas. Las etiquetas son nombres cortos o frases que se pueden utilizar para clasificar y anotar fragmentos de contenido, lo que facilita su búsqueda y organización. Para obtener más información, vea <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Usar y administrar etiquetas</a>.</td>
   </tr>
   <tr>
    <td><strong>Herramientas</strong></td>
-   <td>El <a href="/help/sites-administering/tools-consoles.md">Herramientas consolas</a> proporciona acceso a varias herramientas y consolas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido.</td>
+   <td>Las <a href="/help/sites-administering/tools-consoles.md">consolas de herramientas</a> proporcionan acceso a varias consolas y herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido.</td>
   </tr>
   <tr>
    <td><strong>Usuarios</strong></td>
-   <td>Estas consolas le permiten administrar los derechos de acceso de usuarios y grupos. Para obtener más información, consulte <a href="/help/sites-administering/security.md">Administración de usuarios y seguridad</a>.<br /> </td>
+   <td>Estas consolas le permiten administrar los derechos de acceso de usuarios y grupos. Para obtener información detallada, consulte <a href="/help/sites-administering/security.md">Administración de usuarios y seguridad</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Sitios web</strong></td>
-   <td>Las consolas Sitios web le permiten <a href="/help/sites-classic-ui-authoring/classic-page-author.md">crear, ver y administrar sitios web</a> AEM ejecución en la instancia de la. A través de estas consolas puede crear, copiar, mover y eliminar páginas del sitio web, iniciar flujos de trabajo y activar (publicar) páginas. También puede abrir una página para editarla.<br /> </td>
+   <td>AEM Las consolas Sitios web/Sitios web le permiten <a href="/help/sites-classic-ui-authoring/classic-page-author.md">crear, ver y administrar sitios web</a> que se ejecuten en su instancia de. A través de estas consolas puede crear, copiar, mover y eliminar páginas del sitio web, iniciar flujos de trabajo y activar (publicar) páginas. También puede abrir una página para editarla.<br /> </td>
   </tr>
   <tr>
    <td><strong>Flujos de trabajo</strong></td>
@@ -83,7 +83,7 @@ Las consolas principales son:
  </tbody>
 </table>
 
-El **Sitios web** La consola de proporciona dos paneles para que navegue y administre sus páginas:
+La consola **Sitios web** proporciona dos paneles para que pueda navegar y administrar sus páginas:
 
 * Panel izquierdo
 
@@ -99,21 +99,21 @@ Desde aquí puede [administrar sus páginas](/help/sites-authoring/managing-page
 
 >[!NOTE]
 >
->El manejo básico es el mismo en todas las consolas. Esta sección se centra en **Sitios web** consola, ya que es la consola principal que se utiliza durante la creación.
+>El manejo básico es el mismo en todas las consolas. Esta sección se centra en la consola **Sitios web**, ya que es la consola principal utilizada durante la creación.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ## Acceso a la Ayuda   {#accessing-help}
 
-En varias consolas (por ejemplo, sitios web), una **Ayuda** está disponible. Clic **Ayuda** abre Package Share o el sitio de documentación.
+En varias consolas (por ejemplo, sitios web), hay disponible un botón **Ayuda**. Al hacer clic en **Ayuda**, se abre Package Share o el sitio de documentación.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
-Al editar una página, la variable [la barra de tareas también tiene un botón para obtener ayuda](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
+Al editar una página, la [barra de tareas también tiene un botón para acceder a la ayuda](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
 ## Navegación con la consola Sitios web {#navigating-with-the-websites-console}
 
-El **Sitios web** La consola de enumera las páginas de contenido en una estructura de árbol (panel izquierdo). Para facilitar la navegación, las secciones de la estructura de árbol se pueden expandir (+) o contraer (-) según sea necesario:
+La consola **Sitios web** enumera las páginas de contenido en una estructura de árbol (panel izquierdo). Para facilitar la navegación, las secciones de la estructura de árbol se pueden expandir (+) o contraer (-) según sea necesario:
 
 * Al hacer clic en el nombre de página en el panel izquierdo, se hace lo siguiente:
 
@@ -126,7 +126,7 @@ El **Sitios web** La consola de enumera las páginas de contenido en una estruct
 
 >[!NOTE]
 >
->Este valor predeterminado ( `30`) se puede cambiar por consola en las configuraciones específicas de la aplicación del widget siteadmin:
+>Este valor predeterminado (`30`) se puede cambiar por consola en las configuraciones específicas de la aplicación del widget siteadmin:
 >
 >En el nodo siteadmin:
 >
@@ -145,9 +145,9 @@ El **Sitios web** La consola de enumera las páginas de contenido en una estruct
 
 ## Información de página en la consola Sitios web {#page-information-on-the-websites-console}
 
-El panel derecho del **Sitios web** La consola de proporciona una vista de lista con información sobre las páginas:
+El panel derecho de la consola **Sitios web** proporciona una vista de lista con información sobre las páginas:
 
-![page-info](assets/page-info.png)
+![información de página](assets/page-info.png)
 
 Están disponibles los siguientes campos; se muestra un subconjunto de ellos como predeterminado:
 
@@ -178,7 +178,7 @@ Están disponibles los siguientes campos; se muestra un subconjunto de ellos com
    <td>Indica si la página se ha modificado y proporciona la fecha y hora de modificación. Para guardar cualquier modificación, debe activar la página.</td>
   </tr>
   <tr>
-   <td>Publicación de Scene7</td>
+   <td>Scene7 Publish</td>
    <td>Indica si la página se ha publicado en Scene7.<br /> </td>
   </tr>
   <tr>
@@ -210,18 +210,18 @@ Están disponibles los siguientes campos; se muestra un subconjunto de ellos com
 
 >[!NOTE]
 >
->Para seleccionar las columnas visibles, pase el ratón sobre un título de columna. Se muestra un menú desplegable y, desde aquí, puede utilizar la variable **Columnas** opción.
+>Para seleccionar las columnas visibles, pase el ratón sobre un título de columna. Se muestra un menú desplegable y desde aquí puede usar la opción **Columns**.
 
-Los colores que aparecen junto a las páginas del **Publicado** y **Modificado** Las columnas indican el estado de publicación:
+Los colores que aparecen junto a las páginas de las columnas **Publicado** y **Modificado** indican el estado de publicación:
 
 | **Columna** | **Color** | **Descripción** |
 |---|---|---|
 | Publicado | Verde | Publicación correcta. El contenido se ha publicado. |
 | Publicado | Amarillo | La publicación está pendiente. El sistema aún no ha recibido confirmación de publicación. |
 | Publicado | Rojo | Error de publicación. No hay ninguna conexión con la instancia de publicación. Esto también puede significar que el contenido se ha desactivado. |
-| Publicado | *blank* | Esta página nunca se ha publicado. |
+| Publicado | *en blanco* | Esta página nunca se ha publicado. |
 | Modificado | Azul | Se ha modificado la página desde la última publicación. |
-| Modificado | *blank* | Esta página no se ha modificado nunca o no se ha modificado desde la última publicación. |
+| Modificado | *en blanco* | Esta página no se ha modificado nunca o no se ha modificado desde la última publicación. |
 
 ## Menús contextuales {#context-menus}
 

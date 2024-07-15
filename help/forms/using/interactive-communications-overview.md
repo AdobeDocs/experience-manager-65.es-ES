@@ -20,7 +20,7 @@ ht-degree: 95%
 
 Este artículo contiene información general, casos de uso de ejemplo, el flujo de trabajo de creación y las diferencias entre una comunicación interactiva y una carta.
 
-![imagen de héroe](do-not-localize/correspondence-management.png)
+![imagen a pantalla completa](do-not-localize/correspondence-management.png)
 
 Interactive Communications centraliza y administra la creación, el ensamblado y el envío de correspondencia segura, personalizada e interactiva, como correspondencia comercial, documentos, declaraciones, avisos de beneficios, correos de marketing, facturas y kits de bienvenida.
 

@@ -38,11 +38,11 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->AEM Los inicios rápidos en Programación con formularios de la aplicación se basan en el documento si utiliza otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo aplicable. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Los inicios rápidos en Programación con formularios de la aplicación se basan en el documento si utiliza otro sistema operativo, como Unix, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo aplicable. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## SOAP Inicio rápido (modo de): Añadir usuarios mediante la API de Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-En el ejemplo de código siguiente se agrega un usuario denominado Wendy Blue a AEM Forms. (Consulte [Adición de usuarios](/help/forms/developing/users.md#adding-users).)
+En el ejemplo de código siguiente se agrega un usuario denominado Wendy Blue a AEM Forms. (Consulte [Agregar usuarios](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -380,7 +380,7 @@ En el ejemplo de código siguiente se busca un usuario local y el grupo local al
 
 ## SOAP Inicio rápido (modo de): Administración de funciones y permisos mediante la API de Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-En el ejemplo de código siguiente se asigna la función Usuario de servicios a un principal, se imprimen las funciones que tiene el principal y, a continuación, se quita la función del principal. Se invocan dos servicios para este inicio rápido: el servicio DirectoryManager y el servicio AuthorizationManager.(Consulte [Administración de funciones y permisos](/help/forms/developing/users.md#managing-roles-and-permissions).)
+En el ejemplo de código siguiente se asigna la función Usuario de servicios a un principal, se imprimen las funciones que tiene el principal y, a continuación, se quita la función del principal. Se invocan dos servicios para este inicio rápido: el servicio DirectoryManager y el servicio AuthorizationManager.(Consulte [Administración de roles y permisos](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 ```java
  /*
@@ -523,7 +523,7 @@ En el ejemplo de código siguiente se asigna la función Usuario de servicios a 
 
 ## SOAP Inicio rápido (modo de): Sincronización mediante programación de usuarios mediante la API de Java {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
-El siguiente ejemplo de código Java sincroniza los usuarios mediante las API de administración de usuarios. (Consulte [Sincronización de usuarios mediante programación](/help/forms/developing/users.md#programmatically-synchronizing-users).)
+El siguiente ejemplo de código Java sincroniza los usuarios mediante las API de administración de usuarios. (Consulte [Sincronizar usuarios mediante programación](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
 ```java
  /*
@@ -632,7 +632,7 @@ El siguiente ejemplo de código Java sincroniza los usuarios mediante las API de
 
 ## SOAP Inicio rápido (modo de): Añadir usuarios mediante la API de Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-En el ejemplo de código siguiente se agrega un usuario denominado Wendy Blue a AEM Forms. (Consulte [Adición de usuarios](/help/forms/developing/users.md#adding-users).)
+En el ejemplo de código siguiente se agrega un usuario denominado Wendy Blue a AEM Forms. (Consulte [Agregar usuarios](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -902,7 +902,7 @@ En el ejemplo de código siguiente se crea un grupo denominado AdobeGroup para A
 
 ## SOAP Inicio rápido (modo de) Administración de nodos de preferencias {#quick-start-soap-mode-managing-preferences-nodes}
 
-Los siguientes modelos de código Java administran los nodos de preferencias mediante las API de administración de usuarios. ( Consulte [Administración programática de los nodos de preferencias](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+Los siguientes modelos de código Java administran los nodos de preferencias mediante las API de administración de usuarios. ( Ver [Administración programática de los nodos de preferencias](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
 ```java
 /*

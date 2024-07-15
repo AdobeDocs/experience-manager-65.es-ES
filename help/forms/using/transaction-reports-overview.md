@@ -39,7 +39,7 @@ Las acciones como enviar un formulario PDF, utilizar la interfaz de usuario del 
 
 ## Topología admitida {#supported-topology}
 
-Los informes de transacciones solo están disponibles en AEM Forms en el entorno OSGi. Admite autor-publicación, autor-procesamiento-publicación y procesar solo topologías. Por ejemplo, las topologías, consulte [Arquitectura y topologías de implementación para AEM Forms](../../forms/using/transaction-reports-overview.md).
+Los informes de transacciones solo están disponibles en AEM Forms en el entorno OSGi. Admite autor-publicación, autor-procesamiento-publicación y procesar solo topologías. Por ejemplo, las topologías, vea [Arquitectura y topologías de implementación para AEM Forms](../../forms/using/transaction-reports-overview.md).
 
 El recuento de transacciones se replica de forma inversa de las instancias de publicación a las instancias de autor o procesamiento. A continuación se muestra una topología indicativa de autor-publicación:
 

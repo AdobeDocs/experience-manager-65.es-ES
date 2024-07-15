@@ -30,9 +30,9 @@ En el contexto de la administración de contenido sin encabezado en AEM, piense 
 
 Un administrador solo tendría que crear una configuración una vez, o poco a poco cuando se necesite un nuevo espacio de trabajo para organizar los modelos de contenido. Para los fines de esta guía de introducción, solo necesitamos crear una configuración.
 
-1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Herramientas > General > Explorador de configuración**.
+1. AEM Inicie sesión en el menú principal y seleccione **Herramientas > General > Explorador de configuración**.
 1. Proporcione un **Título** para su configuración.
-   * Se generará automáticamente un nombre basado en el título y se ajustará según lo siguiente [AEM Convenciones de nomenclatura de.](/help/sites-developing/naming-conventions.md). Se convertirá en el nombre de nodo en el repositorio.
+   * AEM Se generará automáticamente un nombre basado en el título y se ajustará de acuerdo con [convenciones de nomenclatura de la.](/help/sites-developing/naming-conventions.md). Se convertirá en el nombre de nodo en el repositorio.
 1. Compruebe las siguientes opciones:
    * **Modelos de fragmentos de contenido**
    * **Consultas persistentes de GraphQL**

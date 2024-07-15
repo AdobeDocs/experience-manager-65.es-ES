@@ -22,13 +22,13 @@ ht-degree: 1%
 >
 >Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Un ***AEM administrador de*** es responsable de añadir una aplicación nueva al catálogo de AEM Mobile, ya sea creando una aplicación con el asistente de creación o importando una aplicación existente. AEM administradores de que crean una aplicación con el de AEM Mobile *asistente de creación*, normalmente, seleccione una de las plantillas de aplicación que desee entre las muestras de referencia listas para usar de Adobe o (normalmente) una plantilla de aplicación personalizada creada por *AEM desarrolladores de.*
+AEM Un ***administrador de*** es responsable de agregar una aplicación nueva al catálogo de AEM Mobile, ya sea creando una aplicación con el asistente para la creación o importando una aplicación existente. AEM Los administradores de la aplicación que crean una aplicación con el *asistente para la creación de aplicaciones* de AEM Mobile suelen seleccionar una de las plantillas de aplicaciones deseadas entre las muestras de referencia listas para usar de Adobe AEM o (normalmente) una plantilla de aplicación personalizada creada por los desarrolladores de *.*
 
 Después de crear la aplicación móvil con HTML5 y PhoneGap, puede administrarla en el Centro de comandos. También puede administrar el contenido de HTML5 para una aplicación nativa en el Centro de comandos mediante las vistas web de Cordova (para permitir que los complementos de PhoneGap accedan a las funciones nativas).
 
 AEM El Centro de control de aplicaciones móviles le permite crear e implementar su aplicación móvil, crear y editar metadatos de aplicación antes de publicar su aplicación móvil, depurar de forma colaborativa y publicar con frecuencia contenido nuevo y relevante sin necesidad de volver a visitar los procesos de envío de la tienda de aplicaciones y analizar las métricas de uso y ciclo de vida de la aplicación para mejorar la conversión de los clientes y la lealtad de la marca.
 
-Para crear la aplicación para AEM Mobile, consulte la [Creación de aplicaciones móviles](/help/mobile/building-app-mobile-phonegap.md) , en la sección Desarrolladores.
+Para crear su aplicación de AEM Mobile, consulte la página [Generando aplicaciones móviles](/help/mobile/building-app-mobile-phonegap.md) en la sección Desarrolladores.
 
 Para configurar su entorno y empezar a usar el Centro de control de Campaign,
 
@@ -37,11 +37,11 @@ Para configurar su entorno y empezar a usar el Centro de control de Campaign,
 1. [Configuración del Cloud Service de Adobe PhoneGap Build](/help/mobile/configure-phonegap-build-cloud.md)
 1. [Configuración del servicio de Adobe Analytics Cloud](/help/mobile/configure-adobe-mobile-cloud-service.md)
 
-Para obtener más información sobre los servicios de contenido y los servicios de contenido, consulte [Administración de servicios de contenido](/help/mobile/developing-content-services.md).
+Para obtener más información acerca de los servicios de contenido y Content Services, consulte [Administración de servicios de contenido](/help/mobile/developing-content-services.md).
 
 >[!NOTE]
 >
->El *AEM Verificar la* AEM es una forma rápida y sencilla de ejecutar sus aplicaciones móviles de la en cualquier dispositivo móvil iOS o Android™. El *AEM Verificar la* es una aplicación móvil en su dispositivo y la conecta al servidor que ejecuta el inicio rápido para obtener una lista de aplicaciones que ver. Clic [aquí](/help/mobile/phonegap-mobile-quickstart.md) para ver los detalles.
+>AEM AEM La *Verificación de* es una forma rápida y sencilla de ejecutar sus aplicaciones móviles en cualquier dispositivo móvil iOS o Android™. AEM *Verify* es una aplicación móvil, en su dispositivo y la conecta al servidor que ejecuta el inicio rápido para obtener una lista de aplicaciones a ver. Haga clic [aquí](/help/mobile/phonegap-mobile-quickstart.md) para ver los detalles.
 
 ## Recursos adicionales {#additional-resources}
 

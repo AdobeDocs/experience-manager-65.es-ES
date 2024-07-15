@@ -210,7 +210,7 @@ Del mismo modo, la operación ZipDocuments del componente personalizado puede ac
 
 La siguiente orquestación del flujo de trabajo muestra cómo descomprimir el archivo ZIP, comprimirlo de nuevo en otro archivo ZIP y devolver la salida (consulte la figura siguiente).
 
-![Descomprimir flujo de trabajo Zip](assets/unzip-zip-process.jpg)
+![Descomprimir flujo de trabajo ZIP](assets/unzip-zip-process.jpg)
 
 ## Algunos casos de uso empresariales {#business-use-cases}
 

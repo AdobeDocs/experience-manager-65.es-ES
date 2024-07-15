@@ -20,9 +20,9 @@ ht-degree: 1%
 
 AEM En los temas siguientes se describe cómo realizar tareas de implementación específicas de la:
 
-* [Cómo utilizar el visor de registros](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
-* [Depuración de flujos de trabajo y el registro de auditoría](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
+* [Cómo usar el visor de registros](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
+* [Cómo purgar flujos de trabajo y el registro de auditoría](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [Consejos de ajuste de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es)
+* [Consejos de ajuste del rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es)
 * [Cómo quitar funciones de la pantalla de bienvenida](/help/sites-developing/customizing-the-welcome-console.md)
-* [Cómo desactivar la función Rastreador de ubicación](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
+* [Cómo desactivar la función de seguimiento de ubicación](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)

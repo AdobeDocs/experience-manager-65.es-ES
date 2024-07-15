@@ -44,19 +44,19 @@ El formulario se actualiza automáticamente en función del usuario. Consulte [E
 
 Antes de poder crear formularios específicos de Adobe Campaign AEM, debe hacer que las distintas plantillas estén disponibles en la aplicación.
 
-Para ello, consulte las [Documentación de plantillas](/help/sites-developing/templates.md#template-availability).
+Para ello, consulte la [documentación de plantillas](/help/sites-developing/templates.md#template-availability).
 
 ## Creación de un formulario {#creating-a-form}
 
-En primer lugar, compruebe la conexión entre las instancias de autor y publicación, y Adobe Campaign está funcionando. Consulte [Integración con Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) o [Integración con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
+En primer lugar, compruebe la conexión entre las instancias de autor y publicación, y Adobe Campaign está funcionando. Ver [Integración con Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) o [Integración con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
 
 >[!NOTE]
 >
->Asegúrese de que la **acMapping** propiedad en la página **jcr:contenido** El nodo está configurado en **mapRecipient** o **perfil** al usar Adobe Campaign Classic o Adobe Campaign Standard, respectivamente
+>Asegúrese de que la propiedad **acMapping** del nodo **jcr:content** de la página esté establecida en **mapRecipient** o **profile** al usar Adobe Campaign Classic o Adobe Campaign Standard, respectivamente
 >
 
 1. AEM En, en Sitios, desplácese hasta donde desee crear una página.
-1. Cree una página y seleccione **Perfil de Adobe Campaign Classic** o **Perfil de Adobe Campaign Standard** y haga clic en **Siguiente**.
+1. Cree una página, seleccione **Perfil de Adobe Campaign Classic** o **Perfil de Adobe Campaign Standard** y haga clic en **Siguiente**.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
 
@@ -64,13 +64,13 @@ En primer lugar, compruebe la conexión entre las instancias de autor y publicac
    >
    >Si la plantilla deseada no está disponible, consulte [Disponibilidad de plantillas](/help/sites-developing/templates.md#template-availability).
 
-1. En el **Nombre** , añada el nombre de la página. Debe ser un nombre JCR válido.
-1. En el **Título** , introduzca un título y haga clic en **Crear**.
-1. Abra la página y seleccione **Abrir propiedades** y en Cloud Service, añada la configuración de Adobe Campaign y seleccione la marca de verificación para guardar los cambios.
+1. En el campo **Nombre**, agregue el nombre de la página. Debe ser un nombre JCR válido.
+1. En el campo **Título**, escriba un título y haga clic en **Crear**.
+1. Abra la página y seleccione **Abrir propiedades**. En los Cloud Service, agregue la configuración de Adobe Campaign y marque la casilla de verificación para guardar los cambios.
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
-1. En la página, en la variable **Inicio de formulario** , seleccione el tipo de formulario que es: **Suscribirse, Cancelar suscripción,** o **Guardar perfil**. Solo puede tener un tipo por formulario. Ahora puede [editar el contenido del formulario](#editing-form-content).
+1. En la página, en el componente **Inicio del formulario**, seleccione el tipo de formulario que es: **Suscribirse, Cancelar la suscripción,** o **Guardar perfil**. Solo puede tener un tipo por formulario. Ahora puede [editar el contenido del formulario](#editing-form-content).
 
 ## Edición del contenido del formulario {#editing-form-content}
 
@@ -80,41 +80,41 @@ Forms dedicado a Adobe Campaign tiene componentes específicos. Estos componente
 >
 >Si la plantilla deseada no está disponible, consulte [Disponibilidad de una plantilla](/help/sites-authoring/adobe-campaign.md).
 
-Esta sección solo detalla los vínculos específicos a Adobe Campaign. Para obtener más información sobre una descripción general más general del uso de los formularios en Adobe Experience Manager, consulte [Componentes del modo de edición](/help/sites-authoring/default-components-foundation.md).
+Esta sección solo detalla los vínculos específicos a Adobe Campaign. Para obtener más información sobre una descripción general más general de cómo usar formularios en Adobe Experience Manager, consulte [Editar componentes de modo](/help/sites-authoring/default-components-foundation.md).
 
-1. Seleccionar **Abrir propiedades** y en Cloud Service, añada la configuración de Adobe Campaign y seleccione la marca de verificación para guardar los cambios.
+1. Seleccione **Abrir propiedades** y, en Cloud Service, agregue la configuración de Adobe Campaign y marque la casilla de verificación para guardar los cambios.
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 
-1. En la página, en la variable **Inicio de formulario** , haga clic en el icono Configuración.
+1. En la página, en el componente **Inicio del formulario**, haga clic en el icono Configuración.
 
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
-1. Haga clic en **Avanzadas** y seleccione el tipo de formulario que es: **Suscribirse, Cancelar suscripción,** o **Guardar perfil** y haga clic en **OK.** Solo puede tener un tipo por formulario.
+1. Haga clic en la ficha **Avanzado** y seleccione el tipo de formulario que es: **Suscribirse, cancelar la suscripción,** o **Guardar perfil**. A continuación, haga clic en **Aceptar.**: solo puede tener un tipo por formulario.
 
    * **Adobe Campaign: Guardar perfil**: permite crear o actualizar un destinatario en Adobe Campaign (valor predeterminado).
    * **Adobe Campaign: Suscribirse a servicios**: permite administrar las suscripciones de un destinatario en Adobe Campaign.
    * **Adobe Campaign: Cancelar suscripción a los servicios**: permite cancelar las suscripciones de un destinatario en Adobe Campaign.
 
-1. Debe tener un **Clave principal cifrada** en cada formulario. Este componente define qué parámetro de URL se utiliza para aceptar la clave principal cifrada de un perfil de Adobe Campaign. En Componentes, seleccione Adobe Campaign para que solo estén visibles esos componentes.
-1. Arrastre el componente **Clave principal cifrada** Vaya al formulario (en cualquier lugar) y haga clic en **Configuración** icono. En el **Adobe Campaign** pestaña, especifique cualquier nombre para el parámetro de URL. Haga clic en la marca de verificación para guardar los cambios.
+1. Debe tener un componente **Clave principal cifrada** en cada formulario. Este componente define qué parámetro de URL se utiliza para aceptar la clave principal cifrada de un perfil de Adobe Campaign. En Componentes, seleccione Adobe Campaign para que solo estén visibles esos componentes.
+1. Arrastre el componente **Clave principal cifrada** al formulario (en cualquier lugar) y haga clic en el icono **Configuración**. En la ficha **Adobe Campaign**, especifique cualquier nombre para el parámetro de URL. Haga clic en la marca de verificación para guardar los cambios.
 
    Los vínculos generados para este formulario deben utilizar este parámetro de URL y asignarle la clave principal cifrada de un perfil de Adobe Campaign. La clave principal cifrada debe tener la codificación URL (porcentaje) correcta.
 
    ![chlimage_1-47](assets/chlimage_1-47a.png)
 
-1. Agregue componentes al formulario según sea necesario, como un campo de texto, un campo de fecha, un campo de casilla de verificación, un campo de opción, etc. Consulte [Componentes de formulario Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) para obtener más información sobre cada componente.
-1. Haga clic en el icono Configuración para abrir el componente. Por ejemplo, en **Campo de texto (Campaign)** componente, cambie el título y el texto.
+1. Agregue componentes al formulario según sea necesario, como un campo de texto, un campo de fecha, un campo de casilla de verificación, un campo de opción, etc. Consulte [Componentes de formularios Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) para obtener más información sobre cada componente.
+1. Haga clic en el icono Configuración para abrir el componente. Por ejemplo, en el componente **Campo de texto (Campaign)**, cambie el título y el texto.
 
-   Clic **Adobe Campaign** para asignar el campo de formulario a una variable de metadatos de Adobe Campaign. Al enviar el formulario, el campo asignado se actualiza en Adobe Campaign. En el selector de variables solo están disponibles los campos con tipos coincidentes (por ejemplo, las variables de cadena para los campos de texto).
+   Haga clic en **Adobe Campaign** para asignar el campo de formulario a una variable de metadatos de Adobe Campaign. Al enviar el formulario, el campo asignado se actualiza en Adobe Campaign. En el selector de variables solo están disponibles los campos con tipos coincidentes (por ejemplo, las variables de cadena para los campos de texto).
 
    ![chlimage_1-48](assets/chlimage_1-48a.png)
 
    >[!NOTE]
    >
-   >Puede añadir o quitar campos que se muestran en la tabla de destinatarios siguiendo las instrucciones aquí: [https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
+   >Puede agregar o quitar campos que se muestran en la tabla de destinatarios siguiendo las instrucciones aquí: [https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
 
-1. Clic **Publicar página**. La página se activa en el sitio. AEM Para verlo, vaya a la instancia de publicación de la publicación de la. También puede [prueba de un formulario](#testing-a-form).
+1. Haga clic en **Página de Publish**. La página se activa en el sitio. AEM Para verlo, vaya a la instancia de publicación de la publicación de la. También puede [probar un formulario](#testing-a-form).
 
    >[!CAUTION]
    >
@@ -126,20 +126,20 @@ Después de crear un formulario y editar su contenido, es posible que desee prob
 
 >[!NOTE]
 >
->Debe tener un **Clave principal cifrada** en cada formulario. En Componentes, seleccione Adobe Campaign para que solo estén visibles esos componentes.
+>Debe tener un componente **Clave principal cifrada** en cada formulario. En Componentes, seleccione Adobe Campaign para que solo estén visibles esos componentes.
 >
 >Aunque en este procedimiento introduzca el número epk manualmente, en la práctica los usuarios obtendrían un vínculo a esta página (ya sea para cancelar la suscripción, suscribirse o actualizar su perfil) dentro de un boletín informativo. El epk se actualiza automáticamente en función del usuario.
 >
->Para crear ese vínculo, se utiliza la variable **Identificador del recurso principal**(Adobe Campaign Standard) o **Identificador cifrado** (Adobe Campaign Classic) (por ejemplo, en un **Texto y personalización (Campaign)** ), que se vincula al epk de Adobe Campaign.
+>Para crear ese vínculo, usa la variable **Identificador de recurso principal**(Adobe Campaign Standard) o **Identificador cifrado** (Adobe Campaign Classic) (por ejemplo, en un componente **Texto y Personalization (Campaign)**), que se vincula al epk en Adobe Campaign.
 
 Para ello, debe obtener manualmente el EPK de un perfil de Adobe Campaign y anexarlo a la dirección URL:
 
 1. Para obtener la clave principal cifrada (EPK) de un perfil de Adobe Campaign:
 
-   * En Adobe Campaign Standard: Vaya a **Perfiles y audiencias** > **Perfiles**, que enumera los perfiles existentes. Asegúrese de que la tabla muestra el **Identificador de medio principal** en una columna (esto se puede configurar haciendo clic o pulsando ). **Configurar lista**). Copie el identificador de recurso principal del perfil deseado.
-   * En Adobe Campaign Classic, vaya a **Perfiles y objetivos** >  **Destinatarios**, que enumera los perfiles existentes. Asegúrese de que la tabla muestra el **Identificador cifrado** en una columna (esto se puede configurar haciendo clic con el botón derecho en una entrada y seleccionando **Configurar lista...**). Copie el identificador cifrado del perfil deseado.
+   * En Adobe Campaign Standard: vaya a **Perfiles y audiencias** > **Perfiles**, que enumera los perfiles existentes. Asegúrese de que la tabla muestre el campo **Identificador de recurso principal** en una columna (esto se puede configurar haciendo clic o pulsando **Configurar lista**). Copie el identificador de recurso principal del perfil deseado.
+   * En Adobe Campaign Classic, vaya a **Perfiles y objetivos** > **Destinatarios**, que enumera los perfiles existentes. Asegúrese de que la tabla muestre el campo **Identificador cifrado** en una columna (esto se puede configurar haciendo clic con el botón derecho en una entrada y seleccionando **Configurar lista...**). Copie el identificador cifrado del perfil deseado.
 
-1. AEM En, abra la página del formulario en la instancia de publicación y añada el EPK del paso 1 como parámetro de URL: utilice el mismo nombre que definió anteriormente en el componente EPK al crear el formulario (por ejemplo: `?epk=...`)
+1. AEM En, abra la página del formulario en la instancia de publicación y anexe el EPK del paso 1 como parámetro de URL: use el mismo nombre que definió anteriormente en el componente EPK al crear el formulario (por ejemplo: `?epk=...`)
 1. Ahora el formulario se puede utilizar para modificar los datos y las suscripciones asociados al perfil de Adobe Campaign vinculado. Después de modificar algunos campos y enviar el formulario, puede comprobar dentro de Adobe Campaign que se han actualizado los datos correspondientes.
 
 Los datos de la base de datos de Adobe Campaign se actualizan una vez validado un formulario.

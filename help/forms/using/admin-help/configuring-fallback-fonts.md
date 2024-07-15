@@ -24,12 +24,12 @@ AEM Puede configurar manualmente el archivo FontManagerResources.properties para
 >
 >La configuración de fuentes de reserva también se aplica al servicio de ensamblador.
 
-1. Vaya a adobe-livecycle-*`[appserver]`*.ear en el archivo *`[aem-forms root]`*/configurationManager/export, realizar una copia de seguridad y desempaquetar el original.
+1. Vaya al archivo adobe-livecycle-*`[appserver]`*.ear en el directorio *`[aem-forms root]`*/configurationManager/export, haga una copia de seguridad y desempaquete el original.
 1. Busque el archivo adobe-fontmanager.jar y desempaquételo.
 1. Busque el archivo FontManagerResources.properties y ábralo en un editor de texto.
 1. Modifique las ubicaciones y los nombres de las fuentes genéricas y de reserva según sea necesario y guarde el archivo.
 
-   Las entradas de fuente del archivo FontManagerResources.properties son relativas a *`[aem-forms root]`* directorio /fonts. AEM Si especifica fuentes que no son fuentes de formularios predeterminadas, debe instalarlas dentro de esta estructura de directorios (ya sea en un directorio existente o en uno recién creado).
+   Las entradas de fuente del archivo FontManagerResources.properties son relativas al directorio *`[aem-forms root]`*/fonts. AEM Si especifica fuentes que no son fuentes de formularios predeterminadas, debe instalarlas dentro de esta estructura de directorios (ya sea en un directorio existente o en uno recién creado).
 
    >[!NOTE]
    >
@@ -40,8 +40,8 @@ AEM Puede configurar manualmente el archivo FontManagerResources.properties para
    * Fuente genérica, buscada por orden establecido en la tabla de reserva
 
 1. Vuelva a empaquetar el archivo adobe-fontmanager.jar.
-1. Volver a empaquetar adobe-livecycle-*`[appserver]`*.ear y, a continuación, vuelva a implementarlo manualmente o ejecutando el Administrador de configuración.
+1. Vuelva a empaquetar el archivo adobe-livecycle-*`[appserver]`*.ear y, a continuación, vuelva a implementarlo manualmente o ejecutando el Administrador de configuración.
 
 >[!NOTE]
 >
->No utilice el Administrador de configuración para volver a empaquetar adobe-livecycle-`[appserver]`AEM .ear, porque sobrescribirá las modificaciones con los valores predeterminados de los formularios de la aplicación de datos de la aplicación.
+>AEM No utilice el Administrador de configuración para volver a empaquetar el archivo adobe-livecycle-`[appserver]`.ear, ya que sobrescribirá las modificaciones con los valores predeterminados de los formularios de la forma de la aplicación de la forma de la.

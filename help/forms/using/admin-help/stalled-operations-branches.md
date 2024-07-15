@@ -29,13 +29,13 @@ Para cada elemento parado, la lista muestra la siguiente información:
 
 **Nombre de operación o nombre de rama:** Nombre de la operación o rama.
 
-**Estado:** Siempre PARALIZADO para elementos paralizados.
+**Estado:** siempre en espera por elementos en espera.
 
 **Error:** Breve descripción del problema.
 
-**ID de proceso:** El entero positivo que asigna el flujo de trabajo de Forms cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia un proceso). Puede utilizar este identificador para realizar un seguimiento de la instancia de proceso a lo largo de su ciclo de vida.
+**Id. de proceso:** El entero positivo que el flujo de trabajo de formularios asigna cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia un proceso). Puede utilizar este identificador para realizar un seguimiento de la instancia de proceso a lo largo de su ciclo de vida.
 
-**Nombre del proceso - Versión:** Nombre del proceso asignado en Workbench.
+**Nombre del proceso - Versión:** El nombre del proceso asignado en Workbench.
 
 **Fecha de detención:** La fecha y hora en que se detuvo la operación o rama.
 
@@ -78,7 +78,7 @@ AEM Se producen errores cuando la operación Asignar tarea en el servicio de usu
 
 Cuando se produce esta situación, el estado del proceso y la tarea no cambia en el momento de escalación configurado y la escalación no se produce, pero el proceso no se detiene. El siguiente mensaje aparece en el registro del servidor:
 
-&quot;La entidad de seguridad especificada para la escalación no es válida, para taskID: *número*, cola especificada: *número*.&quot;
+&quot;La entidad de seguridad especificada para la escalación no es válida, para taskID: *number*, cola especificada: *number*.&quot;
 
 Si se elimina el usuario de escalación antes de que se genere la tarea (antes de que se ejecute la operación Asignar tarea), el proceso se detendrá o se producirá el evento de excepción InvalidPrincipal.
 

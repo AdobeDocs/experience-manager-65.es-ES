@@ -36,7 +36,7 @@ AEM entorno de 6.5 proporciona los temas siguientes para los componentes princip
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Temática Caballete](https://github.com/adobe/aem-forms-theme-easel)
 * [Tema FSI](https://github.com/adobe/aem-forms-theme-fsi)
-* [Tema de atención sanitaria](https://github.com/adobe/aem-forms-theme-healthcare)
+* [Tema de atención médica](https://github.com/adobe/aem-forms-theme-healthcare)
 * [Tema público](https://github.com/adobe/aem-forms-theme-public)
 * [Tema de fabricación](https://github.com/adobe/aem-forms-theme-manufacturing)
 
@@ -48,7 +48,7 @@ Una temática es un paquete que incluye el archivo CSS, los archivos JavaScript 
 
 * `src/site`: esta carpeta contiene archivos CSS que se aplican a toda la página de un sitio de AEM. Estos archivos constan de código y estilos que afectan a la funcionalidad y al diseño general de la página del sitio de AEM. Cualquier modificación realizada aquí se reflejará en todas las páginas del sitio.
 
-* `src/components`: los archivos CSS de esta carpeta están diseñados para los componentes principales individuales de AEM. Cada carpeta dedicada para un componente incluye un archivo `.scss` que aplica estilo a ese componente en particular dentro de un formulario adaptable. Por ejemplo, la variable `/src/components/button/_button.scss` contiene información de estilo para el componente Botón de Forms adaptable.
+* `src/components`: los archivos CSS de esta carpeta están diseñados para los componentes principales individuales de AEM. Cada carpeta dedicada para un componente incluye un archivo `.scss` que aplica estilo a ese componente en particular dentro de un formulario adaptable. Por ejemplo, el archivo `/src/components/button/_button.scss` contiene información de estilo para el componente Botón de Forms adaptable.
 
   ![Estructura de la temática Lienzo](/help/forms/using/assets/component-based-theme-folder-structure.png)
 
@@ -64,7 +64,7 @@ AEM Forms 6.5 proporciona los temas que se enumeran a continuación para los com
 * [Tema público](https://github.com/adobe/aem-forms-theme-public)
 * [Tema de fabricación](https://github.com/adobe/aem-forms-theme-manufacturing)
 
-Puede [personalice cualquiera de estas temáticas para crear una temática](#customize-a-theme-core-components).
+Puede [personalizar cualquiera de estas temáticas para crear una temática](#customize-a-theme-core-components).
 
 ## Personalizar una temática {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -72,7 +72,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 >[!NOTE]
 >
-> * Utilice el Administrador de paquetes para implementar un tema en todas las instancias de autor y publicación.
+> * Utilice el Administrador de paquetes para implementar una temática en todas las instancias de autor y Publish.
 > * Una biblioteca de cliente de temas se importa o exporta mediante el Administrador de paquetes como cualquier otro paquete.
 
 ### Requisitos previos para personalizar una temática {#prerequisites}
@@ -81,7 +81,7 @@ La personalización de una temática hace referencia al proceso de modificación
 
 * Instale la última versión de Apache Maven [.Apache Maven ](https://maven.apache.org/download.cgi) es una herramienta de automatización de compilaciones que se utiliza comúnmente en proyectos Java™. La instalación de la última versión garantiza que tenga las dependencias necesarias para la personalización de temáticas.
 
-* Obtenga información sobre cómo crear un [biblioteca de cliente en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). AEM proporciona bibliotecas de cliente, que permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
+* Aprenda a crear una biblioteca de cliente [en Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). AEM proporciona bibliotecas de cliente, que permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente.
 
 * Instale un editor de texto sin formato. Por ejemplo, Microsoft® Visual Studio Code. Utilizar un editor de texto sin formato como Microsoft® Visual Studio Code proporciona un entorno fácil de usar para editar y modificar archivos de temas.
 
@@ -89,9 +89,9 @@ La personalización de una temática hace referencia al proceso de modificación
 
 ### Consideraciones para personalizar una temática {#consideration}
 
-* Asegúrese de utilizar [el tipo de archivo del proyecto utilizado para habilitar los componentes principales de Forms adaptable](/help/forms/using/enable-adaptive-forms-core-components.md) en su entorno para personalizar las temáticas.
+* Asegúrese de usar [el tipo de archivo del proyecto utilizado para habilitar los componentes principales de Forms adaptable](/help/forms/using/enable-adaptive-forms-core-components.md) en su entorno para personalizar las temáticas.
 
-* Al publicar un formulario adaptable, las bibliotecas de cliente no se publican automáticamente en la instancia de publicación. Asegúrese de publicar manualmente la biblioteca de cliente a la que se hace referencia en un formulario adaptable en los entornos de publicación.
+* Al publicar un formulario adaptable, las bibliotecas de cliente no se publican automáticamente en la instancia de Publish. Asegúrese de publicar manualmente la biblioteca de cliente a la que se hace referencia en un formulario adaptable en los entornos de Publish.
 
 * El Adobe recomienda no cambiar los nombres de clase de las bibliotecas de cliente.
 
@@ -100,7 +100,7 @@ La personalización de una temática hace referencia al proceso de modificación
 Crear o personalizar una temática es un proceso de varios pasos. Realice los pasos en el orden indicado para crear o personalizar la temática:
 
 1. [Clonar una temática](#clone-git-repo-of-theme)
-1. [Personalizar el aspecto de la temática](#customize-the-theme)
+1. [Personalizar el aspecto del tema](#customize-the-theme)
 1. [Preparar el tema para la implementación local](#generate-the-clientlib)
 1. [Implementar el tema en un entorno local](#deploy-the-theme-on-a-local-environment)
 1. [Implementar el tema en el entorno de producción](#5-deploy-a-theme-on-your-production-environment)
@@ -109,7 +109,7 @@ Crear o personalizar una temática es un proceso de varios pasos. Realice los pa
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
 -->
 
-Los ejemplos proporcionados en el documento se basan en la variable **Lienzo** tema, pero puede clonar cualquier tema y personalizarlo con las mismas instrucciones. Estas instrucciones se aplican a cualquier tema, lo que le permite modificarlas según sus necesidades específicas.
+Los ejemplos proporcionados en el documento se basan en el tema **Lienzo**, pero puede clonar cualquier tema y personalizarlo con las mismas instrucciones. Estas instrucciones se aplican a cualquier tema, lo que le permite modificarlas según sus necesidades específicas.
 
 #### 1. Clone el repositorio Git de la temática {#clone-git-repo-of-theme}
 
@@ -151,10 +151,10 @@ Tiene la flexibilidad de personalizar componentes individuales o realizar cambio
 
 ##### Establecer estilos de nivel de temática {#theme-customization-global-level}
 
-El `variable.scss` contiene las variables globales de la temática. Al actualizar estas variables, puede realizar cambios relacionados con los estilos en el nivel de la temática. Para aplicar estilos de nivel de tema, siga estos pasos:
+El archivo `variable.scss` contiene las variables globales del tema. Al actualizar estas variables, puede realizar cambios relacionados con los estilos en el nivel de la temática. Para aplicar estilos de nivel de tema, siga estos pasos:
 
-1. Abra el `<your-theme-sources>/src/site/_variables.scss` archivo para editar.
-1. Cambia el valor de cualquier propiedad. Por ejemplo, el color de error predeterminado es rojo. Para cambiar el color del error de rojo a azul, cambie el código hexadecimal de color del `$error`variable. Por ejemplo, `$error: #196ee5`.
+1. Abra el archivo `<your-theme-sources>/src/site/_variables.scss` para editarlo.
+1. Cambia el valor de cualquier propiedad. Por ejemplo, el color de error predeterminado es rojo. Para cambiar el color del error de rojo a azul, cambie el código hexadecimal de color de la variable `$error`. Por ejemplo, `$error: #196ee5`.
 
    ![Ejemplo: color de error establecido en azul](/help/forms/using/assets/theme-level-changes.png)
 
@@ -168,7 +168,7 @@ Del mismo modo, puede utilizar el archivo `variable.scss` para establecer la fam
 También tiene la opción de personalizar la fuente, el color, el tamaño y otras propiedades CSS de componentes principales específicos del formulario adaptable, como botones, casillas de verificación, contenedores, pies de página, etc. Al editar el archivo CSS asociado al componente específico, puede alinear su estilo con la marca de su organización. Para personalizar el estilo de un componente, siga estos pasos:
 
 1. Abra el archivo `<your-theme-sources>/src/components/<component>/<component.scss>` para editarlo. Por ejemplo, para cambiar el color de fuente del componente Botón, abra el archivo `<your-theme-sources>/src/components/button/button.scss`.
-1. Cambie el valor de cualquiera según sus necesidades. Por ejemplo, para cambiar el color del componente Botón al pasar el ratón por encima a Verde, cambie el valor del `color: $white` propiedad en el `cmp-adaptiveform-button__widget:hover` de clase a código hexadecimal #12b453 o cualquier otro tono de verde. El código final tiene el siguiente aspecto:
+1. Cambie el valor de cualquiera según sus necesidades. Por ejemplo, para cambiar el color del componente Botón al pasar el ratón por encima a Verde, cambie el valor de la propiedad `color: $white` en la clase `cmp-adaptiveform-button__widget:hover` a código hexadecimal #12b453 o a cualquier otro tono de verde. El código final tiene el siguiente aspecto:
 
    ```
     .cmp-adaptiveform-button__widget:hover {
@@ -202,13 +202,13 @@ AEM Para implementar una temática en una instancia de, debe convertirse en una 
       npm run create-clientlib --category=adaptiveform.theme.[yourtheme]
    ```
 
-   Reemplazar `[yourtheme]` con el nombre de su temática personalizada. Por ejemplo, si el nombre del tema personalizado es `customcanvastheme`, ejecute el siguiente comando
+   Reemplazar `[yourtheme]` con el nombre de su tema personalizado. Por ejemplo, si el nombre de la temática personalizada es `customcanvastheme`, ejecute el siguiente comando
 
    ```
        npm run create-clientlib --category=adaptiveform.theme.customcanvastheme
    ```
 
-   Cuando se ejecuta correctamente el comando, se crea una carpeta de biblioteca de cliente en `themerepo\theme-clientlibs\[yourtheme]`.
+   Si el comando se ejecuta correctamente, se crea una carpeta de biblioteca de cliente en `themerepo\theme-clientlibs\[yourtheme]`.
 
    ![Generación de biblioteca de cliente](/help/forms/using/assets/clientlib_created.png)
 
@@ -268,12 +268,12 @@ The selected theme is applied to the Adaptive Form.
 
 #### 5. Implementar un tema en el entorno de producción {#deploy-theme}
 
-Una vez que haya probado correctamente el tema en su entorno de desarrollo local, puede continuar implementando el tema en los entornos de producción, incluidas las instancias de autor y publicación. Siga estos pasos para implementar el tema en los entornos de producción:
+Una vez que haya probado correctamente el tema en su entorno de desarrollo local, puede continuar implementando el tema en los entornos de producción, incluidas las instancias de autor y Publish. Siga estos pasos para implementar el tema en los entornos de producción:
 
 1. AEM Inicie sesión en su entorno de.
 1. Abra el Administrador de paquetes. La URL predeterminada es `https://localhost:4502/crx/packmgr/index.jsp`.
-1. Clic **Cargar paquete** y haga clic en **Examinar**.
-1. Vaya a y seleccione `[AEM Archetype Project Folder]\all\target[appid].all-[version].zip`. Clic **Abrir**.
+1. Haga clic en **Cargar paquete** y luego en **Examinar**.
+1. Vaya a y seleccione `[AEM Archetype Project Folder]\all\target[appid].all-[version].zip`. Haga clic en **Abrir**.
 1. Haga clic en Instalar. Repita el paso en todos los entornos de producción.
 
 
@@ -284,7 +284,7 @@ Una vez instalado el paquete, la temática está disponible para su selección.
 >[!NOTE]
 >
 >
-> Si tiene dificultades para acceder al cuadro de diálogo de inicio de sesión en una instancia de publicación para instalar el paquete a través del Administrador de paquetes, intente iniciar sesión a través de la siguiente URL: `http://[Publish Server URL]:[PORT]/system/console`. Esto permite el acceso para iniciar sesión en la instancia de publicación, lo que le permite continuar con el proceso de instalación.
+> Si tiene dificultades para acceder al cuadro de diálogo de inicio de sesión en una instancia de publicación para instalar el paquete a través del Administrador de paquetes, intente iniciar sesión a través de la siguiente URL: `http://[Publish Server URL]:[PORT]/system/console`. Esto permite acceder a la instancia de Publish, lo que le permite continuar con el proceso de instalación.
 
 ## Aplicar una temática a un formulario adaptable {#using-theme-in-adaptive-form}
 
@@ -292,15 +292,15 @@ Los pasos para aplicar una temática a un formulario adaptable son los siguiente
 
 1. AEM Inicie sesión en la instancia local de autor de la.
 1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Seleccione **Adobe Experience Manager** > **Formularios** > **Formularios y documentos**.
-1. Clic **Crear** > **Forms adaptable**.
-1. Seleccione una plantilla de componentes principales de Forms adaptable y haga clic en **Siguiente**. El **Añadir propiedades** aparece
-1. Especifique el **Nombre** para su formulario adaptable.
+1. Haga clic en **Crear** > **Forms adaptable**.
+1. Seleccione una plantilla de componentes principales de Forms adaptable y haga clic en **Siguiente**. Aparecerá **Agregar propiedades**
+1. Especifique **Name** para el formulario adaptable.
 
 
    >[!NOTE]
    >
-   > * De forma predeterminada, la variable `adaptiveform.theme.canvas3` tema está seleccionado.
-   > * Puede elegir una temática diferente de la siguiente **Biblioteca de cliente de temas** menú desplegable.
+   > * De manera predeterminada, el tema `adaptiveform.theme.canvas3` está seleccionado.
+   > * Puede elegir una temática diferente del menú desplegable **Biblioteca cliente de temáticas**.
 
 1. Haga clic en **Crear**.
 
@@ -322,13 +322,13 @@ Para eliminar temas no utilizados o no deseados:
 
 **R:** Cuando se define un estilo tanto en el nivel de tema como de componente, el estilo definido en el nivel de componente tiene prioridad.
 
-**P:** ¿Qué pasos se deben seguir si la temática personalizada no está visible en el **[!UICONTROL Biblioteca de cliente de temas]**?
+**Q:** ¿Qué pasos se deben seguir si el tema personalizado no está visible en la **[!UICONTROL Biblioteca cliente de temas]**?
 
-**R:**  Si la temática personalizada no aparece en la **[!UICONTROL Biblioteca de cliente de temas]** , siga estos pasos:
+**R:** Si el tema personalizado no aparece en la lista desplegable **[!UICONTROL Biblioteca cliente de temas]**, siga estos pasos:
 
 1. Vaya a la ubicación en la que ha agregado la biblioteca de cliente de temas personalizada. La ruta recomendada es `/ui.apps/src/main/content/jcr_root/apps[AEM Archetype Project Folder]/clientlibs/<yourtheme>`.
 
-1. Abra el `.content.xml` e incluir los siguientes metadatos:
+1. Abra el archivo `.content.xml` e incluya los siguientes metadatos:
 
    ```
        formstheme:true

@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Preparar AEM Forms para copia de seguridad {#preparing-aem-forms-for-backup}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
 ## Acerca del servicio de backup y restauración {#about-the-backup-and-restore-service}
 
-El servicio de copia de seguridad y restauración le permite colocar AEM Forms en *modo de copia de seguridad*, que permite realizar copias de seguridad en caliente. El servicio de copia de seguridad y restauración no realiza una copia de seguridad de AEM Forms ni restaura el sistema. En su lugar, pone al servidor en un estado de backup coherente y fiable, a la vez que permite que el servidor siga funcionando. Usted es responsable de las acciones para realizar una copia de seguridad de Global Document Storage (GDS) y de la base de datos conectada al servidor de Forms. El GDS es un directorio que se utiliza para almacenar archivos utilizados en un proceso de larga duración.
+El servicio de copia de seguridad y restauración le permite poner AEM Forms en *modo de copia de seguridad*, que permite realizar copias de seguridad en caliente. El servicio de copia de seguridad y restauración no realiza una copia de seguridad de AEM Forms ni restaura el sistema. En su lugar, pone al servidor en un estado de backup coherente y fiable, a la vez que permite que el servidor siga funcionando. Usted es responsable de las acciones para realizar una copia de seguridad de Global Document Storage (GDS) y de la base de datos conectada al servidor de Forms. El GDS es un directorio que se utiliza para almacenar archivos utilizados en un proceso de larga duración.
 
 El modo de copia de seguridad es un estado que introduce el servidor para que los archivos del GDS no se purguen mientras se realiza un procedimiento de copia de seguridad. En su lugar, los subdirectorios se crean en el directorio GDS para mantener un registro de los archivos que se van a purgar una vez finalizado el modo de guardado de copia de seguridad. Un archivo está diseñado para sobrevivir a los reinicios del sistema y puede abarcar días o incluso años. Estos archivos son una parte esencial del estado general del servidor de Forms y pueden incluir archivos de PDF, directivas o plantillas de formulario. Si se pierde o se daña alguno de estos archivos, los procesos del servidor de Forms pueden volverse inestables y los datos podrían perderse.
 
@@ -47,7 +47,7 @@ Puede realizar estas tareas mediante el servicio Copia de seguridad y restauraci
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Copia de seguridad y restauración, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio de copia de seguridad y restauración, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Introducción del modo de copia de seguridad en Forms Server {#entering-backup-mode-on-the-forms-server}
 
@@ -61,7 +61,7 @@ Antes de escribir aplicaciones para entrar en modo de copia de seguridad, se rec
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Copia de seguridad y restauración, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio de copia de seguridad y restauración, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary-of-steps}
 
@@ -78,7 +78,7 @@ Para crear una aplicación que entre en modo de copia de seguridad, realice los 
 
 Incluya los archivos necesarios en el proyecto de desarrollo. Es importante incluir estos archivos en el proyecto para compilar el código correctamente y utilizar la API del servicio de copia de seguridad y restauración.
 
-Para obtener información acerca de la ubicación de estos archivos, consulte [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Para obtener información sobre la ubicación de estos archivos, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Crear un objeto de API de cliente de BackupService**
 
@@ -88,7 +88,7 @@ Para salir del modo de copia de seguridad mediante programación, cree un objeto
 
 Antes de entrar en el modo de copia de seguridad, debe decidir una etiqueta única, determinar la cantidad de tiempo que desea asignar para realizar la copia de seguridad y decidir si desea que el servidor de Forms permanezca en modo de copia de seguridad. Estas consideraciones son importantes para integrarlas con los procedimientos de copia de seguridad establecidos por su organización. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
-**Entrar en modo de copia de seguridad**
+**Ingresar al modo de copia de seguridad**
 
 Introduzca el modo de copia de seguridad con los parámetros que son coherentes con los procedimientos de copia de seguridad de su organización.
 
@@ -96,7 +96,7 @@ Introduzca el modo de copia de seguridad con los parámetros que son coherentes 
 
 Después de entrar en el modo de copia de seguridad, puede recuperar información sobre la sesión. Esta información se puede utilizar para integrarla con los procedimientos de copia de seguridad
 
-**Realizar la copia de seguridad del GDS y la base de datos**
+**Realizar la copia de seguridad del GDS y de la base de datos**
 
 Después de entrar correctamente en el modo de copia de seguridad, puede realizar una copia de seguridad de Global Document Storage (GDS) y de la base de datos a la que está conectado el servidor de Forms. Este paso es específico de su organización, ya que puede realizarlo manualmente o ejecutar otras herramientas para realizar el procedimiento de copia de seguridad.
 
@@ -116,10 +116,10 @@ Inicie el modo de copia de seguridad mediante la API del servicio de copia de se
 
 1. Crear un objeto de API de cliente de BackupService
 
-   Utiliza un `ServiceClientFactory` y el objeto de API de cliente de BackupService juntos.
+   Utiliza un objeto `ServiceClientFactory` y el objeto API de cliente BackupService juntos.
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión. (Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Crear un `BackupService` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión. (Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Cree un objeto `BackupService` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Decida una etiqueta única, determine la cantidad de tiempo para realizar la copia de seguridad y decida si desea estar en modo de copia de seguridad continua
 
@@ -127,17 +127,17 @@ Inicie el modo de copia de seguridad mediante la API del servicio de copia de se
 
 1. Entrar en modo de copia de seguridad
 
-   Active el modo de copia de seguridad invocando el `enterBackupMode` con los parámetros siguientes:
+   Especifique el modo de copia de seguridad invocando el método `enterBackupMode` con los parámetros siguientes:
 
-   * A `String` valor que especifica una etiqueta única legible en lenguaje natural que identifica la sesión del modo de copia de seguridad. Se recomienda no utilizar espacios ni caracteres que no se puedan codificar en formato XML.
-   * Un `int` que especifica el número de minutos que deben permanecer en el modo de copia de seguridad. Puede especificar un valor desde `1` hasta `10080` (el número de minutos en una semana). Este valor se omite al utilizar el modo de copia de seguridad continua.
-   * A `Boolean` valor que especifica si se va a realizar una copia de seguridad continua. Un valor de `True` especifica que está en modo de copia de seguridad continua. En el modo de copia de seguridad continua, se omite el valor especificado para el número de minutos que deben permanecer en el modo de copia de seguridad.
+   * Valor de `String` que especifica una etiqueta única legible en lenguaje natural que identifica la sesión del modo de copia de seguridad. Se recomienda no utilizar espacios ni caracteres que no se puedan codificar en formato XML.
+   * Valor de `int` que especifica el número de minutos que se mantendrán en el modo de copia de seguridad. Puede especificar un valor de `1` a `10080` (la cantidad de minutos en una semana). Este valor se omite al utilizar el modo de copia de seguridad continua.
+   * Valor de `Boolean` que especifica si se va a realizar una copia de seguridad continua. Un valor de `True` especifica que está en modo de copia de seguridad continua. En el modo de copia de seguridad continua, se omite el valor especificado para el número de minutos que deben permanecer en el modo de copia de seguridad.
 
-     El modo de copia de seguridad continua significa que se inicia una nueva sesión de modo de copia de seguridad después de que se complete la actual. Un valor de `False` significa que no se utiliza el modo de copia de seguridad continua y, después de salir del modo de copia de seguridad, se reanuda la depuración de archivos del GDS.
+     El modo de copia de seguridad continua significa que se inicia una nueva sesión de modo de copia de seguridad después de que se complete la actual. Un valor de `False` significa que no se utiliza el modo de copia de seguridad continua y, después de salir del modo de copia de seguridad, se reanuda la depuración de archivos de GDS.
 
 1. Recuperar información sobre la sesión del modo de copia de seguridad en el servidor
 
-   Recupere información utilizando `BackupModeEntryResult` objeto que se devuelve después de invocar el `enterBackupMode` método. La información que puede recuperar después de entrar en el modo de copia de seguridad puede ser útil para la integración con sus procedimientos de copia de seguridad. Por ejemplo, la etiqueta, el ID de copia de seguridad y la hora de inicio pueden ser útiles como entrada para los nombres de archivo del procedimiento de copia de seguridad.
+   Recupere información utilizando el objeto `BackupModeEntryResult` devuelto después de invocar el método `enterBackupMode`. La información que puede recuperar después de entrar en el modo de copia de seguridad puede ser útil para la integración con sus procedimientos de copia de seguridad. Por ejemplo, la etiqueta, el ID de copia de seguridad y la hora de inicio pueden ser útiles como entrada para los nombres de archivo del procedimiento de copia de seguridad.
 
 1. Realizar la copia de seguridad del GDS y la base de datos
 
@@ -154,7 +154,7 @@ Inicie el modo de copia de seguridad mediante el servicio web proporcionado por 
 
 1. Crear un objeto de API de cliente de BackupService
 
-   Mediante el ensamblado de cliente de Microsoft .NET, cree un `BackupServiceService` al invocar su constructor predeterminado y especificar las credenciales utilizando `Credentials` método.
+   Mediante el ensamblado de cliente de Microsoft .NET, cree un objeto `BackupServiceService` invocando su constructor predeterminado y especifique las credenciales mediante el método `Credentials`.
 
 1. Decida una etiqueta única, determine la cantidad de tiempo para realizar la copia de seguridad y decida si desea estar en modo de copia de seguridad continua
 
@@ -164,11 +164,11 @@ Inicie el modo de copia de seguridad mediante el servicio web proporcionado por 
 
    Para entrar en el modo de copia de seguridad, invoque el método enterBackupMode y pase los siguientes valores:
 
-   * A `String` valor que especifica una etiqueta única legible en lenguaje natural que identifica la sesión del modo de copia de seguridad. Se recomienda no utilizar espacios ni caracteres que no se puedan codificar en formato XML.
-   * A `Uint32` que especifica el número de minutos que deben permanecer en el modo de copia de seguridad. Puede especificar un valor desde `1` hasta `10080` (número de minutos en una semana). Este valor se omite al utilizar el modo de copia de seguridad continua.
-   * A `Boolean` valor que especifica si se va a realizar una copia de seguridad continua. Un valor de `True` especifica que está en modo de copia de seguridad continua. En el modo de copia de seguridad continua, se omite el valor especificado para el número de minutos que deben permanecer en el modo de copia de seguridad. El modo de copia de seguridad continua significa que se inicia una nueva sesión de modo de copia de seguridad después de que se complete la actual.
+   * Valor de `String` que especifica una etiqueta única legible en lenguaje natural que identifica la sesión del modo de copia de seguridad. Se recomienda no utilizar espacios ni caracteres que no se puedan codificar en formato XML.
+   * Valor de `Uint32` que especifica el número de minutos que deben permanecer en el modo de copia de seguridad. Puede especificar un valor de `1` a `10080` (cantidad de minutos en una semana). Este valor se omite al utilizar el modo de copia de seguridad continua.
+   * Valor de `Boolean` que especifica si se va a realizar una copia de seguridad continua. Un valor de `True` especifica que está en modo de copia de seguridad continua. En el modo de copia de seguridad continua, se omite el valor especificado para el número de minutos que deben permanecer en el modo de copia de seguridad. El modo de copia de seguridad continua significa que se inicia una nueva sesión de modo de copia de seguridad después de que se complete la actual.
 
-     Un valor de `False` significa que no se utiliza el modo de copia de seguridad continua y, después de salir del modo de copia de seguridad, se reanuda la depuración de archivos del GDS.
+     Un valor de `False` significa que no se utiliza el modo de copia de seguridad continua y, después de salir del modo de copia de seguridad, se reanuda la depuración de archivos de GDS.
 
 1. Recuperar información sobre la sesión del modo de copia de seguridad en el servidor
 
@@ -186,7 +186,7 @@ Antes de escribir las aplicaciones para entrar en el modo de salida, se recomien
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Copia de seguridad y restauración, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio de copia de seguridad y restauración, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-1}
 
@@ -201,17 +201,17 @@ Para salir del modo de copia de seguridad, realice los siguientes pasos:
 
 Incluya todos los archivos necesarios en el proyecto de desarrollo. Estos archivos son importantes para compilar el código correctamente y utilizar la API del servicio de copia de seguridad y restauración.
 
-Para obtener información acerca de la ubicación de estos archivos, consulte [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Para obtener información sobre la ubicación de estos archivos, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Crear un objeto de API de cliente de BackupService**
 
 Para salir del modo de copia de seguridad mediante programación, cree un objeto de cliente BackupService para utilizar la API del servicio de copia de seguridad y restauración.
 
-**Dejar modo de copia de seguridad**
+**Dejar el modo de copia de seguridad**
 
 Deje el modo de copia de seguridad para reanudar la depuración normal de archivos del almacenamiento global de documentos (GDS). Antes de salir del modo de copia de seguridad, debe comprobar que se han completado los procedimientos de copia de seguridad.
 
-**Recupere información sobre la sesión del modo de copia de seguridad que finalizó**
+**Recuperar información sobre la sesión del modo de copia de seguridad que finalizó**
 
 Una vez que haya abandonado el modo de copia de seguridad, podrá recuperar información sobre la sesión. Esta información se puede utilizar para integrarla con los procedimientos de copia de seguridad.
 
@@ -231,18 +231,18 @@ Dejar el modo de copia de seguridad mediante la API del servicio de copia de seg
 
 1. Crear un objeto de API de cliente de BackupService
 
-   Utiliza un `ServiceClientFactory` y el objeto de API de cliente de BackupService juntos.
+   Utiliza un objeto `ServiceClientFactory` y el objeto API de cliente BackupService juntos.
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión. (Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Crear un `BackupService` usando su constructor y pasando el objeto `ServiceClientFactory` objeto como parámetro.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión. (Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Cree un objeto `BackupService` utilizando su constructor y pasando el objeto `ServiceClientFactory` como parámetro.
 
 1. Entrar en modo de copia de seguridad
 
-   Salir del modo de copia de seguridad invocando el `leaveBackupMode` método.
+   Salga del modo de copia de seguridad invocando el método `leaveBackupMode`.
 
 1. Recuperar información sobre la sesión del modo de copia de seguridad en el servidor
 
-   Recupere información sobre la operación utilizando `BackupModeResult` objeto que se devuelve. La información que puede recuperar después de entrar en el modo de copia de seguridad puede ser útil para la integración con sus procedimientos de copia de seguridad. Por ejemplo, la etiqueta, el ID de copia de seguridad y la hora de inicio pueden ser útiles como entrada para los nombres de archivo del procedimiento de copia de seguridad.
+   Recupere información sobre la operación utilizando el objeto `BackupModeResult` que se ha devuelto. La información que puede recuperar después de entrar en el modo de copia de seguridad puede ser útil para la integración con sus procedimientos de copia de seguridad. Por ejemplo, la etiqueta, el ID de copia de seguridad y la hora de inicio pueden ser útiles como entrada para los nombres de archivo del procedimiento de copia de seguridad.
 
 ### Dejar el modo de copia de seguridad mediante la API de servicio web {#leave-backup-mode-using-the-web-service-api}
 
@@ -257,11 +257,11 @@ Dejar el modo de copia de seguridad mediante la API del servicio de copia de seg
 
 1. Crear un objeto de API de cliente de BackupService
 
-   Mediante el ensamblado de cliente de Microsoft .NET, cree un `BackupServiceService` invocando su constructor predeterminado.
+   Mediante el ensamblado de cliente de Microsoft .NET, cree un objeto `BackupServiceService` invocando su constructor predeterminado.
 
 1. Entrar en modo de copia de seguridad
 
-   Salir del modo de copia de seguridad invocando el `leaveBackupMode` operación de servicio web.
+   Salir del modo de copia de seguridad invocando la operación del servicio web `leaveBackupMode`.
 
 1. Recuperar información sobre la sesión del modo de copia de seguridad en el servidor
 

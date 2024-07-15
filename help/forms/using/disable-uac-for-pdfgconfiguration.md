@@ -27,7 +27,7 @@ Cuando el usuario intenta convertir archivos de Word o Excel a PDF en Microsoft�
 Haga lo siguiente:
 
 1. Para acceder a la Utilidad de configuración del sistema, vaya a **[!UICONTROL Inicio > Ejecutar]** y, a continuación, escriba **[!UICONTROL MSCONFIG]**.
-1. Haga clic en la pestaña **[!UICONTROL Herramientas]**, desplácese hacia abajo y seleccione **[!UICONTROL Cambiar configuración de UAC]**. Clic **[!UICONTROL Launch]** para poder ejecutar el comando en una nueva ventana.
+1. Haga clic en la pestaña **[!UICONTROL Herramientas]**, desplácese hacia abajo y seleccione **[!UICONTROL Cambiar configuración de UAC]**. Haga clic en **[!UICONTROL Iniciar]** para ejecutar el comando en una nueva ventana.
 1. Ajuste el control deslizante al nivel No notificar nunca. Cuando termine, cierre la ventana de comandos y la de Configuración del sistema.
 1. Compruebe que la configuración del registro para UAC está establecida en 0 (cero). Siga estos pasos para comprobarlo:
 

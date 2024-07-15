@@ -73,45 +73,45 @@ A continuación se muestra una lista de recomendaciones de Administración de pr
     <ol>
      <li>Actualización a 6.5</li>
      <li>Utilice la interfaz de usuario predeterminada para la administración de sitios, recursos, etc. etc.<br /> </li>
-     <li>Configure la acción "Editar página" para abrir el Editor de páginas de IU clásico. Consulte <a href="#selecting-your-ui">Selección de la IU</a>.</li>
+     <li>Configure la acción "Editar página" para abrir el Editor de páginas de IU clásico. Consulte <a href="#selecting-your-ui">Selección de la interfaz de usuario</a>.</li>
     </ol> <p>A continuación, en una segunda fase:</p>
     <ol>
-     <li>Actualice los cuadros de diálogo de componentes para utilizar el formato de diálogo Coral 3. El Adobe recomienda utilizar la variable <a href="/help/sites-developing/modernization-tools.md">AEM Herramientas de modernización de</a> para actualizar los componentes.</li>
+     <li>Actualice los cuadros de diálogo de componentes para utilizar el formato de diálogo Coral 3. El Adobe AEM recomienda usar las <a href="/help/sites-developing/modernization-tools.md">Herramientas de modernización de la</a> para actualizar los componentes.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>Ha creado un sitio que utiliza el ClientContext con integraciones.<br /> </td>
+   <td>Ha creado un sitio que usa el ClientContext con integraciones.<br /> </td>
    <td>
     <ol>
      <li>Actualización a 6.5</li>
      <li>Utilice la interfaz de usuario predeterminada para la administración de sitios, recursos, etc. etc.</li>
-     <li>Configure la acción "Editar página" para abrir el Editor de páginas de IU clásico. Consulte <a href="#selecting-your-ui">Selección de la IU</a>.</li>
+     <li>Configure la acción "Editar página" para abrir el Editor de páginas de IU clásico. Consulte <a href="#selecting-your-ui">Selección de la interfaz de usuario</a>.</li>
     </ol> <p>A continuación, en una segunda fase:</p>
     <ol>
-     <li>Actualice los cuadros de diálogo de componentes para utilizar el formato de diálogo Coral 3. El Adobe recomienda utilizar la variable <a href="/help/sites-developing/modernization-tools.md">AEM Herramientas de modernización de</a> para actualizar los componentes.</li>
+     <li>Actualice los cuadros de diálogo de componentes para utilizar el formato de diálogo Coral 3. El Adobe AEM recomienda usar las <a href="/help/sites-developing/modernization-tools.md">Herramientas de modernización de la</a> para actualizar los componentes.</li>
      <li>Configure ContextHub (el reemplazo del ClientContext) y actualice las plantillas de página para utilizar ContextHub. ContextHub tiene un modo de compatibilidad que permite cargar almacenes de ClientContext personalizados.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><p>AEM Ha usado CQ/durante muchos años.</p> <p>Ha ampliado la interfaz de usuario del producto (por ejemplo, Administración del sitio) y ha creado componentes con numerosos cuadros de diálogo de edición.</p> </td>
-   <td><p>Actualice a 6.5 y configure la IU clásica como la predeterminada para la creación de páginas para todos los usuarios. Consulte <a href="#selecting-your-ui">Selección de la IU</a>.</p> <p>A continuación, inicie un proyecto para aplicar la personalización y optimizar los cuadros de diálogo de componentes en formato Coral 3. Consulte <a href="#resources-to-help">Recursos de ayuda</a>.<br /> </p> </td>
+   <td><p>Actualice a 6.5 y configure la IU clásica como la predeterminada para la creación de páginas para todos los usuarios. Consulte <a href="#selecting-your-ui">Selección de la interfaz de usuario</a>.</p> <p>A continuación, inicie un proyecto para aplicar la personalización y optimizar los cuadros de diálogo de componentes en formato Coral 3. Ver <a href="#resources-to-help">recursos para ayudar</a>.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Preguntas más frecuentes {#faq}
 
-Consulte el artículo de la Base de conocimiento, [Preguntas frecuentes sobre la creación de IU táctiles](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), para obtener más información; incluida la información acerca de la programación de desaprobación de la IU clásica.
+Consulte el artículo de la Base de conocimiento [Preguntas frecuentes sobre la creación de IU táctiles](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html) para obtener más información, incluida la información sobre la programación de desaprobación de la IU clásica.
 
 ### Selección de la IU {#selecting-your-ui}
 
-Consulte [Selección de la IU](/help/sites-authoring/select-ui.md) para obtener información acerca de cómo configurar el sistema según sea necesario.
+Consulte [Selección de la interfaz de usuario](/help/sites-authoring/select-ui.md) para obtener información sobre cómo configurar el sistema según sea necesario.
 
 ### Estado de IU táctil {#touch-enabled-ui-status}
 
-AEM Para obtener más información sobre las mejoras realizadas en la IU táctil en la versión 6.5 de la, consulte [Novedades de la versión](/help/release-notes/release-notes.md#what-s-new) en las Notas de la versión.
+AEM Para obtener más información sobre las mejoras realizadas en la IU táctil en la versión 6.5 de la versión de, consulte [Novedades](/help/release-notes/release-notes.md#what-s-new) en las Notas de la versión.
 
-Una descripción general completa consulte la [Estado de función de IU táctil](/help/release-notes/touch-ui-features-status.md) página
+Una descripción general completa consulte la página [Estado de la función de IU táctil](/help/release-notes/touch-ui-features-status.md)
 
 ### Recursos de ayuda {#resources-to-help}
 
@@ -122,7 +122,7 @@ Para obtener información básica sobre la manipulación básica:
 Para obtener información detallada sobre el desarrollo:
 
 * [Arquitectura de IU táctil](/help/sites-developing/touch-ui-concepts.md).
-* Utilice el [AEM Herramientas de modernización de](/help/sites-developing/modernization-tools.md) para convertir los cuadros de diálogo de edición de componentes de la IU clásica a la IU táctil.
+* AEM Use [Herramientas de modernización de la](/help/sites-developing/modernization-tools.md) para convertir los cuadros de diálogo de edición de componentes de la IU clásica a la IU táctil.
 
 * [Estructura de la IU táctil](/help/sites-developing/touch-ui-structure.md).
 

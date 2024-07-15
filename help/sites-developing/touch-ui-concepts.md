@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Conceptos de la IU táctil de Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
-Adobe Experience Manager AEM () cuenta con una interfaz de usuario táctil con [diseño interactivo](/help/sites-authoring/responsive-layout.md) para el entorno de creación diseñado para funcionar tanto en dispositivos táctiles como de escritorio.
+Adobe Experience Manager AEM () cuenta con una interfaz de usuario táctil con [diseño adaptable](/help/sites-authoring/responsive-layout.md) para el entorno de creación, que está diseñada para funcionar tanto en dispositivos táctiles como de escritorio.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ La IU táctil incluye lo siguiente:
    * Indica la consola que está utilizando actualmente, su ubicación o ambas dentro de esa consola
    * Selección para el carril izquierdo
    * Rutas de exploración
-   * Acceso a los **Crear** acciones
+   * Acceso a **Crear** acciones apropiadas
    * Ver selecciones
 * El área de contenido que:
    * Enumera los elementos de contenido (ya sean páginas, recursos, publicaciones en foros, etc.)
@@ -51,12 +51,12 @@ La IU táctil incluye lo siguiente:
 
 >[!NOTE]
 >
->AEM Casi toda la funcionalidad de la se ha trasladado a la interfaz de usuario táctil. Sin embargo, en algunos casos limitados, la funcionalidad vuelve a la IU clásica. Consulte [Estado de función de IU táctil](/help/release-notes/touch-ui-features-status.md) para obtener más información.
+>AEM Casi toda la funcionalidad de la se ha trasladado a la interfaz de usuario táctil. Sin embargo, en algunos casos limitados, la funcionalidad vuelve a la IU clásica. Consulte [Estado de la función de IU táctil](/help/release-notes/touch-ui-features-status.md) para obtener más información.
 
 La IU táctil ha sido diseñada por Adobe para proporcionar coherencia en la experiencia del usuario en varios productos. Se basa en:
 
-* **IU de Coral** (CUI) una implementación del estilo visual de Adobe para la IU táctil. La interfaz de usuario de Coral proporciona todo lo que necesita su producto, proyecto o aplicación web para adoptar el estilo visual de la interfaz de usuario.
-* **Granite UI** Los componentes de se crean con la IU de Coral.
+* **IU de Coral** (CUI) es una implementación del estilo visual de Adobe para la IU táctil. La interfaz de usuario de Coral proporciona todo lo que necesita su producto, proyecto o aplicación web para adoptar el estilo visual de la interfaz de usuario.
+* Los componentes de **Granite UI** se han creado con Coral UI.
 
 Los principios básicos de la IU táctil son los siguientes:
 
@@ -68,7 +68,7 @@ Los principios básicos de la IU táctil son los siguientes:
 * Incluir pruebas incrustadas
 * Diseño ascendente para garantizar que estos principios se apliquen a cada elemento y componente
 
-Para obtener más información general sobre la estructura de la IU táctil, consulte [AEM Estructura de la interfaz de usuario táctil de la](/help/sites-developing/touch-ui-structure.md).
+AEM Para obtener más información general sobre la estructura de la interfaz de usuario táctil, consulte [Estructura de la interfaz de usuario táctil de la interfaz de usuario habilitada para la interfaz de usuario táctil de la interfaz de usuario](/help/sites-developing/touch-ui-structure.md).
 
 ## AEM Pila de tecnología {#aem-technology-stack}
 
@@ -84,9 +84,9 @@ Granite es la pila web abierta de Adobe, que proporciona varios componentes, inc
 * Un marco OSGi en el que se implementa todo
 * Varios servicios de compendio de OSGi para admitir la creación de aplicaciones
 * Un marco de trabajo de registro completo que proporciona varias API de registro
-* Implementación del repositorio CRX de la especificación de la API de JCR
+* Implementación del repositorio de CRX de la especificación de la API de JCR
 * El marco web de Apache Sling
-* Partes adicionales del producto CRX actual
+* Partes adicionales del producto actual de CRX
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ La comunicación cliente-servidor en la interfaz de usuario de Granite consiste 
 
 #### Lado del cliente {#client-side}
 
-Utiliza una extensión del vocabulario del HTML, siempre que el autor pueda expresar su intención de crear una aplicación web interactiva. Este es un enfoque similar al de [WAI-ARIA](https://www.w3.org/TR/wai-aria/) y [microformatos](https://microformats.org/).
+Utiliza una extensión del vocabulario del HTML, siempre que el autor pueda expresar su intención de crear una aplicación web interactiva. Este es un enfoque similar para [WAI-ARIA](https://www.w3.org/TR/wai-aria/) y [microformatos](https://microformats.org/).
 
 Consiste principalmente en una colección de patrones de interacción (por ejemplo, el envío asincrónico de un formulario) que interpretan los códigos JS y CSS y que se ejecutan del lado del cliente. La función del lado del cliente es mejorar el marcado (dado que el servidor permite el uso de hipermedios) para la interactividad.
 
@@ -155,7 +155,7 @@ Se entregan como parte del paquete de contenido:
 
 #### Del Lado Del Servidor {#server-side}
 
-Se forma mediante una colección de componentes de sling que permiten al autor *componer* una aplicación web rápida. Cuando el desarrollador desarrolla componentes, el autor los monta para que sean una aplicación web. La función del lado del servidor es proporcionar la asequibilidad de los hipermedios (marcado) al cliente.
+Esto está formado por una colección de componentes de sling que permiten al autor *componer* una aplicación web rápidamente. Cuando el desarrollador desarrolla componentes, el autor los monta para que sean una aplicación web. La función del lado del servidor es proporcionar la asequibilidad de los hipermedios (marcado) al cliente.
 
 Actualmente, los componentes están en el repositorio de Granite en:
 
@@ -176,7 +176,7 @@ Las diferencias entre la interfaz de usuario de Granite y ExtJS (utilizadas para
    <td><strong>Granite UI</strong></td>
   </tr>
   <tr>
-   <td>Llamada a procedimiento remoto<br /> </td>
+   <td>Llamada a procedimiento remoto <br /> </td>
    <td>Transiciones de estado</td>
   </tr>
   <tr>
@@ -200,7 +200,7 @@ Las diferencias entre la interfaz de usuario de Granite y ExtJS (utilizadas para
 
 ### Componentes de Granite UI Foundation {#granite-ui-foundation-components}
 
-El [Componentes de base de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) proporcionan los componentes básicos necesarios para crear cualquier interfaz de usuario. Entre ellos se incluyen:
+Los [componentes básicos de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) proporcionan los componentes básicos necesarios para crear cualquier interfaz de usuario. Entre ellos se incluyen:
 
 * Botón
 * Hipervínculo
@@ -230,7 +230,7 @@ Otras bibliotecas pueden utilizar o ampliar esta biblioteca de componentes de ba
 
 Al actualizar el código ExtJS para utilizar la interfaz de usuario de Granite, la siguiente lista proporciona una descripción general práctica de los xtype de ExtJS y los tipos de nodo con sus tipos de recursos de interfaz de usuario de Granite equivalentes.
 
-| **xtype de ExtJS** | **Tipo de recurso de Granite UI** |
+| **ExtJS xtype** | **Tipo de recurso de IU de Granite** |
 |---|---|
 | `button` | `granite/ui/components/foundation/form/button` |
 | `checkbox` | `granite/ui/components/foundation/form/checkbox` |
@@ -249,7 +249,7 @@ Al actualizar el código ExtJS para utilizar la interfaz de usuario de Granite, 
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
-| **Tipo de nodo** | **Tipo de recurso de Granite UI** |
+| **Tipo de nodo** | **Tipo de recurso de IU de Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
 | `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
@@ -257,7 +257,7 @@ Al actualizar el código ExtJS para utilizar la interfaz de usuario de Granite, 
 
 ### Componentes de administración de Granite UI {#granite-ui-administration-components}
 
-El [Componentes de administración de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) generar componentes de base para proporcionar bloques de creación genéricos que cualquier aplicación de administración pueda implementar. Estas incluyen, entre otras:
+Los [componentes de administración de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) se basan en los componentes básicos para proporcionar bloques de creación genéricos que cualquier aplicación de administración pueda implementar. Estas incluyen, entre otras:
 
 * Barra de navegación global
 * Carril (esqueleto)
@@ -314,7 +314,7 @@ Los elementos del HTML proporcionan una apariencia común para todos los element
 
 En el nivel más básico, un elemento HTML es una etiqueta HTML con un nombre de clase específico. Los elementos más complejos pueden estar compuestos por varias etiquetas, anidadas entre sí (de una manera específica).
 
-El CSS se utiliza para proporcionar la apariencia real. Para que sea posible personalizar fácilmente el aspecto (por ejemplo, en el caso de la promoción de la marca), los valores de estilo reales se declaran como variables que se expanden mediante la variable [MENOS](https://lesscss.org/) preprocesador durante la ejecución.
+El CSS se utiliza para proporcionar la apariencia real. Para que sea posible personalizar fácilmente el aspecto (por ejemplo, en el caso de la promoción de la marca), los valores de estilo reales se declaran como variables que el preprocesador [LESS](https://lesscss.org/) expande durante el tiempo de ejecución.
 
 Objetivo:
 
@@ -323,7 +323,7 @@ Objetivo:
 
 Implementación:
 
-* Etiquetas de HTML con estilos inspirados en [Bootstrap](https://twitter.github.com/bootstrap/)
+* HTML tags con estilos inspirados en [Bootstrap](https://twitter.github.com/bootstrap/)
 * Las clases se definen en archivos LESS
 * Los iconos se definen como sprites de fuente
 
@@ -360,24 +360,24 @@ Los valores reales se definen en un archivo de variables LESS (el siguiente extr
 
 ### Complementos de elementos {#element-plugins}
 
-Muchos de los elementos del HTML deben mostrar algún tipo de comportamiento dinámico, como abrir y cerrar menús emergentes. Esta es la función de los complementos de elementos, que realizan estas tareas manipulando el DOM mediante JavaScript.
+Muchos de los elementos del HTML deben mostrar algún tipo de comportamiento dinámico, como abrir y cerrar menús emergentes. Esta es la función de los complementos de elemento, que realizan estas tareas manipulando el DOM mediante JavaScript.
 
 Un complemento puede ser:
 
-* Diseñado para funcionar en un elemento DOM específico. Por ejemplo, un complemento de diálogo espera encontrar lo siguiente `DIV class=dialog`
+* Diseñado para funcionar en un elemento DOM específico. Por ejemplo, un complemento de diálogo espera encontrar `DIV class=dialog`
 * De naturaleza genérica. Por ejemplo, un administrador de diseño proporciona diseño para cualquier lista de `DIV` o `LI` elementos
 
 El comportamiento del complemento se puede personalizar con parámetros mediante lo siguiente:
 
-* Paso de los parámetros con una llamada de JavaScript
-* Uso de dedicados `data-*` atributos vinculados al marcado del HTML
+* Pasar los parámetros con una llamada de JavaScript
+* Utilizando atributos específicos `data-*` vinculados al marcado del HTML
 
 Aunque el desarrollador puede seleccionar el mejor enfoque para cualquier complemento, la regla general es utilizar:
 
-* `data-*` atributos para las opciones relacionadas con el diseño del HTML. Por ejemplo, para especificar el número de columnas
+* `data-*` atributos para opciones relacionadas con el diseño del HTML. Por ejemplo, para especificar el número de columnas
 * Opciones/clases de API para la funcionalidad relacionada con los datos. Por ejemplo, construir la lista de elementos para mostrar
 
-El mismo concepto se utiliza para implementar la validación del formulario. Para un elemento que desee validar, debe especificar el formulario de entrada requerido como formulario personalizado `data-*` atributo. A continuación, este atributo se utiliza como opción para un complemento de validación.
+El mismo concepto se utiliza para implementar la validación del formulario. Para un elemento que desea validar, debe especificar el formulario de entrada requerido como un atributo `data-*` personalizado. A continuación, este atributo se utiliza como opción para un complemento de validación.
 
 >[!NOTE]
 >
@@ -393,9 +393,9 @@ Objetivo:
 Implementación:
 
 * Complemento jQuery, vinculado a elementos DOM específicos
-* Uso de `data-*` atributos para personalizar el comportamiento
+* Usar atributos de `data-*` para personalizar el comportamiento
 
-Un extracto de marcado de ejemplo (observe las opciones especificadas como data-&#42; atributos):
+Un extracto de marcado de ejemplo (observe las opciones especificadas como atributos data-&#42;):
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -429,7 +429,7 @@ Esto se muestra como:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-El `cardLayout` El complemento presenta los `UL` elementos en función de sus alturas respectivas y teniendo en cuenta también la anchura del padre.
+El complemento `cardLayout` presenta los elementos `UL` incluidos en función de sus alturas respectivas y teniendo en cuenta también la anchura del elemento principal.
 
 ### Widgets de elementos HTML {#html-elements-widgets}
 

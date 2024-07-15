@@ -22,11 +22,11 @@ En Workspace, los procesos que puede iniciar un usuario se muestran en categorí
 
 Cuando especifique nombres de categorías, créelos de modo que aparezcan correctamente en el panel de navegación de Workspace. De forma predeterminada, el panel de navegación izquierdo tiene una anchura fija de 210 píxeles, que es de aproximadamente 24 caracteres. Si el nombre de categoría especificado es demasiado largo para ajustarse a la anchura fija del panel de navegación izquierdo, se trunca. El nombre completo sólo aparece cuando el puntero del mouse (ratón) se detiene sobre él. Intente evitar nombres de categoría que se trunquen. Los siguientes ejemplos ilustran los nombres de categoría que caben y los que se truncan:
 
-**Nombre de categoría que se ajusta a:** Asistencia y baja
+**Nombre de categoría que cabe en:** Asistencia y licencia
 
-**Nombre de categoría truncado:** Asistencia y licencia (Estados Unidos)
+**Nombre de categoría truncado:** Asistencia y permiso (Estados Unidos)
 
-En Workspace, los procesos de una categoría suelen mostrarse como tarjetas en la página Iniciar proceso. En general, se pueden mostrar seis tarjetas en la pantalla para una categoría antes de que el usuario tenga que desplazarse para ver las tarjetas restantes. Dado que el desplazamiento dificulta la búsqueda de un proceso, considere la posibilidad de limitar cada categoría a seis procesos o, según la resolución, limitar el número de procesos que se pueden mostrar en la pantalla sin necesidad de ningún desplazamiento.
+En Workspace, los procesos dentro de una categoría generalmente se muestran como tarjetas en la página Iniciar proceso. En general, se pueden mostrar seis tarjetas en la pantalla para una categoría antes de que el usuario tenga que desplazarse para ver las tarjetas restantes. Dado que el desplazamiento dificulta la búsqueda de un proceso, considere la posibilidad de limitar cada categoría a seis procesos o, según la resolución, limitar el número de procesos que se pueden mostrar en la pantalla sin necesidad de ningún desplazamiento.
 
 AEM Si utiliza MySQL como base de datos de formularios de la aplicación, la consola de administración no puede diferenciar entre dos nombres de categoría que solo difieren en el uso de caracteres extendidos. Por ejemplo, si crea una categoría denominada abcde y otra denominada âbcdè, se considerarán iguales.
 

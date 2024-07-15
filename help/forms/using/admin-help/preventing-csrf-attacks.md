@@ -26,19 +26,19 @@ Por ejemplo, imagine un escenario en el que ha iniciado sesión en la consola de
 
 ## Términos relacionados con CSRF {#csrf-related-terms}
 
-**Referer:** La dirección de la página de origen de la que proviene una solicitud. Por ejemplo, una página web en site1.com contiene un vínculo a site2.com. Al hacer clic en el vínculo, se publica una solicitud en site2.com. El referente de esta solicitud es site1.com porque la solicitud se realiza desde una página cuyo origen es site1.com.
+**Referente:** Dirección de la página de origen de la que proviene una solicitud. Por ejemplo, una página web en site1.com contiene un vínculo a site2.com. Al hacer clic en el vínculo, se publica una solicitud en site2.com. El referente de esta solicitud es site1.com porque la solicitud se realiza desde una página cuyo origen es site1.com.
 
-**URI incluidos en la lista de permitidos:** Los URI identifican los recursos del servidor de Forms que se solicitan, por ejemplo, /adminui o /contentspace. Algunos recursos pueden permitir que una solicitud entre en la aplicación desde sitios externos. Estos recursos se consideran URI incluidos en la lista de permitidos. El servidor de Forms nunca realiza una comprobación de referente a partir de URI incluidos en la lista de permitidos.
+**URI Incluidos en la lista de permitidos:** URI que identifican los recursos del servidor de Forms que se solicitan, por ejemplo, /adminui o /contentspace. Algunos recursos pueden permitir que una solicitud entre en la aplicación desde sitios externos. Estos recursos se consideran URI incluidos en la lista de permitidos. El servidor de Forms nunca realiza una comprobación de referente a partir de URI incluidos en la lista de permitidos.
 
-**Referente nulo:** Al abrir una nueva ventana o pestaña del explorador, escribir una dirección y pulsar Intro, el referente es nulo. La solicitud es completamente nueva y no se origina desde una página web principal; por lo tanto, no hay ningún referente para la solicitud. El servidor de Forms puede recibir un referente nulo de:
+**Referente nulo:** Al abrir una nueva ventana o ficha del explorador, escribir una dirección y presionar Entrar, el referente es nulo. La solicitud es completamente nueva y no se origina desde una página web principal; por lo tanto, no hay ningún referente para la solicitud. El servidor de Forms puede recibir un referente nulo de:
 
 * SOAP solicitudes realizadas en puntos finales de REST o de desde Acrobat
 * AEM SOAP cualquier cliente de escritorio que realice una solicitud HTTP en un punto final de formularios de o REST
 * AEM cuando se abre una nueva ventana del explorador y se introduce la dirección URL de cualquier página de inicio de sesión de la aplicación web de formularios en la que se haya creado la aplicación de la aplicación
 
-SOAP Permitir un referente nulo en los puntos finales de REST y de. También permita un referente nulo en todas las páginas de inicio de sesión de URI como /adminui y /contentspace y sus recursos asignados correspondientes. Por ejemplo, el servlet asignado para /contentspace es /contentspace/faces/jsp/login.jsp, que debería ser una excepción de referente nulo. Esta excepción solo es necesaria si habilita el filtrado de GET para la aplicación web. Las aplicaciones pueden especificar si se permiten referentes nulos. Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [AEM Protección y seguridad para formularios de](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
+SOAP Permitir un referente nulo en los puntos finales de REST y de. También permita un referente nulo en todas las páginas de inicio de sesión de URI como /adminui y /contentspace y sus recursos asignados correspondientes. Por ejemplo, el servlet asignado para /contentspace es /contentspace/faces/jsp/login.jsp, que debería ser una excepción de referente nulo. Esta excepción solo es necesaria si habilita el filtrado de GET para la aplicación web. Las aplicaciones pueden especificar si se permiten referentes nulos. AEM Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [Protección y seguridad para formularios de la lista de permitidos](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
-**Excepción de referente permitido:** Excepción de referente permitido es una sublista de la lista de referentes permitidos, desde los cuales se bloquean las solicitudes. Las excepciones de referencia permitidas son específicas de una aplicación web. Si no se debe permitir que un subconjunto de los referentes permitidos invoque una aplicación web determinada, se pueden realizar listas de bloqueados de los referentes mediante Excepciones de referentes permitidos. Las excepciones de referentes permitidos se especifican en el archivo web.xml de la aplicación. AEM (Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en Protección y seguridad para formularios en forma de en la página Ayuda y Tutorials ).
+**Excepción de referente permitido:** La excepción de referente permitido es una sublista de la lista de referentes permitidos, desde la cual se bloquean las solicitudes. Las excepciones de referencia permitidas son específicas de una aplicación web. Si no se debe permitir que un subconjunto de los referentes permitidos invoque una aplicación web determinada, se pueden realizar listas de bloqueados de los referentes mediante Excepciones de referentes permitidos. Las excepciones de referentes permitidos se especifican en el archivo web.xml de la aplicación. AEM (Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en Protección y seguridad para formularios en forma de en la página Ayuda y Tutorials ).
 
 ## Funcionamiento de los referentes permitidos {#how-allowed-referers-work}
 
@@ -47,7 +47,7 @@ AEM Forms proporciona filtrado de referentes, que puede ayudar a evitar ataques 
 1. El servidor de Forms comprueba el método HTTP utilizado para la invocación:
 
    * Si es POST, el servidor de Forms realiza la comprobación del encabezado Referente.
-   * Si es GET, el servidor de Forms omite la comprobación del referente, a menos que CSRF_CHECK_GETS esté establecido en true, en cuyo caso realiza la comprobación del encabezado del referente. CSRF_CHECK_GETS se especifica en el archivo web.xml de la aplicación. (Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [Guía de seguridad y protección](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
+   * Si es GET, el servidor de Forms omite la comprobación del referente, a menos que CSRF_CHECK_GETS esté establecido en true, en cuyo caso realiza la comprobación del encabezado del referente. CSRF_CHECK_GETS se especifica en el archivo web.xml de la aplicación. (Consulte &quot;Protección frente a ataques de falsificación de solicitud en sitios múltiples&quot; en [Guía de protección y seguridad](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)).
 
 1. El servidor de Forms comprueba si el URI solicitado está incluido en la lista de permitidos:
 
@@ -72,7 +72,7 @@ Al ejecutar el Administrador de configuración, el host predeterminado y la dire
 1. Para agregar un referente permitido:
 
    * Escriba un nombre de host o una dirección IP en el cuadro Referentes permitidos. Para agregar varios referentes permitidos a la vez, escriba cada nombre de host o dirección IP en una nueva línea.
-   * En los cuadros Puerto HTTP y Puertos HTTPS, especifique qué puertos permiten HTTP, HTTPS o ambos. Si deja esas casillas vacías, se usan los puertos predeterminados (puerto 80 para HTTP y puerto 443 para HTTPS). Si introduce `0` (cero) en los cuadros, todos los puertos de ese servidor están habilitados. También puede especificar un número de puerto específico para habilitar sólo ese puerto.
+   * En los cuadros Puerto HTTP y Puertos HTTPS, especifique qué puertos permiten HTTP, HTTPS o ambos. Si deja esas casillas vacías, se usan los puertos predeterminados (puerto 80 para HTTP y puerto 443 para HTTPS). Si escribe `0` (cero) en los cuadros, se habilitarán todos los puertos de ese servidor. También puede especificar un número de puerto específico para habilitar sólo ese puerto.
    * Haga clic en Agregar.
 
 1. Para quitar una entrada de la lista Referentes permitidos, seleccione el elemento de la lista y haga clic en Eliminar.

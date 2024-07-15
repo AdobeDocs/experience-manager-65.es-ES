@@ -84,7 +84,7 @@ Para modificar el contenido sin problemas, AEM ofrece dos API sólidas.
 * La API de GraphQL permite crear solicitudes para acceder a fragmentos de contenido y enviarlos.
 * La API de REST de Assets permite crear y modificar fragmentos de contenido (y otros recursos).
 
-Aprenderá a utilizar estas API en una parte posterior del recorrido sin encabezado de AEM. O bien, consulte la [recursos adicionales](#additional-resources) para obtener documentación adicional.
+Aprenderá a utilizar estas API en una parte posterior del recorrido sin encabezado de AEM. O bien, vea la sección [recursos adicionales](#additional-resources) a continuación para obtener documentación adicional.
 
 ## Niveles de integración sin encabezado {#integration-levels}
 

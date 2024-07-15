@@ -51,13 +51,13 @@ AEM Los miembros del grupo de creación de aplicaciones son responsables de la c
 
    Añadir autores de la aplicación al grupo Autores
 
-1. Ahora que ha creado el grupo de usuarios Autores de la aplicación, puede añadir miembros individuales del equipo a este nuevo grupo a través del [Admin Console de usuario](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Ahora que ha creado el grupo de usuarios de autores de aplicaciones, puede agregar integrantes individuales del equipo a este nuevo grupo a través de [Admin Console de usuarios](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    Editar grupos de usuarios
 
-1. Vaya a [Consola Permisos](http://localhost:4502/useradmin) y agregue permisos para administrar cloudservices
+1. Vaya a la consola [Permisos](http://localhost:4502/useradmin) y agregue permisos para administrar cloudservices
 
    * (Lectura) en /etc/cloudservices
 
@@ -67,7 +67,7 @@ AEM Los miembros del grupo de creación de aplicaciones son responsables de la c
 
 ### Grupo de administradores de aplicaciones de AEM Mobile (grupo de administradores de aplicaciones) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Los miembros del grupo de administradores de aplicaciones pueden crear contenido de la aplicación con los mismos permisos incluidos con los autores de aplicaciones **Y** además, son responsables de:
+Los miembros del grupo de administradores de aplicaciones pueden crear contenido de aplicación con los mismos permisos incluidos con los autores de aplicaciones **Y**. Además, también son responsables de lo siguiente:
 
 * Configuración de los servicios en la nube de PhoneGap Build y Adobe AEM de Mobile Services en la
 * Ensayo, publicación y borrado de actualizaciones de OTA de sincronización de contenido de la aplicación
@@ -88,7 +88,7 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Vaya a [Consola Permisos](http://localhost:4502/useradmin) y agregue permisos para administrar cloudservices
+1. Vaya a la consola [Permisos](http://localhost:4502/useradmin) y agregue permisos para administrar cloudservices
 
    * (Leer, Modificar, Crear, Eliminar, Replicar) en /etc/cloudservices/mobileservices
    * (Leer, Modificar, Crear, Eliminar, Replicar) en /etc/cloudservices/phonegap-build
@@ -114,14 +114,14 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 
 Los mosaicos del panel pueden exponer diferentes acciones en función de los permisos que tenga el usuario. A continuación se describen qué acciones están disponibles para cada mosaico.
 
-Además de estos permisos, también se puede mostrar u ocultar una acción en función de cómo esté configurada la aplicación actual. Por ejemplo, no tiene sentido exponer la acción &quot;Compilación remota&quot; si no se ha asignado una configuración de nube de PhoneGap a la aplicación. Se enumeran a continuación en &quot;**Condición de configuración**&#39; secciones.
+Además de estos permisos, también se puede mostrar u ocultar una acción en función de cómo esté configurada la aplicación actual. Por ejemplo, no tiene sentido exponer la acción &quot;Compilación remota&quot; si no se ha asignado una configuración de nube de PhoneGap a la aplicación. Se enumeran a continuación en las secciones &#39;**Condición de configuración**&#39;.
 
 ### Administrar mosaico de aplicación {#manage-app-tile}
 
 Actualmente, el mosaico no tiene acciones que requieran permisos. Sin embargo, la página de detalles de la aplicación tiene las siguientes acciones:
 
 * *Editar* para app-author y app-admin (Déclencheur de interfaz de usuario - jcr:write - en /content/phonegap/{suffix})
-* *Descargar* para app-author y app-admin (Déclencheur de la interfaz de usuario: en /content/phonegap/{suffix})
+* *Descargar* para app-author y app-admin (Déclencheur de la interfaz de usuario - en /content/phonegap/{suffix})
 
 La siguiente imagen muestra las opciones de descarga y edición de una aplicación:
 

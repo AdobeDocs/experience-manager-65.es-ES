@@ -59,7 +59,7 @@ Incluye campos para capturar el número de teléfono y la dirección de correo e
 ## Información de la tarjeta de crédito {#credit-card-information}
 
 Incluye campos para capturar información de tarjetas de crédito que se puede utilizar para procesar pagos. 
-[![Fragmento Información de tarjeta de crédito](assets/cc-info.png)](assets/cc-info-1.png)
+[![Fragmento de información de tarjeta de crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Empleo actual {#current-employment}
 

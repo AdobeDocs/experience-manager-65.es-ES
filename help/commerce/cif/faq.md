@@ -20,7 +20,7 @@ Adobe ha adoptado las API GraphQL de Adobe Commerce como sus API comerciales ofi
 
 ## 2. ¿Se pueden almacenar los activos de producto (imágenes) y hacer referencia a ellos desde AEM mediante el administrador de Adobe Commerce? ¿Cómo se pueden consumir los activos de Dynamic Media?
 
-No hay una integración oficial de AEM Assets con Adobe Commerce. Hay un conector de socio disponible en la [mercado](https://marketplace.magento.com/partner/bounteous_ecomm).
+No hay una integración oficial de AEM Assets con Adobe Commerce. Hay un conector de socio disponible en [Marketplace](https://marketplace.magento.com/partner/bounteous_ecomm).
 
 O bien, como solución alternativa, puede almacenar los recursos de productos (imágenes) en AEM Assets, pero debe almacenar manualmente las direcciones URL de los recursos en Adobe Commerce. Dynamic Media forma parte de AEM Assets y funciona del mismo modo.
 
@@ -50,7 +50,7 @@ Los datos dinámicos, como el precio o el inventario no se almacenan en la cach�
 
 ## 9. ¿Cómo funciona la invalidación de caché para Dispatcher de AEM con AEM y Commerce?
 
-Adobe recomienda configurar la invalidación de caché basada en TTL para las páginas almacenadas en caché de Dispatcher. Para obtener información dinámica como precio o acciones, Adobe recomienda procesar la fecha del lado del cliente. Para obtener más información sobre la invalidación de caché basada en TTL, consulte [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=es)
+Adobe recomienda configurar la invalidación de caché basada en TTL para las páginas almacenadas en caché de Dispatcher. Para obtener información dinámica como precio o acciones, Adobe recomienda procesar la fecha del lado del cliente. AEM Para obtener más información acerca de la invalidación de caché basada en TTL, consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=es)
 
 ## 10. ¿Existe alguna recomendación sobre la búsqueda unificada en los contenidos de AEM con Comercio?
 
@@ -70,7 +70,7 @@ El Adobe AEM recomienda administrar los datos y el contenido relacionados con el
 
 ## AEM 14. ¿Cómo garantiza una empresa el cumplimiento de PCI al utilizar la para toda la capa de presentación?
 
-Adobe recomienda utilizar métodos de pago abstractos. Al hacerlo, el cliente del explorador se pone en comunicación directa con el proveedor de la puerta de enlace de pago para que el Adobe no contenga ni pase la fecha del titular de la tarjeta, ni las soluciones de comercio. Este enfoque solo requiere un nivel 3 de conformidad con PCI. Sin embargo, hay cosas adicionales que considerar para que sea totalmente compatible con PCI, como por ejemplo cómo los empleados interactúan con el sistema y los datos. Para obtener más información sobre la conformidad con PCI Adobe Commerce, consulte [Conformidad con PCI](https://business.adobe.com/products/magento/pci-compliance.html?lang=es)
+Adobe recomienda utilizar métodos de pago abstractos. Al hacerlo, el cliente del explorador se pone en comunicación directa con el proveedor de la puerta de enlace de pago para que el Adobe no contenga ni pase la fecha del titular de la tarjeta, ni las soluciones de comercio. Este enfoque solo requiere un nivel 3 de conformidad con PCI. Sin embargo, hay cosas adicionales que considerar para que sea totalmente compatible con PCI, como por ejemplo cómo los empleados interactúan con el sistema y los datos. Para obtener más información acerca del cumplimiento de PCI Adobe Commerce, consulte [Cumplimiento de PCI](https://business.adobe.com/products/magento/pci-compliance.html?lang=es)
 
 ## 15. Si utilizo versiones en la nube de AEM y Adobe Commerce, ¿es compatible esta solución conjunta con PCI?
 

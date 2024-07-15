@@ -30,10 +30,10 @@ AEM Mobile forma parte de la plataforma digital multicanal de Adobe Experience M
 
 AEM Mobile ofrece varios métodos para crear aplicaciones. Las tres formas diferentes de crear aplicaciones son las siguientes:
 
-* **[AEM Uso de On-Demand Services con el servicio de asistencia en el](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[AEM Uso de On-Demand Services sin el uso de un servicio de](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
-* **[Uso de Adobe PhoneGap AEM Enterprise con el servicio de ID de](/help/mobile/getting-started-aem-mobile-phonegap.md)**
+* AEM **[Usar On-Demand Services con el servicio de atención al cliente](/help/mobile/getting-started-aem-mobile-on-demand.md)**
+* AEM **[Uso de servicios bajo demanda sin el servicio de asistencia técnica](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
+* **[Uso de Adobe PhoneGap AEM Enterprise con el servicio de soporte para el cliente](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]
 >
->Si es su primera vez en Adobe Experience Manager, puede que quiera seguir [AEM Introducción a la administración de segmentos](/help/sites-deploying/deploy.md).
+>Si no tiene experiencia previa con Adobe Experience Manager AEM, puede que quiera seguir [Introducción a la administración de datos](/help/sites-deploying/deploy.md) para los usuarios de la aplicación .

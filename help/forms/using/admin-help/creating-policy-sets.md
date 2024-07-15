@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Los conjuntos de directivas se utilizan para agrupar directivas que tienen un propósito comercial común. Los conjuntos de directivas se pueden poner a disposición de un subconjunto de usuarios del sistema.
 
-Cada conjunto de directivas tiene al menos un coordinador asociado. El *coordinador del conjunto de políticas* es un administrador o un usuario que tiene permisos adicionales. El coordinador del conjunto de políticas suele ser un especialista de la organización que puede crear mejor las políticas en un conjunto de políticas determinado.
+Cada conjunto de directivas tiene al menos un coordinador asociado. El *coordinador de conjuntos de directivas* es un administrador o un usuario que tiene permisos adicionales. El coordinador del conjunto de políticas suele ser un especialista de la organización que puede crear mejor las políticas en un conjunto de políticas determinado.
 
 Los coordinadores de conjuntos de directivas pueden realizar estas tareas:
 
@@ -38,7 +38,7 @@ Al eliminar un conjunto de directivas, las directivas que formaban parte del con
 
 El superusuario o coordinador de conjuntos de directivas agrega los dominios creados en Administración de usuarios al usuario y grupo visibles para cada conjunto de directivas. Esta lista es visible para el coordinador de conjuntos de directivas y se utiliza para establecer límites en los dominios que el coordinador de conjuntos de directivas puede examinar al elegir usuarios para agregarlos a las directivas.
 
-Al crear conjuntos de directivas, se asigna a los usuarios la función de editor de documentos. El *editor de documentos* es el usuario que protege el documento con una directiva. De forma predeterminada, este usuario siempre se incluye en una directiva con derechos de acceso completos, incluidas las capacidades de revocación y cambio de directiva. Sin embargo, los administradores pueden cambiar los derechos de acceso del editor del documento para las directivas compartidas. Por ejemplo, el administrador puede deshabilitar el derecho del editor del documento a revocar el acceso al documento o cambiar la directiva. Si un administrador cambia la directiva adjunta al documento, el nombre del publicador se actualizará al nombre del propietario de la última directiva aplicada al documento.
+Al crear conjuntos de directivas, se asigna a los usuarios la función de editor de documentos. *editor de documentos* es el usuario que protege el documento con una directiva. De forma predeterminada, este usuario siempre se incluye en una directiva con derechos de acceso completos, incluidas las capacidades de revocación y cambio de directiva. Sin embargo, los administradores pueden cambiar los derechos de acceso del editor del documento para las directivas compartidas. Por ejemplo, el administrador puede deshabilitar el derecho del editor del documento a revocar el acceso al documento o cambiar la directiva. Si un administrador cambia la directiva adjunta al documento, el nombre del publicador se actualizará al nombre del propietario de la última directiva aplicada al documento.
 
 Tras la instalación de Document Security, se crea un conjunto de directivas predeterminado denominado *Conjunto de directivas globales*. Este conjunto de directivas lo administra el administrador que instaló el software o el coordinador de conjuntos de directivas designado para este conjunto de directivas.
 
@@ -85,25 +85,25 @@ Durante la creación del conjunto de directivas, puede utilizar el botón Atrás
 
 1. Haga clic en Guardar.
 
-Ahora puede agregar directivas al conjunto de directivas. (Consulte [Crear y editar directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
+Ahora puede agregar directivas al conjunto de directivas. (Consulte [Creación y edición de directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
 ## Editar un conjunto de políticas {#edit-a-policy-set}
 
 1. En la página Seguridad de documentos, haga clic en Directivas, haga clic en la ficha Conjuntos de directivas y, a continuación, haga clic en el conjunto de directivas que desea editar.
 1. Haga clic en la pestaña adecuada y edite según sea necesario:
 
-   * **Detalles:** Edite el nombre y la descripción del conjunto de directivas.
-   * **Políticas:** Crear, habilitar, editar y eliminar directivas dentro del conjunto de directivas.
-   * **Usuarios y grupos visibles:** Agregar y quitar usuarios y grupos visibles que se pueden incluir en una directiva.
-   * **Coordinadores de conjuntos de directivas:** Agregar, quitar y cambiar permisos para coordinadores.
-   * **Editores de documentos:** Agregar y quitar usuarios que pueden publicar documentos mediante las directivas del conjunto.
+   * **Detalle:** Edite el nombre y la descripción del conjunto de directivas.
+   * **Directivas:** Cree, habilite, edite y elimine directivas dentro del conjunto de directivas.
+   * **Usuarios y grupos visibles:** Agregue y quite usuarios y grupos visibles que se puedan incluir en una directiva.
+   * **Coordinadores de conjuntos de directivas:** Agregue, quite y cambie permisos para los coordinadores.
+   * **Publicadores de documentos:** Agregue y quite usuarios que puedan publicar documentos mediante las directivas del conjunto.
 
 1. Para eliminar un usuario o grupo visible, Coordinador de conjuntos de directivas o Editor de documentos, haga clic en la ficha correspondiente, active la casilla de verificación de la entrada, haga clic en Eliminar y, a continuación, haga clic en Aceptar.
 1. Para agregar usuarios o grupos visibles, un Coordinador de conjuntos de directivas o Publicadores de documentos, haga clic en la ficha correspondiente, en Agregar usuarios o grupos, busque el usuario o grupo que desee agregar, seleccione la entrada, haga clic en Agregar y, a continuación, haga clic en Aceptar.
 1. En la ficha Directivas, busque directivas para agregarlas al conjunto de directivas y cree nuevas directivas:
 
    * Para buscar una directiva, seleccione ID de directiva o Nombre de directiva, escriba el valor correspondiente, seleccione el número de elementos que desea mostrar y haga clic en Buscar.
-   * Para obtener más información sobre cómo crear una directiva, consulte [Crear y editar directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+   * Para obtener detalles acerca de cómo crear una directiva, vea [Crear y editar directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
 ## Eliminar un conjunto de políticas {#delete-a-policy-set}
 

@@ -23,7 +23,7 @@ La interfaz de usuario para la creación de [comunicaciones interactivas](/help/
 * Editor de documentos de arrastrar y soltar WYSIWYG
 * Repositorio integrado para recursos: los recursos cargados y creados en el servidor están disponibles en el Explorador de recursos de la interfaz de creación de las comunicaciones interactivas.
 
-Cuando usted [crear o editar una comunicación interactiva existente](../../forms/using/create-interactive-communication.md), se utilizan los siguientes elementos de interfaz de usuario:
+Cuando [crea o edita una comunicación interactiva existente](../../forms/using/create-interactive-communication.md), utiliza los siguientes elementos de la interfaz de usuario:
 
 * [Barra lateral](#sidebar)
 * [Barra de herramientas de la página](#page-toolbar)
@@ -55,7 +55,8 @@ En el Explorador de contenido, puede ver la jerarquía de objetos del documento 
 
 * **Explorador de propiedades**
 
-  Permite editar las propiedades de un componente. Las propiedades cambian en función del componente. Por ejemplo, para ver las propiedades del contenedor de documentos, seleccione un componente y, a continuación, seleccione ![field-level](assets/field-level.png) > **Contenedor de documento**, y luego seleccione ![cmppr](assets/cmppr.png).
+  Permite editar las propiedades de un componente. Las propiedades cambian en función del componente. Por ejemplo, para ver las propiedades del contenedor de documentos:
+Seleccione un componente, luego seleccione ![field-level](assets/field-level.png) > **Contenedor de documento** y luego seleccione ![cmppr](assets/cmppr.png).
 
 * **Explorador de recursos**
 Segmenta distintos tipos de contenido, como fragmentos de diseño, imágenes, documentos, páginas o vídeos. El autor puede arrastrar y soltar recursos en la comunicación interactiva.
@@ -84,12 +85,12 @@ El Explorador de fuentes de datos muestra las fuentes de datos disponibles en el
 
 Los puntos clave para trabajar con los componentes de las comunicaciones interactivas son los siguientes:
 
-* Cada componente tiene propiedades asociadas que controlan su aspecto y su funcionalidad. Para configurar las propiedades de un componente, seleccione el componente y seleccione ![cmppr](assets/cmppr.png) para abrir las propiedades del componente en el explorador de propiedades.
-* Cada componente se identifica con su nombre de elemento. Al seleccionar ![cmppr](assets/cmppr.png), puede cambiar el nombre del componente cambiando el valor del campo Nombre del elemento en el explorador de propiedades. El campo Nombre de elemento solo acepta letras, números, guiones (-) y guiones bajos (_). No se permite ningún otro tipo de caracteres especiales, y el nombre del elemento debe comenzar con una letra.
+* Cada componente tiene propiedades asociadas que controlan su aspecto y su funcionalidad. Para configurar las propiedades de un componente, seleccione el componente y seleccione ![cmppr](assets/cmppr.png) para abrir las propiedades del componente en el Explorador de propiedades.
+* Cada componente se identifica con su nombre de elemento. Al seleccionar ![cmppr](assets/cmppr.png), puede cambiar el nombre del componente cambiando el valor del campo Nombre del elemento en el Explorador de propiedades. El campo Nombre de elemento solo acepta letras, números, guiones (-) y guiones bajos (_). No se permite ningún otro tipo de caracteres especiales, y el nombre del elemento debe comenzar con una letra.
 * Puede modificar la propiedad Título de los componentes en línea de una comunicación interactiva en el editor sin abrir el Explorador de propiedades siempre que el título esté visible en la comunicación. Para ello:
 
    1. Seleccione para seleccionar un componente que tenga la propiedad Título y cuya propiedad Ocultar título esté deshabilitada.
-   1. Seleccionar ![aem_6_3_edit](assets/aem_6_3_edit.png) para que el título se pueda editar.
+   1. Seleccione ![aem_6_3_edit](assets/aem_6_3_edit.png) para poder editar el título.
 
    1. Modifique el título y seleccione la tecla Retroceso o seleccione en cualquier sitio fuera del componente para guardar los cambios.  Seleccione la tecla Esc para descartar los cambios.
 
@@ -99,7 +100,7 @@ Los puntos clave para trabajar con los componentes de las comunicaciones interac
 
 Al seleccionar un componente, aparece una barra de herramientas que le permite trabajar con él. Puede obtener opciones para cortar, pegar, mover y especificar propiedades de los componentes. Las opciones son las siguientes:
 
-A.**Configurar**: cuando selecciona **Configurar**, las propiedades de los componentes se pueden ver en la barra lateral.
+A.**Configurar**: al seleccionar **Configurar**, las propiedades de los componentes se pueden ver en la barra lateral.
 
 B.**Editar reglas**: cuando selecciona Editar reglas, aparece el Editor de reglas, en el que puede editar y crear reglas para el componente seleccionado. En el Editor de reglas, también puede seleccionar otros objetos de formulario (componentes) y editar/crear reglas para dichos objetos.
 

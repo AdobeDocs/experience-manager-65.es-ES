@@ -1,6 +1,6 @@
 ---
 title: Personalizar plantillas de búsqueda
-description: Puede crear plantillas de búsqueda para utilizarlas en Workspace para buscar instancias de procesos de las páginas Tareas pendientes y Seguimiento. También puede editar o eliminar plantillas de búsqueda existentes.
+description: Puede crear plantillas de búsqueda para utilizarlas en Workspace y buscar instancias de procesos en las páginas Tareas pendientes y Seguimiento. También puede editar o eliminar plantillas de búsqueda existentes.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Personalizar plantillas de búsqueda {#customizing-search-templates}
 
-Puede crear plantillas de búsqueda para utilizarlas en Workspace para buscar instancias de procesos de las páginas Tareas pendientes y Seguimiento. También puede editar o eliminar plantillas de búsqueda existentes.
+Puede crear plantillas de búsqueda para utilizarlas en Workspace y buscar instancias de procesos en las páginas Tareas pendientes y Seguimiento. También puede editar o eliminar plantillas de búsqueda existentes.
 
 Al crear o editar una plantilla de búsqueda, puede especificar el diseño y el orden de los resultados de búsqueda. Sin embargo, los usuarios pueden modificar esta configuración en Workspace después de que aparezcan los resultados de búsqueda.
 
@@ -45,7 +45,7 @@ Puede crear tantas plantillas de búsqueda como sea necesario.
 
    * En la parte superior de la pestaña Criterios, seleccione un elemento de proceso o un elemento de tarea.
 
-     **Sugerencia**: *Si previamente seleccionó el elemento Nombre del proceso y especificó un proceso, también se podrá seleccionar cualquier variable de proceso definida en ese proceso.*
+     **Sugerencia**: *Si seleccionó previamente el elemento Nombre del proceso y especificó un proceso, también se podrá seleccionar cualquier variable de proceso definida en ese proceso.*
 
      **Sugerencia**: *Si selecciona el elemento Task Visible, los usuarios podrán quitar las tareas completadas de los resultados de búsqueda.*
 
@@ -57,9 +57,9 @@ Puede crear tantas plantillas de búsqueda como sea necesario.
       * (Opcional) Para permitir que los usuarios cambien el valor del operando en Workspace, seleccione Permitir al usuario cambiar el operando.
       * (Opcional) Para permitir que los usuarios cambien el operador relacional, seleccione Permitir al usuario seleccionar otro operador relacional. En la lista que aparece, seleccione los operadores que deben estar disponibles para el usuario.
 
-     **Sugerencia**: *Si seleccionó Nombre del proceso como elemento, puede hacer clic en el icono situado junto al campo de operando para mostrar una lista en la que puede seleccionar un proceso que se esté ejecutando en el servidor de Forms. Después de seleccionar un proceso, cualquier variable de proceso definida en ese proceso estará disponible para su selección en Variables de proceso en la sección superior de la pestaña Criterios.*
+     **Sugerencia**: *Si seleccionó Nombre del proceso como elemento, puede hacer clic en el icono situado junto al campo de operando para mostrar una lista donde puede seleccionar un proceso que se esté ejecutando en el servidor de Forms. Después de seleccionar un proceso, todas las variables de proceso definidas en ese proceso están disponibles para su selección en Variables de proceso en la sección superior de la ficha Criterios.*
 
-     **Sugerencia**: *Para eliminar un elemento de la plantilla de búsqueda, haga clic en el icono Eliminar junto a los criterios de búsqueda del elemento.*
+     **Sugerencia**: *Puede eliminar un elemento de la plantilla de búsqueda haciendo clic en el icono Eliminar situado junto a los criterios de búsqueda del elemento.*
 
 1. (Opcional) Para que el encabezado de cada columna se muestre en los resultados de búsqueda, haga clic en la pestaña Diseño y realice los siguientes pasos:
 

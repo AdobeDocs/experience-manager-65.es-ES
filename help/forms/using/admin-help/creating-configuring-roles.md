@@ -22,9 +22,9 @@ Mediante las páginas web de Administración de usuarios, puede asociar usuarios
 
 Administración de usuarios tiene dos tipos de funciones:
 
-**Funciones mutables:** Este tipo de función se puede editar y eliminar, y los permisos de función se pueden agregar y eliminar de estos tipos de funciones. Cualquier función que cree se considerará una función mutable. Puede agregar o quitar usuarios y grupos asignados a funciones mutables.
+**Funciones mutables:** Este tipo de función se puede editar y eliminar, y los permisos de función se pueden agregar y eliminar de estos tipos de función. Cualquier función que cree se considerará una función mutable. Puede agregar o quitar usuarios y grupos asignados a funciones mutables.
 
-**Funciones inmutables:** Las funciones predeterminadas que se incluyen con la administración de usuarios son funciones inmutables. Estas funciones no se pueden editar ni eliminar. Sin embargo, puede agregar o quitar usuarios y grupos asignados a funciones inmutables.
+**Funciones inmutables:** Las funciones predeterminadas que se incluyen en Administración de usuarios son funciones inmutables. Estas funciones no se pueden editar ni eliminar. Sin embargo, puede agregar o quitar usuarios y grupos asignados a funciones inmutables.
 
 AEM Tanto las funciones mutables como las inmutables también se pueden crear mediante las API de formularios de la aplicación de la forma de.
 
@@ -32,67 +32,67 @@ AEM Tanto las funciones mutables como las inmutables también se pueden crear me
 
 Las siguientes funciones predeterminadas se incluyen en la base de datos de administración de usuarios.
 
-**usuario de la consola de administración:** Puede acceder a la consola de administración.
+**Usuario de la consola de administración:** puede acceder a la consola de administración.
 
-**Administrador de aplicaciones:** Puede utilizar todas las funciones de Workbench. Puede utilizar las páginas Aplicaciones y servicios de la consola de administración para configurar las propiedades, los extremos y la seguridad del servicio en tiempo de ejecución.
+**Administrador de aplicaciones:** puede usar todas las características de Workbench. Puede utilizar las páginas Aplicaciones y servicios de la consola de administración para configurar las propiedades, los extremos y la seguridad del servicio en tiempo de ejecución.
 
-**AEM Administrador de formularios de:** Puede realizar todas las tareas para todos los servicios instalados.
+AEM **Administrador de formularios de:** puede realizar todas las tareas para todos los servicios instalados.
 
-**Administrador de seguridad:** Controla la configuración de Administración de usuarios y administra los usuarios y grupos asociados a cualquier dominio del Administrador de usuarios
+**Administrador de seguridad:** controla la configuración de Administración de usuarios y administra los usuarios y grupos asociados a cualquier dominio de Administrador de usuarios
 
-**Usuario de servicios:** Puede ver e invocar cualquier servicio
+**Usuario de servicios:** puede ver e invocar cualquier servicio
 
-**Superadministrador:** Tiene acceso a todas las funciones administrativas del sistema, incluidos los servicios
+**Superadministrador:** tiene acceso a todas las funciones administrativas del sistema, incluidos los servicios
 
-**Administrador de confianza:** Puede administrar la configuración de confianza de PKI y las credenciales de PKI que se administran desde la página Administración del almacén de confianza en la consola de administración
+**Administrador de confianza:** puede administrar la configuración de confianza de PKI y las credenciales de PKI administradas desde la página Administración del almacén de confianza en la consola de administración
 
 ### Funciones predeterminadas adicionales {#additional-default-roles}
 
 AEM Se pueden incluir las siguientes funciones predeterminadas adicionales, en función de los componentes de formularios de la aplicación que haya instalado
 
-**Usuario de aplicación de carga de documento:** Puede cargar documentos mediante Flex Remoting.
+**Usuario de aplicación de carga de documentos:** puede cargar documentos mediante Flex Remoting.
 
-**Administrador de Forms:** Puede ver y modificar la configuración desde la página de Forms en la consola de administración
+**Administrador de Forms:** puede ver y modificar la configuración de la página de Forms en la consola de administración
 
-**AEM Administrador de área de contenido de formularios:** Puede ver y modificar la configuración de la página Servicios de contenido (obsoleto) en la consola de administración
+AEM **Administrador del espacio de contenido de formularios de:** Puede ver y modificar la configuración de la página Servicios de contenido (obsoleto) en la consola de administración
 
-**AEM Usuario de ContentSpace de formularios:** Puede iniciar sesión en las páginas web del espacio de contenido (obsoleto)
+AEM **Usuario de área de contenido de formularios de:** puede iniciar sesión en las páginas web de área de contenido (obsoletas)
 
-**Administrador de conectores de Documentum:** Puede ver y modificar la configuración desde la página Connector para Documentum de EMC en la consola de administración
+**Administrador de Conector de Documentum:** Puede ver y modificar la configuración desde la página Documentum de Connector para EMC en la consola de administración
 
-**AEM Administrador del conector FileNet de formularios:** Puede ver y modificar la configuración desde la página Connector for IBM FileNet en la consola de administración
+AEM **Administrador del conector FileNet de formularios:** Puede ver y modificar la configuración desde la página Conector para IBM FileNet en la consola de administración
 
-**AEM Administrador del conector de IBM CM de formularios:** Puede ver y modificar la configuración desde la página Conector del administrador de contenido de IBM en la consola de administración
+AEM **Administrador de conectores de IBM CM de formularios:** puede ver y modificar la configuración de la página Conector para el Administrador de contenido de IBM en la consola de administración
 
-**Rights Management Administrador:** Realiza todas las tareas necesarias para todas las configuraciones de servidor en las páginas relevantes del Rights Management
+**Rights Management:** realiza todas las tareas necesarias para todas las configuraciones de servidor en las páginas relevantes del Rights Management
 
-**Usuario final de Rights Management:** Puede acceder a las páginas web del usuario final Rights Management
+**Usuario final de Rights Management:** puede acceder a las páginas web del usuario final de Rights Management
 
-**Usuario de invitación de Rights Management:** Puede invitar a usuarios
+**Rights Management Invitar usuario:** Puede invitar usuarios
 
-**Rights Management Administrar usuarios invitados y locales:** Puede realizar las tareas necesarias para administrar todos los usuarios invitados y locales en las páginas relevantes del Rights Management
+**Rights Management Administrar usuarios invitados y locales:** puede realizar las tareas necesarias para administrar todos los usuarios invitados y locales en las páginas relevantes del Rights Management
 
-**Conjunto de directivas de Rights Management Administrador:** Realiza todas las tareas necesarias para todos los conjuntos de directivas en las páginas relevantes del Rights Management
+**Administrador del conjunto de directivas de Rights Management:** realiza todas las tareas necesarias para todos los conjuntos de directivas en las páginas de Rights Management relevantes
 
-**Rights Management Super Administrator:** Realiza todas las tareas necesarias desde la página del Rights Management
+**Rights Management Super Administrator:** realiza todas las tareas necesarias desde la página Rights Management
 
-**AEM Administrador de Forms Workspace:** Puede ver y modificar la configuración de la página de Workspace en la consola de administración
+AEM **Administrador de Workspace de formularios de:** Puede ver y modificar la configuración desde la página de Workspace en la consola de administración
 
-***nota **: Flex AEM Workspace está en desuso para la versión de formularios en la que se ha realizado el.*
+***nota **: Flex AEM Workspace está en desuso para la versión de formularios de la versión de la versión de la aplicación de formularios de la versión de la aplicación.*
 
-**Usuario de Workspace:** Puede iniciar sesión en la aplicación para usuarios finales de Workspace
+**Usuario de Workspace:** puede iniciar sesión en la aplicación de usuario final de Workspace
 
-**Administrador de salida:** Puede ver y modificar la configuración desde la página Salida en la consola de administración
+**Administrador de salida:** puede ver y modificar la configuración desde la página Salida en la consola de administración
 
-**Administrador de PDFG:** Puede ver y modificar la configuración desde la página PDF Generator en la consola de administración
+**Administrador de PDFG:** puede ver y modificar la configuración desde la página de PDF Generator en la consola de administración
 
-**Usuario de PDFG:** Puede acceder a todas las funciones no administrativas de PDF Generator
+**Usuario de PDFG:** puede acceder a todas las funciones que no sean de administración de PDF Generator
 
-**Aplicación web de extensiones de Acrobat Reader DC:** Puede utilizar la aplicación web Acrobat Reader DC extensions
+**Aplicación web Acrobat Reader DC extensions:** Puede usar la aplicación web Acrobat Reader DC extensions
 
 >[!NOTE]
 >
->Los usuarios con determinados tipos de privilegios de administrador no pueden acceder a las páginas web de los usuarios finales de Workspace por motivos de seguridad. Dado que estas páginas pueden existir fuera de un cortafuegos, permitir tareas de nivel de administración podría suponer un riesgo para la seguridad. AEM AEM Solo los usuarios que tengan los privilegios de administrador de Forms Workspace o usuario de Forms Workspace de la plantilla de formularios de la aplicación pueden acceder a las páginas web del usuario final de Workspace.
+>Los usuarios con ciertos tipos de privilegios de administrador no pueden acceder a las páginas web del usuario final de Workspace por motivos de seguridad. Dado que estas páginas pueden existir fuera de un cortafuegos, permitir tareas de nivel de administración podría suponer un riesgo para la seguridad. AEM Solo los usuarios que tengan los privilegios de administrador de Workspace AEM de formularios de o de usuario de Workspace de formularios de formularios de formularios pueden acceder a las páginas web del usuario final de Workspace.
 
 >[!NOTE]
 >
@@ -182,91 +182,91 @@ Puede cambiar los permisos de cualquiera de las funciones que ha creado. AEM No 
 
 **Inicio de sesión de Admin Console:** Ver la consola de administración
 
-**Modificación de certificado:** Modificar la configuración de confianza de cualquier certificado del Almacén de confianza
+**Modificación de certificado:** Modifique la configuración de confianza de cualquier certificado del Almacén de confianza
 
-**Lectura de certificado:** Leer cualquier certificado del almacén de confianza
+**Lectura de certificado:** Leer cualquier certificado del Almacén de confianza
 
-**Escritura de certificado:** Agregar un certificado al almacén de confianza
+**Escritura de certificado:** Agregue un certificado al Almacén de confianza
 
-**Añadir componente:** Instalar un componente nuevo en el sistema
+**Agregar componente:** Instale un nuevo componente en el sistema
 
-**Eliminación de componente:** Eliminar cualquier componente del sistema
+**Eliminar componente:** Eliminar cualquier componente del sistema
 
-**Lectura de componente:** Leer cualquier componente del sistema
+**Lectura de componente:** Lectura de cualquier componente del sistema
 
-**Administrador de Contentspace:** Permiso para el administrador de espacio de contenido (obsoleto)
+**Administrador de Contentspace:** Permiso para el administrador de Contentspace (obsoleto)
 
-**Inicio de sesión en la consola Contentspace:** Permiso para el inicio de sesión en la consola de Contentspace (obsoleto)
+**Inicio de sesión en la consola de Contentspace:** Permiso para el inicio de sesión en la consola de Contentspace (obsoleto)
 
-**Control de configuración principal:** Administrar la configuración de la página Configuración del sistema principal en la consola de administración
+**Control de configuración principal:** Administre la configuración en la página Configuración del sistema principal de la consola de administración
 
-**CREATE_VERSION_PERM:** Crear una versión de un servicio
+**CREATE_VERSION_PERM:** Cree una versión de un servicio
 
-**Modificación de credencial:** Modificar cualquier credencial de firma en el almacén de confianza
+**Modificación de credencial:** Modifique cualquier credencial de firma en el Almacén de confianza
 
 **Lectura de credencial:** Leer cualquier credencial de firma en el almacén de confianza
 
-**Escritura de credencial:** Agregar una credencial de firma al almacén de confianza
+**Escritura de credencial:** Agregue una credencial de firma al Almacén de confianza
 
-**Modificación de CRL:** Modifique cualquier CRL (Lista de Revocación de Certificados) en el Almacén de Confianza
+**Modificación de CRL:** Modificar cualquier CRL (Lista de revocación de certificados) en el Almacén de confianza
 
-**Lectura de CRL:** Leer cualquier CRL en el almacén de confianza
+**Lectura de CRL:** Leer cualquier CRL en el Almacén de confianza
 
-**Escritura de CRL:** Agregar una CRL al almacén de confianza
+**Escritura de CRL:** Agregar una CRL al Almacén de confianza
 
-**Delegar:** Establecer una ACL en un recurso
+**Delegado:** Establecer una ACL en un recurso
 
-**DELETE_VERSIÓN_PERM:** Eliminar una versión de un servicio
+**DELETE_VERSION_PERM:** Eliminar una versión de un servicio
 
-**Carga de documento:** AEM Cargar documentos en formularios de la
+AEM **Carga de documentos:** Cargar documentos en formularios de la
 
-**Control de dominio:** Crear, eliminar o modificar la configuración de cualquier dominio de administración de usuarios, incluidos los proveedores de directorios y autenticación
+**Control de dominio:** Cree, elimine o modifique la configuración de cualquier dominio de administración de usuarios, incluidos los proveedores de autenticación y directorio
 
-**Editar tipo de evento:** Editar en tipos de eventos
+**Editar tipo de evento:** Editar en tipos de evento
 
-**Control de suplantación de identidad:** Suplantar identidad en el Administrador de usuarios
+**Control de suplantación de identidad:** suplantar identidad en el Administrador de usuarios
 
 **INVOKE_PERM:** Invocar todas las operaciones de un servicio
 
-**Control de modelo de datos LCDS:** Leer e implementar modelos de datos en servicios de datos
+**Control de modelo de datos LCDS:** leer e implementar modelos de datos en los servicios de datos
 
 **Actualización del Administrador de licencias:** Actualizar información de licencia
 
-**MODIFY_CONFIG_PERM:** Modificación de la configuración de un servicio
+**MODIFY_CONFIG_PERM:** Modificar la configuración de un servicio
 
-**TÉRMINO** Modificar la versión de un servicio
+**TERM** Modificar la versión de un servicio
 
-**PDFGAdminPermission:** Administrador de PDFG
+**PDFGAdminPermission:** administrador de PDFG
 
-**PDFGUserPermission:** Usuario de PDFG
+**PDFGUserPermission:** usuario de PDFG
 
-**PERM_DCTM_ADMIN:** Administrador de Documentum Connector
+**PERM_DCTM_ADMIN:** administrador de Documentum Connector
 
 **PERM_FILENET_ADMIN:** Administrador del conector FileNet
 
 **PERM_FORMS_ADMIN:** administrador de Forms
 
-**PERM_IBMCM_ADMIN:** Administrador del conector de IBM CM
+**PERM_IBMCM_ADMIN:** Administrador del conector IBM CM
 
-**PERM_OUTPUT_ADMIN** Administrador de salida
+**PERM_OUTPUT_ADMIN:** Administrador de salida
 
-**PERM_READER_EXTENSIONS_WEB_APPLICATION:** Uso de la aplicación web Acrobat Reader DC extensions
+**PERM_READER_EXTENSIONS_WEB_APPLICATION:** Utilice la aplicación web de extensiones de Acrobat Reader DC
 
-**PERM_SP_ADMIN:** Administrar configuración del conector de SharePoint
+**PERM_SP_ADMIN:** Administrar la configuración del conector de SharePoint
 
-**PERM_WORKSPACE_ADMIN:** Administrar configuración de Workspace
+**PERM_WORKSPACE_ADMIN:** Administrar la configuración de Workspace
 
-**PERM_WORKSPACE_USER:** Inicie sesión en la aplicación de usuario final de Workspace.
+**PERM_WORKSPACE_USER:** Inicie sesión en la aplicación de usuario final de Workspace
 
-**Control principal:** Administre usuarios y grupos para cualquier dominio y administre asignaciones de funciones para todos los usuarios y grupos de cualquier dominio
+**Control principal:** administre usuarios y grupos para cualquier dominio y administre asignaciones de roles para todos los usuarios y grupos de cualquier dominio
 
-**Lectura/Eliminación de grabación de procesos:** Enumeración y recuperación de instancias de auditoría de flujo de trabajo
+**Leer/Eliminar grabación de procesos:** Enumerar y recuperar instancias de auditoría de flujo de trabajo
 
 **PROCESS_OWNER_PERM:** Ver datos de tendencia y realizar acciones administrativas en un servicio creado a partir de un proceso
 
-**Lectura:** Leer el contenido de un recurso
+**Leer:** leer el contenido de un recurso
 
-**READ_PERM:** Leer o ver un servicio
+**READ_PERM:** leer o ver un servicio
 
 **Renovar aserción:** Renovar aserciones en Administración de usuarios
 
@@ -274,69 +274,69 @@ Puede cambiar los permisos de cualquiera de las funciones que ha creado. AEM No 
 
 **Lectura de repositorio:** Leer el contenido de un recurso
 
-**Recorrido del repositorio:** Incluir un recurso en una solicitud de recursos de lista o leer los metadatos de un recurso
+**Recorrido del repositorio:** Incluya un recurso en una solicitud de recursos de lista o lea los metadatos de un recurso
 
-**Escritura en repositorio:** Escribir metadatos y contenido del repositorio
+**Escritura del repositorio:** Escribir metadatos y contenido del repositorio
 
-**Propietario de cambio de directiva de Rights Management:** Cambiar propietario de directiva
+**Propietario de directiva de cambio de Rights Management:** Cambiar propietario de directiva
 
-**Inicio de sesión en la consola de usuario final de Rights Management:** Inicio de sesión en la interfaz de usuario del usuario final de Rights Management
+**Inicio de sesión en la consola de usuario final de Rights Management:** Inicie sesión en la interfaz de usuario de usuario final de Rights Management
 
-**Configuración de administración del Rights Management:** Administrar configuración del servidor
+**Rights Management Administrar configuración:** Administrar configuración de servidor
 
 **Rights Management Administrar usuarios invitados y locales:** Administrar usuarios invitados y locales
 
-**Rights Management Administrar conjuntos de directivas:** Administrar todas las directivas y documentos de cualquier conjunto de directivas
+**Rights Management Administrar conjuntos de directivas:** Administrar todas las directivas y documentos dentro de cualquier conjunto de directivas
 
-**Conjunto de directivas de Rights Management Agregar coordinador:** Agregar, quitar y cambiar permisos para coordinadores de conjuntos de directivas
+**Coordinador agregado del conjunto de directivas de Rights Management:** Agregue, quite y cambie permisos para coordinadores de conjuntos de directivas
 
-**Conjunto de directivas de Rights Management Crear directiva:** Crear una directiva para un conjunto de directivas
+**Conjunto de directivas de Rights Management Crear directiva:** Cree una directiva para un conjunto de directivas
 
-**Directiva de Rights Management Establecer directiva de eliminación:** Quitar una directiva de un conjunto de directivas
+**Conjunto de directivas de Rights Management Eliminar directiva:** Quitar una directiva de un conjunto de directivas
 
 **Conjunto de directivas de Rights Management Editar directiva:** Editar una directiva en un conjunto de directivas
 
-**Conjunto de directivas de Rights Management Administrar editor de documentos:** Al crear conjuntos de directivas, se asigna a los usuarios la función de editor de documentos. El editor del documento es el usuario que protege el documento con una directiva.
+**Conjunto de directivas de Rights Management Administrar editor de documentos:** Cuando crea conjuntos de directivas, asigna a los usuarios la función de editor de documentos. El editor del documento es el usuario que protege el documento con una directiva.
 
-**Conjunto de directivas de Rights Management Quitar coordinador:** Quitar un coordinador de conjunto de directivas de un conjunto de directivas
+**Coordinador de eliminación de conjunto de directivas de Rights Management:** Quitar un coordinador de conjunto de directivas de un conjunto de directivas
 
 **Documento de revocación de conjunto de directivas de Rights Management:** Revocar acceso a documentos de un conjunto de directivas
 
-**Directiva de Rights Management Establecer directiva de cambio:** Cambiar directivas para un documento
+**Directiva de Rights Management Establecer directiva de modificador:** Directivas de modificador para un documento
 
-**Documento sin revocar conjunto de directivas de Rights Management:** Anular la revocación de un documento
+**Documento sin revocar conjunto de directivas de Rights Management:** anular la revocación de un documento
 
-**Evento de vista de conjunto de directivas de Rights Management:** Ver los eventos de directivas y documentos de cualquier directiva o documento de un conjunto de directivas
+**Evento de vista del conjunto de directivas del Rights Management:** vea los eventos de documentos y directivas de cualquier directiva o documento de un conjunto de directivas
 
-**Eventos del servidor de vista de Rights Management:** Buscar y ver todos los eventos de auditoría
+**Eventos de servidor de vista de Rights Management:** Buscar y ver todos los eventos de auditoría
 
-**Control de funciones:** Crear, eliminar y modificar roles en Administración de usuarios
+**Control de roles:** Crear, eliminar y modificar roles en Administración de usuarios
 
-**Activar servicio:** Inicie cualquier servicio, poniéndolo a disposición para su invocación
+**Servicio activado:** Inicie cualquier servicio, para que esté disponible para la invocación
 
-**Agregar servicio:** Implemente un nuevo servicio en el registro de servicios. Esto incluye añadir nuevos procesos y variantes de proceso
+**Servicio agregado:** Implementar un nuevo servicio en el registro de servicios. Esto incluye añadir nuevos procesos y variantes de proceso
 
-**Desactivación de servicio:** Detener cualquier servicio del sistema
+**Desactivación del servicio:** Detenga cualquier servicio del sistema
 
 **Eliminación de servicio:** Elimine cualquier servicio del sistema, incluidos los procesos y las variantes de proceso
 
-**Invocación de servicio:** Invocar cualquier servicio del Registro de servicios disponible durante la ejecución
+**Invocación de servicio:** Invoca cualquier servicio del registro de servicios disponible durante la ejecución
 
 **Modificación del servicio:** Modifique las propiedades de configuración de cualquier servicio del sistema. Esto incluye bloquear y desbloquear un servicio en el IDE, y agregar o quitar extremos de un servicio
 
-**Lectura de servicio:** Lea todos los servicios del sistema. Esto incluye todos los procesos y variantes de procesos
+**Lectura de servicio:** Lectura de cualquier servicio del sistema. Esto incluye todos los procesos y variantes de procesos
 
 **SERVICE_AGENT_PERM:** Ver datos e interactuar con instancias de proceso para un servicio creado a partir de un proceso
 
-**SERVICE_MANAGER_PERM:** Realizar acciones administrativas y de equilibrio de carga en un servicio creado a partir de un proceso
+**SERVICE_MANAGER_PERM:** Realice acciones de equilibrio de carga y otras acciones administrativas en un servicio creado a partir de un proceso
 
 **START_STOP_PERM:** Iniciar o detener un servicio
 
-**SUPERVISOR_PERM:** Ver datos de instancias de proceso de un servicio creado a partir de un proceso
+**SUPERVISOR_PERM:** Ver datos de instancia de proceso de un servicio creado a partir de un proceso
 
-**Recorrido:** Incluir un recurso en una solicitud de recursos de lista o leer los metadatos de un recurso
+**Recorrer:** Incluir un recurso en una solicitud de recursos de lista o leer los metadatos de un recurso
 
-**Escribir:** Escribir metadatos y contenido del repositorio
+**Escribir:** escribir metadatos y contenido del repositorio
 
 **Abrir archivos en Workbench**
 

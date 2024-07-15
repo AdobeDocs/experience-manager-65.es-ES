@@ -61,7 +61,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
 La solicitud para cambiar a HTTP/2 se inicia automáticamente, pero no se realiza automáticamente.
 
-1. Para cambiar a HTTP/2, inicie una solicitud de asistencia al cliente de Adobe. Consulte [Abra una solicitud de asistencia](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
+1. Para cambiar a HTTP/2, inicie una solicitud de asistencia al cliente de Adobe. Ver [Abrir un ticket de asistencia](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
 
    1. Proporcione la siguiente información en su solicitud de soporte:
 
@@ -97,4 +97,4 @@ El contenido no almacenado en caché visita directamente los servidores de orige
 
 Dado que el explorador no indica este hecho, es necesario descargar una extensión.
 
-Para Firefox y Chrome, hay una extensión llamada &quot;HTTP/2 e indicador SPDY&quot;. Los navegadores solo admiten http/2 de forma segura, por lo que es necesario llamar a una dirección URL con https para verificarla. Si se admite http/2, la extensión lo indica con un símbolo de Flash azul y un encabezado `X-Firefox-Spdy` : `h2`.
+Para Firefox y Chrome, hay una extensión llamada &quot;HTTP/2 e indicador SPDY&quot;. Los navegadores solo admiten http/2 de forma segura, por lo que es necesario llamar a una dirección URL con https para verificarla. Si http/2 es compatible, se indica con la extensión en forma de Flash azul y un encabezado `X-Firefox-Spdy` : `h2`.

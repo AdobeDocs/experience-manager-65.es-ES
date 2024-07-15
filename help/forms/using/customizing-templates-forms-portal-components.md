@@ -92,7 +92,7 @@ Para incluir una entrada repetible, configure el valor del atributo **data-repea
 
 Cada marcador de posición tiene un conjunto exclusivo de metadatos predeterminados. Para mostrar metadatos personalizados en un lugar determinado del formulario, agregue la **propiedad ${metadata_prop}**, en el lugar.
 
-*En el ejemplo, la propiedad metadata se utiliza en varias instancias. Por ejemplo, se utiliza en **descripción**,**nombre**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**y **ruta**de la manera prescrita.*
+*En el ejemplo, la propiedad metadata se usa en varias instancias. Por ejemplo, se utiliza en **descripción**,**nombre**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**y **ruta**de la manera prescrita.*
 
 ## Metadatos predeterminados {#out-of-the-box-metadata}
 
@@ -105,7 +105,7 @@ Varios componentes del portal de Forms proporcionan conjuntos exclusivos de meta
 * **descripción**: descripción del formulario
 * **formUrl**: URL para procesar el formulario como HTML
 * **pdfUrl**: URL para procesar el formulario como PDF
-* **assetType**: tipo de recurso. Los valores válidos incluyen **Form**, **Formulario de PDF**, **Imprimir formulario**, y **Formulario adaptable**
+* **assetType**: tipo de recurso. Los valores válidos incluyen **Formulario**, **Formulario de PDF**, **Formulario de impresión** y **Formulario adaptable**
 
 * **htmlStyle** y **pdfStyle**: estilo de visualización de los iconos HTML y PDF respectivamente utilizados para el procesamiento. Los valores válidos son “**__FP_display_none**” o en blanco.
 
@@ -117,7 +117,7 @@ Varios componentes del portal de Forms proporcionan conjuntos exclusivos de meta
 
 Compatibilidad con la localización, clasificación y uso de propiedades de configuración en la interfaz de usuario (solo Buscar y listar):
 
-1. **Compatibilidad con localización**: para localizar cualquier texto estático, utilice el atributo `${localize-YOUR_TEXT}` y hacer que el valor localizado esté disponible, si no existe ya.
+1. **Compatibilidad con localización**: para localizar texto estático, use el atributo `${localize-YOUR_TEXT}` y haga que el valor localizado esté disponible, si no existe todavía.
    *En el ejemplo analizado, los atributos `${localize-Apply}` y `${localize-Download}` se utilizan para localizar el texto Aplicar y Descargar.*
 
 1. **Compatibilidad con la ordenación**: haga clic en el elemento HTML para ordenar los resultados de la búsqueda. Para implementar la ordenación en un diseño de tabla, agregue el atributo &quot;data-sortKey&quot; en el encabezado de tabla concreto. Además, agregue su valor como metadatos para los que desea ordenar.
@@ -145,8 +145,8 @@ Por ejemplo, para el encabezado “Título” en la vista de cuadrícula, el val
 * **diffTime**: diferencia entre la hora actual y la última acción de guardado del borrador. Alternativamente, la diferencia entre la hora actual y la última acción enviada para la presentación.
 * **iconClass**: la clase CSS utilizada para mostrar la primera letra del borrador/envío. El portal de formularios incluye las siguientes clases, que proporcionan distintos fondos de colores.
 * **propietario**: usuario que ha creado el borrador/envío.
-* **Hoy**: Fecha de creación del borrador o del envío en `DD:MM:YYYY` formato.
-* **TimeNow**: Momento de creación del borrador o del envío en `HH:MM:SS` Formato de 24 horas
+* **Hoy**: Fecha de creación del borrador o del envío en formato `DD:MM:YYYY`.
+* **TimeNow**: hora de creación del borrador o del envío en formato de 24 horas `HH:MM:SS`
 
 *Nota:*
 

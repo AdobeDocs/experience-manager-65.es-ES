@@ -30,19 +30,19 @@ Para obtener más información sobre la creación de un sitio de la comunidad, v
 
 >[!NOTE]
 >
->Si no está familiarizado con el entorno de creación de, consulte la documentación sobre [manipulación básica](/help/sites-authoring/basic-handling.md) y una [guía rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con el entorno de creación, vea la documentación sobre [manejo básico](/help/sites-authoring/basic-handling.md) y una [guía rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
 
 ## Componentes de comunidades disponibles {#available-communities-components}
 
 La siguiente tabla enumera los componentes de Communities visibles para los autores cuando se habilitan en el explorador de componentes (barra de tareas).
 
-Consulte también la sección interactiva [Guía de componentes de la comunidad](/help/communities/components-guide.md).
+Consulte también la [guía de componentes de la comunidad](/help/communities/components-guide.md) interactiva.
 
 >[!NOTE]
 >
->Leer [Conceptos básicos de componentes de comunidades](/help/communities/basics.md) ya que contiene la información necesaria para la creación con componentes de Communities.
+>Lea [Conceptos básicos de componentes de comunidades](/help/communities/basics.md), ya que contiene la información necesaria para la creación con componentes de comunidades.
 
-| **Título del componente** | **Función** |
+| **Título del componente** | **Característica** |
 |---|---|
 | Flujos de actividad | [Flujos de actividad](/help/communities/activities.md) |
 | Blog | [Blog](/help/communities/blog-feature.md) |
@@ -50,7 +50,7 @@ Consulte también la sección interactiva [Guía de componentes de la comunidad]
 | Calendario | [Calendario](/help/communities/calendar.md) |
 | Comentarios | [Comentarios](/help/communities/comments.md) |
 | Lista de actividades de la comunidad | [Tendencias de actividades](/help/communities/trends.md) |
-| Lista de miembros del grupo de la comunidad | [Grupos de comunidad](/help/communities/creating-groups.md) |
+| Lista de miembros del grupo de la comunidad | [Grupos de la comunidad](/help/communities/creating-groups.md) |
 | Escribir mensaje | [Mensajes](/help/communities/configure-messaging.md) |
 | Contenido destacado | [Contenido destacado](/help/communities/featured.md) |
 | Biblioteca de archivos | [Biblioteca de archivos](/help/communities/file-library.md) |
@@ -58,8 +58,8 @@ Consulte también la sección interactiva [Guía de componentes de la comunidad]
 | Siguiente | [Gráfico social](/help/communities/socialgraph.md) |
 | Foro | [Foro](/help/communities/forum.md) |
 | Ideación | [Ideación](/help/communities/ideation-feature.md) |
-| Tabla de clasificación | [Puntuación y distintivos](/help/communities/enabling-leaderboard.md) |
-| Me está gustando | [Gusto](/help/communities/liking.md) |
+| Tabla de clasificación | [Puntuación e insignias](/help/communities/enabling-leaderboard.md) |
+| Me está gustando | [Me gusta](/help/communities/liking.md) |
 | Mensaje | [Mensajes](/help/communities/configure-messaging.md) |
 | Lista de mensajes | [Mensajes](/help/communities/configure-messaging.md) |
 | P y R | [Preguntas y respuestas](/help/communities/working-with-qna.md) |
@@ -79,8 +79,8 @@ Consulte también la sección interactiva [Guía de componentes de la comunidad]
 
 ## Documentación de comunidades relacionadas {#related-communities-documentation}
 
-* Visita [Implementación de comunidades](/help/communities/deploy-communities.md) donde puede obtener más información sobre las implementaciones recomendadas.
+* Visite [Implementación de comunidades](/help/communities/deploy-communities.md), donde podrá obtener información sobre las implementaciones recomendadas.
 
-* Visita [Administración de sitios de Communities](/help/communities/administer-landing.md) para obtener más información sobre cómo crear un sitio de la comunidad, configurar las plantillas de sitio de la comunidad, moderar el contenido de la comunidad, administrar miembros y configurar la mensajería.
+* Visite [Sitios de administración de comunidades](/help/communities/administer-landing.md) para obtener información sobre cómo crear un sitio de comunidad, configurar plantillas de sitios de comunidad, moderar contenido de la comunidad, administrar miembros y configurar mensajes.
 
-* Visita [Desarrollo de comunidades](/help/communities/communities.md) donde puede obtener información sobre el marco de trabajo de componentes sociales (SCF) y la personalización de los componentes y las funciones de las Comunidades.
+* Visite [Desarrollo de comunidades](/help/communities/communities.md), donde podrá obtener información acerca del marco de componentes sociales (SCF) y la personalización de componentes y características de las comunidades.

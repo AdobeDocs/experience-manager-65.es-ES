@@ -45,15 +45,15 @@ Los informes muestran datos correspondientes a un período de tiempo que usted c
 
 >[!NOTE]
 >
->La cronología del panel de información del contenido está en `GMT`.
+>La cronología del panel de información de contenido está en `GMT`.
 
 También puede especificar la granularidad de los datos del informe; por ejemplo, puede ver datos diarios, semanales, mensuales o anuales.
 
-Consulte [Modificación del período de informe](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
+Consulte [Cambio del período de informe](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
 
 >[!NOTE]
 >
->AEM Los informes de Perspectivas de contenido requieren que el administrador de haya integrado la aplicación con SiteCatalyst, Target y BrightEdge. Consulte [Integración con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md), y [Integración con BrightEdge](/help/sites-administering/brightedge.md).
+>AEM Los informes de Perspectivas de contenido requieren que el administrador de haya integrado la aplicación con SiteCatalyst, Target y BrightEdge. Ver [Integración con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md) e [Integración con BrightEdge](/help/sites-administering/brightedge.md).
 
 ## El informe Vistas {#the-views-report}
 
@@ -90,7 +90,7 @@ El informe Devoluciones incluye un gráfico que muestra el número de devolucion
 
 ## El informe Actividad de la campaña {#the-campaign-activity-report}
 
-Aparece un informe con el nombre de todas las campañas para las que está activa la página *Nombre de campaña* Actividad. El informe muestra las impresiones y conversiones de página de cada segmento para el que se proporciona una oferta.
+Para cada campaña para la cual la página está activa, aparece un informe llamado Actividad *Nombre de campaña*. El informe muestra las impresiones y conversiones de página de cada segmento para el que se proporciona una oferta.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 

@@ -63,10 +63,10 @@ Para obtener más información, consulte [Cómo crear proyectos de AEM con Apach
 Una vez configurado el proyecto de AEM, defina una estrategia para crear y personalizar plantillas y componentes de formularios adaptables.
 
 * Una plantilla de formulario adaptable es una página de AEM especializada que define la estructura y la información del encabezado y pie de página de un formulario adaptable. Una plantilla tiene diseños, estilos y estructuras básicos preconfigurados para un formulario adaptable. AEM Forms proporciona plantillas y componentes integrados que puede utilizar para crear formularios adaptables. Sin embargo, puede crear plantillas y componentes personalizados según sus necesidades. Se recomienda recopilar los requisitos para plantillas y componentes adicionales que necesite en los formularios adaptables. Para obtener más información, consulte [Personalizar formularios y componentes adaptables](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
-* Se recomienda cargar los paquetes de formulario mediante la interfaz de usuario de Form Manager en lugar de la interfaz de usuario de CRX Package Manager, ya que la carga de paquetes mediante CRX Package Manager a veces puede provocar anomalías.
+* Se recomienda cargar los paquetes de formularios mediante la interfaz de usuario de Form Manager en lugar de la interfaz de usuario de CRX Package Manager, ya que la carga de paquetes mediante CRX Package Manager a veces puede provocar anomalías.
 * AEM Forms permite crear formularios adaptables basados en los siguientes modelos de formulario. Los modelos de formulario actúan como interfaz para el intercambio de datos entre un formulario y el sistema de AEM y proporcionan una estructura basada en XML para el flujo de datos dentro y fuera de un formulario adaptable. Además, los modelos de formulario imponen reglas y restricciones en los formularios adaptables en forma de restricciones de esquema y XFA.
 
-   * **Ninguno**: Los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
+   * **Ninguno**: los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
    * **Esquema XML o JSON**: los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles en la pestaña Objeto del modelo de datos del explorador de contenidos para crear formularios adaptables. Puede arrastrar y soltar los elementos de esquema para crear el formulario.
    * **Plantilla de formulario XFA**: es un modelo de formulario ideal si tiene inversiones en formularios HTML5 basados en XFA. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.
    * **Modelo de datos de formulario**: es un modelo de formulario preferido si desea integrar sistemas backend como bases de datos, servicios web y perfiles de usuario de AEM para rellenar previamente formularios adaptables y escribir datos de formulario enviados de nuevo en los sistemas backend. Un editor del Modelo de datos de formulario permite definir y configurar entidades y servicios en un modelo de datos de formulario que se puede utilizar para crear formularios adaptables. Para obtener más información, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
@@ -125,7 +125,7 @@ Consulte también las descripciones de los componentes y las prácticas recomend
 
 ### Usar reglas en formularios adaptables {#using-rules-in-adaptive-forms}
 
-AEM Forms proporciona un [editor de reglas](/help/forms/using/rule-editor.md) Esto permite crear reglas para agregar un comportamiento dinámico a los componentes del formulario adaptable. Con estas reglas, se pueden evaluar condiciones y acciones del activador en componentes como mostrar u ocultar campos, calcular valores, cambiar listas desplegables de forma dinámica, etc.
+AEM Forms proporciona un [editor de reglas](/help/forms/using/rule-editor.md) que le permite crear reglas para agregar un comportamiento dinámico a los componentes del formulario adaptable. Con estas reglas, se pueden evaluar condiciones y acciones del activador en componentes como mostrar u ocultar campos, calcular valores, cambiar listas desplegables de forma dinámica, etc.
 
 El editor de reglas proporciona un editor visual y un editor de código para escribir reglas. Tenga en cuenta lo siguiente al escribir reglas mediante el modo de editor de código:
 
@@ -155,7 +155,7 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
 * Es posible que los autores de formularios adaptables tengan que escribir código JavaScript para crear lógica empresarial en un formulario. Aunque JavaScript es potente y eficaz, es probable que pueda comprometer las expectativas de seguridad. Por lo tanto, debe asegurarse de que el autor del formulario sea una persona de confianza y de que haya procesos para revisar y aprobar el código JavaScript antes de que se ponga en producción un formulario. El administrador puede restringir el acceso al editor de reglas a los grupos de usuarios en base a su rol o función. Consulte [Conceder acceso al Editor de reglas a determinados grupos de usuarios.](/help/forms/using/rule-editor-access-user-groups.md).
 * Puede utilizar expresiones en reglas para hacer dinámicos los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de scripts de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener más información sobre las expresiones y las prácticas recomendadas que las rodean, consulte [Expresiones de formulario adaptables](/help/forms/using/adaptive-form-expressions.md).
 
-* Adobe recomienda utilizar operaciones sincrónicas de JavaScript sobre las asincrónicas al crear reglas con el Editor de reglas. Se desaconseja el uso de operaciones asincrónicas. Sin embargo, si se encuentra en una situación en la que las operaciones asincrónicas son inevitables, es esencial implementar las funciones de cierre de JavaScript. Al hacerlo, puede proteger de forma eficaz contra cualquier posible condición de carrera, lo que garantiza que las implementaciones de reglas ofrezcan un rendimiento óptimo y mantengan la estabilidad en todo.
+* Adobe recomienda utilizar las operaciones sincrónicas de JavaScript sobre las asincrónicas al crear reglas con el editor de reglas. Se desaconseja el uso de operaciones asincrónicas. Sin embargo, si se encuentra en una situación en la que las operaciones asincrónicas son inevitables, es esencial implementar las funciones de Cierre de JavaScript. Al hacerlo, puede proteger de forma eficaz contra cualquier posible condición de carrera, lo que garantiza que las implementaciones de reglas ofrezcan un rendimiento óptimo y mantengan la estabilidad en todo.
 
   Por ejemplo, supongamos que necesitamos recuperar datos de una API externa y luego aplicar algunas reglas basadas en esos datos. Utilizamos un cierre para gestionar la llamada asincrónica a la API y garantizar que las reglas se apliquen después de recuperar los datos. Este es un ejemplo de código:
 
@@ -185,7 +185,7 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
       ruleImplementation(apiEndpoint);
   ```
 
-  En este ejemplo, `fetchDataFromAPI` simula una llamada de API asincrónica mediante `setTimeout`. Una vez recuperados los datos, invoca la función de llamada de retorno proporcionada, que es el cierre para administrar la aplicación de reglas posterior. El `ruleImplementation` contiene la lógica de la regla.
+  En este ejemplo, `fetchDataFromAPI` simula una llamada de API asincrónica con `setTimeout`. Una vez recuperados los datos, invoca la función de llamada de retorno proporcionada, que es el cierre para administrar la aplicación de reglas posterior. La función `ruleImplementation` contiene la lógica de regla.
 
 
 ### Trabajar con temáticas {#working-with-themes}
@@ -378,7 +378,7 @@ El editor de reglas está disponible tanto para componentes de AEM Forms Foundat
 
 El Editor de código es una herramienta dentro de Adobe Experience Manager AEM () Forms que le permite escribir scripts y código personalizados para una funcionalidad más compleja y avanzada en los formularios. Aquí analizamos algunos casos de uso:
 
-* Cuando necesite implementar una lógica personalizada del lado del cliente o un comportamiento que vaya más allá de las capacidades del Editor de reglas de AEM Forms. El Editor de código le permite escribir código JavaScript para gestionar interacciones, cálculos o validaciones complejos.
+* Cuando necesite implementar una lógica personalizada del lado del cliente o un comportamiento que vaya más allá de las capacidades del Editor de reglas de AEM Forms. El Editor de código le permite escribir código JavaScript para controlar interacciones, cálculos o validaciones complejos.
 * Si el formulario requiere procesamiento en el servidor o integración con sistemas externos, puede utilizar el Editor de código para escribir scripts personalizados en el servidor. Puede acceder a la API de guideBridge en el editor de código para implementar cualquier lógica compleja en eventos y objetos de formulario.
 * Cuando se requieren interfaces de usuario altamente personalizadas que vayan más allá de las capacidades estándar de los componentes de AEM Forms, el Editor de código permite implementar estilos y comportamientos personalizados, o incluso crear componentes de formulario personalizados.
 * Si el formulario implica operaciones asincrónicas como la carga asincrónica de datos, puede utilizar el Editor de código para administrar estas operaciones mediante código JavaScript asincrónico personalizado.
@@ -403,13 +403,13 @@ Antes de decidir utilizar bibliotecas de cliente personalizadas, es importante t
 
 **Ventajas de las funciones personalizadas:**
 
-**Funciones personalizadas** proporcionan una notable ventaja sobre **Editor de código** porque proporciona una clara separación entre contenido y código, lo que mejora la colaboración y optimiza los flujos de trabajo. Se recomienda utilizar funciones personalizadas para las siguientes ventajas:
+**Funciones personalizadas** proporcionan una ventaja notable sobre el **Editor de código** porque proporciona una clara separación entre contenido y código, lo que mejora la colaboración y optimiza los flujos de trabajo. Se recomienda utilizar funciones personalizadas para las siguientes ventajas:
 
-* **Utilice sin problemas el control de versiones como Git:**
+* **Use sin problemas el control de versiones como Git:**
    * El aislamiento del código del contenido reduce significativamente los conflictos de Git durante la administración de contenido y promueve un repositorio bien organizado.
    * Funciones personalizadas es útil para proyectos con varios colaboradores que trabajan simultáneamente.
 
-* **Ventajas técnicas:**
+* **Beneficios técnicos:**
    * Las funciones personalizadas ofrecen modularidad y encapsulación.
    * Los módulos se pueden desarrollar, probar y mantener de forma independiente.
    * Mejora la reutilización y el mantenimiento del código.

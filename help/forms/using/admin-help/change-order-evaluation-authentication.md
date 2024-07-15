@@ -42,7 +42,7 @@ AEM Si ha configurado varios proveedores de autenticación, puede cambiar el ord
     </node>
    ```
 
-   Entrada `<entry key="order" value="3" />`, edite el valor de cada nodo para establecer el orden de evaluación de la autenticación.
+   En `<entry key="order" value="3" />`, edite el valor de cada nodo para establecer el orden de la evaluación de autenticación.
 
 1. Para importar el archivo actualizado, en Administración de usuarios, haga clic en Configuración > Importar y exportar archivos de configuración.
 1. Haga clic en Examinar para buscar el archivo, en Importar y, a continuación, en Aceptar.

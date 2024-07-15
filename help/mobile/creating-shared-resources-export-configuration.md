@@ -30,13 +30,13 @@ ht-degree: 0%
 
 Los usuarios de Adobe Experience Manager AEM () Mobile utilizan la sincronización de contenido para exportar contenido en directo a contenido estático para su uso en aplicaciones móviles y esta exportación se produce cuando el contenido se carga en Mobile On-Demand Services desde AEM Mobile.
 
-La propiedad ***dps-exportTemplate*** mencionado en la tabla anterior, define la ruta a las configuraciones de exportación de la aplicación. Establezca esta propiedad para crear y modificar recursos compartidos.
+La propiedad ***dps-exportTemplate*** mencionada en la tabla anterior define la ruta a las configuraciones de exportación de la aplicación. Establezca esta propiedad para crear y modificar recursos compartidos.
 
 AEM Los siguientes recursos describen la exportación de recursos compartidos desde la interfaz de usuario de para su carga en AEM Mobile.
 
-Los recursos de HTML compartidos permiten que los artículos compartan recursos de HTML que, de lo contrario, se duplicarían para todos los artículos y pueden incluir iconos, fuentes, JavaScript y css.
+Los recursos de HTML compartidos permiten que los artículos compartan recursos de HTML que, de lo contrario, se duplicarían para todos los artículos, y pueden incluir iconos, fuentes, JavaScript y css.
 
-La configuración de sincronización de contenido se encuentra en **&lt;dps-exporttemplate>/dps-HTMLResources>** debe configurarse para exportar todo el contenido y los artículos necesarios para la propiedad de procesamiento estático en el dispositivo.
+La configuración de sincronización de contenido que se encuentra en **&lt;dps-exportTemplate>/dps-HTMLResources>** debe configurarse para exportar todo el contenido y los artículos necesarios para la representación estática de la propiedad en el dispositivo.
 
 >[!CAUTION]
 >
@@ -50,7 +50,7 @@ La configuración de sincronización de contenido se encuentra en **&lt;dps-expo
 Para ver un ejemplo de recurso compartido, consulte los pasos a continuación:
 
 1. Abra el CRXDE Lite AEM en el servidor de la.
-1. Examinar esta ruta *[/etc/contentsync/templates/dps-we-ilimitado-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*, para ver los recursos compartidos de ejemplo.
+1. Examine esta ruta *[/etc/contentsync/templates/dps-we-ilimitado-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)* para ver los recursos compartidos de ejemplo.
 
    Puede ver todas las propiedades necesarias para crear los recursos compartidos, como se muestra en la figura siguiente:
 

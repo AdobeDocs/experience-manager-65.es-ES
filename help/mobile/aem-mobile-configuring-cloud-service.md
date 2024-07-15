@@ -24,15 +24,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este documento forma parte del [Introducción a Adobe Experience Manager AEM () Mobile](/help/mobile/getting-started-aem-mobile.md) Guía, un punto de partida recomendado para referencia de AEM Mobile.
+>Este documento forma parte de la guía [Introducción a Adobe Experience Manager AEM () Mobile](/help/mobile/getting-started-aem-mobile.md), un punto de partida recomendado para la referencia de AEM Mobile.
 
 Existen varios pasos que deben cumplirse para que los autores de contenido puedan empezar a generar contenido de destino para aplicaciones móviles: Obtención del conjunto adecuado de permisos para usuarios y grupos, creación de servicios en la nube, configuración de la aplicación para la actividad y, finalmente, generación del contenido.
 
-El supuesto a partir de ahora es que la [Aplicación de referencia híbrida de AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) se ha implementado correctamente y se puede acceder a él mediante el panel de AEM Mobile.
+Se supone que [AEM Mobile Hybrid Reference Application](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) se ha implementado correctamente y se puede acceder a ella desde AEM Mobile Dashboard.
 
 ## Permisos {#permissions}
 
-Los usuarios que necesitan acceder a la consola de personalización deben formar parte de `target-activity-authors` grupo. Se sugiere que, como parte de la configuración de usuarios y grupos, el grupo de actividad de destinatario se agregue al grupo de administradores de aplicaciones. Al agregar el grupo target-activity-authors, esto permite a los usuarios ver la entrada del menú de navegación Personalización.
+Los usuarios que necesitan tener acceso a la consola de personalización deben formar parte del grupo `target-activity-authors`. Se sugiere que, como parte de la configuración de usuarios y grupos, el grupo de actividad de destinatario se agregue al grupo de administradores de aplicaciones. Al agregar el grupo target-activity-authors, esto permite a los usuarios ver la entrada del menú de navegación de Personalization.
 
 Si se olvida agregar los usuarios o grupos a los que desea tener acceso con el Admin Console de personalización al grupo target-activity-authors, los usuarios no podrán ver la consola de personalización.
 
@@ -80,7 +80,7 @@ Seleccione la tarjeta de Adobe Mobile Services y haga clic en Siguiente.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-En el paso del asistente Crear o Seleccionar, seleccione la lista desplegable Mobile Services y la entrada Crear configuración. Proporcione un título, una empresa, un nombre de usuario y una contraseña, y seleccione el centro de datos adecuado. Si no conoce estos valores, póngase en contacto con el administrador de Adobe Mobile Services para obtenerlos. Una vez rellenados todos los campos, haga clic en **Verificar**. El proceso de verificación va a AMS y verifica las credenciales de la cuenta. Una vez validada correctamente, se rellenará una lista de aplicaciones móviles en la que se seleccionará la aplicación móvil asociada en el menú desplegable. Haga clic en el botón Enviar para completar el asistente. El proceso puede tardar un poco en obtener los datos de configuración y cualquier análisis asociado con la aplicación. Una vez completado el proceso, haga clic en **Listo** del modal para volver al Panel de control móvil de Adobe.
+En el paso del asistente Crear o Seleccionar, seleccione la lista desplegable Mobile Services y la entrada Crear configuración. Proporcione un título, una empresa, un nombre de usuario y una contraseña, y seleccione el centro de datos adecuado. Si no conoce estos valores, póngase en contacto con el administrador de Adobe Mobile Services para obtenerlos. Una vez rellenados todos los campos, haga clic en **Verificar**. El proceso de verificación va a AMS y verifica las credenciales de la cuenta. Una vez validada correctamente, se rellenará una lista de aplicaciones móviles en la que se seleccionará la aplicación móvil asociada en el menú desplegable. Haga clic en el botón Enviar para completar el asistente. El proceso puede tardar un poco en obtener los datos de configuración y cualquier análisis asociado con la aplicación. Una vez completado el proceso, haga clic en **Listo** en el modal para volver al Panel de control de Adobe Mobile.
 
 Al volver al panel móvil, el mosaico Administrar Cloud Service contiene el servicio en la nube de AMS. Además, el mosaico Analizar métricas se rellena con informes de ciclo vital.
 
@@ -88,9 +88,9 @@ Al volver al panel móvil, el mosaico Administrar Cloud Service contiene el serv
 
 ## Controladores de sincronización de contenido de Target {#target-content-sync-handlers}
 
-AEM Para enviar contenido al dispositivo del usuario, el contenido se genera procesando las ofertas creadas por los autores de contenido Para gestionar la renderización de ofertas de destino, hay un nuevo controlador de sincronización de contenido que procesa las ofertas. Utilizando la aplicación de referencia híbrida como ejemplo, el paquete de contenido en (inglés) contiene ContentSyncConfig con un [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) controlador. El siguiente paso es crucial para procesar ofertas en el dispositivo. El controlador de ofertas móviles tiene una propiedad path que identifica la ruta a la actividad de personalización que se utiliza para la aplicación.
+AEM Para enviar contenido al dispositivo del usuario, el contenido se genera procesando las ofertas creadas por los autores de contenido Para gestionar la renderización de ofertas de destino, hay un nuevo controlador de sincronización de contenido que procesa las ofertas. Utilizando la aplicación de referencia híbrida como ejemplo, el paquete de contenido en (inglés) contiene ContentSyncConfig con un controlador [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml). El siguiente paso es crucial para procesar ofertas en el dispositivo. El controlador de ofertas móviles tiene una propiedad path que identifica la ruta a la actividad de personalización que se utiliza para la aplicación.
 
-Por ejemplo, si hay una actividad en */content/campaigns/hybridref*, copie esta ruta y péguela como el valor en *ruta* propiedad del controlador mobileapps.
+Por ejemplo, si hay una actividad en */content/campaigns/hybridref*, copie esta ruta y péguela como el valor de la propiedad *path* del controlador mobileappoffers.
 
 Para la aplicación de referencia híbrida, hay dos controladores de ofertas móviles, uno para desarrollo y otro para producciones.
 
@@ -98,7 +98,7 @@ Una vez establecida la ruta de las actividades en la propiedad path del controla
 
 ### Modo de procesamiento {#render-mode}
 
-El controlador mobileapps está configurado de forma diferente para las configuraciones de publicación y desarrollo. Para las configuraciones de publicación hay una propiedad llamada *renderMode* con un valor de *publicar* se establece en el nodo cq:ContentSyncConfig. El controlador mobileapps hace referencia a renderMode y, si se establece en publish, edita el id de mbox que se crea. AEM De forma predeterminada, los mboxes que crea el usuario tienen el valor —author anexado al id de mbox. Esto identifica que la actividad no se ha publicado y debe utilizar la campaña sin publicar para las resoluciones de oferta.
+El controlador mobileapps está configurado de forma diferente para las configuraciones de publicación y desarrollo. Para las configuraciones de publicación hay una propiedad llamada *renderMode* con un valor de *publish* establecida en el nodo cq:ContentSyncConfig. El controlador mobileapps hace referencia a renderMode y, si se establece en publish, edita el id de mbox que se crea. AEM De forma predeterminada, los mboxes que crea el usuario tienen el valor —author anexado al id de mbox. Esto identifica que la actividad no se ha publicado y debe utilizar la campaña sin publicar para las resoluciones de oferta.
 
 Cuando el contenido se almacena en zona intermedia mediante el panel de Adobe Mobile, el contenido almacenado en zona intermedia se considera contenido listo para la producción y se procesa mediante la configuración de sincronización de contenido no desarrollada. Procesar de esta manera hace que —author se elimine de todos los id de mbox y espere que una actividad publicada esté disponible en el servidor de Target. Antes de probar el contenido ensayado, asegúrese de que la actividad se publique.
 

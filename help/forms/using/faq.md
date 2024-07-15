@@ -183,7 +183,7 @@ Respuesta: El campo Fecha acepta el formato ISO, AAAA-MM-DD. Si especifica una f
 
    * La compatibilidad con el script xfa.connectionSet es limitada. Para connectionSet, solo se admite la invocación del servicio web en el lado del servidor. Para obtener información detallada, consulte [Compatibilidad de scritps](/help/forms/using/scripting-support.md).
    * No se admiten $record ni $data en scripts del lado del cliente. Sin embargo, si los scripts se escriben en un bloque formReady, layoutReady, seguirán funcionando porque se ejecutan en el servidor.
-   * No se admiten scripts específicos de elementos XFA Draw, como cambiar el texto Dibujar (o el texto del Pie de ilustración si hay campos).
+   * No se admiten scripts específicos de elementos XFA Draw, como cambiar el texto de Draw (o el texto del rótulo si hay campos).
 
 1. ¿Hay alguna limitación en el uso de formCalc?
 

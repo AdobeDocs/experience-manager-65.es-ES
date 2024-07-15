@@ -34,7 +34,7 @@ El siguiente árbol de decisión proporciona instrucciones para reducir el cuell
 
 ## Configuración de archivos de registro y registros de auditoría {#configuring-log-files-and-audit-logs}
 
-AEM Registra registros detallados que es posible que desee configurar para solucionar los problemas de instalación. Para obtener más información, consulte [Trabajar con registros de auditoría y archivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) sección.
+AEM Registra registros detallados que es posible que desee configurar para solucionar los problemas de instalación. Para obtener más información, vea la sección [Trabajar con registros de auditoría y archivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## Uso de la opción Detallada {#using-the-verbose-option}
 
@@ -70,9 +70,9 @@ Para solucionar problemas, haga lo siguiente:
 >Consulte también [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 
-CRX tiene un espacio de memoria bajo. Si la aplicación que se ejecuta en CRX tiene requisitos de memoria más grandes o solicita operaciones con gran cantidad de memoria (por ejemplo, transacciones grandes), la instancia de JVM donde se ejecuta CRX debe iniciarse con la configuración de memoria adecuada.
+El propio CRX tiene un espacio de memoria bajo. Si la aplicación que se ejecuta en CRX tiene requisitos de memoria mayores o solicita operaciones con gran cantidad de memoria (por ejemplo, transacciones grandes), la instancia de JVM en la que se ejecuta CRX debe iniciarse con la configuración de memoria adecuada.
 
-Utilice las opciones de comando de Java™ para definir la configuración de memoria de JVM (por ejemplo, java -Xmx512m -jar crx&amp;ast;.jar para establecer el tamaño de la pila en 512 MB).
+Utilice las opciones de comandos de Java™ para definir la configuración de memoria de JVM (por ejemplo, java -Xmx512m -jar crx&amp;ast;.jar para establecer el tamaño de pila en 512 MB).
 
 AEM Especifique la opción de configuración de memoria al iniciar WCM desde la línea de comandos. AEM AEM Los scripts de inicio/parada de WCM de WCM de WCM o los scripts personalizados para administrar el inicio de WCM también se pueden modificar para definir la configuración de memoria necesaria.
 
@@ -82,14 +82,14 @@ Para crear automáticamente un volcado de la pila cuando se agote la memoria, ut
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Este método genera un archivo de volcado de pila (**java_...hprof**) siempre que el proceso se quede sin memoria. El proceso puede seguir ejecutándose después de que se haya generado el volcado de la pila.
+Este método genera un archivo de volcado de la pila (**java_...hprof**) cada vez que el proceso se queda sin memoria. El proceso puede seguir ejecutándose después de que se haya generado el volcado de la pila.
 
 A menudo, se requieren tres archivos de volcado de la pila, recopilados durante un período de tiempo, para analizar el problema:
 
 * Antes de que se produzca un error
 * Durante el fallo 1
 * Durante el fallo 2
-* *Lo ideal es que también sea bueno recopilar información después de resolver el evento*
+* *Lo ideal sería que también se recopilara información una vez resuelto el evento*
 
 Se pueden comparar para ver los cambios y cómo los objetos utilizan la memoria.
 
@@ -115,7 +115,7 @@ AEM Hay un problema conocido con la ejecución de ™ 6.5 en JavaScript 11 en el
 
 Si se produce este problema, haga lo siguiente:
 
-1. Abra el `sling.properties` en el archivo `crx-quickstart/conf/` carpeta
+1. Abra el archivo `sling.properties` en la carpeta `crx-quickstart/conf/`
 1. Busque la siguiente línea:
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.`
@@ -134,13 +134,13 @@ Si se produce este problema, haga lo siguiente:
 
 Cuando una solicitud a la página geometrixx-outdoors/es devuelve un error 404 (página no encontrada), puede volver a comprobar que ha establecido la propiedad sling adicional en el archivo sling.properties necesario para estos servidores de aplicaciones específicos.
 
-Consulte en la *AEM Implementación de aplicación web* pasos para obtener los detalles.
+AEM Consulte los pasos de *Implementación de aplicación web* para obtener más información.
 
 ### El tamaño del encabezado de respuesta puede ser superior a 4 KB {#response-header-size-can-be-greater-than-kb}
 
 AEM Los errores 502 pueden indicar que el servidor web no puede gestionar el tamaño del encabezado de respuesta HTTP de la. AEM Puede generar encabezados de respuesta HTTP que incluyan cookies de tamaño superior a 4 KB. Asegúrese de que el contenedor del servlet esté configurado para que el tamaño máximo del encabezado de respuesta pueda superar los 4 KB.
 
-Por ejemplo, para Tomcat 7.0, el atributo maxHttpHeaderSize del [Conector HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controla las limitaciones en el tamaño del encabezado.
+Por ejemplo, para Tomcat 7.0, el atributo maxHttpHeaderSize del [conector HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controla las limitaciones en el tamaño del encabezado.
 
 ## Desinstalación de Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
@@ -150,7 +150,7 @@ Si el almacenamiento persistente está incrustado en el directorio de instalaci�
 
 >[!NOTE]
 >
->El Adobe AEM recomienda realizar una copia de seguridad del repositorio antes de eliminar la. Si elimina todo el &lt;cq-installation-directory>, también se elimina el repositorio. Para conservar los datos del repositorio antes de eliminarlos, mueva o copie el &lt;cq-installation-directory>La carpeta /crx-quickstart/repository se encuentra en otro lugar antes de eliminar las demás carpetas.
+>El Adobe AEM recomienda realizar una copia de seguridad del repositorio antes de eliminar la. Si elimina todo el &lt;cq-installation-directory>, también eliminará el repositorio. Para conservar los datos del repositorio antes de eliminarlos, mueva o copie la carpeta &lt;cq-installation-directory>/crx-quickstart/repository en otro lugar antes de eliminar las demás carpetas.
 
 AEM Si la instalación de la utiliza almacenamiento externo, por ejemplo, un servidor de base de datos, al eliminar la carpeta no se eliminan los datos automáticamente, pero sí la configuración de almacenamiento, lo que dificulta la restauración del contenido JCR.
 

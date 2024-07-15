@@ -25,7 +25,7 @@ Un punto de inicio invoca un proceso creado en Workbench. Está asociado a un fo
 >
 >Los puntos de inicio, el proceso de inicio y el formulario de los términos se utilizan de forma intercambiable al hacer referencia a este concepto.
 
-Para iniciar un proceso desde la aplicación de Adobe Experience Manager AEM () Forms, debe tener un punto de inicio de tipo **Workspace** en su proceso. Además, debe seleccionar la **[!UICONTROL Visible en Mobile Workspace]** para el punto de inicio.
+Para iniciar un proceso desde la aplicación Adobe Experience Manager AEM () Forms, debes tener un punto de inicio de tipo **Workspace** en tu proceso. Además, debe seleccionar la opción **[!UICONTROL Visible en Workspace móvil]** para el punto de inicio.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
@@ -42,7 +42,7 @@ Para iniciar un proceso desde la aplicación de Adobe Experience Manager AEM () 
 
    Puede agregar anotaciones a esta tarea con el botón [Archivo adjunto](../../forms/using/add-attachments.md).
 
-1. Después de rellenar el formulario, seleccione la opción **[!UICONTROL Enviar]** botón.
+1. Después de rellenar el formulario, selecciona el botón **[!UICONTROL Enviar]**.
 
 Si la aplicación está sin conexión, el formulario y sus datos se guardan en la carpeta Bandeja de salida.
 

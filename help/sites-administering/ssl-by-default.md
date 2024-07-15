@@ -25,27 +25,27 @@ AEM En un esfuerzo por mejorar continuamente la seguridad de los recursos, Adobe
 
 AEM Puede comenzar a configurar SSL/TLS de forma predeterminada haciendo clic en el mensaje de la bandeja de entrada correspondiente en la pantalla de inicio de la. Para llegar a la bandeja de entrada, pulse el icono de campana en la esquina superior derecha de la pantalla. A continuación, haga clic en **Ver todo**. Esto mostrará una lista de todas las alertas ordenadas en una vista de lista.
 
-En la lista, seleccione y abra **Configurar HTTPS** alerta:
+En la lista, seleccione y abra la alerta **Configurar HTTPS**:
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
->Si la variable **Configurar HTTPS** no está presente en la bandeja de entrada, puede navegar directamente al asistente de HTTPS accediendo a *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Si la alerta **Configurar HTTPS** no está presente en la Bandeja de entrada, puede ir directamente al Asistente para HTTPS yendo a *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-Un usuario de servicio llamado **ssl-service** se ha creado para esta función. Una vez abierta la alerta, se le guiará a través del siguiente asistente de configuración:
+Se ha creado un usuario de servicio llamado **ssl-service** para esta característica. Una vez abierta la alerta, se le guiará a través del siguiente asistente de configuración:
 
-1. En primer lugar, configure las credenciales de la tienda. Estas son las credenciales de la **ssl-service** almacén de claves del usuario del sistema que contendrá la clave privada y el almacén de confianza para el detector de HTTPS.
+1. En primer lugar, configure las credenciales de la tienda. Estas son las credenciales del almacén de claves del usuario del sistema **ssl-service** que contendrán la clave privada y el almacén de confianza para el detector de HTTPS.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Una vez introducidas las credenciales, haga clic en **Siguiente** en la esquina superior derecha de la página. A continuación, cargue la clave privada y el certificado asociados para la conexión SSL/TLS.
+1. Una vez que ingreses las credenciales, haz clic en **Siguiente** en la esquina superior derecha de la página. A continuación, cargue la clave privada y el certificado asociados para la conexión SSL/TLS.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >
-   >Para obtener información sobre cómo generar una clave privada y un certificado para utilizarlo con el asistente, consulte [este procedimiento](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) más abajo.
+   >Para obtener información sobre cómo generar una clave privada y un certificado para utilizarlo con el asistente, consulte [este procedimiento](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) a continuación.
 
 1. Por último, especifique el nombre de host HTTPS y el puerto TCP para el detector de HTTPS.
 
@@ -96,7 +96,7 @@ El servlet, como cualquier servlet del POST sling, responderá con 200 OK o un c
 
 A continuación se muestran ejemplos de una respuesta correcta y de un error.
 
-**EJEMPLO DE ÉXITO** (estado = 200):
+**EJEMPLO CORRECTO** (estado = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -153,8 +153,8 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 También puede automatizar la configuración de SSL/TLS cargando un paquete que ya contenga estos elementos necesarios:
 
-* El almacén de claves del usuario del servicio SSL. Se encuentra en */home/users/system/security/ssl-service/keystore* en el repositorio.
-* El `GraniteSslConnectorFactory` configuración
+* El almacén de claves del usuario del servicio SSL. Se encuentra en */home/users/system/security/ssl-service/keystore*, en el repositorio.
+* La configuración de `GraniteSslConnectorFactory`
 
 ### Generación de un par de clave privada/certificado para utilizarlo con el asistente {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
@@ -189,13 +189,13 @@ A continuación encontrará un ejemplo para crear un certificado autofirmado en 
    openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
    ```
 
-1. Finalmente, cargue el **localhostprivate.der** como clave privada y **localhost.crt** como el certificado SSL/TLS en el paso 2 del asistente gráfico SSL/TLS descrito al principio de esta página.
+1. Finalmente, cargue **localhostprivate.der** como clave privada y **localhost.crt** como certificado SSL/TLS en el paso 2 del Asistente gráfico para SSL/TLS descrito al principio de esta página.
 
 ### Actualizar la configuración SSL/TLS mediante cURL {#updating-the-ssl-tls-configuration-via-curl}
 
 >[!NOTE]
 >
->Consulte [AEM Uso de cURL con](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) AEM para obtener una lista centralizada de comandos útiles de cURL en la lista de comandos de.
+>AEM AEM Consulte [Uso de cURL con la dirección de correo electrónico ](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para obtener una lista centralizada de los comandos cURL útiles en la sección de comandos de la dirección de correo electrónico.
 
 También puede automatizar la configuración SSL/TLS mediante la herramienta cURL. Para ello, publique los parámetros de configuración en esta dirección URL:
 
@@ -203,7 +203,7 @@ También puede automatizar la configuración SSL/TLS mediante la herramienta cUR
 
 A continuación se muestran los parámetros que puede utilizar para cambiar las distintas configuraciones en el asistente de configuración:
 
-* `-F "keystorePassword=password"` - la contraseña del almacén;
+* `-F "keystorePassword=password"`: la contraseña del almacén de claves;
 
 * `-F "keystorePasswordConfirm=password"` - confirmar la contraseña del almacén de claves;
 
@@ -211,18 +211,18 @@ A continuación se muestran los parámetros que puede utilizar para cambiar las 
 
 * `-F "truststorePasswordConfirm=password"` - confirmar la contraseña del almacén de confianza;
 
-* `-F "privatekeyFile=@localhostprivate.der"` - especificar la clave privada;
+* `-F "privatekeyFile=@localhostprivate.der"` - especifique la clave privada;
 
-* `-F "certificateFile=@localhost.crt"` - especificar el certificado;
+* `-F "certificateFile=@localhost.crt"` - especifique el certificado;
 
 * `-F "httpsHostname=host.example.com"`- especificar el nombre de host;
-* `-F "httpsPort=8443"` : el puerto en el que funcionará el detector de HTTPS.
+* `-F "httpsPort=8443"`: el puerto en el que funcionará el detector de HTTPS.
 
 >[!NOTE]
 >
->La forma más rápida de ejecutar cURL para automatizar la configuración SSL/TLS es desde la carpeta donde se encuentran los archivos DER y CRT. También puede especificar la ruta completa en la variable `privatekeyFile` y argumentos certificateFile.
+>La forma más rápida de ejecutar cURL para automatizar la configuración SSL/TLS es desde la carpeta donde se encuentran los archivos DER y CRT. También puede especificar la ruta de acceso completa en los argumentos `privatekeyFile` y certificateFile.
 >
->También debe autenticarse para realizar la actualización, por lo que asegúrese de anexar el comando cURL con la variable `-u user:passeword` parámetro.
+>También necesita autenticarse para realizar la actualización, así que asegúrese de anexar el comando cURL con el parámetro `-u user:passeword`.
 >
 >Un comando post de cURL correcto debería tener este aspecto:
 
@@ -236,14 +236,14 @@ Puede enviar al servlet una cadena de certificados repitiendo el parámetro cert
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Una vez ejecutado el comando, compruebe que todos los certificados hayan llegado al repositorio de claves. Compruebe la **Keystore** entradas de:
+Una vez ejecutado el comando, compruebe que todos los certificados hayan llegado al repositorio de claves. Compruebe las entradas de **Keystore** desde:
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### Activación de una conexión TLS 1.3 {#enabling-tls-connection}
 
 1. Ir a la consola web
-1. A continuación, vaya a **OSGi** - **Configuración** - **Adobe Granite SSL Connector Factory**
-1. Vaya a la **Grupos de cifrado incluidos** y agregue las siguientes entradas. Puede confirmar cada adición pulsando el botón &quot;**+**&quot; a la izquierda del campo, después de añadir cada uno en:
+1. A continuación, vaya a **OSGi** - **Configuración** - **Fábrica del conector SSL de Adobe Granite**
+1. Vaya al campo **Grupos de cifrado incluidos** y agregue las siguientes entradas. Puede confirmar cada adición presionando el botón &quot;**+**&quot; a la izquierda del campo, después de agregar cada una en:
 
    * `TLS_AES_256_GCM_SHA384`
    * `TLS_AES_128_GCM_SHA256`

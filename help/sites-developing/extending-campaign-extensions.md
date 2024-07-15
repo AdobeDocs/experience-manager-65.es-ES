@@ -27,25 +27,25 @@ Debe tener instalado lo siguiente:
 * Adobe Experience Manager
 * Adobe Campaign 6.1
 
-Consulte [AEM Integración de con Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) para obtener más información.
+AEM Consulte [Integración de con Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) para obtener más información.
 
 ## AEM Ejemplo 1: a Adobe Campaign {#example-aem-to-adobe-campaign}
 
-AEM La integración estándar entre y Campaign se basa en JSON y JSSP (JavaScript Server Page). Estos archivos JSSP se pueden encontrar en la consola de Campaign y todos empiezan por **aec** (Adobe Experience Cloud).
+AEM La integración estándar entre y Campaign se basa en JSON y JSSP (página de JavaScript Server). Estos archivos JSSP se encuentran en la consola de Campaign y todos comienzan con **aec** (Adobe Experience Cloud).
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
 >[!NOTE]
 >
->[Para ver este ejemplo, consulte Geometrixx](/help/sites-developing/we-retail.md), que está disponible en Uso compartido de paquetes.
+>[Para este ejemplo, consulte el Geometrixx](/help/sites-developing/we-retail.md), que está disponible en Package Share.
 
 AEM En este ejemplo, se creó un nuevo archivo JSSP personalizado y llama a que desde el lado de la para recuperar el resultado. Se puede utilizar, por ejemplo, para recuperar datos de Adobe Campaign o para guardarlos en Adobe Campaign.
 
-1. En Adobe Campaign, para crear un archivo JSSP, haga clic en **Nuevo** icono.
+1. En Adobe Campaign, para crear un archivo JSSP, haga clic en el icono **Nuevo**.
 
-   ![El icono Nuevo tal y como indica una página con una estrella cerca de la esquina superior izquierda.](do-not-localize/chlimage_1-4a.png)
+   ![Icono Nuevo tal como lo indica una página con una estrella cerca de la esquina superior izquierda.](do-not-localize/chlimage_1-4a.png)
 
-1. Escriba el nombre de este archivo JSSP. En este ejemplo, **cus:custom.jssp** se utiliza (lo que significa que está en el **cus** namespace).
+1. Escriba el nombre de este archivo JSSP. En este ejemplo, se usa **cus:custom.jssp** (lo que significa que está en el área de nombres **cus**).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -62,9 +62,9 @@ AEM En este ejemplo, se creó un nuevo archivo JSSP personalizado y llama a que 
 1. AEM Cree un servlet simple en el lado del para poder llamar a este JSSP. En este ejemplo, puede suponer lo siguiente:
 
    * AEM Tiene la conexión funcionando entre y Campaign
-   * El servicio Campaign Cloud está configurado en **/content/geometrixx-outdoors**
+   * El servicio en la nube de Campaign está configurado en **/content/geometrixx-outdoors**
 
-   El objeto más importante de este ejemplo es el **GenericCampaignConnector**, que permite invocar (obtener y publicar) archivos jssp en Adobe Campaign.
+   El objeto más importante de este ejemplo es **GenericCampaignConnector**, que le permite llamar (obtener y publicar) archivos jssp en Adobe Campaign.
 
    Este es un pequeño fragmento de código:
 
@@ -169,7 +169,7 @@ AEM ofrece las API listas para usar para recuperar los objetos disponibles en cu
 
 >[!NOTE]
 >
->[Para ver este ejemplo, consulte Geometrixx](/help/sites-developing/we-retail.md), que está disponible en Uso compartido de paquetes.
+>[Para este ejemplo, consulte el Geometrixx](/help/sites-developing/we-retail.md), que está disponible en Package Share.
 
 Para cada nodo del explorador, hay una API vinculada a él. Por ejemplo, para el nodo :
 
@@ -179,13 +179,13 @@ La API es:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Final de la dirección URL **.1.json** se puede reemplazar por **.2.json**, **.3.json**, según el número de subniveles que le interese obtener. Para obtener todos ellos la palabra clave, **infinito** se puede utilizar:
+El final de la dirección URL **.1.json** se puede reemplazar por **.2.json**, **.3.json**, según el número de subniveles que le interese obtener. Para obtener todos ellos la palabra clave, se puede utilizar **infinity**:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 AEM Para consumir la API, utiliza de forma predeterminada la autenticación básica, la cual se utiliza de forma predeterminada.
 
-Una biblioteca JS con el nombre **amcIntegration.js** está disponible en 6.1.1 (versión 8624 y superior) que implementa esa lógica entre otras.
+Una biblioteca JS con el nombre **amcIntegration.js** está disponible en la versión 6.1.1 (versión 8624 y posteriores) que implementa esa lógica entre otras.
 
 ### AEM Llamada de API de {#aem-api-call}
 

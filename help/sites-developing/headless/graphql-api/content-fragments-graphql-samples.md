@@ -225,7 +225,7 @@ Cuando se ejecuta, el sistema expande automáticamente la consulta para incluir 
 
 ### Consulta de muestra: nombres de todas las ciudades {#sample-names-all-cities}
 
-Esta consulta de ejemplo es una consulta directa para devolver el `name`de todas las entradas de la `city`esquema.
+Esta consulta de ejemplo es una consulta directa para devolver `name` de todas las entradas del esquema `city`.
 
 **Consulta de muestra**
 
@@ -316,7 +316,7 @@ Esta consulta de ejemplo es una consulta para devolver los detalles de una sola 
 
 ### Consulta de muestra: todas las ciudades con una variación con nombre {#sample-cities-named-variation}
 
-Si crea una variación denominada &quot;Centro de Berlín&quot; (`berlin_centre`), para el `city` Berlín, puede utilizar una consulta para devolver detalles de la variación.
+Si crea una variación denominada &quot;Centro de Berlín&quot; (`berlin_centre`), para el `city` de Berlín, puede utilizar una consulta para devolver detalles de la variación.
 
 **Consulta de muestra**
 
@@ -362,7 +362,7 @@ Si crea una variación denominada &quot;Centro de Berlín&quot; (`berlin_centre`
 Si:
 
 * crea varias etiquetas, con el nombre `Tourism`: `Business`, `City Break` y `Holiday`
-* y asignar estas etiquetas a la variación Principal de varios `City` instances
+* y asigne estas etiquetas a la variación Principal de varias instancias de `City`
 
 Entonces puede utilizar una consulta para devolver detalles de la `name` y `tags`de todas las entradas etiquetadas como City Breaks en el `city`esquema.
 
@@ -539,7 +539,7 @@ query {
 
 ### Consulta de muestra: todas las personas que tienen el apellido “Jobs” o “Smith” {#sample-all-persons-jobs-smith}
 
-Esta consulta de muestra filtra todo `persons` para cualquier que tenga el nombre `Jobs`o `Smith`.
+Esta consulta de muestra filtra todos los `persons` para cualquier elemento que tenga el nombre `Jobs` o `Smith`.
 
 **Consulta de muestra**
 
@@ -593,7 +593,7 @@ query {
 
 ### Consulta de muestra: todas las personas que no tienen el apellido “Jobs” {#sample-all-persons-not-jobs}
 
-Esta consulta de muestra filtra todo `persons` para cualquier que tenga el nombre `Jobs`o `Smith`.
+Esta consulta de muestra filtra todos los `persons` para cualquier elemento que tenga el nombre `Jobs` o `Smith`.
 
 **Consulta de muestra**
 

@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # Agrupar documentos PDF {#assembling-pdf-documents}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
 **Acerca del servicio Assembler**
 
@@ -29,4 +29,4 @@ A partir de LiveCycle ES 8.0 y versiones posteriores, la compatibilidad con paqu
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Assembler, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Assembler, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).

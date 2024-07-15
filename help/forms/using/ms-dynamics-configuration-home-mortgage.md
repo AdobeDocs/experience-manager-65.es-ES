@@ -44,7 +44,7 @@ Antes de comenzar a configurar Dynamics 365, asegúrese de que dispone de lo si
 
    ![panel_configuración_simulador](assets/calculatorconfigurepanel.png)
 
-1. En el cuadro de diálogo Editar contenedor de AEM Forms, busque la ruta del recurso, seleccione el simulador de hipoteca en la siguiente ruta y seleccione **Confirmar**:
+1. En el cuadro de diálogo Editar contenedor de AEM Forms, examine la ruta del recurso, seleccione el simulador de hipoteca en la siguiente ruta y seleccione **Confirmar**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
@@ -63,7 +63,7 @@ Antes de comenzar a configurar Dynamics 365, asegúrese de que dispone de lo si
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. Importe el paquete de la solución en la instancia de Microsoft® Dynamics. En la instancia de Microsoft® Dynamics, vaya a **Configuración** > **Soluciones** y luego seleccione **Importar**.
+   1. Importe el paquete de la solución en la instancia de Microsoft® Dynamics. En su instancia de Microsoft® Dynamics, vaya a **Configuración** > **Soluciones** y luego seleccione **Importar**.
 
 1. Para configurar los detalles de contacto del usuario utilizados en el sitio de referencia, importe el paquete Sarah Rose Contact.CSV en su instancia de Microsoft® Dynamics:
 
@@ -71,4 +71,4 @@ Antes de comenzar a configurar Dynamics 365, asegúrese de que dispone de lo si
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importe el paquete en la instancia de Microsoft® Dynamics. En la instancia de Microsoft® Dynamics, vaya a **Ventas** > **Contactos** y luego seleccione **Importar datos**.
+   1. Importe el paquete en la instancia de Microsoft® Dynamics. En su instancia de Microsoft® Dynamics, vaya a **Ventas** > **Contactos** y luego seleccione **Importar datos**.

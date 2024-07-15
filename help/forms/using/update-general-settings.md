@@ -30,7 +30,7 @@ En la pestaña General, cambie la configuración de descarga de archivos adjunto
 
 **Ir a la pestaña General en la pantalla Configuración**
 
-1. Para ir a la pantalla Configuración, seleccione el botón Menú en la esquina superior izquierda de la pantalla Inicio y, a continuación, seleccione **Configuración**.
+1. Para ir a la pantalla Configuración, selecciona el botón Menú en la esquina superior izquierda de la pantalla Inicio y luego selecciona **Configuración**.
 1. En la pantalla Configuración, seleccione la pestaña General.
 
    ![Configuración general en la aplicación de AEM Forms](assets/gen-settings-1.png)

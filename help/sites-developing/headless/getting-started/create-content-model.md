@@ -26,32 +26,32 @@ Los Modelos de fragmento de contenido definen la estructura de los datos y el co
 
 Un arquitecto de la información realizaría estas tareas solo de forma esporádica, a medida que se necesiten nuevos modelos. Para los fines de esta guía de introducción, solo está creando un modelo.
 
-1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Herramientas > Recursos > Modelos de fragmentos de contenido**.
+1. AEM Inicie sesión en el menú principal y seleccione **Herramientas > Assets > Modelos de fragmentos de contenido**.
 1. Haga clic en la carpeta que se creó al crear la configuración.
 
    ![La carpeta de modelos](assets/models-folder.png)
 1. Haga clic en **Crear**.
-1. Proporcione un **Título de modelo**, **Etiquetas**, y **Descripción**. También puede seleccionar o anular la selección de **Habilitar modelo** para controlar si el modelo se activa inmediatamente tras la creación.
+1. Proporcione un **Título de modelo**, **Etiquetas** y **Descripción**. También puede seleccionar o anular la selección de **Habilitar modelo** para controlar si el modelo se activa inmediatamente tras la creación.
 
    ![Creación de un modelo](assets/models-create.png)
-1. En la ventana de confirmación, haga clic en **Abrir** para configurar el modelo.
+1. En la ventana de confirmación, haz clic en **Abrir** para configurar el modelo.
 
    ![Ventana de confirmación](assets/models-confirmation.png)
 1. Con el **Editor del modelo de fragmento de contenido**, cree su modelo de fragmento de contenido arrastrando y soltando campos de la columna **Tipos de datos**.
 
    ![Arrastre y coloque campos](assets/models-drag-and-drop.png)
 
-1. Una vez colocado un campo, se deben configurar sus propiedades. El editor cambia automáticamente a **Propiedades** para el campo añadido, donde puede proporcionar los campos obligatorios.
+1. Una vez colocado un campo, se deben configurar sus propiedades. El editor cambia automáticamente a la pestaña **Properties** del campo agregado, donde puede proporcionar los campos obligatorios.
 
    ![Configure las propiedades](assets/models-configure-properties.png)
-1. Cuando haya terminado de crear el modelo, haga clic en **Guardar**.
+1. Cuando termine de crear el modelo, haga clic en **Guardar**.
 
 1. El tipo del modelo recién creado depende de si ha seleccionado **Activar modelo** al crearlo:
    * seleccionado: el nuevo modelo ya está **Habilitado**
    * No seleccionado: el nuevo modelo se crea en modo **Borrador**
 
 1. Si aún no lo está, el modelo debe estar **Habilitado** para utilizarlo.
-   1. Seleccione el modelo que ha creado y haga clic en **Activar**.
+   1. Seleccione el modelo que creó y, a continuación, haga clic en **Habilitar**.
 
       ![Activación del modelo](assets/models-enable.png)
    1. Confirme la activación del modelo tocando o haciendo clic en **Habilitar** en el cuadro de diálogo de confirmación.
@@ -67,7 +67,7 @@ Puede crear varios modelos. Los modelos pueden hacer referencia a otros fragment
 
 ## Siguientes pasos {#next-steps}
 
-Ahora que ha definido las estructuras de los fragmentos de contenido creando modelos, puede pasar a la tercera parte de la guía de introducción y [cree carpetas donde almacene los fragmentos.](create-assets-folder.md)
+Ahora que ha definido las estructuras de los fragmentos de contenido creando modelos, puede pasar a la tercera parte de la guía de introducción y [crear carpetas donde almacenará los fragmentos.](create-assets-folder.md)
 
 >[!TIP]
 >

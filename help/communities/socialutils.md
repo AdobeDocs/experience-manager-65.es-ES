@@ -20,9 +20,9 @@ ht-degree: 1%
 
 ## Paquete SocialUtils obsoleto {#socialutils-package-deprecated}
 
-El paquete `com.adobe.cq.social.ugcbase.SocialUtils` AEM quedó obsoleto en la versión 6.1 de.
+AEM El paquete `com.adobe.cq.social.ugcbase.SocialUtils` se ha quedado obsoleto en la versión 6.1 de.
 
-En las tablas siguientes se enumeran los métodos que se deben utilizar en lugar de `SocialUtils` métodos.
+En las tablas siguientes se enumeran los métodos que se deben usar en lugar de `SocialUtils`.
 
 ## Paquete SocialResourceUtilities  {#socialresourceutilities-package}
 

@@ -106,7 +106,7 @@ Además, si ha seleccionado un esquema XML o una plantilla de formulario XDP com
    * **Modelo de formulario**: en función del modelo de formulario para el formulario adaptable, este campo muestra el **Esquema XML**, la **Plantilla de formulario** o **Ninguno**. Es un campo no editable.
 
    * **Raíz del modelo del fragmento**: solo aparece en formularios adaptables basados en XSD. Especifica la raíz del modelo de fragmento. Puede elegir **/** o el tipo complejo XSD de la lista desplegable. Solo puede reutilizar el fragmento en otro formulario adaptable si selecciona el tipo complejo como raíz del modelo de fragmento.
-Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos del formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable. Si crea un fragmento y elige un tipo complejo como **Raíz de modelo de fragmento**, puede utilizarlo siempre que se utilice ese tipo complejo, ya sea en el mismo formulario o en varios.
+Si elige **/** como raíz del modelo de fragmento, el árbol XSD completo de la raíz se podrá ver en la pestaña Modelo de datos del formulario adaptable. Para una raíz de modelo de fragmento de tipo complejo, solo los descendientes del tipo complejo seleccionado serán visibles en la pestaña Modelo de datos de formulario adaptable. Si crea un fragmento y elige un tipo complejo como **Raíz del modelo de fragmento**, puede utilizarlo siempre que se utilice ese tipo complejo, ya sea en el mismo formulario o en varios.
 
    * **XSD Ref**: solo aparece en formularios adaptables basados en XSD. Muestra la ubicación del esquema XML.
 
@@ -134,8 +134,8 @@ Realice los siguientes pasos para mostrar fragmentos completos en formularios:
 
 1. Vaya a la página de configuración de la consola web de AEM en https:[*host*]:[*port*]/system/console/configMgr.
 
-1. Buscar y seleccionar **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]** para abrirlo en modo de edición.
-1. Deshabilitar **[!UICONTROL Habilitar marcador de posición en lugar de fragmento]** para que pueda mostrar fragmentos completos en lugar de la imagen del marcador de posición.
+1. Busque y seleccione **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]** para abrirlo en modo de edición.
+1. Deshabilite **[!UICONTROL Habilitar marcador de posición en lugar de fragmento]** para que pueda mostrar fragmentos completos en lugar de la imagen del marcador de posición.
 
 ### Insertar un fragmento en un formulario adaptable {#insert-a-fragment-in-an-adaptive-form}
 
@@ -174,7 +174,7 @@ Puede reemplazar o cambiar un fragmento de formulario adaptable por otro mediant
 
 ### Generar documento de registro para el fragmento de formulario adaptable {#generate-DOR-for-fragments}
 
-El documento de registro (DOR) le ayuda a mantener la información de los formularios en formato impreso o de documento. De este modo, le ayuda a realizar un seguimiento de la información sobre sus clientes en cualquier momento posterior y también puede utilizar el documento de registro para archivar formularios y contenido en formato PDF. [Obtenga información sobre cómo generar el documento de registro para los fragmentos de formulario adaptable](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+El documento de registro (DOR) le ayuda a mantener la información de los formularios en formato impreso o de documento. De este modo, le ayuda a realizar un seguimiento de la información sobre sus clientes en cualquier momento posterior y también puede utilizar el documento de registro para archivar formularios y contenido en formato PDF. [Aprenda a generar el documento de registro para los fragmentos de formularios adaptables](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 ### Uso de un fragmento de formulario varias veces en un formulario adaptable {#using-form-fragment-mutiple-times-in-af}
 

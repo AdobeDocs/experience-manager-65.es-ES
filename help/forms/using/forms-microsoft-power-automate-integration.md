@@ -22,14 +22,14 @@ Puede configurar un formulario adaptable para ejecutar un flujo de nube de Micro
 * Realizar cálculos complejos en los datos capturados
 * Guardar datos de formularios adaptables en sistemas de almacenamiento con una programación predefinida
 
-El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar una acción y enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para utilizar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [Conecte la instancia de autor de AEM Forms con Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar una acción y enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para usar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [Conecte la instancia de autor de AEM Forms con Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
 
 ## Requisitos previos
 
 Para conectar un formulario adaptable con Microsoft® Power Automate, es necesario lo siguiente:
 
 * Licencia de Microsoft® Power Automate Premium
-* Microsoft® [Flujo de Power Automate](https://docs.microsoft.com/es-es/power-automate/create-flow-solution) con el `When an HTTP request is received` déclencheur para aceptar datos de envío de formularios adaptables
+* Flujo de Microsoft® [Power Automate](https://docs.microsoft.com/es-es/power-automate/create-flow-solution) con el déclencheur `When an HTTP request is received` para aceptar los datos de envío del formulario adaptable
 * Un usuario de Experience Manager con privilegios de [autor de formularios](/help/forms/using/forms-groups-privileges-tasks.md) y [administrador de formularios](/help/forms/using/forms-groups-privileges-tasks.md)
 * La cuenta utilizada para conectarse a Microsoft® Power Automate es la propietaria del flujo de Power Automate configurada para recibir datos del formulario adaptable
 
@@ -116,12 +116,12 @@ La instancia de autor de AEM Forms ahora está conectada con Microsoft® Power A
 
 ## Utilizar la acción de envío Invocar un flujo de Microsoft® Power Automate para enviar datos a un flujo de Power Automate {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
-Después de usted [Conecte la instancia de autor de AEM Forms con Microsoft® Power Automate](#connect-forms-server-with-power-automate), realice la siguiente acción para configurar el formulario adaptable y enviar los datos capturados a un flujo de Microsoft® al enviar el formulario.
+Después de [conectar la instancia de autor de AEM Forms con Microsoft® Power Automate](#connect-forms-server-with-power-automate), realice la siguiente acción para configurar el formulario adaptable y enviar los datos capturados a un flujo de Microsoft® al enviar el formulario.
 
 1. Inicie sesión en la instancia de autor, seleccione su formulario adaptable y haga clic en **[!UICONTROL Propiedades]**.
 1. En el contenedor de configuración, examine y seleccione el contenedor creado en la sección [Crear la configuración de nube de Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration) y seleccione **[!UICONTROL Guardar y cerrar]**.
 1. Abra el formulario adaptable para editarlo y vaya a la sección **[!UICONTROL Envío]** de las propiedades del contenedor del formulario adaptable.
-1. En el contenedor de propiedades, para **[!UICONTROL Acciones de envío]**, seleccione la opción **[!UICONTROL Invocar un flujo de Power Automate]**. Una lista de los flujos de Power Automate disponibles está disponible en la **[!UICONTROL Flujo de Power Automate]** opción. Seleccione el flujo necesario y los datos de formularios adaptables se envían en el momento del envío.
+1. En el contenedor de propiedades, para **[!UICONTROL Acciones de envío]**, seleccione la opción **[!UICONTROL Invocar un flujo de Power Automate]**. Hay una lista de flujos de Power Automate disponibles en la opción **[!UICONTROL Flujo de Power Automate]**. Seleccione el flujo necesario y los datos de formularios adaptables se envían en el momento del envío.
 
    ![Configurar la acción de envío](assets/submission.png)
 

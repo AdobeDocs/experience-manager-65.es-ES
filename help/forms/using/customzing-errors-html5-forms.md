@@ -34,7 +34,7 @@ Después de extraer el paquete, abra la carpeta CustomErrorManager-1.0-SNAPSHOT.
 
 ### Personalizar la posición de los mensajes de error  {#customizing-the-position-of-error-messages-nbsp}
 
-Para personalizar la posición del mensaje de error, agregue una &lt;div> para cada campo de error y advertencia, coloque el &lt;div> a la izquierda o a la derecha, y aplique estilos css en la etiqueta &lt;div> etiqueta. Para ver los pasos detallados, consulte el procedimiento que se muestra a continuación:
+Para personalizar la posición del mensaje de error, agregue una etiqueta &lt;div> a cada campo de error y advertencia, coloque la etiqueta &lt;div> a la izquierda o a la derecha, y aplique estilos css en la etiqueta &lt;div>. Para ver los pasos detallados, consulte el procedimiento que se muestra a continuación:
 
 1. Navegue hasta la carpeta `CustomErrorManager-1.0-SNAPSHOT` y abra la carpeta `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
 1. Abra el archivo `customErrorManager.js` para editarlo. La función `markError` del el archivo acepta los siguientes parámetros:
@@ -118,7 +118,7 @@ Utilice el paquete adjunto para mostrar simultáneamente los mensajes de error d
 
 ## Procese el formulario con el nuevo perfil.  {#render-the-form-with-the-new-profile-nbsp}
 
-De forma predeterminada, los formularios HTML5 utilizan un perfil predeterminado: `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
+De serie, los formularios HTML5 utilizan un perfil predeterminado: `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
 Para ver un formulario con los mensajes de error personalizados, procese el formulario con un perfil de error: `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 

@@ -27,7 +27,7 @@ ht-degree: 38%
 AEM Forms 6.5 ha introducido la capacidad de definir las funciones de JavaScript que se pueden utilizar para definir reglas comerciales complejas mediante el editor de reglas. AEM Forms proporciona varias de estas funciones personalizadas de forma predeterminada, pero tendrá que definir sus propias funciones personalizadas y utilizarlas en varios formularios.
 
 Las funciones personalizadas amplían las capacidades de los formularios al facilitar la manipulación y el procesamiento de los datos introducidos para satisfacer requisitos específicos. También permiten la modificación dinámica del comportamiento del formulario en función de criterios predefinidos.
-En Forms adaptable, puede utilizar funciones personalizadas dentro de [Editor de reglas de un formulario adaptable](/help/forms/using/rule-editor.md) para crear reglas de validación específicas para los campos de formulario.
+En Forms adaptable, puede usar funciones personalizadas dentro del [editor de reglas de un formulario adaptable](/help/forms/using/rule-editor.md) para crear reglas de validación específicas para los campos del formulario.
 Comprendamos el uso de la función personalizada en la que los usuarios escriben la dirección de correo electrónico y desea asegurarse de que la dirección de correo electrónico introducida sigue un formato específico (contiene un símbolo &quot;@&quot; y un nombre de dominio). Cree una función personalizada como &quot;ValidateEmail&quot; que tome la dirección de correo electrónico como entrada y devuelva el valor &quot;True&quot; si es válido y el valor &quot;False&quot; en caso contrario.
 
 ```javascript
@@ -53,14 +53,14 @@ En el ejemplo anterior, cuando el usuario intenta enviar el formulario, se invoc
 
 Las ventajas de utilizar funciones personalizadas en Forms adaptable son:
 
-* **Manipulación de datos**: Las funciones personalizadas manipulan y procesan los datos introducidos en los campos de formulario.
+* **Manipulación de datos**: las funciones personalizadas manipulan y procesan los datos introducidos en los campos de formulario.
 * **Validación de datos**: las funciones personalizadas permiten realizar comprobaciones personalizadas en las entradas del formulario y proporcionar mensajes de error especificados.
 * **Comportamiento dinámico**: las funciones personalizadas le permiten controlar el comportamiento dinámico de los formularios en función de condiciones específicas. Por ejemplo, puede mostrar u ocultar campos, modificar valores de campos o ajustar la lógica del formulario de forma dinámica.
-* **Integración**: Puede utilizar funciones personalizadas para integrarse con API o servicios externos. Ayuda a recuperar datos de fuentes externas, enviar datos a extremos REST externos o realizar acciones personalizadas basadas en eventos externos.
+* **Integración**: puede usar funciones personalizadas para integrarlas con API o servicios externos. Ayuda a recuperar datos de fuentes externas, enviar datos a extremos REST externos o realizar acciones personalizadas basadas en eventos externos.
 
 ## Anotaciones JS admitidas
 
-Asegúrese de que la función personalizada que escriba esté acompañada de la variable `jsdoc` encima, en caso de que necesite configuración y descripción personalizadas. Existen varias formas de declarar una función en `JavaScript,` Los comentarios y permiten realizar un seguimiento de las funciones. Para obtener más información, consulte [usejsdoc.org](https://jsdoc.app/).
+Asegúrese de que la función personalizada que escriba esté acompañada de `jsdoc` encima, en caso de que necesite una configuración y descripción personalizadas. Existen varias formas de declarar una función en `JavaScript,` y los comentarios permiten realizar un seguimiento de las funciones. Para obtener más información, consulte [usejsdoc.org](https://jsdoc.app/).
 
 Etiquetas `jsdoc` compatibles:
 
@@ -195,12 +195,12 @@ var c = {
 Para crear una función personalizada, realice los siguientes pasos:
 
 1. Iniciar sesión en `http://server:port/crx/de/index.jsp#`.
-1. Cree una carpeta dentro de la carpeta `/apps`. Por ejemplo, cree una carpeta denominada como `experience-league`.
+1. Cree una carpeta dentro de la carpeta `/apps`. Por ejemplo, cree una carpeta con el nombre `experience-league`.
 1. Guarde los cambios.
-1. Vaya a la carpeta creada y cree un nodo de tipo `cq:ClientLibraryFolder` as `clientlibs`.
-1. Vaya al recién creado `clientlibs` y añada la `allowProxy` y `categories` propiedades:
+1. Vaya a la carpeta creada y cree un nodo de tipo `cq:ClientLibraryFolder` como `clientlibs`.
+1. Vaya a la carpeta `clientlibs` recién creada y agregue las propiedades `allowProxy` y `categories`:
 
-   ![Propiedades del nodo de biblioteca personalizado](/help/forms/using/assets/customlibrary-catproperties.png)
+   ![Propiedades del nodo de la biblioteca personalizada](/help/forms/using/assets/customlibrary-catproperties.png)
 
    >[!NOTE]
    >
@@ -208,14 +208,14 @@ Para crear una función personalizada, realice los siguientes pasos:
 
 1. Guarde los cambios.
 
-1. Cree una carpeta llamada `js` en el `clientlibs` carpeta.
-1. Cree un archivo JavaScript llamado `functions.js` en el `js` carpeta
-1. Cree un archivo llamado `js.txt` en el `clientlibs` carpeta.
+1. Cree una carpeta llamada `js` en la carpeta `clientlibs`.
+1. Cree un archivo de JavaScript llamado `functions.js` en la carpeta `js`
+1. Cree un archivo denominado `js.txt` en la carpeta `clientlibs`.
 1. Guarde los cambios.
 La estructura de carpetas creada tiene este aspecto:
 
    ![Estructura de carpetas de la biblioteca de cliente creada](/help/forms/using/assets/clientlibrary_folderstructure.png)
-1. Haga doble clic en `functions.js` para abrir el editor. El archivo contiene el código de la función personalizada.
+1. Haga doble clic en el archivo `functions.js` para abrir el editor. El archivo contiene el código de la función personalizada.
 Añadamos el siguiente código al archivo JavaScript para calcular la edad en función de la fecha de nacimiento (AAAA-MM-DD).
 
    ```javascript
@@ -250,7 +250,7 @@ Añadamos el siguiente código al archivo JavaScript para calcular la edad en fu
 
 1. Guarde el archivo `js.txt`.
 
-Puede hacer referencia a lo siguiente [función personalizada](/help/forms/using/assets/customfunction.zip) carpeta. AEM Descargue e instale esta carpeta en su instancia de.
+Puede hacer referencia a la carpeta [función personalizada](/help/forms/using/assets/customfunction.zip) siguiente. AEM Descargue e instale esta carpeta en su instancia de.
 
 Ahora puede utilizar la función personalizada en el formulario adaptable agregando la biblioteca de cliente.
 
@@ -261,14 +261,14 @@ Una vez que haya implementado la biblioteca de cliente en el entorno de Forms CS
 1. Abra el formulario en modo de edición. Para abrir un formulario en modo de edición, seleccione un formulario y seleccione **[!UICONTROL Editar]**.
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía. Se abre el cuadro de diálogo Contenedor de formulario adaptable.
-1. Abra el **[!UICONTROL Básico]** y seleccione el nombre de la **[!UICONTROL categoría de biblioteca de cliente]** en la lista desplegable (en este caso, seleccione `customfunctionscategory`).
+1. Abra la ficha **[!UICONTROL Básico]** y seleccione el nombre de la **[!UICONTROL categoría de biblioteca de cliente]** en la lista desplegable (en este caso, seleccione `customfunctionscategory`).
 
    ![Agregar la biblioteca de cliente de funciones personalizada](/help/forms/using//assets/custom-function-category-name-core-component.png)
 
-1. Clic **[!UICONTROL Listo]** .
+1. Haga clic en **[!UICONTROL Listo]** .
 
 Ahora puede crear una regla para utilizar funciones personalizadas en el editor de reglas:
 
 ![Agregar la biblioteca de cliente de funciones personalizada](/help/forms/using//assets/calculateage-customfunction.png)
 
-Ahora, vamos a comprender cómo configurar y utilizar una función personalizada mediante [Servicio Invocar del editor de reglas en AEM Forms](/help//forms/using/rule-editor.md).
+Ahora, vamos a entender cómo configurar y utilizar una función personalizada usando el servicio Invocar del [Editor de reglas en AEM Forms](/help//forms/using/rule-editor.md).

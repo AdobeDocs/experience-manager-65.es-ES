@@ -30,7 +30,7 @@ Por ejemplo, el catálogo de productos We.Retail incluye teasers que destacan lo
 
 Las actividades también identifican el [motor de segmentación](/help/sites-authoring/personalization.md#targeting-engine) que utilizan sus páginas.
 
-Utilice el [Consola Actividades](/help/sites-authoring/activitylib.md) para crear y administrar las actividades de sus marcas. También puede crear actividades a medida que [crea contenido de destino](/help/sites-authoring/content-targeting-touch.md).
+Use la [consola Actividades](/help/sites-authoring/activitylib.md) para crear y administrar las actividades de sus marcas. También puede crear actividades a medida que [crea contenido de destino](/help/sites-authoring/content-targeting-touch.md).
 
 ## Experiencias {#experiences}
 
@@ -40,7 +40,7 @@ AEM Las audiencias se basan en segmentos de marketing creados en o Adobe Target.
 
 Por ejemplo, una actividad define las experiencias para dos audiencias independientes: mujeres mayores de 30 años y mujeres menores de 30 años. La página para mujeres del sitio web de We.Retail muestra diferentes productos para cada experiencia.
 
-Las experiencias se definen para una actividad. Puede usar el complemento [Consola Actividades](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) o [Modo Targeting](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) para añadir experiencias a una actividad.
+Las experiencias se definen para una actividad. Puede usar la [consola Actividades](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) o el [modo de segmentación](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) para agregar experiencias a una actividad.
 
 ## Ofertas {#offers}
 
@@ -48,7 +48,7 @@ Una oferta es contenido que aparece en una ubicación de una página para una ex
 
 Por ejemplo, la página para mujeres del sitio web de muestra de We.Retail puede utilizar ofertas para la imagen de teaser que aparece en la parte superior de la página. Se utiliza una oferta diferente como teaser para la experiencia de mujeres mayores de 30 años y de mujeres menores de 30 años.
 
-Utilice el [Consola Ofertas](/help/sites-authoring/offerlib.md) para crear ofertas que se puedan usar en varias experiencias. Crear ofertas de un solo uso o agregar ofertas desde una biblioteca de ofertas cuando [creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md).
+Use la consola [Ofertas](/help/sites-authoring/offerlib.md) para crear ofertas que pueda usar en varias experiencias. Cree ofertas de un solo uso o agregue ofertas desde una biblioteca de ofertas al [crear contenido de destino](/help/sites-authoring/content-targeting-touch.md).
 
 ## Motor de segmentación {#targeting-engine}
 

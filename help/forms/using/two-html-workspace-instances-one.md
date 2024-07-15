@@ -19,12 +19,12 @@ ht-degree: 82%
 
 La instalación y configuración predeterminadas de AEM Forms permiten que solo haya un espacio de trabajo de AEM Forms disponible en el servidor. Sin embargo, es posible que necesite alojar dos instancias diferentes de AEM Forms Workspace en un único servidor de AEM Forms. Se puede acceder a las dos instancias desde direcciones URL diferentes.
 
-Los administradores de AEM Forms personalizan el espacio de trabajo para crear dos direcciones URL diferentes y hacer que dos espacios de trabajo estén disponibles en el mismo servidor. En este artículo de personalización, puede suponer que los dos espacios de trabajo son accesibles en `https://'[server]:[port]'/lc/ws` y `https://'[server]:[port]':/lc/ws2`.
+Los administradores de AEM Forms personalizan el espacio de trabajo para crear dos direcciones URL diferentes y hacer que dos espacios de trabajo estén disponibles en el mismo servidor. En este artículo de personalización, puede suponer que se puede acceder a los dos espacios de trabajo en `https://'[server]:[port]'/lc/ws` y `https://'[server]:[port]':/lc/ws2`.
 
 Siga estos pasos para configurar AEM Forms Workspace.
 
 1. Instale el paquete dev de AEM Forms Workspace en su servidor. Consulte el [paquete dev](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) para obtener instrucciones sobre cómo crearlo.
-1. Inicie sesión en CRXDE Lite como administrador al acceder a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Inicie sesión en el CRXDE Lite como administrador al obtener acceso a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copie el nodo ws en /content y pegue en /content. Cambie el nombre del nodo a ws2. Haga clic en **[!UICONTROL Guardar todo]**. En las propiedades de este nodo, cambie el valor de `sling:resourceType` a ws2. Haga clic en **[!UICONTROL Guardar todo]**.
 
 1. Copie la carpeta ws de /libs y péguela en /apps. Cambie el nombre de la carpeta a ws2. Haga clic en **[!UICONTROL Guardar todo]**.

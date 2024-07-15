@@ -18,13 +18,13 @@ ht-degree: 3%
 
 # Aspectos básicos de la administración de certificados y credenciales {#basics-of-managing-certificates-and-credentials}
 
-A *credencial* contiene la información de clave privada necesaria para firmar o identificar documentos. A *certificado* es información de clave pública que se configura para confianza. AEM Los formularios de datos utilizan certificados y credenciales para varios fines:
+Una *credencial* contiene la información de clave privada necesaria para firmar o identificar documentos. Un *certificado* es información de clave pública configurada para confianza. AEM Los formularios de datos utilizan certificados y credenciales para varios fines:
 
-* Las extensiones de Acrobat Reader DC utilizan una credencial para habilitar los derechos de uso de Adobe Reader en documentos de PDF. (Consulte [Configuración de credenciales para usarlas con extensiones de Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* Puede configurar Rights Management para que muestre las credenciales de uso en Acrobat únicamente de emisores de confianza. (Consulte [Configuración de visualización del Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) El nombre común (CN) debe estar presente en el certificado.
+* Las extensiones de Acrobat Reader DC utilizan una credencial para habilitar los derechos de uso de Adobe Reader en documentos de PDF. (Consulte [Configuración de credenciales para usarlas con extensiones de Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)).
+* Puede configurar Rights Management para que muestre las credenciales de uso en Acrobat únicamente de emisores de confianza. (Consulte [Configuración de la pantalla del Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) El nombre común (CN) debe estar presente en el certificado.
 * El servicio Signature accede a los certificados y credenciales. Para obtener más información sobre el servicio Signature, consulte [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_65).
 
-**Generación de una clave de par**
+**Generando una clave de par**
 
 AEM Forms utiliza su almacén de confianza para almacenar y administrar certificados, credenciales y listas de revocación de certificados (CRL). Además, puede utilizar un dispositivo HSM (Hardware Security Module) independiente para almacenar claves privadas.
 
@@ -45,7 +45,7 @@ AEM Se admiten los siguientes tipos de firma, que se pueden importar en formular
 * PKCS#1
 * Firmas DSA
 
-**Gestión de claves perdidas o comprometidas**
+**Control de clave perdida o comprometida**
 
 Si sospecha que la clave se ha perdido o se ha visto comprometida, realice las siguientes acciones:
 

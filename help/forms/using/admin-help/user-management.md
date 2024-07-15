@@ -20,11 +20,11 @@ ht-degree: 0%
 
 AEM La administración de usuarios permite habilitar el inicio de sesión único (SSO) entre módulos de formularios de y aplicaciones protegidas por Netegrity SiteMinder mediante el lenguaje de marcado de aserción de seguridad (SAML). AEM Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios de la no son necesarias y no se muestran si el usuario ya se ha autenticado a través del portal de la empresa.
 
-Para obtener información sobre cómo mejorar el rendimiento de sincronización de directorios y bases de datos para DB2, consulte [Base de datos IBM DB2: Ejecución de comandos para el mantenimiento regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Para obtener información acerca de cómo mejorar el rendimiento de sincronización de directorios y bases de datos para DB2, vea [Base de datos IBM DB2: Ejecutar comandos para el mantenimiento regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
 ## Configuración de la administración de usuarios para un servidor LDAP habilitado para SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-Si tiene un servidor LDAP habilitado para SSL, configure Administración de usuarios para que funcione con él. (Consulte [Configuración de la administración de usuarios para un servidor LDAP habilitado para SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+Si tiene un servidor LDAP habilitado para SSL, configure Administración de usuarios para que funcione con él. (Consulte [Configurar la administración de usuarios para un servidor LDAP habilitado para SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)).
 
 ## Configurar privilegios de usuario para utilizarlos con Document Security {#setting-user-privileges-for-use-with-document-security}
 
@@ -50,7 +50,7 @@ AEM Después de instalar y configurar el entorno de formularios de la con Docume
 
 ## Restricciones de usuario de administrador {#administrator-user-restrictions}
 
-Los usuarios con determinados tipos de privilegios de administrador no pueden acceder a las páginas web de los usuarios finales de Workspace por motivos de seguridad. Dado que estas páginas web pueden existir fuera de un firewall, permitir tareas de nivel de administración podría suponer un riesgo para la seguridad. Solo los usuarios que tengan privilegios de administrador de Workspace o usuario de Workspace pueden acceder a las páginas web del usuario final.
+Los usuarios con ciertos tipos de privilegios de administrador no pueden acceder a las páginas web del usuario final de Workspace por motivos de seguridad. Dado que estas páginas web pueden existir fuera de un firewall, permitir tareas de nivel de administración podría suponer un riesgo para la seguridad. Solo los usuarios que tienen privilegios de administrador de Workspace o de usuario de Workspace pueden acceder a las páginas web del usuario final.
 
 >[!NOTE]
 >

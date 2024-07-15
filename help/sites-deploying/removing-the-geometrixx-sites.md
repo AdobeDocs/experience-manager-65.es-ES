@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Eliminación de los sitios de Geometrixx{#removing-the-geometrixx-sites}
 
-AEM viene con un conjunto de sitios web de Geometrixx de ejemplo. Puede eliminar este contenido de muestra mediante la variable **Administrador de paquetes**.
+AEM viene con un conjunto de sitios web de Geometrixx de ejemplo. Puede quitar este contenido de muestra mediante el **Administrador de paquetes**.
 
 Los paquetes individuales relacionados con geometrixx son:
 
@@ -28,13 +28,13 @@ Los paquetes individuales relacionados con geometrixx son:
 * `cq-geometrixx-commons-pkg-<version>.zip`
 * `cq-geometrixx-media-pkg-<version>.zip`
 
-Para eliminar un paquete individual, haga clic en **Desinstalar** en ese paquete.
+Para quitar un paquete individual, simplemente haga clic en **Desinstalar** en ese paquete.
 
 También hay un súper paquete:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Este paquete incluye todos los paquetes individuales anteriores. Para eliminar todo el contenido relacionado con geometrixx a la vez, haga clic en **Desinstalar** en este paquete. El superpaquete pasa al estado desinstalado y todos los paquetes individuales desaparecen de la vista del Administrador de paquetes.
+Este paquete incluye todos los paquetes individuales anteriores. Para quitar todo el contenido relacionado con geometrixx a la vez, haz clic en **Desinstalar** en este paquete. El superpaquete pasa al estado desinstalado y todos los paquetes individuales desaparecen de la vista del Administrador de paquetes.
 
 AEM Ahora tiene una instancia de &quot;vaciado&quot; sin ningún sitio de demostración.
 

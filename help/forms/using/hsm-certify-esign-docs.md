@@ -23,12 +23,12 @@ Los módulos de seguridad de hardware (HSM) y los tokens electrónicos son dispo
 Adobe Experience Manager Forms puede utilizar las credenciales almacenadas en un HSM o un token electrónico para firmar electrónicamente o aplicar firmas digitales del lado del servidor a un documento. Para utilizar un dispositivo HSM o de token electrónico con AEM Forms:
 
 1. [Habilitar el servicio DocAssurance](#configuredocassurance).
-1. [AEM Cree un alias para el dispositivo HSM o de token electrónico en la consola web de la](#configuredeviceinaemconsole).
-1. [Utilice las API del servicio DocAssurance para firmar o certificar los documentos con las claves digitales almacenadas en el dispositivo](#programatically).
+1. AEM [Cree un alias para el dispositivo HSM o de token electrónico en la consola web de la](#configuredeviceinaemconsole).
+1. [Use las API del servicio DocAssurance para firmar o certificar los documentos con las claves digitales almacenadas en el dispositivo](#programatically).
 
 ## Antes de configurar los dispositivos HSM o de token electrónico con AEM Forms {#configurehsmetoken}
 
-* Instale el [Complemento de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) paquete.
+* Instale el paquete [complemento de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html).
 * AEM Instale y configure el software cliente de HSM o de token electrónico en el mismo equipo que el servidor de la red de distribución de datos (). El software cliente es necesario para comunicarse con los dispositivos HSM y los dispositivos de token electrónico.
 
 ## Habilitar el servicio DocAssurance {#configuredocassurance}
@@ -37,7 +37,7 @@ El servicio DocAssurance no está habilitado de forma predeterminada. Siga los s
 
 1. Detenga la instancia de autor del entorno de AEM Forms.
 
-1. Abra el [AEM raízDe]Archivo \crx-quickstart\conf\sling.properties para editar.
+1. AEM Abra el archivo [_root]\crx-quickstart\conf\sling.properties que desea editar.
 
    >[!NOTE]
    >
@@ -99,7 +99,7 @@ Perform the following steps to setup certificates:
 
 El alias contiene todos los parámetros que requiere un HSM o un token electrónico. Siga las instrucciones que se indican a continuación para crear un alias para cada credencial HSM o de token electrónico que utilice para realizar firmas electrónicas o firmas digitales:
 
-1. AEM Abra la consola de. AEM La dirección URL predeterminada de la consola de es https://&lt;host>:&lt;port>/system/console/configMgr
+1. AEM Abra la consola de. AEM La dirección URL predeterminada de la consola de es https://&lt;host>:&lt;port>/system/console/configMgr.
 1. Abra el **Servicio de configuración de credenciales de HSM** y especifique los valores de los siguientes campos:
 
    * **Alias de credencial**: especifique una cadena utilizada para identificar el alias. Este valor se utiliza como propiedad en algunas operaciones de firmas digitales, como la operación Firmar campo de firma.
@@ -111,7 +111,7 @@ El alias contiene todos los parámetros que requiere un HSM o un token electrón
    >
    >Al configurar el token electrónico, especifique un valor numérico para el campo ID de ranura HSM. Se requiere un valor numérico para que las operaciones de Firmas funcionen.
 
-   * **Certificado SHA1**: especifique el valor SHA1 (huella digital) del archivo de clave pública (.cer) para las credenciales que está utilizando. Asegúrese de que no haya espacios utilizados en el valor SHA1.
+   * **Certificado SHA1**: especifique el valor SHA1 (huella digital) del archivo de clave pública (.cer) de las credenciales que está utilizando. Asegúrese de que no haya espacios utilizados en el valor SHA1.
    * **Tipo de dispositivo HSM**: seleccione el fabricante del dispositivo HSM (Luna u otro) o del token electrónico.
 
    Haga clic en **Guardar**. El módulo de seguridad de hardware está configurado para AEM Forms. Ahora puede utilizar el módulo de seguridad de hardware con AEM Forms para firmar o certificar documentos.

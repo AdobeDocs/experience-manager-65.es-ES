@@ -23,7 +23,7 @@ ht-degree: 85%
 
 La comunicación interactiva es el método predeterminado y recomendado para crear comunicaciones con los clientes en AEM Forms 6.5. Para seguir utilizando cartas en AEM Forms 6.5, debe instalar el último [Paquete de compatibilidad de AEMFD](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html).
 
-El Paquete de compatibilidad de AEMFD también le permite [utilice los siguientes recursos de AEM Forms 6.4, 6.3 y 6.2 en AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+El paquete de compatibilidad de AEMFD también le permite [usar los siguientes recursos de AEM Forms 6.4, 6.3 y 6.2 en AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Fragmentos de documento
 * Cartas

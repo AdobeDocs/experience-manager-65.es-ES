@@ -119,8 +119,8 @@ Haga lo siguiente para registrar un cliente de OAuth en el equipo de los Servici
 
 La configuración del **servicio en la nube de OData de MS Dynamics (servicio OData)** viene con las opciones de configuración predeterminadas de OData. Para configurarlo para que se conecte con el servicio de Microsoft Dynamics, siga los siguientes pasos.
 
-1. Vaya a **[!UICONTROL Herramientas > Cloud Service > Fuentes de datos]** y seleccione la opción `global` carpeta de configuración.
-1. Seleccionar **CLOUD SERVICE OData de MS Dynamics (servicio OData)** y seleccione **[!UICONTROL Propiedades]**. Se abre el cuadro de diálogo de las propiedades de configuración del servicio en la nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Service > Fuentes de datos]** y seleccione la carpeta de configuración `global`.
+1. Seleccione la configuración **Cloud Service OData de MS Dynamics (servicio OData)** y seleccione **[!UICONTROL Propiedades]**. Se abre el cuadro de diálogo de las propiedades de configuración del servicio en la nube.
 
    En la pestaña **Configuración de autenticación**:
 

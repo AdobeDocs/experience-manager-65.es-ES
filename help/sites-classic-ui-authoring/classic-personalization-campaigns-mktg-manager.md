@@ -38,7 +38,7 @@ Se divide en cuatro paneles:
 
    * [Listas](#lists)
 Este panel muestra las listas que ya ha creado, junto con el número de posibles clientes de esa lista. Desde este panel puede crear una lista directamente o importar posibles clientes para crear una lista.
-Si selecciona una lista específica, accederá al [Listas](#lists) sección que muestra los detalles de la lista.
+Si selecciona una lista específica, accederá a la sección [Lists](#lists), que muestra los detalles de la lista.
 
    * [Segmentos](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
 Este panel muestra los segmentos que ha definido. Los segmentos le permiten caracterizar una colección de visitantes que comparten determinadas características.
@@ -49,20 +49,20 @@ AEM proporciona diferentes informes para ayudarle a analizar y monitorizar el es
 Al seleccionar un informe, se abre la página del informe.
 
    * [Campañas](#campaigns)
-Este panel enumera las experiencias de campaña como [boletines](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) y [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
+En este panel se enumeran las experiencias de campaña, como [boletines](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) y [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
 * **[Posibles clientes](#leads)**
-Aquí puede administrar sus posibles clientes. Puede crear o importar posibles clientes, editar detalles específicos para posibles clientes o eliminarlos cuando ya no los necesite. También puede colocar posibles clientes en diferentes grupos, denominados Listas. **Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
-La recomendación es utilizar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
+Aquí puede administrar sus posibles clientes. Puede crear o importar posibles clientes, editar detalles específicos para posibles clientes o eliminarlos cuando ya no los necesite. También puede colocar posibles clientes en diferentes grupos, denominados Listas. **Nota:** el Adobe no planea mejorar más esta capacidad.
+Se recomienda usar [Adobe Campaign AEM y la integración con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
 
 * **[Listas](#lists)**
-Aquí puede administrar sus listas (de posibles clientes).**Nota:** El Adobe no tiene previsto seguir mejorando esta capacidad.
-La recomendación es utilizar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
+Aquí puede administrar sus listas (de posibles clientes).**Nota:** el Adobe no planea mejorar más esta capacidad.
+Se recomienda usar [Adobe Campaign AEM y la integración con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
 
 * **[Campañas](#campaigns)**
 Aquí puede administrar sus marcas, campañas y experiencias.
 
-## Panel {#dashboard}
+## Panel de control {#dashboard}
 
 El tablero muestra cuatro paneles que le proporcionan una visión general de sus listas (de posibles clientes), segmentos, informes y campañas. El acceso a la funcionalidad básica para estos también está disponible aquí.
 
@@ -73,15 +73,15 @@ El tablero muestra cuatro paneles que le proporcionan una visión general de sus
 >[!NOTE]
 >
 >El Adobe no tiene previsto seguir mejorando esta capacidad (gestión de posibles clientes).
->La recomendación es utilizar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
+>Se recomienda usar [Adobe Campaign AEM y la integración con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
 
 AEM En MCM, puede organizar y agregar posibles clientes introduciéndolos manualmente o importando una lista separada por comas; por ejemplo, una lista de correo. Otras formas de generar posibles clientes son las suscripciones a boletines informativos o las suscripciones a la comunidad (si se configuran, pueden almacenar en déclencheur un flujo de trabajo que rellena los posibles clientes). Los posibles clientes suelen clasificarse y colocarse en una lista para que posteriormente pueda realizar acciones en toda la lista; por ejemplo, enviar un correo electrónico personalizado a una lista determinada.
 
-En **Posibles clientes** en el panel izquierdo puede crear, importar, editar y eliminar sus posibles clientes, y luego activarlos o desactivarlos según sea necesario. Puede agregar un posible cliente a una lista o ver a qué listas pertenece.
+En **Posibles clientes**, en el panel izquierdo, puede crear, importar, editar y eliminar sus posibles clientes y, a continuación, activarlos o desactivarlos según sea necesario. Puede agregar un posible cliente a una lista o ver a qué listas pertenece.
 
 >[!NOTE]
 >
->Consulte [Uso de posibles clientes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads) para obtener información detallada sobre tareas específicas.
+>Consulte [Trabajar con posibles clientes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads) para obtener información detallada sobre tareas específicas.
 
 ![screen_shot_2012-02-21at114748am-1](assets/screen_shot_2012-02-21at114748am-1.png)
 
@@ -90,15 +90,15 @@ En **Posibles clientes** en el panel izquierdo puede crear, importar, editar y e
 >[!NOTE]
 >
 >El Adobe no tiene previsto mejorar esta capacidad (administración de listas).
->La recomendación es utilizar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
+>Se recomienda usar [Adobe Campaign AEM y la integración con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
 
 Las listas permiten organizar los posibles clientes en grupos. Con las listas, puede dirigir sus campañas de marketing a un grupo selecto de personas; por ejemplo, puede enviar una newsletter segmentada a una lista.
 
-En **Listas**, puede administrar las listas creando, importando, editando, combinando y eliminando listas que puede activar o desactivar según sea necesario. También puede ver los posibles clientes dentro de esa lista, ver si la lista es miembro de otra lista o ver la descripción.
+En **Listas**, puede administrar sus listas creando, importando, editando, combinando y eliminando listas que puede activar o desactivar según sea necesario. También puede ver los posibles clientes dentro de esa lista, ver si la lista es miembro de otra lista o ver la descripción.
 
 >[!NOTE]
 >
->Consulte [Uso de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) para obtener información detallada sobre tareas específicas.
+>Consulte [Trabajar con listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) para obtener información detallada sobre tareas específicas.
 
 ![screen_shot_2012-02-21at124828pm-1](assets/screen_shot_2012-02-21at124828pm-1.png)
 
@@ -106,16 +106,18 @@ En **Listas**, puede administrar las listas creando, importando, editando, combi
 
 >[!NOTE]
 >
->Consulte [Teasers and Strategies](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists), [Configuración de la campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupyourcampaign) y [Newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) para obtener información detallada sobre tareas específicas.
+>Consulte [Teasers and Strategies](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists), [Configuración de la campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupyourcampaign) y [Newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) para obtener información detallada acerca de tareas específicas.
 
 Para acceder a las campañas existentes, en el MCM, haga clic en **Campañas**.
 
 ![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
-* **En el panel izquierdo**: Hay una lista de todas las marcas y campañas.
+* **En el panel izquierdo**:
+Hay una lista de todas las marcas y campañas.
 Al hacer clic en una marca, se expande la lista para mostrar todas las campañas relacionadas en el panel izquierdo; esta lista también muestra el número de experiencias que existen para cada campaña. También abre la descripción general de la marca en el panel derecho.
 
-* **En el panel derecho**: se muestran los iconos de cada marca (no se mostrarán las campañas históricas).
+* **En el panel derecho**:
+Se muestran los iconos de cada marca (no se mostrarán las campañas históricas).
 Puede hacer doble clic en estas opciones para abrir la descripción general de la marca.
 
 #### Información general de marca {#brand-overview}
@@ -125,13 +127,13 @@ Puede hacer doble clic en estas opciones para abrir la descripción general de l
 Desde aquí puede hacer lo siguiente:
 
 * Consulte el número de campañas y experiencias (el número se muestra en el panel izquierdo) que existen para esta marca.
-* Crear un **Nuevo...** campaña para esta marca.
+* Crear una campaña **Nueva...** para esta marca.
 
-* Cambie el intervalo de tiempo que se está viendo; seleccione **Semana**, **Mes** o **Trimestre**, utilice las flechas para seleccionar periodos específicos o volver a **Hoy**.
+* Cambie el intervalo de tiempo que se está viendo; seleccione **Semana**, **Mes** o **Trimestre**, use las flechas para seleccionar periodos específicos o vuelva a **Hoy**.
 
 * Seleccione una campaña (en el panel derecho) para lo siguiente:
 
-   * Edite el **Propiedades...**
+   * Editar las **propiedades...**
    * **Eliminar** la campaña.
 
 * Abra la información general de la campaña (haga doble clic en una campaña en el panel derecho o haga clic en el panel izquierdo).
@@ -154,9 +156,9 @@ Para las campañas individuales hay dos vistas disponibles:
 
    * Cambie el intervalo de tiempo que está viendo mediante las flechas o vuelva a **Hoy**.
 
-   * Uso **Agregar Touchpoint...** para añadir un nuevo punto de contacto para una experiencia existente.
+   * Use **Agregar punto de contacto...** para agregar un nuevo punto de contacto para una experiencia existente.
 
-   * Haga clic en un teaser (en el panel derecho) para establecer el **Tiempo de activación** y **Tiempo de inactividad**.
+   * Haga clic en un teaser (en el panel derecho) para establecer **Tiempo de activación** y **Tiempo de inactividad**.
 
 1. **Vista de lista**
 
@@ -170,17 +172,17 @@ Para las campañas individuales hay dos vistas disponibles:
 
    Desde aquí puede hacer lo siguiente:
 
-   * Crear un **Nuevo...** experiencia; por ejemplo, ofertas, teasers y boletines de Adobe Target.
-   * **Editar** los detalles de una página teaser o newsletter específicos (también se puede utilizar un doble clic).
-   * Defina el **Propiedades...** para una página teaser o newsletter específicos.
+   * Crear una experiencia **Nueva...**; por ejemplo, ofertas, teasers y boletines de Adobe Target.
+   * **Editar** los detalles de una página teaser o newsletter específica (también se puede usar un doble clic).
+   * Defina las **propiedades...** para una página de teaser o newsletter específica.
    * **Simular** el aspecto de una experiencia (página teaser o newsletter).
 Cuando se abra la página simulada, puede abrir la barra de tareas para cambiar al modo de edición de esa página.
 
    * **Analizar...** las impresiones generadas para una página.
 
    * **Eliminar** elementos cuando ya no sean necesarios.
-   * **Buscar** para el texto (se busca el campo Title de la experiencia).
-   * Uso **Avanzadas** buscar para aplicar filtros a la búsqueda.
+   * **Busque** su texto (se buscará en el campo Título de la experiencia).
+   * Use la búsqueda **avanzada** para aplicar filtros a la búsqueda.
 
 ### Simulación de las experiencias de Campaign {#simulating-your-campaign-experiences}
 

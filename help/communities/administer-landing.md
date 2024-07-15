@@ -31,7 +31,7 @@ Para obtener información general y tutoriales de introducción, visite:
 
 ### Creación y administración de sitios de comunidades {#communities-site-creation-and-management}
 
-* Communities [consolas](consoles.md)
+* Comunidades [consolas](consoles.md)
 
    * [Sites](sites-console.md)
 
@@ -41,7 +41,7 @@ Para obtener información general y tutoriales de introducción, visite:
    * [Administración de miembros y grupos](members.md)
    * [Informes](reports.md)
 
-* Communities [*herramientas*](tools.md):
+* Comunidades [*herramientas*](tools.md):
 
    * [Plantillas de sitios](sites.md)
    * [Plantillas de grupo](tools-groups.md)
@@ -55,24 +55,24 @@ Para obtener información general y tutoriales de introducción, visite:
 
 Una característica principal de AEM Communities es la generación de contenido generado por el usuario (UGC) por parte de los visitantes del sitio (miembros) que han iniciado sesión. Para obtener más información sobre cómo trabajar con UGC, visite:
 
-* [Almacén UGC común](working-with-srp.md): elección del SRP para el almacenamiento compartido de UGC
-* [Moderar UGC](moderate-ugc.md): los miembros de confianza pueden moderar el CGU de forma masiva o en contexto
-* [Etiquetado de UGC](tag-ugc.md): se pueden configurar funciones para permitir a los miembros etiquetar contenido
-* [Traducción de UGC](translate-ugc.md): las funciones se pueden configurar para traducir todos los UGC o permitir que los miembros traduzcan las publicaciones seleccionadas
-* [Configuración de Analytics](analytics.md): permite que Adobe Analytics informe sobre distintas métricas relativas a la actividad de los miembros
+* [Almacén UGC común](working-with-srp.md): opción de SRP para almacenamiento compartido de UGC
+* [Moderar UGC](moderate-ugc.md): los miembros de confianza pueden moderar UGC de forma masiva o en contexto
+* [Etiquetado de UGC](tag-ugc.md): las características se pueden configurar para permitir a los miembros etiquetar contenido
+* [Traducción de UGC](translate-ugc.md): las características pueden configurarse para traducir todos los UGC o permitir que los miembros traduzcan las publicaciones seleccionadas
+* [Configuración de Analytics](analytics.md): permitir que Adobe Analytics informe sobre distintas métricas relativas a la actividad de los miembros
 
 ### Miembros de la comunidad {#community-members}
 
 * [Administración de usuarios y grupos de usuarios](users.md): detalles de miembros de la comunidad y grupos de miembros, incluidos los miembros privilegiados.
-* [Límites de contribución](limits.md): capacidad para restringir los mensajes de los nuevos miembros.
-* [Servicio de túnel](deploy-communities.md#tunnel-service-on-author): permite acceder a los miembros y grupos de miembros del lado de publicación desde el entorno de creación.
+* [Límites de contribución](limits.md): capacidad para restringir la publicación de nuevos miembros.
+* [Servicio de túnel](deploy-communities.md#tunnel-service-on-author): permite el acceso a los miembros y grupos de miembros del lado de publicación desde el entorno de creación.
 * [Consolas de miembros y grupos](members.md): permite crear y administrar miembros y grupos de miembros del lado de publicación desde el entorno de creación.
 * [Sincronización de usuarios](sync.md): para sincronizar miembros y grupos de miembros en varias instancias de publicación.
-* [Social Inicie sesión con Facebook y Twitter](social-login.md): capacidad para que los visitantes del sitio se conviertan en miembros de la comunidad mediante sus credenciales de Facebook o Twitter.
-* [Puntuación y distintivos](implementing-scoring.md): capacidad para asignar insignias a fin de identificar las funciones de un miembro y para que los miembros obtengan insignias mediante su participación en la comunidad.
-* [Notificaciones](notifications.md): capacidad para que los miembros reciban notificaciones de la actividad que siguen.
-* [Suscripciones](subscriptions.md): capacidad de los miembros para interactuar con la comunidad mediante correo electrónico externo.
-* [Mensajes](messaging.md): capacidad de los miembros para interactuar con la comunidad mediante mensajes internos.
+* [Iniciar sesión en medios sociales con Facebook y el Twitter](social-login.md): permite que los visitantes del sitio se conviertan en miembros de la comunidad con sus credenciales de Facebook o Twitter.
+* [Puntuación e insignias](implementing-scoring.md): capacidad para que se asignen insignias a fin de identificar las funciones de un miembro y para que los miembros obtengan insignias mediante su participación en la comunidad.
+* [Notificaciones](notifications.md): capacidad para que se notifique a los miembros la actividad que siguen.
+* [Suscripciones](subscriptions.md): capacidad para que los miembros interactúen con la comunidad mediante correo electrónico externo.
+* [Mensajería](messaging.md): capacidad para que los miembros interactúen con la comunidad mediante mensajes internos.
 
 ### Implementación {#deployment}
 
@@ -86,12 +86,12 @@ AEM Es importante instalar la versión más reciente de Communities en la plataf
 
 * [Último paquete de funciones de Communities](deploy-communities.md#latestfeaturepack)
 
-Consulte la página de implementación para obtener otra información específica de las comunidades, como para [Actualización](upgrade.md), [Dispatcher](dispatcher.md), y [Replicación](deploy-communities.md#replication-agents-on-author).
+Consulte la página de implementación para obtener información específica de otras comunidades, como [Actualización](upgrade.md), [Dispatcher](dispatcher.md) y [Replicación](deploy-communities.md#replication-agents-on-author).
 
 ## Documentación de comunidades relacionadas {#related-communities-documentation}
 
-* Visita [Implementación de comunidades](deploy-communities.md) donde puede obtener más información sobre las implementaciones recomendadas.
+* Visite [Implementación de comunidades](deploy-communities.md), donde podrá obtener información sobre las implementaciones recomendadas.
 
-* Visita [Desarrollo de comunidades](communities.md) donde puede obtener información sobre el marco de trabajo de componentes sociales (SCF) y la personalización de los componentes y las funciones de las Comunidades.
+* Visite [Desarrollo de comunidades](communities.md), donde podrá obtener información acerca del marco de componentes sociales (SCF) y la personalización de componentes y características de las comunidades.
 
-* Visita [Componentes de comunidades de creación](author-communities.md) donde puede aprender a crear y configurar componentes de Communities.
+* Visite [Creación de componentes de comunidades](author-communities.md), donde aprenderá a crear y configurar componentes de comunidades.

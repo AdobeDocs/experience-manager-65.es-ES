@@ -21,10 +21,10 @@ ht-degree: 14%
 
 Adobe Experience Manager AEM () permite configurar la cuenta y ciertos elementos del entorno de creación.
 
-Uso del [configuración de cuenta](#account-settings) y [preferencias de usuario](#user-preferences) se pueden definir las siguientes opciones y preferencias:
+Si usa la [configuración de cuenta](#account-settings) y las [preferencias de usuario](#user-preferences), se pueden definir las siguientes opciones y preferencias:
 
-* **Barra de edición**
-Seleccione si desea tener la barra de herramientas de edición global. Esta barra de herramientas, que se muestra en la parte superior de la ventana del explorador, le proporciona lo siguiente **Copiar**, **Cortar**, **Pegar**, **Eliminar** botones para usar con los componentes de párrafo en esa página:
+* **Barra de herramientas de edición**
+Seleccione si desea tener la barra de herramientas de edición global. Esta barra de herramientas, que se muestra en la parte superior de la ventana del explorador, le proporciona los botones **Copiar**, **Cortar**, **Pegar**, **Eliminar** para usarlos con los componentes de párrafo de esa página:
 
    * Mostrar si es necesario (predeterminado)
    * Mostrar siempre
@@ -36,11 +36,13 @@ La funcionalidad de [Suplantar como](/help/sites-administering/security.md#imper
 * **Idioma**
 El idioma que se utilizará para la interfaz de usuario del entorno de creación. Seleccione el idioma requerido de la lista disponible.
 
-* **Gestión de ventanas**
+* **Administración de ventanas**
 Seleccione una de estas opciones:
 
-   * Se abren varias páginas de Windows (predeterminado) en una nueva ventana.
-   * Las páginas de una sola ventana se abren en la ventana actual.
+   * Varias ventanas (predeterminado)
+Las páginas se abren en una nueva ventana.
+   * Ventana única
+Las páginas se abren en la ventana actual.
 
 ## Configuración de la cuenta {#account-settings}
 
@@ -55,7 +57,7 @@ El icono de usuario le permite acceder a las siguientes opciones:
 
 ### Preferencias de usuario {#user-preferences}
 
-Cada usuario puede establecer determinadas propiedades por sí mismo. Esta opción está disponible en **Preferencias** en la esquina superior derecha de las consolas.
+Cada usuario puede establecer determinadas propiedades por sí mismo. Esto está disponible en el cuadro de diálogo **Preferencias** en la esquina superior derecha de las consolas.
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 

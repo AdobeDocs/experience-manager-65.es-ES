@@ -22,7 +22,7 @@ ht-degree: 76%
 
 Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Las etiquetas pueden considerarse como palabras clave o etiquetas que se pueden adjuntar a una página, un recurso o cualquier otro contenido para que con las búsquedas se encuentre ese contenido y el relacionado.
 
-* Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre cómo crear y administrar etiquetas, y a qué etiquetas de contenido se han aplicado.
+* Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre cómo crear y administrar etiquetas y a qué etiquetas de contenido se han aplicado.
 * Consulte [Etiquetado para desarrolladores](/help/sites-developing/tags.md) para obtener información sobre el marco de trabajo de etiquetado, así como la forma de incluir y ampliar las etiquetas en aplicaciones personalizadas.
 
 ## Diez motivos para utilizar etiquetas {#ten-reasons-to-use-tagging}
@@ -44,7 +44,7 @@ A la hora de diseñar la estructura de contenido para un sitio y el esquema de m
 
 En el entorno de creación, los creadores pueden aplicar etiquetas si acceden a las propiedades de página e introducen una o varias etiquetas en el campo **Etiquetas y palabras clave**.
 
-Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en el **Propiedades de página** ventana use el **Etiquetas** y el **Seleccionar etiquetas** ventana. El **Etiquetas estándar** tab es el área de nombres predeterminada, lo que significa que no hay `namespace-string:` con el prefijo de taxonomía.
+Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en la ventana **Propiedades de página**, use el campo **Etiquetas** y la ventana **Seleccionar etiquetas**. La ficha **Etiquetas estándar** es el espacio de nombres predeterminado, lo que significa que no hay `namespace-string:` con el prefijo de la taxonomía.
 
 ![Ventana Seleccionar etiquetas; utilice el botón X para anular la selección de las etiquetas seleccionadas actualmente](assets/chlimage_1-41.png)
 

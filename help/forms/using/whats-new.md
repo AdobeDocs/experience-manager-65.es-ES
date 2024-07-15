@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## Qué se incluye en Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
 
-Experience Manager 6.5.19.0 incluye nuevas funciones, mejoras clave solicitadas por los clientes, correcciones de errores y otras de rendimiento, estabilidad y seguridad que se han publicado desde la publicación inicial de la versión 6.5 en abril de 2019. [Instalar este Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es) en el Experience Manager 6.5.
+Experience Manager 6.5.19.0 incluye nuevas funciones, mejoras clave solicitadas por los clientes, correcciones de errores y otras de rendimiento, estabilidad y seguridad que se han publicado desde la publicación inicial de la versión 6.5 en abril de 2019. [Instale este Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es) en Experience Manager 6.5.
 
 ### Nuevas funciones
 
@@ -33,25 +33,25 @@ Experience Manager 6.5.19.0 incluye nuevas funciones, mejoras clave solicitadas 
 
 Se agregan pestañas verticales, Términos y condiciones y Casilla de verificación para mejorar la escalabilidad de los formularios.
 
-* **[Componente Casilla](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: el Forms adaptable basado en componentes principales ahora puede incluir un componente de casilla de verificación. Permite a los usuarios realizar elecciones binarias, seleccionando o anulando la selección de una opción en particular. Normalmente aparece como un pequeño cuadro en el que se puede hacer clic o pulsar para alternar entre dos estados: activado y desactivado. La casilla de verificación es un elemento de formulario común que se utiliza para presentar una opción sí/no o verdadero/falso.
+* **[Componente de casilla de verificación](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: los Forms adaptables basados en componentes principales ahora pueden incluir un componente de casilla de verificación. Permite a los usuarios realizar elecciones binarias, seleccionando o anulando la selección de una opción en particular. Normalmente aparece como un pequeño cuadro en el que se puede hacer clic o pulsar para alternar entre dos estados: activado y desactivado. La casilla de verificación es un elemento de formulario común que se utiliza para presentar una opción sí/no o verdadero/falso.
 
-* **[Componente Términos y condiciones](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: Forms adaptable basado en componentes principales ahora puede incluir un componente Términos y condiciones. Permite a los autores de formularios introducir una sección específica dentro del formulario en la que se presentan a los usuarios los términos, condiciones o acuerdos legales asociados al uso de un servicio, producto o plataforma. Este componente está diseñado para informar a los usuarios sobre las reglas, regulaciones y obligaciones que aceptan enviando el formulario.
+* **[Componente Términos y condiciones](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: el Forms adaptable basado en componentes principales ahora puede incluir un componente Términos y condiciones. Permite a los autores de formularios introducir una sección específica dentro del formulario en la que se presentan a los usuarios los términos, condiciones o acuerdos legales asociados al uso de un servicio, producto o plataforma. Este componente está diseñado para informar a los usuarios sobre las reglas, regulaciones y obligaciones que aceptan enviando el formulario.
 
-  ![Pestañas verticales, términos y condiciones y componentes de casilla de verificación](/help/forms/using/assets/forms-components.png)
+  ![Fichas verticales, términos y condiciones y componentes de casilla de verificación](/help/forms/using/assets/forms-components.png)
 
-* **[Componente de pestañas verticales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: Forms adaptable basado en componentes principales ahora puede organizar el contenido del formulario en una lista vertical de pestañas, lo que proporciona un diseño estructurado y navegable. El uso de pestañas verticales en un formulario puede mejorar la experiencia general del usuario al simplificar la navegación y mejorar la organización del contenido del formulario, especialmente en situaciones en que un formulario contiene varias secciones o información compleja.
+* **[Componente de pestañas verticales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: los Forms adaptables basados en componentes principales ahora pueden organizar el contenido del formulario en una lista vertical de pestañas, lo que proporciona un diseño estructurado y navegable. El uso de pestañas verticales en un formulario puede mejorar la experiencia general del usuario al simplificar la navegación y mejorar la organización del contenido del formulario, especialmente en situaciones en que un formulario contiene varias secciones o información compleja.
 
 #### Versión de 64 bits de AEM Forms Designer
 
-El [Versión de 64 bits de AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) ofrece rendimiento, escalabilidad y administración de memoria mejorados para potenciar su experiencia de creación de formularios. Con la arquitectura de 64 bits, puede abordar proyectos aún más grandes y complejos con facilidad, lo que garantiza flujos de trabajo de diseño sin problemas y eficiencia optimizada. Aumente sus capacidades de diseño de formularios y disfrute del futuro de AEM Forms Designer con esta versión de vanguardia.
+La [versión de 64 bits de AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) ofrece un rendimiento, una escalabilidad y una administración de memoria mejorados para potenciar su experiencia de creación de formularios. Con la arquitectura de 64 bits, puede abordar proyectos aún más grandes y complejos con facilidad, lo que garantiza flujos de trabajo de diseño sin problemas y eficiencia optimizada. Aumente sus capacidades de diseño de formularios y disfrute del futuro de AEM Forms Designer con esta versión de vanguardia.
 
 #### Conectar un Forms adaptable con Microsoft® SharePoint List
 
-AEM Forms proporciona una integración predeterminada para lo siguiente [enviar datos de formulario directamente a la lista de SharePoint](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), lo que le permite utilizar las funciones de Listas de SharePoint. Puede configurar la lista de Microsoft® SharePoint como fuente de datos para un modelo de datos de formulario y utilizar la acción de envío Enviar mediante el modelo de datos de formulario para conectar un formulario adaptable con una lista de SharePoint.
+AEM Forms proporciona una integración predeterminada para [enviar datos de formularios directamente a la SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), lo que le permite utilizar las capacidades de Listas de SharePoint. Puede configurar la lista de Microsoft® SharePoint como fuente de datos para un modelo de datos de formulario y utilizar la acción de envío Enviar mediante el modelo de datos de formulario para conectar un formulario adaptable con una lista de SharePoint.
 
 #### Compatibilidad para configurar las propiedades del documento de registro para los fragmentos de formulario adaptable
 
-Ahora puede [personalizar los fragmentos del formulario adaptable y sus campos en el editor de formularios adaptables](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+Ahora puede [personalizar fácilmente sus fragmentos de formulario adaptable y sus campos en el editor de formularios adaptables](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
 #### Incluye la versión de 64 bits de XMLFM
 
@@ -66,7 +66,7 @@ La versión también incluye correcciones para más de 20 problemas notificados 
 
 ## Instalación del Service Pack
 
-El Service Pack ofrece nuevas funciones y correcciones de errores tanto para AEM Forms en JEE como para AEM Forms en OSGi. Las instrucciones de instalación tienen cambios en comparación con los Service Packs anteriores. Para obtener instrucciones de instalación, consulte [instrucciones de instalación del Service Pack de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+El Service Pack ofrece nuevas funciones y correcciones de errores tanto para AEM Forms en JEE como para AEM Forms en OSGi. Las instrucciones de instalación tienen cambios en comparación con los Service Pack anteriores. Para obtener instrucciones de instalación, consulte [Instrucciones de instalación de Service Pack de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
 
 
 

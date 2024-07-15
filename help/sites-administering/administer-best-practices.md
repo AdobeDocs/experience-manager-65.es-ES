@@ -22,7 +22,7 @@ AEM Las prácticas recomendadas describen cómo desarrollar, administrar o utili
 
 Las siguientes áreas tienen documentación disponible sobre las prácticas recomendadas:
 
-* [Assets](#assets)
+* [Recursos](#assets)
 * [Sites](#sites)
 
 Para conocer las prácticas recomendadas sobre la creación, la implementación, el mantenimiento o el desarrollo, consulte una de las siguientes opciones:
@@ -33,9 +33,9 @@ Para conocer las prácticas recomendadas sobre la creación, la implementación,
 
 En las tablas siguientes se describen y vinculan documentos específicos.
 
-## Assets {#assets}
+## Recursos {#assets}
 
-Las prácticas recomendadas en Assets, incluidas la funcionalidad Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
+Las prácticas recomendadas en Assets, incluidas la capacidad Dynamic Media y la integración Dynamic Media Classic, se describen en los siguientes temas:
 
 <table>
  <tbody>
@@ -56,8 +56,8 @@ Las prácticas recomendadas en Assets, incluidas la funcionalidad Dynamic Media 
   </tr>
   <tr>
    <td>Opciones de ajustes preestablecidos de imagen</td>
-   <td>Comprensión <a href="/help/assets/managing-image-presets.md#understanding-image-presets">ajustes preestablecidos de imagen</a> y <a href="/help/assets/managing-image-presets.md#image-preset-options">prácticas recomendadas de ajustes preestablecidos de imagen</a></td>
-   <td>Como parte de la documentación de <a href="/help/assets/managing-image-presets.md">Administrar ajustes preestablecidos de imagen</a>, estos temas describen los ajustes preestablecidos de imagen y las prácticas recomendadas para seleccionar opciones de ajustes preestablecidos de imagen.</td>
+   <td>Comprender <a href="/help/assets/managing-image-presets.md#understanding-image-presets">ajustes preestablecidos de imagen</a> y <a href="/help/assets/managing-image-presets.md#image-preset-options">prácticas recomendadas de ajustes preestablecidos de imagen</a></td>
+   <td>Como parte de la documentación sobre <a href="/help/assets/managing-image-presets.md">Administración de ajustes preestablecidos de imagen</a>, estos temas describen cuáles son los ajustes preestablecidos de imagen y las prácticas recomendadas para seleccionar opciones de ajustes preestablecidos de imagen.</td>
   </tr>
   <tr>
    <td>Dynamic Media frente a la integración directa con Scene7</td>

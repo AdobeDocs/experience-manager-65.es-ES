@@ -21,18 +21,18 @@ ht-degree: 0%
 
 Para acceder a la consola de herramientas de Communities, inicie sesión en la instancia de autor:
 
-* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Communities]**.
+* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]**.
 
   ![comunidades](assets/communities-home.png)
 
-* [Plantillas de sitio](sites.md) : consola para la creación y administración de plantillas de sitio.
+* [Plantillas de sitio](sites.md): consola para la creación y administración de plantillas de sitio.
 
-* [Plantillas de grupo](tools-groups.md) : consola para la creación y administración de plantillas de grupo.
+* [Plantillas de grupo](tools-groups.md): consola para la creación y administración de plantillas de grupo.
 
-* [Funciones de comunidad](functions.md) : consola para la creación y administración de funciones de la comunidad.
+* [Funciones de la comunidad](functions.md): consola para la creación y administración de funciones de la comunidad.
 
 * [Configuración de almacenamiento](srp-config.md) - Consola para la configuración y selección del [SRP predeterminado](working-with-srp.md).
 
-* [Guía de componentes](components-guide.md) : abre un sitio interactivo que permite experimentar con cómo funcionan los componentes de SCF y cómo se pueden configurar o personalizar.
+* [Guía de componentes](components-guide.md): abre un sitio interactivo que permite experimentar cómo funcionan los componentes de SCF y cómo se pueden configurar o personalizar.
 
-* [Insignias](badges.md) : consola desde la que se pueden añadir insignias personalizadas para su uso en [reglas de puntuación e identificación](implementing-scoring.md)
+* [Insignias](badges.md) - Consola desde la que se pueden agregar insignias personalizadas para usarlas en [reglas de puntuación e insignias](implementing-scoring.md)

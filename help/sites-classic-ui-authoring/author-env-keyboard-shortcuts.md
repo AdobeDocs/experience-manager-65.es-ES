@@ -24,9 +24,9 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
 >
 >Selección múltiple en un dispositivo de escritorio:
 >
->* Windows: **Ctrl**+**click** en los componentes necesarios.
+>* Windows: **Ctrl**+**hacer clic** en los componentes necesarios.
 >
->* Mac: **Cmd**+**click** en los componentes necesarios.
+>* Mac: **Cmd**+**haga clic** en los componentes necesarios.
 >
 
 ## Métodos abreviados de teclado {#keyboard-shortcuts}
@@ -41,9 +41,9 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
   <tr>
    <td>Consola</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (en la página requerida)</td>
-   <td>Abrir página en una nueva ventana.<br /> <strong>Nota:</strong> está en funcionamiento si la variable <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propiedades del usuario</a> se establecen como Ventana única; si Varias ventanas, este es el comportamiento predeterminado.</td>
+   <td>Abrir página en una nueva ventana.<br /> <strong>Nota:</strong> esto está operativo si las <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propiedades de usuario</a> están configuradas como Ventana única; si Varias ventanas, este es el comportamiento predeterminado.</td>
   </tr>
  </tbody>
 </table>
 
-También hay varios métodos abreviados de teclado disponibles para los usuarios de escritorio que utilizan el [editor de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) a las páginas de autor.
+También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan el [editor de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para crear páginas.

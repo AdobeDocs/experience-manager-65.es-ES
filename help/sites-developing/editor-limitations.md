@@ -26,13 +26,13 @@ Un autor puede encontrar las siguientes limitaciones funcionales al utilizar el 
 
 ### Vínculos no activos {#links-not-active}
 
-Cuándo [edición de una página](/help/sites-authoring/editing-content.md), los vínculos no están activos.
+Al [editar una página](/help/sites-authoring/editing-content.md), los vínculos no están activos.
 
-* [Cambiar a **Previsualizar** modo](/help/sites-authoring/editing-content.md#preview-mode) para navegar mediante los vínculos del contenido.
+* [Cambie a **Vista previa** modo](/help/sites-authoring/editing-content.md#preview-mode) para navegar usando los vínculos de su contenido.
 
 ### Páginas de estructura {#structure-pages}
 
-Las páginas no pueden tener nombre `structure`. Páginas con nombre `structure` no se pueden editar en el editor de páginas.
+Las páginas no pueden tener el nombre `structure`. Las páginas con nombre `structure` no se pueden editar en el editor de páginas.
 
 ## Limitaciones de CSS {#css-limitations}
 
@@ -46,13 +46,13 @@ Los elementos con una posición absoluta pueden causar problemas en la posición
 
 ### Unidades vh {#vh-units}
 
-`vh` las unidades no son compatibles porque Adobe Experience Manager AEM (iFrame) debe ajustar automáticamente la altura de los iframes (iFrame) (o la altura de los iframes).
+No se admiten `vh` unidades porque Adobe Experience Manager AEM () debe ajustar automáticamente la altura del iframe.
 
 ### Imágenes de fondo fijas {#fixed-background-images}
 
 Es posible que las imágenes de fondo fijas no se muestren como fijas al desplazarse, ya que están incrustadas en un iframe.
 
-* Seleccionar **Ver página publicada** en las acciones de la barra de encabezado muestra la página correctamente.
+* Si selecciona **Ver página como publicada** en las acciones de la barra de encabezado, se mostrará la página correctamente.
 
 ### Altura al 100% {#height}
 

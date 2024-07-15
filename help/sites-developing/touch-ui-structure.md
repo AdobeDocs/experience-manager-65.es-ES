@@ -67,7 +67,7 @@ El carril izquierdo se puede abrir u ocultar según sea necesario para mostrar:
 
 * **Cronología**
 * **Referencias**
-* **Filtrar**
+* **Filtro**
 
 El valor predeterminado es **Solo contenido** (carril oculto).
 
@@ -79,7 +79,7 @@ Al crear páginas, las áreas estructurales son las siguientes.
 
 ### Marco de contenido {#content-frame}
 
-El contenido de la página se representa en el marco de contenido. El marco de contenido es independiente del editor para garantizar que no haya conflictos debidos a CSS o JavaScript.
+El contenido de la página se representa en el marco de contenido. El marco de contenido es independiente del editor para garantizar que no haya conflictos debido a CSS o JavaScript.
 
 El marco de contenido se encuentra en la sección derecha de la ventana, debajo de la barra de herramientas.
 
@@ -89,7 +89,7 @@ El marco de contenido se encuentra en la sección derecha de la ventana, debajo 
 
 El marco del editor realiza las funciones de edición.
 
-El marco del editor es un contenedor (abstracto) para todas las *elementos de creación de página*. Se encuentra sobre el marco de contenido e incluye:
+El marco del editor es un contenedor (abstracto) para todos los *elementos de creación de páginas*. Se encuentra sobre el marco de contenido e incluye:
 
 * la barra de herramientas superior
 * el panel lateral
@@ -106,9 +106,9 @@ El panel lateral está oculto de forma predeterminada. Cuando se selecciona, se 
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
-### Panel lateral: Recursos {#side-panel-assets}
+### Panel lateral: Assets {#side-panel-assets}
 
-En la pestaña Recursos puede seleccionar entre el rango de recursos. También puede filtrar por un término específico o seleccionar un grupo.
+En la pestaña Assets puede seleccionar entre los distintos recursos. También puede filtrar por un término específico o seleccionar un grupo.
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -126,7 +126,7 @@ En la pestaña Componentes, puede seleccionar entre el rango de componentes. Tam
 
 ### Superposiciones {#overlays}
 
-Se superponen al marco de contenido y los utiliza el [capas](#layer) para comprender la mecánica de cómo puede interactuar (de forma transparente) con los componentes y su contenido.
+Se superponen en el marco de contenido y las [capas](#layer) las utilizan para comprender la mecánica de cómo puede interactuar (de forma transparente) con los componentes y su contenido.
 
 Las superposiciones se encuentran en el marco del editor (con todos los demás elementos de creación de páginas), aunque en realidad se superponen a los componentes adecuados en el marco de contenido.
 
@@ -165,6 +165,6 @@ Según el espacio disponible, las barras de herramientas de los componentes se c
 
 ## Información adicional {#further-information}
 
-Para obtener más información sobre los conceptos relacionados con la IU táctil, lea [AEM Conceptos de la interfaz de usuario táctil con capacidad para el uso de la](/help/sites-developing/touch-ui-concepts.md).
+AEM Para obtener más información acerca de los conceptos relacionados con la IU táctil, lea [Conceptos de la IU táctil con capacidad de la interfaz de usuario con capacidad de la interfaz de usuario](/help/sites-developing/touch-ui-concepts.md).
 
-Para obtener más información técnica, consulte [Conjunto de documentación JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.
+Para obtener más información técnica, consulte [Conjunto de documentación de JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.

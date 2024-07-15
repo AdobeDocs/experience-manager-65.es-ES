@@ -31,14 +31,14 @@ AEM Antes de iniciar el proyecto de desarrollo de la, revise primero estas prác
 * [Problemas de código](/help/sites-developing/code-pitfalls.md)
 * [Interacción JCR](/help/sites-developing/jcr-integration.md)
 * [Paquetes OSGi](/help/sites-developing/osgi-bundles.md)
-* [Prácticas recomendadas de API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Prácticas recomendadas para la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Información adicional sobre prácticas recomendadas {#additional-best-practices-information}
 
 Las siguientes áreas tienen documentación disponible específica para el desarrollo de prácticas recomendadas:
 
 * [Sites](#sites)
-* [Communities](/help/sites-developing/best-practices.md#communities)
+* [Comunidades](/help/sites-developing/best-practices.md#communities)
 * [Herramientas/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
 En las tablas siguientes se describen y vinculan documentos específicos.
@@ -78,7 +78,7 @@ La administración y creación del contenido del sitio web tiene algunas prácti
  </tbody>
 </table>
 
-## Communities {#communities}
+## Comunidades {#communities}
 
 [AEM Communities](/help/communities/overview.md) simplifica la creación y administración de comunidades locales.
 
@@ -86,7 +86,7 @@ Algunas prácticas recomendadas para las comunidades se describen aquí:
 
 |  |  |  |
 |---|---|---|
-| Prácticas recomendadas para trabajar con contenido generado por el usuario (UGC) | [Directrices de codificación](/help/communities/code-guide.md) | Directrices para desarrollar código flexible y portátil para [marco de componentes sociales](/help/communities/scf.md) (SCF). |
+| Prácticas recomendadas para trabajar con contenido generado por el usuario (UGC) | [Directrices de codificación](/help/communities/code-guide.md) | Directrices para desarrollar código flexible y portátil para el [marco de trabajo de componentes sociales](/help/communities/scf.md) (SCF). |
 | Ejemplo de uso de componentes de Communities | [Guía de componentes de la comunidad](/help/communities/components-guide.md) | Una herramienta de desarrollo interactiva. |
 
 ## Herramientas/HTL {#tooling-htl}
@@ -95,7 +95,7 @@ El lenguaje de plantilla de HTML (HTL) es un nuevo sistema de plantillas de HTML
 
 |  |  |  |
 |---|---|---|
-| Información general sobre HTL | [Información general y sintaxis de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) | Este documento describe qué es HTL, cómo pasar a HTL, un proyecto de ejemplo, sintaxis, expresiones e instrucciones |
+| Información general sobre HTL | [Resumen y sintaxis de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) | Este documento describe qué es HTL, cómo pasar a HTL, un proyecto de ejemplo, sintaxis, expresiones e instrucciones |
 | Uso de la API en Java | [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | La API de uso de Java de HTL permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada. |
 
 >[!NOTE]

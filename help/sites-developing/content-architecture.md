@@ -24,13 +24,13 @@ El Modelo de David fue escrito por David Nuescheler hace años, pero las ideas s
 
 * Los datos van primero, la estructura después. Tal vez.
 * Impulse la jerarquía de contenido, no permita que ocurra.
-* Los espacios de trabajo son para `clone()`, `merge()`, y `update()`.
+* Los espacios de trabajo son para `clone()`, `merge()` y `update()`.
 * Tenga cuidado con los hermanos del mismo nombre.
 * Las referencias se consideran perjudiciales.
 * Los archivos son archivos.
 * Los identificadores son malvados.
 
-David&#39;s Model se puede encontrar en la wiki de Jackrabbit en [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+El modelo de David se encuentra en la wiki de Jackrabbit en [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Todo está contenido {#everything-is-content}
 

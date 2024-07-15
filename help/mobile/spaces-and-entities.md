@@ -31,23 +31,23 @@ Un espacio es una ubicación conveniente para almacenar entidades que se exponen
 
 Si el usuario desea exponer un conjunto de contenido y recursos a una aplicación móvil, crea el espacio mediante el tablero de AEM Mobile.
 
-Por primera vez, un usuario de que no ha configurado los servicios de contenido para trabajar con espacios, el panel de AEM Mobile solo muestra las aplicaciones después de seleccionar **Servicios de contenido**.
+Por primera vez un usuario que no ha configurado los servicios de contenido para trabajar con espacios, el panel de AEM Mobile solo muestra las aplicaciones después de seleccionar **Servicios de contenido**.
 
 >[!CAUTION]
 >
->**Requisitos previos para añadir un espacio**
+>**Requisitos previos para agregar un espacio**
 >
->Compruebe la **AEM Habilitar servicios de contenido** para trabajar con Spaces y habilitarlo en el panel de aplicaciones de AEM Mobile.
+>AEM Marque **Habilitar servicios de contenido de** para trabajar con espacios y habilitarlo en el panel de aplicaciones de AEM Mobile.
 >
 >Consulte [Administración de servicios de contenido](/help/mobile/developing-content-services.md) para obtener más información.
 
 Una vez configurados los espacios en el panel, siga estos pasos para crear espacios:
 
-1. Elegir **Espacios** de Content Services.
+1. Elija **espacios** en los servicios de contenido.
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-1. Elegir **Crear** para crear un espacio. Entrar **Título**, **Nombre**, y **Descripción** para el espacio.
+1. Elija **Crear** para crear un espacio. Escriba **Título**, **Nombre** y **Descripción** para el espacio.
 
    Haga clic en **Crear**.
 
@@ -61,20 +61,20 @@ AEM Puede ver las propiedades del espacio, eliminarlo o publicar el espacio y su
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
-**Visualización y Edición de Propiedades de un Espacio**
+**Propiedades de visualización y edición de un espacio**
 
 1. Seleccione el espacio de la lista
-1. Elegir **Propiedades** en la barra de herramientas
-1. Clic **Cerrar** cuando termine
+1. Elija **Propiedades** en la barra de herramientas
+1. Haga clic en **Cerrar** cuando haya terminado
 
-**Publicación de un espacio** Cuando se publica un espacio, también se publican todas las carpetas y entidades de ese espacio.
+**Publicar un espacio** Cuando se publica un espacio, también se publican todas las carpetas y entidades de ese espacio.
 
 1. Seleccione el espacio haciendo clic en su icono en la lista de la consola de espacio
-1. Elegir **Publicar árbol**
+1. Elegir **árbol de Publish**
 
 >[!NOTE]
 >
->Puede **Cancelar publicación** un espacio, que elimina el espacio de la instancia de publicación.
+>Puede **Cancelar la publicación** de un espacio, lo cual elimina el espacio de la instancia de publicación.
 >
 >La siguiente imagen ilustra las acciones que se pueden realizar, después de publicar el espacio.
 
@@ -86,23 +86,23 @@ Los espacios pueden incluir carpetas para ayudar a organizar aún más el conten
 
 ### Creación de una carpeta {#creating-a-folder}
 
-1. Haga clic en el espacio de la lista de la consola del espacio y haga clic en **Crear carpeta**
+1. Haga clic en el espacio de la lista en la consola del espacio y haga clic en **Crear carpeta**
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
-1. Introduzca el **Título**, **Nombre,** y **Descripción** para la carpeta
+1. Escriba **Title**, **Name,** y **Description** para la carpeta
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Clic **Crear** para crear la carpeta en un espacio
+1. Haga clic en **Crear** para crear la carpeta en un espacio
 
-## Copiar idioma {#language-copy}
+## Copia de idioma {#language-copy}
 
 >[!CAUTION]
 >
 >La copia de idioma no es completamente funcional para esta versión. Solo configura la estructura.
 
-El **Copia de idioma** Esta función permite a los autores copiar su copia de idioma principal y luego crear un proyecto y un flujo de trabajo para traducir automáticamente el contenido. La copia de idioma crea la estructura correcta. Una vez añadida una carpeta en un espacio, puede añadir Copia de idioma al espacio.
+La característica **Copia de idioma** permite a los autores copiar su copia de idioma principal y luego crear un proyecto y un flujo de trabajo para traducir automáticamente el contenido. La copia de idioma crea la estructura correcta. Una vez añadida una carpeta en un espacio, puede añadir Copia de idioma al espacio.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ El **Copia de idioma** Esta función permite a los autores copiar su copia de id
 
 1. Una vez creado el espacio, haga clic en él para crear una copia de idioma.
 
-   Clic **Crear** y elija **Copia de idioma**.
+   Haga clic en **Crear** y elija **Copia de idioma**.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
@@ -120,24 +120,24 @@ El **Copia de idioma** Esta función permite a los autores copiar su copia de id
    >
    >Los nodos de copia de idioma sólo pueden existir como secundarios directos del espacio.
 
-1. Elegir **Idioma del paquete de contenido&amp;ast;** e introduzca la variable **Título&amp;ast;** in **Crear copia de idioma** diálogo.
+1. Elija **Idioma del paquete de contenido&amp;ast;** e introduzca el **Título&amp;ast;** en el cuadro de diálogo **Crear copia de idioma**.
 
    Haga clic en **Crear**.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Una vez creada una copia de idioma, aparece en su espacio en **Maestros de idiomas**.
+1. Una vez creada una copia de idioma, aparecerá en su espacio en **Idioma principal**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    >[!NOTE]
    >
-   >Seleccionar **Maestros de idiomas** para ver las carpetas de copia de idioma.
+   >Seleccione **Maestros de idioma** para ver las carpetas de copia de idioma.
 
 ### Eliminación de una carpeta del espacio {#removing-a-folder-from-the-space}
 
 1. Seleccione la carpeta de la lista de contenido de espacio
-1. Clic **Eliminar** en la barra de herramientas
+1. Haga clic en **Eliminar** en la barra de herramientas
 
    >[!NOTE]
    >
@@ -169,11 +169,11 @@ Si se recopilan elementos secundarios de entidad, que son otras entidades, para 
 
    >[!NOTE]
    >
-   >Tiene la opción de elegir la variable **Modelo de recursos**, **Modelo de páginas** o un modelo del tipo de entidad que creó anteriormente.
+   >Tiene la opción de elegir el **Modelo Assets**, el **Modelo de páginas** o un modelo del tipo de entidad que creó anteriormente.
    >
-   >Consulte [Creación de un modelo](/help/mobile/administer-mobile-apps.md), para crear la entidad personalizada.
+   >Consulte [Creación de un modelo](/help/mobile/administer-mobile-apps.md) para crear su entidad personalizada.
 
-1. Introduzca una **Título**, **Nombre**, **Descripción**, y **Etiquetas** para la entidad. Haga clic en **Crear**.
+1. Escriba un **Título**, **Nombre**, **Descripción** y **Etiquetas** para la entidad. Haga clic en **Crear**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -193,31 +193,31 @@ Si se recopilan elementos secundarios de entidad, que son otras entidades, para 
    >
    >Según la plantilla que elija para crear la entidad, la interfaz de usuario será diferente para ambos, para editar y ver las propiedades de la entidad. Consulte los pasos a continuación para obtener más información.
 
-   ***Si elige la plantilla para crear la entidad como modelos de recursos***, haciendo clic en **Editar** permite agregar recursos como se muestra en la figura siguiente:
+   ***Si elige la plantilla para crear la entidad como modelos de Assets***, al hacer clic en **Editar** podrá agregar recursos como se muestra en la figura siguiente:
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
-   También puede hacer clic en **Previsualizar** para ver el vínculo json.
+   También puede hacer clic en **Vista previa** para ver el vínculo json.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-   ***Si elige la plantilla para crear la entidad como modelos de páginas***, haciendo clic en **Editar** permite agregar recursos como se muestra en la figura siguiente:
+   ***Si elige la plantilla para crear la entidad como modelos de páginas***, al hacer clic en **Editar** podrá agregar recursos como se muestra en la figura siguiente:
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-   Haga clic en el icono de la **Ruta** para agregar un recurso
+   Haga clic en el icono en **Ruta** para agregar un recurso
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
    >[!NOTE]
    >
-   >Una vez añadida una entidad, debe guardarse para que funcione el vínculo Vista previa. Para ver la vista previa, haga clic en **Guardar**. Haciendo clic en **Previsualizar** muestra el json del recurso agregado, como se muestra en la figura siguiente:
+   >Una vez añadida una entidad, debe guardarse para que funcione el vínculo Vista previa. Para ver la vista previa, haz clic en **Guardar**. Al hacer clic en **Vista previa** se muestra el json del recurso agregado, como se muestra en la figura siguiente:
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
    >[!NOTE]
    >
-   >Cuando haya terminado de agregar recursos a la entidad, puede elegir **Guardar** para guardar los cambios o elija **Guardar y cerrar** para guardar y redirigir a la lista de la consola de Space donde se definen las entidades.
+   >Cuando haya terminado de agregar recursos a su entidad, puede elegir **Guardar** para guardar los cambios o elegir **Guardar y cerrar** para guardar y redirigir a la lista de la consola de Space donde se definen las entidades.
 
    Además, seleccione una entidad de la lista de la consola de espacio y haga clic en **Propiedades** para ver y editar las propiedades de una entidad definida.
 
@@ -233,16 +233,16 @@ Si se recopilan elementos secundarios de entidad, que son otras entidades, para 
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Clic **Eliminar** en la barra de herramientas para eliminar la entidad específica del espacio
+1. Haga clic en **Eliminar** en la barra de herramientas para eliminar la entidad específica del espacio
 
 ### Publicación de una entidad {#publishing-an-entity}
 
-Tiene la opción de elegir **Publicar árbol** o **Publicación rápida** para publicar la entidad.
+Tiene la opción de elegir **Publish Tree** o **Quick Publish** para publicar su entidad.
 
-1. Seleccione una entidad de la lista de la consola de espacio y haga clic en **Publicar árbol **para publicar esa entidad y sus hijos.
+1. Seleccione una entidad de la lista de la consola de espacio y haga clic en **Árbol de Publish **para publicar esa entidad y sus hijos.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **O**,
 
-   Clic **Publicación rápida** para publicar esa entidad específica.
+   Haga clic en **Quick Publish** para publicar esa entidad específica.

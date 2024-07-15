@@ -21,11 +21,11 @@ ht-degree: 40%
 
 Los flujos de trabajo de proyecto disponibles de forma predeterminada incluyen lo siguiente:
 
-* **Flujo de trabajo de aprobación** : Este flujo de trabajo permite asignar contenido a un usuario, revisarlo y aprobarlo.
+* **Flujo de trabajo de aprobación del proyecto**: este flujo de trabajo le permite asignar contenido a un usuario, revisarlo y aprobarlo.
 * **Solicitar lanzamiento**: un flujo de trabajo solicita un lanzamiento.
 * **Solicitar página de aterrizaje**: este flujo de trabajo solicita una página de aterrizaje.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.
-* **Sesión fotográfica del producto y Sesión fotográfica del producto (Commerce)** - Asigna recursos a productos
+* **Sesión fotográfica del producto y Sesión fotográfica del producto (Commerce)**: asigna recursos con productos
 * **Crear y traducir copia DAM y crear copia de idioma DAM**: crea archivos binarios, metadatos y etiquetas traducidos para archivos y carpetas.
 
 Según la plantilla Proyecto que seleccione, tendrá a su disposición determinados flujos de trabajo:
@@ -44,7 +44,7 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 
 >[!NOTE]
 >
->&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para los recursos.](/help/sites-administering/tc-manage.md)
+>&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para Assets.](/help/sites-administering/tc-manage.md)
 
 Los pasos para iniciar y completar flujos de trabajo son los mismos independientemente del flujo de trabajo que se elija. Solo cambian los pasos.
 
@@ -62,76 +62,76 @@ En esta sección se describen los flujos de trabajo disponibles para Proyectos.
 
 Este flujo de trabajo permite solicitar un manuscrito a un usuario y aprobarlo. Para iniciar el flujo de trabajo de copia de solicitud:
 
-1. En un proyecto multimedia, haga clic en las comillas angulares descendentes en la parte superior derecha de la etiqueta **Flujos de trabajo** mosaico y selección **Iniciar flujo de trabajo**.
-1. En el asistente de flujo de trabajo seleccione **Solicitar copia** y haga clic en **Siguiente**.
+1. En un proyecto multimedia, haga clic en las comillas angulares hacia abajo en la parte superior derecha del mosaico **Flujos de trabajo** y seleccione **Iniciar flujo de trabajo**.
+1. En el asistente del flujo de trabajo, seleccione **Solicitar copia** y haga clic en **Siguiente**.
 1. Escriba un título de manuscrito y un breve resumen de lo que está solicitando. Si procede, introduzca un recuento de palabras objetivo, una prioridad de tarea y una fecha de vencimiento.
 
-   ![Flujo de trabajo Solicitar copia](assets/project-request-copy-workflow.png)
+   ![Flujo de trabajo de solicitud de copia](assets/project-request-copy-workflow.png)
 
 1. Haga clic en **Enviar**.
 
-Se inicia el flujo de trabajo. La tarea aparece en la **Tareas** Tarjeta de.
+Se inicia el flujo de trabajo. La tarea aparece en la tarjeta **Tareas**.
 
 ## Flujo de trabajo de sesión fotográfica del producto {#product-photo-shoot-workflow}
 
-El **Sesión fotográfica del producto** los flujos de trabajo (tanto comerciales como sin comercio) se tratan en detalle en el documento [Proyectos creativos](/help/sites-authoring/managing-product-information.md)
+Los flujos de trabajo de la **sesión fotográfica del producto** (tanto comerciales como sin comerciales) se tratan en detalle en el documento [Proyectos creativos](/help/sites-authoring/managing-product-information.md)
 
 ## Flujo de trabajo de aprobación del proyecto {#project-approval-workflow}
 
-En el **Aprobación del proyecto** flujo de trabajo, se asigna contenido a un usuario, se revisa y se aprueba el contenido.
+En el flujo de trabajo **Aprobación del proyecto**, asigna contenido a un usuario, lo revisa y lo aprueba.
 
-1. En un proyecto sencillo, haga clic en las comillas angulares descendentes en la parte superior derecha de la barra de herramientas **Flujos de trabajo** mosaico y selección **Iniciar flujo de trabajo**.
-1. En el asistente de flujo de trabajo seleccione **Flujo de trabajo de aprobación** y haga clic en **Siguiente**.
+1. En un proyecto sencillo, haga clic en las comillas angulares hacia abajo en la parte superior derecha del mosaico **Flujos de trabajo** y seleccione **Iniciar flujo de trabajo**.
+1. En el asistente del flujo de trabajo, seleccione **Flujo de trabajo de aprobación del proyecto** y haga clic en **Siguiente**.
 1. Introduzca un título y seleccione a quién asignarlo. Si procede, introduzca una descripción, una ruta de contenido, una prioridad de tarea y una fecha de vencimiento.
 
    ![Flujo de trabajo de aprobación del proyecto](assets/project-approval-workflow.png)
 
 1. Haga clic en **Enviar**.
 
-Se inicia el flujo de trabajo. La tarea aparece en la **Tareas** Tarjeta de.
+Se inicia el flujo de trabajo. La tarea aparece en la tarjeta **Tareas**.
 
 ## Solicitar flujo de trabajo de lanzamiento {#request-launch-workflow}
 
 Este flujo de trabajo permite solicitar un lanzamiento.
 
-1. En un proyecto sencillo, haga clic en las comillas angulares descendentes en la parte superior derecha de la barra de herramientas **Flujos de trabajo** mosaico y selección **Iniciar flujo de trabajo**.
-1. En el asistente de flujo de trabajo seleccione **Solicitar flujo de trabajo de lanzamiento** y haga clic en **Siguiente**.
+1. En un proyecto sencillo, haga clic en las comillas angulares hacia abajo en la parte superior derecha del mosaico **Flujos de trabajo** y seleccione **Iniciar flujo de trabajo**.
+1. En el asistente del flujo de trabajo, seleccione **Solicitar flujo de trabajo de inicio** y haga clic en **Siguiente**.
 1. Escriba un título para el lanzamiento y proporcione la ruta de origen del lanzamiento. También puede añadir una descripción y la fecha de lanzamiento, si procede. Seleccione Heredar datos en directo de la página de origen o excluir páginas secundarias según cómo desea que se comporte el lanzamiento.
 
-   ![Solicitar flujo de trabajo de lanzamiento](assets/project-request-launch-workflow.png)
+   ![Solicitar flujo de trabajo para el inicio](assets/project-request-launch-workflow.png)
 
 1. Haga clic en **Enviar**.
 
-Se inicia el flujo de trabajo. El flujo de trabajo aparece en la **Flujos de trabajo** lista.
+Se inicia el flujo de trabajo. El flujo de trabajo aparece en la lista **Workflows**.
 
 ## Solicitar flujo de trabajo de página de aterrizaje {#request-landing-page-workflow}
 
 Este flujo de trabajo le permite solicitar una página de aterrizaje.
 
-1. En un proyecto sencillo, haga clic en las comillas angulares descendentes en la parte superior derecha de la barra de herramientas **Flujos de trabajo** mosaico y selección **Iniciar flujo de trabajo**.
-1. En el asistente de flujo de trabajo seleccione **Solicitar página de aterrizaje** y haga clic en **Siguiente**.
+1. En un proyecto sencillo, haga clic en las comillas angulares hacia abajo en la parte superior derecha del mosaico **Flujos de trabajo** y seleccione **Iniciar flujo de trabajo**.
+1. En el asistente del flujo de trabajo, seleccione **Solicitar página de aterrizaje** y haga clic en **Siguiente**.
 1. Escriba un título para la página de aterrizaje y la ruta principal. Si procede, introduzca una fecha de lanzamiento o elija un archivo para la página de aterrizaje.
 
    ![Solicitar flujo de trabajo de página de aterrizaje](assets/project-request-landing-page-workflow.png)
 
 1. Haga clic en **Enviar**.
 
-Se inicia el flujo de trabajo. La tarea aparece en la **Tareas** Tarjeta de.
+Se inicia el flujo de trabajo. La tarea aparece en la tarjeta **Tareas**.
 
 ## Solicitar flujo de trabajo de correo electrónico {#request-email-workflow}
 
-Este flujo de trabajo le permite solicitar un correo electrónico. Es el mismo flujo de trabajo que aparece en la variable **Correos electrónicos** mosaico.
+Este flujo de trabajo le permite solicitar un correo electrónico. Es el mismo flujo de trabajo que aparece en el mosaico **Correos electrónicos**.
 
-1. En un proyecto sencillo, haga clic en las comillas angulares descendentes en la parte superior derecha de la barra de herramientas **Flujos de trabajo** mosaico y selección **Iniciar flujo de trabajo**.
-1. En el asistente de flujo de trabajo seleccione **Solicitar correo electrónico** y haga clic en **Siguiente**.
+1. En un proyecto sencillo, haga clic en las comillas angulares hacia abajo en la parte superior derecha del mosaico **Flujos de trabajo** y seleccione **Iniciar flujo de trabajo**.
+1. En el asistente del flujo de trabajo, seleccione **Solicitar correo electrónico** y haga clic en **Siguiente**.
 1. Introduzca un título de correo electrónico y las rutas de campaña y plantilla. Además, puede proporcionar un nombre, una descripción y una fecha de lanzamiento.
 
    ![Solicitar flujo de trabajo de correo electrónico](assets/project-request-email-workflow.png)
 
 1. Haga clic en **Enviar**.
 
-Se inicia el flujo de trabajo. La tarea aparece en la **Tareas** Tarjeta de.
+Se inicia el flujo de trabajo. La tarea aparece en la tarjeta **Tareas**.
 
 ## Crear (y traducir) el flujo de trabajo de copia de idioma de los activos {#create-and-translate-language-copy-workflow-for-assets}
 
-El **Crear copia de idioma** y el **Crear y traducir copia de idioma** los flujos de trabajo se tratan en detalle en el documento [Creación de copias de idioma para los recursos.](/help/assets/translation-projects.md)
+Los flujos de trabajo **Crear copia de idioma** y **Crear y traducir copia de idioma** se tratan en detalle en el documento [Creación de copias de idioma para Assets.](/help/assets/translation-projects.md)

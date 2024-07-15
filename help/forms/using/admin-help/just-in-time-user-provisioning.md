@@ -30,9 +30,9 @@ Así es como funciona la autenticación tradicional:
 
    **Existe:** Si el usuario está actualizado y desbloqueado, Administración de usuarios devuelve la autenticación correcta. Sin embargo, si el usuario no está actualizado o bloqueado, Administración de usuarios devolverá un error de autenticación.
 
-   **No existe:** Administración de usuarios devuelve un error de autenticación.
+   **No existe:** La administración de usuarios devuelve un error de autenticación.
 
-   **No válido:** Administración de usuarios devuelve un error de autenticación.
+   **No válido:** La administración de usuarios devuelve un error de autenticación.
 
 1. Se evalúa el resultado devuelto por el proveedor de autenticación. Si el proveedor de autenticación devolvió la autenticación correctamente, el usuario podrá iniciar sesión. De lo contrario, Administración de usuarios consulta con el siguiente proveedor de autenticación (pasos 2-3).
 1. Se devuelve un error de autenticación si ningún proveedor de autenticación disponible valida las credenciales del usuario.
@@ -82,8 +82,8 @@ public Boolean assign(User user);
 
 ### Consideraciones al crear un dominio habilitado para justo a tiempo {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* Al crear un personalizado `IdentityCreator` para un dominio híbrido, asegúrese de especificar una contraseña ficticia para el usuario local. No deje este campo de contraseña vacío.
-* Recomendación: uso `DomainSpecificAuthentication` para validar las credenciales de usuario con un dominio específico.
+* Al crear un(a) `IdentityCreator` personalizado para un dominio híbrido, asegúrese de especificar una contraseña ficticia para el usuario local. No deje este campo de contraseña vacío.
+* Recomendación: utilice `DomainSpecificAuthentication` para validar las credenciales de usuario con un dominio específico.
 
 ### Crear un dominio habilitado para justo a tiempo {#create-a-just-in-time-enabled-domain}
 
@@ -101,12 +101,12 @@ public Boolean assign(User user);
 
 AEM Supongamos que un usuario está intentando iniciar sesión en formularios y que un proveedor de autenticación acepta sus credenciales de usuario. Si el usuario aún no existe en la base de datos de administración de usuarios, se produce un error en la comprobación de identidad del usuario. AEM Ahora, los formularios de realizan las siguientes acciones:
 
-1. Crear un `UserProvisioningBO` con los datos de autenticación y colóquelo en un mapa de credenciales.
-1. Según la información de dominio devuelta por `UserProvisioningBO`, recupere e invoque el registrado `IdentityCreator` y `AssignmentProvider` para el dominio.
-1. Invocar `IdentityCreator`. Si devuelve un `AuthResponse`, extracto `UserInfo` desde el mapa de credenciales. Páselo a la `AssignmentProvider` para la asignación de grupos/funciones y cualquier otro posprocesamiento después de crear el usuario.
+1. Cree un objeto `UserProvisioningBO` con los datos de autenticación y colóquelo en un mapa de credenciales.
+1. Según la información de dominio devuelta por `UserProvisioningBO`, recupere e invoque los dominios registrados `IdentityCreator` y `AssignmentProvider` para el dominio.
+1. Invocar `IdentityCreator`. Si devuelve un `AuthResponse` correcto, extraiga `UserInfo` del mapa de credenciales. Páselo a `AssignmentProvider` para la asignación de grupos/funciones y cualquier otro procesamiento posterior después de crear el usuario.
 1. Si el usuario se ha creado correctamente, indique que el intento de inicio de sesión del usuario se ha realizado correctamente.
 1. En el caso de los dominios híbridos, extraiga la información del usuario de los datos de autenticación proporcionados al proveedor de autenticación. Si esta información se obtiene correctamente, cree el usuario sobre la marcha.
 
 >[!NOTE]
 >
->La función de aprovisionamiento justo a tiempo se envía con una implementación predeterminada de `IdentityCreator` que puede utilizar para crear usuarios de forma dinámica. Los usuarios se crean con la información asociada a los directorios del dominio.
+>La característica de aprovisionamiento Just-In-Time se distribuye con una implementación predeterminada de `IdentityCreator` que puede utilizar para crear usuarios de forma dinámica. Los usuarios se crean con la información asociada a los directorios del dominio.

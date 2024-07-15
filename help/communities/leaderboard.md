@@ -20,9 +20,9 @@ ht-degree: 4%
 
 Esta página proporciona información esencial para trabajar con la función de clasificación.
 
-Antes de incluir el componente de tabla de posiciones en una página, es necesario configurar [Puntuación y distintivos de comunidades](implementing-scoring.md).
+Antes de incluir el componente de tabla de clasificación en una página, es necesario configurar [insignias y puntuación de comunidades](implementing-scoring.md).
 
-Consulte [Elementos esenciales de puntuación e insignias](configure-scoring.md).
+Ver [Aspectos básicos de puntuación e insignias](configure-scoring.md).
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
@@ -41,7 +41,7 @@ Consulte [Elementos esenciales de puntuación e insignias](configure-scoring.md)
    <td>cq.social.gamification.hbs.leaderboard</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td> /libs/social/gamification/components/hbs/leaderboard/leaderboard.hbs<br /> </td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ Consulte [Elementos esenciales de puntuación e insignias](configure-scoring.md)
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="enabling-leaderboard.md">Función de clasificación</a></td>
+   <td>Ver <a href="enabling-leaderboard.md">Característica de tabla de posiciones</a></td>
   </tr>
  </tbody>
 </table>
@@ -59,4 +59,4 @@ Consulte [Elementos esenciales de puntuación e insignias](configure-scoring.md)
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de la comunidad que incluye [Función de clasificación](functions.md#leaderboard-function), incluye un configurado `leaderboard` componente.
+Una estructura de sitio de la comunidad que incluye la función [Tabla de posiciones](functions.md#leaderboard-function), incluye un componente `leaderboard` configurado.

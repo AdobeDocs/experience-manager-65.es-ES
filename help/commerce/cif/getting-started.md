@@ -19,7 +19,7 @@ AEM Para empezar a usar Contenido de la y Commerce AEM, debe instalar el complem
 
 ## Requisito mínimo de software
 
-[AEM Paquete de servicio de.5](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) Se requiere 7 o posterior.
+AEM Se requiere [Paquete de servicio 6.5](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) 7 o posterior.
 
 ## Incorporación {#onboarding}
 
@@ -31,7 +31,7 @@ AEM La incorporación de Contenido de la y Commerce es un proceso de dos pasos:
 
 ### AEM Instalación del complemento Contenido de la y Commerce AEM para la versión 6.5 de la versión {#install-add-on}
 
-AEM Descargue e instale el complemento de Commerce AEM para la versión 6.5 de desde el [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) portal.
+AEM Descargue e instale el complemento de Commerce AEM para la versión 6.5 de desde el portal de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
 
 AEM Inicie e instale el paquete de servicio necesario de 6.5 de. Se recomienda instalar el último Service Pack disponible.
 
@@ -45,17 +45,17 @@ AEM Se puede conectar a cualquier sistema de comercio que tenga un punto final d
 
 CIF Opcionalmente, se puede proporcionar un encabezado de autenticación para utilizar funciones de autenticación adicionales que requieran autenticación.
 
-Proyectos generados por el [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype), y el [AEM Tienda de referencia de Venia en](https://github.com/adobe/aem-cif-guides-venia) que ya se incluye en la [configuración predeterminada](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) debe ajustarse.
+AEM AEM Se deben ajustar los proyectos generados por el [tipo de archivo del proyecto ](https://github.com/adobe/aem-project-archetype) y el [Almacén de referencia de Venia de](https://github.com/adobe/aem-cif-guides-venia) que ya está incluido en la [configuración predeterminada](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json).
 
-Reemplace el valor del `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` con el extremo GraphQL de su sistema de comercio. Esta configuración se puede realizar a través de la consola OSGI o implementando la configuración OSGI a través del proyecto. AEM Se admiten diferentes configuraciones para sistemas de ensayo y producción utilizando diferentes modos de ejecución de la.
+Reemplace el valor de `url` en `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` por el extremo GraphQL de su sistema de comercio. Esta configuración se puede realizar a través de la consola OSGI o implementando la configuración OSGI a través del proyecto. AEM Se admiten diferentes configuraciones para sistemas de ensayo y producción utilizando diferentes modos de ejecución de la.
 
-AEM Los componentes principales y del complemento de Commerce CIF AEM y de contenido de la utilizan conexiones tanto del lado del servidor como del lado del cliente. CIF CIF Las herramientas de creación de complementos de componentes principales y de componentes de cliente se conectan de forma predeterminada a `/api/graphql`. CIF Esto se puede ajustar a través de la configuración del Cloud Service de si es necesario (consulte a continuación).
+AEM Los componentes principales y del complemento de Commerce CIF AEM y de contenido de la utilizan conexiones tanto del lado del servidor como del lado del cliente. CIF CIF Las herramientas de creación de complementos de componentes principales y de componentes principales de la del lado del cliente se conectan de forma predeterminada a `/api/graphql`. CIF Esto se puede ajustar a través de la configuración del Cloud Service de si es necesario (consulte a continuación).
 
-CIF El complemento de proporciona un servlet proxy de GraphQL en `/api/graphql` que se puede utilizar de forma opcional para [desarrollo local](develop.md). Para implementaciones de producción, se recomienda encarecidamente configurar un proxy inverso al extremo de GraphQL AEM de comercio a través de la instancia de Dispatcher de o en otras capas de red (como CDN).
+CIF El complemento de proporciona un servlet proxy de GraphQL en `/api/graphql` que se puede usar opcionalmente para [desarrollo local](develop.md). Para implementaciones de producción, se recomienda encarecidamente configurar un proxy inverso al extremo de Commerce GraphQL AEM a través de Dispatcher o en otras capas de red (como CDN).
 
 ## Configuración de tiendas y catálogos {#catalog}
 
-El complemento y el [CIF Componentes principales](https://github.com/adobe/aem-core-cif-components) AEM se puede utilizar en varias estructuras de sitio de la conectadas a diferentes tiendas comerciales (o vistas de tiendas, etc.). CIF De forma predeterminada, el complemento de se implementa con una configuración predeterminada que se conecta a la tienda y al catálogo predeterminados de Adobe Commerce.
+CIF AEM El complemento y los [Componentes principales](https://github.com/adobe/aem-core-cif-components) se pueden usar en varias estructuras de sitio conectadas a varias tiendas de comercio (o vistas de tiendas, etc.) y en varias estructuras de sitio que se han conectado a diferentes tiendas de comercio. CIF De forma predeterminada, el complemento de se implementa con una configuración predeterminada que se conecta a la tienda y al catálogo predeterminados de Adobe Commerce.
 
 CIF Esta configuración se puede ajustar para el proyecto mediante la configuración del Cloud Service de la siguiendo estos pasos:
 
@@ -65,7 +65,7 @@ CIF Esta configuración se puede ajustar para el proyecto mediante la configurac
 
 3. Abra las propiedades de configuración a través de la barra de acciones
 
-![CIF Configuración de Cloud Service de](/help/commerce/cif/assets/cif-cloud-service-config.png)
+CIF ![Configuración de Cloud Service de](/help/commerce/cif/assets/cif-cloud-service-config.png)
 
 Se pueden configurar las siguientes propiedades:
 
@@ -75,7 +75,7 @@ Se pueden configurar las siguientes propiedades:
 
   >[!NOTE]
   >
-  >En la mayoría de las configuraciones, el valor predeterminado `/api/graphql` no se debe cambiar. Solo la configuración avanzada que no utiliza el proxy de GraphQL proporcionado debe cambiar esta configuración.
+  >En la mayoría de las configuraciones, no se debe cambiar el valor predeterminado `/api/graphql`. Solo la configuración avanzada que no utiliza el proxy de GraphQL proporcionado debe cambiar esta configuración.
 
 - Habilitar compatibilidad con UID de catálogo: habilite la compatibilidad con UID en lugar de con ID en las llamadas comerciales de GraphQL back-end.
 
@@ -87,11 +87,11 @@ Se pueden configurar las siguientes propiedades:
 
   >[!CAUTION]
   >
-  >CIF A partir de la versión 2.0.0 de los componentes principales de, la compatibilidad con `id` se ha eliminado y reemplazado por `uid`. CIF Si el proyecto utiliza componentes principales de la versión 2.0.0 de la, debe habilitar la compatibilidad con UID de catálogo y utilizar un UID de categoría válido como &quot;Identificador de categoría raíz de catálogo&quot;.
+  >CIF A partir de la versión 2.0.0 de los componentes principales de la, se quitó la compatibilidad con `id` y se reemplazó con `uid`. CIF Si el proyecto utiliza componentes principales de la versión 2.0.0 de la, debe habilitar la compatibilidad con UID de catálogo y utilizar un UID de categoría válido como &quot;Identificador de categoría raíz de catálogo&quot;.
 
 La configuración que se muestra arriba es como referencia. Los proyectos deben proporcionar sus propias configuraciones.
 
-AEM Para obtener configuraciones más complejas que utilicen varias estructuras de sitio de la combinadas con diferentes catálogos de comercio, consulte la [Configuración de varias tiendas de Commerce](configuring/multi-store-setup.md) tutorial.
+AEM Para obtener configuraciones más complejas que utilicen varias estructuras de sitio de la combinadas con distintos catálogos de comercio, consulte el tutorial [Configuración de varias tiendas de Commerce](configuring/multi-store-setup.md).
 
 ## Recursos adicionales {#additional-resources}
 

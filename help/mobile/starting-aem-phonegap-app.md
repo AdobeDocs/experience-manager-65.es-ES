@@ -30,18 +30,18 @@ El Starterkit le permite avanzar rápidamente explicándole los conceptos básic
 
 Los desarrolladores pueden utilizar este ejemplo como punto de partida para probar una aplicación de AEM Mobile con PhoneGap. Al ejecutar el Starterkit y la aplicación de referencia, se comprenden bien los conceptos básicos para crear aplicaciones móviles enriquecidas.
 
-* Utilice el [AEM Kit de inicio de PhoneGap](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) para crear aplicaciones adecuadas para el catálogo de AEM Mobile.
-* A [aplicación de referencia](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) se ha creado un código fuente completo que muestra muchas de las nuevas funciones de AEM Mobile, tanto si migra una aplicación existente a AEM Mobile como si comienza a utilizarla de nuevo.
-* Todas las muestras se encuentran en github: [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) e incluya el arranque del proyecto con Maven.
-* La mayoría de las charlas utilizan el [Tutorial del fregadero de cocina](https://github.com/blefebvre/aem-phonegap-kitchen-sink), que también puede encontrar en GitHub y se centra en el uso de la extensibilidad nativa de Apache Cordova.
+* AEM Use [Kit de inicio de PhoneGap](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) para crear aplicaciones aptas para el catálogo de AEM Mobile.
+* Se ha creado una [aplicación de referencia](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) con código fuente completo que muestra muchas de las nuevas características de AEM Mobile, tanto si migra una aplicación existente a AEM Mobile como si empieza a usar la nueva.
+* Todos los ejemplos se encuentran en github: [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) e incluyen el arranque del proyecto con Maven.
+* La mayoría de las charlas de la conferencia utilizan el [tutorial del fregadero de cocina](https://github.com/blefebvre/aem-phonegap-kitchen-sink), que también puede encontrar en GitHub y se centra en el uso de la extensibilidad nativa de Apache Cordova.
 
 >[!NOTE]
 >
->Una vez que haya tenido la oportunidad de familiarizarse con el Starterkit, es importante conocer Adobe Experience Manager *componentes y plantillas.*
+>Una vez que haya tenido la oportunidad de familiarizarse con el starterkit, es importante que conozca los *componentes y plantillas de Adobe Experience Manager.*
 
 ## Plantillas y componentes {#templates-and-components}
 
-AEM *Plantillas* y *Componentes* habilite a los propietarios de la línea de negocios para crear experiencias personalizadas. Ambos *Plantillas *y *Componentes* están disponibles de forma predeterminada o puede desarrollarlas usted, el desarrollador, ampliando los componentes existentes o creando greenfield (avanzado). *Plantillas* y *Componentes* AEM son los que permiten al autor de la arrastrar y soltar para crear experiencias atractivas y relevantes.
+AEM Las *plantillas* y los *componentes* permiten a los propietarios de la línea de negocios crear experiencias personalizadas. Tanto *Templates *como *Components* están disponibles de forma predeterminada o pueden ser desarrolladas por usted, el desarrollador, ya sea ampliando componentes existentes o creando greenfield (avanzado). AEM Las *plantillas* y los *componentes* son lo que permite al autor de la arrastrar y soltar para crear experiencias atractivas y relevantes.
 
 1. [Creación de componentes](/help/sites-developing/components.md)
 1. [Creación de plantillas](/help/sites-developing/templates.md)

@@ -27,7 +27,7 @@ Esto incluye el uso de recursos, contenido del sitio, contenido de CaaS (aéreo)
 
 >[!NOTE]
 >
->**Contenido en el aire** puede provenir de cualquiera de los elementos anteriores mediante controladores ContentSync. Se puede utilizar para empaquetar y enviar por lotes mediante archivos zip y mantener las actualizaciones de dichos paquetes.
+>**El contenido en el aire** puede provenir de cualquiera de los elementos anteriores mediante controladores ContentSync. Se puede utilizar para empaquetar y enviar por lotes mediante archivos zip y mantener las actualizaciones de dichos paquetes.
 
 Existen tres tipos principales de material que los servicios de contenido ofrecen:
 
@@ -37,11 +37,11 @@ Existen tres tipos principales de material que los servicios de contenido ofrece
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## Assets {#assets}
+## Recursos {#assets}
 
 AEM Las colecciones de recursos son construcciones de recursos que contienen referencias a otras colecciones.
 
-Una colección de recursos se puede exponer a través de Content Services. La llamada a una colección de recursos en una solicitud devuelve un objeto que es una lista de recursos, incluidas sus direcciones URL. Se accede a los recursos a través de una dirección URL. La dirección URL se proporciona en un objeto. Por ejemplo:
+Una colección de recursos se puede exponer a través de Content Services. La llamada a una colección de recursos en una solicitud devuelve un objeto que es una lista de recursos, incluidas sus direcciones URL. Se accede a Assets a través de una dirección URL. La dirección URL se proporciona en un objeto. Por ejemplo:
 
 * Una entidad de página devuelve el JSON (objeto de página) que incluye una referencia de imagen. La referencia de imagen es una dirección URL que se utiliza para obtener el binario de recursos de la imagen.
 * Una solicitud de una lista de recursos en una carpeta devuelve el JSON con detalles sobre todas las entidades de esa carpeta. Esa lista es un objeto. El JSON tiene referencias de URL que se utilizan para obtener el binario de recursos para cada recurso de esa carpeta.
@@ -52,7 +52,7 @@ Un valor clave de Content Services es la capacidad de devolver recursos optimiza
 
 La optimización de recursos es una función del lado del servidor, basada en la información proporcionada en la solicitud de API. Siempre que sea posible, las representaciones de recursos deben almacenarse en caché para que las solicitudes similares no requieran la regeneración de la representación de recursos.
 
-### Flujo de trabajo de recursos {#assets-workflow}
+### Flujo de trabajo Assets {#assets-workflow}
 
 El flujo de trabajo de recursos es el siguiente:
 
@@ -63,17 +63,17 @@ El flujo de trabajo de recursos es el siguiente:
    1. Elegir un recurso o una colección de recursos
    1. Personalizar el procesamiento de JSON
 
-El diagrama siguiente muestra la **Flujo de trabajo de referencia de recursos**:
+El diagrama siguiente muestra el **Flujo de trabajo de referencia de Assets**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Administración de recursos {#managing-assets}
+### Administración de Assets {#managing-assets}
 
 AEM AEM Los servicios de contenido proporcionan acceso a recursos administrados por el usuario a los que no se puede hacer referencia a través de otro contenido de la administración de la.
 
-#### Recursos administrados existentes {#existing-managed-assets}
+#### Assets administrado existente {#existing-managed-assets}
 
-Un usuario de AEM Sites y Assets está utilizando AEM Assets para administrar todo su material digital para todos los canales. Están desarrollando una aplicación móvil nativa y deben utilizar varios recursos administrados por AEM Assets. Por ejemplo, logotipos, imágenes de fondo e iconos de botón.
+Un usuario de AEM Sites y Assets está usando AEM Assets para administrar todo su material digital para todos los canales. Están desarrollando una aplicación móvil nativa y deben utilizar varios recursos administrados por AEM Assets. Por ejemplo, logotipos, imágenes de fondo e iconos de botón.
 
 Actualmente se distribuyen por todo el repositorio de Assets. Los archivos a los que la aplicación debe hacer referencia se encuentran en los siguientes:
 
@@ -115,8 +115,8 @@ AEM Los servicios de contenido proporcionan contenido de HTML a la aplicación m
 
 Se tienen en cuenta las siguientes opciones:
 
-* **Archivo zip:** Para tener la mejor oportunidad de mostrarse correctamente en el dispositivo, los recursos css de material, JavaScript, etc. a los que se hace referencia en la página se incluyen en un solo archivo comprimido con la respuesta. Las referencias de la página HTML se pueden ajustar para utilizar una ruta relativa a estos archivos.
-* **Transmisión:** AEM Obtención de un manifiesto de los archivos necesarios de la documentación de la administración de archivos de. A continuación, utilice ese manifiesto para solicitar todos los archivos (HTML, CSS, JS, etc.) con solicitudes posteriores.
+* **Archivo Zip:** Para tener la mejor oportunidad de mostrarse correctamente en el dispositivo, los recursos, css de material, JavaScript, etc. a los que se hace referencia en la página se incluyen en un único archivo comprimido con la respuesta. Las referencias de la página HTML se pueden ajustar para utilizar una ruta relativa a estos archivos.
+* AEM **Transmisión por secuencias:** Obteniendo un manifiesto de los archivos necesarios de los que se ha obtenido la notificación por parte de los. A continuación, utilice ese manifiesto para solicitar todos los archivos (HTML, CSS, JS, etc.) con solicitudes posteriores.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 

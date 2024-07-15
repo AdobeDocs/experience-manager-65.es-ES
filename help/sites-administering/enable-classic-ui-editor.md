@@ -22,7 +22,7 @@ ht-degree: 3%
 
 De forma predeterminada, se ha deshabilitado la capacidad para cambiar a la IU clásica desde el editor.
 
-Para volver a activar la opción **Abrir en IU clásica** en el **Información de página** , siga estos pasos.
+Para volver a habilitar la opción **Abrir en la IU clásica** en el menú **Información de la página**, siga estos pasos.
 
 1. Con el CRXDE Lite, busque el siguiente nodo:
 
@@ -32,16 +32,16 @@ Para volver a activar la opción **Abrir en IU clásica** en el **Información d
 
    ` [https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui)`
 
-1. Cree una superposición con la variable **Nodo de superposición** opción; por ejemplo:
+1. Cree una superposición con la opción **Nodo de superposición**; por ejemplo:
 
    * **Ruta**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Ubicación de superposición**: `/apps/`
-   * **Hacer coincidir tipos de nodo**: activo (seleccione la casilla de verificación)
+   * **Tipos de nodos coincidentes**: activo (seleccione la casilla de verificación)
 
 1. Agregue la siguiente propiedad de texto de varios valores al nodo superpuesto:
 
    `sling:hideProperties = ["granite:hidden"]`
 
-1. El **Abrir en IU clásica** está disponible de nuevo en la **Información de página** al editar páginas.
+1. La opción **Abrir en la IU clásica** vuelve a estar disponible en el menú **Información de la página** al editar páginas.
 
-   ![Abrir en la IU clásica opción desde la información de página](assets/syui-03-2019-02-27-15-19-48.png)
+   ![abrir en la opción de IU clásica a partir de la información de página](assets/syui-03-2019-02-27-15-19-48.png)

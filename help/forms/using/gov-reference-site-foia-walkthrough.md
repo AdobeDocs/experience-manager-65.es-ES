@@ -50,14 +50,14 @@ Sarah hace clic en **Solicitar**. En la página del formulario de solicitud de l
 
 * **Organismo:** Sarah especifica que el organismo al que ha dirigido la solicitud es la Oficina de Políticas de Información del Departamento de Justicia.
 
-* **Pagará Hasta Un Máximo De**: Sarah especifica que está preparada para pagar un máximo de 100 dólares en concepto de gastos de impresión y envío.
+* **Pagará hasta**: Sarah especifica que está preparada para pagar hasta 100 dólares en concepto de gastos de impresión y envío.
 * **Describir la solicitud en detalle**: Sarah especifica &quot;Solicitud de una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios fiscales de 2013 a 2016&quot;.
 
 ![Solicitud de una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios fiscales de 2013 a 2016](assets/sarahfiosform.png)
 
 Solicitud de una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios fiscales de 2013 a 2016
 
-En cualquier momento, Sarah puede seleccionar **Guardar** para guardar un borrador del formulario y volver a él más tarde para rellenarlo y enviarlo. Sarah envía el formulario.
+En cualquier momento, Sarah puede seleccionar **Guardar** para guardar un borrador del formulario y volver más tarde para rellenarlo y enviarlo. Sarah envía el formulario.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Cuando Sarah rellena y envía la solicitud FOIA, se envía un registro de la sol
 
 ### Puede verlo usted mismo {#see-it-yourself-1}
 
-AEM Puede acceder a la Bandeja de entrada de la en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. AEM Inicie sesión en la Bandeja de entrada de la, utilizando jjacobs/password como el nombre de usuario/contraseña de John Jacobs y vea la solicitud FOIA. Para obtener información sobre el uso de la Bandeja de entrada AEM para tareas de flujo de trabajo centradas en Forms, consulte [Administrar aplicaciones y tareas de Forms en Bandeja de entrada AEM](/help/forms/using/manage-applications-inbox.md).
+AEM Puede obtener acceso a la Bandeja de entrada de la en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. AEM Inicie sesión en la Bandeja de entrada de la, utilizando jjacobs/password como el nombre de usuario/contraseña de John Jacobs y vea la solicitud FOIA. Para obtener información sobre el uso de la Bandeja de entrada AEM para tareas de flujo de trabajo centradas en Forms, consulte [Administrar aplicaciones y tareas de Forms en Bandeja de entrada AEM](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -99,7 +99,7 @@ Cuando John Jacobs aprueba la solicitud FOIA, se crea un PDF o un documento de 
 
 ### Véalo usted mismo {#see-for-yourself}
 
-AEM Puede acceder a la Bandeja de entrada de la en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. AEM Inicie sesión en la Bandeja de entrada de la con grios/password como el nombre de usuario/contraseña de Gloria Ríos y vea la solicitud FOIA.
+AEM Puede obtener acceso a la Bandeja de entrada de la en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. AEM Inicie sesión en la Bandeja de entrada de la con grios/password como el nombre de usuario/contraseña de Gloria Ríos y vea la solicitud FOIA.
 
 Gloria abre la solicitud y examina los detalles de la solicitud FOIA. Después de revisar los detalles de la solicitud y estudiar la viabilidad de proporcionar los documentos requeridos, Gloria aprueba la solicitud.
 

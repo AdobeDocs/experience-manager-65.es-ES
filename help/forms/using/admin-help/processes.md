@@ -26,7 +26,7 @@ La página Lista de procesos muestra los procesos que un usuario ha iniciado o q
 
    **Aplicación:** La aplicación a la que pertenece el proceso, tal como se define en Workbench.
 
-   **Estado:** Activo significa que el proceso es el que se activa para la versión del proceso. Inactivo significa que el proceso es una versión antigua que aún tiene instancias de proceso.
+   **Estado:** Activo significa que el proceso es el activado para la versión del proceso. Inactivo significa que el proceso es una versión antigua que aún tiene instancias de proceso.
 
    **Fecha de creación:** Fecha y hora en que se implementó el proceso.
 
@@ -38,15 +38,15 @@ Si accede a la página Instancia de Proceso desde la página Lista de Procesos, 
 
 Para cada instancia de proceso, la lista muestra la siguiente información:
 
-**ID de proceso:** Identificador que asigna el flujo de trabajo de Forms cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia un proceso). Puede utilizar este identificador para realizar un seguimiento de la instancia de proceso a lo largo de su ciclo de vida.
+**Id. de proceso:** Identificador que asigna el flujo de trabajo de formularios cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia un proceso). Puede utilizar este identificador para realizar un seguimiento de la instancia de proceso a lo largo de su ciclo de vida.
 
 **Nombre del proceso - Versión:** El nombre del proceso, tal como se define en Workbench.
 
 **Estado:** Indica si la instancia de proceso se está ejecutando con normalidad, si cambia de estado o si se ha detenido. (Consulte Acerca de los estados de instancias de proceso.)
 
-**Fecha de creación:** La fecha y la hora de creación de la instancia de proceso.
+**Fecha de creación:** Fecha y hora en que se creó la instancia de proceso.
 
-**Fecha de actualización:** Fecha y hora en que se cambió el estado de la instancia de proceso por última vez.
+**Fecha de actualización:** Fecha y hora en que se cambió por última vez el estado de la instancia de proceso.
 
 Puede realizar las siguientes tareas en la página Instancia de Proceso:
 
@@ -60,21 +60,21 @@ Una instancia de proceso, incluidos los subprocesos, puede tener los siguientes 
 
 **COMPLETADO:** Se han completado todas las ramas y operaciones de la instancia de proceso. COMPLETADO es el estado final de una instancia de proceso.
 
-**COMPLETANDO:** El estado de la instancia de proceso está a punto de cambiar a COMPLETO.
+**FINALIZANDO:** El estado de la instancia de proceso está a punto de cambiar a COMPLETADO.
 
-**INICIADO:** La instancia de proceso se ha creado, pero aún no se está ejecutando. INICIADO es el primer estado de una instancia de proceso.
+**INICIADA:** La instancia de proceso se ha creado pero aún no se está ejecutando. INICIADO es el primer estado de una instancia de proceso.
 
 **EN EJECUCIÓN:** La instancia de proceso se está ejecutando normalmente. Puede que haya un paso automatizado en curso o que la instancia de proceso esté recibiendo los datos del usuario o esperando su interacción.
 
-**SUSPENDIDO:** La instancia de proceso ha sido suspendida por un administrador o por un paso en el proceso. No se producirán más operaciones hasta que se cambie el estado.
+**SUSPENDIDA:** La instancia de proceso ha sido suspendida por un administrador o por un paso en el proceso. No se producirán más operaciones hasta que se cambie el estado.
 
-**SUSPENDER:** El estado está a punto de cambiar a SUSPENDIDO. Si una operación se ha diseñado para omitir las solicitudes de suspensión y aún no se ha completado, esa operación debe completarse antes de que se suspenda la instancia de proceso.
+**SUSPENDIENDO:** El estado está a punto de cambiar a SUSPENDIDO. Si una operación se ha diseñado para omitir las solicitudes de suspensión y aún no se ha completado, esa operación debe completarse antes de que se suspenda la instancia de proceso.
 
-**FINALIZADO:** Un administrador ha finalizado la instancia de proceso.
+**TERMINADA:** Un administrador ha finalizado la instancia de proceso.
 
-**FINALIZANDO:** El estado está a punto de cambiar a TERMINADO. Si se ha diseñado una operación para omitir las solicitudes de finalización y aún no se ha completado, esa operación debe completarse antes de que finalice la instancia de proceso.
+**TERMINANDO:** El estado está a punto de cambiar a TERMINADO. Si se ha diseñado una operación para omitir las solicitudes de finalización y aún no se ha completado, esa operación debe completarse antes de que finalice la instancia de proceso.
 
-**SIN SUSPENSIÓN:** El estado está a punto de cambiar a EN EJECUCIÓN después de haber sido SUSPENDIDO.
+**SIN SUSPENDER:** El estado está a punto de cambiar a EN EJECUCIÓN después de haber sido SUSPENDIDO.
 
 >[!NOTE]
 >
@@ -120,23 +120,23 @@ En la pestaña Operaciones, cada operación de la instancia de proceso se muestr
 
 **Estado:** Indica si la operación se está ejecutando con normalidad o si se ha detenido. (Consulte Acerca de los estados de instancias de proceso.)
 
-**Nombre de la rama:** El nombre de la rama, tal como se define en Workbench.
+**Nombre de rama:** El nombre de la rama, tal como se define en Workbench.
 
 **Fecha de inicio:** Fecha y hora en que se inició la operación.
 
-**Fecha de finalización:** La fecha y hora en que se completó la operación.
+**Fecha de finalización:** Fecha y hora en que se completó la operación.
 
 Un subproceso es una instancia de proceso iniciada por otro proceso y que se ejecuta independientemente de ese otro proceso. Los subprocesos solo se muestran si se diseñaron como parte del proceso en Workbench. En la ficha Subprocesos, cada subproceso se muestra con la siguiente información:
 
-**ID de proceso:** Este entero positivo que el flujo de trabajo de Forms asigna cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia el proceso). Puede utilizar este identificador para realizar un seguimiento de la instancia de proceso a través de su ciclo de vida.
+**Id. de proceso:** Este entero positivo que el flujo de trabajo de formularios asigna cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia el proceso). Puede utilizar este identificador para realizar un seguimiento de la instancia de proceso a través de su ciclo de vida.
 
 **Nombre del proceso - Versión:** El nombre del proceso, tal como se define en Designer.
 
 **Estado:** Indica si la instancia de proceso se está ejecutando con normalidad, si cambia de estado o si está detenida. (Consulte Acerca de los estados de instancias de proceso.)
 
-**Fecha de creación:** La fecha y la hora en que se creó el subproceso.
+**Fecha de creación:** Fecha y hora en que se creó el subproceso.
 
-**Fecha de actualización:** La fecha y la hora en que se cambió por última vez el estado del subproceso.
+**Fecha de actualización:** La fecha y hora en que se cambió por última vez el estado del subproceso.
 
 Puede realizar las siguientes tareas en la página Detalles de la instancia de proceso:
 
@@ -148,13 +148,13 @@ Puede realizar las siguientes tareas en la página Detalles de la instancia de p
 
 Una operación (un paso en un proceso) puede tener los siguientes estados:
 
-**COMPLETADO:** Se completó la operación.
+**COMPLETADA:** La operación se completó.
 
 **EN EJECUCIÓN:** La operación se está ejecutando normalmente. Puede estar recibiendo entradas del usuario o esperando la interacción del usuario, o puede que haya un paso automatizado en curso.
 
-**ESTANCADO:** Se ha producido un error al procesar la operación. Compruebe el error o la excepción en la página Operaciones paralizadas.
+**DETENIDO:** Se produjo un problema mientras se procesaba la operación. Compruebe el error o la excepción en la página Operaciones paralizadas.
 
-**FINALIZADO:** Un administrador ha finalizado la operación.
+**TERMINADA:** Un administrador finalizó la operación.
 
 ### Finalizar operaciones o subprocesos {#terminate-operations-or-subprocesses}
 
@@ -195,6 +195,6 @@ La página Detalles de Operación muestra un resumen de una operación de un pro
 
    **Aplicación:** La aplicación a la que pertenece el proceso, tal como se define en Workbench.
 
-   **Estado:** Activo significa que el proceso es el que se activa para la versión del proceso. Inactivo significa que el proceso es una versión antigua que aún tiene instancias de proceso.
+   **Estado:** Activo significa que el proceso es el activado para la versión del proceso. Inactivo significa que el proceso es una versión antigua que aún tiene instancias de proceso.
 
    **Fecha de creación:** Fecha y hora en que se implementó el proceso.

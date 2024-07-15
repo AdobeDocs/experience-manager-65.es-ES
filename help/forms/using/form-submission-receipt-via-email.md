@@ -42,7 +42,7 @@ La acción Enviar correo electrónico permite a un autor enviar correos electró
 
 1. Abra un formulario adaptable en el modo **[!UICONTROL Edición]**.
 
-1. En el **[!UICONTROL Contenido]** pestaña, seleccione **[!UICONTROL Contenedor del formulario]** y seleccione ![configurar](assets/configure-icon.svg) para ver las propiedades del formulario adaptable.
+1. En la pestaña **[!UICONTROL Contenido]**, seleccione **[!UICONTROL Contenedor de formulario]** y seleccione ![configurar](assets/configure-icon.svg) para ver las propiedades del formulario adaptable.
 
 1. En la sección **[!UICONTROL Envío]**, seleccione **[!UICONTROL Enviar correo electrónico]** en la lista desplegable **[!UICONTROL Acción de envío]**.
 

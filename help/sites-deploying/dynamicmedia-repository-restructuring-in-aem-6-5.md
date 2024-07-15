@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Reestructuración del repositorio de Dynamic Media en Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Como se describe en el elemento principal [Reestructuración de repositorios en Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a Experience Manager 6.5 deben utilizar esta página para valorar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a Dynamic Media. Algunos cambios requieren esfuerzo de trabajo durante el proceso de actualización de Experience Manager 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
+Como se describe en la página principal [Reestructuración del repositorio en Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a Experience Manager 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a Dynamic Media. Algunos cambios requieren esfuerzo de trabajo durante el proceso de actualización de Experience Manager 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
 
 **Antes de futuras actualizaciones**
 
@@ -116,7 +116,7 @@ Como se describe en el elemento principal [Reestructuración de repositorios en 
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>1. Cancelar la publicación de todos los vídeos de YouTube<br /> 2. Cree la configuración de YouTube con la nueva interfaz de usuario táctil (desde <code>/conf</code>), incluida la copia de todos los canales de la ubicación antigua<br /> 3. Vuelva a publicar todos los vídeos en YouTube.</p> <p>Este flujo de trabajo genera nuevas direcciones URL de YouTube. Si no cancela la publicación antes de crear una configuración de YouTube de IU táctil, tiene varias URL de YouTube enumeradas en Propiedades porque los canales creados de nuevo se publican de nuevo, si se le da la oportunidad. Esta funcionalidad significa que tiene direcciones URL inútiles en Propiedades.</p> </td>
+   <td><p>1. Anule la publicación de todos los vídeos de YouTube<br /> 2. Cree la configuración de YouTube con la nueva interfaz de usuario táctil (de <code>/conf</code>), incluida la copia de todos los canales de la ubicación antigua <br /> 3. Publish devuelve todos los vídeos a YouTube.</p> <p>Este flujo de trabajo genera nuevas direcciones URL de YouTube. Si no cancela la publicación antes de crear una configuración de YouTube de IU táctil, tiene varias URL de YouTube enumeradas en Propiedades porque los canales creados de nuevo se publican de nuevo, si se le da la oportunidad. Esta funcionalidad significa que tiene direcciones URL inútiles en Propiedades.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>

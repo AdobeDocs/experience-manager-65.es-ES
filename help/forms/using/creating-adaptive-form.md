@@ -36,7 +36,7 @@ Siga estos pasos para crear un formulario adaptable.
    >
    >Para una instalación predeterminada, el inicio de sesión es `admin` y la contraseña es `admin`.
 
-1. Seleccionar **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**.
+1. Seleccione **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**.
 1. Aparecerá una opción para seleccionar una plantilla. Para obtener más información sobre las plantillas, consulte [Plantillas de formularios adaptables](creating-adaptive-form.md#p-adaptive-form-templates-p). Seleccione una plantilla para seleccionarla y haga clic en Siguiente.
 1. Aparecerá la opción “Agregar propiedades”. Especifique los valores para los siguientes campos de propiedad. Los campos Título y Nombre son obligatorios:
 
@@ -60,7 +60,7 @@ Siga estos pasos para crear un formulario adaptable.
 
    Una vez que haya terminado de especificar todas las propiedades, haga clic en **[!UICONTROL Crear]**. Se creará un formulario adaptable y aparecerá un cuadro de diálogo para abrir el formulario y editarlo.
 
-1. Seleccionar **[!UICONTROL Abrir]** para abrir el formulario recién creado en una pestaña nueva. El formulario se abrirá para editarlo y mostrará el contenido disponible en la plantilla. También mostrará la barra lateral para personalizar el formulario recién creado según las necesidades.
+1. Seleccione **[!UICONTROL Abrir]** para abrir el formulario recién creado en una pestaña nueva. El formulario se abrirá para editarlo y mostrará el contenido disponible en la plantilla. También mostrará la barra lateral para personalizar el formulario recién creado según las necesidades.
 
    En base al tipo de formulario adaptable, los elementos del formulario presentes en la plantilla del formulario XFA, el esquema XML o JSON asociados se muestran en la pestaña **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** en la barra lateral. También puede arrastrar y soltar estos elementos para crear su formulario adaptable.
 
@@ -121,12 +121,12 @@ Consulte los siguientes documentos para saber cómo diseñar esquemas XML o JSON
 
 Haga lo siguiente para utilizar el esquema XML o JSON como modelo de formulario para un formulario adaptable:
 
-1. En el **[!UICONTROL Añadir propiedades]** paso de la página de creación del formulario adaptable, seleccione en el **[!UICONTROL Modelo de formulario]** pestaña.
+1. En el paso **[!UICONTROL Agregar propiedades]** de la página de creación de formularios adaptables, seleccione en la pestaña **[!UICONTROL Modelo de formulario]**.
 1. En la pestaña Modelo de formulario, seleccione **[!UICONTROL Esquema]** del campo desplegable **[!UICONTROL Seleccionar desde]**.
 
-1. Seleccionar **[!UICONTROL Seleccionar esquema]** y realice una de las siguientes acciones:
+1. Seleccione **[!UICONTROL Seleccionar esquema]** y realice una de las siguientes acciones:
 
-   * **[!UICONTROL Cargar desde disco]** : seleccione esta opción y seleccione Cargar definición de esquema para examinar y cargar un esquema XML o JSON desde el sistema de archivos. El archivo de esquema cargado reside con el formulario y no es accesible para otros formularios adaptables.
+   * **[!UICONTROL Cargar desde disco]**: seleccione esta opción y seleccione Cargar definición de esquema para examinar y cargar un esquema XML o JSON desde su sistema de archivos. El archivo de esquema cargado reside con el formulario y no es accesible para otros formularios adaptables.
    * **[!UICONTROL Buscar en el repositorio]**: seleccione esta opción para seleccionar archivos disponibles en el repositorio de la lista de archivos de definición. Seleccione el archivo de esquema XML o JSON como modelo de formulario. El esquema seleccionado está asociado al formulario por referencia y es accesible para utilizarlo en otros formularios adaptables.
 
    >[!CAUTION]
@@ -159,7 +159,7 @@ Además, puede utilizar el editor de plantillas para crear sus propias plantilla
 
 Los formularios adaptables se crean sin un modelo de formulario (con la opción Ninguno del modelo de formulario) o mediante un modelo de formulario como una plantilla de formulario, un esquema XML o JSON o un modelo de datos de formulario. Puede cambiar el modelo de formulario para un formulario adaptable de Ninguno a otro modelo de formulario. Si el formulario adaptable se basa en un modelo de formulario, puede elegir otro esquema de formulario, esquema XML o JSON o modelo de datos de formulario para el mismo modelo de formulario. Pero no puede cambiar de un modelo de formulario a otro.
 
-1. Seleccione el formulario adaptable y seleccione **Propiedades** icono.
+1. Seleccione el formulario adaptable y seleccione el icono **Propiedades**.
 1. Abra la pestaña **[!UICONTROL Modelo de formulario]** y haga una de las siguientes acciones.
 
    * Si el formulario adaptable no cuenta con un modelo de formulario, puede elegir otro modelo de formulario y, en consecuencia, seleccionar una plantilla de formulario, un esquema XML o JSON o el modelo de datos de formulario.
@@ -180,7 +180,7 @@ De forma predeterminada, el contenido de un formulario adaptable se guarda con u
 
 De forma predeterminada, la opción de guardado automático no está activada. Puede habilitar la opción de guardado automático desde la pestaña Guardado automático de un formulario adaptable. La pestaña Guardar automáticamente también proporciona otras opciones de configuración. Realice los siguientes pasos para habilitar y configurar la opción de guardado automático para un formulario adaptable:
 
-1. Para acceder a la sección de guardado automático de las propiedades, seleccione un componente y, a continuación, seleccione ![field-level](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]**, y luego seleccione ![cmppr](assets/cmppr.png).
+1. Para acceder a la sección de guardado automático de las propiedades, seleccione un componente, luego seleccione ![nivel de campo](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, seleccione ![cmppr](assets/cmppr.png).
 1. En la sección **[!UICONTROL Guardar automáticamente]**, **[!UICONTROL habilite]** la opción Guardar automáticamente.
 1. En el cuadro **[!UICONTROL Evento de formulario adaptable]** especifique 1 o TRUE para comenzar a guardar automáticamente el formulario cuando se cargue en el explorador. También se puede especificar una expresión condicional para un evento, que cuando se activa y devuelve el valor “True”, comienza a guardar el contenido del formulario.
 1. Especifique el Activador. El guardado automático se activará según la configuración. Las opciones son las siguientes:

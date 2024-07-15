@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas para procesar los formatos de archivo admitidos
-description: Prácticas recomendadas para procesar los distintos tipos de archivo admitidos mediante [!DNL Experience Manager Assets].
+description: Prácticas recomendadas para procesar los distintos tipos de archivo admitidos mediante  [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
@@ -13,23 +13,23 @@ ht-degree: 0%
 
 ---
 
-# Prácticas recomendadas de formato de archivo de Assets {#assets-file-format-best-practices}
+# Prácticas recomendadas de formato de archivo Assets {#assets-file-format-best-practices}
 
-[!DNL Adobe Experience Manager Assets] admite muchas bibliotecas de formatos de archivo propias y de terceros para satisfacer los distintos requisitos de compatibilidad con archivos de los usuarios. Las bibliotecas de Adobes admitidas incluyen: [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer y [!DNL Adobe InDesign Server]. Además, [!DNL Experience Manager Assets] admite bibliotecas de terceros, como [!DNL ImageMagick], [!DNL TwelveMonkeys], etc.
+[!DNL Adobe Experience Manager Assets] admite muchas bibliotecas de formato de archivos de propiedad y de terceros para satisfacer diversos requisitos de compatibilidad con archivos de los usuarios. Las bibliotecas de Adobe admitidas incluyen [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer y [!DNL Adobe InDesign Server]. Además, [!DNL Experience Manager Assets] admite bibliotecas de terceros, incluidas [!DNL ImageMagick], [!DNL TwelveMonkeys], etc.
 
 Para ver los formatos de archivo admitidos, consulte [Formatos compatibles con Assets](/help/assets/assets-formats.md).
 
 >[!TIP]
 >
->Si está utilizando [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con Asistencia al cliente de Adobe si planea procesar muchos archivos de PSD o PSB grandes. Póngase en contacto con el departamento de Asistencia al cliente de Adobe para implementar estas prácticas recomendadas en su implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] puede que no procese archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles.
+>Si está usando [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con Asistencia al cliente de Adobe si planea procesar muchos archivos PSB o de PSD grandes. Póngase en contacto con el departamento de Asistencia al cliente de Adobe para implementar estas prácticas recomendadas en su implementación de AMS y para elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] no puede procesar archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles.
 
 ## [!DNL Adobe Camera Raw] biblioteca {#adobe-camera-raw-library}
 
-Para obtener un rendimiento óptimo, Adobe recomienda utilizar [!DNL Adobe Camera Raw] para archivos RAW y DNG.
+Para obtener un rendimiento óptimo, Adobe recomienda usar la biblioteca [!DNL Adobe Camera Raw] para archivos RAW y DNG.
 
-[!DNL Adobe Camera Raw] La biblioteca admite el perfil de color CMYK como entrada. Sin embargo, genera la salida en el espacio de color del RGB y sólo admite la salida en formato de JPEG. No conserva el espacio de color del archivo de origen (por ejemplo, CMYK) en las miniaturas.
+La biblioteca [!DNL Adobe Camera Raw] admite el perfil de color CMYK como entrada. Sin embargo, genera la salida en el espacio de color del RGB y sólo admite la salida en formato de JPEG. No conserva el espacio de color del archivo de origen (por ejemplo, CMYK) en las miniaturas.
 
-Para obtener más información, consulte [soporte Camera Raw](/help/assets/camera-raw.md).
+Para obtener más información, consulte [Soporte técnico Camera Raw](/help/assets/camera-raw.md).
 
 ## Biblioteca Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
@@ -43,13 +43,13 @@ Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calida
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-El Adobe recomienda que utilice [!DNL Adobe InDesign Server] para extraer [!DNL Adobe InDesign]Representaciones específicas de, como IDML y HTML. Para obtener más información, consulte [Adición de recursos del Experience Manager como referencias en Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
+El Adobe recomienda usar [!DNL Adobe InDesign Server] para extraer representaciones específicas de [!DNL Adobe InDesign], como IDML y HTML. Para obtener más información, consulte [Agregar recursos de Experience Manager como referencias en Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento. Proporciona experiencias de visualización interactivas y optimiza el proceso de administración de campañas digitales. Para obtener más información sobre cómo activar [!DNL Dynamic Media], consulte [Configuración de Dynamic Media](/help/assets/config-dynamic.md).
+[!DNL Dynamic Media] genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento. Proporciona experiencias de visualización interactivas y optimiza el proceso de administración de campañas digitales. Para obtener más información sobre cómo habilitar [!DNL Dynamic Media], consulte [Configuración de Dynamic Media](/help/assets/config-dynamic.md).
 
-Actualmente, [!DNL Dynamic Media] puede admitir vídeos con hasta 15 GB de contenido por archivo.
+Actualmente, [!DNL Dynamic Media] admite vídeos con hasta 15 GB de contenido por archivo.
 
 ## Biblioteca de ImageMagick {#imagemagick-library}
 
@@ -60,7 +60,7 @@ El Adobe recomienda utilizar la biblioteca ImageMagick en los siguientes casos:
 * Para preservar la transparencia.
 * Para procesar archivos de PSD y PSB.
 
-Para saber cómo configurar el [!DNL ImageMagick] biblioteca en [!DNL Experience Manager], consulte [Uso de ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Para un uso óptimo, consulte [Prácticas recomendadas para configurar ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+Para saber cómo configurar la biblioteca [!DNL ImageMagick] en [!DNL Experience Manager], consulte [Usar ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Para obtener un uso óptimo, consulte [Prácticas recomendadas para configurar ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 ## Biblioteca de transcodificación de imágenes {#image-transcoding-library}
 

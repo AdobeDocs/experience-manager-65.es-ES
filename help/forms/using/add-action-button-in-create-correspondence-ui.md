@@ -42,7 +42,7 @@ Agregar un botón con una acción (enviar carta para revisión) a la interfaz de
 ### Agregar el botón a la interfaz de usuario Crear correspondencia {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta llamada `defaultApp` con una ruta/estructura similar a la carpeta defaultApp (en la carpeta config). Para crear la carpeta, siga estos pasos:
+1. En la carpeta de aplicaciones, cree una carpeta denominada `defaultApp` con una ruta/estructura similar a la carpeta defaultApp (en la carpeta config). Para crear la carpeta, siga estos pasos:
 
    1. Haga clic con el botón derecho en la carpeta **defaultApp** en la siguiente ruta y seleccione **Nodo de superposición**:
 

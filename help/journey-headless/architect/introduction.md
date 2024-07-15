@@ -14,7 +14,7 @@ ht-degree: 83%
 
 # Modelado de contenido para Headless con AEM: introducción {#architect-headless-introduction}
 
-En esta parte del [AEM Recorrido de arquitectos de contenido sin encabezado](overview.md), puede aprender los conceptos (básicos) y la terminología necesarios para comprender el modelado de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager AEM ().
+AEM En esta parte del [Recorrido de arquitectos de contenido sin encabezado](overview.md), puede aprender los conceptos (básicos) y la terminología necesarios para comprender el modelado de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager AEM ().
 
 Este documento le ayuda a comprender la entrega de contenido sin encabezado, cómo AEM admite sin encabezado y cómo se modela el contenido para que no tenga encabezado. Después de leer, debería haber logrado lo siguiente:
 

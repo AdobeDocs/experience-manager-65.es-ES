@@ -19,7 +19,7 @@ ht-degree: 26%
 
 # Consolas de herramientas{#tools-consoles}
 
-El **Herramientas** las consolas proporcionan acceso a varias herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. Actualmente hay dos sabores de la **Herramientas** La consola de depende de la interfaz de usuario que utilice:
+Las consolas **Herramientas** proporcionan acceso a varias herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. Actualmente hay dos tipos de consola **Tools** que dependen de la interfaz de usuario que está usando:
 
 * [Herramientas: IU táctil optimizada](#tools-touch-optimized-ui)
 * [Herramientas: IU clásica](#tools-classic-ui)
@@ -158,7 +158,7 @@ El **Herramientas** las consolas proporcionan acceso a varias herramientas espec
   </tr>
   <tr>
    <td> </td>
-   <td>Comprobador de vínculo externo<br /> </td>
+   <td>Comprobador de vínculo externo <br /> </td>
   </tr>
   <tr>
    <td>Assets</td>
@@ -306,7 +306,7 @@ El **Herramientas** las consolas proporcionan acceso a varias herramientas espec
   </tr>
   <tr>
    <td> </td>
-   <td>Configuración de inicio de sesión social en facebook<br /> </td>
+   <td>Configuración de inicio de sesión social de facebook<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -314,10 +314,10 @@ El **Herramientas** las consolas proporcionan acceso a varias herramientas espec
   </tr>
   <tr>
    <td> </td>
-   <td>Configuración de inicio de sesión social en pinterest<br /> </td>
+   <td>Configuración de inicio de sesión social de pinterest<br /> </td>
   </tr>
   <tr>
-   <td>Communities</td>
+   <td>Comunidades</td>
    <td> </td>
   </tr>
   <tr>
@@ -392,7 +392,7 @@ El **Herramientas** las consolas proporcionan acceso a varias herramientas espec
    <td>Acceso a varias opciones.</td>
   </tr>
   <tr>
-   <td>Tableros</td>
+   <td>Paneles de control</td>
    <td>Crear paneles de informes; proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td>
   </tr>
   <tr>
@@ -421,11 +421,11 @@ El **Herramientas** las consolas proporcionan acceso a varias herramientas espec
   </tr>
   <tr>
    <td>Paquetes</td>
-   <td>AEM Un vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para el WCM de la. Similar a la información que se muestra en el Administrador de paquetes de CRX.</td>
+   <td>AEM Un vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para el WCM de la. Es similar a la información que se muestra en el Administrador de paquetes de CRX.</td>
   </tr>
   <tr>
    <td>Replicación: agentes de replicación</td>
-   <td>Se utiliza para replicar datos de la instancia de autor en Publicar al publicar páginas, o con replicación inversa para devolver comentarios del usuario del entorno de publicación al autor.</td>
+   <td>Se utiliza para replicar datos de la instancia de autor en Publish al publicar páginas, o con replicación inversa para devolver comentarios del usuario del entorno de publicación al autor.</td>
   </tr>
   <tr>
    <td>Informes</td>

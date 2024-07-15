@@ -45,11 +45,11 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
 >
 >Los tipos de actividades estarán disponibles dependiendo de lo siguiente:
 >
->* Si la variable **xt_only** La opción está habilitada en el inquilino de Adobe Target AEM (clientcode) que se utiliza en el lado del para conectarse a Adobe Target. A continuación, puede crear lo siguiente **solamente** AEM Actividades XT en.
+>* Si la opción **xt_only** está habilitada en el inquilino de Adobe Target AEM (clientcode) que se usa en el lado del cliente para conectarse a Adobe Target AEM, entonces puede crear **solo** actividades XT en el.
 >
->* Si la variable **xt_only** options es **no** habilitado en el inquilino de Adobe Target (clientcode), a continuación, puede crear **ambos** AEM Las actividades XT y A/B en la.
+>* Si la opción **xt_only** está habilitada para **not** en el inquilino de Adobe Target AEM (clientcode), puede crear **actividades XT y A/B de** en el espacio de trabajo del cliente ().
 >
->**Nota adicional:** **xt_only** options es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
+>**Nota adicional:** **xt_only** opciones es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
 
 >[!CAUTION]
 >
@@ -63,11 +63,11 @@ Cree una marca para la que desee administrar actividades de marketing.
 
 Cuando cree una marca mediante la consola Actividades, esta también aparecerá en la [consola Ofertas](/help/sites-authoring/offerlib.md), donde podrá crear ofertas para las experiencias de las actividades.
 
-1. En la consola de navegación, haga clic en **Personalización**. Clic **Actividades**.
+1. En la consola de navegación, haga clic en **Personalization**. Haga clic en **Actividades**.
 
    ![screen_shot_2018-03-21at151821](assets/screen_shot_2018-03-21at151821.png)
 
-1. En la consola Actividades, haga clic en **Crear** entonces **Crear marca**.
+1. En la consola Actividades, haz clic en **Crear** y luego **Crear marca**.
 1. Seleccione la plantilla de marca y haga clic en **Siguiente**.
 1. Escriba un título para la marca tal como desea que aparezca en las consolas de actividades y de ofertas. De forma opcional, escriba o seleccione una o varias etiquetas para asociarlas a la marca.
 1. Haga clic en **Crear**. La marca aparece en la consola de actividades.
@@ -96,7 +96,7 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 
 Para añadir una actividad, haga lo siguiente:
 
-1. Haga clic en la marca para la que está creando la actividad y luego haga clic en **Crear** y luego **Crear actividad**. Si está editando, seleccione la actividad y haga clic en **Editar**.
+1. Haga clic en la marca para la que está creando la actividad, haga clic en **Crear** y luego en **Crear actividad**. Si está editando, seleccione la actividad y haga clic en **Editar**.
 1. Proporcione la siguiente información y haga clic en **Siguiente**:
 
    * Un nombre para la actividad.
@@ -105,18 +105,18 @@ Para añadir una actividad, haga lo siguiente:
    * (Opcional) El objetivo o la descripción de la actividad.
    * Seleccione el tipo de actividad.
 
-1. Agregue una o varias experiencias a la actividad. Clic **Añadir experiencia**.
+1. Agregue una o varias experiencias a la actividad. Haga clic en **Agregar experiencia**.
 1. Si utiliza la segmentación de AEM o la segmentación de experiencias de Adobe Target:
 
    1. Haga clic en **Seleccionar audiencia **y seleccione el segmento de destino de la experiencia.
-   1. Clic **Añadir experiencia**, escriba un nombre y haga clic en **OK**.
+   1. Haga clic en **Agregar experiencia**, escriba un nombre y haga clic en **Aceptar**.
 
    1. Haga clic en **Siguiente**.
 
    Si utiliza las pruebas A/B de Adobe Target:
 
    1. Haga clic en el lápiz del cuadro de audiencias para seleccionar una audiencia.
-   1. Clic **Añadir experiencia**, escriba un nombre y haga clic en **OK**.
+   1. Haga clic en **Agregar experiencia**, escriba un nombre y haga clic en **Aceptar**.
 
    1. Introduzca el porcentaje de tráfico que muestra cada experiencia.
    1. Haga clic en **Siguiente**.
@@ -152,9 +152,9 @@ Para publicar o cancelar la publicación de actividades, haga lo siguiente:
 1. Haga clic en la marca y, a continuación, en el área que contiene la actividad que desea publicar o cancelar la publicación.
 1. Haga clic en el icono situado junto a la actividad o actividades que desee publicar o cancelar la publicación.
 
-   ![screen-shot_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
+   ![captura de pantalla_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
 
-1. Para publicar, haga clic en **Publish**. Para cancelar la publicación, haga clic en **Cancelar publicación**. Las actividades se publican (o no) y su estado cambia en la consola de actividades (es posible que sea necesaria una actualización).
+1. Para publicar, haz clic en **Publish**. Para cancelar la publicación, haga clic en **Cancelar publicación**. Las actividades se publican (o no) y su estado cambia en la consola de actividades (es posible que sea necesaria una actualización).
 
 ## Actividades en las instancias de autor y publicación {#activities-on-author-and-publish-instances}
 
@@ -169,13 +169,13 @@ Puede ver el rendimiento de cualquier actividad de Adobe Target (XT o A/B). Si u
 
 Para ver el rendimiento de las actividades y convertirlas en experiencias ganadoras:
 
-1. Entrada **Personalización**, haga clic en **Actividades** para ir al **Actividades** consola.
+1. En **Personalization**, haga clic en **Actividades** para ir a la consola **Actividades**.
 1. Haga clic en la marca de la que desee ver actividades.
-1. Seleccione la actividad y haga clic en **Ver propiedades** y haga clic en **Informes** y seleccione la actividad para la que desea ver el rendimiento o convertir las experiencias ganadoras. Se muestran los datos de rendimiento.
+1. Seleccione la actividad y haga clic en **Ver propiedades**; a continuación, haga clic en la ficha **Informes** y seleccione la actividad para la que desea ver el rendimiento o convertir las experiencias ganadoras. Se muestran los datos de rendimiento.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Haga clic en **Insertar ganador** vínculo para insertar esa experiencia como la experiencia predeterminada.
+1. Haga clic en el vínculo **Ganador de push** para que esa experiencia sea la experiencia predeterminada.
 
    Convertir al ganador hace lo siguiente:
 
@@ -186,7 +186,7 @@ Para ver el rendimiento de las actividades y convertirlas en experiencias ganado
 
    Una experiencia ganadora es la que más crece en los informes, y está basada en la tasa de conversión.
 
-1. Clic **Sí** para confirmar que desea convertir al ganador, deshabilite la experiencia actual y reemplácela por el contenido de la experiencia ganadora.
+1. Haga clic en **Sí** para confirmar que desea convertir al ganador, desactivando la experiencia actual y reemplazándola con el contenido de la experiencia ganadora.
 
 ## Sincronización de actividades con Adobe Target {#synchronizing-activities-with-adobe-target}
 
@@ -227,7 +227,7 @@ Para evitar problemas de sincronización, utilice siempre nombres únicos para l
 
 >[!NOTE]
 >
->Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId t`en cada campaña. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
+>Cuando crea una campaña en Adobe Target, asigna una propiedad denominada `thirdPartyId t` a cada campaña. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
 >
 >Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
 >

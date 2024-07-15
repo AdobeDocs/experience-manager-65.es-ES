@@ -56,7 +56,7 @@ Para cambiar la programación de publicación, realice los siguientes pasos:
 1. &#x200B;
 
    * (En Windows) Abra el archivo `[JBoss root]/bin/run.conf.bat` en un editor.
-   * (Para Linux®, AIX® y Solaris™) `[JBoss root]/bin/run.conf.sh` en un editor.
+   * (En Linux®, AIX® y Solaris™) `[JBoss root]/bin/run.conf.sh` archivo en un editor.
 
 1. Agregue el argumento JVM `-Dreporting.publisher.cron = <expression>.`.
 
@@ -71,7 +71,7 @@ Para cambiar la programación de publicación, realice los siguientes pasos:
 1. Detenga la instancia de AEM Forms Server.
 1. Inicie sesión en la consola administrativa de WebSphere®. En el árbol de navegación, haga clic en **Servidores** > **Servidores de aplicaciones** y, a continuación, haga clic en el nombre del servidor en el panel derecho.
 
-1. En Infraestructura del servidor, haga clic en **Administración de procesos y Java™** > **Definición del proceso**.
+1. En Infraestructura del servidor, haga clic en **Java™ y Process Management** > **Definición del proceso**.
 
 1. En Propiedades adicionales, haga clic en **Java™ Virtual Machine**.
 
@@ -156,10 +156,10 @@ Process Reporting utiliza el servicio ReportConfiguration para configurar el se
 
    >[!NOTE]
    >
-   >Esta ubicación es la misma que se especifica en la opción de configuración ProcessDataStorage **Carpeta raíz**.
+   >Esta ubicación es la misma especificada en la opción de configuración ProcessDataStorage **Carpeta raíz**.
    >
    >
-   >Si actualiza la opción Carpeta raíz en la configuración de ProcessDataStorage, debe actualizar la ubicación de la ruta de almacenamiento CRX en el servicio ReportConfiguration.
+   >Si actualiza la opción Carpeta raíz en la configuración de ProcessDataStorage, debe actualizar la ubicación de la ruta de almacenamiento de CRX en el servicio ReportConfiguration.
 
 1. Haga clic en **Guardar** y cierre el **Administrador de configuración CQ**.
 

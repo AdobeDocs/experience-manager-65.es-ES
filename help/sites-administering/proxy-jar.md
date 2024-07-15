@@ -48,8 +48,8 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 * **q (modo silencioso)** No escribe las solicitudes en la ventana de la consola. Utilice esta opción si no desea ralentizar la conexión o si registra la salida en un archivo (consulte la opción -logfile ).
 * **b (modo binario)** Si está buscando combinaciones de bytes específicas en el tráfico, habilite el modo binario. El resultado contiene la salida hexadecimal y de caracteres.
 * **t (entradas de registro de marca de tiempo)** Agrega una marca de tiempo a cada salida de registro. La marca de tiempo está en segundos, por lo que es posible que no sea adecuada para comprobar solicitudes únicas. Utilícelo para localizar eventos que se produjeron en un momento específico si utiliza el servidor proxy durante un período de tiempo más largo.
-* **logfile &lt;filename> (escribir en el archivo de registro)** Escribe la conversación cliente-servidor en un archivo de registro. Este parámetro también funciona en modo silencioso.
-* **i &lt;numindentions> (agregar sangría)** Cada conexión activa tiene una sangría para mejorar la legibilidad. El valor predeterminado es 16 niveles. (Nuevo en proxy.jar versión 1.16).
+* **archivo de registro &lt;filename> (escribir en el archivo de registro)** Escribe la conversación cliente-servidor en un archivo de registro. Este parámetro también funciona en modo silencioso.
+* **i &lt;numIndentions> (agregar sangría)** Cada conexión activa tiene sangría para mejorar la legibilidad. El valor predeterminado es 16 niveles. (Nuevo en proxy.jar versión 1.16).
 
 ## Usos de la herramienta de servidor proxy {#uses-of-the-proxy-server-tool}
 
@@ -63,7 +63,7 @@ El siguiente ejemplo de entrada de registro muestra todas las cookies y sus valo
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**Comprobación de encabezados y sus valores** El siguiente ejemplo de entrada de registro muestra que el servidor puede realizar una conexión persistente y que el encabezado de longitud de contenido se ha establecido correctamente:
+**Comprobando los encabezados y sus valores** El siguiente ejemplo de entrada de registro muestra que el servidor puede establecer una conexión persistente y que el encabezado de la longitud del contenido se estableció correctamente:
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -71,7 +71,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 S-7-#000107 -> [Content-Length: 124 ]
 ```
 
-**Comprobar si Keep-Alive funciona**
+**Comprobando si Keep-Alive funciona**
 
 **Keep-Alive** significa que un cliente reutiliza la conexión con el servidor para transportar varios archivos (código de página, imágenes, hojas de estilo, etc.). Sin la conexión persistente, el cliente debe establecer una nueva conexión para cada solicitud.
 
@@ -83,7 +83,7 @@ Para comprobar si la conexión persistente funciona:
 * Si la conexión persistente funciona, el contador de conexiones nunca debe superar las 5 a 10 conexiones.
 * Si la conexión persistente no funciona, el contador de conexiones aumenta rápidamente.
 
-**Búsqueda de solicitudes perdidas**
+**Buscando solicitudes perdidas**
 
 Si pierde solicitudes en una configuración de servidor compleja, por ejemplo, con un cortafuegos y un Dispatcher, puede utilizar el servidor proxy para averiguar dónde se perdió la solicitud. Si hay un cortafuegos:
 
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa que esta entrada proviene del cliente (es una solicitud de una página web)
 * 0 es el número de conexión (el contador de conexión comienza en 0)
 * #00000 el desplazamiento en la secuencia de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
-* [GET &lt;?>] es el contenido de la solicitud; en el ejemplo, uno de los encabezados HTTP (url).
+* [GET &lt;?>] es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
 
 Cuando se cierra una conexión, se registra la siguiente información:
 
@@ -149,7 +149,7 @@ AEM Si se está ejecutando en localhost:4303, inicie el servidor proxy de la sig
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-Puede acceder al servidor de (`localhost:4303`) sin el servidor proxy, pero si accede a él a través de `localhost:4444`, el servidor proxy registra la comunicación. Abra un explorador y acceda a una página creada con la plantilla anterior. Después, observe el archivo de registro.
+Puede tener acceso al servidor (`localhost:4303`) sin el servidor proxy, pero si tiene acceso a él a través de `localhost:4444`, el servidor proxy registrará la comunicación. Abra un explorador y acceda a una página creada con la plantilla anterior. Después, observe el archivo de registro.
 
 >[!NOTE]
 >

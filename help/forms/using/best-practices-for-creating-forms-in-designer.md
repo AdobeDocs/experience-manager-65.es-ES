@@ -68,7 +68,7 @@ Puntos de comprobación relacionados
 
 ## Configurar las propiedades del formulario para generar información de accesibilidad {#configure-form-properties}
 
-Para que un formulario sea accesible, debe ser [perceptible](https://www.w3.org/TR/WCAG20/#perceivable) por tecnología de asistencia. Por ejemplo, la mayoría de los lectores de pantalla no tendrán en cuenta el diseño visual del formulario, sino la estructura subyacente.
+Para que un formulario sea accesible, debe ser [perceptible](https://www.w3.org/TR/WCAG20/#perceivable) por la tecnología de asistencia. Por ejemplo, la mayoría de los lectores de pantalla no tendrán en cuenta el diseño visual del formulario, sino la estructura subyacente.
 
 Para implementar esta estructura subyacente mediante LiveCycle Designer, debe crear un formulario de PDF con información de accesibilidad (a veces denominada etiquetas) incluida para que el lector de pantalla u otra tecnología de asistencia puedan leer el texto y los componentes del formulario. En un formulario con información de accesibilidad, cada elemento contiene información sobre su propia estructura, además de información sobre cómo está relacionado con otros elementos o depende de ellos. Los lectores de pantalla solo pueden identificar y describir el contenido de un documento con precisión en los archivos de PDF con información de accesibilidad incluida.
 
@@ -95,7 +95,7 @@ En LiveCycle Designer, esta opción está seleccionada de forma predeterminada.
 
 Al diseñar los formularios, utilice los objetos de desarrollo de las pestañas disponibles en la Biblioteca de objetos de LiveCycle Designer. Para mostrar este panel, seleccione Ventana > Biblioteca de objetos o presione Mayús+F12 (consulte la Figura 1).
 
-![Panel Biblioteca de objetos](/help/forms/using/assets/image-1.png)
+![Panel de biblioteca de objetos](/help/forms/using/assets/image-1.png)
 
 Figura 1: **Panel Biblioteca de objetos**
 
@@ -124,7 +124,7 @@ Puede proporcionar descripciones de texto mediante las propiedades Información 
 
 ![Especificar texto alternativo para una imagen mediante la paleta Accesibilidad](/help/forms/using/assets/image-2.png)
 
-Figura 2: **Especificar texto alternativo para una imagen mediante la paleta Accesibilidad**
+Figura 2: **Especificación de texto alternativo para una imagen mediante la paleta Accesibilidad**
 
 Al especificar el texto alternativo, tenga en cuenta lo siguiente:
 * Si el objeto de imagen o la imagen digitalizada incluyen información importante para el formulario, cree texto para la imagen en la paleta Accesibilidad que describa el objeto y su propósito. El texto del logotipo de una empresa, por ejemplo, podría consistir en las palabras &quot;logotipo de la empresa&quot; y el nombre de la empresa.
@@ -133,7 +133,7 @@ Al especificar el texto alternativo, tenga en cuenta lo siguiente:
 * No cree descripciones de texto para imágenes estáticas que solo se utilicen para la decoración.
 * No utilice datos escaneados como información de fondo. Esto puede ocurrir cuando un diseñador analiza un formulario impreso y utiliza Adobe LiveCycle Designer para agregar nuevos campos al formulario. Los lectores de pantalla no pueden detectar los datos escaneados en este estado.
 
-Cuando se incluye contenido gráfico puramente decorativo en los formularios, se recomienda asegurarse de que los lectores de pantalla no anuncien la presencia de la imagen. Para la mayoría de los lectores de pantalla, esto se puede lograr estableciendo la propiedad Texto del Reader de pantalla en Ninguno en la paleta Accesibilidad. Si no lo hace, algunos lectores de pantalla pueden anunciar la presencia de un gráfico, sin indicar lo que representa. En el caso de las imágenes dinámicas, como los objetos de campo de imagen, asegúrese de que las alternativas de texto se actualicen correctamente cuando se cambie la imagen. No cree descripciones de texto para objetos de campo de imagen que solo se utilicen para decoración. Puede utilizar el lenguaje de script FormCalc para asignar descripciones de texto a un objeto de campo de imagen de forma dinámica. FormCalc es el lenguaje de script estándar de Adobe LiveCycle Designer. Por ejemplo, considere un formulario con un campo de imagen denominado ImageField1 y el texto asociado en el nodo imagetext de los datos de tiempo de ejecución. Puede utilizar secuencias de comandos para pasar este texto en un evento apropiado (como `form:ready`)como se indica a continuación:
+Cuando se incluye contenido gráfico puramente decorativo en los formularios, se recomienda asegurarse de que los lectores de pantalla no anuncien la presencia de la imagen. Para la mayoría de los lectores de pantalla, esto se puede lograr estableciendo la propiedad Texto del Reader de pantalla en Ninguno en la paleta Accesibilidad. Si no lo hace, algunos lectores de pantalla pueden anunciar la presencia de un gráfico, sin indicar lo que representa. En el caso de las imágenes dinámicas, como los objetos de campo de imagen, asegúrese de que las alternativas de texto se actualicen correctamente cuando se cambie la imagen. No cree descripciones de texto para objetos de campo de imagen que solo se utilicen para decoración. Puede utilizar el lenguaje de script FormCalc para asignar descripciones de texto a un objeto de campo de imagen de forma dinámica. FormCalc es el lenguaje de script estándar de Adobe LiveCycle Designer. Por ejemplo, considere un formulario con un campo de imagen denominado ImageField1 y el texto asociado en el nodo imagetext de los datos de tiempo de ejecución. Puede usar scripts para pasar este texto en un evento apropiado (como `form:ready`) de la siguiente manera:
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
 
@@ -158,9 +158,9 @@ Para utilizar la paleta Accesibilidad, siga estos pasos:
 1. Muestre la paleta Accesibilidad seleccionando Ventana > Accesibilidad o pulsando Mayús+F6.
 1. Seleccione un objeto del formulario. La paleta mostrará las propiedades de accesibilidad del objeto.
 
-![La paleta Accesibilidad](/help/forms/using/assets/image-3.png)
+![La paleta de accesibilidad](/help/forms/using/assets/image-3.png)
 
-Figura 3: **La paleta Accesibilidad**
+Figura 3: **La paleta de accesibilidad**
 
 Cuando el formulario se guarda como PDF, LiveCycle Designer busca en el formulario las propiedades Texto personalizado, Información del objeto, Pie de ilustración y Nombre, en ese orden, para buscar el texto que deben leer los lectores de pantalla. Puede anular este orden predeterminado si utiliza la opción Prioridad de Reader de pantalla en la paleta Accesibilidad:
 
@@ -171,10 +171,10 @@ Cuando el formulario se guarda como PDF, LiveCycle Designer busca en el formular
 Las opciones disponibles son las siguientes:
 
 * **Texto personalizado**, que se establece en el campo Texto personalizado del Reader de pantalla de la paleta Accesibilidad. Esta opción le permite especificar el texto que desea que utilice la tecnología de asistencia, como lectores de pantalla. El uso de la configuración Pie de ilustración es mejor para la mayoría de las situaciones: la creación de texto de Reader de pantalla personalizado debe considerarse una opción solo cuando se utiliza Pie de ilustración o no es posible obtener información del objeto.
-* **Información de herramienta**, que se establece en el campo Información del objeto de la paleta Accesibilidad. Para la mayoría de los objetos, la información sobre herramientas aparece en tiempo de ejecución cuando el usuario pasa el puntero sobre el objeto. La información del objeto aparece para algunos objetos de solo lectura, como el objeto de código de barras de un formulario en papel, solo cuando se utiliza un lector de pantalla.
-* **Rótulo**, lo que hará que LiveCycle Designer utilice la etiqueta asociada (visual) del campo de formulario como texto del lector de pantalla.
-* **Nombre**, que se establece en el campo Nombre de la pestaña Enlace. Tenga en cuenta que este nombre no puede contener espacios.
-* **Ninguno**, lo que hará que el objeto no tenga nombre. Esto nunca se recomienda para los controles del formulario.
+* **Información de objeto**, que se establece en el campo Información de objeto de la paleta Accesibilidad. Para la mayoría de los objetos, la información sobre herramientas aparece en tiempo de ejecución cuando el usuario pasa el puntero sobre el objeto. La información del objeto aparece para algunos objetos de solo lectura, como el objeto de código de barras de un formulario en papel, solo cuando se utiliza un lector de pantalla.
+* **Pie de ilustración**, lo que hará que LiveCycle Designer use la etiqueta (visual) asociada al campo de formulario como texto del lector de pantalla.
+* **Nombre**, que se establece en el campo Nombre de la ficha Enlace. Tenga en cuenta que este nombre no puede contener espacios.
+* **Ninguno**, lo que hará que el objeto no tenga un nombre. Esto nunca se recomienda para los controles del formulario.
 
 Tenga en cuenta lo siguiente al utilizar la paleta Accesibilidad para el etiquetado de controles de formulario:
 
@@ -189,15 +189,16 @@ Tenga en cuenta lo siguiente al utilizar la paleta Accesibilidad para el etiquet
 
 La Figura 4 muestra un ejemplo de un campo de texto con un pie de ilustración visual que puede no ser claro para algunos usuarios del lector de pantalla. En este ejemplo, Texto personalizado del Reader de pantalla se establece en &quot;Número de páginas&quot; y Prioridad del Reader de pantalla se establece en Texto personalizado. Como resultado, el lector de pantalla no utilizará el texto real (visual) del pie de ilustración (&quot;# of pages&quot;). Como alternativa, se podría haber especificado la información del objeto.
 
-![Especificar texto personalizado del Reader de pantalla cuando la etiqueta visible no es adecuada](/help/forms/using/assets/image-4.png)
+![Especificación de texto personalizado del Reader de pantalla cuando la etiqueta visible no es adecuada](/help/forms/using/assets/image-4.png)
 
-Figura 4: **Especificar texto personalizado del Reader de pantalla cuando la etiqueta visible no es adecuada**
+Figura 4: **Especificación del texto personalizado del Reader de pantalla cuando la etiqueta visible no es adecuada**
 
 ### Etiquetado de botones de opción
 
 Cuando un usuario con deficiencias visuales presiona un botón de opción, el lector de pantalla debe leer dos cosas:
 * Una indicación del propósito del grupo de botones de opción
-* Una etiqueta significativa para cada botón de opción Para hacer accesibles los botones de opción mediante los títulos de los botones:
+* Una etiqueta significativa para cada botón de opción
+Para que los botones de opción sean accesibles mediante los títulos de los botones:
    1. En la paleta Jerarquía, seleccione el grupo de exclusión.
    1. Haga clic en la paleta Accesibilidad y, en el cuadro Texto personalizado del Reader de pantalla, escriba el texto que se leerá para el grupo. Por ejemplo, para un grupo de exclusión que indique las opciones de pago de varias tarjetas de crédito, escriba Seleccionar un método de pago.
    1. Si los subtítulos de cada botón de opción proporcionan texto que tendrá sentido cuando lo lea un lector de pantalla, en la paleta Objeto, seleccione la pestaña Enlace y anule la selección de Especificar valor de elemento.
@@ -226,9 +227,9 @@ Cuando se crea un objeto, Designer de LiveCycle coloca automáticamente el pie d
 
 El ejemplo de la Figura 5 muestra un cuadro de texto con un pie de ilustración encima. La Posición de la paleta Diseño se establece en Superior. La ubicación predeterminada del título es a la izquierda del cuadro de texto.
 
-![Cambio de la posición del pie de ilustración mediante la paleta Diseño](/help/forms/using/assets/image-5.png)
+![Cambiando la posición del título mediante la paleta Diseño](/help/forms/using/assets/image-5.png)
 
-Figura 5: **Cambio de la posición del pie de ilustración mediante la paleta Diseño**
+Figura 5: **Cambio de la posición del título mediante la paleta Diseño**
 
 En la tabla siguiente se proporciona información general sobre las reglas de colocación de etiquetas para los controles más utilizados.
 
@@ -364,7 +365,7 @@ Para cambiar la posición de un objeto, siga uno de estos procedimientos:
 
 Puede cambiar las coordenadas de un objeto con mayor precisión mediante la paleta Diseño (se muestra en la Figura 10). Esta paleta le permite especificar las coordenadas X e Y, así como la anchura y altura del objeto.
 
-![Uso de coordenadas para colocar con precisión un objeto con la paleta Diseño](/help/forms/using/assets/image-10.png)
+![Utilizando coordenadas para colocar con precisión un objeto con la paleta Diseño](/help/forms/using/assets/image-10.png)
 
 Figura 10: **Uso de coordenadas para colocar con precisión un objeto con la paleta Diseño**
 
@@ -380,9 +381,9 @@ Como se ha mencionado anteriormente, los subformularios permiten insertar grupos
 
 Cuando dos subformularios que contienen objetos de campo se colocan en paralelo, la secuencia de tabulación recorrerá los campos del primer subformulario antes de pasar al siguiente. Esto se muestra en la figura 11, donde se utilizan dos subformularios para crear un orden de tabulación predeterminado basado en columnas.
 
-![Orden de tabulación predeterminado con subformularios](/help/forms/using/assets/image-11.png)
+![Orden de tabulación predeterminado al usar subformularios](/help/forms/using/assets/image-11.png)
 
-Figura 11: **Orden de tabulación predeterminado con subformularios**
+Figura 11: **Orden de tabulación predeterminado al usar subformularios**
 
 Los subformularios, los botones de opción y las áreas de contenido, junto con la posición vertical de los objetos en una página y su página maestra, afectan al orden de tabulación.
 
@@ -467,7 +468,7 @@ Cualquier información que se transmita únicamente en color (colores con signif
 
 Por ejemplo, la Figura 13 muestra un campo de formulario que tiene un pie de ilustración rojo (especificado con la paleta Fuente) para indicar que el campo de formulario es obligatorio. En este ejemplo, el color es el único indicador de la diferencia entre los campos de entrada obligatorios y los opcionales, lo que hace imposible que los usuarios ciegos o los usuarios con ciertos tipos de daltonismo los diferencien.
 
-![Uso del color solo para transmitir información](/help/forms/using/assets/image-13.png)
+![Usar solo el color para transmitir información](/help/forms/using/assets/image-13.png)
 
 Figura 13: **Uso del color solo para transmitir información**
 
@@ -482,7 +483,7 @@ Además, cuando proporcione descripciones o instrucciones al usuario del formula
 
 Muchos usuarios con deficiencias visuales dependen del alto contraste entre el texto y el fondo para leer los formularios. Cuando el contraste entre los colores del fondo y el primer plano no es suficiente, la lectura de un formulario puede resultar difícil, si no imposible, para algunos usuarios. La figura 14 muestra un ejemplo de un formulario con contraste insuficiente.
 
-![Un formulario con contraste de color insuficiente](/help/forms/using/assets/image-14.png)
+![Formulario con contraste de color insuficiente](/help/forms/using/assets/image-14.png)
 
 Figura 14: **Un formulario con contraste de color insuficiente**
 
@@ -516,11 +517,16 @@ Recommendations para el uso de colores:
 Las tablas son una forma eficaz de organizar y presentar el contenido en formularios accesibles. Cuando se utilizan correctamente, las filas y columnas de una tabla proporcionan una estructura predecible y coherente para el contenido del formulario. Por ejemplo, cuando un usuario de lector de pantalla navega a una celda de fila del cuerpo, el lector de pantalla especifica la ubicación de la celda y, a continuación, lee el contenido de la celda. El lector de pantalla especifica la ubicación de la celda mediante una combinación de encabezados de fila y columna o números de fila y columna. Dado que los lectores de pantalla proporcionan información que orienta al usuario hacia la ubicación del contenido en la tabla, su diseño afecta directamente a la accesibilidad de la tabla.
 
 Puede especificar las siguientes funciones para los elementos de tabla a medida que construye tablas. Estas funciones permiten a los lectores de pantalla navegar por la estructura de la tabla utilizando métodos abreviados especiales y transmiten al usuario la relación entre las celdas de la tabla y las celdas de encabezado correspondientes.
-* Tabla: asigna la función de una tabla al subformulario seleccionado. Cuando el usuario navega a este subformulario, la mayoría de los lectores de pantalla lo identifican como una tabla e indican el número de filas y columnas.
-* Fila de encabezado: asigna la función de una fila de encabezado al subformulario o fila de tabla seleccionados. Al hablar del contenido de una celda de fila del cuerpo, la mayoría de los lectores de pantalla identifican primero el contenido de la celda correspondiente en la fila de encabezado.
-* Fila de cuerpo Asigna la función de una fila de cuerpo al subformulario o fila de tabla seleccionados. Si una celda contiene un subformulario, los lectores de pantalla suelen mencionar el contenido de la celda correspondiente en la fila de encabezado, seguido de los campos del subformulario.
-* Fila de pie de página Asigna la función de una fila de pie de página al subformulario o fila de tabla seleccionados.
-* (Ninguno) Especifica una fila que transmite información sobre la tabla o su contenido. La fila no se considera parte de la tabla; sin embargo, el lector de pantalla leerá su contenido.
+* Tabla
+Asigna la función de una tabla al subformulario seleccionado. Cuando el usuario navega a este subformulario, la mayoría de los lectores de pantalla lo identifican como una tabla e indican el número de filas y columnas.
+* Fila de encabezado
+Asigna la función de una fila de encabezado al subformulario o fila de tabla seleccionados. Al hablar del contenido de una celda de fila del cuerpo, la mayoría de los lectores de pantalla identifican primero el contenido de la celda correspondiente en la fila de encabezado.
+* Fila del cuerpo
+Asigna la función de una fila de cuerpo al subformulario o fila de tabla seleccionados. Si una celda contiene un subformulario, los lectores de pantalla suelen mencionar el contenido de la celda correspondiente en la fila de encabezado, seguido de los campos del subformulario.
+* Fila de pie
+Asigna la función de una fila de pie de página al subformulario o fila de tabla seleccionados.
+* (Ninguno)
+Especifica una fila que transmite información sobre la tabla o su contenido. La fila no se considera parte de la tabla; sin embargo, el lector de pantalla leerá su contenido.
 
 Cuando se utilizan correctamente, las tablas son una forma eficaz de organizar y presentar la información tabular. Evite las tablas demasiado complejas, como las que tienen tablas y secciones anidadas.
 
@@ -550,7 +556,8 @@ Cuando se utilizan objetos de subformulario en lugar de objetos de tabla para cr
 Las funciones que admite el lector de pantalla determinan la información leída para una tabla compleja. Por ejemplo, considere una tabla que incluya una fila de encabezado y una sección con una fila de encabezado. Cuando el usuario navega a una celda de fila del cuerpo en la sección de tabla, los lectores de pantalla generalmente leen el siguiente contenido en orden:
 * Contenido de la celda adecuada en la fila de encabezado de la tabla
 * Contenido de la celda adecuada en la fila de encabezado de la sección
-* Contenido de la celda seleccionada Sin embargo, es posible que algunos lectores de pantalla no lean el contenido de ambas filas de encabezado.
+* Contenido de la celda seleccionada
+Sin embargo, es posible que algunos lectores de pantalla no lean el contenido de ambas filas de encabezado.
 
 Cree nombres o títulos visibles significativos para las tablas. Puede crear un nombre de tabla como texto estático en Adobe LiveCycle Designer y colocarlo delante de la tabla. Puede agrupar una tabla y su nombre en un subformulario. Los subformularios son especialmente útiles cuando desea combinar objetos asociados en un diseño.
 
@@ -588,8 +595,8 @@ Los campos inteligentes pueden ser una forma eficaz de facilitar el rellenado de
 
 Puede utilizar la paleta Accesibilidad para asignar funciones a objetos en función de para qué se utiliza el objeto. Estas funciones se pueden aplicar para crear encabezados en diferentes niveles.
 
-![Especificar una función de encabezado en la paleta Accesibilidad](/help/forms/using/assets/image-15.png)
-Figura 15: **Especificar una función de encabezado en la paleta Accesibilidad**
+![Especificando un rol de encabezado en la paleta Accesibilidad](/help/forms/using/assets/image-15.png)
+Figura 15: **Especificación de una función de encabezado en la paleta Accesibilidad**
 
 Siga estos pasos para crear un encabezado en el formulario:
 
@@ -668,7 +675,7 @@ Al diseñar secuencias de comandos para accesibilidad, tenga en cuenta las sigui
    * 6.2 Asegúrese de que los equivalentes del contenido dinámico se actualicen cuando cambie el contenido dinámico.
    * 6.3 Asegúrese de que las páginas se puedan utilizar cuando los scripts, applets u otros objetos de programación estén desactivados o no sean compatibles. Si no es posible, proporcione información equivalente en una página alternativa accesible.
    * 6.5 Asegúrese de que el contenido dinámico sea accesible o proporcione una presentación o página alternativa (P2).
-   * 8.1 Hacer que elementos programáticos como scripts y applets sean accesibles directamente o compatibles con tecnologías de asistencia [Prioridad 1 si la funcionalidad es importante y no se presenta en otra parte], en caso contrario (P2).
+   * 8.1 Hacer que elementos programáticos como scripts y applets sean accesibles o compatibles con las tecnologías de asistencia [Prioridad 1 si la funcionalidad es importante y no se presenta en ninguna otra parte]; en caso contrario (P2).
    * 9.3 Para los scripts, especifique controladores de eventos lógicos en lugar de controladores de eventos dependientes del dispositivo (P2).
    * 10.1 Hasta que los agentes de usuario permitan a los usuarios desactivar las ventanas generadas, no haga que aparezcan ventanas emergentes u otras ventanas y no cambie la ventana actual sin informar al usuario.
 * WCAG 2.0
@@ -679,7 +686,7 @@ Al diseñar secuencias de comandos para accesibilidad, tenga en cuenta las sigui
 ## Asegúrese de que todo el contenido de audio y vídeo sea accesible{#ensure-audio-video-accessible}
 
 Si los formularios incorporan contenido de audio o vídeo, incluidos clips de audio y vídeo, debe asegurarse de que este contenido sea accesible. Concretamente, asegúrese de que los clips de vídeo incorporados a los formularios contengan subtítulos (a veces denominados subtítulos) para usuarios sordos y con dificultades auditivas, y descripciones de vídeo para usuarios ciegos. Para los archivos de audio que no están sincronizados con el contenido de vídeo, una simple transcripción es suficiente.
-Para medios basados en Flash, consulte [vincular](/help/forms/using/best-practices-for-creating-forms-in-designer.md) para obtener información sobre cómo proporcionar subtítulos.
+Para los medios basados en el Flash, consulta [link](/help/forms/using/best-practices-for-creating-forms-in-designer.md) para obtener información sobre cómo proporcionar subtítulos.
 
 **Puntos de comprobación relacionados**:
 * Sección 508 §1194.22
@@ -714,14 +721,14 @@ Para establecer la propiedad Locale de un formulario:
 
 ![Cambiar la configuración regional del formulario en el cuadro de diálogo Propiedades del formulario](/help/forms/using/assets/image-17.png)
 
-Figura 17: **Cambiar la configuración regional del formulario en el cuadro de diálogo Propiedades del formulario**
+Figura 17: **Cambio de la configuración regional del formulario en el cuadro de diálogo Propiedades del formulario**
 
 Para establecer la propiedad Local del subformulario de nivel superior o de un objeto que requiera un idioma diferente:
 1. Seleccione el subformulario u objeto de nivel superior en la vista Diseño
 1. Muestre la paleta Objeto seleccionando Ventana > Objeto
 1. En la paleta Objeto, seleccione la pestaña Campo y, en la lista Configuración regional, seleccione el idioma que desea utilizar para el objeto (consulte la figura 18). Al aplicar diferentes opciones de configuración regional a objetos individuales, tenga en cuenta que los objetos que se encuentran en tablas y subformularios reciben automáticamente la misma configuración regional que el objeto de tabla y subformulario.
 
-![Cambio de la configuración regional de un objeto](/help/forms/using/assets/image-18.png)
+![Cambiar la configuración regional de un objeto](/help/forms/using/assets/image-18.png)
 
 Figura 18: **Cambio de la configuración regional de un objeto**
 

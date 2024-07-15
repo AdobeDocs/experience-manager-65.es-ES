@@ -22,7 +22,7 @@ Los componentes principales son componentes modernos y flexibles que ofrecen una
 
 ## Probando a cabo {#trying-it-out}
 
-1. Inicie Adobe Experience Manager AEM () con el contenido de muestra de We.Retail y abra [Consola Componentes](/help/sites-authoring/default-components-console.md).
+1. Inicie Adobe Experience Manager AEM () con el contenido de muestra de We.Retail y abra la [consola Componentes](/help/sites-authoring/default-components-console.md).
 
    **Navegación global > Herramientas > Componentes**
 
@@ -31,33 +31,33 @@ Los componentes principales son componentes modernos y flexibles que ofrecen una
    * `.core-wcm`: los componentes principales estándar
    * `.core-wcm-form`: los componentes principales del envío de formularios
 
-   Elegir `.core-wcm`.
+   Elija `.core-wcm`.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Todos los componentes principales reciben un nombre **Versión 1**, lo que refleja que esta es la primera versión de este componente principal. AEM Las versiones regulares se lanzarán a partir de ahora, lo que será compatible con la versión de los programas y permitirá realizar actualizaciones sencillas para poder aprovechar las últimas funciones.
-1. Clic **Texto (v1)**.
+1. Todos los componentes principales se denominan **v1**, lo que refleja que esta es la primera versión de este componente principal. AEM Las versiones regulares se lanzarán a partir de ahora, lo que será compatible con la versión de los programas y permitirá realizar actualizaciones sencillas para poder aprovechar las últimas funciones.
+1. Haga clic en **Texto (v1)**.
 
-   Compruebe que las variables **Tipo de medio** del componente es `/apps/core/wcm/components/text/v1/text`. Los componentes principales se encuentran en `/apps/core/wcm/components` y se crean versiones por componente.
+   Observe que el **Tipo de recurso** del componente es `/apps/core/wcm/components/text/v1/text`. Los componentes principales se encuentran en `/apps/core/wcm/components` y se crean versiones por componente.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Haga clic en **Documentación** para ver la documentación del desarrollador del componente.
+1. Haga clic en la ficha **Documentación** para ver la documentación para desarrolladores del componente.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. Vuelva a la consola Componentes. Filtro para el grupo **We.Retail** y seleccione la **Texto** componente.
-1. Compruebe que las variables **Tipo de medio** señala a un componente como se espera en `/apps/weretail` pero el **Supertipo de recurso** vuelve al componente principal `/apps/core/wcm/components/text/v1/text`.
+1. Vuelva a la consola Componentes. Filtre por el grupo **We.Retail** y seleccione el componente **Text**.
+1. Observe que el **Tipo de recurso** señala a un componente como se espera bajo `/apps/weretail`, pero el **Supertipo de recurso** señala al componente principal `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Haga clic en **Uso de Live** para ver en qué páginas se utiliza este componente. Haga clic en el primero **Gracias.** para editar la página.
+1. Haga clic en la ficha **Uso activo** para ver en qué páginas se utiliza este componente. Haga clic en la primera página de **Gracias** para editar la página.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
 1. En la página de agradecimiento, seleccione el componente de texto y, en el menú de edición del componente, haga clic en el icono Cancelar herencia.
 
-   [We.Retail tiene una estructura de sitio globalizada](/help/sites-developing/we-retail-globalized-site-structure.md) donde el contenido se inserta desde los formatos de idioma a [live copies a través de un mecanismo denominado herencia](/help/sites-administering/msm.md). Por este motivo, se debe cancelar la herencia para permitir que un usuario edite el texto manualmente.
+   [We.Retail tiene una estructura de sitio globalizada](/help/sites-developing/we-retail-globalized-site-structure.md) en la que el contenido se inserta desde los formatos de idioma a [Live Copies a través de un mecanismo denominado herencia](/help/sites-administering/msm.md). Por este motivo, se debe cancelar la herencia para permitir que un usuario edite el texto manualmente.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
@@ -65,7 +65,7 @@ Los componentes principales son componentes modernos y flexibles que ofrecen una
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Una vez cancelada la herencia y seleccionados los componentes de texto, hay muchas más opciones disponibles. Clic **Editar**.
+1. Una vez cancelada la herencia y seleccionados los componentes de texto, hay muchas más opciones disponibles. Haga clic en **Editar**.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -73,8 +73,8 @@ Los componentes principales son componentes modernos y flexibles que ofrecen una
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Desde el **Información de página** menú, seleccione **Editar plantilla**.
-1. En el Editor de plantillas de la página, haga clic en **Política** del componente Texto en la pestaña **Contenedor de diseño** de la página.
+1. En el menú **Información de la página**, seleccione **Editar plantilla**.
+1. En el Editor de plantillas de la página, haga clic en el icono **Directiva** del componente Texto en el **Contenedor de diseño** de la página.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -86,6 +86,6 @@ Los componentes principales son componentes modernos y flexibles que ofrecen una
 
 ## Información adicional {#further-information}
 
-Para obtener más información sobre los componentes principales, consulte el documento de creación [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) para obtener una descripción general de las funciones de los componentes principales y del documento para desarrolladores [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener información general técnica.
+Para obtener más información sobre los componentes principales, consulte el documento de creación [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) para obtener una descripción general de las capacidades de los componentes principales y el documento para desarrolladores [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener una descripción general técnica.
 
-También puede que desee investigar más a fondo [plantillas editables](/help/sites-developing/we-retail-editable-templates.md). Consulte el documento de creación [Creación de plantillas de página](/help/sites-authoring/templates.md) o el documento para desarrolladores Página [Plantillas: editables](/help/sites-developing/page-templates-editable.md) para obtener información detallada sobre las plantillas editables.
+Además, quizá desee investigar más a fondo [plantillas editables](/help/sites-developing/we-retail-editable-templates.md). Consulte el documento de creación [Creación de plantillas de página](/help/sites-authoring/templates.md) o el documento para desarrolladores Página [Plantillas - Editables](/help/sites-developing/page-templates-editable.md) para obtener información detallada sobre las plantillas editables.

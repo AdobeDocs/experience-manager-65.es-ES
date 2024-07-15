@@ -21,7 +21,7 @@ HTML5 forms es una nueva funcionalidad del software Adobe Experience Manager AEM
 
 Los formularios HTML5 generan documentos basados en construcciones HTML5 estándares. Puede ver los formularios HTML5 en todos los navegadores modernos compatibles con HTML5. No es necesario instalar ningún complemento de explorador adicional en los exploradores. Para obtener más información sobre los exploradores compatibles, consulte [Plataformas de cliente compatibles](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
-![Previsualización de formulario de HTML5](do-not-localize/mobile_form_on_an_ipad_date_14.png)
+![vista previa del formulario HTML 5](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
 ## Capacidades clave de los formularios HTML5 {#key-capabilities-of-html-forms-br}
 

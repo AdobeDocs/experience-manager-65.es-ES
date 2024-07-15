@@ -20,10 +20,10 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`JAR` y `WAR` son los tipos de archivo en los que se lanza Adobe Experience Manager AEM (). Se está garantizando la calidad de estos formatos para ajustarse a los niveles de soporte que el Adobe se ha comprometido a alcanzar.
+>`JAR` y `WAR` son los tipos de archivo en los que se ha lanzado Adobe Experience Manager AEM (). Se está garantizando la calidad de estos formatos para ajustarse a los niveles de soporte que el Adobe se ha comprometido a alcanzar.
 >
 
-Esta sección le explica cómo instalar Adobe Experience Manager AEM () con un servidor de aplicaciones. Consulte la [Plataformas compatibles](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) para obtener información sobre los niveles de soporte específicos proporcionados para los servidores de aplicaciones individuales.
+Esta sección le explica cómo instalar Adobe Experience Manager AEM () con un servidor de aplicaciones. Consulte la sección [Plataformas admitidas](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) para obtener información sobre los niveles de compatibilidad específicos proporcionados para los servidores de aplicaciones individuales.
 
 Se describen los pasos de instalación de los siguientes servidores de aplicaciones:
 
@@ -36,7 +36,7 @@ Consulte la documentación adecuada del servidor de aplicaciones para obtener m�
 
 >[!NOTE]
 >
->Si utiliza Dynamic Media en una implementación WAR, consulte [Documentación de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>Si usa Dynamic Media en una implementación WAR, consulte [Documentación de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## Descripción general {#general-description}
 
@@ -47,21 +47,21 @@ AEM Se trata de un único archivo de guerra que se va a implementar.
 Si se implementa, lo siguiente ocurre de forma predeterminada:
 
 * el modo de ejecución es `author`
-* la instancia (Repositorio, entorno Felix OSGI, paquetes, etc.) está instalada en `${user.dir}/crx-quickstart`donde `${user.dir}` es el directorio de trabajo actual, se llama a esta ruta de acceso a crx-quickstart `sling.home`
+* Si la instancia (Repositorio, entorno Felix OSGI, paquetes, etc.) está instalada en `${user.dir}/crx-quickstart`donde `${user.dir}` es el directorio de trabajo actual, esta ruta de acceso a crx-quickstart se denomina `sling.home`
 
-* la raíz de contexto es el nombre del archivo war, por ejemplo,  `aem-6`
+* la raíz de contexto es el nombre del archivo de guerra, por ejemplo, `aem-6`
 
 #### Configuración {#configuration}
 
 Puede cambiar el comportamiento predeterminado de la siguiente manera:
 
-* modo de ejecución : configure el `sling.run.modes` en el campo `WEB-INF/web.xml` AEM archivo del archivo de guerra de la antes de la implementación
+* AEM modo de ejecución : configure el parámetro `sling.run.modes` en el archivo `WEB-INF/web.xml` del archivo de guerra de la antes de la implementación
 
-* sling.home: configure el `sling.home` en el campo `WEB-INF/web.xml`AEM archivo del archivo de guerra de la antes de la implementación
+* AEM sling.home: antes de la implementación, configure el parámetro `sling.home` en el archivo `WEB-INF/web.xml`del archivo de guerra de la
 
 * AEM raíz de contexto: cambie el nombre del archivo de guerra de la
 
-#### Instalación de publicación {#publish-installation}
+#### Instalación de Publish {#publish-installation}
 
 Para implementar una instancia de publicación, debe establecer el modo de ejecución en Publish:
 
@@ -74,8 +74,8 @@ Para implementar una instancia de publicación, debe establecer el modo de ejecu
 
 Para comprobar si todo está instalado, puede:
 
-* siga el `error.log`para ver que todo el contenido está instalado
-* buscar en `/system/console` que todos los paquetes están instalados
+* sigue el `error.log` archivo para ver que todo el contenido está instalado
+* busque en `/system/console` que todos los paquetes estén instalados
 
 #### Dos instancias en el mismo servidor de aplicaciones {#two-instances-on-the-same-application-server}
 
@@ -87,7 +87,7 @@ Para fines de demostración, puede ser adecuado instalar la instancia de autor y
 1. Cambie sling.run.modes a publish para la instancia de publicación.
 1. Vuelva a empaquetar el archivo web.xml.
 1. Cambie el nombre de los archivos WAR para que tengan nombres diferentes. Por ejemplo, un nombre para aemauthor.war y el otro para aempublish.war.
-1. Utilice una configuración de memoria más alta. AEM Por ejemplo, las instancias de predeterminadas utilizan `-Xmx3072m`
+1. Utilice una configuración de memoria más alta. AEM Por ejemplo, las instancias predeterminadas de la aplicación utilizan `-Xmx3072m`
 1. Implemente las dos aplicaciones web.
 1. Después de la implementación, detenga las dos aplicaciones web.
 1. Tanto en las instancias de autor como en las de publicación, asegúrese de que la propiedad felix.service.urlhandlers=false de los archivos sling.properties esté establecida en false (el valor predeterminado es que esté establecida en true).
@@ -97,7 +97,7 @@ Para fines de demostración, puede ser adecuado instalar la instancia de autor y
 
 ### WebSphere® 8.5 {#websphere}
 
-Antes de una implementación, lea la [Descripción general](#general-description) arriba.
+Antes de una implementación, lea la [Descripción general](#general-description) anterior.
 
 **Preparación del servidor**
 
@@ -108,7 +108,7 @@ Antes de una implementación, lea la [Descripción general](#general-description
 * set `"JAVA_OPTS= -Xmx2048m"`
 * AEM Si desea realizar la instalación utilizando la raíz de contexto = /, cambie la raíz de contexto de la aplicación web predeterminada existente.
 
-**AEM Implementación de aplicación web**
+AEM **Implementar aplicación web de la aplicación de la**
 
 * AEM Descarga de archivo de guerra de
 * Realice las configuraciones en web.xml si es necesario (consulte la descripción general anterior)
@@ -126,15 +126,15 @@ Antes de una implementación, lea la [Descripción general](#general-description
 
 #### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
 
-Antes de una implementación, lea la [Descripción general](#general-description) arriba.
+Antes de una implementación, lea la [Descripción general](#general-description) anterior.
 
 **Preparar el servidor JBoss®**
 
-Establezca los argumentos de memoria en su archivo conf (por ejemplo, `standalone.conf`)
+Establezca argumentos de memoria en su archivo conf (por ejemplo, `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-AEM Si utiliza el analizador de implementación para instalar la aplicación web de la aplicación web de la aplicación, puede que sea recomendable aumentar el valor de `deployment-timeout,` para ese conjunto a `deployment-timeout` en el archivo xml de su instancia (por ejemplo, `configuration/standalone.xml)`:
+AEM Si usa el explorador de implementación para instalar la aplicación web de la aplicación, puede que sea conveniente aumentar el valor de `deployment-timeout,` para ese conjunto de un atributo `deployment-timeout` en el archivo xml de la instancia (por ejemplo, `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -142,7 +142,7 @@ AEM Si utiliza el analizador de implementación para instalar la aplicación web
 </subsystem>
 ```
 
-**AEM Implementación de aplicación web**
+AEM **Implementar aplicación web de la aplicación de la**
 
 * AEM Cargue la aplicación web de en la consola de administración ® JBoss.
 
@@ -150,30 +150,30 @@ AEM Si utiliza el analizador de implementación para instalar la aplicación web
 
 #### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
-Antes de una implementación, lea la [Descripción general](#general-description) arriba.
+Antes de una implementación, lea la [Descripción general](#general-description) anterior.
 
 Utiliza un diseño de servidor simple con solo un servidor de administración.
 
-**Preparación de WebLogic Server**
+**Preparación del servidor de WebLogic**
 
-* Entrada `${myDomain}/config/config.xml`agregue a la sección de configuración de seguridad:
+* En `${myDomain}/config/config.xml`agregar a la sección de configuración de seguridad:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` ver en [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) para la posición correcta (de forma predeterminada, colocarlo al final de la sección es correcto)
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` ve en [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) la posición correcta (de forma predeterminada, colocarla al final de la sección es correcta)
 
 * Aumentar configuración de memoria de VM:
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh) busque WLS_MEM_ARGS, por ejemplo, set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * abra `${myDomain}/bin/setDomainEnv.cmd` (resp .sh) para buscar WLS_MEM_ARGS, establezca, por ejemplo, `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * reiniciar WebLogic Server
 
 * Crear en `${myDomain}` una carpeta de paquetes y dentro de una carpeta cq y en ella una carpeta de plan
 
-**AEM Implementación de aplicación web**
+AEM **Implementar aplicación web de la aplicación de la**
 
 * AEM Descarga de archivo de guerra de
-* AEM Poner el archivo de guerra de la en ${myDomain}carpeta /packages/cq
+* AEM Coloque el archivo de guerra de la en la carpeta ${myDomain}/packages/cq
 * Realice las configuraciones en `WEB-INF/web.xml` si es necesario (consulte más arriba en la Descripción general)
 
-   * Desempaquetar `WEB-INF/web.xml`archivo
+   * Desempaquetar `WEB-INF/web.xml` archivo
    * cambie el parámetro sling.run.modes a publish
    * Elimine los comentarios del parámetro inicial sling.home y establezca esta ruta según sea necesario (consulte la Descripción general).
    * Reempaquetar archivo web.xml
@@ -185,18 +185,18 @@ Utiliza un diseño de servidor simple con solo un servidor de administración.
 
 #### Tomcat 8/8.5 {#tomcat}
 
-Antes de una implementación, lea la [Descripción general](#general-description) arriba.
+Antes de una implementación, lea la [Descripción general](#general-description) anterior.
 
 * **Preparar el servidor Tomcat**
 
    * Aumente la configuración de memoria de VM:
 
-      * Entrada `bin/catalina.bat` (resp `catalina.sh` en UNIX®) agregue la siguiente configuración:
+      * En `bin/catalina.bat` (resp `catalina.sh` en UNIX®) agregue la siguiente configuración:
       * `set "JAVA_OPTS= -Xmx2048m`
 
-   * Tomcat no permite el acceso de administrador o responsable durante la instalación. Por lo tanto, debe editarlo manualmente `tomcat-users.xml` para permitir el acceso a estas cuentas:
+   * Tomcat no permite el acceso de administrador o responsable durante la instalación. Por lo tanto, debe editar manualmente `tomcat-users.xml` para permitir el acceso a estas cuentas:
 
-      * Editar `tomcat-users.xml` para incluir el acceso de administrador y responsable. La configuración debería ser similar al siguiente ejemplo:
+      * Edite `tomcat-users.xml` para incluir el acceso de administrador y gerente. La configuración debería ser similar al siguiente ejemplo:
 
         ```xml
         <?xml version='1.0' encoding='utf-8'?>
@@ -223,7 +223,7 @@ Antes de una implementación, lea la [Descripción general](#general-description
 
      `webapps/manager/WEB-INF/web.xml`
 
-     y aumente el tamaño máximo de archivo y el tamaño máximo de solicitud a al menos 500 MB, consulte lo siguiente `multipart-config` ejemplo de un `web.xml` archivo.
+     y aumente el tamaño máximo de archivo y el tamaño máximo de solicitud a al menos 500 MB, vea el siguiente ejemplo de `multipart-config` de este archivo de `web.xml`.
 
      ```xml
      <multipart-config>
@@ -234,7 +234,7 @@ Antes de una implementación, lea la [Descripción general](#general-description
      </multipart-config>
      ```
 
-* **AEM Implementación de aplicación web**
+* AEM **Implementar aplicación web de la aplicación de la**
 
    * AEM Descargue el archivo de guerra de.
    * Realice las configuraciones en web.xml si es necesario (consulte la descripción general anterior).

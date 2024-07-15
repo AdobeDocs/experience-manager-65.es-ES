@@ -18,7 +18,7 @@ ht-degree: 30%
 
 # Información general de la consola de Live Copy{#live-copy-overview-console}
 
-El **Información general de Live Copy** le permite:
+La **Información general de Live Copy** le permite:
 
 * Ver/administrar la herencia en un sitio:
 
@@ -40,7 +40,7 @@ Puede abrir la Información general de Live Copy desde estas ubicaciones:
 La **Información general de Live Copy** se puede abrir desde el panel lateral **Referencias** de la consola **Sites**:
 
 1. En la consola **Sites**, [vaya a la página de modelo y selecciónela](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra el **[Referencias](/help/sites-authoring/basic-handling.md#references)** panel y seleccione **Live Copies**.
+1. Abra el panel **[Referencias](/help/sites-authoring/basic-handling.md#references)** y seleccione **Live Copies**.
 
    ![Panel Referencias: Live Copies](assets/chlimage_1-359.png)
 
@@ -48,7 +48,7 @@ La **Información general de Live Copy** se puede abrir desde el panel lateral *
    >
    >También puede abrir primero Referencias y, a continuación, seleccionar el modelo.
 
-1. Seleccionar **Información general de Live Copy** para mostrar y utilizar la descripción general de todas las live copies relacionadas con el modelo seleccionado.
+1. Seleccione **Información general de Live Copy** para mostrar y usar la información general de todas las Live Copies relacionadas con el modelo seleccionado.
 1. Use **Cerrar** para salir y volver a la consola **Sites**.
 
 ### Información general sobre la apertura de Live Copy: propiedades de una página de modelo {#opening-live-copy-overview-properties-of-a-blueprint-page}
@@ -58,22 +58,22 @@ La **Información general de Live Copy** se puede abrir al ver las propiedades d
 1. Abra las **Propiedades** de la página de modelo adecuada.
 1. Abra la pestaña **Modelo**, la **Información general de Live Copy** se muestra en la barra de herramientas superior:
 
-   ![Pestaña Modelo: Información general de Live Copy](assets/chlimage_1-360.png)
+   ![Pestaña Modelo - Información general de Live Copy](assets/chlimage_1-360.png)
 
-1. Seleccionar **Información general de Live Copy** para mostrar y utilizar la descripción general de todas las live copies relacionadas con el modelo actual.
+1. Seleccione **Información general de Live Copy** para mostrar y usar la información general de todas las Live Copies relacionadas con el modelo actual.
 
    >[!NOTE]
    >
-   >Para obtener más información, consulte también el artículo de la Base de conocimiento [Mensaje de estado de LiveCopy: actualizado/verde/sincronizado](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Para obtener más información, consulte también el artículo de la base de conocimiento [Mensaje de estado de LiveCopy: actualizado/verde/sincronizado](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 1. Use **Cerrar** para salir y volver a la consola **Sites**.
 
 ## Información general sobre el uso de Live Copy {#using-the-live-copy-overview}
 
-El **Información general de Live Copy** también se puede utilizar para realizar acciones en live copy:
+La **Información general de Live Copy** también se puede usar para realizar acciones en Live Copy:
 
 1. Abra la **Información general de Live Copy**.
-1. Seleccione el modelo necesario o la página de Live Copy: la barra de herramientas se actualizará para mostrar las acciones disponibles. El [acciones](/help/sites-administering/msm.md#terms-used) disponible depende de si selecciona una [modelo](#actions-for-a-blueprint-page) o [live copy](#actions-for-a-live-copy-page) página:
+1. Seleccione el modelo necesario o la página de Live Copy: la barra de herramientas se actualizará para mostrar las acciones disponibles. Las [acciones](/help/sites-administering/msm.md#terms-used) disponibles dependen de si selecciona una página de [modelo](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page):
 
 ### Acciones para una página de modelo {#actions-for-a-blueprint-page}
 
@@ -93,7 +93,7 @@ Cuando selecciona una página de modelo, están disponibles las siguientes accio
 
 Al seleccionar una página de Live Copy, están disponibles las siguientes acciones:
 
-![Página Live Copy seleccionada: acciones disponibles](assets/chlimage_1-362.png)
+![Página Live Copy seleccionada - acciones disponibles](assets/chlimage_1-362.png)
 
 * Editar
 
@@ -125,7 +125,7 @@ Al seleccionar una página de Live Copy, están disponibles las siguientes accio
 
 ## Estado de la relación {#relationship-status}
 
-El **Estado de relación** La consola de tiene dos pestañas que proporcionan una amplia gama de funcionalidades:
+La consola **Estado de relación** tiene dos fichas que proporcionan una amplia gama de funcionalidades:
 
 * [Información de estado de relación](#relationship-status-information)
 * [Información de Live Copy](#live-copy-information)
@@ -134,7 +134,7 @@ El **Estado de relación** La consola de tiene dos pestañas que proporcionan un
 
 Esta pestaña proporciona información detallada sobre el estado de la relación entre el modelo y la Live Copy:
 
-![Información del estado de relación](assets/chlimage_1-363.png)
+![Información de estado de relación](assets/chlimage_1-363.png)
 
 ### Información de Live Copy {#live-copy-information}
 

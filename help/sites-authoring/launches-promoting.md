@@ -53,7 +53,7 @@ Puede promocionar lanzamientos desde la consola **Sites** o la consola **Lanzami
 
 1. Abra:
 
-   * el **Sites** consola:
+   * la consola **Sitios**:
 
       1. Abra el [carril de referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) y seleccione la página de origen necesaria con el [modo de selección](/help/sites-authoring/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no importa). Se muestran todas las referencias.
 
@@ -61,7 +61,7 @@ Puede promocionar lanzamientos desde la consola **Sites** o la consola **Lanzami
       1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
       1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
 
-   * el **Lanzamientos** consola:
+   * la consola **Lanzamientos**:
 
       1. Seleccione el lanzamiento (haga clic en la miniatura).
       1. Seleccione **Promocionar**.
@@ -90,7 +90,7 @@ Puede promocionar lanzamientos desde la consola **Sites** o la consola **Lanzami
 1. Seleccione **Siguiente** para continuar.
 1. Puede revisar las páginas que se promocionarán, que dependerán del intervalo de páginas que haya elegido:
 
-   ![Revisar páginas para promocionar](assets/chlimage_1-102.png)
+   ![Páginas de revisión para promocionar](assets/chlimage_1-102.png)
 
 1. Seleccione **Promocionar**.
 
@@ -110,14 +110,14 @@ Después de crear un lanzamiento anidado, puede promocionarlo de nuevo a cualqui
 
 ![Información general sobre la promoción de un lanzamiento anidado](assets/chlimage_1-104.png)
 
-1. Al igual que con [Creación de un lanzamiento anidado](#creatinganestedlaunchlaunchwithinalaunch), vaya a y seleccione el lanzamiento necesario en el **Lanzamientos** o la **Referencias** carril.
+1. Al igual que con [Creación de un lanzamiento anidado](#creatinganestedlaunchlaunchwithinalaunch), vaya y seleccione el lanzamiento requerido en la consola **Lanzamientos** o en el carril **Referencias**.
 1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
 
 1. Introduzca la información necesaria:
 
    * **Destino**
 
-      * **Destino del cambio**
+      * **Destino de la promoción**
 Puede promocionar a cualquiera de los orígenes.
 
       * **Eliminar lanzamiento después de la promoción**
@@ -142,9 +142,9 @@ Aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las 
    >
    >Las páginas que se muestran dependerán del **ámbito** que haya definido y, posiblemente, de las páginas que realmente se han editado.
 
-1. Sus cambios se promocionarán y reflejarán en la **Lanzamientos** consola:
+1. Los cambios se promocionarán y se reflejarán en la consola **Lanzamientos**:
 
-   ![Consola de lanzamientos](assets/chlimage_1-107.png)
+   ![Inicia la consola](assets/chlimage_1-107.png)
 
 ## Procesamiento de páginas promocionadas mediante el flujo de trabajo de AEM {#processing-promoted-pages-using-aem-workflow}
 
@@ -154,7 +154,7 @@ Utilice modelos de flujo de trabajo para realizar procesamientos masivos de pág
 1. Cuando los autores promocionan páginas de lanzamiento, las guardan en el paquete de flujo de trabajo.
 1. Inicie un modelo de flujo de trabajo con el paquete como carga útil.
 
-Para iniciar un flujo de trabajo automáticamente cuando se promocionan páginas, [configuración de un lanzador de flujo de trabajo](/help/sites-administering/workflows-starting.md#workflows-launchers) para el nodo del paquete.
+Para iniciar un flujo de trabajo automáticamente cuando se promocionen páginas, [configure un iniciador de flujo de trabajo](/help/sites-administering/workflows-starting.md#workflows-launchers) para el nodo de paquete.
 
 Por ejemplo, puede generar automáticamente solicitudes de activación de página cuando los autores promocionen páginas de lanzamiento. Configure un lanzador de flujo de trabajo para iniciar el flujo de trabajo de activación de solicitud cuando se modifique el nodo del paquete.
 

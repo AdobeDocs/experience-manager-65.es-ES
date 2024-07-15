@@ -170,7 +170,7 @@ En el siguiente ejemplo se proporcionan los pasos para utilizar Repetir para est
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. Seleccionar **Repetir**. El cuadro de diálogo Repetir aparecerá con una condición vacía dentro de la línea.
+1. Seleccione **Repetir**. El cuadro de diálogo Repetir aparecerá con una condición vacía dentro de la línea.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 

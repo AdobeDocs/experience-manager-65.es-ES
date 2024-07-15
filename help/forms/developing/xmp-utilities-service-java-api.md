@@ -28,7 +28,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->AEM Los inicios rápidos en Programación con formularios de la aplicación se basan en el servidor de Forms si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Los inicios rápidos en Programación con formularios de la aplicación se basan en el servidor de Forms si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## SOAP XMP Inicio rápido (modo de): Exportación de metadatos de la aplicación mediante la API de Java {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
@@ -137,7 +137,7 @@ XMP En el ejemplo de código siguiente se recuperan, inspeccionan y guardan meta
 
 ## SOAP XMP Inicio rápido (modo de): Importación de metadatos de la mediante la API de Java {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-XMP En el ejemplo de código siguiente se importan los metadatos de la y se guarda el nuevo archivo de PDF en el disco. El documento de PDF se basa en un archivo de PDF denominado Loan.pdf. El documento XML que contiene los metadatos que se van a importar en el documento de PDF se basa en un archivo XML denominado *LoanMetaData.xml*. Para obtener información sobre este archivo XML, consulte [Importación de metadatos en documentos de PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
+XMP En el ejemplo de código siguiente se importan los metadatos de la y se guarda el nuevo archivo de PDF en el disco. El documento de PDF se basa en un archivo de PDF denominado Loan.pdf. El documento XML que contiene los metadatos que se van a importar en el documento de PDF se basa en un archivo XML denominado *LoanMetaData.xml*. Para obtener información acerca de este archivo XML, vea [Importación de metadatos en documentos de PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```java
  /*

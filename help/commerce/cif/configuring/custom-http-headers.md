@@ -25,7 +25,7 @@ CIF Para obtener más control sobre su back-end, los autores pueden configurar e
 
 ## Configuración {#configuration}
 
-Para configurar los encabezados HTTP personalizados, primero debe definirlos. Los encabezados HTTP personalizados deben definirse primero agregándolos a la variable `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` configuración del servicio mediante una configuración OSGi.
+Para configurar los encabezados HTTP personalizados, primero debe definirlos. Los encabezados HTTP personalizados deben definirse primero agregándolos a la configuración del servicio `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` mediante una configuración OSGi.
 
 Puede configurar los valores de los encabezados HTTP en la página Configuración de Cloud Service de su proyecto:
 
@@ -37,7 +37,7 @@ Los componentes que utilizan la configuración de servicio en la nube anterior e
 
 ## Restricciones {#restrictions}
 
-Aunque el servicio permite definir cualquier nombre de encabezado, incluidos los estándar, no están disponibles para su configuración. En otras palabras, no se pueden anular los encabezados HTTP estándar con esta función. Se puede encontrar una lista de nombres de encabezado restringidos [aquí](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Además de estos, hay dos encabezados más que no se pueden utilizar:
+Aunque el servicio permite definir cualquier nombre de encabezado, incluidos los estándar, no están disponibles para su configuración. En otras palabras, no se pueden anular los encabezados HTTP estándar con esta función. Se puede encontrar una lista de nombres de encabezados restringidos [aquí](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Además de estos, hay dos encabezados más que no se pueden utilizar:
 
 * CIF &quot;Almacén&quot;: utilizado por los usuarios para identificar la tienda de Adobe Commerce.
 * CIF &quot;Preview-Version&quot;: utilizado por los usuarios para recuperar productos clasificados.

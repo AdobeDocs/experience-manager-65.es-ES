@@ -31,15 +31,15 @@ El componente de comentarios establece un sistema de comentarios tal que cada pu
    <td> social/commons/components/hbs/comments</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
-   <td>Sí, las propiedades se pueden editar en <i>diseño </i>modo</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluido</strong></a></td>
+   <td>Sí, las propiedades se pueden editar en el modo </i>design<i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.vote</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td> /libs/social/commons/components/hbs/comments/comments.hbs<br /> </td>
   </tr>
   <tr>
@@ -48,7 +48,7 @@ El componente de comentarios establece un sistema de comentarios tal que cada pu
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td> Consulte <a href="comments.md">Uso de comentarios</a></td>
+   <td> Ver <a href="comments.md">Uso de comentarios</a></td>
   </tr>
  </tbody>
 </table>
@@ -80,22 +80,22 @@ Esto se aplica a cualquier componente que amplía un sistema de comentarios.
 
 * [API de comentarios](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Extremos de comentarios](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [Puntos finales de comentarios](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ### Acceder a los comentarios publicados (UGC) {#accessing-posted-comments-ugc}
 
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
-Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
+Consulte [Moderar contenido generado por el usuario](moderate-ugc.md).
 
-AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Resumen del proveedor de recursos de almacenamiento](srp.md) - Introducción y descripción general del uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
-* [Refactorización de SocialUtils](socialutils.md) : Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales.
+* [SRP y UGC Essentials](srp-and-ugc.md): métodos y ejemplos de utilidades SRP.
+* [Acceder a UGC con SRP](accessing-ugc-with-srp.md): directrices de codificación.
+* [Refactorización de SocialUtils](socialutils.md): asignando métodos de utilidad obsoletos a métodos de utilidad SRP actuales.

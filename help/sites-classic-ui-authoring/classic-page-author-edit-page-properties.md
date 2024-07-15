@@ -64,7 +64,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
   La descripción de la página, su propósito o cualquier otro detalle que desee añadir.
 
-* **Tiempo de activación**
+* **A Tiempo**
 
   La fecha y hora a las que se activará la página publicada. Cuando se publique, esta página se mantendrá inactiva hasta el momento especificado.
 
@@ -80,7 +80,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
   Permite introducir una URL de vanidad para esta página. Esto permite tener una URL más corta y expresiva.
 
-  Por ejemplo, si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio web h `ttp://example.com,` entonces h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
+  Por ejemplo, si la URL de vanidad se establece en w `elcome` para la página identificada por la ruta / `v1.0/startpage` para el sitio web h `ttp://example.com,`, h `ttp://example.com/welcome` sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
   >
@@ -105,7 +105,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Design**
 
-  Indique el [diseño](/help/sites-developing/designer.md) para utilizar en esta página.
+  Indique el [diseño](/help/sites-developing/designer.md) que se usará para esta página.
 
 * **Alias**
 
@@ -115,7 +115,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
   Habilita (o deshabilita) el uso de [grupos de usuarios cerrados](/help/sites-administering/cug.md) (CUG).
 
-* **Página de inicio**
+* **Página de inicio de sesión**
 
   La página que se utilizará para iniciar sesión.
 
@@ -123,7 +123,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
   Grupos aptos para iniciar sesión en el CUG.
 
-* **Territorio**
+* **Dominio**
 
   Nombre de dominio para el CUG.
 
@@ -137,7 +137,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
   Muestra la miniatura de la página. Puede hacer lo siguiente:
 
-   * **Generar previsualización**
+   * **Generar vista previa**
 
      Genere una previsualización de la página para utilizarla como miniatura.
 
@@ -149,7 +149,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Cloud Services**
 
-  Definir propiedades para [cloud services](/help/sites-developing/extending-cloud-config.md).
+  Defina propiedades para [servicios en la nube](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalización {#personalization}
 
@@ -161,7 +161,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Permisos** (IU táctil optimizada)
 
-  Ver el [permisos efectivos y añadir nuevos permisos](/help/sites-administering/user-group-ac-admin.md).
+  Vea los [permisos efectivos y agregue nuevos permisos](/help/sites-administering/user-group-ac-admin.md).
 
 ### Modelo {#blueprint}
 
@@ -173,11 +173,11 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Live Copy**
 
-  Definir propiedades para una página Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
+  Defina propiedades para una página Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
 ### Estructura del sitio    {#site-structure}
 
-* Proporcionar vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros.
+* Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros.
 
 ## Edición de las propiedades de página   {#editing-page-properties-2}
 
@@ -187,8 +187,8 @@ Propiedades de página define las distintas propiedades de la página, como los 
 
 1. Abra la página que desee editar.
 
-1. En la barra de tareas, abra **Página** pestaña y seleccione **Propiedades de página...**
+1. En la barra de tareas, abra la pestaña **Página** y, a continuación, seleccione **Propiedades de página...**
 
    Esto abre un cuadro de diálogo con varias pestañas.
 
-1. Realice los cambios necesarios y haga clic en **OK** para guardar.
+1. Realice los cambios que necesite y, a continuación, haga clic en **Aceptar** para guardar.

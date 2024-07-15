@@ -18,7 +18,7 @@ ht-degree: 52%
 
 # Métodos abreviados de teclado al editar páginas{#keyboard-shortcuts-when-editing-pages}
 
-Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros, en la [uso de consolas](/help/sites-authoring/keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros, en el [uso de las consolas](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 | Lugar de residencia | Atajo | Descripción |
 |---|---|---|
-| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Previsualizar** y el seleccionado actualmente [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (por ejemplo, **Editar**, **Diseño**, etc.) |
+| Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista previa** y el [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> seleccionado actualmente (por ejemplo, **Editar**, **Diseño**, etc.) |
 | Modo de **edición** | `Ctrl-z` | [Deshacer el último cambio](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rehacer el último cambio](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Seleccionar varios párrafos |
@@ -42,7 +42,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->&amp;ast; Una vez que el usuario empiece a interactuar con la página en modo de vista previa, la variable `Ctrl-Shift-m` el acceso directo ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el acceso directo vuelva a estar disponible.
+>&amp;ast; Una vez que el usuario empieza a interactuar con la página en modo de vista previa, el método abreviado `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el acceso directo vuelva a estar disponible.
 
 También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-authoring/keyboard-shortcuts.md).
 

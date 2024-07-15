@@ -24,11 +24,11 @@ La infraestructura subyacente para las etiquetas aplicadas en el entorno de publ
 
 * Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) y [Etiquetado del contenido generado por el usuario](tag-ugc.md) (UGC) para obtener información sobre cómo crear y administrar etiquetas.
 
-* Consulte [Etiquetado para desarrolladores](../../help/sites-developing/tags.md) para obtener información acerca de [marco de etiquetado](../../help/sites-developing/framework.md) e inclusión y ampliación de etiquetas en [aplicaciones personalizadas](../../help/sites-developing/building.md).
+* Consulte [Etiquetado para desarrolladores](../../help/sites-developing/tags.md) para obtener información sobre el [marco de etiquetado](../../help/sites-developing/framework.md) y cómo incluir y ampliar etiquetas en [aplicaciones personalizadas](../../help/sites-developing/building.md).
 
-* Consulte [Uso de Social Tag Cloud](tagcloud.md) para obtener información para los autores sobre cómo agregar una `social tag cloud` Componente a una página para resaltar las etiquetas aplicadas a UGC en el entorno de publicación.
+* Consulte [Uso de la nube de etiquetas social](tagcloud.md) para obtener información para autores sobre cómo agregar un componente `social tag cloud` a una página para resaltar las etiquetas aplicadas a UGC en el entorno de publicación.
 
-El etiquetado de UGC puede habilitarse al configurar una [sitio comunitario](sites-console.md#tagging) o una de las siguientes funciones:
+El etiquetado de UGC puede habilitarse al configurar un [sitio de la comunidad](sites-console.md#tagging) o una de las siguientes características:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -55,7 +55,7 @@ El etiquetado de UGC puede habilitarse al configurar una [sitio comunitario](sit
    <td>cq.social.hbs.tagcloud</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td> /libs/social/commons/components/hbs/tagcloud/tagcloud.hbs<br /> </td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ El etiquetado de UGC puede habilitarse al configurar una [sitio comunitario](sit
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td>Consulte <a href="tagcloud.md">Uso de Social Tag Cloud</a></td>
+   <td>Ver <a href="tagcloud.md">Uso de la nube de etiquetas sociales</a></td>
   </tr>
  </tbody>
 </table>
@@ -75,12 +75,12 @@ El etiquetado de UGC puede habilitarse al configurar una [sitio comunitario](sit
 
 * [API de nube de etiquetas social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Administrador de etiquetas social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Administrador de etiquetas sociales](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ## Búsqueda de etiquetas {#tag-searching}
 
-A partir de [paquete de funciones 1](deploy-communities.md#latestfeaturepack) (FP1), la búsqueda de etiquetas se realiza mediante [títulos de etiquetas](../../help/sites-developing/framework.md#tag-characteristics).
+A partir del [paquete de funciones 1](deploy-communities.md#latestfeaturepack) (FP1), la búsqueda de etiquetas se realizará usando [títulos de etiquetas](../../help/sites-developing/framework.md#tag-characteristics).
 
-Antes de FP1, la búsqueda se realizaba mediante [id de etiqueta](../../help/sites-developing/framework.md#tagid).
+Antes de FP1, la búsqueda se realizaba con [id. de etiqueta](../../help/sites-developing/framework.md#tagid).

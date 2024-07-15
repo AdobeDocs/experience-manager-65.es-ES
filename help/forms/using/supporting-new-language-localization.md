@@ -56,7 +56,7 @@ Una vez identificada la configuración regional, el formulario adaptable selecci
 
 Si no hay información de configuración regional, el formulario adaptable se entrega en el idioma original del formulario. El idioma original es el idioma utilizado al desarrollar el formulario adaptable.
 
-Si no existe una biblioteca de cliente para la configuración regional solicitada, se busca una biblioteca de cliente para el código de idioma presente en la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (Inglés sudafricano) y la biblioteca de cliente para `en_ZA` no existe, el formulario adaptable utilizará la biblioteca de cliente para `en` Idioma (inglés), si existe. Sin embargo, si no existe ninguna biblioteca, el formulario adaptable utilizará el diccionario de la configuración regional `en`.
+Si no existe una biblioteca de cliente para la configuración regional solicitada, se busca una biblioteca de cliente para el código de idioma presente en la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (Inglés sudafricano) y la biblioteca de cliente de `en_ZA` no existe, el formulario adaptable utilizará la biblioteca de cliente de `en` (Inglés), si existe. Sin embargo, si no existe ninguna biblioteca, el formulario adaptable utilizará el diccionario de la configuración regional `en`.
 
 ## Agregar compatibilidad con la localización para configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
 
@@ -96,7 +96,7 @@ I18N.js
 
 ### Agregue la biblioteca de cliente del formulario adaptable para una configuración regional. {#add-adaptive-form-client-library-for-a-locale-br}
 
-Creación de un nodo de tipo `cq:ClientLibraryFolder` bajo `etc/<folderHierarchy>`, con la categoría como `guides.I18N.<locale>` y dependencias como `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` y `guide.common`. &quot;
+Cree un nodo de tipo `cq:ClientLibraryFolder` en `etc/<folderHierarchy>`, con categoría como `guides.I18N.<locale>` y dependencias como `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` y `guide.common`. &quot;
 
 Agregue los siguientes archivos a la biblioteca de cliente:
 

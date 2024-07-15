@@ -19,7 +19,7 @@ ht-degree: 56%
 
 >[!CAUTION]
 >
->Adobe Experience Manager AEM () Forms proporciona el [Editor de temas](/help/forms/using/themes.md) capacidad para crear y modificar formularios adaptables [temas](/help/forms/using/themes.md). Realice los pasos enumerados en este artículo solo si ha actualizado desde una versión que no tiene [Editor de temas](/help/forms/using/themes.md) y ya tiene una inversión en temáticas creadas con menos archivos CSS (método editor pre-tema).
+>Adobe Experience Manager AEM () Forms proporciona la capacidad [Editor de temáticas](/help/forms/using/themes.md) para crear y modificar [temáticas](/help/forms/using/themes.md) de formularios adaptables. Realice los pasos enumerados en este artículo solo si ha actualizado desde una versión que no tiene [Editor de temáticas](/help/forms/using/themes.md) y ya tiene creada una inversión en temáticas con menos archivos CSS (método editor pre-tema).
 
 ## Requisitos previos {#prerequisites}
 
@@ -31,7 +31,7 @@ ht-degree: 56%
 
 Una **temática de formulario adaptable** es una biblioteca de cliente de AEM que se utiliza para definir los estilos (aspecto y presentación) de un formulario adaptable.
 
-Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. Puede utilizar esta plantilla personalizada para crear una **formulario adaptable**.
+Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. Puede usar esta plantilla personalizada para crear un **formulario adaptable**.
 
 ![Formulario adaptable y biblioteca de cliente](assets/hierarchy.png)
 
@@ -62,13 +62,13 @@ Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. P
 
    * `less` carpeta: Contiene los archivos de la variable `less` en los que define las variables `less` y `less mixins` que se utilizan para administrar los estilos .css.
 
-     Esta carpeta consta de `less` archivos de variables, `less` archivos de mezcla, `less` archivos que definen estilos mediante mezclas y variables. Y todos estos `less` los archivos se importan en styles.less.
+     Esta carpeta consta de `less` archivos de variables, `less` archivos de mezcla, `less` archivos que definen estilos mediante mezclas y variables. Y todos estos `less` archivos se importan en styles.less.
 
    * `css` carpeta: Contiene los archivos .css en los que se definen los estilos estáticos que se utilizarán en la temática.
 
-   **Archivos de variables Less**: estos son los archivos donde se definen o anulan las variables que se utilizan para definir estilos CSS.
+   **Archivos de variables Less**: estos son los archivos donde define o anula las variables que se usan para definir estilos CSS.
 
-   Los formularios adaptables proporcionan variables predeterminadas definidas en los siguientes elementos `.less` archivos:
+   Los formularios adaptables proporcionan variables predeterminadas definidas en los siguientes `.less` archivos:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -77,7 +77,7 @@ Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. P
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   Puede usar el complemento `less` que se proporcionan con los formularios adaptables, puede anular estas variables o crear nuevas `less` variables.
+   Puede utilizar las variables `less` que se proporcionan con los formularios adaptables, puede anular estas variables o crear nuevas variables `less`.
 
    >[!NOTE]
    >
@@ -134,11 +134,11 @@ Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. P
    }
    ```
 
-   **Archivo Styles.less:** Utilice este archivo para incluir todos los `less` archivos (variables, mezclas, estilos) que debe utilizar en la biblioteca de cliente.
+   **Archivo Styles.less:** Use este archivo para incluir todos los archivos `less` (variables, mezclas, estilos) que debe usar en la biblioteca de cliente.
 
    En el siguiente archivo de ejemplo `styles.less`, la instrucción import se puede colocar en cualquier orden.
 
-   Instrucciones para importar lo siguiente `.less` Los archivos son obligatorios:
+   Las instrucciones para importar los siguientes `.less` archivos son obligatorias:
 
    * `globalvariables.less`
    * `layoutvariables.less`

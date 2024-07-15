@@ -58,7 +58,7 @@ Una vez analizado el diseño necesario para crear la comunicación interactiva, 
 
 Realice los siguientes pasos para utilizar el subformulario en una plantilla XDP:
 
-1. Abra Forms Designer y seleccione **Archivo** > **Nuevo** > **Utilizar un formulario en blanco**, seleccione **Siguiente**, y luego seleccione **Finalizar** para abrir el formulario y crear plantillas.
+1. Abra Forms Designer, seleccione **Archivo** > **Nuevo** > **Use un formulario en blanco**, seleccione **Siguiente** y, a continuación, seleccione **Finalizar** para abrir el formulario y crear plantillas.
 
    Asegúrese de que las opciones **Biblioteca de objetos** y **Objeto** se seleccionan en el menú **Ventana**.
 
@@ -126,9 +126,9 @@ Siga los siguientes pasos para utilizar el componente Tabla en la plantilla XDP 
 
    1. Especifique el número de filas y columnas de la tabla.
    1. Seleccione la casilla de verificación **Incluir fila de encabezado en tabla** para incluir una fila para el encabezado de tabla.
-   1. Seleccionar **OK**.
+   1. Seleccione **Aceptar**.
 
-1. Seleccionar **+** en el panel izquierdo junto al nombre de la tabla, haga clic con el botón derecho en los nombres de celda incluidos en el encabezado y en otras filas y seleccione **Cambiar nombre de objeto** para cambiar el nombre de las celdas de la tabla.
+1. Seleccione **+** en el panel izquierdo junto al nombre de la tabla, haga clic con el botón secundario en los nombres de celda incluidos en el encabezado y en otras filas y seleccione **Cambiar nombre de objeto** para cambiar el nombre de las celdas de la tabla.
 1. Haga clic en los campos de texto del encabezado de la tabla de la **vista Diseño** y cambie su nombre.
 1. Arrastre y suelte el componente **Campo de texto** de la **Biblioteca de objetos** en cada una de las celdas de la tabla en la **vista Diseño**. Realice este paso para poder enlazar las celdas de tabla con los objetos del modelo de datos de formulario durante la creación de la comunicación interactiva.
 
@@ -150,8 +150,8 @@ Siga los siguientes pasos para utilizar el componente Tabla en la plantilla XDP 
 Una vez creada una plantilla XDP con el Forms Designer, debe cargarla en el servidor de AEM Forms para que la plantilla esté disponible para su uso durante la creación de comunicaciones interactivas.
 
 1. Seleccione **Forms** > **Formularios y documentos**.
-1. Seleccionar **Crear** > **Carga de archivos**.
-1. Vaya a la ubicación de la plantilla XDP en el sistema de archivos local y seleccione **Abrir** para importar la plantilla XDP en el servidor de AEM Forms.
+1. Seleccione **Crear** > **Carga de archivo**.
+1. Vaya a la ubicación de la plantilla XDP en el sistema de archivos local y seleccione **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
 
 ## Uso del esquema {#using-schema}
 

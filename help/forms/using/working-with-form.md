@@ -25,13 +25,13 @@ Para sincronizar su formulario en la aplicación de AEM Forms:
 
 1. En la instancia de autor, seleccione un formulario y haga clic en **Ver propiedades**.
 1. En la página Propiedades, haga clic en **Avanzadas**.
-1. En Avanzadas, active la opción: **Sincronizar con la aplicación de AEM Forms** y seleccione **Guardar**.
+1. En Avanzadas, habilita la opción: **Sincronizar con la aplicación de AEM Forms** y selecciona **Guardar**.
 
-Para sincronizar varios formularios, en la instancia de autor, seleccione varios formularios en el administrador de formularios y seleccione **Sincronizar con la aplicación de AEM Forms**. Cuando se publica el formulario, la aplicación de AEM Forms puede conectarse al servidor de publicación y recuperar los formularios.
+Para sincronizar varios formularios, en la instancia de autor, selecciona varios formularios en el administrador de formularios y selecciona **Sincronizar con la aplicación de AEM Forms**. Cuando se publica el formulario, la aplicación de AEM Forms puede conectarse al servidor de publicación y recuperar los formularios.
 
 Si su aplicación AFA Android (aplicación de AEM Forms) no se puede sincronizar, realice los siguientes pasos para solucionar el problema de sincronización:
 
-1. Vaya a la **https://[server]:[puerto]/system/console/configMgr**.
+1. Vaya a **https://[server]:[port]/system/console/configMgr**.
 1. Busque el **[!UICONTROL Controlador de autenticación de token de Adobe Granite]** y haga clic en **[!UICONTROL Editar]**.
 1. Seleccione la opción **[!UICONTROL Ninguno]** en el menú desplegable del atributo **[!UICONTROL Atributo SameSite para la cookie del token de inicio de sesión]**.
 1. Haga clic en **[!UICONTROL Guardar]**.
@@ -50,5 +50,5 @@ Si su aplicación AFA Android (aplicación de AEM Forms) no se puede sincronizar
 
 **Para abrir y actualizar un formulario**
 
-1. Para abrir un formulario, seleccione la **[!UICONTROL Form]** en la pantalla de inicio.
+1. Para abrir un formulario, selecciona **[!UICONTROL Formulario]** en la pantalla de inicio.
 1. Puede actualizar los campos del formulario, agregar archivos adjuntos, guardar como borrador y enviarlo.

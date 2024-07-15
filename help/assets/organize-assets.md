@@ -30,20 +30,20 @@ Todos los recursos digitales, metadatos y contenido de los documentos de Microso
 La forma más básica de organizar los recursos es guardarlos en carpetas. Es análogo a organizar archivos en carpetas en el sistema de archivos local. Para obtener más información sobre cómo crear y administrar carpetas, consulte [Administrar recursos](manage-assets.md). El modo de asignar nombres a los archivos y carpetas, organizar las subcarpetas y administrar los archivos de estas carpetas puede tener un impacto significativo en el modo en que se procesan esos recursos. Si utiliza estrategias de nomenclatura de archivos y carpetas coherentes y adecuadas, junto con una buena práctica de metadatos, puede sacar el máximo partido a su repositorio de recursos digitales.
 
 * Normalmente, el repositorio de recursos digitales siempre está creciendo. Por lo tanto, es importante formalizar el uso de metadatos, la estructura de carpetas y la nomenclatura de archivos al principio del ciclo de creación de contenido.
-* Utilice carpetas únicamente para imponer una estructura de almacenamiento coherente para los recursos digitales. Esta coherencia le ayuda a procesar y administrar mejor sus recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a utilizar los recursos adecuados [perfiles que se utilizarán para el procesamiento de recursos](processing-profiles.md):
+* Utilice carpetas únicamente para imponer una estructura de almacenamiento coherente para los recursos digitales. Esta coherencia le ayuda a procesar y administrar mejor sus recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a utilizar [perfiles adecuados para el procesamiento de recursos](processing-profiles.md):
 
-   * **Carpetas de desarrollo**: contiene recursos digitales en los que está trabajando actualmente.
+   * **Carpetas de desarrollo**: contiene recursos digitales en los que está trabajando.
    * **Carpetas de cliente**: contiene recursos digitales basados en nombres de clientes o proyectos.
-   * **Carpetas principales**: contiene recursos digitales originales.
-   * **Representación de carpetas**: contiene representaciones y copias de los recursos digitales de origen originales.
+   * **Carpetas principales**: contiene recursos digitales de origen originales.
+   * **Carpetas de representación**: contiene representaciones y copias de los recursos digitales originales.
    * **Carpetas de tamaño de archivo**: contiene recursos digitales basados en tamaños de archivo pequeños, medianos o grandes.
    * **Carpetas de ensayo**: contiene recursos digitales que están listos para publicarse en el sitio web.
-   * **Carpetas de tipo MIME**: contiene recursos digitales específicos de tipos MIME, como imágenes, documentos y multimedia.
+   * **Carpetas de tipo MIME**: contiene recursos digitales específicos de tipos MIME como imágenes, documentos y multimedia.
    * **Archivar carpetas**: contiene recursos digitales retirados.
    * **Carpetas basadas en fechas**: contiene recursos digitales basados en una fecha de creación o en una fecha de última modificación.
 
 * Cree un directorio de carpetas que no tengan probabilidades de cambiar para que la personalización o automatización sigan funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
-* Si un recurso ya se ha publicado, utilice [!DNL Experience Manager] para mover el recurso a otra carpeta y volver a publicar desde su nueva ubicación, la ubicación del recurso publicado original aún está disponible junto con el recurso recién publicado. Sin embargo, el recurso publicado original es *perdido* hasta [!DNL Experience Manager] y no se puede cancelar su publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a una carpeta diferente.
+* Si un recurso ya se ha publicado, utilice [!DNL Experience Manager] para mover el recurso a otra carpeta y volver a publicar desde su nueva ubicación, la ubicación original del recurso publicado aún estará disponible junto con el recurso recién publicado. Sin embargo, el recurso publicado original está *perdido* a [!DNL Experience Manager] y no se puede cancelar su publicación. Por lo tanto, como práctica recomendada, primero debe cancelar la publicación de un recurso y, a continuación, moverlo a una carpeta diferente.
 
 ## Organización de recursos mediante etiquetas {#use-tags-to-organize-assets}
 
@@ -59,7 +59,7 @@ Para obtener más información, consulte los siguientes artículos:
 
 ## Organizar como colecciones {#organize-as-collections}
 
-Con colecciones de recursos en [!DNL Experience Manager Assets], puede optimizar la capacidad de crear, editar y compartir recursos entre los usuarios. Cree varios tipos de colecciones en función de su uso, incluidas las que contienen una lista de referencia estática de recursos, carpetas y colecciones y las que extraen recursos en función de criterios de búsqueda. También puede crear colecciones con recursos de diferentes ubicaciones y compartirlas con varios usuarios con diferentes niveles de acceso, visualización y privilegios de edición.
+Con las colecciones de recursos de [!DNL Experience Manager Assets], puede optimizar la capacidad para crear, editar y compartir recursos entre los usuarios. Cree varios tipos de colecciones en función de su uso, incluidas las que contienen una lista de referencia estática de recursos, carpetas y colecciones y las que extraen recursos en función de criterios de búsqueda. También puede crear colecciones con recursos de diferentes ubicaciones y compartirlas con varios usuarios con diferentes niveles de acceso, visualización y privilegios de edición.
 
 Para obtener más información, consulte [administrar colecciones](manage-collections.md).
 

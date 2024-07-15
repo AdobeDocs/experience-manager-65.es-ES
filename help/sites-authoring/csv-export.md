@@ -29,7 +29,7 @@ ht-degree: 74%
 >
 >Se utiliza la función de descarga (y el destino predeterminado) de su navegador.
 
-El **Crear exportación de CSV** El asistente le permite seleccionar:
+El asistente **Crear exportación de CSV** le permite seleccionar:
 
 * Propiedades para exportar
    * Metadatos
@@ -54,13 +54,13 @@ El archivo `export.csv` resultante se puede abrir en Excel o en cualquier otra a
 
 ![etc-01](assets/etc-01.png)
 
-La creación de **Informe CSV** La opción está disponible al navegar por la **Sites** consola (en la vista de lista): es una opción del **Crear** menú desplegable:
+La opción Crear **informe CSV** está disponible al examinar la consola **Sitios** (en la vista de lista): es una opción del menú desplegable **Crear**:
 
 ![etc-02](assets/etc-02.png)
 
 Para crear una exportación de CSV: 
 
-1. Abra el **Sites** consola de, vaya a la ubicación requerida si es necesario.
+1. Abra la consola **Sites** y vaya a la ubicación requerida si es necesario.
 1. Para abrir el asistente, en la barra de herramientas seleccione **Crear** y, a continuación, **Informe de CSV**:
 
    ![etc-03](assets/etc-03.png)

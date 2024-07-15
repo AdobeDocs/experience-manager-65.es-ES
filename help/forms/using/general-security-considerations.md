@@ -210,11 +210,11 @@ El servidor de aplicaciones JBoss® utiliza el puerto 8080 como puerto HTTP pred
 
 1. Abra el siguiente archivo para editarlo:
 
-   Instalación en un solo servidor: [Raíz de JBoss®]/standalone/configuration/standalone.xml
+   Instalación de un solo servidor: [JBoss® root]/standalone/configuration/standalone.xml
 
-   Instalaciones de clúster: [Raíz de JBoss®]/domain/configuration/domain.xml
+   Instalaciones de clúster: [JBoss® root]/domain/configuration/domain.xml
 
-1. Cambiar el valor de **puerto** en el **&lt;socket-binding>** a un número de puerto personalizado. Por ejemplo, los siguientes usan el puerto 8090:
+1. Cambie el valor del atributo **port** en la etiqueta **&lt;socket-binding>** a un número de puerto personalizado. Por ejemplo, los siguientes usan el puerto 8090:
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 

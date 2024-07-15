@@ -24,7 +24,7 @@ AEM En este contenido se describen las opciones opcionales que puede configurar 
 
 AEM AEM La fuente de datos de la aplicación de formularios utiliza el repositorio de formularios de. AEM El repositorio de formularios almacena recursos de la aplicación y, en tiempo de ejecución, los servicios pueden recuperar recursos del repositorio como parte de la finalización de un proceso empresarial automatizado.
 
-AEM El acceso al origen de datos puede ser significativo, en función del número de módulos de formularios en el que se ejecuta y del número de usuarios simultáneos que acceden a la aplicación. El acceso a la fuente de datos se puede optimizar mediante la agrupación de conexiones. *Agrupación de conexiones* es una técnica que se utiliza para evitar la sobrecarga de realizar nuevas conexiones de base de datos cada vez que una aplicación u objeto de servidor requiere acceso a la base de datos. La agrupación de conexiones se utiliza generalmente en aplicaciones empresariales y basadas en la web, y la gestiona, entre otras cosas, un servidor de aplicaciones.
+AEM El acceso al origen de datos puede ser significativo, en función del número de módulos de formularios en el que se ejecuta y del número de usuarios simultáneos que acceden a la aplicación. El acceso a la fuente de datos se puede optimizar mediante la agrupación de conexiones. *Agrupación de conexiones* es una técnica que se usa para evitar la sobrecarga de realizar nuevas conexiones de base de datos cada vez que una aplicación o un objeto de servidor requiere acceso a la base de datos. La agrupación de conexiones se utiliza generalmente en aplicaciones empresariales y basadas en la web, y la gestiona, entre otras cosas, un servidor de aplicaciones.
 
 Es importante configurar correctamente los parámetros del grupo de conexiones para que nunca se quede sin conexiones, lo que puede provocar que el rendimiento de la aplicación se deteriore.
 
@@ -140,7 +140,7 @@ El aumento requerido en el tamaño máximo de pila de JVM se calcula mediante la
 
 El tamaño máximo de pila de JVM debe aumentarse en 50 MB para un total de 562 MB.
 
-**Consideración de la fragmentación de pila**
+**Considerando la fragmentación de la pila**
 
 Establecer el tamaño de los documentos en línea en valores grandes aumenta el riesgo de OutOfMemoryError en los sistemas propensos a la fragmentación de la pila. Para almacenar un documento en línea, la memoria de pila de JVM debe tener suficiente espacio contiguo. Algunos sistemas operativos, JVM y algoritmos de recolección de elementos no utilizados son propensos a la fragmentación de la pila. La fragmentación reduce la cantidad de espacio de pila contiguo y puede provocar un OutOfMemoryError incluso cuando existe suficiente espacio libre total.
 
@@ -154,16 +154,16 @@ En esta sección se describen las opciones específicas de un entorno de servido
 
 ### Aumento de la memoria máxima asignada a la JVM {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
-Si está ejecutando el Administrador de configuración o intentando generar el código de implementación de Enterprise JavaBeans (EJB) mediante la utilidad de línea de comandos *ejbdeploy* Si se produce un error OutOfMemory, aumente la cantidad de memoria asignada a la JVM.
+Si está ejecutando el Administrador de configuración o intentando generar el código de implementación de Enterprise JavaBeans (EJB) mediante la utilidad de línea de comandos *ejbdeploy* y se produce un error OutOfMemory (Memoria insuficiente), aumente la cantidad de memoria asignada a JVM.
 
-1. Edite el script ejbdeploy en la *[raíz de appserver]* directorio /deploytool/itp/:
+1. Edite el script ejbdeploy en el directorio *[appserver root]*/deploytool/itp/:
 
    * (Windows) `ejbdeploy.bat`
    * (Linux y UNIX) `ejbdeploy.sh`
 
-1. Busque el `-Xmx256M` y cambiarlo a un valor más alto, como `-Xmx1024M`.
+1. Busque el parámetro `-Xmx256M` y cámbielo por un valor más alto, como `-Xmx1024M`.
 1. Guarde el archivo.
-1. Ejecute el `ejbdeploy` o volver a implementar mediante el Administrador de configuración.
+1. Ejecute el comando `ejbdeploy` o vuelva a implementar mediante el Administrador de configuración.
 
 ## Mejora del rendimiento de Windows Server 2003 con LDAP {#improving-windows-server-2003-performance-with-ldap}
 
@@ -180,7 +180,7 @@ El uso de la agrupación de conexiones en la conexión de búsqueda puede reduci
 
    >[!NOTE]
    >
-   >Si no ve un cursor parpadeante y `New Value #` dentro del cuadro, haga clic con el botón derecho en el panel derecho, seleccione Cambiar nombre y, en el cuadro Nombre, escriba `TcpTimedWaitDelay`*.*
+   >Si no ve un cursor parpadeante y `New Value #` dentro del cuadro, haga clic con el botón secundario en el panel derecho, seleccione Cambiar nombre y, en el cuadro Nombre, escriba `TcpTimedWaitDelay`*.*
 
 1. Repita el paso 4 para los nombres de valor MaxUserPort, MaxHashTableSize y MaxFreeTcbs.
 1. Haga doble clic dentro del panel derecho para establecer el valor de TcpTimedWaitDelay. En Base, seleccione Decimal y, en el cuadro Valor, escriba `30`.

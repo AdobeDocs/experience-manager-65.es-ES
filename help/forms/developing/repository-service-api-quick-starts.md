@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Inicio rápido de la API del servicio de repositorio {#repository-service-api-quick-starts}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
 Los siguientes tutoriales rápidos están disponibles para el servicio Repositorio de AEM Forms.
 
@@ -46,9 +46,9 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 **Aplicaciones/FormsApplication**
 
-La mayoría de los inicios rápidos del servicio de repositorio de AEM Forms interactúan con una aplicación denominada `Applications/FormsApplication,` como se muestra en la siguiente ilustración.
+La mayoría de los inicios rápidos del servicio de repositorio de AEM Forms interactúan con una aplicación denominada `Applications/FormsApplication,`, como se muestra en la siguiente ilustración.
 
-La carpeta FormsFolder es una ubicación en el repositorio de AEM Forms. Por ejemplo, puede agregar esta carpeta a mediante programación a `Applications/FormsApplication`. (Consulte [SOAP Inicio rápido (modo de): Creación de una carpeta mediante la API de Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
+La carpeta FormsFolder es una ubicación en el repositorio de AEM Forms. Por ejemplo, puede agregar esta carpeta a `Applications/FormsApplication` mediante programación. SOAP (Consulte [Inicio rápido (modo de): crear una carpeta mediante la API de Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
 La ruta a un recurso en el repositorio de AEM Forms es:
 
@@ -56,11 +56,11 @@ La ruta a un recurso en el repositorio de AEM Forms es:
 
 >[!NOTE]
 >
->Puede examinar el repositorio de AEM Forms utilizando un explorador web. Para examinar el repositorio, introduzca la siguiente URL en un explorador web `https://[server name]:[server port]/repository`. Puede comprobar los resultados de inicio rápido mediante un explorador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede verlo en un explorador web.
+>Puede examinar el repositorio de AEM Forms utilizando un explorador web. Para examinar el repositorio, escriba la siguiente URL en un explorador web `https://[server name]:[server port]/repository`. Puede comprobar los resultados de inicio rápido mediante un explorador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede verlo en un explorador web.
 
 >[!NOTE]
 >
->Applications/FormsApplication no existe de forma predeterminada. Para continuar con los inicios rápidos, cree esta aplicación mediante Workbench. Para obtener información sobre la creación de una aplicación mediante Workbench, consulte [Introducción al diseño de procesos](https://www.adobe.com/go/learn_aemforms_workbench_65_es).
+>Applications/FormsApplication no existe de forma predeterminada. Para continuar con los inicios rápidos, cree esta aplicación mediante Workbench. Para obtener información acerca de cómo crear una aplicación mediante Workbench, vea [Introducción al diseño de procesos](https://www.adobe.com/go/learn_aemforms_workbench_65_es).
 
 ## SOAP Inicio rápido (modo de): Creación de una carpeta mediante la API de Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
@@ -170,7 +170,7 @@ El siguiente ejemplo de código Java crea una carpeta llamada *FormsFolder* en l
 
 ## SOAP Inicio rápido (modo de): Escritura de un recurso mediante la API de Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
-El siguiente ejemplo de código Java escribe un recurso llamado *préstamo.xdp* en el repositorio. El recurso se añade a `/Applications/FormsApplication/1.0/FormsFolder` ubicación. (Consulte [Recursos de escritura](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+El siguiente ejemplo de código Java escribe un recurso denominado *préstamo.xdp* en el repositorio. El recurso se agrega a la ubicación `/Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Recursos de escritura](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 ```java
  /*
@@ -298,7 +298,7 @@ El siguiente ejemplo de código Java escribe un recurso llamado *préstamo.xdp* 
 
 ## SOAP Inicio rápido (modo de): Enumeración de recursos mediante la API de Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
-El siguiente ejemplo de código Java enumera los recursos que se encuentran en `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Listando recursos](/help/forms/developing/aem-forms-repository.md#listing-resources).)
+El siguiente ejemplo de código Java enumera los recursos que se encuentran en `Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Recursos de lista](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
 ```java
  /*
@@ -397,7 +397,7 @@ El siguiente ejemplo de código Java enumera los recursos que se encuentran en `
 
 ## SOAP Inicio rápido (modo de): Lectura de un recurso mediante la API de Java {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
-El siguiente ejemplo de código Java lee un recurso llamado *Loan.xdp* del repositorio. El archivo XDP se encuentra en `/Applications/FormsApplication/1.0/FormsFolder/`. (Consulte [Leyendo recursos](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+El siguiente ejemplo de código Java lee un recurso denominado *Loan.xdp* del repositorio. El archivo XDP está en `/Applications/FormsApplication/1.0/FormsFolder/`. (Consulte [Recursos de lectura](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
 ```java
  /*
@@ -498,7 +498,7 @@ El siguiente ejemplo de código Java lee un recurso llamado *Loan.xdp* del repos
 
 ## SOAP Inicio rápido (modo de): Actualización de un recurso mediante la API de Java {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
-El siguiente ejemplo de código Java actualiza `/Applications/FormsApplication/1.0/FormsFolder` modificando su descripción. (Consulte [Actualización de recursos](/help/forms/developing/aem-forms-repository.md#updating-resources).)
+El siguiente ejemplo de código Java actualiza `/Applications/FormsApplication/1.0/FormsFolder` mediante la modificación de su descripción. (Consulte [Actualización de recursos](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
 ```java
  /*

@@ -123,15 +123,15 @@ La implementación permite el acceso en tiempo real a la información del produc
 
 >[!NOTE]
 >
->Para utilizar el marco de integración con proveedores de comercio electrónico externos, primero debe instalar los paquetes necesarios. Para obtener más información, consulte [Implementar eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Para utilizar el marco de integración con proveedores de comercio electrónico externos, primero debe instalar los paquetes necesarios. Para obtener más información, consulte [Implementación del comercio electrónico](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Para obtener información sobre la ampliación de las capacidades de comercio electrónico, consulte [Desarrollo del comercio electrónico](/help/commerce/cif-classic/developing/ecommerce.md).
+>Para obtener información sobre cómo ampliar las capacidades de comercio electrónico, consulte [Desarrollo del comercio electrónico](/help/commerce/cif-classic/developing/ecommerce.md).
 
 ## Características principales {#main-features}
 
 AEM eCommerce proporciona lo siguiente:
 
-* Un número de **AEM componentes listos para usar de la interfaz de usuario de la interfaz de usuario de** para ilustrar lo que se puede lograr con su proyecto:
+* AEM Una serie de **componentes listos para usar** para la aplicación de la aplicación de la aplicación para ilustrar lo que se puede lograr con su proyecto:
 
    * Visualización del producto
    * Carro de compras
@@ -155,15 +155,15 @@ AEM eCommerce proporciona lo siguiente:
 
   ![ejemplo de búsqueda](/help/sites-administering/assets/chlimage_1-131.png)
 
-* AEM Utiliza la capacidad de para **presentar el contenido en varios canales**, ya sea una ventana completa del navegador o un dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
+* AEM Utiliza la capacidad de **presentar el contenido en varios canales**, ya sea en una ventana completa del explorador o en un dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
 
   ![ejemplo de vista móvil](/help/sites-administering/assets/chlimage_1-132.png)
 
-* La capacidad de **desarrolle su propia implementación de integración basada en [AEM Marco de eCommerce de](#the-framework)**.
+* AEM La capacidad de **desarrollar su propia implementación de integración basada en el marco de [comercio electrónico](#the-framework)**.
 
   Las dos implementaciones disponibles actualmente se crean sobre la misma base, además de la API general (el marco de trabajo). La implementación de una nueva integración solo implica implementar las funciones que su integración necesita. Cualquier implementación nueva puede utilizar los componentes front-end, ya que utilizan interfaces (por lo que son independientes de la implementación).
 
-* La posibilidad de desarrollar **comercio basado en la experiencia y en los datos de los compradores y la actividad**. Esto permite realizar muchos escenarios:
+* La posibilidad de desarrollar **comercio impulsado por la experiencia en función de los datos y la actividad de los compradores**. Esto permite realizar muchos escenarios:
 
    * Un ejemplo podría ser proporcionar reducciones en los costes de envío cuando el pedido total supera una cantidad específica.
    * Otra opción podría permitirle proporcionar ofertas estacionales que utilicen datos de perfil (por ejemplo, ubicación). A continuación, se pueden resaltar, nuevamente en función de otros factores cuando sea necesario.
@@ -184,7 +184,7 @@ AEM eCommerce proporciona lo siguiente:
 
 ## El marco {#the-framework}
 
-El [Conceptos](/help/commerce/cif-classic/administering/concepts.md) La sección trata el marco de trabajo con más detalle, pero la siguiente sección proporciona una vista de alto nivel y alta velocidad del marco de trabajo:
+La sección [Conceptos](/help/commerce/cif-classic/administering/concepts.md) trata el marco de trabajo con más detalle, pero lo siguiente proporciona una vista de alto nivel y alta velocidad del marco de trabajo:
 
 ### ¿Qué? {#what}
 

@@ -22,24 +22,24 @@ AEM Varios procedimientos requieren que detenga o inicie la instancia de WebSphe
 
 ## Ver el estado del servidor de aplicaciones WebSphere {#view-the-status-of-websphere-application-server}
 
-1. Desde un símbolo del sistema, vaya a `[appserver root]/bin` directorio.
-1. Introduzca el siguiente comando, sustituyendo *server_name* con el nombre de su servidor de aplicaciones WebSphere:
+1. Desde un símbolo del sistema, vaya al directorio `[appserver root]/bin`.
+1. Introduzca el siguiente comando y reemplace *server_name* por el nombre de su servidor de aplicaciones de WebSphere:
 
-   * (Windows) `serverStatus.bat`*server_name*
-   * (Linux, UNIX) ./ `serverStatus.sh`*server_name*
+   * (Windows) `serverStatus.bat`*nombre_servidor*
+   * (Linux, UNIX) ./ `serverStatus.sh`*nombre_servidor*
 
 ## Iniciar el servidor de aplicaciones WebSphere {#start-websphere-application-server}
 
-1. Desde un símbolo del sistema, vaya a `[appserver root]/bin` directorio.
-1. Introduzca el siguiente comando, sustituyendo *server_name* con el nombre de su servidor de aplicaciones WebSphere:
+1. Desde un símbolo del sistema, vaya al directorio `[appserver root]/bin`.
+1. Introduzca el siguiente comando y reemplace *server_name* por el nombre de su servidor de aplicaciones de WebSphere:
 
-   * (Windows) `startServer.bat`*server_name*
-   * (Linux, UNIX) ./ `startServer.sh`*server_name*
+   * (Windows) `startServer.bat`*nombre_servidor*
+   * (Linux, UNIX) ./ `startServer.sh`*nombre_servidor*
 
 ## Detener el servidor de aplicaciones WebSphere {#stop-websphere-application-server}
 
-1. Desde un símbolo del sistema, vaya a `[appserver root]/bin` directorio.
-1. Introduzca el siguiente comando, sustituyendo *server_name* con el nombre de su servidor de aplicaciones WebSphere:
+1. Desde un símbolo del sistema, vaya al directorio `[appserver root]/bin`.
+1. Introduzca el siguiente comando y reemplace *server_name* por el nombre de su servidor de aplicaciones de WebSphere:
 
-   * (Windows) `stopServer.bat`*server_name*
-   * (Linux, UNIX) ./ `stopServer.sh`*server_name*
+   * (Windows) `stopServer.bat`*nombre_servidor*
+   * (Linux, UNIX) ./ `stopServer.sh`*nombre_servidor*

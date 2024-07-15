@@ -18,14 +18,14 @@ AEM Puede recibir notificaciones de varias áreas de la, incluidos flujos de tra
 
 * Tareas:
 
-   * AEM estas también se pueden crear en varios puntos de la interfaz de usuario de la interfaz de usuario de la aplicación, por ejemplo, en **Proyectos**,
-   * pueden ser el producto de un flujo de trabajo **Crear tarea** o **Crear tarea del proyecto** paso.
+   * AEM estas también se pueden crear en distintos puntos de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario, por ejemplo, en **Proyectos**,
+   * pueden ser el producto del paso **Crear tarea** o **Crear tarea de proyecto** de un flujo de trabajo.
 
 * Flujos de trabajo:
 
    * elementos de trabajo que representan acciones que debe realizar en el contenido de la página;
 
-      * estos son el producto del flujo de trabajo **Participante** pasos
+      * estos son el producto de los pasos del flujo de trabajo **Participante**
 
    * elementos de error, para permitir que los administradores reintenten el paso con errores.
 
@@ -70,10 +70,10 @@ Para abrir la bandeja de entrada de notificaciones AEM:
 
 1. Haga clic en el indicador de la barra de herramientas.
 
-1. Seleccione **Ver todo**. El **AEM Bandeja de entrada de** abre. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
+1. Seleccione **Ver todo**. AEM Se abre la **Bandeja de entrada de**. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
 1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).
 
-   Para ambas vistas también puede definir lo siguiente [Configuración de vista](#inbox-view-settings); las opciones disponibles dependen de la vista actual.
+   Para ambas vistas también puede definir [Configuración de vista](#inbox-view-settings); las opciones disponibles dependen de la vista actual.
 
    ![wf-79](assets/inbox-list-view.png)
 
@@ -97,7 +97,7 @@ Puede hacer lo siguiente:
 
 * seleccionar una vista específica; **Cronología**, **Columna**, **Lista**
 
-* especificar las tareas para mostrar según **Programación**; **Todo**, **Planificado**, **En curso**, **Vence pronto**, **Ya ha vencido**
+* especifique las tareas que se mostrarán según **Programa**; **Todos**, **Planificados**, **En curso**, **Vence pronto**, **Vencidos**
 
 * explorar en profundidad un elemento para obtener información más detallada
 * seleccione un intervalo de fechas en el que centrar la vista:
@@ -137,23 +137,23 @@ La opción Admin Control permite a los administradores lo siguiente:
 
 * Controlar la visualización de los vínculos de navegación disponibles en el encabezado
 
-La opción Control de administración solo está visible para los miembros del `administrators` o `workflow-administrators` grupo.
+La opción Control de administración solo está visible para los miembros del grupo `administrators` o `workflow-administrators`.
 
-* **Personalización de columnas** AEM : personalice una bandeja de entrada de para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
-   * **Agregar columna** AEM : seleccione una columna para añadirla a la bandeja de entrada de la.
-   * **Editar columna**: Pase el ratón sobre el título de la columna y seleccione ![editar](assets/edit.svg) para introducir un nombre para mostrar en la columna.
-   * **Eliminar columna**: seleccione la ![eliminar](assets/delete_updated.svg) AEM para eliminar la columna de la bandeja de entrada de la.
-   * **Mover columna**: arrastre el ![mover](assets/move_updated.svg) AEM para mover una columna a una nueva posición en la bandeja de entrada de la bandeja de entrada de la.
+* AEM **Personalización de columnas**: personalice una Bandeja de entrada de la para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
+   * AEM **Agregar columna**: Seleccione una columna para agregarla a la Bandeja de entrada de la.
+   * **Editar columna**: Pase el ratón sobre el título de la columna y seleccione el icono ![editar](assets/edit.svg) para introducir un nombre para mostrar en la columna.
+   * AEM **Eliminar columna**: Seleccione el icono ![eliminar](assets/delete_updated.svg) para eliminar la columna de la Bandeja de entrada de la Bandeja de entrada de la.
+   * AEM **Mover columna**: arrastre el icono ![mover](assets/move_updated.svg) para mover una columna a una nueva posición en la Bandeja de entrada de la Bandeja de entrada de la.
 
   ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalización de marca**
 
-   * **Personalizar el texto del encabezado:** Especifique el texto que se mostrará en el encabezado para reemplazar el predeterminado **Adobe Experience Manager** texto.
+   * **Personalizar texto de encabezado:** Especifique el texto que se mostrará en el encabezado para reemplazar el texto predeterminado de **Adobe Experience Manager**.
 
    * **Personalizar logotipo:** Especifique la imagen que se mostrará en el encabezado como logotipo. Cargue una imagen en Digital Asset Management (DAM) y consulte esa imagen en el campo.
 
-* **Navegación del usuario**
+* **Navegación de usuario**
    * **Ocultar opciones de navegación:** Seleccione esta opción para ocultar las opciones de navegación disponibles en el encabezado. Las opciones de navegación incluyen vínculos a otras soluciones de, vínculos de ayuda y las opciones de creación disponibles al pulsar el logotipo o el texto de Adobe Experience Manager.
 * **Guardar:** Haga clic en esta opción para guardar la configuración.
 
@@ -171,14 +171,14 @@ La opción Control de administración solo está visible para los miembros del `
    Las acciones son apropiadas para el elemento y entre ellas se incluyen:
 
    * **Completar** acción; por ejemplo, una tarea o un elemento de flujo de trabajo.
-   * **Reasignar**/**Delegar** un elemento.
+   * **Volver a asignar**/**Delegar** un elemento.
    * **Abrir** un elemento; en función del tipo de elemento, esta acción puede:
 
       * mostrar las propiedades del elemento
       * abra un tablero o un asistente apropiado para realizar más acciones
       * abrir documentación relacionada
 
-   * **Retroceder un paso** a un paso anterior.
+   * **Retroceder** a un paso anterior.
    * Consultar la carga útil de un flujo de trabajo.
    * Cree un proyecto a partir del elemento.
 
@@ -209,7 +209,7 @@ La opción Control de administración solo está visible para los miembros del `
 Desde la bandeja de entrada puede crear las siguientes tareas:
 
 1. Seleccione **Crear** y a continuación, **Tarea**.
-1. Rellene los campos necesarios en la **Básico** y **Avanzadas** pestañas; solo las pestañas **Título** es obligatorio, el resto son opcionales:
+1. Complete los campos necesarios en las pestañas **Básico** y **Avanzado**; solo el **Título** es obligatorio, el resto son opcionales:
 
    * **Básico**:
 
@@ -226,7 +226,7 @@ Desde la bandeja de entrada puede crear las siguientes tareas:
 
    * **Avanzado**
 
-      * **Nombre**: se utiliza para formar la dirección URL; si está en blanco, se basa en **Título**.
+      * **Nombre**: se usa para formar la dirección URL; si está en blanco, se basará en el **Título**.
 
    ![wf-87](assets/wf-87.png)
 

@@ -28,15 +28,15 @@ Las acciones de Content Management son los componentes básicos que ayudan a cre
 
 Si piensa en una revista en línea, el contenido principal incluye artículos, anuncios y portadas. AEM Se pueden crear tres tipos principales de contenido de Mobile On-Demand dentro de las siguientes opciones:
 
-* **Artículos**: texto basado en el arte para transmitir información
-* **Titulares:** normalmente vínculos promocionales gráficos
-* **Colecciones:** representan un *cubo* relleno de contenido, como artículos o titulares, que se adapta al tema de la portada
+* **Artículos**: texto basado junto con arte para transmitir información
+* **Banners:** vínculos promocionales gráficos
+* **Colecciones:** representan un *contenedor* bien definido con contenido como artículos o banners que se adapta al tema de la portada
 
 * **Recursos compartidos:** permite reutilizar o compartir elementos comunes entre artículos
 
 >[!NOTE]
 >
->Para obtener más información sobre consideraciones de diseño para aplicaciones de AEM Mobile, consulte [Consideraciones de diseño para aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
+>Para obtener más información sobre las consideraciones de diseño de las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño de las aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
 
 ## Creación y administración de contenido {#creating-and-managing-content}
 
@@ -46,7 +46,7 @@ Los siguientes temas describen la creación y administración de contenido, a sa
 * [Administración de titulares](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Administración de colecciones](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Carga de recursos compartidos](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publicar contenido para cancelar su publicación](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Cancelar la publicación del contenido de Publish](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >

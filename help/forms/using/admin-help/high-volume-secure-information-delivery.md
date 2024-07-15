@@ -28,4 +28,4 @@ Si una empresa de telecomunicaciones genera una factura mensual, se crea una dir
 
 La creación de una directiva abstracta solo se admite mediante el SDK de Java de seguridad de documentos. Sin embargo, puede administrar las directivas que cree a partir de la directiva abstracta de las páginas web de Document Security. Las directivas creadas con este método tienen un comportamiento idéntico al de las páginas web de Document Security.
 
-Consulte [AEM Programar con formularios de](https://www.adobe.com/go/learn_aemforms_programming_63) para obtener más información.
+AEM Consulte [Programación con formularios de la lista de distribución](https://www.adobe.com/go/learn_aemforms_programming_63) para obtener más información.

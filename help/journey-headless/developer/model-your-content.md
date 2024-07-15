@@ -18,7 +18,7 @@ En esta parte del [Recorrido para desarrolladores de contenido sin encabezado de
 
 ## La historia hasta ahora {#story-so-far}
 
-Al principio, [Obtenga información acerca del desarrollo sin encabezado CMS](learn-about.md) abarcaba la entrega de contenido sin encabezado y por qué debería usarse. Entonces [AEM Introducción a la tecnología sin encabezado de](getting-started.md) AEM se ha descrito la opción Sin encabezado en el contexto de su propio proyecto de.
+Al principio, [Obtenga información acerca del desarrollo sin encabezado CMS](learn-about.md) abarcó la entrega de contenido sin encabezado y por qué debería usarse. AEM AEM A continuación, [Introducción a la tecnología sin encabezado](getting-started.md) describió la aplicación sin encabezado en el contexto de su propio proyecto
 
 En el documento anterior del recorrido del contenido sin encabezado de AEM, [Ruta hacia la primera experiencia al usar contenido sin encabezado de AEM](path-to-first-experience.md), aprendió los pasos necesarios para implementar su primer proyecto. Después de leerlo, debería:
 
@@ -48,7 +48,7 @@ Este artículo se basa en estos fundamentos para que entienda cómo preparar su 
 
 *Es un mundo grande y peligroso*.
 
-Quizás sí, pero quizás no. Es sin duda una abrumadora ***complicado*** el mundo ahí fuera. El modelado de datos se utiliza para definir una representación simplificada de una subsección muy (muy) pequeña, utilizando la información específica que se necesita para un propósito determinado.
+Quizás sí, pero quizás no. Sin duda es un mundo ***complicado*** de manera abrumadora. El modelado de datos se utiliza para definir una representación simplificada de una subsección muy (muy) pequeña, utilizando la información específica que se necesita para un propósito determinado.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Por ejemplo, anunciar eventos especiales para todas las escuelas de la zona:
 
 ### Conceptos  {#concepts}
 
-Lo que desea describir se denomina **Entidades** - básicamente las &quot;cosas&quot; sobre las que quieres almacenar información.
+Lo que desea describir se denomina **Entidades**; básicamente, las &quot;cosas&quot; sobre las que desea almacenar información.
 
 La información que deseamos almacenar son los **Atributos** (propiedades), como el Nombre y las Cualificaciones del profesorado.
 
@@ -94,7 +94,7 @@ El proceso de análisis y definición de esta información, junto con las relaci
 
 ### Datos básicos {#basics}
 
-A menudo, puede empezar elaborando un **Esquema conceptual** que describe las entidades y sus relaciones. Normalmente es de alto nivel conceptual.
+A menudo, puede empezar por dibujar un **Esquema conceptual** que describe las entidades y sus relaciones. Normalmente es de alto nivel conceptual.
 
 Cuando haya terminado, puede convertir los modelos en un **Esquema lógico** que describe las entidades, junto con los atributos y las relaciones. En este nivel, debe examinar detenidamente las definiciones para eliminar la duplicación y optimizar el diseño.
 
@@ -169,9 +169,9 @@ Un modelo de fragmento de contenido describe una entidad.
 
 Dentro de un modelo:
 
-1. **Tipos de datos** permite definir los atributos individuales.
+1. **Tipos de datos** le permiten definir los atributos individuales.
 Por ejemplo, defina el campo que contiene el nombre de un profesor como **Texto** y sus años de servicio como un **Número**.
-1. Los tipos de datos **Referencia de contenido** y **Referencia a fragmento** AEM permite crear relaciones con otro contenido dentro de los recursos de la aplicación de contenido de la.
+1. AEM Los tipos de datos **Referencia de contenido** y **Referencia de fragmento** le permiten crear relaciones con otro contenido dentro de los elementos de contenido de la.
 1. El tipo de datos **referencia de fragmento** le permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
 
 Por ejemplo:
@@ -217,7 +217,7 @@ Al principio, debe habilitar Modelos de fragmento de contenido para el sitio. Es
 >
 >Consulte Recursos adicionales: Fragmentos de contenido en el explorador de configuración
 
-A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en Herramientas > Recursos > Modelos de fragmentos de contenido. Por ejemplo:
+A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en Herramientas > Assets > Modelos de fragmentos de contenido. Por ejemplo:
 
 ![Modelo de fragmento de contenido](assets/cfm-model.png)
 
@@ -273,11 +273,11 @@ Ahora que ha aprendido a modelar su estructura y a crear contenido en función d
 
 ## Recursos adicionales {#additional-resources}
 
-* [Uso de fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) : página de introducción para fragmentos de contenido.
-   * [Fragmentos de contenido en el explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md) : habilite la funcionalidad Fragmento de contenido en el Explorador de configuración.
-   * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) : Creación y edición de modelos de fragmentos de contenido.
-   * [Administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) : Creación de fragmentos de contenido; esta página le lleva a otras secciones detalladas.
-* [AEM Esquemas de GraphQL](access-your-content.md) - Cómo GraphQL realiza los modelos.
+* [Trabajo con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md): la página de inicio para los fragmentos de contenido.
+   * [Fragmentos de contenido en el Explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md): habilite la funcionalidad de fragmentos de contenido en el Explorador de configuración.
+   * [Modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-models.md): creando y editando modelos de fragmentos de contenido.
+   * [Administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md): creación y creación de fragmentos de contenido; esta página le lleva a otras secciones detalladas.
+* AEM [Esquemas de GraphQL de](access-your-content.md): Cómo GraphQL realiza los modelos.
 * [La estructura de fragmento de contenido de muestra](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es): una breve serie de tutoriales de vídeo que ofrecen información general sobre el uso de las funciones de AEM sin encabezado, incluidos el modelado de contenido y GraphQL.
    * [Conceptos básicos de modelado de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=es): aprenda a definir y utilizar fragmentos de contenido en Adobe Experience Manager (AEM) para su uso con GraphQL.

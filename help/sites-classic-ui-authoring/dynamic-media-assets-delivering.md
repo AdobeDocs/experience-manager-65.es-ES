@@ -23,7 +23,7 @@ La forma de distribuir los recursos de Dynamic Media, tanto de vídeo como de im
 Con Dynamic Media, tiene varias opciones:
 
 * Si el sitio web está alojado en Adobe Experience Manager, quiere añadir los recursos de Dynamic Media directamente a la página.
-* Si su sitio web no está en el Experience Manager, consulte [Entrega de recursos de Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) en la interfaz de usuario táctil.
+* Si su sitio web no está en el Experience Manager, consulte [Entregar recursos de Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) en la interfaz de usuario táctil.
 
 Para obtener más información, consulte los temas siguientes:
 

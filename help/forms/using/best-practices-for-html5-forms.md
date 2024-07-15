@@ -44,7 +44,7 @@ Por lo tanto, reducir el tamaño de los recursos externos y utilizar solo los re
 
 * Usar [imágenes comprimidas](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). Reduce la actividad de red y la cantidad de memoria necesaria para procesar un formulario. Por lo tanto, el tiempo de carga del formulario disminuye sustancialmente.
 * Utilizar la opción minificar en el Administrador de configuración de AEM (Administrador de bibliotecas HTML Day CQ) para comprimir archivos JavaScript y CSS. Para obtener más información, consulte [Ajustes de la configuración de OSGi](/help/sites-deploying/osgi-configuration-settings.md).
-* Habilitar la compresión web. Reduce el tamaño de las solicitudes y respuestas originadas desde un formulario. Para obtener más información, consulte [Ajuste del rendimiento del servidor de AEM Forms](https://helpx.adobe.com/es/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Habilitar la compresión web. Reduce el tamaño de las solicitudes y respuestas originadas desde un formulario. Para obtener más información, consulte [Ajuste del rendimiento de AEM Forms Server](https://helpx.adobe.com/es/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Mantener vivo el interés, mostrar solo los campos obligatorios  {#keep-the-interest-alive-show-only-required-fields}
 
@@ -81,4 +81,4 @@ Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar 
 ## Tarjeta de referencia rápida {#quick-reference-card}
 
 Puede imprimir la siguiente tarjeta (haga clic en tarjeta para descargar una versión de alta resolución) y mantenerla en su escritorio para una referencia rápida:
-[![tarjeta de referencia rápida de prácticas recomendadas de HTML5 Forms](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[![Tarjeta de referencia rápida de prácticas recomendadas de Forms de HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Voting Essentials {#voting-essentials}
 
-El componente de votación, un [corresponder](tally.md) subclase, es una herramienta útil que permite a los miembros calificar un fragmento particular de contenido simplemente seleccionando flechas arriba o abajo para indicar su opinión.
+El componente de votación, una subclase [tally](tally.md), es una herramienta útil que permite a los miembros clasificar un contenido determinado simplemente seleccionando flechas arriba o abajo para indicar su opinión.
 
-Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con un único `tally name` propiedad.
+Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con una propiedad `tally name` única.
 
 No se admite la publicación anónima de un voto. Los visitantes del sitio deben registrarse e iniciar sesión para participar en la votación solo una vez. El visitante (miembro) conectado puede cambiar su voto en cualquier momento.
 
@@ -34,14 +34,14 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
-   <td>Sí, las propiedades se pueden editar en <i>diseño </i>modo</td>
+   <td>Sí, las propiedades se pueden editar en el modo </i>design<i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td> cq.social.hbs.voting</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>plantillas</strong></td>
    <td><p> /libs/social/tally/components/hbs/voting/voting.hbs<br /> /libs/social/tally/components/hbs/voting/activity-title.hbs</p> </td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td><p>Consulte <a href="voting.md">Uso de la votación</a></p> </td>
+   <td><p>Ver <a href="voting.md">Usando votación</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -61,7 +61,7 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
 
 * [API de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Extremos de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Puntos finales de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
@@ -70,13 +70,13 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
 * [Resumen del proveedor de recursos de almacenamiento](srp.md) - introducción y descripción general del uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - directrices de codificación.
-* [Refactorización de SocialUtils](socialutils.md) : asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
+* [SRP y UGC Essentials](srp-and-ugc.md): métodos y ejemplos de utilidades SRP.
+* [Acceder a UGC con SRP](accessing-ugc-with-srp.md): directrices de codificación.
+* [Refactorización de SocialUtils](socialutils.md): asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.

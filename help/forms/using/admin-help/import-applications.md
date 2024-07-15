@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Importar y administrar aplicaciones{#import-and-manage-applications}
 
-AEM En los formularios, un *aplicación* AEM es un contenedor para almacenar los recursos necesarios para implementar una solución de formularios en la que se pueden usar formularios en la aplicación de la. Algunos ejemplos de recursos son diseños de formulario, fragmentos de formulario, imágenes, procesos, archivos DDX, guías de formulario, páginas de HTML y archivos de SWF. Durante la fase de desarrollo de un proyecto, los usuarios de Workbench pueden desplegar aplicaciones directamente desde la vista Aplicaciones en Workbench. Una vez desplegadas, estas aplicaciones aparecen en la consola de administración, en la ficha Aplicaciones de la página Administración de aplicaciones.
+AEM AEM En los formularios de, una *aplicación* es un contenedor para almacenar los recursos necesarios para implementar una solución de formularios de la aplicación de la aplicación de formularios de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de datos. Algunos ejemplos de recursos son diseños de formulario, fragmentos de formulario, imágenes, procesos, archivos DDX, guías de formulario, páginas de HTML y archivos de SWF. Durante la fase de desarrollo de un proyecto, los usuarios de Workbench pueden desplegar aplicaciones directamente desde la vista Aplicaciones en Workbench. Una vez desplegadas, estas aplicaciones aparecen en la consola de administración, en la ficha Aplicaciones de la página Administración de aplicaciones.
 
-Cuando una aplicación está completa y lista para su implementación en un servidor de producción, el usuario de Workbench empaqueta la aplicación en una *AEM archivo de aplicación de formularios* (.lca). A continuación, un administrador utiliza la consola de administración para importar e implementar el archivo de aplicación mediante el separador Aplicaciones de la página Administración de aplicaciones.
+AEM Cuando una aplicación está completa y lista para su implementación en un servidor de producción, el usuario de Workbench empaqueta la aplicación en un *archivo de aplicación de formularios* (.lca). A continuación, un administrador utiliza la consola de administración para importar e implementar el archivo de aplicación mediante el separador Aplicaciones de la página Administración de aplicaciones.
 
 También puede utilizar la pestaña Archivos de la página Administración de aplicaciones para importar los LCA creados con Workbench 8.x.
 
@@ -40,10 +40,10 @@ Utilice la pestaña Aplicaciones para importar y gestionar aplicaciones creadas 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de aplicaciones.
 1. Haga clic en Importar.
 1. Haga clic en Examinar, seleccione el archivo .lca que desea importar y haga clic en Vista previa. La página Vista previa de la aplicación muestra información sobre la aplicación.
-1. (Opcional) Para ver una lista de los recursos contenidos en la aplicación, haga clic en Ver recursos.
-1. (Opcional) Para implementar los recursos en tiempo de ejecución, seleccione Implementar recursos en tiempo de ejecución cuando se complete la importación. Si no selecciona esta opción, puede implementar los recursos más adelante.
+1. (Opcional) Para ver una lista de los recursos contenidos en la aplicación, haga clic en Ver Assets.
+1. (Opcional) Para implementar los recursos en tiempo de ejecución, seleccione Implementar Assets en tiempo de ejecución cuando se complete la importación. Si no selecciona esta opción, puede implementar los recursos más adelante.
 1. Haga clic en Importar. La aplicación aparece en la ficha Aplicaciones.
-1. Inicie sesión en el repositorio CRX con credenciales de administrador.
+1. Inicie sesión en el repositorio de CRX con credenciales de administrador.
 1. Vaya a content/dam/lcapplications
 
    >[!NOTE]
@@ -54,7 +54,7 @@ Utilice la pestaña Aplicaciones para importar y gestionar aplicaciones creadas 
 
    La pestaña Propiedades de la derecha muestra las propiedades del nodo CRX seleccionado.
 
-   El **syncState** indica el estado de sincronización de datos entre el servidor de AEM Forms y el repositorio CRX. Tan pronto como comience el proceso de importación, este estado se establece en 0 (cero). Este estado indica que los datos no están sincronizados actualmente. Cuando se sincronizan los datos, el estado se establece en 1.
+   La propiedad **syncState** indica el estado de sincronización de datos entre el servidor de AEM Forms y el repositorio de CRX. Tan pronto como comience el proceso de importación, este estado se establece en 0 (cero). Este estado indica que los datos no están sincronizados actualmente. Cuando se sincronizan los datos, el estado se establece en 1.
 
 ## Implementación de una aplicación {#deploy-an-application}
 
@@ -109,7 +109,7 @@ También puede utilizar una herramienta de implementación con scripts para impl
 
 La implementación con scripts elimina la necesidad de reconfigurar manualmente la configuración en el entorno de producción antes de iniciar aplicaciones implementadas.
 
-1. Desde un símbolo del sistema, vaya a *[raíz de aem-forms]*/sdk/misc/Foundation/ArchiveManagement.
+1. Desde un símbolo del sistema, vaya a *[aem-forms root]*/sdk/misc/Foundation/ArchiveManagement.
 1. Revise el archivo ReadMe.txt para obtener instrucciones más detalladas.
 1. Modifique manualmente los archivos scriptedDeploy.bat y sample-files/sample.xml tal como se describe en el archivo readme.txt.
 1. Ejecute el archivo scriptedDeploy.bat. AEM Esta acción implementa el archivo de formularios de la aplicación con la configuración de invalidación.

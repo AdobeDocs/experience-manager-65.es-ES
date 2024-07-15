@@ -28,7 +28,7 @@ Para obtener una descripción general de las funciones de traducción de conteni
 Cree una configuración en la nube que conecte AEM con su proveedor de servicios de traducción. AEM la capacidad de conexión a Microsoft Translator de forma predeterminada.
 Los siguientes proveedores de traducción proporcionan una implementación de la nueva API para los proyectos de traducción. Vínculos para obtener más información sobre la integración:
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
+* [Traducciones.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -46,8 +46,8 @@ Los siguientes proveedores de traducción proporcionan una implementación de la
 >Para encontrar la lista más reciente de proveedores de traducción humana y automática, consulte estas páginas:
 >
 >
->* [AEM Traducción humana de](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM Traducción automática de](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* AEM [Traducción humana](https://www.adobe.com/go/aem-human-translation-connectors)
+>* AEM [Traducción automática de](https://www.adobe.com/go/aem-machine-translation-connectors)
 >
 
 Después de instalar un paquete de conector, puede crear una configuración de la nube para él. Normalmente, debe proporcionar sus credenciales para autenticarse en el servicio de traducción. Para obtener información acerca de cómo añadir una configuración de la nube para el conector de Microsoft Translator, consulte [Integración con Microsoft Translator](/help/sites-administering/tc-msconf.md).
@@ -70,7 +70,7 @@ Cuando las diferentes secciones del sitio web tengan distintos requisitos de tra
 
 Después de configurar un marco de trabajo de integración de traducciones, puede [asociarlo a las páginas](/help/sites-administering/tc-prep.md) que lo usan.
 
-**Nota:** AEM Para obtener una descripción general de las funciones de traducción de contenido de la documentación de, consulte la sección sobre traducción de contenido en la documentación de la documentación de la [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md).
+AEM **Nota:** Para obtener una descripción general de las características de traducción de contenido de, consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md).
 
 Una sola configuración del marco de trabajo controla cómo traducir contenido de página, contenido de la comunidad y recursos.
 ![chlimage_1-386](assets/translation-config-65.jpg)
@@ -112,11 +112,11 @@ Las propiedades de Sites controlan cómo se traduce el contenido de la página.
   </tr>
   <tr>
    <td>Traducir recursos de la página</td>
-   <td><p>Seleccione cómo traducir recursos que se añaden a componentes del sistema de archivos o a los que se hace referencia desde Recursos:</p>
+   <td><p>Seleccione cómo traducir recursos que se añaden a componentes del sistema de archivos o a los que se hace referencia desde Assets:</p>
     <ul>
      <li>No traducir: los recursos de la página no se traducen.</li>
-     <li>Uso del flujo de trabajo de traducción de sitios: los recursos se gestionan según las propiedades de configuración de la pestaña Sitios.</li>
-     <li>Uso del flujo de trabajo de traducción de recursos: los recursos se gestionan según la configuración de las propiedades de la pestaña Recursos.</li>
+     <li>Uso del flujo de trabajo de traducción de sitios: Assets se gestiona según las propiedades de configuración de la pestaña Sitios.</li>
+     <li>Uso del flujo de trabajo de traducción de Assets: Assets se gestiona según la configuración de las propiedades de la pestaña Assets.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -134,7 +134,7 @@ Las propiedades de las comunidades controlan cómo se traduce el contenido gener
 |---|---|
 | Proveedor de traducciones | Seleccione el proveedor de traducción para llevar a cabo la traducción. El proveedor para el que se crean configuraciones de nube aparece en la lista. |
 | Categoría de contenido | Una categoría que describe el contenido que está traduciendo. La categoría puede afectar a la elección de la terminología y el estilo al traducir el contenido. |
-| Elija Una Configuración Regional Para Utilizarla Como Almacén Compartido Global | (Opcional) Al seleccionar una configuración regional para almacenar UGC, las publicaciones de todas las copias de idioma aparecerán en una conversación global. Por convención, elija la configuración regional del [idioma base](/help/communities/sites-console.md#translation) para el sitio web. Si se elige Sin almacén común, se desactivará la traducción global. De forma predeterminada, la traducción global está desactivada. |
+| Elija Una Configuración Regional Para Utilizarla Como Almacén Compartido Global | (Opcional) Al seleccionar una configuración regional para almacenar UGC, las publicaciones de todas las copias de idioma aparecerán en una conversación global. Por convención, elija la configuración regional del [idioma base](/help/communities/sites-console.md#translation) del sitio web. Si se elige Sin almacén común, se desactivará la traducción global. De forma predeterminada, la traducción global está desactivada. |
 
 ### Propiedades de configuración de recursos {#assets-configuration-properties}
 
@@ -152,7 +152,7 @@ Las propiedades de recursos controlan cómo se configuran los recursos. Para obt
     <ul>
      <li>Traducción automática: el proveedor de traducción realiza la traducción inmediatamente mediante traducción automática.</li>
      <li>Traducción humana: el contenido se envía automáticamente al proveedor de traducción para que lo traduzcan traductores. </li>
-     <li>No traducir: los recursos no se envían para su traducción.</li>
+     <li>No traducir: Assets no se envía para su traducción.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -189,7 +189,7 @@ Las propiedades de recursos controlan cómo se configuran los recursos. Para obt
    * Si ya existen configuraciones, haga clic en Mostrar configuraciones y, a continuación, en el vínculo + que aparece junto a Configuraciones disponibles.
 
 1. Escriba un nombre para la configuración y haga clic en Crear.
-1. Configure las propiedades en la ficha Sitios, comunidades y recursos y, a continuación, haga clic en Aceptar.
+1. Configure las propiedades en la ficha Sitios, Comunidades y Assets y, a continuación, haga clic en Aceptar.
 
 ## Configuración de páginas para su traducción {#configuring-pages-for-translation}
 
@@ -204,7 +204,7 @@ Cuando asocia una página con una configuración de nube, los descendientes de l
 
 Si es necesario, puede anular la asociación en una página descendiente. Por ejemplo, el contenido de un sitio web se refiere principalmente a la ropa. Sin embargo, una rama de páginas describe la compañía. La página raíz del sitio está asociada a un marco de trabajo de integración de traducción que especifica la traducción automática mediante la categoría Ropa. La rama que describe la compañía utiliza un marco de trabajo que realiza la traducción automática mediante la categoría General.
 
-Además, para cualquier comunidad [Componentes de SCF](/help/communities/scf.md) en las páginas, el contenido generado por el usuario (UGC) incluirá la capacidad de los usuarios de traducir contenido. Para obtener más información, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
+Además, para cualquier comunidad [componentes de SCF](/help/communities/scf.md) en las páginas, el contenido generado por el usuario (UGC) incluirá la capacidad para que los usuarios traduzcan contenido. Para obtener más información, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
 
 ### Asociación de una página con un proveedor de traducción {#associating-a-page-with-a-translation-provider}
 

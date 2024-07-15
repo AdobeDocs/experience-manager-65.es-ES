@@ -34,19 +34,19 @@ Los titulares suelen representar vínculos promocionales gráficos.
 >
 >* [Consideraciones de diseño](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Creación de titulares](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+>* [Creando titulares](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Creación de un titular {#creating-a-banner}
 
 El flujo de trabajo general para crear un artículo es el siguiente:
 
-1. Seleccionar **Móvil** desde la barra lateral.
+1. Seleccione **Móvil** en el carril lateral.
 1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
-1. Haga clic en la flecha hacia abajo situada en la esquina superior derecha de la **Administrar titulares** mosaico.
+1. Haga clic en la flecha hacia abajo en la esquina superior derecha del mosaico **Administrar titulares**.
 1. Siga cada paso del asistente para seguir creando el nuevo titular.
 1. Cuando esté listo, haga clic en **Crear**.
-1. El nuevo titular aparecerá en la **Administrar titulares** mosaico.
+1. El nuevo titular aparecerá en el mosaico **Administrar titulares**.
 
 ![chlimage_1-6](assets/chlimage_1-6.gif)
 
@@ -61,9 +61,9 @@ AEM El contenido existente de Mobile On-Demand se puede descargar (importar) de 
 Flujo de trabajo para importar un nuevo artículo
 
 1. En Mobile, seleccione su aplicación Mobile On-Demand en el catálogo.
-1. Haga clic en la flecha hacia abajo situada en la esquina superior derecha de la **Administrar titulares** y seleccione Importar titulares.
-1. Clic **Importar titular** en el cuadro de diálogo y, a continuación, Cerrar.
-1. Sus artículos de Mobile On-Demand ahora aparecen en la **Administrar titulares** mosaico.
+1. Haga clic en la flecha hacia abajo en la esquina superior derecha del mosaico **Administrar titulares** y seleccione Importar titulares.
+1. Haga clic en **Importar titular** en el cuadro de diálogo y, a continuación, en Cerrar.
+1. Los artículos de Mobile On-Demand ahora aparecen en el mosaico **Administrar titulares**.
 
 >[!CAUTION]
 >
@@ -71,7 +71,7 @@ Flujo de trabajo para importar un nuevo artículo
 
 ## Edición de un titular {#editing-a-banner}
 
-AEM Utilice el editor integrado de arrastrar y soltar para agregar o cambiar un artículo de la lista de editores de la lista de editores de. Se pueden añadir o eliminar componentes como texto e imágenes. Se pueden insertar imágenes de los recursos DAM.
+AEM Utilice el editor integrado de arrastrar y soltar para agregar o cambiar un artículo de la lista de editores de la lista de editores de. Se pueden añadir o eliminar componentes como texto e imágenes. Se pueden insertar imágenes de DAM Assets.
 
 >[!CAUTION]
 >
@@ -91,11 +91,11 @@ Los titulares tienen numerosas propiedades, como títulos, descripciones e imág
 Flujo de trabajo general para ver o editar un artículo:
 
 1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
-1. Elija un banner en la **Administrar titulares** mosaico.
+1. Elija un titular del mosaico **Administrar titulares**.
 
-1. Seleccionar **Propiedades** de la barra de acciones.
+1. Seleccione **Propiedades** en la barra de acciones.
 1. Vea todos los metadatos disponibles para ese artículo.
-1. Si lo desea, edite los metadatos y haga clic en **Guardar** cuando termine.
+1. Si lo desea, edite los metadatos y haga clic en **Guardar** cuando haya terminado.
 1. De forma opcional, cargue los cambios inmediatamente en Mobile On-Demand.
 
 ## Cargar un titular {#uploading-a-banner}
@@ -104,10 +104,10 @@ La acción de carga copia el contenido seleccionado y lo añade a un proyecto de
 
 Flujo de trabajo general para cargar un banner:
 
-1. Desde **Móvil**, elija la aplicación Mobile On-Demand en el catálogo.
-1. En el **Administrar titulares** , seleccione un banner para cargar en Mobile On-Demand.
+1. Desde **Mobile**, elige tu aplicación de Mobile On-Demand en el catálogo.
+1. En el mosaico **Administrar titulares**, seleccione un titular para cargarlo en Mobile On-Demand.
 1. Agregue más titulares si es necesario desde la vista de lista.
-1. Seleccionar **Cargar** en la barra de acciones y, a continuación, haga clic en Cargar en el cuadro de diálogo.
+1. Seleccione **Cargar** en la barra de acciones y luego haga clic en Cargar en el cuadro de diálogo.
 1. Los titulares se han cargado ahora en Mobile On-Demand.
 
 ![chlimage_1-7](assets/chlimage_1-7.gif)
@@ -119,9 +119,9 @@ AEM Esta operación elimina el banner seleccionado de Mobile On-Demand y, opcion
 Flujo de trabajo general para eliminar un titular:
 
 1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
-1. Seleccione el titular que desea eliminar en la **Administrar titulares** mosaico.
+1. Seleccione el titular que desea eliminar en el mosaico **Administrar titulares**.
 1. Asegúrese de que esté seleccionado en la lista (seleccione otros para eliminarlos según sea necesario).
-1. Clic **Eliminar** de la barra de acciones.
+1. Haga clic en **Eliminar** en la barra de acciones.
 1. AEM Seleccione si desea eliminar de la aplicación de Adobe y de Mobile On-Demand en la lista de dispositivos de la aplicación.
 1. Haga clic en **Eliminar**.
 1. El titular se eliminará de la lista.

@@ -46,11 +46,11 @@ AEM Varios procedimientos requieren que inicie o detenga la instancia de WebLogi
 
 >[!NOTE]
 >
->Si está ejecutando WebLogic Server en Red Hat® Enterprise Linux Advanced Server 4.0, establezca el `LD_ASSUME_KERNEL` variable de entorno a 2.4.19 utilizando `export LD_ASSUME_KERNEL=2.4.19` comando. A continuación, ejecute WebLogic Server desde el mismo shell en el que se configura esta variable de entorno.
+>Si está ejecutando WebLogic Server en Red Hat® Enterprise Linux Advanced Server 4.0, establezca la variable de entorno `LD_ASSUME_KERNEL` en 2.4.19 mediante el comando `export LD_ASSUME_KERNEL=2.4.19`. A continuación, ejecute WebLogic Server desde el mismo shell en el que se configura esta variable de entorno.
 
 ## Iniciar WebLogic Server {#start-weblogic-server}
 
-1. Desde un símbolo del sistema, vaya a *[raíz de appserver]*/user_projects/domains/*[appserverdomain]*.
+1. Desde un símbolo del sistema, vaya a *[appserver root]*/user_projects/domains/*[appserverdomain]*.
 1. Introduzca el siguiente comando:
 
    * (Windows) `startWebLogic.cmd`
@@ -71,18 +71,18 @@ La consola de administración de WebLogic Server ya no está disponible y el sí
 
 ## Iniciar la consola de administración de WebLogic {#start-weblogic-administration-console}
 
-1. Si el servidor de administración de WebLogic aún no se está ejecutando, desde un símbolo del sistema, vaya a *[raíz de appserver]\user_projects\domains\[domainname]* e introduzca el siguiente comando:
+1. Si el servidor de administración de WebLogic aún no se está ejecutando, desde un símbolo del sistema, vaya al directorio *[appserver root]\user_projects\domains\[domainname]* e introduzca el siguiente comando:
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Acceda a la consola de administración de WebLogic Server escribiendo `https://[host name]:[port]/console` en la línea URL de un explorador web, donde *[puerto]* es el puerto de escucha no seguro. De forma predeterminada, este valor de puerto es 7001.
+1. Acceda a la consola de administración de WebLogic Server escribiendo `https://[host name]:[port]/console` en la línea URL de un explorador web, donde *[port]* es el puerto de escucha no seguro. De forma predeterminada, este valor de puerto es 7001.
 1. En la pantalla de inicio de sesión, escriba el nombre de usuario y la contraseña del administrador y haga clic en Iniciar sesión.
 
 ## Iniciar el administrador de nodos {#start-node-manager}
 
 1. Asegúrese de que WebLogic Server se esté ejecutando.
-1. Desde un nuevo símbolo del sistema, vaya a *[raíz de appserver]*/server/bin.
+1. Desde un nuevo símbolo del sistema, vaya a *[appserver root]*/server/bin.
 1. Introduzca el siguiente comando:
 
    * (Windows) `startNodeManager.cmd`

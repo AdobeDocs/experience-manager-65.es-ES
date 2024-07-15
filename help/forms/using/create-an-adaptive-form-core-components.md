@@ -35,13 +35,13 @@ Antes de empezar, obtenga información sobre el tipo de componentes de Forms dis
 
 * [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es): son componentes estandarizados de captura de datos. Estos componentes proporcionan funcionalidades de personalización, un tiempo de desarrollo reducido y costes de mantenimiento más bajos para sus experiencias de inscripción digital. Un desarrollador puede personalizar y aplicar estilo fácilmente a estos componentes. Adobe recomienda aprovechar estos componentes modernos y ampliables para desarrollar formularios adaptables.
 
-* [Componentes de base de formularios adaptables](creating-adaptive-form.md): estos son componentes clásicos (antiguos) de captura de datos. Puede seguir utilizándolos para editar su Formulario adaptable basado en componentes de base existentes. Si está creando formularios, Adobe recomienda utilizar  [Componentes principales de Forms adaptable](/help/forms/using/create-adaptive-form.md) para crear un Forms adaptable.
+* [Componentes de base de formularios adaptables](creating-adaptive-form.md): estos son componentes clásicos (antiguos) de captura de datos. Puede seguir utilizándolos para editar su Formulario adaptable basado en componentes de base existentes. Si está creando formularios, el Adobe recomienda usar [Componentes principales de Forms adaptable](/help/forms/using/create-adaptive-form.md) para crear un Forms adaptable.
 
 ## Requisitos previos
 
 Para crear un formulario adaptable, es necesario lo siguiente:
 
-* **Habilitar los componentes principales de Forms adaptables para su entorno** AEM : Se requiere la versión 41 o posterior del proyecto de tipo de archivo para lo siguiente: [Habilitar los componentes principales para su entorno](/help/forms/using/enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, la variable **Forms adaptable (componente principal)** La plantilla y la temática Lienzo se añaden al entorno.
+* **Habilite los componentes principales adaptables de Forms AEM para su entorno**: Se requiere la versión 41 o posterior del proyecto Archetype para [habilitar los componentes principales para su entorno](/help/forms/using/enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, se agregarán a su entorno la plantilla **Forms adaptable (componente principal)** y el tema Lienzo.
 
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. También puede implementar [plantillas de muestra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) en su entorno. Esto le ayuda a empezar a crear formularios rápidamente.
 
@@ -49,7 +49,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
   >
   > Si no tiene la plantilla de **Formularios adaptables (componente principal)** en su entorno, [Habilite los componentes principales de formularios adaptables para su entorno](/help/forms/using/enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, la plantilla de **Formularios adaptables (componente principal)** se agrega al entorno.
 
-* **Una temática de formulario adaptable**: Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes.  El `Canvas` La temática se añade de forma predeterminada al habilitar los componentes principales para su entorno. Puede  [descargar y personalizar las temáticas estándar](create-or-customize-themes-for-adaptive-forms-core-components.md). Para **de serie** temas que puede implementar [temas de muestra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) a su entorno. Esto le ayudará a dar estilo a los formularios y le proporcionará una estructura base para crear o personalizar una temática según sus necesidades empresariales.
+* **Una temática de formulario adaptable**: Una temática contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar una temática, el estilo especificado se refleja en los componentes correspondientes.  El tema `Canvas` se agrega de manera predeterminada al habilitar los componentes principales para su entorno. Puedes [descargar y personalizar los temas estándar](create-or-customize-themes-for-adaptive-forms-core-components.md). Para **temas predeterminados**, puede implementar [temas de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) en su entorno. Esto le ayudará a dar estilo a los formularios y le proporcionará una estructura base para crear o personalizar una temática según sus necesidades empresariales.
 
 * **Permisos**: añada sus usuarios al grupo [!DNL forms-users]. Los miembros del grupo [!DNL forms-users] tienen permisos para crear un formulario adaptable. Para obtener una lista detallada de los formularios y grupos de usuarios específicos, consulte [Grupos y permisos](forms-groups-privileges-tasks.md).
 
@@ -62,31 +62,31 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 ## Creación de un formulario adaptable {#create-an-adaptive-form}
 
-1. Inicie sesión en su [AEM instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
+1. AEM Inicie sesión en su [instancia de autor local](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
 
 1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 
-1. Seleccionar **[!UICONTROL Crear]**  > **[!UICONTROL Crear Forms adaptable]**.
+1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Crear Forms adaptable]**.
 
 1. Seleccione una plantilla de componentes principales de Forms adaptable y haga clic en **[!UICONTROL Siguiente]**.
 
-1. El **[!UICONTROL Añadir propiedades]** aparece. Especifique los valores para los siguientes campos de propiedad. Los campos Título y Nombre son obligatorios:
+1. Aparecerá **[!UICONTROL Agregar propiedades]**. Especifique los valores para los siguientes campos de propiedad. Los campos Título y Nombre son obligatorios:
 
    * **[!UICONTROL Título:]** Especifica el nombre para mostrar del formulario. El título le ayuda a identificar el formulario en la interfaz de usuario de [!DNL Experience Manager Forms].
    * **[!UICONTROL Nombre:]** Especifica el nombre del formulario. Se crea un nodo con el nombre especificado en el repositorio. A medida que empieza a escribir un título, el valor del campo de nombre se genera automáticamente. Puede cambiar el valor sugerido. El campo de nombre solo puede incluir caracteres alfanuméricos, guiones y guiones bajos.
    * **[!UICONTROL Descripción:]** especifica la información detallada sobre el formulario.
-   * **[!UICONTROL Biblioteca de cliente de temas]:** Especifica la temática de un formulario adaptable. De forma predeterminada, la variable `adaptiveform.theme.canvas3` tema está seleccionado. También puede elegir una temática diferente de la **[!UICONTROL Biblioteca de cliente de temas]** menú desplegable.
-   * **[!UICONTROL Contenedor de configuración:]**  Define una ubicación en la que se almacenan los archivos de configuración de Forms adaptable. Estos archivos de configuración contienen ajustes y propiedades relacionados con el comportamiento y el aspecto de Adaptive Forms.
+   * **[!UICONTROL Biblioteca cliente de temáticas]:** Especifica el tema de un formulario adaptable. De manera predeterminada, el tema `adaptiveform.theme.canvas3` está seleccionado. También puede elegir una temática diferente del menú desplegable **[!UICONTROL Biblioteca cliente de temáticas]**.
+   * **[!UICONTROL Contenedor de configuración:]** Define una ubicación donde se almacenan los archivos de configuración para Forms adaptable. Estos archivos de configuración contienen ajustes y propiedades relacionados con el comportamiento y el aspecto de Adaptive Forms.
    * **[!UICONTROL Etiquetas:]** Especifica etiquetas para identificar de forma exclusiva el formulario adaptable. Las etiquetas ayudan a buscar en el formulario. Para crear etiquetas, escriba nuevos nombres de etiqueta en el cuadro **[!UICONTROL Etiquetas]**.
 1. Seleccione **[!UICONTROL Crear]**. Se creará un formulario adaptable y aparecerá un cuadro de diálogo para abrir el formulario y editarlo.
 
 
-1. Seleccionar **[!UICONTROL Editar]** para abrir el formulario recién creado en una pestaña nueva. El formulario se abrirá para editarlo y mostrará el contenido disponible en la plantilla. También muestra la barra lateral para personalizar el formulario recién creado.
+1. Seleccione **[!UICONTROL Editar]** para abrir el formulario recién creado en una pestaña nueva. El formulario se abrirá para editarlo y mostrará el contenido disponible en la plantilla. También muestra la barra lateral para personalizar el formulario recién creado.
 
 
 ## Utilice los componentes principales de Forms adaptable para crear el formulario
 
-Después de abrir el formulario para editarlo, puede utilizar los componentes principales adaptables de Forms disponibles para agregar campos de formulario al formulario. Puede arrastrar y soltar o utilizar el signo + [insertar componente] para agregar estos componentes a un formulario. AEM Consulte la documentación de componentes principales para obtener más información sobre los componentes disponibles [Componentes principales de Forms adaptable](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#components). También puede visitar [https://aemcomponents.dev/](https://aemcomponents.dev/) para ver los componentes principales disponibles en acción.
+Después de abrir el formulario para editarlo, puede utilizar los componentes principales adaptables de Forms disponibles para agregar campos de formulario al formulario. Puede arrastrar y soltar o utilizar la opción + [insertar componente] para agregar estos componentes a un formulario. AEM Consulte la documentación de componentes principales de para obtener más información sobre los [componentes principales de Forms adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#components) disponibles. También puede visitar [https://aemcomponents.dev/](https://aemcomponents.dev/) para ver los componentes principales disponibles en acción.
 
 ## Configuración de una acción de envío para un formulario adaptable {#configure-submit-action-for-form}
 

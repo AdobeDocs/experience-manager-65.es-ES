@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # AEM Creación de plantillas de página de personalizadas con componentes de formulario de Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-En esta página se explica cómo crear una plantilla de página personalizada que utilice [Formulario de Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) componentes de examinando cómo funciona la plantilla de Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`) está implementado y le dirige a la información importante que puede necesitar al crear su propia plantilla personalizada.
+En esta página se explica cómo crear una plantilla de página personalizada que use los componentes de [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md) al examinar cómo se implementa la plantilla de Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`), y se proporciona información importante que puede necesitar al crear su propia plantilla personalizada.
 
 >[!NOTE]
 >
->[Los ejemplos de correo electrónico y formularios solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md). Descargar contenido de Geometrixx de muestra desde Package Share.
+>[Los ejemplos de correo electrónico y formularios solo están disponibles en el Geometrixx](/help/sites-developing/we-retail.md). Descargar contenido de Geometrixx de muestra desde Package Share.
 
 >[!CAUTION]
 >
@@ -46,16 +46,16 @@ AEM Para crear una plantilla de página de personalizada con componentes de form
 
 1. **Configuración de ClientContext**
 
-   Cuando observa la configuración de clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) verá la siguiente configuración:
+   Cuando vea la configuración de clientcontext (`/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`), verá la siguiente configuración:
 
    * El ClientContext apunta a `/etc/clientcontext/campaign`
-   * También hay un suplemento *config* nodo.
+   * También hay un nodo *config* adicional.
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
 
-   Entrada **head.jsp**, verá las siguientes líneas que utilizan la variable **clientcontext-config** y el **cloudservice-hook**:
+   En **head.jsp**, verá las siguientes líneas que utilizan **clientcontext-config** y **cloudservice-hook**:
 
    ```
    <cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>
@@ -65,15 +65,15 @@ AEM Para crear una plantilla de página de personalizada con componentes de form
 
 1. **body.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/body.jsp)**
 
-   Entrada **body.jsp**, los servicios en la nube se cargan en la parte inferior de la página:
+   En **body.jsp**, los servicios en la nube se cargan en la parte inferior de la página:
 
    ```
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
    ```
 
-1. **Propiedades de página de Campaign**
+1. **Propiedades de la página de campaña**
 
-   Para poder seleccionar una plantilla de Adobe Campaign, las propiedades de página se amplían con la variable **Campaign** pestaña:
+   Para poder seleccionar una plantilla de Adobe Campaign, las propiedades de página se amplían con la pestaña **Campaign**:
 
    `/apps/geometrixx-outdoors/components/page_campaign_profile/dialog/items/tabs/items/campaign`
 

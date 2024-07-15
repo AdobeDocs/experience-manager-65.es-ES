@@ -25,9 +25,9 @@ La estructura básica de un formulario es:
 * Elementos de formulario
 * Fin de formulario
 
-Todos estos elementos se realizan con una serie de valores predeterminados [Componentes de formulario](/help/sites-authoring/default-components.md#form)AEM , disponible en una instalación estándar de la.
+AEM Todos estos elementos se realizan con una serie de [componentes de formulario](/help/sites-authoring/default-components.md#form) predeterminados, disponibles en una instalación estándar de la aplicación de la instalación de la aplicación de tipo de formulario (estándar).
 
-Además de [desarrollo de nuevos componentes](/help/sites-developing/developing-components-samples.md) para su uso en formularios, también puede:
+Además de [desarrollar nuevos componentes](/help/sites-developing/developing-components-samples.md) para usarlos en sus formularios, también puede:
 
 * [Precargar el formulario con valores](#preloading-form-values)
 * [Precargar (ciertos) campos con varios valores](#preloading-form-fields-with-multiple-values)
@@ -35,11 +35,11 @@ Además de [desarrollo de nuevos componentes](/help/sites-developing/developing-
 * [Desarrollar nuevas restricciones](#developing-your-own-form-constraints)
 * [Mostrar u ocultar campos de formulario específicos](#showing-and-hiding-form-components)
 
-[Uso de scripts](#developing-scripts-for-use-with-forms) para ampliar la funcionalidad donde sea necesario.
+[Usar scripts](#developing-scripts-for-use-with-forms) para ampliar la funcionalidad donde sea necesario.
 
 >[!NOTE]
 >
->Este documento se centra en el desarrollo de formularios utilizando [Componentes básicos](/help/sites-authoring/default-components-foundation.md) en la IU clásica. El Adobe recomienda utilizar el nuevo [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Ocultar condiciones](/help/sites-developing/hide-conditions.md) para el desarrollo de formularios en la IU táctil.
+>Este documento se centra en el desarrollo de formularios utilizando [componentes de base](/help/sites-authoring/default-components-foundation.md) en la IU clásica. El Adobe recomienda usar los nuevos [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Ocultar condiciones](/help/sites-developing/hide-conditions.md) para el desarrollo de formularios en la IU táctil.
 
 ## Precarga de valores de formulario {#preloading-form-values}
 
@@ -51,29 +51,31 @@ Es un campo opcional que especifica la ruta a un nodo del repositorio. Cuando es
 
 >[!NOTE]
 >
->A [acción de formulario](#developing-your-own-form-actions) También puede establecer el recurso desde el que desea cargar los valores iniciales. Esto se realiza utilizando `FormsHelper#setFormLoadResource` interior `init.jsp`.
+>Una [acción de formulario](#developing-your-own-form-actions) también puede establecer el recurso desde el cual cargar los valores iniciales. Esto se completó con `FormsHelper#setFormLoadResource` dentro de `init.jsp`.
 >
 >El autor solo rellenará el formulario desde la ruta establecida en el componente del formulario de inicio si no se ha establecido.
 
 ### Precarga de campos de formulario con varios valores {#preloading-form-fields-with-multiple-values}
 
-Varios campos de formulario también tienen la variable **Ruta de carga de elementos**, de nuevo una ruta opcional que apunta a un nodo del repositorio.
+Varios campos de formulario también tienen la ruta de carga **Items**, de nuevo una ruta opcional que apunta a un nodo del repositorio.
 
-El **Ruta de carga de elementos** es la ruta a las propiedades del nodo que se utiliza para cargar valores predefinidos en ese campo específico del formulario, por ejemplo, una [lista desplegable](/help/sites-authoring/default-components-foundation.md#dropdown-list), [grupo de casillas de verificación](/help/sites-authoring/default-components-foundation.md#checkbox-group) o [grupo de radio](/help/sites-authoring/default-components-foundation.md#radio-group).
+La ruta de carga de **elementos** es la ruta a las propiedades del nodo que se usa para cargar valores predefinidos en ese campo específico del formulario, por ejemplo, una [lista desplegable](/help/sites-authoring/default-components-foundation.md#dropdown-list), [grupo de casillas de verificación](/help/sites-authoring/default-components-foundation.md#checkbox-group) o [grupo de radio](/help/sites-authoring/default-components-foundation.md#radio-group).
 
 #### Ejemplo: Precarga de una lista desplegable con varios valores {#example-preloading-a-dropdown-list-with-multiple-values}
 
 Se puede configurar una lista desplegable con el rango de valores para la selección.
 
-El **Ruta de carga de elementos** se puede utilizar para acceder a una lista de una carpeta del repositorio y precargarla en el campo:
+La **Ruta de carga de elementos** se puede usar para obtener acceso a una lista de una carpeta en el repositorio y precargarla en el campo:
 
-1. Cree una carpeta de sling ( `sling:Folder`) por ejemplo, `/etc/designs/<myDesign>/formlistvalues`
+1. Crear una carpeta de sling (`sling:Folder`)
+por ejemplo, `/etc/designs/<myDesign>/formlistvalues`
 
-1. Añada una nueva propiedad (por ejemplo, `myList`) de tipo cadena de varios valores ( `String[]`) para contener la lista de elementos desplegables. El contenido también se puede importar mediante una secuencia de comandos, como con una secuencia de comandos JSP o cURL en una secuencia de comandos shell.
+1. Agregue una nueva propiedad (por ejemplo, `myList`) de tipo cadena de varios valores ( `String[]`) para contener la lista de elementos desplegables. El contenido también se puede importar mediante una secuencia de comandos, como con una secuencia de comandos JSP o cURL en una secuencia de comandos shell.
 
-1. Utilice la ruta de acceso completa en la **Ruta de carga de elementos** field: por ejemplo, `/etc/designs/geometrixx/formlistvalues/myList`
+1. Utilice la ruta completa en el campo **Ruta de carga de elementos**:
+por ejemplo, `/etc/designs/geometrixx/formlistvalues/myList`
 
-Tenga en cuenta que si los valores de `String[]` tienen el siguiente formato:
+Tenga en cuenta que si los valores de `String[]` son del con el formato siguiente:
 
 * `AL=Alabama`
 * `AK=Alaska`
@@ -93,13 +95,13 @@ AEM Una serie de acciones se proporcionan con una instalación de estándar, que
 
 `/libs/foundation/components/form/actions`
 
-y en el **Tipo de acción** lista de los **Form** componente:
+y en la lista **Tipo de acción** del componente **Formulario**:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
 Esta sección explica cómo puede desarrollar su propia acción de formulario para incluirla en esta lista.
 
-Puede agregar su propia acción en `/apps` como sigue:
+Puede agregar su propia acción en `/apps` de la siguiente manera:
 
 1. Cree un nodo de tipo `sling:Folder`. Especifique un nombre que refleje la acción que desea implementar.
 
@@ -109,7 +111,7 @@ Puede agregar su propia acción en `/apps` como sigue:
 
 1. En este nodo, defina las siguientes propiedades y haga clic en **Guardar todo** para mantener los cambios:
 
-   * `sling:resourceType` - establecer como `foundation/components/form/action`
+   * `sling:resourceType` - establecido como `foundation/components/form/action`
 
    * `componentGroup` - definir como `.hidden`
 
@@ -117,7 +119,7 @@ Puede agregar su propia acción en `/apps` como sigue:
 
       * `jcr:title` - especifique un título de su elección, esto se mostrará en la lista desplegable de selección. Si no se define, se mostrará el nombre del nodo
 
-      * `jcr:description` - introduzca una descripción de su elección
+      * `jcr:description` - escriba una descripción de su elección
 
 1. En la carpeta, cree un nodo de diálogo:
 
@@ -127,7 +129,7 @@ Puede agregar su propia acción en `/apps` como sigue:
 
    1. Un guion post.
 El nombre del script es `post.POST.<extension>`, por ejemplo, `post.POST.jsp`
-El script posterior se invoca cuando se envía un formulario para procesarlo y contiene el código que administra los datos que llegan del formulario `POST`.
+El script posterior se invoca cuando se envía un formulario para procesarlo y contiene el código que administra los datos que llegan desde el formulario `POST`.
 
    1. Agregue un script de reenvío que se invoque cuando se envíe el formulario.
 El nombre del script es `forward.<extension`>, por ejemplo, `forward.jsp`
@@ -135,12 +137,12 @@ Esta secuencia de comandos puede definir una ruta. La solicitud actual se reenv�
 
    La llamada necesaria es `FormsHelper#setForwardPath` (2 variantes). Un caso típico es realizar alguna validación, o lógica, para encontrar la ruta de destino y luego reenviar a esa ruta, dejando que el servlet predeterminado del POST Sling realice el almacenamiento real en JCR.
 
-   También puede haber otro servlet que realice el procesamiento real, en tal caso la acción del formulario y la acción `forward.jsp` solo actuaría como código de &quot;pegado&quot;. Un ejemplo de esto es la acción de correo en `/libs/foundation/components/form/actions/mail`, que reenvía detalles a `<currentpath>.mail.html`donde se encuentra un servlet de correo.
+   También podría haber otro servlet que realice el procesamiento real, en tal caso la acción de formulario y `forward.jsp` solo actuarían como código de &quot;pegado&quot;. Un ejemplo de esto es la acción de correo en `/libs/foundation/components/form/actions/mail`, que reenvía detalles a `<currentpath>.mail.html`donde se encuentra un servlet de correo.
 
    Así que:
 
-   * a `post.POST.jsp` es útil para operaciones pequeñas que la propia acción realiza por completo
-   * mientras que el `forward.jsp` es útil cuando solo se requiere delegación.
+   * un(a) `post.POST.jsp` es útil para operaciones pequeñas que la propia acción realiza por completo
+   * mientras que `forward.jsp` resulta útil cuando solo se requiere delegación.
 
    El orden de ejecución de los scripts es el siguiente:
 
@@ -148,25 +150,25 @@ Esta secuencia de comandos puede definir una ruta. La solicitud actual se reenv�
 
       1. `init.jsp`
       1. para todas las restricciones del campo: `clientvalidation.jsp`
-      1. RT de validación del formulario: `clientvalidation.jsp`
+      1. elemento validationRT del formulario: `clientvalidation.jsp`
       1. el formulario se carga mediante el recurso de carga si está configurado
-      1. `addfields.jsp` mientras está en el procesamiento `<form></form>`
+      1. `addfields.jsp` mientras se encontraba dentro del procesamiento `<form></form>`
 
-   * al gestionar un formulario `POST`:
+   * al administrar un formulario `POST`:
 
       1. `init.jsp`
       1. para todas las restricciones del campo: `servervalidation.jsp`
-      1. RT de validación del formulario: `servervalidation.jsp`
+      1. elemento validationRT del formulario: `servervalidation.jsp`
       1. `forward.jsp`
-      1. si se ha definido una ruta de reenvío ( `FormsHelper.setForwardPath`), reenvíe la solicitud y llame a `cleanup.jsp`
+      1. si se estableció una ruta de reenvío (`FormsHelper.setForwardPath`), reenvíe la solicitud y llame a `cleanup.jsp`
 
-      1. si no se estableció ninguna ruta de reenvío, llame a `post.POST.jsp` (termina aquí, no `cleanup.jsp` llamado)
+      1. si no se estableció ninguna ruta de reenvío, llame a `post.POST.jsp` (termina aquí, no se llamó a `cleanup.jsp`)
 
 1. De nuevo en la carpeta, agregue lo siguiente de forma opcional:
 
    1. Script para agregar campos.
 El nombre del script es `addfields.<extension>`, por ejemplo, `addfields.jsp`
-Un `addfields` se invoca inmediatamente después de escribir el HTML para el inicio del formulario. Esto permite a la acción agregar campos de entrada personalizados u otro HTML de este tipo dentro del formulario.
+Se invoca un script `addfields` inmediatamente después de escribir el HTML para el inicio del formulario. Esto permite a la acción agregar campos de entrada personalizados u otro HTML de este tipo dentro del formulario.
 
    1. Un script de inicialización.
 El nombre del script es `init.<extension>`, por ejemplo, `init.jsp`
@@ -176,7 +178,7 @@ Este script se invoca cuando se procesa el formulario. Se puede utilizar para in
 El nombre del script es `cleanup.<extension>`, por ejemplo, `cleanup.jsp`
 Esta secuencia de comandos se puede utilizar para realizar la limpieza.
 
-1. Utilice el **Forms** en un parsys. El **Tipo de acción** ahora, la lista desplegable incluirá la nueva acción.
+1. Use el componente **Forms** en un parsys. La lista desplegable **Tipo de acción** ahora incluirá su nueva acción.
 
    >[!NOTE]
    >
@@ -190,11 +192,11 @@ Esta secuencia de comandos se puede utilizar para realizar la limpieza.
 Las restricciones se pueden imponer en dos niveles:
 
 * Para [campos individuales (consulte el siguiente procedimiento)](#constraints-for-individual-fields)
-* Como [validación form-global](#form-global-constraints)
+* Como [validación de formulario global](#form-global-constraints)
 
 #### Restricciones para campos individuales {#constraints-for-individual-fields}
 
-Puede añadir sus propias restricciones para un campo individual (en `/apps`) como se indica a continuación:
+Puede agregar sus propias restricciones para un campo individual (en `/apps`) de la siguiente manera:
 
 1. Cree un nodo de tipo `sling:Folder`. Especifique un nombre que refleje la restricción que se va a implementar.
 
@@ -204,21 +206,23 @@ Puede añadir sus propias restricciones para un campo individual (en `/apps`) co
 
 1. En este nodo, defina las siguientes propiedades y haga clic en **Guardar todo** para mantener los cambios:
 
-   * `sling:resourceType` - se establece en `foundation/components/form/constraint`
+   * `sling:resourceType` - se estableció en `foundation/components/form/constraint`
 
-   * `constraintMessage` : un mensaje personalizado que se muestra si el campo no es válido, según la restricción, cuando se envía el formulario
+   * `constraintMessage`: un mensaje personalizado que se muestra si el campo no es válido, según la restricción, cuando se envía el formulario
 
    * Opcionalmente:
 
       * `jcr:title` - especifique un título de su elección, esto se mostrará en la lista de selección. Si no se define, se mostrará el nombre del nodo
-      * `hint` : información adicional, para el usuario, sobre cómo utilizar el campo
+      * `hint`: información adicional, para el usuario, sobre cómo utilizar el campo
 
 1. Dentro de esta carpeta, puede necesitar los siguientes scripts:
 
-   * Un script de validación de cliente: el nombre del script es `clientvalidation.<extension>`, por ejemplo, `clientvalidation.jsp`
+   * Un script de validación de cliente:
+El nombre del script es `clientvalidation.<extension>`, por ejemplo, `clientvalidation.jsp`
 Se invocará cuando se represente el campo de formulario. Se puede utilizar para crear el javascript del cliente para validar el campo en el cliente.
 
-   * Un script de validación del servidor: el nombre del script es `servervalidation.<extension>`, por ejemplo, `servervalidation.jsp`
+   * Un script de validación de servidor:
+El nombre del script es `servervalidation.<extension>`, por ejemplo, `servervalidation.jsp`
 Se invocará cuando se envíe el formulario. Se puede utilizar para validar el campo en el servidor después de enviarlo.
 
 >[!NOTE]
@@ -229,14 +233,14 @@ Se invocará cuando se envíe el formulario. Se puede utilizar para validar el c
 
 #### Restricciones globales de formulario {#form-global-constraints}
 
-La validación global del formulario se especifica configurando un tipo de recurso en el componente de formulario de inicio ( `validationRT`). Por ejemplo:
+La validación global del formulario se especifica configurando un tipo de recurso en el componente del formulario de inicio ( `validationRT`). Por ejemplo:
 
 `apps/myProject/components/form/validation`
 
 A continuación, puede definir:
 
 * a `clientvalidation.jsp` - insertado después de los scripts de validación de cliente del campo
-* y una `servervalidation.jsp` : también se llama después de las validaciones individuales del servidor de campo en un `POST`.
+* y un `servervalidation.jsp`, también llamado después de las validaciones individuales del servidor de campo en un `POST`.
 
 ### Mostrar y ocultar componentes de formulario {#showing-and-hiding-form-components}
 
@@ -244,7 +248,7 @@ Puede configurar el formulario para mostrar u ocultar componentes de formulario 
 
 Cambiar la visibilidad de un campo de formulario resulta útil cuando el campo solo es necesario en condiciones específicas. Por ejemplo, en un formulario de comentarios, una pregunta pregunta a los clientes si desean que se les envíe información de productos por correo electrónico. Al seleccionar sí, aparece un campo de texto para permitir que el cliente escriba su dirección de correo electrónico.
 
-Utilice el **Editar reglas para mostrar/ocultar** para especificar las condiciones en las que se muestra o se oculta un componente del formulario.
+Utilice el cuadro de diálogo **Editar reglas para mostrar u ocultar** para especificar las condiciones en las que se muestra o se oculta un componente de formulario.
 
 ![showhideeditor](assets/showhideeditor.png)
 
@@ -259,7 +263,7 @@ Debajo de estos campos aparecen una o más condiciones. Una condición compara e
 * Un operador.
 * Se compara un valor con el valor del campo.
 
-Por ejemplo, un componente de grupo de radio con el título `Receive email notifications?`* * contiene `Yes` y `No` botones de opción. Componente de campo de texto con el título `Email Address` utiliza la siguiente condición para que sea visible si `Yes` está seleccionado:
+Por ejemplo, un componente de grupo de radio con el título `Receive email notifications?`* * contiene `Yes` y `No` botones de opción. Un componente de campo de texto con el título `Email Address` utiliza la siguiente condición para que sea visible si se selecciona `Yes`:
 
 ![showhidecondition](assets/showhidecondition.png)
 
@@ -271,27 +275,27 @@ En JavaScript, las condiciones utilizan el valor de la propiedad Nombre del elem
 
 1. Edite el componente de formulario específico.
 
-1. Seleccionar **Mostrar / Ocultar** para abrir **Editar reglas para mostrar/ocultar** diálogo:
+1. Seleccione **Mostrar / Ocultar** para abrir el diálogo **Editar reglas para mostrar / ocultar**:
 
-   * En la primera lista desplegable, seleccione **Mostrar** o **Hide** para especificar si las condiciones determinan si se debe mostrar u ocultar el componente.
+   * En la primera lista desplegable, seleccione **Mostrar** o **Ocultar** para especificar si las condiciones determinan si se debe mostrar u ocultar el componente.
 
    * En la lista desplegable al final de la línea superior, seleccione:
 
-      * **todo** : si todas las condiciones deben ser verdaderas para mostrar u ocultar el componente
-      * **cualquiera** : si solo una o más condiciones deben ser verdaderas para mostrar u ocultar el componente
+      * **all** - si todas las condiciones deben ser verdaderas para mostrar u ocultar el componente
+      * **any** - si solo una o más condiciones deben ser verdaderas para mostrar u ocultar el componente
 
    * En la línea de condición (se presenta una como predeterminada), seleccione un componente, un operador y, a continuación, especifique un valor.
-   * Añada más condiciones si es necesario haciendo clic en **Agregar condición**.
+   * Agregue más condiciones si es necesario haciendo clic en **Agregar condición**.
 
    Por ejemplo:
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
-1. Clic **OK** para guardar la definición.
+1. Haga clic en **Aceptar** para guardar la definición.
 
-1. Después de guardar la definición, puede **Editar reglas** El vínculo aparece junto a la **Mostrar / Ocultar** en las propiedades del componente del formulario. Haga clic en este vínculo para abrir **Editar reglas para mostrar/ocultar** Cuadro de diálogo para realizar cambios.
+1. Después de guardar la definición, aparece un vínculo **Editar reglas** junto a la opción **Mostrar / Ocultar** en las propiedades del componente del formulario. Haga clic en este vínculo para abrir el cuadro de diálogo **Editar mostrar / ocultar reglas** para realizar cambios.
 
-   Clic **OK** para guardar todos los cambios.
+   Haga clic en **Aceptar** para guardar todos los cambios.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -299,7 +303,7 @@ En JavaScript, las condiciones utilizan el valor de la propiedad Nombre del elem
    >
    >Los efectos de las definiciones Mostrar / Ocultar se pueden ver y probar:
    >
-   >* in **Previsualizar** en el entorno de creación (necesita volver a cargar la página la primera vez que se cambia a vista previa)
+   >* en modo **Vista previa** en el entorno de creación (necesita una recarga de página la primera vez que se cambia a vista previa)
    >
    >* en el entorno de publicación
 
@@ -311,11 +315,11 @@ Cuando la configuración Mostrar/Ocultar no es válida, la configuración solo s
 
 ### Desarrollo de scripts para su uso con Forms {#developing-scripts-for-use-with-forms}
 
-Para obtener más información sobre los elementos de API que se pueden utilizar al escribir secuencias de comandos, consulte la [javadocs relacionados con formularios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Para obtener más información sobre los elementos de API que se pueden usar al escribir scripts, consulte los [javadocs relacionados con formularios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 Puede utilizarlo para acciones como llamar a un servicio antes de enviar el formulario y cancelar el servicio si falla:
 
 * Definir el tipo de recurso de validación
 * Incluya un script para la validación:
 
-   * En el JSP, llame al servicio web y cree un `com.day.cq.wcm.foundation.forms.ValidationInfo` objeto que contiene los mensajes de error. Si hay errores, no se publicarán los datos del formulario.
+   * En el JSP, llame al servicio web y cree un objeto `com.day.cq.wcm.foundation.forms.ValidationInfo` que contenga los mensajes de error. Si hay errores, no se publicarán los datos del formulario.

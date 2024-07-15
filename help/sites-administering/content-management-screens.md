@@ -1,6 +1,6 @@
 ---
 title: Administración de contenido para Screens
-description: Obtenga información acerca de los conceptos básicos de administración de contenido para pantallas.
+description: Obtenga información acerca de los conceptos básicos de la administración de contenido para Screens.
 contentOwner: Jyotika Syal
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Administración de contenido para Screens{#content-management-for-screens}
 
-A ***Administrador de contenido*** para AEM Screens es un profesional creativo que trabaja estrechamente con el marketing y conoce la campaña, la audiencia y el enfoque deseado. El administrador de contenido es responsable de crear y orquestar la experiencia del usuario final mediante el desarrollo de diferentes canales y la asignación de secuencias en una experiencia de canal cronometrada.
+Un ***Administrador de contenido*** para AEM Screens es un profesional creativo que trabaja de cerca con el marketing y conoce la campaña, la audiencia y el enfoque deseado. El administrador de contenido es responsable de crear y orquestar la experiencia del usuario final mediante el desarrollo de diferentes canales y la asignación de secuencias en una experiencia de canal cronometrada.
 
 El Administrador de contenido para Screens diseña ubicaciones y programaciones, mantiene la integridad del canal, realiza análisis e informes y mantiene perfiles de vídeo.
 

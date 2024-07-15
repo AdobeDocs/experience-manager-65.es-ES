@@ -32,7 +32,7 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties'</p></td>
-   <td><p>Esta API es un contenedor para <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> API de Java. Recupera la configuración del entorno de trabajo actual. </p></td>
+   <td><p>Esta API es un contenedor para la API de Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a>. Recupera la configuración del entorno de trabajo actual. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -105,7 +105,7 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>Esta API es un contenedor para todas las API del servicio de información del sistema. Internamente, ejecuta todas las API de información del sistema y descarga la información en formato zip. </p><p><i><strong>nota</strong>: SystemInfo.info no proporciona un recuento ni un seguimiento de pila de los subprocesos activos. </i></p></td>
+   <td><p>Esta API es un contenedor para todas las API del servicio de información del sistema. Internamente, ejecuta todas las API de información del sistema y descarga la información en formato zip. </p><p><i><strong>nota</strong>: SystemInfo.info no proporciona seguimiento de recuento y pila de los subprocesos activos. </i></p></td>
   </tr>
  </tbody>
 </table>

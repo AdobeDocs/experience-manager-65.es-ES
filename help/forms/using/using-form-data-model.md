@@ -23,7 +23,7 @@ ht-degree: 90%
 | AEM 6.5 | Este artículo |
 
 
-![imagen de héroe](do-not-localize/data-integration.png)
+![imagen a pantalla completa](do-not-localize/data-integration.png)
 
 La integración de datos de AEM Forms permite utilizar fuentes de datos de diferentes back-end para crear un modelo de datos de formulario que se puede utilizar como esquema en varios flujos de trabajo de formularios adaptables y comunicaciones interactivas. Para ello, es necesario configurar las fuentes de datos y crear un modelo de datos de formulario basado en los objetos y servicios de modelo de datos disponibles en las fuentes de datos. Para obtener más información, consulte:
 
@@ -91,19 +91,19 @@ Para obtener más información, consulte:
 
 ## Usar una vista previa con datos de ejemplo {#preview-ic}
 
-El editor del modelo de datos de formulario permite generar y editar datos de ejemplo para objetos de modelo de datos en el modelo de datos de formulario. Puede utilizar estos datos para previsualizar y probar comunicaciones interactivas y formularios adaptables. Genere los datos de ejemplo antes de obtener la vista previa como se describe en [Trabajo con el modelo de datos de formulario](../../forms/using/work-with-form-data-model.md#sample).
+El editor del modelo de datos de formulario permite generar y editar datos de ejemplo para objetos de modelo de datos en el modelo de datos de formulario. Puede utilizar estos datos para previsualizar y probar comunicaciones interactivas y formularios adaptables. Genere los datos de ejemplo antes de obtener la vista previa como se describe en [Trabajar con el modelo de datos de formulario](../../forms/using/work-with-form-data-model.md#sample).
 
 Para previsualizar una comunicación interactiva con datos del modelo de datos de formulario de ejemplo:
 
 1. En la instancia de autor de AEM, vaya a **[!UICONTROL Formularios > Formularios y documentos]**.
-1. Seleccione una comunicación interactiva y haga clic en **[!UICONTROL Previsualizar]** en la barra de herramientas para seleccionar **[!UICONTROL Canal web]**, **[!UICONTROL Canal de impresión]**, o **[!UICONTROL Ambos canales]** para previsualizar la comunicación interactiva.
-1. En la vista previa [*canal*] diálogo, asegúrese de que **[!UICONTROL Datos de prueba del modelo de datos de formulario]** está seleccionado y seleccione **[!UICONTROL Previsualizar]**.
+1. Seleccione una comunicación interactiva y seleccione **[!UICONTROL Vista previa]** en la barra de herramientas para seleccionar **[!UICONTROL Canal web]**, **[!UICONTROL Canal de impresión]** o **[!UICONTROL Ambos canales]** para previsualizar la comunicación interactiva.
+1. En el cuadro de diálogo Vista previa de [*canal*], asegúrese de que está seleccionado **[!UICONTROL Probar datos del modelo de datos de formulario]** y seleccione **[!UICONTROL Vista previa]**.
 
 La comunicación interactiva se abre con datos de ejemplo prerrellenados.
 
 ![web-preview](assets/web-preview.png)
 
-Del mismo modo, para previsualizar un formulario adaptable con datos de ejemplo, abra el formulario adaptable en el modo Autor y seleccione **[!UICONTROL Previsualizar]**.
+Del mismo modo, para obtener una vista previa de un formulario adaptable con datos de ejemplo, ábralo en el modo Autor y seleccione **[!UICONTROL Vista previa]**.
 
 ## Prerrellenar mediante el servicio del modelo de datos de formulario {#prefill}
 
@@ -142,7 +142,7 @@ También puede enviar los archivos adjuntos del formulario a una fuente de datos
 
 ## Invocar servicios desde formularios adaptables mediante reglas {#invoke-services}
 
-En un formulario adaptable basado en un modelo de datos de formulario, puede [crear reglas](../../forms/using/rule-editor.md) para invocar servicios configurados en el modelo de datos de formulario. El **[!UICONTROL Invocar servicios]** operación en una regla que enumera todos los servicios disponibles en el modelo de datos de formulario y permite seleccionar campos de entrada y salida para el servicio. También puede usar el tipo de regla **Set Value** para invocar un servicio del modelo de datos de formulario y establecer el valor de un campo en la salida de vuelta por el servicio.
+En un formulario adaptable basado en un modelo de datos de formulario, puede [crear reglas](../../forms/using/rule-editor.md) para invocar servicios configurados en el modelo de datos de formulario. La operación **[!UICONTROL Invocar servicios]** en una regla enumera todos los servicios disponibles en el modelo de datos de formulario y permite seleccionar campos de entrada y salida para el servicio. También puede usar el tipo de regla **Set Value** para invocar un servicio del modelo de datos de formulario y establecer el valor de un campo en la salida de vuelta por el servicio.
 
 Por ejemplo, la siguiente regla invoca un servicio de obtención que toma el ID de empleado como entrada, y los valores devueltos se rellenan en los campos correspondientes ID de la persona dependiente, Apellidos, Nombre y Género del formulario.
 

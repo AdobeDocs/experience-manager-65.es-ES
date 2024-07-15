@@ -24,8 +24,8 @@ Los nodos del repositorio están sujetos a las convenciones de nomenclatura de [
 
 Estas convenciones de nomenclatura se implementan en varios niveles:
 
-* AEM JcrUtil: la implementación de la aplicación de la aplicación de la aplicación de la [Utilidades JCR](#jcr-utilities).
-* PageManager: el [Administrador de páginas](#page-manager) proporciona métodos para operaciones a nivel de página.
+* AEM JcrUtil: la implementación de la implementación de la implementación de la implementación de las [utilidades JCR](#jcr-utilities).
+* PageManager: [Page Manager](#page-manager) proporciona métodos para operaciones a nivel de página.
 * Según la interfaz de usuario utilizada:
 
    * [IU estándar con capacidad táctil](#standard-ui)
@@ -33,7 +33,7 @@ Estas convenciones de nomenclatura se implementan en varios niveles:
 
 ### Utilidades JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) AEM es la implementación de la implementación de la implementación de JCR. De especial interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
+AEM [JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) es la implementación de las utilidades JCR que se encuentra en el nivel de implementación de la. De especial interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
 
 * `isValidName`
 
@@ -67,7 +67,7 @@ La IU clásica impone restricciones más estrictas:
    * se proporciona un título de página para la conversión en el nombre del nodo
    * se proporciona un nombre de nodo explícito
 
-* Caracteres válidos (solo estos caracteres son válidos cuando se crea una página desde la IU clásica) aunque `PageManagerImpl` permitirían caracteres adicionales):
+* Caracteres válidos (en realidad, solo estos caracteres son válidos cuando se crea una página desde la interfaz de usuario clásica, aunque `PageManagerImpl` permitiría caracteres adicionales):
 
    * &#39;a&#39; a &#39;z&#39;
    * De &#39;A&#39; a &#39;Z&#39;

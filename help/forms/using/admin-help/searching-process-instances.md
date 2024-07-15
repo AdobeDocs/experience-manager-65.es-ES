@@ -31,7 +31,7 @@ Introduzca los criterios básicos para realizar una búsqueda general. Si introd
 1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Búsqueda de procesos.
 1. En la página Buscar proceso, en Búsqueda general, proporcione los siguientes criterios:
 
-   * **ID de proceso:** El entero positivo que identifica cada instancia de proceso única.
+   * **Id. de proceso:** El entero positivo que identifica cada instancia de proceso única.
    * **Estado del proceso:** Seleccione un estado de la lista.
    * **Aplicación:** Seleccione una aplicación de la lista. Solo se muestran las aplicaciones implementadas.
    * **Nombre del proceso - Versión:** Seleccione un nombre de proceso en el menú. Solo se muestran los procesos implementados.

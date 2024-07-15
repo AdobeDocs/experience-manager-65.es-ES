@@ -52,7 +52,7 @@ No hay valor devuelto.
 
 ## CQ_Analytics.ClientContextUtils {#cq-analytics-clientcontextutils}
 
-Proporciona métodos para detectar la activación y el registro del almacén de sesiones. Consulte también [Comprobación de que el almacén de sesión está definido e inicializado](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
+Proporciona métodos para detectar la activación y el registro del almacén de sesiones. Vea también [Comprobar que se ha definido e inicializado un almacén de sesión](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
 
 ### Métodos {#methods-1}
 
@@ -70,13 +70,13 @@ Por ejemplo, un almacén de sesiones se basa en un objeto JSON y se recupera med
 * El almacén se rellena previamente con valores predeterminados (propiedades init), pero la solicitud falla (tiempo de espera). Solo hay una inicialización con valores predeterminados.
 * El almacén se rellena previamente.
 
-Cuando el retraso se establece en `true` Durante varios milisegundos, el método espera antes de llamar al método de devolución de llamada. Si se activa otro evento de inicialización antes de que transcurra el retraso, esperará hasta que se supere el tiempo de retraso sin que se produzca ningún evento de inicialización. Esto permite esperar a que se active un segundo evento de inicialización y llama a la función de llamada de retorno en el caso más óptimo.
+Cuando el retraso se establece en `true` o varios milisegundos, el método espera antes de llamar al método de devolución de llamada. Si se activa otro evento de inicialización antes de que transcurra el retraso, esperará hasta que se supere el tiempo de retraso sin que se produzca ningún evento de inicialización. Esto permite esperar a que se active un segundo evento de inicialización y llama a la función de llamada de retorno en el caso más óptimo.
 
 **Parámetros**
 
 * storeName: String. Nombre del almacén de sesiones para agregar el detector.
 * callback: Función. La función a la que se llama tras la inicialización de la tienda.
-* delay: booleano o número. La cantidad de tiempo para retrasar la llamada a la función de llamada de retorno, en milisegundos. Un valor booleano de `true` utiliza el retraso predeterminado de `200 ms`. Un valor booleano de `false` o un número negativo hace que no se utilice ningún retraso.
+* delay: booleano o número. La cantidad de tiempo para retrasar la llamada a la función de llamada de retorno, en milisegundos. Un valor booleano de `true` usa el retraso predeterminado de `200 ms`. Si se usa un valor booleano de `false` o un número negativo, no se producirá ningún retraso.
 
 **Devuelve**
 
@@ -84,7 +84,7 @@ No hay valor devuelto.
 
 #### onStoreRegistered(storeName, callback) {#onstoreregistered-storename-callback}
 
-Registra una función de llamada de retorno que se llama cuando se registra un almacén de sesión. El evento register se produce cuando un almacén se registra en [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
+Registra una función de llamada de retorno que se llama cuando se registra un almacén de sesión. El evento register se produce cuando se registra un almacén en [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
 
 **Parámetros**
 
@@ -97,7 +97,7 @@ No hay valor devuelto.
 
 ## CQ_Analytics.JSONPStore {#cq-analytics-jsonpstore}
 
-Almacén de sesiones no persistente que contiene datos JSON. Los datos se recuperan de un servicio JSONP externo. Utilice el `getInstance` o `getRegisteredInstance` para crear una instancia de esta clase.
+Almacén de sesiones no persistente que contiene datos JSON. Los datos se recuperan de un servicio JSONP externo. Utilice el método `getInstance` o `getRegisteredInstance` para crear una instancia de esta clase.
 
 Amplía CQ_Analytics.JSONStore.
 
@@ -192,11 +192,11 @@ Amplía CQ_Analytics.SessionStore.
 
 #### LLAVE DE TIENDA {#storekey}
 
-La clave que identifica el almacén. Utilice el `getInstance` para recuperar este valor.
+La clave que identifica el almacén. Utilice el método `getInstance` para recuperar este valor.
 
 #### STORENAME {#storename}
 
-El nombre de la tienda. Utilice el `getInstance` para recuperar este valor.
+El nombre de la tienda. Utilice el método `getInstance` para recuperar este valor.
 
 ### Métodos {#methods-3}
 
@@ -241,7 +241,7 @@ Un objeto que representa los datos de almacén en formato JSON.
 
 #### init() {#init}
 
-Borra el almacén de sesiones y lo inicializa con la propiedad de inicialización. Establece el indicador de inicialización en `true` y luego activa la `initialize` y `update` eventos.
+Borra el almacén de sesiones y lo inicializa con la propiedad de inicialización. Establece el indicador de inicialización en `true` y, a continuación, activa los eventos `initialize` y `update`.
 
 **Parámetros**
 
@@ -284,7 +284,7 @@ No hay valor devuelto.
 
 #### registerNewInstance(storeName, jsonData) {#registernewinstance-storename-jsondata}
 
-Crea un objeto CQ_Analytics.JSONtore con un nombre determinado e inicializado con los datos JSON dados (llama al método initJSON). El nuevo objeto se registra automáticamente con Clickstream Cloud Manager.
+Crea un objeto CQ_Analytics.JSONtore con un nombre determinado e inicializado con los datos JSON dados (llama al método initJSON). El nuevo objeto se registra automáticamente con la Cloud Manager de flujo de navegación.
 
 **Parámetros**
 
@@ -303,7 +303,7 @@ Activa eventos y permite que otros objetos escuchen estos eventos y reaccionen. 
 
 #### addListener(event, fct, scope) {#addlistener-event-fct-scope}
 
-Registra un oyente para un evento. Consulte también [Creación de un Listener para Reaccionar a una Actualización de Almacenamiento de Sesión](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
+Registra un oyente para un evento. Consulte también [Creación de un agente de escucha para reaccionar ante una actualización de almacén de sesión](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
 
 **Parámetros**
 
@@ -417,11 +417,11 @@ Extiende `CQ_Analytics.PersistedSessionStore`.
 
 #### LLAVE DE TIENDA {#storekey-1}
 
-La clave que identifica el almacén. Utilice el `getInstance` para recuperar este valor.
+La clave que identifica el almacén. Utilice el método `getInstance` para recuperar este valor.
 
 #### STORENAME {#storename-1}
 
-El nombre de la tienda. Utilice el `getInstance` para recuperar este valor.
+El nombre de la tienda. Utilice el método `getInstance` para recuperar este valor.
 
 ### Métodos {#methods-6}
 
@@ -514,11 +514,11 @@ El valor predeterminado es `key`.
 
 Consulte CQ_Analytics.SessionStore para conocer los métodos heredados.
 
-Cuando los métodos heredados `clear`, `setProperty`, `setProperties`, `removeProperty` se utilizan para cambiar los datos del almacén, los cambios se mantienen automáticamente, a menos que las propiedades modificadas estén marcadas como notPersisted.
+Cuando se usan los métodos heredados `clear`, `setProperty`, `setProperties`, `removeProperty` para cambiar los datos del almacén, los cambios persisten automáticamente, a menos que las propiedades modificadas estén marcadas como notPersisted.
 
 #### getStoreKey() {#getstorekey}
 
-Recupera el `STOREKEY` propiedad.
+Recupera la propiedad `STOREKEY`.
 
 **Parámetros**
 
@@ -526,7 +526,7 @@ Ninguno
 
 **Devuelve**
 
-El valor del `STOREKEY` propiedad.
+Valor de la propiedad `STOREKEY`.
 
 #### isPersisted(nombre) {#ispersisted-name}
 
@@ -538,15 +538,15 @@ Determina si una propiedad de datos se mantiene.
 
 **Devuelve**
 
-Un valor booleano de `true` si la propiedad se mantiene y un valor de `false` si el valor no es una propiedad persistente.
+Un valor booleano de `true` si la propiedad persiste, y un valor de `false` si el valor no es una propiedad persistente.
 
 #### persistst() {#persist}
 
-Conserva el almacén de sesiones. El modo de persistencia predeterminado utiliza el explorador `localStorage` usando `ClientSidePersistence` como el nombre ( `window.localStorage.set("ClientSidePersistance", store);`)
+Conserva el almacén de sesiones. El modo de persistencia predeterminado usa el explorador `localStorage` con `ClientSidePersistence` como nombre ( `window.localStorage.set("ClientSidePersistance", store);`)
 
 Si localStorage no está disponible ni se puede escribir, el almacén se mantiene como propiedad de la ventana.
 
-Activa el `persist` evento tras la finalización.
+Activa el evento `persist` al finalizar.
 
 **Parámetros**
 
@@ -558,11 +558,11 @@ No hay valor devuelto.
 
 #### reset(deferEvent) {#reset-deferevent}
 
-Quita todas las propiedades de datos del almacén y lo mantiene. Opcionalmente, no activa la `udpate` evento tras la finalización.
+Quita todas las propiedades de datos del almacén y lo mantiene. Opcionalmente, no activa el evento `udpate` al finalizar.
 
 **Parámetros**
 
-* deferEvent: Un valor true evita que la variable `update` evento de activarse. Un valor de `false` provoca que se active el evento update.
+* deferEvent: Un valor true evita que se active el evento `update`. Un valor de `false` hace que el evento de actualización se active.
 
 **Devuelve**
 
@@ -625,7 +625,7 @@ No hay valor devuelto.
 
 #### getData(excluido) {#getdata-excluded}
 
-Devuelve los datos del almacén. Opcionalmente, excluye las propiedades de nombre de los datos. Llama al `init` si la propiedad data del almacén no existe.
+Devuelve los datos del almacén. Opcionalmente, excluye las propiedades de nombre de los datos. Llama al método `init` si la propiedad data del almacén no existe.
 
 **Parámetros**
 
@@ -645,7 +645,7 @@ Recupera el valor de una propiedad de datos.
 
 **Devuelve**
 
-El valor de la propiedad de datos. Devuelve `null` si el almacén de sesiones no contiene ninguna propiedad del nombre dado.
+El valor de la propiedad de datos. Devuelve `null` si el almacén de sesión no contiene ninguna propiedad del nombre dado.
 
 #### getName() {#getname}
 
@@ -661,7 +661,7 @@ Valor de tipo String que representa el nombre del almacén.
 
 #### getProperty(nombre, sin procesar) {#getproperty-name-raw}
 
-Devuelve el valor de una propiedad. El valor se devuelve como propiedad sin procesar o como valor filtrado por XSS. Llama al `init` si la propiedad data del almacén no existe.
+Devuelve el valor de una propiedad. El valor se devuelve como propiedad sin procesar o como valor filtrado por XSS. Llama al método `init` si la propiedad data del almacén no existe.
 
 **Parámetros**
 
@@ -674,7 +674,7 @@ El valor de la propiedad de datos.
 
 #### getPropertyNames(excluido) {#getpropertynames-excluded}
 
-Devuelve los nombres de las propiedades que contiene el almacén de sesión. Llama al `init` si la propiedad data del almacén no existe.
+Devuelve los nombres de las propiedades que contiene el almacén de sesión. Llama al método `init` si la propiedad data del almacén no existe.
 
 **Parámetros**
 
@@ -698,7 +698,7 @@ esta
 
 #### init() {#init-1}
 
-Marca el almacén como inicializado y activa el `initialize` evento.
+Marca el almacén como inicializado y activa el evento `initialize`.
 
 **Parámetros**
 
@@ -718,7 +718,7 @@ Ninguna.
 
 **Devuelve**
 
-Un valor de `true` si el almacén se inicializa y un valor de `false` si el almacén no está inicializado.
+Un valor de `true` si se inicializa el almacén, y un valor de `false` si no se inicializa el almacén.
 
 #### loadInitProperties(obj, setValues) {#loadinitproperties-obj-setvalues}
 
@@ -735,7 +735,7 @@ No hay valor devuelto.
 
 #### removeProperty(nombre) {#removeproperty-name}
 
-Quita una propiedad del almacén de sesión. Activa el `update` evento tras la finalización. Llama al `init` si la propiedad data del almacén no existe.
+Quita una propiedad del almacén de sesión. Activa el evento `update` al finalizar. Llama al método `init` si la propiedad data del almacén no existe.
 
 **Parámetros**
 
@@ -747,7 +747,7 @@ No hay valor devuelto.
 
 #### reset() {#reset}
 
-Restaura los valores iniciales del almacén de datos. La implementación predeterminada simplemente elimina todos los datos. Activa el `update` evento tras la finalización.
+Restaura los valores iniciales del almacén de datos. La implementación predeterminada simplemente elimina todos los datos. Activa el evento `update` al finalizar.
 
 **Parámetros**
 
@@ -759,7 +759,7 @@ No hay valor devuelto.
 
 #### setProperties(properties) {#setproperties-properties}
 
-Establece los valores de varias propiedades. Activa el `update` evento tras la finalización. Llama al `init` si la propiedad data del almacén no existe.
+Establece los valores de varias propiedades. Activa el evento `update` al finalizar. Llama al método `init` si la propiedad data del almacén no existe.
 
 **Parámetros**
 
@@ -771,7 +771,7 @@ No hay valor devuelto.
 
 #### setProperty(nombre, valor) {#setproperty-name-value}
 
-Establece el valor de una propiedad. Activa el `update` evento tras la finalización. Llama al `init` si la propiedad data del almacén no existe.
+Establece el valor de una propiedad. Activa el evento `update` al finalizar. Llama al método `init` si la propiedad data del almacén no existe.
 
 **Parámetros**
 

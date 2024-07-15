@@ -31,7 +31,7 @@ El sitio de muestra de Geometrixx incluye varias ramas de idioma y utiliza la si
              |- zh
 ```
 
-Cada rama de idioma de un sitio se denomina copia de idioma. La página raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, `/content/geometrixx/fr` es la raíz del idioma para la copia en francés. Las copias de idioma deben utilizar un [raíz de idioma configurada correctamente](/help/sites-administering/tc-prep.md#creating-a-language-root) para que el idioma correcto se dirija cuando se realicen traducciones de un sitio de origen.
+Cada rama de idioma de un sitio se denomina copia de idioma. La página raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, `/content/geometrixx/fr` es la raíz del idioma para la copia en francés. Las copias de idioma deben usar una [raíz de idioma configurada correctamente](/help/sites-administering/tc-prep.md#creating-a-language-root) para que el idioma correcto se dirija cuando se realicen traducciones de un sitio de origen.
 
 La copia de idioma para la que creó originalmente el contenido del sitio es el maestro de idioma. El maestro de idiomas es la fuente que se traduce a otros idiomas.
 
@@ -49,13 +49,13 @@ Cree una raíz de idioma como la página raíz de una copia de idioma que identi
 
 Para crear la raíz de idioma, cree una página y utilice un código de idioma ISO como valor para la propiedad Nombre. El código de idioma debe tener uno de los siguientes formatos:
 
-* `<language-code>`El código de idioma admitido es un código de dos letras como se define en la norma ISO-639-1, por ejemplo, `en`.
+* `<language-code>`El código de idioma admitido es un código de dos letras como se define en ISO-639-1, por ejemplo, `en`.
 
 * `<language-code>_<country-code>` o `<language-code>-<country-code>`El código de país admitido es un código de dos letras en minúsculas o mayúsculas, tal como se define en la norma ISO 3166, por ejemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Puede utilizar cualquiera de los dos formatos, según la estructura que haya elegido para el sitio global.  Por ejemplo, la página raíz de la copia en francés del sitio de Geometrixx tiene lo siguiente `fr` como la propiedad Name. La propiedad Name se utiliza como nombre del nodo de página en el repositorio y, por lo tanto, determina la ruta de la página. (http://localhost:4502/content/geometrixx/fr.html)
+Puede utilizar cualquiera de los dos formatos, según la estructura que haya elegido para el sitio global.  Por ejemplo, la página raíz de la copia en francés del sitio de Geometrixx tiene `fr` como propiedad Nombre. La propiedad Name se utiliza como nombre del nodo de página en el repositorio y, por lo tanto, determina la ruta de la página. (http://localhost:4502/content/geometrixx/fr.html)
 
-El siguiente procedimiento utiliza la interfaz de usuario táctil para crear una copia de idioma de un sitio web. Para obtener instrucciones sobre el uso de la IU clásica, consulte [Creación de una raíz de idioma mediante la IU clásica](/help/sites-administering/tc-lroot-classic.md).
+El siguiente procedimiento utiliza la interfaz de usuario táctil para crear una copia de idioma de un sitio web. Para obtener instrucciones que usan la IU clásica, vea [Crear una raíz de idioma con la IU clásica](/help/sites-administering/tc-lroot-classic.md).
 
 1. Vaya a Sitios.
 1. Haga clic en el sitio para el que desea crear una copia de idioma.
@@ -67,11 +67,11 @@ El siguiente procedimiento utiliza la interfaz de usuario táctil para crear una
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Seleccione la plantilla de página y haga clic en Siguiente.
-1. En el campo Nombre escriba el código de país con el formato `<language-code>` o `<language-code>_<country-code>`, por ejemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Escriba un título para la página.
+1. En el campo Nombre, escriba el código de país con el formato `<language-code>` o `<language-code>_<country-code>`, por ejemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Escriba un título para la página.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Haga clic en Crear. En el cuadro de diálogo de confirmación, haga clic en **Listo** para volver a la consola Sitios, o **Abrir** para abrir la copia de idioma.
+1. Haga clic en Crear. En el cuadro de diálogo de confirmación, haga clic en **Listo** para volver a la consola Sitios o en **Abrir** para abrir la copia de idioma.
 
 ## Ver el estado de las raíces de los idiomas {#seeing-the-status-of-language-roots}
 

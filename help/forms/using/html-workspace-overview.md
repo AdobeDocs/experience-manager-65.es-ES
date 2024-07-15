@@ -50,7 +50,7 @@ puede aprobar varias tareas del mismo tipo. Una vez que seleccione una tarea par
 
 Espacio de trabajo de Flex no es compatible con los clientes de AEM Forms. Todos los clientes que utilicen espacio de trabajo de Flex deben trasladarse a AEM Forms Workspace.
 
-En AEM Forms Workspace, los servicios de procesamiento y envío predeterminados del perfil de acción predeterminado asociados a los formularios XDP han cambiado, y se han introducido nuevos servicios. Para obtener más información, consulte [Nuevo servicio de renderización y envío](/help/forms/using/new-render-submit-service.md). Para migrar los procesos existentes, que funcionan con formularios XDP, y utilizar estos servicios, puede seguir [estos pasos](new-render-submit-service.md).
+En AEM Forms Workspace, los servicios de procesamiento y envío predeterminados del perfil de acción predeterminado asociados a los formularios XDP han cambiado, y se han introducido nuevos servicios. Para obtener más información, consulte [Nuevo servicio de renderización y envío](/help/forms/using/new-render-submit-service.md). Para migrar los procesos existentes, que funcionan con formularios XDP, y para usar estos servicios, puede seguir [estos pasos](new-render-submit-service.md).
 
 **Asignación de las personalizaciones de espacio de trabajo de Flex con AEM Forms Workspace**
 

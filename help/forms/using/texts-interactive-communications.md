@@ -78,7 +78,7 @@ Puede editar un fragmento de documento de texto existente mediante los siguiente
 1. Navegue hasta un fragmento de documento de texto y selecciónelo.
 1. Seleccione **[!UICONTROL Editar]**.
 1. Efectúe las modificaciones necesarias. Para obtener más información sobre las opciones en el texto, consulte [Crear texto](#createtext).
-1. Seleccionar **[!UICONTROL Guardar]** y luego seleccione **[!UICONTROL Cerrar]**.
+1. Seleccione **[!UICONTROL Guardar]** y, a continuación, **[!UICONTROL Cerrar]**.
 
 ## Personalizar un fragmento de documento de texto mediante las propiedades del modelo de datos de formulario {#formdatamodel}
 
@@ -88,11 +88,11 @@ Si ha especificado un modelo de datos de formulario al crear un texto, las propi
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
-* Para insertar una propiedad del modelo de datos de formulario en el texto, coloque el cursor donde desee insertar la propiedad y, a continuación, seleccione **[A]** en el panel izquierdo al pulsar en él y seleccione. **[!UICONTROL [B] Agregar selección]**. También puede seleccionar dos veces la propiedad para insertarla en **[C]** posición del cursor. Las propiedades del modelo de datos de formulario se resaltan en un color de fondo parduzco.
+* Para insertar una propiedad del modelo de datos de formulario en el texto, coloque el cursor donde desee insertar la propiedad, luego seleccione la propiedad **[A]** en el panel izquierdo al pulsar en ella y seleccione **[!UICONTROL [B] Agregar selección]**. También puede seleccionar la propiedad para insertarla en la posición del cursor **[C]**. Las propiedades del modelo de datos de formulario se resaltan en un color de fondo parduzco.
 
 También puede buscar y agregar la propiedad del modelo de datos de formulario con el símbolo @ en el editor de texto. Coloque el cursor donde desee insertar la propiedad. Escriba @ seguido de la cadena de búsqueda. La operación de búsqueda se realiza en todas las propiedades y variables del modelo de datos de formulario disponibles en el fragmento de documento. Las propiedades o variables que contienen la cadena de búsqueda se recuperan y se muestran como una lista desplegable. Desplácese por los resultados de la búsqueda y haga clic en la propiedad que desee insertar en la ubicación del cursor. Pulse Esc para ocultar los resultados de la búsqueda.
 
-* Para permitir que los agentes editen el valor de la propiedad de un modelo de datos de formulario en la interfaz de usuario del agente mientras [Preparar y enviar comunicaciones interactivas](/help/forms/using/prepare-send-interactive-communication.md) En la interfaz de usuario del agente, seleccione **[D]** Icono de bloqueo para esa propiedad y asegúrese de que esté en estado desbloqueado. El estado predeterminado de la propiedad es bloqueado y el agente no podrá editar la propiedad en la interfaz de usuario del agente.
+* Para permitir que los agentes editen el valor de la propiedad de un modelo de datos de formulario en la interfaz de usuario del agente mientras [Preparan y envían comunicaciones interactivas](/help/forms/using/prepare-send-interactive-communication.md) mediante la interfaz de usuario del agente, seleccione el icono de candado **[D]** para esa propiedad y asegúrese de que esté en estado desbloqueado. El estado predeterminado de la propiedad es bloqueado y el agente no podrá editar la propiedad en la interfaz de usuario del agente.
 
 También puede utilizar las propiedades del modelo de datos de formulario para construir reglas para mostrar u ocultar partes del contenido. Para obtener más información, consulte [Crear reglas en el texto](#rules).
 
@@ -120,7 +120,7 @@ Al crear o editar un fragmento de documento de texto, puede crear e insertar var
 
    Aparecerá el panel Crear variables.
 
-1. Introduzca la siguiente información y seleccione **[!UICONTROL Crear]**:
+1. Escriba la siguiente información y seleccione **[!UICONTROL Crear]**:
 
    * **[!UICONTROL Nombre]**: nombre de la variable.
    * **[!UICONTROL Descripción]**: Opcionalmente, escriba una descripción sobre la variable.
@@ -158,7 +158,7 @@ Con el editor de reglas de un texto, puede crear reglas para mostrar u ocultar c
 
    ![selectcontentapplyrule](assets/selectcontentapplyrule.png)
 
-1. Seleccionar **[!UICONTROL Crear regla]**.
+1. Seleccione **[!UICONTROL Crear regla]**.
 
    Aparecerá el cuadro de diálogo Crear regla. Además de Cadena, Número, Expresión matemática y Fecha, también están disponibles las siguientes reglas en el editor de reglas para crear instrucciones:
 
@@ -183,7 +183,7 @@ Con el editor de reglas de un texto, puede crear reglas para mostrar u ocultar c
 
    Regla para mostrar el texto seleccionado si la ubicación del destinatario es EE. UU. según la fuente de datos de FDM
 
-   * Al crear o editar una regla, también puede seleccionar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el diálogo Crear regla/Editar regla. El cuadro de diálogo expandido a ventana completa le permite arrastrar y soltar propiedades y variables del modelo de datos de formulario para construir reglas. Vuelva a seleccionar Cambiar tamaño para volver al cuadro de diálogo Crear regla.
+   * Al crear o editar una regla, también puede seleccionar ![icon_resize](assets/icon_resize.png) (Cambiar tamaño) para expandir el cuadro de diálogo Crear regla/Editar regla. El cuadro de diálogo expandido a ventana completa le permite arrastrar y soltar propiedades y variables del modelo de datos de formulario para construir reglas. Vuelva a seleccionar Cambiar tamaño para volver al cuadro de diálogo Crear regla.
    * También puede crear varias condiciones en una regla.
    * También puede crear reglas superpuestas, en las que se aplica una regla a una parte de un contenido que ya tiene una regla aplicada.
 
@@ -221,9 +221,9 @@ Para resaltar fragmentos de texto en un fragmento de documento editable, selecci
 
 ![textbackgroundcolorapplied-1](assets/textbackgroundcolorapplied-1.png)
 
-Puede seleccionar directamente un color básico `**[A]**` presente en la paleta Colores básicos o seleccione **Seleccionar** después de usar el regulador `**[B]**` para elegir la sombra adecuada del color.
+Puede seleccionar directamente un color básico `**[A]**` presente en la paleta Colores básicos o seleccionar **Seleccionar** después de usar el control deslizante `**[B]**` para elegir la sombra adecuada del color.
 
-También puede ir a la pestaña Avanzado para seleccionar el tono, la luminosidad y la saturación adecuados `**[C]**` para crear el color preciso y, a continuación, seleccione Seleccionar `**[D]**` para aplicar el color para resaltar el texto.
+Opcionalmente, también puede ir a la pestaña Avanzado para seleccionar el tono, la luminosidad y la saturación adecuados `**[C]**` para crear el color preciso y, a continuación, seleccionar Seleccionar `**[D]**` para aplicar el color para resaltar el texto.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
@@ -262,15 +262,15 @@ Cuando se trabaja con fragmentos de documento de texto que contienen una gran ca
 La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena de texto en un fragmento de documento de texto. La función también incluye una eficaz opción de búsqueda de expresiones regulares.
 
 1. Abra un fragmento de documento de texto para [editarlo](#edittext).
-1. Seleccionar **[!UICONTROL Buscar y reemplazar]**.
+1. Seleccione **[!UICONTROL Buscar y reemplazar]**.
 
-1. Introduzca el texto que desea buscar en la **[!UICONTROL Buscar]** y el nuevo texto (texto de reemplazo) en el **[!UICONTROL Reemplazar]** cuadro de texto y seleccione **[!UICONTROL Reemplazar]**.
+1. Escriba el texto que desea buscar en el cuadro de texto **[!UICONTROL Buscar]** y el nuevo texto (texto de reemplazo) en el cuadro de texto **[!UICONTROL Reemplazar]** y seleccione **[!UICONTROL Reemplazar]**.
 
 1. Si se encuentra el texto buscado, se reemplazará por el texto de reemplazo.
 
-   * Si se encuentra otra instancia del texto de búsqueda, esa instancia se resaltará en el fragmento del documento de texto. Si selecciona **[!UICONTROL Reemplazar]** de nuevo, la instancia resaltada se reemplaza y el cursor se mueve hacia adelante, si se encuentra una tercera instancia.
+   * Si se encuentra otra instancia del texto de búsqueda, esa instancia se resaltará en el fragmento del documento de texto. Si vuelve a seleccionar **[!UICONTROL Reemplazar]**, la instancia resaltada se reemplazará y el cursor se moverá hacia adelante si se encuentra una tercera instancia.
    * Si no se encuentra otra instancia, el cuadro de diálogo Buscar y reemplazar mostrará el mensaje: Final del módulo.
 
    También puede seleccionar Reemplazar todo para reemplazar todas las coincidencias de una sola vez.
 
-   Buscar y reemplazar también incluye una poderosa búsqueda de expresiones regulares. Para usar regex en la búsqueda, seleccione **[!UICONTROL Reg ex]** y luego seleccione **[!UICONTROL Buscar]** o **[!UICONTROL Reemplazar]**.
+   Buscar y reemplazar también incluye una poderosa búsqueda de expresiones regulares. Para usar regex en tu búsqueda, selecciona **[!UICONTROL Reg ex]** y luego selecciona **[!UICONTROL Buscar]** o **[!UICONTROL Reemplazar]**.

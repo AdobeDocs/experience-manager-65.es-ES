@@ -40,7 +40,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOA
 
 >[!NOTE]
 >
->El inicio rápido en Programación con AEM Forms se basa en el servidor de Forms que se implementa en JBoss® y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>El inicio rápido en Programación con AEM Forms se basa en el servidor de Forms que se implementa en JBoss® y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## SOAP Inicio rápido (modo de): Creación de la versión de la aplicación mediante la API de Java™ {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -442,7 +442,7 @@ public class GetApplication_SOAP {
 
 El siguiente ejemplo de código Java™ obtiene las aplicaciones mediante la API de Java™.
 
-**Nota**: Al obtener la API de aplicación de AEM Forms, getApplications(), solo se devuelven aplicaciones implementadas.
+**Nota**: al obtener la API de la aplicación AEM Forms, getApplications(), solo se devuelven aplicaciones implementadas.
 
 ```java
 /*

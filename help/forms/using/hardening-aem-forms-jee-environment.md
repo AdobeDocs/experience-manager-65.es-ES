@@ -191,7 +191,8 @@ Para ejecutar el servidor de aplicaciones en el que se implementa AEM Forms en 
    * **Directorio CRX-Repository**: la ubicación predeterminada es `[AEM-Forms-installation-location]\crx-repository`.
    * **Directorios temporales de AEM Forms**:
       * (Windows) Ruta TMP o TEMP tal como se establece en las variables de entorno
-      * (AIX, Linux o Solaris) Directorio raíz del usuario que ha iniciado sesión En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
+      * (AIX, Linux o Solaris) Directorio raíz del usuario que ha iniciado sesión
+En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
       * (Linux) /var/tmp o /usr/tmp
       * (AIX) /tmp o /usr/tmp
       * (Solaris) /var/tmp o /usr/tmp
@@ -267,7 +268,7 @@ El Administrador de configuración utilizó un servlet implementado en su servid
 
 El Administrador de configuración permite cargar una credencial de extensiones de Acrobat Reader DC en el almacén de confianza de AEM Forms en JEE. Esto significa que el acceso al servicio de credenciales del Almacén de confianza a través de protocolos remotos (SOAP y EJB) se ha habilitado de forma predeterminada. Este acceso ya no es necesario después de cargar las credenciales de derechos mediante el Administrador de configuración, o si decide utilizar la consola de administración más adelante para administrar las credenciales.
 
-Puede deshabilitar el acceso remoto a todos los servicios del Almacén de confianza siguiendo los pasos de la sección [Deshabilitar el acceso remoto no esencial a los servicios](https://helpx.adobe.com/es/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+Puede deshabilitar el acceso remoto a todos los servicios del Almacén de confianza siguiendo los pasos de la sección [Desactivación del acceso remoto no esencial a los servicios](https://helpx.adobe.com/es/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Desactive todo acceso anónimo no esencial**
 
@@ -316,8 +317,8 @@ La generación del lenguaje de definición de servicios web (WSDL) solo debe hab
    https://[host name]:[port]/adminui
    ```
 
-1. Seleccionar **Configuración > Configuración del sistema principal > Configuraciones**.
-1. Anular selección **Habilitar WSDL**, luego seleccione **OK**.
+1. Seleccione **Configuración > Configuración del sistema principal > Configuraciones**.
+1. Anule la selección de **Habilitar WSDL** y, a continuación, seleccione **Aceptar**.
 
 ### Seguridad del servidor de aplicaciones {#application-server-security}
 
@@ -687,7 +688,7 @@ El proceso de filtrado de referentes se puede describir de la siguiente manera:
 1. El servidor de Forms comprueba el método HTTP utilizado para la invocación:
 
    1. Si es POST, el servidor de Forms realiza la comprobación del encabezado Referente.
-   1. Si es GET, el servidor de Forms omite la comprobación del referente, a menos que *CSRF_CHECK_GETS* se establece en true, en cuyo caso realiza la comprobación del encabezado Referente. *CSRF_CHECK_GETS* se especifica en el archivo *web.xml* de la aplicación.
+   1. Si es GET, el servidor de Forms omite la comprobación del referente, a menos que *CSRF_CHECK_GETS* esté establecido en true, en cuyo caso realiza la comprobación del encabezado Referente. *CSRF_CHECK_GETS* se especifica en el archivo *web.xml* de la aplicación.
 
 1. El servidor de Forms comprueba si el URI solicitado existe en la lista de permitidos:
 
@@ -706,7 +707,7 @@ El proceso de filtrado de referentes se puede describir de la siguiente manera:
 
 ### Administración del filtrado de referentes {#managing-referer-filtering}
 
-AEM Forms en JEE proporciona el Filtro de referente para especificar los referentes a los que se permite el acceso a los recursos del servidor. De forma predeterminada, el Filtro de referente no filtra las solicitudes que utilizan un método HTTP seguro, por ejemplo, GET, a menos que *CSRF_CHECK_GETS* se establece en true. Si el número de puerto de una entrada de referente permitida está establecido en 0, AEM Forms en JEE permitirá todas las solicitudes con referente procedentes de ese host independientemente del número de puerto. Si no se especifica ningún número de puerto, solo se permiten las solicitudes del puerto predeterminado 80 (HTTP) o 443 (HTTPS). El Filtro de referente se desactiva si se eliminan todas las entradas de la lista Referentes permitidos.
+AEM Forms en JEE proporciona el Filtro de referente para especificar los referentes a los que se permite el acceso a los recursos del servidor. De manera predeterminada, el Filtro de referente no filtra las solicitudes que utilizan un método HTTP seguro, por ejemplo, GET, a menos que *CSRF_CHECK_GETS* esté establecido en true. Si el número de puerto de una entrada de referente permitida está establecido en 0, AEM Forms en JEE permitirá todas las solicitudes con referente procedentes de ese host independientemente del número de puerto. Si no se especifica ningún número de puerto, solo se permiten las solicitudes del puerto predeterminado 80 (HTTP) o 443 (HTTPS). El Filtro de referente se desactiva si se eliminan todas las entradas de la lista Referentes permitidos.
 
 Cuando instala Document Services por primera vez, la lista Referentes permitidos se actualiza con la dirección del servidor en el que se ha instalado este. Las entradas del servidor incluyen el nombre del servidor, la dirección IPv4, la dirección IPv6 si IPv6 está habilitado, la dirección de bucle invertido y una entrada localhost. El sistema operativo del host devuelve los nombres agregados a la lista Referentes permitidos. Por ejemplo, un servidor con la dirección IP 10.40.54.187 incluirá las siguientes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. La lista de permitidos no se actualiza para los nombres no autorizados devueltos por el sistema operativo del host (nombres que no tienen una dirección IPv4, una dirección IPv6 o un nombre de dominio autorizado). Modifique la lista Referente permitidos para adaptarla a su entorno empresarial. No implemente el servidor de Forms en el entorno de producción con la lista Referentes permitidos predeterminada. Si ha modificado cualquiera de los referentes permitidos, las excepciones de los referentes permitidos o los URI, asegúrese de reiniciar el servidor para que los cambios surtan efecto.
 
@@ -729,7 +730,7 @@ AEM Forms en JEE proporciona API para administrar las listas Excepciones de ref
 
 Consulte la *Referencia de las API de AEM Forms en JEE* para obtener más información sobre las API.
 
-Utilice el ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lista de Excepciones de referentes permitidos a nivel global, es decir, para definir excepciones aplicables a todas las aplicaciones. Esta lista contiene únicamente URI con una ruta absoluta (por ejemplo, `/index.html`) o una ruta relativa (por ejemplo, `/sample/`). También puede anexar una expresión regular al final de un URI relativo, por ejemplo, `/sample/(.)*`.
+Utilice la lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para las excepciones de referentes permitidos a nivel global, es decir, para definir excepciones aplicables a todas las aplicaciones. Esta lista contiene únicamente URI con una ruta de acceso absoluta (por ejemplo, `/index.html`) o relativa (por ejemplo, `/sample/`). También puede anexar una expresión regular al final de un URI relativo, por ejemplo, `/sample/(.)*`.
 
 EL ID de lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** se define como una constante en la clase `UMConstants` del área de nombres `com.adobe.idp.um.api`, que se encuentra en `adobe-usermanager-client.jar`. Puede utilizar las API de AEM Forms para crear, modificar o editar esta lista. Por ejemplo, para crear la lista de excepciones de referentes permitidos globales, utilice:
 
@@ -955,7 +956,7 @@ Para obtener información sobre los puertos de WebSphere que requiere AEM Forms
 
 ### Configurar SSL {#configuring-ssl}
 
-Referencia a la arquitectura física que se describe en la sección [Arquitectura física de AEM Forms en JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), debe configurar SSL para todas las conexiones que planea utilizar. Específicamente, todas las conexiones de SOAP deben realizarse a través de SSL para evitar la exposición de las credenciales de usuario en una red.
+En referencia a la arquitectura física que se describe en la sección [Arquitectura física de AEM Forms en JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), debe configurar SSL para todas las conexiones que planea usar. Específicamente, todas las conexiones de SOAP deben realizarse a través de SSL para evitar la exposición de las credenciales de usuario en una red.
 
 Para obtener instrucciones sobre cómo configurar SSL en JBoss, WebLogic y WebSphere, consulte &quot;Configuración de SSL&quot; en la [Ayuda de Administración](https://www.adobe.com/go/learn_aemforms_admin_64_es).
 
@@ -1016,7 +1017,8 @@ La instalación llave en mano de AEM Forms en JEE configura una cuenta de servi
    * **Directorio CRX-Repository**: la ubicación predeterminada es `[AEM-Forms-installation-location]\crx-repository`.
    * **Directorios temporales de AEM Forms**:
       * (Windows) Ruta TMP o TEMP tal como se establece en las variables de entorno
-      * (AIX, Linux o Solaris) Directorio raíz del usuario que ha iniciado sesión En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
+      * (AIX, Linux o Solaris) Directorio raíz del usuario que ha iniciado sesión
+En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
       * (Linux) /var/tmp o /usr/tmp
       * (AIX) /tmp o /usr/tmp
       * (Solaris) /var/tmp o /usr/tmp

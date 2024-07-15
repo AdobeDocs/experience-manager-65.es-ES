@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Agrupar portfolios PDF {#assembling-pdf-portfolios}
 
-**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
+**Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-Puede ensamblar un Portfolio de PDF mediante la API de servicio web y Java del ensamblador. Un portafolio puede combinar varios documentos de varios tipos, incluidos archivos de Word, archivos de imagen (por ejemplo, un archivo JPEG) y documentos de PDF. El diseño del portafolio se puede establecer en diferentes estilos, como el *Cuadrícula con vista previa*, el *En una imagen* diseño o evento *Revolver*.
+Puede ensamblar un Portfolio de PDF mediante la API de servicio web y Java del ensamblador. Un portafolio puede combinar varios documentos de varios tipos, incluidos archivos de Word, archivos de imagen (por ejemplo, un archivo JPEG) y documentos de PDF. El diseño del portafolio se puede establecer en diferentes estilos, como el diseño de *cuadrícula con vista previa*, el diseño de *en una imagen* o incluso *revolución*.
 
-La siguiente ilustración es una captura de pantalla de un portafolio con *En una imagen* diseño de estilo.
+La siguiente ilustración es una captura de pantalla de un portafolio con diseño de estilo *En una imagen*.
 
 ![ap_ap_portfolio](assets/ap_ap_portfolio.png)
 
@@ -51,11 +51,11 @@ La creación de un Portfolio PDF sirve como una alternativa sin papel a pasar un
  </DDX>
 ```
 
-El documento DXX debe contener un `Portfolio` con una etiqueta anidada `Navigator` etiqueta. Observe la etiqueta `<Resource name="navigator/image.xxx" source="myImage.png"/>` solo es necesario si `myNavigator` se asigna como navegador de diseño onImage: `AdobeOnImage.nav`. Esta etiqueta permite al servicio Assembler seleccionar la imagen que se utilizará como fondo del portafolio. Incluir `PackageFiles` y `File` para definir el nombre de archivo y el tipo MIME del archivo empaquetado.
+El documento DXX debe contener una etiqueta `Portfolio` con una etiqueta `Navigator` anidada. Tenga en cuenta que la etiqueta `<Resource name="navigator/image.xxx" source="myImage.png"/>` solo es necesaria si `myNavigator` se asigna como el navegador de diseño onImage: `AdobeOnImage.nav`. Esta etiqueta permite al servicio Assembler seleccionar la imagen que se utilizará como fondo del portafolio. Incluya las etiquetas `PackageFiles` y `File` para definir el nombre de archivo y el tipo MIME del archivo empaquetado.
 
 >[!NOTE]
 >
->Para obtener más información sobre el servicio Assembler, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Assembler, vea [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -85,19 +85,19 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 * adobe-utilities.jar (requerido si AEM Forms está implementado en JBoss)
 * jbossall-client.jar (requerido si AEM Forms está implementado en JBoss)
 
-**Crear un cliente de PDF Assembler**
+**Crear un cliente de ensamblador de PDF**
 
 Para poder realizar mediante programación una operación de Assembler, cree un cliente de servicio Assembler.
 
 **Hacer referencia a un documento DDX existente**
 
-Se debe hacer referencia a un documento DDX para ensamblar un Portfolio PDF. Este documento DDX debe contener la variable `Portfolio`, `Navigator` y, `PackageFiles` elementos.
+Se debe hacer referencia a un documento DDX para ensamblar un Portfolio PDF. Este documento DDX debe contener los elementos `Portfolio`, `Navigator` y `PackageFiles`.
 
-**Hacer referencia a los documentos requeridos**
+**Hacer referencia a los documentos necesarios**
 
 Para montar un Portfolio de PDF, haga referencia a todos los archivos que representan los documentos que se van a montar. Por ejemplo, pase todos los archivos de imagen especificados en el documento DDX al servicio Assembler. Observe que se hace referencia a estos archivos en el documento DDX especificado en esta sección: *myImage.png* y *saint_bernard.jpg*.
 
-Al combinar un Portfolio de PDF, pase un archivo NAV (un archivo del navegador) al servicio Assembler. El archivo NAV que pasa al servicio Assembler depende del tipo de Portfolio de PDF que se va a crear. Por ejemplo, para crear un *En una imagen* , pase el archivo AdobeOnImage.nav. Puede localizar archivos NAV en la siguiente carpeta:
+Al combinar un Portfolio de PDF, pase un archivo NAV (un archivo del navegador) al servicio Assembler. El archivo NAV que pasa al servicio Assembler depende del tipo de Portfolio de PDF que se va a crear. Por ejemplo, para crear un diseño de *On an Image*, pase el archivo AdobeOnImage.nav. Puede localizar archivos NAV en la siguiente carpeta:
 
 `<Install folder>\Acrobat 9.0\Acrobat\Navigators`
 
@@ -113,7 +113,7 @@ Puede establecer opciones en tiempo de ejecución que controlen el comportamient
 
 **Montar el portafolio**
 
-Para montar un Portfolio PDF, llame al método `invokeDDX` operación. El servicio Assembler devuelve el Portfolio PDF dentro de un objeto de colección.
+Para ensamblar un Portfolio PDF, llame a la operación `invokeDDX`. El servicio Assembler devuelve el Portfolio PDF dentro de un objeto de colección.
 
 **Guardar el portafolio ensamblado**
 
@@ -141,46 +141,46 @@ Ensamble un Portfolio PDF mediante la API del servicio Assembler (Java):
 
 1. Cree un cliente de PDF Assembler.
 
-   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
-   * Crear un `AssemblerServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `AssemblerServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
 1. Hacer referencia a un documento DDX existente.
 
-   * Crear un `java.io.FileInputStream` que representa el documento DDX utilizando su constructor y pasando un valor de cadena que especifica la ubicación del archivo DDX.
-   * Crear un `com.adobe.idp.Document` usando su constructor y pasando el objeto `java.io.FileInputStream` objeto.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento DDX utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo DDX.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Consulte los documentos necesarios.
 
-   * Crear un `java.util.Map` objeto que se utiliza para almacenar documentos del PDF de entrada mediante un `HashMap` constructor.
-   * Crear un `java.io.FileInputStream` mediante su constructor. Pase la ubicación del archivo NAV requerido (repita esta tarea con cada archivo necesario para crear un portafolio).
-   * Crear un `com.adobe.idp.Document` y pase el `java.io.FileInputStream` que contiene el archivo NAV (repita esta tarea para cada archivo necesario para crear un portafolio).
-   * Añada una entrada a `java.util.Map` invocando su objeto `put` y pasando los siguientes argumentos:
+   * Cree un objeto `java.util.Map` que se use para almacenar documentos del PDF de entrada usando un constructor `HashMap`.
+   * Crear un objeto `java.io.FileInputStream` mediante su constructor. Pase la ubicación del archivo NAV requerido (repita esta tarea con cada archivo necesario para crear un portafolio).
+   * Cree un objeto `com.adobe.idp.Document` y pase el objeto `java.io.FileInputStream` que contiene el archivo NAV (repita esta tarea para cada archivo necesario para crear un portafolio).
+   * Agregue una entrada al objeto `java.util.Map` invocando su método `put` y pasando los siguientes argumentos:
 
       * Valor de cadena que representa el nombre de clave. Este valor debe coincidir con el valor del elemento de origen especificado en el documento DDX. (repita esta tarea para cada archivo necesario para crear un portafolio).
-      * A `com.adobe.idp.Document` que contiene el documento de PDF. (repita esta tarea para cada archivo necesario para crear un portafolio).
+      * Un objeto `com.adobe.idp.Document` que contiene el documento de PDF. (repita esta tarea para cada archivo necesario para crear un portafolio).
 
 1. Establecer opciones en tiempo de ejecución.
 
-   * Crear un `AssemblerOptionSpec` que almacena las opciones en tiempo de ejecución mediante su constructor.
-   * Establezca opciones en tiempo de ejecución para satisfacer sus necesidades empresariales invocando un método que pertenezca a `AssemblerOptionSpec` objeto. Por ejemplo, para indicar al servicio Assembler que continúe procesando un trabajo cuando se produzca un error, invoque el `AssemblerOptionSpec` del objeto `setFailOnError` método y pase `false`.
+   * Cree un objeto `AssemblerOptionSpec` que almacene opciones en tiempo de ejecución mediante su constructor.
+   * Establezca opciones en tiempo de ejecución para satisfacer sus necesidades empresariales invocando un método que pertenezca al objeto `AssemblerOptionSpec`. Por ejemplo, para indicar al servicio Assembler que continúe procesando un trabajo cuando se produzca un error, invoque el método `setFailOnError` del objeto `AssemblerOptionSpec` y pase `false`.
 
 1. Organice el portafolio.
 
-   Invoque el `AssemblerServiceClient` del objeto `invokeDDX` y pasar los siguientes valores obligatorios:
+   Invoque el método `invokeDDX` del objeto `AssemblerServiceClient` y pase los siguientes valores necesarios:
 
-   * A `com.adobe.idp.Document` que representa el documento DDX a utilizar
-   * A `java.util.Map` que contiene los archivos necesarios para generar un Portfolio de PDF.
-   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones de tiempo de ejecución, incluida la fuente predeterminada y el nivel de registro de trabajo
+   * Un objeto `com.adobe.idp.Document` que representa el documento DDX que se va a utilizar
+   * Objeto `java.util.Map` que contiene los archivos necesarios para generar un Portfolio de PDF.
+   * Un objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones de tiempo de ejecución, incluida la fuente predeterminada y el nivel de registro del trabajo
 
-   El `invokeDDX` El método devuelve un valor `com.adobe.livecycle.assembler.client.AssemblerResult` que contiene el Portfolio PDF ensamblado y las excepciones que se han producido.
+   El método `invokeDDX` devuelve un objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contiene el Portfolio PDF ensamblado y las excepciones que se han producido.
 
 1. Guarde el portafolio ensamblado.
 
    Para obtener el Portfolio PDF, realice las siguientes acciones:
 
-   * Invoque el `AssemblerResult` del objeto `getDocuments` método. Este método devuelve un `java.util.Map` objeto.
-   * Itere a través de `java.util.Map` hasta que encuentre el resultado `com.adobe.idp.Document` objeto.
-   * Invoque el `com.adobe.idp.Document` del objeto `copyToFile` para extraer el Portfolio de PDF.
+   * Invoque el método `getDocuments` del objeto `AssemblerResult`. Este método devuelve un objeto `java.util.Map`.
+   * Recorra en iteración el objeto `java.util.Map` hasta encontrar el objeto `com.adobe.idp.Document` resultante.
+   * Invoque el método `copyToFile` del objeto `com.adobe.idp.Document` para extraer el Portfolio PDF.
 
 **Consulte también**
 
@@ -196,68 +196,68 @@ Ensamble un Portfolio PDF mediante la API del servicio Assembler (servicio web):
 
 1. Incluir archivos de proyecto.
 
-   Cree un proyecto de Microsoft .NET que utilice MTOM. Asegúrese de utilizar la siguiente definición de WSDL al configurar una referencia de servicio: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   Cree un proyecto de Microsoft .NET que utilice MTOM. Asegúrese de utilizar la siguiente definición de WSDL al establecer una referencia de servicio: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
+   >Reemplace `localhost` por la dirección IP del servidor que hospeda AEM Forms.
 
 1. Cree un cliente de PDF Assembler.
 
-   * Crear un `AssemblerServiceClient` mediante su constructor predeterminado.
-   * Crear un `AssemblerServiceClient.Endpoint.Address` mediante el uso del objeto `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario que utilice el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
-   * Crear un `System.ServiceModel.BasicHttpBinding` al obtener el valor de la variable `AssemblerServiceClient.Endpoint.Binding` field. Convierta el valor devuelto en `BasicHttpBinding`.
-   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` field a `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
+   * Cree un objeto `AssemblerServiceClient` utilizando su constructor predeterminado.
+   * Cree un objeto `AssemblerServiceClient.Endpoint.Address` mediante el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No necesita usar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio.
+   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `AssemblerServiceClient.Endpoint.Binding`. Convertir el valor devuelto en `BasicHttpBinding`.
+   * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario del formulario de la al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * AEM Asigne el nombre de usuario de los formularios de la al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Hacer referencia a un documento DDX existente.
 
-   * Crear un `BLOB` mediante su constructor. El `BLOB` se utiliza para almacenar el documento DDX.
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación de archivo del documento DDX y el modo en que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `System.IO.FileStream` del objeto `Length` propiedad.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` método. Pase a leer la matriz de bytes, la posición inicial y la longitud de la secuencia.
-   * Rellene el `BLOB` al asignar su `MTOM` con el contenido de la matriz de bytes.
+   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar el documento DDX.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento DDX y el modo en que se abrirá el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
+   * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream`. Pase a leer la matriz de bytes, la posición inicial y la longitud de la secuencia.
+   * Rellene el objeto `BLOB` asignando su propiedad `MTOM` con el contenido de la matriz de bytes.
 
 1. Consulte los documentos necesarios.
 
-   * Para cada archivo de entrada, cree un `BLOB` mediante su constructor. El `BLOB` se utiliza para almacenar el archivo de entrada.
-   * Crear un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo de entrada y el modo en que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `System.IO.FileStream` del objeto `Length` propiedad.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` método. Pase a leer la matriz de bytes, la posición inicial y la longitud de la secuencia.
-   * Rellene el `BLOB` al asignar su `MTOM` con el contenido de la matriz de bytes.
-   * Crear un `MyMapOf_xsd_string_To_xsd_anyType` objeto. Este objeto de colección se utiliza para almacenar los archivos de entrada necesarios para crear un Portfolio de PDF.
-   * Para cada archivo de entrada, cree un `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto.
-   * Asigne un valor de cadena que represente el nombre de clave al `MyMapOf_xsd_string_To_xsd_anyType_Item` del objeto `key` field. Este valor debe coincidir con el valor del elemento especificado en el documento DDX. (Realice esta tarea para cada archivo de entrada).
-   * Asigne el `BLOB` que almacena el archivo de entrada en el `MyMapOf_xsd_string_To_xsd_anyType_Item` del objeto `value` field. (Realice esta tarea para cada documento de PDF de entrada).
-   * Añada el `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto a `MyMapOf_xsd_string_To_xsd_anyType` objeto. Invoque el `MyMapOf_xsd_string_To_xsd_anyType` del objeto `Add` y pase el `MyMapOf_xsd_string_To_xsd_anyType` objeto. (Realice esta tarea para cada documento de PDF de entrada).
+   * Para cada archivo de entrada, cree un objeto `BLOB` utilizando su constructor. El objeto `BLOB` se usa para almacenar el archivo de entrada.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo de entrada y el modo en que se debe abrir el archivo.
+   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
+   * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream`. Pase a leer la matriz de bytes, la posición inicial y la longitud de la secuencia.
+   * Rellene el objeto `BLOB` asignando su campo `MTOM` con el contenido de la matriz de bytes.
+   * Crear un objeto `MyMapOf_xsd_string_To_xsd_anyType`. Este objeto de colección se utiliza para almacenar los archivos de entrada necesarios para crear un Portfolio de PDF.
+   * Para cada archivo de entrada, cree un objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Asigne un valor de cadena que represente el nombre de clave al campo `key` del objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`. Este valor debe coincidir con el valor del elemento especificado en el documento DDX. (Realice esta tarea para cada archivo de entrada).
+   * Asigne el objeto `BLOB` que almacena el archivo de entrada al campo `value` del objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`. (Realice esta tarea para cada documento de PDF de entrada).
+   * Agregue el objeto `MyMapOf_xsd_string_To_xsd_anyType_Item` al objeto `MyMapOf_xsd_string_To_xsd_anyType`. Invoque el método `Add` del objeto `MyMapOf_xsd_string_To_xsd_anyType` y pase el objeto `MyMapOf_xsd_string_To_xsd_anyType`. (Realice esta tarea para cada documento de PDF de entrada).
 
 1. Establecer opciones en tiempo de ejecución.
 
-   * Crear un `AssemblerOptionSpec` que almacena las opciones en tiempo de ejecución mediante su constructor.
-   * Establezca las opciones en tiempo de ejecución para satisfacer sus necesidades empresariales asignando un valor a un miembro de datos que pertenezca a `AssemblerOptionSpec` objeto. Por ejemplo, para indicar al servicio Assembler que continúe procesando un trabajo cuando se produzca un error, asigne a `false` a la `AssemblerOptionSpec` del objeto `failOnError` miembro de datos.
+   * Cree un objeto `AssemblerOptionSpec` que almacene opciones en tiempo de ejecución mediante su constructor.
+   * Establezca las opciones en tiempo de ejecución para satisfacer sus necesidades comerciales asignando un valor a un miembro de datos que pertenezca al objeto `AssemblerOptionSpec`. Por ejemplo, para indicar al servicio Assembler que continúe procesando un trabajo cuando se produzca un error, asigne `false` al miembro de datos `failOnError` del objeto `AssemblerOptionSpec`.
 
 1. Organice el portafolio.
 
-   Invoque el `AssemblerServiceClient` del objeto `invokeDDX` y pasar los siguientes valores:
+   Invoque el método `invokeDDX` del objeto `AssemblerServiceClient` y pase los siguientes valores:
 
-   * A `BLOB` que representa el documento DDX
-   * El `MyMapOf_xsd_string_To_xsd_anyType` que contiene los archivos necesarios
-   * Un `AssemblerOptionSpec` objeto que especifica opciones en tiempo de ejecución
+   * Un objeto `BLOB` que representa el documento DDX
+   * El objeto `MyMapOf_xsd_string_To_xsd_anyType` que contiene los archivos necesarios
+   * Un objeto `AssemblerOptionSpec` que especifica opciones en tiempo de ejecución
 
-   El `invokeDDX` El método devuelve un `AssemblerResult` que contiene los resultados del trabajo y las excepciones que se han producido.
+   El método `invokeDDX` devuelve un objeto `AssemblerResult` que contiene los resultados del trabajo y las excepciones que se han producido.
 
 1. Guarde el portafolio ensamblado.
 
    Para obtener el Portfolio PDF recién creado, realice las siguientes acciones:
 
-   * Acceda a la `AssemblerResult` del objeto `documents` , que es un `Map` que contiene los documentos de PDF resultantes.
-   * Itere a través de `Map` para obtener cada documento resultante. A continuación, convierta el de ese miembro de la matriz `value` a un `BLOB`.
-   * Extraiga los datos binarios que representan el documento PDF accediendo a su `BLOB` del objeto `MTOM` propiedad. Devuelve una matriz de bytes que puede escribir en un archivo PDF.
+   * Obtenga acceso al campo `documents` del objeto `AssemblerResult`, que es un objeto `Map` que contiene los documentos de PDF resultantes.
+   * Recorra en iteración el objeto `Map` para obtener cada documento resultante. A continuación, convierta el `value` de ese miembro de la matriz en un `BLOB`.
+   * Extraiga los datos binarios que representan el documento de PDF al tener acceso a la propiedad `MTOM` de su objeto `BLOB`. Devuelve una matriz de bytes que puede escribir en un archivo PDF.
 
 **Consulte también**
 

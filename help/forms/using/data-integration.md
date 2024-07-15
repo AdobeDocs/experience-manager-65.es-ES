@@ -18,7 +18,7 @@ ht-degree: 87%
 
 # Integración de datos de [!DNL AEM Forms] {#aem-forms-data-integration}
 
-![imagen de héroe](do-not-localize/data-integration.png)
+![imagen a pantalla completa](do-not-localize/data-integration.png)
 
 Las infraestructuras empresariales incluyen diferentes sistemas back-end o fuentes de datos, como bases de datos, servicios web, servicios REST, servicios OData y soluciones CRM. En conjunto, crean un sistema de información que sirve datos a las aplicaciones empresariales para realizar el trabajo diario. Por otro lado, las aplicaciones capturan datos y los envían de vuelta para actualizar las fuentes de datos.
 

@@ -27,9 +27,9 @@ Puede agregar la siguiente información a la página de detalles de la tarea:
 Para personalizar la página de detalles de la tarea, haga lo siguiente:
 
 1. Siga los [Pasos genéricos para personalizar AEM Forms Workspace.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Para mostrar cualquier información adicional, agregue los pares clave-valor correspondientes a la variable `translation.json` archivo en `todo`bloquear > `details`bloquear > `app`bloquear > [`required`bloquear].
+1. Para mostrar información adicional, agregue los pares de clave-valor correspondientes al archivo `translation.json` en `todo`bloque > `details`bloque > `app`bloque > [`required`bloque].
 
-   El [`required`bloquear] hace referencia a bloques disponibles, como el bloque de tareas para la información de las tareas, el bloque de procesos para la información de los procesos y el bloque de tareas pendientes para la información de las tareas pendientes.
+   El [`required`bloque] hace referencia a bloques disponibles, como el bloque de tareas para la información de tareas, el bloque de procesos para la información de procesos y el bloque de tareas pendientes para la información de tareas pendientes.
 
    Por ejemplo, para agregar información sobre la selección de la ruta requerida en la página de detalles de la tarea, puede agregar el siguiente par clave-valor en el bloque de tareas:
 

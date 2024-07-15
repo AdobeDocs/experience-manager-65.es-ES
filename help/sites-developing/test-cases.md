@@ -52,16 +52,18 @@ Sin embargo, automatizar los casos de prueba es una inversión significativa, po
 
 AEM Al realizar pruebas de la, algunos detalles específicos son de especial interés:
 
-**Entornos de creación y publicación**
+**Entornos de autor y Publish**
 
-Aunque cubierto en [Entornos](/help/sites-developing/the-basics.md#environments)AEM Por lo tanto, vale la pena destacar un factor decisivo de las pruebas en relación con las pruebas de detección.
+AEM Aunque se trata en [Entornos](/help/sites-developing/the-basics.md#environments), vale la pena resaltar un factor decisivo de la evaluación con respecto a las pruebas.
 
 AEM Considere la posibilidad de utilizar dos aplicaciones:
 
-* el *Autor* entorno Esta instancia permite a los autores introducir y publicar contenido.
+* el entorno *Author*
+Esta instancia permite a los autores introducir y publicar contenido.
 Tiene un conjunto de usuarios pequeño(a) y predecible, para los que la funcionalidad y el rendimiento específicos son cruciales.
 
-* el *Publish* entorno Esta instancia presenta el sitio web en su forma publicada para el acceso de los visitantes.
+* el entorno *Publish*
+Esta instancia presenta el sitio web en su formulario publicado para el acceso de los visitantes.
 Esto suele tener un conjunto mayor de usuarios, donde el volumen de tráfico no siempre es 100% predecible. El rendimiento sigue siendo crucial: al responder a las solicitudes. Considere también el almacenamiento en caché y el equilibrio de carga.
 
 Aunque el mismo software como tal, ellos:
@@ -80,9 +82,9 @@ Al probar la personalización, cada caso de uso individual debe repetirse con va
 
 Compruebe también el comportamiento correcto en el almacenamiento en caché.
 
-**Dispatcher**
+**El Dispatcher**
 
-La mayoría de los proyectos instalan Dispatcher para almacenar en caché y equilibrar la carga.
+La mayoría de los proyectos instalan Dispatcher para el almacenamiento en caché y el equilibrio de carga.
 
 Las pruebas son difíciles (el almacenamiento en caché se produce en varios niveles y en varias ubicaciones) y deben realizarse en una caja negra. Los aspectos clave para probar son los siguientes:
 
@@ -95,7 +97,7 @@ Asegúrese de que el sitio web sigue estando disponible cuando se apaga un servi
 * **Clústeres**
 Se utiliza para proporcionar lo siguiente:
 
-   * **Failover**
+   * **Conmutación por error**
 Si falla un servidor, los demás servidores del clúster se harán cargo del procesamiento.
 
    * **Rendimiento**

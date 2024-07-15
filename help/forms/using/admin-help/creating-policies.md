@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Crear y administrar directivas {#creating-and-managing-policies}
 
-A *directiva* define un conjunto de configuraciones de confidencialidad y usuarios que pueden acceder a un documento al que se aplica la directiva. A *conjunto de políticas* se utiliza para agrupar un conjunto de directivas que tienen un propósito comercial común. Estos conjuntos de directivas se ponen a disposición de un subconjunto de usuarios del sistema. Para obtener más información sobre las directivas, consulte [Políticas y documentos protegidos por políticas](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
+Una *directiva* define un conjunto de configuraciones de confidencialidad y usuarios que pueden tener acceso a un documento al que se aplica la directiva. Se usa un *conjunto de directivas* para agrupar un conjunto de directivas que tienen un propósito comercial común. Estos conjuntos de directivas se ponen a disposición de un subconjunto de usuarios del sistema. Para obtener detalles acerca de las directivas, vea [Directivas y documentos protegidos por directivas](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
 ## Tipos de directivas {#types-of-policies}
 
@@ -30,7 +30,7 @@ Los usuarios pueden crear, editar, copiar, eliminar y aplicar sus propias direct
 
 Los usuarios invitados también pueden crear, editar, copiar y eliminar directivas personales si el administrador habilita esta capacidad.
 
-**Políticas compartidas**
+**Directivas compartidas**
 
 Los administradores y coordinadores de conjuntos de directivas crean directivas compartidas basadas en los requisitos de confidencialidad que su organización identifica para distintos tipos de documentos y usuarios. Las directivas compartidas se incluyen en los conjuntos de directivas y están disponibles para todos los usuarios autorizados (editores de documentos, coordinadores de conjuntos de directivas y destinatarios de documentos) de un conjunto de directivas concreto. Los administradores y coordinadores de conjuntos de directivas pueden habilitar y deshabilitar directivas compartidas. Las directivas compartidas aparecen en los conjuntos de directivas de la ficha Conjuntos de directivas de la página Directivas.
 
@@ -50,11 +50,11 @@ La forma en que interactúa con las directivas y los conjuntos de directivas dep
 
 **Usuarios:** Los usuarios pueden crear, editar y eliminar sus directivas personales. Los usuarios invitados también pueden crear directivas personales si el administrador habilita esta capacidad.
 
-**Coordinadores del conjunto de directivas:** Los coordinadores de conjuntos de directivas pueden crear y administrar directivas compartidas en los conjuntos de directivas en los que están designados como coordinadores. Un coordinador de conjunto de políticas suele ser un especialista de la organización que puede crear mejor las políticas en un conjunto de políticas concreto.
+**Coordinadores de conjuntos de directivas:** Los coordinadores de conjuntos de directivas pueden crear y administrar directivas compartidas en los conjuntos de directivas en los que están designados como coordinadores. Un coordinador de conjunto de políticas suele ser un especialista de la organización que puede crear mejor las políticas en un conjunto de políticas concreto.
 
 **Administradores:** Los administradores pueden editar las directivas personales de cualquier usuario. Pueden crear directivas compartidas. También pueden crear, editar y eliminar conjuntos de directivas y designar coordinadores de conjuntos de directivas.
 
-Para obtener más información sobre las distintas funciones de seguridad de los documentos, consulte [Acerca de los usuarios de Document Security](/help/forms/using/admin-help/document-security.md#about-document-security-users).
+Para obtener más información sobre las distintas funciones de seguridad de documentos, consulte [Acerca de los usuarios de seguridad de documentos](/help/forms/using/admin-help/document-security.md#about-document-security-users).
 
 ## Crear y editar directivas {#creating-and-editing-policies}
 
@@ -130,7 +130,7 @@ En el área Usuarios y grupos, especifique los usuarios que tienen acceso a los 
 >
 >El editor del documento es el usuario que protege el documento con la directiva. Este usuario siempre se incluye de forma predeterminada en una directiva, con derechos de acceso completos, incluidas las capacidades de revocación y cambio de directivas. Sin embargo, los administradores pueden cambiar los derechos de acceso del editor del documento para las directivas compartidas. Por ejemplo, el administrador puede restringir el acceso al documento o cambiar la directiva al editor del documento.
 
-**Agregar usuario o grupo:** Para agregar un usuario o un grupo de usuarios, haga clic en Agregar usuario o grupo y, a continuación, haga clic en Búsqueda avanzada para encontrar usuarios o grupos. Los usuarios incluyen a los usuarios internos de su organización y a los usuarios invitados que se han registrado en Document Security. Al seleccionar esta opción, aparecerá la página Agregar Usuario o Grupo:
+**Agregar usuario o grupo:** Para agregar un usuario o grupo de usuarios, haga clic en Agregar usuario o grupo y, a continuación, haga clic en Búsqueda avanzada para encontrar usuarios o grupos. Los usuarios incluyen a los usuarios internos de su organización y a los usuarios invitados que se han registrado en Document Security. Al seleccionar esta opción, aparecerá la página Agregar Usuario o Grupo:
 
 * En el cuadro Buscar, escriba el nombre de usuario o de grupo o la dirección de correo electrónico.
 * En la lista Utilizando, seleccione Nombre o Correo electrónico.
@@ -146,7 +146,7 @@ En el área Usuarios y grupos, especifique los usuarios que tienen acceso a los 
 
 Después de registrarse, los usuarios invitados pueden utilizar los documentos protegidos por directivas para los que tienen autorización. Según las capacidades que habilite el administrador, los usuarios externos podrán tener permiso para aplicar directivas a documentos, crear, editar y eliminar directivas y agregar otros usuarios externos a directivas.
 
-**Añadir usuario anónimo:** Para permitir el acceso de usuarios anónimos, haga clic en Agregar usuario anónimo. Esta opción solo está disponible si el administrador ha habilitado el acceso de usuario anónimo para Document Security. (Consulte Configuración del servidor de Document Security). Esta opción concede a todos acceso a los documentos protegidos por esta directiva, independientemente de si tienen una cuenta de Document Security. Si selecciona esta opción, no puede agregar otros tipos de usuarios a la directiva.
+**Agregar usuario anónimo:** Para permitir el acceso de usuarios anónimos, haga clic en Agregar usuario anónimo. Esta opción solo está disponible si el administrador ha habilitado el acceso de usuario anónimo para Document Security. (Consulte Configuración del servidor de Document Security). Esta opción concede a todos acceso a los documentos protegidos por esta directiva, independientemente de si tienen una cuenta de Document Security. Si selecciona esta opción, no puede agregar otros tipos de usuarios a la directiva.
 
 >[!NOTE]
 >
@@ -162,13 +162,13 @@ La pestaña Permisos y opciones se muestra en Document Security.
 
 Estos permisos de documento están disponibles en la pestaña Permisos. Puede aplicar estos permisos a archivos de PDF, PTC Pro/E y Microsoft Office.
 
-**Imprimir:** Permite al usuario imprimir un documento protegido con esta directiva. Para los archivos de Office y Pro/E, puede activar la casilla de verificación Imprimir para permitir la impresión o desactivarla para evitar la impresión. Si activa la casilla de verificación Mostrar permisos personalizados para el PDF, puede seleccionar una de estas opciones:
+**Imprimir:** permite al usuario imprimir un documento protegido por esta directiva. Para los archivos de Office y Pro/E, puede activar la casilla de verificación Imprimir para permitir la impresión o desactivarla para evitar la impresión. Si activa la casilla de verificación Mostrar permisos personalizados para el PDF, puede seleccionar una de estas opciones:
 
 **No permitido:** El usuario no tiene permiso para imprimir el PDF.
 
 **Permitido:** El usuario tiene permiso para imprimir el PDF.
 
-**Baja resolución. solo:** El usuario puede imprimir el PDF en baja resolución.
+**Baja resolución. Solamente:** El usuario puede imprimir el PDF a baja resolución.
 
 **Modificar:** Permite al usuario modificar un documento protegido con esta directiva. Para los archivos de Office y Pro/E, puede activar la casilla de verificación Modificar para permitir modificaciones o desactivarla para evitar modificaciones. Si activa la casilla de verificación Mostrar permisos personalizados para el PDF, puede seleccionar una de estas opciones:
 
@@ -178,33 +178,33 @@ Estos permisos de documento están disponibles en la pestaña Permisos. Puede ap
 
 **Colaborar:** El usuario puede colaborar con otros usuarios mediante las opciones de Colaborar de Adobe Acrobat. Este permiso permite al usuario copiar datos de formulario incluso si el permiso de copia no se proporciona explícitamente en la directiva.
 
-**Modificar páginas:** El usuario puede añadir y eliminar páginas y editar contenido en el PDF.
+**Modificar páginas:** El usuario tiene permiso para agregar y quitar páginas y editar contenido en el PDF.
 
-**Fill &amp; Sign:** El usuario puede rellenar campos de formulario en el PDF y firmarlos.
+**Fill &amp; Sign:** El usuario tiene permiso para rellenar campos de formulario en el PDF y firmarlos.
 
-**Copie:** Permite al usuario copiar texto de un documento protegido con esta directiva.
+**Copiar:** permite al usuario copiar texto de un documento protegido por esta directiva.
 
 **Reader de pantalla:** Este permiso se muestra si activa la casilla de verificación Mostrar permisos personalizados para el PDF. Cuando se selecciona esta opción, Adobe Acrobat tiene permiso para agregar etiquetas temporales al PDF para mejorar su legibilidad con un lector de pantalla.
 
 Estos permisos de documento están disponibles en la ficha Opciones. Puede aplicar estos permisos a archivos de PDF, PTC Pro/E y Microsoft Office:
 
-**Sin conexión:** Permite al usuario ver un documento sin conexión protegido con esta directiva.
+**Sin conexión:** permite al usuario ver un documento sin conexión protegido por esta directiva.
 
-**Validez del permiso:** Seleccione Los permisos siempre son válidos o establezca un período de validez de permisos de documento. Si selecciona un periodo de validez, haga clic en el icono del calendario para seleccionar una fecha y utilice las flechas para especificar la hora en formato de 24 horas.
+**Validez del permiso:** Los permisos de selección siempre son válidos o establezca un período de validez de permiso de documento. Si selecciona un periodo de validez, haga clic en el icono del calendario para seleccionar una fecha y utilice las flechas para especificar la hora en formato de 24 horas.
 
 En el caso de las directivas compartidas, los administradores pueden deshabilitar los siguientes privilegios para el editor del documento (el usuario que aplica la directiva a un documento):
 
-**Revocar:** Permite al editor del documento revocar los privilegios de acceso al documento.
+**Revocar:** permite que el editor del documento revoque los privilegios de acceso al documento.
 
-**Interruptor:** Permite que el editor del documento cambie los privilegios de la directiva.
+**Conmutador:** Permite que el editor del documento cambie los privilegios de la directiva.
 
 ### Configuración general {#general-settings}
 
 El área Configuración general contiene la siguiente configuración:
 
-**Período de validez:** Período de tiempo durante el cual los destinatarios autorizados pueden acceder al documento protegido por una directiva. Puede elegir entre estas opciones de periodo de validez:
+**Período de validez:** Período de tiempo durante el cual los destinatarios autorizados pueden obtener acceso al documento protegido por una directiva. Puede elegir entre estas opciones de periodo de validez:
 
-**El documento no será válido después de lo siguiente:** El documento es accesible durante el número de días especificado desde el momento en que se protegió.
+**El documento no será válido después de:** Se puede obtener acceso al documento durante el número de días especificado a partir del momento en que se protegió el documento.
 
 **El documento no será válido después de esta fecha:** El documento es válido desde la fecha en que se aplica la directiva al documento hasta la fecha de finalización especificada.
 
@@ -216,7 +216,7 @@ El área Configuración general contiene la siguiente configuración:
 >
 >Las fechas de validez se basan en la zona horaria del sistema de seguridad de documentos, no en la del equipo local.
 
-**Auditoría:** Habilite o deshabilite la auditoría de los eventos asociados a un documento protegido por una directiva. Por ejemplo, Document Security puede registrar eventos como intentos de abrir un documento. Los eventos auditados aparecen en la lista de la página Eventos. Si no selecciona esta opción, Document Security no registra eventos para los documentos asociados a la directiva.
+**Auditoría:** Habilite o deshabilite la auditoría de los eventos asociados con un documento protegido por una directiva. Por ejemplo, Document Security puede registrar eventos como intentos de abrir un documento. Los eventos auditados aparecen en la lista de la página Eventos. Si no selecciona esta opción, Document Security no registra eventos para los documentos asociados a la directiva.
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ El área Configuración general contiene la siguiente configuración:
 
 **Seguimiento de uso extendido:** Habilite o deshabilite el seguimiento de uso extendido. La seguridad de los documentos admite el seguimiento de eventos de usuario asociados con varias operaciones realizadas en un archivo de PDF. Se puede acceder al objeto de seguridad del documento mediante un JavaScript. Un clic en un botón, un archivo multimedia que se está reproduciendo o el guardado de un archivo son algunos ejemplos de eventos que se activan desde un PDF protegido por una directiva. Con el objeto Document Security, también puede recuperar información del usuario. El seguimiento de eventos puede habilitarse desde el servidor de Document Security a nivel global o de directiva.
 
-**Período de concesión sin conexión automática:** Número máximo de días que el destinatario puede utilizar el documento protegido por una directiva sin conexión (sin una conexión activa a Internet o a la red). Cuando caduca el período de concesión, el destinatario debe sincronizar de nuevo el documento para seguir utilizándolo.
+**Período de concesión sin conexión automática:** El número máximo de días que el destinatario puede utilizar el documento sin conexión protegido por directivas (sin una conexión activa a Internet o a la red). Cuando caduca el período de concesión, el destinatario debe sincronizar de nuevo el documento para seguir utilizándolo.
 
 ### Proveedores de autorización externa {#external-authorization-providers}
 
@@ -234,11 +234,11 @@ Seleccione los proveedores de autenticación externos si ya ha configurado algun
 
 Puede anular la configuración de autenticación configurada en el servidor y especificar las opciones de autenticación relevantes para esta directiva. Seleccione Anular configuración de autenticación global y, a continuación, las opciones de autenticación correspondientes a esta directiva. Están disponibles las siguientes opciones de autenticación:
 
-**Permitir autenticación de contraseña de nombre de usuario:** Seleccione esta opción si desea permitir que las aplicaciones cliente utilicen la autenticación de nombre de usuario y contraseña al conectarse al servidor.
+**Permitir autenticación de contraseña de nombre de usuario:** Seleccione esta opción si desea habilitar las aplicaciones cliente para que utilicen la autenticación de nombre de usuario y contraseña al conectarse al servidor.
 
-**Permitir autenticación Kerberos:** Seleccione esta opción si desea permitir que las aplicaciones cliente utilicen la autenticación Kerberos al conectarse al servidor.
+**Permitir autenticación Kerberos:** Seleccione esta opción si desea habilitar las aplicaciones cliente para que utilicen la autenticación Kerberos al conectarse al servidor.
 
-**Permitir autenticación de certificado de cliente:** Seleccione esta opción si desea permitir que las aplicaciones cliente utilicen autenticación de certificado al conectarse al servidor.
+**Permitir autenticación de certificado de cliente:** Seleccione esta opción si desea habilitar las aplicaciones cliente para que utilicen autenticación de certificado al conectarse al servidor.
 
 **Permitir autenticación extendida** Seleccione para habilitar la autenticación extendida. Al seleccionar esta opción, las aplicaciones cliente pueden utilizar la autenticación extendida. La autenticación extendida proporciona procesos de autenticación personalizados y diferentes opciones de autenticación configuradas en el servidor de Document Security
 
@@ -252,7 +252,7 @@ Si va a anular la configuración de autenticación global, puede elegir las opci
 
 El área Configuración avanzada contiene la siguiente configuración:
 
-**Marca de agua dinámica:** Seleccione una marca de agua para que se muestre dinámicamente en las páginas de un documento (por ejemplo, cuando un destinatario imprima el documento). Las marcas de agua dinámicas identifican de forma exclusiva un documento, lo que contribuye a garantizar su confidencialidad y a evitar la infracción de los derechos de autor. Por ejemplo, el administrador puede configurar una marca de agua dinámica que muestre la fecha actual, el nombre de usuario o el identificador de la persona que utiliza el documento. O bien, el nombre de la directiva utilizada para proteger el documento. Una marca de agua también puede mostrar texto personalizado o elementos gráficos, si están configurados. Los administradores configuran las opciones de marca de agua, y los administradores y usuarios pueden aplicarlas a las directivas.
+**Marca de agua dinámica:** Seleccione una marca de agua que se mostrará dinámicamente en las páginas de un documento (por ejemplo, cuando un destinatario imprima el documento). Las marcas de agua dinámicas identifican de forma exclusiva un documento, lo que contribuye a garantizar su confidencialidad y a evitar la infracción de los derechos de autor. Por ejemplo, el administrador puede configurar una marca de agua dinámica que muestre la fecha actual, el nombre de usuario o el identificador de la persona que utiliza el documento. O bien, el nombre de la directiva utilizada para proteger el documento. Una marca de agua también puede mostrar texto personalizado o elementos gráficos, si están configurados. Los administradores configuran las opciones de marca de agua, y los administradores y usuarios pueden aplicarlas a las directivas.
 
 (Consulte [Configurar marcas de agua dinámicas](/help/forms/using/admin-help/configuring-client-server-options.md#configure-dynamic-watermarks).)
 
@@ -262,13 +262,13 @@ Si está editando una directiva y el administrador eliminó una marca de agua co
 >
 >En el caso de las directivas que proporcionan acceso de usuario anónimo, el nombre de usuario y el identificador de un usuario anónimo no se muestran como una marca de agua aunque seleccione este tipo de marca de agua.
 
-**Utilice únicamente complementos de Acrobat certificados para PDF:** Cuando se selecciona para una directiva, esta opción especifica que Acrobat 8.0 y versiones posteriores deben ejecutarse en modo certificado al abrir documentos protegidos con la directiva. Cuando Acrobat se ejecuta en modo certificado, no carga ningún complemento de terceros.
+**Usar solo complementos de Acrobat certificados para el PDF:** Si se selecciona para una directiva, esta opción especifica que Acrobat 8.0 y versiones posteriores deben ejecutarse en modo certificado al abrir documentos protegidos con la directiva. Cuando Acrobat se ejecuta en modo certificado, no carga ningún complemento de terceros.
 
 Seleccione esta opción si le preocupa que un destinatario de documentos escriba un complemento que pueda eludir cualquiera de las protecciones de documentos de Acrobat 8.0 y posteriores. No seleccione esta opción si los destinatarios del documento deben utilizar complementos de terceros en Acrobat para interactuar con documentos.
 
 Esta opción solo habilita el modo certificado en Acrobat 8.0 o posterior; el administrador debe deshabilitar el acceso para Acrobat 7.0.
 
-(Consulte [Configuración del servidor de Document Security](/help/forms/using/admin-help/configuring-client-server-options.md#configure-the-document-security-server).)
+(Consulte [Configurar el servidor de Document Security](/help/forms/using/admin-help/configuring-client-server-options.md#configure-the-document-security-server)).
 
 Esta opción no se aplica a Adobe Reader.
 
@@ -278,15 +278,15 @@ Esta opción no se aplica a Adobe Reader.
 
 El área Configuración avanzada inmodificable contiene la siguiente configuración. No puede cambiar esta configuración después de guardar la directiva.
 
-**Algoritmo de cifrado y longitud de clave:** Se utiliza para proteger los documentos. Puede elegir entre estas opciones:
+**Algoritmo de cifrado y longitud de clave:** Se usa para proteger los documentos. Puede elegir entre estas opciones:
 
 * AES de 128 bits
-* AES de 256 bits. Solo Acrobat 9.0 y versiones posteriores admiten esta opción. Para utilizar el cifrado AES 256 en archivos PDF, obtenga e instale los archivos de política de jurisdicción de fuerza ilimitada de la Extensión de criptografía de Java (JCE). Estos archivos reemplazan los archivos local_policy.jar y US_export_policy.jar en [JAVE_HOME]Carpeta /lib/security. Por ejemplo, si está utilizando Sun JDK 1.6, copie los archivos descargados en el [raíz profunda]Carpeta /Java/jdk1.6.0_26/lib/security. Puede descargar estos archivos desde [Descargas de Java SE](https://java.sun.com/javase/downloads/index.jsp).
+* AES de 256 bits. Solo Acrobat 9.0 y versiones posteriores admiten esta opción. Para utilizar el cifrado AES 256 en archivos PDF, obtenga e instale los archivos de política de jurisdicción de fuerza ilimitada de la Extensión de criptografía de Java (JCE). Estos archivos reemplazan los archivos local_policy.jar y US_export_policy.jar en la carpeta [JAVE_HOME]/lib/security. Por ejemplo, si está utilizando Sun JDK 1.6, copie los archivos descargados en la carpeta [dep root]/Java/jdk1.6.0_26/lib/security. Puede descargar estos archivos desde [Descargas de Java SE](https://java.sun.com/javase/downloads/index.jsp).
 * Sin cifrado. Actualmente, Acrobat 9.0 y versiones posteriores admiten esta opción. Si selecciona esta opción, las opciones de Restricciones de documento estarán desactivadas. Esta opción puede resultar útil si desea utilizar Document Security para la auditoría de documentos o el control de versiones, pero no desea cifrar el documento.
 
-**Restricciones de documento:** Seleccione los componentes del documento de PDF que desea cifrar. Otras aplicaciones cliente cifran todo el documento, pero no los archivos vinculados o incrustados. Puede elegir entre estas opciones:
+**Restricciones de documento:** Seleccione los componentes de documento de PDF que desea cifrar. Otras aplicaciones cliente cifran todo el documento, pero no los archivos vinculados o incrustados. Puede elegir entre estas opciones:
 
-* Todo el documento, incluidos los archivos adjuntos y metadatos. *Metadatos* es información sobre el documento y su contenido que puede ver a través del cuadro de diálogo Propiedades del documento o del menú Avanzadas de Acrobat. En Acrobat, puede adjuntar archivos de distintos tipos (por ejemplo, archivos de texto, audio y vídeo) a documentos de PDF.
+* Todo el documento, incluidos los archivos adjuntos y metadatos. *Metadatos* es información sobre el documento y su contenido que puede ver a través del cuadro de diálogo Propiedades del documento o del menú Avanzado de Acrobat. En Acrobat, puede adjuntar archivos de distintos tipos (por ejemplo, archivos de texto, audio y vídeo) a documentos de PDF.
 * El documento y sus archivos adjuntos, pero no los metadatos.
 * Sólo los documentos adjuntos. Puede cifrar los archivos adjuntos en un archivo de PDF sin cifrar el contenido del documento.
 
@@ -341,9 +341,9 @@ Los administradores pueden buscar directivas compartidas y directivas personales
 
 1. En la lista Buscar, seleccione una de estas opciones:
 
-   **ID de política:** Número de identificación de la directiva que se genera cuando el usuario la crea. Escriba el ID exacto de la directiva.
+   **Id. de directiva:** Número de identificación de directiva que se genera cuando el usuario crea la directiva. Escriba el ID exacto de la directiva.
 
-   **Nombre de política:** Nombre de la directiva. Puede buscar parte del nombre de la directiva o todo.
+   **Nombre de directiva:** El nombre de la directiva. Puede buscar parte del nombre de la directiva o todo.
 
 1. En el cuadro de texto, escriba el valor correspondiente. Por ejemplo, si ha seleccionado Nombre de directiva, escriba el nombre de directiva que está buscando.
 1. En la lista Mostrar, seleccione el número de resultados que desea mostrar y, a continuación, haga clic en Buscar. Se muestran los resultados de la búsqueda.

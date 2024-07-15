@@ -17,9 +17,9 @@ ht-degree: 7%
 
 # Reestructuración de repositorios de Forms AEM en 6.5{#forms-repository-restructuring-in-aem}
 
-Como se describe en el elemento principal [AEM Reestructuración de repositorios en 6.5](/help/sites-deploying/repository-restructuring.md) AEM , los clientes que actualicen a la versión 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de AEM Forms. AEM Algunos cambios requieren un esfuerzo durante el proceso de actualización de la versión 6.5 de la, mientras que otros se pueden aplazar hasta una actualización futura.
+AEM AEM Como se describe en la página principal [Reestructuración del repositorio en la página de 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a la versión 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de AEM Forms. AEM Algunos cambios requieren un esfuerzo durante el proceso de actualización de la versión 6.5 de la, mientras que otros se pueden aplazar hasta una actualización futura.
 
-**Con actualización a 6.5**
+**Con Actualización 6.5**
 
 * [Varios](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
@@ -95,7 +95,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
 | **Ubicación anterior** | `/etc/cloudservices/echosign` |
 |---|---|
 | **Nueva ubicación** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **Directrices de reestructuración** | El [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) utilidad que se activará desde la interfaz de usuario de la migración de Forms. |
+| **Directrices de reestructuración** | Utilidad [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) que se activará desde la interfaz de usuario de migración de Forms. |
 | **Notas** | N/D |
 
 ### Configuraciones del Cloud Service Recaptcha {#recaptcha-cloud-service-configurations}
@@ -103,7 +103,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
 | **Ubicación anterior** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **Nueva ubicación** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **Directrices de reestructuración** | El [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) utilidad que se activará desde la interfaz de usuario de la migración de Forms. |
+| **Directrices de reestructuración** | Utilidad [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) que se activará desde la interfaz de usuario de migración de Forms. |
 | **Notas** | N/D |
 
 ### Configuraciones del Cloud Service Typekit {#typekit-cloud-service-configurations}
@@ -111,7 +111,7 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
 | **Ubicación anterior** | `/etc/cloudservices/typekit` |
 |---|---|
 | **Nueva ubicación** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **Directrices de reestructuración** | El [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) utilidad que se activará desde la interfaz de usuario de la migración de Forms. |
+| **Directrices de reestructuración** | Utilidad [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) que se activará desde la interfaz de usuario de migración de Forms. |
 | **Notas** | N/D |
 
 ### Varios {#misc-1}
@@ -119,11 +119,11 @@ Como se describe en el elemento principal [AEM Reestructuración de repositorios
 | **Ubicación anterior** | `/etc/cloudservices/fdm` |
 |---|---|
 | **Nueva ubicación** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **Directrices de reestructuración** | El [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) utilidad que se activará desde la interfaz de usuario de la migración de Forms. |
+| **Directrices de reestructuración** | Utilidad [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) que se activará desde la interfaz de usuario de migración de Forms. |
 | **Notas** | N/D |
 
 | **Ubicación anterior** | `/etc/designs/fd/fp` |
 |---|---|
 | **Nueva ubicación** | `/libs/fd/fp` |
-| **Directrices de reestructuración** | Actualice cualquier referencia a las plantillas /etc para que apunten a su `/libs` homólogos. |
+| **Directrices de reestructuración** | Actualice cualquier referencia a las plantillas /etc para que apunten a sus homólogos `/libs`. |
 | **Notas** | N/D |

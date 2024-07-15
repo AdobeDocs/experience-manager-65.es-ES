@@ -22,9 +22,9 @@ ht-degree: 5%
 
 Cuando los miembros interactúan con las funciones de Communities, se envían eventos OSGi que pueden almacenar en déclencheur a los oyentes asincrónicos, como notificaciones o interacción (puntuación e insignias).
 
-El de un componente [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) registra los eventos como `actions` que se producen para una `topic`. SocialEvent incluye un método para devolver un `verb` asociado con la acción. Hay un *n-1* relación entre `actions` y `verbs`.
+La instancia [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) de un componente registra los eventos como `actions` que ocurren para un `topic`. SocialEvent incluye un método para devolver `verb` asociado con la acción. Hay una relación *n-1* entre `actions` y `verbs`.
 
-Para los componentes de Communities incluidos en la versión, las siguientes tablas describen el `verbs` definido para cada `topic` disponible para su uso.
+Para los componentes de Communities entregados en la versión, las siguientes tablas describen el `verbs` definido para cada `topic` disponible para usar.
 
 ## Temas y verbos {#topics-and-verbs}
 
@@ -48,7 +48,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | ACTUALIZAR | El comentario del miembro se ha editado |
 | ELIMINAR | Se ha eliminado el comentario del miembro |
 
-[Componente Biblioteca de archivos](essentials-file-library.md)
+[Componente de biblioteca de archivos](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descripción** |
@@ -78,7 +78,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | ACTUALIZAR | Se edita el artículo o comentario del blog del miembro |
 | ELIMINAR | Se elimina el artículo o comentario del blog del miembro |
 
-[Componente de control de calidad](qna-essentials.md)
+[Componente QnA](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descripción** |
@@ -115,7 +115,7 @@ SocialEvent `topic`= com/adobe/cq/social/tally
 | AGREGAR VOTO | El contenido del miembro se ha votado arriba |
 | ELIMINAR VOTO | El contenido del miembro se ha rechazado. |
 
-**Componentes con moderación habilitada**
+**Componentes habilitados para moderación**
 SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verbo** | **Descripción** |
@@ -129,9 +129,9 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ## Eventos de componentes personalizados {#events-for-custom-components}
 
-Para un componente personalizado, la variable [clase abstracta SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) se debe ampliar d para registrar los eventos del componente como `actions`que se producen para una `topic`.
+Para un componente personalizado, la clase abstracta [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) debe ampliarse d para registrar los eventos del componente como `actions`que ocurren para un `topic`.
 
-El evento personalizado anularía el método `getVerb()` para que un adecuado `verb`se devuelve para cada `action`. El `verb` devuelto por una acción puede ser uno de uso común (como `POST`) o uno especializado para el componente (como `ADD RATING`). Hay un *n-1* relación entre `actions`y `verbs`.
+El evento personalizado anularía el método `getVerb()` para que se devuelva un valor `verb` apropiado para cada `action`. El `verb` devuelto para una acción puede ser uno usado con frecuencia (como `POST`) o uno especializado para el componente (como `ADD RATING`). Hay una relación *n-1* entre `actions`y `verbs`.
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ El siguiente ejemplo de pseudocódigo quitará los eventos de DELETE del compone
 
 ### Pseudocódigo para EventListener {#pseudo-code-for-eventlistener}
 
-Requiere [último paquete de funciones](deploy-communities.md#latestfeaturepack).
+Requiere [el último paquete de funciones](deploy-communities.md#latestfeaturepack).
 
 ```java
 package my.company.comments;

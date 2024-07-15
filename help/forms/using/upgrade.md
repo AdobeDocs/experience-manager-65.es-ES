@@ -63,7 +63,7 @@ También puede realizar una actualización multisalto desde
 
 AEM 6.5.18.0 Forms en JEE proporciona dos tipos de instaladores: [Programa de instalación completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) y [Programa de instalación de parches](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es).
 
-**Programa de instalación completo**: Puede utilizar el programa de instalación completo para configurar nuevas instancias de AEM Forms o realizar actualizaciones de Forms AEM Forms 6.5.x.x en JEE a AEM 6.5.18.0 en JEE a.
+**Programa de instalación completo**: Puede utilizar el programa de instalación completo para configurar nuevas instancias de AEM Forms AEM o realizar actualizaciones de Forms AEM 6.5.x.x en JEE a 6.5.18.0 Forms en JEE.
 
 **Programa de instalación de parches**: El programa de instalación de parches es para clientes que ya utilizan versiones de AEM 6.5.x.x. Puede utilizar el programa de instalación de parches para actualizar a la versión más reciente de AEM Forms.
 
@@ -71,7 +71,7 @@ La siguiente imagen muestra los escenarios para utilizar el programa de instalac
 
 ![Programa de instalación completo y parche](/help/forms/using/assets/full-and-patch-installer.png)
 
-Consulte la [AEM Instrucciones de instalación del paquete de servicio de Forms de.5](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es) para instalar el paquete de servicio más reciente para el entorno JEE.
+AEM Consulte el artículo [Instrucciones de instalación del paquete de servicio de Forms de 6.5 de](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es) para instalar el paquete de servicio más reciente para el entorno JEE.
 
 <!--
 [Work in Progress]

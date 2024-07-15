@@ -374,7 +374,7 @@ Copie la fuente Unicode en cualquiera de los siguientes directorios según corre
 El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene AEM Forms Document Services y otras capacidades de AEM Forms. Realice los siguientes pasos para instalar el paquete:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Seleccionar **[!UICONTROL Adobe Experience Manager]** disponible en el menú de encabezado.
+1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
@@ -475,8 +475,8 @@ En Microsoft® Windows, el servicio PDF Generator utiliza Adobe Acrobat para 
    1. Abra el [Administrador de paquetes AEM](http://localhost:4502/crx/packmgr/index.jsp) y descargue el archivo `adobe-aemfd-pdfg-common-pkg-[version].zip` del Administrador de paquetes.
    1. Descomprima el archivo .zip descargado. Abra el Símbolo del sistema con privilegios administrativos.
    1. Vaya a `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
-   1. Descomprima el `adobe-aemfd-pdfg-common-pkg-[version]`.
-   1. Vaya a `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directorio. Ejecute el siguiente archivo por lotes:
+   1. Descomprima `adobe-aemfd-pdfg-common-pkg-[version]`.
+   1. Vaya al directorio `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Ejecute el siguiente archivo por lotes:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -571,7 +571,7 @@ El servicio Assembler depende del servicio Extensiones de Reader, del servicio S
 Después de instalar el complemento de AEM Forms y el proyecto Microsoft® en el equipo, registre una entrada para Microsoft® Project en la ubicación de 64 bits. Facilita la ejecución de pruebas de conversión de Project a PDFG. A continuación se indican los pasos que describen el proceso de entrada del Registro:
 
 1. Abra el Editor del Registro de Microsoft® Windows (regedit), Para abrir el Editor del Registro, vaya a Inicio > Ejecutar, escriba regedit y haga clic en Aceptar.
-1. Vaya a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`y cree un nuevo **Valor binario** y cambie el nombre a **Proyecto**.
+1. Vaya a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, cree un nuevo registro de **valor binario** y cambie su nombre a **Proyecto**.
 1. Modifique el valor de datos del Registro binario creado a 01 y haga clic en Aceptar.
 1. Cierre la entrada del Registro.
 
@@ -596,7 +596,7 @@ Después de instalar el complemento de AEM Forms y el proyecto Microsoft® en el
 
 ## Herramienta de preparación del sistema (SRT) {#SRT}
 
-El [Herramienta Preparación del sistema](#srt-configuration) comprueba si el equipo está configurado correctamente para ejecutar las conversiones del PDF Generator. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
+La [Herramienta de preparación del sistema](#srt-configuration) comprueba si el equipo está configurado correctamente para ejecutar las conversiones del PDF Generator. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
 
 1. Abra el símbolo del sistema. Navegue hasta la carpeta `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`.
 
@@ -667,7 +667,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 **Microsoft® Windows**
 
-* Asegúrese de que el de 32 bits [versión admitida](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office está instalado y los cuadros de diálogo de apertura se cancelan para todas las aplicaciones.
+* Asegúrese de que la [versión compatible](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de 32 bits de Microsoft Office está instalada y de que los cuadros de diálogo de apertura se cancelan para todas las aplicaciones.
 * Asegúrese de que se agrega un usuario de PDF Generator en la interfaz de usuario de la configuración de PDF.
 * Asegúrese de que el usuario de PDF Generator sea miembro del grupo de administradores y de que se establece el privilegio [Reemplazar un (símbolo) token de nivel de proceso](#grant-the-replace-a-process-level-token-privilege) para el usuario.
 * Asegúrese de que el usuario está configurado en la interfaz de usuario de PDF Generator y realiza las siguientes acciones:
@@ -683,7 +683,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 * Instale la [versión compatible](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de OpenOffice. AEM Forms admite versiones de 32 y 64 bits. Después de la instalación, abra todas las aplicaciones de OpenOffice, cancele todas las ventanas de diálogo y cierre las aplicaciones. Vuelva a abrir las aplicaciones y asegúrese de que no aparece ningún cuadro de diálogo al abrir una aplicación de OpenOffice.
 
-* Crear una variable de entorno `OpenOffice_PATH` y configúrelo para que apunte a que la instalación de OpenOffice está configurada en la [consolar](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o el perfil dt (árbol de dispositivos).
+* Cree una variable de entorno `OpenOffice_PATH` y configúrela para que apunte a que la instalación de OpenOffice está establecida en la [consola](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o en el perfil dt (árbol de dispositivos).
 * Si hay problemas al instalar OpenOffice, asegúrese de que las [bibliotecas de 32 bits](#extrarequirements) requeridas para la instalación de OpenOffice están disponibles.
 
 +++
@@ -775,7 +775,7 @@ Problemas de conversión de ++HTML a PDF
 
 * Si tiene una licencia existente de Adobe Acrobat y esta ha caducado, [descargue la versión más reciente de Adobe Application Manager](https://helpx.adobe.com/es/creative-suite/kb/aam-troubleshoot-download-install.html) y migre el número de serie. Antes de [migrar el número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Utilice los siguientes comandos para generar el archivo prov.xml y vuelva a serializar la instalación existente usando este en lugar de los comandos proporcionados en [migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artículo de número.
+   * Utilice los siguientes comandos para generar el archivo prov.xml y vuelva a serializar la instalación existente usando este en lugar de los comandos proporcionados en el artículo [Migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
          ```
          
@@ -824,7 +824,7 @@ Al convertir Microsoft Excel 2019 a PDF en Microsoft Windows Server 2019, debe a
 
 +++ No se pueden convertir los archivos XPS en PDF
 
-Para resolver el problema, [crear una clave de registro específica de la característica en Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+Para resolver el problema, [cree una clave de registro específica de la característica en Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
 

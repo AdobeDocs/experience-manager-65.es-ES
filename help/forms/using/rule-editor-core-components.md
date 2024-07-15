@@ -4,7 +4,8 @@ description: El editor de reglas de Forms adaptable permite agregar un comportam
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
+exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
+source-git-commit: 7b6b2adaf4dfc843aeb054c7db834cebd211f2ed
 workflow-type: tm+mt
 source-wordcount: '5588'
 ht-degree: 81%
@@ -32,7 +33,7 @@ El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-Usuarios añadidos a `forms-power-users` puede crear los scripts y editar los existentes. Usuarios en `forms-users group` Puede utilizar los scripts, pero no crearlos o editarlos.
+Los usuarios agregados al grupo `forms-power-users` pueden crear los scripts y editar los existentes. Los usuarios de `forms-users group` pueden usar los scripts, pero no crearlos o editarlos.
 
 ## Explicación de una regla {#understanding-a-rule}
 
@@ -48,7 +49,7 @@ En el editor de reglas, el tipo de regla **When** aplica la construcción de con
 
 **Acción-condición**. En esta construcción, una regla primero define una acción que activar seguida de condiciones para la evaluación. Otra variación de esta construcción es acción-condición-acción alternativa, que también define una acción alternativa que activar si la condición devuelve un valor False.
 
-Los tipos de reglas Show, Hide, Enable, Disable, Set Value Of y Validate del Editor de reglas aplican la `action-condition` construcción de regla. De forma predeterminada, la acción alternativa para Show es Hide y para Enable es Disable y viceversa. No se puede cambiar la acción alternativa predeterminada.
+Los tipos de reglas Show, Hide, Enable, Disable, Set Value Of y Validate del Editor de reglas aplican la construcción de reglas `action-condition`. De forma predeterminada, la acción alternativa para Show es Hide y para Enable es Disable y viceversa. No se puede cambiar la acción alternativa predeterminada.
 
 >[!NOTE]
 >
@@ -62,9 +63,9 @@ Aunque puede lograr la mayoría de los casos de uso utilizando cualquier constru
 
 * Una regla general típica al crear una regla es pensarla en el contexto del objeto en el que quiere escribirla. Tenga en cuenta que desea ocultar o mostrar un campo B en función del valor que un usuario especifique en el campo A. En este caso, se evalúa una condición en el campo A y, en función del valor que devuelve, se activa una acción en el campo B.
 
-  Por lo tanto, si está escribiendo una regla en el campo B (el objeto sobre el que se evalúa una condición), utilice el `condition-action` para el `When` tipo de regla. Del mismo modo, utilice la variable `action-condition` construir o `Show or Hide` Tipo de regla en el campo A.
+  Por lo tanto, si está escribiendo una regla en el campo B (el objeto sobre el que se evalúa una condición), utilice la construcción `condition-action` o el tipo de regla `When`. Del mismo modo, utilice la construcción `action-condition` o el tipo de regla `Show or Hide` en el campo A.
 
-* A veces, debe realizar varias acciones en función de una condición. En estos casos, se recomienda utilizar la variable `condition-action` construir. En esta construcción, puede evaluar una condición una vez y especificar varias instrucciones de acción.
+* A veces, debe realizar varias acciones en función de una condición. En estos casos, se recomienda utilizar la construcción `condition-action`. En esta construcción, puede evaluar una condición una vez y especificar varias instrucciones de acción.
 
   Por ejemplo, para ocultar los campos B, C y D en función de la condición que comprueba el valor que un usuario especifica en el campo A, escriba una regla con la estructura condición-acción o el tipo de regla When en el campo A y especifique acciones para controlar la visibilidad de los campos B, C y D. De lo contrario, necesitará tres reglas independientes en los campos B, C y D, donde cada regla comprueba la condición y muestra u oculta el campo respectivo. En este ejemplo, es más eficaz escribir el tipo de regla When en un objeto, en lugar de Show o Hide en tres objetos.
 
@@ -83,10 +84,10 @@ El editor de reglas proporciona los siguientes operadores lógicos y eventos med
 * **Starts With**
 * **Ends With**
 * **Contains**
-* **Does not contain**
+* **No contiene**
 * **Is Empty**
 * **Is Not Empty**
-* **Ha seleccionado:** Devuelve el valor verdadero cuando el usuario selecciona una opción concreta para una casilla de verificación, una lista desplegable o un botón de opción.
+* **Ha seleccionado:** Devuelve el valor verdadero cuando el usuario selecciona una opción concreta para una casilla de verificación, lista desplegable o un botón de opción.
 * **Is Initialized (event):** devuelve el valor True cuando un objeto de formulario se procesa en el explorador.
 * **Is Changed (event):** devuelve el valor True cuando el usuario cambia el valor indicado o la opción seleccionada para un objeto de formulario.
 
@@ -129,7 +130,7 @@ Por ejemplo, una lista tiene cuatro opciones: rojo, azul, verde y amarillo. Al c
 
 ![Opciones de visualización de varios valores](assets/multivaluefcdisplaysoptions.png)
 
-Al escribir una regla When, puede activar la acción Clear Value Of. `Clear Value Of` La acción borra el valor del objeto especificado. Tener `Clear Value of` como opción de la instrucción When permite crear condiciones complejas con varios campos. Puede agregar la instrucción Else para agregar más condiciones.
+Al escribir una regla When, puede activar la acción Clear Value Of. `Clear Value Of` acción borra el valor del objeto especificado. Tener `Clear Value of` como opción en la instrucción When le permite crear condiciones complejas con varios campos. Puede agregar la instrucción Else para agregar más condiciones.
 
 ![Clear Value Of](assets/clearvalueof.png)
 
@@ -137,9 +138,9 @@ Al escribir una regla When, puede activar la acción Clear Value Of. `Clear Valu
 >
 > Cuando el tipo de regla solo admite instrucciones de un solo nivel then-else.
 
-#### Varios campos permitidos en [!UICONTROL Cuándo] {#allowed-multiple-fields}
+#### Varios campos permitidos en [!UICONTROL When] {#allowed-multiple-fields}
 
-En el **Cuándo** , tiene la opción de agregar otros campos aparte del campo al que se aplica la regla.
+En la condición **When**, tiene la opción de agregar otros campos aparte del campo al que se aplica la regla.
 
 Por ejemplo, con el tipo de regla When, puede evaluar una condición en diferentes objetos de formulario y realizar la acción:
 
@@ -157,14 +158,14 @@ Por ejemplo, con el tipo de regla When, puede evaluar una condición en diferent
 
 _
 
-![Varios campos permitidos en Cuándo](/help/forms/using/assets/allowed-multiple-field-when.png)
+![Varios campos permitidos en When](/help/forms/using/assets/allowed-multiple-field-when.png)
 
 
 
 
 ##### Consideraciones al utilizar los campos múltiples permitidos en la función de condición When
 
-* Asegúrese de que la variable [La versión del componente principal y de la especificación se ha definido en la versión más reciente](https://github.com/adobe/aem-core-forms-components/tree/release/650) para utilizar esta función en el editor de reglas.
+* Asegúrese de que el [componente principal y la versión de especificación estén configurados en la última versión](https://github.com/adobe/aem-core-forms-components/tree/release/650) para utilizar esta característica en el editor de reglas.
 * Si las reglas se aplican a diferentes campos dentro de la condición When, la regla entra en déclencheur aunque solo se cambie uno de esos campos.
 
 
@@ -188,7 +189,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 Si los campos múltiples permitidos en la función de condición When encuentran algún problema, siga los pasos de solución de problemas como:
 
 1. Abra el formulario en modo de edición.
-1. Abra el Explorador de contenido y seleccione **[!UICONTROL Contenedor de guía]** del formulario adaptable.
+1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** de su formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 1. Haga clic en Listo y vuelva a guardar el cuadro de diálogo.
 
@@ -222,7 +223,7 @@ El tipo de regla **[!UICONTROL Establecer propiedad]** permite establecer el val
 * válido (booleano)
 * errorMessage (Cadena)
 * predeterminado (número, cadena, fecha)
-* enumNames (cadena)[])
+* enumNames (String[])
 * chartType (Cadena)
 
 Por ejemplo, permite definir reglas para mostrar el cuadro de texto cuando se hace clic en un botón. Puede utilizar una función personalizada, un objeto de formulario, una propiedad de objeto o una salida de servicio para definir una regla.
@@ -247,17 +248,17 @@ En la siguiente figura se muestra un ejemplo de cómo habilitar dinámicamente l
 
 **[!UICONTROL Restablecer]** Restablece el formulario o el objeto especificado.
 
-**[!UICONTROL Validate]** Valida el formulario o el objeto especificado.
+**[!UICONTROL Validar]** Valida el formulario o el objeto especificado.
 
 **[!UICONTROL Add Instance]**. Agrega una instancia del panel repetible o fila de tabla especificados.
 
 **[!UICONTROL Remove Instance]**. Quita una instancia del panel repetible o fila de tabla especificados.
 
-**[!UICONTROL Salida de función]** Define una regla basada en funciones predefinidas o funciones personalizadas.
+**[!UICONTROL Salida de función]** Define una regla basada en funciones predefinidas o personalizadas.
 
 **[!UICONTROL Navigate to]**. Navega a otros formularios adaptables<!--Interactive Communications,-->, otros recursos, como imágenes o fragmentos de documento, o una URL externa. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL Evento de envío]** Déclencheur las acciones o comportamientos específicos en función de condiciones o eventos predefinidos.
+**[!UICONTROL Evento de envío]** almacena en Déclencheur las acciones o comportamientos específicos en función de condiciones o eventos predefinidos.
 
 
 ### [!UICONTROL Set Value Of] {#set-value-of}
@@ -268,13 +269,17 @@ El tipo de regla **Set Value Of** no está disponible para todos los objetos de 
 
 Set value of Objeto A to:
 
-(cadena ABC) O (propiedad de objeto X de objeto C) O (valor de una función) O (valor de una expresión matemática) O (valor de salida de un servicio del modelo de datos);
+(cadena ABC) O
+(propiedad de objeto X del objeto C) O
+(valor de una función) O
+(valor de una expresión matemática) O
+(valor de salida de un servicio del modelo de datos);
 
 When (opcional):
 
 (Condición 1 AND Condición 2 AND Condición 3) is TRUE;
 
-El siguiente ejemplo selecciona el valor de `Question2` as `True` y establece el valor de `Result` as `correct`.
+El ejemplo siguiente selecciona el valor de `Question2` como `True` y establece el valor de `Result` como `correct`.
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
@@ -456,7 +461,7 @@ El botón **[!UICONTROL Cancelar]** descarta los cambios realizados en una regla
 
 ## Escribir reglas {#write-rules}
 
-Puede escribir reglas mediante el editor visual de reglas <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+Puede escribir reglas mediante el editor de reglas visual <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Veamos primero cómo escribir reglas utilizando el editor visual.
 
@@ -491,7 +496,7 @@ Para escribir las reglas, realice los siguientes pasos:
 
    ![Radio button values from rule editor](assets/radio-button-values.png)-->
 
-1. En el **[!UICONTROL Introduzca una cadena]** en la regla, seleccione **Casado** en el menú desplegable.
+1. En el campo **[!UICONTROL Escriba una cadena]** en la regla, seleccione **Casado** del menú desplegable.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -506,11 +511,11 @@ Para escribir las reglas, realice los siguientes pasos:
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
    A continuación, defina la acción que se realizará si esta condición es False.
-1. Clic **[!UICONTROL Agregar otra sección]** para añadir otra condición para **[!UICONTROL Salario del cónyuge]** , en caso de que seleccione Marital Status como single.
+1. Haga clic en **[!UICONTROL Agregar otra sección]** para agregar otra condición para el campo **[!UICONTROL Salario del cónyuge]**, en caso de que seleccione Estado civil como soltero.
 
    ![when-else](assets/when-else.png)
 
-1. En la instrucción Else, seleccione **[!UICONTROL Hide]** desde el **[!UICONTROL Seleccionar acción]** menú desplegable.
+1. En la instrucción Else, seleccione **[!UICONTROL Hide]** de la lista desplegable **[!UICONTROL Select Action]**.
    ![when-else](assets/when-else-1.png)
 
 1. Arrastre y suelte el campo **[!UICONTROL Spouse Salary]** de la pestaña Objetos de formulario en el campo **[!UICONTROL Colocar objeto o seleccionar aquí]**. Como alternativa, seleccione el campo **[!UICONTROL Colocar objeto o seleccionar aquí]** y seleccionar el campo **[!UICONTROL Salario del cónyuge]** del menú emergente, que enumera todos los objetos del formulario.
@@ -623,7 +628,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### Funciones personalizadas en el editor de reglas {#custom-functions}
 
-Aparte de las funciones integradas, como *Suma de* que se enumeran en **Salida de funciones** Además, también puede utilizar funciones personalizadas en el editor de reglas. El editor de reglas admite la sintaxis de JavaScript ECMAScript 2019 para scripts y funciones personalizadas. Para obtener instrucciones sobre la creación de funciones personalizadas, consulte el artículo [Funciones personalizadas en Forms adaptable](/help/forms/using/create-and-use-custom-functions-core-components.md)
+Además de las funciones integradas, como *Sum of* que se enumeran en **Salida de funciones**, también puede usar funciones personalizadas en el editor de reglas. El editor de reglas admite la sintaxis de JavaScript ECMAScript 2019 para scripts y funciones personalizadas. Para obtener instrucciones sobre cómo crear funciones personalizadas, consulte el artículo [Funciones personalizadas en Forms adaptable](/help/forms/using/create-and-use-custom-functions-core-components.md)
 
 <!--
 
@@ -951,7 +956,7 @@ Rule in the code editor -->
 
 En el formulario de orden de compra que se explica en el ejemplo anterior, se desea restringir el pedido de más de una cantidad de cualquier producto cuyo precio sea superior a 10 000. Para realizar esta validación, puede escribir una regla de validación como se muestra a continuación.
 
-![Example-validate](assets/example-validate.png)
+![Ejemplo-validar](assets/example-validate.png)
 Regla en el editor visual
 
 <!-- The rule appears as follows in the code editor.

@@ -37,14 +37,14 @@ Los procesos empresariales que ha establecido su organización se pueden represe
 >
 >Para obtener más información, consulte lo siguiente:
 >
->* Aplicación y participación en flujos de trabajo: [Uso de flujos de trabajo](/help/sites-authoring/workflows.md).
->* Creación de modelos de flujo de trabajo y ampliación de funciones de flujo de trabajo: [Desarrollo y ampliación de flujos de trabajo](/help/sites-developing/workflows.md).
+>* Aplicando y participando en flujos de trabajo: [Trabajando con flujos de trabajo](/help/sites-authoring/workflows.md).
+>* Creando modelos de flujo de trabajo y ampliando la funcionalidad de flujo de trabajo: [Desarrollando y ampliando flujos de trabajo](/help/sites-developing/workflows.md).
 >* Mejora del rendimiento de los flujos de trabajo que utilizan recursos de servidor significativos: [Procesamiento de flujo de trabajo simultáneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
 
 ## Modelos de flujo de trabajo e instancias {#workflow-models-and-instances}
 
-[Modelos de flujo de trabajo](/help/sites-developing/workflows.md#model) AEM en los que se encuentran los procesos de representación e implementación de los negocios:
+AEM [Los modelos de flujo de trabajo](/help/sites-developing/workflows.md#model) en los son la representación y la implementación de procesos empresariales:
 
 * Normalmente, actúan en páginas o recursos para lograr un resultado específico.
 * Estas páginas o activos se denominan carga útil de flujo de trabajo.
@@ -55,7 +55,7 @@ Cuando se inicia (ejecuta) un modelo del flujo de trabajo, se crea una instancia
 
 >[!CAUTION]
 >
->Los pasos realizados son los definidos por el modelo de flujo de trabajo *en el momento de generar la instancia*. Consulte [Desarrollo de flujos de trabajo](/help/sites-developing/workflows.md#model) para obtener más información.
+>Los pasos realizados son los definidos por el modelo de flujo de trabajo *en el momento en que se genera la instancia*. Consulte [Desarrollo de flujos de trabajo](/help/sites-developing/workflows.md#model) para obtener más información.
 
 Las instancias de flujo de trabajo progresan a través del siguiente ciclo vital:
 
@@ -89,12 +89,12 @@ Un usuario o un servicio realizan pasos del flujo de trabajo según el tipo de p
 
 Un flujo de trabajo puede tener uno de los siguientes estados:
 
-* **EN EJECUCIÓN**: la instancia del flujo de trabajo se está ejecutando.
-* **COMPLETADO**: la instancia del flujo de trabajo se ha finalizado correctamente.
+* **EN EJECUCIÓN**: la instancia de flujo de trabajo se está ejecutando.
+* **COMPLETADO**: la instancia de flujo de trabajo se ha finalizado correctamente.
 
 * **SUSPENDIDO**: marca el flujo de trabajo como suspendido. Sin embargo, consulte la nota de precaución que aparece a continuación sobre un problema conocido con este estado.
-* **ANULADO**: se ha finalizado la instancia del flujo de trabajo.
-* **ANTICUADO**: el progreso de la instancia de flujo de trabajo requiere que se ejecute un trabajo en segundo plano, pero el trabajo no se puede encontrar en el sistema. Esta situación se puede producir cuando se produce un error al ejecutar el flujo de trabajo.
+* **ANULADO**: la instancia de flujo de trabajo ha finalizado.
+* **STALE**: el progreso de la instancia de flujo de trabajo requiere que se ejecute un trabajo en segundo plano, pero no se puede encontrar el trabajo en el sistema. Esta situación se puede producir cuando se produce un error al ejecutar el flujo de trabajo.
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Un flujo de trabajo puede tener uno de los siguientes estados:
 
 Según el estado, puede realizar acciones en instancias de flujo de trabajo en ejecución cuando deba intervenir en la progresión normal de una instancia de flujo de trabajo:
 
-* **Suspender**: Suspender cambia el estado del flujo de trabajo a Suspendido. Consulte Precaución a continuación:
+* **Suspender**: al suspender, el estado del flujo de trabajo cambia a Suspendido. Consulte Precaución a continuación:
 
 >[!CAUTION]
 >

@@ -49,7 +49,7 @@ Antes de dar la descripción general de los detalles específicos, aquí hay una
 
 * Vínculos de navegación 
 
-   * ***Los vínculos no están disponibles para la navegación*** cuando esté en el modo **Editar**. Para navegar con vínculos, debe hacer lo siguiente [previsualizar la página](/help/sites-authoring/editing-content.md#previewing-pages) mediante:
+   * ***Los vínculos no están disponibles para la navegación*** cuando esté en el modo **Editar**. Para navegar con vínculos, debe [obtener una vista previa de la página](/help/sites-authoring/editing-content.md#previewing-pages) mediante:
 
       * [Modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode)
       * [Ver como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
@@ -68,13 +68,13 @@ Antes de dar la descripción general de los detalles específicos, aquí hay una
 
 Existen varios aspectos para encontrar una página; puede navegar o buscar:
 
-1. Abra el **Sites** consola (con la variable **Sites** en la opción [Navegación global](/help/sites-authoring/basic-handling.md#global-navigation)): esto se activa (menú desplegable) al seleccionar el vínculo de Adobe Experience Manager (parte superior izquierda).
+1. Abra la consola **Sitios** (con la opción **Sitios** en [Navegación global](/help/sites-authoring/basic-handling.md#global-navigation)); esto se activa (menú desplegable) al seleccionar el vínculo de Adobe Experience Manager (parte superior izquierda).
 
-1. Desplácese hacia abajo en el árbol tocando o haciendo clic en la página correspondiente. La forma en que se representan los recursos de la página depende de la vista que utilice: [Tarjeta, lista o columna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
+1. Desplácese hacia abajo en el árbol tocando o haciendo clic en la página correspondiente. La manera en que se representan los recursos de la página depende de la vista que utilice: [Tarjeta, Lista o Columna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Desplácese hacia arriba en el árbol mediante [la ruta de exploración en el encabezado](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), que permite volver a la ubicación seleccionada:
+1. Desplácese hacia arriba del árbol mediante [la ruta de exploración del encabezado](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), que le permite volver a la ubicación seleccionada:
 
    ![qgtap-01](assets/qgtap-01.png)
 
@@ -84,9 +84,9 @@ Existen varios aspectos para encontrar una página; puede navegar o buscar:
 
 ### Creación de una nueva página {#creating-a-new-page}
 
-Hasta [crear una página](/help/sites-authoring/managing-pages.md#creating-a-new-page):
+Para [crear una página](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Vaya a la ubicación](#finding-your-page) donde desee crear la página.
+1. [Vaya a la ubicación](#finding-your-page) donde desea crear la página.
 1. Utilice el icono **Crear** y luego seleccione **Página** en la lista:
 
    ![qgtap-02](assets/qgtap-02.png)
@@ -109,10 +109,10 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
 
 1. Vista de tarjeta:
 
-   * Introducir modo de selección por [selección del recurso necesario](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) con:
+   * Especifique el modo de selección [seleccionando el recurso necesario](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) con:
 
       * Dispositivo móvil: seleccionar y mantener presionado
-      * Escritorio: el [acción rápida](/help/sites-authoring/basic-handling.md#quick-actions) - icono de tic:
+      * Escritorio: [acción rápida](/help/sites-authoring/basic-handling.md#quick-actions) - icono de marcar:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
@@ -120,7 +120,7 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
 
    >[!NOTE]
    >
-   >Una vez en el modo de selección, la variable **Seleccionar** El icono (una marca) cambiará a **Anular selección** icono (cruz).
+   >Una vez en el modo de selección, el icono **Seleccionar** (una marca de verificación) cambiará al icono **Anular la selección** (una cruz).
 
 ### Acciones rápidas (solo vista de tarjeta y escritorio) {#quick-actions-card-view-desktop-only}
 
@@ -148,7 +148,7 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
    * [Añadir un componente nuevo a su página](/help/sites-authoring/editing-content.md#inserting-a-component) mediante las siguientes opciones:
 
       * apertura del panel lateral
-      * seleccionar la pestaña componentes (la pestaña [explorador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
+      * seleccionar la ficha componentes (el [explorador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
       * arrastre el componente requerido a la página.
 
      El panel lateral se puede abrir (y cerrar) con:
@@ -170,11 +170,11 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
    * [Desplazar un componente](/help/sites-authoring/editing-content.md#moving-a-component) mediante las siguientes opciones:
 
       * Arrastre el componente en cuestión a la ubicación nueva.
-      * Abra la barra de herramientas de componentes haciendo clic en. Utilice el **Cortar** entonces **Pegar** iconos donde sea necesario.
+      * Abra la barra de herramientas de componentes haciendo clic en. Use los iconos **Cortar** y **Pegar** donde sea necesario.
 
    * [Copiar (y pegar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Abra la barra de herramientas de componentes haciendo clic en. Utilice el **Copiar** entonces **Pegar** iconos según sea necesario.
+      * Abra la barra de herramientas de componentes haciendo clic en. Use los iconos **Copiar** y **Pegar** según sea necesario.
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
    * [Eliminar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
-      * Abra la barra de herramientas de componentes haciendo clic en y utilice **Eliminar** icono.
+      * Abra la barra de herramientas de componentes haciendo clic en y, a continuación, utilice el icono **Eliminar**.
 
    * [Añadir anotaciones](/help/sites-authoring/annotations.md#annotations) a la página:
 
@@ -198,7 +198,7 @@ Hay [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) d
 
    >[!NOTE]
    >
-   >Para navegar mediante vínculos en el contenido, debe utilizar [Modo de previsualización](/help/sites-authoring/editing-content.md#preview-mode).
+   >Para navegar usando vínculos en el contenido, debe usar [Modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode).
 
 ### Editar las Propiedades de la página   {#editing-the-page-properties}
 
@@ -294,7 +294,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 ### Acceder a las referencias de la página {#accessing-page-references}
 
-[Acceso rápido a las referencias](/help/sites-authoring/author-environment-tools.md#references) Las rutas a una página o desde una página están disponibles en el carril Referencias.
+[El acceso rápido a las referencias](/help/sites-authoring/author-environment-tools.md#references) a una página o desde una página está disponible en el carril Referencias.
 
 1. Seleccione **Referencias** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
 
@@ -302,7 +302,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
    Se muestra una lista de tipos de referencias:
 
-   ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
+   ![captura de pantalla_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
 1. Haga clic en el tipo de referencia necesario para mostrar más detalles y (cuando corresponda) realizar más acciones.
 
@@ -314,9 +314,9 @@ Para crear una [versión](/help/sites-authoring/working-with-page-versions.md) d
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Haga clic en la flecha hacia arriba situada en la parte inferior derecha de la columna Línea de tiempo para mostrar botones adicionales, como **Guardar como versión**.
+1. Haga clic en la flecha hacia arriba situada en la parte inferior derecha de la columna Cronología para mostrar botones adicionales, como **Guardar como versión**.
 
-   ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
+   ![captura de pantalla_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
 1. Seleccione **Guardar como versión**, y después seleccione **Crear**.
 

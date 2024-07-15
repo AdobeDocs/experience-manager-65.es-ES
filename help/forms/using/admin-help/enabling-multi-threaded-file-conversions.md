@@ -43,7 +43,7 @@ Cuando agregue usuarios para OpenOffice, Microsoft® Word o Microsoft® PowerPoi
 En un sistema operativo Windows, las cuentas de usuario de administrador que se utilizan para la conversión de PDF (usuarios de PDFG) deben reemplazar los privilegios de token de nivel de proceso. Puede agregar este derecho mediante el Editor de directivas de grupo:
 
 1. En el menú Inicio de Windows, haga clic en Ejecutar y escriba gpedit.msc.
-1. Haga clic en Directiva de equipo local > Configuración del equipo > Configuración de Windows > Configuración de seguridad > Directivas locales > Asignación de derechos de usuario. Edite el *Reemplazar un token de nivel de proceso* directiva para incluir el grupo Administradores.
+1. Haga clic en Directiva de equipo local > Configuración del equipo > Configuración de Windows > Configuración de seguridad > Directivas locales > Asignación de derechos de usuario. Edite la directiva *Reemplazar un token de nivel de proceso* para incluir el grupo Administradores.
 1. Agregue el usuario a la entrada Reemplazar un símbolo (token) de nivel de proceso.
 
 ### Configuración adicional necesaria para OpenOffice, Microsoft® Word y Microsoft® PowerPoint en Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -69,7 +69,7 @@ Si está ejecutando OpenOffice, Microsoft® Word o Microsoft® PowerPoint en Win
 
    >[!NOTE]
    >
-   >Asegúrese de haber asignado los roles de usuario del sistema y usuario de PDFG &quot;user1&quot; y &quot;user2&quot; Para asignar una función de PDF Generator a un usuario, consulte [Agregar una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Asegúrese de haber asignado los roles de usuario del sistema y usuario de PDFG &quot;user1&quot; y &quot;user2&quot; Para asignar un rol de PDFG a un usuario, consulte [Agregar una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. También en el archivo /etc/sudoers, localice y comente esta línea agregando un signo de número (#) al principio de la línea:
 
@@ -80,7 +80,7 @@ Si está ejecutando OpenOffice, Microsoft® Word o Microsoft® PowerPoint en Win
    Esto le permite añadir usuarios de Linux®.
 
 1. Vuelva a cambiar el permiso del archivo etc/sudoers a 440.
-1. Permitir todos los usuarios que agregó mediante [Agregar una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account) para realizar conexiones al servidor de Forms. Por ejemplo, para permitir que un usuario local denominado user1 tenga permiso para establecer la conexión con el servidor de Forms, utilice el siguiente comando
+1. Permitir que todos los usuarios que agregó mediante [Agregar una cuenta de usuario](enabling-multi-threaded-file-conversions.md#add-a-user-account) realicen conexiones al servidor de Forms. Por ejemplo, para permitir que un usuario local denominado user1 tenga permiso para establecer la conexión con el servidor de Forms, utilice el siguiente comando
 
    `xhost +local:user1@`
 

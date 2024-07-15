@@ -16,7 +16,7 @@ ht-degree: 34%
 
 Adobe Experience Manager AEM () viene con varios componentes listos para usar que proporcionan una funcionalidad completa para los autores de sitios web. Están disponibles durante [la edición de una página](/help/sites-authoring/editing-content.md) y se agrupan por áreas funcionales principales (denominadas grupos de componentes) para ayudar a efectuar la filtración.
 
-Los componentes están disponibles cuando [edición de una página](/help/sites-authoring/editing-content.md). Para ayudar en el filtrado, los componentes se agrupan por área funcional principal (es decir, grupo de componentes).
+Los componentes están disponibles cuando [edita una página](/help/sites-authoring/editing-content.md). Para ayudar en el filtrado, los componentes se agrupan por área funcional principal (es decir, grupo de componentes).
 
 >[!NOTE]
 >
@@ -35,32 +35,32 @@ Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la p�
 
 * [Editar contenido: modo pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Para obtener más información sobre cómo añadir componentes a una página, consulte [Edición del contenido de página](/help/sites-authoring/editing-content.md).
+Para obtener más información sobre cómo agregar componentes a una página, consulte [Edición del contenido de la página](/help/sites-authoring/editing-content.md).
 Los componentes se ordenan según varias categorías denominadas grupos de componentes. Algunos ejemplos de estos grupos de componentes son:
 
-* **We.Retail**: incluye los componentes principales procesados como proxy para su uso con [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md).
+* **We.Retail**: incluye los componentes principales procesados como proxy para usarlos con la [implementación de referencia de We.Retail](/help/sites-developing/we-retail.md).
 
-* **Comercio We.Retail**: incluye componentes de comercio como carros de compras y cuadrículas de productos
+* **We.Retail Commerce**: incluye componentes de comercio como carros de compras y cuadrículas de productos
 
 * **General**: incluye el contenedor de diseño y el fragmento de experiencia
 
 ## Introducción a todos los componentes {#overview-of-all-components}
 
-El [Consola Componentes](/help/sites-authoring/default-components-console.md) AEM ofrece información general sobre los grupos de componentes y los componentes que proporciona la instalación de la instalación de la. Puede ver información clave sobre cada uno de los componentes y su uso.
+AEM La [Consola de componentes](/help/sites-authoring/default-components-console.md) le ofrece una descripción general de los grupos de componentes y los componentes proporcionados por la instalación de la instalación de la. Puede ver información clave sobre cada uno de los componentes y su uso.
 
 ## Componentes: áreas principales {#components-major-areas}
 
 Las siguientes páginas proporcionan vínculos a información adicional e importante sobre los componentes:
 
-* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) : los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es): los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
 
-* [Communities](/help/communities/author-communities.md) : los componentes proporcionan funciones interactivas para un sitio web, como foros y comentarios. Muchos de estos componentes se incluyen cuando [Sitio de comunidad](/help/communities/overview.md) se ha creado.
+* [Comunidades](/help/communities/author-communities.md): los componentes proporcionan características interactivas para un sitio web, como foros y comentarios. Muchos de estos componentes se incluyen cuando se crea un [sitio de la comunidad](/help/communities/overview.md).
 
-* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) AEM : La funcionalidad de comercio electrónico dentro de la también incluye una serie de componentes. El uso real puede depender del motor de comercio que se utilice.
+* AEM [comercio electrónico](/help/commerce/cif-classic/administering/ecommerce.md): la funcionalidad de comercio electrónico de la aplicación también incluye una amplia gama de componentes en la aplicación de comercio electrónico de la aplicación de comercio electrónico de la plataforma de comercio electrónico de. El uso real puede depender del motor de comercio que se utilice.
 
 ### Configuración de componentes {#configuring-components}
 
 Además de los componentes a los que los autores pueden acceder en una instalación estándar, también hay otros componentes disponibles.
 
 * Si la página se basa en una plantilla moderna, editable y recomendada, puede [editar la plantilla](/help/sites-authoring/templates.md), habilitar o deshabilitar estas y editar los parámetros de componentes específicos.
-* Si la página se basa en una plantilla estática, puede utilizar [modo de diseño](/help/sites-authoring/default-components-designmode.md#enable-disable-components) para habilitarlos/deshabilitarlos y editar parámetros para componentes específicos.
+* Si su página está basada en una plantilla estática, puede usar [modo de diseño](/help/sites-authoring/default-components-designmode.md#enable-disable-components) para habilitar o deshabilitar estas y editar los parámetros de componentes específicos.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # AEM Configuración de LDAP con 6 {#configuring-ldap-with-aem}
 
-LDAP (el **L** peso ligero **D** directorio **A** Acceso **P** protocolo) se utiliza para acceder a los servicios de directorio centralizados. Ayuda a reducir el esfuerzo necesario para administrar las cuentas de usuario, ya que varias aplicaciones pueden acceder a ellas. Uno de estos servidores LDAP es Active Directory. LDAP se utiliza a menudo para lograr el inicio de sesión único, que permite al usuario acceder a varias aplicaciones después de iniciar sesión una vez.
+LDAP (el protocolo **L** L **D** irectory **A** ccess **P** rotocol) se usa para acceder a los servicios de directorio centralizados. Ayuda a reducir el esfuerzo necesario para administrar las cuentas de usuario, ya que varias aplicaciones pueden acceder a ellas. Uno de estos servidores LDAP es Active Directory. LDAP se utiliza a menudo para lograr el inicio de sesión único, que permite al usuario acceder a varias aplicaciones después de iniciar sesión una vez.
 
 Las cuentas de usuario se pueden sincronizar entre el servidor LDAP y el repositorio, y los detalles de la cuenta LDAP se guardan en el repositorio. Esta funcionalidad permite asignar las cuentas a grupos de repositorios para asignar los permisos y privilegios necesarios.
 
@@ -41,15 +41,15 @@ AEM Para que LDAP funcione con la opción de configuración de la aplicación, d
 
 >[!NOTE]
 >
->Ver [Módulo de inicio de sesión externo de Oak: autenticación con LDAP y versiones posteriores](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) para profundizar en los módulos de inicio de sesión externo.
+>Vea [Módulo de inicio de sesión externo de Oak: autenticación con LDAP y posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) para profundizar en los módulos de inicio de sesión externo.
 >
->Para leer un ejemplo de configuración de Experience Manager con Apache DS, consulte [Configuración de Adobe Experience Manager 6.5 para utilizar el servicio de directorio de Apache.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
+>Para leer un ejemplo de configuración del Experience Manager con Apache DS, consulte [Configuración de Adobe Experience Manager 6.5 para usar el servicio de directorio Apache.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
 ## Configuración del proveedor de identidad LDAP {#configuring-the-ldap-identity-provider}
 
 El proveedor de identidad LDAP se utiliza para definir cómo se recuperan los usuarios del servidor LDAP.
 
-Se encuentra en la consola de administración, en **Proveedor de identidad LDAP Apache Jackrabbit Oak** nombre.
+Se encuentra en la consola de administración bajo el nombre de **Proveedor de identidad LDAP de Apache Jackrabbit Oak**.
 
 Las siguientes opciones de configuración están disponibles para el proveedor de identidad LDAP:
 
@@ -113,7 +113,7 @@ Las siguientes opciones de configuración están disponibles para el proveedor d
   </tr>
   <tr>
    <td><strong>Filtro adicional de usuario</strong></td>
-   <td>Filtro LDAP adicional que se utiliza al buscar usuarios. El filtro final tiene el siguiente formato: '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td>
+   <td>Filtro LDAP adicional que se utiliza al buscar usuarios. El filtro final tiene el siguiente formato: '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td>
   </tr>
   <tr>
    <td><strong>Rutas DN de usuario</strong></td>
@@ -133,7 +133,7 @@ Las siguientes opciones de configuración están disponibles para el proveedor d
   </tr>
   <tr>
    <td><strong>Filtro adicional de grupo</strong></td>
-   <td>Filtro LDAP adicional que se utilizará al buscar grupos. El filtro final tiene el siguiente formato: '(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td>
+   <td>Filtro LDAP adicional que se utilizará al buscar grupos. El filtro final tiene el siguiente formato: '(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
   </tr>
   <tr>
    <td><strong>Agrupar rutas DN</strong></td>
@@ -150,7 +150,7 @@ Las siguientes opciones de configuración están disponibles para el proveedor d
 
 El controlador de sincronización define cómo se sincronizan los usuarios y grupos del proveedor de identidad con el repositorio.
 
-Se encuentra bajo la **Controlador de sincronización predeterminado Apache Jackrabbit Oak** nombre en la consola de administración.
+Se encuentra bajo el nombre **Apache Jackrabbit Oak Default Sync Handler** en la consola de administración.
 
 Las siguientes opciones de configuración están disponibles para el Controlador de sincronización:
 
@@ -178,7 +178,7 @@ Las siguientes opciones de configuración están disponibles para el Controlador
   </tr>
   <tr>
    <td><strong>Caducidad de abono de usuario</strong></td>
-   <td>Tiempo tras el cual caduca la pertenencia.<br /> </td>
+   <td>Tiempo después del cual caduca la membresía.<br /> </td>
   </tr>
   <tr>
    <td><strong>Profundidad de anidación de pertenencia a usuario</strong></td>
@@ -209,7 +209,7 @@ El módulo de inicio de sesión externo se encuentra en **Módulo de inicio de s
 
 >[!NOTE]
 >
->El módulo de inicio de sesión externo Apache Jackrabbit Oak implementa las especificaciones del Servicio de autenticación y autorización de Java™ (JAAS). Consulte la [oracle oficial Guía de referencia de seguridad de Java™](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) para obtener más información.
+>El módulo de inicio de sesión externo de Apache Jackrabbit Oak implementa las especificaciones del Servicio de autenticación y autorización de Java™ (JAAS). Oracle Para obtener más información, consulte la [Guía de referencia de seguridad oficial de Java™](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html).
 
 Su trabajo es definir qué proveedor de identidad y controlador de sincronización utilizar, enlazando de forma eficaz los dos módulos.
 
@@ -230,7 +230,7 @@ Estas son las opciones de configuración disponibles:
 
 AEM Se puede configurar 6 para que se autentique con LDAP a través de SSL siguiendo el siguiente procedimiento:
 
-1. Compruebe la **Usar SSL** o **Usar TLS** casillas de verificación al configurar [Proveedor de identidad LDAP](#configuring-the-ldap-identity-provider).
+1. Marque las casillas de verificación **Usar SSL** o **Usar TLS** al configurar el [proveedor de identidad LDAP](#configuring-the-ldap-identity-provider).
 1. Configure el controlador de sincronización y el módulo de inicio de sesión externo según la configuración.
 1. Instale los certificados SSL en la VM de Java™ si es necesario. Esta instalación se puede realizar utilizando keytool:
 
@@ -280,12 +280,12 @@ Para habilitar el registro de depuración, debe hacer lo siguiente:
 
 * Nivel de registro: depuración
 * Archivo de registro logs/ldap.log
-* Patrón de mensaje: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Patrón de mensaje: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Nivel de registro: depuración
 * Archivo de registro: logs/external.log
-* Patrón de mensaje: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Patrón de mensaje: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Una palabra sobre afiliación grupal {#a-word-on-group-affiliation}
@@ -296,9 +296,9 @@ AEM Por lo general, estos grupos los agrega un administrador local del servicio 
 
 AEM Si se elimina un usuario de un grupo en el servidor LDAP, el cambio se refleja en el lado del usuario en el que se realiza la sincronización, en el que se realiza la sincronización de los datos de forma predeterminada, se produce un cambio en el lado del usuario. Sin embargo, todas las demás afiliaciones de grupo del usuario que no fueron agregadas por LDAP permanecen en su lugar.
 
-AEM y gestiona la depuración de usuarios de grupos externos utilizando `rep:externalId` propiedad. Esta propiedad se agrega automáticamente a cualquier usuario o grupo sincronizado por el controlador de sincronización y contiene información sobre el proveedor de identidad de origen.
+AEM y administra la depuración de usuarios de grupos externos mediante la propiedad `rep:externalId`. Esta propiedad se agrega automáticamente a cualquier usuario o grupo sincronizado por el controlador de sincronización y contiene información sobre el proveedor de identidad de origen.
 
-Consulte la documentación de Apache Oak sobre [Sincronización de usuarios y grupos](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
+Consulte la documentación de Apache Oak sobre la [Sincronización de usuarios y grupos](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
 
 ## Problemas conocidos {#known-issues}
 

@@ -23,7 +23,7 @@ El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en funci
 
 >[!NOTE]
 >
->Fuera del entorno de creación, también hay otros mecanismos disponibles para la búsqueda, como el [Generador de consultas](/help/sites-developing/querybuilder-api.md) y [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fuera del entorno de creación también hay otros mecanismos disponibles para la búsqueda, como [Query Builder](/help/sites-developing/querybuilder-api.md) y [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Conceptos básicos de búsqueda {#search-basics}
 
@@ -35,7 +35,7 @@ Con el carril de búsqueda puede:
 
 * Busque una palabra clave, una ruta o una etiqueta específicas.
 * Filtre según criterios específicos de recurso, como fechas de modificación, estados de página, tamaño de archivo, etc.
-* Defina y utilice un [búsqueda guardada](#saved-searches) - sobre la base de los criterios anteriores.
+* Defina y use una [búsqueda guardada](#saved-searches) según los criterios anteriores.
 
 >[!NOTE]
 >
@@ -56,9 +56,9 @@ Para buscar y filtrar sus recursos:
 1. Si es necesario, puede quitar el filtro de ubicación (seleccione **X** en el filtro que desea eliminar) para buscar en todas las consolas/tipos de recursos.
 1. Los resultados se muestran agrupados según la consola y el tipo de recurso relacionado.
 
-   Puede seleccionar un recurso específico (para realizar más acciones), o profundizar seleccionando el tipo de recurso necesario; por ejemplo, **Ver todos los sitios**:
+   Puede seleccionar un recurso específico (para realizar más acciones), o explorar en profundidad seleccionando el tipo de recurso necesario; por ejemplo, **Ver todos los sitios**:
 
-   ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
+   ![captura de pantalla_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 
 1. Si desea explorar más en profundidad, seleccione el símbolo de carril (parte superior izquierda) para abrir el panel lateral **Filtros y opciones**.
 
@@ -80,15 +80,15 @@ Para buscar y filtrar sus recursos:
    >
    >
    >    * Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de Assets y Comunidades son comprensiblemente especializados.
-   >    * Su instancia como [Buscar Forms](/help/sites-administering/search-forms.md) AEM se puede personalizar (según la ubicación dentro de la ubicación de la).
+   >    * Su instancia, al igual que [Buscar en Forms AEM](/help/sites-administering/search-forms.md), se puede personalizar (según la ubicación dentro de la que se encuentre).
    >
    >
 
-   ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
+   ![captura de pantalla_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 
 1. También puede agregar términos de búsqueda adicionales:
 
-   ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
+   ![captura de pantalla_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
 
 1. Cierre **Buscar** con la **X** (parte superior derecha).
 
@@ -108,11 +108,11 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
 
 1. Asigne un nombre y luego utilice **Guardar** para confirmar la acción:
 
-   ![screen-shot_2019-03-05at102725](assets/screen-shot_2019-03-05at102725.png)
+   ![captura de pantalla_2019-03-05at102725](assets/screen-shot_2019-03-05at102725.png)
 
 1. La próxima vez que acceda al panel de búsqueda, la búsqueda guardada estará disponible en el selector:
 
-   ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
+   ![captura de pantalla_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
 1. Una vez guardada, puede hacer lo siguiente:
 
@@ -121,4 +121,4 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
 
 Las búsquedas guardadas se pueden modificar seleccionando la búsqueda guardada y haciendo clic en **Editar búsqueda guardada** en la parte inferior del panel de búsqueda.
 
-![screen-shot_2019-03-05at103010](assets/screen-shot_2019-03-05at103010.png)
+![captura de pantalla_2019-03-05at103010](assets/screen-shot_2019-03-05at103010.png)

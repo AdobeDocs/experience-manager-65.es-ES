@@ -29,9 +29,9 @@ En el caso de los formularios que se representan como HTML, se muestran los erro
 
    **Marco:** Para mostrar mensajes de validación dentro de un marco de la misma ventana.
 
-   **Sin marco:** Para mostrar mensajes de validación en la misma ventana. Este valor es el predeterminado.
+   **No Frame:** Para mostrar mensajes de validación en la misma ventana. Este valor es el predeterminado.
 
-   **Mediante API (con datos):** Para devolver los mensajes de validación a través de la API (con datos). Los mensajes de validación no se muestran en la pantalla.
+   **Mediante API (con datos):** Para devolver los mensajes de validación mediante la API (con datos). Los mensajes de validación no se muestran en la pantalla.
 
    **Mediante API (con formulario):** Para devolver los mensajes de validación mediante la API (con el formulario). Los mensajes de validación no se muestran en la pantalla.
 
@@ -45,11 +45,11 @@ Cuando Informes se establece en Marco o Sin marco, puede especificar la ubicaci�
 
 1. En Salida de validación, en la lista Posición, seleccione una de las siguientes opciones:
 
-   **Izquierda:** Para mostrar mensajes de validación en el lado izquierdo del explorador web.
+   **Izquierda:** para mostrar mensajes de validación en el lado izquierdo del explorador web.
 
-   **Derecha:** Para mostrar mensajes de validación en el lado derecho del explorador web.
+   **Derecha:** para mostrar mensajes de validación en el lado derecho del explorador web.
 
-   **Superior**: para mostrar los mensajes de validación en la parte superior del explorador web. Este valor es el predeterminado.
+   **Principales**: para mostrar mensajes de validación en la parte superior del explorador web. Este valor es el predeterminado.
 
    **Inferior**: para mostrar los mensajes de validación en la parte inferior del explorador web.
 

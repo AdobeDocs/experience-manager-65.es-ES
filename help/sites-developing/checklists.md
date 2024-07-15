@@ -35,4 +35,4 @@ La siguiente lista de comprobación resalta algunos de los principales problemas
 
 >[!NOTE]
 >
->También puede ver el [Administración de proyectos: lista de comprobación de prácticas recomendadas](/help/managing/best-practices.md) para obtener más listas de comprobación relacionadas con todo el proyecto.
+>También puede ver la [Administración de proyectos - Lista de comprobación de prácticas recomendadas](/help/managing/best-practices.md) para obtener más listas de comprobación relacionadas con todo el proyecto.

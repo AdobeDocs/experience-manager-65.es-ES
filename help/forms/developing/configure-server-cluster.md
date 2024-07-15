@@ -38,7 +38,7 @@ Un clúster de AEM Forms en JEE se basa en las capacidades de agrupación en cl�
 
 ### Caché de GemFire {#gemfire-cache}
 
-La caché de GemFire es un mecanismo de caché distribuida implementado en cada nodo de clúster. Los nodos se encuentran entre sí y crean una única caché lógica que se mantiene coherente entre los nodos. Los nodos que se encuentran entre sí se unen para mantener una sola caché nocional que se muestra como una nube en la Figura 1. A diferencia del GDS y la base de datos, la caché es una entidad puramente conceptual. El contenido real en caché se almacena en la memoria y en el `LC_TEMP` en cada uno de los nodos del clúster.
+La caché de GemFire es un mecanismo de caché distribuida implementado en cada nodo de clúster. Los nodos se encuentran entre sí y crean una única caché lógica que se mantiene coherente entre los nodos. Los nodos que se encuentran entre sí se unen para mantener una sola caché nocional que se muestra como una nube en la Figura 1. A diferencia del GDS y la base de datos, la caché es una entidad puramente conceptual. El contenido en caché real se almacena en la memoria y en el directorio `LC_TEMP` de cada uno de los nodos del clúster.
 
 ### Base de datos {#database}
 
@@ -56,7 +56,7 @@ Además de estos recursos compartidos principales, hay otros elementos que tiene
 
 Una de las cosas más frustrantes sobre el mantenimiento o la solución de problemas de una AEM Forms en un clúster JEE es que no hay un solo lugar para comprobar de forma positiva que el clúster esté en buen estado. Para confirmar que todo está bien en el clúster se necesita un poco de investigación y análisis, y hay varios modos de error para el funcionamiento del clúster, dependiendo de lo que esté mal con la configuración del clúster. La figura siguiente ilustra un clúster mal configurado en el que varios de los recursos compartidos se comparten de forma incorrecta.
 
-![Clúster mal configurado](assets/bad-configuration-cluster.png)
+![Clúster configurado incorrectamente](assets/bad-configuration-cluster.png)
 
 Comprenda el funcionamiento de la agrupación en clúster y los tipos de elementos que puede buscar y comprobar en un clúster, incluso si no tiene intención de ejecutar AEM Forms en JEE en un clúster. El motivo es que algunas partes de AEM Forms en JEE pueden seguir sus indicaciones sobre cómo operar en un clúster incorrectamente y asumir un comportamiento de clúster que no espera.
 
@@ -82,11 +82,11 @@ Configuración de multidifusión:
 
 * `adobe.cache.multicast-port`: puerto de multidifusión utilizado para comunicarse con otros miembros del sistema distribuido. Si se establece en cero, la multidifusión está deshabilitada tanto para la detección como para la distribución de miembros.
 
-* `gemfire.mcast-address` (opcional): Anula la dirección IP predeterminada utilizada por Gemfire.
+* `gemfire.mcast-address` (opcional): invalida la dirección IP predeterminada que usa Gemfire.
 
 Configuración del localizador TCP:
 
-* `adobe.cache.cluster-locators`: Dirección IP/nombre de host del localizador TCP y el puerto del localizador TCP para todos los localizadores utilizados por los miembros del sistema para comunicarse con los localizadores en ejecución.
+* `adobe.cache.cluster-locators`: la dirección IP/nombre de host del localizador TCP y el puerto del localizador TCP para todos los localizadores utilizados por los miembros del sistema para comunicarse con los localizadores en ejecución.
 
 La lista debe incluir todos los localizadores actualmente en uso y debe configurarse de manera consistente para cada miembro del sistema de clústeres.
 
@@ -114,13 +114,13 @@ La respuesta esperada debería tener un aspecto similar al siguiente:
 
 `livecycl 331984 1 0 10:14:51 pts/0 0:03 java -cp ./gemfire.jar: -Dgemfire.license-type=production -Dlocators=localhost[22345] com.gemstone.gemfire.distributed.Locator 22345`
 
-**¿Cómo veo qué nodos cree GemFire que están en el clúster?**
+**¿Cómo veo los nodos que GemFire piensa que están en el clúster?**
 
 GemFire genera información de registro que puede utilizarse para diagnosticar qué miembros del clúster han sido encontrados y adoptados por la caché de GemFire. Se puede utilizar para comprobar que se encuentran todos los miembros de clúster correctos y que no se está realizando ninguna detección de nodos de clúster adicional o incorrecta. El archivo de registro de GemFire se encuentra en el directorio temporal configurado de AEM Forms en JEE:
 
 `.../LC_TEMP/adobeZZ__123456/Caching/Gemfire.log`
 
-La cadena numérica después de `adobeZZ_` es único en el nodo del servidor y, por lo tanto, debe buscar en el contenido real del directorio temporal. Los dos caracteres siguientes `adobe` dependen del tipo de servidor de aplicaciones: `wl`, `jb`, o `ws`.
+La cadena numérica después de `adobeZZ_` es única para el nodo de servidor, por lo que debe buscar el contenido real del directorio temporal. Los dos caracteres posteriores a `adobe` dependen del tipo de servidor de aplicaciones: `wl`, `jb` o `ws`.
 
 Los siguientes registros de ejemplo muestran lo que sucede cuando se encuentra un clúster de dos nodos.
 
@@ -170,7 +170,7 @@ En este caso, el programa previo está trabajando con GemFire para acceder a las
 
 Aunque un puerto duplicado suele ser evidente durante el Bootstrap, es posible que esta situación se muestre más adelante. Esto puede ocurrir cuando se reinicia un clúster después de estar inactivo cuando se produjo el Bootstrap del otro clúster. O bien, cuando se cambia la configuración de red para que los clústeres que antes estaban aislados, con fines de multidifusión, sean visibles entre sí.
 
-Para diagnosticar estas situaciones, observe los registros de GemFire y considere cuidadosamente si solo se encuentran los nodos esperados. Para corregir el problema, es necesario cambiar el `adobe.cache.multicast-port` a un valor diferente en uno o ambos clústeres.
+Para diagnosticar estas situaciones, observe los registros de GemFire y considere cuidadosamente si solo se encuentran los nodos esperados. Para corregir el problema, es necesario cambiar la propiedad `adobe.cache.multicast-port` a un valor diferente en uno o ambos clústeres.
 
 ### 2) Uso compartido de GDS {#gds-sharing}
 
@@ -188,7 +188,7 @@ En UNIX®, la forma en que los montajes NFS se asignan a la estructura de direct
 
 * LCES especifica la ruta a GDS: /u01/iapply/livecycle_gds
 
-Si falla el montaje en el nodo 1, la estructura de directorios aún contiene una ruta `/u01/iapply/livecycle_gds` al punto de montaje vacío y el nodo parece ejecutarse correctamente. Sin embargo, como el contenido de GDS no se comparte realmente con el otro nodo, el clúster no funciona correctamente. Esto puede ocurrir y sucede, y el resultado es que el clúster falla de maneras misteriosas.
+Si se produce un error en el montaje del nodo 1, la estructura del directorio aún contiene una ruta de acceso `/u01/iapply/livecycle_gds` al punto de montaje vacío y el nodo parece ejecutarse correctamente. Sin embargo, como el contenido de GDS no se comparte realmente con el otro nodo, el clúster no funciona correctamente. Esto puede ocurrir y sucede, y el resultado es que el clúster falla de maneras misteriosas.
 
 La práctica recomendada es organizar las cosas para que el punto de montaje de Linux® no se use como raíz del GDS, sino que se use algún directorio dentro de él como raíz del GDS:
 
@@ -226,7 +226,7 @@ Referencias:
 
 * [Servicios empresariales de alta disponibilidad mediante clústeres JBoss®](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Oracle de clústeres que utilizan el servidor de WebLogic](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Clústeres de uso de servidor de WebLogic de Oracle](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### ¿Cómo puedo comprobar si JBoss® se está agrupando correctamente? {#check-jboss-clustering}
 
@@ -263,11 +263,12 @@ Una configuración utiliza un punto entre &quot;cluster&quot; y &quot;locators&q
 
 Para determinar cómo se ha configurado Quartz, debe consultar los mensajes generados por el servicio Programador de AEM Forms en JEE durante el inicio. Estos mensajes se generan con una gravedad INFO y puede ser necesario ajustar el nivel de registro y reiniciar para obtener los mensajes. Dentro de la secuencia de inicio de AEM Forms en JEE, la inicialización de Quartz comienza con la siguiente línea:
 
-INFORMACIÓN  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad Es importante localizar esta primera línea en los registros. El motivo es que algunos servidores de aplicaciones utilizan también Quartz y sus instancias de Quartz no deben confundirse con las instancias que utiliza el servicio Programador de AEM Forms en JEE. Esta es la indicación de que el servicio Planificador se está iniciando y las líneas que lo siguen le indican si se está iniciando correctamente en modo agrupado. Varios mensajes aparecen en esta secuencia, y es el último mensaje &quot;iniciado&quot; que revela cómo Quartz está configurado:
+INFORMACIÓN `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
+Es importante localizar esta primera línea en los registros. El motivo es que algunos servidores de aplicaciones utilizan también Quartz y sus instancias de Quartz no deben confundirse con las instancias que utiliza el servicio Programador de AEM Forms en JEE. Esta es la indicación de que el servicio Planificador se está iniciando y las líneas que lo siguen le indican si se está iniciando correctamente en modo agrupado. Varios mensajes aparecen en esta secuencia, y es el último mensaje &quot;iniciado&quot; que revela cómo Quartz está configurado:
 
-Aquí se proporciona el nombre de la instancia de Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. El nombre de la instancia de Quartz del planificador siempre comienza con la cadena `IDPSchedulerService_$_`. La cadena que se anexa al final de esto le indica si Quartz se está ejecutando en modo agrupado. El identificador único largo generado a partir del nombre de host del nodo y una cadena larga de dígitos, aquí `ap-hp8.ottperflab.adobe.com1312883903975`, indica que funciona en un clúster. Si funciona como un solo nodo, el identificador es un número de dos dígitos, &quot;20&quot;:
+Aquí se proporciona el nombre de la instancia de Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. El nombre de la instancia Quartz del programador siempre comienza con la cadena `IDPSchedulerService_$_`. La cadena que se anexa al final de esto le indica si Quartz se está ejecutando en modo agrupado. El identificador único largo generado a partir del nombre de host del nodo y una cadena larga de dígitos, aquí `ap-hp8.ottperflab.adobe.com1312883903975`, indican que está funcionando en un clúster. Si funciona como un solo nodo, el identificador es un número de dos dígitos, &quot;20&quot;:
 
-INFORMACIÓN  `[org.quartz.core.QuartzScheduler]` Planificador `IDPSchedulerService_$_20` iniciado.
+Se inició el programador de información `[org.quartz.core.QuartzScheduler]` `IDPSchedulerService_$_20`.
 Esta comprobación debe realizarse en todos los nodos del clúster por separado, ya que el programador de cada nodo determina de forma independiente si se debe operar en modo de clúster.
 
 ### ¿Qué tipo de problemas se producen si Quartz se está ejecutando en el modo incorrecto? {#quartz-running-in-wrong-mode}

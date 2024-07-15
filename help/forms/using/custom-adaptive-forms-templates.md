@@ -124,7 +124,7 @@ La plantilla personalizada tiene el mismo estilo que la plantilla predeterminada
 
 1. Cambie el nombre del componente copiado a `enrollmentpage`.
 
-1. **(Solo si ya tiene una página de contenido)** Realice los siguientes pasos (a-d), si ya tiene un componente `contentpage` para su sitio web. Si no tiene un existente `contentpage`para su sitio web, puede dejar el `resourceSuperType`para que apunte a la página base predeterminada.
+1. **(Solo si ya tiene una página de contenido)** Realice los siguientes pasos (a-d), si ya tiene un componente `contentpage` para su sitio web. Si no tiene un componente `contentpage` existente para su sitio web, puede dejar la propiedad `resourceSuperType`para que apunte a la página base predeterminada.
 
    1. Para el nodo `enrollmentpage`, establezca el valor de la propiedad `sling:resourceSuperType` a mycompany/components/page/contentpage. El componente `contentpage` es el componente de la página base del sitio. Otros componentes de página pueden ampliarlo. Quite los archivos del script en `enrollmentpage`, excepto `head.jsp`, `content.jsp` y `library.jsp`. El componente `sling:resourceSuperType`, que es `contentpage` en este caso, incluye todos esos scripts. Los encabezados, incluidas la barra de navegación y el pie de página, se heredan del componente `contentpage`.
 

@@ -16,7 +16,7 @@ ht-degree: 58%
 
 >[!NOTE]
 >
->Antes de aplicar estas recomendaciones de optimización, considere lo siguiente [Actualización de los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md) para obtener el mejor rendimiento.
+>Antes de aplicar estas recomendaciones de optimización, considere [Actualizar los fragmentos de contenido para paginación y ordenación en el filtrado de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md) para obtener el mejor rendimiento.
 
 Estas directrices se proporcionan para ayudar a evitar problemas de rendimiento con las consultas de GraphQL.
 
@@ -38,16 +38,16 @@ Las consultas persistentes de GraphQL ayudan a reducir el rendimiento de la ejec
 
 Consulte:
 
-* [Consultas de GraphQL persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md).
+* [Consultas persistentes de GraphQL](/help/sites-developing/headless/graphql-api/persisted-queries.md).
 * [Formación para utilizar GraphQL con AEM: contenido y consultas de muestra](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 
 #### Instalación del paquete de índice de GraphQL {#install-graphql-index-package}
 
 **Recomendación**
 
-Clientes que utilizan GraphQL *debe* instale el fragmento de contenido de Experience Manager con el paquete de índice de GraphQL. Al hacerlo, puede añadir la definición de índice necesaria en función de las funciones que utilizan realmente. Si no se instala este paquete, las consultas de GraphQL pueden ser lentas o dar error.
+Los clientes que usan GraphQL *deben* instalar el fragmento de contenido de Experience Manager con el paquete de índice de GraphQL. Al hacerlo, puede añadir la definición de índice necesaria en función de las funciones que utilizan realmente. Si no se instala este paquete, las consultas de GraphQL pueden ser lentas o dar error.
 
-Consulte las Notas de la versión para obtener la versión adecuada para su Service Pack. Por ejemplo, para ver el paquete de servicio más reciente, consulte [Instalación del paquete de índice de GraphQL para fragmentos de contenido de Experience Manager](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) .
+Consulte las Notas de la versión para obtener la versión adecuada para su Service Pack. Por ejemplo, para el Service Pack más reciente, consulte [Instalar el paquete de índice de GraphQL para los fragmentos de contenido de Experience Manager](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) .
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ También se pueden utilizar varios métodos de almacenamiento en caché para la 
 
 **Recomendación**
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) AEM es la caché de primer nivel dentro del servicio de, antes de la caché de CDN.
+AEM [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es la caché de primer nivel dentro del servicio de la, antes de la caché de la red de distribución de contenido (CDN).
 
 **Referencia adicional**
 
@@ -78,13 +78,13 @@ Consulte:
 
 **Recomendación**
 
-Las consultas GraphQL y sus respuestas JSON se pueden almacenar en caché si están dirigidas como `GET` solicitudes al utilizar una CDN. Por el contrario, las solicitudes sin almacenar en caché pueden ser muy (recursos) costosas y lentas de procesar, con el potencial de tener más efectos perjudiciales en los recursos del origen.
+Las consultas GraphQL y sus respuestas JSON se pueden almacenar en caché si se dirigen como `GET` solicitudes al utilizar una CDN. Por el contrario, las solicitudes sin almacenar en caché pueden ser muy (recursos) costosas y lentas de procesar, con el potencial de tener más efectos perjudiciales en los recursos del origen.
 
 **Referencia adicional**
 
 Consulte:
 
-* [AEM Uso de CDN en la](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn)
+* AEM [Usando CDN en el](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn)
 
 #### Establecer encabezados de control de caché HTTP {#set-http-cache-control-headers}
 
@@ -92,9 +92,9 @@ Consulte:
 
 Cuando se utilizan consultas GraphQL persistentes con una CDN, se recomienda establecer los encabezados de control de caché HTTP adecuados.
 
-Cada consulta persistente puede tener su propio conjunto específico de encabezados de control de caché. Los encabezados se pueden configurar a través de [API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+Cada consulta persistente puede tener su propio conjunto específico de encabezados de control de caché. Los encabezados se pueden establecer mediante la [API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
-También se pueden configurar utilizando la variable **cURL** herramienta de línea de comandos. Por ejemplo, con un `PUT` solicitud para crear una consulta sin formato ajustada con control de caché.
+También se pueden configurar con la herramienta de línea de comandos **cURL**. Por ejemplo, usar una solicitud `PUT` para crear una consulta sin formato ajustada con control de caché.
 
 ```shell
 $ curl -X PUT \
@@ -183,7 +183,7 @@ El tiempo de respuesta de las consultas complejas, con grandes conjuntos de resu
 GraphQL AEM en la admite dos tipos de paginación:
 
 * [paginación basada en límite/desplazamiento](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
-Se utiliza para consultas de lista; terminan con `List`; por ejemplo, `articleList`.
+Se usa para consultas de lista; terminan con `List`; por ejemplo, `articleList`.
 Para utilizarlo, debe proporcionar la posición del primer elemento que se va a devolver (la variable `offset`) y el número de elementos que se van a devolver (la variable `limit`, o tamaño de página).
 
 * [paginación basada en cursor](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (representada por `first`y `after`)
@@ -327,7 +327,7 @@ El anidamiento profundo también puede tener efectos adversos en la gobernanza d
 
 ### No generar todos los formatos (elementos de texto multilínea) {#do-not-output-all-formats}
 
-AEM GraphQL puede devolver texto creado en **[Texto de varias líneas](/help/assets/content-fragments/content-fragments-models.md#data-types)** Tipo de datos, en varios formatos: Texto enriquecido, Texto simple y Markdown.
+AEM GraphQL puede devolver texto creado en el tipo de datos **[Texto de varias líneas](/help/assets/content-fragments/content-fragments-models.md#data-types)** en varios formatos: Texto enriquecido, Texto simple y Markdown.
 
 La salida de los tres formatos aumenta el tamaño de la salida de texto en JSON en un factor de tres. Esto, combinado con conjuntos de resultados generalmente grandes de consultas muy amplias, puede producir respuestas JSON muy grandes que, por lo tanto, tardan mucho tiempo en calcularse. Es mejor limitar la salida solo a los formatos de texto necesarios para procesar el contenido.
 

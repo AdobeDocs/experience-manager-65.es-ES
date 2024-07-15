@@ -26,7 +26,7 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
 
 ## Métodos abreviados de teclado {#keyboard-shortcuts}
 
-Los siguientes métodos abreviados están disponibles para las consolas Sitios, Comercio, Pantallas, Recursos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias.
+Los siguientes métodos abreviados están disponibles para las consolas Sitios, Commerce, Screens, Assets, Usuarios, Grupos, Proyectos y Fragmentos de experiencias.
 
 | Lugar de residencia | Atajo | Descripción |
 |---|---|---|
@@ -51,7 +51,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 
 Las combinaciones de teclas se muestran con las [teclas modificadoras](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) de Windows.
 
-También hay varios métodos abreviados de teclado disponibles para los usuarios de escritorio que utilizan el [editor de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) a las páginas de autor.
+También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan el [editor de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para crear páginas.
 
 ## Teclas modificadoras específicas del sistema operativo {#os-specific-modifier-keys}
 

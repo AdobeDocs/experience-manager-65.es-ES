@@ -21,37 +21,37 @@ ht-degree: 0%
 
 ## Añadir una ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Cree una ClientLibraryFolder con el nombre `clientlibs` que contiene las hojas de estilos en cascada (CSS) y JavaScript (JS) utilizadas para representar las páginas del sitio.
+Cree una ClientLibraryFolder denominada `clientlibs` que contenga las hojas de estilos en cascada (CSS) y JavaScript (JS) utilizadas para procesar las páginas del sitio.
 
-El `categories` el valor de propiedad dado a esta biblioteca de cliente es el identificador utilizado para incluir directamente esta clientlib de una página de contenido o para incrustarla en otras clientlibs.
+El valor de propiedad `categories` dado a esta biblioteca de cliente es el identificador usado para incluir directamente esta clientlib de una página de contenido o para incrustarla en otras clientlibs.
 
-1. Uso de **CRXDE Lite**, expanda `/etc/designs`
+1. Usando **CRXDE Lite**, expanda `/etc/designs`
 
-1. Clic con el botón derecho `an-scf-sandbox` y seleccione `Create Node`
+1. Haga clic con el botón derecho en `an-scf-sandbox` y seleccione `Create Node`
 
-   * Nombre : `clientlibs`
-   * Tipo : `cq:ClientLibraryFolder`
+   * Nombre: `clientlibs`
+   * Tipo: `cq:ClientLibraryFolder`
 
-1. Clic **OK**
+1. Haga clic en **Aceptar**
 
 ![add-client-library](assets/add-client-library.png)
 
-En el **Propiedades** para el nuevo `clientlibs` , introduzca el **categorías** propiedad:
+En la ficha **Propiedades** del nuevo nodo `clientlibs`, escriba la propiedad **categories**:
 
-* Nombre : **categorías**
-* Tipo : **Cadena**
-* Valor : **apps.an-scf-sandbox**
-* Clic **Añadir**
-* Clic **Guardar todo**
+* Nombre: **categorías**
+* Tipo: **Cadena**
+* Valor: **apps.an-scf-sandbox**
+* Haga clic en **Agregar**
+* Haga clic en **Guardar todo**
 
-Nota: anteponga el valor de categorías con &quot;apps&quot;. es una convención para identificar la &quot;aplicación propietaria&quot; como en la carpeta /apps, no /libs. IMPORTANTE: Agregar marcador de posición `js.tx`t y **`css.txt`** archivos. (No es oficialmente una cq:ClientLibraryFolder sin ellas).
+Nota: anteponga el valor de categorías con &quot;apps&quot;. es una convención para identificar la &quot;aplicación propietaria&quot; como en la carpeta /apps, no /libs. IMPORTANTE: Agregue los archivos de marcador de posición `js.tx`t y **`css.txt`**. (No es oficialmente una cq:ClientLibraryFolder sin ellas).
 
 1. Clic con el botón derecho **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Seleccionar **Crear archivo...**
-1. Entrar **Nombre:** `css.txt`
+1. Escriba **Nombre:** `css.txt`
 1. Seleccionar **Crear archivo...**
-1. Entrar **Nombre:** `js.txt`
-1. Clic **Guardar todo**
+1. Escriba **Nombre:** `js.txt`
+1. Haga clic en **Guardar todo**
 
 ![clientlibs-css](assets/clientlibs-css.png)
 
@@ -74,7 +74,7 @@ A continuación, cree un archivo en clientlibs denominado style.css y establezca
 
 ### Incrustar Clientlibs SCF {#embed-scf-clientlibs}
 
-En el **Propiedades** para la pestaña `clientlibs` , introduzca la propiedad de cadena de varios valores **incrustar**. Esto incrusta lo necesario [bibliotecas del lado del cliente (clientlibs) para componentes de SCF](/help/communities/client-customize.md#clientlibs-for-scf). Para este tutorial, se agregan muchos de los clientlibs necesarios para los componentes de Communities.
+En la ficha **Propiedades** del nodo `clientlibs`, escriba la propiedad de cadena de varios valores **embed**. Esto incrusta las [bibliotecas del cliente (clientlibs) necesarias para los componentes de SCF](/help/communities/client-customize.md#clientlibs-for-scf). Para este tutorial, se agregan muchos de los clientlibs necesarios para los componentes de Communities.
 
 Este puede ser o no el enfoque deseado para utilizar en un sitio de producción, ya que hay consideraciones de comodidad en comparación con el tamaño y la velocidad de los clientlibs descargados para cada página.
 
@@ -84,12 +84,13 @@ Si solo utiliza una función en una página, puede incluir la clientlib completa
 
 En este caso, incluyéndolos todos y por lo tanto se prefieren los clientlibs SCF más básicos que son los clientlibs de autor:
 
-* Nombre : **`embed`**
-* Tipo : **`String`**
-* Clic **`Multi`**
+* Nombre: **`embed`**
+* Tipo: **`String`**
+* Haga clic **`Multi`**
 * Valor: **`cq.social.scf`**
 
-   * Aparecerá un cuadro de diálogo, haga clic en **`+`** después de cada entrada para agregar las siguientes categorías clientlib:
+   * Aparecerá un cuadro de diálogo,
+haga clic en **`+`** después de cada entrada para agregar las siguientes categorías clientlib:
 
       * **`cq.ckeditor`**
       * **`cq.social.author.hbs.comments`**
@@ -97,19 +98,19 @@ En este caso, incluyéndolos todos y por lo tanto se prefieren los clientlibs SC
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * Clic **OK**
+      * Haga clic en **Aceptar**
 
-* Clic **Guardar todo**
+* Haga clic en **Guardar todo**
 
 ![scf-clientlibs](assets/scf-clientlibs.png)
 
-Así es como `/etc/designs/an-scf-sandbox/clientlibs` debería aparecer en el repositorio:
+Así es como debería aparecer `/etc/designs/an-scf-sandbox/clientlibs` en el repositorio:
 
 ![scf-clientlibs-view](assets/scf-clientlibs1.png)
 
 ### Incluir Clientlibs en la plantilla de PlayPage {#include-clientlibs-in-playpage-template}
 
-Sin incluir el `apps.an-scf-sandbox` En la categoría ClientLibraryFolder de la página, los componentes SCF no funcionan ni tienen estilo, ya que los estilos JavaScript y CSS necesarios no están disponibles.
+Sin incluir la categoría ClientLibraryFolder `apps.an-scf-sandbox` en la página, los componentes SCF no funcionan ni tienen estilo, ya que los estilos JavaScript y CSS necesarios no están disponibles.
 
 Por ejemplo, sin incluir los clientlibs, el componente Comentarios de SCF aparece sin estilo :
 
@@ -119,20 +120,20 @@ Una vez que se incluye apps.an-scf-sandbox clientlibs, el componente Comentarios
 
 ![clientlibs-comment-styled](assets/clientlibs-comment1.png)
 
-La instrucción include pertenece al `head` de la sección `html` script. El valor predeterminado **`foundation head.jsp`** incluye una secuencia de comandos que se puede superponer: **`headlibs.jsp`**.
+La instrucción include pertenece a la sección `head` del script `html`. El valor predeterminado **`foundation head.jsp`** incluye un script que se puede superponer: **`headlibs.jsp`**.
 
 **Copie headlibs.jsp e incluya clientlibs:**
 
-1. Uso de **CRXDE Lite**, seleccione **`/libs/foundation/components/page/headlibs.jsp`**
+1. Usando **CRXDE Lite**, seleccione **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Haga clic con el botón derecho y seleccione **Copiar** (o seleccione Copiar en la barra de herramientas)
 1. Seleccionar **`/apps/an-scf-sandbox/components/playpage`**
 1. Haga clic con el botón derecho y seleccione **Pegar** (o seleccione Pegar en la barra de herramientas)
-1. Doble clic **`headlibs.jsp`** para que pueda abrirlo
+1. Haga doble clic en **`headlibs.jsp`** para poder abrirlo
 1. Anexe la línea siguiente al final del archivo
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. Clic **Guardar todo**
+1. Haga clic en **Guardar todo**
 
 ```xml
 <%@ page session="false" %><%
@@ -148,40 +149,40 @@ Cargue el sitio web en el explorador y compruebe si el fondo no es azul.
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![juego comunitario](assets/community-play.png)
+![community-play](assets/community-play.png)
 
 ### Guardar El Trabajo Hasta El Momento {#saving-your-work-so-far}
 
 En este punto, existe una zona protegida minimalista. Puede valer la pena guardarlo como un paquete para que, mientras se reproduce, si el repositorio se daña y desea volver a empezar, pueda desactivar el servidor. A continuación, cambie el nombre de la carpeta crx-quickstart/, encienda el servidor, cargue e instale este paquete guardado y no tenga que repetir estos pasos más básicos.
 
-Este paquete existe en [Crear una página de muestra](/help/communities/create-sample-page.md) tutorial para aquellos que no pueden esperar para saltar y comenzar a jugar.
+Este paquete existe en el tutorial [Crear una página de muestra](/help/communities/create-sample-page.md) para aquellos que no puedan esperar para saltar y comenzar a reproducir.
 
 Para crear un paquete:
 
-* En el CRXDE Lite, haga clic en [Icono de paquete](https://localhost:4502/crx/packmgr/)
-* Clic **Crear paquete**
+* En el CRXDE Lite, haga clic en [Package icon](https://localhost:4502/crx/packmgr/)
+* Haga clic en **Crear paquete**
 
    * Nombre del paquete: an-scf-sandbox-minimal-pkg
    * Versión: 0.1
    * Grupo: `leave as default`
-   * Clic **OK**
+   * Haga clic en **Aceptar**
 
-* Clic **Editar**
+* Haga clic en **Editar**
 
-   * Seleccionar **Filtros** pestaña
+   * Seleccione la ficha **Filtros**
 
-      * Clic **Añadir filtro**
-      * Ruta raíz: buscar `/apps/an-scf-sandbox`
+      * Haga clic en **Agregar filtro**
+      * Ruta raíz: examinar `/apps/an-scf-sandbox`
       * Haga clic en **Listo**.
-      * Clic **Añadir filtro**
-      * Ruta raíz: buscar `/etc/designs/an-scf-sandbox`
+      * Haga clic en **Agregar filtro**
+      * Ruta raíz: examinar `/etc/designs/an-scf-sandbox`
       * Haga clic en **Listo**.
-      * Clic **Añadir filtro**
-      * Ruta raíz: buscar `/content/an-scf-sandbox**`
+      * Haga clic en **Agregar filtro**
+      * Ruta raíz: examinar `/content/an-scf-sandbox**`
       * Haga clic en **Listo**.
 
-   * Clic **Guardar**
+   * Haga clic en **Guardar**
 
-* Clic **Generar**
+* Haga clic en **Generar**
 
-Ahora puede seleccionar **Descargar** para guardarlo en el disco y **Cargar paquete** en otra parte y seleccione **Más > Replicar** para insertar la zona protegida en una instancia de publicación localhost para expandir el dominio de la zona protegida.
+Ahora puede seleccionar **Descargar** para guardarlo en el disco y **Cargar paquete** en otro lugar, y seleccionar **Más > Replicar** para insertar la zona protegida en una instancia de publicación localhost para expandir el dominio de la zona protegida.
