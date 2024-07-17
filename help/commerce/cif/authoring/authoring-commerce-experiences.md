@@ -5,9 +5,9 @@ exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a02724597338ee2451448c6c4188fc349dd47d01
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -72,9 +72,9 @@ CIF Las páginas de catálogo de productos de son páginas virtuales que se proc
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    >Si se seleccionan tanto la categoría como el producto, se tomará el producto.
+>[!NOTE]
+>
+>Si se seleccionan tanto la categoría como el producto, se tomará el producto.
 
 Esto crea un vínculo de marcador de posición que se sustituye por un vínculo real cuando se representa la página.
 
@@ -102,6 +102,6 @@ AEM El uso de Omnisearch es una forma sencilla para que los profesionales encuen
 
 El resultado se agrupa por tipo.
 
-    >[!NOTE]
-    >
-    >La búsqueda de texto completo en Omnisearch no admite fragmentos de contenido asociados. Use el SKU o UID para buscar fragmentos de contenido asociados.
+>[!NOTE]
+>
+>La búsqueda de texto completo en Omnisearch no admite fragmentos de contenido asociados. Utilice el SKU o UID para buscar fragmentos de contenido asociados.
