@@ -9,9 +9,9 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 5c1eda486e31be01f614a3a7ada71563fd996656
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '837'
 ht-degree: 54%
 
 ---
@@ -66,9 +66,9 @@ De forma predeterminada, estos datos de visitante no se almacenan en AEM; AEM en
 
 >[!NOTE]
 >
->Antes de Adobe CQ 5.6, el ClientContext (una versión anterior de ContextHub) enviaba los datos al servidor, pero no los almacenaba.
+>Antes de Adobe AEM(CQ) 5.6, el ClientContext (una versión anterior de ContextHub) enviaba los datos al servidor, pero no los almacenaba.
 >
->Adobe CQ 5.5 y versiones anteriores ahora son EOL y no están cubiertas por esta documentación.
+>La versión 6.4 y las versiones anteriores de Adobe se han convertido en EOL y no se incluyen en esta AEM. Ver [documentación de versiones anteriores de Adobe Experience Manager, CQ y CRX](https://experienceleague.adobe.com/es_es/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Implementación de la inclusión/exclusión {#implementing-opt-in-opt-out}
 
@@ -85,19 +85,19 @@ Estas directrices implementan la inclusión como predeterminada. Por lo tanto, e
 
 * Si el visitante de un sitio acepta los términos y condiciones del sitio, se debe eliminar la cookie de exclusión de ContextHub:
 
-  ```
+  ```java
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   ```
 
 * Si el visitante de un sitio no acepta los términos y condiciones del sitio, se debe configurar la cookie de exclusión de ContextHub:
 
-  ```
+  ```java
   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
   ```
 
 * Para comprobar si ContextHub se está ejecutando en modo de exclusión, la siguiente llamada debe realizarse en la consola del explorador:
 
-  ```
+  ```java
   var isOptedOut = ContextHub.isOptedOut(true) === true;
   // if isOptedOut is true, ContextHub is running in opt-out mode
   ```
@@ -183,7 +183,7 @@ Para obtener una vista previa de la persistencia utilizada en ContextHub, un usu
 
 Por ejemplo, para ver los datos almacenados en localStorage:
 
-```
+```java
 var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.LOCAL });
 console.log(storage.getTree());
 ```
@@ -194,7 +194,7 @@ Para borrar la persistencia de ContextHub:
 
 * Para borrar la persistencia de las tiendas cargadas actualmente:
 
-  ```
+  ```java
   // to be able to fully access persistence layer, Opt-Out must be turned off
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   
@@ -207,7 +207,7 @@ Para borrar la persistencia de ContextHub:
 
 * Para borrar una capa de persistencia específica; por ejemplo, sessionStorage:
 
-  ```
+  ```java
   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
   storage.setItem('/store', null);
   storage.setItem('/_', null);
