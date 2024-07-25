@@ -9,7 +9,7 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 5c1eda486e31be01f614a3a7ada71563fd996656
+source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 54%
@@ -66,7 +66,7 @@ De forma predeterminada, estos datos de visitante no se almacenan en AEM; AEM en
 
 >[!NOTE]
 >
->Antes de Adobe AEM(CQ) 5.6, el ClientContext (una versión anterior de ContextHub) enviaba los datos al servidor, pero no los almacenaba.
+>Antes de Adobe AEM (CQ) 5.6, el ClientContext (una versión anterior de ContextHub) enviaba los datos al servidor, pero no los almacenaba.
 >
 >La versión 6.4 y las versiones anteriores de Adobe se han convertido en EOL y no se incluyen en esta AEM. Ver [documentación de versiones anteriores de Adobe Experience Manager, CQ y CRX](https://experienceleague.adobe.com/es_es/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
