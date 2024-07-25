@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
+source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
 workflow-type: tm+mt
-source-wordcount: '7456'
+source-wordcount: '7445'
 ht-degree: 67%
 
 ---
@@ -1260,9 +1260,6 @@ ht-degree: 67%
          + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
          + [Desarrollo (genérico)](/help/commerce/cif-classic/developing/generic.md)
          + [Desarrollo con SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
-+ Edge Delivery Services {#edge-delivery-services}
-   + [Introducción a Edge Delivery](/help/edge/overview.md)
-   + [Uso de Edge Delivery](/help/edge/using.md)
 + {#headless} sin encabezado
    + [Recorridos sin AEM](/help/journey-headless/overview.md)
    + AEM Recorrido para desarrolladores sin encabezado {#developer} de
@@ -1603,7 +1600,7 @@ ht-degree: 67%
          + [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md)
          + [Uso de la herramienta de migración de CRX2Oak](/help/sites-deploying/using-crx2oak.md)
          + [Tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [Comprobación y solución de problemas de actualización de Post](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [Comprobaciones posteriores a la actualización y solución de problemas](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Actualización de Forms de búsqueda personalizada](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Actualizaciones sostenibles](/help/sites-deploying/sustainable-upgrades.md)
          + [Actualizar código y personalizaciones](/help/sites-deploying/upgrading-code-and-customizations.md)
