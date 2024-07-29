@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
+source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
 workflow-type: tm+mt
-source-wordcount: '7445'
+source-wordcount: '7443'
 ht-degree: 67%
 
 ---
@@ -230,6 +230,7 @@ ht-degree: 67%
          + [Configuración del seguimiento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
          + [Preguntas frecuentes sobre la entrega de contenido HTTP2](/help/sites-administering/scene7-http2faq.md)
          + [Solución de problemas de integración de Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
+         + [Conector de SharePoint](/help/sites-administering/sharepoint-connector.md)
          + [Licencias, avisos de copyright y exenciones de responsabilidad del conector de SharePoint](/help/sites-administering/sharepoint-connector-licenses.md)
          + [Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
          + [Integración con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
@@ -268,7 +269,6 @@ ht-degree: 67%
          + [Administración de etiquetas](/help/sites-administering/tags.md)
          + [El exportador de página](/help/sites-administering/page-exporter.md)
          + [Consola de etiquetado de IU clásica](/help/sites-administering/classic-console.md)
-         + [Administración de contenido para Screens](/help/sites-administering/content-management-screens.md)
          + [Acceso a WebDAV](/help/sites-administering/webdav-access.md)
    + Creación de IU clásica {#classic-ui}
       + Introducción a la creación de IU clásica {#introduction}
