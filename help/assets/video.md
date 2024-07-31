@@ -11,7 +11,7 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7e0f1225d5bf4de095c4a8cc042517997898a44c
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11203'
 ht-degree: 2%
@@ -840,6 +840,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
    | Cree una carpeta independiente para cada recurso | Cree una carpeta para cada archivo de rótulo o de pista de audio que haya seleccionado para la descarga. |
    | Correo electrónico | Utilice su programa de correo electrónico predeterminado para enviar el archivo .zip a una dirección de correo electrónico especificada. |
    | Recursos | Especifica el número de archivos que está descargando y el tamaño total combinado de todos los archivos seleccionados. Al anular la selección de esta opción, se atenúa (desactiva) el botón **[!UICONTROL Descargar]**, lo que impide que se descargue ningún archivo. |
+
 1. Seleccione **[!UICONTROL Descargar]**.
 1. Publish el vídeo. Consulte [recursos de Publish](publishing-dynamicmedia-assets.md).
 

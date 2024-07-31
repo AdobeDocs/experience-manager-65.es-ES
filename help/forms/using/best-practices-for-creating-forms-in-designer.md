@@ -6,7 +6,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11687'
 ht-degree: 0%
@@ -154,7 +155,9 @@ La etiqueta o el rótulo de un control de formulario identifica lo que se supone
 
 La etiqueta que perciben los usuarios del lector de pantalla no necesariamente tiene que ser la misma que el pie de ilustración visual. En algunos casos, es posible que desee ser más específico sobre el propósito del control.
 Para cada objeto de campo de un formulario, se puede utilizar la paleta Accesibilidad (consulte la Figura 3) para especificar lo que el lector de pantalla anunciará para identificar el campo de formulario específico.
+
 Para utilizar la paleta Accesibilidad, siga estos pasos:
+
 1. Muestre la paleta Accesibilidad seleccionando Ventana > Accesibilidad o pulsando Mayús+F6.
 1. Seleccione un objeto del formulario. La paleta mostrará las propiedades de accesibilidad del objeto.
 
@@ -171,7 +174,7 @@ Cuando el formulario se guarda como PDF, LiveCycle Designer busca en el formular
 Las opciones disponibles son las siguientes:
 
 * **Texto personalizado**, que se establece en el campo Texto personalizado del Reader de pantalla de la paleta Accesibilidad. Esta opción le permite especificar el texto que desea que utilice la tecnología de asistencia, como lectores de pantalla. El uso de la configuración Pie de ilustración es mejor para la mayoría de las situaciones: la creación de texto de Reader de pantalla personalizado debe considerarse una opción solo cuando se utiliza Pie de ilustración o no es posible obtener información del objeto.
-* **Información de objeto**, que se establece en el campo Información de objeto de la paleta Accesibilidad. Para la mayoría de los objetos, la información sobre herramientas aparece en tiempo de ejecución cuando el usuario pasa el puntero sobre el objeto. La información del objeto aparece para algunos objetos de solo lectura, como el objeto de código de barras de un formulario en papel, solo cuando se utiliza un lector de pantalla.
+* **Información de objeto**, que se establece en el campo Información de objeto de la paleta Accesibilidad. Para la mayoría de los objetos, la información sobre herramientas aparece en tiempo de ejecución cuando el usuario pasa el puntero sobre el objeto. La información sobre herramientas aparece para algunos objetos de solo lectura, como el objeto de código de barras de un formulario en papel, solo cuando se utiliza un lector de pantalla.
 * **Pie de ilustración**, lo que hará que LiveCycle Designer use la etiqueta (visual) asociada al campo de formulario como texto del lector de pantalla.
 * **Nombre**, que se establece en el campo Nombre de la ficha Enlace. Tenga en cuenta que este nombre no puede contener espacios.
 * **Ninguno**, lo que hará que el objeto no tenga un nombre. Esto nunca se recomienda para los controles del formulario.
@@ -240,12 +243,12 @@ En la tabla siguiente se proporciona información general sobre las reglas de co
 | Grupo de botones de opción | Cree un título visible para el grupo de botones de opción creando un elemento de texto estático y colocándolo a la izquierda o encima del grupo. Para cada botón de opción individual, coloque la etiqueta a la derecha (valor predeterminado). |
 | Lista desplegable | Coloque el pie de ilustración a la izquierda del objeto (valor predeterminado). Si esto no es posible, colóquelo inmediatamente encima. Para los controles de lista desplegable de las celdas de la tabla, el lector de pantalla anunciará el pie de ilustración, la información del objeto o el texto personalizado del lector de pantalla que especifique para el objeto. Si desea utilizar el encabezado de columna como texto alternativo para estos objetos en una tabla, no proporcione ningún pie de ilustración, información del objeto ni texto personalizado del lector de pantalla. |
 | Cuadro de lista | El pie de ilustración se coloca encima del cuadro de lista de forma predeterminada cuando lo crea. |
-| Botón | El pie de ilustración se coloca automáticamente en el botón y no tiene que colocarse manualmente. Asegúrese de que el propósito del botón se describe correctamente en el texto del pie de ilustración. |
+| Botón | El pie de ilustración se coloca automáticamente en el botón y no tiene que colocarse manualmente. Asegúrese de que el texto del pie de ilustración describe correctamente el propósito del botón. |
 
 
 ### Rellenado dinámico de un texto de información del objeto o de Reader de pantalla personalizado
 
-También puede rellenar dinámicamente una alternativa de texto de un control de formulario, como la información del objeto, con un valor de un origen de datos. Por ejemplo, puede mostrar una información de objeto personalizada para un objeto que esté en francés.
+También puede rellenar dinámicamente la alternativa de texto de un control de formulario, como la información sobre herramientas, con un valor de un origen de datos. Por ejemplo, puede mostrar una información de objeto personalizada para un objeto que esté en francés.
 El esquema al que se conecte podría tener lo siguiente definido para una información del objeto:
 
 
@@ -625,7 +628,7 @@ Asegúrese siempre de que el orden de los niveles de encabezado sea lógico. Por
 
 ### Marcado de listas
 
-A veces, también puede resultar útil agregar contenido de lista al formulario. Las listas son útiles para agrupar elementos relacionados y permiten a los usuarios del lector de pantalla saber cuántos elementos hay en una lista y desplazarse rápidamente por ella. El marcado correcto de las listas hace que la estructura del formulario sea más clara para los usuarios del lector de pantalla.
+A veces, también puede resultar útil agregar contenido de lista al formulario. Las listas son útiles para agrupar elementos relacionados y permiten a los usuarios del lector de pantalla saber cuántos elementos hay en una lista y desplazarse rápidamente por ella. Marcar correctamente las listas hace que la estructura del formulario sea más clara para los usuarios del lector de pantalla.
 
 En LiveCycle Designer, puede crear listas mediante subformularios con los pasos siguientes:
 
@@ -712,7 +715,7 @@ Las tecnologías de asistencia que utilizan sintetizadores de voz específicos d
 
 Si el texto (o el texto alternativo) de los formularios se presenta en más de un idioma, debe identificar las áreas del formulario en las que se realiza un cambio de un idioma a otro.
 
-En LiveCycle Designer, para establecer el idioma principal se establece la propiedad Configuración regional del formulario y la propiedad Configuración regional del subformulario de nivel superior. Para identificar los cambios en el idioma principal, cambie la propiedad Locale de cualquier objeto que utilice un idioma distinto del idioma del formulario.
+En LiveCycle Designer, para establecer el idioma principal se establece la propiedad Configuración regional del formulario y la propiedad Configuración regional del subformulario de nivel superior. Para identificar los cambios en el idioma principal, cambie la propiedad Locale de cualquier objeto que utilice un idioma distinto del del formulario.
 
 Para establecer la propiedad Locale de un formulario:
 1. Elija Archivo > Propiedades del formulario y seleccione la pestaña Predeterminado
@@ -728,7 +731,7 @@ Para establecer la propiedad Local del subformulario de nivel superior o de un o
 1. Muestre la paleta Objeto seleccionando Ventana > Objeto
 1. En la paleta Objeto, seleccione la pestaña Campo y, en la lista Configuración regional, seleccione el idioma que desea utilizar para el objeto (consulte la figura 18). Al aplicar diferentes opciones de configuración regional a objetos individuales, tenga en cuenta que los objetos que se encuentran en tablas y subformularios reciben automáticamente la misma configuración regional que el objeto de tabla y subformulario.
 
-![Cambiar la configuración regional de un objeto](/help/forms/using/assets/image-18.png)
+![Cambiando la configuración regional de un objeto](/help/forms/using/assets/image-18.png)
 
 Figura 18: **Cambio de la configuración regional de un objeto**
 

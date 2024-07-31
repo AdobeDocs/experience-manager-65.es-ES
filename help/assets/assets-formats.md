@@ -8,7 +8,7 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 26%
@@ -287,6 +287,7 @@ Además de la funcionalidad anterior, tenga en cuenta lo siguiente:
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagen](/help/assets/image-sets.md), [Medios mixtos](/help/assets/mixed-media-sets.md) y [Giro](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
+
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡ La imagen combinada se extrae del archivo del PSD. Es una imagen generada por Adobe Photoshop y que se incluye en el archivo del PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
