@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+source-git-commit: c524e4355794ab598b6b69a8ce96cdba90abaa22
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '930'
 ht-degree: 1%
 
 ---
@@ -92,6 +92,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
      <li>Cuando se envía un formulario adaptable desde una instancia de Adobe Experience Manager Publish a un flujo de trabajo de Adobe Experience Manager, el flujo de trabajo no puede guardar los archivos adjuntos.  (FORMS-14209) </li>
      <li> AEM Al instalar el paquete de servicio 20 de Forms 6.5 de la interfaz de usuario (IU) de AEM Sites (paquete de complemento de AEM Forms para SP20), se produce una degradación significativa del rendimiento.  (FORMS-13791) </li>
      <li>El servicio de relleno previo falla con una excepción de puntero nulo en las comunicaciones interactivas. (CQDOC-21355)</li>
+     <li>Las configuraciones que utilizan el servicio en la nube heredado para Adobe Analytics con autenticación basada en credenciales de usuario no funcionan correctamente, lo que provoca que no se ejecuten las reglas de Analytics. (FORMS-15428)
     </ul>
     </td>    
   </tr>

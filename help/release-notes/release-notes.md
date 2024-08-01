@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
 workflow-type: tm+mt
-source-wordcount: '4332'
+source-wordcount: '4390'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 
 A continuación se muestra la lista de mejoras incluidas en esta versión:
 
-* La ficha IPTC ahora admite los campos de texto [!UICONTROL Texto alternativo] y [!UICONTROL Descripción extendida]. (ASSETS-34918)
+* La pestaña IPTC ahora admite los campos de texto [!UICONTROL Texto alternativo] y [!UICONTROL Descripción extendida]. (ASSETS-34918)
 
 #### Correcciones de accesibilidad
 
@@ -550,6 +550,8 @@ Para garantizar el funcionamiento correcto, debe agregar las siguientes propieda
    1. Vaya al directorio `/libs/fd/aemforms/install/` en CRXDE.
    1. Elimine el paquete con el nombre `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. AEM Reinicie el servidor de.
+
+* Cuando un usuario actualiza al paquete de servicio 20 de AEM Forms (6.5.20.0) instalado con el complemento de Forms, las configuraciones que utilizan el servicio en la nube heredado para Adobe Analytics con autenticación basada en credenciales de usuario no funcionan correctamente, lo que provoca que no se ejecuten las reglas de Analytics. Para descargar e instalar la revisión, consulte el artículo [Revisiones de Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
 
 * Cuando un usuario actualiza al paquete de servicio 20 de AEM Forms (6.5.20.0) en el servidor JEE y genera PDF mediante servicios de salida, los PDF se representan con problemas de accesibilidad. Para descargar e instalar la revisión, consulte el artículo [Revisiones de Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
 * Cuando un usuario genera PDF etiquetados mediante el servicio de salida en JEE, muestra &quot;Advertencia de estructura inadecuada&quot;. Para descargar e instalar la revisión, consulte el artículo [Revisiones de Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
