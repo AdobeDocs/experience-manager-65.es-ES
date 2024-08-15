@@ -10,9 +10,9 @@ exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2114'
 ht-degree: 4%
 
 ---
@@ -219,7 +219,7 @@ Crea un cuadro de diálogo con la siguiente estructura:
 
 Ahora puede adaptar el cuadro de diálogo a sus necesidades modificando propiedades o creando nodos.
 
-También puede utilizar el Editor de cuadros de diálogo para editar un cuadro de diálogo. Al hacer doble clic en el nodo de diálogo en el CRXDE Lite, aparece el editor. Encontrará más información sobre el Editor de diálogos [aquí](/help/sites-developing/dialog-editor.md).
+También puede utilizar el Editor de cuadros de diálogo para editar un cuadro de diálogo. Al hacer doble clic en el nodo de diálogo en el CRXDE Lite, aparece el editor. Consulte [Editor de cuadros de diálogo](/help/sites-developing/dialog-editor.md) para obtener más información.
 
 ## Creación de un nodo {#creating-a-node}
 

@@ -9,9 +9,9 @@ exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '998'
 ht-degree: 5%
 
 ---
@@ -68,7 +68,7 @@ SPA El archivo `package.json` define los requisitos del paquete general de. AEM 
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Encontrará más detalles al respecto [en GitHub aquí](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+Más detalles acerca de [aem-clientlib-generator están disponibles en GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
 >[!CAUTION]
 >

@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2937'
 ht-degree: 5%
 
 ---
@@ -429,7 +429,7 @@ AEM A continuación se ilustran las directrices de arquitectura para sitios de y
 
 ### Directrices de configuración de TarMK {#tarmk-settings-guideline}
 
-Para obtener un buen rendimiento, debe seguir las directrices de configuración que se presentan a continuación. Para obtener instrucciones sobre cómo cambiar la configuración, [consulte esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es).
+Para obtener un buen rendimiento, debe seguir las directrices de configuración que se presentan a continuación. Para obtener instrucciones sobre cómo cambiar la configuración, consulte [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>
@@ -539,7 +539,7 @@ Para establecer un buen rendimiento al utilizar MongoMK, debe comenzar desde la 
 
 ### Directrices de configuración de MongoMK {#mongomk-settings-guidelines}
 
-Para obtener un buen rendimiento, debe seguir las directrices de configuración que se presentan a continuación. Para obtener instrucciones sobre cómo cambiar la configuración, [consulte esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es).
+Para obtener un buen rendimiento, debe seguir las directrices de configuración que se presentan a continuación. Para obtener instrucciones sobre cómo cambiar la configuración, consulte [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md).
 
 <table>
  <tbody>

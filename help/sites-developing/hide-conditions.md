@@ -9,9 +9,9 @@ exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Si un autor de una plantilla decide deshabilitar la opción de páginas secundar
 
 1. El valor de `disableChildren` se extrae de la configuración de diseño y la expresión `${cqDesign.disableChildren}` se evalúa como `false`, lo que significa que la opción no se representará como parte del componente.
 
-   Puede ver la expresión &quot;hide&quot; como el valor de la propiedad `granite:hide` [en GitHub aquí](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
+   Puede ver la expresión Hide como el valor de la propiedad `granite:hide` [en GitHub](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
 
 1. La opción **Páginas secundarias** ya no se representa para el autor de la página al usar el componente de lista.
 

@@ -10,9 +10,9 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -161,4 +161,4 @@ Para personalizar las columnas en la vista de lista:
 
 Al utilizar una consola, un caso de uso común es cuando el usuario debe seleccionar entre recursos (por ejemplo, páginas, componentes, recursos, etc.). Esto puede adoptar la forma de una lista, por ejemplo, desde la que el autor debe elegir un elemento.
 
-Para mantener la lista a un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Consulte [este artículo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) para obtener detalles.
+Para mantener la lista a un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Consulte [Personalización de la creación de páginas - Filtrado de recursos](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) para obtener más información.

@@ -10,9 +10,9 @@ feature: Developing,Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ El mixin `cq:OwnerTaggable`, que hereda de `cq:Taggable`, tiene la intención de
 
 ### Notación de tipo de nodo (CND) {#node-type-notation-cnd}
 
-Las definiciones de tipo de nodo existen en el repositorio como archivos CDN. La notación CDN se define como parte de la documentación JCR [aquí](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Las definiciones de tipo de nodo existen en el repositorio como archivos CDN. La notación CND se define como parte de [Documentación de Jackrabbit](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 AEM Las definiciones esenciales para los tipos de nodo incluidos en la lista de nombres de dominio son las siguientes:
 

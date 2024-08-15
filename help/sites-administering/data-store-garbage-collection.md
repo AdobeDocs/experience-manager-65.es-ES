@@ -10,9 +10,9 @@ exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ El comando curl vuelve inmediatamente.
 
 La comprobación de coherencia del almacén de datos informará de cualquier binario del almacén de datos que falte, pero al que aún se haga referencia. Para iniciar una comprobación de coherencia, siga estos pasos:
 
-1. Vaya a la consola JMX. Para obtener información sobre cómo usar la consola JMX, consulte [este artículo](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Vaya a la consola JMX. Para obtener información sobre cómo usar la consola JMX, consulte [Supervisión de recursos del servidor mediante la consola JMX](/help/sites-administering/jmx-console.md#using-the-jmx-console).
 1. Busque el MBean **BlobGarbageCollection** y haga clic en él.
 1. Haga clic en el vínculo `checkConsistency()`.
 

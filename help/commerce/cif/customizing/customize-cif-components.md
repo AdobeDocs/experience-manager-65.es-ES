@@ -5,9 +5,9 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: ddd411a5dde57cf66cbcb458578b0aa32139b649
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2305'
 ht-degree: 11%
 
 ---
@@ -176,7 +176,7 @@ El valor de **Yes** es un número entero de **1**. Esto resulta útil cuando se 
 
 >[!TIP]
 >
->Encontrará documentación más detallada sobre [Adobe Commerce GraphQL aquí](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+>Para obtener documentación más detallada sobre Adobe Commerce GraphQL, consulte la siguiente [descripción general de GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Actualización del modelo de Sling para el teaser de productos {#updating-sling-model-product-teaser}
 
@@ -386,7 +386,7 @@ En este caso, desea renderizar un titular sobre el teaser para indicar que el pr
 
    Al llamar a un método del modelo Sling en HTL, la parte `get` y `is` del método se borra y la primera letra se convierte a minúsculas. Así que `isShowBadge()` se convierte en `.showBadge` y `isEcoFriendly` se convierte en `.ecoFriendly`. En función del valor booleano devuelto por `.isEcoFriendly()`, determina si se muestra `<span>Eco Friendly</span>`.
 
-   Encontrará más información sobre `data-sly-test` y otras [instrucciones de bloque HTL aquí](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
+   Para obtener más información acerca de `data-sly-test` y otras instrucciones de bloque HTL, consulte [Especificación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
 
 1. AEM Guarde los cambios e implemente las actualizaciones para que se puedan usar con sus habilidades con Maven, desde un terminal de línea de comandos:
 

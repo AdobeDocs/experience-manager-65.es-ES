@@ -5,17 +5,17 @@ exl-id: f19a92de-ba6a-4f6d-9e12-60ad1bad2e74
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: bb4367fa9916a8bafa6255562b2454ddae143351
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 73%
+source-wordcount: '362'
+ht-degree: 72%
 
 ---
 
 # Credenciales JWT de Adobe Developer Console en desuso {#jwt-credentials-deprecation-in-adobe-developer-console}
 
 >[!NOTE]
-> AEM as a Cloud Service debería hacer referencia a [este artículo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) para obtener más información.
+> AEM as a Cloud Service debe hacer referencia a [el artículo comparable de la versión de AEMaaCS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) para obtener más información.
 
 Los clientes de Adobe utilizan [Adobe Developer Console](https://developer.adobe.com/console) para generar credenciales que permitan el acceso a varias API. Los clientes seleccionan entre varios tipos de credenciales, que van de servidor a servidor OAuth a aplicaciones de una sola página. Uno de estos tipos de credenciales, las credenciales de cuenta de servicio (JWT), han quedado obsoletas y pasan a ser las credenciales de servidor a servidor de OAuth. Las credenciales de la nueva cuenta de servicio (JWT) no se pueden crear el 3 de junio de 2024 o después, y las credenciales de JWT existentes no funcionarán el 27 de enero de 2025 o después. Puede [obtener más información sobre el desuso](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 

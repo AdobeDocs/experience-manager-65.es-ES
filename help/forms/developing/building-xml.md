@@ -5,9 +5,9 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '981'
 ht-degree: 3%
 
 ---
@@ -50,7 +50,7 @@ Una vez creado un proceso con el servicio Ejecutar script incluido, se puede uti
 
 **Acerca de la tecnología del servicio Ejecutar script**
 
-Para saber cuáles son las capacidades y limitaciones del servicio Ejecutar Script, es necesario conocer los fundamentos tecnológicos del servicio. AEM Forms en JEE utiliza el analizador del modelo de objetos de documento (DOM) de Apache Xerces para crear y almacenar variables XML en procesos. Xerces es una implementación Java™ de la especificación del Modelo de objetos de documento del W3C; se definió [aquí](https://dom.spec.whatwg.org/). La especificación DOM es una forma estándar de manipular XML que existe desde 1998. La implementación Java™ de Xerces, Xerces-J, es compatible con la versión 1.0 del nivel 2 del DOM.
+Para saber cuáles son las capacidades y limitaciones del servicio Ejecutar Script, es necesario conocer los fundamentos tecnológicos del servicio. AEM Forms en JEE utiliza el analizador del modelo de objetos de documento (DOM) de Apache Xerces para crear y almacenar variables XML en procesos. Xerces es una implementación Java™ de la [especificación del modelo de objetos de documento](https://dom.spec.whatwg.org/) del W3C. La especificación DOM es una forma estándar de manipular XML que existe desde 1998. La implementación Java™ de Xerces, Xerces-J, es compatible con la versión 1.0 del nivel 2 del DOM.
 
 Las clases Java™ utilizadas para almacenar variables XML son:
 
@@ -58,7 +58,7 @@ Las clases Java™ utilizadas para almacenar variables XML son:
 
 * org.apache.xerces.dom.DocumentImpl
 
-DocumentImpl es una subclase de NodeImpl, por lo que se puede suponer que cualquier variable de proceso XML es una derivación de NodeImpl. Puede encontrar la documentación de NodeImpl [aquí](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html).
+DocumentImpl es una subclase de NodeImpl, por lo que se puede suponer que cualquier variable de proceso XML es una derivación de NodeImpl. Consulte la documentación de [NodeImpl](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html) para obtener más información.
 
 **Creación XML de ejemplo mediante el servicio Ejecutar script**
 

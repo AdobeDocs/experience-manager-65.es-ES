@@ -10,9 +10,9 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ Es opcional; si se deja en blanco, se utiliza la página de inicio de sesión es
    >
    >Tenga en cuenta que los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
    >
-   >Para obtener más información, vea [esta página](closed-user-groups.md#aem-livecopy).
+   >AEM Para obtener más información, consulte [Grupos de usuarios cerrados en la página de inicio de sesión - Livecopy](closed-user-groups.md#aem-livecopy).
 
 1. Se abre el cuadro de diálogo **Editar grupo de usuarios cerrado**. Aquí puede buscar y seleccionar su CUG y confirmar la selección del grupo con **Guardar**.
 

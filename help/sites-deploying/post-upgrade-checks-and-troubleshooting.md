@@ -1,5 +1,5 @@
 ---
-title: Comprobación y solución de problemas de actualización de Post
+title: Comprobaciones posteriores a la actualización y solución de problemas
 description: Obtenga información sobre cómo solucionar problemas que podrían aparecer después de una actualización.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
 
-# Comprobación y solución de problemas de actualización de Post{#post-upgrade-checks-and-troubleshooting}
+# Comprobaciones posteriores a la actualización y solución de problemas{#post-upgrade-checks-and-troubleshooting}
 
-## Comprobaciones de actualización de Post {#post-upgrade-checks}
+## Comprobaciones posteriores a la actualización {#post-upgrade-checks}
 
 Después de la [actualización in situ](/help/sites-deploying/in-place-upgrade.md), se deben ejecutar las siguientes actividades para finalizar la actualización. AEM Se supone que se ha iniciado con el JAR 6.5 y que se ha implementado la base de código actualizada.
 
@@ -103,7 +103,7 @@ AEM Varias funciones de requieren pasos adicionales después de la actualizació
 
 #### Activar recolección de basura del almacén de datos {#enable-data-store-garbage-collection}
 
-Si utiliza un almacén de datos de archivos, asegúrese de que la tarea de recolección de elementos no utilizados del almacén de datos esté habilitada y agregada a la lista de mantenimiento semanal. Las instrucciones se describen [aquí](/help/sites-administering/data-store-garbage-collection.md).
+Si utiliza un almacén de datos de archivos, asegúrese de que la tarea de recolección de elementos no utilizados del almacén de datos esté habilitada y agregada a la lista de mantenimiento semanal. Las instrucciones se describen en [Limpieza de revisión](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Si utiliza un almacén de datos de archivos, asegúrese de que la tarea de recol
 
 #### Activar Limpieza de revisión en línea {#enable-online-revision-cleanup}
 
-Si utiliza MongoMK o el nuevo formato de segmento TarMK, asegúrese de que la tarea Revision Clean Up esté activada y se añada a la lista de mantenimiento diario. Instrucciones descritas [aquí](/help/sites-deploying/revision-cleanup.md).
+Si utiliza MongoMK o el nuevo formato de segmento TarMK, asegúrese de que la tarea Revision Clean Up esté activada y se añada a la lista de mantenimiento diario. Las instrucciones se describen en [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md).
 
 ### Ejecutar plan de prueba {#execute-test-plan}
 

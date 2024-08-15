@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3442'
 ht-degree: 0%
 
 ---
@@ -443,7 +443,7 @@ Si no se especifica ninguna codificación en el HTML importado, la codificación
 
 La plantilla Página de aterrizaje en blanco se puede reproducir creando una en: `/apps/<appName>/designimporter/templates/<templateName>`
 
-AEM Los pasos para crear una plantilla en la se explican [aquí](/help/sites-developing/templates.md).
+AEM Los pasos para crear una plantilla en la se explican en [Plantillas](/help/sites-developing/templates.md).
 
 ### Referencia a un componente desde la página de aterrizaje {#referring-a-component-from-landing-page}
 

@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 59%
+source-wordcount: '762'
+ht-degree: 58%
 
 ---
 
@@ -69,7 +69,7 @@ Estas son algunas de las preguntas más frecuentes relacionadas con MSM y Live C
 
 Las acciones de sincronización de MSM son altamente configurables. Las propiedades o los componentes que se modifican durante las implementaciones dependen directamente de las propiedades de dichas configuraciones.
 
-Consulte [este artículo](msm-best-practices.md) para obtener más información sobre este tema.
+Consulte [Prácticas recomendadas de MSM](msm-best-practices.md) para obtener más información sobre este tema.
 
 ### ¿Cómo puedo quitar los permisos de despliegue de un grupo de autores? {#remove-rollout-permissions}
 

@@ -10,9 +10,9 @@ exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1756'
 ht-degree: 2%
 
 ---
@@ -123,7 +123,7 @@ Las ventajas:
 
 >[!NOTE]
 >
->AEM AEM AEM En el diagrama anterior, el servidor de 3 y el servidor de 4 se muestran con un estado inactivo suponiendo que existe una latencia de red entre los servidores de datos del centro de datos 2 y el nodo principal de MongoDB en el centro de datos 1 que es superior al requisito documentado [aquí](/help/sites-deploying/aem-with-mongodb.md#checklists). AEM AEM Si la latencia máxima es compatible con los requisitos, por ejemplo, mediante el uso de zonas de disponibilidad, los servidores de datos del centro de datos 2 también pueden estar activos, lo que crea un clúster de datos activo-activo en varios centros de datos.
+>AEM AEM AEM En el diagrama anterior, el servidor de 3 y el servidor de 4 se muestran con un estado inactivo suponiendo que la latencia de red entre los servidores de datos del centro de datos 2 y el nodo principal de MongoDB en el centro de datos 1 es superior al requisito documentado en [Adobe Experience Manager con MongoDB: listas de comprobación](/help/sites-deploying/aem-with-mongodb.md#checklists). AEM AEM Si la latencia máxima es compatible con los requisitos, por ejemplo, mediante el uso de zonas de disponibilidad, los servidores de datos del centro de datos 2 también pueden estar activos, lo que crea un clúster de datos activo-activo en varios centros de datos.
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ Es casi imposible predecir cuál será el modelo de concurrencia exacto después
 
 >[!NOTE]
 >
->Tough Day se puede utilizar para evaluar el rendimiento de la aplicación del cliente en el contexto de la configuración de hardware implementada. Encontrará más información sobre esta herramienta [aquí](/help/sites-developing/tough-day.md).
+>[Día difícil](/help/sites-developing/tough-day.md) se puede usar para evaluar el rendimiento de la aplicación del cliente en el contexto de la configuración de hardware implementada.
 
 Una implementación mínima con MongoDB suele incluir la siguiente topología:
 
@@ -184,9 +184,9 @@ AEM Hay disponible un conjunto de requisitos previos y recomendaciones si está 
 
 **Recomendaciones sólidas para implementaciones de MongoDB:**
 
-* Consulte el MongoDB para Adobe Experience Manager [article](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
-* Revisar la [lista de comprobación](https://docs.mongodb.org/manual/administration/production-checklist/) de producción de MongoDB;
-* Asista a una clase de certificación en MongoDB disponible en línea [aquí](https://university.mongodb.com/).
+* Consulte la [Revisión de implementación de MongoDB para Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
+* Revisar la [lista de comprobación de operaciones de MongoDB](https://docs.mongodb.org/manual/administration/production-checklist/);
+* Asista a una [clase de certificación en MongoDB - disponible en línea](https://university.mongodb.com/).
 
 >[!NOTE]
 >

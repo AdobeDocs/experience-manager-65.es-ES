@@ -10,9 +10,9 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -409,7 +409,7 @@ Es importante ejecutar la recolección de basura en las instancias del almacén 
 1. Ejecute el mantenimiento del repositorio de espera en frío como se describe en la sección [anterior](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance).
 1. Una vez completado el proceso de mantenimiento y reiniciadas las instancias:
 
-   * En el principal, ejecute la recolección de elementos no utilizados del almacén de datos mediante el Bean JMX correspondiente tal como se describe en [este artículo](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
+   * En el principal, ejecute la recolección de elementos no utilizados del almacén de datos mediante el Bean JMX correspondiente como se describe en [Ejecución de la recolección de elementos no utilizados del almacén de datos mediante la consola JMX](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
    * En espera, la recolección de elementos no utilizados del almacén de datos solo está disponible a través de **BlobGarbageCollection** MBean - `startBlobGC()`. El MBean **RepositoryManagement** no está disponible en espera.
 
    >[!NOTE]

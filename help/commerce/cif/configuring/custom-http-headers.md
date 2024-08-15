@@ -5,9 +5,9 @@ exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '272'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ Los componentes que utilizan la configuración de servicio en la nube anterior e
 
 ## Restricciones {#restrictions}
 
-Aunque el servicio permite definir cualquier nombre de encabezado, incluidos los estándar, no están disponibles para su configuración. En otras palabras, no se pueden anular los encabezados HTTP estándar con esta función. Se puede encontrar una lista de nombres de encabezados restringidos [aquí](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Además de estos, hay dos encabezados más que no se pueden utilizar:
+Aunque el servicio permite definir cualquier nombre de encabezado, incluidos los estándar, no están disponibles para su configuración. En otras palabras, no se pueden anular los encabezados HTTP estándar con esta función. Se puede encontrar una lista de nombres de encabezados restringidos en [documentos web mdn: encabezados HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Además de estos, hay dos encabezados más que no se pueden utilizar:
 
 * CIF &quot;Almacén&quot;: utilizado por los usuarios para identificar la tienda de Adobe Commerce.
 * CIF &quot;Preview-Version&quot;: utilizado por los usuarios para recuperar productos clasificados.

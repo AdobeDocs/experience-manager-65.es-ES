@@ -4,9 +4,9 @@ description: AEM Obtenga información sobre cómo configurar integraciones de IM
 feature: Security
 role: Admin
 exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
-source-git-commit: c2d996586d2ec7299e856a97ae1b744245c730bb
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '432'
 ht-degree: 63%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->Los clientes de Adobe usan [Adobe Developer Console](https://developer.adobe.com/console) para generar credenciales que habiliten el acceso a varias API. Los clientes seleccionan entre varios tipos de credenciales, que van de servidor a servidor OAuth a aplicaciones de una sola página. El tipo de credencial Cuenta de servicio (JWT) ya no se utiliza en favor de las credenciales de servidor a servidor OAuth con Service Pack 20. Este cambio se puede volver a portar a Service Packs antiguos, empezando por Service Pack 11 hasta Service Pack 20 con el uso de una revisión que puede descargar [aquí](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Los clientes de Adobe usan [Adobe Developer Console](https://developer.adobe.com/console) para generar credenciales que habiliten el acceso a varias API. Los clientes seleccionan entre varios tipos de credenciales, que van de servidor a servidor OAuth a aplicaciones de una sola página. El tipo de credencial Cuenta de servicio (JWT) ya no se utiliza en favor de las credenciales de servidor a servidor OAuth con Service Pack 20. Este cambio se puede volver a portar a Service Packs anteriores, empezando por Service Pack 11 hasta Service Pack 20 con el uso de una revisión que puede [descargar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
 Adobe Experience Manager AEM () se puede integrar con muchas otras soluciones de Adobe. Por ejemplo, Adobe Target y Adobe Analytics, entre otras.
 

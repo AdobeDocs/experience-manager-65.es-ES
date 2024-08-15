@@ -9,9 +9,9 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1264'
 ht-degree: 2%
 
 ---
@@ -112,7 +112,7 @@ Para mantener la lista a un tamaño razonable y también relevante para el caso 
 * Implemente el predicado personalizado implementando la interfaz [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Especifique un nombre para el predicado y haga referencia a ese nombre cuando use `pathbrowser`.
 
-Para obtener más información sobre cómo crear un predicado personalizado, vea [este artículo](/help/sites-developing/implementing-custom-predicate-evaluator.md).
+Para obtener más información sobre la creación de un predicado personalizado, consulte [Implementación de un evaluador de predicados personalizado para el Generador de consultas](/help/sites-developing/implementing-custom-predicate-evaluator.md).
 
 >[!NOTE]
 >

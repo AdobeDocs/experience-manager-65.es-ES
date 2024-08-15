@@ -9,10 +9,10 @@ exl-id: d77e9e39-6117-4d09-b34b-a97ab347397e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 5%
+source-wordcount: '147'
+ht-degree: 4%
 
 ---
 
@@ -22,9 +22,9 @@ El equipo de servicios de Adobe Consulting ha generado una serie de ejemplos de 
 
 AEM Un tutorial de varias partes diseñado para desarrolladores que van a empezar a trabajar de nuevo en temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas de clientes y el desarrollo de componentes: [Introducción a AEM Sites - Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
 
-AEM Hay disponible [aquí](https://github.com/adobe/aem-project-archetype) una plantilla de Maven para crear un proyecto de como punto de partida para desarrollar su propia funcionalidad.
+AEM AEM Hay disponible una plantilla de Maven para crear un proyecto de como punto de partida para desarrollar su propia funcionalidad [en GitHub - Arquetipo de proyecto](https://github.com/adobe/aem-project-archetype).
 
-Hay disponibles [aquí](/help/sites-developing/developing-components.md) ejemplos de código de interfaz de usuario estándar con capacidad táctil.
+AEM Hay disponibles ejemplos de código de IU estándar táctiles en [Desarrollar componentes de la interfaz de usuario](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >

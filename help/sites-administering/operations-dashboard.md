@@ -10,9 +10,9 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '5744'
+source-wordcount: '5743'
 ht-degree: 2%
 
 ---
@@ -507,7 +507,7 @@ También puede configurar los horarios pulsando el icono de engranaje en cualqui
 
 ### Limpieza de revisión {#revision-clean-up}
 
-Para obtener más información sobre cómo realizar la limpieza de revisión, [consulte este artículo dedicado](/help/sites-deploying/revision-cleanup.md).
+Para obtener más información, consulte [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md).
 
 ### Limpieza de archivos binarios de Lucene {#lucene-binaries-cleanup}
 
@@ -522,7 +522,7 @@ AEM Puede acceder a la tarea Limpieza de binarios de Lucene desde: **> Herramien
 
 ### Recopilación de datos almacenados desechables {#data-store-garbage-collection}
 
-Para obtener más información sobre la recolección de basura del almacén de datos, consulte la [página de documentación](/help/sites-administering/data-store-garbage-collection.md) dedicada.
+Para obtener más información sobre la recolección de elementos no utilizados del almacén de datos, consulte la página de documentación de [Recopilación de elementos no utilizados del almacén de datos](/help/sites-administering/data-store-garbage-collection.md).
 
 ### Depuración de flujo de trabajo {#workflow-purge}
 
@@ -533,7 +533,7 @@ Los flujos de trabajo también se pueden eliminar del Panel de mantenimiento. Pa
 
 >[!NOTE]
 >
->Para obtener información más detallada sobre el mantenimiento del flujo de trabajo, vea [esta página](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Para obtener información más detallada sobre el mantenimiento del flujo de trabajo, consulte [Administración de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Mantenimiento del registro de auditoría {#audit-log-maintenance}
 

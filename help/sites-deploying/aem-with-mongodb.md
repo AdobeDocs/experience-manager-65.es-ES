@@ -10,9 +10,9 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '6192'
+source-wordcount: '6216'
 ht-degree: 0%
 
 ---
@@ -488,7 +488,7 @@ Puede desactivarla siguiendo el siguiente procedimiento:
 
 >[!NOTE]
 >
->Para obtener más información sobre las páginas transparentes y enormes, consulte este [artículo](https://access.redhat.com/solutions/46111).
+>Para obtener más información sobre las páginas enormes transparentes, consulte el siguiente artículo del portal del cliente de Red Hat®: [Cómo usar, supervisar y deshabilitar las páginas enormes transparentes en Red Hat Enterprise Linux 6, 7 y 8?](https://access.redhat.com/solutions/46111).
 
 #### Deshabilitar NUMA {#disable-numa}
 

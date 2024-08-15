@@ -5,7 +5,7 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 0%
@@ -363,7 +363,7 @@ AEM SPA Para habilitar la edición dentro de los parámetros para este ejemplo, 
 
 ## Limitaciones del marco {#framework-limitations}
 
-El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como el que se encuentra [aquí](https://github.com/shellscape/webpack-manifest-plugin). Sin embargo, el componente RemotePage solo se ha probado para funcionar con el marco de React (y Next.js a través del componente remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como Angular.
+El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como [webpack-manifest-plugin en GitHub](https://github.com/shellscape/webpack-manifest-plugin). Sin embargo, el componente RemotePage solo se ha probado para funcionar con el marco de React (y Next.js a través del componente remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como Angular.
 
 ## Recursos adicionales {#additional-resources}
 

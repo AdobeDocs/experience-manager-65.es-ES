@@ -10,7 +10,7 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 1%
@@ -339,7 +339,7 @@ Para mitigar este problema, puede realizar los siguientes pasos:
 
 El servlet de descarga de recursos predeterminado permite a los usuarios autenticados emitir solicitudes de descarga simultáneas, arbitrariamente grandes para crear archivos ZIP de recursos. La creación de archivos ZIP de gran tamaño puede sobrecargar el servidor y la red. Para mitigar un posible riesgo de denegación de servicio (DoS) causado por este comportamiento, el componente OSGi `AssetDownloadServlet` está deshabilitado de forma predeterminada en la instancia de publicación [!DNL Experience Manager]. Está habilitado en la instancia de autor [!DNL Experience Manager] de manera predeterminada.
 
-Si no necesita la capacidad de descarga, deshabilite el servlet en las implementaciones de creación y publicación. Si su configuración requiere que la capacidad de descarga de recursos esté habilitada, consulte [este artículo](/help/assets/download-assets-from-aem.md) para obtener más información. Además, puede definir un límite máximo de descargas que sea compatible con la implementación.
+Si no necesita la capacidad de descarga, deshabilite el servlet en las implementaciones de creación y publicación. Si su configuración requiere que la capacidad de descarga de recursos esté habilitada, consulte [Descargar recursos desde el administrador de experiencia de Adobe](/help/assets/download-assets-from-aem.md) para obtener más información. Además, puede definir un límite máximo de descargas que sea compatible con la implementación.
 
 ### Deshabilitar WebDAV {#disable-webdav}
 
@@ -395,7 +395,7 @@ AEM De forma predeterminada, el repositorio almacena metadatos del sistema, como
 
 Al igual que todos los datos del repositorio, estas propiedades están mediados por la pila de autorización de Oak. El acceso a ellos debe restringirse de conformidad con el principio del menor privilegio.
 
-Para admitir esto, Adobe proporciona un paquete de endurecimiento de permisos como base para que los clientes se basen en él. Funciona instalando una entrada de control de acceso &quot;denegar&quot; en la raíz del repositorio, restringiendo el acceso anónimo a las propiedades del sistema más utilizadas. AEM El paquete está disponible para su descarga [aquí](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) y se puede instalar en todas las versiones compatibles de la aplicación de forma rápida y sencilla.
+Para admitir esto, Adobe proporciona un paquete de endurecimiento de permisos como base para que los clientes se basen en él. Funciona instalando una entrada de control de acceso &quot;denegar&quot; en la raíz del repositorio, restringiendo el acceso anónimo a las propiedades del sistema más utilizadas. AEM El paquete se puede [descargar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) e instalar en todas las versiones compatibles de la aplicación de la versión de la aplicación de.
 
 Para ilustrar los cambios, podemos comparar las propiedades del nodo que se pueden ver de forma anónima antes de instalar el paquete:
 

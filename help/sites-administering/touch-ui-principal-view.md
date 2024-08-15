@@ -10,9 +10,9 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Los privilegios se pueden añadir buscando en el campo de texto y seleccionando 
 
 >[!NOTE]
 >
->Para obtener una lista completa de privilegios y descripciones, consulte [esta página](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Para obtener una lista completa de privilegios y descripciones, consulte [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ![Permiso de búsqueda para una ruta de acceso determinada.](assets/image2019-3-21_0-5-47.png) ![Agregar nueva entrada para &#39;dam-users&#39; como se muestra en una ruta seleccionada en columnas verticales.](assets/image2019-3-21_0-6-53.png)
 

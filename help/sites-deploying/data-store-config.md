@@ -8,9 +8,9 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3461'
 ht-degree: 1%
 
 ---
@@ -46,11 +46,9 @@ Para configurar el almacén de nodos y el almacén de datos, realice estos pasos
 
 >[!CAUTION]
 >
->Las versiones más recientes de Oak emplean un nuevo esquema de nomenclatura y formato para los archivos de configuración OSGi. El nuevo esquema de nombres requiere que el nombre del archivo de configuración sea **.config** y el nuevo formato requiere que se escriban valores y está [documentado aquí](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>Las versiones más recientes de Oak emplean un nuevo esquema de nomenclatura y formato para los archivos de configuración OSGi. El nuevo esquema de nombres requiere que el nombre del archivo de configuración sea **.config** y que se escriban valores en el nuevo formato. Para obtener más información, consulte [El modelo de aprovisionamiento de Apache Sling y Apache SlingStart: formato de configuración predeterminado](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
 >Si actualiza desde una versión anterior de Oak, asegúrese de realizar primero una copia de seguridad de la carpeta `crx-quickstart/install`. Después de la actualización, restaure el contenido de la carpeta a la instalación actualizada y modifique la extensión de los archivos de configuración de **.cfg** a **.config**.
->
->AEM Si está leyendo este artículo como preparación para una actualización de una instalación de **.x**, asegúrese de consultar primero la documentación de [actualización](https://experienceleague.adobe.com/docs/).
 
 ### Almacén de nodos de segmentos {#segment-node-store}
 
@@ -372,7 +370,7 @@ Para configurar la replicación binaria con S3, se requieren los siguientes paso
 
    * Si usa S3 como almacén de datos, cree un archivo con el nombre `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` en la carpeta `<aem-install>/crx-quickstart/install` como se ha indicado anteriormente.
 
-1. Modifique los archivos de configuración del almacén de datos en cada instancia para que apunten al mismo almacén de datos. Para obtener más información, vea [este artículo](/help/sites-deploying/data-store-config.md#data-store-configurations).
+1. Modifique los archivos de configuración del almacén de datos en cada instancia para que apunten al mismo almacén de datos. Para obtener más información, consulte [Configuraciones del almacén de datos](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. Si la instancia se ha clonado de un servidor existente, debe quitar `clusterId` de la nueva instancia con la última herramienta oak-run mientras el repositorio está sin conexión. El comando que debe ejecutar es:
 
    ```xml

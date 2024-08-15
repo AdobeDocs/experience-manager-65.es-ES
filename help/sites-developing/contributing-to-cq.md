@@ -9,9 +9,9 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2642'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ La compatibilidad con versiones anteriores también debe tenerse en cuenta con r
 
 **Instancia de autor**: normalmente, por motivos de seguridad, gobernanza y de otro tipo, un sitio de producción divide las instancias de creación en instancias de autor y de Publish para las instancias de creación de la instancia de creación de la instancia de creación de la instancia de creación de la instancia de creación de la instancia de creación de la instancia de creación de AEM. Para obtener más información sobre la arquitectura de implementación (incluidas las instancias de autor/Publish AEM), consulte la documentación sobre instancias de.
 
-**Almacenamiento en caché, freír y hornear**: Tradicionalmente, los conceptos de hornear y freír son una distinción importante entre los distintos sistemas de administración de contenido web. En la jerga de CMS, &quot;procesamiento&quot; se refiere al concepto de comprometer datos en archivos estáticos en el momento de la publicación, mientras que &quot;freír&quot; se refiere al concepto de procesar datos para la presentación final en el momento de la solicitud (es decir, justo a tiempo).
+**Almacenamiento en caché, freír y hornear**: Tradicionalmente, los conceptos de hornear y freír son una distinción importante entre los distintos sistemas de administración de contenido web. En la jerga de CMS, &quot;procesamiento&quot; hace referencia al concepto de enviar datos a archivos estáticos en el momento de la publicación, mientras que &quot;freír&quot; hace referencia al concepto de procesar datos para la presentación final en el momento de la solicitud (es decir, justo a tiempo).
 
 **Clúster y equilibrio de carga**: para aumentar la disponibilidad y mejorar el rendimiento de un entorno de producción, es común combinar varias instancias de autor o Publish (en clústeres), poniéndolas a disposición de diferentes grupos de usuarios o equilibrándolas de carga detrás de una configuración de Dispatcher.
 
@@ -142,7 +142,7 @@ En esencia, JCR es un sistema de nodos y propiedades, en el que los nodos pueden
 
 JCR tiene varios tipos de nodos predefinidos y tipos de propiedades, pero en general el sistema de escritura es flexible, y (de hecho) una de las fortalezas de JCR es que permite almacenar/administrar contenido estructurado y no estructurado con igual facilidad. Es decir, JCR puede admitir datos altamente estructurados, pero también puede admitir estructuras de datos dinámicas arbitrarias sin restricciones de esquema.
 
-El JavaDoc para la API Java™ de JCR es [aquí](https://jackrabbit.apache.org/jcr/jcr-api.html).
+La API JavaDoc para Java™ de JCR está disponible en la [API JCR de Apache Software Foundation](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Antes de intentar leer el JavaDoc o la propia especificación JCR, es posible que quiera ver [esta explicación de alto nivel](/help/sites-developing/the-basics.md#java-content-repository) de JCR implementada por los servicios de Adobe Experience.
 

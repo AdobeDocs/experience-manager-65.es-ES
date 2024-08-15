@@ -10,9 +10,9 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3187'
 ht-degree: 4%
 
 ---
@@ -434,7 +434,7 @@ Al crear una plantilla editable, el valor se copia del tipo de plantilla en la p
 
 Si ha creado una plantilla que puede servir de base a otras plantillas, puede copiar esta plantilla como un tipo de plantilla.
 
-1. Cree una plantilla como lo haría con cualquier plantilla editable [tal como se documenta aquí](/help/sites-authoring/templates.md#creating-a-new-template-template-author), la cual puede servir como base para su tipo de plantilla.
+1. Cree una plantilla como lo haría con cualquier plantilla editable. Consulte [Creación de plantillas de página](/help/sites-authoring/templates.md#creating-a-new-template-template-author). Esto puede servir de base para el tipo de plantilla.
 1. Con el CRXDE Lite, copie la plantilla recién creada del nodo `templates` al nodo `template-types` en la [carpeta de plantillas](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Elimine la plantilla del nodo `templates` en la [carpeta de plantillas](/help/sites-developing/page-templates-editable.md#template-folders).
 1. En la copia de la plantilla que se encuentra bajo el nodo `template-types`, elimine todas las propiedades `cq:template` y `cq:templateType` de todos los nodos `jcr:content`.
