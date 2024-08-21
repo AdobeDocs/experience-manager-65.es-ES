@@ -9,24 +9,28 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
 
 # Activar el inicio de sesión único en AEM Forms{#enabling-single-sign-on-in-aem-forms}
 
-AEM Los formularios de ofrecen dos formas de habilitar el inicio de sesión único (SSO): encabezados HTTP y SPNEGO.
+AEM Los formularios de proporcionan dos formas de habilitar el inicio de sesión único (SSO): encabezados HTTP y SPNEGO.
 
 AEM Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios de la no son necesarias y no aparecen si el usuario ya se ha autenticado a través del portal de su empresa.
 
 AEM Si los formularios no pueden autenticar a un usuario mediante cualquiera de estos métodos, se redirigirá al usuario a una página de inicio de sesión.
 
+* [Habilitar SSO mediante encabezados HTTP](#enable-sso-using-http-headers)
+* [Habilitar SSO con SPNEGO](#enable-sso-using-spnego)
+* [Asignar funciones a usuarios y grupos](#assign-roles-to-users-groups)
+
 ## Habilitar SSO mediante encabezados HTTP {#enable-sso-using-http-headers}
 
-Puede utilizar la página Configuración de portal para habilitar el inicio de sesión único (SSO) entre aplicaciones y cualquier aplicación que admita la transmisión de la identidad a través del encabezado HTTP. AEM Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios de la no son necesarias y no aparecen si el usuario ya se ha autenticado a través del portal de su empresa.
+Puede utilizar la página Configuración de portal para habilitar el inicio de sesión único (SSO) entre aplicaciones y cualquier aplicación que admita la transmisión de la identidad a través de un encabezado HTTP. AEM Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios de la no son necesarias y no aparecen si el usuario ya se ha autenticado a través del portal de su empresa.
 
 También puede habilitar SSO mediante SPNEGO. (Consulte [Habilitar SSO con SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego)).
 
@@ -52,6 +56,10 @@ También puede habilitar SSO mediante SPNEGO. (Consulte [Habilitar SSO con SPNEG
 
 Para ver los pasos para configurar los referentes permitidos, consulte [Configurar referentes permitidos](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
 
+### Asignar funciones a usuarios y grupos
+
+Haga clic para conocer los pasos para [asignar funciones a usuarios y grupos](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
+
 ## Habilitar SSO con SPNEGO {#enable-sso-using-spnego}
 
 Puede utilizar el Mecanismo de negociación de GSSAPI simple y protegido (SPNEGO) para habilitar el inicio de sesión único (SSO) al usar Active Directory como servidor LDAP en un entorno de Windows. AEM Cuando se habilita el SSO, las páginas de inicio de sesión del usuario de formularios de la forma en que se ha creado no son obligatorias y no aparecen.
@@ -60,7 +68,7 @@ También puede habilitar SSO utilizando encabezados HTTP. (Consulte [Habilitar S
 
 >[!NOTE]
 >
->AEM Forms en JEE no admite la configuración de SSO mediante Kerberos/SPNEGO en varios entornos de dominio secundarios
+>AEM Forms en JEE no admite la configuración de SSO mediante Kerberos/SPNEGO en varios entornos de dominio secundarios.
 
 1. Decida qué dominio desea utilizar para habilitar SSO. AEM Forms Server y los usuarios deben formar parte del mismo dominio de Windows o dominio de confianza.
 1. En Active Directory, cree un usuario que represente al servidor de AEM Forms. (Consulte [Crear una cuenta de usuario](enabling-single-sign-on-aem.md#create-a-user-account).) Si está configurando más de un dominio para utilizar SPNEGO, asegúrese de que las contraseñas de cada uno de estos usuarios sean diferentes. Si las contraseñas no son diferentes, SPNEGO SSO no funciona.
@@ -167,3 +175,21 @@ Si se obtiene acceso al servidor mediante el nombre del equipo, como https://lcs
    `lcserver.um.lc.com`: configura Firefox para permitir SPNEGO solo para su servidor específico. No empiece este valor con un punto (&quot;.&quot;).
 
 1. Pruebe la configuración accediendo a la aplicación. Debe aparecer la página de bienvenida de la aplicación de destino.
+
+Haga clic para conocer los pasos para [asignar funciones a usuarios y grupos](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
+
+## Asignar funciones a usuarios y grupos {#assign-roles-to-users-groups}
+
+1. Inicie sesión en AEM Forms en el entorno JEE.
+1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
+1. Seleccione la configuración de su dominio, por ejemplo, LDAP, y haga clic en él. Encontrará todos los usuarios y grupos creados en el Directorio. Si es necesario, puede crear nuevos usuarios o grupos.
+   ![Página de administración de dominios](/help/forms/using/assets/domain-mgmt-page.png)
+1. Haga clic en Autenticación. En la nueva página, seleccione un proveedor de autenticación, como LDAP.
+1. AEM Vaya a la página Administración de dominios, seleccione y haga clic en **Sincronizar ahora** para sincronizar el directorio con el esquema de autenticación configurado para el acceso a LDAP, por ejemplo, para obtener acceso a LDAP.
+   ![Sincronizar ldap](/help/forms/using/assets/sync-ldap.png)
+1. Vaya a Administración de usuarios y haga clic en Usuarios y grupos.
+1. Busque usuarios o grupos con sus nombres, como se muestra en la siguiente imagen.
+   ![Buscar grupo de usuarios](/help/forms/using/assets/search-user-group.png)
+1. Asigne las funciones a los usuarios o grupos según sea necesario.
+   ![Asignación de funciones de usuario](/help/forms/using/assets/user-role-assign.png)
+
