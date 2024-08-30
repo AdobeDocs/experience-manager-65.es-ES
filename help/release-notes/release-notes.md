@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
+source-git-commit: 1fa3a56d2868cad0e1b54bf3fe1b018061b4b7a8
 workflow-type: tm+mt
-source-wordcount: '4390'
+source-wordcount: '4394'
 ht-degree: 2%
 
 ---
@@ -544,7 +544,7 @@ Para garantizar el funcionamiento correcto, debe agregar las siguientes propieda
 
 * Después de actualizar a AEM Forms Service Pack 6.5.21.0, el servicio `PaperCapture` no puede realizar operaciones de reconocimiento óptico de caracteres (OCR) en los PDF. El servicio no genera resultados en forma de PDF o archivo de registro. Para descargar e instalar la revisión, consulte el artículo [Revisiones de Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
 
-* Cuando los usuarios actualizan de los paquetes de servicio 18 (6.5.18.0) o 19 (6.5.19.0) de Forms AEM 6.5 a los paquetes de servicio 20 (6.5.20.0) o 21 (6.5.21.0) de Forms AEM Forms AEM AEM Forms AEM 6.5 o el paquete de servicio 21 (6.5.21.0) de AEM 6.5, se encuentran con un error de compilación de JSP, que les impide abrir o crear formularios adaptables y también causa errores con otras interfaces como el editor de página, Forms AEM UI y el editor de flujo de flujo de trabajo de flujo de trabajo de usuario de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de los usuarios de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de la actualización de (FORMS-15256)
+* Cuando los usuarios actualizan del paquete de servicio 18 (6.5.18.0) o el paquete de servicio 19 (6.5.19.0) de Forms AEM 6.5 al paquete de servicio 20 (6.5.20.0) de Forms AEM 6.5 o el paquete de servicio 21 (6.5.21.0) de Forms AEM AEM Forms AEM AEM 6.5, se encuentran con un error de compilación de JSP, que les impide abrir o crear formularios adaptables y también causa errores con otras interfaces como el editor de páginas, la interfaz de usuario de AEM Forms AEM, el editor de flujo de trabajo de flujos de trabajo de trabajo de usuarios y los usuarios de. (FORMS-15256)
 
   Si tiene un problema de este tipo, realice los siguientes pasos para resolverlo:
    1. Vaya al directorio `/libs/fd/aemforms/install/` en CRXDE.
