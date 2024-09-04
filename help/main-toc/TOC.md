@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
+source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
 workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 67%
@@ -620,7 +620,6 @@ ht-degree: 67%
       + [Crear un formulario adaptable basado en componentes principales](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Crear y utilizar fragmentos de Formularios adaptables en un formulario adaptable](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [Crear temáticas para componentes principales basados en Forms adaptable](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-      + [Crear y utilizar una función personalizada en un formulario adaptable](/help/forms/using/create-and-use-custom-functions.md)
       + [Editor de reglas](/help/forms/using/rule-editor-core-components.md)
       + [Crear y utilizar una función personalizada en componentes principales de un formulario adaptable](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Cree y utilice un controlador de error personalizado para componentes principales basados en Forms adaptable](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -677,6 +676,7 @@ ht-degree: 67%
       + [Integrar Adobe Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [Crear y administrar revisiones para recursos de formularios](/help/forms/using/create-reviews-forms.md)
       + [Incrustar un formulario adaptable o una comunicación interactiva en una aplicación de una sola página de AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+      + [Crear y utilizar una función personalizada en un formulario adaptable](/help/forms/using/create-and-use-custom-functions.md)
       + [Crear y utilizar el controlador de error personalizado para Forms adaptable](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
    + Comunicaciones interactivas {#interactive-communications}
       + [Introducción a la IU de creación de una comunicación interactiva](/help/forms/using/introduction-interactive-communication-authoring.md)
@@ -1272,7 +1272,7 @@ ht-degree: 67%
       + [Cómo acceder al contenido a través de las API de entrega de AEM](/help/journey-headless/developer/access-your-content.md)
       + [Actualización del contenido mediante las API de AEM Assets](/help/journey-headless/developer/update-your-content.md)
       + [Cómo ponerlo todo junto](/help/journey-headless/developer/put-it-all-together.md)
-      + [Publicación de la aplicación sin encabezado](/help/journey-headless/developer/go-live.md)
+      + [Cómo hacer un lanzamiento con su aplicación sin encabezado](/help/journey-headless/developer/go-live.md)
       + [Opcional: cómo crear aplicaciones de una sola página con AEM](/help/journey-headless/developer/create-spa.md)
    + Recorrido de arquitecto de contenido de AEM Headless {#architect}
       + [Información general sobre el Recorrido de arquitecto de contenido de AEM Headless](/help/journey-headless/architect/overview.md)
@@ -1568,7 +1568,7 @@ ht-degree: 67%
          + [Casos de uso de indexación Oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Solución de problemas de índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [Inclusión En La Recopilación De Estadísticas De Uso Agregadas](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
-         + [Resolución de problemas](/help/sites-deploying/troubleshooting.md)
+         + [Solución de problemas](/help/sites-deploying/troubleshooting.md)
       + AEM Configuración de la {#configuring}
          + [Conceptos básicos de configuración](/help/sites-deploying/configuring.md)
          + [Registro](/help/sites-deploying/configure-logging.md)

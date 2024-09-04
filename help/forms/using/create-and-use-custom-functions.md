@@ -1,26 +1,16 @@
 ---
 title: Crear y agregar funciones personalizadas en un formulario adaptable
 description: AEM Forms admite funciones personalizadas que permiten a los usuarios crear y utilizar sus propias funciones dentro del editor de reglas.
-keywords: Agregar una función personalizada, utilizar una función personalizada, crear una función personalizada, utilizar una función personalizada en el editor de reglas.
-contentOwner: Ruchita Srivastav
-content-type: reference
-feature: Adaptive Forms,Core Components
-exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
+feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: f63dcd7edca640cee47c8f615d1675ef5052953c
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1084'
 ht-degree: 38%
 
 ---
 
-
-# Funciones personalizadas en Forms adaptable (componentes principales)
-
-| Versión | Vínculo del artículo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
-| AEM 6.5 | Este artículo |
+# Funciones personalizadas en el Forms adaptable
 
 ## Introducción
 
