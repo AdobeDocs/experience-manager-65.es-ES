@@ -5,9 +5,9 @@ exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 9eeba0532a9eddb668b8488218c0570ca2241439
+source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -89,8 +89,6 @@ El espacio en disco necesario depende en gran medida del volumen y del tipo de l
 * el crecimiento general del contenido con el tiempo
 
 El espacio en disco se supervisa continuamente durante la Limpieza de revisiones en línea y sin conexión. Si el espacio disponible en disco cae por debajo de un valor crítico, el proceso se cancela. El valor crítico es el 25 % del espacio en disco actual del repositorio y no se puede configurar. Adobe recomienda dimensionar el disco al menos dos o tres veces más grande que el tamaño del repositorio, incluido el crecimiento estimado.
-
-Considere una configuración de matrices redundantes de discos independientes (RAID, por ejemplo, RAID10) para la redundancia de datos.
 
 ### Virtualización {#virtualization}
 
