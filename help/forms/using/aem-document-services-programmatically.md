@@ -8,9 +8,9 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 60414285277281d9b1e0c9d93ddf04bc267fd0fb
 workflow-type: tm+mt
-source-wordcount: '6409'
+source-wordcount: '6388'
 ht-degree: 94%
 
 ---
@@ -5069,24 +5069,26 @@ La API del PDF de etiquetas automático ayuda a que un documento del PDF sea acc
 
 ![Documento de PDF etiquetado automáticamente](assets/auto-tag-api.png)
 
-**Sintaxis**: `tag(Document inDoc)`
+<!--
 
-**Parámetros de entrada**
+**Syntax**: `tag(Document inDoc)`
+
+**Input Parameters**
 
 <table>
  <tbody>
   <tr>
-   <th>Parámetros</th>
-   <th>Descripción</th>
+   <th>Parameters</th>
+   <th>Description</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>Objeto de documento que contiene el PDF.<br /> </td>
+   <td>Document object containing PDF.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-El siguiente código Java etiqueta el documento del PDF con listas y párrafos.
+The following Java code tags the PDF document with lists and paragraphs.
 
 ```java
 /*************************************************************************
@@ -5167,4 +5169,6 @@ StructLib.AutoTagDoc(outDoc);
 }
         return outDoc;
 }
+
 ```
+-->
