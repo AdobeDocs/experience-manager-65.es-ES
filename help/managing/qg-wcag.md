@@ -5,10 +5,10 @@ exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 92%
+source-wordcount: '1744'
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,9 @@ Las [Directrices de accesibilidad al contenido web (WCAG) versión 2.1](https://
 
 >[!NOTE]
 >
->Actualmente se está desarrollando una [versión actualizada de las directrices, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) pero no se examinará en este momento.
+>Dado que estos documentos se escribieron en la [versión actualizada de las directrices, WCAG 2.2](https://www.w3.org/TR/) se publicó en octubre de 2023.
+>
+>Ver [Comparación con WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1) y [Nuevas características de WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2).
 
 WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo más accesibles posible para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, discapacidad visual, pérdida de audición, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
 
