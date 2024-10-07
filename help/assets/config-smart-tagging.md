@@ -5,7 +5,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: fed35f2b90e2b8fd9e7240abf3b25e3650fa31c2
+source-git-commit: 6729a2dbd8c761eb1bba84d8efba7393ac686190
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 18%
@@ -21,7 +21,7 @@ Antes de empezar a etiquetar recursos usando Smart Content Services, integre [!D
 >* Smart Content Services ya no está disponible para los nuevos clientes locales de [!DNL Experience Manager Assets]. Los clientes locales existentes, que ya tienen esta capacidad habilitada, pueden seguir utilizando los servicios de contenido inteligente.
 >* Servicios de contenido inteligente disponible para los clientes existentes de Managed Services [!DNL Experience Manager Assets], que ya tienen esta capacidad habilitada.
 >* Los nuevos clientes de Experience Manager Assets Managed Services pueden seguir las instrucciones que se mencionan en este artículo para configurar Smart Content Services.
->* Para Service Pack 20 y versiones anteriores, debe realizar los pasos de la solución para que SCS admita la integración con Oauth. Consulte [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](#config-smart-tagging.md).
+>* Para Service Pack 20 y versiones anteriores, debe realizar los pasos de la solución para que SCS admita la integración con Oauth. Consulte [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-oauth.md).
 >* Para admitir la integración de Oauth en Service Pack 21, debe instalar la [revisión para SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip).
 >* Para la configuración de SCS existente, el proceso es el mismo que configurar una nueva integración de OAuth. Cualquier configuración heredada se limpiará automáticamente.
 
