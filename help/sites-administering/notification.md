@@ -9,9 +9,9 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2141'
 ht-degree: 9%
 
 ---
@@ -299,8 +299,15 @@ En primer lugar, configure el Servicio de correo:
 
 A continuación, configure su proveedor de OAuth de SMTP siguiendo el procedimiento a continuación:
 
+>[!WARNING]
+>
+>Si, después de completar esta configuración, alguna vez cambia *cualquiera* de los valores de la configuración OSGi **Proveedor OAuth2 SMTP de CQ Mailer**, debe volver a autorizar siguiendo estos pasos.
+>
+>Si no se llevan a cabo, el token de acceso almacenado en `/conf/global/settings/mailer/oauth` no será válido y la conexión OAuth2 al servidor SMTP fallará.
+
 1. AEM Para abrir la consola web de la, vaya a `http://serveraddress:serverport/system/console/configMgr`
 1. Busque y luego haga clic en **Proveedor OAuth2 de SMTP de CQ Mailer**
+
 1. Rellene la información necesaria de la siguiente manera:
    * URL de autorización: `https://accounts.google.com/o/oauth2/auth`
    * URL de token: `https://accounts.google.com/o/oauth2/token`
@@ -371,6 +378,12 @@ AEM Para recapitular, debe tener la siguiente información para configurar OAuth
 AEM **Configuraciones del lado del**
 
 AEM A continuación, integre la configuración de OAuth2 con las siguientes opciones de configuración:
+
+>[!WARNING]
+>
+>Si, después de completar esta configuración, alguna vez cambia *cualquiera* de los valores de la configuración OSGi **Proveedor OAuth2 SMTP de CQ Mailer**, debe volver a autorizar siguiendo estos pasos.
+>
+>Si no se llevan a cabo, el token de acceso almacenado en `/conf/global/settings/mailer/oauth` no será válido y la conexión OAuth2 al servidor SMTP fallará.
 
 1. Vaya a la consola web de su instancia local explorando `http://serveraddress:serverport/system/console/configMgr`
 1. Busque y haga clic en **Servicio Day CQ Mail**
