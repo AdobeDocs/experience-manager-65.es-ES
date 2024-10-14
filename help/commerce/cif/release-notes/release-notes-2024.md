@@ -5,9 +5,9 @@ exl-id: 372e6a46-72bb-4db4-ad01-534ca723ae58
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 573057b8e4c01b1c14f8c66b3da7b44e9d857760
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '148'
 ht-degree: 12%
 
 ---
@@ -20,9 +20,20 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 | Componente | Requisitos del sistema |
 |:-------|:-----------------------------------------------------------------------------------------------:|
-| CIF complemento de | AEM Mínimo: 6.5.8, Adobe Commerce 2.3.5 Esquemas de GraphQL |
+| CIF complemento de | AEM Mínimo: 6.5.18, Adobe Commerce 2.3.5 Esquemas de GraphQL |
 | CIF Componentes principales | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Tipo de archivo del proyecto AEM | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Fecha de versión: octubre de 2024
+
+| Componente | Versión | Detalles |
+|:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
+| CIF Componentes principales | 2.15.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.15.0) |
+
+### Corrección de errores {#bug-fixes-October}
+
+* CIF Se han corregido las pruebas de interfaz de usuario para que funcionen correctamente con los componentes principales de.
+* Se ha resuelto un problema con el formato de URL de categoría que no funcionaba como se esperaba en la instancia de nube.
 
 ## Fecha de versión: enero de 2024
 
