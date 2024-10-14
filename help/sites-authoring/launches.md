@@ -10,7 +10,7 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 77%
@@ -107,8 +107,7 @@ Los lanzamientos le permiten:
 >
 >Cuando se promocione la página, se reflejarán los cambios de contenido, pero las posiciones de los componentes no cambiarán.
 
-
-### La consola Lanzamientos {#the-launches-console}
+## La consola Lanzamientos {#the-launches-console}
 
 La consola Lanzamientos proporciona una descripción general de los lanzamientos y le permite realizar acciones con los enumerados. Se puede acceder a la consola desde: 
 
