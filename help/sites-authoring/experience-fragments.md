@@ -5,7 +5,7 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 71%
@@ -31,7 +31,7 @@ Un fragmento de experiencia:
 
 Puede utilizar los fragmentos de experiencias:
 
-* Si un autor desea reutilizar partes (un fragmento de una experiencia) de una página, debe copiar y pegar ese fragmento. Crear y mantener estas experiencias de copia y pegado es un proceso laborioso y es posible que el usuario cometa errores. Los fragmentos de experiencias eliminan la necesidad de copiar y pegar.
+* Si un autor desea reutilizar partes de una página (un fragmento de una experiencia), debe copiar y pegar ese fragmento. Crear y mantener estas experiencias de copia y pegado es un proceso laborioso y es posible que el usuario cometa errores. Los fragmentos de experiencias eliminan la necesidad de copiar y pegar.
 * Para admitir el caso práctico de CMS sin encabezado. Los autores quieren utilizar AEM solo para la creación, pero no para la entrega al cliente. Un punto de contacto o sistema de terceros consumiría esa experiencia y luego la entregaría al usuario final.
 * Con [Multi Site Management (MSM)](/help/sites-administering/msm.md); como fragmento de experiencia forma parte de una página. Esto se aplica tanto a los fragmentos individuales como a las carpetas en las que residen.
 
