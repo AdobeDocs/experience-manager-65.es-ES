@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2d6b0129d28dba954f9854c641386c4c2ad32765
+source-git-commit: 7fb3ec9654b56605321f0d12a4c1e23d2e18dab9
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3322'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Smart Imaging aplica las características de visualización únicas de cada usuario para ofrecer las imágenes adecuadas optimizadas automáticamente para su experiencia, lo que resulta en un mejor rendimiento y participación.
 
-## ¿Qué es &quot;Imágenes inteligentes&quot;? {#what-is-smart-imaging}
+## Acerca de las imágenes inteligentes {#what-is-smart-imaging}
 
 La tecnología de imágenes inteligentes aplica las capacidades de IA de Adobe Sensei y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes. Funciona para mejorar el rendimiento de la entrega de imágenes al optimizar automáticamente el formato, el tamaño y la calidad de la imagen en función de las capacidades del explorador del cliente.
 
@@ -136,7 +136,7 @@ Los valores de RGPD y ancho de banda de red se basan en los valores detectados d
 * Anteriormente, tanto las imágenes originales como las derivadas se almacenaban en caché y se realizó un proceso de 2 pasos para invalidar la caché. En la última versión de imágenes inteligentes, solo se almacenan en caché los derivados, lo que permite un proceso de invalidación de la caché de un solo paso.
 * Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de la última versión de imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Tiempo permitido para el origen&quot; y &quot;X-Robot&quot; como se sugiere en [Agregar un valor de encabezado personalizado a las respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Preguntas frecuentes {#fag}
+## Preguntas frecuentes
 
 +++¿Hay algún coste de licencia asociado a las imágenes inteligentes?
 
