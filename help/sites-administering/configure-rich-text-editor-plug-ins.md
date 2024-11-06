@@ -6,7 +6,7 @@ exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 2%
@@ -244,7 +244,7 @@ A continuación, especifique las ubicaciones de las hojas de estilo a las que de
 
 >[!NOTE]
 >
->Cuando utilice RTE en un cuadro de diálogo (IU clásica), es posible que desee especificar hojas de estilo optimizadas para la edición de texto enriquecido. Debido a restricciones técnicas, el contexto CSS se pierde en el editor, por lo que es posible que desee emular este contexto para mejorar la experiencia WYSIWYG.
+>Cuando utilice RTE en un cuadro de diálogo (IU clásica), es posible que desee especificar hojas de estilo optimizadas para la edición de texto enriquecido. Debido a restricciones técnicas, el contexto CSS se pierde en el editor, por lo que es posible que desee emular este contexto para mejorar la experiencia de WYSIWYG.
 >
 >El Editor de texto enriquecido utiliza un elemento DOM contenedor con un identificador de `CQrte` que se puede utilizar para proporcionar diferentes estilos de visualización y edición:
 >
@@ -391,7 +391,7 @@ Los formatos de párrafo podrán ser seleccionados por:
 
    * **Nombre** `description`
    * **Tipo** `String`
-   * **Valor** Texto descriptivo para este formato; por ejemplo, Párrafo, Encabezado 1, Encabezado 2. Este texto se muestra en la lista de selección Formato.
+   * **Valor** Texto descriptivo para este formato; por ejemplo, Párrafo, Encabezado 1, Encabezado 2. Este texto se muestra en el lista de selección Formato.
 
 1. Guarde los cambios.
 
@@ -403,9 +403,9 @@ Si define formatos personalizados, se quitarán los formatos predeterminados (`<
 
 ## Configuración de caracteres especiales {#spchar}
 
-AEM En una instalación estándar de la, cuando el complemento `misctools` está habilitado para caracteres especiales (`specialchars`), una selección predeterminada está disponible inmediatamente para su uso; por ejemplo, los símbolos de copyright y marca comercial.
+En una instalación de AEM estándar, cuando el plug-in está habilitado para caracteres `misctools` especiales (`specialchars`), una selección predeterminada está disponible inmediatamente para su uso; por ejemplo, los símbolos de copyright y marca registrada.
 
-Puede configurar el RTE para que su propia selección de caracteres esté disponible; ya sea definiendo caracteres distintos o una secuencia completa.
+Puede configurar el RTE para que su propia selección de caracteres esté disponible; ya sea definiendo personajes distintos o una Secuencia completa.
 
 >[!CAUTION]
 >
@@ -489,8 +489,8 @@ Puede definir estilos para tablas y celdas solo para la IU clásica.
 >
 La copia y el pegado de tablas en o desde el componente RTE depende del explorador. No es compatible de serie con todos los exploradores. Puede obtener resultados variados según la estructura de la tabla y el explorador. Por ejemplo, cuando copia y pega una tabla en un componente RTE en Mozilla Firefox en la IU clásica y la IU táctil, el diseño de la tabla no se conserva.
 
-1. Dentro del componente, vaya al nodo `<rtePlugins-node>/table`. Cree los nodos si no existen. Para obtener más información, consulte [activar un complemento](#activateplugin).
-1. Cree la propiedad `features` en el nodo `table`:
+1. Dentro del componente, desplácese hasta el nodo `<rtePlugins-node>/table`. Crear los nodos si éstos no existen. Para obtener más información, consulte [Activar una plug-in](#activateplugin).
+1. Crear el `features` Propiedad del `table` nodo:
 
    * **Nombre** `features`
    * **Tipo** `String`
@@ -502,8 +502,8 @@ La copia y el pegado de tablas en o desde el componente RTE depende del explorad
    >
    * **Tipo** `String[]`
    >
-   * **Valor** uno o ambos de los siguientes, según sea necesario:
-   * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
+   * **** Valor una, o ambas, de las siguientes opciones, según sea necesario:
+   * `table` para permitir la edición de las propiedades de la tabla; incluyendo los estilos.
    * `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
 
 1. Defina la ubicación de las hojas de estilos CSS para que pueda hacer referencia a ellas. Consulte [Especificación de la ubicación de la hoja de estilos](#locationofstylesheet), ya que es lo mismo que al definir [estilos para texto](#textstyles). La ubicación puede definirse si ha definido otros estilos.
@@ -581,9 +581,9 @@ AEM Una instalación estándar de la incluye los diccionarios de inglés america
 
    >[!CAUTION]
    >
-   Solo se admiten diccionarios con el formato `MySpell` para OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda verificarlos después de la descarga.
+   Solo se admiten los diccionarios de la `MySpell` formato para OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda que verifique el archivo después de la descarga.
 
-1. Busque los archivos `.aff` y `.dic`. Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
+1. Busque los `.aff` archivos and `.dic` . Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
 1. Cargue los archivos `.aff` y `.dic` en el repositorio en `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
@@ -592,9 +592,9 @@ El corrector ortográfico RTE está disponible bajo demanda. No se ejecuta autom
 >
 Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambia y las palabras mal escritas dejan de resaltarse. Para ejecutar el corrector ortográfico, vuelva a hacer clic en el botón Corrector ortográfico.
 
-## Configuración del tamaño del historial para acciones de deshacer y rehacer {#undohistory}
+## Configure el tamaño del historial para las acciones de deshacer y rehacer {#undohistory}
 
-RTE permite a los autores deshacer o rehacer algunas ediciones últimas. De forma predeterminada, se almacenan 50 ediciones en el historial. Puede configurar este valor según sea necesario.
+RTE permite a los autores deshacer o rehacer algunas ediciones posteriores. De forma predeterminada, se almacenan 50 ediciones en el historial. Puede configurar este valor según sea necesario.
 
 1. Dentro del componente, vaya al nodo `<rtePlugins-node>/undo`. Cree estos nodos si no existen. Para obtener más información, consulte [activar un complemento](#activateplugin).
 1. En el nodo `undo`, cree la propiedad:
@@ -678,7 +678,7 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
    * **Tipo** `String`
    * **Valor** `richtext`
    >
-   La ubicación del nodo `../items/text` puede variar, según la estructura del cuadro de diálogo; dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
+   La ubicación de la `../items/text` nodo puede variar, dependiendo de la estructura del diálogo; dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. En `htmlRules`, cree un nodo.
 
@@ -691,7 +691,7 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
 
       * **Nombre** `cssInternal`
       * **Tipo** `String`
-      * **Valor** es el nombre de la clase CSS (sin &#39;.&#39; anterior; por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **** Valor el nombre de la clase CSS (sin &#39;.&#39;; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
    * Estilo CSS para vínculos externos
 
@@ -721,7 +721,7 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
       * Especifique el modo de destino:
 
          * **Nombre** `mode`
-         * **Tipo** `String`)
+         * **Tipo** `String`
          * **Valor**
 
             * `auto`: significa que se elige un destino automático
