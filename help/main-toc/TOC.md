@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
+source-git-commit: 717c9ae2d6b0552ca5c6386247ef7504dc9785e9
 workflow-type: tm+mt
-source-wordcount: '7448'
+source-wordcount: '7450'
 ht-degree: 67%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 67%
 + Notas de la versión {#release-notes}
    + [Notas de la versión](/help/release-notes/release-notes.md)
    + Notas de la versión anterior {#service-pack}
+      + [6.5.21](/help/release-notes/previous/6-5-21.md)
       + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
@@ -337,7 +338,7 @@ ht-degree: 67%
          + [Añadir Dynamic Media Assets a las páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [Añadir funciones de Scene7 a la página](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
          + [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
-         + [Trabajo con Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
+         + [Trabajar con Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [Convenciones de nomenclatura para pruebas de recursos](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + Assets {#assets}
    + [Acerca de DAM](/help/assets/assets.md)
@@ -361,7 +362,7 @@ ht-degree: 67%
    + Dynamic Media{#dynamic}
       + [Archivo de newsletter por Experience League](/help/assets/dynamic-media-newsletter.md)
       + [Configuración de Dynamic Media](/help/assets/administering-dynamic-media.md)
-      + [Trabajo con Dynamic Media](/help/assets/dynamic-media.md)
+      + [Trabajar con Dynamic Media](/help/assets/dynamic-media.md)
       + [Configuración de Dynamic Media: modo Scene7](/help/assets/config-dms7.md)
       + [Opcional: configuración de Dynamic Media, modo Scene7, configuración general](/help/assets/dm-general-settings.md)
       + [Opcional: configuración de Dynamic Media, modo Scene7, configuración de Publish](/help/assets/dm-publish-settings.md)
