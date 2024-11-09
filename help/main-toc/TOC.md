@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 717c9ae2d6b0552ca5c6386247ef7504dc9785e9
+source-git-commit: 472fc1fee44681b77ad0b9e883ca9aaf136e0e85
 workflow-type: tm+mt
-source-wordcount: '7450'
+source-wordcount: '7454'
 ht-degree: 67%
 
 ---
@@ -1424,6 +1424,8 @@ ht-degree: 67%
             + [Actualización de los fragmentos de contenido para el filtrado optimizado de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
             + [Autenticación para consultas de AEM de GraphQL remotas en fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html)
             + [API de GraphQL de AEM con fragmentos de contenido: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html)
+         + El editor universal {#universal-editor}
+            + [Introducción](/help/sites-developing/universal-editor/introduction.md)
       + SPA AEM Desarrollo híbrido y de {#spas}
          + [Híbrido y SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Introducción y tutorial de SPA](/help/sites-developing/spa-walkthrough.md)
