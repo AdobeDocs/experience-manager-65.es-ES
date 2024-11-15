@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User,Developer
 exl-id: c58a3cfd-6348-4a2e-996a-5fdb96415adb
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '117'
+ht-degree: 70%
 
 ---
 
 # Previsualización: representación JSON {#preview-json-representation}
 
-Al desarrollar los modelos para fragmentos de contenido como parte de su implementación sin encabezado de AEM, es posible que desee ver la salida JSON de muestra para un fragmento de contenido, según un modelo. Por ejemplo, para hacerse una idea del aspecto que tendrá el resultado final. Esto podría resultar útil al validar la estructura JSON del modelo, quizá con contenido de muestra predeterminado por tipo de datos.
+AEM Al desarrollar los modelos para fragmentos de contenido como parte de su implementación sin encabezado de, puede utilizar el editor de fragmentos de contenido para ver la salida JSON de muestra para un fragmento de contenido, según un modelo. Por ejemplo, para hacerse una idea del aspecto que tendrá el resultado final. Esto podría resultar útil al validar la estructura JSON del modelo, quizá con contenido de muestra predeterminado por tipo de datos.
 
 Uso del icono **Previsualizar**:
 
