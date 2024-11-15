@@ -3,9 +3,10 @@ title: El editor universal
 description: AEM Obtenga información acerca de la flexibilidad del editor universal y cómo puede ayudarle a potenciar sus experiencias sin encabezado mediante el uso de la versión 6.5 de.
 feature: Developing
 role: Developer
-source-git-commit: a088fcb3069fae7e63c7238710534d817a308eff
+exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
+source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -46,17 +47,17 @@ Una vez completada la configuración, puede [instrumentar sus aplicaciones para 
 
 ### AEM Actualización de {#update-aem}
 
-AEM AEM Se requieren el Service Pack 21 y un paquete de funciones para la para poder utilizar el editor universal con 6.5.
+AEM AEM Se requieren los Service Pack 21 o 22 y un paquete de funciones para el uso de la versión del editor universal con la versión 6.5 de.
 
 #### Aplicar el paquete de servicio más reciente {#latest}
 
-AEM Asegúrese de que está ejecutando al menos el Service Pack 21 para la versión 6.5 de la versión de la aplicación de. Puede descargar el Service Pack más reciente desde [Distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
+AEM Asegúrese de que está ejecutando al menos el Service Pack 21 o 22 para la versión 6.5 de la versión de la aplicación de la versión 3.00000000000000000000000000000000000000000000000. Puede descargar el Service Pack más reciente desde [Distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
 
 #### Instalación del paquete de funciones del editor universal {#feature-pack}
 
 AEM Instale el paquete de funciones del editor universal **para la versión 6.5** [disponible en la distribución de software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
-Si ya está ejecutando el Service Pack 23 o superior, este paso no es necesario.
+Si ya está ejecutando el Service Pack 23 o superior, el paquete de funciones no es necesario.
 
 ### Configurar servicios {#configure-services}
 
