@@ -9,10 +9,10 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
+source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
 workflow-type: tm+mt
-source-wordcount: '2141'
-ht-degree: 9%
+source-wordcount: '2149'
+ht-degree: 8%
 
 ---
 
@@ -119,9 +119,11 @@ This is an automatically generated message. Please do not reply.
 
 Para personalizar la plantilla de correo electrónico en inglés para la notificación de página:
 
-1. En CRXDE, abra el archivo:
+1. Crear una superposición para [notificaciones de página](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
 
-   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
+1. Abra el archivo:
+
+   `en.txt`
 
 1. Modifique el archivo según sus necesidades.
 1. Guarde los cambios.
@@ -181,9 +183,11 @@ This is an automatically generated message. Please do not reply.
 
 Para personalizar la plantilla de correo electrónico en inglés para la notificación de eventos de flujo de trabajo:
 
-1. En CRXDE, abra el archivo:
+1. Crear una superposición para [notificaciones de flujo de trabajo](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
-   `/libs/settings/workflow/notification/email/default/en.txt`
+1. Abra el archivo:
+
+   `en.txt`
 
 1. Modifique el archivo según sus necesidades.
 1. Guarde los cambios.
@@ -239,11 +243,12 @@ Se pueden utilizar las siguientes variables dentro de la plantilla de correo ele
 
 Para añadir una plantilla para un nuevo idioma:
 
-1. En CRXDE, agregue el archivo `<language-code>.txt` siguiente:
+1. Cree una [superposición](/help/sites-developing/overlays.md) según corresponda.
 
-   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : para notificaciones de página
-   * `/libs/settings/workflow/notification/email/default` : para notificaciones de flujo de trabajo
+   * [Notificaciones de página](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+   * [Notificaciones de flujo de trabajo](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
+1. Agregar un archivo `<language-code>.txt`.
 1. Adapte el archivo al idioma.
 1. Guarde los cambios.
 
@@ -253,7 +258,7 @@ Para añadir una plantilla para un nuevo idioma:
 
 ## Configuración de notificaciones de correo electrónico de AEM Assets {#assetsconfig}
 
-Cuando las colecciones de AEM Assets AEM se comparten o dejan de compartirse, los usuarios pueden recibir notificaciones por correo electrónico de los usuarios de la aplicación de correo electrónico de los que se puede acceder a las notificaciones de correo electrónico. Para configurar las notificaciones por correo electrónico, siga estos pasos.
+Cuando las colecciones de los AEM Assets AEM se comparten o dejan de compartirse, los usuarios pueden recibir notificaciones por correo electrónico de los usuarios de las siguientes direcciones de correo electrónico Para configurar las notificaciones por correo electrónico, siga estos pasos.
 
 1. Configure el servicio de correo electrónico, tal como se describió anteriormente en [Configuración del servicio de correo](/help/sites-administering/notification.md#configuring-the-mail-service).
 1. AEM Inicie sesión en el servicio de administración de. Haga clic en **Herramientas** > **Operaciones** > **Consola web** para abrir la configuración de la consola web.
