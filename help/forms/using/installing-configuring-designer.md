@@ -10,10 +10,10 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 4ce52d90f9d3300e543563ce3dc242f28e00912e
+source-git-commit: 89f807e1d31c5588d86e50160b0149e00422b78c
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -124,3 +124,4 @@ Si utiliza un programa de instalación independiente para AEM Forms Designer, re
       1. Abra Designer, vaya a la Ayuda, haga clic en Acerca de Designer y verá información sobre la versión del diseñador junto con la información de bits. Por ejemplo, verá que 64 bits está escrito al final de la versión, como se muestra a continuación:
          `6.5.21.20240522.1.161 | 64 bit`
       1. Abra Designer, en la parte superior izquierda verá un icono de marca que contiene información de 64 bits con el nombre del producto.
+
