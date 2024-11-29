@@ -6,10 +6,10 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 38e3439b5b9f3b4bc56bb1618d33e570ca0603f5
 workflow-type: tm+mt
-source-wordcount: '1762'
-ht-degree: 98%
+source-wordcount: '1810'
+ht-degree: 95%
 
 ---
 
@@ -220,6 +220,11 @@ Realice los siguientes pasos para crear una configuración de Adobe Launch:
 1. Seleccione **[!UICONTROL Guardar y cerrar]**.
 
 1. Publique la configuración.
+
+>[!NOTE]
+>
+> Cuando [incrusta AEM Forms en una página de AEM Sites](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites), no se admiten las configuraciones de Launch de Adobe en un iFrame para formularios adaptables. Para resolver esto, configure las reglas de Launch de Adobe directamente en la página de Sites o migre las configuraciones de Launch de Adobe existentes de AEM Forms a la página de Sites.
+
 
 ### Habilitar [!DNL Adobe Analytics] para un formulario adaptable {#enable-analytics-adaptive-form}
 

@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
+source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 9%
@@ -18,9 +18,9 @@ ht-degree: 9%
 
 | Producto | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versión | 6.5.21.0 |
+| Versión | 6.5.22.0 |
 | Tipo | Versión del paquete de servicio |
-| Fecha | 29 de mayo de 2024 |
+| Fecha | 29 de noviembre de 2024 |
 | Descargar URL | [Últimas versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) |
 
 >[!NOTE]
@@ -272,7 +272,7 @@ Existen dos métodos diferentes que puede utilizar para instalar automáticament
 
 +++
 
-## Resolución de problemas
+## Solución de problemas
 
 * Si el cuadro de diálogo **en la interfaz de usuario del Administrador de paquetes** existe durante la instalación del Service Pack, espere a que los registros de errores se estabilicen antes de acceder a la implementación. Espere los registros específicos relacionados con la desinstalación del paquete actualizador antes de asegurarse de que las instalaciones se hayan realizado correctamente. Normalmente, este problema se produce en el explorador Safari, pero puede producirse de forma intermitente en cualquier explorador.
 
