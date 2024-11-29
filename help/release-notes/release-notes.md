@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
+source-git-commit: 27283286bd514c6f8902297cd9229b5e92a3c60d
 workflow-type: tm+mt
-source-wordcount: '6070'
+source-wordcount: '6089'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ Las funciones y mejoras clave de esta versión son las siguientes:
 
 * [Mejoras de compatibilidad de PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): Ahora los usuarios pueden convertir PDF a formatos PDF/A (1a, 2a, 3a) para archivarlos, al tiempo que se garantiza la accesibilidad y se comprueba el cumplimiento de estos estándares.
 
-* **Compatibilidad con el cambio de tamaño automático de la fuente para documentos de PDF estáticos**: AEM Forms Designer ahora admite las características de cambio de tamaño automático en archivos .xdp. Ahora los usuarios pueden especificar un tamaño automático para los campos de texto, los campos numéricos, los campos de contraseña y los campos de fecha y hora en los XDP para procesar el contenido del campo de texto sin truncar el contenido de estos campos en documentos estáticos del PDF.
+* **Compatibilidad con el cambio de tamaño automático de fuentes para documentos de PDF estáticos**: AEM Forms Designer, OutputService y FormsService ahora admiten el cambio de tamaño automático de fuentes para PDF estáticos. Si el usuario menciona el tamaño de fuente 0 en la plantilla para campos como campo de texto, campo numérico, campo de contraseña o campo de fecha y hora, el tamaño de fuente se ajusta automáticamente dentro de estos campos sin ningún cambio en el tamaño del propio campo. Para utilizar la característica, los usuarios pasan un indicador en el xci personalizado: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -223,7 +223,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 -->
 
-#### Formularios {#forms-bug-fixes-sp22}
+### Formularios {#forms-bug-fixes-sp22}
 
 * Las direcciones URL generadas para los archivos adjuntos en los borradores guardados en AEM Forms no reflejan las asignaciones configuradas de Apache Sling Resource Resolver Factory. (FORMS-16949)
 * Cuando un usuario en AEM Forms Service Pack 19 (6.5.19.0) obtiene una vista previa de una carta, el contenido no se alinea correctamente, ya que los espacios parecen no estar y el carácter ‘&#39;x&quot; aparece en algunas ubicaciones. (FORMS-16670)
