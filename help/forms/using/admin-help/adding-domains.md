@@ -9,21 +9,23 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: eac8a82c78d7f209512d32e7fcd7083bbebf1cb5
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Agregar dominios {#adding-domains}
 
+Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
+
 ## Agregar un dominio de empresa {#add-an-enterprise-domain}
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. Haga clic en Nuevo dominio de empresa.
 1. En el cuadro Id., escriba un identificador único para el dominio y, en el cuadro Nombre, escriba un nombre descriptivo para el dominio. (Consulte [Consideraciones importantes acerca de los nombres de dominio y los identificadores](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Especifique si desea habilitar el bloqueo de cuentas. (Consulte [Configurar el bloqueo de cuentas](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) De forma predeterminada, la opción Habilitar bloqueo de cuentas está seleccionada.
+1. Especifique si desea habilitar el bloqueo de cuentas. (Consulte [Configurar las opciones de bloqueo de cuentas](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) De forma predeterminada, la opción Habilitar bloqueo de cuentas está seleccionada.
 1. Haga clic en Agregar autenticación y, en la lista Proveedor de autenticación, seleccione un proveedor, según el mecanismo de autenticación que utilice su organización. Los valores posibles son LDAP, Kerberos, SAML o un proveedor de autenticación personalizado.
 
    Si selecciona LDAP, puede utilizar el servidor LDAP especificado en la configuración del directorio, o bien puede elegir otro servidor LDAP para la autenticación. Si elige un servidor diferente, los usuarios deben existir en ambos servidores LDAP.
@@ -39,7 +41,7 @@ Después de crear un dominio de empresa, sincronice manualmente el directorio o 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. Haga clic en Nuevo dominio local.
 1. En el cuadro Id., escriba un identificador único para el dominio y, en el cuadro Nombre, escriba un nombre descriptivo para el dominio. (Consulte [Consideraciones importantes acerca de los nombres de dominio y los identificadores](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Especifique si desea habilitar el bloqueo de cuentas y haga clic en Aceptar. (Consulte [Configurar el bloqueo de cuentas](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) De forma predeterminada, la opción Habilitar bloqueo de cuentas está seleccionada.
+1. Especifique si desea habilitar el bloqueo de cuentas y haga clic en Aceptar. (Consulte [Configurar las opciones de bloqueo de cuentas](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) De forma predeterminada, la opción Habilitar bloqueo de cuentas está seleccionada.
 
 ## Añadir un dominio híbrido {#add-a-hybrid-domain}
 
