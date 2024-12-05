@@ -9,9 +9,9 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2125'
 ht-degree: 28%
 
 ---
@@ -140,7 +140,10 @@ Utilice el siguiente procedimiento para crear una configuración de nube de Targ
 
    1. Asigne una configuración a **Título**.
    1. Seleccione la plantilla **Configuración de Adobe Target**.
-   1. Haga clic en **Crear**.
+
+      ![Configuración de Adobe Target](assets/adobe-target-create-configuration.png)
+
+1. Haga clic en **Crear**.
 
    Se abre el cuadro de diálogo de edición.
 
