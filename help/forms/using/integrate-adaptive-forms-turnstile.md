@@ -3,22 +3,19 @@ title: AEM ¿Cómo usar Turnstile en un formulario adaptable 6.5 de la?
 description: Mejore la seguridad de los formularios con el servicio Turnstile sin esfuerzo. Guía paso a paso en el interior
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+exl-id: bed93ce3-89db-477a-8316-7598275e4bca
+source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 16%
+source-wordcount: '828'
+ht-degree: 17%
 
 ---
 
 # Conecte su entorno de AEM Forms con Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
 <!--
-
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
-
-<span class="preview"> Esta característica está en el programa de usuarios que la adoptaron por primera vez. Si está interesado en unirse a nuestro programa de acceso anticipado para esta función, envíe un correo electrónico desde su dirección oficial a aem-forms-ea@adobe.com para solicitar acceso </span>
 
 CAPTCHA (prueba de Turing completamente automática y pública para diferenciar ordenadores de humanos) es un programa que se utiliza comúnmente en transacciones en línea para distinguir entre humanos y programas o bots automatizados. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o con fines malintencionados.
 
@@ -34,6 +31,8 @@ AEM Forms 6.5 admite las siguientes soluciones CAPTCHA:
 ## Integración del entorno de AEM Forms con Turnstile Captcha
 
 El Turnstile Captcha de Cloudflare es una medida de seguridad que tiene como objetivo proteger los formularios y sitios de bots automatizados, ataques maliciosos, spam y tráfico automatizado no deseado. Presenta una casilla de verificación en el envío del formulario para verificar que son humanos, antes de permitirles enviar el formulario.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Requisitos previos para integrar el entorno de AEM Forms con Turnstile Captcha {#prerequisite}
 
