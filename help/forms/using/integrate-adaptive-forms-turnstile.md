@@ -4,9 +4,9 @@ description: Mejore la seguridad de los formularios con el servicio Turnstile si
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+source-git-commit: 4a0e8def5bafd4d90f50bf4b34a537c51e09ce27
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '842'
 ht-degree: 18%
 
 ---
@@ -77,13 +77,13 @@ Para integrar AEM Forms con el servicio de torniquete, realice los siguientes pa
 1. Seleccione un formulario adaptable y haga clic en **[!UICONTROL Propiedades]**. En **[!UICONTROL Contenedor de configuración]**, seleccione la configuración de nube para Turnstile®.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
-   Si no tiene ese contenedor de configuración, consulte la sección [Conecte su entorno de AEM Forms con Turnstile](#connect-your-forms-environment-with-turnstile-service) para aprender a crear un contenedor de configuración.
+   Si no tiene un contenedor de configuración para configurar el servicio Captcha, consulte la sección [Configurar el torniquete](#configure-turnstile-steps-to-configure-hcaptcha) para obtener información sobre cómo crear un contenedor de configuración.
 
    ![Seleccionar el contenedor de configuración](assets/captcha-properties.png)
 
 1. Seleccione un formulario adaptable y haga clic en **[!UICONTROL Editar]** para abrir el formulario adaptable en el editor.
 1. Desde el navegador de componentes, arrastre y suelte el componente **[!UICONTROL Captcha]** en el formulario adaptable.
-1. Seleccione el componente **[!UICONTROL Torniquete de formulario adaptable]** y haga clic en el icono de las propiedades ![Propiedades](assets/configure-icon.svg). Abre el cuadro de diálogo de propiedades. Especifique las siguientes propiedades:
+1. Seleccione el componente **[!UICONTROL Captcha]** y haga clic en el icono de las propiedades ![Properties](assets/configure-icon.svg). Abre el cuadro de diálogo de propiedades. Especifique las siguientes propiedades:
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
    ![Torniquete Cloudfare v1](assets/turnstile-setting-v1.png)
@@ -95,7 +95,8 @@ Para integrar AEM Forms con el servicio de torniquete, realice los siguientes pa
    * **[!UICONTROL Ajustes de configuración]:** Seleccione la configuración de nube configurada para Turnstile®.
      >[!NOTE]
      >Puede tener varias configuraciones en la nube en su entorno para un propósito similar. Por lo tanto, elija el servicio con cuidado. Si no aparece ningún servicio, consulte [Conectar su entorno de AEM Forms con Turnstile](#connect-your-forms-environment-with-turnstile-service) para aprender a crear un Cloud Service que conecte su entorno de AEM Forms con el servicio de Turnstile.
-   * **Mensaje de error:** Proporcione el mensaje de error que se mostrará al usuario cuando falle el envío del Captcha.
+
+   * **[!UICONTROL Mensaje de error]:** Proporcione el mensaje de error que se mostrará al usuario cuando falle el envío del Captcha.
    * **Tamaño del captcha:** Puede seleccionar el tamaño de visualización del cuadro de diálogo de desafío de captcha®. Use la opción **[!UICONTROL Compacta]** para mostrar un objeto de tamaño pequeño y **[!UICONTROL Normal]** para mostrar un cuadro de diálogo de desafío hCaptcha® de tamaño relativamente grande.
 
 1. Seleccione **[!UICONTROL Listo]**.

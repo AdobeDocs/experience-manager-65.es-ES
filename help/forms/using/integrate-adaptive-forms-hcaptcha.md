@@ -3,9 +3,10 @@ title: AEM ¿Cómo se utiliza hCaptcha&reg; en un Forms de la versión 6.5 de la
 description: Mejore la seguridad sin esfuerzo con el servicio hCaptcha®. Guía paso a paso en el interior
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
+source-git-commit: 96e6705349fc6969ab0c40c8c770c9a0d1967619
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '863'
 ht-degree: 27%
 
 ---
@@ -75,13 +76,13 @@ Para integrar AEM Forms con el servicio hCaptcha®, realice los siguientes pasos
 1. En el **[!UICONTROL Contenedor de configuración]**, seleccione la configuración de nube para hCaptcha®.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
-   Si no tiene ese contenedor de configuración, consulte la sección [Conecte su entorno de AEM Forms con hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service) para saber cómo crear un contenedor de configuración.
+   Si no tiene un contenedor de configuración para Chcaptcha, consulte la sección [Conectar su entorno de AEM Forms con Chcaptcha®](#configure-hcaptcha-steps-to-configure-hcaptcha) para obtener información sobre cómo crear un contenedor de configuración.
 
    ![Seleccionar el contenedor de configuración](/help/forms/using/assets/captcha-properties.png)
 
 1. Seleccione un formulario adaptable y haga clic en **[!UICONTROL Editar]** para abrir el formulario en el editor.
 1. Desde el navegador de componentes, arrastre y suelte el componente **[!UICONTROL Captcha]** en el formulario adaptable.
-1. Seleccione el componente **[!UICONTROL Captcha de formulario adaptable®]** y haga clic en las propiedades ![Icono de propiedades](assets/configure-icon.svg) para abrir el cuadro de diálogo de propiedades. Especifique las siguientes propiedades:
+1. Seleccione el componente **[!UICONTROL Captcha]** y haga clic en las propiedades ![Icono de propiedades](assets/configure-icon.svg) para abrir el cuadro de diálogo de propiedades. Especifique las siguientes propiedades:
 
    ![hCaptcha® v1](assets/config-hcaptcha-v1-img.png)
 
@@ -91,13 +92,14 @@ Para integrar AEM Forms con el servicio hCaptcha®, realice los siguientes pasos
    * **[!UICONTROL Ajustes de configuración]:** Seleccione la configuración de nube configurada para hCaptcha®.
      >[!NOTE]
      >Puede tener varias configuraciones en la nube en su entorno para un propósito similar. Por lo tanto, elija el servicio con cuidado. Si no aparece ningún servicio, consulte [Conectar su entorno de AEM Forms con hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service) para aprender a crear un Cloud Service que conecte su entorno de AEM Forms con el servicio hCaptcha®.
-   * **Mensaje de error:** Proporcione el mensaje de error que se mostrará al usuario cuando falle el envío del Captcha.
-   * **Tamaño del captcha:** Puede seleccionar el tamaño de visualización del cuadro de diálogo de desafío de captcha®. Use la opción **[!UICONTROL Compacta]** para mostrar un objeto de tamaño pequeño y **[!UICONTROL Normal]** para mostrar un cuadro de diálogo de desafío hCaptcha® de tamaño relativamente grande o **[!UICONTROL Invisible]** para validar hCaptcha® sin procesar explícitamente el widget de casilla de verificación en la interfaz de usuario.
+
+   * **[!UICONTROL Mensaje de error]:** Proporcione el mensaje de error que se mostrará al usuario cuando falle el envío del Captcha.
+   * **[!UICONTROL Tamaño de captcha]:** Puede seleccionar el tamaño de visualización del cuadro de diálogo de desafío de captcha®. Use la opción **[!UICONTROL Compacta]** para mostrar un objeto de tamaño pequeño y **[!UICONTROL Normal]** para mostrar un cuadro de diálogo de desafío hCaptcha® de tamaño relativamente grande o **[!UICONTROL Invisible]** para validar hCaptcha® sin procesar explícitamente el widget de casilla de verificación en la interfaz de usuario.
 
 1. Seleccione **[!UICONTROL Listo]**.
 
 
-Ahora, solo se permiten para el envío del formulario los formularios legítimos, en los que el usuario que rellena el formulario borra correctamente el desafío planteado por el servicio hCaptcha®. hCaptcha®
+Ahora, solo se permiten para el envío del formulario los formularios legítimos, en los que el usuario que rellena el formulario borra correctamente el desafío planteado por el servicio hCaptcha®.
 
 **hCaptcha® es una marca comercial registrada de Intuition Machines, Inc.**
 
