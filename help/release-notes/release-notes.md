@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 167d897cc5f44a2302a4ba932e238e6ba973635d
+source-git-commit: 26c1fe9d032729dd8d1737c922c4b2fab55f2d48
 workflow-type: tm+mt
-source-wordcount: '6030'
+source-wordcount: '6085'
 ht-degree: 1%
 
 ---
@@ -614,8 +614,16 @@ Para garantizar el funcionamiento correcto, debe agregar las siguientes propieda
 * En la Vista previa de impresión de la interfaz de usuario de Interactive Communications Agent, el símbolo de moneda (como el signo de dólar $) se muestra de forma incoherente para todos los valores de campo. Aparece para valores de hasta 999, pero falta para valores de 1000 y superiores. (FORMS-16557)
 * Las modificaciones realizadas en el XDP de los fragmentos de diseño anidados en una comunicación interactiva no se reflejan en el editor de CI. (FORMS-16575)
 * En la Vista preliminar de la interfaz de usuario de Interactive Communications Agent, algunos valores calculados no se muestran correctamente. (FORMS-16603)
-* Cuando la carta se ve en la Vista previa de impresión, el contenido cambia. Es decir, algunos espacios desaparecen y ciertas letras se reemplazan por `x`. (FORMS-15681)
-* Cuando un usuario configura una instancia de WebLogic 14c, el servicio PDFG en AEM Forms Service Pack 21 (6.5.21.0) en JEE que se ejecuta en JBoss® falla debido a conflictos del cargador de clases que implican la biblioteca SLF4J. El error se muestra de la siguiente manera (CQDOC-22178):
+* Cuando la carta se ve en la Vista previa de impresión, el contenido cambia. Es decir, algunos espacios desaparecen y ciertas letras se sustituyen por &quot;x&quot;. (FORMS-15681)
+* A partir de AEM Forms OSGi 6.5.22, la operación renderPDFForm del servicio Forms no ejecutará scripts solo de cliente (runAt=client) en el servidor, solo aquellos marcados runAt=server o runAt=both se ejecutarán como se describe en la tabla siguiente. (FORMS-16564)
+
+  | Script marcado como runAt | Ejecutado en el servidor |
+  |---------------------|-------------------------|
+  | servidor | sí |
+  | ambos | sí |
+  | cliente | no |
+
+* Cuando un usuario configura una instancia de WebLogic 14c, el servicio PDFG en AEM Forms Service Pack 21 (6.5.21.0) en JEE que se ejecuta en JBoss falla debido a conflictos del cargador de clases que implican la biblioteca SLF4J. El error se muestra de la siguiente manera (CQDOC-22178):
 
   ```java
   Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"

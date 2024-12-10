@@ -4,18 +4,16 @@ description: Mejore la seguridad de los formularios con el servicio Turnstile si
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
+source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 17%
+source-wordcount: '846'
+ht-degree: 18%
 
 ---
 
 # Conecte su entorno de AEM Forms con Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview">Esta característica se basa en el identificador de alternancia de características `FT_FORMS-12407`. Para habilitar la característica, siga los pasos indicados en el artículo [Habilitar la alternancia de características](/help/forms/using/enable-feature-toggle.md). </span>
 
 CAPTCHA (prueba de Turing completamente automática y pública para diferenciar ordenadores de humanos) es un programa que se utiliza comúnmente en transacciones en línea para distinguir entre humanos y programas o bots automatizados. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o con fines malintencionados.
 
@@ -84,7 +82,7 @@ Para integrar AEM Forms con el servicio de torniquete, realice los siguientes pa
    ![Seleccionar el contenedor de configuración](assets/captcha-properties.png)
 
 1. Seleccione un formulario adaptable y haga clic en **[!UICONTROL Editar]** para abrir el formulario adaptable en el editor.
-1. Desde el explorador de componentes, arrastre y suelte o agregue el componente **[!UICONTROL Torniquete de formulario adaptable]** al formulario adaptable.
+1. Desde el navegador de componentes, arrastre y suelte el componente **[!UICONTROL Captcha]** en el formulario adaptable.
 1. Seleccione el componente **[!UICONTROL Torniquete de formulario adaptable]** y haga clic en el icono de las propiedades ![Propiedades](assets/configure-icon.svg). Abre el cuadro de diálogo de propiedades. Especifique las siguientes propiedades:
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
