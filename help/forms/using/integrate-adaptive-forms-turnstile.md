@@ -4,16 +4,20 @@ description: Mejore la seguridad de los formularios con el servicio Turnstile si
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 4a0e8def5bafd4d90f50bf4b34a537c51e09ce27
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '851'
 ht-degree: 18%
 
 ---
 
 # Conecte su entorno de AEM Forms con Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
-<span class="preview">Esta característica se basa en el identificador de alternancia de características `FT_FORMS-12407`. Para habilitar la característica, siga los pasos indicados en el artículo [Habilitar la alternancia de características](/help/forms/using/enable-feature-toggle.md). </span>
+<!--
+<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
+-->
+
+<span class="preview">Esta característica no está habilitada de manera predeterminada. Puede escribir desde su dirección oficial a aem-forms-ea@adobe.com para solicitar acceso a la función.</span>
 
 CAPTCHA (prueba de Turing completamente automática y pública para diferenciar ordenadores de humanos) es un programa que se utiliza comúnmente en transacciones en línea para distinguir entre humanos y programas o bots automatizados. Plantea un desafío y evalúa la respuesta del usuario para determinar si es un humano o un bot que interactúa con el sitio. Evita que el usuario continúe si la prueba falla y ayuda a que las transacciones en línea sean seguras al impedir que los bots publiquen contenido no deseado o con fines malintencionados.
 
@@ -74,7 +78,7 @@ Para integrar AEM Forms con el servicio de torniquete, realice los siguientes pa
 
 1. Abra el entorno de AEM Forms.
 1. Vaya a **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
-1. Seleccione un formulario adaptable y haga clic en **[!UICONTROL Propiedades]**. En **[!UICONTROL Contenedor de configuración]**, seleccione la configuración de nube para Turnstile®.
+1. Seleccione un formulario adaptable y haga clic en **[!UICONTROL Propiedades]**. En **[!UICONTROL Contenedor de configuración]**, seleccione el contenedor de configuración que contiene la configuración de nube que conecta AEM Forms con Turnstile.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
    Si no tiene un contenedor de configuración para configurar el servicio Captcha, consulte la sección [Configurar el torniquete](#configure-turnstile-steps-to-configure-hcaptcha) para obtener información sobre cómo crear un contenedor de configuración.
