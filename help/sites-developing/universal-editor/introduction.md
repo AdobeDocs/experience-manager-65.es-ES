@@ -1,18 +1,18 @@
 ---
-title: El editor universal
+title: Editor universal
 description: AEM Obtenga información acerca de la flexibilidad del editor universal y cómo puede ayudarle a potenciar sus experiencias sin encabezado mediante el uso de la versión 6.5 de.
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
+source-git-commit: 773e398af5247a0de12143334ecfa44955ebbbcd
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# El editor universal {#universal-editor}
+# Editor universal {#universal-editor}
 
 AEM Obtenga información acerca de la flexibilidad del editor universal y cómo puede ayudarle a potenciar sus experiencias sin encabezado mediante el uso de la versión 6.5 de.
 
@@ -21,7 +21,7 @@ AEM Obtenga información acerca de la flexibilidad del editor universal y cómo 
 El editor universal es un editor visual versátil que forma parte de Adobe Experience Manager Sites. Permite a los autores editar lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin encabezado.
 
 * AEM Los autores se benefician de la flexibilidad del editor universal, ya que es compatible con la misma edición visual coherente para todas las formas de contenido sin encabezado de la.
-* Los desarrolladores se benefician de la versatilidad del editor universal, ya que también admite el desacoplamiento real de la implementación. Permite a los desarrolladores utilizar prácticamente cualquier marco o arquitectura de su elección, sin imponer restricciones de SDK o tecnología.
+* Los desarrolladores se benefician de la versatilidad del editor universal, ya que también admite el desacoplamiento real de la implementación. Permite a los desarrolladores utilizar prácticamente cualquier estructura o arquitectura de su elección, sin imponer restricciones SDK o tecnológicas.
 
 Consulte la [documentación de AEM as a Cloud Service en el editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) para obtener más información.
 
@@ -178,3 +178,11 @@ Tenga en cuenta que cuando se sigue la documentación del Editor universal con A
 >[!TIP]
 >
 >AEM Para obtener una guía completa para desarrolladores que empiecen a usar el Editor universal, consulte el documento [Información general del Editor universal para desarrolladores](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) en la documentación de AEM as a Cloud Service AEM, teniendo en cuenta los cambios necesarios para la compatibilidad con la versión 6.5 de, tal como se menciona en esta sección.
+
+## AEM Diferencias entre 6.5 y AEM as a Cloud Service {#differences}
+
+AEM El editor universal en la versión 6.5 de la versión funciona de forma similar a la de AEM as a Cloud Service, incluida la interfaz de usuario y gran parte de la configuración. Sin embargo, hay diferencias que deben señalarse.
+
+* El editor universal de 6.5 solo admite el caso de uso sin encabezado.
+* La configuración del editor universal varía ligeramente para 6.5 ([como se describe](#setup) en el documento actual).
+* El editor universal de 6.5 utiliza un selector de recursos y un selector de fragmentos de contenido diferentes a los de AEM as a Cloud Service.
