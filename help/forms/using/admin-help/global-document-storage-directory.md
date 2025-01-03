@@ -9,9 +9,9 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '684'
 ht-degree: 3%
 
 ---
@@ -82,13 +82,15 @@ AEM Puede cambiar la ubicación de GDS en la consola de administración una vez 
 
 >[!NOTE]
 >
->Migre los datos de la siguiente manera o se perderán datos.
+> * Migre los datos de la siguiente manera o se perderán datos.
+> * Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
+
 
 1. Inicie sesión en la consola de administración y haga clic en Configuración > Configuración del sistema principal > Configuraciones.
-1. En el cuadro Directorio global de almacenamiento de documentos, escriba la ruta de acceso completa al nuevo directorio GDS y, a continuación, haga clic en Aceptar.
-1. Cierre inmediatamente el servidor de aplicaciones.
-1. Mueva todos los archivos del directorio GDS antiguo a la nueva ubicación, conservando la estructura de directorios interna.
-1. Reinicie el servidor de la aplicación.
+2. En el cuadro Directorio global de almacenamiento de documentos, escriba la ruta de acceso completa al nuevo directorio GDS y, a continuación, haga clic en Aceptar.
+3. Cierre inmediatamente el servidor de aplicaciones.
+4. Mueva todos los archivos del directorio GDS antiguo a la nueva ubicación, conservando la estructura de directorios interna.
+5. Reinicie el servidor de la aplicación.
 
 ## Acerca de los archivos de implementación {#about-deployment-files}
 

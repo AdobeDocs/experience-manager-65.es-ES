@@ -9,9 +9,9 @@ exl-id: facbeab2-de95-4778-894c-faa771d3391e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1334'
 ht-degree: 4%
 
 ---
@@ -29,6 +29,10 @@ AEM Las firmas digitales de formularios pueden utilizar credenciales almacenadas
 >Después de cambiar la configuración de HSM, reinicie AEM Forms Server.
 
 ## Crear un alias para una credencial HSM cuando el dispositivo HSM esté en línea {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales de HSM y, a continuación, haga clic en Agregar.
 1. En el cuadro Nombre del perfil, escriba una cadena utilizada para identificar el alias. Este valor se utiliza como propiedad en algunas operaciones de firmas digitales, como la operación Firmar campo de firma.

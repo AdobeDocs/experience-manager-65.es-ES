@@ -9,9 +9,9 @@ exl-id: e1519477-b5a8-4947-8597-26b945a3b819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 1b76b30d8db59e6ad98af1d29f17443442d5378e
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1774'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,8 @@ La página Configuraciones principales de la consola de administración proporci
 
 >[!NOTE]
 >
-> Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
+> * Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
+> * Se recomienda utilizar el comando &quot;Ctrl + C&quot; para reiniciar el SDK. El reinicio del SDK de AEM mediante métodos alternativos, como detener los procesos de Java, puede generar incoherencias en el entorno de desarrollo de AEM.
 
 Para obtener información acerca de cómo habilitar el modo de copia de seguridad segura, vea [Habilitar y deshabilitar el modo de copia de seguridad segura](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
@@ -122,4 +123,4 @@ AEM **Habilitar RDS** *ndash; si se selecciona esta opción, se habilita el serv
 
 **Permitir la carga de documentos no seguros desde aplicaciones de Flex** *ndash; El servlet de carga de archivos utilizado para cargar documentos desde aplicaciones de Flex® AEM de Adobe a formularios de requiere que los usuarios estén autenticados y autorizados para poder cargar documentos. Se debe asignar al usuario la función de usuario de la aplicación de carga de documentos u otra función que incluya el permiso de carga de documentos. Esto ayuda a evitar que usuarios no autorizados carguen documentos en el servidor de AEM Forms. AEM Seleccione esta opción si desea deshabilitar esta característica de seguridad en un entorno de desarrollo o para mantener la compatibilidad con versiones anteriores de los formularios de la aplicación de seguridad de la aplicación de seguridad de la aplicación de seguridad de la aplicación. Esta opción no está seleccionada de forma predeterminada. AEM AEM AEM Para obtener más información, consulte &quot;Invocación de formularios de mediante la comunicación remota de formularios de la aplicación&quot; en Programación con formularios de la aplicación de la llamada a la comunicación remota de formularios de la.
 
-**Permitir la carga de documentos no seguros desde aplicaciones de SDK de Java** *ndash; las cargas de HTTP Document Manager deben ser seguras. De forma predeterminada, las cargas HTTP requieren que los usuarios estén autenticados y autorizados para poder cargar documentos. Se debe asignar al usuario la función Usuario de servicios u otra función que contenga el permiso Invocar servicio. Esto ayuda a evitar que usuarios no autorizados carguen documentos en el servidor de Forms. AEM Seleccione esta opción si desea deshabilitar esta característica de seguridad en un entorno de desarrollo, por compatibilidad con versiones anteriores de formularios de la aplicación o en función de la configuración del cortafuegos. Esta opción no está seleccionada de forma predeterminada. AEM AEM Para obtener más información, consulte &quot;Invocación de formularios en la aplicación de la API de Java&quot; en Programación con formularios en la aplicación de la API de.
+**Permitir la carga de documentos no seguros desde aplicaciones Java SDK** *ndash; las cargas HTTP Document Manager deben ser seguras. De forma predeterminada, las cargas HTTP requieren que los usuarios estén autenticados y autorizados para poder cargar documentos. Se debe asignar al usuario la función Usuario de servicios u otra función que contenga el permiso Invocar servicio. Esto ayuda a evitar que usuarios no autorizados carguen documentos en el servidor de Forms. AEM Seleccione esta opción si desea deshabilitar esta característica de seguridad en un entorno de desarrollo, por compatibilidad con versiones anteriores de formularios de la aplicación o en función de la configuración del cortafuegos. Esta opción no está seleccionada de forma predeterminada. AEM AEM Para obtener más información, consulte &quot;Invocación de formularios en la aplicación de la API de Java&quot; en Programación con formularios en la aplicación de la API de.

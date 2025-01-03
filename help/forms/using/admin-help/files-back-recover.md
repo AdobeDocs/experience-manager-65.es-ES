@@ -9,14 +9,18 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2029'
 ht-degree: 3%
 
 ---
 
 # Archivos para realizar copias de seguridad y recuperar {#files-to-back-up-and-recover}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 La aplicación y los archivos de datos de los que se debe realizar una copia de seguridad se describen con más detalle en las secciones siguientes.
 
@@ -110,7 +114,7 @@ DB2 tiene funcionalidades integradas para realizar copias de seguridad de una ba
 
 ### Oracle {#oracle}
 
-Utilice las copias de seguridad instantáneas o configure la base de datos de Oracle para que se ejecute en el modo de registro de archivos. (Consulte Copia De Seguridad De [Oracle: Introducción](https://www.databasedesign-resource.com/oracle-backup.md).) Para obtener más información sobre la copia de seguridad y recuperación de la base de datos de Oracle, visite estos sitios:
+Utilice las copias de seguridad instantáneas o configure la base de datos de Oracle para que se ejecute en el modo de registro de archivos. (Vea [Copia de seguridad de Oracle: Introducción](https://www.databasedesign-resource.com/oracle-backup.md).) Para obtener más información acerca de cómo realizar copias de seguridad y recuperar la base de datos de Oracle, visite estos sitios:
 
 [Copia de seguridad y recuperación en Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explica los conceptos de copia de seguridad y recuperación, así como las técnicas más comunes para usar Recovery Manager (RMAN) para realizar copias de seguridad, recuperar y generar informes con más detalle, y proporciona más información acerca de cómo planear una copia de seguridad y una estrategia de recuperación.
 
@@ -131,7 +135,7 @@ Para obtener más información, consulte [Copia de seguridad y restauración](ht
 
 ### MySQL {#mysql}
 
-Utilice MySQLAdmin o modifique los archivos INI en Windows para configurar la base de datos MySQL para que se ejecute en modo de registro binario. (Consulte [Registro binario de MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Una herramienta de copia de seguridad en caliente para MySQL también está disponible en el software InnoBase. (Consulte [Copia de seguridad en caliente de Innobase](https://www.innodb.com/hot-backup/features.md).)
+Utilice MySQLAdmin o modifique los archivos INI en Windows para configurar la base de datos MySQL para que se ejecute en modo de registro binario. (Consulte [Registro binario de MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) También hay disponible una herramienta de copia de seguridad en caliente para MySQL en el software InnoBase. (Consulte [Copia de seguridad en caliente de Innobase](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >

@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '933'
 ht-degree: 1%
 
 ---
 
 # Usar las páginas web de seguridad de los documentos {#using-the-document-security-webpages}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Los usuarios y administradores utilizan las páginas web de Document Security para crear y administrar directivas, administrar documentos protegidos por directivas y supervisar eventos asociados a documentos protegidos por directivas. Los administradores también utilizan las páginas web para crear conjuntos de directivas y designar coordinadores de conjuntos de directivas, configurar la configuración predeterminada de Document Security, administrar el registro de usuarios y las cuentas invitados, y supervisar y administrar eventos relacionados con el servidor, las directivas, los usuarios y los documentos.
 

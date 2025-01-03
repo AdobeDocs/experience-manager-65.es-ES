@@ -9,9 +9,9 @@ exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '256'
 ht-degree: 8%
 
 ---
@@ -42,6 +42,10 @@ ht-degree: 8%
 1. Haga clic en Guardar.
 
 ## Configurar la invocación de scripts personalizados antes del envío del formulario {#configuring-invocation-of-custom-scripts-before-form-submit}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Siga los siguientes pasos para habilitar la función:
 

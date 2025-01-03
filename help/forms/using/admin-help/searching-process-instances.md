@@ -9,14 +9,18 @@ exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '461'
 ht-degree: 1%
 
 ---
 
 # Buscar instancias de proceso{#searching-for-process-instances}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Utilice la página Buscar Proceso para introducir criterios de búsqueda para buscar una instancia de proceso. Puede acceder a la página Buscar el proceso desde la página del flujo de trabajo de formularios o haciendo clic en Buscar en la página Instancia de proceso.
 

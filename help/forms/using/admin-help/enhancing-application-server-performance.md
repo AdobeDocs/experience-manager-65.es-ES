@@ -9,9 +9,9 @@ exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1882'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,10 @@ Un documento que es mayor que el tamaño máximo en línea se almacena en el sis
 Cuando el contenido del documento está en línea (es decir, es menor que el tamaño máximo en línea), el contenido se almacena en la base de datos como parte de la carga útil de serialización del documento. Por lo tanto, aumentar el tamaño máximo en línea puede afectar al tamaño de la base de datos.
 
 **Cambiar el tamaño máximo en línea**
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 1. En la consola de administración, haga clic en Configuración > Configuración del sistema principal > Configuraciones.
 1. Introduzca un valor en el cuadro Tamaño máximo en línea del documento predeterminado y haga clic en Aceptar.

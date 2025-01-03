@@ -9,14 +9,18 @@ exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 9%
+source-wordcount: '159'
+ht-degree: 8%
 
 ---
 
 # Cambiar el orden de evaluación para la autenticación {#change-the-order-of-evaluation-for-authentication}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 AEM Si ha configurado varios proveedores de autenticación, puede cambiar el orden en que los formularios de los evalúan para la autenticación. El orden de los proveedores de autenticación que se enumeran en el archivo config.xml determina el orden de evaluación para la autenticación.
 

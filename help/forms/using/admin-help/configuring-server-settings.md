@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2643'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ AEM Para permitir que los formularios de reciban y administren mensajes de corre
 Si los procesos están diseñados e implementados sin requerir correo electrónico, no tiene que configurar ninguna de las opciones de la página Configuración de correo electrónico.
 
 ### Configuración del correo electrónico saliente {#configure-outgoing-email-settings}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 1. En la consola de administración, haga clic en Servicios > flujo de trabajo de formularios > Configuración del servidor > Configuración de correo electrónico.
 1. Seleccione Habilitar mensajes salientes.

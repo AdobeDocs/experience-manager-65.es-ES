@@ -9,14 +9,18 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Administración de usuarios {#user-management}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 AEM La administración de usuarios permite habilitar el inicio de sesión único (SSO) entre módulos de formularios de y aplicaciones protegidas por Netegrity SiteMinder mediante el lenguaje de marcado de aserción de seguridad (SAML). AEM Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios de la no son necesarias y no se muestran si el usuario ya se ha autenticado a través del portal de la empresa.
 

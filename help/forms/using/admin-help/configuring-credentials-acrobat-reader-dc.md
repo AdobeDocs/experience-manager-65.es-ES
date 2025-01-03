@@ -9,9 +9,9 @@ exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,14 @@ El almacén de confianza puede contener más de una credencial de extensiones de
 
 ## Importar una credencial de extensiones de Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
 
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
+
 1. En la consola de administración, haga clic en Configuración > Administración del almacén de confianza > Credenciales locales.
 1. Haga clic en Importar y, en Tipo de almacén de confianza, seleccione Credenciales de extensiones de Acrobat Reader DC.
 1. (Opcional) Para indicar que esta credencial es la credencial predeterminada que se utiliza con las extensiones de Acrobat Reader DC, seleccione Predeterminada.
-1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de la credencial en las extensiones de Acrobat Reader DC. AEM Este alias también se utiliza para acceder a las credenciales mediante programación a través del SDK de formularios de la aplicación de la plataforma de datos de.
+1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de la credencial en las extensiones de Acrobat Reader DC. AEM Este alias también se utiliza para acceder a las credenciales mediante programación mediante el uso de la SDK de formularios de la.
 
    >[!NOTE]
    >

@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1309'
 ht-degree: 0%
 
 ---
 
 # Crear y administrar conjuntos de directivas {#creating-and-managing-policy-sets}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Los conjuntos de directivas se utilizan para agrupar directivas que tienen un propósito comercial común. Los conjuntos de directivas se pueden poner a disposición de un subconjunto de usuarios del sistema.
 

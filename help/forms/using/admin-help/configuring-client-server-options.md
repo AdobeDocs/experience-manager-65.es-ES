@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10266'
+source-wordcount: '10278'
 ht-degree: 0%
 
 ---
 
 # Configuración del servidor de Document Security {#configure-the-document-security-server}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 1. En la consola de administración, haga clic en Servicios > Document Security > Configuración > Configuración del servidor.
 1. Configure los ajustes y haga clic en Aceptar.
@@ -308,9 +312,9 @@ Puede habilitar y deshabilitar la auditoría de eventos y especificar los tipos 
 
 **Cambiar directiva en el documento:** Un usuario o administrador cambia la directiva adjunta a un documento.
 
-**Documento de Publish como:** Un nuevo documento cuyo documentName y licencia son idénticos a un documento existente está registrado en el servidor y los documentos no tienen una relación principal-secundario. AEM Este evento se puede activar mediante el SDK de formularios de la.
+**Documento de Publish como:** Un nuevo documento cuyo documentName y licencia son idénticos a un documento existente está registrado en el servidor y los documentos no tienen una relación principal-secundario. AEM Este evento se puede activar mediante el SDK de formularios en.
 
-**Documento iterativo:** Un nuevo documento cuyo documentName y licencia son idénticos a un documento existente está registrado en el servidor, y los documentos tienen una relación principal-secundario. AEM Este evento se puede activar mediante el SDK de formularios de la.
+**Documento iterativo:** Un nuevo documento cuyo documentName y licencia son idénticos a un documento existente está registrado en el servidor, y los documentos tienen una relación principal-secundario. AEM Este evento se puede activar mediante el SDK de formularios en.
 
 **Eventos de directiva**
 
@@ -366,7 +370,7 @@ Sincronización completada:** Esta información no está disponible en la págin
 
 **La aplicación cliente sincronizada** debe sincronizar la información con el servidor para permitir el acceso sin conexión.
 
-AEM **La versión no coincide:** Una versión del SDK de formularios de la aplicación que es incompatible con el servidor intentó conectarse al servidor.
+AEM **La versión no coincide:** Una versión del SDK de formularios de la que no es compatible con el servidor intentó conectarse al servidor.
 
 **Información de sincronización de directorios:** Esta información no está disponible en la página Eventos. La información de sincronización de directorios actual, incluido el estado y la hora de sincronización actual de la última sincronización, se muestra en la página Administración de dominios. Para acceder a la página Administración de dominios en la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 
@@ -555,7 +559,7 @@ Document Security genera automáticamente un correo electrónico de invitación 
 
 El correo electrónico de registro contiene un vínculo a una página de registro e información sobre cómo registrarse. Una vez que el usuario invitado se registra, Document Security emite un correo electrónico de activación con un vínculo a una página de activación. Cuando se activa, la cuenta sigue siendo válida hasta que se desactiva o elimina.
 
-Si activa el registro integrado, debe especificar el servidor SMTP, los detalles del correo electrónico de registro, las funcionalidades de acceso y restablecer la información del correo electrónico de la contraseña solo una vez. Antes de habilitar el registro integrado, asegúrese de haber creado un dominio local en Administración de usuarios y de haber asignado la función &quot;Invitar usuario&quot; de Document Security a los usuarios y grupos adecuados de su organización. (Consulte [Agregar un dominio local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) y [Crear y configurar roles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) AEM Si no utiliza el registro integrado, debe tener su propio sistema de registro de usuario creado mediante el SDK de formularios de la aplicación de la versión de usuario de. AEM AEM Consulte la ayuda en &quot;Desarrollo de SPI para formularios de la&quot; en [Programación con formularios de la lista de permitidos](/help/forms/developing/introducing-java-api-soap-quick.md). Si no utiliza la opción Registro integrado, se recomienda configurar un mensaje en el correo electrónico de activación y en la pantalla de inicio de sesión del cliente para notificar a los usuarios cómo ponerse en contacto con el administrador para obtener una nueva contraseña o para obtener otra información.
+Si activa el registro integrado, debe especificar el servidor SMTP, los detalles del correo electrónico de registro, las funcionalidades de acceso y restablecer la información del correo electrónico de la contraseña solo una vez. Antes de habilitar el registro integrado, asegúrese de haber creado un dominio local en Administración de usuarios y de haber asignado la función &quot;Invitar usuario&quot; de Document Security a los usuarios y grupos adecuados de su organización. AEM (Consulte [Agregar un dominio local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) y [Crear y configurar funciones](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Si no usa el registro integrado, debe tener su propio sistema de registro de usuario creado con el SDK de formularios de la. AEM AEM Consulte la ayuda en &quot;Desarrollo de SPI para formularios de la&quot; en [Programación con formularios de la lista de permitidos](/help/forms/developing/introducing-java-api-soap-quick.md). Si no utiliza la opción Registro integrado, se recomienda configurar un mensaje en el correo electrónico de activación y en la pantalla de inicio de sesión del cliente para notificar a los usuarios cómo ponerse en contacto con el administrador para obtener una nueva contraseña o para obtener otra información.
 
 **Habilitar y configurar el registro de usuarios invitados**
 
@@ -779,13 +783,13 @@ Cuando las aplicaciones cliente intentan establecer un vínculo con Document Sec
 
 La configuración de Denegaciones puede contener varios conjuntos de condiciones de denegación. Si todos los atributos de un conjunto coinciden, se deniega a la aplicación solicitante el acceso a los servicios de Document Security.
 
-La función de denegación de servicio requiere que las aplicaciones cliente utilicen la versión 8.2 o posterior del SDK de cliente de C++ de Document Security. Los siguientes productos de Adobe proporcionan información del producto al solicitar servicios de Document Security:
+La función de denegación de servicio requiere que las aplicaciones cliente utilicen la versión 8.2 o posterior de Document Security C++ Client SDK. Los siguientes productos de Adobe proporcionan información del producto al solicitar servicios de Document Security:
 
 * Adobe Acrobat 9.0 Professional/Acrobat 9.0 Standard y versiones posteriores
 * Adobe Reader 9.0 y versiones posteriores
 * Extensiones de Acrobat Reader DC para Microsoft Office 8.2 y versiones posteriores
 
-Las aplicaciones cliente utilizan la API de cliente del SDK de cliente de C++ de Document Security para solicitar servicios de Document Security. Las solicitudes de API de cliente incluyen información de la versión de la plataforma y el SDK (precompilada en la API de cliente) e información de producto obtenida de la aplicación cliente.
+Las aplicaciones cliente utilizan la API de cliente del SDK cliente de C++ de Document Security para solicitar servicios a Document Security. Las solicitudes de la API del cliente incluyen información de la versión de la plataforma y SDK (precompilada en la API del cliente) e información del producto obtenida de la aplicación del cliente.
 
 Las aplicaciones cliente o los complementos proporcionan información del producto en su implementación de una función de devolución de llamada. La aplicación proporciona la siguiente información:
 

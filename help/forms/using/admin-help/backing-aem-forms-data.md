@@ -9,9 +9,9 @@ exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ Puede usar los scripts de la interfaz de línea de comandos `LCBackupMode` para 
    Para obtener más información acerca de la interfaz de línea de comandos para el modo de copia de seguridad, vea el archivo Léame en el directorio BackupRestoreCommandline.
 
 ### Dejando los modos de copia {#leaving-backup-modes}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Puede utilizar la consola de administración o la opción de línea de comandos para dejar los modos de copia de seguridad.
 

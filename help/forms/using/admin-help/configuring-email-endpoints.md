@@ -9,14 +9,18 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3808'
 ht-degree: 1%
 
 ---
 
 # Configurar extremos de correo electrónico {#configuring-email-endpoints}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Los extremos de correo electrónico permiten a los usuarios invocar un servicio enviando uno o varios documentos (como archivos adjuntos de correo electrónico) a una cuenta de correo electrónico especificada. La bandeja de entrada del correo electrónico actúa como punto de recopilación de los archivos adjuntos. El servicio supervisa la bandeja de entrada y procesa los archivos adjuntos. Los resultados de la conversión se reenvían al usuario definido en el punto de conexión.
 
@@ -32,7 +36,7 @@ Todos los extremos de correo electrónico se configuran con un nombre de usuario
 
 Si los usuarios envían documentos con caracteres del idioma de Europa occidental en los nombres de ruta de archivo y de conversión, deben utilizar una aplicación de correo electrónico que admita los tipos de codificación requeridos (Latin1 [ISO-8859-1], Europa occidental [Windows] o UTF-8). AEM Para obtener más información, consulte el documento *Instalación e implementación de formularios de la aplicación* para su servidor de aplicaciones.
 
-Antes de configurar un extremo de correo electrónico, configure el servicio de correo electrónico. (Consulte [Configurar opciones predeterminadas de extremo de correo electrónico](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Los parámetros de configuración del servicio de correo electrónico tienen dos propósitos:
+Antes de configurar un extremo de correo electrónico, configure el servicio de correo electrónico. (Consulte [Configurar las opciones predeterminadas de extremo de correo electrónico](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Los parámetros de configuración del servicio de correo electrónico tienen dos propósitos:
 
 * Para configurar atributos que son comunes para todos los extremos de correo electrónico
 * Para proporcionar valores predeterminados para todos los extremos de correo electrónico

@@ -9,9 +9,9 @@ exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '671'
 ht-degree: 2%
 
 ---
@@ -23,6 +23,10 @@ AEM La función Fuera de la oficina permite a los usuarios o administradores esp
 Al crear un proceso, el usuario de Workbench puede especificar si una tarea se puede redirigir debido a la configuración de Fuera de la oficina.
 
 ## Ver la información de Fuera de la oficina de un usuario {#view-a-user-s-out-of-office-information}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 1. En la consola de administración, haga clic en Servicios > flujo de trabajo de formularios > Fuera de la oficina.
 1. En el cuadro situado cerca de la parte superior de la página Fuera de la oficina, puede realizar una de las siguientes acciones:

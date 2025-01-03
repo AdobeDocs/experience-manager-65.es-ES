@@ -9,14 +9,18 @@ exl-id: 734ed463-2441-49fc-bacb-deb40851af42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 11%
+source-wordcount: '114'
+ht-degree: 10%
 
 ---
 
 # Configurar el servicio de información del sistema {#set-up-the-system-information-service}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 El servicio de información del sistema proporciona API de REST para recuperar información. Para utilizar el servicio de información del sistema, habilite el extremo REST desde la consola de administración. Realice los siguientes pasos para habilitar el extremo REST:
 

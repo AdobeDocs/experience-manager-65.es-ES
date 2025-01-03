@@ -9,14 +9,18 @@ exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '381'
 ht-degree: 4%
 
 ---
 
 # Agregar, activar, modificar o eliminar puntos finales {#adding-enabling-modifying-or-removing-endpoints}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 ## Agregar un extremo a un servicio {#add-an-endpoint-to-a-service}
 

@@ -9,14 +9,18 @@ exl-id: d8bab1c4-b830-4491-9486-d7e7f4dc2c99
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 8%
+source-wordcount: '185'
+ht-degree: 7%
 
 ---
 
 # Configurar el mensaje del día {#setting-the-message-of-the-day}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Puede configurar un mensaje para que se muestre en la página de bienvenida de la interfaz de usuario de Workspace.
 

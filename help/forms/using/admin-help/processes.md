@@ -9,9 +9,9 @@ exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1643'
 ht-degree: 0%
 
 ---
@@ -183,6 +183,10 @@ Al reintentar una operación, el flujo de trabajo de Forms se envía a una solic
 1. Seleccione la operación y haga clic en Reintentar.
 
 ## Uso de operaciones {#working-with-operations}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 La página Detalles de Operación muestra un resumen de una operación de un proceso y sus asignaciones de usuario actuales.
 

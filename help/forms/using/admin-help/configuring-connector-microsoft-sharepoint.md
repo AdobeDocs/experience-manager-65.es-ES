@@ -9,19 +9,24 @@ exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 98cbaaf64c0268be1afe7196a7bbbf5c93f02148
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '214'
 ht-degree: 7%
 
 ---
 
-# Configurar el conector para Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
+
+# Configurar el conector para Microsoft SharePoint
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 El conector para Microsoft SharePoint AEM permite la comunicación entre los formularios de y Microsoft SharePoint. Para obtener información adicional, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
 1. En la consola de administración, haga clic en Servicios > Conector para Microsoft SharePoint.
-1. Especifique la siguiente configuración para el servidor de SharePoint:
+2. Especifique la siguiente configuración para el servidor de SharePoint:
 
    **Nombre de host de SharePoint Server:** El número de puerto del nombre de host de la aplicación web en el servidor de SharePoint, con el formato `[hostname]:'port'`.
 
@@ -31,7 +36,7 @@ El conector para Microsoft SharePoint AEM permite la comunicación entre los for
 
    **Nombre de dominio:** Dominio donde se encuentra el servidor de SharePoint.
 
-1. Haga clic en Guardar.
+3. Haga clic en Guardar.
 
 ## Servicio de configuración de Microsoft SharePoint {#microsoft-sharepoint-configuration-service}
 

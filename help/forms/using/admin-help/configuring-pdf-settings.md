@@ -9,9 +9,9 @@ feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '7403'
+source-wordcount: '7415'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,10 @@ Los trabajos de impresión fallan si tienen fuentes que no se pueden incrustar. 
 **Estándar:** Crea archivos de PDF para imprimirlos en impresoras de escritorio o copiadoras digitales, publicarlos en un CD o enviarlos a un cliente como una revisión de publicación. Este conjunto de opciones utiliza la compresión y la disminución de resolución para reducir el tamaño del archivo. También incrusta subconjuntos de todas las fuentes utilizadas en el archivo, convierte todos los colores en sRGB e imprime a una resolución media para crear una representación razonablemente precisa del documento original. Observe que los subconjuntos de fuentes de Microsoft Windows no están incrustados de forma predeterminada. Estos archivos de PDF se pueden abrir en Acrobat 5 y Acrobat Reader 5.0 y versiones posteriores.
 
 ## Agregar o editar la configuración del PDF {#add-or-edit-pdf-settings}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 La configuración del PDF determina con precisión cómo se convierten los archivos y la estructura y características del PDF resultantes. Defina una nueva configuración de PDF o edite una que haya creado anteriormente. No puede modificar la configuración predefinida, pero puede crear una configuración basada en una existente editándola y guardándola con un nuevo nombre.
 

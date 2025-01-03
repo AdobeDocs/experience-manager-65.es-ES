@@ -9,12 +9,13 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3241'
 ht-degree: 0%
 
 ---
+
 
 # Configurar directorios {#configuring-directories}
 
@@ -25,6 +26,10 @@ Para cada dominio de empresa que configure, especifique los directorios que el p
 Para cada dominio de empresa que configure, especifique los directorios que el proveedor de autenticación consulta para obtener información del usuario. Puede agregar un directorio a un dominio de empresa existente o a un nuevo dominio de empresa que esté agregando. Puede configurar varios directorios para un dominio. También puede configurar un dominio para utilizar una interfaz de proveedor de servicios (SPI) personalizada para la sincronización.
 
 ### Añadir un directorio {#add-a-directory}
+
+>[!NOTE]
+>
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. Haga clic en Nuevo dominio de empresa o seleccione un dominio de empresa existente.

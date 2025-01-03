@@ -9,14 +9,18 @@ exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
 
 # Administrar credenciales locales {#managing-local-credentials}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Las credenciales locales son credenciales de clave privada alojadas en Administración de almacén de confianza. Una *credencial local* identifica dónde se almacena la credencial DES de un usuario. Con la administración de almacén de confianza, puede importar y administrar sus credenciales locales utilizando, por ejemplo, archivos PFX existentes, de modo que pueda importar, editar y eliminar credenciales locales.
 
@@ -37,7 +41,7 @@ Para obtener información e instrucciones relacionadas con las extensiones de Ac
 
    AEM Para obtener información sobre cómo obtener una credencial, consulte [Preparar la instalación de formularios de la](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de la credencial en las extensiones de Acrobat Reader DC y en el servicio Signature. AEM Este alias también se utiliza para acceder a las credenciales mediante programación a través del SDK de formularios de la aplicación de la plataforma de datos de.
+1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de la credencial en las extensiones de Acrobat Reader DC y en el servicio Signature. AEM Este alias también se utiliza para acceder a las credenciales mediante programación mediante el uso de la SDK de formularios de la.
 
    >[!NOTE]
    >

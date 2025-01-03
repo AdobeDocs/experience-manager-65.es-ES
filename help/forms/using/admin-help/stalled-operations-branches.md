@@ -9,14 +9,18 @@ exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---
 
 # Trabajar con operaciones y ramas estancadas {#working-with-stalled-operations-and-branches}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 La página Operaciones paralizadas y la página Ramas paralizadas muestran los procesos que se han paralizado. Un proceso se puede detener cuando se produce un error durante o después de la ejecución de una operación o debido a una operación de detención deliberada en el proceso:
 

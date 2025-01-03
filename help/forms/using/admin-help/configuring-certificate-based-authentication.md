@@ -9,14 +9,18 @@ exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
 
 # Configurar la autenticación basada en certificados {#configuring-certificate-based-authentication}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Administración de usuarios suele realizar la autenticación con un nombre de usuario y una contraseña. Administración de usuarios también admite la autenticación basada en certificados, que puede utilizar para autenticar a los usuarios mediante Acrobat o para autenticar a los usuarios mediante programación. AEM Para obtener más información sobre cómo autenticar usuarios mediante programación, vea [Programar con formularios de la aplicación de la manera de usar y de usar la aplicación de código de tiempo](https://www.adobe.com/go/learn_aemforms_programming_63).
 
@@ -47,7 +51,7 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 1. Haga clic en Nueva asignación de certificado y, en la lista Para emisor, seleccione el alias de certificado según se ha configurado en Administración de almacén de confianza.
 1. Asigne uno de los atributos del certificado al atributo de un usuario. Por ejemplo, puede asignar el nombre común del certificado al ID de inicio de sesión del usuario.
 
-   Si el contenido del atributo en el certificado es diferente del contenido en el atributo del usuario en la base de datos de User Management, puede utilizar una expresión regular de Java (regex) para hacer coincidir los dos atributos. Por ejemplo, si los nombres comunes de los certificados son *Alex Pink (Authentication)* y *Alex Pink (Signing)* y el nombre común de la base de datos de administración de usuarios es *Alex Pink*, use una expresión regular para extraer la parte necesaria del atributo del certificado (en este ejemplo, *Alex Pink*). La expresión regular especificada debe ajustarse a la especificación regex de Java.
+   Si el contenido del atributo en el certificado es diferente del contenido en el atributo del usuario en la base de datos de User Management, puede utilizar una expresión regular de Java (regex) para hacer coincidir los dos atributos. Por ejemplo, si los nombres comunes de los certificados son *Alex Pink (Authentication)* y *Alex Pink (Signing)* y el nombre común de la base de datos de User Management es *Alex Pink*, use una expresión regular para extraer la parte necesaria del atributo del certificado (en este ejemplo, *Alex Pink*). La expresión regular que especifique debe ajustarse a la especificación de Java regex.
 
    Puede transformar la expresión especificando el orden de los grupos en el cuadro Orden personalizado. El orden personalizado se usa con el método `java.util.regex.Matcher.replaceAll()`. El comportamiento que se ve se corresponderá con el comportamiento de ese método y la cadena de entrada (el orden personalizado) debe especificarse en consecuencia.
 

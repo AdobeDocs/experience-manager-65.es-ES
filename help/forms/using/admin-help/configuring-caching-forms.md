@@ -9,14 +9,18 @@ exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1623'
 ht-degree: 1%
 
 ---
 
 # Configurar el almacenamiento en caché para Forms{#configuring-caching-for-forms}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 El servicio Forms toma diseños de formulario creados en Designer y los procesa en varios formatos.
 

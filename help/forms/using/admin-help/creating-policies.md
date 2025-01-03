@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '4713'
+source-wordcount: '4725'
 ht-degree: 0%
 
 ---
 
 # Crear y administrar directivas {#creating-and-managing-policies}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Una *directiva* define un conjunto de configuraciones de confidencialidad y usuarios que pueden tener acceso a un documento al que se aplica la directiva. Se usa un *conjunto de directivas* para agrupar un conjunto de directivas que tienen un propósito comercial común. Estos conjuntos de directivas se ponen a disposición de un subconjunto de usuarios del sistema. Para obtener detalles acerca de las directivas, vea [Directivas y documentos protegidos por directivas](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 

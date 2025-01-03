@@ -9,14 +9,18 @@ exl-id: 01a4faf0-ec6e-475b-9909-c35298e2fcaf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 6%
+source-wordcount: '105'
+ht-degree: 5%
 
 ---
 
 # Eliminar un dominio {#delete-a-domain}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Utilice la página Administración de dominios para marcar un dominio existente como obsoleto.
 

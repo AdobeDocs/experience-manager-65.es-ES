@@ -9,14 +9,18 @@ exl-id: f0ab712f-ecd9-4be8-a7a5-fd1a7a8c9a0b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 6%
+source-wordcount: '208'
+ht-degree: 5%
 
 ---
 
 # Habilitar y deshabilitar el modo de copia de seguridad {#enabling-and-disabling-safe-backup-mode}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 AEM En la página Configuración de copia de seguridad, puede utilizar formularios en modo de copia de seguridad segura para realizar copias de seguridad fiables de la base de datos y del directorio de almacenamiento global de documentos (GDS) (GDS).
 

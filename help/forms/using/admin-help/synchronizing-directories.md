@@ -9,12 +9,13 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
+
 
 # Sincronizar directorios {#synchronizing-directories}
 
@@ -50,11 +51,13 @@ Administración de usuarios realiza los siguientes pasos cuando está habilitada
 
 >[!NOTE]
 >
->Los usuarios y grupos que se eliminaron del directorio no se eliminarán de la base de datos de Administración de usuarios hasta que realice una sincronización de directorios completa.
+> * Los usuarios y grupos que se eliminaron del directorio no se eliminarán de la base de datos de Administración de usuarios hasta que realice una sincronización de directorios completa.
+> * Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
+
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
-1. En Sincronización delta, active la casilla de verificación y haga clic en Guardar.
-1. Edite la configuración de directorio para cada uno de los dominios de empresa que utilizarán la función de sincronización de directorios delta. En las páginas Configuración de usuario y Configuración de grupo, busque la opción Modificar marca de tiempo y escriba `modify TimeStamp` como valor. Para obtener más información sobre cómo editar dominios empresariales, consulte [Editar y convertir dominios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+2. En Sincronización delta, active la casilla de verificación y haga clic en Guardar.
+3. Edite la configuración de directorio para cada uno de los dominios de empresa que utilizarán la función de sincronización de directorios delta. En las páginas Configuración de usuario y Configuración de grupo, busque la opción Modificar marca de tiempo y escriba `modify TimeStamp` como valor. Para obtener más información sobre cómo editar dominios empresariales, consulte [Editar y convertir dominios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Habilitar o deshabilitar el registro detallado durante la sincronización {#enable-or-disable-detailed-logging-during-synchronization}
 

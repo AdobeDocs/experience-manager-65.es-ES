@@ -9,14 +9,18 @@ exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
 
 # Personalizar plantillas de búsqueda {#customizing-search-templates}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Puede crear plantillas de búsqueda para utilizarlas en Workspace y buscar instancias de procesos en las páginas Tareas pendientes y Seguimiento. También puede editar o eliminar plantillas de búsqueda existentes.
 

@@ -9,14 +9,18 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10824'
+source-wordcount: '10836'
 ht-degree: 4%
 
 ---
 
 # Configurar los ajustes del servicio {#configure-service-settings}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 AEM Puede usar la página Administración de servicios para configurar las opciones de cada uno de los servicios que forman parte de los formularios de la. La configuración disponible varía en función del servicio que se esté configurando.
 
@@ -38,7 +42,7 @@ AEM Puede usar la página Administración de servicios para configurar las opcio
 
 ## Configuración del servicio Auditar flujo de trabajo {#audit-workflow-service-settings}
 
-Workbench proporciona la capacidad de registrar instancias de proceso a medida que se ejecutan en tiempo de ejecución y luego reproducirlas para observar el comportamiento del proceso. (Consulte la [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)). Para ahorrar espacio en el sistema de archivos del servidor de Forms, puede limitar la cantidad de datos de registro de procesos que se almacenan. Puede configurar las siguientes propiedades del servicio de flujo de trabajo de auditoría ( `AuditWorkflowService`):
+Workbench proporciona la capacidad de registrar instancias de proceso a medida que se ejecutan en tiempo de ejecución y luego reproducirlas para observar el comportamiento del proceso. (Consulte la [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Para conservar espacio en el sistema de archivos de Forms Server, puede limitar la cantidad de datos de registro de procesos que se almacenan. Puede configurar las siguientes propiedades del servicio de flujo de trabajo de auditoría ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** El número máximo de grabaciones almacenadas. Cuando se almacena el número máximo, la grabación más antigua se elimina del sistema de archivos cuando se crea una nueva grabación. Esta propiedad es útil si tiende a crear muchas grabaciones y desea quitar automáticamente las antiguas. El valor predeterminado es 50.
 
@@ -692,7 +696,7 @@ Validación de firmas:** Si se selecciona esta opción, se utiliza la informaci�
 
 ## Configuración del servicio de carpetas inspeccionadas {#watched-folder-service-settings}
 
-El servicio de carpetas inspeccionadas (`WatchedFolder`) configura atributos que son comunes para todos los extremos de carpetas inspeccionadas. También proporciona valores predeterminados para los extremos de carpeta observados. (Consulte [Configuración de puntos finales de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)). Las aplicaciones cliente externas no lo invocan ni lo utilizan en los procesos creados en Workbench.
+El servicio de carpetas inspeccionadas (`WatchedFolder`) configura atributos que son comunes para todos los extremos de carpetas inspeccionadas. También proporciona valores predeterminados para los extremos de carpeta observados. (Consulte [Configuración de puntos finales de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) No es invocado por aplicaciones cliente externas ni se utiliza en procesos creados en Workbench.
 
 Las siguientes configuraciones están disponibles para el servicio de carpetas inspeccionadas.
 

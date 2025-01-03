@@ -9,9 +9,9 @@ exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Una vez compartidas, el usuario puede completar estas tareas, con acceso a la co
 >Flex Workspace AEM ya no se utiliza para la versión de formularios en la que se puede utilizar el formulario.
 
 ### Configurar el acceso a una cola de usuarios seleccionada {#configuring-access-to-a-selected-user-queue}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 1. Inicie sesión en la consola de administración con una cuenta de administrador.
 1. Seleccione **Servicios** > **Forms Workflow** > **Cola compartida**.

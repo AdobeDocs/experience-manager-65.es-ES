@@ -9,14 +9,18 @@ exl-id: eb8c748d-51d9-4684-97c5-e982ad84ba9f
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 9%
+source-wordcount: '208'
+ht-degree: 8%
 
 ---
 
 # Configurar el bloqueo de cuentas {#configure-account-locking-settings}
+
+>[!NOTE]
+> 
+> Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 Cuando agregue un dominio, especifique si desea habilitar el bloqueo de cuentas. Cuando se selecciona la opción Habilitar bloqueo de cuentas, las cuentas de usuario se bloquean después de un número determinado de errores de autenticación consecutivos. Después de un período de tiempo especificado, el usuario puede intentar autenticarse de nuevo. Esta función evita que los usuarios intenten varias combinaciones de credenciales para acceder al sistema.
 
