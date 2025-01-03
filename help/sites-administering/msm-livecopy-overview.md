@@ -9,10 +9,10 @@ feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 30%
+source-wordcount: '529'
+ht-degree: 31%
 
 ---
 
@@ -62,15 +62,11 @@ La **Información general de Live Copy** se puede abrir al ver las propiedades d
 
 1. Seleccione **Información general de Live Copy** para mostrar y usar la información general de todas las Live Copies relacionadas con el modelo actual.
 
-   >[!NOTE]
-   >
-   >Para obtener más información, consulte también el artículo de la base de conocimiento [Mensaje de estado de LiveCopy: actualizado/verde/sincronizado](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
-
 1. Use **Cerrar** para salir y volver a la consola **Sites**.
 
 ## Información general sobre el uso de Live Copy {#using-the-live-copy-overview}
 
-La **Información general de Live Copy** también se puede usar para realizar acciones en Live Copy:
+**Información general de Live Copy** también se puede usar para realizar acciones en Live Copy:
 
 1. Abra la **Información general de Live Copy**.
 1. Seleccione el modelo necesario o la página de Live Copy: la barra de herramientas se actualizará para mostrar las acciones disponibles. Las [acciones](/help/sites-administering/msm.md#terms-used) disponibles dependen de si selecciona una página de [modelo](#actions-for-a-blueprint-page) o [Live Copy](#actions-for-a-live-copy-page):

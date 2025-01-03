@@ -5,9 +5,9 @@ feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '4194'
+source-wordcount: '4177'
 ht-degree: 40%
 
 ---
@@ -193,10 +193,6 @@ Para ver las propiedades:
    Por ejemplo:
 
    ![Seleccionar Live Copy](assets/chlimage_1-218.png)
-
-   >[!NOTE]
-   >
-   >Para obtener más información, consulte también el artículo de la base de conocimiento [Mensaje de estado de LiveCopy: actualizado/verde/sincronizado](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 ### Ver las Live Copies de una página de modelo {#seeing-the-live-copies-of-a-blueprint-page}
 
