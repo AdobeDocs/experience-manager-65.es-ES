@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 5827cf69222962243cfebdc9c41eb73f90ac950a
+source-git-commit: 2fc6225887436685f598baf4ea2c4a01534d8704
 workflow-type: tm+mt
-source-wordcount: '7480'
+source-wordcount: '7475'
 ht-degree: 67%
 
 ---
@@ -46,16 +46,16 @@ ht-degree: 67%
    + [Revisión del paquete de servicio AEM Forms](/help/release-notes/aem-forms-hotfix.md)
    + [Funciones clave acumulativas y mejoras](/help/release-notes/cumulative-features-enhancements.md)
    + [Funciones en desuso y eliminadas](/help/release-notes/deprecated-removed-features.md)
-   + [Estado de función de IU táctil](/help/release-notes/touch-ui-features-status.md)
+   + [Estado de función de Touch IU](/help/release-notes/touch-ui-features-status.md)
 + Seguridad {#security}
-   + [Administración de usuarios y seguridad](/help/sites-administering/security.md)
-   + [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md)
+   + [Seguridad y administración de usuarios](/help/sites-administering/security.md)
+   + [Administración de derechos de acceso, grupo y usuario](/help/sites-administering/user-group-ac-admin.md)
    + [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md)
    + [Principales 10 de OWASP](/help/sites-administering/owasp-top10.md)
    + [AEM Ejecución en modo listo para la producción](/help/sites-administering/production-ready.md)
    + [Administración de identidades](/help/sites-administering/identity-management.md)
    + [Autenticación IMS de Adobe y compatibilidad con el Admin Console AEM para el uso de Managed Services](/help/sites-administering/ims-config-and-admin-console.md)
-   + [Creación de un grupo de usuarios cerrado](/help/sites-administering/cug.md)
+   + [Creación de un grupo cerrado de usuarios](/help/sites-administering/cug.md)
    + [AEM Mitigación de problemas de serialización en la](/help/sites-administering/mitigating-serialization-issues.md)
    + [Sincronización de usuarios](/help/sites-administering/sync.md)
    + [Compatibilidad con tokens encapsulados](/help/sites-administering/encapsulated-token.md)
@@ -106,7 +106,7 @@ ht-degree: 67%
          + [Resolución de problemas de AEM durante la creación](/help/sites-authoring/troubleshooting.md)
          + [Métodos abreviados de teclado al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
          + [Prácticas recomendadas](/help/sites-authoring/best-practices.md)
-      + Características del sitio y de la página {#siteandpage}
+      + Funciones del sitio y Página {#siteandpage}
          + [Uso de etiquetas](/help/sites-authoring/tags.md)
          + [Creación de plantillas de página  ](/help/sites-authoring/templates.md)
          + [Sistema de estilos](/help/sites-authoring/style-system.md)
@@ -116,7 +116,7 @@ ht-degree: 67%
          + [Diseño adaptable](/help/sites-authoring/responsive-layout.md)
          + [Perspectiva de contenido](/help/sites-authoring/content-insights.md)
          + [Crear contenido accesible (Conformidad con WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
-         + [Configuración de componentes en modo de diseño](/help/sites-authoring/default-components-designmode.md)
+         + [Configurar componentes en modo Diseño](/help/sites-authoring/default-components-designmode.md)
          + [Componentes de base](/help/sites-authoring/default-components-foundation.md)
          + [Andamiaje](/help/sites-authoring/scaffolding.md)
          + [Visualización de datos de análisis de la página](/help/sites-authoring/page-analytics-using.md)
@@ -135,8 +135,8 @@ ht-degree: 67%
          + [Aplicación de flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md)
          + [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md)
          + [Uso de flujos de trabajo de proyecto](/help/sites-authoring/projects-with-workflows.md)
-      + Rendimiento de página {#page-performance}
-         + [Perspectiva de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
+      + Página rendimiento {#page-performance}
+         + [Insight de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
          + [Análisis del rendimiento de la página](/help/sites-authoring/ci-analyze.md)
          + [Visualización de datos de análisis de la página](/help/sites-authoring/pa-using.md)
       + Personalización {#personalization}
@@ -171,7 +171,7 @@ ht-degree: 67%
          + [Administración de proyectos de traducción](/help/sites-administering/tc-manage.md)
          + [Identificación del contenido a traducir](/help/sites-administering/tc-rules.md)
          + [Preparación del contenido para su traducción](/help/sites-administering/tc-prep.md)
-         + [Creación de una raíz de idioma mediante la IU clásica](/help/sites-administering/tc-lroot-classic.md)
+         + [Creación de una raíz de Idioma con el IU clásico](/help/sites-administering/tc-lroot-classic.md)
          + [Volver a conectar con Microsoft Translator](/help/sites-administering/tc-msconf.md)
          + [Configuración del marco de trabajo de integración de traducción](/help/sites-administering/tc-tic.md)
          + [Asistente para copia de idioma](/help/sites-administering/tc-wizard.md)
@@ -200,9 +200,9 @@ ht-degree: 67%
          + [Inicio de flujos de trabajo](/help/sites-administering/workflows-starting.md)
          + [Administración de flujos de trabajo](/help/sites-administering/workflows.md)
          + [Administración de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md)
-         + [AEM Uso de cURL con](/help/sites-administering/curl.md)
-         + [Herramienta Servidor Proxy (proxy.jar)](/help/sites-administering/proxy-jar.md)
-         + [AEM Configuración de para aplicaciones de](/help/sites-administering/config-apps.md)
+         + [Uso de cURL con AEM](/help/sites-administering/curl.md)
+         + [Herramienta Servidor proxy (proxy.jar)](/help/sites-administering/proxy-jar.md)
+         + [Configuración para AEM aplicaciones](/help/sites-administering/config-apps.md)
          + [Configurar formularios de búsqueda](/help/sites-administering/search-forms.md)
          + [Consolas de herramientas](/help/sites-administering/tools-consoles.md)
          + [Informes](/help/sites-administering/reporting.md)
@@ -227,11 +227,11 @@ ht-degree: 67%
          + [Integración con Adobe Analytics](/help/sites-administering/adobeanalytics.md)
          + [Conectarse a Adobe Analytics y crear marcos](/help/sites-administering/adobeanalytics-connect.md)
          + [Configuración del seguimiento de vínculos para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
-         + [Asignación de datos de componente con propiedades de Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
-         + [Configuración del seguimiento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
+         + [Asignación de datos de Componente con Adobe Analytics Propiedades](/help/sites-administering/adobeanalytics-mapping.md)
+         + [Configuración del seguimiento de Vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
          + [Preguntas frecuentes sobre la entrega de contenido HTTP2](/help/sites-administering/scene7-http2faq.md)
          + [Solución de problemas de integración de Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
-         + [Conector de SharePoint](/help/sites-administering/sharepoint-connector.md)
+         + [SharePoint Connector](/help/sites-administering/sharepoint-connector.md)
          + [Licencias, avisos de copyright y exenciones de responsabilidad del conector de SharePoint](/help/sites-administering/sharepoint-connector-licenses.md)
          + [Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
          + [Integración con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
@@ -262,9 +262,9 @@ ht-degree: 67%
          + [Prácticas recomendadas](/help/sites-administering/administer-best-practices.md)
          + [Prácticas recomendadas de traducción](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
          + [Prácticas recomendadas de MSM](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
-         + [AEM Sites: Preparación para el RGPD](/help/sites-administering/gdpr-compliance-sites.md)
-         + AEM [Tratamiento de solicitudes de RGPD para la base de datos de la](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
-         + [AEM Commerce - Preparación para el RGPD](/help/sites-administering/gdpr-compliance-commerce.md)
+         + [AEM Sites - Preparación para el RGPD](/help/sites-administering/gdpr-compliance-sites.md)
+         + [Gestión de solicitudes RGPD de la Fundación AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
+         + [AEM Commerce: preparación para el RGPD](/help/sites-administering/gdpr-compliance-commerce.md)
       + Administración de contenido {#contentmanagement}
          + [El administrador de paquetes](/help/sites-administering/package-manager.md)
          + [Administración de etiquetas](/help/sites-administering/tags.md)
@@ -315,16 +315,16 @@ ht-degree: 67%
          + [Promoción de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-promoting.md)
       + Personalización {#personalization}
          + [Información acerca de la segmentación](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
-         + [Campaign Management](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)
+         + [Gestión Campaign](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)
          + [Páginas de destino](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
-         + [Ofertas de Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
+         + [Target ofertas](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
          + [Marketing por correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
          + [Seguimiento de correos electrónicos rechazados](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
-         + [Teasers and Strategies](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
-         + [Configuración de la campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
-         + [Publicación de un correo electrónico para proveedores de servicios de correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
-         + [Trabajar con el administrador de campañas de marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
-         + [Creación de una página de aterrizaje de newsletter efectiva](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+         + [Teasers y estrategias](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
+         + [Configuración del campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
+         + [Publicación un correo electrónico a los proveedores de servicios de correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
+         + [Trabajar con el Administrador de Campaign de marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
+         + [Creación de un Página de aterrizaje Newsletter eficaz](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
          + [Administración de suscripciones](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
       + Adobe Campaign {#campaign}
          + [Uso de Adobe Campaign 6.1 y Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
@@ -377,12 +377,12 @@ ht-degree: 67%
       + [Aplicación de ajustes preestablecidos de visualizador de Dynamic Media](/help/assets/viewer-presets.md)
       + [Administración de ajustes preestablecidos de imagen de Dynamic Media](/help/assets/managing-image-presets.md)
       + [Aplicación de ajustes preestablecidos de imagen de Dynamic Media](/help/assets/image-presets.md)
-      + [Perfiles de vídeo de Dynamic Media](/help/assets/video-profiles.md)
-      + [Perfiles de imagen de Dynamic Media](/help/assets/image-profiles.md)
+      + [Dynamic Media Vídeo perfiles](/help/assets/video-profiles.md)
+      + [Dynamic Media Imagen perfiles](/help/assets/image-profiles.md)
       + [Imágenes inteligentes](/help/assets/imaging-faq.md)
       + [Imágenes inteligentes con proporción de píxeles de dispositivo del lado del cliente](/help/assets/client-side-dpr.md)
       + [Vídeo](/help/assets/s7-video.md)
-      + [Entrega HTTP2 de contenido](/help/assets/http2.md)
+      + [envío HTTP2 de contenido](/help/assets/http2.md)
       + [Entrega de recursos de Dynamic Media](/help/assets/delivering-dynamic-media-assets.md)
       + [Activación de la protección de enlaces interactivos en Dynamic Media](/help/assets/hotlink-protection.md)
       + [Compatibilidad con 3D](/help/assets/assets-3d.md)
@@ -1209,9 +1209,8 @@ ht-degree: 67%
       + [Mitigación de vulnerabilidades RCE de Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
       + [Error al realizar la copia de seguridad de la base de datos durante la actualización a 6.5.12.0 para MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La generación de PDF no puede imprimir un gran número de PDF en Workbench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
-      + [AEM Cómo reiniciar correctamente el SDK de la](/help/forms/using/restart-aem-sdk.md)
+      + [AEM Cómo reiniciar correctamente SDK de la](/help/forms/using/restart-aem-sdk.md)
       + [El servicio PaperCapture no puede realizar OCR en los PDF](/help/forms/using/papercapture-service-resolution.md)
-      + [Desinstalar el paquete de complementos de AEM Forms](/help/forms/using/uninstall-forms-addon-package.md)
    + Documentación heredada {#legacy-documentation}
       + [Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](/help/forms/developing/building-xml.md)
       + [Comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1256,12 +1255,12 @@ ht-degree: 67%
    + AEM CIF Classic {#classic}
       + [Información general](/help/commerce/cif-classic/home.md)
       + Implementando {#deploying}
-         + [Información general de eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
-         + [COMMERCE CLOUD SAP](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
+         + [Información general de comercio electrónico](/help/commerce/cif-classic/deploying/ecommerce.md)
+         + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
       + Administración {#administering}
          + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
          + [Conceptos ](/help/commerce/cif-classic/administering/concepts.md)
-         + [Administración de comercio electrónico genérico](/help/commerce/cif-classic/administering/generic.md)
+         + [Administración de comercio electrónico genéricos](/help/commerce/cif-classic/administering/generic.md)
          + [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
       + Desarrollo de {#developing}
          + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
@@ -1291,7 +1290,7 @@ ht-degree: 67%
       + [Conceptos básicos de creación para usuarios sin encabezado con AEM](/help/journey-headless/author/basics.md)
       + [Obtenga información sobre el uso de referencias en fragmentos de contenido](/help/journey-headless/author/references.md)
       + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](/help/journey-headless/author/metadata-tagging.md)
-   + AEM Recorrido de traducción sin encabezado {#translation}
+   + AEM viaje de traducción sin cabeza {#translation}
       + [Comprender la traducción sin encabezado en AEM](/help/journey-headless/translation/overview.md)
       + [Introducción a la traducción sin encabezado AEM](/help/journey-headless/translation/getting-started.md)
       + [Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM](/help/journey-headless/translation/learn-about.md)
@@ -1317,7 +1316,7 @@ ht-degree: 67%
          + [Seguridad](/help/sites-developing/security.md)
          + [Materiales de referencia](/help/sites-developing/reference-materials.md)
          + [Crear un sitio web con todas las funciones (IU clásica)](/help/sites-developing/website.md)
-         + [Diseños y Designer (IU clásica)](/help/sites-developing/designer.md)
+         + [Los diseños y el diseñador (Classic IU)](/help/sites-developing/designer.md)
          + [Migración a la IU táctil](/help/sites-developing/touch-ui-migration.md)
       + Plataforma {#platform}
          + [Hoja de referencia de Sling](/help/sites-developing/sling-cheatsheet.md)
@@ -1326,8 +1325,8 @@ ht-degree: 67%
          + Plantillas{#templates}
             + [Plantillas](/help/sites-developing/templates.md)
             + [Plantillas de página: editables](/help/sites-developing/page-templates-editable.md)
-            + [Plantillas de página: estáticas](/help/sites-developing/page-templates-static.md)
-            + [Plantillas de fragmentos de contenido](/help/sites-developing/content-fragment-templates.md)
+            + [Plantillas Página: estáticas](/help/sites-developing/page-templates-static.md)
+            + [Plantillas de fragmento de contenido](/help/sites-developing/content-fragment-templates.md)
             + [Representación de plantilla adaptable](/help/sites-developing/templates-adaptive-rendering.md)
          + [AEM Uso de la fusión de recursos de Sling en la](/help/sites-developing/sling-resource-merger.md)
          + [Superposiciones](/help/sites-developing/overlays.md)
@@ -1346,8 +1345,8 @@ ht-degree: 67%
          + [Agregar fuentes para la representación gráfica](/help/sites-developing/adding-fonts.md)
          + [Conexión a Bases de Datos SQL](/help/sites-developing/jdbc.md)
          + [Externalización de direcciones URL](/help/sites-developing/externalizer.md)
-         + [Creación y consumo de trabajos para la descarga](/help/sites-developing/dev-offloading.md)
-         + [Configurar el uso de cookies](/help/sites-developing/cookie-optout.md)
+         + [Creación y consumo de trabajos para descarga](/help/sites-developing/dev-offloading.md)
+         + [Configuración del uso de cookies](/help/sites-developing/cookie-optout.md)
          + [Cómo acceder mediante programación al JCR de AEM](/help/sites-developing/access-jcr.md)
          + [Integración de servicios con la consola JMX](/help/sites-developing/jmx-integration.md)
          + [Desarrollo del editor en bloque](/help/sites-developing/dev-bulk-editor.md)
@@ -1377,8 +1376,8 @@ ht-degree: 67%
          + Componentes de IU clásica {#classic-ui-components}
             + [AEM Desarrollo de componentes de la (IU clásica)](/help/sites-developing/developing-components-classic.md)
             + [Uso y ampliación de widgets (IU clásica)](/help/sites-developing/widgets.md)
-            + [Uso de xtypes (IU clásica)](/help/sites-developing/xtypes.md)
-            + [Desarrollo de Forms (IU clásica)](/help/sites-developing/developing-forms.md)
+            + [Uso de xtype (Classic IU)](/help/sites-developing/xtypes.md)
+            + [Desarrollo de Forms (Classic IU)](/help/sites-developing/developing-forms.md)
       + [Modelos con encabezado y sin encabezado en AEM](/help/sites-developing/headful-headless.md)
       + Administración de experiencias sin objetivos {#headless}
          + [Sin encabezado y AEM](/help/sites-developing/headless/introduction.md)
