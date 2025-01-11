@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
+source-git-commit: 93e5ae0c8b8528af9230eae51e66c91f2239edb0
 workflow-type: tm+mt
-source-wordcount: '11203'
+source-wordcount: '11157'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 >[!IMPORTANT]
 >
->Antes de trabajar con vídeo en Dynamic Media, asegúrese de que su administrador de Adobe Experience Manager ya haya habilitado y configurado los Cloud Service de Dynamic Media en modo Dynamic Media - Scene7 o Dynamic Media - Hybrid.
+>Asegúrese de que el administrador de Adobe Experience Manager haya habilitado y configurado los Cloud Service de Dynamic Media en modo Dynamic Media - Scene7 o en modo híbrido antes de trabajar con vídeo en Dynamic Media.
 >
 >* Consulte [Configuración de Cloud Service de Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media - Modo Scene7 y [Solución de problemas de Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
 >
@@ -44,6 +44,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
    * Cree su propio perfil de codificación de vídeo. O bien, puede usar el perfil predefinido _Codificación de vídeo adaptable_ que se incluye con Dynamic Media.
 
       * [Crear un perfil de codificación de vídeo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * La resolución de codificación de vídeo de salida máxima es de 8.192 × 4.320 o 4.320 × 8.192,md.
       * Más información sobre [Prácticas recomendadas para la codificación de vídeo](#best-practices-for-encoding-videos).
 
    * Asocie el perfil de procesamiento de vídeo a una o varias carpetas en las que va a cargar los vídeos de origen principales.
@@ -54,7 +55,8 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
    * Cargue los vídeos de origen principales en las carpetas. Al añadir vídeos a la carpeta, se codifican según el perfil de procesamiento de vídeo que haya asignado a la carpeta.
 
-      * Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 x 25.
+      * Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 × 25.
+      * La resolución de entrada de vídeo máxima admitida es de 16.384 × 16.384.
       * Puede cargar archivos de vídeo de hasta 15 GB cada uno.
       * [Cargue sus vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/assets-formats.md#supported-multimedia-formats).
@@ -121,11 +123,11 @@ Obtenga más información acerca de las [prácticas recomendadas para organizar 
 
 ## Trabajo con vídeo en Dynamic Media {#working-with-video-in-dynamic-media}
 
-El vídeo en Dynamic Media es una solución completa que facilita la publicación de vídeos adaptables de alta calidad para su transmisión por streaming en varias pantallas, incluidas las de escritorio, las de iOS, las de Android™, las de BlackBerry® y las de dispositivos móviles con Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo que se codifican a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
+El vídeo en Dynamic Media es una solución integral que facilita la publicación de vídeo adaptable de alta calidad para su transmisión por streaming en varias pantallas, incluidos dispositivos de escritorio, iOS, Android™, BlackBerry® y Windows para dispositivos móviles. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo que se codifican a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
-Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptables. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tabletas.
+Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda, como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptables. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tabletas.
 
-Además, la calidad de vídeo cambia automáticamente si las condiciones de red cambian en el escritorio o en el dispositivo móvil. Además, si un cliente entra en modo de pantalla completa en un equipo de escritorio, el conjunto de vídeos adaptable responde con una mejor resolución, lo que mejora la experiencia de visualización del cliente. El uso de conjuntos de vídeos adaptables proporciona la mejor reproducción posible para los clientes que reproducen vídeo de Dynamic Media en varias pantallas y dispositivos.
+Además, la calidad de vídeo cambia automáticamente si las condiciones de red cambian en el escritorio o en el dispositivo móvil. Además, si un cliente entra en modo de pantalla completa en un equipo de escritorio, el conjunto de vídeos adaptable responde con una mejor resolución, lo que mejora la experiencia de visualización del cliente. Los conjuntos de vídeos adaptables garantizan una reproducción óptima para los clientes que visualizan vídeo de Dynamic Media en varias pantallas y dispositivos.
 
 La lógica que utiliza un reproductor de vídeo para determinar qué vídeo codificado se reproducirá o seleccionará durante la reproducción se basa en el siguiente algoritmo:
 
@@ -139,16 +141,16 @@ Para obtener información técnica detallada sobre el algoritmo, consulte [https
 
 Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admite lo siguiente:
 
-* Carga de vídeo desde numerosos formatos de vídeo y audio compatibles y codificación de vídeo al formato MP4 H.264 para su reproducción en varias pantallas. Puede utilizar ajustes preestablecidos de vídeo adaptables predefinidos, ajustes preestablecidos de codificación de vídeo únicos o personalizar su propia codificación para controlar la calidad y el tamaño del vídeo.
+* Cargue vídeos en varios formatos compatibles y codifíquelos en MP4 H.264 para reproducirlos en varias pantallas. Puede utilizar ajustes preestablecidos de vídeo adaptables predefinidos, ajustes preestablecidos de codificación de vídeo únicos o personalizar su propia codificación para controlar la calidad y el tamaño del vídeo.
 
    * Cuando se genera un conjunto de vídeos adaptable, incluye vídeos MP4.
-   * **Nota**: Los vídeos principal/de origen no se agregan a un conjunto de vídeos adaptable.
+   * **Nota**: Los vídeos principales/de origen no se agregan a un conjunto de vídeos adaptable.
 
 * Subtítulos de vídeo en todos los visores de vídeo de HTML5.
 * Organice, examine y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
 * Ofrezca conjuntos de vídeos adaptables a la web y a equipos de escritorio y dispositivos móviles, incluidos iPhone, iPad, Android™, BlackBerry® y Windows Phone.
 
-La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
+La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -164,15 +166,15 @@ Puede encontrar dispositivos Windows compatibles con este formato de vídeo en: 
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) y [Visualizadores solo para recursos de Experience Manager](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
+Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Visualizadores solo para recursos de Experience Manager](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Práctica recomendada: Uso del visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
-Los ajustes preestablecidos del visualizador de vídeo Dynamic Media HTML5 son reproductores de vídeo sólidos. Puede utilizarlas para evitar muchos problemas comunes asociados con la reproducción de vídeo de HTML5. Además, se han corregido problemas asociados con los dispositivos móviles, como la falta de entrega de flujo de bits adaptable y el limitado alcance del explorador de escritorio.
+Los ajustes preestablecidos de visualizador de vídeo Dynamic Media HTML5 son reproductores de vídeo sólidos. Puede utilizarlas para evitar muchos problemas comunes asociados con la reproducción de vídeo de HTML5. Además, se han corregido problemas asociados con los dispositivos móviles, como la falta de entrega de flujo de bits adaptable y el limitado alcance del explorador de escritorio.
 
 En el lado del diseño del reproductor, puede diseñar la funcionalidad del reproductor de vídeo con herramientas de desarrollo web estándar. Por ejemplo, puede diseñar los botones, los controles y el fondo de imagen de póster personalizado con HTML5 y CSS para ayudarle a llegar a sus clientes con un aspecto personalizado.
 
-En la parte de reproducción del visor, detecta automáticamente la capacidad de vídeo del explorador. A continuación, sirve el vídeo mediante HLS (flujo en directo HTTP) o DASH (flujo adaptable dinámico a través de HTTP) , también conocido como flujo de velocidad de bits adaptable. O bien, si estos métodos de envío no están presentes, se utiliza HTML 5 progressive en su lugar.
+En la parte de reproducción del visor, detecta automáticamente la capacidad de vídeo del explorador. A continuación, sirve el vídeo mediante HLS (flujo en directo HTTP) o DASH (flujo adaptable dinámico a través de HTTP), también conocido como flujo de velocidad de bits adaptable. O bien, si estos métodos de envío no están presentes, se utiliza HTML 5 progressive en su lugar.
 
 Al combinar en un solo reproductor lo siguiente:
 
@@ -180,17 +182,17 @@ Al combinar en un solo reproductor lo siguiente:
 * Tener reproducción incrustada
 * Utilice flujo continuo adaptable y progresivo según la capacidad del explorador
 
-Amplía el alcance del contenido multimedia enriquecido tanto para usuarios de equipos de escritorio como de dispositivos móviles y garantiza una experiencia de vídeo optimizada.
+Amplía el alcance del contenido multimedia enriquecido tanto para usuarios de equipos de escritorio como de dispositivos móviles, y garantiza una experiencia de vídeo optimizada.
 
-Ver también [Acerca de los visores de HTML 5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
+Ver también [Acerca de los visores de HTML 5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 En el caso de la transmisión de vídeo adaptable de escritorio y móvil, los vídeos utilizados para la conmutación de velocidad de bits se basan en todos los vídeos MP4 del conjunto de vídeos adaptable.
 
-La reproducción de vídeo se produce mediante DASH o HLS o descarga de vídeo progresivo. En versiones anteriores de Experience Manager, como 6.0, 6.1 y 6.2, los vídeos se transmitían por HTTP.
+La reproducción de vídeo se produce mediante DASH o HLS, o descarga de vídeo progresivo. En versiones anteriores de Experience Manager, como 6.0, 6.1 y 6.2, los vídeos se transmitían por HTTP.
 
-En Experience Manager 6.3 y versiones posteriores, los vídeos se transmiten ahora por HTTPS (es decir, DASH o HLS) porque la URL del servicio de puerta de enlace DM siempre utiliza HTTPS. Este comportamiento predeterminado no afecta a los clientes. Es decir, la transmisión de vídeo siempre se produce a través de HTTPS a menos que el explorador no la admita. (Consulte la tabla siguiente). Por lo tanto,
+En Experience Manager 6.3 y versiones posteriores, los vídeos se transmiten ahora por HTTPS (es decir, DASH o HLS) porque la URL del servicio de puerta de enlace DM siempre utiliza HTTPS. Este comportamiento predeterminado no afecta a los clientes. La transmisión de vídeo siempre se produce a través de HTTPS, excepto cuando el explorador no la admite. (Consulte la tabla siguiente). Por lo tanto,
 
 * Si tiene un sitio web HTTPS con flujo de vídeo HTTPS, el flujo está bien.
 * Si tiene un sitio web HTTP con flujo de vídeo HTTPS, el flujo está bien y no hay problemas de contenido mixto desde el explorador web.
@@ -199,7 +201,7 @@ DASH es el estándar internacional y HLS es un estándar de Apple. Ambos se util
 
 El vídeo progresivo se proporciona descargando y almacenando el vídeo localmente en el sistema de escritorio o el dispositivo móvil de un usuario.
 
-En la tabla siguiente se describe el dispositivo, el navegador y el método de reproducción de vídeos en equipos de escritorio y dispositivos móviles mediante el Visor de vídeo de Dynamic Media.
+En la tabla siguiente se describe el dispositivo, el navegador y el método de reproducción de vídeos en equipos de escritorio y dispositivos móviles mediante el visualizador de vídeo de Dynamic Media.
 
 <table>
  <tbody>
@@ -216,7 +218,7 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   <tr>
    <td>Escritorio</td>
    <td>Internet Explorer 11+</td>
-   <td>En Windows 8 y Windows 10: forzar el uso de HTTPS siempre que se solicite DASH* o HLS. Limitación conocida: HTTP en DASH* o HLS no funciona en esta combinación de explorador/sistema operativo <br /> <br /> En Windows 7: descarga progresiva. Utiliza la lógica estándar para seleccionar el protocolo HTTP frente al protocolo HTTPS.</td>
+   <td>En Windows 8 y Windows 10: forzar el uso de HTTPS siempre que se solicite DASH* o HLS. Limitación conocida: HTTP en DASH* o HLS no funciona en esta combinación de explorador/sistema operativo <br /> <br /> En Windows 7 - Descarga progresiva. Utiliza la lógica estándar para seleccionar el protocolo HTTP frente al protocolo HTTPS.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
@@ -226,17 +228,17 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   <tr>
    <td>Escritorio</td>
    <td>Firefox 45 o posterior</td>
-   <td>Velocidad de bits adaptable DASH* o HLS.</td>
+   <td>Flujo de velocidad de bits adaptable DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
    <td>Chrome</td>
-   <td>Velocidad de bits adaptable DASH* o HLS.</td>
+   <td>Flujo de velocidad de bits adaptable DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
    <td>Safari (Mac)</td>
-   <td>Flujo de velocidad de bits adaptable HLS.</td>
+   <td>Flujo de velocidad de bits adaptable de HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -246,7 +248,7 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android™ 7 o posterior)</td>
-   <td>Velocidad de bits adaptable DASH* o HLS.</td>
+   <td>Flujo de velocidad de bits adaptable DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -256,28 +258,28 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>Flujo de velocidad de bits adaptable HLS.</td>
+   <td>Flujo de velocidad de bits adaptable de HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>Flujo de velocidad de bits adaptable HLS.</td>
+   <td>Flujo de velocidad de bits adaptable de HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>BlackBerry®</td>
-   <td>Velocidad de bits adaptable DASH* o HLS./td&gt;
+   <td>Flujo de velocidad de bits adaptable DASH* o HLS./td&gt;
   </tr>
  </tbody>
 </table>
 
 >[!IMPORTANT]
 >
->*Para usar DASH para tus videos, primero debes habilitarlo en tu cuenta con el Soporte técnico de Adobe. Ver [Habilitar DASH en tu cuenta de Dynamic Media](#enable-dash).
+>*Para usar DASH en tus videos, el Soporte técnico de Adobe debe habilitarlo primero en tu cuenta. Ver [Habilitar DASH en tu cuenta de Dynamic Media](#enable-dash).
 
 ## Arquitectura de la solución de vídeo de Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
-El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican mediante DMGateway (en modo híbrido de Dynamic Media) y que se ponen a disposición del público.
+El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican a través de DMGateway (en modo híbrido de Dynamic Media) y que se ponen a disposición del público.
 
 ![Arquitectura de la solución de vídeo de Dynamic Media.](assets/chlimage_1-427.png)
 
@@ -299,16 +301,16 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Cuando codifique un archivo de vídeo, utilice un archivo de vídeo de origen de la máxima calidad posible. Evite utilizar archivos de vídeo codificados anteriormente porque estos archivos ya están comprimidos y una codificación posterior crea un vídeo de calidad inferior.
 
-* Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 x 25.
+* Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 × 25.
 * Puede cargar archivos de vídeo de origen principales de hasta 15 GB cada uno.
 
 En la tabla siguiente se describe el tamaño recomendado, la relación de aspecto y la velocidad de bits mínima que deben tener los archivos de vídeo de origen antes de codificarlos:
 
 | Tamaño | Proporción de aspecto | Velocidad de bits mínima |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 4500 Kbps para la mayoría de los vídeos. |
-| 1280 X 720 | 16:9 | 3000 - 6000 kbps, dependiendo de la cantidad de movimiento en el vídeo. |
-| 1920 X 1080 | 16:9 | 6.000 a 8.000 kbps, en función de la cantidad de movimiento del vídeo. |
+| 1024 × 768 | 4:3 | 4500 Kbps para la mayoría de los vídeos. |
+| 1280 × 720 | 16:9 | 3000 - 6000 kbps, dependiendo de la cantidad de movimiento en el vídeo. |
+| 1920 × 1080 | 16:9 | 6.000 a 8.000 kbps, en función de la cantidad de movimiento del vídeo. |
 
 ### Obtener los metadatos de un archivo {#obtaining-a-file-s-metadata}
 
@@ -320,9 +322,9 @@ Puede obtener los metadatos de un archivo visualizando sus metadatos mediante un
 
 ### Proporción de aspecto {#aspect-ratio}
 
-Cuando elija o cree un ajuste preestablecido de codificación de vídeo para el archivo de vídeo de origen principal, asegúrese de que el ajuste preestablecido tenga la misma proporción de aspecto que el archivo de vídeo de origen principal. La relación de aspecto es la relación entre la anchura y la altura del vídeo.
+Al seleccionar o crear un ajuste preestablecido de codificación de vídeo para el archivo de vídeo principal, asegúrese de que la proporción de aspecto del ajuste preestablecido coincida con la del archivo de vídeo principal. La relación de aspecto es la relación entre la anchura y la altura del vídeo.
 
-Para determinar la proporción de aspecto de un archivo de vídeo, obtenga los metadatos del archivo y anote la anchura y altura del archivo (consulte Obtención de metadatos de un archivo más arriba). A continuación, utilice esta fórmula para determinar la relación de aspecto:
+Para determinar la proporción de aspecto de un archivo de vídeo, obtenga los metadatos del archivo y anote la anchura y altura del archivo. Consulte Obtención de metadatos de un archivo, más arriba. A continuación, utilice esta fórmula para determinar la relación de aspecto:
 
 anchura/altura = proporción de aspecto
 
@@ -335,11 +337,11 @@ En la tabla siguiente se describe cómo se traducen los resultados de la fórmul
 | 1,78 | 16:9 |
 | 0,56 | 09:16 |
 
-Por ejemplo, un vídeo de 1440 anchura x 1080 altura tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, elija un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
+Por ejemplo, un vídeo de 1440 de anchura × 1080 de altura tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, elija un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
 
 ### Velocidad de bits {#bitrate}
 
-La velocidad de bits es la cantidad de datos codificados para formar un segundo de reproducción de vídeo. La velocidad de bits se mide en kilobits por segundo (Kbps).
+Una velocidad de bits es la cantidad de datos codificados para formar un segundo de reproducción de vídeo. La velocidad de bits se mide en kilobits por segundo (Kbps).
 
 >[!NOTE]
 >
@@ -347,10 +349,10 @@ La velocidad de bits es la cantidad de datos codificados para formar un segundo 
 
 Al seleccionar una codificación de velocidad de bits, puede elegir entre dos tipos:
 
-* **[!UICONTROL Codificación de velocidad de bits constante]** (CBR): durante la codificación CBR, la velocidad de bits o el número de bits por segundo se mantiene igual durante todo el proceso de codificación. La codificación CBR conserva la velocidad de datos establecida en su configuración durante todo el vídeo. Además, la codificación CBR no optimiza los archivos multimedia para la calidad, pero ahorra espacio de almacenamiento.
+* **[!UICONTROL Codificación de velocidad de bits constante]** (CBR): durante la codificación CBR, la velocidad de bits, o el número de bits por segundo, se mantiene igual durante todo el proceso de codificación. La codificación CBR conserva la velocidad de datos establecida en su configuración durante todo el vídeo. Además, la codificación CBR no optimiza los archivos multimedia para la calidad, pero ahorra espacio de almacenamiento.
 Utilice CBR si el vídeo contiene un nivel de movimiento similar en todo el vídeo. CBR se utiliza comúnmente para el contenido de vídeo de streaming. Consulte también [Usar parámetros personalizados de codificación de vídeo](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Codificación de velocidad de bits variable]** (VBR): la codificación VBR ajusta la velocidad de datos hacia abajo y hasta el límite superior establecido, según los datos requeridos por el compresor. Esta funcionalidad significa que durante un proceso de codificación VBR la velocidad de bits del archivo multimedia aumenta o disminuye dinámicamente según las necesidades de velocidad de bits de los archivos multimedia.
+* **[!UICONTROL Codificación de velocidad de bits variable]** (VBR): la codificación VBR ajusta la velocidad de datos hacia abajo y hasta el límite superior establecido, según los datos requeridos por el compresor. Esta funcionalidad significa que durante un proceso de codificación VBR la velocidad de bits del archivo multimedia aumenta o disminuye dinámicamente según las necesidades de velocidad de bits del archivo multimedia.
 VBR tarda más en codificarse, pero produce los resultados más favorables; la calidad del archivo multimedia es superior. VBR se utiliza comúnmente para la entrega progresiva de contenido de vídeo http.
 
 ¿Cuándo se utiliza VBR o CRB?
@@ -369,16 +371,16 @@ En esta tabla se describe la velocidad de datos de las velocidades de conexión 
 
 ### Resolución {#resolution}
 
-**Resolución** describe la altura y anchura de un archivo de vídeo en píxeles. La mayor parte del vídeo de origen se almacena en alta resolución (por ejemplo, 1920 x 1080). Para fines de streaming, el vídeo de origen se comprime con una resolución más pequeña (640 x 480 o menor).
+**Resolución** describe la altura y anchura de un archivo de vídeo en píxeles. La mayor parte del vídeo de origen se almacena en alta resolución (por ejemplo, 1920 × 1080). Para fines de streaming, el vídeo de origen se comprime con una resolución más pequeña (640 × 480 o menor).
 
-La resolución y la velocidad de datos son dos factores integrados que determinan la calidad del vídeo. Para mantener la misma calidad de vídeo, cuanto mayor sea el número de píxeles de un archivo de vídeo (mayor será la resolución), mayor deberá ser la velocidad de datos. Por ejemplo, considere el número de píxeles por fotograma en una resolución de 320 x 240 y un archivo de vídeo de resolución de 640 x 480:
+La resolución y la velocidad de datos son dos factores integrados que determinan la calidad del vídeo. Para mantener la misma calidad de vídeo, cuanto mayor sea el número de píxeles de un archivo de vídeo (mayor será la resolución), mayor deberá ser la velocidad de datos. Por ejemplo, considere el número de píxeles por fotograma en una resolución de 320 × 240 y un archivo de vídeo de resolución de 640 × 480:
 
 | Resolución | Píxeles por cuadro |
 |--- |--- |
-| 320 x 240 | 76.800 |
-| 640 x 480 | 307.200 |
+| 320 × 240 | 76.800 |
+| 640 × 480 | 307.200 |
 
-El archivo de 640 x 480 tiene cuatro veces más píxeles por fotograma. Para lograr la misma velocidad de datos para estas dos resoluciones de ejemplo, se aplica cuatro veces la compresión al archivo de 640 x 480, lo que puede reducir la calidad del vídeo. Por lo tanto, una velocidad de datos de vídeo de 250 Kbps produce una visualización de alta calidad con una resolución de 320 x 240, pero no con una resolución de 640 x 480.
+El archivo de 640 × 480 tiene cuatro veces más píxeles por fotograma. Para lograr la misma velocidad de datos para estas dos resoluciones de ejemplo, se aplica cuatro veces la compresión al archivo de 640 × 480, lo que puede reducir la calidad del vídeo. Por lo tanto, una velocidad de datos de vídeo de 250 Kbps produce una visualización de alta calidad con una resolución de 320 × 240, pero no con una resolución de 640 × 480.
 
 En general, cuanto mayor sea la velocidad de datos que utilice, mejor será el aspecto del vídeo y, cuanto mayor sea la resolución que utilice, mayor será la velocidad de datos que deberá mantener la calidad de visualización (en comparación con resoluciones más bajas).
 
@@ -398,11 +400,13 @@ Cuando elija (o cree) un ajuste preestablecido de codificación de vídeo para e
 | 720p | 720 | Pantalla grande |
 | 1080p | 1080 | Pantalla grande de alta definición |
 
+La resolución de entrada de vídeo máxima admitida es de 16.384 × 16.384. La resolución máxima de codificación de vídeo de salida es de 8.192 × 4.320 o 4.320 × 8.192.
+
 ### Fps (fotogramas por segundo) {#fps-frames-per-second}
 
-En Estados Unidos y Japón, la mayoría de los vídeos se graban a 29,97 fotogramas por segundo (fps); en Europa, la mayoría de los vídeos se graban a 25 fps. La película se filma a 24 fps.
+En Estados Unidos y Japón, la mayoría de los videos se graban a 29,97 fotogramas por segundo (fps). En Europa, el estándar es de 25 fps. La película, sin embargo, se filma típicamente a 24 fps.
 
-Elija un ajuste preestablecido de codificación de vídeo que coincida con la velocidad de fps del archivo de vídeo de origen principal. Por ejemplo, si el vídeo de origen principal es de 25 fps, elija un ajuste preestablecido de codificación con 25 fps. De forma predeterminada, toda la codificación personalizada utiliza el fps del archivo de vídeo de origen principal. Por este motivo, no es necesario especificar explícitamente la configuración de fps al crear un ajuste preestablecido de codificación de vídeo.
+Elija un ajuste preestablecido de codificación de vídeo que coincida con la velocidad de fps del archivo de vídeo de origen principal. Por ejemplo, si el vídeo de origen principal es de 25 fps, elija un ajuste preestablecido de codificación con 25 fps. De forma predeterminada, toda la codificación personalizada utiliza el fps del archivo de vídeo de origen principal. Por este motivo, no es necesario especificar la configuración de fps explícitamente al crear un ajuste preestablecido de codificación de vídeo.
 
 ### Dimensiones de codificación de vídeo {#video-encoding-dimensions}
 
@@ -412,14 +416,14 @@ Para calcular esta proporción, se divide el ancho de origen por el ancho codifi
 
 Si la proporción resultante es un entero, significa que el vídeo se escala de forma óptima. Si la proporción resultante no es un entero, afecta a la calidad del vídeo al dejar artefactos de píxeles sobrantes en la pantalla. Este efecto es más evidente cuando el vídeo tiene texto.
 
-Por ejemplo, supongamos que el vídeo de origen es de 1920 x 1080. En la tabla siguiente, los tres vídeos codificados proporcionan la configuración de codificación óptima para utilizar.
+Por ejemplo, supongamos que el vídeo de origen es 1920 × 1080. En la tabla siguiente, los tres vídeos codificados proporcionan la configuración de codificación óptima para utilizar.
 
-| Tipo de vídeo | Anchura x altura | Proporción de anchura | Proporción de altura |
+| Tipo de vídeo | Anchura × altura | Proporción de anchura | Proporción de altura |
 |--- |--- |--- |--- |
-| Origen | 1920 x 1080 | 1 | 1 |
-| Codificado | 960 x 540 | 2 | 2 |
-| Codificado | 640 x 360 | 3 | 3 |
-| Codificado | 480 x 270 | 4 | 4 |
+| Origen | 1920 × 1080 | 1 | 1 |
+| Codificado | 960 × 540 | 2 | 2 |
+| Codificado | 640 × 360 | 3 | 3 |
+| Codificado | 480 × 270 | 4 | 4 |
 
 ### Formato de archivo de vídeo codificado {#encoded-video-file-format}
 
@@ -433,9 +437,9 @@ DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para s
 Algunas ventajas clave de habilitar DASH en su cuenta son las siguientes:
 
 * Empaquete el vídeo de flujo DASH para la transmisión de velocidad de bits adaptable. Este método aumenta la eficacia del envío. El streaming adaptable garantiza la mejor experiencia de visualización para sus clientes.
-* El streaming optimizado para el navegador con reproductores Dynamic Media cambia entre el streaming HLS y DASH para garantizar la mejor calidad de servicio. El reproductor de vídeo cambia automáticamente a HLS cuando se utiliza un explorador Safari.
-* Puede configurar su método de flujo preferido (HLS o DASH) editando el ajuste preestablecido del visualizador de vídeo.
-* La codificación de vídeo optimizada garantiza que no se utilice almacenamiento adicional al habilitar la capacidad DASH. Se crea un único conjunto de codificaciones de vídeo para HLS y DASH para optimizar los costes de almacenamiento de vídeo.
+* El streaming optimizado para el navegador con reproductores de Dynamic Media cambia entre el streaming de HLS y DASH para garantizar la mejor calidad de servicio. El reproductor de vídeo cambia automáticamente a HLS cuando se utiliza un explorador Safari.
+* Puede configurar su método de streaming preferido (HLS o DASH) editando el ajuste preestablecido del visualizador de vídeo.
+* La codificación de vídeo optimizada garantiza que no se utilice almacenamiento adicional al habilitar la capacidad DASH. Se crea un único conjunto de codificaciones de vídeo para HLS y DASH a fin de optimizar los costes de almacenamiento de vídeo.
 * Ayuda a que la entrega de vídeo sea más accesible para los clientes.
 * Obtenga también la URL de flujo continuo mediante API.
 
@@ -444,9 +448,7 @@ Para habilitar DASH en su cuenta de, se requieren dos pasos:
 * Configuración de Dynamic Media para utilizar DASH, que puede realizar fácilmente.
 * Configuración de Experience Manager 6.5 para utilizar DASH, que se realiza mediante un caso de Asistencia al cliente de Adobe que crea y envía.
 
-**Acerca de habilitar la compatibilidad con múltiples subtítulos y pistas de audio en tu cuenta**
-
-Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado en su cuenta, también se beneficia de tener múltiples subtítulos y soporte de pista de audio habilitado automáticamente. Después de la activación, todos los vídeos posteriores que cargue se procesarán con una nueva arquitectura de back-end que incluya compatibilidad para agregar varios subtítulos y pistas de audio a los vídeos.
+Cuando crea un caso de Soporte de Adobe para habilitar DASH en su cuenta, también se habilita automáticamente la compatibilidad con múltiples subtítulos y pistas de audio. Una vez activados, todos los vídeos recién cargados se procesan con una arquitectura backend actualizada que admite la adición de varias pistas de subtítulos y audio.
 
 >[!IMPORTANT]
 >
@@ -460,23 +462,23 @@ Al mismo tiempo que crea un caso de Soporte de Adobe para tener DASH habilitado 
 1. To enable (turn on) DASH, select the checkbox. -->
 1. Comience por **configurar Dynamic Media para DASH** - Desde el Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 
-1. Desde la página **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]**, desplácese hasta el nombre *Marca de característica de transmisión avanzada de vídeo de AEM Assets Dynamic Media*.
+1. Desde la página **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]**, desplácese hasta el nombre *Indicador de la función de transmisión avanzada de vídeo de Dynamic Media para AEM Assets*.
 
 1. A la izquierda del nombre, seleccione la casilla de verificación para activar DASH.
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
-1. Ahora [use el Admin Console para iniciar la creación de un nuevo caso de soporte](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+1. Ahora, usa el Admin Console para iniciar la [creación de un nuevo caso de soporte](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
 1. Para crear un caso de soporte, siga las instrucciones y asegúrese de proporcionar la siguiente información:
 
    * Nombre del contacto principal, correo electrónico, teléfono.
    * Nombre de su cuenta de Dynamic Media.
    * Especifique que desea que DASH, la compatibilidad con varios subtítulos y pistas de audio múltiples estén habilitados en su cuenta de Dynamic Media, en Experience Manager 6.5.
 
-1. La Asistencia al cliente de Adobe le agrega a la Lista de espera de clientes en función del orden en que se envían las solicitudes.
+1. La Asistencia al cliente de Adobe lo agrega a la Lista de espera de clientes en función del orden en que se envían las solicitudes.
 1. Cuando el Adobe está listo para administrar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo para la activación.
-1. Se le notificará una vez que el Servicio de atención al cliente lo haya completado.
-1. Ahora puede realizar una de las siguientes acciones:
+1. El servicio de atención al cliente le notificará una vez finalizado.
+1. Ahora, puede realizar una de las siguientes acciones:
 
    * Cree su [ajuste preestablecido de visor de vídeo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costumbre.
    * [Agregue varios subtítulos y pistas de audio](#add-msma) al vídeo.
@@ -505,7 +507,7 @@ Consulte también [Configuración de Cloud Service de Dynamic Media](/help/asset
 
 >[!NOTE]
 >
->Los datos de seguimiento y creación de informes se basan exclusivamente en el uso del reproductor de vídeo propio de Dynamic Media y del ajuste preestablecido del reproductor de vídeo asociado. Como tal, no puede rastrear vídeos reproducidos mediante otros reproductores de vídeo ni informar sobre ellos.
+>Los datos de seguimiento y creación de informes se basan exclusivamente en el uso del reproductor de vídeo propio de Dynamic Media y del ajuste preestablecido del reproductor de vídeo asociado. Como tal, no puede rastrear vídeos reproducidos a través de otros reproductores de vídeo ni informar sobre ellos.
 
 De forma predeterminada, la primera vez que se acceden a Informes de vídeo, el informe muestra los datos de vídeo a partir del primer día del mes en curso y termina con la fecha del mes actual. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. La próxima vez que acceda a Informes de vídeo, se utilizará el intervalo de fechas especificado.
 
@@ -513,7 +515,7 @@ Para que los informes de vídeo funcionen correctamente, se crea automáticament
 
 **Para ver informes de vídeo:**
 
-1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo del Experience Manager y, a continuación, en el carril izquierdo, seleccione **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo]**.
+1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo del Experience Manager y, a continuación, en el carril izquierdo, haga clic en **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo]**.
 1. En la página Informes de vídeo, realice una de las siguientes acciones:
 
    * Cerca de la esquina superior derecha, selecciona el icono **Actualizar informe de vídeo**.
@@ -526,13 +528,13 @@ Especifique el intervalo de fechas inicial y final para el que desea obtener dat
 
 1. En la tabla que muestra los vídeos más publicados, seleccione un nombre de vídeo para reproducir el vídeo y también consulte el informe de retención de audiencia (lista desplegable) del vídeo.
 
-### Vea informes de vídeo basados en un visor de vídeo que ha creado mediante el SDK de visualizador de Dynamic Media HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Vea informes de vídeo basados en un visor de vídeo que haya creado con el SDK de Dynamic Media HTML5 Viewer {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Si utiliza un visualizador de vídeo incorporado que proporciona Dynamic Media, o si ha creado un ajuste preestablecido de visualizador personalizado basado en un visualizador de vídeo incorporado, no se requieren pasos adicionales para ver informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API del SDK de HTML5 Viewer, siga estos pasos para asegurarse de que su visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
+Si utiliza un visualizador de vídeo incorporado que proporciona Dynamic Media, o si ha creado un ajuste preestablecido de visualizador personalizado basado en un visualizador de vídeo incorporado, no se requieren pasos adicionales para ver los informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API de SDK de HTML5 Viewer, siga estos pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
 
-Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) y la [API de SDK de visores de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
+Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) y la [API de SDK de visor de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
 
-**Para ver informes de vídeo basados en un visor de vídeo que creó mediante el SDK de visor de Dynamic Media HTML5:**
+**Para ver informes de vídeo basados en un visor de vídeo que creó con el SDK de Dynamic Media HTML5 Viewer:**
 
 1. Vaya a cualquier recurso de vídeo publicado.
 1. Junto a la esquina superior izquierda de la página del recurso, en la lista desplegable, seleccione **[!UICONTROL Visualizadores]**.
@@ -543,7 +545,7 @@ Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experi
 
    El parámetro `config2` habilita el seguimiento en visualizadores de HTML5. También es un ajuste preestablecido específico de la empresa que contiene la información de configuración de los informes de vídeo y de las configuraciones de Adobe Analytics específicas del cliente.
 
-   El valor correcto del parámetro config2 se encuentra tanto en el **[!UICONTROL Código incrustado]** como en la función de copia **[!UICONTROL URL]**. En la dirección URL del comando Copiar **[!UICONTROL URL]**, el parámetro que se busca es `&config2=<value>` El valor es casi siempre `companypreset`, pero en algunos casos también puede ser `companypreset-1`, `companypreset-2`, etc.
+   El valor correcto del parámetro config2 se encuentra tanto en el **[!UICONTROL Código incrustado]** como en la función de copia **[!UICONTROL URL]**. En la dirección URL del comando Copiar **[!UICONTROL URL]**, el parámetro que se busca es `&config2=<value>`. El valor es casi siempre `companypreset`, pero en algunos casos también puede ser `companypreset-1`, `companypreset-2`, etc.
 
 1. En el código personalizado del visor de vídeo, agregue AppMeasurementBridge .jsp a la página del visor haciendo lo siguiente:
 
@@ -594,9 +596,9 @@ Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experi
 
 ## Acerca de la compatibilidad con varios subtítulos y pistas de audio para vídeos en Dynamic Media{#about-msma}
 
-Con la capacidad de varios subtítulos y pistas de audio de Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta posibilidad significa que los vídeos son accesibles para todo el público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+Con la capacidad de varios subtítulos y pistas de audio de Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para una audiencia global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
-![Pestaña Pistas de subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los archivos de subtítulos .VTT cargados y los archivos de pistas de audio .MP3 cargados para un vídeo.](assets-dm/msma-subtitle-audiotracks-tab2.png)
+![Pestaña Subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los `.vtt` archivos de subtítulos cargados y los archivos de pista de audio .MP3 cargados para un vídeo.](assets-dm/msma-subtitle-audiotracks-tab2.png)
 
 Algunos de los casos de uso que se deben tener en cuenta para agregar varios subtítulos y pistas de audio al vídeo principal son los siguientes:
 
@@ -608,9 +610,9 @@ Algunos de los casos de uso que se deben tener en cuenta para agregar varios sub
 |  | Pistas de comentarios |
 |  | Audio descriptivo |
 
-Todos los [formatos de vídeo admitidos en Dynamic Media](/help/assets/assets-formats.md) y todos los visores de vídeo de Dynamic Media, excepto el visor de *Video_360* de Dynamic Media, son compatibles para su uso con varios subtítulos y pistas de audio.
+Todos los [formatos de vídeo admitidos en Dynamic Media](/help/assets/assets-formats.md) y todos los visores de vídeo de Dynamic Media, excepto el visor de *Video_360* de Dynamic Media, son compatibles con múltiples subtítulos y pistas de audio.
 
-La capacidad de seguimiento de audio y subtítulos múltiples está disponible para su cuenta de Dynamic Media mediante una opción de función que debe habilitar (activar) la Asistencia al cliente de Adobe.
+La función de seguimiento de audio y varios subtítulos está disponible para su cuenta de Dynamic Media a través de una opción de función que debe habilitar (activar) Asistencia al cliente de Adobe.
 
 ### Añada varias pistas de subtítulos y audio al vídeo {#add-msma}
 
@@ -620,7 +622,7 @@ Antes de agregar varias pistas de subtítulos y audio al vídeo, asegúrese de q
 * Se ha aplicado un perfil de [Dynamic Media Video a la carpeta donde se han ingerido sus vídeos](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 * [Se han habilitado varios subtítulos y pistas de audio en tu cuenta de Dynamic Media](#enable-dash).
 
-Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT y VTT de Adobe. Además, los archivos de pista de audio añadidos son compatibles con el formato MP3.
+Los subtítulos y subtítulos agregados son compatibles con los formatos WebVTT y Adobe `.vtt`. Además, los archivos de pista de audio añadidos son compatibles con el formato MP3.
 
 >[!IMPORTANT]
 >
@@ -643,18 +645,18 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
    >
    >Cuando haya completado cualquiera de las tareas anteriores, vuelva a estos pasos.
 
-   ![Ficha Pistas de subtítulos y pistas de audio de la página Propiedades.](assets-dm/msma-audiotracks2.png)*Ficha Subtítulos y pistas de audio en la página Propiedades del vídeo.*
+   ![Ficha Pistas de subtítulos y pistas de audio de la página Propiedades.](assets-dm/msma-audiotracks2.png)*Ficha Pistas de subtítulos y audio en la página Propiedades del vídeo.*
 
 1. (Opcional) Para agregar uno o más archivos de subtítulos a un vídeo, haga lo siguiente:
    * Seleccionar **[!UICONTROL subtítulos]**.
-   * Desplácese hasta uno o varios archivos .vtt (pistas de texto de vídeo) y selecciónelos y ábralos.
+   * Desplácese hasta uno o más `.vtt` archivos (pistas de texto de vídeo) y selecciónelos y ábralos.
    * Para que los subtítulos estén visibles en el reproductor multimedia, *debe* agregar los detalles necesarios (metadatos) sobre *cada* archivo de subtítulos que subió. Seleccione el icono de lápiz a la derecha del nombre de un archivo de rótulo. En el cuadro de diálogo **Editar pie de ilustración**, escriba los siguientes detalles necesarios sobre el archivo y, a continuación, seleccione **[!UICONTROL Guardar]**. Repita este proceso para cada archivo de rótulo que haya cargado:
 
      | Metadatos de rótulo | Descripción |
      |--- |--- |
-     | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede usar el mismo nombre de archivo para archivos de subtítulos y de pistas de audio adicionales. |
+     | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para los AEM Assets.<br>No se puede usar el mismo nombre de archivo para archivos de subtítulos y de pistas de audio adicionales. |
      | Idioma | Seleccione el idioma del pie de ilustración. |
-     | Tipo | Seleccione el tipo de rótulo que está utilizando.<br>**Subtítulo**: el texto del título que se muestra con el vídeo que traduce o transcribe el cuadro de diálogo.<br>**Pie de ilustración**: el texto del pie de ilustración también incluye ruidos de fondo, diferenciación del orador y otra información relevante, junto con la traducción o transcripción del cuadro de diálogo, lo que hace que el contenido sea más accesible para las personas sordas o con dificultades auditivas. |
+     | Tipo | Seleccione el tipo de rótulo que está utilizando.<br>**Subtítulo**: el texto del título que se muestra con el vídeo que traduce o transcribe el cuadro de diálogo.<br>**Pie de ilustración**: el texto del pie de ilustración incluye ruidos de fondo, diferenciación de altavoz y otros detalles relevantes. También proporciona la traducción o transcripción del cuadro de diálogo. Todos estos aspectos hacen que el contenido sea más accesible para las personas sordas o con dificultades auditivas. |
      | Etiqueta | El texto que se muestra para el nombre del pie de ilustración en la lista emergente **[!UICONTROL Seleccionar audio o subtítulo]** del reproductor multimedia. La etiqueta es lo que ve un cliente y que corresponde a un subtítulo o pista de rótulo. Por ejemplo, `English (CC)`. |
 
      Si es necesario, puede cambiar o editar los metadatos de los subtítulos más adelante. Cuando se publica el vídeo, estos detalles se reflejan en las direcciones URL públicas de los vídeos publicados.
@@ -662,11 +664,11 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
 1. (Opcional) Para agregar una o más pistas de audio a un vídeo, haga lo siguiente:
    * Seleccione **[!UICONTROL Cargar pistas de audio]**.
    * Desplácese hasta uno o varios archivos .mp3, ábralos y selecciónelos.
-   * Para que las pistas de audio estén visibles en la lista emergente **[!UICONTROL Seleccionar audio o subtítulo]** del reproductor multimedia, *debe* agregar los detalles necesarios sobre *cada* archivo de pista de audio que agregó. Seleccione el icono de lápiz a la derecha del nombre de un archivo de pista de audio. En el cuadro de diálogo **Editar pista de audio**, escriba los siguientes detalles necesarios y, a continuación, seleccione **[!UICONTROL Guardar]**. Repita este proceso para cada archivo de pista de audio que haya cargado.
+   * Para que las pistas de audio aparezcan en la lista emergente **[!UICONTROL Seleccionar audio o subtítulo]** del reproductor multimedia, *debe* proporcionar los detalles necesarios. Estos detalles son necesarios para *cada* archivo de pista de audio que agregó. Seleccione el icono de lápiz a la derecha del nombre de un archivo de pista de audio. En el cuadro de diálogo **Editar pista de audio**, escriba los siguientes detalles necesarios y, a continuación, seleccione **[!UICONTROL Guardar]**. Repita este proceso para cada archivo de pista de audio que haya cargado.
 
      | Metadatos de pista de audio | Descripción |
      |--- |--- |
-     | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para AEM Assets.<br>No se puede usar el mismo nombre de archivo para archivos de pista de audio o de rótulo adicionales. |
+     | Nombre de archivo | El nombre de archivo predeterminado se deriva del nombre de archivo original. El nombre de archivo solo se puede cambiar durante la carga y no se puede cambiar más adelante. Los requisitos de caracteres de nombre de archivo son los mismos que para los AEM Assets.<br>No se puede usar el mismo nombre de archivo para archivos de pista de audio o de rótulo adicionales. |
      | Idioma | Seleccione el idioma de la pista de audio. |
      | Tipo | Seleccione el tipo de pista de audio que está utilizando.<br>**Original**: la pista de audio adjuntada originalmente al vídeo y representada como `[Original]` en la etiqueta con el idioma `English` seleccionado de forma predeterminada. Aunque **[!UICONTROL Label]** y **[!UICONTROL Language]** se pueden cambiar en el cuadro de diálogo **[!UICONTROL Editar pista de audio]**, el valor predeterminado son los valores originales si se vuelve a procesar el vídeo principal.<br>**Estándar**: pista de audio de complemento para un idioma distinto del original.<br>**Descripción del audio**: pista de audio que también incluye una narración descriptiva de gestos y acciones no verbales en el vídeo, lo que hace que el contenido sea más accesible para las personas con problemas de visión. |
      | Etiqueta | El texto que se muestra como nombre de la pista de audio en la lista emergente **[!UICONTROL Seleccionar audio o subtítulo]** del reproductor multimedia. La etiqueta es lo que ve un cliente y que corresponde a una pista de audio. Por ejemplo, `English [Original]`. La etiqueta de audio adjunto a un vídeo está establecida en `[Original]` de forma predeterminada. |
@@ -685,7 +687,7 @@ Los subtítulos y subtítulos añadidos son compatibles con los formatos WebVTT 
 
 #### Agregar archivos de rótulo y de pista de audio a un vídeo ya publicado
 
-Cuando se cargan archivos de subtítulos adicionales o archivos de pista de audio a un vídeo que ya se ha publicado, significa que esos archivos tendrán un estado de `Processed` después de prepararse y después de la carga. En ese punto, puede obtener una vista previa del vídeo en Dynamic Media para ver o escuchar los archivos recién cargados.
+Si se cargan archivos de subtítulos adicionales o archivos de pista de audio en un vídeo ya publicado, esos archivos recibirán el estado `Processed`. Este estado se aplica después de que se preparen los archivos después de la carga. En ese punto, puede obtener una vista previa del vídeo en Dynamic Media para ver o escuchar los archivos recién cargados.
 
 Sin embargo, tras la vista previa, debe *publicar* el vídeo de nuevo para que también se publiquen los archivos de subtítulos o pistas de audio que acaba de agregar. Después de la publicación, los subtítulos o el audio estarán disponibles con la URL pública de Dynamic Media.
 
@@ -714,7 +716,7 @@ La URL existente con el modificador caption ahora puede cargar varios subtítulo
 
 ### Ver el estado del ciclo de vida de los archivos de subtítulos y pistas de audio cargados{#lifecycle-status-video}
 
-Puede observar el estado del ciclo de vida de cualquier subtítulo o archivo de pista de audio cargado en el vídeo principal desde la ficha **Subtítulos y pistas de audio** de **Propiedades**.
+Puede observar el estado del ciclo vital de cualquier subtítulo o archivo de pista de audio cargado en el vídeo principal. Puede hacerlo desde la ficha **Subtítulos y pistas de audio** de **Propiedades**.
 
 **Para ver el estado del ciclo de vida de un vídeo:**
 
@@ -726,7 +728,7 @@ Puede observar el estado del ciclo de vida de cualquier subtítulo o archivo de 
 | Pie de ilustración o estado de pista de audio | Descripción |
 | --- | --- |
 | Procesamiento | Cuando se añade y se guarda un nuevo pie de ilustración o archivo de pista de audio, pasa al estado &quot;Procesando&quot;. Dynamic Media procesa el archivo adjuntando el manifiesto de flujo continuo al vídeo principal. |
-| Procesado | Una vez completado el procesamiento, el título o el archivo de pista de audio, o la pista de audio original asociada con el vídeo principal, aparece en estado &quot;Procesado&quot;. Puede obtener una vista previa de los archivos de subtítulos y pistas de audio que aparecen como &quot;Procesado&quot; *antes de* publicar el vídeo en directo. |
+| Procesado | Una vez completado el procesamiento, el pie de ilustración o el archivo de pista de audio, o la pista de audio original asociada al vídeo principal, aparecen en estado &quot;Procesado&quot;. Puede obtener una vista previa de los archivos de subtítulos y pistas de audio que aparecen como &quot;Procesado&quot; *antes de* publicar el vídeo en directo. |
 | Publicado | El estado &quot;Publicado&quot; representa un estado similar al estado &quot;Publicado&quot; de un vídeo principal. Assets se publican cuando se publica el vídeo principal y están disponibles en la URL pública de Dynamic Media. |
 | Error | El estado &quot;failed&quot; significa que no se ha completado el procesamiento de un subtítulo o archivo de pista de audio. Elimine el pie de ilustración o el archivo de pista de audio y vuelva a cargarlo. |
 | Una página sin publicar   | Cuando se cancela la publicación explícita de un vídeo principal publicado, también se cancela la publicación de cualquier subtítulo o archivo de pista de audio que haya agregado al vídeo. |
@@ -743,8 +745,8 @@ Sin embargo, cualquier archivo de pista de audio cargado puede establecerse como
 >
 >La reproducción del audio predeterminado también puede depender de lo que se establezca en los siguientes exploradores:
 >
->* Chrome: se reproduce el audio por defecto definido en el vídeo.
->* Safari: si el idioma por defecto está definido en Safari, el audio se reproduce con el idioma por defecto definido, si está disponible con el manifiesto del vídeo. De lo contrario, se reproduce el audio predeterminado que se establece como parte de las propiedades de un vídeo.
+>* Chrome: se reproduce el audio predeterminado definido en el vídeo.
+>* Safari: si el idioma predeterminado se establece en Safari, el audio se reproduce con el idioma predeterminado establecido, si está disponible con el manifiesto del vídeo. De lo contrario, se reproduce el audio predeterminado que se establece como parte de las propiedades de un vídeo.
 
 **Para establecer el audio predeterminado de un vídeo que tiene varias pistas de audio:**
 
@@ -773,7 +775,7 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
 
 >[!NOTE]
 >
->La pestaña de previsualización predeterminada del Experience Manager no muestra varias pistas de subtítulos y audio. El motivo es que esas pistas están asociadas a Dynamic Media y solo se pueden ver con la previsualización del visualizador de Dynamic Media.
+>La pestaña Previsualización del Experience Manager predeterminada no muestra varias pistas de subtítulos y audio. El motivo es que esas pistas están asociadas a Dynamic Media y solo se pueden ver con la previsualización del visualizador de Dynamic Media.
 
 **Para obtener una vista previa de un vídeo que tiene varios subtítulos y pistas de audio:**
 
@@ -787,7 +789,7 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
 
    ![Selección del visor de vídeo de la lista desplegable Visualizadores.](assets-dm/msma-dmviewerselected.png)
 
-1. Cerca de la esquina inferior derecha, a la izquierda del icono de volumen, seleccione el icono de burbuja de voz y, a continuación, seleccione el audio o el pie de ilustración que desee oír, o ver o ambos. Si lo desea, en Subtítulos, puede seleccionar **[!UICONTROL Desactivado]** para no mostrar ningún subtítulo.
+1. Cerca de la esquina inferior derecha, a la izquierda del icono de volumen, seleccione el icono de burbuja de voz y, a continuación, seleccione el audio o el pie de ilustración que desee oír, o ver o ambos. Si lo desea, en Subtítulos, puede seleccionar **[!UICONTROL Desactivado]** para que no se muestren los subtítulos.
 
    ![La lista emergente Audio y subtítulos en el visor de vídeo.](assets-dm/msma-selectaudiosubtitle.png)*Simulación de un usuario que selecciona el audio y el pie de ilustración para la reproducción de vídeo.*
 
@@ -829,7 +831,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
 1. En la página Propiedades, seleccione la ficha **[!UICONTROL Subtítulos y pistas de audio]**.
 1. Realice una de las siguientes acciones:
 
-   * Subtítulos: bajo el encabezado **Subtítulos**, seleccione uno o más archivos de subtítulos que desee descargar del vídeo y, a continuación, seleccione **[!UICONTROL Descargar]**.
+   * Subtítulos - Bajo el encabezado **Subtítulos**, seleccione uno o más archivos de subtítulos que desee descargar del vídeo y, a continuación, seleccione **[!UICONTROL Descargar]**.
    * Pistas de audio: en el encabezado **Pistas de audio**, seleccione uno o más archivos de pista de audio que desee descargar del vídeo y, a continuación, seleccione **[!UICONTROL Descargar]**.
 
 1. En el cuadro de diálogo Descargar, defina las siguientes opciones:
@@ -867,13 +869,13 @@ Vea también [Accesibilidad en Dynamic Media](/help/assets/accessibility-dm.md).
 
 Dynamic Media convierte los archivos de rótulo al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos sean más fáciles de descubrir y dar a los clientes detalles adicionales sobre el contenido del vídeo.
 
-Consulte [Proporcionar contenido estático (que no es de imagen)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) en la *Ayuda de la API de servicio y procesamiento de imágenes de Dynamic Media* para obtener más información sobre el uso de la función JSON en una dirección URL.
+Consulte [Proporcionar contenido estático (que no es de imagen)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
 
 **Para agregar subtítulos a un vídeo:**
 
 1. Utilice una aplicación o un servicio de terceros para crear el archivo de rótulo de vídeo.
 
-   Asegúrese de que el archivo que crea sigue el estándar WebVTT (Web Video Text Tracks). La extensión del nombre del archivo de subtítulos es .vtt. Puede obtener más información sobre el estándar de subtítulos WebVTT.
+   Asegúrese de que el archivo que crea sigue el estándar WebVTT (Web Video Text Tracks). La extensión de nombre de archivo de subtítulos es `.vtt`. Puede obtener más información sobre el estándar de subtítulos WebVTT.
 
    Ver [WebVTT: el formato de seguimiento de texto de vídeo web](https://w3c.github.io/webvtt/).
 
@@ -889,9 +891,9 @@ Consulte [Proporcionar contenido estático (que no es de imagen)](https://experi
 
    >[!NOTE]
    >
-   >Para conseguir la compatibilidad global con subtítulos de vídeo en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt independientes y que realice llamadas a cada idioma que desee admitir.
+   >Para ofrecer compatibilidad global con subtítulos de vídeo en varios idiomas, el estándar WebVTT requiere que cree `.vtt` archivos y llamadas independientes para cada idioma que desee admitir.
 
-   Por lo general, debe asignar al archivo VTT de rótulo el mismo nombre que al archivo de vídeo y anexarlo a la configuración regional del idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
+   Por lo general, desea asignar el mismo nombre al archivo de rótulo `.vtt` que al archivo de vídeo y anexarlo con la configuración regional de idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
 
 1. En Experience Manager, cargue el archivo de subtítulos WebVTT en DAM.
 1. Vaya al recurso de vídeo *publicado* que desee asociar con el archivo de rótulo que ha cargado.
@@ -902,7 +904,7 @@ Consulte [Proporcionar contenido estático (que no es de imagen)](https://experi
 
 1. Realice una de las siguientes acciones:
 
-   * Para obtener una experiencia de visor de vídeo emergente, seleccione **[!UICONTROL URL]**. En el cuadro de diálogo URL, seleccione y copie la URL en el Portapapeles y, a continuación, pegue la URL en un editor de texto simple. Anexe la URL copiada del vídeo con la siguiente sintaxis:
+   * Para obtener una experiencia de visor de vídeo emergente, haz clic en **[!UICONTROL URL]**. En el cuadro de diálogo URL, seleccione y copie la URL en el Portapapeles y, a continuación, pegue la URL en un editor de texto simple. Anexe la URL copiada del vídeo con la siguiente sintaxis:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -922,7 +924,7 @@ Puede facilitar la visualización y navegación de los vídeos de formato largo 
 >
 >El reproductor de vídeo utilizado debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero es posible que el uso de reproductores de vídeo de terceros no los admita.
 
-Si lo desea, puede crear y personalizar su propio visor de vídeo personalizado con capítulos en lugar de utilizar un ajuste preestablecido de visualizador de vídeo. Para obtener instrucciones sobre cómo crear su propio visor de HTML5 con navegación por capítulos, en la API del SDK del visor de Adobe HTML5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la documentación de la [API del SDK de visor de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
+Si lo desea, puede crear y personalizar su propio visor de vídeo personalizado con capítulos en lugar de utilizar un ajuste preestablecido de visualizador de vídeo. Para obtener instrucciones sobre cómo crear su propio visor de HTML 5 con navegación por capítulos, en la API de SDK del visor de Adobe HTML 5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la [API de SDK de visor de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 
 <!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -958,7 +960,7 @@ Ver [WebVTT: el formato de seguimiento de texto de vídeo web](https://w3c.githu
 
 1. Guarde el archivo `.vtt` con la codificación UTF8 para evitar problemas con la representación de caracteres en el texto del título del capítulo.
 
-   Por lo general, desea asignar al archivo VTT del capítulo el mismo nombre que al archivo de vídeo y anexarlo con capítulos. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
+   Por lo general, desea asignar al archivo del capítulo `.vtt` el mismo nombre que al archivo de vídeo y anexarlo con capítulos. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
 1. En Experience Manager, cargue el archivo de capítulo WebVTT.
 
    Ver [Cargando Assets](/help/assets/manage-assets.md#uploading-assets).
@@ -968,7 +970,7 @@ Ver [WebVTT: el formato de seguimiento de texto de vídeo web](https://w3c.githu
    <table>
      <tbody>
       <tr>
-       <td>Para obtener una experiencia de visor de vídeo emergente</td>
+       <td>Para obtener una experiencia de visor de vídeo emergente,</td>
        <td>
        <ol>
        <li>Vaya al <i>recurso de vídeo </i>publicado que desee asociar con el archivo de capítulo que ha cargado. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. Ver <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicación de Assets.</a></li>
@@ -980,7 +982,7 @@ Ver [WebVTT: el formato de seguimiento de texto de vídeo web](https://w3c.githu
        </ol> </td>
       </tr>
       <tr>
-       <td>Para una experiencia de visor de vídeo incrustado<br /> </td>
+       <td>Para una experiencia de visor de vídeo incrustado,<br /> </td>
        <td>
        <ol>
        <li>Vaya al <i>recurso de vídeo </i>publicado que desee asociar con el archivo de capítulo que ha cargado. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. Ver <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicación de Assets.</a></li>
@@ -998,7 +1000,7 @@ Ver [WebVTT: el formato de seguimiento de texto de vídeo web](https://w3c.githu
 
 Una miniatura de vídeo es una versión de tamaño reducido de un fotograma de vídeo o un recurso de imagen que representa el vídeo para el cliente. La miniatura sirve para animar a un cliente a seleccionar el vídeo.
 
-Todos los vídeos del Experience Manager deben tener una miniatura asociada; no puede eliminar una miniatura sin reemplazarla. De forma predeterminada, al cargar un vídeo en el Experience Manager, se utiliza el primer fotograma como miniatura. Sin embargo, puede personalizar la miniatura con fines de personalización de marca o búsqueda visual, por ejemplo. Al personalizar una miniatura de vídeo, puede reproducir el vídeo y pausar el fotograma que desee utilizar. O bien, puede seleccionar un recurso de imagen que ya ha cargado y *publicado* en su administrador de recursos digitales.
+Todos los vídeos del Experience Manager deben tener una miniatura asociada y para eliminarla es necesario reemplazarla. De forma predeterminada, al cargar un vídeo en el Experience Manager, se utiliza el primer fotograma como miniatura. Sin embargo, puede personalizar la miniatura con fines de personalización de marca o búsqueda visual, por ejemplo. Al personalizar una miniatura de vídeo, puede reproducir el vídeo y pausar el fotograma que desee utilizar. O bien, puede seleccionar un recurso de imagen que ya ha cargado y *publicado* en su administrador de recursos digitales.
 
 Una imagen en miniatura de vídeo personalizada que seleccione de un vídeo no se extrae y guarda en DAM como un recurso independiente y distinto. Sin embargo, una miniatura de vídeo personalizada que seleccione de un recurso de imagen existente se guarda en el JCR. La ruta del recurso seleccionado se almacena en el nodo del recurso de vídeo como en la siguiente ruta de ejemplo:
 
@@ -1046,11 +1048,24 @@ Estos pasos solo se aplican a Dynamic Media que se ejecuta en el modo &quot;Dyna
 
 Puede elegir entre una de las diez imágenes en miniatura generadas automáticamente por Dynamic Media para añadirlas a su vídeo. El reproductor de vídeo muestra la miniatura seleccionada cuando se utiliza un recurso de vídeo con el componente Dynamic Media en el entorno de creación de Experience Manager Sites, Experience Manager Mobile o Experience Manager Screens. La miniatura sirve como una imagen estática que representa mejor el contenido de todo el vídeo y anima a los usuarios a hacer clic en el botón Reproducir.
 
-En función del tiempo total del vídeo, Dynamic Media captura diez imágenes en miniatura (predeterminadas). Las imágenes se capturan al 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% y 91% en el vídeo. Las diez miniaturas persisten, lo que significa que si decide elegir una miniatura diferente más adelante, no necesita volver a generar la serie. Puede previsualizar las diez imágenes en miniatura y, a continuación, seleccionar la que desee utilizar con el vídeo. Si desea cambiar al valor predeterminado, puede utilizar el CRXDE Lite para configurar el intervalo de tiempo durante el cual se generan las imágenes en miniatura. Por ejemplo, si solo desea generar una serie de cuatro imágenes en miniatura de vídeo espaciadas uniformemente, puede configurar el intervalo de tiempo en 24 %, 49 %, 74 % y 99 %.
+En función del tiempo total del vídeo, Dynamic Media captura diez imágenes en miniatura (predeterminadas). El sistema captura imágenes en los siguientes intervalos de vídeo:
+
+* 1 %
+* 11 %
+* 21 %
+* 31 %
+* 41 %
+* 51 %
+* 61 %
+* 71 %
+* 81 %
+* 91 %
+
+Las diez miniaturas persisten, lo que significa que si decide elegir una miniatura diferente más adelante, no necesita volver a generar la serie. Puede previsualizar las diez imágenes en miniatura y, a continuación, seleccionar la que desee utilizar con el vídeo. Si desea cambiar al valor predeterminado, puede utilizar el CRXDE Lite para configurar el intervalo de tiempo durante el cual se generan las imágenes en miniatura. Por ejemplo, si solo desea generar una serie de cuatro imágenes en miniatura de vídeo espaciadas uniformemente, puede configurar el intervalo de tiempo en 24 %, 49 %, 74 % y 99 %.
 
 Lo ideal es añadir una miniatura de vídeo en cualquier momento después de cargarlo, pero antes de publicarlo en el sitio web.
 
-Si lo prefiere, puede elegir cargar una miniatura personalizada para representar el vídeo en lugar de utilizar una miniatura generada por Dynamic Media. Por ejemplo, puede crear una imagen en miniatura personalizada que tenga el título del vídeo, una imagen de apertura llamativa o una imagen específica capturada del vídeo. La imagen en miniatura de vídeo personalizada que cargue debe tener una resolución máxima de 1280 x 720 píxeles (anchura mínima de 640 píxeles) y no debe superar los 2 MB.
+Si lo prefiere, puede elegir cargar una miniatura personalizada para representar el vídeo en lugar de utilizar una miniatura generada por Dynamic Media. Por ejemplo, puede crear una imagen en miniatura personalizada que tenga el título del vídeo, una imagen de apertura llamativa o una imagen específica capturada del vídeo. La imagen en miniatura de vídeo personalizada que cargue debe tener una resolución máxima de 1280 × 720 píxeles (anchura mínima de 640 píxeles) y no debe superar los 2 MB.
 
 Consulte también [Acerca de las miniaturas de vídeo en Dynamic Media - Modo Scene7](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
@@ -1073,7 +1088,7 @@ Estos pasos solo se aplican a Dynamic Media que se ejecuta en modo híbrido.
 
    La imagen en miniatura del vídeo se actualiza para utilizar la miniatura seleccionada. Si posteriormente decide cambiar la imagen en miniatura, puede volver a la página **[!UICONTROL Cambiar miniatura]** y seleccionar una nueva.
 
-   Si ha configurado nuevos intervalos de tiempo predeterminados o ha cargado un nuevo vídeo para reemplazar el vídeo existente, pida a Dynamic Media que vuelva a generar las miniaturas.
+   Si establece nuevos intervalos de tiempo predeterminados o carga un nuevo vídeo para reemplazar al existente, asegúrese de que Dynamic Media vuelva a generar las miniaturas.
 
    Consulte [Configurar el intervalo de tiempo predeterminado para generar las miniaturas de vídeo](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
@@ -1121,7 +1136,7 @@ Estos pasos solo se aplican a Dynamic Media que se ejecuta en modo híbrido.
 
 ## Cambio de la URL de Dynamic Media para los recursos de Dynamic Media {#manifest-urls}
 
-Los vídeos procesados en Dynamic Media se pueden utilizar mediante visores predeterminados y también accediendo directamente a las direcciones URL del manifiesto y reproduciéndolas a través de sus propios visores personalizados. A continuación se muestra la API para recuperar las URL de manifiesto de un vídeo.
+Los vídeos procesados en Dynamic Media se pueden utilizar con los visores predeterminados. O bien, accediendo a las direcciones URL del manifiesto y reproduciéndolas en visores personalizados. A continuación se muestra la API para recuperar las URL de manifiesto de un vídeo.
 
 ### Acerca de la API de getVideoManifestURI
 
@@ -1151,7 +1166,7 @@ Esta API emplea los tres parámetros siguientes:
 | `manifestType` | Puede ser `ManifestType.DASH` o `ManifestType.HLS` |
 | `onlyIfPublished` | Se establece en true en caso de que el URI de manifiesto se genere solo si está publicado y disponible en el nivel de envío. |
 
-Para recuperar las URL de manifiesto de los vídeos mediante el método anterior, añada un [perfil de codificación de vídeo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) a una carpeta &quot;cargar vídeos&quot;. Dynamic Media procesa estos vídeos en función de las codificaciones encontradas en el archivo de codificación de vídeo asignado a la carpeta. Ahora puede invocar la API anterior para recuperar las URL de manifiesto para los vídeos cargados.
+Para recuperar las URL de manifiesto de los vídeos mediante el método anterior, añada un [perfil de codificación de vídeo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) a una carpeta &quot;cargar vídeos&quot;. Dynamic Media procesa estos vídeos en función de las codificaciones encontradas en el archivo de codificación de vídeo asignado a la carpeta. Ahora puede invocar la API anterior para recuperar las direcciones URL de manifiesto para los vídeos cargados.
 
 ### Escenarios de error
 
@@ -1163,7 +1178,7 @@ La API devuelve un valor nulo si hay errores. Las excepciones se registran en lo
    * El parámetro `resource` pasado no es un vídeo.
    * El parámetro `manifestType` pasado es nulo.
    * El parámetro `onlyIfPublished` se pasó como true, pero el vídeo no se publicó.
-   * El vídeo no se ha ingerido utilizando un conjunto de vídeos adaptable de Dynamic Media.
+   * El vídeo no se ha ingerido mediante un conjunto de vídeos adaptable de Dynamic Media.
 
 * `IOException` se registra cuando hay un problema al conectarse a Dynamic Media.
 * `UnsupportedOperationException` se registra cuando se pasa un parámetro `manifestType` que es `ManifestType.DASH`, mientras que el vídeo no se ha procesado con el formato DASH.
@@ -1448,8 +1463,8 @@ Puede invocar el servlet de las siguientes maneras:
 
 | Tipo | Descripción |
 | :--- | --- |
-| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>En caso de que la entrega DASH esté habilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>En caso de que la entrega DASH esté deshabilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
-| GUIÓN | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>En caso de que la entrega DASH esté habilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>En caso de que la entrega DASH esté deshabilitada:<br>`{}` |
+| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Si la entrega DASH está habilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>Si la entrega DASH está deshabilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
+| GUIÓN | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Si la entrega DASH está habilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>Si la entrega DASH está deshabilitada:<br>`{}` |
 | Error: la ruta del recurso es incorrecta | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
 
 
