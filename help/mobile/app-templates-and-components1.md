@@ -9,18 +9,16 @@ exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '387'
 ht-degree: 1%
 
 ---
 
 # Plantillas y componentes de aplicación{#app-templates-and-components}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Se utiliza una plantilla para crear una página y define qué componentes se pueden utilizar dentro del ámbito seleccionado. Una plantilla es una jerarquía de nodos que tiene la misma estructura que la página que se va a crear, pero sin contenido real.
 

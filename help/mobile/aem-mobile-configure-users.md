@@ -9,18 +9,16 @@ exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 1%
+source-wordcount: '473'
+ht-degree: 0%
 
 ---
 
 # Configuración de usuarios y grupos de usuarios {#configure-your-users-and-user-groups}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 En este capítulo se describen las funciones de usuario y cómo configurar los usuarios y grupos para que admitan la creación y administración de sus aplicaciones móviles.
 

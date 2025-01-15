@@ -9,18 +9,16 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
 
 # Prueba de aplicaciones móviles{#testing-mobile-apps}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Dada la amplia gama de dispositivos en el mercado y los dispositivos que se están lanzando, la prueba de sus aplicaciones se ha vuelto imprescindible. Esta es un área en la que la funcionalidad y la facilidad de uso pueden recibir pocas críticas en una tienda de aplicaciones, pero un solo defecto puede provocar que se desinstale la aplicación. Se debe prestar mucha atención a sus planes de pruebas y a la garantía de calidad. El siguiente vínculo abarca muchos de los temas que se deben abordar en general, como la identificación del entorno, la definición de casos de prueba, los tipos de pruebas, las suposiciones y la participación del cliente. También se analizan las herramientas que ayudan en el esfuerzo de prueba. Las herramientas internas, como [Hobbes](/help/sites-developing/hobbes.md), pueden ayudar con las pruebas de IU basadas en la web. [Día difícil](/help/sites-developing/tough-day.md) puede sobrecargar las instancias con una carga simulada. Si el entorno de prueba ya tiene experiencia con herramientas de terceros, como Selenium, también se pueden utilizar.
 

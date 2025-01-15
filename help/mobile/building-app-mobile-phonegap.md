@@ -9,18 +9,16 @@ exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
 
 # Creación de aplicaciones móviles{#building-mobile-applications}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Cree la aplicación para instalarla en un dispositivo o simulador para probarla o publicarla en tiendas de aplicaciones. Puede crear aplicaciones localmente mediante la interfaz de línea de comandos de PhoneGap o en la nube mediante PhoneGap Build.
 
@@ -84,10 +82,10 @@ Para generar utilizando la CLI de PhoneGap, debe instalar Node.js y la utilidad 
    └── cordova@3.3.0-0.1.1 (...)
    ```
 
-1. (Opcional) Obtenga el SDK para la plataforma móvil a la que está dirigiendo:
+1. (Opcional) Obtenga SDK para la plataforma móvil a la que está dirigiendo:
 
    * Para crear aplicaciones para la plataforma iOS, instale la versión más reciente de [Xcode](https://developer.apple.com/xcode/).
-   * Para crear aplicaciones Android™, instale el [SDK de Android™](https://developer.android.com/).
+   * Para crear aplicaciones Android™, instale [Android™ SDK](https://developer.android.com/).
 
 ### Descarga del archivo ZIP de contenido {#downloading-the-content-zip-file}
 

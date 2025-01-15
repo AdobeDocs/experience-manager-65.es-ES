@@ -9,18 +9,16 @@ exl-id: 385f7924-e8ab-4dcb-83f0-7b81bead3dda
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '150'
 ht-degree: 2%
 
 ---
 
 # Acceso a funciones de dispositivo{#access-device-features}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 ## Creación de componentes de Adobe Experience Manager AEM () que acceden a las funciones del dispositivo {#building-aem-components-that-access-device-features}
 

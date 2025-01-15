@@ -8,18 +8,16 @@ exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 2%
+source-wordcount: '227'
+ht-degree: 1%
 
 ---
 
 # PhoneGap{#phonegap}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM AEM La aplicación se integra con PhoneGap para que puedas crear fácilmente aplicaciones usando páginas de la aplicación de la aplicación de la que se dispone en la red. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten a los usuarios trabajar con el contenido. La sincronización de contenido le permite crear archivos con versiones de páginas para incluirlas en paquetes con aplicaciones.
 

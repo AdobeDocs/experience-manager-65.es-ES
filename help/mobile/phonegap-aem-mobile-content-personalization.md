@@ -9,18 +9,16 @@ exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2550'
 ht-degree: 0%
 
 ---
 
 # Personalización de contenido de AEM Mobile{#aem-mobile-content-personalization}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!NOTE]
 >
@@ -82,7 +80,7 @@ Es necesario vincular también una cuenta de Adobe Mobile Services (AMS) a la ap
 
 ### Código de cliente {#client-code}
 
-Para iniciar sesión en los servicios de AMS, visite [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), seleccione la aplicación móvil y haga clic en la configuración. Busque el campo Opciones de Target de SDK, coloque el código de cliente en el campo y haga clic en Guardar.
+Para iniciar sesión en los servicios de AMS, visite [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), seleccione la aplicación móvil y haga clic en la configuración. Busque el campo Opciones de SDK Target, coloque el código de cliente en el campo y haga clic en Guardar.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
@@ -276,7 +274,7 @@ Cuando el autor del contenido ha terminado de crear contenido para la aplicació
 
 Para ayudar a procesar contenido específicamente para aplicaciones móviles, AEM Mobile utiliza el componente mobileapps/components/target. El componente target móvil amplía el componente cq/personalization/components/target y anula el script engine_tnt.jsp. Al anular engine_tnt.jsp, AEM Mobile puede controlar el HTML que se genera en el caso de uso de las aplicaciones móviles. Para cada componente segmentado por un autor de contenido, el archivo engine_tnt.jsp crea un mbox asociado.
 
-Para cada mbox, se agrega un atributo de **cq-targeting** que permite a los desarrolladores de aplicaciones escribir código personalizado para consumirlo y utilizarlo como deseen. La [aplicación de referencia híbrida de AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) tiene un ejemplo de directiva de Angular que usa el atributo cq-targeting. El concepto de reemplazo de contenido, cuándo y cómo se realiza, depende del desarrollador de aplicaciones móviles. AEM Hay un SDK móvil que se entrega a través de /etc/clientlibs/mobileapps/js/mobileapps.js que proporciona una API para llamar al servicio de segmentación de Adobe. Depende del desarrollador de la aplicación especificar cuándo se debe realizar esa llamada según el diseño de la aplicación.
+Para cada mbox, se agrega un atributo de **cq-targeting** que permite a los desarrolladores de aplicaciones escribir código personalizado para consumirlo y utilizarlo como deseen. La [aplicación de referencia híbrida de AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) tiene un ejemplo de directiva de Angular que usa el atributo cq-targeting. El concepto de reemplazo de contenido, cuándo y cómo se realiza, depende del desarrollador de aplicaciones móviles. Hay un SDK AEM móvil entregado a través de /etc/clientlibs/mobileapps/js/mobileapps.js que proporciona una API para llamar al servicio de segmentación de Adobe. Depende del desarrollador de la aplicación especificar cuándo se debe realizar esa llamada según el diseño de la aplicación.
 
 ## ¿Qué sigue? {#what-s-next}
 

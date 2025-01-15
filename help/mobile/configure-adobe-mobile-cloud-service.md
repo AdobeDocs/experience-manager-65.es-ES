@@ -10,24 +10,22 @@ exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
 # Configuración del Cloud Service de Adobe Mobile Services {#configure-your-adobe-mobile-services-cloud-service}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 El **mosaico de métricas móviles** del centro de comandos proporciona análisis en tiempo real para su aplicación móvil.
 
-El SDK de [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) está disponible a través de un complemento de PhoneGap. Las métricas se recopilan y almacenan en caché en el dispositivo hasta que se conecta este. En ese momento, los datos se insertan en Adobe Mobile Services Cloud para la realización de informes y análisis.
+El SDK [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) está disponible a través de un complemento de PhoneGap. Las métricas se recopilan y almacenan en caché en el dispositivo hasta que se conecta este. En ese momento, los datos se insertan en Adobe Mobile Services Cloud para la realización de informes y análisis.
 
-El SDK de Adobe Mobile Analytics proporciona lo siguiente:
+Adobe Mobile Analytics SDK proporciona lo siguiente:
 
 1. **Recopilación de datos para canales móviles**: recopile datos completos para sus sitios web y aplicaciones móviles en todos los sistemas operativos principales.
 1. **Análisis de participación móvil**: Comprenda la participación del usuario en su aplicación móvil, sitio web o vídeo, incluida la frecuencia con la que los consumidores inician el canal, si realizan compras en él y mucho más.

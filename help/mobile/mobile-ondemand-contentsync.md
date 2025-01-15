@@ -9,18 +9,16 @@ exl-id: a6e59334-09e2-4bb8-b445-1868035da556
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2971'
+source-wordcount: '2950'
 ht-degree: 0%
 
 ---
 
 # Móvil con sincronización de contenido{#mobile-with-content-sync}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Utilice la sincronización de contenido para empaquetar contenido de modo que se pueda utilizar en aplicaciones móviles nativas. Las páginas creadas en Adobe Experience Manager AEM () pueden utilizarse como contenido de la aplicación, incluso cuando el dispositivo está sin conexión. AEM Además, dado que las páginas de la se basan en estándares web, funcionan en plataformas múltiples, lo que permite incrustarlas en cualquier envoltorio nativo. Esta estrategia reduce el esfuerzo de desarrollo y le permite actualizar fácilmente el contenido de la aplicación.
 

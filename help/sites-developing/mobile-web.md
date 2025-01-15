@@ -10,18 +10,16 @@ exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 1%
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
 # Web móvil{#mobile-web}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM proporciona varias herramientas que le permiten desarrollar sitios para dispositivos móviles e integrar el contenido en aplicaciones móviles.
 

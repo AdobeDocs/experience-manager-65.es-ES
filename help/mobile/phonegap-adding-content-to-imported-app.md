@@ -10,18 +10,16 @@ exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
 
 # ¿Su aplicación híbrida está lista para Adobe Experience Manager Mobile?{#is-your-hybrid-app-ready-for-aem-mobile}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM Ha importado su aplicación híbrida PhoneGap o Cordova en el mercado de los teléfonos móviles, ¿y ahora qué? Es probable que quiera añadir contenido legible a su aplicación. AEM Para llevar a cabo esta tarea, necesita una comprensión general de la estructura de una aplicación de. AEM Una aplicación en la se divide comúnmente en dos partes. El &quot;shell&quot; y el &quot;content&quot;. El &quot;shell&quot; comprende las partes estáticas de la aplicación, como los archivos de configuración de PhoneGap, el marco de la aplicación y los controles de navegación. El contenido del archivo que ha importado se almacena como parte del shell. AEM En el contexto de este documento, el shell es todo el contenido no creado por el desarrollador de la aplicación Híbrida de PhoneGap que no es de autor de la aplicación.
 

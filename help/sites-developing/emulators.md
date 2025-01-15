@@ -10,18 +10,16 @@ exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
 # Emuladores{#emulators}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Adobe Experience Manager AEM () permite a los autores ver una página en un emulador que simula el entorno en el que un usuario final verá la página, como en un dispositivo móvil o en un cliente de correo electrónico.
 

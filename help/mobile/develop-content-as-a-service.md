@@ -8,18 +8,16 @@ exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
 
 # Entrega de contenido{#content-delivery}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM Las aplicaciones móviles deben poder utilizar todo el contenido en los segmentos según sea necesario para ofrecer la experiencia de la aplicación a la que van dirigidas.
 
@@ -73,7 +71,7 @@ AEM AEM Los servicios de contenido proporcionan acceso a recursos administrados 
 
 #### Assets administrado existente {#existing-managed-assets}
 
-Un usuario de AEM Sites y Assets está usando AEM Assets para administrar todo su material digital para todos los canales. Están desarrollando una aplicación móvil nativa y deben utilizar varios recursos administrados por AEM Assets. Por ejemplo, logotipos, imágenes de fondo e iconos de botón.
+Un usuario de AEM Sites y Assets está utilizando AEM Assets para administrar todo su material digital para todos los canales. Están desarrollando una aplicación móvil nativa y deben utilizar varios recursos administrados por AEM Assets. Por ejemplo, logotipos, imágenes de fondo e iconos de botón.
 
 Actualmente se distribuyen por todo el repositorio de Assets. Los archivos a los que la aplicación debe hacer referencia se encuentran en los siguientes:
 
@@ -95,7 +93,7 @@ AEM Dejemos de lado los pasos de cómo la página está disponible a través de 
 
 #### Obtención de una lista de entidades de recursos disponibles {#getting-a-list-of-available-asset-entities}
 
-Un desarrollador de aplicaciones puede obtener una lista de los recursos disponibles recuperando las entidades de los recursos. El extremo del espacio de Content Services puede proporcionar esa información a través del SDK de la API del servicio web.
+Un desarrollador de aplicaciones puede obtener una lista de los recursos disponibles recuperando las entidades de los recursos. El extremo del espacio de Content Services puede proporcionar esa información a través de la API de servicio web SDK.
 
 El resultado sería un objeto en formato JSON que proporcionaría una lista de los recursos de la carpeta &quot;iconos&quot;.
 

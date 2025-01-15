@@ -9,18 +9,16 @@ exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
 
 # Seguimiento del rendimiento de las aplicaciones con Adobe Mobile Analytics{#track-app-performance-with-adobe-mobile-analytics}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Desea aumentar las conversiones y la lealtad de los clientes.
 
@@ -32,9 +30,9 @@ Desea ofrecer experiencias relevantes y atractivas a sus clientes.
 
 Con Adobe Mobile Services, puede obtener información sobre el uso que hacen los usuarios de sus aplicaciones móviles mediante el seguimiento del uso, los bloqueos de aplicaciones, los detalles de dispositivos y otras métricas esenciales para sus aplicaciones móviles.
 
-Adobe Experience Manager Mobile proporciona un vistazo a los detalles de su análisis móvil directamente desde el panel de aplicaciones de AEM Mobile. El **mosaico de métricas móviles** del panel proporciona Real-Time Analytics para su aplicación móvil, lo que permite a desarrolladores, autores y administradores obtener un vistazo rápido del estado de su aplicación móvil. En las portadas, el SDK de [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) se encuentra habilitado para el análisis. El SDK de Adobe Mobile Analytics se puede conectar a sus aplicaciones de forma nativa o a través de un complemento de PhoneGap Bridge para vistas web. Las métricas se recopilan y almacenan en caché en el dispositivo hasta que se conecta este, momento en el que los datos se insertan en Adobe Mobile Services Cloud para la realización de informes y análisis.
+Adobe Experience Manager Mobile proporciona un vistazo a los detalles de su análisis móvil directamente desde el panel de aplicaciones de AEM Mobile. El **mosaico de métricas móviles** del panel proporciona Real-Time Analytics para su aplicación móvil, lo que permite a desarrolladores, autores y administradores obtener un vistazo rápido del estado de su aplicación móvil. En las portadas, el SDK de [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) se encarga de alimentar los análisis. El SDK de Adobe Mobile Analytics puede conectarse a sus aplicaciones de forma nativa o a través de un complemento de PhoneGap Bridge para visualizaciones web. Las métricas se recopilan y almacenan en caché en el dispositivo hasta que se conecta este, momento en el que los datos se insertan en Adobe Mobile Services Cloud para la realización de informes y análisis.
 
-El SDK de Adobe Mobile Analytics proporciona lo siguiente:
+Adobe Mobile Analytics SDK proporciona lo siguiente:
 
 1. **Recopilación de datos para canales móviles**: recopile datos completos para sus sitios web y aplicaciones móviles en todos los sistemas operativos principales.
 1. **Análisis de participación móvil**: Comprenda la participación del usuario en su aplicación móvil, sitio web o vídeo, incluida la frecuencia con la que los consumidores inician el canal, si realizan compras en él y mucho más.
@@ -51,7 +49,7 @@ AEM Por último, [Administradores de](#administrators) aprenden a:
 * crear una configuración de mobile service y asociar un grupo de informes
 * asociar la configuración de mobile service a una aplicación móvil.
 * AEM visualización de métricas a través del Centro de comandos de aplicaciones para la aplicación de
-* asigne la configuración del SDK de AMS a su aplicación móvil
+* asigne la configuración de SDK de AMS a su aplicación móvil
 
 ## Para desarrolladores: Integración de Analytics en la aplicación {#for-developers-integrate-analytics-into-your-app}
 
@@ -91,15 +89,15 @@ Ahora que ha asociado la configuración del servicio móvil a la aplicación de 
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-### Archivo de configuración del SDK de Adobe Mobile Services {#adobe-mobile-services-sdk-config-file}
+### Archivo de configuración de SDK de Adobe Mobile Services {#adobe-mobile-services-sdk-config-file}
 
-En este punto, la aplicación móvil está asociada a un servicio en la nube, pero la aplicación móvil aún no sabe cómo devolver a Adobe Analytics las métricas móviles recopiladas. Para conectar la aplicación móvil a Adobe Analytics, se debe añadir el archivo de configuración del SDK de Adobe Mobile Services a Adobe Experience Manager.
+En este punto, la aplicación móvil está asociada a un servicio en la nube, pero la aplicación móvil aún no sabe cómo devolver a Adobe Analytics las métricas móviles recopiladas. Para conectar la aplicación móvil a Adobe Analytics, se debe añadir el archivo de configuración de SDK de Adobe Mobile Services a Adobe Experience Manager.
 
-En el mosaico Analizar métricas, haga clic en el icono de flecha para mostrar las entradas de menú Descargar/Cargar configuración del SDK de AMS.
+En el mosaico Analizar métricas, haga clic en el icono de flecha para mostrar las entradas de menú Descargar/Cargar configuración de SDK de AMS.
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-El primer paso es obtener la configuración del SDK de Adobe Mobile Services. Haga clic en &quot;Descargar configuración del SDK de AMS&quot; para que se le redirija al sitio web de Adobe Mobile Services desde el que puede descargar el archivo de configuración. AEM Una vez obtenido el archivo ADBMobileConfig.json, haga clic en &quot;Cargar configuración del SDK de AMS&quot; para cargar el archivo de configuración en el archivo de configuración de la aplicación de configuración de la aplicación de configuración de la aplicación de configuración de la plataforma de almacenamiento de datos.
+El primer paso es obtener la configuración de SDK desde Adobe Mobile Services. Haga clic en &quot;Descargar configuración de SDK de AMS&quot; para que se le redirija al sitio web de Adobe Mobile Services, desde donde puede descargar el archivo de configuración. Una vez obtenido el archivo ADBMobileConfig.json, haga clic en &quot;Cargar configuración de SDK AEM de AMS&quot; para cargar el archivo de configuración en el archivo de configuración de la aplicación de configuración de la aplicación de configuración de la aplicación de configuración de la plataforma de almacenamiento de datos de Adobe (ADBMobileConfig.json).
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 

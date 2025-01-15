@@ -9,18 +9,16 @@ exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '250'
 ht-degree: 1%
 
 ---
 
 # Cancelar la publicación del contenido de Publish{#publish-unpublish-content}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Una vez que esté familiarizado con las acciones de administración de contenido en artículos, titulares y colecciones, puede publicar el contenido. Además, puede cancelar la publicación del contenido.
 

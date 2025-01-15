@@ -6,7 +6,7 @@ exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
@@ -18,6 +18,8 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las regulaciones de protección de datos y privacidad; como el RGPD y la CCPA.
+
+{{ue-over-mobile}}
 
 ## Compatibilidad con RGPD de AEM Mobile {#aem-mobile-gdpr-support}
 

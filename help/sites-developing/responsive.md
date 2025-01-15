@@ -10,19 +10,16 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '5293'
+source-wordcount: '5272'
 ht-degree: 0%
 
 ---
 
 # Diseño interactivo para páginas web{#responsive-design-for-web-pages}
 
->[!NOTE]
->
->El Adobe SPA recomienda usar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de aplicación de una sola página (como _React_). [Más información](/help/sites-developing/spa-overview.md).
->
+{{ue-over-mobile}}
 
 >[!NOTE]
 >

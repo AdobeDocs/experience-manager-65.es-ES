@@ -11,18 +11,16 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '3722'
+source-wordcount: '3701'
 ht-degree: 0%
 
 ---
 
 # Creación de sitios para dispositivos móviles{#creating-sites-for-mobile-devices}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Crear un sitio móvil es similar a crear un sitio estándar, ya que también implica crear plantillas y componentes. Para obtener más información sobre la creación de plantillas y componentes, consulte las siguientes páginas: [Plantillas](/help/sites-developing/templates.md), [Componentes](/help/sites-developing/components.md) y [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md). La principal diferencia consiste en habilitar las funcionalidades móviles integradas de Adobe Experience Manager AEM () dentro del sitio. Se logra creando una plantilla que depende del componente de página móvil.
 
@@ -160,7 +158,7 @@ O
 
 ### Emuladores {#emulators}
 
-La creación basada en emuladores proporciona a los autores los medios para crear páginas de contenido destinadas a clientes móviles. La creación de contenido móvil sigue el mismo principio de la edición WYSIWYG in situ. Para que los autores perciban el aspecto de la página en un dispositivo móvil, se edita una página de contenido móvil mediante un emulador de dispositivo.
+La creación basada en emuladores proporciona a los autores los medios para crear páginas de contenido destinadas a clientes móviles. La creación de contenido móvil sigue el mismo principio de la edición in situ de WYSIWYG. Para que los autores perciban el aspecto de la página en un dispositivo móvil, se edita una página de contenido móvil mediante un emulador de dispositivo.
 
 Los emuladores de dispositivos móviles se basan en el marco de emuladores genérico. Para obtener más información, consulte [Emuladores](/help/sites-developing/emulators.md).
 

@@ -9,18 +9,16 @@ exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2675'
+source-wordcount: '2654'
 ht-degree: 0%
 
 ---
 
 # Creación y edición de aplicaciones mediante la consola de aplicaciones{#creating-and-editing-apps-using-the-apps-console}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 AEM El proceso de desarrollo de aplicaciones móviles reconoce que los usuarios con diferentes conocimientos contribuyen al desarrollo de aplicaciones móviles. El siguiente mapa del proceso ilustra el orden general en el que los autores de contenido y los desarrolladores de aplicaciones realizan las tareas.
 
@@ -79,7 +77,7 @@ También puede proporcionar un archivo de imagen para utilizarlo como miniatura 
 Existen pestañas adicionales (y opcionales) para crear un servicio en la nube e integrar el complemento SDK de Adobe Mobile Services en su aplicación.
 
 * Generar: Haga clic en Administrar configuraciones y configure el servicio de compilación de build.phonegap.com aquí. A continuación, en la lista desplegable, podrá seleccionar el servicio en la nube de PhoneGap Build recién creado.
-* Analytics: haga clic en Administrar configuraciones y configure el servicio en la nube de [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). A continuación, en la lista desplegable, podrá seleccionar el Mobile Service recién creado para integrarlo en su aplicación móvil.
+* Analytics: haz clic en Administrar configuraciones y configura tu servicio en la nube de [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). A continuación, en la lista desplegable, podrá seleccionar el Mobile Service recién creado para integrarlo en su aplicación móvil.
 
 >[!NOTE]
 >

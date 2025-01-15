@@ -9,18 +9,16 @@ exl-id: a2bc9a50-6455-4703-8829-964fab313e96
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
 
 # Introducción a Adobe Experience Manager Mobile{#getting-started-with-aem-mobile}
 
->[!NOTE]
->
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!CAUTION]
 >
