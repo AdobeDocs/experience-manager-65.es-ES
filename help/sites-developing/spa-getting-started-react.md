@@ -10,12 +10,13 @@ exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1127'
 ht-degree: 4%
 
 ---
+
 
 # SPA AEM Introducción a la administración de la en React{#getting-started-with-spas-in-aem-react}
 
@@ -27,9 +28,7 @@ SPA SPA AEM La función de creación de ofrece una solución completa para la as
 >
 >Este artículo se basa en el marco de React. Para el documento correspondiente para la estructura de Angular SPA AEM, consulte [Introducción a la creación de cuadros de trabajo en la - Angular](/help/sites-developing/spa-getting-started-angular.md).
 
->[!NOTE]
->
->SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
+{{ue-over-spa}}
 
 ## Introducción {#introduction}
 
@@ -284,4 +283,4 @@ SPA AEM SPA AEM Para obtener más información acerca de cómo organizarse para 
 
 SPA AEM SPA Para obtener más información acerca de la asignación de modelos dinámicos a componentes y cómo funciona dentro de la asignación de componentes en el modelo dinámico, vea el artículo [Asignación de modelos dinámicos a componentes para la asignación de componentes para el modelo dinámico para la asignación de componentes para el modelo dinámico para la asignación de componentes para la asignación de componentes para el modelo dinámico para la asignación de componentes para la asignación de componentes para la asignación de componentes para la asignación de componentes para la asignación de componentes para el modelo dinámico para la asignación de componentes para la asignación de componentes10000000000000000001010000000000000000000000000000000000000000010000000000000000000000000000000](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)
 
-SPA AEM Si desea implementar un esquema de trabajo en el que no sea React o Angular SPA AEM SPA, o simplemente desea profundizar en cómo funciona el SDK de la para el trabajo de los usuarios, consulte el artículo de [Modelo de trabajo](/help/sites-developing/spa-blueprint.md) para el usuario de .
+Si desea implementar la implementación de la en un Angular SPA de trabajo que no sea React o SPA AEM, o simplemente desea profundizar en cómo funciona el modelo de trabajo de SDK AEM SPA para la, consulte el artículo de [Modelo de trabajo](/help/sites-developing/spa-blueprint.md).

@@ -10,12 +10,13 @@ exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '523'
 ht-degree: 9%
 
 ---
+
 
 # Implementación de un componente de React para SPA{#implementing-a-react-component-for-spa}
 
@@ -23,9 +24,7 @@ Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractiva
 
 SPA SPA AEM La función de creación de ofrece una solución completa para la asistencia de la creación de contenido en el ámbito de la. AEM SPA En este artículo se presenta un ejemplo de cómo adaptar un componente React simple y existente para trabajar con el Editor de.
 
->[!NOTE]
->
->SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
+{{ue-over-spa}}
 
 ## Introducción {#introduction}
 

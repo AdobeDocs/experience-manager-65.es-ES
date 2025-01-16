@@ -1,6 +1,6 @@
 ---
 title: SPA Asignación de modelos dinámicos a componentes para la creación de
-description: Descubra cómo se produce la asignación de modelos dinámicos a componentes en el SDK de JavaScript SPA para Adobe Experience Manager.
+description: Descubra cómo se produce la asignación de modelos dinámicos a componentes en JavaScript SPA SDK para Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -9,20 +9,19 @@ exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
+
 # SPA Asignación de modelos dinámicos a componentes para la creación de{#dynamic-model-to-component-mapping-for-spas}
 
-En este documento se describe cómo se produce la asignación de modelos dinámicos a componentes en el SDK de JavaScript SPA para la implementación de la plataforma de desarrollo de software (SDK) para la implementación de Adobe Experience Manager AEM ().
+En este documento se describe cómo se produce la asignación de modelos dinámicos a componentes en JavaScript SPA, SDK para Adobe Experience Manager AEM ().
 
->[!NOTE]
->
->SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
+{{ue-over-spa}}
 
 ## Módulo de asignación de componentes {#componentmapping-module}
 
@@ -36,7 +35,7 @@ Consulte también el paquete npm: [https://www.npmjs.com/package/@adobe/aem-spa-
 
 ## Aplicación de una sola página impulsada por modelo {#model-driven-single-page-application}
 
-Las aplicaciones de una sola página que utilizan el SDK de JavaScript SPA AEM para la creación de informes de la página para la creación de informes están basadas en modelos:
+Las aplicaciones de una sola página que utilizan JavaScript SPA SDK AEM para la creación de informes están basadas en modelos:
 
 1. Los componentes front-end se registran a sí mismos en el [Almacén de asignaciones de componentes](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. A continuación, el [contenedor](/help/sites-developing/spa-blueprint.md#container), una vez proporcionado con un modelo por el [proveedor de modelos](/help/sites-developing/spa-blueprint.md#the-model-provider), se repite sobre el contenido de su modelo (`:items`).

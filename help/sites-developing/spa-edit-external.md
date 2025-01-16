@@ -5,16 +5,19 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 0%
 
 ---
 
+
 # SPA Edición de un recurso externo en Adobe Experience Manager {#editing-external-spa-within-aem}
 
 A la hora de decidir qué nivel de integración desea tener entre el grupo de trabajo externo y el de Adobe Experience Manager AEM SPA AEM (), a menudo necesita poder editar y ver el nivel de integración que se encuentra entre el grupo de trabajo externo y el grupo de trabajo de SPA (), lo que le permite editar y ver el contenido de la integración en su propio grupo de trabajo.
+
+{{ue-over-spa}}
 
 ## Información general {#overview}
 

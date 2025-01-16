@@ -10,20 +10,19 @@ exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '164'
 ht-degree: 1%
 
 ---
+
 
 # SPA Integración de y Adobe Experience Platform Launch{#spa-and-adobe-experience-platform-launch-integration}
 
 Adobe Experience Platform Launch es la forma recomendada de implementar Analytics, Target y Audience Manager SPA en aplicaciones de una sola página ().
 
->[!NOTE]
->
->SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
+{{ue-over-spa}}
 
 ## Tutorial {#tutorial}
 

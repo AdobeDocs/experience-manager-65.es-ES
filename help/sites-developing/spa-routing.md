@@ -9,20 +9,19 @@ exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
+
 
 # SPA Enrutamiento de modelo de{#spa-model-routing}
 
 AEM Para las aplicaciones de una sola página en la, la aplicación es responsable del enrutamiento. Este documento describe el mecanismo de ruta, el contrato y las opciones disponibles.
 
->[!NOTE]
->
->SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
+{{ue-over-spa}}
 
 ## Enrutamiento de proyectos {#project-routing}
 

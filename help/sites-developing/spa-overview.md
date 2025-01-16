@@ -10,12 +10,13 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 84%
+source-wordcount: '1626'
+ht-degree: 85%
 
 ---
+
 
 # Información general del editor de SPA{#spa-editor-overview}
 
@@ -23,9 +24,7 @@ Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractiva
 
 El Editor de SPA ofrece una solución completa para admitir las SPA dentro de AEM. Esta página proporciona información general sobre cómo se estructura el soporte de las SPA en AEM, cómo funciona el Editor de SPA y cómo el marco de trabajo de las SPA y AEM se mantiene sincronizado.
 
->[!NOTE]
->
->SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
+{{ue-over-spa}}
 
 ## Introducción {#introduction}
 
@@ -190,7 +189,7 @@ Para obtener información adicional acerca de la propiedad `editElementQuery` y 
 
 ### Restricciones {#limitations}
 
-AEM SPA AEM El SDK de Editor de se ha introducido con el paquete de servicio 2 de 6.4. Cuenta con el pleno apoyo del Adobe y se sigue mejorando y ampliando. El Editor de SPA aún no admite las siguientes funciones de AEM:
+AEM SPA SDK AEM de Editor de se introdujo con el paquete de servicio 2 de 6.4. Cuenta con el pleno apoyo del Adobe y se sigue mejorando y ampliando. El Editor de SPA aún no admite las siguientes funciones de AEM:
 
 * Modo de destinatario
 * ContextHub

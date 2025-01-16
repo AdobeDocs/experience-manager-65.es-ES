@@ -9,22 +9,21 @@ exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 0%
+source-wordcount: '92'
+ht-degree: 1%
 
 ---
 
+
 # SPA Materiales de referencia {#spa-reference-materials}
+
+{{ue-over-spa}}
 
 ## SPA Referencias de API de JavaScript{#spa-javascript-api-references}
 
-A continuación, se muestran las referencias de la API de JavaScript AEM SPA disponibles de los módulos NPM para el marco del SDK del Editor de.
-
->[!NOTE]
->
->SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
+A continuación, se muestran las referencias de la API de JavaScript AEM SPA disponibles de los módulos NPM para el marco de trabajo de SDK de Editor de.
 
 * [Asignación de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Administrador de modelos de página](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)

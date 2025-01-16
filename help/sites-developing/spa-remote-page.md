@@ -5,16 +5,19 @@ exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
 
 ---
 
+
 # El componente RemotePage {#remote-page-component}
 
 SPA AEM SPA AEM A la hora de decidir qué nivel de integración desea tener entre el externo y el, a menudo está claro que necesita poder ver y editar la dentro de un mismo grupo de informes El componente RemotePage es un componente de página personalizado solo para este propósito.
+
+{{ue-over-spa}}
 
 ## Información general {#overview}
 

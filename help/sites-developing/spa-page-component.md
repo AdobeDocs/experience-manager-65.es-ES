@@ -10,20 +10,19 @@ exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '707'
 ht-degree: 6%
 
 ---
+
 
 # Componente de página SPA{#spa-page-component}
 
 En un recurso, el componente de página no proporciona los elementos HTML SPA de sus componentes secundarios, sino que los delega en el SPA de trabajo de la página de trabajo. SPA En este documento se explica cómo hace que el componente de página de una página sea único en un sitio de trabajo de la.
 
->[!NOTE]
->
->SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
+{{ue-over-spa}}
 
 ## Introducción {#introduction}
 
@@ -92,7 +91,7 @@ SPA **Componente de página de -`customheaderlibs.html`**
 >
 >Este documento utiliza la aplicación We.Retail Journal solo para fines de demostración. No utilice para ningún trabajo de proyecto.
 >
->AEM AEM SPA Cualquier proyecto debe usar el [Arquetipo de proyecto de Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de que usan React o Angular SPA SPA AEM SPA y usa el SDK de la. Todos los proyectos de la en el proyecto de Maven se deben basar en el Arquetipo de Maven para el Starter Kit.
+>AEM AEM SPA Cualquier proyecto debe usar el [Arquetipo de proyecto de Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de que usan React o Angular SPA y que usa el tipo de archivo de SDK SPA AEM SPA de la. Todos los proyectos de la en el proyecto deben basarse en el Arquetipo de Maven para el Starter Kit.
 
 ## Sincronización de superposición del editor de páginas {#page-editor-overlay-synchronization}
 

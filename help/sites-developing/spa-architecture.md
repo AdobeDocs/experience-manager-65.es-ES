@@ -10,12 +10,13 @@ exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2018'
 ht-degree: 5%
 
 ---
+
 
 # Desarrollo de SPA para AEM{#developing-spas-for-aem}
 
@@ -23,9 +24,7 @@ Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractiva
 
 SPA AEM AEM SPA AEM Este artículo presenta preguntas importantes que se deben tener en cuenta al contratar a un desarrollador front-end para desarrollar una aplicación para la y ofrece una descripción general de la arquitectura de las soluciones de implementación de la aplicación de la aplicación de la forma de la implementación de la aplicación de la aplicación de la aplicación de la forma de un desarrollador de front-end en la implementación de la implementación de la aplicación de la en la.
 
->[!NOTE]
->
->SPA SPA El Editor de segmentos es la solución recomendada para los proyectos que requieren un procesamiento basado en el cliente basado en el marco de trabajo de la aplicación (por ejemplo, React o Angular) de la aplicación de la aplicación de la manera más sencilla posible.
+{{ue-over-spa}}
 
 ## SPA AEM Principios de desarrollo de la {#spa-development-principles-for-aem}
 
@@ -82,17 +81,17 @@ Sin embargo, puede haber casos en los que esto no sea del todo necesario. En la 
    <th><strong>Desventajas</strong></th>
   </tr>
   <tr>
-   <td>AEM SPA Se utiliza como un CMS sin encabezado sin usar el marco de trabajo del SDK de <a href="/help/sites-developing/spa-reference-materials.md">Editor.</a></td>
+   <td>AEM se utiliza como CMS SPA sin encabezado sin usar el marco de trabajo de <a href="/help/sites-developing/spa-reference-materials.md">Editor SDK de.</a></td>
    <td>El desarrollador front-end tiene control total sobre la aplicación.</td>
    <td><p>AEM Los autores de contenido no pueden utilizar la experiencia de creación de contenido de.</p> <p>El código no es portátil ni reutilizable si contiene referencias estáticas o enrutamiento.</p> <p>No permite el uso del editor de plantillas, por lo que el desarrollador front-end debe mantener plantillas editables a través de JCR.</p> </td>
   </tr>
   <tr>
-   <td>SPA El desarrollador front-end utiliza el marco de trabajo del SDK del Editor de, pero solo abre algunas áreas al autor del contenido.</td>
+   <td>SPA El desarrollador front-end utiliza el marco de trabajo de SDK del Editor de, pero solo abre algunas áreas al autor del contenido.</td>
    <td>El desarrollador mantiene el control de la aplicación y solo permite la creación en áreas restringidas de la aplicación.</td>
    <td><p>AEM Los autores de contenido están restringidos a un conjunto limitado de experiencias de creación de contenido que se pueden crear con un contenido de la.</p> <p>El código corre el riesgo de no ser ni portátil ni reutilizable si contiene referencias estáticas o enrutamiento.</p> <p>No permite el uso del editor de plantillas, por lo que el desarrollador front-end debe mantener plantillas editables a través del JCR.</p> </td>
   </tr>
   <tr>
-   <td>SPA AEM El proyecto utiliza completamente el SDK del Editor de, y los componentes de front-end se desarrollan como una biblioteca y la estructura de contenido de la aplicación se delega a los.</td>
+   <td>SPA El proyecto utiliza completamente el SDK AEM del Editor de, y los componentes de front-end se desarrollan como una biblioteca y la estructura de contenido de la aplicación se delega a los.</td>
    <td><p>La aplicación es reutilizable y portátil.</p> <p>AEM El autor del contenido puede editar la aplicación usando la experiencia de creación de contenido que se está usando para la creación de contenido de la.<br /> </p> <p>SPA La plantilla es compatible con el editor de plantillas de.</p> </td>
    <td><p>AEM El desarrollador no controla la estructura de la aplicación ni la parte de contenido delegada a la que se ha delegado la aplicación en el usuario.</p> <p>AEM El desarrollador puede seguir reservando áreas de la aplicación para el contenido que no vaya a crearse con la ayuda de la herramienta de creación de segmentos de contenido de la aplicación de la aplicación de tipo de.</p> </td>
   </tr>
@@ -112,7 +111,7 @@ SPA AEM Siga estos pasos para preparar sus existentes para trabajar con ellos.
 1. **Haga que sus componentes JS sean modulares.**
 
    Permitir que se representen en cualquier orden, posición y tamaño.
-1. **Use los contenedores proporcionados por el SDK de Adobe para colocar los componentes en la pantalla.**
+1. **Use los contenedores proporcionados por SDK de Adobe para colocar los componentes en la pantalla.**
 
    AEM proporciona un componente del sistema de páginas y párrafos para que lo utilice.
 1. AEM **Crear un componente de la para cada componente de JS.**
@@ -230,4 +229,4 @@ SPA AEM SPA Para obtener una guía paso a paso sobre cómo crear sus propios, co
 
 SPA AEM SPA Para obtener más información acerca de la asignación de modelos dinámicos a componentes y cómo funciona dentro de la asignación de componentes en el modelo dinámico, vea el artículo [Asignación de modelos dinámicos a componentes para la asignación de componentes para el modelo dinámico para la asignación de componentes para el modelo dinámico para la asignación de componentes para la asignación de componentes para el modelo dinámico para la asignación de componentes para la asignación de componentes para la asignación de componentes para la asignación de componentes para la asignación de componentes para el modelo dinámico para la asignación de componentes para la asignación de componentes10000000000000000001010000000000000000000000000000000000000000010000000000000000000000000000000](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)
 
-SPA AEM Si desea implementar un esquema de trabajo en el que no sea React o Angular SPA AEM SPA, o simplemente desea profundizar en cómo funciona el SDK de la para el trabajo de los usuarios, consulte el artículo de [Modelo de trabajo](/help/sites-developing/spa-blueprint.md) para el usuario de .
+Si desea implementar la implementación de la en un Angular SPA de trabajo que no sea React o SPA AEM, o simplemente desea profundizar en cómo funciona el modelo de trabajo de SDK AEM SPA para la, consulte el artículo de [Modelo de trabajo](/help/sites-developing/spa-blueprint.md).

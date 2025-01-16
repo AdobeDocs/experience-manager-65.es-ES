@@ -5,12 +5,13 @@ exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 1%
 
 ---
+
 
 # Componentes compuestos en SPA {#composite-components-in-spas}
 
@@ -19,6 +20,8 @@ AEM Los componentes compuestos utilizan la naturaleza modular de los componentes
 AEM SPA Cuando los componentes compuestos se implementan correctamente dentro del marco de trabajo del Editor de aplicaciones de una sola página () de, los autores de contenido pueden arrastrar y soltar estos componentes como lo harían con cualquier otro componente, pero siguen teniendo la capacidad de editar individualmente cada componente que compone el componente compuesto.
 
 AEM SPA Este artículo muestra cómo puede agregar un componente compuesto a la aplicación de una sola página para trabajar sin problemas con el Editor de.
+
+{{ue-over-spa}}
 
 ## Caso práctico {#use-case}
 
