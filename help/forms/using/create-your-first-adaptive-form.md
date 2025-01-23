@@ -1,5 +1,5 @@
 ---
-title: '“Tutorial: Cree su primer formulario adaptable”'
+title: 'Tutorial: Crear el primer formulario adaptable'
 description: Aprenda a crear formularios interactivos, adaptables y de clase empresarial.
 topic-tags: introduction
 docset: aem65
@@ -7,10 +7,10 @@ feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 71%
+source-wordcount: '908'
+ht-degree: 69%
 
 ---
 
@@ -66,7 +66,7 @@ Objetivos:
 * Cree una acción de envío para enviar un correo electrónico que contenga contenido de formulario.
 * Previsualizar y enviar un formulario adaptable.
 
-[![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
+[![Ver la guía](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Paso 2: Crear un modelo de datos de formulario {#step-create-form-data-model}
 
@@ -82,7 +82,7 @@ Objetivos:
 * Configure los servicios de lectura y escritura para el modelo de datos de formulario.
 * Probar el modelo de datos de formulario y los servicios configurados con datos de prueba.
 
-[![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
+[![Ver la guía](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Paso 3: Aplicar reglas a campos de formulario adaptables {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,7 +95,7 @@ Objetivos:
 * Cree y aplique reglas en los campos de formulario adaptables.
 * Utilice reglas para almacenar en déclencheur los servicios del modelo de datos de formulario para actualizar los datos a la base de datos.
 
-[![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![Ver la guía](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Paso 4: Estilo del formulario adaptable {#step-style-your-adaptive-form}
 
@@ -109,7 +109,7 @@ Objetivos:
 * Cree una temática para el formulario adaptable mediante el editor de temáticas.
 * Usar Web Fonts en una temática personalizada.
 
-[![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![Ver la guía](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Paso 5: Publicar el formulario adaptable {#step-publish-your-adaptive-form}
 
@@ -123,4 +123,4 @@ Objetivos:
 * AEM Incruste el formulario adaptable en una página de [!DNL Sites] de la.
 * AEM AEM Incruste el formulario adaptable en una página web externa (una página web que no sea de tipo alojada fuera de la página).
 
-[![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![Ver la guía](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
