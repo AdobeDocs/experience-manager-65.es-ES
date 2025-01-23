@@ -9,9 +9,9 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8305f77e895ad383a398cf8d4effa2b64cd45677
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1935'
 ht-degree: 78%
 
 ---
@@ -63,7 +63,7 @@ Para crear una variable,
    * Modelo de datos de formulario: especifique una ruta del modelo de datos de formulario.
    * ArrayList: especifique un subtipo para la colección.
 
-1. Especifique una descripción opcional para la variable y seleccione ![Guardar icono indicado por una marca de verificación dentro de una casilla.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
+1. Especifique una descripción opcional para la variable y seleccione ![Guardar icono indicado por una marca de verificación dentro de una casilla.](assets/Done_Icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
 
 Cuando cree variables, tenga en cuenta las siguientes prácticas:
 
@@ -93,10 +93,10 @@ También puede actualizar elementos específicos de una variable de tipo JSON o 
 Para agregar asignaciones entre variables, haga lo siguiente:
 
 1. En la página de edición del flujo de trabajo, seleccione el icono Pasos en la barra de tareas del modelo de flujo de trabajo.
-1. Arrastre y suelte el paso **Establecer variable** en el editor de flujo de trabajo, seleccione el paso y seleccione el icono ![Configurar indicado por una llave inglesa.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
+1. Arrastre y suelte el paso **Establecer variable** en el editor de flujo de trabajo, seleccione el paso y seleccione el icono ![Configurar indicado por una llave inglesa.](assets/configure_icon.png) (Configurar).
 1. En el cuadro de diálogo Establecer variable, seleccione **[!UICONTROL Asignación]** > **[!UICONTROL Agregar asignación]**.
 1. En la sección **Variable de mapa**, seleccione la variable para almacenar datos, seleccione el modo de asignación y especifique un valor para almacenar en la variable. Los modos de asignación varían en función del tipo de variable.
-1. Asigne más variables para poder crear una expresión significativa. Seleccione el icono ![Guardar indicado por una marca de verificación dentro de una casilla.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para guardar los cambios.
+1. Asigne más variables para poder crear una expresión significativa. Seleccione el icono ![Guardar indicado por una marca de verificación dentro de una casilla.](assets/Done_Icon.png) para guardar los cambios.
 
 ### Ejemplo 1: Consultar una variable XML para establecer el valor de una variable en cadena {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -251,8 +251,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Editar una variable {#edit-a-variable}
 
 1. En la página Editar flujo de trabajo, seleccione el icono Variables de la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
-1. Seleccione el icono ![Editar indicado por un símbolo de lápiz.](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Editar) junto al nombre de la variable que desea editar.
-1. Edite la información de la variable y seleccione ![Guardar icono indicado mediante una marca de verificación.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para guardar los cambios. No se pueden editar los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]** para una variable.
+1. Seleccione el icono ![Editar indicado por un símbolo de lápiz.](assets/edit.png) (Editar) junto al nombre de la variable que desea editar.
+1. Edite la información de la variable y seleccione ![Guardar icono indicado mediante una marca de verificación.](assets/Done_Icon.png) para guardar los cambios. No se pueden editar los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]** para una variable.
 
 ## Eliminar una variable {#delete-a-variable}
 
@@ -262,4 +262,4 @@ Para eliminar una variable,
 
 1. En la página Editar flujo de trabajo, seleccione el icono Variables de la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
 1. Seleccione el icono Eliminar junto al nombre de la variable que desee eliminar.
-1. Seleccione el icono ![Listo&quot; indicado por un símbolo de marca de verificación.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para confirmar y eliminar la variable.
+1. Seleccione el icono ![Listo&quot; indicado por un símbolo de marca de verificación.](assets/Done_Icon.png) para confirmar y eliminar la variable.
