@@ -1,5 +1,5 @@
 ---
-title: Prácticas recomendadas para usar formularios adaptables
+title: 'Prácticas recomendadas para usar formularios adaptables '
 description: Explica las prácticas recomendadas para configurar un proyecto de AEM Forms, desarrollar formularios adaptables y optimizar el rendimiento del sistema AEM Forms.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -7,10 +7,10 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c55c959123f7feaa6571835974f1ce6fe3ead22b
 workflow-type: tm+mt
-source-wordcount: '5538'
-ht-degree: 77%
+source-wordcount: '5597'
+ht-degree: 76%
 
 ---
 
@@ -210,6 +210,7 @@ Tenga en cuenta las siguientes prácticas recomendadas para superar los problema
 * Incluir solo los campos y paneles en formularios adaptables que capturan información del usuario. Considere la posibilidad de mantener el contenido estático como mínimo o utilice direcciones URL para abrirlo en una ventana independiente.
 * Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de los formularios. Por ejemplo: detalles personales, dirección, detalles de empleo, etc. Cree [fragmentos de formulario adaptables](/help/forms/using/adaptive-form-fragments.md) para elementos y secciones de formulario comunes y utilícelos en todos los formularios. También puede guardar un panel en un formulario existente como un fragmento. Cualquier cambio en un fragmento se reflejará en todos los formularios adaptables asociados. Promueve la creación colaborativa, ya que varios autores pueden trabajar simultáneamente en diferentes fragmentos que conforman un formulario.
 
+   * Considere la posibilidad de crear fragmentos de formulario incluso para secciones no reutilizables durante la creación del formulario. A medida que los formularios aumentan en tamaño y complejidad, su desglose en fragmentos puede simplificar considerablemente el proceso de creación y facilitar el mantenimiento del formulario. Este método permite centrarse en elementos más pequeños y manejables del formulario en lugar de tratar todo el formulario a la vez.
    * De forma similar a los formularios adaptables, se recomienda que todos los estilos específicos de fragmento y los scripts personalizados se definan en la biblioteca de cliente mediante el cuadro de diálogo contenedor de fragmentos. Además, intente crear fragmentos autosuficientes que no dependan de objetos externos.
    * Evite utilizar scripts entre fragmentos. Si hay algún objeto fuera del fragmento al que deba hacer referencia, intente que dicho objeto forme parte del formulario principal. Si el objeto debe residir en otro fragmento, refiérase a él por su nombre en el script.
 
