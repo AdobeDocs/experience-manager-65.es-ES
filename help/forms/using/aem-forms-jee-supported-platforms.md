@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 7b0f1c79a019e01e5814d00d5a3de0861999b7fd
 workflow-type: tm+mt
-source-wordcount: '4010'
-ht-degree: 51%
+source-wordcount: '4098'
+ht-degree: 50%
 
 ---
 
@@ -361,7 +361,7 @@ Tenga en cuenta las siguientes excepciones al elegir una plataforma para configu
 1. El repositorio CRX admite la persistencia de tipo TarMK, MongoDB y bases de datos relacionales (RDBMK). No puede tener dos sistemas de base de datos diferentes entre el servidor de aplicaciones y el repositorio CRX. Sin embargo, en AEM Forms en un entorno JEE, puede utilizar MongoMK con el repositorio CRX y una base de datos relacional compatible con el servidor de aplicaciones.
 1. AEM Forms en JEE no admite el servidor de aplicaciones WebSphere® en CentOS.
 1. AEM Forms en JEE no es compatible con el control de acceso basado en roles JBoss® (RBAC).
-1. SDK de AEM Forms en Oracle JEE compatible con Java™ SE 11 (64 bits) solo para el servidor de aplicaciones JBoss® EAP 7.4.
+1. Oracle de soporte de AEM Forms en JEE Java™ SE 11 (64 bits) SDK solo para el servidor de aplicaciones JBoss® EAP 7.4.
 1. Las versiones de JDK superiores a 1.8.0_281 no son compatibles con el servidor WebLogic. (FORMS-8498)
 1. No se admite JDK 11.0.20 para instalar AEM Forms en el instalador JEE. Solo se admite JDK 11.0.19 o versiones anteriores para instalar AEM Forms en el instalador JEE.
 
@@ -486,7 +486,9 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 >
 >Además,:
 >
->- PDF Generator solo admite la versión comercial de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
+>- PDF Generator sólo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
+>- La instalación de Microsoft® Office Professional Plus puede utilizar licencias por volumen basadas en Retail o MAK/KMS/AD.
+>- Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
 >- PDF Generator no admite Microsoft® Office 365.
 >- Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux®.
 >- Las características de PDF, Optimizar PDF y Exportar PDF de OCR solo son compatibles con Windows.
@@ -494,7 +496,12 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 >- El servicio de PDF Generator no es compatible con Microsoft® Windows 10.
 >- PDF Generator no puede convertir archivos con Microsoft® Visio 2019.
 >- El PDF Generator no puede convertir archivos mediante Microsoft® Project 2019.
->- Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
+
+PDF Generator sólo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
+
+La instalación de Microsoft® Office Professional Plus puede utilizar licencias por volumen basadas en Retail o MAK/KMS/AD.
+
+Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
@@ -895,7 +902,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Compatibilidad añadida | Compatibilidad eliminada | Compatibilidad obsoleta |
 | -------------- | --------------- | ------------------- |
-| SDK de oracle Java™ SE 11 (64 bits) para el servidor de aplicaciones JBoss® EAP 7.4. | | [Adobe Acrobat 2017: la compatibilidad principal con Adobe Acrobat 2017 finaliza el 6 de junio de 2022.](https://helpx.adobe.com/es/support/programs/eol-matrix.html) |
+| Oracle Java™ SE 11 (64 bits) SDK para el servidor de aplicaciones JBoss® EAP 7.4. | | [Adobe Acrobat 2017: la compatibilidad principal con Adobe Acrobat 2017 finaliza el 6 de junio de 2022.](https://helpx.adobe.com/es/support/programs/eol-matrix.html) |
 |  | | Red Hat® Enterprise Linux® 7 (Kernel 3.x) (64 bits) |
 |  | | Microsoft® Windows Server 2016 (64 bits) |
 |  | | Microsoft® Office 2016 |

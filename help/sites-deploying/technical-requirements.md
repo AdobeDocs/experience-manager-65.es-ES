@@ -6,9 +6,9 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 01fa8cd75c00b04578fe103d07fa52553d2b6b93
+source-git-commit: 7b0f1c79a019e01e5814d00d5a3de0861999b7fd
 workflow-type: tm+mt
-source-wordcount: '3656'
+source-wordcount: '3681'
 ht-degree: 12%
 
 ---
@@ -129,7 +129,7 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | IBM® DB2® 10.5 | Repositorio y base de datos Forms | R: Soporte restringido `[5]` |
 | Base de datos Oracle 12c (12.1.x) | Repositorio y base de datos Forms | R: Compatibilidad restringida |
 | Microsoft® SQL Server 2016 | Base de datos Forms | A: Compatible |
-| **Apache Lucene (integrado en Quickstart)** | Servicio Search | A: Compatible |
+| **Apache Lucene (integrado en Quickstart)** | Servicio de búsqueda | A: Compatible |
 | Apache Solr | Servicio de búsqueda | A: Compatible |
 
 1. &quot;File System&quot; incluye almacenamiento en bloque compatible con POSIX. Incluye tecnología de almacenamiento en red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. AEM Cargar la prueba con el sistema de archivos remoto/de red.
@@ -514,15 +514,16 @@ Para Windows x86:
 >
 >* PDF Generator requiere una versión de 32 bits de [Acrobat 2020 classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versión 17.011.30078 para realizar la conversión.
 >* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux®.
->* PDF Generator sólo admite la versión comercial de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión en el sistema operativo Windows.
+>* PDF Generator sólo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
+>* La instalación de Microsoft® Office Professional Plus puede utilizar licencias por volumen basadas en Retail o MAK/KMS/AD.
+>* Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
 >* PDF Generator admite las versiones de 32 y 64 bits de OpenOffice en el sistema operativo Linux®.
 >* PDF Generator no admite Microsoft® Office 365.
 >* Las características de PDF, Optimizar PDF y Exportar PDF de OCR solo son compatibles con Windows.
 >* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad Generador de PDF. Mediante programación, acceda a la versión agrupada solo con AEM Forms, durante el periodo de validez de la licencia de AEM Forms, para utilizarlo con AEM Forms PDF Generator. Para obtener más información, consulte la descripción del producto de AEM Forms según su implementación ([Local](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* El servicio de PDF Generator no es compatible con Microsoft® Windows 10.
->* PDF Generator no puede convertir archivos con Microsoft® Visio 2019. Puede seguir utilizando Microsoft® Visio 2016 para convertir `.VSD` y `.VSDX` archivos.
->* El PDF Generator no puede convertir archivos mediante Microsoft® Project 2019. Puede seguir utilizando Microsoft® Project 2016 para convertir `.VSD` y `.VSDX` archivos.
->
+>* PDF Generator no puede convertir archivos con Microsoft® Visio 2019.
+>* El generador de PDF no puede convertir archivos con Microsoft® Project 2019.
 
 ### Requisitos de AEM Forms Designer {#requirements-for-aem-forms-designer}
 
