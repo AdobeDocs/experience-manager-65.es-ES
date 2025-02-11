@@ -10,20 +10,27 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1479'
 ht-degree: 2%
 
 ---
 
+
 # Configuración del contenedor y el modo de diseño{#configuring-layout-container-and-layout-mode}
 
-[Diseño interactivo](/help/sites-authoring/responsive-layout.md) es un mecanismo para realizar [diseño web interactivo](https://en.wikipedia.org/wiki/Responsive_web_design). Esto permite al usuario crear páginas web con un diseño y dimensiones dependientes de los dispositivos que utilizan sus usuarios.
+Obtenga información sobre cómo configurar el contenedor y el modo de diseño.
 
->[!NOTE]
+>[!TIP]
 >
->Esto se puede comparar con los mecanismos de [Web móvil](/help/sites-developing/mobile-web.md), que usan diseño web adaptable (principalmente para la IU clásica).
+>AEM Este documento proporciona información general sobre el diseño interactivo para administradores y desarrolladores de sitios, y describe cómo se aplican las funciones en los informes de diseño de la aplicación de la aplicación de forma.
+>
+>Para los autores de contenido, los detalles de cómo utilizar las características de diseño adaptable en una página de contenido están disponibles en el documento [Diseño adaptable para sus páginas de contenido.](/help/sites-authoring/responsive-layout.md)
+
+## Información general {#overview}
+
+[Diseño interactivo](/help/sites-authoring/responsive-layout.md) es un mecanismo para realizar [diseño web interactivo](https://en.wikipedia.org/wiki/Responsive_web_design). Esto permite al usuario crear páginas web con un diseño y dimensiones dependientes de los dispositivos que utilizan sus usuarios.
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
@@ -33,7 +40,7 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 
    * El componente **Contenedor de diseño** predeterminado se define en:
 
-     /libs/wcm/foundation/components/responsivegrid
+     `/libs/wcm/foundation/components/responsivegrid`
 
    * Puede definir contenedores de diseño:
 
@@ -49,10 +56,6 @@ Una vez que el contenedor de diseño esté colocado en la página, puede usar el
 * [**Emulador**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Esto permite crear y editar sitios web interactivos que reorganizan el diseño según el tamaño del dispositivo o la ventana, mediante el cambio de tamaño de los componentes de forma interactiva. A continuación, el usuario puede ver cómo se representa el contenido mediante el emulador.
 
->[!CAUTION]
->
->Aunque el componente **Contenedor de diseño** está disponible en la IU clásica, su funcionalidad completa solo está disponible en la IU táctil.
-
 Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 
 * Utilice puntos de interrupción (que indican la agrupación del dispositivo) para definir un comportamiento de contenido diferente en función del diseño del dispositivo.
@@ -60,9 +63,17 @@ Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 * Utilice el ajuste horizontal a la cuadrícula (coloque los componentes en la cuadrícula, cambie su tamaño según sea necesario, defina cuándo deben contraerse o redistribuirse lateralmente o arriba/abajo).
 * Realizar el control de columnas.
 
+>[!TIP]
+>
+>El Adobe AEM AEM proporciona [documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del diseño interactivo como referencia que se puede proporcionar a los desarrolladores de interfaces de usuario, lo que les permite usar la cuadrícula de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de GitHub, por ejemplo, al crear maquetas de HTML AEM estáticos para un sitio de interfaz de usuario en el futuro. El diseño de la interfaz de usuario de GitHub se puede proporcionar a los desarrolladores de interfaces de usuario de usuario de GitHub como una referencia que les permita usar la cuadrícula de la interfaz de usuario de un sitio en el futuro.
+
 >[!NOTE]
 >
 >En una instalación predeterminada, se ha configurado un diseño interactivo para el [sitio de referencia de We.Retail](/help/sites-developing/we-retail.md). [Activar el componente Contenedor de diseño](#enable-the-layout-container-component-for-page) para otras páginas.
+
+>[!CAUTION]
+>
+>Aunque el componente **Contenedor de diseño** está disponible en la IU clásica, su funcionalidad completa solo está disponible en la IU táctil.
 
 ## Configuración del emulador interactivo {#configuring-the-responsive-emulator}
 
@@ -148,7 +159,7 @@ Los puntos de interrupción se encuentran dentro de la sección `<jcr:content>` 
 
 Una definición de ejemplo:
 
-```xml
+```html
 <cq:responsive jcr:primaryType="nt:unstructured">
   <breakpoints jcr:primaryType="nt:unstructured">
     <phone jcr:primaryType="nt:unstructured" title="{String}Phone" width="{Decimal}768"/>
@@ -186,13 +197,13 @@ Los dos ejemplos siguientes ilustran la definición:
 
 * **HTL:**
 
-  ```xml
+  ```html
   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
   ```
 
 * **JSP:**
 
-  ```
+  ```html
   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
   ```
 
@@ -204,7 +215,7 @@ AEM Utiliza LESS para generar partes del CSS necesario, que deben incluirse para
 
 También debe crear una [biblioteca de cliente](https://experienceleague.adobe.com/docs/) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
 
-```java
+```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
 
 /* maximum amount of grid cells to be provided */
@@ -311,3 +322,61 @@ Puede configurar el número de columnas disponibles para cada instancia específ
    * Componentes que se pueden añadir al componente actual:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+
+## Cuadrículas adaptables anidadas {#nested-responsive-grids}
+
+Puede haber ocasiones en que sea necesario anidar cuadrículas adaptables para satisfacer las necesidades del proyecto. Sin embargo, tenga en cuenta que la práctica recomendada de Adobe es mantener la estructura lo más plana posible.
+
+Cuando no pueda evitar utilizar cuadrículas adaptables anidadas, asegúrese de lo siguiente:
+
+* Todos los contenedores (contenedores, pestañas, acordeones, etc.) tienen la propiedad `layout = responsiveGrid`.
+* No mezcle la propiedad `layout = simple` en la jerarquía de contenedor.
+
+Esto incluye todos los contenedores estructurales de la plantilla de página.
+
+El número de columna del contenedor interno nunca debe ser mayor que el del contenedor externo. El ejemplo siguiente cumple esta condición. Mientras que el número de columna del contenedor externo es 8 para la pantalla predeterminada (escritorio), el número de columna del contenedor interno es 4.
+
+>[!BEGINTABS]
+
+>[!TAB Ejemplo de estructura de nodos]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Ejemplo de HTML resultante]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+>[!ENDTABS]

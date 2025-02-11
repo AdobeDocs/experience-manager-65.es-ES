@@ -1,6 +1,6 @@
 ---
 title: Diseño interactivo para las páginas de contenido
-description: Adobe Experience Manager le permite crear un diseño interactivo para sus páginas.
+description: Adobe Experience Manager permite crear un diseño interactivo para las páginas mediante el componente Contenedor de diseño.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,18 +9,27 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 62%
+source-wordcount: '1853'
+ht-degree: 60%
 
 ---
 
+
 # Diseño adaptable{#responsive-layout}
 
-AEM le permite tener un diseño adaptable para sus páginas mediante el componente **Contenedor de diseño**.
+Adobe Experience Manager le permite crear un diseño interactivo para sus páginas mediante el componente **Contenedor de diseño**.
 
-Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se usa junto con el modo [**Diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar su diseño interactivo en función del dispositivo.
+>[!TIP]
+>
+>Este documento proporciona información general sobre las funciones del contenedor de diseño disponibles para los autores de contenido.
+>
+>Para los administradores y desarrolladores de sitios, los detalles sobre cómo configurar el contenedor de diseño para sus sitios se describen en el documento [Configuración del contenedor de diseño y el modo de diseño.](/help/sites-authoring/responsive-layout.md)
+
+## Información general {#overview}
+
+El componente **Contenedor de diseño** proporciona un sistema de párrafos que le permite colocar componentes dentro de una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se usa junto con el modo [**Diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar su diseño interactivo en función del dispositivo.
 
 El contenedor de diseño:
 
