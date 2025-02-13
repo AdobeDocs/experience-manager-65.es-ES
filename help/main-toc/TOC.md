@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: b5a87404435758d660f136d2e236de699ecad541
+source-git-commit: 236dac79430bc974b9cc95299a566283a748476a
 workflow-type: tm+mt
-source-wordcount: '7475'
+source-wordcount: '7474'
 ht-degree: 67%
 
 ---
@@ -52,34 +52,34 @@ ht-degree: 67%
    + [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md)
    + [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md)
    + [Principales 10 de OWASP](/help/sites-administering/owasp-top10.md)
-   + [AEM Ejecución en modo listo para la producción](/help/sites-administering/production-ready.md)
+   + [Ejecución de AEM en el modo Producción lista](/help/sites-administering/production-ready.md)
    + [Administración de identidades](/help/sites-administering/identity-management.md)
-   + [Autenticación IMS de Adobe y compatibilidad con el Admin Console AEM para el uso de Managed Services](/help/sites-administering/ims-config-and-admin-console.md)
+   + [Autenticación IMS de Adobe y compatibilidad con Admin Console para AEM Managed Services](/help/sites-administering/ims-config-and-admin-console.md)
    + [Creación de un grupo de usuarios cerrado](/help/sites-administering/cug.md)
-   + [AEM Mitigación de problemas de serialización en la](/help/sites-administering/mitigating-serialization-issues.md)
+   + [Mitigación de problemas de serialización en AEM](/help/sites-administering/mitigating-serialization-issues.md)
    + [Sincronización de usuarios](/help/sites-administering/sync.md)
    + [Compatibilidad con tokens encapsulados](/help/sites-administering/encapsulated-token.md)
    + [Inicio de sesión único](/help/sites-deploying/single-sign-on.md)
-   + [AEM Cómo auditar las operaciones de administración de usuarios en el](/help/sites-administering/audit-user-management-operations.md)
+   + [Cómo auditar las operaciones de administración de usuarios en AEM](/help/sites-administering/audit-user-management-operations.md)
    + [SSL predeterminado](/help/sites-administering/ssl-by-default.md)
    + [Controlador de autenticación SAML 2.0](/help/sites-administering/saml-2-0-authenticationhandler.md)
    + [Grupos de usuarios cerrados en AEM](/help/sites-administering/closed-user-groups.md)
    + [Operaciones de Granite: administración de usuarios y grupos](/help/sites-administering/granite-user-group-admin.md)
-   + [Activación del CRXDE Lite AEM en la](/help/sites-administering/enabling-crxde-lite.md)
-   + [AEM Configuración de LDAP con 6](/help/sites-administering/ldap-config.md)
+   + [Habilitar CRXDE Lite en AEM](/help/sites-administering/enabling-crxde-lite.md)
+   + [Configuración de LDAP con AEM 6](/help/sites-administering/ldap-config.md)
    + [Configurar la contraseña de administrador durante la instalación](/help/sites-administering/security-configure-admin-password.md)
-   + [AEM Usuarios de servicio en](/help/sites-administering/security-service-users.md)
+   + [Usuarios de servicio en AEM](/help/sites-administering/security-service-users.md)
    + [Compatibilidad con cifrado para propiedades de configuración](/help/sites-administering/encryption-support-for-configuration-properties.md)
-   + [AEM Gestión de solicitudes de RGPD para la Fundación de la](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)
+   + [Gestión de solicitudes de RGPD para AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)
    + [Vista principal para la administración de permisos](/help/sites-administering/touch-ui-principal-view.md)
    + [Filtro de disposición de contenido](/help/sites-administering/content-disposition-filter.md)
-   + [AEM Asignación de grupos de usuarios personalizados en 6.5](/help/sites-administering/cug-mapping.md)
+   + [Asignación de grupos de usuarios personalizados en AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Compatibilidad con cookies de SameSite](/help/sites-administering/same-site-cookie-support.md)
    + [Credenciales de JWT de Adobe Developer Console en desuso](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [AEM Configuración de integraciones de IMS para la](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
+   + [Configuración de integraciones de IMS para AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + Creación {#authoring}
-      + AEM Tareas, herramientas y conceptos esenciales para la creación de {#essentials}
+      + Tareas, herramientas y conceptos esenciales para la creación de AEM {#essentials}
          + [Primeros pasos para los autores](/help/sites-authoring/first-steps.md)
          + [Creación de páginas](/help/sites-authoring/page-authoring.md)
          + [Guía rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md)
@@ -149,11 +149,11 @@ ht-degree: 67%
          + [Administrar audiencias](/help/sites-authoring/managing-audiences.md)
          + [Creación y administración de ofertas](/help/sites-authoring/offerlib.md)
          + [Información acerca de la segmentación](/help/sites-authoring/segmentation-overview.md)
-      + AEM Adobe Campaign {#aem-adobe-campaign}
+      + AEM y Adobe Campaign {#aem-adobe-campaign}
          + [Uso de Adobe Campaign](/help/sites-authoring/adobe-campaign.md)
          + [Uso de Adobe Campaign Classic y Adobe Campaign Standard](/help/sites-authoring/campaign.md)
          + [Segmentación de Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
-         + [Creación de Adobe Campaign Forms AEM en](/help/sites-authoring/adobe-campaign-forms.md)
+         + [Creación de Adobe Campaign Forms en AEM](/help/sites-authoring/adobe-campaign-forms.md)
          + [Componentes de Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md)
    + Administración {#administering}
       + [Introducción a la Guía del usuario de administración](/help/sites-administering/home.md)
@@ -178,7 +178,7 @@ ht-degree: 67%
          + [Mejoras de traducción](/help/sites-administering/tc-enhancements.md)
          + [Prácticas recomendadas de traducción](/help/sites-administering/tc-bp.md)
          + [Configuraciones y el explorador de configuración](/help/sites-administering/configurations.md)
-         + [AEM Preguntas más frecuentess](/help/sites-administering/aem-faqs.md)
+         + [Preguntas frecuentes sobre AEM](/help/sites-administering/aem-faqs.md)
       + Operaciones {#operations}
          + [Paneles de control](/help/sites-administering/dashboards.md)
          + [Tablero de operaciones](/help/sites-administering/operations-dashboard.md)
@@ -186,7 +186,7 @@ ht-degree: 67%
          + [Recopilación de datos almacenados desechables](/help/sites-administering/data-store-garbage-collection.md)
          + [Supervisión de recursos del servidor mediante la consola JMX](/help/sites-administering/jmx-console.md)
          + [Uso de registros](/help/sites-administering/troubleshooting.md)
-         + [AEM Mantenimiento del registro de auditoría en el 6](/help/sites-administering/operations-audit-log.md)
+         + [Mantenimiento del registro de auditoría en AEM 6](/help/sites-administering/operations-audit-log.md)
          + [Configuración del editor de texto enriquecido](/help/sites-administering/rich-text-editor.md)
          + [Configuración de RTE para producir sitios accesibles](/help/sites-administering/rte-accessible-content.md)
          + [Configurar Deshacer para editar páginas](/help/sites-administering/config-undo.md)
@@ -200,9 +200,9 @@ ht-degree: 67%
          + [Inicio de flujos de trabajo](/help/sites-administering/workflows-starting.md)
          + [Administración de flujos de trabajo](/help/sites-administering/workflows.md)
          + [Administración de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md)
-         + [AEM Uso de cURL con](/help/sites-administering/curl.md)
+         + [Uso de cURL con AEM](/help/sites-administering/curl.md)
          + [Herramienta Servidor Proxy (proxy.jar)](/help/sites-administering/proxy-jar.md)
-         + [AEM Configuración de para aplicaciones de](/help/sites-administering/config-apps.md)
+         + [Configuración de para aplicaciones de AEM](/help/sites-administering/config-apps.md)
          + [Configurar formularios de búsqueda](/help/sites-administering/search-forms.md)
          + [Consolas de herramientas](/help/sites-administering/tools-consoles.md)
          + [Informes](/help/sites-administering/reporting.md)
@@ -237,10 +237,10 @@ ht-degree: 67%
          + [Integración con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
          + [Artículos relacionados de la comunidad](/help/sites-administering/related-community-articles.md)
          + [Integración con Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)
-         + [Aviso de fin de vida útil para el visualizador de Flashes](/help/sites-administering/flash-viewers-eol.md)
+         + [Aviso de fin de vida útil para el visor Flash](/help/sites-administering/flash-viewers-eol.md)
          + [Integración con Adobe Dynamic Tag Management](/help/sites-administering/dtm.md)
          + [Inclusión en Adobe Analytics y Adobe Target](/help/sites-administering/opt-in.md)
-         + [AEM Portals y portlets de la red](/help/sites-administering/aem-as-portal.md)
+         + [Portales y portlets de AEM](/help/sites-administering/aem-as-portal.md)
          + [Integración con Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md)
          + [Fórmulas de AEM Livefyre](/help/sites-administering/aem-livefyre-recipes.md)
          + [Solución de problemas de integración](/help/sites-administering/troubleshooting-integration-issues.md)
@@ -263,7 +263,7 @@ ht-degree: 67%
          + [Prácticas recomendadas de traducción](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
          + [Prácticas recomendadas de MSM](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites: Preparación para el RGPD](/help/sites-administering/gdpr-compliance-sites.md)
-         + AEM [Tratamiento de solicitudes de RGPD para la base de datos de la](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
+         + [Gestión de solicitudes de RGPD para AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
          + [AEM Commerce - Preparación para el RGPD](/help/sites-administering/gdpr-compliance-commerce.md)
       + Administración de contenido {#contentmanagement}
          + [El administrador de paquetes](/help/sites-administering/package-manager.md)
@@ -315,7 +315,7 @@ ht-degree: 67%
          + [Promoción de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-promoting.md)
       + Personalización {#personalization}
          + [Información acerca de la segmentación](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
-         + [Campaign Management](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)
+         + [Administración de campañas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)
          + [Páginas de destino](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
          + [Ofertas de Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
          + [Marketing por correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
@@ -331,7 +331,7 @@ ht-degree: 67%
          + [Uso de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac.md)
          + [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
          + [Segmentación de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
-         + [Creación de Adobe Campaign Forms AEM en](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
+         + [Creación de Adobe Campaign Forms en AEM](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
       + Creación de Assets en la IU clásica {#assets}
          + [Uso de recursos](/help/sites-classic-ui-authoring/classicui-assets.md)
          + [Entrega de Dynamic Media Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
@@ -359,17 +359,17 @@ ht-degree: 67%
       + [Añadir mapas de imagen](/help/assets/image-maps.md)
       + [Reutilización de recursos mediante MSM](/help/assets/reuse-assets-using-msm.md)
       + [Conectó Assets con  [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
-   + Dynamic Media{#dynamic}
-      + [Archivo de newsletter por Experience League](/help/assets/dynamic-media-newsletter.md)
+   + Medios dinámicos{#dynamic}
+      + [Archivo de newsletter de Experience League](/help/assets/dynamic-media-newsletter.md)
       + [Configuración de Dynamic Media](/help/assets/administering-dynamic-media.md)
       + [Trabajar con Dynamic Media](/help/assets/dynamic-media.md)
       + [Configuración de Dynamic Media: modo Scene7](/help/assets/config-dms7.md)
-      + [Opcional: configuración de Dynamic Media, modo Scene7, configuración general](/help/assets/dm-general-settings.md)
-      + [Opcional: configuración de Dynamic Media, modo Scene7, configuración de Publish](/help/assets/dm-publish-settings.md)
-      + [Solución de problemas de Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md)
+      + [Opcional: configuración de Dynamic Media: modo Scene7, configuración general](/help/assets/dm-general-settings.md)
+      + [Opcional: configuración de Dynamic Media: modo Scene7, configuración de publicación](/help/assets/dm-publish-settings.md)
+      + [Solución de problemas de Dynamic Media: modo Scene7](/help/assets/troubleshoot-dms7.md)
       + [Configuración de una cuenta de alias de empresa de Dynamic Media](/help/assets/dm-alias-account.md)
       + [Configuración de Dynamic Media: modo híbrido](/help/assets/config-dynamic.md)
-      + [Migración de Dynamic Media - Modo híbrido a Dynamic Media - Modo S7](/help/assets/migrate-from-hybrid-to-dms7.md)
+      + [Migración de Dynamic Media (modo híbrido) a Dynamic Media (modo S7)](/help/assets/migrate-from-hybrid-to-dms7.md)
       + [Accesibilidad en Dynamic Media](/help/assets/accessibility-dm.md)
       + [Administración de activos de Dynamic Media](/help/assets/managing-assets.md)
       + [Práctica recomendada para optimizar la calidad de las imágenes](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -432,7 +432,7 @@ ht-degree: 67%
       + [Comprender los conceptos de metadatos](/help/assets/metadata-concepts.md)
       + [Configuración de funcionalidad de metadatos](/help/assets/metadata-config.md)
       + [Esquemas de metadatos](/help/assets/metadata-schemas.md)
-      + [XMP respuesta de escritura a las representaciones de](/help/assets/xmp-writeback.md)
+      + [Reescritura de XMP en representaciones](/help/assets/xmp-writeback.md)
       + [Uso compartido de vínculos de recursos](/help/assets/link-sharing.md)
       + [Informes de recurso](/help/assets/asset-reports.md)
       + [Configuración del servicio de contenido inteligente para etiquetado](/help/assets/config-smart-tagging.md)
@@ -444,17 +444,17 @@ ht-degree: 67%
       + [Guía de migración de [!DNL Assets]](/help/assets/assets-migration-guide.md)
       + [[!DNL Assets] consideraciones de red](/help/assets/assets-network-considerations.md)
       + [[!DNL Assets] y MediaLibrary](/help/assets/medialibrary.md)
-      + [Usar PDF rasterizer](/help/assets/aem-pdf-rasterizer.md)
+      + [Usar PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Configurar restricciones de carga](/help/assets/configuring-asset-upload-restrictions.md)
       + [Integración de [!DNL Experience Manager] y  [!DNL Creative Cloud] s](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrar con [!DNL InDesign Server]](/help/assets/indesign.md)
-      + [Digitales Rights Management en recursos](/help/assets/drm.md)
+      + [Digital Rights Management en recursos](/help/assets/drm.md)
       + [Uso del paquete de demostración para perspectivas de recursos](/help/assets/use-demo-package-for-asset-insights.md)
       + [Configuración de Adobe Asset Link](/help/assets/configure-asset-link.md)
       + [Generar representaciones de FPO para Adobe InDesign](/help/assets/configure-fpo-renditions.md)
       + [Prácticas recomendadas de formato de archivo Assets](/help/assets/assets-file-format-best-practices.md)
       + [Prácticas recomendadas para monitorizar recursos](/help/assets/assets-monitoring-best-practices.md)
-      + [apoyo Camera Raw](/help/assets/camera-raw.md)
+      + [Compatibilidad con Camera Raw](/help/assets/camera-raw.md)
       + [Detección del tipo MIME de los recursos mediante Apache Tika](/help/assets/detect-asset-mime-type-with-tika.md)
       + [Biblioteca de transcodificación de imágenes](/help/assets/imaging-transcoding-library.md)
       + [Inquilinos múltiples para colecciones, fragmentos de código y plantillas de fragmentos de código](/help/assets/multi-tenancy.md)
@@ -463,8 +463,8 @@ ht-degree: 67%
    + Brand Portal {#brandportal}
       + [Configuración de [!DNL Assets] con [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicación de recursos en  [!DNL Brand Portal]](/help/assets/brand-portal-publish-assets.md)
-      + [Carpetas de Publish a  [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
-      + [Colecciones Publish a  [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
+      + [Publicar carpetas en  [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
+      + [Publicar colecciones en  [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
    + Fragmentos de contenido {#content-fragments}
       + [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
       + [Entrega sin encabezado con fragmentos de contenido y GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -488,7 +488,7 @@ ht-degree: 67%
       + [Administrar recursos de vídeo](/help/assets/managing-video-assets.md)
       + [Creación de proyectos de traducción](/help/assets/translation-projects.md)
       + [Preparación de recursos para su traducción](/help/assets/preparing-assets-for-translation.md)
-      + [Descargar recursos del Experience Manager](/help/assets/download-assets-from-aem.md)
+      + [Descarga de recursos desde Experience Manager](/help/assets/download-assets-from-aem.md)
       + [Lightbox](/help/assets/light-box.md)
       + [Datos de Assets](/help/assets/asset-insights.md)
       + [Habilitar perspectivas de recursos mediante DTM](/help/assets/use-dtm-for-asset-insights.md)
@@ -542,7 +542,7 @@ ht-degree: 67%
       + [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
       + [Seleccionar un tipo de persistencia para una instalación de AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
       + Instalar AEM Forms en OSGi {#osgi-installation}
-         + [Plataformas compatibles con AEM Forms en OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements.html)
+         + [Plataformas compatibles con los formularios AEM en OSGi](/help/forms/using/supported-platforms.md)
          + [Instalar y configurar Servicios de documento ](/help/forms/using/install-configure-document-services.md)
          + [Instalar y configurar las capacidades de captura de datos](/help/forms/using/installing-configuring-aem-forms-osgi.md)
          + [Instalar y configurar el flujo de trabajo centrado en Forms en OSGi](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
@@ -1200,17 +1200,17 @@ ht-degree: 67%
       + [No se pueden usar algunas funciones de formularios con ciertas versiones de Oracle JDK](/help/forms/using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
       + [Pasos adicionales para obtener el correo electrónico con los archivos adjuntos para la versión de formularios adaptables en JEE](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
       + [No se pueden convertir archivos de Word o Excel a PDF en Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
-      + [No se pueden abrir PDF forms basados en XFA en Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer o Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
+      + [No se puede abrir PDF forms basado en XFA en Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer o Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [No se puede restaurar el repositorio de CRX](/help/forms/using/restore-crx-repository.md)
-      + [AEM Errores de servicio no disponible después de instalar el paquete de servicio 6.5.15.0 de](/help/forms/using/aem-service-pack-installation-solution.md)
+      + [Errores de servicio no disponible después de instalar el Service Pack 6.5.15.0 de AEM](/help/forms/using/aem-service-pack-installation-solution.md)
       + [Problema de instalación del Service Pack de AEM Forms JEE 6.5.15.0 en el entorno JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [Procesamiento de documentos incluso si el servidor de AEM Forms no está completamente operativo](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [No se puede usar el servicio Output, el servicio Forms o el servicio Documento de registro (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Mitigación de vulnerabilidades RCE de Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
       + [Error al realizar la copia de seguridad de la base de datos durante la actualización a 6.5.12.0 para MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La generación de PDF no puede imprimir un gran número de PDF en Workbench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
-      + [AEM Cómo reiniciar correctamente SDK de la](/help/forms/using/restart-aem-sdk.md)
-      + [El servicio PaperCapture no puede realizar OCR en los PDF](/help/forms/using/papercapture-service-resolution.md)
+      + [Cómo reiniciar correctamente AEM SDK](/help/forms/using/restart-aem-sdk.md)
+      + [El servicio PaperCapture no puede realizar OCR en archivos PDF](/help/forms/using/papercapture-service-resolution.md)
    + Documentación heredada {#legacy-documentation}
       + [Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](/help/forms/developing/building-xml.md)
       + [Comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1221,7 +1221,7 @@ ht-degree: 67%
 +[Glosarios de AEM Forms](/help/forms/using/aem-forms-glossary.md)
 + Content and Commerce {#commerce}
    + [Introducción e información general](/help/commerce/cif/introduction.md)
-   + [AEM Cambios importantes en el contenido de la y Commerce](/help/commerce/cif/changes.md)
+   + [Cambios importantes en el contenido de AEM y Commerce](/help/commerce/cif/changes.md)
    + Integraciones {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [Solución de comercio de terceros](/help/commerce/cif/integrating/third-party.md)
@@ -1240,10 +1240,10 @@ ht-degree: 67%
          + [Encabezados HTTP personalizados](/help/commerce/cif/configuring/custom-http-headers.md)
          + [Configuración del carro de compras y Dispatcher](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
       + Desarrollo de {#developing}
-         + [AEM Desarrollar con la](/help/commerce/cif/develop.md)
+         + [Desarrollo con AEM](/help/commerce/cif/develop.md)
          + [Diseño de componentes del CIF](/help/commerce/cif/customizing/style-cif-component.md)
          + [Personalización de componentes CIF](/help/commerce/cif/customizing/customize-cif-components.md)
-         + [CIF Uso de selectores de catálogo](/help/commerce/cif/customizing/use-cif-pickers.md)
+         + [Uso de selectores de catálogos CIF](/help/commerce/cif/customizing/use-cif-pickers.md)
    + [PWA Studio de Adobe Commerce](/help/commerce/cif/pwa-studio/getting-started.md)
    + [Migración](/help/commerce/cif/migration.md)
    + Notas de la versión {#release-notes}
@@ -1258,19 +1258,19 @@ ht-degree: 67%
       + [Información general](/help/commerce/cif-classic/home.md)
       + Implementando {#deploying}
          + [Información general de eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
-         + [COMMERCE CLOUD SAP](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
+         + [SAP COMMERCE CLOUD](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
       + Administración {#administering}
          + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
          + [Conceptos ](/help/commerce/cif-classic/administering/concepts.md)
          + [Administración de comercio electrónico genérico](/help/commerce/cif-classic/administering/generic.md)
-         + [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+         + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
       + Desarrollo de {#developing}
          + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
          + [Desarrollo (genérico)](/help/commerce/cif-classic/developing/generic.md)
          + [Desarrollo con SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
 + {#headless} sin encabezado
    + [Recorridos sin AEM](/help/journey-headless/overview.md)
-   + AEM Recorrido para desarrolladores sin encabezado {#developer} de
+   + Recorrido para desarrolladores de AEM sin encabezado {#developer}
       + [Comprender el sin encabezado en AEM](/help/journey-headless/developer/overview.md)
       + [Obtenga información acerca del desarrollo sin encabezado de CMS](/help/journey-headless/developer/learn-about.md)
       + [Introducción a AEM sin encabezado](/help/journey-headless/developer/getting-started.md)
@@ -1286,13 +1286,13 @@ ht-degree: 67%
       + [Modelado de contenido para Headless con AEM: introducción](/help/journey-headless/architect/introduction.md)
       + [Descubra los conceptos básicos del modelado de contenido para Headless con AEM](/help/journey-headless/architect/basics.md)
       + [Obtenga información acerca de la creación de modelos de fragmento de contenido en AEM](/help/journey-headless/architect/model-structure.md)
-   + AEM Recorrido de autor de contenido sin encabezado {#author}
+   + Recorrido de autor de contenido sin encabezado de AEM {#author}
       + [Recorrido del autor de contenido sin encabezado de AEM: información general](/help/journey-headless/author/overview.md)
       + [Creación para usuarios sin encabezado con AEM: una introducción](/help/journey-headless/author/introduction.md)
       + [Conceptos básicos de creación para usuarios sin encabezado con AEM](/help/journey-headless/author/basics.md)
       + [Obtenga información sobre el uso de referencias en fragmentos de contenido](/help/journey-headless/author/references.md)
       + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](/help/journey-headless/author/metadata-tagging.md)
-   + AEM Recorrido de traducción sin encabezado {#translation}
+   + Recorrido de traducción sin encabezado de AEM {#translation}
       + [Comprender la traducción sin encabezado en AEM](/help/journey-headless/translation/overview.md)
       + [Introducción a la traducción sin encabezado AEM](/help/journey-headless/translation/getting-started.md)
       + [Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM](/help/journey-headless/translation/learn-about.md)
@@ -1305,16 +1305,16 @@ ht-degree: 67%
    + Desarrollo de {#developing}
       + Introducción para desarrolladores {#introduction}
          + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)
-         + [AEM Conceptos principales de](/help/sites-developing/the-basics.md)
-         + [AEM Estructura de la interfaz de usuario táctil de la](/help/sites-developing/touch-ui-structure.md)
-         + [AEM Conceptos de la interfaz de usuario táctil con capacidad para el uso de la](/help/sites-developing/touch-ui-concepts.md)
+         + [Conceptos principales de AEM](/help/sites-developing/the-basics.md)
+         + [Estructura de la IU táctil de AEM](/help/sites-developing/touch-ui-structure.md)
+         + [Conceptos de la IU táctil de AEM](/help/sites-developing/touch-ui-concepts.md)
          + [Desarrollo de AEM: directrices y prácticas recomendadas](/help/sites-developing/dev-guidelines-bestpractices.md)
          + [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md)
          + [Desarrollo y diferencia de página](/help/sites-developing/pagediff.md)
          + [Limitaciones del editor](/help/sites-developing/editor-limitations.md)
          + [El marco de protección CSRF](/help/sites-developing/csrf-protection.md)
          + [Modelado de datos: el modelo de David Nuescheler](/help/sites-developing/model-data.md)
-         + [AEM Contribución a la](/help/sites-developing/contributing-to-cq.md)
+         + [Contribución a AEM](/help/sites-developing/contributing-to-cq.md)
          + [Seguridad](/help/sites-developing/security.md)
          + [Materiales de referencia](/help/sites-developing/reference-materials.md)
          + [Crear un sitio web con todas las funciones (IU clásica)](/help/sites-developing/website.md)
@@ -1330,7 +1330,7 @@ ht-degree: 67%
             + [Plantillas de página: estáticas](/help/sites-developing/page-templates-static.md)
             + [Plantillas de fragmentos de contenido](/help/sites-developing/content-fragment-templates.md)
             + [Representación de plantilla adaptable](/help/sites-developing/templates-adaptive-rendering.md)
-         + [AEM Uso de la fusión de recursos de Sling en la](/help/sites-developing/sling-resource-merger.md)
+         + [Uso de la fusión de recursos de Sling en AEM](/help/sites-developing/sling-resource-merger.md)
          + [Superposiciones](/help/sites-developing/overlays.md)
          + [Convenciones de nomenclatura](/help/sites-developing/naming-conventions.md)
          + [Creación de un nuevo componente de campo de IU de Granite](/help/sites-developing/granite-ui-component.md)
@@ -1341,7 +1341,7 @@ ht-degree: 67%
          + Etiquetado {#tagging}
             + [Etiquetado](/help/sites-developing/tags.md)
             + [Marco de trabajo de etiquetado de AEM](/help/sites-developing/framework.md)
-            + [AEM Creación de etiquetas en una aplicación de](/help/sites-developing/building.md)
+            + [Creación de etiquetas en una aplicación de AEM](/help/sites-developing/building.md)
          + [Personalizar páginas mostradas por el controlador de error](/help/sites-developing/customizing-errorhandler-pages.md)
          + [Tipos de nodos personalizados](/help/sites-developing/custom-nodetypes.md)
          + [Agregar fuentes para la representación gráfica](/help/sites-developing/adding-fonts.md)
@@ -1357,9 +1357,9 @@ ht-degree: 67%
          + [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
          + [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/style-system.html)
          + [Información general sobre componentes](/help/sites-developing/components.md)
-         + [AEM Componentes de: conceptos básicos](/help/sites-developing/components-basics.md)
-         + [AEM Desarrollo de componentes](/help/sites-developing/developing-components.md)
-         + [AEM Desarrollo de componentes: ejemplos de código](/help/sites-developing/developing-components-samples.md)
+         + [Componentes de AEM: conceptos básicos](/help/sites-developing/components-basics.md)
+         + [Desarrollo de componentes de AEM](/help/sites-developing/developing-components.md)
+         + [Desarrollo de componentes de AEM: ejemplos de código](/help/sites-developing/developing-components-samples.md)
          + [Exportador JSON para servicios de contenido](/help/sites-developing/json-exporter.md)
          + [Activación de la exportación de JSON para un componente](/help/sites-developing/json-exporter-components.md)
          + [Editor de imágenes](/help/sites-developing/image-editor.md)
@@ -1376,7 +1376,7 @@ ht-degree: 67%
             + [Usar Translator para administrar diccionarios](/help/sites-developing/i18n-translator.md)
             + [Extracción de cadenas para traducir](/help/sites-developing/i18n-extract.md)
          + Componentes de IU clásica {#classic-ui-components}
-            + [AEM Desarrollo de componentes de la (IU clásica)](/help/sites-developing/developing-components-classic.md)
+            + [Desarrollo de componentes de AEM (IU clásica)](/help/sites-developing/developing-components-classic.md)
             + [Uso y ampliación de widgets (IU clásica)](/help/sites-developing/widgets.md)
             + [Uso de xtypes (IU clásica)](/help/sites-developing/xtypes.md)
             + [Desarrollo de Forms (IU clásica)](/help/sites-developing/developing-forms.md)
@@ -1385,21 +1385,21 @@ ht-degree: 67%
          + [Sin encabezado y AEM](/help/sites-developing/headless/introduction.md)
          + Recorridos sin encabezado {#journeys}
             + Recorrido sin encabezado para desarrolladores {#developer}
-               + AEM [Comprender el sin encabezado en el](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html)
+               + [Comprender el sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html)
                + [Obtenga información acerca del desarrollo sin encabezado de CMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html)
                + [Introducción a AEM Headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/getting-started.html)
                + [Ruta hacia la primera experiencia al usar AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html)
-               + AEM [Cómo modelar el contenido como modelos de contenido de](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/model-your-content.html)
+               + [Cómo modelar el contenido como modelos de contenido de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/model-your-content.html)
                + [Cómo acceder al contenido a través de las API de entrega de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/access-your-content.html)
                + [Actualización del contenido mediante las API de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/update-your-content.html)
                + [Cómo ponerlo todo junto](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/put-it-all-together.html)
                + [Publicación de la aplicación sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/go-live.html)
-               + AEM [Opcional: cómo crear aplicaciones de una sola página con el código de tiempo de la página de inicio](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/create-spa.html)
+               + [Opcional: cómo crear aplicaciones de una sola página con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/create-spa.html)
             + Recorrido de arquitecto de contenido sin encabezado {#architect}
-               + AEM [Información general sobre el Recorrido de arquitectos de contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html)
-               + AEM [Modelado de contenido para usuarios sin encabezado con la opción de creación de informes Introducción](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html)
-               + AEM [Conozca los conceptos básicos del modelado de contenido para Headless con el código de tiempo de ejecución](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
-               + AEM [Obtenga información acerca de la creación de modelos de fragmentos de contenido en el espacio de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/model-structure.html) de
+               + [Información general sobre el Recorrido de arquitectos de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html)
+               + [Modelado de contenido para Headless con AEM: introducción](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html)
+               + [Conozca los conceptos básicos del modelado de contenido para Headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
+               + [Obtenga información acerca de la creación de modelos de fragmentos de contenido en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/model-structure.html)
          + Guías de introducción {#getting-started}
             + [Introducción](/help/sites-developing/headless/getting-started/introduction.md)
             + [Creación de una configuración](/help/sites-developing/headless/getting-started/create-configuration.md)
@@ -1432,7 +1432,7 @@ ht-degree: 67%
             + [API de GraphQL de AEM con fragmentos de contenido: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html)
          + El editor universal {#universal-editor}
             + [Introducción](/help/sites-developing/universal-editor/introduction.md)
-      + SPA AEM Desarrollo híbrido y de {#spas}
+      + Desarrollo híbrido y SPA de AEM {#spas}
          + [Híbrido y SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Introducción y tutorial de SPA](/help/sites-developing/spa-walkthrough.md)
          + [Tutorial de SPA WKND](/help/sites-developing/spa-wknd.md)
@@ -1444,14 +1444,14 @@ ht-degree: 67%
          + [Información general del editor de SPA](/help/sites-developing/spa-overview.md)
          + [Modelo SPA](/help/sites-developing/spa-blueprint.md)
          + [Componente de página SPA](/help/sites-developing/spa-page-component.md)
-         + [SPA Asignación de modelos dinámicos a componentes para la creación de](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)
-         + [SPA Enrutamiento de modelo de](/help/sites-developing/spa-routing.md)
+         + [Asignación de modelos dinámicos a componentes para SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)
+         + [Enrutamiento de modelo SPA](/help/sites-developing/spa-routing.md)
          + [El componente RemotePage](/help/sites-developing/spa-remote-page.md)
          + [Edición de un SPA externo dentro de AEM](/help/sites-developing/spa-edit-external.md)
          + [Componentes compuestos en SPA](/help/sites-developing/spa-composite-component.md)
          + [Activación de la exportación de JSON para un componente](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html)
          + [Integración de Launch](/help/sites-developing/spa-launch.md)
-         + [SPA Materiales de referencia](/help/sites-developing/spa-reference-materials.md)
+         + [Materiales de referencia de SPA](/help/sites-developing/spa-reference-materials.md)
       + Herramientas de desarrollo {#devtools}
          + [Herramientas de desarrollo](/help/sites-developing/dev-tools.md)
          + [Herramientas de modernización de AEM](/help/sites-developing/modernization-tools.md)
@@ -1459,12 +1459,12 @@ ht-degree: 67%
          + [Herramienta de conversión de diálogos](/help/sites-developing/dialog-conversion.md)
          + [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
          + [Administración de paquetes mediante Maven](/help/sites-developing/vlt-mavenplugin.md)
-         + [AEM Cómo desarrollar proyectos de mediante Eclipse](/help/sites-developing/howto-projects-eclipse.md)
-         + [AEM Cómo crear proyectos de con Apache Maven](/help/sites-developing/ht-projects-maven.md)
-         + [AEM Cómo desarrollar proyectos de con IntelliJ IDEA](/help/sites-developing/ht-intellij.md)
+         + [Cómo desarrollar proyectos de AEM con Eclipse](/help/sites-developing/howto-projects-eclipse.md)
+         + [Cómo crear proyectos de AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md)
+         + [Cómo desarrollar proyectos de AEM con IntelliJ IDEA](/help/sites-developing/ht-intellij.md)
          + [Cómo utilizar la herramienta VLT](/help/sites-developing/ht-vlttool.md)
          + [Cómo utilizar la herramienta de servidor proxy](/help/sites-developing/ht-proxy-server.md)
-         + [AEM Extensión de corchetes de](/help/sites-developing/aem-brackets.md)
+         + [Extensión de AEM Brackets](/help/sites-developing/aem-brackets.md)
          + [Herramientas para desarrolladores de AEM para Eclipse](/help/sites-developing/aem-eclipse.md)
          + [AEM Repo Tool](/help/sites-developing/aem-repo-tool.md)
       + Personalización {#personlization}
@@ -1480,7 +1480,7 @@ ht-degree: 67%
          + Contexto de cliente {#client-context}
             + [Client Context en detalle](/help/sites-developing/client-context.md)
             + [API de JavaScript de ClientContext](/help/sites-developing/ccjsapi.md)
-      + AEM Ampliación de la {#extending-aem}
+      + Ampliando AEM {#extending-aem}
          + [Ampliación de AEM mediante el Generador de aplicaciones para desarrolladores de Adobe](/help/sites-developing/app-builder.md)
          + [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)
          + [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md)
@@ -1510,7 +1510,7 @@ ht-degree: 67%
          + [Creación de extensiones personalizadas](/help/sites-developing/extending-campaign-extensions.md)
          + Forms{#extending-forms}
             + [Crear asignaciones de formularios personalizadas](/help/sites-developing/extending-campaign-form-mapping.md)
-            + [AEM Creación de plantillas de página de personalizadas con componentes de formulario de Adobe Campaign](/help/sites-developing/extending-campaign-custom-template.md)
+            + [Crear una plantilla de página de AEM personalizada con componentes de formulario de Adobe Campaign](/help/sites-developing/extending-campaign-custom-template.md)
          + [Script de análisis de solicitud](/help/sites-developing/analyze-request.md)
          + Ampliando IU clásica{#extending-classic-ui}
             + [Personalización de la consola Sitios web (IU clásica)](/help/sites-developing/customizing-siteadmin.md)
@@ -1531,7 +1531,7 @@ ht-degree: 67%
          + [Probando la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/hobbes.html)
       + Prácticas recomendadas {#bestpractices}
          + [Información general sobre prácticas recomendadas](/help/sites-developing/best-practices.md)
-         + AEM [Directrices y prácticas recomendadas para el desarrollo de la](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/introduction/dev-guidelines-bestpractices.html)
+         + [Prácticas recomendadas y directrices de desarrollo de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/introduction/dev-guidelines-bestpractices.html)
          + [Prácticas recomendadas de desarrollo](/help/sites-developing/development-practices.md)
          + [Arquitectura de contenido](/help/sites-developing/content-architecture.md)
          + [Arquitectura de software](/help/sites-developing/software-architecture.md)
@@ -1556,28 +1556,28 @@ ht-degree: 67%
          + [Creación de sitios para dispositivos móviles](/help/sites-developing/mobile.md)
          + [Emuladores](/help/sites-developing/emulators.md)
    + Implementando {#deploying}
-      + AEM Introducción a la plataforma de {#introduction}
-         + [AEM Introducción a la plataforma de](/help/sites-deploying/platform.md)
+      + Introducción a la plataforma de AEM {#introduction}
+         + [Introducción a la plataforma de AEM](/help/sites-deploying/platform.md)
          + [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)
-         + [AEM Elementos de almacenamiento en 6.5](/help/sites-deploying/storage-elements-in-aem-6.md)
+         + [Elementos de almacenamiento en AEM 6.5](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [AEM con MongoDB](/help/sites-deploying/aem-with-mongodb.md)
-      + AEM Implementando la implementación de {#deploying}
+      + Implementando AEM {#deploying}
          + [Implementación y mantenimiento](/help/sites-deploying/deploy.md)
          + [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
          + [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
          + [Instalación independiente personalizada](/help/sites-deploying/custom-standalone-install.md)
          + [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
-         + [AEM Configuración de almacenes de nodos y almacenes de datos en el 6](/help/sites-deploying/data-store-config.md)
+         + [Configuración de almacenes de nodos y almacenes de datos en AEM 6](/help/sites-deploying/data-store-config.md)
          + [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md)
          + [Consultas e indexación de Oak](/help/sites-deploying/queries-and-indexing.md)
-         + [AEM Cómo ejecutar el con TarMK Cold Standby](/help/sites-deploying/tarmk-cold-standby.md)
-         + [AEM Compatibilidad con RDBMS en 6.5](/help/sites-deploying/rdbms-support-in-aem.md)
+         + [Cómo ejecutar AEM con el modo de espera pasiva TarMK](/help/sites-deploying/tarmk-cold-standby.md)
+         + [Compatibilidad con RDBMS en AEM 6.5](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Indexación mediante el Jar ejecutado por Oak](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Casos de uso de indexación Oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Solución de problemas de índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [Inclusión En La Recopilación De Estadísticas De Uso Agregadas](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
          + [Solución de problemas](/help/sites-deploying/troubleshooting.md)
-      + AEM Configuración de la {#configuring}
+      + Configurando AEM {#configuring}
          + [Conceptos básicos de configuración](/help/sites-deploying/configuring.md)
          + [Registro](/help/sites-deploying/configure-logging.md)
          + [Configurar OSGi](/help/sites-deploying/configuring-osgi.md)
@@ -1589,7 +1589,7 @@ ht-degree: 67%
          + [Solución de problemas de replicación](/help/sites-deploying/troubleshoot-rep.md)
          + [Caducidad de objetos estáticos](/help/sites-deploying/expiration-static-objects.md)
          + [Depuración de versiones](/help/sites-deploying/version-purging.md)
-         + [AEM Monitorización y mantenimiento de la instancia de](/help/sites-deploying/monitoring-and-maintaining.md)
+         + [Supervisión y mantenimiento de la instancia de AEM](/help/sites-deploying/monitoring-and-maintaining.md)
          + [Descargando trabajos](/help/sites-deploying/offloading.md)
          + [Asignación de recursos](/help/sites-deploying/resource-mapping.md)
          + [Comprobaciones de coherencia y recorrido](/help/sites-deploying/consistency-check.md)
@@ -1598,11 +1598,11 @@ ht-degree: 67%
          + [Guía de rendimiento de Assets](/help/sites-deploying/assets-performance-sizing.md)
          + [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
          + [Configuración de la consola web](/help/sites-deploying/configuring-web-console.md)
-      + AEM Actualizando a la versión 6.5 {#upgrading}
-         + [AEM Actualización a 6.5](/help/sites-deploying/upgrade.md)
+      + Actualizando a AEM 6.5 {#upgrading}
+         + [Actualización a AEM 6.5](/help/sites-deploying/upgrade.md)
          + [Planificación de la actualización](/help/sites-deploying/upgrade-planning.md)
          + [Evaluación de la complejidad de la actualización con Pattern Detector](/help/sites-deploying/pattern-detector.md)
-         + [AEM Compatibilidad con versiones anteriores en 6.5](/help/sites-deploying/backward-compatibility.md)
+         + [Compatibilidad con versiones anteriores en AEM 6.5](/help/sites-deploying/backward-compatibility.md)
          + [Procedimiento de actualización](/help/sites-deploying/upgrade-procedure.md)
          + [Realización de una actualización in situ](/help/sites-deploying/in-place-upgrade.md)
          + [Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización](/help/sites-deploying/upgrade-offline-reindexing.md)
@@ -1616,20 +1616,20 @@ ht-degree: 67%
          + [Pasos de actualización para instalaciones de Application Server](/help/sites-deploying/app-server-upgrade.md)
          + [Lista de paquetes obsoletos desinstalados después de la actualización](/help/sites-deploying/obsolete-bundles.md)
       + Reestructurando repositorio {#restructuring}
-         + [AEM Reestructuración de repositorios en 6.5](/help/sites-deploying/repository-restructuring.md)
-         + [AEM Reestructuración común de repositorios en 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
-         + [AEM Reestructuración de repositorios de Sites en 6.5](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
-         + [Reestructuración de repositorios de Assets AEM en 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
-         + [Reestructuración de repositorios de Dynamic Media AEM en 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
-         + [Reestructuración de repositorios de Forms AEM en 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
-         + [Reestructuración de repositorios de E-Commerce AEM en la versión 6.5 de la](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+         + [Reestructuración de repositorios en AEM 6.5](/help/sites-deploying/repository-restructuring.md)
+         + [Reestructuración común de repositorios en AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
+         + [Reestructuración del repositorio de Sites en AEM 6.5](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
+         + [Reestructuración del repositorio de Assets en AEM 6.5](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
+         + [Reestructuración del repositorio de Dynamic Media en AEM 6.5](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
+         + [Reestructuración del repositorio de Forms en AEM 6.5](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
+         + [Reestructuración de repositorios de E-Commerce en AEM 6.5](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
          + [Reestructuración de repositorios para AEM Communities en 6.5](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
       + Prácticas recomendadas {#practices}
          + [Implementación de prácticas recomendadas](/help/sites-deploying/best-practices.md)
          + [Árbol de rendimiento](/help/sites-deploying/performance-tree.md)
          + [Prácticas recomendadas para las pruebas de rendimiento](/help/sites-deploying/best-practices-for-performance-testing.md)
          + [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
-         + [Interfaz de usuario de Recommendations para clientes](/help/sites-deploying/ui-recommendations.md)
+         + [Recomendaciones de interfaz de usuario para clientes](/help/sites-deploying/ui-recommendations.md)
          + [Rendimiento y escalabilidad](/help/sites-deploying/performance.md)
    + Experiencias fluidas {#fluid-experiences}
       + [Lista de funciones](/help/fluid-experiences/feature-list.md)
@@ -1645,7 +1645,7 @@ ht-degree: 67%
       + [Operaciones de desarrollo empresarial](/help/managing/enterprise-devops.md)
       + [Prácticas recomendadas para la optimización de los motores de búsqueda y administración URL](/help/managing/seo-and-url-management.md)
    + Accesibilidad {#accessibility}
-      + [AEM Directrices de accesibilidad web de y](/help/managing/web-accessibility.md)
+      + [AEM y las directrices de accesibilidad web](/help/managing/web-accessibility.md)
       + [Guía rápida de WCAG 2.1](/help/managing/qg-wcag.md)
    + Protección de datos {#data-protection}
       + [Preparación de AEM para la protección de datos y las normas de privacidad de datos](/help/managing/data-protection-and-privacy.md)
