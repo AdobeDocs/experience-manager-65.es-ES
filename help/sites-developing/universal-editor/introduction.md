@@ -1,37 +1,37 @@
 ---
 title: Editor universal
-description: AEM Obtenga información acerca de la flexibilidad del editor universal y cómo puede ayudarle a potenciar sus experiencias sin encabezado mediante el uso de la versión 6.5 de.
+description: Obtenga información acerca de la flexibilidad del editor universal y cómo puede ayudarle a potenciar sus experiencias sin encabezado con AEM 6.5.
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 773e398af5247a0de12143334ecfa44955ebbbcd
+source-git-commit: bf9dc1695be7f7a10cb76160b531c9adbbfc8c34
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1207'
+ht-degree: 1%
 
 ---
 
 
 # Editor universal {#universal-editor}
 
-AEM Obtenga información acerca de la flexibilidad del editor universal y cómo puede ayudarle a potenciar sus experiencias sin encabezado mediante el uso de la versión 6.5 de.
+Obtenga información acerca de la flexibilidad del editor universal y cómo puede ayudarle a potenciar sus experiencias sin encabezado con AEM 6.5.
 
 ## Información general {#overview}
 
 El editor universal es un editor visual versátil que forma parte de Adobe Experience Manager Sites. Permite a los autores editar lo que se ve es lo que se obtiene (WYSIWYG) de cualquier experiencia sin encabezado.
 
-* AEM Los autores se benefician de la flexibilidad del editor universal, ya que es compatible con la misma edición visual coherente para todas las formas de contenido sin encabezado de la.
+* Los autores se benefician de la flexibilidad del editor universal, ya que admite la misma edición visual coherente para todas las formas de contenido sin encabezado de AEM.
 * Los desarrolladores se benefician de la versatilidad del editor universal, ya que también admite el desacoplamiento real de la implementación. Permite a los desarrolladores utilizar prácticamente cualquier estructura o arquitectura de su elección, sin imponer restricciones SDK o tecnológicas.
 
 Consulte la [documentación de AEM as a Cloud Service en el editor universal](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) para obtener más información.
 
 ## Arquitectura {#architecture}
 
-AEM El editor universal es un servicio que funciona en conjunto con la creación de contenido sin encabezado, lo que lo convierte en una herramienta de creación de contenido sin encabezado.
+El editor universal es un servicio que funciona junto con AEM para crear contenido sin encabezado.
 
-* AEM El editor universal está alojado en `https://experience.adobe.com/#/aem/editor/canvas` y puede editar las páginas procesadas por la versión 6.5 de la versión de.
-* AEM AEM El editor universal lee la página de la a través de Dispatcher desde la instancia de autor.
-* El servicio de editor universal, que se ejecuta en el mismo host que Dispatcher AEM, vuelve a escribir los cambios en la instancia de autor de la.
+* El editor universal está alojado en `https://experience.adobe.com/#/aem/editor/canvas` y puede editar páginas procesadas por AEM 6.5.
+* El editor universal lee la página de AEM a través de Dispatcher desde la instancia de autor de AEM.
+* El servicio de editor universal, que se ejecuta en el mismo host que Dispatcher, vuelve a escribir los cambios en la instancia de autor de AEM.
 
 ![Flujo de autor mediante el editor universal](assets/author-flow.png)
 
@@ -39,23 +39,23 @@ AEM El editor universal es un servicio que funciona en conjunto con la creación
 
 Para probar el editor universal, deberá hacer lo siguiente:
 
-1. [AEM Actualice y configure la instancia de creación de la.](#update-configure-aem)
+1. [Actualice y configure la instancia de creación de AEM.](#update-configure-aem)
 1. [Configure un servicio de editor universal local.](#set-up-ue)
 1. [Ajuste su Dispatcher para permitir el servicio de editor universal.](#update-dispatcher)
 
 Una vez completada la configuración, puede [instrumentar sus aplicaciones para que utilicen el editor universal.](#instrumentation)
 
-### AEM Actualización de {#update-aem}
+### Actualizar AEM {#update-aem}
 
-AEM AEM Se requieren los Service Pack 21 o 22 y un paquete de funciones para el uso de la versión del editor universal con la versión 6.5 de.
+Se requieren los Service Pack 21 o 22 y un paquete de funciones para AEM para utilizar el editor universal con AEM 6.5.
 
 #### Aplicar el paquete de servicio más reciente {#latest}
 
-AEM Asegúrese de que está ejecutando al menos el Service Pack 21 o 22 para la versión 6.5 de la versión de la aplicación de la versión 3.00000000000000000000000000000000000000000000000. Puede descargar el Service Pack más reciente desde [Distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
+Asegúrese de ejecutar al menos el Service Pack 21 o 22 para AEM 6.5. Puede descargar el Service Pack más reciente desde [Distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
 
 #### Instalación del paquete de funciones del editor universal {#feature-pack}
 
-AEM Instale el paquete de funciones del editor universal **para la versión 6.5** [disponible en la distribución de software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
+Instale el paquete de funciones del editor universal **para AEM 6.5** [disponible en distribución de software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
 Si ya está ejecutando el Service Pack 23 o superior, el paquete de funciones no es necesario.
 
@@ -67,7 +67,7 @@ El paquete de funciones instala una serie de paquetes nuevos para los que se nec
 
 1. Abra el Administrador de configuración.
    * `http://<host>:<port>/system/console/configMgr`
-1. Busque **Controlador de autenticación de token de Granite de Adobe** en la lista y haga clic en **Cambiar los valores de configuración**.
+1. Busque **Controlador de autenticación de token de Adobe Granite** en la lista y haga clic en **Cambiar los valores de configuración**.
 1. En el cuadro de diálogo, cambie el atributo **SameSite para el valor de la cookie del token de inicio de sesión** (`token.samesite.cookie.attr`) a `Partitioned`.
 1. Haga clic en **Guardar**.
 
@@ -83,7 +83,7 @@ El paquete de funciones instala una serie de paquetes nuevos para los que se nec
 
 1. Abra el Administrador de configuración.
    * `http://<host>:<port>/system/console/configMgr`
-1. Busque **Controlador de autenticación de parámetro de Adobe Granite Query** en la lista y haga clic en **Editar los valores de configuración**.
+1. Busque **Controlador de autenticación de parámetro de consulta de Adobe Granite** en la lista y haga clic en **Editar los valores de configuración**.
 1. En el campo **Ruta** (`path`), agregue `/` para habilitar.
    * Un valor vacío deshabilita el controlador de autenticación.
 1. Haga clic en **Guardar**.
@@ -97,12 +97,19 @@ El paquete de funciones instala una serie de paquetes nuevos para los que se nec
    * En el campo **Asignación de apertura de editor universal**, proporcione las rutas para las que se abre el editor universal.
    * En el campo **Sling:resourceTypes que abrirá el editor universal**, proporcione una lista de los recursos que el editor universal abrirá directamente.
 1. Haga clic en **Guardar**.
+1. Compruebe la configuración de su [externalizador](/help/sites-developing/externalizer.md) y asegúrese de que dispone al menos de los entornos local, de autor y de publicación establecidos como en el ejemplo siguiente.
 
-AEM Se abrirá el Editor universal para las páginas basadas en esta configuración.
+   ```text
+   "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
+   "author $[env:AEM_EXTERNALIZER_AUTHOR;default=http://localhost:4502]",
+   "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
+   ```
 
-1. AEM Se comprobarán las asignaciones en `Universal Editor Opening Mapping` y, si el contenido se encuentra en alguna de las rutas definidas, se abrirá el Editor universal para él.
-1. AEM Para el contenido que no se encuentra en las rutas definidas en `Universal Editor Opening Mapping`, comprueba si el `resourceType` del contenido coincide con los definidos en **Sling:resourceTypes, que abrirá el editor universal**. Si el contenido coincide con uno de esos tipos, el editor universal se abrirá para él en `${author}${path}.html`.
-1. AEM De lo contrario, abre el Editor de páginas.
+Una vez completados estos pasos de configuración, AEM abrirá el Editor universal para páginas en el siguiente orden.
+
+1. AEM comprobará las asignaciones de `Universal Editor Opening Mapping` y, si el contenido se encuentra en alguna de las rutas definidas, se abrirá el Editor universal para él.
+1. Para el contenido que no se encuentra en las rutas definidas en `Universal Editor Opening Mapping`, AEM comprueba si el `resourceType` del contenido coincide con los definidos en **Sling:resourceTypes, que abrirá el editor universal**. Si el contenido coincide con uno de esos tipos, el editor universal se abre para él en `${author}${path}.html`.
+1. De lo contrario, AEM abre el Editor de páginas.
 
 Las siguientes variables están disponibles para definir las asignaciones en `Universal Editor Opening Mapping`.
 
@@ -116,7 +123,7 @@ Las siguientes variables están disponibles para definir las asignaciones en `Un
 
 Asignaciones de ejemplo:
 
-* AEM Abra todas las páginas por debajo de `/content/foo` en el Autor de la:
+* Abra todas las páginas por debajo de `/content/foo` en AEM Author:
    * `/content/foo:${author}${path}.html?login-token=${token}`
    * Esto resulta en abrir `https://localhost:4502/content/foo/x.html?login-token=<token>`
 * Abra todas las páginas por debajo de `/content/bar` en un servidor NextJS remoto y proporcione todas las variables como información
@@ -125,7 +132,7 @@ Asignaciones de ejemplo:
 
 ### Configuración del servicio de editor universal {#set-up-ue}
 
-AEM Con la actualización y la configuración de la aplicación, puede configurar un servicio de editor universal local para su propio desarrollo y pruebas locales.
+Con AEM actualizado y configurado, puede configurar un servicio de editor universal local para su propio desarrollo y prueba locales.
 
 1. Instale la versión de Node.js >=20.
 1. Descargue y desempaquete el servicio de editor universal más reciente de [Distribución de software](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home)
@@ -136,7 +143,7 @@ AEM Con la actualización y la configuración de la aplicación, puede configura
 
 ### Actualización de Dispatcher {#update-dispatcher}
 
-AEM Con el servicio de editor universal local configurado y en ejecución, tendrá que permitir un proxy inverso para el nuevo servicio [en Dispatcher.](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher)
+Con AEM configurado y un servicio de editor universal local en ejecución, deberá permitir un proxy inverso para el nuevo servicio [ en Dispatcher.](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher)
 
 1. Ajuste el archivo vhost de la instancia de autor para incluir un proxy inverso.
 
@@ -155,11 +162,11 @@ AEM Con el servicio de editor universal local configurado y en ejecución, tendr
 
 ## Instrumentar su aplicación {#instrumentation}
 
-AEM Con el servicio de editor universal local actualizado y en ejecución, puede empezar a editar contenido sin encabezado con el editor universal.
+Con AEM actualizado y un servicio de editor universal local en ejecución, puede empezar a editar contenido sin encabezado mediante el editor universal.
 
 Sin embargo, la aplicación debe estar instrumentada para aprovechar las ventajas del editor universal. Esto implica incluir metaetiquetas para instruir al editor sobre cómo y dónde conservar el contenido. Los detalles de esta instrumentación están disponibles en la [documentación del editor universal para AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
 
-Tenga en cuenta que cuando se sigue la documentación del Editor universal con AEM as a Cloud Service AEM, se aplican los siguientes cambios al utilizarlo con.5.
+Tenga en cuenta que cuando se sigue la documentación del Editor universal con AEM as a Cloud Service, se aplican los siguientes cambios al utilizarlo con AEM 6.5.
 
 * El protocolo de la metaetiqueta debe ser `aem65` en lugar de `aem`.
 
@@ -177,11 +184,11 @@ Tenga en cuenta que cuando se sigue la documentación del Editor universal con A
 
 >[!TIP]
 >
->AEM Para obtener una guía completa para desarrolladores que empiecen a usar el Editor universal, consulte el documento [Información general del Editor universal para desarrolladores](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) en la documentación de AEM as a Cloud Service AEM, teniendo en cuenta los cambios necesarios para la compatibilidad con la versión 6.5 de, tal como se menciona en esta sección.
+>Para obtener una guía completa para los desarrolladores que empiezan con el editor universal, consulte el documento [Información general del editor universal para desarrolladores de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) en la documentación de AEM as a Cloud Service, teniendo en cuenta los cambios necesarios para la compatibilidad con AEM 6.5 tal como se menciona en esta sección.
 
-## AEM Diferencias entre 6.5 y AEM as a Cloud Service {#differences}
+## Diferencias entre AEM 6.5 y AEM as a Cloud Service {#differences}
 
-AEM El editor universal en la versión 6.5 de la versión funciona de forma similar a la de AEM as a Cloud Service, incluida la interfaz de usuario y gran parte de la configuración. Sin embargo, hay diferencias que deben señalarse.
+El editor universal de AEM 6.5 funciona como en AEM as a Cloud Service, incluida la interfaz de usuario y gran parte de la configuración. Sin embargo, hay diferencias que deben señalarse.
 
 * El editor universal de 6.5 solo admite el caso de uso sin encabezado.
 * La configuración del editor universal varía ligeramente para 6.5 ([como se describe](#setup) en el documento actual).
