@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 236dac79430bc974b9cc95299a566283a748476a
+source-git-commit: 0109abf51045224912d130ee29f67d7274cfc4f4
 workflow-type: tm+mt
-source-wordcount: '7474'
+source-wordcount: '7471'
 ht-degree: 67%
 
 ---
@@ -884,7 +884,7 @@ ht-degree: 67%
       + [Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
       + [Usar la firma manuscrita en formularios HTML5](/help/forms/using/scribble-signature.md)
       + [Cambiar el contenido de la página cero en Designer](/help/forms/using/changing-page-zero-content-designer.md)
-      + [Prácticas recomendadas de accesibilidad]{#accessibility-best-practices}
+      + Prácticas recomendadas de accesibilidad {#accessibility-best-practices}
          + [Introducción](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Prácticas recomendadas para crear formularios](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [Técnicas para probar la accesibilidad de los formularios](/help/forms/using/techniques-for-testing-form-accessibility.md)
@@ -1203,7 +1203,7 @@ ht-degree: 67%
       + [No se puede abrir PDF forms basado en XFA en Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer o Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [No se puede restaurar el repositorio de CRX](/help/forms/using/restore-crx-repository.md)
       + [Errores de servicio no disponible después de instalar el Service Pack 6.5.15.0 de AEM](/help/forms/using/aem-service-pack-installation-solution.md)
-      + [Problema de instalación del Service Pack de AEM Forms JEE 6.5.15.0 en el entorno JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+      + [Problema de instalación del Service Pack 6.5.15.0 de AEM Forms JEE en el entorno JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [Procesamiento de documentos incluso si el servidor de AEM Forms no está completamente operativo](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [No se puede usar el servicio Output, el servicio Forms o el servicio Documento de registro (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Mitigación de vulnerabilidades RCE de Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
@@ -1373,7 +1373,7 @@ ht-degree: 67%
          + Internacionalización{#internationalization}
             + [Internacionalización de componentes](/help/sites-developing/i18n.md)
             + [Internacionalización de cadenas de IU](/help/sites-developing/i18n-dev.md)
-            + [Usar Translator para administrar diccionarios](/help/sites-developing/i18n-translator.md)
+            + [Uso de Translator para administrar diccionarios](/help/sites-developing/i18n-translator.md)
             + [Extracción de cadenas para traducir](/help/sites-developing/i18n-extract.md)
          + Componentes de IU clásica {#classic-ui-components}
             + [Desarrollo de componentes de AEM (IU clásica)](/help/sites-developing/developing-components-classic.md)
