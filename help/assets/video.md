@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10488'
 ht-degree: 2%
 
 ---
@@ -553,8 +553,6 @@ Algunos de los casos de uso que se deben tener en cuenta para agregar varios sub
 |  | Audio descriptivo |
 
 Todos los [formatos de vídeo admitidos en Dynamic Media](/help/assets/assets-formats.md) y todos los visores de vídeo de Dynamic Media, excepto el visor de *Video_360* de Dynamic Media, son compatibles para su uso con varios subtítulos y pistas de audio.
-
-La capacidad Varios subtítulos y pistas de audio está disponible para su cuenta de Dynamic Media a través de una opción de función que debe habilitar (activar) la Asistencia al cliente de Adobe.
 
 ### Añada varias pistas de subtítulos y audio al vídeo {#add-msma}
 

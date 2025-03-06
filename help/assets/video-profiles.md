@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '3750'
+source-wordcount: '3730'
 ht-degree: 8%
 
 ---
@@ -301,7 +301,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
    <td><code>audioBitrateCustom</code></td>
    <td>Establezca el valor en <code>true</code> para forzar una velocidad de bits constante para el flujo de audio, si es compatible con el códec de audio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>El valor predeterminado es <code>false</code>.</p> <p>El valor recomendado para DASH o HLS es <code>false</code>. (Para usar DASH en tus videos, primero debe estar habilitado en tu cuenta. Ver <a href="/help/assets/video.md#enable-dash">Habilitar DASH en tu cuenta</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>El valor predeterminado es <code>false</code>.</p> <p>El valor recomendado para DASH o HLS es <code>false</code>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
