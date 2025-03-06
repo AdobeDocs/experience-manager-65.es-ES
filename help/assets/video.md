@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 93e5ae0c8b8528af9230eae51e66c91f2239edb0
+source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
 workflow-type: tm+mt
-source-wordcount: '11157'
+source-wordcount: '10517'
 ht-degree: 2%
 
 ---
@@ -28,13 +28,13 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 >[!IMPORTANT]
 >
->Asegúrese de que el administrador de Adobe Experience Manager haya habilitado y configurado los Cloud Service de Dynamic Media en modo Dynamic Media - Scene7 o en modo híbrido antes de trabajar con vídeo en Dynamic Media.
+>Asegúrese de que el administrador de Adobe Experience Manager haya habilitado y configurado los servicios de nube de Dynamic Media en el modo Dynamic Media - Scene7 o en el modo híbrido antes de trabajar con vídeo en Dynamic Media.
 >
->* Consulte [Configuración de Cloud Service de Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media - Modo Scene7 y [Solución de problemas de Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
+>* Consulte [Configurar servicios de nube de Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media - Modo Scene7 y [Solucionar problemas de Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
 >
->* Consulte [Configuración de Cloud Service de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media - Modo híbrido.
+>* Consulte [Configurar servicios de nube de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media - Modo híbrido.
 >
->Problema actual de reproducción de vídeo conocido en Dynamic Media *solo en el Experience Manager 6.5.9.0*:
+>Problema actual de reproducción de vídeo conocido en Dynamic Media *solo en Experience Manager 6.5.9.0*:
 >
 >* Si se actualiza un vídeo publicado, debe publicarse de nuevo para reflejar los cambios en la entrega.
 >
@@ -63,7 +63,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
    * Supervise el progreso de la codificación de vídeo [1} desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
 
-1. **Administre sus vídeos de Dynamic Media** mediante cualquiera de las acciones siguientes:
+1. **Administre sus vídeos de Dynamic Media** mediante cualquiera de las siguientes acciones:
 
    * Organizar, examinar y buscar recursos de vídeo
 
@@ -80,7 +80,7 @@ Obtenga más información acerca de las [prácticas recomendadas para organizar 
         [Administrar representaciones de vídeo](manage-assets.md#managing-renditions)
 
       * [Administrar ajustes preestablecidos de visor](managing-viewer-presets.md)
-      * [Recursos de Publish](publishing-dynamicmedia-assets.md)
+      * [Publicar recursos](publishing-dynamicmedia-assets.md)
 
    * Trabajo con metadatos de vídeo
 
@@ -103,7 +103,7 @@ Obtenga más información acerca de las [prácticas recomendadas para organizar 
       * [Revisar recursos de carpeta](bulk-approval.md)
       * [Proyectos](../sites-authoring/projects.md)
 
-1. **Publish sus vídeos de Dynamic Media** mediante una de las acciones siguientes:
+1. **Publique sus vídeos de Dynamic Media** mediante uno de los procedimientos siguientes:
 
    * Si utiliza Adobe Experience Manager como sistema de administración de contenido web, puede agregar vídeos directamente a las páginas web.
 
@@ -123,7 +123,7 @@ Obtenga más información acerca de las [prácticas recomendadas para organizar 
 
 ## Trabajo con vídeo en Dynamic Media {#working-with-video-in-dynamic-media}
 
-El vídeo en Dynamic Media es una solución integral que facilita la publicación de vídeo adaptable de alta calidad para su transmisión por streaming en varias pantallas, incluidos dispositivos de escritorio, iOS, Android™, BlackBerry® y Windows para dispositivos móviles. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo que se codifican a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
+El vídeo en Dynamic Media es una solución completa que facilita la publicación de vídeo adaptable de alta calidad para su transmisión por streaming en varias pantallas, incluidos dispositivos de escritorio, iOS, Android™, BlackBerry® y dispositivos móviles Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo que se codifican a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
 Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda, como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptables. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tabletas.
 
@@ -139,7 +139,7 @@ La lógica que utiliza un reproductor de vídeo para determinar qué vídeo codi
 
 Para obtener información técnica detallada sobre el algoritmo, consulte [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admite lo siguiente:
+Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admiten los siguientes elementos:
 
 * Cargue vídeos en varios formatos compatibles y codifíquelos en MP4 H.264 para reproducirlos en varias pantallas. Puede utilizar ajustes preestablecidos de vídeo adaptables predefinidos, ajustes preestablecidos de codificación de vídeo únicos o personalizar su propia codificación para controlar la calidad y el tamaño del vídeo.
 
@@ -156,7 +156,7 @@ Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. <!
 
 Puede encontrar dispositivos Windows compatibles con este formato de vídeo en: [Códecs multimedia compatibles con Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
 
-* Reproduzca el vídeo con los ajustes preestablecidos del visualizador de vídeo de Dynamic Media, incluidos los siguientes:
+* Reproduzca el vídeo con los ajustes preestablecidos del visualizador de vídeos de Dynamic Media, incluidos los siguientes:
 
    * Visores de vídeo únicos.
    * Visores de medios mixtos que combinan contenido de vídeo e imagen.
@@ -166,15 +166,15 @@ Puede encontrar dispositivos Windows compatibles con este formato de vídeo en: 
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Visualizadores solo para recursos de Experience Manager](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Solo visualizadores para recursos de Experience Manager](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Práctica recomendada: Uso del visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
-Los ajustes preestablecidos de visualizador de vídeo Dynamic Media HTML5 son reproductores de vídeo sólidos. Puede utilizarlas para evitar muchos problemas comunes asociados con la reproducción de vídeo de HTML5. Además, se han corregido problemas asociados con los dispositivos móviles, como la falta de entrega de flujo de bits adaptable y el limitado alcance del explorador de escritorio.
+Los ajustes preestablecidos del visualizador de vídeo Dynamic Media HTML5 son reproductores de vídeo sólidos. Puede utilizarlas para evitar muchos problemas comunes asociados con la reproducción de vídeo de HTML5. Además, se han corregido problemas asociados con los dispositivos móviles, como la falta de entrega de flujo de bits adaptable y el limitado alcance del explorador de escritorio.
 
-En el lado del diseño del reproductor, puede diseñar la funcionalidad del reproductor de vídeo con herramientas de desarrollo web estándar. Por ejemplo, puede diseñar los botones, los controles y el fondo de imagen de póster personalizado con HTML5 y CSS para ayudarle a llegar a sus clientes con un aspecto personalizado.
+En el lado del diseño del reproductor, puede diseñar la funcionalidad del reproductor de vídeo con herramientas de desarrollo web estándar. Por ejemplo, puede diseñar los botones, los controles y el fondo de imagen de póster personalizado con HTML5 y CSS para ayudarle a llegar a sus clientes con una apariencia personalizada.
 
-En la parte de reproducción del visor, detecta automáticamente la capacidad de vídeo del explorador. A continuación, sirve el vídeo mediante HLS (flujo en directo HTTP) o DASH (flujo adaptable dinámico a través de HTTP), también conocido como flujo de velocidad de bits adaptable. O bien, si estos métodos de envío no están presentes, se utiliza HTML 5 progressive en su lugar.
+En la parte de reproducción del visor, detecta automáticamente la capacidad de vídeo del explorador. A continuación, sirve el vídeo mediante HLS (flujo en directo HTTP) o DASH (flujo adaptable dinámico a través de HTTP), también conocido como flujo de velocidad de bits adaptable. O bien, si estos métodos de envío no están presentes, se utiliza HTML5 progressive en su lugar.
 
 Al combinar en un solo reproductor lo siguiente:
 
@@ -184,7 +184,7 @@ Al combinar en un solo reproductor lo siguiente:
 
 Amplía el alcance del contenido multimedia enriquecido tanto para usuarios de equipos de escritorio como de dispositivos móviles, y garantiza una experiencia de vídeo optimizada.
 
-Ver también [Acerca de los visores de HTML 5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Ver también [Acerca de los visores de HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -192,7 +192,7 @@ En el caso de la transmisión de vídeo adaptable de escritorio y móvil, los v�
 
 La reproducción de vídeo se produce mediante DASH o HLS, o descarga de vídeo progresivo. En versiones anteriores de Experience Manager, como 6.0, 6.1 y 6.2, los vídeos se transmitían por HTTP.
 
-En Experience Manager 6.3 y versiones posteriores, los vídeos se transmiten ahora por HTTPS (es decir, DASH o HLS) porque la URL del servicio de puerta de enlace DM siempre utiliza HTTPS. Este comportamiento predeterminado no afecta a los clientes. La transmisión de vídeo siempre se produce a través de HTTPS, excepto cuando el explorador no la admite. (Consulte la tabla siguiente). Por lo tanto,
+En Experience Manager 6.3 y versiones posteriores, los vídeos ahora se transmiten por HTTPS (es decir, DASH o HLS) porque la URL del servicio de puerta de enlace DM siempre utiliza HTTPS. Este comportamiento predeterminado no afecta a los clientes. La transmisión de vídeo siempre se produce a través de HTTPS, excepto cuando el explorador no la admite. (Consulte la tabla siguiente). Por lo tanto,
 
 * Si tiene un sitio web HTTPS con flujo de vídeo HTTPS, el flujo está bien.
 * Si tiene un sitio web HTTP con flujo de vídeo HTTPS, el flujo está bien y no hay problemas de contenido mixto desde el explorador web.
@@ -241,47 +241,43 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
    <td>Flujo de velocidad de bits adaptable de HLS.</td>
   </tr>
   <tr>
-   <td>Mobile</td>
+   <td>Dispositivo móvil</td>
    <td>Chrome (Android™ 6 o anterior)</td>
    <td>Descarga progresiva.</td>
   </tr>
   <tr>
-   <td>Mobile</td>
+   <td>Dispositivo móvil</td>
    <td>Chrome (Android™ 7 o posterior)</td>
    <td>Flujo de velocidad de bits adaptable DASH* o HLS.</td>
   </tr>
   <tr>
-   <td>Mobile</td>
+   <td>Dispositivo móvil</td>
    <td>Android™ (explorador predeterminado)</td>
    <td>Descarga progresiva.</td>
   </tr>
   <tr>
-   <td>Mobile</td>
+   <td>Dispositivo móvil</td>
    <td>Safari (iOS)</td>
    <td>Flujo de velocidad de bits adaptable de HLS.</td>
   </tr>
   <tr>
-   <td>Mobile</td>
+   <td>Dispositivo móvil</td>
    <td>Chrome (iOS)</td>
    <td>Flujo de velocidad de bits adaptable de HLS.</td>
   </tr>
   <tr>
-   <td>Mobile</td>
+   <td>Dispositivo móvil</td>
    <td>BlackBerry®</td>
    <td>Flujo de velocidad de bits adaptable DASH* o HLS./td&gt;
   </tr>
  </tbody>
 </table>
 
->[!IMPORTANT]
->
->*Para usar DASH en tus videos, el Soporte técnico de Adobe debe habilitarlo primero en tu cuenta. Ver [Habilitar DASH en tu cuenta de Dynamic Media](#enable-dash).
-
-## Arquitectura de la solución de vídeo de Dynamic Media {#architecture-of-dynamic-media-video-solution}
+## Arquitectura de la solución de vídeo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
 El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican a través de DMGateway (en modo híbrido de Dynamic Media) y que se ponen a disposición del público.
 
-![Arquitectura de la solución de vídeo de Dynamic Media.](assets/chlimage_1-427.png)
+![Arquitectura de la solución de vídeo Dynamic Media.](assets/chlimage_1-427.png)
 
 ## Arquitectura de publicación híbrida para vídeos {#hybrid-publishing-architecture-for-videos}
 
@@ -289,7 +285,7 @@ El siguiente gráfico muestra el flujo de trabajo general de creación de vídeo
 
 ## Prácticas recomendadas para codificar vídeos {#best-practices-for-encoding-videos}
 
-El flujo de trabajo **Dynamic Media Encode Video** codifica el vídeo si ha activado Dynamic Media y ha configurado los servicios de nube de vídeo. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. Si ha habilitado Dynamic Media y ha configurado los servicios de nube de vídeo, el flujo de trabajo **[!UICONTROL Dynamic Media Encode Video]** surte efecto automáticamente al cargar un vídeo. (Si no usa Dynamic Media, el flujo de trabajo **[!UICONTROL Recurso de actualización DAM]** surte efecto).
+El flujo de trabajo **Dynamic Media Encode Video** codifica el vídeo si ha habilitado Dynamic Media y ha configurado los servicios de nube de vídeo. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. Si ha habilitado Dynamic Media y ha configurado los servicios de nube de vídeo, el flujo de trabajo **[!UICONTROL Codificación de vídeo de Dynamic Media]** surte efecto automáticamente al cargar un vídeo. (Si no usa Dynamic Media, el flujo de trabajo **[!UICONTROL DAM Update Asset]** surte efecto).
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
@@ -429,65 +425,11 @@ Por ejemplo, supongamos que el vídeo de origen es 1920 × 1080. En la tabla sig
 
 Dynamic Media recomienda utilizar ajustes preestablecidos de codificación de vídeo MP4 H.264. Como los archivos MP4 utilizan el códec de vídeo H.264, proporciona vídeo de alta calidad pero en un tamaño de archivo comprimido.
 
-### Habilite la compatibilidad con DASH, subtítulos múltiples y pistas de audio en su cuenta de Dynamic Media {#enable-dash}
-
-**Acerca de habilitar DASH en tu cuenta**
-DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para streaming de video y es ampliamente adoptado en diferentes visores de video. Cuando DASH está habilitado en su cuenta, tiene la opción de elegir entre DASH o HLS para flujo de vídeo adaptable. O bien, puede optar por ambos con el cambio automático entre reproductores cuando **[!UICONTROL auto]** está seleccionado como el tipo de reproducción en el ajuste preestablecido del visor.
-
-Algunas ventajas clave de habilitar DASH en su cuenta son las siguientes:
-
-* Empaquete el vídeo de flujo DASH para la transmisión de velocidad de bits adaptable. Este método aumenta la eficacia del envío. El streaming adaptable garantiza la mejor experiencia de visualización para sus clientes.
-* El streaming optimizado para el navegador con reproductores de Dynamic Media cambia entre el streaming de HLS y DASH para garantizar la mejor calidad de servicio. El reproductor de vídeo cambia automáticamente a HLS cuando se utiliza un explorador Safari.
-* Puede configurar su método de streaming preferido (HLS o DASH) editando el ajuste preestablecido del visualizador de vídeo.
-* La codificación de vídeo optimizada garantiza que no se utilice almacenamiento adicional al habilitar la capacidad DASH. Se crea un único conjunto de codificaciones de vídeo para HLS y DASH a fin de optimizar los costes de almacenamiento de vídeo.
-* Ayuda a que la entrega de vídeo sea más accesible para los clientes.
-* Obtenga también la URL de flujo continuo mediante API.
-
-Para habilitar DASH en su cuenta de, se requieren dos pasos:
-
-* Configuración de Dynamic Media para utilizar DASH, que puede realizar fácilmente.
-* Configuración de Experience Manager 6.5 para utilizar DASH, que se realiza mediante un caso de Asistencia al cliente de Adobe que crea y envía.
-
-Cuando crea un caso de Soporte de Adobe para habilitar DASH en su cuenta, también se habilita automáticamente la compatibilidad con múltiples subtítulos y pistas de audio. Una vez activados, todos los vídeos recién cargados se procesan con una arquitectura backend actualizada que admite la adición de varias pistas de subtítulos y audio.
-
->[!IMPORTANT]
->
->Cualquier vídeo que hayas subido *antes de* y que habilites la compatibilidad con múltiples subtítulos y pistas de audio en tu cuenta de Dynamic Media, [debe volver a procesarse](/help/assets/processing-profiles.md#reprocessing-assets). Este paso de reprocesamiento de vídeo es necesario para que tengan disponibles múltiples subtítulos y pistas de audio. Las direcciones URL del vídeo siguen funcionando y reproduciéndose como de costumbre, después del reprocesamiento.
-
-**Para habilitar la compatibilidad con DASH, subtítulos múltiples y pistas de audio múltiples en tu cuenta de Dynamic Media:**
-
-<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
-1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. To enable (turn on) DASH, select the checkbox. -->
-1. Comience por **configurar Dynamic Media para DASH** - Desde el Experience Manager, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
-
-1. Desde la página **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]**, desplácese hasta el nombre *Indicador de la función de transmisión avanzada de vídeo de Dynamic Media para AEM Assets*.
-
-1. A la izquierda del nombre, seleccione la casilla de verificación para activar DASH.
-
-1. Seleccione **[!UICONTROL Guardar]**.
-
-1. Ahora, usa el Admin Console para iniciar la [creación de un nuevo caso de soporte](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
-1. Para crear un caso de soporte, siga las instrucciones y asegúrese de proporcionar la siguiente información:
-
-   * Nombre del contacto principal, correo electrónico, teléfono.
-   * Nombre de su cuenta de Dynamic Media.
-   * Especifique que desea que DASH, la compatibilidad con varios subtítulos y pistas de audio múltiples estén habilitados en su cuenta de Dynamic Media, en Experience Manager 6.5.
-
-1. La Asistencia al cliente de Adobe lo agrega a la Lista de espera de clientes en función del orden en que se envían las solicitudes.
-1. Cuando el Adobe está listo para administrar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo para la activación.
-1. El servicio de atención al cliente le notificará una vez finalizado.
-1. Ahora, puede realizar una de las siguientes acciones:
-
-   * Cree su [ajuste preestablecido de visor de vídeo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costumbre.
-   * [Agregue varios subtítulos y pistas de audio](#add-msma) al vídeo.
-
 ## Ver informes de vídeo {#viewing-video-reports}
 
 >[!NOTE]
 >
->Los informes de vídeo solo están disponibles cuando se ejecuta Dynamic Media en modo híbrido.
+>Los informes de vídeo solo están disponibles cuando se ejecuta Dynamic Media (modo híbrido).
 
 Los informes de vídeo muestran varias métricas agregadas a lo largo de un tiempo especificado para ayudarle a supervisar que los vídeos individuales y agregados de *publicados* funcionan según lo esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
@@ -501,9 +443,9 @@ También se muestra una tabla con todos los *vídeos publicados* para que puedas
 
 Al seleccionar un nombre de vídeo en la lista, se muestra el informe de retención de audiencia (menú desplegable) del vídeo en forma de gráfico de líneas. El gráfico muestra el número de vistas durante un momento determinado de la reproducción de vídeo. Cuando reproduce el vídeo, la barra vertical rastrea en sincronización con el indicador de tiempo del reproductor. Las caídas en los datos del gráfico de líneas indican dónde cae la audiencia debido al desinterés.
 
-Si el vídeo se ha codificado fuera de Adobe Experience Manager Dynamic Media, el gráfico de retención de audiencia (menú desplegable) y los datos del porcentaje de reproducción de la tabla no están disponibles.
+Si el vídeo se ha codificado fuera de Adobe Experience Manager Dynamic Media, el gráfico de retención de audiencia (entrega) y los datos del porcentaje de reproducción de la tabla no están disponibles.
 
-Consulte también [Configuración de Cloud Service de Dynamic Media](/help/assets/config-dynamic.md).
+Consulte también [Configurar servicios de nube de Dynamic Media](/help/assets/config-dynamic.md).
 
 >[!NOTE]
 >
@@ -511,11 +453,11 @@ Consulte también [Configuración de Cloud Service de Dynamic Media](/help/asset
 
 De forma predeterminada, la primera vez que se acceden a Informes de vídeo, el informe muestra los datos de vídeo a partir del primer día del mes en curso y termina con la fecha del mes actual. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. La próxima vez que acceda a Informes de vídeo, se utilizará el intervalo de fechas especificado.
 
-Para que los informes de vídeo funcionen correctamente, se crea automáticamente una ID de grupo de informes al configurar los Cloud Service de Dynamic Media. Al mismo tiempo, el ID del grupo de informes se inserta en el servidor de Publish para que esté disponible para la función Copiar URL al obtener una vista previa de los recursos. Sin embargo, esta funcionalidad requiere que el servidor de Publish ya esté configurado. Si el servidor de Publish no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, debe volver a la configuración de Dynamic Media Cloud y seleccionar **[!UICONTROL Aceptar]**.
+Para que los informes de vídeo funcionen correctamente, se crea automáticamente un ID de grupo de informes cuando se configura Dynamic Media Cloud Services. Al mismo tiempo, el ID del grupo de informes se inserta en el servidor de publicación para que esté disponible para la función Copiar URL al obtener una vista previa de los recursos. Sin embargo, esta funcionalidad requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, debe volver a la configuración de nube de Dynamic Media y seleccionar **[!UICONTROL Aceptar]**.
 
 **Para ver informes de vídeo:**
 
-1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo del Experience Manager y, a continuación, en el carril izquierdo, haga clic en **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo]**.
+1. En la esquina superior izquierda de Experience Manager, seleccione el logotipo de Experience Manager y, en el carril izquierdo, haga clic en **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo]**.
 1. En la página Informes de vídeo, realice una de las siguientes acciones:
 
    * Cerca de la esquina superior derecha, selecciona el icono **Actualizar informe de vídeo**.
@@ -528,11 +470,11 @@ Especifique el intervalo de fechas inicial y final para el que desea obtener dat
 
 1. En la tabla que muestra los vídeos más publicados, seleccione un nombre de vídeo para reproducir el vídeo y también consulte el informe de retención de audiencia (lista desplegable) del vídeo.
 
-### Vea informes de vídeo basados en un visor de vídeo que haya creado con el SDK de Dynamic Media HTML5 Viewer {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Vea informes de vídeo basados en un visor de vídeo que haya creado con el visualizador de HTML5 de Dynamic Media SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Si utiliza un visualizador de vídeo incorporado que proporciona Dynamic Media, o si ha creado un ajuste preestablecido de visualizador personalizado basado en un visualizador de vídeo incorporado, no se requieren pasos adicionales para ver los informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API de SDK de HTML5 Viewer, siga estos pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
 
-Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) y la [API de SDK de visor de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
+Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) y la [API de SDK de visores de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
 
 **Para ver informes de vídeo basados en un visor de vídeo que creó con el SDK de Dynamic Media HTML5 Viewer:**
 
@@ -596,7 +538,7 @@ Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experi
 
 ## Acerca de la compatibilidad con varios subtítulos y pistas de audio para vídeos en Dynamic Media{#about-msma}
 
-Con la capacidad de varios subtítulos y pistas de audio de Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para una audiencia global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
+Con la capacidad de varios subtítulos y pistas de audio de Dynamic Media, puede añadir fácilmente varios subtítulos y pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para un público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 
 ![Pestaña Subtítulos y pistas de audio en Dynamic Media junto con una tabla que muestra los `.vtt` archivos de subtítulos cargados y los archivos de pista de audio .MP3 cargados para un vídeo.](assets-dm/msma-subtitle-audiotracks-tab2.png)
 
@@ -610,17 +552,16 @@ Algunos de los casos de uso que se deben tener en cuenta para agregar varios sub
 |  | Pistas de comentarios |
 |  | Audio descriptivo |
 
-Todos los [formatos de vídeo admitidos en Dynamic Media](/help/assets/assets-formats.md) y todos los visores de vídeo de Dynamic Media, excepto el visor de *Video_360* de Dynamic Media, son compatibles con múltiples subtítulos y pistas de audio.
+Todos los [formatos de vídeo admitidos en Dynamic Media](/help/assets/assets-formats.md) y todos los visores de vídeo de Dynamic Media, excepto el visor de *Video_360* de Dynamic Media, son compatibles para su uso con varios subtítulos y pistas de audio.
 
-La función de seguimiento de audio y varios subtítulos está disponible para su cuenta de Dynamic Media a través de una opción de función que debe habilitar (activar) Asistencia al cliente de Adobe.
+La capacidad Varios subtítulos y pistas de audio está disponible para su cuenta de Dynamic Media a través de una opción de función que debe habilitar (activar) la Asistencia al cliente de Adobe.
 
 ### Añada varias pistas de subtítulos y audio al vídeo {#add-msma}
 
 Antes de agregar varias pistas de subtítulos y audio al vídeo, asegúrese de que ya dispone de lo siguiente:
 
-* Dynamic Media AEM se configura en un entorno de.
-* Se ha aplicado un perfil de [Dynamic Media Video a la carpeta donde se han ingerido sus vídeos](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [Se han habilitado varios subtítulos y pistas de audio en tu cuenta de Dynamic Media](#enable-dash).
+* Dynamic Media está configurado en un entorno de AEM.
+* Se ha aplicado un perfil de vídeo de [Dynamic Media a la carpeta en la que se han introducido los vídeos](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
 Los subtítulos y subtítulos agregados son compatibles con los formatos WebVTT y Adobe `.vtt`. Además, los archivos de pista de audio añadidos son compatibles con el formato MP3.
 
@@ -683,7 +624,7 @@ Los subtítulos y subtítulos agregados son compatibles con los formatos WebVTT 
 
 1. (Opcional) Si seleccionaste **[!UICONTROL Guardar y cerrar]** en el paso anterior, en lugar de seleccionar **[!UICONTROL Guardar]**, aún puedes ver el estado de procesamiento de los archivos cargados. Ver [Ver el estado del ciclo de vida de los archivos de subtítulos y pistas de audio cargados](#lifecycle-status-video).
 1. (Opcional) Previsualice el vídeo antes de publicarlo para garantizar que los subtítulos y el audio funcionan según lo esperado. Ver [Vista previa de un vídeo con varios subtítulos y pistas de audio](#preview-video-audio-subtitle)
-1. Publish el vídeo. Consulte [recursos de Publish](publishing-dynamicmedia-assets.md).
+1. Publique el vídeo. Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
 
 #### Agregar archivos de rótulo y de pista de audio a un vídeo ya publicado
 
@@ -695,7 +636,7 @@ Sin embargo, tras la vista previa, debe *publicar* el vídeo de nuevo para que t
 >
 >En función de la configuración de almacenamiento en caché de la instancia, las actualizaciones de metadatos pueden tardar varios minutos en reflejarse en la vista previa y en las direcciones URL publicadas.
 
-En el caso de que haya configurado Dynamic Media para la publicación inmediata, la carga de archivos de audio o subtítulos adicionales déclencheur inmediatamente la publicación del vídeo tras la carga de archivos de audio o subtítulos.
+En el caso de que haya configurado Dynamic Media para la publicación inmediata, la carga de archivos de audio o subtítulos adicionales déclencheur inmediatamente la publicación del vídeo después de la carga de archivos de audio o subtítulos.
 
 >[!CAUTION]
 >
@@ -711,7 +652,7 @@ Los cambios de varios subtítulos tienen prioridad sobre los subtítulos añadid
 
 1. Cargue el archivo de rótulo que ya se haya añadido como modificador al vídeo para que pueda administrar el archivo explícitamente.
 1. Cargue los archivos de subtítulos adicionales que sean necesarios.
-1. Publish el vídeo como de costumbre.
+1. Publique el vídeo como de costumbre.
 La URL existente con el modificador caption ahora puede cargar varios subtítulos.
 
 ### Ver el estado del ciclo de vida de los archivos de subtítulos y pistas de audio cargados{#lifecycle-status-video}
@@ -761,7 +702,7 @@ En el cuadro de diálogo **Establecer como predeterminado**, seleccione **[!UICO
    ![El encabezado Pistas de audio tiene un nombre de archivo de pista de audio seleccionado y se resaltó el botón &quot;Establecer como predeterminado&quot;.](assets-dm/msma-defaultaudiotrack2.png)*Estableciendo la pista de audio predeterminada para un vídeo.*
 
 1. En la esquina superior derecha, seleccione **[!UICONTROL Guardar y cerrar]**.
-1. Publish el vídeo. Consulte [recursos de Publish](publishing-dynamicmedia-assets.md).
+1. Publique el vídeo. Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
 
 ### Vista previa de un vídeo con varios subtítulos y pistas de audio{#preview-video-audio-subtitle}
 
@@ -775,7 +716,7 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
 
 >[!NOTE]
 >
->La pestaña Previsualización del Experience Manager predeterminada no muestra varias pistas de subtítulos y audio. El motivo es que esas pistas están asociadas a Dynamic Media y solo se pueden ver con la previsualización del visualizador de Dynamic Media.
+>La pestaña Vista previa de Experience Manager predeterminada no muestra varias pistas de subtítulos y audio. El motivo es que esas pistas están asociadas con Dynamic Media y solo se pueden ver con la previsualización del visualizador de Dynamic Media.
 
 **Para obtener una vista previa de un vídeo que tiene varios subtítulos y pistas de audio:**
 
@@ -815,7 +756,7 @@ La pista de audio original extraída de un vídeo principal no se puede eliminar
    * Pistas de audio: en el encabezado **Pistas de audio**, seleccione uno o más archivos de pista de audio que desee eliminar del vídeo y, a continuación, seleccione **[!UICONTROL Eliminar]**.
 
 1. En el cuadro de diálogo Eliminar, seleccione **[!UICONTROL Aceptar]**.
-1. Publish el vídeo.
+1. Publique el vídeo.
 
 ### Descargar archivos de subtítulos o pistas de audio cargados en un vídeo
 
@@ -844,7 +785,7 @@ No se puede descargar la pista de audio original extraída de un archivo princip
    | Recursos | Especifica el número de archivos que está descargando y el tamaño total combinado de todos los archivos seleccionados. Al anular la selección de esta opción, se atenúa (desactiva) el botón **[!UICONTROL Descargar]**, lo que impide que se descargue ningún archivo. |
 
 1. Seleccione **[!UICONTROL Descargar]**.
-1. Publish el vídeo. Consulte [recursos de Publish](publishing-dynamicmedia-assets.md).
+1. Publique el vídeo. Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
 
 
 
@@ -852,10 +793,6 @@ No se puede descargar la pista de audio original extraída de un archivo princip
 
 
 ## Adición de subtítulos a un vídeo {#adding-captions-to-video}
-
->[!IMPORTANT]
->
->El Adobe recomienda que [habilites la función de múltiples subtítulos y pistas de audio](#enable-dash) en tu cuenta de Dynamic Media. Al hacerlo, puede aprovechar la arquitectura de back-end de Dynamic Media más reciente y un flujo de trabajo simplificado para agregar subtítulos, subtítulos y pistas de audio a los vídeos.
 
 Puede ampliar el alcance de sus vídeos a los mercados globales añadiendo subtítulos a vídeos únicos o a conjuntos de vídeos adaptables. Al añadir subtítulos opcionales, evitará la necesidad de doblar el audio o la necesidad de utilizar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Los subtítulos en idiomas extranjeros aparecen para que las personas de diferentes idiomas puedan entender la parte de audio.
 
@@ -865,7 +802,7 @@ Los subtítulos opcionales también permiten una mayor accesibilidad para las pe
 >
 >El reproductor de vídeo que utilice debe admitir la visualización de subtítulos.
 
-Vea también [Accesibilidad en Dynamic Media](/help/assets/accessibility-dm.md).
+Consulte también [Accesibilidad en Dynamic Media](/help/assets/accessibility-dm.md).
 
 Dynamic Media convierte los archivos de rótulo al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos sean más fáciles de descubrir y dar a los clientes detalles adicionales sobre el contenido del vídeo.
 
@@ -900,11 +837,11 @@ Consulte [Proporcionar contenido estático (que no es de imagen)](https://experi
 
    Recuerde que las direcciones URL solo están disponibles para copiarse *después* de *publicar* los recursos por primera vez.
 
-   Consulte [recursos de Publish](/help/assets/publishing-dynamicmedia-assets.md).
+   Consulte [Publicar recursos](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Realice una de las siguientes acciones:
 
-   * Para obtener una experiencia de visor de vídeo emergente, haz clic en **[!UICONTROL URL]**. En el cuadro de diálogo URL, seleccione y copie la URL en el Portapapeles y, a continuación, pegue la URL en un editor de texto simple. Anexe la URL copiada del vídeo con la siguiente sintaxis:
+   * Para obtener una experiencia de visor de vídeo emergente, haga clic en la **[!UICONTROL URL]**. En el cuadro de diálogo URL, seleccione y copie la URL en el Portapapeles y, a continuación, pegue la URL en un editor de texto simple. Anexe la URL copiada del vídeo con la siguiente sintaxis:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
@@ -922,9 +859,9 @@ Puede facilitar la visualización y navegación de los vídeos de formato largo 
 
 >[!NOTE]
 >
->El reproductor de vídeo utilizado debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero es posible que el uso de reproductores de vídeo de terceros no los admita.
+>El reproductor de vídeo utilizado debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media no admiten marcadores de capítulo, pero es posible que el uso de reproductores de vídeo de terceros no los admita.
 
-Si lo desea, puede crear y personalizar su propio visor de vídeo personalizado con capítulos en lugar de utilizar un ajuste preestablecido de visualizador de vídeo. Para obtener instrucciones sobre cómo crear su propio visor de HTML 5 con navegación por capítulos, en la API de SDK del visor de Adobe HTML 5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la [API de SDK de visor de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
+Si lo desea, puede crear y personalizar su propio visor de vídeo personalizado con capítulos en lugar de utilizar un ajuste preestablecido de visualizador de vídeo. Para obtener instrucciones sobre cómo crear su propio visor de HTML5 con navegación por capítulos, en la API de SDK del visor de Adobe HTML5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la [API de SDK del visor HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 
 <!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -976,7 +913,7 @@ Ver [WebVTT: el formato de seguimiento de texto de vídeo web](https://w3c.githu
        <li>Vaya al <i>recurso de vídeo </i>publicado que desee asociar con el archivo de capítulo que ha cargado. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. Ver <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicación de Assets.</a></li>
        <li>En el menú desplegable, haga clic en <strong>Visualizadores</strong>.</li>
        <li>En el carril izquierdo, haga clic en el nombre del ajuste preestablecido de visualizador de vídeo. Se abrirá una vista previa del vídeo en una página independiente.</li>
-       <li>En el carril izquierdo, al final, haga clic en <strong>URL</strong>.</li>
+       <li>En el carril izquierdo, en la parte inferior, haga clic en <strong>URL</strong>.</li>
        <li>En el cuadro de diálogo URL, seleccione y copie la URL en el Portapapeles, después pegue la URL en un editor de texto simple.</li>
        <li>Anexe la URL copiada del vídeo con la siguiente sintaxis para que pueda asociarla con la URL copiada al archivo de capítulo:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
@@ -1000,7 +937,7 @@ Ver [WebVTT: el formato de seguimiento de texto de vídeo web](https://w3c.githu
 
 Una miniatura de vídeo es una versión de tamaño reducido de un fotograma de vídeo o un recurso de imagen que representa el vídeo para el cliente. La miniatura sirve para animar a un cliente a seleccionar el vídeo.
 
-Todos los vídeos del Experience Manager deben tener una miniatura asociada y para eliminarla es necesario reemplazarla. De forma predeterminada, al cargar un vídeo en el Experience Manager, se utiliza el primer fotograma como miniatura. Sin embargo, puede personalizar la miniatura con fines de personalización de marca o búsqueda visual, por ejemplo. Al personalizar una miniatura de vídeo, puede reproducir el vídeo y pausar el fotograma que desee utilizar. O bien, puede seleccionar un recurso de imagen que ya ha cargado y *publicado* en su administrador de recursos digitales.
+Todos los vídeos de Experience Manager deben tener una miniatura asociada y para eliminarla es necesario reemplazarla. De forma predeterminada, al cargar un vídeo en Experience Manager, se utiliza el primer fotograma como miniatura. Sin embargo, puede personalizar la miniatura con fines de personalización de marca o búsqueda visual, por ejemplo. Al personalizar una miniatura de vídeo, puede reproducir el vídeo y pausar el fotograma que desee utilizar. O bien, puede seleccionar un recurso de imagen que ya ha cargado y *publicado* en su administrador de recursos digitales.
 
 Una imagen en miniatura de vídeo personalizada que seleccione de un vídeo no se extrae y guarda en DAM como un recurso independiente y distinto. Sin embargo, una miniatura de vídeo personalizada que seleccione de un recurso de imagen existente se guarda en el JCR. La ruta del recurso seleccionado se almacena en el nodo del recurso de vídeo como en la siguiente ruta de ejemplo:
 
@@ -1061,7 +998,7 @@ En función del tiempo total del vídeo, Dynamic Media captura diez imágenes en
 * 81 %
 * 91 %
 
-Las diez miniaturas persisten, lo que significa que si decide elegir una miniatura diferente más adelante, no necesita volver a generar la serie. Puede previsualizar las diez imágenes en miniatura y, a continuación, seleccionar la que desee utilizar con el vídeo. Si desea cambiar al valor predeterminado, puede utilizar el CRXDE Lite para configurar el intervalo de tiempo durante el cual se generan las imágenes en miniatura. Por ejemplo, si solo desea generar una serie de cuatro imágenes en miniatura de vídeo espaciadas uniformemente, puede configurar el intervalo de tiempo en 24 %, 49 %, 74 % y 99 %.
+Las diez miniaturas persisten, lo que significa que si decide elegir una miniatura diferente más adelante, no necesita volver a generar la serie. Puede previsualizar las diez imágenes en miniatura y, a continuación, seleccionar la que desee utilizar con el vídeo. Si desea cambiar al valor predeterminado, puede utilizar CRXDE Lite para configurar el intervalo de tiempo durante el cual se generan las imágenes en miniatura. Por ejemplo, si solo desea generar una serie de cuatro imágenes en miniatura de vídeo espaciadas uniformemente, puede configurar el intervalo de tiempo en 24 %, 49 %, 74 % y 99 %.
 
 Lo ideal es añadir una miniatura de vídeo en cualquier momento después de cargarlo, pero antes de publicarlo en el sitio web.
 
@@ -1071,7 +1008,7 @@ Consulte también [Acerca de las miniaturas de vídeo en Dynamic Media - Modo Sc
 
 ### Añadir una miniatura de vídeo {#adding-a-video-thumbnail}
 
-Estos pasos solo se aplican a Dynamic Media que se ejecuta en modo híbrido.
+Estos pasos solo se aplican a Dynamic Media, que se ejecuta en modo híbrido.
 
 **Para agregar una miniatura de vídeo:**
 
@@ -1102,7 +1039,7 @@ Ver [Agregar una miniatura de vídeo](#adding-a-video-thumbnail).
 
 1. En Experience Manager, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
-1. En la página CRXDE Lite, en el panel Directorio de la izquierda, navegue hasta `o etc/dam/imageserver/configuration/jcr:content/settings.`
+1. En la página CRXDE Lite, en el panel del directorio de la izquierda, navegue hasta `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
    si el panel directorio no está visible, seleccione el icono >> a la izquierda de la pestaña Inicio.
 
@@ -1114,13 +1051,13 @@ Ver [Agregar una miniatura de vídeo](#adding-a-video-thumbnail).
    * Seleccione el icono de flecha arriba y el icono de flecha abajo si desea reordenar los valores del intervalo.
 
 1. Seleccione **[!UICONTROL Aceptar]** y vuelva a la pestaña Propiedades.
-1. Cerca de la esquina superior izquierda de la página CRXDE Lite, seleccione **[!UICONTROL Guardar todo]** y, a continuación, haga clic en el icono Volver a inicio situado en la esquina superior izquierda para volver a Experience Manager.
+1. Cerca de la esquina superior izquierda de la página de CRXDE Lite, seleccione **[!UICONTROL Guardar todo]** y, a continuación, haga clic en el icono Volver a inicio en la esquina superior izquierda para regresar a Experience Manager.
 
    Ver [Agregar una miniatura de vídeo](#adding-a-video-thumbnail).
 
 ### Añadir una miniatura de vídeo personalizada {#adding-a-custom-video-thumbnail-1}
 
-Estos pasos solo se aplican a Dynamic Media que se ejecuta en modo híbrido.
+Estos pasos solo se aplican a Dynamic Media, que se ejecuta en modo híbrido.
 
 **Para agregar una miniatura de vídeo personalizada:**
 
@@ -1129,14 +1066,14 @@ Estos pasos solo se aplican a Dynamic Media que se ejecuta en modo híbrido.
 1. En la barra de herramientas, seleccione el icono **[!UICONTROL Ver propiedades]** (un círculo con una &quot;i&quot;).
 1. En la página Propiedades del vídeo, seleccione **[!UICONTROL Cambiar miniatura]**.
 1. En la página Cambiar miniatura, en la barra de herramientas, seleccione **[!UICONTROL Cargar nueva miniatura]**.
-1. Vaya a la imagen en miniatura que desee usar, selecciónela y, a continuación, seleccione **[!UICONTROL Abrir]** para comenzar a cargar la imagen en el Experience Manager. Después de la carga, asegúrese de publicar la imagen.
+1. Vaya a la imagen en miniatura que desee usar, selecciónela y, a continuación, seleccione **[!UICONTROL Abrir]** para comenzar a cargar la imagen en Experience Manager. Después de la carga, asegúrese de publicar la imagen.
 1. Después de cargar y publicar correctamente la imagen, en la página Cambiar miniatura, seleccione **[!UICONTROL Guardar cambios]**.
 
    La miniatura personalizada se añadirá al vídeo.
 
 ## Cambio de la URL de Dynamic Media para los recursos de Dynamic Media {#manifest-urls}
 
-Los vídeos procesados en Dynamic Media se pueden utilizar con los visores predeterminados. O bien, accediendo a las direcciones URL del manifiesto y reproduciéndolas en visores personalizados. A continuación se muestra la API para recuperar las URL de manifiesto de un vídeo.
+Los vídeos procesados en Dynamic Media se pueden utilizar con visores predeterminados. O bien, accediendo a las direcciones URL del manifiesto y reproduciéndolas en visores personalizados. A continuación se muestra la API para recuperar las URL de manifiesto de un vídeo.
 
 ### Acerca de la API de getVideoManifestURI
 
@@ -1170,7 +1107,7 @@ Para recuperar las URL de manifiesto de los vídeos mediante el método anterior
 
 ### Escenarios de error
 
-La API devuelve un valor nulo si hay errores. Las excepciones se registran en los registros de errores del Experience Manager. Todos estos errores registrados comienzan con `Could not generate Video Manifest URI`. Los siguientes escenarios pueden provocar estos errores:
+La API devuelve un valor nulo si hay errores. Las excepciones se registran en los registros de errores de Experience Manager. Todos estos errores registrados comienzan con `Could not generate Video Manifest URI`. Los siguientes escenarios pueden provocar estos errores:
 
 * Se registra un(a) `IllegalArgumentException` para cualquiera de los siguientes elementos:
 
@@ -1178,7 +1115,7 @@ La API devuelve un valor nulo si hay errores. Las excepciones se registran en lo
    * El parámetro `resource` pasado no es un vídeo.
    * El parámetro `manifestType` pasado es nulo.
    * El parámetro `onlyIfPublished` se pasó como true, pero el vídeo no se publicó.
-   * El vídeo no se ha ingerido mediante un conjunto de vídeos adaptable de Dynamic Media.
+   * El vídeo no se ha introducido con un conjunto de vídeos adaptable de Dynamic Media.
 
 * `IOException` se registra cuando hay un problema al conectarse a Dynamic Media.
 * `UnsupportedOperationException` se registra cuando se pasa un parámetro `manifestType` que es `ManifestType.DASH`, mientras que el vídeo no se ha procesado con el formato DASH.
@@ -1466,5 +1403,66 @@ Puede invocar el servlet de las siguientes maneras:
 | HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Si la entrega DASH está habilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>Si la entrega DASH está deshabilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
 | GUIÓN | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Si la entrega DASH está habilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>Si la entrega DASH está deshabilitada:<br>`{}` |
 | Error: la ruta del recurso es incorrecta | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+
+
+
+<!-- OBSOLETE. REMOVED AS PER EMAIL FROM RIYA MIDHA ON WEDNESDAY, MARCH 5, 2025
+
+### Enable DASH, multiple caption and audio track support on your Dynamic Media account {#enable-dash}
+
+**About enabling DASH on your account**
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
+
+Some key benefits from enabling DASH on your account include the following:
+     
+* Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
+* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
+* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
+* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodings are created for both HLS and DASH to optimize video storage costs.
+* Helps make video delivery more accessible for your customers.
+* Get the streaming URL by way of APIs, too.
+
+Enabling DASH on your account requires two steps: 
+
+* Configuring Dynamic Media to use DASH, which you can easily do yourself.
+* Configuring Experience Manager 6.5 to use DASH which is done by way of an Adobe Customer Support case that you create and submit.
+
+When you create an Adobe Support case to enable DASH on your account, multiple caption and audio track support is automatically enabled as well. Once activated, all newly uploaded videos are processed using an updated backend architecture that supports adding multiple caption and audio tracks.
+
+>[!IMPORTANT]
+>
+>Any videos that you uploaded *before* enabling multiple caption and audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/processing-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multiple caption and audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+
+**To enable DASH, multiple caption and multiple audio track support on your Dynamic Media account:**
+
+<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+
+1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
+1. To enable (turn on) DASH, select the checkbox.
+1. Begin by **configuring Dynamic Media for DASH** - From Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+
+1. From the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** page, scroll to the name *AEM Assets Dynamic Media Video Advanced Streaming Feature Flag*.
+
+1. To the left of the name, select the checkbox to enable (turn on) DASH.
+
+1. Select **[!UICONTROL Save]**.
+
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. To create a support case, follow the instructions while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * Name of your Dynamic Media account.
+    * Specify that you want DASH, multiple caption and multiple audio track support enabled on your Dynamic Media account, on Experience Manager 6.5.
+   
+1. Adobe Customer Support adds you to the Customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for enablement.
+1. Customer support notifies you after completion.
+1. Now, you can do either one of the following:
+
+    * Create your [video viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
+    * [Add multiple caption and audio tracks](#add-msma) to your video. -->
+
+
 
 
