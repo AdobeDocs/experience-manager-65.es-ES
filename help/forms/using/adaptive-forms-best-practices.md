@@ -7,10 +7,10 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: c55c959123f7feaa6571835974f1ce6fe3ead22b
+source-git-commit: 80c2ff4dcb826af99ecba5ccf7c303bd36abe745
 workflow-type: tm+mt
-source-wordcount: '5597'
-ht-degree: 76%
+source-wordcount: '5963'
+ht-degree: 72%
 
 ---
 
@@ -223,6 +223,36 @@ Tenga en cuenta las siguientes prácticas recomendadas para superar los problema
    * Considere la posibilidad de escribir reglas de visibilidad para aquellos fragmentos que deban mostrarse u ocultarse según una condición.
 * Establezca el valor del **Número de llamadas por solicitud** en el **Servlet principal de Apache Sling** a un número bastante grande. Permite al servidor de Forms permitir llamadas adicionales. La configuración muestra un valor predeterminado de 1500. El valor 1500 llamadas es para otros componentes de Experience Manager, como Sites y Recursos. El conjunto de valores predeterminado de los formularios adaptables es 20000. Si encuentra el error `too many calls` en los registros o si el formulario no se puede procesar, intente aumentar el valor a un número mayor para resolver el problema. Si el número de llamadas supera los 20 000, el formulario es complejo y puede tardar algún tiempo en procesarse en el explorador. Esto solo ocurrirá la primera vez que se cargue el formulario, después de que se almacene en la memoria caché. Una vez que el formulario se almacene en la memoria caché, el rendimiento no se verá afectado de forma significativa.
 
+### Consideraciones de tamaño de DOM y rendimiento del explorador
+
+Al crear formularios adaptables grandes y complejos, es importante tener en cuenta el impacto del tamaño DOM en el procesamiento y el rendimiento:
+
+* **Impacto de tamaño de DOM**: Aunque no hay un límite estricto para el tamaño de DOM en AEM Forms, un tamaño de DOM excesivo puede afectar significativamente el rendimiento, especialmente al administrar fragmentos cargados de forma diferida. Las estructuras DOM grandes requieren más memoria y tiempo de procesamiento para procesarse y manipularse.
+
+* **Diferencias de procesamiento del explorador**: El rendimiento del procesamiento puede variar significativamente entre distintos exploradores y dispositivos. Algunos motores de renderización del explorador procesan las actualizaciones dinámicas de DOM de forma diferente, con distintos enfoques para los recálculos de estilo, los reflujo y las repeticiones. Esto es especialmente notable con contenido grande cargado dinámicamente. En algunos exploradores, cada manipulación significativa del DOM puede almacenar en déclencheur un cálculo y una repintado completos del diseño de la página, lo que intensifica los problemas de rendimiento con formularios grandes o complejos.
+
+* **Factores de rendimiento**: varios factores afectan el rendimiento de la carga diferida:
+   * Tamaño y complejidad de los fragmentos
+   * Los estilos CSS aplicados a los elementos
+   * El número de reflujos activados por las actualizaciones dinámicas
+   * Las funcionalidades del dispositivo y del explorador
+
+* **Impacto en el mundo real**: En los casos observados, los formularios con tamaños de DOM de alrededor de 400 KB han experimentado retrasos de procesamiento significativos de hasta 15 segundos en determinados exploradores. Estos retrasos no solo se deben al tamaño del fragmento, sino también al procesamiento CSS y a los flujos de página activados durante la inserción dinámica de contenido.
+
+**Prácticas recomendadas para administrar el tamaño de DOM:**
+
+* Para el contenido estático, considere la posibilidad de utilizar fragmentos de contenido de AEM en lugar de insertar dinámicamente bloques de HTML grandes mediante la carga diferida. Este método puede reducir los reflujos, las repeticiones y el tiempo de ejecución de JavaScript, lo que mejora el rendimiento general de carga de la página.
+
+* Cuando los fragmentos deben ser dinámicos y de carga diferida, divida los fragmentos grandes en fragmentos más pequeños y manejables y cargue solo las secciones necesarias.
+
+* Implemente patrones de divulgación progresivos cuando corresponda, que revelen campos de formulario adicionales solo cuando sean necesarios en función de los datos introducidos por el usuario.
+
+* Pruebe los formularios en varios exploradores y dispositivos, especialmente cuando utilice fragmentos cargados de forma diferida, para garantizar un rendimiento coherente en los distintos entornos.
+
+* Supervise y optimice el CSS utilizado en los formularios, ya que un CSS extenso o mal estructurado puede aumentar significativamente el tiempo de procesamiento, especialmente durante las actualizaciones de contenido dinámico.
+
+Para obtener más información técnica sobre cómo los distintos motores de renderización del explorador gestionan las actualizaciones de DOM, los reflujo y las repintaciones, considere la posibilidad de explorar la documentación del motor del explorador, como las que proporcionan varios proveedores de exploradores.
+
 ### Rellenado previo de formularios adaptables {#prefilling-adaptive-forms}
 
 Puede rellenar previamente los campos de formulario adaptables con datos recuperados del servidor para ayudar a los usuarios a rellenar rápidamente el formulario y evitar errores de escritura.
@@ -245,7 +275,7 @@ Los formularios adaptables requieren enviar acciones para procesar los datos esp
 * Puede escribir una acción de envío personalizada si las acciones de envío predeterminadas no cumplen con su caso de uso. Para obtener más información, consulte [Escribir una acción de envío personalizada para formularios adaptables](/help/forms/using/custom-submit-action-form.md).
 * Incluya validaciones del lado del servidor para evitar el envío de datos no válidos.
 
-Puede utilizar la experiencia de varias firmas de Adobe Sign en formularios adaptables. Tenga en cuenta lo siguiente al configurar Adobe Sign en formularios adaptables. Para obtener más información, consulte [Usar Adobe Sign en un formulario adaptable](/help/forms/using/working-with-adobe-sign.md).
+Puede utilizar la experiencia de varias firmas de Adobe Sign en los formularios adaptables. Tenga en cuenta lo siguiente al configurar Adobe Sign en formularios adaptables. Para obtener más información, consulte [Usar Adobe Sign en un formulario adaptable](/help/forms/using/working-with-adobe-sign.md).
 
 * El formulario adaptable habilitado para Adobe Sign solo se envía después de que todos los firmantes hayan firmado el formulario. Forms aparecerá en estado de firma pendiente hasta que todos los firmantes firmen el formulario.
 * Puede configurar la experiencia de firma en el formulario o redirigir a los firmantes a una página de firma en el envío.
@@ -377,7 +407,7 @@ El editor de reglas está disponible tanto para componentes de AEM Forms Foundat
 
 ### Editor de código {#code-editor}
 
-El Editor de código es una herramienta dentro de Adobe Experience Manager AEM () Forms que le permite escribir scripts y código personalizados para una funcionalidad más compleja y avanzada en los formularios. Aquí analizamos algunos casos de uso:
+El Editor de código es una herramienta dentro de Adobe Experience Manager (AEM) Forms que le permite escribir scripts personalizados y código para una funcionalidad más compleja y avanzada en los formularios. Aquí analizamos algunos casos de uso:
 
 * Cuando necesite implementar una lógica personalizada del lado del cliente o un comportamiento que vaya más allá de las capacidades del Editor de reglas de AEM Forms. El Editor de código le permite escribir código JavaScript para controlar interacciones, cálculos o validaciones complejos.
 * Si el formulario requiere procesamiento en el servidor o integración con sistemas externos, puede utilizar el Editor de código para escribir scripts personalizados en el servidor. Puede acceder a la API de guideBridge en el editor de código para implementar cualquier lógica compleja en eventos y objetos de formulario.
