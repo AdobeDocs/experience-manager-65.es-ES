@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 0109abf51045224912d130ee29f67d7274cfc4f4
+source-git-commit: c878a4d21a7f6197261ac86b27fbdc76eefa589f
 workflow-type: tm+mt
 source-wordcount: '7471'
 ht-degree: 67%
@@ -470,7 +470,7 @@ ht-degree: 67%
       + [Entrega sin encabezado con fragmentos de contenido y GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
       + [Habilitación de la funcionalidad de fragmento de contenido para la instancia](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
-      + [Administrar fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
+      + [Administración de los fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
       + [Variaciones: Crear contenido de fragmentos](/help/assets/content-fragments/content-fragments-variations.md)
       + [Contenido asociado de fragmentos de contenido](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [Metadatos: Propiedades del fragmento](/help/assets/content-fragments/content-fragments-metadata.md)
@@ -1253,7 +1253,7 @@ ht-degree: 67%
       + [2021](/help/commerce/cif/release-notes/release-notes-2021.md)
       + [2020](/help/commerce/cif/release-notes/release-notes-2020.md)
       + [2019](/help/commerce/cif/release-notes/release-notes-2019.md)
-   + [Preguntas más frecuentes](/help/commerce/cif/faq.md)
+   + [Preguntas frecuentes](/help/commerce/cif/faq.md)
    + AEM CIF Classic {#classic}
       + [Información general](/help/commerce/cif-classic/home.md)
       + Implementando {#deploying}
@@ -1439,7 +1439,7 @@ ht-degree: 67%
          + [Introducción a React](/help/sites-developing/spa-getting-started-react.md)
          + [Implementación de un componente de React para SPA](/help/sites-developing/spa-implementing-react-component.md)
          + [Introducción a Angular](/help/sites-developing/spa-getting-started-angular.md)
-         + [Profundización en SPA](/help/sites-developing/spa-deep-dives.md)
+         + [Profundización en SPA](/help/sites-developing/spa-deep-dives-gems.md)
          + [Desarrollo de SPA para AEM](/help/sites-developing/spa-architecture.md)
          + [Información general del editor de SPA](/help/sites-developing/spa-overview.md)
          + [Modelo SPA](/help/sites-developing/spa-blueprint.md)
