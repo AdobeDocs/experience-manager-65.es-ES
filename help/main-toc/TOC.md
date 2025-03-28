@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: c878a4d21a7f6197261ac86b27fbdc76eefa589f
+source-git-commit: c0756980d0dc8ada7f6c352f68c4f41ecf15caa4
 workflow-type: tm+mt
-source-wordcount: '7471'
+source-wordcount: '7480'
 ht-degree: 67%
 
 ---
@@ -1211,6 +1211,7 @@ ht-degree: 67%
       + [La generación de PDF no puede imprimir un gran número de PDF en Workbench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Cómo reiniciar correctamente AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [El servicio PaperCapture no puede realizar OCR en archivos PDF](/help/forms/using/papercapture-service-resolution.md)
+      + [Mitigación de vulnerabilidades de Spring Framework para AEM Forms en JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
    + Documentación heredada {#legacy-documentation}
       + [Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](/help/forms/developing/building-xml.md)
       + [Comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
