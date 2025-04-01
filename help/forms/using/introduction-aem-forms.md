@@ -39,7 +39,7 @@ AEM Forms proporciona herramientas de administración de formularios que no sol
 >
 >La funcionalidad Formularios adaptables, disponible en [AEM 6.5 Inicio rápido](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es), está diseñada únicamente para la exploración y la evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms, ya que la funcionalidad Formularios adaptables requiere una licencia adecuada.
 
-AEM ![Funcionalidades de formularios en la](do-not-localize/4th-draft-updated.gif)
+![Funciones de formularios AEM](do-not-localize/4th-draft-updated.gif)
 
 ### Capacidades clave {#key-capabilities}
 
