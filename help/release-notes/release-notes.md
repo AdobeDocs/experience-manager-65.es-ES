@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 39ad2f3eedb35e98dc2239c0b81b3792a0ddc73f
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '6158'
+source-wordcount: '6161'
 ht-degree: 1%
 
 ---
@@ -595,20 +595,21 @@ Para garantizar el funcionamiento correcto, debe agregar las siguientes propieda
 
 ### Problemas conocidos de AEM Forms {#known-issues-aem-forms-6522}
 
-* Si la conversión de HTML a PDF falla en el servidor SLES 15 SP6 Linux®, con el error: `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`. Siga estos pasos para resolver el problema:
-   1. Inicie el contenedor y establezca la variable de entorno `OPENSSL_CONF` mediante el siguiente comando:
+* Si la conversión de HTML a PDF falla en el servidor SUSE® Linux® (SLES 15 SP6 o posterior) con el error: `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`.
+Siga estos pasos para resolver el problema:
+   1. Inicie el servidor y establezca la variable de entorno `OPENSSL_CONF` mediante el siguiente comando:
       `export OPENSSL_CONF=/etc/ssl`
-Como alternativa, puede establecer la variable de entorno al iniciar el contenedor:
+También puede establecer la variable de entorno al iniciar el servidor:
       `-e OPENSSL_CONF=/etc/ssl`
    1. Reinicie el servidor.
 * Después de instalar AEM Forms JEE Service Pack 21 (6.5.21.0), si encuentra entradas duplicadas de Jars Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` en la carpeta `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), realice los siguientes pasos para resolver el problema:
 
    1. Detenga los localizadores, si están en funcionamiento.
-   2. Detenga el servidor de AEM.
-   3. Vaya a `<AEM_Forms_Installation>/lib/caching/lib`.
-   4. Quite todos los archivos de revisión de Geode excepto `geode-*-1.15.1.2.jar`. Confirme que solo están presentes los jars Geode con `version 1.15.1.2`.
-   5. Abra el símbolo del sistema en modo de administrador.
-   6. Instale el parche de Geode mediante el archivo `geode-*-1.15.1.2.jar`.
+   1. Detenga el servidor de AEM.
+   1. Vaya a `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. Quite todos los archivos de revisión de Geode excepto `geode-*-1.15.1.2.jar`. Confirme que solo están presentes los jars Geode con `version 1.15.1.2`.
+   1. Abra el símbolo del sistema en modo de administrador.
+   1. Instale el parche de Geode mediante el archivo `geode-*-1.15.1.2.jar`.
 
 * Si un usuario intenta obtener una vista previa de un borrador de carta con datos XML guardados, se queda atascado en el estado `Loading` para algunas cartas específicas. Para descargar e instalar la revisión, consulte el artículo [Revisiones de Adobe Experience Manager Forms](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-14521)
 

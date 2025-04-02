@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 8fda6635ec0e28b95209431bd12d191f36df943b
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '4197'
+source-wordcount: '4216'
 ht-degree: 48%
 
 ---
@@ -317,7 +317,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
    <td><p>Service Packs, parches acumulativos y actualizaciones de seguridad críticas</p> </td>
   </tr>
   <tr>
-   <td><p>SUSE® Linux® Enterprise Server 15 SP6 (64 bits)</p> </td>
+   <td><p>SUSE® Linux® Enterprise Server 15 SP6 (64 bits) </p> </td>
    <td><p>A: Compatible</p> </td>
    <td><p>Service Packs, parches acumulativos y actualizaciones de seguridad críticas</p> </td>
   </tr>
@@ -467,9 +467,9 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 
 ### Requisitos para PDF Generator
 
-- Para probar las conversiones de PDF en el servidor SUSE® Linux®, asegúrese de tener las siguientes configuraciones:
+- Para probar las conversiones de PDF en el servidor SUSE® Linux® (SLES 15 SP6 o posterior), asegúrese de que tiene las siguientes configuraciones:
    - Vaya al archivo `/etc/profile` y establezca la variable de entorno `OpenOffice_PATH` en `/opt/openoffice4` para configurarla globalmente.
-   - Instale la versión de 32 bits de OpenOffice en el sistema operativo Linux®
+   - Instale la versión de 32 bits de OpenOffice.
 
 ### Soporte de software para el generador de PDF {#software-support-for-pdf-generator}
 
@@ -508,6 +508,7 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 >
 >Además,:
 >
+>- PDF Generator requiere una versión de 32 bits de [Acrobat 2020 classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) para realizar la conversión.
 >- PDF Generator solo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
 >- La instalación de Microsoft® Office Professional Plus puede utilizar licencias por volumen basadas en Retail o MAK/KMS/AD.
 >- Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.

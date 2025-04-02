@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 61f658fc4390610686a308d02a8d74505252434a
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3632'
 ht-degree: 12%
 
 ---
@@ -452,9 +452,9 @@ Para Windows x86:
 
 ### Requisitos para AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-* Para probar las conversiones de PDF en el servidor SUSE® Linux®, asegúrese de tener las siguientes configuraciones:
+* Para probar las conversiones de PDF en el servidor SUSE® Linux® (SLES 15 SP6 o posterior), asegúrese de que tiene las siguientes configuraciones:
    * Vaya al archivo `/etc/profile` y establezca la variable de entorno `OpenOffice_PATH` en `/opt/openoffice4` para configurarla globalmente.
-   * Instale la versión de 32 bits de OpenOffice en el sistema operativo Linux®
+   * Instale la versión de 32 bits de OpenOffice.
 
 ### Soporte de software para el generador de PDF {#software-support-for-pdf-generator}
 
@@ -517,7 +517,7 @@ Para Windows x86:
 >
 >Además,
 >
->* PDF Generator requiere una versión de 32 bits de [Acrobat 2020 classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versión 17.011.30078 para realizar la conversión.
+>* PDF Generator requiere una versión de 32 bits de [Acrobat 2020 classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) para realizar la conversión.
 >* PDF Generator solo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
 >* La instalación de Microsoft® Office Professional Plus puede utilizar licencias por volumen basadas en Retail o MAK/KMS/AD.
 >* Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
