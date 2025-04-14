@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: c0756980d0dc8ada7f6c352f68c4f41ecf15caa4
+source-git-commit: 47dc4ffa98d680970b72d488067c834123ea722b
 workflow-type: tm+mt
-source-wordcount: '7480'
+source-wordcount: '7487'
 ht-degree: 67%
 
 ---
@@ -136,7 +136,7 @@ ht-degree: 67%
          + [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md)
          + [Uso de flujos de trabajo de proyecto](/help/sites-authoring/projects-with-workflows.md)
       + Rendimiento de página {#page-performance}
-         + [Perspectiva de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
+         + [Insight de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
          + [Análisis del rendimiento de la página](/help/sites-authoring/ci-analyze.md)
          + [Visualización de datos de análisis de la página](/help/sites-authoring/pa-using.md)
       + Personalización {#personalization}
@@ -1212,6 +1212,7 @@ ht-degree: 67%
       + [Cómo reiniciar correctamente AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [El servicio PaperCapture no puede realizar OCR en archivos PDF](/help/forms/using/papercapture-service-resolution.md)
       + [Mitigación de vulnerabilidades de Spring Framework para AEM Forms en JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
+      + [Mitigación de vulnerabilidades de Log4j2 para Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
    + Documentación heredada {#legacy-documentation}
       + [Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](/help/forms/developing/building-xml.md)
       + [Comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
