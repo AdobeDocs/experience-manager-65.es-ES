@@ -6,10 +6,10 @@ role: Admin, User, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: cf3247e437af7447fd6a6121c6a4e2ef750d06b7
+source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
 workflow-type: tm+mt
-source-wordcount: '5660'
-ht-degree: 84%
+source-wordcount: '5724'
+ht-degree: 83%
 
 ---
 
@@ -79,8 +79,8 @@ Antes de empezar a instalar y configurar AEM Forms Document Services, asegúr
 
 >[!NOTE]
 >
->* En Microsoft® Windows, PDF Generator admite las rutas de conversión WebKit, Acrobat WebCapture y WebToPDF para convertir archivos de HTML en documentos de PDF.
->* En sistemas operativos basados en UNIX, PDF Generator admite las rutas de conversión WebKit y WebToPDF para convertir archivos de HTML en documentos de PDF.
+>* En Microsoft® Windows, PDF Generator admite WebKit, Acrobat WebCapture y WebToPDF Conversión rutas para convertir archivos HTML a PDF documentos.
+>* En sistemas operativos basados en UNIX, PDF Generator admite WebKit y WebToPDF Conversión rutas para convertir archivos HTML a PDF documentos.
 >
 
 ### Requisitos adicionales para sistemas operativos basados en UNIX {#extrarequirements}
@@ -169,7 +169,7 @@ Si utiliza un sistema operativo basado en UNIX, instale los siguientes paquetes 
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(solo PDF Generator)** El servicio PDF Generator admite las rutas WebKit y WebToPDF para convertir archivos de HTML en documentos de PDF. Para habilitar la conversión para la ruta WebToPDF, instale las bibliotecas de 64 bits que se enumeran a continuación. Por lo general, estas bibliotecas ya están instaladas. Si falta alguna biblioteca, instálela manualmente:
+* **(Solo generador de PDF)** El servicio PDF Generator admite rutas WebKit y WebToPDF para convertir archivos HTML a documentos PDF. Para habilitar la conversión para la ruta WebToPDF, instale las bibliotecas de 64 bits que se enumeran a continuación. Por lo general, estas bibliotecas ya están instaladas. Si falta alguna biblioteca, instálela manualmente:
 
    * linux-gate.so.1
    * libz.so.1
@@ -232,7 +232,7 @@ Establezca variables de entorno para el kit de desarrollo de Java de 64 bits, la
   <tr>
    <td><p><strong>OpenOffice</strong></p> </td>
    <td><p>OpenOffice_PATH</p> </td>
-   <td><p>C:\Program Files (x86)\OpenOffice.org4</p> </td>
+   <td><p>C:\Program Archivos (x86)\OpenOffice 4</p> </td>
   </tr>
  </tbody>
 </table>
@@ -244,9 +244,12 @@ Establezca variables de entorno para el kit de desarrollo de Java de 64 bits, la
 >* La variable de entorno OpenOffice_PATH se establece en la carpeta de instalación en lugar de en la ruta del ejecutable.
 >* No configure variables de entorno para las aplicaciones de Microsoft® Office, como Word, PowerPoint, Excel y Project, ni para AutoCAD. Si estas aplicaciones están instaladas en el servidor, el servicio Generate PDF las inicia automáticamente.
 >* En plataformas basadas en UNIX, instale OpenOffice como /root. Si OpenOffice no está instalado como raíz, el servicio PDF Generator no convierte los documentos de OpenOffice en documentos PDF. Si necesita instalar y ejecutar OpenOffice como un usuario no raíz, proporcione derechos sudo al usuario no raíz.
->* Si está utilizando OpenOffice en una plataforma basada en UNIX, ejecute el siguiente comando para configurar la variable de ruta:
->
->  `export OpenOffice_PATH=/opt/openoffice.org4`
+>* Si está utilizando OpenOffice en una plataforma basada en UNIX, ejecute el siguiente comando para configurar la variable de ruta:\
+> `export OpenOffice_PATH=/opt/openoffice.org4`
+>* En plataformas basadas en SUSE® Linux® (SLES 15 SP6 o posterior), seguir los siguientes pasos para configurar OpenOffice:
+>     * Instale la última variante de 32 bits disponible de `OpenOffice 4.1.x` en un directorio como `/opt/openoffice4`.
+>     * Configure el `OpenOffice_PATH` variable de entorno para que apunte a esta ubicación. Por ejemplo: `OpenOffice_PATH=/opt/openoffice4`.
+>     * Asegúrese de que la variable `OpenOffice_PATH` esté configurada globalmente (por ejemplo, usando `/etc/profile` o el equivalente específico del sistema) de modo que esté disponible para todos los usuarios al iniciar sesión.
 
 ### (Solo para IBM® WebSphere®) Configure el proveedor de sockets SSL de IBM® {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -301,7 +304,7 @@ La cuenta de usuario utilizada para iniciar el servidor de aplicaciones requiere
 
 >[!NOTE]
 >
-> AEM Como se ha insinuado anteriormente, si el servidor de se ejecuta como un servicio en la cuenta LocalSystem (LSA), no es necesario asignar explícitamente este privilegio a un usuario.
+> Como se ha insinuado anteriormente, si el servidor de AEM se ejecuta como un servicio en la cuenta LocalSystem (LSA), no es necesario asignar explícitamente este privilegio a un usuario.
 
 ### (Solo Windows) Habilite el servicio PDF Generator para usuarios que no sean administradores {#enable-the-pdf-generator-service-for-non-administrators}
 
@@ -345,7 +348,7 @@ El servicio PDF Generator proporciona rutas o métodos WebKit, WebCapture y WebT
 
 ### (Solo plataformas basadas en UNIX) Configuraciones adicionales para la conversión de HTML a PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
-En plataformas basadas en UNIX, el servicio PDF Generator admite las rutas WebKit y WebToPDF para convertir archivos de HTML en documentos de PDF. Para habilitar la conversión de HTML a PDF, realice las siguientes configuraciones, según la ruta de conversión que prefiera:
+En plataformas basadas en UNIX, el servicio PDF Generator admite las rutas WebKit y WebToPDF para convertir archivos HTML en documentos PDF. Para habilitar la conversión de HTML a PDF, realice las siguientes configuraciones, según la ruta de conversión que prefiera:
 
 ### (Solo plataformas basadas en UNIX) Habilitar la compatibilidad con fuentes Unicode (solo WebKit) {#enable-support-for-unicode-fonts-webkit-only}
 
@@ -374,7 +377,7 @@ Copie la fuente Unicode en cualquiera de los siguientes directorios según corre
 El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene AEM Forms Document Services y otras capacidades de AEM Forms. Realice los siguientes pasos para instalar el paquete:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
+1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponibles en el menú de encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
@@ -476,7 +479,7 @@ En Microsoft® Windows, el servicio PDF Generator utiliza Adobe Acrobat para 
    1. Descomprima el archivo .zip descargado. Abra el Símbolo del sistema con privilegios administrativos.
    1. Vaya a `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
    1. Descomprima `adobe-aemfd-pdfg-common-pkg-[version]`.
-   1. Vaya al directorio `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Ejecute el siguiente archivo por lotes:
+   1. Desplácese hasta el `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directorio. Ejecute el siguiente archivo por lotes:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -486,7 +489,7 @@ En Microsoft® Windows, el servicio PDF Generator utiliza Adobe Acrobat para 
 
 ### (Solo Windows) Configure la ruta principal para la conversión de HTML a PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-El servicio PDF Generator proporciona varias rutas para convertir archivos de HTML en documentos de PDF: Webkit, Acrobat WebCapture (solo Windows) y WebToPDF. Adobe recomienda utilizar el enrutamiento WebToPDF porque tiene la capacidad de gestionar contenido dinámico, no depende de bibliotecas de 32 bits ni requiere fuentes adicionales. Además, la ruta WebToPDF no requiere acceso raíz o sudo para ejecutar la conversión.
+El servicio PDF Generator proporciona varias rutas para convertir archivos de HTML en documentos de PDF: Webkit, Acrobat WebCapture (solo Windows) y WebToPDF. Adobe recomienda utilizar la ruta WebToPDF porque tiene la capacidad de gestionar contenido dinámico, no depende de bibliotecas de 32 bits ni requiere fuentes adicionales. Además, la ruta WebToPDF no requiere acceso raíz o sudo para ejecutar la conversión.
 
 La ruta principal predeterminada para la conversión de HTML a PDF es Webkit. Para cambiar la ruta de conversión:
 
@@ -500,7 +503,7 @@ Con la administración de almacén de confianza, puede importar, editar y elimin
 
 1. Inicie sesión en la instancia de AEM Forms como administrador.
 1. Vaya a **[!UICONTROL Herramientas]** >  **[!UICONTROL Seguridad]** >  **[!UICONTROL Almacén de confianza]**.
-1. Haga clic en **[!UICONTROL Crear almacén de confianza]**. Establezca la contraseña y seleccione **[!UICONTROL Guardar]**.
+1. Haga clic en **[!UICONTROL Crear almacén de confianza]**. Establezca contraseña y seleccione **[!UICONTROL Guardar]**.
 
 ### Configuración de certificados para los servicios Encryption y Extensiones de Reader {#set-up-certificates-for-reader-extension-and-encryption-service}
 
@@ -568,11 +571,11 @@ El servicio Assembler depende del servicio Extensiones de Reader, del servicio S
 
 ### (Solo Windows) Configure la entrada del Registro para Microsoft® Project {#configure-registry-entry-for-microsoft-project}
 
-Después de instalar el complemento de AEM Forms y el proyecto Microsoft® en el equipo, registre una entrada para Microsoft® Project en la ubicación de 64 bits. Facilita la ejecución de pruebas de conversión de Project a PDFG. A continuación se indican los pasos que describen el proceso de entrada del Registro:
+Después de instalar AEM Forms complemento y Microsoft® Project en el equipo, registre una entrada para Microsoft® Project en la ubicación de 64 bits. Facilita la ejecución de pruebas de conversión de proyecto a PDFG. Los siguientes son los pasos que describen el proceso para la entrada en el registro:
 
-1. Abra el Editor del Registro de Microsoft® Windows (regedit), Para abrir el Editor del Registro, vaya a Inicio > Ejecutar, escriba regedit y haga clic en Aceptar.
-1. Vaya a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, cree un nuevo registro de **valor binario** y cambie su nombre a **Proyecto**.
-1. Modifique el valor de datos del Registro binario creado a 01 y haga clic en Aceptar.
+1. Abra Microsoft® Windows Registry editor (regedit), Para abrir el editor del registro, vaya a Inicio > Ejecutar, escriba regedit y haga clic en OK.
+1. Vaya a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, cree un nuevo **binario Valor** Registro y cámbiele el nombre a **Proyecto**.
+1. Modifique el valor de datos del registro de binario creado a 01 y haga clic en OK.
 1. Cierre la entrada del Registro.
 
 
@@ -596,7 +599,7 @@ Después de instalar el complemento de AEM Forms y el proyecto Microsoft® en el
 
 ## Herramienta de preparación del sistema (SRT) {#SRT}
 
-La [Herramienta de preparación del sistema](#srt-configuration) comprueba si el equipo está configurado correctamente para ejecutar las conversiones del PDF Generator. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
+La [Herramienta de preparación del sistema](#srt-configuration) comprueba si el equipo está configurado correctamente para ejecutar las conversiones de PDF Generator. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
 
 1. Abra el símbolo del sistema. Navegue hasta la carpeta `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`.
 
@@ -612,7 +615,7 @@ La [Herramienta de preparación del sistema](#srt-configuration) comprueba si el
 
 1. Navegue hasta `[Path_of_reports_folder]`. Abra el archivo SystemReadinessTool.html. Compruebe el informe y corrija los problemas mencionados.
 
-### Configuración de las opciones de la herramienta SRT {#srt-configuration}
+### Configuración de opciones para SRT herramienta {#srt-configuration}
 
 Puede utilizar el archivo srt_config.yaml para configurar varias opciones de la herramienta SRT. El formato del archivo es el siguiente:
 
@@ -643,7 +646,7 @@ Puede utilizar el archivo srt_config.yaml para configurar varias opciones de la 
 
 * **Configuración regional:** Es un parámetro obligatorio. Admite inglés(en), alemán (de), francés (fr) y japonés(ja). El valor predeterminado es en. No afecta a los servicios de PDF Generator que se ejecutan en AEM Forms en OSGi.
 * **aemTempDir:** Es un parámetro opcional. Especifica la ubicación de almacenamiento temporal de Adobe Experience Manager.
-* **usuarios:** Es un parámetro opcional. Puede especificar un usuario para comprobar si el usuario tiene los permisos necesarios y acceso de lectura y escritura en los directorios necesarios para ejecutar PDF Generator. Si no se especifica ningún usuario, las comprobaciones específicas del usuario se omiten y se muestran como erróneas en el informe.
+* **usuarios:** Es un parámetro opcional. Puede especificar un usuario para comprobar si tiene los permisos necesarios y acceso de lectura y escritura en los directorios necesarios para ejecutar PDF Generator. Si no se especifica ningún usuario, las comprobaciones específicas del usuario se omiten y se muestran como erróneas en el informe.
 * **outputDir:** Especifique la ubicación para guardar el informe SRT. La ubicación predeterminada es el directorio de trabajo actual de la herramienta SRT.
 
 ## Solución de problemas
@@ -683,7 +686,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 * Instale la [versión compatible](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de OpenOffice. AEM Forms admite versiones de 32 y 64 bits. Después de la instalación, abra todas las aplicaciones de OpenOffice, cancele todas las ventanas de diálogo y cierre las aplicaciones. Vuelva a abrir las aplicaciones y asegúrese de que no aparece ningún cuadro de diálogo al abrir una aplicación de OpenOffice.
 
-* Cree una variable de entorno `OpenOffice_PATH` y configúrela para que apunte a que la instalación de OpenOffice está establecida en la [consola](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o en el perfil dt (árbol de dispositivos).
+* Crear un variable de entorno `OpenOffice_PATH` y configúrelo para que apunte a la instalación de OpenOffice se configura en la [consola](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o en el perfil dt (árbol de dispositivos).
 * Si hay problemas al instalar OpenOffice, asegúrese de que las [bibliotecas de 32 bits](#extrarequirements) requeridas para la instalación de OpenOffice están disponibles.
 
 +++
@@ -692,7 +695,7 @@ Problemas de conversión de ++HTML a PDF
 
 * Asegúrese de que los directorios de fuentes se agregan en la interfaz de usuario de la configuración de PDF Generator.
 
-**Linux y Solaris (ruta de conversión WebToPDF)**
+**Linux y Solaris (ruta WebToPDF Conversión)**
 
 * Asegúrese de que la biblioteca de 32 bits esté disponible (libicudata.so.42) para la conversión HTMLoPDF basada en Webkit y que las bibliotecas de 64 bits (libicudata.so.42) estén disponibles para la conversión HTMLoPDF basada en WebToPDF.
 
@@ -810,11 +813,11 @@ Para resolver el problema, consulte [No se puede convertir el archivo de Word o 
 
 +++
 
-+++ No se pueden convertir los archivos de Excel al PDF en Windows Server 2019
++++ No se pueden convertir archivos de Excel a PDF en Windows Server 2019
 
 Al convertir Microsoft Excel 2019 a PDF en Microsoft Windows Server 2019, debe asegurarse de lo siguiente:
 
-* Al utilizar el servicio de PDF Generator AEM, el equipo Windows no debe tener ninguna conexión remota activa con el servidor de (sesión RDP de Windows).
+* Al utilizar el servicio PDF Generator, el equipo Windows no debe tener ninguna conexión remota activa con el servidor de AEM (sesión RDP de Windows).
 * La impresora predeterminada debe establecerse en Adobe PDF.
 
   >[!NOTE]
@@ -822,7 +825,7 @@ Al convertir Microsoft Excel 2019 a PDF en Microsoft Windows Server 2019, debe a
 
 +++
 
-+++ No se pueden convertir los archivos XPS en PDF
++++ No se pueden convertir archivos XPS a PDF
 
 Para resolver el problema, [cree una clave de registro específica de la característica en Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
