@@ -5,10 +5,10 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 63%
+source-wordcount: '1567'
+ht-degree: 61%
 
 ---
 
@@ -21,6 +21,13 @@ Al generar una versión, se crea una “instantánea” de una página en un mom
    * para deshacer un cambio realizado en la página.
 * Comparar la versión actual de una página con una versión anterior:
    * para resaltar diferencias en el texto y las imágenes.
+
+>[!NOTE]
+>
+>En el repositorio de AEM solo se crea una versión del contenido. Los recursos dinámicos, como código, CSS y JavaScript, no tienen versiones.
+>
+>* Cuando se visualizan versiones, el contenido se visualiza con el código, CSS y JavaScript actuales del repositorio.
+>* Al restaurar versiones, solo se restaura el contenido y se le aplican el código, CSS y JavaScript actuales del repositorio.
 
 ## Creación de una nueva versión   {#creating-a-new-version}
 
@@ -196,7 +203,7 @@ Deformación de tiempo es una función diseñada para simular el estado *publica
 
 >[!TIP]
 >
->AEM [Deformación de tiempo también se puede usar con Lanzamientos para obtener una vista previa del futuro](/help/sites-authoring/launches.md) cuando se ejecute la versión 6.5.10.0 o posterior de la aplicación.
+>[Deformación de tiempo también se puede usar con Lanzamientos para obtener una vista previa del futuro](/help/sites-authoring/launches.md) al ejecutar AEM 6.5.10.0 o posterior.
 
 La creación de contenido es un proceso continuo y colaborativo. El propósito de Deformación de tiempo es permitir que los autores rastreen el sitio web publicado con el paso del tiempo, para ayudarles a comprender cómo ha cambiado el contenido. Esta función utiliza las versiones de página para determinar el estado del entorno de publicación:
 
@@ -223,7 +230,7 @@ Deformación de tiempo es un [modo](/help/sites-authoring/author-environment-too
 
 ### Limitaciones de Deformación de tiempo {#timewarp-limitations}
 
-Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en un punto temporal seleccionado. AEM Sin embargo, debido a las complejidades de la creación continua de contenido en el espacio de trabajo, esto no siempre es posible. Estas limitaciones deben tenerse en cuenta al utilizar Deformación de tiempo.
+Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en un punto temporal seleccionado. Sin embargo, debido a la complejidad de la creación continua de contenido en AEM, esto no siempre es posible. Estas limitaciones deben tenerse en cuenta al utilizar Deformación de tiempo.
 
 * **Deformación de tiempo funciona dependiendo de las páginas publicadas**: deformación de tiempo solo funciona a la perfección si ya ha publicado la página. Si no es así, Deformación de tiempo muestra la página actual en el entorno de creación.
 * **Deformación de tiempo emplea las versiones de página**: si se desplaza a una página que se ha eliminado del repositorio, se procesa correctamente si aún hay versiones antiguas de la página en el repositorio.
