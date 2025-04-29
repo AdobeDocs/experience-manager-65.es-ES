@@ -1,27 +1,28 @@
 ---
-title: Artículo de solución de problemas para resolver el problema cuando el servicio PaperCapture no realiza operaciones de reconocimiento óptico de caracteres en los PDF.
-description: Conozca los pasos para resolver el problema en el que el servicio PaperCapture no realiza operaciones de OCR (reconocimiento óptico de caracteres) en los PDF.
+title: Artículo de solución de problemas para resolver el problema cuando el servicio PaperCapture no realiza operaciones de OCR (reconocimiento óptico de caracteres) en archivos PDF.
+description: Conozca los pasos para resolver el problema en el que el servicio PaperCapture no realiza operaciones de OCR (reconocimiento óptico de caracteres) en archivos PDF.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 64e120ee-5f16-4cd3-9ae9-95b165169e47
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: e030a71a0f52e22a803597122369cb111774f49b
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 19%
 
 ---
 
 
-# El servicio PaperCapture no puede realizar la operación de OCR en los PDF
+# El servicio PaperCapture no puede realizar la operación de OCR en archivos PDF
 
 ## Problema
 
-Después de actualizar a AEM Forms Service Pack 6.5.21.0, el servicio `PaperCapture` no puede realizar operaciones de reconocimiento óptico de caracteres (OCR) en los PDF. El servicio no genera resultados en forma de PDF o archivo de registro.
+Después de actualizar a AEM Forms Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0, el servicio `PaperCapture` no puede realizar operaciones de OCR (reconocimiento óptico de caracteres) en archivos PDF. El servicio no genera resultados en forma de PDF o de archivo de registro.
 
-## Se aplica a lo siguiente:
+## Se aplica a
 
 Esta solución se aplica a:
+
 * AEM Forms en todos los servidores JEE de (JBoss, Weblogic, Websphere)
 * AEM Forms en servidores OSGi
 
@@ -38,9 +39,9 @@ Esta solución se aplica a:
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **Configuración de OSGi**:\
      `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
-1. AEM Detenga el servidor de aplicaciones de.
+1. Detenga el servidor de aplicaciones de AEM.
 1. Reemplace el contenido existente de la carpeta `PaperCaptureSvc` con el contenido copiado.
-1. AEM Reinicie el servidor de la aplicación de la.
+1. Reinicie el servidor de aplicaciones de AEM.
 
    >[!NOTE]
    >
