@@ -1,20 +1,20 @@
 ---
 title: Modelos de fragmento de contenido
-description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en la creación de fragmentos de contenido y cómo crear fragmentos de contenido con contenido estructurado.
+description: Descubra cómo los modelos de fragmentos de contenido sirven de base para el contenido sin encabezado en AEM y cómo crear fragmentos de contenido con contenido estructurado.
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c361d62beb93fc546f3ef2e53f52ff50bdcdc530
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 65%
+source-wordcount: '2343'
+ht-degree: 64%
 
 ---
 
 # Modelos de fragmento de contenido {#content-fragment-models}
 
-AEM Los modelos de fragmentos de contenido de la definición de la estructura de contenido de los [fragmentos de contenido,](/help/assets/content-fragments/content-fragments.md) que sirven de base para el contenido sin encabezado, se definen en la.
+Los modelos de fragmentos de contenido de AEM definen la estructura del contenido de sus [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md), que sirven como base del contenido sin encabezado.
 
 Para utilizar modelos de fragmentos de contenido, puede:
 
@@ -105,6 +105,13 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Añada uno o más campos de una sola línea de texto; se puede definir la longitud máxima
 * **Texto multilínea**
    * Un área de texto que puede ser Texto enriquecido, Texto sin formato o Markdown
+
+     >[!NOTE]
+     >
+     Por motivos de rendimiento, no se recomienda tener más de diez campos de texto enriquecido en un modelo.
+     >
+     Si es necesario, se recomienda usar [fragmentos de contenido anidados](#fragment-reference-nested-fragments) para propagar la carga.
+
 * **Número**
    * Adición de uno o más campos numéricos
 * **Booleana**
@@ -125,7 +132,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
       * Crear un nuevo fragmento de contenido basado en el modelo apropiado
 * **Objeto JSON**
    * Permite al autor del fragmento de contenido introducir la sintaxis JSON en los elementos correspondientes de un fragmento.
-      * AEM Para permitir que los usuarios almacenen el archivo JSON directo que han copiado y pegado desde otro servicio, haga lo siguiente:
+      * Para permitir que AEM almacene el JSON directo que ha copiado y pegado desde otro servicio.
       * El JSON se pasará y se emitirá como JSON en GraphQL.
       * Incluye resaltado de sintaxis JSON, autocompletado y resaltado de errores en el editor de fragmentos de contenido.
 * **Marcador de posición de pestaña**
