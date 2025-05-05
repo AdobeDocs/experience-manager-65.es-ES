@@ -92,7 +92,7 @@ En la ficha **Configuración**, especifique si desea permitir que se apliquen et
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
-  Solo es relevante si está marcada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 **&#x200B; **(2 Mb).
+  Solo es relevante si está marcada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 **&#x200B; &#x200B;**(2 Mb).
 
 * **Tipos de imagen de portada permitidos**
 
