@@ -106,7 +106,7 @@ AEM AEM Si proporciona solamente una página **Title** al crear una página, der
 | Título | Nombre derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc---c-.html |
+| SC%&amp;&ast;ç+ | sc---c-.html |
 
 #### Nombre {#name}
 

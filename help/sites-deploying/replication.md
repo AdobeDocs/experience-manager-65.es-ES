@@ -64,7 +64,7 @@ AEM [Communities](/help/communities/overview.md) nunca usa la replicación para 
 
 AEM El sitio web de venta minorista web que se incluye en una instalación estándar de la distribución de datos se puede utilizar para ilustrar la replicación.
 
-AEM Para seguir este ejemplo y utilizar los agentes de replicación predeterminados, [instale el elemento de replicación de la aplicación {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-deploying/deploy.md)
+AEM Para seguir este ejemplo y utilizar los agentes de replicación predeterminados, [instale el elemento de replicación de la aplicación &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-deploying/deploy.md)
 
 * el entorno de creación en el puerto `4502`
 * el entorno de Publish en el puerto `4503`
@@ -433,6 +433,7 @@ Para configurar la replicación de contenido para una instancia de Publish adici
    * En la ficha **Transporte**:
 
       * Introduzca el URI requerido para la nueva instancia de Publish; por ejemplo,
+
         `https://localhost:4504/bin/receive`.
 
       * Introduzca la cuenta de usuario específica de la dirección que se utiliza para la replicación.
@@ -476,6 +477,7 @@ Los agentes predeterminados se incluyen en la instalación. Sin embargo, todaví
    * En la ficha **Transporte**:
 
       * Introduzca el URI requerido para la nueva instancia de Publish; por ejemplo,
+
         `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Introduzca la cuenta de usuario específica de la dirección que se utiliza para la replicación.

@@ -253,7 +253,7 @@ Información de diario de revisión.
 
 >[!NOTE]
 >
->Los registros de acceso de ImageServer y s7 no se incluyen en el paquete **Descargar ** completo&quot; generado desde la página **system/console/status-Bundlelist **. Para fines de soporte, si tiene [!DNL Dynamic Media] problemas, anexe los registros de acceso de ImageServer y s7 cuando se ponga en contacto con Atención al cliente.
+>Los registros de acceso de ImageServer y s7 no se incluyen en el paquete **Descargar &#x200B;** completo&quot; generado desde la página **system/console/status-Bundlelist &#x200B;**. Para fines de soporte, si tiene [!DNL Dynamic Media] problemas, anexe los registros de acceso de ImageServer y s7 cuando se ponga en contacto con Atención al cliente.
 
 ### Activación del nivel de registro de depuración {#activating-the-debug-log-level}
 
@@ -1140,7 +1140,7 @@ Si el sistema se está quedando sin espacio en disco o nota que se ha golpeado e
    * [Filtrar de depuración de CQ Gestión de contenidos web](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Registradores](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Si ha configurado Versión purga de y cómo lo ha hecho [](/help/sites-deploying/version-purging.md)
+* Si ha configurado Versión purga de y cómo lo ha hecho [&#128279;](/help/sites-deploying/version-purging.md)
 * Base de conocimiento:
 
    * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)

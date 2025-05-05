@@ -32,7 +32,7 @@ Por ejemplo, supongamos lo siguiente:
 
 ## Información general {#overview}
 
-Esta sección analiza específicamente cómo funciona el servicio de traducción con UGC. AEM También supone que tiene conocimientos sobre cómo conectar a un proveedor de servicios de traducción [e integrar ese servicio en un sitio web mediante la configuración de un [marco de trabajo de integración de traducciones](../../help/sites-administering/tc-tic.md).](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider)
+Esta sección analiza específicamente cómo funciona el servicio de traducción con UGC. AEM También supone que tiene conocimientos sobre cómo conectar a un proveedor de servicios de traducción [&#128279;](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider)e integrar ese servicio en un sitio web mediante la configuración de un [marco de trabajo de integración de traducciones](../../help/sites-administering/tc-tic.md).
 
 Cuando un proveedor de servicios de traducción está asociado con el sitio, cada copia de idioma del sitio mantiene sus propios hilos de UGC publicados a través de componentes de SCF como comentarios.
 

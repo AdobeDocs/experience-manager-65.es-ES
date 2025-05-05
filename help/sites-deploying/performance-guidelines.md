@@ -320,7 +320,7 @@ Para obtener más información sobre las opciones de configuración disponibles,
 >
 >AEM Para obtener recomendaciones sobre cómo implementar en Azure o AWS, fuera de Adobe Managed Services, Adobe recomienda trabajar directamente con el proveedor de la nube. O bien, trabaje con uno de los socios de Adobe AEM que admita la implementación de las soluciones de en el entorno de nube que prefiera. El proveedor o socio de nube seleccionado es responsable de las especificaciones de tamaño, el diseño y la implementación de la arquitectura que admiten para satisfacer los requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
 >
->>Consulte también la página [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms).
+>&#x200B;>Consulte también la página [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
 ### Búsqueda {#search-features}
 

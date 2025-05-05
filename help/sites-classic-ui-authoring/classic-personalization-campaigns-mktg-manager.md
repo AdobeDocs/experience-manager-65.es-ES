@@ -53,11 +53,11 @@ En este panel se enumeran las experiencias de campaña, como [boletines](/help/s
 
 * **[Posibles clientes](#leads)**
 Aquí puede administrar sus posibles clientes. Puede crear o importar posibles clientes, editar detalles específicos para posibles clientes o eliminarlos cuando ya no los necesite. También puede colocar posibles clientes en diferentes grupos, denominados Listas. **Nota:** el Adobe no planea mejorar más esta capacidad.
-Se recomienda usar [Adobe Campaign AEM y la integración con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
+Se recomienda usar [Adobe Campaign AEM y la integración con &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
 
 * **[Listas](#lists)**
 Aquí puede administrar sus listas (de posibles clientes).**Nota:** el Adobe no planea mejorar más esta capacidad.
-Se recomienda usar [Adobe Campaign AEM y la integración con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
+Se recomienda usar [Adobe Campaign AEM y la integración con &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
 
 * **[Campañas](#campaigns)**
 Aquí puede administrar sus marcas, campañas y experiencias.
@@ -73,7 +73,7 @@ El tablero muestra cuatro paneles que le proporcionan una visión general de sus
 >[!NOTE]
 >
 >El Adobe no tiene previsto seguir mejorando esta capacidad (gestión de posibles clientes).
->Se recomienda usar [Adobe Campaign AEM y la integración con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
+>Se recomienda usar [Adobe Campaign AEM y la integración con &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
 
 AEM En MCM, puede organizar y agregar posibles clientes introduciéndolos manualmente o importando una lista separada por comas; por ejemplo, una lista de correo. Otras formas de generar posibles clientes son las suscripciones a boletines informativos o las suscripciones a la comunidad (si se configuran, pueden almacenar en déclencheur un flujo de trabajo que rellena los posibles clientes). Los posibles clientes suelen clasificarse y colocarse en una lista para que posteriormente pueda realizar acciones en toda la lista; por ejemplo, enviar un correo electrónico personalizado a una lista determinada.
 
@@ -90,7 +90,7 @@ En **Posibles clientes**, en el panel izquierdo, puede crear, importar, editar y
 >[!NOTE]
 >
 >El Adobe no tiene previsto mejorar esta capacidad (administración de listas).
->Se recomienda usar [Adobe Campaign AEM y la integración con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
+>Se recomienda usar [Adobe Campaign AEM y la integración con &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
 
 Las listas permiten organizar los posibles clientes en grupos. Con las listas, puede dirigir sus campañas de marketing a un grupo selecto de personas; por ejemplo, puede enviar una newsletter segmentada a una lista.
 

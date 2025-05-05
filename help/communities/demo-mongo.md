@@ -70,7 +70,7 @@ Se inicia un servidor MongoDB mediante el 27017 de puerto predeterminado.
 
 >[!NOTE]
 >
->AEM AEM Si MongoDB se inicia *después de*, **reinicia** todas las instancias de **** para que se conecten correctamente a MongoDB.
+>AEM AEM Si MongoDB se inicia *después de*, **reinicia** todas las instancias de **&#x200B;**&#x200B;para que se conecten correctamente a MongoDB.
 
 ### Opción de producción de demostración: Configurar conjunto de réplicas de MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
@@ -130,7 +130,7 @@ Este proceso inicia un servidor HTTP Solr utilizando el puerto predeterminado 89
 >
 >Si la consola Solr no está disponible, compruebe los registros en &lt;solrinstall>/example/logs. Compruebe si SOLR está intentando enlazar con un nombre de host específico que no se pueda resolver (por ejemplo, &quot;user-macbook-pro&quot;).
 >
-Si es así, actualice el archivo `etc/hosts` con una nueva entrada para este nombre de host (por ejemplo, 127.0.0.1 user-macbook-pro) para iniciar Solr correctamente.
+>Si es así, actualice el archivo `etc/hosts` con una nueva entrada para este nombre de host (por ejemplo, 127.0.0.1 user-macbook-pro) para iniciar Solr correctamente.
 
 ### Solr Cloud {#solrcloud}
 

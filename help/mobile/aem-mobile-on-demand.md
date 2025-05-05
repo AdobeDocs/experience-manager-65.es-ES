@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Antes de trabajar con AEM Mobile AEM y de seguir los pasos de esta guía de introducción, los usuarios deben estar familiarizados con [](/help/sites-deploying/deploy.md).
+>Antes de trabajar con AEM Mobile AEM y de seguir los pasos de esta guía de introducción, los usuarios deben estar familiarizados con [&#128279;](/help/sites-deploying/deploy.md).
 >
 >Para configurar su entorno para AEM Mobile On-demand Services, consulte [Panel de aplicaciones de AEM Mobile o el Centro de control](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 

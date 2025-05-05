@@ -346,7 +346,7 @@ Los siguientes pasos son los mismos para Facebook y Twitter:
 
 ### Consola de AEM Communities Sites {#aem-communities-sites-console}
 
-Una vez configurado un servicio en la nube, puede habilitarse para la configuración de inicio de sesión social correspondiente en un sitio de la comunidad mediante el subpanel [Administración de usuarios](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) Configuración durante la creación del sitio de la comunidad [o [administración](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation)
+Una vez configurado un servicio en la nube, puede habilitarse para la configuración de inicio de sesión social correspondiente en un sitio de la comunidad mediante el subpanel [Administración de usuarios](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) Configuración durante la creación del sitio de la comunidad [&#128279;](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation)o [administración](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
 1. Elija el contexto de configuración del sitio en el que guardó las configuraciones de inicio de sesión social.
 
@@ -474,17 +474,17 @@ En una instancia de autor, ha iniciado sesión con privilegios administrativos:
 1. Modifique las propiedades del nodo ntBaseLucene-oauth:
 
    * **[!UICONTROL rutaDeAccesoDeÍndice]**: `/oak:index/ntBaseLucene-oauth`
-   * **[!UICONTROL nombre]**: `oauthid-123****`
+   * **[!UICONTROL nombre]**: `oauthid-123&#x200B;**&#x200B;**`
    * **[!UICONTROL reindex]**: `true`
    * **[!UICONTROL reindexCount]**: `1`
 
 1. En el nodo /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
    * Elimine todos los nodos secundarios, excepto cqTags.
-   * Cambiar nombre de cqTags a `oauthid-123****`
-   * Modifique las propiedades del nodo `oauthid-123****`
+   * Cambiar nombre de cqTags a `oauthid-123**&#x200B;**`
+   * Modifique las propiedades del nodo `oauthid-123**&#x200B;**`
 
-      * **[!UICONTROL nombre]**: `oauthid-123****`
+      * **[!UICONTROL nombre]**: `oauthid-123&#x200B;**&#x200B;**`
 
    * Seleccione **[!UICONTROL Guardar todo]**.
 

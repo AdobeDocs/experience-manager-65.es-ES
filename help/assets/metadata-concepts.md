@@ -71,7 +71,7 @@ Existen varias formas de incrustar metadatos en los archivos. Se admite una sele
 
 ### XMP {#xmp}
 
-XMP [!DNL Extensible Metadata Platform] () es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece codificación de metadatos universal que puede incrustarse en todos los formatos de archivo. Adobe XMP y otras empresas admiten el estándar, ya que proporciona un modelo de contenido enriquecido. XMP Los usuarios de la norma de y de [!DNL Experience Manager Assets] tienen una plataforma potente sobre la cual pueden generar contenido. XMP Para obtener más información, consulte [](https://www.adobe.com/products/xmp.html).
+XMP [!DNL Extensible Metadata Platform] () es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece codificación de metadatos universal que puede incrustarse en todos los formatos de archivo. Adobe XMP y otras empresas admiten el estándar, ya que proporciona un modelo de contenido enriquecido. XMP Los usuarios de la norma de y de [!DNL Experience Manager Assets] tienen una plataforma potente sobre la cual pueden generar contenido. XMP Para obtener más información, consulte [&#128279;](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -91,7 +91,7 @@ El formato de archivo de imagen intercambiable (Exif) es el formato de metadatos
 
 Una limitación importante de EXIF es que algunos formatos de archivo de imagen populares, como BMP, GIF o PNG, no lo admiten.
 
-Los campos de metadatos definidos por EXIF suelen ser de naturaleza técnica y su uso para la gestión descriptiva de metadatos es limitado. XMP Por este motivo, [!DNL Experience Manager Assets] ofrece la asignación de propiedades EXIF en [esquemas de metadatos comunes](metadata-schemas.md) y en [](xmp-writeback.md).
+Los campos de metadatos definidos por EXIF suelen ser de naturaleza técnica y su uso para la gestión descriptiva de metadatos es limitado. XMP Por este motivo, [!DNL Experience Manager Assets] ofrece la asignación de propiedades EXIF en [esquemas de metadatos comunes](metadata-schemas.md) y en [&#128279;](xmp-writeback.md).
 
 ### Otros metadatos {#other-metadata}
 
@@ -207,7 +207,7 @@ La creación de flujos de trabajo impulsados por metadatos le ayuda a automatiza
 
 XMP (Plataforma de metadatos extensible) es el estándar de metadatos utilizado por [!DNL Adobe Experience Manager Assets] para toda la administración de metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
 
-XMP Además de ofrecer codificación de metadatos universal que se puede incrustar en todos los formatos de archivo, proporciona un modelo de contenido enriquecido de [y es [compatible con Adobe XMP](#advantages-of-xmp) y otras compañías, de modo que los usuarios de en combinación con [!DNL Assets] tienen una plataforma potente sobre la que construir.](#xmp-core-concepts)
+XMP Además de ofrecer codificación de metadatos universal que se puede incrustar en todos los formatos de archivo, proporciona un modelo de contenido enriquecido de [&#128279;](#xmp-core-concepts)y es [compatible con Adobe XMP](#advantages-of-xmp) y otras compañías, de modo que los usuarios de en combinación con [!DNL Assets] tienen una plataforma potente sobre la que construir.
 
 XMP La [especificación de](https://www.adobe.com/devnet/xmp.html) está disponible en el Adobe.
 

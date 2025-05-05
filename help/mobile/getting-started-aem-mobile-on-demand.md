@@ -90,7 +90,7 @@ AEM Para empezar a usar las funciones y responsabilidades de Desarrollador, cons
 
 ## AEM Author {#aem-author}
 
-AEM Un ***Autor de* (o *Especialista en marketing*)**usa las plantillas y componentes personalizados desarrollados o listos para usar para agregar y editar páginas, arrastrar y soltar componentes y agregar medios de todos los tipos desde DAM, como imágenes, vídeos y fragmentos de texto (fragmentos de contenido). AEM AEM *Autores de contenido* utilizan el editor de contenido integrado para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Experience Cloud.
+AEM Un ***Autor de* (o *Especialista en marketing*)**&#x200B;usa las plantillas y componentes personalizados desarrollados o listos para usar para agregar y editar páginas, arrastrar y soltar componentes y agregar medios de todos los tipos desde DAM, como imágenes, vídeos y fragmentos de texto (fragmentos de contenido). AEM AEM *Autores de contenido* utilizan el editor de contenido integrado para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Experience Cloud.
 
 AEM Un autor de la debe comprender los siguientes temas al crear una aplicación con AEM Mobile On-demand Services:
 

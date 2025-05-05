@@ -191,7 +191,7 @@ Observe el GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39; en la ruta.
 
 Como desarrollador de PhoneGap, el contenido que le preocupa se encuentra debajo del directorio www. Para acceder a los recursos de la aplicación, utilice rutas relativas.
 
-SPA Para agravar el problema, la aplicación PhoneGap utiliza el patrón de aplicación de una sola página (aplicación de una sola página), de modo que el URI base (excluido el hash) nunca cambie. Por lo tanto, cada recurso, plantilla o script al que haga referencia **debe ser relativo a la página de nivel superior. **La página de nivel superior inicializa el enrutamiento de Angular y los controladores en virtud de `*<name>*.angular-app-module.js` y `*<name>*.angular-app-controllers.js`. Esta página debe ser la página más cercana a la raíz del repositorio que *no *extienda un sling:redirect.
+SPA Para agravar el problema, la aplicación PhoneGap utiliza el patrón de aplicación de una sola página (aplicación de una sola página), de modo que el URI base (excluido el hash) nunca cambie. Por lo tanto, cada recurso, plantilla o script al que haga referencia **debe ser relativo a la página de nivel superior. &#x200B;** La página de nivel superior inicializa el enrutamiento de Angular y los controladores en virtud de `*<name>*.angular-app-module.js` y `*<name>*.angular-app-controllers.js`. Esta página debe ser la página más cercana a la raíz del repositorio que *no *extienda un sling:redirect.
 
 Hay varios métodos de ayuda disponibles para tratar con rutas relativas:
 

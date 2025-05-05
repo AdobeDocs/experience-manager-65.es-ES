@@ -29,7 +29,7 @@ El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una coh
 
 ## Creación de aplicaciones de PhoneGap {#authoring-phonegap-applications}
 
-AEM Un ***Autor de* (o *Especialista en marketing*)**puede usar las plantillas y los componentes predeterminados para agregar y editar páginas. Puede arrastrar y soltar componentes y añadir medios de todos los tipos desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido).
+AEM Un ***Autor de* (o *Especialista en marketing*)**&#x200B;puede usar las plantillas y los componentes predeterminados para agregar y editar páginas. Puede arrastrar y soltar componentes y añadir medios de todos los tipos desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido).
 
 Consulte los siguientes recursos:
 

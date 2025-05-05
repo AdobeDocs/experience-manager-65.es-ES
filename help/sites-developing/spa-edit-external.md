@@ -215,7 +215,7 @@ AEM El componente `AEMText` ahora es legible en el momento de la creación de la
 
 #### AEM Verificar el contenido de la página en la {#verify-page-content}
 
-AEM Para comprobar que la página se puede editar, siga los mismos pasos que se describen en la sección [Verificar la edición del contenido de texto en la página de la página de la página de la página de la página de la página de la página de la página de la página ](#verify-text-edit)página de la página de la página de texto de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de texto de la página de la página de la página de 1}.
+AEM Para comprobar que la página se puede editar, siga los mismos pasos que se describen en la sección [Verificar la edición del contenido de texto en la página de la página de la página de la página de la página de la página de la página de la página de la página ](#verify-text-edit)página de la página de la página de texto de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de texto de la página de la página de la página de 1&rbrace;.
 
 AEM ![Editando una página en el](assets/external-spa-edit-page.png)
 

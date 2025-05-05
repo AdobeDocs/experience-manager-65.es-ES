@@ -28,11 +28,11 @@ ht-degree: 3%
 >
 >**Requisito previo:**
 >
->Antes de trabajar con AEM Mobile On-demand Services AEM y de seguir los pasos de esta guía de introducción, los usuarios deben estar familiarizados con [](/help/sites-deploying/deploy.md).
+>Antes de trabajar con AEM Mobile On-demand Services AEM y de seguir los pasos de esta guía de introducción, los usuarios deben estar familiarizados con [&#128279;](/help/sites-deploying/deploy.md).
 
 ## AEM Mobile Author {#aem-mobile-author}
 
-AEM Un ***Autor de* (o *Especialista en marketing*)**usa plantillas y componentes personalizados o listos para usar para agregar y editar páginas, arrastrar y soltar componentes y agregar medios de todos los tipos desde DAM, como imágenes, vídeos y fragmentos de texto (fragmentos de contenido). AEM AEM *Autores de contenido* utilizan el editor de contenido integrado para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Experience Cloud.
+AEM Un ***Autor de* (o *Especialista en marketing*)**&#x200B;usa plantillas y componentes personalizados o listos para usar para agregar y editar páginas, arrastrar y soltar componentes y agregar medios de todos los tipos desde DAM, como imágenes, vídeos y fragmentos de texto (fragmentos de contenido). AEM AEM *Autores de contenido* utilizan el editor de contenido integrado para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Experience Cloud.
 
 AEM Un autor de la es responsable de las siguientes tareas al crear una aplicación mediante AEM Mobile On-demand Services.
 

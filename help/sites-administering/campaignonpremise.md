@@ -205,11 +205,11 @@ Ha configurado el externalizador y Adobe Campaign puede acceder a su contenido.
 
 >[!NOTE]
 >
-Se debe poder acceder a la instancia de publicación desde el servidor de Adobe Campaign. Si señala a `localhost:4503` u otro servidor al que Adobe Campaign no puede llegar, las imágenes de no aparecerán en la consola de Adobe Campaign, de lo contrario, no aparecerán en la pantalla de las imágenes de la consola de AEM.
+>Se debe poder acceder a la instancia de publicación desde el servidor de Adobe Campaign. Si señala a `localhost:4503` u otro servidor al que Adobe Campaign no puede llegar, las imágenes de no aparecerán en la consola de Adobe Campaign, de lo contrario, no aparecerán en la pantalla de las imágenes de la consola de AEM.
 
 ## AEM Configuración del usuario remoto de la campaña en la interfaz de usuario de {#configure-user}
 
-AEM AEM Para que Campaign se comunique con el usuario, debe establecer una contraseña para el usuario `campaign-remote` en la interfaz de usuario de la interfaz de usuario de {00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+AEM AEM Para que Campaign se comunique con el usuario, debe establecer una contraseña para el usuario `campaign-remote` en la interfaz de usuario de la interfaz de usuario de &lbrace;00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 
 1. AEM Inicie sesión en el servicio de administración de.
 1. En la consola de navegación principal y haga clic en **Herramientas** en el carril izquierdo.

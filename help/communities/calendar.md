@@ -92,7 +92,7 @@ En la ficha **Configuración**, especifique si desea permitir que se apliquen et
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
-  Solo es relevante si está marcada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152** **(2 Mb).
+  Solo es relevante si está marcada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 **&#x200B; **(2 Mb).
 
 * **Tipos de imagen de portada permitidos**
 
@@ -164,7 +164,7 @@ En la ficha **Campo de etiqueta**, las etiquetas que se pueden aplicar, si se pe
 
 * **Límite de sugerencias**
 
-  Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. El valor predeterminado es **-**1 (sin límites).
+  Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. El valor predeterminado es **-**&#x200B;1 (sin límites).
 
 >[!NOTE]
 >

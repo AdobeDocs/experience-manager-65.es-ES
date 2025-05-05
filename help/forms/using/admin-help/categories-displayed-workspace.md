@@ -41,7 +41,7 @@ AEM Si utiliza MySQL como base de datos de formularios de la aplicación, la con
 1. En el cuadro Nombre, escriba un nombre para la categoría y, en el cuadro Descripción, escriba una descripción de la categoría.
 1. Haga clic en Agregar. La categoría se muestra en la página Administración de categorías.
 
-   ***nota **: solo puede agregar hasta cinco niveles de jerarquía al crear categorías.*
+   ***nota &#x200B;**: solo puede agregar hasta cinco niveles de jerarquía al crear categorías.*
 
 ## Editar una categoría {#edit-a-category}
 

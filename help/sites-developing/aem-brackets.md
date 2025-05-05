@@ -53,7 +53,7 @@ Descargue la versión más reciente de Brackets de [brackets.io](https://bracket
 Para instalar la extensión, siga estos pasos:
 
 1. Abra los corchetes. En el menú **Archivo**, seleccione **Extension Manager...**
-1. AEM AEM Escriba **** en la barra de búsqueda y busque **Extensión de los corchetes de la**.
+1. AEM AEM Escriba **&#x200B;**&#x200B;en la barra de búsqueda y busque **Extensión de los corchetes de la**.
 
    ![chlimage_1-54](assets/chlimage_1-54a.png)
 
@@ -82,7 +82,7 @@ En el menú **Archivo** de Brackets, elija **Abrir carpeta...** y elija la carpe
 
 ### Configuración de proyecto {#project-settings}
 
-AEM Para sincronizar el contenido con y desde una instancia de desarrollo de, debe definir la Configuración del proyecto. AEM Para ello, vaya al menú **** y elija **Configuración del proyecto...**
+AEM Para sincronizar el contenido con y desde una instancia de desarrollo de, debe definir la Configuración del proyecto. AEM Para ello, vaya al menú **&#x200B;**&#x200B;y elija **Configuración del proyecto...**
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
@@ -113,7 +113,7 @@ En el Explorador del proyecto, abra el menú contextual haciendo clic con el bot
 
 ### Sincronización completa del paquete de contenido {#full-content-package-synchronization}
 
-AEM En el menú ****, las opciones **Exportar paquete de contenido** o **Importar paquete de contenido** le permiten sincronizar todo el proyecto con el servidor.
+AEM En el menú **&#x200B;**, las opciones **Exportar paquete de contenido** o **Importar paquete de contenido** le permiten sincronizar todo el proyecto con el servidor.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

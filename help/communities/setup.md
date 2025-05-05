@@ -97,7 +97,7 @@ Cree un usuario en *author*, a quien se le asigna la función de administrador d
    * **[!UICONTROL ID]**: sirius
    * **[!UICONTROL Dirección de correo electrónico]**: sirius.nilson@mailinator.com
    * **[!UICONTROL Contraseña]**: password
-   * **[!UICONTROL Confirmar contraseña&amp;ast;]**: contraseña
+   * **[!UICONTROL Confirmar contraseña&ast;]**: contraseña
    * **[!UICONTROL Nombre]**: Sirius
    * **[!UICONTROL Apellido]**: Nilson
 

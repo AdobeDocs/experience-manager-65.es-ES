@@ -368,7 +368,7 @@ El directorio www contiene todo el contenido web (archivos HTML, JS y CSS) que i
 
 #### www/config.xml {#www-config-xml}
 
-La documentación de PhoneGap (`https://docs.phonegap.com`) hace referencia a este archivo como un &quot;archivo de configuración global&quot;. El archivo config.xml contiene muchas propiedades de aplicación, como el nombre de la aplicación, las &quot;preferencias&quot; de la aplicación (por ejemplo, si una vista web de iOS permite el overscroll o no) y las dependencias del complemento que PhoneGap Build solo consume *1}.*
+La documentación de PhoneGap (`https://docs.phonegap.com`) hace referencia a este archivo como un &quot;archivo de configuración global&quot;. El archivo config.xml contiene muchas propiedades de aplicación, como el nombre de la aplicación, las &quot;preferencias&quot; de la aplicación (por ejemplo, si una vista web de iOS permite el overscroll o no) y las dependencias del complemento que PhoneGap Build solo consume *1&rbrace;.*
 
 AEM El archivo config.xml es un archivo estático en el que se puede exportar el contenido tal cual, y se exporta tal cual mediante la sincronización de contenido.
 

@@ -169,7 +169,7 @@ AEM Si un usuario sin los formularios y los permisos de CQ necesarios intenta in
 * Solución de Administración de correspondencia
 * AEM Workspace de formularios
 
-  ***nota **: Flex AEM Workspace está en desuso para la versión de formularios de la versión de la versión de la aplicación de formularios de la versión de la aplicación.*
+  ***nota &#x200B;**: Flex AEM Workspace está en desuso para la versión de formularios de la versión de la versión de la aplicación de formularios de la versión de la aplicación.*
 
 * administrador de formularios
 * Informes de procesos 

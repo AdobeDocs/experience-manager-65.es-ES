@@ -172,7 +172,7 @@ AEM Al trabajar con los servicios, existen varios métodos para administrar las 
 
 Se requiere autenticación LDAP para autenticar a los usuarios almacenados en un directorio LDAP (central) como Active Directory. Esto ayuda a reducir el esfuerzo necesario para administrar las cuentas de usuario.
 
-La autenticación LDAP se produce en el nivel del repositorio, por lo que el repositorio la gestiona directamente. AEM Para obtener más información, consulte [Configuración de LDAP con {10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/ldap-config.md)
+La autenticación LDAP se produce en el nivel del repositorio, por lo que el repositorio la gestiona directamente. AEM Para obtener más información, consulte [Configuración de LDAP con &lbrace;10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/ldap-config.md)
 
 AEM Para obtener información sobre la administración de usuarios dentro de la administración de usuarios (incluida la asignación de derechos de acceso), vea [Administración de usuarios y seguridad](/help/sites-administering/security.md).
 

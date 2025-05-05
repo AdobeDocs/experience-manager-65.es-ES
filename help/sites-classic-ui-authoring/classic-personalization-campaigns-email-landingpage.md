@@ -31,7 +31,7 @@ Para crear una página de aterrizaje de newsletter efectiva, debe hacer lo sigui
 >[!NOTE]
 >
 >El Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
->Se recomienda usar [Adobe Campaign AEM y la integración con {100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
+>Se recomienda usar [Adobe Campaign AEM y la integración con &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
 
 ## Creación de una lista para la newsletter {#creating-a-list-for-the-newsletter}
 

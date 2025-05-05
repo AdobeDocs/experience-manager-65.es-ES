@@ -314,7 +314,7 @@ Establecer objetivos para solicitudes de búsqueda es, de nuevo, una cuestión d
 
 Estas solicitudes de búsqueda deben planificarse e integrarse desde el principio del proyecto. Los mecanismos disponibles para el seguimiento incluyen:
 
-* AEM **Supervisar los tiempos de respuesta de búsqueda con el archivo request.log 1}**
+* AEM **Supervisar los tiempos de respuesta de búsqueda con el archivo request.log 1&rbrace;**
 
   De nuevo, request.log se puede usar para monitorizar los tiempos de respuesta para las solicitudes de búsqueda; consulte [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) para obtener más detalles.
 

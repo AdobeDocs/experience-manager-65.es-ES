@@ -300,7 +300,7 @@ Obtenga las siguientes bibliotecas de JavaScript e inclúyalas en una carpeta de
 * jquery.js (disponible a través de la carpeta de biblioteca de cliente `/etc/clientlibs/granite/jquery` (category = jquery)
 * [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (un evento jquery que se produce una vez que se cambia el tamaño de la ventana)
 
-**Sugerencia:** Puede concatenar automáticamente varias carpetas de biblioteca de cliente incrustando [3}.](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)
+**Sugerencia:** Puede concatenar automáticamente varias carpetas de biblioteca de cliente incrustando [3&rbrace;.](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)
 
 **HTML**
 

@@ -30,7 +30,7 @@ El verdadero poder de AEM Mobile AEM AEM es que un *experto* ***Desarrollador de
 
 >[!NOTE]
 >
->AEM Cuando el autor de ** crea que la aplicación está lista, primero puede pedir a las partes interesadas que descarguen la aplicación con **[Verificación de Adobe](/help/mobile/phonegap-mobile-quickstart.md)** (disponible en AppStore y PlayStore) para su revisión y aprobación. Una vez que hayan recibido la luz verde, pueden publicar este contenido nuevo o actualizado directamente a sus usuarios a través del panel de administración de la publicación de contenido de AEM Mobile ContentSync. Una persona puede asumir cualquier cantidad de roles, eso depende de usted y sus políticas de gobernanza.
+>AEM Cuando el autor de **&#x200B; crea que la aplicación está lista, primero puede pedir a las partes interesadas que descarguen la aplicación con &#x200B;** [Verificación de Adobe](/help/mobile/phonegap-mobile-quickstart.md)** (disponible en AppStore y PlayStore) para su revisión y aprobación. Una vez que hayan recibido la luz verde, pueden publicar este contenido nuevo o actualizado directamente a sus usuarios a través del panel de administración de la publicación de contenido de AEM Mobile ContentSync. Una persona puede asumir cualquier cantidad de roles, eso depende de usted y sus políticas de gobernanza.
 
 ## Requisitos previos {#prerequisites}
 
@@ -44,7 +44,7 @@ Antes de trabajar con AEM Mobile AEM y de seguir los pasos de esta guía de intr
 
 ## Vínculos rápidos para autores {#quicklinks-for-authors}
 
-Consulte [Creación para Adobe PhoneGap AEM Enterprise en {1 para obtener más información sobre las funciones y responsabilidades de un autor.](/help/mobile/phonegap.md)
+Consulte [Creación para Adobe PhoneGap AEM Enterprise en &lbrace;1 para obtener más información sobre las funciones y responsabilidades de un autor.](/help/mobile/phonegap.md)
 
 ## Vínculos rápidos para desarrolladores {#quicklinks-for-developers}
 

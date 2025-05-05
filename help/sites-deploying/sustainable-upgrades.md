@@ -89,7 +89,7 @@ Las mezclas aplicadas en CRXDE Lite muestran nodos de contenido y árboles que e
 
 AEM La versión 6.5 se envía con una comprobación de estado para alertar a los clientes de si el contenido superpuesto o referenciado se utiliza de una manera incoherente con la clasificación de contenido.
 
-AEM La** Comprobación de acceso al contenido de Sling/Granite** es una nueva comprobación de estado que supervisa el repositorio para ver si el código de cliente accede incorrectamente a los nodos protegidos en el.
+AEM La **&#x200B; Comprobación de acceso al contenido de Sling/Granite** es una nueva comprobación de estado que supervisa el repositorio para ver si el código de cliente accede incorrectamente a los nodos protegidos en el.
 
 Esto explora **/apps** y, por lo general, tarda varios segundos en completarse.
 

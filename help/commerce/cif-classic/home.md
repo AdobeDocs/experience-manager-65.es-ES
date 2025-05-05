@@ -21,7 +21,7 @@ AEM CIF En esta página se muestran los recursos informativos relacionados con l
 >
 >CIF AEM La versión Classic de la está en desuso y se ha eliminado de la versión 6.5 SP 22 en adelante.  [Póngase en contacto con el servicio de atención al cliente del Adobe](https://experienceleague.adobe.com/es?support-solution=General#support) si necesita un paquete de compatibilidad.
 >
->* AEM CIF Los nuevos proyectos deben usar [](/help/commerce/cif/introduction.md).
+>* AEM CIF Los nuevos proyectos deben usar [&#128279;](/help/commerce/cif/introduction.md).
 >* CIF AEM CIF El clásico existente debería [migrar a la versión de la versión de](/help/commerce/cif/migration.md).
 
 ## CIF Artículos Clásicos Clave {#key-articles}

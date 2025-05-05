@@ -139,7 +139,7 @@ La descarga avanzada de MLS (también conocida como `phasetwo`) está disponible
 
 * AEM-SOLR-MLS-phasettwo
 
-  AEM Para obtener el paquete MLS avanzado, consulte [MLS avanzado](deploy-communities.md#aem-advanced-mls) en la sección de implementación de la documentación de {Advanced MLS.
+  AEM Para obtener el paquete MLS avanzado, consulte [MLS avanzado](deploy-communities.md#aem-advanced-mls) en la sección de implementación de la documentación de &lbrace;Advanced MLS.
 
    * Versión 1.2.40, 6 de abril de 2016
    * AEM Descargar-SOLR-MLS-phasetwo-1.2.40.zip

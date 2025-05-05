@@ -63,8 +63,8 @@ AEM Este controlador debe agregarse a cualquier configuración de ContentSync de
 
 * ***type - String - mobilecontentlisting***
 * ***ruta*** - Cadena - mantener vacío, debe estar presente para que se vea como un controlador válido, pero se infiere que la ruta es la caché de ContentSync actual. Este valor se ignora.
-* ***targetRootDirectory* -**String: el prefijo que se agregará a las rutas como raíz de destino para la actualización de contenido de este controlador.
-* ***pedido - Largo* -**Pedido para que ContentSync ejecute este controlador. Este número debe establecerse por encima de todos los demás controladores, como 100. Debe ejecutarse después de los controladores de contenido tradicionales.
+* ***targetRootDirectory* -**&#x200B;String: el prefijo que se agregará a las rutas como raíz de destino para la actualización de contenido de este controlador.
+* ***pedido - Largo* -**&#x200B;Pedido para que ContentSync ejecute este controlador. Este número debe establecerse por encima de todos los demás controladores, como 100. Debe ejecutarse después de los controladores de contenido tradicionales.
 
 ```xml
 {
@@ -89,9 +89,9 @@ AEM **mobilecontentpackageslisting** Enumera el paquete de contenido de la aplic
 AEM El controlador debe usarse en la configuración de ContentSync de App Shell (nodo con page-type=app-instance)
 
 * ***type - String - mobilecontentpackageslisting***
-* ***ruta **-**Cadena*** - Ruta a un shell de aplicación (nodo con pge-type=app-instance).
+* ***ruta &#x200B;**-**Cadena*** - Ruta a un shell de aplicación (nodo con pge-type=app-instance).
 * ***targetRootDirectory - String*** - el prefijo que se agrega a las rutas como raíz de destino para la actualización de contenido de este controlador.
-* ***order - Long* -**Order para que ContentSync ejecute este controlador. Este número debe establecerse por encima de todos los demás controladores, como 100. Debe ejecutarse después de los controladores de contenido tradicionales.
+* ***order - Long* -**&#x200B;Order para que ContentSync ejecute este controlador. Este número debe establecerse por encima de todos los demás controladores, como 100. Debe ejecutarse después de los controladores de contenido tradicionales.
 
 >[!NOTE]
 >
@@ -123,8 +123,8 @@ AEM El controlador debe usarse en la configuración de ContentSync de App Shell 
 
 AEM Este controlador debe usarse en una configuración de ContentSync de App Shell de la aplicación (nodo con page-type=[app-instance]).
 
-* ***type - String* - **widgetconfig
-* ***ruta **-**Cadena*** - Ruta a cualquier nodo secundario del shell de la aplicación (nodo con tipo de página=[instancia de aplicación]).
+* ***type - String* - &#x200B;** widgetconfig
+* ***ruta &#x200B;**-**Cadena*** - Ruta a cualquier nodo secundario del shell de la aplicación (nodo con tipo de página=[instancia de aplicación]).
 * ***targetRootDirectory - String*** - el prefijo que se agrega a las rutas como raíz de destino para la actualización de contenido de este controlador.
 * ***targetIconDirectory - String*** - el directorio donde colocar los iconos de la aplicación
 
@@ -165,7 +165,7 @@ AEM Las propiedades de son aquellas que se espacian con nombres como &quot;cq&qu
 
 * ***type - String*** - app-assets
 
-* ***ruta **-**cadena*** - ruta a una ubicación bajo una instancia de aplicación donde se almacenan los recursos de la aplicación
+* ***ruta &#x200B;**-**cadena*** - ruta a una ubicación bajo una instancia de aplicación donde se almacenan los recursos de la aplicación
 
 **mobileappoffers**: se ha introducido un nuevo controlador de sincronización de contenido para el caso de uso de Personalization para procesar contenido de destino. El controlador &quot;mobileapps&quot; sabe cómo procesar las ofertas de destino asociadas que ha creado el autor del contenido. El controlador mobileapps amplía el controlador de actualización de páginas abstractas, por lo que muchas de las propiedades son similares. Los detalles del controlador mobileapps tienen las siguientes propiedades.
 
@@ -178,7 +178,7 @@ El controlador mobileappsoffers amplía el controlador mobileappspages y agrega 
 
 **mobileappconfig**: El controlador de sincronización de contenido mobileappconfig proporciona una forma de insertar datos JSON en MobileAppsConfig.json. Para registrar una clase de proveedor, los desarrolladores agregarán su clase MobileAppsInfoProvider a la lista de proveedores. El controlador iterará en la lista de MobileAppsInfoProviders y permitirá al proveedor insertar datos en el archivo json resultante. La lista de propiedades que admite este controlador es la siguiente:
 
-* ***ruta **-**Cadena*** - la ruta a un nodo de instancia de aplicación con tipo de página=instancia de aplicación o un RT que extienda /libs/mobileapps/core/components/instance
+* ***ruta &#x200B;**-**Cadena*** - la ruta a un nodo de instancia de aplicación con tipo de página=instancia de aplicación o un RT que extienda /libs/mobileapps/core/components/instance
 * ***proveedores - Cadena*** `[]` - la lista de MobileAppsInfoProviders completos
 * ***targetRootDirectory - String*** - el directorio donde escribir el archivo MobileAppsConfig.json.
 * **fileName - String** - nombre opcional del archivo en el que escribir el JSON, el valor predeterminado es MobileAppsConfig.json

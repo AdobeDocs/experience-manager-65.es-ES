@@ -31,7 +31,7 @@ CIF Se recomienda contar con un entorno de desarrollo local para trabajar con pr
 
 >[!NOTE]
 >
->AEM AEM Las siguientes instrucciones le ayudan a configurar un entorno de desarrollo de local para la de Commerce CIF AEM usando el enfoque en la versión 6.5 (en la que se utiliza la). Si usa AEM as a Cloud Service AEM, consulte la [documentación de Commerceas a Cloud Service 1}.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=es)
+>AEM AEM Las siguientes instrucciones le ayudan a configurar un entorno de desarrollo de local para la de Commerce CIF AEM usando el enfoque en la versión 6.5 (en la que se utiliza la). Si usa AEM as a Cloud Service AEM, consulte la [documentación de Commerceas a Cloud Service 1&rbrace;.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=es)
 
 AEM El complemento de Commerce AEM para la versión de 6,5, también conocido como. CIF AEM El complemento también está disponible para el desarrollo local y se proporciona como paquete de. Se puede descargar del [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) como paquete de funciones.
 

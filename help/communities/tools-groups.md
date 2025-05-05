@@ -23,7 +23,7 @@ La consola de plantillas de grupo es similar a la consola [Plantillas de sitio](
 
 Un grupo de comunidad se incorpora a una plantilla de sitio al incluir la función [Grupos](/help/communities/functions.md#groups-function) (que puede no ser la primera ni la única función de la plantilla).
 
-A partir del paquete de características 1](/help/communities/deploy-communities.md#latestfeaturepack) de Communities [es posible anidar grupos incluyendo la función Grupos dentro de una plantilla de grupo.
+A partir del paquete de características 1[&#128279;](/help/communities/deploy-communities.md#latestfeaturepack) de Communities es posible anidar grupos incluyendo la función Grupos dentro de una plantilla de grupo.
 
 En el momento en que se realiza una acción para crear un grupo de comunidad, se selecciona la plantilla (estructura) del grupo. La selección depende de cómo se configuró la función Grupos cuando se agregó al sitio o a la plantilla del grupo.
 

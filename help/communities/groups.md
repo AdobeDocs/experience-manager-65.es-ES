@@ -99,6 +99,7 @@ La raíz predeterminada es el sitio principal, pero la raíz se puede mover a cu
    * Compruebe el nombre, ya que no se cambia fácilmente después de crear el grupo.
    * La dirección URL base se muestra debajo de `Community Group Name`.
    * Para una URL válida, añada &quot;.html&quot;
+
      *por ejemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * Menú **Plantilla de grupo de la comunidad**

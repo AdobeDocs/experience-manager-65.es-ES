@@ -28,7 +28,7 @@ cURL es un herramienta de línea de comandos de código abierto que se utiliza p
 
 cURL es una herramienta bien establecida y ampliamente utilizada para obtener o enviar datos utilizando la sintaxis URL y se lanzó originalmente en 1997. El nombre cURL originalmente significaba &quot;ver URL&quot;.
 
-Debido a la naturaleza RESTful del marco de trabajo Sling sobre el que se construye AEM, la mayoría de las tareas se pueden reducir a una llamada URL, que se puede ejecutar con cURL. [Las tareas](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) de manipulación de contenido, como la activación de páginas y el inicio de tareas](/help/sites-administering/curl.md#common-operational-aem-curl-commands) flujos de trabajo y [operativas, como la administración de paquetes y la administración de usuarios, se pueden automatizar mediante cURL. Además, puede [crear sus propios comandos cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) para la mayoría de las tareas de AEM.
+Debido a la naturaleza RESTful del marco de trabajo Sling sobre el que se construye AEM, la mayoría de las tareas se pueden reducir a una llamada URL, que se puede ejecutar con cURL. [Las tareas](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) de manipulación de contenido, como la activación de páginas y el inicio de tareas[&#128279;](/help/sites-administering/curl.md#common-operational-aem-curl-commands) flujos de trabajo y operativas, como la administración de paquetes y la administración de usuarios, se pueden automatizar mediante cURL. Además, puede [crear sus propios comandos cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) para la mayoría de las tareas de AEM.
 
 >[!NOTE]
 >

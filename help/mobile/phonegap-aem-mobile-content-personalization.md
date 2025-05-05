@@ -110,7 +110,7 @@ Una vez que el administrador ha configurado los dos servicios en la nube y el de
 
 La creación de contenido de destino en una aplicación de AEM Mobile sigue un procedimiento similar al de la creación de AEM Sites:
 
-AEM Vea aquí una descripción general completa de [Creación de contenido de destino en el espacio de trabajo de {1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-authoring/personalization.md)
+AEM Vea aquí una descripción general completa de [Creación de contenido de destino en el espacio de trabajo de &lbrace;1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-authoring/personalization.md)
 
 ## Para desarrolladores {#for-developers}
 

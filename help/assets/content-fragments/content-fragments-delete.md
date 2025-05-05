@@ -40,7 +40,7 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
 
 >[!NOTE]
 >
->AEM Consulte también [Cómo auditar las operaciones de administración de usuarios en el espacio de trabajo de {10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/audit-user-management-operations.md)
+>AEM Consulte también [Cómo auditar las operaciones de administración de usuarios en el espacio de trabajo de &lbrace;10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/audit-user-management-operations.md)
 
 ## Permisos necesarios para la funcionalidad del editor únicamente {#permissions-required-for-editor-functionality-only}
 

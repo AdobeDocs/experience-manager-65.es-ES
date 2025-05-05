@@ -303,17 +303,17 @@ Para crear una plantilla basada en una plantilla existente:
    >Los cambios realizados en el nodo **/apps/&lt;website>/templates/&lt;template-name>** afectan a la instancia de la plantilla (como en la lista de selección).
    >
    >
-   Los cambios realizados en el nodo **/apps/&lt;website>/components/&lt;component-name>** afectan a la página de contenido creada cuando se utiliza la plantilla.
+   >Los cambios realizados en el nodo **/apps/&lt;website>/components/&lt;component-name>** afectan a la página de contenido creada cuando se utiliza la plantilla.
 
    Ahora puede crear una página dentro del sitio web con la nueva plantilla.
 
 >[!NOTE]
 >
-La biblioteca de cliente del editor supone la presencia del área de nombres `cq.shared` en las páginas de contenido y, si está ausente, los resultados del error de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined`.
+>La biblioteca de cliente del editor supone la presencia del área de nombres `cq.shared` en las páginas de contenido y, si está ausente, los resultados del error de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined`.
 >
-Todas las páginas de contenido de muestra contienen `cq.shared`, por lo que cualquier contenido basado en ellas incluye automáticamente `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de ejemplo, debe asegurarse de incluir el área de nombres `cq.shared`.
+>Todas las páginas de contenido de muestra contienen `cq.shared`, por lo que cualquier contenido basado en ellas incluye automáticamente `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de ejemplo, debe asegurarse de incluir el área de nombres `cq.shared`.
 >
-Consulte [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md) para obtener más información.
+>Consulte [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md) para obtener más información.
 
 ## Disponibilidad de una plantilla existente {#making-an-existing-template-available}
 

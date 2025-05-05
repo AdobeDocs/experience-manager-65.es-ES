@@ -78,7 +78,7 @@ AEM Utilice el editor integrado de arrastrar y soltar para agregar o cambiar un 
 Flujo de trabajo para editar un artículo:
 
 1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
-1. AEM Seleccione un banner de origen de ** en el mosaico Administrar banners**.
+1. AEM Seleccione un banner de origen de **&#x200B; en el mosaico Administrar banners**.
 1. Haga clic en el banner resaltado de la vista de lista para abrirlo en el editor de contenido.
 1. Utilice el editor de contenido para arrastrar el contenido del titular (manuscritos, imágenes, texto, etc.).
 

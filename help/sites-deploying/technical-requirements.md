@@ -148,7 +148,7 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 
 >[!NOTE]
 >
->MongoDB es un programa de software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte la directiva](https://www.mongodb.com/licensing/server-side-public-license/faq) de licencias de [MongoDB Página.
+>MongoDB es un programa de software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte la directiva[&#128279;](https://www.mongodb.com/licensing/server-side-public-license/faq) de licencias de MongoDB Página.
 >
 >Para aprovechar al máximo su AEM implementación con MongoDB, Adobe Systems recomienda licenciar la versión MongoDB Enterprise para beneficiarse de soporte profesional. Consulte [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) para obtener más información.
 >

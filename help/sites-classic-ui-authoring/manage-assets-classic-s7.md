@@ -395,7 +395,7 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 >* En la IU clásica, también puedes buscar **Flash** y **FXG**. No se admite el filtrado para estos dos términos en la IU táctil optimizada.
 >
 >* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (solo &#42;.mp4) y la representación codificada.
-* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido una palabra clave, Experience Manager no busca en las subcarpetas.
+>* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido una palabra clave, Experience Manager no busca en las subcarpetas.
 >
 
 **Estado de Publish**: puede filtrar recursos en función del estado de la publicación: No publicado o Publicado. Si no selecciona ningún Estado de Publish, Experience Manager busca de forma predeterminada en todos los estados de publicación.

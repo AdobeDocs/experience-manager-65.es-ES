@@ -78,7 +78,7 @@ AEM **Administrador de conectores de IBM CM de formularios:** puede ver y modifi
 
 AEM **Administrador de Workspace de formularios de:** Puede ver y modificar la configuración desde la página de Workspace en la consola de administración
 
-***nota **: Flex AEM Workspace está en desuso para la versión de formularios de la versión de la versión de la aplicación de formularios de la versión de la aplicación.*
+***nota &#x200B;**: Flex AEM Workspace está en desuso para la versión de formularios de la versión de la versión de la aplicación de formularios de la versión de la aplicación.*
 
 **Usuario de Workspace:** puede iniciar sesión en la aplicación de usuario final de Workspace
 

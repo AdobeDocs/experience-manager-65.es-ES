@@ -118,7 +118,7 @@ La característica **Copia de idioma** permite a los autores copiar su copia de 
    >
    >Los nodos de copia de idioma sólo pueden existir como secundarios directos del espacio.
 
-1. Elija **Idioma del paquete de contenido&amp;ast;** e introduzca el **Título&amp;ast;** en el cuadro de diálogo **Crear copia de idioma**.
+1. Elija **Idioma del paquete de contenido&ast;** e introduzca el **Título&ast;** en el cuadro de diálogo **Crear copia de idioma**.
 
    Haga clic en **Crear**.
 
@@ -237,7 +237,7 @@ Si se recopilan elementos secundarios de entidad, que son otras entidades, para 
 
 Tiene la opción de elegir **Publish Tree** o **Quick Publish** para publicar su entidad.
 
-1. Seleccione una entidad de la lista de la consola de espacio y haga clic en **Árbol de Publish **para publicar esa entidad y sus hijos.
+1. Seleccione una entidad de la lista de la consola de espacio y haga clic en **Árbol de Publish &#x200B;** para publicar esa entidad y sus hijos.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 

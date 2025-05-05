@@ -53,7 +53,7 @@ AEM Un apagado forzado resulta en la suspensión de la indexación asíncrona du
 
 >[!NOTE]
 >
->AEM AEM Para la versión 6.1, asegúrese de que el CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) de [6.1 esté instalado.
+>AEM AEM Para la versión 6.1, asegúrese de que el CFP 11[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) de 6.1 esté instalado.
 
 En circunstancias excepcionales, el grupo de subprocesos utilizado para administrar la indexación asincrónica puede sobrecargarse. AEM Para aislar el proceso de indexación, se puede configurar un grupo de subprocesos para evitar que otro trabajo interfiera con la capacidad de Oak de indexar contenido de forma oportuna. En estos casos, haga lo siguiente:
 

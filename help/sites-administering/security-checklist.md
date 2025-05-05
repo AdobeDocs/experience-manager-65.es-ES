@@ -49,7 +49,7 @@ Asegúrese de instalar las [revisiones de seguridad más recientes proporcionada
 
 ### AEM Cambiar contraseñas predeterminadas para las cuentas de administrador de la consola OSGi y de la {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe AEM recomienda después de la instalación cambiar la contraseña de las cuentas con privilegios [**** `admin`](#changing-the-aem-admin-password) (en todas las instancias).
+Adobe AEM recomienda después de la instalación cambiar la contraseña de las cuentas con privilegios [**&#x200B;** `admin`](#changing-the-aem-admin-password) (en todas las instancias).
 
 Estas cuentas incluyen:
 
@@ -324,7 +324,7 @@ Para ayudar a evitar el uso indebido de DoS, puede hacer lo siguiente:
 >
 >AEM Esta mitigación solo debe realizarse en entornos de que no utilicen Forms.
 
-AEM déclencheur AEM Debido a que no proporciona índices predeterminados para el `FormChooserServlet`, el uso de selectores de formulario en las consultas puede provocar un costoso recorrido del repositorio, lo que generalmente interrumpe la instancia de. Los selectores de formularios se pueden detectar mediante la presencia de **&amp;ast;.form.&amp;ast;** cadena en consultas.
+AEM déclencheur AEM Debido a que no proporciona índices predeterminados para el `FormChooserServlet`, el uso de selectores de formulario en las consultas puede provocar un costoso recorrido del repositorio, lo que generalmente interrumpe la instancia de. Los selectores de formularios se pueden detectar mediante la presencia de **&ast;.form.&ast;** cadena en consultas.
 
 Para mitigar este problema, puede realizar los siguientes pasos:
 
@@ -377,7 +377,7 @@ AEM No se debe realizar ninguna configuración para habilitarla, ya que ahora es
 
 Aunque no se recomienda, puede deshabilitarla en caso de que necesite la implementación antigua para mantener la compatibilidad con las aplicaciones existentes. Para ello, debe hacer lo siguiente:
 
-1. Vaya a la consola web y elimine la entrada org**.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** de la propiedad **requiredServicePids** en **Apache Jackrabbit Oak SecurityProvider**.
+1. Vaya a la consola web y elimine la entrada org&#x200B;**.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** de la propiedad **requiredServicePids** en **Apache Jackrabbit Oak SecurityProvider**.
 
    También puede encontrar el proveedor de seguridad de Oak buscando el PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** en las configuraciones de OSGi.
 

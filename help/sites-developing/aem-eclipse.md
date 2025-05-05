@@ -61,7 +61,7 @@ Una vez que haya cumplido los [requisitos](#requirements) anteriores, puede inst
 1. AEM En **Name**, escriba Herramientas para desarrolladores de tipo.
 1. En **Ubicación**, copie la URL de instalación.
 1. Haga clic en **Aceptar**.
-1. AEM Compruebe los complementos **** y **Sling**.
+1. AEM Compruebe los complementos **&#x200B;**&#x200B;y **Sling**.
 1. Haga clic en **Siguiente**.
 1. Haga clic en **Siguiente**.
 1. Acepte los contratos de licencia y haga clic en **Finalizar**.
@@ -71,7 +71,7 @@ Una vez que haya cumplido los [requisitos](#requirements) anteriores, puede inst
 
 >[!NOTE]
 >
->AEM Ver [Cómo se trabaja con un paquete en Eclipse cuando se descargó desde el servidor de correo electrónico de {10000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)
+>AEM Ver [Cómo se trabaja con un paquete en Eclipse cuando se descargó desde el servidor de correo electrónico de &lbrace;10000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)
 
 ## AEM La perspectiva de la {#the-aem-perspective}
 
@@ -85,7 +85,7 @@ AEM Las &quot;herramientas para desarrolladores&quot; incluyen un proyecto de mu
 
 Para crear el proyecto de ejemplo, complete los siguientes pasos:
 
-1. AEM AEM En el menú **Archivo** > **Nuevo** > **Proyecto**, vaya a la sección **** y seleccione **Proyecto de módulo múltiple de muestra**.
+1. AEM AEM En el menú **Archivo** > **Nuevo** > **Proyecto**, vaya a la sección **&#x200B;**&#x200B;y seleccione **Proyecto de módulo múltiple de muestra**.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
