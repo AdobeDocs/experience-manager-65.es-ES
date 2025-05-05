@@ -22,7 +22,7 @@ AEM La implementación de los paquetes construidos en el se realiza mediante el 
 >
 >Para obtener más información, consulte:
 >
->* El artículo [Complemento Maven del paquete de contenido de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) de la documentación de AEM as a Cloud Service AEM sobre cómo implementar aplicaciones de.
+>* El artículo [Complemento Maven del paquete de contenido de Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=es#developer-tools) de la documentación de AEM as a Cloud Service AEM sobre cómo implementar aplicaciones de.
 >* AEM El artículo de [Estructura del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=es) de la documentación de AEM as a Cloud Service AEM sobre cómo estructurar proyectos de proyectos de proyectos de proyectos modernos.
 >* AEM AEM La documentación de [Proyecto de Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) para obtener información sobre cómo iniciar un nuevo proyecto de proyecto de código abierto usando el arquetipo.
 >

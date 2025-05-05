@@ -38,7 +38,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >* AEM La versión de 64 bits del diseñador se introdujo con el paquete de servicio 19 de Forms de 6.5 (6.5.19.0) de.
->* La versión de 32 bits del diseñador está obsoleta desde el lanzamiento de [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+>* La versión de 32 bits del diseñador está obsoleta desde el lanzamiento de [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 > * Las plataformas compatibles con Forms Designer se alinean con las plataformas compatibles con AEM Forms. Para obtener más información sobre las plataformas compatibles con Forms Designer, [haga clic aquí](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Para obtener más información sobre la instalación de Forms Designer, visite [Preguntas más frecuentes](#fandq).

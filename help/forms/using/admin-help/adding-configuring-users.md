@@ -176,4 +176,4 @@ AEM Si un usuario sin los formularios y los permisos de CQ necesarios intenta in
 
 CQ proporciona un mecanismo para anular el controlador jsp 404 predeterminado.
 
-Para obtener más información sobre cómo personalizar la página de control de errores, consulte [Personalización de páginas mostradas por el controlador de errores](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en) en la documentación de Adobe Experience Manager.
+Para obtener más información sobre cómo personalizar la página de control de errores, consulte [Personalización de páginas mostradas por el controlador de errores](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=es) en la documentación de Adobe Experience Manager.

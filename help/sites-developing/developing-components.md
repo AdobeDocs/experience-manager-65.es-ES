@@ -94,11 +94,11 @@ El mecanismo para separar la lógica de la apariencia ayuda a aclarar lo que se 
 
 ### Uso de Java {#using-java}
 
-[La API de uso de Java de HTL permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Esto permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
+[La API de uso de Java de HTL permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=es). Esto permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
 
 ### Uso de JavaScript {#using-javascript}
 
-[La API de uso de JavaScript de HTL permite que un archivo HTL acceda al código de ayuda escrito en JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Esto permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
+[La API de uso de JavaScript de HTL permite que un archivo HTL acceda al código de ayuda escrito en JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=es). Esto permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
 
 ### Uso de bibliotecas de HTML del lado del cliente {#using-client-side-html-libraries}
 
@@ -197,7 +197,7 @@ Para ver ejemplos, consulte:
 >
 >Consulte:
 >
->* AEM la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+>* AEM la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
 >* el código de ejemplo relacionado que se cubre en [Ejemplo de código: Cómo personalizar los campos de diálogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -463,9 +463,9 @@ Al migrar un componente diseñado para utilizarlo con la IU clásica a un compon
    * Cree un cuadro de diálogo para utilizarlo en la interfaz de usuario táctil. Sin embargo, por motivos de compatibilidad, la IU táctil puede utilizar la definición de un cuadro de diálogo de IU clásico cuando no se ha definido ningún cuadro de diálogo para la IU táctil.
    * AEM Se proporcionan [Herramientas de modernización de la](/help/sites-developing/modernization-tools.md) para ayudarle a ampliar los componentes existentes.
    * [Asignar ExtJS a componentes de Granite UI](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) proporciona una visión general conveniente de los xtype y tipos de nodo de ExtJS con sus tipos de recursos de Granite UI equivalentes.
-   * AEM Personalizando campos, para obtener más información, consulte la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+   * AEM Personalizando campos, para obtener más información, consulte la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
    * Migrar de vtypes a [Validación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * AEM Utilizando oyentes JS, para obtener más información, consulte [Gestión de eventos de campo](#handling-field-events) y la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+   * AEM Utilizando oyentes JS, para obtener más información, consulte [Gestión de eventos de campo](#handling-field-events) y la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
 
 ### Migrando código cq:listener {#migrating-cq-listener-code}
 

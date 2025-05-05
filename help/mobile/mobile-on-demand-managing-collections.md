@@ -30,9 +30,9 @@ Las colecciones representan un *espacio* bien definido con contenido como artíc
 >
 >Consulte los siguientes recursos en la Ayuda en línea para conocer los siguientes temas en las aplicaciones de AEM Mobile:
 >
->* [Consideraciones de diseño](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Consideraciones de diseño](https://helpx.adobe.com/es/digital-publishing-solution/help/design-app.html)
 >
->* [Administrar colecciones](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
+>* [Administrar colecciones](https://helpx.adobe.com/es/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## Creación de una colección {#creating-a-collection}

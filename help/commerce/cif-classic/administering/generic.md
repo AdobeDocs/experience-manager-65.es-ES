@@ -168,7 +168,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 >
 >`/etc/commerce/products/...`
 >
->Esto significa que, de forma predeterminada, están bloqueados por [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), por lo que debe configurarlos según sea necesario.
+>Esto significa que, de forma predeterminada, están bloqueados por [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es), por lo que debe configurarlos según sea necesario.
 
 #### Edición de información de producto: IU táctil optimizada {#editing-product-information-touch-optimized-ui}
 

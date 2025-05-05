@@ -260,7 +260,7 @@ Al hacerlo, puede enviar el contenido. Verá si un boletín informativo está vi
 
 AEM Para vincular una página creada en con un correo electrónico desde Adobe Campaign, haga lo siguiente:
 
-1. AEM Cree un correo electrónico basado en una plantilla de correo electrónico específica de un cliente de correo electrónico. Consulte [Creación de correos electrónicos en Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) para obtener más información.
+1. AEM Cree un correo electrónico basado en una plantilla de correo electrónico específica de un cliente de correo electrónico. Consulte [Creación de correos electrónicos en Adobe Campaign Standard](https://helpx.adobe.com/es/campaign/standard/channels/using/creating-an-email.html) para obtener más información.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

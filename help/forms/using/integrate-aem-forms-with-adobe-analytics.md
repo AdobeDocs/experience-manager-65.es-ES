@@ -223,7 +223,7 @@ Realice los siguientes pasos para crear una configuración de Adobe Launch:
 
 >[!NOTE]
 >
-> Cuando [incrusta AEM Forms en una página de AEM Sites](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites), no se admiten las configuraciones de Launch de Adobe en un iFrame para formularios adaptables. Para resolver esto, configure las reglas de Launch de Adobe directamente en la página de Sites o migre las configuraciones de Launch de Adobe existentes de AEM Forms a la página de Sites.
+> Cuando [incrusta AEM Forms en una página de AEM Sites](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites), no se admiten las configuraciones de Launch de Adobe en un iFrame para formularios adaptables. Para resolver esto, configure las reglas de Launch de Adobe directamente en la página de Sites o migre las configuraciones de Launch de Adobe existentes de AEM Forms a la página de Sites.
 
 
 ### Habilitar [!DNL Adobe Analytics] para un formulario adaptable {#enable-analytics-adaptive-form}

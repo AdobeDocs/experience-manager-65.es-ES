@@ -188,7 +188,7 @@ El paso **Establecer variable** se ejecuta repetidamente, incrementando el valor
 
 >[!NOTE]
 >
->Ver [paso OR Split](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Ver [paso OR Split](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=es#use-a-variable)
 
 ![Bifurcación mediante OR Split](assets/variables_orsplit_new.png)
 

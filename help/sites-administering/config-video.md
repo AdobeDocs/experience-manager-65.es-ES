@@ -24,7 +24,7 @@ Para que se produzca la transcodificación adecuada, un administrador instala FF
 
 >[!CAUTION]
 >
->Este componente de base se ha desaprobado. El Adobe recomienda usar el [componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html) en su lugar.
+>Este componente de base se ha desaprobado. El Adobe recomienda usar el [componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=es) en su lugar.
 
 >[!CAUTION]
 >

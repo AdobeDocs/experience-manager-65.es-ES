@@ -31,7 +31,7 @@ Este controlador almacena el mensaje de respuesta SAML cifrado en el nodo de usu
 
 >[!NOTE]
 >
->AEM Ver [una demostración de la integración de y SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
+>AEM Ver [una demostración de la integración de y SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=es).
 
 ## Configuración del controlador de autenticación SAML 2.0 {#configuring-the-saml-authentication-handler}
 

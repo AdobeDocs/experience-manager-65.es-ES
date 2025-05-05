@@ -42,7 +42,7 @@ Con la aplicación Mobile On-Demand Preflight, puede ver todos los proyectos a l
 
 >[!NOTE]
 >
->AEM La aplicación Preflight se utiliza para previsualizar contenido y navegar por páginas. Para obtener información detallada acerca de la aplicación de comprobaciones, haga clic [aquí](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>AEM La aplicación Preflight se utiliza para previsualizar contenido y navegar por páginas. Para obtener información detallada acerca de la aplicación de comprobaciones, haga clic [aquí](https://helpx.adobe.com/es/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Primeros pasos {#getting-ahead}

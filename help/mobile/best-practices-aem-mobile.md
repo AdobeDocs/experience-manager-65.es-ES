@@ -28,8 +28,8 @@ Crear una aplicación de AEM Mobile On-demand Services es diferente a crear una 
 >
 >Para obtener información detallada sobre los complementos, consulte los siguientes recursos:
 >
->* [Uso de complementos de Cordova en AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [Uso de complementos habilitados para Cordova específicos de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [Uso de complementos de Cordova en AEM Mobile](https://helpx.adobe.com/es/digital-publishing-solution/help/cordova-api.html)
+>* [Uso de complementos habilitados para Cordova específicos de AEM Mobile](https://helpx.adobe.com/es/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * Las plantillas que utilizan la funcionalidad del complemento deben escribirse de tal manera que se puedan crear en el explorador, sin que esté presente el puente del complemento.

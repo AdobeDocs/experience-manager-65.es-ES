@@ -24,7 +24,7 @@ Las acciones de Content Management son los componentes básicos que ayudan a cre
 
 >[!NOTE]
 >
->Para obtener más información sobre las consideraciones de diseño de las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño de las aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
+>Para obtener más información sobre las consideraciones de diseño de las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño de las aplicaciones de AEM Mobile](https://helpx.adobe.com/es/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
 
 >[!CAUTION]
 >

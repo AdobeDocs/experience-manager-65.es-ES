@@ -70,4 +70,4 @@ Antes de establecer la comunicación entre una aplicación de Salesforce y un en
 1. Haga clic en **[!UICONTROL Probar conexión]**.
 1. Si la conexión se realiza correctamente, haga clic en el botón **[!UICONTROL Crear]**.
 
-Ahora, puede [crear el modelo de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) para integrar la fuente de datos configurada con su Forms adaptable.
+Ahora, puede [crear el modelo de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es) para integrar la fuente de datos configurada con su Forms adaptable.

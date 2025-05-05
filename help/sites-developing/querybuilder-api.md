@@ -32,15 +32,15 @@ La API de REST proporciona acceso a las mismas funciones a través de HTTP con r
 
 >[!NOTE]
 >
->La API de QueryBuilder se crea mediante la API de JCR. También puede consultar el JCR de Adobe Experience Manager utilizando la API JCR desde un paquete OSGi. Para obtener más información, consulte [Adobe Experience Manager con la API de JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html).
+>La API de QueryBuilder se crea mediante la API de JCR. También puede consultar el JCR de Adobe Experience Manager utilizando la API JCR desde un paquete OSGi. Para obtener más información, consulte [Adobe Experience Manager con la API de JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=es).
 
 ## Sesión de Gem {#gem-session}
 
-[Gems de Adobe Experience Manager AEM ()](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) es una serie de conocimientos técnicos sobre Adobe Experience Manager que ofrecen expertos en Adobe. Esta sesión dedicada al generador de consultas es útil para obtener una descripción general y utilizar la herramienta.
+[Gems de Adobe Experience Manager AEM ()](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=es) es una serie de conocimientos técnicos sobre Adobe Experience Manager que ofrecen expertos en Adobe. Esta sesión dedicada al generador de consultas es útil para obtener una descripción general y utilizar la herramienta.
 
 >[!NOTE]
 >
->AEM AEM sesión de Gem [Busque fácilmente formularios con el creador de consultas de](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) para obtener una descripción detallada del creador de consultas.
+>AEM AEM sesión de Gem [Busque fácilmente formularios con el creador de consultas de](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=es) para obtener una descripción detallada del creador de consultas.
 
 ## Consultas de muestra {#sample-queries}
 

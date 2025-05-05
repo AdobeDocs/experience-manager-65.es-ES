@@ -28,9 +28,9 @@ Como parte del proceso de integración, configure el flujo de trabajo **DAM Upda
 
 >[!NOTE]
 >
->Puede generar plantillas de InDesign a partir de archivos de InDesign antes de importarlas a AEM Assets. Para obtener más información, vea [Trabajar con archivos y plantillas](https://helpx.adobe.com/indesign/using/files-templates.html).
+>Puede generar plantillas de InDesign a partir de archivos de InDesign antes de importarlas a AEM Assets. Para obtener más información, vea [Trabajar con archivos y plantillas](https://helpx.adobe.com/es/indesign/using/files-templates.html).
 >
->Puede asignar los elementos de las plantillas de InDesign a etiquetas XML. Las etiquetas asignadas se muestran como propiedades cuando se asignan propiedades de producto con propiedades de plantilla en Catalog Producer. Para obtener más información sobre el etiquetado XML en archivos de InDesign, consulte [Etiquetado de contenido para XML](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
+>Puede asignar los elementos de las plantillas de InDesign a etiquetas XML. Las etiquetas asignadas se muestran como propiedades cuando se asignan propiedades de producto con propiedades de plantilla en Catalog Producer. Para obtener más información sobre el etiquetado XML en archivos de InDesign, consulte [Etiquetado de contenido para XML](https://helpx.adobe.com/es/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >

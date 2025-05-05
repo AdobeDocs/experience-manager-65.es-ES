@@ -28,9 +28,9 @@ SPA AEM En este documento se describen los pasos recomendados para cargar una in
 Los requisitos previos son simples.
 
 * AEM Asegúrese de que una instancia de se esté ejecutando localmente.
-* AEM SPA AEM Cree un proyecto de base de usando [el tipo de archivo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
+* AEM SPA AEM Cree un proyecto de base de usando [el tipo de archivo del proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es&#available-properties).
    * AEM SPA Esto forma la base del proyecto de que se actualizará para incluir la dirección de correo electrónico externa
-   * SPA Los ejemplos de este documento utilizan el punto de partida de [el proyecto de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
+   * SPA Los ejemplos de este documento utilizan el punto de partida de [el proyecto de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es#spa-editor).
 * SPA Tenga a mano el React externo de trabajo que desea integrar.
 
 ## SPA AEM Cargar el a un proyecto de {#upload-spa-to-aem-project}

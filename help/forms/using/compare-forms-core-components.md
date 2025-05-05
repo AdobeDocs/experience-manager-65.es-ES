@@ -23,7 +23,7 @@ La función Comparar de los componentes principales de Forms adaptable ayuda a l
 
 ## Requisitos previos {#prerequisite-versioning}
 
-AEM Para usar la característica Comparar en un formulario adaptable basado en componentes principales, asegúrese de que [Componentes principales de un formulario adaptable](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) esté habilitado en su entorno de Forms de 6.5.
+AEM Para usar la característica Comparar en un formulario adaptable basado en componentes principales, asegúrese de que [Componentes principales de un formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) esté habilitado en su entorno de Forms de 6.5.
 
 ## Comparar distintos formularios adaptables {#compare-af-65}
 

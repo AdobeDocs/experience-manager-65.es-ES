@@ -57,7 +57,7 @@ Esto ayuda a un desarrollador a lo siguiente:
 >Consulte:
 >
 >* AEM Artículo de la base de conocimiento, [Resolución de problemas de IU táctil de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obtener más sugerencias y herramientas.
->* AEM AEM Sesión de Gems sobre [Modo de desarrollador de 6.0 de la](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
+>* AEM AEM Sesión de Gems sobre [Modo de desarrollador de 6.0 de la](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=es).
 >
 
 ## Abriendo modo de desarrollador {#opening-developer-mode}

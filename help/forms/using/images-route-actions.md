@@ -29,7 +29,7 @@ Para personalizar las imágenes utilizadas en las acciones de ruta, siga los pas
 
    >[!NOTE]
    >
-   >Para obtener más información, consulte [Acceso a WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >Para obtener más información, consulte [Acceso a WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=es).
 
    >[!NOTE]
    >

@@ -57,12 +57,12 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Creación de un formulario adaptable {#create-an-adaptive-form}
 
-1. AEM Inicie sesión en su [instancia de autor local](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
+1. AEM Inicie sesión en su [instancia de autor local](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es#author-and-publish-installs).
 
 1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 

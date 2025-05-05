@@ -77,7 +77,7 @@ También puede proporcionar un archivo de imagen para utilizarlo como miniatura 
 Existen pestañas adicionales (y opcionales) para crear un servicio en la nube e integrar el complemento SDK de Adobe Mobile Services en su aplicación.
 
 * Generar: Haga clic en Administrar configuraciones y configure el servicio de compilación de build.phonegap.com aquí. A continuación, en la lista desplegable, podrá seleccionar el servicio en la nube de PhoneGap Build recién creado.
-* Analytics: haz clic en Administrar configuraciones y configura tu servicio en la nube de [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). A continuación, en la lista desplegable, podrá seleccionar el Mobile Service recién creado para integrarlo en su aplicación móvil.
+* Analytics: haz clic en Administrar configuraciones y configura tu servicio en la nube de [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=es). A continuación, en la lista desplegable, podrá seleccionar el Mobile Service recién creado para integrarlo en su aplicación móvil.
 
 >[!NOTE]
 >

@@ -32,7 +32,7 @@ Siga estos pasos para configurar AEM Mobile AEM y, por lo tanto, permitir al usu
 
 Para empezar a configurar AEM Mobile, debe hacer lo siguiente:
 
-* **Solicitar una clave de API**: para acceder a la API de On-Demand Services, debe solicitar una clave de API. Para solicitar la clave de API, complete el [formulario de PDF](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Enviar el formulario completado al Soporte técnico de Adobe Developer: [wwds@adobe.com](mailto:wwds@adobe.com)
+* **Solicitar una clave de API**: para acceder a la API de On-Demand Services, debe solicitar una clave de API. Para solicitar la clave de API, complete el [formulario de PDF](https://helpx.adobe.com/es/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Enviar el formulario completado al Soporte técnico de Adobe Developer: [wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **Generar el ID de dispositivo y el token de dispositivo**: Una vez que haya recibido la clave de API, puede generar el ID de dispositivo y el token de dispositivo. Vaya a `https://aex.aemmobile.adobe.com` y haga lo siguiente:
 
@@ -46,7 +46,7 @@ Si se cumplen todas las condiciones, se generan un ID de dispositivo y un token 
 
 >[!NOTE]
 >
->Se debe otorgar acceso a la Adobe ID necesaria en un proyecto de AEM Mobile. Consulte [Administración de cuentas para AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) en la Ayuda en línea.
+>Se debe otorgar acceso a la Adobe ID necesaria en un proyecto de AEM Mobile. Consulte [Administración de cuentas para AEM Mobile](https://helpx.adobe.com/es/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) en la Ayuda en línea.
 
 ## Creación de proyectos para AEM Mobile {#creating-projects-for-aem-mobile}
 
@@ -56,7 +56,7 @@ Para crear un proyecto es necesario iniciar sesión en el portal de On-Demand Se
 
 >[!NOTE]
 >
->Para obtener más información sobre la creación de proyectos en AEM Mobile, haga clic [aquí](https://helpx.adobe.com/digital-publishing-solution/help/creating-projects.html).
+>Para obtener más información sobre la creación de proyectos en AEM Mobile, haga clic [aquí](https://helpx.adobe.com/es/digital-publishing-solution/help/creating-projects.html).
 
 ## Configuración de un conector de AEM Mobile {#configuring-an-aem-mobile-connector}
 
@@ -117,7 +117,7 @@ En el desarrollo de aplicaciones de AEM Mobile, existen tres funciones diferente
 * Desarrollador
 * Autor
 
-Para obtener más información sobre cómo crear funciones con diferentes permisos, como crear aplicaciones o crear y publicar contenido, haga clic en [Crear funciones de usuario y conceder acceso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) en la Ayuda de AEM Mobile.
+Para obtener más información sobre cómo crear funciones con diferentes permisos, como crear aplicaciones o crear y publicar contenido, haga clic en [Crear funciones de usuario y conceder acceso](https://helpx.adobe.com/es/digital-publishing-solution/help/account-admin-dps.html) en la Ayuda de AEM Mobile.
 
 >[!NOTE]
 >

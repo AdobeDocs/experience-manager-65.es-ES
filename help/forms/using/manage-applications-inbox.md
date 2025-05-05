@@ -140,7 +140,7 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * AEM Implemente los índices mediante un paquete de. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
+   * AEM Implemente los índices mediante un paquete de. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=es) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,7 +150,7 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Cree un índice de propiedades y establézcalo en true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Cree un índice de propiedades y establézcalo en true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=es#the-property-index).
 
 1. Después de configurar índices en CRX DE o implementar mediante un paquete, [vuelva a realizar el índice del repositorio](https://helpx.adobe.com/es/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 

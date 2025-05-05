@@ -122,7 +122,7 @@ En Navegación, las consolas disponibles son:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> le permite administrar todas las pantallas del cliente, de cualquier tamaño y en cualquier ubicación.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=es">Screens</a> le permite administrar todas las pantallas del cliente, de cualquier tamaño y en cualquier ubicación.</td>
   </tr>
   <tr>
    <td>Sites</td>

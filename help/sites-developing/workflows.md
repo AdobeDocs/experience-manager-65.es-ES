@@ -206,7 +206,7 @@ Por ejemplo, para un flujo de trabajo con seis pasos y cuatro fases:
 
 ### Flujos de trabajo y Forms {#workflows-and-forms}
 
-AEM Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en la. AEM Se puede combinar con los [componentes principales de los componentes de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponibles en una instancia de estándar o con la [solución de AEM Forms](/help/forms/using/aem-forms-workflow.md).
+AEM Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en la. AEM Se puede combinar con los [componentes principales de los componentes de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=es) disponibles en una instancia de estándar o con la [solución de AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Al crear un formulario, el envío del formulario se puede asociar fácilmente a un modelo del flujo de trabajo. Por ejemplo, para almacenar el contenido en una ubicación concreta del repositorio o para notificar a un usuario el envío del formulario y su contenido.
 

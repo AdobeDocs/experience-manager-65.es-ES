@@ -378,7 +378,7 @@ En las grandes empresas se puede distribuir la infraestructura necesaria para cr
 
 [!DNL Dynamic Media] proporciona creación y entrega de medios enriquecidos mejorados en [!DNL Experience Manager Assets] para impulsar experiencias de vanguardia que sean envolventes y personalizadas. Al cargar un único recurso principal de alta calidad y utilizar el procesamiento y los visores avanzados en la nube de Adobe, puede ofrecer cualquier combinación de representaciones sobre la marcha para admitir la estrategia de medios de su organización.
 
-Para obtener más información sobre las nuevas características de [!DNL Dynamic Media], consulte [Notas de la versión de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Para obtener más información sobre las nuevas características de [!DNL Dynamic Media], consulte [Notas de la versión de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html?lang=es).
 
 ##### Compatibilidad con vídeo 360 {#video-support}
 
@@ -390,7 +390,7 @@ Ahora puede personalizar las miniaturas de los recursos de vídeo mediante fotog
 
 ##### Mejoras de accesibilidad {#accessibility-enhancements}
 
-Los visores de [!DNL Dynamic Media] ahora admiten características de accesibilidad mejoradas como compatibilidad con Aria, lectores de pantalla y texto alternativo. Para obtener más información, consulte [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+Los visores de [!DNL Dynamic Media] ahora admiten características de accesibilidad mejoradas como compatibilidad con Aria, lectores de pantalla y texto alternativo. Para obtener más información, consulte [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=es).
 
 #### Mejora de la experiencia de búsqueda {#experience-enhancement-for-searching}
 
@@ -437,7 +437,7 @@ AEM Consulte el [Resumen de las nuevas funciones y mejoras de Forms](/help/forms
 
 El Adobe de utiliza un modelo de desarrollo centrado en el cliente que permite a los clientes contribuir en todas las etapas del proceso de desarrollo, durante la especificación, el desarrollo y las pruebas. Damos las gracias a todos los clientes y socios colaboradores en este proceso.
 
-Adobe dispone de los procedimientos y procesos necesarios para permitir la recopilación, la priorización y el seguimiento de la resolución de errores centrada en el cliente y el desarrollo de solicitudes de mejora. El [Portal de asistencia al Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=es#support) está integrado con el sistema de seguimiento de defectos y mejora de Adobe. El equipo de Asistencia al cliente identifica y resuelve las preguntas del cliente siempre que es posible. Cuando se pasa a I+D, toda la información del cliente se captura y se utiliza con fines de priorización e informes. En el desarrollo se da prioridad a la asistencia de pago, los problemas de garantía y las mejoras de pago del cliente.
+Adobe dispone de los procedimientos y procesos necesarios para permitir la recopilación, la priorización y el seguimiento de la resolución de errores centrada en el cliente y el desarrollo de solicitudes de mejora. El [Portal de asistencia al Experience Manager](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&amp;lang=es#support) está integrado con el sistema de seguimiento de defectos y mejora de Adobe. El equipo de Asistencia al cliente identifica y resuelve las preguntas del cliente siempre que es posible. Cuando se pasa a I+D, toda la información del cliente se captura y se utiliza con fines de priorización e informes. En el desarrollo se da prioridad a la asistencia de pago, los problemas de garantía y las mejoras de pago del cliente.
 
 AEM Este proceso de priorización ha dado como resultado más de 750 cambios centrados en el cliente fijados en la versión 6.5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 
@@ -447,7 +447,7 @@ AEM Este proceso de priorización ha dado como resultado más de 750 cambios cen
 
 * Inicio rápido independiente: `cq-quickstart-6.5.0.jar`.
 * Inicio rápido del servidor de aplicaciones: `cq-quickstart-6.5.0.war`.
-* Dispatcher 4.3.2 o posterior para los distintos servidores y plataformas web. Ver [vínculo de descarga](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)
+* Dispatcher 4.3.2 o posterior para los distintos servidores y plataformas web. Ver [vínculo de descarga](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es)
 * Complemento para Eclipse IDE ([leer más y descargar](/help/sites-developing/aem-eclipse.md))
 
 * Extensión del Editor de código de corchetes ([leer más y descargar](/help/sites-developing/aem-brackets.md))
@@ -601,4 +601,4 @@ Los siguientes sitios solo están disponibles para clientes de. Si es cliente de
 
 * Actualizaciones de productos, parches y paquetes para obtener funcionalidad adicional en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
 
-* [Atención al cliente vía Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia de soporte al cliente de Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* [Atención al cliente vía Admin Console](https://adminconsole.adobe.com/). Para obtener más información, consulte [Nueva experiencia de soporte al cliente de Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=es).

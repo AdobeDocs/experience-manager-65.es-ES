@@ -27,7 +27,7 @@ Adobe Campaign es un conjunto de soluciones que le permite personalizar y entreg
 >
 >En este documento se describe la integración de Adobe Campaign AEM AEM con la versión 6.5 de, la solución de integración local o la solución de alojamiento de AMS (On-Premise), o la solución de alojada en AMS.
 >
->Para obtener más información sobre la integración de Adobe Campaign con AEM as a Cloud Service AEM, la solución nativa de la nube de la solución de la, [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
+>Para obtener más información sobre la integración de Adobe Campaign con AEM as a Cloud Service AEM, la solución nativa de la nube de la solución de la, [consulte este documento.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=es)
 
 ## Integración con Adobe Campaign Classic {#acc}
 
@@ -44,7 +44,7 @@ AEM En la siguiente documentación se describe cómo integrar los segmentos de c
 
 La siguiente documentación adicional describe cómo utilizar la integración.
 
-* AEM [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html): obtenga información acerca de los componentes de correo electrónico estándar que puede usar para crear contenido de Campaign en la.
+* AEM [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es): obtenga información acerca de los componentes de correo electrónico estándar que puede usar para crear contenido de Campaign en la.
 * [Solución de problemas de la integración de Adobe Campaign Classic](/help/sites-administering/troubleshooting-campaignintegration.md): aprenda a solucionar los problemas más comunes con la integración de AEM-ACCs.
 
 ## Integración con Adobe Campaign Standard {#acs}
@@ -62,4 +62,4 @@ AEM En la siguiente documentación se describe cómo integrar los segmentos de c
 
 La siguiente documentación adicional describe cómo utilizar la integración.
 
-* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es)

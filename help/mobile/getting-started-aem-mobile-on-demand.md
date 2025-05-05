@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Si no usa Adobe Experience Manager AEM () como fuente de administración de contenido, consulte la [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Si no usa Adobe Experience Manager AEM () como fuente de administración de contenido, consulte la [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/es/digital-publishing-solution/topics.html).
 
 AEM proporciona varias herramientas que le permiten integrar el contenido en aplicaciones móviles.
 
@@ -32,7 +32,7 @@ AEM La aplicación de comprobación preliminar se puede considerar un entorno de
 
 >[!NOTE]
 >
->AEM Para obtener información detallada acerca de la aplicación Preflight, consulte [Uso de la aplicación Preflight de la aplicación Preflight](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html) en la Ayuda de AEM Mobile On-demand Services.
+>AEM Para obtener información detallada acerca de la aplicación Preflight, consulte [Uso de la aplicación Preflight de la aplicación Preflight](https://helpx.adobe.com/es/digital-publishing-solution/help/preflight-app.html) en la Ayuda de AEM Mobile On-demand Services.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -104,4 +104,4 @@ AEM Para comenzar con las funciones y responsabilidades de un autor, consulte [C
 
 >[!NOTE]
 >
->AEM También es responsable de configurar la asignación de derechos, crear tarjetas y diseños y enviar notificaciones push. Además, para obtener más información sobre los métodos para crear contenido, administrar artículos y colecciones, crear titulares, tarjetas y diseños en AEM Mobile, consulte [AEM Mobile On-Demand Portal](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>AEM También es responsable de configurar la asignación de derechos, crear tarjetas y diseños y enviar notificaciones push. Además, para obtener más información sobre los métodos para crear contenido, administrar artículos y colecciones, crear titulares, tarjetas y diseños en AEM Mobile, consulte [AEM Mobile On-Demand Portal](https://helpx.adobe.com/es/digital-publishing-solution/topics.html#dynamicpod_reference_2).

@@ -121,7 +121,7 @@ Los cuadros de diálogo son un factor importante a la hora de migrar los compone
 
    * Hay una capa de compatibilidad en la IU táctil para abrir un cuadro de diálogo de IU clásica dentro de un &quot;envoltorio de IU táctil&quot;, pero esto tiene una funcionalidad limitada y no se recomienda a largo plazo.
 
-* [Personalizar campos de diálogo en la IU táctil](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Personalizar campos de diálogo en la IU táctil](https://helpx.adobe.com/es/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Creación de un nuevo componente de campo de IU de Granite](/help/sites-developing/granite-ui-component.md)
 * [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md) (con la IU táctil)
 
@@ -149,9 +149,9 @@ AEM Para obtener información completa sobre el desarrollo de los recursos, cons
 
 * [Guía del usuario sobre desarrollo](/help/sites-developing/getting-started.md)
 * [Documentación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* AEM [Tutorials y vídeos de 6.5 sitios de](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
+* AEM [Tutorials y vídeos de 6.5 sitios de](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=es)
 * [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)
-* AEM [Gems de](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
+* AEM [Gems de](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=es)
 * [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

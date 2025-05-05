@@ -24,7 +24,7 @@ Para AEM Communities, es necesario configurar Dispatcher para garantizar el func
 
 Para saber qué es necesario para la implementación y el diseño de sitios específicos
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home&amp;lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&amp;support-tab=home&amp;lang=es#support)
 
 Consulte también la [documentación principal de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es).
 
@@ -42,7 +42,7 @@ Cuando se configura para admitir el almacenamiento en caché de Dispatcher, se a
 
 ### Requisitos  {#requirements}
 
-* Dispatcher versión 4.1.2 o posterior (consulte [Instalación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) para obtener la versión más reciente)
+* Dispatcher versión 4.1.2 o posterior (consulte [Instalación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=es) para obtener la versión más reciente)
 * AEM [Paquete ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versión 3.3.2 o posterior
@@ -69,7 +69,7 @@ AEM La configuración de OSGi **ACS Commons - Encabezado de control de caché de
 
 ## Filtros de Dispatcher {#dispatcher-filters}
 
-La sección /filter del archivo `dispatcher.any` está documentada en [Configuración del acceso al contenido - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
+La sección /filter del archivo `dispatcher.any` está documentada en [Configuración del acceso al contenido - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es).
 
 En esta sección se describen las entradas que probablemente sean necesarias para el correcto funcionamiento de las funciones de Communities.
 
@@ -79,7 +79,7 @@ Los ejemplos siguientes utilizan nombres de propiedades que probablemente se deb
 
 Consulte también lo siguiente:
 
-* [Lista de comprobación de seguridad de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
+* [Lista de comprobación de seguridad de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=es)
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Consulte también lo siguiente:
 
 >[!CAUTION]
 >
->Consulte la [Lista de comprobación de seguridad de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) para obtener más información al restringir el acceso con Dispatcher. Además, lea la [Lista de comprobación de seguridad de AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para obtener más información sobre la seguridad relacionada con su instalación de AEM.
+>Consulte la [Lista de comprobación de seguridad de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=es) para obtener más información al restringir el acceso con Dispatcher. Además, lea la [Lista de comprobación de seguridad de AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para obtener más información sobre la seguridad relacionada con su instalación de AEM.
 >
 
 Las siguientes entradas deben agregarse al final de la sección /filter, especialmente después de todas las entradas denegadas.

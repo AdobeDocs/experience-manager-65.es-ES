@@ -355,7 +355,7 @@ O
 
 ### AEM Crear una biblioteca de cliente con el tipo de archivo del proyecto de{#create-client-library-archetype}
 
-AEM Puede agregar funciones personalizadas agregando una biblioteca de cliente al proyecto creado [mediante el tipo de archivo del proyecto de](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+AEM Puede agregar funciones personalizadas agregando una biblioteca de cliente al proyecto creado [mediante el tipo de archivo del proyecto de](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Si tiene un proyecto existente <!--and have already the project structure as shown in the image below,-->, puede agregar directamente [funciones personalizadas](#create-add-custom-function) a su proyecto local.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -572,7 +572,7 @@ Vamos a previsualizar el formulario para observar cómo se implementan las funci
 
 >[!NOTE]
 >
-> Puede hacer referencia a la carpeta [funciones personalizadas](/help/forms/using/assets/customfunctions.zip) siguiente. AEM Descargue e instale esta carpeta en su instancia de mediante el [Administrador de paquetes](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> Puede hacer referencia a la carpeta [funciones personalizadas](/help/forms/using/assets/customfunctions.zip) siguiente. AEM Descargue e instale esta carpeta en su instancia de mediante el [Administrador de paquetes](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Compatibilidad con funciones asincrónicas en funciones personalizadas {#support-of-async-functions}
 

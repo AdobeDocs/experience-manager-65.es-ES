@@ -44,7 +44,7 @@ Este documento le guía en detalle por cada uno de estos pasos.
 
 * Acceso de administrador a Adobe Campaign Classic
    * Para realizar la integración, necesita una instancia de Adobe Campaign Classic en funcionamiento, incluida una base de datos configurada.
-   * Si necesita más detalles sobre cómo configurar Adobe Campaign Classic, consulte la [documentación de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html), en particular la guía Instalación y configuración.
+   * Si necesita más detalles sobre cómo configurar Adobe Campaign Classic, consulte la [documentación de Adobe Campaign Classic](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=es), en particular la guía Instalación y configuración.
 * AEM Acceso de administrador a la
 
 ## AEM Instalación del paquete de integración de en Campaign {#install-package}
@@ -119,7 +119,7 @@ AEM El paquete de integración crea automáticamente el operador `aemserver` que
    >
    >De forma predeterminada, no hay ninguna zona de seguridad configurada para el operador. AEM Para conectarse a Adobe Campaign, debe seleccionar una zona tal como se detalla en los pasos anteriores.
    >
-   >El Adobe AEM recomienda encarecidamente crear una zona de seguridad específica para el área de seguridad con el fin de evitar problemas de seguridad. Para obtener más información sobre este tema, consulte la [documentación de Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >El Adobe AEM recomienda encarecidamente crear una zona de seguridad específica para el área de seguridad con el fin de evitar problemas de seguridad. Para obtener más información sobre este tema, consulte la [documentación de Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=es)
 
 1. En el cliente de Campaign, vuelva al operador `aemserver` y seleccione la pestaña **General**.
 

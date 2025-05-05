@@ -45,7 +45,7 @@ Este documento le guía en detalle por cada uno de estos pasos.
 ## Requisitos previos {#prerequisites}
 
 * Acceso de administrador a Adobe Campaign Standard
-   * Si necesita más detalles sobre cómo configurar Adobe Campaign Standard, consulte la [documentación de Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
+   * Si necesita más detalles sobre cómo configurar Adobe Campaign Standard, consulte la [documentación de Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=es)
 * AEM Acceso de administrador a la
 
 ## Configuración del usuario de aemserver en Campaign {#aemserver-user}
@@ -66,7 +66,7 @@ Adobe Campaign Standard AEM viene de manera predeterminada con un usuario `aemse
 
 AEM El usuario de `aemserver` tiene ahora los derechos necesarios para que pueda usarlo para comunicarse con Adobe Campaign.
 
-AEM Sin embargo, para poder usar el usuario `aemserver`, se debe establecer su contraseña. Esto no se puede hacer a través de Adobe Campaign. Debe ser realizado por un ingeniero de soporte de Adobe. [Envíe un ticket al Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/?support-tab=home#support) para solicitar el restablecimiento de la contraseña de `aemserver`. Una vez que tenga la contraseña del Servicio de atención al cliente de Adobe, manténgala en una ubicación segura.
+AEM Sin embargo, para poder usar el usuario `aemserver`, se debe establecer su contraseña. Esto no se puede hacer a través de Adobe Campaign. Debe ser realizado por un ingeniero de soporte de Adobe. [Envíe un ticket al Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/es?support-tab=home#support) para solicitar el restablecimiento de la contraseña de `aemserver`. Una vez que tenga la contraseña del Servicio de atención al cliente de Adobe, manténgala en una ubicación segura.
 
 ## Verificación de AEMResourceTypeFilter en Campaign {#resource-type-filter}
 

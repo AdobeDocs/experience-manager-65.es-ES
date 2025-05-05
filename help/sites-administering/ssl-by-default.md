@@ -195,7 +195,7 @@ A continuación encontrará un ejemplo para crear un certificado autofirmado en 
 
 >[!NOTE]
 >
->AEM AEM Consulte [Uso de cURL con la dirección de correo electrónico ](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para obtener una lista centralizada de los comandos cURL útiles en la sección de comandos de la dirección de correo electrónico.
+>AEM AEM Consulte [Uso de cURL con la dirección de correo electrónico ](https://helpx.adobe.com/es/experience-manager/6-4/sites/administering/using/curl.html) para obtener una lista centralizada de los comandos cURL útiles en la sección de comandos de la dirección de correo electrónico.
 
 También puede automatizar la configuración SSL/TLS mediante la herramienta cURL. Para ello, publique los parámetros de configuración en esta dirección URL:
 

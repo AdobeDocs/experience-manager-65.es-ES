@@ -47,7 +47,7 @@ Puede encontrar el código de esta página en GitHub
 
 >[!NOTE]
 >
->AEM Este ejemplo de código está relacionado con la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+>AEM Este ejemplo de código está relacionado con la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=es).
 
 ## Recursos relacionados {#related-resources}
 

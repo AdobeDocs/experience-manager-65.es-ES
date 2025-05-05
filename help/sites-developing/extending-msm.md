@@ -32,8 +32,8 @@ Esta página le ayuda a ampliar las funcionalidades del Administrador de varios 
 >Esta página se debe leer junto con [Reutilización del contenido: Administrador de varios sitios](/help/sites-administering/msm.md).
 >
 >Las siguientes secciones de Reestructuración de repositorios de Sites también pueden ser de interés:
->* [Configuraciones de modelo de administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [Configuraciones de despliegue del administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
+>* [Configuraciones de modelo de administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=es#multi-site-manager-blueprint-configurations)
+>* [Configuraciones de despliegue del administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=es#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >

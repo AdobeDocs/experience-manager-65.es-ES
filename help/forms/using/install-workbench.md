@@ -37,11 +37,11 @@ Los recursos de esta tabla pueden ayudarle a obtener más información y a empez
   </tr>
   <tr>
    <td><p>Información general sobre AEM Forms y su integración con otros productos de Adobe</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Información general sobre AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=es">Información general sobre AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Toda la documentación disponible para AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Documentación de AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=es">Documentación de AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Actualizaciones de parches, notas técnicas e información adicional sobre esta versión del producto</p> </td>
@@ -100,7 +100,7 @@ Espacio en disco para la instalación:
 
 ### Plataformas compatibles {#supported-platforms}
 
-Consulte la lista completa de plataformas compatibles con Workbench en [Plataformas compatibles con AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
+Consulte la lista completa de plataformas compatibles con Workbench en [Plataformas compatibles con AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_es).
 
 ## Consideraciones sobre la instalación de Designer {#designer-installation-considerations}
 
@@ -191,7 +191,7 @@ Para utilizar Workbench, debe tener una instancia de AEM Forms en ejecución, n
 
 ### Configuración del tiempo de espera {#configuring-timeout-settings}
 
-De forma predeterminada, el valor del tiempo de espera de Workbench es de dos horas, independientemente de la actividad o la inactividad. Para editar la configuración de tiempo de espera, consulte &quot;Configuración de la administración de usuarios > Configuración de atributos de sistema avanzados&quot; en la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Ayuda de la consola de administración</a>.
+De forma predeterminada, el valor del tiempo de espera de Workbench es de dos horas, independientemente de la actividad o la inactividad. Para editar la configuración de tiempo de espera, consulte &quot;Configuración de la administración de usuarios > Configuración de atributos de sistema avanzados&quot; en la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=es">Ayuda de la consola de administración</a>.
 
 ### Configurar Workbench para que se conecte a través de HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

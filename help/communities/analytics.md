@@ -87,17 +87,17 @@ Para configurar las características de Analytics para Communities, es necesario
 
 ## Grupo de informes de Adobe Analytics para informes de vídeo {#adobe-analytics-report-suite-for-video-reporting}
 
-Con el [Administrador de grupos de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html) de Adobe Experience Cloud, los grupos de informes de Analytics se pueden configurar para que un sitio de comunidad pueda proporcionar informes para las funciones de las comunidades.
+Con el [Administrador de grupos de informes](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=es) de Adobe Experience Cloud, los grupos de informes de Analytics se pueden configurar para que un sitio de comunidad pueda proporcionar informes para las funciones de las comunidades.
 
-Al iniciar sesión en [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) con [Nombre de empresa y Nombre de usuario](/help/communities/analytics.md#prerequisites), es posible configurar un grupo de informes nuevo o existente para que tenga:
+Al iniciar sesión en [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=es) con [Nombre de empresa y Nombre de usuario](/help/communities/analytics.md#prerequisites), es posible configurar un grupo de informes nuevo o existente para que tenga:
 
-* [11 Variables de conversión](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) (eVars)
+* [11 Variables de conversión](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=es) (eVars)
 
    * **`evar1`** a través de **`evar11`** habilitado
 
    * Puede cambiar el propósito (cambiar el nombre) de las eVars existentes o crear otras que quiera usar para las funciones de Communities
 
-* [7 eventos de éxito](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) (eventos)
+* [7 eventos de éxito](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=es) (eventos)
 
    * **`event1`** a través de **`event7`** habilitado
 
@@ -107,7 +107,7 @@ Al iniciar sesión en [Adobe Experience Cloud](https://experienceleague.adobe.co
 
    * Puede reutilizar (cambiar el nombre) de eventos existentes o crear otros que se utilizarán para las funciones de Communities
 
-* [Administración de vídeo](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+* [Administración de vídeo](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es)
 
    * Consola de informes de vídeo
 
@@ -659,6 +659,6 @@ Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar dat
 
 ## Recursos {#resources}
 
-* Adobe Experience Cloud: [Ayuda y referencia de Analytics](https://experienceleague.adobe.com/docs/analytics.html)
+* Adobe Experience Cloud: [Ayuda y referencia de Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=es)
 * AEM: [Integración con Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics con proveedores externos](/help/sites-administering/external-providers.md)

@@ -52,7 +52,7 @@ ht-degree: 6%
 
 * Plantillas totalmente legibles para la página de detalles del producto y la página de lista del producto. Los autores ahora pueden crear plantillas y arrastrar y soltar componentes de lista de productos y detalles de productos en estas plantillas. Además de añadir otros componentes, los autores ahora pueden cambiar el diseño de estas plantillas también, lo que les da una libertad ilimitada para crear experiencias increíbles que combinen contenido de marketing y comercio.
 
-* CIF AEM Se han mejorado todos los componentes principales de la aplicación de creación fácil de usar para admitir el sistema de estilos [. ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) Se han proporcionado estilos de ejemplo para el componente de lista de productos.
+* CIF AEM Se han mejorado todos los componentes principales de la aplicación de creación fácil de usar para admitir el sistema de estilos [. ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=es) Se han proporcionado estilos de ejemplo para el componente de lista de productos.
 
 * Componentes del lado del cliente basados en React para la administración de cuentas. Esta versión admite las siguientes funcionalidades: Inicio de sesión, Olvidé la contraseña y Crear una cuenta.
 

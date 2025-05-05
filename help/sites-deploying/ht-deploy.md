@@ -24,7 +24,7 @@ AEM En los temas siguientes se describe cómo realizar tareas de implementación
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [Cómo purgar flujos de trabajo y el registro de auditoría](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [Cómo purgar flujos de trabajo y el registro de auditoría](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
 * [Consejos de ajuste del rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es)
 

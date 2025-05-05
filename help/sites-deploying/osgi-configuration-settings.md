@@ -37,7 +37,7 @@ Las siguientes opciones de configuración de OSGi (enumeradas según el paquete)
 
 >[!NOTE]
 >
->AEM La herramienta Diferencias de configuración de OSGi, que forma parte de [Herramientas de](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html), se puede usar para enumerar las configuraciones de OSGi predeterminadas.
+>AEM La herramienta Diferencias de configuración de OSGi, que forma parte de [Herramientas de](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=es), se puede usar para enumerar las configuraciones de OSGi predeterminadas.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Al crear una configuración, no cambie la configuración de fábrica. En su luga
 
 >[!CAUTION]
 >
->Al cambiar la configuración de **Minify** o **Gzip**, elimine el contenido de la caché de clientlibs. Consulte [Artículo de la base de conocimiento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) para obtener detalles.
+>Al cambiar la configuración de **Minify** o **Gzip**, elimine el contenido de la caché de clientlibs. Consulte [Artículo de la base de conocimiento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=es) para obtener detalles.
 
 >[!NOTE]
 >

@@ -30,9 +30,9 @@ Los titulares suelen representar vínculos promocionales gráficos.
 >
 >Consulte los siguientes recursos en la Ayuda en línea para conocer los siguientes temas en las aplicaciones de AEM Mobile:
 >
->* [Consideraciones de diseño](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Consideraciones de diseño](https://helpx.adobe.com/es/digital-publishing-solution/help/design-app.html)
 >
->* [Creando titulares](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+>* [Creando titulares](https://helpx.adobe.com/es/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Creación de un titular {#creating-a-banner}

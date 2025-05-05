@@ -46,7 +46,7 @@ AEM AEM Para configurar el contenido de la para que aparezca en un portal, consu
 
 >[!CAUTION]
 >
->AEM El portal de datos Director AEM de la está obsoleto a partir de la versión 6.4. Ver [Funciones obsoletas y eliminadas](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>AEM El portal de datos Director AEM de la está obsoleto a partir de la versión 6.4. Ver [Funciones obsoletas y eliminadas](https://helpx.adobe.com/es/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## AEM Administración del portlet de contenido de la {#administering-the-aem-content-portlet}
 

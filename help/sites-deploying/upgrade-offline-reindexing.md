@@ -180,7 +180,7 @@ Se recomienda clonar el sistema de producción y crear el índice sin conexión 
 
 ### Preparar un Runbook y una ejecución de prueba {#prepare-a-runbook-and-trial-run}
 
-Se recomienda preparar un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) y realizar algunas pruebas antes de ejecutar la actualización en producción.
+Se recomienda preparar un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=es#building-the-upgrade-and-rollback-runbook) y realizar algunas pruebas antes de ejecutar la actualización en producción.
 
 ### Modo de recorrido de documentos con indexación sin conexión {#doc-traversal-mode-with-offline-indexing}
 

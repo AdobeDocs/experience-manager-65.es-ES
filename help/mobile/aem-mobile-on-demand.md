@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Si no usa la fuente de administración de contenido, vea la [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>AEM Si no usa la fuente de administración de contenido, vea la [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/es/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
