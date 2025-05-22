@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6be26e991da6d53f2433991cb9e4919b46c494a8
+source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
 workflow-type: tm+mt
-source-wordcount: '3600'
-ht-degree: 13%
+source-wordcount: '3651'
+ht-degree: 12%
 
 ---
 
@@ -208,8 +208,8 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 | IBM® AIX® 7.2 | Z: No compatible |
 
 1. Linux® Kernel 2.6, 3. x, 4. x, 5. x y 6. x incluye derivados de la distribución Red Hat®, incluidos Red Hat® Enterprise Linux®, CentOS, Oracle Linux® y Amazon Linux®. Las funciones de complemento de AEM Forms solo son compatibles con CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 y Red Hat® Enterprise Linux® 9.
-2. AEM Forms es compatible con Ubuntu 20.04 LTS.
-3. Distribución Linux® compatible con Adobe Managed Services.
+1. AEM Forms es compatible con Ubuntu 20.04 LTS.
+1. Distribución Linux® compatible con Adobe Managed Services.
 
    >[!NOTE]
    >
@@ -220,10 +220,13 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 o posterior)
+   >* OpenSSL 3 (requerido en la ubicación predeterminada del sistema operativo).
 
-4. Las implementaciones de producción de Microsoft® Windows son compatibles con los clientes que actualizan a la versión 6.5 y con el uso que no sea de producción. Las nuevas implementaciones se realizan bajo petición para AEM Sites y Assets.
-5. AEM Forms es compatible con Microsoft® Window Server sin las restricciones R de nivel de soporte.
-6. AEM Forms ha eliminado la compatibilidad con Microsoft® Windows Server 2016.
+   *Para la instalación de OpenSSL 3: las bibliotecas libcrypto.so.3 y libssl.so.3 deben estar disponibles en la ruta de biblioteca predeterminada representada por la variable de entorno LD_LIBRARY_PATH. Si se instalan en una ubicación no estándar, asegúrese de agregar esta ruta de acceso a LD_LIBRARY_PATH antes de iniciar el servidor.*
+
+1. Las implementaciones de producción de Microsoft® Windows son compatibles con los clientes que actualizan a la versión 6.5 y con el uso que no sea de producción. Las nuevas implementaciones se realizan bajo petición para AEM Sites y Assets.
+1. AEM Forms es compatible con Microsoft® Window Server sin las restricciones R de nivel de soporte.
+1. AEM Forms ha eliminado la compatibilidad con Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >
@@ -250,7 +253,7 @@ Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera d
 
 ### Plataformas Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
-Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
+Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
 
 Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatcher:
 

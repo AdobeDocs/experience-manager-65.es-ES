@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 652878504d2225e50ea14885ec96bdd408f77ed0
+source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 9%
@@ -18,9 +18,9 @@ ht-degree: 9%
 
 | Producto | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versión | 6.5.22.0 |
+| Versión | 6.5.23.0 |
 | Tipo | Versión del paquete de servicio |
-| Fecha | 29 de noviembre de 2024 |
+| Fecha | 29 de mayo de 2025 |
 | Descargar URL | [Últimas versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) |
 
 >[!NOTE]
@@ -57,7 +57,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++1. Realice una copia de seguridad del entorno existente
 
-1. Haga una copia de seguridad de su [repositorio de CRX, esquema de base de datos y GDS (almacenamiento global de documentos)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=es).
+1. Haga una copia de seguridad de su [repositorio de CRX, esquema de base de datos y GDS (almacenamiento global de documentos)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 1. Haga una copia de seguridad de la carpeta &lt;*AEM_forms_root*>/deploy.
 
 >[!NOTE]
@@ -207,7 +207,7 @@ El paquete está      se instala automáticamente.
 
 +++1. Realice una copia de seguridad del entorno existente
 
-1. Haga una copia de seguridad de su [Repositorio de CRX y Esquema de base de datos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=es).
+1. Haga una copia de seguridad de su [Repositorio de CRX y Esquema de base de datos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 
 >[!NOTE]
 >
