@@ -1,29 +1,33 @@
 ---
-title: AEM Agregue versiones, comentarios y anotaciones al formulario adaptable de AEM 6.5.
-description: AEM Utilice los componentes principales del formulario adaptable de.5 para agregar comentarios, anotaciones y versiones a un formulario adaptable.
+title: Agregue versiones, comentarios y anotaciones al formulario adaptable de AEM AEM 6.5.
+description: Utilice los componentes principales del formulario adaptable de AEM 6.5 para agregar comentarios, anotaciones y versiones a un formulario adaptable.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
+source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 51%
+source-wordcount: '631'
+ht-degree: 50%
 
 ---
 
 # Versiones, revisión y comentarios de un formulario adaptable
 
 <!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+<span class="preview"> This feature is under the early adopter program. If you're interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
 
 <span class="preview">Esta característica no está habilitada de manera predeterminada. Puede escribir desde su dirección oficial a aem-forms-ea@adobe.com para solicitar acceso a la función.</span>
 
 Los componentes principales de los formularios adaptables permiten a los autores de formularios añadir versiones, comentarios y anotaciones a los formularios. Estas características simplifican el desarrollo de formularios al permitir a los usuarios crear y administrar varias versiones, colaborar mediante comentarios y agregar notas a secciones específicas del formulario, lo que mejora la experiencia de creación de formularios.
 
+Consulte este vídeo paso a paso para ver las funciones de versiones, comentarios y anotaciones de un formulario adaptable.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463265)
+
 ## Requisitos previos {#prerequisite-versioning}
 
-AEM Para usar las características de versiones, comentarios y anotaciones en un formulario adaptable, asegúrese de que [Componentes principales de un formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) esté habilitado en su entorno de Forms de 6.5.
+Para usar las características de versiones, comentarios y anotaciones en un formulario adaptable, asegúrese de que [Componentes principales de un formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) esté habilitado en su entorno de Forms de AEM 6.5.
 
 ## Versiones de formularios adaptables {#adaptive-form-versioning}
 
@@ -87,6 +91,6 @@ Para añadir anotaciones a un formulario, siga los siguientes pasos:
 
    ![Ver anotaciones añadidas](assets/see-annotations.png)
 
-## Consulte también
+## Véase también
 
 * [Comparar componentes principales de Forms adaptable](/help/forms/using/compare-forms-core-components.md)
