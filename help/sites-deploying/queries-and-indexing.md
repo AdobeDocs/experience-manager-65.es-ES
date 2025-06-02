@@ -1,6 +1,6 @@
 ---
 title: Consultas e indexación de Oak
-description: Obtenga información sobre cómo configurar índices en Adobe Experience Manager AEM () 6.5.
+description: Obtenga información sobre cómo configurar índices en Adobe Experience Manager (AEM) 6.5.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,9 +10,9 @@ feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3051'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM Este artículo trata sobre la configuración de índices en la 6. Para obtener prácticas recomendadas sobre cómo optimizar el rendimiento de consultas e indexación, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+>Este artículo trata sobre la configuración de índices en AEM 6. Para obtener prácticas recomendadas sobre cómo optimizar el rendimiento de consultas e indexación, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ## Introducción {#introduction}
 
@@ -107,7 +107,7 @@ El índice ordenado es una extensión del índice de propiedad. Sin embargo, ha 
 
 ### Índice de texto completo de Lucene {#the-lucene-full-text-index}
 
-AEM En la versión 6 de está disponible un indexador de texto completo basado en Apache Lucene.
+Un indexador de texto completo basado en Apache Lucene está disponible en AEM 6.
 
 Si se configura un índice de texto completo, todas las consultas que tienen una condición de texto completo utilizan el índice de texto completo, independientemente de si hay otras condiciones que están indizadas y de si hay una restricción de ruta.
 
@@ -136,7 +136,7 @@ El índice Lucene tiene las siguientes opciones de configuración:
 
 ### Explicación de la búsqueda de texto completo {#understanding-fulltext-search}
 
-La documentación de esta sección se aplica a Apache Lucene, Elasticsearch e índices de texto completo de PostgreSQL, SQLite y MySQL, por ejemplo. AEM El siguiente ejemplo es para el caso de la aplicación de la versión de Oak o Lucene, o bien para la versión de.
+La documentación de esta sección se aplica a Apache Lucene, Elasticsearch e índices de texto completo de PostgreSQL, SQLite y MySQL, por ejemplo. El siguiente ejemplo es para AEM/Oak/Lucene.
 
 <b>Datos para indexar</b>
 
@@ -211,6 +211,10 @@ El único documento encontrado que contiene ambos términos es 200, como en el e
 | --- | --- | --- |
 
 Cuando se encuentran varias entradas, se ordenan por puntuación.
+
+>[!NOTE]
+>
+>El mecanismo de búsqueda descrito en esta sección utiliza la indexación Lucene, no la coincidencia parcial como el comando Linux `grep`.
 
 ### Índice de propiedades de Lucene {#the-lucene-property-index}
 
@@ -362,13 +366,13 @@ En el caso de casos como la carga de palabras de detención en los que se debe c
 
 El propósito del índice Solr es la búsqueda de texto completo, pero también se puede utilizar para indexar la búsqueda por ruta, restricciones de propiedad y restricciones de tipo principal. Esto significa que el índice Solr de Oak se puede utilizar para cualquier tipo de consulta JCR.
 
-AEM La integración en el repositorio se produce en el nivel del repositorio, por lo que Solr es uno de los posibles índices que se pueden utilizar en Oak AEM, la nueva implementación del repositorio que se incluye en el repositorio de forma conjunta con los.
+La integración en AEM se produce en el nivel de repositorio, por lo que Solr es uno de los posibles índices que se pueden utilizar en Oak, la nueva implementación de repositorio que se incluye con AEM.
 
-AEM Se puede configurar para que funcione como un servidor remoto con la instancia de.
+Se puede configurar para que funcione como un servidor remoto con la instancia de AEM.
 
-### AEM Configuración con un único servidor Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
+### Configuración de AEM con un único servidor Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
 
-AEM También se puede configurar para que funcione con una instancia remota del servidor Solr:
+AEM también se puede configurar para que funcione con una instancia remota del servidor Solr:
 
 1. Descargue y extraiga la última versión de Solr. Para obtener más información sobre cómo hacerlo, consulte la [Documentación de instalación de Apache Solr](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. Ahora, cree dos fragmentos de Solr. Para ello, cree carpetas para cada uso compartido de la carpeta en la que se ha desempaquetado Solr:
@@ -413,7 +417,7 @@ AEM También se puede configurar para que funcione con una instancia remota del 
    ```
 
 1. Una vez que se hayan iniciado ambos fragmentos, compruebe que todo esté en funcionamiento conectándose a la interfaz de Solr en `http://localhost:8983/solr/#/`
-1. AEM Iniciar e ir a la consola web en `http://localhost:4502/system/console/configMgr`
+1. Inicie AEM y vaya a la consola web en `http://localhost:4502/system/console/configMgr`
 1. Establezca la siguiente configuración en **Configuración del servidor remoto Oak Solr**:
 
    * URL HTTP de Solr: `http://localhost:8983/solr/`
@@ -431,7 +435,7 @@ AEM También se puede configurar para que funcione con una instancia remota del 
 
 #### Configuración recomendada para Solr {#recommended-configuration-for-solr}
 
-A continuación se muestra un ejemplo de una configuración base que se puede utilizar con las tres implementaciones de Solr descritas en este artículo. AEM Se adapta a los índices de propiedades dedicados que ya están presentes en el código de tiempo; no los utilice con otras aplicaciones.
+A continuación se muestra un ejemplo de una configuración base que se puede utilizar con las tres implementaciones de Solr descritas en este artículo. Se adapta a los índices de propiedades específicos que ya están presentes en AEM; no los utilice con otras aplicaciones.
 
 Para utilizarlo correctamente, debe colocar el contenido del archivo directamente en el Directorio principal de Solr. Si hay implementaciones de varios nodos, debe ir directamente a la carpeta raíz de cada nodo.
 
@@ -439,14 +443,14 @@ Archivos de configuración de Solr recomendados
 
 [Obtener archivo](assets/recommended-conf.zip)
 
-### AEM Herramientas de indexación de {#aem-indexing-tools}
+### Herramientas de indexación de AEM {#aem-indexing-tools}
 
-AEM AEM La versión 6.1 también integra dos herramientas de indexación presentes en la versión 6.0 de como parte del conjunto de herramientas de Adobe Consulting Services Commons:
+AEM 6.1 también integra dos herramientas de indexación presentes en AEM 6.0 como parte del conjunto de herramientas de Adobe Consulting Services Commons:
 
 1. **Explicar consulta**, una herramienta diseñada para ayudar a los administradores a comprender cómo se ejecutan las consultas;
 1. **Administrador de índices Oak**, una interfaz de usuario web para mantener los índices existentes.
 
-AEM Ahora puede ponerse en contacto con ellos en **Herramientas - Operaciones - Panel de control - Diagnóstico** desde la pantalla de bienvenida de la pantalla de inicio de sesión de la sesión de la sesión de la sesión de la sesión de bienvenida.
+Ahora puede llegar a ellos yendo a **Herramientas - Operaciones - Panel de control - Diagnóstico** desde la pantalla de bienvenida de AEM.
 
 Para obtener más información sobre cómo usarlos, consulte la [documentación del tablero de operaciones](/help/sites-administering/operations-dashboard.md).
 
@@ -478,7 +482,7 @@ Para habilitar el registro, debe habilitar los registros de nivel **DEBUG** para
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-AEM La categoría **com.day.cq.search** solo es aplicable si utiliza la utilidad QueryBuilder proporcionada por el usuario que se ha proporcionado con la aplicación.
+La categoría **com.day.cq.search** solo es aplicable si utiliza la utilidad QueryBuilder de AEM.
 
 >[!NOTE]
 >
