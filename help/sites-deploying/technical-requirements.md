@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
+source-git-commit: 0dca00759fc37a2bc095a5a6e74f6b1b79f9eb76
 workflow-type: tm+mt
 source-wordcount: '3651'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -45,7 +45,7 @@ Requisitos mínimos para ejecutar Adobe Experience Manager:
 
 Para obtener más información, consulte las [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md).
 
-### Niveles de soporte {#support-levels}
+### Niveles de compatibilidad {#support-levels}
 
 Este documento enumera las plataformas de cliente y servidor compatibles con Adobe Experience Manager. Adobe proporciona varios niveles de compatibilidad, tanto para las configuraciones recomendadas como para otras configuraciones.
 
@@ -74,7 +74,7 @@ Adobe recomienda estas configuraciones y proporciona soporte total como parte de
 
 | Nivel de soporte | Descripción |
 |---|---|
-| **Z: no compatible** | La configuración no es compatible. Adobe no realiza declaraciones sobre si la configuración funciona o no y no la admite. |
+| **Z: no compatible** | La configuración no es compatible. Adobe no realiza ninguna declaración sobre si la configuración funciona o no, y no la admite. |
 
 ## Plataformas compatibles {#supported-platforms}
 
@@ -119,6 +119,7 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | Almacenar binarios en archivos TAR en el sistema de archivos `[1]` | Binarios | Z: No compatible con la producción |
 | Amazon S3 | Binarios | A: Compatible |
 | Microsoft® Azure Blob Storage | Binarios | A: Compatible |
+| MongoDB Enterprise 7.0 | Repositorio | A: Compatible `[3, 4]` |
 | MongoDB Enterprise 6.0 | Repositorio | A: Compatible `[3, 4]` |
 | MongoDB Enterprise 5.0 | Repositorio | A: Compatible `[3, 4]` |
 | MongoDB Enterprise 4.4 | Repositorio | A: Compatible `[2, 3, 4, 7]` |
@@ -207,7 +208,7 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 | Oracle Solaris™ 11 | Z: No compatible |
 | IBM® AIX® 7.2 | Z: No compatible |
 
-1. Linux® Kernel 2.6, 3. x, 4. x, 5. x y 6. x incluye derivados de la distribución Red Hat®, incluidos Red Hat® Enterprise Linux®, CentOS, Oracle Linux® y Amazon Linux®. Las funciones de complemento de AEM Forms solo son compatibles con CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 y Red Hat® Enterprise Linux® 9.
+1. Linux® Kernel 2.6, 3. x, 4. x, 5. x y 6. x incluye derivados de la distribución Red Hat®, incluidos Red Hat® Enterprise Linux®, Oracle Linux® y Amazon Linux®. Las funciones de complemento de AEM Forms solo son compatibles con Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 y Red Hat® Enterprise Linux® 9.
 1. AEM Forms es compatible con Ubuntu 20.04 LTS.
 1. Distribución Linux® compatible con Adobe Managed Services.
 
@@ -253,7 +254,7 @@ Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera d
 
 ### Plataformas Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
-Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
+Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
 
 Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatcher:
 
@@ -274,7 +275,7 @@ Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatche
 
 ### Exploradores admitidos para la interfaz de usuario de creación {#supported-browsers-for-authoring-user-interface}
 
-La interfaz de usuario de Adobe Experience Manager funciona con las siguientes plataformas de cliente. Todos los exploradores se prueban con el conjunto predeterminado de complementos y complementos.
+La interfaz de usuario de Adobe Experience Manager funciona con las siguientes plataformas de cliente. Todos los exploradores se prueban con el conjunto predeterminado de complementos.
 
 La interfaz de usuario de AEM está optimizada para pantallas más grandes (normalmente portátiles y equipos de escritorio) y formatos de tableta (como Apple iPad o Microsoft® Surface). El factor de forma del teléfono no es compatible.
 
@@ -339,10 +340,10 @@ La interfaz de usuario de AEM está optimizada para pantallas más grandes (norm
  </tbody>
 </table>
 
-1. Lanzamiento de soporte ampliado de Firefox [Más información en mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Lanzamiento de soporte ampliado de Firefox [Más información en mozilla.org](https://www.mozilla.org/es-ES/firefox/enterprise/)
 1. compatibilidad con Apple iPad
 
-### Exploradores admitidos para sitios web {#supported-browsers-for-websites}
+### Exploradores compatibles con los sitios web {#supported-browsers-for-websites}
 
 Por lo general, la compatibilidad del explorador con los sitios web procesados por AEM Sites depende de la implementación de las plantillas de página de AEM, el diseño y la salida de componentes y, por lo tanto, depende del control de la parte que implementa estas partes.
 
@@ -401,7 +402,7 @@ Los siguientes requisitos de hardware son aplicables tanto para Linux® como par
 
 Si utiliza Dynamic Media en Linux®, se deben cumplir los siguientes requisitos previos:
 
-* Red Hat® Enterprise 7 o CentOS 7 y versiones posteriores con los parches de correcciones más recientes
+* Red Hat® Enterprise 7 y versiones posteriores con las últimas correcciones
 * Sistema operativo de 64 bits
 * Intercambio desactivado (recomendado)
 * SELinux desactivado (Consulte la nota que sigue)
