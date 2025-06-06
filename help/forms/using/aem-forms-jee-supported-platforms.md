@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 7647987c0ad365218ff4436e554c81ac35a77f63
+source-git-commit: 0a3d1e5b71ef8cb3d1829e7215cc22a0cb376dc9
 workflow-type: tm+mt
-source-wordcount: '4262'
+source-wordcount: '4293'
 ht-degree: 48%
 
 ---
@@ -27,8 +27,9 @@ ht-degree: 48%
 <div class="preview">
 
 
-Adobe ha lanzado un [instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) con AEM 6.5 Forms Service Pack 18 (6.5.18.0) en JEE junto con los instaladores de parches. El instalador completo admite nuevas plataformas, mientras que el instalador de parches solo incluye correcciones de errores.
-Si realiza una instalación nueva o planea utilizar el software más reciente para su Forms de AEM 6.5 en el entorno JEE, Adobe recomienda utilizar el instalador completo de [AEM 6.5.18.0 Forms en JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) lanzado el 31 de agosto de 2023 en lugar del instalador de Forms de AEM 6.5 lanzado el 8 de abril de 2019 o el instalador de Forms de AEM 6.5.12 lanzado el 3 de marzo de 2022.
+Adobe ha lanzado un [instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) con AEM 6.5.23.0 Forms Service Pack 23 (6.5.23.0) en JEE junto con los instaladores de parches. El instalador completo admite nuevas plataformas, mientras que el instalador de parches solo incluye correcciones de errores.
+
+Si realiza una instalación nueva o planea utilizar el software más reciente para su Forms de AEM 6.5.23.0 en el entorno JEE, Adobe recomienda utilizar el instalador completo de [AEM 6.5.23.0 Forms en JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) lanzado el 6 de junio de 2025 en lugar del instalador de Forms de AEM 6.5.18 lanzado el 31 de agosto de 2023 o el instalador de Forms de AEM 6.5.12 lanzado el 8 de abril de 2019.
 
 
 </div>
@@ -52,9 +53,7 @@ Este documento enumera las plataformas de cliente y servidor compatibles con AEM
 
 #### Instalador completo
 
-
-- **Compatibilidad de actualización para instaladores completos**: Se lanza un instalador completo con cada seis versiones de Service Pack de AEM. Por ejemplo, había un instalador completo lanzado con 6.5.12.0 y 6.5.18.0 versiones de SP. AEM Forms permite actualizaciones directas exclusivamente desde los dos últimos instaladores completos. Por ejemplo, AEM Forms solo facilita las actualizaciones directas a la versión 6.5.18.0 desde los dos últimos instaladores completos, a saber 6.5.12.0 y 6.5.6.0. Si necesita actualizar desde una actualización anterior, puede utilizar una actualización de varios saltos para ir primero a una versión de instalador completo compatible y, a continuación, a la última versión.
-
+- **Compatibilidad de actualización para instaladores completos**: Se lanza un instalador completo con cada seis versiones de Service Pack de AEM. Por ejemplo, había un instalador completo lanzado con 6.5.12.0 y 6.5.18.0 versiones de SP. AEM Forms permite actualizaciones directas exclusivamente desde los dos últimos instaladores completos. Por ejemplo, AEM Forms solo facilita las actualizaciones directas a la versión 6.5.23.0 desde los dos últimos instaladores completos, a saber 6.5.18.0 y 6.5.12.0. Si necesita actualizar desde una actualización anterior, puede utilizar una actualización de varios saltos para ir primero a una versión de instalador completo compatible y, a continuación, a la última versión.
 
 - **Desaprobación y eliminación**: La compatibilidad con la plataforma se actualiza con cada versión completa del instalador. Cualquier software marcado como obsoleto en la matriz de la plataforma durante una versión completa del instalador tiene derecho a ser eliminado de la matriz de la plataforma admitida en una versión posterior del instalador completo, lo que indica el fin de la compatibilidad con el software.
 
@@ -63,11 +62,9 @@ Este documento enumera las plataformas de cliente y servidor compatibles con AEM
 
 - **Cobertura del paquete de servicio**: Adobe proporciona soporte técnico para entornos de AEM Forms que utilizan cualquiera de los seis paquetes de servicio más recientes. Si la versión actual es anterior a los seis últimos Service Packs, Adobe recomienda encarecidamente actualizar a la versión más reciente para obtener un rendimiento, seguridad y compatibilidad óptimos.
 
+- **Directrices del instalador de parches**: Al usar los instaladores de parches para actualizar, es crucial comprobar que la versión del instalador completo subyacente no tenga más de dos versiones anteriores. Por ejemplo, durante la instalación del Service Pack 6.5.23.0, asegúrese de que la versión del instalador completo subyacente sea 6.5.18.0 o 6.5.12.0.
 
-- **Directrices del instalador de parches**: Al usar los instaladores de parches para actualizar, es crucial comprobar que la versión del instalador completo subyacente no tenga más de dos versiones anteriores. Por ejemplo, durante la instalación del Service Pack 6.5.19.0, asegúrese de que la versión del instalador completo subyacente sea 6.5.18.0 o 6.5.12.0.
-
-
-- **Compatibilidad con la actualización de parches**: puede seguir actualizando al Service Pack más reciente, hasta que también esté actualizando a las plataformas compatibles más recientes. Por ejemplo, es posible actualizar del Service Pack 6.5.12.0 a 6.5.19.0, siempre que realice la transición a una combinación de plataforma compatible con 6.5.19.0.
+- **Compatibilidad con la actualización de parches**: puede seguir actualizando al Service Pack más reciente, hasta que también esté actualizando a las plataformas compatibles más recientes. Por ejemplo, es posible actualizar del Service Pack 6.5.18.0 a 6.5.23.0, siempre que realice la transición a una combinación de plataforma compatible con 6.5.23.0.
 
 
 ### Configuraciones recomendadas {#recommendedconfigurations}
@@ -189,8 +186,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
   <td><p>Microkernel del repositorio (archivos TAR MK)</p> </td>
   <td><p>Compatible</p> </td>
  </tr>
- <tr>
-  <td><p> MongoDB Enterprise 5.0</p> </td>
+  <tr>
   <td><p>Repositorio Microkernel</p> </td>
   <td><p>Compatible</p> </td>
  </tr>
@@ -379,11 +375,6 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
   <td><p>Versiones menores, actualizaciones acumulativas y actualizaciones críticas</p> </td>
  </tr>
  <tr>
-  <td><p>SUSE® Linux® Enterprise Server 12 (64 bits)</p> </td>
-  <td><p>A: Compatible</p> </td>
-  <td><p>Service Packs, parches acumulativos y actualizaciones de seguridad críticas</p> </td>
- </tr>
- <tr>
   <td><p>SUSE® Linux® Enterprise Server 15 SP6 (64 bits) </p> </td>
   <td><p>A: Compatible</p> </td>
   <td><p>Service Packs, parches acumulativos y actualizaciones de seguridad críticas</p> </td>
@@ -411,6 +402,9 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
 > - libxcb.x86_64 (1.13-1.el7)
 > - libXau.x86_64 (1.0.8-2.1.el7)
 > - glibc-locale.x86_64 ( 2.17 o superior)
+> - OpenSSL 3 (requerido en la ubicación predeterminada del sistema operativo).
+
+    Para la instalación de OpenSSL 3: las bibliotecas libcrypto.so.3 y libssl.so.3 deben estar disponibles en la ruta de biblioteca predeterminada representada por la variable de entorno LD_LIBRARY_PATH. Si se instalan en una ubicación no estándar, asegúrese de agregar esta ruta de acceso a LD_LIBRARY_PATH antes de iniciar el servidor.
 
 
 #### Entorno virtualizado {#virtualized-environment}
@@ -759,10 +753,6 @@ Para conocer los requisitos adicionales, consulte:
 - Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 - Privilegios administrativos para instalar Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 o superior) con tiempo de ejecución de 32 bits
-<!--- OpenSSL 3 (required at default location on OS).
->[!NOTE]
->
-> The libraries libcrypto.so.3 and libssl.so.3 must be available in the default library path represented by the LD_LIBRARY_PATH environment variable. If they are installed in a non-standard location, ensure that this path is added to LD_LIBRARY_PATH before starting the server.-->
 
 
 ### Exploradores {#browsers}
@@ -883,7 +873,7 @@ AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones adem
 ## Directiva de compatibilidad de parches de terceros {#third-party-patch-support-policy}
 
 
-Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65_es](https://adobe.com/go/learn_aemforms_documentation_65_es) .
+Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_es) .
 
 
 AEM Forms en plataformas de referencia de terceros de JEE indica el nivel de parche específico de la infraestructura de terceros que se actualizó durante el desarrollo y lanzamiento de AEM Forms en JEE, y desde el nivel mínimo de parches/service pack de la infraestructura compatible con esa versión de AEM Forms en JEE.
@@ -924,7 +914,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -1021,7 +1011,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
 
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -1032,19 +1022,20 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 
 
+### Release 6.5.23.0 (June 06, 2025)
 
-### Release 6.5.23.0 (May 29, 2025)
 
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| MongoDB Enterprise 7.0 |MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
-| MYSQL 8.4 | | MYSQL 8.0.27 |
+| MongoDB Enterprise 7.0 |    MongoDB Enterprise 5.0 | MongoDB Enterprise 6.0 |
+| MYSQL 8.4 |SUSE&reg; Linux&reg; Enterprise Server 12 (64-bit) | MYSQL 8.0.27 |
 | Microsoft&reg; SQL Server 2022 | |Microsoft&reg; SQL Server 2019 |
 | Microsoft&reg; SQL Server JDBC driver 12.8 | | Microsoft&reg; SQL Server JDBC driver 8.2 |
 | Microsoft&reg; Office 2021 | | Microsoft&reg; Office 2019 |
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
 -->
+
 
 ### Versión 6.5.22.0 (29 de noviembre de 2024)
 
