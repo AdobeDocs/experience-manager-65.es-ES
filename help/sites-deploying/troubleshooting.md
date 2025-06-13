@@ -72,7 +72,7 @@ Para solucionar problemas, haga lo siguiente:
 
 El propio CRX tiene un espacio de memoria bajo. Si la aplicación que se ejecuta en CRX tiene requisitos de memoria mayores o solicita operaciones con gran cantidad de memoria (por ejemplo, transacciones grandes), la instancia de JVM en la que se ejecuta CRX debe iniciarse con la configuración de memoria adecuada.
 
-Utilice las opciones de comandos de Java™ para definir la configuración de memoria de JVM (por ejemplo, java -Xmx512m -jar crx&amp;ast;.jar para establecer el tamaño de pila en 512 MB).
+Utilice las opciones de comandos de Java™ para definir la configuración de memoria de JVM (por ejemplo, java -Xmx512m -jar crx&ast;.jar para establecer el tamaño de pila en 512 MB).
 
 Especifique la opción de configuración de memoria al iniciar AEM WCM desde la línea de comandos. Los scripts de inicio y parada de WCM de AEM o los scripts personalizados para administrar el inicio de WCM de AEM también se pueden modificar para definir la configuración de memoria necesaria.
 
@@ -80,7 +80,7 @@ Si ya ha definido el tamaño de la pila en 512 MB, puede que desee analizar más
 
 Para crear automáticamente un volcado de la pila cuando se agote la memoria, utilice el siguiente comando:
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 Este método genera un archivo de volcado de la pila (**java_...hprof**) cada vez que el proceso se queda sin memoria. El proceso puede seguir ejecutándose después de que se haya generado el volcado de la pila.
 

@@ -151,6 +151,7 @@ Para personalizar las columnas en la vista de lista:
 1. Opcionalmente:
 
    * Si desea conectar datos adicionales, debe escribir [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
+
      Propiedad `pageInfoProviderType`.
 
    Por ejemplo, consulte la clase/paquete adjunto (de GitHub) a continuación.
