@@ -10,18 +10,18 @@ exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4828'
 ht-degree: 0%
 
 ---
 
-# Componentes de Adobe Experience Manager AEM (): conceptos básicos{#aem-components-the-basics}
+# Componentes de Adobe Experience Manager (AEM): Conceptos básicos{#aem-components-the-basics}
 
 Cuando empiece a desarrollar nuevos componentes, debe comprender los conceptos básicos de su estructura y configuración.
 
-AEM Este proceso implica leer la teoría y observar la amplia gama de implementaciones de componentes en una instancia de estándar. AEM Este último enfoque se complica ligeramente por el hecho de que, aunque ha cambiado a una nueva IU estándar, moderna y táctil, sigue admitiendo la IU clásica.
+Este proceso implica leer la teoría y observar la amplia gama de implementaciones de componentes en una instancia estándar de AEM. Este último enfoque se complica ligeramente por el hecho de que, aunque AEM ha cambiado a una nueva IU estándar, moderna y táctil, sigue siendo compatible con la IU clásica.
 
 ## Información general {#overview}
 
@@ -35,11 +35,11 @@ Antes de empezar a configurar o codificar el componente, debe preguntar lo sigui
    * Una especificación clara ayuda en todas las etapas de desarrollo, pruebas y transferencia. Los detalles pueden cambiar con el tiempo, pero la especificación se puede actualizar (aunque los cambios también deben documentarse).
 * ¿Necesita crear el componente desde cero o puede heredar los conceptos básicos de un componente existente?
    * No hay necesidad de reinventar la rueda.
-   * AEM Existen varios mecanismos proporcionados por los que le permiten heredar y ampliar detalles de otra definición de componente, como invalidación, superposición y la [fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md).
+   * AEM proporciona varios mecanismos que le permiten heredar y ampliar detalles de otra definición de componente, como invalidación, superposición y la [fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md).
 * ¿El componente requiere lógica para seleccionar o manipular el contenido?
    * La lógica debe mantenerse separada de la capa de interfaz de usuario. HTL está diseñado para ayudar a garantizar que esto suceda.
 * ¿Necesita el componente formato CSS?
-   * El formato CSS debe mantenerse separado de las definiciones de componentes. Defina convenciones para asignar un nombre a los elementos del HTML para que pueda modificarlos a través de archivos CSS externos.
+   * El formato CSS debe mantenerse separado de las definiciones de componentes. Defina convenciones para asignar un nombre a los elementos de HTML para que pueda modificarlos a través de archivos CSS externos.
 * ¿Qué aspectos de seguridad debo tener en cuenta?
    * Consulte [Lista de comprobación de seguridad - Prácticas recomendadas de desarrollo](/help/sites-administering/security-checklist.md#development-best-practices) para obtener más información.
 
@@ -50,9 +50,9 @@ Antes de que se inicie una conversación seria sobre el desarrollo de componente
 * **IU táctil**
   [La interfaz de usuario estándar](/help/sites-developing/touch-ui-concepts.md) se basa en la experiencia de usuario unificada de Adobe Experience Cloud, que usa las tecnologías subyacentes de [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **IU clásica**
-AEM Interfaz de usuario basada en la tecnología ExtJS obsoleta con la versión 6.4 de.
+Interfaz de usuario basada en la tecnología ExtJS obsoleta con AEM 6.4.
 
-Consulte [Interfaz de usuario de Recommendations para clientes](/help/sites-deploying/ui-recommendations.md) para obtener más información.
+Consulte [Recomendaciones de interfaz de usuario para clientes](/help/sites-deploying/ui-recommendations.md) para obtener más información.
 
 Los componentes se pueden implementar para admitir la IU táctil, la IU clásica o ambas. Al ver una instancia estándar también verá componentes predeterminados que se diseñaron originalmente para la interfaz de usuario clásica, la interfaz de usuario táctil o ambas.
 
@@ -60,21 +60,21 @@ En esta página se tratan los conceptos básicos de ambos y cómo reconocerlos.
 
 >[!NOTE]
 >
->El Adobe recomienda utilizar la IU táctil para beneficiarse de la tecnología más reciente. AEM [Las herramientas de modernización de](modernization-tools.md) pueden facilitar la migración.
+>Adobe recomienda utilizar la interfaz de usuario táctil para beneficiarse de la tecnología más reciente. [Las herramientas de modernización de AEM](modernization-tools.md) pueden facilitar la migración.
 
 ### Lógica de contenido y marcado de procesamiento  {#content-logic-and-rendering-markup}
 
-El Adobe recomienda mantener el código responsable del marcado y el procesamiento separado del código que controla la lógica utilizada para seleccionar el contenido del componente.
+Adobe recomienda mantener el código responsable del marcado y el procesamiento separado del código que controla la lógica utilizada para seleccionar el contenido del componente.
 
 Esta filosofía es compatible con [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es), un lenguaje de creación de plantillas que está limitado a propósito para garantizar que se use un lenguaje de programación real para definir la lógica empresarial subyacente. Esta lógica (opcional) se invoca desde HTL con un comando específico. Este mecanismo resalta el código que se llama para una vista determinada y, si es necesario, permite una lógica específica para diferentes vistas del mismo componente.
 
 ### HTL frente a JSP {#htl-vs-jsp}
 
-HTL es un lenguaje de creación de plantillas para HTML AEM incluido en la versión 6.0 de la aplicación de.
+HTL es un lenguaje de plantilla de HTML incluido en AEM 6.0.
 
-AEM La discusión de si se debe usar [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) o JSP (Java™ Server Pages) al desarrollar sus propios componentes debería ser sencilla, ya que HTL es ahora el lenguaje de script recomendado para la creación de páginas de scripts de.
+La discusión de si se debe usar [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) o JSP (Java™ Server Pages) al desarrollar sus propios componentes debería ser sencilla, ya que HTL es ahora el lenguaje de script recomendado para AEM.
 
-HTL y JSP se pueden utilizar para desarrollar componentes tanto para la IU clásica como para la táctil. Aunque puede haber una tendencia a suponer que HTL es solo para la IU táctil y JSP para la IU clásica, esta es una idea errónea y más debido al tiempo. AEM La interfaz de usuario táctil y HTL se incorporaron a las herramientas de forma durante aproximadamente el mismo periodo. Dado que HTL es ahora el idioma recomendado, se está utilizando para nuevos componentes, que tienden a ser para la interfaz de usuario táctil.
+HTL y JSP se pueden utilizar para desarrollar componentes tanto para la IU clásica como para la táctil. Aunque puede haber una tendencia a suponer que HTL es solo para la IU táctil y JSP para la IU clásica, esta es una idea errónea y más debido al tiempo. La IU táctil y HTL se incorporaron a AEM durante aproximadamente el mismo período. Dado que HTL es ahora el idioma recomendado, se está utilizando para nuevos componentes, que tienden a ser para la interfaz de usuario táctil.
 
 >[!NOTE]
 >
@@ -84,20 +84,20 @@ HTL y JSP se pueden utilizar para desarrollar componentes tanto para la IU clás
 
 Para crear sus propios componentes para la interfaz de usuario adecuada, consulte (después de leer esta página):
 
-* [AEM Componentes para la interfaz de usuario táctil](/help/sites-developing/developing-components.md)
-* [AEM Componentes para la IU clásica de](/help/sites-developing/developing-components-classic.md)
+* [Componentes de AEM para la IU táctil](/help/sites-developing/developing-components.md)
+* [Componentes de AEM para la IU clásica](/help/sites-developing/developing-components-classic.md)
 
 Una forma rápida de empezar es copiar un componente existente y luego realizar los cambios que desee. Para aprender a crear sus propios componentes y agregarlos al sistema de párrafos, consulte:
 
 * [Desarrollar componentes](/help/sites-developing/developing-components-samples.md) (centrado en la IU táctil)
 
-### Mover componentes a la instancia de Publish {#moving-components-to-the-publish-instance}
+### Mover componentes a la instancia de publicación {#moving-components-to-the-publish-instance}
 
-AEM Los componentes que procesan el contenido deben implementarse en la misma instancia de que el contenido. Por lo tanto, todos los componentes que se utilizan para crear y procesar páginas en la instancia de autor deben implementarse en la instancia de publicación. Cuando se implementan, los componentes están disponibles para procesar las páginas activadas.
+Los componentes que representan contenido deben implementarse en la misma instancia de AEM que el contenido. Por lo tanto, todos los componentes que se utilizan para crear y procesar páginas en la instancia de autor deben implementarse en la instancia de publicación. Cuando se implementan, los componentes están disponibles para procesar las páginas activadas.
 
 Utilice las siguientes herramientas para mover los componentes a la instancia de publicación:
 
-* AEM [Use el Administrador de paquetes](/help/sites-administering/package-manager.md) para agregar los componentes a un paquete y moverlos a otra instancia de.
+* [Use el Administrador de paquetes](/help/sites-administering/package-manager.md) para agregar los componentes a un paquete y moverlos a otra instancia de AEM.
 * [Use la herramienta Activar replicación de árbol](/help/sites-authoring/publishing-pages.md#manage-publication) para replicar los componentes.
 
 >[!NOTE]
@@ -121,10 +121,10 @@ Utilice las siguientes herramientas para mover los componentes a la instancia de
 
 ## Estructura {#structure}
 
-AEM La estructura de un componente de es potente y flexible, las principales consideraciones son:
+La estructura de un componente de AEM es potente y flexible, y las consideraciones principales son las siguientes:
 
 * Tipo de medio
-* Definición del componente
+* Definición de componente
 * Propiedades y nodos secundarios de un componente
 * Cuadros de diálogo
 * Cuadros de diálogo de diseño
@@ -140,14 +140,14 @@ Un elemento clave de la estructura es el tipo de recurso.
 
 Se trata de una abstracción que ayuda a garantizar que, incluso cuando la apariencia cambia con el tiempo, la intención se mantiene en el tiempo.
 
-### Definición del componente {#component-definition}
+### Definición de componente {#component-definition}
 
 #### Conceptos básicos de componentes {#component-basics}
 
 La definición de un componente se puede desglosar de la siguiente manera:
 
-* AEM Los componentes de la se basan en [Sling](https://sling.apache.org/documentation.html).
-* AEM Los componentes de la se encuentran (generalmente) en:
+* Los componentes de AEM se basan en [Sling](https://sling.apache.org/documentation.html).
+* Los componentes de AEM se encuentran (normalmente) en:
 
    * HTL: `/libs/wcm/foundation/components`
    * JSP: `/libs/foundation/components`
@@ -156,7 +156,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
 
    * `/apps/<myApp>/components`
 
-* AEM Los componentes estándar de la se definen como `cq:Component` y tienen los elementos clave:
+* Los componentes estándar de AEM se definen como `cq:Component` y tienen los elementos clave:
 
    * propiedades jcr:
 
@@ -189,9 +189,9 @@ La definición de un componente se puede desglosar de la siguiente manera:
 
 * **Nodos secundarios vitales**:
 
-   * `cq:editConfig (cq:EditConfig)`: define las propiedades de edición del componente y permite que este aparezca en el explorador de componentes o en el Sidekick.
+   * `cq:editConfig (cq:EditConfig)`: define las propiedades de edición del componente y permite que este aparezca en el Explorador de componentes o en Sidekick.
 
-     Nota: Si el componente tiene un cuadro de diálogo, aparecerá automáticamente en el navegador o Sidekick de componentes, aunque cq:editConfig no exista.
+     Nota: Si el componente tiene un cuadro de diálogo, aparecerá automáticamente en el navegador de componentes o Sidekick, aunque cq:editConfig no exista.
 
    * `cq:childEditConfig (cq:EditConfig)`: controla los aspectos de la interfaz de usuario del autor para los componentes secundarios que no definen sus propios `cq:editConfig`.
    * IU táctil:
@@ -234,7 +234,7 @@ Para cancelar la herencia de los iconos de los supercomponentes, al establecer u
 
 La [Consola de componentes](/help/sites-authoring/default-components-console.md#component-details) muestra cómo se define el icono de un componente en particular.
 
-#### Ejemplo de icono de SVG {#svg-icon-example}
+#### Ejemplo del icono SVG {#svg-icon-example}
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -269,7 +269,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>Grupo en el que se puede seleccionar el componente en el navegador de componentes (IU táctil) o en el Sidekick (IU clásica).<br /> Se utiliza un valor de <code>.hidden</code> para componentes que no están disponibles para su selección en la interfaz de usuario, como los sistemas de párrafos reales.</td>
+   <td>Grupo en el que se puede seleccionar el componente en el navegador de componentes (IU táctil) o Sidekick (IU clásica).<br /> Se utiliza un valor de <code>.hidden</code> para componentes que no están disponibles para su selección en la interfaz de usuario, como los sistemas de párrafos reales.</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -314,7 +314,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Si se establece, esta propiedad se toma como ID de celda. Para obtener más información, consulte el artículo de Knowledge Base <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">Cómo se crean los ID de celda de diseño</a>.<br /> </td>
+   <td>Si se establece, esta propiedad se toma como ID de celda.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -339,12 +339,12 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
   <tr>
    <td><code>cq:template</code></td>
    <td><code>nt:unstructured</code></td>
-   <td>Si se encuentra, este nodo se utiliza como plantilla de contenido cuando se agrega el componente desde el Explorador de componentes o el Sidekick.</td>
+   <td>Si se encuentra, este nodo se utiliza como plantilla de contenido cuando se agrega el componente desde el Explorador de componentes o Sidekick.</td>
   </tr>
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Ruta a un nodo que se utilizará como plantilla de contenido cuando se añada el componente desde el explorador de componentes o el Sidekick. Debe ser una ruta absoluta, no relativa al nodo de componente.<br /> A menos que desee reutilizar contenido que ya está disponible en otra parte, esto no es obligatorio y <code>cq:template</code> es suficiente (ver a continuación).</td>
+   <td>Ruta a un nodo que se utilizará como plantilla de contenido cuando se añada el componente desde el Explorador de componentes o Sidekick. Debe ser una ruta absoluta, no relativa al nodo de componente.<br /> A menos que desee reutilizar contenido que ya está disponible en otra parte, esto no es obligatorio y <code>cq:template</code> es suficiente (ver a continuación).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -379,12 +379,12 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
   <tr>
    <td><code>icon.png</code></td>
    <td><code>nt:file</code></td>
-   <td>Icono del componente, aparece junto al Título en el Sidekick.<br /> </td>
+   <td>Icono del componente, aparece junto al Título en Sidekick.<br /> </td>
   </tr>
   <tr>
    <td><code>thumbnail.png</code></td>
    <td><code>nt:file</code></td>
-   <td>Miniatura opcional que se muestra al arrastrar el componente a su lugar desde el Sidekick.<br /> </td>
+   <td>Miniatura opcional que se muestra al arrastrar el componente a su lugar desde Sidekick.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -415,8 +415,8 @@ Los nodos secundarios de interés particular incluyen:
 * IU clásica:
    * `dialog` ( `cq:Dialog`): define el cuadro de diálogo para editar el contenido de este componente (específico de la IU clásica)
    * `design_dialog` ( `cq:Dialog`): especifica las opciones de edición de diseño para este componente
-   * `icon.png`: archivo de gráficos que se utilizará como icono para el componente en el Sidekick
-   * `thumbnail.png`: archivo de gráficos que se utilizará como miniatura para el componente mientras lo arrastra desde el Sidekick
+   * `icon.png`: archivo de gráficos que se utilizará como icono para el componente en Sidekick
+   * `thumbnail.png`: archivo de gráficos que se utilizará como miniatura para el componente al arrastrarlo desde Sidekick
 
 ### Cuadros de diálogo {#dialogs}
 
@@ -429,7 +429,7 @@ Las definiciones de los cuadros de diálogo son específicas de la IU:
 >[!NOTE]
 >
 >* Por motivos de compatibilidad, la IU táctil puede utilizar la definición de un cuadro de diálogo de IU clásico cuando no se ha definido ningún cuadro de diálogo para la IU táctil.
->* AEM También se proporcionan [Herramientas de modernización de la](/help/sites-developing/modernization-tools.md) para ayudarle a ampliar o convertir componentes que solo tienen cuadros de diálogo definidos para la IU clásica.
+>* Las [Herramientas de modernización de AEM](/help/sites-developing/modernization-tools.md) también se proporcionan para ayudarle a ampliar o convertir componentes que solo tienen cuadros de diálogo definidos para la IU clásica.
 >
 
 * IU táctil.
@@ -521,7 +521,7 @@ Las propiedades definidas dependen de las definiciones individuales. Aunque pued
 
 ## Jerarquía y herencia de componentes {#component-hierarchy-and-inheritance}
 
-AEM Los componentes dentro de los segmentos de la lista están sujetos a tres jerarquías diferentes:
+Los componentes de AEM están sujetos a tres jerarquías diferentes:
 
 * **Jerarquía de tipos de recursos**
 
@@ -599,7 +599,7 @@ Hay muchas configuraciones existentes en el repositorio. Puede buscar fácilment
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Para buscar un nodo secundario de `cq:editConfig`, por ejemplo, puede buscar `cq:dropTargets`, que es del tipo `cq:DropTargetConfig`; puede usar la herramienta Query en **&#x200B; CRXDE Lite &#x200B;** y buscar con la siguiente cadena de consulta XPath:
+* Para buscar un nodo secundario de `cq:editConfig`, por ejemplo, puede buscar `cq:dropTargets`, que es del tipo `cq:DropTargetConfig`; puede usar la herramienta Consulta en** CRXDE Lite** y buscar con la siguiente cadena de consulta XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -608,7 +608,7 @@ Hay muchas configuraciones existentes en el repositorio. Puede buscar fácilment
 Los componentes siempre deben procesar algún HTML visible para el autor, incluso cuando el componente no tenga contenido. De lo contrario, podría desaparecer visualmente de la interfaz del editor, lo que lo haría técnicamente presente, pero invisible en la página y en el editor. En tal caso, los autores no pueden seleccionar e interactuar con el componente vacío.
 
 Por este motivo, los componentes deben representar un marcador de posición siempre que no representen ningún resultado visible cuando la página se procese en el editor de páginas (cuando el modo WCM sea `edit` o `preview`).
-El marcado de HTML típico para un marcador de posición es el siguiente:
+El marcado típico de HTML para un marcador de posición es el siguiente:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -925,7 +925,7 @@ El nodo `cq:inplaceEditing` (tipo de nodo `cq:InplaceEditingConfig`) define una 
     <ul>
      <li>texto sin formato: se utilizará para contenido que no sea de HTML.<br /> </li>
      <li>título: es un editor de texto sin formato mejorado que convierte los títulos gráficos en texto sin formato antes de que comience la edición. Utilizado por el componente de título de Geometrixx.<br /> </li>
-     <li>texto: se utilizará para el contenido del HTML (utiliza el Editor de texto enriquecido).<br /> </li>
+     <li>texto: se utilizará para el contenido de HTML (utiliza el Editor de texto enriquecido).<br /> </li>
     </ul> </td>
   </tr>
  </tbody>

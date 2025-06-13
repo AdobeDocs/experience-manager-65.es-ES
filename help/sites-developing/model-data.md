@@ -9,9 +9,9 @@ exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Los siguientes detalles son ideas y comentarios expresados por David Nuescheler.
 
-David fue cofundador y director de tecnología de Day Software AG, un proveedor líder de software de gestión de contenido global e infraestructura de contenido, que fue adquirido por Adobe en 2010. David trabaja como becario y vicepresidente de tecnología empresarial en Adobe y también dirige el desarrollo de JSR-170, la interfaz de programación de aplicaciones (API) del repositorio de contenido Java™ (JCR), el estándar tecnológico para la administración de contenido.
+David fue cofundador y director de tecnología de Day Software AG, un proveedor líder de software de infraestructura de contenido y administración de contenido global, que fue adquirido por Adobe en 2010. David trabaja como becario y vicepresidente de tecnología empresarial en Adobe y también dirige el desarrollo de JSR-170, la interfaz de programación de aplicaciones (API) del repositorio de contenido Java™ (JCR), el estándar tecnológico para la administración de contenido.
 
 También se pueden ver más actualizaciones en [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
 
@@ -73,8 +73,6 @@ Personalmente, prefiero las convenciones de jerarquía sobre el sistema de escri
 >[!CAUTION]
 >
 >La forma en que se estructura un repositorio de contenido también puede afectar al rendimiento. Para obtener el mejor rendimiento, el número de nodos secundarios adjuntos a nodos individuales en un repositorio de contenido no debe superar 1000.
->
->Vea [¿Cuántos datos puede manejar CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Ejemplos {#example-2}
 
@@ -175,7 +173,7 @@ Creo que hay casos prácticos en los que un sistema no puede funcionar si una re
 
 Si un modelo de contenido expone algo que incluso huele remotamente a archivo o carpeta, intento usar (o ampliar desde) `nt:file`, `nt:folder` y `nt:resource`.
 
-En mi experiencia, muchas aplicaciones genéricas permiten la interacción con nt:folder y nt:files implícitamente y saben cómo manejar y mostrar esos eventos si están enriquecidos con metainformación adicional. CIF Por ejemplo, una interacción directa con implementaciones de servidor de archivos como o WebDAV que se encuentran encima de JCR quedan implícitas.
+En mi experiencia, muchas aplicaciones genéricas permiten la interacción con nt:folder y nt:files implícitamente y saben cómo manejar y mostrar esos eventos si están enriquecidos con metainformación adicional. Por ejemplo, una interacción directa con implementaciones de servidor de archivos como CIFS o WebDAV ubicadas encima de JCR se vuelve implícita.
 
 Creo que, como buena regla general, se podría utilizar lo siguiente: Si debe almacenar el nombre de archivo y el tipo MIME, `nt:file`/ `nt:resource` es una buena coincidencia. Si puede tener varios &quot;archivos&quot;, nt:folder es un buen lugar para almacenarlos.
 

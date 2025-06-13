@@ -1,6 +1,6 @@
 ---
 title: Personalización de las consolas
-description: AEM varios mecanismos para permitirle personalizar las consolas de su instancia de creación
+description: AEM proporciona varios mecanismos para permitirle personalizar las consolas de su instancia de creación
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,7 +10,7 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Clientlibs le permite ampliar la implementación predeterminada para obtener nue
 * Superposiciones
 Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la fusión de recursos de sling permite la herencia.
 
-AEM Se pueden utilizar de muchas maneras para ampliar las consolas de la. Una pequeña selección se cubren a continuación (en un nivel alto).
+Se pueden utilizar de muchas maneras para ampliar las consolas de AEM. Una pequeña selección se cubren a continuación (en un nivel alto).
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Por ejemplo, se puede superponer la siguiente ubicación dentro de la estructura
 
 >[!NOTE]
 >
->AEM Consulte el artículo de la Base de conocimiento [Resolución de problemas de IU táctil de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) para obtener más sugerencias y herramientas.
+>Consulte el artículo de la Base de conocimiento [Solución de problemas de la IU táctil de AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935) para obtener más sugerencias y herramientas.
 
 ## Personalización de la Vista Predeterminada para una Consola {#customizing-the-default-view-for-a-console}
 
@@ -94,7 +94,7 @@ Puede personalizar la vista predeterminada (columna, tarjeta, lista) de una cons
 
 ### Agregar nueva acción a la barra de herramientas {#add-new-action-to-the-toolbar}
 
-1. Puede crear sus propios componentes e incluir las bibliotecas de cliente correspondientes para las acciones personalizadas. Por ejemplo, una acción **Promocionar al Twitter** en:
+1. Puede crear sus propios componentes e incluir las bibliotecas de cliente correspondientes para las acciones personalizadas. Por ejemplo, una acción **Promocionar a Twitter** en:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -151,7 +151,6 @@ Para personalizar las columnas en la vista de lista:
 1. Opcionalmente:
 
    * Si desea conectar datos adicionales, debe escribir [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
-
      Propiedad `pageInfoProviderType`.
 
    Por ejemplo, consulte la clase/paquete adjunto (de GitHub) a continuación.

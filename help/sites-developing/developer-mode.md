@@ -10,7 +10,7 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Modo de desarrollador{#developer-mode}
 
-Al editar páginas en Adobe Experience Manager AEM (), hay varios [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) disponibles, incluido el modo de desarrollador. Se abrirá un panel lateral con varias pestañas que proporcionan al desarrollador información sobre la página actual. Las tres pestañas son:
+Al editar páginas en Adobe Experience Manager (AEM), hay disponibles varios [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui), incluido el modo de desarrollador. Se abrirá un panel lateral con varias pestañas que proporcionan al desarrollador información sobre la página actual. Las tres pestañas son:
 
 * **[Componentes](#components)** para ver información de estructura y rendimiento.
 * **[Pruebas](#tests)** para ejecutar pruebas y analizar los resultados.
@@ -56,8 +56,8 @@ Esto ayuda a un desarrollador a lo siguiente:
 >
 >Consulte:
 >
->* AEM Artículo de la base de conocimiento, [Resolución de problemas de IU táctil de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obtener más sugerencias y herramientas.
->* AEM AEM Sesión de Gems sobre [Modo de desarrollador de 6.0 de la](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=es).
+>* Artículo de la base de conocimiento, [Solución de problemas de la IU táctil de AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), para obtener más sugerencias y herramientas.
+>* Sesión de AEM Gems sobre [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Abriendo modo de desarrollador {#opening-developer-mode}
@@ -83,7 +83,7 @@ Muestra un árbol de componentes que:
 * Permite expandir el árbol y seleccionar componentes específicos dentro de él. La selección proporciona acceso a los detalles del componente, como:
 
    * Ruta del repositorio
-   * Vínculos a scripts (a los que se accede en el CRXDE Lite)
+   * Vínculos a scripts (a los que se accede en CRXDE Lite)
 
 * Los componentes seleccionados (en el flujo de contenido, indicados por un borde azul) se resaltarán en el árbol de contenido (y a la inversa).
 
@@ -125,7 +125,7 @@ Cada entrada de componente puede mostrar (por ejemplo):
 
 Esperamos que la ficha **Errores** siempre esté vacía (como se ha indicado anteriormente), pero cuando se producen problemas, se muestran los siguientes detalles para cada componente:
 
-* Una advertencia si el componente escribe una entrada en el registro de errores, junto con detalles del error y vínculos directos al código adecuado dentro de CRXDE Lite.
+* Una advertencia si el componente escribe una entrada en el registro de errores, junto con detalles del error y vínculos directos al código adecuado en CRXDE Lite.
 * Advertencia si el componente abre una sesión de administración.
 
 Por ejemplo, en una situación en la que se llama a un método indefinido, el error resultante se muestra en la ficha **Errores**:
@@ -138,6 +138,6 @@ La entrada del componente en el árbol de la pestaña Componentes también se ma
 
 >[!CAUTION]
 >
->AEM En la versión 6.2, las funciones de prueba del modo de desarrollador se volvieron a implementar como una aplicación de herramientas independiente.
+>En AEM 6.2, las funciones de prueba del modo de desarrollador se volvieron a implementar como una aplicación de herramientas independiente.
 >
 >Para obtener información detallada, consulta [Probar la interfaz de usuario](/help/sites-developing/hobbes.md).

@@ -1,6 +1,6 @@
 ---
-title: Optimización del rendimiento
-description: AEM Aprenda a configurar ciertos aspectos de la para optimizar el rendimiento.
+title: Optimización de rendimiento
+description: Aprenda a configurar ciertos aspectos de AEM para optimizar el rendimiento.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,14 +9,14 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2d6caa10e8f1cf3d0811280e31c2f40bceac20ee
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '6470'
-ht-degree: 12%
+source-wordcount: '6467'
+ht-degree: 13%
 
 ---
 
-# Optimización del rendimiento {#performance-optimization}
+# Optimización de rendimiento {#performance-optimization}
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ ht-degree: 12%
 >
 >Para obtener más información acerca de cómo solucionar problemas de rendimiento, vea también [Árbol de rendimiento](/help/sites-deploying/performance-tree.md).
 >
->Además, puede revisar un artículo de la Base de conocimiento sobre [consejos para el ajuste del rendimiento](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-17466).
+>Además, puede revisar un artículo de la Base de conocimiento sobre [consejos para el ajuste del rendimiento](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466).
 
 Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de los visitantes. Aunque este valor varía según la solicitud, se puede definir un valor de objetivo promedio. Una vez demostrado que este valor es alcanzable y mantenible, puede utilizarse para monitorizar el rendimiento del sitio web e indicar el desarrollo de posibles problemas.
 
@@ -41,11 +41,11 @@ Este entorno incluye contenido que usted pone a disposición de sus usuarios. En
 >[!NOTE]
 >
 >* Después de configurar para la optimización del rendimiento, siga los procedimientos de [Día difícil](/help/sites-developing/tough-day.md) para probar el entorno con una carga pesada.
->* Vea también [consejos para ajustar el rendimiento.](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-17466)
+>* Vea también [consejos para ajustar el rendimiento.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## Metodología de optimización del rendimiento {#performance-optimization-methodology}
 
-AEM Una metodología de optimización del rendimiento para proyectos de se puede resumir en cinco reglas sencillas que se pueden seguir para evitar problemas de rendimiento desde el principio:
+Una metodología de optimización del rendimiento para proyectos de AEM se puede resumir en cinco reglas sencillas que se pueden seguir para evitar problemas de rendimiento desde el principio:
 
 1. [Planificación para la optimización](#planning-for-optimization)
 1. [Simular realidad](#simulate-reality)
@@ -111,7 +111,7 @@ Los números anteriores suponen las siguientes condiciones:
 
 * Se mide en la publicación (sin gastos generales relacionados con el entorno de creación)
 * Medido en el servidor (sin sobrecarga de red)
-* AEM No almacenado en caché (sin caché de salida de, sin caché de Dispatcher)
+* Sin caché (sin caché de resultados de AEM, sin caché de Dispatcher)
 * Solo para elementos complejos con muchas dependencias (HTML, JS, PDF, etc.)
 * No hay otra carga en el sistema
 
@@ -155,7 +155,7 @@ Para mejorar el rendimiento, tenga en cuenta lo siguiente:
 
 ## Monitorización del rendimiento {#performance-monitoring}
 
-El rendimiento (o la falta de él) es una de las primeras cosas de las que se dan cuenta los usuarios, por lo que, al igual que con cualquier aplicación con interfaz de usuario, el rendimiento es fundamental. AEM Para optimizar el rendimiento de la instalación de la, monitorice varios atributos de la instancia y su comportamiento.
+El rendimiento (o la falta de él) es una de las primeras cosas de las que se dan cuenta los usuarios, por lo que, al igual que con cualquier aplicación con interfaz de usuario, el rendimiento es fundamental. Para optimizar el rendimiento de la instalación de AEM, supervise varios atributos de la instancia y su comportamiento.
 
 Para obtener información acerca de cómo realizar la supervisión de rendimiento, vea [Supervisión del rendimiento](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
@@ -163,7 +163,7 @@ Los problemas que causan problemas de rendimiento suelen ser difíciles de rastr
 
 Un punto de partida básico es un buen conocimiento del sistema cuando funciona con normalidad. A menos que sepa cómo &quot;se ve&quot; y &quot;se comporta&quot; su entorno cuando funciona correctamente, es difícil localizar el problema cuando el rendimiento se deteriora. Dedique tiempo a investigar el sistema cuando se esté ejecutando sin problemas y asegúrese de que la recopilación de información de rendimiento sea una tarea continua. Al hacerlo, dispone de una base para realizar comparaciones en caso de que el rendimiento se vea afectado.
 
-AEM El diagrama siguiente ilustra la ruta que puede seguir una solicitud de contenido y, por lo tanto, el número de elementos diferentes que pueden afectar al rendimiento.
+El diagrama siguiente ilustra la ruta que puede seguir una solicitud de contenido de AEM y, por lo tanto, la cantidad de elementos diferentes que pueden afectar al rendimiento.
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -199,7 +199,7 @@ Al optimizar el rendimiento, deben tenerse en cuenta determinadas reglas:
 
 ## Configurar para el rendimiento {#configuring-for-performance}
 
-AEM Se pueden configurar ciertos aspectos de la (o del repositorio subyacente) para optimizar el rendimiento. A continuación se indican posibilidades y sugerencias. Debe estar seguro de si utiliza la funcionalidad en cuestión antes de realizar cambios, o de cómo hacerlo.
+Se pueden configurar ciertos aspectos de AEM (o del repositorio subyacente) para optimizar el rendimiento. A continuación se indican posibilidades y sugerencias. Debe estar seguro de si utiliza la funcionalidad en cuestión antes de realizar cambios, o de cómo hacerlo.
 
 >[!NOTE]
 >
@@ -207,7 +207,7 @@ AEM Se pueden configurar ciertos aspectos de la (o del repositorio subyacente) p
 
 ### Indexación de búsqueda {#search-indexing}
 
-AEM A partir de la versión 6.0 de, Adobe Experience Manager utiliza una arquitectura de repositorio basada en Oak.
+A partir de AEM 6.0, Adobe Experience Manager utiliza una arquitectura de repositorio basada en Oak.
 
 Puede encontrar la información de indexación actualizada aquí:
 
@@ -223,7 +223,7 @@ Por ejemplo, cuando se cargan imágenes (o recursos DAM en general), los flujos 
 El motor de flujo de trabajo utiliza las colas de trabajos de Apache Sling para administrar y programar el procesamiento de elementos de trabajo. Los siguientes servicios de cola de trabajos se han creado de forma predeterminada desde la fábrica del servicio de configuración de colas de trabajos de Apache Sling para procesar trabajos de flujo de trabajo:
 
 * Cola de flujo de trabajo de Granite: la mayoría de los pasos del flujo de trabajo, como los que procesan recursos DAM, utilizan el servicio Cola de flujo de trabajo de Granite.
-* Cola de trabajos de proceso externo de Granite Workflow: este servicio se utiliza para pasos especiales de flujo de trabajo externo que normalmente se utilizan para ponerse en contacto con un sistema externo y sondear resultados. Por ejemplo, el paso Proceso de Extracción de Medios de InDesign se implementa como un proceso externo. El motor de flujo de trabajo utiliza la cola externa para procesar el sondeo. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Cola de trabajos de proceso externo de Granite Workflow: este servicio se utiliza para pasos especiales de flujo de trabajo externo que normalmente se utilizan para ponerse en contacto con un sistema externo y sondear resultados. Por ejemplo, el paso Proceso de extracción de medios de InDesign se implementa como un proceso externo. El motor de flujo de trabajo utiliza la cola externa para procesar el sondeo. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configure estos servicios para limitar el número máximo de procesos de flujo de trabajo que se ejecutan simultáneamente.
 
@@ -272,7 +272,7 @@ El siguiente procedimiento crea una cola de trabajos para un flujo de trabajo, u
 
    Las configuraciones de fábrica son similares a la cola de flujo de trabajo de Granite descrita en [Procesamiento de flujo de trabajo simultáneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing), excepto que la propiedad Topics coincide con el tema de los trabajos de flujo de trabajo.
 
-### AEM Servicio de sincronización de recursos DAM {#cq-dam-asset-synchronization-service}
+### Servicio de sincronización de recursos DAM de AEM {#cq-dam-asset-synchronization-service}
 
 `AssetSynchronizationService` se usa para sincronizar recursos de repositorios montados (incluidos LiveLink, Documentum®, entre otros). De forma predeterminada, esta sincronización realiza una comprobación regular cada 300 segundos (5 minutos), por lo que si no utiliza repositorios montados, puede deshabilitar este servicio.
 
@@ -290,13 +290,13 @@ Consideraciones adicionales:
 * Separación entre &quot;trabajo en curso&quot; de autor y &quot;final&quot; al publicar
 * Separar los usuarios internos de Author de los visitantes/usuarios externos de Publish (por ejemplo, agentes, representantes de prensa, clientes y estudiantes).
 
-## Prácticas recomendadas para el control de calidad {#best-practices-for-quality-assurance}
+## Prácticas recomendadas para Quality Assurance {#best-practices-for-quality-assurance}
 
 El rendimiento es fundamental para el entorno de publicación. Por lo tanto, debe planificar y analizar cuidadosamente las pruebas de rendimiento que realice para el entorno de publicación al implementar el proyecto.
 
 Esta sección tiene como objetivo dar una visión general estandarizada de los problemas que implica definir un concepto de prueba específicamente para pruebas de rendimiento en su entorno *publish*. Esta información es de interés principalmente para los ingenieros de control de calidad, gestores de proyectos y administradores de sistemas.
 
-AEM A continuación se describe un enfoque estandarizado de las pruebas de rendimiento para una aplicación de la aplicación de la en el entorno *Publish*. Esta prueba de rendimiento consta de las cinco fases siguientes:
+A continuación se describe un método estandarizado para las pruebas de rendimiento de una aplicación AEM en el entorno *Publish*. Esta prueba de rendimiento consta de las cinco fases siguientes:
 
 * [Verificación del conocimiento](#verification-of-knowledge)
 * [Definición del ámbito](#scope-definition)
@@ -317,7 +317,7 @@ Un primer paso es documentar la información básica que debe conocer antes de i
 
 Documente la arquitectura del entorno de prueba que se utiliza para las pruebas de rendimiento.
 
-Necesita una reproducción del entorno de producción de Publish planificado, junto con Dispatcher y el equilibrador de carga.
+Necesita una reproducción del entorno de publicación de producción planificado, junto con Dispatcher y el equilibrador de carga.
 
 #### Mapa de aplicación {#application-map}
 
@@ -344,7 +344,7 @@ Una vez seleccionados los casos de uso clave, se pueden definir para cada caso l
 * Tiempo de respuesta para los servicios
 * Número de hilos inactivos en el grupo de hilos
 * Número de conexiones gratuitas
-* Recursos del sistema, como acceso a CPU y E/S
+* Recursos del sistema, como CPU y acceso a E/S
 
 ### Metodologías de prueba {#test-methodologies}
 
@@ -366,7 +366,7 @@ Basado en los siguientes principios.
 
 #### Transacciones {#transactions}
 
-* El término transacción se utiliza para representar la solicitud de una página web completa, incluida la propia página y todas las llamadas posteriores. AJAX Es decir, la solicitud de página, cualquier llamada de, imágenes y otros objetos **Solicitar profundización**.
+* El término transacción se utiliza para representar la solicitud de una página web completa, incluida la propia página y todas las llamadas posteriores. Es decir, la solicitud de página, cualquier llamada de AJAX, imágenes y otros objetos **Solicitar profundización**.
 * Para analizar completamente cada solicitud, puede representar cada elemento de la pila de llamadas y, a continuación, calcular el tiempo de procesamiento promedio de cada uno.
 
 ### Definición de los objetivos de rendimiento {#defining-the-performance-goals}
@@ -409,7 +409,7 @@ La prueba de los componentes en combinación ofrece una reflexión más detallad
 
 #### Pruebas de puesta en marcha {#going-live-tests}
 
-Durante los primeros días después de que su sitio web esté disponible, puede esperar un mayor nivel de interés. Este escenario es incluso mayor que los valores máximos que está probando. El Adobe recomienda probar los escenarios de lanzamiento para garantizar que el sistema pueda hacer frente a esta situación.
+Durante los primeros días después de que su sitio web esté disponible, puede esperar un mayor nivel de interés. Este escenario es incluso mayor que los valores máximos que está probando. Adobe recomienda probar los escenarios de lanzamiento para garantizar que el sistema pueda hacer frente a esta situación.
 
 | Escenario | Tipo de prueba | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
@@ -430,7 +430,7 @@ Al diseñar estas pruebas, debe tenerse en cuenta que no todos los escenarios se
 
 | Escenario de error | Tipo de error | No. de usuarios | Tx/s (esperado) | Tx/s (probado) | Descripción |
 |---|---|---|---|---|---|
-| Sobrecarga del componente de búsqueda | Buscar en comodín global (asterisco) | 10 | 1 |  | Solo se busca &ast;&ast;&ast;. |
+| Sobrecarga del componente de búsqueda | Buscar en comodín global (asterisco) | 10 | 1 |  | Solo se busca &amp;ast;&amp;ast;&amp;ast;. |
 |   | Detener palabra | 20 | 2 |  | Buscando una palabra de detención. |
 |   | Cadena vacía | 10 | 1 |  | Buscando una cadena vacía. |
 |   | Caracteres especiales | 10 | 1 |  | Buscando caracteres especiales. |
@@ -459,7 +459,6 @@ Todas las optimizaciones realizadas deben probarse para garantizar que tengan lo
 Hay una selección de herramientas disponibles para ayudarle con la generación de carga, la monitorización del rendimiento y el análisis de resultados. Algunas de estas herramientas son las siguientes:
 
 * [JMeter](https://jmeter.apache.org/)
-* [Cargar ejecutor](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Perfil interactivo de Java™](https://jiprof.sourceforge.net/)
 
@@ -478,7 +477,7 @@ Una vez completadas todas las pruebas, informe de lo siguiente:
 
 ## Optimización del rendimiento al utilizar Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es una herramienta de equilibrio de carga o almacenamiento en caché de Adobe. Al utilizar Dispatcher, considere la posibilidad de optimizar el sitio web para el rendimiento de la caché.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es la herramienta de equilibrio de carga o almacenamiento en caché de Adobe. Al utilizar Dispatcher, considere la posibilidad de optimizar el sitio web para el rendimiento de la caché.
 
 >[!NOTE]
 >
@@ -494,7 +493,7 @@ Dispatcher ofrece varios mecanismos integrados que puede utilizar para optimizar
 >
 >En general, varias estrategias de almacenamiento en caché implican la selección de buenas direcciones URL y no depender de estos datos adicionales.
 >
->Con la versión de Dispatcher 4.1.11 también puede almacenar en caché los encabezados de respuesta. Consulte [Almacenamiento en caché de encabezados de respuesta HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#configuring-the-dispatcher-cache-cache).
+>Con la versión de Dispatcher 4.1.11 también puede almacenar en caché los encabezados de respuesta. Consulte [Almacenamiento en caché de encabezados de respuesta HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 >
 
 ### Cálculo de la proporción de caché de Dispatcher {#calculating-the-dispatcher-cache-ratio}
@@ -503,13 +502,13 @@ La fórmula de proporción de caché calcula el porcentaje de solicitudes admini
 
 * Número total de solicitudes. Esta información está disponible en Apache `access.log`. Para obtener más información, consulte la [documentación oficial de Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
-* Número de solicitudes que ha servido la instancia de Publish. Esta información está disponible en el `request.log` de la instancia. Para obtener más información, consulte [Interpretación del request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) y [Búsqueda de los archivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
+* Número de solicitudes que ha servido la instancia de publicación. Esta información está disponible en el `request.log` de la instancia. Para obtener más información, consulte [Interpretación del request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) y [Búsqueda de los archivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
 
 La fórmula para calcular la proporción de caché es la siguiente:
 
-* (El número total de solicitudes **menos** el número de solicitudes en Publish) **dividido** por el número total de solicitudes.
+* (El número total de solicitudes **menos** el número de solicitudes en la publicación) **dividido** por el número total de solicitudes.
 
-Por ejemplo, si el número total de solicitudes es 129491 y el número de solicitudes atendidas por la instancia de Publish es 58959, la proporción de caché es: **(129491 - 58959)/129491= 54,5%**.
+Por ejemplo, si el número total de solicitudes es 129491 y el número de solicitudes atendidas por la instancia de publicación es 58959, la proporción de caché es: **(129491 - 58959)/129491= 54,5%**.
 
 Si no tiene un emparejamiento de publicador/Dispatcher individual, agregue solicitudes de todos los distribuidores y editores para obtener una medición precisa. Consulte también [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md).
 
@@ -530,7 +529,7 @@ Con la versión 4.1.11 de Dispatcher, puede almacenar en caché los encabezados 
 
 #### Evitar parámetros de URL {#avoid-url-parameters}
 
-Si es posible, evite los parámetros de URL para las páginas que desee almacenar en caché. Por ejemplo, si tiene una galería de imágenes, la siguiente URL nunca se almacenará en caché (a menos que Dispatcher esté [configurado así](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#configuring-the-dispatcher-cache-cache)):
+Si es posible, evite los parámetros de URL para las páginas que desee almacenar en caché. Por ejemplo, si tiene una galería de imágenes, la siguiente URL nunca se almacenará en caché (a menos que Dispatcher esté [configurado así](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -603,7 +602,7 @@ Se recomienda limitar la personalización a donde sea necesario. Para explicar p
 * Si, por el contrario, ofrece una opción de 10 páginas de inicio diferentes, puede almacenar en caché cada una de ellas, mejorando así el rendimiento.
 
 >[!TIP]
->Para obtener más información sobre la configuración de la caché de Dispatcher AEM, consulte el [Tutorial de caché de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=es) y su sección sobre [Almacenamiento en caché de contenido protegido.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=es#dispatcher-tips-and-tricks)
+>Para obtener más información sobre la configuración de la caché de Dispatcher, consulte el [Tutorial de caché de AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=es) y su sección sobre [Almacenamiento en caché de contenido protegido.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
 
 Si personaliza cada página colocando el nombre del usuario en la barra de título (por ejemplo), tendrá un impacto en el rendimiento.
 
@@ -614,11 +613,11 @@ Con respecto a la mezcla de contenido restringido y público en una página, con
 
 >[!TIP]
 >
->Para administrar contenido mixto público y restringido, consulte [Configurar inclusión dinámica de Sling.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html?lang=es)
+>Para administrar contenido mixto público y restringido, consulte [Configurar inclusión dinámica de Sling.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### Conexiones fijas {#sticky-connections}
 
-[Las conexiones fijas](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#the-benefits-of-load-balancing) garantizan que todos los documentos de un usuario se compongan en el mismo servidor. Si un usuario abandona esta carpeta y más tarde vuelve a ella, la conexión se mantiene. Para guardar todos los documentos que requieran conexiones fijas para el sitio web, defina una carpeta. Intente no meter otros documentos en ella. Este escenario afecta al equilibrio de carga si utiliza páginas personalizadas y datos de sesión.
+[Las conexiones fijas](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) garantizan que todos los documentos de un usuario se compongan en el mismo servidor. Si un usuario abandona esta carpeta y más tarde vuelve a ella, la conexión se mantiene. Para guardar todos los documentos que requieran conexiones fijas para el sitio web, defina una carpeta. Intente no meter otros documentos en ella. Este escenario afecta al equilibrio de carga si utiliza páginas personalizadas y datos de sesión.
 
 #### Tipos MIME {#mime-types}
 
@@ -634,7 +633,7 @@ Para la mayoría de los archivos, el tipo MIME está implícito en la extensión
 
 Si el nombre del archivo no tiene extensión, se mostrará como texto sin formato.
 
-Con la versión 4.1.11 de Dispatcher, puede almacenar en caché los encabezados de respuesta. Si no almacena en caché los encabezados de respuesta en Dispatcher, el tipo MIME forma parte del encabezado HTTP. AEM De este modo, si la aplicación de la aplicación de la devuelve archivos que no tienen un final de archivo reconocido y dependen del tipo MIME, es posible que estos archivos se muestren incorrectamente.
+Con la versión 4.1.11 de Dispatcher, puede almacenar en caché los encabezados de respuesta. Si no almacena en caché los encabezados de respuesta en Dispatcher, el tipo MIME forma parte del encabezado HTTP. Por lo tanto, si la aplicación de AEM devuelve archivos que no tienen un final de archivo reconocido y dependen del tipo MIME, es posible que estos archivos se muestren incorrectamente.
 
 Para asegurarse de que los archivos se almacenan en caché correctamente, siga estas directrices:
 
@@ -643,7 +642,7 @@ Para asegurarse de que los archivos se almacenan en caché correctamente, siga e
 
 ## Rendimiento de backup {#backup-performance}
 
-AEM En esta sección se presenta una serie de análisis de rendimiento utilizados para evaluar el rendimiento de los backups de los datos y los efectos de la actividad de backup en el rendimiento de las aplicaciones. AEM Las copias de seguridad de la copia de seguridad presentan una carga significativa en el sistema mientras se ejecuta, y el Adobe mide este impacto, así como los efectos de la configuración de demora de la copia de seguridad que intenta modular estos efectos. El objetivo es ofrecer algunos datos de referencia sobre el rendimiento esperado de las copias de seguridad en configuraciones realistas y cantidades de datos de producción, y proporcionar orientación sobre cómo estimar los tiempos de copia de seguridad para los sistemas planificados.
+Esta sección presenta una serie de análisis de rendimiento utilizados para evaluar el rendimiento de los backups de AEM y los efectos de la actividad de backup en el rendimiento de la aplicación. Las copias de seguridad de AEM presentan una carga significativa en el sistema mientras se ejecuta. Adobe mide este impacto y los efectos de la configuración de retraso de las copias de seguridad que intenta modular estos efectos. El objetivo es ofrecer algunos datos de referencia sobre el rendimiento esperado de las copias de seguridad en configuraciones realistas y cantidades de datos de producción, y proporcionar orientación sobre cómo estimar los tiempos de copia de seguridad para los sistemas planificados.
 
 ### Entorno de referencia {#reference-environment}
 
@@ -654,13 +653,13 @@ Los resultados comunicados en este documento se obtuvieron de los análisis de r
 * HP ProLiant DL380 G6, 8 CPU x 2,533 GHz
 * Unidades SCSI conectadas en serie de 300 GB a 10.000 rpm
 * Controladora RAID de hardware; ocho unidades en una cabina RAID0+5
-* CPU de imagen VMware x 2 Intel Xeon® E5540 a 2,53 GHz
+* Imagen de VMware CPU x 2 Intel Xeon® E5540 a 2,53 GHz
 * Red Hat® Linux® 2.6.18-194.el5; Java™ 1.6.0_29
 * Instancia de autor única
 
 El subsistema de disco de este servidor es rápido, representativo de una configuración RAID de alto rendimiento que podría utilizarse en un servidor de producción. El rendimiento de las copias de seguridad puede ser sensible al rendimiento del disco y los resultados de este entorno reflejan el rendimiento de una configuración RAID rápida. La imagen VMWare está configurada para tener un único volumen de disco grande que reside físicamente en el almacenamiento de disco local, en la matriz RAID.
 
-AEM AEM La configuración de la coloca el repositorio y el almacén de datos en el mismo volumen lógico, junto con el sistema operativo y el software de la aplicación de la. El directorio de destino para las copias de seguridad también reside en este sistema de archivos lógico.
+La configuración de AEM coloca el repositorio y el almacén de datos en el mismo volumen lógico, junto con el sistema operativo y el software de AEM. El directorio de destino para las copias de seguridad también reside en este sistema de archivos lógico.
 
 #### Volúmenes de datos {#data-volumes}
 
@@ -676,12 +675,12 @@ La referencia de copia de seguridad se repite con los conjuntos de contenido adi
 
 #### Escenarios de referencia {#benchmark-scenarios}
 
-Los análisis de rendimiento de copia de seguridad cubren dos situaciones principales: copias de seguridad cuando el sistema está bajo una carga de aplicación significativa y copias de seguridad cuando el sistema está inactivo. AEM Aunque la recomendación general es que las copias de seguridad se realicen cuando estén lo más inactivas posible, hay situaciones en las que es necesario que la copia de seguridad se ejecute cuando el sistema está bajo carga.
+Los análisis de rendimiento de copia de seguridad cubren dos situaciones principales: copias de seguridad cuando el sistema está bajo una carga de aplicación significativa y copias de seguridad cuando el sistema está inactivo. Aunque la recomendación general es que las copias de seguridad se realicen cuando AEM esté lo más inactivo posible, hay situaciones en las que es necesario que la copia de seguridad se ejecute cuando el sistema está bajo carga.
 
-* AEM **Estado inactivo**: las copias de seguridad se realizan sin ninguna otra actividad en el estado de la actividad de la.
+* **Estado inactivo**: las copias de seguridad se realizan sin ninguna otra actividad en AEM.
 * **Bajo carga**: las copias de seguridad se realizan mientras el sistema está por debajo del 80% de carga de los procesos en línea. El retraso de la copia de seguridad varió para ver el impacto en la carga.
 
-AEM Los tiempos de copia de seguridad y el tamaño de la copia de seguridad resultante se obtienen de los registros del servidor de la. AEM Normalmente, se recomienda que las copias de seguridad se programen para horas de inactividad cuando el tiempo de inactividad es de duración inactiva, como en medio de la noche. Este escenario es representativo del enfoque recomendado.
+Los tiempos de copia de seguridad y el tamaño del backup resultante se obtienen de los registros del servidor de AEM. Normalmente, se recomienda que las copias de seguridad se programen para horas de inactividad cuando AEM está inactivo, como a mitad de la noche. Este escenario es representativo del enfoque recomendado.
 
 La carga consiste en páginas creadas, páginas eliminadas, recorridos y consultas. La mayor parte de la carga proviene de los recorridos y las consultas de la página. Añadir y eliminar demasiadas páginas aumenta continuamente el tamaño del espacio de trabajo e impide que se completen las copias de seguridad. La distribución de la carga que utiliza el script es un 75 % de recorridos de página, un 24 % de consultas y un 1 % de creaciones de página (un solo nivel sin subpáginas anidadas). El promedio máximo de transacciones por segundo en un sistema inactivo se logra con cuatro subprocesos simultáneos, que se utilizan al probar copias de seguridad con carga.
 
@@ -704,7 +703,7 @@ El tamaño de la copia de seguridad producida es el principal factor determinant
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-Este gráfico ilustra que los backups incrementales y completos siguen un patrón de tamaño y tiempo sencillo que el Adobe puede medir como rendimiento. Los tiempos de copia de seguridad en una instancia inactiva son bastante coherentes, con un promedio de 0,61 MB por segundo, independientemente de los backups completos o incrementales en el entorno de referencia.
+Este gráfico ilustra que tanto las copias de seguridad incrementales como las completas siguen un patrón de tamaño y tiempo sencillo que Adobe puede medir como rendimiento. Los tiempos de copia de seguridad en una instancia inactiva son bastante coherentes, con un promedio de 0,61 MB por segundo, independientemente de los backups completos o incrementales en el entorno de referencia.
 
 #### Retraso de copia {#backup-delay}
 
@@ -712,7 +711,7 @@ El parámetro de retraso de copia de seguridad se proporciona para limitar el gr
 
 * La ejecución simultánea de una copia de seguridad con la carga normal de la aplicación tiene un impacto negativo en el rendimiento de la carga normal.
 * El impacto puede ser leve (tan solo un 5 %) o significativo, lo que provoca una caída de hasta el 75 % en el rendimiento. Es probable que dependa más de la aplicación.
-* El backup no es una carga pesada en la CPU, por lo que las cargas de trabajo de producción intensivas en CPU se verían menos afectadas por el backup que las de E/S intensivas.
+* El backup no es una carga pesada en CPU, por lo que las cargas de trabajo de producción intensivas en CPU se verían menos afectadas por el backup que las intensivas en E/S.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 

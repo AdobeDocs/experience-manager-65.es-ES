@@ -9,22 +9,22 @@ feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
 
 # Conceptos básicos de configuración{#basic-configuration-concepts}
 
-Adobe Experience Manager AEM () se instala con la configuración predeterminada de todos los parámetros que le permiten ejecutarse de forma predeterminada. AEM Sin embargo, puede configurar los parámetros para sus propios requisitos específicos.
+Adobe Experience Manager (AEM) se instala con la configuración predeterminada de todos los parámetros, lo que le permite ejecutarse de forma predeterminada. Sin embargo, puede configurar AEM para sus propios requisitos específicos.
 
-AEM Se pueden configurar muchos aspectos de la:
+Hay muchos aspectos de AEM que se pueden configurar:
 
 * Algunos están [configurados comúnmente para cada instalación de proyecto](#primary-configuration-considerations) y deben revisarse para confirmar si son aplicables a su proyecto.
 * [Otras configuraciones](#further-configuration-considerations) pueden ser comunes pero no imperativas; están relacionadas con características o con el rendimiento y la estabilidad del sistema.
-* AEM Otras solo son necesarias para determinadas funciones opcionales de la (estas se documentan junto con la función adecuada).
+* Otras solo son necesarias para determinadas funciones opcionales de AEM (se documentan junto con la función adecuada).
 
 Según la configuración específica, estos cambios se pueden realizar mediante las siguientes opciones:
 
@@ -44,9 +44,9 @@ Según la configuración específica, estos cambios se pueden realizar mediante 
 
   Algunos archivos de configuración residen en el sistema de archivos.
 
-* AEM **WCM**
+* **WCM DE AEM**
 
-  AEM Se pueden configurar varios aspectos dentro del propio WCM, muchos de los cuales utilizan la consola [Tools](/help/sites-administering/tools-consoles.md); por ejemplo, los agentes de replicación.
+  Se pueden configurar varios aspectos dentro del propio WCM de AEM, muchos de los cuales utilizan la consola [Tools](/help/sites-administering/tools-consoles.md); por ejemplo, los agentes de replicación.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Según la configuración específica, estos cambios se pueden realizar mediante 
 
 >[!NOTE]
 >
->AEM La configuración de la es sencilla. Sin embargo, ciertos cambios pueden tener un impacto importante en las aplicaciones. AEM Por este motivo, asegúrese de que tiene la experiencia y los conocimientos necesarios antes de empezar a configurar la configuración de la aplicación y realice solo los cambios que sepa que son necesarios. Cualquier cambio realizado a través de la consola OSGi se aplica **inmediatamente** al sistema en ejecución (no se requiere reiniciar).
+>La configuración de AEM es sencilla. Sin embargo, ciertos cambios pueden tener un impacto importante en las aplicaciones. Por este motivo, asegúrese de que tiene la experiencia y los conocimientos necesarios antes de empezar a configurar AEM y realice solo los cambios que sepa que son necesarios. Cualquier cambio realizado a través de la consola OSGi se aplica **inmediatamente** al sistema en ejecución (no se requiere reiniciar).
 
 ## Consideraciones de configuración principal {#primary-configuration-considerations}
 
@@ -70,7 +70,7 @@ Hay varios problemas de configuración clave en la [Lista de comprobación de se
 
 ### Configuración de la interfaz de usuario predeterminada: táctil o clásica {#configuring-the-default-ui-touch-optimized-or-classic}
 
-AEM Hay dos interfaces de usuario disponibles para su uso en la:
+Hay dos interfaces de usuario disponibles para usar en AEM:
 
 * La IU táctil optimizada
 * La IU clásica
@@ -83,7 +83,7 @@ Puede configurar la interfaz de usuario que necesite mediante [Asignación raíz
 
 ### IPv4 e IPv6 {#ipv-and-ipv}
 
-AEM Todos los elementos de la (por ejemplo, el repositorio y Dispatcher) se pueden instalar en redes IPv4 e IPv6.
+Todos los elementos de AEM (por ejemplo, el repositorio y Dispatcher) se pueden instalar en redes IPv4 e IPv6.
 
 El funcionamiento es fluido, ya que no se requiere ninguna configuración especial; cuando sea necesario, simplemente puede especificar una dirección IP utilizando el formato adecuado para su tipo de red.
 
@@ -107,15 +107,15 @@ Esto significa que cuando se debe especificar una dirección IP, se puede selecc
 
 ### Depuración de versiones {#version-purging}
 
-AEM En una instalación estándar, crea una versión de una página o nodo cada vez que activa una página (después de actualizar el contenido). También puede crear versiones adicionales si lo solicita usando la ficha **Creación de versiones** de la barra de tareas. Todas estas versiones se almacenan en el repositorio y se pueden restaurar, si es necesario.
+En una instalación estándar, AEM crea una versión de una página o nodo cada vez que activa una página (después de actualizar el contenido). También puede crear versiones adicionales si lo solicita usando la ficha **Creación de versiones** de la barra de tareas. Todas estas versiones se almacenan en el repositorio y se pueden restaurar, si es necesario.
 
 Estas versiones nunca se depuran, por lo que el tamaño del repositorio aumenta con el tiempo y, por lo tanto, debe administrarse.
 
-AEM Consulte [Depuración de versiones](/help/sites-deploying/version-purging.md) para obtener información detallada, en particular [Administrador de versiones](/help/sites-deploying/version-purging.md#version-manager) para obtener información sobre cómo configurar las versiones para depurar versiones anteriores cuando se crea una nueva versión.
+Consulte [Depuración de versiones](/help/sites-deploying/version-purging.md) para obtener información detallada, en particular [Administrador de versiones](/help/sites-deploying/version-purging.md#version-manager) para saber cómo configurar AEM para purgar versiones anteriores cuando se crea una nueva versión.
 
 ### Registro {#logging}
 
-AEM le ofrece la posibilidad de configurar lo siguiente:
+AEM permite configurar lo siguiente:
 
 * parámetros globales para el servicio de registro central
 * registro de datos de solicitud; una configuración de registro especializada para solicitar información
@@ -125,7 +125,7 @@ Consulte [Registro](/help/sites-deploying/configure-logging.md) para obtener inf
 
 ### Ejecutar modos {#run-modes}
 
-AEM Los modos de ejecución permiten ajustar la instancia de la para un propósito específico. Por ejemplo, crear o publicar, probar, desarrollar o intranet, etc.
+Los modos de ejecución permiten ajustar la instancia de AEM para un propósito específico. Por ejemplo, crear o publicar, probar, desarrollar o intranet, etc.
 
 Esto se realiza definiendo colecciones de parámetros de configuración para cada modo de ejecución. Se aplica un conjunto básico de parámetros de configuración para todos los modos de ejecución y, a continuación, puede ajustar conjuntos adicionales para el propósito de su entorno específico. A continuación, se aplican según sea necesario.
 
@@ -135,13 +135,13 @@ Consulte [Modos de ejecución](/help/sites-deploying/configure-runmodes.md) para
 
 ### Inicio de sesión único {#single-sign-on}
 
-Inicio de sesión único (SSO) permite a un usuario acceder a varios sistemas después de proporcionar credenciales de autenticación (como nombre de usuario y contraseña) una vez. Un sistema independiente (conocido como autenticador de confianza) realiza la autenticación y proporciona al Experience Manager las credenciales de usuario. El Experience Manager comprueba y aplica los permisos de acceso del usuario (es decir, determina a qué recursos puede acceder el usuario).
+Inicio de sesión único (SSO) permite a un usuario acceder a varios sistemas después de proporcionar credenciales de autenticación (como nombre de usuario y contraseña) una vez. Un sistema independiente (conocido como autenticador de confianza) realiza la autenticación y proporciona a Experience Manager las credenciales de usuario. Experience Manager comprueba y aplica los permisos de acceso del usuario (es decir, determina a qué recursos puede acceder el usuario).
 
 Consulte [Inicio de sesión único](/help/sites-deploying/single-sign-on.md) para obtener más información.
 
 ### Asignación de recursos {#resource-mapping}
 
-AEM La asignación de recursos se utiliza para definir redirecciones, URL de vanidad y hosts virtuales para los usuarios de la red de distribución de recursos ().
+La asignación de recursos se utiliza para definir redirecciones, URL de vanidad y hosts virtuales para AEM.
 
 Por ejemplo, puede utilizar estas asignaciones para lo siguiente:
 
@@ -152,9 +152,9 @@ Consulte [Asignación de recursos](/help/sites-deploying/resource-mapping.md) pa
 
 ### Agentes de replicación, replicación inversa y replicación {#replication-reverse-replication-and-replication-agents}
 
-AEM Los agentes de replicación son fundamentales para los, ya que el mecanismo utilizado para lo siguiente:
+Los agentes de replicación son fundamentales para AEM como mecanismo para lo siguiente:
 
-* [Contenido de Publish (activar)](/help/sites-authoring/publishing-pages.md) de un autor a un entorno de publicación.
+* [Publicar (activar)](/help/sites-authoring/publishing-pages.md) contenido de un autor en un entorno de publicación.
 * Vaciar explícitamente el contenido de la caché de Dispatcher.
 * Devolver los datos introducidos por el usuario (por ejemplo, los datos de entrada de formulario) desde el entorno de publicación al entorno de creación (bajo el control del entorno de creación).
 
@@ -162,47 +162,47 @@ Para obtener más información, consulte [Replicación](/help/sites-deploying/re
 
 ### Ajustes de configuración de OSGi {#osgi-configuration-settings}
 
-AEM [OSGi](https://www.osgi.org/) es un elemento fundamental en la pila de tecnología de los recursos de la tecnología de los recursos de la red de la red de la. AEM Se utiliza para controlar los paquetes compuestos de y su configuración de los paquetes de componentes de la interfaz de usuario de la interfaz de usuario de.
+[OSGi](https://www.osgi.org/) es un elemento fundamental en la pila de tecnología de AEM. Se utiliza para controlar los paquetes compuestos de AEM y su configuración.
 
-Consulte [Ajustes de configuración de OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obtener una lista de los distintos paquetes que son relevantes para la implementación del proyecto (enumerados según el paquete). AEM No es necesario ajustar todos los ajustes enumerados, algunos se mencionan para ayudarle a comprender cómo funciona la configuración de la lista de la manera en que funciona la.
+Consulte [Ajustes de configuración de OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obtener una lista de los distintos paquetes que son relevantes para la implementación del proyecto (enumerados según el paquete). No es necesario ajustar todas las configuraciones enumeradas, algunas se mencionan para ayudarle a comprender cómo funciona AEM.
 
-AEM Al trabajar con los servicios, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+Al trabajar con AEM, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 ### Configuración de LDAP {#configuring-ldap}
 
 Se requiere autenticación LDAP para autenticar a los usuarios almacenados en un directorio LDAP (central) como Active Directory. Esto ayuda a reducir el esfuerzo necesario para administrar las cuentas de usuario.
 
-La autenticación LDAP se produce en el nivel del repositorio, por lo que el repositorio la gestiona directamente. AEM Para obtener más información, consulte [Configuración de LDAP con &lbrace;10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/ldap-config.md)
+La autenticación LDAP se produce en el nivel del repositorio, por lo que el repositorio la gestiona directamente. Para obtener más información, consulte [Configuración de LDAP con AEM](/help/sites-administering/ldap-config.md).
 
-AEM Para obtener información sobre la administración de usuarios dentro de la administración de usuarios (incluida la asignación de derechos de acceso), vea [Administración de usuarios y seguridad](/help/sites-administering/security.md).
+Para administrar usuarios en AEM (incluida la asignación de derechos de acceso), consulte [Administración de usuarios y seguridad](/help/sites-administering/security.md).
 
 ### Configuración de Dispatcher {#configuring-the-dispatcher}
 
 Dispatcher es la herramienta de Adobe Experience Manager para el almacenamiento en caché, el equilibrio de carga o ambos. Se puede utilizar con un servidor web de clase empresarial.
 
-Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) para obtener información detallada, en particular [Configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es) para obtener más información sobre la configuración.
+Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) para obtener información detallada, en particular [Configuración de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) para obtener más información sobre la configuración.
 
-### AEM Configuración del conector de LiveCycle {#configuring-aem-livecycle-connector}
+### Configuración del conector de AEM LiveCycle {#configuring-aem-livecycle-connector}
 
-AEM AEM AEM Con el lanzamiento de los servicios de documentos de la y la seguridad de documentos de la, ahora tiene la capacidad de invocar los servicios de documentos de la LiveCycle para procesar un formulario XFA, convertir un documento en PDF y proteger un documento mediante políticas. AEM Consulte [Conector del LiveCycle de trabajo ](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) para obtener más información.
+Con el lanzamiento de AEM Doc Services y AEM Doc Security, AEM ahora tiene la capacidad de invocar los servicios de documento de LiveCycle para procesar un formulario XFA, convertir un documento en PDF y proteger un documento mediante políticas.
 
 ### Administración de topologías y descarga de trabajos {#job-offloading-and-topology-administration}
 
 [La descarga](/help/sites-deploying/offloading.md) distribuye las tareas de procesamiento entre las instancias de Experience Manager de una topología. Con la descarga, puede utilizar instancias de Experience Manager específicas para realizar tipos específicos de procesamiento. El procesamiento especializado le permite maximizar el uso de los recursos de servidor disponibles.
 
-Las topologías son clústeres Experience Manager de correspondencia imprecisa que participan en la descarga. Un clúster consta de una o más instancias de servidor de Experience Manager (una sola instancia se considera un clúster).
+Las topologías son clústeres de Experience Manager de correspondencia imprecisa que participan en la descarga. Un clúster consta de una o más instancias de servidor de Experience Manager (una sola instancia se considera un clúster).
 
 Para obtener más información sobre cómo ver o modificar la pertenencia a la topología, consulte la sección [Administración de topologías](/help/sites-deploying/offloading.md#administering-topologies).
 
 ### Configuración de la consola de bienvenida {#configuring-the-welcome-console}
 
-AEM La consola de Bienvenida de la IU clásica proporciona una lista de vínculos a las distintas consolas y funcionalidades de la interfaz de usuario de.
+La consola de bienvenida de la IU clásica proporciona una lista de vínculos a las distintas consolas y funcionalidades de AEM.
 
 Es posible configurar los vínculos visibles; consulte [Configuración de la consola de bienvenida](/help/sites-developing/customizing-the-welcome-console.md) para obtener más información.
 
 ### Configurar para el rendimiento {#configuring-for-performance}
 
-[El rendimiento](/help/sites-deploying/configuring-performance.md) es clave para tu proyecto. AEM Se pueden configurar ciertos aspectos de la (o del repositorio subyacente) para optimizar el rendimiento.
+[El rendimiento](/help/sites-deploying/configuring-performance.md) es clave para tu proyecto. Se pueden configurar ciertos aspectos de AEM (o del repositorio subyacente) para optimizar el rendimiento.
 
 Consulte [Configuración del rendimiento](/help/sites-deploying/configuring-performance.md#configuring-for-performance) para obtener más información.
 
@@ -228,9 +228,9 @@ Puede habilitar HTTP sobre SSL para utilizar conexiones más seguras con sus ser
 
 Consulte [Habilitación de HTTP sobre SSL](/help/sites-administering/ssl-by-default.md) para obtener más información.
 
-### AEM Portals y portlets de la red {#aem-portals-and-portlets}
+### Portales y portlets de AEM {#aem-portals-and-portlets}
 
-Un portal es una aplicación web que proporciona personalización, inicio de sesión único, integración de contenido desde diferentes fuentes y aloja la capa de presentación de los sistemas de información. El componente portlet también permite incrustar un portlet en la página. Para acceder al contenido proporcionado por el WCM CQ5, el servidor de portales puede acoplarse al portlet Director de portal CQ5. Para ello, instale, configure y agregue el portlet a la página del portal.
+Un portal es una aplicación web que proporciona personalización, inicio de sesión único, integración de contenido desde diferentes fuentes y aloja la capa de presentación de los sistemas de información. El componente portlet también permite incrustar un portlet en la página. Para acceder al contenido proporcionado por CQ5 WCM, el servidor de portal se puede acoplar al portlet CQ5 Portal Director. Para ello, instale, configure y agregue el portlet a la página del portal.
 
 Consulte [Portal y portlets](/help/sites-administering/aem-as-portal.md) para obtener más información.
 
@@ -244,11 +244,11 @@ Consulte [Caducidad de objetos estáticos](/help/sites-deploying/expiration-stat
 
 Cada proceso de Java™ puede acceder a los archivos; esto requiere recursos del sistema. Por este motivo, se define un límite superior en cuanto a la cantidad de archivos a los que puede acceder cada proceso de forma simultánea. Si se supera este límite, puede producirse un error de excepción.
 
-AEM Si el proceso de la supera este máximo, se ve el mensaje &quot; `too many open files`&quot; en `error.log`.
+Si el proceso de AEM supera este máximo, se verá el mensaje &quot;`too many open files`&quot; en `error.log`.
 
 Para evitar estas excepciones, haga lo siguiente:
 
-1. AEM Compruebe cuántos archivos abiertos está usando el proceso de la.
+1. Compruebe cuántos archivos abiertos está utilizando el proceso de AEM.
 
    Esta comprobación depende de la plataforma en la que se esté ejecutando la instancia. Se pueden utilizar utilidades como lsof (UNIX®) o Process Explorer (Windows).
 
@@ -309,4 +309,4 @@ Las impresiones de página se muestran en la columna **Impresiones** de la conso
 
 >[!CAUTION]
 >
->La configuración del Rastreador de impresiones de páginas de Adobe en el entorno de creación permite las solicitudes anónimas al servicio de seguimiento.
+>La configuración del Rastreador de impresiones de página de Adobe en el entorno de creación permite las solicitudes anónimas al servicio de seguimiento.

@@ -1,6 +1,6 @@
 ---
 title: Implementación y mantenimiento
-description: AEM Obtenga información sobre cómo empezar con la instalación de la.
+description: Obtenga información sobre cómo empezar a instalar AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,9 +10,9 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1779'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ En esta página encontrará:
 
 * [Conceptos básicos](#basic-concepts)
 
-   * [AEM ¿Qué es la?](#what-is-aem)
+   * [¿Qué es AEM?](#what-is-aem)
    * [Implementaciones habituales](#typical-deployment-scenarios)
 
       * [On-Premise](#on-premise)
@@ -34,7 +34,7 @@ En esta página encontrará:
    * [Requisitos previos](#prerequisites)
    * [Obtención del software](#getting-the-software)
    * [Instalación local predeterminada](#default-local-install)
-   * [Instalaciones de Author y Publish](#author-and-publish-installs)
+   * [Instalaciones de creación y publicación](#author-and-publish-installs)
    * [Directorio de instalación desempaquetado](#unpacked-install-directory)
    * [Inicio y detención](#starting-and-stopping)
 
@@ -44,34 +44,34 @@ Una vez que se haya familiarizado con estos conceptos básicos, encontrará info
 * [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
 * [Instalación independiente personalizada](/help/sites-deploying/custom-standalone-install.md)
 * [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
-* [Resolución de problemas](/help/sites-deploying/troubleshooting.md)
+* [Solución de problemas](/help/sites-deploying/troubleshooting.md)
 * [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configuración](/help/sites-deploying/configuring.md)
-* [AEM Actualización a 6.5](/help/sites-deploying/upgrade.md)
+* [Actualización a AEM 6.5](/help/sites-deploying/upgrade.md)
 * [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
 * [Consola web](/help/sites-deploying/web-console.md)
 * [Solución de problemas de replicación](/help/sites-deploying/troubleshoot-rep.md)
 * [Prácticas recomendadas](/help/sites-deploying/best-practices.md)
 * [Implementación de comunidades](/help/communities/deploy-communities.md)
-* [AEM Introducción a la plataforma de](/help/sites-deploying/platform.md)
+* [Introducción a la plataforma de AEM](/help/sites-deploying/platform.md)
 * [Directrices de rendimiento](/help/sites-deploying/performance-guidelines.md)
 * [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [¿Qué es AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es)
 
 ## Conceptos básicos {#basic-concepts}
 
-### AEM ¿Qué es la? {#what-is-aem}
+### ¿Qué es AEM? {#what-is-aem}
 
 Adobe Experience Manager es un sistema cliente-servidor basado en la web para crear, administrar e implementar sitios web comerciales y servicios relacionados. Combina varias funciones de nivel de infraestructura y de nivel de aplicación en un único paquete integrado.
 
-AEM A nivel de infraestructura, proporciona lo siguiente:
+A nivel de infraestructura, AEM proporciona lo siguiente:
 
-* AEM **Servidor de aplicaciones web**: se puede implementar en modo independiente (incluye un servidor web Jetty integrado) o como una aplicación web dentro de un servidor de aplicaciones de terceros.
-* AEM **Marco de aplicación web**: incorpora el Marco de aplicación web de Sling que simplifica la escritura de aplicaciones web orientadas a contenido y RESTful.
-* AEM **Repositorio de contenido**: incluye un repositorio de contenido Java™ (JCR), un tipo de base de datos jerárquica diseñada específicamente para datos no estructurados y semiestructurados. El repositorio almacena no solo el contenido orientado al usuario, sino también todo el código, las plantillas y los datos internos utilizados por la aplicación.
+* **Servidor de aplicaciones web**: AEM se puede implementar en modo independiente (incluye un servidor web Jetty integrado) o como una aplicación web dentro de un servidor de aplicaciones de terceros.
+* **Marco de aplicación web**: AEM incorpora el Marco de aplicación web Sling que simplifica la escritura de aplicaciones web RESTful orientadas a contenido.
+* **Repositorio de contenido**: AEM incluye un repositorio de contenido Java™ (JCR), un tipo de base de datos jerárquica diseñada específicamente para datos no estructurados y semiestructurados. El repositorio almacena no solo el contenido orientado al usuario, sino también todo el código, las plantillas y los datos internos utilizados por la aplicación.
 
-AEM Partiendo de esta base, también ofrece varias funciones de nivel de aplicación para la gestión de:
+Partiendo de esta base, AEM también ofrece varias funciones de nivel de aplicación para la administración de:
 
 * **Sitios web**
 * **Aplicaciones móviles**
@@ -83,48 +83,48 @@ AEM Partiendo de esta base, también ofrece varias funciones de nivel de aplicac
 
 Por último, los clientes pueden utilizar estos componentes básicos de infraestructura y de nivel de aplicación para crear soluciones personalizadas mediante la creación de aplicaciones propias.
 
-AEM El servidor de está **basado en Java** y se ejecuta en la mayoría de los sistemas operativos que admiten esa plataforma. AEM Toda la interacción de clientes con se realiza a través de un **explorador web**.
+El servidor de AEM está **basado en Java** y se ejecuta en la mayoría de los sistemas operativos que admiten esa plataforma. Toda la interacción del cliente con AEM se realiza mediante un **explorador web**.
 
 >[!NOTE]
 >
->La función Adaptive Forms AEM, disponible en QuickStart de la versión 6.5 de la versión, está diseñada únicamente para fines de exploración y evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms, ya que la funcionalidad Formularios adaptables requiere una licencia adecuada.
+>La función Forms adaptable, disponible en QuickStart de AEM 6.5, está diseñada únicamente para fines de exploración y evaluación. Para su uso en producción, es esencial obtener una licencia válida para AEM Forms, ya que la funcionalidad Formularios adaptables requiere una licencia adecuada.
 
 ### Escenarios de implementación habituales {#typical-deployment-scenarios}
 
-AEM AEM En la terminología de la, una &quot;instancia&quot; es una copia de la que se ejecuta en un servidor. AEM Las instalaciones suelen incluir al menos dos instancias, que suelen ejecutarse en equipos separados:
+En la terminología de AEM, una &quot;instancia&quot; es una copia de AEM que se ejecuta en un servidor. Las instalaciones de AEM suelen incluir al menos dos instancias, que normalmente se ejecutan en equipos separados:
 
 * **Autor**: la instancia de AEM utilizada para crear, cargar y editar contenido y administrar el sitio web. Una vez que el contenido está listo para su publicación, se replica en la instancia de publicación.
-* **Publish AEM**: instancia de que sirve el contenido publicado al público.
+* **Publicar**: una instancia de AEM que sirve el contenido publicado al público.
 
 Estas instancias son idénticas en términos de software instalado. Solo se diferencian por la configuración. Además, la mayoría de las instalaciones utilizan un Dispatcher:
 
-* **Dispatcher**: Un servidor web estático (Apache httpd, MicrosoftAEM ® IIS, etc.) se ha ampliado con el módulo de Dispatcher de la. Almacena en la caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
+* **Dispatcher**: Un servidor web estático (Apache httpd, Microsoft® IIS, etc.) se ha ampliado con el módulo Dispatcher de AEM. Almacena en la caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
 
 Existen muchas opciones y elaboraciones avanzadas de esta configuración, pero el patrón básico de creación, publicación y Dispatcher es el núcleo de la mayoría de las implementaciones. Empecemos por centrarnos en una configuración simple. A continuación se describen las opciones de implementación avanzadas.
 
 Las secciones siguientes describen ambos casos:
 
-* AEM **On-Premise**: implementado y administrado en su entorno corporativo.
+* **On-Premise**: AEM implementado y administrado en su entorno corporativo.
 
-* **Managed Services - Cloud Manager para Adobe Experience Manager AEM**: implementado y administrado por Adobe Managed Services.
+* **Managed Services - Cloud Manager para Adobe Experience Manager**: AEM implementado y administrado por Adobe Managed Services.
 
 ### On-Premise {#on-premise}
 
-AEM Puede instalar los servidores de en su entorno corporativo de. Las instancias de instalación habituales incluyen: entornos de desarrollo, pruebas y publicación. AEM Consulte [Introducción](/help/sites-deploying/deploy.md#getting%20started) para obtener detalles básicos sobre cómo obtener el software de la instalación local de la aplicación de la instalación de forma local.
+Puede instalar AEM en servidores de su entorno corporativo. Las instancias de instalación habituales incluyen: entornos de desarrollo, pruebas y publicación. Consulte [Introducción](/help/sites-deploying/deploy.md#getting%20started) para obtener detalles básicos sobre cómo obtener el software de AEM para instalarlo localmente.
 
 Para obtener más información sobre las implementaciones locales típicas, consulte [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md).
 
 ### Managed Services con Cloud Manager {#managed-services-using-cloud-manager}
 
-AEM Managed Services es una solución completa para la administración de experiencias digitales. Proporciona las ventajas de la solución de entrega de experiencias en la nube, al tiempo que conserva todas las ventajas de control, seguridad y personalización de una implementación On-Premise. AEM Managed Services permite a los clientes iniciar más rápido mediante la implementación en la nube y también basándose en las prácticas recomendadas y la asistencia desde el Adobe. Las organizaciones y los usuarios empresariales pueden atraer a los clientes en un tiempo mínimo, aumentar la cuota de mercado y centrarse en la creación de campañas de marketing innovadoras, al tiempo que reducen la carga para la TI.
+AEM Managed Services es una solución completa para la administración de experiencias digitales. Proporciona las ventajas de la solución de entrega de experiencias en la nube, al tiempo que conserva todas las ventajas de control, seguridad y personalización de una implementación On-Premise. AEM Managed Services permite a los clientes iniciar más rápido mediante la implementación en la nube y también basándose en las prácticas recomendadas y la asistencia de Adobe. Las organizaciones y los usuarios empresariales pueden atraer a los clientes en un tiempo mínimo, aumentar la cuota de mercado y centrarse en la creación de campañas de marketing innovadoras, al tiempo que reducen la carga para la TI.
 
-AEM Con Managed Services, los clientes pueden obtener las siguientes ventajas:
+Con AEM Managed Services, los clientes pueden disfrutar de las siguientes ventajas:
 
-**Tiempo de comercialización más rápido:** Con la infraestructura de nube flexible de Adobe Managed Services, las organizaciones pueden planificar, iniciar y optimizar rápidamente las experiencias digitales exitosas. Adobe administra la arquitectura en la nube sin necesidad de capital, hardware ni software adicionales. Los ingenieros de soluciones para clientes de Adobe AEM le ayudarán con la arquitectura, el aprovisionamiento y la personalización de la conexión a las aplicaciones back-end, así como con las prácticas recomendadas de lanzamiento.
+**Tiempo de comercialización más rápido:** Con la infraestructura de nube flexible de Adobe Managed Services, las organizaciones pueden planificar, iniciar y optimizar rápidamente las experiencias digitales exitosas. Adobe administra la arquitectura de la nube sin necesidad de capital, hardware ni software adicionales. Los ingenieros de soluciones para el cliente de Adobe ayudan con la arquitectura de AEM, el aprovisionamiento y la personalización para conectarse a aplicaciones back-end, así como con las prácticas recomendadas de lanzamiento.
 
 **Rendimiento superior:** Proporciona experiencias digitales confiables para su empresa con cuatro opciones de disponibilidad de servicios: 99,5%, 99,9%, 99,95% y 99,99%. Además, permite realizar copias de seguridad automáticas y modelos de recuperación ante desastres multimodo para garantizar la fiabilidad y la gestión de contingencias.
 
-AEM **Costos de TI optimizados:** La orientación proactiva y la experiencia ayudan a las organizaciones a mantenerse al día respecto a la última versión de los programas de. Adobe El mantenimiento y la asistencia Platinum se incluyen automáticamente en las nuevas implementaciones de AMS Enterprise/Basic, ofreciendo experiencia técnica y operativa para ayudar a las organizaciones a mantener sus aplicaciones esenciales. Las funciones básicas gratuitas de Analytics o Target ofrecen un valor adicional, especialmente para organizaciones de mercado medio con necesidades limitadas de análisis y personalización.
+**Costos de TI optimizados:** La orientación proactiva y la experiencia ayudan a las organizaciones a mantenerse al día con la última versión de AEM. El mantenimiento y la asistencia Platinum de Adobe se incluyen automáticamente en las nuevas implementaciones de AMS Enterprise/Basic, ofreciendo experiencia técnica y operativa para ayudar a las organizaciones a mantener sus aplicaciones esenciales. Las funciones básicas gratuitas de Analytics o Target ofrecen un valor adicional, especialmente para organizaciones de mercado medio con necesidades limitadas de análisis y personalización.
 
 **Máxima seguridad:** Garantiza la seguridad física, de red y de datos de nivel empresarial al alojar aplicaciones de clientes en una instalación de acceso restringido, detrás de sistemas de firewall o dentro de una nube privada virtual. Incluye máquinas virtuales de un solo inquilino con cifrado de almacenamiento de datos robusto, antivirales y aislamiento de datos.
 
@@ -136,23 +136,23 @@ Para obtener más información sobre Cloud Manager y sus recursos, consulte [**G
 
 ### Requisitos previos {#prerequisites}
 
-Mientras que las instancias de producción se ejecutan en equipos dedicados que ejecutan un sistema operativo oficialmente admitido (consulte [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)), el servidor Experience Manager se ejecutará en cualquier sistema que admita [**Java™ Standard Edition 8**](https://www.oracle.com/java/technologies/downloads/#java8).
+Mientras que las instancias de producción se ejecutan en máquinas dedicadas que ejecutan un sistema operativo oficialmente admitido (consulte [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)), el servidor de Experience Manager se ejecutará en cualquier sistema que admita [**Java™ Standard Edition 8**](https://www.oracle.com/java/technologies/downloads/#java8).
 
-AEM Con fines de familiarización y para desarrollar en el tiempo de ejecución, es común utilizar una instancia instalada en su equipo local que ejecute Apple OS X o versiones de escritorio de Microsoft® Windows o Linux®.
+Para familiarizarse y desarrollar en AEM, es común utilizar una instancia instalada en su equipo local que ejecute Apple OS X o versiones de escritorio de Microsoft® Windows o Linux®.
 
-AEM En el lado del cliente, funciona con todos los navegadores modernos (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; &#x200B;**, **Firefox &#x200B;** 47+, **Safari** 8+) en los sistemas operativos de escritorio y tableta. Consulte [Plataformas de cliente compatibles](/help/sites-deploying/technical-requirements.md#supported-client-platforms) para obtener más información.
+En el lado del cliente, AEM funciona con todos los exploradores modernos (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) en los sistemas operativos de escritorio y tableta. Consulte [Plataformas de cliente compatibles](/help/sites-deploying/technical-requirements.md#supported-client-platforms) para obtener más información.
 
 ### Obtención del software {#getting-the-software}
 
-AEM Los clientes con un contrato de mantenimiento y soporte válido deberían haber recibido una notificación por correo electrónico con un código y poder descargar el código desde el [**Sitio web de licencias de Adobe**](https://licensing.adobe.com/). Los socios comerciales pueden solicitar acceso de descarga desde [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
+Los clientes con un contrato de mantenimiento y soporte válido deberían haber recibido una notificación por correo electrónico con un código y poder descargar AEM desde el [**Sitio web de licencias de Adobe**](https://licensing.adobe.com/). Los socios comerciales pueden solicitar acceso de descarga desde [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
-AEM El paquete de software de la está disponible de dos formas:
+El paquete de software de AEM está disponible de dos formas:
 
 * **cq-quickstart-6.5.0.jar:** Archivo ejecutable independiente *jar* que incluye todo lo que necesita para seguir ejecutándose.
 
 * **cq-quickstart-6.5.0.war:** Un archivo *war* para su implementación en un servidor de aplicaciones de terceros.
 
-En la siguiente sección describimos la **instalación independiente**. AEM Para obtener más información acerca de la instalación de la aplicación en un servidor de aplicaciones, consulte [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md).
+En la siguiente sección describimos la **instalación independiente**. Para obtener más información sobre la instalación de AEM en un servidor de aplicaciones, consulte [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md).
 
 ### Instalación local predeterminada {#default-local-install}
 
@@ -162,7 +162,7 @@ En la siguiente sección describimos la **instalación independiente**. AEM Para
 
    Ubicación de instalación de Windows: **`C:\Program Files\aem`**
 
-   Del mismo modo, es común instalar instancias de ejemplo en una carpeta directamente en el escritorio. En cualquier caso, Adobe se refiere a esta ubicación genéricamente como:
+   Del mismo modo, es común instalar instancias de ejemplo en una carpeta directamente en el escritorio. En cualquier caso, Adobe hace referencia a esta ubicación de forma genérica como:
 
    `<aem-install>`
 
@@ -176,19 +176,19 @@ En la siguiente sección describimos la **instalación independiente**. AEM Para
        license.properties
    ```
 
-   AEM Si no proporciona un archivo de `license.properties`, redirigirá el explorador a una pantalla de **bienvenida** durante el inicio, donde podrá escribir una clave de licencia. Debe solicitar una clave de licencia válida desde el Adobe si todavía no la tiene.
+   Si no proporciona un archivo de `license.properties`, AEM redirigirá el explorador a una pantalla de **bienvenida** al inicio, donde podrá escribir una clave de licencia. Si todavía no dispone de una, debe solicitar a Adobe una clave de licencia válida.
 
 1. Para iniciar la instancia en un entorno GUI, haga doble clic en el archivo **`cq-quickstart-6.5.0.jar`**.
 
-   AEM Como alternativa, puede iniciar la ejecución de desde la línea de comandos de:
+   Como alternativa, puede iniciar AEM desde la línea de comandos:
 
    ```shell
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar
    ```
 
-AEM El archivo jar tarda unos minutos en desempaquetarse, instalarse e iniciarse. El procedimiento anterior resulta en lo siguiente:
+AEM tarda unos minutos en desempaquetar el archivo jar, instalarse y ponerse en marcha. El procedimiento anterior resulta en lo siguiente:
 
-* AEM una instancia de **autor de**
+* una instancia de **AEM author**
 * ejecutando en **localhost**
 * en el puerto **4502**
 
@@ -198,7 +198,7 @@ Para acceder a la instancia, dirija su explorador a:
 
 El resultado de la instancia de autor se configurará automáticamente para conectarse a una **instancia de publicación** en **`localhost:4503`**.
 
-### Instalaciones de Author y Publish {#author-and-publish-installs}
+### Instalaciones de creación y publicación {#author-and-publish-installs}
 
 La instalación predeterminada (una instancia de **author** en **`localhost:4502`**) se puede cambiar simplemente cambiando el nombre del archivo `jar` antes de iniciarlo por primera vez. El patrón de nomenclatura es:
 
@@ -257,17 +257,13 @@ Si la instancia se instaló desde la interfaz de usuario de, se abrirá automát
 
 ![pantalla de inicio](assets/screen_shot_.png)
 
->[!NOTE]
->
->Si utiliza enlaces simbólicos, eche un vistazo a [problemas con enlaces simbólicos](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
-
 ### Inicio y detención {#starting-and-stopping}
 
-AEM Una vez que se ha desempaquetado a sí mismo y se ha iniciado por primera vez, al hacer doble clic en el archivo jar en el directorio de instalación simplemente se inicia la instancia, no se vuelve a instalar.
+Una vez que AEM se ha desempaquetado a sí mismo y se ha iniciado por primera vez, al hacer doble clic en el archivo jar en el directorio de instalación simplemente se inicia la instancia, no se vuelve a instalar.
 
 Para detener la instancia desde la interfaz gráfica de usuario, haga clic en el conmutador **on/off** en la ventana de la aplicación de escritorio.
 
-AEM También puede detener e iniciar la ejecución de los comandos desde la línea de comandos de. Suponiendo que ya haya instalado la instancia por primera vez, los **scripts de línea de comandos** están aquí:
+También puede detener e iniciar AEM desde la línea de comandos. Suponiendo que ya haya instalado la instancia por primera vez, los **scripts de línea de comandos** están aquí:
 
 **`<aem-install>/crx-quickstart/bin/`**
 
@@ -282,38 +278,38 @@ También hay **`bat`** archivos equivalentes para Windows. Para obtener informac
 
 * [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 
-AEM Se inicia la sesión y redirige automáticamente el explorador web a la página adecuada, normalmente la página de inicio de sesión; por ejemplo:
+AEM se inicia y redirige automáticamente el explorador web a la página adecuada, normalmente la página de inicio de sesión; por ejemplo:
 
 `https://localhost:4502/`
 
 ![pantalla de inicio de sesión](assets/screen_shot_2019-04-08at83533am.png)
 
-AEM Una vez que haya iniciado sesión, tendrá acceso a la interfaz de usuario de. Para obtener más información, según su función, consulte lo siguiente:
+Una vez que haya iniciado sesión, tendrá acceso a AEM. Para obtener más información, según su función, consulte lo siguiente:
 
 * [Creación](/help/sites-authoring/first-steps.md)
-* [Administración](/help/sites-administering/home.md)
-* [El desarrollo de](/help/sites-developing/getting-started.md)
+* [Administración ](/help/sites-administering/home.md)
+* [Desarrollo](/help/sites-developing/getting-started.md)
 * [Administración](/help/managing/best-practices.md)
 
 ## Implementación avanzada {#advanced-deployment}
 
-AEM La sección anterior le proporcionará una buena comprensión de los conceptos básicos de la instalación de la. AEM Sin embargo, la instalación de un sistema de producción completo de la puede implicar considerablemente más complejidad. Para obtener una cobertura completa de la instalación avanzada, consulte las siguientes subpáginas:
+La sección anterior le proporcionará una buena comprensión de los conceptos básicos de la instalación de AEM. Sin embargo, la instalación de un sistema de producción completo de AEM puede implicar una complejidad considerablemente mayor. Para obtener una cobertura completa de la instalación avanzada, consulte las siguientes subpáginas:
 
 * [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)
 * [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
 * [Instalación independiente personalizada](/help/sites-deploying/custom-standalone-install.md)
 * [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
-* [Resolución de problemas](/help/sites-deploying/troubleshooting.md)
+* [Solución de problemas](/help/sites-deploying/troubleshooting.md)
 * [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configuración](/help/sites-deploying/configuring.md)
-* [AEM Actualización a 6.5](/help/sites-deploying/upgrade.md)
+* [Actualización a AEM 6.5](/help/sites-deploying/upgrade.md)
 * [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
 * [Consola web](/help/sites-deploying/web-console.md)
 * [Solución de problemas de replicación](/help/sites-deploying/troubleshoot-rep.md)
 * [Prácticas recomendadas](/help/sites-deploying/best-practices.md)
 * [Implementación de comunidades](/help/communities/deploy-communities.md)
-* [AEM Introducción a la plataforma de](/help/sites-deploying/platform.md)
+* [Introducción a la plataforma de AEM](/help/sites-deploying/platform.md)
 * [Directrices de rendimiento](/help/sites-deploying/performance-guidelines.md)
 * [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [¿Qué es AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es)

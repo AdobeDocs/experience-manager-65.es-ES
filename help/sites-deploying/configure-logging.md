@@ -9,16 +9,16 @@ feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
 # Registro{#logging}
 
-AEM le ofrece la posibilidad de configurar lo siguiente:
+AEM permite configurar lo siguiente:
 
 * parámetros globales para el servicio de registro central
 * registro de datos de solicitud; una configuración de registro especializada para solicitar información
@@ -28,11 +28,11 @@ Estas son todas las [configuraciones de OSGi](/help/sites-deploying/configuring-
 
 >[!NOTE]
 >
->AEM El inicio de sesión en la se basa en los principios de Sling. Consulte [Registro de Sling](https://sling.apache.org/site/logging.html) para obtener más información.
+>El registro en AEM se basa en los principios de Sling. Consulte [Registro de Sling](https://sling.apache.org/site/logging.html) para obtener más información.
 
 ## Registro global {#global-logging}
 
-[Configuración de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md) se usa para configurar el registrador raíz. AEM Esto define la configuración global para iniciar sesión en el sitio de trabajo de la siguiente manera
+[Configuración de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md) se usa para configurar el registrador raíz. Define la configuración global para iniciar sesión en AEM:
 
 * el nivel de registro
 * la ubicación del archivo de registro central
@@ -40,13 +40,9 @@ Estas son todas las [configuraciones de OSGi](/help/sites-deploying/configuring-
 * rotación de versiones; tamaño máximo o intervalo de tiempo
 * el formato que se utilizará al escribir los mensajes de registro
 
->[!NOTE]
->
->Este [artículo de la Base de conocimiento](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) explica cómo girar los archivos request.log y access.log.
-
 ## Registradores y escritores para servicios individuales {#loggers-and-writers-for-individual-services}
 
-AEM Además de la configuración del registro global, le permite configurar opciones específicas para un servicio individual:
+Además de la configuración del registro global, AEM permite configurar opciones específicas de un servicio individual:
 
 * el nivel de registro específico
 * la ubicación del archivo de registro individual
@@ -57,7 +53,7 @@ AEM Además de la configuración del registro global, le permite configurar opci
 
 Esto permite canalizar los mensajes de registro de un solo servicio a un archivo independiente. Esto puede resultar especialmente útil durante el desarrollo o las pruebas; por ejemplo, cuando necesita aumentar el nivel de registro para un servicio específico.
 
-AEM Utiliza lo siguiente para escribir mensajes de registro en el archivo:
+AEM utiliza lo siguiente para escribir mensajes de registro en el archivo:
 
 1. Un **servicio OSGi** (registrador) escribe un mensaje de registro.
 1. Un **registrador de registros** toma este mensaje y le da formato de acuerdo con su especificación.
@@ -83,7 +79,7 @@ Estos elementos están vinculados por los siguientes parámetros para los elemen
 
 ### Registradores y escritores estándar {#standard-loggers-and-writers}
 
-AEM Ciertos registradores y escritores están incluidos en una instalación estándar de la.
+Algunos registradores y escritores están incluidos en una instalación estándar de AEM.
 
 El primero es un caso especial, ya que controla los archivos `request.log` y `access.log`:
 

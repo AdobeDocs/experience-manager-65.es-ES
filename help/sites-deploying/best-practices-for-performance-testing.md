@@ -9,9 +9,9 @@ exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-AEM Las pruebas de rendimiento son una parte importante de cualquier implementación de la. Según los requisitos del cliente, las pruebas de rendimiento se pueden realizar en las instancias de publicación, las instancias de autor o ambas.
+Las pruebas de rendimiento son una parte importante de cualquier implementación de AEM. Según los requisitos del cliente, las pruebas de rendimiento se pueden realizar en las instancias de publicación, las instancias de autor o ambas.
 
-En esta documentación se describen las estrategias y metodologías generales para realizar pruebas de rendimiento y algunas de las herramientas que el Adobe pone a disposición para ayudar en el proceso. AEM Por último, lea un análisis de las herramientas disponibles en la versión 6 de para ayudar a ajustar el rendimiento, tanto desde el punto de vista del análisis del código como de la configuración del sistema.
+En esta documentación se describen las estrategias y metodologías generales para realizar pruebas de rendimiento, así como algunas de las herramientas que Adobe pone a su disposición para ayudarle en el proceso. Por último, lea un análisis de las herramientas disponibles en AEM 6 para ayudar a ajustar el rendimiento, tanto desde el análisis del código como desde la perspectiva de la configuración del sistema.
 
 ### Simulación de la realidad {#simulating-reality}
 
@@ -30,11 +30,11 @@ Al realizar pruebas de rendimiento, asegúrese de imitar un entorno de producci�
 
 * Contenido similar a la producción
 
-AEM Muchas mediciones de rendimiento en los recursos, como el tiempo de respuesta a la consulta, pueden verse afectadas por el tamaño del contenido en el sistema. Es importante asegurarse de que el entorno de prueba tenga lo más cerca posible de una copia de los datos de producción.
+Muchas mediciones de rendimiento en AEM, como el tiempo de respuesta a la consulta, pueden verse afectadas por el tamaño del contenido en el sistema. Es importante asegurarse de que el entorno de prueba tenga lo más cerca posible de una copia de los datos de producción.
 
 * Código de producción
 
-AEM La versión de la aplicación y las revisiones implementadas en la producción deben ser las mismas en el entorno de prueba. También es importante probar la versión del código que se implementa en la producción.
+La versión de AEM y las revisiones implementadas en la producción deben ser las mismas en el entorno de prueba. También es importante probar la versión del código que se implementa en la producción.
 
 * Hardware y configuración de red similares a la producción
 
@@ -54,12 +54,10 @@ Hay muchas herramientas de prueba de rendimiento disponibles comercialmente en e
 
 #### Herramientas de prueba {#testing-tools}
 
-* La herramienta **Día difícil** de Adobe AEM se puede usar para generar carga en instancias de y recopilar datos de rendimiento. El equipo de ingeniería de Adobe AEM AEM utiliza la herramienta para probar la carga del producto en sí mismo, lo que lo convierte en una herramienta de prueba de la misma. Los scripts ejecutados en Día difícil se configuran mediante archivos de propiedad y archivos XML JMX. Para obtener más información, consulte la [documentación sobre Día difícil](/help/sites-developing/tough-day.md).
+* La herramienta **Día difícil** de Adobe se puede usar para generar carga en instancias de AEM y recopilar datos de rendimiento. El equipo de ingeniería de AEM de Adobe utiliza realmente la herramienta para probar la carga del propio producto de AEM. Los scripts ejecutados en Día difícil se configuran mediante archivos de propiedad y archivos XML JMX. Para obtener más información, consulte la [documentación sobre Día difícil](/help/sites-developing/tough-day.md).
 
 * AEM proporciona herramientas listas para usar para ver rápidamente consultas, solicitudes y mensajes de error problemáticos. Para obtener más información, consulte la sección [Herramientas de diagnóstico](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentación del tablero de operaciones.
 * Apache proporciona un producto llamado **JMeter** que se puede usar para pruebas de carga y rendimiento, y comportamiento funcional. Es software de código abierto y libre de usar, pero tiene un conjunto de características más pequeño que los productos empresariales y una curva de aprendizaje más pronunciada. JMeter se encuentra en el sitio web de Apache en [https://jmeter.apache.org/](https://jmeter.apache.org/)
-
-* **Load Runner** es un producto de prueba de carga de nivel empresarial. Hay disponible una versión de evaluación gratuita. Encontrará más información en [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
 * También se pueden usar herramientas de prueba de carga del sitio web como [Vercara](https://vercara.com/website-performance-management).
 * Al probar sitios web móviles o adaptables, se debe utilizar un conjunto independiente de herramientas. Funcionan limitando el ancho de banda de la red, simulando conexiones móviles más lentas como 3G o EDGE. Entre las herramientas más utilizadas se encuentran las siguientes:
@@ -75,15 +73,15 @@ La documentación de [Monitorización del rendimiento](/help/sites-deploying/mon
 
 **Modo de desarrollador en la IU táctil**
 
-AEM Una de las nuevas funciones de la IU táctil de la 6 es el modo de desarrollador. Del mismo modo que los autores pueden cambiar entre los modos de edición y vista previa, los desarrolladores pueden cambiar al modo de desarrollador en la interfaz de usuario del autor. Al hacerlo, puede ver el tiempo de procesamiento de cada uno de los componentes de la página y los seguimientos de pila de los errores. Para obtener más información sobre el modo de desarrollador, consulte esta [presentación de CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=es).
+Una de las nuevas funciones de la IU táctil de AEM 6 es el modo de desarrollador. Del mismo modo que los autores pueden cambiar entre los modos de edición y vista previa, los desarrolladores pueden cambiar al modo de desarrollador en la interfaz de usuario del autor. Al hacerlo, puede ver el tiempo de procesamiento de cada uno de los componentes de la página y los seguimientos de pila de los errores. Para obtener más información sobre el modo de desarrollador, consulte esta [presentación de CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Uso del archivo log.jar para leer los registros de solicitud**
 
-AEM AEM Para obtener un análisis más completo de los registros de solicitud de un sistema de, se puede utilizar `rlog.jar` para buscar y ordenar los `request.log` archivos que genera la. AEM Este archivo jar se incluye con una instalación de la en la carpeta `/crx-quickstart/opt/helpers`. Para obtener más información sobre la herramienta de registro y el registro de solicitudes en general, consulte la documentación de [Supervisión y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md).
+Para obtener un análisis más completo de los registros de solicitud de un sistema AEM, `rlog.jar` se puede usar para buscar y ordenar los `request.log` archivos que AEM genera. Este archivo jar se incluye con una instalación de AEM en la carpeta `/crx-quickstart/opt/helpers`. Para obtener más información sobre la herramienta de registro y el registro de solicitudes en general, consulte la documentación de [Supervisión y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md).
 
 **Herramienta de consulta de explicación**
 
-AEM [Explicar la herramienta de consulta](/help/sites-administering/operations-dashboard.md#explain-query) en las herramientas de consulta de ACS se puede usar para ver los índices que se usan al ejecutar una consulta. Esta herramienta es útil cuando se optimizan consultas de ejecución lenta.
+[Explicar la herramienta de consulta](/help/sites-administering/operations-dashboard.md#explain-query) en ACS AEM Tools se puede usar para ver los índices que se usan al ejecutar una consulta. Esta herramienta es útil cuando se optimizan consultas de ejecución lenta.
 
 **Herramientas de PageSpeed**
 
@@ -102,7 +100,7 @@ Para los tipos de entornos que tienen requisitos de carga pesada de recursos o c
 
 #### Pasos específicos de MongoDB {#mongodb-specific-steps}
 
-AEM En sistemas con backends MongoDB, proporciona varios MBeans de [JMX](/help/sites-administering/jmx-console.md) que se deben supervisar al realizar pruebas de carga o rendimiento:
+En sistemas con backends MongoDB, AEM proporciona varios MBeans [JMX](/help/sites-administering/jmx-console.md) que se deben supervisar al realizar pruebas de carga o rendimiento:
 
 * El MBean **Estadísticas de caché consolidadas**. Se puede acceder directamente a ella desde:
 
@@ -120,7 +118,7 @@ La sección **ObservationQueueMaxLength** muestra el número de eventos en la co
 1. Colóquelo en la carpeta /crx-quickstart/install.
 
 >[!NOTE]
->AEM Ver [6.x | Consejos para ajustar el rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es)
+>Ver [AEM 6.x | Consejos para ajustar el rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es)
 
 La configuración predeterminada es 10 000, pero la mayoría de las implementaciones deben aumentarla a 20 000 o 50 000.
 
@@ -134,7 +132,7 @@ Se pueden utilizar herramientas de prueba automatizadas de terceros para probar 
 
 La mayoría de los sitios web de producción tienen optimizaciones implementadas, como el almacenamiento en caché de Dispatcher y una red de entrega de contenido. Al realizar pruebas, asegúrese de que estas optimizaciones también estén disponibles para el entorno de prueba. Además de supervisar los tiempos de respuesta de los usuarios finales, supervise las métricas del sistema en los servidores de publicación y los distribuidores para garantizar que el sistema no se vea limitado por los recursos de hardware.
 
-En un sistema que no requiera un nivel elevado de personalización, Dispatcher debe almacenar en caché la mayoría de las solicitudes. Como resultado, la carga en la instancia de publicación debe permanecer relativamente plana. AJAX Si se requiere un alto nivel de personalización, se recomienda utilizar tecnologías como iFrames o solicitudes de para el contenido personalizado para permitir el máximo almacenamiento en caché de Dispatcher posible.
+En un sistema que no requiera un nivel elevado de personalización, Dispatcher debe almacenar en caché la mayoría de las solicitudes. Como resultado, la carga en la instancia de publicación debe permanecer relativamente plana. Si se requiere un alto nivel de personalización, se recomienda utilizar tecnologías como iFrames o solicitudes de AJAX para el contenido personalizado para permitir el máximo almacenamiento en caché de Dispatcher posible.
 
 Para pruebas básicas, Apache Bench se puede utilizar para medir los tiempos de respuesta de los servidores web y ayudar a crear carga para medir cosas como pérdidas de memoria. Consulte el ejemplo en [Documentación de supervisión](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
@@ -155,4 +153,4 @@ Después de ejecutar pruebas de rendimiento en la instancia de autor, cualquier 
 * Elimine CSS y JS incrustados de los componentes. Deben incluirse y minificarse con las bibliotecas del lado del cliente para minimizar el número de solicitudes necesarias para procesar la página.
 * Para inspeccionar las solicitudes del servidor y ver cuáles tardan más, utilice herramientas del explorador como la pestaña Red de Chrome.
 
-Una vez identificadas las áreas problemáticas, se puede inspeccionar el código de la aplicación para ver si hay optimizaciones del rendimiento. AEM Cualquier característica de la versión predeterminada que no funcione correctamente se puede solucionar con la compatibilidad con Adobes.
+Una vez identificadas las áreas problemáticas, se puede inspeccionar el código de la aplicación para ver si hay optimizaciones del rendimiento. Cualquier función de AEM predeterminada que no funcione correctamente se puede solucionar con el Soporte técnico de Adobe.

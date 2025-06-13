@@ -10,7 +10,7 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '6216'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Adobe Experience Manager con MongoDB{#aem-with-mongodb}
 
-AEM Este artículo tiene como objetivo mejorar el conocimiento sobre las tareas y consideraciones necesarias para implementar correctamente la implementación de (Adobe Experience Manager) con MongoDB.
+Este artículo tiene como objetivo mejorar el conocimiento sobre las tareas y consideraciones necesarias para implementar correctamente AEM (Adobe Experience Manager) con MongoDB.
 
 Para obtener más información relacionada con la implementación, consulte la sección [Implementación y mantenimiento](/help/sites-deploying/deploy.md) de la documentación.
 
-## AEM Cuándo usar MongoDB con {#when-to-use-mongodb-with-aem}
+## Cuándo usar MongoDB con AEM {#when-to-use-mongodb-with-aem}
 
-AEM MongoDB se utiliza generalmente para admitir implementaciones de autor de en las que se cumple uno de los siguientes criterios:
+MongoDB se utiliza generalmente para admitir implementaciones de autor de AEM donde se cumple uno de los siguientes criterios:
 
 * Más de 1000 usuarios únicos al día;
 * Más de 100 usuarios simultáneos;
@@ -40,25 +40,25 @@ Si no se cumplen los criterios, se recomienda una implementación activa/en espe
 >
 >Encontrará información adicional sobre el tamaño de las instancias de autor y la definición de usuarios simultáneos en las [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel).
 
-### AEM Implementación mínima de MongoDB para el uso de {#minimal-mongodb-deployment-for-aem}
+### Implementación mínima de MongoDB para AEM {#minimal-mongodb-deployment-for-aem}
 
-AEM A continuación se muestra una implementación mínima para la implementación de en MongoDB. Para simplificar, se han generalizado los componentes de terminación SSL y proxy HTTP. Consiste en un único conjunto de réplicas de MongoDB, con uno principal y dos secundarios.
+A continuación se muestra una implementación mínima para AEM en MongoDB. Para simplificar, se han generalizado los componentes de terminación SSL y proxy HTTP. Consiste en un único conjunto de réplicas de MongoDB, con uno principal y dos secundarios.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
 Una implementación mínima requiere tres instancias de `mongod` configuradas como un conjunto de réplicas. Una instancia se selecciona como principal y las demás instancias como secundarias. La elección se administra mediante `mongod`. Cada instancia tiene un disco local adjunto. Por lo tanto, el clúster puede admitir la carga; se recomienda un rendimiento mínimo de 12 MB por segundo con más de 3000 operaciones de E/S por segundo (IOPS).
 
-AEM AEM Los autores de la están conectados a las instancias de `mongod`, y cada autor de la se conecta a las tres instancias de `mongod`. Las escrituras se envían a la instancia principal y las lecturas se pueden leer desde cualquiera de las instancias. El tráfico se distribuye en función de la carga realizada por un Dispatcher AEM en cualquiera de las instancias de autor de la activa. El almacén de datos de Oak es un `FileDataStore` y MMS o el administrador de operaciones de MongoDB proporcionan la supervisión de MongoDB en función de la ubicación de la implementación. Las soluciones de terceros como Splunk o Ganglia proporcionan monitorización del nivel del sistema operativo y del registro.
+Los autores de AEM están conectados a las instancias `mongod`, y cada autor de AEM se conecta a las tres instancias `mongod`. Las escrituras se envían a la instancia principal y las lecturas se pueden leer desde cualquiera de las instancias. El tráfico se distribuye en función de la carga mediante una Dispatcher a cualquiera de las instancias de autor de AEM activas. El almacén de datos de Oak es un `FileDataStore` y MMS o el administrador de operaciones de MongoDB proporcionan la supervisión de MongoDB en función de la ubicación de la implementación. Las soluciones de terceros como Splunk o Ganglia proporcionan monitorización del nivel del sistema operativo y del registro.
 
 En esta implementación, todos los componentes son necesarios para una implementación correcta. Cualquier componente que falte deja la implementación sin funcionar.
 
 ### Sistemas operativos {#operating-systems}
 
-AEM Para obtener una lista de los sistemas operativos compatibles con el 6, consulte la [página de requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+Para obtener una lista de los sistemas operativos compatibles con AEM 6, consulte la [página de requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
 ### Entornos {#environments}
 
-Se admiten entornos virtualizados siempre que haya una buena comunicación entre los diferentes equipos técnicos que ejecutan el proyecto. AEM Esta asistencia incluye al equipo que está ejecutando la infraestructura virtualizada, al equipo propietario del sistema operativo y al equipo que administra la infraestructura virtualizada.
+Se admiten entornos virtualizados siempre que haya una buena comunicación entre los diferentes equipos técnicos que ejecutan el proyecto. Esta asistencia incluye al equipo que ejecuta AEM, al equipo propietario del sistema operativo y al equipo que administra la infraestructura virtualizada.
 
 Existen requisitos específicos que cubren la capacidad de E/S de las instancias de MongoDB que debe administrar el equipo que administra el entorno virtualizado. Si el proyecto utiliza una implementación en la nube, como Amazon Web Service, las instancias deben aprovisionarse con suficiente capacidad de E/S y coherencia para admitir las instancias de MongoDB. De lo contrario, los procesos de MongoDB y el repositorio de Oak funcionan de forma poco fiable y errática.
 
@@ -74,7 +74,7 @@ Para lograr el rendimiento de lectura y escritura para un mejor rendimiento sin 
 
 Las versiones 2.6 y 3.0 de MongoDB que utilizan el motor de almacenamiento MAP requieren que el conjunto de trabajo de la base de datos y sus índices se ajuste a la RAM.
 
-La insuficiencia de RAM provoca una reducción significativa del rendimiento. El tamaño del conjunto de trabajo y de la base de datos depende en gran medida de la aplicación. AEM Si bien se pueden hacer algunas estimaciones, la manera más confiable de determinar la cantidad de RAM necesaria es construir la aplicación y probarla con la carga.
+La insuficiencia de RAM provoca una reducción significativa del rendimiento. El tamaño del conjunto de trabajo y de la base de datos depende en gran medida de la aplicación. Aunque se pueden hacer algunas estimaciones, la manera más confiable de determinar la cantidad de RAM necesaria es crear la aplicación AEM y probarla.
 
 Para ayudarle con el proceso de prueba de carga, se puede dar por hecha la siguiente relación entre el espacio de trabajo y el tamaño total de la base de datos:
 
@@ -87,15 +87,15 @@ Aunque las mismas limitaciones se aplican al motor de almacenamiento WiredTiger 
 
 >[!NOTE]
 >
->Adobe AEM recomienda utilizar el motor de almacenamiento WiredTiger para implementaciones de 6.1 que utilicen MongoDB 3.0.
+>Adobe recomienda utilizar el motor de almacenamiento WiredTiger para implementaciones de AEM 6.1 que utilicen MongoDB 3.0.
 
 ### Almacén de datos {#data-store}
 
-Debido a las limitaciones del conjunto de trabajo de MongoDB, se recomienda que el almacén de datos se mantenga independiente de MongoDB. AEM En la mayoría de los entornos, se debe usar un `FileDataStore` que usa un NAS disponible para todas las instancias de. En las situaciones en las que se usa Amazon Web Service, también existe `S3 DataStore`. Si, por cualquier motivo, el almacén de datos se mantiene dentro de MongoDB, el tamaño del almacén de datos debe añadirse al tamaño total de la base de datos y los cálculos del conjunto de trabajo deben ajustarse correctamente. Este tamaño puede significar el aprovisionamiento de más RAM para mantener el rendimiento sin errores de página.
+Debido a las limitaciones del conjunto de trabajo de MongoDB, se recomienda que el almacén de datos se mantenga independiente de MongoDB. En la mayoría de los entornos, se debe usar un `FileDataStore` que usa un NAS disponible para todas las instancias de AEM. En las situaciones en las que se usa Amazon Web Service, también existe `S3 DataStore`. Si, por cualquier motivo, el almacén de datos se mantiene dentro de MongoDB, el tamaño del almacén de datos debe añadirse al tamaño total de la base de datos y los cálculos del conjunto de trabajo deben ajustarse correctamente. Este tamaño puede significar el aprovisionamiento de más RAM para mantener el rendimiento sin errores de página.
 
 ## Monitoreo {#monitoring}
 
-La supervisión es vital para una implementación exitosa del proyecto. AEM Con los conocimientos suficientes, es posible ejecutar la ejecución de MongoDB sin tener que realizar un seguimiento de la ejecución de los programas de la. Sin embargo, ese conocimiento normalmente se encuentra en ingenieros especializados para cada sección del despliegue.
+La supervisión es vital para una implementación exitosa del proyecto. Con los conocimientos suficientes, es posible ejecutar AEM en MongoDB sin monitorización. Sin embargo, ese conocimiento normalmente se encuentra en ingenieros especializados para cada sección del despliegue.
 
 Este conocimiento especializado suele incluir a un ingeniero de I+D que trabaja en Apache Oak Core y a un especialista de MongoDB.
 
@@ -123,9 +123,9 @@ MongoDB Ops Manager es el mismo software que MongoDB Cloud Manager. Una vez regi
 
 ### Monitorización del sistema operativo {#operating-system-monitoring}
 
-AEM Es necesaria la monitorización a nivel de sistema operativo para ejecutar un clúster de MongoDB en el que se ejecute un clúster de MongoDB en el sistema operativo.
+Se requiere monitorización a nivel de sistema operativo para ejecutar un clúster de AEM MongoDB.
 
-Ganglia es un buen ejemplo de un sistema de este tipo y proporciona una imagen de la gama y el detalle de la información requerida que va más allá de las métricas básicas de salud como CPU, promedio de carga y espacio libre en disco. Para diagnosticar problemas, se requiere información de nivel inferior, como niveles de grupo de entropía, espera de E/S de CPU, sockets en estado FIN_WAIT2.
+Ganglia es un buen ejemplo de este sistema y proporciona una imagen de la gama y el detalle de la información requerida que va más allá de las métricas básicas de salud como CPU, promedio de carga y espacio libre en el disco. Para diagnosticar problemas, se requiere información de nivel inferior, como niveles de grupo de entropía, espera de E/S de CPU, sockets en estado FIN_WAIT2.
 
 ### Agregación de registros {#log-aggregation}
 
@@ -133,7 +133,7 @@ Con un clúster de varios servidores, la agregación de registros central es un 
 
 ## Listas de comprobación {#checklists}
 
-AEM En esta sección se explican los pasos que debe seguir para asegurarse de que las implementaciones de MongoDB y estén correctamente configuradas antes de implementar el proyecto.
+Esta sección trata sobre los pasos que debe seguir para asegurarse de que las implementaciones de AEM y MongoDB estén correctamente configuradas antes de implementar el proyecto.
 
 ### Red {#network}
 
@@ -141,20 +141,20 @@ AEM En esta sección se explican los pasos que debe seguir para asegurarse de qu
 1. Todos los hosts deben poder resolverse mediante su entrada DNS desde todos los demás hosts enrutables
 1. Todos los hosts de MongoDB se pueden enrutar desde todos los demás hosts de MongoDB en el mismo clúster
 1. Los hosts de MongoDB pueden enrutar paquetes a MongoDB Cloud Manager y a otros servidores de supervisión
-1. AEM Los servidores pueden enrutar paquetes a todos los servidores de MongoDB
-1. AEM La latencia de paquetes entre cualquier servidor de y cualquier servidor MongoDB es menor de dos milisegundos, sin pérdida de paquetes y con una distribución estándar de un milisegundo o menos.
-1. AEM Asegúrese de que no haya más de dos saltos entre un servidor de y uno de MongoDB
+1. Los servidores AEM pueden enrutar paquetes a todos los servidores MongoDB
+1. La latencia de paquetes entre cualquier servidor de AEM y cualquier servidor MongoDB es menor de dos milisegundos, sin pérdida de paquetes y con una distribución estándar de un milisegundo o menos.
+1. Asegúrese de que no haya más de dos saltos entre un servidor AEM y uno MongoDB
 1. No hay más de dos saltos entre dos servidores MongoDB
-1. AEM No hay enrutadores superiores al nivel 3 de OSI entre ningún servidor principal (MongoDB o una combinación de ellos, o cualquier otro tipo de combinación de ellos).
+1. No hay enrutadores superiores al nivel OSI 3 entre ningún servidor principal (MongoDB, AEM o cualquier combinación).
 1. Si se utiliza un enlace VLAN o cualquier forma de túnel de red, debe cumplir con las comprobaciones de latencia de los paquetes.
 
-### AEM Configuración de {#aem-configuration}
+### Configuración de AEM {#aem-configuration}
 
 #### Configuración del almacén de nodos {#node-store-configuration}
 
-AEM AEM Las instancias de deben configurarse para utilizar la configuración de la aplicación con MongoMK. AEM La base de la implementación de MongoMK en es el Almacén de nodos de documentos en el que se realiza la creación de la aplicación.
+Las instancias de AEM deben configurarse para utilizar AEM con MongoMK. La base de la implementación de MongoMK en AEM es el almacén de nodos de documentos.
 
-AEM Para obtener más información sobre cómo configurar los almacenes de nodos, vea [Configurar los almacenes de nodos y los almacenes de datos en el espacio de trabajo de ](/help/sites-deploying/data-store-config.md).
+Para obtener más información sobre cómo configurar los almacenes de nodos, vea [Configurar los almacenes de nodos y los almacenes de datos en AEM](/help/sites-deploying/data-store-config.md).
 
 A continuación se muestra un ejemplo de la configuración del almacén de nodos de documentos para una implementación mínima de MongoDB:
 
@@ -176,10 +176,10 @@ blobCacheSize=1024
 Donde:
 
 * `mongodburi`
-AEM El servidor MongoDB se debe conectar a la. Se establecen conexiones con todos los miembros conocidos del conjunto de réplicas predeterminado. Si se utiliza MongoDB Cloud Manager, la seguridad del servidor estará habilitada. Por lo tanto, la cadena de conexión debe contener un nombre de usuario y una contraseña adecuados. Las versiones no empresariales de MongoDB solo admiten la autenticación de nombre de usuario y contraseña. Para obtener más información sobre la sintaxis de la cadena de conexión, consulte la [documentación](https://docs.mongodb.org/manual/reference/connection-string/).
+El servidor MongoDB al que AEM debe conectarse. Se establecen conexiones con todos los miembros conocidos del conjunto de réplicas predeterminado. Si se utiliza MongoDB Cloud Manager, la seguridad del servidor estará habilitada. Por lo tanto, la cadena de conexión debe contener un nombre de usuario y una contraseña adecuados. Las versiones no empresariales de MongoDB solo admiten la autenticación de nombre de usuario y contraseña. Para obtener más información sobre la sintaxis de la cadena de conexión, consulte la [documentación](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`
-Nombre de la base de datos. AEM El valor predeterminado para la es `aem-author`.
+Nombre de la base de datos. El valor predeterminado de AEM es `aem-author`.
 
 * `customBlobStore`
 Si la implementación almacena binarios en la base de datos, forman parte del conjunto de trabajo. Por ese motivo, se recomienda no almacenar binarios dentro de MongoDB, prefiriendo un almacén de datos alternativo como un almacén de datos de `FileSystem` en un NAS.
@@ -188,13 +188,13 @@ Si la implementación almacena binarios en la base de datos, forman parte del co
 El tamaño de la caché en megabytes. Este espacio se distribuye entre varias memorias caché utilizadas en `DocumentNodeStore`. El valor predeterminado es 256 MB. Sin embargo, el rendimiento de lectura de Oak se beneficia de una caché más grande.
 
 * `blobCacheSize`
-AEM Los blobs utilizados con frecuencia pueden ser almacenados en caché por los para evitar recuperarlos del almacén de datos. Hacerlo afecta más al rendimiento, especialmente al almacenar blobs en la base de datos de MongoDB. Todos los almacenes de datos basados en el sistema de archivos se benefician de la caché de disco en el sistema operativo.
+AEM puede almacenar en caché los blobs utilizados con frecuencia para evitar recuperarlos del almacén de datos. Hacerlo afecta más al rendimiento, especialmente al almacenar blobs en la base de datos de MongoDB. Todos los almacenes de datos basados en el sistema de archivos se benefician de la caché de disco en el sistema operativo.
 
 #### Configuración del almacén de datos {#data-store-configuration}
 
-El almacén de datos se utiliza para almacenar archivos de un tamaño mayor que un umbral. Por debajo de ese umbral, los archivos se almacenan como propiedades en el almacén de nodos de documentos. Si se usa `MongoBlobStore`, se crea una colección dedicada en MongoDB para almacenar los blobs. Esta colección contribuye al conjunto de trabajo de la instancia `mongod` y requiere que `mongod` tenga más RAM para evitar problemas de rendimiento. AEM Por ese motivo, la configuración recomendada es evitar `MongoBlobStore` para implementaciones de producción y usar `FileDataStore` respaldado por un NAS compartido entre todas las instancias de la. Dado que la caché en el nivel del sistema operativo es eficaz para administrar archivos, el tamaño mínimo de un archivo en disco debe establecerse en un tamaño cercano al tamaño de bloque del disco. Al hacerlo, se asegura de que el sistema de archivos se utiliza de forma eficaz y de que muchos documentos pequeños no contribuyen en exceso al conjunto de trabajo de la instancia `mongod`.
+El almacén de datos se utiliza para almacenar archivos de un tamaño mayor que un umbral. Por debajo de ese umbral, los archivos se almacenan como propiedades en el almacén de nodos de documentos. Si se usa `MongoBlobStore`, se crea una colección dedicada en MongoDB para almacenar los blobs. Esta colección contribuye al conjunto de trabajo de la instancia `mongod` y requiere que `mongod` tenga más RAM para evitar problemas de rendimiento. Por ese motivo, la configuración recomendada es evitar `MongoBlobStore` para implementaciones de producción y usar `FileDataStore` respaldado por un NAS compartido entre todas las instancias de AEM. Dado que la caché en el nivel del sistema operativo es eficaz para administrar archivos, el tamaño mínimo de un archivo en disco debe establecerse en un tamaño cercano al tamaño de bloque del disco. Al hacerlo, se asegura de que el sistema de archivos se utiliza de forma eficaz y de que muchos documentos pequeños no contribuyen en exceso al conjunto de trabajo de la instancia `mongod`.
 
-AEM Esta es una configuración típica del almacén de datos para una implementación mínima de la con MongoDB:
+Esta es una configuración típica del almacén de datos para una implementación mínima de AEM con MongoDB:
 
 ```xml
 # org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
@@ -211,7 +211,7 @@ Donde:
 Tamaño en bytes. Los binarios con un tamaño inferior o igual a este se almacenan con el almacén de nodos de documentos. En lugar de almacenar el ID del blob, se almacena el contenido del binario. En el caso de archivos binarios superiores a este tamaño, el identificador del archivo binario se almacena como una propiedad de Document en la colección nodes. Y, el cuerpo del binario se almacena en el `FileDataStore` del disco. 4096 bytes es un tamaño de bloque típico del sistema de archivos.
 
 * `path`
-Ruta a la raíz del almacén de datos. AEM Para una implementación de MongoMK, esta ruta debe ser un sistema de archivos compartido disponible para todas las instancias de. Normalmente se utiliza un servidor de Almacenamiento conectado a la red (NAS). Para implementaciones de nube como Amazon Web Service, `S3DataFileStore` también está disponible.
+Ruta a la raíz del almacén de datos. Para una implementación de MongoMK, esta ruta debe ser un sistema de archivos compartido disponible para todas las instancias de AEM. Normalmente se utiliza un servidor de Almacenamiento conectado a la red (NAS). Para implementaciones de nube como Amazon Web Service, `S3DataFileStore` también está disponible.
 
 * `cacheSizeInMB`
 Tamaño total de la caché binaria en megabytes. Se utiliza para almacenar en caché binarios inferiores a la configuración de `maxCacheBinarySize`.
@@ -221,9 +221,9 @@ Tamaño máximo en bytes de un archivo binario almacenado en caché en el archiv
 
 #### Desactivación de la sugerencia de consulta {#disabling-the-query-hint}
 
-AEM Se recomienda deshabilitar la sugerencia de consulta que se envía con todas las consultas agregando la propiedad `-Doak.mongo.disableIndexHint=true` al iniciar la ejecución de la consulta de forma que se ejecute de forma más rápida y sencilla. En este caso, se recomienda agregar la propiedad  al inicio de la ejecución de la. Al hacerlo, MongoDB calcula el índice más apropiado para usar según las estadísticas internas.
+Se recomienda deshabilitar la sugerencia de consulta enviada con todas las consultas agregando la propiedad `-Doak.mongo.disableIndexHint=true` al iniciar AEM. Al hacerlo, MongoDB calcula el índice más apropiado para usar según las estadísticas internas.
 
-AEM Si la sugerencia de consulta no está deshabilitada, cualquier ajuste de rendimiento de los índices no tiene ningún impacto en el rendimiento de los.
+Si la sugerencia de consulta no está deshabilitada, cualquier ajuste de rendimiento de los índices no afecta al rendimiento de AEM.
 
 #### Habilitar caché persistente para MongoMK {#enable-persistent-cache-for-mongomk}
 
@@ -315,7 +315,7 @@ Consulte [Diario con WiredTiger](https://docs.mongodb.com/manual/core/journaling
 
 #### Compresión {#compression}
 
-Con WiredTiger, MongoDB admite la compresión para todas las colecciones e índices. La compresión minimiza el uso del almacenamiento a expensas de la CPU adicional.
+Con WiredTiger, MongoDB admite la compresión para todas las colecciones e índices. La compresión minimiza el uso del almacenamiento a expensas de CPU adicional.
 
 De manera predeterminada, WiredTiger usa compresión de bloques con la biblioteca de compresión [snappy](https://docs.mongodb.com/manual/reference/glossary/#term-snappy) para todas las colecciones y [compresión de prefijo](https://docs.mongodb.com/manual/reference/glossary/#term-prefix-compression) para todos los índices.
 
@@ -358,15 +358,15 @@ Para ajustar el tamaño de la caché interna de WiredTiger, consulte [storage.wi
 
 NUMA (Acceso a Memoria No Uniforme) permite que un núcleo administre cómo se asigna la memoria a los núcleos del procesador. Aunque este proceso intenta acelerar el acceso a la memoria de los núcleos, asegurándose de que puedan acceder a los datos necesarios, NUMA interfiere con MAP introduciendo una latencia adicional, ya que las lecturas no se pueden predecir. Como resultado, NUMA debe deshabilitarse para el proceso `mongod` en todos los sistemas operativos compatibles.
 
-En esencia, en una arquitectura NUMA, la memoria se conecta a las CPU y las CPU se conectan a un bus. En una arquitectura SMP o UMA, la memoria se conecta al bus y se comparte con las CPU. Cuando un subproceso asigna memoria en una CPU NUMA, se asigna según una directiva. El valor predeterminado es asignar memoria conectada a la CPU local del subproceso a menos que no haya memoria libre, momento en el que utiliza la memoria de una CPU libre a un costo mayor. Una vez asignada, la memoria no se mueve entre las CPU. La asignación se realiza mediante una directiva heredada del subproceso primario, que en última instancia es el subproceso que inició el proceso.
+En esencia, en una arquitectura NUMA, la memoria se conecta a las CPU y las CPU se conectan a un bus. En una arquitectura SMP o UMA, la memoria se conecta al bus y se comparte con las CPU. Cuando un subproceso asigna memoria en un CPU NUMA, se asigna según una directiva. El valor predeterminado es asignar memoria conectada al CPU local del subproceso a menos que no haya memoria libre, momento en el que utiliza la memoria de un CPU libre a un costo mayor. Una vez asignada, la memoria no se mueve entre las CPU. La asignación se realiza mediante una directiva heredada del subproceso primario, que en última instancia es el subproceso que inició el proceso.
 
-En muchas bases de datos que ven el equipo como una arquitectura de memoria uniforme multinúcleo, este escenario lleva a que la CPU inicial se llene primero y la CPU secundaria se llene más tarde. Es especialmente cierto si un subproceso central es responsable de asignar búferes de memoria. La solución consiste en cambiar la directiva NUMA del subproceso principal utilizado para iniciar el proceso `mongod` ejecutando el siguiente comando:
+En muchas bases de datos que ven el equipo como una arquitectura de memoria uniforme multinúcleo, este escenario lleva a que el CPU inicial se llene primero y el CPU secundario se llene más tarde. Es especialmente cierto si un subproceso central es responsable de asignar búferes de memoria. La solución consiste en cambiar la directiva NUMA del subproceso principal utilizado para iniciar el proceso `mongod` ejecutando el siguiente comando:
 
 ```shell
 numactl --interleaved=all <mongod> -f config
 ```
 
-Esta directiva asigna la memoria de forma circular en todos los nodos de la CPU, lo que garantiza una distribución uniforme en todos los nodos. No genera el mayor acceso de rendimiento a la memoria como en sistemas con varios hardware de CPU. Alrededor de la mitad de las operaciones de memoria son más lentas y superan el bus, pero `mongod` no se ha escrito para dirigir NUMA de una manera óptima, por lo que es un compromiso razonable.
+Esta directiva asigna la memoria de forma circular en todos los nodos de CPU, lo que garantiza una distribución uniforme en todos los nodos. No genera el mayor acceso de rendimiento a la memoria como en sistemas con varios equipos CPU. Alrededor de la mitad de las operaciones de memoria son más lentas y superan el bus, pero `mongod` no se ha escrito para dirigir NUMA de una manera óptima, por lo que es un compromiso razonable.
 
 ### Problemas de NUMA {#numa-issues}
 
@@ -392,7 +392,7 @@ Ejecute solo en los nodos. Mongod solo se ejecuta en los nodos especificados y s
 Ejecute solo en las CPU (núcleos) enumeradas. Mongod sólo se ejecuta en las CPU enumeradas y sólo utiliza la memoria disponible en esas CPU.
 
 * `--localalloc`
-Asigne siempre memoria en el nodo actual, pero utilice todos los nodos en los que se ejecuta el subproceso. Si un subproceso realiza una asignación, sólo se utiliza la memoria disponible para esa CPU.
+Asigne siempre memoria en el nodo actual, pero utilice todos los nodos en los que se ejecuta el subproceso. Si un subproceso realiza una asignación, sólo se utiliza la memoria disponible para ese CPU.
 
 * `--preferred=<node>`
 Prefiere la asignación a un nodo, pero regresa a otros si el nodo preferido está lleno. Se puede utilizar la notación relativa para definir un nodo. Además, los subprocesos se ejecutan en todos los nodos.
@@ -567,7 +567,7 @@ Si utiliza WMWare ESX para gestionar e implementar sus entornos virtualizados, a
 1. Desactivar la ampliación de memoria
 1. Asignación previa y reserva de memoria para las máquinas virtuales que hospedan las bases de datos MongoDB
 1. Utilice el Control de E/S de almacenamiento para asignar suficiente E/S al proceso `mongod`.
-1. Garantizar los recursos de CPU de los equipos que hospedan MongoDB estableciendo [Reserva de CPU](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
+1. Garantizar los recursos de CPU de los equipos que hospedan MongoDB estableciendo [Reserva CPU](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
 
 1. Considere utilizar controladores de E/S ParaVirtual. <!-- URL is a 404 See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).-->
 
@@ -589,11 +589,11 @@ Además, asegúrese de que todas las bibliotecas utilizadas en su compilación e
 
 ### Configuración de Dispatcher {#dispatcher-configuration}
 
-Una configuración típica de Dispatcher AEM proporciona entre diez y 20 veces más el rendimiento de solicitudes de una sola instancia de.
+Una configuración típica de Dispatcher sirve entre diez y 20 veces más el rendimiento de solicitudes de una sola instancia de AEM.
 
 Como el Dispatcher no tiene estado, puede escalarse horizontalmente con facilidad. En algunas implementaciones, se debe restringir el acceso de los autores a ciertos recursos. Se recomienda utilizar una Dispatcher con las instancias de autor.
 
-AEM La ejecución de la ejecución sin un Dispatcher requiere la terminación SSL y el equilibrio de carga para que los realice otra aplicación. AEM Esto es necesario porque las sesiones deben tener afinidad con la instancia de en la que se crean, un concepto conocido como conexiones fijas. El motivo es garantizar que las actualizaciones del contenido muestren una latencia mínima.
+La ejecución de AEM sin Dispatcher requiere que otra aplicación realice la terminación SSL y el equilibrio de carga. Esto es necesario porque las sesiones deben tener afinidad con la instancia de AEM en la que se crean, un concepto conocido como conexiones fijas. El motivo es garantizar que las actualizaciones del contenido muestren una latencia mínima.
 
 Consulte la [documentación de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher) para obtener más información sobre cómo configurarla.
 
@@ -601,13 +601,13 @@ Consulte la [documentación de Dispatcher](https://experienceleague.adobe.com/es
 
 #### Conexiones fijas {#sticky-connections}
 
-AEM Las conexiones duraderas garantizan que todas las páginas personalizadas y los datos de sesión de un usuario se compongan en la misma instancia de. Estos datos se almacenan en la instancia, por lo que las solicitudes posteriores del mismo usuario vuelven a la misma instancia.
+Las conexiones duraderas garantizan que todas las páginas personalizadas y los datos de sesión de un usuario se compongan en la misma instancia de AEM. Estos datos se almacenan en la instancia, por lo que las solicitudes posteriores del mismo usuario vuelven a la misma instancia.
 
-AEM AEM Se recomienda que las conexiones fijas estén habilitadas para todas las capas internas y que las solicitudes de enrutamiento se dirijan a las instancias de, lo que anima a las solicitudes subsiguientes a llegar a la misma instancia de. Al hacerlo, se ayuda a minimizar la latencia que, de lo contrario, se aprecia cuando se actualiza el contenido entre instancias.
+Se recomienda habilitar conexiones fijas para todas las solicitudes de enrutamiento de capas internas a las instancias de AEM, lo que anima a las solicitudes posteriores a llegar a la misma instancia de AEM. Al hacerlo, se ayuda a minimizar la latencia que, de lo contrario, se aprecia cuando se actualiza el contenido entre instancias.
 
 #### Caduca mucho {#long-expires}
 
-AEM De forma predeterminada, el contenido enviado desde un Dispatcher de tiene encabezados Last-Modified y Etag, sin indicación de la caducidad del contenido. Este flujo garantiza que la interfaz de usuario siempre obtenga la última versión del recurso. También significa que el explorador realiza una operación de GET para ver si el recurso ha cambiado. Como resultado, puede generar varias solicitudes a las que la respuesta HTTP es 304 (sin modificar), según la carga de la página. Para los recursos que no caducan, establecer un encabezado Expires y quitar los encabezados Last-Modified y ETag hacen que el contenido se almacene en caché. Además, no se realizan más solicitudes de actualización hasta que se cumpla la fecha del encabezado Caduca.
+De forma predeterminada, el contenido enviado desde una Dispatcher de AEM tiene encabezados Last-Modified y Etag, sin indicación de la caducidad del contenido. Este flujo garantiza que la interfaz de usuario siempre obtenga la última versión del recurso. También significa que el explorador realiza una operación de GET para ver si el recurso ha cambiado. Como resultado, puede generar varias solicitudes a las que la respuesta HTTP es 304 (sin modificar), según la carga de la página. Para los recursos que no caducan, establecer un encabezado Expires y quitar los encabezados Last-Modified y ETag hacen que el contenido se almacene en caché. Además, no se realizan más solicitudes de actualización hasta que se cumpla la fecha del encabezado Caduca.
 
 Sin embargo, el uso de este método significa que no hay una manera razonable de hacer que el recurso caduque en el explorador antes de que caduque el encabezado Expires. Para mitigar este flujo de trabajo, HtmlClientLibraryManager se puede configurar para que utilice direcciones URL inmutables para las bibliotecas de cliente.
 
@@ -627,7 +627,7 @@ Header unset Pragma "expr=(%{REQUEST_STATUS} -eq 200) && (%{REQUEST_URI} =~ /.*l
 
 Cuando el contenido se envía sin tipo de contenido, muchos exploradores intentan adivinar el tipo de contenido leyendo los primeros bytes. Este método se denomina &quot;olfateo&quot;. El rastreo abre una vulnerabilidad de seguridad, ya que los usuarios que pueden escribir en el repositorio pueden cargar contenido malicioso sin tipo de contenido.
 
-Por este motivo, se recomienda agregar un encabezado `no-sniff` a los recursos que proporciona Dispatcher. Sin embargo, Dispatcher no almacena en caché los encabezados. AEM Como tal, significa que cualquier contenido servido desde el sistema de archivos local tiene su tipo de contenido determinado por su extensión, en lugar de utilizar el encabezado de tipo de contenido original de su servidor de origen de la.
+Por este motivo, se recomienda agregar un encabezado `no-sniff` a los recursos que proporciona Dispatcher. Sin embargo, Dispatcher no almacena en caché los encabezados. Como tal, significa que cualquier contenido servido desde el sistema de archivos local tiene su tipo de contenido determinado por su extensión, en lugar de utilizar el encabezado de tipo de contenido original de su servidor AEM de origen.
 
 No se puede activar ningún fragmento de forma segura si se sabe que la aplicación web nunca proporciona recursos en caché sin un tipo de archivo.
 
@@ -657,7 +657,7 @@ CSP permite ajustar las directivas. Sin embargo, en una aplicación compleja, lo
 
 >[!NOTE]
 >
->Para obtener más información sobre cómo funciona, consulte la [Página de OWASP sobre la Política de seguridad de contenido](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Para obtener más información sobre cómo funciona, consulte la [Página de OWASP sobre la Política de seguridad de contenido](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Tamaño {#sizing}
 
@@ -671,13 +671,13 @@ Para obtener información genérica sobre el rendimiento de MongoDB, vea [Análi
 
 ### Instalaciones simultáneas {#concurrent-installations}
 
-AEM Aunque MongoMK admite el uso simultáneo de varias instancias de con una sola base de datos, las instalaciones simultáneas no lo son.
+Aunque el uso simultáneo de varias instancias de AEM con una sola base de datos es compatible con MongoMK, las instalaciones simultáneas no lo son.
 
 Para solucionar este problema, asegúrese de ejecutar primero la instalación con un solo miembro y agregar los demás después de que el primero haya terminado de instalarse.
 
 ### Longitud del nombre de página {#page-name-length}
 
-AEM Si se está ejecutando una implementación del administrador de persistencia MongoMK, [los nombres de página están limitados a 150 caracteres.](/help/sites-authoring/managing-pages.md)
+Si AEM se está ejecutando en una implementación del administrador de persistencia MongoMK, [los nombres de página están limitados a 150 caracteres.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >

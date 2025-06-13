@@ -10,9 +10,9 @@ exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '9070'
+source-wordcount: '9057'
 ht-degree: 59%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 59%
 
 >[!CAUTION]
 >
->AEM Debido a que la IU clásica estaba en desuso en la versión 6.4 de, el contenido de esta página no se ha actualizado para WCAG 2.1.
+>Dado que la IU clásica estaba en desuso en AEM 6.4, el contenido de esta página no se ha actualizado para WCAG 2.1.
 >
->AEM Consulte las siguientes páginas para obtener más información relacionada con la y WCAG 2.1:
+>Consulte las siguientes páginas para obtener más información relacionada con AEM y WCAG 2.1:
 >
->* AEM [Directrices de accesibilidad web y de acceso a la web](/help/managing/web-accessibility.md)
+>* [AEM y las directrices de accesibilidad web](/help/managing/web-accessibility.md)
 >* [Guía rápida de WCAG 2.1](/help/managing/qg-wcag.md)
 >* [Crear contenido accesible (Conformidad con WCAG 2.1)](/help/sites-authoring/creating-accessible-content.md)
 
@@ -87,13 +87,13 @@ Para gráficos estáticos, el requisito principal es proporcionar una alternativ
 
 >[!NOTE]
 >
->Algunos componentes listos para usar, como **Carrusel** y **Presentación de diapositivas,** no proporcionan los medios para añadir descripciones de texto alternativas a las imágenes. AEM Cuando se implementan versiones de estos componentes para su instancia de, su equipo de desarrollo debe configurarlos para que admitan el atributo `alt`. Al hacerlo, se garantiza que los autores puedan agregarlo al contenido (consulte [Añadir ayuda para elementos y atributos de HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+>Algunos componentes listos para usar, como **Carrusel** y **Presentación de diapositivas,** no proporcionan los medios para añadir descripciones de texto alternativas a las imágenes. Al implementar versiones de estos componentes para la instancia de AEM, el equipo de desarrollo debe configurarlos para que admitan el atributo `alt`. Al hacerlo, se garantiza que los autores puedan agregarlo al contenido (consulte [Añadir ayuda para elementos y atributos de HTML adicionales](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 El campo **Texto alternativo** está disponible en la pestaña de propiedades de imagen **Avanzadas** del cuadro de diálogo del componente **Imagen**:
 
 ![Cuadro de diálogo Editar del componente Imagen en la IU clásica; muestra el campo Texto alternativo.](assets/chlimage_1-17a.png)
 
-AEM De forma predeterminada, agrega **Texto alternativo** a las imágenes. En la IU clásica, hay dos escenarios diferentes para la creación del atributo predeterminado, aunque el valor predeterminado puede no ser suficiente como alternativa y es probable que deba editarse en la pestaña de propiedades de imagen **Advanced**:
+AEM agrega **Texto alternativo** a las imágenes de forma predeterminada. En la IU clásica, hay dos escenarios diferentes para la creación del atributo predeterminado, aunque el valor predeterminado puede no ser suficiente como alternativa y es probable que deba editarse en la pestaña de propiedades de imagen **Advanced**:
 
 * Archivo:
 
@@ -126,7 +126,7 @@ Existen varias formas de contenido no textual, por lo que el valor de la alterna
 * Si el contenido no textual está contenido en un elemento button y no hay texto que forme parte del mismo botón, el texto alternativo de la imagen debe indicar la funcionalidad del botón, no describir la imagen.
 * Es aceptable que una imagen tenga un texto alternativo vacío (nulo), pero solo si la imagen no tiene texto alternativo. Por ejemplo, se trata de un gráfico puramente decorativo. O si el texto equivalente ya existe en la página de texto.
 
-El [borrador W3C: Técnicas de HTML5 para proporcionar alternativas textuales útiles](https://html.spec.whatwg.org/multipage/images.html#alt) tiene más detalles y ejemplos de provisión de texto alternativo apropiado para imágenes de diferentes tipos.
+[Borrador W3C: Técnicas de HTML5 para proporcionar alternativas textuales útiles](https://html.spec.whatwg.org/multipage/images.html#alt) tiene más detalles y ejemplos de provisión de texto alternativo apropiado para imágenes de diferentes tipos.
 
 Los tipos específicos de contenido no textual que requieren alternativas textuales pueden incluir:
 
@@ -156,7 +156,7 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
   >
   >El fragmento anterior solo se utiliza para ilustrar el orden. Use el componente **Image**, en lugar de la referencia `img src` usada anteriormente.
 
-  AEM En el cuadro de diálogo de configuración de la imagen, puede usar una combinación de los campos **Texto alternativo** y **Descripción**, como en [Cómo cumplir: contenido no textual (1.1.1)](#how-to-meet-non-text-content).
+  En AEM, puede usar una combinación de los campos **Texto alternativo** y **Descripción** en el cuadro de diálogo de configuración de la imagen, como en [Cómo cumplir: contenido no textual (1.1.1)](#how-to-meet-non-text-content).
 
 * Mapas, diagramas, diagramas de flujo:
 
@@ -174,7 +174,7 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
 * Imágenes de fondo:
 
-  Estas imágenes se consiguen utilizando hojas de estilo en cascada (CSS) en lugar de en HTML. No es posible especificar un valor de texto alternativo. Por lo tanto, las imágenes de fondo no deben proporcionar información textual importante: si lo hacen, esta información también debe proporcionarse en el texto de la página.
+  Estas imágenes se consiguen utilizando hojas de estilo en cascada (CSS) en lugar de HTML. No es posible especificar un valor de texto alternativo. Por lo tanto, las imágenes de fondo no deben proporcionar información textual importante: si lo hacen, esta información también debe proporcionarse en el texto de la página.
 
   Sin embargo, es importante que se muestre un fondo alternativo cuando la imagen no se pueda mostrar.
 
@@ -233,7 +233,7 @@ Proporcionar esta información en un formato diferente, como texto (o audio para
 >
 >Si el contenido de audio o vídeo se proporciona como alternativa al contenido que existe en otro formato en una página web, no es necesario seguir los requisitos anteriores. Por ejemplo, si un vídeo ilustra una lista de instrucciones de texto, este vídeo no requiere una alternativa, ya que las instrucciones de texto ya actúan como una alternativa al vídeo.
 
-La inserción de contenido multimedia, específicamente de Flash AEM, en las páginas web de la aplicación es similar a la inserción de una imagen. Sin embargo, como el contenido multimedia es mucho más que una imagen fija, existen varios ajustes y opciones diferentes para controlar cómo se reproduce el contenido multimedia.
+Insertar contenido multimedia, específicamente contenido Flash, en las páginas web de AEM es similar a insertar una imagen. Sin embargo, como el contenido multimedia es mucho más que una imagen fija, existen varios ajustes y opciones diferentes para controlar cómo se reproduce el contenido multimedia.
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ Para los subtítulos cerrados, crea y proporciona un archivo de subtítulos sinc
 
 Ver los tutoriales en [Más información: subtítulos (pregrabados) (1.2.2)](#more-information-captions-pre-recorded). Asegúrese de proporcionar una nota para que los usuarios sepan que hay subtítulos disponibles para el vídeo.
 
-Si necesita utilizar subtítulos abiertos, incorpore el texto en la pista de vídeo. Este método se logra utilizando aplicaciones de edición de vídeo que permiten la superposición de títulos en el vídeo.
+Si necesita utilizar subtítulos abiertos, incruste el texto en la pista de vídeo. Este método se logra utilizando aplicaciones de edición de vídeo que permiten la superposición de títulos en el vídeo.
 
 #### Más información: Subtítulos (pregrabados) (1.2.2)  {#more-information-captions-pre-recorded}
 
@@ -312,7 +312,7 @@ Los detalles exactos de cómo crear vídeos descritos por audio quedan fuera del
 
 * [Entender los criterios de éxito 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html)
 * [Cumplir los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/es/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Subtítulos (en vivo) (1.2.4)    {#captions-live}
 
@@ -328,12 +328,11 @@ Este criterio de éxito es idéntico al de [Subtítulos (pregrabados)](#captions
 
 Siga las instrucciones proporcionadas para [Subtítulos (pregrabados)](#captions-pre-recorded) arriba. Sin embargo, debido a la naturaleza de los medios, los subtítulos deben crearse lo más rápido posible y en respuesta a lo que está sucediendo. Por eso es necesario considerar la posibilidad de utilizar subtítulos a tiempo real o herramientas de función de voz a texto.
 
-Las instrucciones detalladas van más allá del alcance de este documento, pero los siguientes recursos proporcionan información útil:
+Las instrucciones detalladas exceden el ámbito de este documento, pero el siguiente recurso proporciona información útil:
 
 * [WebAIM: Subtítulos a tiempo real](https://webaim.org/techniques/captions/realtime)
-* [AccessIT (Universidad de Washington): ¿Se pueden generar subtítulos de manera automática utilizando el reconocimiento de voz?](https://www.washington.edu/doit/programs/accessit?1209)
 
-#### Más información: Subtítulos (en vivo) (1.2.4)     {#more-information-captions-live}
+#### Más información: Subtítulos (en vivo) (1.2.4)  {#more-information-captions-live}
 
 * [Entender los criterios de éxito 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
 * [Cumplir los criterios de éxito 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)
@@ -377,7 +376,7 @@ Esta directriz cubre los requisitos necesarios para apoyar a las siguientes pers
 
 Muchas tecnologías de asistencia que utilizan las personas con discapacidad dependen de la información estructural para mostrar o generar contenido de forma eficaz. Esta información estructural puede adoptar la forma de encabezados de página, encabezados de fila y columna de tabla y tipos de lista. Por ejemplo, un lector de pantalla podría permitir que un usuario navegue por una página de un encabezado a otro. Sin embargo, cuando el contenido de una página solo parece contener una estructura a través de un estilo visual, en lugar del formato HTML subyacente, quiere decir que no existe ninguna información estructural disponible para tecnologías de asistencia, lo que limita su capacidad de proporcionar una navegación más sencilla.
 
-Este criterio de éxito existe para garantizar que dicha información estructural se proporcione a través de HTML, de modo que los navegadores y las tecnologías de asistencia puedan acceder a la información y aprovecharla.
+Este criterio de éxito existe para garantizar que esta información estructural se proporcione a través de HTML, de modo que los exploradores y las tecnologías de asistencia puedan acceder a la información y aprovecharla.
 
 #### Cómo cumplir: Información y relaciones (1.3.1)  {#how-to-meet-info-and-relationships}
 
@@ -391,7 +390,7 @@ Asegúrese de que las páginas web tengan la estructura adecuada mediante lo sig
 
 * **Uso de encabezados:**  
 
-  AEM AEM Siempre que tenga las características de accesibilidad de RTE habilitadas (consulte [Acceso y accesibilidad](/help/sites-administering/rte-accessible-content.md)), ofrece tres niveles de encabezado de página para el usuario de la página de inicio de sesión de la sesión de usuario de la página de inicio de sesión de la sesión de la sesión de usuario (ver y Accesibilidad). Puede utilizarlas para identificar secciones y subsecciones de contenido. El encabezado 1 es el nivel más alto, mientras que el encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
+  Siempre que tenga las características de accesibilidad de RTE habilitadas (consulte [AEM y accesibilidad](/help/sites-administering/rte-accessible-content.md)), AEM ofrece tres niveles de encabezado de página. Puede utilizarlas para identificar secciones y subsecciones de contenido. El encabezado 1 es el nivel más alto, mientras que el encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
 
   La siguiente imagen muestra un ejemplo de los diferentes tipos de encabezados.
 
@@ -402,7 +401,7 @@ Asegúrese de que las páginas web tengan la estructura adecuada mediante lo sig
   Utilice el elemento &lt;strong> o &lt;em> para indicar énfasis. No utilice encabezados o texto enfatizado en los párrafos.
 
    * Enfatice el texto que quiera remarcar;
-   * Haz clic en el icono **B** (para &lt;strong>) o en el icono **I** (para &lt;em>) que se muestra en el panel **Propiedades** (asegúrate de que el HTML esté seleccionado).
+   * Haz clic en el icono **B** (para &lt;strong>) o en el icono **I** (para &lt;em>) que se muestra en el panel **Propiedades** (asegúrate de que HTML está seleccionado).
 
   >[!NOTE]
   >
@@ -424,7 +423,7 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
      En RTE, utilice el icono **Lista numerada**.
 
-  Si desea cambiar contenido existente por un tipo de lista específico, resalte el texto correspondiente y seleccione el tipo de lista adecuado. Como en el ejemplo anterior, que muestra cómo se introduce el texto del párrafo, los elementos de la lista correspondientes se añaden automáticamente al HTML, pero puede verlo en la vista de edición de código fuente.
+  Si desea cambiar contenido existente por un tipo de lista específico, resalte el texto correspondiente y seleccione el tipo de lista adecuado. Como en el ejemplo anterior, en el que se muestra cómo se introduce el texto del párrafo, los elementos de la lista correspondientes se añaden automáticamente a HTML, pero puede verlo en la vista de edición de código fuente.
 
   >[!NOTE]
   >
@@ -503,7 +502,7 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
     </table>
   ```
 
-  AEM Para conseguirlo en la, debe añadir el marcado directamente utilizando el modo de edición de origen.
+  Para conseguirlo en AEM, debe añadir el marcado directamente utilizando el modo de edición de origen.
 
   >[!NOTE]
   >
@@ -759,7 +758,7 @@ Este criterio de éxito ayuda a todo el mundo, independientemente de cualquier d
 
 Al crear una página HTML nueva en AEM, se puede especificar el título de la página. Asegúrese de que el título describa adecuadamente el contenido de la página para que los visitantes puedan identificar rápidamente si el contenido es relevante para sus necesidades.
 
-También puede editar el título de página al editar una página. Se puede obtener acceso desde **Sidekick** - pestaña **Página** - **Propiedades de página...**
+También puede editar el título de página al editar una página. Se puede acceder a ella desde **Sidekick** - **Página** pestaña - **Propiedades de página...**
 
 #### Más información: Página titulada (2.4.2) {#more-information-page-titled}
 
@@ -932,7 +931,7 @@ Para añadir el elemento “span” (extensión), con un idioma adecuado, puede 
 
 Proporcionar instrucciones para ayudar a las personas a completar formularios es una parte fundamental de las prácticas recomendadas en el uso de la interfaz. Resulta útil para las personas con deficiencias visuales o cognitivas que, de lo contrario, podrían tener dificultades para comprender el diseño de un formulario y el tipo de datos que se proporcionan en un campo de formulario determinado.
 
-AEM En la página, se agrega una etiqueta predeterminada al agregar un componente de formulario, como un **Campo de texto**, a la página. Este título predeterminado depende del tipo de componente. Puede añadir su propio título en la pestaña **Título y texto** del cuadro de diálogo de edición de ese campo. Es importante asegurarse de que las etiquetas ayudan a los usuarios a entender los datos que se asocian con cada componente del formulario.
+En AEM, se agrega una etiqueta predeterminada al agregar un componente de formulario, como un **Campo de texto**, a la página. Este título predeterminado depende del tipo de componente. Puede añadir su propio título en la pestaña **Título y texto** del cuadro de diálogo de edición de ese campo. Es importante asegurarse de que las etiquetas ayudan a los usuarios a entender los datos que se asocian con cada componente del formulario.
 
 ![Ficha Título y texto (cuadro de diálogo de edición); se ha agregado el título &#39;Descripción&#39;.](assets/chlimage_1-22a.png)
 
