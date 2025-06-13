@@ -6,9 +6,9 @@ role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1558'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 Las plantillas de recursos son una clase especial de recursos que facilitan la reutilización rápida de contenido visualmente enriquecido para medios digitales e impresos. Una plantilla de activos consta de dos partes, la sección de mensajería fija y la sección editable. La sección de mensajería fija puede contener contenido de propiedad, como el logotipo de la marca y la información de copyright, que no se pueden editar. La sección editable puede contener contenido visual y textual en campos que se pueden editar para personalizar la mensajería.
 
-La flexibilidad para realizar ediciones limitadas y, al mismo tiempo, proteger la señalización global hace que las plantillas de recursos sean los bloques de creación ideales para una adaptación y distribución rápidas del contenido como artefactos de contenido para diversas funciones. La reutilización del contenido ayuda a reducir el coste de gestión de los canales impresos y digitales, y ofrece experiencias integrales y coherentes en todos estos canales.
+Las plantillas de recursos ofrecen la flexibilidad de realizar ediciones limitadas al tiempo que mantienen la seguridad de la señalización global. Esta capacidad los convierte en componentes básicos ideales para adaptar y distribuir contenido rápidamente entre diversas funciones. La reutilización del contenido ayuda a reducir el coste de gestión de los canales impresos y digitales, y ofrece experiencias integrales y coherentes en todos estos canales.
 
-Como especialista en marketing, puede almacenar y administrar plantillas en [!DNL Experience Manager Assets] y utilizar una sola plantilla base para crear varias experiencias de impresión personalizadas con facilidad. Puede crear varios tipos de material promocional de marketing, incluidos folletos, prospectos, postales, tarjetas de presentación, etc., para transmitir con lucidez su mensaje de marketing a los clientes. También puede montar salidas de impresión de varias páginas a partir de salidas de impresión nuevas o existentes. Por encima de todo, puede ofrecer simultáneamente experiencias digitales e impresas con facilidad para proporcionar una experiencia coherente e integrada para los usuarios.
+Como especialista en marketing, puede almacenar y administrar plantillas en [!DNL Experience Manager Assets] y utilizar una sola plantilla base para crear varias experiencias de impresión personalizadas con facilidad. Puede crear varios tipos de material promocional de marketing, incluidos folletos, prospectos, postales, tarjetas de presentación, etc., para transmitir su mensaje de marketing de forma lúcida a los clientes. También puede montar salidas de impresión de varias páginas a partir de salidas de impresión nuevas o existentes. Por encima de todo, puede ofrecer simultáneamente experiencias digitales e impresas con facilidad para proporcionar una experiencia coherente e integrada para los usuarios.
 
-Aunque las plantillas de recursos son en su mayoría [!DNL Adobe InDesign] archivos, el dominio de [!DNL Adobe InDesign] no es una barrera para la creación de artefactos estelares. No necesita asignar los campos de la plantilla [!DNL Adobe InDesign] con los campos de producto que necesita asignar al crear catálogos. Puede editar las plantillas en modo WYSIWYG directamente en la interfaz web. Sin embargo, para que [!DNL Adobe InDesign] procese los cambios de edición, primero debe configurar [!DNL Experience Manager Assets] para que se integre con [!DNL Adobe InDesign Server].
+Aunque las plantillas de recursos son en su mayoría [!DNL Adobe InDesign] archivos, el dominio de [!DNL Adobe InDesign] no es una barrera para la creación de artefactos estelares. No necesita asignar los campos de la plantilla [!DNL Adobe InDesign] con los campos de producto que necesita asignar al crear catálogos. Puede editar las plantillas en el modo WYSIWYG directamente en la interfaz web. Sin embargo, para que [!DNL Adobe InDesign] procese los cambios de edición, primero debe configurar [!DNL Experience Manager Assets] para que se integre con [!DNL Adobe InDesign Server].
 
 La capacidad de editar [!DNL Adobe InDesign] plantillas desde la interfaz web ayuda a fomentar una mayor colaboración entre el personal creativo y de marketing. El aumento de la velocidad de contenido reduce el tiempo de comercialización de las garantías reales de marketing.
 
@@ -67,7 +67,7 @@ Imagine un escenario en el que desee crear material promocional imprimible digit
 
 ## Editar una pieza colateral {#editing-a-collateral}
 
-Puede editar un material colateral inmediatamente después de crearlo. También puede abrirlo desde la página [!UICONTROL Plantillas] o la página de recursos.
+Puede editar un material colateral inmediatamente después de crearlo. También puede abrirlo desde la página [!UICONTROL Plantillas] o la página Recurso.
 
 1. Para abrir el material colateral para editarlo, siga uno de estos procedimientos:
 
@@ -90,7 +90,7 @@ Puede editar un material colateral inmediatamente después de crearlo. También 
 
    >[!NOTE]
    >
-   >Asegúrese de que la implementación de [!DNL Experience Manager] esté integrada con [!DNL InDesign Server] para permitir que [!DNL Experience Manager Assets] extraiga datos de la plantilla [!DNL InDesign] y que esté disponible para la edición. Para obtener más información, consulte [Integrar Experience Manager Assets con el InDesign Server](/help/assets/indesign.md).
+   >Integre la implementación de [!DNL Experience Manager] con [!DNL InDesign Server] para que [!DNL Experience Manager Assets] pueda extraer datos de la plantilla [!DNL InDesign] y ponerlos a disposición para su edición. Para obtener más información, consulte [Integrar Experience Manager Assets con InDesign Server](/help/assets/indesign.md).
 
 1. Para modificar el texto de un campo editable, haga clic en el campo de texto de la lista de campos editables y edite el texto del campo.
 
@@ -124,17 +124,16 @@ Puede editar un material colateral inmediatamente después de crearlo. También 
    >
    >Para permitir que [!DNL Experience Manager] resuelva imágenes, haga lo siguiente:
    >
-   >* Incrustar imágenes al crear [!DNL InDesign] plantillas (vea [Acerca de los vínculos y los gráficos incrustados](https://helpx.adobe.com/es/indesign/using/graphics-links.html)).
+   >* Incrustar imágenes al crear [!DNL InDesign] plantillas (vea [Acerca de los vínculos y los gráficos incrustados](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Monte [!DNL Experience Manager] en el sistema de archivos local y, a continuación, asigne los iconos que faltan con los recursos existentes en [!DNL Experience Manager].
    >
-   >Para obtener más información sobre cómo trabajar con documentos de [!DNL InDesign], consulte [prácticas recomendadas para trabajar con documentos de InDesign en Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Para generar una representación de PDF para el folleto, seleccione la opción Acrobat en el cuadro de diálogo y haga clic en **[!UICONTROL Continuar]**.
 1. El fragmento de material colateral se crea en la carpeta con la que comenzó. Para ver las representaciones, abra el material promocional y elija **[!UICONTROL Representaciones]** en la lista GlobalNav.
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
-1. Seleccione la representación del PDF en la lista de representaciones para poder descargar el archivo del PDF. Abra el archivo del PDF para revisar el material colateral.
+1. Seleccione la representación de PDF en la lista de representaciones para poder descargar el archivo PDF. Abra el archivo PDF para revisar el material colateral.
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
@@ -165,7 +164,7 @@ Puede editar un material colateral inmediatamente después de crearlo. También 
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. En la pantalla [!UICONTROL Configurar plantilla], especifique un nombre para el material promocional. Si lo desea, especifique las etiquetas que considere adecuadas. Si desea exportar la salida en formato de PDF, seleccione **[!UICONTROL Acrobat (.PDF)]**. De manera predeterminada, el material colateral se exporta en formato de [!DNL InDesign] y en formato de JPG. Para cambiar la miniatura de visualización del material promocional de varias páginas, haga clic en **[!UICONTROL Cambiar miniatura]**.
+1. En la pantalla [!UICONTROL Configurar plantilla], especifique un nombre para el material promocional. Si lo desea, especifique las etiquetas que considere adecuadas. Si desea exportar el resultado en formato PDF, seleccione **[!UICONTROL Acrobat (.PDF)]**. De forma predeterminada, el material colateral se exporta en formato JPG y [!DNL InDesign]. Para cambiar la miniatura de visualización del material promocional de varias páginas, haga clic en **[!UICONTROL Cambiar miniatura]**.
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 

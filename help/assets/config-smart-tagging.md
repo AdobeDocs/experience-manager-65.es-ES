@@ -5,16 +5,16 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 917723f89c037756a74fef9a54df9237d4283c1d
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2129'
+ht-degree: 13%
 
 ---
 
 # Preparar [!DNL Assets] para el etiquetado inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
-Antes de empezar a etiquetar recursos usando Smart Content Services, integre [!DNL Experience Manager Assets] con Adobe Developer Console para usar el servicio inteligente de [!DNL Adobe Sensei]. Una vez configurado, entrene el servicio con algunas imágenes y una etiqueta.
+Para poder empezar a etiquetar recursos con Smart Content Services, integre [!DNL Experience Manager Assets] con Adobe Developer Console para usar el servicio inteligente de [!DNL Adobe Sensei]. Una vez configurado, entrene el servicio con algunas imágenes y una etiqueta.
 
 <!--
 >[!NOTE]
@@ -32,7 +32,7 @@ Antes de usar el servicio de contenido inteligente, asegúrese de lo siguiente:
 * [Integrar con Adobe Developer Console](#integrate-adobe-io).
 * [Entrenar el servicio de contenido inteligente](#training-the-smart-content-service).
 
-* Instale el [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es) más reciente.
+* Instale el [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) más reciente.
 
 ## Actualización de SCS para admitir Oauth para Adobe Managed Services {#scs-upgrade-oauth-managed-services}
 
@@ -65,13 +65,13 @@ Para Service Pack 20 y versiones anteriores, debe realizar los pasos de la soluc
 
 ## Integración con Adobe Developer Console {#integrate-adobe-io}
 
-Al integrarse con Adobe Developer Console, el servidor [!DNL Experience Manager] autentica las credenciales del servicio con la puerta de enlace de Adobe Developer Console antes de reenviar la solicitud al servicio de contenido inteligente. Para integrarse, necesita una cuenta de Adobe ID que tenga privilegios de administrador para la organización y la licencia de Smart Content Service comprada y habilitada para su organización.
+Al integrarse con Adobe Developer Console, el servidor [!DNL Experience Manager] autentica las credenciales del servicio con la puerta de enlace de Adobe Developer Console antes de reenviar la solicitud al servicio de contenido inteligente. Para integrarse, necesita una cuenta de Adobe ID que tenga privilegios de administrador para la organización y una licencia de Smart Content Service comprada y habilitada para su organización.
 
 Para configurar el servicio de contenido inteligente, siga estos pasos de nivel superior:
 
 1. Cree una integración en [Adobe Developer Console](#create-adobe-io-integration).
 
-1. Cree [la configuración de la cuenta técnica de IMS](#create-ims-account-config) mediante la clave de API y otras credenciales de Adobe Developer Console.
+1. Cree una [configuración de cuenta técnica de IMS](#create-ims-account-config) con la clave de API y otras credenciales de Adobe Developer Console.
 
 1. [Configurar el servicio de contenido inteligente](#configure-smart-content-service).
 
@@ -93,7 +93,11 @@ To configure the Smart Content Service, follow these top-level steps:
 
 ### Creación de la integración con Adobe Developer Console {#create-adobe-io-integration}
 
-Para usar las API del servicio de contenido inteligente, cree una integración en Adobe Developer Console para obtener [!UICONTROL clave de API] (generada en el campo [!UICONTROL ID de cliente] de la integración de Adobe Developer Console), [!UICONTROL ID de organización] y [!UICONTROL SECRETO DE CLIENTE] para la [!UICONTROL configuración del servicio de etiquetado inteligente de Assets] de la configuración en la nube en [!DNL Experience Manager].
+Para utilizar las API del servicio de contenido inteligente, cree una integración en Adobe Developer Console para obtener lo siguiente:
+
+* [!UICONTROL CLAVE DE API] (generada en el campo [!UICONTROL ID DE CLIENTE] de la integración de Adobe Developer Console),
+* [!UICONTROL ID. DE ORGANIZACIÓN],
+* y [!UICONTROL SECRETO DE CLIENTE], para [!UICONTROL Configuración del servicio de etiquetado inteligente de Assets] de la configuración en la nube en [!DNL Experience Manager].
 
 1. Acceda a [https://developer.adobe.com](https://developer.adobe.com/) en un explorador. Seleccione la cuenta adecuada y compruebe que la función de organización asociada sea **administrador** del sistema.
 
@@ -104,17 +108,12 @@ Para usar las API del servicio de contenido inteligente, cree una integración e
 1. Seleccione **[!UICONTROL OAuth Server-to-Server]**. Haga clic en **[!UICONTROL Siguiente]**.
 Para obtener más información sobre cómo realizar esta configuración, consulte la documentación de Developer Console, según sus necesidades:
 
-   * Información general:
-      * [Autenticación de servidor a servidor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
-
-   * Creación de una nueva credencial de OAuth:
-      * [Guía de implementación de credenciales de servidor a servidor de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
-
-   * Migración de una credencial JWT existente a una credencial de OAuth:
-      * [Migración de una credencial de cuenta de servicio (JWT) a una credencial de servidor a servidor de OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * Para obtener información general, consulte *Autenticación de servidor a servidor* en developer.adobe.com.
+   * Para crear una nueva credencial de OAuth, consulte la *Guía de implementación de credenciales de servidor a servidor de OAuth* en developer.adobe.com.
+   * Para migrar una credencial JWT existente a una credencial OAuth, consulte *Migración de la credencial de cuenta de servicio (JWT) a la credencial de servidor a servidor OAuth* en developer.adobe.com.
 
 
-1. En la página **[!UICONTROL Seleccionar perfiles de producto]**, seleccione **[!UICONTROL Servicios de contenido inteligente]**. Haga clic en **[!UICONTROL Guardar API configurada]**.
+1. En la página **[!UICONTROL Seleccionar perfiles de producto]**, seleccione **[!UICONTROL Servicios de contenido inteligente]** y haga clic en la opción **[!UICONTROL Guardar API configurada]**.
 
    La página muestra más información sobre la configuración. Mantenga esta página abierta para copiar y agregar estos valores en [!UICONTROL Configuración del servicio de etiquetado inteligente de Assets] de la configuración de la nube en [!DNL Experience Manager] para configurar las etiquetas inteligentes.
 
@@ -122,7 +121,7 @@ Para obtener más información sobre cómo realizar esta configuración, consult
 
 ### Crear la configuración de cuenta técnica de IMS {#create-ims-account-config}
 
-Debe crear la configuración de cuenta técnica de IMS siguiendo los pasos a continuación:
+Debe crear una configuración de cuenta técnica de IMS siguiendo los pasos a continuación:
 
 1. En la [!DNL Experience Manager] interfaz de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**.
 
@@ -137,10 +136,10 @@ Debe crear la configuración de cuenta técnica de IMS siguiendo los pasos a con
    | Solución en la nube | Elija **[!UICONTROL Etiquetas inteligentes]** en la lista desplegable. |
    | Título | Añada el título de la cuenta de IMS que configura. |
    | Servidor de autorización | Agregar `https://ims-na1.adobelogin.com` |
-   | ID del cliente | Se proporcionará a través de [Adobe Developer console](https://developer.adobe.com/console/). |
-   | Secreto de cliente | Se proporcionará a través de [Adobe Developer console](https://developer.adobe.com/console/). |
-   | Ámbito | Se proporcionará a través de [Adobe Developer console](https://developer.adobe.com/console/). |
-   | ID de organización | Se proporcionará a través de [Adobe Developer console](https://developer.adobe.com/console/). |
+   | ID del cliente | Se proporcionará a través de la [consola Adobe Developer](https://developer.adobe.com/console/). |
+   | Secreto de cliente | Se proporcionará a través de la [consola Adobe Developer](https://developer.adobe.com/console/). |
+   | Ámbito | Se proporcionará a través de la [consola Adobe Developer](https://developer.adobe.com/console/). |
+   | ID de organización | Se proporcionará a través de la [consola Adobe Developer](https://developer.adobe.com/console/). |
 
 1. Seleccione la configuración que ha creado y haga clic en **[!UICONTROL Comprobar estado]**.
 
@@ -152,7 +151,7 @@ Debe crear la configuración de cuenta técnica de IMS siguiendo los pasos a con
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -170,7 +169,7 @@ Para configurar la integración, use los valores de los campos [!UICONTROL ID. D
    | Campo | Descripción |
    | -------- | ---------------------------- |
    | Título | Añada el título de la cuenta de IMS que configura. |
-   | Configuración de Adobe IMS asociada | Elija la configuración en la lista desplegable. |
+   | Configuración de Adobe IMS asociada | Elija una configuración en la lista desplegable. |
    | URL del servicio | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Por ejemplo, `https://smartcontent.adobe.io/apac`. Puede especificar `na`, `emea` o `apac` como las regiones en las que está alojada la instancia de autor de Experience Manager. |
 
    >[!NOTE]
@@ -292,7 +291,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -363,11 +362,11 @@ The validation results are displayed in the same dialog.
 
 1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 
-1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el modelo de flujo de trabajo de **[!UICONTROL recursos de actualización de DAM]**.
+1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el modelo de flujo de trabajo **[!UICONTROL Recurso de actualización DAM]**.
 
 1. Haga clic en **[!UICONTROL Editar]** en la barra de herramientas.
 
-1. Expanda el panel lateral para mostrar los pasos. Arrastre el paso **[!UICONTROL Recurso de etiqueta inteligente]** que está disponible en la sección Flujo de trabajo de DAM y colóquelo después del paso **[!UICONTROL Miniaturas del proceso]**.
+1. Expanda el panel lateral para mostrar los pasos. Arrastre el paso **[!UICONTROL Recurso de etiqueta inteligente]** que está disponible en la sección Flujo de trabajo de DAM y colóquelo después del paso **[!UICONTROL Procesar miniaturas]**.
 
    ![Añada el paso del recurso de etiquetas inteligentes después del paso de miniaturas de proceso en el flujo de trabajo de recursos de actualización de DAM](assets/smart-tag-in-dam-update-asset-workflow.png)
 
@@ -387,7 +386,7 @@ The validation results are displayed in the same dialog.
 
 ## Formación del servicio de contenido inteligente {#training-the-smart-content-service}
 
-Para que el servicio de contenido inteligente reconozca su taxonomía empresarial, ejecútela en un conjunto de recursos que ya incluyan etiquetas relevantes para su negocio. Para etiquetar de forma eficaz las imágenes de marca, el servicio de contenido inteligente requiere que las imágenes de formación se ajusten a determinadas directrices. Después de la formación, el servicio puede aplicar la misma taxonomía a un conjunto similar de recursos.
+Para que el servicio de contenido inteligente reconozca su taxonomía empresarial, ejecútela en un conjunto de recursos que ya incluyan etiquetas relevantes para su negocio. Para etiquetar las imágenes de marca de forma eficaz, el servicio de contenido inteligente requiere que las imágenes de formación se ajusten a determinadas directrices. Después de la formación, el servicio puede aplicar la misma taxonomía a un conjunto similar de recursos.
 
 Puede entrenar el servicio varias veces para mejorar su capacidad de aplicar etiquetas relevantes. Después de cada ciclo de formación, ejecute un flujo de trabajo de etiquetado y compruebe si los recursos están etiquetados correctamente.
 
@@ -409,7 +408,7 @@ Por ejemplo, no es aconsejable etiquetar todas estas imágenes como `my-party` (
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](/help/assets/assets/do-not-localize/coherence.png)
 
-**Cobertura**: Use suficiente variedad en las imágenes del curso de formación. La idea es ofrecer algunos ejemplos, pero razonablemente diversos, para que el Experience Manager aprenda a centrarse en las cosas correctas. Si aplica la misma etiqueta a imágenes visualmente distintas, incluya al menos cinco ejemplos de cada tipo.
+**Cobertura**: Use suficiente variedad en las imágenes del curso de formación. La idea es ofrecer algunos ejemplos, pero razonablemente diversos, para que Experience Manager aprenda a centrarse en lo correcto. Si aplica la misma etiqueta a imágenes visualmente distintas, incluya al menos cinco ejemplos de cada tipo.
 
 Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de aprendizaje similares a la imagen resaltada a continuación para que el servicio identifique las imágenes similares con mayor precisión durante el etiquetado.
 
@@ -427,7 +426,7 @@ Por ejemplo, para la etiqueta *casual-shoe*, la segunda imagen no es una buena c
 
 >[!NOTE]
 >
->La capacidad del servicio de contenido inteligente para aprender sobre sus etiquetas y aplicarlas a otras imágenes depende de la calidad de las imágenes que utilice para la formación. Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio de para cada etiqueta.
+>La capacidad del servicio de contenido inteligente para aprender sobre sus etiquetas y aplicarlas a otras imágenes depende de la calidad de las imágenes que utilice para la formación. Para obtener los mejores resultados, Adobe recomienda utilizar imágenes visualmente similares para entrenar el servicio para cada etiqueta.
 
 ### Formación periódica {#periodic-training}
 
@@ -441,7 +440,7 @@ Una vez seleccionada esta opción para una carpeta, [!DNL Experience Manager] ej
 
 Puede entrenar el servicio de contenido inteligente siempre que sea necesario desde la consola Flujo de trabajo.
 
-1. En la interfaz de [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. En la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el flujo de trabajo **[!UICONTROL Formación sobre etiquetas inteligentes]** y, a continuación, haga clic en **[!UICONTROL Iniciar flujo de trabajo]** en la barra de herramientas.
 1. En el cuadro de diálogo **[!UICONTROL Ejecutar flujo de trabajo]**, vaya a la carpeta de carga útil que incluye los recursos etiquetados para entrenar el servicio.
 1. Especifique un título para el flujo de trabajo y añada un comentario. A continuación, haga clic en **[!UICONTROL Ejecutar]**. Los recursos y las etiquetas se envían para su formación.
@@ -456,7 +455,7 @@ Puede entrenar el servicio de contenido inteligente siempre que sea necesario de
 
 Para comprobar si el servicio de contenido inteligente ha recibido formación sobre las etiquetas del conjunto de recursos de formación, consulte el informe de flujo de trabajo de formación desde la consola Informes.
 
-1. En la interfaz de [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes]**.
+1. En la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes]**.
 1. En la página **[!UICONTROL Informes de recursos]**, haga clic en **[!UICONTROL Crear]**.
 1. Seleccione el informe **[!UICONTROL Formación sobre etiquetas inteligentes]** y, a continuación, haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
 1. Especifique un título y una descripción para el informe. En **[!UICONTROL Programar informe]**, deje seleccionada la opción **[!UICONTROL Ahora]**. Si desea programar el informe para más adelante, seleccione **[!UICONTROL Más adelante]** e indique una fecha y una hora. A continuación, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
@@ -483,4 +482,4 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 >
 >* [Información general y cómo entrenar etiquetas inteligentes](enhanced-smart-tags.md)
 >* [Solución de problemas de etiquetas inteligentes para credenciales de OAuth](config-oauth.md)
->* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=es)
+>* [Tutorial de vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)

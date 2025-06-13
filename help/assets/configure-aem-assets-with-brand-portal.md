@@ -10,9 +10,9 @@ role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2a6cf0e85aace1516818ce87bc35b1b35f3da6e8
+source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '670'
 ht-degree: 8%
 
 ---
@@ -22,16 +22,16 @@ ht-degree: 8%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal) |
 | AEM 6.5 | Este artículo |
 
 Adobe Experience Manager Assets Brand Portal permite publicar recursos de marca aprobados de Adobe Experience Manager Assets en Brand Portal y distribuirlos a los usuarios de Brand Portal.
 
-AEM Assets se configura con Brand Portal a través de Adobe Developer Console, que obtiene un token de cuenta de Adobe de Identity Management Services (IMS) para la autorización del inquilino de Brand Portal.
+AEM Assets se configura con Brand Portal a través de Adobe Developer Console, que obtiene un token de cuenta de Adobe Identity Management Services (IMS) para la autorización del inquilino de Brand Portal.
 
 >[!NOTE]
 >
->La configuración de AEM Assets con Brand Portal a través de Adobe Developer Console AEM es compatible con la versión 6.5.4.0 y versiones posteriores de.
+>La configuración de AEM Assets con Brand Portal mediante Adobe Developer Console es compatible con AEM 6.5.4.0 y versiones posteriores.
 >
 <!--
 >Earlier, Brand Portal was configured via legacy OAuth Gateway, which uses the JSON Web Token (JWT) exchange to obtain an IMS Access token for authorization. 
@@ -43,7 +43,7 @@ AEM Assets se configura con Brand Portal a través de Adobe Developer Console, q
 >
 >***Solo para clientes existentes***
 >
->El Adobe recomienda seguir utilizando la configuración heredada de OAuth Gateway. Si tiene problemas con la configuración heredada de OAuth Gateway, elimine la configuración existente y cree una configuración a través de Adobe Developer Console.
+>Adobe recomienda seguir utilizando la configuración existente de OAuth Gateway. Si tiene problemas con la configuración heredada de OAuth Gateway, elimine la configuración existente y cree una configuración a través de Adobe Developer Console.
 
 <!--
 This help describes the following two use-cases:
@@ -53,7 +53,7 @@ This help describes the following two use-cases:
 -->
 La información proporcionada se basa en la suposición de que cualquiera que lea esta Ayuda está familiarizado con las siguientes tecnologías:
 
-* Instalación, configuración y administración de paquetes de Adobe Experience Manager AEM y.
+* Instalación, configuración y administración de paquetes de Adobe Experience Manager y AEM.
 
 * Uso de los sistemas operativos Linux® y Microsoft® Windows.
 
@@ -65,31 +65,31 @@ Para configurar AEM Assets con Brand Portal, es necesario lo siguiente:
 * Una URL de inquilino de Brand Portal
 * Un usuario con privilegios de administrador del sistema en la organización IMS del inquilino de Brand Portal
 
-[AEM Descargar e instalar la versión 6.5 de](#aemquickstart)
+[Descargar e instalar AEM 6.5](#aemquickstart)
 
-[AEM Descargue e instale el paquete de servicio de la última versión de](#servicepack)
+[Descargue e instale el último Service Pack de AEM](#servicepack)
 
-### AEM Descargar e instalar la versión 6.5 de {#aemquickstart}
+### Descargar e instalar AEM 6.5 {#aemquickstart}
 
-AEM AEM Se recomienda tener 6 5 para configurar una instancia de autor de. AEM Si no tiene ninguna aplicación en ejecución, descárguela desde las ubicaciones siguientes:
+Se recomienda tener AEM 6.5 para configurar una instancia de autor de AEM. Si no tiene AEM en funcionamiento, descárguelo desde las siguientes ubicaciones:
 
-* AEM AEM Si ya es cliente de la red de licencias de Adobe, descargue la versión 6.5 de la [página web de licencias de](https://licensing.adobe.com).
+* Si ya es cliente de AEM, descargue AEM 6.5 desde el [sitio web de licencias de Adobe](https://licensing.adobe.com).
 
-* Si usted es un socio de Adobe, use el [Programa de Entrenamiento de Socios de Adobe AEM](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar la versión 6.5 de la solicitud de.
+* Si es socio de Adobe, utilice el Programa de formación para socios de Adobe para solicitar AEM 6.5.
 
-AEM AEM Después de descargar los datos, para obtener instrucciones sobre cómo configurar una instancia de autor de la, consulte [implementación y mantenimiento de](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es#default-local-install).
+Después de descargar AEM, para obtener instrucciones para configurar una instancia de autor de AEM, consulte [implementación y mantenimiento](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy#default-local-install).
 
-### AEM Descargue e instale el paquete de servicio más reciente de {#servicepack}
+### Descargue e instale el último Service Pack de AEM {#servicepack}
 
-AEM Para obtener instrucciones detalladas, consulte las [Notas de la versión del paquete de servicio de 6.5 de](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=es).
+Para obtener instrucciones detalladas, consulte las [Notas de la versión del paquete de servicio de AEM 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/release-notes/release-notes).
 
-**Póngase en contacto con el servicio de atención al cliente de Adobe AEM** si no encuentra el paquete de servicio o el paquete de servicio más reciente del servicio de asistencia al cliente de.
+**Póngase en contacto con el servicio de atención al cliente de Adobe** si no encuentra el paquete o el paquete de servicio más reciente de AEM.
 
 ## Crear configuración {#configure-new-integration-65}
 
 >[!NOTE]
 >
->No puede crear nuevas credenciales de JWT a partir de junio de 2024. A partir de ahora, solo se crean credenciales de OAuth. Consulte más información sobre la creación de una configuración de OAuth.
+>No puede crear nuevas credenciales de JWT a partir de junio de 2024. A partir de ahora, solo se crean credenciales de OAuth. Más información sobre la creación de una configuración de OAuth.
 
 La configuración de AEM Assets con Brand Portal requiere configuraciones tanto en la instancia de autor de AEM Assets como en Adobe Developer Console.
 
@@ -111,7 +111,7 @@ La configuración de AEM Assets con Brand Portal requiere configuraciones tanto 
 >
 >Una instancia de autor de AEM Assets solo se debe configurar con un inquilino de Brand Portal.
 
-Realice los siguientes pasos en la secuencia indicada si configura AEM Assets con Brand Portal por primera vez:
+Realice los siguientes pasos en la secuencia indicada si está configurando AEM Assets con Brand Portal por primera vez:
 
 ### Crear una nueva configuración {#create-new-configuration}
 
@@ -123,11 +123,11 @@ Siga estos pasos en la secuencia especificada para configurar Experience Manager
 
 #### Configuración de las credenciales de OAuth en Adobe Developer Console {#config-oauth}
 
-[Configure las credenciales de OAuth en Adobe Developer Console](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) y seleccione la API de Brand Portal.
+[Configure las credenciales de OAuth en Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) y seleccione la API de Brand Portal.
 
 #### Creación de una nueva integración de Adobe IMS con OAuth {#create-ims-account-configuration}
 
-[Cree una nueva integración de IMS de Adobe con OAuth](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) y seleccione Brand Portal en la lista desplegable.
+[Cree una nueva integración de Adobe IMS mediante OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) y seleccione Brand Portal en la lista desplegable.
 
 #### Configurar servicio en la nube {#configure-cloud-service}
 
@@ -315,7 +315,7 @@ To configure the IMS account:
 
 1. Inicie sesión en la instancia de autor de AEM Assets.
 
-1. En el panel **Herramientas** ![Herramientas](assets/do-not-localize/tools.png), vaya a **[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**.
+1. En el panel **Herramientas** ![Herramientas](assets/do-not-localize/tools.png), vaya a **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. En la página Configuraciones de Brand Portal, haga clic en **[!UICONTROL Crear]**.
 
@@ -370,20 +370,20 @@ To configure the IMS account:
    >
    >Avoid disabling any of the replication agents, as it can cause the replication of the assets (running-in-queue) to fail.
    >
-   >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=es#connection-timeout).
+   >Ensure that all the four replication agents are configured to avoid timeout error. See [troubleshoot issues in parallel publishing to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
    >
    >Do not modify any autogenerated settings.
 
 You can now:
 
 * [Publish assets from AEM Assets to Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=es) - Asset Sourcing in Brand Portal 
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Sourcing in Brand Portal 
 * [Publish folders from AEM Assets to Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Publish collections from AEM Assets to Brand Portal](../assets/brand-portal-publish-collection.md) 
-* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=es)
-* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=es)
+* [Publish presets, schemas, and facets to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=es) for more information.
+See the [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) for more information.
 
 -->
 <!--
