@@ -3,13 +3,14 @@ title: Finalización del soporte para el editor de SPA
 description: Aunque el Editor SPA sigue siendo compatible con Adobe, conozca qué significa su desaprobación para el proyecto y qué opciones tiene para futuros proyectos.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
+exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Finalización del soporte para el editor de SPA {#spa-editor-deprecation}
 
@@ -32,7 +33,7 @@ La desuso significa que los siguientes SDK están ahora inmovilizados de funcion
 * [Núcleo del proyecto de la SPA de AEM](https://github.com/adobe/aem-spa-project-core)
 * [Administrador del modelo de página SPA de AEM](https://github.com/adobe/aem-spa-page-model-manager)
 * [Asignación de componentes de la SPA de AEM](https://github.com/adobe/aem-spa-component-mapping)
-* [Componentes editables de AEM SPA React](https://github.com/adobe/aem-react-editable-components)
+* [Componentes editables de React de SPA de AEM](https://github.com/adobe/aem-react-editable-components)
    * [Componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components)
    * [Base de componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components-base)
    * [SPA de componentes principales de AEM React](https://github.com/adobe/aem-react-core-wcm-components-spa)
@@ -64,7 +65,7 @@ El editor universal ofrece muchas ventajas, por lo que la migración a él es un
 * **Revisión para el futuro:** La hoja de ruta de AEM da prioridad al Editor universal como editor visual. Su adopción garantiza el acceso a las últimas innovaciones y mejoras.
 * **Integración más sencilla:** No se requiere SDK específico de AEM para usar el Editor universal, lo que reduce el bloqueo de pila tecnológica.
 * **Traer su propia aplicación:** El editor universal admite cualquier marco web o arquitectura, lo que permite la adopción sin requerir una refactorización compleja.
-* **Extensibilidad:** El editor universal se beneficia de un marco de trabajo de [extensión sólido,](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) que incluye integraciones con GenAI, Workfront y más.
+* **Extensibilidad:** El editor universal se beneficia de un marco de trabajo de [extensión sólido,](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) que incluye integraciones con GenAI, Workfront y más.
 
 No hay una ruta de migración directa del Editor de SPA al Editor universal. Esto se debe a diferencias fundamentales entre las dos tecnologías.
 

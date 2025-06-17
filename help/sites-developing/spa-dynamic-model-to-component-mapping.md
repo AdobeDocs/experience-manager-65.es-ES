@@ -1,5 +1,5 @@
 ---
-title: SPA Asignación de modelos dinámicos a componentes para la creación de
+title: Asignación de modelos dinámicos a componentes para SPA
 description: Descubra cómo se produce la asignación de modelos dinámicos a componentes en JavaScript SPA SDK para Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,7 +9,8 @@ exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -17,25 +18,25 @@ ht-degree: 0%
 ---
 
 
-# SPA Asignación de modelos dinámicos a componentes para la creación de{#dynamic-model-to-component-mapping-for-spas}
+# Asignación de modelos dinámicos a componentes para SPA{#dynamic-model-to-component-mapping-for-spas}
 
-En este documento se describe cómo se produce la asignación de modelos dinámicos a componentes en JavaScript SPA, SDK para Adobe Experience Manager AEM ().
+En este documento se describe cómo se produce la asignación de modelos dinámicos a componentes en JavaScript SPA SDK for Adobe Experience Manager (AEM).
 
 {{ue-over-spa}}
 
 ## Módulo de asignación de componentes {#componentmapping-module}
 
-El módulo `ComponentMapping` se proporciona como paquete NPM al proyecto front-end. AEM Almacena componentes front-end y proporciona una forma para que la aplicación de una sola página asigne componentes front-end a tipos de recursos de. Esto permite una resolución dinámica de componentes al analizar el modelo JSON de la aplicación.
+El módulo `ComponentMapping` se proporciona como paquete NPM al proyecto front-end. Almacena componentes front-end y proporciona una forma para que la aplicación de una sola página asigne componentes front-end a tipos de recursos de AEM. Esto permite una resolución dinámica de componentes al analizar el modelo JSON de la aplicación.
 
-AEM Cada elemento presente en el modelo contiene un campo `:type` que expone un tipo de recurso de. Cuando se monta, el componente front-end puede representarse a sí mismo utilizando el fragmento de modelo que ha recibido de las bibliotecas subyacentes.
+Cada elemento presente en el modelo contiene un campo `:type` que expone un tipo de recurso de AEM. Cuando se monta, el componente front-end puede representarse a sí mismo utilizando el fragmento de modelo que ha recibido de las bibliotecas subyacentes.
 
-SPA Consulte [Modelo de](/help/sites-developing/spa-blueprint.md) para obtener más información sobre el análisis del modelo y el acceso del componente front-end al modelo.
+Consulte [Modelo SPA](/help/sites-developing/spa-blueprint.md) para obtener más información sobre el análisis del modelo y el acceso del componente front-end al modelo.
 
 Consulte también el paquete npm: [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Aplicación de una sola página impulsada por modelo {#model-driven-single-page-application}
 
-Las aplicaciones de una sola página que utilizan JavaScript SPA SDK AEM para la creación de informes están basadas en modelos:
+Las aplicaciones de una sola página que utilizan JavaScript SPA SDK para AEM están basadas en modelos:
 
 1. Los componentes front-end se registran a sí mismos en el [Almacén de asignaciones de componentes](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. A continuación, el [contenedor](/help/sites-developing/spa-blueprint.md#container), una vez proporcionado con un modelo por el [proveedor de modelos](/help/sites-developing/spa-blueprint.md#the-model-provider), se repite sobre el contenido de su modelo (`:items`).

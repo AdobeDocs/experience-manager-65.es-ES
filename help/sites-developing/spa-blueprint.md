@@ -1,6 +1,6 @@
 ---
 title: Modelo SPA
-description: SPA SPA AEM En este documento se describe el contrato general independiente del marco que cualquier marco de trabajo de la debe cumplir para implementar componentes de editables dentro de la aplicación de la plataforma de trabajo de la.
+description: En este documento se describe el contrato general independiente del marco de trabajo que cualquier marco de SPA debe cumplir para implementar componentes de SPA editables en AEM.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
@@ -9,41 +9,42 @@ exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '2023'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Modelo SPA{#spa-blueprint}
 
-AEM SPA SPA SPA Para permitir que el autor use el Editor de de trabajo para editar el contenido de un, hay requisitos que el autor debe cumplir, que se describen en este documento.
+Para permitir que el autor utilice el Editor de SPA de AEM para editar el contenido de una SPA, existen requisitos que la SPA debe cumplir y que se describen en este documento.
 
 {{ue-over-spa}}
 
 ## Introducción {#introduction}
 
-SPA AEM SPA AEM En este documento se describe el contrato general que cualquier marco de trabajo debe cumplir (es decir, el tipo de capa de soporte de la) para implementar componentes de la aplicación de la editables dentro de los entornos de trabajo de los usuarios.
+En este documento se describe el contrato general que cualquier marco de SPA debe cumplir (es decir, el tipo de capa de soporte de AEM) para implementar componentes de SPA editables en AEM.
 
 >[!NOTE]
 >
 >Los siguientes requisitos son independientes del marco de trabajo. Si se cumplen estos requisitos, se puede proporcionar una capa específica del marco de trabajo compuesta por módulos, componentes y servicios.
 >
->**Estos requisitos ya se han cumplido para los marcos de React y Angular de la aplicación de la aplicación de la aplicación de la aplicación de AEM de la aplicación de.AEM** Los requisitos de este modelo solo son relevantes si desea implementar otro marco de trabajo para utilizarlo con el modelo de datos de.
+>**Estos requisitos ya se cumplen para los marcos de React y Angular en AEM.** Los requisitos de este modelo solo son relevantes si desea implementar otro marco de trabajo para utilizarlo con AEM.
 
 >[!CAUTION]
 >
->SPA AEM Aunque las capacidades de la de los módulos son independientes de los módulos, actualmente solo se admiten los módulos React y Angular.
+>Aunque las capacidades de SPA de AEM son independientes del marco de trabajo, actualmente solo se admiten los marcos de React y Angular.
 
-AEM AEM Para permitir que el autor utilice el Editor de páginas de la página de la aplicación para editar los datos expuestos por un marco de trabajo de aplicación de una sola página, un proyecto debe poder interpretar la estructura del modelo que representa la semántica de los datos almacenados para una aplicación dentro del repositorio de la aplicación de la aplicación. Para lograr este objetivo, se proporcionan dos bibliotecas no basadas en marcos: la `PageModelManager` y la `ComponentMapping`.
+Para permitir que el autor utilice el Editor de páginas de AEM para editar los datos expuestos por un marco de aplicación de una sola página, un proyecto debe poder interpretar la estructura del modelo que representa la semántica de los datos almacenados para una aplicación dentro del repositorio de AEM. Para lograr este objetivo, se proporcionan dos bibliotecas no basadas en marcos: la `PageModelManager` y la `ComponentMapping`.
 
 ### PageModelManager {#pagemodelmanager}
 
-SPA La biblioteca `PageModelManager` se proporciona como un paquete NPM para su uso en un proyecto de la red de trabajo de la red de trabajo (NPMs) de un proyecto de la red de trabajo. SPA Acompaña a la y sirve como administrador del modelo de datos.
+La biblioteca `PageModelManager` se proporciona como un paquete NPM para su uso en un proyecto SPA. Acompaña al SPA y sirve como administrador del modelo de datos.
 
-SPA En nombre de la, resume la recuperación y administración de la estructura JSON que representa la estructura de contenido real. SPA También es responsable de la sincronización con el para hacerle saber cuándo tiene que volver a procesar sus componentes.
+En nombre de la SPA, abstrae la recuperación y administración de la estructura JSON que representa la estructura de contenido real. También es responsable de la sincronización con la SPA para informarle cuando tenga que volver a procesar sus componentes.
 
 Consulte el paquete NPM [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
@@ -53,13 +54,13 @@ Al inicializar `PageModelManager`, la biblioteca primero carga el modelo raíz p
 
 ### ComponentMapping {#componentmapping}
 
-El módulo `ComponentMapping` se proporciona como paquete NPM al proyecto front-end. SPA AEM Almacena componentes front-end y proporciona una forma para que los usuarios de la aplicación asignen componentes front-end a tipos de recursos de. Esto permite una resolución dinámica de componentes al analizar el modelo JSON de la aplicación.
+El módulo `ComponentMapping` se proporciona como paquete NPM al proyecto front-end. Almacena componentes front-end y proporciona una forma para que la SPA asigne componentes front-end a tipos de recursos de AEM. Esto permite una resolución dinámica de componentes al analizar el modelo JSON de la aplicación.
 
-AEM Cada elemento presente en el modelo contiene un campo `:type` que expone un tipo de recurso de. Cuando se monta, el componente front-end puede representarse a sí mismo utilizando el fragmento de modelo que ha recibido de las bibliotecas subyacentes.
+Cada elemento presente en el modelo contiene un campo `:type` que expone un tipo de recurso de AEM. Cuando se monta, el componente front-end puede representarse a sí mismo utilizando el fragmento de modelo que ha recibido de las bibliotecas subyacentes.
 
 #### Asignación de modelos dinámicos a componentes {#dynamic-model-to-component-mapping}
 
-Para obtener más información sobre cómo se produce la asignación de modelos dinámicos a componentes en JavaScript SPA SDK AEM SPA para su uso, consulte el artículo [Asignación de modelos dinámicos a componentes para la aplicación de modelos de](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Para obtener más información sobre cómo se produce la asignación de modelos dinámicos a componentes en JavaScript SPA SDK para AEM, consulte el artículo [Asignación de modelos dinámicos a componentes para SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Capa específica del marco de trabajo {#framework-specific-layer}
 
@@ -71,15 +72,15 @@ El resto de este documento describe los requisitos de esta capa específica del 
 
 ### Modelo de página {#page-model}
 
-AEM La estructura de contenido de la página se almacena en el archivo de datos de. SPA El modelo de la página se utiliza para asignar e instanciar componentes de la. SPA SPA AEM Los desarrolladores de la crean componentes de la a los que asignan componentes de la aplicación. AEM Para ello, utilizan el tipo de recurso (o la ruta al componente de) como clave única.
+La estructura de contenido de la página se almacena en AEM. El modelo de la página se utiliza para asignar y crear instancias de componentes de SPA. Los desarrolladores de SPA crean componentes de SPA que asignan a componentes de AEM. Para ello, utilizan el tipo de recurso (o la ruta al componente de AEM) como clave única.
 
-SPA Los componentes de la página deben estar sincronizados con el modelo de página y se deben actualizar con cualquier cambio en su contenido en consecuencia. Se debe utilizar un patrón que utilice componentes dinámicos para crear instancias de los componentes sobre la marcha siguiendo la estructura del modelo de página proporcionada.
+Los componentes de la SPA deben estar sincronizados con el modelo de página y actualizarse con cualquier cambio en su contenido en consecuencia. Se debe utilizar un patrón que utilice componentes dinámicos para crear instancias de los componentes sobre la marcha siguiendo la estructura del modelo de página proporcionada.
 
 ### Metadatos de campos {#meta-fields}
 
 El modelo de página utiliza el Exportador de modelos JSON, que a su vez se basa en la API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). Los modelos de sling exportables exponen la siguiente lista de campos para permitir que las bibliotecas subyacentes interpreten el modelo de datos:
 
-* AEM `:type`: tipo de recurso de la (predeterminado = tipo de recurso)
+* `:type`: tipo de recurso de AEM (predeterminado = tipo de recurso)
 * `:children`: elementos secundarios jerárquicos del recurso actual. Los elementos secundarios no forman parte del contenido interno del recurso actual (se pueden encontrar en elementos que representan una página)
 * `:hierarchyType`: tipo jerárquico de un recurso. `PageModelManager` admite actualmente el tipo de página
 
@@ -87,20 +88,20 @@ El modelo de página utiliza el Exportador de modelos JSON, que a su vez se basa
 * `:itemsOrder`: lista ordenada de los elementos secundarios. El objeto de asignación JSON no garantiza el orden de sus campos. Al tener el mapa y la matriz actual, el consumidor de la API tiene las ventajas de ambas estructuras
 * `:path`: ruta de contenido de un elemento (presente en elementos que representan una página)
 
-AEM Consulte también [Introducción a los servicios de contenido de la.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
+Consulte también [Introducción a AEM Content Services.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
 
 ### Módulo específico del marco de trabajo {#framework-specific-module}
 
 La separación de las preocupaciones ayuda a facilitar la ejecución del proyecto. Por lo tanto, debe proporcionarse un paquete específico de npm. Este paquete es responsable de agregar y exponer los módulos, servicios y componentes base. Estos componentes deben encapsular la lógica de administración del modelo de datos y proporcionar acceso a los datos que espera el componente del proyecto. El módulo también es responsable de exponer transitivamente puntos de entrada útiles de las bibliotecas subyacentes.
 
-Para facilitar la interoperabilidad de las bibliotecas, los Adobes recomiendan al módulo específico del marco que agrupe las siguientes bibliotecas. Si es necesario, la capa puede encapsular y adaptar las API subyacentes antes de exponerlas al proyecto.
+Para facilitar la interoperabilidad de las bibliotecas, Adobe recomienda que el módulo específico del marco agrupe las siguientes bibliotecas. Si es necesario, la capa puede encapsular y adaptar las API subyacentes antes de exponerlas al proyecto.
 
 * [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### Implementaciones {#implementations}
 
-#### Reaccionar {#react}
+#### React {#react}
 
 módulo npm: [@adobe/aem-react-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
@@ -118,9 +119,9 @@ Los componentes de proyecto deben delegar el acceso a los fragmentos de un model
 
 Para ello, el proveedor de modelos debe registrarse en ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`. A continuación, cuando se produce un cambio, recibe y pasa los datos actualizados al componente que delega. De forma predeterminada, la propiedad disponible para el componente de delegación que llevará el fragmento del modelo se denomina `cqModel`. La implementación es libre de proporcionar esta propiedad al componente, pero debe tener en cuenta aspectos como la integración con la arquitectura del marco de trabajo, la capacidad de detección y la facilidad de uso.
 
-### El decorador del HTML de componentes {#the-component-html-decorator}
+### El componente HTML Decorator {#the-component-html-decorator}
 
-El decorador de componentes es responsable de decorar el HTML externo del elemento de cada instancia de componente con una serie de atributos de datos y nombres de clase esperados por el editor de páginas.
+El decorador de componentes es responsable de decorar la HTML externa del elemento de cada instancia de componente con una serie de atributos de datos y nombres de clase esperados por el editor de páginas.
 
 #### Declaración de componente {#component-declaration}
 
@@ -156,9 +157,9 @@ El componente `Page` amplía el componente `Container`. Un contenedor es un comp
 
 ### Cuadrícula adaptable {#responsive-grid}
 
-El componente Cuadrícula interactiva es un contenedor. Contiene una variante específica del proveedor de modelos que representa sus columnas. La cuadrícula adaptable y sus columnas son responsables de decorar el elemento HTML externo del componente del proyecto con los nombres de clase específicos contenidos en el modelo.
+El componente Cuadrícula interactiva es un contenedor. Contiene una variante específica del proveedor de modelos que representa sus columnas. La cuadrícula adaptable y sus columnas son responsables de decorar el elemento HTML exterior del componente del proyecto con los nombres de clase específicos contenidos en el modelo.
 
-AEM El componente Cuadrícula interactiva debe estar preasignado a su homólogo de la, ya que este componente es complejo y rara vez se personaliza.
+El componente Cuadrícula interactiva debe estar preasignado a su homólogo de AEM, ya que este componente es complejo y rara vez se personaliza.
 
 #### Campos de modelo específicos {#specific-model-fields}
 
@@ -167,7 +168,7 @@ AEM El componente Cuadrícula interactiva debe estar preasignado a su homólogo 
 
 #### Marcador de posición de la cuadrícula adaptable {#placeholder-of-the-reponsive-grid}
 
-SPA El componente se asigna a un contenedor gráfico como Cuadrícula interactiva y debe agregar un marcador de posición secundario virtual cuando se crea el contenido. SPA Cuando el editor de páginas crea el contenido de la, ese contenido se incrusta en el editor mediante un iframe y el atributo `data-cq-editor` se agrega al nodo del documento de ese contenido. Cuando el atributo `data-cq-editor` está presente, el contenedor debe incluir un elemento HTML para representar el área con la que el autor interactúa al insertar un nuevo componente en la página.
+El componente SPA está asignado a un contenedor gráfico como la cuadrícula interactiva y debe agregar un marcador de posición secundario virtual cuando se crea el contenido. Cuando el editor de páginas crea el contenido de la SPA, ese contenido se incrusta en el editor mediante un iframe y el atributo `data-cq-editor` se agrega al nodo del documento de ese contenido. Cuando el atributo `data-cq-editor` está presente, el contenedor debe incluir un elemento HTML para representar el área con la que el autor interactúa al insertar un nuevo componente en la página.
 
 Por ejemplo:
 
@@ -238,13 +239,13 @@ Los componentes del proyecto deben generar como mínimo los siguientes atributos
 
 En resumen, para que el editor de páginas lo interprete como editable, un componente de proyecto debe respetar el siguiente contrato:
 
-* AEM Proporcione los atributos esperados para asociar una instancia de componente de front-end a un recurso de.
+* Proporcione los atributos esperados para asociar una instancia de componente front-end a un recurso de AEM.
 * Proporcione la serie esperada de atributos y nombres de clase que permita la creación de marcadores de posición vacíos.
 * Proporcione los nombres de clase esperados que permitan arrastrar y soltar recursos.
 
-### Estructura típica del elemento HTML {#typical-html-element-structure}
+### Estructura típica de los elementos HTML {#typical-html-element-structure}
 
-El siguiente fragmento ilustra la representación típica del HTML de una estructura de contenido de página. Estos son algunos puntos importantes:
+El siguiente fragmento ilustra la representación típica de HTML de la estructura de contenido de una página. Estos son algunos puntos importantes:
 
 * El elemento de cuadrícula adaptable lleva nombres de clase con el prefijo `aem-Grid--`
 * El elemento de columna adaptable lleva nombres de clase con el prefijo `aem-GridColumn--`
@@ -267,21 +268,21 @@ El siguiente fragmento ilustra la representación típica del HTML de una estruc
 
 ## Navegación y enrutamiento {#navigation-and-routing}
 
-La aplicación es propietaria del enrutamiento. AEM El desarrollador front-end debe implementar primero un componente de navegación (asignado a un componente de navegación de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de). Este componente procesaría vínculos de URL para usarlos junto con una serie de rutas que mostrarán u ocultarán fragmentos de contenido.
+La aplicación es propietaria del enrutamiento. El desarrollador front-end primero debe implementar un componente de navegación (asignado a un componente de navegación de AEM). Este componente procesaría vínculos de URL para usarlos junto con una serie de rutas que mostrarán u ocultarán fragmentos de contenido.
 
 La biblioteca [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) subyacente y su módulo ` [ModelRouter](/help/sites-developing/spa-routing.md)` (habilitado de forma predeterminada) son responsables de la recuperación previa y de proporcionar acceso al modelo asociado con una ruta de recurso determinada.
 
 Las dos entidades están relacionadas con la noción de enrutamiento, pero ` [ModelRouter](/help/sites-developing/spa-routing.md)` solo es responsable de que ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` se cargue con un modelo de datos estructurado en sincronización con el estado de la aplicación actual.
 
-SPA Consulte el artículo [Enrutamiento de modelo de](/help/sites-developing/spa-routing.md) para obtener más información.
+Consulte el artículo [Enrutamiento de modelo SPA](/help/sites-developing/spa-routing.md) para obtener más información.
 
-## SPA En acción {#spa-in-action}
+## SPA en acción {#spa-in-action}
 
-SPA SPA SPA AEM Vea cómo funciona un simple y experimente con un usuario de la misma manera continuando con el documento [Introducción a la en el](/help/sites-developing/spa-getting-started-react.md).
+Vea cómo funciona un SPA simple y experimente con un SPA usted mismo continuando con el documento [Introducción a SPA en AEM](/help/sites-developing/spa-getting-started-react.md).
 
 ## Lectura adicional {#further-reading}
 
-SPA AEM Para obtener más información acerca de la de en la documentación de, consulte los siguientes documentos:
+Para obtener más información sobre las SPA en AEM, consulte los siguientes documentos:
 
-* SPA SPA AEM [Información general sobre creación de](/help/sites-developing/spa-overview.md) para obtener una descripción general de la creación de informes en el modelo de comunicación y la creación de la en el modelo de comunicación
-* SPA AEM SPA [Introducción a la en el](/help/sites-developing/spa-getting-started-react.md) para obtener una guía de un sencillo y cómo funciona
+* [Información general sobre la creación de SPA](/help/sites-developing/spa-overview.md) para obtener una descripción general de las SPA en AEM y el modelo de comunicación
+* [Introducción a las SPA en AEM](/help/sites-developing/spa-getting-started-react.md) para obtener una guía sobre una SPA sencilla y su funcionamiento

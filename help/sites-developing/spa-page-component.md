@@ -1,6 +1,6 @@
 ---
 title: Componente de página SPA
-description: En un recurso, el componente de página no proporciona los elementos HTML SPA de sus componentes secundarios, sino que los delega en el SPA de trabajo de la página de trabajo. SPA En este documento se explica cómo hace que el componente de página de una página sea único en un sitio de trabajo de la.
+description: En una SPA, el componente de página no proporciona los elementos de HTML de sus componentes secundarios, sino que lo delega en el marco de la SPA. Este documento explica cómo esto hace que el componente de página de una SPA sea único.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,7 +10,8 @@ exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 6%
@@ -20,19 +21,19 @@ ht-degree: 6%
 
 # Componente de página SPA{#spa-page-component}
 
-En un recurso, el componente de página no proporciona los elementos HTML SPA de sus componentes secundarios, sino que los delega en el SPA de trabajo de la página de trabajo. SPA En este documento se explica cómo hace que el componente de página de una página sea único en un sitio de trabajo de la.
+En una SPA, el componente de página no proporciona los elementos de HTML de sus componentes secundarios, sino que lo delega en el marco de la SPA. Este documento explica cómo esto hace que el componente de página de una SPA sea único.
 
 {{ue-over-spa}}
 
 ## Introducción {#introduction}
 
-SPA El componente de página para una no proporciona los elementos HTML de sus componentes secundarios a través de un archivo JSP o HTL y objetos de recurso. Esta operación se delega al marco de trabajo de las SPA. La representación de los componentes secundarios se obtiene como una estructura de datos JSON (es decir, el modelo ). SPA A continuación, se añaden los componentes de la a la página según el modelo JSON proporcionado. Como tal, la composición inicial del cuerpo del componente de página difiere de sus homólogos HTML procesados previamente.
+El componente de página de una SPA no proporciona los elementos HTML de sus componentes secundarios a través de un archivo JSP o HTL y objetos de recurso. Esta operación se delega al marco de trabajo de las SPA. La representación de los componentes secundarios se obtiene como una estructura de datos JSON (es decir, el modelo ). A continuación, los componentes de SPA se añaden a la página según el modelo JSON proporcionado. Como tal, la composición inicial del cuerpo del componente de página difiere de sus homólogos de HTML procesados previamente.
 
 ## Administración de modelos de página {#page-model-management}
 
-La resolución y la administración del modelo de página se delegan a un módulo [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) proporcionado. SPA El módulo debe interactuar con el módulo `PageModelManager` cuando se inicialice para recuperar el modelo de página inicial y registrarse para obtener actualizaciones de modelo, que se producen principalmente cuando el autor está editando la página a través del Editor de páginas. SPA El proyecto `PageModelManager` es accesible para el usuario como paquete npm de la aplicación de seguridad de datos (npm). AEM SPA SPA Al ser un intérprete entre la y la de los usuarios, el `PageModelManager` debe acompañar a los usuarios de la red de servicios de traducción de la zona de trabajo de la.
+La resolución y la administración del modelo de página se delegan a un módulo [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) proporcionado. El SPA debe interactuar con el módulo `PageModelManager` cuando se inicialice para recuperar el modelo de página inicial y registrarse para obtener actualizaciones de modelo, que se producen principalmente cuando el autor está editando la página a través del Editor de páginas. El proyecto SPA puede obtener acceso al `PageModelManager` como paquete npm. Como intérprete entre AEM y la SPA, `PageModelManager` debe acompañar a la SPA.
 
-SPA Para permitir la creación de la página, se debe agregar una biblioteca de cliente llamada `cq.authoring.pagemodel.messaging` para proporcionar un canal de comunicación entre el editor de páginas y el editor de páginas. SPA Si el componente de página de la página de la hereda del componente wcm/core de la página, existen las siguientes opciones para que la categoría de biblioteca de cliente `cq.authoring.pagemodel.messaging` esté disponible:
+Para permitir la creación de la página, se debe agregar una biblioteca de cliente llamada `cq.authoring.pagemodel.messaging` para proporcionar un canal de comunicación entre la SPA y el editor de páginas. Si el componente de página SPA hereda del componente wcm/core de página, existen las siguientes opciones para que la categoría de biblioteca de cliente `cq.authoring.pagemodel.messaging` esté disponible:
 
 * Si la plantilla es editable, agregue la categoría de biblioteca de cliente a la directiva de página.
 * Agregue la categoría de biblioteca de cliente mediante el `customfooterlibs.html` del componente de página.
@@ -41,17 +42,17 @@ No olvide limitar la inclusión de la categoría `cq.authoring.pagemodel.messagi
 
 ## Tipo de datos de comunicación {#communication-data-type}
 
-El tipo de datos de comunicación se establece como un elemento de HTML AEM dentro del componente Página de la con el atributo `data-cq-datatype`. Cuando el tipo de datos de comunicación está establecido en JSON, las solicitudes de GET llegan a los extremos del modelo Sling de un componente. Una vez que se produce una actualización de estado en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del Modelo de página. SPA A continuación, la biblioteca de modelo de página advierte a los usuarios de las actualizaciones que se han realizado en su.
+El tipo de datos de comunicación se establece en un elemento de HTML dentro del componente Página de AEM mediante el atributo `data-cq-datatype`. Cuando el tipo de datos de comunicación está establecido en JSON, las solicitudes de GET llegan a los extremos del modelo Sling de un componente. Una vez que se produce una actualización de estado en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del Modelo de página. A continuación, la biblioteca de modelo de página advierte al SPA de las actualizaciones.
 
-SPA **Componente de página de -`body.html`**
+**Componente de página SPA -`body.html`**
 
 ```
 <div id="page"></div>
 ```
 
-SPA Además de ser una buena práctica para no retrasar la generación de DOM, el marco de trabajo de la requiere que se añadan los scripts al final del cuerpo.
+Además de ser una buena práctica para no retrasar la generación de DOM, el marco de SPA requiere que los scripts se añadan al final del cuerpo.
 
-SPA **Componente de página de -`customfooterlibs.html`**
+**Componente de página SPA -`customfooterlibs.html`**
 
 ```
 <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"></sly>
@@ -60,9 +61,9 @@ SPA **Componente de página de -`customfooterlibs.html`**
 <sly data-sly-call="${clientLib.js @ categories='we-retail-journal-react'}"></sly>
 ```
 
-SPA Las propiedades del recurso meta que describen el contenido de la:
+Las propiedades del recurso meta que describen el contenido de la SPA:
 
-SPA **Componente de página de -`customheaderlibs.html`**
+**Componente de página SPA -`customheaderlibs.html`**
 
 ```
 <meta property="cq:datatype" data-sly-test="${wcmmode.edit || wcmmode.preview}" content="JSON"/>
@@ -91,7 +92,7 @@ SPA **Componente de página de -`customheaderlibs.html`**
 >
 >Este documento utiliza la aplicación We.Retail Journal solo para fines de demostración. No utilice para ningún trabajo de proyecto.
 >
->AEM AEM SPA Cualquier proyecto debe usar el [Arquetipo de proyecto de Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de que usan React o Angular SPA y que usa el tipo de archivo de SDK SPA AEM SPA de la. Todos los proyectos de la en el proyecto deben basarse en el Arquetipo de Maven para el Starter Kit.
+>Cualquier proyecto de AEM debe utilizar el [Arquetipo de proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite proyectos de SPA mediante React o Angular y utiliza SPA SDK. Todos los proyectos de SPA en AEM deben basarse en el Arquetipo de Maven para el Starter Kit de SPA.
 
 ## Sincronización de superposición del editor de páginas {#page-editor-overlay-synchronization}
 
@@ -99,9 +100,9 @@ La sincronización de las superposiciones está garantizada por el mismo Observa
 
 ## Configuración de la estructura exportada de JSON del modelo Sling {#sling-model-json-exported-structure-configuration}
 
-SPA AEM Cuando las capacidades de enrutamiento están habilitadas, se supone que la exportación JSON de la aplicación contiene las diferentes rutas de la aplicación gracias a la exportación JSON del componente de navegación de la. AEM SPA La salida JSON del componente de navegación de la se puede configurar en la directiva de contenido de la página raíz de la página a través de las dos propiedades siguientes:
+Cuando las capacidades de enrutamiento están habilitadas, se supone que la exportación JSON de la SPA contiene las diferentes rutas de la aplicación gracias a la exportación JSON del componente de navegación de AEM. La salida JSON del componente de navegación de AEM se puede configurar en la política de contenido de página raíz de la SPA a través de las dos propiedades siguientes:
 
 * `structureDepth`: número correspondiente a la profundidad del árbol exportado
 * `structurePatterns`: regex de una matriz de expresiones regulares correspondientes a la página que se va a exportar
 
-SPA Esto se puede mostrar en el contenido de muestra de la en `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.
+Esto se puede mostrar en el contenido de muestra de SPA de `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.

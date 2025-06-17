@@ -10,7 +10,8 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 85%
@@ -37,7 +38,7 @@ El soporte de las SPA en AEM introduce una capa delgada de JS que interactúa co
 Para obtener más información sobre las SPA en AEM, consulte los siguientes documentos:
 
 * [Modelo de SPA](/help/sites-developing/spa-blueprint.md) para los requisitos técnicos de una SPA
-* SPA AEM SPA [Introducción a la en el ](/help/sites-developing/spa-getting-started-react.md) para ver un recorrido rápido por un sencillo espacio de trabajo de la.
+* [Introducción a las SPA en AEM](/help/sites-developing/spa-getting-started-react.md) para ver un recorrido rápido por una SPA sencilla
 
 ## Diseño {#design}
 
@@ -45,7 +46,7 @@ El componente de página de una SPA no proporciona los elementos HTML de sus com
 
 ### Administración de modelos de página {#page-model-management}
 
-La resolución y la gestión del modelo de página se delegan a la biblioteca `PageModel`. SPA SPA La biblioteca debe utilizar la biblioteca de modelo de página para inicializarse y ser creada por el Editor de modelos de página (). La biblioteca Modelo de página se proporciona indirectamente al componente de Página de AEM a través del npm `aem-react-editable-components`. El Modelo de página es un intérprete entre el AEM y las SPA y, por lo tanto, siempre debe estar presente. Cuando se crea la página, se debe agregar una biblioteca adicional `cq.authoring.pagemodel.messaging` para habilitar la comunicación con el editor de páginas.
+La resolución y la gestión del modelo de página se delegan a la biblioteca `PageModel`. La SPA debe utilizar la biblioteca de modelo de página para que se inicialice y sea creada por el Editor de SPA. La biblioteca Modelo de página se proporciona indirectamente al componente de Página de AEM a través del npm `aem-react-editable-components`. El Modelo de página es un intérprete entre el AEM y las SPA y, por lo tanto, siempre debe estar presente. Cuando se crea la página, se debe agregar una biblioteca adicional `cq.authoring.pagemodel.messaging` para habilitar la comunicación con el editor de páginas.
 
 Si el componente de página de las SPA hereda del componente principal de página, hay dos opciones para hacer que la categoría de la biblioteca de cliente `cq.authoring.pagemodel.messaging` esté disponible:
 
@@ -157,7 +158,7 @@ Esta es una descripción más detallada que se centra en la experiencia de creac
 
 ## Requisitos y limitaciones {#requirements-limitations}
 
-Para permitir que el autor utilice el editor de páginas para editar el contenido de una SPA, la aplicación de SPA debe implementarse para interactuar con el SDK del editor de SPA de AEM. SPA AEM Consulte [Introducción a la en el ](/help/sites-developing/spa-getting-started-react.md) para obtener información sobre lo mínimo que necesita saber para poner en marcha la suya.
+Para permitir que el autor utilice el editor de páginas para editar el contenido de una SPA, la aplicación de SPA debe implementarse para interactuar con el SDK del editor de SPA de AEM. Consulte [Introducción a las SPA en AEM](/help/sites-developing/spa-getting-started-react.md) para saber lo mínimo que necesita saber para poner en marcha el suyo.
 
 ### Marcos de trabajo compatibles {#supported-frameworks}
 
@@ -170,7 +171,7 @@ Las versiones anteriores de estos marcos de trabajo pueden funcionar con el Edit
 
 ### Marcos de trabajo adicionales {#additional-frameworks}
 
-Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de SDK de SPA de AEM. SPA AEM SPA Consulte el [Modelo de trabajo](/help/sites-developing/spa-blueprint.md) para conocer los requisitos que debe cumplir un marco de trabajo para crear una capa específica del marco de trabajo compuesta de módulos, componentes y servicios para trabajar con el Editor de la.
+Se pueden implementar marcos de SPA adicionales para trabajar con el Editor de SDK de SPA de AEM. Consulte el [modelo de SPA](/help/sites-developing/spa-blueprint.md) para conocer los requisitos que debe cumplir un marco de trabajo para crear una capa específica de marco de trabajo compuesta de módulos, componentes y servicios para trabajar con el Editor de SPA de AEM.
 
 ### Uso de varios selectores {#multiple-selectors}
 
@@ -189,7 +190,7 @@ Para obtener información adicional acerca de la propiedad `editElementQuery` y 
 
 ### Restricciones {#limitations}
 
-AEM SPA SDK AEM de Editor de se introdujo con el paquete de servicio 2 de 6.4. Cuenta con el pleno apoyo del Adobe y se sigue mejorando y ampliando. El Editor de SPA aún no admite las siguientes funciones de AEM:
+AEM SPA Editor SDK se introdujo con AEM 6.4 Service Pack 2. Es totalmente compatible con Adobe y se sigue mejorando y ampliando. El Editor de SPA aún no admite las siguientes funciones de AEM:
 
 * Modo de destinatario
 * ContextHub
@@ -197,6 +198,6 @@ AEM SPA SDK AEM de Editor de se introdujo con el paquete de servicio 2 de 6.4. C
 * Editar configuraciones (p. ej., oyentes)
 * Deshacer, Rehacer
 * Diferencias de página y Deformación de tiempo
-* Funciones que realizan la reescritura del HTML en el lado del servidor, como Verificador de vínculos, servicio de reescritura de CDN, acortamiento de URL, etc.
+* Funciones que realizan la reescritura de HTML en el lado del servidor, como Verificador de vínculos, Servicio de reescritura de CDN, Acortamiento de URL, etc.
 * Modo de desarrollador
 * Lanzamientos de AEM
