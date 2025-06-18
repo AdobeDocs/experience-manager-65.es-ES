@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: b5ee4815f981aa32faab24ff5e80a7ad9541e45e
 workflow-type: tm+mt
-source-wordcount: '3630'
+source-wordcount: '3688'
 ht-degree: 14%
 
 ---
@@ -129,19 +129,21 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | MongoDB Enterprise 3.4 | Repositorio | Z: No compatible |
 | IBM® DB2® 10.5 | Repositorio y base de datos de Forms | R: Compatibilidad restringida `[5]` |
 | Base de datos Oracle 12c (12.1.x) | Repositorio y base de datos de Forms | R: Compatibilidad restringida |
+| Base de datos Oracle 19c | Repositorio y base de datos de Forms | R: Compatibilidad restringida |
 | Microsoft® SQL Server 2016 | Base de datos Forms | A: Compatible |
+| Microsoft® SQL Server 2019 (Obsoleto) | Base de datos Forms | A: Compatible |
+| Microsoft® SQL Server 2022 | Base de datos Forms | A: Compatible |
 | **Apache Lucene (integrado en Quickstart)** | Servicio de búsqueda | A: Compatible |
 | Apache Solr | Servicio de búsqueda | A: Compatible |
 
 1. &quot;File System&quot; incluye almacenamiento en bloque compatible con POSIX. Incluye tecnología de almacenamiento en red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Cargar AEM de prueba con el sistema de archivos de red/remoto.
-1. Las versiones 4.2 y 4.4 de MongoDB Enterprise requieren AEM 6.5 SP9 como mínimo.
-1. El uso compartido de MongoDB no es compatible con AEM.
-1. El motor de almacenamiento MongoDB WiredTiger solo es compatible.
-1. Compatible con los clientes de actualización de AEM Forms. No compatible con nuevas instalaciones.
-1. Aplicable solo a AEM Forms:
+2. Las versiones 4.2 y 4.4 de MongoDB Enterprise requieren AEM 6.5 SP9 como mínimo.
+3. El uso compartido de MongoDB no es compatible con AEM.
+4. El motor de almacenamiento MongoDB WiredTiger solo es compatible.
+5. Compatible con los clientes de actualización de AEM Forms. No compatible con nuevas instalaciones.
+6. Aplicable solo a AEM Forms:
    * Se ha eliminado la compatibilidad con la base de datos Oracle 12c y se ha agregado compatibilidad con la base de datos Oracle 19c.
-   * Se ha eliminado la compatibilidad con Microsoft® SQL Server 2016 y se ha agregado compatibilidad con Microsoft® SQL Server 2019.
-1. No compatible con AEM Forms.
+   * Se ha eliminado la compatibilidad con Microsoft® SQL Server 2016 y se ha agregado compatibilidad con Microsoft® SQL Server 2019 y Microsoft® SQL Server 2022.
 
 >[!NOTE]
 >
@@ -182,14 +184,16 @@ La versión mínima de la API de servlet requerida es Servlet 3.1
 | Servidor Oracle WebLogic 12.2 (12cR2) | Z: No compatible |
 | IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) con Web Profile 7.0 y IBM® JRE 1.8 | R: Compatibilidad restringida para nuevos contratos `[2]` |
 | IBM® WebSphere® Application Server 9.0 y IBM® JRE 1.8 | R: Compatibilidad restringida para nuevos contratos `[1]` `[2]` |
+| Servidor de aplicaciones IBM® WebSphere® 9.0.0.10 | R: Compatibilidad restringida para nuevos contratos `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R: Compatibilidad restringida para nuevos contratos `[2]` |
 | JBoss® EAP 7.2.x con el servidor de aplicaciones JBoss® | Z: No compatible |
 | JBoss® EAP 7.1.4 con el servidor de aplicaciones JBoss® | R: Compatibilidad restringida para nuevos contratos `[1]` `[2]` |
 | JBoss® EAP 7.0.x con el servidor de aplicaciones JBoss® | Z: No compatible |
+| JBoss® EAP 7.4 con el servidor de aplicaciones JBoss® <sup>[2] [3] [7] | A: Compatible |
 
 1. Recomendado para implementaciones con AEM Forms.
-1. Al iniciar implementaciones de AEM 6.5 en servidores de aplicaciones, se pasa a Compatibilidad restringida. Los clientes existentes pueden actualizar a AEM 6.5 y seguir utilizando servidores de aplicaciones. Para nuevos clientes, incluye criterios de asistencia y un programa de asistencia, tal como se indica en la descripción del nivel R anterior.
-1. Solo AEM Forms aplicable:
+2. Al iniciar implementaciones de AEM 6.5 en servidores de aplicaciones, se pasa a Compatibilidad restringida. Los clientes existentes pueden actualizar a AEM 6.5 y seguir utilizando servidores de aplicaciones. Para nuevos clientes, incluye criterios de asistencia y un programa de asistencia, tal como se indica en la descripción del nivel R anterior.
+3. Solo AEM Forms aplicable:
    * Se ha eliminado la compatibilidad con JBoss® EAP 7.1.4 y se ha agregado compatibilidad con JBoss® EAP 7.4.10.
 
 ### Sistemas operativos del servidor {#server-operating-systems}
@@ -202,15 +206,15 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 | Linux®, basado en la distribución Debian incl. Ubuntu | A: Compatible `[1]` `[2]` |
 | Linux®, basado en la distribución SUSE® | A: Compatible `[1]` |
 | Microsoft® Windows Server 2022 | R: Compatibilidad restringida |
-| Microsoft® Windows Server 2019 `[4]` | R: Compatibilidad restringida para nuevos contratos `[5]` |
+| Microsoft® Windows Server 2019 `[4]` (Obsoleto) | R: Compatibilidad restringida para nuevos contratos `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Compatibilidad restringida para nuevos contratos `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: No compatible |
 | Oracle Solaris™ 11 | Z: No compatible |
 | IBM® AIX® 7.2 | Z: No compatible |
 
-1. Linux® Kernel 2.6, 3. x, 4. x, 5. x y 6. x incluye derivados de la distribución Red Hat®, incluidos Red Hat® Enterprise Linux®, Oracle Linux® y Amazon Linux®. Las funciones de complemento de AEM Forms solo son compatibles con Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 y Red Hat® Enterprise Linux® 9.
-1. AEM Forms es compatible con Ubuntu 20.04 LTS.
-1. Distribución Linux® compatible con Adobe Managed Services.
+1. Linux® Kernel 2.6, 3. x, 4. x, 5. x, 6. x y 9. x incluye derivados de la distribución Red Hat®, incluidos Red Hat® Enterprise Linux®, Oracle Linux® y Amazon Linux®. Las funciones de complemento de AEM Forms solo son compatibles con Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 y Red Hat® Enterprise Linux® 9.
+2. AEM Forms es compatible con Ubuntu 20.04 y SUSE® Linux® Enterprise Server 15 SP6 (64 bits).
+3. Distribución Linux® compatible con Adobe Managed Services.
 
    >[!NOTE]
    >
@@ -225,9 +229,9 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 
    *Para la instalación de OpenSSL 3: las bibliotecas libcrypto.so.3 y libssl.so.3 deben estar disponibles en la ruta de biblioteca predeterminada representada por la variable de entorno LD_LIBRARY_PATH. Si se instalan en una ubicación no estándar, asegúrese de agregar esta ruta de acceso a LD_LIBRARY_PATH antes de iniciar el servidor.*
 
-1. Las implementaciones de producción de Microsoft® Windows son compatibles con los clientes que actualizan a la versión 6.5 y con el uso que no sea de producción. Las nuevas implementaciones se realizan bajo petición para AEM Sites y Assets.
-1. AEM Forms es compatible con Microsoft® Window Server sin las restricciones R de nivel de soporte.
-1. AEM Forms ha eliminado la compatibilidad con Microsoft® Windows Server 2016.
+4. Las implementaciones de producción de Microsoft® Windows son compatibles con los clientes que actualizan a la versión 6.5 y con el uso que no sea de producción. Las nuevas implementaciones se realizan bajo petición para AEM Sites y Assets.
+5. AEM Forms es compatible con Microsoft® Window Server sin las restricciones R de nivel de soporte.
+6. AEM Forms ha eliminado la compatibilidad con Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >
@@ -254,7 +258,7 @@ Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera d
 
 ### Plataformas Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
-Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
+Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
 
 Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatcher:
 

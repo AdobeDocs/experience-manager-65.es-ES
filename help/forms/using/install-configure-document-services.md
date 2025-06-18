@@ -6,10 +6,10 @@ role: Admin, User, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
+source-git-commit: f1fc8554b35d7d9c152023a6b9094e31c1b49807
 workflow-type: tm+mt
-source-wordcount: '5724'
-ht-degree: 83%
+source-wordcount: '5806'
+ht-degree: 82%
 
 ---
 
@@ -23,9 +23,9 @@ AEM Forms proporciona un conjunto de servicios OSGi para realizar distintas oper
 
 * **Servicio de formularios con códigos de barras:** permite extraer datos de imágenes electrónicas de códigos de barras. El servicio acepta archivos TIFF y PDF que incluyen uno o más códigos de barras como entrada y extrae los datos del código de barras. Para obtener más información, consulte [Servicio de formularios con códigos de barras](/help/forms/using/using-barcoded-forms-service.md).
 
-* **Servicio DocAssurance:** permite cifrar y descifrar documentos, ampliar la funcionalidad de Adobe Reader con derechos de uso adicionales y agregar firmas digitales a los documentos. El servicio Doc Assurance contiene tres servicios: Signature, Encryption y Extensiones de Reader. Para obtener más información, consulte [Servicio DocAssurance](/help/forms/using/overview-aem-document-services.md).
+* **Servicio DocAssurance:** permite cifrar y descifrar documentos, ampliar la funcionalidad de Adobe Reader con derechos de uso adicionales y agregar firmas digitales a los documentos. El servicio Doc Assurance contiene tres servicios: Firma, Cifrado y Extensiones de Reader. Para obtener más información, consulte [Servicio DocAssurance](/help/forms/using/overview-aem-document-services.md).
 
-* **Servicio Encryption:** permite cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso a su contenido. Para obtener más información, consulte [Servicio Encryption](/help/forms/using/overview-aem-document-services.md#encryption-service).
+* **Servicio Encryption:** permite cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso a su contenido. Para obtener más información, consulte [Servicio Cifrado](/help/forms/using/overview-aem-document-services.md#encryption-service).
 
 * **Servicio Forms:** permite crear aplicaciones cliente de captura de datos interactivas que validen, procesan, transforman y entregan formularios que normalmente se crean en Forms Designer. El servicio Forms procesa cualquier diseño de formulario que hay desarrollado en documentos PDF. Para obtener más información, consulte [Servicio de Forms](/help/forms/using/forms-service.md).
 
@@ -79,8 +79,8 @@ Antes de empezar a instalar y configurar AEM Forms Document Services, asegúr
 
 >[!NOTE]
 >
->* En Microsoft® Windows, PDF Generator admite WebKit, Acrobat WebCapture y WebToPDF Conversión rutas para convertir archivos HTML a PDF documentos.
->* En sistemas operativos basados en UNIX, PDF Generator admite WebKit y WebToPDF Conversión rutas para convertir archivos HTML a PDF documentos.
+>* En Microsoft® Windows, PDF Generator admite las rutas de conversión WebKit, Acrobat WebCapture y WebToPDF para convertir archivos de HTML en documentos de PDF.
+>* En sistemas operativos basados en UNIX, PDF Generator admite las rutas de conversión WebKit y WebToPDF para convertir archivos HTML en documentos PDF.
 >
 
 ### Requisitos adicionales para sistemas operativos basados en UNIX {#extrarequirements}
@@ -169,7 +169,7 @@ Si utiliza un sistema operativo basado en UNIX, instale los siguientes paquetes 
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(Solo generador de PDF)** El servicio PDF Generator admite rutas WebKit y WebToPDF para convertir archivos HTML a documentos PDF. Para habilitar la conversión para la ruta WebToPDF, instale las bibliotecas de 64 bits que se enumeran a continuación. Por lo general, estas bibliotecas ya están instaladas. Si falta alguna biblioteca, instálela manualmente:
+* **(solo PDF Generator)** El servicio PDF Generator admite las rutas WebKit y WebToPDF para convertir archivos HTML en documentos PDF. Para habilitar la conversión para la ruta WebToPDF, instale las bibliotecas de 64 bits que se enumeran a continuación. Por lo general, estas bibliotecas ya están instaladas. Si falta alguna biblioteca, instálela manualmente:
 
    * linux-gate.so.1
    * libz.so.1
@@ -184,6 +184,17 @@ Si utiliza un sistema operativo basado en UNIX, instale los siguientes paquetes 
    * libc.so.6
    * ld-linux.so.2
    * libexpat.so.1
+* (Solo PDF Generator) Para habilitar el enrutamiento WebKit en las configuraciones de RHEL 8 o RHEL 9, es posible que la biblioteca `nspr` de 32 bits no esté disponible de forma predeterminada; instálela si no está presente.
+
+* (Solo PDF Generator) Si la conversión de WebToPDF falla en el servidor Unix® con el siguiente error:
+
+  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
+a continuación, configure la siguiente variable de entorno y reinicie el servidor:
+  `OPENSSL_CONF=/etc/ssl`
+
+>[!NOTE]
+>
+> WebToPDF también se utiliza en la función Gráfico de las comunicaciones interactivas. Por lo tanto, todos los pasos de configuración mencionados para WebToPDF anteriores son aplicables para garantizar que la función de gráfico funcione correctamente.
 
 ## Configuraciones previas a la instalación {#preinstallationconfigurations}
 
@@ -232,7 +243,7 @@ Establezca variables de entorno para el kit de desarrollo de Java de 64 bits, la
   <tr>
    <td><p><strong>OpenOffice</strong></p> </td>
    <td><p>OpenOffice_PATH</p> </td>
-   <td><p>C:\Program Archivos (x86)\OpenOffice 4</p> </td>
+   <td><p>C:\Program Files (x86)\OpenOffice 4</p> </td>
   </tr>
  </tbody>
 </table>
@@ -246,9 +257,9 @@ Establezca variables de entorno para el kit de desarrollo de Java de 64 bits, la
 >* En plataformas basadas en UNIX, instale OpenOffice como /root. Si OpenOffice no está instalado como raíz, el servicio PDF Generator no convierte los documentos de OpenOffice en documentos PDF. Si necesita instalar y ejecutar OpenOffice como un usuario no raíz, proporcione derechos sudo al usuario no raíz.
 >* Si está utilizando OpenOffice en una plataforma basada en UNIX, ejecute el siguiente comando para configurar la variable de ruta:\
 > `export OpenOffice_PATH=/opt/openoffice.org4`
->* En plataformas basadas en SUSE® Linux® (SLES 15 SP6 o posterior), seguir los siguientes pasos para configurar OpenOffice:
+>* En plataformas basadas en SUSE® Linux® (SLES 15 SP6 o posterior), siga los siguientes pasos para configurar OpenOffice:
 >     * Instale la última variante de 32 bits disponible de `OpenOffice 4.1.x` en un directorio como `/opt/openoffice4`.
->     * Configure el `OpenOffice_PATH` variable de entorno para que apunte a esta ubicación. Por ejemplo: `OpenOffice_PATH=/opt/openoffice4`.
+>     * Configure la variable de entorno `OpenOffice_PATH` para que apunte a esta ubicación. Por ejemplo: `OpenOffice_PATH=/opt/openoffice4`.
 >     * Asegúrese de que la variable `OpenOffice_PATH` esté configurada globalmente (por ejemplo, usando `/etc/profile` o el equivalente específico del sistema) de modo que esté disponible para todos los usuarios al iniciar sesión.
 
 ### (Solo para IBM® WebSphere®) Configure el proveedor de sockets SSL de IBM® {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -377,7 +388,7 @@ Copie la fuente Unicode en cualquiera de los siguientes directorios según corre
 El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene AEM Forms Document Services y otras capacidades de AEM Forms. Realice los siguientes pasos para instalar el paquete:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
-1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponibles en el menú de encabezado.
+1. Seleccione **[!UICONTROL Adobe Experience Manager]** disponible en el menú del encabezado.
 1. En la sección **[!UICONTROL Filtros]**:
    1. Seleccione **[!UICONTROL Forms]** en la lista desplegable **[!UICONTROL Solución]**.
    2. Seleccione la versión y el tipo del paquete. También puede usar la opción **[!UICONTROL Buscar descargas]** para filtrar los resultados.
@@ -479,7 +490,7 @@ En Microsoft® Windows, el servicio PDF Generator utiliza Adobe Acrobat para 
    1. Descomprima el archivo .zip descargado. Abra el Símbolo del sistema con privilegios administrativos.
    1. Vaya a `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
    1. Descomprima `adobe-aemfd-pdfg-common-pkg-[version]`.
-   1. Desplácese hasta el `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directorio. Ejecute el siguiente archivo por lotes:
+   1. Vaya al directorio `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Ejecute el siguiente archivo por lotes:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -503,9 +514,9 @@ Con la administración de almacén de confianza, puede importar, editar y elimin
 
 1. Inicie sesión en la instancia de AEM Forms como administrador.
 1. Vaya a **[!UICONTROL Herramientas]** >  **[!UICONTROL Seguridad]** >  **[!UICONTROL Almacén de confianza]**.
-1. Haga clic en **[!UICONTROL Crear almacén de confianza]**. Establezca contraseña y seleccione **[!UICONTROL Guardar]**.
+1. Haga clic en **[!UICONTROL Crear almacén de confianza]**. Establezca la contraseña y seleccione **[!UICONTROL Guardar]**.
 
-### Configuración de certificados para los servicios Encryption y Extensiones de Reader {#set-up-certificates-for-reader-extension-and-encryption-service}
+### Configuración de certificados para los servicios Cifrado y Extensiones de Reader {#set-up-certificates-for-reader-extension-and-encryption-service}
 
 El servicio DocAssurance puede aplicar derechos de uso a los documentos PDF. Para aplicar derechos de uso a documentos PDF, configure los certificados.
 
@@ -571,11 +582,11 @@ El servicio Assembler depende del servicio Extensiones de Reader, del servicio S
 
 ### (Solo Windows) Configure la entrada del Registro para Microsoft® Project {#configure-registry-entry-for-microsoft-project}
 
-Después de instalar AEM Forms complemento y Microsoft® Project en el equipo, registre una entrada para Microsoft® Project en la ubicación de 64 bits. Facilita la ejecución de pruebas de conversión de proyecto a PDFG. Los siguientes son los pasos que describen el proceso para la entrada en el registro:
+Después de instalar el complemento de AEM Forms y el proyecto Microsoft® en el equipo, registre una entrada para Microsoft® Project en la ubicación de 64 bits. Facilita la ejecución de pruebas de conversión de Project a PDFG. A continuación se indican los pasos que describen el proceso de entrada del Registro:
 
-1. Abra Microsoft® Windows Registry editor (regedit), Para abrir el editor del registro, vaya a Inicio > Ejecutar, escriba regedit y haga clic en OK.
-1. Vaya a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, cree un nuevo **binario Valor** Registro y cámbiele el nombre a **Proyecto**.
-1. Modifique el valor de datos del registro de binario creado a 01 y haga clic en OK.
+1. Abra el Editor del Registro de Microsoft® Windows (regedit), Para abrir el Editor del Registro, vaya a Inicio > Ejecutar, escriba regedit y haga clic en Aceptar.
+1. Vaya a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat PDFMaker\<version>\Office\SupportedApp`, cree un nuevo registro de **valor binario** y cambie su nombre a **Proyecto**.
+1. Modifique el valor de datos del Registro binario creado a 01 y haga clic en Aceptar.
 1. Cierre la entrada del Registro.
 
 
@@ -615,7 +626,7 @@ La [Herramienta de preparación del sistema](#srt-configuration) comprueba si el
 
 1. Navegue hasta `[Path_of_reports_folder]`. Abra el archivo SystemReadinessTool.html. Compruebe el informe y corrija los problemas mencionados.
 
-### Configuración de opciones para SRT herramienta {#srt-configuration}
+### Configuración de las opciones de la herramienta SRT {#srt-configuration}
 
 Puede utilizar el archivo srt_config.yaml para configurar varias opciones de la herramienta SRT. El formato del archivo es el siguiente:
 
@@ -686,7 +697,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 * Instale la [versión compatible](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de OpenOffice. AEM Forms admite versiones de 32 y 64 bits. Después de la instalación, abra todas las aplicaciones de OpenOffice, cancele todas las ventanas de diálogo y cierre las aplicaciones. Vuelva a abrir las aplicaciones y asegúrese de que no aparece ningún cuadro de diálogo al abrir una aplicación de OpenOffice.
 
-* Crear un variable de entorno `OpenOffice_PATH` y configúrelo para que apunte a la instalación de OpenOffice se configura en la [consola](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o en el perfil dt (árbol de dispositivos).
+* Cree una variable de entorno `OpenOffice_PATH` y configúrela para que apunte a que la instalación de OpenOffice está establecida en la [consola](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o en el perfil dt (árbol de dispositivos).
 * Si hay problemas al instalar OpenOffice, asegúrese de que las [bibliotecas de 32 bits](#extrarequirements) requeridas para la instalación de OpenOffice están disponibles.
 
 +++
@@ -695,7 +706,7 @@ Problemas de conversión de ++HTML a PDF
 
 * Asegúrese de que los directorios de fuentes se agregan en la interfaz de usuario de la configuración de PDF Generator.
 
-**Linux y Solaris (ruta WebToPDF Conversión)**
+**Linux y Solaris (ruta de conversión WebToPDF)**
 
 * Asegúrese de que la biblioteca de 32 bits esté disponible (libicudata.so.42) para la conversión HTMLoPDF basada en Webkit y que las bibliotecas de 64 bits (libicudata.so.42) estén disponibles para la conversión HTMLoPDF basada en WebToPDF.
 
@@ -785,7 +796,6 @@ Problemas de conversión de ++HTML a PDF
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=lista de configuraciones regionales en formato xx_XX format o ALL>] [--provfile=&lt;Ruta absoluta de prov.xml>]
          
          ```
-
      
    * Serialice el paquete por volumen (vuelva a serializar la instalación existente usando el archivo prov.xml y la nueva serie): ejecute el siguiente comando desde la carpeta de instalación PRTK como administrador para serializar y activar los paquetes implementados en los equipos cliente:
 
@@ -793,8 +803,8 @@ Problemas de conversión de ++HTML a PDF
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
+     
+* Para instalaciones a gran escala, utilice [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el programa de instalación e impleméntelo en todos los equipos de su organización.
 
 +++
 
