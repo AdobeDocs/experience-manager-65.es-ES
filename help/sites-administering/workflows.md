@@ -9,25 +9,25 @@ exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
 
 # Administración de flujos de trabajo{#administering-workflows}
 
-Los flujos de trabajo permiten automatizar las actividades de Adobe Experience Manager AEM (). Flujos de trabajo:
+Los flujos de trabajo permiten automatizar las actividades de Adobe Experience Manager (AEM). Flujos de trabajo:
 
 * Consiste en una serie de pasos que se ejecutan en un orden específico.
 
    * Cada paso realiza una actividad distinta, como esperar los datos introducidos por el usuario, activar una página o enviar un mensaje de correo electrónico.
 
-* AEM Puede interactuar con recursos del repositorio, cuentas de usuario y servicios de.
-* AEM Puede coordinar actividades complicadas que implican cualquier aspecto de la.
+* Puede interactuar con recursos del repositorio, cuentas de usuario y servicios de AEM.
+* Puede coordinar actividades complejas que implican cualquier aspecto de AEM.
 
-Los procesos empresariales que ha establecido su organización se pueden representar como flujos de trabajo. Por ejemplo, el proceso de publicación de contenido del sitio web suele incluir pasos como la aprobación y la aprobación por parte de varias partes interesadas. AEM Estos procesos se pueden implementar como flujos de trabajo de y aplicarse a páginas de contenido y recursos.
+Los procesos empresariales que ha establecido su organización se pueden representar como flujos de trabajo. Por ejemplo, el proceso de publicación de contenido del sitio web suele incluir pasos como la aprobación y la aprobación por parte de varias partes interesadas. Estos procesos se pueden implementar como flujos de trabajo de AEM y aplicarse a páginas de contenido y recursos.
 
 * [Inicio de flujos de trabajo](/help/sites-administering/workflows-starting.md)
 * [Administración de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md)
@@ -44,7 +44,7 @@ Los procesos empresariales que ha establecido su organización se pueden represe
 
 ## Modelos de flujo de trabajo e instancias {#workflow-models-and-instances}
 
-AEM [Los modelos de flujo de trabajo](/help/sites-developing/workflows.md#model) en los son la representación y la implementación de procesos empresariales:
+[Los modelos de flujo de trabajo](/help/sites-developing/workflows.md#model) en AEM son la representación y la implementación de procesos empresariales:
 
 * Normalmente, actúan en páginas o recursos para lograr un resultado específico.
 * Estas páginas o activos se denominan carga útil de flujo de trabajo.
@@ -55,7 +55,7 @@ Cuando se inicia (ejecuta) un modelo del flujo de trabajo, se crea una instancia
 
 >[!CAUTION]
 >
->Los pasos realizados son los definidos por el modelo de flujo de trabajo *en el momento en que se genera la instancia*. Consulte [Desarrollo de flujos de trabajo](/help/sites-developing/workflows.md#model) para obtener más información.
+>Los pasos realizados son los definidos por el modelo de flujo de trabajo *en el momento en que se genera la instancia*. Consulte [Desarrollo y ampliación de flujos de trabajo - Modelos](/help/sites-developing/workflows.md#model) para obtener más información.
 
 Las instancias de flujo de trabajo progresan a través del siguiente ciclo vital:
 
@@ -63,14 +63,14 @@ Las instancias de flujo de trabajo progresan a través del siguiente ciclo vital
 
    1. La carga útil de la instancia de flujo de trabajo se identifica cuando se inicia el modelo.
    1. La instancia es en realidad una copia del modelo (en el momento de su creación).
-   1. AEM Los autores, administradores o servicios de pueden iniciar modelos de flujo de trabajo.
+   1. Los autores, administradores o servicios de AEM pueden iniciar modelos de flujo de trabajo.
 
 1. Se ejecuta el primer paso del modelo del flujo de trabajo.
 1. El paso se completa y el motor de flujo de trabajo utiliza el modelo para determinar el siguiente paso que se va a ejecutar.
 1. Los pasos siguientes del modelo de flujo de trabajo se ejecutan y finalizan.
 1. Cuando se completa el paso final, la instancia de flujo de trabajo se completa y, por lo tanto, se archiva.
 
-AEM Muchos modelos de flujo de trabajo útiles se proporcionan con la opción de trabajo Además, los desarrolladores de su organización pueden crear modelos de flujo de trabajo personalizados, adaptados a las necesidades específicas de los procesos empresariales.
+AEM proporciona muchos modelos de flujo de trabajo útiles. Además, los desarrolladores de su organización pueden crear modelos de flujo de trabajo personalizados, adaptados a las necesidades específicas de los procesos empresariales.
 
 ## Pasos del flujo de trabajo {#workflow-steps}
 
