@@ -5,10 +5,10 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+source-git-commit: 2a843cefdd881e3cab60b2ddba12a26d0a498d13
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 64%
+source-wordcount: '1701'
+ht-degree: 63%
 
 ---
 
@@ -25,13 +25,13 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >Algunos términos relacionados con la publicación pueden confundirse:
 >
 >* **Publicar o cancelar la publicación**
->  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
+>  >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
 >* **Activar o desactivar**
->  Estos términos son sinónimos de publicar y cancelar la publicación.
+>  >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
->  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
+>  >  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 
 ## Privilegios insuficientes {#insufficient-privileges}
 
@@ -61,7 +61,7 @@ Si está editando una página, puede publicarla directamente desde el editor.
    * La página se publicará directamente si no hay ninguna referencia por publicar.
    * Si la página tiene referencias que es necesario publicar, estas se enumerarán en el asistente **Publicar**, donde puede:
 
-      * Especifique cuál de los recursos o etiquetas desea publicar junto con la página y, a continuación, utilice **Publish** para completar el proceso.
+      * Especifique cuál de los recursos o etiquetas desea publicar junto con la página y, a continuación, utilice **Publicar** para completar el proceso.
 
       * Utilizar **Cancelar** para anular la acción.
 
@@ -96,11 +96,11 @@ En la consola Sitios hay dos opciones para la publicación:
 
 Para publicar una página con Publicación rápida:
 
-1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Quick Publish**.
+1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Publicación rápida**.
 
    ![pp-02](assets/pp-02.png)
 
-1. En el cuadro de diálogo Quick Publish, confirme la publicación haciendo clic en **Publish** o cancele la acción haciendo clic en **Cancelar**. Recuerde que cualquier referencia sin publicar se publicará también automáticamente.
+1. En el diálogo Publicación rápida, confirme la publicación haciendo clic en **Publicar** o cancele la acción haciendo clic en **Cancelar**. Recuerde que cualquier referencia sin publicar se publicará también automáticamente.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -112,7 +112,7 @@ Para publicar una página con Publicación rápida:
 
 #### Administrar publicación     {#manage-publication}
 
-**Administrar publicación** ofrece más opciones que Quick Publish, ya que permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
+**Administrar publicación** ofrece más opciones que Publicación rápida, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
 
 Para publicar o cancelar la publicación de una página con Administrar publicación:
 
@@ -196,6 +196,10 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    Haga clic en **Publicar** o **Publicar más tarde** para completar la publicación.
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
+
+>[!TIP]
+>
+>La programación de contenido para la publicación duplica contenido y respeta los flujos de trabajo de publicación. Si desea ocultar temporalmente contenido ya publicado sin cancelar la publicación, considere que [**Tiempo de activación** y **Tiempo de inactividad** están disponibles en las propiedades de la página.](/help/sites-authoring/editing-page-properties.md#on-time)
 
 ## Cancelar la publicación de páginas {#unpublishing-pages}
 
