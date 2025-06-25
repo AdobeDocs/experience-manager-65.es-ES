@@ -1,27 +1,50 @@
 ---
 title: Habilitar la alternancia de funciones para integrar las funciones de pionero y prelanzamiento
-description: AEM La opción de alternancia de funciones es una funcionalidad de la aplicación que permite a los administradores habilitar nuevas funciones en un entorno de tiempo de ejecución.
+description: La alternancia de funciones es una funcionalidad de AEM que permite a los administradores habilitar nuevas funciones en un entorno de tiempo de ejecución.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
-source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
+source-git-commit: 9b28ab12422743cd7849d2761aef9916ec6710f5
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 7%
+source-wordcount: '381'
+ht-degree: 6%
 
 ---
 
-# Alternancia de funciones en Adobe Experience Manager AEM () 6.5{#enable-feature-toggle-aem-forms-65}
+# Alternancia de funciones en Adobe Experience Manager (AEM) 6.5{#enable-feature-toggle-aem-forms-65}
 
-AEM La opción de alternancia de funciones es una funcionalidad en la que los administradores pueden habilitar o deshabilitar de forma dinámica determinadas funciones. Esta funcionalidad es especialmente útil para administrar **las características de los primeros usuarios** y **las características de la versión preliminar** sin que sea necesario realizar implementaciones o cambios importantes en la base de código. AEM Garantiza la flexibilidad y el control sobre las funciones accesibles en un entorno de.
+La alternancia de funciones es una funcionalidad de AEM que permite a los administradores habilitar o deshabilitar funciones específicas de forma dinámica. Esta funcionalidad es especialmente útil para administrar **las características de los primeros usuarios** y **las características de la versión preliminar** sin que sea necesario realizar implementaciones o cambios importantes en la base de código. Garantiza flexibilidad y control sobre las funciones accesibles en un entorno de AEM.
+
+## ¿Por qué utilizar las alternancias de funciones en una configuración de AEM 6.5?
+
+Al trabajar con una configuración de AEM 6.5, la función activa o desactiva la ayuda en lo siguiente:
+
+* Prueba de características experimentales de forma segura.
+
+* Despliegue de nuevos componentes por fases.
+
+* Mantener un único código base en varios entornos.
+
+* Reducción del riesgo durante las implementaciones y actualizaciones.
+
+## Requisitos previos
+
+Antes de habilitar los conmutadores de funciones en la configuración de AEM 6.5, asegúrese de lo siguiente:
+
+* El usuario es miembro del grupo `forms-users`.
+
+* Vaya a `http://<author-instance-url>:portnumber/system/console/bundles` y compruebe si el paquete **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** está presente o no. En caso de que no esté presente, [descargue el paquete desde el vínculo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+
+  ![Alternar característica](/help/forms/using/assets/feature-toggle-6.5.png)
 
 ## Activar alternancia de función {#enable-feature-toggle-65}
 
-AEM Se pueden configurar cambios de características para los usuarios que las adoptaron por primera vez o nuevas características a través de la **consola web de** siguiendo los pasos a continuación:
+Se pueden configurar cambios de características para los usuarios que las adoptaron por primera vez o nuevas características a través de la **consola web de AEM** siguiendo los pasos a continuación:
 
 1. Inicie sesión en la instancia de AEM Forms.
 2. Navegue hasta `http://<author-instance-url>:portnumber/system/console/configMgr`.
-3. Busque **Adobe Granite Dynamic Toggle Provider** en el Administrador de configuración.
+3. Busque **Proveedor de alternancia dinámica de Adobe Granite** en el Administrador de configuración.
 4. Haga clic en el icono ![icono-lápiz](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 5. En la sección [!UICONTROL Conmutadores habilitados], haga clic en ![icono de lápiz](assets/aem6forms_add.png).
 6. Añada el ID de alternancia de función para la función como se muestra en la siguiente imagen.
@@ -39,7 +62,7 @@ Para desactivar las opciones de características para aquellas características 
 
 1. Inicie sesión en la instancia de AEM Forms.
 2. Navegue hasta `http://<author-instance-url>:portnumber/system/console/configMgr`.
-3. Busque **Adobe Granite Dynamic Toggle Provider** en el Administrador de configuración.
+3. Busque **Proveedor de alternancia dinámica de Adobe Granite** en el Administrador de configuración.
 4. Haga clic en el icono ![icono-lápiz](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 5. En la sección [!UICONTROL Conmutadores deshabilitados], haga clic en ![icono de lápiz](assets/aem6forms_add.png).
 6. Añada el número de conmutador para que la función se desactive.
