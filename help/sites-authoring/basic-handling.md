@@ -1,5 +1,5 @@
 ---
-title: AEM Gestión básica al utilizar el entorno de autor de la
+title: Gestión básica al utilizar el entorno de creación de AEM
 description: Familiarícese con la navegación por Adobe Experience Manager y su uso básico.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '2964'
+source-wordcount: '2965'
 ht-degree: 41%
 
 ---
@@ -21,19 +21,19 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de Adobe Experience Manager AEM () Author. Utiliza la consola **Sitios** como base. 
+>* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de Adobe Experience Manager (AEM). Utiliza la consola **Sitios** como base. 
 >
 >* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras adicionales estén disponibles en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se trata con más detalle en otras páginas.
->* AEM Los métodos abreviados del teclado están disponibles en todo el mundo En particular cuando [usa las consolas](/help/sites-authoring/keyboard-shortcuts.md) y [edita páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* Los métodos abreviados del teclado están disponibles mediante AEM. En particular cuando [usa las consolas](/help/sites-authoring/keyboard-shortcuts.md) y [edita páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Introducción {#getting-started}
 
 ### Una interfaz con capacidad táctil {#a-touch-enabled-ui}
 
-AEM Se ha habilitado el contacto con la interfaz de usuario de. Una interfaz táctil le permite utilizar el tacto para interactuar con el software mediante gestos como seleccionar, pulsar y mantener o deslizar el dedo. Esto contrasta con el funcionamiento de una interfaz de escritorio tradicional con acciones del ratón, como hacer clic, hacer doble clic, hacer clic con el botón secundario y pasar el ratón por encima.
+La interfaz de usuario de AEM se ha habilitado para el tacto. Una interfaz táctil le permite utilizar el tacto para interactuar con el software mediante gestos como seleccionar, pulsar y mantener o deslizar el dedo. Esto contrasta con el funcionamiento de una interfaz de escritorio tradicional con acciones del ratón, como hacer clic, hacer doble clic, hacer clic con el botón secundario y pasar el ratón por encima.
 
-AEM Como la interfaz de usuario de la pantalla es táctil, puede utilizar los gestos táctiles en sus dispositivos táctiles (por ejemplo, móviles o tabletas) y las acciones del ratón en un dispositivo de escritorio tradicional.
+Como la interfaz de usuario de AEM es táctil, puede utilizar los gestos táctiles en sus dispositivos táctiles (por ejemplo, móviles o tabletas) y las acciones del ratón en un dispositivo de escritorio tradicional.
 
 ### Primeros pasos {#first-steps}
 
@@ -43,13 +43,13 @@ Inmediatamente después de iniciar sesión, llegará al [Panel de navegación](#
 
 >[!NOTE]
 >
->AEM Para comprender bien el uso básico de los recursos, este documento se basa en la consola **Sites**.
+>Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sites**.
 >
 >Para empezar, haga clic en **Sitios**.
 
 ### Navegación de productos    {#product-navigation}
 
-Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. AEM Pulsa aquí para obtener una buena visión general de la gestión básica de los problemas de la.
+Cada vez que se accede por primera vez a una consola, se inicia un tutorial de navegación por los productos. Haga clic aquí para obtener una buena descripción general de la gestión básica de AEM.
 
 ![Navegación de productos](assets/bh-02.png)
 
@@ -78,7 +78,7 @@ A continuación, se describen las opciones disponibles en estos paneles.
 
 ### Panel de navegación    {#navigation-panel}
 
-AEM El panel Navegación proporciona acceso a las consolas de la:
+El panel Navegación proporciona acceso a las consolas de AEM:
 
 ![Navegación](assets/bh-01.png)
 
@@ -94,7 +94,7 @@ En Navegación, las consolas disponibles son:
   </tr>
   <tr>
    <td>Assets<br /> </td>
-   <td>Estas consolas le permiten importar y <a href="/help/assets/assets.md">administrar recursos digitales</a>, como imágenes, vídeos, documentos y archivos de audio. AEM Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de. </td>
+   <td>Estas consolas le permiten importar y <a href="/help/assets/assets.md">administrar recursos digitales</a>, como imágenes, vídeos, documentos y archivos de audio. Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. </td>
   </tr>
   <tr>
    <td>Comunidades</td>
@@ -122,11 +122,11 @@ En Navegación, las consolas disponibles son:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=es">Screens</a> le permite administrar todas las pantallas del cliente, de cualquier tamaño y en cualquier ubicación.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> le permite administrar todas las pantallas del cliente, de cualquier tamaño y en cualquier ubicación.</td>
   </tr>
   <tr>
    <td>Sites</td>
-   <td>AEM Las consolas de Sites le permiten <a href="/help/sites-authoring/page-authoring.md">crear, ver y administrar sitios web</a> que se ejecuten en su instancia de. A través de estas consolas puede crear, editar, copiar, mover y eliminar páginas de sitios web, iniciar flujos de trabajo y publicar páginas.<br /> </td>
+   <td>Las consolas de Sites le permiten <a href="/help/sites-authoring/page-authoring.md">crear, ver y administrar sitios web</a> que se ejecuten en su instancia de AEM. A través de estas consolas puede crear, editar, copiar, mover y eliminar páginas de sitios web, iniciar flujos de trabajo y publicar páginas.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -171,7 +171,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   >[!NOTE]
   >
-  >AEM La configuración predeterminada viene precargada con tareas administrativas asignadas al grupo de usuarios del administrador. Consulte [Su bandeja de entrada - Tareas administrativas listas para usar](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) para obtener más información.
+  >AEM viene precargado con tareas administrativas asignadas al grupo de usuarios administradores. Consulte [Su bandeja de entrada - Tareas administrativas listas para usar](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) para obtener más información.
 
 * [Propiedades del usuario](/help/sites-authoring/user-properties.md)
 
@@ -237,7 +237,7 @@ Hay varios medios de ayuda disponibles:
 
 * **Navegación**
 
-  AEM La primera vez que navega por el sistema, [se muestra una serie de diapositivas que introducen la navegación con el objeto de crear una vista previa de las diapositivas](/help/sites-authoring/basic-handling.md#product-navigation).
+  La primera vez que navega por el sistema, [una serie de diapositivas presenta la navegación de AEM](/help/sites-authoring/basic-handling.md#product-navigation).
 
 * **Editor de página**
 
@@ -570,13 +570,14 @@ Se puede acceder a estas opciones mediante las comillas angulares que aparecen j
 
 **Referencias** muestran conexiones al recurso seleccionado. Por ejemplo, en la consola **Sitios**, [Referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) muestra lo siguiente para páginas:
 
+* [Planes](/help/sites-administering/msm.md)
 * [Lanzamientos](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Copias de idioma](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Referencias de contenido:
 
-   * vínculos de otras páginas a la página seleccionada
-   * el contenido que el componente de referencia extrae de la página seleccionada, o que entrega a la misma o a ambas
+   * Vínculos directos de otras páginas a la página seleccionada
+   * Contenido que el componente de referencia extrae de la página seleccionada, que entrega a esta o ambas
 
 ![bh-28](assets/bh-28.png)
 

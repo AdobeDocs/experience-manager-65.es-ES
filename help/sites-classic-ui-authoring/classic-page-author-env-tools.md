@@ -10,9 +10,9 @@ exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 5%
 
 ---
@@ -37,15 +37,15 @@ Hay un editor de páginas independiente con la IU clásica, que utiliza el busca
 
 ## Acceso a la Ayuda   {#accessing-help}
 
-AEM Se puede acceder directamente a varios recursos de **Ayuda** desde dentro de los siguientes puntos de acceso:
+Se puede acceder directamente a varios recursos de **Ayuda** desde AEM:
 
 Además de obtener acceso a [ayuda desde las barras de herramientas de la consola](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), también puede obtener acceso a la ayuda desde la barra de tareas (mediante el icono ? icono) al editar una página:
 
-![Sidekick contraído](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick colapsado](do-not-localize/sidekick-collapsed-2.png)
 
 O usando el botón **Ayuda** en el cuadro de diálogo de edición de componentes específicos; esto mostrará ayuda contextual.
 
-## Sidekick {#sidekick}
+## Barra de tareas  {#sidekick}
 
 La pestaña **Componentes** de la barra de tareas le permite examinar los componentes disponibles para agregarlos a la página actual. El grupo requerido se puede expandir y, a continuación, un componente se arrastra a la ubicación requerida en la página.
 
@@ -87,9 +87,9 @@ Después de crear un párrafo de descarga en la página, puede arrastrar un elem
 
 ### Búsqueda de películas {#finding-movies}
 
-Esta pestaña enumera todas las películas (por ejemplo, elementos de Flash) del repositorio.
+Esta pestaña muestra las películas (por ejemplo, elementos Flash) del repositorio.
 
-Después de crear un párrafo adecuado (por ejemplo, un Flash) en la página, puede arrastrar un elemento y soltarlo en el párrafo.
+Después de crear un párrafo apropiado (por ejemplo, Flash) en la página, puede arrastrar un elemento y soltarlo en el párrafo.
 
 ![chlimage_1-113](assets/chlimage_1-113.png)
 
@@ -154,19 +154,23 @@ puede utilizar cualquier número de caracteres comodín en una consulta.
 
 ## Mostrando referencias {#showing-references}
 
-AEM le permite ver qué páginas están vinculadas a la página en la que está trabajando actualmente.
+AEM permite ver qué páginas están vinculadas a la página en la que está trabajando actualmente.
 
-Para mostrar referencias de página directas:
+Para mostrar referencias de página:
 
 1. En la barra de tareas, seleccione el icono de la ficha **Página**.
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. AEM Seleccionar **Mostrar referencias...** abre la ventana Referencias y muestra las páginas que hacen referencia a la página seleccionada, incluidas sus rutas.
+1. Seleccione **Mostrar referencias...** AEM abre la ventana Referencias y muestra qué páginas hacen referencia a la página seleccionada, incluidas sus rutas.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-En determinadas situaciones, el Sidekick puede realizar otras acciones, como las siguientes:
+AEM muestra todas las páginas que hacen referencia directamente a la página seleccionada, así como todas las referencias indirectas. Esto resulta útil para comprender todos los vínculos que se actualizan si necesita mover o eliminar la página.
+
+## Acciones adicionales de Sidekick {#additional-actions}
+
+En determinadas situaciones, Sidekick ofrece más acciones, entre las que se incluyen:
 
 * [Lanzamientos](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Live Copies](/help/sites-administering/msm.md)
@@ -175,7 +179,7 @@ En determinadas situaciones, el Sidekick puede realizar otras acciones, como las
 
 Se pueden ver otras [relaciones entre páginas en la consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
-## Registro de auditorías {#audit-log}
+## Registro de auditoría {#audit-log}
 
 Se puede acceder al **Registro de auditoría** desde la ficha **Información** de la barra de tareas. Enumera las acciones recientes realizadas en la página actual; por ejemplo:
 
@@ -191,7 +195,7 @@ Al editar una página con la IU clásica, hay varios modos a los que se puede ac
 
 ![Modos de página](do-not-localize/chlimage_1-12.png)
 
-La fila de iconos de la parte inferior del Sidekick se utiliza para cambiar los modos de trabajo de las páginas:
+La fila de iconos de la parte inferior de Sidekick se utiliza para cambiar los modos de trabajo de las páginas:
 
 * [Editar](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 Este es el modo predeterminado y permite editar la página, añadir o eliminar componentes y realizar otros cambios.

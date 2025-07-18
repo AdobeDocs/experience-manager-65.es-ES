@@ -1,20 +1,20 @@
 ---
-title: AEM Creación y organización de páginas con la función de
+title: Creación y organización de páginas con AEM
 description: Obtenga información sobre cómo crear y administrar páginas con Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 383192083ec84176f67882a869550374f6074eef
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 64%
+source-wordcount: '2476'
+ht-degree: 62%
 
 ---
 
 # Crear y organizar páginas {#creating-and-organizing-pages}
 
-En esta sección se describe cómo crear y administrar páginas con Adobe Experience Manager AEM () para poder [crear contenido](/help/sites-authoring/editing-content.md) en esas páginas.
+En esta sección se describe cómo crear y administrar páginas con Adobe Experience Manager (AEM) para poder [crear contenido](/help/sites-authoring/editing-content.md) en esas páginas.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ En esta sección se describe cómo crear y administrar páginas con Adobe Experi
 
 ## Organizar el sitio web {#organizing-your-website}
 
-AEM Como creador, organice el sitio web dentro de la organización de. Esto implica crear y asignar un nombre a las páginas de contenido para que:
+Como autor, organice el sitio web dentro de AEM. Esto implica crear y asignar un nombre a las páginas de contenido para que:
 
 * Pueda encontrarlas con facilidad en el entorno de creación
 * Los usuarios que visiten el sitio web puedan explorarlas fácilmente en el entorno de publicación
@@ -42,7 +42,7 @@ A continuación, se muestra un ejemplo del sitio de We.Retail, donde se tiene ac
 * Entorno de creación
   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-* Entorno de Publish
+* Entorno de publicación
   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Según la configuración de la instancia, el uso de `/content` podría ser opcional en el entorno de publicación.
@@ -107,7 +107,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos. 
 
-AEM AEM Al crear una página, [valida el nombre de la página según las convenciones ](/help/sites-developing/naming-conventions.md) impuestas por el JCR y la aplicación de validación de datos (JCR) de la página de inicio de sesión (JCR) y de la página de inicio de sesión (JCR) de la página de inicio de sesión 1.
+Al crear una página, AEM [valida el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y el JCR.
 
 El mínimo permitido de caracteres es:
 
@@ -121,11 +121,11 @@ Para obtener toda la información sobre los caracteres permitidos, consulte las 
 
 >[!NOTE]
 >
->AEM Si se está ejecutando una implementación del administrador de persistencia [MongoMK](/help/sites-deploying/recommended-deploys.md), los nombres de página están limitados a 150 caracteres.
+>Si AEM se está ejecutando en una [implementación del administrador de persistencia MongoMK](/help/sites-deploying/recommended-deploys.md), los nombres de página están limitados a 150 caracteres.
 
 #### Título {#title}
 
-AEM AEM Si proporciona solamente una página **Title** al crear una página, deriva la página **Name** de esta cadena y [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por los criterios de y JCR. En el caso de que la página se haya creado, la página se convierte en una página con el nombre Name de esta cadena y se define como {JCR}. Se acepta un campo de **Título** con caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
+Si proporciona solo una página **Title** al crear una página, AEM deriva la página **Name** de esta cadena y [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. Se acepta un campo de **Título** con caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
@@ -134,7 +134,7 @@ AEM AEM Si proporciona solamente una página **Title** al crear una página, der
 
 #### Nombre {#name}
 
-AEM AEM Cuando se proporciona una página **Name** al crear una página, [valida el nombre según las convenciones ](/help/sites-developing/naming-conventions.md) impuestas por las normas de privacidad y JCR, y el nombre de la página se valida a través de las convenciones  impuestas por las normas de privacidad de la página y el JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. AEM Cuando se detecta la existencia de caracteres no válidos, el campo se resalta con un mensaje explicativo.
+Cuando se proporciona una página **Name** al crear una página, AEM [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando AEM detecta caracteres no válidos, el campo se resalta con un mensaje explicativo.
 
 ![caop-02](assets/caop-02.png)
 
@@ -164,7 +164,7 @@ AEM incluye varias plantillas listas para usar de forma predeterminada. Las plan
 
 ### Componentes {#components}
 
-Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de contenido específicos. AEM viene con un rango de [componentes listos para usar](/help/sites-authoring/default-components-console.md) que proporcionan funcionalidad completa. Estos incluyen:
+Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de contenido específicos. AEM incluye una serie de [componentes predeterminados](/help/sites-authoring/default-components-console.md) que proporcionan funcionalidad completa. Estos incluyen:
 
 * Texto
 * Imagen
@@ -213,9 +213,9 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
    * **Nombre**:
 
       * Se usa para generar la URI. Si no se especifica, el nombre se obtiene a partir del título.
-      * AEM AEM Si proporciona una página **Name** al crear una página, [valida el nombre según las convenciones ](/help/sites-developing/naming-conventions.md) impuestas por el JCR y el.
+      * Si proporciona una página **Name** al crear una página, AEM [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
-      * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
+      * **No se pueden enviar caracteres no válidos** desde el campo **Nombre**. Cuando AEM detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
    >[!NOTE]
    >
@@ -323,10 +323,9 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    Se abrirá el asistente para mover páginas.
 
-1. En el paso **Cambiar nombre** del asistente puede realizar una de las acciones siguientes:
+1. El paso **Rename** del asistente le proporciona **información** sobre la página, incluida la fecha de creación, la ruta y el número de referencias directas. Desde aquí puede hacer lo siguiente:
 
    * Especifique el nombre que desea que tenga la página cuando se haya movido y, a continuación, haga clic en **Siguiente** para continuar.
-
    * **Haga clic en Cancelar** para anular el proceso.
 
    ![caop-07](assets/caop-07.png)
@@ -362,7 +361,8 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    >[!NOTE]
    >
-   >Si la página no está vinculada ni se hace referencia a ella, este paso no estará disponible.
+   >* Si la página no está vinculada ni se hace referencia a ella, este paso no estará disponible.
+   >* En este paso se enumeran las referencias directas e indirectas. Esto puede diferir de la cantidad informada en el paso **Rename** del asistente, así como de las referencias notificadas por el carril de referencias, que solo informan de referencias directas por motivos de rendimiento.
 
    ![caop-09](assets/caop-09.png)
 
@@ -394,7 +394,7 @@ El estado de los trabajos asincrónicos se puede comprobar en [**Estado de los t
 
 >[!NOTE]
 >
->AEM El procesamiento asincrónico de movimiento de página requiere la versión 6.5.3.0 o superior de la.
+>El procesamiento asincrónico de movimiento de página requiere AEM 6.5.3.0 o superior.
 
 ### Eliminar una página {#deleting-a-page}
 

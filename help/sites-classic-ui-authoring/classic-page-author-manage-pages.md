@@ -1,6 +1,6 @@
 ---
 title: Crear y organizar páginas
-description: AEM En esta sección se describe cómo crear y administrar páginas con las que se puede crear contenido para después crear contenido en las mismas.
+description: En esta sección se describe cómo crear y administrar páginas con AEM para luego poder crear contenido en esas páginas.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,16 +9,16 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1898'
 ht-degree: 16%
 
 ---
 
 # Crear y organizar páginas{#creating-and-organizing-pages}
 
-En esta sección se describe cómo crear y administrar páginas con Adobe Experience Manager AEM () para poder [crear contenido](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) en esas páginas.
+En esta sección se describe cómo crear y administrar páginas con Adobe Experience Manager (AEM) para poder [crear contenido](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) en esas páginas.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ En esta sección se describe cómo crear y administrar páginas con Adobe Experi
 
 ## Organizar el sitio web {#organizing-your-website}
 
-AEM Como creador, debe organizar el sitio web dentro de la organización de la creación de. Esto implica crear y asignar un nombre a las páginas de contenido para que:
+Como creador, debe organizar el sitio web dentro de AEM. Esto implica crear y asignar un nombre a las páginas de contenido para que:
 
 * puede encontrarlos fácilmente en el entorno de creación
 * los visitantes del sitio pueden explorarlas fácilmente en el entorno de publicación
@@ -37,13 +37,13 @@ También puede usar [carpetas](#creating-a-new-folder) para organizar el conteni
 
 La estructura de un sitio web se puede considerar como una *estructura de árbol* que contiene las páginas de contenido. Los nombres de estas páginas de contenido se utilizan para formar las direcciones URL, mientras que el título se muestra cuando se visualiza el contenido de la página.
 
-A continuación se muestra un extracto del sitio de Geometrixx; donde, por ejemplo, se tendrá acceso a la página `Triangle`:
+A continuación se muestra un extracto del sitio de Geometrixx; donde, por ejemplo, se accederá a la página `Triangle`:
 
 * Entorno de creación
 
   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-* Entorno de Publish
+* Entorno de publicación
 
   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
@@ -87,7 +87,7 @@ Al crear una página, hay dos campos de claves:
    * Se usa para generar la URI.
    * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se obtiene a partir del título.
 
-AEM AEM Al crear una página, [valida el nombre de la página según las convenciones ](/help/sites-developing/naming-conventions.md) impuestas por el JCR y el de la página de inicio de sesión de la página (JCR), que son las siguientes:
+Al crear una página, AEM [valida el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
 La implementación y la lista de caracteres permitidos difieren ligeramente según la interfaz de usuario (es más extensa para la interfaz con capacidad táctil), pero el mínimo permitido es:
 
@@ -101,21 +101,21 @@ Use solo estos caracteres si desea asegurarse de que se aceptan o utilizan (si n
 
 #### Título {#title}
 
-AEM AEM Si proporciona solamente una página **Title** al crear una página, deriva la página **Name** de esta cadena y [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por los criterios de y JCR. En el caso de que la página se haya creado, la página se convierte en una página con el nombre Name de esta cadena y se define como {JCR}. En ambas interfaces se acepta un campo **Title** que contiene caracteres no válidos, pero se sustituirán los caracteres no válidos en el nombre derivado. Por ejemplo:
+Si proporciona solo una página **Title** al crear una página, AEM deriva la página **Name** de esta cadena y [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. En ambas interfaces se acepta un campo **Title** que contiene caracteres no válidos, pero se sustituirán los caracteres no válidos en el nombre derivado. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### Nombre {#name}
 
-AEM AEM Si proporciona una página **Name** al crear una página, [valida el nombre según las convenciones ](/help/sites-developing/naming-conventions.md) impuestas por el JCR y el.
+Si proporciona una página **Name** al crear una página, AEM [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
 En la IU clásica **no puede escribir caracteres no válidos** en el campo **Nombre**.
 
 >[!NOTE]
->En la IU táctil, **no puede enviar caracteres no válidos** en el campo **Nombre**. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
+>En la IU táctil, **no puede enviar caracteres no válidos** en el campo **Nombre**. Cuando AEM detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ AEM incluye varias plantillas listas para usar de forma predeterminada. Las plan
 
 ### Componentes {#components}
 
-Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de contenido específicos. AEM El paquete incluye una serie de componentes listos para usar que proporcionan una amplia funcionalidad, entre los que se incluyen:
+Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de contenido específicos. AEM incluye una serie de componentes integrados que proporcionan amplias funcionalidades, entre las que se incluyen:
 
 * Texto
 * Imagen
@@ -170,7 +170,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de empezar 
    * Proporcione un **Título**; esto se mostrará al usuario.
    * Proporcione un **Nombre**; se usa para generar el URI. Si no se especifica, el nombre se derivará del título.
 
-      * AEM AEM Si proporciona una página **Name** al crear una página, [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por el JCR y el servicio de identidad de la página de usuario de la página (JCR) de la página valida el nombre de acuerdo con las convenciones  impuestas por el JCR y el servicio de identidad de la página de usuario de la página de la página de destino.
+      * Si proporciona una página **Name** al crear una página, AEM [valida el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
       * En la IU clásica, **no puede escribir caracteres no válidos** en el campo **Nombre**.
 
    * Haga clic en la plantilla que desee utilizar para crear la nueva página.
@@ -249,7 +249,7 @@ El procedimiento para mover o cambiar el nombre de una página es el mismo. Con 
 * cambiar el nombre de una página en la misma ubicación
 * mover una página a una nueva ubicación y cambiarle el nombre simultáneamente
 
-AEM le ofrece la funcionalidad de actualizar los vínculos internos a la página que se está moviendo o cambiando de nombre. Esto se puede hacer página por página para proporcionar una flexibilidad total.
+AEM ofrece la funcionalidad de actualizar los vínculos internos a la página que se está moviendo o cambiando de nombre. Esto se puede hacer página por página para proporcionar una flexibilidad total.
 
 Para mover o cambiar el nombre de una página:
 
@@ -263,7 +263,7 @@ Para mover o cambiar el nombre de una página:
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   La página también enumera todas las páginas que hacen referencia a la página que se está moviendo. Según el estado de la página de referencia, es posible que pueda ajustar esos vínculos en las páginas o volver a publicarlas.
+   La página también enumera cualquier página que haga referencia directa o indirectamente a la página que se está moviendo. Según el estado de la página de referencia, es posible que pueda ajustar esos vínculos en las páginas o volver a publicarlas.
 
 1. Rellene los campos siguientes, según corresponda:
 
@@ -283,7 +283,7 @@ Para mover o cambiar el nombre de una página:
 
    * **Ajustar**
 
-     AEM Actualice los vínculos de la página enumerada que apunten a la página desplazada: por ejemplo, si la página A tiene vínculos a la página B, ajusta los vínculos de la página A en caso de que mueva la página B, por ejemplo, para la página B.
+     Actualice los vínculos de la página enumerada que apunten a la página desplazada: por ejemplo, si la página A tiene vínculos a la página B, AEM ajusta los vínculos de la página A en caso de que mueva la página B.
 
      Se puede seleccionar o deseleccionar para cada página de referencia individual.
 
