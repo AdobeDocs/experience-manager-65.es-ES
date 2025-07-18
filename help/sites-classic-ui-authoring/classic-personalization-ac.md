@@ -9,9 +9,9 @@ exl-id: 7689b0e7-9da3-467f-8e53-f056040391d8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '126'
 ht-degree: 2%
 
 ---
@@ -31,9 +31,9 @@ Consulte lo siguiente:
 * [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
 * [Segmentación de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
-AEM Anteriormente, debe tener [integrado con el de Adobe Campaign](/help/sites-administering/campaign.md).
+Antes debe tener [AEM integrado con Adobe Campaign](/help/sites-administering/campaign.md).
 
 Además, si desea personalizar las integraciones, consulte los temas siguientes:
 
-* [Creación de extensiones personalizadas](/help/sites-developing/extending-campaign-extensions.md)
+* [Extensiones de Adobe Campaign personalizadas](/help/sites-developing/extending-campaign-extensions.md)
 * [Crear asignaciones de formularios personalizadas](/help/sites-developing/extending-campaign-form-mapping.md)

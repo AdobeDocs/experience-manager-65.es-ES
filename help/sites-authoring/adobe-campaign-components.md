@@ -10,12 +10,14 @@ exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2857'
 ht-degree: 4%
 
 ---
+
 
 # Componentes de Adobe Campaign{#adobe-campaign-components}
 
@@ -23,13 +25,13 @@ Al integrar con Adobe Campaign, tiene componentes disponibles para cuando trabaj
 
 >[!CAUTION]
 >
->AEM Los componentes de correo electrónico de la se han desaprobado. AEM Debido a la naturaleza del correo electrónico, que combina contenido y estilo, los componentes de correo electrónico proporcionados de forma predeterminada se convierten en de reutilización limitada para los clientes debido a la necesidad de implementar estilos personalizados en los componentes que sean necesarios para los proyectos.
+>Los componentes de correo electrónico de AEM se han quedado obsoletos. Debido a la naturaleza del correo electrónico, que combina contenido y estilo, los componentes de correo electrónico proporcionados de forma predeterminada por AEM se vuelven de reutilización limitada para los clientes debido a la necesidad de implementar estilos personalizados en los componentes que sean necesarios para los proyectos.
 >
->AEM Los componentes de correo electrónico se pueden implementar en el nivel de proyecto, y los componentes de correo electrónico de la obsoleta ilustran cómo se puede lograr. Sin embargo, no utilice estos componentes obsoletos en proyectos.
+>Los componentes de correo electrónico se pueden implementar en el nivel de proyecto y los componentes de correo electrónico de AEM obsoletos ilustran cómo se puede lograr. Sin embargo, no utilice estos componentes obsoletos en proyectos.
 
 ## Componentes de newsletter de Adobe Campaign {#adobe-campaign-newsletter-components}
 
-Todos los componentes de Campaign siguen las prácticas recomendadas descritas en [Prácticas recomendadas para plantillas de correo electrónico](/help/sites-administering/best-practices-for-email-templates.md) y se basan en el lenguaje de marcado de Adobe [HTL](https://helpx.adobe.com/es/experience-manager/htl/using/overview.html).
+Todos los componentes de Campaign siguen las prácticas recomendadas descritas en [Prácticas recomendadas para plantillas de correo electrónico](/help/sites-administering/best-practices-for-email-templates.md) y se basan en el lenguaje de marcado Adobe [HTL](https://helpx.adobe.com/es/experience-manager/htl/using/overview.html).
 
 Cuando abra una newsletter o un correo electrónico configurados para integrarse con Adobe Campaign, debería ver los siguientes componentes en la sección **Newsletter de Adobe Campaign**:
 
@@ -64,7 +66,7 @@ Puede configurar lo siguiente:
 Si desea utilizar un nombre que no sea el título de la página, introdúzcalo aquí.
 
 * **Nivel de encabezado (1, 2, 3, 4)**
-El nivel de encabezado basado en los tamaños de encabezado del HTML 1-4.
+El nivel de encabezado basado en los tamaños de encabezado de HTML 1-4.
 
 El siguiente ejemplo muestra un componente Encabezado (Campaign).
 
@@ -171,11 +173,11 @@ El siguiente ejemplo muestra un componente Vínculo (campaña).
 
 ### Plantilla de imagen de Dynamic Media Classic (Scene7) (Campaign) {#scene-image-template-campaign}
 
-Las plantillas de imagen de Dynamic Media Classic (Scene7) son archivos de imagen con capas, donde el contenido y las propiedades se pueden parametrizar para tener en cuenta la variabilidad. El componente **[!UICONTROL Image template]** le permite usar plantillas de Scene7 en los boletines informativos y cambiar los valores de los parámetros de plantilla. Además, puede utilizar variables de metadatos de Adobe Campaign dentro de los parámetros para que cada usuario experimente la imagen de forma personalizada.
+Las plantillas de imagen de Dynamic Media Classic (Scene7) se superponen a archivos de imagen superpuestos, donde el contenido y las propiedades pueden parametrizarse en función de la variabilidad. El componente **[!UICONTROL Image template]** le permite usar plantillas de Scene7 en boletines informativos y cambiar los valores de los parámetros de plantilla. Además, puede utilizar variables de metadatos de Adobe Campaign dentro de los parámetros para que cada usuario experimente la imagen de forma personalizada.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-Haga clic en **Editar** para configurar el componente. Puede configurar las opciones descritas en esta sección. Esta plantilla de imagen de Scene7 se describe detalladamente en [Componente de plantilla de imagen de Scene7](/help/assets/scene7.md#image-template).
+Haga clic en **Editar** para configurar el componente. Puede configurar las opciones descritas en esta sección. Esta plantilla de imagen de Scene7 se describe en detalle en [Componente de plantilla de imagen de Scene7](/help/assets/scene7.md#image-template).
 
 Además, el panel de parámetros enumera todos los parámetros de plantilla que se han definido para la plantilla en Scene7. Para cada uno de estos parámetros, puede adaptar el valor, insertar variables o restablecerlas a su valor predeterminado.
 
@@ -246,7 +248,7 @@ El siguiente ejemplo muestra un componente Texto e imagen (Campaign).
 
 ### Texto y personalización (Campaign) {#text-personalization-campaign}
 
-El componente Texto y Personalization (Campaign) le permite introducir un bloque de texto mediante un editor WYSIWYG, con la funcionalidad proporcionada por el [Editor de texto enriquecido](/help/sites-authoring/rich-text-editor.md). Además, este componente le permite utilizar campos de contexto y bloques de personalización disponibles en Adobe Campaign; consulte también [Inserción de Personalization](/help/sites-authoring/campaign.md#inserting-personalization).
+El componente Texto y Personalization (Campaign) le permite introducir un bloque de texto mediante un editor de WYSIWYG, con la funcionalidad proporcionada por el [editor de texto enriquecido](/help/sites-authoring/rich-text-editor.md). Además, este componente le permite utilizar campos de contexto y bloques de personalización disponibles en Adobe Campaign; consulte también [Inserción de Personalization](/help/sites-authoring/campaign.md#inserting-personalization).
 
 La selección de iconos le permite dar formato al texto, incluidas las características de la fuente, la alineación, los vínculos, las listas y la sangría. La funcionalidad es básicamente la misma en [ambas interfaces](/help/sites-authoring/editing-content.md), aunque la apariencia es diferente:
 
@@ -276,7 +278,7 @@ Cada campo de componente se puede vincular a un campo de base de datos de Adobe 
 Cuando abra un formulario configurado para integrarse con Adobe Campaign, verá los siguientes componentes en la sección **Adobe Campaign**:
 
 * Casilla (Campaign)
-* Campo de fecha (Campaign) y Campo de fecha/HTML 5 (Campaign)
+* Campo de fecha (Campaign) y Campo de fecha/HTML5 (Campaign)
 * Clave principal cifrada (Campaign)
 * Visualización de error (Campaign)
 * Clave de conciliación oculta (Campaign)
@@ -320,7 +322,7 @@ En la tabla siguiente se describen los componentes disponibles para mostrar y mo
   <tr>
    <td><p>Campo de opción (Campaign)</p> </td>
    <td><p>byte con valores asociados</p> </td>
-   <td><p>Sexo</p> </td>
+   <td><p>Género</p> </td>
   </tr>
   <tr>
    <td><p>Campo de texto (Campaign)</p> </td>

@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas para plantillas de correo electrónico
-description: AEM Encuentre prácticas recomendadas sobre la creación de plantillas de correo electrónico en la.
+description: Encuentre prácticas recomendadas sobre la creación de plantillas de correo electrónico en AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration, best-practices
@@ -10,9 +10,10 @@ exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
@@ -22,13 +23,13 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->AEM Este artículo se aplica a los componentes de base obsoletos basados en componentes de correo electrónico de la.
+>Este artículo se aplica a los componentes de base obsoletos basados en los componentes de correo electrónico de AEM.
 >
->Se recomienda a los usuarios utilizar los [componentes principales y componentes de correo electrónico modernos.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=es)
+>Se recomienda a los usuarios utilizar los [componentes principales y componentes de correo electrónico modernos.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Este documento describe algunas de las prácticas recomendadas en cuanto al diseño de correos electrónicos, lo que da como resultado una plantilla de campaña de correo electrónico bien desarrollada.
 
-AEM La campaña de demostración disponible en la sección de la documentación de sigue todas estas prácticas recomendadas de administración de segmentos de mercado. Se describe cómo se implementan las prácticas recomendadas en la campaña de demostración para cada práctica recomendada.
+La campaña de demostración disponible en AEM sigue todas estas prácticas recomendadas. Se describe cómo se implementan las prácticas recomendadas en la campaña de demostración para cada práctica recomendada.
 
 Siga estas prácticas recomendadas al crear su propia newsletter.
 
@@ -46,7 +47,7 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
 
 >[!NOTE]
 >
->Al crear una plantilla de correo electrónico para Adobe Campaign, debe incluir la propiedad **acMapping** con el valor **mapRecipient** en el nodo **jcr:content** de la plantilla. Si no lo hace, no podrá seleccionar la plantilla Adobe Campaign en **Propiedades de página** del Experience Manager (el campo está deshabilitado).
+>Al crear una plantilla de correo electrónico para Adobe Campaign, debe incluir la propiedad **acMapping** con el valor **mapRecipient** en el nodo **jcr:content** de la plantilla. Si no lo hace, no podrá seleccionar la plantilla Adobe Campaign en **Propiedades de página** de Experience Manager (el campo está deshabilitado).
 
 ## Componente de plantilla/página {#template-page-component}
 
@@ -60,7 +61,7 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
   </tr>
   <tr>
    <td><p>Especifique el tipo de documento para garantizar una representación coherente.</p> <p>Agregar DOCTYPE al principio (HTML o XHTML)</p> </td>
-   <td><p>Se puede configurar por diseño cambiando la propiedad <i>cq:doctype</i> en <i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>El valor predeterminado es "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transition/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Se puede cambiar a "HTML_5":</p> <p>&lt;!HTML DOCTYPE&gt;</p> </td>
+   <td><p>Se puede configurar por diseño cambiando la propiedad <i>cq:doctype</i> en <i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>El valor predeterminado es "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transition/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Se puede cambiar a "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
    <td><p>Especifique la definición de caracteres para garantizar la correcta representación de los caracteres especiales.</p> <p>Agregue la declaración CHARSET (por ejemplo, iso-8859-15, UTF-8) a &lt;head&gt;</p> </td>
@@ -80,7 +81,7 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
   </tr>
   <tr>
    <td>CSS en línea es mejor que colocar todo el CSS al principio.</td>
-   <td><p>Para mostrar mejor la estructura del HTML subyacente y facilitar la personalización de la estructura del boletín informativo, solo se han insertado algunas definiciones de CSS.</p> <p>Los estilos base y las variaciones de plantilla se han extraído a un bloque de estilo en el &lt;head&gt; de la página. Al enviar la newsletter final, estas definiciones de CSS se insertan en el HTML. Se ha planificado un mecanismo de inline automático, pero actualmente no está disponible.</p> </td>
+   <td><p>Para mostrar mejor la estructura subyacente de HTML y facilitar la posibilidad de personalizar la estructura del boletín, solo se han insertado algunas definiciones CSS.</p> <p>Los estilos base y las variaciones de plantilla se han extraído a un bloque de estilo en el &lt;head&gt; de la página. Al enviar la newsletter final, estas definiciones de CSS se insertan en HTML. Se ha planificado un mecanismo de inline automático, pero actualmente no está disponible.</p> </td>
   </tr>
   <tr>
    <td>Simplifique el código CSS. Evite las declaraciones de estilos compuestos, el código abreviado, las propiedades de diseño CSS, los selectores complejos y los pseudoelementos.</td>
@@ -100,7 +101,7 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
 | **Prácticas recomendadas** | **Implementación** |
 |---|---|
 | Agregar atributos *alt* a imágenes | El atributo *alt* se ha definido como obligatorio para el componente de imagen. |
-| Usar *jpg* en lugar del formato *png* para imágenes | El componente de imagen siempre sirve como JPG a las imágenes. |
+| Usar *jpg* en lugar del formato *png* para imágenes | El componente de imagen siempre sirve las imágenes como JPG. |
 | Utilice el elemento `<img>` en lugar de imágenes de fondo en una tabla. | No se utilizan datos de imagen de fondo en las plantillas. |
 | Añadir el atributo style=&quot;display block&quot; en las imágenes. Al hacerlo, se muestran bien en Gmail. | Todas las imágenes contienen de forma predeterminada el atributo *style=&quot;display block&quot;*. |
 
@@ -129,13 +130,13 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
 
 | **Prácticas recomendadas** | **Implementación** |
 |---|---|
-| Utilice el validador W3C para corregir el código del HTML. Asegúrese de que todas las etiquetas abiertas estén correctamente cerradas. | Se ha validado el código. Solo para el tipo de documento transitorio XHTML, falta el atributo xmlns que falta para el elemento `<html>`. |
-| Evite utilizar JavaScript o Flash: los clientes de correo electrónico suelen no admitir estas tecnologías. | JavaScript o Flash no se utilizan en la plantilla del boletín informativo. |
+| Utilice el validador W3C para corregir el código HTML. Asegúrese de que todas las etiquetas abiertas estén correctamente cerradas. | Se ha validado el código. Solo para el tipo de documento transitorio XHTML, falta el atributo xmlns que falta para el elemento `<html>`. |
+| Evite utilizar JavaScript o Flash: estas tecnologías suelen ser incompatibles con los clientes de correo electrónico. | JavaScript o Flash no se utilizan en la plantilla del boletín informativo. |
 | Añada una versión de texto sin formato para el envío de varias partes. | Se ha incorporado un nuevo widget en las propiedades de la página para extraer fácilmente una versión de texto sin formato del contenido de la página. Puede utilizarlo como punto de partida para la versión final de texto sin formato. |
 
 ## Plantillas y ejemplos de newsletter de Campaign {#campaign-newsletter-templates-and-examples}
 
-AEM viene con varias plantillas y componentes listos para usar para que cree boletines de campaña. Puede utilizar estas plantillas y componentes para crear sus boletines personalizados.
+AEM incluye varias plantillas y componentes predeterminados para que pueda crear boletines de campaña. Puede utilizar estas plantillas y componentes para crear sus boletines personalizados.
 
 ### Plantillas {#templates}
 
@@ -147,7 +148,7 @@ Todos tienen una sección **header**, **footer** y **body**. Debajo de la secci�
 
 ### Componentes {#components}
 
-Actualmente hay [siete componentes disponibles para usar en plantillas de campaña](/help/sites-authoring/adobe-campaign-components.md). Todos estos componentes se basan en el lenguaje de marcado de Adobe **HTL**.
+Actualmente hay [siete componentes disponibles para usar en plantillas de campaña](/help/sites-authoring/adobe-campaign-components.md). Todos estos componentes se basan en el lenguaje de marcado Adobe **HTL**.
 
 | **Nombre del componente** | **Ruta del componente** |
 |---|---|
