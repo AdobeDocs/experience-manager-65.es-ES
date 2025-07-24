@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
+source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
 >
 > Las revisiones están diseñadas para ser acumulativas, e incluyen todas las correcciones anteriores. Al aplicar la revisión más reciente a una versión de, no solo se aborda el problema más reciente, sino que también incorpora todas las correcciones de errores y mejoras anteriores.
 
-## Revisiones para Forms adaptable {#hotfix-for-adaptive-forms}
+## Revisiones para AEM Forms {#hotfix-for-aem-forms}
 
 <table>
   <tbody>
@@ -46,7 +46,16 @@ Este artículo enumera las correcciones esenciales implementadas para abordar pr
     </td>
     <td>
     <ul>
-    <li>Revisión del SP23 para AEM Forms en JEE</li>
+    <li><strong>Este hotfix corrige lo siguiente:</strong>
+      <ul>
+        <li><strong>FORMS-20533:</strong> AEM Forms ahora incluye una actualización de la versión de Struts de la versión 2.5.33 a la 6.x para el componente de formularios. Esto proporciona cambios de Struts que no se han incluido en el SP23. La compatibilidad se agregó mediante una revisión que puede descargar e instalar para que sea compatible con la última versión de Struts.</li>
+        <li><strong>FORMS-20532:</strong> AEM Forms ahora incluye una actualización de la versión Struts de la versión 2.5.33 a la 6.x para el componente de salida. Esto proporciona cambios de Struts que no se han incluido en el SP23. La compatibilidad se agregó mediante una revisión que puede descargar e instalar para que sea compatible con la última versión de Struts.</li>
+        <li><strong>FORMS-20203:</strong> Cuando un usuario actualiza Struts de AEM Service Pack 2.5.x a AEM Forms Service Pack 6.x, la interfaz de usuario de directivas no muestra todas las configuraciones, como la opción de agregar una marca de agua. Puede descargar e instalar la revisión para resolver este problema.</li>
+        <li><strong>FORMS-20360:</strong> Después de actualizar a AEM Forms Service Pack 6.5.23.0, el servicio de conversión ImageToPDF genera el siguiente error:<br>
+        <code>17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp</code><br>
+        Puede descargar e instalar la revisión para resolver este problema.</li>
+      </ul>
+    </li>
     </ul>
     </td>    
   </tr>
