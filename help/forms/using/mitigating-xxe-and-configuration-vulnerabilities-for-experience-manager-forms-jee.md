@@ -9,7 +9,7 @@ role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
 release-date: 2025-08-05T00:00:00Z
-source-git-commit: 8420597b7ee09b15a7f0004acc64e3625771a4d8
+source-git-commit: f57b2e7874aae10dd2112e688f8db6a660f2cbb9
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 5%
@@ -77,7 +77,7 @@ Esta precaución le permite restaurar el estado original en caso de que encuentr
 
 ### Opción 2: (para usuarios de 6.5.18.0 - 6.5.22.0) Instalación manual de revisión
 
-+++<b>Instalación manual de revisión para 6.5.18.0 - 6.5.22.0</b>
++++ Instalación manual de revisión para 6.5.18.0 - 6.5.22.0
 
 **Paso 1: Descargar y extraer el paquete de revisión**
 
