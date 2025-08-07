@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
 workflow-type: tm+mt
-source-wordcount: '10051'
+source-wordcount: '10085'
 ht-degree: 43%
 
 ---
@@ -253,6 +253,12 @@ El proceso de instalación de Adobe Acrobat Pro DC para Microsoft Office varía 
 * **Tipo de implementación**: usuario único o varios usuarios
 
 Cada pestaña contiene instrucciones adaptadas y optimizadas para su configuración específica, lo que le ayuda a evitar problemas de configuración y a garantizar el cumplimiento adecuado de las licencias.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>El vídeo muestra el proceso de instalación de una licencia comercial: configuración de usuario único. Para otros escenarios de implementación (Venta minorista - Varios usuarios, Licencia por volumen - Un solo usuario o Licencia por volumen - Varios usuarios), consulte las instrucciones específicas del paso 9 en las pestañas correspondientes a continuación para garantizar el inicio adecuado del servidor y la activación de la licencia para su tipo de implementación.
 
 >[!BEGINTABS]
 
@@ -700,8 +706,8 @@ Después de desinstalar la versión anterior, debe descargar e instalar una vers
 
 Después de completar todos los procesos, realice una prueba de acción rápida para confirmar que la instalación es válida:
 
-1. Utilice Escritorio remoto (RDP) para iniciar sesión en el servidor e iniciar el servidor de AEM Forms mediante los servicios de.
-2. Utilice Escritorio remoto (RDP) para iniciar sesión en el servidor e iniciar el servidor de AEM Forms mediante Servicios de Windows. Una vez que el servidor se esté ejecutando, no cierre simplemente la ventana RDP. En su lugar, cierre la sesión correctamente cerrando la sesión del usuario, lo que garantiza que la sesión finalice sin problemas mientras el servicio sigue ejecutándose en segundo plano.
+1. Utilice Escritorio remoto (RDP) para iniciar sesión en el servidor de e iniciar el servidor de AEM Forms mediante los servicios de.
+2. Una vez que el servidor se esté ejecutando, no cierre simplemente la ventana RDP. En su lugar, cierre la sesión correctamente cerrando la sesión del usuario, lo que garantiza que la sesión finalice sin problemas mientras el servicio sigue ejecutándose en segundo plano.
 
 ###### Paso 10: Probar el servicio PDF Generator
 
