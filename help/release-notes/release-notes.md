@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 3f64cfa688ef1f0090b7ce0d821324593cbea693
+source-git-commit: 00161ecf48725b774c14ff6c89bd2817e00dc9f3
 workflow-type: tm+mt
-source-wordcount: '6707'
-ht-degree: 1%
+source-wordcount: '6710'
+ht-degree: 2%
 
 ---
 
@@ -71,11 +71,12 @@ Las funciones y mejoras clave de esta versión son las siguientes:
 
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64 bits) 
 
-* [Componente de archivo adjunto protegido](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): como medida de seguridad, el componente ahora evita el envío de archivos con extensiones modificadas que intentan omitir las comprobaciones de tipo de archivo permitido. Estos archivos se bloquean durante el envío para garantizar que solo se aceptan tipos de archivo válidos.
+* [Componente de archivo adjunto protegido](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): como medida de seguridad, el componente ahora evita el envío de archivos con extensiones modificadas que intentan omitir las comprobaciones de tipo de archivo permitido. Estos archivos se bloquean durante el envío para garantizar que solo se aceptan tipos de archivo válidos.
 
 * FORMS-20533, FORMS-20532: AEM Forms ahora incluye una actualización de la versión de Struts de 2.5.33 a 6.x. Se agregó la compatibilidad a través de una [revisión](/help/release-notes/aem-forms-hotfix.md) que puede [descargar e instalar](/help/release-notes/aem-forms-hotfix.md) para agregar compatibilidad con la última versión de Struts.
 
-* **LC-3922769**: Algunas características de AEM Forms ahora requieren OpenSSL 3 para funcionar correctamente. El sistema debe tener OpenSSL 3 instalado con las bibliotecas `libcrypto.so.3` y `libssl.so.3`. Como las actualizaciones de seguridad solo están disponibles en versiones con OpenSSL 3.0.14 y la compatibilidad con SafeLogic termina en febrero de 2025, hemos eliminado bsafe y ahora utilizamos OpenSSL 3 para el cumplimiento de la seguridad. Para conocer la compatibilidad de la plataforma y los requisitos detallados, consulte [Plataformas compatibles con AEM Forms en JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) y [Requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+* **LC-3922769**: Algunas características de AEM Forms ahora requieren OpenSSL 3 para funcionar correctamente. El sistema debe tener OpenSSL 3 instalado, junto con las bibliotecas `libcrypto.so.3` y `libssl.so.3`. Dado que las actualizaciones de seguridad solo están disponibles en las versiones 3.0.14 y posteriores y que la compatibilidad con SafeLogic finaliza en febrero de 2025, BSAFE se ha eliminado y OpenSSL 3 ahora se utiliza para el cumplimiento de la seguridad.  Para conocer la compatibilidad de la plataforma y los requisitos detallados, consulte [Plataformas compatibles con AEM Forms en JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) y [Requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+
 
   **Para comprobar la instalación de OpenSSL 3:**
 
@@ -229,11 +230,11 @@ Corregir etiquetas `<br>` inesperadas en el Editor de texto enriquecido con el m
 
 ### [!DNL Assets]{#assets-6523}
 
-* Los siguientes problemas se producen en la página de navegación local de [!DNL AEM] (6.5.22.0) después de seleccionar ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**, ir a la carpeta&#x200B;**[!UICONTROL &#x200B; Buscar Adobe Stock &#x200B;]**&#x200B;y seleccionar una imagen de archivo:
+* Los siguientes problemas se producen en la página de navegación local de [!DNL AEM] (6.5.22.0) después de seleccionar ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**, ir a la carpeta**[!UICONTROL  Buscar Adobe Stock ]**y seleccionar una imagen de archivo:
    * La imagen de archivo seleccionada no se puede autorizar y guardar porque al hacer clic en **[!UICONTROL Licencia y guardar]** se muestra una lista desplegable vacía.
    * Si se selecciona la imagen de Stock o se vuelve a introducir la URL de la página de stock, se redirige a la página principal de [!DNL AEM], lo que impide el acceso a la imagen de Adobe Stock. (ASSETS-48687)
 * Problemas al administrar carpetas si el nombre de la carpeta incluye un `/` en su nombre en la página de navegación local ([!DNL AEM]) de 6.5.22.0. (ASSETS-46740)
-* En [!DNL AEM] 6.5, la página de detalles del recurso no se carga desde la vista ![Colección](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Colecciones &#x200B;]**&#x200B;debido a un uso elevado de la memoria. (ASSETS-46738)
+* En [!DNL AEM] 6.5, la página de detalles del recurso no se carga desde la vista ![Colección](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Colecciones ]**debido a un uso elevado de la memoria. (ASSETS-46738)
 * Problemas de integración con [!DNL InDesign] como el servicio `Day CQ DAM Mime Type OSGI` identifica incorrectamente [!DNL InDesign] archivos como `x-adobe-indesign` en lugar de `x-indesign`. (ASSETS-45953)
 * La fuga de sesión de [!DNL AEM 6.5.21] se remonta al paso de flujo de trabajo de **[!UICONTROL Publicación programada en Brand Portal]** listo para usar. (ASSETS-44104)
 * **[!UICONTROL Memoria insuficiente (OOM)]** errores que se muestran en [!DNL AEM] al procesar y publicar imágenes. Este problema se debió a métodos obsoletos en flujos de trabajo, como **[!DNL Dam Asset update]** y **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -756,13 +757,13 @@ Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de 
 
 ## Sitios web restringidos{#restricted-sites}
 
-Estos sitios web solo están disponibles para los clientes de. Si es cliente de y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
+Estos sitios web solo están disponibles para los clientes de. Si es cliente y necesita acceso, póngase en contacto con el Administrador de cuentas de Adobe.
 
-* [Descarga de producto en Licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/customer-one/using/home).
+* [Descarga de producto en licensing.adobe.com](https://licensing.adobe.com/)
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página de producto](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
->* [[!DNL Experience Manager] Documentación de 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentación de 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Suscribirse a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
