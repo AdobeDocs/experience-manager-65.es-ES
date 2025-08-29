@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: d9c8b4ba18f94260fc0527b607f054d49c36ce53
+source-git-commit: 71a6a9739800c2e2bd9f8b97e3ec2b0245d6e1cd
 workflow-type: tm+mt
 source-wordcount: '3819'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
 
@@ -107,8 +107,8 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 >[!NOTE]
 >
 >Para ayudar a los clientes de AEM Forms a reducir el coste de propiedad, simplificar la arquitectura de implementación y modernizar la pila de desarrollo, la plataforma empresarial de Adobe Experience Manager se aleja de las implementaciones basadas en servidores de aplicaciones en favor de implementaciones independientes basadas en OSGi. Adobe sigue siendo compatible con la pila JEE de AEM Forms con una matriz reducida de componentes de infraestructura.
->&#x200B;><br>
->&#x200B;>Con la versión 6.5, ya no se admiten los componentes de infraestructura que tengan el menor uso entre los clientes de Adobe, de la siguiente manera:
+>><br>
+>>Con la versión 6.5, ya no se admiten los componentes de infraestructura que tengan el menor uso entre los clientes de Adobe, de la siguiente manera:
 >
 > - Base de datos IBM® DB2®
 > - Sistemas operativos IBM® AIX® y Sun Solaris™
@@ -528,14 +528,16 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
   <th><p><strong>Formatos compatibles para la conversión a PDF</strong></p> </th>
  </tr>
  <tr>
-  <td><a href="https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> última versión</td>
-  <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF y DWF</td>
- </tr>
+   <td><a href="https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versión más reciente</td>
+   <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML y HTM</td>
+  </tr>
  <tr>
-  <td>Microsoft® Office 2019  </td>
+  <td>Microsoft® Office 2021  </td>
   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
  </tr>
- <tr>
+ </tr>
+
+<tr>
   <td>WordPerfect 2020<br /> </td>
   <td>WP, WPD</td>
  </tr>
@@ -561,7 +563,7 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 >
 >Además,:
 >
->- PDF Generator requiere una versión de 32 bits de [Acrobat 2020 classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) para realizar la conversión.
+>- PDF Generator requiere Adobe Acrobat Pro DC (32 bits) para realizar la conversión.
 >- PDF Generator solo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
 >- La instalación de Microsoft® Office Professional Plus puede utilizar licencias por volumen basadas en Retail o MAK/KMS/AD.
 >- Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
@@ -823,7 +825,7 @@ AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones adem
 ## Directiva de compatibilidad de parches de terceros {#third-party-patch-support-policy}
 
 
-Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65_es](https://adobe.com/go/learn_aemforms_documentation_65_es) .
+Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_es) .
 
 
 AEM Forms en plataformas de referencia de terceros de JEE indica el nivel de parche específico de la infraestructura de terceros que se actualizó durante el desarrollo y lanzamiento de AEM Forms en JEE, y desde el nivel mínimo de parches/service pack de la infraestructura compatible con esa versión de AEM Forms en JEE.
@@ -853,7 +855,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -924,7 +926,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -956,6 +958,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Compatibilidad añadida | Compatibilidad eliminada | Compatibilidad obsoleta |
 | -------------- | --------------- | ------------------- |
 | SUSE® Linux® Enterprise Server 15 SP6 (64 bits) | |  |
+
+### Versión 6.5.21.0 (13 de junio de 2024)
+
+| Compatibilidad añadida | Compatibilidad eliminada | Compatibilidad obsoleta |
+| -------------- | --------------- | ------------------- |
+| Microsoft® Office 2021 |  |  |
 
 ### Versión 6.5.19.1 (15 de diciembre de 2023)
 
