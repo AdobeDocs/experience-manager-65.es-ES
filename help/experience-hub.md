@@ -3,13 +3,14 @@ title: Acerca de Experience Hub
 description: Obtenga información acerca de la página de Experience Hub de Adobe.
 landing-page-description: Obtenga información acerca de Adobe Experience Hub, un punto de partida centralizado para acceder a todas las funcionalidades de AEM.
 solution: Experience Manager, Experience Manager 6.5
-feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
+role: Admin, Architect, Developer, User
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: 25c154fb310902079e6cd116e29a8e7f9a88e157
+source-git-commit: fa84767b13e3b13ee5115b7dc7d2032092a9063b
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
@@ -19,7 +20,7 @@ Experience Hub presenta un punto de partida centralizado para administrar conten
 
 Vea un recorrido rápido por el espacio de trabajo reinventado de AEM Experience Hub (4 minutos y 9 segundos).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471444?learn=on&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -82,4 +83,4 @@ Si no existen entornos de producción de AEM Cloud Service o Managed Services, l
 
 ## Asistente de IA en AEM
 
-Para los clientes que han [completado criterios de requisitos previos](/help/ai-assistant-in-aem.md#get-access), el Asistente de IA en AEM está disponible para los usuarios de su organización. Ver [Asistente de IA en AEM](/help/ai-assistant-in-aem.md).
+Para los clientes que han [completado criterios de requisitos previos](/help/ai-assistant-in-aem.md#get-access), el Asistente de IA en AEM está disponible para los usuarios de su organización. Consulte [Asistente de IA en AEM](/help/ai-assistant-in-aem.md).
