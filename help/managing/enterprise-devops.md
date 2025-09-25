@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '983'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Las operaciones de desarrollo empresarial tienen como objetivo evitar problemas 
 
 ## Entornos {#environments}
 
-Una implementación de Adobe Experience Manager AEM () suele consistir en varios entornos, que se utilizan para diferentes propósitos en diferentes niveles:
+Una implementación de Adobe Experience Manager (AEM) suele consistir en varios entornos, que se utilizan para diferentes propósitos a diferentes niveles:
 
 * [Desarrollo](#development)
 * [Garantía de calidad](#quality-assurance)
@@ -52,7 +52,7 @@ Los desarrolladores son responsables de desarrollar y personalizar el proyecto p
 * Realizan el diseño.
 * Desarrollan los servicios y secuencias de comandos necesarias para implementar la funcionalidad requerida.
 
-La configuración del entorno [development](/help/sites-developing/best-practices.md) puede depender de varios factores, aunque se compone de:
+La configuración del entorno de [desarrollo](/help/sites-developing/best-practices.md) puede depender de varios factores, aunque normalmente se compone de lo siguiente:
 
 * Un sistema de desarrollo integrado con control de versiones para proporcionar una base de código integrada. Se utiliza para combinar y consolidar código de los entornos de desarrollo individuales utilizados por cada desarrollador.
 * Un entorno personal para cada desarrollador que normalmente reside en su equipo local. A intervalos adecuados, el código se sincroniza con el sistema de control de versiones
@@ -61,7 +61,7 @@ Según la escala del sistema, el entorno de desarrollo puede tener instancias de
 
 ### Garantía de calidad {#quality-assurance}
 
-El equipo de garantía de la calidad utiliza este entorno para [probar](/help/sites-developing/test-plan.md) exhaustivamente el nuevo sistema; el diseño y la función. Debe tener entornos de creación y de publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto de todas las aplicaciones de pruebas.
+El equipo de garantía de la calidad utiliza este entorno para [probar](/help/sites-developing/test-plan.md) exhaustivamente el nuevo sistema, tanto su diseño como funciones. Debe tener entornos de creación y de publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto de todas las aplicaciones de pruebas.
 
 ### Ensayo {#staging}
 
@@ -80,7 +80,7 @@ Un entorno de producción consta de al menos una instancia de autor y una instan
 * Instancia [de creación](#author) para la entrada de contenido.
 * Una instancia de [publicación](#publish) para el contenido disponible para los visitantes y usuarios.
 
-Según la escala del proyecto, a menudo consta de varias instancias de autor, varias instancias de publicación o ambas. En un nivel inferior, el repositorio también se puede agrupar en varios casos.
+Según la escala del proyecto, a menudo consta de varias instancias de creación o publicación, o ambas. En un nivel inferior, el repositorio también se puede agrupar en varios casos.
 
 #### Autor {#author}
 
@@ -93,11 +93,11 @@ Las instancias de autor generalmente se encuentran detrás del servidor de segur
 
 El contenido que se activó se empaqueta y se coloca en la cola de replicación del entorno del autor. A continuación, el proceso de replicación transporta ese contenido al entorno de publicación.
 
-Para volver a replicar los datos generados en un entorno de publicación en el entorno de autor, un detector de replicación del entorno de autor sondea el entorno de publicación y recupera dicho contenido del buzón de salida de replicación inversa del entorno de publicación.
+Para replicar de forma inversa los datos generados en un entorno de publicación en el entorno de creación, un detector de replicación del entorno de autor sondea el entorno de publicación y recupera dicho contenido del buzón de salida de replicación inversa del entorno de publicación.
 
 #### Publicación {#publish}
 
-Hay un entorno de publicación en la zona desmilitarizada (DMZ). Este es el entorno en el que los visitantes acceden al contenido (por ejemplo, a través de un sitio web o en forma de aplicación móvil) e interactúan con él; ya sea pública o dentro de la intranet. El entorno de publicación:
+Un entorno de publicación se encuentra en la Zona desmilitarizada (DMZ). Este es el entorno en el que los visitantes acceden al contenido (por ejemplo, a través de un sitio web o mediante aplicación móvil) e interactuarán con él, ya sea público o dentro de la intranet. El entorno de publicación:
 
 * contiene el contenido replicado desde el entorno de creación.
 * Pone ese contenido a disposición de los visitantes.
@@ -115,9 +115,9 @@ Propagar siempre el código de abajo a arriba:
 * A continuación, se vuelve a probar en los entornos de ensayo.
 * Solo entonces debe implementarse el código en los entornos de producción.
 
-El código (por ejemplo, las plantillas de diseño y la funcionalidad personalizada de la aplicación web) se transfiere exportando e importando paquetes entre los distintos repositorios de contenido. Cuando es significativa, esta replicación puede configurarse como un proceso automático.
+El código (por ejemplo, las plantillas de diseño y la funcionalidad de la aplicación web personalizadas) se transfiere por medio de la exportación e importación de paquetes entre los distintos repositorios de contenido. Cuando es significativa, esta replicación puede configurarse como un proceso automático.
 
-AEM Los proyectos suelen implementar código de déclencheur:
+Los proyectos de AEM suelen activar la implementación del código:
 
 * Automáticamente: para su transferencia a los entornos de desarrollo y control de calidad.
 * Manualmente: las implementaciones en los entornos de ensayo y producción se realizan de manera más controlada, a menudo manual; aunque la automatización es posible si es necesario.
@@ -134,11 +134,11 @@ El contenido de producción debe trasladarse del entorno de producción al entor
 
 >[!NOTE]
 >
->Esto no significa que el contenido de ensayo deba sincronizarse continuamente con la producción; las actualizaciones regulares son suficientes, pero especialmente antes de probar una nueva iteración de código. El contenido en los entornos de control de calidad y desarrollo no necesita actualizarse con tanta frecuencia, debería ser una buena representación del contenido de producción.
+>Esto no significa que el contenido de ensayo tenga que sincronizarse continuamente con la producción; las actualizaciones regulares son suficientes, en especial antes de probar una nueva iteración de código. El contenido en los entornos de control de calidad y desarrollo no necesita actualizarse con tanta frecuencia, solo debe ser una buena representación del contenido de producción.
 
-Se puede transferir contenido:
+El contenido se puede transferir de la siguiente manera:
 
 * Entre los distintos entornos, mediante la exportación e importación de paquetes.
-* AEM Entre diferentes instancias: replicando directamente ([replicación de la](/help/sites-deploying/replication.md)), el contenido (usando una conexión HTTP o HTTPS).
+* Entre diferentes instancias: replicando directamente ([replicación de AEM](/help/sites-deploying/replication.md)) el contenido (mediante una conexión HTTP o HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

@@ -9,9 +9,9 @@ version: Experience Manager 6.5
 index: y
 recommendations: noDisplay
 source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '131'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ El archivo metadata.md incluye metadatos de repositorios que pasan a los archivo
 | metadata | función |
 |--- |--- |
 | solution-title | Se utiliza en el encabezado del artículo como vínculo. |
-| solution-hub-url | Abre la página del centro de Aprendizaje y asistencia. |
+| solution-hub-url | Abre la página del centro de Formación y asistencia. |
 | solution-icon | Muestra el icono de la solución junto al título de la solución. No implementado aún. |
 | getting-started-url | Vínculo a la página de introducción. |
 | tutorials-url | Vínculo a videotutoriales. |
@@ -35,4 +35,4 @@ En el archivo TOC.md
 | metadata | función |
 |--- |--- |
 | user-guide-title | Se utiliza en el encabezado del artículo como vínculo. |
-| user-guide-url | Abre la página del centro de Aprendizaje y asistencia. |
+| user-guide-url | Abre la página del centro de Formación y asistencia. |

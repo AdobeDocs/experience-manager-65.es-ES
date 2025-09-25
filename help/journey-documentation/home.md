@@ -1,20 +1,20 @@
 ---
 title: Recorridos de documentación de AEM
-description: Los Recorrido AEM de documentación proporcionan una estructura narrativa dentro de la documentación de la documentación de al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
+description: Los recorridos de documentación proporcionan una estructura narrativa dentro de la documentación de AEM al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
 exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
 solution: Experience Manager, Experience Manager Sites
 role: Admin, Architect,Data Architect,Developer,User,Leader
 feature: Administering
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1222'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Recorridos de documentación de AEM {#aem-documentation-journeys}
 
-Los Recorrido AEM de documentación proporcionan una estructura narrativa dentro de la documentación de la documentación de al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
+Los recorridos de documentación proporcionan una estructura narrativa dentro de la documentación de AEM al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Los recorridos, diseñados pensando en los principiantes de AEM, presentan los conceptos y características para lograr las metas de la A a la Z.
 
 ## ¿Qué es un Recorrido de documentación? {#what-is}
 
@@ -84,13 +84,13 @@ Los Recorridos de documentación están pensados como un complemento de la docum
 
 ## ¿Qué recorridos hay? {#journeys}
 
-Ya tiene a su disposición varios Recorridos de documentación. Dado que cada recorrido AEM está diseñado como una narrativa, empiece con la introducción y siga leyendo hasta el final para comprender el tema en el contexto de la creación de un sitio web. (Filmado en TEDxBoston)
+Ya tiene a su disposición varios Recorridos de documentación. Dado que cada recorrido está diseñado como una narrativa, empiece con la introducción y siga leyendo hasta el final para entender el tema en el contexto de AEM.
 
 | Recorrido | Descripción |
 |---|---|
 | [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | Comience aquí para ver cómo AEM admite modelos de desarrollo sin encabezado y cómo comenzar un proyecto desde la planificación, pasando por la implementación, hasta el lanzamiento. |
 | [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md) | Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones sin encabezado de AEM, sus funcionalidades y cómo diseñar el contenido en su primer proyecto sin encabezado. |
-| [Recorrido para arquitectos de Headless](/help/journey-headless/architect/overview.md) | Comience aquí para ver una introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y cómo diseñar contenido para su proyecto. |
+| [Recorrido para arquitectos de Headless](/help/journey-headless/architect/overview.md) | Comience aquí para ver una introducción sobre las potentes y flexibles funciones sin encabezado de Adobe Experience Manager as a Cloud Service además de cómo diseñar contenido para su proyecto. |
 | [Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md) | Comience aquí para ver cómo configurar y administrar sus proyectos de traducción sin encabezado en AEM. |
 
 <!--

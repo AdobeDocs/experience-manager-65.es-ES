@@ -1,22 +1,22 @@
 ---
-title: Directrices de accesibilidad web y Adobe Experience Manager AEM ()
-description: Introducción a Adobe Experience Manager AEM () y las directrices de accesibilidad web
+title: Adobe Experience Manager (AEM) y las directrices de accesibilidad web
+description: Una introducción a Adobe Experience Manager (AEM) y las directrices de accesibilidad web
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '397'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
-# AEM Directrices de accesibilidad web de y{#aem-and-the-web-accessibility-guidelines}
+# AEM y las directrices de accesibilidad web{#aem-and-the-web-accessibility-guidelines}
 
-Existen muchas motivaciones sociales, económicas y legales para garantizar que el contenido web esté diseñado para ser lo más accesible posible a la audiencia de destino, sin importar la discapacidad o las limitaciones que pueda tener. Por lo tanto, la accesibilidad web con Adobe Experience Manager AEM () es un aspecto cada vez más importante del buen diseño web.
+Existen muchas motivaciones sociales, económicas y legales para garantizar que el contenido web esté diseñado para ser lo más accesible posible a la audiencia de destino, sin importar la discapacidad o las limitaciones que pueda tener. Por lo tanto, la accesibilidad web con Adobe Experience Manager (AEM) es un aspecto cada vez más importante del buen diseño web.
 
-AEM Crear sitios web y contenido accesibles con impactos de la:
+Crear sitios web y contenido accesibles con AEM afecta a lo siguiente:
 
 * Administradores responsables de la configuración de AEM para garantizar que las funciones de accesibilidad estén correctamente habilitadas.
 
@@ -26,7 +26,7 @@ AEM Crear sitios web y contenido accesibles con impactos de la:
 
 * Los desarrolladores de plantillas también deben tener en cuenta estos problemas al implementar el diseño del sitio web.
 
-Adobe Experience Manager trabaja con las [directrices](#wcag-accessibility-guidelines) proporcionadas por el [Consorcio World Wide Web](#world-wide-web-consortium).
+Adobe Experience Manager funciona con las [directrices](#wcag-accessibility-guidelines) proporcionadas por [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Para ayudar a los diseñadores y desarrolladores web a producir sitios web acces
 
 WCAG 2.1 proporciona [directrices (con criterios de éxito relacionados) que cubren los niveles de accesibilidad y la forma de cumplirlos](https://www.w3.org/TR/WCAG/#conformance).
 
-## AEM WCAG 2.1 y {#wcag-aem}
+## WCAG 2.1 y AEM {#wcag-aem}
 
 Con Adobe Experience Manager, los autores de contenido o los propietarios de sitios web pueden crear contenido web que cumpla los criterios de éxito de nivel A y nivel AA de WCAG 2.1:
 
@@ -51,10 +51,10 @@ Con Adobe Experience Manager, los autores de contenido o los propietarios de sit
 * [Crear contenido accesible](/help/sites-authoring/creating-accessible-content.md) detalla cómo se relacionan con AEM.
 
 * [Configuración del Editor de texto enriquecido para producir sitios accesibles](/help/sites-administering/rte-accessible-content.md)
-AEM Directrices sobre cómo los administradores pueden configurar las opciones para la producción de contenido accesible.
+Directrices sobre cómo pueden configurar AEM los administradores para producir contenido accesible.
 
-* [Creando Forms adaptable accesible](/help/forms/using/creating-accessible-adaptive-forms.md)
-Adobe Experience Manager AEM () incluye varias características y funcionalidades que mejoran la facilidad de uso de los formularios adaptables para usuarios con diferentes capacidades. La solución también ayuda a los autores de formularios a crear formularios adaptables accesibles.
+* [Creación de formularios adaptables accesibles](/help/forms/using/creating-accessible-adaptive-forms.md)
+Adobe Experience Manager (AEM) incluye varias características y funcionalidades que mejoran la usabilidad de los formularios adaptables para usuarios con diferentes capacidades. La solución también ayuda a los autores de formularios a crear formularios adaptables accesibles.
 
 >[!NOTE]
 >

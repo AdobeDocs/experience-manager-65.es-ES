@@ -1,33 +1,33 @@
 ---
-title: Gestión de solicitudes de RGPD para Adobe Experience Manager Foundation
-description: Gestión de solicitudes de RGPD para Adobe Experience Manager Foundation
+title: Gestión de solicitudes del RGPD para Adobe Experience Manager Foundation
+description: Gestión de solicitudes del RGPD para Adobe Experience Manager Foundation
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '458'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
-# Tratamiento de solicitudes de RGPD para Adobe Experience Manager AEM (Base de datos de la){#handling-gdpr-requests-for-the-aem-foundation}
+# Gestión de solicitudes del RGPD para Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las regulaciones de protección de datos y privacidad; como el RGPD, la CCPA, etc.
+>El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las regulaciones de protección de datos y privacidad, como el RGPD, la CCPA, etc.
 
-## AEM Compatibilidad con RGPD de base de {#aem-foundation-gdpr-support}
+## Compatibilidad con el RGPD de AEM Foundation {#aem-foundation-gdpr-support}
 
-AEM En el nivel de base de datos de usuario, los datos personales almacenados son el perfil del usuario. Por lo tanto, la información de este artículo aborda principalmente de cómo acceder y eliminar perfiles de usuario, para tratar las solicitudes de Acceso y Eliminación de RGPD respectivamente.
+En el nivel de AEM Foundation, los datos personales almacenados se mantienen en el perfil del usuario. Por lo tanto, la información de este artículo aborda sobre todo cómo acceder a los perfiles de usuario y eliminarlos para tratar las solicitudes de acceso y eliminación, respectivamente.
 
 ## Acceso a un perfil de usuario {#accessing-a-user-profile}
 
 ### Pasos manuales {#manual-steps}
 
-1. Abra la consola Administración de usuarios navegando a **[!UICONTROL Configuración - Seguridad - Usuarios]** o directamente a `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Abra la consola de administración de usuarios navegando a **[!UICONTROL Configuración - Seguridad - Usuarios]** o directamente a `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -39,7 +39,7 @@ AEM En el nivel de base de datos de usuario, los datos personales almacenados so
 
    ![userprofile_small](assets/userprofile_small.png)
 
-### API del HTTP {#http-api}
+### API HTTP {#http-api}
 
 Como ya se ha mencionado, Adobe proporciona las API para acceder a los datos de usuario, para facilitar la automatización. Existen varios tipos de API que puede utilizar:
 
@@ -58,7 +58,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-*Recuperando datos de usuario*
+*Recuperación de datos de usuario*
 
 Uso de la ruta del nodo desde la propiedad del inicio de la carga útil JSON devuelta desde el comando anterior:
 
@@ -75,49 +75,49 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Desactivación de un usuario {#disable-user}
 
 1. Abra la consola Administración de usuarios y busque el usuario en cuestión, tal como se ha descrito anteriormente.
-1. Pase el ratón sobre el usuario y haga clic en el icono de selección. El perfil se vuelve gris para indicar que está seleccionado.
+1. Pase el puntero por encima del usuario y haga clic en el icono de selección. El perfil se vuelve gris para indicar que está seleccionado.
 
-1. Pulse el botón Desactivar en el menú superior para desactivar el usuario:
+1. Pulse el botón Deshabilitar en el menú superior para desactivar el usuario:
 
    ![userdisable](assets/userdisable.png)
 
-1. Finalmente, confirme la acción:
+1. Por último, confirme la acción:
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   La interfaz de usuario indica que el usuario está desactivado atenuando y añadiendo un candado a la tarjeta del perfil:
+   La interfaz de usuario indica que el usuario está desactivado al mostrarlo en gris y añadir un candado a la tarjeta de perfil:
 
-   ![usuario deshabilitado](assets/disableduser.png)
+   ![disableduser](assets/disableduser.png)
 
 ### Eliminación de información del perfil de usuario {#delete-user-profile-information}
 
-1. Inicie sesión en el CRXDE Lite y luego busque `[!UICONTROL userId]`:
+1. Inicie sesión en CRXDE Lite y luego busque `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Abra el nodo de usuario que se encuentra en `[!UICONTROL /home/users]` de forma predeterminada:
+1. Abra el nodo de usuario, que se encuentra en `[!UICONTROL /home/users]` de forma predeterminada:
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Elimine los nodos de perfil y todos sus elementos secundarios. AEM Existen dos formatos para los nodos de perfil, según la versión de la:
+1. Elimine los nodos de perfil y todos sus elementos secundarios. Existen dos formatos para los nodos de perfil, según la versión de AEM:
 
-   1. El perfil privado predeterminado bajo `[!UICONTROL /profile]`
-   1. AEM `[!UICONTROL /profiles]`, para los nuevos perfiles creados con la versión 6.5 de la.
+   1. El perfil privado predeterminado en `[!UICONTROL /profile]`
+   1. `[!UICONTROL /profiles]`, para nuevos perfiles creados con AEM 6.5.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
-### API del HTTP {#http-api-1}
+### API HTTP {#http-api-1}
 
-Los siguientes procedimientos utilizan la herramienta de línea de comandos `curl` para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL captura]** `userId` y eliminar perfiles de `cavery` que están disponibles en la ubicación predeterminada.
+Los siguientes procedimientos utilizan la herramienta de línea de comandos `curl` para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL captura]** `userId` y eliminar los perfiles de `cavery` disponibles en la ubicación predeterminada.
 
-* *Descubriendo el inicio del usuario*
+* *Descubrimiento del inicio del usuario*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-* *Deshabilitando el usuario*
+* *Deshabilitación del usuario*
 
 Uso de la ruta del nodo desde la propiedad del inicio de la carga útil JSON devuelta desde el comando anterior:
 

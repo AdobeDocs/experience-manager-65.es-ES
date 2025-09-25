@@ -1,23 +1,23 @@
 ---
 title: Guía del usuario de administración de AEM 6.5
-description: Obtenga información acerca de la administración de AEM 6.5. Estas guías tratan sobre las funciones del sitio, las operaciones de implementación, las funciones de seguridad, la personalización, la integración y mucho más.
+description: Obtenga información acerca de la administración de AEM 6.5. Estas guías tratan sobre las funciones del sitio, las de seguridad, las operaciones de implementación, funciones, personalizaciones, integraciones, etc.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # Guía del usuario de administración de AEM 6.5
 
-Obtenga información acerca de la administración de AEM 6.5. Estas guías tratan sobre las funciones del sitio, las operaciones de implementación, las funciones de seguridad, la personalización, la integración y mucho más.
+Obtenga información acerca de la administración de AEM 6.5. Estas guías tratan sobre las funciones del sitio, las de seguridad, las operaciones de implementación, funciones, personalizaciones, integraciones, etc.
 
-## Artículos clave sobre administración
+## Artículos clave de administración
 
 * [Administración de varios sitios](/help/sites-administering/msm.md)
 * [MSM y traducción](/help/sites-administering/msm-and-translation.md)

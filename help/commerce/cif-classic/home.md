@@ -6,27 +6,27 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 90a8548cdcaadffb9930a5c06a601cb39e835146
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '72'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 
 # AEM CIF Classic {#commerce-guide}
 
-AEM CIF En esta página se muestran los recursos informativos relacionados con la aplicación de la versión de Classic.
+En esta página se muestran los recursos informativos relacionados con AEM CIF Classic.
 
 >[!NOTE]
 >
->CIF AEM La versión Classic de la está en desuso y se ha eliminado de la versión 6.5 SP 22 en adelante.  [Póngase en contacto con el servicio de atención al cliente del Adobe](https://experienceleague.adobe.com/es?support-solution=General#support) si necesita un paquete de compatibilidad.
+>CIF Classic está obsoleto y se ha eliminado desde AEM 6.5 SP 22 en adelante.  [Póngase en contacto con el servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/es/home?support-solution=General#support) si necesita un paquete de compatibilidad.
 >
->* AEM CIF Los nuevos proyectos deben usar [&#128279;](/help/commerce/cif/introduction.md).
->* CIF AEM CIF El clásico existente debería [migrar a la versión de la versión de](/help/commerce/cif/migration.md).
+>* Los nuevos proyectos deben usar [AEM CIF](/help/commerce/cif/introduction.md).
+>* El CIF Classic existente debería [migrar al AEM CIF](/help/commerce/cif/migration.md).
 
-## CIF Artículos Clásicos Clave {#key-articles}
+## Artículos principales de CIF Classic {#key-articles}
 
 * [Conceptos ](administering/concepts.md)
-* [Administración](administering/generic.md)
+* [Administración ](administering/generic.md)
 * [Implementación](deploying/ecommerce.md)
-* [El desarrollo de](developing/ecommerce.md)
+* [Desarrollo](developing/ecommerce.md)
