@@ -106,8 +106,8 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 >[!NOTE]
 >
 >Para ayudar a los clientes de AEM Forms a reducir el coste de propiedad, simplificar la arquitectura de implementación y modernizar la pila de desarrollo, la plataforma empresarial de Adobe Experience Manager se aleja de las implementaciones basadas en servidores de aplicaciones en favor de implementaciones independientes basadas en OSGi. Adobe sigue siendo compatible con la pila JEE de AEM Forms con una matriz reducida de componentes de infraestructura.
->><br>
->>Con la versión 6.5, ya no se admiten los componentes de infraestructura que tengan el menor uso entre los clientes de Adobe, de la siguiente manera:
+>&#x200B;><br>
+>&#x200B;>Con la versión 6.5, ya no se admiten los componentes de infraestructura que tengan el menor uso entre los clientes de Adobe, de la siguiente manera:
 >
 > - Base de datos IBM® DB2®
 > - Sistemas operativos IBM® AIX® y Sun Solaris™
