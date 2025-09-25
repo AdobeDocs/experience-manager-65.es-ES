@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: f202069d2fb8cbb942dad06974636592279fe245
+source-git-commit: f7e0cc48dbee90af2440e83ba82316d8237dcbe4
 workflow-type: tm+mt
 source-wordcount: '3534'
 ht-degree: 12%
@@ -102,7 +102,7 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
 | Azul Zulu OpenJDK 8 - 64 bits | A: Compatible `[3]` | |
 
 1. Oracle se ha trasladado a un modelo de &quot;Soporte a largo plazo&quot; (LTS) para los productos de Oracle Java™ SE. Java™ 9, Java™ 10 y Java™ 12 son versiones que no son de LTS de Oracle (consulte [Guía de asistencia de Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en un entorno de producción, Adobe solo es compatible con las versiones LTS de Java™. El soporte y la distribución del JDK de Oracle Java™ SE, incluidas todas las actualizaciones de mantenimiento de las versiones de LTS más allá del final de las actualizaciones públicas, son compatibles directamente con Adobe para todos los clientes de AEM que utilizan la tecnología Oracle Java™ SE. Consulte la [directiva de soporte de Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Importante: Oracle Java™ 11 es compatible hasta septiembre de 2026 como mínimo. Oracle Java™ 17 y 21 son compatibles con [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+   **Importante: Oracle Java™ 11 es compatible hasta septiembre de 2026 como mínimo. Oracle Java™ 17 y 21 son compatibles con [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. El JRE de IBM® solo se admite junto con el servidor de aplicaciones WebSphere®.
 
@@ -245,7 +245,6 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 >* Microsoft® Visual C++ 2013 redistribuible
 >* Microsoft® Visual C++ 2019 (VC14.28 o superior) redistribuible
 
-
 ### Entornos de computación virtual y en la nube {#virtual-cloud-computing-environments}
 
 Adobe Experience Manager es compatible con la ejecución en una máquina virtual en entornos de computación en la nube. Estos entornos incluyen, como Microsoft® Azure y Amazon Web Service (AWS), que se ejecutan de conformidad con los requisitos técnicos enumerados en esta página y según los términos de soporte estándar de Adobe.
@@ -260,7 +259,7 @@ Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera d
 
 ### Plataformas Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
-Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=es). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
+Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargar la versión más reciente de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 requiere Dispatcher versión 4.3.2 o superior.
 
 Los siguientes servidores web son compatibles con la versión 4.3.2 de Dispatcher:
 
