@@ -7,9 +7,9 @@ user-guide-description: Utilice la documentación de Adobe Experience Manager 6.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
 source-git-commit: ab25ac9701bd138ceb11bb9b11539e950dde02d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7562'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -876,9 +876,9 @@ ht-degree: 99%
       + [Proteger un documento en nombre de otro usuario](/help/forms/using/protect-document-on-behalf-of-another-user.md)
    + Forms Designer {#use-forms-designer}
       + [Ayuda de Forms Designer](/help/forms/using/forms-designer-help.md)
-      + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)
-      + [Tutoriales de inicio rápido de Designer ](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
-      + [Muestras de Designer ](https://www.adobe.com/go/learn_aemforms_designer_samples_65_es)
+      + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
+      + [Tutoriales de inicio rápido de Designer ](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+      + [Muestras de Designer ](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
       + [Conceptos básicos de scripts en Designer ](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_es)
       + [Referencia de scripts en Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_es)
       + [Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
@@ -1227,7 +1227,7 @@ ht-degree: 99%
       + [Pasar credenciales mediante encabezados WS-Security](/help/forms/developing/passing-credentials.md)
    + Glosario {#aem-forms-glossary}
 +[Glosarios de AEM Forms](/help/forms/using/aem-forms-glossary.md)
-+ IA en AEM {#ai-in-aem}
++ Asistente de IA en AEM {#ai-in-aem}
    + [Información general](/help/ai-in-aem/overview.md)
    + Asistente de IA {#ai-assistant}
       + [Configuración del asistente de IA en AEM](/help/ai-assistant-in-aem-admin.md)
