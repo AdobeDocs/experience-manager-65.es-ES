@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: 5ccac0aadce3971e66da052d393cbd33b61e94f7
+source-git-commit: 633b1378d97ea0544f27822fb5801caa3ed15f8e
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '456'
 ht-degree: 3%
 
 ---
@@ -17,25 +17,25 @@ ht-degree: 3%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
-Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] instala el conector mejorado. Antes de instalar, revise la compatibilidad con la plataforma y otros [requisitos previos para el conector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] instala el conector mejorado. Antes de instalar, revise la compatibilidad con la plataforma y otros [requisitos previos para el conector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
->* El Adobe requiere la implementación y configuración de [!DNL Adobe Workfront for Experience Manager enhanced connector] solamente a través de socios certificados o [!DNL Adobe Professional Services]. Si se implementa y se configura sin un socio certificado o [!DNL Adobe Professional Services], no se admite en el Adobe.
+>* Adobe requiere la implementación y configuración de [!DNL Adobe Workfront for Experience Manager enhanced connector] solo a través de socios certificados o [!DNL Adobe Professional Services]. Si se implementa y se configura sin un socio certificado o [!DNL Adobe Professional Services], no es compatible con Adobe.
 >
->* El Adobe puede publicar actualizaciones para [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hagan redundante este conector; si esto sucede, es posible que los clientes deban realizar la transición desde el uso de este conector.
+>* Adobe puede publicar actualizaciones para [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hagan redundante este conector; si esto sucede, es posible que los clientes deban realizar la transición desde el uso de este conector.
 >
->* El Adobe admite las versiones de conector mejoradas 1.7.4 y posteriores. No se admiten versiones preliminares ni versiones personalizadas anteriores. Para comprobar la versión mejorada del conector, vaya al grupo `digital.hoodoo` disponible en el panel izquierdo de [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es).
+>* Adobe admite las versiones 1.7.4 y posteriores del conector mejorado. No se admiten versiones preliminares ni versiones personalizadas anteriores. Para comprobar la versión mejorada del conector, vaya al grupo `digital.hoodoo` disponible en el panel izquierdo de [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es).
 >
 >* Consulte [Examen de certificación de socio para el conector mejorado de Workfront para Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obtener información sobre el examen, consulte [Guía para exámenes](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 Para instalar el conector, siga estos pasos:
 
 1. Descargue el conector desde [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-1. [Configurar el firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
+1. [Configurar el firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
 1. En Dispatcher, permita los encabezados HTTP llamados `authorization`, `username` y `apikey`. Permitir solicitudes de `GET`, `POST` y `PUT` a `/bin/workfront-tools`.
 1. Asegúrese de que las siguientes rutas no existan en el repositorio [!DNL Experience Manager]:
 
@@ -49,17 +49,20 @@ Para instalar el conector, siga estos pasos:
 1. Cree `wf-workfront-users` en el grupo de usuarios [!DNL Experience Manager] y asigne el permiso `jcr:all` a `/content/dam`.
 1. Agregue una propiedad personalizada a la definición de índice predeterminada de **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**. Siga estos pasos:
    * Agregar una propiedad de **`nt:unstructured`** denominada **`wfReferenceNumber`** a:
-
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
    * Reindexe `index /oak:index/ntFolderDamLucene` cambiando el indicador de reindexación a `true`.
 
 Se crea automáticamente un usuario del sistema `workfront-tools` y los permisos necesarios se administran automáticamente. Todos los usuarios de [!DNL Workfront] que utilizan el conector se agregan automáticamente como parte de este grupo.
 
+>[!NOTE]
+>
+> Cuando use servidores proxy corporativos, incluya [!DNL workfront] en la [!UICONTROL configuración proxy de componentes HTTP Apache PID] para que el [!UICONTROL conector mejorado de Workfront] lo reconozca. El formato PID requerido es: `org.apache.http.proxyconfigurator~workfront`.
+
 ## Configurar la conexión entre [!DNL Experience Manager] y [!DNL Workfront] {#configure-connection}
 
 Para crear una conexión con Workfront, siga estos pasos:
 
-1. En [!DNL Experience Manager], seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuración de herramientas de Workfront]**.
+1. En [!DNL Experience Manager], seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de herramientas de Workfront]**.
 
 1. Seleccione `workfront-tools` en el panel izquierdo y seleccione la opción **[!UICONTROL Crear]** en el área superior derecha de la página.
 
