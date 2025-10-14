@@ -50,7 +50,7 @@ Para obtener más información, consulte los recursos adicionales a continuació
 #### AEM ¿Cómo se auditan las capacidades de la, como los intentos de inicio de sesión y los cambios de ACL o de permisos? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
 AEM ha introducido la capacidad de registrar cambios administrativos para mejorar la resolución de problemas y la auditoría. De manera predeterminada, la información se registra en el archivo `error.log`. Para facilitar la monitorización, se recomienda redirigirlos a un archivo de registro independiente.
-AEM Para redirigir el resultado a un archivo de registro independiente, vea [Cómo auditar las operaciones de administración de usuarios en el espacio de trabajo de ](/help/sites-administering/audit-user-management-operations.md).
+AEM Para redirigir el resultado a un archivo de registro independiente, vea [Cómo auditar las operaciones de administración de usuarios en el espacio de trabajo de &#x200B;](/help/sites-administering/audit-user-management-operations.md).
 
 #### ¿Cómo se habilita SSL de forma predeterminada? {#how-to-enable-ssl-by-default}
 
@@ -76,7 +76,7 @@ Puede optar por recopilar estadísticas de uso mediante la interfaz de usuario t
 
 #### AEM ¿Existe un buen recurso que destaque las características clave para actualizar a la versión 6.4 de la versión de la aplicación de la versión de? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
-AEM Vea [Explicación de los motivos para la actualización de la versión de ](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html), que describe un desglose de alto nivel de las características clave para los clientes que planean actualizar a la versión más reciente de Adobe Experience Manager.
+AEM Vea [Explicación de los motivos para la actualización de la versión de &#x200B;](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html), que describe un desglose de alto nivel de las características clave para los clientes que planean actualizar a la versión más reciente de Adobe Experience Manager.
 
 ## Recursos {#assets}
 

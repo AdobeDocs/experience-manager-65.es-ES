@@ -26,7 +26,7 @@ El nuevo modo de ejecución no solo configurará automáticamente la instancia p
 >
 >AEM Dado que, por motivos prácticos, el modo listo para la producción de la solo cubrirá la mayoría de las tareas necesarias para proteger una instancia, es muy recomendable que consulte la [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md) antes de lanzarse a su entorno de producción.
 >
->AEM Además, tenga en cuenta que ejecutar el modo de producción lista para la producción deshabilitará de forma eficaz el acceso a CRXDE Lite. Si lo necesita con fines de depuración, consulte [Habilitación del CRXDE Lite en ](/help/sites-administering/enabling-crxde-lite.md). Para obtener más información, consulte la sección sobre cómo habilitar el servicio de depuración en AEM en .
+>AEM Además, tenga en cuenta que ejecutar el modo de producción lista para la producción deshabilitará de forma eficaz el acceso a CRXDE Lite. Si lo necesita con fines de depuración, consulte [Habilitación del CRXDE Lite en &#x200B;](/help/sites-administering/enabling-crxde-lite.md). Para obtener más información, consulte la sección sobre cómo habilitar el servicio de depuración en AEM en .
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 

@@ -48,7 +48,7 @@ Consulte [Creación para Adobe PhoneGap AEM Enterprise en &lbrace;1 para obtener
 
 ## Vínculos rápidos para desarrolladores {#quicklinks-for-developers}
 
-Hay aplicaciones de ejemplo que se integrarán con AEM Mobile y que el desarrollador puede personalizar. Haga clic en [Desarrollar Adobe PhoneGap AEM Enterprise con el código de tiempo de ejecución ](/help/mobile/developing-in-phonegap.md).
+Hay aplicaciones de ejemplo que se integrarán con AEM Mobile y que el desarrollador puede personalizar. Haga clic en [Desarrollar Adobe PhoneGap AEM Enterprise con el código de tiempo de ejecución &#x200B;](/help/mobile/developing-in-phonegap.md).
 
 En los capítulos siguientes aprenderá conceptos avanzados sobre el etiquetado de componentes en blanco de su aplicación, la localización, la internacionalización, la sincronización de contenido, la segmentación, Analytics y mucho más.
 

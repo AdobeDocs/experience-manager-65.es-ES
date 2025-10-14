@@ -137,7 +137,7 @@ AEM Revise los Requisitos técnicos para la versión 6.5 de la versión de y ase
 
 #### Consideraciones de reestructuración de contenido {#content-restructuring-considerations}
 
-AEM ha introducido cambios en la estructura del repositorio que ayudarán a que las actualizaciones sean más fluidas. Los cambios implican mover contenido fuera de la carpeta /etc a carpetas como /libs, /apps y /content, en función de si el contenido es propiedad de Adobe o de un cliente, lo que limita las posibilidades de sobrescribir contenido durante las versiones. AEM La reestructuración del repositorio se ha realizado de tal manera que no debería requerir cambios en el código en el momento de la actualización a la versión 6.5, aunque se recomienda revisar los detalles en [Reestructuración del repositorio en la versión ](/help/sites-deploying/repository-restructuring.md) mientras se planifica una actualización.
+AEM ha introducido cambios en la estructura del repositorio que ayudarán a que las actualizaciones sean más fluidas. Los cambios implican mover contenido fuera de la carpeta /etc a carpetas como /libs, /apps y /content, en función de si el contenido es propiedad de Adobe o de un cliente, lo que limita las posibilidades de sobrescribir contenido durante las versiones. AEM La reestructuración del repositorio se ha realizado de tal manera que no debería requerir cambios en el código en el momento de la actualización a la versión 6.5, aunque se recomienda revisar los detalles en [Reestructuración del repositorio en la versión &#x200B;](/help/sites-deploying/repository-restructuring.md) mientras se planifica una actualización.
 
 ### Evaluación de la complejidad de actualización {#assessing-upgrade-complexity}
 

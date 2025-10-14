@@ -33,7 +33,7 @@ El almacén de confianza puede contener más de una credencial de extensiones de
 
 >[!NOTE]
 >
->También puede importar y eliminar credenciales mediante programación. AEM (Consulte [Programar con formularios de la lista de distribución de formularios ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es)).
+>También puede importar y eliminar credenciales mediante programación. AEM (Consulte [Programar con formularios de la lista de distribución de formularios &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es)).
 
 ## Importar una credencial de extensiones de Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
 

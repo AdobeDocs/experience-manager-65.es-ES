@@ -31,7 +31,7 @@ Antes de realizar realmente cualquiera de los pasos de esta metodología, revise
 >* Administrador de acciones rápidas de ACS Commons
 >* Flujo de trabajo sintético
 >
->Este software es de código abierto y está cubierto por la [Licencia de ](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+>Este software es de código abierto y está cubierto por la [Licencia de &#x200B;](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
 ## Migrar a [!DNL Experience Manager] {#migrating-to-aem}
 
@@ -73,7 +73,7 @@ El otro método para la ingesta de recursos es extraer recursos del sistema de a
 
 #### Recuperación desde el sistema de archivos local {#pulling-from-the-local-filesystem}
 
-AEM El [Importador de recursos CSV de herramientas de ACS ](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrae recursos del sistema de archivos y metadatos de recursos de un archivo CSV para la importación de recursos. La API de Experience Manager Asset Manager se utiliza para importar los recursos al sistema y aplicar las propiedades de metadatos configuradas. Lo ideal es que los recursos se monten en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
+AEM El [Importador de recursos CSV de herramientas de ACS &#x200B;](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrae recursos del sistema de archivos y metadatos de recursos de un archivo CSV para la importación de recursos. La API de Experience Manager Asset Manager se utiliza para importar los recursos al sistema y aplicar las propiedades de metadatos configuradas. Lo ideal es que los recursos se monten en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
 
 Dado que no es necesario transmitir los recursos a través de una red, el rendimiento general mejora considerablemente y este método se considera generalmente la forma más eficaz de cargar recursos en el repositorio. Además, como la herramienta admite la ingesta de metadatos, puede importar todos los recursos y metadatos en un solo paso en lugar de crear también un segundo paso para aplicar los metadatos a través de una herramienta independiente.
 

@@ -118,7 +118,7 @@ En el entorno de publicación, según la [configuración](sites-console.md#user-
 
 ### Asignación de miembros a funciones de grupo de Publish {#assigning-members-to-publish-group-roles}
 
-Al [crear un sitio de la comunidad](sites-console.md) en el entorno de creación o al [modificar las propiedades del sitio, a los miembros de ](sites-console.md#modifying-site-properties) se les pueden asignar diversas funciones realizadas en el entorno de publicación, como moderadores, administradores de grupos, contactos de recursos o miembros privilegiados.
+Al [crear un sitio de la comunidad](sites-console.md) en el entorno de creación o al [modificar las propiedades del sitio, a los miembros de &#x200B;](sites-console.md#modifying-site-properties) se les pueden asignar diversas funciones realizadas en el entorno de publicación, como moderadores, administradores de grupos, contactos de recursos o miembros privilegiados.
 
 [Al habilitar el servicio de túnel](sync.md#accessingpublishusersfromauthor), las opciones de asignación se presentan desde los miembros al publicar, en lugar de los usuarios al crear.
 

@@ -21,7 +21,7 @@ ht-degree: 2%
 
 El tipo de funciones que se esperan de una experiencia de comunidad son bien conocidas. Las funciones de la comunidad están disponibles como funciones de la comunidad. Básicamente, son una o más páginas precableadas para implementar una función de la comunidad, lo que requiere algo más que simplemente agregar un componente a una página en modo de autor. Son los componentes básicos utilizados para definir la estructura de una [plantilla del sitio de la comunidad](/help/communities/sites.md) a partir de la cual se [crean](/help/communities/sites-console.md) los sitios de la comunidad.
 
-AEM Una vez creado un sitio de la comunidad, se puede agregar contenido a las páginas resultantes utilizando el [modo de creación estándar de la ](/help/sites-authoring/editing-content.md). Hay varias funciones de la comunidad disponibles, tal como se ven en la consola de funciones de la comunidad.
+AEM Una vez creado un sitio de la comunidad, se puede agregar contenido a las páginas resultantes utilizando el [modo de creación estándar de la &#x200B;](/help/sites-authoring/editing-content.md). Hay varias funciones de la comunidad disponibles, tal como se ven en la consola de funciones de la comunidad.
 
 >[!NOTE]
 >

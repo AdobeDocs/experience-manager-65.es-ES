@@ -325,7 +325,7 @@ Para nuestro ejemplo, queremos eliminar la parte `/etc.clientlibs` de la direcci
 
 >[!NOTE]
 >
->AEM Para obtener más información sobre cómo obtener una resolución de recursos a través de un usuario de servicio, consulte [Usuarios de servicio en el sitio de trabajo ](/help/sites-administering/security-service-users.md) de &lbrace;200881000000000000000000000000000000000000000000000 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+>AEM Para obtener más información sobre cómo obtener una resolución de recursos a través de un usuario de servicio, consulte [Usuarios de servicio en el sitio de trabajo &#x200B;](/help/sites-administering/security-service-users.md) de &lbrace;200881000000000000000000000000000000000000000000000 00000000000000000000000000000000000000000000000000000000000000000000000000000000
 
 ```java
 private ResourceResolver resolver;

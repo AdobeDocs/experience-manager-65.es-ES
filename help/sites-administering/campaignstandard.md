@@ -31,13 +31,13 @@ AEM Esta integración permite que la integración de los segmentos de datos y de
 
 AEM La configuración de la integración entre y Adobe Campaign Standard requiere varios pasos en ambas soluciones.
 
-1. [Configure las variables ](#aemserver-user)
-1. [Compruebe el ](#resource-type-filter)
+1. [Configure las variables &#x200B;](#aemserver-user)
+1. [Compruebe el &#x200B;](#resource-type-filter)
 1. [AEM Creación de una plantilla de envíos de correo electrónico específica de un en Campaign](#aem-email-delivery-template)
 1. [AEM Configuración de la integración de Campaign en la](#campaign-integration)
 1. [AEM Configuración de la replicación en la instancia de Publish](#replication)
 1. [AEM Configuración del externalizador de](#externalizer)
-1. [Configure las variables ](#campaign-remote-user)
+1. [Configure las variables &#x200B;](#campaign-remote-user)
 1. [AEM Configuración de la cuenta externa de en Campaign](#acc-external-user)
 
 Este documento le guía en detalle por cada uno de estos pasos.
@@ -233,8 +233,8 @@ AEM AEM Cuando [creó una plantilla de envíos de correo electrónico específic
 1. En la sección **Conexión**, defina los siguientes campos:
 
    1. AEM Servidor: es la dirección URL del servidor de creación de. Esto no debe terminar en una barra oblicua.
-   1. AEM Cuenta: Este es el usuario `campaign-remote` en el que [se configuró anteriormente en la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de ](#campaign-remote-user), que se configuró anteriormente en la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario .
-   1. AEM Contraseña: Esta es la contraseña del `campaign-remote`usuario que [configuró anteriormente en el usuario de la cuenta de usuario de ](#campaign-remote-user).
+   1. AEM Cuenta: Este es el usuario `campaign-remote` en el que [se configuró anteriormente en la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de &#x200B;](#campaign-remote-user), que se configuró anteriormente en la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario de la cuenta de usuario .
+   1. AEM Contraseña: Esta es la contraseña del `campaign-remote`usuario que [configuró anteriormente en el usuario de la cuenta de usuario de &#x200B;](#campaign-remote-user).
 
    ![Editando el usuario de aemInstance](assets/acs-external-acount-editor.png)
 

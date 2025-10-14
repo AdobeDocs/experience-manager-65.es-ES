@@ -49,7 +49,7 @@ Solo hay un artefacto &quot;uber&quot; que reemplaza artefactos individuales:
 
 >[!NOTE]
 >
->AEM Consulte el [repositorio jar de Uber ](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar)donde puede identificar el último artefacto jar de Uber.
+>AEM Consulte el [repositorio jar de Uber &#x200B;](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar)donde puede identificar el último artefacto jar de Uber.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

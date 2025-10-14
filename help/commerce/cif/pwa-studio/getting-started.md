@@ -29,7 +29,7 @@ Diseñar la estructura que necesita es fácil con el Editor del modelo de fragme
 
 Para configurar la aplicación de PWA Studio, siga la [documentación de PWA Studio](https://developer.adobe.com/commerce/pwa-studio/tutorials/) de Adobe Commerce.
 
-Para conectar el PWA Studio con el extremo de GraphQL AEM AEM de la, puede usar la extensión [para el PWA Studio ](https://github.com/adobe/aem-pwa-studio-extensions).
+Para conectar el PWA Studio con el extremo de GraphQL AEM AEM de la, puede usar la extensión [para el PWA Studio &#x200B;](https://github.com/adobe/aem-pwa-studio-extensions).
 
 1. Desproteger el repositorio
 

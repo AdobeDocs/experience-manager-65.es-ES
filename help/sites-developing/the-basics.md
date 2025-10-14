@@ -457,7 +457,7 @@ Consulte la documentación de [FileVault tool](/help/sites-developing/ht-vlttool
 
 ## Flujos de trabajo {#workflows}
 
-El contenido suele estar sujeto a procesos organizativos, incluidos pasos como la aprobación y la aprobación por parte de varios participantes. AEM Estos procesos pueden representarse como flujos de trabajo [definidos y desarrollados en el plazo de ](/help/sites-developing/workflows-models.md), que luego se aplican a las [páginas de contenido apropiadas](/help/sites-administering/workflows.md) o a [recursos digitales](/help/assets/assets-workflow.md), según sea necesario.
+El contenido suele estar sujeto a procesos organizativos, incluidos pasos como la aprobación y la aprobación por parte de varios participantes. AEM Estos procesos pueden representarse como flujos de trabajo [definidos y desarrollados en el plazo de &#x200B;](/help/sites-developing/workflows-models.md), que luego se aplican a las [páginas de contenido apropiadas](/help/sites-administering/workflows.md) o a [recursos digitales](/help/assets/assets-workflow.md), según sea necesario.
 
 El motor de flujo de trabajo se utiliza para administrar la implementación de los flujos de trabajo y la aplicación posterior al contenido.
 

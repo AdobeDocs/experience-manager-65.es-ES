@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## Información general {#overview}
 
-La función de búsqueda es una característica esencial de las comunidades de Adobe Experience Manager AEM (). AEM Además de las capacidades de [búsqueda en la plataforma ](../../help/sites-deploying/queries-and-indexing.md), AEM Communities proporciona la [API de búsqueda UGC](#ugc-search-api) para la búsqueda de contenido generado por el usuario (UGC). AEM UGC tiene propiedades únicas, ya que se introduce y almacena por separado de otros datos de usuario y de contenido de la.
+La función de búsqueda es una característica esencial de las comunidades de Adobe Experience Manager AEM (). AEM Además de las capacidades de [búsqueda en la plataforma &#x200B;](../../help/sites-deploying/queries-and-indexing.md), AEM Communities proporciona la [API de búsqueda UGC](#ugc-search-api) para la búsqueda de contenido generado por el usuario (UGC). AEM UGC tiene propiedades únicas, ya que se introduce y almacena por separado de otros datos de usuario y de contenido de la.
 
 Para Communities, las dos cosas que se buscan generalmente son:
 

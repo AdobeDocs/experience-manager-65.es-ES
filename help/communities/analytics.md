@@ -602,7 +602,7 @@ Para ello, siga las instrucciones en [Replicar la clave de cifrado](/help/commun
 
 ### Sitio de la comunidad Publish y servicio Analytics Cloud {#publish-community-site-and-analytics-cloud-service}
 
-Una vez que el servicio Analytics Cloud AEM esté habilitado para un sitio de la comunidad y, si es necesario, se ajuste la asignación [de Analytics a las variables de la comunidad](#mapped-analytics-to-aem-variables), duplique la configuración en el entorno de publicación volviendo a publicar [ el sitio de la comunidad](/help/communities/sites-console.md#publishing-the-site).
+Una vez que el servicio Analytics Cloud AEM esté habilitado para un sitio de la comunidad y, si es necesario, se ajuste la asignación [de Analytics a las variables de la comunidad](#mapped-analytics-to-aem-variables), duplique la configuración en el entorno de publicación volviendo a publicar [&#x200B; el sitio de la comunidad](/help/communities/sites-console.md#publishing-the-site).
 
 ## Obtener informes de Analytics {#obtaining-reports-from-analytics}
 

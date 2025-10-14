@@ -192,7 +192,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->AEM También se puede activar una copia de seguridad [mediante los MBeans proporcionados por el método de copia de seguridad ](/help/sites-administering/jmx-console.md) que proporciona el método de copia de seguridad {MBeans}.
+>AEM También se puede activar una copia de seguridad [mediante los MBeans proporcionados por el método de copia de seguridad &#x200B;](/help/sites-administering/jmx-console.md) que proporciona el método de copia de seguridad {MBeans}.
 
 ### Copia de seguridad de instantáneas del sistema {#filesystem-snapshot-backup}
 

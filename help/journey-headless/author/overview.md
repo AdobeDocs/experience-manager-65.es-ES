@@ -64,7 +64,7 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 
 ## Siguientes pasos {#what-is-next}
 
-Ya está listo para empezar su recorrido de Adobe sin encabezado. Le recomendamos que continúe con la siguiente parte del recorrido AEM y lea el artículo [Creación para usuarios sin encabezado: una introducción a la creación de la página de inicio de la página de inicio de la página de inicio de la página ](introduction.md).
+Ya está listo para empezar su recorrido de Adobe sin encabezado. Le recomendamos que continúe con la siguiente parte del recorrido AEM y lea el artículo [Creación para usuarios sin encabezado: una introducción a la creación de la página de inicio de la página de inicio de la página de inicio de la página &#x200B;](introduction.md).
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

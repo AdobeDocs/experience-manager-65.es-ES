@@ -87,7 +87,7 @@ Para obtener más información acerca de la persistencia del contenido de la com
 
 * [Almacenamiento de contenido de la comunidad](/help/communities/working-with-srp.md)—analiza las opciones de almacenamiento SRP disponibles para UGC.
 * [Topologías recomendadas](/help/communities/topologies.md): analiza las topologías en función del caso de uso y la opción de SRP.
-* AEM AEM [Actualización a comunidades de la versión 6.5 de la versión de la versión ](/help/communities/upgrade.md): proporciona información útil acerca de UGC cuando se pasa a la versión 6.5 de la versión de la versión de la versión de la versión 6.5.
+* AEM AEM [Actualización a comunidades de la versión 6.5 de la versión de la versión &#x200B;](/help/communities/upgrade.md): proporciona información útil acerca de UGC cuando se pasa a la versión 6.5 de la versión de la versión de la versión de la versión 6.5.
 
 ## Consolas de Communities {#communities-consoles}
 
@@ -214,7 +214,7 @@ AEM AEM La máquina de demostración de la requiere una licencia de uso válida 
 
 >[!NOTE]
 >
->AEM Vea un [vídeo introductorio](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) a la máquina de demostración de la (13:26).
+>AEM Vea un [vídeo introductorio](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) a la máquina de demostración de la (13:26).
 
 ## Documentación de AEM Communities {#aem-communities-documentation}
 

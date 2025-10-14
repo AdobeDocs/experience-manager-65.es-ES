@@ -146,7 +146,7 @@ AEM Una vez que el componente ya se ha incluido en una página de creación, jun
 
 >[!NOTE]
 >
->AEM Puede crear un componente y personalizarlo con [Desarrollo con el CRXDE Lite ](/help/sites-developing/developing-with-crxde-lite.md). Una vez que haya personalizado el componente existente según sus necesidades, puede agregarlo en su página utilizando la opción **Editar** en **Administrar artículos**, como se muestra en la figura anterior.
+>AEM Puede crear un componente y personalizarlo con [Desarrollo con el CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md). Una vez que haya personalizado el componente existente según sus necesidades, puede agregarlo en su página utilizando la opción **Editar** en **Administrar artículos**, como se muestra en la figura anterior.
 
 >[!NOTE]
 >

@@ -45,7 +45,7 @@ AEM Se puede conectar a cualquier sistema de comercio que tenga un punto final d
 
 CIF Opcionalmente, se puede proporcionar un encabezado de autenticación para utilizar funciones de autenticación adicionales que requieran autenticación.
 
-AEM AEM Se deben ajustar los proyectos generados por el [tipo de archivo del proyecto ](https://github.com/adobe/aem-project-archetype) y el [Almacén de referencia de Venia de](https://github.com/adobe/aem-cif-guides-venia) que ya está incluido en la [configuración predeterminada](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json).
+AEM AEM Se deben ajustar los proyectos generados por el [tipo de archivo del proyecto &#x200B;](https://github.com/adobe/aem-project-archetype) y el [Almacén de referencia de Venia de](https://github.com/adobe/aem-cif-guides-venia) que ya está incluido en la [configuración predeterminada](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json).
 
 Reemplace el valor de `url` en `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` por el extremo GraphQL de su sistema de comercio. Esta configuración se puede realizar a través de la consola OSGI o implementando la configuración OSGI a través del proyecto. AEM Se admiten diferentes configuraciones para sistemas de ensayo y producción utilizando diferentes modos de ejecución de la.
 

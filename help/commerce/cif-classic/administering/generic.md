@@ -373,7 +373,7 @@ Puede verlas en la consola web en eventos OSGI ( `/system/console/events`), por 
 
 >[!NOTE]
 >
->AEM Lea también [Control de eventos en el ](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/) de la página de la aplicación de eventos de la página de.
+>AEM Lea también [Control de eventos en el &#x200B;](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/) de la página de la aplicación de eventos de la página de.
 
 ### La imagen con vínculos Añadir a carro {#image-with-add-to-cart-links}
 

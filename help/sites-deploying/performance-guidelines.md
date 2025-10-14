@@ -304,7 +304,7 @@ AEM En, los datos binarios se pueden almacenar de forma independiente de los nod
 
 >[!CAUTION]
 >
->El micronúcleo de la base de datos relacional tiene compatibilidad restringida. Póngase en contacto con el Servicio de atención al cliente de [Adobe](https://experienceleague.adobe.com/es?support-solution=General&amp;support-tab=home&amp;lang=es#support) antes de usar este tipo de microkernel.
+>El micronúcleo de la base de datos relacional tiene compatibilidad restringida. Póngase en contacto con el Servicio de atención al cliente de [Adobe](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home&lang=es#support) antes de usar este tipo de microkernel.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

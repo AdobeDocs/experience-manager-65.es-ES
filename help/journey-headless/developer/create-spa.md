@@ -50,7 +50,7 @@ Antes de empezar a trabajar con las SPA en AEM hay varios requisitos.
 
 * Experiencia en desarrollo creando SPA con marcos de trabajo React o Angular.
 * Conocimientos básicos de AEM para crear fragmentos de contenido y utilizar el editor.
-* AEM SPA No olvide revisar el documento [Con encabezado y sin encabezado en la sección de la página de inicio de sesión de la página ](/help/sites-developing/headful-headless.md) para comprender los diversos niveles de integración de la posibles.
+* AEM SPA No olvide revisar el documento [Con encabezado y sin encabezado en la sección de la página de inicio de sesión de la página &#x200B;](/help/sites-developing/headful-headless.md) para comprender los diversos niveles de integración de la posibles.
 
 ### Herramientas {#tools}
 

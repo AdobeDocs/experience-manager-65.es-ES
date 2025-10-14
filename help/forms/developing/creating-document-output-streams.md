@@ -242,7 +242,7 @@ Cree un documento de PDF con la API de salida (Java):
 
    >[!NOTE]
    >
-   >No puede establecer la opción de PDF linealizado mediante el método `setLinearizedPDF` del objeto `RenderOptionsSpec` si el documento del PDF de entrada está certificado o firmado digitalmente. (Consulte [Documentos de PDF de firma digital ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >No puede establecer la opción de PDF linealizado mediante el método `setLinearizedPDF` del objeto `RenderOptionsSpec` si el documento del PDF de entrada está certificado o firmado digitalmente. (Consulte [Documentos de PDF de firma digital &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Genera un documento de PDF.
 
@@ -259,7 +259,7 @@ Cree un documento de PDF con la API de salida (Java):
 
    >[!NOTE]
    >
-   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -267,7 +267,7 @@ Cree un documento de PDF con la API de salida (Java):
 
    >[!NOTE]
    >
-   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recupere los resultados de la operación.
 
@@ -338,7 +338,7 @@ Cree un documento de PDF mediante la API de salida (servicio web):
 
    >[!NOTE]
    >
-   >No puede establecer la opción de PDF linealizado mediante el miembro `linearizedPDF` del objeto `RenderOptionsSpec` si el documento de PDF de entrada está certificado o firmado digitalmente. (Consulte [Documentos de PDF de firma digital ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >No puede establecer la opción de PDF linealizado mediante el miembro `linearizedPDF` del objeto `RenderOptionsSpec` si el documento de PDF de entrada está certificado o firmado digitalmente. (Consulte [Documentos de PDF de firma digital &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Genera un documento de PDF.
 
@@ -356,11 +356,11 @@ Cree un documento de PDF mediante la API de salida (servicio web):
 
    >[!NOTE]
    >
-   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Al generar un documento de PDF invocando el método `generatePDFOutput`, no se pueden combinar datos con un formulario de PDF XFA firmado o certificado. (Consulte [Firmar y certificar documentos digitalmente &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >También puede crear un documento de PDF invocando el método `generatePDFOutput2` del objeto `OutputClient`. (Consulte [Pasar documentos en Content Services (obsoleto) al servicio Output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recupere los resultados de la operación.
 

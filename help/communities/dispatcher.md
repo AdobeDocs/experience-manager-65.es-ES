@@ -24,7 +24,7 @@ Para AEM Communities, es necesario configurar Dispatcher para garantizar el func
 
 Para saber qué es necesario para la implementación y el diseño de sitios específicos
 
-* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&amp;support-tab=home&amp;lang=es#support)
+* Contacto con el [Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home&lang=es#support)
 
 Consulte también la [documentación principal de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es).
 

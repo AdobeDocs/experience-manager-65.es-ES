@@ -448,7 +448,7 @@ Para agregar componentes a la página de aterrizaje, arrastre y suelte los compo
 
 >[!NOTE]
 >
->Si un componente de la página de aterrizaje no se puede editar, debe volver a importar el archivo zip después de [modificar el archivo HTML.AEM ](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Significa que durante la importación, las partes no editables no se convirtieron en componentes de la.
+>Si un componente de la página de aterrizaje no se puede editar, debe volver a importar el archivo zip después de [modificar el archivo HTML.AEM &#x200B;](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Significa que durante la importación, las partes no editables no se convirtieron en componentes de la.
 
 ### Eliminación de una página de aterrizaje {#deleting-a-landing-page}
 

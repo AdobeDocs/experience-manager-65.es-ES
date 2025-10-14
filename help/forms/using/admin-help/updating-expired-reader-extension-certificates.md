@@ -33,7 +33,7 @@ A. Sobre la base de la reevaluación de la situación, todos los documentos del 
 
 **Q. ¿Con quién debo ponerme en contacto si tengo más preguntas?**
 
-R. Puedes ponerte en contacto con el [Soporte técnico del Adobe](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&amp;lang=es#support) o enviar un ticket de soporte.
+R. Puedes ponerte en contacto con el [Soporte técnico del Adobe](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&lang=es#support) o enviar un ticket de soporte.
 
 **Q. ¿Qué sucede si no se actualiza el certificado antes del 7 de enero de 2023?**
 
@@ -45,7 +45,7 @@ R. La descripción de los nuevos certificados de Acrobat Reader Extensions menci
 
 **Q. ¿Cómo obtengo los certificados más recientes?**
 
-R. Todos los clientes de Forms autorizados (con licencia activa) pueden descargar los nuevos certificados (certificados basados en &quot;CA raíz de Adobe G2&quot;) desde el [Sitio web de licencias de Adobe](https://licensing.adobe.com/). Si no encuentra el certificado en el sitio web de licencias de Adobe, póngase en contacto con el [soporte técnico de Adobe](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&amp;lang=en#support) o genere un ticket de asistencia.
+R. Todos los clientes de Forms autorizados (con licencia activa) pueden descargar los nuevos certificados (certificados basados en &quot;CA raíz de Adobe G2&quot;) desde el [Sitio web de licencias de Adobe](https://licensing.adobe.com/). Si no encuentra el certificado en el sitio web de licencias de Adobe, póngase en contacto con el [soporte técnico de Adobe](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&lang=en#support) o genere un ticket de asistencia.
 
 **Q. ¿Siguen funcionando después del 7 de enero de 2023 mis documentos de PDF extendidos mediante certificados emitidos desde la &quot;CA raíz de Adobe&quot; (la antigua autoridad de certificación)?**
 

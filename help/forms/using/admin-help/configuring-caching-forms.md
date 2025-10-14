@@ -44,7 +44,7 @@ Forms admite dos modos de almacenamiento en caché:
 * incondicional
 * uso del punto de comprobación de caché
 
-Si cambia entre los modos de caché, reinicie el servicio Forms para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación ](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
+Si cambia entre los modos de caché, reinicie el servicio Forms para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
 El tiempo del punto de comprobación de caché se restablece automáticamente al cambiar entre modos.
 
@@ -94,7 +94,7 @@ Para acceder a esta configuración, en la consola de administración, haga clic 
 
 ### Especificar la configuración de caché global {#specifying-global-cache-settings}
 
-La configuración del área **Configuración de caché global** afecta a todos los tipos de cachés. Si cambia cualquiera de estas opciones, reinicie el servicio Forms para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación ](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
+La configuración del área **Configuración de caché global** afecta a todos los tipos de cachés. Si cambia cualquiera de estas opciones, reinicie el servicio Forms para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
 **Tamaño máximo de documento de caché (KB):** Tamaño máximo, en kilobytes, de un diseño de formulario u otro recurso que se puede almacenar en cualquier caché en memoria. Se trata de una configuración global que se aplica a todas las cachés en memoria. Si un recurso es mayor que este valor, no se almacena en caché. El valor predeterminado es 1024 kilobytes. Esta configuración no afecta a la caché del disco.
 
@@ -104,7 +104,7 @@ La configuración del área **Configuración de caché global** afecta a todos l
 
 Cuando el servicio de Forms recibe una solicitud de procesamiento, recupera el diseño de formulario del repositorio y lo almacena en caché. Este almacenamiento en caché mejora el rendimiento porque, para las solicitudes de procesamiento posteriores, el servicio Forms recupera el diseño de formulario de la caché en lugar de hacerlo del repositorio.
 
-El servicio Forms siempre almacena en caché los diseños de formulario del disco. Si los diseños de formulario se almacenan en el servidor, esos archivos se consideran la caché de disco. El servicio Forms también almacena en caché los diseños de formulario en la memoria, según la configuración del área **En caché de plantilla de memoria**. Si cambia cualquiera de estas opciones, reinicie el servicio Forms para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación ](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
+El servicio Forms siempre almacena en caché los diseños de formulario del disco. Si los diseños de formulario se almacenan en el servidor, esos archivos se consideran la caché de disco. El servicio Forms también almacena en caché los diseños de formulario en la memoria, según la configuración del área **En caché de plantilla de memoria**. Si cambia cualquiera de estas opciones, reinicie el servicio Forms para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
 **Tamaño de caché de configuración de plantilla:** Número máximo de objetos de configuración de plantilla que se guardarán en la memoria. El valor predeterminado es 100. Se recomienda establecer este valor en mayor o igual que el valor de Tamaño de caché de la plantilla. Esta configuración no afecta a la caché del disco.
 
@@ -116,7 +116,7 @@ El servicio Forms siempre almacena en caché los diseños de formulario del disc
 
 El servicio Forms almacena en caché los formularios procesados para que no necesite resolver y procesar el mismo formulario en solicitudes posteriores. Los formularios procesados se almacenan en caché tanto en el disco como en la memoria.
 
-Esta configuración se encuentra en el área **En caché para procesamiento de formularios en memoria**. Si cambia cualquiera de estas opciones, reinicie el servicio Forms para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación ](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
+Esta configuración se encuentra en el área **En caché para procesamiento de formularios en memoria**. Si cambia cualquiera de estas opciones, reinicie el servicio Forms para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
 **Tamaño de caché:** Especifica el número máximo de formularios procesados que pueden residir en la caché en memoria. El valor predeterminado es 100. Esta configuración no afecta a la caché del disco.
 

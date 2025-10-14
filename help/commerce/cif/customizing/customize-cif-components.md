@@ -14,7 +14,7 @@ ht-degree: 11%
 
 # Personalización de componentes principales de Adobe Experience Manager CIF {#customize-cif-components}
 
-CIF CIF El [Proyecto Venia ](https://github.com/adobe/aem-cif-guides-venia)es una base de código de referencia para usar [Componentes principales](https://github.com/adobe/aem-core-cif-components) de. En este tutorial, se amplía aún más el componente [teaser de productos](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para mostrar un atributo personalizado de Adobe Commerce. También obtendrá más información sobre la integración de GraphQL entre Adobe Experience Manager AEM () y Adobe Commerce CIF y los enlaces de extensión que proporcionan los componentes principales de la.
+CIF CIF El [Proyecto Venia &#x200B;](https://github.com/adobe/aem-cif-guides-venia)es una base de código de referencia para usar [Componentes principales](https://github.com/adobe/aem-core-cif-components) de. En este tutorial, se amplía aún más el componente [teaser de productos](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para mostrar un atributo personalizado de Adobe Commerce. También obtendrá más información sobre la integración de GraphQL entre Adobe Experience Manager AEM () y Adobe Commerce CIF y los enlaces de extensión que proporcionan los componentes principales de la.
 
 >[!TIP]
 >
@@ -28,7 +28,7 @@ La marca Venia comenzó recientemente a fabricar algunos productos con materiale
 
 ## Requisitos previos {#prerequisites}
 
-Se requiere un entorno de desarrollo local para completar este tutorial. AEM Esto incluye una instancia de ejecución de la instancia de que está configurada y conectada a una instancia de Adobe Commerce. AEM Revise los requisitos y pasos para [configurar un desarrollo local con el elemento de desarrollo de la red de área de trabajo ](../develop.md). Para seguir el tutorial por completo, necesita permiso para agregar [Atributos a un producto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) en Adobe Commerce.
+Se requiere un entorno de desarrollo local para completar este tutorial. AEM Esto incluye una instancia de ejecución de la instancia de que está configurada y conectada a una instancia de Adobe Commerce. AEM Revise los requisitos y pasos para [configurar un desarrollo local con el elemento de desarrollo de la red de área de trabajo &#x200B;](../develop.md). Para seguir el tutorial por completo, necesita permiso para agregar [Atributos a un producto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) en Adobe Commerce.
 
 También necesita un IDE de GraphQL como [GraphiQL](https://github.com/graphql/graphiql) o una extensión de explorador para ejecutar los ejemplos de código y los tutoriales. Si instala una extensión de explorador, asegúrese de que pueda establecer encabezados de solicitud. En Google Chrome, _Altair GraphQL Client_ es una extensión que puede realizar el trabajo.
 

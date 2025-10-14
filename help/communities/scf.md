@@ -154,7 +154,7 @@ El resultado es un nodo secundario JCR bajo un nodo par, que es direccionable po
 
 **Incluir un componente**
 
-Incluir un componente hace referencia al proceso de agregar una referencia a un recurso [ &quot;no existente&quot;](srp.md#for-non-existing-resources-ners) (sin nodo JCR) dentro de la plantilla, como el uso de un lenguaje de script.
+Incluir un componente hace referencia al proceso de agregar una referencia a un recurso [&#x200B; &quot;no existente&quot;](srp.md#for-non-existing-resources-ners) (sin nodo JCR) dentro de la plantilla, como el uso de un lenguaje de script.
 
 A partir de Adobe Experience Manager AEM () 6.1, cuando se incluye dinámicamente un componente en lugar de agregarlo, es posible editar las propiedades del componente en el modo de autor *design*.
 
@@ -207,7 +207,7 @@ Se recomiendan las siguientes convenciones para definir y utilizar clases CSS:
 Para personalizar el aspecto y el comportamiento de un componente de Communities en el lado del cliente, haga referencia a [Personalizaciones del lado del cliente](client-customize.md), que incluye información sobre:
 
 * [Superposiciones](client-customize.md#overlays)
-* [Extensiones ](client-customize.md#extensions)
+* [Extensiones &#x200B;](client-customize.md#extensions)
 * [Marcado de HTML](client-customize.md#htmlmarkup)
 * [Aplicación de máscara CSS](client-customize.md#skinning-css)
 * [Ampliación de JavaScript](client-customize.md#extending-javascript)

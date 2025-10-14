@@ -40,7 +40,7 @@ AEM El complemento de Commerce AEM para la versión de 6,5, también conocido co
 Lo siguiente debe instalarse de manera local:
 
 - AEM Local 6 5
-- AEM [Paquete de servicio 6.5 de ](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) 7 o posterior
+- AEM [Paquete de servicio 6.5 de &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) 7 o posterior
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 o posterior)
 - [Nodo LTS](https://nodejs.org/en/)

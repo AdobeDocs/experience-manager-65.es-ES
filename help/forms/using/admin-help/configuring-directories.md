@@ -47,7 +47,7 @@ Para cada dominio de empresa que configure, especifique los directorios que el p
 
 ### Añadir un SPI personalizado {#add-a-custom-spi}
 
-AEM AEM Para obtener información acerca de cómo crear un SPI personalizado, vea el tema sobre el desarrollo de SPI para formularios en la sección de programación de [formularios en la sección de programación con formularios en la sección de formularios en la página de inicio de ](https://www.adobe.com/go/learn_aemforms_programming_63). Para que un SPI personalizado recién implementado esté disponible para asociarlo al dominio, reinicie el servidor.
+AEM AEM Para obtener información acerca de cómo crear un SPI personalizado, vea el tema sobre el desarrollo de SPI para formularios en la sección de programación de [formularios en la sección de programación con formularios en la sección de formularios en la página de inicio de &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_63). Para que un SPI personalizado recién implementado esté disponible para asociarlo al dominio, reinicie el servidor.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. Haga clic en Nuevo dominio de empresa o seleccione un dominio de empresa existente.
@@ -279,7 +279,7 @@ Este es un ejemplo de script LDIF para la entrada VLV para usuarios:
 
    >[!NOTE]
    >
-   >Como norma, el nombre de la entrada vlvIndex también está establecido en `lcuser`, pero puede darle un nombre diferente. Utilice el mismo nombre en la herramienta vlvindex. (Consulte [Crear el índice del servidor de directorios para VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Como norma, el nombre de la entrada vlvIndex también está establecido en `lcuser`, pero puede darle un nombre diferente. Utilice el mismo nombre en la herramienta vlvindex. (Consulte [Crear el índice del servidor de directorios para VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Con la herramienta `ldapmodify` proporcionada con Sun ONE Server, cree una entrada similar para los grupos utilizando el DN base del grupo, el filtro de búsqueda y el campo de ordenación respectivamente:
 

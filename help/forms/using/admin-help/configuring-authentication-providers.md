@@ -150,7 +150,7 @@ Sin el aprovisionamiento Just-In-Time, cuando un usuario se autentica correctame
 
 ### Habilitar el aprovisionamiento justo a tiempo para un dominio {#enable-just-in-time-provisioning-for-a-domain}
 
-1. Escriba un contenedor de servicio que implemente las interfaces IdentityCreator y AssignmentProvider. AEM (Consulte [Programar con formularios de la lista de distribución de formularios ](https://www.adobe.com/go/learn_aemforms_programming_63)).
+1. Escriba un contenedor de servicio que implemente las interfaces IdentityCreator y AssignmentProvider. AEM (Consulte [Programar con formularios de la lista de distribución de formularios &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_63)).
 1. Implemente el contenedor de servicios en el servidor de Forms.
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 
