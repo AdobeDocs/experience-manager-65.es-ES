@@ -54,6 +54,6 @@ Para obtener más información, consulte la documentación de [Adobe PDF plug-in
 >[!NOTE]
 > 
 > LiveCycle ES4 proporciona compatibilidad para procesar formularios basados en XFA en HTML5, de modo que los formularios se puedan abrir en exploradores compatibles con HTML5, incluidos los que se ejecutan en dispositivos móviles como iPad. La representación HTML5 de los formularios mantiene la presentación del diseño de formulario y admite la mayoría de las lógicas de formulario (como JavaScript, cálculo de formulario y validaciones de formulario) incrustadas en la plantilla de formulario XFA. De este modo, sus inversiones en tecnología en formularios XFA se transfieren fácilmente a dispositivos en los que no es posible ejecutar el complemento Adobe Reader.
->Para obtener más información, consulte [Documentación del producto de LiveCycle](https://business.adobe.com/products/experience-manager/forms/aem-forms.html).
+>Para obtener más información, consulte [Documentación del producto de LiveCycle](https://business.adobe.com/es/products/experience-manager/forms/aem-forms.html).
 
 [Avisos legales](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    |    [Política de privacidad en línea](https://www.adobe.com/es/privacy.html)

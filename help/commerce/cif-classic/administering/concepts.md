@@ -40,7 +40,7 @@ Esto significa lo siguiente:
 
 >[!CAUTION]
 >
->AEM El [marco de trabajo de integración de comercio electrónico](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) es un complemento de la red de comercio electrónico de la red de.
+>AEM El [marco de trabajo de integración de comercio electrónico](https://business.adobe.com/es/products/experience-manager/sites/ecommerce-integrations.html) es un complemento de la red de comercio electrónico de la red de.
 >
 >Su representante de ventas puede proporcionar todos los detalles, según el motor adecuado.
 

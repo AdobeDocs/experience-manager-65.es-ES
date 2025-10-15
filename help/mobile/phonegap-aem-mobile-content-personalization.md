@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >Este documento forma parte de la guía de introducción a [AEM Mobile](/help/mobile/getting-started-aem-mobile.md), un punto de partida recomendado para la referencia de AEM Mobile.
 
-La característica de personalización de contenido de AEM Mobile AEM permite a [Autores de la aplicación](#author) personalizar el contenido de la aplicación móvil mediante [Adobe Target](https://business.adobe.com/products/target/adobe-target.html?lang=es). Esto permite enviar ofertas segmentadas a usuarios de aplicaciones móviles. Adobe Experience Manager Mobile permite crear, segmentar y entregar contenido que proporcione al usuario contenido específico para sus propios gustos individuales.
+La característica de personalización de contenido de AEM Mobile AEM permite a [Autores de la aplicación](#author) personalizar el contenido de la aplicación móvil mediante [Adobe Target](https://business.adobe.com/es/products/target/adobe-target.html?lang=es). Esto permite enviar ofertas segmentadas a usuarios de aplicaciones móviles. Adobe Experience Manager Mobile permite crear, segmentar y entregar contenido que proporcione al usuario contenido específico para sus propios gustos individuales.
 
 AEM En la práctica, para que los autores empiecen a crear este contenido, los administradores y desarrolladores deben preparar primero el entorno.
 

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ¿Los usuarios están accediendo a todo el contenido? ¿Están abandonando la aplicación y, si es así, dónde? ¿Con qué frecuencia permanecen en la aplicación y con qué frecuencia regresan para utilizarla? ¿Qué cambios puede introducir y luego medir ese aumento de la retención? ¿Qué sucede con las tasas de bloqueo? ¿Se bloquea la aplicación para los usuarios?
 
-Aproveche [Análisis de aplicaciones móviles](https://business.adobe.com/products/analytics/mobile-marketing.html) en sus aplicaciones de Adobe Experience Manager AEM () al integrarse con [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
+Aproveche [Análisis de aplicaciones móviles](https://business.adobe.com/es/products/analytics/mobile-marketing.html) en sus aplicaciones de Adobe Experience Manager AEM () al integrarse con [Adobe Mobile Services](https://business.adobe.com/es/products/campaign/mobile-marketing.html).
 
 AEM Instrumente sus aplicaciones móviles para realizar un seguimiento, generar informes y comprender cómo los usuarios interactúan con el contenido y la aplicación móvil, así como para medir métricas clave del ciclo vital como inicios, tiempo en la aplicación y tasa de bloqueo.
 
