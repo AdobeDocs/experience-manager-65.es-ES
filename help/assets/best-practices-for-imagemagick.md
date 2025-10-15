@@ -6,9 +6,9 @@ role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ Para procesar archivos de gran tamaño con ImageMagick, tenga en cuenta los requ
 
 >[!NOTE]
 >
->Si usa [!DNL Experience Manager] en [!DNL Adobe Managed Services] (AMS), póngase en contacto con el servicio de atención al cliente de Adobe si planea procesar muchos archivos PSB o de PSD de alta resolución. [!DNL Experience Manager] no puede procesar archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles.
+>Si usa [!DNL Experience Manager] en [!DNL Adobe Managed Services] (AMS), póngase en contacto con el servicio de atención al cliente de Adobe si planea procesar muchos archivos PSD o PSB de alta resolución. [!DNL Experience Manager] no puede procesar archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles.
 
 ## Instalar ImageMagick {#installing-imagemagick}
 
 Hay varias versiones de los archivos de instalación de ImageMagic disponibles para varios sistemas operativos. Utilice la versión adecuada para su sistema operativo.
 
-1. Descargue los [archivos de instalación de ImageMagick](https://www.imagemagick.org/script/download.php) adecuados para su sistema operativo.
+1. Descargue los archivos de instalación de ImageMagick adecuados (`https://www.imagemagick.org/script/download.php website`) para su sistema operativo.
 1. Para instalar ImageMagick en el disco que hospeda el servidor [!DNL Experience Manager], inicie el archivo de instalación.
 
 1. Defina la variable de entorno de ruta en el directorio de instalación de ImageMagic.
@@ -37,7 +37,7 @@ Hay varias versiones de los archivos de instalación de ImageMagic disponibles p
 
 ## Configurar el paso del proceso de la línea de comandos {#set-up-the-command-line-process-step}
 
-Puede configurar el paso del proceso de la línea de comandos para su caso de uso particular. Realice estos pasos para generar una imagen volteada y miniaturas (140x100, 48x48, 319x319 y 1280x1280) cada vez que agregue un archivo de imagen del JPEG a `/content/dam` en el servidor [!DNL Experience Manager]:
+Puede configurar el paso del proceso de la línea de comandos para su caso de uso particular. Realice estos pasos para generar una imagen volteada y miniaturas (140x100, 48x48, 319x319 y 1280x1280) cada vez que agregue un archivo de imagen de JPEG a `/content/dam` en el servidor [!DNL Experience Manager]:
 
 1. En el servidor [!DNL Experience Manager], vaya a la consola Flujo de trabajo (`https://[aem_server]:[port]/workflow`) y abra el modelo de flujo de trabajo **[!UICONTROL Recurso de actualización DAM]**.
 1. En el modelo de flujo de trabajo **[!UICONTROL DAM Update Asset]**, abra el paso **[!UICONTROL miniaturas de EPS (con tecnología ImageMagick)]**.
@@ -76,13 +76,13 @@ Puede configurar el paso del proceso de la línea de comandos para su caso de us
 
 1. Guarde el flujo de trabajo.
 
-1. Para comprobar que el procesamiento es correcto, cargue una imagen de JPG en [!DNL Assets]. Una vez completado el procesamiento, compruebe si se generan o no una imagen volteada y las representaciones.
+1. Para comprobar el procesamiento correcto, cargue una imagen de JPG en [!DNL Assets]. Una vez completado el procesamiento, compruebe si se generan o no una imagen volteada y las representaciones.
 
 ## Mitigación de vulnerabilidades de seguridad {#mitigating-security-vulnerabilities}
 
 El uso de ImageMagick para procesar imágenes presenta múltiples vulnerabilidades de seguridad. Por ejemplo, el procesamiento de imágenes enviadas por el usuario implica el riesgo de ejecución de código remoto (RCE).
 
-Además, varios complementos de procesamiento de imágenes dependen de la biblioteca ImageMagick, incluidos, entre otros, la imagick de PHP, la imagemagick y el clip de papel de Ruby y la imagemagick de nodejs.
+Además, varios complementos de procesamiento de imágenes dependen de la biblioteca ImageMagick, incluidos, entre otros, imagick de PHP, rmagick y paperclip de Ruby y imagemagick de nodejs.
 
 Si utiliza ImageMagick o una biblioteca afectada, Adobe recomienda mitigar las vulnerabilidades conocidas realizando al menos una de las siguientes tareas (pero preferiblemente ambas):
 

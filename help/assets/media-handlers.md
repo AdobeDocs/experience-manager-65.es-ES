@@ -7,10 +7,10 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 3%
+source-wordcount: '2109'
+ht-degree: 4%
 
 ---
 
@@ -123,7 +123,7 @@ Se deben implementar los siguientes métodos:
 
 Esta es una plantilla de ejemplo:
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ la clase pública MyMediaHandler amplía com.day.cq.dam.core.AbstractAssetHandler { // implementa las partes relevantes }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ la clase pública MyMediaHandler amplía com.day.cq.dam.core.AbstractAssetHandler { // implementa las partes relevantes }
 
 La interfaz y las clases incluyen:
 
@@ -449,7 +449,7 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
 
 Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en [!DNL Assets]:
 
-* Transformación de EPS e IA usando [ImageMagick](https://www.imagemagick.org/script/index.php) y [Ghostscript](https://www.ghostscript.com/).
+* Transformación de EPS e IA mediante `https://www.imagemagick.org/script/index.php` y [Ghostscript](https://www.ghostscript.com/).
 * Transcodificación de vídeo FLV con [FFmpeg](https://ffmpeg.org/).
 * Codificación MP3 con [LAME](https://lame.sourceforge.io/).
 * Procesamiento de audio mediante [SOX](https://sourceforge.net/projects/sox/).
@@ -470,13 +470,13 @@ El proceso `CommandLineProcess` realiza las siguientes operaciones en el orden i
 
 ### Ejemplo con [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-El siguiente ejemplo muestra cómo configurar el paso de proceso de la línea de comandos para que cada vez que se agregue un recurso con el GIF o TIFF de tipo electrónico miMIME a `/content/dam` en el servidor [!DNL Experience Manager], se cree una imagen volteada del original. También se crean tres miniaturas más de 140 x 100, 48 x 48 y 10 x 250.
+El siguiente ejemplo muestra cómo configurar el paso de proceso de la línea de comandos para que cada vez que se agregue un recurso con el tipo de correo electrónico miMIME GIF o TIFF a `/content/dam` en el servidor [!DNL Experience Manager], se cree una imagen volteada del original. También se crean tres miniaturas más de 140 x 100, 48 x 48 y 10 x 250.
 
 Para ello, use [!DNL ImageMagick]. [!DNL ImageMagick] es un software gratuito de línea de comandos que se utiliza para crear, editar y componer imágenes de mapa de bits.
 
 Instale [!DNL ImageMagick] en el disco que hospeda el servidor [!DNL Experience Manager]:
 
-1. Instalar [!DNL ImageMagick]: consulte [Documentación de ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Instalar [!DNL ImageMagick]: vea el sitio web `https://www.imagemagick.org/script/download.php`.
 1. Configure la herramienta para que en la línea de comandos pueda ejecutar `convert`.
 1. Para ver si la herramienta está instalada correctamente, ejecute el siguiente comando `convert -h` en la línea de comandos.
 
@@ -508,13 +508,13 @@ Separe los valores de [!UICONTROL Argumentos del proceso] con una coma y no lo i
 |---|---|
 | mime:&lt;tipo MIME> | Argumento opcional. El proceso se aplica si el recurso tiene el mismo tipo MIME que el del argumento. <br>Se pueden definir varios tipos MIME. |
 | tn:&lt;width>:&lt;height> | Argumento opcional. El proceso crea una miniatura con las dimensiones definidas en el argumento. <br>Se pueden definir varias miniaturas. |
-| cmd: &lt;comando> | Define el comando que se ejecuta. La sintaxis depende de la herramienta de línea de comandos. Solo se puede definir un comando. <br>Se pueden usar las siguientes variables para crear el comando:<br>`${filename}`: nombre del archivo de entrada, por ejemplo, original.jpg <br> `${file}`: nombre de ruta de acceso completo del archivo de entrada, por ejemplo, `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: directorio del archivo de entrada, por ejemplo, `/tmp/cqdam0816.tmp` <br>`${basename}`: nombre del archivo de entrada sin su extensión, por ejemplo, original <br>`${extension}`: extensión del archivo de entrada, por ejemplo, JPG de la. |
+| cmd: &lt;comando> | Define el comando que se ejecuta. La sintaxis depende de la herramienta de línea de comandos. Solo se puede definir un comando. <br>Se pueden usar las siguientes variables para crear el comando:<br>`${filename}`: nombre del archivo de entrada, por ejemplo, original.jpg <br> `${file}`: nombre de ruta de acceso completo del archivo de entrada, por ejemplo, `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: directorio del archivo de entrada, por ejemplo, `/tmp/cqdam0816.tmp` <br>`${basename}`: nombre del archivo de entrada sin su extensión, por ejemplo, original <br>`${extension}`: extensión del archivo de entrada, por ejemplo, JPG. |
 
 Por ejemplo, si [!DNL ImageMagick] está instalado en el disco que hospeda el servidor [!DNL Experience Manager] y crea un paso de proceso utilizando [!UICONTROL CommandLineProcess] como implementación y los siguientes valores como [!UICONTROL Argumentos de proceso]:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-A continuación, cuando se ejecute el flujo de trabajo, el paso solo se aplicará a los recursos que tienen `image/gif` o `mime:image/tiff` como `mime-types`. Crea una imagen volteada del original, la convierte en un JPG y crea tres miniaturas con las dimensiones 140x100, 48x48 y 10x250.
+A continuación, cuando se ejecute el flujo de trabajo, el paso solo se aplicará a los recursos que tienen `image/gif` o `mime:image/tiff` como `mime-types`. Crea una imagen volteada del original, la convierte en JPG y crea tres miniaturas con las dimensiones 140x100, 48x48 y 10x250.
 
 Use los siguientes [!UICONTROL argumentos de proceso] para crear las tres miniaturas estándar con [!DNL ImageMagick]:
 
