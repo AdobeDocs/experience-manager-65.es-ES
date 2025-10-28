@@ -1,5 +1,5 @@
 ---
-title: AEM Cómo ejecutar el con TarMK Cold Standby
+title: Cómo ejecutar AEM con espera en frío de TarMK
 description: Aprenda a crear, configurar y mantener una configuración de espera en frío de TarMK.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,20 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
 workflow-type: tm+mt
-source-wordcount: '2673'
-ht-degree: 0%
+source-wordcount: '2680'
+ht-degree: 1%
 
 ---
 
-# AEM Cómo ejecutar el con TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
+# Cómo ejecutar AEM con espera en frío de TarMK{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Introducción {#introduction}
 
-La capacidad de espera en frío del núcleo Tar Micro permite que una o más instancias de Adobe Experience Manager AEM en espera () se conecten a una instancia principal. El proceso de sincronización es de una sola manera, lo que significa que solo se realiza desde la instancia principal a la instancia en espera.
+La capacidad de espera en frío del núcleo Tar Micro permite que una o más instancias de Adobe Experience Manager en espera (AEM) se conecten a una instancia principal. El proceso de sincronización es de una sola manera, lo que significa que solo se realiza desde la instancia principal a la instancia en espera.
 
-El propósito de las instancias en espera es garantizar una copia de datos activa del repositorio principal y garantizar un cambio rápido sin pérdida de datos en caso de que el repositorio principal no esté disponible por algún motivo.
+El propósito de las instancias en espera es garantizar una copia de datos activa del repositorio principal y garantizar un cambio rápido sin pérdida de datos en caso de que la instancia principal no esté disponible por algún motivo.
 
 El contenido se sincroniza linealmente entre la instancia principal y las instancias en espera sin que la integridad compruebe si hay daños en el archivo o repositorio. Debido a este diseño, las instancias en espera son copias exactas de la instancia principal y no pueden ayudar a mitigar las incoherencias en las instancias principales.
 
@@ -43,7 +43,7 @@ El contenido se sincroniza linealmente entre la instancia principal y las instan
 
 ## Funcionamiento {#how-it-works}
 
-AEM En la instancia principal, se abre un puerto TCP que escucha los mensajes entrantes. Actualmente, hay dos tipos de mensajes que los esclavos envían al maestro:
+En la instancia principal de AEM, se abre un puerto TCP que escucha los mensajes entrantes. Actualmente, hay dos tipos de mensajes que el modo de espera envía al principal:
 
 * un mensaje que solicita el ID de segmento del encabezado actual
 * un mensaje que solicita datos de segmento con un ID especificado
@@ -66,13 +66,13 @@ El flujo de datos está diseñado para detectar y gestionar automáticamente los
 
 #### Rendimiento {#performance}
 
-Habilitar el modo de espera en frío de TarMK en la instancia principal casi no tiene ningún impacto mensurable en el rendimiento. El consumo adicional de CPU es bajo y el disco duro y la E/S de red adicionales no deberían producir problemas de rendimiento y rendimiento.
+Habilitar el modo de espera en frío de TarMK en la instancia principal casi no tiene ningún impacto mensurable en el rendimiento. El consumo adicional de CPU es bajo y el disco duro y la E/S de red adicionales no deberían producir problemas de rendimiento.
 
-En el modo de espera, puede esperar un alto consumo de CPU durante el proceso de sincronización. Como el procedimiento no es multiproceso, no se puede acelerar utilizando varios núcleos. Si no se cambian ni transfieren datos, no hay actividad mensurable. La velocidad de conexión varía según el hardware y el entorno de red, pero no depende del tamaño del repositorio ni del uso de SSL. Tenga esto en cuenta a la hora de estimar el tiempo necesario para una sincronización inicial o cuando se hayan cambiado muchos datos en el ínterin en el nodo principal.
+En el modo de espera, se espera un alto consumo de CPU durante el proceso de sincronización. Como el procedimiento no es multiproceso, no se puede acelerar utilizando varios núcleos. Si no se cambian ni transfieren datos, no hay actividad mensurable. La velocidad de conexión varía según el hardware y el entorno de red, pero no depende del tamaño del repositorio ni del uso de SSL. Tenga esto en cuenta a la hora de estimar el tiempo necesario para una sincronización inicial o cuando se hayan cambiado muchos datos en el ínterin en el nodo principal.
 
 #### Seguridad {#security}
 
-Suponiendo que todas las instancias se ejecuten en la misma zona de seguridad de intranet, el riesgo de una infracción de seguridad se reduce en gran medida. Sin embargo, puede añadir una capa de seguridad adicional habilitando conexiones SSL entre los esclavos y el maestro. Al hacerlo, se reduce la posibilidad de que los datos se vean comprometidos por un intermediario.
+Suponiendo que todas las instancias se ejecuten en la misma zona de seguridad de intranet, el riesgo de una infracción de seguridad se reduce en gran medida. Sin embargo, puede añadir una capa de seguridad adicional activando conexiones SSL entre las instancias de espera y principales. Al hacerlo, se reduce la posibilidad de que los datos se vean comprometidos por un intermediario.
 
 Además, puede especificar las instancias de espera a las que se permite conectarse restringiendo la dirección IP de las solicitudes entrantes. Esto debería ayudar a garantizar que nadie en la intranet pueda copiar el repositorio.
 
@@ -80,11 +80,11 @@ Además, puede especificar las instancias de espera a las que se permite conecta
 >
 >Se recomienda añadir un equilibrador de carga entre Dispatcher y los servidores que forman parte de la configuración de la espera en frío. El equilibrador de carga debe configurarse para dirigir el tráfico de usuarios únicamente a la instancia **primary**. Esto es necesario para garantizar la coherencia y evitar que el contenido se copie en la instancia de espera por otros medios que no sean el mecanismo de espera en frío.
 
-## AEM Creación de una configuración de espera en frío de TarMK de {#creating-an-aem-tarmk-cold-standby-setup}
+## Creación de una configuración de AEM TarMK Cold Standby {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
->AEM El PID del almacén de nodos de segmentos y el servicio de almacén en espera ha cambiado en la versión 6.3 en comparación con las versiones anteriores de la siguiente manera:
+>El PID del almacén de nodos de segmentos y el servicio de almacén en espera ha cambiado en AEM 6.3 en comparación con las versiones anteriores de la siguiente manera:
 >
 >* de org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService a org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
@@ -93,9 +93,9 @@ Además, puede especificar las instancias de espera a las que se permite conecta
 
 Para crear una configuración de espera en frío de TarMK, cree primero las instancias de espera realizando una copia del sistema de archivos de toda la carpeta de instalación del principal en una nueva ubicación. A continuación, puede iniciar cada instancia con un modo de ejecución que especifique su función ( `primary` o `standby`).
 
-A continuación se muestra el procedimiento que debe seguirse para crear una configuración con una instancia maestra y una en espera:
+A continuación se muestra el procedimiento que debe seguirse para crear una configuración con una instancia principal y una instancia en espera:
 
-1. AEM Instalar.
+1. Instale AEM.
 
 1. Cierre la instancia y copie su carpeta de instalación en la ubicación desde la que se ejecuta la instancia de espera pasiva. Aunque esté ejecutando desde equipos diferentes, asegúrese de asignar a cada carpeta un nombre descriptivo (como *aem-primary* o *aem-standby*) para diferenciar entre las instancias.
 1. Vaya a la carpeta de instalación de la instancia principal y:
@@ -107,11 +107,11 @@ A continuación se muestra el procedimiento que debe seguirse para crear una con
    1. Cree las configuraciones necesarias para el almacén de nodos y el almacén de datos preferidos en `aem-primary/crx-quickstart/install/install.primary`
    1. Cree un archivo llamado `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` en la misma ubicación y configúrelo en consecuencia. Para obtener más información sobre las opciones de configuración, consulte [Configuración](/help/sites-deploying/tarmk-cold-standby.md#configuration).
 
-   1. AEM Si está usando una instancia de TarMK con un almacén de datos externo, cree una carpeta denominada `crx3` en `aem-primary/crx-quickstart/install` denominada `crx3`
+   1. Si usa una instancia de AEM TarMK con un almacén de datos externo, cree una carpeta denominada `crx3` en `aem-primary/crx-quickstart/install` denominada `crx3`
 
    1. Coloque el archivo de configuración del almacén de datos en la carpeta `crx3`.
 
-   AEM Por ejemplo, si está ejecutando una instancia de TarMK con un repositorio de datos de archivo externo, necesita estos archivos de configuración:
+   Por ejemplo, si está ejecutando una instancia de AEM TarMK con un almacén de datos de archivos externo, necesita estos archivos de configuración:
 
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
@@ -276,7 +276,7 @@ Además, cuando se ejecuta con un objeto `FileDataStore` no compartido, mensajes
 
 La siguiente configuración de OSGi está disponible para el servicio de espera en frío:
 
-* **Configuración persistente:** si está habilitada, esto almacena la configuración en el repositorio en lugar de los archivos de configuración OSGi tradicionales. El Adobe recomienda mantener esta configuración deshabilitada en los sistemas de producción para que el modo de espera no recupere la configuración principal.
+* **Configuración persistente:** si está habilitada, esto almacena la configuración en el repositorio en lugar de los archivos de configuración OSGi tradicionales. Adobe recomienda mantener esta configuración deshabilitada en los sistemas de producción para que el modo de espera no recupere la configuración principal.
 
 * **Modo (`mode`):** esto elige el modo de ejecución de la instancia.
 
@@ -293,7 +293,7 @@ La siguiente configuración de OSGi está disponible para el servicio de espera 
 
 >[!NOTE]
 >
->El Adobe recomienda que el repositorio principal y el de espera tengan ID de repositorio diferentes para que se puedan identificar por separado para servicios como la descarga.
+>Adobe recomienda que el repositorio principal y el de espera tengan ID de repositorio diferentes para que se puedan identificar por separado para servicios como la descarga.
 >
 >La mejor manera de asegurarse de que esto se cubre es eliminar *sling.id* en espera y reiniciar la instancia.
 
@@ -317,7 +317,7 @@ Si la instancia principal falla por algún motivo, puede establecer una de las i
    ```
 
 1. Añada el nuevo principal al equilibrador de carga.
-1. Crear e iniciar una nueva instancia de espera. AEM Para obtener más información, consulte el procedimiento anterior sobre [Creación de una configuración de espera en frío de TarMK de la red de seguridad de la red de seguridad](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
+1. Crear e iniciar una nueva instancia de espera. Para obtener más información, consulte el procedimiento anterior en [Creación de una configuración de espera en frío TarMK de AEM](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 
 ## Aplicación de revisiones a una configuración de espera en frío {#applying-hotfixes-to-a-cold-standby-setup}
 
@@ -331,12 +331,12 @@ Para ello, siga los pasos descritos a continuación:
 1. Pruebe la instancia para ver si hay problemas después de la instalación.
 1. Elimine la instancia de espera pasiva eliminando su carpeta de instalación.
 1. Detenga la instancia principal y clóquela realizando una copia del sistema de archivos de toda la carpeta de instalación en la ubicación del modo de espera en frío.
-1. Vuelva a configurar el clon recién creado para que actúe como una instancia de espera en frío. AEM Ver [Creación de una configuración de espera en frío de TarMK de la.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
+1. Vuelva a configurar el clon recién creado para que actúe como una instancia de espera en frío. Ver [Creación de una configuración de espera en frío de AEM TarMK.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
 1. Inicie las instancias primaria y de espera en frío.
 
 ## Monitoreo {#monitoring}
 
-La función expone información mediante JMX o MBeans. Al hacerlo, puede inspeccionar el estado actual del modo de espera y del maestro mediante la [consola JMX](/help/sites-administering/jmx-console.md). La información se encuentra en un MBean de `type org.apache.jackrabbit.oak:type="Standby"`llamados `Status`.
+La función expone información mediante JMX o MBeans. Al hacerlo, puede inspeccionar el estado actual del modo de espera y el principal mediante la [consola JMX](/help/sites-administering/jmx-console.md). La información se encuentra en un MBean de `type org.apache.jackrabbit.oak:type="Standby"`llamados `Status`.
 
 **En espera**
 
@@ -365,7 +365,7 @@ La observación de la principal expone cierta información general a través de 
 
 * `Mode:` siempre muestra el valor `primary`.
 
-Además, se puede recuperar información para un máximo de diez clientes (instancias en espera) conectados al servidor maestro. El ID de MBean es el UUID de la instancia. No hay métodos invocables para estos MBean, pero hay algunos atributos útiles de solo lectura:
+Además, se puede recuperar información para un máximo de diez clientes (instancias en espera) conectados al servidor principal. El ID de MBean es el UUID de la instancia. No hay métodos invocables para estos MBean, pero hay algunos atributos útiles de solo lectura:
 
 * `Name:` el ID del cliente.
 * `LastSeenTimestamp:` marca de tiempo de la última solicitud en una representación de texto.
@@ -391,7 +391,7 @@ Adobe recomienda ejecutar el mantenimiento regularmente para evitar un crecimien
 
 1. Detenga el proceso de espera en la instancia de espera en la consola JMX y use el **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)** bean. Para obtener más información sobre cómo hacerlo, consulte la sección anterior sobre [Supervisión](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
-1. AEM Detenga la instancia principal de la.
+1. Detenga la instancia principal de AEM.
 1. Ejecute la herramienta de compactación de Oak en la instancia principal. Para obtener más información, consulte [Mantenimiento del repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 1. Inicie la instancia principal.
 1. Inicie el proceso en espera en la instancia de espera utilizando el mismo Bean JMX como se describe en el primer paso.
@@ -402,7 +402,7 @@ La instancia de espera puede tardar más de lo normal en completar la sincroniza
 
 Como alternativa, el repositorio principal se puede copiar manualmente al modo de espera después de ejecutar la compactación en el repositorio principal, lo que básicamente reconstruye el modo de espera cada vez que se ejecuta la compactación.
 
-### Recopilación de datos almacenados desechables {#data-store-garbage-collection}
+### Recopilación de datos desechables almacenados {#data-store-garbage-collection}
 
 Es importante ejecutar la recolección de basura en las instancias del almacén de datos de archivos de vez en cuando, de lo contrario, los binarios eliminados permanecen en el sistema de archivos y finalmente llenan la unidad. Para ejecutar la recolección de elementos no utilizados, siga el siguiente procedimiento:
 
