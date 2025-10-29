@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 730f8cabd6825ed289238f9000037644a8139301
+source-git-commit: e3901bbcb82b3c05d95b0d2bb8addab049dc3a4e
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '409'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,7 @@ Al trabajar con una configuración de AEM 6.5, la función activa o desactiva la
 
 ## Consideración
 
-A partir de AEM 6.5 SP23, no es necesario instalar el paquete [com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/), ya que ya está instalado con el complemento de Forms.
+A partir de AEM 6.5 SP23, no es necesario instalar el paquete [com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/), ya que ya está instalado con el complemento de Forms AEM service pack.
 
 ## Requisitos previos
 
