@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
+source-git-commit: c6d38c682dc45e3dcebef194b3b80510ab10f9e2
 workflow-type: tm+mt
-source-wordcount: '10085'
+source-wordcount: '10086'
 ht-degree: 43%
 
 ---
@@ -184,7 +184,7 @@ Si utiliza un sistema operativo basado en UNIX, instale los siguientes paquetes 
    * libc.so.6
    * ld-linux.so.2
    * libexpat.so.1
-* (Solo PDF Generator) Para habilitar el enrutamiento WebKit en las configuraciones de RHEL 8 o RHEL 9, es posible que la biblioteca `nspr` de 32 bits no esté disponible de forma predeterminada; instálela si no está presente.
+* (Solo PDF Generator) Para habilitar el enrutamiento WebKit en las configuraciones de RHEL 8 o RHEL 9, SLES15, es posible que la biblioteca `nspr` de 32 bits no esté disponible de forma predeterminada; instálela si no está presente.
 
 * (Solo PDF Generator) Si la conversión de WebToPDF falla en el servidor Unix® con el siguiente error:
 
@@ -905,7 +905,7 @@ Siga estos pasos:
 >
 >Deshabilitar el modo protegido es necesario en situaciones de automatización del lado del servidor como AEM Forms PDF Generator. Esta configuración solo debe cambiarse en entornos de servidor dedicados, no en escritorios de usuarios finales.
 
-Para obtener más información, consulte [Documentación de Adobe sobre el modo protegido](https://helpx.adobe.com/es/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Para obtener más información, consulte [Documentación de Adobe sobre el modo protegido](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1398,7 +1398,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 +++
 
-Problemas de conversión de ++HTML a PDF
++++Problemas de conversión de HTML a PDF
 
 * Asegúrese de que los directorios de fuentes se agregan en la interfaz de usuario de la configuración de PDF Generator.
 
@@ -1423,7 +1423,7 @@ Problemas de conversión de ++HTML a PDF
   ```
 
 * Asegúrese de que las fuentes de IBM se copien en usr/share/fonts.
-* Asegúrese de que la corrección de vulnerabilidades fantasma glibc esté disponible en el equipo. Utilice su gestor de paquetes predeterminado para actualizar a la última versión de glibc. Incluye corrección de vulnerabilidades fantasma.
+* Asegúrese de que la corrección de vulnerabilidades fantasma glibc esté disponible en el equipo. Utilice su administrador de paquetes predeterminado para actualizar a la última versión de glibc. Incluye corrección de vulnerabilidades fantasma.
 * Asegúrese de que las últimas versiones de las bibliotecas lib curl, libcrypto y libssl de 32 bits estén instaladas en el sistema. Cree también enlaces simbólicos `/usr/lib/libcurl.so` (o libcurl.a para AIX®), `/usr/lib/libcrypto.so` (o libcrypto.a para AIX®) y `/usr/lib/libssl.so` (o libssl.a para AIX®) que apunten a las últimas versiones (32 bits) de las bibliotecas correspondientes.
 
 * Realice los siguientes pasos para el proveedor de sockets SSL de IBM®:
@@ -1459,7 +1459,7 @@ Problemas de conversión de ++HTML a PDF
 
 +++
 -->
-+++Errores en la prueba de automatización
++++Errores de prueba de automatización
 
 * Realice al menos una conversión manual en Microsoft® Office y OpenOffice (con cada usuario) para asegurarse de que no aparece ningún cuadro de diálogo durante la conversión. Si aparece algún diálogo, descártelo. No debería aparecer ningún cuadro de diálogo de este tipo durante la conversión automatizada.
 

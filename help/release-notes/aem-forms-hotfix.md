@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
-workflow-type: ht
-source-wordcount: '1789'
-ht-degree: 100%
+source-git-commit: 9d5ad43703d2fb3c1d40e10578f5289510a18230
+workflow-type: tm+mt
+source-wordcount: '1989'
+ht-degree: 90%
 
 ---
 
@@ -29,6 +29,48 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
     <td><strong>Vínculo de descarga de revisión (vínculo de distribución de software de AEM)</strong></td>
     <td><strong>Problemas solucionados</strong></td>
   </tr>
+  <tr>
+    <td>
+      <strong>14 de octubre de 2025</strong><br>
+      <em>Se aplica a:</em> ImgToPdf da error con la revisión Jboss de AEM Forms SP233(109)<br>
+    </td>
+    <td>
+    <ul> Para obtener una solución, póngase en contacto con el [Soporte técnico de Adobe Experience Manager Forms](https://business.adobe.com/in/support/main.html)
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li> <b>(FORMS-22029):</b> Mejora la confiabilidad de la conversión de PDF al solucionar un problema en el que PDF Generator (PDFG) no puede convertir archivos de imagen a PDF después de actualizar a SP23 con la revisión 3, lo que provoca errores inesperados posteriores al procesamiento.
+      <ul>
+  <tr>
+    <td>
+      <strong>23 de septiembre de 2025</strong><br>
+    </td>
+    <td>
+    <ul>
+    <li><strong>Jboss:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-jboss.zip">Revisión3 para el paquete de servicio 6.5.23.0 de AEM en el servidor JEE de Windows para JBoss</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-jboss.tar.gz">revisión3 para AEM Service Pack 6.5.23.0 en Linux para el servidor JEE de JBoss</a></li>
+    <li><strong>Weblogic:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-weblogic.zip">revisión3 para el paquete de servicio 6.5.23.0 de AEM en el servidor JEE de Windows para Weblogic</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-weblogic.tar.gz">revisión3 para AEM Service Pack 6.5.23.0 en Linux para el servidor JEE de Weblogic</a></li>
+    <li><strong>Websphere:</strong></li>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-websphere.zip">Revisión3 para el paquete de servicio 6.5.23.0 de AEM en el servidor JEE de Windows para Websphere</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-websphere.tar.gz">revisión3 para AEM Service Pack 6.5.23.0 en Linux para el servidor JEE de Websphere</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <strong>Esta revisión corrige lo siguiente:</strong> 
+    <li> <b>(FORMS-21378):</b> Se mejoró la confiabilidad del envío de formularios al solucionar un problema en el que los envíos fallan cuando la validación del lado del servidor (SSV) está habilitada y la información calculada de Meta está vacía.
+
+<li> <b>(FORMS-21721):</b> Se ha mejorado un problema por el cual las conversiones de PS a PDF y de HTML a PDF (WebKit) fallan después de implementar la revisión 2 sobre 6.5.23.0. 
+    </li>
+    </ul>
+    </td>    
+  </tr>
+    </ul>
+    </td>
   <tr>
     <td>
       <strong>5 de agosto de 2025</strong><br>

@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f018681e9202a934be2cfa8d426a32014c5ff66f
-workflow-type: ht
-source-wordcount: '6713'
-ht-degree: 100%
+source-git-commit: 9d5ad43703d2fb3c1d40e10578f5289510a18230
+workflow-type: tm+mt
+source-wordcount: '6746'
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 
 Las funciones y mejoras clave de esta versión son las siguientes:
 
-* [Hipervínculos accesibles con estilo de texto mixto en PDF estáticos](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf): los hipervínculos que contienen estilos de texto mixtos en PDF estáticos ahora están etiquetados como un solo elemento accesible. Esta mejora simplifica la estructura del árbol de etiquetas, optimiza la navegación del lector de pantalla y admite un mejor cumplimiento de la accesibilidad.
+* [Hipervínculos accesibles con estilo de texto mixto en PDF estáticos](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): los hipervínculos que contienen estilos de texto mixtos en PDF estáticos ahora están etiquetados como un solo elemento accesible. Esta mejora simplifica la estructura del árbol de etiquetas, optimiza la navegación del lector de pantalla y admite un mejor cumplimiento de la accesibilidad.
 
 * [Se ha actualizado la matriz de plataformas compatible](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
@@ -361,6 +361,10 @@ El paquete del complemento híbrido está disponible públicamente en Adobe Soft
 * Cuando un usuario utiliza el método retryAction(long actionOid) en el administrador de procesos de AEM JEE, se produce un comportamiento inesperado. (FORMS-18357)(FORMS-18187)
 
 * En AEM Forms 6.5.21.0, la conversión de PDFG da el siguiente error: (FORMS-16851)(FORMS-14613)
+
+* En AEM Forms 6.5.23.0 con revisión 2, (PDFG) error de conversiones de PS a PDF y de HTML a PDF (WebKit). (FORMS-21721)
+
+* En AEM Forms 6.5.23.0 con revisión 3, (PDFG) la conversión de imagen a PDF falla. (FORMS-22029)
 
 #### Captcha de Forms {#forms-captcha-6523}
 
@@ -767,6 +771,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
