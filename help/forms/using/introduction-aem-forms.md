@@ -20,7 +20,7 @@ ht-degree: 95%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | Este artículo |
 
 Para obtener información sobre las últimas funciones y mejoras de AEM Forms, consulte [Novedades de AEM Forms](../../forms/using/whats-new.md).
@@ -97,10 +97,10 @@ Capturar los datos sin conexión y sincronizarlos la próxima vez que vuelva a e
 
 * HTML Workspace es una aplicación fácil de usar para la asignación y el seguimiento de tareas
 * Entorno de diseño del flujo de trabajo de arrastrar y soltar
-* Conectores de gestión de contenido empresarial (ECM)
+* Conectores de administración de contenido empresarial (ECM)
 * Compatibilidad con estándares abiertos, incluidos XML y SOAP, para conectar datos de formularios con sistemas empresariales
 * Los informes HTML predeterminados monitorizan los trabajos pendientes, las colas de trabajo y los indicadores clave de rendimiento (KPI)
-* Paneles personalizables para obtener información en tiempo real sobre las operaciones empresariales
+* Paneles de control personalizables para obtener información en tiempo real sobre las operaciones empresariales
 * API para conectarse con herramientas de informes de terceros
 
 ![Tercer borrador](do-not-localize/3rd-draft.gif)

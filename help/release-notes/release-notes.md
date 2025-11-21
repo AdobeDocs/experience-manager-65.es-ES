@@ -56,7 +56,7 @@ ht-degree: 99%
 
 Las funciones y mejoras clave de esta versión son las siguientes:
 
-* [Hipervínculos accesibles con estilo de texto mixto en PDF estáticos](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf): los hipervínculos que contienen estilos de texto mixtos en PDF estáticos ahora están etiquetados como un solo elemento accesible. Esta mejora simplifica la estructura del árbol de etiquetas, optimiza la navegación del lector de pantalla y admite un mejor cumplimiento de la accesibilidad.
+* [Hipervínculos accesibles con estilo de texto mixto en PDF estáticos](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): los hipervínculos que contienen estilos de texto mixtos en PDF estáticos ahora están etiquetados como un solo elemento accesible. Esta mejora simplifica la estructura del árbol de etiquetas, optimiza la navegación del lector de pantalla y admite un mejor cumplimiento de la accesibilidad.
 
 * [Se ha actualizado la matriz de plataformas compatible](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
@@ -233,11 +233,11 @@ Corregir etiquetas `<br>` inesperadas en el editor de texto enriquecido con el m
 
 ### [!DNL Assets]{#assets-6523}
 
-* Los siguientes problemas se producen en la página de navegación On-Premise de [!DNL AEM] (6.5.22.0) después de seleccionar ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**, ir a la carpeta&#x200B;**[!UICONTROL &#x200B; Buscar Adobe Stock &#x200B;]**&#x200B;y seleccionar una imagen de archivo:
+* Los siguientes problemas se producen en la página de navegación On-Premise de [!DNL AEM] (6.5.22.0) después de seleccionar ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**, ir a la carpeta**[!UICONTROL  Buscar Adobe Stock ]**y seleccionar una imagen de archivo:
    * La imagen de archivo seleccionada no se puede autorizar y guardar porque al hacer clic en **[!UICONTROL Licencia y guardar]** se muestra una lista desplegable vacía.
    * Si se selecciona la imagen de archivo o se vuelve a introducir la URL de la página de archivo, se redirige a la página principal de [!DNL AEM], lo que impide el acceso a la imagen de Adobe Stock. (ASSETS-48687)
 * Problemas al administrar carpetas si el nombre de la carpeta incluye un `/` en su nombre en la página de navegación On-Premise (6.5.22.0) de [!DNL AEM]. (ASSETS-46740)
-* En [!DNL AEM] 6.5, la página de detalles del recurso no se carga desde la vista ![Colección](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Colecciones &#x200B;]**&#x200B;debido a un uso elevado de la memoria. (ASSETS-46738)
+* En [!DNL AEM] 6.5, la página de detalles del recurso no se carga desde la vista ![Colección](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Colecciones ]**debido a un uso elevado de la memoria. (ASSETS-46738)
 * Problemas de integración con [!DNL InDesign] dado que el servicio `Day CQ DAM Mime Type OSGI` identifica incorrectamente [!DNL InDesign] archivos como `x-adobe-indesign` en lugar de `x-indesign`. (ASSETS-45953)
 * La fuga de sesión de [!DNL AEM 6.5.21] se remonta al paso de flujo de trabajo de **[!UICONTROL Publicación programada en Brand Portal]** listo para usar. (ASSETS-44104)
 * Errores de **[!UICONTROL memoria insuficiente (OOM)]** que se muestran en [!DNL AEM] al procesar y publicar imágenes. Este problema se debió a métodos obsoletos en flujos de trabajo, como **[!DNL Dam Asset update]** y **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -362,9 +362,9 @@ El paquete del complemento híbrido está disponible públicamente en Adobe Soft
 
 * En AEM Forms 6.5.21.0, la conversión de PDFG da el siguiente error: (FORMS-16851)(FORMS-14613)
 
-* Error en las conversiones de AEM Forms 6.5.23.0, (PDFG) PS a PDF y HTML a PDF (WebKit). Para resolver el problema, descargue e instale la revisión de [Revisiones de Adobe Experience Manager Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-21721)
+* Error en las conversiones de AEM Forms 6.5.23.0, (PDFG) PS a PDF y HTML a PDF (WebKit). Para resolver el problema, descargue e instale la revisión de [Revisiones de Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-21721)
 
-* En AEM Forms 6.5.23.0, la conversión de imagen a PDF (PDFG) falla. Para resolver el problema, descargue e instale la revisión de [Revisiones de Adobe Experience Manager Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-22029)
+* En AEM Forms 6.5.23.0, la conversión de imagen a PDF (PDFG) falla. Para resolver el problema, descargue e instale la revisión de [Revisiones de Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-22029)
 
 #### Captcha de Forms {#forms-captcha-6523}
 
@@ -771,6 +771,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)

@@ -1,5 +1,5 @@
 ---
-title: AEM Primeros pasos para los autores al crear contenido en la
+title: Primeros pasos para los autores al crear contenido en AEM
 description: Explore los conceptos clave para la creación de contenido y la autorización en AEM 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de la página.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
 
 # Primeros pasos para los autores{#first-steps-for-authors}
 
-Esta sección le ofrece una descripción general de las tareas principales que utilizará al [empezar a crear contenido](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) con Adobe Experience Manager AEM ().
+Esta sección le ofrece una descripción general de las tareas principales que utilizará al [empezar a crear contenido](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) con Adobe Experience Manager (AEM).
 
 Abarca:
 
@@ -57,7 +57,7 @@ Tanto si su instancia ya tiene páginas existentes como si ha creado una nueva p
 
 * [Deshacer y rehacer modificaciones de páginas](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Usando el modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode) (para ver qué aspecto tendrá cuando se publique)
-* [Bloquear una página  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Bloquear una página  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Publicación de una página {#publishing-a-page}
 

@@ -25,7 +25,7 @@ AEM [!DNL Assets] es una herramienta de administración de activos digitales (DA
 
 ## ¿Qué es la administración de activos digitales? {#what-is-digital-asset-management}
 
-[!DNL Assets] proporciona uso compartido y distribución en toda la empresa de los recursos digitales clave de una organización. CIF Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales, como imágenes, gráficos, audio, vídeo y documentos, a través de una interfaz web (o una carpeta de o WebDAV).
+[!DNL Assets] proporciona uso compartido y distribución en toda la empresa de los recursos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales, como imágenes, gráficos, audio, vídeo y documentos, a través de una interfaz web (o una carpeta CIFS o WebDAV).
 
 La capacidad [!DNL Assets] de [!DNL Experience Manager] le permite hacer lo siguiente:
 
@@ -33,7 +33,7 @@ La capacidad [!DNL Assets] de [!DNL Experience Manager] le permite hacer lo sigu
 * Administre los recursos agrupándolos por etiquetas, lightbox o estrellas (sus favoritos). Agregar anotaciones a recursos.
 * Busque recursos buscando nombres de archivo, el texto completo de los documentos y buscando fechas, tipo de documento y etiquetas.
 * Añada o edite la información de metadatos de los recursos. Las versiones de los metadatos se realizan automáticamente junto con el recurso correspondiente. Puede importar o exportar metadatos de recursos.
-* Realizar funciones de edición de imágenes, como escalar y añadir filtros de imagen. CIF Importe y exporte varios recursos digitales simultáneamente mediante un WebDAV o una carpeta de la.
+* Realizar funciones de edición de imágenes, como escalar y añadir filtros de imagen. Importe y exporte varios recursos digitales simultáneamente mediante una carpeta WebDAV o CIFS.
 * Utilice flujos de trabajo y notificaciones para permitir el procesamiento y la descarga conjuntos de cualquier conjunto de recursos y administrar los derechos de acceso a los recursos.
 
 ### [!DNL Experience Manager Assets] está integrado con [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
@@ -68,7 +68,7 @@ Cuando se trabaja con recursos digitales en [!DNL Experience Manager], es útil 
 * **Los metadatos** [!DNL Assets] tienen metadatos; por ejemplo, autor, fecha de caducidad e información de DRM (Digital Rights Management). Los metadatos están bajo control de acceso. [!DNL Assets] admite los siguientes esquemas de metadatos comunes de forma predeterminada:
 
    * Núcleo de Dublín: incluye autor, descripción, fecha, asunto, etc.
-   * IPTC: incluye evento, modelo, ubicación, etc.
+   * IPTC: incluido evento, modelo, ubicación, etc.
    * WCM: incluyendo propiedades de página, [!UICONTROL Tiempo de activación] y [!UICONTROL Tiempo de inactividad], etc.
 
 * **Etiquetado**: [!DNL Assets] se puede etiquetar y clasificar. Consulte [organización de recursos](/help/assets/organize-assets.md).
@@ -86,7 +86,7 @@ Realiza una acción en un recurso o una colección. Las acciones pueden crear o 
 Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 
 * Guarde el recurso en el repositorio o elimínelo de él.
-* XMP Extraiga y guarde metadatos para el recurso; los elementos de metadatos individuales se guardan como elementos de metadatos de archivo
+* Extraiga y guarde metadatos del recurso; los elementos de metadatos individuales se guardan como XMP.
 * Generar representaciones y miniaturas del recurso, incluido el cambio de tamaño y el recorte automáticos cuando sea necesario.
 * Transcodifique el recurso donde sea necesario. Por ejemplo, el vídeo para uso móvil y web se transcodifica con 24 fotogramas por segundo y el vídeo de descarga con 30 fotogramas por segundo. El audio para uso móvil y web se transcodifica con 128 Kbps, el audio para descarga con 192 Kbps.
 
@@ -94,7 +94,7 @@ También puede aplicar flujos de trabajo manualmente. Consulte [Controladores de
 
 ## [!DNL Experience Manager Assets] y [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Consulte [Assets y Media Library](medialibrary.md) para obtener información sobre las diferencias.
+Consulte [Assets y Biblioteca multimedia](medialibrary.md) para obtener información sobre las diferencias.
 
 >[!MORELIKETHIS]
 >

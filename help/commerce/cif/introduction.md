@@ -46,11 +46,11 @@ Esta complejidad abre la puerta a posibles fallos, un incremento del coste total
 
 ## CIF apoya con éxito a sus clientes desde 2013
 
-Con más de 200 clientes, CIF se ha consolidado como un ingrediente exitoso para un proyecto de Content and Commerce con éxito. Esto aporta valor a la TI y a las empresas hoy y en el futuro. CIF Los proyectos recientes de clientes describen a los clientes como &quot;un gran acelerador y un gran ahorro de tiempo con mucho valor&quot;.
+Con más de 200 clientes, CIF se ha consolidado como un ingrediente exitoso para un proyecto de Content and Commerce con éxito. Esto aporta valor a la TI y a las empresas hoy y en el futuro. Proyectos recientes de clientes describen CIF como un &quot;gran acelerador y un gran ahorro de tiempo con mucho valor&quot;.
 
 ## Beneficios del CIF {#cif-benefits}
 
-CIF proporciona componentes básicos predeterminados que reducen la necesidad de usar un código personalizado, lo que acelera el tiempo de salida al mercado de las marcas. Todos los componentes principales están integrados de forma predeterminada con la capa de datos del lado del cliente de Adobe para integrar los perfiles de los clientes, como el perfil unificado. Este perfil captura en detalle el comportamiento de un visitante, que puede utilizarse para predecir y personalizar el recorrido del cliente en tiempo real.
+CIF proporciona componentes principales comerciales predeterminados que reducen la necesidad de usar un código personalizado, lo que acelera el tiempo de salida al mercado de las marcas. Todos los componentes principales están integrados de forma predeterminada con la capa de datos del lado del cliente de Adobe para integrar los perfiles de los clientes, como el perfil unificado. Este perfil captura en detalle el comportamiento de un visitante, que puede utilizarse para predecir y personalizar el recorrido del cliente en tiempo real.
 
 El complemento CIF introduce el contexto del producto en Experience Manager y proporciona herramientas de creación, como una consola de producto y selectores de producto/categoría, que permiten al experto en marketing crear y ofrecer experiencias de compra en Experience Manager sin depender del desarrollador. Las ventajas incluyen las siguientes:
 
@@ -62,7 +62,7 @@ Las potentes herramientas del CIF en AEM permiten a los creadores de contenido c
 
 ### Tiempo de creación de valor (TTV)
 
-AEM AEM AEM Acelera el desarrollo de proyectos con [Componentes principales](https://www.aemcomponents.dev/), [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia), [Arquetipo de proyecto de](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) y patrones de integración para PWA (contenido sin encabezado y Commerce).
+Acelera el desarrollo de proyectos con [componentes principales de AEM](https://www.aemcomponents.dev/), [tienda de referencia de AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [arquetipo de proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) y patrones de integración para PWA (contenido sin encabezado y Commerce).
 
 CIF está pensado para la innovación continua con un complemento siempre actualizado, que permite al cliente acceder a funciones nuevas y mejoradas.
 
