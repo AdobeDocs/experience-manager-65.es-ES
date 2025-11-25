@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[Contacte con Asistencia](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support) para obtener más información o el parche.
+>[Contacte con Asistencia](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support) para obtener más información o el parche.
 
 ## Acerca del programa de instalación de parches {#about-the-patch-installer}
 
@@ -97,4 +97,4 @@ Si tiene configurada la autenticación SAML y tiene problemas con metadatos de I
 * Seguridad de los documentos
 * Base JEE
 
-[Contacto con Asistencia](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support)
+[Contacto con Asistencia](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support)

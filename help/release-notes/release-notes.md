@@ -56,7 +56,7 @@ ht-degree: 99%
 
 Las funciones y mejoras clave de esta versión son las siguientes:
 
-* [Hipervínculos accesibles con estilo de texto mixto en PDF estáticos](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): los hipervínculos que contienen estilos de texto mixtos en PDF estáticos ahora están etiquetados como un solo elemento accesible. Esta mejora simplifica la estructura del árbol de etiquetas, optimiza la navegación del lector de pantalla y admite un mejor cumplimiento de la accesibilidad.
+* [Hipervínculos accesibles con estilo de texto mixto en PDF estáticos](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf): los hipervínculos que contienen estilos de texto mixtos en PDF estáticos ahora están etiquetados como un solo elemento accesible. Esta mejora simplifica la estructura del árbol de etiquetas, optimiza la navegación del lector de pantalla y admite un mejor cumplimiento de la accesibilidad.
 
 * [Se ha actualizado la matriz de plataformas compatible](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
@@ -362,9 +362,9 @@ El paquete del complemento híbrido está disponible públicamente en Adobe Soft
 
 * En AEM Forms 6.5.21.0, la conversión de PDFG da el siguiente error: (FORMS-16851)(FORMS-14613)
 
-* Error en las conversiones de AEM Forms 6.5.23.0, (PDFG) PS a PDF y HTML a PDF (WebKit). Para resolver el problema, descargue e instale la revisión de [Revisiones de Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-21721)
+* Error en las conversiones de AEM Forms 6.5.23.0, (PDFG) PS a PDF y HTML a PDF (WebKit). Para resolver el problema, descargue e instale la revisión de [Revisiones de Adobe Experience Manager Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-21721)
 
-* En AEM Forms 6.5.23.0, la conversión de imagen a PDF (PDFG) falla. Para resolver el problema, descargue e instale la revisión de [Revisiones de Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-22029)
+* En AEM Forms 6.5.23.0, la conversión de imagen a PDF (PDFG) falla. Para resolver el problema, descargue e instale la revisión de [Revisiones de Adobe Experience Manager Forms](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/release-notes/aem-forms-hotfix) (FORMS-22029)
 
 #### Captcha de Forms {#forms-captcha-6523}
 
@@ -771,6 +771,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
