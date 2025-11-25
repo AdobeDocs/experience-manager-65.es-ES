@@ -2,14 +2,14 @@
 title: Creación de proyectos de traducción
 description: Aprenda a crear proyectos de traducción en  [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1889'
-ht-degree: 13%
+ht-degree: 16%
 
 ---
 
@@ -220,7 +220,7 @@ Si utiliza esta opción, el conjunto de recursos se agrega a un proyecto de trad
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Seleccione la casilla de verificación que se encuentra delante de **[!UICONTROL Textos en idiomas]**, de esta forma, selecciona los textos disponibles en diferentes idiomas. Anule la selección de otros textos excepto el texto (textos) en el idioma correspondiente a las configuraciones regionales a las que desea traducir.
+1. Seleccione la casilla de verificación que se encuentra delante de **[!UICONTROL Textos en idiomas]**, de esta forma, selecciona los textos disponibles en diferentes idiomas. Anule la selección de otras copias excepto la copia (copias) de idioma correspondiente a las configuraciones regionales a las que desea traducir.
 
    ![seleccionar copia de idioma](assets/lang-copy1.png)
 
@@ -261,5 +261,5 @@ Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia d
 
 ## Sugerencias y limitaciones {#tips-limitations}
 
-* Si inicia un flujo de trabajo de traducción para recursos complejos, como archivos de PDF y [!DNL Adobe InDesign], sus subrecursos o representaciones (si los hay) no se envían para su traducción.
+* Si inicia un flujo de trabajo de traducción para recursos complejos, como PDF y [!DNL Adobe InDesign] archivos, sus subrecursos o representaciones (si los hay) no se envían para su traducción.
 * Si utiliza la traducción automática, los binarios de recursos no se traducen.

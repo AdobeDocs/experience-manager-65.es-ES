@@ -1,6 +1,6 @@
 ---
 title: Administración programática de puntos de conexión
-description: SOAP Utilice el servicio Registro de extremos para agregar extremos de EJB, agregar extremos de carpetas inspeccionadas, agregar extremos de correo electrónico, agregar extremos remotos, agregar extremos de Task Manager, modificar extremos, quitar extremos y recuperar información del conector de extremos.
+description: Utilice el servicio Registro de extremos para agregar extremos de EJB, agregar extremos de SOAP, agregar extremos de carpetas inspeccionadas, agregar extremos de correo electrónico, agregar extremos remotos, agregar extremos de Task Manager, modificar extremos, quitar extremos y recuperar información del conector de extremo.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '10800'
+source-wordcount: '10799'
 ht-degree: 1%
 
 ---
@@ -28,12 +28,12 @@ El servicio Registro de extremos proporciona la capacidad de administrar los ext
 * SOAP
 * Carpeta inspeccionada
 * Correo electrónico
-* AEM (Obsoleto para formularios en formato de) Remoting
+* (Obsoleto para formularios AEM) Remoting
 * Administrador de tareas
 
 >[!NOTE]
 >
->SOAP AEM Los puntos de conexión remotos de EJB, EJB y (obsoleto para formularios de en JEE) se crean automáticamente para cada servicio activado. SOAP SOAP Los extremos de EJB y de la habilitan y EJB para todas las operaciones de servicio.
+>SOAP, EJB y puntos finales remotos (obsoletos para formularios AEM en JEE) se crean automáticamente para cada servicio activado. Los extremos de SOAP y EJB habilitan SOAP y EJB para todas las operaciones de servicio.
 
 Un extremo remoto permite a los clientes de Flex invocar operaciones en el servicio AEM Forms al que se agrega el extremo. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio correspondiente.
 
@@ -44,7 +44,7 @@ Puede organizar los extremos de TaskManager en grupos llamados *categorías*. Es
 Puede realizar estas tareas mediante el servicio Registro de extremos:
 
 * Agregar extremos de EJB. (Consulte [Agregar extremos de EJB](programmatically-endpoints.md#adding-ejb-endpoints)).
-* SOAP Agregar puntos finales de la. SOAP (Consulte [Adición de puntos de conexión de](programmatically-endpoints.md#adding-soap-endpoints).)
+* Agregar extremos de SOAP. (Consulte [Agregar puntos de conexión de SOAP](programmatically-endpoints.md#adding-soap-endpoints).)
 * Agregar extremos de carpeta inspeccionada (consulte [Agregar extremos de carpeta inspeccionada](programmatically-endpoints.md#adding-watched-folder-endpoints)).
 * Agregar extremos de correo electrónico. (Consulte [Agregar extremos de correo electrónico](programmatically-endpoints.md#adding-email-endpoints).)
 * Agregar extremos remotos. (Consulte [Agregar extremos remotos](programmatically-endpoints.md#adding-remoting-endpoints).)
@@ -132,15 +132,15 @@ Agregar un extremo de EJB mediante la API de Java:
 1. Establecer atributos de extremo de EJB.
 
    * Crear un objeto `CreateEndpointInfo` mediante su constructor.
-   * Especifique el valor del identificador del conector invocando el método `setConnectorId` del objeto `CreateEndpointInfo` y pasando el valor de cadena `EJB`.
-   * Especifique la descripción del extremo invocando el método `setDescription` del objeto `CreateEndpointInfo` y pasando un valor de cadena que describe el extremo.
-   * Especifique el nombre del extremo invocando el método `setName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifique el nombre.
-   * Especifique el servicio al que pertenece el extremo invocando el método `setServiceId` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre del servicio.
-   * Especifique la operación que se invoca invocando el método `setOperationName` del objeto `CreateEndpointInfo` y pase un valor de cadena que especifique el nombre de la operación. SOAP Para los extremos de EJB y de la, especifique un carácter comodín ( `*`), que implica todas las operaciones.
+   * Especifique el valor del identificador del conector invocando el método `CreateEndpointInfo` del objeto `setConnectorId` y pasando el valor de cadena `EJB`.
+   * Especifique la descripción del extremo invocando el método `CreateEndpointInfo` del objeto `setDescription` y pasando un valor de cadena que describe el extremo.
+   * Especifique el nombre del extremo invocando el método `CreateEndpointInfo` del objeto `setName` y pasando un valor de cadena que especifique el nombre.
+   * Especifique el servicio al que pertenece el extremo invocando el método `CreateEndpointInfo` del objeto `setServiceId` y pasando un valor de cadena que especifica el nombre del servicio.
+   * Especifique la operación que se invoca invocando el método `CreateEndpointInfo` del objeto `setOperationName` y pase un valor de cadena que especifique el nombre de la operación. Para los extremos de SOAP y EJB, especifique un carácter comodín ( `*`), que implica todas las operaciones.
 
 1. Cree un extremo de EJB.
 
-   Cree el extremo invocando el método `createEndpoint` del objeto `EndpointRegistryClient` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el nuevo extremo de EJB.
+   Cree el extremo invocando el método `EndpointRegistryClient` del objeto `createEndpoint` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el nuevo extremo de EJB.
 
 1. Habilite el extremo.
 
@@ -156,26 +156,26 @@ Agregar un extremo de EJB mediante la API de Java:
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## SOAP Adición de extremos de {#adding-soap-endpoints}
+## Adición de extremos de SOAP {#adding-soap-endpoints}
 
-SOAP Mediante programación, puede agregar un extremo de a un servicio mediante la API de Java de AEM Forms. SOAP SOAP Al agregar un punto final de, habilita una aplicación cliente para invocar el servicio mediante el modo de. Es decir, al establecer las propiedades de conexión necesarias para invocar AEM Forms SOAP, puede seleccionar el modo de.
-
->[!NOTE]
->
->SOAP No se puede agregar un extremo de mediante los servicios web.
+Puede agregar mediante programación un extremo de SOAP a un servicio mediante la API de Java de AEM Forms. Al agregar un extremo de SOAP, habilita una aplicación cliente para invocar el servicio mediante el modo SOAP. Es decir, al establecer las propiedades de conexión necesarias para invocar AEM Forms, puede seleccionar el modo SOAP.
 
 >[!NOTE]
 >
->SOAP SOAP SOAP Normalmente, se agrega un punto de conexión de la a un servicio de forma predeterminada. Sin embargo, se puede agregar un punto de conexión de la distribución a un proceso que se implementa mediante programación o cuando se quita un punto de conexión de la distribución de la distribución y debe agregarse de nuevo.
+>No se puede agregar un extremo de SOAP mediante los servicios web.
+
+>[!NOTE]
+>
+>Normalmente, se agrega un extremo de SOAP a un servicio de forma predeterminada. Sin embargo, se puede agregar un extremo de SOAP a un proceso que se implementa mediante programación o cuando se quita un extremo de SOAP y debe agregarse de nuevo.
 
 ### Resumen de los pasos {#summary_of_steps-1}
 
-SOAP Para agregar un punto final de a un servicio, realice las siguientes tareas:
+Para agregar un extremo de SOAP a un servicio, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
 1. Crear un objeto `EndpointRegistryClient`.
-1. SOAP Establezca atributos de extremo de la.
-1. SOAP Cree un punto final de.
+1. Establezca los atributos del extremo de SOAP.
+1. Cree un extremo de SOAP.
 1. Habilite el extremo.
 
 **Incluir archivos de proyecto**
@@ -189,25 +189,25 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
 * jbossall-client.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
 
-SOAP Estos archivos JAR son necesarios para crear un punto final de. SOAP Sin embargo, necesita archivos JAR adicionales si utiliza el extremo de la para invocar el servicio. Para obtener información sobre los archivos JAR de AEM Forms, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Estos archivos JAR son necesarios para crear un extremo de SOAP. Sin embargo, necesita archivos JAR adicionales si utiliza el extremo de SOAP para invocar el servicio. Para obtener información sobre los archivos JAR de AEM Forms, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Crear un objeto cliente EndpointRegistry**
 
-SOAP Para agregar mediante programación un punto final de un servicio, debe crear un objeto `EndpointRegistryClient`.
+Para agregar mediante programación un extremo de SOAP a un servicio, debe crear un objeto `EndpointRegistryClient`.
 
-SOAP **Establecer atributos de punto de conexión de**
+**Establecer atributos de extremo de SOAP**
 
-SOAP Para agregar un extremo de la a un servicio, especifique los siguientes valores:
+Para agregar un extremo de SOAP a un servicio, especifique los siguientes valores:
 
-* **Valor del identificador del conector**: Especifica el tipo de extremo que se va a crear. SOAP Para crear un extremo de la, especifique `SOAP`.
+* **Valor del identificador del conector**: Especifica el tipo de extremo que se va a crear. Para crear un extremo de SOAP, especifique `SOAP`.
 * **Descripción**: especifica la descripción del extremo.
 * **Nombre**: especifica el nombre del extremo.
 * **Valor del identificador de servicio**: Especifica el servicio al que pertenece el extremo.
-* **Nombre de operación**: especifica el nombre de la operación que se invoca mediante el extremo. SOAP Al crear un extremo de la, especifique un carácter comodín ( `*`). Sin embargo, si desea especificar una operación específica en lugar de invocar todas las operaciones de servicio, especifique el nombre de la operación en lugar de utilizar el carácter comodín ( `*`).
+* **Nombre de operación**: especifica el nombre de la operación que se invoca mediante el extremo. Al crear un extremo de SOAP, especifique un carácter comodín ( `*`). Sin embargo, si desea especificar una operación específica en lugar de invocar todas las operaciones de servicio, especifique el nombre de la operación en lugar de utilizar el carácter comodín ( `*`).
 
-SOAP **Crear un punto de conexión de**
+**Crear un extremo de SOAP**
 
-SOAP SOAP Después de establecer los atributos del extremo de la, puede crear un extremo de la misma.
+Después de establecer los atributos de extremo de SOAP, puede crear un extremo de SOAP.
 
 **Habilitar el extremo**
 
@@ -215,15 +215,15 @@ Después de crear un extremo, debe habilitarlo. Cuando el punto de conexión est
 
 **Consulte también**
 
-[SOAP Añadir un extremo de la mediante la API de Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
+[Añadir un extremo de SOAP mediante la API de Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### SOAP Añadir un extremo de la mediante la API de Java {#add-a-soap-endpoint-using-the-java-api}
+### Añadir un extremo de SOAP mediante la API de Java {#add-a-soap-endpoint-using-the-java-api}
 
-SOAP Añadir un extremo de la a un servicio mediante la API de Java:
+Agregue un extremo de SOAP a un servicio mediante la API de Java:
 
 1. Incluir archivos de proyecto.
 
@@ -234,18 +234,18 @@ SOAP Añadir un extremo de la a un servicio mediante la API de Java:
    * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
    * Cree un objeto `EndpointRegistryClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
-1. SOAP Establezca atributos de extremo de la.
+1. Establezca los atributos del extremo de SOAP.
 
    * Crear un objeto `CreateEndpointInfo` mediante su constructor.
-   * Especifique el valor del identificador del conector invocando el método `setConnectorId` del objeto `CreateEndpointInfo` y pasando el valor de cadena `SOAP`.
-   * Especifique la descripción del extremo invocando el método `setDescription` del objeto `CreateEndpointInfo` y pasando un valor de cadena que describe el extremo.
-   * Especifique el nombre del extremo invocando el método `setName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifique el nombre.
-   * Especifique el servicio al que pertenece el extremo invocando el método `setServiceId` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre del servicio.
-   * Especifique la operación que se invoca invocando el método `setOperationName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre de la operación. SOAP Para los extremos de EJB y de la, especifique un carácter comodín ( `*`), que implica todas las operaciones.
+   * Especifique el valor del identificador del conector invocando el método `CreateEndpointInfo` del objeto `setConnectorId` y pasando el valor de cadena `SOAP`.
+   * Especifique la descripción del extremo invocando el método `CreateEndpointInfo` del objeto `setDescription` y pasando un valor de cadena que describe el extremo.
+   * Especifique el nombre del extremo invocando el método `CreateEndpointInfo` del objeto `setName` y pasando un valor de cadena que especifique el nombre.
+   * Especifique el servicio al que pertenece el extremo invocando el método `CreateEndpointInfo` del objeto `setServiceId` y pasando un valor de cadena que especifica el nombre del servicio.
+   * Especifique la operación que se invoca invocando el método `CreateEndpointInfo` del objeto `setOperationName` y pasando un valor de cadena que especifica el nombre de la operación. Para los extremos de SOAP y EJB, especifique un carácter comodín ( `*`), que implica todas las operaciones.
 
-1. SOAP Cree un punto final de.
+1. Cree un extremo de SOAP.
 
-   Cree el extremo invocando el método `createEndpoint` del objeto `EndpointRegistryClient` y pasando el objeto `CreateEndpointInfo`. SOAP Este método devuelve un objeto `Endpoint` que representa el nuevo extremo de la.
+   Cree el extremo invocando el método `EndpointRegistryClient` del objeto `createEndpoint` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el nuevo extremo de SOAP.
 
 1. Habilite el extremo.
 
@@ -255,7 +255,7 @@ SOAP Añadir un extremo de la a un servicio mediante la API de Java:
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
-[SOAP Inicio rápido: Añadir un extremo de la mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[Inicio rápido: Añadir un punto final de SOAP mediante la API de Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -263,13 +263,13 @@ SOAP Añadir un extremo de la a un servicio mediante la API de Java:
 
 ## Adición de extremos de carpeta inspeccionada {#adding-watched-folder-endpoints}
 
-Puede agregar mediante programación un punto final de carpeta inspeccionada a un servicio mediante la API de Java de AEM Forms. Al agregar un punto final de carpeta inspeccionada, permite a los usuarios colocar un archivo (como un archivo de PDF) en una carpeta. Cuando el archivo se coloca en la carpeta, el servicio configurado se invoca y manipula el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada. Una carpeta vigilada está configurada para analizarse a un intervalo de tasa fija o con una programación cron, como todos los lunes, miércoles y viernes al mediodía.
+Puede agregar mediante programación un punto final de carpeta inspeccionada a un servicio mediante la API de Java de AEM Forms. Al agregar un punto final de carpeta inspeccionada, permite a los usuarios colocar un archivo (como un archivo PDF) en una carpeta. Cuando el archivo se coloca en la carpeta, el servicio configurado se invoca y manipula el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada. Una carpeta vigilada está configurada para analizarse a un intervalo de tasa fija o con una programación cron, como todos los lunes, miércoles y viernes al mediodía.
 
 Para agregar mediante programación un extremo de carpeta inspeccionada a un servicio, considere el siguiente proceso de corta duración denominado *EncryptDocument*. (Consulte [Explicación de los procesos de AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Este proceso acepta un documento de PDF no protegido como valor de entrada y, a continuación, pasa el documento de PDF no protegido a la operación `EncryptPDFUsingPassword` del servicio Encryption. El documento de PDF se cifra con una contraseña y el documento de PDF cifrado con contraseña es el valor de salida de este proceso. El nombre del valor de entrada (el documento de PDF no protegido) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento de PDF cifrado con contraseña) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
+Este proceso acepta un documento de PDF no protegido como valor de entrada y, a continuación, pasa el documento de PDF no protegido a la operación `EncryptPDFUsingPassword` del servicio Encryption. El documento de PDF se cifra con una contraseña y el documento de PDF cifrado con contraseña es el valor de salida de este proceso. El nombre del valor de entrada (documento de PDF no protegido) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento de PDF cifrado con contraseña) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -331,7 +331,7 @@ La siguiente lista especifica los valores de configuración que se establecen al
 * **userName**: nombre de usuario utilizado al invocar un servicio de destino desde la carpeta inspeccionada. Este valor es obligatorio. El valor predeterminado es SuperAdmin.
 * **domainName**: el dominio del usuario. Este valor es obligatorio. El valor predeterminado es DefaultDom.
 * **batchSize**: número de archivos o carpetas que se van a recoger por análisis. Utilice este valor para evitar sobrecargas en el sistema; el análisis de demasiados archivos al mismo tiempo puede provocar un bloqueo. El valor predeterminado es 2.
-* **waitTime**: tiempo, en milisegundos, a esperar antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 36 000 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. Este atributo es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&ast;60 &ast;1000 milisegundos. Esta configuración evita que la carpeta vigilada analice el archivo si no ha estado esperando durante diez minutos. El valor predeterminado es 0.
+* **waitTime**: tiempo, en milisegundos, a esperar antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 36 000 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. Este atributo es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Esta configuración evita que la carpeta vigilada analice el archivo si no ha estado esperando durante diez minutos. El valor predeterminado es 0.
 * **excludeFilePattern**: El patrón que usa una carpeta vigilada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta que tenga este patrón se analizará para su procesamiento. Esta configuración es útil cuando la entrada es una carpeta que contiene varios archivos. El contenido de la carpeta se puede copiar en una carpeta que tenga un nombre que recogerá la carpeta vigilada. Este paso evita que la carpeta inspeccionada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. Por ejemplo, si el valor excludeFilePattern es `data*`, no se recogen todos los archivos y carpetas que coinciden con `data*`. Esto incluye archivos y carpetas con los nombres `data1`, `data2`, etc. Además, el patrón se puede complementar con patrones de comodines para especificar patrones de archivo. La carpeta vigilada modifica la expresión regular para admitir patrones de comodines como `*.*` y `*.pdf`. Estas expresiones regulares no admiten estos patrones comodín.
 * **includeFilePattern**: El patrón que usa la carpeta vigilada para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si este valor es `*`, se recogerán todos los archivos y carpetas que coincidan con `input*`. Esto incluye archivos y carpetas con los nombres `input1`, `input2`, etc. El valor predeterminado es `*`. Este valor indica todos los archivos y carpetas. Además, el patrón se puede complementar con patrones de comodines para especificar patrones de archivo. La carpeta vigilada modifica la expresión regular para admitir patrones de comodines como `*.*` y `*.pdf`. Estas expresiones regulares no admiten estos patrones comodín. Este valor es obligatorio.
 * **resultFolderName**: La carpeta donde se almacenan los resultados guardados. Esta ubicación puede ser una ruta de acceso de directorio absoluta o relativa. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. El valor predeterminado es `result/%Y/%M/%D/`. Esta es la carpeta de resultados dentro de la carpeta vigilada.
@@ -351,7 +351,7 @@ Para definir los valores de parámetro de entrada necesarios para un punto final
 **Tipo de asignación**: se usa para configurar los valores de entrada necesarios para invocar la operación de servicio. Existen dos tipos de asignación:
 
 * `Literal`: el extremo de la carpeta inspeccionada utiliza el valor introducido en el campo tal como se muestra. Se admiten todos los tipos básicos de Java. Por ejemplo, si una API utiliza entradas como String, long, int y Boolean, la cadena se convierte en el tipo adecuado y se invoca el servicio.
-* `Variable`: el valor introducido es un patrón de archivo que la carpeta vigilada utiliza para elegir la entrada. Por ejemplo, si selecciona Variable para el tipo de asignación y el documento de entrada debe ser un archivo de PDF, puede especificar `*.pdf` como valor de asignación.
+* `Variable`: el valor introducido es un patrón de archivo que la carpeta vigilada utiliza para elegir la entrada. Por ejemplo, si selecciona Variable para el tipo de asignación y el documento de entrada debe ser un archivo PDF, puede especificar `*.pdf` como valor de asignación.
 
 **Valor de asignación**: especifica el valor del tipo de asignación. Por ejemplo, si selecciona un tipo de asignación `Variable`, puede especificar `*.pdf` como patrón de archivo.
 
@@ -405,15 +405,15 @@ Añada un punto final de carpeta inspeccionada mediante la API de Java de AEM Fo
 1. Establezca los atributos del punto final de la carpeta inspeccionada.
 
    * Crear un objeto `CreateEndpointInfo` mediante su constructor.
-   * Especifique el valor del identificador del conector invocando el método `setConnectorId` del objeto `CreateEndpointInfo` y pasando el valor de cadena `WatchedFolder`.
-   * Especifique la descripción del extremo invocando el método `setDescription` del objeto `CreateEndpointInfo` y pasando un valor de cadena que describe el extremo.
-   * Especifique el nombre del extremo invocando el método `setName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifique el nombre.
-   * Especifique el servicio al que pertenece el extremo invocando el método `setServiceId` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre del servicio.
-   * Especifique la operación que se invoca invocando el método `setOperationName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre de la operación. Normalmente, al crear un punto final de carpeta inspeccionada para un servicio que se originó a partir de un proceso creado en Workbench, se invoca el nombre de la operación.
+   * Especifique el valor del identificador del conector invocando el método `CreateEndpointInfo` del objeto `setConnectorId` y pasando el valor de cadena `WatchedFolder`.
+   * Especifique la descripción del extremo invocando el método `CreateEndpointInfo` del objeto `setDescription` y pasando un valor de cadena que describe el extremo.
+   * Especifique el nombre del extremo invocando el método `CreateEndpointInfo` del objeto `setName` y pasando un valor de cadena que especifique el nombre.
+   * Especifique el servicio al que pertenece el extremo invocando el método `CreateEndpointInfo` del objeto `setServiceId` y pasando un valor de cadena que especifica el nombre del servicio.
+   * Especifique la operación que se invoca invocando el método `CreateEndpointInfo` del objeto `setOperationName` y pasando un valor de cadena que especifica el nombre de la operación. Normalmente, al crear un punto final de carpeta inspeccionada para un servicio que se originó a partir de un proceso creado en Workbench, se invoca el nombre de la operación.
 
 1. Especifique los valores de configuración.
 
-   Para que cada valor de configuración se establezca para el extremo de la carpeta inspeccionada, debe invocar el método `setConfigParameterAsText` del objeto `CreateEndpointInfo`. Por ejemplo, para establecer el valor de configuración `url`, invoque el método `setConfigParameterAsText` del objeto `CreateEndpointInfo` y pase los siguientes valores de cadena:
+   Para que cada valor de configuración se establezca para el extremo de la carpeta inspeccionada, debe invocar el método `CreateEndpointInfo` del objeto `setConfigParameterAsText`. Por ejemplo, para establecer el valor de configuración `url`, invoque el método `CreateEndpointInfo` del objeto `setConfigParameterAsText` y pase los siguientes valores de cadena:
 
    * Un valor de cadena que especifica el nombre del valor de configuración. Al establecer el valor de configuración `url`, especifique `url`.
    * Un valor de cadena que especifica el valor del valor de configuración. Al establecer el valor de configuración `url`, especifique la ubicación de la carpeta vigilada.
@@ -424,12 +424,12 @@ Añada un punto final de carpeta inspeccionada mediante la API de Java de AEM Fo
 
 1. Defina los valores de parámetros de entrada.
 
-   Defina un valor de parámetro de entrada invocando el método `setInputParameterMapping` del objeto `CreateEndpointInfo` y pase los siguientes valores:
+   Defina un valor de parámetro de entrada invocando el método `CreateEndpointInfo` del objeto `setInputParameterMapping` y pase los siguientes valores:
 
    * Valor de cadena que especifica el nombre del parámetro de entrada. Por ejemplo, el nombre del parámetro de entrada para el servicio EncryptDocument es `InDoc`.
    * Valor de cadena que especifica el tipo de datos del parámetro de entrada. Por ejemplo, el tipo de datos del parámetro de entrada `InDoc` es `com.adobe.idp.Document`.
    * Valor de cadena que especifica el tipo de asignación. Por ejemplo, puede especificar `variable`.
-   * Valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &ast;.pdf como patrón de archivo.
+   * Valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &amp;ast;.pdf como patrón de archivo.
 
    >[!NOTE]
    >
@@ -437,7 +437,7 @@ Añada un punto final de carpeta inspeccionada mediante la API de Java de AEM Fo
 
 1. Defina un valor de parámetro de salida.
 
-   Defina un valor de parámetro de salida invocando el método `setOutputParameterMapping` del objeto `CreateEndpointInfo` y pase los siguientes valores:
+   Defina un valor de parámetro de salida invocando el método `CreateEndpointInfo` del objeto `setOutputParameterMapping` y pase los siguientes valores:
 
    * Valor de cadena que especifica el nombre del parámetro de salida. Por ejemplo, el nombre del parámetro de salida para el servicio EncryptDocument es `SecuredDoc`.
    * Valor de cadena que especifica el tipo de datos del parámetro de salida. Por ejemplo, el tipo de datos del parámetro de salida `SecuredDoc` es `com.adobe.idp.Document`.
@@ -445,11 +445,11 @@ Añada un punto final de carpeta inspeccionada mediante la API de Java de AEM Fo
 
 1. Cree un punto final de carpeta inspeccionada.
 
-   Cree el extremo invocando el método `createEndpoint` del objeto `EndpointRegistryClient` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el extremo de la carpeta inspeccionada.
+   Cree el extremo invocando el método `EndpointRegistryClient` del objeto `createEndpoint` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el extremo de la carpeta inspeccionada.
 
 1. Habilite el extremo.
 
-   Habilite el extremo invocando el método `enable` del objeto `EndpointRegistryClient` y pasando el objeto `Endpoint` devuelto por el método `createEndpoint`.
+   Habilite el extremo invocando el método `EndpointRegistryClient` del objeto `enable` y pasando el objeto `Endpoint` devuelto por el método `createEndpoint`.
 
 **Consulte también**
 
@@ -502,7 +502,7 @@ Para agregar mediante programación un extremo de correo electrónico a un servi
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Este proceso acepta un documento de PDF no protegido como valor de entrada y, a continuación, pasa el documento de PDF no protegido a la operación `EncryptPDFUsingPassword` del servicio Encryption. Este proceso cifra el documento de PDF con una contraseña y devuelve el documento de PDF cifrado con contraseña como valor de salida. El nombre del valor de entrada (el documento de PDF no protegido) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento de PDF cifrado con contraseña) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
+Este proceso acepta un documento de PDF no protegido como valor de entrada y, a continuación, pasa el documento de PDF no protegido a la operación `EncryptPDFUsingPassword` del servicio Encryption. Este proceso cifra el documento de PDF con una contraseña y devuelve el documento de PDF cifrado con contraseña como valor de salida. El nombre del valor de entrada (documento de PDF no protegido) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento de PDF cifrado con contraseña) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -566,7 +566,7 @@ Los siguientes valores de configuración se establecen al agregar mediante progr
 * **userName**: nombre de usuario utilizado al invocar un servicio de destino desde el correo electrónico. El valor predeterminado es `SuperAdmin`.
 * **domainName**: un valor de configuración obligatorio. El valor predeterminado es `DefaultDom`.
 * **domainPattern**: Especifica los patrones de dominio del correo electrónico entrante que acepta el proveedor. Por ejemplo, si se usa `adobe.com`, solo se procesa el correo electrónico de adobe.com y se omite el correo electrónico de otros dominios.
-* **filePattern**: especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones de nombre de archivo específicas (&ast;.dat, &ast;.xml), archivos que tienen nombres específicos (data) y archivos que tienen expresiones compuestas en el nombre y la extensión (&ast;).[dD][aA]&#39;port&#39;). El valor predeterminado es `*`.
+* **filePattern**: especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones de nombre de archivo específicas (&amp;ast;.dat, &amp;ast;.xml), archivos que tienen nombres específicos (data) y archivos que tienen expresiones compuestas en el nombre y la extensión (&amp;ast;).``[dD][aA]``&#39;puerto&#39;). El valor predeterminado es `*`.
 * **recipientSuccessfulJob**: dirección de correo electrónico a la que se envían mensajes para indicar que los trabajos se han realizado correctamente. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. En algunos casos, es posible que desee almacenar en déclencheur un proceso y no desee recibir una notificación del resultado por correo electrónico. El valor predeterminado es `sender`.
 * **recipientFailedJob**: dirección de correo electrónico a la que se envían mensajes para indicar trabajos con errores. De forma predeterminada, siempre se envía un mensaje de trabajo con errores al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. El valor predeterminado es `sender`.
 * **inboxHost**: El nombre de host de la bandeja de entrada o la dirección IP para que el proveedor de correo electrónico analice.
@@ -583,7 +583,7 @@ Los siguientes valores de configuración se establecen al agregar mediante progr
 * **charSet**: conjunto de caracteres utilizado por el proveedor de correo electrónico. El valor predeterminado es `UTF-8`.
 * **smtpSSLEnabled**: establezca este valor para forzar al proveedor de correo electrónico a utilizar SSL al enviar mensajes de notificación de resultados o errores. Asegúrese de que el host SMTP admita SSL.
 * **failedJobFolder**: Especifica un directorio en el que almacenar los resultados cuando el servidor de correo SMTP no está operativo.
-* **asincrónico**: cuando se establece en sincrónico, se procesan todos los documentos de entrada y se devuelve una sola respuesta. Cuando se establece en asíncrono, se envía una respuesta para cada documento de entrada que se procesa. Por ejemplo, se crea un extremo de correo electrónico para el proceso que se describe en este tema y se envía un mensaje de correo electrónico a la bandeja de entrada del extremo que contiene varios documentos de PDF no protegidos. Cuando todos los documentos del PDF se cifran con una contraseña y el punto de conexión se configura como sincrónico, se envía un único mensaje de correo electrónico de respuesta con todos los documentos del PDF protegidos adjuntos. Si el extremo está configurado como asincrónico, se envía un mensaje de correo electrónico de respuesta independiente para cada documento de PDF protegido. Cada mensaje de correo electrónico contiene un solo documento de PDF como datos adjuntos. El valor predeterminado es asíncrono.
+* **asincrónico**: cuando se establece en sincrónico, se procesan todos los documentos de entrada y se devuelve una sola respuesta. Cuando se establece en asíncrono, se envía una respuesta para cada documento de entrada que se procesa. Por ejemplo, se crea un extremo de correo electrónico para el proceso introducido en este tema y se envía un mensaje de correo electrónico a la bandeja de entrada del extremo que contiene varios documentos de PDF no protegidos. Cuando todos los documentos de PDF se cifran con una contraseña y el punto de conexión se configura como sincrónico, se envía un único mensaje de correo electrónico de respuesta con todos los documentos de PDF protegidos adjuntos. Si el extremo está configurado como asincrónico, se envía un mensaje de correo electrónico de respuesta independiente para cada documento de PDF protegido. Cada mensaje de correo electrónico contiene un solo documento de PDF como datos adjuntos. El valor predeterminado es asíncrono.
 
 **Definir valores de parámetros de entrada**
 
@@ -596,7 +596,7 @@ Para definir los valores de parámetro de entrada necesarios para un extremo de 
 **Tipo de asignación**: se usa para configurar los valores de entrada necesarios para invocar la operación de servicio. A continuación se indican dos tipos de asignación:
 
 * `Literal`: el extremo de correo electrónico utiliza el valor introducido en el campo tal como se muestra. Se admiten todos los tipos básicos de Java. Por ejemplo, si una API utiliza entradas como String, long, int y Boolean, la cadena se convierte al tipo adecuado y se invoca el servicio.
-* `Variable`: el valor introducido es un patrón de archivo que el extremo de correo electrónico utiliza para elegir la entrada. Por ejemplo, si selecciona Variable para el tipo de asignación y el documento de entrada debe ser un archivo de PDF, puede especificar `*.pdf` como valor de asignación.
+* `Variable`: el valor introducido es un patrón de archivo que el extremo de correo electrónico utiliza para elegir la entrada. Por ejemplo, si selecciona Variable para el tipo de asignación y el documento de entrada debe ser un archivo PDF, puede especificar `*.pdf` como valor de asignación.
 
 **Valor de asignación**: especifica el valor del tipo de asignación. Por ejemplo, si selecciona un tipo de asignación Variable, puede especificar `*.pdf` como patrón de archivo.
 
@@ -650,15 +650,15 @@ Añadir un extremo de correo electrónico mediante la API de Java:
 1. Definir atributos de extremo de correo electrónico.
 
    * Crear un objeto `CreateEndpointInfo` mediante su constructor.
-   * Especifique el valor del identificador del conector invocando el método `setConnectorId` del objeto `CreateEndpointInfo` y pasando el valor de cadena `Email`.
-   * Especifique la descripción del extremo invocando el método `setDescription` del objeto `CreateEndpointInfo` y pasando un valor de cadena que describe el extremo.
-   * Especifique el nombre del extremo invocando el método `setName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifique el nombre.
-   * Especifique el servicio al que pertenece el extremo invocando el método `setServiceId` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre del servicio.
-   * Especifique la operación que se invoca invocando el método `setOperationName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre de la operación. Normalmente, al crear un extremo de correo electrónico para un servicio originado a partir de un proceso creado en Workbench, se invoca el nombre de la operación.
+   * Especifique el valor del identificador del conector invocando el método `CreateEndpointInfo` del objeto `setConnectorId` y pasando el valor de cadena `Email`.
+   * Especifique la descripción del extremo invocando el método `CreateEndpointInfo` del objeto `setDescription` y pasando un valor de cadena que describe el extremo.
+   * Especifique el nombre del extremo invocando el método `CreateEndpointInfo` del objeto `setName` y pasando un valor de cadena que especifique el nombre.
+   * Especifique el servicio al que pertenece el extremo invocando el método `CreateEndpointInfo` del objeto `setServiceId` y pasando un valor de cadena que especifica el nombre del servicio.
+   * Especifique la operación que se invoca invocando el método `CreateEndpointInfo` del objeto `setOperationName` y pasando un valor de cadena que especifica el nombre de la operación. Normalmente, al crear un extremo de correo electrónico para un servicio originado a partir de un proceso creado en Workbench, se invoca el nombre de la operación.
 
 1. Especifique los valores de configuración.
 
-   Para que cada valor de configuración se establezca para el extremo de correo electrónico, debe invocar el método `setConfigParameterAsText` del objeto `CreateEndpointInfo`. Por ejemplo, para establecer el valor de configuración `smtpHost`, invoque el método `setConfigParameterAsText` del objeto `CreateEndpointInfo` y pase los siguientes valores:
+   Para que cada valor de configuración se establezca para el extremo de correo electrónico, debe invocar el método `CreateEndpointInfo` del objeto `setConfigParameterAsText`. Por ejemplo, para establecer el valor de configuración `smtpHost`, invoque el método `CreateEndpointInfo` del objeto `setConfigParameterAsText` y pase los siguientes valores:
 
    * Un valor de cadena que especifica el nombre del valor de configuración. Al establecer el valor de configuración `smtpHost`, especifique `smtpHost`.
    * Un valor de cadena que especifica el valor del valor de configuración. Al establecer el valor de configuración `smtpHost`, especifique un valor de cadena que especifique el nombre del servidor SMTP.
@@ -669,12 +669,12 @@ Añadir un extremo de correo electrónico mediante la API de Java:
 
 1. Defina los valores de parámetros de entrada.
 
-   Defina un valor de parámetro de entrada invocando el método `setInputParameterMapping` del objeto `CreateEndpointInfo` y pase los siguientes valores:
+   Defina un valor de parámetro de entrada invocando el método `CreateEndpointInfo` del objeto `setInputParameterMapping` y pase los siguientes valores:
 
    * Valor de cadena que especifica el nombre del parámetro de entrada. Por ejemplo, el nombre del parámetro de entrada para el servicio EncryptDocument es `InDoc`.
    * Valor de cadena que especifica el tipo de datos del parámetro de entrada. Por ejemplo, el tipo de datos del parámetro de entrada `InDoc` es `com.adobe.idp.Document`.
    * Valor de cadena que especifica el tipo de asignación. Por ejemplo, puede especificar `variable`.
-   * Valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &ast;.pdf como patrón de archivo.
+   * Valor de cadena que especifica el valor del tipo de asignación. Por ejemplo, puede especificar &amp;ast;.pdf como patrón de archivo.
 
    >[!NOTE]
    >
@@ -682,7 +682,7 @@ Añadir un extremo de correo electrónico mediante la API de Java:
 
 1. Defina un valor de parámetro de salida.
 
-   Defina un valor de parámetro de salida invocando el método `setOutputParameterMapping` del objeto `CreateEndpointInfo` y pasando los siguientes valores:
+   Defina un valor de parámetro de salida invocando el método `CreateEndpointInfo` del objeto `setOutputParameterMapping` y pasando los siguientes valores:
 
    * Valor de cadena que especifica el nombre del parámetro de salida. Por ejemplo, el nombre del parámetro de salida para el servicio EncryptDocument es `SecuredDoc`.
    * Valor de cadena que especifica el tipo de datos del parámetro de salida. Por ejemplo, el tipo de datos del parámetro de salida `SecuredDoc` es `com.adobe.idp.Document`.
@@ -690,11 +690,11 @@ Añadir un extremo de correo electrónico mediante la API de Java:
 
 1. Cree el extremo de correo electrónico.
 
-   Cree el extremo invocando el método `createEndpoint` del objeto `EndpointRegistryClient` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el extremo de correo electrónico.
+   Cree el extremo invocando el método `EndpointRegistryClient` del objeto `createEndpoint` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el extremo de correo electrónico.
 
 1. Habilite el extremo.
 
-   Habilite el extremo invocando el método `enable` del objeto `EndpointRegistryClient` y pasando el objeto `Endpoint` devuelto por el método `createEndpoint`.
+   Habilite el extremo invocando el método `EndpointRegistryClient` del objeto `enable` y pasando el objeto `Endpoint` devuelto por el método `createEndpoint`.
 
 **Consulte también**
 
@@ -750,15 +750,15 @@ Añadir un extremo de correo electrónico mediante la API de Java:
 
 >[!NOTE]
 >
->Las API de LiveCycle Remoting AEM están en desuso para los formularios de en JEE.
+>Las API de Remoting de LiveCycle están obsoletas para formularios AEM en JEE.
 
-Puede agregar mediante programación un extremo de Remoting a un servicio mediante la API de Java de AEM Forms. Al agregar un extremo de Remoting, habilita una aplicación de Flex para invocar el servicio mediante Remoting. (Consulte [Invocación de AEM Forms AEM mediante (obsoleto para formularios en forma de) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)).
+Puede agregar mediante programación un extremo de Remoting a un servicio mediante la API de Java de AEM Forms. Al agregar un extremo de Remoting, habilita una aplicación de Flex para invocar el servicio mediante Remoting. (Consulte [Invocación de AEM Forms mediante (obsoleto para formularios AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)).
 
 Para agregar mediante programación un extremo de Remoting a un servicio, considere el siguiente proceso de corta duración denominado *EncryptDocument*.
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Este proceso acepta un documento de PDF no protegido como valor de entrada y, a continuación, pasa el documento de PDF no protegido a la operación `EncryptPDFUsingPassword` del servicio Encryption. El documento de PDF se cifra con una contraseña y el documento de PDF cifrado con contraseña es el valor de salida de este proceso. El nombre del valor de entrada (el documento de PDF no protegido) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento de PDF cifrado con contraseña) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
+Este proceso acepta un documento de PDF no protegido como valor de entrada y, a continuación, pasa el documento de PDF no protegido a la operación `EncryptPDFUsingPassword` del servicio Encryption. El documento de PDF se cifra con una contraseña y el documento de PDF cifrado con contraseña es el valor de salida de este proceso. El nombre del valor de entrada (documento de PDF no protegido) es `InDoc` y el tipo de datos es `com.adobe.idp.Document`. El nombre del valor de salida (el documento de PDF cifrado con contraseña) es `SecuredDoc` y el tipo de datos es `com.adobe.idp.Document`.
 
 Para mostrar cómo agregar un extremo de Remoting a un servicio, esta sección agrega un extremo de Remoting a un servicio denominado EncryptDocument.
 
@@ -801,7 +801,7 @@ Para crear un extremo remoto para un servicio, especifique los siguientes valore
 * **Descripción**: especifica la descripción del extremo.
 * **Nombre**: especifica el nombre del extremo.
 * **Valor del identificador de servicio**: Especifica el servicio al que pertenece el extremo. Por ejemplo, para agregar un extremo remoto al proceso introducido en esta sección (un proceso se convierte en un servicio cuando se activa en Workbench), especifique `EncryptDocument`.
-* **Nombre de operación**: especifica el nombre de la operación que se invoca mediante el extremo. Al crear un extremo Remoting, especifique un carácter comodín (&ast;).
+* **Nombre de operación**: especifica el nombre de la operación que se invoca mediante el extremo. Al crear un extremo Remoting, especifique un carácter comodín (&amp;ast;).
 
 **Crear un extremo remoto**
 
@@ -835,19 +835,19 @@ Agregar un extremo remoto mediante la API de Java:
 1. Establecer atributos de extremo remoto.
 
    * Crear un objeto `CreateEndpointInfo` mediante su constructor.
-   * Especifique el valor del identificador del conector invocando el método `setConnectorId` del objeto `CreateEndpointInfo` y pasando el valor de cadena `Remoting`.
-   * Especifique la descripción del extremo invocando el método `setDescription` del objeto `CreateEndpointInfo` y pasando un valor de cadena que describe el extremo.
-   * Especifique el nombre del extremo invocando el método `setName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifique el nombre.
-   * Especifique el servicio al que pertenece el extremo invocando el método `setServiceId` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre del servicio.
-   * Especifique la operación que invoca el método `setOperationName` del objeto `CreateEndpointInfo` y pase un valor de cadena que especifique el nombre de la operación. Para un extremo Remoting, especifique un carácter comodín (&ast;).
+   * Especifique el valor del identificador del conector invocando el método `CreateEndpointInfo` del objeto `setConnectorId` y pasando el valor de cadena `Remoting`.
+   * Especifique la descripción del extremo invocando el método `CreateEndpointInfo` del objeto `setDescription` y pasando un valor de cadena que describe el extremo.
+   * Especifique el nombre del extremo invocando el método `CreateEndpointInfo` del objeto `setName` y pasando un valor de cadena que especifique el nombre.
+   * Especifique el servicio al que pertenece el extremo invocando el método `CreateEndpointInfo` del objeto `setServiceId` y pasando un valor de cadena que especifica el nombre del servicio.
+   * Especifique la operación que invoca el método `CreateEndpointInfo` del objeto `setOperationName` y pase un valor de cadena que especifique el nombre de la operación. Para un extremo Remoting, especifique un carácter comodín (&amp;ast;).
 
 1. Cree un extremo remoto.
 
-   Cree el extremo invocando el método `createEndpoint` del objeto `EndpointRegistryClient` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el nuevo extremo remoto.
+   Cree el extremo invocando el método `EndpointRegistryClient` del objeto `createEndpoint` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el nuevo extremo remoto.
 
 1. Habilite el extremo.
 
-   Habilite el extremo invocando el método `enable` del objeto `EndpointRegistryClient` y pasando el objeto `Endpoint` devuelto por el método `createEndpoint`.
+   Habilite el extremo invocando el método `EndpointRegistryClient` del objeto `enable` y pasando el objeto `Endpoint` devuelto por el método `createEndpoint`.
 
 **Consulte también**
 
@@ -950,25 +950,25 @@ Agregar un extremo de TaskManager mediante la API de Java:
       * Un valor de cadena que especifica el valor de identificador de la categoría
       * Valor de cadena que especifica la descripción de la categoría
 
-   * Cree la categoría invocando el método `createEndpointCategory` del objeto `EndpointRegistryClient` y pasando el objeto `CreateEndpointCategoryInfo`. Este método devuelve un objeto `EndpointCategory` que representa la nueva categoría.
+   * Cree la categoría invocando el método `EndpointRegistryClient` del objeto `createEndpointCategory` y pasando el objeto `CreateEndpointCategoryInfo`. Este método devuelve un objeto `EndpointCategory` que representa la nueva categoría.
 
 1. Establecer atributos de extremo de TaskManager.
 
    * Crear un objeto `CreateEndpointInfo` mediante su constructor.
-   * Especifique el valor del identificador del conector invocando el método `setConnectorId` del objeto `CreateEndpointInfo` y pasando el valor de cadena `TaskManagerConnector`.
-   * Especifique la descripción del extremo invocando el método `setDescription` del objeto `CreateEndpointInfo` y pasando un valor de cadena que describe el extremo.
-   * Especifique el nombre del extremo invocando el método `setName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifique el nombre.
-   * Especifique el servicio al que pertenece el extremo invocando el método `setServiceId` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre del servicio.
-   * Especifique la categoría a la que pertenece el extremo invocando el método `setCategoryId` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el valor del identificador de categoría. Puede invocar el método `getId` del objeto `EndpointCategory` para obtener el valor del identificador de esta categoría.
-   * Especifique la operación que se invoca invocando el método `setOperationName` del objeto `CreateEndpointInfo` y pasando un valor de cadena que especifica el nombre de la operación. Normalmente, cuando se crea un extremo `TaskManager` para un servicio que se originó a partir de un proceso creado en Workbench, el nombre de la operación es `invoke`.
+   * Especifique el valor del identificador del conector invocando el método `CreateEndpointInfo` del objeto `setConnectorId` y pasando el valor de cadena `TaskManagerConnector`.
+   * Especifique la descripción del extremo invocando el método `CreateEndpointInfo` del objeto `setDescription` y pasando un valor de cadena que describe el extremo.
+   * Especifique el nombre del extremo invocando el método `CreateEndpointInfo` del objeto `setName` y pasando un valor de cadena que especifique el nombre.
+   * Especifique el servicio al que pertenece el extremo invocando el método `CreateEndpointInfo` del objeto `setServiceId` y pasando un valor de cadena que especifica el nombre del servicio.
+   * Especifique la categoría a la que pertenece el extremo invocando el método `CreateEndpointInfo` del objeto `setCategoryId` y pasando un valor de cadena que especifica el valor del identificador de categoría. Puede invocar el método `EndpointCategory` del objeto `getId` para obtener el valor del identificador de esta categoría.
+   * Especifique la operación que se invoca invocando el método `CreateEndpointInfo` del objeto `setOperationName` y pasando un valor de cadena que especifica el nombre de la operación. Normalmente, cuando se crea un extremo `TaskManager` para un servicio que se originó a partir de un proceso creado en Workbench, el nombre de la operación es `invoke`.
 
 1. Cree un extremo de TaskManager.
 
-   Cree el extremo invocando el método `createEndpoint` del objeto `EndpointRegistryClient` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el nuevo extremo de TaskManager.
+   Cree el extremo invocando el método `EndpointRegistryClient` del objeto `createEndpoint` y pasando el objeto `CreateEndpointInfo`. Este método devuelve un objeto `Endpoint` que representa el nuevo extremo de TaskManager.
 
 1. Habilite el extremo.
 
-   Habilite el extremo invocando el método `enable` del objeto `EndpointRegistryClient` y pasando el objeto `Endpoint` devuelto por el método `createEndpoint`.
+   Habilite el extremo invocando el método `EndpointRegistryClient` del objeto `enable` y pasando el objeto `Endpoint` devuelto por el método `createEndpoint`.
 
 **Consulte también**
 
@@ -1057,20 +1057,20 @@ Modifique un extremo mediante la API de Java:
 
 1. Recupere el extremo que desea modificar.
 
-   * Recupere una lista de todos los extremos a los que puede tener acceso el usuario actual (especificado en las propiedades de conexión) invocando el método `getEndpoints` del objeto `EndpointRegistryClient` y pasando un objeto `PagingFilter` que actúa como filtro. Puede pasar un valor `(PagingFilter)null` para que devuelva todos los extremos. Este método devuelve un objeto `java.util.List` donde cada elemento es un objeto `Endpoint`. Para obtener información acerca de un objeto `PagingFilter`, vea [Referencia de la API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Recupere una lista de todos los extremos a los que puede tener acceso el usuario actual (especificado en las propiedades de conexión) invocando el método `EndpointRegistryClient` del objeto `getEndpoints` y pasando un objeto `PagingFilter` que actúa como filtro. Puede pasar un valor `(PagingFilter)null` para que devuelva todos los extremos. Este método devuelve un objeto `java.util.List` donde cada elemento es un objeto `Endpoint`. Para obtener información acerca de un objeto `PagingFilter`, vea [Referencia de la API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Recorra en iteración el objeto `java.util.List` para determinar si tiene puntos finales. Si existen extremos, cada elemento es una instancia de `EndPoint`.
-   * Determine el servicio que corresponde a un extremo invocando el método `getServiceId` del objeto `EndPoint`. Este método devuelve un valor de cadena que especifica el nombre del servicio.
-   * Determine el tipo de extremo invocando el método `getConnectorId` del objeto `EndPoint`. Este método devuelve un valor de cadena que especifica el tipo de extremo. Por ejemplo, si el extremo es un extremo de carpeta inspeccionada, este método devuelve `WatchedFolder`.
+   * Determine el servicio que corresponde a un extremo invocando el método `EndPoint` del objeto `getServiceId`. Este método devuelve un valor de cadena que especifica el nombre del servicio.
+   * Determine el tipo de extremo invocando el método `EndPoint` del objeto `getConnectorId`. Este método devuelve un valor de cadena que especifica el tipo de extremo. Por ejemplo, si el extremo es un extremo de carpeta inspeccionada, este método devuelve `WatchedFolder`.
 
 1. Especifique nuevos valores de configuración.
 
    * Cree un objeto `ModifyEndpointInfo` invocando su constructor.
-   * Para que se establezca cada valor de configuración, invoque el método `setConfigParameterAsText` del objeto `ModifyEndpointInfo`. Por ejemplo, para establecer el valor de configuración de la dirección URL, invoque el método `setConfigParameterAsText` del objeto `ModifyEndpointInfo` y pase los valores siguientes:
+   * Para que se establezca cada valor de configuración, invoque el método `ModifyEndpointInfo` del objeto `setConfigParameterAsText`. Por ejemplo, para establecer el valor de configuración de la dirección URL, invoque el método `ModifyEndpointInfo` del objeto `setConfigParameterAsText` y pase los valores siguientes:
 
       * Un valor de cadena que especifica el nombre del valor de configuración. Por ejemplo, para establecer el valor de configuración `url`, especifique `url`.
       * Un valor de cadena que especifica el valor del valor de configuración. Para definir un valor para el valor de configuración `url`, especifique la ubicación de la carpeta vigilada.
 
-   * Invoque el método `modifyEndpoint` del objeto `EndpointRegistryClient` y pase el objeto `ModifyEndpointInfo`.
+   * Invoque el método `EndpointRegistryClient` del objeto `modifyEndpoint` y pase el objeto `ModifyEndpointInfo`.
 
 **Consulte también**
 
@@ -1084,7 +1084,7 @@ Modifique un extremo mediante la API de Java:
 
 ## Eliminación de extremos {#removing-endpoints}
 
-Puede quitar un extremo de un servicio mediante programación utilizando la API de Java de AEM Forms. Después de quitar un extremo, el servicio no se puede invocar mediante el método de invocación que habilita el extremo. SOAP SOAP Por ejemplo, si quita un extremo de la de un servicio, no puede invocarlo mediante el modo de.
+Puede quitar un extremo de un servicio mediante programación utilizando la API de Java de AEM Forms. Después de quitar un extremo, el servicio no se puede invocar mediante el método de invocación que habilita el extremo. Por ejemplo, si quita un extremo de SOAP de un servicio, no puede invocar el servicio mediante el modo SOAP.
 
 Para mostrar cómo quitar un extremo de un servicio, esta sección quita un extremo EJB de un servicio denominado *EncryptDocument*.
 
@@ -1151,14 +1151,14 @@ Elimine un extremo mediante la API de Java:
 
 1. Recupere el extremo que desea eliminar.
 
-   * Recupere una lista de todos los extremos a los que tiene acceso el usuario actual (especificado en las propiedades de conexión) invocando el método `getEndpoints` del objeto `EndpointRegistryClient` y pasando un objeto `PagingFilter` que actúa como filtro. Puede pasar `(PagingFilter)null` para que devuelva todos los extremos. Este método devuelve un objeto `java.util.List` donde cada elemento es un objeto `Endpoint`.
+   * Recupere una lista de todos los extremos a los que tiene acceso el usuario actual (especificado en las propiedades de conexión) invocando el método `EndpointRegistryClient` del objeto `getEndpoints` y pasando un objeto `PagingFilter` que actúa como filtro. Puede pasar `(PagingFilter)null` para que devuelva todos los extremos. Este método devuelve un objeto `java.util.List` donde cada elemento es un objeto `Endpoint`.
    * Recorra en iteración el objeto `java.util.List` para determinar si tiene puntos finales. Si existen extremos, cada elemento es una instancia de `EndPoint`.
-   * Determine el servicio que corresponde a un extremo invocando el método `getServiceId` del objeto `EndPoint`. Este método devuelve un valor de cadena que especifica el nombre del servicio.
-   * Determine el tipo de extremo invocando el método `getConnectorId` del objeto `EndPoint`. Este método devuelve un valor de cadena que especifica el tipo de extremo. Por ejemplo, si el extremo es un extremo de EJB, este método devuelve `EJB`.
+   * Determine el servicio que corresponde a un extremo invocando el método `EndPoint` del objeto `getServiceId`. Este método devuelve un valor de cadena que especifica el nombre del servicio.
+   * Determine el tipo de extremo invocando el método `EndPoint` del objeto `getConnectorId`. Este método devuelve un valor de cadena que especifica el tipo de extremo. Por ejemplo, si el extremo es un extremo de EJB, este método devuelve `EJB`.
 
 1. Elimine el punto final.
 
-   Quite el extremo invocando el método `remove` del objeto `EndpointRegistryClient` y pasando el objeto `EndPoint` que representa el extremo que se va a quitar.
+   Quite el extremo invocando el método `EndpointRegistryClient` del objeto `remove` y pasando el objeto `EndPoint` que representa el extremo que se va a quitar.
 
 **Consulte también**
 
@@ -1215,7 +1215,7 @@ Para recuperar mediante programación la información del conector de extremo, c
 Especifique el tipo de conector desde el que desea recuperar la información. Existen los siguientes tipos de conectores:
 
 * **EJB**: habilita una aplicación cliente para invocar un servicio mediante el modo EJB.
-* SOAP SOAP **&#x200B;**: habilita una aplicación cliente para invocar un servicio mediante el modo de.
+* **SOAP**: permite que una aplicación cliente invoque un servicio mediante el modo SOAP.
 * **Carpeta inspeccionada**: permite que las carpetas inspeccionadas invoquen un servicio.
 * **Correo electrónico**: permite que los mensajes de correo electrónico invoquen un servicio.
 * **Remoting**: habilita una aplicación cliente de Flex para invocar un servicio.
@@ -1248,12 +1248,12 @@ Recupere información del conector de extremo mediante la API de Java:
 
 1. Especifique el tipo de conector.
 
-   Especifique el tipo de conector invocando el método `getEndpointDefinition` del objeto `ConnectorRegistryClient` y pasando un valor de cadena que especifica el tipo de conector. Por ejemplo, para especificar el tipo de conector de la carpeta inspeccionada, pase el valor de cadena `WatchedFolder`. Este método devuelve un objeto `Endpoint` que corresponde al tipo de conector.
+   Especifique el tipo de conector invocando el método `ConnectorRegistryClient` del objeto `getEndpointDefinition` y pasando un valor de cadena que especifica el tipo de conector. Por ejemplo, para especificar el tipo de conector de la carpeta inspeccionada, pase el valor de cadena `WatchedFolder`. Este método devuelve un objeto `Endpoint` que corresponde al tipo de conector.
 
 1. Recupere los valores de configuración.
 
-   * Recupere los valores de configuración asociados en este extremo invocando el método `getConfigParameters` del objeto `Endpoint`. Este método devuelve una matriz de `ConfigParameter` objetos.
-   * Recupere información sobre cada valor de configuración recuperando cada elemento dentro de la matriz. Cada elemento es un objeto `ConfigParameter`. Por ejemplo, puede determinar si el valor de configuración es obligatorio u opcional invocando el método `isRequired` del objeto `ConfigParameter`. Si el valor de configuración es necesario, este método devuelve `true`.
+   * Recupere los valores de configuración asociados en este extremo invocando el método `Endpoint` del objeto `getConfigParameters`. Este método devuelve una matriz de `ConfigParameter` objetos.
+   * Recupere información sobre cada valor de configuración recuperando cada elemento dentro de la matriz. Cada elemento es un objeto `ConfigParameter`. Por ejemplo, puede determinar si el valor de configuración es obligatorio u opcional invocando el método `ConfigParameter` del objeto `isRequired`. Si el valor de configuración es necesario, este método devuelve `true`.
 
 **Consulte también**
 

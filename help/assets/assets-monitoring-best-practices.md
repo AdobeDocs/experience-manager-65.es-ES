@@ -2,13 +2,13 @@
 title: Prácticas recomendadas para supervisar  [!DNL Assets] implementación
 description: Prácticas recomendadas para supervisar el entorno y el rendimiento de su implementación de  [!DNL Adobe Experience Manager] después de implementarla.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1638'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Desde el punto de vista de [!DNL Experience Manager Assets], la monitorización debe incluir la observación y la creación de informes sobre los siguientes procesos y tecnologías:
 
-* CPU del sistema
+* System CPU
 * Uso de memoria del sistema
 * Tiempo de espera de E/S del disco del sistema
 * E/S de red del sistema
@@ -32,7 +32,7 @@ Debe realizar la monitorización en directo durante la fase de prueba de rendimi
 
 * [Visual VM](https://visualvm.github.io/): Visual VM le permite ver información detallada de Java VM, incluido el uso de CPU y el uso de memoria Java. Además, permite tomar muestras y evaluar el código que se ejecuta en una implementación.
 * [Top](https://man7.org/linux/man-pages/man1/top.1.html): Top es un comando de Linux que abre un tablero, que muestra estadísticas de uso, incluyendo uso de CPU, memoria y E/S. Proporciona una descripción general de alto nivel de lo que está sucediendo en una instancia.
-* [Htop](https://hisham.hm/htop/): Htop es un visor interactivo de procesos. Proporciona un uso detallado de la CPU y la memoria, además de lo que Top puede proporcionar. Htop se puede instalar en la mayoría de los sistemas Linux usando `yum install htop` o `apt-get install htop`.
+* [Htop](https://hisham.hm/htop/): Htop es un visor interactivo de procesos. Proporciona un uso detallado de la memoria y la CPU, además de lo que Top puede proporcionar. Htop se puede instalar en la mayoría de los sistemas Linux usando `yum install htop` o `apt-get install htop`.
 
 * Iotop: Iotop es un tablero detallado para el uso de E/S de disco. Muestra las barras y los medidores que muestran los procesos que utilizan E/S de disco y la cantidad que utilizan. Iotop se puede instalar en la mayoría de los sistemas Linux usando `yum install iotop` o `apt-get install iotop`.
 
@@ -46,7 +46,7 @@ Normalmente, estas herramientas se utilizan juntas para obtener una idea complet
 
 >[!NOTE]
 >
->Estas herramientas son herramientas estándar y no son compatibles directamente con Adobe. No requieren licencias adicionales.
+>Estas herramientas son herramientas estándar y Adobe no las admite directamente. No requieren licencias adicionales.
 
 ![chlimage_1-33](assets/chlimage_1-143.png)
 
@@ -73,7 +73,7 @@ La monitorización del entorno incluye monitorizar lo siguiente:
 * MBeans de JMX
 * Sitios web externos
 
-Necesita herramientas externas, como NewRelic(TM) y AppDynamics(TM) para supervisar cada elemento. Con estas herramientas, puede definir alertas específicas del sistema, por ejemplo, alta utilización del sistema, copia de seguridad del flujo de trabajo, errores de comprobación de estado o acceso no autenticado al sitio web. El Adobe no recomienda ninguna herramienta en particular sobre otras. Busque la herramienta que mejor se adapte a sus necesidades y utilícela para supervisar los elementos analizados.
+Necesita herramientas externas, como NewRelic(TM) y AppDynamics(TM) para supervisar cada elemento. Con estas herramientas, puede definir alertas específicas del sistema, por ejemplo, alta utilización del sistema, copia de seguridad del flujo de trabajo, errores de comprobación de estado o acceso no autenticado al sitio web. Adobe no recomienda ninguna herramienta en particular sobre otras. Busque la herramienta que mejor se adapte a sus necesidades y utilícela para supervisar los elementos analizados.
 
 #### Monitorización de aplicaciones internas {#internal-application-monitoring}
 
@@ -194,7 +194,7 @@ Estas son algunas comprobaciones de estado listas para usar que son útiles para
 En el proceso de supervisión, si encuentra problemas, aquí tiene algunas tareas de solución de problemas que puede realizar para resolver problemas comunes con implementaciones de [!DNL Experience Manager]:
 
 * Si usa TarMK, ejecute la compactación de Tar con frecuencia. Para obtener más información, consulte [Mantener el repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Comprobar `OutOfMemoryError` registros. Para obtener más información, consulte [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es).
+* Comprobar `OutOfMemoryError` registros. Para obtener más información, consulte [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * Consulte en los registros cualquier referencia a consultas sin indexar, recorridos de árbol o recorridos de índice. Indican consultas no indexadas o consultas indexadas inadecuadamente. Para obtener prácticas recomendadas sobre cómo optimizar el rendimiento de consultas e indexación, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilice la consola de flujo de trabajo para comprobar que los flujos de trabajo funcionan según lo esperado. Si es posible, condense varios flujos de trabajo en uno solo.

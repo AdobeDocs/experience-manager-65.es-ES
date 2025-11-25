@@ -4,8 +4,8 @@ description: Aprenda a utilizar fragmentos de contenido de AEM para diseñar, cr
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 73%
@@ -28,7 +28,7 @@ Los fragmentos de contenido contienen contenido estructurado y se pueden entrega
 
 Los autores de contenido generarán el número de fragmentos de contenido que corresponda para representar el contenido que crean. Esta será su tarea principal en AEM. Para los fines de esta guía de introducción, solo necesitamos crear uno.
 
-1. AEM Inicie sesión en el menú principal y seleccione **Navegación > Assets**.
+1. Inicie sesión en AEM y, en el menú principal, seleccione **Navegación > Assets**.
 1. Vaya a la [carpeta que creó anteriormente.](create-assets-folder.md)
 1. Haga clic en **Crear > Fragmento de contenido**.
 1. La creación de un fragmento de contenido se presenta como un asistente en dos pasos. Seleccione primero qué modelo desea utilizar para crear el fragmento de contenido y haga clic en **Siguiente**.

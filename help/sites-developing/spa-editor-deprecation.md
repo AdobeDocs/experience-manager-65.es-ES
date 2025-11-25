@@ -2,12 +2,12 @@
 title: Finalización del soporte para el editor de SPA
 description: Aunque el Editor SPA sigue siendo compatible con Adobe, conozca qué significa su desaprobación para el proyecto y qué opciones tiene para futuros proyectos.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Leader, User, Developer
 exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
-source-git-commit: d619c969604119a8686050fdc34d77c0ffee33cf
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 2%
+ht-degree: 16%
 
 ---
 
@@ -62,17 +62,17 @@ La estructuración del contenido con fragmentos de contenido no excluye el uso d
 El editor universal ofrece muchas ventajas, por lo que la migración a él es una excelente solución para nuevos proyectos.
 
 * **Edición visual:** Al igual que para el Editor de SPA, los autores pueden editar contenido directamente dentro de la vista previa y ver al instante cómo sus cambios afectan la experiencia del visitante.
-* **Revisión para el futuro:** La hoja de ruta de AEM da prioridad al Editor universal como editor visual. Su adopción garantiza el acceso a las últimas innovaciones y mejoras.
-* **Integración más sencilla:** No se requiere SDK específico de AEM para usar el Editor universal, lo que reduce el bloqueo de pila tecnológica.
-* **Traer su propia aplicación:** El editor universal admite cualquier marco web o arquitectura, lo que permite la adopción sin requerir una refactorización compleja.
-* **Extensibilidad:** El editor universal se beneficia de un marco de trabajo de [extensión sólido,](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) que incluye integraciones con GenAI, Workfront y más.
+* **Preparación para el futuro:** la hoja de ruta de AEM da prioridad al editor universal como editor visual. Su adopción garantiza el acceso a las últimas innovaciones y mejoras.
+* **Integración más sencilla:** no se requiere un SDK específico de AEM para usar el editor universal, lo que reduce el bloqueo de la pila tecnológica.
+* **Traer su propia aplicación:** el editor universal admite cualquier marco web o arquitectura, lo que permite la adopción sin requerir una refactorización compleja.
+* **Extensibilidad:** el editor universal se beneficia de un [marco de extensión](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) sólido, que incluye integraciones con GenAI, Workfront y más.
 
 No hay una ruta de migración directa del Editor de SPA al Editor universal. Esto se debe a diferencias fundamentales entre las dos tecnologías.
 
-* El editor universal no vuelve a introducir funciones como el editor de plantillas, el sistema de estilos o la cuadrícula interactiva.
+* El editor universal no vuelve a introducir funciones como el editor de plantillas, el sistema de estilos o la cuadrícula adaptable.
    * Estos casos de uso ahora se pueden administrar de forma más eficaz con CSS y JS de front-end delgados en proyectos de Edge Delivery Services o sin encabezado.
 * Dado que el editor universal es un editor como servicio, no puede permitir a los implementadores insertar CSS o JS en los cuadros de diálogo de componentes.
-   * Esto evita la conversión automática de los cuadros de diálogo de componentes desde el Editor de páginas.
+   * De este modo, evita la conversión automática de los cuadros de diálogo de componentes desde el editor de páginas.
    * Esto afecta a muchas áreas de los cuadros de diálogo, como widgets personalizados, validación de campos, reglas de mostrar/ocultar y personalizaciones basadas en plantillas.
 
 Teniendo en cuenta estas diferencias técnicas, la recomendación de Adobe es:
@@ -88,7 +88,7 @@ El editor universal ofrece mucha más libertad a los implementadores de aplicaci
 
 ![Comparación de las arquitecturas del editor universal y del editor de SPA](assets/spa-editor-vs-ue.png)
 
-|  | Editor de SPA  | Editor universal |
+|  | Editor de SPA | Editor universal |
 |---|---|---|
 | **Tema** | La aplicación debe implementar el diseño con la cuadrícula CSS de AEM. | La aplicación puede utilizar cualquier técnica CSS moderna para el diseño. |
 | **Procesando** | La aplicación debe seguir la estructura de enrutamiento del Editor de SPA. | La aplicación se puede implementar libremente, sin reglas impuestas o patrones a seguir. |

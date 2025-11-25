@@ -9,10 +9,10 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 21%
+source-wordcount: '312'
+ht-degree: 20%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 21%
 
 {{ue-over-mobile}}
 
-AEM Los artículos, titulares y colecciones se representan como cq:Pages en la sección de artículos de la página de la página de la página de.
+Los artículos, titulares y colecciones se representan como cq:Pages en AEM.
 
-Comparten las mismas propiedades comunes que se encuentran en cualquier cq:Page, además de otras que se muestran a continuación y que representan metadatos de Adobe Experience Manager AEM () Mobile On-Demand Services y propiedades de compatibilidad con la integración.
+Comparten las mismas propiedades comunes que se encuentran en cualquier cq:Page, además de varias otras que se muestran a continuación y que representan metadatos de Adobe Experience Manager (AEM) Mobile On-Demand Services y propiedades de compatibilidad con integraciones.
 
 Las siguientes tablas describen las propiedades y los nodos de contenido.
 
@@ -30,12 +30,12 @@ Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 | **Nombre de propiedad** | **Tipo** | **Valores predeterminados o esperados** | **Descripción** |
 |---|---|---|---|
-| dps-id | Cadena |  | asignado por AEM Mobile AEM y almacenado por una vez cargado en AEM Mobile o importado desde AEM Mobile, por el usuario. |
-| dps-resourceType | Cadena | dps:Article | dps:Banner | dps:Collection | propiedad de tipo de entidad |
+| dps-id | Cadena |  | asignado por AEM Mobile y almacenado por AEM una vez cargado en AEM Mobile o importado desde AEM Mobile |
+| dps-resourceType | Cadena | dps:Article | `dps:Banner` \| `dps:Collection` \| `entity type property` |
 | dps-version | Cadena |  | versión de AEM Mobile entity (también incluida en el aem-id completo) |
-| dps-lastSynced | Fecha |  | fecha de la última sincronización/importación de AEM Mobile AEM a la red de distribución de datos |
-| dps-lastUploaded | Fecha |  | AEM fecha de la última carga desde el servidor de correo electrónico a AEM Mobile |
-| dps-lastUploadedBy | String:id de usuario |  | AEM usuario de id que realizó la última solicitud de carga de la aplicación de la que se hizo la solicitud de acceso desde la base de datos de a AEM Mobile |
+| dps-lastSynced | Fecha |  | fecha de la última sincronización/importación de AEM Mobile a AEM |
+| dps-lastUploaded | Fecha |  | fecha de la última carga de AEM a AEM Mobile |
+| dps-lastUploadedBy | Cadena :userid |  | usuario de id que realizó la última solicitud de carga de AEM a AEM Mobile |
 
 ## Propiedades de metadatos principales {#core-metadata-properties}
 

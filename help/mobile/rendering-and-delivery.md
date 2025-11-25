@@ -8,10 +8,10 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 6%
+source-wordcount: '547'
+ht-degree: 5%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 6%
 
 {{ue-over-mobile}}
 
-El contenido de Adobe Experience Manager AEM () se puede procesar fácilmente mediante [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para procesar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) y otros formatos.
+El contenido de Adobe Experience Manager (AEM) se puede procesar fácilmente mediante [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para procesar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) y otros formatos.
 
 Estas representaciones listas para usar suelen recorrer el repositorio y devolver el contenido tal cual.
 
-AEM A través de Sling, también admite el desarrollo y la implementación de procesadores sling personalizados para tomar el control total del esquema y el contenido procesados.
+AEM, a través de Sling, también admite el desarrollo y la implementación de procesadores sling personalizados para tener un control total del esquema y el contenido representados.
 
 Los procesadores predeterminados de Content Services llenan el vacío entre los valores predeterminados de Sling y el desarrollo personalizado, lo que permite la personalización y el control de muchos aspectos del contenido procesado sin necesidad de desarrollo.
 
@@ -33,7 +33,7 @@ El diagrama siguiente muestra la renderización de los servicios de contenido.
 
 ## Solicitar JSON {#requesting-json}
 
-Use **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** para solicitar JSON.
+Use **&lt;RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json** para solicitar JSON.
 
 <table>
  <tbody>

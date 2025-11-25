@@ -7,10 +7,10 @@ role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 18dd655887293188224f51fa713d0345991d20d7
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2191'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 <!-- old content
@@ -33,7 +33,7 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 <!-- New overview content
 -->
 
-El servicio [!DNL Adobe Stock] proporciona a diseñadores y empresas acceso a millones de fotografías, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad, depurados y libres de derechos para todos sus proyectos creativos.
+El servicio [!DNL Adobe Stock] proporciona a diseñadores y empresas acceso a millones de fotos, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad, depurados y libres de derechos para todos sus proyectos creativos.
 
 [!DNL Adobe Stock] para la oferta empresarial, de forma predeterminada, incluye derechos de uso compartido en toda la organización. Una vez que un usuario de la organización ha concedido una licencia a un recurso, otros usuarios de la organización pueden identificar, descargar y utilizar este recurso sin tener que volver a obtener la licencia. Una vez que su organización ha concedido una licencia a un recurso, el derecho a utilizarlo es perpetuo.
 
@@ -104,7 +104,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 Como desarrollador, ejecute los siguientes pasos para integrar [!DNL Adobe Experience Manager] y [!DNL Adobe Stock].
 
 1. [Configurar un programa en  [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Agregar configuración en la instancia de autor  [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Agregar configuración en la instancia de autor  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configurar un programa en [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -143,7 +143,6 @@ Ejecute los siguientes pasos para configurar un nuevo [!DNL Adobe Stock IMS conf
    * **[!UICONTROL Ámbito]**: vaya al panel del proyecto, haga clic en la opción **[!UICONTROL Servidor a servidor OAuth]**, disponible en el panel izquierdo, seleccione **[!UICONTROL Detalles de credencial]**, copie el **[!UICONTROL Ámbito]** y péguelo aquí (consulte [paso 7](#set-up-a-program-in-developer-console)).
 
    * **[!UICONTROL ID de organización]**: vaya al panel del proyecto, haga clic en la opción **[!UICONTROL Servidor a servidor de OAuth]**, disponible en el panel izquierdo, seleccione **[!UICONTROL Detalles de credencial]**, copie el **[!UICONTROL ID de organización]** y péguelo aquí (consulte [paso 7](#set-up-a-program-in-developer-console)).
-
      ![recursos aem y adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. Haga clic en **[!UICONTROL Crear]**, se abrirá la página **[!UICONTROL Configuraciones de IMS de Adobe]** y se mostrará la integración de [!DNL Adobe Stock] que ha creado.
 
@@ -394,7 +393,7 @@ En la tabla siguiente se explica cómo funcionan los permisos de usuario al obte
 
 | Usuario | Grupo | Permisos | Aceptar configuración de Stock en Preferencias de usuario | Acceso a Assets | Acceso a Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
-| administrador | N/D | Todos | N/D | Sí | Sí |
+| administrador | N/A | Todos | N/A | Sí | Sí |
 | test-doc1 | Usuario DAM | /conf/global /settings/stock/cloud-config | Sí | Sí | Sí |
 | test-doc1 | Usuario DAM | /conf/global /settings/stock/cloud-config | No | Error: Error al cargar los datos | No |
 | test-doc1 | Usuario DAM | **permitir**: /conf/global /settings/stock     **denegar**: /cloud-config | La configuración de Stock no es visible | Sí | No |
@@ -468,9 +467,9 @@ Los usuarios pueden ver las propiedades de los recursos con y sin licencia.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial de vídeo sobre el uso de [!DNL Adobe Stock] recursos con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=es)
->* [[!DNL Adobe Stock] ayuda de plan empresarial](https://helpx.adobe.com/es/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] Preguntas más frecuentes](https://helpx.adobe.com/es/stock/faq.html)
+>* [Tutorial de vídeo sobre el uso de [!DNL Adobe Stock] recursos con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] ayuda de plan empresarial](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Preguntas más frecuentes](https://helpx.adobe.com/stock/faq.html)
 
 
 <!--old content

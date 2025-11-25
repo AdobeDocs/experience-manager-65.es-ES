@@ -3,13 +3,13 @@ title: Características e interfaces accesibles de  [!DNL Experience Manager Ass
 description: Conoce cómo las características de accesibilidad de [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] ayudan a los usuarios con discapacidades.
 contentOwner: AG
 feature: Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Possible topics to cover in this article are below.
 
 # Características de accesibilidad en [!DNL Adobe Experience Manager Assets] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] permite a los creadores y editores de contenido ofrecer experiencias increíbles en la web. El Adobe se esfuerza por incluir a los creadores con discapacidades al mejorar la accesibilidad de [!DNL Experience Manager]. El software se mejora continuamente para satisfacer las necesidades de todos los tipos de usuarios y se adhiere a los estándares mundiales que incluyen personas con deficiencias visuales, auditivas, de movilidad u otras.
+[!DNL Adobe Experience Manager] permite a los creadores y editores de contenido ofrecer experiencias increíbles en la web. Adobe se esfuerza por incluir a los creadores con discapacidades al mejorar la accesibilidad de [!DNL Experience Manager]. El software se mejora continuamente para satisfacer las necesidades de todos los tipos de usuarios y se adhiere a los estándares mundiales que incluyen personas con deficiencias visuales, auditivas, de movilidad u otras.
 
 [!DNL Experience Manager] publica información de conformidad que describe los estándares a los que se adhiere, describe las características de accesibilidad del producto y describe el nivel de conformidad. Los informes de conformidad con la accesibilidad ayudan a los usuarios de [!DNL Experience Manager] a comprender el nivel de cumplimiento de varios estándares. Las mejoras realizadas en [!DNL Assets] permiten a todos los usuarios utilizar las interfaces fácilmente mediante el teclado, el lector de pantalla, los ampliadores y otras tecnologías de asistencia.
 
@@ -42,7 +42,7 @@ Possible topics to cover in this article are below.
 * [Iniciativa de accesibilidad - Aplicaciones de Internet enriquecidas accesibles (WAI-ARIA) por W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-ACR Para leer un informe con detalles sobre el nivel de cumplimiento, consulte la página [Informe de conformidad con la accesibilidad](https://www.adobe.com/accessibility/compliance.html) (página de).
+Para leer un informe con detalles del nivel de cumplimiento, consulte la página [Informe de conformidad de accesibilidad](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
 Para saber cómo se puede obtener acceso a [!DNL Dynamic Media], consulte [accesibilidad en [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
@@ -160,7 +160,7 @@ Al examinar el repositorio de recursos, la siguiente funcionalidad mejora la acc
 * Some enhancements to metadata properties UI?
 -->
 
-## Administrar recursos digitales {#manage-assets}
+## Administrar los recursos digitales {#manage-assets}
 
 Muchas tareas de administración de recursos, como las operaciones de CRUD, la descarga de un recurso y la adición de metadatos, son accesibles en varios grados. [!DNL Assets] le permite realizar las tareas utilizando diversas tecnologías de asistencia, como un lector de pantalla y un teclado.
 
@@ -174,7 +174,7 @@ Para las operaciones de metadatos que suelen realizar funciones como especialist
 * La funcionalidad de arrastrar mediante el teclado funciona correctamente en [!UICONTROL Editor de esquemas de metadatos] en el modo de exploración del lector de pantalla.
 * Un usuario puede mover el enfoque mediante el teclado al campo Agregar usuario o grupo bajo [!UICONTROL Grupo de usuarios cerrado] en la ficha [!UICONTROL Permisos] de la carpeta [!UICONTROL Propiedades].
 
-## Buscar recursos digitales {#search-assets}
+## Búsqueda de recursos digitales {#search-assets}
 
 Una experiencia de búsqueda de recursos rápida y perfecta aumenta la velocidad de contenido. Los casos de uso de velocidad de contenido forman parte de la funcionalidad principal [!DNL Assets]. Para iniciar una búsqueda desde la barra Omnisearch, los usuarios pueden usar el método abreviado de teclado `/` o utilizar `Tab` junto con lectores de pantalla para localizar rápidamente la opción de búsqueda. El lector de pantalla narra el nombre de la opción como &quot;Botón de búsqueda&quot; cuando el enfoque está en la opción de búsqueda ![opción de búsqueda](assets/do-not-localize/search_icon.png). Los usuarios pueden seleccionar `Return` para abrir el cuadro Omnisearch. El lector de pantalla no sólo narra la palabra clave escrita en el cuadro de búsqueda, sino también las sugerencias ofrecidas por [!DNL Experience Manager Assets]. Los usuarios pueden usar una combinación de teclas de dirección, `Return` y `Tab` para tener acceso a las distintas opciones para almacenar en déclencheur una búsqueda.
 
@@ -228,4 +228,4 @@ Para proporcionar comentarios, formular preguntas y solicitar mejoras del produc
 >* [Características de accesibilidad en [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Notas de la versión de las mejoras realizadas en cada versión del Service Pack](/help/release-notes/release-notes.md).
 >* [[!DNL Adobe Experience Manager] guía de accesibilidad](/help/managing/web-accessibility.md).
->* ACR [Informes de conformidad () y listado de VPAT para soluciones de Adobe](https://www.adobe.com/accessibility/compliance.html).
+>* [Informes de conformidad (ACR) y lista de VPAT para las soluciones de Adobe](https://www.adobe.com/accessibility/compliance.html).

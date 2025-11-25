@@ -4,8 +4,8 @@ description: Conozca cómo organizar su contenido sin encabezado y cómo funcion
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 87%
@@ -88,12 +88,11 @@ Dado que los modelos de contenido definen la estructura de tu contenido, debes s
 1. Se abrirá el **Editor de modelos de fragmento de contenido**.
    1. La columna izquierda contiene los campos del modelo. Esta columna nos interesa.
    1. La columna derecha contiene los campos que se pueden agregar al modelo. Esta columna se puede ignorar.
-
       ![Editor del modelo de fragmentos de contenido](assets/content-fragment-model-editor.png)
 1. Haga clic en uno de los campos del modelo. AEM los marca y los detalles de ese campo se muestran en la columna derecha.
    ![Detalle del Editor de modelos de fragmento de contenido](assets/content-fragment-model-editor-detail.png)
 
-Tome nota del campo **Nombre de propiedad** para todos los campos que se deben traducir. Necesitará esta información más adelante en el recorrido. AEM Estos **nombres de propiedad** s son necesarios para informar a los usuarios de los campos de su contenido que deben traducirse.
+Tome nota del campo **Nombre de propiedad** para todos los campos que se deben traducir. Necesitará esta información más adelante en el recorrido. Estos **nombres de propiedad** s son necesarios para informar a AEM de qué campos del contenido debe traducirse.
 
 >[!TIP]
 >
@@ -184,7 +183,7 @@ Ahora que ha completado esta parte del recorrido de traducción sin encabezado, 
 * Comprender cómo AEM almacena contenido sin encabezado.
 * Estar familiarizado con las herramientas de traducción de AEM.
 
-AEM Aproveche este conocimiento y continúe con su recorrido AEM de traducción sin encabezado de la revisando el documento [Configure the translation integration](configure-connector.md), donde aprenderá a conectarse a un servicio de traducción de manera que pueda obtener más información sobre cómo conectarse a un servicio de traducción de manera más rápida y sencilla.|
+Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de AEM revisando el documento [Configure the translation integration](configure-connector.md) donde aprenderá a conectar AEM a un servicio de traducción.|
 
 ## Recursos adicionales {#additional-resources}
 

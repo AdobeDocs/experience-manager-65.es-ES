@@ -3,11 +3,11 @@ title: Ajuste de rendimiento [!DNL Assets]
 description: Sugerencias e instrucciones sobre la configuración de  [!DNL Experience Manager] y cambios en el hardware, el software y los componentes de red para eliminar cuellos de botella y optimizar el rendimiento de [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Admin
+role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2729'
 ht-degree: 0%
@@ -243,7 +243,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 ## Buscar índices {#search-indexes}
 
-Instale [los Service Packs más recientes](/help/release-notes/release-notes.md) y las revisiones relacionadas con el rendimiento, ya que suelen incluir actualizaciones de los índices del sistema. Consulte [consejos para la optimización del rendimiento](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para ver algunas optimizaciones del índice.
+Instale [los Service Packs más recientes](/help/release-notes/release-notes.md) y las revisiones relacionadas con el rendimiento, ya que suelen incluir actualizaciones de los índices del sistema. Consulte [consejos para la optimización del rendimiento](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para ver algunas optimizaciones del índice.
 
 Cree índices personalizados para consultas que ejecute con frecuencia. Para obtener más información, consulte la [metodología para analizar consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) y [crear índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obtener información adicional sobre las prácticas recomendadas de consultas e índices, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

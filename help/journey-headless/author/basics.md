@@ -4,8 +4,8 @@ description: Obtenga información sobre los conceptos y la mecánica de creació
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 75%
@@ -22,7 +22,7 @@ Este artículo se basa en estos elementos para que pueda comprender cómo crear 
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: presentar los conceptos básicos de la creación de CMS sin encabezado.
    * Introducción a la creación con AEMaaCS.
    * Introducción a los fragmentos de contenido.
@@ -58,12 +58,12 @@ La primera vez que inicie sesión, un breve tutorial en línea resalta algunas d
 
 A continuación, puede utilizar el panel de navegación para acceder a las áreas clave de AEM. Para los fragmentos de contenido usará la **consola de Assets**.
 
-Para abrir el panel de navegación, seleccione el icono de Adobe en la parte superior izquierda, seguido del icono de una pequeña brújula:
+El panel de navegación se puede abrir seleccionando el icono Adobe en la parte superior izquierda, seguido del icono de una pequeña brújula:
 
 ![Panel de navegación](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->AEM Aunque los fragmentos de contenido son una característica de **Sitios**, se encuentran en la consola **Assets**. Se trata de un detalle técnico que no debería afectarle, pero que es útil conocer.
+>Aunque los fragmentos de contenido son una característica de AEM **Sites**, se encuentran en la consola **Assets**. Se trata de un detalle técnico que no debería afectarle, pero que es útil conocer.
 
 En la consola, puede seleccionar carpetas para desplazarse hasta el fragmento de contenido o las rutas de exploración (en el encabezado) para desplazarse hacia atrás en el árbol.
 
@@ -129,7 +129,7 @@ A continuación, desplácese por estas carpetas para crear y editar los fragment
 
 Por si acaso...
 
-Probablemente, se le dará una carpeta inicial donde podrá crear sus carpetas. Así es como deben aplicarse algunos detalles de configuración (normalmente por un desarrollador o administrador del sistema) a la carpeta raíz. Probablemente no le interese, pero si es necesario, puede comprobar la **Configuración** en los **Cloud Service** de la carpeta **Propiedades**:
+Probablemente, se le dará una carpeta inicial donde podrá crear sus carpetas. Así es como deben aplicarse algunos detalles de configuración (normalmente por un desarrollador o administrador del sistema) a la carpeta raíz. Probablemente no le interese, pero si es necesario, puede comprobar la **configuración** en **Cloud Services** de la carpeta **Properties**:
 
 ![Propiedades de Crear carpeta: configuración](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 

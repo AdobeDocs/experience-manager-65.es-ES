@@ -9,7 +9,7 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3300'
 ht-degree: 0%
@@ -88,7 +88,7 @@ Al activar la conversión de formato del explorador adjuntando `bfc=on` a la dir
 
 Puede desactivar Imágenes inteligentes adjuntando `bfc=off` a la dirección URL de la imagen.
 
-Consulte también [bfc](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) en la API de servicio y procesamiento de imágenes de Dynamic Media.
+Consulte también [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) en la API de servicio y procesamiento de imágenes de Dynamic Media.
 
 ### Acerca de la optimización de la proporción de píxeles del dispositivo (dpr) {#dpr}
 
@@ -207,7 +207,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-+++¿La imagen inteligente funciona con HTTPS? ¿Qué tal HTTP/2?
++++¿Smart Imaging funciona con HTTPS? ¿Qué tal HTTP/2?
 
 Imágenes inteligentes funciona con imágenes entregadas a través de HTTP o HTTPS. Además, también funciona sobre HTTP/2.
 
@@ -221,7 +221,7 @@ Para utilizar imágenes inteligentes, la cuenta de Dynamic Media Classic o Dynam
 
 +++
 
-+++¿Cuál es el proceso para habilitar imágenes inteligentes en una cuenta de?
++++¿Cuál es el proceso para habilitar imágenes inteligentes en una cuenta de? 
 
 Para empezar a usar imágenes inteligentes, agregue `bfc=on`, `dpr=on,dprValue` o `network=on`, o los tres parámetros a las direcciones URL o ajustes preestablecidos existentes. Si prefiere no realizar estos cambios manualmente, puede habilitar Imágenes inteligentes de forma predeterminada creando un caso de soporte.
 
@@ -255,7 +255,7 @@ Al crear el caso de soporte, especifique qué funciones de imágenes inteligente
 
       * Enumerar todos los dominios relevantes, como *`company.com`* o *`mycompany.scene7.com`*
       * Imágenes inteligentes admite dominios genéricos y personalizados.
-      * Para identificar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/es/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e inicie sesión en su cuenta de empresa.
+      * Para identificar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e inicie sesión en su cuenta de empresa.
 
          1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
          1. Busque el campo **[!UICONTROL Nombre de servidor publicado]** para confirmar su dominio.
@@ -288,7 +288,7 @@ La Asistencia al cliente procesa las solicitudes en el orden en que las recibe, 
 
 +++
 
-+++¿Cuáles son los riesgos de cambiar a utilizar imágenes inteligentes?
++++¿Cuáles son los riesgos de cambiar al uso de imágenes inteligentes?
 
 No hay riesgo para una página web de cliente. Sin embargo, la transición a Imágenes inteligentes borra la caché de CDN. Esta operación implica pasar a una nueva configuración de Dynamic Media Classic o Dynamic Media en Experience Manager.
 
@@ -317,7 +317,7 @@ Durante la transición inicial, las imágenes no almacenadas en caché acceden d
 
 +++
 
-+++¿Cómo sé cómo se obtiene el rendimiento? ¿Existe alguna manera de conocer las ventajas de las imágenes inteligentes?
++++¿Cómo puedo saber el aumento del rendimiento? ¿Existe alguna manera de conocer las ventajas de las imágenes inteligentes?
 
 El encabezado de imágenes inteligentes determina las ventajas de las imágenes inteligentes. Cuando se habilita Imágenes inteligentes, después de solicitar una imagen, bajo el encabezado **[!UICONTROL Encabezados de respuesta]**, puede ver `-X-Adobe-Smart-Imaging` como se ve en el siguiente ejemplo resaltado:
 
@@ -336,19 +336,19 @@ Este encabezado indica lo siguiente:
 >**X-Adobe-Smart-Imaging = -1 con WebP siendo entregado**
 >
 >Si el valor de `X-Adobe-Smart-Imaging` es -1 y WebP aún se está entregando, Imágenes inteligentes estará activo. Sin embargo, las ventajas de tamaño no se calcularon debido a que la caché no está actualizada. Puede usar `cache=update` (solo una vez) en la dirección URL de la imagen para solucionar este problema.
->&#x200B;>Ejemplo de uso del modificador:
->&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->&#x200B;>Para invalidar toda la caché, debe crear un caso de soporte.
+>Ejemplo de uso del modificador:
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>Para invalidar toda la caché, debe crear un caso de soporte.
 
 +++
 
-+++¿Cómo puedo deshabilitar la optimización de AVIF en imágenes inteligentes?
++++¿Cómo puedo desactivar la optimización de AVIF en imágenes inteligentes?
 
 Si desea volver a ofrecer WebP de forma predeterminada, cree un caso de soporte para el mismo. Como de costumbre, puede desactivar Imágenes inteligentes agregando el parámetro `bfc=off` a la dirección URL de la imagen. Sin embargo, no puede seleccionar WebP o AVIF en el modificador URL para Imágenes inteligentes. Esta capacidad se mantiene en el nivel de cuenta de la compañía.
 
 +++
 
-+++¿Es posible desactivar Imágenes inteligentes para cualquier solicitud?
++++¿Se puede desactivar la imagen inteligente para cualquier solicitud?
 
 Sí. Puede desactivar Imágenes inteligentes si agrega cualquiera de los siguientes modificadores:
 
@@ -386,7 +386,7 @@ Agregue `fmt=tif` y `bfc=off` a la ruta URL de la imagen.
 
 +++
 
-+++¿Imágenes inteligentes solo administra el formato de imagen o también administra la configuración de calidad de imagen para obtener los mejores resultados?
++++¿Smart Imaging solo administra el formato de imagen o también la configuración de calidad de imagen para obtener los mejores resultados?
 
 Imágenes inteligentes utiliza formato y calidad. El resto de los parámetros siguen siendo los mismos, si se solicitan en la dirección URL de la imagen.
 
@@ -438,7 +438,7 @@ Para invalidar toda la caché, debe crear un caso de soporte que solicite ese es
 
 +++
 
-+++¿Cómo puedo seguir usando PNG para convertir sin pérdidas en imágenes inteligentes?
++++¿Cómo puedo seguir utilizando PNG para lograr una conversión sin pérdidas en imágenes inteligentes?
 
 Imágenes inteligentes ahora admite la conversión con pérdida en función del nivel de calidad. Puede seguir utilizando la conversión sin pérdidas estableciendo la calidad en 100, ya sea mediante la configuración de su empresa o agregando `qlt=100` a la ruta de acceso URL de la imagen.
 

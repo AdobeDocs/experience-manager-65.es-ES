@@ -4,8 +4,8 @@ description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 92%
@@ -16,7 +16,7 @@ ht-degree: 92%
 
 Aprenda a conectar AEM a un servicio de traducción.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
 En el documento anterior del recorrido de traducción sin encabezado de AEM, [Introducción a la traducción de contenido sin encabezado de AEM](learn-about.md) ha aprendido a organizar el contenido sin encabezado y cómo funcionan las herramientas de traducción de AEM. Ahora podrá hacer lo siguiente:
 
@@ -73,7 +73,7 @@ Una vez instalado el paquete de conector para el servicio de traducción preferi
 
 Para crear una nueva configuración de traducción haga lo siguiente:
 
-1. En el menú de navegación global, haga clic en **Herramientas** > **Cloud Service** > **Cloud Service de traducción**.
+1. En el menú de navegación global, haga clic en **Herramientas** > **Cloud Services** > **Cloud Services de traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. Esto suele basarse en un proyecto en particular o puede ser global.
    * Por ejemplo, en este caso, se podría realizar una configuración global para aplicar a todo el contenido o solo para el proyecto WKND.
 
@@ -119,7 +119,7 @@ Para ello, vaya a la raíz de idioma del contenido. Como ejemplo, sería lo sigu
 
 1. Vaya a la navegación global y luego a **Navegación** > **Recursos** > **Archivos**.
 1. En la consola de recursos, seleccione la raíz de idioma que desea configurar y haga clic en **Propiedades**.
-1. Haga clic en la ficha **Cloud Service**.
+1. Haga clic en la ficha **Cloud Services**.
 1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione el conector. Debe aparecer en el menú desplegable cuando haya instalado su paquete como [descritos anteriormente.](#connect-translation-provider)
 1. En **Configuraciones de Cloud Service** en el menú desplegable **Agregar configuración**, seleccione también la configuración.
 1. Haga clic en **Guardar y cerrar**.
@@ -133,7 +133,7 @@ Ahora que ha completado esta parte del recorrido de traducción sin encabezado, 
 * Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
 
-AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento [Configuración de reglas de traducción,](translation-rules.md) donde aprenderá a definir qué contenido traducir.
+Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de AEM revisando el documento [Configuración de reglas de traducción,](translation-rules.md) donde aprenderá a definir qué contenido traducir.
 
 ## Recursos adicionales {#additional-resources}
 

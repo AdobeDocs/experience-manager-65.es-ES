@@ -1,11 +1,11 @@
 ---
 title: Guía de inicio rápido Creación de modelos de fragmentos de contenido sin encabezado
-description: Defina la estructura del contenido que crea y sirve con las capacidades sin encabezado de Adobe Experience Manager AEM () mediante modelos de fragmentos de contenido.
+description: Defina la estructura del contenido que crea y sirve con las capacidades sin encabezado de Adobe Experience Manager (AEM) mediante modelos de fragmentos de contenido.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%
@@ -14,7 +14,7 @@ ht-degree: 51%
 
 # Guía de inicio rápido Creación de modelos de fragmentos de contenido sin encabezado {#creating-content-fragment-models}
 
-Defina la estructura del contenido que crea y sirve con las capacidades sin encabezado de Adobe Experience Manager AEM () mediante modelos de fragmentos de contenido.
+Defina la estructura del contenido que crea y sirve con las capacidades sin encabezado de Adobe Experience Manager (AEM) mediante modelos de fragmentos de contenido.
 
 ## ¿Qué son los modelos de fragmentos de contenido? {#what-are-content-fragment-models}
 
@@ -26,7 +26,7 @@ Los Modelos de fragmento de contenido definen la estructura de los datos y el co
 
 Un arquitecto de la información realizaría estas tareas solo de forma esporádica, a medida que se necesiten nuevos modelos. Para los fines de esta guía de introducción, solo está creando un modelo.
 
-1. AEM Inicie sesión en el menú principal y seleccione **Herramientas > Assets > Modelos de fragmentos de contenido**.
+1. Inicie sesión en AEM y, en el menú principal, seleccione **Herramientas > Assets > Modelos de fragmentos de contenido**.
 1. Haga clic en la carpeta que se creó al crear la configuración.
 
    ![La carpeta de modelos](assets/models-folder.png)
@@ -46,17 +46,17 @@ Un arquitecto de la información realizaría estas tareas solo de forma esporád
    ![Configure las propiedades](assets/models-configure-properties.png)
 1. Cuando termine de crear el modelo, haga clic en **Guardar**.
 
-1. El tipo del modelo recién creado depende de si ha seleccionado **Activar modelo** al crearlo:
+1. El tipo del modelo recién creado depende de si ha seleccionado **Habilitar modelo** al crearlo:
    * seleccionado: el nuevo modelo ya está **Habilitado**
    * No seleccionado: el nuevo modelo se crea en modo **Borrador**
 
 1. Si aún no lo está, el modelo debe estar **Habilitado** para utilizarlo.
    1. Seleccione el modelo que creó y, a continuación, haga clic en **Habilitar**.
 
-      ![Activación del modelo](assets/models-enable.png)
+      ![Habilitación del modelo](assets/models-enable.png)
    1. Confirme la activación del modelo tocando o haciendo clic en **Habilitar** en el cuadro de diálogo de confirmación.
 
-      ![Activación del cuadro de diálogo de confirmación](assets/models-enabling.png)
+      ![Habilitación del cuadro de diálogo de confirmación](assets/models-enabling.png)
 1. El modelo está ahora habilitado y listo para usarse.
 
    ![Modelo habilitado](assets/models-enabled.png)

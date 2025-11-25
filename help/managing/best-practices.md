@@ -9,9 +9,9 @@ docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: ht
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '3212'
 ht-degree: 100%
 
@@ -239,7 +239,7 @@ La planificación del desarrollo es clave para garantizar que el proyecto se bas
 
   Antes del desarrollo, deben establecerse todos los procesos de compatibilidad necesarios para implementar, publicar, probar e informar de problemas.
 
-  Consulte también el [Portal de asistencia de Adobe](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support).
+  Consulte también el [Portal de asistencia de Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support).
 
 ### Planificación de operaciones y operaciones {#operations-planning-and-operations}
 

@@ -1,20 +1,20 @@
 ---
-title: 'Aprender a utilizar GraphQL AEM con: contenido y consultas de muestra'
-description: Aprenda a utilizar GraphQL AEM con el para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
+title: 'Aprender a utilizar GraphQL con AEM: contenido de muestra y consultas'
+description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 83%
+source-wordcount: '1577'
+ht-degree: 82%
 
 ---
 
 # Formación para utilizar GraphQL con AEM: contenido y consultas de muestra {#learn-graphql-with-aem-sample-content-queries}
 
-Aprenda a utilizar GraphQL AEM con el para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
+Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Aprenda a utilizar GraphQL AEM con el para ofrecer contenido sin encabezado expl
 >* [Modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-models.md)
 >* [API de GraphQL de AEM para su uso con fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-Para empezar a usar las consultas de GraphQL AEM y ver cómo funcionan con fragmentos de contenido de la aplicación, ayuda ver algunos ejemplos prácticos.
+Para empezar a usar las consultas de GraphQL y ver cómo funcionan con los fragmentos de contenido de AEM, ayuda ver algunos ejemplos prácticos.
 
 Para ayudarle con esto, consulte lo siguiente:
 
@@ -1720,7 +1720,7 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 | Lincoln |  Abe | |
 | Smith | Adam |   |
 | Enclavado |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
+| Marsh |  Duke |   |
 |  Smith |  Joe |   |
 | Croft |  Lara | Gamestar |
 | Caulfield |  Max |  Gameblitz |
@@ -1738,10 +1738,10 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 
 | Nombre | País | Población | Categorías |
 |--- |--- |--- |--- |
-| Basilea | Suiza | 172258 | city:emea |
+| Basilea | Suiza | 172258 | ciudad:emea |
 | Berlín | Alemania | 3669491 | city:capital<br>city:emea |
 | Bucarest | Rumanía | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  EE. UU. |  883306 |  city:beach<br>city:na |
-| San José |  EE. UU. |  102635 |  city:na |
-| Stuttgart |  Alemania |  634830 |  city:emea |
+| San José |  EE. UU. |  102635 |  ciudad:na |
+| Stuttgart |  Alemania |  634830 |  ciudad:emea |
 |  Zúrich |  Suiza |  415367 |  city:capital<br>city:emea |

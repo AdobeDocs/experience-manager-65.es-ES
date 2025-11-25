@@ -2,18 +2,18 @@
 title: Consideraciones y requisitos de red
 description: Explica las consideraciones de red al diseñar una implementación de  [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# [!DNL Assets] consideraciones de red {#assets-network-considerations}
+# Consideraciones de red de [!DNL Assets] {#assets-network-considerations}
 
 Comprender su red es tan importante como comprender [!DNL Adobe Experience Manager Assets]. La red puede afectar a las experiencias de carga, descarga y usuario. El diagrama de la topología de red ayuda a identificar los puntos de estrangulamiento y las áreas suboptimizadas de la red que debe corregir para mejorar el rendimiento de la red y la experiencia del usuario.
 
@@ -52,7 +52,7 @@ El diagrama muestra velocidades de enlace ascendente más altas dentro de la red
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
-Es importante tener en cuenta factores desconocidos en Internet y en la conexión VPC, ya que el ancho de banda a través de Internet puede verse afectado debido a picos de carga o interrupciones de proveedores a gran escala. En general, la conectividad a Internet es fiable. Sin embargo, a veces puede introducir puntos de estrangulamiento.
+Es importante tener en cuenta factores desconocidos en Internet y en la conexión de VPC, ya que el ancho de banda a través de Internet puede verse afectado debido a la carga máxima o a las interrupciones del proveedor a gran escala. En general, la conectividad a Internet es fiable. Sin embargo, a veces puede introducir puntos de estrangulamiento.
 
 En el enlace ascendente de una red corporativa a Internet, puede haber otros servicios utilizando el ancho de banda. Es importante comprender qué parte del ancho de banda se puede dedicar o priorizar para Assets. Por ejemplo, si un vínculo de 1 Gbps ya está en un 80% de uso, sólo puede asignar un máximo del 20% del ancho de banda para [!DNL Experience Manager Assets].
 
@@ -70,7 +70,7 @@ A partir de los diagramas de ejemplo, puede concluir que seis dispositivos compa
 
 El diseño de la topología del entorno [!DNL Experience Manager] requiere un conocimiento detallado de la configuración del sistema y de cómo está conectada la red dentro del entorno del usuario.
 
-El escenario de ejemplo incluye una granja de servidores de publicación con cinco servidores, un almacén binario S3 y Dynamic Media configurado.
+El escenario de ejemplo incluye un conjunto de servidores de publicación con cinco servidores, un almacén binario S3 y Dynamic Media configurado.
 
 Dispatcher comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y la implementación [!DNL Experience Manager]. Para realizar operaciones simultáneas de carga y descarga, se debe dividir este número entre dos. El almacenamiento externo adjunto utiliza una conexión independiente.
 
@@ -92,7 +92,7 @@ Al evaluar la topología del flujo de trabajo interno, debe analizar lo siguient
 
 Estos son algunos elementos que hay que tener en cuenta:
 
-* XMP lectura/escritura de metadatos de la
+* Lectura/escritura diferida de metadatos XMP
 * Activación y replicación automáticas
 * Filigrana
 * Ingesta de subrecursos/extracción de página

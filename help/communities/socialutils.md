@@ -1,6 +1,6 @@
 ---
 title: Refactorización de SocialUtils
-description: AEM El paquete com.adobe.cq.social.ugcbase.SocialUtils ha quedado obsoleto en la versión 6.1 de
+description: El paquete com.adobe.cq.social.ugcbase.SocialUtils estaba obsoleto en AEM 6.1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,9 +9,9 @@ exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 1%
 
 ## Paquete SocialUtils obsoleto {#socialutils-package-deprecated}
 
-AEM El paquete `com.adobe.cq.social.ugcbase.SocialUtils` se ha quedado obsoleto en la versión 6.1 de.
+El paquete `com.adobe.cq.social.ugcbase.SocialUtils` estaba obsoleto en AEM 6.1.
 
 En las tablas siguientes se enumeran los métodos que se deben usar en lugar de `SocialUtils`.
 
 ## Paquete SocialResourceUtilities  {#socialresourceutilities-package}
 
-| Métodos en com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
-|---|
+| Métodos en com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities | Notas |
+|---|---|
 | Boolean checkPermission(Resolución de ResourceResolver, Ruta de cadena, Acción de cadena) |  |
 | SocialResourceProvider getSocialResourceProvider(Recurso) |  |
 | SocialResourceConfiguration getStorageConfig(recurso) |  |
@@ -42,8 +42,8 @@ En las tablas siguientes se enumeran los métodos que se deben usar en lugar de 
 | Cadena UGCToResourcePath(Cadena ugcPath) | firma de método modificada |
 | String UGCToResourcePath(String ugcPath, resolución de ResourceResolver) | nuevo |
 
-| Métodos en `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
-|---|
+| Métodos en `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities | Notas |
+|---|---|
 | SocialResourceProvider getSocialResourceProvider(Recurso) | reemplaza a SocialResourceProvider getConficonfiguredProvider(recurso) |
 
 ## Paquete de utilidades SCFU {#scfutilities-package}

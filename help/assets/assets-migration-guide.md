@@ -2,11 +2,11 @@
 title: Migración de recursos por lotes
 description: Describe cómo incluir recursos en  [!DNL Adobe Experience Manager], aplicar metadatos, generar representaciones y activarlas en instancias de publicación.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 6%
@@ -23,15 +23,15 @@ Antes de realizar realmente cualquiera de los pasos de esta metodología, revise
 
 >[!NOTE]
 >
->Las siguientes herramientas de migración de recursos no forman parte de [!DNL Experience Manager] y no son compatibles con el Adobe:
+>Las siguientes herramientas de migración de recursos no forman parte de [!DNL Experience Manager] y Adobe no las admite:
 >
->* AEM ACS Herramientas Creador de etiquetas
->* AEM Importador de recursos CSV de herramientas de ACS
+>* ACS AEM Tools Creador de etiquetas
+>* Importador de recursos CSV de herramientas de AEM de ACS
 >* Administrador de flujos de trabajo masivos ACS Commons
 >* Administrador de acciones rápidas de ACS Commons
 >* Flujo de trabajo sintético
 >
->Este software es de código abierto y está cubierto por la [Licencia de &#x200B;](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+>Este software es de código abierto y está cubierto por la [Licencia de ](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
 ## Migrar a [!DNL Experience Manager] {#migrating-to-aem}
 
@@ -52,7 +52,7 @@ Antes de iniciar la migración, deshabilite los iniciadores para el flujo de tra
 
 ### Carga de etiquetas {#loading-tags}
 
-Es posible que ya tenga una taxonomía de etiquetas configurada que esté aplicando a sus imágenes. Aunque herramientas como el importador de recursos CSV y la compatibilidad de [!DNL Experience Manager] con perfiles de metadatos pueden automatizar el proceso de aplicación de etiquetas a los recursos, es necesario cargar las etiquetas en el sistema. AEM La característica [ACS Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite rellenar etiquetas con una hoja de cálculo de Microsoft Excel cargada en el sistema.
+Es posible que ya tenga una taxonomía de etiquetas configurada que esté aplicando a sus imágenes. Aunque herramientas como el importador de recursos CSV y la compatibilidad de [!DNL Experience Manager] con perfiles de metadatos pueden automatizar el proceso de aplicación de etiquetas a los recursos, es necesario cargar las etiquetas en el sistema. La característica [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite rellenar etiquetas con una hoja de cálculo de Microsoft Excel cargada en el sistema.
 
 ### Ingesta de recursos {#ingesting-assets}
 
@@ -73,7 +73,7 @@ El otro método para la ingesta de recursos es extraer recursos del sistema de a
 
 #### Recuperación desde el sistema de archivos local {#pulling-from-the-local-filesystem}
 
-AEM El [Importador de recursos CSV de herramientas de ACS &#x200B;](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrae recursos del sistema de archivos y metadatos de recursos de un archivo CSV para la importación de recursos. La API de Experience Manager Asset Manager se utiliza para importar los recursos al sistema y aplicar las propiedades de metadatos configuradas. Lo ideal es que los recursos se monten en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
+El [importador de recursos CSV de AEM Tools para ACS](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrae recursos del sistema de archivos y metadatos de recursos de un archivo CSV para la importación de recursos. La API de Experience Manager Asset Manager se utiliza para importar los recursos al sistema y aplicar las propiedades de metadatos configuradas. Lo ideal es que los recursos se monten en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
 
 Dado que no es necesario transmitir los recursos a través de una red, el rendimiento general mejora considerablemente y este método se considera generalmente la forma más eficaz de cargar recursos en el repositorio. Además, como la herramienta admite la ingesta de metadatos, puede importar todos los recursos y metadatos en un solo paso en lugar de crear también un segundo paso para aplicar los metadatos a través de una herramienta independiente.
 
@@ -88,7 +88,7 @@ Después de configurar el flujo de trabajo según sus necesidades, tiene dos opc
 
 ### Activar recursos {#activating-assets}
 
-Para implementaciones que tienen un nivel de publicación, debe activar los recursos en el conjunto de servidores de publicación. Aunque Adobe recomienda ejecutar más de una instancia de publicación, lo más eficaz es replicar todos los recursos en una sola instancia de publicación y luego clonarla. Al activar grandes cantidades de recursos, después de activar una activación de árbol, es posible que tenga que intervenir. Esta es la razón: Al activar activaciones, los elementos se añaden a la cola de trabajos/eventos de Sling. Una vez que el tamaño de esta cola empieza a superar los 40 000 elementos, el procesamiento se ralentiza considerablemente. Una vez que el tamaño de esta cola supera los 100 000 elementos, la estabilidad del sistema empieza a verse afectada.
+Para implementaciones que tienen un nivel de publicación, debe activar los recursos en el conjunto de servidores de publicación. Aunque Adobe recomienda ejecutar más de una instancia de publicación, lo más eficaz es replicar todos los recursos en una sola instancia de publicación y luego clonar esa instancia. Al activar grandes cantidades de recursos, después de activar una activación de árbol, es posible que tenga que intervenir. Esta es la razón: Al activar activaciones, los elementos se añaden a la cola de trabajos/eventos de Sling. Una vez que el tamaño de esta cola empieza a superar los 40 000 elementos, el procesamiento se ralentiza considerablemente. Una vez que el tamaño de esta cola supera los 100 000 elementos, la estabilidad del sistema empieza a verse afectada.
 
 Para solucionar este problema, puede usar [Administrador de acciones rápidas](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) para administrar la replicación de recursos. Esto funciona sin utilizar las colas de Sling, lo que reduce la sobrecarga, a la vez que limita la carga de trabajo para evitar que el servidor se sobrecargue. En la página de documentación de la función se muestra un ejemplo del uso de FAM para administrar la replicación.
 
@@ -100,7 +100,7 @@ Para cualquiera de estos enfoques, la advertencia es que los recursos de la inst
 >
 >Adobe no mantiene ni admite Grabbit.
 
-### Clonar Publish {#cloning-publish}
+### Clonar publicación {#cloning-publish}
 
 Una vez activados los recursos, puede clonar la instancia de publicación para crear tantas copias como sean necesarias para la implementación. La clonación de un servidor es bastante sencilla, pero hay que recordar algunos pasos importantes. Para clonar la publicación:
 
@@ -133,6 +133,6 @@ En este caso, los recursos ya se han rellenado con metadatos y ya se han generad
 
 1. Activar recursos: siga las instrucciones para [activar recursos](#activating-assets) documentadas para la migración inicial a [!DNL Experience Manager].
 
-1. Clonar publicación: al igual que con una nueva migración, cargar una sola instancia de publicación y clonarla es más eficaz que activar el contenido en ambos nodos. Consulte [Clonación de Publish.](#cloning-publish)
+1. Clonar publicación: al igual que con una nueva migración, cargar una sola instancia de publicación y clonarla es más eficaz que activar el contenido en ambos nodos. Ver [Clonando publicación.](#cloning-publish)
 
 1. Habilitar flujos de trabajo: una vez completada la migración, vuelva a habilitar los iniciadores para el flujo de trabajo [!UICONTROL Recurso de actualización DAM] para admitir la generación de representaciones y la extracción de metadatos para el uso diario continuo del sistema.

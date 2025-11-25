@@ -4,8 +4,8 @@ description: Los proyectos de AEM se pueden implementar en un modelo con o sin e
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 88%
@@ -14,7 +14,7 @@ ht-degree: 88%
 
 # Encabezado y sin encabezado en AEM {#headful-headless}
 
-Los proyectos de Adobe Experience Manager se pueden implementar tanto en modelos con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto. SPA Este documento proporciona una visión general de los diferentes modelos y describe los niveles de integración de la.
+Los proyectos de Adobe Experience Manager se pueden implementar tanto en modelos con o sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto. Este documento proporciona una visión general de los diferentes modelos y describe los niveles de integración de SPA.
 
 ## Información general {#overview}
 
@@ -26,11 +26,11 @@ Pero esto no tiene que ser una elección binaria. AEM ofrece una flexibilidad si
 
 ![Modelos de implementación de AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-AEM AEM En un modelo con encabezado o de pila completa, el contenido se administra en el repositorio de y se utilizan componentes basados en Java, HTL, etc., para procesar el contenido para la experiencia del usuario. En este modelo, la creación del contenido, el estilo, la presentación y la entrega se realizan en AEM.
+En un modelo con encabezado o de pila completa, el contenido se administra en el repositorio de AEM y los componentes de AEM basados en Java, HTL, etc., se utilizan para procesar el contenido para la experiencia del usuario. En este modelo, la creación del contenido, el estilo, la presentación y la entrega se realizan en AEM.
 
 En un modelo sin encabezado, el contenido se administra en el repositorio de AEM, pero se envía mediante una API como REST y GraphQL a otro sistema para procesar el contenido para la experiencia del usuario. En este modelo, el contenido se crea en AEM, pero el diseño, la presentación y entrega se realiza en otra plataforma.
 
-Las aplicaciones de una sola página (SPA) suelen ser el destino del contenido que AEM entrega sin encabezado. SPA AEM Sin embargo, estos no tienen por qué ser totalmente externos a los usuarios de la red de distribución de la. AEM SPA AEM La opción le permite decidir en qué grado se integran sus en el que se encuentran los usuarios de la aplicación de la. Veamos un ejemplo.
+Las aplicaciones de una sola página (SPA) suelen ser el destino del contenido que AEM entrega sin encabezado. Sin embargo, no es necesario que estos SPA sean completamente externos a AEM. AEM le permite decidir en qué medida sus SPA están integrados en AEM. Veamos un ejemplo.
 
 ## Ejemplo de la tienda web {#web-shop-example}
 
@@ -46,7 +46,7 @@ La siguiente sección explora estos niveles de integración con más detalle.
 
 >[!NOTE]
 >
->Por supuesto, también puede volver a implementar la SPA de la tienda web como una SPA que funcione completamente en AEM [con el marco de trabajo de un Editor de SPA en AEM.AEM SPA &#x200B;](/help/sites-developing/spa-walkthrough.md) Si ya tiene una tienda web o un sitio web, y desea crear una tienda web o un sitio web, este es el método recomendado, pero está fuera del ámbito de este documento.
+>Por supuesto, también puede volver a implementar la SPA de la tienda web como una SPA que funcione completamente en AEM [con el marco de trabajo de un Editor de SPA en AEM.](/help/sites-developing/spa-walkthrough.md) Si ya tiene AEM y desea crear una tienda web u otra SPA, este es el método recomendado, pero está fuera del ámbito de este documento.
 
 ## Niveles de integración de las SPA {#integration-levels}
 
@@ -82,7 +82,7 @@ Existen diferentes herramientas disponibles en AEM según el nivel de integraci�
 
 * **Nivel 1:** los fragmentos de contenido y el [marco de trabajo de AEM sin encabezado](/help/sites-developing/headless/introduction.md) se pueden utilizar para enviar contenido AEM a la SPA.
 * **Nivel 2:** Además del nivel uno:
-   * [El componente RemotePage](/help/sites-developing/spa-remote-page.md) se puede utilizar para integrar la SPA externa en AEM donde el contenido de AEM se puede ver en contexto.
+   * [El componente RemotePage](/help/sites-developing/spa-remote-page.md) se puede utilizar para incrustar la SPA externa en AEM donde el contenido de AEM se puede ver en contexto.
    * Algunos puntos de la SPA también se pueden habilitar para [permitir la edición limitada en AEM.](/help/sites-developing/spa-edit-external.md)
 * **Nivel 3:** Además del nivel dos:
    * Se pueden habilitar zonas enteras de la SPA para permitir una edición completa en AEM.

@@ -9,16 +9,16 @@ exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '7192'
+source-wordcount: '7168'
 ht-degree: 19%
 
 ---
 
 # Configurar extremos de carpetas vigiladas {#configuring-watched-folder-endpoints}
 
-Un administrador puede configurar una carpeta de red, conocida como *carpeta inspeccionada*, de forma que cuando un usuario coloque un archivo (como un archivo de PDF) en la carpeta inspeccionada, se invoque una operación de servicio configurada y se manipule el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada.
+Un administrador puede configurar una carpeta de red, conocida como *carpeta vigilada*, de forma que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta vigilada, se invoque una operación de servicio configurada y se manipule el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada.
 
 ## Configuración del servicio de carpetas inspeccionadas {#configuring-the-watched-folder-service}
 
@@ -34,7 +34,7 @@ Después de configurar el servicio de carpetas inspeccionadas, agregue un punto 
 Puede crear una carpeta vigilada de las dos maneras siguientes:
 
 * Al configurar los ajustes de un extremo de carpeta inspeccionada, escriba la ruta completa del directorio principal en el cuadro Ruta y anexe el nombre de la carpeta inspeccionada que se va a crear, como se muestra en este ejemplo:
-  AEM `  C:\MyPDFs\MyWatchedFolder`Debido a que la carpeta MyWatchedFolder no existe, formularios de la aplicación intenta crearla en esa ubicación.
+  `  C:\MyPDFs\MyWatchedFolder`Dado que la carpeta MyWatchedFolder no existe todavía, AEM Forms intenta crearla en esa ubicación.
 
 * Cree una carpeta en el sistema de archivos antes de configurar un punto final de carpeta vigilada y, a continuación, escriba la ruta de acceso completa en el cuadro Ruta.
 
@@ -61,13 +61,13 @@ Si el trabajo contiene más de un archivo de entrada, el usuario debe crear una 
 
 >[!NOTE]
 >
->Asegúrese de que el servidor de aplicaciones haya eliminado el acceso a los archivos de la carpeta vigilada. AEM Si los formularios no pueden eliminar los archivos de la carpeta de entrada después de analizarlos, el proceso asociado se invocará indefinidamente.
+>Asegúrese de que el servidor de aplicaciones haya eliminado el acceso a los archivos de la carpeta vigilada. Si los formularios AEM Forms no pueden eliminar los archivos de la carpeta de entrada después de analizarlos, el proceso asociado se invocará indefinidamente.
 
 ## Salida de carpeta inspeccionada {#watched-folder-output}
 
-AEM Cuando la entrada es una carpeta y la salida consta de varios archivos, los formularios de datos de formulario de la aplicación crean una carpeta de salida con el mismo nombre que la carpeta de entrada y copian los archivos de salida en esa carpeta. Cuando el resultado consiste en un mapa del documento que contiene un par clave-valor, como el resultado de un proceso de salida, la clave se utiliza como nombre del archivo de salida.
+Cuando la entrada es una carpeta y el resultado consta de varios archivos, los formularios AEM Forms crean una carpeta de salida con el mismo nombre que la carpeta de entrada y copian los archivos de salida en esa carpeta. Cuando el resultado consiste en un mapa del documento que contiene un par clave-valor, como el resultado de un proceso de salida, la clave se utiliza como nombre del archivo de salida.
 
-Los nombres de los archivos de salida resultantes de un proceso de extremo no pueden contener caracteres que no sean letras, números y un punto (.) antes de la extensión de archivo. AEM Los formularios de datos convierten otros caracteres en sus valores hexadecimales.
+Los nombres de archivo de salida que resultan de un proceso de extremo no pueden contener caracteres que no sean letras, números y un punto (.) antes de la extensión del archivo. Los formularios AEM convierten otros caracteres en sus valores hexadecimales.
 
 Las aplicaciones cliente recogen los documentos de resultados de la carpeta de resultados de la carpeta inspeccionada. Los errores de proceso se registran en la carpeta de errores de carpeta vigilada.
 
@@ -130,7 +130,7 @@ Utilice la siguiente configuración para configurar un punto final de carpeta vi
 
 **Recuento de repeticiones:** Número de veces que la carpeta vigilada analiza la carpeta o el directorio. El valor -1 indica un escaneo indefinido. El valor predeterminado es -1.
 
-AEM **Aceleración:** Cuando se selecciona esta opción, limita el número de trabajos de carpetas vigiladas que procesa el formulario en un momento dado y que se pueden ver en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño del lote. (Consulte Acerca de la restricción.)
+**Aceleración:** Cuando se selecciona esta opción, limita el número de trabajos de carpetas vigiladas que procesan los formularios AEM Forms en un momento dado. El número máximo de trabajos viene determinado por el valor Tamaño del lote. (Consulte Acerca de la restricción.)
 
 **Nombre de usuario:** (obligatorio) El nombre de usuario que se usa al invocar un servicio de destino desde la carpeta vigilada. El valor predeterminado es SuperAdmin.
 
@@ -146,7 +146,7 @@ Cuando se sueltan los archivos en la carpeta vigilada, se enumeran los archivos 
 
 **Tiempo de espera:** Tiempo, en milisegundos, que debe esperarse antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 3 600 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. El valor predeterminado es 0.
 
-Esta configuración es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&ast;60 &ast;1000 milisegundos. Esto evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
+Esta configuración es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Esto evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
 
 **Patrón de exclusión de archivos:** Lista delimitada por punto y coma **;** de patrones que usa una carpeta vigilada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta con este patrón se analizará para su procesamiento.
 
@@ -154,29 +154,29 @@ Esta configuración es útil cuando la entrada es una carpeta con varios archivo
 
 Puede utilizar patrones de archivo para excluir:
 
-* Archivos con extensiones de nombre de archivo específicas; por ejemplo, &ast;.dat, &ast;.xml, &ast;.pdf.
-* Archivos con nombres específicos; por ejemplo, data.&ast; excluiría archivos y carpetas llamados *data1*, *data2*, etc.
+* Archivos con extensiones de nombre de archivo específicas; por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
+* Archivos con nombres específicos; por ejemplo, data.&amp;ast; excluiría archivos y carpetas llamados *data1*, *data2*, etc.
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &ast;.[dD][Aa]&#39;port&#39;
-   * &ast;.[Xx][Mm][Ll]
+   * Datos`[0-9][0-9][0-9]`.`[dD][aA]`&#39;puerto&#39;
+   * &amp;ast;.`[dD][aA]`&#39;puerto&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Patrón de archivo de inclusión:** (obligatorio) Lista delimitada por punto y coma **;** de patrones que la carpeta vigilada usa para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&ast;, todos los archivos y carpetas que coincidan con input&ast; se recogerán. Esto incluye archivos y carpetas llamados input1, input2, etc.
+**Patrón de archivo de inclusión:** (obligatorio) Lista delimitada por punto y coma **;** de patrones que la carpeta vigilada usa para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&amp;ast;, todos los archivos y carpetas que coincidan con input&amp;ast; se recogerán. Esto incluye archivos y carpetas llamados input1, input2, etc.
 
-El valor predeterminado es &ast; e indica todos los archivos y carpetas.
+El valor predeterminado es &amp;ast; e indica todos los archivos y carpetas.
 
 Puede utilizar patrones de archivo para incluir:
 
-* Archivos con extensiones de nombre de archivo específicas; por ejemplo, &ast;.dat, &ast;.xml, &ast;.pdf.
-* Archivos con nombres específicos; por ejemplo, data.&ast; incluiría archivos y carpetas llamados *data1*, *data2*, etc.
+* Archivos con extensiones de nombre de archivo específicas; por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
+* Archivos con nombres específicos; por ejemplo, data.&amp;ast; incluiría archivos y carpetas llamados *data1*, *data2*, etc.
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &ast;.[dD][Aa]&#39;port&#39;
-   * &ast;.[Xx][Mm][Ll]
+   * Datos`[0-9][0-9][0-9]`.`[dD][aA]`&#39;puerto&#39;
+   * &amp;ast;.`[dD][aA]`&#39;puerto&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -228,7 +228,7 @@ El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El
 
 **Literal:** La carpeta vigilada usa el valor introducido en el campo tal como se muestra. Se admiten todos los tipos básicos de Java. Por ejemplo, si una API utiliza entradas como String, long, int y Boolean, la cadena se convierte al tipo adecuado y se invoca el servicio.
 
-**Variable:** El valor introducido es un patrón de archivo que la carpeta vigilada usa para elegir la entrada. Por ejemplo, si existe el servicio de cifrado de contraseñas, en el que el documento de entrada debe ser un archivo de PDF, el usuario puede utilizar &ast;.pdf como patrón de archivo. La carpeta inspeccionada recogerá todos los archivos de la carpeta inspeccionada que coincidan con este patrón e invocará el servicio para cada archivo. Cuando se utiliza una variable, todos los archivos de entrada se convierten en documentos. Solo se admiten las API que utilizan Document como tipo de entrada.
+**Variable:** El valor introducido es un patrón de archivo que la carpeta vigilada usa para elegir la entrada. Por ejemplo, si existe el servicio de cifrado de contraseñas, en el que el documento de entrada debe ser un archivo PDF, el usuario puede utilizar &amp;ast;.pdf como patrón de archivo. La carpeta inspeccionada recogerá todos los archivos de la carpeta inspeccionada que coincidan con este patrón e invocará el servicio para cada archivo. Cuando se utiliza una variable, todos los archivos de entrada se convierten en documentos. Solo se admiten las API que utilizan Document como tipo de entrada.
 
 **Asignaciones de parámetros de salida:** Se usa para configurar los resultados del servicio y la operación. La configuración disponible depende del servicio que utilice el punto final de la carpeta vigilada.
 
@@ -242,13 +242,13 @@ La salida de la carpeta inspeccionada puede ser un solo documento, una lista de 
 
 Los administradores pueden especificar el tipo de archivo que puede invocar un servicio. Se pueden establecer varios patrones de archivo para cada carpeta vigilada. Un patrón de archivo puede ser una de las siguientes propiedades de archivo:
 
-* Archivos con extensiones de nombre de archivo específicas. Por ejemplo, &ast;.dat, &ast;.xml, &ast;.pdf
-* Archivos con nombres específicos. Por ejemplo, datos.&ast;
+* Archivos con extensiones de nombre de archivo específicas. Por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
+* Archivos con nombres específicos. Por ejemplo, datos.&amp;ast;
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &ast;.[dD][Aa]&#39;port&#39;
-   * &ast;.[Xx][Mm][Ll]
+   * Datos`[0-9][0-9][0-9]`.`[dD][aA]`&#39;puerto&#39;
+   * &amp;ast;.`[dD][aA]`&#39;puerto&#39;
+   * &amp;ast;.`[Xx][Mm][Ll]`
 
 El administrador puede definir el patrón de archivo de la carpeta de salida en la que desea almacenar los resultados. Para las carpetas de salida (resultado, conservar y error), el administrador puede especificar cualquiera de estos patrones de archivo:
 
@@ -346,13 +346,13 @@ Una vez que los archivos se mueven a la carpeta de fase, las solicitudes de invo
 
 Cuando la carpeta inspeccionada no puede procesar los archivos de origen en la carpeta de fase, puede recuperar los archivos sin procesar.
 
-1. Reinicie el servidor de la aplicación o el nodo.
+1. Reinicie el servidor de aplicaciones o el nodo.
 1. (Opcional) Detenga el procesamiento por parte de la carpeta inspeccionada de nuevos archivos de entrada. Si omite este paso, será mucho más difícil determinar qué archivos no se procesan en la carpeta de fase. Para evitar que la carpeta inspeccionada procese nuevos archivos de entrada, realice una de las siguientes tareas:
 
    * En Aplicaciones y servicios, cambie el parámetro Patrón de archivo de inclusión del extremo de la carpeta vigilada a algo que no coincida con ninguno de los nuevos archivos de entrada (por ejemplo, escriba `NOMATCH`).
    * Suspenda el proceso que está creando nuevos archivos de entrada.
 
-   AEM Espere hasta que los formularios de la recuperen y procesen todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera para que la carpeta inspeccionada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
+   Espere hasta que los formularios AEM Forms recuperen y procesen todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera para que la carpeta inspeccionada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
 
 1. Determine qué archivos no se pueden procesar. Si ha esperado una cantidad de tiempo adecuada y ha completado el paso anterior, y todavía quedan archivos sin procesar en la carpeta de fase, vaya al paso siguiente.
 
@@ -374,18 +374,18 @@ Estos son algunos consejos y trucos al configurar el punto final de la carpeta i
 * Si tiene una carpeta vigilada en Windows que está procesando archivos de imagen, especifique valores para las opciones Incluir patrón de archivo o Excluir patrón de archivo para evitar que la carpeta vigilada sondee el archivo Thumbs.db generado automáticamente por Windows.
 * Si se especifica una expresión cron, se omite el intervalo de repetición. El uso de expresiones cron se basa en el sistema de programación de trabajos de código abierto Quartz, versión 1.4.0.
 * El tamaño del lote es el número de archivos o carpetas que se recogerán en cada análisis de la carpeta vigilada. Si el tamaño del lote se establece en dos y se sueltan diez archivos o carpetas en la carpeta de entrada de la carpeta vigilada, solo se recogerán dos en cada análisis. En el siguiente análisis, que se realizará después del tiempo especificado en el intervalo de repetición, se recogerán los dos archivos siguientes.
-* Para los patrones de archivo, los administradores pueden especificar expresiones regulares con compatibilidad añadida con patrones de comodines para especificar patrones de archivo. La carpeta inspeccionada modifica la expresión regular para admitir patrones de comodines como &ast;.&ast; o &ast;.pdf. Estos patrones de comodines no son compatibles con las expresiones regulares.
+* Para los patrones de archivo, los administradores pueden especificar expresiones regulares con compatibilidad añadida con patrones de comodines para especificar patrones de archivo. La carpeta inspeccionada modifica la expresión regular para admitir patrones de comodines como &amp;ast;.&amp;ast; o &amp;ast;.pdf. Estos patrones de comodines no son compatibles con las expresiones regulares.
 * La carpeta inspeccionada analiza la carpeta de entrada en busca de la entrada y no sabe si el archivo o la carpeta de origen se copia completamente en la carpeta de entrada antes de comenzar a procesar el archivo o la carpeta. Para asegurarse de que el archivo o la carpeta de origen se copia completamente en la carpeta de entrada de la carpeta vigilada antes de que se recoja el archivo o la carpeta, realice estas tareas:
 
-   * Usar tiempo de espera, que es el tiempo en milisegundos que la carpeta inspeccionada espera desde la última hora de modificación. Utilice esta función si tiene archivos grandes para procesar. Por ejemplo, si un archivo tarda 10 minutos en descargarse, especifique el tiempo de espera como 10&ast;60 &ast;1000 milisegundos. Esto evitará que la carpeta inspeccionada recoja el archivo si no tiene 10 minutos de antigüedad.
-   * Utilice el patrón de archivo de exclusión y el patrón de archivo de inclusión. Por ejemplo, si el patrón de archivo de exclusión es `ex*` y el patrón de archivo de inclusión es `in*`, la carpeta inspeccionada recogerá los archivos que comienzan con &quot;en&quot; y no recogerá los archivos que comienzan con &quot;ex&quot;. Para copiar archivos o carpetas grandes, cambie primero el nombre del archivo o carpeta de modo que el nombre comience por &quot;ex&quot;. Una vez que el archivo o la carpeta denominada &quot;ex&quot; se haya copiado completamente en la carpeta vigilada, cambie su nombre a &quot;in&ast;&quot;.
+   * Usar tiempo de espera, que es el tiempo en milisegundos que la carpeta inspeccionada espera desde la última hora de modificación. Utilice esta función si tiene archivos grandes para procesar. Por ejemplo, si un archivo tarda 10 minutos en descargarse, especifique el tiempo de espera como 10&amp;ast;60 &amp;ast;1000 milisegundos. Esto evitará que la carpeta inspeccionada recoja el archivo si no tiene 10 minutos de antigüedad.
+   * Utilice el patrón de archivo de exclusión y el patrón de archivo de inclusión. Por ejemplo, si el patrón de archivo de exclusión es `ex*` y el patrón de archivo de inclusión es `in*`, la carpeta inspeccionada recogerá los archivos que comienzan con &quot;en&quot; y no recogerá los archivos que comienzan con &quot;ex&quot;. Para copiar archivos o carpetas grandes, cambie primero el nombre del archivo o carpeta de modo que el nombre comience por &quot;ex&quot;. Una vez que el archivo o la carpeta denominada &quot;ex&quot; se haya copiado completamente en la carpeta vigilada, cambie su nombre a &quot;in&amp;ast;&quot;.
 
 * Utilice la duración de la depuración para mantener la carpeta de resultados limpia. La carpeta inspeccionada limpia todos los archivos que son anteriores a la duración mencionada en la duración de la depuración. La duración es en días.
 * Al agregar un punto final de carpeta inspeccionada, después de seleccionar el nombre de la operación, se rellena la asignación de parámetros de entrada. Para cada entrada de la operación, se genera un campo de asignación de parámetros de entrada. Estos son ejemplos de asignaciones de parámetros de entrada:
 
    * Para la entrada `com.adobe.idp.Document`: si la operación de servicio tiene una entrada de tipo `Document`, el administrador puede especificar el tipo de asignación como `Variable`. La carpeta inspeccionada recogerá la entrada de la carpeta de entrada de la carpeta inspeccionada en función del patrón de archivo especificado para el parámetro de entrada. Si el administrador especifica `*.pdf` como parámetro, cada archivo que tenga la extensión .pdf se recogerá, se convertirá en `com.adobe.idp.Document` y se invocará al servicio.
    * Para la entrada `java.util.Map`: si la operación de servicio tiene una entrada de tipo `Map`, el administrador puede especificar el tipo de asignación como `Variable` e introducir un valor de asignación con un patrón como `*.pdf`. Por ejemplo, un servicio necesita un mapa de dos objetos `com.adobe.idp.Document` que representen dos archivos en la carpeta de entrada, como 1.pdf y 2.pdf. La carpeta inspeccionada creará un mapa con la clave como nombre de archivo y el valor como `com.adobe.idp.Document`.
-   * Para la entrada `java.util.List`: si la operación de servicio tiene una entrada de tipo Lista, el administrador puede especificar el tipo de asignación como `Variable` e introducir un valor de asignación con un patrón como `*.pdf`. Cuando se sueltan los archivos del PDF en la carpeta de entrada, la carpeta inspeccionada creará una lista de los `com.adobe.idp.Document` objetos que representan estos archivos e invocará el servicio de destino.
+   * Para la entrada `java.util.List`: si la operación de servicio tiene una entrada de tipo Lista, el administrador puede especificar el tipo de asignación como `Variable` e introducir un valor de asignación con un patrón como `*.pdf`. Cuando se sueltan los archivos PDF en la carpeta de entrada, la carpeta inspeccionada creará una lista de los `com.adobe.idp.Document` objetos que representan estos archivos e invocará el servicio de destino.
    * Para `java.lang.String`: el administrador tiene dos opciones. En primer lugar, el administrador puede especificar el tipo de asignación como `Literal` e introducir un valor de asignación como cadena, como `hello.` La carpeta inspeccionada invocará el servicio con la cadena `hello`. Segundo, el administrador puede especificar el tipo de asignación como `Variable` e introducir un valor de asignación con un patrón como `*.txt`. En este último caso, los archivos con la extensión .txt se leerán como un documento forzado como una cadena para invocar el servicio.
    * Tipo primitivo de Java: el administrador puede especificar el tipo de asignación como `Literal` y proporcionar el valor. La carpeta inspeccionada invocará el servicio con el valor especificado.
 
@@ -397,7 +397,7 @@ Estos son algunos consejos y trucos al configurar el punto final de la carpeta i
 
    * Solución 1
 
-      1. Especifique un patrón para Excluir patrón de archivo, como temp&ast;.ps.
+      1. Especifique un patrón para Excluir patrón de archivo, como temp&amp;ast;.ps.
       1. Copie los archivos que comienzan por temp (por ejemplo, temp1.ps) en la carpeta vigilada.
       1. Una vez que el archivo se haya copiado completamente en la carpeta inspeccionada, cambie el nombre del archivo para que se corresponda con el patrón especificado para Patrón de archivo de inclusión. A continuación, la carpeta inspeccionada mueve el archivo completado al escenario.
 
@@ -413,11 +413,11 @@ Estos son algunos consejos y trucos al configurar el punto final de la carpeta i
 
 Para todos los servicios, debe ajustar el tamaño del lote y el intervalo de repetición de la carpeta inspeccionada para que la velocidad a la que la carpeta inspeccionada recoge los nuevos archivos y carpetas para su procesamiento no supere la velocidad de los trabajos que puede procesar el servidor de AEM Forms. Los parámetros reales que se van a utilizar pueden variar según la cantidad de carpetas vigiladas configuradas, los servicios que utilicen carpetas vigiladas y la intensidad de los trabajos en el procesador.
 
-### Generar recomendaciones de servicio del PDF {#generate-pdf-service-recommendations}
+### Generar recomendaciones de servicio de PDF {#generate-pdf-service-recommendations}
 
-* El servicio Generar PDF sólo puede convertir un archivo a la vez para estos tipos de archivos: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Project, AutoCAD, Adobe Photoshop®, Adobe FrameMaker® y PageMaker de Adobe ®. Son trabajos de larga duración; por lo tanto, asegúrese de mantener el tamaño del lote en un valor bajo. Aumente también el intervalo de repetición si hay más nodos en el clúster.
-* Para los tipos de archivo de PostScript (PS), PostScript encapsulado (EPS) e imagen, el servicio Generate PDF puede procesar varios archivos en paralelo. Debe ajustar cuidadosamente el tamaño del grupo de inicio de sesión (que gobierna el número de conversiones que se realizarán en paralelo) según la capacidad del servidor y el número de nodos del clúster. A continuación, aumente el tamaño del lote a un número igual al tamaño del grupo de frijoles de sesión para los tipos de archivo que está intentando convertir. La frecuencia de sondeo debe estar dictada por el número de nodos del clúster; sin embargo, como el servicio Generar PDF procesa este tipo de trabajos bastante rápido, puede configurar el intervalo de repetición en un valor bajo como 5 o 10.
-* Aunque el servicio Generate PDF sólo puede convertir un archivo de OpenOffice a la vez, la conversión es bastante rápida. La lógica anterior para PS, EPS y las conversiones de imagen también se aplica a las conversiones de OpenOffice.
+* El servicio Generate PDF sólo puede convertir un archivo a la vez para estos tipos de archivos: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Project, AutoCAD, Adobe Photoshop®, Adobe FrameMaker® y Adobe PageMaker®. Son trabajos de larga duración; por lo tanto, asegúrese de mantener el tamaño del lote en un valor bajo. Aumente también el intervalo de repetición si hay más nodos en el clúster.
+* Para los tipos de archivo de PostScript (PS), PostScript encapsulado (EPS) e imagen, el servicio Generate PDF puede procesar varios archivos en paralelo. Debe ajustar cuidadosamente el tamaño del grupo de inicio de sesión (que gobierna el número de conversiones que se realizarán en paralelo) según la capacidad del servidor y el número de nodos del clúster. A continuación, aumente el tamaño del lote a un número igual al tamaño del grupo de frijoles de sesión para los tipos de archivo que está intentando convertir. La frecuencia de sondeo debe estar dictada por el número de nodos del clúster; sin embargo, como el servicio Generate PDF procesa este tipo de trabajos con bastante rapidez, puede configurar el intervalo de repetición en un valor bajo como 5 o 10.
+* Aunque el servicio Generate PDF puede convertir solo un archivo de OpenOffice a la vez, la conversión es bastante rápida. La lógica anterior para PS, EPS y las conversiones de imagen también se aplica a las conversiones de OpenOffice.
 * Para habilitar la distribución de carga uniforme en el clúster, mantenga el tamaño del lote bajo y aumente el intervalo de repetición.
 
 ### recomendaciones del servicio de formularios con códigos de barras {#barcoded-forms-service-recommendations}

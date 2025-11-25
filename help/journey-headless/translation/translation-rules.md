@@ -4,11 +4,11 @@ description: Aprenda a definir reglas de traducción para identificar el conteni
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 81%
 
 Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
 En el documento anterior del recorrido de traducción sin encabezado de AEM, [Configuración de la integración de traducción](configure-connector.md), ha aprendido a instalar y configurar la integración de traducción y ahora, deberá hacer lo siguiente:
 
@@ -78,7 +78,6 @@ En la IU **Configuración de traducción**, hay un número de opciones disponibl
    1. Haga clic en **Agregar**.
    1. Repita estos pasos para todos los campos que debe traducir.
    1. Haga clic en **Guardar**.
-
       ![Añadir propiedades](assets/add-property.png)
 
 Ya ha configurado las reglas de traducción.
@@ -96,10 +95,10 @@ Ahora que ha completado esta parte del recorrido de traducción sin encabezado, 
 * Comprender lo que hacen las reglas de traducción.
 * Poder definir sus propias reglas de traducción.
 
-AEM Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de la revisando el documento [Traducir contenido](translate-content.md), donde aprenderá cómo funcionan juntos la integración y las reglas para traducir contenido sin encabezado.
+Aproveche este conocimiento y continúe con su recorrido de traducción sin encabezado de AEM revisando el documento [Traducir contenido](translate-content.md), donde aprenderá cómo funcionan juntos la integración y las reglas para traducir contenido sin encabezado.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Traducir contenido](translate-content.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Traducción de contenido](translate-content.md), a continuación se presentan algunos recursos adicionales y opcionales que profundizan en algunos conceptos mencionados en este documento, pero que no son necesarios para continuar con el recorrido de traducción sin encabezado.
 
 * [Identificación del contenido para traducir](/help/sites-administering/tc-rules.md): aprenda cómo las reglas de traducción identifican el contenido que necesita traducirse.

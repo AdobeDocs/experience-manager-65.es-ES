@@ -9,9 +9,9 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3808'
+source-wordcount: '3805'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Los extremos de correo electrónico permiten a los usuarios invocar un servicio 
 
 Para un extremo de correo electrónico, los usuarios autorizados pueden invocar un proceso enviando archivos por correo electrónico a la cuenta correspondiente. Los resultados se devuelven al usuario que realiza el envío (de forma predeterminada) o al usuario definido en la configuración del extremo.
 
-Antes de configurar un extremo de correo electrónico, cree una cuenta de correo electrónico POP3 o IMAP para que la utilice el extremo. Configure una cuenta independiente para cada tipo de conversión. Por ejemplo, se puede configurar una cuenta para que genere documentos de PDF estándar a partir de archivos adjuntos entrantes y otra cuenta para que genere documentos de PDF seguros.
+Antes de configurar un extremo de correo electrónico, cree una cuenta de correo electrónico POP3 o IMAP para que la utilice el extremo. Configure una cuenta independiente para cada tipo de conversión. Por ejemplo, se puede configurar una cuenta para generar documentos de PDF estándar a partir de archivos adjuntos entrantes y otra cuenta para generar documentos de PDF seguros.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Antes de configurar un extremo de correo electrónico, cree una cuenta de correo
 
 Todos los extremos de correo electrónico se configuran con un nombre de usuario y una contraseña autorizados para la bandeja de entrada de correo electrónico, que son necesarios al invocar el servicio. La cuenta de correo electrónico está protegida por el sistema de servidor de correo en el que está configurada.
 
-Si los usuarios envían documentos con caracteres del idioma de Europa occidental en los nombres de ruta de archivo y de conversión, deben utilizar una aplicación de correo electrónico que admita los tipos de codificación requeridos (Latin1 [ISO-8859-1], Europa occidental [Windows] o UTF-8). AEM Para obtener más información, consulte el documento *Instalación e implementación de formularios de la aplicación* para su servidor de aplicaciones.
+Si los usuarios envían documentos con caracteres del idioma de Europa occidental en los nombres de ruta de archivo y de conversión, deben utilizar una aplicación de correo electrónico que admita los tipos de codificación requeridos (Latin1 [ISO-8859-1], Europa occidental [Windows] o UTF-8). Para obtener más información, consulte el documento *Instalación e implementación de formularios AEM Forms* para su servidor de aplicaciones.
 
 Antes de configurar un extremo de correo electrónico, configure el servicio de correo electrónico. (Consulte [Configurar las opciones predeterminadas de extremo de correo electrónico](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Los parámetros de configuración del servicio de correo electrónico tienen dos propósitos:
 
@@ -49,7 +49,7 @@ Puede configurar POP3, IMAP o SMTP para utilizar Secure Sockets Layer (SSL) en u
 1. Exporte un certificado de cliente desde el servidor de correo electrónico.
 1. Utilice el programa keytool para importar el archivo de certificado del cliente al almacén de certificados de la máquina virtual Java (JVM) del servidor de aplicaciones. El procedimiento para este paso dependerá de las rutas de instalación de JVM y cliente.
 
-   Por ejemplo, si está utilizando una instalación predeterminada de Oracle de WebLogic Server con JDK 1.5.0 en Microsoft Windows Server® 2003, escriba el siguiente texto en un símbolo del sistema:
+   Por ejemplo, si está utilizando una instalación predeterminada de Oracle WebLogic Server con JDK 1.5.0 en Microsoft Windows Server® 2003, escriba el siguiente texto en el símbolo del sistema:
 
    `keytool -import -file client_certificate -alias myalias -keystore BEA_HOME\jdk150_04\jre\security\cacerts`
 
@@ -89,11 +89,11 @@ Para que el flujo de trabajo de formularios reciba y administre mensajes de corr
 
 **Patrón de dominio:** Patrón de nombre de dominio que se usa para filtrar correos electrónicos entrantes. Por ejemplo, si se utiliza adobe.com, solo se procesará el correo electrónico de adobe.com; se omitirá el correo electrónico de otros dominios.
 
-**Patrón de archivo:** Patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones específicas (&ast;.dat, &ast;.xml), nombres específicos (data) y expresiones compuestas en el nombre y la extensión (.[dD][aA]&#39;port&#39;). El valor predeterminado es &ast;.&ast;.
+**Patrón de archivo:** Patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones específicas (&amp;ast;.dat, &amp;ast;.xml), nombres específicos (data) y expresiones compuestas en el nombre y la extensión (.``[dD][aA]``&#39;puerto&#39;). El valor predeterminado es &amp;ast;.&amp;ast;.
 
-**Destinatarios de trabajo exitosos:** Una o más direcciones de correo electrónico que se usan para enviar correos electrónicos para indicar trabajos exitosos. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente del trabajo inicial. Se admiten hasta 100 destinatarios. Para desactivar esta configuración, deje este campo en blanco.
+**Destinatarios de trabajo correctos:** Una o más direcciones de correo electrónico que se utilizan para enviar correos electrónicos para indicar trabajos correctos. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente del trabajo inicial. Se admiten hasta 100 destinatarios. Para desactivar esta configuración, deje este campo en blanco.
 
-**Destinatarios del trabajo con errores:** Una o más direcciones de correo electrónico que se utilizan para enviar correos electrónicos para indicar trabajos con errores. De forma predeterminada, siempre se envía un mensaje de trabajo con errores al remitente que envió el trabajo inicial. Se admiten hasta 100 destinatarios. Para desactivar esta configuración, deje este campo en blanco.
+**Destinatarios del trabajo con errores:** Una o más direcciones de correo electrónico que se usan para enviar correos electrónicos para indicar trabajos con errores. De forma predeterminada, siempre se envía un mensaje de trabajo con errores al remitente que envió el trabajo inicial. Se admiten hasta 100 destinatarios. Para desactivar esta configuración, deje este campo en blanco.
 
 **Host de bandeja de entrada:** Nombre de host de bandeja de entrada o Dirección IP para que el proveedor de correo electrónico analice.
 
@@ -147,7 +147,7 @@ Para que el flujo de trabajo de formularios reciba y administre mensajes de corr
 
 Utilice la siguiente configuración para configurar un extremo de correo electrónico.
 
-**Nombre:** Una configuración obligatoria que identifica el extremo. No incluya un carácter &lt; porque trunca el nombre mostrado en Workspace. Si introduce una dirección URL como nombre del extremo, asegúrese de que se ajuste a las reglas de sintaxis especificadas en RFC1738.
+**Nombre:** Una configuración obligatoria que identifica el extremo. No incluya un carácter &lt; porque trunca el nombre mostrado en Workspace. Si va a introducir una dirección URL como nombre del extremo, asegúrese de que se ajusta a las reglas de sintaxis especificadas en RFC1738.
 
 **Descripción:** Una descripción del extremo. No incluya un carácter &lt; porque trunca la descripción mostrada en Workspace.
 
@@ -167,13 +167,13 @@ Utilice la siguiente configuración para configurar un extremo de correo electr�
 
 **Patrón de dominio:** Especifica los patrones de dominio del correo electrónico entrante que acepta el proveedor. Por ejemplo, si se utiliza adobe.com, solo se procesa el correo electrónico de adobe.com; se ignora el correo electrónico de otros dominios.
 
-**Patrón de archivo:** Especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones específicas (&ast;.dat, &ast;.xml), nombres específicos (data) o expresiones compuestas en el nombre y la extensión (&ast;).[dD][aA]&#39;port&#39;).
+**Patrón de archivo:** Especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos que tienen extensiones específicas (&amp;ast;.dat, &amp;ast;.xml), nombres específicos (data) o expresiones compuestas en el nombre y la extensión (&amp;ast;).`[dD][aA]`&#39;puerto&#39;).
 
 **Destinatarios de trabajo correctos:** Dirección de correo electrónico a la que se envían mensajes para indicar trabajos correctos. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe sender, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, separados por comas (,).
 
 Para desactivar esta configuración, deje el campo en blanco. En algunos casos, desea almacenar en déclencheur un proceso y no desea recibir una notificación del resultado por correo electrónico.
 
-**Destinatarios del trabajo con errores:** Dirección de correo electrónico a la que se envían mensajes para indicar trabajos con errores. De forma predeterminada, siempre se envía un mensaje de trabajo con errores al remitente. Si escribe sender, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, separados por comas (,).
+**Destinatarios del trabajo con errores:** Dirección de correo electrónico a la que se envían mensajes para indicar los trabajos con errores. De forma predeterminada, siempre se envía un mensaje de trabajo con errores al remitente. Si escribe sender, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, separados por comas (,).
 
 Para desactivar esta configuración, deje el campo en blanco. En algunos casos, desea almacenar en déclencheur un proceso y no desea recibir una notificación del resultado por correo electrónico.
 
@@ -199,7 +199,7 @@ Para desactivar esta configuración, deje el campo en blanco. En algunos casos, 
 
 **Contraseña SMTP:** Contraseña de la cuenta SMTP. Algunos servidores de correo no requieren una contraseña SMTP.
 
-**Enviar desde:** La dirección de correo electrónico (por ejemplo, user@company.com) utilizada para enviar notificaciones por correo electrónico de resultados y errores. Si no especifica un valor Enviar desde, el servidor de correo electrónico intenta determinar la dirección de correo electrónico combinando el valor especificado en la configuración Usuario de SMTP con un dominio predeterminado configurado en el servidor de correo electrónico. Si el servidor de correo electrónico no tiene un dominio predeterminado y no especifica ningún valor para Enviar desde, pueden producirse errores. Para asegurarse de que los mensajes de correo electrónico tengan la dirección remitente correcta, especifique un valor para la configuración Enviar desde.
+**Enviar desde:** La dirección de correo electrónico (por ejemplo, `user@company.com`) utilizada para enviar notificaciones por correo electrónico de resultados y errores. Si no especifica un valor Enviar desde, el servidor de correo electrónico intenta determinar la dirección de correo electrónico combinando el valor especificado en la configuración Usuario de SMTP con un dominio predeterminado configurado en el servidor de correo electrónico. Si el servidor de correo electrónico no tiene un dominio predeterminado y no especifica ningún valor para Enviar desde, pueden producirse errores. Para asegurarse de que los mensajes de correo electrónico tengan la dirección remitente correcta, especifique un valor para la configuración Enviar desde.
 
 **SSL SMTP habilitado:** Seleccione esta configuración para forzar al proveedor de correo electrónico a usar SSL para analizar la bandeja de entrada. Asegúrese de que el servidor de correo admita SSL.
 
@@ -207,7 +207,7 @@ Para desactivar esta configuración, deje el campo en blanco. En algunos casos, 
 
 **asincrónico:** Cuando se establece en sincrónico, se procesan todos los documentos de entrada y se devuelve una única respuesta. Cuando se establece en asíncrono, se envía una respuesta por cada documento procesado.
 
-Por ejemplo, se crea un extremo de correo electrónico para un servicio que toma un único documento de Word y devuelve ese documento como un archivo de PDF. Se puede enviar un correo electrónico a la bandeja de entrada del extremo que contiene varios (3) documentos de Word. Cuando se procesan los tres documentos, si el punto de conexión está configurado como sincrónico, se envía un único correo electrónico de respuesta con los tres documentos adjuntos. Si el extremo es asincrónico, se envía un mensaje de correo electrónico de respuesta después de que cada documento de Word se convierta en PDF. El resultado son tres correos electrónicos, cada uno con un archivo adjunto de PDF único.
+Por ejemplo, se crea un extremo de correo electrónico para un servicio que toma un único documento de Word y devuelve ese documento como un archivo de PDF. Se puede enviar un correo electrónico a la bandeja de entrada del extremo que contiene varios (3) documentos de Word. Cuando se procesan los tres documentos, si el punto de conexión está configurado como sincrónico, se envía un único correo electrónico de respuesta con los tres documentos adjuntos. Si el extremo es asincrónico, se envía un mensaje de correo electrónico de respuesta después de convertir cada documento de Word en PDF. El resultado son tres correos electrónicos, cada uno con un solo archivo adjunto de PDF.
 
 El valor predeterminado es asíncrono.
 
@@ -235,7 +235,7 @@ El valor predeterminado es asíncrono.
 
 **Literal:** El correo electrónico utiliza el valor introducido en el campo tal como se muestra.
 
-**Variable:** Puede asignar una cadena a partir del asunto, cuerpo, encabezado o dirección de correo electrónico del remitente. Para ello, utilice una de las siguientes palabras clave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Por ejemplo, si utiliza %SUBJECT%, el contenido del asunto del correo electrónico se utiliza como parámetro de entrada. Para recoger archivos adjuntos, introduzca un patrón de archivo que el extremo de correo electrónico pueda utilizar para seleccionar los documentos adjuntos. Por ejemplo, al escribir &ast;.pdf se selecciona cualquier documento adjunto que tenga la extensión de nombre de archivo .pdf. Al introducir &ast; se selecciona cualquier documento adjunto. Al introducir example.pdf, se selecciona cualquier documento adjunto denominado example.pdf.
+**Variable:** Puede asignar una cadena a partir del asunto, cuerpo, encabezado o dirección de correo electrónico del remitente. Para ello, utilice una de las siguientes palabras clave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Por ejemplo, si utiliza %SUBJECT%, el contenido del asunto del correo electrónico se utiliza como parámetro de entrada. Para recoger archivos adjuntos, introduzca un patrón de archivo que el extremo de correo electrónico pueda utilizar para seleccionar los documentos adjuntos. Por ejemplo, al escribir &amp;ast;.pdf se selecciona cualquier documento adjunto que tenga la extensión de nombre de archivo .pdf. Al introducir &amp;ast; se selecciona cualquier documento adjunto. Al introducir example.pdf, se selecciona cualquier documento adjunto denominado example.pdf.
 
 **Asignaciones de parámetros de salida:** Se usó para configurar la salida del servicio y la operación. Los siguientes caracteres de los valores de asignación de parámetros de salida se expanden en el nombre del archivo adjunto:
 
@@ -245,7 +245,7 @@ El valor predeterminado es asíncrono.
 
 Cualquier aparición de la barra invertida (\) se reemplaza por %%.
 
-***nota &#x200B;**: si el mensaje de solicitud de servicio incluye varios archivos adjuntos, no puede usar los parámetros %F y %E para la propiedad Asignaciones de parámetros de salida del extremo. Si la respuesta de los servicios devuelve varios archivos adjuntos, no se puede especificar el mismo nombre de archivo para más de un archivo adjunto. Si no sigue estas recomendaciones, el servicio invocado creará los nombres de los archivos devueltos y los nombres no serán predecibles.*
+***nota **: si el mensaje de solicitud de servicio incluye varios archivos adjuntos, no puede usar los parámetros %F y %E para la propiedad Asignaciones de parámetros de salida del extremo. Si la respuesta de los servicios devuelve varios archivos adjuntos, no se puede especificar el mismo nombre de archivo para más de un archivo adjunto. Si no sigue estas recomendaciones, el servicio invocado creará los nombres de los archivos devueltos y los nombres no serán predecibles.*
 
 Los valores disponibles son los siguientes:
 

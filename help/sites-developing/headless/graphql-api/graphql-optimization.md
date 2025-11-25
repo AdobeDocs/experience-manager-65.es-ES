@@ -4,11 +4,11 @@ description: Aprenda a optimizar las consultas de GraphQL al filtrar, paginar y 
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1949'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
@@ -22,7 +22,7 @@ Estas directrices se proporcionan para ayudar a evitar problemas de rendimiento 
 
 ## GraphQL Checklist {#graphql-checklist}
 
-La siguiente lista de comprobación tiene como objetivo ayudarle a optimizar la configuración y el uso de GraphQL en Adobe Experience Manager AEM () as a Cloud Service.
+La siguiente lista de comprobación tiene como objetivo ayudarle a optimizar la configuración y el uso de GraphQL en Adobe Experience Manager (AEM) as a Cloud Service.
 
 ### Primeros principios {#first-principles}
 
@@ -62,11 +62,11 @@ Consulte:
 
 También se pueden utilizar varios métodos de almacenamiento en caché para la optimización.
 
-#### AEM Habilitar almacenamiento en caché de Dispatcher {#enable-aem-dispatcher-caching}
+#### Habilitar el almacenamiento en caché de AEM Dispatcher {#enable-aem-dispatcher-caching}
 
 **Recomendación**
 
-AEM [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es la caché de primer nivel dentro del servicio de la, antes de la caché de la red de distribución de contenido (CDN).
+[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es la caché de primer nivel dentro del servicio AEM, antes de la caché de CDN.
 
 **Referencia adicional**
 
@@ -84,7 +84,7 @@ Las consultas GraphQL y sus respuestas JSON se pueden almacenar en caché si se 
 
 Consulte:
 
-* AEM [Usando CDN en el](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn)
+* [Usando CDN en AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn)
 
 #### Establecer encabezados de control de caché HTTP {#set-http-cache-control-headers}
 
@@ -149,7 +149,7 @@ AEM proporciona dos métodos para optimizar las consultas de GraphQL:
 
 Cada método tiene sus propios casos de uso y limitaciones. Esta sección proporciona información sobre el filtrado y la paginación híbridos, junto con algunas de las [prácticas recomendadas](#best-practices) para su uso en la optimización de consultas de GraphQL.
 
-#### AEM Usar filtrado híbrido de GraphQL {#use-aem-graphql-hybrid-filtering}
+#### Usar el filtrado híbrido de AEM GraphQL {#use-aem-graphql-hybrid-filtering}
 
 **Recomendación**
 
@@ -165,7 +165,7 @@ Esta técnica mantiene la flexibilidad que proporcionan los filtros de GraphQL, 
 
 >[!NOTE]
 >
->AEM El filtrado híbrido requiere la actualización de fragmentos de contenido existentes
+>El filtrado híbrido de AEM requiere actualizar fragmentos de contenido existentes
 
 **Referencia adicional**
 
@@ -180,7 +180,7 @@ Consulte:
 
 El tiempo de respuesta de las consultas complejas, con grandes conjuntos de resultados, se puede mejorar segmentando las respuestas en fragmentos mediante paginación, un estándar de GraphQL.
 
-GraphQL AEM en la admite dos tipos de paginación:
+GraphQL en AEM admite dos tipos de paginación:
 
 * [paginación basada en límite/desplazamiento](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Se usa para consultas de lista; terminan con `List`; por ejemplo, `articleList`.
@@ -234,7 +234,7 @@ Actualmente, el filtrado en el nivel JCR solo funciona para fragmentos de nivel 
 
 Si un filtro se dirige a los campos de un fragmento anidado, AEM tiene que volver a cargar (en memoria) todos los fragmentos que comparten el modelo subyacente.
 
-Puede seguir optimizando estas consultas de GraphQL combinando expresiones de filtro en campos de fragmentos de nivel superior y aquellos en campos de fragmentos anidados con la variable [AND operator](#logical-operations-in-filter-expressions).
+Puede seguir optimizando estas consultas de GraphQL combinando expresiones de filtro en campos de fragmentos de nivel superior y aquellos en campos de fragmentos anidados con el operador [AND](#logical-operations-in-filter-expressions).
 
 ### Uso de la estructura de contenido {#use-content-structure}
 
@@ -327,16 +327,16 @@ El anidamiento profundo también puede tener efectos adversos en la gobernanza d
 
 ### No generar todos los formatos (elementos de texto multilínea) {#do-not-output-all-formats}
 
-AEM GraphQL puede devolver texto creado en el tipo de datos **[Texto de varias líneas](/help/assets/content-fragments/content-fragments-models.md#data-types)** en varios formatos: Texto enriquecido, Texto simple y Markdown.
+AEM GraphQL puede devolver texto creado en el tipo de datos **[Texto multilínea](/help/assets/content-fragments/content-fragments-models.md#data-types)** en varios formatos: Texto enriquecido, Texto simple y Markdown.
 
 La salida de los tres formatos aumenta el tamaño de la salida de texto en JSON en un factor de tres. Esto, combinado con conjuntos de resultados generalmente grandes de consultas muy amplias, puede producir respuestas JSON muy grandes que, por lo tanto, tardan mucho tiempo en calcularse. Es mejor limitar la salida solo a los formatos de texto necesarios para procesar el contenido.
 
 ### Modificación de fragmentos de contenido {#modifying-content-fragments}
 
-AEM Modifique únicamente los fragmentos de contenido y sus recursos mediante la interfaz de usuario o las API de. No realice modificaciones directamente en JCR.
+Modifique únicamente los fragmentos de contenido y sus recursos mediante la IU o las API de AEM. No realice modificaciones directamente en JCR.
 
 ### Prueba de consultas {#test-your-queries}
 
-Procesar consultas de GraphQL GET es similar a procesar consultas de búsqueda, y es significativamente más complejo que las solicitudes de API simples de todo el contenido.
+Procesar consultas de GraphQL es similar a procesar consultas de búsqueda, y es significativamente más complejo que las solicitudes simples de API de todo el contenido de GET.
 
 Planificar, probar y optimizar cuidadosamente las consultas en un entorno controlado que no sea de producción es clave para el éxito posterior cuando se utiliza en producción.

@@ -4,11 +4,11 @@ description: Obtenga información acerca de los tipos de metadatos y cómo admin
 contentOwner: AG
 mini-toc-levels: 1
 feature: Tagging, Metadata
-role: Architect, Leader
+role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 10%
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 <!-- Scope of metadata articles:
@@ -36,9 +36,9 @@ Los metadatos son información adicional sobre el recurso en el que se puede bus
 
 Se pueden utilizar los siguientes métodos para agregar metadatos a recursos digitales:
 
-* Para empezar, las aplicaciones nativas que crean recursos le agregan algunos metadatos. Por ejemplo, [Acrobat agrega algunos metadatos](https://helpx.adobe.com/es/acrobat/using/pdf-properties-metadata.html) a los archivos del PDF o una cámara agrega algunos metadatos básicos a las fotografías. Al generar recursos, puede agregar los metadatos en las propias aplicaciones nativas. Por ejemplo, puede [agregar metadatos IPTC en Adobe Lightroom](https://helpx.adobe.com/es/lightroom-classic/help/metadata-basics-actions.html).
+* Para empezar, las aplicaciones nativas que crean recursos le agregan algunos metadatos. Por ejemplo, [Acrobat agrega algunos metadatos](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) a los archivos PDF o una cámara agrega algunos metadatos básicos a las fotografías. Al generar recursos, puede agregar los metadatos en las propias aplicaciones nativas. Por ejemplo, puede [agregar metadatos de IPTC en Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Antes de cargar un recurso en [!DNL Experience Manager], puede editar y modificar los metadatos mediante la aplicación nativa utilizada para crear un recurso o mediante otra aplicación de edición de metadatos. Al cargar un recurso en Experience Manager, se procesan los metadatos. Por ejemplo, vea cómo [trabajar con metadatos en [!DNL Adobe Bridge]](https://helpx.adobe.com/es/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) y ver el panel [etiquetas de [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) en [!DNL Adobe Exchange].
+* Antes de cargar un recurso en [!DNL Experience Manager], puede editar y modificar los metadatos mediante la aplicación nativa utilizada para crear un recurso o mediante otra aplicación de edición de metadatos. Al cargar un recurso en Experience Manager, se procesan los metadatos. Por ejemplo, vea cómo [trabajar con metadatos en [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) y ver el panel [etiquetas de [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) en [!DNL Adobe Exchange].
 
 * En [!DNL Experience Manager Assets], puede agregar o editar manualmente metadatos de recursos en la página [!UICONTROL Propiedades].
 
@@ -66,9 +66,9 @@ Para editar los metadatos de un recurso en la interfaz de usuario [!DNL Assets],
    >
    >Si un campo de texto está vacío, no hay ningún conjunto de metadatos existente. Puede introducir un valor en el campo y guardarlo para añadir esa propiedad de metadatos.
 
-XMP Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos de. El flujo de trabajo de reescritura de metadatos añade los metadatos al binario original. Los cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y las nuevas propiedades (incluidas las propiedades personalizadas como `cq:tags`) se agregan al esquema.
+Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos de XMP. El flujo de trabajo de reescritura de metadatos añade los metadatos al binario original. Los cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y las nuevas propiedades (incluidas las propiedades personalizadas como `cq:tags`) se agregan al esquema.
 
-XMP La reescritura de datos es compatible y está habilitada para las plataformas y los formatos de archivo descritos en [requisitos técnicos.](/help/sites-deploying/technical-requirements.md)
+La reescritura de XMP es compatible y está habilitada para las plataformas y los formatos de archivo descritos en [requisitos técnicos.](/help/sites-deploying/technical-requirements.md)
 
 ## Editar propiedades de metadatos de varios recursos {#editing-metadata-properties-of-multiple-assets}
 
@@ -101,7 +101,7 @@ Para personalizar la página de propiedades de metadatos, lo que incluye agregar
 
 [!DNL Assets] le permite importar metadatos de recursos de forma masiva mediante un archivo CSV. Puede realizar actualizaciones masivas de los recursos cargados recientemente o de los recursos existentes importando un archivo CSV. También puede introducir metadatos de recursos de forma masiva desde sistemas de terceros en formato CSV.
 
-La importación de metadatos es asíncrona y no impide el rendimiento del sistema. XMP La actualización simultánea de los metadatos de varios recursos puede consumir muchos recursos, debido a la actividad de escritura de reescritura de los recursos si se comprueba el indicador del flujo de trabajo. Planifique una importación de este tipo durante el uso del servidor lean para que el rendimiento de otros usuarios no se vea afectado.
+La importación de metadatos es asíncrona y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede consumir muchos recursos, debido a la actividad de reescritura de XMP si se comprueba el indicador del flujo de trabajo. Planifique una importación de este tipo durante el uso del servidor lean para que el rendimiento de otros usuarios no se vea afectado.
 
 >[!NOTE]
 >
@@ -116,8 +116,8 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
    |:---|:---|
    | [!UICONTROL Tamaño de lote] | Número de recursos de un lote cuyos metadatos se van a importar. El valor predeterminado es 50. El valor máximo es 100. |
    | [!UICONTROL Separador de campos] | El valor predeterminado es `,` (una coma). Puede especificar cualquier otro carácter. |
-   | [!UICONTROL Delimitador de varios valores] | Separador para valores de metadatos. El valor predeterminado es `|`. |
-   | [!UICONTROL Iniciar flujos de trabajo] | False de forma predeterminada. XMP Cuando se establece en `true` y la configuración predeterminada está en vigor para el flujo de trabajo [!UICONTROL DAM Metadata WriteBack] (que escribe metadatos en los datos binarios de la). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
+   | [!UICONTROL Delimitador de varios valores] | Separador para valores de metadatos. El valor predeterminado es `\|`. |
+   | [!UICONTROL Iniciar flujos de trabajo] | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada está activa para el flujo de trabajo [!UICONTROL DAM Metadata WriteBack] (que escribe metadatos en los datos binarios de XMP). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
    | [!UICONTROL Nombre de columna de ruta de recursos] | Define el nombre de columna del archivo CSV con recursos. |
 
 1. Haga clic en **[!UICONTROL Importar]** en la barra de herramientas. Una vez importados los metadatos, se mostrará una notificación en la bandeja de entrada [!UICONTROL Notificación].
@@ -241,7 +241,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 >
 >* [Conceptos y comprensión de metadatos](metadata-concepts.md).
 >* [Editar propiedades de metadatos de varias colecciones](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importación y exportación de metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=es)
+>* [Importación y exportación de metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

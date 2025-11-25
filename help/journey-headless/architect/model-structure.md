@@ -4,8 +4,8 @@ description: Obtenga información sobre los conceptos y la mecánica del conteni
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 92%
@@ -22,7 +22,7 @@ Este artículo se basa en estos modelos para que pueda comprender cómo crear su
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: obtener conceptos y mecanismos de modelado de contenido para su CMS sin encabezado utilizando los modelos de fragmentos de contenido.
 
 <!-- which persona does this? -->
@@ -82,7 +82,7 @@ Sus autores de contenido no verán los tipos de datos ni las propiedades reales 
 >
 >Consulte Recursos adicionales: Modelos de fragmento de contenido.
 
-## Administración de modelos de fragmento de contenido {#managing-content-fragment-models}
+## Administración de los modelos de fragmento de contenido {#managing-content-fragment-models}
 
 <!-- needs more details -->
 
@@ -121,7 +121,7 @@ Ahora que ha aprendido los conceptos básicos, el siguiente paso es comenzar a c
 
       * [Definición del modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [Activación o desactivación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Habilitación o deshabilitación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
       * [Permitir modelos de fragmento de contenido en la carpeta Recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 

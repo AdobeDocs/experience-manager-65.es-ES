@@ -9,9 +9,9 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 86%
 
 ---
@@ -34,7 +34,7 @@ Este artículo explica cómo generar un documento de registro para un Forms adap
 
 >[!NOTE]
 >
-> AEM La compatibilidad para personalizar los fragmentos de formulario adaptable y sus campos en el editor de formularios adaptables se introdujo con el paquete de servicio 19 (6.5.19.0) de Forms 6.5.
+> La compatibilidad para personalizar los fragmentos de formulario adaptable y sus campos en el editor de formularios adaptables se introdujo con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 
 >[!NOTE]
@@ -210,7 +210,7 @@ Las siguientes secciones describen cómo se muestran los elementos de formulario
 | Componente de formulario adaptable | Componente XFA correspondiente | Notas |
 |---|---|---|
 | Imagen | Imagen | Los componentes TextDraw e Image, estén enlazados o no, siempre aparecen en el documento de registro de un formulario adaptable basado en XSD, a menos que se excluyan en la configuración del documento de registro. |
-| Texto | Texto  |
+| Texto | Texto  |  |
 
 >[!NOTE]
 >
@@ -421,7 +421,6 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
 
 * **[!UICONTROL BÁSICO]**
    * **Plantilla:** Puede seleccionar la plantilla Predeterminada o Personalizada.
-
      ![texto alternativo](image.png)
    * **Color de énfasis:** Puede predefinir el color de plantilla del [!UICONTROL documento de registro].
    * **Familia de fuentes:** Seleccione el tipo de fuente para los textos de [!UICONTROL Documento de registro].
@@ -434,7 +433,6 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
       * Vertical
       * Horizontal
       * Igual que el formulario adaptable
-
      >[!NOTE]
      > La alineación vertical y horizontal solo es aplicable para     Botón de opción y casilla de verificación
 * **[!UICONTROL PROPIEDADES DE PÁGINA MAESTRA]** Haga clic para obtener más información sobre [propiedades de página maestra](#master-page-properties-master-page-properties)
@@ -501,7 +499,7 @@ Un archivo XCI ayuda a establecer varias propiedades de un documento. <!-- Forms
 | config/present/pdf/scriptModel | Controla si la información específica de XFA se incluye en el documento PDF de salida. |
 | config/present/common/data/adjustData | Controla si la aplicación XFA ajusta los datos después de la combinación. |
 | config/present/pdf/renderPolicy | Controla si la generación del contenido de la página se realiza en el servidor o se difiere al cliente. |
-| config/present/common/locale | Especifica la ubicación predeterminada utilizada en el documento de salida. |
+| config/present/common/locale | Especifica la configuración regional predeterminada utilizada en el documento de salida. |
 | config/present/destination | Cuando está contenido en un elemento presente, especifica el formato de salida. Cuando está contenido en un elemento openAction, especifica la acción que se debe realizar al abrir el documento en un cliente interactivo. |
 | config/present/output/type | Especifica el tipo de compresión que se aplicará a un archivo o el tipo de salida que se producirá. |
 | config/present/common/temp/uri | Especifica el URI del formulario. |

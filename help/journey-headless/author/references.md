@@ -4,8 +4,8 @@ description: Obtenga información sobre el uso de referencias en fragmentos de c
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 95%
@@ -24,7 +24,7 @@ Este artículo se basa en estos conceptos para que pueda comprender cómo utiliz
 
 ## Objetivo {#objective}
 
-* **Audiencia**: avanzadas
+* **Público**: avanzado
 * **Objetivo**: introducir el uso de referencias para la creación de CMS sin encabezado. Qué tipos de referencias están disponibles y cuáles son sus propósitos:
 
    * Referencias de contenidos

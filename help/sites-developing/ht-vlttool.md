@@ -1,6 +1,6 @@
 ---
 title: Cómo utilizar la herramienta VLT
-description: AEM La herramienta Jackrabbit FileVault (VLT) ha sido desarrollada por The Apache Foundation para asignar el contenido de una instancia de Jackrabbit/a su sistema de archivos
+description: La herramienta Jackrabbit FileVault (VLT) es desarrollada por The Apache Foundation que asigna el contenido de una instancia de Jackrabbit/AEM a su sistema de archivos
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
@@ -9,16 +9,16 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Cómo utilizar la herramienta VLT {#how-to-use-the-vlt-tool}
 
-AEM La herramienta Jackrabbit FileVault (VLT) es una herramienta desarrollada por [The Apache Foundation](https://www.apache.org/) que asigna el contenido de una instancia de Jackrabbit/a su sistema de archivos. La herramienta VLT tiene funciones similares a las del cliente del sistema de control de código fuente (como un cliente de Subversion (SVN)), proporcionando operaciones normales de check-in, check-out y administración, y opciones de configuración para una representación flexible del contenido del proyecto.
+La herramienta Jackrabbit FileVault (VLT) es una herramienta desarrollada por [The Apache Foundation](https://www.apache.org/) que asigna el contenido de una instancia de Jackrabbit/AEM a su sistema de archivos. La herramienta VLT tiene funciones similares a las del cliente del sistema de control de código fuente (como un cliente de Subversion (SVN)), proporcionando operaciones normales de check-in, check-out y administración, y opciones de configuración para una representación flexible del contenido del proyecto.
 
 La herramienta VLT se ejecuta desde la línea de comandos. Este documento describe cómo usar la herramienta, incluyendo cómo empezar y obtener ayuda, y una lista de todos los [comandos](#vlt-commands) y las [opciones](#vlt-global-options) disponibles.
 
@@ -31,8 +31,8 @@ Consulte la [Información general de Filevault](https://jackrabbit.apache.org/fi
 Para empezar a utilizar VLT, debe hacer lo siguiente:
 
 1. Instale VLT, actualice las variables de entorno y actualice los archivos de subversión globales ignorados.
-1. AEM Configure el repositorio de la (si aún no lo ha hecho).
-1. AEM Compruebe el repositorio de la.
+1. Configure el repositorio de AEM (si aún no lo ha hecho).
+1. Consulte el repositorio de AEM.
 1. Sincronice con el repositorio.
 1. Compruebe si la sincronización ha funcionado.
 
@@ -443,7 +443,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf para los vínculos de revisión (nombre, id), por ejemplo, `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf para los vínculos de revisión (nombre, id), por ejemplo, `[CQ520_HF_%s\|%s]` |
 | `-v (--verbose)` | resultado detallado |
 | `-q (--quiet)` | imprime lo menos posible |
 | `<localPaths> [<localPaths> ...]` | ruta local |
@@ -857,7 +857,7 @@ Una vez que el servicio se está ejecutando, se puede configurar con los siguien
 >
 >El servicio se puede configurar con la consola web o con un nodo `sling:OsgiConfig` (con el nombre `com.day.jcr.sync.impl.VaultSyncServiceImpl`) en el repositorio.
 >
->AEM Al trabajar con los servicios, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener información detallada.
+>Al trabajar con AEM, existen varios métodos para administrar los ajustes de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener información detallada.
 
 #### Sincronizar configuración de carpeta {#sync-folder-configuration}
 

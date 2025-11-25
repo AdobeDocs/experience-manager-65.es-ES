@@ -4,11 +4,11 @@ description: Obtenga información sobre cómo actualizar los fragmentos de conte
 exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 37%
+source-wordcount: '250'
+ht-degree: 38%
 
 ---
 
@@ -22,7 +22,7 @@ Para optimizar el rendimiento de los filtros de GraphQL, ejecute un procedimient
 
 ## Requisitos previos {#prerequisites}
 
-AEM Asegúrese de que tiene un mínimo de 6.5.17.0 de la versión de.
+Asegúrese de que cuenta con un mínimo de 6.5.17.0 versiones de AEM.
 
 ## Actualización de los fragmentos de contenido {#updating-content-fragments}
 
@@ -34,8 +34,8 @@ Para ejecutar el procedimiento, siga estos pasos:
 
 1. En el cuadro de diálogo, establezca estos dos parámetros de la siguiente manera:
 
-   * **ContentFragmentMigration:Enabled** : `1`
-   * **ContentFragmentMigration:Enforce** : `1`
+   * **ContentFragmentMigration:Enabled**: `1`
+   * **ContentFragmentMigration:Enforce**: `1`
 
 1. **Guardar** las especificaciones: se inicia el procedimiento de actualización.
 
@@ -45,8 +45,8 @@ Para ejecutar el procedimiento, siga estos pasos:
 
    En el cuadro de diálogo de la **Configuración del trabajo de migración de fragmentos de contenido** establezca estos dos parámetros de la siguiente manera:
 
-   * **ContentFragmentMigration:Enabled** : `0`
-   * **ContentFragmentMigration:Enforce** : `0`
+   * **ContentFragmentMigration:Enabled**: `0`
+   * **ContentFragmentMigration:Enforce**: `0`
 
 ## Limitaciones {#limitations}
 

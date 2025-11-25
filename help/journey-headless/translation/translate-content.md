@@ -4,8 +4,8 @@ description: Utilice el conector de traducción y las reglas para traducir el co
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 71%
@@ -16,9 +16,9 @@ ht-degree: 71%
 
 Utilice la integración de traducción y las reglas para traducir el contenido sin encabezado.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
-AEM En el documento anterior del recorrido AEM de traducción sin encabezado de la, [Configuración de reglas de traducción](translation-rules.md), ha aprendido a utilizar las reglas de traducción de la traducción de la aplicación para identificar el contenido de la traducción. Ahora debería hacer lo siguiente:
+En el documento anterior del recorrido de traducción sin encabezado de AEM, [Configuración de reglas de traducción](translation-rules.md), ha aprendido a utilizar las reglas de traducción de AEM para identificar el contenido de traducción. Ahora debería ser capaz de:
 
 * Comprender lo que hacen las reglas de traducción.
 * Poder definir sus propias reglas de traducción.
@@ -128,7 +128,7 @@ El uso de un proyecto de traducción depende de cómo se creó: automáticamente
 
 ### Uso de un proyecto de traducción creado automáticamente {#using-automatic-project}
 
-AEM Al crear automáticamente el proyecto de traducción, el contenido sin encabezado se evalúa en la ruta seleccionada en función de las reglas de traducción que haya definido anteriormente. Basándose en esa evaluación, extrae el contenido que requiere traducción en un nuevo proyecto de traducción.
+Al crear automáticamente el proyecto de traducción, AEM evalúa el contenido sin encabezado en la ruta seleccionada en función de las reglas de traducción definidas anteriormente. Basándose en esa evaluación, extrae el contenido que requiere traducción en un nuevo proyecto de traducción.
 
 Para ver los detalles del contenido sin encabezado incluidos en este proyecto, haga lo siguiente:
 
@@ -202,7 +202,7 @@ Las traducciones automáticas se devuelven automáticamente con un estado de **A
 
 ## Revisión del contenido traducido {#reviewing}
 
-AEM [Como se ha visto anteriormente,](#using-translation-project) el contenido traducido por el equipo vuelve a aparecer en el estado de **Aprobado**, ya que se supone que debido a que se está utilizando la traducción automática, no se requiere ninguna intervención humana. Sin embargo, todavía es posible revisar el contenido traducido.
+[Como se ha visto anteriormente,](#using-translation-project) el contenido traducido por el equipo regresa a AEM con el estado **Aprobado**, ya que se supone que como se está utilizando la traducción automática, no se requiere ninguna intervención humana. Sin embargo, todavía es posible revisar el contenido traducido.
 
 Simplemente, vaya al trabajo de traducción completado y seleccione un elemento de línea tocando o haciendo clic en la casilla de verificación. El icono **Revelar en Fragmento de contenido** se muestra en la barra de herramientas.
 

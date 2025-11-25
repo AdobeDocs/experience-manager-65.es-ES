@@ -2,14 +2,14 @@
 title: Configurar restricciones de carga de recursos
 description: Restringir el tipo de recursos (archivos) que los usuarios pueden cargar
 contentOwner: AG
-role: Developer, Admin, Architect
+role: Developer, Admin
 feature: Asset Management,Upload
 exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 18%
+ht-degree: 6%
 
 ---
 

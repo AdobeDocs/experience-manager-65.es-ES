@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: ab25ac9701bd138ceb11bb9b11539e950dde02d9
-workflow-type: ht
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '7562'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -580,11 +580,11 @@ ht-degree: 100%
       + Actualizar AEM Forms en JEE {#aem-forms-jee-upgrade}
          + [Preparar para actualizar AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_es)
          + [Lista de comprobación y planificación de la actualización de Adobe Experience Manager Forms en JEE](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_es)
-      + [Actualizar a formularios AEM 6.5 en JEE](/help/forms/using/upgrade-forms-jee.md)
-      + [Actualizar a Adobe Experience Manager Forms en JEE para JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_es)
-      + [Actualizar a AEM Forms en JEE para JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_es)
-      + [Actualizar a Adobe Experience Manager Forms en JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_es)
-      + [Actualizar a Adobe Experience Manager Forms en JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_es)
+         + [Actualizar a formularios AEM 6.5 en JEE](/help/forms/using/upgrade-forms-jee.md)
+         + [Actualizar a Adobe Experience Manager Forms en JEE para JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_es)
+         + [Actualizar a AEM Forms en JEE para JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_es)
+         + [Actualizar a Adobe Experience Manager Forms en JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_es)
+         + [Actualizar a Adobe Experience Manager Forms en JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_es)
    + Administrar AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms en grupos y privilegios de OSGi](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Crear carpetas nuevas para aplicar categorías a los formularios](/help/forms/using/creating-new-folders-categorize-forms.md)
@@ -876,9 +876,9 @@ ht-degree: 100%
       + [Proteger un documento en nombre de otro usuario](/help/forms/using/protect-document-on-behalf-of-another-user.md)
    + Forms Designer {#use-forms-designer}
       + [Ayuda de Forms Designer](/help/forms/using/forms-designer-help.md)
-      + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)
-      + [Tutoriales de inicio rápido de Designer ](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
-      + [Muestras de Designer ](https://www.adobe.com/go/learn_aemforms_designer_samples_65_es)
+      + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
+      + [Tutoriales de inicio rápido de Designer ](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+      + [Muestras de Designer ](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
       + [Conceptos básicos de scripts en Designer ](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_es)
       + [Referencia de scripts en Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_es)
       + [Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
@@ -966,12 +966,12 @@ ht-degree: 100%
          + [Iniciar y detener servicios](/help/forms/using/admin-help/starting-stopping-services.md)
       + Administrar puntos de conexión {#manage-endpoints}
          + [Agregar, habilitar, modificar o eliminar puntos finales](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
-      + [Configurar extremos de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md)
-      + [Configuración de la autenticación oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
-      + [Configurar puntos finales remotos](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
-      + [Configurar extremos de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
-      + [Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
-      + [Tipos de extremos](/help/forms/using/admin-help/types-endpoints.md)
+         + [Configurar extremos de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md)
+         + [Configuración de la autenticación oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
+         + [Configurar puntos finales remotos](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
+         + [Configurar extremos de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
+         + [Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
+         + [Tipos de extremos](/help/forms/using/admin-help/types-endpoints.md)
       + Configurar extensiones de Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
          + [Tipos de certificados utilizados por las extensiones de Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
          + [Reconocer certificados válidos y caducados en documentos PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
@@ -1008,7 +1008,7 @@ ht-degree: 100%
          + [Supervisar eventos](/help/forms/using/admin-help/monitoring-events.md)
          + [Crear y administrar directivas](/help/forms/using/admin-help/creating-policies.md)
          + [Usar las páginas web de seguridad de los documentos](/help/forms/using/admin-help/using-document-security-web-pages.md)
-         + [Crear y administrar conjuntos de directivas](/help/forms/using/admin-help/creating-policy-sets.md)
+         + [Crear y administrar conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
          + [Registrarse como usuario](/help/forms/using/admin-help/registering-as-a-user.md)
       + Configurar Forms {#configure-forms}
          + [Aspectos básicos de la configuración de formularios](/help/forms/using/admin-help/overview-7.md)
@@ -1106,8 +1106,8 @@ ht-degree: 100%
          + Introducción a la programación con AEM Forms en JEE {#introduction-programming-aem-forms-jee}
             + [Introducción a la API de Java QuickStart](/help/forms/developing/introducing-java-api-soap-quick.md)
             + [Invocar AEM Forms mediante API](/help/forms/developing/invoking-aem-forms-using-apis.md)
-         + [Explicar los procesos de AEM Forms](/help/forms/developing/aem-forms-processes.md)
-         + [Contenedor de servicio](/help/forms/developing/service-container.md)
+            + [Explicar los procesos de AEM Forms](/help/forms/developing/aem-forms-processes.md)
+            + [Contenedor de servicio](/help/forms/developing/service-container.md)
          + Desarrollo de SPI para AEM Forms {#developing-spis-aem-forms}
             + [Crear un controlador de usuarios externos de invitación](/help/forms/developing/creating-invite-external-users-handler.md)
          + Inicio rápido de la API de Java: ejemplos de código {#java-api-quick-start-code-examples}
@@ -1217,7 +1217,7 @@ ht-degree: 100%
       + [Mitigación de vulnerabilidades de ejecución de código remoto, configuración y XXE para AEM Forms en JEE](/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md)
       + [Mostrar problemas para documentos protegidos por directivas y PDF forms basados en XFA](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
       + [Cómo abrir PDF forms basado en XFA en Firefox y Chrome](/help/forms/using/xfa-forms-firefox-chrome.md)
-      + [Vulnerabilidad de entidad externa XML (XXE) en BlazeDS](/help/forms/using/xxe-vulnerability-blazeDS.md)
+      + [Vulnerabilidad de entidad externa XML (XXE) en BlazeDS](/help/forms/using/xxe-vulnerability-blaze-ds.md)
       + [Error de implementación de EAR en el servidor JEE WebLogic](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + Documentación heredada {#legacy-documentation}
       + [Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](/help/forms/developing/building-xml.md)
@@ -1226,8 +1226,8 @@ ht-degree: 100%
       + [Generar y trabajar con hash en formularios PDF dinámicos](/help/forms/developing/hashing-forms.md)
       + [Pasar credenciales mediante encabezados WS-Security](/help/forms/developing/passing-credentials.md)
    + Glosario {#aem-forms-glossary}
-+[Glosarios de AEM Forms](/help/forms/using/aem-forms-glossary.md)
-+ Asistente de IA en AEM {#ai-in-aem}
+      + [Glosarios de AEM Forms](/help/forms/using/aem-forms-glossary.md)
++ IA en AEM {#ai-in-aem}
    + [Información general](/help/ai-in-aem/overview.md)
    + Asistente de IA {#ai-assistant}
       + [Configuración del asistente de IA en AEM](/help/ai-assistant-in-aem-admin.md)

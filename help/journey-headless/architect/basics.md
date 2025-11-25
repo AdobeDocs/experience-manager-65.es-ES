@@ -4,8 +4,8 @@ description: Conozca los aspectos básicos del modelado de contenido para su de 
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 94%
@@ -22,7 +22,7 @@ Este artículo se basa en estos elementos para que pueda comprender cómo modela
 
 ## Objetivo {#objective}
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: introduzca los conceptos de Modelado de contenido sin encabezado de CMS.
 
 ## Modelado de contenido con modelos de fragmento de contenido {#architect-content-fragment-models}
@@ -69,7 +69,7 @@ Dentro de un modelo:
 
 1. **Tipos de datos** le permiten definir los atributos individuales.
 Por ejemplo, defina el campo que contiene el nombre de un profesor como **Texto** y sus años de servicio como un **Número**.
-1. AEM Los tipos de datos **Referencia de contenido** y **Referencia de fragmento** le permiten crear relaciones con otro contenido dentro de los elementos de contenido de la.
+1. Los tipos de datos **Referencia de contenido** y **Referencia de fragmento** le permiten crear relaciones con otro contenido dentro de AEM.
 1. El tipo de datos **referencia de fragmento** le permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es importante para el modelado de contenido.
 
 Por ejemplo:
@@ -85,7 +85,7 @@ AEM proporciona los siguientes tipos de datos para modelar el contenido:
 * Número
 * Booleano
 * Fecha y hora
-* Lista desglosada
+* Enumeración
 * Etiquetas
 * Referencia de contenido
 * Referencia al fragmento

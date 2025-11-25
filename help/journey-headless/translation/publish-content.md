@@ -4,8 +4,8 @@ description: Aprenda a publicar el contenido traducido y a actualizar las traduc
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 80%
@@ -16,9 +16,9 @@ ht-degree: 80%
 
 Aprenda a publicar el contenido traducido y a actualizar las traducciones como actualizaciones de contenido.
 
-## La historia hasta ahora {#story-so-far}
+## Lo que hemos visto hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de traducción sin encabezado AEM, [Traducir contenido,](configure-connector.md) ha aprendido a utilizar proyectos de traducción de AEM para traducir su contenido sin encabezado. Ahora debería hacer lo siguiente:
+En el documento anterior del recorrido de traducción sin encabezado AEM, [Traducir contenido,](configure-connector.md) ha aprendido a utilizar proyectos de traducción de AEM para traducir su contenido sin encabezado. Ahora debería ser capaz de:
 
 * Comprender qué es un proyecto de traducción.
 * Poder crear proyectos de traducción.
@@ -74,7 +74,7 @@ Esta ruta tiene subcarpetas para cada idioma de traducción y puede elegir cuál
    ![Administrar opciones de publicación](assets/manage-publication-options.png)
 1. En la siguiente ventana **Administrar publicación**, confirme que la ruta o rutas correctas están seleccionadas. Haga clic en **Publicar**.
    ![Administrar ámbito de publicación](assets/manage-publication-scope.png)
-1. AEM La acción de publicación se confirma con un mensaje emergente en la parte superior de la pantalla.
+1. AEM confirma la acción de publicación con un mensaje emergente en la parte superior de la pantalla.
    ![Titular publicado de recursos](assets/resources-published-message.png)
 
 El contenido sin encabezado traducido se publica. Ahora sus servicios sin encabezado pueden acceder a ellos y consumirlos.
@@ -89,7 +89,7 @@ Existen opciones adicionales al publicar el contenido que están fuera del ámbi
 
 La traducción no suele ser una tarea de una sola vez. Normalmente, los autores siguen agregando y modificando el contenido en la raíz del idioma una vez completada la traducción inicial. Esto significa que también debe actualizar el contenido traducido.
 
-Los requisitos específicos del proyecto definen la frecuencia con la que se deben actualizar las traducciones y qué proceso de decisión se sigue antes de realizar una actualización. AEM Una vez que haya decidido actualizar sus traducciones, el proceso en el que se realiza la traducción es muy sencillo, ya que el proceso en el que se realiza la traducción es muy sencillo. Como la traducción inicial se basó en un proyecto de traducción, también lo son las actualizaciones.
+Los requisitos específicos del proyecto definen la frecuencia con la que se deben actualizar las traducciones y qué proceso de decisión se sigue antes de realizar una actualización. Una vez que haya decidido actualizar sus traducciones, el proceso en AEM es sencillo. Como la traducción inicial se basó en un proyecto de traducción, también lo son las actualizaciones.
 
 Sin embargo, como ya se mencionó, el proceso difiere un poco si elige crear el proyecto de traducción de forma automática o manual.
 
@@ -157,7 +157,7 @@ A partir de este punto, [inicie y administre su trabajo de traducción igual que
 
 ## ¿Fin del recorrido? {#end-of-journey}
 
-Felicitaciones. Ha completado el recorrido de traducción sin encabezado. Ahora debería hacer lo siguiente:
+Felicitaciones. Ha completado el recorrido de traducción sin encabezado. Ahora debería ser capaz de:
 
 * Obtener información general sobre qué es la entrega de contenido sin encabezado.
 * Tener un conocimiento básico de las funciones de AEM sin encabezado.

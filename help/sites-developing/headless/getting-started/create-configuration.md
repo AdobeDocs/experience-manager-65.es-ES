@@ -1,11 +1,11 @@
 ---
 title: Creación de una Guía de inicio rápido de configuración sin encabezado
-description: AEM Cree una configuración como primer paso para empezar a utilizar sin encabezado en la versión 6.5 de la.
+description: Cree una configuración como primer paso para empezar a utilizar sin encabezado en AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 66%
@@ -14,7 +14,7 @@ ht-degree: 66%
 
 # Creación de una Guía de inicio rápido de configuración sin encabezado {#creating-configuration}
 
-AEM Como primer paso para empezar a utilizar sin encabezado en la versión 6.5 de, debe crear una configuración de.
+Como primer paso para empezar a utilizar sin encabezado en AEM 6.5, debe crear una configuración.
 
 ## ¿Qué es una configuración? {#what-is-a-configuration}
 
@@ -30,9 +30,9 @@ En el contexto de la administración de contenido sin encabezado en AEM, piense 
 
 Un administrador solo tendría que crear una configuración una vez, o poco a poco cuando se necesite un nuevo espacio de trabajo para organizar los modelos de contenido. Para los fines de esta guía de introducción, solo necesitamos crear una configuración.
 
-1. AEM Inicie sesión en el menú principal y seleccione **Herramientas > General > Explorador de configuración**.
+1. Inicie sesión en AEM y, en el menú principal, seleccione **Herramientas > General > Explorador de configuración**.
 1. Proporcione un **Título** para su configuración.
-   * AEM Se generará automáticamente un nombre basado en el título y se ajustará de acuerdo con [convenciones de nomenclatura de la.](/help/sites-developing/naming-conventions.md). Se convertirá en el nombre de nodo en el repositorio.
+   * Se generará automáticamente un nombre basado en el título y se ajustará de acuerdo con [las convenciones de nomenclatura de AEM.](/help/sites-developing/naming-conventions.md). Se convertirá en el nombre de nodo en el repositorio.
 1. Compruebe las siguientes opciones:
    * **Modelos de fragmentos de contenido**
    * **Consultas persistentes de GraphQL**
