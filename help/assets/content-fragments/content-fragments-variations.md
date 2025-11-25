@@ -1,20 +1,20 @@
 ---
 title: 'Variaciones: Crear contenido de fragmentos'
-description: AEM Comprenda de qué forma las variaciones pueden hacer que el contenido sin encabezado sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de ese contenido según el propósito.
+description: Comprenda cómo las variaciones pueden hacer que el contenido sin encabezado en AEM sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de ese contenido según el propósito.
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: b611d044c9dab5aa25a3e58cf2447faa42b4b7b6
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
+source-wordcount: '2350'
+ht-degree: 58%
 
 ---
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
-AEM Las [variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido de la aplicación, ya que le permiten crear y editar copias del contenido principal para su uso en canales específicos o escenarios, lo que hace que la entrega de contenido sin encabezado sea aún más flexible.
+Las [variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido de AEM, ya que le permiten crear y editar copias del contenido principal para su uso en canales específicos o escenarios, lo que hace que la entrega de contenido sin encabezado sea aún más flexible.
 
 Desde la ficha **Variaciones**, puede hacer lo siguiente:
 
@@ -37,7 +37,7 @@ Realizar una serie de acciones diferentes en función del tipo de datos que se e
 
 >[!CAUTION]
 >
->AEM Después de publicar un fragmento o de hacer referencia a él, muestra una advertencia cuando un autor abre el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectan a las páginas a las que se hace referencia.
+>Una vez publicado un fragmento o referenciado, AEM muestra una advertencia cuando un autor abre el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectan a las páginas a las que se hace referencia.
 
 ## Creación de contenido {#authoring-your-content}
 
@@ -407,6 +407,12 @@ Las variaciones le permiten tomar el contenido **Principal** y variar según el 
 
 Para crear una variación:
 
+>[!NOTE]
+>
+>Las variaciones añaden tiempo de procesamiento a un fragmento de contenido, en el entorno de creación y durante la entrega. Se recomienda mantener el número de variaciones a un mínimo manejable.
+>
+>Una práctica recomendada es no superar las diez variaciones por fragmento de contenido.
+
 1. Abra el fragmento y asegúrese de que el panel lateral esté visible.
 1. Seleccione **Variaciones** en la barra de iconos del panel lateral.
 1. Seleccione **Crear variación**.
@@ -468,7 +474,7 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 
 >[!CAUTION]
 >
->La sincronización solo está disponible para copiar cambios *de **Principal**&#x200B;a la variación*.
+>La sincronización solo está disponible para copiar cambios *de **Principal**a la variación*.
 >
 >Solo se sincroniza el elemento actual de la variación.
 >
