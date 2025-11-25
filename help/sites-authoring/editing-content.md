@@ -9,8 +9,8 @@ docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 46%
@@ -27,7 +27,7 @@ El contenido se añade empleando los [componentes](/help/sites-authoring/default
 >
 >Su cuenta necesita los [derechos de acceso apropiados](/help/sites-administering/security.md) y [permisos](/help/sites-administering/security.md#permissions) para editar páginas.
 >
->Si encuentra algún problema, el Adobe le sugiere que se ponga en contacto con el administrador del sistema.
+>Si tiene algún problema, Adobe le sugiere que se ponga en contacto con el administrador del sistema.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
   Habilita el [modo de previsualización](/help/sites-authoring/editing-content.md#preview-mode). Esto muestra la página tal como aparece cuando se publica.
 
-  ![Modo de vista previa](assets/chlimage_1-121.png)
+  ![Modo de previsualización](assets/chlimage_1-121.png)
 
 * **Anotar**
 
@@ -119,7 +119,7 @@ Si la página está sujeta a varios flujos de trabajo, el número de los mismos 
 
 ## Marcador de posición de componente {#component-placeholder}
 
-El marcador de posición de componente es un indicador para mostrar la posición del componente cuando lo coloque (sobre el componente por el que pasa el ratón en ese momento).
+El marcador de posición de componente es un indicador para mostrar la posición del componente cuando lo coloque (el componente por encima del cual pasa el puntero en ese momento).
 
 * Al añadir un componente a la página (arrastrando desde el explorador de componentes):
 
@@ -235,11 +235,11 @@ Las acciones disponibles para el usuario se muestran según corresponda y es pos
 
   ![Editar](do-not-localize/screen_shot_2018-03-22at112936.png)
 
-* **Configurar**
+* **Configuración**
 
   [En función del tipo de componente](/help/sites-authoring/default-components.md), esto le permite editar y configurar las propiedades del componente. A menudo se abre un cuadro de diálogo.
 
-  ![Configurar](do-not-localize/screen_shot_2018-03-22at112955.png)
+  ![Configuración](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Copiar**
 
@@ -420,7 +420,7 @@ Los componentes heredados pueden ser el producto de distintos escenarios, como p
 
 * [Administración de varios sitios](/help/sites-administering/msm.md)
 * [Lanzamientos](/help/sites-authoring/launches.md) (cuando se basan en una Live Copy).
-* Componentes específicos, como el sistema de párrafos heredados dentro de Geometrixx.
+* Componentes específicos, como el sistema de párrafos heredados en Geometrixx.
 
 Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto puede estar disponible en:
 
@@ -508,7 +508,7 @@ La opción **Ver tal y como aparece publicado** está disponible en el menú [in
 
 ## Bloquear una página   {#locking-a-page}
 
-AEM le permite bloquear páginas para que nadie más pueda modificar su contenido. Esto resulta útil cuando realiza varias ediciones en una página específica o cuando debe congelar una página durante un corto tiempo.
+AEM permite bloquear páginas para que nadie más pueda modificar su contenido. Esto resulta útil cuando realiza varias ediciones en una página específica o cuando debe congelar una página durante un corto tiempo.
 
 Las páginas se pueden bloquear desde:
 
@@ -570,7 +570,7 @@ Los iconos siguientes permiten deshacer o rehacer una acción. Se muestran en la
 >
 >El administrador del sistema puede [configurar varios aspectos de las características Deshacer/Rehacer](/help/sites-administering/config-undo.md) según los requisitos de la instancia.
 
-AEM Almacena un historial de las acciones que realiza y la secuencia en que las realizó. Esta funcionalidad significa que puede deshacer varias acciones en el orden en que las realizó y rehacerlas para volver a aplicar una o más acciones, si es necesario.
+AEM almacena un historial de las acciones que realiza y la secuencia en que las realizó. Esta funcionalidad significa que puede deshacer varias acciones en el orden en que las realizó y rehacerlas para volver a aplicar una o más acciones, si es necesario.
 
 Si hay un elemento seleccionado en la página de contenido (por ejemplo, un componente de texto), el comando para deshacer o rehacer se aplica a dicho elemento.
 

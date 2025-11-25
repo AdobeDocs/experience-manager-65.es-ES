@@ -7,10 +7,10 @@ topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1296'
 ht-degree: 83%
 
 ---
@@ -118,18 +118,18 @@ La versión 2 y versiones posteriores de los componentes principales están tota
 
 Los pasos siguientes solo son necesarios para habilitar el sistema de estilos para sus propios componentes personalizados o para [habilitar la pestaña opcional Estilos en el cuadro de diálogo Editar.](#enable-styles-tab-edit)
 
-### Activar la pestaña Estilo en el cuadro de diálogo Diseño {#enable-styles-tab-design}
+### Habilitar la pestaña Estilo en el cuadro de diálogo Diseño {#enable-styles-tab-design}
 
 Para que un componente funcione con el sistema de estilos de AEM y se muestre la pestaña Estilo en el cuadro de diálogo de diseño, el desarrollador de componentes debe incluir la pestaña de estilo en la siguiente configuración del componente:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-AEM AEM Con el componente configurado, los estilos configurados por los autores de la página se insertarán automáticamente mediante el elemento de decoración que se ajusta automáticamente a cada componente editable. Se puede crear una nueva página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página de la página. El componente en sí no necesita hacer nada más para que esto suceda.
+Con el componente configurado, AEM insertará automáticamente los estilos configurados por los autores de la página en el elemento de decoración que AEM ajusta automáticamente alrededor de cada componente editable. El componente en sí no necesita hacer nada más para que esto suceda.
 
-### Activar la pestaña Estilos en el cuadro de diálogo Editar {#enable-styles-tab-edit}
+### Habilitar la pestaña Estilos en el cuadro de diálogo Editar {#enable-styles-tab-edit}
 
-AEM A partir de la versión 6.5.3.0 de la, una pestaña opcional de Estilos en el cuadro de diálogo de edición ya está disponible. A diferencia de la pestaña Cuadro de diálogo de diseño, la pestaña en el cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
+A partir de la versión de AEM 6.5.3.0, ya está disponible una pestaña Estilos opcional en el cuadro de diálogo Editar. A diferencia de la pestaña Cuadro de diálogo de diseño, la pestaña en el cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
 
 La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la pestaña Cuadro de diálogo de diseño:
 
@@ -138,7 +138,7 @@ La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la
 
 >[!NOTE]
 >
->La pestaña Estilos del cuadro de diálogo Editar no está activada de forma predeterminada.
+>La pestaña Estilos del cuadro de diálogo Editar no está habilitada de forma predeterminada.
 
 ### Estilos con nombres de elemento       {#styles-with-element-names}
 

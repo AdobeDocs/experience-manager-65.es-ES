@@ -8,11 +8,11 @@ content-type: reference
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -85,7 +85,7 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
      El cursor cambiará a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.
 
-     ![Sketch](do-not-localize/screen_shot_2018-03-22at110640.png)
+     ![Bosquejo](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Elegir o cambiar el color:
 

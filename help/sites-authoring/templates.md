@@ -1,5 +1,5 @@
 ---
-title: Creación de plantillas de página
+title: 'Creación de plantillas de página  '
 description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no son tareas exclusivas de los desarrolladores
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,11 +9,11 @@ docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4825'
-ht-degree: 71%
+source-wordcount: '4832'
+ht-degree: 73%
 
 ---
 
@@ -56,7 +56,7 @@ Es importante tener en cuenta los siguientes puntos antes de comenzar:
 
 * La creación de una plantilla requiere colaboración. Por este motivo, se indica la [función](#roles) para cada tarea.
 
-* AEM Dependiendo de cómo esté configurada su instancia, ahora proporciona [dos tipos básicos de plantilla](/help/sites-authoring/templates.md#editable-and-static-templates). Esto no afecta a cómo [usa una plantilla para crear una página](#using-a-template-to-create-a-page), pero afecta al tipo de plantilla que puede crear y a cómo se relaciona una página con su plantilla.
+* Según la configuración de la instancia, AEM proporciona [dos tipos básicos de plantilla](/help/sites-authoring/templates.md#editable-and-static-templates). Esto no afecta a cómo [usa una plantilla para crear una página](#using-a-template-to-create-a-page), pero afecta al tipo de plantilla que puede crear y a cómo se relaciona una página con su plantilla.
 
 ### Funciones {#roles}
 
@@ -105,7 +105,7 @@ AEM ahora ofrece dos tipos básicos de plantillas:
 
 * Plantillas estáticas
 
-   * AEM Las plantillas estáticas han estado disponibles para varias versiones de la aplicación de la.
+   * Las plantillas estáticas han estado disponibles para varias versiones de AEM.
    * Son [proporcionados por los desarrolladores](/help/sites-developing/page-templates-static.md), por lo que los autores no pueden crearlos o editarlos.
    * Se copian para crear la nueva página, pero después de esta no existe ninguna conexión dinámica (aunque el nombre de la plantilla esté registrado para obtener información).
    * Use [Modo de diseño](/help/sites-authoring/default-components-designmode.md) para mantener las propiedades de diseño.
@@ -215,7 +215,7 @@ Para ver o editar las propiedades:
 
 >[!NOTE]
 >
->El estado de una plantilla (borrador, activada o desactivada) se indica en la consola.
+>El estado de una plantilla (borrador, habilitada o deshabilitada) se indica en la consola.
 
 #### Imagen de miniatura de plantilla {#template-thumbnail-image}
 
@@ -233,14 +233,14 @@ Para definir la miniatura de la plantilla, haga lo siguiente:
 
 1. Cuando esté satisfecho con la miniatura, haga clic en **Guardar y cerrar**.
 
-### Activación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
+### Habilitación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
 
 Para poder utilizar una plantilla al crear una página, debe:
 
-* [Activar la plantilla](#enablingatemplate) para que esté disponible para utilizarla al crear páginas.
+* [Habilitar la plantilla](#enablingatemplate) para que esté disponible para utilizarla al crear páginas.
 * [Permitir que la plantilla](#allowingatemplate) especifique las ramas de contenido en las que esta se puede utilizar.
 
-#### Activación de una plantilla: autor de plantillas {#enabling-a-template-template-author}
+#### Habilitación de una plantilla: autor de plantillas {#enabling-a-template-template-author}
 
 Una plantilla se puede habilitar o deshabilitar para que esté disponible o no en el asistente **Crear página**.
 
@@ -249,12 +249,12 @@ Una plantilla se puede habilitar o deshabilitar para que esté disponible o no e
 >Una vez habilitada una plantilla, se mostrará una advertencia cuando el autor de la misma comience a actualizarla. Se informa al usuario de que se puede hacer referencia a la plantilla, por lo que cualquier cambio puede afectar a las páginas que hacen referencia a la plantilla.
 
 1. En la **Consola de plantillas**, seleccione la plantilla.
-1. Seleccione **Activar** o **Desactivar** en la barra de herramientas y, de nuevo, en el cuadro de diálogo de confirmación.
+1. Seleccione **Habilitar** o **Deshabilitar** en la barra de herramientas y, de nuevo, en el cuadro de diálogo de confirmación.
 1. Ahora puedes usar tu plantilla al [crear una página](/help/sites-authoring/managing-pages.md#creating-a-new-page), aunque probablemente quieras [editar la plantilla](#editingatemplate) según tus propios requisitos.
 
 >[!NOTE]
 >
->El estado de una plantilla (borrador, activada o desactivada) se indica en la consola.
+>El estado de una plantilla (borrador, habilitada o deshabilitada) se indica en la consola.
 
 #### Autorización de una plantilla: autor {#allowing-a-template-author}
 
@@ -363,7 +363,7 @@ En el modo de **Estructura**, puede definir los componentes y el contenido de la
 
 En modo **Structure** del editor de plantillas:
 
-* **Agregar componentes**
+* **Añadir componentes**
 
   Los siguientes mecanismos sirven para añadir componentes a la plantilla:
 
@@ -472,11 +472,11 @@ En modo **Structure** del editor de plantillas:
 
   Para quitar una configuración, haga clic en el botón **Eliminar** situado a la derecha de la configuración.
 
-  Para quitar una configuración, haga clic en el botón **&#x200B; Delete**.
+  Para quitar una configuración, haga clic en el botón** Delete**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
-  *Características*
+  *Funciones*
 
   La pestaña **Características** le permite habilitar o deshabilitar características adicionales del componente.
 
@@ -490,7 +490,7 @@ En modo **Structure** del editor de plantillas:
 
   >[!NOTE]
   >
-  >[Las directivas de contenido para los componentes que implementan el editor de texto enriquecido](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) solo se pueden definir para las opciones disponibles por RTE a través de su configuración de interfaz de usuario. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Las directivas de contenido para los componentes que implementan el editor de texto enriquecido](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) solo se pueden definir para las opciones disponibles por RTE a través de su configuración de interfaz de usuario. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política y propiedades (contenedor de diseño)**
 

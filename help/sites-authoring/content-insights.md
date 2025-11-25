@@ -1,6 +1,6 @@
 ---
 title: Perspectiva de contenido
-description: La perspectiva de contenido proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO
+description: Content Insight proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,29 +8,29 @@ topic-tags: site-features
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '537'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 # Perspectiva de contenido{#content-insight}
 
-La perspectiva de contenido proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO. Utilice Perspectiva de contenido para tomar decisiones sobre cómo modificar páginas o conocer cómo los cambios anteriores han cambiado el rendimiento. Para cada página que cree, puede abrir Perspectiva de contenido para analizar la página.
+Content Insight proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO. Utilice Content Insight para tomar decisiones sobre cómo modificar páginas o para conocer cómo los cambios anteriores han cambiado el rendimiento. Para cada página que cree, puede abrir Content Insight para analizar la página.
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-El diseño de la página Perspectiva de contenido cambia para adaptarse a las dimensiones de pantalla y a la orientación del dispositivo que está utilizando.
+El diseño de la página de Insight de contenido cambia para adaptarse a las dimensiones de pantalla y a la orientación del dispositivo que está utilizando.
 
 ## Datos del informe
 
-La página Perspectiva de contenido incluye informes que utilizan datos de Adobe SiteCatalyst, Adobe Target, Adobe Social y BrightEdge:
+La página Insight de contenido incluye informes que utilizan datos de Adobe SiteCatalyst, Adobe Target, Adobe Social y BrightEdge:
 
 * SiteCatalyst: Hay disponibles informes para las siguientes métricas:
 
-   * Page views
+   * Vistas de la página
    * Tiempo promedio empleado en la página
    * Orígenes
 
@@ -39,13 +39,13 @@ La página Perspectiva de contenido incluye informes que utilizan datos de Adobe
 
 Consulte [Abrir Analytics y Recommendations para una página](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
-## Período de informe
+## Periodo de creación de informes
 
 Los informes muestran datos correspondientes a un período de tiempo que usted controla. Al ajustar el período de informe, los informes se actualizan automáticamente con los datos de ese período. Las indicaciones visuales indican el momento en el que cambiaron las versiones de la página, de modo que puede comparar el rendimiento de cada versión.
 
 >[!NOTE]
 >
->La cronología del panel de información de contenido está en `GMT`.
+>La cronología del tablero de Content Insight está en `GMT`.
 
 También puede especificar la granularidad de los datos del informe; por ejemplo, puede ver datos diarios, semanales, mensuales o anuales.
 
@@ -53,7 +53,7 @@ Consulte [Cambio del período de informe](/help/sites-authoring/ci-analyze.md#ch
 
 >[!NOTE]
 >
->AEM Los informes de Perspectivas de contenido requieren que el administrador de haya integrado la aplicación con SiteCatalyst, Target y BrightEdge. Ver [Integración con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md) e [Integración con BrightEdge](/help/sites-administering/brightedge.md).
+>Los informes de Perspectivas de contenido requieren que el administrador haya integrado AEM con SiteCatalyst, Target y BrightEdge. Ver [Integración con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md) e [Integración con BrightEdge](/help/sites-administering/brightedge.md).
 
 ## El informe Vistas {#the-views-report}
 
@@ -94,10 +94,10 @@ Para cada campaña para la cual la página está activa, aparece un informe llam
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-## El informe Recommendations de SEO {#the-seo-recommendations-report}
+## El informe Recomendaciones de SEO {#the-seo-recommendations-report}
 
-El informe SEO Recommendations contiene los resultados del análisis de BrightEdge para la página. El informe es una lista de comprobación de las funciones de la página que indica qué funciones incluye y no incluye la página para maximizar la capacidad de búsqueda mediante motores de búsqueda.
+El informe Recomendaciones de SEO contiene los resultados del análisis de BrightEdge para la página. El informe es una lista de comprobación de las funciones de la página que indica qué funciones incluye y no incluye la página para maximizar la capacidad de búsqueda mediante motores de búsqueda.
 
-El informe permite crear tareas para mejorar la búsqueda de páginas. Recommendations indica que se han creado tareas para implementar la recomendación. Consulte [Asignación de tareas para SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
+El informe permite crear tareas para mejorar la búsqueda de páginas. Las recomendaciones indican que se han creado tareas para aplicar la recomendación. Consulte [Asignación de tareas para recomendaciones de SEO](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

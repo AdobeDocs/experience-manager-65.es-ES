@@ -3,10 +3,10 @@ title: Instrucciones de instalación de parches de AEM Forms para AEM Forms
 description: Instrucciones de instalación de AEM Forms Service Pack para el entorno OSGi y JEE
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 813ddbf98b65588752ffa94e9ac4a810cff45302
-workflow-type: ht
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 100%
 
@@ -236,10 +236,10 @@ El paquete se instala de forma automática.
 +++&#x200B;4. Instale el AEM Service Pack
 
 1. Reinicie la instancia antes de la instalación si está en modo de actualización (cuando la instancia se haya actualizado desde una versión anterior). Adobe recomienda reiniciar si el tiempo de actividad actual de una instancia es alto.
-1. Antes de realizar la instalación, haga una instantánea o una copia de seguridad nueva de la instancia de [!DNL Experience Manager].
-1. Descargue el Service Pack más reciente de [Distribución de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Antes de realizar la instalación, realice una instantánea o una copia de seguridad nueva de la instancia de [!DNL Experience Manager].
+1. Descargue el Service Pack de [Distribución de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es). <!-- UPDATE FOR EACH NEW RELEASE -->
 1. Abra el administrador de paquetes y seleccione **[!UICONTROL Cargar paquete]** para cargar el paquete. Para obtener más información, consulte [Administrador de paquetes](/help/sites-administering/package-manager.md).
-1. Seleccione el paquete y, después, **[!UICONTROL Instalar]**.
+1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
 **Instalación automática**
 

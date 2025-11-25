@@ -4,8 +4,8 @@ description: Administrar las tareas con la bandeja de entrada de Adobe Experienc
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 39%
@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # Su bandeja de entrada{#your-inbox}
 
-AEM Puede recibir notificaciones de varias áreas de la, incluidos flujos de trabajo y proyectos; por ejemplo, acerca de:
+Puede recibir notificaciones de varias áreas de AEM, incluidos flujos de trabajo y proyectos; por ejemplo, acerca de:
 
 * Tareas:
 
-   * AEM estas también se pueden crear en distintos puntos de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario, por ejemplo, en **Proyectos**,
+   * estas también se pueden crear en distintos puntos de la interfaz de usuario de AEM, por ejemplo, en **Proyectos**,
    * pueden ser el producto del paso **Crear tarea** o **Crear tarea de proyecto** de un flujo de trabajo.
 
 * Flujos de trabajo:
@@ -33,7 +33,7 @@ Estas notificaciones las recibe en su propia bandeja de entrada, donde puede ver
 
 >[!NOTE]
 >
->AEM La configuración predeterminada viene precargada con tareas administrativas asignadas al grupo de usuarios del administrador. Consulte [Tareas administrativas listas para usar](#out-of-the-box-administrative-tasks) para obtener más información.
+>AEM viene precargado con tareas administrativas asignadas al grupo de usuarios administradores. Consulte [Tareas administrativas listas para usar](#out-of-the-box-administrative-tasks) para obtener más información.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Estas notificaciones las recibe en su propia bandeja de entrada, donde puede ver
 >* [Proyectos](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Proyectos: trabajo con tareas](/help/sites-authoring/task-content.md)
 >* [Flujos de trabajo](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/using/introduction-aem-forms.md)
+>* [Formularios](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Bandeja de entrada en el encabezado {#inbox-in-the-header}
@@ -57,11 +57,11 @@ Desde cualquiera de las consolas, en el encabezado se muestra el número actual 
 
 ## Tareas administrativas listas para usar  {#out-of-the-box-administrative-tasks}
 
-AEM La aplicación predeterminada viene precargada con cuatro tareas asignadas al grupo de usuarios del administrador.
+AEM viene precargado con cuatro tareas asignadas al grupo de usuarios &quot;administrator&quot;.
 
 * [Configurar Analytics y Targeting](/help/sites-administering/opt-in.md)
 * [Aplicar la lista comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
-* Activar recopilación de estadísticas de uso agregadas
+* Habilitar recopilación de estadísticas de uso agregadas
 * [Configurar HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Apertura de la bandeja de entrada    {#opening-the-inbox}
@@ -70,7 +70,7 @@ Para abrir la bandeja de entrada de notificaciones AEM:
 
 1. Haga clic en el indicador de la barra de herramientas.
 
-1. Seleccione **Ver todo**. AEM Se abre la **Bandeja de entrada de**. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
+1. Seleccione **Ver todo**. Se abre la **Bandeja de entrada de AEM**. La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
 1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).
 
    Para ambas vistas también puede definir [Configuración de vista](#inbox-view-settings); las opciones disponibles dependen de la vista actual.
@@ -131,7 +131,7 @@ Para ambas vistas (Lista y Calendario) puede definir la siguiente configuración
 
 La opción Admin Control permite a los administradores lo siguiente:
 
-* AEM Personalizar las columnas de la bandeja de entrada
+* Personalizar las columnas de la bandeja de entrada AEM
 
 * Personalizar el texto y el logotipo del encabezado
 
@@ -139,11 +139,11 @@ La opción Admin Control permite a los administradores lo siguiente:
 
 La opción Control de administración solo está visible para los miembros del grupo `administrators` o `workflow-administrators`.
 
-* AEM **Personalización de columnas**: personalice una Bandeja de entrada de la para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
-   * AEM **Agregar columna**: Seleccione una columna para agregarla a la Bandeja de entrada de la.
+* **Personalización de columnas**: personalice una Bandeja de entrada AEM para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
+   * **Agregar columna**: Seleccione una columna para agregarla a la Bandeja de entrada AEM.
    * **Editar columna**: Pase el ratón sobre el título de la columna y seleccione el icono ![editar](assets/edit.svg) para introducir un nombre para mostrar en la columna.
-   * AEM **Eliminar columna**: Seleccione el icono ![eliminar](assets/delete_updated.svg) para eliminar la columna de la Bandeja de entrada de la Bandeja de entrada de la.
-   * AEM **Mover columna**: arrastre el icono ![mover](assets/move_updated.svg) para mover una columna a una nueva posición en la Bandeja de entrada de la Bandeja de entrada de la.
+   * **Eliminar columna**: Seleccione el icono ![eliminar](assets/delete_updated.svg) para eliminar la columna de la bandeja de entrada AEM.
+   * **Mover columna**: arrastre el icono ![mover](assets/move_updated.svg) para mover una columna a una nueva posición en la Bandeja de entrada de AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
 

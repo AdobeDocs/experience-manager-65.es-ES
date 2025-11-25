@@ -1,6 +1,6 @@
 ---
 title: Crear lanzamientos
-description: Puede crear un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará más adelante.
+description: Puede crear un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se habilitará más adelante.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,17 +9,17 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 77%
+source-wordcount: '1096'
+ht-degree: 78%
 
 ---
 
 # Crear lanzamientos{#creating-launches}
 
-Cree un lanzamiento para poder actualizar las páginas web existentes a la versión nueva que se activará más adelante. Al crear un lanzamiento, especificará un título y la página de origen:
+Cree un lanzamiento para poder actualizar las páginas web existentes a la versión nueva que se habilitará más adelante. Al crear un lanzamiento, especificará un título y la página de origen:
 
 * El título aparece en el carril [Referencias](/help/sites-authoring/author-environment-tools.md#references); desde allí, los autores pueden acceder al título y trabajar con él.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar únicamente la página de origen.
@@ -69,7 +69,7 @@ Puede crear un lanzamiento desde la consola Sites o Lanzamientos:
    >
    >Si un sitio contiene raíces de idioma por debajo del nivel superior, las páginas y ramas de un lanzamiento deben estar por debajo de una raíz de idioma común.
    >
-   >Si intenta crear un lanzamiento con una página principal o secundaria en la ruta de origen, se producirá un error y se devolverá el error &quot;El destino ya existe en :ruta de acceso a la página&quot;.
+   >Si intenta crear un lanzamiento con una página principal o secundaria en la ruta de acceso de origen, se producirá un error y se devolverá el error &quot;El destino ya existe en :path a la página&quot;.
 
 1. Para cada entrada, puede especificar lo siguiente:
 

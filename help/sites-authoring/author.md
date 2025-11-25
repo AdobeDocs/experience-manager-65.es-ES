@@ -4,8 +4,8 @@ description: Conceptos sobre creación y publicación en Adobe Experience Manage
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 28%
@@ -16,7 +16,7 @@ ht-degree: 28%
 
 ## Concepto de creación (y publicación) {#concept-of-authoring-and-publishing}
 
-AEM La aplicación le proporciona dos entornos:
+AEM le proporciona dos entornos:
 
 * Autor
 * Publicación
@@ -30,7 +30,7 @@ El entorno de creación ofrece mecanismos para crear, actualizar y revisar el co
 
 ![Información general de entornos](assets/chlimage_1-132.png)
 
-AEM En el entorno de creación, la funcionalidad de la creación de informes está disponible a través de dos interfaces de usuario. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
+En el entorno de creación, la funcionalidad de AEM está disponible a través de dos interfaces de usuario. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
 
 ### Entorno de creación {#author-environment}
 
@@ -58,15 +58,15 @@ Además, hay tareas administrativas que le ayudan a administrar su contenido:
 
 >[!NOTE]
 >
->AEM también se [administra](/help/sites-administering/home.md) (para la mayoría de las tareas) a la del entorno de creación.
+>AEM también está [administrado](/help/sites-administering/home.md) (para la mayoría de las tareas) desde el entorno de creación.
 
 #### Entorno de publicación {#publish-environment}
 
-AEM Cuando esté listo, el contenido del sitio de la se publicará en el **entorno de publicación**. Aquí las páginas del sitio web se ponen a disposición de la audiencia objetivo de acuerdo con la apariencia de la interfaz diseñada.
+Cuando esté listo, el contenido del sitio de AEM se publicará en el **entorno de publicación**. Aquí las páginas del sitio web se ponen a disposición del público objetivo de acuerdo con la apariencia de la interfaz diseñada.
 
 Por lo general, el entorno de publicación se encuentra dentro de la zona desmilitarizada; es decir, disponible para Internet, pero ya no bajo la plena protección de la red interna.
 
-AEM Si el sitio de la comunidad es un [sitio de la comunidad](/help/communities/overview.md) o incluye [componentes de la comunidad](/help/communities/author-communities.md), los visitantes (miembros) del sitio que hayan iniciado sesión podrán interactuar con las características de la comunidad. Por ejemplo, pueden publicar en un foro, publicar un comentario o seguir a otros miembros. A los miembros se les puede conceder permiso para realizar actividades que normalmente se limitan al entorno de creación, como crear páginas nuevas (grupos de la comunidad), artículos de blogs y moderar las publicaciones de otros miembros.
+Si el sitio de AEM es un [sitio de la comunidad](/help/communities/overview.md) o incluye [componentes de la comunidad](/help/communities/author-communities.md), los visitantes (miembros) del sitio que hayan iniciado sesión podrán interactuar con las características de la comunidad. Por ejemplo, pueden publicar en un foro, publicar un comentario o seguir a otros miembros. A los miembros se les puede conceder permiso para realizar actividades que normalmente se limitan al entorno de creación, como crear páginas nuevas (grupos de la comunidad), artículos de blogs y moderar las publicaciones de otros miembros.
 
 >[!NOTE]
 >

@@ -9,8 +9,8 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2965'
 ht-degree: 41%
@@ -122,7 +122,7 @@ En Navegación, las consolas disponibles son:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=es">Screens</a> le permite administrar todas las pantallas del cliente, de cualquier tamaño y en cualquier ubicación.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> le permite administrar todas las pantallas del cliente, de cualquier tamaño y en cualquier ubicación.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,7 +155,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
   También puede utilizar la [tecla de método abreviado](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra inclinada) para iniciar una búsqueda desde cualquier consola.
 
-* [Soluciones](https://business.adobe.com/es/)
+* [Soluciones](https://business.adobe.com/)
 
   ![Soluciones](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -227,7 +227,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
 ## Acceso a la Ayuda   {#accessing-help}
 
-Hay varios medios de ayuda disponibles:
+Hay varios recursos de ayuda disponibles:
 
 * **Barra de herramientas de la consola**
 
@@ -305,7 +305,7 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 * [Vista de columna](#column-view)
 * [Vista de tarjeta](#card-view)
 
-* [Vista de lista   &#x200B;](#list-view)
+* [Vista de lista   ](#list-view)
 
 >[!NOTE]
 >

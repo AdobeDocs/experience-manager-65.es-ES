@@ -8,8 +8,8 @@ topic-tags: site-features
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Andamiaje{#scaffolding}
 
-A veces, es posible que tenga que crear un gran conjunto de páginas que compartan la misma estructura pero que tengan contenido diferente. AEM A través de la interfaz de usuario estándar, tendría que crear cada página, arrastrar los componentes adecuados a la página y rellenarlos individualmente.
+A veces, es posible que tenga que crear un gran conjunto de páginas que compartan la misma estructura pero que tengan contenido diferente. A través de la interfaz estándar de AEM, debe crear cada página, arrastrar los componentes adecuados a la página y rellenarlos individualmente.
 
 Con el andamiaje puede crear un formulario (un andamio) con campos que reflejen la estructura que desee para sus páginas y, a continuación, utilizar este formulario para crear fácilmente páginas basadas en esta estructura.
 

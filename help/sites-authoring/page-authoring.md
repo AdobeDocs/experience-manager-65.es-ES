@@ -1,11 +1,11 @@
 ---
-title: AEM Creación de páginas de contenido en el
+title: Creación de páginas de contenido en AEM
 description: Las tareas implicadas al crear una página de contenido en Adobe Experience Manager 6.5.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Creación de páginas{#authoring-pages}
 
-AEM A continuación se proporcionan dos tipos de información general para la creación de contenido con la ayuda de la creación de:
+A continuación se proporcionan dos tipos de información general sobre la creación con AEM:
 
 * [Primeros pasos para los autores](/help/sites-authoring/first-steps.md): introducción para nuevos autores
 
@@ -50,4 +50,4 @@ Un solo clic o un doble clic lento mostrará la barra de herramientas adecuada (
 Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable.
 
 * **Buscar mientras escribe**
-AEM En determinados casos (por ejemplo, la selección de rutas en los cuadros de diálogo de edición), la búsqueda de contenido a través de la interfaz de la interfaz de la aplicación presenta coincidencias dinámicas al escribir la consulta.
+En determinados casos (por ejemplo, la selección de rutas en los cuadros de diálogo de edición), la búsqueda de contenido a través de la interfaz de AEM presenta coincidencias dinámicas al escribir la consulta.

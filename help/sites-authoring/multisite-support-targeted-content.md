@@ -8,11 +8,11 @@ topic-tags: personalization
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2838'
-ht-degree: 82%
+ht-degree: 84%
 
 ---
 
@@ -43,7 +43,7 @@ En cualquier momento puede suspender o restaurar la herencia. Además, si no des
 
 La compatibilidad con varios sitios para el contenido del destino está disponible de forma predeterminada y le permite insertar contenido de destino desde la página maestra que administra mediante MSM en una Live Copy local o administrar las modificaciones globales y locales de dicho contenido.
 
-Esto se administra en un **Área**. Las áreas separan el contenido de destino (actividades, experiencias y ofertas) que se usa en diferentes sitios y proporcionan un mecanismo basado en MSM para crear y administrar la herencia del contenido de destino junto a la herencia del sitio. AEM Esto evita que tenga que volver a crear contenido de destino en sitios heredados, tal como se requería en versiones anteriores a la versión 6.2.
+Esto se administra en un **Área**. Las áreas separan el contenido de destino (actividades, experiencias y ofertas) que se usa en diferentes sitios y proporcionan un mecanismo basado en MSM para crear y administrar la herencia del contenido de destino junto a la herencia del sitio. Esto evita que tenga que volver a crear contenido de destino en sitios heredados, tal como se requería en AEM antes de la versión 6.2.
 
 En un área, solo las actividades vinculadas a ella se insertan en Live Copies. De forma predeterminada, el Área principal está seleccionada. Después de crear áreas adicionales, puede vincularlas a sus sitios o páginas para indicar qué contenido de destino se inserta.
 
@@ -107,7 +107,7 @@ Cada sitio comparte contenido personalizado en regiones geográficas:
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Para el hemisferio norte, contamos con una actividad de invierno que se creó para una audiencia masculina, pero al vendedor de Norteamérica le gustaría tener una imagen de invierno diferente, por lo que la cambia en el sitio de los Estados Unidos.
+Para el hemisferio norte, contamos con una actividad de invierno que se creó para un público masculino, pero al vendedor de Norteamérica le gustaría tener una imagen de invierno diferente, por lo que la cambia en el sitio de los Estados Unidos.
 
 ![chlimage_1-273](assets/chlimage_1-273.png)
 
@@ -131,7 +131,7 @@ En cualquier momento, puede suspender la herencia o desasociar la herencia por c
 
 ### Creación de un área frente a creación de un área como Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-AEM En el caso de los archivos, tiene la opción de crear un área o de crear un área como Live Copy. La creación de un área agrupa actividades y cualquier elemento que pertenezca a esas actividades, como ofertas, experiencias, etc. Puede crear un área cuando desee crear un conjunto de contenido de destino completamente distinto o cuando desee compartir un conjunto de contenido de destino.
+En AEM, tiene la opción de crear un área o de crear un área como Live Copy. La creación de un área agrupa actividades y cualquier elemento que pertenezca a esas actividades, como ofertas, experiencias, etc. Puede crear un área cuando desee crear un conjunto de contenido de destino completamente distinto o cuando desee compartir un conjunto de contenido de destino.
 
 Sin embargo, si ha configurado la herencia mediante MSM entre los dos sitios, puede que desee heredar las actividades. En este caso, se crea un área como Live Copy, donde Y es una Live Copy de X y, por lo tanto, hereda también todas las actividades.
 

@@ -8,8 +8,8 @@ content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 2%
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 # Integración de Creative Project y PIM {#creative-project-and-pim-integration}
 
-Si es un experto en marketing o un profesional creativo, puede utilizar las herramientas de Creative Project en Adobe Experience Manager AEM () para administrar la fotografía de productos relacionada con el comercio electrónico y los procesos creativos asociados dentro de su organización.
+Si es un experto en marketing o un profesional creativo, puede utilizar las herramientas de Creative Project en Adobe Experience Manager (AEM) para administrar la fotografía de productos relacionada con el comercio electrónico y los procesos creativos asociados dentro de su organización.
 
-Puede utilizar Creative Project para racionalizar las siguientes tareas en el flujo de trabajo de la sesión fotográfica:
+Puede utilizar Creative Project para optimizar las siguientes tareas del flujo de trabajo de la sesión fotográfica:
 
 * Generación de una solicitud de sesión fotográfica
 * Carga de una sesión fotográfica
@@ -64,7 +64,7 @@ Un **proyecto de sesión fotográfica de producto** incluye los siguientes flujo
 * **Flujo de trabajo de sesión fotográfica del producto (integración de Commerce)**: este flujo de trabajo utiliza la integración comercial con el sistema de administración de la información del producto (PIM) para generar automáticamente una lista de tomas para los productos seleccionados (jerarquía). Una vez completado el flujo de trabajo, puede ver los datos del producto como parte de los metadatos del recurso.
 * **Flujo de trabajo de sesión fotográfica del producto**: este flujo de trabajo le permite proporcionar una lista de tomas en lugar de depender de la integración comercial. Asigna las imágenes cargadas a un archivo CSV en la carpeta de recursos del proyecto.
 
-Utilice la sesión fotográfica de **producto (integración de Commerce AEM)** para asignar recursos de imagen con los productos en la. Este flujo de trabajo utiliza la integración comercial para vincular las imágenes aprobadas a los datos de productos existentes en la ubicación `/etc/commerce`.
+Utilice la sesión fotográfica de **producto (integración de Commerce)** para asignar recursos de imagen con los productos de AEM. Este flujo de trabajo utiliza la integración comercial para vincular las imágenes aprobadas a los datos de productos existentes en la ubicación `/etc/commerce`.
 
 El flujo de trabajo **Sesión fotográfica del producto (integración de Commerce)** incluye las siguientes tareas:
 
@@ -74,7 +74,7 @@ El flujo de trabajo **Sesión fotográfica del producto (integración de Commerc
 * Revisar y aprobar
 * Mover a la tarea de producción
 
-AEM Si la información del producto no está disponible en la, utilice el flujo de trabajo **Sesión fotográfica del producto** para asignar recursos de imagen con los productos en función de los detalles que cargue en un archivo CSV. El archivo CSV debe contener información básica del producto, como el ID del producto, la categoría y la descripción. El flujo de trabajo recupera los recursos aprobados para los productos.
+Si la información del producto no está disponible en AEM, utilice el flujo de trabajo **Sesión fotográfica del producto** para asignar recursos de imagen con los productos en función de los detalles que cargue en un archivo CSV. El archivo CSV debe contener información básica del producto, como el ID del producto, la categoría y la descripción. El flujo de trabajo recupera los recursos aprobados para los productos.
 
 Este flujo de trabajo incluye las siguientes tareas:
 
@@ -195,7 +195,7 @@ La tarea **Crear lista de tomas** permite al propietario del proyecto selecciona
 
    ![Ver lista de tomas](assets/chlimage_1-148a.png)
 
-   Para editar los datos existentes o agregar nuevos datos, haz clic en **Editar** en la barra de herramientas. Solo se pueden editar los campos **Product &#x200B;** y **Description**.
+   Para editar los datos existentes o agregar nuevos datos, haz clic en **Editar** en la barra de herramientas. Solo se pueden editar los campos **Product **y **Description**.
 
    ![Editar lista de tomas](assets/chlimage_1-149a.png)
 
@@ -211,7 +211,7 @@ La finalización de la tarea introduce los siguientes cambios dentro del proyect
 
 ### Cargar tarea de lista de tomas {#upload-shot-list-task}
 
-Esta tarea forma parte del flujo de trabajo Sesión fotográfica del producto. AEM Esta tarea se realiza si la información del producto no está disponible en el mercado de trabajo de la. En este caso, se carga una lista de productos en un archivo CSV para los que se requieren recursos de imagen. Según los detalles del archivo CSV, los recursos de imagen se asignan a los productos. El archivo debe ser un archivo CSV denominado `shotlist.csv`.
+Esta tarea forma parte del flujo de trabajo Sesión fotográfica del producto. Esta tarea se realiza si la información del producto no está disponible en AEM. En este caso, se carga una lista de productos en un archivo CSV para los que se requieren recursos de imagen. Según los detalles del archivo CSV, los recursos de imagen se asignan a los productos. El archivo debe ser un archivo CSV denominado `shotlist.csv`.
 
 Use el vínculo **Ver lista de tomas** de la tarjeta de proyecto del procedimiento anterior para descargar un archivo CSV de ejemplo. Revise el archivo de muestra para conocer el contenido habitual de un archivo CSV.
 
@@ -297,7 +297,7 @@ Puede navegar a los recursos del proyecto mediante la interfaz de usuario de Ass
 
 Haga clic en el nivel siguiente para ver los productos según la jerarquía de datos del producto.
 
-Creative Project asocia los recursos aprobados con el producto de referencia. AEM Los metadatos del recurso se actualizan con la referencia del producto y la información básica en la ficha **Datos del producto** en las propiedades del recurso donde aparecen en la sección Metadatos del recurso.
+Creative Project asocia los recursos aprobados con el producto de referencia. Los metadatos del recurso se actualizan con la referencia del producto y la información básica en la ficha **Datos del producto** en las propiedades del recurso, cuando aparecen en la sección Metadatos del recurso de AEM.
 
 >[!NOTE]
 >
@@ -334,7 +334,7 @@ Haga clic en el vínculo que aparece para desplazarse a la página de detalles d
 
 Puede personalizar los flujos de trabajo de **Sesión fotográfica del proyecto** en función de sus necesidades. Es una tarea opcional basada en funciones que se realiza para establecer el valor de una variable dentro del proyecto. Posteriormente, puede utilizar el valor configurado para llegar a una decisión.
 
-1. AEM Haga clic en el logotipo de la y, a continuación, vaya a **Herramientas** > **Flujo de trabajo** > **Modelos** para abrir la página **Modelos de flujo de trabajo**.
+1. Haga clic en el logotipo de AEM y, a continuación, vaya a **Herramientas** > **Flujo de trabajo** > **Modelos** para abrir la página **Modelos de flujo de trabajo**.
 1. Seleccione el flujo de trabajo **Sesión fotográfica del producto (integración de Commerce)** o el flujo de trabajo **Sesión fotográfica del producto** y haga clic en **Editar** en la barra de herramientas para abrir el flujo de trabajo en modo de edición.
 1. Abra el panel lateral, busque el paso **Crear tarea de proyecto basada en roles** y arrástrelo al flujo de trabajo.
 

@@ -4,11 +4,11 @@ description: Los proyectos le permiten agrupar recursos en una entidad cuyo ento
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1360'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
 
@@ -25,7 +25,7 @@ Como usuario, puede:
 
 ## Requisitos de acceso {#access-requirements}
 
-AEM Los proyectos son una característica de la estándar y no requieren ninguna configuración adicional.
+Los proyectos son una función estándar de AEM y no requieren ninguna configuración adicional.
 
 Sin embargo, para que los usuarios de los proyectos puedan ver a otros usuarios o grupos mientras utilizan Proyectos como, por ejemplo, al crear proyectos, crear tareas/flujos de trabajo o ver y administrar el equipo, dichos usuarios necesitan tener acceso de lectura en `/home/users` y `/home/groups`.
 
@@ -37,7 +37,7 @@ La consola Proyectos es donde se accede a los proyectos y se administran dentro 
 
 ![La consola de proyectos](assets/screen-shot_2019-03-05at125110.png)
 
-AEM La consola Proyectos es similar a otras consolas en, permite realizar varias acciones en proyectos individuales y ajustar la vista de los proyectos en la que se encuentran.
+La consola Proyectos es similar a otras consolas de AEM, permite realizar varias acciones en proyectos individuales y ajustar la vista de los proyectos.
 
 ### Alternar el modo {#modes}
 
@@ -201,7 +201,7 @@ Las plantillas sirven de base para iniciar el proyecto. AEM proporciona estas pl
 * **Proyecto de medios**: este es un proyecto de muestra de referencia para actividades relacionadas con medios. Incluye varias funciones de proyecto relacionadas con medios y también flujos de trabajo relacionados con contenido de medios.
 * **[Proyecto de sesión fotográfica de producto](/help/sites-authoring/managing-product-information.md)**: es una muestra de referencia para administrar la fotografía de productos relacionada con el comercio electrónico.
 * **[Proyecto de traducción](/help/sites-administering/translation.md)**: este es un ejemplo de referencia para administrar actividades relacionadas con la traducción. Incluye funciones básicas e incluye flujos de trabajo para administrar la traducción.
-* **Proyecto simple**: es una muestra de referencia para cualquier proyecto que no se ajuste a otras categorías. AEM Incluye tres funciones básicas y cuatro flujos de trabajo generales de.
+* **Proyecto simple**: es una muestra de referencia para cualquier proyecto que no se ajuste a otras categorías. Incluye tres funciones básicas y cuatro flujos de trabajo generales de AEM.
 
 En función de la plantilla que seleccione, tendrá diferentes opciones disponibles dentro del proyecto, como las funciones de usuario y los flujos de trabajo proporcionados.
 
@@ -228,7 +228,7 @@ Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos as
 
 Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**.
 
-Si se elimina el proyecto, esos grupos sólo se eliminarán si selecciona la opción adecuada [&#x200B; al eliminar el proyecto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un administrador también puede eliminar manualmente los grupos de **Herramientas** > **Seguridad** > **Grupos**.
+Si se elimina el proyecto, esos grupos sólo se eliminarán si selecciona la opción adecuada [ al eliminar el proyecto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un administrador también puede eliminar manualmente los grupos de **Herramientas** > **Seguridad** > **Grupos**.
 
 ## Recursos adicionales {#additional-resources}
 

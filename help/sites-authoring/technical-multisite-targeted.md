@@ -8,11 +8,11 @@ topic-tags: personalization
 exl-id: d8ba91ff-ad6e-4540-baff-a2c0c764a299
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
@@ -24,7 +24,7 @@ Las áreas aparecen debajo de **/content/campaigns/&lt;brand>** y, de forma pred
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
-Para buscar contenido de destino, las páginas o sitios pueden asignarse a un área. AEM Si no hay ningún área configurada, vuelve a la zona principal para esta marca específica.
+Para buscar contenido de destino, las páginas o sitios pueden asignarse a un área. Si no hay ningún área configurada, AEM vuelve al área principal para esta marca específica.
 
 En el diagrama siguiente se muestra un ejemplo de cómo funciona la lógica para tres sitios, llamados site1, site2 y site3.
 

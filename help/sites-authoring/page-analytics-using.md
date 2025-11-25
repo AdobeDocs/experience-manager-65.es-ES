@@ -10,10 +10,10 @@ legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-usin
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '437'
 ht-degree: 5%
 
 ---
@@ -77,17 +77,17 @@ Los miembros del grupo de usuarios administradores de Analytics pueden configura
 
 ### Apertura de perspectivas de contenido desde sitios {#opening-content-insights-from-sites}
 
-Abra [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la efectividad de la página.
+Abra [Insight de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la efectividad de la página.
 
 1. En la consola Sitios, seleccione la página para la que desea ver las perspectivas de contenido.
-1. En la barra de herramientas, haga clic en el icono Analytics y Recommendations.
+1. En la barra de herramientas, haga clic en el icono Analytics and Recommendations.
 
    ![Icono de Analytics y Recommendations](do-not-localize/chlimage_1-14.png)
 
-## Analytics visible desde el editor de páginas (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## Análisis visible desde el Editor de páginas (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
->Debido a los cambios de seguridad dentro de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map AEM incluida en el programa de trabajo de.
+>Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
 >
 >Ahora se debe usar el complemento [ActivityMap proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es).

@@ -1,6 +1,6 @@
 ---
-title: AEM Solución de problemas durante la creación en la
-description: AEM Algunos problemas que pueden producirse al utilizar el servicio de asistencia de la aplicación de.
+title: Solución de problemas al crear en AEM
+description: Algunos problemas que pueden producirse al utilizar AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 41%
@@ -26,7 +26,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 >[!NOTE]
 >
->AEM AEM Los usuarios que tengan privilegios de administrador y que deseen solucionar problemas con los recursos de administración, pueden utilizar los métodos de solución de problemas descritos en [Solución de problemas de los usuarios (para los administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, consulte al administrador del sistema para obtener información sobre la solución de problemas de la solución de problemas de la.
+>Los usuarios con privilegios de administrador y que deseen solucionar problemas con AEM pueden utilizar los métodos de solución de problemas descritos en [Solución de problemas de AEM (para administradores)](/help/sites-administering/troubleshoot.md). Si no tiene privilegios suficientes, póngase en contacto con el administrador del sistema para solucionar los problemas de AEM.
 
 ## La versión anterior de la página sigue en el sitio publicado {#old-page-version-still-on-published-site}
 

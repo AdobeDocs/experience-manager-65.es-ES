@@ -4,8 +4,8 @@ description: Adobe Experience Manager incluye varios componentes listos para usa
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 34%
@@ -14,7 +14,7 @@ ht-degree: 34%
 
 # Componentes{#components}
 
-Adobe Experience Manager AEM () viene con varios componentes listos para usar que proporcionan una funcionalidad completa para los autores de sitios web. Están disponibles durante [la edición de una página](/help/sites-authoring/editing-content.md) y se agrupan por áreas funcionales principales (denominadas grupos de componentes) para ayudar a efectuar la filtración.
+Adobe Experience Manager (AEM) incorpora varios componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web. Están disponibles durante [la edición de una página](/help/sites-authoring/editing-content.md) y se agrupan por áreas funcionales principales (denominadas grupos de componentes) para ayudar a efectuar la filtración.
 
 Los componentes están disponibles cuando [edita una página](/help/sites-authoring/editing-content.md). Para ayudar en el filtrado, los componentes se agrupan por área funcional principal (es decir, grupo de componentes).
 
@@ -46,7 +46,7 @@ Los componentes se ordenan según varias categorías denominadas grupos de compo
 
 ## Introducción a todos los componentes {#overview-of-all-components}
 
-AEM La [Consola de componentes](/help/sites-authoring/default-components-console.md) le ofrece una descripción general de los grupos de componentes y los componentes proporcionados por la instalación de la instalación de la. Puede ver información clave sobre cada uno de los componentes y su uso.
+La [Consola de componentes](/help/sites-authoring/default-components-console.md) proporciona información general sobre los grupos de componentes y los componentes proporcionados en la instalación de AEM. Puede ver información clave sobre cada uno de los componentes y su uso.
 
 ## Componentes: áreas principales {#components-major-areas}
 
@@ -56,7 +56,7 @@ Las siguientes páginas proporcionan vínculos a información adicional e import
 
 * [Comunidades](/help/communities/author-communities.md): los componentes proporcionan características interactivas para un sitio web, como foros y comentarios. Muchos de estos componentes se incluyen cuando se crea un [sitio de la comunidad](/help/communities/overview.md).
 
-* AEM [comercio electrónico](/help/commerce/cif-classic/administering/ecommerce.md): la funcionalidad de comercio electrónico de la aplicación también incluye una amplia gama de componentes en la aplicación de comercio electrónico de la aplicación de comercio electrónico de la plataforma de comercio electrónico de. El uso real puede depender del motor de comercio que se utilice.
+* [Comercio electrónico](/help/commerce/cif-classic/administering/ecommerce.md): la funcionalidad de comercio electrónico de AEM también incluye una serie de componentes. El uso real puede depender del motor de comercio que se utilice.
 
 ### Configuración de componentes {#configuring-components}
 

@@ -1,6 +1,6 @@
 ---
-title: 'AEM Creación: el entorno y las herramientas en la creación de recursos'
-description: AEM El entorno de creación de ofrece varios mecanismos para organizar y editar el contenido.
+title: 'Creación: el entorno y las herramientas en AEM'
+description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,15 +9,15 @@ docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 46%
 
 ---
 
-# Creación: el entorno y las herramientas{#authoring-the-environment-and-tools}
+# Creación: entorno y herramientas{#authoring-the-environment-and-tools}
 
 El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
 
@@ -286,7 +286,7 @@ El botón Información de página (icono de ecualizador) abre un menú que tambi
 Por ejemplo, cuando sea apropiado, **Información de la página** también tiene las opciones:
 
 * [Promocionar lanzamiento](/help/sites-authoring/launches-promoting.md) si la página es un lanzamiento
-* [Abrir en la interfaz de usuario clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si un administrador habilitó esta opción [3&rbrace;](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir en la interfaz de usuario clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si un administrador habilitó esta opción [3}](/help/sites-administering/enable-classic-ui-editor.md)
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones, cuando proceda.
 
@@ -303,7 +303,7 @@ Al editar una página existen varios modos que permiten realizar diferentes acci
 * [Diseño](/help/sites-authoring/default-components-designmode.md): permite habilitar o deshabilitar componentes para usarlos en una página y configurar el diseño del componente (si la página está basada en una [plantilla estática](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Segmentación:](/help/sites-authoring/content-targeting-touch.md) aumente la relevancia del contenido mediante la segmentación y efectuando mediciones en todos los canales.
-* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor): muestra los datos de Analytics para la página.
+* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor): muestra datos de Analytics para la página.
 
 * [Deformación de tiempo](/help/sites-authoring/working-with-page-versions.md#timewarp): le permite ver el estado de una página en un momento determinado.
 * [Estado de Live Copy](/help/sites-authoring/editing-content.md#live-copy-status): permite echar un vistazo rápido al estado de la Live Copy y de los componentes que se han heredado o no.
@@ -337,7 +337,7 @@ Al hacer clic en el botón **Abrir cuadro de diálogo de selección**, en el cam
 
 ![Abrir cuadro de diálogo de selección](do-not-localize/screen_shot_2018-03-22at154427.png)
 
-AEM Como alternativa, puede empezar a escribir en el campo de ruta y ofrece rutas de acceso coincidentes a medida que escribe.
+También puede empezar a escribir en el campo de ruta y AEM ofrece rutas coincidentes a medida que escribe.
 
 ![ateat-19](assets/ateat-19.png)
 

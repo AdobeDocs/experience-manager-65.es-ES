@@ -1,11 +1,11 @@
 ---
-title: AEM Selección de la interfaz de usuario en la
+title: Selección de la interfaz de usuario en AEM
 description: Configure la interfaz que utilizará para trabajar en Adobe Experience Manager 6.5.
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Selección de la IU{#selecting-your-ui}
 
-La IU táctil de Adobe Experience Manager AEM () ahora es la IU estándar y la paridad de características casi se ha alcanzado con la administración y edición de sitios. Sin embargo, puede haber ocasiones en que el usuario desee cambiar a la [IU clásica](/help/sites-classic-ui-authoring/classicui.md). Existen varias opciones para hacerlo.
+La IU táctil de Adobe Experience Manager (AEM) es ahora la IU estándar y la paridad de características casi se ha alcanzado con la administración y edición de sitios. Sin embargo, puede haber ocasiones en que el usuario desee cambiar a la [IU clásica](/help/sites-classic-ui-authoring/classicui.md). Existen varias opciones para hacerlo.
 
 >[!NOTE]
 >
@@ -108,11 +108,9 @@ El sistema puede anular la configuración definida por un usuario o un administr
 * Al crear páginas:
 
    * Se fuerza el uso del editor clásico al acceder a la página con `cf#` en la dirección URL. Por ejemplo:
-
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * Se fuerza el uso del editor táctil al usar `/editor.html` en la URL o al usar un dispositivo táctil. Por ejemplo:
-
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Cualquier forzamiento es temporal y solo es válido para la sesión del explorador

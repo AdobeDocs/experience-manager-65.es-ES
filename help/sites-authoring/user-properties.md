@@ -1,5 +1,5 @@
 ---
-title: Configuración del entorno de la cuenta
+title: 'Configuración del entorno de la cuenta  '
 description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 63%
@@ -71,7 +71,7 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
 
 * **Mostrar las acciones del escritorio para Assets**
 
-  AEM Esta opción requiere que utilice una aplicación de escritorio de la aplicación.
+  Esta opción requiere una aplicación de escritorio de AEM para su uso.
 
 * **Color de anotación**
 
@@ -82,7 +82,7 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
 
 * **Presentación de fecha relativa**
 
-  AEM Para mejorar la legibilidad, la función procesa las fechas dentro de los últimos siete días como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
+  Para mejorar la legibilidad, AEM procesa las fechas dentro de los últimos siete días como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
 
   Esta opción define el modo en que se muestran las fechas del sistema. Las opciones disponibles son las siguientes:
 
@@ -99,7 +99,7 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
 
 * **Habilitar métodos abreviados**
 
-  AEM admite varios métodos abreviados del teclado para mejorar la eficacia de la creación de contenido.
+  AEM admite varios métodos abreviados de teclado para mejorar la eficacia de la creación de contenido.
 
    * [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
@@ -110,7 +110,7 @@ Cada usuario puede establecer determinadas propiedades por sí mismo.
 
   Esta opción habilita la creación de páginas basada en la IU [clásica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md). De forma predeterminada, se utiliza la interfaz de usuario estándar.
 
-* **Activar la página principal de los recursos**
+* **Habilitar la página principal de los recursos**
 
   Esta opción solo está disponible si el administrador del sistema ha habilitado la experiencia de la página principal de Assets para toda la organización.
 

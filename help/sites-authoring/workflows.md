@@ -8,8 +8,8 @@ topic-tags: site-features
 exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 74%
@@ -18,7 +18,7 @@ ht-degree: 74%
 
 # Uso de flujos de trabajo{#working-with-workflows}
 
-AEM Los flujos de trabajo le permiten automatizar una serie de pasos que se realizan en (una o más) páginas o recursos.
+Los flujos de trabajo de AEM le permiten automatizar una serie de pasos que se realizan en (una o más) páginas o recursos.
 
 Por ejemplo, al publicar, un editor debe revisar el contenido antes de que un administrador del sitio active la página. Un flujo de trabajo que automatiza este ejemplo notifica a cada participante cuándo es el momento de realizar el trabajo necesario:
 

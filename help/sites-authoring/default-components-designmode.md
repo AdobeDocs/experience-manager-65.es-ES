@@ -4,8 +4,8 @@ description: Configuración de componentes de Adobe Experience Manager en el mod
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 10%
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # Configuración de componentes predeterminados en el modo Diseño{#configuring-components-in-design-mode}
 
-AEM Cuando se instala la instancia de forma predeterminada, una selección de componentes está disponible inmediatamente en el explorador de componentes.
+Cuando se instala una instancia de AEM de forma predeterminada, una selección de componentes está disponible inmediatamente en el explorador de componentes.
 
 Además de estos, también hay otros componentes disponibles. Puede usar el modo Diseño para [habilitar o deshabilitar estos componentes](#enable-disable-components). Cuando esté habilitado y ubicado en su página, puede usar el modo de diseño para [configurar aspectos del diseño del componente](#configuring-the-design-of-a-component) al editar los parámetros de atributo.
 
@@ -30,7 +30,7 @@ Además de estos, también hay otros componentes disponibles. Puede usar el modo
 >
 >El modo Diseño solo está disponible para configuraciones de diseño almacenadas como contenido en ( `/etc`).
 >
->AEM A partir de la versión 6.4, se recomienda almacenar diseños como datos de configuración en `/apps` para admitir escenarios de implementación continua. Los diseños almacenados en `/apps` no se pueden editar durante la ejecución y el modo Diseño no estará disponible para los usuarios que no sean administradores para estas plantillas.
+>A partir de AEM 6.4, se recomienda almacenar diseños como datos de configuración en `/apps` para admitir escenarios de implementación continua. Los diseños almacenados en `/apps` no se pueden editar durante la ejecución y el modo Diseño no estará disponible para los usuarios que no sean administradores para estas plantillas.
 
 Esto implica añadir o eliminar los componentes permitidos en el sistema de párrafos de la página. El sistema de párrafos (`parsys`) es un componente compuesto que contiene todos los demás componentes de párrafo. El sistema de párrafos permite a los autores añadir componentes de diferentes tipos a una página, ya que contiene todos los demás componentes de párrafo. Cada tipo de párrafo se representa como un componente.
 
@@ -71,7 +71,7 @@ Para habilitar o deshabilitar un componente:
 
 1. El icono **Configurar** para el sistema de párrafos se muestra en la barra de acciones del elemento principal.
 
-   ![Configurar](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![Configuración](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Seleccione esta opción para mostrar el cuadro de diálogo.
 
@@ -82,7 +82,7 @@ Para habilitar o deshabilitar un componente:
    El cuadro de diálogo tiene dos pestañas:
 
    * Componentes permitidos
-   * Ajustes
+   * Configuración
 
    **Componentes permitidos**
 
@@ -134,7 +134,7 @@ Para habilitar o deshabilitar un componente:
 
    La pestaña **Properties** le permite configurar los parámetros de diseño importantes del componente. Por ejemplo, para un componente de imagen puede definir el tamaño máximo y mínimo de la imagen permitido.
 
-   **Características**
+   **Funciones**
 
    La pestaña **Características** le permite habilitar o deshabilitar características adicionales del componente. Por ejemplo, para un componente de imagen puede definir la orientación de la imagen, las opciones de recorte disponibles y si se puede cargar una imagen.
 

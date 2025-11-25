@@ -8,10 +8,10 @@ topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '640'
 ht-degree: 5%
 
 ---
@@ -74,28 +74,28 @@ Los miembros del grupo de usuarios administradores de Analytics pueden configura
 
 ### Apertura de perspectivas de contenido desde sitios {#opening-content-insights-from-sites}
 
-Abra [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la efectividad de la página.
+Abra [Insight de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la efectividad de la página.
 
 1. En la consola Sitios, seleccione la página para la que desea ver las perspectivas de contenido.
-1. En la barra de herramientas, haga clic en el icono Analytics y Recommendations.
+1. En la barra de herramientas, haga clic en el icono Analytics and Recommendations.
 
    ![Icono de Analytics y Recommendations](do-not-localize/chlimage_1-16a.png)
 
-## Analytics visible desde el editor de páginas (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## Análisis visible desde el Editor de páginas (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
->Esto se muestra si el Activity Map [se ha configurado](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) para su sitio web.
+>Esto se muestra si [Activity Map se ha configurado](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) para su sitio web.
 
 >[!NOTE]
 >
->Los datos del Activity Map se toman de Adobe Analytics.
+>Los datos de Activity Map se toman de Adobe Analytics.
 
-Cuando tu sitio web se haya [configurado para Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puedes usar el [Activity Map de modo](/help/sites-authoring/author-environment-tools.md#page-modes) para ver los datos relevantes. Por ejemplo:
+Cuando tu sitio web se haya [configurado para Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puedes usar el [modo Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) para ver los datos relevantes. Por ejemplo:
 
 ![aa-07](assets/aa-07.png)
 
-### Acceso al Activity Map {#accessing-the-activity-map}
+### Acceso a Activity Map {#accessing-the-activity-map}
 
 Después de seleccionar el modo [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes), se le pedirá que introduzca sus credenciales de Adobe Analytics.
 
@@ -105,9 +105,9 @@ Se muestra la barra de herramientas flotante **Analytics**; aquí puede:
 
 * cambiar el formato de la barra de herramientas con las flechas dobles (**>**)
 * Alternar Detalles de página (icono en forma de ojo)
-* Configuración del Activity Map (icono del engranaje)
+* Configuración de Activity Map (icono del engranaje)
 * Seleccione los análisis que desea mostrar (varios selectores desplegables)
-* Salga del Activity Map y cierre la barra de herramientas (x)
+* Salga de Activity Map y cierre la barra de herramientas (x)
 
 ![aa-09](assets/aa-09.png)
 
@@ -125,13 +125,13 @@ Puede seleccionar los datos analíticos que se van a mostrar y cómo se deben mo
 
 ![aa-13](assets/aa-13.png)
 
-### Configuración del Activity Map {#configuring-the-activity-map}
+### Configuración de Activity Map {#configuring-the-activity-map}
 
-Use el icono **Mostrar configuración** para abrir el cuadro de diálogo **Configuración del Activity Map**.
+Use el icono **Mostrar configuración** para abrir el cuadro de diálogo **Configuración de Activity Map**.
 
 ![aa-04-1](assets/aa-04-1.png)
 
-El cuadro de diálogo **Configuración del Activity Map** proporciona una serie de opciones en tres fichas:
+El cuadro de diálogo **Configuración de Activity Map** proporciona una serie de opciones en tres fichas:
 
 ![aa-06](assets/aa-06.png)
 

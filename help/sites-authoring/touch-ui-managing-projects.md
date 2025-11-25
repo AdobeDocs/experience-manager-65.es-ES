@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 18%
@@ -27,7 +27,7 @@ Con la consola, puede crear un proyecto, asociar recursos al proyecto y también
 
 ## Requisitos de acceso {#access-requirements}
 
-AEM Los proyectos son una característica de la estándar y no requieren ninguna configuración adicional.
+Los proyectos son una función estándar de AEM y no requieren ninguna configuración adicional.
 
 Sin embargo, para que los usuarios de los proyectos puedan ver a otros usuarios o grupos mientras utilizan Proyectos como, por ejemplo, al crear proyectos, crear tareas/flujos de trabajo o ver y administrar el equipo, dichos usuarios necesitan tener acceso de lectura en `/home/users` y `/home/groups`.
 
@@ -91,7 +91,7 @@ Para abrir un mosaico para poder ver o modificar elementos, haga lo siguiente:
 
    ![Mosaico de tareas](assets/project-tile-tasks.png)
 
-1. AEM Abre la consola para los tipos de elementos asociados con el mosaico y los filtros en función del proyecto seleccionado.
+1. AEM abre la consola para los tipos de elementos asociados con el mosaico y filtra en función del proyecto seleccionado.
 
    ![Tareas de proyecto](assets/project-tasks.png)
 
@@ -153,10 +153,10 @@ Siga estos pasos para eliminar un proyecto.
 1. Vaya al nivel superior de la consola **Proyectos**.
 1. Selección del proyecto en la consola.
 1. Haga clic en **Eliminar** en la barra de herramientas.
-1. AEM Se pueden eliminar o modificar los datos de proyecto asociados al eliminar el proyecto. Seleccione las opciones que necesite en el cuadro de diálogo **Eliminar proyecto**.
+1. AEM puede eliminar o modificar los datos de proyecto asociados al eliminar el proyecto. Seleccione las opciones que necesite en el cuadro de diálogo **Eliminar proyecto**.
    * Eliminar los grupos y las funciones de proyecto
    * Eliminar carpeta Assets del proyecto
-   * Completar los flujos de trabajo del proyecto
+   * Terminar los flujos de trabajo del proyecto
 
    ![Opciones de eliminación de proyecto](assets/project-delete-options.png)
 1. Haga clic en **Eliminar** para eliminar el proyecto con las opciones seleccionadas.

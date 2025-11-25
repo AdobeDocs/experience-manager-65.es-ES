@@ -4,9 +4,9 @@ description: Defina las propiedades necesarias para una página en Adobe Experie
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 38%
@@ -89,13 +89,13 @@ Por ejemplo, si la URL de vanidad se establece en `welcome` para la página iden
 
 >[!CAUTION]
 >
->URL de vanidad:
+>URL mnemónica:
 >
 >* Debe ser único.
 >* No admiten patrones regex.
 >* No debe configurarse en una página existente.
 
-Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
+Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
 
 * **Agregar**: toque o haga clic para agregar una URL de vanidad.
 * **Quitar**: toque o haga clic para quitar una URL de vanidad.
@@ -106,7 +106,7 @@ Configure Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Ha
 #### Configuración {#settings}
 
 * **Idioma**: el idioma de la página
-* **Raíz del idioma**: si la página es la raíz de una copia en un idioma, es necesario marcar esta opción
+* **Raíz del idioma**: si la página es la raíz de una copia de idioma, es necesario marcar esta opción
 * **Redirigir**: indica la página a la cual esta deberá redirigirse automáticamente
 * **Diseño** - Indica el [diseño](/help/sites-developing/designer.md) que se usará para esta página.
 * **Alias**: especifica un alias que se usará con esta página

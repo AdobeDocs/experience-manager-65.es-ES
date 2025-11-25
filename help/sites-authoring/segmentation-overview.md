@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 46%
@@ -42,7 +42,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 
 **Usuario**: Un usuario es un visitante que se registra con el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan una identificación adicional, como una dirección de correo electrónico y el sexo, entre otros. También se puede recopilar información adicional, como actividad de la comunidad y patrones de compra, entre otros. A partir de la información proporcionada en el perfil, se puede crear un perfil demográfico.
 
-**Pista**: Una pista es una característica o propiedad de un visitante que se puede usar para determinar la pertenencia en un segmento específico.
+**Pista**: Una pista es una característica o propiedad de un visitante que se puede usar para determinar el abono a un segmento específico.
 
 **Segmento**: Un segmento es un conjunto de visitantes que comparten determinadas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
 
@@ -59,7 +59,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 * Ingresos
 * Tamaño de familia
 * Estado civil
-* Sexo
+* Género
 * Lugar de residencia
 
 **Características derivadas**: Algunas características demográficas son difíciles de determinar sin registro, pero se pueden obtener combinando características demográficas y de comportamiento.
@@ -68,7 +68,7 @@ Por ejemplo, si combina la dirección URL de referencia (como característica de
 
 **Subsegmentos**: Un segmento se puede subdividir en varios subsegmentos. Esto se lleva a cabo definiendo características adicionales.
 
-**Página teaser**: Una página de teaser se dirige a una audiencia específica. Contiene contenido reutilizable que se puede utilizar en el párrafo de teaser.
+**Página teaser**: Una página de teaser se dirige a un público específico. Contiene contenido reutilizable que se puede utilizar en el párrafo de teaser.
 
 **Campaña**: Una campaña es una colección de páginas de teaser y de páginas de marketing por correo electrónico como, por ejemplo, newsletters o invitaciones. Una campaña se suele llevar a cabo durante un período limitado y está precedida de otra campaña.
 

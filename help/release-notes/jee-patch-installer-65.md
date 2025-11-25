@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
-workflow-type: ht
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[Contacte con Asistencia](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support) para obtener más información o el parche.
+>[Contacte con Asistencia](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support) para obtener más información o el parche.
 
 ## Acerca del programa de instalación de parches {#about-the-patch-installer}
 
@@ -97,4 +97,4 @@ Si tiene configurada la autenticación SAML y tiene problemas con metadatos de I
 * Seguridad de los documentos
 * Base JEE
 
-[Contacto con Asistencia](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support)
+[Contacto con Asistencia](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support)
