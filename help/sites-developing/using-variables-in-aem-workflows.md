@@ -1,6 +1,6 @@
 ---
 title: Variables en flujos de trabajo de AEM
-description: AEM Cree una variable, establezca un valor para ella y utilícela en los pasos OR Split y Goto del flujo de trabajo de la.
+description: Cree una variable, establezca un valor para ella y utilícela en los pasos del flujo de trabajo OR Split y Goto AEM.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
@@ -9,10 +9,10 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: bdbf9b73553c42865560c76eebab76e2fc397fdf
+source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 78%
+source-wordcount: '1942'
+ht-degree: 77%
 
 ---
 
@@ -24,13 +24,13 @@ En los modelos de flujo de trabajo de AEM, puede hacer lo siguiente:
 
 * [Crear una variable](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable) de un tipo de datos basada en el tipo de información que desea almacenar en él.
 * [Configurar un valor para la variable](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable) mediante el paso del flujo de trabajo Establecer variable.
-* AEM [Use la variable](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) en los pasos OR Split y Goto del flujo de trabajo para que pueda definir una expresión para tomar decisiones de enrutamiento. También puede utilizar variables en todos los pasos del flujo de trabajo de AEM Forms.
+* [Use la variable](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) en los pasos de flujo de trabajo OR Split y Goto AEM para poder definir una expresión para tomar decisiones de enrutamiento. También puede utilizar variables en todos los pasos del flujo de trabajo de AEM Forms.
 
 En el siguiente vídeo se muestra cómo crear, establecer y utilizar variables en los modelos de flujo de trabajo de AEM:
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
+[Usar variables en vídeo](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
 Las variables son una extensión de la interfaz [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). Puede usar [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) en ECMAScript para acceder a los metadatos guardados mediante el uso de variables.
 
@@ -49,7 +49,7 @@ Para ver los tipos de datos complejos adicionales disponibles en los flujos de t
 
 Para crear una variable,
 
-1. AEM En una instancia de, vaya a Herramientas > Flujo de trabajo > Modelos.
+1. En una instancia de AEM, vaya a Herramientas > Flujo de trabajo > Modelos.
 1. Seleccione **[!UICONTROL Crear]** y especifique el título y un nombre opcional para el modelo de flujo de trabajo. Seleccione el modelo y seleccione **[!UICONTROL Editar]**.
 1. Seleccione el icono de variables disponible en la barra de tareas del modelo de flujo de trabajo y seleccione **[!UICONTROL Agregar variable]**.
 
@@ -104,7 +104,7 @@ Seleccione una variable de tipo XML que desee almacenar en un archivo XML. Consu
 
 En este ejemplo, seleccione una variable XML **formdata** para almacenar el archivo **cc-app.xml**. Consulte la variable **formdata** para poder establecer el valor de la variable en cadena **emailaddress** para almacenar el valor de la propiedad **emailAddress** disponible en el archivo **cc-app.xml**.
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Establecer el valor de una variable")
+[Definir vídeo de variable](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### Ejemplo 2: Usar una expresión para almacenar valores según otras variables {#example2}
 
@@ -114,7 +114,7 @@ En este ejemplo, utilice el editor de expresiones para definir una expresión pa
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[Vídeo de expresión de variables](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Usar el editor de expresiones {#use-expression-editor}
 
@@ -151,19 +151,19 @@ Puede utilizar variables para recuperar entradas y salidas o para guardar el res
 
 El paso Ir a, OR Split y todos los pasos del flujo de trabajo de AEM Forms admiten variables.
 
-#### Paso OR Split {#or-split-step}
+#### Paso División O {#or-split-step}
 
-OR Splits crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
+División O crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
 
 Puede definir la expresión de enrutamiento para una rama mediante una definición de regla, un script ECMA o un script externo.
 
-Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso OR Split, consulte [Paso OR Split](/help/sites-developing/workflows-step-ref.md#or-split).
+Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso División O, consulte [Paso División O](/help/sites-developing/workflows-step-ref.md#or-split).
 
 En este ejemplo, antes de definir la expresión de enrutamiento, utilice el [ejemplo 2](/help/sites-developing/using-variables-in-aem-workflows.md#example2) para establecer el valor de la variable **totalvalue**. La rama 1 está activa si el valor de la variable **totalvalue** es mayor que 50 000. Del mismo modo, puede definir una regla para que la rama 2 se active si el valor de la variable **totalvalue** es menor que 50 000.
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[O vídeo dividido](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 Del mismo modo, seleccione una ruta de script externa o especifique el script ECMA para las expresiones de enrutamiento para evaluar la rama activa. Seleccione **[!UICONTROL Cambiar nombre de rama]** para especificar un nombre alternativo para la rama.
 
@@ -173,7 +173,7 @@ Para ver más ejemplos, consulte [Crear un modelo del flujo de trabajo](/help/fo
 
 El **Paso Goto** le permite especificar el siguiente paso que se ejecutará en el modelo de flujo de trabajo, según el resultado de una expresión de enrutamiento.
 
-De forma similar al paso OR Split, puede definir la expresión de enrutamiento para el paso Ir a mediante una definición de regla, un script ECMA o un script externo.
+De forma similar al paso División O, puede definir la expresión de enrutamiento para el paso Ir a mediante una definición de regla, un script ECMA o un script externo.
 
 Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso Ir a, consulte [Paso Ir a](/help/sites-developing/workflows-step-ref.md#goto-step).
 
