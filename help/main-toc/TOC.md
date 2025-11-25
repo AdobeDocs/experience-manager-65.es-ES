@@ -876,9 +876,9 @@ ht-degree: 99%
       + [Proteger un documento en nombre de otro usuario](/help/forms/using/protect-document-on-behalf-of-another-user.md)
    + Forms Designer {#use-forms-designer}
       + [Ayuda de Forms Designer](/help/forms/using/forms-designer-help.md)
-      + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
-      + [Tutoriales de inicio rápido de Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-      + [Muestras de Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+      + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)
+      + [Tutoriales de inicio rápido de Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
+      + [Muestras de Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_designer_samples_65_es)
       + [Conceptos básicos de scripts en Designer &#x200B;](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_es)
       + [Referencia de scripts en Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_es)
       + [Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
