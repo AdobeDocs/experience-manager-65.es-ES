@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6aba1c1d5451adcaa139c15adc2a7056419b8341
+source-git-commit: 1fb7c9b718896b18471b2bd86fab3c351d50312e
 workflow-type: tm+mt
 source-wordcount: '8932'
 ht-degree: 26%
@@ -28,7 +28,7 @@ ht-degree: 26%
 | -------- | ---------------------------- |
 | Versión | 6.5.24.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Tipo | Versión del Service Pack |
-| Fecha | viernes, 20 de noviembre de 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Fecha | jueves, 26 de noviembre de 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Descargar URL | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 <!-- OLD DOWNLOAD URL
@@ -714,6 +714,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
