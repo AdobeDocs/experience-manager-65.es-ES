@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 1fb7c9b718896b18471b2bd86fab3c351d50312e
+source-git-commit: 6eccdab5cd492686dda2aca3fee4df171a2d9011
 workflow-type: tm+mt
 source-wordcount: '8932'
 ht-degree: 26%
@@ -508,7 +508,7 @@ Si no se instala este paquete, las consultas de GraphQL pueden ser lentas o dar 
 
 ### UberJar{#uber-jar}
 
-UberJar para [!DNL Experience Manager] 6.5.24.0 está disponible en el [repositorio de Maven Central](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.22/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+UberJar para [!DNL Experience Manager] 6.5.24.0 está disponible en el [repositorio de Maven Central](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.24/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Para utilizar UberJar en un proyecto de Maven, consulte [cómo usar UberJar](/help/sites-developing/ht-projects-maven.md) e incluya la siguiente dependencia en el POM de su proyecto: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -714,6 +714,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
