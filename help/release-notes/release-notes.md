@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6eccdab5cd492686dda2aca3fee4df171a2d9011
+source-git-commit: 2580bb494bb81da0a923a34c88d37933d7575bec
 workflow-type: tm+mt
-source-wordcount: '8932'
+source-wordcount: '8905'
 ht-degree: 26%
 
 ---
@@ -393,11 +393,9 @@ La publicación de actividades de AEM Target ya no falla cuando los autores esta
 #### Security{#foundation-security-6524}
 -->
 
-
 #### Sling{#foundation-sling-6524}
 
-* Se ha corregido el comportamiento de almacenamiento en caché en páginas protegidas con SAML. AEM agrega el control de caché adecuado y varía los metadatos para las sesiones autenticadas, de modo que los proxies y Dispatcher omiten el almacenamiento en caché de las respuestas personalizadas. El contenido anónimo sigue almacenándose en la caché con normalidad, mientras que las vistas iniciadas siguen siendo específicas del usuario. (NPR-42640)
-
+* Se ha corregido un error inesperado de compilación de JSP con el paquete `org.apache.sling.scripting.jsp:2.6.0`. (SLING-12442)
 * La plataforma actualiza el motor principal de Sling de 2.16.2 a 2.16.6. El nuevo motor endurece la validación de entrada y estabiliza el procesamiento de solicitudes bajo carga. (NPR-43105)
 
 #### Editor SPA {#foundation-spa-editor-6524}
@@ -714,6 +712,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
