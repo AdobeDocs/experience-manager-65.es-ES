@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 69761b38aec51f080e53235ae3cff5d4049427f2
 workflow-type: tm+mt
 source-wordcount: '1722'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 | Producto | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versión | 6.5.23.0 |
+| Versión | 6.5.24.0 |
 | Tipo | Versión del Service Pack |
-| Fecha | 6 de junio de 2025 |
+| Fecha | 4 de diciembre de 2025 |
 | Descargar URL | [Últimas versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) |
 
 >[!NOTE]
