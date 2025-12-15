@@ -1,20 +1,20 @@
 ---
 title: Administración de los fragmentos de contenido
-description: Aprenda a utilizar la consola de Assets AEM para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
+description: Aprenda a utilizar la consola de Assets para administrar los fragmentos de contenido de AEM, la base del contenido sin encabezado.
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 75%
+source-wordcount: '1728'
+ht-degree: 74%
 
 ---
 
 # Administración de los fragmentos de contenido {#managing-content-fragments}
 
-Aprenda a utilizar la consola de Assets AEM para administrar los fragmentos de contenido de la, la base del contenido sin encabezado.
+Aprenda a utilizar la consola de Assets para administrar los fragmentos de contenido de AEM, la base del contenido sin encabezado.
 
 Después de definir los [Modelos de fragmento de contenido](#creating-a-content-model) puede utilizarlas para [crear los fragmentos de contenido](#creating-a-content-fragment).
 
@@ -34,6 +34,10 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 >
 >* al crear páginas; consulte [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md).
 >* para [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+
+>[!NOTE]
+>
+>Tenga en cuenta las [Prácticas recomendadas](/help/assets/content-fragments/content-fragments.md#best-practices) al trabajar con los modelos de fragmentos de contenido y los fragmentos de contenido.
 
 >[!NOTE]
 >
@@ -123,7 +127,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 
 >[!NOTE]
 >
->Muchas de estas son [acciones estándar para Assets AEM](/help/assets/manage-assets.md) y/o la [aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es) de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la aplicación .
+>Muchas de ellas son [acciones estándar para Assets](/help/assets/manage-assets.md) y/o la [aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es).
 
 ## Apertura del editor de fragmentos {#opening-the-fragment-editor}
 
