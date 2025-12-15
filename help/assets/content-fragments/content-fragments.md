@@ -5,21 +5,23 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 73ec9a0420206ef2cc60a12d316073a443c1d20d
+source-git-commit: e71050fe23cc4c436859776918637158098864ef
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2331'
 ht-degree: 59%
 
 ---
 
 # Trabajar con fragmentos de contenido {#working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM), los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de cualquier página](/help/sites-authoring/content-fragments.md). Permiten preparar contenido listo para usar en varias ubicaciones/en varios canales, lo que resulta ideal para una entrega sin encabezado.
+Con Adobe Experience Manager (AEM), los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de cualquier página](/help/sites-authoring/content-fragments.md). Permiten preparar el contenido para utilizarlo en varias ubicaciones o en varios canales, lo que resulta ideal para entregas sin encabezado.
 
 Los fragmentos de contenido incluyen contenido estructurado:
 
 * Se basan en un [Modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md), que predefine una estructura para el fragmento resultante.
+
 * La estructura puede variar entre lo siguiente:
+
    * Básico
       * Por ejemplo, un campo de texto de varias líneas.
       * Se utiliza para preparar contenido directo para su uso en la creación de páginas.
