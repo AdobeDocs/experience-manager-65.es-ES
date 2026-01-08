@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 6d29cc96630292d075597f80043075972b242a8b
+source-git-commit: 965585c68107bf3e8a9e118b80f7d46f2dbda852
 workflow-type: tm+mt
-source-wordcount: '3809'
-ht-degree: 45%
+source-wordcount: '3693'
+ht-degree: 46%
 
 ---
 
@@ -106,8 +106,8 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 >[!NOTE]
 >
 >Para ayudar a los clientes de AEM Forms a reducir el coste de propiedad, simplificar la arquitectura de implementación y modernizar la pila de desarrollo, la plataforma empresarial de Adobe Experience Manager se aleja de las implementaciones basadas en servidores de aplicaciones en favor de implementaciones independientes basadas en OSGi. Adobe sigue siendo compatible con la pila JEE de AEM Forms con una matriz reducida de componentes de infraestructura.
->&#x200B;><br>
->&#x200B;>Con la versión 6.5, ya no se admiten los componentes de infraestructura que tengan el menor uso entre los clientes de Adobe, de la siguiente manera:
+><br>
+>Con la versión 6.5, ya no se admiten los componentes de infraestructura que tengan el menor uso entre los clientes de Adobe, de la siguiente manera:
 >
 > - Base de datos IBM® DB2®
 > - Sistemas operativos IBM® AIX® y Sun Solaris™
@@ -227,7 +227,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
  </tr>
  <tr>
  <tr>
-  <td>MySQL 8,4</td>
+  <td>MySQL 8.4</td>
   <td>-</td>
   <td>R: Compatibilidad restringida</td>
  </tr>
@@ -423,7 +423,7 @@ Tenga en cuenta las siguientes excepciones al elegir una plataforma para configu
 1. El repositorio CRX admite la persistencia de tipo TarMK, MongoDB y bases de datos relacionales (RDBMK). No puede tener dos sistemas de base de datos diferentes entre el servidor de aplicaciones y el repositorio CRX. Sin embargo, en AEM Forms en un entorno JEE, puede utilizar MongoMK con el repositorio de CRX y una base de datos relacional compatible con el servidor de aplicaciones.
 @@ -432,12 +359,12 @@ Considere las siguientes excepciones al elegir una plataforma para configurar su AEM F
 1. Las versiones de JDK superiores a 1.8.0_281 no son compatibles con el servidor WebLogic. (FORMS-8498)
-1. No se admite JDK 11.0.20 para instalar AEM Forms en el instalador JEE. Solo se admite JDK 11.0.19 o versiones anteriores para instalar AEM Forms en el instalador JEE.
+1. No se admite JDK 11.0.20 para instalar AEM Forms en el programa de instalación JEE. Solo se admite JDK 11.0.19 o versiones anteriores para instalar AEM Forms en el instalador JEE.
 
 1. [!DNL Microsoft® Windows Server 2019] no admite [!DNL MySQL 5.7] y [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] no admite instalaciones llave en mano para [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312)
 
@@ -516,59 +516,42 @@ La aplicación de AEM Forms ahora es compatible con Apache Cordova. A continuaci
 ### Consideraciones para PDF Generator
 
 <table>
-<tbody>
- <tr>
-  <th><p><strong>Producto</strong></p> </th>
-  <th><p><strong>Formatos compatibles para la conversión a PDF</strong></p> </th>
- </tr>
- <tr>
+ <tbody>
+  <tr>
+   <th><p><strong>Producto</strong></p> </th>
+   <th><p><strong>Formatos compatibles para la conversión a PDF</strong></p> </th>
+  </tr>
+  <tr>
    <td><a href="https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versión más reciente</td>
    <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML y HTM</td>
   </tr>
- <tr>
-  <td>Microsoft® Office 2021  </td>
-  <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
- </tr>
- </tr>
 
 <tr>
-  <td>WordPerfect 2020<br /> </td>
-  <td>WP, WPD</td>
- </tr>
- <tr>
-  <td>Microsoft® Publisher 2019<br /> </td>
-  <td>PUB</td>
- </tr>
- <tr>
-  <td>Microsoft® Publisher 2021<br /> </td>
-  <td>PUB</td>
- </tr>
- <tr>
-  <td>OpenOffice 4.1.10</td>
-  <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF y TXT</td>
- </tr>
-</tbody>
-</table>
+   <td>Microsoft® Office 2021 Professional Plus, licencias por volumen y venta minorista</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
+  </tr>
+  <tr>
+   <td>
+    <strong>OpenOffice 4.1.15</strong>   </td>
+   <td>
+    ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF y TXT<br>
 
+</td>
+  </tr>
+ </tbody>
+</table>
 
 >[!NOTE]
 >
->El generador de PDF solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
->
->Además,:
->
+>- El generador de PDF solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
 >- PDF Generator requiere Adobe Acrobat Pro DC (32 bits) para realizar la conversión.
 >- PDF Generator solo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
->- La instalación de Microsoft® Office Professional Plus puede utilizar licencias por volumen basadas en Retail o MAK/KMS/AD.
 >- Si una instalación de Microsoft® Office se desactiva o deja de tener licencia debido a algún motivo, como una instalación con licencia por volumen que no puede localizar un host KMS en un período especificado, las conversiones pueden fallar hasta que se vuelva a otorgar la licencia a la instalación y se vuelva a activar.
 >- PDF Generator no admite Microsoft® Office 365.
->- PDF Generator admite la versión de 32 bits de OpenOffice en el sistema operativo Linux®.
->- Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux®.
+>- Las conversiones de PDF Generator para OpenOffice son compatibles con Windows y Linux®.
 >- Las características de PDF, Optimizar PDF y Exportar PDF de OCR solo son compatibles con Windows.
->- Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para usarlo con el generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según su implementación ([Local](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
->- El servicio PDF Generator no es compatible con Microsoft® Windows 10.
->- PDF Generator no puede convertir archivos con Microsoft® Visio 2019.
->- PDF Generator no puede convertir archivos con Microsoft® Project 2019.
+>- El servicio PDF Generator no es compatible con Microsoft® Windows 11.
+
 
 PDF Generator solo admite la versión de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión.
 
@@ -819,7 +802,7 @@ AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones adem
 ## Directiva de compatibilidad de parches de terceros {#third-party-patch-support-policy}
 
 
-Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65_es](https://adobe.com/go/learn_aemforms_documentation_65_es) .
+Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_es) .
 
 
 AEM Forms en plataformas de referencia de terceros de JEE indica el nivel de parche específico de la infraestructura de terceros que se actualizó durante el desarrollo y lanzamiento de AEM Forms en JEE, y desde el nivel mínimo de parches/service pack de la infraestructura compatible con esa versión de AEM Forms en JEE.
@@ -849,7 +832,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -920,7 +903,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
