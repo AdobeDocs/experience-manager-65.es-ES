@@ -5,22 +5,25 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: eb059bc4c9f4b5064b8038a2b037670086a9139b
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 0%
+source-wordcount: '632'
+ht-degree: 6%
 
 ---
 
+
 # Activación y visualización de informes de transacciones para AEM Forms en JEE {#transaction-reports-overview}
 
-<!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+<span>: la capacidad Informes de transacciones se ha introducido para AEM Forms en JEE desde AEM Forms 6.5.20.0. Esta característica está deshabilitada de manera predeterminada y se puede habilitar desde la interfaz de usuario de administración.</span>
 
-* Submission of a document
-* Rendition of a document
-* Conversion of a document from one file format to another 
+Los informes de transacciones de AEM Forms en JEE permiten mantener un recuento de todas las transacciones realizadas en la implementación de AEM Forms. El objetivo es proporcionar información sobre el uso del producto y ayudar a las partes interesadas empresariales a comprender sus volúmenes de procesamiento digital. Algunos ejemplos de transacciones son:
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.-->
+* Presentación de un documento
+* Representación de un documento
+* Conversión de un documento de un formato de archivo a otro
+
+Para obtener más información sobre lo que se considera una transacción, consulte [API facturables](../../forms/using/transaction-reports-billable-apis-jee.md).
 
 ## Habilitar informes de transacciones {#enable-transaction-reporting}
 
@@ -53,7 +56,7 @@ El informe de transacciones a través del panel proporciona el número total de 
 1. Vaya a `/adminui` en su AEM Forms en JEE, por ejemplo: `http://10.13.15.08:8080/adminui`.
 1. Inicie sesión como **administrador**.
 1. Haga clic en Monitor de estado.
-1. Vaya a la ficha **Informador de transacciones**, haga clic en **Calcular transacciones totales** y verá que un gráfico circular representa el número de PDF forms: enviados, procesados o convertidos.
+1. Vaya a la ficha **Informador de transacciones**, haga clic en **Calcular transacciones totales** y verá que un gráfico circular representa el número de PDF forms enviados, procesados o convertidos.
 
 ![sample-transaction-report-jee](assets/transaction-piechart.png)
 
