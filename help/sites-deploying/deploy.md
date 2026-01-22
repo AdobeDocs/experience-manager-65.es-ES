@@ -10,10 +10,10 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+source-git-commit: 36cb540cda7faeca5949028c9c14ab2ecf860402
 workflow-type: tm+mt
 source-wordcount: '1779'
-ht-degree: 5%
+ht-degree: 9%
 
 ---
 
@@ -44,17 +44,17 @@ Una vez que se haya familiarizado con estos conceptos básicos, encontrará info
 * [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
 * [Instalación independiente personalizada](/help/sites-deploying/custom-standalone-install.md)
 * [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
-* [Solución de problemas](/help/sites-deploying/troubleshooting.md)
-* [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
+* [Resolución de problemas](/help/sites-deploying/troubleshooting.md)
+* [Inicio y detención de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configuración](/help/sites-deploying/configuring.md)
 * [Actualización a AEM 6.5](/help/sites-deploying/upgrade.md)
-* [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
+* [Comercio electrónico](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
 * [Consola web](/help/sites-deploying/web-console.md)
 * [Solución de problemas de replicación](/help/sites-deploying/troubleshoot-rep.md)
 * [Prácticas recomendadas](/help/sites-deploying/best-practices.md)
 * [Implementación de comunidades](/help/communities/deploy-communities.md)
-* [Introducción a la plataforma de AEM](/help/sites-deploying/platform.md)
+* [Introducción a AEM Platform](/help/sites-deploying/platform.md)
 * [Directrices de rendimiento](/help/sites-deploying/performance-guidelines.md)
 * [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [¿Qué es AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es)
@@ -140,7 +140,7 @@ Mientras que las instancias de producción se ejecutan en máquinas dedicadas qu
 
 Para familiarizarse y desarrollar en AEM, es común utilizar una instancia instalada en su equipo local que ejecute Apple OS X o versiones de escritorio de Microsoft® Windows o Linux®.
 
-En el lado del cliente, AEM funciona con todos los exploradores modernos (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; &#x200B;**, **Firefox &#x200B;** 47+, **Safari** 8+) en los sistemas operativos de escritorio y tableta. Consulte [Plataformas de cliente compatibles](/help/sites-deploying/technical-requirements.md#supported-client-platforms) para obtener más información.
+En el lado del cliente, AEM funciona con todos los exploradores modernos (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) en los sistemas operativos de escritorio y tableta. Consulte [Plataformas de cliente compatibles](/help/sites-deploying/technical-requirements.md#supported-client-platforms) para obtener más información.
 
 ### Obtención del software {#getting-the-software}
 
@@ -160,7 +160,7 @@ En la siguiente sección describimos la **instalación independiente**. Para obt
 
    Ubicación de instalación de UNIX®: **/opt/aem**
 
-   Ubicación de instalación de Windows: **`C:\Program Files\aem`**
+   Ubicación de instalación de Windows: **`C:\aem`**
 
    Del mismo modo, es común instalar instancias de ejemplo en una carpeta directamente en el escritorio. En cualquier caso, Adobe hace referencia a esta ubicación de forma genérica como:
 
@@ -276,7 +276,7 @@ Esta carpeta contiene los siguientes scripts de shell bash de UNIX®:
 
 También hay **`bat`** archivos equivalentes para Windows. Para obtener información más detallada, consulte:
 
-* [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
+* [Inicio y detención de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 
 AEM se inicia y redirige automáticamente el explorador web a la página adecuada, normalmente la página de inicio de sesión; por ejemplo:
 
@@ -287,7 +287,7 @@ AEM se inicia y redirige automáticamente el explorador web a la página adecuad
 Una vez que haya iniciado sesión, tendrá acceso a AEM. Para obtener más información, según su función, consulte lo siguiente:
 
 * [Creación](/help/sites-authoring/first-steps.md)
-* [Administración &#x200B;](/help/sites-administering/home.md)
+* [Administración ](/help/sites-administering/home.md)
 * [Desarrollo](/help/sites-developing/getting-started.md)
 * [Administración](/help/managing/best-practices.md)
 
@@ -299,17 +299,17 @@ La sección anterior le proporcionará una buena comprensión de los conceptos b
 * [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md)
 * [Instalación independiente personalizada](/help/sites-deploying/custom-standalone-install.md)
 * [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
-* [Solución de problemas](/help/sites-deploying/troubleshooting.md)
-* [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
+* [Resolución de problemas](/help/sites-deploying/troubleshooting.md)
+* [Inicio y detención de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configuración](/help/sites-deploying/configuring.md)
 * [Actualización a AEM 6.5](/help/sites-deploying/upgrade.md)
-* [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
+* [Comercio electrónico](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Artículos sobre procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
 * [Consola web](/help/sites-deploying/web-console.md)
 * [Solución de problemas de replicación](/help/sites-deploying/troubleshoot-rep.md)
 * [Prácticas recomendadas](/help/sites-deploying/best-practices.md)
 * [Implementación de comunidades](/help/communities/deploy-communities.md)
-* [Introducción a la plataforma de AEM](/help/sites-deploying/platform.md)
+* [Introducción a AEM Platform](/help/sites-deploying/platform.md)
 * [Directrices de rendimiento](/help/sites-deploying/performance-guidelines.md)
 * [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [¿Qué es AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es)
