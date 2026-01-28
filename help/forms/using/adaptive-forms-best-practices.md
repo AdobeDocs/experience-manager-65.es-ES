@@ -7,9 +7,9 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 6ec4eca0c0ad5ecfe18ffc766e6415a0f48506a9
+source-git-commit: 5699f5814daf16a397eb6129b881ac2035456e39
 workflow-type: tm+mt
-source-wordcount: '5963'
+source-wordcount: '5888'
 ht-degree: 71%
 
 ---
@@ -67,7 +67,7 @@ Una vez configurado el proyecto de AEM, defina una estrategia para crear y perso
 * AEM Forms permite crear formularios adaptables basados en los siguientes modelos de formulario. Los modelos de formulario actúan como interfaz para el intercambio de datos entre un formulario y el sistema de AEM y proporcionan una estructura basada en XML para el flujo de datos dentro y fuera de un formulario adaptable. Además, los modelos de formulario imponen reglas y restricciones en los formularios adaptables en forma de restricciones de esquema y XFA.
 
    * **Ninguno**: los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
-   * **Esquema XML o JSON**: los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles en la pestaña Objeto del modelo de datos del explorador de contenidos para crear formularios adaptables. Puede arrastrar y soltar los elementos de esquema para crear el formulario.
+   * **Esquema XML o JSON**: los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles en la pestaña Objeto de modelo de datos del explorador de contenidos para crear formularios adaptables. Puede arrastrar y soltar los elementos de esquema para crear el formulario.
    * **Plantilla de formulario XFA**: es un modelo de formulario ideal si tiene inversiones en formularios HTML5 basados en XFA. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.
    * **Modelo de datos de formulario**: es un modelo de formulario preferido si desea integrar sistemas backend como bases de datos, servicios web y perfiles de usuario de AEM para rellenar previamente formularios adaptables y escribir datos de formulario enviados de nuevo en los sistemas backend. Un editor del Modelo de datos de formulario permite definir y configurar entidades y servicios en un modelo de datos de formulario que se puede utilizar para crear formularios adaptables. Para obtener más información, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
 
@@ -261,7 +261,7 @@ Puede rellenar previamente los campos de formulario adaptables con datos recuper
 * El XML con datos de rellenado previo debe ser compatible con el esquema del modelo de formulario asociado al formulario adaptable.
 * Incluya`afBoundedData` y secciones `afUnBoundedData` en el XML de rellenado previo para rellenar previamente los campos enlazados y no enlazados en un formulario adaptable.
 
-* Para los formularios adaptables basados en el modelo de datos de formulario, AEM Forms proporciona el servicio de rellenado previo del modelo de datos de formulario integrado. El servicio de relleno previo consulta las fuentes de datos de los objetos del modelo de datos en el formulario adaptable y rellena los valores de campo al procesar el formulario.
+* Para los formularios adaptables basados en el modelo de datos de formulario, AEM Forms proporciona el servicio de rellenado previo del modelo de datos de formulario integrado. El servicio de relleno previo consulta las fuentes de datos de los objetos de modelo de datos en el formulario adaptable y rellena los valores de campo al procesar el formulario.
 * También puede utilizar los protocolos de archivo, crx, servicio o http para rellenar previamente los formularios adaptables.
 * AEM Forms admite servicios de relleno previo personalizados que se pueden insertar como servicio OSGi para rellenar previamente formularios adaptables.
 
@@ -296,17 +296,17 @@ Un documento de registro (DoR) es una versión PDF aplanada de un formulario ada
 * Excluir los campos ocultos del documento de registro.
 * Use el parámetro de solicitud `afAcceptLang` para ver el DoR en otra configuración regional.
 
-### Depurar y probar formularios adaptables {#debugging-and-testing-adaptive-forms}
+<!--### Debugging and testing adaptive forms {#debugging-and-testing-adaptive-forms}
 
-[El complemento AEM Chrome](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/) es una extensión del explorador para Google Chrome que proporciona herramientas para depurar formularios adaptables. Los creadores y desarrolladores de formularios pueden utilizar estas herramientas para lo siguiente:
+[AEM Chrome Plug-in](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/) is a browser extension for Google Chrome that provides tools for debugging adaptive forms. Form authors and developers can use these tools to:
 
-* Identificar cuellos de botella y optimizar el rendimiento del procesamiento del formulario
-* Depurar palabras clave y errores bindRef en el formulario
-* Habilitar y configurar registros
-* Depurar reglas y scripts en el formulario
-* Explorar y obtener más información sobre las API de guideBridge
+* Identify bottlenecks and optimize performance of form rendering
+* Debug keywords and bindRef errors in the form
+* Enable and configure logs
+* Debug rules and scripts in the form
+* Explore and learn about guideBridge APIs
 
-Para obtener más información, consulte [Complemento AEM Chrome: formulario adaptable](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
+For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).-->
 
 ### Validar formularios adaptables en el servidor de AEM {#validating-adaptive-forms-on-aem-server}
 
@@ -387,7 +387,7 @@ En un entorno de producción, se recomienda no almacenar datos de formularios en
 Uno de los desafíos clave para las organizaciones es cómo manejar los datos de identificación personal (PII). A continuación se indican algunas prácticas recomendadas que le ayudarán a administrar estos datos:
 
 * Utilizar un almacenamiento externo seguro como la base de datos para almacenar datos de formularios enviados y en modo de borrador. Consulte [Configurar el almacenamiento externo para datos de formularios enviados y en modo de borrador](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
-* Utilice el componente de formulario Términos y condiciones para obtener el consentimiento explícito del usuario antes de activar el guardado automático. En este caso, habilite el guardado automático solo cuando el usuario acepte las condiciones del componente Términos y condiciones.
+* Utilice el componente de formulario Términos y condiciones para obtener el consentimiento explícito del usuario antes de habilitar el guardado automático. En este caso, habilite el guardado automático solo cuando el usuario acepte las condiciones del componente Términos y condiciones.
 
 ## Elija el Editor de reglas, el Editor de código o las Bibliotecas de cliente personalizadas para su formulario adaptable {#RuleEditor-CodeEditor-ClientLibs}
 
@@ -397,11 +397,11 @@ Uno de los desafíos clave para las organizaciones es cómo manejar los datos de
 
 El Editor de reglas de AEM Forms proporciona una interfaz visual para crear y administrar reglas, lo que reduce la necesidad de utilizar una programación extensa. Puede resultar especialmente útil para usuarios empresariales o diseñadores de formularios que pueden no tener habilidades de programación avanzadas, pero necesitan definir y mantener reglas empresariales dentro de los formularios. Aquí analizamos algunos casos de uso en los que el editor de reglas le permite:
 
-* &#x200B;<!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
-* &#x200B;<!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
-* &#x200B;<!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
-* &#x200B;<!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
-* &#x200B;<!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
+* <!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
+* <!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
+* <!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
+* <!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
+* <!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
 
 El editor de reglas está disponible tanto para componentes de AEM Forms Foundation como para componentes principales.
 
