@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: ae66b28497bfb12686152b324e1758ad2d8592ee
+source-git-commit: 4305b4c7089fe4ac2b1bfe2dc6e4919181b3d892
 workflow-type: tm+mt
-source-wordcount: '9451'
+source-wordcount: '9486'
 ht-degree: 24%
 
 ---
@@ -694,9 +694,9 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
 
-* FORMS-21378: Cuando la validación del lado del servidor (SSV) está habilitada, los envíos de formularios pueden fallar. Si tiene este problema, póngase en contacto con el Soporte técnico de Adobe para obtener ayuda.
+* **FORMS-21378**: cuando la validación del lado del servidor (SSV) está habilitada, los envíos de formularios pueden fallar. Si tiene este problema, póngase en contacto con el Soporte técnico de Adobe para obtener ayuda.
 
-
+* **FORMS-23703**: cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
@@ -714,6 +714,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
