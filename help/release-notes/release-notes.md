@@ -694,7 +694,7 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
 
 * **FORMS-21378**: cuando la validación del lado del servidor (SSV) está habilitada, los envíos de formularios pueden fallar. Si tiene este problema, póngase en contacto con el Soporte técnico de Adobe para obtener ayuda.
 
-* **FORMS-23703**: cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
+* **FORMS-23703**: cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
 
 * Es posible que los conectores del modelo de datos de formulario no se puedan autenticar porque las palabras clave y el patrón regex necesarios no están permitidos de forma predeterminada. Para resolver el problema, agregue lo siguiente a través del Administrador de configuración (`/system/console/configmgr`):
 
@@ -703,7 +703,7 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979.**: la conversión de HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23979.**: la conversión de HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.24.0](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23722** (faltan archivos adjuntos en Asignar tarea): Cuando se envía un formulario con un campo **Archivo adjunto** a un flujo de trabajo de AEM que usa un paso **Asignar tarea**, los archivos adjuntos no aparecen cuando la tarea se abre desde la Bandeja de entrada. Los archivos se guardan correctamente en el repositorio y son visibles en CRX; solo la IU del paso Asignar tarea no los muestra.
 
@@ -727,6 +727,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
