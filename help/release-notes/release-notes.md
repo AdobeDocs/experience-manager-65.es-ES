@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 4305b4c7089fe4ac2b1bfe2dc6e4919181b3d892
+source-git-commit: 24e09fd7dd1801dc1511ed91a0b7c550d50eb484
 workflow-type: tm+mt
-source-wordcount: '9486'
-ht-degree: 24%
+source-wordcount: '9709'
+ht-degree: 23%
 
 ---
 
@@ -660,8 +660,6 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
 
 * AEM Forms ahora incluye una actualización de la versión de Struts de la 2.5.33 a la 6.x para el componente de formularios. Esta actualización ofrece los cambios de Struts que se omitieron anteriormente y que no se incluyeron en SP24. La compatibilidad se añadió a través de una [revisión](/help/release-notes/aem-forms-hotfix.md) que puede descargar e instalar para añadir compatibilidad con la última versión de Struts.
 
-#### Otros problemas conocidos {#aem-forms-other-known-issues}
-
 * Después de instalar AEM Forms JEE Service Pack 21 (6.5.21.0), si encuentra entradas duplicadas de Jars Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` en la carpeta `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), siga estos pasos para resolver el problema:
 
    1. Detenga los localizadores, si están en funcionamiento.
@@ -696,7 +694,22 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
 
 * **FORMS-21378**: cuando la validación del lado del servidor (SSV) está habilitada, los envíos de formularios pueden fallar. Si tiene este problema, póngase en contacto con el Soporte técnico de Adobe para obtener ayuda.
 
-* **FORMS-23703**: cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
+* **FORMS-23703**: cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
+
+* Es posible que los conectores del modelo de datos de formulario no se puedan autenticar porque las palabras clave y el patrón regex necesarios no están permitidos de forma predeterminada. Para resolver el problema, agregue lo siguiente a través del Administrador de configuración (`/system/console/configmgr`):
+
+   * **Palabras clave:** `fdm-client-secret`, `oauth-client-secret`
+   * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
+
+     >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+
+* **FORMS-23979.**: la conversión de HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+
+* **FORMS-23722** (faltan archivos adjuntos en Asignar tarea): Cuando se envía un formulario con un campo **Archivo adjunto** a un flujo de trabajo de AEM que usa un paso **Asignar tarea**, los archivos adjuntos no aparecen cuando la tarea se abre desde la Bandeja de entrada. Los archivos se guardan correctamente en el repositorio y son visibles en CRX; solo la IU del paso Asignar tarea no los muestra.
+
+* **FORMS-23717** Después de actualizar a **AEM Forms6.5.24.0**, `server.log` y `error.log` se pueden inundar con mensajes WARN repetidos, como *Error al crear la fábrica del analizador seguro* o *No se admite el atributo Security*. Los registros pueden crecer en alrededor de **5-10 líneas por segundo** (cientos de MB por hora), lo que puede llenar el disco y bloquear el despliegue de producción. **Corrección:** incluida en AEM Forms **6.5.25.0**. **Hasta entonces:**
+
+  Para reducir el volumen de registro, establezca el nivel de registro de `com.adobe.util.XMLSecurityUtil` en `ERROR` en la configuración del servidor de aplicaciones o a través del argumento de JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Esto solo oculta los mensajes y no corrige la causa subyacente.
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
@@ -714,6 +727,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)

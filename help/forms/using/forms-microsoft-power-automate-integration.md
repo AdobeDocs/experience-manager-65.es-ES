@@ -6,10 +6,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
+source-git-commit: 385803015a09a11bcc97fed979d529d85f7facb8
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 85%
+source-wordcount: '1283'
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 85%
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM 6.5 | Este artículo |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
 
 Puede configurar un formulario adaptable para ejecutar un flujo de nube de Microsoft® Power Automate en el envío. El formulario adaptable configurado envía los datos capturados, los archivos adjuntos y el documento de registro al flujo de nube de Power Automate para su procesamiento. Le ayuda a crear una experiencia de captura de datos personalizados mientras aprovecha el poder de Microsoft® Power Automate para crear lógicas empresariales en torno a los datos capturados y automatizar los flujos de trabajo de los clientes. A continuación se muestran algunos ejemplos de lo que puede hacer después de integrar un formulario adaptable con Microsoft® Power Automate:
 
@@ -27,7 +27,7 @@ Puede configurar un formulario adaptable para ejecutar un flujo de nube de Micro
 * Realizar cálculos complejos en los datos capturados
 * Guardar datos de formularios adaptables en sistemas de almacenamiento con una programación predefinida
 
-El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar una acción y enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para usar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [Conecte la instancia de autor de AEM Forms con Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+El editor de formularios adaptables ofrece la acción de envío **Invocar un flujo de Microsoft® Power Automate** para enviar una acción y enviar datos de formularios adaptables, archivos adjuntos y documentos de registro a flujos de nube de Power Automate. Para usar la acción Enviar para enviar los datos capturados a Microsoft® Power Automate, [Conecte la instancia de autor de AEM Forms con Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
 
 ## Requisitos previos
 
@@ -118,6 +118,14 @@ Realice las siguientes acciones para conectar la instancia de autor de AEM Forms
 1. En la página Publicar, seleccione **[!UICONTROL Todas las configuraciones]** y seleccione **[!UICONTROL Publicar]**. Publicar las configuraciones de nube de Power Automate Dataverse y Power Automate Flow Service.
 
 La instancia de autor de AEM Forms ahora está conectada con Microsoft® Power Automate. Ahora puede enviar datos de formularios adaptables a un flujo de Power Automate.
+
+>[!IMPORTANT]
+>
+>Los tokens utilizados para la conexión de Microsoft® Power Automate caducan al cabo de 90 días.
+>
+> Para mantener la integración en funcionamiento, volver a autenticar y volver a publicar las configuraciones de nube de Microsoft® Power Automate Dataverse y Microsoft® Power Automate Flow Service antes o cuando caduque el token, siga los pasos documentados en [Publicar las configuraciones de nube de Microsoft® Power Automate Dataverse y Microsoft® Power Automate Flow Service](#publish-microsoft-power-automate-dataverse-cloud-configuration).
+>
+> Para obtener más información sobre las directivas de duración de tokens, consulte la [documentación de Microsoft Entra sobre las duraciones de tokens configurables](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens). Si el token no se renueva, es posible que los envíos de formularios a Power Automate no se realicen correctamente.
 
 ## Utilizar la acción de envío Invocar un flujo de Microsoft® Power Automate para enviar datos a un flujo de Power Automate {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
