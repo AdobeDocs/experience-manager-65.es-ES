@@ -3,16 +3,21 @@ title: Crear y agregar funciones personalizadas en un formulario adaptable
 description: AEM Forms admite funciones personalizadas que permiten a los usuarios crear y utilizar sus propias funciones dentro del editor de reglas.
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: f63dcd7edca640cee47c8f615d1675ef5052953c
+exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
+source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 38%
+source-wordcount: '1116'
+ht-degree: 37%
 
 ---
 
 # Funciones personalizadas en el Forms adaptable
 
 ## Introducción
+
+>[!NOTE]
+>
+> Las funciones personalizadas deben ser compatibles con ECMAScript 5 (ES5). Foundation Forms solo es compatible con ES5; no se admite el uso de versiones más recientes de ECMAScript (ES6 y posteriores) y puede provocar errores o un comportamiento inesperado.
 
 AEM Forms 6.5 ha introducido la capacidad de definir las funciones de JavaScript que se pueden utilizar para definir reglas comerciales complejas mediante el editor de reglas. AEM Forms proporciona varias de estas funciones personalizadas de forma predeterminada, pero tendrá que definir sus propias funciones personalizadas y utilizarlas en varios formularios.
 
@@ -66,7 +71,7 @@ O bien, `,` puede usar: `@function funcName <Function Name>` **o** `@func` `func
 
 * **Sintaxis**
 de abonado: `@memberof namespace`
-adjunta un área de nombres a la función.
+adjunta un espacio de nombres a la función.
 
 * **Sintaxis**
 de parámetro: `@param {type} name <Parameter Description>`
@@ -86,8 +91,8 @@ Muestra los parámetros utilizados por la función. Una función puede tener var
 * **Sintaxis**
 de tipo de retorno: `@return {type}`
 O bien, puede usar `@returns {type}`.
-Agrega información sobre la función, como su objetivo. 
-{type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
+Añade información sobre la función, como su objetivo.
+  {type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 
    1. cadena
    1. número
@@ -240,7 +245,7 @@ Añadamos el siguiente código al archivo JavaScript para calcular la edad en fu
 
 1. Guarde el archivo `js.txt`.
 
-Puede hacer referencia a la carpeta [función personalizada](/help/forms/using/assets/customfunction.zip) siguiente. AEM Descargue e instale esta carpeta en su instancia de.
+Puede hacer referencia a la carpeta [función personalizada](/help/forms/using/assets/customfunction.zip) siguiente. Descargue e instale esta carpeta en su instancia de AEM.
 
 Ahora puede utilizar la función personalizada en el formulario adaptable agregando la biblioteca de cliente.
 

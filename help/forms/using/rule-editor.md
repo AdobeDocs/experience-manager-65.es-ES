@@ -9,9 +9,9 @@ docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
 workflow-type: tm+mt
-source-wordcount: '6607'
+source-wordcount: '6639'
 ht-degree: 94%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 94%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html) |
 | AEM 6.5 | Este artículo |
 
 ## Información general {#overview}
@@ -196,7 +196,7 @@ En la siguiente figura se muestra un ejemplo de cómo agregar casillas de verifi
 
 **Remove Instance**. Quita una instancia del panel repetible o fila de tabla especificados.
 
-**Navegar hasta** navega a otros formularios adaptables, otros recursos, como imágenes o fragmentos de documento, o una URL externa. Para obtener más información, consulte [Botón Agregar a la comunicación interactiva](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Navegar hasta** navega a otras comunicaciones interactivas, otros formularios adaptables, otros recursos, como imágenes o fragmentos de documento, o una URL externa. Para obtener más información, consulte [Botón Agregar a la comunicación interactiva](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
 
 ### Establecer valor de {#set-value-of}
 
@@ -340,8 +340,8 @@ Para definir una regla basada en un modelo de datos de formulario:
 
 1. Seleccione **Salida de servicio** en la lista desplegable.
 1. Seleccione el objeto de modelo de datos.
-1. Seleccione una propiedad de objeto del modelo de datos en la lista desplegable **Valor de visualización**. El número de casillas de verificación del formulario adaptable se deriva del número de instancias definidas para esa propiedad en la base de datos.
-1. Seleccione una propiedad de objeto del modelo de datos en la lista desplegable **Guardar valor**.
+1. Seleccione una propiedad de objeto de modelo de datos en la lista desplegable **Valor de visualización**. El número de casillas de verificación del formulario adaptable se deriva del número de instancias definidas para esa propiedad en la base de datos.
+1. Seleccione una propiedad de objeto de modelo de datos en la lista desplegable **Guardar valor**.
 
 ![Opciones de conjunto FDM](assets/fdm_set_options_new.png)
 
@@ -429,7 +429,7 @@ Vamos a comprender cómo crear una regla en el editor visual utilizando el sigui
 La sección Loan Requirements (requisitos de préstamo) del formulario de solicitud de ejemplo requiere que los solicitantes especifiquen su estado civil, su salario y, si están casados, el salario de su cónyuge. En función de las entradas del usuario, la regla calcula la cantidad de idoneidad para el préstamo y se muestra en el campo Loan Eligibility (elegibilidad del préstamo). Aplique las siguientes reglas para implementar el escenario:
 
 * El campo Spouse’s Salary (salario del cónyuge) solo se muestra cuando en el estado civil (Marital Status) se indica que se está casado o casada (Married).
-* La cantidad de la elegibilidad del préstamo es el 50 % del salario total.
+* La cantidad de la idoneidad del préstamo es el 50 % del salario total.
 
 Siga estos pasos para escribir reglas:
 
@@ -564,6 +564,10 @@ Mientras escribe código JavaScript en el editor de reglas, las siguientes indic
 
 #### Funciones personalizadas en el editor de reglas {#custom-functions}
 
+>[!NOTE]
+>
+> Las funciones personalizadas deben ser compatibles con ECMAScript 5 (ES5). Foundation Forms solo es compatible con ES5; no se admite el uso de versiones más recientes de ECMAScript (ES6 y posteriores) y puede provocar errores o un comportamiento inesperado.
+
 Aparte de las funciones integradas, como *Sum of* que se enumeran en Salida de funciones, puede escribir funciones personalizadas que necesite con frecuencia. Asegúrese de que la función que escriba esté acompañada de una etiqueta `jsdoc` encima.
 
 Incluir una etiqueta `jsdoc` es obligatorio:
@@ -587,7 +591,7 @@ O bien, `,` puede usar: `@function funcName <Function Name>` **o** `@func` `func
 
 * **Sintaxis**
 de abonado: `@memberof namespace`
-adjunta un área de nombres a la función.
+adjunta un espacio de nombres a la función.
 
 * **Sintaxis**
 de parámetro: `@param {type} name <Parameter Description>`
@@ -607,8 +611,8 @@ Muestra los parámetros utilizados por la función. Una función puede tener var
 * **Sintaxis**
 de tipo de retorno: `@return {type}`
 O bien, puede usar `@returns {type}`.
-Agrega información sobre la función, como su objetivo. 
-{type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
+Añade información sobre la función, como su objetivo.
+  {type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 
    1. cadena
    1. número
@@ -784,11 +788,11 @@ Para copiar y pegar reglas, haga lo siguiente:
 
 El editor de reglas permite utilizar varios operadores AND y OR para crear reglas anidadas. Puede combinar varios operadores AND y OR en las reglas.
 
-A continuación verá un ejemplo de una regla anidada que muestra un mensaje al usuario sobre la elegibilidad para la custodia de un niño cuando se cumplen las condiciones requeridas.
+A continuación verá un ejemplo de una regla anidada que muestra un mensaje al usuario sobre la idoneidad para la custodia de un niño cuando se cumplen las condiciones requeridas.
 
 ![complexexpression](assets/complexexpression.png)
 
-También puede arrastrar y soltar condiciones dentro de una regla para editarla. Seleccione y pase el ratón por encima del controlador (![controlador](assets/handle.png)) antes de una condición. Una vez que el puntero se convierta en el símbolo de mano como se muestra a continuación, arrastre y suelte la condición en cualquier lugar dentro de la regla. La estructura de la regla cambia.
+También puede arrastrar y soltar condiciones dentro de una regla para editarla. Seleccione y pase el puntero por encima del controlador (![controlador](assets/handle.png)) antes de una condición. Una vez que el puntero se convierta en el símbolo de mano como se muestra a continuación, arrastre y suelte la condición en cualquier lugar dentro de la regla. La estructura de la regla cambia.
 
 ![drag-and-drop](assets/drag-and-drop.png)
 
@@ -828,7 +832,7 @@ Cualquier script o expresión que deba haber escrito en la pestaña Scripts esta
 
 ### Invocar servicio del modelo de datos de formulario {#invoke}
 
-Piense en un servicio web `GetInterestRates` que toma el importe del préstamo, el ejercicio y la puntuación crediticia del solicitante como entrada y devuelve un plan de préstamo que incluye el importe del EMI y el tipo de interés. Puede crear un modelo de datos de formulario con el servicio web como fuente de datos. Se agregan objetos del modelo de datos y un servicio `get` al modelo de formulario. El servicio aparece en la pestaña Servicios del modelo de datos de formulario. A continuación, cree un formulario adaptable que incluya campos de los objetos del modelo de datos para capturar las entradas del usuario para el importe del préstamo, el ejercicio y la puntuación crediticia. Agregue un botón que active el servicio web para obtener detalles del plan. La salida se rellena en los campos adecuados.
+Piense en un servicio web `GetInterestRates` que toma el importe del préstamo, el ejercicio y la puntuación crediticia del solicitante como entrada y devuelve un plan de préstamo que incluye el importe del EMI y el tipo de interés. Puede crear un modelo de datos de formulario con el servicio web como fuente de datos. Se agregan objetos de modelo de datos y un servicio `get` al modelo de formulario. El servicio aparece en la pestaña Servicios del modelo de datos de formulario. A continuación, cree un formulario adaptable que incluya campos de los objetos de modelo de datos para capturar las entradas del usuario para el importe del préstamo, el ejercicio y la puntuación crediticia. Agregue un botón que active el servicio web para obtener detalles del plan. La salida se rellena en los campos adecuados.
 
 La siguiente regla muestra cómo configurar la acción Invocar servicio para que se realice el escenario de ejemplo.
 
