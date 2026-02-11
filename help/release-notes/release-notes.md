@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: a750a6093ae8ba6b43c46af52077ed3773d59a20
+source-git-commit: 71e85d8d140d0d478c9ef27daf90960747df295f
 workflow-type: tm+mt
-source-wordcount: '9595'
+source-wordcount: '9567'
 ht-degree: 20%
 
 ---
@@ -652,9 +652,10 @@ Fragmentos de contenido: la previsualización falla debido a la protección DoS 
 
 #### Problemas con revisiones disponibles {#aem-forms-issues-with-hotfixes}
 
+<!-- 
 >[!NOTE]
 >
->Evite actualizar al Service Pack 6.5.24.0 por problemas sin una revisión disponible. Puede provocar errores inesperados. Actualice al Service Pack 6.5.24.0 solo después de que se publiquen las revisiones necesarias.
+>Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released. -->
 
 Los siguientes problemas incluyen una revisión disponible para su descarga e instalación. Puede [descargar e instalar la revisión](/help/release-notes/aem-forms-hotfix.md) para resolver los siguientes problemas:
 
@@ -676,7 +677,7 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
    2. Elimine el paquete con el nombre `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Reinicie el servidor de AEM.
 
-* **FORMS-23703** Cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
+* **FORMS-23703** Cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
 
 * Es posible que los conectores del modelo de datos de formulario no se puedan autenticar porque las palabras clave y el patrón regex necesarios no están permitidos de forma predeterminada. Para resolver el problema, agregue lo siguiente a través del Administrador de configuración (`/system/console/configmgr`):
 
@@ -685,7 +686,7 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* La conversión de **FORMS-23979** HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.24.0](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* La conversión de **FORMS-23979** HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Después de actualizar a **AEM Forms6.5.24.0**, `server.log` y `error.log` se pueden inundar con mensajes WARN repetidos, como *Error al crear la fábrica del analizador seguro* o *No se admite el atributo Security*. Los registros pueden crecer en alrededor de **5-10 líneas por segundo** (cientos de MB por hora), lo que puede llenar el disco y bloquear el despliegue de producción. **Corrección:** incluida en AEM Forms **6.5.25.0**. **Hasta entonces:**
 
@@ -709,6 +710,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
