@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
+source-git-commit: 712693e4be9b8f357e4fc27ecc30a39a9850680c
 workflow-type: tm+mt
-source-wordcount: '11687'
+source-wordcount: '11685'
 ht-degree: 0%
 
 ---
@@ -63,25 +63,25 @@ Puntos de comprobación relacionados
    * 14.1 Utilice el lenguaje más claro y sencillo adecuado para el contenido de un sitio.
 * WCAG 2.0
    * 2.2.2 Pausar, parar, ocultar: Para mover, parpadear, desplazar o actualizar automáticamente la información, todas las siguientes opciones son verdaderas: (Nivel A)
-   * 2.3.1 Tres Flashes o Por debajo de los límites: Las páginas web no contienen nada que parpadee más de tres veces en un segundo período, o el flash está por debajo de los umbrales generales de flash y flash rojo. (Nivel A)
-   * 2.3.2 Tres Flashes: Las páginas web no contienen nada que parpadee más de tres veces en un segundo periodo. (Nivel AAA)
+   * 2.3.1 Tres parpadeos o por debajo de los límites: Las páginas web no contienen nada que parpadee más de tres veces en un segundo período, o el parpadeo está por debajo de los umbrales generales de parpadeo y parpadeo rojo. (Nivel A)
+   * 2.3.2 Tres parpadeos: Las páginas web no contienen nada que parpadee más de tres veces en un segundo periodo. (Nivel AAA)
 
 
 ## Configurar las propiedades del formulario para generar información de accesibilidad {#configure-form-properties}
 
 Para que un formulario sea accesible, debe ser [perceptible](https://www.w3.org/TR/WCAG20/#perceivable) por la tecnología de asistencia. Por ejemplo, la mayoría de los lectores de pantalla no tendrán en cuenta el diseño visual del formulario, sino la estructura subyacente.
 
-Para implementar esta estructura subyacente mediante LiveCycle Designer, debe crear un formulario de PDF con información de accesibilidad (a veces denominada etiquetas) incluida para que el lector de pantalla u otra tecnología de asistencia puedan leer el texto y los componentes del formulario. En un formulario con información de accesibilidad, cada elemento contiene información sobre su propia estructura, además de información sobre cómo está relacionado con otros elementos o depende de ellos. Los lectores de pantalla solo pueden identificar y describir el contenido de un documento con precisión en los archivos de PDF con información de accesibilidad incluida.
+Para implementar esta estructura subyacente mediante LiveCycle Designer, debe crear un formulario de PDF con información de accesibilidad (a veces denominada etiquetas) incluida para que el lector de pantalla u otra tecnología de asistencia puedan leer el texto y los componentes del formulario. En un formulario con información de accesibilidad, cada elemento contiene información sobre su propia estructura, además de información sobre cómo está relacionado con otros elementos o depende de ellos. Los lectores de pantalla solo pueden identificar y describir el contenido de un documento con precisión en los archivos PDF con información de accesibilidad incluida.
 
 Para crear un formulario accesible, debe configurar las propiedades del formulario para que LiveCycle Designer genere la información de accesibilidad al guardar el diseño de formulario como archivo de PDF:
 1. Elija Archivo > Propiedades del formulario.
-1. Haga clic en la ficha Opciones de guardado y, en el área PDF, asegúrese de que está seleccionada la opción Generar información de accesibilidad (etiquetas) para Acrobat.
+1. Haga clic en la ficha Opciones de guardado y, en el área de PDF, asegúrese de que la opción Generar información de accesibilidad (etiquetas) para Acrobat está seleccionada.
 1. Haga clic en Aceptar.
 
 En LiveCycle Designer, esta opción está seleccionada de forma predeterminada.
 
 >[!NOTE]
-> Estas opciones solo se aplican al guardar el diseño de formulario como archivo de PDF. No se aplican a los archivos de PDF creados con LiveCycle Forms, que tiene opciones de configuración independientes de esta opción en LiveCycle Designer.
+> Estas opciones solo se aplican al guardar el diseño de formulario como archivo PDF. No se aplican a los archivos de PDF creados con LiveCycle Forms, que tiene opciones de configuración independientes de esta opción en LiveCycle Designer.
 
 **Puntos de comprobación relacionados**
 
@@ -121,7 +121,7 @@ Las imágenes pueden ayudar a mejorar la comprensión de los usuarios con alguno
 
 Si decide utilizar imágenes, proporcione descripciones de texto para todos los objetos de imagen y campo de imagen. Asegúrese de que el texto describa el objeto y su propósito en el formulario. Cuando define una alternativa de texto, el lector de pantalla leerá esta alternativa cuando encuentre la imagen. Por este motivo, una imagen que contenga información siempre debe tener especificada una alternativa textual.
 
-Puede proporcionar descripciones de texto mediante las propiedades Información del objeto o Texto personalizado del Reader de pantalla en la paleta Accesibilidad o a través de campos de texto, títulos y nombres de objeto, tal como se especifica en la opción Nombre de la pestaña Enlace. Por ejemplo, la Figura 2 muestra un ejemplo de una imagen que contiene el texto &quot;Obtener Adobe Reader&quot;. Dado que un lector de pantalla no puede leer texto que forme parte de una imagen, debe incluir una alternativa de texto en el campo Texto del Reader de pantalla personalizado en la paleta Accesibilidad para este objeto. En la mayoría de los casos, el texto alternativo debe ser el mismo que el texto visible en la imagen (ver Figura 2).
+Puede proporcionar descripciones de texto mediante las propiedades Información del objeto o Texto de Reader de pantalla personalizado en la paleta Accesibilidad o a través de campos de texto, títulos y nombres de objeto, tal como se especifica en la opción Nombre de la pestaña Enlace. Por ejemplo, la Figura 2 muestra un ejemplo de una imagen que contiene el texto &quot;Obtener Adobe Reader&quot;. Dado que un lector de pantalla no puede leer texto que forme parte de una imagen, debe incluir una alternativa de texto en el campo Texto de Reader de pantalla personalizada en la paleta Accesibilidad para este objeto. En la mayoría de los casos, el texto alternativo debe ser el mismo que el texto visible en la imagen (ver Figura 2).
 
 ![Especificar texto alternativo para una imagen mediante la paleta Accesibilidad](/help/forms/using/assets/image-2.png)
 
@@ -132,9 +132,9 @@ Al especificar el texto alternativo, tenga en cuenta lo siguiente:
 * Si el objeto de imagen contiene información de color semántico, incluya esto también en la descripción. Una descripción de un semáforo en verde, por ejemplo, podría ser &quot;Transmisión correcta&quot; y la descripción de una luz roja podría ser &quot;Transmisión fallida&quot;.
 * Si utiliza gráficos complejos, como gráficos de barras, proporcione la información en una versión alternativa accesible, como una tabla o una descripción textual más larga.
 * No cree descripciones de texto para imágenes estáticas que solo se utilicen para la decoración.
-* No utilice datos escaneados como información de fondo. Esto puede ocurrir cuando un diseñador analiza un formulario impreso y utiliza Adobe LiveCycle Designer para agregar nuevos campos al formulario. Los lectores de pantalla no pueden detectar los datos escaneados en este estado.
+* No utilice datos escaneados como información de fondo. Esto puede ocurrir cuando un diseñador analiza un formulario de impresión y utiliza Adobe LiveCycle Designer para agregar nuevos campos al formulario. Los lectores de pantalla no pueden detectar los datos escaneados en este estado.
 
-Cuando se incluye contenido gráfico puramente decorativo en los formularios, se recomienda asegurarse de que los lectores de pantalla no anuncien la presencia de la imagen. Para la mayoría de los lectores de pantalla, esto se puede lograr estableciendo la propiedad Texto del Reader de pantalla en Ninguno en la paleta Accesibilidad. Si no lo hace, algunos lectores de pantalla pueden anunciar la presencia de un gráfico, sin indicar lo que representa. En el caso de las imágenes dinámicas, como los objetos de campo de imagen, asegúrese de que las alternativas de texto se actualicen correctamente cuando se cambie la imagen. No cree descripciones de texto para objetos de campo de imagen que solo se utilicen para decoración. Puede utilizar el lenguaje de script FormCalc para asignar descripciones de texto a un objeto de campo de imagen de forma dinámica. FormCalc es el lenguaje de script estándar de Adobe LiveCycle Designer. Por ejemplo, considere un formulario con un campo de imagen denominado ImageField1 y el texto asociado en el nodo imagetext de los datos de tiempo de ejecución. Puede usar scripts para pasar este texto en un evento apropiado (como `form:ready`) de la siguiente manera:
+Cuando se incluye contenido gráfico puramente decorativo en los formularios, se recomienda asegurarse de que los lectores de pantalla no anuncien la presencia de la imagen. Para la mayoría de los lectores de pantalla, esto se puede lograr estableciendo la propiedad Texto de Reader de pantalla en Ninguno en la paleta Accesibilidad. Si no lo hace, algunos lectores de pantalla pueden anunciar la presencia de un gráfico, sin indicar lo que representa. En el caso de las imágenes dinámicas, como los objetos de campo de imagen, asegúrese de que las alternativas de texto se actualicen correctamente cuando se cambie la imagen. No cree descripciones de texto para objetos de campo de imagen que solo se utilicen para decoración. Puede utilizar el lenguaje de script FormCalc para asignar descripciones de texto a un objeto de campo de imagen de forma dinámica. FormCalc es el lenguaje de script estándar de Adobe LiveCycle Designer. Por ejemplo, considere un formulario con un campo de imagen denominado ImageField1 y el texto asociado en el nodo imagetext de los datos de tiempo de ejecución. Puede usar scripts para pasar este texto en un evento apropiado (como `form:ready`) de la siguiente manera:
 
 `ImageField1.assist.toolTip = $record.imagetext.value`
 
@@ -142,7 +142,7 @@ Puntos de comprobación relacionados
 * Sección 508 §1194.22
    * (a) Se proporcionará un equivalente textual para cada elemento no textual (por ejemplo, mediante &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento).
 * WCAG 1.0
-   * 1.1 Proporcione un equivalente textual para cada elemento no textual (por ejemplo, a través de &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento). Esto incluye: imágenes, representaciones gráficas de texto (incluyendo símbolos), regiones de mapa de imagen, animaciones (por ejemplo, GIF animados), applets y objetos programáticos, arte ascii, fotogramas, scripts, imágenes utilizadas como viñetas de lista, espaciadores, botones gráficos, sonidos (reproducidos con o sin interacción del usuario), archivos de audio independientes, pistas de audio de vídeo y vídeo (P1).
+   * 1.1 Proporcione un equivalente textual para cada elemento no textual (por ejemplo, a través de &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento). Esto incluye: imágenes, representaciones gráficas de texto (incluidos símbolos), regiones de mapa de imagen, animaciones (por ejemplo, GIF animados), applets y objetos programáticos, arte ascii, fotogramas, scripts, imágenes utilizadas como viñetas de lista, espaciadores, botones gráficos, sonidos (reproducidos con o sin interacción del usuario), archivos de audio independientes, pistas de audio de vídeo y vídeo (P1).
 * WCAG 2.0
    * 1.1.1 Contenido no textual: todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el objetivo equivalente, excepto para las situaciones que se enumeran a continuación. (Nivel A)
 
@@ -165,15 +165,15 @@ Para utilizar la paleta Accesibilidad, siga estos pasos:
 
 Figura 3: **La paleta de accesibilidad**
 
-Cuando el formulario se guarda como PDF, LiveCycle Designer busca en el formulario las propiedades Texto personalizado, Información del objeto, Pie de ilustración y Nombre, en ese orden, para buscar el texto que deben leer los lectores de pantalla. Puede anular este orden predeterminado si utiliza la opción Prioridad de Reader de pantalla en la paleta Accesibilidad:
+Cuando el formulario se guarda como una PDF, LiveCycle Designer busca en el formulario las propiedades Texto personalizado, Información del objeto, Pie de ilustración y Nombre, en ese orden, para encontrar el texto que deben leer los lectores de pantalla. Puede anular este orden predeterminado si utiliza la opción Prioridad de Reader de pantalla en la paleta Accesibilidad:
 
 1. Seleccione el objeto en el diseño de formulario.
 1. Haga clic en la paleta Accesibilidad.
-1. Seleccione cualquier opción de Prioridad de Reader de pantalla que no sea Ninguno.
+1. Seleccione cualquier opción de Prioridad de Reader de pantalla que no sea Ninguna.
 
 Las opciones disponibles son las siguientes:
 
-* **Texto personalizado**, que se establece en el campo Texto personalizado del Reader de pantalla de la paleta Accesibilidad. Esta opción le permite especificar el texto que desea que utilice la tecnología de asistencia, como lectores de pantalla. El uso de la configuración Pie de ilustración es mejor para la mayoría de las situaciones: la creación de texto de Reader de pantalla personalizado debe considerarse una opción solo cuando se utiliza Pie de ilustración o no es posible obtener información del objeto.
+* **Texto personalizado**, que se establece en el campo Texto de Reader de pantalla personalizada de la paleta Accesibilidad. Esta opción le permite especificar el texto que desea que utilice la tecnología de asistencia, como lectores de pantalla. El uso de la configuración Pie de ilustración es mejor para la mayoría de las situaciones: la creación de texto de Reader en pantalla personalizado debe considerarse una opción solo cuando se utiliza Pie de ilustración o no es posible utilizar la información del objeto.
 * **Información de objeto**, que se establece en el campo Información de objeto de la paleta Accesibilidad. Para la mayoría de los objetos, la información sobre herramientas aparece en tiempo de ejecución cuando el usuario pasa el puntero sobre el objeto. La información sobre herramientas aparece para algunos objetos de solo lectura, como el objeto de código de barras de un formulario en papel, solo cuando se utiliza un lector de pantalla.
 * **Pie de ilustración**, lo que hará que LiveCycle Designer use la etiqueta (visual) asociada al campo de formulario como texto del lector de pantalla.
 * **Nombre**, que se establece en el campo Nombre de la ficha Enlace. Tenga en cuenta que este nombre no puede contener espacios.
@@ -181,20 +181,20 @@ Las opciones disponibles son las siguientes:
 
 Tenga en cuenta lo siguiente al utilizar la paleta Accesibilidad para el etiquetado de controles de formulario:
 
-* Si el título del control de formulario describe correctamente el control, los lectores de pantalla podrán acceder a él. En este caso, deje vacíos los campos Texto personalizado y Información del objeto en la paleta Accesibilidad o cambie la Prioridad del Reader de pantalla a Pie de ilustración.
-* Al segmentar lectores de pantalla, no tiene sentido especificar descripciones de texto diferentes para el mismo control de formulario, ya que solo se utilizará uno: El primer campo no vacío en el orden de prioridad del Reader de pantalla. Por ejemplo, no hay razón para especificar texto personalizado y texto de información del objeto para un lector de pantalla.
-* De forma predeterminada, el lector de pantalla lee el pie de ilustración si no se especifica nada en el cuadro Información del objeto o en el cuadro Texto personalizado del Reader de pantalla.
+* Si el título del control de formulario describe correctamente el control, los lectores de pantalla podrán acceder a él. En este caso, deje vacíos los campos Texto personalizado y Información del objeto en la paleta Accesibilidad o cambie la Prioridad de Reader de pantalla a Pie de ilustración.
+* Al segmentar lectores de pantalla, no tiene sentido especificar descripciones de texto diferentes para el mismo control de formulario, ya que solo se utilizará uno: El primer campo no vacío en el orden de prioridad de Screen Reader. Por ejemplo, no hay razón para especificar texto personalizado y texto de información del objeto para un lector de pantalla.
+* De forma predeterminada, el lector de pantalla lee el pie de ilustración si no se especifica nada en el cuadro Información del objeto o en el cuadro de texto Reader de pantalla personalizada.
 * No utilice la paleta Accesibilidad para crear descripciones de campos o áreas invisibles.
-* Si tiene que crear una descripción con las opciones Información del objeto o Texto personalizado del Reader de pantalla, incluya siempre el pie de ilustración visible en el formulario, excepto cuando el pie de ilustración visible no tenga sentido, por ejemplo, cuando el propio pie de ilustración esté abreviado. Esto ayuda a los usuarios del lector de pantalla a comunicarse eficazmente con otros usuarios sobre los elementos de la interfaz de usuario. Estos grupos diferentes de usuarios tienen dificultades para identificar el mismo elemento de la interfaz de usuario si el texto del pie de ilustración difiere de la información del objeto o del texto del Reader de pantalla personalizado.
+* Si tiene que crear una descripción con las opciones Información del objeto o Texto de Reader en pantalla personalizado, incluya siempre el pie de ilustración visible en el formulario, excepto cuando el pie de ilustración visible no tenga sentido, por ejemplo, cuando el propio pie de ilustración esté abreviado. Esto ayuda a los usuarios del lector de pantalla a comunicarse eficazmente con otros usuarios sobre los elementos de la interfaz de usuario. Estos diferentes grupos de usuarios tienen dificultades para identificar el mismo elemento de la interfaz de usuario si el texto del pie de ilustración difiere de la información del objeto o del texto personalizado de Reader en pantalla.
 * Para los controles de casillas de verificación y listas desplegables de las celdas de la tabla, el lector de pantalla anunciará el título, la información del objeto o el texto personalizado del lector de pantalla que especifique para el objeto. Si desea utilizar el encabezado de columna para el texto alternativo de estos objetos cuando se colocan en una tabla, no proporcione ningún pie de ilustración, información del objeto ni texto personalizado del lector de pantalla.
 * Si el control requiere instrucciones adicionales, asegúrese de que también se incluyan en la alternativa text. Incluya suficiente información verbal para que los usuarios sepan qué entrada se espera y cómo completar el campo correctamente, pero no sobrecargue a los usuarios con información redundante.
 * No proporcione información innecesaria que describa cómo utilizar los controles: permita que las tecnologías de asistencia del usuario lo gestionen. Los usuarios pueden configurar el nivel de detalle para adaptarlo a sus niveles de comodidad.
 
-La Figura 4 muestra un ejemplo de un campo de texto con un pie de ilustración visual que puede no ser claro para algunos usuarios del lector de pantalla. En este ejemplo, Texto personalizado del Reader de pantalla se establece en &quot;Número de páginas&quot; y Prioridad del Reader de pantalla se establece en Texto personalizado. Como resultado, el lector de pantalla no utilizará el texto real (visual) del pie de ilustración (&quot;# of pages&quot;). Como alternativa, se podría haber especificado la información del objeto.
+La Figura 4 muestra un ejemplo de un campo de texto con un pie de ilustración visual que puede no ser claro para algunos usuarios del lector de pantalla. En este ejemplo, Texto personalizado de Reader en pantalla se establece en &quot;Número de páginas&quot; y la Prioridad de Reader en pantalla se establece en Texto personalizado. Como resultado, el lector de pantalla no utilizará el texto real (visual) del pie de ilustración (&quot;# of pages&quot;). Como alternativa, se podría haber especificado la información del objeto.
 
-![Especificación de texto personalizado del Reader de pantalla cuando la etiqueta visible no es adecuada](/help/forms/using/assets/image-4.png)
+![Especificación de texto de Reader en pantalla personalizado cuando la etiqueta visible no es adecuada](/help/forms/using/assets/image-4.png)
 
-Figura 4: **Especificación del texto personalizado del Reader de pantalla cuando la etiqueta visible no es adecuada**
+Figura 4: **Especificación de texto personalizado de Reader en pantalla cuando la etiqueta visible no es adecuada**
 
 ### Etiquetado de botones de opción
 
@@ -203,12 +203,12 @@ Cuando un usuario con deficiencias visuales presiona un botón de opción, el le
 * Una etiqueta significativa para cada botón de opción
 Para que los botones de opción sean accesibles mediante los títulos de los botones:
    1. En la paleta Jerarquía, seleccione el grupo de exclusión.
-   1. Haga clic en la paleta Accesibilidad y, en el cuadro Texto personalizado del Reader de pantalla, escriba el texto que se leerá para el grupo. Por ejemplo, para un grupo de exclusión que indique las opciones de pago de varias tarjetas de crédito, escriba Seleccionar un método de pago.
+   1. Haga clic en la paleta Accesibilidad y, en el cuadro Texto personalizado de Reader de pantalla, escriba el texto que se leerá para el grupo. Por ejemplo, para un grupo de exclusión que indique las opciones de pago de varias tarjetas de crédito, escriba Seleccionar un método de pago.
    1. Si los subtítulos de cada botón de opción proporcionan texto que tendrá sentido cuando lo lea un lector de pantalla, en la paleta Objeto, seleccione la pestaña Enlace y anule la selección de Especificar valor de elemento.
 
   Para que los botones de opción sean accesibles mediante un valor de elemento especificado:
    1. En la paleta Jerarquía, seleccione el grupo de exclusión.
-   1. Haga clic en la paleta Accesibilidad y, en el cuadro Texto personalizado del Reader de pantalla, escriba el texto que se leerá para el grupo. Por ejemplo, para un grupo de exclusión que indique las opciones de pago de varias tarjetas de crédito, escriba Seleccionar un método de pago.
+   1. Haga clic en la paleta Accesibilidad y, en el cuadro Texto personalizado de Reader de pantalla, escriba el texto que se leerá para el grupo. Por ejemplo, para un grupo de exclusión que indique las opciones de pago de varias tarjetas de crédito, escriba Seleccionar un método de pago.
    1. En la paleta Jerarquía, seleccione el primer botón de opción del grupo.
    1. En la paleta Objeto, haga clic en la pestaña Campo. En el área Elemento, haga doble clic en el elemento y escriba un valor significativo para el botón de opción seleccionado. Por ejemplo, para el primer botón de un grupo de métodos de pago, puede escribir Efectivo.
    1. Repita los pasos 3 y 4 para cada botón de opción del grupo de exclusión.
@@ -224,7 +224,7 @@ Se recomienda encarecidamente utilizar componentes estándar en lugar de compone
 
 La colocación de un título es importante porque los usuarios esperarán que se encuentren junto al control. Para los usuarios con ampliación de pantalla, esto es aún más importante, ya que es posible que no puedan ver el control y el pie de ilustración al mismo tiempo si están demasiado separados.
 
-Cuando se crea un objeto, Designer de LiveCycle coloca automáticamente el pie de ilustración tal como especifica el tipo de objeto. Los títulos de los botones de opción, por ejemplo, se colocan a la derecha. Esta ubicación predeterminada siempre es la mejor ubicación para un pie de ilustración accesible. Si debe cambiar la posición del texto de rótulo, siga estos pasos:
+Al crear un objeto, LiveCycle Designer coloca automáticamente el título según lo especificado por el tipo de objeto. Los títulos de los botones de opción, por ejemplo, se colocan a la derecha. Esta ubicación predeterminada siempre es la mejor ubicación para un pie de ilustración accesible. Si debe cambiar la posición del texto de rótulo, siga estos pasos:
 1. Seleccione el objeto moviendo el enfoque hacia él.
 1. En la paleta Diseño, seleccione la posición del pie de ilustración del objeto en la opción Posición de la sección Pie de ilustración, en la parte inferior de la paleta.
 
@@ -246,7 +246,7 @@ En la tabla siguiente se proporciona información general sobre las reglas de co
 | Botón | El pie de ilustración se coloca automáticamente en el botón y no tiene que colocarse manualmente. Asegúrese de que el texto del pie de ilustración describe correctamente el propósito del botón. |
 
 
-### Rellenado dinámico de un texto de información del objeto o de Reader de pantalla personalizado
+### Rellenar dinámicamente un texto de información del objeto o de pantalla personalizada de Reader
 
 También puede rellenar dinámicamente la alternativa de texto de un control de formulario, como la información sobre herramientas, con un valor de un origen de datos. Por ejemplo, puede mostrar una información de objeto personalizada para un objeto que esté en francés.
 El esquema al que se conecte podría tener lo siguiente definido para una información del objeto:
@@ -275,7 +275,7 @@ El archivo de datos al que apunta podría tener lo siguiente definido para la in
 
 La cadena siguiente aparece en el cuadro Enlace: $record.tooltip.dp_tt Sugerencia: puede escribir esta cadena en el cuadro Elementos en lugar de seleccionarla.
 1. Haga clic en Aceptar.
-1. Vea el formulario en la pestaña PDF de vista previa.
+1. Vea el formulario en la pestaña Vista previa de PDF.
 
 ### Proporcionar texto del vínculo
 
@@ -316,7 +316,7 @@ El orden de lectura del formulario incluye todos los objetos estáticos (como te
 >[!NOTE]
 > En muchos casos, el orden de tabulación está estrechamente relacionado con el orden de lectura. Para simplificar, en esta guía se utiliza el término &quot;orden de tabulación&quot; en lugar de &quot;orden de tabulación o lectura&quot;.
 
-### El orden de tabulación predeterminado en los formularios Designer de LiveCycle
+### El orden de tabulación predeterminado en los formularios de LiveCycle Designer
 
 El orden de tabulación predeterminado se crea automáticamente al guardar el formulario como PDF etiquetado. Inicialmente, el orden de tabulación de un formulario se determina a partir de la posición local de los objetos mediante las siguientes reglas:
 
@@ -496,7 +496,7 @@ Adobe Reader y Adobe Acrobat permiten a los usuarios especificar si se deben ree
 
 Al diseñar el formulario, pruébelo con frecuencia con una configuración de combinación de colores similar a la que muchos usuarios con deficiencias visuales utilizarán para completarlo. Esta práctica le ayuda a descubrir y corregir problemas al principio del proceso de diseño.
 
-Recommendations para el uso de colores:
+Recomendaciones para el uso de colores:
 * Asegúrese de que no se pierde información si el color semántico no es visible.
 * Si no puede utilizar colores predeterminados, asegúrese de que los colores tengan un alto contraste, como el negro sobre un fondo claro (blanco). Los usuarios con visión parcial generalmente requieren un alto contraste entre el texto y su fondo para poder leerlo.
 * Pruebe la legibilidad de los formularios cambiando la pantalla a una pantalla de alto contraste, tanto en Windows como en Adobe Reader o Adobe Acrobat. Mac OSX solo ofrece un filtro simple en escala de grises para un alto contraste, por lo que no es suficiente para realizar pruebas.
@@ -511,8 +511,8 @@ Recommendations para el uso de colores:
    * 2.2 Asegúrese de que las combinaciones de colores de primer plano y de fondo ofrezcan suficiente contraste cuando las vea alguien con deficiencias de color o cuando las vea en una pantalla en blanco y negro. [Prioridad 2 para imágenes, Prioridad 3 para texto] (P2).
 * WCAG 2.0
    * 1.4.1 Uso del color: el color no se utiliza como el único medio visual para transmitir información, indicar una acción, pedir una respuesta o distinguir un elemento visual. (Nivel A)
-   * 1.4.3 Contraste (mínimo): La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4.5:1, excepto para lo siguiente: (Nivel AA)
-   * 1.4.6 Contraste (mejorado): La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 7:1, excepto para lo siguiente: (Nivel AAA)
+   * 1.4.3 Contraste (mínimo): la presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4.5:1, excepto por lo siguiente: (Nivel AA)
+   * 1.4.6 Contraste (mejorado): La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 7:1, excepto por lo siguiente: (Nivel AAA)
 
 
 ## Proporcionar celdas de encabezado para las tablas{#provide-heading-cells}
@@ -689,13 +689,13 @@ Al diseñar secuencias de comandos para accesibilidad, tenga en cuenta las sigui
 ## Asegúrese de que todo el contenido de audio y vídeo sea accesible{#ensure-audio-video-accessible}
 
 Si los formularios incorporan contenido de audio o vídeo, incluidos clips de audio y vídeo, debe asegurarse de que este contenido sea accesible. Concretamente, asegúrese de que los clips de vídeo incorporados a los formularios contengan subtítulos (a veces denominados subtítulos) para usuarios sordos y con dificultades auditivas, y descripciones de vídeo para usuarios ciegos. Para los archivos de audio que no están sincronizados con el contenido de vídeo, una simple transcripción es suficiente.
-Para los medios basados en el Flash, consulta [link](/help/forms/using/best-practices-for-creating-forms-in-designer.md) para obtener información sobre cómo proporcionar subtítulos.
+Para medios basados en Flash, consulte [vínculo](/help/forms/using/best-practices-for-creating-forms-in-designer.md) para obtener información sobre cómo proporcionar subtítulos.
 
 **Puntos de comprobación relacionados**:
 * Sección 508 §1194.22
    * (b) Las alternativas equivalentes para cualquier presentación multimedia se sincronizarán con la presentación.
 * WCAG 1.0
-   * 1.1 Proporcione un equivalente textual para cada elemento no textual (por ejemplo, a través de &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento). Esto incluye: imágenes, representaciones gráficas de texto (incluyendo símbolos), regiones de mapa de imagen, animaciones (por ejemplo, GIF animados), applets y objetos programáticos, arte ascii, fotogramas, scripts, imágenes utilizadas como viñetas de lista, espaciadores, botones gráficos, sonidos (reproducidos con o sin interacción del usuario), archivos de audio independientes, pistas de audio de vídeo y vídeo (P1).
+   * 1.1 Proporcione un equivalente textual para cada elemento no textual (por ejemplo, a través de &quot;alt&quot;, &quot;longdesc&quot; o en el contenido del elemento). Esto incluye: imágenes, representaciones gráficas de texto (incluidos símbolos), regiones de mapa de imagen, animaciones (por ejemplo, GIF animados), applets y objetos programáticos, arte ascii, fotogramas, scripts, imágenes utilizadas como viñetas de lista, espaciadores, botones gráficos, sonidos (reproducidos con o sin interacción del usuario), archivos de audio independientes, pistas de audio de vídeo y vídeo (P1).
    * 1.3 Hasta que los agentes de usuario puedan leer automáticamente en voz alta el texto equivalente a una pista visual, proporcione una descripción auditiva de la información importante de la pista visual de una presentación multimedia (P1).
    * 1.4 Para cualquier presentación multimedia basada en el tiempo (por ejemplo, una película o animación), sincronice alternativas equivalentes (por ejemplo, subtítulos o descripciones auditivas de la pista visual) con la presentación (P1).
 * WCAG 2.0
