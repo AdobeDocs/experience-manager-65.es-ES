@@ -5,10 +5,10 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 30137e36b60c3ada70240e1442390f9fdd26f3b9
+source-git-commit: 5a851bf013a4ef7e6097bf32bd3fa8fe4d635f28
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 100%
+source-wordcount: '1834'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 | Área | Característica | Reemplazo | Versión (SP) |
 |---|---|---|---|
+| Sites | Compatibilidad con fragmentos de contenido en la API de REST de AEM Assets | AEM 6.5 LTS SP2 proporciona OpenAPI modernas para la administración de modelos y fragmentos de contenido, por lo que los puntos finales de compatibilidad de fragmentos de contenido más antiguos en la API de REST de AEM Assets ya no se utilizan.<br>Adobe tiene la intención de mantener estos extremos más antiguos disponibles hasta que se anuncie el fin de la vida útil. Adobe no planea más mejoras para los extremos obsoletos. | 6.5.24 |
 | Sites | [Editor de SPA](/help/sites-developing/spa-editor-deprecation.md) | Para casos de uso sin encabezado, utilice el [Editor universal](/help/sites-developing/universal-editor/introduction.md) para la edición visual o el [Editor de fragmentos de contenido](/help/sites-developing/universal-editor/introduction.md) para la edición basada en formularios. | 6.5.23 |
 | Sites | El servicio **Configuración de encuestas administradas por Adobe AEM**: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | El servicio **Importador de Sling de informes de AEM Analytics de Adobe**. Consulte Conectarse a Adobe Analytics y crear marcos de trabajo: [Configuración del intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | ActiveMQ en Adobe Experience Manager (AEM). ActiveMQ se utilizaba para la comunicación entre dos instancias de publicación de AEM. | Adobe recomienda que los clientes ahora utilicen un equilibrador de carga. | 6.5.18.0 |
