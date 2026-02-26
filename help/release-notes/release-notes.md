@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 7fdfcc9964bccfea03304e6cae3b5569421720ed
+source-git-commit: 3e1f704d1d0e64deefe157338ab5081521a45c3c
 workflow-type: tm+mt
-source-wordcount: '9628'
-ht-degree: 20%
+source-wordcount: '9855'
+ht-degree: 19%
 
 ---
 
@@ -654,9 +654,12 @@ Fragmentos de contenido: la previsualización falla debido a la protección DoS 
 * **FORMS-16557** En la vista preliminar de la interfaz de usuario de Interactive Communications Agent, el símbolo de moneda (como el signo de dólar $) se muestra de manera incoherente en todos los valores de campo. Aparece para valores de hasta 999, pero falta para valores de 1000 y superiores.
 * **FORMS-16575** Las modificaciones realizadas en el XDP de los fragmentos de diseño anidados en una comunicación interactiva no se reflejarán en el editor de CI.
 * **FORMS-21378**: cuando la validación del lado del servidor (SSV) está habilitada, es posible que se produzcan errores en los envíos de formularios. Si tiene este problema, póngase en contacto con el Soporte técnico de Adobe para obtener ayuda.
+
 * **FORMS-23722** (faltan archivos adjuntos en Asignar tarea): cuando un formulario con un campo **Archivo adjunto** que utiliza bindref se envía a un flujo de trabajo de AEM que usa un paso **Asignar tarea**, los archivos adjuntos no aparecen cuando la tarea se abre desde la Bandeja de entrada. Los archivos se guardan correctamente en el repositorio, pero la interfaz de usuario del paso Asignar tarea no muestra los archivos adjuntos.
 
-#### Problemas con revisiones disponibles {#aem-forms-issues-with-hotfixes}
+* **FORMS-23802** (las funciones personalizadas no se cargan cuando el formulario está en la página de Sites): las funciones personalizadas no funcionan en la vista previa ni en la publicación cuando el formulario adaptable está incrustado en una página de Sites y la versión de la biblioteca de componentes principales de aem-forms es inferior a 1.1.76. Puede ver un error como `InvalidFormContainerException: No form container found` en los registros. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Forms SP24 (AddOn 6.0.1454).
+
+#### Problemas conocidos con revisiones disponibles {#aem-forms-issues-with-hotfixes}
 
 <!-- 
 >[!NOTE]
@@ -665,7 +668,15 @@ Fragmentos de contenido: la previsualización falla debido a la protección DoS 
 
 Los siguientes problemas incluyen una revisión disponible para su descarga e instalación. Puede [descargar e instalar la revisión](/help/release-notes/aem-forms-hotfix.md) para resolver los siguientes problemas:
 
-<!--* **FORMS-23881** On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+<!--* FORMS-23881 On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+
+* **FORMS-23789** (solo AEM Forms en JEE): Los usuarios experimentaron problemas con Log4j en AEM Forms en JEE SP24, lo que provocó interrupciones en el registro y la supervisión de los clientes empresariales. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Forms en el paquete de servicio JEE 6.5.24.0.
+
+* **FORMS-23802** Las funciones personalizadas no se cargan en la vista previa ni en la publicación cuando el formulario está en una página de Sites con una versión anterior de aem-forms-core-component (&lt;1.1.76). Para resolver este problema, instale la revisión [AEM Forms AddOn 6.0.1454](/help/release-notes/aem-forms-hotfix.md) para SP24.
+
+* **FORMS-23789** (solo AEM Forms en JEE): Los usuarios experimentaron problemas con Log4j en AEM Forms en JEE SP24, lo que provocó interrupciones en el registro y la supervisión de los clientes empresariales. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Forms en el paquete de servicio JEE 6.5.24.0.
+
+* **FORMS-23802** Las funciones personalizadas no se cargan en la vista previa ni en la publicación cuando el formulario está en una página de Sites con una versión anterior de aem-forms-core-component (&lt;1.1.76). Para resolver este problema, instale la revisión [AEM Forms AddOn 6.0.1454](/help/release-notes/aem-forms-hotfix.md) para SP24.
 
 * AEM Forms ahora incluye una actualización de la versión de Struts de la 2.5.33 a la 6.x para el componente de formularios. Esta actualización ofrece los cambios de Struts que se omitieron anteriormente y que no se incluyeron en SP24. La compatibilidad se añadió a través de una [revisión](/help/release-notes/aem-forms-hotfix.md) que puede descargar e instalar para añadir compatibilidad con la última versión de Struts.
 
@@ -685,7 +696,7 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
    2. Elimine el paquete con el nombre `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Reinicie el servidor de AEM.
 
-* **FORMS-23703** Cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
+* **FORMS-23703** Cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
 
 * Los conectores del modelo de datos de formulario **GRANITE-63681** pueden no autenticarse debido a que las palabras clave y el patrón regex requeridos no están permitidos de manera predeterminada. Para resolver el problema, descargue e instale la revisión desde el [vínculo](/help/release-notes/aem-forms-hotfix.md).
 
@@ -696,11 +707,11 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
 
     >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
 
-* La conversión de **FORMS-23979** HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.24.0](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* La conversión de **FORMS-23979** HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
-* **FORMS-23717** Después de actualizar a **AEM Forms6.5.24.0**, `server.log` y `error.log` se pueden inundar con mensajes WARN repetidos, como *Error al crear la fábrica del analizador seguro* o *No se admite el atributo Security*. Los registros pueden crecer en alrededor de **5-10 líneas por segundo** (cientos de MB por hora), lo que puede llenar el disco y bloquear el despliegue de producción. **Corrección:** incluida en AEM Forms **6.5.25.0**. **Hasta entonces:**
+* **FORMS-23717** Después de actualizar a **AEM Forms6.5.24.0**, `server.log` y `error.log` se pueden inundar con mensajes WARN repetidos, como *Error al crear la fábrica del analizador seguro* o *No se admite el atributo Security*. Los registros pueden crecer en alrededor de **5-10 líneas por segundo** (cientos de MB por hora), lo que puede llenar el disco y bloquear el despliegue de producción.
 
-  Para reducir el volumen de registro, establezca el nivel de registro de `com.adobe.util.XMLSecurityUtil` en `ERROR` en la configuración del servidor de aplicaciones o a través del argumento de JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Esto solo oculta los mensajes y no corrige la causa subyacente.
+Para reducir el volumen de registro, establezca el nivel de registro de `com.adobe.util.XMLSecurityUtil` en `ERROR` en la configuración del servidor de aplicaciones o a través del argumento de JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Esto solo oculta los mensajes y no corrige la causa subyacente.
 
 * **FORMS-23875** En la búsqueda del modelo de datos de formulario, se muestra una etiqueta de HTML en la interfaz de usuario aunque no haya una entidad relevante. Para resolver el problema, descargue e instale la revisión desde [el vínculo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
 
@@ -720,7 +731,7 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
