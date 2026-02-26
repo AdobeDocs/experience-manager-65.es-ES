@@ -696,7 +696,7 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
    2. Elimine el paquete con el nombre `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Reinicie el servidor de AEM.
 
-* **FORMS-23703** Cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
+* **FORMS-23703** Cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
 
 * Los conectores del modelo de datos de formulario **GRANITE-63681** pueden no autenticarse debido a que las palabras clave y el patrón regex requeridos no están permitidos de manera predeterminada. Para resolver el problema, descargue e instale la revisión desde el [vínculo](/help/release-notes/aem-forms-hotfix.md).
 
@@ -707,7 +707,7 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
 
     >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
 
-* La conversión de **FORMS-23979** HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* La conversión de **FORMS-23979** HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.24.0](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Después de actualizar a **AEM Forms6.5.24.0**, `server.log` y `error.log` se pueden inundar con mensajes WARN repetidos, como *Error al crear la fábrica del analizador seguro* o *No se admite el atributo Security*. Los registros pueden crecer en alrededor de **5-10 líneas por segundo** (cientos de MB por hora), lo que puede llenar el disco y bloquear el despliegue de producción.
 
@@ -731,7 +731,7 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de[[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
