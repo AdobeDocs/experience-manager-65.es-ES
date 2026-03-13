@@ -4,10 +4,10 @@ description: Obtenga información acerca de la flexibilidad del editor universal
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 9f91063e51aa599ef48967f832aa359ecf100fc2
-workflow-type: ht
-source-wordcount: '1183'
-ht-degree: 100%
+source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
+workflow-type: tm+mt
+source-wordcount: '1208'
+ht-degree: 96%
 
 ---
 
@@ -40,9 +40,9 @@ El editor universal es un servicio que funciona junto con AEM para crear conteni
 El editor universal es compatible con lo siguiente:
 
 * AEM 6.5
-   * Se admiten tanto el alojamiento local como el alojamiento AMS.
+   * Se admiten tanto el alojamiento local como el alojamiento AMS*.
 * [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
-   * Se admiten tanto el alojamiento local como el alojamiento AMS.
+   * Se admiten tanto el alojamiento local como el alojamiento AMS*.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
 Este documento se centra en la compatibilidad con AEM 6.5 del editor universal. Para utilizar el editor universal con AEM 6.5, necesitará lo siguiente:
@@ -50,6 +50,10 @@ Este documento se centra en la compatibilidad con AEM 6.5 del editor universal. 
 * AEM 6.5 con el Service Pack 23 o superior
    * Los Service Packs 21 y 22 también son compatibles con [un Feature Pack.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip).
 * Dispatcher correctamente configurado
+
+>[!NOTE]
+>
+>*Si utiliza Adobe Managed Services (AMS), póngase en contacto con su ingeniero de éxito del cliente (Customer Success Engineer, CSE) si desea utilizar Universal Editor.
 
 ## Configuración {#setup}
 
