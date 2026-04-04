@@ -71,7 +71,7 @@ Existen varias formas de incrustar metadatos en los archivos. Se admite una sele
 
 ### XMP {#xmp}
 
-XMP [!DNL Extensible Metadata Platform] () es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece codificación de metadatos universal que puede incrustarse en todos los formatos de archivo. Adobe XMP y otras empresas admiten el estándar, ya que proporciona un modelo de contenido enriquecido. XMP Los usuarios de la norma de y de [!DNL Experience Manager Assets] tienen una plataforma potente sobre la cual pueden generar contenido. XMP Para obtener más información, consulte [&#128279;](https://www.adobe.com/products/xmp.html).
+XMP [!DNL Extensible Metadata Platform] () es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece codificación de metadatos universal que puede incrustarse en todos los formatos de archivo. Adobe XMP y otras empresas admiten el estándar, ya que proporciona un modelo de contenido enriquecido. XMP Los usuarios de la norma de y de [!DNL Experience Manager Assets] tienen una plataforma potente sobre la cual pueden generar contenido. XMP Para obtener más información, consulte [&#128279;](https://www.adobe.com/es/products/xmp.html).
 
 ### ID3 {#id}
 
