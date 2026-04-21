@@ -9,7 +9,7 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: b2ef2498976ffb46238c4dee75df32a214c82300
+source-git-commit: d5e24f8bdb3c43c482c2e468b44c6d78cc0a43be
 workflow-type: tm+mt
 source-wordcount: '3708'
 ht-degree: 46%
@@ -354,7 +354,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
   <td><p>Versiones menores, actualizaciones acumulativas y actualizaciones críticas</p> </td>
  </tr>
  <tr>
-  <td><p>Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64 bits)</p> </td>
+  <td><p>Red Hat® Enterprise Linux® 9 (Kernel 5.x) (64 bits)</p> </td>
   <td><p>A: Compatible</p> </td>
   <td><p>Versiones menores, actualizaciones acumulativas y actualizaciones críticas</p> </td>
  </tr>
@@ -802,7 +802,7 @@ AEM Forms en JEE admite actualizaciones, parches y paquetes de correcciones adem
 ## Directiva de compatibilidad de parches de terceros {#third-party-patch-support-policy}
 
 
-Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65_es](https://adobe.com/go/learn_aemforms_documentation_65_es) .
+Los requisitos de software de terceros para AEM Forms en JEE se documentan en la sección “Requisitos del sistema” de sus respectivos documentos de producto. Acceda a toda la documentación desde [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65_es) .
 
 
 AEM Forms en plataformas de referencia de terceros de JEE indica el nivel de parche específico de la infraestructura de terceros que se actualizó durante el desarrollo y lanzamiento de AEM Forms en JEE, y desde el nivel mínimo de parches/service pack de la infraestructura compatible con esa versión de AEM Forms en JEE.
@@ -833,7 +833,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit)
 - Microsoft&reg; Office 2016
@@ -904,7 +904,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
  - **Added support**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platform:
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
  - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
-   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
+   - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
    - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
    - Microsoft&reg; Windows Server 2016 (64-bit)
    - Microsoft&reg; Office 2016
@@ -928,7 +928,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | MYSQL 8.4 | SUSE® Linux® Enterprise Server 12 (64 bits) | MYSQL 8.0.27 |
 | Microsoft® SQL Server 2022 | Centos 7 | Microsoft® SQL Server 2019 |
 | Controlador JDBC del servidor Microsoft® SQL 12.10.0 | Red Hat® Enterprise Linux® 7 (Kernel 4.x) (64 bits) | Controlador JDBC del servidor Microsoft® SQL 8.2 |
-| Red Hat® Enterprise Linux® 9 (Kernel 4.x) (64 bits) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits) |
+| Red Hat® Enterprise Linux® 9 (Kernel 5.x) (64 bits) | | Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bits) |
 
 ### Versión 6.5.22.0 (29 de noviembre de 2024)
 
