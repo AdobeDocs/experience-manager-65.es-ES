@@ -1,5 +1,5 @@
 ---
-title: Enrutamiento de modelo SPA
+title: Enrutamiento de modelos de SPA
 description: Para aplicaciones de una sola página en AEM, la aplicación es responsable del enrutamiento. Este documento describe el mecanismo de ruta, el contrato y las opciones disponibles.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 0%
+source-wordcount: '479'
+ht-degree: 3%
 
 ---
 
 
-# Enrutamiento de modelo SPA{#spa-model-routing}
+# Enrutamiento de modelos de SPA{#spa-model-routing}
 
 Para aplicaciones de una sola página en AEM, la aplicación es responsable del enrutamiento. Este documento describe el mecanismo de ruta, el contrato y las opciones disponibles.
 
@@ -38,7 +38,7 @@ Para obtener una descripción detallada, consulte la sección [PageModelManager]
 
 ## Enrutamiento manual frente al automático del modelo {#manual-vs-automatic-model-routing}
 
-`ModelRouter` automatiza la captura de fragmentos del modelo. Pero como cualquier herramienta automatizada, viene con limitaciones. Cuando sea necesario, `ModelRouter` se puede deshabilitar o configurar para que ignore las rutas mediante metapropiedades (consulte la sección de metapropiedades del documento [Componente de página SPA](/help/sites-developing/spa-page-component.md)). Los desarrolladores de front-end pueden implementar su propia capa de enrutamiento de modelos solicitando a `PageModelManager` que cargue cualquier fragmento de modelo mediante la función `getData()`.
+`ModelRouter` automatiza la captura de fragmentos del modelo. Pero como cualquier herramienta automatizada, viene con limitaciones. Cuando sea necesario, `ModelRouter` se puede deshabilitar o configurar para que ignore las rutas mediante metapropiedades (consulte la sección Propiedades de Meta del documento [Componente de página SPA](/help/sites-developing/spa-page-component.md)). Los desarrolladores de front-end pueden implementar su propia capa de enrutamiento de modelos solicitando a `PageModelManager` que cargue cualquier fragmento de modelo mediante la función `getData()`.
 
 >[!NOTE]
 >

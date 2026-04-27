@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: c6d38c682dc45e3dcebef194b3b80510ab10f9e2
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '10086'
+source-wordcount: '10489'
 ht-degree: 43%
 
 ---
@@ -226,8 +226,10 @@ Antes de instalar Acrobat, revise estos requisitos esenciales. Debería tener:
 * Privilegios de administrador local en el equipo que ejecuta AEM Forms
 * Sistema operativo Windows de 64 bits
 * Conexión a Internet estable para activación de licencia
-<!-- Backup solution for existing Acrobat settings
- Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details) -->
+<!--
+Backup solution for existing Acrobat settings
+ Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details)
+ -->
 
 
 #### Flujo de trabajo de implementación y cronología
@@ -238,10 +240,10 @@ El proceso completo suele tardar entre 1 y 2 horas, según el entorno:
 |------|----------------|---------------|
 | &#x200B;1. Crear paquete FRL en Admin Console) | 15-20 minutos | [Acceso a Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html) |
 | &#x200B;2. Conceder permisos de descarga | 5-10 minutos | [Acceso a Admin Console](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
-| &#x200B;3. Desinstalar Acrobat anterior | 10-15 minutos | Acceso de administrador del servidor |
+| &#x200B;3. Desinstalar el Acrobat anterior | 10-15 minutos | Acceso de administrador del servidor |
 | &#x200B;4. Descargar e instalar Adobe Acrobat Pro | 10-15 minutos | Acceso de administrador del servidor |
 | &#x200B;5. Descargar e implementar el paquete FRL | 20-30 minutos | Acceso de administrador del servidor |
-| &#x200B;6. Verificar la instalación | 5-10 minutos | Acceso al servidor |
+| &#x200B;6. Verificar instalación | 5-10 minutos | Acceso al servidor |
 
 <!-- ![Workflow diagram showing the FRL implementation process](/help/forms/using/assets/frl.svg) -->
 
@@ -788,36 +790,36 @@ Acceda al servidor que ejecuta AEM Forms mediante el método adecuado. Asegúres
 **Esencial:** Realice una copia de seguridad de cualquier configuración, perfil o configuración de Acrobat personalizada antes de desinstalar.
 
 1. Abra el Panel de control de Campaign de Windows.
-2. Vaya a **Configuración** y abra **Aplicaciones**.
-3. Busque **Adobe Acrobat** en la lista de programas instalados
-4. Seleccione **Desinstalar** y siga las indicaciones para quitar la aplicación. Si se le solicita, reinicie el servidor
-5. Asegúrese de que todas las versiones clásicas del programa estén desinstaladas. Use la [Herramienta de limpieza de Adobe Acrobat](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) si es necesario para la eliminación completa.
+2. Navigate to **Settings** and open **Apps**.
+3. Locate **Adobe Acrobat** in the list of installed programs
+4. Select **Uninstall** and follow the prompts to remove the application. If prompted, restart the server
+5. Ensure all Classic versions of the program are uninstalled. Use the [Adobe Acrobat Cleaner Tool](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) if necessary for complete removal.
 
-###### Paso 6: Descargar e instalar Adobe Acrobat Pro
+###### Step 6: Download and Install Adobe Acrobat Pro
 
-Después de desinstalar la versión anterior, debe descargar e instalar una versión compatible de Adobe Acrobat Pro:
+After uninstalling the previous version, you need to download and install a compatible version of Adobe Acrobat Pro:
 
-1. Vaya a la [página de descargas de Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
-2. Vaya a la sección **Programa de instalación de Acrobat Pro**.
-3. Para su uso con AEM Forms PDF Generator, descargue el programa de instalación &quot;Para Windows (32 bits)&quot;, ya que esta es la versión compatible con AEM Forms PDF Generator.
-4. Siga las instrucciones de instalación de la página:
-   * Extraiga el archivo zip descargado en una carpeta de su ordenador
-   * Vaya al archivo Setup.exe (no ejecute el archivo Setup.exe desde el archivo zip)
-   * Haga doble clic en Setup.exe para iniciar la instalación
-   * Siga las instrucciones que aparecen en pantalla para completar la instalación
-5. Después de la instalación, abra Adobe Acrobat Pro y complete la configuración inicial descartando los cuadros de diálogo de bienvenida.
-6. Compruebe la instalación creando un PDF sencillo.
+1. Go to the [Adobe Acrobat DC Downloads page](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
+2. Navigate to the **Acrobat Pro installer** section.
+3. For use with AEM Forms PDF Generator, download the &quot;For Windows (32-Bit)&quot; installer, as this is the version supported with AEM Forms PDF Generator.
+4. Follow the installation instructions on the page:
+   * Extract the downloaded zip file to a folder on your computer
+   * Navigate to the Setup.exe file (do not run the Setup.exe file from within the zip file)
+   * Double-click Setup.exe to start the installation
+   * Follow the on-screen instructions to complete the installation
+5. After installation, open Adobe Acrobat Pro and complete the initial setup by dismissing any welcome dialogs.
+6. Verify the installation by creating a simple PDF.
 
-###### Paso 7: Descargar el paquete FRL
+###### Step 7: Download the FRL Package
 
-1. Inicie sesión en [Adobe Admin Console](https://adminconsole.adobe.com/) con la *cuenta de usuario* para la que proporcionó permisos de descarga en el paso 3.
-1. Vaya a la ficha **Paquetes**.
-1. Busque el paquete FRL que creó en el paso 2 (denominado &quot;Acrobat FRL AEM Forms&quot; o el nombre de su paquete personalizado).
-1. Haga clic en **Descargar** para descargar el paquete en el servidor.
+1. Log in to the [Adobe Admin Console](https://adminconsole.adobe.com/) using the *user account* you provided download permissions to in Step 3.
+1. Navigate to the **Packages** tab.
+1. Locate the FRL package that you created in Step 2 (named &quot;Acrobat FRL AEM Forms&quot; or your custom package name).
+1. Click **Download** to download the package to the server.
 
-###### Paso 8: Implementar el paquete
+###### Step 8: Deploy the Package
 
-1. **Extraer el paquete:** Extraiga el contenido del archivo ZIP descargado en un directorio del servidor (por ejemplo, `C:\AcrobatFRL`). Asegúrese de que el directorio de extracción sea fácilmente accesible.
+1. **Extract the Package:** Extract the contents of the downloaded ZIP file to a directory on the server (for example, `C:\AcrobatFRL`). Asegúrese de que el directorio de extracción sea fácilmente accesible.
 
 2. **Abrir símbolo del sistema como administrador (Windows):** Haga clic con el botón secundario en el botón Inicio y seleccione &quot;Símbolo del sistema (Admin)&quot; o &quot;Windows PowerShell (Admin)&quot;
 
@@ -905,7 +907,7 @@ Siga estos pasos:
 >
 >Deshabilitar el modo protegido es necesario en situaciones de automatización del lado del servidor como AEM Forms PDF Generator. Esta configuración solo debe cambiarse en entornos de servidor dedicados, no en escritorios de usuarios finales.
 
-Para obtener más información, consulte [Documentación de Adobe sobre el modo protegido](https://helpx.adobe.com/es/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Para obtener más información, consulte [Documentación de Adobe sobre el modo protegido](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1093,7 +1095,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM.
 
    También puede descargar el paquete a través del vínculo directo que aparece en el artículo [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es).
 
-1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No detenga el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere a que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el archivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log y el registro sea estable.
+1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No detenga el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere a que los mensajes ServiceEvent REGISTERED y ServiceEvent UNREGISTERED dejen de aparecer en el archivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log y el registro sea estable.
 
 ## Configuraciones posteriores a la instalación {#post-installation-configurations}
 
@@ -1185,7 +1187,7 @@ En Microsoft® Windows, el servicio PDF Generator utiliza Adobe Acrobat para 
    1. Descomprima el archivo .zip descargado. Abra el Símbolo del sistema con privilegios administrativos.
    1. Vaya a `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
    1. Descomprima `adobe-aemfd-pdfg-common-pkg-[version]`.
-   1. Vaya al directorio `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Ejecute el siguiente archivo por lotes:
+   1. Navegue hasta el directorio `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` Ejecute el siguiente archivo por lotes:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -1453,7 +1455,8 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 +++
 
-<!-- +++ Unable to add a PDF Generator (PDFG) user
+<!--
++++ Unable to add a PDF Generator (PDFG) user
 
 * (Acrobat 2020 only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
@@ -1467,7 +1470,8 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 +++
 
-<!-- +++ (Acrobat 2020 only) Multiple user conversion failures 
+<!--
++++ (Acrobat 2020 only) Multiple user conversion failures 
 
 * Verify the server logs to check if the conversion is failing for a particular user.(Process Explorer can help you check running process for different users)
 
@@ -1479,9 +1483,11 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 * Perform a sample conversion.
 
-+++ -->
++++
+-->
 
-<!-- (Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
+<!--
+(Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
 
 * If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
@@ -1506,13 +1512,15 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 * You can go online within 7 days of the first launch of your Adobe product to complete an online activation and registration or use an internet-enabled device and your product's serial number to complete this process. For detailed instructions, see [Offline Activation](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
-+++ -->
++++
+-->
 
 +++ No se pueden convertir archivos de Word o Excel a PDF en Windows Server
 
 Cuando el usuario intenta convertir archivos de Word o Excel a PDF en Microsoft Windows Server, se encuentra el siguiente error:
 
-*Mensaje de error del convertidor principal: ALC-PDG-015-003-El sistema no puede abrir el archivo de entrada. Vuelva a enviar el archivo o póngase en contacto con el administrador del sistema.*
+*Mensaje de error del convertidor principal:
+ALC-PDG-015-003-El sistema no puede abrir el archivo de entrada. Vuelva a enviar el archivo o póngase en contacto con el administrador del sistema.*
 
 Para resolver el problema, consulte [No se puede convertir el archivo de Word o Excel al PDF en Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 

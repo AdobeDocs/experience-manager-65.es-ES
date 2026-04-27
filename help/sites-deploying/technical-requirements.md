@@ -1,45 +1,45 @@
 ---
 title: Requisitos técnicos
-description: Una lista de las plataformas de cliente y servidor compatibles con Adobe Experience Manager.
+description: A list of the supported client and server platforms for Adobe Experience Manager.
 topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: bafa8061d73a5c82ba012457fb1133d99341fcd9
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '3472'
-ht-degree: 12%
+source-wordcount: '3736'
+ht-degree: 13%
 
 ---
 
 # Requisitos técnicos{#technical-requirements}
 
-Adobe admite (AEM) Adobe Experience Manager en las plataformas, tal como se detalla en la siguiente información de este documento.
+Adobe supports (AEM) Adobe Experience Manager on the platforms as detailed in the following information in this document.
 
-Para cualquier problema relacionado con la plataforma, póngase en contacto con el proveedor de la plataforma.
+For any issues that are related to the platform, contact the platform vendor.
 
 >[!NOTE]
 >
->Según la plataforma en la que instale AEM, podría haber diferentes conjuntos de requisitos para la administración de usuarios.
+>Depending upon the platform on which you install AEM, there could be different sets of requirements for user management.
 
 ## Requisitos previos {#prerequisites}
 
-Requisitos mínimos para instalar Adobe Experience Manager:
+Minimum requirements for installing Adobe Experience Manager:
 
-* Java™ Platform, Standard Edition JDK u otras [máquinas virtuales Java™ compatibles](#java-virtual-machines) instaladas
-* Archivo de inicio rápido de Experience Manager (JAR independiente o WAR de implementación de aplicación web)
+* Installed Java™ Platform, Standard Edition JDK, or other supported [Java™ Virtual Machines](#java-virtual-machines)
+* Experience Manager Quickstart file (Stand-alone JAR or web-application deployment WAR)
 
-### Requisitos mínimos de tamaño {#minimum-sizing-requirements}
+### Minimum Sizing Requirements {#minimum-sizing-requirements}
 
-Requisitos mínimos para ejecutar Adobe Experience Manager:
+Minimum requirements for running Adobe Experience Manager:
 
-* 5 GB de espacio libre en disco en el directorio de instalación
-* 2 GB de memoria
+* 5 GB free disk space in the installation directory
+* 2 GB memory
 
 >[!NOTE]
 >
->* Los casos de uso de recursos digitales necesitan más memoria base. Consulte [Implementación y mantenimiento](/help/sites-deploying/deploy.md#default-local-install) para obtener más información.
+>* Digital asset use cases need more base memory. See [Deploying and Maintaining](/help/sites-deploying/deploy.md#default-local-install) for details.
 >* [El paquete de complementos de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) requiere 15 GB de espacio temporal.
 >
 
@@ -102,7 +102,7 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
 | Azul Zulu OpenJDK 8 - 64 bits | A: Compatible `[3]` | |
 
 1. Oracle se ha trasladado a un modelo de &quot;Soporte a largo plazo&quot; (LTS) para los productos de Oracle Java™ SE. Java™ 9, Java™ 10 y Java™ 12 son versiones que no son de LTS de Oracle (consulte [Guía de asistencia de Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en un entorno de producción, Adobe solo es compatible con las versiones LTS de Java™. Adobe ofrece asistencia técnica y distribución del JDK de Oracle Java™ SE, incluidas todas las actualizaciones de mantenimiento de las versiones anteriores, directamente a todos los clientes de AEM que utilicen la tecnología Oracle Java™ SE. Consulte la [directiva de soporte de Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Importante: Oracle Java™ 17 y 21 son compatibles con [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+   **Importante: Oracle Java™ 17 y 21 son compatibles con [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. El JRE de IBM® solo se admite junto con el servidor de aplicaciones WebSphere®.
 
@@ -172,7 +172,8 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 >
 >To run AEM 6.5 with a supported relational database, a separate support contract with a database vendor is required. Adobe Customer Care assists qualifying issues related to the usage of relational databases with AEM 6.5.
 >
->**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**-->
+>**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**
+-->
 
 ### Motores servlet/servidores de aplicaciones {#servlet-engines-application-servers}
 
@@ -251,9 +252,9 @@ Adobe Experience Manager es compatible con la ejecución en una máquina virtual
 
 Para un entorno nativo de la nube, revise la última oferta de la línea de productos de AEM: Adobe Experience Manager as a Cloud Service. Consulte [Documentación de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) para obtener más información.
 
-Adobe también ofrece Adobe Managed Services para implementar AEM en Azure o AWS. Adobe Managed Services ofrece a los expertos la experiencia y los conocimientos necesarios para implementar y utilizar AEM en estos entornos de cloud computing. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/es/products/experience-manager/managed-services.html?aemClk=t).
+Adobe también ofrece Adobe Managed Services para implementar AEM en Azure o AWS. Adobe Managed Services ofrece a los expertos la experiencia y los conocimientos necesarios para implementar y utilizar AEM en estos entornos de cloud computing. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-En todos los demás casos de implementación de AEM en Azure o AWS, o en cualquier otro entorno de computación en la nube, la compatibilidad con Adobe se incluye en el entorno de computación virtual. Ese entorno virtual debe ejecutarse de acuerdo con las especificaciones técnicas enumeradas en esta página. Cualquier problema informado relativo a AEM que se ejecute en cualquiera de estos entornos de nube debe ser reproducible independientemente de cualquier servicio de nube específico para el entorno de computación en nube. Es decir, a menos que el servicio en la nube sea compatible como parte de los requisitos técnicos enumerados en esta página, por ejemplo, Azure Blob Storage o AWS S3.
+En todos los demás casos de implementación de AEM en Azure o AWS, o en cualquier otro entorno de computación en la nube, la compatibilidad con Adobe se incluye en el entorno de computación virtual. Ese entorno virtual debe ejecutarse de acuerdo con las especificaciones técnicas enumeradas en esta página. Cualquier problema informado relativo a AEM que se ejecute en cualquiera de estos entornos de nube debe ser reproducible independientemente de cualquier servicio de nube específico para el entorno de computación en nube. Es decir, a menos que el servicio en la nube sea compatible como parte de los requisitos técnicos enumerados en esta página, por ejemplo, almacenamiento del blob de Azure o AWS S3.
 
 Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera de Adobe Managed Services, Adobe recomienda trabajar directamente con el proveedor de la nube. O bien, trabajar con socios de Adobe que apoyen la implementación de AEM en el entorno de nube que elija. El proveedor o socio de nube seleccionado es responsable de las especificaciones de tamaño, el diseño y la implementación de la arquitectura, para satisfacer sus requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
 

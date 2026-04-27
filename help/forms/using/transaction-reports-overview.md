@@ -8,16 +8,17 @@ feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 89%
+source-wordcount: '490'
+ht-degree: 91%
 
 ---
 
 # Informes de transacciones para AEM Forms en OSGi {#transaction-reports-overview}
 
-<!--## Introduction {#introduction}
+<!--
+## Introduction {#introduction}
 
 Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -25,7 +26,8 @@ Transaction reports in AEM Forms let you keep a count of all transactions taken 
 * Rendition of a print or a web version of an interactive communication
 * Conversion of a document from one file format to another
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).
+-->
 
 El registro de transacciones está desactivado de forma predeterminada. Puede [habilitar el registro de transacciones](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) desde la consola web de AEM. Puede ver informes de transacciones sobre instancias de autor, procesamiento o publicación. Ver informes de transacciones sobre instancias de autor o procesamiento para una suma agregada de todas las transacciones. Ver informes de transacciones en las instancias de publicación para un recuento de todas las transacciones que se realizan solamente en esa instancia de publicación desde la que se ejecuta el informe.
 

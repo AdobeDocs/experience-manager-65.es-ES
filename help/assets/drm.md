@@ -7,10 +7,10 @@ feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 7%
+source-wordcount: '1440'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Los recursos digitales suelen estar asociados a una licencia que especifica los términos y la duración de uso. Dado que [!DNL Adobe Experience Manager Assets] está completamente integrado con la plataforma [!DNL Experience Manager], puede administrar de manera eficiente la información de caducidad y los estados de los recursos. También puede asociar la información de licencias con los recursos.
@@ -48,7 +48,7 @@ También puede ver el estado de caducidad de los recursos en el carril **[!UICON
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Assets Si el recurso tiene recursos secundarios caducados, el carril [!UICONTROL Referencias] muestra el estado **[!UICONTROL El recurso tiene un subrecurso caducado]**.
+   Si el recurso tiene recursos secundarios caducados, el carril [!UICONTROL Referencias] muestra el estado **[!UICONTROL El recurso tiene un subrecurso caducado]**.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -71,7 +71,7 @@ Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior a
 
 Además, si un fallo o error impide que el programador detecte los recursos caducados en el ciclo actual, vuelve a examinarlos en el ciclo siguiente y detecta su estado caducado.
 
-Para permitir que la consola [!DNL Assets] muestre los recursos compuestos de referencia junto con los subrecursos caducados, configure un flujo de trabajo **[!UICONTROL Notificación de caducidad de Adobe CQ DAM]** en el Administrador de configuración de [!DNL Experience Manager].
+Para permitir que la consola [!DNL Assets] muestre los recursos compuestos de referencia junto con los subrecursos caducados, configure un flujo de trabajo **[!UICONTROL Notificación de caducidad de Adobe CQ DAM]** en el Administrador de configuración [!DNL Experience Manager].
 
 1. Abra el Administrador de configuración de [!DNL Experience Manager].
 1. Elija **[!UICONTROL Notificación de caducidad de Adobe CQ DAM]**. De forma predeterminada, está seleccionado **[!UICONTROL Programador basado en tiempo]**, que programa un trabajo para comprobar a una hora específica si un recurso tiene recursos secundarios caducados. Una vez finalizado el trabajo, los recursos que tienen recursos secundarios caducados y los recursos a los que se hace referencia se muestran como caducados en los resultados de búsqueda.
@@ -92,8 +92,8 @@ Para permitir que la consola [!DNL Assets] muestre los recursos compuestos de re
 La consola [!DNL Assets] puede mostrar varios estados para los recursos. Según el estado actual de un recurso determinado, la vista de tarjeta muestra una etiqueta que describe su estado, por ejemplo, Caducado, Publicado, Aprobado, Rechazado, etc.
 
 1. En la interfaz de usuario [!DNL Assets], seleccione un recurso.
-1. Haga clic en **[!UICONTROL Publish]** en la barra de herramientas. Si no ve **Publish** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publish]** ![publish option](assets/do-not-localize/publish-globe.png).
-1. Elija **[!UICONTROL Publish]** en el menú y, a continuación, cierre el cuadro de diálogo de confirmación.
+1. Haga clic en **[!UICONTROL Publicar]** en la barra de herramientas. Si no ve **Publicar** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publicar]** ![publicar](assets/do-not-localize/publish-globe.png).
+1. Elija **[!UICONTROL Publicar]** en el menú y luego cierre el cuadro de diálogo de confirmación.
 1. Salga del modo de selección. El estado de publicación del recurso aparece en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, la columna Publicado muestra la hora a la que se publicó el recurso.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
@@ -119,7 +119,7 @@ La consola [!DNL Assets] puede mostrar varios estados para los recursos. Según 
 
 1. Para buscar recursos según su estado, haga clic en **[!UICONTROL Buscar]** ![opción de búsqueda](assets/do-not-localize/search_icon.png) para mostrar la barra Omnisearch.
 1. Seleccione `Return` y haga clic en [!DNL Experience Manager] para mostrar el panel de búsqueda.
-1. En el panel de búsqueda, haga clic en **[!UICONTROL Estado de Publish]** y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en [!DNL Assets].
+1. En el panel de búsqueda, haga clic en **[!UICONTROL Estado de publicación]** y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -146,7 +146,7 @@ Si la selección contiene varios recursos protegidos, seleccione un recurso a la
 Un activo se considera protegido si se cumple cualquiera de estas condiciones:
 
 * La propiedad de metadatos del recurso `xmpRights:WebStatement` señala a la ruta de acceso de la página que contiene el contrato de licencia del recurso.
-* El valor de la propiedad de metadatos del recurso `adobe_dam:restrictions` es un HTML sin procesar que especifica el acuerdo de licencia.
+* El valor de la propiedad de metadatos del recurso `adobe_dam:restrictions` es una HTML sin procesar que especifica el contrato de licencia.
 
 >[!NOTE]
 >

@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 0%
+source-wordcount: '2476'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +29,9 @@ En este documento se describen los pasos recomendados para cargar un SPA indepen
 Los requisitos previos son simples.
 
 * Asegúrese de que una instancia de AEM se esté ejecutando localmente.
-* Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es&#available-properties).
+* Cree un proyecto base de la SPA de AEM con [el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Esto forma la base del proyecto de AEM que se actualizará para incluir el SPA externo.
-   * Los ejemplos de este documento utilizan el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es#spa-editor).
+   * Los ejemplos de este documento utilizan el punto de partida de [el proyecto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Tenga a mano el SPA de React externo de trabajo que desea integrar.
 
 ## Cargar SPA en un proyecto de AEM {#upload-spa-to-aem-project}
@@ -374,8 +374,8 @@ El componente RemotePage espera que la implementación proporcione un manifiesto
 El siguiente material de referencia puede resultar útil para comprender las SPA en el contexto de AEM.
 
 * [El arquetipo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)
-* [El proyecto de SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es)
+* [El proyecto SPA de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es)
 * [Introducción a SPA en AEM con React](spa-getting-started-react.md)
 * [Materiales de referencia de SPA (referencias de API)](spa-reference-materials.md)
 * [Modelo SPA y PageModelManager](spa-blueprint.md#pagemodelmanager)
-* [Enrutamiento de modelo SPA](spa-routing.md)
+* [Enrutamiento de modelos de SPA](spa-routing.md)

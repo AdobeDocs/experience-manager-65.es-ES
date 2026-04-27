@@ -1,38 +1,38 @@
 ---
 cloud: Experience Cloud
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-manager-65.es-ES
+git-repo: https://github.com/AdobeDocs/experience-manager-65.en
 solution: Experience Manager, Experience Manager 6.5
 feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites, Experience Manager Forms
 type: Documentation
 version: Experience Manager 6.5
-index: y
+index: true
 recommendations: noDisplay
-source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
-workflow-type: ht
-source-wordcount: '131'
-ht-degree: 100%
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 4%
 
 ---
 
 
 # Metadatos para uso interno
 
-El archivo metadata.md incluye metadatos de repositorios que pasan a los archivos TOC.md de la guía del usuario en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía de usuario, hágalo en cualquier archivo TOC.md.
+El archivo metadata.md incluye metadatos de nivel de repositorio que pasan a los archivos TOC.md de la guía del usuario en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía del usuario, hágalo en cualquier archivo TOC.md.
 
-| metadata | función |
+| metadatos | lo que hace |
 |--- |--- |
-| solution-title | Se utiliza en el encabezado del artículo como vínculo. |
-| solution-hub-url | Abre la página del centro de Formación y asistencia. |
-| solution-icon | Muestra el icono de la solución junto al título de la solución. No implementado aún. |
+| solution-title | Se utiliza como vínculo en el encabezado del artículo. |
+| solution-hub-url | Abre la página del centro de Aprendizaje y asistencia. |
+| solution-icon | Muestra el icono de la solución junto al título de la solución. Aún no se ha implementado. |
 | getting-started-url | Vínculo a la página de introducción. |
 | tutorials-url | Vínculo a videotutoriales. |
-| mini-toc-levels | Determina el número de niveles de encabezado que aparecen en el carril derecho. El valor predeterminado es 2. |
+| niveles-mini-toc | Determina el número de niveles de encabezado que aparecen en el carril derecho. El valor predeterminado es 2. |
 | git-repo | Especifica la ubicación del repositorio principal para uso interno. |
 
 En el archivo TOC.md
 
-| metadata | función |
+| metadatos | lo que hace |
 |--- |--- |
-| user-guide-title | Se utiliza en el encabezado del artículo como vínculo. |
-| user-guide-url | Abre la página del centro de Formación y asistencia. |
+| user-guide-title | Se utiliza como vínculo en el encabezado del artículo. |
+| user-guide-url | Abre la página del centro de Aprendizaje y asistencia. |

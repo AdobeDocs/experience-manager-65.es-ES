@@ -7,9 +7,9 @@ role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 02649ffea62200b472b4f3c446489a9dd974d21c
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '2721'
+source-wordcount: '2794'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,8 @@ Una vez que el volumen temporal de alto rendimiento esté listo, establezca el p
 
 Adobe recomienda implementar [!DNL Experience Manager Assets] en Java 8 para obtener un rendimiento óptimo.
 
-<!-- TBD: Link to the latest official word around Java.
+<!--
+TBD: Link to the latest official word around Java.
 -->
 
 ### Parámetros de JVM {#jvm-parameters}
@@ -242,7 +243,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 ## Buscar índices {#search-indexes}
 
-Instale [los Service Packs más recientes](/help/release-notes/release-notes.md) y las revisiones relacionadas con el rendimiento, ya que suelen incluir actualizaciones de los índices del sistema. Consulte [consejos para la optimización del rendimiento](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para ver algunas optimizaciones del índice.
+Instale [los Service Packs más recientes](/help/release-notes/release-notes.md) y las revisiones relacionadas con el rendimiento, ya que suelen incluir actualizaciones de los índices del sistema. Consulte [consejos para la optimización del rendimiento](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para ver algunas optimizaciones del índice.
 
 Cree índices personalizados para consultas que ejecute con frecuencia. Para obtener más información, consulte la [metodología para analizar consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) y [crear índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obtener información adicional sobre las prácticas recomendadas de consultas e índices, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -300,12 +301,12 @@ Para minimizar la latencia y lograr un alto rendimiento mediante la utilización
 * Implementación en Java 8.
 * Establezca los parámetros óptimos de JVM.
 * Configurar un almacén de datos del sistema de archivos o un almacén de datos de S3.
-* Deshabilite la generación de subrecursos. Si está activada, el flujo de trabajo de AEM crea un recurso independiente para cada página en un recurso de varias páginas. Cada una de estas páginas es un recurso individual que consume espacio en disco adicional, requiere versiones y un procesamiento de flujo de trabajo adicional. Si no necesita páginas separadas, deshabilite la generación de subrecursos y las actividades de extracción de páginas.
-* Habilitar flujos de trabajo transitorios.
-* Ajuste las colas del flujo de trabajo de Granite para limitar los trabajos simultáneos.
-* Configure [!DNL ImageMagick] para limitar el consumo de recursos.
-* Quite los pasos innecesarios del flujo de trabajo [!UICONTROL Recurso de actualización DAM].
-* Configure el flujo de trabajo y la depuración de versiones.
-* Optimice los índices con los últimos Service Packs y revisiones. Consulte con Asistencia al cliente de Adobe cualquier optimización de índice adicional que pueda estar disponible.
-* Utilice guessTotal para optimizar el rendimiento de la consulta.
-* Si configura [!DNL Experience Manager] para que detecte los tipos de archivo a partir del contenido de los archivos (habilitando el **[!UICONTROL Servicio Day CQ DAM Mime Type]** en la **[!UICONTROL consola web de AEM]**), cargue muchos archivos de forma masiva durante las horas de menor afluencia, ya que consume muchos recursos.
+* Deshabilite la generación de subrecursos. If it is enabled, AEM&#39;s workflow creates a separate asset for each page in a multi-page asset. Each of these pages is an individual asset that consumes additional disk space, requires versioning, and additional workflow processing. If you do not require separate pages, disable subasset generation and page extraction activities.
+* Enable transient workflows.
+* Tune the Granite workflow queues to limit concurrent jobs.
+* Configure [!DNL ImageMagick] to limit resource consumption.
+* Remove unnecessary steps from the [!UICONTROL DAM Update Asset] workflow.
+* Configure workflow and version purging.
+* Optimize indexes with the latest Service Packs and hotfixes. Check with Adobe Customer Support for any additional index optimizations that may be available.
+* Use guessTotal to optimize query performance.
+* If you configure [!DNL Experience Manager] to detect file types from the content of the files (by enabling **[!UICONTROL Day CQ DAM Mime Type Service]** in the **[!UICONTROL AEM Web Console]**), upload many files in bulk during non-peak hours as it is resource-intensive.

@@ -5,9 +5,9 @@ exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '486'
 ht-degree: 2%
 
 ---
@@ -142,9 +142,11 @@ El archivo component.xml se muestra aquí:
 
 <!-- Start of the Service definition -->
    <services>
-<!-- Unique name for service descriptor.
+<!--
+Unique name for service descriptor.
            The value is used as the default name for
-           deployed services -->
+           deployed services
+           -->
       <service name="ZipService">
 <!-- service implementation class definition -->
         <implementation-class>nith.lces2.dsc.ZIPService</implementation-class>
@@ -190,38 +192,38 @@ El archivo component.xml se muestra aquí:
 </component>
 ```
 
-## Empaquetado e implementación del componente {#packaging-deploying-component}
+## Packaging and deploying the component {#packaging-deploying-component}
 
-1. Compile el proyecto Java™ y cree un archivo .JAR.
-1. Implemente el componente (archivo .JAR) en el tiempo de ejecución de AEM Forms en JEE a través de Workbench.
-1. Inicie el servicio desde Workbench (consulte la figura siguiente).
+1. Compile the Java™ project and create a .JAR file.
+1. Deploy the component (.JAR file) to the AEM Forms on JEE runtime through Workbench.
+1. Start the service from Workbench (see Figure below).
 
-![Diseño de procesos](assets/process-design.jpg)
+![Process Design](assets/process-design.jpg)
 
-## Uso del servicio ZIP en flujos de trabajo {#using-zip-service-in-workflows}
+## Using the ZIP service in workflows {#using-zip-service-in-workflows}
 
-La operación UnzipDocument del servicio personalizado ahora puede aceptar una variable de documento como entrada y devolver una lista de variables de documento como salida.
+The UnzipDocument operation of the custom service can now accept a document variable as input and return a list of document variables as output.
 
-![Descomprimir documento](assets/unzip-doc.jpg)
+![Unzip Document](assets/unzip-doc.jpg)
 
-Del mismo modo, la operación ZipDocuments del componente personalizado puede aceptar una lista de documentos como entrada, comprimirlos como archivo zip y devolver el documento comprimido.
+Similarly the ZipDocuments operation of the custom component can accept a list of documents as input, compress them as a zip file and return the compressed document.
 
-![Documento Zip](assets/zip-doc.jpg)
+![Zip Document](assets/zip-doc.jpg)
 
-La siguiente orquestación del flujo de trabajo muestra cómo descomprimir el archivo ZIP, comprimirlo de nuevo en otro archivo ZIP y devolver la salida (consulte la figura siguiente).
+The following workflow orchestration shows how to decompress the given ZIP file, compress it back to another ZIP file, and return output (see Figure below).
 
-![Descomprimir flujo de trabajo ZIP](assets/unzip-zip-process.jpg)
+![Unzip Zip workflow](assets/unzip-zip-process.jpg)
 
-## Algunos casos de uso empresariales {#business-use-cases}
+## Some business use cases {#business-use-cases}
 
-Puede utilizar este servicio ZIP para los siguientes casos de uso:
+You can use this ZIP Service for the following use cases:
 
-* Busque todos los archivos de una carpeta determinada y devuélvalos como un documento comprimido.
+* Find all files in a given folder and return the files as a compressed document.
 
-* Suministre un archivo ZIP que contenga varios documentos del PDF que se puedan ampliar después de descomprimirlos. Esto requiere AEM Forms en el módulo de extensiones de Reader JEE.
+* Supply a ZIP file containing several PDF documents which can be reader extended after decompressing them. This requires AEM Forms on JEE Reader Extensions module.
 
-* Suministre un archivo ZIP que contenga un tipo heterogéneo de documento que se pueda descomprimir y convertir como documento de PDF mediante el servicio Generate PDF.
+* Supply a ZIP file containing a heterogeneous type of document that can be decompressed and converted as PDF document using the Generate PDF service.
 
-* Política de proteger una lista de documentos y devolver como archivo ZIP.
+* Policy protect a list of documents and return as a ZIP file.
 
-* Permite a los usuarios descargar todos los archivos adjuntos de una instancia de proceso como un solo archivo ZIP.
+* Let users download all the attachments of a process instance as a single ZIP file.

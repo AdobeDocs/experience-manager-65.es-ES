@@ -1,19 +1,19 @@
 ---
-title: '[!DNL Assets] desarrollo proxy '
+title: '[!DNL Assets] desarrollo proxy'
 description: 'Un proxy es una instancia de  [!DNL Experience Manager]  que usa trabajadores proxy para procesar trabajos. Obtenga información sobre cómo configurar un proxy, operaciones admitidas, componentes proxy y cómo desarrollar un trabajador proxy personalizado. [!DNL Experience Manager] '
 contentOwner: AG
 role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
 
-# [!DNL Assets] desarrollo proxy  {#assets-proxy-development}
+# [!DNL Assets] desarrollo proxy {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] utiliza un proxy para distribuir el procesamiento de ciertas tareas.
 
@@ -107,7 +107,8 @@ A continuación se muestra un ejemplo de uso de API:
 
 ### Configuraciones de Cloud Service {#cloud-service-configurations}
 
-<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
+<!--
+TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
 >Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).

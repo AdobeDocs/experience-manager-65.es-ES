@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2152'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,8 @@ Los controladores de medios son servicios de [!DNL Assets] que realizan acciones
 
 Los siguientes controladores de medios están disponibles en [!DNL Assets] y administran los tipos MIME más comunes:
 
-<!-- TBD: Java versions should not be set to 1.5. Must be updated.
+<!--
+TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Nombre del controlador | Nombre del servicio (en la consola del sistema) | Tipos MIME admitidos |
@@ -123,7 +124,7 @@ Se deben implementar los siguientes métodos:
 
 Esta es una plantilla de ejemplo:
 
-package my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ la clase pública MyMediaHandler amplía com.day.cq.dam.core.AbstractAssetHandler { // implementa las partes relevantes }
+package my.own.stuff; /&amp;ast; &amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler amplía com.day.cq.dam.core.AbstractAssetHandler { // implementar las partes relevantes }
 
 La interfaz y las clases incluyen:
 

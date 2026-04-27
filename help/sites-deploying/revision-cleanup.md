@@ -9,10 +9,10 @@ feature: Administering
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: a2d7d82e0d6729e08b464d3843a9b44bcabd154b
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '5696'
-ht-degree: 0%
+source-wordcount: '5878'
+ht-degree: 1%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-Cada actualización del repositorio crea una revisión de contenido. Como resultado, con cada actualización, el tamaño del repositorio aumenta. Las revisiones antiguas deben limpiarse para liberar recursos de disco. Esto es importante para evitar un crecimiento incontrolado del repositorio. Esta funcionalidad de mantenimiento se denomina Limpieza de revisión. Ha estado disponible como una rutina sin conexión desde Adobe Experience Manager AEM () 6.0.
+Cada actualización del repositorio crea una revisión de contenido. Como resultado, con cada actualización, el tamaño del repositorio aumenta. Las revisiones antiguas deben limpiarse para liberar recursos de disco. Esto es importante para evitar un crecimiento incontrolado del repositorio. Esta funcionalidad de mantenimiento se denomina Limpieza de revisión. Está disponible como rutina sin conexión desde Adobe Experience Manager (AEM) 6.0.
 
-AEM Con la versión 6.3 y superior de la, se ha introducido una versión en línea de esta funcionalidad denominada Limpieza de revisión en línea. AEM AEM En comparación con la Limpieza de revisión sin conexión, en la que la instancia de debe cerrarse, la Limpieza de revisión en línea puede ejecutarse mientras la instancia está en línea. Limpieza de revisión en línea está activada de forma predeterminada y es la forma recomendada de realizar una limpieza de revisión.
+Con AEM 6.3 y versiones posteriores, se introdujo una versión en línea de esta funcionalidad denominada Limpieza de revisión en línea. En comparación con la Limpieza de revisión sin conexión, en la que hay que cerrar la instancia de AEM, la Limpieza de revisión en línea se puede ejecutar mientras la instancia de AEM está en línea. Limpieza de revisión en línea está activada de forma predeterminada y es la forma recomendada de realizar una limpieza de revisión.
 
-**Nota**: [Vea el Vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=es) para ver una introducción y cómo usar la Limpieza de revisión en línea.
+**Nota**: [Vea el Vídeo](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) para ver una introducción y cómo usar la Limpieza de revisión en línea.
 
-El proceso de limpieza de revisión consta de tres fases: **estimación**, **compactación** y **limpieza**. La estimación determina si se debe ejecutar la siguiente fase (compactación) o no en función de la cantidad de basura que se pueda recolectar. Durante la fase de compactación, los segmentos y los archivos tar se vuelven a escribir sin tener en cuenta el contenido no utilizado. A continuación, la fase de limpieza elimina los segmentos antiguos, incluida la basura que puedan contener. AEM El modo sin conexión generalmente puede reclamar más espacio porque el modo en línea debe tener en cuenta el conjunto de trabajo de que se dispone para evitar que se recopilen segmentos adicionales.
+El proceso de limpieza de revisión consta de tres fases: **estimación**, **compactación** y **limpieza**. La estimación determina si se debe ejecutar la siguiente fase (compactación) o no en función de la cantidad de basura que se pueda recolectar. Durante la fase de compactación, los segmentos y los archivos tar se vuelven a escribir sin tener en cuenta el contenido no utilizado. A continuación, la fase de limpieza elimina los segmentos antiguos, incluida la basura que puedan contener. El modo sin conexión generalmente puede recuperar más espacio porque el modo en línea debe tener en cuenta el conjunto de trabajo de AEM, que evita que se recopilen segmentos adicionales.
 
 Para obtener más información sobre Revision Cleanup, consulte los siguientes vínculos:
 
@@ -38,13 +38,13 @@ También puede leer la [documentación oficial de Oak](https://jackrabbit.apache
 
 ### ¿Cuándo utilizar la Limpieza de revisión en línea y cuándo la Limpieza de revisión sin conexión? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
 
-**Limpieza de revisión en línea es la forma recomendada de realizar la limpieza de revisión.** Limpieza de revisión sin conexión solo debe usarse de forma excepcional, por ejemplo, antes de migrar al nuevo formato de almacenamiento o si el Servicio de atención al cliente de Adobe le solicita que lo haga.
+**Limpieza de revisión en línea es la forma recomendada de realizar la limpieza de revisión.** La limpieza de revisión sin conexión solo debe utilizarse de forma excepcional, por ejemplo, antes de migrar al nuevo formato de almacenamiento o si el Servicio de atención al cliente de Adobe le solicita que lo haga.
 
 ## Cómo ejecutar la limpieza de revisión en línea {#how-to-run-online-revision-cleanup}
 
-AEM La Limpieza de revisión en línea está configurada de forma predeterminada para ejecutarse automáticamente una vez al día tanto en instancias de autor como en instancias de Publish de la. Todo lo que debe hacer es definir la ventana de mantenimiento durante un periodo con la menor actividad de usuario. Puede configurar la tarea Limpieza de revisión en línea de la siguiente manera:
+La Limpieza de revisión en línea está configurada de forma predeterminada para ejecutarse automáticamente una vez al día tanto en las instancias de autor de AEM como en las de publicación. Todo lo que debe hacer es definir la ventana de mantenimiento durante un periodo con la menor actividad de usuario. Puede configurar la tarea Limpieza de revisión en línea de la siguiente manera:
 
-1. AEM En la ventana principal de la, vaya a **Herramientas - Operaciones - Panel de control - Mantenimiento** o dirija su explorador a: `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
+1. En la ventana principal de AEM, vaya a **Herramientas - Operaciones - Panel de control - Mantenimiento** o dirija el explorador a: `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
@@ -78,16 +78,16 @@ Debido a este hecho, se recomienda dimensionar el disco al menos dos o tres vece
 
 ## Modos De Compactación Completa Y De Cola  {#full-and-tail-compaction-modes}
 
-AEM **6.5** presenta **dos nuevos modos** para la fase de **compactación** del proceso de Limpieza de revisiones en línea:
+**AEM 6.5** presenta **dos nuevos modos** para la fase de **compactación** del proceso de limpieza de revisiones en línea:
 
-* El modo **compactación completa** reescribe todos los segmentos y archivos tar de todo el repositorio. La fase de limpieza posterior puede, por lo tanto, eliminar la cantidad máxima de residuos en el repositorio. Debido a que la compactación completa afecta a todo el repositorio, requiere una cantidad considerable de recursos del sistema y tiempo para completarse. AEM La compactación total corresponde a la fase de compactación de la versión 6.3 de la.
+* El modo **compactación completa** reescribe todos los segmentos y archivos tar de todo el repositorio. La fase de limpieza posterior puede, por lo tanto, eliminar la cantidad máxima de residuos en el repositorio. Debido a que la compactación completa afecta a todo el repositorio, requiere una cantidad considerable de recursos del sistema y tiempo para completarse. La compactación completa corresponde a la fase de compactación de AEM 6.3.
 * El modo **tail compaction** solo reescribe los segmentos y archivos tar más recientes del repositorio. Los segmentos y archivos tar más recientes son los que se han añadido desde la última vez que se ejecutó la compactación completa o de cola. Por lo tanto, la fase de limpieza posterior solo puede eliminar la basura contenida en la parte reciente del repositorio. Debido a que la compactación de cola solo afecta a una parte del repositorio, requiere considerablemente menos recursos del sistema y tiempo para completarla que la compactación completa.
 
 Estos modos de compactación constituyen un equilibrio entre la eficiencia y el consumo de recursos: aunque la compactación de cola es menos eficaz, también tiene menos impacto en el funcionamiento normal del sistema. Por el contrario, la compactación total es más eficaz, pero tiene un mayor impacto en el funcionamiento normal del sistema.
 
-AEM La versión 6.5 también introduce un mecanismo de deduplicación de contenido más eficaz durante la compactación, lo que reduce aún más el espacio en disco del repositorio.
+AEM 6.5 también introduce un mecanismo de deduplicación de contenido más eficaz durante la compactación, que reduce aún más el espacio en disco del repositorio.
 
-AEM AEM En los dos gráficos que figuran a continuación, se presentan los resultados de las pruebas de laboratorio internas que ilustran la reducción de los tiempos de ejecución promedio y la huella media en disco en 6,5 comparado con la de los discos en 6,3, en comparación con la de los discos en 6,3, en comparación con la de los discos en 6,5, respectivamente.
+Los dos gráficos siguientes muestran los resultados de las pruebas de laboratorio internas que ilustran la reducción de los tiempos de ejecución promedio y la huella media en disco en AEM 6.5 en comparación con AEM 6.3:
 
 ![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
@@ -108,7 +108,7 @@ Además, tenga en cuenta que:
 Cuando utilice los nuevos modos de compactación, tenga en cuenta lo siguiente:
 
 * Puede monitorizar la actividad de entrada/salida (E/S), por ejemplo: operaciones de E/S, CPU esperando E/S, tamaño de cola de confirmación. Esto ayuda a determinar si el sistema está enlazado a E/S y si es necesario convertir.
-* `RevisionCleanupTaskHealthCheck` indica el estado general de la Limpieza de revisión en línea. AEM Funciona de la misma manera que en la versión 6.3 de la y no distingue entre compactación total y de cola.
+* `RevisionCleanupTaskHealthCheck` indica el estado general de la Limpieza de revisión en línea. Funciona del mismo modo que en AEM 6.3 y no distingue entre compactación total y de cola.
 * Los mensajes de registro llevan información relevante sobre los modos de compactación. Por ejemplo, cuando se inicia la Limpieza de revisión en línea, los mensajes de registro correspondientes indican el modo de compactación. Además, en algunos casos extremos, el sistema vuelve a la compactación completa cuando estaba programado para ejecutar una compactación de cola y los mensajes de registro indican este cambio. Las siguientes muestras de registro indican el modo de compactación y el cambio de cola a compactación completa:
 
 ```
@@ -124,7 +124,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
 
 ## Preguntas más frecuentes sobre Limpieza de revisiones en línea {#online-revision-cleanup-frequently-asked-questions}
 
-### AEM Consideraciones de actualización de 6.5 {#aem-upgrade-considerations}
+### Consideraciones de actualización de AEM 6.5 {#aem-upgrade-considerations}
 
 <table style="table-layout:auto">
  <tbody>
@@ -133,8 +133,8 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
    <td>Respuestas</td>
   </tr>
   <tr>
-   <td>AEM ¿Qué debo tener en cuenta al actualizar a la versión 6.5 de?</td>
-   <td><p>AEM El formato de persistencia de TarMK cambia con la versión 6.5 de la. Estos cambios no requieren un paso de migración proactiva. Los repositorios existentes pasan por una migración móvil, que es transparente para el usuario. AEM El proceso de migración se inicia la primera vez que 6.5 (o las herramientas relacionadas) acceden al repositorio.</p> <p><strong>AEM AEM Una vez iniciada la migración al formato de persistencia de la versión 6.5 de la, el repositorio no se puede revertir al formato de persistencia 6.3 de la versión anterior de la misma.</strong></p> </td>
+   <td>¿Qué debo tener en cuenta al actualizar a AEM 6.5?</td>
+   <td><p>El formato de persistencia de TarMK cambia con AEM 6.5. Estos cambios no requieren un paso de migración proactiva. Los repositorios existentes pasan por una migración móvil, que es transparente para el usuario. El proceso de migración se inicia la primera vez que AEM 6.5 (o las herramientas relacionadas) accede al repositorio.</p> <p><strong>Una vez iniciada la migración al formato de persistencia de AEM 6.5, el repositorio no se puede revertir al formato de persistencia anterior de AEM 6.3.</strong></p> </td>
   </tr>
  </tbody>
 </table>
@@ -150,7 +150,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Por qué necesito migrar el repositorio?</strong></td>
-   <td><p>AEM En la versión 6.3 se necesitaban cambios en el formato de almacenamiento, especialmente para mejorar el rendimiento y la eficacia de Online Revision Cleanup. Estos cambios no son compatibles con versiones anteriores y los repositorios creados con el antiguo segmento de Oak AEM (la versión 6.2 y la anterior de la versión de) deben migrarse.</p> <p>Ventajas adicionales de cambiar el formato de almacenamiento:</p>
+   <td><p>En AEM 6.3 era necesario realizar cambios en el formato de almacenamiento, especialmente para mejorar el rendimiento y la eficacia de Online Revision Cleanup. Estos cambios no son compatibles con versiones anteriores y los repositorios creados con el antiguo segmento de Oak (AEM 6.2 y versiones anteriores) deben migrarse.</p> <p>Ventajas adicionales de cambiar el formato de almacenamiento:</p>
     <ul>
      <li>Mejor escalabilidad (tamaño de segmento optimizado).</li>
      <li><a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">Recopilación de residuos del almacén de datos</a> más rápida.<br /> </li>
@@ -160,7 +160,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Sigue siendo compatible el formato Tar anterior?</strong></td>
-   <td>Solo se admite el nuevo Segmento de tar de Oak AEM con la versión 6.3 o superior de la aplicación de la versión de la aplicación de la manera de.</td>
+   <td>Solo se admite el nuevo Segmento de tar de Oak con AEM 6.3 o superior.</td>
    <td> </td>
   </tr>
   <tr>
@@ -241,13 +241,13 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
    <td> </td>
   </tr>
   <tr>
-   <td><strong>¿Author y Publish suelen tener diferentes ventanas de Limpieza de revisiones en línea?</strong></td>
-   <td>Esto depende del horario de oficina y de los patrones de tráfico de la presencia en línea del cliente. Las ventanas de mantenimiento deben configurarse fuera de los tiempos de producción principales para permitir la mejor eficacia de limpieza. AEM Para varias instancias de Publish (granja de TarMK) de, las ventanas de mantenimiento para Limpieza de revisiones en línea deben escalonarse.</td>
+   <td><strong>¿Las ventanas Autor y Publicación suelen tener diferentes ventanas Limpieza de revisiones en línea?</strong></td>
+   <td>Esto depende del horario de oficina y de los patrones de tráfico de la presencia en línea del cliente. Las ventanas de mantenimiento deben configurarse fuera de los tiempos de producción principales para permitir la mejor eficacia de limpieza. Para varias instancias de publicación de AEM (granja TarMK), las ventanas de mantenimiento para Limpieza de revisiones en línea deben estar escalonadas.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>¿Hay algún requisito previo antes de ejecutar la limpieza de revisión en línea?</strong></td>
-   <td><p>AEM La Limpieza de revisiones en línea solo está disponible con las versiones 6.3 y posteriores de la versión de. AEM Además, si usa una versión anterior de la, debe migrar al nuevo <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Segmento de destino de Oak</a>.</p> </td>
+   <td><p>Limpieza de revisión en línea solo está disponible con AEM 6.3 y versiones posteriores. Además, si usa una versión anterior de AEM, debe migrar al nuevo <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Segmento de destino de Oak</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -263,12 +263,12 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Pueden los autores seguir trabajando mientras se ejecuta la Limpieza de revisión en línea?</strong></td>
-   <td>Sí, Limpieza de revisiones en línea puede hacer frente a escrituras simultáneas. Sin embargo, Limpieza de revisión en línea funciona de forma más rápida y eficaz sin transacciones de escritura simultáneas. El Adobe recomienda programar la tarea de mantenimiento Limpieza de revisiones en línea para un tiempo relativamente silencioso sin mucho tráfico.</td>
+   <td>Sí, Limpieza de revisiones en línea puede hacer frente a escrituras simultáneas. Sin embargo, Limpieza de revisión en línea funciona de forma más rápida y eficaz sin transacciones de escritura simultáneas. Adobe recomienda programar la tarea de mantenimiento Limpieza de revisiones en línea para un periodo de tiempo relativamente silencioso y sin mucho tráfico.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>¿Cuáles son los requisitos mínimos para el espacio en disco y la memoria de la pila al ejecutar Online Revision Cleanup?</strong></td>
-   <td><p>El espacio en disco se supervisa continuamente durante la Limpieza de revisiones en línea. Si el espacio disponible en disco cae por debajo de un valor crítico, el proceso se cancela. El valor crítico es el 25 % del espacio en disco actual del repositorio y no se puede configurar.</p> <p><strong>El Adobe recomienda que el tamaño del disco sea al menos dos o tres veces mayor que el tamaño de repositorio inicialmente estimado.</strong></p> <p>El espacio libre en la pila se monitoriza continuamente durante el proceso de limpieza. Si el espacio libre en la pila cae por debajo de un valor crítico, el proceso se cancela. El valor crítico se configura mediante org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. El valor predeterminado es 15 %.</p> <p>Recommendations AEM para un tamaño mínimo de la pila de compactación no está separado de las recomendaciones de tamaño de memoria de la. AEM Generalmente: <strong>Si una instancia de tiene el tamaño suficiente para hacer frente a los casos de uso y a la carga útil esperada, el proceso de limpieza obtiene suficiente memoria.</strong></p> </td>
+   <td><p>El espacio en disco se supervisa continuamente durante la Limpieza de revisiones en línea. Si el espacio disponible en disco cae por debajo de un valor crítico, el proceso se cancela. El valor crítico es el 25 % del espacio en disco actual del repositorio y no se puede configurar.</p> <p><strong>Adobe recomienda que el tamaño del disco sea al menos dos o tres veces mayor que el tamaño de repositorio estimado inicialmente.</strong></p> <p>El espacio libre en la pila se monitoriza continuamente durante el proceso de limpieza. Si el espacio libre en la pila cae por debajo de un valor crítico, el proceso se cancela. El valor crítico se configura mediante org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. El valor predeterminado es 15 %.</p> <p>Las recomendaciones de tamaño mínimo de pila de compactación no están separadas de las recomendaciones de tamaño de memoria de AEM. Generalmente: <strong>Si una instancia de AEM tiene el tamaño suficiente para hacer frente a los casos de uso y a la carga útil esperada, el proceso de limpieza obtiene suficiente memoria.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -278,7 +278,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Durante cuánto tiempo se espera que se ejecute la Limpieza de revisión en línea?</strong></td>
-   <td>No debe tardar más de dos horas en ejecutarse según el Adobe de pruebas de rendimiento más reciente realizado internamente.</td>
+   <td>No debería tardar más de dos horas en ejecutarse según las últimas pruebas de rendimiento que Adobe realizó internamente.</td>
    <td> </td>
   </tr>
   <tr>
@@ -287,7 +287,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
     <ul>
      <li>Asegúrese de que se ejecute a diario.<br /> </li>
      <li>Asegúrese de que se ejecuta durante las actividades mínimas del repositorio configurando las ventanas de mantenimiento en el tablero de operaciones en consecuencia.</li>
-     <li>Escalar los recursos del sistema (CPU, memoria, E/S).</li>
+     <li>Ampliación de los recursos del sistema (CPU, memoria, E/S).</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -307,11 +307,11 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Es posible abortar de forma segura la compactación automática si el impacto en el rendimiento es demasiado alto?</strong></td>
-   <td>Sí. AEM Desde la versión 6.3, se puede detener de forma segura a través de la Ventana Tarea de mantenimiento dentro del Tablero de operaciones o a través de JMX.</td>
+   <td>Sí. A partir de AEM 6.3, se puede detener de forma segura mediante la ventana Tarea de mantenimiento dentro del tablero de operaciones o mediante JMX.</td>
    <td> </td>
   </tr>
   <tr>
-   <td><strong>AEM Si la instancia de se apaga durante una tarea de limpieza programada, ¿el proceso se interrumpe de forma segura o se bloquea el apagado hasta que la compactación haya finalizado?</strong></td>
+   <td><strong>Si la instancia de AEM se apaga durante una tarea de limpieza programada, ¿el proceso se interrumpe de forma segura o se bloquea el apagado hasta que la compactación haya finalizado?</strong></td>
    <td>Revision Cleanup se interrumpe y el repositorio se apaga correctamente.</td>
    <td> </td>
   </tr>
@@ -385,7 +385,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Dónde podemos encontrar las estadísticas de las últimas ejecuciones de Limpieza de revisión en línea?</strong></td>
-   <td><p>El estado, el progreso y las estadísticas se exponen mediante JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Para obtener más información sobre el MBean <code>SegmentRevisionGarbageCollection</code>, lea el <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">párrafo siguiente</a>.</p> <p>El progreso se puede rastrear a través del atributo <code>EstimatedRevisionGCCompletion</code> del <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Puede obtener una referencia del MBean utilizando <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Las estadísticas solo están disponibles desde el último inicio del sistema. AEM <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-external-services" target="_blank">Se podría usar la herramienta de supervisión externa para mantener los datos más allá del tiempo de actividad de la</a>.</p> </td>
+   <td><p>El estado, el progreso y las estadísticas se exponen mediante JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Para obtener más información sobre el MBean <code>SegmentRevisionGarbageCollection</code>, lea el <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">párrafo siguiente</a>.</p> <p>El progreso se puede rastrear a través del atributo <code>EstimatedRevisionGCCompletion</code> del <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Puede obtener una referencia del MBean utilizando <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Las estadísticas solo están disponibles desde el último inicio del sistema. <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-external-services" target="_blank">Se podría usar la herramienta de supervisión externa para mantener los datos más allá del tiempo de actividad de AEM</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -394,11 +394,11 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
     <ul>
      <li>La limpieza de revisión en línea se ha iniciado o detenido
       <ul>
-       <li>Limpieza de revisión en línea se compone de tres fases: estimación, compactación y limpieza. La estimación puede forzar que se omitan la compactación y la limpieza si el repositorio no contiene suficiente basura. AEM En la última versión de la versión de la aplicación, el mensaje "<code>TarMK GC #{}: estimation started</code>" marca el inicio de la estimación, "<code>TarMK GC #{}: compaction started, strategy={}</code>" marca el inicio de la compactación y "T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>" marca el inicio de la limpieza.</li>
+       <li>Limpieza de revisión en línea se compone de tres fases: estimación, compactación y limpieza. La estimación puede forzar que se omitan la compactación y la limpieza si el repositorio no contiene suficiente basura. En la última versión de AEM, el mensaje "<code>TarMK GC #{}: estimation started</code>" marca el inicio de la estimación, "<code>TarMK GC #{}: compaction started, strategy={}</code>" marca el inicio de la compactación y "T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>" marca el inicio de la limpieza.</li>
       </ul> </li>
      <li>Espacio en disco obtenido por la limpieza de revisión
       <ul>
-       <li>El espacio solo se recupera cuando finaliza la fase de limpieza. La finalización de la fase de limpieza se marca con el mensaje de registro "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". El tamaño de limpieza de Post es de {} ({} bytes) y el espacio reclamado es de {} ({} bytes). La profundidad/peso del mapa de compactación es de {}/{} ({} bytes/{}).".</li>
+       <li>El espacio solo se recupera cuando finaliza la fase de limpieza. La finalización de la fase de limpieza se marca con el mensaje de registro "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". El tamaño de la limpieza posterior es de {} ({} bytes) y el espacio reclamado es de {} ({} bytes). La profundidad/peso del mapa de compactación es de {}/{} ({} bytes/{}).".</li>
       </ul> </li>
      <li>Se ha producido un problema durante la limpieza de revisión
       <ul>
@@ -417,7 +417,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
    <td><p>No es necesaria una comprobación de integridad del repositorio después de la Limpieza de revisión en línea. </p> <p>Sin embargo, puede realizar las siguientes acciones para comprobar el estado del repositorio después de la limpieza:</p>
     <ul>
      <li>Una <a href="/help/sites-deploying/consistency-check.md" target="_blank">comprobación de recorrido</a> del repositorio</li>
-     <li>Utilice la herramienta oak-run después de que se haya completado el proceso de limpieza para comprobar las incoherencias. Para obtener más información sobre cómo hacerlo, consulte la <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Documentación de Apache.AEM </a> No es necesario cerrar la aplicación para ejecutar la herramienta.</li>
+     <li>Utilice la herramienta oak-run después de que se haya completado el proceso de limpieza para comprobar las incoherencias. Para obtener más información sobre cómo hacerlo, consulte la <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Documentación de Apache.</a> No es necesario cerrar AEM para ejecutar la herramienta.</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -428,12 +428,12 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>¿Qué información se expone en la comprobación de estado de Revision Cleanup? ¿Cómo y cuándo contribuyen a los niveles de estado codificados por colores? </strong></td>
-   <td><p>La comprobación de estado de limpieza de revisión forma parte del <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">tablero de operaciones</a>.<br /> </p> <p>El estado es <strong>VERDE</strong> si la última ejecución de la tarea de mantenimiento Limpieza de revisiones en línea se completó correctamente.</p> <p>Es <strong>AMARILLO</strong> si la tarea de mantenimiento Limpieza de revisión en línea se canceló una vez.<br /> </p> <p>Es <strong>RED</strong> si la tarea de mantenimiento Limpieza de revisiones en línea se canceló tres veces seguidas. <strong>En este caso se requiere interacción manual</strong> o es probable que Limpieza de revisión en línea vuelva a fallar. Para obtener más información, lea la sección <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Solución de problemas</a> a continuación.<br /> </p> <p>Además, el estado de la comprobación de estado se restablece después de reiniciar el sistema. Por lo tanto, una instancia recién reiniciada muestra un estado verde en la comprobación de estado de limpieza de revisión.  AEM <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-external-services" target="_blank">Se podría usar la herramienta de supervisión externa para mantener los datos más allá del tiempo de actividad de la</a>.</p> </td>
+   <td><p>La comprobación de estado de limpieza de revisión forma parte del <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">tablero de operaciones</a>.<br /> </p> <p>El estado es <strong>VERDE</strong> si la última ejecución de la tarea de mantenimiento Limpieza de revisiones en línea se completó correctamente.</p> <p>Es <strong>AMARILLO</strong> si la tarea de mantenimiento Limpieza de revisión en línea se canceló una vez.<br /> </p> <p>Es <strong>RED</strong> si la tarea de mantenimiento Limpieza de revisiones en línea se canceló tres veces seguidas. <strong>En este caso se requiere interacción manual</strong> o es probable que Limpieza de revisión en línea vuelva a fallar. Para obtener más información, lea la sección <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Solución de problemas</a> a continuación.<br /> </p> <p>Además, el estado de la comprobación de estado se restablece después de reiniciar el sistema. Por lo tanto, una instancia recién reiniciada muestra un estado verde en la comprobación de estado de limpieza de revisión.  <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-external-services" target="_blank">Se podría usar la herramienta de supervisión externa para mantener los datos más allá del tiempo de actividad de AEM</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td><p><strong>¿Cómo monitorizar la Limpieza automática en una instancia de espera?</strong></p> </td>
-   <td><p>El estado, el progreso y las estadísticas se exponen mediante JMX usando el MBean <code>SegmentRevisionGarbageCollection</code>. Consulte también la siguiente <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">documentación de Oak</a>. </p> <p>Puede obtener una referencia del MBean utilizando <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Las estadísticas solo están disponibles desde el último inicio del sistema.  AEM <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-external-services" target="_blank">Se podría usar la herramienta de supervisión externa para mantener los datos más allá del tiempo de actividad de la</a>.</p> <p>Los archivos de registro también se pueden utilizar para comprobar el estado, el progreso y las estadísticas de Limpieza automática.</p> </td>
+   <td><p>El estado, el progreso y las estadísticas se exponen mediante JMX usando el MBean <code>SegmentRevisionGarbageCollection</code>. Consulte también la siguiente <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">documentación de Oak</a>. </p> <p>Puede obtener una referencia del MBean utilizando <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Las estadísticas solo están disponibles desde el último inicio del sistema.  <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-external-services" target="_blank">Se podría usar la herramienta de supervisión externa para mantener los datos más allá del tiempo de actividad de AEM</a>.</p> <p>Los archivos de registro también se pueden utilizar para comprobar el estado, el progreso y las estadísticas de Limpieza automática.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -455,7 +455,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
  <tbody>
   <tr>
    <td><strong>¿Qué es lo peor que puede pasar si no ejecuta Limpieza de revisión en línea?</strong></td>
-   <td>AEM La instancia se queda sin espacio en disco, lo que provoca interrupciones en la producción.</td>
+   <td>La instancia de AEM se queda sin espacio en disco, lo que provoca interrupciones en la producción.</td>
    <td> </td>
   </tr>
   <tr>
@@ -465,7 +465,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
   </tr>
   <tr>
    <td><strong>Según la comprobación de estado y las entradas de registro, Limpieza de revisiones en línea no se ha completado correctamente tres veces seguidas. ¿Qué se necesita para completar correctamente la limpieza de revisión en línea?</strong></td>
-   <td>Puede realizar varios pasos para encontrar y solucionar el problema:<br />
+   <td>Puede realizar varios pasos para buscar y solucionar el problema:<br />
     <ul>
      <li>Primero, compruebe las entradas de registro <br /> </li>
      <li>Según la información de los registros, realice las acciones adecuadas:
@@ -494,7 +494,7 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
     <ol>
      <li>Una aplicación que elude los mecanismos de acceso recomendados (como Sling y la API JCR) y utiliza una API/SPI de nivel inferior para acceder al repositorio y, a continuación, supera el tiempo de retención de un segmento. Es decir, mantiene una referencia a una entidad más larga que el tiempo de retención permitido por Limpieza de revisión en línea (de forma predeterminada, 24 horas). Este caso es transitorio y no provoca daños en los datos. Para recuperarse, la herramienta oak-run debe utilizarse para confirmar la naturaleza transitoria de la excepción (la comprobación oak-run no debe notificar ningún error). Para ello, la instancia debe desconectarse y reiniciarse después.</li>
      <li>Un evento externo dañó los datos del disco. Esto puede ser un error de disco, espacio insuficiente en disco o una modificación accidental de los archivos de datos necesarios. En este caso, la instancia debe desconectarse y repararse mediante la comprobación de oak-run. Para obtener más información sobre cómo realizar la comprobación de oak-run, lea la siguiente <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentación de Apache</a>.</li>
-     <li>Aborde todos los demás sucesos a través del <a href="https://experienceleague.adobe.com/es?support-solution=General&support-tab=home&lang=es#support" target="_blank">Servicio de atención al cliente de Adobe</a>.</li>
+     <li>Aborde todos los demás sucesos a través del <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=es#support" target="_blank">Servicio de atención al cliente de Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -505,7 +505,8 @@ A veces, la alternancia entre los modos de cola y compactación completa retrasa
 
 El error.log es detallado si hay incidentes durante el proceso de limpieza de revisión en línea. La siguiente matriz tiene como objetivo explicar los mensajes más comunes y proporcionar posibles soluciones:
 
-<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
+<!--
+| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
 |   |  |  |  |
 | Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
@@ -513,7 +514,8 @@ El error.log es detallado si hay incidentes durante el proceso de limpieza de re
 | Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
 |   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
 |   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message does not mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
-| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |
+-->
 
 <table style="table-layout:auto">
  <tbody>
@@ -521,7 +523,7 @@ El error.log es detallado si hay incidentes durante el proceso de limpieza de re
     <th>Fase</th>
     <th>Mensajes de registro</th>
     <th>Explicación</th>
-    <th>Siguientes pasos</th>
+    <th>Próximos pasos</th>
   </tr>  
   <tr>
     <td>Estimación</td>
@@ -531,7 +533,7 @@ El error.log es detallado si hay incidentes durante el proceso de limpieza de re
   </td>
   </tr>
   <tr>
-    <td>N/D</td>
+    <td>N/A</td>
     <td>#2 de GC TarMK: estimación interrumpida: ${REASON}. Omitiendo la compactación.</td>
     <td>La fase de estimación terminó prematuramente. Algunos ejemplos de eventos que podrían interrumpir la fase de estimación: no hay suficiente memoria o espacio en disco en el sistema host.</td>
     <td>Depende de la razón dada.</td>
@@ -545,14 +547,14 @@ El error.log es detallado si hay incidentes durante el proceso de limpieza de re
   </td>
   </tr>
    <tr>
-    <td>N/D</td>
-    <td>#2 de TarMK GC: compactación cancelada: ${REASON}.</td>
+    <td>N/A</td>
+    <td>#2 de GC TarMK: compactación cancelada: ${REASON}.</td>
     <td>La fase de compactación terminó prematuramente. Algunos ejemplos de eventos que podrían interrumpir la fase de compactación: no hay suficiente memoria o espacio en disco en el sistema host. Además, la compactación también se puede cancelar apagando el sistema o cancelándolo explícitamente a través de interfaces administrativas como la ventana de mantenimiento dentro del tablero de operaciones.</td>
     <td>Depende de la razón dada.</td>
   </td>
   </tr>
   <tr>
-    <td>N/D</td>
+    <td>N/A</td>
     <td>TarMK GC #2: error de compactación en 32.902 min (1974140 ms), después de 5 ciclos.</td>
     <td>Este mensaje no significa que haya un error irrecuperable, sino que solo esa compactación se ha terminado después de algunos intentos. Lea también <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">el párrafo siguiente.</a></td>
     <td>Lea la siguiente <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">documentación de Oak</a> y la última pregunta de la sección Ejecución de la limpieza de revisión en línea.</a></td>
@@ -572,7 +574,7 @@ El error.log es detallado si hay incidentes durante el proceso de limpieza de re
 
 >[!CAUTION]
 >
->Utilice una versión de la herramienta ejecutada por Oak con un número de versión (principal y secundaria) que coincida con la versión principal de Oak AEM de la instalación de la. AEM Por ejemplo, si la instancia de la tiene Oak Core versión 1.22.x, debe utilizar la versión más reciente de la herramienta 1.22.x ejecutada por Oak.
+>Utilice una versión de la herramienta ejecutada por Oak con un número de versión (principal y secundaria) que coincida con la versión principal de Oak de la instalación de AEM. Por ejemplo, si la instancia de AEM tiene Oak Core versión 1.22.x, debe utilizar la última versión de la herramienta 1.22.x ejecutada por Oak.
 
 Adobe proporciona una herramienta llamada **Oak-run** para realizar la limpieza de revisión. Se puede descargar en la siguiente ubicación:
 
@@ -586,9 +588,9 @@ Para obtener sugerencias sobre cómo aumentar el rendimiento del proceso de limp
 >
 >También puede borrar los puntos de comprobación antiguos antes de que se realice el mantenimiento (pasos 2 y 3 del procedimiento que se describe a continuación). Esto solo se recomienda para instancias que tienen más de 100 puntos de comprobación.
 
-1. AEM Asegúrese siempre de tener una copia de seguridad reciente de la instancia de la.
+1. Asegúrese siempre de tener una copia de seguridad reciente de la instancia de AEM.
 
-   AEM Cierra la puerta
+   Cierre AEM.
 
 1. (Opcional) Utilice la herramienta para buscar puntos de comprobación antiguos:
 
@@ -614,7 +616,7 @@ La herramienta oak-run introduce varias funciones que pretenden aumentar el rend
 
 La lista incluye varios parámetros de línea de comandos, como se describe a continuación:
 
-* **-mmap.** Puede establecer esto como verdadero o falso. Si se establece en true, se utiliza el acceso asignado a la memoria. Si se establece en false, se utiliza el acceso a archivos. Si no se especifica, el acceso asignado a memoria se utiliza en sistemas de 64 bits y el acceso a archivos se utiliza en sistemas de 32 bits. En Windows, el acceso regular a archivos siempre se aplica y esta opción se ignora. **Este parámetro ha reemplazado el parámetro -Dtar.memoryMapped.**
+* **-mmap.** Puede establecerlo como verdadero o falso. Si se establece en true, se utiliza el acceso asignado a la memoria. Si se establece en false, se utiliza el acceso a archivos. Si no se especifica, el acceso asignado a memoria se utiliza en sistemas de 64 bits y el acceso a archivos se utiliza en sistemas de 32 bits. En Windows, el acceso regular a archivos siempre se aplica y esta opción se ignora. **Este parámetro ha reemplazado el parámetro -Dtar.memoryMapped.**
 
 * **-Dupdate.limit**. Define el umbral para el vaciado de una transacción temporal en disco. El valor predeterminado es 10000.
 
@@ -622,9 +624,9 @@ La lista incluye varios parámetros de línea de comandos, como se describe a co
 
 * **-Dcompaction-progress-log**. El número de nodos compactados que se registran. El valor predeterminado es 150000, lo que significa que los primeros nodos compactados 150000 se registran durante la operación. Utilícelo con el siguiente parámetro documentado a continuación.
 
-* **-Dtar.PersistCompactionMap.** Establezca este parámetro en true para utilizar espacio en disco en lugar de memoria de montón para la persistencia de mapa de compactación. Requiere la herramienta oak-run **versiones 1.4** y superiores. Para obtener más información, consulte la pregunta 3 en la sección [Preguntas más frecuentes sobre la limpieza de revisiones sin conexión](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions). **Este parámetro se ha quitado en la versión 1.6 de Oak y no tiene ningún efecto.**
+* **-Dtar.PersistCompactionMap.** Establezca este parámetro en true para utilizar espacio en disco en lugar de memoria de montón para la persistencia del mapa de compactación. Requiere la herramienta oak-run **versiones 1.4** y superiores. Para obtener más información, consulte la pregunta 3 en la sección [Preguntas más frecuentes sobre la limpieza de revisiones sin conexión](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions). **Este parámetro se ha quitado en la versión 1.6 de Oak y no tiene ningún efecto.**
 
-* **: forzar.** Forzar la compactación e ignorar una versión de almacén de segmentos no coincidente.
+* **—force.** Forzar la compactación e ignorar una versión de almacén de segmentos no coincidente.
 
 >[!CAUTION]
 >

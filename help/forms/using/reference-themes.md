@@ -8,9 +8,9 @@ exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 100%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 100%
 * Estándares de diseño web de EE. UU.
 * Tranquil
 
-Cada temática contiene un estilo único y elegante que puede utilizar para crear formularios adaptables para los usuarios. Contiene un estilo único para selectores como panel, cuadro de texto, cuadro numérico, botón de radio, tabla y conmutador. El estilo de estos temas dependerá de los requisitos. Por ejemplo, en una situación concreta se requiere una temática minimalista con fuentes limpias. La temática Liberty permite conseguir esa apariencia.
+Cada tema contiene un estilo único y elegante que puede utilizar para crear formularios adaptables para los usuarios. Contiene un estilo único para selectores como panel, cuadro de texto, cuadro numérico, botón de radio, tabla y conmutador. El estilo de estos temas dependerá de los requisitos. Por ejemplo, en una situación concreta se requiere una temática minimalista con fuentes limpias. La temática Liberty permite conseguir esa apariencia.
 
-![Temáticas de referencia](assets/ref-themes.png)
+![Temas de referencia](assets/ref-themes.png)
 
-Las temáticas incluidas en este paquete son interactivas y su estilo se define para las pantallas móviles y de escritorio. La mayoría de los exploradores modernos de una variedad de dispositivos pueden procesar formularios aplicados con una de estas temáticas sin ningún inconveniente.
+Las temáticas incluidas en este paquete son interactivas y su estilo se define para las pantallas móviles y de escritorio. La mayoría de los navegadores modernos de una variedad de dispositivos pueden procesar formularios aplicados con uno de estos temas sin ningún inconveniente.
 
 Para obtener más información sobre la instalación del paquete, consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md).
 
@@ -40,11 +40,13 @@ Para obtener más información sobre la instalación del paquete, consulte [Cóm
 
 El tema Beryl se usa en el formulario adaptativo We.Gov, y enfatiza el uso de la imagen de fondo, la transparencia y los iconos grandes y planos. En la captura de pantalla siguiente, puede ver el aspecto del tema Beryl y cómo puede mejorar el estilo del formulario.
 
-![Temática Beryl](assets/beryl.png)
+![Tema Beryl](assets/beryl.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/beryl-1.png)-->
+](assets/beryl-1.png)
+-->
 
 ## Exec {#exec}
 
@@ -52,9 +54,11 @@ La temática Exec evita rellenos de fondo sólidos para resaltar los componentes
 
 ![Temática Exec](assets/exec.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-1.png)-->
+](assets/exec-1.png)
+-->
 
 ## Exec Light {#exec-light}
 
@@ -62,9 +66,11 @@ La temática Exec Light utiliza el espacio en blanco para crear una experiencia 
 
 ![Temática Exec Light ](assets/exec-light.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-light-1.png)-->
+](assets/exec-light-1.png)
+-->
 
 ## Liberty {#liberty}
 
@@ -72,19 +78,23 @@ La temática Liberty utiliza un enfoque minimalista para resaltar lo importante.
 
 ![Temática Liberty](assets/liberty.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/liberty-1.png)-->
+](assets/liberty-1.png)
+-->
 
-## Tranquil {#tranquil}
+## Tranquilo {#tranquil}
 
 El tema Tranquil ofrece tonos claros y oscuros de su esquema de colores para resaltar los diferentes componentes de un formulario. Por ejemplo, los botones de radio, los paneles y las pestañas tienen un color verde diferente.
 
 ![Tema Tranquil](assets/tranquil.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tranquil-1.png)-->
+](assets/tranquil-1.png)
+-->
 
 ## Ultramarine {#ultramarine}
 
@@ -98,11 +108,13 @@ El tema Ultramarine utiliza tonos azules profundos para resaltar componentes com
 
 El tema de Urbane destaca el aspecto minimalista y funcional de su formulario. Al aplicar el tema Urbane al formulario, puede ver que los componentes son planos. Los paneles tienen contornos finos para crear un aspecto moderno.
 
-![Temática Urbane](assets/urbane.png)
+![Tema Urbane](assets/urbane.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/urbane-1.png)-->
+](assets/urbane-1.png)
+-->
 
 ## Estándares de diseño web de EE. UU. {#u-s-web-design-standards}
 
@@ -110,6 +122,8 @@ La temática de las normas de diseño web de EE.UU., como su nombre sugiere, uti
 
 ![Temática de las normas de diseño web de EE. UU.](assets/us-web-standards.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/usgov.png)-->
+](assets/usgov.png)
+-->

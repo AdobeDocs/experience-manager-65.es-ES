@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 7f1283898cbeebdedb7bdea6f0a8d9db567617ee
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3385'
-ht-degree: 3%
+source-wordcount: '3498'
+ht-degree: 7%
 
 ---
 
@@ -153,7 +153,7 @@ El tipo de valor devuelto especifica el tipo de valor que la función personaliz
 
 * `@return {type}`
 * `@returns {type}`
-  `{type}` representa el tipo devuelto de la función. Los tipos de valor devuelto permitidos son:
+  `{type}` representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 * string: Representa un solo valor de cadena.
 * number: representa un solo valor numérico.
 * boolean: Representa un solo valor booleano (true o false).
@@ -346,16 +346,16 @@ Antes de empezar a añadir una función personalizada a su Forms adaptable, aseg
 ## Creación de una función personalizada {#create-custom-function}
 
 Los pasos para crear funciones personalizadas son los siguientes:
-1. AEM [Cree una biblioteca del lado del cliente usando el tipo de archivo del proyecto de y agregue una función personalizada](#create-client-library-archetype)
+1. [Cree una biblioteca del lado del cliente con el tipo de archivo del proyecto de AEM y agregue una función personalizada](#create-client-library-archetype)
 O
    [Crear funciones personalizadas mediante CRXDE](#create-add-custom-function)
 1. [Agregar una biblioteca de cliente a un formulario adaptable](#add-client-library)
 1. [Usar una función personalizada en un formulario adaptable](#use-custom-functions)
 
 
-### AEM Crear una biblioteca de cliente con el tipo de archivo del proyecto de{#create-client-library-archetype}
+### Crear una biblioteca de cliente con el tipo de archivo del proyecto de AEM{#create-client-library-archetype}
 
-AEM Puede agregar funciones personalizadas agregando una biblioteca de cliente al proyecto creado [mediante el tipo de archivo del proyecto de](https://experienceleague.adobe.com/es/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Puede agregar funciones personalizadas agregando una biblioteca de cliente al proyecto creado [mediante el tipo de archivo del proyecto de AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Si tiene un proyecto existente <!--and have already the project structure as shown in the image below,-->, puede agregar directamente [funciones personalizadas](#create-add-custom-function) a su proyecto local.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -364,9 +364,9 @@ Después de crear un proyecto de tipo de archivo o de utilizar uno existente, cr
 
 **Agregar una carpeta de biblioteca de cliente**
 
-AEM Para agregar una nueva carpeta de biblioteca de cliente al [directorio de proyecto de la], siga los pasos:
+Para agregar una nueva carpeta de biblioteca de cliente al [directorio del proyecto AEM], siga los pasos:
 
-1. AEM Abra el [directorio de proyecto ] en un editor de datos
+1. Abra [el directorio del proyecto AEM] en un editor.
 
    ![estructura de carpetas de funciones personalizadas](assets/custom-library-folder-structure.png)
 
@@ -380,8 +380,8 @@ AEM Para agregar una nueva carpeta de biblioteca de cliente al [directorio de pr
 
 Agregue lo siguiente a la carpeta de biblioteca de cliente agregada:
 
-* El archivo `.content.xml` 
-* El archivo `js.txt` 
+* El archivo `.content.xml`
+* El archivo `js.txt`
 * `js` carpeta
 
 `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
@@ -446,7 +446,7 @@ Agregue lo siguiente a la carpeta de biblioteca de cliente agregada:
 
    ![xml de filtro de función personalizada](assets/custom-function-filterxml.png)
 
-1. AEM Compile la carpeta de la biblioteca de cliente recién creada en su entorno de siguiendo los pasos indicados en [Cómo compilar la sección](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
+1. Compile la carpeta de la biblioteca de cliente recién creada en su entorno de AEM siguiendo los pasos indicados en [Cómo compilar la sección](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
 
 ## Crear e implementar funciones personalizadas mediante CRXDE{#create-add-custom-function}
 
@@ -511,7 +511,7 @@ Añadamos el siguiente código al archivo JavaScript para calcular la edad en fu
 
 1. Guarde el archivo `js.txt`.
 
-Puede hacer referencia a la carpeta [función personalizada](/help/forms/using/assets/customfunction.zip) siguiente. AEM Descargue e instale esta carpeta en su instancia de.
+Puede hacer referencia a la carpeta [función personalizada](/help/forms/using/assets/customfunction.zip) siguiente. Descargue e instale esta carpeta en su instancia de AEM.
 
 Ahora puede utilizar la función personalizada en el formulario adaptable agregando la biblioteca de cliente.
 
@@ -572,7 +572,7 @@ Vamos a previsualizar el formulario para observar cómo se implementan las funci
 
 >[!NOTE]
 >
-> Puede hacer referencia a la carpeta [funciones personalizadas](/help/forms/using/assets/customfunctions.zip) siguiente. AEM Descargue e instale esta carpeta en su instancia de mediante el [Administrador de paquetes](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> Puede hacer referencia a la carpeta [funciones personalizadas](/help/forms/using/assets/customfunctions.zip) siguiente. Descargue e instale esta carpeta en su instancia de AEM mediante [Administrador de paquetes](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Compatibilidad con funciones asincrónicas en funciones personalizadas {#support-of-async-functions}
 
@@ -609,13 +609,13 @@ Consulte el siguiente código para ver cómo se pueden invocar funciones asincr�
 }
 ```
 
-En el ejemplo anterior, la función asyncFunction es un `asynchronous function`. Realiza una operación asincrónica realizando una solicitud `GET` a `https://petstore.swagger.io/v2/store/inventory`. Espera la respuesta con `await`, analiza el cuerpo de la respuesta como JSON con `response.json()` y, a continuación, devuelve los datos. La función `callAsyncFunction` es una función sincrónica personalizada que invoca la función `asyncFunction` y muestra los datos de respuesta en la consola. Aunque la función `callAsyncFunction` es sincrónica, llama a la función asyncFunction asincrónica y controla su resultado con instrucciones `then` y `catch`.
+En el ejemplo anterior, la función asyncFunction es una `asynchronous function`. Realiza una operación asíncrona realizando una solicitud `GET` a `https://petstore.swagger.io/v2/store/inventory`. Espera la respuesta con `await`, analiza el cuerpo de la respuesta como JSON con `response.json()` y, a continuación, devuelve los datos. La función `callAsyncFunction` es una función síncrona personalizada que invoca la función `asyncFunction` y muestra los datos de respuesta en la consola. Aunque la función `callAsyncFunction` es síncrona, llama a la función asyncFunction asíncrona y gestiona su resultado con las instrucciones `then` y `catch`.
 
 Para ver cómo funciona, vamos a agregar un botón y crear una regla para el botón que invoca la función asincrónica al hacer clic en un botón.
 
-![creando regla para la función asincrónica](/help/forms/using/assets/rule-for-async-funct.png)
+![creación de la regla para la función asíncrona](/help/forms/using/assets/rule-for-async-funct.png)
 
-Consulte la ilustración de la ventana de la consola siguiente para demostrar que cuando el usuario hace clic en el botón `Fetch`, se invoca la función personalizada `callAsyncFunction`, que a su vez llama a una función asincrónica `asyncFunction`. Inspect utiliza la ventana de la consola para ver la respuesta tras hacer clic en el botón:
+Consulte la ilustración de la ventana de la consola siguiente para demostrar que cuando el usuario hace clic en el botón `Fetch`, se invoca la función personalizada `callAsyncFunction`, que a su vez llama a una función asincrónica `asyncFunction`. Inspeccione la ventana de la consola para ver la respuesta tras hacer clic en el botón:
 
 ![Ventana de consola](/help/forms/using/assets/async-custom-funct-console.png)
 
@@ -633,7 +633,8 @@ Objetos de campo hace referencia a los componentes o elementos individuales de u
 >
 > `param {scope} globals` debe ser el último parámetro y no se mostrará en el editor de reglas de un formulario adaptable.
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -653,7 +654,8 @@ Objetos de campo hace referencia a los componentes o elementos individuales de u
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 Vamos a aprender cómo las funciones personalizadas utilizan los objetos globales y de campo con la ayuda de un formulario `Contact Us` que utiliza diferentes casos de uso.
 
@@ -855,7 +857,7 @@ Consulte la siguiente ilustración de `console window` para demostrar que si el 
 
 También puede inspeccionar la ventana de la consola para ver los datos enviados al servidor:
 
-![Datos de Inspect en la ventana de la consola](/help/forms/using/assets/custom-function-submit-data-console-data.png)
+![Inspeccionar datos en la ventana de la consola](/help/forms/using/assets/custom-function-submit-data-console-data.png)
 
 <!--
 
@@ -980,9 +982,9 @@ En caso de que se modifiquen las funciones personalizadas, el almacenamiento en 
 
 ## Resolución de problemas {#troubleshooting}
 
-* El usuario debe asegurarse de que el componente principal [y la versión de especificación estén configurados en la última versión](https://github.com/adobe/aem-core-forms-components/tree/release/650). AEM Sin embargo, para los proyectos y formularios existentes de la, hay que seguir algunos pasos adicionales:
+* El usuario debe asegurarse de que el componente principal [y la versión de especificación estén configurados en la última versión](https://github.com/adobe/aem-core-forms-components/tree/release/650). Sin embargo, para los proyectos y formularios AEM existentes, hay que seguir algunos pasos adicionales:
 
-   * AEM Para el proyecto de, el usuario debe reemplazar todas las instancias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implementar el proyecto.
+   * Para el proyecto de AEM, el usuario debe reemplazar todas las instancias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implementar el proyecto.
 
    * En el caso de los formularios existentes, si los controladores de envío personalizados no funcionan correctamente, el usuario debe abrir y guardar la regla `submitForm` en el botón **Enviar** mediante el Editor de reglas. Esta acción reemplaza la regla existente de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` en el formulario.
 

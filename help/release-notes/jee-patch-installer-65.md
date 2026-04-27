@@ -8,10 +8,10 @@ hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '593'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[Contacte con Asistencia](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support) para obtener más información o el parche.
+>[Contacte con Asistencia](https://experienceleague.adobe.com/?support-solution=General&support-tab=home&lang=es#support) para obtener más información o el parche.
 
 ## Acerca del programa de instalación de parches {#about-the-patch-installer}
 
@@ -37,7 +37,7 @@ El programa de instalación de parches de AEM 6.5 Forms JEE incluye todos los pr
 1. En el directorio denominado según el sistema operativo que esté utilizando:
 
    * **Windows**
-Vaya al directorio correspondiente del medio de instalación o a la carpeta del disco duro donde copió el programa de instalación, y haga doble clic en el archivo aemforms65_cfp_install.exe.
+Vaya al directorio correspondiente del medio de instalación o a la carpeta del disco duro donde copió el programa de instalación y haga doble clic en el archivo aemforms65_cfp_install.exe.
 
       * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
@@ -67,12 +67,12 @@ Vaya al directorio apropiado y, desde un símbolo del sistema, escriba `./aem65_
 
 1. **[Solo para usuarios basados en Unix]:**
 
-   * La casilla de verificación **Iniciar el administrador de configuración** está seleccionada de forma predeterminada. Haga clic en **[!UICONTROL Listo]** para ejecutar el administrador de configuración al instante o, para ejecutar el **administrador de configuración** más tarde, anule la selección de la opción **Iniciar el administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Puede iniciar el **administrador de configuración** más adelante utilizando el script adecuado en el directorio `[AEM_forms_root]/configurationManager/bin`.
+   * La casilla de verificación **Iniciar el administrador de configuración** está seleccionada de forma predeterminada. Haga clic en **[!UICONTROL Listo]** para ejecutar el administrador de configuración al instante o para ejecutar el **administrador de configuración** más tarde, y anule la selección de la opción **Iniciar el administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Puede iniciar el **administrador de configuración** más adelante utilizando el script adecuado en el directorio `[AEM_forms_root]/configurationManager/bin`.
 
 1. Según el servidor de aplicaciones, elija uno de los siguientes documentos y siga las instrucciones de la sección *Configuración e implementación de AEM Forms*.
 
-   * [Instalación e implementación de AEM Forms para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_es)
-   * [Instalación e implementación de AEM Forms para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_es)
+   * [Instalar e implementar formularios de AEM para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_es)
+   * [Instalar e implementar formularios AEM para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_es)
 
 1. (Solo JBoss®) Después de instalar el parche y configurar el servidor, elimine los directorios tmp y de trabajo del servidor de aplicaciones JBoss®.
 
@@ -97,4 +97,4 @@ Si tiene configurada la autenticación SAML y tiene problemas con metadatos de I
 * Seguridad de los documentos
 * Base JEE
 
-[Contacto con Asistencia](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support)
+[Atención al cliente](https://experienceleague.adobe.com/?support-solution=General&support-tab=home&lang=es#support)

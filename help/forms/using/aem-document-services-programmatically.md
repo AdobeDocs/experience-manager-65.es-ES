@@ -8,9 +8,9 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: 9eb74c1b95837d977b8abe9614421a0a2c0be73e
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '6448'
+source-wordcount: '6595'
 ht-degree: 93%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 93%
 
 Los ejemplos de este documento le ayudarán a comprender y utilizar Servicios de documentos de AEM en AEM Forms en un entorno OSGi. Para obtener ejemplos de AEM Forms en un entorno JEE, consulte
 
-* [Inicio rápido de la API de Java del servicio de firma](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=es)
+* [Inicio rápido de la API de Java del servicio Signature](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=es)
 
 * [Inicio rápido de la API de Java del servicio de cifrado](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=es)
 
-* [Inicio rápido de la API de Java del servicio de ampliaciones de Acrobat Reader](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=es)
+* [Inicio rápido de la API de Java del servicio Extensiones de Acrobat Reader](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=es)
 
 ## Requisitos previos {#prerequisite}
 
@@ -769,7 +769,7 @@ Puede recuperar los nombres de todos los campos de firma que se encuentran en un
 | `inDoc` | Objeto de documento que contiene el PDF |
 | `unlockOptions` | Incluye los parámetros necesarios para desbloquear un archivo cifrado. Esto solo es necesario si el archivo está cifrado. |
 
-El siguiente ejemplo de código Java recupera los nombres de los campos de firma en un documento de PDF.
+El siguiente ejemplo de código Java recupera los nombres de los campos de firma de un documento de PDF.
 
 ```java
 /*************************************************************************
@@ -1067,7 +1067,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr>
   <tr>
    <td><code>encryptionOptions</code><br /> </td>
-   <td>Incluye los argumentos necesarios para codificar un documento PDF<br /> </td>
+   <td>Incluye los argumentos necesarios para cifrar un documento PDF<br /> </td>
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
@@ -1374,7 +1374,7 @@ Además, las listas de revocación de certificados (CRL) proporcionan informaci�
 
 **Aplicar derechos de uso a documentos PDF**
 
-Puede aplicar derechos de uso a documentos PDF mediante la API de cliente Java y el servicio web de ampliación de Reader. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Los documentos PDF a los que se les han aplicado derechos de uso se denominan “documentos con derechos activados”. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento específico.
+Puede aplicar derechos de uso a documentos PDF mediante la API de cliente Java y el servicio web de ampliación de Reader. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Los documentos PDF a los que se les han aplicado derechos de uso se denominan “documentos con derechos habilitados”. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento específico.
 
 Antes de poder ampliar un documento PDF con un certificado, Reader debe asegurarse de agregar el certificado al repositorio de claves de AEM.
 
@@ -1444,7 +1444,7 @@ secureDocument(Document inDoc,
   </tr>
   <tr>
    <td><code>encryptionOptions</code><br /> </td>
-   <td>Incluye los argumentos necesarios para codificar un documento PDF<br /> </td>
+   <td>Incluye los argumentos necesarios para cifrar un documento PDF<br /> </td>
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
@@ -5061,11 +5061,11 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 ### Servicios de utilidad Doc {#doc-utility-services}
 
-<!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
+<!-- Document utilities with synchronous APIs help you convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
 #### Etiquetado automático de documentos de PDF {#auto-tag-api}
 
-La API del PDF de etiquetas automático mejora la accesibilidad del PDF añadiendo etiquetas a los documentos, lo que garantiza la conformidad con los estándares de accesibilidad. Esto no solo mejora la experiencia del usuario, sino que también mantiene la precisión y la coherencia en todos los documentos. La API de etiqueta automática admite el etiquetado de los siguientes elementos:
+La API de PDF de etiqueta automática mejora la accesibilidad de PDF al añadir etiquetas a los documentos, lo que garantiza el cumplimiento de los estándares de accesibilidad. Esto no solo mejora la experiencia del usuario, sino que también mantiene la precisión y la coherencia en todos los documentos. La API de etiqueta automática admite el etiquetado de los siguientes elementos:
 
 * Bloques de texto (párrafos)
 * Listas con viñetas en un operador
@@ -5073,7 +5073,7 @@ La API del PDF de etiquetas automático mejora la accesibilidad del PDF añadien
 
 ![Documento de PDF etiquetado automáticamente](assets/auto-tag-api.png)
 
-El siguiente ejemplo de código Java muestra cómo convertir un archivo de PDF en un documento de PDF etiquetado.
+El siguiente ejemplo de código Java muestra cómo convertir un archivo PDF en un documento de PDF etiquetado.
 
 **Sintaxis**: `Document tag(final Document inDoc)`
 

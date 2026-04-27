@@ -5,10 +5,10 @@ exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 60%
+source-wordcount: '1993'
+ht-degree: 61%
 
 ---
 
@@ -45,7 +45,7 @@ Consulte:
 
 **Recomendación**
 
-Los clientes que usan GraphQL *deben* instalar el fragmento de contenido de Experience Manager con el paquete de índice de GraphQL. Al hacerlo, puede añadir la definición de índice necesaria en función de las funciones que utilizan realmente. Si no se instala este paquete, las consultas de GraphQL pueden ser lentas o dar error.
+Los clientes que usan GraphQL *deben* instalar el fragmento de contenido de Experience Manager con el paquete de índice de GraphQL. Al hacerlo, puede añadir la definición de índice necesaria según las funciones que utilizan realmente. Si no se instala este paquete, las consultas de GraphQL pueden ser lentas o dar error.
 
 Consulte las Notas de la versión para obtener la versión adecuada para su Service Pack. Por ejemplo, para el Service Pack más reciente, consulte [Instalar el paquete de índice de GraphQL para los fragmentos de contenido de Experience Manager](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) .
 
@@ -84,7 +84,7 @@ Las consultas GraphQL y sus respuestas JSON se pueden almacenar en caché si se 
 
 Consulte:
 
-* [Usando CDN en AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn)
+* [Uso de CDN en AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn)
 
 #### Establecer encabezados de control de caché HTTP {#set-http-cache-control-headers}
 
@@ -105,7 +105,8 @@ $ curl -X PUT \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
 
-<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+<!--
+or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache).
 -->
 
 **Referencia adicional**
@@ -187,7 +188,7 @@ Se usa para consultas de lista; terminan con `List`; por ejemplo, `articleList`.
 Para utilizarlo, debe proporcionar la posición del primer elemento que se va a devolver (la variable `offset`) y el número de elementos que se van a devolver (la variable `limit`, o tamaño de página).
 
 * [paginación basada en cursor](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (representada por `first`y `after`)
-Proporciona un ID único para cada elemento, también conocido como cursor.
+Esto proporciona un ID único para cada elemento; también conocido como cursor.
 En la consulta, se especifica el cursor del último elemento de la página anterior, además del tamaño de página (el número máximo de elementos que se van a devolver).
 
   Como la paginación basada en cursor no se ajusta a las estructuras de datos de las consultas basadas en listas, AEM ha introducido el tipo de consulta `Paginated`; por ejemplo, `articlePaginated`. Las estructuras de datos y los parámetros utilizados siguen la [Especificación de conexión del cursor de GraphQL](https://relay.dev/graphql/connections.htm).

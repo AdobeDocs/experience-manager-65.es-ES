@@ -1,6 +1,6 @@
 ---
-title: Conexión a Bases de Datos SQL
-description: AEM Acceder a una base de datos SQL externa para que las aplicaciones de la puedan interactuar con los datos.
+title: Conexión a bases de datos SQL
+description: Acceda a una base de datos SQL externa para que las aplicaciones de AEM puedan interactuar con los datos
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -9,14 +9,14 @@ exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 0%
+source-wordcount: '939'
+ht-degree: 1%
 
 ---
 
-# Conexión a Bases de Datos SQL{#connecting-to-sql-databases}
+# Conexión a bases de datos SQL{#connecting-to-sql-databases}
 
 Acceda a una base de datos SQL externa para que las aplicaciones CQ puedan interactuar con los datos:
 
@@ -171,7 +171,9 @@ El siguiente código JSP de ejemplo obtiene una instancia del origen de datos hs
 >Si el método getDataSource produce una excepción porque no se encuentra el origen de datos, asegúrese de que la configuración del servicio Pool de Conexiones es correcta. Compruebe los nombres de las propiedades, los valores y los tipos de datos.
 >
 
-<!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
+<!--
+Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]
 >
->To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html). -->
+>To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+-->

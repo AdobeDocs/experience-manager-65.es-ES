@@ -8,10 +8,10 @@ user-guide-description: Cree experiencias en línea como foros, grupos de usuari
 feature: Communities
 role: User
 hide: true
-source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 11%
+source-wordcount: '427'
+ht-degree: 12%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 11%
    + [Crear un nuevo sitio de comunidad](create-site.md)
    + [Experimente el sitio publicado](published-site.md)
    + [Creación de grupos anidados](nested-groups.md)
-+ Implementando {#deploy}
++ Implementación {#deploy}
    + [Implementación de comunidades](deploy-communities.md)
-   + [AEM Actualización a comunidades de 6.5](upgrade.md)
+   + [Actualización a las comunidades de AEM 6.5](upgrade.md)
    + [Topologías recomendadas para comunidades](topologies.md)
    + [Configuración de Dispatcher para comunidades](dispatcher.md)
 + Administración {#administer}
@@ -70,14 +70,14 @@ ht-degree: 11%
    + [Traducción del contenido generado por el usuario](translate-ugc.md)
    + [Sincronización de usuarios de Communities](sync.md)
    + [Límites de contribución de miembros](limits.md)
-+ Desarrollo de {#develop}
++ Desarrollo {#develop}
    + [Desarrollo de comunidades](communities.md)
    + [Marco del componente social](scf.md)
    + [Guía de componentes de la comunidad](components-guide.md)
    + [Aspectos básicos de componentes, funciones y funciones](essentials.md)
    + [Tutoriales](tutorials.md)
    + [Resolución de problemas](troubleshooting.md)
-   + [Directrices de codificación](code-guide.md)
+   + [Directrices de programación](code-guide.md)
    + [Personalización del lado del servidor](server-customize.md)
    + [Personalización del lado del cliente](client-customize.md)
    + [SCF Handlebars Helpers](handlebars-helpers.md)

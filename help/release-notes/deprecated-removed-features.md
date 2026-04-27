@@ -5,17 +5,19 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 5a851bf013a4ef7e6097bf32bd3fa8fe4d635f28
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1834'
-ht-degree: 96%
+source-wordcount: '1900'
+ht-degree: 89%
 
 ---
 
 # Funciones en desuso y eliminadas {#deprecated-and-removed-features}
 
-<!-- Search&Promote is end-of-life September 1, 2022 | Assets | If a user does not have sufficient (read and write) permissions on `/content/dam/collections`, the user cannot create a Collection. | Honor the access control setup of user and ensure appropriate permissions. ||
-|Adobe Search & Promote|The integration with Adobe Search & Promote is deprecated. Adobe does not plan to make further enhancements to the Search & Promote integration. Adobe Search & Promote integration remains fully supported while being deprecated.||| -->
+<!--
+Search&Promote is end-of-life September 1, 2022 | Assets | If a user does not have sufficient (read and write) permissions on `/content/dam/collections`, the user cannot create a Collection. | Honor the access control setup of user and ensure appropriate permissions. ||
+|Adobe Search & Promote|The integration with Adobe Search & Promote is deprecated. Adobe does not plan to make further enhancements to the Search & Promote integration. Adobe Search & Promote integration remains fully supported while being deprecated.|||
+-->
 
 Adobe evalúa constantemente las capacidades de los productos para renovar o sustituir las funciones más antiguas con alternativas modernas que mejoren el valor general del cliente, siempre teniendo en cuenta la compatibilidad con versiones anteriores.
 
@@ -28,7 +30,7 @@ Este proceso proporciona a los clientes un ciclo de lanzamiento para adaptar su 
 
 ## Funciones en desuso {#deprecated-features}
 
-Esta sección enumera las funciones que se han marcado como en desuso con AEM 6.5. Por lo general, las funciones que se planea eliminar en una versión futura se establecen en primer lugar como en desuso, con una alternativa que las sustituye.
+Esta sección enumera las funciones que se han marcado como obsoletas con AEM 6.5. Por lo general, las funciones que se planea eliminar en una versión futura se establecen en primer lugar como obsoletas, con una alternativa que las sustituye.
 
 Se recomienda a los clientes que comprueben si utilizan la función o capacidad en su implementación actual, y que planifiquen el cambio de la implementación y usen la alternativa proporcionada.
 
@@ -40,9 +42,9 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | Screens | ActiveMQ en Adobe Experience Manager (AEM). ActiveMQ se utilizaba para la comunicación entre dos instancias de publicación de AEM. | Adobe recomienda que los clientes ahora utilicen un equilibrador de carga. | 6.5.18.0 |
 | Propiedades de Fragmentos de experiencias para **Estado de los medios sociales**. | |  | 6.5.11.0 |
 | [!DNL Sites] | Plantillas de fragmentos de contenido, para crear fragmentos de contenido simples. | [Fragmentos de contenido estructurados basados en modelos](/help/assets/content-fragments/content-fragments-models.md) ahora. | 6.5.11.0 |
-| Integración de Creative Cloud | AEM para uso compartido de carpetas de Creative Cloud se introdujo en AEM 6.2. Ofrece una forma de proporcionar a los usuarios creativos acceso a los recursos de AEM para que puedan abrirlos en aplicaciones de [!DNL Creative Cloud], cargar nuevos archivos o guardar cambios en AEM. Adobe Asset Link, una nueva función lanzada en la aplicación Creative Cloud, proporciona una mejor experiencia del usuario y un acceso más potente a los recursos de AEM directamente desde Photoshop, InDesign e Illustrator. Adobe no tiene previsto realizar más mejoras en la integración del uso compartido de carpetas de Creative Cloud en AEM. Aunque la función está incluida en AEM, se recomienda a los clientes utilizar el remplazo. | Se recomienda a los clientes cambiar a nuevas funciones de integración de Creative Cloud, como Adobe Asset Link o la aplicación de escritorio de AEM. |  |
+| Integración de Creative Cloud | AEM para uso compartido de carpetas de Creative Cloud se introdujo en AEM 6.2. Proporciona una forma de proporcionar a los usuarios creativos acceso a los recursos de AEM para que puedan abrirlos en [!DNL Creative Cloud] aplicaciones, cargar nuevos archivos o guardar cambios en AEM. Adobe Asset Link, una nueva función lanzada en la aplicación Creative Cloud, proporciona una mejor experiencia del usuario y un acceso más potente a los recursos de AEM directamente desde Photoshop, InDesign e Illustrator. Adobe no tiene previsto realizar más mejoras en la integración del uso compartido de carpetas de Creative Cloud en AEM. Aunque la función está incluida en AEM, se recomienda a los clientes utilizar el remplazo. | Se recomienda a los clientes cambiar a nuevas funciones de integración de Creative Cloud, como Adobe Asset Link o la aplicación de escritorio de AEM. |  |
 | Recursos | `AssetDownloadServlet` está deshabilitado de manera predeterminada para las instancias de publicación. Para obtener más información, consulte [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md). | Configuración descrita en [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md). |  |
-| Integraciones | La pantalla **[!UICONTROL Inclusión de Experience Manager Cloud Services]** está en desuso desde que la integración de [!DNL Experience Manager] y [!DNL Adobe Target] se actualizó en [!DNL Experience Manager] 6.5. La integración es compatible con la API de Adobe Target Standard. La API utiliza la autenticación mediante Adobe IMS y [!DNL Adobe I/O Runtime]. Admite la creciente función de Adobe Launch de instrumentar páginas de [!DNL Experience Manager] para el análisis y la personalización; el asistente de inclusión es irrelevante desde el punto de vista funcional. | Configure conexiones del sistema, autenticación IMS de Adobe e integraciones de [!DNL Adobe I/O Runtime] a través de los respectivos servicios en la nube de [!DNL Experience Manager]. | 6.5.7.0 |
+| Integraciones | La pantalla **[!UICONTROL Inclusión de Experience Manager Cloud Services]** está obsoleta desde que la integración de [!DNL Experience Manager] y [!DNL Adobe Target] se actualizó en [!DNL Experience Manager] 6.5. La integración es compatible con la API de Adobe Target Standard. La API utiliza la autenticación mediante Adobe IMS y [!DNL Adobe I/O Runtime]. Admite la creciente función de Adobe Launch de instrumentar páginas de [!DNL Experience Manager] para el análisis y la personalización; el asistente de inclusión es irrelevante desde el punto de vista funcional. | Configure conexiones del sistema, autenticación IMS de Adobe e integraciones de [!DNL Adobe I/O Runtime] a través de los respectivos servicios en la nube de [!DNL Experience Manager]. | 6.5.7.0 |
 | Conectores | El conector JCR de Adobe para Microsoft® SharePoint 2010 y Microsoft® SharePoint 2013 está obsoleto para [!DNL Experience Manager] 6.5. | N/A |  |
 | Administrador dinámico de etiquetas (DTM) | La integración con DTM está en desuso. | Cambie a Adobe Experience Platform Launch como administrador de etiquetas. |   |
 | Adobe Target | Al añadir la capacidad para que AEM se conecte al servicio de Adobe Target mediante la API estándar de Adobe Target (API de REST) basada en [!DNL Adobe I/O] en AEM 6.5, la forma de la API de Target Classic (XML) queda en desuso. | Vuelva a configurar la integración para [usar la nueva API](/help/sites-administering/target.md). |  |
@@ -86,7 +88,8 @@ Esta sección enumera las funciones que se han eliminado de AEM 6.5. Las version
 | Caché | `system/console/slingjsp` se ha quitado y ya no está disponible en AEM 6.5. | La caché ligera y de clases se almacena en el paquete Apache Sling Commons FileSystem ClassLoader. Puede comprobar el número de paquete en la consola web de AEM y quitar la carpeta de caché directamente del sistema de archivos (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
 | Screens | Se ha quitado la compatibilidad con el paquete activemq y sus configuraciones relacionadas. |  |  |
 
-<!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
+<!--
+## Pre-announcement for next release {#pre-announcement-for-next-release}
 
 This section is used to pre-announce the upcoming changes in the future releases. The announced changes are not yet effective but will impact customers. For example, the features are not yet deprecated but impacts the users after deprecation. These updates are provided for planning purpose.
 

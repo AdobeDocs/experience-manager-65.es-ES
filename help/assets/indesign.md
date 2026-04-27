@@ -6,9 +6,9 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1579'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Para cargar completamente los archivos a [!DNL Experience Manager Assets] que cr
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] se ofrece como dos ofertas independientes. [Aplicación de escritorio Adobe InDesign](https://www.adobe.com/es/products/indesign.html) que se usa para diseñar diseños de página para impresión y distribución digital. [Adobe InDesign Server](https://www.adobe.com/es/products/indesignserver.html) le permite crear documentos automatizados mediante programación basándose en lo que ha creado con [!DNL InDesign]. Funciona como un servicio que ofrece una interfaz a su motor ExtendScript. Los scripts se escriben en [!DNL ExtendScript], que es similar a [!DNL JavaScript].
+>[!DNL Adobe InDesign] se ofrece como dos ofertas independientes. [Aplicación de escritorio Adobe InDesign](https://www.adobe.com/products/indesign.html) que se usa para diseñar diseños de página para impresión y distribución digital. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) le permite crear documentos automatizados mediante programación basándose en lo que ha creado con [!DNL InDesign]. Funciona como un servicio que ofrece una interfaz a su motor ExtendScript. Los scripts se escriben en [!DNL ExtendScript], que es similar a [!DNL JavaScript].
 
 ## Funcionamiento de la extracción {#how-the-extraction-works}
 
@@ -115,7 +115,8 @@ Argumentos de extracción de medios y rutas de scripts
 
 * **Ampliar scripts**: aquí puede especificar diferentes combinaciones de scripts. Si desea que se ejecuten sus propios scripts en [!DNL InDesign Server], guárdelos en `/apps/settings/dam/indesign/scripts`.
 
-<!-- TBD: Hiding this link since ADC is not available anymore. 
+<!--
+TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 -->
 
@@ -239,4 +240,4 @@ Puede cambiar las credenciales de administrador predeterminadas (nombre de usuar
 
 >[!MORELIKETHIS]
 >
->* [Acerca del Adobe InDesign Server](https://www.adobe.com/es/products/indesignserver/faq.html)
+>* [Acerca del Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

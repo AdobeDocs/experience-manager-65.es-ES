@@ -1,5 +1,5 @@
 ---
-title: Trabajo con Dynamic Media
+title: Uso de Dynamic Media
 description: Aprenda a utilizar el software para distribuir recursos en sitios web, móviles y sociales.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,22 +9,24 @@ role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: d6b9dde5201198cb073293b2b8527a458836ff0b
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 8%
+source-wordcount: '429'
+ht-degree: 10%
 
 ---
 
-# Trabajo con Dynamic Media {#working-with-dynamic-media}
+# Uso de Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/es/products/experience-manager/assets/dynamic-media.html) ayuda a ofrecer recursos de marketing y comercialización visual enriquecidos bajo demanda, adaptados automáticamente para el consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen primarios, el software genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ayuda a ofrecer recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para el consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen primarios, el software genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 El software ofrece experiencias de visualización interactivas, como zoom, giro de 360 grados y vídeo. Incorpora de forma exclusiva los flujos de trabajo de la solución Adobe Experience Manager digital asset management (Assets) para simplificar y optimizar el proceso de administración de campañas digitales.
 
-<!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
+<!--
+>ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
->A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+-->
 
 ## Qué puede hacer con el software {#what-you-can-do-with-dynamic-media}
 
@@ -45,11 +47,11 @@ Las funciones solo de Dynamic Media incluyen lo siguiente:
 * [Administración de recursos](managing-assets.md)
 * [Creación de ventanas emergentes personalizadas con Quickview](custom-pop-ups.md)
 
-Ver también [Configurar Dynamic Media](administering-dynamic-media.md).
+Consulte también [Configuración de Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
->Para comprender las diferencias entre usar Dynamic Media e integrar Dynamic Media Classic con Adobe Experience Manager, consulte [Integración de Dynamic Media Classic frente a Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Para comprender las diferencias entre el uso de Dynamic Media y la integración de Dynamic Media Classic con Adobe Experience Manager, consulte [Integración de Dynamic Media Classic frente a Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Dynamic Media habilitado frente a Dynamic Media deshabilitado {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -59,7 +61,7 @@ Puede comprobar si el software está activado (activado) por las siguientes cara
 * Hay disponibles conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos.
 * Se crean representaciones PTIFF.
 
-Al seleccionar un recurso de imagen, la vista del recurso es diferente con el software [habilitado](config-dynamic.md#enabling-dynamic-media). Utiliza los visores On-Demand HTML5.
+Al seleccionar un recurso de imagen, la vista del recurso es diferente con el software [habilitado](config-dynamic.md#enabling-dynamic-media). Utiliza los visores HTML5 bajo demanda.
 
 ### Representaciones dinámicas {#dynamic-renditions}
 

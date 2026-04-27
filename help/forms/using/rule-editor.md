@@ -9,10 +9,10 @@ docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6639'
-ht-degree: 94%
+source-wordcount: '6846'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 94%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html) |
 | AEM 6.5 | Este artículo |
 
 ## Información general {#overview}
@@ -30,7 +30,8 @@ ht-degree: 94%
 La característica del editor de reglas en Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios empresariales escribir reglas sobre los objetos del formulario adaptable. Estas reglas definen las acciones que se deben activar en los objetos del formulario en función de los ajustes preestablecidos, las entradas del usuario y las acciones del usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, lo que garantiza precisión y velocidad.
 
 El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada para escribir reglas. El editor de reglas ofrece un editor visual para todos los usuarios. Además, solo para los usuarios avanzados de formularios, el editor de reglas proporciona un editor de código para escribir reglas y scripts.
-<!-- Some of the key actions that you can perform on adaptive form objects using rules are:
+<!--
+Some of the key actions that you can perform on adaptive form objects using rules are:
 
 * Show or hide an object
 * Enable or disable an object
@@ -38,7 +39,8 @@ El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada
 * Validate the value of an object
 * Execute functions to compute the value of an object
 * Invoke a form data model service and perform an operation
-* Set property of an object -->
+* Set property of an object
+-->
 
 El editor de reglas reemplaza las funciones de los scripts de AEM 6.1 Forms y versiones anteriores. Sin embargo, los scripts existentes se conservan en el nuevo editor de reglas. Para obtener más información sobre cómo trabajar con scripts existentes en el editor de reglas, consulte [Impacto del editor de reglas en scripts existentes](#impact-of-rule-editor-on-existing-scripts).
 
@@ -103,7 +105,7 @@ El editor de reglas proporciona los siguientes operadores lógicos y eventos med
 
 El editor de reglas proporciona un conjunto de tipos de reglas predefinidas que puede utilizar para escribir reglas. Veamos en detalle cada tipo de regla. Para obtener más información sobre cómo escribir reglas en el editor de reglas, consulte [Escribir reglas](#write-rules).
 
-### Cuando  {#whenruletype}
+### Cuando {#whenruletype}
 
 El tipo de regla **When** sigue a la construcción de regla **condición-acción-acción alternativa** o, a veces, solo a la construcción **condición-acción**. En este tipo de regla, primero debe especificar una condición para la evaluación seguida de una acción que se activará si se cumple la condición (`True`). Al usar el tipo de regla When, puede usar varios operadores AND y OR para crear [expresiones anidadas](#nestedexpressions).
 
@@ -117,8 +119,8 @@ En palabras simples, una regla When típica está estructurada de la siguiente m
 
 `Then, do the following:`
 
-Acción 2 en objeto B;
-AND
+Acción 2 en el objeto B;
+Y
 Acción 3 en objeto C;
 
 _
@@ -208,11 +210,11 @@ El tipo de regla Set Value Of no está disponible para todos los objetos de form
 
 Set value of Objeto A to:
 
-(cadena ABC) OR
-(propiedad de objeto X de Ovjeto C) OR
-(valor de una función) OR
-(valor de una expresión matemática) OR
-(valor de salida de un servicio de modelo de datos o web);
+(cadena ABC) O
+(propiedad de objeto X del objeto C) O
+(valor de una función) O
+(valor de una expresión matemática) O
+(valor de salida de un servicio de modelo de datos o servicio web);
 
 When (opcional):
 
@@ -352,7 +354,7 @@ El editor de reglas proporciona una interfaz de usuario completa pero sencilla p
 Para iniciar la interfaz de usuario del editor de reglas, haga lo siguiente:
 
 1. Abra un formulario adaptable en modo de creación.
-1. Seleccione el objeto de formulario para el que desea escribir una regla y, en la barra de herramientas de componentes, seleccione ![edit-rules](assets/edit-rules.png).  Aparecerá la interfaz de usuario del editor de reglas.
+1. Seleccione el objeto de formulario para el que desea escribir una regla y, en la barra de herramientas de componentes, seleccione ![edit-rules](assets/edit-rules.png). Aparecerá la interfaz de usuario del editor de reglas.
 
    ![create-rules](assets/create-rules.png)
 
@@ -529,7 +531,7 @@ Siga estos pasos para escribir reglas:
 
    * Seleccione Cadena en el otro campo **Colocar objeto o seleccionar aquí** y especifique **Married** en el campo **Escribir una cadena**.
 
-   La regla finalmente aparece de la siguiente manera en el editor de reglas. ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
+   La regla finalmente aparece de la siguiente manera en el editor de reglas.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
    Seleccione **Listo** para guardar la regla.
 
@@ -579,23 +581,23 @@ Para obtener más información, consulte [usejsdoc.org](https://jsdoc.app/).
 
 Etiquetas `jsdoc` compatibles:
 
-* **Sintaxis**
-privada: `@private`
-una función privada no se incluye como función personalizada.
+* **Privado**
+Sintaxis: `@private`
+Una función privada no se incluye como función personalizada.
 
-* **Sintaxis**
-de nombre: `@name funcName <Function Name>`
-O bien, `,` puede usar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
+* **Nombre**
+Sintaxis: `@name funcName <Function Name>`
+Como alternativa `,`, puede usar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
   `funcName` es el nombre de la función (no se permiten espacios).
   `<Function Name>` es el nombre para mostrar de la función.
 
-* **Sintaxis**
-de abonado: `@memberof namespace`
-adjunta un espacio de nombres a la función.
+* **Miembro**
+Sintaxis: `@memberof namespace`
+Adjunta un área de nombres a la función.
 
-* **Sintaxis**
-de parámetro: `@param {type} name <Parameter Description>`
-O bien, puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
+* **Parámetro**
+Sintaxis: `@param {type} name <Parameter Description>`
+También puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
 Muestra los parámetros utilizados por la función. Una función puede tener varias etiquetas de parámetro, una etiqueta para cada parámetro en el orden de ocurrencia.
   `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
 
@@ -608,9 +610,9 @@ Muestra los parámetros utilizados por la función. Una función puede tener var
 
   Todos los demás tipos de parámetro se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Sintaxis**
-de tipo de retorno: `@return {type}`
-O bien, puede usar `@returns {type}`.
+* **Tipo de devolución**
+Sintaxis: `@return {type}`
+También puede usar `@returns {type}`.
 Añade información sobre la función, como su objetivo.
   {type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 
@@ -620,8 +622,8 @@ Añade información sobre la función, como su objetivo.
 
   Todos los demás tipos de valor devuelto se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de devolución no distinguen entre mayúsculas y minúsculas.
 
-* **Esta**
-sintaxis: `@this currentComponent`
+* **Esto**
+Sintaxis: `@this currentComponent`
 
   Utilice @this para hacer referencia al componente de formulario adaptable en el que se escribe la regla.
 
@@ -848,11 +850,11 @@ Invocar el servicio de modelo de datos de formulario mediante la regla de formul
 
 En un formulario de solicitud de préstamo, se desea capturar si el solicitante del préstamo es o no un cliente existente. En función de la información que proporcione el usuario, el campo ID de cliente debería mostrarse u ocultarse. Además, desea centrarse en el campo ID del cliente si el usuario es un cliente existente. El formulario de solicitud de préstamo tiene los siguientes componentes:
 
-* Un botón de opción, **Are you an existing Geometrixx customer? (¿Es cliente de Geometrixx?)**, que proporciona las opciones Yes (sí) y No. El valor de Yes es **0** y No es **1**.
+* Un botón de opción, **¿Es usted un cliente de Geometrixx existente?**, que proporciona las opciones Sí y No. El valor de Yes es **0** y No es **1**.
 
 * Un campo de texto, **Geometrixx customer ID** (ID de cliente de Geometrixx), para especificar el ID de cliente.
 
-Cuando escriba una regla When en el botón de radio para implementar este comportamiento, la regla aparecerá de la siguiente manera en el editor de reglas visuales. ![when-rule-example](assets/when-rule-example.png)
+Cuando escriba una regla When en el botón de radio para implementar este comportamiento, la regla aparecerá de la siguiente manera en el editor de reglas visuales.  ![when-rule-example](assets/when-rule-example.png)
 
 Regla en el editor visual
 

@@ -6,9 +6,9 @@ feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2189'
 ht-degree: 54%
 
 ---
@@ -19,7 +19,7 @@ Aprenda a crear una temática personalizada, aplicar estilo a componentes indivi
 
 ![imagen a pantalla completa](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Este tutorial es un paso en la serie [Crear su primer formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). El Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
+Este tutorial es un paso en la serie [Crear su primer formulario adaptable](Https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
 
 ## Información sobre el tutorial  {#about-the-tutorial}
 
@@ -30,7 +30,7 @@ Al final del tutorial, debería poder hacer lo siguiente:
 * Aplicar una temática predeterminada a un formulario adaptable
 * Crear una temática para un formulario adaptable mediante el editor de temáticas
 * Aplicar estilo a los componentes individuales
-* Sección bonus: usar Web Fonts en una temática personalizada
+* Sección Bonus: usar Web Fonts en una temática personalizada
 
 El formulario debe ser similar al siguiente después de completar el tutorial:
 
@@ -105,8 +105,8 @@ En este tutorial, aplicará estilo al encabezado y al pie de página, a los comp
 1. Inicie sesión en la instancia de autor de AEM y navegue hasta **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Temáticas]**. La dirección URL predeterminada es [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Seleccione **[!UICONTROL Crear]** y seleccione **[!UICONTROL Tema]**. Aparecerá la página [!UICONTROL Crear temática] con los campos necesarios para crear una temática. Los campos **[!UICONTROL Título]** y **[!UICONTROL Nombre]** son obligatorios:
 
-   * **Título:** especifique un título para la temática. Por ejemplo, **Temática Global.** El título le ayuda a identificar la temática en la lista de temáticas.
-   * **Nombre:** especifique el nombre de la temática. Por ejemplo, **Temática Global.** Se crea un nodo con el nombre especificado en el repositorio. A medida que empieza a escribir un título, el valor del campo de nombre se genera automáticamente. Puede cambiar el valor sugerido. El campo de nombre solo puede incluir caracteres alfanuméricos, guiones y guiones bajos. Todas las entradas no válidas se sustituyen por guiones.
+   * **Título:** especifique un título para la temática. Por ejemplo, **tema global.** El título le ayuda a identificar la temática en la lista de temáticas.
+   * **Nombre:** especifique el nombre de la temática. Por ejemplo, **tema global.** Se crea un nodo con el nombre especificado en el repositorio. A medida que empieza a escribir un título, el valor del campo de nombre se genera automáticamente. Puede cambiar el valor sugerido. El campo de nombre solo puede incluir caracteres alfanuméricos, guiones y guiones bajos. Todas las entradas no válidas se sustituyen por guiones.
 
 1. Seleccione **[!UICONTROL Crear]**. Se crea una temática y aparece un cuadro de diálogo para abrir el formulario y editarlo. Seleccione **[!UICONTROL Abrir]** para abrir el tema recién creado en una pestaña nueva. La temática se abre en el editor de temáticas. Para aplicar estilo, el editor de temáticas utiliza un formulario adaptable incorporado que se incluye con AEM [!DNL Forms].
 
@@ -136,7 +136,7 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
    | Color de fuente | FFFFFF |
    | Tamaño de fuente | 54 px |
 
-1. Seleccione el widget [!UICONTROL header] y seleccione **[!UICONTROL Header]**. Las opciones para aplicar estilo al widget de encabezado aparecen a la izquierda. Expanda el acordeón **[!UICONTROL Dimension y posición]**, establezca la **[!UICONTROL altura]** a `120px` y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Seleccione el widget [!UICONTROL header] y seleccione **[!UICONTROL Header]**. Las opciones para aplicar estilo al widget de encabezado aparecen a la izquierda. Expanda el acordeón **[!UICONTROL Dimensiones y posición]**, establezca la **[!UICONTROL Altura]** en `120px` y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Expanda el acordeón del widget de encabezado **[!UICONTROL Fondo]**, establezca el **[!UICONTROL Color de fondo]** a `F6921E.`
 
    Pase el ratón sobre **[!UICONTROL Imagen y degradado]** > **[!UICONTROL + Agregar]** y seleccione **[!UICONTROL Imagen]**. Establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -147,7 +147,7 @@ El encabezado y el pie de página proporcionan una apariencia coherente y distin
    | Posición | Inferior Derecha |
    | Mosaico | No repetir |
 
-1. En el editor de temáticas, selecciona el logotipo en el encabezado y selecciona **[!UICONTROL Logotipo de encabezado]**. Expanda el acordeón Dimension y posición, establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. En el editor de temáticas, selecciona el logotipo en el encabezado y selecciona **[!UICONTROL Logotipo de encabezado]**. Expanda el acordeón Dimensiones y posición, establezca las siguientes propiedades y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -439,7 +439,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
 
    ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## Paso 5: Sección Bonus: usar Web Fonts en una temática personalizada {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## Paso 5: Sección Bonus: Uso de Web Fonts en una temática personalizada {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
 Puede utilizar varias fuentes para diseñar un formulario adaptable. Es posible que no todos los dispositivos en los que se visualiza el formulario adaptable tengan las fuentes utilizadas para diseñar el formulario adaptable. Puede utilizar un servicio de fuentes web para enviar las fuentes necesarias al dispositivo de destino.
 
@@ -448,7 +448,8 @@ Puede utilizar varias fuentes para diseñar un formulario adaptable. Es posible 
 <!--
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+-->
 
 >[!NOTE]
 >
@@ -474,12 +475,12 @@ Puede utilizar varias fuentes para diseñar un formulario adaptable. Es posible 
    ![código incrustado y dirección URL](assets/font-add-url.png)
 
 6. Haga clic en **Listo** para cerrar la ventana del proyecto web.
-7. AEM Inicie sesión en la instancia de y vaya a la dirección URL `http://server:port/crx/de/index.jsp#`
+7. Inicie sesión en la instancia de AEM y vaya a la URL `http://server:port/crx/de/index.jsp#`
 8. Cree una estructura de carpetas en CRXDE, por ejemplo `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
 9. Vaya a la carpeta `clientlibs` recién creada y agregue las propiedades `allowProxy` y `categories`.
 10. Vaya a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` y cree una carpeta css.
 11. Vaya a la carpeta CSS creada y cree un archivo. Por ejemplo, cree un archivo como `fonts.css` y pegue el código incrustado junto con la dirección URL.
-    ![Estructura de carpetas](/help/forms/using/assets/fonts-add-in-crxde.png)
+   ![Estructura de carpetas](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Guarde los cambios.
 
 >[!NOTE]
@@ -515,6 +516,7 @@ The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection 
 1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
 1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
 
-   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**.
+   -->
 
 

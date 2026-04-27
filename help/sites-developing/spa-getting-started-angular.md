@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 5%
+source-wordcount: '1020'
+ht-degree: 7%
 
 ---
 
@@ -285,7 +285,7 @@ Normalmente, es necesario que los componentes de una aplicación de una sola pá
 * **Opción 2:** Compartir estados de componentes mediante una biblioteca de estado como NgRx.
 * **Opción 3:** Aproveche la jerarquía de objetos personalizando y extendiendo el componente contenedor.
 
-## Siguientes pasos {#next-steps}
+## Próximos pasos {#next-steps}
 
 Para obtener una guía paso a paso sobre cómo crear su propia SPA, consulte el [Tutorial de introducción al Editor de SPA de AEM - WKND Events](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es).
 

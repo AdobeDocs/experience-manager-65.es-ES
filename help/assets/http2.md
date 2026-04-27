@@ -9,9 +9,9 @@ role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f749892bf7fba9889adfc930771178154b92fa5d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '766'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,8 @@ Las propias pruebas de Adobe arrojaron los siguientes resultados:
 <!--
 The following demonstration illustrates the difference between HTTP/1 versus HTTP/2 loading:
 
-[https://http2.akamai.com/demo](https://http2.akamai.com/demo) -->
+[https://http2.akamai.com/demo](https://http2.akamai.com/demo)
+-->
 
 ## ¿Puedo cambiar a HTTP/2? {#am-i-eligible-to-switch-over-to-http}
 
@@ -62,7 +63,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
 La solicitud para cambiar a HTTP/2 se inicia automáticamente, pero no se realiza automáticamente.
 
-1. Para cambiar a HTTP/2, inicie una solicitud de asistencia al cliente de Adobe. Ver [Abrir un ticket de asistencia](https://experienceleague.adobe.com/es?support-solution=General&lang=en&support-tab=home#support).
+1. Para cambiar a HTTP/2, inicie una solicitud de asistencia al cliente de Adobe. Ver [Abrir un ticket de asistencia](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support).
 
    1. Proporcione la siguiente información en su solicitud de soporte:
 

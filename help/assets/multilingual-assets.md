@@ -7,10 +7,10 @@ role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 7%
+source-wordcount: '192'
+ht-degree: 15%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] le permite automatizar los flujos de trabajo de traducción de los recursos (incluidos binarios, metadatos y etiquetas) para generar recursos en otros idiomas y utilizarlos en proyectos multilingües.
@@ -31,7 +31,7 @@ Traducción automática: el servicio de traducción automática traduce inmediat
 
 La traducción de recursos incluye lo siguiente:
 
-1. [Conexión del Experience Manager con el proveedor de servicios de traducción](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Conexión de Experience Manager con el proveedor de servicios de traducción](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Crear configuraciones del marco de trabajo de integración de traducciones](/help/sites-administering/tc-tic.md)
 1. [Preparación de recursos para su traducción](preparing-assets-for-translation.md)
 1. [Aplicación de servicios de nube de traducción a carpetas](transition-cloud-services.md)

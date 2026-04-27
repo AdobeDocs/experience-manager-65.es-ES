@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '333'
 ht-degree: 4%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
-[!DNL Adobe Experience Manager Assets] le permite agregar una marca de agua digital a los recursos que ayuda a los usuarios a verificar la autenticidad y la propiedad de los derechos de autor de los recursos. [!DNL Experience Manager Assets] admite que el texto se utilice como marca de agua en archivos PNG y de JPEG.
+[!DNL Adobe Experience Manager Assets] le permite agregar una marca de agua digital a los recursos que ayuda a los usuarios a verificar la autenticidad y la propiedad de los derechos de autor de los recursos. [!DNL Experience Manager Assets] admite que el texto se utilice como marca de agua en archivos PNG y JPEG.
 
 Para poder aplicar marcas de agua en los recursos, agregue el paso de marca de agua en el flujo de trabajo [!UICONTROL Recurso de actualización DAM].
 
@@ -48,9 +48,9 @@ Para poder aplicar marcas de agua en los recursos, agregue el paso de marca de a
 1. Guarde el flujo de trabajo **[!UICONTROL DAM Update Asset]** con el paso de marca de agua.
 1. Desde la interfaz de usuario [!DNL Assets], cargue un recurso de ejemplo. La marca de agua aparece con el tamaño de fuente, el color, etc., en la posición configurada en los pasos anteriores.
 
-Para marcar documentos de PDF mediante programación o con información dinámica, considere la posibilidad de utilizar la oferta [Servicios de documentos de Experience Manager](/help/forms/using/overview-aem-document-services.md).
+Para aplicar una marca de agua a los documentos de PDF mediante programación o con información dinámica, considere la posibilidad de utilizar la oferta [Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md).
 
 ## Sugerencias y limitaciones {#tips-limitations}
 
 * Solo se admiten marcas de agua basadas en texto. Las imágenes no se usan como marcas de agua, aunque se pueden cargar imágenes al crear el [!UICONTROL proceso Agregar marca de agua].
-* Solo se admiten archivos PNG y de JPEG para la marca de agua. Otros formatos de recurso no están marcados con agua.
+* Solo se admiten archivos PNG y JPEG para la marca de agua. Otros formatos de recurso no están marcados con agua.

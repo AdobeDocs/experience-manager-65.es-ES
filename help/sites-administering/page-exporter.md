@@ -1,20 +1,20 @@
 ---
-title: El exportador de página
-description: Aprenda a utilizar el Exportador de páginas de Adobe Experience Manager AEM ().
+title: El exportador de páginas
+description: Aprenda a utilizar el Exportador de páginas de Adobe Experience Manager (AEM).
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 0%
+source-wordcount: '1060'
+ht-degree: 1%
 
 ---
 
-# El exportador de página{#the-page-exporter}
+# El exportador de páginas{#the-page-exporter}
 
-Adobe Experience Manager AEM () le permite exportar una página como una página web completa que incluye imágenes, `.js` y `.css` archivos.
+Adobe Experience Manager (AEM) le permite exportar una página como una página web completa que incluye imágenes, `.js` y `.css` archivos.
 
 Cuando se configura, solicita una exportación de página desde el explorador reemplazando `html` por `export.zip` en la dirección URL. Esto genera un archivo (zip) que contiene la página procesada en formato html, junto con los recursos a los que se hace referencia. Todas las rutas de la página (por ejemplo, las rutas a imágenes) se vuelven a escribir para que apunten a los archivos incluidos en el archivo o a los recursos del servidor. A continuación, se puede descargar el archivo (zip) desde el explorador.
 
@@ -68,7 +68,7 @@ El exportador de páginas se basa en el [marco de sincronización de contenido](
 
 Cuando se activa una exportación de página, se hace referencia a la plantilla de exportación. Tanto la ruta de página como la ruta de diseño se aplican de forma dinámica. A continuación, el archivo zip se crea mediante la funcionalidad estándar de sincronización de contenido.
 
-AEM Una instalación de la aplicación predeterminada incluye una plantilla predeterminada en `/etc/contentsync/templates/default`.
+Una instalación predeterminada de AEM incluye una plantilla predeterminada en `/etc/contentsync/templates/default`.
 
 * Esta plantilla es la plantilla de reserva cuando no se encuentra ninguna plantilla de exportación en el repositorio.
 
@@ -110,7 +110,8 @@ Cuando la plantilla esté configurada, haga que esté disponible:
 
 La plantilla consiste en una estructura de nodos, ya que usa el [marco de trabajo de sincronización de contenido](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Cada nodo tiene una propiedad `type` que define una acción específica en el proceso de creación del archivo zip.
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 Se pueden utilizar los siguientes nodos para crear una plantilla de exportación:
@@ -180,7 +181,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Para cumplir algunos requisitos específicos, implemente un [controlador de actualización personalizado](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Exportación de una página mediante programación {#programmatically-exporting-a-page}

@@ -1,5 +1,5 @@
 ---
-title: Añadir el seguimiento de Adobe Analytics a los componentes
+title: Adición de seguimiento de Adobe Analytics a componentes
 description: Aprenda a añadir el seguimiento de Adobe Analytics a los componentes de Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,20 +9,20 @@ exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 0%
+source-wordcount: '1277'
+ht-degree: 2%
 
 ---
 
-# Añadir el seguimiento de Adobe Analytics a los componentes{#adding-adobe-analytics-tracking-to-components}
+# Adición de seguimiento de Adobe Analytics a componentes{#adding-adobe-analytics-tracking-to-components}
 
 ## Inclusión del módulo Adobe Analytics en un componente de página {#including-the-adobe-analytics-module-in-a-page-component}
 
-Los componentes de plantilla de página (por ejemplo, `head.jsp, body.jsp`) necesitan que JSP incluya para cargar ContextHub y la integración de Adobe Analytics (que forma parte de los Cloud Service). Todo incluye la carga de archivos JavaScript.
+Los componentes de plantilla de página (por ejemplo, `head.jsp, body.jsp`) necesitan que JSP incluya para cargar ContextHub y la integración de Adobe Analytics (que forma parte de Cloud Services). Todo incluye la carga de archivos JavaScript.
 
-La entrada de ContextHub debe incluirse inmediatamente debajo de la etiqueta `<head>`, mientras que los Cloud Service deben incluirse en la sección `<head>` y antes de la sección `</body>`; por ejemplo:
+La entrada de ContextHub debe incluirse inmediatamente debajo de la etiqueta `<head>`, mientras que Cloud Services debe incluirse en la sección `<head>` y antes de la sección `</body>`; por ejemplo:
 
 ```xml
 <head>
@@ -39,7 +39,7 @@ La entrada de ContextHub debe incluirse inmediatamente debajo de la etiqueta `<h
 
 El script `contexthub` que se inserta después del elemento `<head>` agrega las características de ContextHub a la página.
 
-Los scripts `cloudservices` que agrega en las secciones `<head>` y `<body>` se aplican a las configuraciones de servicios en la nube que se agregan a la página. (Si la página utiliza más de una configuración de Cloud Service, debe incluir el jsp de ContextHub y el jsp de Cloud Service solo una vez).
+Los scripts `cloudservices` que agrega en las secciones `<head>` y `<body>` se aplican a las configuraciones de servicios en la nube que se agregan a la página. (Si la página utiliza más de una configuración de Cloud Services, debe incluir el jsp de ContextHub y el jsp de Cloud Services solo una vez).
 
 Cuando se agrega un marco de trabajo de Adobe Analytics a la página, los scripts de `cloudservices` generan JavaScript relacionado con Adobe Analytics y referencias a bibliotecas del lado del cliente, de forma similar al siguiente ejemplo:
 
@@ -84,12 +84,14 @@ CQ_Analytics.CCM.addListener("storesinitialize", function(e) {
      $CQ(document).trigger("sitecatalystAfterCollect");
     }
 });
-//-->
+//
+-->
 </script>
 <script type="text/javascript">
 <!--
 if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//-->
+//
+-->
 </script>
 <noscript><img src="https://daydocumentation.112.2o7.net/b/ss/daydocumentation/1/H.25--NS/1380120772954?cdp=3&gn=content%3Ageometrixx-outdoors%3Aen" height="1" width="1" border="0" alt=""/></noscript>
 <span data-tracking="{event:'pageView', values:{}, componentPath:'foundation/components/page'}"></span>
@@ -109,7 +111,7 @@ $CQ(function(){
 </div>
 ```
 
-AEM Todos los sitios de muestra, como los Geometrixx Outdoors, incluyen este código.
+Todos los sitios de muestra de AEM, como Geometrixx Outdoors, tienen este código incluido.
 
 ### El evento SiteCatalystAfterCollect {#the-sitecatalystaftercollect-event}
 
@@ -127,7 +129,7 @@ Este evento se activa para indicar que se ha completado el seguimiento de la pá
 
 ## Implementación del seguimiento de Adobe Analytics para componentes personalizados {#implementing-adobe-analytics-tracking-for-custom-components}
 
-AEM Permita que los componentes de la interactúen con el marco de trabajo de Adobe Analytics. A continuación, configure el marco de trabajo para que Adobe Analytics realice un seguimiento de los datos del componente.
+Habilite los componentes de AEM para interactuar con el marco de trabajo de Adobe Analytics. A continuación, configure el marco de trabajo para que Adobe Analytics realice un seguimiento de los datos del componente.
 
 Los componentes que interactúan con el marco de trabajo de Adobe Analytics aparecen en Sidekick cuando edita un marco de trabajo. Después de arrastrar el componente al marco de trabajo, aparecen las propiedades del componente y puede asignarlas con las propiedades de Adobe Analytics. (Consulte [Configuración de un marco de trabajo para el seguimiento básico](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework)).
 
@@ -135,8 +137,8 @@ Los componentes pueden interactuar con el marco de Adobe Analytics cuando el com
 
 * `cq:trackevents`: identifica los eventos CQ que expone el componente. (Consulte Eventos personalizados).
 * `cq:trackvars`: nombra las variables de CQ asignadas con propiedades de Adobe Analytics.
-* `cq:componentName`: nombre del componente que aparece en el Sidekick.
-* `cq:componentGroup`: el grupo del Sidekick que incluye el componente.
+* `cq:componentName`: nombre del componente que aparece en Sidekick.
+* `cq:componentGroup`: grupo en Sidekick que incluye el componente.
 
 El código del componente JSP agrega el JavaScript a la página que almacena en déclencheur el seguimiento y define los datos que se rastrean. El nombre de evento y los nombres de datos utilizados en JavaScript deben coincidir con los valores correspondientes de las propiedades del nodo `analytics`.
 
@@ -183,13 +185,13 @@ Configure el componente de navegación superior y edite el archivo JSP para defi
    * Tipo: cadena
    * Valor: topnavTarget,topnavLocation
 
-1. Agregue la siguiente propiedad al nodo de Analytics para asignar un nombre al componente para el Sidekick:
+1. Agregue la siguiente propiedad al nodo de Analytics para asignar un nombre al componente para Sidekick:
 
    * Nombre: cq:componentName
    * Tipo: cadena
    * Value: topnav (tracking)
 
-1. Agregue la siguiente propiedad al nodo de Analytics para asignar un nombre al grupo de componentes para el Sidekick:
+1. Agregue la siguiente propiedad al nodo de Analytics para asignar un nombre al grupo de componentes para Sidekick:
 
    * Nombre: cq:componentGroup
    * Tipo: cadena
@@ -290,9 +292,9 @@ El contenido del archivo `topnav.jsp` debe aparecer de la siguiente manera:
 >
 >A menudo es deseable realizar un seguimiento de los datos de ContextHub. Para obtener información acerca de cómo usar JavaScript para obtener esta información, vea [Obtener acceso a valores en ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 
-#### Adición del componente de seguimiento al Sidekick {#adding-the-tracking-component-to-sidekick}
+#### Adición del componente Seguimiento a Sidekick {#adding-the-tracking-component-to-sidekick}
 
-Agregue componentes que estén habilitados para el seguimiento con Adobe Analytics a Sidekick para poder agregarlos al marco de trabajo.
+Agregue a Sidekick los componentes que están habilitados para el seguimiento con Adobe Analytics para que pueda agregarlos al marco de trabajo.
 
 1. Abra el marco de trabajo de Adobe Analytics desde la configuración de Adobe Analytics. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
 1. En Sidekick, haga clic en el botón Diseño.
@@ -304,7 +306,7 @@ Agregue componentes que estén habilitados para el seguimiento con Adobe Analyti
    ![chlimage_1](assets/chlimage_1aa.png)
 
 1. En la lista Componentes permitidos, seleccione top nav (seguimiento) en la sección General y, a continuación, haga clic en Aceptar.
-1. Expanda el Sidekick para entrar en modo de edición. El componente ya está disponible en el grupo General.
+1. Expanda Sidekick para entrar en modo de edición. El componente ya está disponible en el grupo General.
 
 #### Adición del componente de navegación superior al marco de trabajo {#adding-the-topnav-component-to-your-framework}
 
@@ -327,7 +329,7 @@ La variable s.products de Adobe Analytics usa la sintaxis siguiente:
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"
 ```
 
-El módulo de integración de Adobe Analytics AEM construye la variable `s.products` con los valores `product` que generan los componentes de la. El valor `product` de la JavaScript AEM que generan los componentes de la es una matriz de valores que tienen la siguiente estructura:
+El módulo de integración de Adobe Analytics construye la variable `s.products` con los valores `product` que generan los componentes de AEM. El valor `product` en JavaScript que generan los componentes de AEM es una matriz de valores que tienen la siguiente estructura:
 
 ```
 "product": [{

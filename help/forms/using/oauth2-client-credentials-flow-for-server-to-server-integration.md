@@ -1,18 +1,18 @@
 ---
-title: Integración de Salesforce con AEM Forms mediante el flujo de credenciales de cliente de OAuth 2.0
+title: Flujo de integración de Salesforce con AEM Forms mediante credenciales de cliente de OAuth 2.0
 description: Pasos para integrar la integración de Salesforce con AEM Forms mediante el flujo de credenciales de cliente de OAuth 2.0
 exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '461'
 ht-degree: 76%
 
 ---
 
-# Integración de Salesforce con el flujo de credenciales de cliente de OAuth 2.0 {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integración de Salesforce mediante el flujo de credenciales de cliente de OAuth 2.0  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -37,11 +37,10 @@ Antes de establecer la comunicación entre una aplicación de Salesforce y un en
 * Cree una [Aplicación conectada de Salesforce con flujo de credenciales de cliente de OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) y un único usuario de API para su organización y obtenga la clave y el secreto de consumidor para la aplicación.
 
 * Asegúrese de que el archivo Swagger esté configurado correctamente para que coincida con las API de su organización. También puede optar por [crear un archivo Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=es) desde cero, adaptado para su utilización en el entorno de AEM.
+
 >[!NOTE]
 >
-> AEM La versión 6.5 solo admite especificaciones de archivo de Swagger 2.0.
-
-+++
+> AEM 6.5 solo admite especificaciones de archivo de Swagger 2.0.
 
 ## Pasos para configurar Salesforce con el flujo de credenciales del cliente {#steps-to-create-aem-datasource-configuration}
 
@@ -70,4 +69,4 @@ Antes de establecer la comunicación entre una aplicación de Salesforce y un en
 1. Haga clic en **[!UICONTROL Probar conexión]**.
 1. Si la conexión se realiza correctamente, haga clic en el botón **[!UICONTROL Crear]**.
 
-Ahora, puede [crear el modelo de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=es) para integrar la fuente de datos configurada con su Forms adaptable.
+Ahora, puede [crear el modelo de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) para integrar la fuente de datos configurada con su Forms adaptable.

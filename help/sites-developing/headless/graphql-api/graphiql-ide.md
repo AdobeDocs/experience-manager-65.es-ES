@@ -5,16 +5,16 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 86%
+source-wordcount: '792'
+ht-degree: 84%
 
 ---
 
 # Uso del IDE de GraphiQL {#graphiql-ide}
 
-Hay una implementación del IDE estándar de [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) disponible para usar con la API de GraphQL de Adobe Experience Manager AEM ().
+Hay una implementación del IDE estándar de [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) disponible para usar con la API de GraphQL de Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Publicación de consultas persistentes {#publishing-persisted-queries}
 
-Una vez seleccionada la [consulta persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) de la lista (panel izquierdo), puede usar las acciones **Publish** y **Cancelar la publicación**. Esto las activará en el entorno de publicación (por ejemplo, `dev-publish`) para facilitar el acceso a las aplicaciones a la hora de realizar pruebas.
+Una vez que haya seleccionado su [consulta persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) de la lista (panel izquierdo), puede usar las acciones **Publicar** y **Cancelar la publicación**. Esto las activará en el entorno de publicación (por ejemplo, `dev-publish`) para facilitar el acceso a las aplicaciones a la hora de realizar pruebas.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Una vez seleccionada la [consulta persistente](/help/sites-developing/headless/g
 La opción **Copiar URL** le permite simular una consulta copiando la URL utilizada para acceder directamente a la consulta persistente y ver los resultados. Esto se puede utilizar para hacer pruebas; por ejemplo, accediendo en un explorador:
 
 <!--
-  >[!NOTE]
+>[!NOTE]
   >
   >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >

@@ -1,5 +1,5 @@
 ---
-title: Recursos de Publish a Brand Portal
+title: Publicación de recursos en Brand Portal
 description: Obtenga información sobre cómo publicar y cancelar la publicación de recursos en Brand Portal.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,21 +11,21 @@ role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: cbf8a5ac22049b3372a8282b9c061d7abeacc5dc
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 40%
+source-wordcount: '432'
+ht-degree: 43%
 
 ---
 
-# Recursos de Publish a Brand Portal {#publish-assets-to-brand-portal}
+# Publicación de recursos en Brand Portal {#publish-assets-to-brand-portal}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=es) |
 | AEM 6.5 | Este artículo |
 
-Como administrador de Adobe Experience Manager AEM () Assets, puede publicar recursos y carpetas en la instancia de AEM Assets Brand Portal (o programar el flujo de trabajo de publicación para una fecha u hora posterior) para su organización. Sin embargo, primero debe configurar AEM Assets con Brand Portal. Para obtener más información, consulte [Configurar AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
+Como administrador de Assets de Adobe Experience Manager (AEM), puede publicar recursos y carpetas en la instancia de AEM Assets Brand Portal (o programar el flujo de trabajo de publicación para una fecha u hora posterior) para su organización. Sin embargo, primero debe configurar AEM Assets con Brand Portal. Para obtener más información, consulte [Configurar AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 Una vez completada la replicación, puede publicar recursos, carpetas y colecciones en Brand Portal. Para publicar recursos en Brand Portal, siga estos pasos:
 
@@ -33,43 +33,43 @@ Una vez completada la replicación, puede publicar recursos, carpetas y coleccio
 >
 >Adobe recomienda la publicación escalonada, de preferencia durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.
 
-1. En la consola de Assets, seleccione los recursos o la carpeta que desee publicar y haga clic en la opción **[!UICONTROL Quick Publish]** en la barra de herramientas.
+1. En la consola de Assets, seleccione los recursos o la carpeta que desee publicar y haga clic en la opción **[!UICONTROL Publicación rápida]** en la barra de herramientas.
 
    También puede seleccionar los recursos que desea publicar en Brand Portal.
 
    ![publish2bp-2](assets/publish2bp.png)
 
 1. Para publicar los recursos en Brand Portal, existen dos opciones disponibles:
-   * [Recursos de Publish inmediatamente](#publish-to-bp-now)
-   * [Recursos de Publish más adelante](#publish-to-bp-now)
+   * [Publicar recursos inmediatamente](#publish-to-bp-now)
+   * [Publicar recursos más tarde](#publish-to-bp-now)
 
-## Recursos de Publish ahora {#publish-to-bp-now}
+## Publicar recursos ahora {#publish-to-bp-now}
 
 Para publicar los recursos seleccionados en Brand Portal, haga una de las acciones siguientes:
 
-* En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**. A continuación, en el menú, seleccione **[!UICONTROL Publish to Brand Portal]**.
+* En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**. A continuación, en el menú, seleccione **[!UICONTROL Publicar en Brand Portal]**.
 
 * En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
 
-   1. A continuación, desde **[!UICONTROL Acción]**, seleccione **[!UICONTROL Publish a Brand Portal]** y desde **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**. Haga clic en **[!UICONTROL Siguiente]**.
+   1. A continuación, en **[!UICONTROL Acción]**, seleccione **[!UICONTROL Publicar en Brand Portal]** y, en **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**. Haga clic en **[!UICONTROL Siguiente]**.
 
-   2. En **[!UICONTROL Ámbito]**, confirme su selección y haga clic en **[!UICONTROL Publish to Brand Portal]**.
+   2. En **[!UICONTROL ámbito]**, confirme su selección y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
 
 Aparece un mensaje que indica que los recursos se han puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver los recursos publicados.
 
-## Recursos de Publish más adelante {#publish-to-bp-later}
+## Publicar recursos más tarde {#publish-to-bp-later}
 
 Para programar la publicación de recursos en Brand Portal para una fecha u hora posterior:
 
 1. Una vez que haya seleccionado los recursos o las carpetas que desea publicar, seleccione **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
 
-1. En la página **[!UICONTROL Administrar publicación]**, seleccione **[!UICONTROL Publish a Brand Portal]** de **[!UICONTROL Acción]** y seleccione **[!UICONTROL Más tarde]** de **[!UICONTROL Programación]**.
+1. En la página **[!UICONTROL Administrar publicación]**, seleccione **[!UICONTROL Publicar en Brand Portal]** desde **[!UICONTROL Acción]** y seleccione **[!UICONTROL Más tarde]** desde **[!UICONTROL Programación]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-1. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**. 
+1. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**.
 
-1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**. 
+1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**.
 
 1. Especifique un **[!UICONTROL título de flujo de trabajo]** en **[!UICONTROL Flujos de trabajo]**. Haga clic en **[!UICONTROL Publicar más tarde]**.
 
@@ -87,6 +87,6 @@ Ahora, inicie sesión en Brand Portal para ver si los recursos publicados están
 
 1. Cambie a la vista de lista ![Vista de lista](assets/list-view.svg) para ver el estado de publicación actual del recurso.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![estado del informe generado](assets/report-status.JPG)

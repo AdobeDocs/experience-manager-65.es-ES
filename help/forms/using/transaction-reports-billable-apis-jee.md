@@ -6,10 +6,10 @@ feature: Transaction Reports
 exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 46%
+source-wordcount: '805'
+ht-degree: 56%
 
 ---
 
@@ -19,7 +19,7 @@ AEM Forms en JEE proporciona varias API para enviar, procesar y procesar documen
 
 * Convertir un documento de un formato a otro
 * Acoplar un documento PDF dinámico
-* Combinar un documento PDF interactivo con otro documento PDF
+* Combinar un documento PDF interactivo con otro PDF
 
 Las API de facturación no tienen en cuenta el número de páginas, la longitud de un documento o formulario o el formato final del documento representado.
 <!--
@@ -55,32 +55,32 @@ A continuación se muestra la lista de las API facturables de JEE. Encuentra la 
   </tr>
   <tr>
    <td><a> HtmlToPDF</a></td>
-   <td>Convierte el archivo del HTML a Adobe PDF. </td>
+   <td>Convierte el archivo HTML a Adobe PDF. </td>
    <td>Conversión<br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF</a></td>
-   <td>Exporta el PDF a los tipos de archivo compatibles. </td>
+   <td>Exporta PDF a tipos de archivo compatibles. </td>
    <td>Conversión<br /> </td>
   </tr>
   <tr>
    <td><a>EXPORTPDF2</a></td>
-   <td><p>Exporta el PDF a los tipos de archivo compatibles.</p> </td>
+   <td><p>Exporta PDF a tipos de archivo compatibles.</p> </td>
    <td>Conversión<br /> </td>
   </tr>
   <tr>
    <td><a>EXPORTPDF3</a></td>
-   <td>Exporta el PDF a los tipos de archivo compatibles.</td>
+   <td>Exporta PDF a tipos de archivo compatibles.</td>
    <td>Conversión<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlFileToPDF</a></td>
-   <td>Convierte el archivo del HTML en PDF.</td>
+   <td>Convierte el archivo HTML a PDF.</td>
    <td>Conversión<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlToPDF2</a></td>
-   <td>Convierte el archivo del HTML en PDF.</td>
+   <td>Convierte el archivo HTML a PDF.</td>
    <td>Conversión<br /> </td>
   </tr>
   <tr>
@@ -145,7 +145,7 @@ A continuación se muestra la lista de las API facturables de JEE. Encuentra la 
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
    <td>Invokes the specified render method to generate a document of record using provided parameters.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -197,7 +197,8 @@ A continuación se muestra la lista de las API facturables de JEE. Encuentra la 
  </tbody>
 </table>
 
-<!-- ### Forms Service {#forms-service}
+<!--
+### Forms Service {#forms-service}
 
 <table>
  <tbody>
@@ -208,13 +209,13 @@ A continuación se muestra la lista de las API facturables de JEE. Encuentra la 
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>Renders PDF Form from XDP templates. The XDP templates are created in Forms Designer.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>Extracts data from a PDF Form or XDP templates</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -245,7 +246,7 @@ A continuación se muestra la lista de las API facturables de JEE. Encuentra la 
   </tr>
   <tr>
    <td><a>toSWF</a></td>
-   <td>Convierte un archivo de PDF plano al formato de SWF mediante las opciones especificadas en la especificación de opciones.</td>
+   <td>Convierte un archivo de Flat PDF al formato SWF mediante las opciones especificadas en la especificación de opciones.</td>
    <td>Conversión de documentos</td>
   </tr>
  </tbody>
@@ -305,14 +306,14 @@ A continuación se muestra la lista de las API facturables de JEE. Encuentra la 
  </tbody>
 </table>
 
-El uso de la API de invocación se cuenta como una transacción, cuando realiza una o más de las siguientes operaciones:
-1. Conversión de formatos que no son de PDF a formatos de PDF. Por ejemplo, la conversión del formato XDP al formato de PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+El uso de la API de invocación se cuenta como una transacción cuando realiza una o más de las siguientes operaciones:
+1. Conversión de formatos que no son PDF a formatos PDF. Por ejemplo, la conversión de formato XDP al formato PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. Conversión de formato PDF a formato PDF/A.
 1. Conversión de formato PDF a formatos no PDF. Algunos ejemplos son la transformación de PDF a formato de imagen o la conversión de PDF a formato de texto.
 
 >[!NOTE]
 >
->* El API de invocación del servicio de ensamblador puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, `invoke API` puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
+>* El API de invocación del servicio Assembler puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, `invoke API` puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
 >* Un solo documento de PDF producido mediante un servicio de ensamblador como `invoke` y `invokeDDX` puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende del código <!--DDX--> proporcionado.
 
 <!--
@@ -367,7 +368,8 @@ El uso de la API de invocación se cuenta como una transacción, cuando realiza 
 
 -->
 
-<!--### HTML5 Forms {#html-forms}
+<!--
+### HTML5 Forms {#html-forms}
 
 <table>
  <tbody>
@@ -440,7 +442,8 @@ El uso de la API de invocación se cuenta como una transacción, cuando realiza 
  </tbody>
 </table>
 
-<!-- ## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+<!--
+## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
 
@@ -478,7 +481,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
    <td>Generates the PDF version of an interactive communication.</td>
    <td>Documents Rendered</td>
    <td>

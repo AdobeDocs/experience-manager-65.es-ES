@@ -1,5 +1,5 @@
 ---
-title: AEM Asignación de grupos de usuarios personalizados en 6.5
+title: Asignación de grupos de usuarios personalizados en AEM 6.5
 description: Descubra cómo funciona la asignación de grupos de usuarios personalizados en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,21 +10,21 @@ exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
-# AEM Asignación de grupos de usuarios personalizados en 6.5 {#custom-user-group-mapping-in-aem}
+# Asignación de grupos de usuarios personalizados en AEM 6.5 {#custom-user-group-mapping-in-aem}
 
 ## Comparación del contenido JCR relacionado con el CUG (grupo de usuarios personalizados) {#comparison-of-jcr-content-related-to-cug}
 
 <table>
  <tbody>
   <tr>
-   <td><strong>AEM Versiones anteriores de la</strong></td>
+   <td><strong>Versiones de AEM anteriores</strong></td>
    <td><strong>AEM 6.5</strong></td>
    <td><strong>Comentarios</strong></td>
   </tr>
@@ -53,9 +53,9 @@ ht-degree: 1%
 
 ## Comparación de los servicios de OSGi {#comparison-of-osgi-services}
 
-AEM **Versiones de la versión más antigua de la**
+**Versiones de AEM anteriores**
 
-Etiqueta: Soporte de Adobe Granite Closed User Group (CUG)
+Label: Soporte de Adobe Granite Closed User Group (CUG)
 
 Nombre: com.day.cq.auth.impl.CugSupportImpl
 
@@ -98,7 +98,8 @@ Servicio para configurar la lista de exclusión de principales que no deben vers
 
   Al habilitar el servicio, se inicia RequirementService.
 
-<!-- nested tables not supported - text above is the table>
+<!--
+nested tables not supported - text above is the table>
 <table>
  <tbody>
   <tr>

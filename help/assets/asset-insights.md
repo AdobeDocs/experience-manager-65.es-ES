@@ -1,33 +1,33 @@
 ---
-title: Assets Insights
-description: Descubra cómo la funcionalidad Assets Insights le permite rastrear las clasificaciones de los usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe.
+title: Información de recursos
+description: Descubra cómo la funcionalidad Assets Insights le permite rastrear las clasificaciones de los usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y las soluciones creativas de Adobe.
 contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 8%
+source-wordcount: '797'
+ht-degree: 18%
 
 ---
 
-# Assets Insights {#asset-insights}
+# Información de recursos {#asset-insights}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
-La función Assets Insights le permite realizar un seguimiento de las clasificaciones de los usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe. Ayuda a obtener perspectivas sobre su rendimiento y popularidad.
+La función Assets Insights le permite realizar un seguimiento de las valoraciones de los usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y las soluciones creativas de Adobe. Ayuda a obtener perspectivas sobre su rendimiento y popularidad.
 
 [!DNL Assets] Insights captura los detalles de la actividad del usuario, como la cantidad de veces que se clasifica, hace clic y genera impresiones una imagen (la cantidad de veces que se carga una imagen en el sitio web). Asigna puntuaciones a las imágenes en función de estas estadísticas. Puede utilizar las puntuaciones y las estadísticas de rendimiento para seleccionar imágenes populares para incluirlas en catálogos, campañas de marketing, etc. Incluso puede formular políticas de archivado y renovación de licencias basadas en estas estadísticas.
 
 Para que [!DNL Assets] Insights capture estadísticas de uso de imágenes de un sitio web, debe incluir el código incrustado de la imagen en el código del sitio web.
 
-Para permitir que Assets Insights muestre las estadísticas de uso de los recursos, configure primero la función para recuperar los datos de informes de Adobe Analytics. Para obtener más información, consulte [Configuración de Assets Insights](/help/assets/configure-asset-insights.md). Para usar esta característica en una instalación On-Premise, adquiera la licencia [!DNL Adobe Analytics] por separado. Los clientes de [!DNL Managed Services] reciben [!DNL Analytics] licencia incluida con [!DNL Experience Manager]. Ver [descripción del producto de Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Para permitir que la información de los recursos muestre las estadísticas de uso de los recursos, configure primero la función para recuperar los datos de informes de Adobe Analytics. Para obtener más información, consulte [Configuración de Assets Insights](/help/assets/configure-asset-insights.md). Para usar esta característica en una instalación On-Premise, adquiera la licencia [!DNL Adobe Analytics] por separado. Los clientes de [!DNL Managed Services] reciben [!DNL Analytics] licencia incluida con [!DNL Experience Manager]. Ver [descripción del producto de Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Puede ver las puntuaciones de Assets Insights desde la página de metadatos.
 
    * **Recurso**: el número de veces que el recurso formaba parte de una colección o de un recurso compuesto
    * **Web y dispositivos móviles**: La cantidad de veces que el recurso formaba parte de sitios web y aplicaciones
-   * **Social**: El número de veces que el recurso se usó en soluciones como Adobe Social y Adobe Campaign
+   * **Social**: El número de veces que se usó el recurso en soluciones como Adobe Social y Adobe Campaign
    * **Correo electrónico**: El número de veces que el recurso se usó en campañas de correo electrónico
 
    ![estadísticas_de_uso](assets/usage_statistics.png)
@@ -80,10 +80,10 @@ Puede ver las puntuaciones de todos los recursos de una carpeta simultáneamente
 
 ## Programar trabajo en segundo plano {#scheduling-background-job}
 
-Assets Insights obtiene datos de uso de recursos de los grupos de informes de Adobe Analytics de forma periódica. De forma predeterminada, Assets Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 a. m. para recuperar los datos. Sin embargo, puede modificar la frecuencia y la hora configurando el servicio **[!UICONTROL Trabajo de sincronización de informes de rendimiento de recursos DAM de Adobe CQ]** desde la consola web.
+Assets Insights obtiene datos de uso de recursos de los grupos de informes de Adobe Analytics de forma periódica. De forma predeterminada, Assets Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 a. m. para recuperar los datos. Sin embargo, puede modificar la frecuencia y la hora configurando el servicio **[!UICONTROL Trabajo de sincronización de informes de rendimiento de recursos CQ DAM de Adobe]** desde la consola web.
 
 1. Haga clic en el logotipo de [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
-1. Abra la configuración del servicio **[!UICONTROL Trabajo de sincronización de informes de rendimiento de recursos DAM de Adobe CQ]**.
+1. Abra la configuración del servicio **[!UICONTROL Trabajo de sincronización de informes de rendimiento de recursos de Adobe CQ DAM]**.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
 

@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: 712693e4be9b8f357e4fc27ecc30a39a9850680c
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '11685'
+source-wordcount: '11719'
 ht-degree: 0%
 
 ---
@@ -598,7 +598,7 @@ Los campos inteligentes pueden ser una forma eficaz de facilitar el rellenado de
 
 Puede utilizar la paleta Accesibilidad para asignar funciones a objetos en función de para qué se utiliza el objeto. Estas funciones se pueden aplicar para crear encabezados en diferentes niveles.
 
-![Especificando un rol de encabezado en la paleta Accesibilidad](/help/forms/using/assets/image-15.png)
+![Especificar un rol de encabezado en la paleta Accesibilidad](/help/forms/using/assets/image-15.png)
 Figura 15: **Especificación de una función de encabezado en la paleta Accesibilidad**
 
 Siga estos pasos para crear un encabezado en el formulario:

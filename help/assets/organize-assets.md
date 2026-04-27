@@ -7,9 +7,9 @@ feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '813'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=es) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Todos los recursos digitales, metadatos y contenido de los documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Metadatos en Digital Asset Management.
@@ -47,9 +47,9 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es an
 
 ## Organización de recursos mediante etiquetas {#use-tags-to-organize-assets}
 
-Con las etiquetas, como metadatos, puede buscar recursos fácilmente, crear colecciones mediante los resultados de búsqueda, aumentar la clasificación de búsqueda de algunos recursos y utilizar algoritmos de inteligencia artificial de Adobe AI para la detección de recursos.
+Con las etiquetas, como metadatos, puede buscar recursos fácilmente, crear colecciones utilizando los resultados de búsqueda, aumentar la clasificación de búsqueda de algunos recursos y utilizar algoritmos de inteligencia artificial de Adobe AI para la detección de recursos.
 
-[!DNL Adobe Experience Manager Assets] utiliza un algoritmo de autoaprendizaje para crear etiquetas altamente descriptivas que le permiten encontrar el recurso correcto en solo unos clics. El etiquetado inteligente utiliza Adobe AI, la inteligencia artificial y el marco de trabajo de aprendizaje automático de Adobe, que puede formarse para reconocer y aplicar etiquetas estándar y específicas de la empresa a las imágenes. Las etiquetas inteligentes también pueden identificar contenido, palabras o frases individuales y aplicar automáticamente etiquetas descriptivas a los recursos
+[!DNL Adobe Experience Manager Assets] utiliza un algoritmo de autoaprendizaje para crear etiquetas altamente descriptivas que le permiten encontrar el recurso correcto en solo unos clics. El etiquetado inteligente utiliza Adobe AI, la inteligencia artificial de Adobe y el marco de trabajo de aprendizaje automático, que puede formarse para reconocer y aplicar etiquetas estándar y específicas de la empresa a las imágenes. Las etiquetas inteligentes también pueden identificar contenido, palabras o frases individuales y aplicar automáticamente etiquetas descriptivas a los recursos
 
 Para obtener más información, consulte los siguientes artículos:
 
@@ -63,20 +63,21 @@ Con las colecciones de recursos de [!DNL Experience Manager Assets], puede optim
 
 Para obtener más información, consulte [administrar colecciones](manage-collections.md).
 
-<!-- TBD items: add screenshots where applicable
+<!--
+TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
 Add back links to blog posts by marketing?
 -->
 
 ## Organizar los recursos para utilizar perfiles {#organize-to-use-profiles}
 
-Un perfil de procesamiento contiene [!DNL Assets] comandos de procesamiento que se aplican a los recursos que se cargan en carpetas predefinidas. Los perfiles se utilizan para automatizar el procesamiento del contenido de una carpeta o de los recursos recién cargados. Puede utilizar perfiles para organizar mejor los recursos.
+Un perfil de procesamiento contiene [!DNL Assets] comandos de procesamiento que se aplican a los recursos que se cargan en carpetas predefinidas. Profiles are used to automate the processing of contents of a folder or freshly uploaded assets. You can use profiles to organize your assets better.
 
-La estandarización del uso de metadatos, los nombres de archivo y la estructura de carpetas garantiza que, a medida que el grupo de recursos digitales crezca, pueda aplicar perfiles de procesamiento a las carpetas con mayor precisión y coherencia.
+Standardizing metadata usage, file naming, and folder structure ensures that as your pool of digital assets grows, you can apply processing profiles to folders with greater precision and consistency.
 
 >[!MORELIKETHIS]
 >
->* [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md).
->* [Perfiles de metadatos](/help/assets/metadata-config.md#metadata-profiles).
->* [Perfiles de vídeo](video-profiles.md).
->* [Perfiles de imagen de Dynamic Media](image-profiles.md).
+>* [Profiles to process metadata, images, and videos](processing-profiles.md).
+>* [Metadata profiles](/help/assets/metadata-config.md#metadata-profiles).
+>* [Video profiles](video-profiles.md).
+>* [Dynamic Media image profiles](image-profiles.md).

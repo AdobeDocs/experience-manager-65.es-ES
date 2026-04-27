@@ -7,10 +7,10 @@ feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 6%
+source-wordcount: '1043'
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 [!DNL Adobe Experience Manager Assets] le permite compartir recursos, carpetas y colecciones como una dirección URL con miembros de su organización y entidades externas, incluidos socios y proveedores. Compartir recursos a través de un vínculo es una manera cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión primero en [!DNL Assets].
@@ -118,4 +118,4 @@ Cuando se descargan recursos desde el vínculo compartido mediante la caracterí
    * `http://[aem_server]:[port]/linksharepreview.html`
    * `http://[aem_server]:[port]/linkexpired.html`
 
-  En la interfaz de [!DNL Experience Manager], obtenga acceso a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**. Abra la configuración de **[!UICONTROL Day CQ Link Externalizer]** y modifique las siguientes propiedades en el campo **[!UICONTROL Dominios]** con los valores mencionados en `local`, `author` y `publish`. Para las propiedades `local` y `author`, proporcione la dirección URL para las instancias local y Author, respectivamente. Si ejecuta una sola instancia de autor de [!DNL Experience Manager], utilice el mismo valor para las propiedades `local` y `author`. Para instancias de Publish, proporcione la dirección URL de la instancia de Publish [!DNL Experience Manager].
+  En la interfaz de [!DNL Experience Manager], obtenga acceso a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**. Abra la configuración de **[!UICONTROL Day CQ Link Externalizer]** y modifique las siguientes propiedades en el campo **[!UICONTROL Dominios]** con los valores mencionados en `local`, `author` y `publish`. Para las propiedades `local` y `author`, proporcione la dirección URL para las instancias local y Author, respectivamente. Si ejecuta una sola instancia de autor de [!DNL Experience Manager], utilice el mismo valor para las propiedades `local` y `author`. Para instancias de publicación, proporcione la dirección URL de la instancia de publicación [!DNL Experience Manager].

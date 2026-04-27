@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: cbdb64772f66e5e69de5e4e7ae1cd0d023276b34
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1983'
 ht-degree: 66%
 
 ---
@@ -32,13 +32,13 @@ Este artículo presenta los conceptos básicos de las SPA antes de guiar al lect
 
 La meta de esta introducción y tutorial es demostrar a un desarrollador AEM por qué los SPA son relevantes, cómo funcionan en general, cómo el editor de SPA gestiona las SPA y cómo es diferente de una aplicación AEM estándar.
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 El tutorial se basa en la funcionalidad AEM estándar y en la aplicación de proyecto WKND SPA de ejemplo. Para seguir con este tutorial, debe tener disponible lo siguiente.
 
 * [AEM versión 6.5.4 o posterior](/help/release-notes/release-notes.md)
    * Debe tener derechos de administrador en el sistema.
-* [La aplicación de proyecto WKND SPA de ejemplo está disponible en GitHub](https://github.com/adobe/aem-guides-wknd-spa)
+* [La aplicación de ejemplo del proyecto SPA de WKND disponible en GitHub](https://github.com/adobe/aem-guides-wknd-spa)
    * Descargue la [última versión de la aplicación React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Se le asignará un nombre similar a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
    * Descargue las [imágenes de muestra más recientes](https://github.com/adobe/aem-guides-wknd-spa/releases) para la aplicación. Se le asignará un nombre similar a `wknd-spa-sample-images-X.Y.Z.zip`.
    * [Use el administrador de paquetes](/help/sites-administering/package-manager.md) para instalar los paquetes como lo haría con cualquier otro paquete en AEM.

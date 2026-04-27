@@ -1,5 +1,5 @@
 ---
-title: Reescritura de XMP en representaciones
+title: Reescritura XMP en representaciones
 description: Descubra cómo la función de reescritura de XMP propaga los cambios de metadatos de un recurso a todas las representaciones del recurso o a algunas específicas.
 contentOwner: AG
 role: User, Admin
@@ -7,18 +7,18 @@ feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 6%
+source-wordcount: '801'
+ht-degree: 7%
 
 ---
 
-# Reescritura de XMP en representaciones {#xmp-writeback-to-renditions}
+# Reescritura XMP en representaciones {#xmp-writeback-to-renditions}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
 | AEM 6.5 | Este artículo |
 
 Esta característica de reescritura de XMP en [!DNL Adobe Experience Manager Assets] replica los cambios de metadatos en las representaciones del recurso original. Al cambiar los metadatos de un recurso desde Assets o al cargar el recurso, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía de recursos.
@@ -60,40 +60,40 @@ Siga estos pasos para que la función de reescritura de XMP propague metadatos a
    ![step_properties](assets/step_properties.png)
 
 1. Guarde los cambios.
-1. Para regenerar las representaciones piramidales de TIFF de [!DNL Dynamic Media] imágenes con los nuevos atributos, agregue el paso **[!UICONTROL Dynamic Media Process Image Assets]** al flujo de trabajo [!UICONTROL DAM Metadata Writeback].
+1. To regenerate the pyramid TIFF renditions for [!DNL Dynamic Media] images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the [!UICONTROL DAM Metadata Writeback] workflow.
 
    Las representaciones PTIFF solo se crean y almacenan localmente en una implementación híbrida de Dynamic Media.
 
-1. Guarde el flujo de trabajo.
+1. Save the workflow.
 
-Los cambios de metadatos se propagan a las representaciones thumbnail.140.100.png y thumbnail.319.319.png del recurso, y no a las demás.
-
->[!NOTE]
->
->Para las plataformas admitidas, consulte [Requisitos previos para la reescritura de metadatos de XMP](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
-
-## Filtrado de metadatos de XMP {#filtering-xmp-metadata}
-
-[!DNL Experience Manager Assets] admite el filtrado de lista de bloqueados y lista de permitidos de propiedades/nodos para metadatos de XMP que se leen desde binarios de recursos y se almacenan en JCR cuando se incorporan recursos.
-
-El filtrado mediante una lista de bloqueados permite importar todas las propiedades de metadatos de XMP excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos de XMP (por ejemplo, 1000 nodos con 10 000 propiedades), los nombres de nodos que se van a filtrar no siempre se conocen de antemano. Si el filtrado mediante una lista de bloqueados permite importar un gran número de recursos con numerosos metadatos de XMP, la implementación de [!DNL Experience Manager] puede encontrar problemas de estabilidad, por ejemplo, colas de observación obstruidas.
-
-El filtrado de metadatos de XMP mediante lista de permitidos resuelve este problema al permitirle definir las propiedades de XMP que desea importar. De este modo, se ignoran todas las demás propiedades de XMP o desconocidas. Para la compatibilidad con versiones anteriores, puede agregar algunas de estas propiedades al filtro que utiliza una lista de bloqueados.
+The metadata changes are propagated to the renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 
 >[!NOTE]
 >
->El filtrado solo funciona para las propiedades derivadas de fuentes de XMP en binarios de recursos. Para las propiedades derivadas de orígenes que no son de XMP, como los formatos EXIF y IPTC, el filtrado no funciona. Por ejemplo, la fecha de creación del recurso se almacena en la propiedad denominada `CreateDate` en EXIF TIFF. Experience Manager almacena este valor en un campo de metadatos denominado `exif:DateTimeOriginal`. Como el origen no es de XMP, el filtrado no funciona en esta propiedad.
+>For the supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 
-1. Para abrir el Administrador de configuración, acceda a `https://[aem_server]:[port]/system/console/configMgr`.
-1. Abra la configuración **[!UICONTROL Adobe CQ DAM XmpFilter]**.
-1. Para aplicar el filtrado mediante una lista de permitidos, seleccione **[!UICONTROL Aplicar Lista de permitidos a las propiedades de XMP]** y especifique las propiedades que desea importar en el cuadro **[!UICONTROL Nombres XML permitidos para el filtrado de XMP]**.
+## Filtering XMP metadata {#filtering-xmp-metadata}
+
+[!DNL Experience Manager Assets] supports both blocked list and allowed list filtering of properties/nodes for XMP metadata that is read from asset binaries and stored in JCR when assets are ingested.
+
+Filtering using a blocked list lets you import all XMP metadata properties except the properties that are specified for exclusion. However, for asset types such as INDD files that have huge amounts of XMP metadata (for example, 1000 nodes with 10,000 properties), the names of nodes to be filtered are not always known in advance. If filtering using a blocked list allows a large number of assets with numerous XMP metadata to be imported, the [!DNL Experience Manager] deployment can encounter stability issues, for example, clogged observation queues.
+
+Filtering of XMP metadata via allowed list resolves this issue by letting you define the XMP properties to be imported. This way, any other or unknown XMP properties are ignored. For backward compatibility, you can add some of these properties to the filter that uses a blocked list.
+
+>[!NOTE]
+>
+>Filtering works only for the properties derived from XMP sources in asset binaries. For the properties derived from non-XMP sources, such as EXIF and IPTC formats, the filtering does not work. For example, the date of asset creation is stored in property named `CreateDate` in EXIF TIFF. Experience Manager stores this value in a metadata field named `exif:DateTimeOriginal`. As the source is a non-XMP source, filtering does not work on this property.
+
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
+1. To apply filtering by way of an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Para filtrar las propiedades de XMP bloqueadas después de aplicar el filtrado a través de la lista de permitidos, especifique las propiedades en el cuadro **[!UICONTROL Nombres XML bloqueados para el filtrado de XMP]**.
+1. To filter out blocked XMP properties after applying filtering through the allowed list, specify those in the **[!UICONTROL Blocked XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >La opción **[!UICONTROL Aplicar Lista de bloqueados a las propiedades de XMP]** está seleccionada de forma predeterminada. En otras palabras, el filtrado con una lista de bloqueados está habilitado de forma predeterminada. Para deshabilitar dicho filtrado, cancele la selección de la opción **[!UICONTROL Aplicar Lista de bloqueados a las propiedades de XMP]**.
+   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. In other words, filtering using a blocked list is enabled by default. To disable such filtering, cancel the selection of the **[!UICONTROL Apply Blocklist to XMP Properties]** option.
 
 1. Guarde los cambios.

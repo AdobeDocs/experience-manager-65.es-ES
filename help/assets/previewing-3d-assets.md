@@ -8,9 +8,9 @@ role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '595'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Experience Manager admite la carga, el envío y la previsualización interactiva de recursos 3D como parte del proceso de creación.
@@ -28,7 +28,7 @@ El visor 3D interactivo está disponible en la página de detalles de recursos d
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
-## Formatos admitidos para la previsualización 3D en Experience Manager {#supported-3d-previewing-assets}
+## Formatos compatibles con la vista previa 3D en Experience Manager {#supported-3d-previewing-assets}
 
 La vista previa 3D interactiva admite los siguientes formatos de archivo:
 
@@ -58,11 +58,11 @@ El tiempo que se tarda en abrir un recurso 3D en la página de vista de detalles
 
 Además, las capacidades del equipo cliente, como una estación de trabajo, un portátil o un dispositivo táctil móvil, también son importantes a la hora de manipular la cámara de forma interactiva. Un sistema razonablemente potente con buenas capacidades gráficas puede hacer que la experiencia de visualización 3D interactiva sea más fluida y favorable.
 
-**Para obtener una vista previa de los recursos 3D en el Experience Manager:**
+**Para obtener una vista previa de recursos 3D en Experience Manager:**
 
 1. Asegúrese de haber cargado recursos 3D en Experience Manager.
 Ver [Formatos compatibles para vista previa 3D](#supported-3d-previewing-assets) y [Cargar Assets](/help/assets/manage-assets.md#uploading-assets).
-1. En el Experience Manager, en la página **[!UICONTROL Navegación]**, seleccione **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
+1. En Experience Manager, en la página **[!UICONTROL Navegación]**, seleccione **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
 
    ![Página de navegación](/help/assets/assets-dm/navigation-assets.png)
 

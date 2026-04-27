@@ -7,18 +7,18 @@ feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1798'
 ht-degree: 1%
 
 ---
 
-# API HTTP [!DNL Assets] {#assets-http-api}
+# API del HTTP [!DNL Assets] {#assets-http-api}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 ## Información general {#overview}
@@ -30,13 +30,13 @@ Para acceder a la API:
 1. Abra el documento de servicio de API en `https://[hostname]:[port]/api.json`.
 1. Seguir el vínculo de servicio [!DNL Assets] que lleva a `https://[hostname]:[server]/api/assets.json`.
 
-La respuesta de la API es un archivo JSON para algunos tipos de MIME y un código de respuesta para todos los tipos de MIME. La respuesta JSON es opcional y es posible que no esté disponible, por ejemplo, para archivos de PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
+La respuesta de la API es un archivo JSON para algunos tipos de MIME y un código de respuesta para todos los tipos de MIME. La respuesta JSON es opcional y es posible que no esté disponible, por ejemplo, para los archivos PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
 
 Transcurrido el [!UICONTROL tiempo de inactividad], un recurso y sus representaciones no estarán disponibles a través de la interfaz web [!DNL Assets] ni a través de la API HTTP. La API devuelve el mensaje de error 404 si el [!UICONTROL Tiempo de activación] es futuro o el [!UICONTROL Tiempo de inactividad] es anterior.
 
 >[!CAUTION]
 >
->[La API HTTP actualiza las propiedades de metadatos](#update-asset-metadata) en el espacio de nombres `jcr`. Sin embargo, la interfaz de usuario del Experience Manager actualiza las propiedades de metadatos del espacio de nombres `dc`.
+>[La API HTTP actualiza las propiedades de metadatos](#update-asset-metadata) en el espacio de nombres `jcr`. Sin embargo, la interfaz de usuario de Experience Manager actualiza las propiedades de metadatos del espacio de nombres `dc`.
 
 ## Fragmentos de contenido {#content-fragments}
 
@@ -76,7 +76,7 @@ Las carpetas son como los directorios de los sistemas de archivos tradicionales.
 En Experience Manager, un recurso contiene los siguientes elementos:
 
 * Las propiedades y los metadatos del recurso.
-* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y varias otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, diferentes codificaciones de vídeo o páginas extraídas de archivos del PDF o de [!DNL Adobe InDesign].
+* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y varias otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, diferentes codificaciones de vídeo o páginas extraídas de PDF o archivos de [!DNL Adobe InDesign].
 * Comentarios opcionales.
 
 Para obtener información sobre los elementos de los fragmentos de contenido, consulte [Compatibilidad con fragmentos de contenido en la API HTTP de Experience Manager Assets](/help/assets/assets-api-content-fragments.md#content-fragments).
@@ -108,7 +108,7 @@ La API HTTP [!DNL Assets] incluye las siguientes características:
 **Requisitos previos**
 
 * Acceso `https://[aem_server]:[port]/system/console/configMgr`.
-* Vaya a **[!UICONTROL Adobe Granite CSRF Filter]**.
+* Vaya a **[!UICONTROL Filtro CSRF de Adobe Granite]**.
 * Asegúrese de que la propiedad **[!UICONTROL Métodos de filtro]** incluya: `POST`, `PUT`, `DELETE`.
 
 ## Recuperar una lista de carpetas {#retrieve-a-folder-listing}
@@ -127,7 +127,7 @@ Recupera una representación de sirena de una carpeta existente y de sus entidad
 
 ## Crear una carpeta. {#create-a-folder}
 
-Crea un nuevo(a) `sling`: `OrderedFolder` en la ruta dada. Si se proporciona `*` en lugar del nombre de un nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación de sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, que son útiles para crear una carpeta directamente desde un formulario de HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta de URL.
+Crea un nuevo(a) `sling`: `OrderedFolder` en la ruta dada. Si se proporciona `*` en lugar del nombre de un nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. Los datos de solicitud aceptados son una representación de sirena de la nueva carpeta o un conjunto de pares de nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, útiles para crear una carpeta directamente desde un formulario de HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta de URL.
 
 Una llamada de API produce un error con un código de respuesta `500` si el nodo principal de la ruta de acceso proporcionada no existe. Una llamada devuelve un código de respuesta `409` si la carpeta ya existe.
 
@@ -191,7 +191,7 @@ Actualiza las propiedades de los metadatos del recurso. Si actualiza cualquier p
 
 ### Sincronizar actualización de metadatos entre el espacio de nombres `dc` y `jcr` {#sync-metadata-between-namespaces}
 
-El método API actualiza las propiedades de metadatos en el espacio de nombres `jcr`. Las actualizaciones realizadas mediante la interfaz de usuario cambian las propiedades de metadatos del espacio de nombres `dc`. Para sincronizar los valores de metadatos entre el espacio de nombres `dc` y `jcr`, puede crear un flujo de trabajo y configurar el Experience Manager para que ejecute el flujo de trabajo tras la edición del recurso. Utilice un script ECMA para sincronizar las propiedades de metadatos requeridas. El siguiente script de ejemplo sincroniza la cadena de título entre `dc:title` y `jcr:title`.
+El método API actualiza las propiedades de metadatos en el espacio de nombres `jcr`. Las actualizaciones realizadas mediante la interfaz de usuario cambian las propiedades de metadatos del espacio de nombres `dc`. Para sincronizar los valores de metadatos entre el espacio de nombres `dc` y `jcr`, puede crear un flujo de trabajo y configurar Experience Manager para que ejecute el flujo de trabajo tras la edición del recurso. Utilice un script ECMA para sincronizar las propiedades de metadatos requeridas. El siguiente script de ejemplo sincroniza la cadena de título entre `dc:title` y `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -318,6 +318,6 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 
 ## Sugerencias y limitaciones {#tips-best-practices-limitations}
 
-* [La API HTTP actualiza las propiedades de metadatos](#update-asset-metadata) en el espacio de nombres `jcr`. Sin embargo, la interfaz de usuario del Experience Manager actualiza las propiedades de metadatos del espacio de nombres `dc`.
+* [La API HTTP actualiza las propiedades de metadatos](#update-asset-metadata) en el espacio de nombres `jcr`. Sin embargo, la interfaz de usuario de Experience Manager actualiza las propiedades de metadatos del espacio de nombres `dc`.
 
 * La API HTTP de Assets no devuelve los metadatos completos. Las áreas de nombres están codificadas y solo se devuelven esas áreas de nombres. Para ver los metadatos completos, consulte la ruta de recursos `/jcr_content/metadata.json`.

@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 1%
+source-wordcount: '152'
+ht-degree: 9%
 
 ---
 
@@ -37,6 +37,6 @@ Los siguientes son los repositorios de código abierto en GitHub para las biblio
 
 * [Asignación de componentes](https://github.com/adobe/aem-spa-component-mapping)
 * [Administrador de modelos de página](https://github.com/adobe/aem-spa-page-model-manager)
-* [Componentes editables de React](https://github.com/adobe/aem-react-editable-components)
+* [Reaccionar componentes editables](https://github.com/adobe/aem-react-editable-components)
 * [Componentes editables de Angular](https://github.com/adobe/aem-angular-editable-components)
-* [Núcleo de proyecto de SPA](https://github.com/adobe/aem-spa-project-core)
+* [Principal de proyecto de SPA](https://github.com/adobe/aem-spa-project-core)
