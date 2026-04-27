@@ -24,7 +24,7 @@ Una vez que esté familiarizado con las acciones de administración de contenido
 
 >[!NOTE]
 >
->Para obtener más información sobre las consideraciones de diseño de las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño de las aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) en la Ayuda en línea.
+>Para obtener más información sobre las consideraciones de diseño de las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño de las aplicaciones de AEM Mobile](https://helpx.adobe.com/es/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) en la Ayuda en línea.
 
 ## Publicación/cancelación de la publicación del contenido {#publishing-unpublishing-the-content}
 
