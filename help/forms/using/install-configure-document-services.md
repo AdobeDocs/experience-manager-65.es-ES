@@ -905,7 +905,7 @@ Siga estos pasos:
 >
 >Deshabilitar el modo protegido es necesario en situaciones de automatización del lado del servidor como AEM Forms PDF Generator. Esta configuración solo debe cambiarse en entornos de servidor dedicados, no en escritorios de usuarios finales.
 
-Para obtener más información, consulte [Documentación de Adobe sobre el modo protegido](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Para obtener más información, consulte [Documentación de Adobe sobre el modo protegido](https://helpx.adobe.com/es/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
