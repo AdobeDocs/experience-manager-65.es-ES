@@ -1,16 +1,19 @@
 ---
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+title: 'Script de vídeo: Configuración de licencias restringidas de funciones (FRL) para Adobe Acrobat en AEM Forms'
+description: Configuración de licencias restringidas de funciones (FRL) para Adobe Acrobat en AEM Forms
+source-git-commit: 5477c768542b65750945dc9789224c0eb223f3c4
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
+
 # Script de vídeo: Configuración de licencias restringidas de funciones (FRL) para Adobe Acrobat en AEM Forms
 
 | Visual | Título | Script de altavoz |
 |--------|-------|---------------|
 | Pantalla de título con logotipo de AEM Forms y gráfico FRL | Introducción | Bienvenido a este tutorial sobre la configuración de las licencias restringidas de funciones, o FRL, para Adobe Acrobat en su servidor de AEM Forms. Este proceso es esencial, ya que Adobe se aleja de las licencias perpetuas y pasa al nuevo modelo FRL. |
-| Cronología que muestra las fechas límite con flechas que apuntan a la transición a FDL | Fondo | Las versiones de Adobe Acrobat Classic con licencias perpetuas están llegando al final de su vida útil, lo que requiere una transición a versiones más nuevas. AEM Forms PDF Generator se basa en Adobe Acrobat para la funcionalidad de conversión de documentos. El modelo de licencias restringidas de características proporciona la misma funcionalidad pero con un enfoque de licencias moderno administrado mediante Adobe Admin Console. |
+| Cronología que muestra las fechas límite con flechas que apuntan a la transición a FDL | Información general | Las versiones de Adobe Acrobat Classic con licencias perpetuas están llegando al final de su vida útil, lo que requiere una transición a versiones más nuevas. AEM Forms PDF Generator se basa en Adobe Acrobat para la funcionalidad de conversión de documentos. El modelo de licencias restringidas de características proporciona la misma funcionalidad pero con un enfoque de licencias moderno administrado mediante Adobe Admin Console. |
 | Lista de comprobación de elementos necesarios con casillas de verificación e iconos | Requisitos previos | Antes de empezar, asegúrese de que tiene todo lo que necesita: primero, acceso a Adobe Admin Console con privilegios de administrador del sistema. Segundo, una cuenta de usuario con la función de administrador de implementación en Admin Console. En tercer lugar, privilegios de administrador local en el servidor que ejecuta AEM Forms. Cuarto, un sistema operativo Windows de 64 bits en su servidor AEM Forms. Quinto, una conexión estable a Internet para la activación de licencias. También debe estar familiarizado con la interfaz de Adobe Admin Console y comprender la arquitectura de implementación de AEM Forms. |
 | Icono de advertencia con gráfico de copia de seguridad | Nota importante | Recuerde hacer una copia de seguridad de la configuración personalizada de Acrobat antes de iniciar, ya que tendrá que desinstalar las instalaciones de Acrobat existentes durante este proceso. |
 | Diagrama de flujo que muestra los pasos numerados del 1 al 7 | Resumen del proceso | Este proceso implica varios pasos clave: preparar un paquete FRL en Admin Console, conceder permisos de descarga, desinstalar versiones anteriores de Acrobat, instalar el nuevo Acrobat Pro, implementar el paquete FRL y verificar la instalación. Vamos a caminar por cada paso. |

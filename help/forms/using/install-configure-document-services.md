@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: d2e16ff36c5910e43f647a68330ae82e3dd61456
 workflow-type: tm+mt
 source-wordcount: '10489'
 ht-degree: 43%
@@ -790,36 +790,36 @@ Acceda al servidor que ejecuta AEM Forms mediante el método adecuado. Asegúres
 **Esencial:** Realice una copia de seguridad de cualquier configuración, perfil o configuración de Acrobat personalizada antes de desinstalar.
 
 1. Abra el Panel de control de Campaign de Windows.
-2. Navigate to **Settings** and open **Apps**.
-3. Locate **Adobe Acrobat** in the list of installed programs
-4. Select **Uninstall** and follow the prompts to remove the application. If prompted, restart the server
-5. Ensure all Classic versions of the program are uninstalled. Use the [Adobe Acrobat Cleaner Tool](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) if necessary for complete removal.
+2. Vaya a **Configuración** y abra **Aplicaciones**.
+3. Busque **Adobe Acrobat** en la lista de programas instalados
+4. Seleccione **Desinstalar** y siga las indicaciones para quitar la aplicación. Si se le solicita, reinicie el servidor
+5. Asegúrese de que todas las versiones clásicas del programa estén desinstaladas. Use la [Herramienta de limpieza de Adobe Acrobat](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) si es necesario para la eliminación completa.
 
-###### Step 6: Download and Install Adobe Acrobat Pro
+###### Paso 6: Descargar e instalar Adobe Acrobat Pro
 
-After uninstalling the previous version, you need to download and install a compatible version of Adobe Acrobat Pro:
+Después de desinstalar la versión anterior, debe descargar e instalar una versión compatible de Adobe Acrobat Pro:
 
-1. Go to the [Adobe Acrobat DC Downloads page](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
-2. Navigate to the **Acrobat Pro installer** section.
-3. For use with AEM Forms PDF Generator, download the &quot;For Windows (32-Bit)&quot; installer, as this is the version supported with AEM Forms PDF Generator.
-4. Follow the installation instructions on the page:
-   * Extract the downloaded zip file to a folder on your computer
-   * Navigate to the Setup.exe file (do not run the Setup.exe file from within the zip file)
-   * Double-click Setup.exe to start the installation
-   * Follow the on-screen instructions to complete the installation
-5. After installation, open Adobe Acrobat Pro and complete the initial setup by dismissing any welcome dialogs.
-6. Verify the installation by creating a simple PDF.
+1. Vaya a la [página de descargas de Adobe Acrobat DC](https://helpx.adobe.com/in/acrobat/kb/acrobat-dc-downloads.html).
+2. Vaya a la sección **Programa de instalación de Acrobat Pro**.
+3. Para su uso con AEM Forms PDF Generator, descargue el programa de instalación &quot;Para Windows (32 bits)&quot;, ya que esta es la versión compatible con AEM Forms PDF Generator.
+4. Siga las instrucciones de instalación de la página:
+   * Extraiga el archivo zip descargado en una carpeta de su ordenador
+   * Vaya al archivo Setup.exe (no ejecute el archivo Setup.exe desde el archivo zip)
+   * Haga doble clic en Setup.exe para iniciar la instalación
+   * Siga las instrucciones que aparecen en pantalla para completar la instalación
+5. Después de la instalación, abra Adobe Acrobat Pro y complete la configuración inicial descartando los cuadros de diálogo de bienvenida.
+6. Compruebe la instalación creando un PDF sencillo.
 
-###### Step 7: Download the FRL Package
+###### Paso 7: Descargar el paquete FRL
 
-1. Log in to the [Adobe Admin Console](https://adminconsole.adobe.com/) using the *user account* you provided download permissions to in Step 3.
-1. Navigate to the **Packages** tab.
-1. Locate the FRL package that you created in Step 2 (named &quot;Acrobat FRL AEM Forms&quot; or your custom package name).
-1. Click **Download** to download the package to the server.
+1. Inicie sesión en [Adobe Admin Console](https://adminconsole.adobe.com/) con la *cuenta de usuario* para la que proporcionó permisos de descarga en el paso 3.
+1. Vaya a la ficha **Paquetes**.
+1. Busque el paquete FRL que creó en el paso 2 (denominado &quot;Acrobat FRL AEM Forms&quot; o el nombre de su paquete personalizado).
+1. Haga clic en **Descargar** para descargar el paquete en el servidor.
 
-###### Step 8: Deploy the Package
+###### Paso 8: Implementar el paquete
 
-1. **Extract the Package:** Extract the contents of the downloaded ZIP file to a directory on the server (for example, `C:\AcrobatFRL`). Asegúrese de que el directorio de extracción sea fácilmente accesible.
+1. **Extraer el paquete:** Extraiga el contenido del archivo ZIP descargado en un directorio del servidor (por ejemplo, `C:\AcrobatFRL`). Asegúrese de que el directorio de extracción sea fácilmente accesible.
 
 2. **Abrir símbolo del sistema como administrador (Windows):** Haga clic con el botón secundario en el botón Inicio y seleccione &quot;Símbolo del sistema (Admin)&quot; o &quot;Windows PowerShell (Admin)&quot;
 
@@ -886,8 +886,6 @@ Después de completar todos los procesos, realice una prueba de acción rápida 
 4. Confirmar que el estado de la licencia se muestra como activado
 
 >[!ENDTABS]
-
-
 
 ### Deshabilitar el modo protegido al inicio en Acrobat
 
@@ -1543,7 +1541,6 @@ Al convertir Microsoft Excel 2019 a PDF en Microsoft Windows Server 2019, debe a
 Para resolver el problema, [cree una clave de registro específica de la característica en Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
-
 
 ## Pasos siguientes {#next-steps}
 
