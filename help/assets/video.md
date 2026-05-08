@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
-source-wordcount: '10813'
+source-wordcount: '10758'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
       * [Cargue sus vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/assets-formats.md#supported-multimedia-formats).
 
-   * Supervise el progreso de la codificación de vídeo [1&rbrace; desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
+   * Supervise el progreso de la codificación de vídeo [1} desde la vista de recursos o de flujo de trabajo.](#monitoring-video-encoding-and-youtube-publishing-progress)
 
 1. **Administre sus vídeos de Dynamic Media** mediante cualquiera de las siguientes acciones:
 
@@ -150,7 +150,7 @@ Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admiten lo
 * Organice, examine y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
 * Ofrezca conjuntos de vídeos adaptables a la web y a equipos de escritorio y dispositivos móviles, incluidos iPhone, iPad, Android™, BlackBerry® y Windows Phone.
 
-La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
+La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -166,7 +166,7 @@ Puede encontrar dispositivos Windows compatibles con este formato de vídeo en: 
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Solo visualizadores para recursos de Experience Manager](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) y [Solo visualizadores para recursos de Experience Manager](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Práctica recomendada: Uso del visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -184,7 +184,7 @@ Al combinar en un solo reproductor lo siguiente:
 
 Amplía el alcance del contenido multimedia enriquecido tanto para usuarios de equipos de escritorio como de dispositivos móviles, y garantiza una experiencia de vídeo optimizada.
 
-Ver también [Acerca de los visores de HTML5](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Ver también [Acerca de los visores de HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -233,59 +233,59 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   <tr>
    <td>Escritorio</td>
    <td>Chrome</td>
-   <td>DASH* or HLS adaptive bitrate streaming.</td>
+   <td>Flujo de velocidad de bits adaptable DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
    <td>Safari (Mac)</td>
-   <td>HLS adaptive bitrate streaming.</td>
+   <td>Flujo de velocidad de bits adaptable de HLS.</td>
   </tr>
   <tr>
    <td>Dispositivo móvil</td>
-   <td>Chrome (Android™ 6 or earlier)</td>
-   <td>Progressive download.</td>
+   <td>Chrome (Android™ 6 o anterior)</td>
+   <td>Descarga progresiva.</td>
   </tr>
   <tr>
    <td>Dispositivo móvil</td>
-   <td>Chrome (Android™ 7 or later)</td>
-   <td>DASH* or HLS adaptive bitrate streaming.</td>
+   <td>Chrome (Android™ 7 o posterior)</td>
+   <td>Flujo de velocidad de bits adaptable DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Dispositivo móvil</td>
-   <td>Android™ (default browser)</td>
-   <td>Progressive download.</td>
+   <td>Android™ (explorador predeterminado)</td>
+   <td>Descarga progresiva.</td>
   </tr>
   <tr>
    <td>Dispositivo móvil</td>
    <td>Safari (iOS)</td>
-   <td>HLS adaptive bitrate streaming.</td>
+   <td>Flujo de velocidad de bits adaptable de HLS.</td>
   </tr>
   <tr>
    <td>Dispositivo móvil</td>
    <td>Chrome (iOS)</td>
-   <td>HLS adaptive bitrate streaming.</td>
+   <td>Flujo de velocidad de bits adaptable de HLS.</td>
   </tr>
   <tr>
    <td>Dispositivo móvil</td>
    <td>BlackBerry®</td>
-   <td>DASH* or HLS adaptive bitrate streaming./td&gt;
+   <td>Flujo de velocidad de bits adaptable DASH* o HLS./td&gt;
   </tr>
  </tbody>
 </table>
 
-## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
+## Arquitectura de la solución de vídeo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
-The following graphic shows the overall authoring workflow of videos that are uploaded and encoded through the DMGateway (in Dynamic Media Hybrid mode) and made available for public consumption.
+El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican a través de DMGateway (en modo híbrido de Dynamic Media) y que se ponen a disposición del público.
 
-![Architecture of Dynamic Media video solution.](assets/chlimage_1-427.png)
+![Arquitectura de la solución de vídeo Dynamic Media.](assets/chlimage_1-427.png)
 
-## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
+## Arquitectura de publicación híbrida para vídeos {#hybrid-publishing-architecture-for-videos}
 
-![Hybrid publishing architecture for videos.](assets/chlimage_1-428.png)
+![Arquitectura de publicación híbrida para vídeos.](assets/chlimage_1-428.png)
 
-## Best practices for encoding videos {#best-practices-for-encoding-videos}
+## Prácticas recomendadas para codificar vídeos {#best-practices-for-encoding-videos}
 
-The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
+El flujo de trabajo **Dynamic Media Encode Video** codifica el vídeo si ha habilitado Dynamic Media y ha configurado los servicios de nube de vídeo. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. Si ha habilitado Dynamic Media y ha configurado los servicios de nube de vídeo, el flujo de trabajo **[!UICONTROL Codificación de vídeo de Dynamic Media]** surte efecto automáticamente al cargar un vídeo. (Si no usa Dynamic Media, el flujo de trabajo **[!UICONTROL DAM Update Asset]** surte efecto).
 
 <!--
 DEAD The following are best-practice tips for encoding source video files.
@@ -295,34 +295,34 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
 -->
 
-### Source video files {#source-video-files}
+### Archivos de vídeo de Source {#source-video-files}
 
-When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
+Cuando codifique un archivo de vídeo, utilice un archivo de vídeo de origen de la máxima calidad posible. Evite utilizar archivos de vídeo codificados anteriormente porque estos archivos ya están comprimidos y una codificación posterior crea un vídeo de calidad inferior.
 
-* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 × 25.
-* You can upload primary source video files that are up to 15 GB each.
+* Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima superior a 25 × 25.
+* Puede cargar archivos de vídeo de origen principales de hasta 15 GB cada uno.
 
-The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files must have before you encode them:
+En la tabla siguiente se describe el tamaño recomendado, la relación de aspecto y la velocidad de bits mínima que deben tener los archivos de vídeo de origen antes de codificarlos:
 
-| Tamaño | Proporción de aspecto | Minimum bit rate |
+| Tamaño | Proporción de aspecto | Velocidad de bits mínima |
 |--- |--- |--- |
-| 1024 × 768 | 4:3 | 4500 kbps for most videos. |
-| 1280 × 720 | 16:9 | 3000 - 6000 kbps, depending on the amount of motion in the video. |
-| 1920 × 1080 | 16:9 | 6000 - 8000 kbps, depending on the amount of motion in the video. |
+| 1024 × 768 | 4:3 | 4500 Kbps para la mayoría de los vídeos. |
+| 1280 × 720 | 16:9 | 3000 - 6000 kbps, dependiendo de la cantidad de movimiento en el vídeo. |
+| 1920 × 1080 | 16:9 | 6.000 a 8.000 kbps, en función de la cantidad de movimiento del vídeo. |
 
-### Obtain a file&#39;s metadata {#obtaining-a-file-s-metadata}
+### Obtener los metadatos de un archivo {#obtaining-a-file-s-metadata}
 
-You can obtain a file&#39;s metadata by viewing its metadata using a video editing tool, or using an application designed for obtaining metadata. Following are instructions for using MediaInfo, a third-party application, to obtain a video file&#39;s metadata:
+Puede obtener los metadatos de un archivo visualizando sus metadatos mediante una herramienta de edición de vídeo o utilizando una aplicación diseñada para obtener metadatos. A continuación se indican instrucciones para utilizar MediaInfo, una aplicación de terceros, para obtener los metadatos de un archivo de vídeo:
 
-1. Go to [MediaInfo Download](https://mediaarea.net/en/MediaInfo/Download).
-1. Select and download the installer for the GUI version, and follow the installation instructions.
-1. After installation, either right-click the video file (Windows only) and select MediaInfo, or open MediaInfo and drag your video file into the application. You see all metadata associated with your video file, including its width, height, and fps.
+1. Ir a [Descarga de MediaInfo](https://mediaarea.net/en/MediaInfo/Download).
+1. Seleccione y descargue el instalador para la versión GUI y siga las instrucciones de instalación.
+1. Después de la instalación, haga clic con el botón derecho en el archivo de vídeo (solo Windows) y seleccione MediaInfo o abra MediaInfo y arrastre el archivo de vídeo a la aplicación. Verá todos los metadatos asociados con el archivo de vídeo, incluidos el ancho, el alto y los fps.
 
 ### Proporción de aspecto {#aspect-ratio}
 
-When selecting or creating a video encoding preset for your primary video file, ensure the preset&#39;s aspect ratio matches that of the primary video file. The aspect ratio is the ratio of the width to the height of the video.
+Al seleccionar o crear un ajuste preestablecido de codificación de vídeo para el archivo de vídeo principal, asegúrese de que la proporción de aspecto del ajuste preestablecido coincida con la del archivo de vídeo principal. La relación de aspecto es la relación entre la anchura y la altura del vídeo.
 
-To determine the aspect ratio of a video file, obtain the file&#39;s metadata and note the file&#39;s width and height. See Obtaining a file&#39;s metadata above. Then use this formula to determine the aspect ratio:
+Para determinar la proporción de aspecto de un archivo de vídeo, obtenga los metadatos del archivo y anote la anchura y altura del archivo. Consulte Obtención de metadatos de un archivo, más arriba. A continuación, utilice esta fórmula para determinar la relación de aspecto:
 
 anchura/altura = proporción de aspecto
 
@@ -476,7 +476,7 @@ Especifique el intervalo de fechas inicial y final para el que desea obtener dat
 
 Si utiliza un visualizador de vídeo incorporado que proporciona Dynamic Media, o si ha creado un ajuste preestablecido de visualizador personalizado basado en un visualizador de vídeo incorporado, no se requieren pasos adicionales para ver los informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API de SDK de HTML5 Viewer, siga estos pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
 
-Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources) y la [API de SDK de visores de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
+Use la [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) y la [API de SDK de visores de HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
 
 **Para ver informes de vídeo basados en un visor de vídeo que creó con el SDK de Dynamic Media HTML5 Viewer:**
 
@@ -806,7 +806,7 @@ Consulte también [Accesibilidad en Dynamic Media](/help/assets/accessibility-dm
 
 Dynamic Media convierte los archivos de rótulo al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos sean más fáciles de descubrir y dar a los clientes detalles adicionales sobre el contenido del vídeo.
 
-Consulte [Proporcionar contenido estático (que no es de imagen)](https://experienceleague.adobe.com/es/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
+Consulte [Proporcionar contenido estático (que no es de imagen)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
 
 **Para agregar subtítulos a un vídeo:**
 
@@ -819,20 +819,20 @@ Consulte [Proporcionar contenido estático (que no es de imagen)](https://experi
    Hay muchos sitios web que ofrecen herramientas y servicios gratuitos y de primera calidad que puede utilizar para crear archivos de subtítulos/subtítulos WebVTT fuera de Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--
-[Creador de subtítulos WebVTT](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-Para obtener los mejores resultados, utilice la herramienta en Internet Explorer 9 o posterior, Google Chrome o Safari.
+   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-En la herramienta, en el campo **[!UICONTROL Introducir URL del archivo de vídeo]**, pegue la URL copiada del archivo de vídeo y, a continuación, haga clic en **[!UICONTROL Cargar]**. Consulte [Obtener una URL para un recurso](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) para obtener la URL del propio archivo de vídeo, que puede pegar en el campo **[!UICONTROL Introducir URL del archivo de vídeo]**. Internet Explorer, Chrome o Safari pueden reproducir el vídeo de forma nativa.
--->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
+   -->
 
-Siga las instrucciones en pantalla de un sitio para crear y guardar el archivo WebVTT. Cuando haya terminado, copie el contenido del archivo de rótulo y péguelo en un editor de texto sin formato y guárdelo con la extensión de nombre de archivo `.vtt`.
+   Siga las instrucciones en pantalla de un sitio para crear y guardar el archivo WebVTT. Cuando haya terminado, copie el contenido del archivo de rótulo y péguelo en un editor de texto sin formato y guárdelo con la extensión de nombre de archivo `.vtt`.
 
->[!NOTE]
->
->Para ofrecer compatibilidad global con subtítulos de vídeo en varios idiomas, el estándar WebVTT requiere que cree `.vtt` archivos y llamadas independientes para cada idioma que desee admitir.
+   >[!NOTE]
+   >
+   >Para ofrecer compatibilidad global con subtítulos de vídeo en varios idiomas, el estándar WebVTT requiere que cree `.vtt` archivos y llamadas independientes para cada idioma que desee admitir.
 
-Por lo general, desea asignar el mismo nombre al archivo de rótulo `.vtt` que al archivo de vídeo y anexarlo con la configuración regional de idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
+   Por lo general, desea asignar el mismo nombre al archivo de rótulo `.vtt` que al archivo de vídeo y anexarlo con la configuración regional de idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
 
 1. En Experience Manager, cargue el archivo de subtítulos WebVTT en DAM.
 1. Vaya al recurso de vídeo *publicado* que desee asociar con el archivo de rótulo que ha cargado.
@@ -1451,7 +1451,7 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 
 1. Select **[!UICONTROL Save]**.
 
-1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
