@@ -9,7 +9,7 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 16c687cd949ba8bf0b476415f33ba5317ebc7e24
+source-git-commit: eaeb4be3cc28ed958b33276f89ebe2302d4330f3
 workflow-type: tm+mt
 source-wordcount: '3851'
 ht-degree: 47%
@@ -769,9 +769,7 @@ Para conocer los requisitos adicionales, consulte:
 
 #### Compatibilidad con dispositivos móviles {#mobile-device-support}
 
-
 La aplicación de AEM Forms está disponible en las siguientes plataformas:
-
 
 | **Plataforma** | **Dispositivos compatibles** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
