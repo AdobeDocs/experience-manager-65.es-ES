@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 91%
@@ -95,7 +95,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. Extraiga el **archivo del programa de instalación del Service Pack de AEM Forms en JEE** en el disco duro:
 
    * **Windows**
-Vaya al directorio apropiado del medio de instalación o a la carpeta del disco duro donde copió     Seleccione el instalador y haga doble clic en el archivo `aemforms65_cfp_install.exe`.
+Vaya al directorio apropiado del medio de instalación o a la carpeta del disco duro donde copió el instalador y haga doble clic en el archivo `aemforms65_cfp_install.exe`.
 
       * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
@@ -252,7 +252,7 @@ El paquete se instala de forma automática.
 Existen dos métodos diferentes que puede utilizar para instalar automáticamente el Service Pack de [!DNL Experience Manager].<!--  UPDATE FOR EACH NEW RELEASE -->
 
 * Coloque el paquete en la carpeta `../crx-quickstart/install` cuando el servidor esté disponible en línea. El paquete se instala de forma automática.
-* Use la API [HTTP del Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es). Utilice `cmd=install&recursive=true` para que se instalen los paquetes anidados.
+* Use la [API HTTP del administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es). Utilice `cmd=install&recursive=true` para que se instalen los paquetes anidados.
 
   >[!NOTE]
   >
