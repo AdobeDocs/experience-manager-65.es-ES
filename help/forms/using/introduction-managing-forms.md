@@ -9,16 +9,17 @@ exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: c6dd35fbedba6ace60975a7c31e987edd69a8c69
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 100%
+source-wordcount: '1521'
+ht-degree: 98%
 
 ---
 
 # Introducción a la administración de formularios {#introduction-to-managing-forms}
 
-AEM [!DNL Forms] proporciona una interfaz de usuario simplificada pero potente para crear y administrar formularios, documentos, temas, cartas, fragmentos de documento, diccionarios de datos y recursos relacionados. Ayuda a administrar el ciclo de vida completo de los formularios, documentos y recursos relacionados, desde el escritorio de un desarrollador hasta su oferta en el servidor de un portal para usuarios finales. Puede usar la interfaz de usuario de AEM [!DNL Forms] para lo siguiente:
+AEM [!DNL Forms] proporciona una interfaz de usuario simplificada pero potente para crear y administrar formularios, documentos, temas, cartas, fragmentos de documento, diccionarios de datos y recursos relacionados. Ayuda a administrar el ciclo de vida completo de los formularios, documentos y recursos relacionados, desde el escritorio de un desarrollador hasta la oferta
+en un servidor de portal para usuarios finales. Puede usar la interfaz de usuario de AEM [!DNL Forms] para lo siguiente:
 
 * Acceder a los componentes de AEM [!DNL Forms]
 * Acceder a las configuraciones de AEM [!DNL Forms]
@@ -45,7 +46,7 @@ Formularios y documentos proporciona opciones para crear una comunicación inter
 
 El botón Crear es el punto de inicio del proceso de creación o carga de un recurso de AEM [!DNL Forms]. Proporciona opciones para crear:
 
-* Una **comunicación interactiva**: una comunicación interactiva es una correspondencia, un extracto o un documento digital personalizado, interactivo y compatible con el dispositivo, basado en HTML. Las comunicaciones interactivas son interactivas en su naturaleza y cambian su diseño automáticamente según el dispositivo y la configuración del usuario. Para obtener información detallada, consulte [Información general sobre comunicaciones interactivas](/help/forms/using/interactive-communications-overview.md)
+* Una **comunicación interactiva**: una comunicación interactiva es una correspondencia, un extracto o un documento digital personalizado, interactivo y compatible con el dispositivo, basado en HTML. Las comunicaciones interactivas son adaptables por naturaleza y cambian su diseño automáticamente según el dispositivo y la configuración del usuario. Para obtener información detallada, consulte [Información general sobre comunicaciones interactivas](/help/forms/using/interactive-communications-overview.md)
 
 * Un **formulario adaptable:** un formulario adaptable es un formulario atractivo e interactivo. Puede crear un formulario adaptable para adaptarse de forma dinámica a las entradas del usuario añadiendo o eliminando secciones de formulario basadas en la respuesta del usuario, el dispositivo o el entorno de trabajo. El artículo [Introducción a la creación de formularios adaptables](../../forms/using/introduction-forms-authoring.md) proporciona información detallada sobre los formularios adaptables.
 
@@ -94,9 +95,8 @@ Para obtener información sobre cómo crear y usar diccionarios de datos, consul
 El panel Herramientas AEM contiene herramientas para varios componentes. Para desplazarse a las herramientas específicas de AEM Forms, haga clic en el logotipo de Experience Manager ![adobe_experience_manager](assets/adobeexperiencemanager.png) > Herramientas ![martillo](assets/hammer.png) > **[!UICONTROL Forms]**. Se muestran herramientas para realizar las siguientes funciones:
 
 * **Configurar carpeta inspeccionada:** un administrador puede configurar una carpeta de red, conocida como carpeta inspeccionada, de forma que cuando un usuario coloque un archivo (por ejemplo, un archivo PDF) en dicha carpeta, se inicie una operación preconfigurada y se manipule el archivo. Para obtener información detallada, consulte [Crear o configurar una carpeta vigilada](/help/forms/using/creating-configure-watched-folder.md).
-* **Configurar el servicio sin conexión de la aplicación Forms:** el servicio sin conexión de la aplicación AEM [!DNL Forms] almacena en caché las rutas o URL de los recursos utilizados en un formulario. El almacenamiento en caché de rutas o direcciones URL de los recursos utilizados en un formulario mejora el rendimiento del lado del servidor. Para configurar el componente sin conexión del lado del servidor de la aplicación de AEM Forms, consulte [Trabajar en modo sin conexión](/help/forms/using/work-offline-mode.md).
 
-  ![Herramientas de AEM Forms](assets/aem_forms_tools_new.png)
+  <!-- **Configure Forms App Offline Service:** The AEM [!DNL Forms] app offline service caches the paths or URLs of the resources used in a form. Caching paths or URLs of the resources used in a form improves server-side performance. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).![AEM Forms tools](assets/aem_forms_tools_new.png) -->
 
 * **Configurar PDF Generator:** un administrador puede configurar las opciones de AEM [!DNL Forms] PDF Generator, agregar cuentas de usuario e importar o exportar la configuración a PDF Generator.
 * **Publicar recursos de Administración de correspondencia:** AEM [!DNL Forms] permite publicar todas las cartas, fragmentos de documento, diccionarios de datos y dependencias relacionadas de una instancia de autor a la vez. Los recursos publicados incluyen todos los recursos de Administración de correspondencia y las dependencias relacionadas. Para obtener información detallada, consulte [Publicación y cancelación de la publicación de formularios y documentos](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
@@ -113,13 +113,13 @@ El panel Herramientas AEM contiene herramientas para varios componentes. Para d
 * **Cambiar vista:** puede hacer clic en los iconos del conmutador de vista ![Ver vista](assets/viewlist.png) o ![Ver tarjeta](assets/viewcard.png) para cambiar rápidamente entre la vista de lista y la vista de tarjeta. Para obtener más información sobre los componentes más comunes de la interfaz de usuario, consulte [Creación](/help/sites-authoring/author.md).
 * **Buscar:** La opción Búsqueda ![Búsqueda](assets/search.png) permite buscar y saltar rápidamente al contenido y las herramientas que necesita. Escriba el nombre del contenido o la capacidad del producto y selecciónelo entre las sugerencias; por ejemplo, escriba &quot;Documentos&quot; para buscar rápidamente y desplazarse hasta **[!UICONTROL Formularios y documentos]** o la consola Fragmentos de documento. Para obtener más información sobre la búsqueda, consulte el artículo [Búsqueda](/help/sites-authoring/search.md) de AEM 6.2.
 
-* **Barra de herramientas Acciones**: al seleccionar un recurso, aparece la barra de herramientas Acciones encima de la lista de recursos. Contiene todas las herramientas de administración del recurso seleccionado. Puede situar el ratón sobre un icono de herramienta para ver la información sobre herramientas que describe su funcionalidad
+* **Barra de herramientas Acciones**: al seleccionar un recurso, aparece la barra de herramientas Acciones encima de la lista de recursos. Contiene todas las herramientas de administración del recurso seleccionado. Puede situar el puntero por encima de un icono de herramienta para ver la información sobre herramientas que describe su funcionalidad
 
 >[!NOTE]
 >
 >Cuando un usuario realiza una búsqueda en cualquier consola de Formularios y documentos, el carril contiene únicamente **Filtros y opciones**. Puede usar Filtros y opciones para realizar búsquedas avanzadas.
 
-* **Barra de herramientas Acciones**: al seleccionar un recurso, aparece la barra de herramientas Acciones encima de la lista de recursos. Contiene todas las herramientas de administración del recurso seleccionado. Puede situar el ratón sobre un icono de herramienta para ver la información sobre herramientas que describe su funcionalidad
+* **Barra de herramientas Acciones**: al seleccionar un recurso, aparece la barra de herramientas Acciones encima de la lista de recursos. Contiene todas las herramientas de administración del recurso seleccionado. Puede situar el puntero por encima de un icono de herramienta para ver la información sobre herramientas que describe su funcionalidad
 
   ![Barra de herramientas Acciones en un formulario adaptable](assets/action_toolbar_new.png)
 

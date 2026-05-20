@@ -9,14 +9,18 @@ exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 97%
+source-wordcount: '910'
+ht-degree: 96%
 
 ---
 
 # Personalizar la promoción de la marca {#branding-customization}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Puede personalizar el icono y el nombre de la aplicación, las imágenes de inicio y la página de inicio de sesión para proporcionar a la aplicación de AEM Forms un aspecto específico de la organización. Por ejemplo, puede cambiar las imágenes para usar logotipos de su organización. La aplicación de AEM Forms admite las siguientes personalizaciones:
 
@@ -136,7 +140,7 @@ Asegúrese de que tiene las siguientes imágenes:
   <tr>
    <th><p>Descripción</p> </th>
    <th><p>Tamaño</p> </th>
-   <th><p>Nombre de archivo</p> </th>
+   <th><p>Nombre del archivo</p> </th>
   </tr>
   <tr>
    <td><p>Logotipo</p> </td>
@@ -191,7 +195,7 @@ Asegúrese de que tiene la siguiente imagen:
   <tr>
    <th><p>Descripción</p> </th>
    <th><p>Tamaño</p> </th>
-   <th><p>Nombre de archivo</p> </th>
+   <th><p>Nombre del archivo</p> </th>
   </tr>
   <tr>
    <td><p>Logotipo</p> </td>

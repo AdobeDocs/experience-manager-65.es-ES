@@ -8,14 +8,18 @@ exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 51%
+source-wordcount: '259'
+ht-degree: 49%
 
 ---
 
 # Distribuir la aplicación de AEM Forms {#distribute-aem-forms-app}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 La administración de dispositivos móviles (MDM) permite implementar a gran escala aplicaciones en dispositivos móviles.
 

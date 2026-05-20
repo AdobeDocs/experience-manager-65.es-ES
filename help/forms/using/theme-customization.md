@@ -1,6 +1,6 @@
 ---
 title: Personalizar temáticas
-description: Aprenda a personalizar la temática de la aplicación de AEM Forms. Puede personalizar el código del HTML y el archivo CSS para proporcionar una apariencia específica de la organización.
+description: Aprenda a personalizar la temática de la aplicación de AEM Forms. Puede personalizar el código HTML y el archivo CSS para proporcionar una apariencia y un funcionamiento específicos de la organización.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,18 @@ exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 89%
+source-wordcount: '254'
+ht-degree: 84%
 
 ---
 
 # Personalizar temáticas {#theme-customization}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Puede personalizar el código HTML y el archivo CSS para ofrecer a la aplicación AEM Forms una apariencia específica de la organización. Por ejemplo, puede cambiar el color de fondo y la altura de las tareas o puntos de inicio. El ejemplo siguiente indica las instrucciones para cambiar:
 
@@ -30,7 +34,7 @@ Puede personalizar el código HTML y el archivo CSS para ofrecer a la aplicació
 
    * Si utiliza un dispositivo iOS, abra `Capture.xcodeproj` en Xcode.
    * Si utiliza un dispositivo Android, abra el proyecto de Android en Eclipse.
-   * Para Windows, abra `MWSWindows.sln` en Visual Studio.
+   * Si utiliza un dispositivo Windows, abra `MWSWindows.sln` en Visual Studio.
 
 1. Vaya a la carpeta de plantillas.
 

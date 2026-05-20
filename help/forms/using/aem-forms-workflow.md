@@ -8,9 +8,9 @@ exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '3667'
+source-wordcount: '3742'
 ht-degree: 95%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 Las empresas recopilan datos de cientos y miles de formularios, varios sistemas back-end y fuentes de datos en línea o sin conexión. También tienen un conjunto dinámico de usuarios para tomar decisiones sobre los datos, lo que implica procesos de revisión y aprobación iterativos.
 
-Junto con los flujos de trabajo de revisión y aprobación para audiencias internas y externas, las organizaciones y empresas grandes tienen tareas repetitivas. Por ejemplo, convertir un documento PDF a otro formato. Cuando se realizan manualmente, estas tareas consumen mucho tiempo y recursos. Las empresas también tienen requisitos legales para firmar digitalmente un documento y archivar datos de formulario para su uso posterior en formatos predefinidos.
+Junto con los flujos de trabajo de revisión y aprobación para públicos internos y externos, las organizaciones y empresas grandes tienen tareas repetitivas. Por ejemplo, convertir un documento PDF a otro formato. Cuando se realizan manualmente, estas tareas consumen mucho tiempo y recursos. Las empresas también tienen requisitos legales para firmar digitalmente un documento y archivar datos de formulario para su uso posterior en formatos predefinidos.
 
 ## Introducción al flujo de trabajo centrado en Forms en OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
@@ -29,7 +29,7 @@ Puede utilizar flujos de trabajo de AEM para generar rápidamente flujos de trab
 
 Con el flujo de trabajo centrado en formularios en OSGi, puede generar e implementar rápidamente flujos de trabajo para diversas tareas en la pila OSGi, sin tener que instalar la funcionalidad de administración de procesos completa en la pila JEE. El desarrollo y la administración de flujos de trabajo utilizan las funciones conocidas de los flujo de trabajo de AEM y la bandeja de entrada AEM. Los flujos de trabajo forman la base de la automatización de los procesos empresariales en el mundo real que abarcan varios sistemas de software, redes, departamentos e incluso organizaciones.
 
-Una vez configurados, estos flujos de trabajo se pueden habilitar manualmente para completar un proceso definido o ejecutarse programáticamente cuando los usuarios envíen un formulario o cartas de[&#x200B; Administración de correspondencia](/help/forms/using/cm-overview.md). Con estas funciones mejoradas del flujo de trabajo de AEM, AEM Forms ofrece dos funciones distintas, aunque similares. Como parte de su estrategia de implementación, debe decidir cuál funciona para usted. Consulte una [comparación](capabilities-osgi-jee-workflows.md) de los flujos de trabajo de AEM centrados en Forms en OSGi y Process Management en JEE. Además, para la topología de implementación, consulte, [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Una vez configurados, estos flujos de trabajo se pueden habilitar manualmente para completar un proceso definido o ejecutarse programáticamente cuando los usuarios envíen un formulario o cartas de[ Administración de correspondencia](/help/forms/using/cm-overview.md). Con estas funciones mejoradas del flujo de trabajo de AEM, AEM Forms ofrece dos funciones distintas, aunque similares. Como parte de su estrategia de implementación, debe decidir cuál funciona para usted. Consulte una [comparación](capabilities-osgi-jee-workflows.md) de los flujos de trabajo de AEM centrados en Forms en OSGi y Process Management en JEE. Además, para la topología de implementación, consulte, [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 El flujo de trabajo centrado en Forms en OSGi amplía [la bandeja de entrada de AEM](/help/sites-authoring/inbox.md) y proporciona componentes adicionales (pasos) para el editor de flujos de trabajo de AEM para agregar compatibilidad con flujos de trabajo centrados en AEM Forms. La bandeja de entrada extendida de AEM tiene funcionalidades similares a las de [AEM Forms Workspace](introduction-html-workspace.md). Junto con la administración de flujos de trabajo centrados en las personas (aprobación, revisión, etc.), puede utilizar flujos de trabajo de AEM para automatizar operaciones de trabajo relacionadas con [servicios de documentos](/help/sites-developing/workflows-step-ref.md) (por ejemplo, generar PDF) y documentos de firma electrónica (Adobe Sign).
 
@@ -96,7 +96,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
    Puede importar el paquete de ejemplo, que está disponible para descargar al principio de la sección, para el conjunto completo de valores de todos los campos del paso Asignar tarea configurado, para el ejemplo de solicitud de hipoteca.
 
-1. Arrastre y suelte el componente OR Split desde el explorador de pasos al modelo del flujo de trabajo. OR Splits crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
+1. Arrastre y suelte el componente División O desde el explorador de pasos al modelo del flujo de trabajo. División O crea una división en el flujo de trabajo, tras la cual solo una rama está activa. Este paso le permite introducir rutas de procesamiento condicionales en su flujo de trabajo. Los pasos del flujo de trabajo se agregan a cada rama según sea necesario.
 
    Puede definir la expresión de enrutamiento para una rama mediante una definición de regla, un script ECMA o un script externo.
 
@@ -106,13 +106,13 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
    Cuando el usuario pulse **Aprobar** en la bandeja de entrada AEM, se activará la rama 1.
 
-   ![Ejemplo de OR Split](assets/orsplit_branch1_active_new.png)
+   ![Ejemplo de División O](assets/orsplit_branch1_active_new.png)
 
    **Expresión de enrutamiento para la rama 2**
 
    Cuando el usuario pulse **Rechazar** en la bandeja de entrada AEM, se activará la rama 2.
 
-   ![Ejemplo de OR Split](assets/orsplit_branch2_active_new.png)
+   ![Ejemplo de División O](assets/orsplit_branch2_active_new.png)
 
    Para obtener información sobre la creación de expresiones de enrutamiento mediante variables, consulte [Variables en flujos de trabajo de AEM Forms](../../forms/using/variable-in-aem-workflows.md).
 
@@ -126,7 +126,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
    ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
-## Crear una solicitud de flujo de trabajo centrada en formularios  {#create-a-forms-centric-workflow-application}
+## Crear una solicitud de flujo de trabajo centrada en formularios {#create-a-forms-centric-workflow-application}
 
 La solicitud es el formulario adaptable asociado al flujo de trabajo. Cuando una solicitud se envía a través de la bandeja de entrada, inicia el flujo de trabajo asociado. Para que un flujo de trabajo de Forms esté disponible como solicitud en la bandeja de entrada de AEM y la aplicación de AEM Forms, haga lo siguiente para crear una solicitud del flujo de trabajo:
 
@@ -194,7 +194,7 @@ Puede iniciar o habilitar un flujo de trabajo centrado en Forms mediante:
 * [El envío de una aplicación desde la aplicación de AEM Forms](#afa)
 
 * [Enviar un formulario adaptable](#af)
-* [Usar una carpeta inspeccionada](#watched)
+* [El uso de la carpeta vigilada](#watched)
 
 * [El envío de una comunicación interactiva o una carta](#letter)
 
@@ -210,7 +210,7 @@ La aplicación de AEM Forms se sincroniza con un servidor de AEM Forms y le perm
 
 Puede configurar las acciones de envío de un formulario adaptable para iniciar un flujo de trabajo al enviar el formulario adaptable. Los formularios adaptables proporcionan la acción de envío **Invocar un flujo de trabajo de AEM** para iniciar un flujo de trabajo al enviar un formulario adaptable. Para obtener información detallada sobre la acción de envío, consulte [Configurar la acción de envío](../../forms/using/configuring-submit-actions.md). Para enviar un formulario adaptable a través de la aplicación de AEM Forms, habilite Sincronizar con la aplicación de AEM Forms en las propiedades del formulario adaptable.
 
-Puede configurar un formulario adaptable para sincronizar, enviar y habilitar un flujo de trabajo desde la aplicación de AEM Forms. Para obtener más información, consulte [trabajar con un formulario](/help/forms/using/working-with-form.md).
+<!-- You can configure an adaptive form to sync, submit, and trigger a workflow from AEM Forms app. For details, see [working with a form](/help/forms/using/working-with-form.md).-->
 
 ### Usar una carpeta vigilada {#watched}
 
@@ -230,7 +230,7 @@ Un administrador (un miembro del grupo de administradores de fd) puede configura
    <td>Especifique el nombre de la carpeta vigilada. Este campo solo admite caracteres alfanuméricos.</td>
   </tr>
   <tr>
-   <td><span class="uicontrol">Ruta </code></td>
+   <td><span class="uicontrol">Ruta</code></td>
    <td>Especifique la ubicación física de la carpeta vigilada. En un entorno agrupado, utilice una carpeta de red compartida a la que se pueda acceder desde el nodo de clúster de AEM.</td>
   </tr>
   <tr>
@@ -336,12 +336,12 @@ Para configurar un modelo de flujo de trabajo de AEM para un almacenamiento de d
 
 ### Directrices para los flujos de trabajo de AEM de un almacenamiento de datos externo {#guidelines-workflows-external-data-storage}
 
-Estas son las directrices a seguir a la hora de usar flujos de trabajo de [!DNL Adobe Experience Manager] y almacenar datos en almacenes de datos externos (por ejemplo, el servidor de almacenamiento de Microsoft Azure):
+Estas son las directrices a seguir a la hora de usar flujos de trabajo de [!DNL Adobe Experience Manager] y almacenar datos en almacenamientos de datos externos (por ejemplo, el servidor de almacenamiento de Microsoft Azure):
 
-* Utilice variables para almacenar los datos al definir los archivos de datos de entrada y salida y los archivos adjuntos en los pasos del modelo de flujo de trabajo. No seleccione las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]**. Las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** no se mostrarán automáticamente una vez que [&#x200B; [!DNL Adobe Experience Manager] haya configurado un modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model).
+* Utilice variables para almacenar los datos al definir los archivos de datos de entrada y salida y los archivos adjuntos en los pasos del modelo de flujo de trabajo. No seleccione las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]**. Las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** no se mostrarán automáticamente una vez que [ [!DNL Adobe Experience Manager] haya configurado un modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model).
 
-* Utilice variables para almacenar los archivos de datos y los archivos adjuntos cuando envíe un formulario adaptable a un flujo de trabajo de AEM. No seleccione la opción **[!UICONTROL Relativo a carga útil]** cuando envíe un formulario adaptable a un [!DNL Adobe Experience Manager]flujo de trabajo La opción **[!UICONTROL Relativo a carga útil]** no se mostrará automáticamente una vez que [&#x200B; [!DNL Adobe Experience Manager] haya configurado un modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model).
+* Utilice variables para almacenar los archivos de datos y los archivos adjuntos cuando envíe un formulario adaptable a un flujo de trabajo de AEM. No seleccione la opción **[!UICONTROL Relativo a carga útil]** cuando envíe un formulario adaptable a un [!DNL Adobe Experience Manager]flujo de trabajo La opción **[!UICONTROL Relativo a carga útil]** no se mostrará automáticamente una vez que [ [!DNL Adobe Experience Manager] haya configurado un modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model).
 
 * No utilice un paso de un flujo de trabajo de personalizado [!DNL Adobe Experience Manager]de un modelo de flujos de trabajo para almacenar datos en el [!UICONTROL repositorio CRX DE].
 
-* Cuando [configure un  [!DNL Adobe Experience Manager]  modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model), no cree columnas personalizadas para la [!DNL Adobe Experience Manager]bandeja de entrada[!UICONTROL , &#x200B;]ya que los valores de las columnas personalizadas no se recuperan si el elemento de trabajo [!DNL Adobe Experience Manager] de la [!UICONTROL bandeja de entrada &#x200B;]pertenece a un flujo de trabajo marcado para un almacenamiento externo.
+* Cuando [configure un  [!DNL Adobe Experience Manager]  modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model), no cree columnas personalizadas para la [!DNL Adobe Experience Manager]bandeja de entrada[!UICONTROL , ]ya que los valores de las columnas personalizadas no se recuperan si el elemento de trabajo [!DNL Adobe Experience Manager] de la [!UICONTROL bandeja de entrada ]pertenece a un flujo de trabajo marcado para un almacenamiento externo.

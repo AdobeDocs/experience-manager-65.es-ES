@@ -9,15 +9,19 @@ exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: dd8748cee7a4b3ba91795a51928bd8590c47ef27
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 45%
+source-wordcount: '249'
+ht-degree: 43%
 
 ---
 
 
 # Trabajar con puntos de inicio{#working-with-startpoints}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Un punto de inicio invoca un proceso creado en Workbench. Está asociado a un formulario que invoca el proceso cuando se envía el formulario.
 
@@ -25,7 +29,7 @@ Un punto de inicio invoca un proceso creado en Workbench. Está asociado a un fo
 >
 >Los puntos de inicio, el proceso de inicio y el formulario de los términos se utilizan de forma intercambiable al hacer referencia a este concepto.
 
-Para iniciar un proceso desde la aplicación Adobe Experience Manager AEM () Forms, debes tener un punto de inicio de tipo **Workspace** en tu proceso. Además, debe seleccionar la opción **[!UICONTROL Visible en Workspace móvil]** para el punto de inicio.
+Para iniciar un proceso desde la aplicación Forms de Adobe Experience Manager (AEM), debe tener un punto de inicio de tipo **Workspace** en su proceso. Además, debe seleccionar la opción **[!UICONTROL Visible en Workspace móvil]** para el punto de inicio.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 

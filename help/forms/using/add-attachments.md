@@ -9,14 +9,18 @@ exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 76%
+source-wordcount: '577'
+ht-degree: 74%
 
 ---
 
 # Agregar archivos adjuntos{#adding-attachments}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 ## Agregar archivos adjuntos en formularios sincronizados con el servidor de flujo de trabajo de AEM Forms (AEM Forms en JEE) {#adding-annotations}
 
@@ -86,6 +90,6 @@ La opción **Notas** permite agregar garabatos hechos a mano alzada y archivos a
 
 Los archivos adjuntos para formularios móviles sincronizados con servidores OSGi de AEM Forms funcionan de forma similar a los servidores JEE de AEM Forms.
 
-Los archivos adjuntos de nivel de formulario no son compatibles con los formularios adaptables cargados en la aplicación desde un servidor OSGi de AEM Forms. Para adjuntar imágenes o notas de texto, active los archivos adjuntos de nivel de campo en el formulario cuando lo cree. Arrastre y suelte el componente de archivo adjunto desde el explorador de componentes del campo.
+Los archivos adjuntos de nivel de formulario no son compatibles con los formularios adaptables cargados en la aplicación desde un servidor OSGi de AEM Forms. Para adjuntar imágenes o notas de texto, habilite los archivos adjuntos de nivel de campo en el formulario cuando lo cree. Arrastre y suelte el componente de archivo adjunto desde el explorador de componentes del campo.
 
 Si hay formularios adaptables, puede ver los archivos adjuntos en el documento de registro (DoR). Consulte, [Generar un documento de registro para formularios adaptables que no sean XFA](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
