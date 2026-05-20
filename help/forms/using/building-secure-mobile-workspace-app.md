@@ -8,14 +8,18 @@ exl-id: 12cc2027-ae94-40c3-a7d1-553469426114
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 87%
+source-wordcount: '404'
+ht-degree: 85%
 
 ---
 
 # Crear una aplicación segura de AEM Forms para iOS {#building-a-secure-aem-forms-app-for-ios}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Debe archivar el proyecto Xcode para la aplicación de AEM Forms para crear el programa de instalación (un archivo .ipa) y un archivo de lista de propiedades (un archivo .plist). El archivo de lista de propiedades contiene información de configuración de la aplicación interna alojada, como el nombre y la ubicación de alojamiento de la aplicación. Para obtener más información sobre el archivo de la lista de propiedades, consulte [Acerca de los archivos de la lista de propiedades de información](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html).
 

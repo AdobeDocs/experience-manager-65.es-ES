@@ -8,14 +8,18 @@ exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
+source-wordcount: '697'
+ht-degree: 94%
 
 ---
 
 # Resolución de problemas de la aplicación de AEM Forms {#troubleshoot-aem-forms-app}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Este artículo describe los mensajes de error que se pueden mostrar al generar la aplicación de AEM Forms y los pasos para resolverlos.
 
@@ -42,7 +46,7 @@ La aplicación AEM Forms para iOS configurada para sincronizarse con AEM Forms
 
 ## Los borradores de formulario HTML5 enviados por los usuarios de Workspace no son visibles en el portal {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-Los borradores guardados de los formularios HTML5 activados en la aplicación AEM Forms con el Perfil de procesamiento HTML **Guardar como borrador** no son visibles para los usuarios de Workspace. Para ver los borradores guardados de los formularios HTML5 enviados por los usuarios de Workspace en el portal, realice los siguientes pasos:
+Los borradores guardados de los formularios HTML5 habilitados en la aplicación AEM Forms con el Perfil de procesamiento HTML **Guardar como borrador** no son visibles para los usuarios de Workspace. Para ver los borradores guardados de los formularios HTML5 enviados por los usuarios de Workspace en el portal, realice los siguientes pasos:
 
 1. Abra CRXDE e inicie sesión con credenciales de administrador.
 
@@ -99,7 +103,7 @@ El mensaje de error se muestra al seleccionar la opción **Build APK** en el men
 
 **Solución:** Abra **Gradle Scripts** > **gradle-wrapper.properties** y edite la propiedad **distributionUrl**.
 
-Por ejemplo, la consola de Android Studio recomienda reducir la versión de Gradle a 3.5. Edite la versión de **distributionUrl** del archivo **gradle-wrapper.properties**.
+Por ejemplo, la consola de Android Studio recomienda reducir la versión de Gradle a 3.5. Edite la versión en el archivo **distributionUrl** of **gradle-wrapper.properties**.
 
 Seleccione **Build** > **Build APK** para resolver el error y generar el archivo .apk.
 

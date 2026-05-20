@@ -1,6 +1,6 @@
 ---
 title: Configurar el proyecto Android&trade; studio y crear la aplicación Android&trade;
-description: Pasos para configurar el proyecto Android&trade; Studio y crear el instalador para la aplicación Adobe Experience Manager AEM () de Forms
+description: Pasos para configurar el proyecto Android&trade; Studio y crear el instalador para la aplicación Forms de Adobe Experience Manager (AEM)
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
@@ -8,16 +8,20 @@ exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 67%
+source-wordcount: '613'
+ht-degree: 64%
 
 ---
 
 # Configurar el proyecto de Android™ Studio y crear la aplicación de Android™ {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Este artículo se destina a la creación de la aplicación de AEM Forms 6.3.1.1 y versiones posteriores. Para crear una aplicación a partir del código fuente de la aplicación AEM Forms 6.3, consulta [Configurar el proyecto Eclipse y crear la aplicación Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
+Este artículo se utiliza para generar la aplicación de AEM Forms 6.3.1.1 y versiones posteriores. Para crear una aplicación a partir del código fuente de la aplicación AEM Forms 6.3, consulta [Configurar el proyecto Eclipse y crear la aplicación Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 
 AEM Forms proporciona el código fuente completo de la aplicación de AEM Forms. La fuente contiene todos los componentes para crear una aplicación de AEM Forms personalizada. El archivo del código fuente, `adobe-lc-mobileworkspace-src-<version>.zip` forma parte del paquete `adobe-aemfd-forms-app-src-pkg-<version>.zip` en Distribución de software.
 

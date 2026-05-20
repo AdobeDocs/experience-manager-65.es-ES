@@ -9,14 +9,18 @@ exl-id: b97175fd-cc3d-457a-af11-1f8c83192eb7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 83%
+source-wordcount: '340'
+ht-degree: 80%
 
 ---
 
 # Guardar formularios como plantillas {#save-forms-as-templates}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 A veces, cuando los usuarios rellenan un formulario, las entradas de algunos campos son las mismas. Para estas instancias, puede rellenar los campos que requieran valores idénticos en cada caso y guardar el formulario o borrador como plantilla. Cada vez que cree una instancia de plantilla, los campos especificados ya se rellenarán con los valores especificados en la plantilla. Le ahorra tiempo y esfuerzo para rellenar el formulario.
 

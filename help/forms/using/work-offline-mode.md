@@ -8,14 +8,18 @@ exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 100%
+source-wordcount: '543'
+ht-degree: 97%
 
 ---
 
 # Trabajar en modo sin conexión {#working-in-the-offline-mode}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 El modo sin conexión de la aplicación de AEM Forms le permite trabajar sin problemas aunque la aplicación esté sin conexión. Puede abrir, actualizar y enviar un formulario sin necesidad de conectividad de red.
 

@@ -8,14 +8,18 @@ exl-id: adff5339-e026-4924-a401-f249f37fc6e6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 87%
+source-wordcount: '428'
+ht-degree: 84%
 
 ---
 
 # Trabajar con un formulario {#working-with-a-form}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Si un formulario está habilitado para la sincronización en la aplicación de Forms, este se descarga y puede trabajar con él directamente.
 

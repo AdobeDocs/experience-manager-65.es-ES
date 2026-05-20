@@ -7,14 +7,18 @@ exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 95%
+source-wordcount: '977'
+ht-degree: 94%
 
 ---
 
 # Configurar el proyecto de Visual Studio y crear la aplicación de Windows{#set-up-the-visual-studio-project-and-build-the-windows-app}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 AEM Forms proporciona el código fuente completo de la aplicación de AEM Forms. El origen contiene todos los componentes para generar una aplicación de espacio de trabajo personalizada. El archivo del código fuente, `adobe-lc-mobileworkspace-src-<version>.zip` forma parte del paquete `adobe-aemfd-forms-app-src-pkg-<version>.zip` en Distribución de software.
 
@@ -101,7 +105,7 @@ Siga estos pasos para crear e implementar la aplicación de AEM Forms.
 
    El directorio Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test contiene los cuatro componentes principales:
 
-   1. El archivo `.appx` 
+   1. El archivo `.appx`
    1. El certificado (actualmente es un certificado firmado automátiamente por Apache Cordova)
    1. La carpeta de dependencias
    1. El archivo PowerShell (extensión .ps1)

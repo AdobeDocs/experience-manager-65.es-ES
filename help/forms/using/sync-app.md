@@ -10,14 +10,18 @@ exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 84%
+source-wordcount: '388'
+ht-degree: 76%
 
 ---
 
 # Sincronizar la aplicación{#synchronizing-the-app}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 ## Sincronizar la aplicación {#synchronizing-the-app-1}
 
@@ -44,6 +48,6 @@ Seleccione el botón Sincronizar ![sync-app](assets/sync-app.png) en la esquina 
 ### Especificaciones técnicas {#technical-specifications}
 
 * La lógica principal del envío de datos de aplicaciones sin conexión al servidor de AEM Forms se incluye en runtime/offline/util/offline.js.
-* En el .js, la llamada a la función processOfflineSubmittedSavedTasks(...) envía las tareas guardadas/enviadas al servidor. También controla cualquier error o conflicto en el proceso de sincronización. Si falla el envío de una tarea, la tarea en la aplicación se marca como fallida. Además, la tarea permanece en su Bandeja de salida.
+* En el .js, la llamada a processOfflineSubmittedSavedTasks(...) función, envía las tareas guardadas/enviadas al servidor. También controla cualquier error o conflicto en el proceso de sincronización. Si falla el envío de una tarea, la tarea en la aplicación se marca como fallida. Además, la tarea permanece en su Bandeja de salida.
 * Las funciones syncSubmittedTask() y syncSavedTask() realizan operaciones en tareas individuales.
 * La llamada a la función processOfflineSubmittedSavedTasks() se inicia mediante el componente de lista de tareas después de que un usuario selecciona sincronizar el estado sin conexión con el servidor o una sincronización automática por el hilo en segundo plano.

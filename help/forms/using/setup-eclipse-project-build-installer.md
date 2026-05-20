@@ -8,14 +8,18 @@ exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 81%
+source-wordcount: '752'
+ht-degree: 75%
 
 ---
 
 # Crear la aplicación de AEM Forms para Android {#build-the-aem-forms-android-app}
+
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Para crear la aplicación de Android para AEM Forms, realice los siguientes pasos en la secuencia recomendada.
 
@@ -49,8 +53,8 @@ La siguiente imagen muestra la estructura de la carpeta `adobe-lc-mobileworkspac
 Establezca las siguientes variables de entorno antes de iniciar el proceso de generación para la aplicación de AEM Forms:
 
 * Establezca la variable de entorno JAVA_HOME en la ubicación del software JDK en el sistema de archivos local. Por ejemplo, C:\Program Files\Java\jdk1.8.0_181
-* Configure la variable de entorno `ANDROID_SDK_ROOT` del sistema a la ubicación del SDK para Android. Por ejemplo, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk
-* Configure la variable de entorno del sistema `Path` para incluir las ubicaciones de carpetas platform-tools y tools para Android. Por ejemplo, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools and C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
+* Configure la variable de entorno `ANDROID_SDK_ROOT` del sistema a la ubicación del SDK para Android. Por ejemplo, C:\Users\&lt;username>\AppData\Local\Android\Sdk
+* Configure la variable de entorno del sistema `Path` para incluir las ubicaciones de carpetas platform-tools y tools para Android. Por ejemplo, C:\Users\&lt;username>\AppData\Local\Android\Sdk\platform-tools and C:\Users\&lt;username>\AppData\Local\Android\Sdk\tools.
 
 ## Creación de una aplicación estándar de AEM Forms {#set-up-the-xcode-project}
 

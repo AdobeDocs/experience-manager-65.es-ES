@@ -9,34 +9,39 @@ exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 96%
+source-wordcount: '2497'
+ht-degree: 92%
 
 ---
 
 # Introducción a la aplicación de AEM Forms {#aem-forms-app}
 
+>[!NOTE]
+>
+>La aplicación de AEM Forms está actualmente en desuso. Si tiene alguna pregunta o ayuda, comuníquese con [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 ## Información general {#overview}
 
-La aplicación de AEM Forms permite sincronizar formularios adaptables, formularios móviles y conjuntos de formularios en dispositivos móviles, en función del servidor. Puede definir flujos de trabajo que sean [Flujos de trabajo centrados en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) o flujos de trabajo de Forms en JEE. Por ejemplo, ejecute una empresa bancaria y utilice AEM Forms para administrar las aplicaciones y comunicaciones de los clientes. Sus clientes rellenan un formulario y lo envían para su verificación. Si activa el formulario en dispositivos móviles, los clientes pueden rellenarlo en la aplicación de AEM Forms. También puede administrar el flujo de trabajo de verificación si habilita el formulario de verificación en dispositivos móviles. El trabajador puede llevar un dispositivo móvil al cliente, comprobar los detalles y enviar el formulario. La aplicación de AEM Forms se sincroniza con el servidor de AEM Forms y busca los formularios habilitados para dispositivos móviles. Si la aplicación está sin conexión, los datos se almacenarán localmente.
+La aplicación de AEM Forms permite sincronizar formularios adaptables, formularios móviles y conjuntos de formularios en dispositivos móviles, en función del servidor. Puede definir flujos de trabajo que sean [Flujos de trabajo centrados en Forms en OSGi](/help/forms/using/aem-forms-workflow.md) o flujos de trabajo de Forms en JEE. Por ejemplo, ejecute una empresa bancaria y utilice AEM Forms para administrar las aplicaciones y comunicaciones de los clientes. Sus clientes rellenan un formulario y lo envían para su verificación. Si habilita el formulario en dispositivos móviles, los clientes pueden rellenarlo en la aplicación de AEM Forms. También puede administrar el flujo de trabajo de verificación si habilita el formulario de verificación en dispositivos móviles. El trabajador puede llevar un dispositivo móvil al cliente, comprobar los detalles y enviar el formulario. La aplicación de AEM Forms se sincroniza con el servidor de AEM Forms y busca los formularios habilitados para dispositivos móviles. Si la aplicación está sin conexión, los datos se almacenarán localmente.
 
 El código fuente de la aplicación de AEM Forms está disponible para los clientes a través de la distribución de software. El paquete de código fuente de distribución de software está disponible de la siguiente manera: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 La aplicación de AEM Forms es compatible con dispositivos iOS, Android y Windows. Puede instalar la aplicación de AEM Forms para Android desde Google Play, iOS desde App Store y Windows desde Windows Store.
 
-    [&#x200B; ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms&hl=es)
+    [&#x200B; ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
     [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
     
-    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/es-es/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Para instalar, personalizar y distribuir la aplicación en dispositivos iOS, Android o Windows, consulte [Personalizar, crear y distribuir la aplicación de AEM Forms](#customize-build-distribute).
 
 ## Requisitos previos {#prerequisites}
 
-La aplicación de AEM Forms requiere un servidor de AEM Forms. Los usuarios pueden procesar formularios que se creen en el servidor de AEM Forms, rellenarlos, guardarlos como borradores y enviarlos. La aplicación se conecta al servidor y obtiene de él los formularios habilitados. La aplicación de AEM Forms se sincroniza con el servidor y, en cuanto los formularios se carguen en la aplicación, los usuarios podrán trabajar sin conexión. Si la aplicación está sin conexión, los datos se guardarán en el dispositivo y se sincronizarán con el servidor cuando la aplicación esté en línea.
+La aplicación de AEM Forms requiere un servidor de AEM Forms. Los usuarios pueden procesar formularios que cree en AEM Forms
+servidor, rellénelos, guárdelos como borradores y envíelos. La aplicación se conecta al servidor y obtiene de él los formularios habilitados. La aplicación de AEM Forms se sincroniza con el servidor y, en cuanto los formularios se carguen en la aplicación, los usuarios podrán trabajar sin conexión. Si la aplicación está sin conexión, los datos se guardarán en el dispositivo y se sincronizarán con el servidor cuando la aplicación esté en línea.
 
 ### Aplicación de AEM Forms con servidores que utilizan AEM Forms Workflow {#aem-forms-app-with-servers-using-aem-forms-workflow}
 
@@ -122,7 +127,7 @@ Consulte [Usar el guardado automático en la aplicación de AEM Forms](/help/for
 
 ## Diferencias entre la bandeja de entrada de AEM y las características de la aplicación de AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son la [Bandeja de entrada de AEM](/help/forms/using/manage-applications-inbox.md) y la aplicación de AEM Forms. Sin embargo, las capacidades de la bandeja de entrada de AEM y de la aplicación de AEM Forms. AEM La Bandeja de entrada de solo funciona con [flujos de trabajo centrados en Forms](/help/forms/using/aem-forms-workflow.md), mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con la administración de procesos. Para obtener más información sobre las diferencias entre la Bandeja de entrada de AEM y las funciones de la aplicación de AEM Forms, consulte [Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms](capabilities-osgi-jee-workflows.md).
+Dos de las principales formas de iniciar un flujo de trabajo centrado en Forms son la [Bandeja de entrada de AEM](/help/forms/using/manage-applications-inbox.md) y la aplicación de AEM Forms. Sin embargo, las capacidades de la bandeja de entrada de AEM y de la aplicación de AEM Forms. La Bandeja de entrada de AEM solo funciona con [flujos de trabajo centrados en Forms](/help/forms/using/aem-forms-workflow.md), mientras que la aplicación de AEM Forms funciona tanto con flujos de trabajo centrados en Forms como con la administración de procesos. Para obtener más información sobre las diferencias entre la Bandeja de entrada de AEM y las funciones de la aplicación de AEM Forms, consulte [Acciones y capacidades de los flujos de trabajo de AEM centrados en Forms en OSGi y en los flujos de trabajo JEE de AEM Forms](capabilities-osgi-jee-workflows.md).
 
 ## Formularios compatibles {#supported-forms}
 
@@ -212,7 +217,7 @@ Para obtener más información sobre cómo distribuir la aplicación mediante MD
 
 Si actualiza a la última versión de la aplicación de AEM Forms, asegúrese de leer los siguientes puntos:
 
-* **Si ha instalado una versión anterior de la aplicación desde Play Store en Android**
+* **Si instaló una versión anterior de la aplicación desde Play Store en Android**
 Puede actualizar la aplicación directamente desde Play Store.
 
 * **Si la versión anterior de la aplicación se crea e instala con el código fuente (aplicable para iOS y Android)**:
