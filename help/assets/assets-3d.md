@@ -1,6 +1,6 @@
 ---
 title: Uso de recursos 3D en Dynamic Media
-description: Descubra cómo puede cargar, gestionar, ver y distribuir recursos 3D en Dynamic Media como una experiencia envolvente.
+description: Descubra cómo puede cargar, administrar, ver y distribuir recursos 3D en Dynamic Media como una experiencia envolvente.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -9,9 +9,15 @@ feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+autotag-review: '2026-05-18T18:43:11.851Z'
+TQID: 'https://experienceleague.adobe.com/Qejzp9vTp-wLn92GsZdPdKEdA-84PnmYIROxdVrB4MU'
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: 2419
 ht-degree: 2%
 
 ---
@@ -20,7 +26,7 @@ ht-degree: 2%
 
 Dynamic Media le permite cargar, gestionar, ver y distribuir recursos 3D como experiencias envolventes.
 
-* Publicación en un solo clic (con **[!UICONTROL Quick Publish]** en la barra de herramientas) de recursos 3D para generar una dirección URL.
+* Publicación en un solo clic (con **[!UICONTROL Publicación rápida]** en la barra de herramientas) de recursos 3D para generar una dirección URL.
 * Compatibilidad optimizada para ver recursos 3D con el ajuste preestablecido de visualizador dimensional interactivo de alta calidad con tecnología Adobe Dimension.
 * El componente 3D Media WCM permite añadir fácilmente recursos 3D a las páginas de Adobe Experience Manager Sites.
 
@@ -41,7 +47,7 @@ Consulte también [formatos 3D compatibles](/help/assets/assets-formats.md).
 | GLB | Transmisión binaria GL | model/gltf-binary | Incluye los materiales y las texturas como un solo recurso. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Estereolitografía | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene Description Archivo zip | model/vnd.usdz+zip | *Sólo se admite la ingesta; no hay visualización ni interacción disponible.* USDZ es un formato 3D propietario que los dispositivos Safari y iOS pueden ver de forma nativa. |
+| USDZ | Universal Scene Description Archivo zip | model/vnd.usdz+zip | *Sólo se admite la ingesta; no hay visualización ni interacción disponible.* USDZ es un formato 3D patentado que los dispositivos Safari y iOS pueden ver de forma nativa. |
 
 >[!NOTE]
 >
@@ -49,15 +55,15 @@ Consulte también [formatos 3D compatibles](/help/assets/assets-formats.md).
 
 ## Inicio rápido: Recursos 3D en Dynamic Media {#quick-start-three-d}
 
-La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para ayudarle a ponerse en marcha rápidamente con los recursos 3D en el modo Dynamic Media - Scene7.
+La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para ayudarle a poner en marcha rápidamente los recursos 3D en el modo Dynamic Media - Scene7.
 
 >[!IMPORTANT]
 >
->Los recursos 3D no son compatibles con Dynamic Media: modo híbrido.
+>Los recursos 3D no son compatibles con Dynamic Media (modo híbrido).
 
-Antes de trabajar con recursos 3D en Dynamic Media, asegúrese de que su Experience Manager de ya ha activado y configurado los Cloud Service de Dynamic Media en el modo Dynamic Media - Scene7.
+Antes de trabajar con recursos 3D en Dynamic Media, asegúrese de que su administrador de Experience Manager ya haya habilitado y configurado los servicios en la nube de Dynamic Media en modo Dynamic Media - Scene7.
 
-Consulte [ConfigurE Cloud Service de Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media - Modo Scene7 y [Solución de problemas de Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
+Consulte [ConfigurE Servicios de nube de Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media - Modo Scene7 y [Solucionar problemas de Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
 
 1. **Cargar recursos 3D**
 
@@ -82,9 +88,9 @@ Consulte [ConfigurE Cloud Service de Dynamic Media](/help/assets/config-dms7.md#
       * [Administrar metadatos de recursos digitales](/help/assets/metadata.md).
       * [Esquemas de metadatos](/help/assets/metadata-schemas.md).
 
-1. **Recursos de Publish 3D**
+1. **Publicar recursos 3D**
 
-   * [Publish static Dynamic Media 3D assets](#publishing-three-d-assets)
+   * [Publicación de recursos estáticos de Dynamic Media 3D](#publishing-three-d-assets)
    * [Métodos alternativos para publicar recursos de Dynamic Media 3D mediante el visualizador dimensional](#alternate-publish-methods)
 
 ## Visualización e interacción con recursos 3D {#viewing-three-d-assets}
@@ -117,7 +123,7 @@ Consulte también [Vista previa de recursos mediante la interfaz de software](/h
 
    Consulte [Cargar recursos 3D para usarlos en Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
 
-1. Desde el Experience Manager, en la página **[!UICONTROL Navegación]**, ve a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
+1. Desde Experience Manager, en la página **[!UICONTROL Navegación]**, ve a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
 1. Cerca de la esquina superior derecha de la página, en la lista desplegable **[!UICONTROL Ver]**, seleccione **[!UICONTROL Vista de tarjeta]**.
 1. Desplácese hasta un recurso 3D que desee ver.
 1. Seleccione la tarjeta del recurso 3D.
@@ -167,7 +173,7 @@ Un recurso 3D completamente interactivo tal como se muestra en el modo **[!UICON
 
 ## Acerca del trabajo con el componente de medios en 3D {#working-with-three-d-media-component}
 
-Dynamic Media incluye un componente multimedia 3D de Dynamic Media que puede utilizar en Adobe Experience Manager Sites para permitir la visualización interactiva de modelos 3D en sus páginas web.
+Dynamic Media incluye un componente de Dynamic Media 3D Media que puede utilizar en Adobe Experience Manager Sites para permitir la visualización interactiva de modelos 3D en sus páginas web.
 
 * [Añadir el componente Medios 3D a la plantilla de página](#adding-three-d-media-component-to-page-template)
 * [Adición del componente Medios 3D a una página web](#adding-the-three-d-media-component-to-a-web-page)
@@ -185,7 +191,7 @@ Dynamic Media incluye un componente multimedia 3D de Dynamic Media que puede uti
 
 1. Seleccione un área vacía en la región **[!UICONTROL Contenedor de diseño]** para seleccionarla y abrir su barra de herramientas asociada.
 1. En la barra de herramientas, seleccione el icono **[!UICONTROL Directiva]** para abrir el **[!UICONTROL Editor de directivas]**.
-1. En la sección **[!UICONTROL Propiedades]**, en la ficha **[!UICONTROL Componentes permitidos]**, desplácese hasta **[!UICONTROL Dynamic Media]**, expanda la lista y verifique **[!UICONTROL Medios en 3D]**.
+1. En la sección **[!UICONTROL Propiedades]**, en la ficha **[!UICONTROL Componentes permitidos]**, desplácese hasta **[!UICONTROL Dynamic Media]**, expanda la lista y verifique **[!UICONTROL 3D Media]**.
 1. Seleccione **[!UICONTROL Listo]** para guardar los cambios y cerrar el **[!UICONTROL Editor de directivas]**.
 
    Ahora puede colocar el componente Dynamic Media 3D Media en todas las páginas que utilicen esta plantilla.
@@ -247,24 +253,24 @@ Consulte [Agregar el componente multimedia 3D a una página web](#adding-the-thr
 >
 >Mientras una página web se encuentra en modo Experience Manager Sites **[!UICONTROL Edit]**, el componente 3D Media muestra el recurso 3D, pero no es posible interactuar con él. Para que el recurso sea interactivo, puede usar la característica **[!UICONTROL Vista previa]** para ver la página web en el editor de páginas con acceso completo a la funcionalidad del componente de medios en 3D.
 
-## Publish static Dynamic Media 3D assets {#publishing-three-d-assets}
+## Publicación de recursos estáticos de Dynamic Media 3D {#publishing-three-d-assets}
 
-Dynamic Media acepta varios formatos de archivo 3D compatibles con *contenido estático* en Dynamic Media. Contenido estático significa que puede cargar y publicar recursos 3D, pero no se admite *imágenes de variables* ni ajustes de imagen asociados con el recurso 3D. El motivo es que Dynamic Media Imaging Server no reconoce formatos 3D. De este modo, después de publicar un recurso 3D en Dynamic Media, tiene una URL instantánea que puede copiar. La dirección URL del recurso 3D sigue la estructura URL habitual de Dynamic Media. Sin embargo, no se puede editar ningún parámetro en la dirección URL del recurso, a diferencia de los recursos de imagen tradicionales de Dynamic Media.
+Dynamic Media acepta varios formatos de archivo 3D compatibles como *contenido estático* en Dynamic Media. Contenido estático significa que puede cargar y publicar recursos 3D, pero no se admite *imágenes de variables* ni ajustes de imagen asociados con el recurso 3D. El motivo es que Dynamic Media Imaging Server no reconoce formatos 3D. De este modo, después de publicar un recurso 3D en Dynamic Media, tiene una URL instantánea que puede copiar. La dirección URL del recurso 3D sigue la estructura habitual de direcciones URL de Dynamic Media. Sin embargo, no puede editar ningún parámetro en la dirección URL del recurso, a diferencia de los recursos de imagen tradicionales de Dynamic Media.
 
 Consulte también [Obtener una dirección URL para un recurso estático](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
 
 En la **[!UICONTROL vista de tarjeta]**, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso y a la izquierda de su fecha y hora para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
 
-Si utiliza Experience Manager como WCM, utilice este método de publicación para añadir los recursos 3D de Dynamic Media directamente en la página web.
+Si utiliza Experience Manager como WCM, utilice este método de publicación para agregar los recursos de Dynamic Media 3D directamente en la página web.
 
-Consulte también [recursos de Publish Dynamic Media](publishing-dynamicmedia-assets.md).
+Consulte también [Publicar recursos de Dynamic Media](publishing-dynamicmedia-assets.md).
 
-Ver también [páginas de Publish](/help/sites-authoring/publishing-pages.md).
+Consulte también [Publicar páginas](/help/sites-authoring/publishing-pages.md).
 
 **Para publicar recursos estáticos de Dynamic Media 3D:**
 
 1. Abra un recurso 3D (formato de archivo GLB, OBJ o STL) para poder verlo en la página de detalles del recurso.
-1. En la barra de herramientas, seleccione **[!UICONTROL Quick Publish]**.
+1. En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**.
 
    ![publicación rápida de recursos en 3d](/help/assets/assets-dm/3d-asset-quick-publish.png)
 
@@ -275,7 +281,7 @@ Ver también [páginas de Publish](/help/sites-authoring/publishing-pages.md).
 
 1. Seleccione **[!UICONTROL original]**. Cuando se publica un recurso 3D (o &quot;activado&quot;), el botón **[!UICONTROL URL]** aparece cerca de la esquina inferior izquierda de la página si se cumplen todas las condiciones siguientes para el recurso 3D:
    * El recurso 3D es un formato compatible (GLB, OBJ, STL y USDZ).
-   * El recurso 3D se ha introducido en Dynamic Media Image Production System (IPS).
+   * El recurso 3D se ha introducido en el sistema de producción de imágenes (IPS) de Dynamic Media.
    * Se publica el recurso 3D.
 
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
@@ -284,9 +290,9 @@ Ver también [páginas de Publish](/help/sites-authoring/publishing-pages.md).
 
 ### Métodos alternativos para publicar recursos de Dynamic Media 3D mediante el visualizador dimensional {#alternate-publish-methods}
 
-Utilice los dos métodos siguientes para publicar recursos de Dynamic Media 3D si *no* utiliza Experience Manager como WCM.
+Use los dos métodos siguientes para publicar recursos de Dynamic Media 3D si *no* usa Experience Manager como WCM.
 
-* **[!UICONTROL URL]** - Utilice **[!UICONTROL URL]** si utiliza un sistema de administración de contenido web de terceros y desea vincular recursos de Dynamic Media 3D a sus páginas web mediante el visualizador dimensional.
+* **[!UICONTROL URL]** - Utilice **[!UICONTROL URL]** si está usando un sistema de administración de contenido web de terceros y desea vincular recursos de Dynamic Media 3D a sus páginas web mediante el visualizador dimensional.
 
   Ver [URL de vínculo a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 

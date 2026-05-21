@@ -1,6 +1,6 @@
 ---
 title: Entrega de recursos de Dynamic Media
-description: Obtenga información sobre cómo enviar recursos de Dynamic Media, como vídeos e imágenes, a sus páginas web.
+description: Obtenga información sobre cómo distribuir recursos de Dynamic Media, como vídeos e imágenes, a sus páginas web.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -10,21 +10,26 @@ role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+autotag-review: '2026-05-18T18:45:05.823Z'
+TQID: 'https://experienceleague.adobe.com/a5ifneRAYCIMHKCGJHGQu9aoQt3EWZu1hiGYItlPZOE'
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 9%
+source-wordcount: 324
+ht-degree: 11%
 
 ---
 
 # Entrega de recursos de Dynamic Media{#delivering-dynamic-media-assets}
 
-La forma de distribuir los recursos de Dynamic Media, tanto de vídeo como de imágenes, depende de la implementación del sitio web.
+La forma de entregar los recursos de Dynamic Media, tanto de vídeo como de imágenes, depende de cómo se implemente el sitio web.
 
 Con Dynamic Media, tiene varias opciones:
 
 * Si el sitio web está alojado en Adobe Experience Manager, quiere añadir los recursos de Dynamic Media directamente a la página.
-* Si el sitio web no está en el Experience Manager, puede elegir una de estas opciones:
+* Si el sitio web no está en Experience Manager, puede elegir una de estas opciones:
 
    * Incrustar el vídeo o la imagen en el sitio web.
    * Vincule las URL a la aplicación web. Utilice la vinculación cuando desee distribuir un reproductor de vídeo como ventana emergente o modal.
@@ -46,8 +51,8 @@ Para obtener más información, consulte los temas siguientes:
 * [Uso de conjuntos de reglas para transformar URL](/help/assets/using-rulesets-to-transform-urls.md)
 
 
-## Envío HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## Entrega HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager ahora admite la entrega de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, hay disponible una URL publicada o código incrustado para la imagen o el vídeo que se va a integrar con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega mediante el protocolo HTTP/2. Este método de entrega mejora la forma en que los navegadores y servidores se comunican, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
+Experience Manager ahora admite la entrega de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, hay disponible una URL publicada o código incrustado para la imagen o el vídeo que se va a integrar con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega mediante el protocolo HTTP/2. Este método de envío mejora la forma en que los exploradores y servidores se comunican, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
 
 Para obtener más información, consulte [Entrega HTTP/2 de contenido con las preguntas más frecuentes](/help/sites-administering/scene7-http2faq.md).

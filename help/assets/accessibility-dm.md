@@ -1,6 +1,6 @@
 ---
 title: Accesibilidad en Dynamic Media
-description: Obtenga información acerca de la compatibilidad con la accesibilidad en los visores de Dynamic Media y Dynamic Media.
+description: Obtenga información acerca de la compatibilidad con la accesibilidad en Dynamic Media y visores de Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -8,9 +8,15 @@ feature: Accessibility
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
+autotag-review: '2026-05-18T18:39:42.457Z'
+TQID: 'https://experienceleague.adobe.com/f9-0rO4QHX7kbx7xwptmuOW1W7WzduM3tOlL2YgHXxI'
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: 647
 ht-degree: 0%
 
 ---
@@ -54,18 +60,18 @@ Ver [Editar el recorte inteligente o la muestra inteligente de una sola imagen](
 
 Todos los componentes listos para usar de [!DNL Dynamic Media] visores admiten la accesibilidad del teclado para sus clientes.
 
-Consulte [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=es) en la Guía de referencia de visores de Dynamic Media.
+Consulte [Navegación y accesibilidad por teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) en la Guía de referencia de visores de Dynamic Media.
 
 ## Compatibilidad con tecnología de asistencia en [!DNL Dynamic Media] visores {#assistive-technology-support-for-dm-viewers}
 
 Todos los componentes del visor [!DNL Dynamic Media] admiten los roles y atributos ARIA (Aplicaciones de Internet enriquecidas accesibles) para mejorar la integración con tecnologías de asistencia, como lectores de pantalla.
-Consulte el tema de ayuda **Soporte técnico de tecnología de asistencia** en cualquier tema de personalización del visor en la Guía de referencia de visores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=es) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=es#viewers-for-aem-assets-only) para el visor de imágenes interactivas.
+Consulte el tema de ayuda **Compatibilidad con tecnología de asistencia** en cualquier tema de personalización de visualizadores de la Guía de referencia de visualizadores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para el visor de imágenes interactivas.
 
 ## Compatibilidad con subtítulos opcionales en Dynamic Media {#closed-caption-support}
 
 Dynamic Media admite la entrega de vídeos y conjuntos de vídeos adaptables con subtítulos. Los subtítulos deben mostrarse sobre el contenido del vídeo.
 
-Ver [vídeo en Dynamic Media: agregar subtítulos para el vídeo](/help/assets/video.md#adding-captions-to-video).
+Ver [vídeo en Dynamic Media: agregar subtítulos opcionales al vídeo](/help/assets/video.md#adding-captions-to-video).
 
 >[!MORELIKETHIS]
 >

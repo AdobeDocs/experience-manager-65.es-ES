@@ -11,9 +11,16 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+autotag-review: '2026-05-18T18:37:44.170Z'
+TQID: 'https://experienceleague.adobe.com/ePAqMpipETShCgP-zIuOJjvkopRXp77eHxrGlgBC1SQ'
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '3730'
+source-wordcount: 3779
 ht-degree: 8%
 
 ---
@@ -109,7 +116,7 @@ El tamaño máximo de archivo de vídeo admitido para el recorte inteligente es 
 * 30 cuadros por segundo (FPS).
 * Tamaño de archivo de 300 MB.
 
-La IA de Adobe está limitada a 9000 fotogramas. Es decir, cinco minutos a 30 FPS. Si el vídeo tiene un FPS mayor, la duración máxima del vídeo admitida disminuye. Por ejemplo, un vídeo de 60 FPS debe durar dos minutos y medio para que sea compatible con Adobe AI y Smart Crop.
+Adobe AI está limitado a 9000 fotogramas. Es decir, cinco minutos a 30 FPS. Si el vídeo tiene un FPS mayor, la duración máxima del vídeo admitida disminuye. Por ejemplo, un vídeo de 60 FPS debe durar dos minutos y medio para que sea compatible con Adobe AI y el recorte inteligente.
 
 ![Recorte inteligente para vídeo](assets/smart-crop-video.png)
 
@@ -281,7 +288,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>El número de fotogramas objetivo entre fotogramas clave. Calcule este valor para que pueda generar un fotograma clave cada 2-10 segundos. Por ejemplo, a 30 fotogramas por segundo, el intervalo de fotogramas clave debe ser de 60 a 300.<br /> <br /> Los intervalos de fotogramas clave más bajos mejoran la búsqueda de flujo y el comportamiento de cambio de flujo para las codificaciones de vídeo adaptables, y también pueden mejorar la calidad de los vídeos que tienen mucho movimiento. Sin embargo, como los fotogramas clave aumentan el tamaño de un archivo, un intervalo de fotogramas clave menor suele reducir la calidad general de vídeo a una velocidad de bits determinada.</td>
+   <td>El número de fotogramas objetivo entre fotogramas clave. Calcule este valor para que pueda generar un fotograma clave cada 2-10 segundos. Por ejemplo, a 30 fotogramas por segundo, el intervalo de fotogramas clave debe ser de 60 a 300.<br /> <br /> Los intervalos de fotogramas clave más bajos mejoran la búsqueda de flujo y el comportamiento de conmutación de flujo para las codificaciones de vídeo adaptables, y también pueden mejorar la calidad de los vídeos con mucho movimiento. Sin embargo, como los fotogramas clave aumentan el tamaño de un archivo, un intervalo de fotogramas clave menor suele reducir la calidad general de vídeo a una velocidad de bits determinada.</td>
    <td><code>String</code></td>
    <td><p>Número positivo.</p> <p>El valor predeterminado es 300.</p> <p>El valor recomendado para DASH o HLS es de 60 a 90.</p> </td>
   </tr>
