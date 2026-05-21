@@ -1,26 +1,22 @@
 ---
-title: Prácticas recomendadas de flujo de trabajo
+title: Prácticas recomendadas de flujos de trabajo
 description: Conozca las prácticas recomendadas para trabajar con flujos de trabajo en Adobe Experience Manager.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: extending-aem
-content-type: reference
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: b3af1a140abc1c202fa58704440c5660f1d43123
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1962'
 ht-degree: 1%
 
 ---
 
-# Prácticas recomendadas de flujo de trabajo{#workflow-best-practices}
+# Prácticas recomendadas de flujos de trabajo{#workflow-best-practices}
 
-Los flujos de trabajo permiten automatizar las actividades de Adobe Experience Manager AEM ().
+Los flujos de trabajo permiten automatizar las actividades de Adobe Experience Manager (AEM).
 
-AEM A menudo representan una gran cantidad del procesamiento que se produce en un entorno de trabajo de la, por lo que cuando los pasos personalizados del flujo de trabajo no se escriben según las prácticas recomendadas o los flujos de trabajo listos para usar no están configurados para ejecutarse de la manera más eficiente posible, el sistema puede sufrir las consecuencias.
+A menudo representan una gran cantidad del procesamiento que se produce en un entorno de AEM, por lo que cuando los pasos personalizados del flujo de trabajo no se escriben según las prácticas recomendadas o los flujos de trabajo listos para usar no están configurados para ejecutarse de la manera más eficiente posible, el sistema puede verse afectado como resultado.
 
 Por lo tanto, es muy recomendable planificar cuidadosamente las implementaciones de los flujos de trabajo.
 
@@ -38,7 +34,7 @@ Las ventajas pueden incluir:
 
 * Reducción en el tiempo de procesamiento del flujo de trabajo de hasta el 10 %.
 * Reduzca considerablemente el crecimiento del repositorio.
-* No se requieren más flujos de trabajo CRUD para purgar.
+* No es necesario purgar más flujos de trabajo CRUD.
 * Además, reduce el número de archivos TAR que se van a compactar.
 
 >[!CAUTION]
@@ -47,23 +43,23 @@ Las ventajas pueden incluir:
 
 ### Ajuste de flujos de trabajo DAM {#tuning-dam-workflows}
 
-Para obtener instrucciones de optimización del rendimiento para flujos de trabajo DAM, consulte la [Guía de optimización del rendimiento de AEM Assets](/help/assets/performance-tuning-guidelines.md).
+Para obtener instrucciones de optimización del rendimiento para flujos de trabajo de DAM, consulte la [Guía de optimización del rendimiento para AEM Assets](/help/assets/performance-tuning-guidelines.md).
 
 ### Configuración del número máximo de flujos de trabajo simultáneos {#configure-the-maximum-number-of-concurrent-workflows}
 
-AEM Puede permitir que varios subprocesos de flujo de trabajo se ejecuten de forma simultánea. De forma predeterminada, el número de subprocesos está configurado para ser la mitad del número de núcleos de procesador del sistema.
+AEM puede permitir que varios subprocesos de flujo de trabajo se ejecuten simultáneamente. De forma predeterminada, el número de subprocesos está configurado para ser la mitad del número de núcleos de procesador del sistema.
 
-AEM En los casos en los que los flujos de trabajo que se ejecutan requieren recursos del sistema, esto puede significar poco para que se lo utilice en otras tareas, como procesar la interfaz de usuario de creación. Como resultado, el sistema puede resultar lento durante actividades como la carga masiva de imágenes.
+En los casos en los que los flujos de trabajo que se ejecutan requieren recursos del sistema, esto puede significar poco para que AEM lo utilice en otras tareas, como procesar la interfaz de usuario de creación. Como resultado, el sistema puede resultar lento durante actividades como la carga masiva de imágenes.
 
-Para resolver este problema, Adobe recomienda configurar el número de **Máximo de trabajos paralelos** para que esté entre la mitad y las tres cuartas partes del número de núcleos de  en el sistema. Esto debería permitir suficiente capacidad para que el sistema mantenga su capacidad de respuesta al procesar estos flujos de trabajo.
+Para resolver este problema, Adobe recomienda configurar el número de **Máximo de trabajos paralelos** para que esté entre la mitad y las tres cuartas partes del número de núcleos de procesador en el sistema. Esto debería permitir suficiente capacidad para que el sistema mantenga su capacidad de respuesta al procesar estos flujos de trabajo.
 
 Para configurar **Máximo de trabajos paralelos**, puede:
 
-* AEM Configure la **[configuración de OSGi](/help/sites-deploying/configuring-osgi.md)** desde la consola web de; para **Cola: cola de flujo de trabajo de Granite** (una **configuración de la cola de trabajos de Apache Sling**).
+* Configure **[OSGi Configuration](/help/sites-deploying/configuring-osgi.md)** desde la consola web de AEM; para **Cola: Granite Workflow Queue** (una **configuración de Apache Sling Job Queue**).
 
-* AEM Configure la cola que se puede usar desde la opción **Trabajos de Sling** de la consola web de la; para **Configuración de la cola de trabajos: Cola de flujo de trabajo de Granite**, en `http://localhost:4502/system/console/slingevent`.
+* Configure la cola que se puede usar desde la opción **Sling Jobs** de la consola web de AEM; para **Configuración de la cola de trabajos: Granite Workflow Queue**, en `http://localhost:4502/system/console/slingevent`.
 
-Además, hay una configuración independiente para la **Cola de trabajos de proceso externo de Granite Workflow**. Se usa para procesos de flujo de trabajo que inician binarios externos, como **InDesign Server** o **Imagen Magick**.
+Además, hay una configuración independiente para la **Cola de trabajos de proceso externo de Granite Workflow**. Se usa para procesos de flujo de trabajo que inician binarios externos, como **InDesign Server** o **Image Magick**.
 
 ### Configurar colas de trabajos individuales {#configure-individual-job-queues}
 
@@ -73,13 +69,13 @@ También se pueden agregar colas de trabajos individuales para flujos de trabajo
 
 ### Configurar depuración de flujo de trabajo {#configure-workflow-purging}
 
-AEM En una instalación estándar, proporciona una consola de mantenimiento en la que se pueden programar y configurar actividades de mantenimiento diarias y semanales; por ejemplo, en:
+En una instalación estándar, AEM proporciona una consola de mantenimiento en la que se pueden programar y configurar actividades de mantenimiento diarias y semanales; por ejemplo, en:
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-De manera predeterminada, la **ventana de mantenimiento semanal** tiene una tarea **Purga del flujo de trabajo**, pero esto debe configurarse antes de que se ejecute. Para configurar las purgas del flujo de trabajo, se debe agregar una nueva configuración de purga de flujo de trabajo de **Adobe Granite** en la consola web.
+De manera predeterminada, la **ventana de mantenimiento semanal** tiene una tarea **Purga del flujo de trabajo**, pero esto debe configurarse antes de que se ejecute. Para configurar las purgas del flujo de trabajo, se debe agregar una nueva **Configuración de purga del flujo de trabajo de Adobe Granite** en la consola web.
 
-AEM Para obtener más información sobre las tareas de mantenimiento en la, consulte [Tablero de operaciones](/help/sites-administering/operations-dashboard.md).
+Para obtener más información sobre las tareas de mantenimiento en AEM, consulte [Tablero de operaciones](/help/sites-administering/operations-dashboard.md).
 
 ## Personalización {#customization}
 
@@ -91,7 +87,7 @@ Las definiciones de modelos de flujo de trabajo, iniciadores, scripts y notifica
 
 >[!NOTE]
 >
->AEM Consulte también [Reestructuración del repositorio en la versión 6.5](/help/sites-deploying/repository-restructuring.md) de la.
+>Consulte también [Reestructuración de repositorios en AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 #### Ubicaciones - Modelos de flujo de trabajo {#locations-workflow-models}
 
@@ -126,7 +122,7 @@ Los modelos de flujo de trabajo se almacenan en el repositorio según el tipo:
 
   >[!NOTE]
   >
-  >AEM Si estos diseños se editan *usando la interfaz de usuario de*, los detalles se copiarán en las nuevas ubicaciones.
+  >Si estos diseños se editan *usando la interfaz de usuario de AEM*, los detalles se copiarán en las nuevas ubicaciones.
 
 #### Ubicaciones - Iniciadores de flujo de trabajo {#locations-workflow-launchers}
 
@@ -157,7 +153,7 @@ Las definiciones del lanzador de flujos de trabajo también se almacenan en el r
 
   >[!NOTE]
   >
-  >AEM Si estas definiciones se editan *usando la interfaz de usuario de*, los detalles se copiarán en las nuevas ubicaciones.
+  >Si estas definiciones se editan *usando la interfaz de usuario de AEM*, los detalles se copiarán en las nuevas ubicaciones.
 
 #### Ubicaciones - Scripts de flujo de trabajo {#locations-workflow-scripts}
 
@@ -247,14 +243,14 @@ Guardar una sesión:
 * Dentro de un proceso de flujo de trabajo, si `WorkflowSession` se está utilizando para modificar el repositorio, no guarde explícitamente la sesión: el flujo de trabajo guardará la sesión cuando se complete.
 * No se debe llamar a `Session.Save` desde un paso del flujo de trabajo:
 
-   * se recomienda adaptar la sesión jcr del flujo de trabajo; entonces `save` no es necesario, ya que el motor de flujo de trabajo guarda la sesión automáticamente una vez que el flujo de trabajo ha terminado de ejecutarse.
-   * no se recomienda que un paso de proceso cree su propia sesión jcr.
+   * se recomienda adaptar la sesión JCR del flujo de trabajo; entonces `save` no es necesario, ya que el motor de flujo de trabajo guarda la sesión automáticamente una vez que el flujo de trabajo ha terminado de ejecutarse.
+   * no se recomienda que un paso de proceso cree su propia sesión JCR.
 
 * Al eliminar los ahorros innecesarios, puede reducir la sobrecarga y, por lo tanto, hacer que los flujos de trabajo sean más eficientes.
 
 >[!CAUTION]
 >
->Si, a pesar de las recomendaciones aquí, crea su propia sesión jcr, se debe guardar.
+>Si, a pesar de las recomendaciones aquí, crea su propia sesión JCR, se debe guardar.
 
 ### Minimizar el número/ámbito de los lanzadores {#minimize-the-number-scope-of-launchers}
 
@@ -290,7 +286,7 @@ Otro ejemplo sería un flujo de trabajo que procese varios nodos, cree un paquet
 
 Al diseñar un modelo del flujo de trabajo, tiene la opción de habilitar el avance del controlador en los pasos del flujo de trabajo. Como alternativa, puede agregar código al paso del flujo de trabajo para determinar qué paso se debe ejecutar a continuación y, a continuación, ejecutarlo.
 
-Se recomienda utilizar el avance del controlador, ya que ofrece un mejor rendimiento.
+Se recomienda utilizar controladores avanzados, ya que ofrece un mejor rendimiento.
 
 ### Fases del flujo de trabajo {#workflow-stages}
 
@@ -315,7 +311,7 @@ Al actualizar la instancia:
 
 >[!NOTE]
 >
->AEM Consulte también [Reestructuración del repositorio en la versión 6.5](/help/sites-deploying/repository-restructuring.md) de la.
+>Consulte también [Reestructuración de repositorios en AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 ## Herramientas del sistema {#system-tools}
 
@@ -347,4 +343,4 @@ Para obtener más información, consulte lo siguiente:
 * [Uso de flujos de trabajo](/help/sites-authoring/workflows.md)
 * [Administración de flujos de trabajo](/help/sites-administering/workflows.md)
 * [Desarrollo y ampliación de flujos de trabajo](/help/sites-developing/workflows.md)
-* [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md)
+* [Optimización de rendimiento](/help/sites-deploying/configuring-performance.md)
