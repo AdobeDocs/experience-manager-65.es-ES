@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 7eafeae8f504ab27a27ec54a0fc1e29cc881bcf7
+source-git-commit: cc10229ca767a803fe0b24b1b4b47111e6c88cdd
 workflow-type: tm+mt
 source-wordcount: '7111'
 ht-degree: 24%
@@ -623,16 +623,6 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
 
 * **FORMS-23703** Cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
 * Los conectores del modelo de datos de formulario **GRANITE-63681** pueden no autenticarse debido a que las palabras clave y el patrón regex requeridos no están permitidos de manera predeterminada. Para resolver el problema, descargue e instale la revisión desde el [vínculo](/help/release-notes/aem-forms-hotfix.md).
-
-  <!--
-  To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
-
-  * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
-  * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
-
-    >[!VIDEO](https://video.tv.adobe.com/v/3479697)
-  -->
-
 * La conversión de **FORMS-23979** HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.25.0](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 * **FORMS-23717** Después de actualizar a **AEM Forms6.5.25.0**, `server.log` y `error.log` se pueden inundar con mensajes WARN repetidos, como *Error al crear la fábrica del analizador seguro* o *No se admite el atributo Security*. Los registros pueden crecer en alrededor de **5-10 líneas por segundo** (cientos de MB por hora), lo que puede llenar el disco y bloquear el despliegue de producción.
 
