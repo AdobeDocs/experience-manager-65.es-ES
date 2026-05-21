@@ -12,11 +12,19 @@ exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
 solution: Experience Manager, Experience Manager Assets
 autotag-review: '2026-05-18T18:46:26.981Z'
 TQID: 'https://experienceleague.adobe.com/DfSAGGSoBR-9TOXKA89X3U4VReVbP-Ej70vUK1Zfczk'
-product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
 source-wordcount: 3751
@@ -62,7 +70,7 @@ Consulte también [Opcional: configuración de Dynamic Media: configuración del
    * Pestaña [Atributos de administración de color](#color-management-attributes-tab)
 
    ![Página de configuración de publicación de Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
-   *Página de configuración de publicación de Dynamic Media, con la ficha **[!UICONTROL Solicitar atributos]**seleccionada.*<br><br>
+   *Página de configuración de publicación de Dynamic Media, con la ficha **[!UICONTROL Solicitar atributos]**&#x200B;seleccionada.*<br><br>
 
 1. Cuando termine, cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Guardar]**.
 
@@ -76,7 +84,7 @@ Cuando *Probar servicio de imágenes* está establecido como contexto de publica
 
 **[!UICONTROL Dirección del cliente]**: le permite especificar una o más direcciones IP o intervalos de direcciones IP. Cuando se especifica, se rechazan las solicitudes a este catálogo de imágenes que se originan desde un cliente con una dirección IP no incluida. Esta regla se aplica tanto a la entrega de imágenes como a las imágenes procesadas.
 
-![Ficha de seguridad ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*La ficha de seguridad que muestra el campo &quot;Permitir&quot; de IP.*
+![Ficha de seguridad &#x200B;](/help/assets/assets-dm/dm-ipallowlist.png)<br>*La ficha de seguridad que muestra el campo &quot;Permitir&quot; de IP.*
 
 ## Pestaña Administración de catálogos {#catalog-management-tab}
 
@@ -102,7 +110,7 @@ Estos ajustes pertenecen al aspecto predeterminado de las imágenes.
 | **[!UICONTROL Nombre de fuente predeterminada]** | Especifica la fuente que se utilizará en caso de que la solicitud de capa de texto no proporcione ninguna. Si se especifica, debe ser un valor de nombre de fuente válido en el mapa de fuentes de este catálogo de imágenes o en el mapa de fuentes del catálogo predeterminado.<br>Consulte también el parámetro [DefaultFont](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont) en la Guía de referencia de visores de Dynamic Media. |
 | **[!UICONTROL Imagen predeterminada]** | Se devuelve una imagen predeterminada en respuesta a una solicitud donde la imagen solicitada no se encuentra.<br>Consulte también el parámetro [DefaultImage](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage) en la Guía de referencia de visores de Dynamic Media.<br>**NOTA**: Si su cuenta de Dynamic Media Classic tiene seleccionada una **[!UICONTROL imagen predeterminada]** en **[!UICONTROL Configuración]** > **[!UICONTROL Aplicación]** > **[!UICONTROL Configuración de publicación]**, en el grupo **[!UICONTROL Atributos de solicitud predeterminados]**, Experience Manager recupera el archivo. A continuación, el archivo se almacena y se pone a disposición en este campo cuando abre la página **[!UICONTROL Configuración de publicación de Dynamic Media]** por primera vez. |
 | **[!UICONTROL Modo de imagen predeterminado]** | Cuando el cuadro deslizante está habilitado (deslizador a la derecha), la **[!UICONTROL imagen predeterminada]** reemplaza cada capa que falta en la imagen de origen con la imagen predeterminada y devuelve el compuesto de la forma habitual. Cuando el cuadro deslizante está desactivado (deslizador a la izquierda), la imagen predeterminada reemplaza toda la imagen compuesta, incluso si la imagen que falta es solo una de varias capas.<br>Consulte también el parámetro [DefaultImageMode](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Tamaño de vista predeterminado]** | Necesario.<br>Solo para las nuevas cuentas de Dynamic Media, los tamaños de vista predeterminados se establecen automáticamente en Anchura: `1280` y Altura: `1280` tanto para el servicio de imágenes **[!UICONTROL como para el servicio de imágenes de prueba]**.**[!UICONTROL El servidor limita el tamaño de las imágenes de respuesta a esta altura y anchura máximas, a no ser que la solicitud especifique el tamaño de vista explícitamente con `wid=`, `hei=` o `scl=`.<br>Vea también el parámetro [DefaultPix](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix) en la Guía de referencia de visores de Dynamic Media.]**<br> |
+| **[!UICONTROL Tamaño de vista predeterminado]** | Necesario.<br>Solo para las nuevas cuentas de Dynamic Media, los tamaños de vista predeterminados se establecen automáticamente en Anchura: `1280` y Altura: `1280` tanto para el servicio de imágenes **[!UICONTROL como para el servicio de imágenes de prueba]**.**El servidor limita el tamaño de las imágenes de respuesta a esta altura y anchura máximas, a no ser que la solicitud especifique el tamaño de vista explícitamente con `wid=`, `hei=` o `scl=`.<br>Vea también el parámetro [DefaultPix](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix) en la Guía de referencia de visores de Dynamic Media.**<br> |
 | **[!UICONTROL Tamaño de miniatura predeterminado]** | Requerido.<br>Se usa en lugar del atributo **[!UICONTROL Tamaño de vista predeterminado]** para las solicitudes de miniaturas (`req=tmb`). El servidor limita el tamaño de las imágenes de respuesta a esta altura y anchura máximas, a no ser que una solicitud de miniatura (`req=tmb`) especifique el tamaño explícitamente con `wid=`, `hei=` o `scl=`.<br>Consulte también el parámetro [DefaultThumbPix](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix) en la Guía de referencia de visores de Dynamic Media. |
 | **[!UICONTROL Color de fondo predeterminado]** | Especifica el valor de RGB que se utiliza para rellenar las áreas de la imagen de respuesta que no contengan datos de imagen reales.<br>Consulte también el parámetro [BkgColor](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor) en la Guía de referencia de visores de Dynamic Media. |
 | **[!UICONTROL Atributos de codificación de JPEG]** |  |

@@ -12,10 +12,16 @@ exl-id: 55cc7c57-87a0-4bfb-b226-36d01d36849a
 solution: Experience Manager, Experience Manager Assets
 autotag-review: '2026-05-18T18:45:43.326Z'
 TQID: 'https://experienceleague.adobe.com/MXCLWQOBsCl3DPKVPn-WjnPeu-NGnQtUn6EYueH7OfE'
-product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: d378ca77-2da1-4f39-ad92-1917fe974a38
+product_v2:
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
 source-wordcount: 2537
@@ -58,7 +64,7 @@ Consulte también [Opcional: configuración de Dynamic Media: configuración del
    * Ficha [Illustrator](#illustrator-tab)
 
    ![Página de configuración general de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Página de configuración general de Dynamic Media, con la ficha **[!UICONTROL Edición de imágenes]**seleccionada.*<br><br>
+   *Página de configuración general de Dynamic Media, con la ficha **[!UICONTROL Edición de imágenes]**&#x200B;seleccionada.*<br><br>
 
 1. Cuando termine, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 

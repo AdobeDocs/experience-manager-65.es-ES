@@ -13,11 +13,20 @@ exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
 autotag-review: '2026-05-18T18:37:44.170Z'
 TQID: 'https://experienceleague.adobe.com/ePAqMpipETShCgP-zIuOJjvkopRXp77eHxrGlgBC1SQ'
-product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: bd0d2470-932c-4269-8eca-6d939b72d9ef
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+product_v2:
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
 source-wordcount: 3779
