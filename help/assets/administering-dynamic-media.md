@@ -9,13 +9,9 @@ feature: Configuration
 solution: Experience Manager, Experience Manager Assets
 autotag-review: '2026-05-18T18:42:08.975Z'
 TQID: 'https://experienceleague.adobe.com/bNzzsvSVfI6u9wYojbIgKckxmceQk3bGzfCMWNZMUQ4'
-product_v2:
-  - id: e14eb250-3c22-4a07-9061-a78112b2b826
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
 source-wordcount: 264
@@ -25,7 +21,7 @@ ht-degree: 3%
 
 # Configuración de Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/es/products/experience-manager/assets/dynamic-media.html) le ayuda a administrar sus recursos al proporcionarle recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para su consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen principales, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) le ayuda a administrar sus recursos al proporcionarle recursos de marketing y comercialización visual enriquecidos bajo demanda, escalados automáticamente para su consumo en sitios web, móviles y sociales. Al utilizar un conjunto de recursos de origen principales, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 >[!NOTE]
 >
