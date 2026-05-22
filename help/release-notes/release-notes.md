@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: d60ff7278e62833c732c55d328882a2976bfd964
+source-git-commit: e12267324516982a654ce61ff6c11554f8c87d8a
 workflow-type: tm+mt
 source-wordcount: '7116'
 ht-degree: 24%
@@ -634,9 +634,9 @@ Para reducir el volumen de registro, establezca el nivel de registro de `com.ado
 
 Los siguientes archivos zip contienen los documentos de texto que enumeran los paquetes OSGi y los paquetes de contenido incluidos en esta versión del paquete de servicio [!DNL Experience Manager] 6.5:
 
-* [Lista de paquetes OSGi incluidos en Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.zip)
+* [Lista de paquetes OSGi incluidos en Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Lista de paquetes de contenido incluidos en Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.zip)
+* [Lista de paquetes de contenido incluidos en Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Sitios web restringidos{#restricted-sites}
