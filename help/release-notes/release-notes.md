@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: cc10229ca767a803fe0b24b1b4b47111e6c88cdd
+source-git-commit: d60ff7278e62833c732c55d328882a2976bfd964
 workflow-type: tm+mt
-source-wordcount: '7111'
+source-wordcount: '7116'
 ht-degree: 24%
 
 ---
@@ -632,11 +632,11 @@ Para reducir el volumen de registro, establezca el nivel de registro de `com.ado
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
-Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de contenido incluidos en esta versión de [!DNL Experience Manager] 6.5 Service Pack:
+Los siguientes archivos zip contienen los documentos de texto que enumeran los paquetes OSGi y los paquetes de contenido incluidos en esta versión del paquete de servicio [!DNL Experience Manager] 6.5:
 
-* [Lista de paquetes OSGi incluidos en Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.txt)
+* [Lista de paquetes OSGi incluidos en Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Lista de paquetes de contenido incluidos en Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.txt)
+* [Lista de paquetes de contenido incluidos en Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Sitios web restringidos{#restricted-sites}
@@ -651,4 +651,6 @@ Estos sitios web solo están disponibles para los clientes. Si es cliente y nece
 >* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
+
+
 
