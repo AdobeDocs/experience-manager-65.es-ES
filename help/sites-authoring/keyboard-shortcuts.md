@@ -9,16 +9,16 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 1785216a13a809117cf178bd2dabf921e36dd9af
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 47%
+source-wordcount: '386'
+ht-degree: 44%
 
 ---
 
 # Métodos abreviados de teclado para las consolas{#keyboard-shortcuts-for-consoles}
 
-Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas, mientras que otros se refieren a la [edición de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas y otros, a la [edición de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Alterne qué opción de [selector de carril](/help/sites-authoring/basic-handling.md#rail-selector) se debe ver |
-|  | ``` ` ``` | Ocultar raíl |
+|  | `Backtick` | Ocultar raíl |
 |  | `e` | Editar |
 |  | `p` | Propiedades |
 |  | `m` | Mover |

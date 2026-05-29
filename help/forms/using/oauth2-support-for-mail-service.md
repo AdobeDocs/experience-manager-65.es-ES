@@ -5,9 +5,9 @@ exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 9b4dd5a4a137e529be8142fff1ddbfca889e64ae
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1032'
 ht-degree: 5%
 
 ---
@@ -28,9 +28,9 @@ En el caso anterior, **Cuentas en cualquier directorio organizativo (cualquier d
 
    >[!NOTE]
    >
-   > * Para **cuentas en cualquier directorio organizativo (cualquier directorio de Azure AD - multiusuario)** aplicación, Adobe recomienda usar una cuenta de trabajo en lugar de una cuenta de correo electrónico personal.
+   > * Para **cuentas en cualquier directorio organizativo (cualquier directorio de Azure AD - multiinquilino)** aplicación, Adobe recomienda usar una cuenta de trabajo en lugar de una cuenta de correo electrónico personal.
    > * **Sólo cuentas personales de Microsoft®** aplicación no admitida.
-   > * El Adobe recomienda usar la aplicación **Multi-tenant and personal Microsoft® account**.
+   > * Adobe recomienda usar la aplicación **Multi-tenant and personal Microsoft® account**.
 
 1. A continuación, vaya a **Certificados y secretos**, haga clic en **Nuevo secreto de cliente** y siga los pasos que aparecen en la pantalla para crear un secreto. Asegúrese de tomar nota de este valor de secret para utilizarlo posteriormente.
 
@@ -71,7 +71,7 @@ A continuación, debe generar el código de autorización, explicado en los paso
 
 1. Abra la siguiente URL en el explorador después de reemplazar `clientID` por `<client_id>` y `redirect_uri` por el URI de redireccionamiento de la aplicación:
 
-   ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
+   `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
    >[!NOTE]
    >
@@ -116,7 +116,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
    > Para habilitar el servicio de autenticación oAuth 2.0, es obligatorio seleccionar **Si el servidor SMTP requiere autenticación (autenticación SMTP)**.
 
 1. Establecer **configuración de autenticación oAuth 2.0** como `True`.
-1. Copie los valores de **ID de cliente** y **Secreto de cliente** de Azure Portal.
+1. Copie los valores de **ID de cliente** y **Secreto de cliente** desde el portal de Azure.
 1. Copie el valor del **token de actualización** generado.
 1. Inicie sesión en **Workbench** y busque **Correo electrónico 1.0** desde **Selector de actividades**.
 1. Hay tres opciones disponibles en Correo electrónico 1.0 como:
@@ -143,7 +143,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
 1. Vaya a **Inicio** > **Servicios** > **Flujo de trabajo de formularios** > **Configuración del servidor** > **Configuración de correo electrónico**
 1. Para habilitar las notificaciones de tareas oAuth, seleccione la casilla de verificación **Habilitar oAuth**.
-1. Copie los valores de **ID de cliente** y **Secreto de cliente** de Azure Portal.
+1. Copie los valores de **ID de cliente** y **Secreto de cliente** desde el portal de Azure.
 1. Copie el valor del **token de actualización** generado.
 1. Haga clic en **Guardar** para guardar los detalles.
 
@@ -151,13 +151,13 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   > Para obtener más información relacionada con las notificaciones de tareas, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=es#create-an-email-endpoint-for-the-complete-task-service).
+   > Para obtener más información relacionada con las notificaciones de tareas, [haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Para configurar el extremo de correo electrónico {#configure_email_endpoint}
 
 1. Vaya a **Inicio** > **Servicios** > **Aplicación y servicios** > **Administración de extremos**
 1. Para configurar el extremo del correo electrónico, establezca **Configuración de autenticación oAuth 2.0** como `True`.
-1. Copie los valores de **ID de cliente** y **Secreto de cliente** de Azure Portal.
+1. Copie los valores de **ID de cliente** y **Secreto de cliente** desde el portal de Azure.
 1. Copie el valor del **token de actualización** generado.
 1. Haga clic en **Guardar** para guardar los detalles.
 
@@ -165,7 +165,7 @@ Ahora, configure el servicio de correo electrónico en el servidor JEE más reci
 
    >[!NOTE]
    >
-   > Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=es).
+   > Para obtener más información sobre la configuración de los extremos de correo electrónico, haga clic en [Configurar un extremo de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Resolución de problemas {#troubleshooting}
 
