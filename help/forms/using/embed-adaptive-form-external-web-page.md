@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20ee89572d58ade43d899b9292497717cb82c8b2
+source-git-commit: fb26d0c08644f8b84e406adeb7fb14496e8e9fd0
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 74%
@@ -144,7 +144,7 @@ se envía al servidor de AEM como:
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-Cuando el servidor de AEM y la página web están en dominios diferentes, también debe configurar CORS en la instancia de publicación de AEM. Siga los pasos que se indican en la sección [habilitar AEM Forms para proporcionar formularios adaptables en un sitio entre dominios](#cross-site).
+Cuando el servidor de AEM y la página web están en dominios diferentes, también debe configurar CORS en la instancia de publicación de AEM. Siga los pasos que se indican en la sección [habilitar AEM Forms para proporcionar formularios adaptables en un sitio entre dominios](#enable-aem-forms-to-serve-adaptive-forms-to-a-cross-domain-site-cross-site).
 
 ## Topología de ejemplo {#sample-topology}
 
@@ -221,3 +221,4 @@ Cuando utilice un proxy inverso o incruste el formulario adaptable sin la config
 1. En el campo Hosts permitidos, especifique el dominio en el que reside la página web. Permita que el host realice peticiones POST al servidor de AEM. También puede utilizar una expresión regular para especificar una serie de dominios de aplicación externos.
 
 >[!ENDTABS]
+
