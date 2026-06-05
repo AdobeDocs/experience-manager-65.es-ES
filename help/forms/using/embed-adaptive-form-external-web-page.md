@@ -8,10 +8,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 60cc4096c4fd1b51e1d37b6e6f4cdb8806fd79eb
+source-git-commit: 17a9c95166644a2a4e665e97c71b5fb744af6362
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 98%
+source-wordcount: '1388'
+ht-degree: 74%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 98%
 | AEM 6.5 | Este artículo |
 
 
-<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo Formularios adaptables](/help/forms/using/create-an-adaptive-form-core-components.md) o [adición de Formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. En este artículo se describe un método antiguo para crear Forms adaptable mediante componentes de base. </span>
+<span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. En este artículo se describe un método antiguo para crear Forms adaptable mediante componentes de base. </span>
 
-Puede [integrar formularios adaptables en una página de AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) o en una página web alojada fuera de AEM. El formulario adaptable incrustado es completamente funcional, y los usuarios pueden rellenarlo y enviarlo sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
+Puede [incrustar formularios adaptables en una página de AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) o en una página web alojada fuera de AEM. El formulario adaptable incrustado es completamente funcional, y los usuarios pueden rellenarlo y enviarlo sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario.
 
 ## Requisitos previos {#prerequisites}
 
@@ -33,7 +33,7 @@ Realice los siguientes pasos antes de incrustar un formulario adaptable en un si
 
 * Publique el formulario adaptable que desee integrar en la instancia de publicación del servidor de AEM Forms.
 * Cree o identifique una página web en su sitio web para alojar el formulario adaptable. Asegúrese de que la página web pueda [leer archivos jQuery de una CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) o de que tenga una copia local de jQuery incrustada. jQuery es necesario para procesar un formulario adaptable.
-* Cuando el servidor de AEM y la página web están en dominios diferentes, realice los pasos que se enumeran en la sección [permitir que AEM Forms ofrezca formularios adaptables a un sitio de dominios cruzados](#cross-site).
+* Cuando el servidor de AEM y la página web están en dominios diferentes, realice los pasos que se indican en la sección [Configuración de direcciones URL de solicitud absolutas con GuideBridge](#configure-base-url) y [habilitar AEM Forms para que ofrezca formularios adaptables a un sitio entre dominios](#cross-site).
 
 ## Incrustar formulario adaptable {#embed-adaptive-form}
 
@@ -118,6 +118,34 @@ El formulario adaptable está incrustado en la página web. Observe lo siguiente
 * La segmentación de experiencias y las pruebas A/B configuradas en el formulario adaptable original no funcionarán en el formulario incrustado.
 * Si Adobe Analytics está configurado en el formulario original, el servidor de Adobe Analytics capturará los datos de análisis. Sin embargo, no estará disponible en el informe de análisis de Forms.
 
+## Configuración de direcciones URL de solicitud absolutas con GuideBridge {#configure-base-url}
+
+Cuando el servidor de AEM y la página web están en dominios diferentes, puede utilizar la API de GuideBridge para anteponer un origen de publicación de AEM absoluto a las solicitudes generadas por las bibliotecas guideruntime. Utilice la configuración `baseUrl` para indicar a guideruntime que anteponga el origen absoluto especificado a solicitudes como envío de formularios, recuperación de datos de relleno previo, generación de documentos de registros, cargas de archivos y operaciones de envío interno.
+
+Agregue el siguiente fragmento a la página web en la que se incorpora, junto con la implementación de `guideBridge.connect` existente:
+
+```javascript
+window.guideBridge.connect(function () {
+    window.guideBridge.registerConfig("baseUrl", "https://publish.example.com");
+});
+```
+
+Reemplace `https://publish.example.com` por la URL de publicación del servidor de AEM Forms.
+
+Con esta configuración, cree una URL de solicitud similar al siguiente ejemplo:
+
+```text
+/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
+```
+
+se envía al servidor de AEM como:
+
+```text
+https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
+```
+
+Cuando el servidor de AEM y la página web están en dominios diferentes, también debe configurar CORS en la instancia de publicación de AEM. Siga los pasos que se indican en la sección [habilitar AEM Forms para proporcionar formularios adaptables en un sitio entre dominios](#cross-site).
+
 ## Topología de ejemplo {#sample-topology}
 
 La página web externa que incrusta el formulario adaptable envía solicitudes al servidor de AEM, que normalmente se encuentra detrás del firewall en una red privada. Para garantizar que las solicitudes se dirijan de forma segura al servidor de AEM, se recomienda configurar un servidor proxy inverso.
@@ -171,6 +199,25 @@ Al incrustar un formulario adaptable en una página web, tenga en cuenta las sig
 
 ## Permita que AEM Forms ofrezca formularios adaptables a un sitio de dominios cruzados {#cross-site}
 
+Cuando el servidor de AEM y la página web están en dominios diferentes, configure la instancia de publicación de AEM mediante una de las siguientes opciones.
+
+>[!BEGINTABS]
+
+>[!TAB Utilizando la configuración de GuideBridge baseUrl]
+
+Cuando use la [configuración de GuideBridge `baseUrl`](#configure-base-url), configure CORS en la instancia de publicación de AEM para que el servidor de AEM devuelva los encabezados adecuados para los extremos de envío, relleno previo y Documento de registro.
+
+1. En la instancia de publicación de AEM, vaya al Administrador de configuración de la consola web de AEM en `https://'[server]:[port]'/system/console/configMgr`.
+1. Busque y abra la configuración **Directiva de uso compartido de recursos de origen cruzado de Adobe Granite** (`com.adobe.granite.cors.impl.CORSPolicyImpl`).
+1. Añada el origen de la página web en la que se incorpora a los orígenes permitidos. Por ejemplo, `https://www.example.com`.
+1. Asegúrese de que las rutas permitidas incluyan los puntos finales de AEM Forms utilizados por los formularios adaptables incrustados, como las direcciones URL de envío, relleno previo y documento de registro en `/content/forms/af/`.
+
+>[!TAB Filtro de referente de Apache Sling]
+
+Cuando utilice un proxy inverso o incruste el formulario adaptable sin la configuración de GuideBridge `baseUrl`, configure el filtro de referente de Apache Sling en la instancia de publicación de AEM.
+
 1. En la instancia de publicación de AEM, vaya al Administrador de configuración de la consola web de AEM en `https://'[server]:[port]'/system/console/configMgr`.
 1. Busque y abra la configuración **Filtro de referencias de Apache Sling**.
 1. En el campo Hosts permitidos, especifique el dominio en el que reside la página web. Permita que el host realice peticiones POST al servidor de AEM. También puede utilizar una expresión regular para especificar una serie de dominios de aplicación externos.
+
+>[!ENDTABS]
