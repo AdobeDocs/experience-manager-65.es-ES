@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20ee89572d58ade43d899b9292497717cb82c8b2
+source-git-commit: fb26d0c08644f8b84e406adeb7fb14496e8e9fd0
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 74%
@@ -19,7 +19,7 @@ ht-degree: 74%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
 | AEM 6.5 | Este artículo |
 
 
@@ -144,7 +144,7 @@ se envía al servidor de AEM como:
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-Cuando el servidor de AEM y la página web están en dominios diferentes, también debe configurar CORS en la instancia de publicación de AEM. Siga los pasos que se indican en la sección [habilitar AEM Forms para proporcionar formularios adaptables en un sitio entre dominios](#cross-site).
+Cuando el servidor de AEM y la página web están en dominios diferentes, también debe configurar CORS en la instancia de publicación de AEM. Siga los pasos que se indican en la sección [habilitar AEM Forms para proporcionar formularios adaptables en un sitio entre dominios](#enable-aem-forms-to-serve-adaptive-forms-to-a-cross-domain-site-cross-site).
 
 ## Topología de ejemplo {#sample-topology}
 
@@ -193,8 +193,8 @@ Al incrustar un formulario adaptable en una página web, tenga en cuenta las sig
 
 * Asegúrese de que las reglas de estilo definidas en la página web de CSS no entren en conflicto con el objeto de formulario de CSS. Para evitar conflictos, puede reutilizar la página web de CSS en la temática del formulario adaptable mediante la biblioteca de cliente de AEM. Para obtener información sobre el uso de la biblioteca de cliente en temáticas de formularios adaptables, consulte [temáticas en AEM Forms](../../forms/using/themes.md).
 * Haga que el contenedor de formularios de la página web utilice la anchura de toda la ventana. Garantiza que las reglas CSS configuradas para dispositivos móviles funcionen sin ningún cambio. Si el contenedor de formularios no tiene la anchura de toda la ventana, deberá escribir un CSS personalizado para que el formulario se adapte a diferentes dispositivos móviles.
-* Use la API `[getData](https://helpx.adobe.com/es/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para obtener la representación XML o JSON de los datos de formulario en el cliente.
-* Use la API `[unloadAdaptiveForm](https://helpx.adobe.com/es/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para descargar el formulario adaptable desde DOM HTML.
+* Use la API `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para obtener la representación XML o JSON de los datos de formulario en el cliente.
+* Use la API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para descargar el formulario adaptable desde DOM HTML.
 * Configure el encabezado access-control-origin al enviar una respuesta desde un servidor de AEM.
 
 ## Permita que AEM Forms ofrezca formularios adaptables a un sitio de dominios cruzados {#cross-site}
@@ -221,3 +221,4 @@ Cuando utilice un proxy inverso o incruste el formulario adaptable sin la config
 1. En el campo Hosts permitidos, especifique el dominio en el que reside la página web. Permita que el host realice peticiones POST al servidor de AEM. También puede utilizar una expresión regular para especificar una serie de dominios de aplicación externos.
 
 >[!ENDTABS]
+
