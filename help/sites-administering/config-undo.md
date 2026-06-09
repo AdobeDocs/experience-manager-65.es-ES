@@ -1,6 +1,6 @@
 ---
-title: Configurar Deshacer para editar páginas
-description: AEM Obtenga información sobre cómo configurar la compatibilidad con Deshacer para la edición de páginas en la.
+title: Configuración de Deshacer para editar páginas
+description: Obtenga información sobre cómo configurar la compatibilidad con Deshacer para editar páginas en AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -9,14 +9,14 @@ exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f6a903263eca2c412c6ca9af2f5e51ea1c5878aa
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 0%
+source-wordcount: '701'
+ht-degree: 7%
 
 ---
 
-# Configurar Deshacer para editar páginas{#configuring-undo-for-page-editing}
+# Configuración de Deshacer para editar páginas{#configuring-undo-for-page-editing}
 
 El servicio [OSGi](/help/sites-deploying/configuring-osgi.md) **Configuración de deshacer de CQ WCM de día** ( `com.day.cq.wcm.undo.UndoConfigService`) expone varias propiedades que controlan el comportamiento de los comandos de deshacer y rehacer para editar páginas.
 
@@ -26,7 +26,7 @@ En una instalación estándar, la configuración predeterminada se define como p
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
-Este nodo contiene `cq.wcm.undo.whitelist` y `cq.wcm.undo.blacklist` propiedades. Para las demás propiedades se toman los valores predeterminados.
+Este nodo contiene `cq.wcm.undo.whitelist` y `cq.wcm.undo.blacklist` propiedades. Para las demás propiedades, se toman los valores predeterminados.
 
 >[!CAUTION]
 >
@@ -40,7 +40,7 @@ Puede configurar estas propiedades del servicio OSGi para su propia instancia.
 
 >[!NOTE]
 >
->AEM Al trabajar con los servicios, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+>Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 A continuación, se enumeran las propiedades tal como se muestran en la consola web, seguidas del nombre del parámetro OSGi correspondiente, junto con una descripción y el valor predeterminado (cuando corresponda):
 
@@ -123,7 +123,7 @@ A continuación, se enumeran las propiedades tal como se muestran en la consola 
 
    * Cuando se emiten acciones de deshacer o rehacer a un componente que no está en esta lista, aparece un mensaje que indica que el comando puede no ser fiable.
 
-   * AEM **Predeterminado**: la propiedad se rellena con muchos componentes que proporciona el usuario de la propiedad que la proporciona el usuario de la propiedad de manera predeterminada.
+   * **Predeterminado**: la propiedad se rellena con muchos componentes que proporciona AEM.
    * **Tipo**: `String[]`
 
 * **Componentes incorrectos**
@@ -147,3 +147,4 @@ A continuación, se enumeran las propiedades tal como se muestran en la consola 
 
    * **Predeterminado**: la propiedad se rellena con varias operaciones de componente.
    * **Tipo**: `String[]`
+
