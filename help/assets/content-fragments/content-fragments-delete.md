@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a77b577341050316ce60ae809a4912bbbbce974c
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 79%
+source-wordcount: '517'
+ht-degree: 72%
 
 ---
 
@@ -40,13 +40,13 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
 
 >[!NOTE]
 >
->AEM Consulte también [Cómo auditar las operaciones de administración de usuarios en el espacio de trabajo de &lbrace;10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/audit-user-management-operations.md)
+>Consulte también [Cómo auditar las operaciones de administración de usuarios en AEM](/help/sites-administering/audit-user-management-operations.md).
 
 ## Permisos necesarios para la funcionalidad del editor únicamente {#permissions-required-for-editor-functionality-only}
 
 Para los usuarios que necesiten editar o actualizar un fragmento de contenido, **sin permitirles eliminar un fragmento completo**, se deben asignar permisos específicos, ya que la operación básica del editor de fragmentos de contenido requiere que se puedan eliminar subelementos transitorios.
 
-Por ejemplo, al manipular variaciones; también al editar metadatos o administrar contenido asociado.
+Por ejemplo, al manipular variaciones, al editar metadatos o al administrar contenido asociado.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Por ejemplo, una carpeta que contendrá todos los fragmentos de contenido, como:
 >
 >Configuración de permisos en `/content/dam` también es posible, ya que todos los fragmentos de contenido se almacenan aquí.
 >
->Sin embargo, esta acción se aplica a los mismos permisos de eliminación a *todos* los demás tipos de recursos también.
+>Sin embargo, esta acción aplica los mismos permisos de eliminación a *todos* otros tipos de recursos también.
 
 Los permisos previos para permitir que un usuario o grupo específico edite o actualice un fragmento de contenido son los siguientes:
 
@@ -74,7 +74,7 @@ Los permisos previos para permitir que un usuario o grupo específico edite o ac
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* Para la variable `jcr:content`nodo de todos los fragmentos de contenido:
+* Para el nodo `jcr:content` de todos los fragmentos de contenido:
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`
 
@@ -82,9 +82,9 @@ Los permisos previos para permitir que un usuario o grupo específico edite o ac
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`, `jcr:removeNode`
 
-Estos privilegios de `remove` deben ser [administrados mediante Listas de control de acceso, dentro del CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Estos privilegios de `remove` deben ser [administrados mediante Listas de control de acceso, dentro de CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Los privilegios `add` y `modify` también se pueden administrar en el CRXDE Lite o mediante la consola Administración de usuarios.
+Los privilegios `add` y `modify` también se pueden administrar en CRXDE Lite o mediante la consola Administración de usuarios.
 
 Por ejemplo, la definición de los privilegios de `remove` para un grupo `content-authors-no-delete`:
 

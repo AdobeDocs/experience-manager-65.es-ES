@@ -10,16 +10,16 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 33bf1d9f64c32691f6a9c0568c1c5cb2150f331a
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 46%
+source-wordcount: '2262'
+ht-degree: 42%
 
 ---
 
 # Creación: entorno y herramientas{#authoring-the-environment-and-tools}
 
-El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
 
 ## Administración del sitio {#managing-your-site}
 
@@ -43,7 +43,7 @@ Puede editar una página con el editor de páginas. Por ejemplo:
 >
 >Si lo desea, puede omitir el recorrido y repetirlo en cualquier momento seleccionando una de las opciones del menú **Información de página**.
 
-## Acceso a la Ayuda   {#accessing-help}
+## Acceso a la Ayuda {#accessing-help}
 
 Al editar una página, se puede acceder a la **Ayuda** desde los siguientes puntos:
 
@@ -52,7 +52,7 @@ Al editar una página, se puede acceder a la **Ayuda** desde los siguientes punt
 
 Encontrará [más recursos relacionados con la ayuda en las consolas](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Navegador de componentes   {#components-browser}
+## Navegador de componentes {#components-browser}
 
 El navegador de componentes muestra todos los componentes que se pueden utilizar en la página actual. Se pueden arrastrar a la ubicación adecuada y editarse para añadir contenido.
 
@@ -153,7 +153,7 @@ El aspecto y el control dependerán del tipo de dispositivo que utilice:
 
   El explorador de recursos cubre completamente la página que se está editando.
 
-  Para añadir un recurso a su página, toque y mantenga presionado el recurso necesario y, a continuación, muévalo hacia la derecha: el explorador de recursos se cerrará para mostrar de nuevo la página, donde puede añadir el recurso al componente requerido.
+  Para agregar un recurso a su página, pulse y mantenga presionado el recurso necesario y, a continuación, muévalo hacia la derecha: el explorador de recursos se cerrará para mostrar de nuevo la página, donde podrá agregar el recurso al componente requerido.
 
   ![ateat-09](assets/ateat-09.png)
 
@@ -177,7 +177,7 @@ El árbol de contenido es una pestaña del panel lateral (junto con el explorado
 
 ![Árbol de contenido](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha). Seleccione la pestaña **Árbol de contenido** si es necesario. Cuando se abre, puede ver una representación de vista de árbol de la página o plantilla, de modo que sea más fácil comprender cómo se estructura jerárquicamente su contenido. Además, en una página compleja, resulta más fácil saltar entre los componentes de la página.
+Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha). Seleccione la pestaña **Árbol de contenido** si es necesario. Cuando está abierto, puede ver una representación de vista de árbol de la página o plantilla, de modo que sea más fácil comprender cómo se estructura jerárquicamente su contenido. Además, en una página compleja, resulta más fácil saltar entre los componentes de la página.
 
 ![ateat-11](assets/ateat-11.png)
 
@@ -253,9 +253,9 @@ Por ejemplo, se puede corregir una referencia rota dentro de un componente Refer
 
 ![ateat-14](assets/ateat-14.png)
 
-## Eventos: línea de tiempo {#events-timeline}
+## Eventos: cronología {#events-timeline}
 
-Para obtener los recursos adecuados (por ejemplo, páginas de la consola **Sitios** o activos de la consola **Activos**) se [puede utilizar la cronología para mostrar la actividad reciente de cualquier elemento seleccionado](/help/sites-authoring/basic-handling.md#timeline).
+Para obtener los recursos apropiados (por ejemplo, páginas de la consola **Sites** o recursos de la consola **Assets**), se puede usar la cronología [para mostrar la actividad reciente de cualquier elemento seleccionado](/help/sites-authoring/basic-handling.md#timeline).
 
 Abra la consola en cuestión, desplácese hasta el recurso y abra **Cronología** con el procedimiento siguiente:
 
@@ -267,7 +267,7 @@ Abra la consola en cuestión, desplácese hasta el recurso y abra **Cronología*
 
 ## Información de la página {#page-information}
 
-El botón Información de página (icono de ecualizador) abre un menú que también proporciona detalles sobre la última edición y la última publicación. En función de las características de la página, del sitio y de su instancia, habrá más o menos opciones disponibles:
+El botón Información de página (icono de ecualizador) abre un menú que también proporciona detalles sobre la última edición y la última publicación. Según las características de la página, su sitio, su instancia y sus permisos, podría tener más o menos opciones disponibles:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -290,14 +290,14 @@ Por ejemplo, cuando sea apropiado, **Información de la página** también tiene
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones, cuando proceda.
 
-## Modos de página   {#page-modes}
+## Modos de página {#page-modes}
 
 Al editar una página existen varios modos que permiten realizar diferentes acciones:
 
 * [Editar](/help/sites-authoring/editing-content.md): utilice este modo al editar el contenido de la página.
-* [Diseño](/help/sites-authoring/responsive-layout.md): permite crear y editar su diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños)
+* [Diseño](/help/sites-authoring/responsive-layout.md): permite crear y editar su diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños).
 
-* [Andamiaje](/help/sites-authoring/scaffolding.md): ayuda a crear un gran conjunto de páginas que comparten estructura pero tienen contenido diferente.
+* [Andamiaje](/help/sites-authoring/scaffolding.md): le ayuda a crear un gran conjunto de páginas que comparten estructura pero tienen contenido diferente.
 * [Desarrollador](/help/sites-developing/developer-mode.md): permite realizar diversas acciones (requiere privilegios). Estos incluyen la inspección de los detalles técnicos de una página y sus componentes.
 
 * [Diseño](/help/sites-authoring/default-components-designmode.md): permite habilitar o deshabilitar componentes para usarlos en una página y configurar el diseño del componente (si la página está basada en una [plantilla estática](/help/sites-authoring/templates.md#editable-and-static-templates)).
@@ -307,7 +307,7 @@ Al editar una página existen varios modos que permiten realizar diferentes acci
 
 * [Deformación de tiempo](/help/sites-authoring/working-with-page-versions.md#timewarp): le permite ver el estado de una página en un momento determinado.
 * [Estado de Live Copy](/help/sites-authoring/editing-content.md#live-copy-status): permite echar un vistazo rápido al estado de la Live Copy y de los componentes que se han heredado o no.
-* [Vista previa](/help/sites-authoring/editing-content.md#previewing-pages): se utiliza para ver la página tal como se muestra en el entorno de publicación o para navegar mediante vínculos en el contenido. 
+* [Vista previa](/help/sites-authoring/editing-content.md#previewing-pages): se usa para ver la página tal como se muestra en el entorno de publicación o para navegar mediante vínculos en el contenido.
 
 * [Anotar:](/help/sites-authoring/annotations.md) se utiliza para añadir o ver anotaciones en la página.
 
@@ -327,7 +327,7 @@ Puede acceder a ellas mediante los iconos de la esquina superior derecha. El ico
 
 A menudo, durante la creación es necesario seleccionar otro recurso, como al definir un vínculo a otra página o recurso o al seleccionar una imagen. Para poder seleccionar una ruta con facilidad, los [campos de ruta](/help/sites-authoring/author-environment-tools.md#path-fields) ofrecen la opción de completado automático y el [explorador de rutas](/help/sites-authoring/author-environment-tools.md#path-browser) permite una selección más sólida.
 
-### Campos de rutas   {#path-fields}
+### Campos de rutas {#path-fields}
 
 El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información acerca de cómo usar y editar componentes, vea [Componentes para la creación de páginas](/help/sites-authoring/default-components.md).
 

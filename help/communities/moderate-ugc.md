@@ -10,9 +10,9 @@ role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9c0089e1305ffba72d88842a07bf36b6f923834c
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1538'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ La moderación de UGC es útil para reconocer las contribuciones positivas y lim
 
 * [Moderación en contexto](in-context.md)
 
-  Los administradores y moderadores de la comunidad pueden moderar el contenido del entorno de Publish directamente en la página en la que se publicó.
+  La moderación en el entorno Publicar puede ser realizada por los administradores y moderadores de la comunidad directamente en la página donde se publicó el contenido.
 
 ## Acciones de moderación {#moderation-actions}
 
@@ -159,7 +159,7 @@ Al seleccionar la acción Cortar, el contenido se copia en un portapapeles. Se p
 
 ![putbackugc](assets/putbackugc.png)
 
-En la otra ubicación, cuando el contenido está presente en el portapapeles, se ve un botón Pegar junto a Nuevo Post con un número que identifica el número de publicaciones que se pegarán. El botón Pegar incluye una opción para borrar el portapapeles en lugar de pegarlo.
+En la otra ubicación, cuando el contenido está presente en el portapapeles, se ve un botón Pegar junto a Nueva publicación con un número que identifica el número de publicaciones que se pegarán. El botón Pegar incluye una opción para borrar el portapapeles en lugar de pegarlo.
 
 ![pasteugc](assets/pasteugc.png)
 
@@ -173,7 +173,7 @@ Un moderador puede impedir que UGC permanezca visible en el sitio publicado. Par
 
 La acción Cerrar funciona en todo el hilo de conversación (un tema de foro o el comentario inicial) e incluye todas las publicaciones o respuestas posteriores.
 
-Cuando se cierra, no solo no son posibles más respuestas, sino que tampoco se permiten acciones de moderación.
+Cuando se cierra, no se permiten más respuestas ni acciones de moderación.
 
 Para realizar cualquier operación, el tema o comentario debe volver a abrirse.
 
@@ -211,9 +211,9 @@ La detección de correo no deseado es una funcionalidad de moderación automáti
 
 Sin embargo, para personalizar o ampliar las palabras de correo no deseado predeterminadas, cree un conjunto de palabras en el directorio /apps siguiendo la estructura de las palabras de correo no deseado predeterminadas con [superposición](/help/communities/overlay-comments.md).
 
-Una publicación generada por el usuario (en todos los tipos de contenido, por ejemplo, blogs, foros y comentarios) que contenga palabras no deseadas se marca con el texto &quot;Esta publicación se clasificó como no deseada&quot; encima de la publicación.
+Una publicación generada por el usuario (en todos los tipos de contenido, como blogs, foros y comentarios) que contenga palabras no deseadas se marca con el texto &quot;Esta publicación se clasificó como no deseada&quot; encima de la publicación.
 
-El moderador puede ver una publicación de este tipo y marcar la misma para permitir o denegar la aparición en el sitio. Las acciones de moderación de estas publicaciones se pueden realizar en contexto o a través de la interfaz de usuario de moderación masiva.
+Los moderadores pueden ver una publicación de este tipo y marcarla como que no aparece en el sitio. Las acciones de moderación de estas publicaciones se pueden realizar en contexto o a través de la interfaz de usuario de moderación masiva.
 
 ![detección de spam](assets/spamdetection.png)
 
@@ -236,7 +236,7 @@ La opinión se calcula según el número de palabras clave positivas y negativas
 
 El análisis de opinión utiliza un conjunto de reglas preconfiguradas y calcula la opinión del UGC. Las reglas predeterminadas están en `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
 
-El valor que generan las reglas es de 1 (todas negativas, sin palabras positivas) a 10 (todas positivas, sin palabras negativas). Un valor de opinión de 5 es un sentimiento neutro y es el valor predeterminado.
+El valor que generan las reglas es de 1 (todas negativas, sin palabras positivas) a 10 (todas positivas, sin palabras negativas). Un valor de opinión de 5 es una opinión neutra y es la predeterminada.
 
 Las reglas definidas en el componente /libs son las siguientes:
 
@@ -247,15 +247,15 @@ Las reglas definidas en el componente /libs son las siguientes:
 
 Para sobrescribir o agregar reglas, cree un conjunto de reglas en el directorio /apps siguiendo la estructura de las reglas predeterminadas. Edite la configuración de opinión para poder identificar la ubicación de las reglas.
 
-Una vez analizado, la opinión se almacena con el UGC.
+Una vez analizada, la opinión se almacena con el UGC.
 
-Desde la [consola de moderación masiva](/help/communities/moderation.md), es posible filtrar y ver UGC en función de si el sentimiento es negativo, neutro o positivo.
+Desde la [consola de moderación masiva](/help/communities/moderation.md), es posible filtrar y ver UGC en función de si la opinión es negativa, neutra o positiva.
 
 #### Watchwords {#watchwords}
 
-AEM Communities proporciona un *analizador de palabras clave* como paso en el proceso para evaluar [opinión](#sentiment). La contribución al valor de opinión proporcionado por las palabras clave se debe a una comparación de palabras clave negativas y positivas utilizadas en el contenido publicado, y palabras prohibidas.
+AEM Communities proporciona un *analizador de palabras de inspección* como paso en el proceso para evaluar [la opinión](#sentiment). La contribución al valor de opinión proporcionado por las palabras clave se debe a una comparación de las palabras clave negativas y positivas utilizadas en el contenido publicado, y las palabras prohibidas.
 
-#### Configuración de opiniones y palabras de inspección {#configure-sentiment-and-watchwords}
+#### Configuración de Opinión y palabras de inspección {#configure-sentiment-and-watchwords}
 
 La lista de palabras observadas positivas y negativas se puede personalizar, al igual que las reglas de opinión.
 
@@ -263,7 +263,7 @@ La lista predeterminada de palabras observadas se puede introducir como propieda
 
 **sentimentprocess.name** también se puede modificar para hacer referencia a la ubicación de un conjunto personalizado de reglas de opinión.
 
-Para configurar opiniones y palabras observadas:
+Para configurar la opinión y las palabras observadas:
 
 * Inicie sesión en la instancia de autor como administrador.
 * Abra [Consola web](https://localhost:4502/system/console/configMgr).
@@ -274,19 +274,19 @@ Para configurar opiniones y palabras observadas:
 
 * **Observaciones positivas**
 
-  Una lista de palabras separadas por comas que contribuyen a un sentimiento positivo que anula los valores predeterminados. La lista predeterminada está vacía.
+  Una lista de palabras separadas por comas que contribuyen a una opinión positiva que anula los valores predeterminados. La lista predeterminada está vacía.
 
 * **Observaciones negativas**
 
-  Una lista de palabras separadas por comas que contribuyen a un sentimiento negativo que anula los valores predeterminados. La lista predeterminada está vacía.
+  Una lista de palabras separadas por comas que contribuyen a una opinión negativa que anula los valores predeterminados. La lista predeterminada está vacía.
 
 * **Ruta explícita al nodo Watchwords**
 
   Ubicación del repositorio de un nodo que contiene las propiedades predeterminadas `positive` y `negative` que especifican las palabras observadas predeterminadas. El valor predeterminado es `/libs/settings/community/watchwords/default`.
 
-* **Reglas de opinión**
+* **Reglas de Opinión**
 
-  Ubicación del repositorio de las reglas para calcular la opinión basada en palabras observadas positivas y negativas. El valor predeterminado es `/libs/cq/workflow/components/workflow/social/sentiments/rules` (sin embargo, ya no hay ningún flujo de trabajo involucrado).
+  Ubicación del repositorio de las reglas para calcular la opinión en función de palabras observadas positivas y negativas. El valor predeterminado es `/libs/cq/workflow/components/workflow/social/sentiments/rules` (sin embargo, ya no hay ningún flujo de trabajo involucrado).
 
 A continuación se muestra un ejemplo de una entrada personalizada para las palabras clave predeterminadas, cuando `Explicit Path to Watchwords Node` está establecido en `/libs/settings/community/watchwords/default`.
 

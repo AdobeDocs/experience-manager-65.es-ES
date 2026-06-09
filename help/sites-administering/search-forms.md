@@ -1,6 +1,6 @@
 ---
 title: Configurar formularios de búsqueda
-description: Aprenda a utilizar Search Forms AEM para personalizar la selección de predicados de búsqueda utilizados en los paneles de búsqueda disponibles en las consolas y los paneles de la consola de creación de segmentos de un entorno de creación de informes.
+description: Aprenda a utilizar Search Forms para personalizar la selección de predicados de búsqueda utilizados en los paneles de búsqueda disponibles en las consolas y paneles de AEM del entorno de creación.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -9,9 +9,9 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: d4b1cd8bc04ea21378c8084f4fac8cd66d6c1d3c
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2079'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # Configurar formularios de búsqueda{#configuring-search-forms}
 
-Use **Buscar en Forms AEM** para personalizar la selección de predicados de búsqueda utilizados en los paneles de búsqueda disponibles en varias consolas de o paneles del entorno de creación. La personalización de estos paneles hace que la funcionalidad de búsqueda sea versátil según sus necesidades específicas.
+Use **Buscar en Forms** para personalizar la selección de predicados de búsqueda utilizados en los paneles de búsqueda disponibles en varias consolas o paneles de AEM del entorno de creación. La personalización de estos paneles hace que la funcionalidad de búsqueda sea versátil según sus necesidades específicas.
 
 Hay un [rango de predicados](#predicates-and-their-settings)s disponibles de forma predeterminada. Puede agregar varios predicados, incluido (entre otros) el predicado Propiedad, para buscar recursos que coincidan con una sola propiedad especificada por usted. O bien, el predicado Opciones para buscar recursos que coincidan con uno o varios valores especificados para una propiedad en particular.
 
@@ -63,7 +63,7 @@ Las configuraciones predeterminadas disponibles son las siguientes:
 
   Esta configuración define las opciones disponibles al buscar productos en el explorador de recursos (al editar una página).
 
-* **Editor de páginas (búsqueda de Dynamic Media Classic [anteriormente Scene7])**:
+* **Editor de páginas (Dynamic Media Classic [anteriormente búsqueda de Scene7])**:
 
   Esta configuración define las opciones disponibles al buscar recursos de Scene7 en el explorador de recursos (al editar una página).
 
@@ -110,7 +110,7 @@ Los siguientes predicados están disponibles, según la configuración:
   <tr>
    <th>Predicado</th>
    <th>Función</th>
-   <th>Ajustes</th>
+   <th>Configuración</th>
   </tr>
   <tr>
    <td>Análisis </td>
@@ -149,7 +149,7 @@ Los siguientes predicados están disponibles, según la configuración:
     </ul> </td>
   </tr>
   <tr>
-   <td>Intervalo de fechas </td>
+   <td>Intervalo de fecha </td>
    <td>Busque recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización.</td>
    <td>
     <ul>
@@ -198,7 +198,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>
     <ul>
      <li>Etiqueta de campo</li>
-     <li>Ruta de JSON</li>
+     <li>Ruta JSON</li>
      <li>Nombre de propiedad*</li>
      <li>Selección única</li>
      <li>Ruta de opción</li>
@@ -343,7 +343,7 @@ Los siguientes predicados están disponibles, según la configuración:
 
 ### Configuración de predicado {#predicate-settings}
 
-En función del predicado, hay una selección de opciones disponibles para la configuración:
+Según el predicado, hay una selección de ajustes disponibles para la configuración:
 
 * **Etiqueta de campo**
 
@@ -391,10 +391,10 @@ Igual que en la práctica **Ruta de opciones**, solo que esto se encuentra en el
 * **Selección única**
 Si se selecciona, las opciones se representan como casillas de verificación que permiten solo una selección. Si se selecciona por error, se puede anular la selección de una casilla de verificación.
 
-* **Nombres de propiedades de Publish y Live Copy**
+* **Nombres de propiedades de publicación y Live Copy**
 Las etiquetas de las casillas de verificación de publicación y Live Copy para el predicado específico de Sites.
 
-* La &ast; de las etiquetas de campo de la ficha **Configuración** indica que los campos son obligatorios y, si se deja en blanco, aparece un mensaje de error.
+* &ast; en las etiquetas de campo de la ficha **Settings** indica que los campos son obligatorios y, si se deja en blanco, aparece un mensaje de error.
 
 ## Configuración de Search Forms {#configuring-your-search-forms}
 
@@ -482,7 +482,7 @@ La eliminación de una configuración personalizada se realiza desde la consola:
 
 Los predicados de opciones (Options, Options, Property) permiten configurar un elemento para buscarlo. Se utilizan para buscar algo directamente debajo de la página; por ejemplo, una propiedad en el nodo de la página.
 
-El siguiente ejemplo (para buscar según la plantilla utilizada para crear una página), ilustra los pasos involucrados:
+El siguiente ejemplo (para buscar según la plantilla utilizada para crear una página) ilustra los pasos involucrados:
 
 1. Cree el nodo que define la propiedad en la que se va a buscar.
 

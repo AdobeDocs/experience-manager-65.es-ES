@@ -1,5 +1,5 @@
 ---
-title: Candidatos de tienda de ContextHub de muestra
+title: Candidatos de almacenes de muestra de ContextHub
 description: ContextHub proporciona varios candidatos de tienda de muestra que puede utilizar en sus soluciones
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: ab939c3928068a0836674db6207d9774d6033e79
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 1%
+source-wordcount: '475'
+ht-degree: 2%
 
 ---
 
-# Candidatos de tienda de ContextHub de muestra{#sample-contexthub-store-candidates}
+# Candidatos de almacenes de muestra de ContextHub{#sample-contexthub-store-candidates}
 
 ContextHub proporciona varios candidatos de tienda de muestra que puede utilizar en sus soluciones. Se proporciona la siguiente información para cada muestra:
 
@@ -110,7 +110,7 @@ El almacén utiliza un árbol de datos similar al siguiente ejemplo:
 
 >[!NOTE]
 >
->Una directiva de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. AEM AEM Por lo tanto, se fuerza el uso de https para las llamadas a la API de geolocalización si también se está ejecutando en https, por lo que también se fuerza el uso de https. De lo contrario, http se utiliza para cumplir con la política del mismo origen. Consulte [esta publicación de blog de Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obtener más información sobre el cambio en Chrome.
+>Una directiva de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. Por lo tanto, AEM fuerza el uso de https para las llamadas a la API de geolocalización si AEM también se ejecuta en https. De lo contrario, http se utiliza para cumplir con la política del mismo origen. Consulte [esta publicación de blog de Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obtener más información sobre el cambio en Chrome.
 
 ## contexthub.surferinfo Candidato de tienda de muestra {#contexthub-surferinfo-sample-store-candidate}
 
@@ -351,3 +351,4 @@ Las tiendas que utilizan este candidato de tienda tienen un árbol de datos simi
    "authorizableId":"anonymous"
 }
 ```
+

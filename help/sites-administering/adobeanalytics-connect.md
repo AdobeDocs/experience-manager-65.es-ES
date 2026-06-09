@@ -1,6 +1,6 @@
 ---
 title: Conectarse a Adobe Analytics y crear marcos
-description: AEM Obtenga información acerca de cómo conectar a los usuarios con el SiteCatalyst y crear marcos de trabajo.
+description: Obtenga información sobre cómo conectar AEM a SiteCatalyst y crear marcos de trabajo.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -10,18 +10,18 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 3%
+source-wordcount: '1491'
+ht-degree: 9%
 
 ---
 
 # Conectarse a Adobe Analytics y crear marcos {#connecting-to-adobe-analytics-and-creating-frameworks}
 
-AEM Para realizar un seguimiento de los datos web de sus páginas de en Adobe Analytics, cree una configuración de servicios de Adobe Analytics Cloud y un marco de trabajo de Adobe Analytics:
+Para realizar un seguimiento de los datos web de sus páginas de AEM en Adobe Analytics, cree una configuración de servicios de Adobe Analytics Cloud y un marco de trabajo de Adobe Analytics:
 
-* **Configuración de Adobe Analytics:** La información sobre tu cuenta de Adobe Analytics. La configuración de Adobe Analytics AEM le permite a los usuarios conectarse a Adobe Analytics de forma remota. Cree una configuración de Adobe Analytics para cada cuenta que utilice.
+* **Configuración de Adobe Analytics:** La información sobre tu cuenta de Adobe Analytics. La configuración de Adobe Analytics permite que AEM se conecte a Adobe Analytics. Cree una configuración de Adobe Analytics para cada cuenta que utilice.
 * **Marco de trabajo de Adobe Analytics:** Un conjunto de asignaciones entre las propiedades del grupo de informes de Adobe Analytics y las variables de CQ. Utilice un marco de trabajo para configurar cómo los datos del sitio web rellenan los informes de Adobe Analytics. Los módulos están asociados a una configuración de Adobe Analytics. Puede crear varios marcos de trabajo para cada configuración.
 
 Cuando asocia una página web con un marco de trabajo, este realiza el seguimiento de esa página y de sus descendientes. Las vistas de página se pueden recuperar desde Adobe Analytics y mostrar en la consola Sitios.
@@ -30,7 +30,7 @@ Cuando asocia una página web con un marco de trabajo, este realiza el seguimien
 
 ### Cuenta de Adobe Analytics {#adobe-analytics-account}
 
-AEM Para realizar un seguimiento de los datos de la en Adobe Analytics, debe tener una cuenta de Adobe Experience Cloud Adobe Analytics válida.
+Para realizar un seguimiento de los datos de AEM en Adobe Analytics, debe tener una cuenta de Adobe Analytics de Adobe Experience Cloud válida.
 
 La cuenta de Adobe Analytics debe:
 
@@ -39,19 +39,19 @@ La cuenta de Adobe Analytics debe:
 
 >[!CAUTION]
 >
->Proporcionar privilegios de **administrador** (dentro de Adobe Analytics AEM) no es suficiente para permitir que un usuario se conecte de forma remota a Adobe Analytics, ya que no se puede conectar de forma directa a la red de usuarios de la red de correo electrónico de. La cuenta también debe tener privilegios de **acceso al servicio web**.
+>Proporcionar privilegios de **administrador** (en Adobe Analytics) no es suficiente para permitir que un usuario se conecte de AEM a Adobe Analytics. La cuenta también debe tener privilegios de **acceso al servicio web**.
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-Antes de continuar, asegúrese de que sus credenciales le permiten iniciar sesión en Adobe Analytics. Mediante cualquiera de las siguientes acciones:
+Antes de continuar, asegúrese de que sus credenciales le permiten iniciar sesión en Adobe Analytics mediante cualquiera de las siguientes opciones:
 
-* [Iniciar sesión en Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
+* [Inicio de sesión de Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
 
-* [Iniciar sesión en Adobe Analytics](https://sc.omniture.com/login/)
+* [Inicio de sesión en Adobe Analytics](https://sc.omniture.com/login/)
 
-### AEM Configuración de la configuración para utilizar los centros de datos de Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
+### Configuración de AEM para utilizar los centros de datos de Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Los [centros de datos](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=es) de Adobe Analytics recopilan, procesan y almacenan datos asociados con su grupo de informes de Adobe Analytics. AEM Configure para utilizar el centro de datos que aloja el grupo de informes de Adobe Analytics. El centro de datos se menciona en el contrato. Póngase en contacto con un administrador de su organización para obtener esta información.
+Los [centros de datos](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=es) de Adobe Analytics recopilan, procesan y almacenan datos asociados con su grupo de informes de Adobe Analytics. Configure AEM para que utilice el centro de datos que aloja su grupo de informes de Adobe Analytics. El centro de datos se menciona en el contrato. Póngase en contacto con un administrador de su organización para obtener esta información.
 
 Si es necesario, use lo siguiente para ser enrutado al centro de datos correcto: `https://api.omniture.com/`.
 
@@ -63,7 +63,7 @@ Si su organización requiere la recopilación o recuperación de datos de un cen
 | Singapur | `https://api4.omniture.com/` |
 | Oregón | `https://api5.omniture.com/` |
 
-Use la consola web [para configurar el paquete OSGi](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **Cliente HTTP de Adobe AEM Analytics**. AEM Agregue la **URL del centro de datos** para el centro de datos que hospeda un grupo de informes para el cual sus páginas recopilan datos de manera de datos de sus páginas.
+Use la consola web [para configurar el paquete OSGi](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **Cliente HTTP de Adobe AEM Analytics**. Agregue la **URL del centro de datos** para el centro de datos que hospeda un grupo de informes para el cual las páginas de AEM recopilan datos.
 
 ![aa-07](assets/aa-07.png)
 
@@ -74,7 +74,7 @@ Use la consola web [para configurar el paquete OSGi](/help/sites-deploying/confi
    >
    >Para saber si tiene acceso a esta consola, póngase en contacto con el administrador del sitio.
 
-1. Seleccione el elemento de configuración denominado **Adobe AEM cliente HTTP de Analytics**.
+1. Seleccione el elemento de configuración denominado **Cliente HTTP de Adobe AEM Analytics**.
 1. Para agregar la URL de un centro de datos, presione el botón + situado junto a la lista **URL del centro de datos** y escriba la URL en el cuadro.
 
 1. Para quitar una dirección URL de la lista, haga clic en el botón - situado junto a la dirección URL.
@@ -84,15 +84,15 @@ Use la consola web [para configurar el paquete OSGi](/help/sites-deploying/confi
 
 >[!CAUTION]
 >
->Debido a los cambios de seguridad dentro de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map AEM incluida en el programa de trabajo de.
+>Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
 >
 >Ahora se debe usar el complemento [ActivityMap proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es).
 
-## Configuración para el Activity Map {#configuring-for-the-activity-map}
+## Configuración de para Activity Map {#configuring-for-the-activity-map}
 
 >[!CAUTION]
 >
->Debido a los cambios de seguridad dentro de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map AEM incluida en el programa de trabajo de.
+>Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
 >
 >Ahora se debe usar el complemento [ActivityMap proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es).
 
@@ -102,15 +102,15 @@ En el caso del ID del grupo de informes (RSID) que esté utilizando, puede contr
 
 * **Todos**: la información del autor y de la instancia de publicación rellena el grupo de informes.
 * **Autor**: Solo la información de la instancia de autor rellena el grupo de informes.
-* **Publish**: solo la información de la instancia de publicación rellena el grupo de informes.
+* **Publicar**: Solo la información de la instancia de publicación rellena el grupo de informes.
 
 >[!NOTE]
 >
 >La selección del tipo de instancia de servidor no restringe las llamadas a Adobe Analytics, solo controla qué llamadas incluyen el RSID.
 >
->Por ejemplo, un marco de trabajo está configurado para usar el grupo de informes *diweretail*, y el autor es la instancia de servidor seleccionada. Cuando las páginas se publican junto con el marco de trabajo, se siguen realizando llamadas a Adobe Analytics, pero estas llamadas no contienen el RSID. Solo las llamadas de la instancia de autor incluyen el RSID.
+>Por ejemplo, un marco de trabajo está configurado para usar el grupo de informes *diweretail*, y el autor es la instancia de servidor seleccionada. Cuando las páginas se publican junto con el marco de trabajo, se siguen realizando llamadas a Adobe Analytics. Sin embargo, estas llamadas no contienen el RSID. Solo las llamadas de la instancia de autor incluyen el RSID.
 
-1. Usando **Navegación**, seleccione **Herramientas**, **Cloud Service** y después **Cloud Service heredados**.
+1. Usando **Navegación**, seleccione **Herramientas**, **Cloud Services** y después **Cloud Services heredados**.
 1. Desplácese a **Adobe Analytics** y seleccione **Mostrar configuraciones**.
 1. Haga clic en el vínculo **[+]** junto a la configuración de Adobe Analytics.
 
@@ -174,17 +174,17 @@ Los descendientes de la página heredan la asociación con el marco. Por ejemplo
 
 1. En la consola **Sites**, seleccione la página que desee configurar con seguimiento.
 1. Abra **[Propiedades de página](/help/sites-authoring/editing-page-properties.md)**, ya sea directamente desde la consola o desde el editor de páginas.
-1. Abra la pestaña **&#x200B; Cloud Service &#x200B;**.
+1. Abra la pestaña **&#x200B; Cloud Services**.
 
 1. Utilice la lista desplegable **Agregar configuración** para seleccionar **Adobe Analytics** de las opciones disponibles. Si se hereda, desactívelo antes de que el selector esté disponible.
 
 1. El selector desplegable de **Adobe Analytics** se anexa a las opciones disponibles. Seleccione la configuración del marco de trabajo necesaria.
 
 1. Seleccione **Guardar y cerrar**.
-1. Para activar la página y cualquier configuración o archivo conectado, **[Publish](/help/sites-authoring/publishing-pages.md)** la página.
+1. Para activar la página y cualquier configuración o archivo conectado, **[publique](/help/sites-authoring/publishing-pages.md)** la página.
 1. El paso final es visitar la página en la instancia de publicación y buscar una palabra clave (por ejemplo, berenjena) usando el componente **Search**.
-1. A continuación, puede comprobar las llamadas realizadas a Adobe Analytics con una herramienta adecuada; por ejemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=es).
-1. Utilizando el ejemplo proporcionado, la llamada debe contener el valor introducido (es decir, berenjena) en eVar 7 y la lista de eventos debe contener event3.
+1. A continuación, puede comprobar las llamadas realizadas a Adobe Analytics mediante una herramienta adecuada; por ejemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=es).
+1. Utilizando el ejemplo proporcionado, la llamada debe contener el valor introducido (es decir, berenjena) en eVar7 y la lista de eventos debe contener event3.
 
 ### Vistas de la página {#page-views}
 
@@ -194,7 +194,7 @@ Consulte [Ver datos de análisis de página](/help/sites-authoring/page-analytic
 
 ### Configuración del intervalo de importación {#configuring-the-import-interval}
 
-Configure la instancia apropiada del servicio **Importador de Sling de informes de Adobe AEM de Analytics**:
+Configure la instancia apropiada del servicio **Importador de Sling de informes de AEM Analytics de Adobe**:
 
 * **Intentos de recuperación**:
 Número de intentos de recuperar un informe en cola.
@@ -212,7 +212,7 @@ Para configurar este servicio OSGi, puede usar la [consola web](/help/sites-depl
 
 ## Edición de configuraciones y/o marcos de Adobe Analytics {#editing-adobe-analytics-configurations-and-or-frameworks}
 
-Al igual que cuando crea una configuración o un marco de trabajo de Adobe Analytics, vaya a la pantalla (heredada) **Cloud Service**. Seleccione **Mostrar configuraciones** y luego haga clic en el vínculo a la configuración específica que desee actualizar.
+Al igual que cuando crea una configuración o un marco de trabajo de Adobe Analytics, vaya a la pantalla (heredada) **Cloud Services**. Seleccione **Mostrar configuraciones** y luego haga clic en el vínculo a la configuración específica que desee actualizar.
 
 Al editar una configuración de Adobe Analytics, presione **Editar** en la página de configuración para abrir el cuadro de diálogo **Editar componente**.
 
