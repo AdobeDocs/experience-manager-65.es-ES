@@ -6,10 +6,10 @@ feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: ffa4c2522bfe98d99693e3c17666b728377337f9
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 60%
+source-wordcount: '1154'
+ht-degree: 62%
 
 ---
 
@@ -29,14 +29,14 @@ El archivo se aplica a todos los proyectos de traducción.
 
 >[!NOTE]
 >
->Después de una actualización a 6.4, se recomienda mover el archivo de /etc. AEM Consulte [Reestructuración común de repositorios en la versión 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) de para obtener más información.
+>Después de una actualización a 6.4, se recomienda mover el archivo de /etc. Consulte [Reestructuración común de repositorios en AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) para obtener más información.
 
 Las reglas incluyen la siguiente información:
 
 * Ruta del nodo al que se aplica la regla. La regla también se aplica a los descendientes del nodo.
 * Nombres de las propiedades del nodo que contienen el contenido que se va a traducir. La propiedad puede ser específica para un tipo de recurso específico o para todos los tipos de recurso.
 
-AEM Por ejemplo, puede crear una regla que traduzca el contenido que los autores añaden a todos los componentes de texto base de las páginas de sus páginas de trabajo. La regla puede identificar el nodo `/content` y la propiedad `text` para el componente `foundation/components/text`.
+Por ejemplo, puede crear una regla que traduzca el contenido que los autores añaden a todos los componentes Texto de base de AEM en sus páginas. La regla puede identificar el nodo `/content` y la propiedad `text` para el componente `foundation/components/text`.
 
 Hay una [consola](#translation-rules-ui) que se ha añadido para configurar reglas de traducción. Las definiciones de la IU rellenarán el archivo por usted.
 
@@ -65,7 +65,7 @@ Cada uno de estos elementos `node` tiene las siguientes características:
 * Los elementos secundarios `property` identifican las propiedades del nodo que se deben traducir para todos los tipos de recursos:
 
    * El atributo `name` contiene el nombre de la propiedad.
-   * El atributo opcional `translate` es igual a `false` si la propiedad no está traducida. El valor predeterminado es `true`. Este atributo es útil cuando se anulan reglas anteriores.
+   * El atributo opcional `translate` es igual a `false` si la propiedad no está traducida. De manera predeterminada, el valor es `true`. Este atributo es útil cuando se anulan reglas anteriores.
 
 * Los elementos secundarios `node` identifican las propiedades del nodo que se deben traducir para tipos de recursos específicos:
 
@@ -80,7 +80,7 @@ La siguiente regla de ejemplo hace que el contenido de todas las propiedades `te
 </node>
 ```
 
-El siguiente ejemplo traduce el contenido de todas las propiedades de `text` y traduce también otras propiedades del componente de imagen base. Si otros componentes tienen propiedades con el mismo nombre, la regla no se les aplica.
+El siguiente ejemplo traduce el contenido de todas las propiedades de `text` y también otras propiedades del componente de imagen base. Si otros componentes tienen propiedades con el mismo nombre, la regla no se les aplica.
 
 ```xml
 <node path="/content">
@@ -170,7 +170,7 @@ Hay 4 atributos que puede cambiar mediante la interfaz de usuario: `isDeep`, `in
 
 **isDeep**: este atributo es aplicable a los filtros de nodo y es verdadero de forma predeterminada. Comprueba si el nodo (o sus antecesores) contiene esa propiedad con el valor de propiedad especificado en el filtro. Si es false, solo lo comprueba en el nodo actual.
 
-Por ejemplo, los nodos secundarios se agregan a un trabajo de traducción incluso cuando el nodo principal tiene la propiedad `draftOnly` establecida en true para marcar el contenido de borrador. Aquí `isDeep` entra en juego y comprueba si los nodos principales tienen la propiedad `draftOnly` como true y excluye esos nodos secundarios.
+Por ejemplo, los nodos secundarios se agregan a un trabajo de traducción incluso cuando el nodo principal tiene la propiedad `draftOnly` establecida en true para marcar el contenido de borrador. `isDeep` comprueba si los nodos principales tienen la propiedad `draftOnly` como true y excluye esos nodos secundarios.
 
 En el editor, puede marcar o desmarcar **Is Deep** en la pestaña **Filters**.
 
@@ -184,7 +184,7 @@ Este es un ejemplo del xml resultante cuando **Es profundo** está desmarcado en
 </filter>
 ```
 
-**inherit** Esto se aplica a las propiedades. De forma predeterminada, todas las propiedades se heredan, pero si desea que alguna propiedad no se herede en el nodo secundario, puede marcar esa propiedad como falsa para que se aplique únicamente en ese nodo específico.
+**inherit** Esto se aplica a las propiedades. De forma predeterminada, todas las propiedades se heredan, pero si desea que el nodo secundario no herede una propiedad, puede marcar esa propiedad como falsa para que se aplique únicamente a ese nodo específico.
 
 En la IU, puede marcar o desmarcar **Heredar** en la pestaña **Propiedades**.
 
@@ -194,7 +194,7 @@ En la IU, puede marcar o desmarcar **Heredar** en la pestaña **Propiedades**.
 
 En la IU, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades**.
 
-**updateDestinationLanguage**: este atributo se utiliza para propiedades que no tienen texto, sino códigos de idioma, por ejemplo, jcr:idioma. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
+**updateDestinationLanguage**: este atributo se utiliza para propiedades que no tienen texto, sino códigos de idioma como `jcr:language`. El usuario no traduce texto sino la configuración regional del idioma de origen a destino. Estas propiedades no se envían para su traducción.
 
 En la interfaz de usuario, puede marcar o desmarcar **Traducir** en la pestaña **Propiedades**, pero para las propiedades específicas que tienen códigos de idioma como valor.
 
@@ -211,9 +211,9 @@ El resultado en el xml tendrá este aspecto:
 
 ## Edición manual del archivo de reglas {#editing-the-rules-file-manually}
 
-AEM El archivo translation_rules.xml instalado con contiene un conjunto predeterminado de reglas de traducción. Puede editar el archivo para satisfacer los requisitos de sus proyectos de traducción. Por ejemplo, puede agregar reglas para que se traduzca el contenido de los componentes personalizados.
+El archivo translation_rules.xml instalado con AEM contiene un conjunto predeterminado de reglas de traducción. Puede editar el archivo para satisfacer los requisitos de sus proyectos de traducción. Por ejemplo, puede agregar reglas para que se traduzca el contenido de los componentes personalizados.
 
-Si edita el archivo translation_rules.xml, mantenga una copia de seguridad en un paquete de contenido. AEM AEM La instalación de paquetes de servicio o la reinstalación de ciertos paquetes de puede reemplazar el archivo translation_rules.xml actual por el original. Para restaurar las reglas en esta situación, puede instalar el paquete que contiene la copia de seguridad.
+Si edita el archivo translation_rules.xml, mantenga una copia de seguridad en un paquete de contenido. La instalación de Service Packs de AEM o la reinstalación de ciertos paquetes de AEM pueden reemplazar el archivo translation_rules.xml actual por el original. Para restaurar las reglas en esta situación, puede instalar el paquete que contiene la copia de seguridad.
 
 >[!NOTE]
 >

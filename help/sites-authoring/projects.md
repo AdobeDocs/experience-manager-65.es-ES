@@ -5,10 +5,10 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 35042bcda42d01a9f21afc2230556475cb2983d8
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 27%
+source-wordcount: '1373'
+ht-degree: 30%
 
 ---
 
@@ -27,7 +27,7 @@ Como usuario, puede:
 
 Los proyectos son una función estándar de AEM y no requieren ninguna configuración adicional.
 
-Sin embargo, para que los usuarios de los proyectos puedan ver a otros usuarios o grupos mientras utilizan Proyectos como, por ejemplo, al crear proyectos, crear tareas/flujos de trabajo o ver y administrar el equipo, dichos usuarios necesitan tener acceso de lectura en `/home/users` y `/home/groups`.
+Sin embargo, para que los usuarios de proyectos puedan ver a otros usuarios o grupos mientras utilizan proyectos, como al crear proyectos, crear tareas/flujos de trabajo o ver y administrar el equipo, dichos usuarios deben tener acceso de lectura en `/home/users` y `/home/groups`.
 
 La forma más sencilla de hacerlo es conceder acceso de lectura al grupo **projects-users** a `/home/users` y `/home/groups`.
 
@@ -37,7 +37,7 @@ La consola Proyectos es donde se accede a los proyectos y se administran dentro 
 
 ![La consola de proyectos](assets/screen-shot_2019-03-05at125110.png)
 
-La consola Proyectos es similar a otras consolas de AEM, permite realizar varias acciones en proyectos individuales y ajustar la vista de los proyectos.
+La consola Proyectos es similar a otras consolas de AEM. Permite realizar varias acciones en proyectos individuales y ajustar la vista de los proyectos.
 
 ### Alternar el modo {#modes}
 
@@ -97,7 +97,7 @@ Puede tener los siguientes mosaicos asociados al proyecto.
 
 Haga clic en el menú desplegable en la parte superior derecha de cualquier mosaico para agregar más datos al mosaico.
 
-Haga clic en el botón de puntos suspensivos en la parte inferior derecha de cualquier mosaico para abrir los datos del mosaico en la consola asociada.
+Haga clic en el botón de los tres puntos de la parte inferior derecha de cualquier mosaico para abrir los datos del mosaico en la consola asociada.
 
 ### Assets {#assets}
 
@@ -105,7 +105,7 @@ En el mosaico **Recursos**, puede recopilar todos los recursos que utilice para 
 
 ![Mosaico de recursos](assets/project-tile-assets.png)
 
-Puede cargar recursos directamente en el mosaico.
+Los recursos se cargan directamente en el mosaico.
 
 ### Colecciones de recursos {#asset-collections}
 
@@ -162,7 +162,7 @@ El mosaico **Páginas de aterrizaje** le permite solicitar una nueva página de 
 
 ![Mosaico de página de aterrizaje](assets/project-tile-landing.png)
 
-Este flujo de trabajo se describe en el documento[Crear un flujo de trabajo de página de aterrizaje.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
+Este flujo de trabajo se describe en el documento [Crear un flujo de trabajo de página de aterrizaje.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### Correos electrónicos {#emails}
 
@@ -203,14 +203,14 @@ Las plantillas sirven de base para iniciar el proyecto. AEM proporciona estas pl
 * **[Proyecto de traducción](/help/sites-administering/translation.md)**: este es un ejemplo de referencia para administrar actividades relacionadas con la traducción. Incluye funciones básicas e incluye flujos de trabajo para administrar la traducción.
 * **Proyecto simple**: es una muestra de referencia para cualquier proyecto que no se ajuste a otras categorías. Incluye tres funciones básicas y cuatro flujos de trabajo generales de AEM.
 
-En función de la plantilla que seleccione, tendrá diferentes opciones disponibles dentro del proyecto, como las funciones de usuario y los flujos de trabajo proporcionados.
+En función de la plantilla que seleccione, hay diferentes opciones disponibles para los usuarios dentro del proyecto, como las funciones de usuario y los flujos de trabajo proporcionados.
 
 ## Funciones de un usuario en un proyecto {#user-roles-in-a-project}
 
 Las diferentes funciones de usuario se definen en la plantilla de proyecto y se utilizan por dos motivos principales:
 
 1. Permisos: las funciones de usuario se encuentran en una de las tres categorías enumeradas: observador, editor, propietario. Por ejemplo, un fotógrafo o redactor tendrá los mismos privilegios que un editor. Los permisos determinan lo que un usuario puede hacer con el contenido de un proyecto.
-1. Flujos de trabajo: los flujos de trabajo determinan a quién se asignan las tareas de un proyecto. Las tareas se pueden asociar a una función del proyecto. Por ejemplo, se puede asignar una tarea a los fotógrafos de modo que todos los miembros del equipo que tengan la función de fotógrafo obtengan la tarea.
+1. Flujos de trabajo: los flujos de trabajo determinan a quién se asignan las tareas de un proyecto. Las tareas se pueden asociar a una función del proyecto. Por ejemplo, se puede asignar una tarea a los fotógrafos de modo que todos los integrantes del equipo que tengan la función de fotógrafo tengan la tarea asignada.
 
 Todos los proyectos admiten las siguientes funciones predeterminadas para permitirle administrar los permisos de seguridad y control.
 
@@ -228,7 +228,7 @@ Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos as
 
 Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**.
 
-Si se elimina el proyecto, esos grupos sólo se eliminarán si selecciona la opción adecuada [&#x200B; al eliminar el proyecto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un administrador también puede eliminar manualmente los grupos de **Herramientas** > **Seguridad** > **Grupos**.
+Si se elimina el proyecto, esos grupos sólo se eliminarán si selecciona la opción adecuada [ al eliminar el proyecto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un administrador también puede eliminar manualmente los grupos de **Herramientas** > **Seguridad** > **Grupos**.
 
 ## Recursos adicionales {#additional-resources}
 

@@ -10,16 +10,16 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
-source-wordcount: '5284'
-ht-degree: 72%
+source-wordcount: '5344'
+ht-degree: 71%
 
 ---
 
 # Creación de contenido segmentado mediante el modo Segmentación{#authoring-targeted-content-using-targeting-mode}
 
-Contenido orientado por el autor mediante el modo de segmentación de AEM. El modo segmentación y el componente de Target proporcionan herramientas para crear contenido para experiencias:
+Con el modo de segmentación puede crear contenido de destino para AEM. El modo segmentación y el componente de Target proporcionan herramientas para crear contenido para experiencias:
 
 * Reconozca fácilmente el contenido de destino que se encuentra en la página. Una línea de puntos forma un borde alrededor de todo el contenido de destino.
 * Seleccione una marca y una actividad para ver las experiencias.
@@ -41,7 +41,7 @@ Las actividades y experiencias que ve en el modo de Target reflejan la [consola 
 
 >[!NOTE]
 >
->Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId` a cada campaña. Al eliminar la campaña en Adobe Target, thirdPartyId no se elimina. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
+>Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId` a cada campaña. Al eliminar la campaña en Adobe Target, thirdPartyId no se elimina. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único. Los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
 >
 >Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribe la campaña existente.
 >
@@ -72,7 +72,7 @@ Utilice el modo Segmentación para añadir una actividad a una marca. Al añadir
 
 También puede crear y administrar actividades de Adobe Target desde AEM con la opción de seleccionar el motor de destino, con AEM o Adobe Target y seleccionando el tipo actividad: segmentación de experiencias o prueba A/B.
 
-Además, puede administrar objetivos y métricas para todas las actividades de Adobe Target y administrar los públicos de Adobe Target. También se incluye la creación de informes de actividad de Adobe Target, incluida la conversión de ganadores para pruebas A/B.
+Además, puede administrar objetivos y métricas para todas las actividades de Adobe Target y administrar los públicos de Adobe Target. También se incluye la creación de informes de actividad de Adobe Target (incluida la conversión de ganadores para pruebas A/B).
 
 Cuando se añade una actividad, también aparece en la [consola Actividades](/help/sites-authoring/activitylib.md).
 
@@ -112,7 +112,7 @@ Para añadir una actividad, haga lo siguiente:
 El modo Segmentación le permite configurar diversas proporciones de una actividad. Utilice el siguiente proceso de tres pasos para crear contenido de destino para una actividad de marca:
 
 1. [Crear](#create-authoring-the-experiences): añada o quite experiencias y añada ofertas para cada experiencia.
-1. [Orientar](#diagramtargetconfiguringtheaudiences): especifique el público al que se orienta cada experiencia. Puede dirigirse a un público específico y, si utiliza las pruebas A/B, decidir qué porcentaje del tráfico se destina a cada experiencia.
+1. [Orientar](#diagramtargetconfiguringtheaudiences): especifique el público al que se orienta cada experiencia. Puede dirigirse a una audiencia específica. Si utiliza la prueba A/B, puede decidir qué porcentaje del tráfico se destina a cada experiencia.
 1. [Objetivos y configuraciones](#settingsgoalssettingsconfiguringtheactivityandsettinggoals): programe la actividad y establezca la prioridad. También puede establecer objetivos de métricas de éxito.
 
 Utilice el siguiente procedimiento para iniciar el proceso de segmentación de contenido de una actividad.
@@ -135,7 +135,7 @@ Para añadir una actividad, haga lo siguiente:
 
 ## Crear: creación de las experiencias {#create-authoring-the-experiences}
 
-El paso Crear de la segmentación del contenido implica la creación de experiencias. Durante este paso puede crear o eliminar las experiencias de la actividad y añadir ofertas a cada experiencia.
+El paso Crear de la segmentación del contenido implica la creación de experiencias. Durante este paso, puede crear o eliminar las experiencias de la actividad y agregar ofertas a cada experiencia.
 
 ### Visualización de ofertas de experiencias en el modo de segmentación {#seeing-experience-offers-in-targeting-mode}
 
@@ -202,7 +202,7 @@ Para cambiar el nombre de las experiencias mediante el modo Segmentación, haga 
 
 1. Haga clic en la flecha situada junto al nombre de la experiencia.
 1. Haga clic en **Cambiar nombre de experiencia** y escriba el nombre nuevo.
-1. Haga clic en otro lugar de la pantalla para guardar los cambios.
+1. Haga clic en cualquier otra parte de la pantalla para guardar los cambios.
 
 #### Edición de públicos mediante el modo de segmentación {#editing-audiences-using-targeting-mode}
 
@@ -268,7 +268,7 @@ Consulte [Configurar las opciones del componente Target](/help/sites-authoring/
 
 Como el componente de Target es un contenedor, aparece como un área de colocación para otros componentes.
 
-En el modo de segmentación, el componente segmentado tiene un borde azul y el mensaje de destino indica la naturaleza de la segmentación.
+En el modo de Target, el componente Target tiene un borde azul y el mensaje de destino indica la naturaleza de destino.
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -297,7 +297,7 @@ Si edita contenido de destino, debe hacer clic en **Iniciar orientación** para 
    >Los administradores pueden decidir si esta configuración es necesaria en **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   >Para requerir que los usuarios introduzcan una ubicación, active la casilla de verificación **Forzar ubicación &#x200B;**.
+   >Para requerir que los usuarios introduzcan una ubicación, active la casilla de verificación **Forzar ubicación**.
 
 1. Seleccione la experiencia para la que desea crear la oferta.
 1. Cree la oferta:
@@ -397,7 +397,7 @@ Abra una oferta de la biblioteca de una experiencia en modo de Orientación para
 
 ## Target: configuración de públicos {#target-configuring-the-audiences}
 
-El paso Target del [proceso de Segmentación](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implica la asignación de públicos a las experiencias con que ha trabajado en el paso Crear. En la página Target se muestran los públicos a que se segmenta cada experiencia. Puede especificar o cambiar el público para cada experiencia. Si utiliza Adobe Target, también puede crear pruebas A/B que le permitan asignar un porcentaje del tráfico de una audiencia a una experiencia concreta.
+El paso Target del [proceso de Segmentación](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implica la asignación de públicos a las experiencias con que ha trabajado en el paso Crear. La página Target muestra las audiencias a las que se dirige cada experiencia. Puede especificar o cambiar el público para cada experiencia. Si utiliza Adobe Target, también puede crear pruebas A/B que le permitan asignar un porcentaje del tráfico de una audiencia a una experiencia concreta.
 
 ### Si utiliza el direccionamiento de AEM o Adobe Target (segmentación de experiencias)... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -434,12 +434,12 @@ Puede cambiar los porcentajes, siempre que sumen el cien por ciento. Varias expe
 1. Haga clic en el cuadro desplegable situado junto a la audiencia asignada a la experiencia.
 1. De manera opcional, haga clic en **Editar** y, a continuación, escriba una palabra clave para buscar el segmento que desee.
 1. Haga clic en **Aceptar.**
-1. Introduzca porcentajes para configurar la forma en que el tráfico del público se dirige a cada experiencia. El número total debe ser igual a 100.
+1. Introduzca porcentajes para configurar la forma en que el tráfico de la audiencia se dirige a cada experiencia. El número total debe ser igual a 100.
 1. (Opcional) Edite el nombre de la experiencia haciendo clic en el menú desplegable situado junto al nombre de la experiencia.
 
 ## Objetivos y configuración: configuración de la actividad y configuración de los objetivos {#goals-settings-configuring-the-activity-and-setting-goals}
 
-El paso Objetivos y configuración del [proceso de direccionamiento](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) consiste en configurar el comportamiento de la actividad de la marca. Especifique cuándo comienza y finaliza la actividad, así como la prioridad. Además, realiza un seguimiento de los objetivos. Específicamente, puede decidir lo que desea medir con sus actividades.
+El paso Objetivos y configuración del [proceso de direccionamiento](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) consiste en configurar el comportamiento de la actividad de la marca. Especifique cuándo comienza y finaliza la actividad, y la prioridad de la actividad. Además, también puede realizar un seguimiento de los objetivos. Específicamente, puede decidir lo que desea medir con sus actividades.
 
 Las métricas de objetivo solo están disponibles si usa Adobe Target como motor de segmentación. Defina al menos una métrica de objetivo. Si tiene Adobe Analytics configurado y una configuración de nube de A4T Analytics, puede seleccionar si desea que la fuente de informes sea Adobe Target o Adobe Analytics.
 
@@ -618,7 +618,7 @@ Si aparece contenido inesperado en la página al cargar un perfil, compruebe la 
 >
 >Si utiliza la prueba A/B, al simular, las experiencias se muestran según el porcentaje de tráfico. Esto se controla mediante Adobe Target, lo que puede dar lugar a resultados inesperados para los autores. (La actividad del autor se sincroniza con los ajustes específicos que permiten volver a evaluar durante la simulación). Es posible que los autores tengan que actualizar para ver las otras experiencias en función de su configuración de tráfico.
 
- Para simular la experiencia del visitante, utilice las siguientes herramientas:
+Para simular la experiencia del visitante, utilice las siguientes herramientas:
 
 * La actividad Simulación en modo Segmentación: en la página se muestran las ofertas para el usuario seleccionado actualmente en ContextHub. Puede editar las ofertas dirigidas al usuario.
 * Modo de vista previa: utilice ContextHub para seleccionar a los usuarios y las ubicaciones que cumplen los criterios de los segmentos en que están basadas las experiencias. Cuando cambian las selecciones de Context Hub, el contenido de destino cambia en consecuencia.
@@ -687,7 +687,7 @@ Si selecciona Adobe Target como motor:
   </tr>
   <tr>
    <td><strong>Direccionamiento preciso</strong></td>
-   <td><p>Al habilitar el direccionamiento preciso, se indica al componente que espere a que los datos de Client Context o Context Hub estén disponibles antes de enviar la solicitud a Adobe Target. Puede aumentar el tiempo de carga. Para la creación, el direccionamiento preciso siempre está habilitado.</p> <p>Si activa la casilla de verificación <strong>Direccionamiento preciso</strong>, el mbox realiza primero un <code>mboxDefine</code> y después un <code>mboxUpdate</code>, lo que da como resultado una solicitud de Ajax una vez que los datos están disponibles.</p> <p>Si no selecciona la casilla de verificación <strong>Direccionamiento preciso</strong>, el mbox realiza una <code>mboxCreate</code>, lo que da como resultado una solicitud sincrónica de inmediato (en este caso, no todos los datos de contexto pueden estar disponibles aún).</p> <p><strong>Nota:</strong> Habilitar o deshabilitar el direccionamiento preciso en un componente específico no afecta a la configuración establecida globalmente. Siempre puede seleccionar Segmentación precisa en el componente para anular la configuración global.</p> </td>
+   <td><p>Al habilitar el direccionamiento preciso, se indica al componente que espere a que los datos de Client Context o Context Hub estén disponibles antes de enviar la solicitud a Adobe Target. Puede aumentar el tiempo de carga. Para la creación, la orientación precisa siempre está habilitada.</p> <p>Si activa la casilla de verificación <strong>Direccionamiento preciso</strong>, el mbox realiza primero un <code>mboxDefine</code> y después un <code>mboxUpdate</code>, lo que da como resultado una solicitud de Ajax una vez que los datos están disponibles.</p> <p>Si no selecciona la casilla de verificación <strong>Direccionamiento preciso</strong>, el mbox realiza una <code>mboxCreate</code>, lo que da como resultado una solicitud sincrónica de inmediato (en este caso, no todos los datos de contexto pueden estar disponibles aún).</p> <p><strong>Nota:</strong> Habilitar o deshabilitar el direccionamiento preciso en un componente específico no afecta a la configuración establecida globalmente. Siempre puede seleccionar Segmentación precisa en el componente para anular la configuración global.</p> </td>
   </tr>
   <tr>
    <td><strong>Incluir segmentos resueltos</strong></td>

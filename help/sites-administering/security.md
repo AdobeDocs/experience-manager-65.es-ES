@@ -10,10 +10,10 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
-workflow-type: ht
-source-wordcount: '5410'
-ht-degree: 100%
+source-git-commit: 2cc34ce568fc533d41f53d8007825264ca9baad3
+workflow-type: tm+mt
+source-wordcount: '5471'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Su objetivo principal es simplificar el proceso de mantenimiento reduciendo el n
 
 Por lo tanto, los grupos tienden a permanecer estables, mientras que los usuarios van y vienen con más frecuencia.
 
-Con una planificación y una estructura limpia, el uso de grupos puede reflejar su estructura, lo que le ofrece información general clara y un mecanismo eficaz para las actualizaciones.
+Con una planificación y un diseño limpio, el uso de grupos puede reflejar su estructura, lo que le ofrece una visión general clara y un mecanismo eficiente para las actualizaciones.
 
 ### Usuarios y grupos integrados {#built-in-users-and-groups}
 
@@ -78,7 +78,7 @@ Las siguientes tablas enumeran cada elemento junto con lo siguiente:
   <tr>
    <td><p>autor</p> <p>Contraseña predeterminada: autor</p> </td>
    <td>Usuario</td>
-   <td><p>Una cuenta de autor con permiso para escribir en /content. Incluye privilegios de colaborador e internauta.</p> <p>Se puede utilizar como administrador web ya que tiene acceso a todo el árbol /content.</p> <p>Esta cuenta no corresponde a un usuario integrado, sino a otro usuario de demostración de Geometrixx</p> </td>
+   <td><p>Una cuenta de autor con permiso para escribir en /content. Incluye privilegios de colaborador e internauta.</p> <p>Se puede utilizar como webmaster, ya que tiene acceso a todo el árbol /content.</p> <p>Esta cuenta no es un usuario integrado, sino otro usuario de demostración de Geometrixx.</p> </td>
    <td><p>Adobe recomienda eliminar la cuenta por completo o cambiar la contraseña predeterminada.</p> <p>Preferiblemente en la instalación, aunque se puede realizar posteriormente.</p> </td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@ Las siguientes tablas enumeran cada elemento junto con lo siguiente:
   <tr>
    <td>todos</td>
    <td>Grupo</td>
-   <td><p>Todos los usuarios de AEM son miembros del grupo “everyone”, aunque es posible que no vea el grupo ni la relación de pertenencia en todas las herramientas.</p> <p>Estar en este grupo conlleva disponer de los derechos predeterminados, ya que puede utilizarse para aplicar permisos para todos, incluso para los usuarios que se creen en el futuro.</p> </td>
+   <td><p>Todos los usuarios de AEM son miembros del grupo “everyone”, aunque es posible que no vea el grupo ni la relación de pertenencia en todas las herramientas.</p> <p>Este grupo puede considerarse como los derechos predeterminados, ya que puede utilizarse para aplicar permisos para todos, incluso para los usuarios que se creen en el futuro.</p> </td>
    <td><p>No modifique ni elimine este grupo.</p> <p>Modificar esta cuenta tiene implicaciones de seguridad adicionales.</p> </td>
   </tr>
   <tr>
@@ -169,7 +169,7 @@ Las acciones se pueden realizar en una página (recurso). Para cada página de l
     <ul>
      <li>modififcar el contenido existente en la página y en cualquier página secundaria.</li>
      <li>crear párrafos en la página o en cualquier página secundaria.</li>
-    </ul> <p>En el nivel JCR, los usuarios pueden editar las propiedades de un recurso, bloquear, crear versiones y realizar modificaciones del tipo nt-modifications. Además, tienen permiso de escritura completo en los nodos que definen un nodo secundario jcr:content. Por ejemplo, cq:Page, nt:file, cq:Asset.</p> </td>
+    </ul> <p>En el nivel JCR, los usuarios pueden editar las propiedades de un recurso, bloquear, crear versiones y realizar modificaciones del tipo nt-modifications. Además, tienen permiso de escritura completo en los nodos que definen un nodo secundario jcr:content. Por ejemplo, cq:Page, nt:file, cq:Asset, dam:Asset.</p> </td>
   </tr>
   <tr>
    <td>Crear</td>
@@ -269,7 +269,7 @@ Cuando pasa el ratón sobre el asterisco o el signo de exclamación, la ayuda co
   </tr>
   <tr>
    <td>Parte inferior</td>
-   <td>Enumera las entradas no efectivas que pueden tener efecto en algún otro lugar del árbol (tal como indica un atributo especial presente con la ACE correspondiente que limita el ámbito de la entrada). Alternativamente, es una entrada cuyo efecto es revocado por otra entrada definida en la ruta proporcionada o en un nodo antecesor.</td>
+   <td>Enumera las entradas no efectivas que pueden tener efecto en algún otro lugar del árbol (tal como indica un atributo especial presente con la ACE correspondiente que limita el ámbito de la entrada). Alternativamente, es una entrada cuyo efecto se revoca con otra entrada definida en la ruta dada o en un nodo antecesor.</td>
   </tr>
  </tbody>
 </table>
@@ -284,14 +284,14 @@ A continuación se ofrecen recomendaciones acerca de la administración de lista
 
 * No asigne permisos directamente a los usuarios. Asígnelos únicamente a grupos.
 
-  Esto simplifica el mantenimiento, ya que el número de grupos es mucho menor que el número de usuarios y también menos volátil.
+  Esto simplifica el mantenimiento, ya que el número de grupos es mucho menor que el número de usuarios y también es menos volátil.
 
 * Si desea que un grupo o usuario solo pueda modificar páginas, no le conceda derechos de creación ni de denegación. Conceda solo derechos de modificación y lectura.
-* Utilice Denegar con moderación. En la medida de lo posible, utilice solamente Permitir.
+* Utilice Denegar con moderación. Prefiera Permitir tanto como sea posible.
 
   El uso de Denegar puede producir efectos inesperados si los permisos se aplican en un orden diferente al esperado. Si un usuario es miembro de más de un grupo, las instrucciones Denegar de un grupo pueden cancelar la instrucción Permitir de otro grupo o viceversa. Es difícil mantener una visión general cuando sucede algo así y puede llevar fácilmente a resultados imprevistos, mientras que Permitir asignaciones no causa tales conflictos.
 
-  Adobe recomienda trabajar con Permitir en lugar de Denegar. Consulte las [Prácticas recomendadas](#best-practices).
+  Adobe recomienda usar Permitir en lugar de Denegar. Vea [Prácticas recomendadas](#best-practices).
 
 Antes de modificar cualquiera de los permisos, asegúrese de comprender cómo funcionan y cómo se relacionan entre sí. Consulte la documentación de CRX que ilustra cómo AEM WCM [evalúa los derechos de acceso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) y proporciona ejemplos sobre la configuración de listas de control de acceso.
 
@@ -359,7 +359,7 @@ Esta funcionalidad permite que las cuentas con permisos de suplantación complet
 
 >[!CAUTION]
 >
->El bloqueo de páginas se puede realizar al suplantar a un usuario. Sin embargo, una página bloqueada de este modo solo puede ser desbloqueada por el usuario suplantado o por un usuario con privilegios de administrador.
+>El bloqueo de páginas se puede realizar al suplantar a un usuario. Sin embargo, una página bloqueada de este modo solo se puede desbloquear como el usuario que se ha suplantado o como un usuario con privilegios de administrador.
 >
 >Las páginas no se pueden desbloquear al suplantar al usuario que ha bloqueado la página.
 
@@ -416,7 +416,7 @@ Las pestañas proporcionan acceso a varias configuraciones:
 | Propiedades | Enumera información sobre el usuario o grupo, como información de correo electrónico, una descripción e información de nombres. También permite cambiar la contraseña de un usuario. Consulte [Crear usuarios y grupos](#creating-users-and-groups), [Modificar las propiedades de usuarios y grupos](#modifying-user-and-group-properties) y [Cambiar la contraseña de un usuario](#changing-a-user-password). |
 | Grupos | Enumera todos los grupos a los que pertenece el usuario o grupo seleccionado. Puede asignar el usuario o grupos seleccionados a grupos adicionales o eliminarlos de grupos. Consulte [Grupos](#adding-users-or-groups-to-a-group). |
 | Miembros | Disponible solo para grupos. Enumera los miembros de un grupo determinado. Consulte [Miembros](#members-adding-users-or-groups-to-a-group). |
-| Permisos | Puede asignar permisos a un usuario o grupo. Permite controlar lo siguiente:<ul><li>Permisos relacionados con páginas o nodos concretos. Consulte [Configuración de permisos](#setting-permissions). </li><li>Permisos relacionados con la creación y eliminación de páginas y la modificación de la jerarquía. ??? le permite [asignar privilegios](#settingprivileges), como la modificación de jerarquía, que permite crear y eliminar páginas,</li><li>Permisos relacionados con [privilegios de replicación](#setting-replication-privileges) (normalmente de autor a publicación) según una ruta.</li></ul> |
+| Permisos | Puede asignar permisos a un usuario o grupo, lo que le permite controlar lo siguiente:<ul><li>Permisos relacionados con páginas o nodos concretos. Consulte [Configuración de permisos](#setting-permissions). </li><li>Permisos relacionados con la creación y eliminación de páginas y la modificación de la jerarquía, que le permite [asignar privilegios](#settingprivileges), como la modificación de la jerarquía, que le permite crear y eliminar páginas,</li><li>Permisos relacionados con [privilegios de replicación](#setting-replication-privileges) (normalmente de autor a publicación) según una ruta.</li></ul> |
 | Suplantadores | Permite que otro usuario suplante la cuenta. Resulta útil cuando necesita que un usuario actúe en nombre de otro usuario. Consulte [Suplantar usuarios](#impersonating-another-user). |
 | Preferencias | Establece [preferencias para el grupo o usuario](#setting-user-and-group-preferences). Por ejemplo, las preferencias de idioma. |
 
@@ -540,7 +540,7 @@ La pestaña **Miembros** solo funciona para grupos y muestra los usuarios y grup
 
 ### Adición de usuarios o grupos al añadir permisos {#adding-users-or-groups-while-adding-permissions}
 
-Para añadir miembros a un grupo en una ruta determinada:
+Para agregar miembros a un grupo en una ruta determinada:
 
 1. Haga doble clic en el nombre del grupo o usuario al que desee añadir usuarios.
 
@@ -670,7 +670,7 @@ En el cuadro de búsqueda, puede hacer lo siguiente:
 | Tecla flecha abajo | Inicia la búsqueda de nuevo. |
 | Tecla Intro (Return) | Selecciona un subnodo y lo carga en la cuadrícula del árbol |
 
-* Búsqueda de texto completo: si la cadena de búsqueda no comienza con “/”, se ejecuta una búsqueda de texto completo en todos los nodos de la ruta “/content”.
+* Búsqueda de texto completo: si la cadena de búsqueda no comienza con &quot;/&quot;, se ejecuta una búsqueda de texto completo en todos los nodos de la ruta &quot;/content&quot;.
 
 ![cqsecurityfulltextsearch](assets/cqsecurityfulltextsearch.png)
 

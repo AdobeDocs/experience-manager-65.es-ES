@@ -9,10 +9,10 @@ exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 2b2c54f2a59c73747fd9cdd982aa8b059e554c23
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 18%
+source-wordcount: '971'
+ht-degree: 20%
 
 ---
 
@@ -29,7 +29,7 @@ Con la consola, puede crear un proyecto, asociar recursos al proyecto y también
 
 Los proyectos son una función estándar de AEM y no requieren ninguna configuración adicional.
 
-Sin embargo, para que los usuarios de los proyectos puedan ver a otros usuarios o grupos mientras utilizan Proyectos como, por ejemplo, al crear proyectos, crear tareas/flujos de trabajo o ver y administrar el equipo, dichos usuarios necesitan tener acceso de lectura en `/home/users` y `/home/groups`.
+Sin embargo, para que los usuarios de proyectos puedan ver a otros usuarios o grupos mientras utilizan proyectos, como al crear proyectos, crear tareas/flujos de trabajo o ver y administrar el equipo, dichos usuarios deben tener acceso de lectura en `/home/users` y `/home/groups`.
 
 La forma más sencilla de hacerlo es conceder acceso de lectura al grupo **projects-users** a `/home/users` y `/home/groups`.
 
@@ -38,11 +38,11 @@ La forma más sencilla de hacerlo es conceder acceso de lectura al grupo **proje
 Siga estos pasos para crear un proyecto.
 
 1. En la consola **Proyectos**, haga clic en **Crear** para abrir el asistente **Crear proyecto**.
-1. Seleccione una plantilla y haga clic en **Siguiente**. Puede obtener más información acerca de las plantillas de proyecto estándar [aquí.](/help/sites-authoring/projects.md#project-templates)
+1. Seleccione una plantilla y haga clic en **Siguiente**. Puede obtener más información acerca de las plantillas de proyecto estándar [aquí.](/help/sites-authoring/projects.md#project-templates)
 
    ![Asistente para crear proyectos](assets/create-project-wizard.png)
 
-1. Defina **Title** y **Description** y agregue una imagen de **miniatura** si es necesario. También puede agregar o eliminar usuarios y a qué grupo pertenecen.
+1. Defina **Title** y **Description** y agregue una imagen de **miniatura** si es necesario. También puede añadir o eliminar usuarios y a qué grupo pertenecen.
 
    ![Paso Propiedades del asistente](assets/create-project-wizard-properties.png)
 
@@ -101,7 +101,7 @@ La cronología del proyecto proporciona información sobre la última vez que se
 
 1. En la consola **Proyectos**, haga clic en **Cronología** en el selector de carril en la parte superior izquierda de la consola.
    ![Seleccionando modo de escala de tiempo](assets/projects-timeline-rail.png)
-2. En la consola, seleccione el proyecto cuya cronología desee ver.
+2. En la consola, seleccione el proyecto cuya cronología desea ver.
    ![Vista de escala de tiempo del proyecto](assets/project-timeline-view.png)
 
 Los Assets se muestran en el carril. Utilice el selector de raíl para volver a la vista normal cuando haya terminado.
@@ -161,4 +161,4 @@ Siga estos pasos para eliminar un proyecto.
    ![Opciones de eliminación de proyecto](assets/project-delete-options.png)
 1. Haga clic en **Eliminar** para eliminar el proyecto con las opciones seleccionadas.
 
-Para obtener más información sobre los grupos creados automáticamente por los proyectos, consulte [Creación automática de grupos](/help/sites-authoring/projects.md#auto-group-creation) para obtener más información.
+Para obtener más información acerca de los grupos que los proyectos crean automáticamente, vea [Creación automática de grupos](/help/sites-authoring/projects.md#auto-group-creation) para obtener detalles.

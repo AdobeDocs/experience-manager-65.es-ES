@@ -9,9 +9,9 @@ exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 7ed4f3a4bd5b6a607f2bb29faade9ad248e0acb9
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1766'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Configure la barra de herramientas [ContextHub](/help/sites-developing/contexthu
 
 ## Desactivación de ContextHub {#disabling-contexthub}
 
-AEM De forma predeterminada, ContextHub está habilitado en una instalación de. ContextHub se puede deshabilitar para evitar que se cargue js/css y se inicialice.
+De forma predeterminada, ContextHub está habilitado en una instalación de AEM. ContextHub se puede deshabilitar para evitar que se cargue js/css y se inicialice.
 
 <!--
 There are two options to disable ContextHub:
@@ -39,11 +39,11 @@ There are two options to disable ContextHub:
 or
 -->
 
-* Use el CRXDE Lite para establecer la propiedad `disabled` en **true** en `/libs/settings/cloudsettings/legacy/contexthub`
+* Use CRXDE Lite para establecer la propiedad `disabled` en **true** en `/libs/settings/cloudsettings/legacy/contexthub`
 
 >[!NOTE]
 >
->AEM [Debido a la reestructuración del repositorio en la versión 6.4 de](/help/sites-deploying/repository-restructuring.md), la ubicación de las configuraciones de ContextHub cambió de `/etc/cloudsettings` a:
+>[Debido a la reestructuración del repositorio en AEM 6.4,](/help/sites-deploying/repository-restructuring.md) la ubicación de las configuraciones de ContextHub cambió de `/etc/cloudsettings` a:
 >
 >* `/libs/settings/cloudsettings`
 >* `/conf/global/settings/cloudsettings`
@@ -51,14 +51,14 @@ or
 
 ## Mostrar y ocultar la interfaz de usuario de ContextHub {#showing-and-hiding-the-contexthub-ui}
 
-Configure el servicio OSGi de Adobe Granite ContextHub para mostrar u ocultar la [interfaz de usuario de ContextHub](/help/sites-authoring/ch-previewing.md) en sus páginas. El PID de este servicio es `com.adobe.granite.contexthub.impl.ContextHubImpl.`
+Configure el servicio OSGi de ContextHub de Adobe Granite para mostrar u ocultar la [interfaz de usuario de ContextHub](/help/sites-authoring/ch-previewing.md) en sus páginas. El PID de este servicio es `com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
 Para configurar el servicio, puede usar la [consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o usar un nodo [JCR en el repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
 * **Consola web:** Para mostrar la interfaz de usuario, seleccione la propiedad Mostrar IU. Para ocultar la interfaz de usuario, borre la propiedad Ocultar interfaz de usuario.
 * **Nodo JCR:** Para mostrar la interfaz de usuario, establezca la propiedad booleana `com.adobe.granite.contexthub.show_ui` en `true`. Para ocultar la IU, establezca la propiedad en `false`.
 
-AEM Al mostrar la interfaz de usuario de ContextHub, solo aparece en las páginas de instancias de autor de la. La interfaz de usuario no aparece en las páginas de instancias de publicación.
+Al mostrar la interfaz de usuario de ContextHub, solo aparece en páginas de instancias de autor de AEM. La interfaz de usuario no aparece en las páginas de instancias de publicación.
 
 ## Adición de modos y módulos de IU de ContextHub {#adding-contexthub-ui-modes-and-modules}
 
@@ -77,7 +77,7 @@ Los iconos son referencias de la [biblioteca de iconos de la IU de Coral](https:
 
 Añada un modo de interfaz de usuario para agrupar módulos de ContextHub relacionados. Al crear el modo de IU, se indica el título y el icono que aparecen en la barra de herramientas de ContextHub.
 
-1. En el carril del Experience Manager, haga clic en Herramientas > Sitios > Context Hub.
+1. En el carril de Experience Manager, haga clic en Herramientas > Sitios > Context Hub.
 1. Haga clic en el contenedor de configuración predeterminado.
 1. Haga clic en Configuración de ContextHub.
 1. Haga clic en el botón Crear y, a continuación, en Modo de IU de Context Hub.
@@ -96,7 +96,7 @@ Añada un modo de interfaz de usuario para agrupar módulos de ContextHub relaci
 
 Agregue un módulo de IU de ContextHub a un modo de IU para que aparezca en la barra de herramientas de ContextHub para obtener una vista previa del contenido de la página. Al agregar un módulo de IU, se crea una instancia de un tipo de módulo registrado con ContextHub. Para agregar un módulo de interfaz de usuario, debe conocer el nombre del tipo de módulo asociado.
 
-AEM proporciona un tipo de módulo de interfaz de usuario base, así como varios tipos de módulos de interfaz de usuario de ejemplo en los que puede basar un módulo de interfaz de usuario. En la tabla siguiente se proporciona una breve descripción de cada uno. Para obtener información sobre el desarrollo de un módulo de IU personalizado, consulte [Creación de módulos de IU de ContextHub](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
+AEM proporciona un tipo de módulo de IU base, así como varios tipos de módulos de IU de ejemplo en los que puede basar un módulo de IU. En la tabla siguiente se proporciona una breve descripción de cada uno. Para obtener información sobre el desarrollo de un módulo de IU personalizado, consulte [Creación de módulos de IU de ContextHub](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
 Las propiedades del módulo de interfaz de usuario incluyen una configuración detallada en la que puede proporcionar valores para propiedades específicas del módulo. Proporcione la configuración detallada en formato JSON. La columna Tipo de módulo de la tabla proporciona vínculos a información sobre el código JSON necesario para cada tipo de módulo de interfaz de usuario.
 
@@ -106,12 +106,12 @@ Las propiedades del módulo de interfaz de usuario incluyen una configuración d
 | [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | Muestra información sobre el explorador | surferinfo |
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Muestra información de fecha y hora | datetime |
 | [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Mostrar el dispositivo cliente | emuladores |
-| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Muestra la latitud y longitud del cliente, así como la ubicación en un mapa. Permite cambiar la ubicación. | geolocation |
+| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Muestra la latitud y longitud del cliente, así como la ubicación en un mapa. Permite cambiar la ubicación. | Localización geográfica |
 | [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Muestra la orientación de pantalla del dispositivo (horizontal o vertical) | emuladores |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Muestra estadísticas sobre etiquetas de página | nube de etiquetas |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Muestra la información de perfil del usuario actual, incluidos authorizedID, displayName y familyName. Se puede cambiar el valor de displayName y familyName. | perfil |
 
-1. En el carril del Experience Manager, haga clic en Herramientas > Sitios > ContextHub.
+1. En el carril de Experience Manager, haga clic en Herramientas > Sitios > ContextHub.
 1. Haga clic en el contenedor de configuración al que desee agregar un módulo de interfaz de usuario.
 1. Haga clic o escriba la Configuración de ContextHub a la que desea agregar el módulo de interfaz de usuario.
 1. Haga clic en el modo de interfaz de usuario al que está agregando el módulo de interfaz de usuario.
@@ -140,7 +140,7 @@ El valor de la propiedad Detail Configuration es un objeto `config` en formato J
 
 ### Candidatos de tienda de muestra {#sample-store-candidates}
 
-AEM proporciona los siguientes candidatos de tienda de muestra en los que puede basar una tienda.
+AEM proporciona los siguientes ejemplos de candidatos a tiendas en los que puede basar una tienda.
 
 | Tipo de tienda | Descripción |
 |---|---|
@@ -154,7 +154,7 @@ AEM proporciona los siguientes candidatos de tienda de muestra en los que puede 
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Almacena información sobre el cliente, como información del dispositivo, tipo de explorador y orientación de la ventana |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | Almacena etiquetas de página y recuentos de etiquetas |
 
-1. En el carril del Experience Manager, haga clic en Herramientas > Sitios > ContextHub.
+1. En el carril de Experience Manager, haga clic en Herramientas > Sitios > ContextHub.
 1. Haga clic en el contenedor de configuración predeterminado.
 1. Haga clic en Configuración de Contexthub
 1. Para agregar una tienda, haga clic en el icono Crear y, a continuación, haga clic en Configuración de tienda de ContextHub.
@@ -242,7 +242,7 @@ Se puede habilitar un modo de depuración para ContextHub para permitir la resol
 
 ### Mediante la configuración {#via-the-configuration}
 
-Edite la configuración de ContextHub y marque la opción **Debug**
+Edite la configuración de ContextHub y marque la opción **Debug**.
 
 1. En el carril, haga clic en **Herramientas > Sitios > ContextHub**
 1. Haga clic en el **contenedor de configuración** predeterminado
@@ -251,7 +251,7 @@ Edite la configuración de ContextHub y marque la opción **Debug**
 
 ### Mediante CRXDE {#via-crxde}
 
-Use el CRXDE Lite para establecer la propiedad `debug` en **true** en:
+Use CRXDE Lite para establecer la propiedad `debug` en **true** en:
 
 * `/conf/global/settings/cloudsettings` o
 * `/conf/<tenant>/settings/cloudsettings`
@@ -273,7 +273,7 @@ Esto resulta útil en la instancia de publicación, donde no desea depurar ningu
 
 ## Recuperación de las configuraciones de ContextHub después de actualizar {#recovering-contexthub-configurations-after-upgrading}
 
-AEM Cuando se realiza una actualización de [a](/help/sites-deploying/upgrade.md), se realiza una copia de seguridad de las configuraciones de ContextHub y se almacenan en una ubicación segura. Durante la actualización, se instalan las configuraciones predeterminadas de ContextHub, sustituyendo las configuraciones existentes. La copia de seguridad es necesaria para conservar los cambios o adiciones realizados.
+Cuando se realiza una [actualización a AEM](/help/sites-deploying/upgrade.md), se realiza una copia de seguridad de las configuraciones de ContextHub y se almacenan en una ubicación segura. Durante la actualización, se instalan las configuraciones predeterminadas de ContextHub, sustituyendo las configuraciones existentes. La copia de seguridad es necesaria para conservar los cambios o adiciones realizados.
 
 Las configuraciones de ContextHub se almacenan en una carpeta denominada `contexthub` en los siguientes nodos:
 
@@ -287,7 +287,7 @@ Después de una actualización, la copia de seguridad se almacena en una carpeta
 
 La parte `yyyymmdd` del nombre del nodo es la fecha en la que se realizó la actualización.
 
-Para recuperar las configuraciones de ContextHub, utilice el CRXDE Lite para copiar los nodos que representan sus tiendas, modos de interfaz de usuario y módulos de interfaz de usuario desde debajo del nodo `default-pre-upgrade_yyyymmdd_xxxxxx` a continuación:
+Para recuperar las configuraciones de ContextHub, utilice CRXDE Lite para copiar los nodos que representan sus tiendas, modos de interfaz de usuario y módulos de interfaz de usuario desde debajo del nodo `default-pre-upgrade_yyyymmdd_xxxxxx` a continuación:
 
 * `/conf/global/settings/cloudsettings` o
 * `/conf/<tenant>/settings/cloudsettings`

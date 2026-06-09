@@ -10,10 +10,10 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
 workflow-type: tm+mt
-source-wordcount: '3015'
-ht-degree: 46%
+source-wordcount: '3030'
+ht-degree: 45%
 
 ---
 
@@ -164,7 +164,7 @@ Puede agregar un componente mediante el cuadro **Arrastrar componentes aquí** d
 
 1. El componente seleccionado se añade en la parte inferior de la página. [Edite](#editmovecopypastedelete) el componente como sea necesario.
 
-### Inserción de un componente mediante el navegador de recursos   {#inserting-a-component-using-the-assets-browser}
+### Inserción de un componente mediante el navegador de recursos {#inserting-a-component-using-the-assets-browser}
 
 También puede agregar un componente a la página arrastrando un recurso desde el [explorador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser). Esto crea automáticamente un componente del tipo adecuado (y que contiene el recurso).
 
@@ -310,7 +310,7 @@ Existen dos métodos para añadir o editar contenido en los componentes:
 * Abra el [diálogo del componente para editarlo](#component-edit-dialog).
 * [Arrastre y coloque un recurso](#draganddropintocomponent) desde el explorador de recursos para añadir contenido directamente.
 
-### Cuadro de diálogo de edición de contenido   {#component-edit-dialog}
+### Cuadro de diálogo de edición de contenido {#component-edit-dialog}
 
 Puede abrir un componente para editar el contenido mediante el icono [Editar (lápiz) de la barra de herramientas](#edit-configure-copy-cut-delete-paste) del componente.
 
@@ -343,7 +343,7 @@ Las opciones de edición exactas dependen del componente. Para algunos component
 
 ### Arrastrar y colocar recursos en un componente {#drag-and-drop-assets-into-component}
 
-Para tipos de componentes específicos puede arrastrar y soltar recursos desde el explorador de recursos directamente en el componente para actualizar el contenido:
+Para tipos de componentes específicos, puede arrastrar y soltar recursos desde el explorador de recursos directamente en el componente para actualizar el contenido:
 
 | **Tipo de recurso** | **Tipo de componente** |
 |---|---|
@@ -372,7 +372,7 @@ Por ejemplo, el componente **Texto**:
 Para mover un componente de párrafo:
 
 1. Seleccione el párrafo que desea mover con las funciones de seleccionar y mantener pulsado o de mantener pulsado.
-1. Arrastre el párrafo a la nueva ubicación. AEM indica dónde se puede depositar el párrafo. Colóquelo en la ubicación que desee.
+1. Arrastre el párrafo a la nueva ubicación. AEM indica dónde se puede colocar el párrafo. Colóquelo en la ubicación que desee.
 
    ![moviendo componente de párrafo](assets/screen_shot_2018-03-22at121821.png)
 
@@ -456,7 +456,7 @@ Si la página se basa en una [plantilla estática](/help/sites-authoring/templat
 
 Puede ver fácilmente en qué plantilla se basa la página al seleccionar la página en la vista [Columna](/help/sites-authoring/basic-handling.md#column-view) o en la [vista Lista](/help/sites-authoring/basic-handling.md#list-view).
 
-## Estado de Live Copy   {#live-copy-status}
+## Estado de Live Copy {#live-copy-status}
 
 El [modo de la página de estado de Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) permite echar un vistazo rápido al estado de Live Copy y a los componentes que se han heredado o no.
 
@@ -471,7 +471,7 @@ Por ejemplo:
 
 Las [anotaciones](/help/sites-authoring/annotations.md) permiten que los revisores y otros autores realicen comentarios sobre el contenido. A menudo se utilizan para la revisión y validación.
 
-## Previsualizar páginas   {#previewing-pages}
+## Previsualizar páginas {#previewing-pages}
 
 Existen dos métodos para visualizar la vista previa de una página:
 
@@ -481,7 +481,7 @@ Existen dos métodos para visualizar la vista previa de una página:
 
 >[!NOTE]
 >
->* Los vínculos del contenido se pueden ver, pero no se puede acceder a ellos en el modo de edición.
+>* Los vínculos del contenido son visibles, pero no se puede acceder a ellos desde el modo de edición.
 >* Utilice cualquiera de las opciones de vista previa si desea navegar mediante sus vínculos.
 >* Utilice el [atajo de teclado](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` para cambiar entre la vista previa y el último modo seleccionado.
 >
@@ -506,7 +506,7 @@ Durante la creación, el modo de vista previa está disponible mediante el icono
 
 La opción **Ver tal y como aparece publicado** está disponible en el menú [información de la página](/help/sites-authoring/author-environment-tools.md#page-information). Esto abre la página en una nueva pestaña, actualiza el contenido y muestra la página exactamente como aparece cuando se publica.
 
-## Bloquear una página   {#locking-a-page}
+## Bloquear una página {#locking-a-page}
 
 AEM permite bloquear páginas para que nadie más pueda modificar su contenido. Esto resulta útil cuando realiza varias ediciones en una página específica o cuando debe congelar una página durante un corto tiempo.
 
@@ -524,7 +524,7 @@ Las páginas se pueden bloquear desde:
    1. Para abrir el menú, seleccione el icono **Información de la página**.
    1. Seleccione la opción **bloquear página**.
 
-Una vez bloqueada, se actualiza la información de la vista de la consola y, al editar, se muestra un símbolo de bloqueo en la barra de herramientas.
+Una vez bloqueada, la información de la vista de la consola se actualiza y, al editar, se muestra un símbolo de bloqueo en la barra de herramientas.
 
 ![Símbolo de bloqueo](assets/screen_shot_2018-03-22at135010.png)
 

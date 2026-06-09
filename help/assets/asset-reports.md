@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 555cb326a4a554d98904cf1a2b27b609ba67c806
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1173'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Los informes de recursos le permiten evaluar la utilidad de su implementación de [!DNL Adobe Experience Manager Assets]. Con [!DNL Assets], puede generar varios informes para sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, cómo interactúan los usuarios con los recursos y cuáles se descargan y comparten.
@@ -109,7 +109,7 @@ Los administradores de [!DNL Adobe Experience Manager] pueden generar y personal
 
    ![Seleccionar o cancelar la selección de columnas del informe](assets/configure_columns.png)
 
-   Para mostrar un nombre de columna personalizado o una ruta de acceso a la propiedad, configure las propiedades del binario de recursos en el nodo `jcr:content` en CRX. Como alternativa, agréguela mediante el selector de rutas de propiedades.
+   Para mostrar un nombre de columna personalizado o una ruta de acceso a la propiedad, configure las propiedades del binario de recursos en el nodo `jcr:content` en CRX. También puede agregarlo a través del selector de rutas de propiedades.
 
    ![Seleccionar o cancelar la selección de columnas del informe](assets/custom_columns.png)
 
@@ -164,8 +164,8 @@ Para eliminar los informes que ya no necesite, configure el servicio de depuraci
 
 ## Información, sugerencias y limitaciones de solución de problemas {#best-practices-and-limitations}
 
-* Si algunos informes o números de los informes no están disponibles o no se muestran según lo esperado, asegúrese de que el servicio [!UICONTROL Grabador de eventos de CQ DAM de día] esté habilitado.
+* Si algunos informes o números de los informes no están disponibles o no se muestran según lo esperado, compruebe que el servicio [!UICONTROL Day CQ DAM Event Recorder] esté habilitado.
 
 * Elimine los informes que ya no sean necesarios. Utilice las opciones de configuración del servicio de depuración de informes de DAM para configurar los criterios de depuración de informes.
 
-* Si el Informe de uso del disco no se genera y está usando [!DNL Dynamic Media], asegúrese de que todos los recursos procedan correctamente. Para resolverlo, vuelva a procesar los recursos y, a continuación, genere el informe de nuevo.
+* Si el Informe de uso del disco no se genera y está usando [!DNL Dynamic Media], asegúrese de que todos los recursos se procesen correctamente. Para resolverlo, vuelva a procesar los recursos y, a continuación, genere el informe de nuevo.
