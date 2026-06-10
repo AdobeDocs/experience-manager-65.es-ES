@@ -86,7 +86,7 @@ Cree o edite una configuración de tipo de archivo para especificar cómo admini
 
 1. Después de completar todas las secciones, haz clic en **[!UICONTROL Guardar]** o **[!UICONTROL Guardar como]** y proporciona un nombre para la configuración.
 
-Se puede personalizar la compatibilidad con varios tipos de archivo. AEM (Consulte &quot;[Agregar compatibilidad con formatos de archivo nativos adicionales](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot; en [Programar con formularios de la lista de distribución de formularios](https://www.adobe.com/go/learn_lc_programming_11)&quot;.)
+Se puede personalizar la compatibilidad con varios tipos de archivo. AEM (Consulte &quot;[Agregar compatibilidad con formatos de archivo nativos adicionales](https://help.adobe.com/es_ES/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot; en [Programar con formularios de la lista de distribución de formularios](https://www.adobe.com/go/learn_lc_programming_11)&quot;.)
 
 ## Cambiar la configuración predeterminada {#change-the-default-settings}
 
@@ -620,7 +620,7 @@ También puede especificar cómo se envían los formularios. Las opciones son XM
 
 ## Otra configuración de la aplicación (sólo Windows) {#other-applications-settings-windows-only}
 
-No puede cambiar la configuración de otras aplicaciones a través de la consola de administración; en ellas se muestran las extensiones de nombre de archivo de los tipos de archivo admitidos. Para obtener instrucciones sobre cómo obtener acceso a esta configuración, consulte [Crear o editar la configuración de tipo de archivo](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+No puede cambiar la configuración de otras aplicaciones a través de la consola de administración; en ellas se muestran las extensiones de nombre de archivo de los tipos de archivo admitidos. Para obtener instrucciones sobre cómo obtener acceso a esta configuración, consulte [Crear o editar la configuración de tipo de archivo](https://help.adobe.com/es_ES/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect: `wpd`
 * PageMaker de Adobe: `pmd, pm6, p65, pm`
