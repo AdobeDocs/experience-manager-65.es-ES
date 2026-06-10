@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: 2493f25c9f22a165360107e9f642ef3f8c07e957
 workflow-type: tm+mt
-source-wordcount: '3790'
+source-wordcount: '3772'
 ht-degree: 12%
 
 ---
@@ -198,6 +198,7 @@ La versión mínima de la API de servlet requerida es Servlet 3.1
 2. Al iniciar implementaciones de AEM 6.5 en servidores de aplicaciones, se pasa a Compatibilidad restringida. Los clientes existentes pueden actualizar a AEM 6.5 y seguir utilizando servidores de aplicaciones. Para nuevos clientes, incluye criterios de asistencia y un programa de asistencia, tal como se indica en la descripción del nivel R anterior.
 3. Solo AEM Forms aplicable:
    * Se ha eliminado la compatibilidad con JBoss® EAP 7.1.4 y se ha agregado compatibilidad con JBoss® EAP 7.4.10.
+   * A partir del paquete de servicio de AEM Forms 6.5.25.0, se agrega compatibilidad con JBoss® EAP 7.4.23 Puede descargar JBoss® EAP 7.4.23 desde el Portal de distribución de software mediante este [vínculo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
 
 ### Sistemas operativos del servidor {#server-operating-systems}
 
@@ -503,7 +504,7 @@ OpenOffice 4.1.15 </td>
 
 ### Requisitos para AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 o Windows® 11
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10, Windows® 11 o Microsoft® Windows Terminal Server 2025
 * Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
 * 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits;
 * 16 GB de espacio en disco para 32 bits o 20 GB de espacio en disco para SO de 64 bits;

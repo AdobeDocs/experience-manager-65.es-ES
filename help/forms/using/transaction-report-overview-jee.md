@@ -5,9 +5,9 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: cf6705707554894deeb0315d3e9c7252af211e54
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '666'
 ht-degree: 6%
 
 ---
@@ -96,7 +96,10 @@ TransactionRecord
     transactionOperationType='...', 
     transactionCount=..., 
     elapsedTime=..., 
-    transactionDate=...
+    transactionDate=...,
+    formName='...',
+    formPath='...',
+    formTitle='...'
 }
 ```
 
@@ -108,6 +111,15 @@ TransactionRecord
 * **transactionCount**: Recuento total de transacciones.
 * **elapsedTime**: tiempo entre el inicio de la llamada y la respuesta recibida.
 * **transactionDate**: marca de tiempo que indica cuándo se invocó el servicio.
+* **formName**, **formPath**, **formTitle**: Detalles de nivel de formulario cuando el contexto de formulario está disponible (AEM Forms Service Pack 6.5.25.0 y posterior). Se omite cuando no corresponde.
+
+<a id="form-level-details-transaction-log-jee"></a>
+
+>[!NOTE]
+>
+> Ejemplo cuando hay detalles a nivel de formulario:
+>
+> `[2026-05-14 14:23:25] [INFO] TransactionRecord{service='FormsService', operation='render', internalService='FormsService', internalOperation='render', transactionOperationType='RENDER', transactionCount=1, elapsedTime=1250, transactionDate=Wed May 14 14:23:23 UTC 2026, formName='Loan.xdp', formPath='Applications/FormsApplication/1.0/FormsFolder/Loan.xdp', formTitle='Loan Application'}`
 
 **Registro de transacciones de ejemplo**:
 

@@ -9,7 +9,7 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 1785216a13a809117cf178bd2dabf921e36dd9af
+source-git-commit: 512fb704c7edafc84f6c5856d076e7de503d5c22
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 44%
@@ -40,7 +40,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Alterne qué opción de [selector de carril](/help/sites-authoring/basic-handling.md#rail-selector) se debe ver |
-|  | `Backtick` | Ocultar raíl |
+|  | `` ` `` | Ocultar raíl |
 |  | `e` | Editar |
 |  | `p` | Propiedades |
 |  | `m` | Mover |

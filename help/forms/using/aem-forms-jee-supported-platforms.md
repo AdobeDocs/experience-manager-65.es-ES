@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: ca3f909f4085537a085fd4c8d92f4dcef66f1cab
+source-git-commit: 518481c75e22655bce0b104fe2eb5614f1d8a3b9
 workflow-type: tm+mt
-source-wordcount: '3839'
-ht-degree: 45%
+source-wordcount: '3920'
+ht-degree: 44%
 
 ---
 
@@ -308,17 +308,17 @@ Adobe Experience Manager Forms requiere una máquina virtual Java™ para ejecut
   <td>Service Pack y actualizaciones críticas</td>
  </tr>
  <tr>
-  <td><p>Plataforma de aplicaciones empresariales (EAP) JBoss® 7.4 <sup>[2] [3] [7]</sup> </p> </td>
+  <td><p>Plataforma de aplicaciones empresariales JBoss® (EAP) 7.4.23 <sup>[2] [3] [7]</sup> </p> </td>
   <td><p>A: Compatible</p> </td>
   <td><p>Parches y parches acumulativos para la versión EAP compatible</p> </td>
  </tr>
 </tbody>
 </table>
 
-
 >[!NOTE]
 >
->Los clústeres IBM® WebSphere® solo son compatibles con las ediciones de implementación de red.
+>- A partir del paquete de servicio de AEM Forms 6.5.25.0, se admite JBoss® Enterprise Application Platform (EAP) 7.4.23. Puede descargar JBoss® EAP 7.4.23 desde el Portal de distribución de software mediante este [vínculo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
+>- Los clústeres IBM® WebSphere® solo son compatibles con las ediciones de implementación de red.
 
 ### Sistemas operativos del servidor {#server-operating-systems}
 
@@ -488,12 +488,8 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir software para
   <td>5.5.2</td>
  </tr>
  <tr>
-  <td>Servidor IBM® Content Manager (Obsoleto) </td>
-  <td>8.5 Paquete de correcciones 2</td>
- </tr>
-  <tr>
-  <td> Cliente de IBM® Content Manager (obsoleto)</td>
-  <td>8.5 </td>
+  <td>Cliente de IBM® Content Manager</td>
+  <td>8,7</td>
  </tr>
   <td>Microsoft® Sharepoint </td>
   <td>2019<br /> </td>
@@ -676,10 +672,9 @@ Para conocer los requisitos adicionales, consulte:
 ### Designer {#designer}
 
 
-- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 o Windows® 11
+- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10, Windows® 11 o Microsoft® Windows Terminal Server 2025
 - Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
 - 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits;
-@@ -729,49 +601,45 @@ Para conocer los requisitos adicionales, consulte:
 - Privilegios administrativos para instalar Designer
 - Microsoft® Visual C++ 2019 (VC 14.28 o superior) con tiempo de ejecución de 32 bits
 
@@ -913,6 +908,15 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Red Hat&reg; Enterprise Linux&reg; 9 (Kernel 4.x) (64-bit) | |Red Hat&reg; Enterprise Linux&reg; 8 (Kernel 4.x) (64-bit)  |
 
 -->
+
+### Versión 6.5.25.0 (28 de mayo de 2026)
+
+| Compatibilidad añadida | Compatibilidad eliminada | Compatibilidad obsoleta |
+| -------------- | --------------- | ------------------- |
+| Plataforma de aplicaciones empresariales JBoss® (EAP) 7.4.23 | Plataforma de aplicaciones empresariales JBoss® (EAP) 7.4.10 | |
+| Cliente de IBM® Content Manager 8.7 | Cliente de IBM® Content Manager 8.5 | |
+| Microsoft® Windows Terminal Server 2025 | | |
+
 
 ### Versión 6.5.24.0 (26 de noviembre de 2025)
 
