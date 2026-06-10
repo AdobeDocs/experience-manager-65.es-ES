@@ -6,10 +6,10 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: 2b097caa05ec889ae445d74a905fb6c3f8457cee
 workflow-type: tm+mt
-source-wordcount: '10527'
-ht-degree: 43%
+source-wordcount: '10688'
+ht-degree: 41%
 
 ---
 
@@ -909,7 +909,7 @@ Siga estos pasos:
 >
 >Deshabilitar el modo protegido es necesario en situaciones de automatización del lado del servidor como AEM Forms PDF Generator. Esta configuración solo debe cambiarse en entornos de servidor dedicados, no en escritorios de usuarios finales.
 
-Para obtener más información, consulte [Documentación de Adobe sobre el modo protegido](https://helpx.adobe.com/es/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Para obtener más información, consulte [Documentación de Adobe sobre el modo protegido](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1140,6 +1140,27 @@ Se necesita una cuenta de usuario local para ejecutar el servicio PDF Generator
 
 1. En la pestaña **[!UICONTROL Cuentas de usuario]**, proporcione las credenciales de una cuenta de usuario local y haga clic en **[!UICONTROL Enviar]**. Si Microsoft® Windows se lo solicita, permita el acceso al usuario. Cuando se agrega correctamente, el usuario configurado se muestra en la sección **[!UICONTROL Sus cuentas de usuario]** de la pestaña **[!UICONTROL Cuentas de usuario]**.
 
+### (Solo Windows) Habilite las conversiones de PDF Generator de varios subprocesos
+
+Para ejecutar conversiones de documentos de varios subprocesos mientras AEM Forms se ejecuta como un servicio de Windows, PDF Generator procesa las conversiones con una sola cuenta de usuario configurada.
+
+>[!NOTE]
+>
+> En este modo, varias instancias de **Microsoft® Word** (doc/docx) y **Excel** (xls/xlsx) se ejecutan bajo el mismo usuario y controlan las conversiones simultáneamente. **Microsoft® PowerPoint** (ppt/pptx) no admite este modo. PDF Generator inicia sólo una instancia de PowerPoint a la vez, por lo que las conversiones con varios subprocesos no son compatibles con PowerPoint.
+
+Para habilitar las conversiones multiproceso para Word y Excel:
+
+1. Configure una [cuenta de usuario local](#configure-a-local-user-account-to-run-the-pdf-generator-service) para PDF Generator.
+1. Inicie sesión en la instancia de autor de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configuración de PDF Generator]**. La URL predeterminada es <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. En la ficha **[!UICONTROL Configuración general]**, defina las siguientes opciones (configure PDFMaker para Word y Native2PDF para Excel):
+
+   * **Habilitar modo de usuario único para PDFMaker:** **true**
+   * **Tamaño del grupo de procesos de un solo usuario de PDFMaker:** Establezca como desee. Este valor es el número máximo de instancias de Word que pueden ejecutar conversiones al mismo tiempo.
+   * **Habilitar modo de usuario único para Native2PDF:** **true**
+   * **Tamaño del grupo de procesos de un solo usuario nativo2PDF:** Establezca como desee. Este valor es el número máximo de instancias de Excel que pueden ejecutar conversiones al mismo tiempo.
+
+1. Reinicie el servidor de AEM Forms.
+
 ### Configuración del tiempo de espera {#configure-the-time-out-settings}
 
 1. En el [Administrador de configuración de AEM](http://localhost:4502/system/console/configMgr), busque y abra el servicio **[!UICONTROL Jacorb ORB Provider]**.
@@ -1226,7 +1247,7 @@ Antes de configurar los certificados, asegúrese de que dispone de lo siguiente:
 
 * La contraseña de la clave privada proporcionada con el certificado.
 
-* El alias de la clave privada. Puede ejecutar el comando keytool de Java para ver el alias de la clave privada:
+* Alias de clave privada. Puede ejecutar el comando keytool de Java para ver el alias de la clave privada:
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * La contraseña del archivo del almacén de claves. Si utiliza el certificado de Extensiones de Reader de Adobe, la contraseña del archivo del almacén de claves siempre es la misma que la contraseña de la clave privada.

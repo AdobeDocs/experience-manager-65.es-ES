@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
+source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2144'
 ht-degree: 91%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 91%
 
 | Producto | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versión | 6.5.24.0 |
+| Versión | 6.5.25.0 |
 | Tipo | Versión del Service Pack |
-| Fecha | 4 de diciembre de 2025 |
+| Fecha | 10 de junio de 2026 |
 | Descargar URL | [Últimas versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) |
 
 >[!NOTE]
@@ -177,7 +177,7 @@ Para descargar e instalar el fragmento de servlet:
 Existen dos métodos diferentes que puede utilizar para instalar automáticamente el Service Pack de [!DNL ExperienceManager].<!--       UPDATE FOR EACH NEW RELEASE -->
 
 * Coloque el paquete en la carpeta `../crx-quickstart/install` cuando el servidor esté disponible en línea.
-El paquete se instala de forma automática.
+El paquete se instala automáticamente.
 
 * Use la API [HTTP del Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es). Use `cmd=install&recursive=true` para que se instalen los paquetes anidados.
 
@@ -252,11 +252,11 @@ El paquete se instala de forma automática.
 Existen dos métodos diferentes que puede utilizar para instalar automáticamente el Service Pack de [!DNL Experience Manager].<!--  UPDATE FOR EACH NEW RELEASE -->
 
 * Coloque el paquete en la carpeta `../crx-quickstart/install` cuando el servidor esté disponible en línea. El paquete se instala de forma automática.
-* Use la [API HTTP del administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es). Utilice `cmd=install&recursive=true` para que se instalen los paquetes anidados.
+* Use la API [HTTP del Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es). Utilice `cmd=install&recursive=true` para que se instalen los paquetes anidados.
 
   >[!NOTE]
   >
-  >El Service Pack de Experience Manager no admite la instalación de Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+  >Experience Manager Service Pack no admite la instalación de Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validación de la instalación**
 
