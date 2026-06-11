@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: e8b2b6b52c4071aa90fddaf2cd19fec1236b8472
+source-git-commit: 1a73ae15f03a427f33a748ad2c6c789541206579
 workflow-type: tm+mt
-source-wordcount: '8148'
+source-wordcount: '8188'
 ht-degree: 20%
 
 ---
@@ -50,7 +50,7 @@ Los fragmentos de contenido y la API de GraphQL también reciben mejoras de fiab
 
 * [Conversiones de PDF Generator con subprocesos múltiples](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): se agregó compatibilidad para ejecutar conversiones simultáneas de Microsoft Word (doc/docx) y Excel (xls/xlsx) cuando AEM Forms se ejecuta como un servicio de Windows con una sola cuenta de usuario configurada.
 
-* [Marcadores jerárquicos para PDF basados en XFA](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf): El servicio Output y AEM Forms Designer ahora generan jerarquías de marcadores estructuradas en PDF estáticos interactivos y planos basados en XFA. Los marcadores siguen a los niveles de encabezado (H1-H6) establecidos en las propiedades de accesibilidad de los cuadros de texto, por lo que las entradas H2-H6 se anidan bajo el elemento principal correcto en lugar de aparecer en paralelo.
+* [Marcadores jerárquicos para PDF basados en XFA](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): El servicio Output y AEM Forms Designer ahora generan jerarquías de marcadores estructuradas en PDF estáticos interactivos y planos basados en XFA. Los marcadores siguen a los niveles de encabezado (H1-H6) establecidos en las propiedades de accesibilidad de los cuadros de texto, por lo que las entradas H2-H6 se anidan bajo el elemento principal correcto en lugar de aparecer en paralelo.
 
 * [Detalles de nivel de formulario en registros de transacciones JEE](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms en JEE ahora registra detalles de nivel de formulario en `transaction_log.log` para cada transacción, además de la información de servicio y operación existente. Los administradores pueden correlacionar los datos de informes de transacciones con formularios específicos al analizar envíos, representaciones y conversiones. (FORMS-21574)
 
@@ -59,7 +59,11 @@ Los fragmentos de contenido y la API de GraphQL también reciben mejoras de fiab
    * Cliente de IBM® Content Manager 8.7
    * AEM Forms Designer en Microsoft® Windows Terminal Server 2025
 
-
+  >[!NOTE]
+  >
+  > Para actualizar JBoss EAP de 7.4.10 a 7.4.23, consulte:
+  > * [Actualice JBoss EAP de 7.4.10 a 7.4.23 para AEM Forms en JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) para entornos independientes.
+  > * [Actualizar el clúster EAP JBoss de 7.4.10 a 7.4.23 para AEM Forms en JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) para entornos de clúster.
 
 ## Se han corregido problemas en el Service Pack 25 {#fixed-issues}
 
@@ -637,9 +641,9 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
    2. Elimine el paquete con el nombre `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Reinicie el servidor de AEM.
 
-* **FORMS-23703** Cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
+* **FORMS-23703** Cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
 * **GRANITE-63681** La configuración predeterminada del sistema bloquea las palabras clave y los patrones de regex necesarios, lo que impide que los conectores del modelo de datos de formulario se autentiquen. Para resolver el problema, descargue e instale la revisión desde el [vínculo](/help/release-notes/aem-forms-hotfix.md).
-* La conversión de **FORMS-23979** HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.25.0](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* La conversión de **FORMS-23979** HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.25.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 * **FORMS-23717** Después de actualizar a **AEM Forms6.5.25.0**, `server.log` y `error.log` se pueden inundar con mensajes WARN repetidos, como *Error al crear la fábrica del analizador seguro* o *No se admite el atributo Security*. Los registros pueden crecer en alrededor de **5-10 líneas por segundo** (cientos de MB por hora), lo que puede llenar el disco y bloquear el despliegue de producción.
 
 Para reducir el volumen de registro, establezca el nivel de registro de `com.adobe.util.XMLSecurityUtil` en `ERROR` en la configuración del servidor de aplicaciones o mediante el argumento de JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Esta funcionalidad solo oculta los mensajes y no corrige la causa subyacente.
@@ -660,11 +664,11 @@ Los siguientes archivos zip contienen los documentos de texto que enumeran los p
 Estos sitios web solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga del producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
