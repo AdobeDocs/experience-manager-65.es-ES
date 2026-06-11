@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 1a73ae15f03a427f33a748ad2c6c789541206579
+source-git-commit: dcf42fbacda68e1badbb9f7a6e7d42068f2281a9
 workflow-type: tm+mt
-source-wordcount: '8188'
+source-wordcount: '7373'
 ht-degree: 20%
 
 ---
@@ -50,7 +50,7 @@ Los fragmentos de contenido y la API de GraphQL también reciben mejoras de fiab
 
 * [Conversiones de PDF Generator con subprocesos múltiples](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): se agregó compatibilidad para ejecutar conversiones simultáneas de Microsoft Word (doc/docx) y Excel (xls/xlsx) cuando AEM Forms se ejecuta como un servicio de Windows con una sola cuenta de usuario configurada.
 
-* [Marcadores jerárquicos para PDF basados en XFA](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf): El servicio Output y AEM Forms Designer ahora generan jerarquías de marcadores estructuradas en PDF estáticos interactivos y planos basados en XFA. Los marcadores siguen a los niveles de encabezado (H1-H6) establecidos en las propiedades de accesibilidad de los cuadros de texto, por lo que las entradas H2-H6 se anidan bajo el elemento principal correcto en lugar de aparecer en paralelo.
+* [Marcadores jerárquicos para PDF basados en XFA](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf): El servicio Output y AEM Forms Designer ahora generan jerarquías de marcadores estructuradas en PDF estáticos interactivos y planos basados en XFA. Los marcadores siguen a los niveles de encabezado (H1-H6) establecidos en las propiedades de accesibilidad de los cuadros de texto, por lo que las entradas H1-H6 se anidan bajo el elemento principal correcto en lugar de aparecer en paralelo.
 
 * [Detalles de nivel de formulario en registros de transacciones JEE](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms en JEE ahora registra detalles de nivel de formulario en `transaction_log.log` para cada transacción, además de la información de servicio y operación existente. Los administradores pueden correlacionar los datos de informes de transacciones con formularios específicos al analizar envíos, representaciones y conversiones. (FORMS-21574)
 
@@ -599,15 +599,7 @@ Fragmentos de contenido: la previsualización falla debido a la protección DoS 
 
 ### Problemas conocidos de AEM Forms {#known-issues-aem-forms-6525}
 
-* **FORMS-14521** Si un usuario intenta obtener una vista previa de un borrador de carta con datos XML guardados, se queda atascado en el estado `Loading` para algunas cartas específicas.
-* **FORMS-16603** En la vista preliminar de la interfaz de usuario de Interactive Communications Agent, algunos valores calculados no se muestran correctamente.
-* **FORMS-15681** Cuando la carta se ve en la Vista preliminar, el contenido cambia; algunos espacios desaparecen y ciertas cartas se reemplazan por `x`.
-* **FORMS-15428** Después de actualizar a AEM Forms Service Pack 20 (6.5.20.0) con el complemento de Forms, las configuraciones que dependen del servicio heredado de Adobe Analytics Cloud mediante autenticación basada en credenciales dejan de funcionar. Este problema impedía que las reglas de análisis se ejecutaran de forma correcta.
-* **FORMS-16557** En la vista preliminar de la interfaz de usuario de Interactive Communications Agent, el símbolo de moneda (como el signo de dólar $) se muestra de manera incoherente en todos los valores de campo. Aparece para valores de hasta 999, pero falta para valores de 1000 y superiores.
-* **FORMS-16575** Las modificaciones realizadas en el XDP de los fragmentos de diseño anidados en una comunicación interactiva no se reflejarán en el editor de CI.
-* **FORMS-21378**: cuando la validación del lado del servidor (SSV) está habilitada, es posible que se produzcan errores en los envíos de formularios. Si tiene este problema, póngase en contacto con el Soporte técnico de Adobe para obtener ayuda.
 * **FORMS-23722** Cuando un formulario que contiene un campo de **Archivo adjunto** que usa `bindref` se envía a un flujo de trabajo de AEM con un paso de **Asignar tarea**, no se muestran los archivos adjuntos. Como resultado, no aparecen cuando la tarea se abre desde la Bandeja de entrada. Los archivos se guardan correctamente en el repositorio, pero la interfaz de usuario del paso Asignar tarea no muestra los archivos adjuntos.
-* **FORMS-23802** Las funciones personalizadas no se pueden cargar en la vista previa o en la publicación cuando un formulario adaptable está incrustado en una página de Sites. Este problema se produce cuando la versión de la biblioteca **aem-forms-core-component** es anterior a la 1.1.76. Puede ver un error como `InvalidFormContainerException: No form container found` en los registros. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Forms SP24 (AddOn 6.0.1454).
 
 #### Problemas conocidos con revisiones disponibles {#aem-forms-issues-with-hotfixes}
 
@@ -619,12 +611,7 @@ Fragmentos de contenido: la previsualización falla debido a la protección DoS 
 
 Los siguientes problemas incluyen una revisión disponible para su descarga e instalación. Puede [descargar e instalar la revisión](/help/release-notes/aem-forms-hotfix.md) para resolver los siguientes problemas:
 
-* **FORMS-23881** En implementaciones JEE de AEM Forms configuradas con el instalador completo de 6.5.23.0, el servicio de salida no procesa las solicitudes cuando se proporciona un archivo XCI personalizado en la invocación. Para resolver este problema, instale el Service Pack más reciente de AEM 6.5.25.0 Forms desde el portal [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
-* **FORMS-23789** (solo AEM Forms en JEE): Los usuarios experimentaron problemas con Log4j en AEM Forms en JEE SP24, lo que provocó interrupciones en el registro y la supervisión de los clientes empresariales. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Forms en el paquete de servicio JEE 6.5.25.0.
-* **FORMS-23802** Las funciones personalizadas no se cargan en la vista previa ni en la publicación cuando el formulario está en una página de Sites con una versión anterior de aem-forms-core-component (&lt;1.1.76). Para resolver este problema, instale la revisión [AEM Forms AddOn 6.0.1454](/help/release-notes/aem-forms-hotfix.md) para SP24.
-* **FORMS-23789** (solo AEM Forms en JEE): Los usuarios experimentaron problemas con Log4j en AEM Forms en JEE SP24, lo que provocó interrupciones en el registro y la supervisión de los clientes empresariales. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Forms en el paquete de servicio JEE 6.5.25.0.
-* **FORMS-23802** Las funciones personalizadas no se cargan en la vista previa ni en la publicación cuando el formulario está en una página de Sites con una versión anterior de aem-forms-core-component (&lt;1.1.76). Para resolver este problema, instale la revisión [AEM Forms AddOn 6.0.1454](/help/release-notes/aem-forms-hotfix.md) para SP24.
-* AEM Forms ahora incluye una actualización de la versión de Struts de la 2.5.33 a la 6.x para el componente de formularios. Esta actualización ofrece los cambios de Struts que se omitieron anteriormente y que no se incluyeron en SP24. La compatibilidad se añadió a través de una [revisión](/help/release-notes/aem-forms-hotfix.md) que puede descargar e instalar para añadir compatibilidad con la última versión de Struts.
+* **NPR-44100** Después de instalar el paquete de servicio 25 de AEM 6.5 en implementaciones WAR/JEE (incluido AEM Forms en JEE), el paquete `com.adobe.cq.screens.sessions` permanece en el estado Instalado y nunca se activa. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Service Pack 6.5.25.0.
 * **FORMS-14926** Después de instalar AEM Forms JEE Service Pack 21 (6.5.21.0), si encuentra entradas duplicadas de Jars Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` en la carpeta `<AEM_Forms_Installation>/lib/caching/lib`, realice los siguientes pasos para resolver el problema:
 
    1. Detenga los localizadores, si están en funcionamiento.
@@ -634,21 +621,7 @@ Los siguientes problemas incluyen una revisión disponible para su descarga e in
    5. Abra el símbolo del sistema en modo de administrador.
    6. Instale el parche de Geode mediante el archivo `geode-*-1.15.1.2.jar`.
 
-* **FORMS-15256** Cuando los usuarios actualizaron desde AEM 6.5 Forms Service Pack 18 o 19 a Service Pack 20 o 21, encontraron un error de compilación de JSP. Este error les impedía abrir o crear formularios adaptables. También causó problemas con otras interfaces de AEM. Estas interfaces incluían el editor de páginas, la IU de AEM Forms, el editor de flujos de trabajo y la IU de información general del sistema.
-
-  Si tiene un problema de este tipo, siga estos pasos para resolverlo:
-   1. Vaya al directorio `/libs/fd/aemforms/install/` en CRXDE.
-   2. Elimine el paquete con el nombre `com.adobe.granite.ui.commons-5.10.26.jar`.
-   3. Reinicie el servidor de AEM.
-
-* **FORMS-23703** Cuando la regla `contains` está configurada sin un valor predeterminado, se produce un error en la validación del lado del servidor para un formulario adaptable. Puede instalar la versión más reciente de [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para solucionar el problema.
-* **GRANITE-63681** La configuración predeterminada del sistema bloquea las palabras clave y los patrones de regex necesarios, lo que impide que los conectores del modelo de datos de formulario se autentiquen. Para resolver el problema, descargue e instale la revisión desde el [vínculo](/help/release-notes/aem-forms-hotfix.md).
-* La conversión de **FORMS-23979** HTML a PDF (PDFG) puede experimentar tiempos de espera intermitentes. Posteriormente se publicó una versión más reciente del complemento de Forms para SP24 que incluye la corrección. Si encuentra este problema, actualice su entorno al [último complemento de Forms publicado para 6.5.25.0](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
-* **FORMS-23717** Después de actualizar a **AEM Forms6.5.25.0**, `server.log` y `error.log` se pueden inundar con mensajes WARN repetidos, como *Error al crear la fábrica del analizador seguro* o *No se admite el atributo Security*. Los registros pueden crecer en alrededor de **5-10 líneas por segundo** (cientos de MB por hora), lo que puede llenar el disco y bloquear el despliegue de producción.
-
-Para reducir el volumen de registro, establezca el nivel de registro de `com.adobe.util.XMLSecurityUtil` en `ERROR` en la configuración del servidor de aplicaciones o mediante el argumento de JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Esta funcionalidad solo oculta los mensajes y no corrige la causa subyacente.
-
-* **FORMS-23875** En la búsqueda del modelo de datos de formulario, la interfaz de usuario muestra una etiqueta de HTML aunque falte una entidad relevante. Para resolver el problema, descargue e instale la revisión desde [el vínculo](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
+   * AEM Forms ahora incluye una actualización de la versión de Struts de la 2.5.33 a la 6.x para el componente de formularios. Esta actualización ofrece los cambios de Struts que se omitieron anteriormente y que no se incluyeron en SP24. La compatibilidad se añadió a través de una [revisión](/help/release-notes/aem-forms-hotfix.md) que puede descargar e instalar para añadir compatibilidad con la última versión de Struts.
 
 ## Paquetes de contenido y paquetes OSGi incluidos{#osgi-bundles-and-content-packages-included}
 
