@@ -50,7 +50,7 @@ Los fragmentos de contenido y la API de GraphQL también reciben mejoras de fiab
 
 * [Conversiones de PDF Generator con subprocesos múltiples](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): se agregó compatibilidad para ejecutar conversiones simultáneas de Microsoft Word (doc/docx) y Excel (xls/xlsx) cuando AEM Forms se ejecuta como un servicio de Windows con una sola cuenta de usuario configurada.
 
-* [Marcadores jerárquicos para PDF basados en XFA](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): El servicio Output y AEM Forms Designer ahora generan jerarquías de marcadores estructuradas en PDF estáticos interactivos y planos basados en XFA. Los marcadores siguen a los niveles de encabezado (H1-H6) establecidos en las propiedades de accesibilidad de los cuadros de texto, por lo que las entradas H1-H6 se anidan bajo el elemento principal correcto en lugar de aparecer en paralelo.
+* [Marcadores jerárquicos para PDF basados en XFA](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf): El servicio Output y AEM Forms Designer ahora generan jerarquías de marcadores estructuradas en PDF estáticos interactivos y planos basados en XFA. Los marcadores siguen a los niveles de encabezado (H1-H6) establecidos en las propiedades de accesibilidad de los cuadros de texto, por lo que las entradas H1-H6 se anidan bajo el elemento principal correcto en lugar de aparecer en paralelo.
 
 * [Detalles de nivel de formulario en registros de transacciones JEE](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms en JEE ahora registra detalles de nivel de formulario en `transaction_log.log` para cada transacción, además de la información de servicio y operación existente. Los administradores pueden correlacionar los datos de informes de transacciones con formularios específicos al analizar envíos, representaciones y conversiones. (FORMS-21574)
 
@@ -637,11 +637,11 @@ Los siguientes archivos zip contienen los documentos de texto que enumeran los p
 Estos sitios web solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga del producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
