@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: dcf42fbacda68e1badbb9f7a6e7d42068f2281a9
+source-git-commit: ada1a7e3074515181f78dae914f7a664132c0226
 workflow-type: tm+mt
 source-wordcount: '7373'
 ht-degree: 20%
@@ -602,12 +602,6 @@ Fragmentos de contenido: la previsualización falla debido a la protección DoS 
 * **FORMS-23722** Cuando un formulario que contiene un campo de **Archivo adjunto** que usa `bindref` se envía a un flujo de trabajo de AEM con un paso de **Asignar tarea**, no se muestran los archivos adjuntos. Como resultado, no aparecen cuando la tarea se abre desde la Bandeja de entrada. Los archivos se guardan correctamente en el repositorio, pero la interfaz de usuario del paso Asignar tarea no muestra los archivos adjuntos.
 
 #### Problemas conocidos con revisiones disponibles {#aem-forms-issues-with-hotfixes}
-
-<!--
->[!NOTE]
->
->Avoid upgrading to Service Pack 6.5.25.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.25.0 only after the required hotfixes are released.
--->
 
 Los siguientes problemas incluyen una revisión disponible para su descarga e instalación. Puede [descargar e instalar la revisión](/help/release-notes/aem-forms-hotfix.md) para resolver los siguientes problemas:
 
