@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: dcf42fbacda68e1badbb9f7a6e7d42068f2281a9
+source-git-commit: ada1a7e3074515181f78dae914f7a664132c0226
 workflow-type: tm+mt
 source-wordcount: '7373'
 ht-degree: 20%
@@ -50,7 +50,7 @@ Los fragmentos de contenido y la API de GraphQL también reciben mejoras de fiab
 
 * [Conversiones de PDF Generator con subprocesos múltiples](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): se agregó compatibilidad para ejecutar conversiones simultáneas de Microsoft Word (doc/docx) y Excel (xls/xlsx) cuando AEM Forms se ejecuta como un servicio de Windows con una sola cuenta de usuario configurada.
 
-* [Marcadores jerárquicos para PDF basados en XFA](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf): El servicio Output y AEM Forms Designer ahora generan jerarquías de marcadores estructuradas en PDF estáticos interactivos y planos basados en XFA. Los marcadores siguen a los niveles de encabezado (H1-H6) establecidos en las propiedades de accesibilidad de los cuadros de texto, por lo que las entradas H1-H6 se anidan bajo el elemento principal correcto en lugar de aparecer en paralelo.
+* [Marcadores jerárquicos para PDF basados en XFA](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): El servicio Output y AEM Forms Designer ahora generan jerarquías de marcadores estructuradas en PDF estáticos interactivos y planos basados en XFA. Los marcadores siguen a los niveles de encabezado (H1-H6) establecidos en las propiedades de accesibilidad de los cuadros de texto, por lo que las entradas H1-H6 se anidan bajo el elemento principal correcto en lugar de aparecer en paralelo.
 
 * [Detalles de nivel de formulario en registros de transacciones JEE](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms en JEE ahora registra detalles de nivel de formulario en `transaction_log.log` para cada transacción, además de la información de servicio y operación existente. Los administradores pueden correlacionar los datos de informes de transacciones con formularios específicos al analizar envíos, representaciones y conversiones. (FORMS-21574)
 
@@ -603,12 +603,6 @@ Fragmentos de contenido: la previsualización falla debido a la protección DoS 
 
 #### Problemas conocidos con revisiones disponibles {#aem-forms-issues-with-hotfixes}
 
-<!--
->[!NOTE]
->
->Avoid upgrading to Service Pack 6.5.25.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.25.0 only after the required hotfixes are released.
--->
-
 Los siguientes problemas incluyen una revisión disponible para su descarga e instalación. Puede [descargar e instalar la revisión](/help/release-notes/aem-forms-hotfix.md) para resolver los siguientes problemas:
 
 * **NPR-44100** Después de instalar el paquete de servicio 25 de AEM 6.5 en implementaciones WAR/JEE (incluido AEM Forms en JEE), el paquete `com.adobe.cq.screens.sessions` permanece en el estado Instalado y nunca se activa. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Service Pack 6.5.25.0.
@@ -637,11 +631,11 @@ Los siguientes archivos zip contienen los documentos de texto que enumeran los p
 Estos sitios web solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga del producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
