@@ -9,10 +9,10 @@ exl-id: 8f4c2a91-6b3d-4e7f-9c12-5d8e1f0a2b34
 solution: Experience Manager, Experience Manager Forms
 feature: AEM Forms Upgrade,AEM Forms on JEE
 role: User, Developer
-source-git-commit: 652162941dd716ae797ce50709e91757dad99054
+source-git-commit: cb190feb41152d40c36ea2f152ee04cc8c8eba1d
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 3%
+source-wordcount: '396'
+ht-degree: 2%
 
 ---
 
@@ -29,15 +29,11 @@ Este artículo se aplica a:
 * AEM Forms en JEE que se ejecuta en JBoss EAP 7.4.10 en un entorno independiente
 * Modos de instalación llave en mano y llave en mano parcial en Windows y Linux
 
->[!NOTE]
->
-> Si va a actualizar un entorno de clúster de JBoss, complete primero los pasos de este artículo y, a continuación, realice los pasos adicionales de [Actualizar el clúster EAP JBoss de la versión 7.4.10 a la versión 7.4.23 para AEM Forms en JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md).
-
 ## Requisitos previos {#prerequisites}
 
 Antes de empezar:
 
-* Descargue el paquete JBoss 7.4.23 desde el [Portal de distribución de software de Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
+* Descargue el paquete JBoss 7.4.23 desde el [Portal de distribución de software de Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fjboss-eap-7.4.23-1.0.17.zip).
 * Asegúrese de que tiene acceso administrativo al entorno de destino.
 * Realice una copia de seguridad completa de la instalación de JBoss existente.
 
