@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: d0adc4dcbe6b6045739e0b7e102c58a752fe7c14
+source-git-commit: 8f8aed4c653cc286b32c83a38382f2b10370cdc8
 workflow-type: tm+mt
-source-wordcount: '8247'
+source-wordcount: '8268'
 ht-degree: 96%
 
 ---
@@ -587,6 +587,9 @@ ht-degree: 96%
          + [Actualizar a AEM Forms en JEE para JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_es)
          + [Actualizar a Adobe Experience Manager Forms en JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_es)
          + [Actualización a Adobe Experience Manager Forms en JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_es)
+         + Artículos de Knowledge Base {#aem-forms-jee-knowledge-base-articles}
+            + [Actualice JBoss EAP de 7.4.10 a 7.4.23 para AEM Forms en JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
+            + [Actualizar el clúster EAP de JBoss de 7.4.10 a 7.4.23 para AEM Forms en JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
    + Administrar AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms en grupos y privilegios de OSGi](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Crear carpetas nuevas para aplicar categorías a los formularios](/help/forms/using/creating-new-folders-categorize-forms.md)
