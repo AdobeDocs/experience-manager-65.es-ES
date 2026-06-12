@@ -11,8 +11,8 @@ exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 91%
+source-wordcount: '839'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
 | AEM 6.5 | Este artículo |
 
 ## Acerca de los diccionarios de configuración regional {#about-locale-dictionaries}
@@ -40,15 +40,15 @@ Existen dos métodos para identificar la configuración regional del formulario 
 * observando los siguientes parámetros en el orden especificado:
 
    * Parámetro de solicitud `afAcceptLang`
-Para anular la configuración regional del explorador de los usuarios, puede pasar el `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligó a procesar el formulario en la configuración regional japonesa:
+Para anular la configuración regional del explorador de los usuarios, puede pasar el parámetro de solicitud `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligó a procesar el formulario en la configuración regional japonesa:
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * La configuración regional del explorador establecida para el usuario, que se especifica en la solicitud utilizando el encabezado `Accept-Language`.
 
    * La configuración de idioma del usuario especificada en AEM.
 
-   * La configuración regional del explorador está habilitada de forma predeterminada. Para cambiar la configuración del explorador local,
-      * Abra el Administrador de configuración. La URL es `http://[server]:[port]/system/console/configMgr`. 
+   * La configuración regional del explorador está habilitada de forma predeterminada. Para cambiar la configuración regional del explorador,
+      * Abra el Administrador de configuración. La URL es `http://[server]:[port]/system/console/configMgr`.
       * Busque y abra la configuración del **[!UICONTROL Canal web de formularios adaptables y comunicaciones interactivas]**.
       * Cambie el estado de la opción **[!UICONTROL Usar configuración regional del explorador]** y pulse **[!UICONTROL Guardar]** para guardar la configuración.
 
@@ -116,7 +116,7 @@ Realice este paso solo si la configuración regional `<locale>` que está agrega
 1. Cree un nodo `languages` `nt:unstructured` en `etc`, si no está presente.
 
 1. Agregue una propiedad de cadena de varios valores `languages` al nodo, si no está presente ya.
-1. Agregue los valores de configuración regional predeterminados `<locale>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
+1. Agregue los valores de configuración regional predeterminados `<locale>``de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja` y `ko-kr`, si no están presentes.
 
 1. Agregue `<locale>` a los valores de la propiedad `languages` de `/etc/languages`.
 

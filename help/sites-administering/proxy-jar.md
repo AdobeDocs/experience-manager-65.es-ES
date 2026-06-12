@@ -1,5 +1,5 @@
 ---
-title: Herramienta Servidor Proxy (proxy.jar)
+title: Herramienta de servidor proxy (proxy.jar)
 description: Obtenga información acerca de la herramienta de servidor proxy (proxy.jar) en Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
 
-# Herramienta Servidor Proxy (proxy.jar){#proxy-server-tool-proxy-jar}
+# Herramienta de servidor proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
 El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor. El servidor proxy realiza un seguimiento de todas las interacciones cliente-servidor y genera un registro de toda la comunicación TCP. Esto permite monitorizar exactamente lo que está pasando, sin tener que acceder al servidor principal.
 
@@ -33,11 +33,11 @@ Puede utilizar el servidor proxy para supervisar toda la interacción cliente-se
 * SMTP para mensajes de correo electrónico
 * LDAP para la administración de usuarios
 
-AEM Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualquiera que se comuniquen a través de una red TCP/IP; por ejemplo, un explorador web y un servidor de correo electrónico de la red de red (). AEM Esto le permite monitorizar exactamente lo que sucede cuando solicita una página de la.
+Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualquiera que se comuniquen a través de una red TCP/IP; por ejemplo, un explorador web y AEM. Esto le permite monitorizar exactamente lo que sucede cuando solicita una página de AEM.
 
 ## Inicio de la herramienta de servidor proxy {#starting-the-proxy-server-tool}
 
-AEM La herramienta se encuentra en la carpeta /opt/helpers de la instalación de la instalación de la. Para iniciarlo, escriba:
+La herramienta se encuentra en la carpeta /opt/helpers de la instalación de AEM. Para iniciarlo, escriba:
 
 ```xml
 java -jar proxy.jar <host> <remoteport> <localport> [options]
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa que esta entrada proviene del cliente (es una solicitud de una página web)
 * 0 es el número de conexión (el contador de conexión comienza en 0)
 * #00000 el desplazamiento en la secuencia de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
-* [GET &lt;?>] es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
+* [GET &lt;??>] es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
 
 Cuando se cierra una conexión, se registra la siguiente información:
 
@@ -143,7 +143,7 @@ Revise una plantilla simple que produzca el siguiente código cuando se solicite
 </html>
 ```
 
-AEM Si se está ejecutando en localhost:4303, inicie el servidor proxy de la siguiente manera:
+Si AEM se está ejecutando en localhost:4303, inicie el servidor proxy de la siguiente manera:
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
@@ -162,7 +162,7 @@ starting proxy for localhost:4303 on port 4444
 using logfile: C:\CQUnify355default\opt\helpers\test.log
 ```
 
-Los siguientes campos de encabezado se enumeran al principio de la primera conexión (0), que solicita la página del HTML principal:
+Los siguientes campos de encabezado se enumeran al principio de la primera conexión (0), que solicita la página principal de HTML:
 
 ```xml
 C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102936796533 HTTP/1.1 ]
@@ -182,7 +182,7 @@ C-0-#000369 -> [Connection: Keep-Alive ]
 
 El servidor proxy es una buena herramienta para comprobar si las cookies están configuradas correctamente o no. Aquí puede ver lo siguiente:
 
-* AEM cookie de cq3session generada por el usuario de
+* cookie cq3session generada por AEM
 * la cookie de cambio de modo de presentación generada por CFC
 * una cookie denominada JSESSIONID; JSP la crea automáticamente si no se desactiva explícitamente con &lt;%@ page session=&quot;false&quot; %>:
 
@@ -203,7 +203,7 @@ S-0-#000158 -> [Set-Cookie: JSESSIONID=4161a56b-f193-d8-88a5-e09c5ff7ef2a;Path=/
 S-0-#000232 -> [ ]
 ```
 
-En este caso, el servidor comienza a enviar el código del HTML en la conexión 0:
+En este caso, el servidor comienza a enviar el código HTML en la conexión 0:
 
 ```xml
 S-0-#000234 -> [<html> ]
@@ -224,7 +224,7 @@ C-0-Finished: 516 bytes (0.0 kb/s)
 S-0-Finished: 374 bytes (0.0 kb/s)
 ```
 
-Ahora, la salida se inicia para la conexión 1, que descarga la imagen contenida en el código del HTML:
+Ahora, la salida se inicia para la conexión 1, que descarga la imagen contenida en el código HTML:
 
 ```xml
 C-1-#000000 -> [GET /author/logo.gif HTTP/1.1 ]
@@ -277,7 +277,7 @@ C-1-Finished: 403 bytes (0.0 kb/s)
 
 El ejemplo anterior es comparativamente sencillo, ya que las dos conexiones se producen de forma secuencial:
 
-* en primer lugar, el servidor devuelve el código de HTML
+* primero, el servidor devuelve el código HTML
 * a continuación, el explorador solicita la imagen y abre una nueva conexión
 
 En la práctica, una página puede generar muchas solicitudes paralelas de imágenes, hojas de estilo, archivos JavaScript, etc. Esto significa que los registros tienen entradas superpuestas de conexiones abiertas paralelas. En ese caso, Adobe recomienda utilizar la opción -i para mejorar la legibilidad.

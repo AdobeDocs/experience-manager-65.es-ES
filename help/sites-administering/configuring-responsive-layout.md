@@ -12,8 +12,8 @@ feature: Operations
 role: Admin
 source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 2%
+source-wordcount: '1502'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ Obtenga información sobre cómo configurar el contenedor y el modo de diseño.
 
 >[!TIP]
 >
->AEM Este documento proporciona información general sobre el diseño interactivo para administradores y desarrolladores de sitios, y describe cómo se aplican las funciones en los informes de diseño de la aplicación de la aplicación de forma.
+>Este documento proporciona información general sobre el diseño interactivo para administradores y desarrolladores de sitios, y describe cómo se aplican las funciones en AEM.
 >
 >Para los autores de contenido, los detalles de cómo utilizar las características de diseño adaptable en una página de contenido están disponibles en el documento [Diseño adaptable para sus páginas de contenido.](/help/sites-authoring/responsive-layout.md)
 
@@ -65,7 +65,7 @@ Con estos mecanismos de cuadrícula adaptable puede hacer lo siguiente:
 
 >[!TIP]
 >
->El Adobe AEM AEM proporciona [documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del diseño interactivo como referencia que se puede proporcionar a los desarrolladores de interfaces de usuario, lo que les permite usar la cuadrícula de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de la interfaz de usuario de GitHub, por ejemplo, al crear maquetas de HTML AEM estáticos para un sitio de interfaz de usuario en el futuro. El diseño de la interfaz de usuario de GitHub se puede proporcionar a los desarrolladores de interfaces de usuario de usuario de GitHub como una referencia que les permita usar la cuadrícula de la interfaz de usuario de un sitio en el futuro.
+>Adobe proporciona [documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del diseño interactivo como referencia que se puede proporcionar a los desarrolladores de interfaces de usuario, lo que les permite usar la cuadrícula de AEM fuera de AEM, por ejemplo, al crear maquetas de HTML estáticas para un sitio de AEM futuro.
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Se pueden definir utilizando CRXDE Lite o XML.
 
 #### Configuración de puntos de interrupción mediante CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. Con el CRXDE Lite (o equivalente), vaya a:
+1. Con CRXDE Lite (o equivalente), vaya a:
 
    * Definición de la plantilla.
    * El nodo `jcr:content` de su página.
@@ -211,9 +211,9 @@ Los dos ejemplos siguientes ilustran la definición:
 
 #### CSS para puntos de interrupción con LESS {#css-for-breakpoints-using-less}
 
-AEM Utiliza LESS para generar partes del CSS necesario, que deben incluirse para los proyectos.
+AEM utiliza LESS para generar partes del CSS necesario, que deben incluirse para los proyectos.
 
-También debe crear una [biblioteca de cliente](https://experienceleague.adobe.com/docs/?lang=es) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
+También debe crear una [biblioteca de cliente](https://experienceleague.adobe.com/docs/) para proporcionar configuraciones y llamadas a funciones adicionales. El siguiente extracto LESS es un ejemplo del mínimo que debe agregar al proyecto:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -247,7 +247,7 @@ La definición de la cuadrícula base se encuentra en:
 
 #### Consideraciones de estilo {#styling-considerations}
 
-Los componentes contenidos en un contenedor interactivo cambian de tamaño (junto con sus respectivos elementos DOM HTML) según el tamaño de la cuadrícula interactiva. Por lo tanto, en estas circunstancias, se recomienda evitar (o actualizar) las definiciones de elementos DOM de ancho fijo (contenidos).
+Los componentes contenidos en un contenedor interactivo cambian de tamaño (junto con sus respectivos elementos DOM de HTML) según el tamaño de la cuadrícula interactiva. Por lo tanto, en estas circunstancias, se recomienda evitar (o actualizar) las definiciones de elementos DOM de ancho fijo (contenidos).
 
 Por ejemplo:
 
@@ -329,7 +329,7 @@ Puede haber ocasiones en que sea necesario anidar cuadrículas adaptables para s
 
 Cuando no pueda evitar utilizar cuadrículas adaptables anidadas, asegúrese de lo siguiente:
 
-* Todos los contenedores (contenedores, pestañas, acordeones, etc.) tienen la propiedad `layout = responsiveGrid`.
+* Todos los contenedores (contenedores, pestañas, acordeones, etc.) tiene la propiedad `layout = responsiveGrid`.
 * No mezcle la propiedad `layout = simple` en la jerarquía de contenedor.
 
 Esto incluye todos los contenedores estructurales de la plantilla de página.

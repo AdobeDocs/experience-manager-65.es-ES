@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 99%
+source-wordcount: '1046'
+ht-degree: 97%
 
 ---
 
@@ -94,7 +94,7 @@ El servicio de Forms con códigos de barras devuelve el siguiente documento XML 
 
 ### Flujos de trabajo que utilizan formularios con códigos de barras {#workflows-that-use-barcoded-forms}
 
-Los autores de formularios crean formularios interactivos con códigos de barras mediante Designer. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_63)). Cuando un usuario rellena el formulario con códigos de barras con Adobe Reader o Acrobat, el código de barras se actualiza automáticamente para codificar los datos del formulario.
+Los autores de formularios crean formularios interactivos con códigos de barras mediante Designer. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_63)). Cuando un usuario rellena un formulario con códigos de barras con Adobe Reader o Acrobat, el código de barras se actualiza automáticamente para codificar los datos del formulario.
 
 El servicio de Forms con códigos de barras es útil para convertir los datos que existen en papel a formato electrónico. Por ejemplo, cuando se rellena e imprime un formulario con códigos de barras, la copia impresa se puede escanear y utilizar como entrada en el servicio de Forms con códigos de barras.
 
