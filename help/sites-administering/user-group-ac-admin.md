@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '3073'
-ht-degree: 0%
+source-wordcount: '3107'
+ht-degree: 3%
 
 ---
 
@@ -182,14 +182,14 @@ En la tabla siguiente se enumeran algunas recomendaciones y prácticas recomenda
    <td><p>Evite asignar derechos de acceso usuario por usuario. Esto se debe a varios motivos:</p>
     <ul>
      <li>Hay muchos más usuarios que grupos, por lo que los grupos simplifican la estructura.</li>
-     <li>Los grupos ayudan a proporcionar una visión general de todas las cuentas.</li>
+     <li>Los grupos ayudan a proporcionar información general de todas las cuentas.</li>
      <li>La herencia es más sencilla con los grupos.</li>
      <li>Los usuarios van y vienen. Los grupos son a largo plazo.</li>
     </ul> </td>
   </tr>
   <tr>
    <td><i>Sea positivo</i></td>
-   <td><p>Utilice siempre las instrucciones Allow para especificar los derechos de acceso del principal del grupo (siempre que sea posible). Evite utilizar una instrucción Deny.</p> <p>Las entidades de seguridad de grupo se evalúan en orden, tanto dentro de la jerarquía como en orden dentro de una sola lista de control de acceso.</p> </td>
+   <td><p>Utilice siempre las instrucciones Allow para especificar los derechos de acceso del principal del grupo (siempre que sea posible). Evite utilizar una instrucción Denegar.</p> <p>Las entidades de seguridad de grupo se evalúan en orden, tanto dentro de la jerarquía como en orden dentro de una sola lista de control de acceso.</p> </td>
   </tr>
   <tr>
    <td><i>Manténgalo simple</i></td>
@@ -201,7 +201,7 @@ En la tabla siguiente se enumeran algunas recomendaciones y prácticas recomenda
   </tr>
   <tr>
    <td><i>Usuarios/grupos predeterminados</i></td>
-   <td>Actualice siempre Usuarios y grupos predeterminados inmediatamente después de la instalación para evitar problemas de seguridad.</td>
+   <td>Actualice siempre los usuarios y grupos predeterminados inmediatamente después de la instalación para evitar problemas de seguridad.</td>
   </tr>
  </tbody>
 </table>
@@ -437,7 +437,7 @@ O elimine un miembro existente con el símbolo de papelera.
 
 ## Administración de derechos de acceso {#access-right-management}
 
-Con la ficha **Control de acceso** del CRXDE Lite, puede definir las directivas de control de acceso y asignar los privilegios relacionados.
+Con la ficha **Control de acceso** de CRXDE Lite, puede definir las directivas de control de acceso y asignar los privilegios relacionados.
 
 Por ejemplo, para **Ruta actual**, seleccione el recurso necesario en el panel izquierdo, en la ficha Control de acceso del panel inferior derecho:
 
@@ -485,7 +485,7 @@ Se pueden seleccionar las políticas para:
 
 >[!NOTE]
 >
->Para simplificar el Adobe de administración, recomienda que asigne derechos de acceso a las cuentas de grupo, no a las cuentas de usuario individuales.
+>Para simplificar la administración, Adobe recomienda que asigne derechos de acceso a las cuentas de grupo, no a las cuentas de usuario individuales.
 >
 >Es más fácil administrar algunos grupos que varias cuentas de usuario.
 
@@ -512,7 +512,7 @@ Los siguientes privilegios están disponibles para seleccionarlos al agregar una
    <td>Es un privilegio agregado que contiene todos los demás privilegios predefinidos.</td>
   </tr>
   <tr>
-   <td><strong>Avanzado </strong></td>
+   <td><strong>Avanzado</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -561,7 +561,7 @@ Los siguientes privilegios están disponibles para seleccionarlos al agregar una
   </tr>
   <tr>
    <td><code>jcr:removeNode</code></td>
-   <td>Elimine un nodo.</td>
+   <td>Quitar un nodo.</td>
   </tr>
   <tr>
    <td><code>jcr:retentionManagement</code></td>
@@ -646,7 +646,7 @@ El orden en la lista indica el orden en que se aplican las directivas.
 
 ### Probar una directiva de control de acceso {#testing-an-access-control-policy}
 
-1. En la barra de herramientas del CRXDE Lite, seleccione **Herramientas**, luego **Probar control de acceso...**.
+1. En la barra de herramientas de CRXDE Lite, seleccione **Herramientas**, luego **Probar control de acceso...**.
 1. Se abrirá un nuevo cuadro de diálogo en el panel superior derecho. Seleccione la **ruta** o el **principal** que desee probar.
 1. Haga clic en **Prueba** para ver los resultados de su selección:
 

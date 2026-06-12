@@ -10,7 +10,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 La administración de modelos implica la creación y administración de modelos para asociarlos con objetos de datos posibles. Cada modelo incluye todas las propiedades y definiciones de campo necesarias para facilitar la creación y la renderización de objetos.
 
-La administración de modelos implica la creación de **modelos**, **entidades** y **espacios**. AEM El diagrama siguiente ilustra la relación entre el contenido de la y los modelos.
+La administración de modelos implica la creación de **modelos**, **entidades** y **espacios**. El diagrama siguiente ilustra la relación entre el contenido de AEM y los modelos.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -29,11 +29,11 @@ La administración de modelos implica la creación de **modelos**, **entidades**
 
 Un modelo describe el tipo de contenido y denota qué información está disponible para la aplicación nativa. Es una descripción de lo que constituye un fragmento de contenido. Un modelo de contenido son las reglas para crear un fragmento de contenido. El modelo de contenido incluye qué datos están disponibles, qué recursos se pueden utilizar, la relación entre recursos y datos, la relación con otros modelos de contenido y los metadatos disponibles.
 
-AEM Los modelos también sirven como una forma de transformar el contenido existente de la en objetos que las aplicaciones móviles nativas pueden utilizar fácilmente.
+Los modelos también sirven como una forma de transformar el contenido de AEM existente en objetos que las aplicaciones móviles nativas puedan utilizar fácilmente.
 
-Content Services proporciona algunos modelos predeterminados para objetos comunes como recursos, colecciones de recursos, páginas de HTML, configuraciones de aplicación y páginas independientes del canal. AEM Se pueden configurar para que puedan satisfacer las necesidades específicas de los clientes sin requerir un esfuerzo de desarrollo de la.
+Content Services proporciona algunos modelos predeterminados para objetos comunes como recursos, colecciones de recursos, páginas de HTML, configuraciones de aplicación y páginas independientes del canal. Se pueden configurar para que puedan satisfacer las necesidades específicas de los clientes sin requerir un esfuerzo de desarrollo de AEM.
 
-Los usuarios pueden crear sus propios modelos. AEM Esto permite la creación de nuevos tipos de contenido que aún no son administrados por los usuarios de la aplicación de la manera de hacer un seguimiento de la segmentación de datos La creación del modelo se realiza mediante una interfaz de usuario que utiliza tipos primitivos existentes.
+Los usuarios pueden crear sus propios modelos. Esto permite crear nuevos tipos de contenido que aún no administra AEM. La creación del modelo se realiza mediante una interfaz de usuario que utiliza tipos primitivos existentes.
 
 El diagrama siguiente ilustra el modelo de contenido para aplicaciones AEM Mobile y cómo se asignan las entidades, carpetas y espacios a una aplicación.
 
@@ -41,7 +41,7 @@ El diagrama siguiente ilustra el modelo de contenido para aplicaciones AEM Mobil
 
 ### Los modelos {#the-models}
 
-Los modelos se utilizan para determinar cómo se crean las entidades. AEM Definen qué está disponible en una entidad y cómo se generan esos datos a partir del contenido de la. Antes de empezar a trabajar con espacios, carpetas y entidades, debe estar familiarizado con la creación y administración de modelos.
+Los modelos se utilizan para determinar cómo se crean las entidades. Definen qué está disponible en una entidad y cómo se generan esos datos a partir del contenido de AEM. Antes de empezar a trabajar con espacios, carpetas y entidades, debe estar familiarizado con la creación y administración de modelos.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Para crear y administrar modelos en el tablero y el repositorio, vea **[Modelos]
 
 Una entidad es una instancia de un modelo de contenido. Una entidad se expone a través de la API de servicios de contenido a la biblioteca del lado del cliente y proporciona una forma para que una aplicación nativa acceda al contenido de forma independiente del canal.
 
-AEM AEM Si hay contenido de existente, se genera una entidad mediante un modelo y la fuente de contenido de la. AEM Por ejemplo, una entidad de página es un objeto independiente del canal y del diseño que se genera a partir de una página de la página y del modelo de página de la página de la página de la página de la aplicación.
+Si hay contenido de AEM existente, se genera una entidad mediante un modelo y la fuente de contenido de AEM. Por ejemplo, una entidad de página es un objeto independiente del canal y del diseño que se genera a partir de una página de AEM y del modelo de página.
 
 Los cambios en el contenido referenciado de una entidad dan como resultado un cambio en la entidad. Por ejemplo, si se actualiza un *cq:page*, también se actualizarán las entidades que estén basadas en esa página.
 
@@ -62,14 +62,14 @@ Para crear entidades personalizadas a partir de modelos, consulte **[Uso de enti
 
 >[!NOTE]
 >
->AEM Si el modelo no se corresponde con un contenido de la interfaz de usuario existente, como el cliente ha creado un modelo, hay una interfaz de usuario para que un cliente pueda crear una entidad.
+>Si el modelo no se corresponde con un contenido de AEM existente, como el cliente ha creado un modelo, entonces hay una interfaz de usuario para que un cliente pueda crear una entidad.
 >
 
 ### Espacios en el modelo de contenido {#spaces-in-content-model}
 
 Se utiliza un espacio para organizar entidades para facilitar el acceso. Un espacio puede contener uno o más tipos de entidad y puede contener subcarpetas.
 
-AEM Por el lado de la, un espacio es una forma cómoda de administrar las entidades relacionadas. También se puede utilizar para asignar permisos de autorización. La autorización se puede realizar en un espacio, que protege las entidades que se encuentran en ese espacio.
+En el lado de AEM, un espacio es una forma cómoda de administrar las entidades relacionadas. También se puede utilizar para asignar permisos de autorización. La autorización se puede realizar en un espacio, que protege las entidades que se encuentran en ese espacio.
 
 *Por ejemplo*,
 

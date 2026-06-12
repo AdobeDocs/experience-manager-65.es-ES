@@ -11,8 +11,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 0%
+source-wordcount: '685'
+ht-degree: 1%
 
 ---
 
@@ -30,9 +30,9 @@ Los artículos representan el texto basado junto con el arte para transmitir inf
 >
 >Consulte los siguientes recursos en la Ayuda en línea para conocer los siguientes temas en las aplicaciones de AEM Mobile:
 >
->* [Consideraciones de diseño](https://helpx.adobe.com/es/digital-publishing-solution/help/design-app.html)
+>* [Consideraciones de diseño](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Administrar artículos](https://helpx.adobe.com/es/digital-publishing-solution/help/creating-articles.html)
+>* [Administrar artículos](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >
 
 ## Creación de un artículo {#creating-an-article}
@@ -49,7 +49,7 @@ El flujo de trabajo general para crear un artículo es el siguiente:
 
 ## Importación de un nuevo artículo {#importing-a-new-article}
 
-AEM El contenido existente de Mobile On-Demand se puede descargar (importar) de Mobile On-Demand a. Esto permite editar y ver el contenido local.
+El contenido existente de Mobile On-Demand se puede descargar (importar) de Mobile On-Demand a AEM. Esto permite editar y ver el contenido local.
 
 >[!NOTE]
 >
@@ -70,16 +70,16 @@ Flujo de trabajo para importar un nuevo artículo
 
 ## Edición de un artículo {#editing-an-article}
 
-AEM Utilice el editor integrado de arrastrar y soltar para agregar o cambiar un artículo de la lista de editores de la lista de editores de. Se pueden añadir o eliminar componentes como texto e imágenes. Se pueden insertar imágenes de DAM Assets.
+Utilice el editor de arrastrar y soltar integrado de AEM para agregar o cambiar un artículo. Se pueden añadir o eliminar componentes como texto e imágenes. Se pueden insertar imágenes de DAM Assets.
 
 >[!CAUTION]
 >
->AEM En el editor solo se pueden abrir los artículos creados en la.
+>Solo los artículos creados en AEM se pueden abrir en el editor.
 
 Flujo de trabajo para editar un artículo:
 
 1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
-1. AEM Seleccione un artículo originado en el elemento **Administrar artículos**.
+1. Seleccione un artículo de origen AEM del mosaico **Administrar artículos**.
 1. Haga clic en el artículo resaltado de la vista de lista para abrirlo en el editor de contenido.
 1. Utilice el editor de contenido para arrastrar contenido de artículo (manuscritos, imágenes, texto, etc.).
 
@@ -113,7 +113,7 @@ Flujo de trabajo general para cargar un artículo:
 
 ## Eliminación de un artículo {#deleting-an-article}
 
-AEM Esta operación elimina el contenido seleccionado de Mobile On-Demand y, opcionalmente, de la instancia local de la instancia de la.
+Esta operación elimina el contenido seleccionado de Mobile On-Demand y, opcionalmente, de la instancia local de AEM.
 
 Flujo de trabajo general para eliminar un artículo:
 
@@ -121,7 +121,7 @@ Flujo de trabajo general para eliminar un artículo:
 1. Seleccione el artículo que desea eliminar en el mosaico **Administrar artículos**.
 1. Asegúrese de que esté seleccionado en la lista; seleccione otros para eliminarlos según sea necesario.
 1. Haga clic en **Eliminar** en la barra de acciones.
-1. AEM Seleccione si desea eliminar de la aplicación de Adobe y de Mobile On-Demand en la lista de dispositivos de la aplicación.
+1. Seleccione si desea eliminar de AEM y Mobile On-Demand.
 1. Haga clic en **Eliminar**.
 1. El artículo se eliminará de la lista.
 

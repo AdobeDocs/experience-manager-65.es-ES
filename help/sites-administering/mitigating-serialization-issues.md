@@ -1,6 +1,6 @@
 ---
-title: AEM Mitigación de problemas de serialización en la
-description: AEM Obtenga información sobre cómo mitigar los problemas de serialización en la.
+title: Mitigación de problemas de serialización en AEM
+description: Obtenga información sobre cómo mitigar los problemas de serialización en AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -11,20 +11,20 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 0%
+source-wordcount: '934'
+ht-degree: 1%
 
 ---
 
-# AEM Mitigación de problemas de serialización en la{#mitigating-serialization-issues-in-aem}
+# Mitigación de problemas de serialización en AEM{#mitigating-serialization-issues-in-aem}
 
 ## Información general {#overview}
 
-AEM El Adobe del equipo de trabajo de la aplicación trabajó estrechamente con el proyecto de código abierto [NotSoSerial](https://github.com/kantega/notsoserial) para ayudar a mitigar las vulnerabilidades descritas en **CVE-2015-7501**. NotSoSerial tiene licencia con la [licencia de Apache 2](https://www.apache.org/licenses/LICENSE-2.0) e incluye código de ASM con licencia con su propia [licencia similar a BSD](https://asm.ow2.io/).
+El equipo de AEM en Adobe trabajó de cerca con el proyecto de código abierto [NotSoSerial](https://github.com/kantega/notsoserial) para ayudar a mitigar las vulnerabilidades descritas en **CVE-2015-7501**. NotSoSerial tiene licencia con la [licencia de Apache 2](https://www.apache.org/licenses/LICENSE-2.0) e incluye código de ASM con licencia con su propia [licencia similar a BSD](https://asm.ow2.io/).
 
-El JAR del agente incluido con este paquete es la distribución modificada de NotSoSerial por parte de Adobe.
+El jar del agente incluido con este paquete es la distribución modificada de NotSoSerial por Adobe.
 
-AEM NotSoSerial es una solución de nivel Java™ para un problema de nivel Java™ y no es específica de la aplicación de la aplicación de forma específica de la aplicación de la aplicación de la aplicación de la aplicación de la plataforma de datos de la plataforma de datos de la plataforma de datos de la red. Agrega una comprobación preliminar a un intento de deserializar un objeto. Esta comprobación comprueba el nombre de una clase comparándolo con una lista de permitidos de estilo cortafuegos, una lista de bloqueados o ambas. Debido al número limitado de clases en la lista de bloqueados predeterminada, es poco probable que esta prueba afecte al sistema o al código.
+NotSoSerial es una solución de nivel Java™ para un problema de nivel Java™ y no es específica de AEM. Agrega una comprobación preliminar a un intento de deserializar un objeto. Esta comprobación comprueba el nombre de una clase comparándolo con una lista de permitidos de estilo cortafuegos, una lista de bloqueados o ambas. Debido al número limitado de clases en la lista de bloqueados predeterminada, es poco probable que esta prueba afecte al sistema o al código.
 
 De forma predeterminada, el agente realiza una comprobación de lista de bloqueados frente a las clases vulnerables conocidas actuales. Esta lista de bloqueados pretende protegerle de la lista actual de vulnerabilidades que utilizan este tipo de vulnerabilidad.
 
@@ -32,13 +32,13 @@ La lista de bloqueados y la lista de permitidos se pueden configurar siguiendo l
 
 El agente está diseñado para ayudar a mitigar las últimas clases vulnerables conocidas. Si el proyecto está deserializando datos que no son de confianza, puede seguir siendo vulnerable a ataques de denegación de servicio, ataques de falta de memoria y ataques de deserialización futuros desconocidos.
 
-Adobe es compatible oficialmente con Java™ 6, 7 y 8. Sin embargo, Adobe entiende que NotSoSerial también admite Java™ 5.
+Adobe admite oficialmente Java™ 6, 7 y 8. Sin embargo, Adobe entiende que NotSoSerial también admite Java™ 5.
 
 ## Instalación del agente {#installing-the-agent}
 
 >[!NOTE]
 >
->AEM Si ya ha instalado la revisión de serialización para la versión 6.1 de, quite los comandos de inicio del agente de la línea de ejecución de Java™.
+>Si ya ha instalado la revisión de serialización para AEM 6.1, quite los comandos de inicio del agente de la línea de ejecución de Java™.
 
 1. Instale el paquete **com.adobe.cq.cq-serialization-tester**.
 
@@ -47,15 +47,15 @@ Adobe es compatible oficialmente con Java™ 6, 7 y 8. Sin embargo, Adobe entien
 
 ## Instalación del agente en servidores de aplicaciones {#installing-the-agent-on-application-servers}
 
-AEM El agente NotSoSerial no se incluye en la distribución estándar de los recursos para servidores de aplicaciones de la red de distribución de la interfaz de usuario de la aplicación de la red de distribución de la red. AEM Sin embargo, puede extraerlo de la distribución jar de la y utilizarlo con la configuración del servidor de aplicaciones:
+El agente NotSoSerial no se incluye en la distribución estándar de AEM para servidores de aplicaciones. Sin embargo, puede extraerlo de la distribución jar de AEM y utilizarlo con la configuración del servidor de aplicaciones:
 
-1. AEM En primer lugar, descargue el archivo de inicio rápido de la y extráigalo:
+1. En primer lugar, descargue el archivo de inicio rápido de AEM y extráigalo:
 
    ```shell
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. AEM AEM Vaya a la ubicación del inicio rápido de la aplicación recién descomprimida y copie la carpeta `crx-quickstart/opt/notsoserial/` en la carpeta `crx-quickstart` de la instalación del servidor de aplicaciones de la instalación de la aplicación de la aplicación.
+1. Vaya a la ubicación del inicio rápido de AEM recién descomprimido y copie la carpeta `crx-quickstart/opt/notsoserial/` en la carpeta `crx-quickstart` de la instalación del servidor de aplicaciones de AEM.
 
 1. Cambiar la propiedad de `/opt` al usuario que ejecuta el servidor:
 
@@ -126,11 +126,11 @@ Para cargar el agente manualmente, haga lo siguiente:
 
    >[!NOTE]
    >
-   >AEM Requiere que también use la opción -nofork CQ/, junto con la configuración de memoria JVM adecuada, ya que el agente no está habilitado en una JVM ramificada.
+   >Requiere que también use la opción -nofork CQ/AEM, junto con la configuración de memoria JVM adecuada, ya que el agente no está habilitado en una JVM ramificada.
 
    >[!NOTE]
    >
-   >La distribución de Adobe AEM del JAR del agente NotSoSerial se encuentra en la carpeta `crx-quickstart/opt/notsoserial/` de su instalación de la instalación de la.
+   >La distribución de Adobe del JAR del agente NotSoSerial se encuentra en la carpeta `crx-quickstart/opt/notsoserial/` de la instalación de AEM.
 
 1. Detenga y reinicie JVM;
 
