@@ -1,6 +1,6 @@
 ---
 title: Configuración de nube
-description: La asociación de una aplicación bajo demanda a una configuración en la nube permite a Adobe Experience Manager AEM () comunicarse directamente con un proyecto alojado de Mobile On-Demand mediante el establecimiento de un vínculo bidireccional. Siga esta página para obtener más información.
+description: La asociación de una aplicación bajo demanda a una configuración en la nube permite a Adobe Experience Manager (AEM) comunicarse directamente con un proyecto alojado de Mobile On-Demand mediante el establecimiento de un vínculo bidireccional. Siga esta página para obtener más información.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,8 +11,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 2%
+source-wordcount: '406'
+ht-degree: 4%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 2%
 
 {{ue-over-mobile}}
 
-La asociación de una aplicación bajo demanda a una configuración en la nube permite a Adobe Experience Manager AEM () comunicarse directamente con un proyecto alojado de Mobile On-Demand mediante el establecimiento de un vínculo bidireccional. AEM Al vincular la aplicación a un proyecto de Mobile On-Demand, podrá crear contenido, como artículos, titulares y colecciones, dentro de la aplicación, pero también podrá servir ese contenido a Mobile On-Demand.
+La asociación de una aplicación bajo demanda a una configuración en la nube permite a Adobe Experience Manager (AEM) comunicarse directamente con un proyecto alojado de Mobile On-Demand mediante el establecimiento de un vínculo bidireccional. Al vincular la aplicación a un proyecto de Mobile On-Demand, podrá crear contenido, como artículos, titulares y colecciones, en AEM, pero también podrá ofrecer ese contenido a Mobile On-Demand.
 
-A partir de ahí, es posible publicar, previsualizar y administrar contenido. AEM También puede importar contenido existente de Mobile On-Demand en y realizar ediciones de contenido en la interfaz de usuario de.
+A partir de ahí, es posible publicar, previsualizar y administrar contenido. También puede importar contenido existente de Mobile On-Demand en AEM y editar contenido.
 
 ## Configuración de nube {#setting-up-cloud-configuration}
 
@@ -32,7 +32,7 @@ A partir de ahí, es posible publicar, previsualizar y administrar contenido. AE
 >
 >Para obtener más información, consulte [Configuración de AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) en la sección Administración.
 
-Para configurar los Cloud Service de Mobile On-Demand, haga clic en la parte superior derecha del mosaico **Administrar conexión** desde el panel de la aplicación.
+Para configurar Mobile On-Demand Cloud Services, haga clic en la rueda de engranaje superior derecha del mosaico **Administrar conexión** desde el panel de la aplicación.
 
 Debe estar familiarizado con el panel de la aplicación y los mosaicos disponibles. Consulte [Tablero de aplicación de AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
 
