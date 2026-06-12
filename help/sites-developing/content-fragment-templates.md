@@ -1,5 +1,5 @@
 ---
-title: Plantillas de fragmentos de contenido
+title: Lanzamiento de fragmentos de contenido
 description: Las plantillas se seleccionan al crear un fragmento de contenido y proporcionan al nuevo fragmento la estructura básica, el elemento y la variación
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing,Content Fragments
 role: Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 3%
+source-wordcount: '690'
+ht-degree: 4%
 
 ---
 
-# Plantillas de fragmentos de contenido{#content-fragment-templates}
+# Lanzamiento de fragmentos de contenido{#content-fragment-templates}
 
 >[!CAUTION]
 >
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->AEM Antes de la versión 6.3, los fragmentos de contenido se creaban en función de plantillas en lugar de modelos.
+>Antes de AEM 6.3, los fragmentos de contenido se creaban en función de plantillas en lugar de modelos.
 >
 >Las plantillas de fragmento de contenido ya no se utilizan. Todavía se pueden utilizar para crear fragmentos, pero se recomienda utilizar Modelos de fragmentos de contenido en su lugar. No se agregarán nuevas funciones a las plantillas de fragmento y se eliminarán en una versión futura.
 
@@ -111,7 +111,7 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Valor </th>
+     <th>Valor</th>
     </tr>
     <tr>
      <td><code>&lt;<em>template-name</em>&gt;</code></td>
@@ -153,12 +153,12 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Valor </th>
+     <th>Valor</th>
     </tr>
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>Requerido</p> </td>
-     <td><p>Nodo que contiene la definición de los elementos del fragmento de contenido. Es obligatorio y debe contener al menos un nodo secundario para el elemento <strong>Main</strong>, pero puede contener [1..n] nodos secundarios.</p> <p>Cuando se utiliza la plantilla, la subrama de elementos se copia en la subrama del modelo del fragmento.</p> <p>El primer elemento (tal como se ve en el CRXDE Lite) se considera automáticamente como el elemento <i>main</i>; el nombre del nodo es irrelevante y el nodo en sí no tiene una relevancia especial, aparte del hecho de que está representado por el recurso principal; los demás elementos se gestionan como subrecursos.</p> </td>
+     <td><p>Nodo que contiene la definición de los elementos del fragmento de contenido. Es obligatorio y debe contener al menos un nodo secundario para el elemento <strong>Main</strong>, pero puede contener [1..n] nodos secundarios.</p> <p>Cuando se utiliza la plantilla, la subrama de elementos se copia en la subrama del modelo del fragmento.</p> <p>El primer elemento (tal como se ve en CRXDE Lite) se considera automáticamente como el elemento <i>main</i>; el nombre del nodo es irrelevante y el nodo en sí no tiene una relevancia especial, aparte del hecho de que está representado por el recurso principal; los demás elementos se gestionan como subrecursos.</p> </td>
     </tr>
    </tbody>
   </table>
@@ -170,7 +170,7 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Valor </th>
+     <th>Valor</th>
     </tr>
     <tr>
      <td><code>&lt;<i>element-name</i>&gt;</code></td>
@@ -212,7 +212,7 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Valor </th>
+     <th>Valor</th>
     </tr>
     <tr>
      <td><code>variations</code><br /> </td>
@@ -229,12 +229,12 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Valor </th>
+     <th>Valor</th>
     </tr>
     <tr>
      <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obligatorio si hay un nodo de variación</p> </td>
-     <td><p>Define una variación inicial.<br /> La variación se agrega de manera predeterminada a todos los elementos del fragmento de contenido.</p> <p>La variación tendrá el mismo contenido inicial que el elemento respectivo (consulte <code class="code">defaultContent/
+     <td><p>Define una variación inicial.<br /> La variación se agrega a todos los elementos del fragmento de contenido de forma predeterminada.</p> <p>La variación tendrá el mismo contenido inicial que el elemento respectivo (consulte <code class="code">defaultContent/
        initialContentType</code>)</p> </td>
     </tr>
     <tr>

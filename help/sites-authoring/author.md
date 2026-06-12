@@ -7,8 +7,8 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 28%
+source-wordcount: '499'
+ht-degree: 26%
 
 ---
 
@@ -72,14 +72,14 @@ Si el sitio de AEM es un [sitio de la comunidad](/help/communities/overview.md) 
 >
 >Lamentablemente, a veces se produce una superposición en la terminología utilizada. Esto puede ocurrir con:
 >
->* **Publicar o cancelar la publicación**
->  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
+>* **Publicar / Cancelar publicación**
+>  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los usuarios en su entorno de publicación.
 >
->* **Activar o desactivar**
+>* **Activar/Desactivar**
 >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
->* **Replicar o replicación**
->  Son los términos técnicos utilizados para indicar el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
+>* **Replicar/Replicación**
+>  Estos son los términos técnicos utilizados para indicar el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
 >
 
 #### Dispatcher {#dispatcher}

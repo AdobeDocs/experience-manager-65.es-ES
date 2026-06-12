@@ -1,6 +1,6 @@
 ---
-title: Reestructuración de repositorios de E-Commerce AEM en la versión 6.5 de la
-description: AEM Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorios en la versión 6.5 de la versión para E-Commerce, en la versión 6.5 de la aplicación.
+title: Reestructuración de repositorios de comercio electrónico en AEM 6.5
+description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios de AEM 6.5 para E-Commerce.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 2%
+source-wordcount: '215'
+ht-degree: 9%
 
 ---
 
-# Reestructuración de repositorios de E-Commerce AEM en la versión 6.5 de la{#e-commerce-repository-restructuring-in-aem}
+# Reestructuración de repositorios de comercio electrónico en AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
-AEM AEM AEM Como se describe en la página principal [Reestructuración del repositorio en la página de 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a la versión 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de E-Commerce en la que se encuentran los. AEM Algunos cambios requieren un esfuerzo durante el proceso de actualización de la versión 6.5 de la, mientras que otros se pueden aplazar hasta una actualización futura.
+Como se describe en la página principal [Reestructuración del repositorio en AEM 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a AEM 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución AEM E-Commerce. Algunos cambios requieren esfuerzo durante el proceso de actualización de AEM 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
 
 ## Con actualización a 6.5 {#with-upgrade}
 
@@ -47,7 +47,7 @@ AEM AEM AEM Como se describe en la página principal [Reestructuración del repo
      <li>/etc/commerce/orders<br /> </li>
      <li>/etc/commerce/payment-methods<br /> </li>
      <li>/etc/commerce/shipping-methods<br /> </li>
-    </ul> <p>Para catálogos más grandes, Adobe AEM recomienda ejecutar la tarea de migración comercial de forma individual pasando la siguiente propiedad del sistema Java™ a la dirección de correo electrónico:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>AEM Después de la migración, reinicie el.</p> </td>
+    </ul> <p>Para catálogos más grandes, Adobe recomienda ejecutar la tarea de migración comercial de forma individual pasando la siguiente propiedad del sistema Java™ a AEM:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Después de la migración, reinicie AEM.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>

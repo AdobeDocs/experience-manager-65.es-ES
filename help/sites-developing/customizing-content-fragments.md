@@ -10,8 +10,8 @@ feature: Content Fragments
 role: Developer
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '2728'
-ht-degree: 1%
+source-wordcount: '2867'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ Según el tipo de fragmento, también se utilizan modelos o plantillas:
 
 >[!NOTE]
 >
->AEM Antes de la versión 6.3, los fragmentos de contenido se creaban en función de plantillas en lugar de modelos.
+>Antes de AEM 6.3, los fragmentos de contenido se creaban en función de plantillas en lugar de modelos.
 >
 >Las plantillas de fragmento de contenido ya no se utilizan. Todavía se pueden utilizar para crear fragmentos, pero se recomienda utilizar Modelos de fragmentos de contenido en su lugar. No se agregarán nuevas funciones a las plantillas de fragmento y se eliminarán en una versión futura.
 
@@ -64,7 +64,7 @@ Según el tipo de fragmento, también se utilizan modelos o plantillas:
    * Las plantillas definen la estructura (básica, de solo texto) de un fragmento de contenido cuando se crea.
    * La plantilla se copia en el fragmento cuando se crea, por lo que los cambios posteriores en la plantilla no se reflejarán en los fragmentos existentes.
    * Las funciones para agregar nuevas variaciones, etc., deben actualizar el fragmento en consecuencia.
-   * AEM [Las plantillas de fragmentos de contenido](/help/sites-developing/content-fragment-templates.md) funcionan de forma distinta a la de otros mecanismos de creación de plantillas dentro del ecosistema de las plantillas (por ejemplo, plantillas de página, etc.). Por lo tanto, deben considerarse por separado.
+   * [Las plantillas de fragmentos de contenido](/help/sites-developing/content-fragment-templates.md) funcionan de forma distinta a la de otros mecanismos de creación de plantillas dentro del ecosistema de AEM (por ejemplo, plantillas de página, etc.). Por lo tanto, deben considerarse por separado.
    * Cuando se basa en una plantilla, el tipo MIME del contenido se administra en función del contenido real; esto significa que cada elemento y variación puede tener un tipo MIME diferente.
 
 ### Integración con Assets {#integration-with-assets}
@@ -84,7 +84,6 @@ Los fragmentos de contenido con contenido estructurado (es decir, basados en un 
 * Todo el contenido se almacena en el nodo `jcr:content/data` del recurso:
 
    * Los datos del elemento se almacenan en el subnodo principal:
-
      `jcr:content/data/master`
 
    * Las variaciones se almacenan en un subnodo que lleva el nombre de la variación:
@@ -93,7 +92,7 @@ por ejemplo, `jcr:content/data/myvariation`
    * Los datos de cada elemento se almacenan en el subnodo respectivo como una propiedad con el nombre del elemento:
 por ejemplo, el contenido del elemento `text` se almacena como propiedad `text` en `jcr:content/data/master`
 
-* Los metadatos y el contenido asociado se almacenan debajo de `jcr:content/metadata`
+* Los metadatos y el contenido asociado se almacenan a continuación `jcr:content/metadata`
 Excepto el título y la descripción, que no se consideran metadatos tradicionales y se almacenan en `jcr:content`
 
 #### Asignación de fragmentos de contenido simples a Assets {#mapping-simple-content-fragments-to-assets}
@@ -134,7 +133,7 @@ Para obtener más información, consulte [Fragmento de contenido: eliminar consi
 >
 >Ahora se recomienda el [componente principal de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es). Consulte [Desarrollar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es) para obtener más información.
 
-AEM Se puede hacer referencia a los fragmentos de contenido desde páginas de recursos de la misma manera que desde cualquier otro tipo de recurso. AEM proporciona el [**fragmento de contenido** componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) - un [componente que le permite incluir fragmentos de contenido en sus páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar este componente principal **Fragmento de contenido**.
+Se puede hacer referencia a los fragmentos de contenido desde páginas de AEM, como cualquier otro tipo de recurso. AEM proporciona el componente principal [**Fragmento de contenido**](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) - un componente [que le permite incluir fragmentos de contenido en sus páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar este componente principal **Fragmento de contenido**.
 
 * El componente utiliza la propiedad `fragmentPath` para hacer referencia al fragmento de contenido real. La propiedad `fragmentPath` se administra de la misma manera que propiedades similares de otros tipos de recursos; por ejemplo, cuando el fragmento de contenido se mueve a otra ubicación.
 
@@ -174,7 +173,7 @@ Se puede configurar una lista de propiedades para especificar dónde se almacena
 >
 >No hay asignación directa entre la propiedad y el tipo de componente.
 >
->AEM Simplemente toma la primera propiedad que se pueda encontrar en un párrafo. Por lo tanto, debe elegir las propiedades cuidadosamente.
+>AEM simplemente toma la primera propiedad que se encuentra en un párrafo. Por lo tanto, debe elegir las propiedades cuidadosamente.
 
 ![screenshot_2019-03-18at100941](assets/screenshot_2019-03-18at100941.png)
 
@@ -201,7 +200,7 @@ Los fragmentos de contenido se pueden integrar con:
 
 * **Traducciones**
 
-  AEM Los fragmentos de contenido están totalmente integrados con el [flujo de trabajo de traducción de la](/help/sites-administering/tc-manage.md). A nivel arquitectónico, esto significa:
+  Los fragmentos de contenido están totalmente integrados con el [flujo de trabajo de traducción de AEM](/help/sites-administering/tc-manage.md). A nivel arquitectónico, esto significa:
 
    * Las traducciones individuales de un fragmento de contenido son en realidad fragmentos independientes; por ejemplo:
 
@@ -225,7 +224,7 @@ Los fragmentos de contenido se pueden integrar con:
 
   >[!NOTE]
   >
-  >AEM El flujo de trabajo de traducción de funciona con `/content`:
+  >El flujo de trabajo de traducción de AEM funciona con `/content`:
   >
   >* Como los modelos de fragmento de contenido residen en `/conf`, no se incluyen en dichas traducciones. Puede [internacionalizar las cadenas de la interfaz de usuario](/help/sites-developing/i18n-dev.md).
   >
@@ -384,7 +383,7 @@ Se pueden adaptar las siguientes opciones:
 
 ### Advertencias {#caveats}
 
-Cabe señalar que:
+Cabe señalar lo siguiente:
 
 * La API se implementa para proporcionar la funcionalidad admitida por la interfaz de usuario de.
 * La API completa está diseñada para **no** mantener los cambios automáticamente (a menos que se indique lo contrario en el JavaDoc de la API). Por lo tanto, siempre tendrá que asignar el solucionador de recursos de la solicitud correspondiente (o el solucionador que esté utilizando).
@@ -399,7 +398,7 @@ Cabe señalar que:
 
 >[!CAUTION]
 >
->AEM Para la versión 6.5, la API del lado del cliente es interna.
+>Para AEM 6.5, la API del lado del cliente es interna.
 
 ### Información adicional {#additional-information}
 
@@ -413,7 +412,7 @@ Consulte lo siguiente:
 
 Se inicia una sesión de edición cuando el usuario abre un fragmento de contenido en una de las páginas del editor. La sesión de edición finaliza cuando el usuario abandona el editor seleccionando **Guardar** o **Cancelar**.
 
-### Requisitos  {#requirements}
+### Requisitos {#requirements}
 
 Los requisitos para controlar una sesión de edición son:
 
@@ -449,7 +448,7 @@ Los procesos involucrados son:
 * Edición
 
    * Todos los cambios (incluido el guardado automático) se realizan en el fragmento de contenido activo, no en un área protegida separada.
-   * AEM Por lo tanto, esos cambios se reflejan inmediatamente en páginas de la página de la página de destino que hacen referencia al fragmento de contenido en cuestión
+   * Por lo tanto, estos cambios se reflejan inmediatamente en las páginas de AEM que hacen referencia al fragmento de contenido correspondiente
 
 #### Acciones {#actions}
 
@@ -529,7 +528,7 @@ Si desea establecer un intervalo de guardado automático de 5 minutos, debe defi
 
 * Valor: `300` (5 minutos equivalen a 300 segundos)
 
-## Plantillas de fragmentos de contenido {#content-fragment-templates}
+## Lanzamiento de fragmentos de contenido {#content-fragment-templates}
 
 Consulte [Plantillas de fragmentos de contenido](/help/sites-developing/content-fragment-templates.md) para obtener información completa.
 

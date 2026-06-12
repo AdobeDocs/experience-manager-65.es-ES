@@ -11,8 +11,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
+source-wordcount: '666'
+ht-degree: 1%
 
 ---
 
@@ -30,9 +30,9 @@ Los titulares suelen representar vínculos promocionales gráficos.
 >
 >Consulte los siguientes recursos en la Ayuda en línea para conocer los siguientes temas en las aplicaciones de AEM Mobile:
 >
->* [Consideraciones de diseño](https://helpx.adobe.com/es/digital-publishing-solution/help/design-app.html)
+>* [Consideraciones de diseño](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Creando titulares](https://helpx.adobe.com/es/digital-publishing-solution/help/creating-banners.html)
+>* [Creando titulares](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## Creación de un titular {#creating-a-banner}
@@ -50,7 +50,7 @@ El flujo de trabajo general para crear un artículo es el siguiente:
 
 ## Importación de un titular nuevo {#importing-a-new-banner}
 
-AEM El contenido existente de Mobile On-Demand se puede descargar (importar) de Mobile On-Demand a. Esto permite editar y ver el contenido local.
+El contenido existente de Mobile On-Demand se puede descargar (importar) de Mobile On-Demand a AEM. Esto permite editar y ver el contenido local.
 
 >[!NOTE]
 >
@@ -69,16 +69,16 @@ Flujo de trabajo para importar un nuevo artículo
 
 ## Edición de un titular {#editing-a-banner}
 
-AEM Utilice el editor integrado de arrastrar y soltar para agregar o cambiar un artículo de la lista de editores de la lista de editores de. Se pueden añadir o eliminar componentes como texto e imágenes. Se pueden insertar imágenes de DAM Assets.
+Utilice el editor de arrastrar y soltar integrado de AEM para agregar o cambiar un artículo. Se pueden añadir o eliminar componentes como texto e imágenes. Se pueden insertar imágenes de DAM Assets.
 
 >[!CAUTION]
 >
->AEM En el editor solo se pueden abrir los banners creados en la.
+>En el editor solo se pueden abrir los titulares creados en AEM.
 
 Flujo de trabajo para editar un artículo:
 
 1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
-1. AEM Seleccione un banner de origen de **&#x200B; en el mosaico Administrar banners**.
+1. Seleccione un titular de origen AEM en el mosaico **Administrar titulares**.
 1. Haga clic en el banner resaltado de la vista de lista para abrirlo en el editor de contenido.
 1. Utilice el editor de contenido para arrastrar el contenido del titular (manuscritos, imágenes, texto, etc.).
 
@@ -112,7 +112,7 @@ Flujo de trabajo general para cargar un banner:
 
 ## Eliminación de un titular {#deleting-a-banner}
 
-AEM Esta operación elimina el banner seleccionado de Mobile On-Demand y, opcionalmente, de la instancia local de la instancia de la.
+Esta operación elimina el banner seleccionado de Mobile On-Demand y, opcionalmente, de la instancia local de AEM.
 
 Flujo de trabajo general para eliminar un titular:
 
@@ -120,7 +120,7 @@ Flujo de trabajo general para eliminar un titular:
 1. Seleccione el titular que desea eliminar en el mosaico **Administrar titulares**.
 1. Asegúrese de que esté seleccionado en la lista (seleccione otros para eliminarlos según sea necesario).
 1. Haga clic en **Eliminar** en la barra de acciones.
-1. AEM Seleccione si desea eliminar de la aplicación de Adobe y de Mobile On-Demand en la lista de dispositivos de la aplicación.
+1. Seleccione si desea eliminar de AEM y Mobile On-Demand.
 1. Haga clic en **Eliminar**.
 1. El titular se eliminará de la lista.
 
