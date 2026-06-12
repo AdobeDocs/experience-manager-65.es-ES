@@ -9,10 +9,10 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 2%
+source-wordcount: '1795'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Se pueden considerar como palabras clave o etiquetas (metadatos) que permiten encontrar el contenido más rápidamente como resultado de una búsqueda.
 
-En Adobe Experience Manager AEM (), una etiqueta puede ser una propiedad de
+En Adobe Experience Manager (AEM), una etiqueta puede ser una propiedad de
 
 * un nodo de contenido para una página (consulte [Uso de etiquetas](/help/sites-authoring/tags.md))
 
@@ -34,9 +34,9 @@ Además de las páginas y los recursos, las etiquetas se utilizan para las funci
 
 ## Características de etiquetas {#tag-features}
 
-AEM Algunas de las funciones de las etiquetas dentro de las etiquetas son las siguientes
+Algunas de las funciones de las etiquetas en AEM incluyen:
 
-* Las etiquetas se pueden agrupar en varias áreas de nombres. Estas jerarquías permiten crear taxonomías. AEM Estas taxonomías son globales en todo el mundo
+* Las etiquetas se pueden agrupar en varias áreas de nombres. Estas jerarquías permiten crear taxonomías. Estas taxonomías son globales en todo AEM.
 * La restricción principal para las etiquetas recién creadas es que deben ser únicas dentro de un área de nombres específica.
 * El título de una etiqueta no debe incluir caracteres de separación de rutas de etiquetas (ni se mostrarán si están presentes)
 
@@ -50,8 +50,8 @@ AEM Algunas de las funciones de las etiquetas dentro de las etiquetas son las si
    * Una etiqueta que no es una etiqueta contenedora se denomina etiqueta de hoja
    * Un área de nombres de etiqueta es una etiqueta de hoja o una etiqueta contenedora
 
-* El [componente de búsqueda](https://helpx.adobe.com/es/experience-manager/core-components/using/quick-search.html) usa las etiquetas para facilitar la búsqueda de contenido.
-* El [componente Teaser](https://helpx.adobe.com/es/experience-manager/core-components/using/teaser.html) utiliza las etiquetas, que supervisa la nube de etiquetas de un usuario para proporcionar contenido de destino.
+* El [componente de búsqueda](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) usa las etiquetas para facilitar la búsqueda de contenido.
+* El [componente Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html) utiliza las etiquetas, que supervisa la nube de etiquetas de un usuario para proporcionar contenido de destino.
 * Si el etiquetado es un aspecto importante del contenido
 
    * asegúrese de empaquetar las etiquetas con las páginas que las utilizan
@@ -75,7 +75,7 @@ Para acceder a la consola de etiquetado:
 
 ![administrar_etiquetas_mediante_thetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
-### Creación de un área de nombres {#creating-a-namespace}
+### Creación de un espacio de nombres {#creating-a-namespace}
 
 Para crear un área de nombres, seleccione el icono **`Create Namespace`**.
 
@@ -107,7 +107,7 @@ Al seleccionar un área de nombres u otra etiqueta, están disponibles las sigui
 * [Mover](#moving-tags)
 * [Combinar](#merging-tags)
 * [Publicación](#publishing-tags)
-* [Cancelar publicación](#unpublishing-tags)
+* [Cancelar la publicación](#unpublishing-tags)
 * [Eliminar](#deleting-tags)
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
@@ -258,7 +258,7 @@ Los permisos de etiqueta son [&#39;seguros (de forma predeterminada)&#39;](/help
       * por ejemplo, vaya a http://localhost:4502/useradmin
 
    * en el panel izquierdo, seleccione el grupo (o usuario) para el que se debe otorgar [permiso de lectura](/help/sites-administering/security.md#permissions)
-   * en el panel derecho, busque el **Path &#x200B;** to the Tag Namespace
+   * en el panel derecho, busque el **Path **to the Tag Namespace
 
       * por ejemplo, `/content/cq:tags/mycommunity`
 
@@ -283,9 +283,9 @@ La propiedad `title` de una etiqueta puede traducirse a varios idiomas. Una vez 
 
 ### Definición de títulos de etiquetas en varios idiomas {#defining-tag-titles-in-multiple-languages}
 
-A continuación se describe cómo traducir el `title`de la etiqueta **Animals** del inglés al alemán y al francés.
+A continuación se describe cómo traducir `title` de la etiqueta **Animals** del inglés al alemán y al francés.
 
-Comience por seleccionar la etiqueta en el área de nombres **Stock Photography** y seleccione el icono **`Edit`** (consulte la sección [Edición de etiquetas](#editing-tags)).
+Comience por seleccionar la etiqueta en el área de nombres **Stock Photography** y seleccione el icono **`Edit`** (consulte la sección [Edición de etiquetas](#editing-tags) ).
 
 El panel Editar etiqueta presenta la capacidad de elegir los idiomas en los que se localizará el título de la etiqueta.
 
@@ -312,3 +312,4 @@ Para agregar un nuevo idioma al cuadro de diálogo, vea [Agregar un nuevo idioma
   Información sobre el marco de etiquetado y ampliación e inclusión de etiquetas en aplicaciones personalizadas.
 
 * [Consola de etiquetado de IU clásica](/help/sites-administering/classic-console.md)
+
