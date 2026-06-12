@@ -46,7 +46,7 @@ Para configurar el contenido de AEM para que aparezca en un portal, consulte [In
 
 >[!CAUTION]
 >
->AEM Portal Director ya no se utiliza en AEM 6.4. Ver [Funciones obsoletas y eliminadas](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>AEM Portal Director ya no se utiliza en AEM 6.4. Ver [Funciones obsoletas y eliminadas](https://helpx.adobe.com/es/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Administración del portlet de contenido de AEM {#administering-the-aem-content-portlet}
 
