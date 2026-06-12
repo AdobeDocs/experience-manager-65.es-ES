@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '110'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ De forma predeterminada, se ha deshabilitado la capacidad para cambiar a la IU c
 
 Para volver a habilitar la opción **Abrir en la IU clásica** en el menú **Información de la página**, siga estos pasos.
 
-1. Con el CRXDE Lite, busque el siguiente nodo:
+1. Con CRXDE Lite, busque el siguiente nodo:
 
    `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 

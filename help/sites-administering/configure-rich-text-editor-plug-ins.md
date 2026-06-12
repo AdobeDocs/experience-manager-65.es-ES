@@ -1,5 +1,5 @@
 ---
-title: Configuración de los complementos del Editor de texto enriquecido
+title: Configuración de los complementos del editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar las funcionalidades individuales.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
@@ -8,13 +8,13 @@ feature: Configuring
 role: Admin
 source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
 workflow-type: tm+mt
-source-wordcount: '4391'
+source-wordcount: '4473'
 ht-degree: 2%
 
 ---
 
 
-# Configuración de los complementos del Editor de texto enriquecido {#configure-the-rich-text-editor-plug-ins}
+# Configuración de los complementos del editor de texto enriquecido {#configure-the-rich-text-editor-plug-ins}
 
 Las funcionalidades de RTE están disponibles a través de una serie de complementos, cada uno con la propiedad features. Puede configurar la propiedad features para activar o desactivar una o varias funciones RTE. Este artículo describe cómo configurar específicamente los complementos RTE.
 
@@ -22,7 +22,7 @@ Para obtener más información sobre las otras configuraciones de RTE, consulte 
 
 >[!NOTE]
 >
->Al trabajar con el CRXDE Lite, se recomienda guardar los cambios con regularidad usando la opción [!UICONTROL Guardar todo].
+>Al trabajar con CRXDE Lite, se recomienda guardar los cambios con regularidad usando la opción [!UICONTROL Guardar todo].
 
 ## Activar un complemento y configurar la propiedad features {#activateplugin}
 
@@ -65,7 +65,7 @@ Después de activar un complemento, siga estas instrucciones para configurar la 
 | | Habilitar todas las funciones | Habilitar algunas funciones específicas | Desactivar todas las funciones |
 |---|---|---|---|
 | Nombre | características | características | características |
-| Tipo | Cadena | Cadena[] (varias cadenas; establezca Tipo en Cadena y haga clic en CRXDE Lite de varias cadenas) | Cadena |
+| Tipo | Cadena | Cadena[] (varias cadenas; establezca Tipo en Cadena y haga clic en Varias en CRXDE Lite) | Cadena |
 | Valor | `*` (un asterisco) | se establece en uno o más valores de función | - |
 
 ## Comprensión del complemento findreplace {#findreplace}
@@ -110,7 +110,7 @@ La configuración permite los siguientes tres tipos de casos de uso:
 
 * Pegue texto con la implementación de pegado predeterminada del explorador. No es un método recomendado, ya que puede introducir marcado no deseado. Configurado con `browser` a continuación.
 
-* Pegue el contenido del portapapeles como texto sin formato. AEM Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en el componente de la. Configurado con `plaintext` a continuación.
+* Pegue el contenido del portapapeles como texto sin formato. Elimina todos los elementos de estilo y formato del contenido copiado antes de insertarlos en el componente de AEM. Configurado con `plaintext` a continuación.
 
 * Pegue el texto, incluidas las tablas, con formato al copiar desde MS® Word. No se admite la copia y pegado de texto desde otro origen, como una página web o MS® Excel, y sólo se conserva un formato parcial. Configurado con `wordhtml` a continuación.
 
@@ -123,16 +123,16 @@ La configuración permite los siguientes tres tipos de casos de uso:
 
 ### Configurar los formatos permitidos al pegar contenido {#pasteformats}
 
-El modo de pegar como Microsoft Word (`paste-wordhtml`) se puede configurar para que pueda definir explícitamente qué estilos se permiten al pegar en la aplicación desde otro programa, como Microsoft® Word, para que se puedan pegar en la aplicación de forma que se puedan definir los estilos que se permiten al pegar en la aplicación desde otro programa, como, por ejemplo, en la aplicación de pegado de AEMWord.
+El modo pegar como Microsoft Word (`paste-wordhtml`) se puede configurar para que pueda definir explícitamente qué estilos se permiten al pegar en AEM desde otro programa, como Microsoft® Word.
 
-AEM Por ejemplo, si solo se deben permitir formatos en negrita y listas al pegar en la lista de distribución, puede filtrar los demás formatos. Esto se denomina filtrado de pegado configurable y se puede hacer para lo siguiente:
+Por ejemplo, si solo se deben permitir formatos en negrita y listas al pegar en AEM, puede filtrar los demás formatos. Esto se denomina filtrado de pegado configurable y se puede hacer para lo siguiente:
 
 * [Texto](#paste-modes)
 * [Vínculos](#linkstyles)
 
 En el caso de los vínculos, también puede definir los protocolos que se aceptan automáticamente.
 
-AEM Para configurar los formatos que se permiten al pegar texto en los archivos de texto desde otro programa, haga lo siguiente:
+Para configurar qué formatos se permiten al pegar texto en AEM desde otro programa:
 
 1. En el componente, vaya al nodo `<rtePlugins-node>/edit`. Cree los nodos si no existen. Para obtener más información, consulte [activar un complemento](#activateplugin).
 1. Cree un nodo bajo el nodo `edit` para poder mantener las reglas de pegado de HTML:
@@ -271,7 +271,7 @@ A continuación, especifique las ubicaciones de las hojas de estilo a las que de
 
    * **Nombre** `cssName`
    * **Tipo** `String`
-   * **Valor** El nombre de la clase CSS (sin &#39;.&#39; anterior; por ejemplo, `cssClass` en lugar de `.cssClass`)
+   * **Valor** El nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
 1. Agregue la propiedad `text` al mismo nodo; esto define el texto mostrado en el cuadro de selección:
 
@@ -285,11 +285,11 @@ A continuación, especifique las ubicaciones de las hojas de estilo a las que de
 
 ### Configuración de RTE para saltos de palabra óptimos en japonés {#jpwordwrap}
 
-AEM Los autores que utilizan la función de creación de contenido en japonés pueden aplicar un estilo a los caracteres para evitar saltos de línea donde no sea necesario un salto de línea. Esto permite a los autores dejar que las frases se rompan en la posición deseada. El estilo de esta funcionalidad se basa en la clase CSS predefinida en la hoja de estilos CSS.
+Los autores que utilizan AEM para crear contenido en japonés pueden aplicar un estilo a los caracteres para evitar saltos de línea donde no es necesario un salto. Esto permite a los autores dejar que las frases se rompan en la posición deseada. El estilo de esta funcionalidad se basa en la clase CSS predefinida en la hoja de estilos CSS.
 
 >[!NOTE]
 >
->AEM Esta función requiere al menos el paquete de servicio 1 de 6.5 de.
+>Esta función requiere al menos AEM 6.5 Service Pack 1.
 
 Para crear el estilo que los autores pueden aplicar al texto en japonés, siga estos pasos:
 
@@ -391,7 +391,7 @@ Los formatos de párrafo podrán ser seleccionados por:
 
    * **Nombre** `description`
    * **Tipo** `String`
-   * **Valor** Texto descriptivo para este formato; por ejemplo, Párrafo, Encabezado 1, Encabezado 2. Este texto se muestra en el lista de selección Formato.
+   * **Valor** Texto descriptivo para este formato; por ejemplo, Párrafo, Encabezado 1, Encabezado 2. Este texto se muestra en la lista de selección Formato.
 
 1. Guarde los cambios.
 
@@ -403,9 +403,9 @@ Los formatos de párrafo podrán ser seleccionados por:
 
 ## Configuración de caracteres especiales {#spchar}
 
-En una instalación de AEM estándar, cuando el plug-in está habilitado para caracteres `misctools` especiales (`specialchars`), una selección predeterminada está disponible inmediatamente para su uso; por ejemplo, los símbolos de copyright y marca registrada.
+En una instalación estándar de AEM, cuando el complemento `misctools` está habilitado para caracteres especiales (`specialchars`), una selección predeterminada está disponible inmediatamente para su uso; por ejemplo, los símbolos de copyright y marca comercial.
 
-Puede configurar el RTE para que su propia selección de caracteres esté disponible; ya sea definiendo personajes distintos o una Secuencia completa.
+Puede configurar el RTE para que su propia selección de caracteres esté disponible; ya sea definiendo caracteres distintos o una secuencia completa.
 
 >[!CAUTION]
 >
@@ -441,7 +441,7 @@ Puede configurar el RTE para que su propia selección de caracteres esté dispon
 
    * **Nombre** `entity`
    * **Tipo** `String`
-   * **Valor** representa el HTML del carácter requerido; por ejemplo, `&189;` para la fracción de la mitad.
+   * **Valor** representa en HTML el carácter requerido; por ejemplo, `&189;` para la fracción de la mitad.
 
 1. Guarde los cambios.
 
@@ -460,12 +460,10 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 1. Bajo este nodo (denominado según su intervalo especial de caracteres), agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
-
      **Tipo** `Long`
      **Value** representa [Unicode](https://unicode.org/) (decimal) del primer carácter del intervalo
 
    * **Nombre** `rangeEnd`
-
      **Tipo** `Long`
      **Valor**: la representación [Unicode](https://unicode.org/) (decimal) del último carácter del intervalo
 
@@ -491,8 +489,8 @@ Los estilos suelen aplicarse en el texto, pero también se puede aplicar un conj
 >
 >La copia y el pegado de tablas en o desde el componente RTE depende del explorador. No es compatible de serie con todos los exploradores. Puede obtener resultados variados según la estructura de la tabla y el explorador. Por ejemplo, cuando copia y pega una tabla en un componente RTE en Mozilla Firefox en la IU clásica y la IU táctil, el diseño de la tabla no se conserva.
 
-1. Dentro del componente, desplácese hasta el nodo `<rtePlugins-node>/table`. Crear los nodos si éstos no existen. Para obtener más información, consulte [Activar una plug-in](#activateplugin).
-1. Crear el `features` Propiedad del `table` nodo:
+1. Dentro del componente, vaya al nodo `<rtePlugins-node>/table`. Cree los nodos si no existen. Para obtener más información, consulte [activar un complemento](#activateplugin).
+1. Cree la propiedad `features` en el nodo `table`:
 
    * **Nombre** `features`
    * **Tipo** `String`
@@ -504,9 +502,9 @@ Los estilos suelen aplicarse en el texto, pero también se puede aplicar un conj
    >
    >* **Tipo** `String[]`
    >
-   >* **&#x200B;**&#x200B;Valor una, o ambas, de las siguientes opciones, según sea necesario:
-   >* `table` para permitir la edición de las propiedades de la tabla; incluyendo los estilos.
-   >* `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
+   >* **Valor** uno o ambos de los siguientes, según sea necesario:
+   >   * `table` para permitir la edición de propiedades de tabla; incluidos los estilos.
+   >   * `cellprops` para permitir la edición de propiedades de celda, incluidos los estilos.
 
 1. Defina la ubicación de las hojas de estilos CSS para que pueda hacer referencia a ellas. Consulte [Especificación de la ubicación de la hoja de estilos](#locationofstylesheet), ya que es lo mismo que al definir [estilos para texto](#textstyles). La ubicación puede definirse si ha definido otros estilos.
 1. En el nodo `table`, cree los siguientes nodos nuevos (según sea necesario):
@@ -570,22 +568,22 @@ Cuando se activa el complemento corrector ortográfico, RTE utiliza diccionarios
 >
 >Se ve el mensaje `Spell checking failed` si se intenta realizar una comprobación en un idioma que no está instalado. Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos léame correspondientes. No modifique los archivos.
 
-AEM Una instalación estándar de la incluye los diccionarios de inglés americano (`en_us`) e inglés británico (`en_gb`). Para agregar más diccionarios, siga estos pasos.
+Una instalación estándar de AEM incluye los diccionarios de inglés americano (`en_us`) e inglés británico (`en_gb`). Para agregar más diccionarios, siga estos pasos.
 
 1. Vaya a la página [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
 1. Realice una de las siguientes acciones para buscar un diccionario del idioma que haya elegido:
 
    * Busque el diccionario del idioma que haya elegido. En la página del diccionario, busque el vínculo a la página web de origen o del autor original. Busque los archivos de diccionario para v2.x en una página de este tipo.
-   * Busque los archivos de diccionario v2.x en [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+   * Busque archivos de diccionario v2.x en [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
 1. Descargue el archivo con las definiciones de ortografía. Extraiga el contenido del archivo en su sistema de archivos.
 
    >[!CAUTION]
    >
-   >Solo se admiten los diccionarios de la `MySpell` formato para OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda que verifique el archivo después de la descarga.
+   >Solo se admiten diccionarios con el formato `MySpell` para OpenOffice.org v2.0.1 o anterior. Como los diccionarios ahora son archivos de almacenamiento, se recomienda verificarlos después de la descarga.
 
-1. Busque los `.aff` archivos and `.dic` . Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
+1. Busque los archivos `.aff` y `.dic`. Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
 1. Cargue los archivos `.aff` y `.dic` en el repositorio en `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
@@ -594,9 +592,9 @@ AEM Una instalación estándar de la incluye los diccionarios de inglés america
 >
 >Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambia y las palabras mal escritas dejan de resaltarse. Para ejecutar el corrector ortográfico, vuelva a hacer clic en el botón Corrector ortográfico.
 
-## Configure el tamaño del historial para las acciones de deshacer y rehacer {#undohistory}
+## Configuración del tamaño del historial para acciones de deshacer y rehacer {#undohistory}
 
-RTE permite a los autores deshacer o rehacer algunas ediciones posteriores. De forma predeterminada, se almacenan 50 ediciones en el historial. Puede configurar este valor según sea necesario.
+RTE permite a los autores deshacer o rehacer algunas ediciones últimas. De forma predeterminada, se almacenan 50 ediciones en el historial. Puede configurar este valor según sea necesario.
 
 1. Dentro del componente, vaya al nodo `<rtePlugins-node>/undo`. Cree estos nodos si no existen. Para obtener más información, consulte [activar un complemento](#activateplugin).
 1. En el nodo `undo`, cree la propiedad:
@@ -659,12 +657,12 @@ Puede definir la altura del espacio editable que se muestra en el cuadro de diá
 
 ## Configuración de estilos y protocolos para vínculos {#linkstyles}
 
-AEM Al añadir vínculos en, puede definir lo siguiente:
+Al añadir vínculos en AEM, puede definir lo siguiente:
 
 * Estilos CSS que se van a utilizar
 * Los protocolos aceptados automáticamente
 
-AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro programa, defina las reglas del HTML de.
+Para configurar cómo se añaden los vínculos en AEM desde otro programa, defina las reglas de HTML.
 
 1. Con CRXDE Lite, busque el componente de texto para su proyecto.
 1. Cree un nodo en el mismo nivel que `<rtePlugins-node>`; es decir, cree el nodo en el nodo principal de `<rtePlugins-node>`:
@@ -680,7 +678,7 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
    >* **Tipo** `String`
    >* **Valor** `richtext`
    >
-   >La ubicación de la `../items/text` nodo puede variar, dependiendo de la estructura del diálogo; dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
+   >La ubicación del nodo `../items/text` puede variar, según la estructura del cuadro de diálogo; dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. En `htmlRules`, cree un nodo.
 
@@ -693,13 +691,13 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
 
       * **Nombre** `cssInternal`
       * **Tipo** `String`
-      * **&#x200B;**&#x200B;Valor el nombre de la clase CSS (sin &#39;.&#39;; por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** representa el nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
    * Estilo CSS para vínculos externos
 
       * **Nombre** `cssExternal`
       * **Tipo** `String`
-      * **Valor** es el nombre de la clase CSS (sin &#39;.&#39; anterior; por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** representa el nombre de la clase CSS (sin &#39;.&#39; precedente; por ejemplo, `cssClass` en lugar de `.cssClass`)
 
    * Matriz de **protocolos** válidos. Los protocolos admitidos son `http://`, `https://`, `file://` y `mailto:`.
 

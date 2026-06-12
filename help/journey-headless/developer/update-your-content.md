@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 87%
+source-wordcount: '1108'
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,7 @@ Este artículo se basa en estos aspectos básicos para que pueda comprender cóm
 
 ## Objetivo {#objective}
 
-* **Audiencia**: avanzadas
+* **Público**: avanzados
 * **Objetivo**: aprender a utilizar la API de REST para acceder y actualizar el contenido de los fragmentos de contenido.
    * Presentar la API HTTP de AEM Assets.
    * Presentar y comentar la compatibilidad de los fragmentos de contenido en la API.
@@ -57,7 +57,7 @@ La API HTTP de Recursos incluye lo siguiente:
 
 La implementación actual de la API HTTP de Recursos se basa en el estilo arquitectónico de **REST** y le permite acceder al contenido (almacenado en AEM) mediante operaciones **CRUD** (crear, leer, actualizar y eliminar).
 
-Con estas operaciones, la API le permite utilizar Adobe Experience Manager como un CMS (sistema de administración de contenido) sin encabezado proporcionando servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON. Por ejemplo, las aplicaciones de una sola página (SPA) basadas en marcos de trabajo o personalizados, requieren contenido proporcionado a través de una API, a menudo en formato JSON.
+Con estas operaciones, la API le permite utilizar Adobe Experience Manager como CMS sin encabezado (sistema de administración de contenido) proporcionando servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON. Por ejemplo, las aplicaciones de una sola página (SPA) basadas en marcos de trabajo o personalizados, requieren contenido proporcionado a través de una API, a menudo en formato JSON.
 
 <!--
 >[!NOTE]
@@ -253,7 +253,7 @@ El uso puede variar en función de si utiliza un entorno de publicación o autor
 
 >[!CAUTION]
 >
->AEM La configuración de Dispatcher en instancias de podría bloquear el acceso a `/api`.
+>La configuración de Dispatcher en las instancias de AEM podría bloquear el acceso a `/api`.
 
 >[!NOTE]
 >
@@ -320,7 +320,7 @@ Ahora que ha completado esta parte del recorrido para desarrolladores de AEM sin
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-AEM Debe continuar con su recorrido AEM sin encabezado de la revisando el documento [Cómo poner en marcha su aplicación sin encabezado](go-live.md), donde realmente pone en marcha su proyecto sin encabezado
+Debe continuar con su recorrido sin encabezado de AEM revisando el documento [Cómo publicar su aplicación sin encabezado](go-live.md), donde realmente pone en marcha su proyecto sin encabezado de AEM.
 
 ## Recursos adicionales {#additional-resources}
 
@@ -331,7 +331,7 @@ AEM Debe continuar con su recorrido AEM sin encabezado de la revisando el docume
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 * [Componentes principales de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Explicación de CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=es)
-* [Vídeo: Desarrollo para CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=es)
+* [Vídeo: Desarrollo de CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=es)
 * Una [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 * El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
-* [Tutoriales de AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+* [Tutoriales para contenido sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

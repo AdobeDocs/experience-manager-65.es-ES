@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Las acciones de Content Management son los componentes básicos que ayudan a cre
 
 ## Información general de contenido {#content-overview}
 
-Si piensa en una revista en línea, el contenido principal incluye artículos, anuncios y portadas. AEM Se pueden crear tres tipos principales de contenido de Mobile On-Demand dentro de las siguientes opciones:
+Si piensa en una revista en línea, el contenido principal incluye artículos, anuncios y portadas. Se pueden crear tres tipos principales de contenido de Mobile On-Demand dentro de AEM:
 
 * **Artículos**: texto basado junto con arte para transmitir información
 * **Banners:** vínculos promocionales gráficos
@@ -34,7 +34,7 @@ Si piensa en una revista en línea, el contenido principal incluye artículos, a
 
 >[!NOTE]
 >
->Para obtener más información sobre las consideraciones de diseño de las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño de las aplicaciones de AEM Mobile](https://helpx.adobe.com/es/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
+>Para obtener más información sobre las consideraciones de diseño de las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño de las aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
 
 ## Creación y administración de contenido {#creating-and-managing-content}
 
@@ -44,7 +44,7 @@ Los siguientes temas describen la creación y administración de contenido, a sa
 * [Administración de titulares](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Administración de colecciones](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Carga de recursos compartidos](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Cancelar la publicación del contenido de Publish](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publicar contenido para cancelar su publicación](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
@@ -54,5 +54,5 @@ Los siguientes temas describen la creación y administración de contenido, a sa
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [AEM Desarrollo de contenido para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Desarrollo del contenido de AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

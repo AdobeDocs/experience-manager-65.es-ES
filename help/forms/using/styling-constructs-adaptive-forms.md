@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2352'
+source-wordcount: '2378'
 ht-degree: 98%
 
 ---
@@ -867,7 +867,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr>
   <tr>
    <td><p><code>wizard-nav-bullet-border</code></p> </td>
-   <td><p>Color del borde de la viñeta del navegador del asistente (prefiriendo el pie de ilustración/etiqueta)</p> </td>
+   <td><p>Color del borde de la viñeta del navegador del asistente (que actúan como prefijo del pie de ilustración/etiqueta)</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-progress-bg-color</code></p> </td>

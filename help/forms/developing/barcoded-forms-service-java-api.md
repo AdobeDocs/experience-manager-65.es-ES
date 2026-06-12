@@ -1,6 +1,6 @@
 ---
-title: Inicio rápido (inicio rápido) de la API de Forms SOAP Service con códigos de barras Java&trade;
-description: Descubra cómo el servicio de Forms SOAP con códigos de barras Java& trade; API Quick Start () en AEM Forms permite un procesamiento fluido de los códigos de barras.
+title: Inicio rápido (SOAP) de la API del servicio Java&trade de Forms con códigos de barras
+description: Descubra cómo el Inicio rápido (SOAP) de la API de Forms Service Java&trade; con códigos de barras en AEM Forms permite un procesamiento fluido de los códigos de barras.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,26 +11,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
 
-# Inicio rápido () de la API de Java™ del servicio de Forms SOAP con códigos de barras {#barcoded-forms-service-java-apiquick-start-soap}
+# Inicio rápido (SOAP) de la API de Java™ del servicio Forms con códigos de barras {#barcoded-forms-service-java-apiquick-start-soap}
 
-SOAP El Inicio rápido (inicio rápido) de la API de Java™ está disponible para el servicio de Forms con códigos de barras:
+El Inicio rápido (SOAP) de la API de Java™ está disponible para el servicio de Forms con códigos de barras:
 
-[SOAP Inicio rápido (modo de): Descodificación de datos de formulario con códigos de barras mediante Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante la API de Java™](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOAP con establecimiento inflexible de tipos y el modo de conexión debe establecerse en.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
 >Los inicios rápidos en programación con AEM Forms se basan en el servidor de aplicaciones Forms Server que se implementa en el servidor de aplicaciones JBoss® y en el sistema operativo Microsoft® Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## SOAP Inicio rápido (modo de): Descodificación de datos de formulario con códigos de barras mediante la API de Java™ {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+## Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante la API de Java™ {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-El siguiente código Java™ descodifica los datos de formulario que están en un formulario de PDF que se guarda como Loan.pdf. Los datos descodificados se guardan como un archivo XML denominado extractedData.xml. Este ejemplo de código convierte un objeto `org.w3c.dom.Document` en un objeto `com.adobe.idp.Document`. (Consulte [Descodificación de datos de formularios con códigos de barras](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)).
+El siguiente código Java™ descodifica los datos del formulario que están en un formulario de PDF guardado como Loan.pdf. Los datos descodificados se guardan como un archivo XML denominado extractedData.xml. Este ejemplo de código convierte un objeto `org.w3c.dom.Document` en un objeto `com.adobe.idp.Document`. (Consulte [Descodificación de datos de formularios con códigos de barras](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)).
 
 ```java
  /*

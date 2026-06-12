@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 0%
+source-wordcount: '266'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ Con la aplicación Mobile On-Demand Preflight, puede ver todos los proyectos a l
 ## Vista previa con comprobación preliminar {#previewing-with-preflight-1}
 
 1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
-1. Haga clic en los puntos suspensivos (...) del mosaico **Administrar artículos** (o titulares/colecciones).
+1. Haga clic en los puntos suspensivos (...) desde el mosaico **Administrar artículos** (o titulares/colecciones).
 1. Seleccione **Comprobación preliminar** en la barra de acciones.
 1. Haga clic en **Activar comprobación preliminar** en el cuadro de diálogo.
 1. La aplicación ya está lista para la vista previa en la aplicación Mobile On-Demand Preflight.
@@ -42,7 +42,7 @@ Con la aplicación Mobile On-Demand Preflight, puede ver todos los proyectos a l
 
 >[!NOTE]
 >
->AEM La aplicación Preflight se utiliza para previsualizar contenido y navegar por páginas. Para obtener información detallada acerca de la aplicación de comprobaciones, haga clic [aquí](https://helpx.adobe.com/es/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>La aplicación AEM Preflight se utiliza para previsualizar contenido y navegar por páginas. Para obtener información detallada acerca de la aplicación de comprobaciones, haga clic [aquí](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Primeros pasos {#getting-ahead}
@@ -56,5 +56,5 @@ Si sigue necesitando más información sobre la creación de contenido, consulte
 
 Para obtener más información sobre las otras dos funciones y responsabilidades a la hora de crear una aplicación de AEM Mobile On-demand Services, consulte los siguientes recursos:
 
-* [AEM Desarrollo de contenido para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [AEM Creación de contenido de la aplicación de para AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+* [Desarrollo del contenido de AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Creación de contenido de AEM para la aplicación de AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

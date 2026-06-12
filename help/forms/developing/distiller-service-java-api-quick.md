@@ -1,6 +1,6 @@
 ---
-title: Distiller SOAP Service Java&trade; API QuickStart()
-description: Descubra cómo el servicio Distiller transforma los archivos PostScript, EPS y PRN en PDF, empleados comúnmente para conversiones de documentos de impresión a electrónica de gran volumen.
+title: Inicio rápido (SOAP) de la API de Distiller Service Java&trade
+description: Descubra cómo el servicio Distiller transforma los archivos PostScript, EPS y PRN en PDF, comúnmente empleados para conversiones de documentos de impresión a electrónicos de gran volumen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,26 +11,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# Inicio rápido (inicio) de la API de Java™ del servicio de Distiller SOAP () {#distiller-service-java-api-quickstart-soap}
+# Inicio rápido (SOAP) de la API de Java™ del servicio Distiller {#distiller-service-java-api-quickstart-soap}
 
-SOAP El Inicio rápido () de la API de Java™ está disponible para el servicio Distiller®:
+El Inicio rápido de la API de Java™ (SOAP) está disponible para el servicio Distiller®:
 
-[SOAP Inicio rápido (modo de): Conversión de un archivo de PostScript a un documento de PDF mediante Java](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[Inicio rápido (modo SOAP): Conversión de un archivo de PostScript a un documento de PDF mediante la API de Java™](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOAP con establecimiento inflexible de tipos y el modo de conexión debe establecerse en.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss® y en el sistema operativo Microsoft® Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Los inicios rápidos en la programación con formularios AEM Forms se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss® y en el sistema operativo Microsoft® Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## SOAP Inicio rápido (modo de): Conversión de un archivo PostScript a un documento de PDF mediante la API de Java™ {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
+## Inicio rápido (modo SOAP): Conversión de un archivo de PostScript a un documento de PDF mediante la API de Java™ {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código convierte un archivo PostScript llamado *Loan.ps* en un archivo de PDF llamado *Loan.pdf*. (Consulte [Conversión de PostScript a documentos de PDF](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
+El siguiente ejemplo de código convierte un archivo PostScript llamado *Loan.ps* en un archivo PDF llamado *Loan.pdf*. (Consulte [Conversión de documentos de PostScript a PDF](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 
 ```java
  /*

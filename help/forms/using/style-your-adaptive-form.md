@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 54%
+source-wordcount: '2174'
+ht-degree: 55%
 
 ---
 
@@ -251,7 +251,7 @@ Puede utilizar una temática personalizada para aplicar un estilo idéntico a to
       <td><b>Valor</b></td> 
      </tr> 
      <tr> 
-      <td>Fondo</td> 
+      <td>Contexto</td> 
       <td>Color de fondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -351,7 +351,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Fondo</td> 
+      <td>Contexto</td> 
       <td>Color de fondo</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -425,7 +425,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Fondo</td> 
+      <td>Contexto</td> 
       <td>Color de fondo</td> 
       <td>F6921E</td> 
      </tr> 

@@ -1,6 +1,6 @@
 ---
-title: SOAP Servicio de cifrado Java&trade; API QuickStart()
-description: Aprenda a cifrar, quitar el cifrado basado en contraseña/certificado, desbloquear y determinar el tipo de cifrado para documentos de PDF SOAP mediante Java& trade; API en modo de.
+title: Inicio rápido (SOAP) de la API del servicio de cifrado Java&trade
+description: Obtenga información sobre cómo cifrar, quitar el cifrado basado en contraseña/certificado, desbloquear y determinar el tipo de cifrado para documentos de PDF mediante la API Java&trade; en modo SOAP.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,34 +11,34 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
-# SOAP Inicio rápido () de la API de Java™ del servicio de cifrado {#encryption-service-java-api-quickstart-soap}
+# Inicio rápido (SOAP) de la API de Java™ del servicio de cifrado {#encryption-service-java-api-quickstart-soap}
 
-[SOAP Inicio rápido (modo de): cifrado de un documento de PDF mediante Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[Inicio rápido (modo SOAP): cifrado de un documento de PDF mediante la API de Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[SOAP Inicio rápido (modo de): Eliminación del cifrado basado en contraseña mediante Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[Inicio rápido (modo SOAP): Eliminación del cifrado basado en contraseña mediante la API de Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
-[SOAP Inicio rápido (modo de): cifrado de un documento de PDF con un certificado mediante Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[Inicio rápido (modo SOAP): cifrado de un documento de PDF con un certificado mediante la API de Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[SOAP Inicio rápido (modo de): Quitar el cifrado basado en certificados mediante Java](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[Inicio rápido (modo SOAP): Quitar el cifrado basado en certificados mediante la API de Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[SOAP Inicio rápido (modo de): Desbloquear un documento de PDF cifrado mediante Java](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
+[Inicio rápido (modo SOAP): Desbloquear un documento de PDF cifrado mediante la API de Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api)
 
-[SOAP Inicio rápido (modo de): Determinación del tipo de cifrado mediante Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[Inicio rápido (modo SOAP): Determinación del tipo de cifrado mediante la API de Java™](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOAP con establecimiento inflexible de tipos y el modo de conexión debe establecerse en.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss® y en el sistema operativo Microsoft® Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Los inicios rápidos en la programación con formularios AEM Forms se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss® y en el sistema operativo Microsoft® Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## SOAP Inicio rápido (modo de): cifrado de un documento de PDF mediante la API de Java™ {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
+## Inicio rápido (modo SOAP): cifrado de un documento de PDF mediante la API de Java™ {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código Java™ cifra un documento de PDF denominado *Loan.pdf* con un valor de contraseña de `OpenPassword`. La contraseña principal es `PermissionPassword`. El documento de PDF protegido se guardará como un archivo de PDF denominado *EncryptLoan.pdf*. (Consulte [Cifrar documentos de PDF con una contraseña](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+El siguiente ejemplo de código Java™ cifra un documento de PDF denominado *Loan.pdf* con un valor de contraseña de `OpenPassword`. La contraseña principal es `PermissionPassword`. El documento de PDF protegido se guardará como un archivo de PDF denominado *EncryptLoan.pdf*. (Consulte [Cifrar documentos de PDF con una contraseña](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)).
 
 ```java
  /*
@@ -156,7 +156,7 @@ El siguiente ejemplo de código Java™ cifra un documento de PDF denominado *Lo
  }
 ```
 
-## SOAP Inicio rápido (modo de): Eliminación del cifrado basado en contraseña mediante la API de Java™ {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
+## Inicio rápido (modo SOAP): Eliminación del cifrado basado en contraseña mediante la API de Java™ {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
 El siguiente ejemplo de código Java™ quita el cifrado basado en contraseña de un documento de PDF denominado *EncryptLoan.pdf*. El valor de contraseña principal usado para quitar el cifrado basado en contraseña es *PermissionPassword*. El documento de PDF no protegido se guardará como un archivo de PDF denominado *noEncryptionLoan.pdf*. (Consulte [Quitar el cifrado de contraseña](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 
@@ -253,9 +253,9 @@ El siguiente ejemplo de código Java™ quita el cifrado basado en contraseña d
  }
 ```
 
-## SOAP Inicio rápido (modo de): cifrado de un documento de PDF con un certificado mediante la API de Java™ {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
+## Inicio rápido (modo SOAP): cifrado de un documento de PDF con un certificado mediante la API de Java™ {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
 
-El siguiente ejemplo de código Java™ cifra un documento de PDF denominado *Loan.pdf* con un certificado denominado *Encryption.cer*. El documento cifrado del PDF se guardará como un archivo de PDF denominado *EncryptLoanCert.pdf*. (Consulte [Cifrar documentos de PDF con certificados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
+El siguiente ejemplo de código Java™ cifra un documento de PDF denominado *Loan.pdf* con un certificado denominado *Encryption.cer*. El documento cifrado de PDF se guardará como un archivo de PDF denominado *EncryptLoanCert.pdf*. (Consulte [Cifrar documentos de PDF con certificados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 
 ```java
  /*
@@ -382,7 +382,7 @@ El siguiente ejemplo de código Java™ cifra un documento de PDF denominado *Lo
  
 ```
 
-## SOAP Inicio rápido (modo de): Quitar el cifrado basado en certificados mediante la API de Java™ {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}
+## Inicio rápido (modo SOAP): Quitar el cifrado basado en certificados mediante la API de Java™ {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}
 
 El siguiente ejemplo de código Java™ quita el cifrado basado en certificados de un documento de PDF denominado *EncryptLoanCert.pdf*. El alias de la clave pública utilizada para quitar el cifrado es `Encryption`. El documento de PDF no protegido se guardará como un archivo de PDF denominado *noEncryptionLoan.pdf*. (Consulte [Quitar el cifrado basado en certificados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
 
@@ -479,9 +479,9 @@ El siguiente ejemplo de código Java™ quita el cifrado basado en certificados 
  }
 ```
 
-## SOAP Inicio rápido (modo de): Desbloquear un documento de PDF cifrado mediante la API de Java™ {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
+## Inicio rápido (modo SOAP): Desbloquear un documento de PDF cifrado mediante la API de Java™ {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código Java™ desbloquea un documento de PDF cifrado con contraseña denominado *EncryptLoan.pdf*. (Consulte [Desbloquear documentos cifrados de PDF](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
+El siguiente ejemplo de código Java™ desbloquea un documento PDF cifrado con contraseña denominado *EncryptLoan.pdf*. (Consulte [Desbloquear documentos cifrados de PDF](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 
 ```java
  /*
@@ -575,7 +575,7 @@ El siguiente ejemplo de código Java™ desbloquea un documento de PDF cifrado c
  
 ```
 
-## SOAP Inicio rápido (modo de): Determinación del tipo de cifrado mediante la API de Java™ {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
+## Inicio rápido (modo SOAP): Determinación del tipo de cifrado mediante la API de Java™ {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
 
 El siguiente ejemplo de código Java™ determina el tipo de cifrado que protege un documento de PDF denominado *EncryptLoan.pdf*. (Consulte [Determinación del tipo de cifrado](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 

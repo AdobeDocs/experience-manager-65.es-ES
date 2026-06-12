@@ -1,6 +1,6 @@
 ---
 title: Inicio rápido (SOAP) de la API de Java del servicio Integración de datos de Forms
-description: Utilice el servicio de integración de datos de formulario para importar datos en un formulario de PDF y exportar datos de un formulario de PDF mediante la API de Java.
+description: Utilice el servicio de integración de datos de formulario para importar datos en un formulario de PDF y exportar datos desde un formulario de PDF mediante la API de Java.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,28 +11,28 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '251'
 ht-degree: 3%
 
 ---
 
-# SOAP Inicio rápido () de la API de Java del servicio de integración de datos de formulario {#form-data-integration-service-javaapi-quick-start-soap}
+# Inicio rápido (SOAP) de la API de Java del servicio de integración de datos de formulario {#form-data-integration-service-javaapi-quick-start-soap}
 
 Los siguientes tutoriales rápidos están disponibles para el servicio de integración de datos de formulario.
 
-[SOAP Inicio rápido (modo de): Importación de datos de formulario mediante la API de Java](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[Inicio rápido (modo SOAP): Importación de datos de formulario mediante la API de Java](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[SOAP Inicio rápido (modo de): Exportación de datos de formulario mediante la API de Java](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[Inicio rápido (modo SOAP): Exportación de datos de formulario mediante la API de Java](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOAP con establecimiento inflexible de tipos y el modo de conexión debe establecerse en.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->AEM Inicio rápido en Programación con formularios de la aplicación se basa en el servidor de Forms que se está implementando en el servidor de aplicaciones JBoss y en el sistema operativo Microsoft Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Inicio rápido en Programación con formularios AEM Forms se basan en el servidor de aplicaciones Forms que se implementa en el servidor de aplicaciones JBoss y en el sistema operativo Microsoft Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## SOAP Inicio rápido (modo de): Importación de datos de formulario mediante la API de Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
+## Inicio rápido (modo SOAP): Importación de datos de formulario mediante la API de Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-El siguiente ejemplo de código Java importa datos en un formulario de PDF. Los datos se encuentran en un archivo XML denominado *Loan_data.xml* y el formulario de PDF se guarda como un archivo de PDF denominado *ResultLoanForm.pdf*. (Consulte [Importación de datos de formulario](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
+El siguiente ejemplo de código Java importa datos en un formulario de PDF. Los datos se encuentran en un archivo XML denominado *Loan_data.xml* y el formulario PDF se guarda como un archivo PDF denominado *ResultLoanForm.pdf*. (Consulte [Importación de datos de formulario](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
 ```java
  /*
@@ -132,9 +132,9 @@ El siguiente ejemplo de código Java importa datos en un formulario de PDF. Los 
  
 ```
 
-## SOAP Inicio rápido (modo de): Exportación de datos de formulario mediante la API de Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
+## Inicio rápido (modo SOAP): Exportación de datos de formulario mediante la API de Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-El siguiente ejemplo de código Java exporta datos de un formulario de PDF. Los datos del formulario se guardan como un archivo XML denominado *Loan_data.xml*. (Consulte [Exportación de datos de formulario](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+El siguiente ejemplo de código Java exporta datos desde un formulario de PDF. Los datos del formulario se guardan como un archivo XML denominado *Loan_data.xml*. (Consulte [Exportación de datos de formulario](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```java
  /*

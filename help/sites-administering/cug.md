@@ -12,8 +12,8 @@ feature: Security
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 1%
+source-wordcount: '748'
+ht-degree: 3%
 
 ---
 
@@ -43,7 +43,7 @@ Para configurar un área de este tipo dentro del sitio web, debe:
 
 Para crear un grupo de usuarios cerrado:
 
-1. AEM Vaya a **Herramientas - Seguridad** desde la pantalla principal de la pantalla de inicio de la.
+1. Vaya a **Herramientas - Seguridad** desde la pantalla de inicio de AEM.
 
    >[!NOTE]
    >
@@ -93,7 +93,7 @@ Es opcional; si se deja en blanco, se utiliza la página de inicio de sesión es
    >
    >Tenga en cuenta que los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
    >
-   >AEM Para obtener más información, consulte [Grupos de usuarios cerrados en la página de inicio de sesión - Livecopy](closed-user-groups.md#aem-livecopy).
+   >Para obtener más información, consulte [Grupos de usuarios cerrados en AEM - Livecopy](closed-user-groups.md#aem-livecopy).
 
 1. Se abre el cuadro de diálogo **Editar grupo de usuarios cerrado**. Aquí puede buscar y seleccionar su CUG y confirmar la selección del grupo con **Guardar**.
 
@@ -134,8 +134,7 @@ Configure la administración de [sesión en el archivo dispatcher.any](https://e
 
 >[!NOTE]
 >
->Cuando una granja de servidores de Dispatcher tiene habilitada la administración de sesiones, todas las páginas que administra la granja de servidores no se almacenan en caché. Para almacenar en caché las páginas que están fuera de CUG, cree una segunda granja en dispatcher.any
->que gestiona las páginas que no son de CUG.
+>Cuando una granja de servidores de Dispatcher tiene habilitada la administración de sesiones, todas las páginas que administra la granja de servidores no se almacenan en caché. Para almacenar en caché páginas que estén fuera de CUG, cree una segunda granja en dispatcher.any>que administre las páginas que no sean de CUG.
 
 1. Configure [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=es#enabling-secure-sessions-sessionmanagement) definiendo `/directory`; por ejemplo:
 

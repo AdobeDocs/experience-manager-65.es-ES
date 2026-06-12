@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '6086'
-ht-degree: 99%
+source-wordcount: '5966'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ Realice los siguientes pasos para Crear una temática:
 
 1. Haga clic en **Adobe Experience Manager**, luego en **Forms** y, por último, en **Temáticas**.
 
-1. En la página Temáticas, haga clic en **Crear > Temática**. 
+1. En la página Temas, haga clic en **Crear > Tema**.
 Se inicia un asistente para crear una temática.
 
 1. En la pestaña Básico del asistente Crear temática, proporcione un **Título** y un **Nombre** para la temática. Son campos obligatorios.
@@ -82,8 +82,8 @@ Para cargar una temática:
 1. Haga clic en **Adobe Experience Manager**, luego en **Forms** y, por último, en **Temáticas**.
 
 1. En la página Temáticas, haga clic en **Crear > Cargar archivo**.
-1. En la solicitud de carga de archivos, examine y seleccione un paquete de temáticas en el equipo y haga clic en **Cargar**. 
-La temática cargada está disponible en la página de temáticas.
+1. En la solicitud de carga de archivos, examine y seleccione un paquete de temáticas en su equipo y haga clic en **Cargar**.
+La temática cargada está disponible en la página Temáticas.
 
 ## Metadatos de una temática {#metadata-of-a-theme}
 
@@ -212,11 +212,12 @@ El editor de temáticas se divide en dos paneles:
 
    * **Selector:** muestra el componente seleccionado para el estilo y sus propiedades que puede aplicar. El selector representa todos los componentes de un tipo. Si selecciona un componente de cuadro de texto en una temática para el estilo, todos los cuadros de texto del formulario o la comunicación interactiva heredarán dicho estilo. Los selectores permiten seleccionar un componente genérico o un componente específico para el estilo. Por ejemplo, un componente de campo es un componente genérico y un cuadro de texto es un componente específico.
 
-     **Estilo del componente genérico:**
-un campo puede ser un campo de cuadro numérico, como la edad, o un campo de cuadro de texto, como la dirección. 
+     **Componente genérico de estilo:**
+Un campo puede ser un campo de cuadro numérico, como la edad, o un campo de cuadro de texto, como la dirección.
 Al aplicar estilo a un campo, se aplica a todos los campos, como edad, nombre y dirección.
 
-     **Estilo de un componente específico**: un componente específico afecta a los objetos de la categoría específica. Cuando aplique estilo al componente de cuadro numérico en la temática, solo el objeto de cuadro numérico heredará el estilo.
+     **Componente específico del estilo**:
+Un componente específico afecta a los objetos de la categoría específica. Cuando aplique estilo al componente de cuadro numérico en la temática, solo el objeto de cuadro numérico heredará el estilo.
 
      Por ejemplo, un campo de cuadro de texto como una dirección es más largo y un campo de cuadro numérico como la edad es más corto. Puede seleccionar un campo de cuadro numérico, reducir su longitud y aplicarlo al formulario. La anchura de todos los campos numéricos de cuadro se reduce en el formulario.
 
@@ -229,7 +230,7 @@ Al aplicar estilo a un campo, se aplica a todos los campos, como edad, nombre y 
 
    * **Ver CSS**: permite ver el CSS del componente seleccionado
 
-  Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, aparecen dos opciones más: **Simular éxito** y **Simular error.** Estas opciones, junto con las opciones descritas anteriormente, se examinan en detalle [a continuación](../../forms/using/themes.md#using-rail).
+  Además, en la barra lateral, en la parte inferior hay una flecha. Al hacer clic en la flecha, aparecen dos opciones más: **Simular éxito** y **Simular error.** Estas opciones, junto con las opciones descritas anteriormente, se analizan en detalle [debajo de](../../forms/using/themes.md#using-rail).
 
 [![Editor de temáticas con carril y lienzo resaltados.](assets/themes.png)](assets/themes-1.png) **A.** Barra lateral **B.** Lienzo
 
@@ -263,7 +264,7 @@ Los paneles integrados incluyen:
    * Títulos del panel en el encabezado
    * Sin títulos del panel en el encabezado
 
-Los selectores varían para cada diseño. 
+Los selectores varían para cada diseño.
 Dar estilo a los diseños personalizados desde el editor de temáticas implica:
 
 * Definición de los componentes para un diseño al que se pueda dar estilo y selectores CSS para identificar estos componentes de forma exclusiva
@@ -341,8 +342,8 @@ Los botones Rehacer y Deshacer aparecen al aplicar estilo a un componente en el 
 
 El editor de temáticas permite editar una temática que haya creado o cargado. Vaya a **Formularios y documentos > Temáticas**; luego, seleccione una y ábrala. La temática se abre en el editor de temáticas.
 
-Como se ha indicado anteriormente, el editor de temáticas tiene dos paneles: Barra lateral y Lienzo. 
-![theme-editor](assets/theme-editor.png)
+Como se ha indicado anteriormente, el editor de temáticas tiene dos paneles: Barra lateral y Lienzo.
+![editor de temáticas](assets/theme-editor.png)
 
 Personalización del estilo del estado de éxito del componente Widget de cuadro de texto en el editor de temáticas. El componente está seleccionado en Lienzo y su estado está seleccionado en la barra lateral. Las opciones de estilo disponibles en la barra lateral se utilizan para personalizar el aspecto de un componente.
 
@@ -367,7 +368,7 @@ Cuando seleccione un componente en el lienzo, verá la barra de herramientas de 
 * **Widget de cuadro numérico**: permite seleccionar el componente para personalizar su aspecto en la barra lateral.
 * **Widget de campos**: permite seleccionar el componente genérico para el estilo. En este ejemplo, todos los componentes de entrada de texto (cuadro de texto/cuadro numérico/paso numérico/entrada de fecha) están seleccionados para el estilo.
 
-* ![field-level](assets/field-level.png): permite cambiar al componente genérico para aplicar un estilo. Si selecciona un cuadro numérico y selecciona este icono, el componente de campo estará seleccionado.  Si selecciona el componente de campo y seleccione este icono, el panel estará seleccionado.  Si sigue pulsando este icono para seleccionarlo, acaba seleccionando el diseño para el estilo.
+* ![field-level](assets/field-level.png): permite cambiar al componente genérico para aplicar un estilo. Si selecciona un cuadro numérico y selecciona este icono, el componente de campo estará seleccionado. Si selecciona el componente de campo y seleccione este icono, el panel estará seleccionado. Si sigue pulsando este icono para seleccionarlo, acaba seleccionando el diseño para el estilo.
 
 >[!NOTE]
 >
@@ -381,7 +382,7 @@ Barra de herramientas de los componentes del cuadro numérico del lienzo
 
 La barra lateral del editor de temáticas ofrece opciones para personalizar estilos para los componentes de una temática y utilizar selectores. Los selectores permiten seleccionar un grupo de componentes o componentes individuales, así como buscar selectores en la barra lateral. Puede escribir selectores para los componentes personalizados.
 
-Cuando se selecciona un componente del lienzo o los selectores en la barra lateral, la barra lateral muestra todas las opciones que le permiten personalizar los estilos para él. 
+Al seleccionar un componente del lienzo o los selectores en la barra lateral, la barra lateral muestra todas las opciones que le permiten personalizar los estilos para él.
 A continuación se muestran las opciones que ve en la barra lateral al seleccionar un componente:
 
 * Estado
@@ -411,11 +412,11 @@ Las opciones para personalizar los estilos de estado varían para los distintos 
    <td><p>Permite personalizar los estilos de texto en el componente de la temática.</p> <p>Por ejemplo, desea cambiar el aspecto del texto introducido en el cuadro de texto.</p> <p>Las opciones son familia de fuentes, grosor, color, tamaño, altura de línea, alineación del texto, espaciado entre letras, sangría del texto, subrayado, cursiva, transformación del texto, alineación vertical, línea de base y dirección. </p> </td>
   </tr>
   <tr>
-   <td><p>Fondo </p> </td>
+   <td><p>Contexto </p> </td>
    <td><p>Permite rellenar el fondo del componente con una imagen o un color. </p> </td>
   </tr>
   <tr>
-   <td><p>Borde</p> </td>
+   <td><p>Border</p> </td>
    <td><p>Permite elegir el aspecto del borde del componente. Por ejemplo, desea que el cuadro de texto tenga un borde grueso y rojo profundo con una línea de puntos. </p> <p>Las opciones son anchura, estilo, radio y color del borde.</p> </td>
   </tr>
   <tr>
@@ -423,10 +424,10 @@ Las opciones para personalizar los estilos de estado varían para los distintos 
    <td><p>Permite agregar efectos especiales a los componentes, como opacidad, modo de fusión y sombras. </p> </td>
   </tr>
   <tr>
-   <td><p>Avanzado </p> </td>
+   <td><p>Avanzado</p> </td>
    <td><p>Permite agregar:</p>
     <ul>
-     <li>Propiedades para los pseudoelementos <code>::before</code> y <code>::after</code> para agregar contenido después o antes del contenido predeterminado en el selector y aplicarle así estilo.<br /> Consulte <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudoelementos CSS</a>.</li>
+     <li>Propiedades de los pseudoelementos <code>::before</code> y <code>::after</code> para agregar contenido después o antes del contenido predeterminado en el selector y aplicarle un estilo.<br /> Consulte <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudoelementos CSS</a>.</li>
      <li>Personalice el código CSS dentro de la línea a un componente y escriba selectores personalizados. </li>
     </ul> <p>Cuando agrega un código CSS personalizado, anula la personalización que ha agregado con las opciones de la barra lateral. </p> </td>
   </tr>
@@ -440,10 +441,10 @@ Las opciones de simular error y éxito están disponibles en la parte inferior d
 Por ejemplo, se agrega un campo numérico al formulario y se especifica su estilo en el editor de temáticas. Cuando un usuario escribe un valor alfanumérico en el campo, desea que cambie el color de fondo del cuadro de texto. Se selecciona el campo numérico en la temática y se utiliza la opción de estado en la barra lateral. Seleccione el estado Error en la barra lateral y cambie el color de fondo a rojo. Para obtener una vista previa del comportamiento, puede utilizar la opción Simular error disponible en la barra lateral. Las opciones de simular error y éxito se describen en detalle a continuación:
 
 * **Simular éxito**:
-le permite ver el aspecto de un componente si especifica su estilo para el estado de éxito. Por ejemplo, en un formulario, los clientes establecen la contraseña. Los usuarios pueden configurar la contraseña según las directrices que proporcione. Cuando un usuario escribe una contraseña siguiendo todas las directrices proporcionadas, el cuadro de texto se vuelve verde. Cuando el cuadro de texto se vuelve verde, está en estado de éxito. Puede especificar el estilo de un componente en estado de éxito y simular su aspecto utilizando la opción Simular éxito.
+Le permite ver el aspecto de un componente si especifica su estilo para el estado de éxito. Por ejemplo, en un formulario, los clientes establecen la contraseña. Los usuarios pueden configurar la contraseña según las directrices que proporcione. Cuando un usuario escribe una contraseña siguiendo todas las directrices proporcionadas, el cuadro de texto se vuelve verde. Cuando el cuadro de texto se vuelve verde, está en estado de éxito. Puede especificar el estilo de un componente en estado de éxito y simular su aspecto utilizando la opción Simular éxito.
 
-* **Simular error**:
-le permite ver el aspecto de un componente si especifica su estilo para el estado de error. Por ejemplo, en un formulario, los clientes establecen la contraseña. Los usuarios pueden configurar la contraseña según las directrices que proporcione. Cuando un usuario escribe una contraseña que no sigue todas las directrices proporcionadas, el cuadro de texto se vuelve rojo. Cuando el cuadro de texto se vuelve rojo, está en estado de error. Puede especificar el estilo de un componente en estado de error y simular su aspecto utilizando la opción Simular error.
+* **Error de simulación**:
+Le permite ver el aspecto de un componente si especifica su estilo para el estado de error. Por ejemplo, en un formulario, los clientes establecen la contraseña. Los usuarios pueden configurar la contraseña según las directrices que proporcione. Cuando un usuario escribe una contraseña que no sigue todas las directrices proporcionadas, el cuadro de texto se vuelve rojo. Cuando el cuadro de texto se vuelve rojo, está en estado de error. Puede especificar el estilo de un componente en estado de error y simular su aspecto utilizando la opción Simular error.
 
 ### Estilo de un componente {#styling-a-component}
 
@@ -458,8 +459,8 @@ Siga estos pasos para personalizar el estilo de un componente en particular (un 
    * **Widget del campo** ![nivel de campo](assets/field-level.png)
 
 1. Seleccione **Widget del cuadro numérico**.
-1. El título de la barra lateral cambia a Widget del cuadro numérico y muestra las opciones para personalizar su aspecto. 
-Use **Dimensión y posición** en la barra lateral para personalizar el tamaño del componente. Compruebe que el estado es **Predeterminado**.
+1. El título de la barra lateral cambia a Widget del cuadro numérico y muestra las opciones para personalizar su aspecto.
+Use la opción **Dimension y posición** en la barra lateral para personalizar el tamaño del componente. Asegúrese de que el estado sea **Predeterminado**.
 
 En lugar de seleccionar **Widget del cuadro numérico**, seleccione **Widget del campo** en la barra de herramientas de componentes y realice los pasos anteriores. Al seleccionar dimensiones para **Widget del campo**, todos los cuadros de texto excepto el cuadro numérico tienen el mismo tamaño.
 
@@ -469,7 +470,7 @@ Con la barra de herramientas de componentes, también puede especificar el estil
 
 Siga estos pasos para personalizar el estilo de un componente en un estado específico:
 
-1. Seleccione un componente en el lienzo y seleccione la opción adecuada en la barra de herramientas de componentes. 
+1. Seleccione un componente en el lienzo y seleccione la opción adecuada en la barra de herramientas de componentes.
 La barra lateral muestra las opciones para personalizar el estilo del componente.
 1. Seleccione un estado en la barra lateral. Por ejemplo, Estado de error.
 1. Utilice opciones como **Borde o Fondo** en la barra lateral para personalizar el aspecto del componente.
@@ -485,7 +486,7 @@ Utilice la regla del lienzo para seleccionar puntos de interrupción para dispos
 
 Para aplicar estilo a los componentes de distintos puntos de interrupción:
 
-1. En el lienzo, seleccione un punto de interrupción encima de la regla. 
+1. En el lienzo, seleccione un punto de interrupción encima de la regla.
 Un punto de interrupción representa un dispositivo móvil y su tamaño de visualización.
 1. Utilice la barra lateral para personalizar el estilo de los componentes de formularios o comunicaciones interactivas de la temática para el tamaño de visualización seleccionado.
 1. Asegúrese de que la personalización esté guardada.
@@ -572,7 +573,7 @@ Para aplicar una temática a una comunicación interactiva, haga lo siguiente:
 
    Puede editar las propiedades del formulario en la barra lateral.
 
-1. En la barra lateral, debajo de **Básico**, seleccione la temática de la lista desplegable **Temática** y haga clic en ![botón de verificación](assets/check-button.png) **Listo** 
+1. En la barra lateral, debajo de **Básico**, seleccione la temática de la lista desplegable **Temática** y haga clic en ![botón de verificación](assets/check-button.png) **Listo**
 
 ### Cambiar la temática de un formulario durante la ejecución {#change-theme-of-a-form-at-runtime}
 
@@ -650,9 +651,9 @@ Puede ver el CSS generado mediante las siguientes opciones:
       1. En la pestaña Avanzadas, en el campo Ubicación de Clientlib, busque y seleccione la biblioteca de cliente que desee utilizar.
       1. Haga clic en **Guardar**.
 
-     El estilo que especifique en la biblioteca de cliente se importa en la temática que lo utiliza. Por ejemplo, puede especificar estilo para el cuadro de texto, el cuadro numérico y el interruptor de la biblioteca de cliente. Cuando se importa la biblioteca de cliente en la temática, se importa el estilo del cuadro de texto, el cuadro numérico y el interruptor. A continuación, puede aplicar estilo a otros componentes mediante el editor de temáticas.
+     El estilo que especifique en la biblioteca de cliente se importa en la temática que lo utiliza. Por ejemplo, puede especificar estilo para el cuadro de texto, el cuadro numérico y el interruptor de la biblioteca de cliente. Al importar la biblioteca de cliente en la temática, se importa el estilo del cuadro de texto, el cuadro numérico y el interruptor. A continuación, puede aplicar estilo a otros componentes mediante el editor de temáticas.
 También puede crear una temática, crear copias de la misma y, a continuación, modificar el estilo proporcionado en las temáticas copiadas para casos de uso similares.
-[&#x200B; Consulte Obtener una apariencia específica mediante Temáticas](#specific-af-appearance)
+Ver [Obteniendo apariencia específica mediante Temáticas](#specific-af-appearance)
 
    * **Editor de temáticas:**
 
@@ -672,5 +673,5 @@ También puede crear una temática, crear copias de la misma y, a continuación,
 
 * **Utilización del editor de formularios o del editor de temáticas para trabajar con encabezado y pie de página**
 
-  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia. 
+  Utilice el editor de temáticas si desea aplicar estilo al encabezado y al pie de página mediante opciones de estilo como estilo de fuente, fondo y transparencia.
 Si desea proporcionar información como un logotipo, el nombre de la empresa en el encabezado e información de copyright en el pie de página, utilice las opciones del editor de formularios.

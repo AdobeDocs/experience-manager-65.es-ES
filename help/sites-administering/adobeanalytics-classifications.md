@@ -1,6 +1,6 @@
 ---
 title: Clasificaciones de Adobe
-description: Aprenda a utilizar las clasificaciones de Adobes para exportar datos de clasificaciones a Adobe Analytics.
+description: Aprenda a utilizar las clasificaciones de Adobe para exportar datos de clasificaciones a Adobe Analytics.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,18 +11,18 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '619'
 ht-degree: 5%
 
 ---
 
 # Clasificaciones de Adobe{#adobe-classifications}
 
-Clasificaciones de Adobes exporta los datos de clasificaciones a [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de forma programada. El exportador es una implementación de **com.adobe.cq.scheduled.exporter.Exporter**.
+Clasificaciones de Adobe exporta datos de clasificaciones a [Adobe Analytics](/help/sites-administering/adobeanalytics.md) de forma programada. El exportador es una implementación de **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Para configurar esto:
 
-1. Usando **Navegación**, seleccione **Herramientas**, **Cloud Service** y después **Cloud Service heredados**.
+1. Usando **Navegación**, seleccione **Herramientas**, **Cloud Services** y después **Cloud Services heredados**.
 1. Desplácese a **Adobe Analytics** y seleccione **Mostrar configuraciones**.
 1. Haga clic en el vínculo **[+]** junto a la configuración de Adobe Analytics.
 
@@ -47,8 +47,8 @@ Para configurar esto:
    | Habilitado | Seleccione **Sí** para habilitar la configuración de las clasificaciones de Adobe. |
    | Sobrescribir en caso de conflicto | Seleccione **Sí** para sobrescribir los conflictos de datos. De manera predeterminada, se establece en **No**. |
    | Eliminar procesados | Si se establece en **Yes**, elimina los nodos procesados una vez exportados. El valor predeterminado es **False**. |
-   | Descripción del trabajo de exportación | Introduzca una descripción para el trabajo de clasificación de Adobes. |
-   | Correo electrónico de notificación | Introduzca una dirección de correo electrónico para la notificación de clasificaciones de Adobes. |
+   | Descripción del trabajo de exportación | Introduzca una descripción para el trabajo de clasificaciones de Adobe. |
+   | Correo electrónico de notificación | Introduzca una dirección de correo electrónico para la notificación de clasificaciones de Adobe. |
    | Grupo de informes | Introduzca el grupo de informes para el que se ejecutará el trabajo de importación. |
    | Conjunto de datos | Introduzca el ID de relación del conjunto de datos para el que se ejecutará el trabajo de importación. |
    | Transformador | En el menú desplegable, seleccione una implementación de transformador. |
@@ -61,11 +61,11 @@ Para configurar esto:
 
 Los registros se procesan en páginas. De forma predeterminada, Clasificaciones de Adobe crea páginas con un tamaño de página de 1000.
 
-Una página puede tener un tamaño 25000 máximo, por definición en Clasificaciones de Adobe, y puede modificarse desde la consola Felix. Durante la exportación, Clasificaciones de Adobe bloquea el nodo de origen para evitar modificaciones simultáneas. El nodo se desbloquea después de la exportación, por error o cuando se cierra la sesión.
+Una página puede tener 25000 tamaño máximo por definición en las clasificaciones de Adobe y puede modificarse desde la consola Felix. Durante la exportación, Clasificaciones de Adobe bloquea el nodo de origen para evitar modificaciones simultáneas. El nodo se desbloquea después de la exportación, por error o cuando se cierra la sesión.
 
 Para cambiar el tamaño de la página:
 
-1. Vaya a la consola OSGI en **https://&lt;host>:&lt;port>/system/console/configMgr** y seleccione **Exportador de clasificaciones de Adobe AEM de**.
+1. Vaya a la consola OSGI en **https://&lt;host>:&lt;port>/system/console/configMgr** y seleccione **Exportador de clasificaciones de Adobe AEM**.
 
    ![aa-26](assets/aa-26.png)
 
@@ -75,7 +75,7 @@ Para cambiar el tamaño de la página:
 
 >[!NOTE]
 >
->Las clasificaciones de Adobe se conocían anteriormente como el exportador SAINT.
+>Las clasificaciones de Adobe se conocían anteriormente como Exportador de SAINT.
 
 Un exportador puede utilizar un transformador para transformar los datos de exportación a un formato específico. Para las clasificaciones de Adobe, se ha proporcionado una subinterfaz `SAINTTransformer<String[]>` que implementa la interfaz del transformador. Esta interfaz se usa para restringir el tipo de datos a `String[]`, que usa la API de SAINT, y para tener una interfaz de marcador que busque estos servicios para seleccionarlos.
 
@@ -112,7 +112,7 @@ Las propiedades incluyen lo siguiente:
    <td>Un nombre de clase de una implementación de SAINTransformer</td>
   </tr>
   <tr>
-   <td>correo electrónico</td>
+   <td>email</td>
    <td>Dirección de correo electrónico de notificación.</td>
   </tr>
   <tr>

@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '2115'
-ht-degree: 71%
+source-wordcount: '2121'
+ht-degree: 70%
 
 ---
 
@@ -71,7 +71,7 @@ Recibirá un mensaje que indica que se creó el proyecto.
 
 >[!NOTE]
 >
->Se supone que ya se ha creado la estructura lingüística necesaria para los idiomas de traducción como parte de la [definición de la estructura de contenido.](getting-started.md#content-structure) Esto debería hacerse en colaboración con el arquitecto de contenido.
+>Se supone que ya se ha creado la estructura de idioma necesaria para los idiomas de traducción como parte de la [definición de la estructura de contenido.](getting-started.md#content-structure) Esto debería hacerse en colaboración con el arquitecto de contenido.
 >
 >Si las carpetas de idioma no se crean con antelación, no podrá crear copias de idioma como se describió en los pasos anteriores.
 
@@ -137,7 +137,7 @@ Para ver los detalles del contenido sin encabezado incluidos en este proyecto, h
    ![Detalles del trabajo de traducción](assets/translation-job-detail.png)
 1. Haga clic en una línea para ver el detalle de esa línea, teniendo en cuenta que una línea puede representar varios elementos de contenido para traducir.
 1. Haga clic en la casilla de verificación de selección de un elemento de línea para ver más opciones, como la opción de eliminarlo del trabajo o verlo en los fragmentos de contenido o las consolas de Assets.
-   ![Opciones de trabajo de traducción](assets/translation-job-options.png)
+   ![Opciones del trabajo de traducción](assets/translation-job-options.png)
 
 Normalmente, el contenido del trabajo de traducción se inicia en el estado **Borrador** tal como indica la columna **Estado** en la ventana **Trabajo de traducción**.
 
