@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 87%
+source-wordcount: '2350'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 87%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
 | AEM 6.5 | Este artículo |
 
 AEM Forms ofrece varias API para enviar formularios, procesar documentos y representar documentos. Algunas API se contabilizan como transacciones y otras se pueden usar libremente. Este documento proporciona una lista de todas las API que se contabilizan como transacciones en un informe de transacciones. Estos son algunos escenarios comunes en los que se utiliza un API facturable:
@@ -124,9 +124,9 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-" target="_blank">secureDocument</a><br /> </td>
-   <td>Esta API le permite proteger su documento. Puede utilizar la API para firmar, certificar, leer, extender o cifrar un documento de PDF.</td>
+   <td>Esta API le permite proteger su documento. Puede utilizar la API para firmar, certificar, leer, extender o cifrar un documento PDF.</td>
    <td>Documentos procesados</td>
-   <td>Solo se factura la operación firmar y certificar del secureDocument.</td>
+   <td>Solo se factura la operación firmar y certificar de secureDocument.</td>
   </tr>
  </tbody>
 </table>
@@ -318,7 +318,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td>
    <td>Ejecuta el documento DDX especificado y devuelve un objeto <a href="https://helpx.adobe.com/es/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> que contiene los documentos resultantes. </td>
    <td>Documentos procesados</td>
-   <td>Todos los formatos de archivo de entrada compatibles con Generador de PDF, Formularios y Servicios de salida; el servicio Ensamblador admite todos esos formatos como formatos de archivo de salida. </td>
+   <td>Todos los formatos de archivo de entrada compatibles con Generador de PDF, Formularios y Servicios de salida; el servicio Assembler admite todos esos formatos como formatos de archivo de salida. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
@@ -329,15 +329,15 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
  </tbody>
 </table>
 
-El uso de la API de invocación se cuenta como una transacción, cuando realiza una o más de las siguientes operaciones:
-1. Conversión de formatos que no son de PDF a formatos de PDF. Por ejemplo, la conversión de formato XDP a formato PDF, que ofrece formas de comunicación interactivas y no interactivas, y la conversión de Word a PDF.
+El uso de la API de invocación se cuenta como una transacción cuando realiza una o más de las siguientes operaciones:
+1. Conversión de formatos que no son PDF a formatos PDF. Por ejemplo, la conversión de formato XDP a formato PDF, que abarca tanto las formas de comunicación interactivas como las no interactivas, y la conversión de Word a PDF.
 1. Conversión de formato PDF a formato PDF/A.
 1. Conversión de formato PDF a formatos no PDF. Algunos ejemplos son la transformación de PDF a formato de imagen o la conversión de PDF a formato de texto.
 
 >[!NOTE]
 >
->* El API de invocación del servicio de ensamblador puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, la API de invocación puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
->* Un documento PDF único producido mediante el servicio de ensamblador puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende del código DDX proporcionado.
+>* El API de invocación del servicio Assembler puede llamar internamente a un API facturable de otro servicio en función de la entrada. Por lo tanto, la API de invocación puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende de la entrada y las API internas invocadas.
+>* Un documento PDF único producido mediante el servicio Assembler puede contabilizarse como ninguna, única o múltiples transacciones. El número de transacciones contabilizadas depende del código DDX proporcionado.
 
 ### Servicio de utilidad de PDF  {#pdf-utility-service}
 

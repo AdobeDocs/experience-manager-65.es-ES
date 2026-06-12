@@ -1,6 +1,6 @@
 ---
 title: Servicio ConvertPDF
-description: Utilice el servicio Adobe Experience Manager Forms ConvertPDF para convertir documentos de PDF en archivos de PostScript o de imagen.
+description: Utilice el servicio ConvertPDF de Adobe Experience Manager Forms para convertir documentos de PDF en archivos de PostScript o de imagen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 95%
+source-wordcount: '412'
+ht-degree: 89%
 
 ---
 
@@ -134,8 +134,8 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 La ejecución del servicio ConvertPDF desde un flujo de trabajo es similar a la ejecución desde JSP/Servlet.
 
 La única diferencia es que al ejecutar el servicio desde JSP/Servlet el objeto de documento recupera automáticamente una instancia del objeto ResourceResolver del objeto ResourceResolverHelper. Este mecanismo automático
-no funciona cuando se llama al código desde un flujo de trabajo. Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Documento. A continuación, el objeto Documento utiliza
-el objeto ResourceResolver proporcionado para leer el contenido del repositorio.
+no funciona cuando se llama al código desde un flujo de trabajo. Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Documento. A continuación, el objeto Document utiliza
+ha proporcionado el objeto ResourceResolver para leer el contenido del repositorio.
 
 El siguiente proceso de flujo de trabajo de ejemplo convierte el documento de entrada en un documento PostScript. El código se escribe en ECMAScript y el documento se pasa como carga útil de flujo de trabajo:
 
