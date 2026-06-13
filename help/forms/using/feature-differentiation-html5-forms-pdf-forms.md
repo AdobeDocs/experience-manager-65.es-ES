@@ -1,6 +1,6 @@
 ---
 title: Diferenciar entre las características de formularios HTML5 y PDF
-description: Obtenga información sobre las diferencias de características entre los formularios de HTML5 y los PDF forms.
+description: Obtenga información sobre las diferencias entre las características de los formularios HTML5 y PDF forms.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 78%
+source-wordcount: '450'
+ht-degree: 75%
 
 ---
 
@@ -41,7 +41,7 @@ La siguiente tabla especifica la compatibilidad de funciones proporcionada para 
   <tr>
    <td>Combinación de datos</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
   <tr>
    <td>Imágenes</td>
@@ -50,12 +50,12 @@ La siguiente tabla especifica la compatibilidad de funciones proporcionada para 
   </tr>
   <tr>
    <td>Paginación<br /> </td>
-   <td><p>Un formulario HTML5 se divide en paneles y cuadros para que tenga un aspecto similar al de los formularios PDF. El tamaño de la página se calcula dinámicamente. Si se elimina o se marca como oculto el contenido completo de una página de un formulario de HTML5, la página en blanco se oculta. No se muestra ningún espacio vacío (espacio en blanco) entre las páginas que aparecen encima y debajo de la página en blanco.</p> <p>Si la combinación de datos o los scripts agregan contenido a una página, la longitud de la página se amplía para dar cabida al contenido recién agregado. No se agregarán nuevas páginas al formulario para acomodar el contenido que acaba de agregarse. </p> <p><strong>Nota:</strong> Cuando se elimina o se marca como oculto el contenido completo de una página de un formulario de HTML5, la página en blanco (espacio en blanco) permanece visible entre la primera y la segunda página, pero no entre las demás.</p> </td>
+   <td><p>Un formulario HTML5 se divide en paneles y cuadros para que tenga un aspecto similar al de los formularios PDF. El tamaño de la página se calcula dinámicamente. Si se elimina o se marca como oculto el contenido completo de una página de un formulario HTML5, la página en blanco se oculta. No se muestra ningún espacio vacío (espacio en blanco) entre las páginas que aparecen encima y debajo de la página en blanco.</p> <p>Si la combinación de datos o los scripts agregan contenido a una página, la longitud de la página se amplía para dar cabida al contenido recién agregado. No se agregarán nuevas páginas al formulario para acomodar el contenido que acaba de agregarse. </p> <p><strong>Nota:</strong> Cuando se elimina o se marca como oculto el contenido completo de una página de un formulario HTML5, la página en blanco (espacio en blanco) permanece visible entre la primera y la segunda página, pero no entre las demás.</p> </td>
    <td>La paginación del PDF depende del contenido combinado de los datos o del contenido del usuario, y el recuento de páginas se incrementa o se reduce en función de este.</td>
   </tr>
   <tr>
    <td>Encabezados/pies de página </td>
-   <td>Compatible. <br /> <br /> Como los formularios móviles HTML5 no admiten saltos de página, los encabezados y los pies de página aparecen solo una vez. Sin embargo, puede configurarlos en el diseño para que aparezcan en varios sitios de la vista previa de los formularios móviles.<br /> </td>
+   <td>Compatible. <br /> <br /> Como los formularios móviles HTML5 no admiten saltos de página, los encabezados y pies de página aparecerán solo una vez. Sin embargo, puede configurarlos en el diseño para que aparezcan en varios sitios de la vista previa de los formularios móviles.<br /> </td>
    <td>Compatible.</td>
   </tr>
   <tr>
@@ -76,7 +76,7 @@ La siguiente tabla especifica la compatibilidad de funciones proporcionada para 
   <tr>
    <td>Compatibilidad con idiomas de derecha a izquierda </td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible</td>
   </tr>
  </tbody>
 </table>

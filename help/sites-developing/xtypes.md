@@ -11,20 +11,20 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3865'
+source-wordcount: '7653'
 ht-degree: 0%
 
 ---
 
 # Uso de xtypes (IU clásica){#using-xtypes-classic-ui}
 
-Esta página describe todos los xtype disponibles con Adobe Experience Manager AEM ().
+Esta página describe todos los xtype disponibles con Adobe Experience Manager (AEM).
 
 En el lenguaje ExtJS, un xtype es un nombre simbólico dado a una clase. Puede leer el párrafo &quot;Tipos XT de componentes&quot; de la [Descripción general de ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) para obtener una explicación detallada sobre qué es un xtype y cómo se puede usar.
 
-AEM Para obtener información completa sobre todos los widgets disponibles en la aplicación, consulte la [documentación de la API de widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+Para obtener información completa sobre todos los widgets disponibles en AEM, consulte la [documentación de la API de widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-AEM Para saber en qué componentes se utiliza un xtype determinado en la, puede utilizar la siguiente consulta Xpath en CRXDE reemplazando &quot;casilla de verificación&quot; por el xtype que le interese:
+Para saber en qué componentes se utiliza un xtype determinado en AEM, puede utilizar la siguiente consulta Xpath en CRXDE sustituyendo &quot;casilla de verificación&quot; por el xtype que le interese:
 
 `//element(*, cq:Widget)[@xtype='checkbox']`
 
@@ -32,7 +32,7 @@ AEM Para saber en qué componentes se utiliza un xtype determinado en la, puede 
 >
 >Esta página describe el uso de xtype de ExtJS dentro de la IU clásica.
 >
->El Adobe recomienda que use la [interfaz de usuario táctil](/help/sites-developing/touch-ui-concepts.md) moderna y estándar basada en [la interfaz de usuario de Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [la interfaz de usuario de Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>Adobe recomienda usar la [interfaz de usuario táctil](/help/sites-developing/touch-ui-concepts.md) moderna y estándar basada en [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
 ## xtypes {#xtypes}
 
@@ -108,9 +108,9 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.wcm.BulkEditorForm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditorForm)
 
-  BulkEditorForm proporciona [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) rodeado por un formulario de HTML. Esta es la versión independiente del [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor), se requiere un formulario de HTML para el botón de importación.
+  BulkEditorForm proporciona [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) rodeado por un formulario de HTML. Esta es la versión independiente de [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor), se requiere un formulario HTML para el botón Importar.
 
-* botón
+* button
 
   [CQ.Ext.Button](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)
 
@@ -128,7 +128,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   El paquete CQ.Ext.chart proporciona la capacidad de visualizar datos con gráficos basados en Flash. Cada gráfico se vincula directamente a un CQ.Ext.data.Store, lo que permite realizar actualizaciones automáticas del gráfico. Para cambiar el aspecto de un gráfico, vea las opciones de configuración [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) y [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart).
 
-* casilla de verificación
+* checkbox
 
   [CQ.Ext.form.Checkbox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Checkbox)
 
@@ -176,7 +176,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   Un control combobox con compatibilidad para autocompletar, carga remota, paginación y muchas otras características.
 
-  Un ComboBox funciona de manera similar a un campo &lt;select> de HTML tradicional. La diferencia es que para enviar [valueField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox), debe especificar un [hiddenName](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) para crear una entrada oculta.
+  Un ComboBox funciona de manera similar a un campo &lt;select> tradicional de HTML. La diferencia es que para enviar [valueField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox), debe especificar un [hiddenName](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) para crear una entrada oculta.
 
 * componente
 
@@ -282,7 +282,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
 * selector de fecha
 
-  [Selector de fecha CQ.Ext.Date](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker)
+  [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker)
 
   Un selector de fechas emergente. La clase [DateField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) utiliza esta clase para permitir examinar y seleccionar fechas válidas.
 
@@ -382,7 +382,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.Ext.FlashComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.FlashComponent)
 
-* rejilla
+* Cuadrícula
 
   [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)
 
@@ -416,7 +416,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-  Proporciona un componente ligero de Editor de HTML. Safari no admite algunas funciones de la barra de herramientas, por lo que se ocultan automáticamente cuando es necesario. Se indican en las opciones de configuración cuando corresponde.
+  Proporciona un componente ligero de HTML Editor. Safari no admite algunas funciones de la barra de herramientas, por lo que se ocultan automáticamente cuando es necesario. Se indican en las opciones de configuración cuando corresponde.
 
   Los botones de la barra de herramientas del editor tienen información sobre herramientas definida en la propiedad [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor).
 
@@ -580,13 +580,13 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.wcm.OfflineImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
 
-  OfflineImporter es una herramienta para importar y convertir documentos de MicrosoftAEM ® Word en páginas de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de. Esta función permite editar contenido sin conexión mediante un procesador de textos.
+  OfflineImporter es una herramienta para importar y convertir documentos de Microsoft® Word a páginas de AEM. Esta función permite editar contenido sin conexión mediante un procesador de textos.
 
 * ownerdraw
 
   [CQ.form.OwnerDraw](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.OwnerDraw)
 
-  OwnerDraw puede contener código de HTML personalizado (introducido directamente o recuperado de una dirección URL).
+  OwnerDraw puede contener código HTML personalizado (introducido directamente o recuperado de una dirección URL).
 
 * paginación
 
@@ -718,7 +718,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.wcm.Sidekick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Sidekick)
 
-  El Sidekick es un asistente flotante que proporciona al usuario herramientas comunes para la edición de páginas.
+  Sidekick es un asistente flotante que proporciona al usuario herramientas comunes para la edición de páginas.
 
 * siteadmin
 
@@ -790,7 +790,7 @@ A continuación se enumeran los xtype disponibles en Adobe Experience Manager:
 
   [CQ.Static](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Static)
 
-  El Static se puede utilizar para mostrar texto o HTML arbitrario.
+  El elemento estático puede utilizarse para mostrar texto arbitrario o HTML.
 
 * estadísticas
 

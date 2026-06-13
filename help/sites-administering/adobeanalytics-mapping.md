@@ -12,8 +12,8 @@ feature: Integration
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 0%
+source-wordcount: '1458'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Agregue componentes al marco de trabajo que recopilen los datos para enviarlos a
 
 ![aa-11](assets/aa-11.png)
 
-AEM Cuando la **vista de** está abierta, las variables de Analytics aparecen en el buscador de contenido.
+Cuando la **vista de AEM** está abierta, las variables de Analytics aparecen en el buscador de contenido.
 
 ![aa-12](assets/aa-12.png)
 
@@ -38,11 +38,11 @@ Los datos asignados se envían a Adobe Analytics cuando se carga la página y se
 
 Utilice el siguiente procedimiento para asignar variables de componente CQ con propiedades de informe de Adobe Analytics.
 
-1. AEM En la **vista de**, arrastre un componente de seguimiento desde la barra de tareas al marco de trabajo. Por ejemplo, arrastre el componente **Página** desde la categoría **General**.
+1. En la **vista de AEM**, arrastre un componente de seguimiento de la barra de tareas al marco de trabajo. Por ejemplo, arrastre el componente **Página** desde la categoría **General**.
 
    ![aa-13](assets/aa-13.png)
 
-   Hay varios grupos de componentes predeterminados: **General**, **Commerce**, **Communities** y **Other**. AEM La instancia se puede configurar para que muestre grupos y componentes diferentes.
+   Hay varios grupos de componentes predeterminados: **General**, **Commerce**, **Communities** y **Other**. La instancia de AEM se puede configurar para mostrar diferentes grupos y componentes.
 
 1. Para asignar variables de Adobe Analytics con variables definidas en el componente, arrastre una **variable de Analytics** desde el buscador de contenido a un campo del componente de seguimiento. Por ejemplo, arrastre `Page Name (pageName)` a `pagedata.title`.
 
@@ -80,7 +80,7 @@ AEM utiliza una convención de nombres de variables y eventos relacionados con p
 | `product.events.<eventName>` | Los eventos de éxito que se asociarán con el producto en el informe. | `product.events` es el prefijo de los eventos llamados *eventName.* |
 | `product.evars.<eVarName>` | Las variables de conversión (`eVar`) que se van a asociar con el producto. | `product.evars` es el prefijo de las variables de eVar denominadas *eVarName.* |
 
-AEM Varios componentes de Commerce utilizan estos nombres de variables.
+Varios componentes de AEM Commerce utilizan estos nombres de variables.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ AEM Varios componentes de Commerce utilizan estos nombres de variables.
 
 ### Comprobación de informes en Adobe Analytics {#checking-reports-on-adobe-analytics}
 
-1. Inicie sesión en el sitio web de Adobe Analytics AEM con las mismas credenciales proporcionadas a los usuarios de la plataforma de inicio de sesión de la plataforma de.
+1. Inicie sesión en el sitio web de Adobe Analytics con las mismas credenciales proporcionadas para AEM.
 1. Asegúrese de que el RSID seleccionado sea el utilizado en los pasos anteriores.
 1. En **Informes** (en el lado izquierdo de la página), seleccione **Conversión personalizada**, luego **Conversión personalizada 1-10** y seleccione la variable correspondiente a `eVar7`
 
@@ -105,11 +105,11 @@ Inicialmente, cuando se abre un marco de trabajo de Adobe Analytics, el buscador
 Cuando se selecciona un RSID, todas las variables que pertenecen a ese RSID se agregan a la lista.\
 `cf#` es necesario para asignar variables de Analytics a las variables de CQ presentes en los diferentes componentes de seguimiento. Consulte Configuración de un marco de trabajo para el seguimiento básico.
 
-AEM Según la vista seleccionada para el marco de trabajo, el buscador de contenido se rellenará con variables de Analytics (en la vista de) o con variables de CQ (en la vista de Analytics).
+Según la vista seleccionada para el marco de trabajo, el buscador de contenido se rellenará con variables de Analytics (en la vista de AEM) o variables CQ (en la vista de Analytics).
 
 La lista se puede manipular de las siguientes maneras:
 
-1. AEM En la **vista de datos**, la lista se puede filtrar según el tipo de variable que se seleccione con los tres botones de filtro:
+1. En **AEM view**, la lista se puede filtrar según el tipo de variable que se seleccione con los tres botones de filtro:
 
    * Si *no hay ningún botón* seleccionado, la lista muestra la lista completa.
    * Si el botón **Tráfico** está seleccionado, la lista solo mostrará las variables que pertenecen a la sección Tráfico.
@@ -139,21 +139,21 @@ La lista se puede manipular de las siguientes maneras:
    >
    >Solo se puede asignar una variable de CQ a una variable de Adobe Analytics en un momento dado.
 
-## AEM Uso de la vista de y Analytics {#using-aem-view-and-analytics-view}
+## Uso de las vistas AEM y Analytics {#using-aem-view-and-analytics-view}
 
 En cualquier momento dado, los usuarios pueden cambiar entre dos formas de ver las asignaciones de Adobe Analytics en una página de marco de trabajo. Las dos vistas proporcionan una mejor visión general de las asignaciones dentro del marco, desde dos perspectivas distintas.
 
-### AEM Vista de {#aem-view}
+### Vista de AEM {#aem-view}
 
 ![aa-23](assets/aa-23.png)
 
-AEM Tomando la imagen anterior como ejemplo, la **vista de la vista de la** tiene las siguientes propiedades:
+Tomando la imagen anterior como ejemplo, la **vista de AEM** tiene las siguientes propiedades:
 
 1. Esta es la vista predeterminada cuando se abre el marco de trabajo.
 1. Izquierda: el buscador de contenido (cf#) se rellena con variables de Adobe Analytics basadas en los RSID seleccionados.
-1. AEM Encabezados de pestañas (**vista de datos** y **vista de Analytics**): úselos para cambiar entre las dos vistas.
+1. Encabezados de fichas (**vista de AEM** y **vista de Analytics**): úselos para cambiar entre las dos vistas.
 
-1. AEM **Vista de la**:
+1. **Vista de AEM**:
 
    1. Si el marco de trabajo tiene componentes heredados de su elemento principal, se enumerarán aquí, junto con las variables asignadas a los componentes.
 
@@ -161,7 +161,7 @@ AEM Tomando la imagen anterior como ejemplo, la **vista de la vista de la** tien
       1. Para desbloquear un componente heredado, haga doble clic en el candado situado junto al nombre del componente
       1. Para revertir la herencia, elimine el componente desbloqueado; después, recuperará su estado de bloqueado.
 
-   1. **Arrastre los componentes aquí para incluirlos en el módulo de análisis**: los componentes se pueden arrastrar desde el Sidekick y soltar aquí.
+   1. **Arrastre los componentes aquí para incluirlos en el marco de análisis**: los componentes se pueden arrastrar desde Sidekick y soltar aquí.
    1. Puede encontrar todos los componentes que están incluidos actualmente en el marco de Analytics:
 
       1. Para agregar un componente, arrastre uno desde la pestaña Componentes de la barra de tareas
@@ -174,9 +174,9 @@ AEM Tomando la imagen anterior como ejemplo, la **vista de la vista de la** tien
 
 1. Se puede acceder a esta vista cambiando a la pestaña **Analytics view** del marco de trabajo.
 1. Izquierda: el buscador de contenido (cf#) se rellena con variables CQ basadas en los componentes arrastrados al marco de trabajo en la vista CQ.
-1. AEM Encabezados de pestañas (**vista de datos** y **vista de Analytics**): úselos para cambiar entre las dos vistas.
+1. Encabezados de fichas (**vista de AEM** y **vista de Analytics**): úselos para cambiar entre las dos vistas.
 
-1. Las tres tablas (Tráfico, Conversión, Evento) enumeran todas las variables de Adobe Analytics disponibles. pertenecen a los RSID seleccionados. AEM Las asignaciones que se muestran aquí deben ser las mismas que en la vista de la:
+1. Las tres tablas (Tráfico, Conversión, Evento) enumeran todas las variables de Adobe Analytics disponibles. pertenecen a los RSID seleccionados. Las asignaciones que se muestran aquí deben ser las mismas que en la vista de AEM:
 
    * **Tráfico**:
 
@@ -198,8 +198,7 @@ AEM Tomando la imagen anterior como ejemplo, la **vista de la vista de la** tien
 >
 >La columna de variable CQ de cualquier tabla también se puede rellenar en línea, haciendo doble clic en el campo y agregándole texto. Estos campos aceptan JavaScript como entrada.
 >
->Por ejemplo, junto a `prop3` puede agregar lo siguiente:
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>Por ejemplo, junto a `prop3` puede agregar:> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >para enviar el *título* de una página concatenada con su *sección del sitio* usando *:* (dos puntos) y con el prefijo *Adobe* como `prop3`
 >
 

@@ -11,7 +11,7 @@ feature: Developing,Tagging
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2466'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ La biblioteca global también declara la [biblioteca Sling](/help/sites-developi
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling" %>
 ```
 
-### &lt;ui:includeClientLib> {#ui-includeclientlib}
+### &lt;ui:includeClientLib {#ui-includeclientlib}
 
-AEM La etiqueta `<ui:includeClientLib>` incluye una biblioteca de cliente de html de, que puede ser una biblioteca js, css o de temas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio práctico para la interfaz de servicio ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+La etiqueta `<ui:includeClientLib>` incluye una biblioteca de cliente HTML de AEM, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio práctico para la interfaz de servicio ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Tiene los atributos siguientes:
 
@@ -90,7 +90,7 @@ Para utilizar la biblioteca de etiquetas CQ en el script, este debe comenzar con
 >
 >Cuando se incluye el archivo `/libs/foundation/global.jsp` en el script, la biblioteca de etiquetas se declara automáticamente.
 
-AEM Al desarrollar el script jsp de un componente de la, se recomienda incluir el siguiente código en la parte superior del script:
+Al desarrollar el script jsp de un componente de AEM, se recomienda incluir el siguiente código en la parte superior del script:
 
 ```xml
 <%@include file="/libs/foundation/global.jsp"%>
@@ -98,7 +98,7 @@ AEM Al desarrollar el script jsp de un componente de la, se recomienda incluir e
 
 Declara las etiquetas sling, CQ y jstl y expone los objetos de script utilizados con regularidad definidos por la etiqueta [`<cq:defineObjects />`](#amp-lt-cq-defineobjects). Esto acorta y simplifica el código jsp del componente.
 
-### &lt;cq:text> {#cq-text}
+### &lt;cq:text {#cq-text}
 
 La etiqueta `<cq:text>` es una etiqueta de conveniencia que genera texto de componente en un JSP.
 
@@ -156,7 +156,7 @@ Algunos ejemplos de cómo se puede utilizar la etiqueta `<cq:text>` en un JSP:
 <cq:text property="text" tagClass="text"/>
 ```
 
-### &lt;cq:setContentBundle> {#cq-setcontentbundle}
+### &lt;cq:setContentBundle {#cq-setcontentbundle}
 
 La etiqueta `<cq:setContentBundle>` crea un contexto de localización i18n y lo almacena en la variable de configuración `javax.servlet.jsp.jstl.fmt.localizationContext`.
 
@@ -203,7 +203,7 @@ Para páginas personalizadas de usuario:
 </div> ...
 ```
 
-### &lt;cq:include> {#cq-include}
+### &lt;cq:include {#cq-include}
 
 La etiqueta `<cq:include>` incluye un recurso en la página actual.
 
@@ -250,16 +250,16 @@ Tiene los atributos siguientes:
 
 ¿Debería usar `<cq:include>` o `<sling:include>`?
 
-* AEM A la hora de desarrollar componentes de la, Adobe recomienda usar `<cq:include>`.
+* Al desarrollar componentes de AEM, Adobe recomienda usar `<cq:include>`.
 * `<cq:include>` le permite incluir directamente archivos de script por su nombre cuando se utiliza el atributo script. Esto tiene en cuenta la herencia de componentes y tipos de recursos, y a menudo es más sencillo que el cumplimiento estricto de la resolución de scripts de Sling mediante selectores y extensiones.
 
-### &lt;cq:includeClientLib> {#cq-includeclientlib}
+### &lt;cq:includeClientLib {#cq-includeclientlib}
 
 >[!CAUTION]
 >
->AEM `<cq:includeClientLib>` obsoleto desde la versión 5.6 de la. Se debe usar [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) en su lugar.
+>`<cq:includeClientLib>` obsoleto desde AEM 5.6. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) se debe usar en su lugar.
 
-AEM La etiqueta `<cq:includeClientLib>` incluye una biblioteca de cliente de html de, que puede ser una biblioteca js, css o de temas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio práctico para la interfaz de servicio `com.day.cq.widget.HtmlLibraryManager`.
+La etiqueta `<cq:includeClientLib>` incluye una biblioteca de cliente HTML de AEM, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en jsp. Esta etiqueta es un envoltorio práctico para la interfaz de servicio `com.day.cq.widget.HtmlLibraryManager`.
 
 Tiene los atributos siguientes:
 
@@ -297,7 +297,7 @@ La etiqueta `<cq:includeClientLib>` se puede usar de la siguiente manera en un j
 <cq:includeClientLib css="cq.collab.calendar, cq.security" />
 ```
 
-### &lt;cq:defineObjects> {#cq-defineobjects}
+### &lt;cq:defineObjects {#cq-defineobjects}
 
 La etiqueta `<cq:defineObjects>` expone los siguientes objetos de script, que se utilizan con regularidad y a los que el desarrollador puede hacer referencia. También expone los objetos definidos por la etiqueta [`<sling:defineObjects>`](#amp-lt-sling-defineobjects).
 
@@ -307,7 +307,7 @@ La etiqueta `<cq:defineObjects>` expone los siguientes objetos de script, que se
 
 **componente**
 
-* AEM el objeto de componente de la actual del recurso actual (com.day.cq.wcm.api.components.Component (interfaz).
+* el objeto del componente AEM actual del recurso actual (com.day.cq.wcm.api.components.Component interfaz).
 
 **currentDesign**
 
@@ -315,7 +315,7 @@ La etiqueta `<cq:defineObjects>` expone los siguientes objetos de script, que se
 
 **currentPage**
 
-* AEM el objeto de página actual de WCM de la (interfaz com.day.cq.wcm.api.Page).
+* el objeto de página WCM de AEM actual (interfaz com.day.cq.wcm.api.Page).
 
 **currentStyle**
 
@@ -327,7 +327,7 @@ La etiqueta `<cq:defineObjects>` expone los siguientes objetos de script, que se
 
 **editContext**
 
-* AEM el objeto de contexto de edición del componente de (interfaz com.day.cq.wcm.api.components.EditContext).
+* el objeto de contexto de edición del componente AEM (com.day.cq.wcm.api.components.EditContext.interface).
 
 **pageManager**
 
@@ -439,7 +439,7 @@ La etiqueta `<cq:defineObjects>` expone los siguientes objetos de script, que se
 >
 >Cuando el archivo `/libs/foundation/global.jsp` se incluye en el script, la etiqueta `<cq:defineObjects />` se incluye automáticamente.
 
-### &lt;cq:requestURL> {#cq-requesturl}
+### &lt;cq:requestURL {#cq-requesturl}
 
 La etiqueta `<cq:requestURL>` escribe la dirección URL de la solicitud actual en JspWriter. Las dos etiquetas [`<cq:addParam>`](#amp-lt-cq-addparam) y [`<cq:removeParam>`](#amp-lt-cq-removeparam) y se pueden usar dentro del cuerpo de esta etiqueta para modificar la dirección URL de la solicitud actual antes de que se escriba.
 
@@ -461,7 +461,7 @@ Por ejemplo:
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### &lt;cq:addParam> {#cq-addparam}
+### &lt;cq:addParam {#cq-addparam}
 
 La etiqueta `<cq:addParam>` agrega un parámetro de solicitud con el nombre y valor dados a la etiqueta [`<cq:requestURL>`](#amp-lt-cq-requesturl) que lo incluye.
 
@@ -481,7 +481,7 @@ Tiene los atributos siguientes:
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### &lt;cq:removeParam> {#cq-removeparam}
+### &lt;cq:removeParam {#cq-removeparam}
 
 La etiqueta `<cq:removeParam>` quita un parámetro de solicitud con el nombre y valor dados de la etiqueta [`<cq:requestURL>`](#amp-lt-cq-requesturl) que lo incluye. Si no se proporciona ningún valor, se eliminan todos los parámetros con el nombre dado.
 
@@ -511,7 +511,7 @@ Cuando se utiliza la biblioteca de etiquetas Sling en el script, este debe comen
 >
 >Cuando se incluye el archivo `/libs/foundation/global.jsp` en el script, la biblioteca de etiquetas de sling se declara automáticamente.
 
-### &lt;sling:include> {#sling-include}
+### &lt;sling:include {#sling-include}
 
 La etiqueta `<sling:include>` incluye un recurso en la página actual.
 
@@ -576,7 +576,7 @@ Por ejemplo:
 <sling:include replaceSelectors="content" />
 ```
 
-### &lt;sling:defineObjects> {#sling-defineobjects}
+### &lt;sling:defineObjects {#sling-defineobjects}
 
 La etiqueta `<sling:defineObjects>` expone los siguientes objetos de scripts que el desarrollador puede hacer referencia y que se utilizan con regularidad:
 
@@ -586,8 +586,8 @@ La etiqueta `<sling:defineObjects>` expone los siguientes objetos de scripts que
 
 **slingResponse**
 
-* Objeto SlingHttpServletResponse, que proporciona acceso a la respuesta HTTP creada por el servidor. Es igual que el HttpServletResponse desde el que se extiende.**solicitud**
-* El objeto de solicitud JSP estándar que es HttpServletRequest puro.**respuesta**
+* Objeto SlingHttpServletResponse, que proporciona acceso a la respuesta HTTP creada por el servidor. Es igual que el HttpServletResponse desde el que se extiende.**request**
+* El objeto de solicitud JSP estándar que es HttpServletRequest puro.**response**
 * El objeto de respuesta JSP estándar que es HttpServletResponse puro.
 
 **resourceResolver**
@@ -606,7 +606,7 @@ La etiqueta `<sling:defineObjects>` expone los siguientes objetos de scripts que
 
 * Si el recurso actual apunta a un nodo JCR (como suele ocurrir en Sling), proporciona acceso directo al objeto Node. De lo contrario, este objeto no está definido.
 
-**log**
+**registro**
 
 * Proporciona un registrador SLF4J para registrar en el sistema de registro de Sling desde scripts, por ejemplo, log.info(&quot;Ejecutando mi script&quot;).
 

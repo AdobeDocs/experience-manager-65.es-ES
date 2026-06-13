@@ -12,8 +12,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 61%
+source-wordcount: '559'
+ht-degree: 59%
 
 ---
 
@@ -80,7 +80,7 @@ Para localizar las imágenes, realice los siguientes pasos:
 
 1. Realice todos los cambios semánticos enumerados en el artículo [Personalizar el espacio de trabajo](../../forms/using/introduction-customizing-html-workspace.md).
 1. Navegue hasta la carpeta *js/runtime/utilidad* y abra el archivo *usersession.js* para editarlo.
-1. Busque el código que aparece en el bloque de código original y agregue la condición *lang !== &#39;nw&#39;* a al enunciado if:
+1. Busque el código que aparece en el bloque de código original y agregue la condición *lang !== &#39;nw&#39;* a la instrucción if:
 
    ```javascript
    // Orignal code
