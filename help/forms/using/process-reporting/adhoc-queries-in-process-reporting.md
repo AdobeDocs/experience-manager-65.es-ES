@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1650'
 ht-degree: 96%
 
 ---
@@ -240,7 +240,7 @@ Puede ver los detalles de un proceso o tarea específico de AEM Forms:
    * ID de formulario
    * Fecha de creación del formulario
    * Hora de la actualización del formulario
-   * URL de la plantilla del formulario
+   * URL de la plantilla de formulario
 
    **Panel inferior derecho:** muestra los siguientes detalles del historial de procesos de la tarea seleccionada:
 

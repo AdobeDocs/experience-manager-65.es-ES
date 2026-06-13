@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 96%
+source-wordcount: '2541'
+ht-degree: 93%
 
 ---
 
@@ -90,8 +90,8 @@ Puede ordenar los datos en función de cualquier columna de una tabla del formul
 La ordenación se puede aplicar a columnas de la tabla que contengan lo siguiente:
 
 * Texto estático
-* Propiedades del objeto del modelo de datos
-* Combinación de texto estático y propiedades del objeto del modelo de datos
+* Propiedades del objeto de modelo de datos
+* Combinación de texto estático y propiedades del objeto de modelo de datos
 
 Para aplicar la ordenación en columnas de la tabla, las celdas de la columna de la tabla deben contener cualquiera de los siguientes componentes: cuadro numérico, paso numérico, campo de entrada de fecha, selector de fecha, texto o cuadro de texto.
 
@@ -128,7 +128,7 @@ Puede definir el estilo de una tabla mediante el uso del modo Estilo de la barra
 
 1. En la barra de herramientas de la página, antes de Vista previa, seleccione ![canvas-drop-down](assets/canvas-drop-down.png) > **Estilo**.
 
-1. En la barra lateral, seleccione la tabla y el botón de edición ![edit-button](assets/edit-button.png). 
+1. En la barra lateral, seleccione la tabla y seleccione el botón de edición ![edit-button](assets/edit-button.png).
 Puede ver las propiedades de estilo en la barra lateral.
 
 ![Propiedades de estilo de una tabla](assets/style-table.png)

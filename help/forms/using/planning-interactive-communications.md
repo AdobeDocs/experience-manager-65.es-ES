@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Planificar la comunicación interactiva"
+title: 'Tutorial: Planificar la comunicación interactiva'
 description: Planifique la estructura de la comunicación interactiva
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '658'
 ht-degree: 98%
 
 ---

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 3%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 3%
 
 La impresora de red PDFG permite a los usuarios generar un documento de PDF desde cualquier aplicación que admita la impresión. Una vez que un usuario instala la impresora de red PDFG, aparece una nueva impresora denominada *generador de PDF* en la sección Impresoras del Panel de control de Campaign de Windows. Si ya existe una impresora con el mismo nombre, se pide al usuario que proporcione otro nombre.
 
-La impresión en esta impresora desde cualquier aplicación envía el documento (en formato PostScript) al PDF Generator, que convierte el archivo PostScript en PDF. Según la configuración de PDF Generator, envía el documento del PDF al usuario como datos adjuntos a un mensaje de correo electrónico, reenvía el documento del PDF AEM a un servicio o proceso de formularios de la especificado o realiza ambas acciones.
+La impresión en esta impresora desde cualquier aplicación envía el documento (en formato PostScript) a PDF Generator, que convierte el archivo de PostScript en PDF. Según la configuración de PDF Generator, envía el documento de PDF al usuario como datos adjuntos a un mensaje de correo electrónico, reenvía el documento de PDF a un servicio o proceso de formularios AEM especificado o realiza ambas acciones.
 
 Se requieren los siguientes pasos para configurar una impresora de red PDFG:
 
 1. Configure las opciones de correo electrónico. (Consulte [Configurar opciones de correo electrónico para la impresora de red PDFG](setting-pdfg-network-printer-windows.md#configure-email-settings-for-pdfg-network-printer)).
 1. En la consola de administración, configure la impresora de red PDFG. (Consulte [Configurar la configuración de la impresora de red PDFG](setting-pdfg-network-printer-windows.md#configure-the-pdfg-network-printer-settings)).
-1. AEM Asegúrese de que los usuarios estén configurados con una dirección de correo electrónico válida en la base de datos de formularios en la que se haya creado el formulario y asigne PDFGUserPermission a cada usuario. <!-- Fix broken link See Setting up and organizing users -->
+1. Asegúrese de que los usuarios estén configurados con una dirección de correo electrónico válida en la base de datos de formularios de AEM y asigne PDFGUserPermission a cada usuario. <!-- Fix broken link See Setting up and organizing users -->
 1. Asegúrese de que JRE6 de 32 bits esté instalado en los equipos de los usuarios.
 1. Instale la impresora en los equipos de los usuarios. (Consulte [Instalar la impresora de red PDFG en el equipo de un usuario](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
 
@@ -43,13 +43,13 @@ Se requieren los siguientes pasos para configurar una impresora de red PDFG:
 
 1. En la consola de administración, haga clic en Servicios > PDF Generator > Impresora de red PDFG
 1. En las listas Configuración de Adobe PDF y Configuración de seguridad, seleccione las opciones que desea aplicar al PDF generado. Para obtener detalles sobre esta configuración, consulte [Configuración de Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) y [Configuración de seguridad](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings).
-1. Para devolver los PDF convertidos a los usuarios, seleccione la opción Enviar correo electrónico al archivo del PDF convertido de nuevo al usuario y especifique la siguiente información:
+1. Para devolver los PDF convertidos a los usuarios, seleccione la opción Enviar por correo electrónico el archivo PDF convertido de nuevo al usuario y especifique la siguiente información:
 
-   * La dirección de correo electrónico que se utilizará para enviar PDF a los usuarios
+   * La dirección de correo electrónico que se utilizará para enviar archivos PDF a los usuarios
    * Asunto del mensaje de correo electrónico
    * El encabezado, el cuerpo y el pie de página del mensaje de correo electrónico. En el mensaje de correo electrónico, &lt;receiverName> se reemplaza por el nombre completo del usuario que imprimió el documento.
 
-1. Para enviar a los PDF AEM convertidos a un servicio o proceso de formularios de, seleccione la opción Reenviar el PDF AEM convertido al servicio o proceso de formularios especificado de la opción y especifique la siguiente información:
+1. Para enviar los PDF convertidos a un servicio o proceso de formularios de AEM, seleccione la opción Reenviar el PDF convertido al servicio o proceso de formularios de AEM especificado y especifique la siguiente información:
 
    * Nombre del servicio que se va a invocar
    * Nombre de la operación del servicio que se va a invocar

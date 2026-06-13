@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 82%
+source-wordcount: '2096'
+ht-degree: 80%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 82%
 
 La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes tipos son compatibles de forma predeterminada. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
 
-* Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2, RDBMS de Oracle, postgreSQL y Sybase
+* Bases de datos relacionales: MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS, postgreSQL y Sybase
 * Perfil de usuario de AEM
 * Servicios web RESTful
 * Servicios web basados en SOAP
@@ -54,7 +54,7 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
    >Asegúrese de cifrar información confidencial como contraseñas antes de configurar la fuente de datos. Para cifrarla, haga lo siguiente:
    >
    > 1. Vaya a https://&#39;[server]:[port]&#39;/system/console/crypto.
-   > 1. En el campo **[!UICONTROL Texto sin formato]**, especifique la contraseña o cualquier cadena que desee cifrar y seleccione **[!UICONTROL Protect]**.
+   > 1. En el campo **[!UICONTROL Texto sin formato]**, especifique la contraseña o cualquier cadena que desee cifrar y seleccione **[!UICONTROL Proteger]**.
    >
    >El texto cifrado aparece en el campo Texto protegido que puede especificar en la configuración.
 
@@ -125,7 +125,7 @@ Haga lo siguiente para configurar los servicios RESTful:
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](../../forms/using/configure-data-sources.md#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** en la lista desplegable **[!UICONTROL Tipo de servicio]**; opcionalmente puede examinar y seleccionar una imagen de miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL asistente Crear configuración de origen de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio RESTful]** en la lista desplegable **[!UICONTROL Tipo de servicio]**; opcionalmente puede examinar y seleccionar una imagen de miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
 1. Especifique los siguientes detalles para el servicio RESTful:
 
    * Seleccione la URL o el archivo en la lista desplegable Fuente Swagger y especifique la URL Swagger al archivo de definición Swagger o cargue el archivo Swagger de su sistema de archivos local.
@@ -144,16 +144,16 @@ Haga lo siguiente para configurar los servicios RESTful:
 
 1. Seleccione **[!UICONTROL Crear]** para crear la configuración de nube para el servicio RESTful.
 
-### Configuración del cliente HTTP del modelo de datos del formulario para optimizar el rendimiento {#fdm-http-client-configuration}
+### Configuración del cliente HTTP del modelo de datos de formulario para optimizar el rendimiento {#fdm-http-client-configuration}
 
-Modelo de datos del formulario [!DNL Experience Manager Forms] al integrarse con los servicios web RESTful, ya que la fuente de datos incluye configuraciones de cliente HTTP para la optimización del rendimiento.
+[!DNL Experience Manager Forms] forma el modelo de datos al integrarse con los servicios web RESTful, ya que el origen de datos incluye configuraciones de cliente HTTP para la optimización del rendimiento.
 Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos de formulario:
 
-1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms] como administrador y vaya a los paquetes de la consola web de [!DNL Experience Manager]. La URL predeterminada es [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Inicie sesión en la instancia de autor de [!DNL Experience Manager Forms] como administrador y vaya a los paquetes de la consola web de [!DNL Experience Manager]. La dirección URL predeterminada es [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
 1. Seleccione **[!UICONTROL Configuración del cliente Http del modelo de datos del formulario para la fuente de datos REST]**.
 
-1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos del formulario para fuente de datos REST: &#x200B;]
+1. En el cuadro de diálogo [!UICONTROL Configuración del cliente Http del modelo de datos de formulario para fuente de datos REST: &#x200B;]
 
    * Especifique el número máximo de conexiones permitidas entre el modelo de datos de formulario y los servicios web RESTful en el campo **[!UICONTROL Límite de conexión en total]**. El valor predeterminado es 20 conexiones.
 
@@ -161,9 +161,9 @@ Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos
 
    * Especifique la duración, durante la cual se mantiene activa una conexión HTTP persistente, en el campo **[!UICONTROL Mantener activa]**. El valor predeterminado es 15 segundos.
 
-   * Especifique la duración durante la que el servidor [!DNL Experience Manager Forms] espera a que se establezca una conexión, en el campo **[!UICONTROL Suspensión de la conexión]**. El valor predeterminado es 10 segundos.
+   * Especifique la duración durante la que el servidor [!DNL Experience Manager Forms] espera a que se establezca una conexión, en el campo **[!UICONTROL Tiempo de espera de conexión]**. El valor predeterminado es 10 segundos.
 
-   * Especifique el período de tiempo máximo de inactividad entre dos paquetes de datos en el campo **[!UICONTROL Suspensión de la toma]**. El valor predeterminado es 30 segundos.
+   * Especifique el período de tiempo máximo de inactividad entre dos paquetes de datos en el campo **[!UICONTROL Tiempo de espera de la toma]**. El valor predeterminado es 30 segundos.
 
 ## Configurar servicios web SOAP {#configure-soap-web-services}
 
@@ -178,10 +178,10 @@ Los servicios web basados en SOAP se describen utilizando [Especificaciones del 
 
    * URL de WSDL para el servicio web.
    * Punto final de servicio. Especifique un valor en este campo para anular el punto final de servicio mencionado en WSDL.
-   * SOAP Seleccione el tipo de autenticación (ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica, Autenticación personalizada, Token X509 o Autenticación mutua) para acceder al servicio de autenticación y facilitar los detalles correspondientes para la autenticación.
+   * Seleccione el tipo de autenticación (ninguna, OAuth2.0([Código de autorización](https://oauth.net/2/grant-types/authorization-code/), [Credenciales del cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticación básica, Autenticación personalizada, Token X509 o Autenticación mutua) para acceder al servicio SOAP y facilitar los detalles correspondientes para la autenticación.
 
      Si selecciona **[!UICONTROL Token X509]** como tipo de autenticación, configure el certificado X509. Para obtener más información, consulte [Configurar certificados](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
-Especifique el alias de KeyStore para el certificado X509 en el campo **[!UICONTROL Alias de la clave]**. Especifique el tiempo, en segundos, durante los que la solicitud de autenticación será válida en el campo **[!UICONTROL Tiempo de vida]**. De forma opcional, seleccione para firmar el cuerpo del mensaje, el encabezado de la marca de tiempo o ambos.
+Especifique el alias de KeyStore para el certificado X509 en el campo **[!UICONTROL Alias de clave]**. Especifique el tiempo, en segundos, hasta que la solicitud de autenticación sea válida, en el campo **[!UICONTROL Tiempo de vida]**. De forma opcional, seleccione para firmar el cuerpo del mensaje, el encabezado de la marca de tiempo o ambos.
 
      Si selecciona **[!UICONTROL Autenticación mutua]** como tipo de autenticación, consulte [Autenticación mutua basada en certificados para servicios web RESTful y SOAP](#mutual-authentication).
 
@@ -194,13 +194,13 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 >[!NOTE]
 >
 >El modelo de datos de formulario admite [OData versión 4](https://www.odata.org/documentation/).
->Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics 365, en línea o local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Para obtener una guía paso a paso sobre cómo configurar Microsoft Dynamics 365, en línea o de forma local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Seleccione para elegir la carpeta en la que desea crear una configuración de nube.
 
    Consulte [Configurar carpetas para configuraciones de servicios en la nube](../../forms/using/configure-data-sources.md#cloud-folder) para obtener información sobre la creación y configuración de una carpeta para configuraciones de servicios en la nube.
 
-1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio OData]** en la lista desplegable **[!UICONTROL Tipo de servicio]**. También puede examinar y seleccionar una imagen en miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
+1. Seleccione **[!UICONTROL Crear]** para abrir el **[!UICONTROL Asistente de configuración para crear fuentes de datos]**. Especifique un nombre y, opcionalmente, un título para la configuración, seleccione **[!UICONTROL Servicio OData]** en la lista desplegable **[!UICONTROL Tipo de servicio]**. También puede examinar y seleccionar una imagen en miniatura para la configuración y seleccionar **[!UICONTROL Siguiente]**.
 1. Especifique los siguientes detalles para el servicio OData:
 
    * URL raíz del servicio para configurar el servicio OData.
@@ -214,7 +214,7 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
 ## Autenticación mutua basada en certificados para servicios web RESTful y SOAP {#mutual-authentication}
 
-AEM Cuando se habilita la autenticación mutua para el modelo de datos de formulario, tanto la fuente de datos como el servidor de datos que ejecuta el modelo de datos de formulario se autentican entre sí antes de compartir cualquier dato. Puede utilizar la autenticación mutua para conexiones basadas en REST y SOAP (fuentes de datos). Para configurar la autenticación mutua para un modelo de datos de formulario en su entorno de AEM Forms haga lo siguiente:
+Cuando se habilita la autenticación mutua para el modelo de datos de formulario, tanto la fuente de datos como el servidor de AEM que ejecuta el modelo de datos de formulario se autentican entre sí antes de compartir cualquier dato. Puede utilizar la autenticación mutua para conexiones basadas en REST y SOAP (fuentes de datos). Para configurar la autenticación mutua para un modelo de datos de formulario en su entorno de AEM Forms haga lo siguiente:
 
 1. Cargue la clave privada (certificado) en el servidor [!DNL AEM Forms]. Para cargar la clave privada haga lo siguiente:
    1. Inicie sesión en su servidor [!DNL AEM Forms] como administrador.

@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 85%
+source-wordcount: '1415'
+ht-degree: 77%
 
 ---
 
@@ -61,7 +61,7 @@ AEM [!DNL Forms] proporciona muchos componentes para mostrar información en un 
 
    Puede seleccionar Obtener archivo para descargar el logotipo utilizado en este artículo si no lo tiene.
 
-[Obtener archivo](assets/logo.png)
+   [Obtener archivo](assets/logo.png)
 
 1. Arrastre el componente **[!UICONTROL Pie de página]** desde ![treeexpandall](assets/treeexpandall.png) hasta el formulario adaptable. En esta fase, el formulario tendrá el siguiente aspecto:
 
@@ -71,8 +71,8 @@ AEM [!DNL Forms] proporciona muchos componentes para mostrar información en un 
 
 Los componentes son componentes básicos de un formulario adaptable. AEM [!DNL Forms] proporciona muchos componentes para capturar y mostrar información en un formulario adaptable. Puede arrastrar los componentes desde ![treeexpandall](assets/treeexpandall.png) hasta un formulario. Para obtener más información sobre los componentes disponibles y las funcionalidades correspondientes, consulte [Introducción a la creación de formularios adaptables](/help/forms/using/introduction-forms-authoring.md).
 
-1. Arrastre el **[!UICONTROL Componente Cuadro numérico]** hasta el formulario adaptable. Colóquelo antes del componente Pie de página. Abra las propiedades del componente, cambie el **[!UICONTROL Título]** del componente a **`Customer ID`**, cambie el **[!UICONTROL Nombre del elemento]** a **`customer_ID`**, habilite la opción **[!UICONTROL Campo requerido]**, habilite la opción **[!UICONTROL Usar tipo de entrada de número de HTML 5]** y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Arrastre tres componentes Cuadro de texto hasta el formulario adaptable. Colóquelos antes del componente Pie de página. Defina las siguientes propiedades para estos cuadros de texto.:
+1. Arrastre el **[!UICONTROL Componente Cuadro numérico]** hasta el formulario adaptable. Colóquelo antes del componente Pie de página. Abra las propiedades del componente, cambie el **[!UICONTROL Título]** del componente a **`Customer ID`**, cambie el **[!UICONTROL Nombre del elemento]** a **`customer_ID`**, habilite la opción **[!UICONTROL Campo requerido]**, habilite la opción **[!UICONTROL Usar tipo de entrada de número HTML5]** y seleccione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Arrastre tres componentes Cuadro de texto hasta el formulario adaptable. Colóquelos antes del componente Pie de página. Establezca las siguientes propiedades para estos cuadros de texto:
 
    <table> 
     <tbody> 

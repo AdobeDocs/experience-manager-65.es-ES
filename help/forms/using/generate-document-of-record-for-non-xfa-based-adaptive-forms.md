@@ -1,6 +1,6 @@
 ---
 title: Generar documento de registro para formularios adaptables
-description: Explains how you can generate document of record (DoR) for adaptive forms.
+description: Explica cómo se puede generar el documento de registro (DoR) para formularios adaptables.
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '4370'
-ht-degree: 85%
+source-wordcount: '4312'
+ht-degree: 84%
 
 ---
 
-# Generate Document of Record for adaptive forms or adaptive form fragments {#generate-document-of-record-for-adaptive-forms}
+# Generar documento de registro para formularios adaptables o fragmentos de formularios adaptables {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
@@ -30,11 +30,11 @@ ht-degree: 85%
 
 Después de enviar un formulario, normalmente los clientes desean guardar un registro —impreso o en formato de documento— de la información que han rellenado en el formulario para utilizarlo como referencia en el futuro. Este registro se denomina documento de registro.
 
-This article explains how you can generate a document of record for Adaptive Forms or Adaptive Form fragment.
+Este artículo explica cómo generar un documento de registro para un Forms adaptable o un fragmento de formulario adaptable.
 
 >[!NOTE]
 >
-> The support to customize your Adaptive Form fragments and its fields in Adaptive Form editor was introduced with AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> La compatibilidad para personalizar los fragmentos de formulario adaptable y sus campos en el editor de formularios adaptables se introdujo con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 
 >[!NOTE]
@@ -45,17 +45,17 @@ This article explains how you can generate a document of record for Adaptive For
 
 Al crear un formulario adaptable, puede seleccionar un modelo de formulario. Las opciones son las siguientes:
 
-* [Form Templates](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
-Lets you select an XFA template for your adaptive form. Al seleccionar una plantilla XFA, puede utilizar el archivo XDP asociado para el documento de registro como se ha descrito anteriormente.
+* [Plantillas de formulario](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
+Permite seleccionar una plantilla XFA para el formulario adaptable. Al seleccionar una plantilla XFA, puede utilizar el archivo XDP asociado para el documento de registro como se ha descrito anteriormente.
 
-* [XML Schema](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
-Lets you select an XML schema definition for your adaptive form. Al seleccionar un esquema XML para el formulario adaptable, puede:
+* Esquema XML [&#128279;](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
+Permite seleccionar una definición de esquema XML para el formulario adaptable. Al seleccionar un esquema XML para el formulario adaptable, puede:
 
    * Asociar una plantilla XFA al documento de registro. Asegúrese de que la plantilla XFA asociada utiliza el mismo esquema XML que el formulario adaptable
    * Generar automáticamente un documento de registro
 
 * Ninguna
-Lets you create an adaptive form without a form model. El documento de registro se genera automáticamente para el formulario adaptable.
+Permite crear un formulario adaptable sin un modelo de formulario. El documento de registro se genera automáticamente para el formulario adaptable.
 
 Cuando seleccione un modelo de formulario, configure el documento de registro mediante las opciones disponibles en Configuración de la plantilla de un documento de registro. [Configuración de la plantilla de un documento de registro.](#document-of-record-template-configuration)
 
@@ -77,7 +77,7 @@ Para generar el documento de registro de un formularios adaptable, son necesario
 
 **Formulario adaptable**: el formulario adaptable para el que se desea generar un documento de registro.
 
-**Adaptive form fragment** Adaptive form fragment for which you want to generate a document of record.
+**Fragmento de formulario adaptable**: fragmento de formulario adaptable para el que desea generar un documento de registro.
 
 **Plantilla base (recomendada)**: la plantilla XFA (archivo XDP) creada en AEM Designer. La plantilla base se utiliza para especificar la información de estilo y de personalización de marca de la plantilla del documento de registro.
 
@@ -222,9 +222,9 @@ Los componentes de las tablas de formularios adaptables, como el encabezado, el 
 
 ## Plantilla base de un documento de registro {#base-template-of-a-document-of-record}
 
-La plantilla base proporciona al documento de registro información relativa al estilo y la apariencia. It lets you customize default appearance of auto generated document of record. Por ejemplo, puede utilizar la plantilla base para agregar el logotipo de su compañía en el encabezado y la información de copyright en el pie de página del documento de registro. La página maestra de la plantilla base se utiliza como página maestra de la plantilla del documento de registro. La página maestra puede incluir información como el encabezado de página, el pie de página y el número de página que puede aplicar al documento de registro. Puede aplicar dicha información al documento de registro mediante la plantilla base para generar automáticamente el documento de registro. El uso de una plantilla base permite cambiar las propiedades predeterminadas de los campos.
+La plantilla base proporciona al documento de registro información relativa al estilo y la apariencia. Permite personalizar el aspecto predeterminado del documento de registro generado automáticamente. Por ejemplo, puede utilizar la plantilla base para agregar el logotipo de su compañía en el encabezado y la información de copyright en el pie de página del documento de registro. La página maestra de la plantilla base se utiliza como página maestra de la plantilla del documento de registro. La página maestra puede incluir información como el encabezado de página, el pie de página y el número de página que puede aplicar al documento de registro. Puede aplicar dicha información al documento de registro mediante la plantilla base para generar automáticamente el documento de registro. El uso de una plantilla base permite cambiar las propiedades predeterminadas de los campos.
 
-Be sure you follow [Base template conventions](#base-template-conventions) when you design base template.
+Asegúrese de seguir [convenciones de plantilla base](#base-template-conventions) al diseñar la plantilla base.
 
 ## Convenciones de plantilla base {#base-template-conventions}
 
@@ -240,7 +240,7 @@ Se utiliza una plantilla base para definir el encabezado, el pie de página, el 
 
 **Convenciones de estilo para campos**
 
-* To apply style on the fields in the document of record, the base template provides fields in the `AF_FIELDSSUBFORM` subfrom under the `AF_METATEMPLATE` root subform.
+* Para aplicar estilo en los campos del documento de registro, la plantilla base proporciona campos en el subformulario `AF_FIELDSSUBFORM` bajo el subformulario raíz `AF_METATEMPLATE`.
 
 * Las propiedades de estos campos se aplican a los campos del documento de registro. Estos campos deben seguir la convención de nomenclatura de `AF_<name of field in all caps>_XFO`. Por ejemplo, el nombre de campo de la casilla de verificación debe ser `AF_CHECKBOX_XFO`.
 
@@ -276,16 +276,16 @@ Siga los siguientes pasos para configurar un documento de registro para formular
 
 1. En la instancia de autor de AEM, haga clic en **Forms > Formularios y documentos.**
 1. Seleccione un formulario y haga clic en **Ver propiedades**.
-1. En la ventana Propiedades, seleccione **Modelo de formulario**.
+1. En la ventana Propiedades, seleccione **Modelo de formulario**.
 También puede seleccionar un modelo de formulario al crear un formulario.
 
    >[!NOTE]
    >
    >En la pestaña Modelo de formulario, asegúrese de seleccionar **Esquema** o **Ninguno** en la lista desplegable **Seleccionar de**. **[!UICONTROL El documento de registro no es compatible con los formularios adaptables o basados en XFA con una plantilla de formulario como modelo de formulario.]**
 
-1. In the Document of Record Template Configuration section of the Form Model tab, select one of the following options:
+1. En la sección Configuración de plantilla de documento de registro de la pestaña Modelo de formulario, seleccione una de las siguientes opciones:
 
-   **None** Select this option if you do not want to configure document of record for the form.
+   **Ninguno** Seleccione esta opción si no desea configurar el documento de registro del formulario.
 
    **Asociar plantilla de formulario como plantilla de documento de registro**: seleccione esta opción si tiene un archivo XDP que desea utilizar como plantilla para el documento de registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo apropiado.
 
@@ -312,7 +312,7 @@ Al generar un documento de registro, puede cambiar la información de marca del 
 
 Para localizar la información de marca indicada en la pestaña Documento de registro, asegúrese de que ha establecido correctamente la configuración regional del explorador. Para personalizar la información de marca del documento de registro, siga estos pasos:
 
-1. Select a panel (root panel) in the document of record and then select ![configure](assets/configure.png).
+1. Seleccione un panel (panel raíz) en el documento de registro y luego seleccione ![configurar](assets/configure.png).
 1. Seleccione ![dortab](/help/forms/using/assets/dortab.png). Aparecerá la pestaña Documento de registro.
 1. Seleccione la plantilla predeterminada o una plantilla personalizada para procesar el documento de registro. Si selecciona la plantilla predeterminada, aparece una vista previa en miniatura del documento de registro debajo de la lista desplegable Plantilla.
 
@@ -320,9 +320,9 @@ Para localizar la información de marca indicada en la pestaña Documento de reg
 
    Si elige una plantilla personalizada, busque y seleccione un XDP en el servidor de AEM Forms. Si desea utilizar una plantilla que no esté ya en el servidor de AEM Forms, primero debe cargar el XDP en el servidor.
 
-### Master Page Properties (#master-page-properties)
+### Propiedades de la página maestra (#master-page-properties)
 
-Based on whether you select a default or a custom template, some or all the following Master Page Properties appear in the Document Of Record tab as shown in the image above. Especifíquelas correctamente:
+En función de si selecciona una plantilla predeterminada o personalizada, algunas o todas las siguientes propiedades de página maestra aparecen en la pestaña Documento de registro, como se muestra en la imagen anterior. Especifíquelas correctamente:
 
 * **Imagen del logotipo**: puede elegir usar la imagen del logotipo en el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
 * **Título del formulario**
@@ -363,7 +363,7 @@ Based on whether you select a default or a custom template, some or all the foll
   </proto>
   ```
 
-1. To save the branding changes, select Done.
+1. Para guardar los cambios de personalización de marca, seleccione Listo.
 
 ## Diseños de tablas y columnas para paneles del documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -400,7 +400,7 @@ La configuración de del documento de registro de cada componente está disponib
    * **[!UICONTROL Posición]** > **[!UICONTROL En la página]** > Nombre de la página maestra: coloca el panel en la página especificada. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
    * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior de la siguiente página]**: coloca el panel en la parte superior de la siguiente página. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
    * **[!UICONTROL Posición]** > **[!UICONTROL Parte superior de la página]** > Nombre de la página maestra: coloca el panel en la parte superior de la página cuando se representa la página especificada. Si no se inserta automáticamente un salto de página, [!DNL AEM Forms] añade uno.
-* **[!UICONTROL Pagination]** > **[!UICONTROL After]**: Determines which area to fill after a panel is placed.The following fields are available in the **[!UICONTROL After]** section:
+* **[!UICONTROL Paginación]** > **[!UICONTROL Después]**: determina qué área se rellenará después de colocar un panel.Los campos siguientes están disponibles en la sección **[!UICONTROL Después]**:
    * **[!UICONTROL Después]** > **[!UICONTROL Continuar relleno principal]**: continúa combinando los datos de todos los objetos que quedan por rellenar en el panel principal.
    * **[!UICONTROL Después]** > **[!UICONTROL Ir a la siguiente área de contenido]**: comienza a rellenar la siguiente área de contenido después de colocar el panel.
    * **[!UICONTROL Después]** > **[!UICONTROL Ir al área de contenido]** > Nombre del área de contenido: comienza a rellenar el área de contenido especificada después de colocar el panel.
@@ -413,15 +413,15 @@ La configuración de del documento de registro de cada componente está disponib
 
   >[!NOTE]
   >
-  > Pagination property is not available for adaptive form fragments.
+  > La propiedad Paginación no está disponible para fragmentos de formulario adaptables.
 
 Para obtener información sobre cómo aplicar saltos de página y aplicar varias páginas maestras en un documento de registro, consulte [Aplicar un salto de página en un documento de registro](#apply-page-breaks-in-dor) y [Aplicar varias páginas maestras a un documento de registro](#apply-multiple-master-pages-dor).
 
 **Configuración del nivel de formulario**
 
-* **[!UICONTROL BASIC]**
-   * **Template:** You can select the template Default or Custom.
-     ![alt text](image.png)
+* **[!UICONTROL BÁSICO]**
+   * **Plantilla:** Puede seleccionar la plantilla Predeterminada o Personalizada.
+     ![texto alternativo](image.png)
    * **Color de énfasis:** Puede predefinir el color de plantilla del [!UICONTROL documento de registro].
    * **Familia de fuentes:** Seleccione el tipo de fuente para los textos de [!UICONTROL Documento de registro].
    * **Incluir campos no enlazados en el documento de registro:** Al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en esquema en [!UICONTROL Documento de registro]. De forma predeterminada, es True.
@@ -434,7 +434,7 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
       * Horizontal
       * Igual que el formulario adaptable
      >[!NOTE]
-     > La alineación vertical y horizontal solo es aplicable para     Botón de opción y casilla de verificación
+     > La alineación vertical u horizontal sólo es aplicable a los botones de opción y a las casillas de verificación
 * **[!UICONTROL PROPIEDADES DE PÁGINA MAESTRA]** Haga clic para obtener más información sobre [propiedades de página maestra](#master-page-properties-master-page-properties)
 
 ## Aplicar un salto de página en un documento de registro {#apply-page-breaks-in-dor}
@@ -466,11 +466,11 @@ Para aplicar las propiedades de la segunda página maestra a un panel y las prop
 1. Seleccione el panel al que aplicar la segunda página maestra y seleccione ![Configurar](assets/cmppr.png).
 1. En la sección **[!UICONTROL Paginación]**, seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Lugar]**.
 1. Seleccione **[!UICONTROL En la página]**, seleccione la segunda página maestra y seleccione **[!UICONTROL Seleccionar]**.
-AEM Forms aplica la segunda página maestra al panel y a todos los paneles posteriores del formulario adaptable.
+AEM Forms aplica la segunda página maestra al panel y a todos los paneles posteriores del formulario adaptable.
 1. En la sección **[!UICONTROL Paginación]**, seleccione ![Carpeta](/help/forms/using/assets/folder-icon.png) en el campo **[!UICONTROL Después]**.
 1. Seleccione **[!UICONTROL Ir a la página]**, seleccione la tercera página maestra y seleccione **[!UICONTROL Seleccionar]**.
-1. Seleccione ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
-AEM Forms aplica la tercera página maestra al panel y a todos los paneles posteriores del formulario adaptable.
+1. Seleccione ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
+AEM Forms aplica la tercera página maestra al panel y a todos los paneles posteriores del formulario adaptable.
 
 >[!NOTE]
 >

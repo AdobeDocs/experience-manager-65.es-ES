@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3206'
-ht-degree: 92%
+source-wordcount: '3155'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 92%
 
 Los formularios adaptables permiten crear formularios atractivos, interactivos, dinámicos y adaptables. AEM Forms proporciona una interfaz de usuario intuitiva y componentes predeterminados para crear y trabajar con formularios adaptables. Puede elegir crear un formulario adaptable en base a un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente un modelo del formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y recursos de infraestructura existentes. Puede elegir entre las siguientes opciones para crear un formulario adaptable:
 
-* **Uso de un modelo de datos de formulario**
+* **Uso del modelo de datos de formulario**
   La [integración de datos](../../forms/using/data-integration.md) permite integrar entidades y servicios de diferentes fuentes de datos en un modelo de datos de formulario que puede utilizar para crear formularios adaptables. Elija un modelo de datos de formulario si el formulario adaptable que está creando implica recuperar y escribir datos desde y hacia varias fuentes de datos.
 
 * **Usar una plantilla de formulario XDP**
@@ -90,7 +90,7 @@ Muestra la jerarquía de objetos del formulario. El autor puede desplazarse a un
 
    * **Objetos del modelo de datos**
 Permite ver la jerarquía del modelo del formulario.
-Permite arrastrar y soltar elementos del modelo del formulario en el formulario adaptable. Los elementos agregados se convierten automáticamente en componentes de formulario y conservan sus propiedades originales. Puede ver objetos de modelo de datos cuando el formulario utilice un esquema XML, un esquema JSON o una plantilla XDP.
+Permite arrastrar y soltar elementos del modelo del formulario en el formulario adaptable. Los elementos agregados se convierten automáticamente en componentes de formulario y conservan sus propiedades originales. Puede ver objetos del modelo de datos cuando el formulario utilice un esquema XML, un esquema JSON o una plantilla XDP.
 
 * **Explorador de propiedades**
 
@@ -157,7 +157,7 @@ Permite arrastrar y soltar elementos del modelo del formulario en el formulario 
    <td><p>Agrega un campo para capturar la dirección de correo electrónico. El componente Correo electrónico, de forma predeterminada, valida las direcciones de correo electrónico con la siguiente expresión regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
-   <td>Adjuntar archivos</td>
+   <td>Archivo adjunto</td>
    <td><p>Agrega un botón que permite a los usuarios examinar y adjuntar documentos de apoyo a un formulario. Puede adjuntar varios archivos a un componente Archivo adjunto. También puede especificar el **[!UICONTROL Tamaño máximo de archivo]** y los **[!UICONTROL Tipos de archivo compatibles]** de los archivos adjuntos en el Explorador de propiedades del componente. </p> <p><strong> Nota: </strong><ul> <li> El componente no permite adjuntar archivos con un nombre de archivo que empiece por los caracteres (.), o que contenga los caracteres \ / : * ? " &lt; &gt; | ; % $, o nombres de archivo especiales reservados para el sistema operativo Windows, como nul, prn, con, lpt o com. </li> <li> Para adjuntar varios archivos a un componente Archivo adjunto abierto en el explorador Safari de Apple, seleccione y adjunte los archivos uno a uno. No puede seleccionar y adjuntar varios archivos a la vez.</li> <li>El componente Archivo adjunto es compatible con un conjunto predefinido de formatos de archivo en formularios adaptables habilitados para Adobe Sign. Para obtener más información, consulte <a href="https://helpx.adobe.com/es/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formatos de archivo compatibles</a>. </li></ul></p> </td>
   </tr>
   <tr>

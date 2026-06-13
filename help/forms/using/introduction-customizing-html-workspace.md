@@ -12,7 +12,7 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1790'
 ht-degree: 97%
 
 ---
@@ -202,7 +202,7 @@ Está pensado principalmente para las personalizaciones, ya que permite generar 
       * js:
 
          * libs: contiene todas las bibliotecas de terceros utilizadas en AEM Forms Workspace.
-         * licenses: contiene las licencias para archivos de HTML y JS, y código para prefijar estas licencias en los respectivos archivos de origen.
+         * licenses: contiene las licencias para archivos HTML y JS, y código para prefijar estas licencias en los respectivos archivos de origen.
          * minifier: se utiliza para la combinación, la minificación y la uglificación del código personalizado JavaScript.
          * resourcejs_optimizer: se utiliza para la combinación, la minificación y la uglificación del origen JavaScript.
          * resource_generator: se utiliza para generar register.js y modelcontrollerpath.js.

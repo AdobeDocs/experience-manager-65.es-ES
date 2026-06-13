@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 94%
+source-wordcount: '1192'
+ht-degree: 91%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 94%
 
 ## Información general {#overview}
 
-AEM Forms permite a los desarrolladores de formularios incrustar fácilmente formularios adaptables y comunicaciones interactivas en una aplicación de una sola página (SPA) de AEM Sites. El formulario adaptable y las comunicaciones interactivas incrustados son completamente funcionales y los usuarios pueden rellenarlos y enviarlos sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
+AEM Forms permite a los desarrolladores de formularios incrustar fácilmente formularios adaptables y comunicaciones interactivas en una aplicación de una sola página (SPA) de AEM Sites. El formulario adaptable y la comunicación interactiva incrustados son completamente funcionales y los usuarios pueden rellenarlos y enviarlos sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
 
-En la aplicación de una sola página de AEM Sites, puede agregar un formulario adaptable o una comunicación interactiva mediante el [Componente Contenedor de la SPA de AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es un componente de AEM Forms para la SPA de AEM Sites que puede agregar a su página de Sites.
+En la aplicación de una sola página de AEM Sites, puede agregar un formulario adaptable o una comunicación interactiva mediante el [componente Contenedor de la SPA de AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es un componente de AEM Forms para la SPA de AEM Sites que puede agregar a su página de Sites.
 
 Para obtener información sobre la incrustación de un formulario adaptable en una página de AEM Sites que no sea una SPA, consulte [Incrustar un formulario adaptable o una comunicación interactiva en una página de AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
@@ -36,7 +36,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva en una SP
 * La instancia de autor de AEM
 * [El paquete de complementos de AEM Forms 6.4.2](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) en la instancia de autor
 
-## Instalar el componente Contenedor de la SPA de AEM Forms  {#install-aem-forms-spa-container-component}
+## Instalar el componente Contenedor de la SPA de AEM Forms {#install-aem-forms-spa-container-component}
 
 Ejecute los siguientes pasos para instalar el componente Contenedor de la SPA de AEM Forms:
 
@@ -57,7 +57,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva con el co
 1. Abra la página de AEM Sites, en el modo de edición, en la que desee incrustar un formulario adaptable o comunicación interactiva.
 1. Inserte el **formulario de AEM para la SPA** en la página mediante cualquiera de las siguientes opciones:
 
-   * AEM SPA Seleccione el contenedor de diseño en la página de Sites, seleccione **+** y el formulario **para el componente**.
+   * Seleccione el contenedor de diseño en la página de Sites, seleccione **+** y el componente **AEM Form for SPA**.
 
    * En el panel Explorador de componentes, arrastre y suelte el componente **Formulario de AEM para la SPA** en la página.
    * Busque un formulario adaptable o una comunicación interactiva en el explorador de recursos y arrástrelo y suéltelo en la página de Sites. Incrusta el formulario en un contenedor de componentes de la SPA de AEM Forms.
@@ -66,12 +66,12 @@ Para incrustar un formulario adaptable o una comunicación interactiva con el co
    >
    >No se admite procesar varios componentes del componente Contenedor de la SPA de AEM Forms en una misma página. Puede tener varios Contenedores de la SPA de AEM Forms en una página, pero solo se procesará uno a la vez. Asegúrese de que solo esté visible un componente en la página para evitar discrepancias.
 
-1. Seleccione el componente Contenedor de la cuenta de AEM Forms SPA integrado en la página de Sites y, a continuación, seleccione ![settings_icon](assets/settings_icon.png) en la barra de acciones. Se abrirá el cuadro de diálogo **Editar contenedor de la SPA de AEM Forms**.
+1. Seleccione el componente Contenedor de la SPA de AEM Forms incrustado en la página de Sites y, a continuación, seleccione ![settings_icon](assets/settings_icon.png) en la barra de acciones. Se abrirá el cuadro de diálogo **Editar contenedor de la SPA de AEM Forms**.
 1. En el cuadro de diálogo **Editar contenedor de AEM Forms**, especifique lo siguiente:
 
    * **Tipo de recurso:** seleccione el tipo de recurso que desea incrustar. Las opciones son **Formulario adaptable** y **Comunicación interactiva**
 
-   * **Ruta del recurso**: busque y seleccione el formulario adaptable que desea incrustar. El campo se rellena automáticamente si se inserta un formulario adaptable o una comunicación interactiva mediante el explorador de recursos.
+   * **Ruta del recurso**: busque y seleccione el formulario adaptable o comunicación interactiva que desea incrustar. El campo se rellena automáticamente si se inserta un formulario adaptable o una comunicación interactiva mediante el explorador de recursos.
    * **Canal** (Solo comunicación interactiva): seleccione el tipo de canal interactivo que desea incrustar. Las opciones son **Canal web** y **Canal de impresión**.
 
    * **Temática**: seleccione una temática que defina el estilo de los componentes del formulario adaptable o de la comunicación interactiva. El estilo incluye propiedades de apariencia, como el estilo de fuente, el color de fondo, las dimensiones y la alineación.

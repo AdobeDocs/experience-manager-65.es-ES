@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 67%
+source-wordcount: '912'
+ht-degree: 66%
 
 ---
 
@@ -22,7 +22,7 @@ Este artículo analiza las estrategias y las prácticas recomendadas que puede i
 
 ## Configuración de caché {#cache-settings}
 
-Puede configurar y controlar la estrategia de almacenamiento en caché de AEM Forms mediante el componente **Configuraciones de Forms AEM móvil** en la consola de configuración web de la, en:
+Puede configurar y controlar la estrategia de almacenamiento en caché de AEM Forms mediante el componente **Configuraciones de Forms móvil** en la consola de configuración web de AEM en:
 
 * (AEM Forms en OSGi)`https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms en JEE)`https://'[server]:[port]'/lc/system/console/configMgr`
@@ -43,7 +43,7 @@ Es posible que la configuración de caché predeterminada de AEM Forms no sea l
 
 >[!NOTE]
 >
->Si utiliza AEM Dispatcher para almacenar en caché los formularios adaptables, también almacenará en caché el formulario adaptable que contiene formularios con datos rellenados previamente. AEM Si estos formularios se proporcionan desde la caché de Dispatcher de la, puede provocar que se proporcionen datos rellenados previamente o antiguos a los usuarios. Por lo tanto, utilice AEM Dispatcher para almacenar en caché formularios adaptables que no utilicen datos rellenados previamente. Además, una caché de Dispatcher no invalida automáticamente los fragmentos en caché. Eso significa que no debe utilizarlo para almacenar en caché fragmentos de formulario. Para este tipo de formularios y fragmentos, utilice la [caché de formularios adaptables](../../forms/using/configure-adaptive-forms-cache.md).
+>Si utiliza AEM Dispatcher para almacenar en caché los formularios adaptables, también almacenará en caché el formulario adaptable que contiene formularios con datos rellenados previamente. Si estos formularios se obtienen desde la caché de AEM Dispatcher, puede provocar que se proporcionen datos rellenados previamente o antiguos a los usuarios. Por lo tanto, utilice AEM Dispatcher para almacenar en caché formularios adaptables que no utilicen datos rellenados previamente. Además, una caché de Dispatcher no invalida automáticamente los fragmentos en caché. Eso significa que no debe utilizarlo para almacenar en caché fragmentos de formulario. Para este tipo de formularios y fragmentos, utilice la [caché de formularios adaptables](../../forms/using/configure-adaptive-forms-cache.md).
 
 ## Parámetros de JVM {#jvm-parameters}
 
@@ -92,8 +92,8 @@ Apache puede comunicarse con CRX mediante el protocolo HTTP. El objetivo de las 
    >
    >Para Linux®, el valor predeterminado `APACHE_HOME` es `/etc/httpd/`.
 
-1. Configure el proxy en el puerto 4502 de CRX.
-Añada la siguiente configuración en el archivo de configuración `APACHE_HOME/conf/httpd.conf`.
+1. Configure el proxy en el puerto 4502 de crx.
+Agregue la siguiente configuración en el archivo de configuración `APACHE_HOME/conf/httpd.conf`.
 
    ```shell
    ProxyPass / https://<server>:4502/
@@ -152,7 +152,7 @@ Para mejorar el rendimiento, puede configurar el software antivirus para que exc
 
 * El directorio temporal del servidor de aplicaciones. La ubicación predeterminada es:
 
-   * AEM (JBoss®) [directorio de instalación de]\jboss\standalone\tmp
+   * (JBoss®) [Directorio de instalación de AEM]\jboss\standalone\tmp
    * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (WebSphere®) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 

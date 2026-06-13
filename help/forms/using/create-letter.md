@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3982'
-ht-degree: 89%
+source-wordcount: '4013'
+ht-degree: 88%
 
 ---
 
@@ -159,7 +159,7 @@ Analice cada carta para descubrir las partes que la componen. El especialista en
 
 * Condiciones en las que los usuarios comerciales, como los reguladores de reclamaciones o los trabajadores de casos, modifican el contenido o partes de la carta.
 * Los escenarios son narrativas que describen la experiencia del usuario, los requisitos y las ventajas de utilizar la solución Cartas.
-* Los escenarios también proporcionan: los conjuntos de aptitudes y herramientas que necesita para su proyecto.
+* Los escenarios también proporcionan :The conjuntos de aptitudes y herramientas que necesita para su proyecto.
 * Prácticas recomendadas para planificar la implementación. “Descripción general de la implementación de alto nivel.
 
 ## Ventajas de realizar el análisis {#benefits-of-performing-the-analysis}

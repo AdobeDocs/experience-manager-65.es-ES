@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 60%
+source-wordcount: '1098'
+ht-degree: 55%
 
 ---
 
@@ -48,7 +48,7 @@ La rama `/apps` (estructura de carpetas):
 
 * Garantiza que los archivos estén seguros si hay una actualización del sistema. Si hay una actualización, un paquete de características o una revisión, la rama `/libs` se actualizará y si aloja los cambios en la rama `/libs`, se sobrescribirán.
 * Ayuda a no alterar el sistema o rama actual, que posiblemente pueda desestabilizar por error si utiliza las ubicaciones predeterminadas para almacenar los archivos personalizados.
-* AEM Ayuda a que los recursos obtengan una prioridad mayor cuando se realiza una búsqueda de recursos en la búsqueda de recursos de la. AEM Se ha configurado la configuración para buscar primero la rama `/apps` y, a continuación, la rama `/libs` para encontrar un recurso. Este mecanismo significa que el sistema utiliza la superposición (y las personalizaciones definidas).
+* Ayuda a que los recursos obtengan una prioridad mayor cuando AEM busca recursos. AEM está configurado para buscar primero la rama `/apps` y después la rama `/libs` para encontrar un recurso. Este mecanismo significa que el sistema utiliza la superposición (y las personalizaciones definidas).
 
 Siga estos pasos para crear la estructura de carpetas necesaria en la rama `/apps`:
 
@@ -139,7 +139,7 @@ Siga estos pasos para cargar el archivo de logotipo personalizado en CRX:
 
    Aparecerá el cuadro de diálogo Editar jcr:data.
 
-   A continuación, haga clic en la carpeta newlogo.png, haga doble clic en jcr:content (opción dim) y establezca el tipo nt:resource. Si no está presente, cree una propiedad con el nombre jcr:content.
+   Ahora haga clic en la carpeta newlogo.png, luego haga doble clic en jcr:content (opción dim) y establezca el tipo nt:resource. Si no está presente, cree una propiedad llamada jcr:content.
 
 1. En el cuadro de diálogo Editar jcr:data, haga clic en **Examinar** y seleccione el archivo de imagen que desee utilizar como logotipo (aquí CustomLogo.png).
 

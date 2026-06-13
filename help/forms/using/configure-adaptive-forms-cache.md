@@ -11,20 +11,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 61%
+source-wordcount: '928'
+ht-degree: 58%
 
 ---
 
 # Configurar la caché de los formularios adaptables {#configure-adaptive-forms-cache}
 
-Una caché es un mecanismo para acortar los tiempos de acceso a los datos, reducir la latencia y mejorar las velocidades de entrada y salida (E/S). La memoria caché de los formularios adaptables almacena únicamente el contenido del HTML y la estructura JSON de un formulario adaptable sin guardar los datos rellenados previamente. Esto contribuye a reducir el tiempo necesario para procesar un formulario adaptable en el cliente. Está diseñada específicamente para formularios adaptables.
+Una caché es un mecanismo para acortar los tiempos de acceso a los datos, reducir la latencia y mejorar las velocidades de entrada y salida (E/S). La caché de los formularios adaptables almacena únicamente el contenido de HTML y la estructura JSON de un formulario adaptable sin guardar los datos rellenados previamente. Esto contribuye a reducir el tiempo necesario para procesar un formulario adaptable en el cliente. Está diseñada específicamente para formularios adaptables.
 
 ## Configurar la caché de los formularios adaptables en instancias de autor y publicación {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
 1. Vaya al Administrador de configuración de la consola web de AEM en `https://[server]:[port]/system/console/configMgr`.
 1. Haga clic en **[!UICONTROL Configuración del canal Web de comunicaciones interactivas y formularios adaptables]** para editar sus valores de configuración.
-1. AEM En el cuadro de diálogo [!UICONTROL editar valores de configuración] especifique el número máximo de formularios o documentos que una instancia del servidor [!DNL Forms] de la puede almacenar en caché en el campo **[!UICONTROL Número de Forms adaptables]**. El valor predeterminado es 100.
+1. En el cuadro de diálogo [!UICONTROL editar valores de configuración] especifique el número máximo de formularios o documentos que una instancia del servidor de AEM [!DNL Forms] puede almacenar en caché en el campo **[!UICONTROL Número de Forms adaptables]**. El valor predeterminado es 100.
 
    >[!NOTE]
    >
@@ -53,8 +53,8 @@ También puede configurar el almacenamiento en caché de un formulario adaptable
 * Consideraciones para los formularios adaptables localizados:
    * Utilice el formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar una versión localizada de un formulario adaptable en lugar de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
    * [Deshabilite el uso de la configuración regional del explorador &#x200B;](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)para URL con el formato `http://host:port/content/forms/af/<adaptivefName>.html`.
-   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar explorador local]** está deshabilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma no localizado es el utilizado al desarrollar el formulario adaptable. No se tendrá en cuenta la configuración regional configurada para el explorador (configuración regional del explorador) y se proporcionará una versión no localizada del formulario adaptable.
-   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar explorador local]** está habilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma del formulario adaptable localizado se basará en la configuración local del explorador (explorador local). Puede llevar a [almacenar en caché solo la primera instancia de un formulario adaptable]. Para evitar que este problema se produzca en la instancia, consulte [Solución de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
+   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está deshabilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma no localizado es el utilizado al desarrollar el formulario adaptable. No se tendrá en cuenta la configuración regional configurada para el explorador (configuración regional del explorador) y se proporcionará una versión no localizada del formulario adaptable.
+   * Cuando utiliza el formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` y **[!UICONTROL Usar configuración regional del explorador]** está habilitado en el administrador de configuración, se proporcionará la versión no localizada del formulario adaptable. El idioma del formulario adaptable localizado se basará en la configuración regional del explorador. Puede llevar a [almacenar en caché solo la primera instancia de un formulario adaptable]. Para evitar que este problema se produzca en la instancia, consulte [Solución de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
 
 ### Habilitación del almacenamiento en caché en Dispatcher
 
