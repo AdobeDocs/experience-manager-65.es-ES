@@ -11,8 +11,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 2%
+source-wordcount: '590'
+ht-degree: 4%
 
 ---
 
@@ -78,10 +78,10 @@ El mosaico **Administrar titulares** le permite administrar el contenido de un t
 
 * image
 * **TITLE**: nombre del titular
-* AEM **MODIFICADO**: modificado por última vez en el año de
-* AEM **CARGADO**: subido por última vez desde el servidor de correo de
-* AEM **PUBLICADO**: formulario de solicitud de última publicación
-* **SOURCE AEM**: origen (local o remoto desde Mobile On-Demand):
+* **MODIFICADO**: modificado por última vez en AEM
+* **CARGADO**: cargado por última vez desde AEM
+* **PUBLICADO**: último formulario de solicitud publicado de AEM
+* **SOURCE**: origen (AEM local o remoto desde Mobile On Demand)
 
 La siguiente imagen muestra el mosaico **Administrar titulares** en el panel de aplicaciones de AEM Mobile:
 
@@ -97,10 +97,10 @@ El mosaico **Administrar artículos** le permite administrar el contenido de un 
 
 * image
 * **TITLE**: nombre del artículo
-* AEM **MODIFICADO**: modificado por última vez en el año de
-* AEM **CARGADO**: subido por última vez desde el servidor de correo de
-* AEM **PUBLICADO**: formulario de solicitud de última publicación
-* **SOURCE AEM**: origen (local o remoto de la red de distribución local o de la red de distribución local)
+* **MODIFICADO**: modificado por última vez en AEM
+* **CARGADO**: cargado por última vez desde AEM
+* **PUBLICADO**: último formulario de solicitud publicado de AEM
+* **SOURCE**: origen (AEM local o remoto desde Mobile On-Demand)
 
 La siguiente imagen muestra el mosaico **Administrar artículos** en el panel de aplicaciones de AEM Mobile:
 
@@ -116,10 +116,10 @@ El mosaico **Administrar colecciones** le permite administrar el contenido de un
 
 * image
 * **TITLE**: nombre de la colección
-* AEM **MODIFICADO**: modificado por última vez en el año de
-* AEM **CARGADO**: subido por última vez desde el servidor de correo de
-* AEM **PUBLICADO**: formulario de solicitud de última publicación
-* **SOURCE AEM**: origen (local o remoto de la red de distribución local o de la red de distribución local)
+* **MODIFICADO**: modificado por última vez en AEM
+* **CARGADO**: cargado por última vez desde AEM
+* **PUBLICADO**: último formulario de solicitud publicado de AEM
+* **SOURCE**: origen (AEM local o remoto desde Mobile On-Demand)
 
 La siguiente imagen muestra el mosaico **Administrar colecciones** en el panel de aplicaciones de AEM Mobile:
 
@@ -141,5 +141,5 @@ Una vez que esté familiarizado con el panel de aplicaciones, consulte los sigui
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [AEM Desarrollo de contenido para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Desarrollo del contenido de AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

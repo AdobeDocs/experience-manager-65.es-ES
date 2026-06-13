@@ -11,7 +11,7 @@ feature: Compliance
 role: Admin,Developer,Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3699'
+source-wordcount: '3750'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Esta página proporciona más información sobre los detalles que amplían o com
 
 ### Funciones en AEM {#features-within-aem}
 
-Al implementar AEM (sobre todo por primera vez), revise las [capacidades y flujos de trabajo de AEM](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es) para asegurarse de qué áreas quiere o necesita.
+Al implementar AEM (sobre todo por primera vez), revise las [capacidades y flujos de trabajo de AEM](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es) para asegurarse de qué áreas quiere o necesita.
 
 Tenga en cuenta las funciones de AEM que está utilizando y el impacto en el diseño; por ejemplo:
 
@@ -579,6 +579,6 @@ Adobe proporciona más prácticas recomendadas para todas las fases y públicos:
 
 * [Implementación](/help/sites-deploying/best-practices.md)
 * [Creación](/help/sites-authoring/best-practices.md)
-* [Administración ](/help/sites-administering/administer-best-practices.md)
+* [Administración](/help/sites-administering/administer-best-practices.md)
 * [Desarrollo](/help/sites-developing/best-practices.md)
 * [Administración de proyectos](/help/managing/best-practices.md)

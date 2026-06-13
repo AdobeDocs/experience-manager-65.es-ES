@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2654'
-ht-degree: 0%
+source-wordcount: '2617'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-AEM El proceso de desarrollo de aplicaciones móviles reconoce que los usuarios con diferentes conocimientos contribuyen al desarrollo de aplicaciones móviles. El siguiente mapa del proceso ilustra el orden general en el que los autores de contenido y los desarrolladores de aplicaciones realizan las tareas.
+El proceso de desarrollo de aplicaciones móviles de AEM reconoce que los usuarios con diferentes conocimientos contribuyen al desarrollo de aplicaciones móviles. El siguiente mapa del proceso ilustra el orden general en el que los autores de contenido y los desarrolladores de aplicaciones realizan las tareas.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -36,7 +36,7 @@ AEM Mobile proporciona el modelo de aplicación de PhoneGap para la creación de
 
 ### La raíz de una aplicación de PhoneGap {#the-root-of-a-phonegap-app}
 
-AEM La página raíz de las aplicaciones móviles que cree en aparece en la consola Aplicaciones.
+La página raíz de las aplicaciones móviles que cree en AEM aparecerá en la consola Aplicaciones.
 
 La página raíz se almacena debajo de la propiedad Ruta de destino de la aplicación especificada al crear la aplicación (la ruta predeterminada es /content/phonegap/apps). El nombre de página es la propiedad Name de la aplicación. Por ejemplo, la dirección URL predeterminada de la página raíz del sitio denominado `myphonegapapp` es `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
@@ -72,16 +72,16 @@ Las aplicaciones móviles se basan en un modelo que define una estructura de pá
 * **Descripción:** Una descripción de la aplicación.
 * **URL del servidor:** URL que proporciona actualizaciones de contenido de transmisión (OTA) a la aplicación. El valor predeterminado es la URL del servidor de publicación de la instancia que se utiliza para crear una aplicación (tomada del servicio externalizador). Tenga en cuenta que debe ser una instancia del servidor de publicación en lugar de un autor, lo que requiere autenticación.
 
-También puede proporcionar un archivo de imagen para utilizarlo como miniatura de la aplicación, seleccionar la configuración de PhoneGap Build que desea utilizar y seleccionar la configuración de análisis de aplicaciones móviles que desea utilizar. Esta imagen solo se utiliza como miniatura para representar la aplicación móvil dentro de la consola de aplicaciones móviles en Experience Manager.
+También puede proporcionar un archivo de imagen para utilizarlo como miniatura de la aplicación, seleccionar la configuración de PhoneGap Build que se va a utilizar y seleccionar la configuración de análisis de aplicaciones móviles que se va a utilizar. Esta imagen solo se utiliza como miniatura para representar la aplicación móvil dentro de la consola de aplicaciones móviles en Experience Manager.
 
 Existen pestañas adicionales (y opcionales) para crear un servicio en la nube e integrar el complemento SDK de Adobe Mobile Services en su aplicación.
 
 * Generar: Haga clic en Administrar configuraciones y configure el servicio de compilación de build.phonegap.com aquí. A continuación, en la lista desplegable, podrá seleccionar el servicio en la nube de PhoneGap Build recién creado.
-* Analytics: haz clic en Administrar configuraciones y configura tu servicio en la nube de [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=es). A continuación, en la lista desplegable, podrá seleccionar el Mobile Service recién creado para integrarlo en su aplicación móvil.
+* Analytics: haz clic en Administrar configuraciones y configura tu servicio en la nube de [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). A continuación, en la lista desplegable, podrá seleccionar el Mobile Service recién creado para integrarlo en su aplicación móvil.
 
 >[!NOTE]
 >
->AEM Los desarrolladores pueden utilizar el Starter Kit de PhoneGap de la aplicación de la aplicación para crear aplicaciones y añadirlas a la consola.
+>Los desarrolladores pueden utilizar el Starter Kit de PhoneGap de AEM para crear aplicaciones y añadirlas a la consola.
 
 El siguiente procedimiento utiliza la interfaz de usuario táctil para crear una aplicación móvil.
 
@@ -91,11 +91,11 @@ El siguiente procedimiento utiliza la interfaz de usuario táctil para crear una
    ![Icono Crear indicado por un signo más dentro de un cuadrado.](do-not-localize/chlimage_1-7.png)
 
 1. (Opcional) En la pestaña Avanzado, proporcione una descripción para la aplicación y cambie la dirección URL del servidor si es necesario.
-1. (Opcional) Si utiliza PhoneGap Build para compilar la aplicación, en la pestaña Generar, seleccione la Configuración que desea utilizar.
+1. (Opcional) Si utiliza PhoneGap Build para compilar la aplicación, en la ficha Generar, seleccione la configuración que desea utilizar.
 
    Para crear una configuración de PhoneGap Build, haga clic en Administrar configuraciones.
 
-1. (Opcional) Si utiliza el SiteCatalyst para rastrear la actividad de la aplicación, en la pestaña Analytics, seleccione la configuración que desea utilizar.
+1. (Opcional) Si utiliza SiteCatalyst para rastrear la actividad de la aplicación, en la pestaña Analytics, seleccione la configuración que desea utilizar.
 
    Para crear una configuración de aplicación móvil, haga clic en Administrar configuraciones.
 
@@ -124,7 +124,7 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 #### Configurar una variación de idioma de la aplicación {#configure-a-language-variation-of-the-application}
 
 1. En el carril, haga clic en Aplicaciones.
-1. Haga clic para explorar en profundidad la aplicación móvil que desea editar en el Admin Console de aplicaciones. Seleccione la versión de idioma de la aplicación que desea configurar y haga clic en el icono Ver propiedades de la aplicación.
+1. Haga clic para explorar en profundidad la aplicación móvil que desea editar en la Admin Console de aplicaciones. Seleccione la versión de idioma de la aplicación que desea configurar y haga clic en el icono Ver propiedades de la aplicación.
 
    ![Icono Ver propiedades de la aplicación indicado por la letra I dentro de un círculo.](do-not-localize/chlimage_1-11.png)
 
@@ -146,7 +146,7 @@ Después de crear la aplicación móvil, agregue el contenido que se utiliza com
 
 ### Mover contenido a aplicaciones móviles {#moving-content-to-mobile-applications}
 
-AEM La caché de sincronización de contenido de la instancia de publicación de la se utiliza como repositorio de contenido para aplicaciones móviles:
+La caché de sincronización de contenido de la instancia de publicación de AEM se utiliza como repositorio de contenido para aplicaciones móviles:
 
 * El contenido de la caché de sincronización de contenido se incluye en la aplicación cuando los desarrolladores la compilan.
 * El contenido de la caché está disponible para las aplicaciones móviles instaladas para actualizar el contenido de la aplicación.
@@ -168,18 +168,18 @@ Realice el siguiente procedimiento en la instancia en la que desea actualizar la
 
 ### Uso de plantillas de aplicación {#using-app-templates}
 
-AEM Esta es una función que está disponible con el paquete de funciones 2 de Apps 6.1 y proporciona una manera fácil de usar las plantillas de aplicación existentes para la creación de nuevas aplicaciones dentro de la aplicación de.
+Esta es una función que está disponible con el paquete de funciones 2 de Apps 6.1 y proporciona una manera sencilla de usar las plantillas de aplicación existentes para la creación de nuevas aplicaciones dentro de AEM.
 
 ¿Qué es una plantilla de aplicación? Considérelo como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación.
 Al crear una aplicación basada en la plantilla de otra aplicación, obtiene una aplicación con un punto de partida representativo de la aplicación en la que se creó.
 
 Debe tener una plantilla de aplicación móvil existente (o una aplicación instalada que tenga una plantilla de aplicación) para utilizar esta función.
 
-AEM El último paquete de muestras de aplicaciones para la versión 6.1 incluye una versión actualizada de la aplicación de Geometrixx con una plantilla de aplicación de. Como alternativa, puede instalar el StarterKit, que también proporciona una plantilla.
+El último paquete de muestras de AEM Apps 6.1 incluye una versión actualizada de la aplicación de Geometrixx con una plantilla de aplicación. Como alternativa, puede instalar el StarterKit, que también proporciona una plantilla.
 
 Pasos para crear una aplicación basada en una plantilla de aplicación:
 
-1. AEM Asegúrese de que tiene instalados los paquetes de funciones y muestras de referencia más recientes para Aplicaciones de la versión 6.1.
+1. Asegúrese de que tiene instalados los paquetes de funciones y muestras de referencia más recientes para AEM Apps 6.1
 1. Haga clic en Aplicaciones en el carril izquierdo.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
@@ -192,7 +192,7 @@ Pasos para crear una aplicación basada en una plantilla de aplicación:
 1. Haga clic en Siguiente.
 1. Proporcione un ID de aplicación y un Título, pero tal vez también desee incluir un Nombre y una Descripción.
 
-   1. AEM Además, puede proporcionar un PNG (formato de icono de PhoneGap compatible) como icono al examinar los recursos de la.
+   1. Además, puede proporcionar un PNG (formato de icono de PhoneGap compatible) como icono explorando los recursos de AEM.
    1. Recuerde que puede editar todos estos campos después de crear la aplicación en el mosaico Administrar aplicación. A excepción del ID de la aplicación, una vez establecido el ID de la aplicación, no puede cambiarlo.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -206,11 +206,11 @@ Pasos para crear una aplicación basada en una plantilla de aplicación:
 
 >[!NOTE]
 >
->Si desinstala el paquete de aplicación de referencia de los Geometrixx Outdoors AEM de y hace que se cree una aplicación basada en su plantilla, dicha aplicación dejará de funcionar. La aplicación de Geometrixx Outdoors se puede eliminar, pero la plantilla de la aplicación debe permanecer si la utilizan otras aplicaciones móviles.
+>Si desinstala el paquete de la aplicación de referencia de Geometrixx Outdoors de AEM y tiene una aplicación creada basada en su plantilla, esa aplicación dejará de funcionar. La aplicación de Geometrixx Outdoors se puede eliminar, pero la plantilla de la aplicación debe permanecer si la utilizan otras aplicaciones móviles.
 
 ## Exploración de la aplicación de Geometrixx Outdoors de ejemplo {#exploring-the-sample-geometrixx-outdoors-app}
 
-La aplicación para Geometrixx Outdoors es una aplicación de PhoneGap de ejemplo que muestra las funciones del modelo de aplicación PhoneGap predeterminado y los componentes móviles de ejemplo.
+La aplicación de Geometrixx Outdoors es una aplicación de PhoneGap de ejemplo que muestra las funciones del modelo de aplicación de PhoneGap predeterminado y los componentes móviles de ejemplo.
 
 Para abrir la aplicación, en el carril, haga clic en Aplicaciones móviles y, a continuación, seleccione Aplicación de Geometrixx Outdoors.
 
@@ -228,31 +228,31 @@ Cada página de la aplicación móvil incluye las siguientes funciones:
 
 * El sistema de párrafos, para agregar componentes y crear contenido.
 
-### Página principal - Aplicación móvil de Geometrixx {#the-home-page-geometrixx-mobile-app}
+### Página principal: aplicación móvil de Geometrixx {#the-home-page-geometrixx-mobile-app}
 
 El contenido de la página de inicio consta de las siguientes herramientas de navegación:
 
 * Componente de lista de menús que proporciona vínculos a las páginas secundarias Engranaje, Revisiones, Noticias y Acerca de nosotros.
 * Componente de carrusel de barrido que muestra las páginas secundarias.
 
-### La página de engranajes: aplicación móvil de Geometrixx {#the-gear-page-geometrixx-mobile-app}
+### Página de engranajes - Aplicación móvil de Geometrixx {#the-gear-page-geometrixx-mobile-app}
 
 La página Engranaje proporciona a los usuarios acceso a las páginas de producto. Un componente de lista de menús proporciona acceso a las páginas secundarias de la página de engranaje. Las páginas secundarias son categorías de productos que incluye el sitio web.
 
 * Temporada
 * Ropa
-* Sexo
+* Género
 * Actividad
 
 Cada página de categoría utiliza la misma estructura de contenido que la página de engranaje. El carrusel proporciona acceso a páginas secundarias que son subcategorías de productos. Las páginas de subcategorías contienen listas de productos que proporcionan vínculos a páginas de productos.
 
-### La página Productos: Aplicación móvil de Geometrixx {#the-products-page-geometrixx-mobile-app}
+### La página Productos: aplicación móvil de Geometrixx {#the-products-page-geometrixx-mobile-app}
 
 La página Productos y su jerarquía de páginas secundarias implementan un sistema de clasificación para las páginas de productos. Las páginas más bajas de cada rama de la jerarquía son una página de producto que contiene un componente de producto ng.
 
 La página Productos no está disponible para los usuarios de la aplicación. La página Engranaje proporciona acceso a cada página de producto.
 
-### Página de críticas: aplicación móvil de Geometrixx {#the-reviews-page-geometrixx-mobile-app}
+### La página de críticas: aplicación móvil de Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
 Contiene un botón Atrás. El sistema de párrafos permite añadir componentes.
 
@@ -301,7 +301,7 @@ Configure el comportamiento del carrusel:
 Especifique cómo se genera la lista de páginas:
 
 * Lista de creación que utiliza: método que se utiliza para especificar las páginas que se incluirán en el carrusel. Consulte Creación de la lista de páginas.
-* Ordenar por: seleccione una propiedad de página para utilizarla para ordenar la lista de páginas. Por ejemplo, seleccione jcr:title para ordenar las páginas alfabéticamente por su título.
+* Ordenar por: seleccione una propiedad de página para utilizarla para ordenar la lista de páginas. Por ejemplo, seleccione jcr:title para ordenar las páginas alfabéticamente por título.
 * Límite: Número máximo de páginas que se incluirán. Esta propiedad es adecuada para los métodos basados en búsquedas de creación de la lista de páginas.
 
 #### Creación de la lista de páginas {#building-the-page-list}

@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Creación de una aplicación bajo demanda {#creating-an-on-demand-application}
 
-La creación de una aplicación suele ser el primer paso para crear y administrar contenido de AEM Mobile AEM On-Demand, y a menudo se realiza en el nivel de administrador de. Representa un shell de contenido, visible en dispositivos móviles, listo para mostrar contenido creado por el autor, como artículos, imágenes y colecciones.
+La creación de una aplicación suele ser el primer paso para crear y administrar contenido de AEM Mobile On-Demand, y a menudo se realiza en el nivel de administrador de AEM. Representa un shell de contenido, visible en dispositivos móviles, listo para mostrar contenido creado por el autor, como artículos, imágenes y colecciones.
 
 Los detalles de la aplicación se pueden ver en el panel o en el centro de control de AEM Mobile.
 
@@ -47,11 +47,11 @@ Los detalles de la aplicación se pueden ver en el panel o en el centro de contr
 
 >[!NOTE]
 >
->AEM Este proceso le permite crear una instancia de aplicación en la aplicación de forma.
+>Este proceso permite crear una instancia de aplicación en AEM.
 
 ## Uso de plantillas de aplicación {#using-app-templates}
 
-AEM Las plantillas de aplicación proporcionan una forma sencilla de utilizar los diseños existentes creados por los desarrolladores, utilizados para la creación de nuevas aplicaciones dentro de los entornos de trabajo de los desarrolladores de aplicaciones de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la plataforma de creación de la aplicación de la aplicación de la aplicación.
+Las plantillas de aplicación proporcionan una forma sencilla de utilizar los diseños existentes creados por los desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de AEM.
 
 ¿Qué es una plantilla de aplicación? Considérelo como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación.
 Al crear una aplicación basada en la plantilla de otra aplicación, obtiene una aplicación con un punto de partida representativo de la aplicación en la que se creó.
@@ -74,9 +74,9 @@ Una vez que esté familiarizado con la creación de una aplicación bajo demanda
 * [Administración de titulares](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Administración de colecciones](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Carga de recursos compartidos](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Cancelar la publicación del contenido de Publish](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publicar contenido para cancelar su publicación](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [AEM Desarrollo de contenido para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Desarrollo del contenido de AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

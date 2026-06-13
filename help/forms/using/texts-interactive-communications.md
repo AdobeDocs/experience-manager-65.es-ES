@@ -1,6 +1,6 @@
 ---
 title: Textos en comunicaciones interactivas
-description: 'Crear y editar fragmentos de documento de texto para usarlos en comunicaciones interactivas: el texto es uno de los cuatro tipos de fragmentos de documento que se utilizan para crear comunicaciones interactivas. Los otros tres son condiciones, listas y fragmentos de diseño.  '
+description: 'Crear y editar fragmentos de documento de texto para usarlos en comunicaciones interactivas: el texto es uno de los cuatro tipos de fragmentos de documento que se utilizan para crear comunicaciones interactivas. Los otros tres son condiciones, listas y fragmentos de diseño.'
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2501'
 ht-degree: 83%
 
 ---
@@ -23,7 +23,7 @@ Un fragmento de documento de texto consta de uno o más párrafos de texto. Un p
 
 El fragmento del documento de texto de la comunicación interactiva admite el siguiente tipo de datos dinámicos:
 
-* **Objetos del modelo de datos**: las propiedades de datos utilizan una fuente de datos back-end.
+* **Objetos de modelo de datos**: las propiedades de datos utilizan una fuente de datos back-end.
 * **Contenido basado en reglas**: partes de contenido de un texto que aparecen o se ocultan según una regla. Una regla también puede basarse en las propiedades y variables del modelo de datos de formulario.
 * **Variables**: en el fragmento del documento de texto, las variables no están enlazadas a una fuente de datos back-end. El agente rellena o selecciona valores en variables o enlaza las variables a fuentes de datos mientras prepara la comunicación interactiva para enviarla a un proceso posterior.
 * **Repetir**: es posible que tenga información dinámica en la comunicación interactiva, como transacciones en un extracto de tarjeta de crédito, cuyo número de incidencias puede cambiar con cada comunicación interactiva generada. Si se utiliza la repetición, puede aplicar formato y estructurar dicha información dinámica. Para obtener más información, consulte [Condición y repetición dentro de la línea](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/cm-inline-condition.html).
@@ -158,7 +158,7 @@ Con el editor de reglas de un texto, puede crear reglas para mostrar u ocultar c
 
    ![selectcontentapplyrule](assets/selectcontentapplyrule.png)
 
-1. Seleccione **[!UICONTROL Crear regla]**.
+1. Seleccione **[!UICONTROL Crear regla]**.
 
    Aparecerá el cuadro de diálogo Crear regla. Además de Cadena, Número, Expresión matemática y Fecha, también están disponibles las siguientes reglas en el editor de reglas para crear instrucciones:
 
@@ -189,7 +189,7 @@ Con el editor de reglas de un texto, puede crear reglas para mostrar u ocultar c
 
 1. Seleccione **[!UICONTROL Listo]**.
 
-   La regla se aplica. El texto o el contenido al que se aplica la regla se resalta en verde. Cuando pasa el ratón sobre el controlador izquierdo del resaltado, aparece la regla aplicada.
+   La regla se aplica. El texto o el contenido al que se aplica la regla se resalta en verde. Cuando pasa el puntero por encima del controlador izquierdo del resaltado, aparece la regla aplicada.
 
    ![appliedruletext](assets/appliedruletext.png)
 
@@ -207,11 +207,11 @@ Seleccione el tipo de barra de herramientas: párrafo, alineación o lista
 
 Barra de herramientas de edición de fuentes
 
-![Barra de herramientas de alineación &#x200B;](assets/alignmenttoolbar.png)
+![Barra de herramientas de alineación ](assets/alignmenttoolbar.png)
 
 Barra de herramientas de alineación
 
-![Barra de herramientas de lista &#x200B;](do-not-localize/listingtoolbar.png)
+![Barra de herramientas de lista ](do-not-localize/listingtoolbar.png)
 
 Barra de herramientas de lista
 
