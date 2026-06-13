@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3628'
 ht-degree: 1%
 
 ---
@@ -153,7 +153,7 @@ La propiedad name de `cq:Widget` elementos especifica el nodo JCR que almacena e
 
 Por ejemplo, un campo de texto en un cuadro de diálogo es un nodo `cq:Widget` que tiene las siguientes propiedades:
 
-| Nombre | Tipo | Valor  |
+| Nombre | Tipo | Valor |
 |---|---|---|
 | `xtype` | `String` | `textarea` |
 | `name` | `String` | `./metaData/subject` |
@@ -527,10 +527,10 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 Para utilizar la secuencia de comandos:
 
-1. Cree el script (por ejemplo, con el CRXDE Lite ) y guárdelo en el repositorio debajo de `//apps/workflow/scripts/`
+1. Cree el script (por ejemplo, con CRXDE Lite) y guárdelo en el repositorio debajo de `//apps/workflow/scripts/`
 1. Para especificar un título que identifique el script en el cuadro de diálogo de edición del **Paso de proceso**, agregue las siguientes propiedades al nodo `jcr:content` del script:
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | Nombre que aparecerá en el cuadro de diálogo de edición. |
@@ -644,10 +644,10 @@ function getParticipant() {
 }
 ```
 
-1. Cree el script (por ejemplo, con el CRXDE Lite ) y guárdelo en el repositorio debajo de `//apps/workflow/scripts`
+1. Cree el script (por ejemplo, con CRXDE Lite) y guárdelo en el repositorio debajo de `//apps/workflow/scripts`
 1. Para especificar un título que identifique el script en el cuadro de diálogo de edición del **Paso de proceso**, agregue las siguientes propiedades al nodo `jcr:content` del script:
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | Nombre que aparecerá en el cuadro de diálogo de edición. |
@@ -1031,7 +1031,7 @@ La muestra `_cq_dialog/.content.xml` utilizada en este ejemplo:
 >
 >Los cuadros de diálogo del editor del modelo de interfaz de usuario clásica seguirán funcionando con el editor de interfaz de usuario táctil estándar.
 >
->AEM Aunque tiene [herramientas de modernización](/help/sites-developing/modernization-tools.md) si desea actualizar los cuadros de diálogo de los pasos de la IU clásica a los cuadros de diálogo de la IU estándar. Después de la conversión, aún hay algunas mejoras manuales que se pueden realizar en el cuadro de diálogo para determinados casos.
+>Aunque AEM tiene [herramientas de modernización](/help/sites-developing/modernization-tools.md), si desea actualizar los cuadros de diálogo de los pasos de la IU clásica a los cuadros de diálogo de la IU estándar. Después de la conversión, aún hay algunas mejoras manuales que se pueden realizar en el cuadro de diálogo para determinados casos.
 >
 >* En los casos en los que un cuadro de diálogo actualizado está vacío, puede ver los cuadros de diálogo de `/libs` que tienen una funcionalidad similar a la de los ejemplos de cómo proporcionar una solución. Por ejemplo:
 >

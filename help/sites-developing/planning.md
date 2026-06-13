@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 1%
 
 ---
 
@@ -21,18 +21,18 @@ ht-degree: 0%
 En este documento se describe lo que necesita saber para planificar la prueba. Además, debe responder a estas preguntas antes de realizar las pruebas:
 
 * [¿Qué entornos de prueba se necesitarán?](/help/sites-developing/test-environments.md)
-* [Definición de los casos de prueba](/help/sites-developing/test-cases.md)
+* [Definición de casos de prueba](/help/sites-developing/test-cases.md)
 * [Pruebas: ¿cuándo y con quién?](/help/sites-developing/when-who.md)
 
 ## Antes de comenzar {#before-you-start}
 
 Antes de comenzar con el análisis real y la definición de pruebas, revise la siguiente información:
 
-AEM AEM **Arquitectura de**: vea Conceptos básicos para conocer la arquitectura y los principios básicos de la arquitectura de los conceptos de la arquitectura y la arquitectura de los conceptos básicos de la arquitectura de los conceptos de la arquitectura y la arquitectura de los conceptos básicos de la arquitectura de los conceptos de la arquitectura de los conceptos de la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura y la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura de la arquitectura de los conceptos básicos.
+**Arquitectura de AEM**: consulte Conceptos básicos para conocer la arquitectura y los principios básicos de AEM.
 
 **Documentación**: consulte cualquiera de las secciones de documentación o los artículos Cómo para obtener más información.
 
-**Principios básicos de las pruebas**: debe tener en cuenta los principios básicos de las pruebas de software y la garantía de calidad. Preferiblemente, debería tener experiencia en proyectos de prueba.
+**Principios básicos de las pruebas**: debe tener en cuenta los principios básicos de las pruebas de software y Assurance de calidad. Preferiblemente, debería tener experiencia en proyectos de prueba.
 
 Existen muchos sitios web, libros y cursos que tratan sobre tales principios y por lo tanto no serán tratados en detalle en este documento.
 
@@ -50,7 +50,7 @@ Es responsabilidad del administrador del proyecto decidir e iniciar acciones en 
 
 ## Tipos de pruebas {#types-of-tests}
 
-AEM Existen varias clasificaciones estándar de pruebas que son adecuadas para su uso al probar un proyecto de. Debe estar familiarizado con estos elementos para decidir cuál utilizar:
+Existen varias clasificaciones estándar de pruebas que son adecuadas para su uso al probar un proyecto de AEM. Debe estar familiarizado con estos elementos para decidir cuál utilizar:
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Las pruebas de caja negra son pruebas funcionales de una unidad/componente/módu
 
 Prueban la funcionalidad en base a una caja negra.
 
-AEM **Pruebas de rendimiento**: las pruebas de rendimiento son cruciales al realizar pruebas de rendimiento de manera más rápida y eficaz
+**Pruebas de rendimiento**: las pruebas de rendimiento son cruciales al probar AEM.
 
 Se utilizan para ilustrar el rendimiento en condiciones diferentes:
 

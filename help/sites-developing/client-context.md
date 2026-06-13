@@ -1,5 +1,5 @@
 ---
-title: Client Context en detalle
+title: Contexto de cliente en detalle
 description: Client Context representa una colección ensamblada dinámicamente de datos de usuario.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2969'
+source-wordcount: '2996'
 ht-degree: 1%
 
 ---
 
-# Client Context en detalle{#client-context-in-detail}
+# Contexto de cliente en detalle{#client-context-in-detail}
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Client Context consta principalmente de los siguientes aspectos:
 * Interfaz de usuario que muestra los datos del usuario y proporciona herramientas para simular la experiencia del usuario.
 * Una [API de JavaScript](/help/sites-developing/ccjsapi.md) para interactuar con almacenes de sesión.
 
-Para crear un almacén de sesiones independiente y agregarlo a Client Context, o para crear un almacén de sesiones vinculado a un componente de almacén de contexto. Adobe Experience Manager AEM () instala varios componentes de Context Store que puede utilizar de inmediato. Puede utilizar estos componentes como base para sus componentes.
+Para crear un almacén de sesiones independiente y agregarlo a Client Context, o para crear un almacén de sesiones vinculado a un componente de almacén de contexto. Adobe Experience Manager (AEM) instala varios componentes de la tienda de contexto que puede utilizar de inmediato. Puede utilizar estos componentes como base para sus componentes.
 
 Para obtener información sobre cómo abrir Client Context, configurar la información que muestra y simular la experiencia del usuario, consulte [Client Context](/help/sites-administering/client-context.md).
 
@@ -204,11 +204,11 @@ El ID del div en el que se debe procesar el almacén.
 >
 >Todos los componentes de Client Context son extensiones de los componentes Almacén genérico o Propiedades de almacenamiento genérico. Hay varios ejemplos instalados en la carpeta `/libs/cq/personalization/components/contextstores`.
 
-#### Configuración del aspecto visual en el Sidekick {#configuring-the-appearance-in-sidekick}
+#### Configuración del aspecto visual en Sidekick {#configuring-the-appearance-in-sidekick}
 
 Al editar Client Context, los componentes del almacén de contexto aparecen en Sidekick. Al igual que con todos los componentes, las propiedades `componentGroup` y `jcr:title` del componente Client Context determinan el grupo y el nombre del componente.
 
-Todos los componentes que tienen un valor de propiedad `componentGroup` de `Client Context` aparecen en el Sidekick de forma predeterminada. Si utiliza un valor diferente para la propiedad `componentGroup`, debe agregar manualmente el componente al Sidekick mediante el modo de diseño.
+Todos los componentes que tienen un valor de propiedad `componentGroup` de `Client Context` aparecen en Sidekick de forma predeterminada. Si utiliza un valor diferente para la propiedad `componentGroup`, debe agregar manualmente el componente a Sidekick mediante el modo de diseño.
 
 #### Instancias de componente de tienda de contexto {#context-store-component-instances}
 
@@ -264,7 +264,7 @@ El atributo `propertyName` es el nombre de la propiedad de almacén que se va a 
 
 #### Estructura HTML {#html-structure}
 
-La carpeta de la biblioteca de cliente personalization.ui (/etc/clientlibs/foundation/personalization/ui/themes/default) proporciona los estilos CSS que Client Context utiliza para dar formato al código de HTML. El siguiente código ilustra la estructura sugerida para utilizar para mostrar los datos del almacén:
+La carpeta de la biblioteca de cliente personalization.ui (/etc/clientlibs/foundation/personalization/ui/themes/default) proporciona los estilos CSS que Client Context utiliza para dar formato al código HTML. El siguiente código ilustra la estructura sugerida para utilizar para mostrar los datos del almacén:
 
 ```xml
 <div class="cq-cc-store">
@@ -302,7 +302,7 @@ El componente de almacén de contexto `/libs/cq/personalization/components/conte
 
 Para procesar datos de almacén mediante un componente genéricos, debe hacer lo siguiente:
 
-* Añada la etiqueta personalization:storeRendererTag al script JSP del componente para identificar el nombre del almacén de sesión.
+* Agregue la etiqueta personalization:storeRendererTag al script JSP del componente para identificar el nombre del almacén de sesión.
 * Implemente un método de procesamiento en la clase de almacén de sesiones.
 
 #### Identificación del almacén de sesiones de genericstore {#identifying-the-genericstore-session-store}
@@ -490,9 +490,9 @@ En este ejemplo, se crea un componente de almacén de contexto que recupera dato
 
 Cree una aplicación CQ y agregue el componente geoloc.
 
-1. Abra el CRXDE Lite en el explorador web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Abra CRXDE Lite en el explorador web ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Haga clic con el botón derecho en la carpeta `/apps` y haga clic en Crear > Crear carpeta. Especifique un nombre de `myapp` y haga clic en Aceptar.
-1. Del mismo modo, debajo de `myapp`, cree una carpeta llamada `contextstores`. &quot;
+1. Del mismo modo, debajo de `myapp`, cree una carpeta denominada `contextstores`. &quot;
 1. Haga clic con el botón derecho en la carpeta `/apps/myapp/contextstores` y haga clic en Crear > Crear componente. Especifique los siguientes valores de propiedad y haga clic en Siguiente:
 
    * Etiqueta: geoloc
@@ -522,7 +522,7 @@ El componente de almacén de contexto requiere un cuadro de diálogo de edición
 
 1. Agregue las siguientes propiedades al nodo:
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | cls | Cadena | x-form-fieldset-description |
    | text | Cadena | El componente geoloc no requiere ninguna configuración. |
@@ -562,7 +562,7 @@ Agregue el código al archivo JSP del componente geoloc para procesar los datos 
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. En el CRXDE Lite, abra el archivo `/apps/myapp/contextstores/geoloc/geoloc.jsp`.
+1. En CRXDE Lite, abra el archivo `/apps/myapp/contextstores/geoloc/geoloc.jsp`.
 1. Agregue el siguiente código HTML debajo del código auxiliar:
 
    ```xml
@@ -595,7 +595,7 @@ Agregue el código al archivo JSP del componente geoloc para procesar los datos 
 
 Agregue el componente Almacén de ubicaciones a Client Context para que se inicialice cuando se cargue la página.
 
-1. Abra la página principal de los Geometrixx Outdoors en la instancia de autor ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Abra la página principal de Geometrixx Outdoors en la instancia de autor ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Haga clic en Ctrl-Alt-c (Windows) o control-opción-c (Mac) para abrir Client Context.
 1. Haga clic en el icono de edición en la parte superior de Client Context para abrir Client Context Designer.
 
@@ -605,7 +605,7 @@ Agregue el componente Almacén de ubicaciones a Client Context para que se inici
 
 ### Consulte la información de ubicación en Client Context {#see-the-location-information-in-client-context}
 
-Abra la página de inicio de los Geometrixx Outdoors en modo de edición y, a continuación, abra Client Context para ver los datos del componente Almacén de ubicaciones.
+Abra la página de inicio de Geometrixx Outdoors en modo de edición y, a continuación, abra Client Context para ver los datos del componente Almacén de ubicación.
 
 1. Abra la página en inglés del sitio de Geometrixx Outdoors. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html))
 1. Para abrir Client Context, pulse Ctrl-Alt-c (Windows) o control-opción-c (Mac).

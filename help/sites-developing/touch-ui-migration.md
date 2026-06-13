@@ -12,16 +12,16 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 12%
 
 ---
 
 # Migración a la IU táctil{#migration-to-the-touch-ui}
 
-A partir de la versión 6.0, Adobe Experience Manager AEM () introdujo una nueva interfaz de usuario conocida como *IU táctil* (también conocida como *IU táctil*). Se alinea con Adobe Experience Cloud y con las directrices generales de la interfaz de usuario de Adobe. AEM Esta se ha convertido en la interfaz de usuario estándar en la interfaz heredada orientada al escritorio, a la que se hace referencia como *IU clásica*.
+A partir de la versión 6.0, Adobe Experience Manager (AEM) introdujo una nueva interfaz de usuario denominada *IU táctil* (también conocida como *IU táctil*). Se alinea con Adobe Experience Cloud y con las directrices generales de la interfaz de usuario de Adobe. Esta se ha convertido en la interfaz de usuario estándar en AEM con la interfaz heredada orientada al escritorio conocida como *IU clásica*.
 
-AEM Si ha estado utilizando la interfaz de usuario clásica de, tome medidas para migrar la instancia. Esta página está diseñada para actuar como un trampolín al proporcionar vínculos a recursos individuales.
+Si ha estado utilizando AEM con la IU clásica, tome medidas para migrar la instancia. Esta página está diseñada para actuar como un trampolín al proporcionar vínculos a recursos individuales.
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ Al migrar, tenga en cuenta las siguientes diferencias principales entre la IU cl
    <td>Representación realizada por el servidor:
     <ul>
      <li>El cliente solicita páginas junto con la interfaz de usuario relacionada.</li>
-     <li>El servidor envía (push) la interfaz de usuario como documentos del HTML; se utilizan componentes de la interfaz de usuario de Coral.<br /> </li>
+     <li>El servidor envía (push) la interfaz de usuario como documentos de HTML; se utilizan componentes de la interfaz de usuario de Coral.<br /> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -104,24 +104,24 @@ En otras palabras, migrar una sección de la interfaz de usuario de la IU clási
 Antes de empezar, compruebe el estado y las recomendaciones relacionadas:
 
 * [Estado de funciones de IU táctil](/help/release-notes/touch-ui-features-status.md)
-* [Interfaz de usuario de Recommendations para clientes](/help/sites-deploying/ui-recommendations.md)
+* [Recomendaciones de interfaz de usuario para clientes](/help/sites-deploying/ui-recommendations.md)
 
 Los conceptos básicos del desarrollo de la IU táctil proporcionan una base sólida:
 
-* [AEM Conceptos de la interfaz de usuario táctil con capacidad para el uso de la](/help/sites-developing/touch-ui-concepts.md)
-* [AEM Estructura de la interfaz de usuario táctil de la](/help/sites-developing/touch-ui-structure.md)
+* [Conceptos de la IU táctil de AEM](/help/sites-developing/touch-ui-concepts.md)
+* [Estructura de la IU táctil de AEM](/help/sites-developing/touch-ui-structure.md)
 
 ## Migración de creación de páginas {#migrating-page-authoring}
 
 Los cuadros de diálogo son un factor importante a la hora de migrar los componentes:
 
-* AEM [Desarrollar componentes de la](/help/sites-developing/developing-components.md) (con la interfaz de usuario táctil)
+* [Desarrollar componentes de AEM](/help/sites-developing/developing-components.md) (con la IU táctil)
 * [Migración desde un componente clásico](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* AEM [Herramientas de modernización de](/help/sites-developing/modernization-tools.md): para ayudarle a convertir los cuadros de diálogo de los componentes de la IU clásica en IU táctil
+* [Herramientas de modernización de AEM](/help/sites-developing/modernization-tools.md): para ayudarle a convertir los cuadros de diálogo de sus componentes de la IU clásica a la IU táctil
 
    * Hay una capa de compatibilidad en la IU táctil para abrir un cuadro de diálogo de IU clásica dentro de un &quot;envoltorio de IU táctil&quot;, pero esto tiene una funcionalidad limitada y no se recomienda a largo plazo.
 
-* [Personalizar campos de diálogo en la IU táctil](https://helpx.adobe.com/es/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Personalizar campos de diálogo en la IU táctil](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Creación de un nuevo componente de campo de IU de Granite](/help/sites-developing/granite-ui-component.md)
 * [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md) (con la IU táctil)
 
@@ -145,15 +145,15 @@ Aunque no están directamente relacionados con una migración a la interfaz de u
 
 ## Otros recursos {#further-resources}
 
-AEM Para obtener información completa sobre el desarrollo de los recursos, consulte la recopilación de recursos en:
+Para obtener información completa sobre el desarrollo de AEM, consulte la recopilación de recursos en:
 
 * [Guía del usuario sobre desarrollo](/help/sites-developing/getting-started.md)
 * [Documentación de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* AEM [Tutorials y vídeos de 6.5 sitios de](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=es)
+* [Tutoriales y vídeos de AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=es)
 * [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)
-* AEM [Gems de](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=es)
+* [Gems de AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
 * [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
 >
->AEM Las herramientas de modernización son un esfuerzo de la comunidad y no son compatibles ni están garantizadas por el Adobe.
+>Las herramientas de modernización de AEM son un esfuerzo de la comunidad y Adobe no las admite ni las garantiza.

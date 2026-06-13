@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=es) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Todos los recursos digitales, metadatos y contenido de los documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Metadatos en Digital Asset Management.
@@ -71,13 +71,13 @@ Add back links to blog posts by marketing?
 
 ## Organizar los recursos para utilizar perfiles {#organize-to-use-profiles}
 
-Un perfil de procesamiento contiene [!DNL Assets] comandos de procesamiento que se aplican a los recursos que se cargan en carpetas predefinidas. Profiles are used to automate the processing of contents of a folder or freshly uploaded assets. You can use profiles to organize your assets better.
+Un perfil de procesamiento contiene [!DNL Assets] comandos de procesamiento que se aplican a los recursos que se cargan en carpetas predefinidas. Los perfiles se utilizan para automatizar el procesamiento del contenido de una carpeta o de los recursos recién cargados. Puede utilizar perfiles para organizar mejor los recursos.
 
-Standardizing metadata usage, file naming, and folder structure ensures that as your pool of digital assets grows, you can apply processing profiles to folders with greater precision and consistency.
+La estandarización del uso de metadatos, los nombres de archivo y la estructura de carpetas garantiza que, a medida que el grupo de recursos digitales crezca, pueda aplicar perfiles de procesamiento a las carpetas con mayor precisión y coherencia.
 
 >[!MORELIKETHIS]
 >
->* [Profiles to process metadata, images, and videos](processing-profiles.md).
->* [Metadata profiles](/help/assets/metadata-config.md#metadata-profiles).
->* [Video profiles](video-profiles.md).
->* [Dynamic Media image profiles](image-profiles.md).
+>* [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md).
+>* [Perfiles de metadatos](/help/assets/metadata-config.md#metadata-profiles).
+>* [Perfiles de vídeo](video-profiles.md).
+>* [Perfiles de imagen de Dynamic Media](image-profiles.md).

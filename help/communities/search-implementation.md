@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1207'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## Información general {#overview}
 
-La función de búsqueda es una característica esencial de las comunidades de Adobe Experience Manager AEM (). AEM Además de las capacidades de [búsqueda en la plataforma &#x200B;](../../help/sites-deploying/queries-and-indexing.md), AEM Communities proporciona la [API de búsqueda UGC](#ugc-search-api) para la búsqueda de contenido generado por el usuario (UGC). AEM UGC tiene propiedades únicas, ya que se introduce y almacena por separado de otros datos de usuario y de contenido de la.
+La función de búsqueda es una función esencial de las comunidades de Adobe Experience Manager (AEM). Además de las capacidades de [búsqueda en la plataforma AEM](../../help/sites-deploying/queries-and-indexing.md), AEM Communities proporciona la [API de búsqueda UGC](#ugc-search-api) para buscar contenido generado por el usuario (UGC). UGC tiene propiedades únicas, ya que se introduce y almacena por separado de otros datos de usuario y contenido de AEM.
 
 Para Communities, las dos cosas que se buscan generalmente son:
 
@@ -30,7 +30,7 @@ Para Communities, las dos cosas que se buscan generalmente son:
 
 * Usuarios y grupos de usuarios (datos de usuario)
 
-   * AEM Utiliza las funcionalidades de búsqueda de la plataforma de.
+   * Utiliza las funcionalidades de búsqueda de la plataforma AEM.
 
 Esta sección de la documentación es de interés para los desarrolladores que crean componentes personalizados que crean o administran UGC.
 
@@ -48,7 +48,7 @@ El almacén común [UGC](working-with-srp.md) lo proporciona uno de varios prove
 
 ### Búsquedas ASRP {#asrp-searches}
 
-Para [ASRP](asrp.md), UGC se almacena en la nube de Adobe. Aunque UGC no es visible en CRX, la [moderación](moderate-ugc.md) está disponible en los entornos Author y Publish. El uso de la [API de búsqueda UGC](#ugc-search-api) funciona para ASRP igual que para otros SRP.
+Para [ASRP](asrp.md), UGC se almacena en la nube de Adobe. Aunque UGC no es visible en CRX, la [moderación](moderate-ugc.md) está disponible en los entornos de creación y publicación. El uso de la [API de búsqueda UGC](#ugc-search-api) funciona para ASRP igual que para otros SRP.
 
 Actualmente no existen herramientas para administrar búsquedas ASRP.
 
@@ -60,8 +60,8 @@ Para [MSRP](msrp.md), UGC se almacena en MongoDB configurado para usar Solr para
 
 Con respecto al MSRP y Solr:
 
-* AEM El Solr incrustado para la plataforma de no se utiliza para el MSRP.
-* AEM Si se utiliza un Solr remoto para la plataforma de, puede compartirse con el MSRP, pero deben utilizar colecciones diferentes.
+* El Solr incrustado para la plataforma de AEM no se utiliza para el MSRP.
+* Si utiliza un Solr remoto para la plataforma AEM, puede compartirse con el MSRP, pero deben utilizar colecciones diferentes.
 * Solr puede configurarse para la búsqueda estándar o para la búsqueda multilingüe (MLS).
 * Para obtener detalles de configuración, consulte [Configuración de Solr](msrp.md#solr-configuration) para MSRP.
 
@@ -71,23 +71,23 @@ Al crear propiedades personalizadas en las que se pueden realizar búsquedas, es
 
 ### Búsquedas JSRP {#jsrp-searches}
 
-Para [JSRP](jsrp.md), el UGC se almacena en [Oak AEM](../../help/sites-deploying/platform.md) y solo es visible en el repositorio de la instancia de autor de la o Publish en la que se ingresó.
+Para [JSRP](jsrp.md), el UGC se almacena en [Oak](../../help/sites-deploying/platform.md) y solo es visible en el repositorio de la instancia de AEM Author o Publish en la que se ingresó.
 
-Dado que UGC se introduce normalmente en el entorno de Publish, en los sistemas de producción de varios editores es necesario configurar un [clúster de publicación](topologies.md), no una granja de servidores de publicación, de modo que el contenido introducido sea visible desde todos los editores.
+Dado que UGC se introduce normalmente en el entorno de publicación, en los sistemas de producción de varios editores es necesario configurar un [clúster de publicación](topologies.md), no un conjunto de servidores de publicación, de modo que el contenido introducido sea visible desde todos los editores.
 
-Para JSRP, el UGC introducido en el entorno de Publish nunca es visible en el entorno de creación. Por lo tanto, todas las tareas de [moderación](moderate-ugc.md) tienen lugar en el entorno de Publish.
+Para JSRP, el UGC introducido en el entorno de publicación nunca es visible en el entorno de creación. Por lo tanto, todas las tareas de [moderación](moderate-ugc.md) se realizan en el entorno de publicación.
 
 Las características de búsqueda personalizada deben usar la [API de búsqueda UGC](#ugc-search-api).
 
 #### Indexación de Oak {#oak-indexing}
 
-Aunque los índices Oak AEM AEM no se crean automáticamente para la búsqueda en la plataforma de la, a partir de la versión 6.2 de la versión, se han añadido para AEM Communities a fin de mejorar el rendimiento y ofrecer compatibilidad con la paginación al presentar resultados de búsqueda UGC.
+Aunque los índices Oak no se crean automáticamente para la búsqueda de AEM Platform, a partir de AEM 6.2 se han agregado para AEM Communities a fin de mejorar el rendimiento y dar compatibilidad con la paginación al presentar resultados de búsqueda UGC.
 
 Si las propiedades personalizadas están en uso y las búsquedas son lentas, se deben crear índices adicionales para las propiedades personalizadas para que tengan un mejor rendimiento. Para mantener la portabilidad, cumpla con los [requisitos de nomenclatura](#naming-of-custom-properties) al crear propiedades personalizadas en las que se pueden realizar búsquedas.
 
 Para modificar los índices existentes o crear índices personalizados, consulte [Consultas e indexación de Oak](../../help/sites-deploying/queries-and-indexing.md).
 
-El [Administrador de índices Oak AEM](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) está disponible en ACS Commons. Proporciona lo siguiente:
+El [Administrador de índices Oak](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) está disponible en ACS AEM Commons. Proporciona lo siguiente:
 
 * Una vista de los índices existentes.
 * La capacidad para iniciar la reindexación.
@@ -106,13 +106,13 @@ A continuación, se muestran algunas de las propiedades en las que se pueden rea
 
 | **Propiedad** | **Tipo de datos** |
 |---|---|
-| isFlagged | *Booleana* |
-| isSpam | *Booleana* |
-| leer | *Booleana* |
-| influenciar | *Booleana* |
-| attachments | *Booleana* |
+| isFlagged | *Booleano* |
+| isSpam | *Booleano* |
+| leer | *Booleano* |
+| influenciar | *Booleano* |
+| attachments | *Booleano* |
 | opinión | *Largo* |
-| marcado | *Booleana* |
+| marcado | *Booleano* |
 | añadido | *Fecha* |
 | modifiedDate | *Fecha* |
 | estado | *Cadena* |
@@ -121,14 +121,14 @@ A continuación, se muestran algunas de las propiedades en las que se pueden rea
 | jcr:title | *Cadena* |
 | jcr:description | *Cadena* |
 | sling:resourceType | *Cadena* |
-| allowThreadedReply | *Booleana* |
-| isDraft | *Booleana* |
+| allowThreadedReply | *Booleano* |
+| isDraft | *Booleano* |
 | publishDate | *Fecha* |
 | publishJobId | *Cadena* |
-| con respuesta | *Booleana* |
-| chosenanswer | *Booleana* |
+| con respuesta | *Booleano* |
+| chosenanswer | *Booleano* |
 | etiqueta | *Cadena* |
-| cq:Etiqueta | *Cadena* |
+| cq:Tag | *Cadena* |
 | author_display_name | *Cadena* |
 | location_t | *Cadena* |
 | parentPath | *Cadena* |
@@ -147,7 +147,7 @@ Solr es un ejemplo de lenguaje de consulta que utiliza un esquema.
 
 | **Sufijo** | **Tipo de datos** |
 |---|---|
-| _b | *Booleana* |
+| _b | *Booleano* |
 | _dt | *Calendario* |
 | _d | *Doble* |
 | _tl | *Largo* |

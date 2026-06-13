@@ -1,6 +1,6 @@
 ---
 title: Tipos de nodos personalizados
-description: 'Adobe Experience Manager AEM AEM () se basa en Sling y utiliza un repositorio JCR con tipos de nodo ofrecidos por ambos, pero también proporciona una serie de tipos de nodo personalizados, entre los que se encuentran los siguientes:'
+description: Adobe Experience Manager (AEM) se basa en Sling y utiliza un repositorio JCR con tipos de nodo ofrecidos por ambos, pero AEM también proporciona una serie de tipos de nodo personalizados
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -11,19 +11,19 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1799'
 ht-degree: 5%
 
 ---
 
 # Tipos de nodos personalizados{#custom-node-types}
 
-Dado que Adobe Experience Manager AEM () se basa en Sling y utiliza un repositorio JCR, los tipos de nodo que ofrecen ambos están disponibles para su uso:
+Dado que Adobe Experience Manager (AEM) se basa en Sling y utiliza un repositorio JCR, los tipos de nodo que ofrecen ambos están disponibles para su uso:
 
 * [Tipos de nodos JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipos de nodos de Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-AEM Además de estos tipos de nodos, proporciona una serie de tipos de nodos personalizados.
+Además de estos tipos de nodos, AEM proporciona una serie de tipos de nodos personalizados.
 
 ## Auditoría {#audit}
 
@@ -53,9 +53,9 @@ Define el tipo de nodo de un nodo de evento de auditoría.
 * `- cq:category (string)`
 * `- cq:properties (binary)`
 
-## Comentar {#comment}
+## Comentario {#comment}
 
-### cq:Comentario {#cq-comment}
+### cq:Comment {#cq-comment}
 
 **Descripción**
 
@@ -390,7 +390,7 @@ Define los oyentes (del lado del cliente) que se ejecutan en un evento de edici�
    * `- afterremove (string)`
    * `- aftermove (string)`
 
-## DAM  {#dam}
+## DAM {#dam}
 
 ### dam:AssetContent {#dam-assetcontent}
 
@@ -416,7 +416,7 @@ Recurso DAM.
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### dam:Miniatura {#dam-thumbnail}
+### dam:Thumbnail {#dam-thumbnail}
 
 **Descripción**
 
@@ -450,7 +450,7 @@ Lista de contenedores.
 El tipo de nodo `cq:attributes` es para las etiquetas de versión de ContentBus. Este nodo solo tiene una serie de propiedades, de las cuales tres son predefinidas como &quot;created&quot;, &quot;csd&quot; y &quot;timestamp&quot;.
 
 * `@prop created (long) mandatory copy`: marca de tiempo de creación de la información de versión, generalmente la hora de registro de la versión anterior o la hora de creación de la página.
-* `@prop csd (string) mandatory copy` - atributo estándar de csd, copia de la propiedad cq:csd del nodo de página
+* `@prop csd (string) mandatory copy` - atributo estándar csd, copia de la propiedad cq:csd del nodo de página
 * `@prop timestamp (long) mandatory copy` - Marca de tiempo de la última modificación de la versión, generalmente la hora de registro.
 * `@prop * (string) copy`: atributos adicionales, con versión del nodo principal.
 
@@ -489,9 +489,9 @@ Los elementos de un(a) `cq:Cq4ContentPage` son:
 Configuración de encuesta.
 
 * `@prop source (String) mandatory` - URI de origen de datos. Requerido y no debe estar vacío.
-* `@prop target (String)`: ubicación de destino donde se almacenan los datos recuperados del origen de datos. Opcional y toma el valor predeterminado del nodo cq:PollConfig.
+* `@prop target (String)`: ubicación de destino donde se almacenan los datos recuperados del origen de datos. Opcional y de forma predeterminada al nodo cq:PollConfig.
 * `@prop interval (Long)`: intervalo en segundos para sondear datos nuevos o actualizados del origen de datos. Opcional y el valor predeterminado es de 30 minutos (1800 segundos).
-* [Creando servicios de importador de datos personalizados para Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [Crear servicios de importador de datos personalizados para Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definición**
 
@@ -577,7 +577,7 @@ Define un mixin de LiveSync. Si un nodo está involucrado en una LiveRelationshi
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq:LiveSyncCanceled {#cq-livesynccancelled}
+### cq:LiveSyncCancelled {#cq-livesynccancelled}
 
 **Descripción**
 
@@ -616,7 +616,7 @@ Configuración de Live Sync.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-AEM Para la versión 5.4, añada al final de la lista:
+Para AEM 5.4, añada al final de la lista:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
@@ -765,7 +765,7 @@ Define un tipo de mezcla que marca los archivos que se pueden abrir con el extra
 
 ## Etiquetado {#tagging}
 
-### cq:Etiqueta {#cq-tag}
+### cq:Tag {#cq-tag}
 
 **Descripción**
 
@@ -806,7 +806,7 @@ Solo los autores/propietarios pueden etiquetar el contenido (etiquetado moderado
 
 **Descripción**
 
-Cualquier usuario/sitio web público puede etiquetar el contenido (estilo Web2.0), utilizado dentro de cq:userContent.
+Cualquier usuario o sitio web público puede etiquetar el contenido (estilo Web2.0) que se utiliza dentro de cq:userContent.
 
 **Definición**
 
@@ -941,7 +941,7 @@ Campo
 
 ## Wiki {#wiki}
 
-### wiki:Tema {#wiki-topic}
+### wiki:Topic {#wiki-topic}
 
 **Descripción**
 
@@ -962,7 +962,7 @@ Tema Wiki
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:Usuario {#wiki-user}
+### wiki:User {#wiki-user}
 
 **Descripción**
 
@@ -973,7 +973,7 @@ Usuario de wiki
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:Propiedades {#wiki-properties}
+### wiki:Properties {#wiki-properties}
 
 **Descripción**
 
@@ -1030,7 +1030,7 @@ Elemento de trabajo.
    * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
    * `+ metaData (nt:unstructured)`
 
-### cq:Carga útil {#cq-payload}
+### cq:Payload {#cq-payload}
 
 **Descripción**
 
@@ -1137,7 +1137,7 @@ Pestaña O
 
 **Descripción**
 
-Espera
+Esperar
 
 **Definición**
 

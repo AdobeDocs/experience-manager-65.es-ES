@@ -1,6 +1,6 @@
 ---
-title: AEM Elementos de almacenamiento en 6.5
-description: AEM Obtenga información acerca de las implementaciones de almacenamiento de nodos disponibles en la versión 6.5 de y cómo mantener el repositorio.
+title: Elementos de almacenamiento en AEM 6.5
+description: Obtenga información acerca de las implementaciones de almacenamiento de nodos disponibles en AEM 6.5 y cómo mantener el repositorio.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -12,36 +12,36 @@ feature: Deploying
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 0%
+source-wordcount: '743'
+ht-degree: 2%
 
 ---
 
-# AEM Elementos de almacenamiento en 6.5{#storage-elements-in-aem}
+# Elementos de almacenamiento en AEM 6.5{#storage-elements-in-aem}
 
 Este artículo trata sobre lo siguiente:
 
-* [AEM Información general sobre el almacenamiento en el 6](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [Descripción general del almacenamiento en AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Mantenimiento del repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
 
-## AEM Información general sobre el almacenamiento en el 6 {#overview-of-storage-in-aem}
+## Descripción general del almacenamiento en AEM 6 {#overview-of-storage-in-aem}
 
-AEM Uno de los cambios más importantes en la 6 son las innovaciones a nivel de repositorio.
+Uno de los cambios más importantes en AEM 6 son las innovaciones a nivel de repositorio.
 
-AEM Actualmente, hay dos implementaciones de almacenamiento de nodos disponibles en la versión 6 de la versión: Almacenamiento de tar y Almacenamiento de MongoDB.
+Actualmente, hay dos implementaciones de almacenamiento de nodos disponibles en AEM6: almacenamiento Tar y almacenamiento MongoDB.
 
 ### Almacenamiento de tar {#tar-storage}
 
-#### AEM Ejecución de una instancia de recién instalada con el almacenamiento Tar {#running-a-freshly-installed-aem-instance-with-tar-storage}
+#### Ejecutar una instancia de AEM recién instalada con Almacenamiento Tar {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
 >[!CAUTION]
 >
->El PID del almacén de nodos de segmentos ha cambiado de org.apache.jackrabbit.oak.AEM AEM **plugins**.segment.SegmentNodeStoreService en versiones anteriores del 6 a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService en la versión 6.3 de. Asegúrese de que se realizan los ajustes de configuración necesarios para que se reflejen los cambios.
+>El PID del almacén de nodos de segmentos ha cambiado de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService en versiones anteriores de AEM 6 a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService en AEM 6.3. Asegúrese de que se realizan los ajustes de configuración necesarios para que se reflejen los cambios.
 
-AEM De forma predeterminada, el 6 utiliza el almacenamiento Tar para almacenar nodos y binarios, utilizando las opciones de configuración predeterminadas. Puede configurar manualmente su configuración de almacenamiento haciendo lo siguiente:
+De forma predeterminada, AEM 6 utiliza el almacenamiento Tar para almacenar nodos y binarios, con las opciones de configuración predeterminadas. Puede configurar manualmente su configuración de almacenamiento haciendo lo siguiente:
 
-1. AEM Descargue el JAR de inicio rápido de la 6 y colóquelo en una nueva carpeta.
-1. AEM Desempaquetar el paquete ejecutando:
+1. Descargue AEM 6 quickstart jar y colóquelo en una nueva carpeta.
+1. Desempaquete AEM ejecutando:
 
    `java -jar cq-quickstart-6.jar -unpack`
 
@@ -49,21 +49,21 @@ AEM De forma predeterminada, el 6 utiliza el almacenamiento Tar para almacenar n
 
 1. Cree un archivo llamado `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` en la carpeta recién creada.
 
-1. Edite el archivo y defina las opciones de configuración. AEM Las siguientes opciones están disponibles para el almacén de nodos de segmentos, que es la base para la implementación del almacenamiento de Tar de la base de la instalación de la implementación de almacenamiento de Tar de la:
+1. Edite el archivo y defina las opciones de configuración. Las siguientes opciones están disponibles para el almacén de nodos de segmentos, que es la base de la implementación del almacenamiento Tar de AEM:
 
    * `repository.home`: ruta al inicio del repositorio en el que se almacenan varios datos relacionados con el repositorio. De forma predeterminada, los archivos de segmento se almacenarían en el directorio crx-quickstart/segmentstore.
    * `tarmk.size`: tamaño máximo de un segmento en MB. El valor predeterminado es 256 MB.
 
-1. AEM Inicio de.
+1. Inicie AEM.
 
 ### Almacenamiento de Mongo {#mongo-storage}
 
-#### AEM Ejecución de una instancia de recién instalada con Mongo Storage {#running-a-freshly-installed-aem-instance-with-mongo-storage}
+#### Ejecución de una instancia de AEM recién instalada con Mongo Storage {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
-AEM Se puede configurar 6 para que se ejecute con el almacenamiento MongoDB siguiendo el siguiente procedimiento:
+AEM 6 se puede configurar para que se ejecute con el almacenamiento MongoDB siguiendo el siguiente procedimiento:
 
-1. AEM Descargue el JAR de inicio rápido de la 6 y colóquelo en una nueva carpeta.
-1. AEM Desempaquete el paquete ejecutando el siguiente comando:
+1. Descargue AEM 6 quickstart jar y colóquelo en una nueva carpeta.
+1. Desempaquete AEM ejecutando el siguiente comando:
 
    `java -jar cq-quickstart-6.jar -unpack`
 
@@ -71,19 +71,19 @@ AEM Se puede configurar 6 para que se ejecute con el almacenamiento MongoDB sigu
 1. Cree una carpeta con el nombre `crx-quickstart\install` en el directorio de instalación.
 1. Configure el almacén de nodos creando un archivo de configuración con el nombre de la configuración que desea utilizar en el directorio `crx-quickstart\install`.
 
-   AEM El almacén de nodos de documentos (que es la base para la implementación de almacenamiento de MongoDB de la aplicación de datos) utiliza un archivo denominado `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   El almacén de nodos de documentos (que es la base de la implementación de almacenamiento MongoDB de AEM) utiliza un archivo denominado `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
 1. Edite el archivo y defina las opciones de configuración. Las opciones disponibles son las siguientes:
 
    * `mongouri`: el [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) necesario para conectarse a la base de datos de Mongo. El valor predeterminado es `mongodb://localhost:27017`
-   * `db`: nombre de la base de datos Mongo. AEM De manera predeterminada, las nuevas instalaciones de la nueva base de datos de 6 utilizan **aem-author** como nombre de la base de datos.
+   * `db`: nombre de la base de datos Mongo. De manera predeterminada, las nuevas instalaciones de AEM 6 usan **aem-author** como nombre de base de datos.
    * `cache`: tamaño de la caché en megabytes. Este tamaño de caché se distribuye entre varias cachés utilizadas en DocumentNodeStore. El valor predeterminado es 256.
    * `changesSize`: tamaño en MB de la colección limitada utilizada en Mongo para almacenar en caché la salida de diferencia. El valor predeterminado es 256.
    * `customBlobStore`: valor booleano que indica que se utiliza un almacén de datos personalizado. El valor predeterminado es false.
 
 1. Cree un archivo de configuración con el PID del almacén de datos que desea utilizar y edite el archivo para establecer las opciones de configuración. Para obtener más información, consulte [Configuración de almacenes de nodos y almacenes de datos](/help/sites-deploying/data-store-config.md).
 
-1. AEM Inicie el JAR de 6 con un back-end de almacenamiento MongoDB ejecutando:
+1. Inicie el JAR de AEM 6 con un back-end de almacenamiento MongoDB ejecutando:
 
    ```shell
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
@@ -93,7 +93,7 @@ AEM Se puede configurar 6 para que se ejecute con el almacenamiento MongoDB sigu
 
 #### Desactivación de páginas enormes transparentes {#disabling-transparent-huge-pages}
 
-Red Hat® Linux® utiliza un algoritmo de administración de memoria denominado Transparent Huge Pages (THP). AEM Mientras realiza lecturas y escrituras específicas, el lenguaje HTTP está optimizado para operaciones grandes. Por lo tanto, se recomienda deshabilitar THP en el almacenamiento Tar y Mongo. Para desactivar el algoritmo, siga estos pasos:
+Red Hat® Linux® utiliza un algoritmo de administración de memoria denominado Transparent Huge Pages (THP). Mientras que AEM realiza lecturas y escrituras específicas, HTTP está optimizado para operaciones grandes. Por lo tanto, se recomienda deshabilitar THP en el almacenamiento Tar y Mongo. Para desactivar el algoritmo, siga estos pasos:
 
 1. Abra el archivo `/etc/grub.conf` en el editor de texto que prefiera.
 1. Agregue la línea siguiente al archivo **grub.conf**:

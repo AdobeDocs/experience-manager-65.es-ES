@@ -11,8 +11,8 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 2%
+source-wordcount: '2381'
+ht-degree: 1%
 
 ---
 
@@ -381,7 +381,7 @@ Admite extracción de facetas. Proporciona bloques para cada valor de propiedad 
 
 * **profundidad**
 
-  Número de niveles de comodín bajo los cuales puede existir la propiedad o ruta relativa (por ejemplo, `property=size depth=2` comprueba nodo/tamaño, node/&ast;/size y node/&ast;/&ast;/size).
+  Número de niveles de comodín bajo los cuales puede existir la propiedad o ruta relativa (por ejemplo, `property=size depth=2` comprueba el nodo/tamaño, node/ast;/size y node/ast;/&amp;ast;/size).
 
 ### rangeProperty {#rangeproperty}
 
@@ -483,7 +483,7 @@ El nombre &quot;root&quot; nunca se utiliza en una consulta, está implícito.
 
    * **selectivo**:
 
-     Solo las propiedades especificadas en `p.properties`, que es una lista de rutas relativas separadas por espacios (utilice &quot;+&quot; en las direcciones URL); si la ruta relativa tiene una profundidad > 1, estas se representan como objetos secundarios; la propiedad especial jcr:path incluye la ruta de la visita
+     Solo las propiedades especificadas en `p.properties`, que es una lista de rutas relativas separadas por espacio (utilice &quot;+&quot; en las direcciones URL); si la ruta relativa tiene una profundidad > 1, estas se representan como objetos secundarios; la propiedad especial jcr:path incluye la ruta de la visita
 
 ### savedquery {#savedquery}
 
