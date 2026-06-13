@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2915'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Las aplicaciones basadas en Web que permiten a un usuario rellenar formularios interactivos requieren que los datos se devuelvan al servidor. Con el servicio Forms, puede recuperar los datos introducidos por el usuario en un formulario interactivo. Una vez recuperados los datos, puede procesarlos para satisfacer sus necesidades empresariales. Por ejemplo, puede almacenar los datos en una base de datos, enviarlos a otra aplicación, enviarlos a otro servicio, combinar los datos en un diseño de formulario, mostrar los datos en un explorador web, etc.
 
-Los datos de formulario se envían al servicio Forms como datos XML o de PDF, que es una opción que se establece en Designer. Un formulario enviado como XML permite extraer valores de datos de campo individuales. Es decir, puede extraer el valor de cada campo de formulario que el usuario haya introducido en el formulario. Un formulario enviado como datos de PDF son datos binarios, no datos XML. Puede guardar el formulario como archivo de PDF o enviarlo a otro servicio. Si desea extraer datos de un formulario enviado como XML y, a continuación, utilizar los datos del formulario para crear un documento de PDF, invoque otra operación de AEM Forms. (Consulte [Creación de documentos de PDF con datos XML enviados](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+Los datos de formulario se envían al servicio Forms como datos XML o PDF, que es una opción que se establece en Designer. Un formulario enviado como XML permite extraer valores de datos de campo individuales. Es decir, puede extraer el valor de cada campo de formulario que el usuario haya introducido en el formulario. Un formulario enviado como datos de PDF son datos binarios, no datos XML. Puede guardar el formulario como un archivo PDF o enviarlo a otro servicio. Si desea extraer datos de un formulario enviado como XML y, a continuación, utilizar los datos del formulario para crear un documento de PDF, invoque otra operación de AEM Forms. (Ver [Creación de documentos de PDF con datos XML enviados](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
 El diagrama siguiente muestra los datos que se están enviando a un servlet Java denominado `HandleData` desde un formulario interactivo que se muestra en un explorador web.
 
@@ -73,7 +73,7 @@ uso de clases XML de Java.
 
 ## Gestión de datos de PDF enviados {#handling-submitted-pdf-data}
 
-Considere una aplicación web que invoque el servicio de Forms. Una vez que el servicio Forms procesa un formulario interactivo de PDF en un explorador web de cliente, el usuario rellena el formulario y lo vuelve a enviar como datos de PDF. Cuando el servicio de Forms recibe los datos del PDF PDF, puede enviarlos a otro servicio o guardarlos como un archivo de PDF. El diagrama siguiente muestra el flujo lógico de la aplicación.
+Considere una aplicación web que invoque el servicio de Forms. Una vez que el servicio Forms procesa un formulario PDF interactivo en un explorador web de cliente, el usuario rellena el formulario y lo vuelve a enviar como datos de PDF. Cuando el servicio de Forms recibe los datos de PDF, puede enviar los datos de PDF a otro servicio o guardarlos como un archivo de PDF. El diagrama siguiente muestra el flujo lógico de la aplicación.
 
 ![hs_hs_savingforms](assets/hs_hs_savingforms.png)
 
@@ -93,7 +93,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>El servicio Forms procesa un formulario de PDF interactivo en el explorador web del cliente.</p></td>
+   <td><p>El servicio Forms procesa un formulario PDF interactivo en el explorador web del cliente.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -101,14 +101,14 @@ En la tabla siguiente se describen los pasos de este diagrama.
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p>El servicio Forms guarda los datos del PDF como un archivo de PDF. </p></td>
+   <td><p>El servicio Forms guarda los datos de PDF como un archivo PDF. </p></td>
   </tr>
  </tbody>
 </table>
 
 ## Gestión de los datos de URL enviados UTF-16 {#handling-submitted-url-utf-16-data}
 
-Si los datos del formulario se envían como datos UTF-16 de la dirección URL, el equipo cliente requiere Adobe Reader o Acrobat 8.1 o posterior. Además, si el diseño de formulario contiene un botón de envío con codificación de datos URL (HTTP Post) y la opción de codificación de datos es UTF-16, el diseño de formulario debe modificarse en un editor de texto como el Bloc de notas. Puede establecer la opción de codificación en `UTF-16LE` o `UTF-16BE` para el botón de envío. Designer no proporciona esta funcionalidad.
+Si los datos del formulario se envían como datos UTF-16 de la URL, el equipo cliente requiere Adobe Reader o Acrobat 8.1 o posterior. Además, si el diseño de formulario contiene un botón de envío con codificación de datos URL (HTTP Post) y la opción de codificación de datos es UTF-16, el diseño de formulario debe modificarse en un editor de texto como el Bloc de notas. Puede establecer la opción de codificación en `UTF-16LE` o `UTF-16BE` para el botón de envío. Designer no proporciona esta funcionalidad.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Para poder realizar mediante programación una operación de API de cliente de s
 
 **Recuperar datos de formulario**
 
-Para recuperar los datos de formulario enviados, invoca el método `processFormSubmission` del objeto `FormsServiceClient`. Al invocar este método, debe especificar el tipo de contenido del formulario enviado. Cuando los datos se envían desde un explorador web de cliente al servicio de Forms, pueden enviarse como datos XML o de PDF. Para recuperar los datos introducidos en los campos del formulario, los datos se pueden enviar como datos XML.
+Para recuperar los datos de formulario enviados, invoca el método `processFormSubmission` del objeto `FormsServiceClient`. Al invocar este método, debe especificar el tipo de contenido del formulario enviado. Cuando los datos se envían desde un explorador web de cliente al servicio de Forms, pueden enviarse como datos XML o PDF. Para recuperar los datos introducidos en los campos del formulario, los datos se pueden enviar como datos XML.
 
 También puede recuperar campos de formulario de un formulario enviado como datos de PDF estableciendo las siguientes opciones en tiempo de ejecución:
 
@@ -145,12 +145,12 @@ También puede recuperar campos de formulario de un formulario enviado como dato
 Especifique el tipo de contenido del formulario enviado cuando invoca el método `processFormSubmission`. La siguiente lista especifica los valores de tipo de contenido aplicables:
 
 * **text/xml**: representa el tipo de contenido que se utilizará cuando un formulario de PDF envíe datos de formulario como XML.
-* **application/x-www-form-urlencoded**: representa el tipo de contenido que se utilizará cuando un formulario de HTML envíe datos como XML.
-* **aplicación/pdf**: representa el tipo de contenido que se va a utilizar cuando un formulario de PDF envía datos como PDF.
+* **application/x-www-form-urlencoded**: representa el tipo de contenido que se utilizará cuando un formulario de HTML envíe datos en formato XML.
+* **aplicación/pdf**: representa el tipo de contenido que se utilizará cuando un formulario de PDF envíe datos como PDF.
 
 >[!NOTE]
 >
->Observará que hay tres inicios rápidos correspondientes asociados con la sección Gestión de Forms enviados. El Inicio rápido Gestión de PDF forms enviados como PDF mediante la API de Java muestra cómo gestionar los datos de PDF enviados. El tipo de contenido especificado en este inicio rápido es `application/pdf`. El Inicio rápido Gestión de PDF forms enviados como XML mediante la API de Java muestra cómo gestionar los datos XML enviados desde un formulario de PDF. El tipo de contenido especificado en este inicio rápido es `text/xml`. Del mismo modo, el Inicio rápido Administrar formularios de HTML enviados como XML mediante la API de Java muestra cómo administrar los datos XML enviados desde un formulario de HTML. El tipo de contenido especificado en este inicio rápido es application/x-www-form-urlencoded.
+>Observará que hay tres inicios rápidos correspondientes asociados con la sección Gestión de Forms enviados. El Inicio rápido Gestión de PDF forms enviado como PDF mediante la API de Java muestra cómo gestionar los datos de PDF enviados. El tipo de contenido especificado en este inicio rápido es `application/pdf`. El Inicio rápido Gestión de PDF forms enviado como XML mediante la API de Java muestra cómo gestionar los datos XML enviados desde un formulario de PDF. El tipo de contenido especificado en este inicio rápido es `text/xml`. Del mismo modo, el Inicio rápido Administrar formularios HTML enviados como XML mediante la API de Java muestra cómo administrar los datos XML enviados desde un formulario de HTML. El tipo de contenido especificado en este inicio rápido es application/x-www-form-urlencoded.
 
 Los datos de formulario que se publicaron en el servicio Forms se recuperan y se determina su estado de procesamiento. Es decir, cuando se envían datos al servicio de Forms, no significa necesariamente que el servicio de Forms haya terminado de procesar los datos y que estos estén listos para procesarse. Por ejemplo, se pueden enviar datos al servicio Forms para poder realizar un cálculo. Cuando se completa el cálculo, el formulario se devuelve al usuario con los resultados del cálculo mostrados. Antes de procesar los datos enviados, se recomienda determinar si el servicio Forms ha terminado de procesar los datos.
 
@@ -168,7 +168,7 @@ El servicio Forms devuelve los siguientes valores para indicar si ha terminado d
 
 **Determine si el envío del formulario contiene archivos adjuntos**
 
-Forms enviado al servicio Forms puede contener archivos adjuntos. Por ejemplo, con el panel de archivos adjuntos integrado de Acrobat, un usuario puede seleccionar archivos adjuntos para enviarlos junto con el formulario. Además, un usuario también puede seleccionar archivos adjuntos mediante una barra de herramientas del HTML que se representa con un archivo del HTML.
+Forms enviado al servicio Forms puede contener archivos adjuntos. Por ejemplo, con el panel de archivos adjuntos integrado de Acrobat, un usuario puede seleccionar archivos adjuntos para enviarlos junto con el formulario. Además, un usuario también puede seleccionar archivos adjuntos mediante una barra de herramientas de HTML que se procesa con un archivo de HTML.
 
 Después de determinar si un formulario contiene archivos adjuntos, puede procesar los datos. Por ejemplo, puede guardar el archivo adjunto en el sistema de archivos local.
 
@@ -178,7 +178,7 @@ Después de determinar si un formulario contiene archivos adjuntos, puede proces
 
 **Procesar los datos enviados**
 
-Según el tipo de contenido de los datos enviados, puede extraer valores de campo de formulario individuales de los datos XML enviados o guardar los datos del PDF enviado como un archivo de PDF (o enviarlos a otro servicio). Para extraer campos de formulario individuales, convierta los datos XML enviados a una fuente de datos XML y, a continuación, recupere los valores de la fuente de datos XML utilizando las clases `org.w3c.dom`.
+Según el tipo de contenido de los datos enviados, puede extraer valores de campo de formulario individuales de los datos XML enviados o guardar los datos de PDF enviados como un archivo PDF (o enviarlos a otro servicio). Para extraer campos de formulario individuales, convierta los datos XML enviados a una fuente de datos XML y, a continuación, recupere los valores de la fuente de datos XML utilizando las clases `org.w3c.dom`.
 
 **Consulte también**
 
@@ -217,7 +217,7 @@ Administrar un formulario enviado mediante la API de Forms (Java):
    * Invoque el método `processFormSubmission` del objeto `FormsServiceClient` y pase los siguientes valores:
 
       * El objeto `com.adobe.idp.Document` que contiene los datos del formulario.
-      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que desea gestionar. Para controlar los datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`. Para controlar los datos del PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/pdf`.
+      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que desea gestionar. Para controlar los datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`. Para controlar los datos de PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/pdf`.
       * Un valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`, por ejemplo, . `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Este valor de parámetro es opcional.
       * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
 
@@ -245,25 +245,25 @@ Administrar un formulario enviado mediante la API de Forms (Java):
       * Cree un objeto `org.w3c.dom.Document` invocando el método `parse` del objeto `org.w3c.dom.DocumentBuilder` y pasando el objeto `java.io.InputStream`.
       * Recupere el valor de cada nodo dentro del documento XML. Una manera de realizar esta tarea es crear un método personalizado que acepte dos parámetros: el objeto `org.w3c.dom.Document` y el nombre del nodo cuyo valor desee recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue este proceso, este método personalizado se llama `getNodeText`. Se muestra el cuerpo de este método.
 
-   * Si el tipo de contenido de datos es `application/pdf`, cree una lógica de aplicación para guardar los datos del PDF enviado como un archivo de PDF.
+   * Si el tipo de contenido de datos es `application/pdf`, cree una lógica de aplicación para guardar los datos de PDF enviados como un archivo de PDF.
 
       * Cree un objeto `com.adobe.idp.Document` invocando el método `getOutputContent` del objeto `FormsResult`.
       * Cree un objeto `java.io.File` mediante su constructor público. Asegúrese de especificar PDF como la extensión del nombre de archivo.
-      * Rellene el archivo de PDF invocando el método `copyToFile` del objeto `com.adobe.idp.Document` y pasando el objeto `java.io.File`.
+      * Rellene el archivo PDF invocando el método `copyToFile` del objeto `com.adobe.idp.Document` y pasando el objeto `java.io.File`.
 
 **Consulte también**
 
-[SOAP Inicio rápido (modo de): Gestión de PDF forms enviados como XML mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Inicio rápido (modo SOAP): Gestión de PDF forms enviado como XML mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[SOAP Inicio rápido (modo de): Administrar formularios de HTML enviados como XML mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[Inicio rápido (modo SOAP): Administrar formularios de HTML enviados como XML mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[SOAP Inicio rápido (modo de): Gestión de PDF forms enviados como PDF mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Inicio rápido (modo SOAP): Gestión de PDF forms enviado como PDF mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Administrar los datos de los PDF enviados mediante la API del servicio web {#handle-submitted-pdf-data-using-the-web-service-api}
+## Administrar los datos de PDF enviados mediante la API de servicio web {#handle-submitted-pdf-data-using-the-web-service-api}
 
 Administrar un formulario enviado mediante la API de Forms (servicio web):
 
@@ -288,7 +288,7 @@ Administrar un formulario enviado mediante la API de Forms (servicio web):
    * Invoque el método `processFormSubmission` del objeto `FormsService` y pase los siguientes valores:
 
       * El objeto `BLOB` que contiene los datos del formulario.
-      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que desea gestionar. Para controlar los datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`. Para controlar los datos del PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/pdf`.
+      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que desea gestionar. Para controlar los datos XML, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=text/xml`. Para controlar los datos de PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/pdf`.
       * Valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
       * Un objeto `BLOBHolder` vacío que ha rellenado el método.
@@ -319,7 +319,7 @@ Administrar un formulario enviado mediante la API de Forms (servicio web):
       * Cree un objeto `org.w3c.dom.Document` invocando el método `parse` del objeto `org.w3c.dom.DocumentBuilder` y pasando el objeto `java.io.InputStream`.
       * Recupere el valor de cada nodo dentro del documento XML. Una manera de realizar esta tarea es crear un método personalizado que acepte dos parámetros: el objeto `org.w3c.dom.Document` y el nombre del nodo cuyo valor desee recuperar. Este método devuelve un valor de cadena que representa el valor del nodo. En el ejemplo de código que sigue este proceso, este método personalizado se llama `getNodeText`. Se muestra el cuerpo de este método.
 
-   * Si el tipo de contenido de datos es `application/pdf`, cree una lógica de aplicación para guardar los datos del PDF enviado como un archivo de PDF.
+   * Si el tipo de contenido de datos es `application/pdf`, cree una lógica de aplicación para guardar los datos de PDF enviados como un archivo de PDF.
 
       * Cree un objeto `BLOB` invocando el método `getOutputContent` del objeto `FormsResult`.
       * Cree una matriz de bytes invocando el método `getBinaryData` del objeto `BLOB`.

@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Para las suscripciones de Communities, es posible habilitar o deshabilitar la ca
 
   Si se añade un ID de rastreador al cuerpo del mensaje, se utiliza este prefijo. El valor predeterminado es `Please do not remove this:`.
 
-* **[!UICONTROL Enviar correo electrónico como HTML]**: si se selecciona, el tipo de contenido del correo electrónico se establece como `"text/html;charset=utf-8"`. La opción predeterminada está activada.
+* **[!UICONTROL Correo electrónico como HTML]**: si se selecciona, el tipo de contenido del correo electrónico se establece como `"text/html;charset=utf-8"`. La opción predeterminada está activada.
 
 * **[!UICONTROL Nombre de usuario predeterminado]**
 
@@ -182,9 +182,9 @@ Para que el correo electrónico se introduzca en el repositorio, es necesario co
 
 * **[!UICONTROL URL]**
 
-  *(Obligatorio)* El servidor de correo saliente. Por ejemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**`.
+  *(Obligatorio)* El servidor de correo saliente. Por ejemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL Importar a ruta]**&ast;
+* **[!UICONTROL Importar a ruta]**&amp;ast;
 
   *(obligatorio)* establecido en `/content/usergenerated/mailFolder/postEmails`
 navegue hasta la carpeta `postEmails`y seleccione **Aceptar**.

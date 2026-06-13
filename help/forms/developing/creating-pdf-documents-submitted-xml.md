@@ -12,18 +12,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1334'
 ht-degree: 1%
 
 ---
 
-# Crear documentos de PDF con datos XML enviados {#creating-pdf-documents-with-submittedxml-data}
+# Crear documentos PDF con datos XML enviados {#creating-pdf-documents-with-submittedxml-data}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-## Crear documentos de PDF con datos XML enviados {#creating-pdf-documents-with-submitted-xml-data}
+## Crear documentos PDF con datos XML enviados {#creating-pdf-documents-with-submitted-xml-data}
 
-Las aplicaciones basadas en Web que permiten a los usuarios rellenar formularios interactivos requieren que los datos se devuelvan al servidor. Con el servicio Forms, puede recuperar los datos de formulario introducidos por el usuario en un formulario interactivo. A continuación, puede pasar los datos del formulario a otra operación del servicio AEM Forms y crear un documento del PDF utilizando los datos.
+Las aplicaciones basadas en Web que permiten a los usuarios rellenar formularios interactivos requieren que los datos se devuelvan al servidor. Con el servicio Forms, puede recuperar los datos de formulario introducidos por el usuario en un formulario interactivo. A continuación, puede pasar los datos del formulario a otra operación del servicio AEM Forms y crear un documento de PDF utilizando los datos.
 
 >[!NOTE]
 >
@@ -34,19 +34,19 @@ Tenga en cuenta el siguiente flujo de trabajo que implica tres servicios de AEM 
 * Un usuario envía datos XML al servicio Forms desde una aplicación basada en web.
 * El servicio Forms se utiliza para procesar el formulario enviado y extraer los campos del formulario. Se pueden procesar los datos del formulario. Por ejemplo, los datos se pueden enviar a una base de datos empresarial.
 * Los datos de formulario se envían al servicio Output para crear un documento de PDF no interactivo.
-* El documento no interactivo del PDF se almacena en Content Services (obsoleto).
+* El documento no interactivo de PDF se almacena en Content Services (obsoleto).
 
 El diagrama siguiente proporciona una representación visual de este flujo de trabajo.
 
 ![cd_cd_finsrv_Architecture_xml_pdf1](assets/cd_cd_finsrv_architecture_xml_pdf1.png)
 
-Una vez que el usuario envía el formulario desde el explorador web del cliente, el documento no interactivo del PDF se almacena en Content Services (obsoleto). La siguiente ilustración muestra un documento de PDF almacenado en Content Services (obsoleto).
+Una vez que el usuario envía el formulario desde el explorador web del cliente, el documento no interactivo de PDF se almacena en Content Services (obsoleto). La siguiente ilustración muestra un documento de PDF almacenado en Content Services (obsoleto).
 
 ![cd_cd_cs_gui](assets/cd_cd_cs_gui.png)
 
 ### Resumen de los pasos {#summary-of-steps}
 
-Para crear un documento de PDF no interactivo con datos XML enviados y almacenarlo en el documento de PDF en Content Services (obsoleto), realice las siguientes tareas:
+Para crear un documento no interactivo de PDF con datos XML enviados y almacenarlos en el documento de PDF en Content Services (obsoleto), realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
 1. Crear objetos de Forms, Output y Document Management.
@@ -66,7 +66,7 @@ Para poder realizar mediante programación una operación de API de servicio de 
 
 Recupere los datos de formulario enviados al servicio Forms. Puede procesar los datos enviados para satisfacer sus necesidades comerciales. Por ejemplo, puede almacenar datos de formulario en una base de datos empresarial. Sin embargo, para crear un documento de PDF no interactivo, los datos del formulario se pasan al servicio Output.
 
-**Crear un documento de PDF no interactivo mediante el servicio Output.**
+**Crear un documento no interactivo de PDF mediante el servicio Output.**
 
 Utilice el servicio Output para crear un documento de PDF no interactivo basado en un diseño de formulario y datos de formulario XML. En el flujo de trabajo, los datos del formulario se recuperan del servicio de Forms.
 
@@ -123,11 +123,11 @@ Cree un documento de PDF con datos XML enviados mediante la API de Forms, Output
    * Un valor de enumeración `TransformationFormat`. Para generar un documento de PDF, especifique `TransformationFormat.PDF`.
    * Un valor de cadena que especifica el nombre del diseño de formulario. Asegúrese de que el diseño de formulario sea compatible con los datos de formulario recuperados del servicio de Forms.
    * Valor de cadena que especifica la raíz de contenido donde se encuentra el diseño de formulario.
-   * Objeto `PDFOutputOptionsSpec` que contiene opciones de tiempo de ejecución de PDF.
+   * Un objeto `PDFOutputOptionsSpec` que contiene opciones en tiempo de ejecución de PDF.
    * Objeto `RenderOptionsSpec` que contiene opciones de procesamiento en tiempo de ejecución.
    * El objeto `com.adobe.idp.Document` que contiene el origen de datos XML que contiene los datos que se van a combinar con el diseño de formulario. Asegúrese de que el método `getOutputContent` del objeto `FormsResult` devolvió este objeto.
    * El método `generatePDFOutput` devuelve un objeto `OutputResult` que contiene los resultados de la operación.
-   * Recupere el documento no interactivo del PDF invocando el método `getGeneratedDoc` del objeto `OutputResult`. Este método devuelve una instancia `com.adobe.idp.Document` que representa el documento de PDF no interactivo.
+   * Recupere el documento no interactivo de PDF invocando el método `getGeneratedDoc` del objeto `OutputResult`. Este método devuelve una instancia `com.adobe.idp.Document` que representa el documento no interactivo de PDF.
 
 1. Almacenar el formulario de PDF en Content Services (obsoleto) mediante el servicio Document Management
 
@@ -136,7 +136,7 @@ Cree un documento de PDF con datos XML enviados mediante la API de Forms, Output
    * Un valor de cadena que especifica el almacén donde se agrega el contenido. El almacén predeterminado es `SpacesStore`. Este valor es un parámetro obligatorio.
    * Valor de cadena que especifica la ruta de acceso completa del espacio donde se agrega el contenido (por ejemplo, `/Company Home/Test Directory`). Este valor es un parámetro obligatorio.
    * Nombre del nodo que representa el nuevo contenido (por ejemplo, `MortgageForm.pdf`). Este valor es un parámetro obligatorio.
-   * Valor de cadena que especifica el tipo de nodo. Para agregar contenido nuevo, como un archivo de PDF, especifique `{https://www.alfresco.org/model/content/1.0}content`. Este valor es un parámetro obligatorio.
+   * Valor de cadena que especifica el tipo de nodo. Para agregar contenido nuevo, como un archivo PDF, especifique `{https://www.alfresco.org/model/content/1.0}content`. Este valor es un parámetro obligatorio.
    * Un objeto `com.adobe.idp.Document` que representa el contenido. Este valor es un parámetro obligatorio.
    * Valor de cadena que especifica el valor de codificación (por ejemplo, `UTF-8`). Este valor es un parámetro obligatorio.
    * Valor de enumeración `UpdateVersionType` que especifica cómo controlar la información de versión (por ejemplo, `UpdateVersionType.INCREMENT_MAJOR_VERSION` para incrementar la versión del contenido. ) Este valor es un parámetro obligatorio.

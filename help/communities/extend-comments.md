@@ -26,9 +26,9 @@ La ruta al componente es única y hace referencia al componente predeterminado c
 >
 >No se admite la ampliación de un componente [overlay](client-customize.md#overlays).
 
-## Ejemplos {#example}
+## Ejemplo {#example}
 
-AEM Supongamos que el encabezado del componente Comentario debe mostrarse con una apariencia alternativa en un sitio de la instancia de la, mientras que aparece con la visualización predeterminada en otro sitio. En lugar de superponer el comentario predeterminado, que cambia el componente de comentario para todas las instancias, una mejor solución es garantizar que haya varios componentes de comentario disponibles para su uso en varios sitios.
+Supongamos que el encabezado del componente Comentario debe mostrarse con una apariencia alternativa en un sitio de la instancia de AEM, mientras que aparece con la visualización predeterminada en otro sitio. En lugar de superponer el comentario predeterminado, que cambia el componente de comentario para todas las instancias, una mejor solución es garantizar que haya varios componentes de comentario disponibles para su uso en varios sitios.
 
 Para implementar esta solución, cree un componente que amplíe (anule) el existente y modifique el script Handlebars. El área del sitio que utiliza los nuevos comentarios puede utilizar la ampliada, mientras que los sitios que utilizan la apariencia predeterminada no se ven afectados.
 

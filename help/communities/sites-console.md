@@ -12,8 +12,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '3084'
-ht-degree: 0%
+source-wordcount: '2963'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Consulte [Introducción a AEM Communities](/help/communities/getting-started.md)
 
 Antes de crear un sitio de la comunidad, es *necesario*:
 
-* Asegúrese de que se estén ejecutando una o más instancias de Publish.
+* Asegúrese de que se estén ejecutando una o más instancias de publicación.
 * Habilite el [servicio de túnel](/help/communities/deploy-communities.md#tunnel-service-on-author) para administrar miembros y grupos de miembros.
 * Identifique al [editor principal](/help/communities/deploy-communities.md#primary-publisher).
 * [Configurar replicación](/help/communities/deploy-communities.md#replication-agents-on-author) cuando el puerto del editor principal no es el predeterminado (4503).
@@ -61,7 +61,7 @@ Para crear un sitio de la comunidad, seleccione el icono **Crear**.
 
 Para acceder a un sitio de la comunidad existente para crear, modificar, publicar, exportar o agregar un grupo anidado, seleccione el icono de carpeta del sitio.
 
-## Creación del sitio {#site-creation}
+## Creación de sitios {#site-creation}
 
 La consola de creación de sitios proporciona un método paso a paso para combinar características del sitio basadas en una [plantilla y configuración del sitio de la comunidad](/help/communities/sites.md) seleccionadas.
 
@@ -124,7 +124,7 @@ El panel Diseño contiene dos subpaneles para seleccionar el tema y el titular d
 
 ![tema del sitio](assets/sitetheme.png)
 
-El marco de trabajo utiliza `Twitter Bootstrap` para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar una de las muchas temáticas del Bootstrap precargadas para aplicar estilo a la plantilla del sitio de la comunidad seleccionada o se puede cargar una temática del Bootstrap.
+El marco de trabajo utiliza `Twitter Bootstrap` para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar uno de los muchos temas precargados de Bootstrap para aplicar estilo a la plantilla de sitio de la comunidad seleccionada o se puede cargar un tema de Bootstrap.
 
 Cuando se selecciona, la temática se superpone con una marca de verificación azul opaca.
 
@@ -196,13 +196,13 @@ El valor predeterminado está desmarcado.
 
 * **Permitir inicios de sesión sociales: Facebook**
 
-  Si se selecciona, permita que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Facebook. La [configuración de nube de Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez que se haya creado el sitio de la comunidad.
+  Si se selecciona esta opción, se permite que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Facebook. La [configuración de nube de Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez que se haya creado el sitio de la comunidad.
 Si no se selecciona, no se muestra ningún inicio de sesión de Facebook.
 Deje sin marcar un sitio de la comunidad *private*. El valor predeterminado está desmarcado.
 
 * **Permitir inicios de sesión sociales: Twitter**
 
-  Si se selecciona, permita que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Twitter. La [configuración de nube de Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez que se haya creado el sitio de la comunidad.
+  Si se selecciona esta opción, se permite a los visitantes del sitio iniciar sesión con las credenciales de su cuenta de Twitter. La [configuración de nube de Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez que se haya creado el sitio de la comunidad.
 Si no se selecciona, no se muestra ningún inicio de sesión de Twitter.
 Deje sin marcar un sitio de la comunidad *private*. El valor predeterminado está desmarcado.
 
@@ -210,7 +210,7 @@ Deje sin marcar un sitio de la comunidad *private*. El valor predeterminado est�
 >
 >**Permitir inicios de sesión sociales**
 >
->Aunque pueden existir configuraciones de Twitter y Facebook de ejemplo que se pueden seleccionar para un [entorno de producción](/help/sites-administering/production-ready.md), es necesario crear aplicaciones de Twitter y Facebook personalizadas. Ver [Inicio de sesión social con Facebook y Twitter](/help/communities/social-login.md).
+>Aunque pueden existir configuraciones de Facebook y Twitter de ejemplo y seleccionables para un [entorno de producción](/help/sites-administering/production-ready.md), es necesario crear aplicaciones de Facebook y Twitter personalizadas. Ver [Inicio de sesión social con Facebook y Twitter](/help/communities/social-login.md).
 
 #### ETIQUETADO {#tagging}
 
@@ -371,13 +371,13 @@ Al pasar el ratón por encima de un sitio o tocar una tarjeta del sitio, aparece
 
 ## Creación de contenido del sitio {#authoring-site-content}
 
-AEM El contenido de un sitio puede crearse con las mismas herramientas que cualquier otro sitio web de la. Para abrir el sitio para la creación, seleccione el icono `Open Site` que aparece al pasar el ratón por el sitio. El sitio se abre en una nueva ficha de forma que la consola Sitios de Communities permanece accesible.
+El contenido de un sitio puede crearse con las mismas herramientas que cualquier otro sitio web de AEM. Para abrir el sitio para la creación, seleccione el icono `Open Site` que aparece al pasar el ratón por el sitio. El sitio se abre en una nueva ficha de forma que la consola Sitios de Communities permanece accesible.
 
 ![contenido del sitio](assets/site-content.png)
 
 >[!NOTE]
 >
->AEM Si no está familiarizado con el uso de las páginas, vea la documentación sobre [manejo básico](/help/sites-authoring/basic-handling.md) y una [guía rápida para crear páginas](/help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vea la documentación sobre [manejo básico](/help/sites-authoring/basic-handling.md) y una [guía rápida para crear páginas](/help/sites-authoring/qg-page-authoring.md).
 
 ## Modificación de propiedades del sitio {#modifying-site-properties}
 
@@ -511,7 +511,7 @@ Para obtener más información, consulte [Administración de usuarios y grupos d
 >[!NOTE]
 >
 >Si [Permitir inicio de sesión social: Facebook](#user-management) está habilitado, una vez que el grupo de usuarios `community-<site-name>-<uid>-members`
->se ha creado, el [servicio de nube Facebook](/help/communities/social-login.md#createafacebookcloudservice) aplicado debe configurarse para agregar usuarios a este grupo.
+>se ha creado, el [servicio en la nube de Facebook](/help/communities/social-login.md#createafacebookcloudservice) aplicado debe configurarse para agregar usuarios a este grupo.
 
 ## Configurar para error de autenticación {#configure-for-authentication-error}
 
@@ -519,7 +519,7 @@ De forma predeterminada, un sitio de la comunidad redirige a una página de inic
 
 Para redirigir correctamente, una vez que se ha configurado un sitio y se ha insertado para publicarlo, complete estos pasos para obtener el error de autenticación para redirigir al sitio de la comunidad:
 
-* AEM En cada instancia de publicación de la.
+* En cada instancia de publicación de AEM.
 * Iniciar sesión con privilegios de administrador.
 * Acceda a la [consola web](/help/sites-deploying/configuring-osgi.md).
 
@@ -540,7 +540,7 @@ Para redirigir correctamente, una vez que se ha configurado un sitio y se ha ins
 
 ### Probar redirección de autenticación {#test-authentication-redirection}
 
-AEM En la misma instancia de publicación de configurada con una asignación de página de inicio de sesión para el sitio de la comunidad:
+En la misma instancia de publicación de AEM configurada con una asignación de página de inicio de sesión para el sitio de la comunidad:
 
 * Vaya a la página de inicio del sitio de la comunidad.
 

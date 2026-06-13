@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
 
 **Aplicaciones procesadas del lado del servidor**
 
-1. Cargue el inicio del trabajador de servicio (`srvinit.js`) incluyendo el siguiente script en la sección del encabezado de la página del HTML:
+1. Cargue el inicio del trabajador de servicio (`srvinit.js`) incluyendo el siguiente script en la sección del encabezado de su página de HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -32,7 +32,7 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
 
    Adobe recomienda cargar este script _antes de_ cualquier otro script para que el trabajador de servicio inicie la inicialización de inmediato.
 
-1. Incluya el siguiente código de etiqueta de imagen DPR en la parte superior de la sección del cuerpo de la página de HTML:
+1. Incluya el siguiente código de etiqueta de imagen DPR en la parte superior de la sección del cuerpo de su página de HTML:
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -43,11 +43,11 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   Es obligatorio incluir este código de etiqueta de imagen DPR _antes_ de todas las imágenes estáticas en la página de HTML.
+   Es obligatorio incluir este código de etiqueta de imagen DPR _antes_ de todas las imágenes estáticas en su página de HTML.
 
 **Aplicaciones procesadas del lado del cliente**
 
-1. Incluya los siguientes scripts de DPR en la sección de encabezado de la página de HTML:
+1. Incluya los siguientes scripts de DPR en la sección de encabezado de su página de HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -56,12 +56,12 @@ El RGPD del lado del cliente le proporciona valores de precisión del 100 % y fu
 
    Puede combinar ambos scripts de DPR en uno para evitar varias solicitudes de red.
 
-   El Adobe recomienda cargar estos scripts _antes_ de cualquier otro script en la página del HTML.
-El Adobe también recomienda almacenar la aplicación en Bootstrap con la etiqueta de HTML de diferencia en lugar de con un elemento de cuerpo. El motivo es que `dprImageInjection.js` inserta dinámicamente la etiqueta de imagen en la parte superior de la sección del cuerpo de la página del HTML.
+   Adobe recomienda cargar estos scripts _antes_ de cualquier otro script en la página de HTML.
+Adobe también recomienda que Bootstrap la aplicación con la etiqueta HTML de diferenciación en lugar de con un elemento de cuerpo. El motivo es que `dprImageInjection.js` inserta dinámicamente la etiqueta de imagen en la parte superior de la sección del cuerpo de la página de HTML.
 
 ## Descarga de archivos JavaScript {#client-side-dpr-script}
 
-Los siguientes archivos JavaScript de la descarga solo se proporcionan como referencia de ejemplo. Si tiene intención de utilizar estos archivos en páginas de HTML, asegúrese de editar el código de cada archivo para adaptarlo a sus necesidades.
+Los siguientes archivos JavaScript de la descarga solo se proporcionan como referencia de ejemplo. Si tiene intención de utilizar estos archivos en páginas de HTML, asegúrese de editar el código de cada archivo para adaptarlo a sus propios requisitos.
 
 * `dprImageInjection.js`
 * `srvinit.js`

@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 0%
+source-wordcount: '1624'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Crear un sitio de la comunidad {#create-a-community-site}
 
-Utilice la instancia de autor para crear un sitio de la comunidad. AEM En la instancia de autor de:
+Utilice la instancia de autor para crear un sitio de la comunidad. En la instancia de autor de AEM:
 
 1. Iniciar sesión con privilegios de administrador.
 1. Desde la navegación global, vaya a **[!UICONTROL Comunidades]** > **[!UICONTROL Sitios]**.
@@ -44,7 +44,7 @@ En el [paso Plantilla del sitio](/help/communities/sites-console.md#step2013asit
 * **Descripción del sitio de la comunidad**: `A site for engaging with the community.`
 * **Raíz del sitio de la comunidad**: (dejar en blanco para la raíz predeterminada `/content/sites`)
 * **Configuraciones de nube**: (déjelo en blanco si no se especifican configuraciones de nube) proporcione la ruta a las configuraciones de nube especificadas.
-* **Idioma base del sitio de la comunidad**: (no tocar para un solo idioma: inglés) use la lista desplegable para elegir uno o más *3&rbrace; idiomas base entre los idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado).* Se crea un sitio de la comunidad para cada idioma agregado y existe en la misma carpeta del sitio según la práctica recomendada descrita en [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md). La página raíz de cada sitio contiene una página secundaria denominada por el código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
+* **Idioma base del sitio de la comunidad**: (no tocar para un solo idioma: inglés) use la lista desplegable para elegir uno o más *3} idiomas base entre los idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado).* Se crea un sitio de la comunidad para cada idioma agregado y existe en la misma carpeta del sitio según la práctica recomendada descrita en [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md). La página raíz de cada sitio contiene una página secundaria denominada por el código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
 
 * **Nombre del sitio de la comunidad**: engarzar
 
@@ -91,13 +91,13 @@ Marque todas las casillas de verificación de [Administración de usuarios](/hel
 
 >[!NOTE]
 >
->Para un entorno de producción, es necesario crear aplicaciones de Twitter y Facebook personalizadas. Ver [Inicio de sesión social con Facebook y Twitter](/help/communities/social-login.md).
+>Para un entorno de producción, es necesario crear aplicaciones personalizadas de Facebook y Twitter. Ver [Inicio de sesión social con Facebook y Twitter](/help/communities/social-login.md).
 
 ![configuración del sitio de la comunidad](assets/site-settings.png)
 
 #### ETIQUETADO {#tagging}
 
-AEM Las etiquetas aplicadas al contenido de la comunidad se controlan seleccionando áreas de nombres definidas previamente mediante la [Consola de etiquetado](/help/sites-administering/tags.md#tagging-console) (como el [espacio de nombres del tutorial](/help/communities/setup.md#create-tutorial-tags)).
+Las etiquetas aplicadas al contenido de la comunidad se controlan seleccionando áreas de nombres de AEM previamente definidas a través de la [Consola de etiquetado](/help/sites-administering/tags.md#tagging-console) (como el [espacio de nombres de tutorial](/help/communities/setup.md#create-tutorial-tags)).
 
 Encontrar áreas de nombres es fácil mediante la búsqueda de escritura anticipada. Por ejemplo,
 
@@ -119,7 +119,7 @@ Por ejemplo,
 
 >[!NOTE]
 >
->[El servicio de túnel](https://helpx.adobe.com/es/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) permite la selección de miembros y grupos que sólo existen en el entorno de publicación.
+>[El servicio de túnel](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) permite la selección de miembros y grupos que sólo existen en el entorno de publicación.
 
 ![roles de usuario en el nuevo sitio](assets/site-admin-1.png)
 
@@ -160,7 +160,7 @@ Cuando el proceso termina, la carpeta del nuevo sitio se muestra en la consola C
 
 ![communitiessitesconsole](assets/communitiessitesconsole.png)
 
-## Publish el sitio de la comunidad {#publish-the-community-site}
+## Publicar el sitio de la comunidad {#publish-the-community-site}
 
 El sitio creado debe administrarse desde la consola Comunidades - Sitios, la misma consola desde la que se pueden crear nuevos sitios.
 
@@ -182,9 +182,9 @@ De izquierda a derecha son:
 
   Al seleccionar el icono de propiedades, se abre el sitio de la comunidad para modificar las propiedades, como el título o para cambiar el tema.
 
-* **Sitio de Publish**
+* **Publicar sitio**
 
-  Al seleccionar el icono del mundo, se publica el sitio de la comunidad (por ejemplo, si el servidor de publicación se está ejecutando en el equipo local y, a continuación, en localhost:4503 de forma predeterminada).
+  Al seleccionar el icono del mundo, se publica el sitio de la comunidad (por ejemplo, si el servidor de publicación se está ejecutando en el equipo local, a continuación, en localhost:4503 de forma predeterminada).
 
 * **Exportar sitio**
 
@@ -207,11 +207,11 @@ De izquierda a derecha son:
 >1. Seleccione **[!UICONTROL Agente predeterminado (publicar)]**.
 >1. Junto a **[!UICONTROL Configuración]**, seleccione **[!UICONTROL Editar]**.
 >1. En el cuadro de diálogo emergente de Configuración del agente, seleccione la ficha **[!UICONTROL Transporte]**.
->1. En URI, cambie el número de puerto 4503 por el número de puerto deseado. Por ejemplo, para utilizar el puerto 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
+>1. En URI, cambie el número de puerto 4503 por el número de puerto deseado. Por ejemplo, para usar el puerto 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >1. Seleccione **[!UICONTROL Aceptar]**.
 >1. (Opcional) Seleccione **[!UICONTROL Borrar]** o **[!UICONTROL Forzar reintento]** para restablecer la cola de replicación.
 
-### Seleccionar Publish {#select-publish}
+### Seleccionar publicación {#select-publish}
 
 Después de asegurarse de que el servidor de publicación se está ejecutando, seleccione el icono del mundo para publicar el sitio de la comunidad.
 
@@ -309,16 +309,16 @@ Si no puede guardar los cambios, asegúrese de que el nombre del nodo es `localh
 
 #### Solución de problemas: error al redirigir {#troubleshooting-fail-to-redirect}
 
-El &#39;**$**&#39; al final de la cadena de expresión regular `sling:match`es crucial, de modo que solo se asigna `https://localhost:4503/`; de lo contrario, el valor de redirección se antepone a cualquier ruta de acceso que pueda existir después de server:port en la dirección URL. AEM Por lo tanto, cuando el usuario intenta redirigir a la página de inicio de sesión, se produce un error.
+El &#39;**$**&#39; al final de la cadena de expresión regular `sling:match`es crucial, de modo que solo se asigna `https://localhost:4503/`; de lo contrario, el valor de redirección se antepone a cualquier ruta de acceso que pueda existir después del servidor :port en la dirección URL. Por lo tanto, cuando AEM intenta redirigir a la página de inicio de sesión, se produce un error.
 
 ### Modificación del sitio {#modify-the-site}
 
-AEM Una vez creado el sitio por primera vez, los autores pueden usar el [icono Abrir sitio](/help/communities/sites-console.md#authoring-site-content) para realizar actividades de creación de contenido estándar para la creación de contenido en el sitio de la página web.
+Una vez creado el sitio por primera vez, los autores pueden usar el [icono Abrir sitio](/help/communities/sites-console.md#authoring-site-content) para realizar actividades estándar de creación en AEM.
 
 Además, los administradores pueden usar el [icono Editar sitio](/help/communities/sites-console.md#modifying-site-properties) para modificar las propiedades del sitio, como el título.
 
-Después de realizar cualquier modificación, recuerda **guardar** y volver a **Publish** el sitio.
+Después de realizar cualquier modificación, recuerda **guardar** y volver a **publicar** el sitio.
 
 >[!NOTE]
 >
->AEM Si no está familiarizado con el uso de las páginas, vea la documentación sobre [manejo básico](/help/sites-authoring/basic-handling.md) y una [guía rápida para crear páginas](/help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con AEM, vea la documentación sobre [manejo básico](/help/sites-authoring/basic-handling.md) y una [guía rápida para crear páginas](/help/sites-authoring/qg-page-authoring.md).
