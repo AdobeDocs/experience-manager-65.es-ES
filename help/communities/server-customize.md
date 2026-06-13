@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -62,13 +62,13 @@ Un SocialComponentFactoryManager es un servicio OSGi y tiene acceso a otros serv
 
 Se obtuvo un identificador para el servicio OSGi invocando `com.adobe.cq.social.scf.SocialComponentFactoryManager`
 
-### API HTTP: solicitudes del POST {#http-api-post-requests}
+### API HTTP - Solicitudes POST {#http-api-post-requests}
 
 #### Clase PostOperation {#postoperation-class}
 
-Los extremos del POST de la API HTTP son clases PostOperation definidas al implementar la interfaz `SlingPostOperation` (paquete `org.apache.sling.servlets.post`).
+Los extremos POST de la API HTTP son clases PostOperation definidas al implementar la interfaz `SlingPostOperation` (paquete `org.apache.sling.servlets.post`).
 
-La implementación del extremo `PostOperation` establece `sling.post.operation` en un valor al que responde la operación. Todas las solicitudes de POST con un parámetro:operation establecido en ese valor se delegan a esta clase de implementación.
+La implementación del extremo `PostOperation` establece `sling.post.operation` en un valor al que responde la operación. Todas las solicitudes POST con un parámetro :operation establecido en ese valor se delegan a esta clase de implementación.
 
 `PostOperation` invoca a `SocialOperation`, que realiza las acciones necesarias para la operación.
 

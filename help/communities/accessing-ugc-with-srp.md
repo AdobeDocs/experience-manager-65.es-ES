@@ -1,6 +1,6 @@
 ---
 title: Acceso a UGC con SRP
-description: AEM Cuando un sitio está configurado para utilizar ASRP o MSRP, el UGC real no se almacena en el almacén de nodos (JCR) de la base de datos de administración de nodos (CGU) de la red de distribución de datos (CGU) de la base de datos de usuario (CGU) de la base de datos de usuario (CGU) de la base de datos de datos de usuario (CGU) de la base de datos de usuario (CGU) de la base de datos de usuario (JCR) de la base de datos
+description: Cuando un sitio está configurado para utilizar ASRP o MSRP, el UGC real no se almacena en el almacén de nodos (JCR) de AEM
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -12,7 +12,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ Todos los componentes y características de AEM Communities se basan en la [estr
 
 Antes de crear un sitio de la comunidad, el [proveedor de recursos de almacenamiento (SRP)](/help/communities/working-with-srp.md) debe estar configurado para seleccionar una implementación compatible con la [topología](/help/communities/topologies.md) subyacente. Las implementaciones de SRP se basan en tres opciones de almacenamiento:
 
-1. [ASRP](/help/communities/asrp.md): almacenamiento de Adobe bajo demanda
+1. [ASRP](/help/communities/asrp.md): almacenamiento bajo demanda de Adobe
 1. [MSRP](/help/communities/msrp.md) - MongoDB
 1. [JSRP](/help/communities/jsrp.md) - JCR
 
 ## Acerca del almacenamiento UGC {#about-ugc-storage}
 
-AEM Lo que es importante saber acerca del almacenamiento de UGC es que, cuando un sitio está configurado para usar ASRP o MSRP, el UGC real no se almacena en el almacén de nodos [(JCR).](/help/sites-deploying/data-store-config.md)
+Lo que es importante saber acerca del almacenamiento de UGC es que, cuando un sitio está configurado para usar ASRP o MSRP, el UGC real no se almacena en el [almacén de nodos](/help/sites-deploying/data-store-config.md) (JCR) de AEM.
 
 Aunque puede haber nodos en JCR que sombrean el UGC para proporcionar metadatos útiles, estos nodos no se deben confundir con el UGC real.
 

@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 77%
+source-wordcount: '2076'
+ht-degree: 75%
 
 ---
 
@@ -30,7 +30,7 @@ En el siguiente vídeo se muestra cómo crear, establecer y utilizar variables e
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[Usar variables en vídeo](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
+[Vídeo sobre el uso de variables](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
 Las variables son una extensión de la interfaz [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). Puede usar [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) en ECMAScript para acceder a los metadatos guardados mediante el uso de variables.
 
@@ -63,7 +63,7 @@ Para crear una variable,
    * Modelo de datos de formulario: especifique una ruta del modelo de datos de formulario.
    * ArrayList: especifique un subtipo para la colección.
 
-1. Especifique una descripción opcional para la variable y seleccione ![Guardar icono indicado por una marca de verificación dentro de una casilla.](assets/Done_Icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
+1. Especifique una descripción opcional para la variable y seleccione ![Guardar icono indicado mediante una marca de verificación dentro de una casilla.](assets/Done_Icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
 
 Cuando cree variables, tenga en cuenta las siguientes prácticas:
 
@@ -96,7 +96,7 @@ Para agregar asignaciones entre variables, haga lo siguiente:
 1. Arrastre y suelte el paso **Establecer variable** en el editor de flujo de trabajo, seleccione el paso y seleccione el icono ![Configurar indicado por una llave inglesa.](assets/configure_icon.png) (Configurar).
 1. En el cuadro de diálogo Establecer variable, seleccione **[!UICONTROL Asignación]** > **[!UICONTROL Agregar asignación]**.
 1. En la sección **Variable de mapa**, seleccione la variable para almacenar datos, seleccione el modo de asignación y especifique un valor para almacenar en la variable. Los modos de asignación varían en función del tipo de variable.
-1. Asigne más variables para poder crear una expresión significativa. Seleccione el icono ![Guardar indicado por una marca de verificación dentro de una casilla.](assets/Done_Icon.png) para guardar los cambios.
+1. Asigne más variables para poder crear una expresión significativa. Seleccione ![Guardar icono indicado por una marca de verificación dentro de una casilla.](assets/Done_Icon.png) para guardar los cambios.
 
 ### Ejemplo 1: Consultar una variable XML para establecer el valor de una variable en cadena {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -104,7 +104,7 @@ Seleccione una variable de tipo XML que desee almacenar en un archivo XML. Consu
 
 En este ejemplo, seleccione una variable XML **formdata** para almacenar el archivo **cc-app.xml**. Consulte la variable **formdata** para poder establecer el valor de la variable en cadena **emailaddress** para almacenar el valor de la propiedad **emailAddress** disponible en el archivo **cc-app.xml**.
 
-[Definir vídeo de variable](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
+[Definir vídeo variable](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### Ejemplo 2: Usar una expresión para almacenar valores según otras variables {#example2}
 
@@ -163,7 +163,7 @@ En este ejemplo, antes de definir la expresión de enrutamiento, utilice el [eje
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[O vídeo dividido](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[Vídeo dividido O](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 Del mismo modo, seleccione una ruta de script externa o especifique el script ECMA para las expresiones de enrutamiento para evaluar la rama activa. Seleccione **[!UICONTROL Cambiar nombre de rama]** para especificar un nombre alternativo para la rama.
 
@@ -262,4 +262,4 @@ Para eliminar una variable,
 
 1. En la página Editar flujo de trabajo, seleccione el icono Variables de la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
 1. Seleccione el icono Eliminar junto al nombre de la variable que desee eliminar.
-1. Seleccione el icono ![Listo&quot; indicado por un símbolo de marca de verificación.](assets/Done_Icon.png) para confirmar y eliminar la variable.
+1. Seleccione ![Icono Listo indicado por un símbolo de marca de verificación.](assets/Done_Icon.png) para confirmar y eliminar la variable.

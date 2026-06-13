@@ -8,7 +8,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Para configurar varios editores, siga estos pasos:
 
 ### Configuración adicional para editores de texto enriquecido {#additional-configuration-for-rich-text-editors}
 
-La configuración de varios editores de texto enriquecido es ligeramente diferente, ya que puede configurar cada instancia de RTE individual por separado. Para obtener más información, consulte [configurar el Editor de texto enriquecido](/help/sites-administering/rich-text-editor.md). Para que varios RTE creen una configuración para cada RTE local. El Adobe recomienda crear el nuevo nodo de configuración en `cq:InplaceEditingConfig`, ya que cada RTE individual puede tener una configuración diferente. En el nuevo nodo, cree cada configuración de RTE individual.
+La configuración de varios editores de texto enriquecido es ligeramente diferente, ya que puede configurar cada instancia de RTE individual por separado. Para obtener más información, consulte [configurar el Editor de texto enriquecido](/help/sites-administering/rich-text-editor.md). Para que varios RTE creen una configuración para cada RTE local. Adobe recomienda crear el nuevo nodo de configuración en `cq:InplaceEditingConfig`, ya que cada RTE individual puede tener una configuración diferente. En el nuevo nodo, cree cada configuración de RTE individual.
 
 ```xml
     texttext
@@ -121,4 +121,4 @@ Para obtener información general sobre cómo agregar un editor local, consulte 
 
 >[!MORELIKETHIS]
 >
->* [Configuración del editor de texto enriquecido en el Experience Manager](/help/sites-administering/rich-text-editor.md).
+>* [Configurar el Editor de texto enriquecido en Experience Manager](/help/sites-administering/rich-text-editor.md).
