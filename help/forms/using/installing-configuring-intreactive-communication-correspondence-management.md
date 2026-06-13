@@ -144,7 +144,7 @@ Siga estos pasos en todas las instancias de autor y publicación para incluir el
 
 #### Instalar el paquete de compatibilidad {#install-compatibility-package}
 
-La comunicación interactiva es la forma predeterminada y recomendada de crear comunicaciones con los clientes en AEM 6.5 Forms. Si ha actualizado o migrado desde una versión anterior y piensa seguir utilizando cartas (Administración de correspondencia), instale el [paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
+La comunicación interactiva es la forma predeterminada y recomendada de crear comunicaciones con los clientes en AEM 6.5 Forms. Si ha actualizado o migrado desde una versión anterior y piensa seguir utilizando cartas (Administración de correspondencia), instale el [paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=es).
 
 El paquete de compatibilidad de AEMFD le permite utilizar los siguientes recursos de AEM 6.4 Forms, AEM 6.3 Forms y AEM 6.2 Forms en AEM 6.5 Forms:
 
