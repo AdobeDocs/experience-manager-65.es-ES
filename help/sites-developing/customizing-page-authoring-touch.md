@@ -1,6 +1,6 @@
 ---
 title: Personalización de la creación de páginas
-description: Adobe Experience Manager AEM () proporciona varios mecanismos para permitirle personalizar la funcionalidad de creación de páginas.
+description: Adobe Experience Manager (AEM) proporciona varios mecanismos para permitirle personalizar la funcionalidad de creación de páginas.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 2%
+source-wordcount: '1466'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 >
 >Este documento describe cómo personalizar la creación de páginas en la IU moderna y táctil, y no se aplica a la IU clásica.
 
-Adobe Experience Manager AEM () proporciona varios mecanismos para permitirle personalizar la funcionalidad de creación de páginas (y las [consolas](/help/sites-developing/customizing-consoles-touch.md)) de su instancia de creación.
+Adobe Experience Manager (AEM) proporciona varios mecanismos para permitirle personalizar la funcionalidad de creación de páginas (y las [consolas](/help/sites-developing/customizing-consoles-touch.md)) de su instancia de creación.
 
 * Clientlibs
 
@@ -33,13 +33,13 @@ Adobe Experience Manager AEM () proporciona varios mecanismos para permitirle pe
 
 * Superposiciones
 
-  Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no es necesaria una copia 1:1 del original, ya que la [fusión de recursos de sling](/help/sites-developing/sling-resource-merger.md) permite la herencia.
+  Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la [fusión de recursos de sling](/help/sites-developing/sling-resource-merger.md) permite la herencia.
 
 >[!NOTE]
 >
 >Para obtener más información, consulte [Conjunto de documentación de JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-AEM Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creación de páginas en la instancia de. A continuación se cubre una selección (en un nivel superior).
+Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creación de páginas en la instancia de AEM. A continuación se cubre una selección (en un nivel superior).
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ AEM Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creaci
 >* Usando y creando [clientlibs](/help/sites-developing/clientlibs.md).
 >* Usando y creando [superposiciones](/help/sites-developing/overlays.md).
 >* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* AEM [Estructura de la interfaz de usuario táctil habilitada para la creación de páginas de](/help/sites-developing/touch-ui-structure.md) para obtener detalles de las áreas estructurales utilizadas para la creación de páginas.
+>* [Estructura de la IU táctil de AEM](/help/sites-developing/touch-ui-structure.md) para obtener detalles de las áreas estructurales utilizadas para la creación de páginas.
 >
 
 
@@ -69,7 +69,7 @@ Cuando está editando una página, hay varios [modos](/help/sites-authoring/auth
 
 ### Ejemplo de capa: estado de Live Copy {#layer-example-live-copy-status}
 
-AEM Una instancia de estándar proporciona la capa de MSM. Esto accede a los datos relacionados con la [administración de varios sitios](/help/sites-administering/msm.md) y los resalta en la capa.
+Una instancia estándar de AEM proporciona la capa MSM. Esto accede a los datos relacionados con la [administración de varios sitios](/help/sites-administering/msm.md) y los resalta en la capa.
 
 Para verlo en acción, puede editar cualquier página de [Copia de idioma de We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (o cualquier otra página de Live Copy) y seleccionar el modo **Estado de Live Copy**.
 
@@ -85,7 +85,7 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir proyecto aem-authoring-new-layer-mode en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
+* [Abra el proyecto aem-authoring-new-layer-mode en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
 * Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)
 
 ## Añadir nueva categoría de selección al navegador de recursos {#add-new-selection-category-to-asset-browser}
@@ -100,7 +100,7 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir el proyecto aem-authoring-extension-assetfinder-flickr en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+* [Abra el proyecto aem-authoring-extension-assetfinder-flickr en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
 * Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)
 
 ## Filtrado de recursos {#filtering-resources}
@@ -132,7 +132,7 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir el proyecto aem-authoring-extension-toolbar-screenshot en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
+* [Abra el proyecto aem-authoring-extension-toolbar-screenshot en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 * Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
 
 ## Añadir nuevo editor en contexto {#add-new-in-place-editor}
@@ -184,7 +184,7 @@ En una instalación estándar de AEM:
 
    >[!CAUTION]
    >
-   >AEM Las proporciones de recorte de la propiedad `ratio` se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios autores no notarán ninguna diferencia siempre que defina claramente la propiedad `name`, ya que esto es lo que se muestra en la interfaz de usuario.
+   >Las proporciones de recorte de AEM establecidas por la propiedad `ratio` se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios autores no notarán ninguna diferencia siempre que defina claramente la propiedad `name`, ya que esto es lo que se muestra en la interfaz de usuario.
 
 #### Creación de un nuevo editor in situ {#creating-a-new-in-place-editor}
 
@@ -208,13 +208,13 @@ Para implementar un nuevo editor in situ (dentro de la clientlib):
 
 #### Ejemplo de código para crear un nuevo editor en contexto {#code-sample-for-creating-a-new-in-place-editor}
 
-AEM `aem-authoring-extension-inplace-editor` es un paquete de muestra que muestra cómo crear un editor local en el sitio de la aplicación de la.
+`aem-authoring-extension-inplace-editor` es un paquete de muestra que muestra cómo crear un editor local en AEM.
 
 CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir el proyecto aem-authoring-extension-inplace-editor en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+* [Abra el proyecto aem-authoring-extension-in-place-editor en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 * Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
 
 #### Configuración de varios editores locales {#configuring-multiple-in-place-editors}
@@ -233,7 +233,7 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir el proyecto aem-authoring-extension-header-backtosites en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+* [Abra el proyecto aem-authoring-extension-header-backtosites en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
 
 ## Personalizar el flujo de trabajo de solicitud de activación {#customizing-the-request-for-activation-workflow}

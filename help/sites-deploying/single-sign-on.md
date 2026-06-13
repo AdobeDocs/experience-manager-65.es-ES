@@ -1,6 +1,6 @@
 ---
 title: Inicio de sesión único
-description: Obtenga información sobre cómo configurar el inicio de sesión único (SSO) para una instancia de Adobe Experience Manager AEM ().
+description: Obtenga información sobre cómo configurar el inicio de sesión único (SSO) para una instancia de Adobe Experience Manager (AEM).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
+source-wordcount: '738'
+ht-degree: 5%
 
 ---
 
 # Inicio de sesión único {#single-sign-on}
 
-Inicio de sesión único (SSO) permite a un usuario acceder a varios sistemas después de proporcionar credenciales de autenticación (como nombre de usuario y contraseña) una vez. Un sistema independiente (conocido como autenticador de confianza) realiza la autenticación y proporciona al Experience Manager las credenciales de usuario. El Experience Manager comprueba y aplica los permisos de acceso del usuario (es decir, determina a qué recursos puede acceder el usuario).
+Inicio de sesión único (SSO) permite a un usuario acceder a varios sistemas después de proporcionar credenciales de autenticación (como nombre de usuario y contraseña) una vez. Un sistema independiente (conocido como autenticador de confianza) realiza la autenticación y proporciona a Experience Manager las credenciales de usuario. Experience Manager comprueba y aplica los permisos de acceso del usuario (es decir, determina a qué recursos puede acceder el usuario).
 
 El servicio Controlador de autenticación SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) procesa los resultados de autenticación que proporciona el autenticador de confianza. El Controlador de autenticación SSO busca un Identificador de SSO (SSID) como el valor de un atributo especial en las siguientes ubicaciones en este orden:
 
@@ -37,9 +37,9 @@ Especifique el mismo nombre de atributo para ambos servicios. El atributo está 
 
 ## Configuración de SSO {#configuring-sso}
 
-AEM Para configurar SSO para una instancia de, configure el [Controlador de autenticación SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Para configurar el SSO de una instancia de AEM, configure el [Controlador de autenticación SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. AEM Al trabajar con los servicios, existen varios métodos para administrar las opciones de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+1. Al trabajar con AEM, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
    Por ejemplo, para el conjunto NTLM:
 
@@ -65,11 +65,11 @@ AEM Para configurar SSO para una instancia de, configure el [Controlador de aute
 
 >[!CAUTION]
 >
->AEM Asegúrese de que los usuarios no puedan acceder directamente a la si el SSO está configurado.
+>Asegúrese de que los usuarios no puedan acceder directamente a AEM si se ha configurado el SSO.
 >
->AEM Al requerir que los usuarios pasen a través de un servidor web que ejecute el agente de su sistema SSO, se garantiza que ningún usuario puede enviar directamente un encabezado, cookie o parámetro que lleve al usuario a ser de confianza para los usuarios, ya que el agente filtrará dicha información si se envía desde el exterior.
+>Al requerir que los usuarios pasen por un servidor web que ejecute el agente de su sistema SSO, se garantiza que ningún usuario pueda enviar directamente un encabezado, una cookie o un parámetro que lleve al usuario a ser de confianza para AEM, ya que el agente filtrará esa información si se envía desde el exterior.
 >
->AEM Cualquier usuario que pueda acceder directamente a su instancia de sin pasar por el servidor web podrá actuar como cualquier usuario enviando el encabezado, la cookie o el parámetro si se conocen los nombres.
+>Cualquier usuario que pueda acceder directamente a su instancia de AEM sin pasar por el servidor web podrá actuar como cualquier usuario enviando el encabezado, la cookie o el parámetro si se conocen los nombres.
 >
 >Asegúrese también de que, entre los encabezados, las cookies y los nombres de parámetros de solicitud, solo configure el que sea necesario para la configuración de SSO.
 >
@@ -85,8 +85,7 @@ AEM Para configurar SSO para una instancia de, configure el [Controlador de aute
 >* `disp_iis.ini`
 >* IIS
 >
->En el conjunto `disp_iis.ini`:
->(consulte [instalación de Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=es#microsoft-internet-information-server) para obtener información detallada)
+>En el conjunto `disp_iis.ini`:>(consulte [instalación de Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) para obtener información detallada)
 >
 >* `servervariables=1` (reenvía variables del servidor IIS como encabezados de solicitud a la instancia remota)
 >* `replaceauthorization=1` (reemplaza cualquier encabezado denominado &quot;Autorización&quot; que no sea &quot;Básico&quot; por su equivalente &quot;Básico&quot;)
@@ -106,7 +105,7 @@ Primero se consulta el controlador que mejor coincida con la ruta. Por ejemplo, 
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 Para una solicitud de cookie (mediante la dirección URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 
@@ -154,11 +153,11 @@ O puede usar el siguiente comando curl para enviar el encabezado `TestHeader` a 
 
 >[!NOTE]
 >
->Al utilizar el parámetro de solicitud en un explorador, solo ve parte del HTML, sin CSS. Esto se debe a que todas las solicitudes del HTML se realizan sin el parámetro de solicitud.
+>Al utilizar el parámetro de solicitud en un explorador, solo ve parte de HTML, sin CSS. Esto se debe a que todas las solicitudes de HTML se realizan sin el parámetro de solicitud.
 
-## AEM Eliminación de vínculos de cierre de sesión {#removing-aem-sign-out-links}
+## Eliminar vínculos de cierre de sesión de AEM {#removing-aem-sign-out-links}
 
-AEM Al utilizar SSO, el inicio y cierre de sesión se gestionan externamente, por lo que los vínculos de inicio y cierre de sesión propios ya no son aplicables y deben eliminarse.
+Al utilizar SSO, el inicio y cierre de sesión se gestionan externamente, de modo que los vínculos de cierre de sesión propios de AEM ya no son aplicables y deben eliminarse.
 
 El vínculo de cierre de sesión en la pantalla de bienvenida se puede eliminar siguiendo estos pasos.
 

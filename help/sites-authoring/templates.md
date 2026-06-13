@@ -1,5 +1,5 @@
 ---
-title: 'Creación de plantillas de página  '
+title: Creación de plantillas de página
 description: La plantilla define la estructura de la página resultante y, con el editor de plantillas, la creación y el mantenimiento de plantillas ya no son tareas exclusivas de los desarrolladores
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4832'
-ht-degree: 73%
+source-wordcount: '4886'
+ht-degree: 74%
 
 ---
 
-# Creación de plantillas de página  {#creating-page-templates}
+# Creación de plantillas de página{#creating-page-templates}
 
 Al crear una página, debe seleccionar una plantilla, que se utiliza como base para crear la nueva página. La plantilla define la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar.
 
@@ -31,7 +31,7 @@ La **consola de plantillas** permite a los autores de plantillas lo siguiente:
 El **editor de plantillas** permite a los autores de plantillas:
 
 * Agregue componentes a la plantilla y colóquelos en una cuadrícula adaptable.
-* Preconfigurar los componentes. 
+* Preconfigurar los componentes.
 * Defina qué componentes se pueden editar en las páginas creadas con la plantilla.
 
 Este documento explica cómo un **autor de plantillas** puede utilizar la consola y el editor de plantillas para crear y administrar plantillas editables.
@@ -54,7 +54,7 @@ Para obtener información detallada sobre cómo funcionan las plantillas editabl
 
 Es importante tener en cuenta los siguientes puntos antes de comenzar:
 
-* La creación de una plantilla requiere colaboración. Por este motivo, se indica la [función](#roles) para cada tarea.
+* La creación de una plantilla requiere colaboración. Por este motivo, para cada tarea se indica la [Función. ](#roles)
 
 * Según la configuración de la instancia, AEM proporciona [dos tipos básicos de plantilla](/help/sites-authoring/templates.md#editable-and-static-templates). Esto no afecta a cómo [usa una plantilla para crear una página](#using-a-template-to-create-a-page), pero afecta al tipo de plantilla que puede crear y a cómo se relaciona una página con su plantilla.
 
@@ -182,7 +182,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
    >
    >Cuando se crea una plantilla nueva, se marca como **Borrador** en la consola; esto indica que aún no está disponible para que los autores de páginas la utilicen.
 
-### Definición de las propiedades de la plantilla: autor de plantillas   {#defining-template-properties-template-author}
+### Definición de las propiedades de la plantilla: autor de plantillas {#defining-template-properties-template-author}
 
 Una plantilla puede tener las siguientes propiedades:
 
@@ -233,7 +233,7 @@ Para definir la miniatura de la plantilla, haga lo siguiente:
 
 1. Cuando esté satisfecho con la miniatura, haga clic en **Guardar y cerrar**.
 
-### Habilitación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
+### Habilitación y autorización de una plantilla: autor de plantillas {#enabling-and-allowing-a-template-template-author}
 
 Para poder utilizar una plantilla al crear una página, debe:
 
@@ -295,7 +295,7 @@ Puesto que la plantilla se toma como referencia cuando se representa la página,
 
 1. Seleccione **Publicar** en la barra de herramientas para abrir el asistente.
 
-## Edición de plantillas: autores de plantillas   {#editing-templates-template-authors}
+## Edición de plantillas: autores de plantillas {#editing-templates-template-authors}
 
 Al crear o editar una plantilla, hay distintos aspectos que el autor de plantillas pueden definir. Editar plantillas es similar a crear páginas.
 
@@ -451,7 +451,7 @@ En modo **Structure** del editor de plantillas:
 
   >[!NOTE]
   >
-  >Si se añaden varios componentes del mismo tipo como contenido inicial, la misma política se aplica a todos los componentes. Esto refleja la misma restricción en [**Modo de diseño** para las plantillas estáticas](/help/sites-authoring/default-components-designmode.md).
+  >Si se añaden diversos componentes del mismo tipo como contenido inicial, la misma política se aplica a todos los componentes. Esto refleja la misma restricción en [**Modo de diseño** para las plantillas estáticas](/help/sites-authoring/default-components-designmode.md).
 
   ***Propiedades***
 
@@ -472,7 +472,7 @@ En modo **Structure** del editor de plantillas:
 
   Para quitar una configuración, haga clic en el botón **Eliminar** situado a la derecha de la configuración.
 
-  Para quitar una configuración, haga clic en el botón **&#x200B; Delete**.
+  Para quitar una configuración, haga clic en el botón** Delete**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -490,7 +490,7 @@ En modo **Structure** del editor de plantillas:
 
   >[!NOTE]
   >
-  >[Las directivas de contenido para los componentes que implementan el editor de texto enriquecido](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) solo se pueden definir para las opciones disponibles por RTE a través de su configuración de interfaz de usuario. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[Las directivas de contenido para los componentes que implementan el editor de texto enriquecido](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) solo se pueden definir para las opciones disponibles por RTE a través de su configuración de interfaz de usuario. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política y propiedades (contenedor de diseño)**
 
@@ -695,7 +695,7 @@ Con la opción **Propiedades de la página inicial**, puede definir las [propied
 
 1. Confirme las definiciones con **Listo**.
 
-## Prácticas recomendadas   {#best-practices}
+## Prácticas recomendadas {#best-practices}
 
 Al crear plantillas, debe tener en cuenta lo siguiente:
 

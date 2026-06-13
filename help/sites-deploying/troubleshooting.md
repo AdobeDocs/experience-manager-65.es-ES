@@ -11,7 +11,7 @@ feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -67,12 +67,12 @@ Para solucionar problemas, haga lo siguiente:
 
 >[!NOTE]
 >
->Consulte también [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es).
+>Consulte también [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 
 El propio CRX tiene un espacio de memoria bajo. Si la aplicación que se ejecuta en CRX tiene requisitos de memoria mayores o solicita operaciones con gran cantidad de memoria (por ejemplo, transacciones grandes), la instancia de JVM en la que se ejecuta CRX debe iniciarse con la configuración de memoria adecuada.
 
-Utilice las opciones de comandos de Java™ para definir la configuración de memoria de JVM (por ejemplo, java -Xmx512m -jar crx&ast;.jar para establecer el tamaño de pila en 512 MB).
+Utilice las opciones de comando de Java™ para definir la configuración de memoria de JVM (por ejemplo, java -Xmx512m -jar crx&amp;ast;.jar para establecer el tamaño de la pila en 512 MB).
 
 Especifique la opción de configuración de memoria al iniciar AEM WCM desde la línea de comandos. Los scripts de inicio y parada de WCM de AEM o los scripts personalizados para administrar el inicio de WCM de AEM también se pueden modificar para definir la configuración de memoria necesaria.
 
@@ -80,7 +80,7 @@ Si ya ha definido el tamaño de la pila en 512 MB, puede que desee analizar más
 
 Para crear automáticamente un volcado de la pila cuando se agote la memoria, utilice el siguiente comando:
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 Este método genera un archivo de volcado de la pila (**java_...hprof**) cada vez que el proceso se queda sin memoria. El proceso puede seguir ejecutándose después de que se haya generado el volcado de la pila.
 
@@ -105,7 +105,7 @@ El síntoma habitual es que la ventana Inicio rápido de AEM WCM muestra &quot;A
 
 Además, los registros pueden revelar el motivo por el que el explorador no se inicia.
 
-En ocasiones, la ventana Inicio rápido de AEM WCM muestra el mensaje &quot;AEM WCM running on http://localhost:port/&quot; y el explorador no se inicia automáticamente. En este caso, haga clic en la dirección URL en la ventana de inicio rápido de AEM WCM (es un hipervínculo) o introduzca manualmente la dirección URL en el explorador.
+En ocasiones, la ventana Inicio rápido de AEM WCM muestra el mensaje &quot;AEM WCM en ejecución en http://localhost:port/&quot; y el explorador no se inicia automáticamente. En este caso, haga clic en la dirección URL en la ventana de inicio rápido de AEM WCM (es un hipervínculo) o introduzca manualmente la dirección URL en el explorador.
 
 Si todo lo demás falla, consulte los registros para averiguar qué ha sucedido.
 

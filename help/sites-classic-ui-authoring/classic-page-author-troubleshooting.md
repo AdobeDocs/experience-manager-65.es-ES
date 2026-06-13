@@ -1,5 +1,5 @@
 ---
-title: AEM Solución de problemas durante la creación
+title: Solución de problemas de AEM durante la creación
 description: La sección siguiente trata ciertos problemas que pueden producirse al utilizar AEM, así como sugerencias para solucionarlos.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 27%
+ht-degree: 25%
 
 ---
 
@@ -26,7 +26,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 >[!NOTE]
 >
->AEM AEM Los usuarios que tengan privilegios de administrador y que deseen solucionar problemas con los recursos de administración, pueden utilizar los métodos de solución de problemas descritos en [Solución de problemas de los usuarios (para los administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, consulte al administrador del sistema para obtener información sobre la solución de problemas de la solución de problemas de la.
+>Los usuarios con privilegios de administrador y que deseen solucionar problemas con AEM pueden utilizar los métodos de solución de problemas descritos en [Solución de problemas de AEM (para administradores)](/help/sites-administering/troubleshoot.md). Si no tiene privilegios suficientes, póngase en contacto con el administrador del sistema para solucionar los problemas de AEM.
 
 ## La versión anterior de la página sigue en el sitio publicado {#old-page-version-still-on-published-site}
 
@@ -43,7 +43,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
    * Aquí hay varias posibilidades:
    * Confirme que la página se ha duplicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
    * Borre la caché del navegador local y vuelva a acceder a la página.
-   * Añada `?` al final de la URL de la página. Por ejemplo:
+   * Agregar `?` al final de la dirección URL de la página. Por ejemplo:
 
      `http://localhost:4502/sites.html/content?`
 
@@ -55,7 +55,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Problema**:
 
-   * El Sidekick no está visible al editar una página de contenido en el entorno de creación.
+   * Sidekick no está visible al editar una página de contenido en el entorno de creación.
 
 * **Motivo**:
 
@@ -63,7 +63,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Solución**:
 
-   * Cierre la sesión actual y vuelva a iniciarla. El Sidekick volverá a la posición predeterminada.
+   * Cierre la sesión actual y vuelva a iniciarla. Sidekick volverá a la posición predeterminada.
 
 ## Buscar y reemplazar: no se reemplazan todas las instancias {#find-replace-not-all-instances-are-replaced}
 

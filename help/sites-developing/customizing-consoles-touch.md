@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 0%
+source-wordcount: '689'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ Por ejemplo, se puede superponer la siguiente ubicación dentro de la estructura
 
 >[!NOTE]
 >
->Consulte el artículo de la Base de conocimiento [Solución de problemas de la IU táctil de AEM](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-16935) para obtener más sugerencias y herramientas.
+>Consulte el artículo de la Base de conocimiento [Solución de problemas de la IU táctil de AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935) para obtener más sugerencias y herramientas.
 
 ## Personalización de la Vista Predeterminada para una Consola {#customizing-the-default-view-for-a-console}
 
@@ -151,7 +151,6 @@ Para personalizar las columnas en la vista de lista:
 1. Opcionalmente:
 
    * Si desea conectar datos adicionales, debe escribir [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
-
      Propiedad `pageInfoProviderType`.
 
    Por ejemplo, consulte la clase/paquete adjunto (de GitHub) a continuación.

@@ -7,20 +7,20 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 42%
+source-wordcount: '112'
+ht-degree: 41%
 
 ---
 
 # Autenticación para consultas de Adobe Experience Manager GraphQL remotas en fragmentos de contenido {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Un caso de uso principal para la API de [Adobe Experience Manager AEM () GraphQL para la entrega de fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) es aceptar consultas remotas desde aplicaciones o servicios de terceros. Estas consultas remotas pueden requerir acceso a una API autenticada para asegurar la entrega de contenido sin encabezado.
+Un caso de uso principal para la API de GraphQL de [Adobe Experience Manager (AEM) para la entrega de fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) es aceptar consultas remotas desde aplicaciones o servicios de terceros. Estas consultas remotas pueden requerir acceso a una API autenticada para asegurar la entrega de contenido sin encabezado.
 
 >[!NOTE]
 >
 >Para pruebas y desarrollo, también puede acceder a la API de GraphQL de AEM directamente mediante la [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
 
-AEM Para realizar la autenticación, el servicio de terceros debe autenticarse con el nombre de usuario y la contraseña de la cuenta de la cuenta de la cuenta de.
+Para la autenticación, el servicio de terceros debe autenticarse con el nombre de usuario y la contraseña de la cuenta de AEM.
 
 <!-- 6.5.10.0 - does this content/page need to be migrated? -->
 
