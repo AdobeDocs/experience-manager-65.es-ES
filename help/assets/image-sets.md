@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2274'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -39,12 +39,12 @@ Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas re
 
 | Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
-| Número de recursos duplicados por conjunto | No hay duplicados | 20 ‡ |
+| Número de recursos duplicados por conjunto | Sin duplicados | 20 ‡ |
 | Número máximo de imágenes por conjunto | 5-10 imágenes por conjunto | 1000 |
 
 ‡ práctica recomendada es no tener recursos duplicados en un conjunto. El límite es de 20 duplicados para un solo recurso. Si agrega otro duplicado para ese recurso (dentro de ese conjunto), la solicitud genera un error o ignora el duplicado.
 
-Ver también [limitaciones de Dynamic Media](/help/assets/limitations.md).
+Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
 ## Inicio rápido: Conjuntos de imágenes {#quick-start-image-sets}
 
@@ -84,7 +84,7 @@ Ver también [limitaciones de Dynamic Media](/help/assets/limitations.md).
 
    Seleccione el conjunto de imágenes y podrá previsualizarlo. Seleccione los iconos de miniaturas para examinar el conjunto de imágenes en el visor seleccionado. Puede elegir diferentes visores en el menú **[!UICONTROL Visualizadores]**, disponible en el menú desplegable del carril izquierdo.
 
-1. [Publish y conjunto de imágenes](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Publicar un conjunto de imágenes](/help/assets/publishing-dynamicmedia-assets.md).
 
    La publicación de un conjunto de imágenes activa la URL y el código incrustado. Además, debe [publicar cualquier ajuste preestablecido de visor personalizado](/help/assets/managing-viewer-presets.md) que haya creado. Los ajustes preestablecidos de visualizador listos para usar ya se han publicado.
 
@@ -102,7 +102,7 @@ Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Soluci
 
 ## Carga de recursos en conjuntos de imágenes {#uploading-assets-in-image-sets}
 
-Comience por cargar las imágenes de los conjuntos de imágenes. Cuando elija imágenes, recuerde que los clientes pueden aplicar zoom a las imágenes en el Visor de conjuntos de imágenes. Asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan imágenes de TIFF, PNG y EPS sin pérdidas.
+Comience por cargar las imágenes de los conjuntos de imágenes. Cuando elija imágenes, recuerde que los clientes pueden aplicar zoom a las imágenes en el Visor de conjuntos de imágenes. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan imágenes de TIFF, PNG y EPS sin pérdidas.
 
 Puede cargar imágenes para conjuntos de imágenes del mismo modo que [cargaría cualquier otro recurso en Assets](/help/assets/manage-assets.md#uploading-assets).
 
@@ -132,7 +132,7 @@ Puede crear conjuntos de imágenes a través de la interfaz de usuario o de la A
 >[!NOTE]
 >
 >También puede crear conjuntos de imágenes automáticamente mediante [ajustes preestablecidos de conjuntos de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
->**Importante: IPS (Image Production System) crea** conjuntos de lotes como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
+>**Importante:** IPS (Image Production System) crea los conjuntos de lotes como parte de la ingesta de recursos y solo están disponibles en el modo Dynamic Media - Scene7.
 
 Al agregar recursos al conjunto, estos se agregan automáticamente en orden alfanumérico. Puede reordenar u ordenar manualmente los recursos una vez añadidos.
 
@@ -144,16 +144,16 @@ Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas re
 
 | Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
-| Número de recursos duplicados por conjunto | No hay duplicados | 20 ‡ |
+| Número de recursos duplicados por conjunto | Sin duplicados | 20 ‡ |
 | Número máximo de imágenes por conjunto | 5-10 imágenes por conjunto | 1000 |
 
 ‡ práctica recomendada es no tener recursos duplicados en un conjunto. El límite es de 20 duplicados para un solo recurso. Si agrega otro duplicado para ese recurso (dentro de ese conjunto), la solicitud genera un error o ignora el duplicado.
 
-Ver también [limitaciones de Dynamic Media](/help/assets/limitations.md).
+Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
 **Para crear un conjunto de imágenes:**
 
-1. En Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, vaya a **[!UICONTROL Navegación]** > **[!UICONTROL Assets]**. Vaya a donde desee crear un conjunto de imágenes y, a continuación, vaya a **[!UICONTROL Crear]** > **[!UICONTROL Conjunto de imágenes]** para abrir la página Editor de conjuntos de imágenes.
+1. En Experience Manager, selecciona el logotipo de Experience Manager para acceder a la consola de navegación global y, a continuación, ve a **[!UICONTROL Navegación]** > **[!UICONTROL Assets]**. Vaya a donde desee crear un conjunto de imágenes y, a continuación, vaya a **[!UICONTROL Crear]** > **[!UICONTROL Conjunto de imágenes]** para abrir la página Editor de conjuntos de imágenes.
 
    También puede crear el conjunto desde una carpeta que contenga los recursos.
 
@@ -193,7 +193,7 @@ Ver también [limitaciones de Dynamic Media](/help/assets/limitations.md).
 
    >[!NOTE]
    >
-   >Al crear el conjunto de imágenes, puede cambiar la miniatura del conjunto de imágenes o permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de imágenes. Para seleccionar una miniatura, seleccione **[!UICONTROL Cambiar miniatura]** sobre el campo Título en la página Editor de conjuntos de imágenes y, a continuación, seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que quiere que Experience Manager genere una del conjunto de imágenes, seleccione **[!UICONTROL Cambiar a]** > **[!UICONTROL Miniatura automática]**.
+   >Al crear el conjunto de imágenes, puede cambiar la miniatura del conjunto de imágenes o permitir que Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de imágenes. Para seleccionar una miniatura, seleccione **[!UICONTROL Cambiar miniatura]** sobre el campo Título en la página Editor de conjuntos de imágenes y, a continuación, seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que Experience Manager debe generar una del conjunto de imágenes, seleccione **[!UICONTROL Cambiar a]** > **[!UICONTROL Miniatura automática]**.
 
 1. Seleccione **[!UICONTROL Guardar]**. El conjunto de imágenes recién creado aparecerá en la carpeta en la que lo creó.
 
@@ -217,7 +217,7 @@ Sin embargo, los conjuntos creados mediante ajustes preestablecidos de conjuntos
 
 * Desde la búsqueda, puede seleccionar **[!UICONTROL Filter]**, luego expandir **[!UICONTROL Dynamic Media]** y seleccionar **[!UICONTROL Conjuntos]**.
 
-  La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la búsqueda se realiza utilizando los criterios de búsqueda &quot;Comienza con&quot;, que son diferentes de la búsqueda del Experience Manager, que se basa en el uso de los criterios de búsqueda &quot;Contiene&quot;. Establecer el filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
+  La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la búsqueda se realiza utilizando los criterios de búsqueda &quot;Comienza con&quot;, que son diferentes de la búsqueda de Experience Manager, que se basa en el uso de los criterios de búsqueda &quot;Contiene&quot;. Establecer el filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
 
   ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -248,10 +248,9 @@ Puede realizar varias tareas de edición en conjuntos de imágenes, como las sig
    * Para reordenar los recursos, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover los elementos).
    * Para ordenar los elementos en orden ascendente o descendente, seleccione el encabezado de la columna.
    * Para agregar un recurso o actualizar un recurso existente, seleccione **[!UICONTROL Agregar recurso]**. Vaya a un recurso, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
-
      >[!NOTE]
      >
-     >Si elimina la imagen que el Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
+     >Si elimina la imagen que Experience Manager utiliza para la miniatura reemplazándola por otra imagen, se seguirá mostrando el recurso original.
    * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Ajuste preestablecido]** y, a continuación, seleccione un ajuste preestablecido de visor.
    * Para añadir o cambiar una miniatura, seleccione el icono de miniatura situado junto a la derecha del recurso. Vaya a la nueva miniatura o recurso de muestra, selecciónelo y, a continuación, seleccione **[!UICONTROL Seleccionar]**.
@@ -267,6 +266,6 @@ Puede realizar varias tareas de edición en conjuntos de imágenes, como las sig
 
 Consulte [Vista previa de recursos](/help/assets/previewing-assets.md).
 
-## Publish y un conjunto de imágenes {#publishing-image-sets}
+## Publicación de un conjunto de imágenes {#publishing-image-sets}
 
 Consulte [Publicación de Assets](/help/assets/publishing-dynamicmedia-assets.md).

@@ -21,7 +21,7 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1093
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Consulte también [Administración de ajustes preestablecidos de visor](/help/as
 
 Seleccione [Estación espacial 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del explorador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero del mouse a una nueva ubicación para cambiar el ángulo de visualización.
 
-![Muestra de 360 vídeos con la estación espacial internacional flotando en el espacio exterior y la tierra y el sol detrás.](assets/6_5_360videoiss_simplified.png)
+![Muestra de 360 vídeos con la estación espacial internacional flotando en el espacio ultraterrestre y la tierra y el sol detrás de ella.](assets/6_5_360videoiss_simplified.png)
 *Fotograma de vídeo de la Estación Espacial 360*
 
 ## Vídeo 360/VR y Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
@@ -136,7 +136,7 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
 
      El vídeo de realidad virtual (VR) es contenido de vídeo envolvente al que se accede mediante auriculares de realidad virtual. Al igual que con los vídeos normales, puede crear vídeos de realidad virtual al principio cuando se graba o captura un vídeo con cámaras de vídeo de 360 grados.
 
-   ![Captura de pantalla de un primer plano de la estación espacial internacional flotando en el espacio exterior con la Tierra y el Sol parcialmente visibles al fondo](assets/6_5_360video-preview-video360vr.png)
+   ![Captura de pantalla de un primer plano de la estación espacial internacional flotando en el espacio ultraterrestre con la Tierra y el Sol parcialmente visibles en segundo plano](assets/6_5_360video-preview-video360vr.png)
    *Captura de pantalla de un vídeo de RV de 360.*
 
 1. Cerca de la parte superior derecha de la página de vista previa, seleccione **[!UICONTROL Cerrar]**.
@@ -146,6 +146,6 @@ Consulte [Agregar Dynamic Media Assets a las páginas](/help/assets/adding-dynam
 Publique el vídeo 360 para poder utilizarlo. La publicación de un vídeo 360 activa la URL y el código de incrustación. También publica el vídeo 360 en la nube de Dynamic Media, que está integrada con una CDN para una entrega escalable y con buen rendimiento.
 
 Consulte [Publicar recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar vídeo 360.
-Consulte también [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
-Ver también [URL de vínculo a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
+Ver también [Incrustar el visor de vídeo o de imágenes en una página web](/help/assets/embed-code.md).
+Consulte también [Vincular URL a su aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de Experience Manager Sites.
 Consulte también [Agregar recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).

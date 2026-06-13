@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '741'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -48,11 +48,11 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Para cambiar la ubicación donde el Experience Manager busca los datos del producto, pulsa **[!UICONTROL Examinar]** y navega a otra carpeta.
+   Para cambiar la ubicación donde Experience Manager busca los datos del producto, pulsa **[!UICONTROL Examinar]** y navega a otra carpeta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Seleccione **[!UICONTROL Ordenar]** por para cambiar si el Experience Manager ordena de más reciente a más antiguo o de más antiguo a más reciente.
+   Seleccione **[!UICONTROL Ordenar]** por para cambiar si Experience Manager ordena de más reciente a más antiguo o de más antiguo a más reciente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -86,7 +86,7 @@ Utilice el selector de sitio para elegir una página web cuando desee vincular u
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. En el modo **[!UICONTROL Vista previa]**, si selecciona el punto interactivo o el mapa de imagen, irá a la página del sitio del Experience Manager que haya especificado.
+1. En el modo **[!UICONTROL Vista previa]**, si selecciona el punto interactivo o el mapa de imagen, irá a la página del sitio de Experience Manager que haya especificado.
 
 ## Uso del Selector de recursos {#selecting-assets}
 
@@ -103,7 +103,7 @@ Consulte también [Selector de recursos](search-assets.md#assetpicker) para obte
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Cambie la ubicación de los recursos en la que Experience Manager los busca navegando a otra carpeta en el campo **[!UICONTROL Ruta]**.
+   Cambie la ubicación de los recursos en Experience Manager navegando a otra carpeta en el campo **[!UICONTROL Ruta]**.
 
    Seleccione **[!UICONTROL Colección]** para buscar solamente recursos dentro de las colecciones.
 

@@ -7,8 +7,8 @@ exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 74%
+source-wordcount: '1741'
+ht-degree: 75%
 
 ---
 
@@ -197,7 +197,7 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
 
 * **Guardar** proporciona acceso a la opción **Guardar y cerrar**.
 
-* Los tres puntos (**...**) proporcionan acceso a acciones adicionales:
+* Los tres puntos (**...**) proporciona acceso a acciones adicionales:
    * **Actualizar referencias de página**
       * Esto actualiza cualquier referencia de página.
    * **[Publicación rápida](#publishing-and-referencing-a-fragment)**

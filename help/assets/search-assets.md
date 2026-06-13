@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5839'
+source-wordcount: '5796'
 ht-degree: 5%
 
 ---
@@ -53,7 +53,7 @@ Familiarícese con la interfaz de búsqueda y las acciones disponibles.
 
 *Figura: Comprenda la interfaz de resultados de búsqueda de [!DNL Experience Manager Assets].*
 
-**A.** Guardar búsqueda como una colección inteligente. **B.** Filtros o predicados para reducir los resultados de búsqueda. **C.** Muestra archivos, carpetas o ambos. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Seleccione los resultados de búsqueda cargados. **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **I.** Cierre la búsqueda. **J.** Cambiar entre la vista de tarjeta y la vista de lista.
+**A.** Guardar búsqueda como una colección inteligente. **B.** Filtros o predicados para reducir los resultados de búsqueda. **C.** Muestra archivos, carpetas o ambos. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Seleccione los resultados de búsqueda cargados. **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **I.** Cierre la búsqueda. **J.** Cambiar entre la vista de tarjeta y la vista de lista.
 
 ### Facetas de búsqueda dinámica {#dynamicfacets}
 
@@ -396,26 +396,26 @@ Los predicados se utilizan para crear facetas. Los administradores pueden person
 
 Puede buscar recursos digitales en función de una o varias de las siguientes propiedades. Los filtros que se aplican a algunas de estas propiedades están disponibles de forma predeterminada y algunos otros filtros se pueden crear a medida para aplicarlos a las otras propiedades.
 
-| Campo de búsqueda | Search property values |
+| Campo de búsqueda | Buscar valores de propiedad |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Tipos MIME | Images, Documents, Multimedia, Archives, or Other. |
-| Última modificación | Hour, Day, Week, Month, or Year. |
-| Tamaño del archivo | Small, Medium, or Large. |
-| Estado de publicación | Published or Unpublished. |
-| Approved Status | Approved or Rejected. |
-| Orientación | Horizontal, Vertical, or Square. |
-| Estilo | Color, or Black &amp; White. |
-| Altura del vídeo | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Anchura del vídeo | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Formato de vídeo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Códec de vídeo | x264. Value is stored in the metadata of video renditions only. |
-| Velocidad de bits de vídeo | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Códec de audio | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Velocidad de bits de audio | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Tipos MIME | Imágenes, documentos, multimedia, archivos u otros. |
+| Última modificación | Hora, día, semana, mes o año. |
+| Tamaño del archivo | Pequeño, Medium o Grande. |
+| Estado de publicación | Publicado o no publicado. |
+| Estado aprobado | Aprobado o rechazado. |
+| Orientación | Horizontal, Vertical o Cuadrado. |
+| Estilo | Color o en blanco y negro. |
+| Altura del vídeo | Especificado como valor mínimo y máximo. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
+| Anchura del vídeo | Especificado como valor mínimo y máximo. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
+| Formato de vídeo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. El valor se almacena en los metadatos del vídeo de origen y en las representaciones. |
+| Códec de vídeo | x264. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
+| Velocidad de bits de vídeo | Especificado como valor mínimo y máximo. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
+| Códec de audio | Libvorbis, Lame MP3, codificación AAC. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
+| Velocidad de bits de audio | Especificado como valor mínimo y máximo. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
 
-## Work with asset search results {#aftersearch}
+## Trabajar con resultados de búsqueda de recursos {#aftersearch}
 
-You can do the following with the assets you&#39;ve searched in [!DNL Experience Manager]:
+Puede hacer lo siguiente con los recursos que ha buscado en [!DNL Experience Manager]:
 
 * Ver propiedades de metadatos y otra información.
 * Descargar uno o varios recursos.
@@ -489,10 +489,10 @@ Relacionar y desrelacionar recursos que se muestran en los resultados de búsque
 | No hay disponibles filtros de búsqueda ni predicados. | <ul><li>El filtro de búsqueda no está configurado.</li><li>No está disponible para su inicio de sesión.</li><li>(Menos probable) Las opciones de búsqueda no se personalizan en la implementación que está utilizando.</li></ul> | <ul><li>Póngase en contacto con el administrador para comprobar si las personalizaciones de búsqueda están disponibles o no.</li><li>Póngase en contacto con el administrador para comprobar si su cuenta tiene los privilegios y permisos para utilizar la personalización.</li><li>Póngase en contacto con el administrador y compruebe las personalizaciones disponibles para la implementación de [!DNL Assets] que está utilizando.</li></ul> |
 | Al buscar imágenes visualmente similares, falta una imagen esperada. | <ul><li>La imagen no está disponible en [!DNL Experience Manager].</li><li>La imagen no está indexada. Normalmente, cuando se carga recientemente.</li><li>La imagen no está etiquetada de forma inteligente.</li></ul> | <ul><li>Agregar la imagen a [!DNL Assets].</li><li>Póngase en contacto con el administrador para volver a indexar el repositorio. Además, asegúrese de que está utilizando el índice adecuado.</li><li>Póngase en contacto con el administrador para etiquetar de forma inteligente los recursos relevantes.</li></ul> |
 | Al buscar imágenes visualmente similares, se muestra una imagen irrelevante. | Comportamiento visual de búsqueda. | [!DNL Experience Manager] muestra tantos recursos potencialmente relevantes como sea posible. Las imágenes menos relevantes, si las hay, se añaden a los resultados pero con una clasificación de búsqueda más baja. La calidad de las coincidencias y la relevancia de los recursos buscados disminuyen al desplazarse hacia abajo en los resultados de búsqueda. |
-| Al seleccionar y operar en los resultados de búsqueda, todos los recursos buscados no se operan. | The [!UICONTROL Select All] option only selects the first 100 search results in card view and the first 200 search results in list view. | |
+| Al seleccionar y operar en los resultados de búsqueda, todos los recursos buscados no se operan. | La opción [!UICONTROL Seleccionar todo] solo selecciona los primeros 100 resultados de búsqueda en la vista de tarjeta y los primeros 200 resultados de búsqueda en la vista de lista. | |
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] search implementation guide](https://experienceleague.adobe.com/es/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
->* [Advanced configuration to boost search results](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
+>* [[!DNL Experience Manager] guía de implementación de búsqueda](https://experienceleague.adobe.com/es/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
+>* [Configuración avanzada para mejorar los resultados de búsqueda](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
 
