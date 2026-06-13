@@ -1,5 +1,5 @@
 ---
-title: Interactuar con flujos de trabajo mediante programación
+title: Interacción con flujos de trabajo mediante programación
 description: Aprenda a interactuar con flujos de trabajo mediante programación en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---
 
-# Interactuar con flujos de trabajo mediante programación{#interacting-with-workflows-programmatically}
+# Interacción con flujos de trabajo mediante programación{#interacting-with-workflows-programmatically}
 
 Al [personalizar y ampliar sus flujos de trabajo](/help/sites-developing/workflows-customizing-extending.md), puede acceder a los objetos de flujo de trabajo:
 
@@ -47,7 +47,7 @@ En la tabla siguiente se proporcionan vínculos a la documentación de referenci
 
 ## Obtención de objetos de flujo de trabajo en scripts ECMA {#obtaining-workflow-objects-in-ecma-scripts}
 
-AEM Tal como se describe en [Localización del script](/help/sites-developing/the-basics.md#locating-the-script), el servicio de scripts (a través de Apache Sling) proporciona un motor de scripts ECMA que ejecuta scripts ECMA del lado del servidor. La clase [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) está disponible inmediatamente para los scripts como la variable `sling`.
+Como se describe en [Localización del script](/help/sites-developing/the-basics.md#locating-the-script), AEM (a través de Apache Sling) proporciona un motor de scripts ECMA que ejecuta scripts ECMA del lado del servidor. La clase [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) está disponible inmediatamente para los scripts como la variable `sling`.
 
 La clase `ScriptHelper` proporciona acceso a `SlingHttpServletRequest` que puede utilizar para obtener finalmente el objeto `WorkflowSession`; por ejemplo:
 
@@ -72,9 +72,9 @@ La API de REST admite las siguientes acciones:
 
 >[!NOTE]
 >
->Al utilizar Firebug, una extensión de Firefox para el desarrollo web, es posible seguir el tráfico HTTP cuando se opera la consola. AEM Por ejemplo, puede comprobar los parámetros y los valores enviados al servidor de la con una solicitud `POST`.
+>Al utilizar Firebug, una extensión de Firefox para el desarrollo web, es posible seguir el tráfico HTTP cuando se opera la consola. Por ejemplo, puede comprobar los parámetros y los valores enviados al servidor de AEM con una solicitud `POST`.
 
-AEM En esta página se supone que se ejecuta en el host local en el puerto `4502` y que el contexto de instalación es &quot; `/`&quot; (raíz). Si no es el caso de su instalación, los URI, a los que se aplican las solicitudes HTTP, deben adaptarse en consecuencia.
+En esta página se supone que AEM se ejecuta en localhost en el puerto `4502` y que el contexto de instalación es &quot; `/`&quot; (raíz). Si no es el caso de su instalación, los URI, a los que se aplican las solicitudes HTTP, deben adaptarse en consecuencia.
 
 El procesamiento admitido para `GET` solicitudes es el procesamiento JSON. Las direcciones URL de `GET` deben tener la extensión `.json`, por ejemplo:
 
@@ -98,7 +98,7 @@ Los siguientes métodos de solicitud HTTP se aplican a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Crea una nueva instancia de flujo de trabajo. Los parámetros son: <br /> - <code>model</code>: el identificador (URI) del modelo de flujo de trabajo respectivo <br /> - <code>payloadType</code>: que contiene el tipo de carga útil (por ejemplo, <code>JCR_PATH</code> o URL).<br />: la carga útil se envía como parámetro <code>payload</code>. Se devuelve una respuesta <code>201</code> (<code>CREATED</code>) con un encabezado de ubicación que contiene la dirección URL del nuevo recurso de instancia de flujo de trabajo.</p> </td>
+   <td><p>Crea una nueva instancia de flujo de trabajo. Los parámetros son: <br /> - <code>model</code>: el identificador (URI) del modelo de flujo de trabajo respectivo <br /> - <code>payloadType</code>: que contiene el tipo de carga útil (por ejemplo, <code>JCR_PATH</code> o URL).<br /> La carga útil se envía como parámetro <code>payload</code>. Se devuelve una respuesta <code>201</code> (<code>CREATED</code>) con un encabezado de ubicación que contiene la dirección URL del nuevo recurso de instancia de flujo de trabajo.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -131,7 +131,7 @@ Los siguientes métodos de solicitud HTTP se aplican a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Cambia el estado de la instancia. El nuevo estado se envía como parámetro <code>state</code> y debe tener uno de los siguientes valores: <code>RUNNING</code>, <code>SUSPENDED</code> o <code>ABORTED</code>.<br /> Si no se puede tener acceso al nuevo estado (por ejemplo, al suspender una instancia terminada), se devuelve una respuesta <code>409</code> (<code>CONFLICT</code>) al cliente.</td>
+   <td>Cambia el estado de la instancia. El nuevo estado se envía como parámetro <code>state</code> y debe tener uno de los siguientes valores: <code>RUNNING</code>, <code>SUSPENDED</code> o <code>ABORTED</code>.<br /> Si no se puede tener acceso al nuevo estado (por ejemplo, al suspender una instancia finalizada), se devuelve una respuesta <code>409</code> (<code>CONFLICT</code>) al cliente.</td>
   </tr>
  </tbody>
 </table>
@@ -154,7 +154,7 @@ Los siguientes métodos de solicitud HTTP se aplican a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Crea un nuevo modelo de flujo de trabajo. Si se envía el parámetro <code>title</code>, se crea un nuevo modelo con el título especificado. Al adjuntar una definición de modelo JSON como parámetro <code>model</code>, se crea un nuevo modelo de flujo de trabajo de acuerdo con la definición proporcionada.<br />: se devuelve una respuesta <code>201</code> (<code>CREATED</code>) con un encabezado de ubicación que contiene la dirección URL del nuevo recurso de modelo de flujo de trabajo.<br /> Lo mismo ocurre cuando se adjunta una definición de modelo como parámetro de archivo denominado <code>modelfile</code>.<br /> En ambos casos de los parámetros <code>model</code> y <code>modelfile</code>, se requiere un parámetro adicional denominado <code>type</code> para definir el formato de serialización. Se pueden integrar nuevos formatos de serialización mediante la API OSGI. Se entrega un serializador JSON estándar con el motor de flujo de trabajo. Su tipo es JSON. Consulte a continuación un ejemplo del formato.</td>
+   <td>Crea un nuevo modelo de flujo de trabajo. Si se envía el parámetro <code>title</code>, se crea un nuevo modelo con el título especificado. Al adjuntar una definición de modelo JSON como parámetro <code>model</code>, se crea un nuevo modelo de flujo de trabajo de acuerdo con la definición proporcionada.<br /> Se devuelve una respuesta <code>201</code> (<code>CREATED</code>) con un encabezado de ubicación que contiene la dirección URL del nuevo recurso de modelo de flujo de trabajo.<br /> Lo mismo ocurre cuando se adjunta una definición de modelo como parámetro de archivo denominado <code>modelfile</code>.<br /> En ambos casos de los parámetros <code>model</code> y <code>modelfile</code>, se requiere un parámetro adicional denominado <code>type</code> para definir el formato de serialización. Se pueden integrar nuevos formatos de serialización mediante la API OSGI. Se entrega un serializador JSON estándar con el motor de flujo de trabajo. Su tipo es JSON. Consulte a continuación un ejemplo del formato.</td>
   </tr>
  </tbody>
 </table>
@@ -239,11 +239,11 @@ Donde `*{uri}*` es la ruta al nodo del modelo en el repositorio.
   </tr>
   <tr>
    <td><code>PUT</code></td>
-   <td>Actualiza la versión <code>HEAD</code> del modelo (crea una nueva versión).<br />: la definición completa del modelo para la nueva versión del modelo debe agregarse como parámetro denominado <code>model</code>. Además, se necesita un parámetro <code>type</code>, ya que al crear nuevos modelos necesita tener el valor <code>JSON</code>.<br /> </td>
+   <td>Actualiza la versión <code>HEAD</code> del modelo (crea una nueva versión).<br /> La definición completa del modelo para la nueva versión del modelo se debe agregar como parámetro denominado <code>model</code>. Además, se necesita un parámetro <code>type</code>, ya que al crear nuevos modelos necesita tener el valor <code>JSON</code>.<br /> </td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Igual que con el PUT. AEM Necesario porque los widgets de la no admiten operaciones de <code>PUT</code>.</td>
+   <td>El mismo comportamiento que con PUT. Necesario porque los widgets de AEM no admiten operaciones de <code>PUT</code>.</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
@@ -358,7 +358,7 @@ Los siguientes métodos de solicitud HTTP se aplican a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Completa el elemento de trabajo cuyo URI se envía como parámetro <code>item</code> y avanza la instancia de flujo de trabajo correspondiente a los siguientes nodos, definidos por el parámetro <code>route</code> o <code>backroute</code> si hay un paso atrás.<br /> Si se envía el parámetro <code>delegatee</code>, el elemento de trabajo identificado por el parámetro <code>item</code> se delega al participante especificado.</td>
+   <td>Completa el elemento de trabajo cuyo URI se envía como parámetro <code>item</code> y avanza la instancia de flujo de trabajo correspondiente a los siguientes nodos, definidos por el parámetro <code>route</code> o <code>backroute</code> si hay un paso anterior.<br /> Si se envía el parámetro <code>delegatee</code>, el elemento de trabajo identificado por el parámetro <code>item</code> se delega al participante especificado.</td>
   </tr>
  </tbody>
 </table>
@@ -377,7 +377,7 @@ Los siguientes métodos de solicitud HTTP se aplican a:
 
 ### Obtención de una lista de todos los flujos de trabajo en ejecución con sus ID {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 
-Para obtener una lista de todos los flujos de trabajo en ejecución, haga una GET a:
+Para obtener una lista de todos los flujos de trabajo en ejecución, realice una de las acciones GET a:
 
 `http://localhost:4502/etc/workflow/instances.RUNNING.json`
 
@@ -425,7 +425,7 @@ curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://loca
 
 ### Cómo enumerar todos los modelos de flujo de trabajo {#how-to-list-all-workflow-models}
 
-Para obtener una lista de todos los modelos de flujo de trabajo disponibles, haga una GET a:
+Para obtener una lista de todos los modelos de flujo de trabajo disponibles, realice una de las acciones siguientes:
 
 `http://localhost:4502/etc/workflow/models.json`
 

@@ -11,22 +11,22 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 1%
+source-wordcount: '892'
+ht-degree: 5%
 
 ---
 
 # Estructura de la IU táctil de Adobe Experience Manager{#structure-of-the-aem-touch-enabled-ui}
 
-La IU táctil de Adobe Experience Manager AEM () tiene varios principios subyacentes y consta de varios elementos clave:
+La IU táctil de Adobe Experience Manager (AEM) tiene varios principios subyacentes y consta de varios elementos clave:
 
 ## Consolas {#consoles}
 
 ### Diseño básico y cambio de tamaño {#basic-layout-and-resizing}
 
-La interfaz de usuario se adapta tanto a dispositivos móviles como de escritorio, aunque en lugar de crear dos estilos, el Adobe ha decidido utilizar un estilo que funcione para todas las pantallas y dispositivos.
+La interfaz de usuario se adapta tanto a dispositivos móviles como de escritorio, aunque en lugar de crear dos estilos, Adobe ha decidido utilizar un estilo que funcione para todas las pantallas y dispositivos.
 
-AEM Todos los módulos utilizan el mismo diseño básico, en el que, en la práctica, esto puede considerarse como lo siguiente:
+Todos los módulos utilizan el mismo diseño básico. En AEM, esto puede considerarse como:
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -42,7 +42,7 @@ Por ejemplo, cuando la resolución es inferior a 1024 píxeles (como en un dispo
 
 La barra de encabezado muestra elementos globales como:
 
-* AEM el logotipo y el producto/solución específico que esté utilizando; para ello, también se crea un vínculo a la navegación global; para obtener más información, haga lo siguiente:
+* el logotipo y el producto/solución específico que esté utilizando; para AEM, esto también forma un vínculo a la navegación global
 * Búsqueda
 * icono para acceder a los recursos de ayuda
 * para acceder a otras soluciones
@@ -141,7 +141,7 @@ Una capa es un paquete independiente de funciones que se puede activar para:
 
 Las capas proporcionan una funcionalidad sofisticada para toda la página, en lugar de acciones específicas en un componente individual.
 
-AEM La función incluye varias capas ya implementadas para la creación de páginas; por ejemplo, editar, previsualizar y anotar.
+AEM incluye varias capas ya implementadas para la creación de páginas; por ejemplo, editar, previsualizar y anotar.
 
 >[!NOTE]
 >
@@ -165,6 +165,6 @@ Según el espacio disponible, las barras de herramientas de los componentes se c
 
 ## Información adicional {#further-information}
 
-AEM Para obtener más información acerca de los conceptos relacionados con la IU táctil, lea [Conceptos de la IU táctil con capacidad de la interfaz de usuario con capacidad de la interfaz de usuario](/help/sites-developing/touch-ui-concepts.md).
+Para obtener más información sobre los conceptos relacionados con la IU táctil, lee [Conceptos de la IU táctil de AEM](/help/sites-developing/touch-ui-concepts.md).
 
 Para obtener más información técnica, consulte [Conjunto de documentación de JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas táctil.

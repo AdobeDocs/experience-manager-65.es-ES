@@ -1,20 +1,20 @@
 ---
 title: Cómo hacer un lanzamiento con su aplicación sin encabezado
-description: AEM En esta parte del Recorrido para desarrolladores sin encabezado de, aprenda a implementar una aplicación sin encabezado en directo.
+description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a implementar una aplicación sin encabezado en directo.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 53%
+source-wordcount: '1930'
+ht-degree: 52%
 
 ---
 
 # Cómo hacer un lanzamiento con su aplicación sin encabezado {#go-live}
 
-AEM En esta parte del [Recorrido para desarrolladores sin encabezado](overview.md), aprenda a implementar una aplicación sin encabezado en directo.
+En esta parte del [Recorrido para desarrolladores sin encabezado de AEM](overview.md), aprenda a implementar una aplicación sin encabezado en directo.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -28,9 +28,9 @@ Este artículo se basa en estos fundamentos para que entienda cómo preparar su 
 
 Este documento le ayuda a comprender la canalización de las publicaciones de AEM sin encabezado y las consideraciones de rendimiento que debe tener en cuenta antes de lanzar su aplicación.
 
-* AEM Obtenga información acerca del SDK de la y las herramientas de desarrollo necesarias
+* Obtenga información acerca de AEM SDK y las herramientas de desarrollo necesarias
 * Configure un tiempo de ejecución de desarrollo local para simular el contenido antes de publicarlo
-* AEM Comprender los conceptos básicos de almacenamiento en caché y replicación de contenido
+* Comprender los conceptos básicos de almacenamiento en caché y replicación de contenido AEM
 * Asegurar y escalar su aplicación antes del lanzamiento
 * Monitorizar los problemas de rendimiento y depuración
 
@@ -45,7 +45,7 @@ El SDK de AEM se utiliza para crear e implementar código personalizado. Es la h
 
 ## Herramientas de desarrollo adicionales {#additional-development-tools}
 
-AEM Además del SDK de la, necesita herramientas adicionales que faciliten el desarrollo y la prueba del código y el contenido de forma local:
+Además de AEM SDK, necesita herramientas adicionales que faciliten el desarrollo y la prueba del código y el contenido de forma local:
 
 * Java™
 * Git
@@ -53,13 +53,13 @@ AEM Además del SDK de la, necesita herramientas adicionales que faciliten el de
 * La biblioteca Node.js
 * El IDE de su elección
 
-AEM Como es una aplicación Java™, debe instalar Java™ y el SDK de Java™ para admitir el desarrollo de AEM as a Cloud Service.
+Como AEM es una aplicación Java™, debe instalar Java™ y Java™ SDK para admitir el desarrollo de AEM as a Cloud Service.
 
 Git es lo que se utiliza para administrar el control de origen y para registrar los cambios en Cloud Manager y luego implementarlos en una instancia de producción.
 
 AEM utiliza Apache Maven para crear proyectos generados a partir del arquetipo del proyecto Maven de AEM. Todos los IDE principales proporcionan compatibilidad con la integración de Maven.
 
-Node.js es un entorno de tiempo de ejecución de JavaScript AEM que se utiliza para trabajar con los recursos front-end de un subproyecto `ui.frontend` de un proyecto de. Node.js se distribuye con npm, que es el administrador de paquetes de facto de Node.js, que se utiliza para administrar las dependencias de JavaScript.
+Node.js es un entorno de tiempo de ejecución de JavaScript que se utiliza para trabajar con los recursos front-end del subproyecto `ui.frontend` de un proyecto de AEM. Node.js se distribuye con npm, que es el administrador de paquetes de facto de Node.js, que se utiliza para administrar las dependencias de JavaScript.
 
 ## Generalidades de los componentes del sistema AEM {#components-of-an-aem-system-at-a-glance}
 
@@ -69,7 +69,7 @@ Un entorno de AEM completo está formado por un Autor, una Publicación y un Dis
 
 * **El servicio de creación** es donde los usuarios internos crean, administran y previsualizan contenido.
 
-* **El servicio Publish** se considera el entorno &quot;activo&quot; y suele ser con el que interactúan los usuarios finales. El contenido, después de editarse y aprobarse en el servicio de creación, se distribuye (replica) al servicio de Publish. El patrón de implementación más común con las aplicaciones sin encabezado de AEM es tener la versión de producción de la aplicación conectada a un servicio de publicación de AEM.
+* **El servicio de publicación** se considera el entorno &quot;activo&quot; y suele ser con el que interactúan los usuarios finales. El contenido, después de editarse y aprobarse en el servicio de creación, se distribuye (replica) al de publicación. El patrón de implementación más común con las aplicaciones sin encabezado de AEM es tener la versión de producción de la aplicación conectada a un servicio de publicación de AEM.
 
 * **Dispatcher** es un servidor web estático ampliado con el módulo Dispatcher de AEM. Almacena en la caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
 
@@ -77,7 +77,7 @@ Un entorno de AEM completo está formado por un Autor, una Publicación y un Dis
 
 El proyecto de desarrollo local se basa en Apache Maven y utiliza Git para el control de código fuente. Para actualizar el proyecto, los desarrolladores pueden utilizar su entorno de desarrollo integrado preferido, como Eclipse, Visual Studio Code o IntelliJ, entre otros.
 
-AEM Para probar las actualizaciones de código o contenido introducidas por la aplicación sin encabezado, implemente las actualizaciones en el tiempo de ejecución de la versión local de la aplicación AEM Estas incluyen instancias locales de los servicios de autor y publicación de la.
+Para probar las actualizaciones de código o contenido introducidas por la aplicación sin encabezado, implemente las actualizaciones en el tiempo de ejecución local de AEM. Estas incluyen instancias locales de los servicios de autor y publicación de AEM.
 
 Asegúrese de tomar nota de las distinciones entre cada componente en el tiempo de ejecución de AEM local, ya que es vital probar las actualizaciones allí donde sean más importantes. Por ejemplo, pruebe las actualizaciones de contenido en la instancia de autor o pruebe el nuevo código en la instancia de publicación.
 
@@ -85,13 +85,13 @@ En un sistema de producción, Dispatcher y el servidor de HTTP, Apache, siempre 
 
 ## Vista previa del código y el contenido localmente con el entorno de desarrollo local {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-AEM Para preparar el proyecto sin encabezado de la para su lanzamiento, asegúrese de que todas las partes constitutivas del proyecto funcionen correctamente.
+Para preparar el proyecto sin encabezado de AEM para su lanzamiento, asegúrese de que todas las partes constitutivas del proyecto funcionen correctamente.
 
 Para ello, debe reunir todo: código, contenido y configuración, y probarlo en un entorno de desarrollo local para la preparación para el lanzamiento.
 
 El entorno de desarrollo local se compone de tres áreas principales:
 
-1. AEM AEM El proyecto de: contiene todo el código personalizado, la configuración y el contenido en el que van a trabajar los desarrolladores de la aplicación de la aplicación de la aplicación de código de la plataforma de datos de la plataforma de datos de.
+1. El proyecto de AEM: contiene todo el código, la configuración y el contenido personalizados en los que trabajarán los desarrolladores de AEM
 1. El tiempo de ejecución local de AEM: versiones locales de los servicios de publicación y autor de AEM que se utilizan para implementar código del proyecto de AEM.
 1. Tiempo de ejecución de Dispatcher local: una versión local del HTTPD del servidor web Apache que incluye el módulo de Dispatcher.
 
@@ -99,11 +99,11 @@ Una vez configurado el entorno de desarrollo local, puede simular el contenido q
 
 Para obtener información más detallada sobre la configuración de un entorno de desarrollo local y todas las dependencias necesarias para la vista previa del contenido, consulte [Documentación de implementación de producción](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=es).
 
-## AEM Preparación de la aplicación sin encabezado de la aplicación para el lanzamiento {#prepare-your-aem-headless-application-for-golive}
+## Preparación de la aplicación sin encabezado de AEM para el lanzamiento {#prepare-your-aem-headless-application-for-golive}
 
 <!-- Start of CDN Review -->
 
-AEM Ahora es el momento de preparar su aplicación sin encabezado para el lanzamiento, siguiendo las prácticas recomendadas que se describen a continuación.
+Ahora es el momento de preparar su aplicación sin encabezado de AEM para su lanzamiento, siguiendo las prácticas recomendadas que se describen a continuación.
 
 ### Proteja su aplicación sin encabezado antes del lanzamiento {#secure-and-scale-before-launch}
 
@@ -140,7 +140,7 @@ AEM Ahora es el momento de preparar su aplicación sin encabezado para el lanzam
 
 ## Implementación de la producción {#deploy-to-production}
 
-AEM La implementación en producción puede depender de si tiene una instancia de *tradicional* que se implementa mediante Maven o si está en Adobe Managed Services (AMS) y, por lo tanto, utiliza Cloud Manager.
+La implementación en producción puede depender de si tiene una instancia de AEM *tradicional* que se implementa mediante Maven o si está en Adobe Managed Services (AMS) y, por lo tanto, utiliza Cloud Manager.
 
 ## Implementación en producción mediante Maven {#deploy-to-production-maven}
 
@@ -150,7 +150,7 @@ Para una implementación *tradicional* (que no es AMS) que use Maven, consulte e
 
 Si es cliente de AMS que usa Cloud Manager, después de asegurarse de que todo está probado y funciona correctamente, puede insertar las actualizaciones de código en un [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=es).
 
-Una vez que las actualizaciones se hayan cargado en Cloud Manager AEM, impleméntelas en el repositorio mediante la canalización de CD/CI de [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=es).
+Una vez que las actualizaciones se hayan cargado a Cloud Manager, impleméntelas en AEM mediante [la canalización de CD/CI de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=es).
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -184,7 +184,7 @@ Siga estas prácticas recomendadas como enfoque general de la depuración:
 * Valide la funcionalidad y el rendimiento con la versión de producción de la aplicación.
 * Valide con la vista previa JSON del Editor de fragmentos de contenido.
 * Para comprobar la presencia de problemas de aplicación o envío de cliente, inspeccione el JSON en la aplicación cliente
-* AEM Para comprobar la presencia de problemas relacionados con el contenido en caché o la, inspeccione el JSON mediante GraphQL
+* Para comprobar la presencia de problemas relacionados con el contenido almacenado en caché o con AEM, inspeccione el JSON con GraphQL
 
 ### Registro de un error con asistencia {#logging-a-bug-with-support}
 
@@ -197,7 +197,7 @@ Para registrar un error de forma eficaz con Asistencia, en caso de que necesite 
 
 ## El recorrido ha terminado, ¿o no? {#journey-ends}
 
-Felicitaciones. Ha completado el recorrido para desarrolladores de AEM sin encabezado. Ahora debe comprender lo siguiente:
+¡Enhorabuena! Ha completado el recorrido para desarrolladores de AEM sin encabezado. Ahora debe comprender lo siguiente:
 
 * La diferencia entre la entrega de contenido sin encabezado y con encabezado.
 * Las características sin encabezado de AEM.
@@ -207,28 +207,28 @@ Felicitaciones. Ha completado el recorrido para desarrolladores de AEM sin encab
 * Cómo poner en marcha un proyecto de AEM sin encabezado.
 * Qué hacer una vez completado el lanzamiento.
 
-AEM Ya ha iniciado su primer proyecto sin encabezado o ya tiene todos los conocimientos necesarios para hacerlo. Buen trabajo.
+Ya ha iniciado su primer proyecto de AEM sin encabezado o ahora tiene todos los conocimientos para hacerlo. Buen trabajo.
 
 ### Explorar aplicaciones de una sola página {#explore-spa}
 
-AEM Sin embargo, no hay necesidad de detener las tiendas sin encabezado en la. En la parte de [Introducción del recorrido AEM](getting-started.md#integration-levels), se explica cómo no solo admite la entrega sin encabezado y los modelos tradicionales full-stack, sino también admite modelos híbridos que combinan las ventajas de ambos.
+Sin embargo, no es necesario detener las tiendas sin encabezado en AEM. En la parte de [Introducción del recorrido](getting-started.md#integration-levels), se discutió cómo AEM no solo admite la entrega sin encabezado y los modelos full-stack tradicionales, sino que también admite modelos híbridos que combinan las ventajas de ambos.
 
-Si este tipo de flexibilidad es algo que necesita para su proyecto, continúe con la parte opcional adicional del recorrido SPA AEM, [Cómo crear aplicaciones de una sola página () con el método de creación de proyectos de página ().](create-spa.md)
+Si necesita este tipo de flexibilidad para su proyecto, continúe con la parte opcional adicional del recorrido, [Cómo crear aplicaciones de una sola página (SPA) con AEM.](create-spa.md)
 
 ## Recursos adicionales {#additional-resources}
 
-* AEM [Guía de desarrollo de la](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=es)
+* [Guía de desarrollo de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=es)
 
 * [Tutorial de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
 
-* [Cloud Manager AEM para la aplicación de datos de la aplicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es)
+* [Cloud Manager para AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es)
 
 * Caché de CDN
 
-   * [Controlar una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#controlling-a-cdn-cache)
+   * [Control de una caché de CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#controlling-a-cdn-cache)
 
    * Configurando la [reescritura de CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=es) (*buscar reescritura de CDN*)
 
 * [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
-* [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
-* [Tutoriales de AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)
+* [Tutoriales para contenido sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es)

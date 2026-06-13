@@ -9,8 +9,8 @@ exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '3109'
-ht-degree: 100%
+source-wordcount: '3356'
+ht-degree: 97%
 
 ---
 
@@ -156,7 +156,7 @@ La pestaña IPTC ahora admite los campos de texto [!UICONTROL Texto alternativo]
 * Assets, Dynamic Media - [compatibilidad con subtítulos y pistas de audio múltiples para vídeos en Dynamic Media](/help/assets/video.md#about-msma): ahora puede añadir con facilidad varios subtítulos y varias pistas de audio a un vídeo principal. Esta capacidad significa que los vídeos son accesibles para un público global. Puede personalizar un solo vídeo principal publicado para un público global en varios idiomas y seguir las directrices de accesibilidad para diferentes regiones geográficas. Los autores también pueden administrar los subtítulos y las pistas de audio desde una sola pestaña en la interfaz de usuario.
 * Assets: desde los resultados de búsqueda, ahora puede navegar a la ubicación de la carpeta que contiene un recurso para realizar varias tareas de administración de recursos.
 * El selector de Sites Polaris en Fragmentos de contenido ha mejorado el rendimiento.
-* Se ha habilitado al usuario del editor de páginas de Sites/componente de imagen para hacer referencia a los recursos desde Cloud Service de Assets remoto. 
+* Se ha habilitado al usuario del editor de páginas de Sites/componente de imagen para hacer referencia a los recursos desde Cloud Service de Assets remoto.
 * Para encontrar con rapidez un proyecto en la vista de lista, donde puede tener muchos proyectos en el sistema, Adobe ahora admite la ordenación del lado del servidor. Los nodos del proyecto se ordenan en el servidor en función de la columna seleccionada por el usuario antes de procesarlos en la interfaz de usuario.
 * AEM 6.5.18.0 admite MongoDB 5.0 a 6.0.
 
@@ -193,10 +193,10 @@ Si va a instalar o planea utilizar el software más reciente para AEM 6.5 Forms 
 
   No es necesario desplazarse a la ubicación del recurso y ver sus propiedades para realizar estas operaciones.
 
-* **Dynamic Media _Snapshot_**le permite obtener una vista previa de los modificadores de imagen y las optimizaciones de imágenes inteligentes, como la salida WebP o AVIF, la compresión según el ancho de banda y la escala de la proporción de píxeles del dispositivo, mediante imágenes de prueba o URL de Dynamic Media. A continuación, puede comparar de inmediato cómo afecta cada configuración a la calidad y al tamaño del archivo.
-Consulte la [Instantánea de Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+* **Dynamic Media _Snapshot_**&#x200B;le permite obtener una vista previa de los modificadores de imagen y las optimizaciones de imágenes inteligentes, como la salida WebP o AVIF, la compresión según el ancho de banda y la escala de la proporción de píxeles del dispositivo, mediante imágenes de prueba o URL de Dynamic Media. A continuación, puede comparar inmediatamente cómo afecta cada configuración a la calidad y al tamaño del archivo.
+Consulte [Instantánea de Dynamic Media](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 * **Streaming DASH con Dynamic Media**: se ha lanzado un nuevo protocolo (DASH: Dynamic Adaptive Streaming over HTTP) para el streaming adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado). Ya está disponible para todas las regiones.
-* **Integración de Experience Manager Sites y fragmentos de contenido con Dynamic Media de próxima generación de Assets**: los usuarios ahora pueden utilizar sus recursos alojados en la nube en Experience Manager Sites 6.5. Pueden crear y enviar esos recursos en instancias locales o de Managed Services.
+* **Integración de Experience Manager Sites y fragmentos de contenido con Dynamic Media de próxima generación de Assets**: Los usuarios ahora pueden utilizar sus recursos alojados en la nube en Experience Manager Sites 6.5. Pueden crear y enviar esos recursos en instancias locales o de Managed Services.
 
 ### [!DNL Forms]
 

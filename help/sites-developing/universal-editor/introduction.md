@@ -6,7 +6,7 @@ role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
 source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1361'
 ht-degree: 96%
 
 ---
@@ -70,7 +70,7 @@ El editor universal aprovecha varios paquetes para los que se necesita configura
 
 #### Establezca el atributo SameSite para la cookie `login-token`. {#samesite-attribute}
 
-1. Abra el Administrador de configuración. 
+1. Abra el Administrador de configuración.
    * `http://<host>:<port>/system/console/configMgr`
 1. Busque **Controlador de autenticación de token de Adobe Granite** en la lista y haga clic en **Cambiar los valores de configuración**.
 1. En el cuadro de diálogo, cambie el atributo **SameSite para el valor de la cookie del token de inicio de sesión** (`token.samesite.cookie.attr`) a `Partitioned`.
@@ -78,7 +78,7 @@ El editor universal aprovecha varios paquetes para los que se necesita configura
 
 #### Quitar la opción X-Frame de encabezados `SAMEORIGIN`. {#sameorigin}
 
-1. Abra el Administrador de configuración. 
+1. Abra el Administrador de configuración.
    * `http://<host>:<port>/system/console/configMgr`
 1. Busque **Servlet principal de Apache Sling** en la lista y haga clic en **Editar los valores de configuración**.
 1. Elimine el valor `X-Frame-Options=SAMEORIGIN` del atributo **Encabezados de respuesta adicionales** (`sling.additional.response.headers`) si existe.
@@ -86,7 +86,7 @@ El editor universal aprovecha varios paquetes para los que se necesita configura
 
 #### Configure el Controlador de autenticación del parámetro de consulta de Adobe Granite. {#query-parameter}
 
-1. Abra el Administrador de configuración. 
+1. Abra el Administrador de configuración.
    * `http://<host>:<port>/system/console/configMgr`
 1. Busque **Controlador de autenticación del parámetro de consulta de Adobe Granite** en la lista y haga clic en **Editar los valores de configuración**.
 1. En el campo **Ruta** (`path`), añada `/` para habilitarlo.
@@ -95,7 +95,7 @@ El editor universal aprovecha varios paquetes para los que se necesita configura
 
 #### Defina para qué rutas de contenido o `sling:resourceTypes` se abrirá el editor universal. {#paths}
 
-1. Abra el Administrador de configuración. 
+1. Abra el Administrador de configuración.
    * `http://<host>:<port>/system/console/configMgr`
 1. Busque **Servicio de URL del editor universal** en la lista y haga clic en **Editar los valores de configuración**.
 1. Defina para qué rutas de contenido o `sling:resourceTypes` se abrirá el editor universal.
@@ -142,7 +142,7 @@ Con AEM actualizado y configurado, puede configurar un servicio de editor univer
 1. Instale la versión de Node.js >=20.
 1. Descargue y desempaquete el servicio de editor universal más reciente de [Distribución de software](https://experienceleague.adobe.com/es/docs/experience-cloud/software-distribution/home)
 1. Configure el servicio del editor universal mediante variables de entorno o el archivo `.env`.
-   * [Consulte la documentación del editor universal de AEM as a Cloud Service para obtener más información.](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [Consulte la documentación del Editor universal de AEM as a Cloud Service para obtener más información.](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Tenga en cuenta que es posible que necesite utilizar la opción `UES_MAPPING` si se requiere una reescritura de IP interna.
 1. Ejecute `universal-editor-service.cjs`
 
