@@ -12,7 +12,7 @@ feature: Deploying
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '307'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Introducción {#introduction}
 
-Puede ayudar a mejorar Adobe Experience Cloud enviando estadísticas de Adobe sobre cómo interactúa con Adobe Experience Manager AEM (). Esta información no contiene datos sobre los usuarios que visitan el sitio de su empresa y solo se utiliza para ayudar al Adobe a ofrecer asistencia técnica y mejorar la experiencia del usuario.
+Puede ayudar a mejorar Adobe Experience Cloud enviando estadísticas de Adobe sobre cómo interactúa con Adobe Experience Manager (AEM). Esta información no contiene datos sobre los usuarios que visitan el sitio de su empresa y solo se utiliza para ayudar a Adobe a ofrecer una experiencia mejor a sus usuarios.
 
 Puede optar por recopilar estadísticas de uso mediante la interfaz de usuario táctil o la consola web.
 
@@ -33,13 +33,13 @@ Puede optar por recopilar estadísticas de uso mediante la interfaz de usuario t
 
 >[!NOTE]
 >
->AEM Puede optar por no participar en cualquier momento ya sea usando la [consola web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) o no seleccionando la opción de inclusión en la pantalla de inclusión de la red de la red de redes de redes de redes de redes de redes de redes de red (Opt-in) en la pantalla de inclusión de la red de redes de redes de redes de redes de redes.
+>Puede optar por no participar en cualquier momento utilizando la [consola web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) o no seleccionando la opción de inclusión en la pantalla de inclusión de AEM.
 
 ## Inclusión mediante la interfaz de usuario táctil {#opt-in-by-using-the-touch-ui}
 
-AEM La primera vez que inicie la, puede optar por su inclusión mediante la IU táctil de la siguiente manera:
+La primera vez que inicie AEM, puede optar por su inclusión mediante la IU táctil de la siguiente manera:
 
-1. AEM En la pantalla Navegación de la, haga clic en el icono **Bandeja de entrada** (campana).
+1. En la pantalla Navegación de AEM, haga clic en el icono **Bandeja de entrada** (campana).
 
    ![pantalla de navegación de usage_statistics](assets/usage_statisticsnavigationscreen.png)
 
@@ -57,7 +57,7 @@ AEM La primera vez que inicie la, puede optar por su inclusión mediante la IU t
 
 Puede realizar la inclusión (o la exclusión) utilizando la consola web de la siguiente manera:
 
-1. AEM En la pantalla Navegación de la, haga clic en **Herramientas** y luego en **Operaciones**.
+1. En la pantalla Navegación de AEM, haz clic en **Herramientas** y luego en **Operaciones**.
 
    ![panel de estadísticas de uso](assets/usage_statisticsopsdashboard.png)
 

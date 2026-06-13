@@ -1,6 +1,6 @@
 ---
-title: Reestructuración de repositorios de Assets AEM en 6.5
-description: Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorios en Adobe Experience Manager AEM () 6.5 para Assets.
+title: Reestructuración del repositorio de Assets en AEM 6.5
+description: Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorios en Adobe Experience Manager (AEM) 6.5 para Assets.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 2%
+source-wordcount: '1083'
+ht-degree: 3%
 
 ---
 
-# Reestructuración de repositorios de Assets AEM en 6.5 {#assets-repository-restructuring-in-aem}
+# Reestructuración del repositorio de Assets en AEM 6.5 {#assets-repository-restructuring-in-aem}
 
-AEM Como se describe en la página principal [Reestructuración del repositorio en la página de 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a Adobe Experience Manager AEM () 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución AEM Assets. AEM Algunos cambios requieren un esfuerzo durante el proceso de actualización de la versión 6.5 de la, mientras que otros se pueden aplazar hasta una actualización futura.
+Como se describe en la página principal [Reestructuración del repositorio en AEM 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a Adobe Experience Manager (AEM) 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de AEM Assets. Algunos cambios requieren esfuerzo durante el proceso de actualización de AEM 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
 
 **Con Actualización 6.5**
 
@@ -30,7 +30,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
 * [Descargar plantilla de notificación de correo electrónico del recurso](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#download-asset-e-mail-notification-template)
 * [Ejemplo de licencias de DRM](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#example-drm-licenses)
 * [Vincular plantilla de notificación de correo electrónico compartido](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#link-share-e-mail-notification-template)
-* [InDesign Scripts de flujo de trabajo](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#indesign-workflow-scripts)
+* [InDesign Workflow Scripts](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#indesign-workflow-scripts)
 * [Configuraciones de transcodificación de vídeo](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#video-transcoding-configurations)
 * [Varios](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc2)
 
@@ -54,7 +54,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -83,7 +83,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
       </ol> </li>
      <li>Quitar la carpeta: <strong><code>/etc/dam/notification/email/default</code></strong> después de mover las plantillas de correo electrónico que contiene.<br />
       <ol>
-       <li>AEM Si no se han realizado actualizaciones en la plantilla de correo electrónico en <strong> <code>/etc/notification/email/default</code></strong>, la carpeta se puede quitar, ya que la plantilla de correo electrónico original existe en <strong><code>/libs/settings/notification/email/default</code></strong> como parte de la instalación de la versión 4 de la instalación de la aplicación de correo electrónico en la que se ha realizado el proceso de instalación de la aplicación de la.</li>
+       <li>Si no se han realizado actualizaciones en la plantilla de correo electrónico en <strong> <code>/etc/notification/email/default</code></strong>, la carpeta se puede quitar porque la plantilla de correo electrónico original existe en <strong><code>/libs/settings/notification/email/default</code></strong> como parte de la instalación de AEM 4.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -112,7 +112,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
     <ol>
      <li>Copie los diseños de la ubicación anterior en la nueva ubicación bajo <code>/apps</code>.</li>
      <li>Convierta cualquier recurso CSS, JavaScript y estático del diseño en una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
-     <li>AEM Actualice las referencias a la ubicación anterior en la propiedad <code>cq:designPath</code> mediante <strong>Administración de DAM &gt; Página de uso compartido de recursos &gt; Propiedades de página &gt; Pestaña Avanzadas &gt; Campo de diseño</strong>.</li>
+     <li>Actualice las referencias a la ubicación anterior en la propiedad <code>cq:designPath</code> mediante <strong>AEM &gt; Administración de DAM &gt; Página de uso compartido de recursos &gt; Propiedades de página &gt; Pestaña Avanzadas &gt; Campo de diseño</strong>.</li>
      <li>Para utilizar la nueva categoría Biblioteca de cliente, actualice todas las páginas que hagan referencia a la ubicación anterior. Esto requiere actualizar el código de implementación de página.</li>
      <li>Actualice las reglas de Dispatcher para permitir el servicio de bibliotecas de cliente mediante el servlet proxy <code>/etc.clientlibs/</code>.</li>
     </ol> <p>Para cualquier diseño que no se administre en SCM y que se modifique en tiempo de ejecución mediante cuadros de diálogo de diseño, no mueva diseños legibles fuera de <code>/etc</code>.</p> </td>
@@ -146,7 +146,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
       </ol> </li>
      <li>Quitar la carpeta: <code>/etc/dam/workflow/notification/email/downloadasset </code>después de mover las plantillas de correo electrónico que contiene.<br />
       <ol>
-       <li>AEM Si no se han realizado actualizaciones en la plantilla de correo electrónico en <strong> <code>/etc</code></strong>, la carpeta se puede quitar, ya que la plantilla de correo electrónico original existe en <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> como parte de la instalación de la versión 6.4 de.</li>
+       <li>Si no se han realizado actualizaciones en la plantilla de correo electrónico en <strong> <code>/etc</code></strong>, la carpeta se puede quitar porque la plantilla de correo electrónico original existe en <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> como parte de la instalación de AEM 6.4.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -162,8 +162,8 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
 | **Ubicación anterior** | `/etc/dam/drm/licenses/` |
 |---|---|
 | **Nueva(s) ubicación(es)** | `/libs/settings/dam/drm` |
-| **Directrices de reestructuración** | N/D |
-| **Notas** | N/D |
+| **Directrices de reestructuración** | N/A |
+| **Notas** | N/A |
 
 ### Vincular plantilla de notificación de correo electrónico compartido {#link-share-e-mail-notification-template}
 
@@ -187,7 +187,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
       </ol> </li>
      <li>Quitar la carpeta: <strong><code>/etc/dam/adhocassetshare</code></strong> después de mover las plantillas de correo electrónico que contiene.<br />
       <ol>
-       <li>AEM Si no se han realizado actualizaciones en la plantilla de correo electrónico en <strong> <code>/etc</code></strong>, la carpeta se puede quitar, ya que la plantilla de correo electrónico original existe en <strong><code>/libs/settings/dam/adhocassetshare</code></strong> como parte de la instalación de la versión 6.4 de.</li>
+       <li>Si no se han realizado actualizaciones en la plantilla de correo electrónico en <strong> <code>/etc</code></strong>, la carpeta se puede quitar porque la plantilla de correo electrónico original existe en <strong><code>/libs/settings/dam/adhocassetshare</code></strong> como parte de la instalación de AEM 6.4.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -198,7 +198,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
  </tbody>
 </table>
 
-### InDesign Scripts de flujo de trabajo {#indesign-workflow-scripts}
+### InDesign Workflow Scripts {#indesign-workflow-scripts}
 
 <table>
  <tbody>
@@ -216,7 +216,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
     <ol>
      <li>Copiar todos los scripts personalizados o modificados de <strong><code>/etc/dam/indesign/scripts</code></strong> a <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
       <ol>
-       <li>AEM AEM Copiar solo los scripts nuevos o modificados como scripts no modificados proporcionados por los que se han proporcionado, se encuentra disponible mediante <strong><code>/libs/settings</code></strong> en la versión 6.5 de la versión de</li>
+       <li>Solo los scripts nuevos o modificados como scripts no modificados proporcionados por AEM están disponibles mediante <strong><code>/libs/settings</code></strong> en AEM 6.5</li>
       </ol> </li>
      <li>Localice todos los modelos de flujo de trabajo que utilizan el paso WF del proceso de extracción de medios y
       <ol>
@@ -246,7 +246,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>Las personalizaciones de nivel de proyecto deben cortarse y pegarse en rutas equivalentes de <code>/apps</code> o <code>/conf</code>, según corresponda.</p> <p>AEM Para alinearse con la estructura del repositorio de 6.4:</p>
+   <td><p>Las personalizaciones de nivel de proyecto deben cortarse y pegarse en rutas equivalentes de <code>/apps</code> o <code>/conf</code>, según corresponda.</p> <p>Para alinearse con la estructura del repositorio de AEM 6.4:</p>
     <ol>
      <li>Copie cualquier configuración de vídeo modificada de <code>/etc/dam/video</code> a <code>/apps/settings/dam/video</code></li>
      <li>Quitar <code>/etc/dam/video</code></li>
@@ -254,7 +254,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>
@@ -281,7 +281,7 @@ AEM Como se describe en la página principal [Reestructuración del repositorio 
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>N/D</td>
+   <td>N/A</td>
   </tr>
  </tbody>
 </table>

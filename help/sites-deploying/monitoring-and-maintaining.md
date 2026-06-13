@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5755'
-ht-degree: 0%
+source-wordcount: '5992'
+ht-degree: 1%
 
 ---
 
@@ -125,7 +125,7 @@ Para purgar versiones de un sitio web, siga estos pasos:
 
    ![Configuración de purga de versiones](assets/version-purge-configuration.png)
 
-   * **Purgar rutas**
+   * **Rutas de depuración**
 Establezca la ruta de inicio del contenido que se va a purgar; por ejemplo, `/content/wknd`.
 
      >[!CAUTION]
@@ -228,13 +228,13 @@ Las acciones de moderación se registran aquí.
    * `error.log`
 Los mensajes de error (de diferentes niveles de gravedad) se registran aquí.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=es)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 Este registro solo se usa si [!DNL Dynamic Media] está habilitado. Proporciona estadísticas e información analítica utilizada para analizar el comportamiento del proceso interno de ImageServer.
 
    * `request.log`
 Cada solicitud de acceso se registra aquí junto con la respuesta.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=es)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 Este registro solo se usa si [!DNL Dynamic Media] está habilitado. El registro de acceso de s7registra cada solicitud realizada a [!DNL Dynamic Media] a través de `/is/image` y `/is/content`.
 
    * `stderr.log`
@@ -253,7 +253,7 @@ Información de diario de revisión.
 
 >[!NOTE]
 >
->Los registros de acceso de ImageServer y s7 no se incluyen en el paquete **Descargar &#x200B;** completo&quot; generado desde la página **system/console/status-Bundlelist &#x200B;**. Para fines de soporte, si tiene [!DNL Dynamic Media] problemas, anexe los registros de acceso de ImageServer y s7 cuando se ponga en contacto con Atención al cliente.
+>Los registros de acceso de ImageServer y s7 no se incluyen en el paquete **Descargar ** completo&quot; generado desde la página **system/console/status-Bundlelist **. Para fines de soporte, si tiene [!DNL Dynamic Media] problemas, anexe los registros de acceso de ImageServer y s7 cuando se ponga en contacto con Atención al cliente.
 
 ### Activación del nivel de registro de depuración {#activating-the-debug-log-level}
 
@@ -340,7 +340,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >
    >`org.apache.sling.commons.log.pattern` admite hasta seis argumentos.
    >
-   >{0} Marca de tiempo de tipo `java.util.Date`
+   >`java.util.Date` Marca de tiempo de tipo {0}
    >
    >{1} el marcador de registro
    >
@@ -435,7 +435,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >* Se puede especificar un límite de tamaño con un número. Si no se proporciona ningún indicador de tamaño, se toma como número de bytes, o puede agregar uno de los indicadores de tamaño: `KB`, `MB` o `GB` (se omite el uso de mayúsculas y minúsculas).
    >* Se puede especificar una programación de hora/fecha como un patrón `java.util.SimpleDateFormat`. Define el período de tiempo después del cual se gira el archivo. Además, el sufijo anexado al archivo girado (para su identificación).
    >
-   >El valor predeterminado es &#39;.&#39;dd/MM/yyyy (para la rotación diaria del registro).
+   >El valor predeterminado es &#39;.&#39;aaaa-MM-dd (para la rotación diaria del registro).
    >
    >Por ejemplo, a medianoche del 20 de enero de 2010 (o cuando el primer mensaje de registro después de esta fecha sea preciso), ../logs/error.log cambia el nombre a ../logs/error.log.2010-01-20. El registro del 21 de enero se genera en (un nuevo y vacío) ../logs/error.log hasta que se renueva al siguiente cambio de día.
    >
@@ -695,7 +695,7 @@ El registro de solicitudes registra cada solicitud realizada, junto con la respu
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Al sumar todas las entradas de GET dentro de períodos específicos (por ejemplo, en varios períodos de 24 horas), puede realizar declaraciones sobre el tráfico promedio en el sitio web.
+Al sumar todas las entradas de GET en períodos específicos (por ejemplo, en varios períodos de 24 horas), puede realizar declaraciones sobre el tráfico promedio en el sitio web.
 
 #### Monitorización de los tiempos de respuesta con request.log {#monitoring-response-times-with-the-request-log}
 
@@ -914,7 +914,7 @@ Se recomienda que cada proyecto incluya `html comments` para el rendimiento del 
 El comando de herramienta `jconsole` está disponible con el JDK.
 
 1. Inicie la instancia de AEM.
-1. Ejecutar `jconsole.`
+1. Ejecute `jconsole.`
 1. Seleccione su instancia de AEM y **Connect**.
 
 1. Desde la aplicación `Local`, haga doble clic en `com.day.crx.quickstart.Main`; la Información general se muestra como predeterminada:
@@ -1098,9 +1098,9 @@ A continuación se muestra una lista de sugerencias sobre qué comprobar si comi
 >
 >Consulte también los siguientes artículos para obtener más información:
 >
->* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es)
->* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
->* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=es)
+>* [Volcados de procesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analizar con el generador de perfiles integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
 
 ### Memoria insuficiente {#out-of-memory}
@@ -1116,7 +1116,7 @@ En estos casos, compruebe:
 * La configuración de JVM utilizada para [iniciar AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conocimiento:
 
-* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
+* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1134,7 +1134,7 @@ Si el sistema se está quedando sin espacio en disco o nota que se ha golpeado e
 * Si ha configurado [Depuración de versiones](/help/sites-deploying/version-purging.md) y cómo lo ha hecho
 * Base de conocimiento:
 
-   * [Demasiados archivos abiertos]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=es
+   * [Demasiados archivos abiertos]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
 
 ### Degradación regular del rendimiento {#regular-performance-degradation}
 
@@ -1143,7 +1143,7 @@ Si ve que el rendimiento de su instancia se deteriora después de cada reinicio 
 * [Memoria insuficiente](#outofmemory)
 * Base de conocimiento:
 
-   * [Resolución de recursos sin cerrar](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-23761)
+   * [Resolvidor de recursos sin cerrar](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### Ajuste de JVM {#jvm-tuning}
 

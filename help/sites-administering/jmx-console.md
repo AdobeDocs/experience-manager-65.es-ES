@@ -1,5 +1,5 @@
 ---
-title: Supervisión de recursos del servidor mediante la consola JMX
+title: Monitorización de recursos del servidor mediante la consola JMX
 description: Obtenga información sobre cómo monitorizar los recursos del servidor mediante la consola JMX.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing,Operations
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 0%
+source-wordcount: '4969'
+ht-degree: 1%
 
 ---
 
-# Supervisión de recursos del servidor mediante la consola JMX{#monitoring-server-resources-using-the-jmx-console}
+# Monitorización de recursos del servidor mediante la consola JMX{#monitoring-server-resources-using-the-jmx-console}
 
 La consola JMX permite supervisar y administrar los servicios en el servidor de CRX. Las secciones siguientes resumen los atributos y las operaciones expuestos a través del marco de trabajo JMX.
 
@@ -251,7 +251,7 @@ Información sobre el repositorio de CRX
    <td>Indica si un nodo y una propiedad del nodo pueden tener el mismo nombre. true indica que se admiten los mismos nombres, false indica que no se admiten. </td>
   </tr>
   <tr>
-   <td>identifier.stability</td>
+   <td>identifier.Stability</td>
    <td>Indica la estabilidad de los identificadores de nodo no referenciables. Los siguientes valores son posibles:
     <ul>
      <li>identifier.stable.indefinite.duration: Los identificadores no cambian.</li>
@@ -289,7 +289,7 @@ Información sobre el repositorio de CRX
    <td>Indica si se puede anular la propiedad heredada o la definición de nodo secundario de un tipo de nodo. true indica que se admiten invalidaciones y false indica que no se admiten invalidaciones.</td>
   </tr>
   <tr>
-   <td>option.observation.supported</td>
+   <td>option.observed.supported</td>
    <td>true indica que se admite la observación asincrónica de los cambios del repositorio. La compatibilidad con la observación asincrónica permite a las aplicaciones recibir y responder a las notificaciones sobre cada cambio a medida que se produce.</td>
   </tr>
   <tr>
@@ -329,11 +329,11 @@ Información sobre el repositorio de CRX
    <td>La versión de la especificación JCR que implementa el repositorio.</td>
   </tr>
   <tr>
-   <td>option.journaled.observation.supported</td>
+   <td>option.journal.observed.supported</td>
    <td>true indica que las aplicaciones pueden realizar una observación en diario del repositorio. con la observación en diario, se puede obtener un conjunto de notificaciones de cambio para un período de tiempo específico. </td>
   </tr>
   <tr>
-   <td>query.languages</td>
+   <td>query.language</td>
    <td>Los idiomas de consulta compatibles con el repositorio. Ningún valor indica que no se admitan consultas.</td>
   </tr>
   <tr>
@@ -373,7 +373,7 @@ Información sobre el repositorio de CRX
    <td><p>Indica el nivel de compatibilidad del repositorio para la herencia de tipo de nodo. Los siguientes valores son posibles:</p> <p>node.type.management.inheritance.minimal: El registro de tipos de nodo principales se limita a los que solo tienen nt:base como supertipo. El registro de los tipos de nodos de mezcla está limitado a los que no tienen supertipo.</p> <p>node.type.management.inheritance.single: El registro de tipos de nodos principales se limita a los que tienen un supertipo. El registro de los tipos de nodos de mezcla está limitado a aquellos con un supertipo como máximo.</p> <p><br /> node.type.management.inheritance.multiple: Los tipos de nodo principales se pueden registrar con uno o varios supertipos. Los tipos de nodos mixin se pueden registrar con cero o más supertipos.</p> </td>
   </tr>
   <tr>
-   <td>crx.cluster.preferredMaster</td>
+   <td>crx.cluster.ferredMaster</td>
    <td>true indica que este nodo de clúster es el nodo maestro preferido del clúster.</td>
   </tr>
   <tr>
@@ -385,7 +385,7 @@ Información sobre el repositorio de CRX
    <td>La URL del proveedor del repositorio.</td>
   </tr>
   <tr>
-   <td>node.type.management.value.constraints.supported</td>
+   <td>node.type.management.value.restrictions.supported</td>
    <td>true indica que el repositorio admite restricciones de valor para las propiedades de nodo.</td>
   </tr>
   <tr>
@@ -446,7 +446,7 @@ Información sobre el repositorio de CRX
    <td>true indica que option.xml.export.support es true y query.language tiene una longitud distinta de cero.</td>
   </tr>
   <tr>
-   <td>option.unfiled.content.supported</td>
+   <td>option.unfield.content.supported</td>
    <td>true indica que el repositorio admite contenido sin archivar. Los nodos sin archivar no forman parte de la jerarquía del repositorio.</td>
   </tr>
   <tr>
@@ -462,7 +462,7 @@ Información sobre el repositorio de CRX
    <td>El nombre del repositorio.</td>
   </tr>
   <tr>
-   <td>option.locking.supported</td>
+   <td>option.locked.supported</td>
    <td>true indica que el repositorio admite el bloqueo de nodos. El bloqueo permite al usuario impedir temporalmente que otros usuarios realicen cambios.</td>
   </tr>
   <tr>
@@ -478,7 +478,7 @@ Información sobre el repositorio de CRX
    <td>true indica que el repositorio admite propiedades de nodo que pueden tener cero o más valores.</td>
   </tr>
   <tr>
-   <td>option.retention.supported</td>
+   <td>option.ention.supported</td>
    <td>true indica que el repositorio admite el uso de aplicaciones de administración de retención externas para aplicar directivas de retención al contenido y admite la retención y la liberación.</td>
   </tr>
   <tr>
@@ -691,7 +691,7 @@ Supervise los servicios de cada agente de replicación. Al crear un agente de re
 * **Dominio:** com.adobe.granite.replication
 * **Tipo:** agente
 * **Nombre:** sin valor
-* **Propiedades:** {id=&quot;*Nombre*&quot;}, donde *Nombre* es el valor de la propiedad Nombre del agente.
+* **Propiedades:** {id="*Name*"}, donde *Nombre* es el valor de la propiedad Nombre del agente.
 
 ### Atributos {#attributes-3}
 
@@ -795,7 +795,7 @@ Información sobre el proceso de inicio y el lanzador de inicio rápido.
 
 ### Operaciones {#operations-5}
 
-**log**
+**registro**
 
 Muestra un mensaje en la ventana Inicio rápido.
 
@@ -851,7 +851,7 @@ Varios recursos de servidor de terceros instalan MBeans que exponen atributos y 
      <li>MemoryManager</li>
      <li>MemoryPool</li>
      <li>OperatingSystem</li>
-     <li>Runtime</li>
+     <li>Tiempo de ejecución</li>
      <li>Subprocesamiento</li>
     </ul> </td>
    <td>paquete <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a></td>

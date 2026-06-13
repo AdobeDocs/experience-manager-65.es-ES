@@ -1,5 +1,5 @@
 ---
-title: Recopilación de datos almacenados desechables
+title: Recopilación de datos desechables almacenados
 description: Obtenga información sobre cómo configurar la recolección de elementos no utilizados del almacén de datos para liberar espacio en disco.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,18 +12,18 @@ feature: Operations
 role: Admin
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1905'
 ht-degree: 0%
 
 ---
 
-# Recopilación de datos almacenados desechables {#data-store-garbage-collection}
+# Recopilación de datos desechables almacenados {#data-store-garbage-collection}
 
 Cuando se quita un recurso WCM convencional, la referencia al registro del almacén de datos subyacente se puede quitar de la jerarquía de nodos, pero el registro del almacén de datos en sí permanece. Este registro de almacén de datos al que no se hace referencia se convierte en &quot;basura&quot; que no necesita conservarse. En los casos en que existen varios recursos de basura, es beneficioso deshacerse de ellos para conservar espacio y optimizar el rendimiento del mantenimiento del sistema de archivos y la copia de seguridad.
 
 En su mayor parte, una aplicación WCM tiende a recopilar información, pero no a eliminarla casi con la misma frecuencia. Aunque se añaden nuevas imágenes, incluso sustituyendo a las versiones antiguas, el sistema de control de versiones conserva la antigua y admite la reversión a ella si es necesario. Por lo tanto, la mayor parte del contenido que pensamos que se añade al sistema se almacena de forma efectiva de forma permanente. Entonces, ¿cuál es la fuente típica de &quot;basura&quot; en el repositorio que podríamos querer limpiar?
 
-AEM utiliza el repositorio de como almacenamiento para varias actividades internas y de mantenimiento:
+AEM utiliza el repositorio como almacenamiento para varias actividades internas y de mantenimiento:
 
 * Paquetes creados y descargados
 * Archivos temporales creados para la replicación de publicación
@@ -59,7 +59,7 @@ Este método funciona bien para un solo nodo con un almacén de datos privado. S
 
 ## Ejecución de la recolección de basura del almacén de datos {#running-data-store-garbage-collection}
 
-AEM Existen tres formas de ejecutar la recolección de elementos no utilizados del almacén de datos, según la configuración del almacén de datos en el que se esté ejecutando el almacenamiento de datos:
+Existen tres formas de ejecutar la recolección de elementos no utilizados del almacén de datos, según la configuración del almacén de datos en el que se esté ejecutando AEM:
 
 1. Mediante [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md): un mecanismo de recolección de elementos no utilizados que se usa generalmente para la limpieza del almacén de nodos.
 
@@ -68,7 +68,7 @@ AEM Existen tres formas de ejecutar la recolección de elementos no utilizados d
 
 Si TarMK se usa como almacén de nodos y como almacén de datos, Revision Cleanup se puede usar para la recolección de elementos no utilizados tanto del almacén de nodos como del almacén de datos. Sin embargo, si se configura un almacén de datos externo como el almacén de datos del sistema de archivos, la recopilación de elementos no utilizados del almacén de datos se debe activar explícitamente de forma independiente de la Limpieza de revisión. La recopilación de elementos no utilizados del almacén de datos se puede activar mediante el tablero de operaciones o la consola JMX.
 
-AEM En la tabla siguiente se muestra el tipo de recolección de elementos no utilizados del almacén de datos que debe usarse para todas las implementaciones de almacén de datos admitidas en el 6:
+En la tabla siguiente se muestra el tipo de recolección de elementos no utilizados del almacén de datos que debe usarse para todas las implementaciones de almacén de datos admitidas en AEM 6:
 
 <table>
  <tbody>
@@ -123,7 +123,7 @@ Antes de ejecutar la recolección de elementos no utilizados del almacén de dat
 
 >[!NOTE]
 >
->La tarea de recolección de elementos no utilizados del almacén de datos solo estará visible si ha configurado un almacén de datos de archivo externo. AEM Consulte [Configuración de almacenes de nodos y almacenes de datos en el 6](/help/sites-deploying/data-store-config.md#file-data-store) para obtener información sobre cómo configurar un almacén de datos de archivos.
+>La tarea de recolección de elementos no utilizados del almacén de datos solo estará visible si ha configurado un almacén de datos de archivo externo. Consulte [Configuración de almacenes de nodos y almacenes de datos en AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) para obtener información sobre cómo configurar un almacén de datos de archivos.
 
 ### Ejecución de la recopilación de basura del almacén de datos mediante la consola JMX {#running-data-store-garbage-collection-via-the-jmx-console}
 
@@ -152,7 +152,7 @@ Para ejecutar la recolección de elementos no utilizados:
 
 >[!NOTE]
 >
->La tarea de recolección de elementos no utilizados del almacén de datos solo se iniciará si ha configurado un almacén de datos de archivo externo. Si no se ha configurado un almacén de datos de archivo externo, la tarea devolverá el mensaje `Cannot perform operation: no service of type BlobGCMBean found` después de invocar. AEM Consulte [Configuración de almacenes de nodos y almacenes de datos en el 6](/help/sites-deploying/data-store-config.md#file-data-store) para obtener información sobre cómo configurar un almacén de datos de archivos.
+>La tarea de recolección de elementos no utilizados del almacén de datos solo se iniciará si ha configurado un almacén de datos de archivo externo. Si no se ha configurado un almacén de datos de archivo externo, la tarea devolverá el mensaje `Cannot perform operation: no service of type BlobGCMBean found` después de invocar. Consulte [Configuración de almacenes de nodos y almacenes de datos en AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) para obtener información sobre cómo configurar un almacén de datos de archivos.
 
 ## Automatización de la recolección de basura del almacén de datos {#automating-data-store-garbage-collection}
 
