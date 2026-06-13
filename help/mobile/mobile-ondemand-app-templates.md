@@ -1,6 +1,6 @@
 ---
 title: Crear y agregar plantillas y componentes
-description: Siga esta página para obtener más información sobre la creación y adición de plantillas y componentes a la aplicación. La página utiliza la aplicación de Geometrixx Unlimited como la aplicación que contiene una plantilla de aplicación de ejemplo y plantillas de página.
+description: Siga esta página para obtener más información sobre la creación y adición de plantillas y componentes a la aplicación. La página utiliza la aplicación de Geometrixx Unlimited como aplicación que contiene una plantilla de aplicación y plantillas de página de ejemplo.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -10,8 +10,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 0%
+source-wordcount: '1160'
+ht-degree: 1%
 
 ---
 
@@ -35,7 +35,7 @@ Al seleccionar esta plantilla de muestra al crear una aplicación, se muestra un
 
 Una plantilla de aplicación se utiliza para crear una aplicación y actúa como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación. La plantilla elimina algunas propiedades fundamentales para guiar a la aplicación de la manera adecuada. En general, un cliente no crearía demasiadas aplicaciones en total.
 
-AEM Las plantillas de aplicación ofrecen una forma sencilla de utilizar los diseños existentes creados por desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de los programas de desarrollo de aplicaciones de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación.
+Las plantillas de aplicación proporcionan una forma sencilla de utilizar los diseños existentes creados por desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de AEM.
 
 Al crear una aplicación basada en la plantilla de otra aplicación, obtiene una aplicación con un punto de partida representativo de la aplicación en la que se creó.
 
@@ -48,7 +48,7 @@ Una vez creada una aplicación con esta plantilla, puede agregar artículos, tit
 
 >[!NOTE]
 >
->AEM También puede seleccionar una plantilla de aplicación de ejemplo, por ejemplo, la aplicación **We.Unlimited**, que un desarrollador de aplicaciones puso a su disposición. Si utiliza esta plantilla de ejemplo para su aplicación, obtendrá algunos artículos y colecciones de ejemplo para trabajar. Tendrá la opción de utilizar las plantillas y los componentes de ejemplo, personalizar los existentes o crear nuevos para la aplicación.
+>También puede seleccionar una plantilla de aplicación de ejemplo, por ejemplo, la aplicación **We.Unlimited**, que un desarrollador de AEM le puso a su disposición. Si utiliza esta plantilla de ejemplo para su aplicación, obtendrá algunos artículos y colecciones de ejemplo para trabajar. Tendrá la opción de utilizar las plantillas y los componentes de ejemplo, personalizar los existentes o crear nuevos para la aplicación.
 
 >[!CAUTION]
 >
@@ -85,7 +85,7 @@ El artículo de Unlimited es una plantilla de muestra que representa un diseño 
 
 ### Agregar componentes al artículo {#adding-components-to-article}
 
-Una vez creado, un autor puede editar el contenido de un artículo añadiendo componentes como texto e imágenes. AEM Los artículos son una extensión de las plantillas de página de la página de.
+Una vez creado, un autor puede editar el contenido de un artículo añadiendo componentes como texto e imágenes. Los artículos son una extensión de las plantillas de página de AEM.
 
 Seleccione un artículo que desee editar y luego haga clic en **Editar** para agregar componentes al artículo.
 
@@ -97,15 +97,15 @@ Elija &#39;**+**&#39; en el panel izquierdo para agregar componentes al artícul
 
 ### Creación de plantillas listas para usar {#creating-out-of-the-box-templates}
 
-No hay plantillas de artículos listas para usar; sin embargo, hay una plantilla predeterminada que las plantillas personalizadas deben ampliar. Consulte [Ejemplo de plantilla de artículos](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article) de la aplicación de Geometrixx Unlimited.
+No hay plantillas de artículos listas para usar; sin embargo, hay una plantilla predeterminada que las plantillas personalizadas deben ampliar. Consulte [Ejemplo de plantilla de artículo](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article) de la aplicación Geometrixx Unlimited.
 
-AEM Las propiedades clave más allá de las propiedades requeridas de la plantilla de normal incluyen:
+Las propiedades clave más allá de las propiedades requeridas de la plantilla de AEM normal incluyen:
 
 ***dps-resourceType=&quot;dps:Article&quot;***
 
-AEM Esta propiedad garantiza que la página de destino de la página se reconozca como una página de artículo de destino de AEM Mobile.
+Esta propiedad garantiza que la página de AEM se reconozca como una página de artículo de destino de AEM Mobile.
 
-AEM De acuerdo con las plantillas de la plantilla, puede agregar cualquier propiedad predeterminada o nodo secundario al ***jcr:content*** de la plantilla.
+Según las plantillas de AEM, puede agregar cualquier propiedad predeterminada o nodo secundario al ***jcr:content*** de la plantilla.
 
 ### Plantillas de banner y colección {#banner-and-collection-templates}
 
@@ -117,7 +117,7 @@ AEM De acuerdo con las plantillas de la plantilla, puede agregar cualquier propi
 
 Los componentes utilizan y permiten el acceso a los widgets, que se utilizan para representar el contenido.
 
-AEM En el repositorio de código se incluye un componente simple, cuyo origen se puede encontrar en la sección de componentes de la interfaz de usuario de. Posteriormente, también se puede abrir localmente en CRXDE Lite.
+En el repositorio de código se incluye un componente simple, cuyo origen se puede encontrar en AEM. Posteriormente, también se puede abrir localmente en CRXDE Lite.
 
 >[!NOTE]
 >
@@ -126,9 +126,9 @@ AEM En el repositorio de código se incluye un componente simple, cuyo origen se
 
 Puede añadir componentes a la página. Cualquier componente se puede utilizar en una aplicación de AEM Mobile, pero cuando se aplica, es posible que no se represente correctamente.
 
-Sin embargo, es posible que los componentes personalizados no se exporten y carguen en AEM Mobile On-demand Services AEM correctamente sin un controlador de sincronización de contenido de exportación personalizado que se procese en la.
+Sin embargo, es posible que los componentes personalizados no se exporten y carguen en AEM Mobile On-demand Services correctamente sin un controlador de sincronización de contenido de exportación personalizado que se procese en AEM.
 
-AEM Una vez que el componente ya se ha incluido en una página de creación, junto con otros componentes de bloque de creación, puede agregar otro componente a la página o editar uno existente.
+Una vez que el componente ya se ha incluido en una página de AEM, junto con otros componentes de bloque de creación, puede agregar otro componente a la página o editar uno existente.
 
 **Para agregar otro componente a la página:**
 
@@ -146,7 +146,7 @@ AEM Una vez que el componente ya se ha incluido en una página de creación, jun
 
 >[!NOTE]
 >
->AEM Puede crear un componente y personalizarlo con [Desarrollo con el CRXDE Lite &#x200B;](/help/sites-developing/developing-with-crxde-lite.md). Una vez que haya personalizado el componente existente según sus necesidades, puede agregarlo en su página utilizando la opción **Editar** en **Administrar artículos**, como se muestra en la figura anterior.
+>Puede crear un componente en AEM y personalizarlo usando [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Una vez que haya personalizado el componente existente según sus necesidades, puede agregarlo en su página utilizando la opción **Editar** en **Administrar artículos**, como se muestra en la figura anterior.
 
 >[!NOTE]
 >

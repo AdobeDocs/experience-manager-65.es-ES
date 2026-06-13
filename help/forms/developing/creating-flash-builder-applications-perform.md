@@ -1,6 +1,6 @@
 ---
 title: Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP
-description: Cree una aplicación cliente mediante el Flash Builder que realice la autenticación de inicio de sesión único (SSO) mediante tokens HTTP. Autentique un usuario para una operación una vez y utilice esa autenticación para realizar varias operaciones de AEM Forms.
+description: Cree una aplicación cliente mediante Flash Builder que realice la autenticación de inicio de sesión único (SSO) mediante tokens HTTP. Autentique un usuario para una operación una vez y utilice esa autenticación para realizar varias operaciones de AEM Forms.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 0%
+source-wordcount: '1794'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-Puede crear una aplicación cliente mediante el Flash Builder que realiza la autenticación de inicio de sesión único (SSO) mediante tokens HTTP. Supongamos, por ejemplo, que crea una aplicación basada en web mediante Flash Builder. A continuación, supongamos que la aplicación contiene vistas diferentes, donde cada vista invoca una operación de AEM Forms diferente. En lugar de autenticar a un usuario para cada operación de Forms, puede crear una página de inicio de sesión que permita a un usuario autenticarse una vez. Una vez autenticado, un usuario puede invocar varias operaciones sin tener que autenticarse de nuevo. Por ejemplo, si un usuario ha iniciado sesión en Workspace (u otra aplicación de Forms), no es necesario que vuelva a autenticarse.
+Puede crear una aplicación cliente mediante Flash Builder que realice la autenticación de inicio de sesión único (SSO) mediante tokens HTTP. Supongamos, por ejemplo, que crea una aplicación basada en web mediante Flash Builder. A continuación, supongamos que la aplicación contiene vistas diferentes, donde cada vista invoca una operación de AEM Forms diferente. En lugar de autenticar a un usuario para cada operación de Forms, puede crear una página de inicio de sesión que permita a un usuario autenticarse una vez. Una vez autenticado, un usuario puede invocar varias operaciones sin tener que autenticarse de nuevo. Por ejemplo, si un usuario ha iniciado sesión en Workspace (u otra aplicación de Forms), no es necesario que vuelva a autenticarse.
 
-AEM Aunque la aplicación cliente contiene la lógica de aplicación necesaria para realizar la autenticación SSO, la administración de usuarios de formularios de la aplicación realiza la autenticación de usuario real. Para autenticar a un usuario mediante tokens HTTP, la aplicación cliente invoca la operación `authenticateWithHTTPToken` del servicio Administrador de autenticación. Administración de usuarios puede autenticar usuarios mediante un token HTTP. Para las llamadas posteriores de servicios remotos o web a AEM Forms, no es necesario pasar las credenciales para la autenticación.
+Aunque la aplicación cliente contiene la lógica de aplicación necesaria para realizar la autenticación SSO, AEM Forms User Management realiza la autenticación de usuario real. Para autenticar a un usuario mediante tokens HTTP, la aplicación cliente invoca la operación `authenticateWithHTTPToken` del servicio Administrador de autenticación. Administración de usuarios puede autenticar usuarios mediante un token HTTP. Para las llamadas posteriores de servicios remotos o web a AEM Forms, no es necesario pasar las credenciales para la autenticación.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ El siguiente proceso de corta duración de AEM Forms, denominado `MyApplication/
 >
 >Este proceso no se basa en un proceso de AEM Forms existente. Para continuar con los ejemplos de código que describen cómo invocar este proceso, cree un proceso denominado `MyApplication/EncryptDocument` mediante Workbench. (Consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)).
 
-La aplicación cliente creada mediante el Flash Builder interactúa con el servlet de seguridad del Administrador de usuarios configurado en `/um/login` y `/um/logout`. Es decir, la aplicación cliente envía una solicitud a la dirección URL `/um/login` durante el inicio para determinar el estado del usuario. A continuación, el administrador de usuarios responde con el estado del usuario. La aplicación cliente y el servlet de seguridad del Administrador de usuarios se comunican mediante HTTP.
+La aplicación cliente creada con Flash Builder interactúa con el servlet de seguridad del Administrador de usuarios configurado en `/um/login` y `/um/logout`. Es decir, la aplicación cliente envía una solicitud a la dirección URL `/um/login` durante el inicio para determinar el estado del usuario. A continuación, el administrador de usuarios responde con el estado del usuario. La aplicación cliente y el servlet de seguridad del Administrador de usuarios se comunican mediante HTTP.
 
 **Formato de solicitud**
 
@@ -50,7 +50,7 @@ El valor `j_password` solo es necesario para solicitudes de credenciales. Si no 
 
 >[!NOTE]
 >
->Para gestionar correctamente i18n, asegúrese de que estos valores estén en forma POST.
+>Para gestionar correctamente i18n, asegúrese de que estos valores estén en formato POST.
 
 **Formato de respuesta**
 
@@ -69,7 +69,7 @@ El servlet de seguridad configurado en `/um/login` responde con el formato `URLV
 
 **Proceso de inicio de sesión**
 
-Cuando se inicia una aplicación cliente, puede realizar una solicitud de POST al servlet de seguridad `/um/login`. Por ejemplo, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Cuando la solicitud llega al servlet de seguridad del Administrador de usuarios, realiza los siguientes pasos:
+Cuando se inicia una aplicación cliente, puede realizar una petición POST al servlet de seguridad `/um/login`. Por ejemplo, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Cuando la solicitud llega al servlet de seguridad del Administrador de usuarios, realiza los siguientes pasos:
 
 1. Busca una cookie denominada `lcAuthToken`. Si el usuario ya ha iniciado sesión en otra aplicación de Forms, esta cookie está presente. Si se encuentra la cookie, se valida su contenido.
 1. Si el SSO basado en encabezado está activado, el servlet busca encabezados configurados para determinar la identidad del usuario.
@@ -84,7 +84,7 @@ Si la autenticación aún no se realiza correctamente, el servlet de seguridad r
 
 >[!NOTE]
 >
->Mientras esté `authstate=CREDENTIAL_CHALLENGE`, se recomienda que el cliente envíe la credencial obtenida al servlet de seguridad en forma de POST.
+>Mientras esté `authstate=CREDENTIAL_CHALLENGE`, se recomienda que el cliente envíe la credencial obtenida al servlet de seguridad en un formulario POST.
 
 **Proceso de cierre de sesión**
 
@@ -94,7 +94,7 @@ Cuando una aplicación cliente cierra la sesión, puede enviar una solicitud a l
 
 Al recibir esta solicitud, el servlet de seguridad del Administrador de usuarios elimina la cookie `lcAuthToken` y responde con `authstate=LOGGED_OUT`. Una vez que la aplicación cliente recibe este valor, la aplicación puede realizar tareas de limpieza.
 
-## AEM Creación de una aplicación cliente que autentique usuarios de formularios en la que se utilice el SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
+## Crear una aplicación cliente que autentique usuarios de formularios AEM Forms mediante SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
 
 Para mostrar cómo crear una aplicación cliente que realice la autenticación SSO, se crea una aplicación cliente de ejemplo. La siguiente ilustración muestra los pasos que la aplicación cliente realiza para autenticar a un usuario mediante SSO.
 
@@ -112,7 +112,7 @@ En la ilustración anterior se describe el flujo de aplicación que se produce c
 
 La aplicación cliente consta de los siguientes archivos:
 
-* MXML `SSOStandalone.mxml`: el archivo de principal que representa la aplicación cliente. (Consulte [Creación del archivo SSOStandalone.xml](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file)).
+* `SSOStandalone.mxml`: archivo MXML principal que representa la aplicación cliente. (Consulte [Creación del archivo SSOStandalone.xml](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file)).
 * `um/ISSOManager.as`: exponer operaciones relacionadas con el inicio de sesión único (SSO). (Consulte [Creación del archivo ISSOManager.as](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file).)
 * `um/SSOEvent.as`: `SSOEvent` se ha enviado para eventos relacionados con SSO. (Consulte [Creación del archivo SSOEvent.as](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file)).
 * `um/SSOManager.as`: administra las operaciones relacionadas con el SSO y envía los eventos correspondientes. (Consulte [Creación del archivo SSOManager.as](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file)).
