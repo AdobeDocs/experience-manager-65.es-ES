@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 99%
+source-wordcount: '1237'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html) |
 | AEM 6.5 | Este artículo |
 
 
@@ -60,7 +60,7 @@ Todos estos diseños de panel se definen en la siguiente ubicación:
 
 Un autor de formularios puede asociar un diseño a cada uno de los paneles de un formulario adaptable, incluido el panel raíz.
 
-Los diseños de panel están disponibles en la ubicación `/libs/fd/af/layouts/panel`. 
+Los diseños de panel están disponibles en la ubicación `/libs/fd/af/layouts/panel`.
 
 ![Lista de diseños de panel del panel raíz de un formulario adaptable](assets/layouts.png)
 

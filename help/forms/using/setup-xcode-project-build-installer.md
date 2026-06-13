@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 95%
+source-wordcount: '831'
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ Para obtener la fuente de la aplicación de AEM Forms, realice los siguientes pa
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
 1. Para descargar el archivo del código fuente, abra `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` en su explorador.
-El paquete de fuente se descargará en el dispositivo.
+El paquete de origen se descargará en el dispositivo.
 
 La siguiente imagen muestra el contenido extraído del `adobe-lc-mobileworkspace-src-<version>.zip`.
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '7608'
+source-wordcount: '7800'
 ht-degree: 90%
 
 ---
@@ -142,7 +142,7 @@ Esta sección describe las técnicas que puede utilizar durante el proceso de in
   </tr> 
   <tr> 
    <td><p>Configuración de seguridad del sistema operativo</p> </td> 
-   <td><p>Si necesita utilizar codificación XML de 192 o 256 bits en plataformas Solaris, asegúrese de instalar <code>pkcs11_softtoken_extra.so</code> en lugar de <code>pkcs11_softtoken.so</code>.</p> </td> 
+   <td><p>Si necesita utilizar cifrado XML de 192 o 256 bits en plataformas Solaris, asegúrese de instalar <code>pkcs11_softtoken_extra.so</code> en lugar de <code>pkcs11_softtoken.so</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -262,7 +262,7 @@ El Administrador de configuración utilizó un servlet implementado en su servid
 1. Inicie el servidor de AEM Forms.
 1. Escriba la siguiente URL en un explorador para probar el cambio y asegurarse de que ya no funciona.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Bloqueo del acceso remoto al Almacén de confianza**
 
@@ -355,13 +355,13 @@ En Oracle, la cuenta de la base de datos utilizada solo necesita los privilegios
 
 #### Configuración de la seguridad integrada de SQL Server en Windows para JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
-1. Modifique [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} para agregar `integratedSecurity=true` a la URL de conexión, como se muestra en este ejemplo:
+1. Modifique [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} para agregar `integratedSecurity=true` a la dirección URL de conexión, como se muestra en este ejemplo:
 
    ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
    ```
 
-1. Agregue el archivo sqljdbc_auth.dll a la ruta del sistema de Windows en el equipo que ejecuta el servidor de aplicaciones. El archivo sqljdbc_auth.dll se encuentra con la instalación del controlador Microsoft SQL DBC 6.2.1.0.
+1. Agregue el archivo sqljdbc_auth.dll a la ruta del sistema de Windows en el equipo que ejecuta el servidor de aplicaciones. El archivo sqljdbc_auth.dll se encuentra con la instalación del controlador Microsoft SQL JDBC 6.2.1.0.
 1. Modifique la propiedad del servicio de Windows de JBoss (JBoss para AEM Forms en JEE) para Iniciar sesión desde el sistema local en una cuenta de inicio de sesión que tenga una base de datos de AEM Forms y un conjunto mínimo de privilegios. Si está ejecutando JBoss desde la línea de comandos en lugar de como un servicio de Windows, no necesita realizar este paso.
 1. Cambie la seguridad de SQL Server del modo **Mixto** a **Solo autenticación de Windows**.
 
@@ -378,7 +378,7 @@ En Oracle, la cuenta de la base de datos utilizada solo necesita los privilegios
 1. En la siguiente pantalla, en la pestaña **Configuración**, haga clic en la pestaña **Grupo de conexiones** y, en el cuadro **Propiedades**, escriba `integratedSecurity=true`.
 1. En Estructura de dominio, haga clic en **[base_domain]** > **Servicios** > **JDBC** > **Fuentes de datos** y, en el panel derecho, haga clic en **RM_DS**.
 1. En la siguiente pantalla, en la pestaña **Configuración**, haga clic en la pestaña **Grupo de conexiones** y, en el cuadro **Propiedades**, escriba `integratedSecurity=true`.
-1. Agregue el archivo sqljdbc_auth.dll a la ruta del sistema de Windows en el equipo que ejecuta el servidor de aplicaciones. El archivo sqljdbc_auth.dll se encuentra con la instalación del controlador Microsoft SQL DBC 6.2.1.0.
+1. Agregue el archivo sqljdbc_auth.dll a la ruta del sistema de Windows en el equipo que ejecuta el servidor de aplicaciones. El archivo sqljdbc_auth.dll se encuentra con la instalación del controlador Microsoft SQL JDBC 6.2.1.0.
 1. Cambie la seguridad de SQL Server del modo **Mixto** a **Solo autenticación de Windows**.
 
 #### Configuración de la seguridad integrada de SQL Server en Windows para WebSphere {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
@@ -688,7 +688,7 @@ El proceso de filtrado de referentes se puede describir de la siguiente manera:
 1. El servidor de Forms comprueba el método HTTP utilizado para la invocación:
 
    1. Si es POST, el servidor de Forms realiza la comprobación del encabezado Referente.
-   1. Si es GET, el servidor de Forms omite la comprobación del referente, a menos que *CSRF_CHECK_GETS* esté establecido en true, en cuyo caso realiza la comprobación del encabezado Referente. *CSRF_CHECK_GETS* se especifica en el archivo *web.xml* de la aplicación.
+   1. Si es GET, el servidor de Forms omite la comprobación del referente, a menos que *CSRF_CHECK_GETS* esté establecido en True, en cuyo caso realiza la comprobación del encabezado Referente. *CSRF_CHECK_GETS* se especifica en el archivo *web.xml* de la aplicación.
 
 1. El servidor de Forms comprueba si el URI solicitado existe en la lista de permitidos:
 
@@ -707,13 +707,13 @@ El proceso de filtrado de referentes se puede describir de la siguiente manera:
 
 ### Administración del filtrado de referentes {#managing-referer-filtering}
 
-AEM Forms en JEE proporciona el Filtro de referente para especificar los referentes a los que se permite el acceso a los recursos del servidor. De manera predeterminada, el Filtro de referente no filtra las solicitudes que utilizan un método HTTP seguro, por ejemplo, GET, a menos que *CSRF_CHECK_GETS* esté establecido en true. Si el número de puerto de una entrada de referente permitida está establecido en 0, AEM Forms en JEE permitirá todas las solicitudes con referente procedentes de ese host independientemente del número de puerto. Si no se especifica ningún número de puerto, solo se permiten las solicitudes del puerto predeterminado 80 (HTTP) o 443 (HTTPS). El Filtro de referente se desactiva si se eliminan todas las entradas de la lista Referentes permitidos.
+AEM Forms en JEE proporciona el Filtro de referente para especificar los referentes a los que se permite el acceso a los recursos del servidor. De manera predeterminada, el filtro Referente no filtra las solicitudes que utilizan un método HTTP seguro, por ejemplo, GET, a menos que *CSRF_CHECK_GETS* esté establecido en true. Si el número de puerto de una entrada de referente permitida está establecido en 0, AEM Forms en JEE permitirá todas las solicitudes con referente procedentes de ese host independientemente del número de puerto. Si no se especifica ningún número de puerto, solo se permiten las solicitudes del puerto predeterminado 80 (HTTP) o 443 (HTTPS). El Filtro de referente se desactiva si se eliminan todas las entradas de la lista Referentes permitidos.
 
-Cuando instala Document Services por primera vez, la lista Referentes permitidos se actualiza con la dirección del servidor en el que se ha instalado este. Las entradas del servidor incluyen el nombre del servidor, la dirección IPv4, la dirección IPv6 si IPv6 está habilitado, la dirección de bucle invertido y una entrada localhost. El sistema operativo del host devuelve los nombres agregados a la lista Referentes permitidos. Por ejemplo, un servidor con la dirección IP 10.40.54.187 incluirá las siguientes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. La lista de permitidos no se actualiza para los nombres no autorizados devueltos por el sistema operativo del host (nombres que no tienen una dirección IPv4, una dirección IPv6 o un nombre de dominio autorizado). Modifique la lista Referente permitidos para adaptarla a su entorno empresarial. No implemente el servidor de Forms en el entorno de producción con la lista Referentes permitidos predeterminada. Si ha modificado cualquiera de los referentes permitidos, las excepciones de los referentes permitidos o los URI, asegúrese de reiniciar el servidor para que los cambios surtan efecto.
+Cuando instala Document Services por primera vez, la lista Referentes permitidos se actualiza con la dirección del servidor en el que se ha instalado este. Las entradas del servidor incluyen el nombre del servidor, la dirección IPv4, la dirección IPv6 si IPv6 está habilitado, la dirección de bucle invertido y una entrada localhost. El sistema operativo del host devuelve los nombres agregados a la lista Referentes permitidos. Por ejemplo, un servidor con una dirección IP de 10.40.54.187 incluirá las siguientes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. La lista de permitidos no se actualiza para los nombres no autorizados devueltos por el sistema operativo del host (nombres que no tienen una dirección IPv4, una dirección IPv6 o un nombre de dominio autorizado). Modifique la lista Referente permitidos para adaptarla a su entorno empresarial. No implemente el servidor de Forms en el entorno de producción con la lista Referentes permitidos predeterminada. Si ha modificado cualquiera de los referentes permitidos, las excepciones de los referentes permitidos o los URI, asegúrese de reiniciar el servidor para que los cambios surtan efecto.
 
 **Administración de la lista Referentes permitidos**
 
-Puede administrar la lista Referente permitidos desde la interfaz de User Management en la consola de administración. La interfaz de User Management proporciona la funcionalidad para crear, editar o eliminar la lista. Consulte la sección * [Prevención de ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* de la *ayuda de Administración* para obtener más información sobre cómo trabajar con la lista Referentes permitidos.
+Puede administrar la lista Referente permitidos desde la interfaz de User Management en la consola de administración. La interfaz de User Management proporciona la funcionalidad para crear, editar o eliminar la lista. Consulte la sección *[Prevención de ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* de la *ayuda de Administración* para obtener más información sobre cómo trabajar con la lista Referentes permitidos.
 
 **Administración de las listas Excepciones de referentes permitidos y URI permitidos**
 
@@ -732,7 +732,7 @@ Consulte la *Referencia de las API de AEM Forms en JEE* para obtener más infor
 
 Utilice la lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para las excepciones de referentes permitidos a nivel global, es decir, para definir excepciones aplicables a todas las aplicaciones. Esta lista contiene únicamente URI con una ruta de acceso absoluta (por ejemplo, `/index.html`) o relativa (por ejemplo, `/sample/`). También puede anexar una expresión regular al final de un URI relativo, por ejemplo, `/sample/(.)*`.
 
-EL ID de lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** se define como una constante en la clase `UMConstants` del área de nombres `com.adobe.idp.um.api`, que se encuentra en `adobe-usermanager-client.jar`. Puede utilizar las API de AEM Forms para crear, modificar o editar esta lista. Por ejemplo, para crear la lista de excepciones de referentes permitidos globales, utilice:
+EL ID de lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** se define como una constante en la clase `UMConstants` del espacio de nombres `com.adobe.idp.um.api`, que se encuentra en `adobe-usermanager-client.jar`. Puede utilizar las API de AEM Forms para crear, modificar o editar esta lista. Por ejemplo, para crear la lista de excepciones de referentes permitidos globales, utilice:
 
 ```java
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
@@ -838,7 +838,7 @@ Al configurar una arquitectura de red segura como se describe en la sección ant
     <ul> 
      <li><p>Aplicaciones cliente de los servicios web; p. ej., aplicaciones .NET</p> </li> 
      <li><p>Adobe Reader® utiliza SOAP para los servicios web del servidor de AEM Forms en JEE</p> </li> 
-     <li><p>Flash SOAP de Adobe ® las aplicaciones utilizan la aplicación para los servicios web de Forms Server</p> </li> 
+     <li><p>Las aplicaciones Flash® de Adobe utilizan SOAP para los servicios web de Forms Server</p> </li> 
      <li><p>Llamadas del SDK de AEM Forms en JEE cuando se utiliza en el modo SOAP</p> </li> 
      <li><p>Entorno de diseño de Workbench</p> </li> 
     </ul> </td> 
@@ -896,7 +896,7 @@ Esta sección describe los puertos predeterminados (y los intervalos de configur
 
 >[!NOTE]
 >
->De forma predeterminada, el servidor expone varios MBeans de JMX en el área de nombres de adobe.com. Solo se expone la información que resulta útil para la monitorización del estado del servidor. Sin embargo, para evitar la divulgación de información, debe evitar que los llamadores de una red que no es de confianza busquen los MBeans de JMX y accedan a las métricas de estado.
+>De forma predeterminada, el servidor expone varios MBeans de JMX en el espacio de nombres de adobe.com. Solo se expone la información que resulta útil para la monitorización del estado del servidor. Sin embargo, para evitar la divulgación de información, debe evitar que los llamadores de una red que no es de confianza busquen los MBeans de JMX y accedan a las métricas de estado.
 
 **Puerto de JBoss**
 
@@ -904,7 +904,7 @@ Esta sección describe los puertos predeterminados (y los intervalos de configur
  <thead> 
   <tr> 
    <th><p>Función</p> </th> 
-   <th><p>Puerto </p> </th> 
+   <th><p>Puerto</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -925,7 +925,7 @@ Esta sección describe los puertos predeterminados (y los intervalos de configur
  <thead> 
   <tr> 
    <th><p>Función</p> </th> 
-   <th><p>Puerto </p> </th> 
+   <th><p>Puerto</p> </th> 
   </tr> 
  </thead> 
  <tbody>
