@@ -9,14 +9,14 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6061'
-ht-degree: 72%
+source-wordcount: '6030'
+ht-degree: 71%
 
 ---
 
 # Prácticas recomendadas para usar formularios adaptables {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es)  for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md)  or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
+<span class="preview"> Adobe recomienda usar la captura de datos moderna y extensible [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear nuevos Forms adaptables](/help/forms/using/create-an-adaptive-form-core-components.md) o [agregar Forms adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 ## Información general {#overview}
 
@@ -63,19 +63,19 @@ Para obtener más información, consulte [Cómo crear proyectos de AEM con Apach
 Una vez configurado el proyecto de AEM, defina una estrategia para crear y personalizar plantillas y componentes de formularios adaptables.
 
 * Una plantilla de formulario adaptable es una página de AEM especializada que define la estructura y la información del encabezado y pie de página de un formulario adaptable. Una plantilla tiene diseños, estilos y estructuras básicos preconfigurados para un formulario adaptable. AEM Forms proporciona plantillas y componentes integrados que puede utilizar para crear formularios adaptables. Sin embargo, puede crear plantillas y componentes personalizados según sus necesidades. Se recomienda recopilar los requisitos para plantillas y componentes adicionales que necesite en los formularios adaptables. Para obtener más información, consulte [Personalizar formularios y componentes adaptables](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
-* It is recommended to upload the form packages using the Form Manager user interface instead of the CRX Package Manager user interface, as uploading packages via CRX Package Manager may sometimes lead to anomalies.
-* AEM Forms lets you create adaptive forms based on the following form models. Los modelos de formulario actúan como interfaz para el intercambio de datos entre un formulario y el sistema de AEM y proporcionan una estructura basada en XML para el flujo de datos dentro y fuera de un formulario adaptable. Además, los modelos de formulario imponen reglas y restricciones en los formularios adaptables en forma de restricciones de esquema y XFA.
+* Se recomienda cargar los paquetes de formularios mediante la interfaz de usuario de Form Manager en lugar de la interfaz de usuario de CRX Package Manager, ya que la carga de paquetes mediante CRX Package Manager a veces puede provocar anomalías.
+* AEM Forms permite crear formularios adaptables basados en los siguientes modelos de formulario. Los modelos de formulario actúan como interfaz para el intercambio de datos entre un formulario y el sistema de AEM y proporcionan una estructura basada en XML para el flujo de datos dentro y fuera de un formulario adaptable. Además, los modelos de formulario imponen reglas y restricciones en los formularios adaptables en forma de restricciones de esquema y XFA.
 
-   * **None**: Adaptive forms created with this option do not use any form model. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
+   * **Ninguno**: los formularios adaptables creados con esta opción no utilizan ningún modelo de formulario. El XML de datos generado a partir de estos formularios tiene una estructura plana con campos y valores correspondientes.
    * **Esquema XML o JSON**: los esquemas XML y JSON representan la estructura en la que el sistema back-end de su organización produce o consume los datos. Puede asociar el esquema a un formulario adaptable y utilizar sus elementos para agregarle contenido dinámico. Los elementos del esquema están disponibles en la pestaña Objeto de modelo de datos del explorador de contenidos para crear formularios adaptables. Puede arrastrar y soltar los elementos de esquema para crear el formulario.
    * **Plantilla de formulario XFA**: es un modelo de formulario ideal si tiene inversiones en formularios HTML5 basados en XFA. Proporciona una forma directa de convertir los formularios basados en XFA en formularios adaptables. Cualquier regla XFA existente se conservará en el formulario adaptable asociado. El formulario adaptable resultante admitirá construcciones XFA, como validaciones, eventos, propiedades y patrones.
    * **Modelo de datos de formulario**: es un modelo de formulario preferido si desea integrar sistemas backend como bases de datos, servicios web y perfiles de usuario de AEM para rellenar previamente formularios adaptables y escribir datos de formulario enviados de nuevo en los sistemas backend. Un editor del Modelo de datos de formulario permite definir y configurar entidades y servicios en un modelo de datos de formulario que se puede utilizar para crear formularios adaptables. Para obtener más información, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
 
-Es importante elegir cuidadosamente el modelo de datos que no solo se adapte a sus necesidades, sino que amplíe sus inversiones existentes en recursos XFA y XSD, si las hay. Use the XSD Model to create form templates because the generated XML contains data as per XPATH defined by schema. El uso del modelo XSD como opción predeterminada para el modelo de datos de formulario también es útil porque desvincula el diseño de formulario del sistema backend que procesa y consume datos y mejora el rendimiento del formulario debido a que se asigna de uno a uno el campo de formulario. Además, el BindRef del campo puede convertirse en el XPATH de su valor de datos en XML.
+Es importante elegir cuidadosamente el modelo de datos que no solo se adapte a sus necesidades, sino que amplíe sus inversiones existentes en recursos XFA y XSD, si las hay. Utilice el modelo XSD para crear plantillas de formulario porque el XML generado contiene datos según el XPATH definido por el esquema. El uso del modelo XSD como opción predeterminada para el modelo de datos de formulario también es útil porque desvincula el diseño de formulario del sistema backend que procesa y consume datos y mejora el rendimiento del formulario debido a que se asigna de uno a uno el campo de formulario. Además, el BindRef del campo puede convertirse en el XPATH de su valor de datos en XML.
 
 Para obtener más información, consulte [Crear un formulario adaptable](/help/forms/using/creating-adaptive-form.md).
 
-* Hay algunas secciones comunes en los formularios adaptables. Puede identificarlos y definir una estrategia para promover la reutilización del contenido. Adaptive forms let you create stand-alone fragments and reuse them across forms. También puede guardar un panel en un formulario adaptable como un fragmento. Cualquier cambio en un fragmento se reflejará en todos los formularios asociados. Ayuda a reducir el tiempo de creación y garantiza la coherencia en todos los formularios. Además, el uso de fragmentos hace que los formularios adaptables sean ligeros, lo que mejora la experiencia de creación, especialmente de formularios grandes. Para obtener más información, consulte [Fragmentos de formulario adaptables](/help/forms/using/adaptive-form-fragments.md).
+* Hay algunas secciones comunes en los formularios adaptables. Puede identificarlos y definir una estrategia para promover la reutilización del contenido. Los formularios adaptables permiten crear fragmentos independientes y reutilizarlos en todos los formularios. También puede guardar un panel en un formulario adaptable como un fragmento. Cualquier cambio en un fragmento se reflejará en todos los formularios asociados. Ayuda a reducir el tiempo de creación y garantiza la coherencia en todos los formularios. Además, el uso de fragmentos hace que los formularios adaptables sean ligeros, lo que mejora la experiencia de creación, especialmente de formularios grandes. Para obtener más información, consulte [Fragmentos de formulario adaptables](/help/forms/using/adaptive-form-fragments.md).
 
 ### Personalizar formularios y componentes adaptables {#customize-components}
 
@@ -105,9 +105,9 @@ Las plantillas de formulario también se pueden cargar desde paquetes de formula
 
 * El modo de ejecución **nosamplecontent** solo se recomienda para el autor y no para los nodos de publicación.
 * La creación de recursos, como formularios adaptables, temáticas, plantillas o configuraciones de nube, se realiza solo sobre nodos de autor, que se pueden publicar en los nodos configurados de publicación.
-Para obtener más información, consulte [Publicar y cancelar la publicación de formularios y documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=es)
-* Forms addon package is required for Authoring and for Publishing to support the document service operations; hence it can be considered as a dependency.
-Si solo desea plantillas de muestra, temáticas y paquetes de DOR relacionados con Forms, puede descargarlos desde [paquetes aemforms-references-*](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=es).
+Para obtener más información, vea [Publicar y cancelar la publicación de formularios y documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=es)
+* El paquete de complementos de Forms es necesario para que la creación y la publicación admitan las operaciones del servicio de documentos; por lo tanto, puede considerarse como una dependencia.
+Si solo desea plantillas de muestra, temáticas y paquetes de DOR relacionados con Forms, puede descargarlos desde [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=es).
 
 Para obtener más información, consulte las prácticas recomendadas en [Introducción a la creación de formularios adaptables](/help/forms/using/introduction-forms-authoring.md).
 
@@ -125,7 +125,7 @@ Consulte también las descripciones de los componentes y las prácticas recomend
 
 ### Usar reglas en formularios adaptables {#using-rules-in-adaptive-forms}
 
-AEM Forms provides a [rule editor](/help/forms/using/rule-editor.md) that lets you create rules to add dynamic behavior to adaptive form components. Con estas reglas, se pueden evaluar condiciones y acciones del activador en componentes como mostrar u ocultar campos, calcular valores, cambiar listas desplegables de forma dinámica, etc.
+AEM Forms proporciona un [editor de reglas](/help/forms/using/rule-editor.md) que le permite crear reglas para agregar un comportamiento dinámico a los componentes del formulario adaptable. Con estas reglas, se pueden evaluar condiciones y acciones del activador en componentes como mostrar u ocultar campos, calcular valores, cambiar listas desplegables de forma dinámica, etc.
 
 El editor de reglas proporciona un editor visual y un editor de código para escribir reglas. Tenga en cuenta lo siguiente al escribir reglas mediante el modo de editor de código:
 
@@ -136,7 +136,7 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
 
 * Consulte los componentes por jerarquía única relativa para evitar conflictos. Por ejemplo, `parentName.fieldName`.
 
-* When handling complex or commonly used rules, consider writing business logic as functions in a separate client library that you can specify and reuse across adaptive forms. La biblioteca de cliente debe ser una biblioteca independiente y no debe tener dependencias externas, excepto jQuery y Underscore.js. También puede utilizar la biblioteca de cliente para aplicar [revalidación del lado del servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) de los datos de formulario enviados.
+* Cuando administre reglas complejas o comúnmente utilizadas, considere la posibilidad de escribir lógica empresarial como funciones en una biblioteca de cliente independiente que puede especificar y reutilizar en formularios adaptables. La biblioteca de cliente debe ser una biblioteca independiente y no debe tener dependencias externas, excepto jQuery y Underscore.js. También puede utilizar la biblioteca de cliente para aplicar [revalidación del lado del servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) de los datos de formulario enviados.
 * Los formularios adaptables proporcionan un conjunto de API que puede utilizar para comunicarse con los formularios adaptables y realizar acciones en ellos. Algunas de las API clave son las siguientes: Para obtener más información, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
    * `guideBridge.reset()`: restablece un formulario.
@@ -155,9 +155,9 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
 * Es posible que los autores de formularios adaptables tengan que escribir código JavaScript para crear lógica empresarial en un formulario. Aunque JavaScript es potente y eficaz, es probable que pueda comprometer las expectativas de seguridad. Por lo tanto, debe asegurarse de que el autor del formulario sea una persona de confianza y de que haya procesos para revisar y aprobar el código JavaScript antes de que se ponga en producción un formulario. El administrador puede restringir el acceso al editor de reglas a los grupos de usuarios en base a su rol o función. Consulte [Conceder acceso al Editor de reglas a determinados grupos de usuarios.](/help/forms/using/rule-editor-access-user-groups.md).
 * Puede utilizar expresiones en reglas para hacer dinámicos los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de scripts de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener más información sobre las expresiones y las prácticas recomendadas que las rodean, consulte [Expresiones de formulario adaptables](/help/forms/using/adaptive-form-expressions.md).
 
-* Adobe recommends using JavaScript synchronous operations over asynchronous ones when creating rules with the Rule editor. Use of asynchronous operations is strongly discouraged. However, if you find yourself in a situation where asynchronous operations are unavoidable, it is essential to implement JavaScript Closure functions. By doing so, you can effectively safeguard against any potential race conditions, ensuring your rule implementations deliver optimal performance and maintain stability throughout.
+* Adobe recomienda utilizar las operaciones sincrónicas de JavaScript sobre las asincrónicas al crear reglas con el editor de reglas. Se desaconseja el uso de operaciones asincrónicas. Sin embargo, si se encuentra en una situación en la que las operaciones asincrónicas son inevitables, es esencial implementar las funciones de Cierre de JavaScript. Al hacerlo, puede proteger de forma eficaz contra cualquier posible condición de carrera, lo que garantiza que las implementaciones de reglas ofrezcan un rendimiento óptimo y mantengan la estabilidad en todo.
 
-  For example, let&#39;s assume we need to fetch data from an external API and then apply some rules based on that data. We use a closure to handle the asynchronous API call and ensure that the rules are applied after the data is fetched. Here is the sample code:
+  Por ejemplo, supongamos que necesitamos recuperar datos de una API externa y luego aplicar algunas reglas basadas en esos datos. Utilizamos un cierre para gestionar la llamada asincrónica a la API y garantizar que las reglas se apliquen después de recuperar los datos. Este es un ejemplo de código:
 
   ```JavaScript
        function fetchDataFromAPI(apiEndpoint, callback) {
@@ -185,12 +185,12 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
       ruleImplementation(apiEndpoint);
   ```
 
-  In this example, `fetchDataFromAPI` simulates an asynchronous API call using `setTimeout`. Once the data is fetched, it invokes the provided callback function, which is the closure to handle the subsequent rule application. The `ruleImplementation` function contains the rule logic.
+  En este ejemplo, `fetchDataFromAPI` simula una llamada de API asincrónica con `setTimeout`. Una vez recuperados los datos, invoca la función de llamada de retorno proporcionada, que es el cierre para administrar la aplicación de reglas posterior. La función `ruleImplementation` contiene la lógica de regla.
 
 
 ### Trabajar con temáticas {#working-with-themes}
 
-Adaptive for themes let you create reusable styles that can be applied across forms for consistent look and styling. Use Themes to define styling for form components and panels. Algunas prácticas recomendadas relacionadas con los temáticas son las siguientes:
+La adaptación para las temáticas le permite crear estilos reutilizables que se pueden aplicar en todos los formularios para lograr un aspecto y un estilo coherentes. Utilice Temáticas para definir el estilo de los componentes y paneles del formulario. Algunas prácticas recomendadas relacionadas con los temáticas son las siguientes:
 
 * Utilizar la biblioteca de recursos para aplicar rápidamente estilos de texto, fondo e imágenes. Cuando se agrega un estilo en la biblioteca de recursos, estará disponible para otras temáticas y para el modo de estilo de la interfaz de usuario del editor de formularios.
 * Aplique la configuración global como fuente y fondo de página mediante el selector de nivel de página.
@@ -210,7 +210,7 @@ Tenga en cuenta las siguientes prácticas recomendadas para superar los problema
 * Incluir solo los campos y paneles en formularios adaptables que capturan información del usuario. Considere la posibilidad de mantener el contenido estático como mínimo o utilice direcciones URL para abrirlo en una ventana independiente.
 * Aunque cada formulario está diseñado para un propósito específico, hay algunos segmentos comunes en la mayoría de los formularios. Por ejemplo: detalles personales, dirección, detalles de empleo, etc. Cree [fragmentos de formulario adaptables](/help/forms/using/adaptive-form-fragments.md) para elementos y secciones de formulario comunes y utilícelos en todos los formularios. También puede guardar un panel en un formulario existente como un fragmento. Cualquier cambio en un fragmento se reflejará en todos los formularios adaptables asociados. Promueve la creación colaborativa, ya que varios autores pueden trabajar simultáneamente en diferentes fragmentos que conforman un formulario.
 
-   * Consider creating form fragments even for non-reusable sections during form authoring. As forms grow in size and complexity, breaking them down into fragments can significantly simplify the authoring process and make the form easier to maintain. This approach allows you to focus on smaller, more manageable pieces of the form rather than dealing with the entire form at once.
+   * Considere la posibilidad de crear fragmentos de formulario incluso para secciones no reutilizables durante la creación del formulario. A medida que los formularios aumentan en tamaño y complejidad, su desglose en fragmentos puede simplificar considerablemente el proceso de creación y facilitar el mantenimiento del formulario. Este método permite centrarse en elementos más pequeños y manejables del formulario en lugar de tratar todo el formulario a la vez.
    * De forma similar a los formularios adaptables, se recomienda que todos los estilos específicos de fragmento y los scripts personalizados se definan en la biblioteca de cliente mediante el cuadro de diálogo contenedor de fragmentos. Además, intente crear fragmentos autosuficientes que no dependan de objetos externos.
    * Evite utilizar scripts entre fragmentos. Si hay algún objeto fuera del fragmento al que deba hacer referencia, intente que dicho objeto forme parte del formulario principal. Si el objeto debe residir en otro fragmento, refiérase a él por su nombre en el script.
 
@@ -223,35 +223,35 @@ Tenga en cuenta las siguientes prácticas recomendadas para superar los problema
    * Considere la posibilidad de escribir reglas de visibilidad para aquellos fragmentos que deban mostrarse u ocultarse según una condición.
 * Establezca el valor del **Número de llamadas por solicitud** en el **Servlet principal de Apache Sling** a un número bastante grande. Permite al servidor de Forms permitir llamadas adicionales. La configuración muestra un valor predeterminado de 1500. El valor 1500 llamadas es para otros componentes de Experience Manager, como Sites y Recursos. El conjunto de valores predeterminado de los formularios adaptables es 20000. Si encuentra el error `too many calls` en los registros o si el formulario no se puede procesar, intente aumentar el valor a un número mayor para resolver el problema. Si el número de llamadas supera los 20 000, el formulario es complejo y puede tardar algún tiempo en procesarse en el explorador. Esto solo ocurrirá la primera vez que se cargue el formulario, después de que se almacene en la memoria caché. Una vez que el formulario se almacene en la memoria caché, el rendimiento no se verá afectado de forma significativa.
 
-### DOM Size Considerations and Browser Performance
+### Consideraciones de tamaño de DOM y rendimiento del explorador
 
-When creating large and complex adaptive forms, it&#39;s important to consider the impact of DOM size on rendering and performance:
+Al crear formularios adaptables grandes y complejos, es importante tener en cuenta el impacto del tamaño DOM en el procesamiento y el rendimiento:
 
-* **DOM Size Impact**: While there&#39;s no hard limit for DOM size in AEM Forms, excessive DOM size can significantly impact performance, especially when handling lazy-loaded fragments. Large DOM structures require more memory and processing time to render and manipulate.
+* **Impacto de tamaño de DOM**: Aunque no hay un límite estricto para el tamaño de DOM en AEM Forms, un tamaño de DOM excesivo puede afectar significativamente el rendimiento, especialmente al administrar fragmentos cargados de forma diferida. Las estructuras DOM grandes requieren más memoria y tiempo de procesamiento para procesarse y manipularse.
 
-* **Browser Rendering Differences**: Rendering performance can vary significantly across different browsers and devices. Some browser rendering engines process dynamic DOM updates differently, with varying approaches to style recalculations, reflows, and repaints. This is particularly noticeable with large, dynamically loaded content. In some browsers, each significant DOM manipulation can trigger a complete layout recalculation and repaint of the page, which intensifies performance issues with large or complex forms.
+* **Diferencias de procesamiento del explorador**: El rendimiento del procesamiento puede variar significativamente entre distintos exploradores y dispositivos. Algunos motores de renderización del explorador procesan las actualizaciones dinámicas de DOM de forma diferente, con distintos enfoques para los recálculos de estilo, los reflujo y las repeticiones. Esto es especialmente notable con contenido grande cargado dinámicamente. En algunos exploradores, cada manipulación significativa del DOM puede almacenar en déclencheur un cálculo y una repintado completos del diseño de la página, lo que intensifica los problemas de rendimiento con formularios grandes o complejos.
 
-* **Performance Factors**: Several factors affect lazy loading performance:
-   * The size and complexity of the fragments
-   * The CSS styles applied to elements
-   * The number of reflows triggered by dynamic updates
-   * The device and browser capabilities
+* **Factores de rendimiento**: varios factores afectan el rendimiento de la carga diferida:
+   * Tamaño y complejidad de los fragmentos
+   * Los estilos CSS aplicados a los elementos
+   * El número de reflujos activados por las actualizaciones dinámicas
+   * Las funcionalidades del dispositivo y del explorador
 
-* **Real-world Impact**: In observed cases, forms with DOM sizes around 400 KB have experienced significant rendering delays of up to 15 seconds on certain browsers. These delays are not solely due to fragment size but also related to CSS processing and page reflows triggered during dynamic content insertion.
+* **Impacto en el mundo real**: En los casos observados, los formularios con tamaños de DOM de alrededor de 400 KB han experimentado retrasos de procesamiento significativos de hasta 15 segundos en determinados exploradores. Estos retrasos no solo se deben al tamaño del fragmento, sino también al procesamiento CSS y a los flujos de página activados durante la inserción dinámica de contenido.
 
-**Best Practices for Managing DOM Size:**
+**Prácticas recomendadas para administrar el tamaño de DOM:**
 
-* For static content, consider using AEM Content Fragments instead of dynamically inserting large HTML blocks via lazy loading. This approach can reduce reflows, repaints, and JavaScript execution time, improving overall page load performance.
+* Para el contenido estático, considere la posibilidad de utilizar fragmentos de contenido de AEM en lugar de insertar dinámicamente bloques de HTML grandes mediante la carga diferida. Este método puede reducir los reflujos, las repeticiones y el tiempo de ejecución de JavaScript, lo que mejora el rendimiento general de carga de la página.
 
-* When fragments must be dynamic and lazy-loaded, break large fragments into smaller, more manageable fragments and load only the required sections as needed.
+* Cuando los fragmentos deben ser dinámicos y de carga diferida, divida los fragmentos grandes en fragmentos más pequeños y manejables y cargue solo las secciones necesarias.
 
-* Implement progressive disclosure patterns where appropriate, revealing additional form fields only when required based on user input.
+* Implemente patrones de divulgación progresivos cuando corresponda, que revelen campos de formulario adicionales solo cuando sean necesarios en función de los datos introducidos por el usuario.
 
-* Test your forms across multiple browsers and devices, especially when using lazy-loaded fragments, to ensure consistent performance across different environments.
+* Pruebe los formularios en varios exploradores y dispositivos, especialmente cuando utilice fragmentos cargados de forma diferida, para garantizar un rendimiento coherente en los distintos entornos.
 
-* Monitor and optimize the CSS used in your forms, as extensive or poorly structured CSS can significantly increase rendering time, especially during dynamic content updates.
+* Supervise y optimice el CSS utilizado en los formularios, ya que un CSS extenso o mal estructurado puede aumentar significativamente el tiempo de procesamiento, especialmente durante las actualizaciones de contenido dinámico.
 
-For more technical details on how different browser rendering engines handle DOM updates, reflows, and repaints, consider exploring browser engine documentation such as those provided by various browser vendors.
+Para obtener más información técnica sobre cómo los distintos motores de renderización del explorador gestionan las actualizaciones de DOM, los reflujo y las repintaciones, considere la posibilidad de explorar la documentación del motor del explorador, como las que proporcionan varios proveedores de exploradores.
 
 ### Rellenado previo de formularios adaptables {#prefilling-adaptive-forms}
 
@@ -275,7 +275,7 @@ Los formularios adaptables requieren enviar acciones para procesar los datos esp
 * Puede escribir una acción de envío personalizada si las acciones de envío predeterminadas no cumplen con su caso de uso. Para obtener más información, consulte [Escribir una acción de envío personalizada para formularios adaptables](/help/forms/using/custom-submit-action-form.md).
 * Incluya validaciones del lado del servidor para evitar el envío de datos no válidos.
 
-You can use multi-sign experience of Adobe Sign in adaptive forms. Tenga en cuenta lo siguiente al configurar Adobe Sign en formularios adaptables. Para obtener más información, consulte [Usar Adobe Sign en un formulario adaptable](/help/forms/using/working-with-adobe-sign.md).
+Puede utilizar la experiencia de varias firmas de Adobe Sign en los formularios adaptables. Tenga en cuenta lo siguiente al configurar Adobe Sign en formularios adaptables. Para obtener más información, consulte [Usar Adobe Sign en un formulario adaptable](/help/forms/using/working-with-adobe-sign.md).
 
 * El formulario adaptable habilitado para Adobe Sign solo se envía después de que todos los firmantes hayan firmado el formulario. Forms aparecerá en estado de firma pendiente hasta que todos los firmantes firmen el formulario.
 * Puede configurar la experiencia de firma en el formulario o redirigir a los firmantes a una página de firma en el envío.
@@ -291,7 +291,7 @@ Un documento de registro (DoR) es una versión PDF aplanada de un formulario ada
    * **Esquema XSD**: utilice la plantilla XFA asociada que utilice el mismo esquema XML utilizado por el formulario adaptable.
    * **Ninguno**: utilice el DoR generado automáticamente.
 
-* Configure header, footer, images, color, font, and so on, right from the Document of Record tab of the adaptive form editor.
+* Configure el encabezado, pie de página, imágenes, color, fuente, etc. a la derecha de la pestaña Documento de registro del editor de formularios adaptables.
 * Use `DoRService` para generar el DoR mediante programación.
 * Excluir los campos ocultos del documento de registro.
 * Use el parámetro de solicitud `afAcceptLang` para ver el DoR en otra configuración regional.
@@ -325,7 +325,7 @@ Algunas prácticas recomendadas al localizar formularios adaptables son las sigu
 
 * Utilice fragmentos de formulario adaptables para elementos comunes en todos los formularios y localice fragmentos. Garantiza que localice un fragmento una vez y se refleje en todos los formularios en los que se utilice el fragmento localizado.
 * Las modificaciones como agregar un componente nuevo o aplicar un script en un formulario localizado no se localizan automáticamente. Por lo tanto, debe finalizar un formulario antes de localizarlo para evitar varios ciclos de localización.
-* Use el parámetro de solicitud`afAcceptLang` para anular la configuración regional del explorador y procesar el formulario en la configuración regional especificada. For example, the following URL is forced to render the form in Japanese locale, irrespective of the locale specified in the browser setting:
+* Use el parámetro de solicitud`afAcceptLang` para anular la configuración regional del explorador y procesar el formulario en la configuración regional especificada. Por ejemplo, la siguiente URL es forzada a procesar el formulario en la configuración regional japonesa, independientemente de la configuración regional especificada en la configuración del explorador:
 
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
@@ -399,11 +399,11 @@ Uno de los desafíos clave para las organizaciones es cómo manejar los datos de
 
 El Editor de reglas de AEM Forms proporciona una interfaz visual para crear y administrar reglas, lo que reduce la necesidad de utilizar una programación extensa. Puede resultar especialmente útil para usuarios empresariales o diseñadores de formularios que pueden no tener habilidades de programación avanzadas, pero necesitan definir y mantener reglas empresariales dentro de los formularios. Aquí analizamos algunos casos de uso en los que el editor de reglas le permite:
 
-* &#x200B;<!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
-* &#x200B;<!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
-* &#x200B;<!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
-* &#x200B;<!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
-* &#x200B;<!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
+* <!-- Allows you --> Definir reglas empresariales para los formularios sin necesidad de una programación extensa.
+* <!-- Use the Rule Editor when you need --> Implementar la lógica condicional en los formularios. Esto incluye mostrar u ocultar elementos de formulario, modificar valores de campo basados en determinadas condiciones o cambiar dinámicamente el comportamiento de los formularios.
+* <!--When you want --> Para aplicar reglas de validación de datos en los envíos de formularios, se puede utilizar el Editor de reglas para definir las condiciones de validación.
+* <!-- When you need --> Para integrar los formularios con fuentes de datos externas (FDM) o servicios de, el Editor de reglas puede ayudar a definir reglas para recuperar, mostrar o manipular datos durante las interacciones de formularios.
+* <!-- If you want -->Para crear formularios dinámicos e interactivos que respondan a las acciones del usuario, el Editor de reglas permite definir reglas que rigen el comportamiento de los elementos del formulario en tiempo real.
 
 El editor de reglas está disponible tanto para componentes de AEM Forms Foundation como para componentes principales.
 

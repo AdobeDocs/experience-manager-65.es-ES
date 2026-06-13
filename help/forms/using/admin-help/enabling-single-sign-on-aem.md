@@ -1,5 +1,5 @@
 ---
-title: Activar el inicio de sesión único en AEM Forms
+title: Habilitar el inicio de sesión único en AEM Forms
 description: Obtenga información sobre cómo habilitar el inicio de sesión único (SSO) mediante encabezados HTTP y SPNEGO.
 contentOwner: admin
 content-type: reference
@@ -11,22 +11,22 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
 
-# Activar el inicio de sesión único en AEM Forms{#enabling-single-sign-on-in-aem-forms}
+# Habilitar el inicio de sesión único en AEM Forms{#enabling-single-sign-on-in-aem-forms}
 
 >[!NOTE]
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-AEM Los formularios de proporcionan dos formas de habilitar el inicio de sesión único (SSO): encabezados HTTP y SPNEGO.
+Los formularios de AEM proporcionan dos formas de habilitar el inicio de sesión único (SSO): encabezados HTTP y SPNEGO.
 
-AEM Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios de la no son necesarias y no aparecen si el usuario ya se ha autenticado a través del portal de su empresa.
+Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios AEM Forms no son necesarias y no aparecen si el usuario ya se ha autenticado a través del portal de su empresa.
 
-AEM Si los formularios no pueden autenticar a un usuario mediante cualquiera de estos métodos, se redirigirá al usuario a una página de inicio de sesión.
+Si los formularios AEM Forms no pueden autenticar a un usuario mediante cualquiera de estos métodos, se redirigirá al usuario a una página de inicio de sesión.
 
 * [Habilitar SSO mediante encabezados HTTP](#enable-sso-using-http-headers)
 * [Habilitar SSO con SPNEGO](#enable-sso-using-spnego)
@@ -34,7 +34,7 @@ AEM Si los formularios no pueden autenticar a un usuario mediante cualquiera de 
 
 ## Habilitar SSO mediante encabezados HTTP {#enable-sso-using-http-headers}
 
-Puede utilizar la página Configuración de portal para habilitar el inicio de sesión único (SSO) entre aplicaciones y cualquier aplicación que admita la transmisión de la identidad a través de un encabezado HTTP. AEM Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios de la no son necesarias y no aparecen si el usuario ya se ha autenticado a través del portal de su empresa.
+Puede utilizar la página Configuración de portal para habilitar el inicio de sesión único (SSO) entre aplicaciones y cualquier aplicación que admita la transmisión de la identidad a través de un encabezado HTTP. Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios AEM Forms no son necesarias y no aparecen si el usuario ya se ha autenticado a través del portal de su empresa.
 
 También puede habilitar SSO mediante SPNEGO. (Consulte [Habilitar SSO con SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego)).
 
@@ -66,7 +66,7 @@ Haga clic para conocer los pasos para [asignar funciones a usuarios y grupos](/h
 
 ## Habilitar SSO con SPNEGO {#enable-sso-using-spnego}
 
-Puede utilizar el Mecanismo de negociación de GSSAPI simple y protegido (SPNEGO) para habilitar el inicio de sesión único (SSO) al usar Active Directory como servidor LDAP en un entorno de Windows. AEM Cuando se habilita el SSO, las páginas de inicio de sesión del usuario de formularios de la forma en que se ha creado no son obligatorias y no aparecen.
+Puede utilizar el Mecanismo de negociación de GSSAPI simple y protegido (SPNEGO) para habilitar el inicio de sesión único (SSO) al usar Active Directory como servidor LDAP en un entorno de Windows. Cuando se habilita el SSO, las páginas de inicio de sesión del usuario de los formularios AEM Forms no son necesarias y no aparecen.
 
 También puede habilitar SSO utilizando encabezados HTTP. (Consulte [Habilitar SSO mediante encabezados HTTP](enabling-single-sign-on-aem.md#enable-sso-using-http-headers)).
 
@@ -85,7 +85,7 @@ También puede habilitar SSO utilizando encabezados HTTP. (Consulte [Habilitar S
    * Agregue Kerberos como proveedor de autenticación. Proporcione la siguiente información en la página Nueva o Editar autenticación para Kerberos:
 
       * **Proveedor de autenticación:** Kerberos
-      * AEM **IP de DNS:** Dirección IP de DNS del servidor donde se ejecutan los formularios de la. Puede determinar esta dirección IP ejecutando `ipconfig/all` en la línea de comandos.
+      * **IP DNS:** Dirección IP DNS del servidor donde se ejecutan los formularios AEM. Puede determinar esta dirección IP ejecutando `ipconfig/all` en la línea de comandos.
       * **Host KDC:** Nombre de host completo o dirección IP del servidor Active Directory utilizado para la autenticación
       * **Usuario de servicio:** El nombre principal de servicio (SPN) pasado a la herramienta KtPass. En el ejemplo utilizado anteriormente, el usuario del servicio es `HTTP/lcserver.um.lc.com`.
       * **Dominio de servicio:** Nombre de dominio para Active Directory. En el ejemplo utilizado anteriormente, el nombre de dominio es `UM.LC.COM.`
@@ -96,7 +96,7 @@ También puede habilitar SSO utilizando encabezados HTTP. (Consulte [Habilitar S
 
 ### Crear una cuenta de usuario {#create-a-user-account}
 
-1. AEM En SPNEGO, registre un servicio como un usuario en Active Directory en el controlador de dominio para representar formularios de. En el controlador de dominio, vaya al menú Inicio > Herramientas administrativas > Usuarios y equipos de Active Directory. Si Herramientas administrativas no está en el menú Inicio, utilice el Panel de control de Campaign.
+1. En SPNEGO, registre un servicio como usuario en Active Directory en el controlador de dominio para representar formularios de AEM. En el controlador de dominio, vaya al menú Inicio > Herramientas administrativas > Usuarios y equipos de Active Directory. Si Herramientas administrativas no está en el menú Inicio, utilice el Panel de control de Campaign.
 1. Haga clic en la carpeta Usuarios para mostrar una lista de usuarios.
 1. Haga clic con el botón derecho en la carpeta de usuario y seleccione Nuevo > Usuario.
 1. Escriba el Nombre/Apellidos y el Nombre de inicio de sesión del usuario y, a continuación, haga clic en Siguiente. Por ejemplo, establezca los siguientes valores:
@@ -169,7 +169,7 @@ Si se obtiene acceso al servidor mediante el nombre del equipo, como https://lcs
 
 1. En el cuadro Dirección URL del explorador, escriba `about:config`
 
-   Aparecerá el cuadro de diálogo about:config - Mozilla Firefox.
+   Aparece el cuadro de diálogo about:config - Mozilla Firefox.
 
 1. En el cuadro Filtro, escriba `negotiate`
 1. En la lista que se muestra, haga clic en network.Negotiate-auth.trusted-uri y escriba uno de los siguientes comandos según corresponda para su entorno:
@@ -189,7 +189,7 @@ Haga clic para conocer los pasos para [asignar funciones a usuarios y grupos](/h
 1. Seleccione la configuración de su dominio, por ejemplo, LDAP, y haga clic en él. Encontrará todos los usuarios y grupos creados en el Directorio. Si es necesario, puede crear nuevos usuarios o grupos.
    ![Página de administración de dominios](/help/forms/using/assets/domain-mgmt-page.png)
 1. Haga clic en Autenticación. En la nueva página, seleccione un proveedor de autenticación, como LDAP.
-1. AEM Vaya a la página Administración de dominios, seleccione y haga clic en **Sincronizar ahora** para sincronizar el directorio con el esquema de autenticación configurado para el acceso a LDAP, por ejemplo, para obtener acceso a LDAP.
+1. Vaya a la página Administración de dominios, seleccione LDAP y haga clic en **Sincronizar ahora** para sincronizar el directorio con el esquema de autenticación que configuró para el acceso a AEM.
    ![Sincronizar ldap](/help/forms/using/assets/sync-ldap.png)
 1. Vaya a Administración de usuarios y haga clic en Usuarios y grupos.
 1. Busque usuarios o grupos con sus nombres, como se muestra en la siguiente imagen.

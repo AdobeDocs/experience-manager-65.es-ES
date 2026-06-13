@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '3478'
+source-wordcount: '3513'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Debe existir un elemento XML para cada campo de formulario que desee rellenar pr
 
 Cuando se rellena previamente un formulario que ya contiene datos, se deben especificar los datos que ya se muestran en el origen de datos XML. Supongamos que un formulario que contiene 10 campos tiene datos en cuatro campos. A continuación, suponga que desea rellenar previamente los seis campos restantes. En este caso, debe especificar 10 elementos XML en la fuente de datos XML que se utiliza para rellenar previamente el formulario. Si especifica solo seis elementos, los cuatro campos originales están vacíos.
 
-Por ejemplo, puede rellenar previamente un formulario como el formulario de confirmación de ejemplo. (Consulte &quot;Formulario de confirmación&quot; en [Procesamiento de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)).
+Por ejemplo, puede rellenar previamente un formulario como el formulario de confirmación de ejemplo. (Consulte &quot;Formulario de confirmación&quot; en [Procesamiento de PDF forms interactivo](/help/forms/developing/rendering-interactive-pdf-forms.md)).
 
 Para rellenar previamente el formulario de confirmación de ejemplo, debe crear un origen de datos XML que contenga tres elementos XML que coincidan con los tres campos del formulario. Este formulario contiene los tres campos siguientes: `FirstName`, `LastName` y `Amount`. El primer paso es crear una fuente de datos XML que contenga elementos XML que coincidan con los campos del diseño de formulario. El siguiente paso es asignar valores de datos a los elementos XML, como se muestra en el siguiente código XML.
 
@@ -102,7 +102,7 @@ El diagrama siguiente muestra un ejemplo de un formulario de pedido de compra. L
 
 ### Consideraciones del diseño del formulario {#form-design-considerations}
 
-Forms con diseños flexibles se basan en diseños de formulario creados en Designer. Un diseño de formulario especifica un conjunto de reglas de diseño, presentación y captura de datos, incluido el cálculo de valores basado en los datos introducidos por el usuario. Las reglas se aplican cuando se introducen datos en un formulario. Los campos que se agregan a un formulario son subformularios que se encuentran dentro del diseño del formulario. Por ejemplo, en el formulario de pedido de compra que se muestra en el diagrama anterior, cada línea es un subformulario. Para obtener información acerca de cómo crear un diseño de formulario que contenga subformularios, vea [Crear un formulario de pedido de compra con un diseño variable](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_es).
+Forms con diseños flexibles se basan en diseños de formulario creados en Designer. Un diseño de formulario especifica un conjunto de reglas de diseño, presentación y captura de datos, incluido el cálculo de valores basado en los datos introducidos por el usuario. Las reglas se aplican cuando se introducen datos en un formulario. Los campos que se agregan a un formulario son subformularios que se encuentran dentro del diseño del formulario. Por ejemplo, en el formulario de pedido de compra que se muestra en el diagrama anterior, cada línea es un subformulario. Para obtener información acerca de cómo crear un diseño de formulario que contenga subformularios, vea [Crear un formulario de pedido de compra con un diseño variable](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
 
 ### Explicación de los subgrupos de datos {#understanding-data-subgroups}
 
@@ -262,7 +262,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Agregue todos los elementos restantes al elemento de encabezado repitiendo el último subpaso para cada campo que aparezca en la parte estática del formulario (en el diagrama de fuente de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups)).
+   * Agregue todos los elementos restantes al elemento header repitiendo el último subpaso para cada campo que aparezca en la parte estática del formulario (en el diagrama de fuente de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups).)
    * Cree el elemento de detalle del origen de datos XML llamando al método `createElement` del objeto `Document`. Pase un valor de cadena que represente el nombre del elemento al método `createElement`. Convertir el valor devuelto en `Element`. A continuación, anexe el elemento detail al elemento raíz llamando al método `appendChild` del objeto `root` y pase el objeto detail element como argumento. Los elementos XML anexados al elemento de detalle corresponden a la parte dinámica del formulario. Las siguientes líneas de código muestran esta lógica de aplicación:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -306,7 +306,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
 **Consulte también**
 
-[SOAP Inicio rápido (modo de): Rellenado previo de Forms con diseños flexibles mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Inicio rápido (modo SOAP): rellenar previamente Forms con diseños flexibles mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -338,7 +338,7 @@ Para rellenar previamente un formulario con un diseño variable mediante la API 
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Agregue todos los elementos restantes al elemento de encabezado repitiendo el último subpaso para cada campo que aparezca en la parte estática del formulario (en el diagrama de fuente de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups)).
+   * Agregue todos los elementos restantes al elemento header repitiendo el último subpaso para cada campo que aparezca en la parte estática del formulario (en el diagrama de fuente de datos XML, estos campos se muestran en la sección A. (Consulte [Explicación de los subgrupos de datos](#understanding-data-subgroups).)
    * Cree el elemento de detalle del origen de datos XML llamando al método `createElement` del objeto `Document`. Pase un valor de cadena que represente el nombre del elemento al método `createElement`. Convertir el valor devuelto en `Element`. A continuación, anexe el elemento detail al elemento raíz llamando al método `appendChild` del objeto `root` y pase el objeto detail element como argumento. Los elementos XML anexados al elemento de detalle corresponden a la parte dinámica del formulario. Las siguientes líneas de código muestran esta lógica de aplicación:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`

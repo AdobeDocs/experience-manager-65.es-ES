@@ -1,6 +1,6 @@
 ---
 title: Configurar los ajustes del servicio
-description: Obtenga información sobre cómo configurar los ajustes del servicio. AEM Puede utilizar la página Administración de servicios para configurar los ajustes de cada uno de los servicios que forman parte de los formularios de la.
+description: Obtenga información sobre cómo configurar los ajustes del servicio. Puede utilizar la página Administración de servicios para configurar los ajustes de cada uno de los servicios que forman parte de los formularios AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
@@ -11,7 +11,7 @@ feature: Adaptive Forms,Workbench
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10836'
+source-wordcount: '10923'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 4%
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-AEM Puede usar la página Administración de servicios para configurar las opciones de cada uno de los servicios que forman parte de los formularios de la. La configuración disponible varía en función del servicio que se esté configurando.
+Puede usar la página Administración de servicios para establecer la configuración de cada uno de los servicios que forman parte de los formularios de AEM. La configuración disponible varía en función del servicio que se esté configurando.
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de servicios.
 1. Detenga el servicio antes de cambiarlo. (Consulte [Iniciar y detener servicios](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
@@ -42,7 +42,7 @@ AEM Puede usar la página Administración de servicios para configurar las opcio
 
 ## Configuración del servicio Auditar flujo de trabajo {#audit-workflow-service-settings}
 
-Workbench proporciona la capacidad de registrar instancias de proceso a medida que se ejecutan en tiempo de ejecución y luego reproducirlas para observar el comportamiento del proceso. (Consulte la [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Para conservar espacio en el sistema de archivos de Forms Server, puede limitar la cantidad de datos de registro de procesos que se almacenan. Puede configurar las siguientes propiedades del servicio de flujo de trabajo de auditoría ( `AuditWorkflowService`):
+Workbench proporciona la capacidad de registrar instancias de proceso a medida que se ejecutan en tiempo de ejecución y luego reproducirlas para observar el comportamiento del proceso. (Consulte la [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)). Para ahorrar espacio en el sistema de archivos del servidor de Forms, puede limitar la cantidad de datos de registro de procesos que se almacenan. Puede configurar las siguientes propiedades del servicio de flujo de trabajo de auditoría ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** El número máximo de grabaciones almacenadas. Cuando se almacena el número máximo, la grabación más antigua se elimina del sistema de archivos cuando se crea una nueva grabación. Esta propiedad es útil si tiende a crear muchas grabaciones y desea quitar automáticamente las antiguas. El valor predeterminado es 50.
 
@@ -72,13 +72,13 @@ Las siguientes configuraciones están disponibles para el servicio de formulario
 
 ## Configuración del servicio Bridge de migración central (obsoleto) {#central-migration-bridge-service-settings}
 
-El servicio Bridge de migración central ( `CentralMigrationBridge`) invoca un subconjunto de la funcionalidad de Adobe Central Pro Output Server (central), que incluye los comandos JFMERGE, JFTRANS y XMLIMPORT. Las operaciones del servicio de migración central de Bridge AEM le permiten reutilizar los siguientes recursos centrales en los formularios de la:
+El servicio Bridge de migración central (`CentralMigrationBridge`) invoca un subconjunto de la funcionalidad de Adobe Central Pro Output Server (Central), que incluye los comandos JFMERGE, JFTRANS y XMLIMPORT. Las operaciones del servicio de migración central de Bridge le permiten reutilizar los siguientes recursos centrales en los formularios de AEM:
 
-* diseño de plantilla (&ast;.ifd)
-* plantillas de salida (&ast;.mdf)
-* archivos de datos (archivos &ast;.dat)
-* archivos de preámbulo (archivos &ast;.pre)
-* archivos de definición de datos (&ast;.tdf)
+* diseño de plantilla (&amp;ast;.ifd)
+* plantillas de salida (&amp;ast;.mdf)
+* archivos de datos (archivos &amp;ast;.dat)
+* archivos de preámbulo (archivos &amp;ast;.pre)
+* archivos de definición de datos (&amp;ast;.tdf)
 
 La siguiente configuración está disponible para el servicio Bridge de migración central.
 
@@ -90,7 +90,7 @@ El servicio Content Repository Connector for EMC Documentum ( `EMCDocumentumCont
 
 La siguiente configuración está disponible para el servicio Content Repository Connector for EMC Documentum.
 
-**Ruta predeterminada del objeto Asset Link:** La parte predeterminada de la ruta en el repositorio de Documentum para almacenar el objeto Asset Link. AEM La ruta real consiste en la ruta predeterminada y la ubicación de la plantilla de formulario en el repositorio de formularios de la aplicación de forma de la aplicación de la plantilla de formulario de la aplicación de datos de formulario de la.
+**Ruta predeterminada del objeto Asset Link:** La parte predeterminada de la ruta en el repositorio de Documentum para almacenar el objeto Asset Link. La ruta real consiste en la ruta de acceso predeterminada y la ubicación de la plantilla de formulario en el repositorio de formularios de AEM.
 
 Por ejemplo, si la ruta predeterminada está establecida en `/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects` y la plantilla de formulario está almacenada en una carpeta `/Docbase/forms/`, el objeto Asset Link se almacena en la siguiente ubicación:
 
@@ -104,7 +104,7 @@ El Conector del repositorio de contenido para IBM FileNet permite crear procesos
 
 La siguiente configuración está disponible para el Conector del repositorio de contenido para el servicio FileNet de IBM.
 
-**Ruta predeterminada del objeto Asset Link:** La parte predeterminada de la ruta en el repositorio FileNet de IBM para almacenar el objeto Asset Link. AEM La ruta real consiste en la ruta predeterminada y la ubicación de la plantilla de formulario en el repositorio de formularios de la aplicación de forma de la aplicación de la plantilla de formulario de la aplicación de datos de formulario de la.
+**Ruta predeterminada del objeto Asset Link:** La parte predeterminada de la ruta en el repositorio FileNet de IBM para almacenar el objeto Asset Link. La ruta real consiste en la ruta de acceso predeterminada y la ubicación de la plantilla de formulario en el repositorio de formularios de AEM.
 
 Por ejemplo, si la ruta predeterminada está establecida en `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects` y la plantilla de formulario está almacenada en una carpeta `/Docbase/forms/`, el objeto Asset Link se almacena en la siguiente ubicación:
 
@@ -112,11 +112,11 @@ Por ejemplo, si la ruta predeterminada está establecida en `/LiveCycleES/Connec
 
 El valor predeterminado de esta configuración es `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects`.
 
-## Convertir configuración del servicio del PDF {#convert-pdf-service-settings}
+## Convertir la configuración del servicio PDF {#convert-pdf-service-settings}
 
-El servicio PDF de conversión (`ConvertPdfService`) convierte los documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento de PDF en un archivo de TIFF de varias páginas es práctico cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos de PDF.
+El servicio ConvertPDF ( `ConvertPdfService`) convierte los documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento de PDF en un archivo TIFF de varias páginas es práctico cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos de PDF.
 
-Las siguientes configuraciones están disponibles para el servicio Convertir PDF.
+Las siguientes configuraciones están disponibles para el servicio Convert PDF.
 
 **Tipo de transacción:** Especifica cómo se debe propagar un contexto de transacción a una operación.
 
@@ -136,25 +136,25 @@ Las siguientes configuraciones están disponibles para el servicio Convertir PDF
 
 ## Configuración del servicio de Distiller {#distiller-service-settings}
 
-El servicio Distiller (`DistillerService`) convierte los archivos PostScript, Encapsulated PostScript (EPS) y PRN en archivos de PDF a través de una red.
+El servicio Distiller (`DistillerService`) convierte los archivos PostScript, Encapsulated PostScript (EPS) y PRN en archivos PDF a través de una red.
 
 Las siguientes configuraciones están disponibles para el servicio Distiller.
 
-**Configuración de Adobe PDF:** Se aplican las siguientes opciones preconfiguradas al PDF generado:
+**Configuración de Adobe PDF:** Las siguientes opciones preconfiguradas se aplican al PDF generado:
 
 * Impresión de alta calidad
 * Páginas de gran tamaño
 * PDFA1b 2005 CMYK
-* RGB PDFA1b 2005
+* PDFA1b 2005 RGB
 * PDFX1a 2001
 * PDFX3 2002
 * Calidad de prensa
 * Tamaño de archivo más pequeño
 * Estándar
 
-Se pueden crear nuevas configuraciones a través de la interfaz de usuario del PDF Generator.
+Se pueden crear nuevas configuraciones a través de la interfaz de usuario de PDF Generator.
 
-**Configuración de seguridad:** Configuración de seguridad preconfigurada que se aplica a los documentos de PDF generados. El valor predeterminado es Sin seguridad. Cree la configuración de seguridad mediante el PDF Generator y, a continuación, introduzca la configuración aquí.
+**Configuración de seguridad:** Configuración de seguridad preconfigurada que se aplica a los documentos de PDF generados. El valor predeterminado es Sin seguridad. Cree la configuración de seguridad mediante PDF Generator y, a continuación, introduzca la configuración aquí.
 
 **Tamaño de grupo:** El tamaño inicial del grupo. Cuando se implementa el servicio Distiller, este número se utiliza para determinar el número de instancias de implementación del servicio que se crean y asignan al grupo libre a la espera de solicitudes de invocación. El contenedor de servicio puede responder inmediatamente a las solicitudes de invocación sin tener que inicializar primero una instancia de servicio.
 
@@ -162,7 +162,7 @@ Se pueden crear nuevas configuraciones a través de la interfaz de usuario del P
 
 >[!NOTE]
 >
->Adobe LiveCycle® ® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Ver [documento de ciclo de vida del producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Ver [documento del ciclo de vida del producto Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 El servicio Administración de documentos (`DocumentManagementService`) habilita los procesos para que utilicen la funcionalidad de administración de contenido proporcionada por los servicios de contenido (obsoleto). Las operaciones de Administración de documentos proporcionan tareas básicas que son necesarias para mantener espacios y contenido en el sistema de administración de contenido. Algunos ejemplos de estas tareas son copiar, eliminar, mover, recuperar y almacenar contenido, crear espacios y asociaciones y obtener y establecer atributos de contenido.
 
@@ -214,7 +214,7 @@ Las siguientes configuraciones están disponibles para el servicio de correo ele
 
 ## Configuración del servicio de cifrado {#encryption-service-settings}
 
-El servicio Encryption (`EncryptionService`) permite cifrar y descifrar documentos. Cuando se encripta un documento, su contenido se vuelve ilegible. Un usuario autorizado puede desencriptar el documento para obtener acceso a su contenido. Si un documento PDF está encriptado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está encriptado con un certificado, el usuario debe desencriptar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para encriptarlo.
+El servicio Encryption (`EncryptionService`) permite cifrar y descifrar documentos. Cuando se cifra un documento, su contenido se vuelve ilegible. Un usuario autorizado puede descifrar el documento para obtener acceso a su contenido. Si un documento PDF está cifrado con una contraseña, el usuario debe escribir la contraseña para abrir y visualizar el documento en Adobe Reader o Adobe Acrobat. Del mismo modo, si un documento PDF está cifrado con un certificado, el usuario debe descifrar el documento PDF con la clave pública que corresponde al certificado (clave privada) que se utilizó para cifrarlo.
 
 Los siguientes ajustes están disponibles para el servicio Encryption.
 
@@ -248,7 +248,7 @@ Los siguientes ajustes están disponibles para el servicio FTP.
 
 ## Generar configuración del servicio de PDF {#generate-pdf-service-settings}
 
-El servicio Generate PDF ( `GeneratePDFService`) convierte archivos en varios formatos nativos en documentos de PDF y convierte documentos de PDF en varios formatos de archivo.
+El servicio Generate PDF ( `GeneratePDFService`) convierte archivos en varios formatos nativos a documentos de PDF y convierte documentos de PDF a varios formatos de archivo.
 
 Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
@@ -258,42 +258,42 @@ Las siguientes configuraciones están disponibles para el servicio Generate PDF.
 
 **Configuración de tipo de archivo:** Nombre de la configuración de tipo de archivo preconfigurada que se aplicará a un trabajo de conversión, si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración del tipo de archivo se establece en la consola de administración, haciendo clic en Servicios > PDF Generator > Configuración del tipo de archivo.
 
-**Usar WebCapture (sólo para Windows):** Si esta configuración es verdadera, el servicio Generate PDF usa Acrobat para todas las conversiones de HTML a PDF. Esto puede mejorar la calidad de los archivos del PDF producidos a partir de HTML, aunque el rendimiento puede ser ligeramente inferior. El valor predeterminado es False.
+**Usar WebCapture (sólo Windows):** Si esta configuración es verdadera, el servicio Generate PDF usa Acrobat para todas las conversiones de HTML a PDF. Esto puede mejorar la calidad de los archivos PDF producidos a partir de HTML, aunque el rendimiento puede ser ligeramente inferior. El valor predeterminado es False.
 
-**Convertidor principal para conversiones de HTML a PDF:** El servicio Generate PDF proporciona varias rutas para convertir archivos de HTML en documentos de PDF: Webkit, WebCapture (sólo Windows) y WebToPDF. Esta configuración permite al usuario seleccionar el convertidor principal para convertir el HTML en PDF. De forma predeterminada, la opción WebToPDF está seleccionada.
+**Conversor principal para conversiones de HTML a PDF:** El servicio Generate PDF proporciona varias rutas para convertir archivos de HTML en documentos de PDF: Webkit, WebCapture (sólo Windows) y WebToPDF. Esta configuración permite al usuario seleccionar el convertidor principal para convertir HTML a PDF. De forma predeterminada, la opción WebToPDF está seleccionada.
 
-**Convertidor de reserva para conversiones de HTML a PDF:** Especifique el convertidor para conversiones de HTML a PDF si falla el convertidor principal. De forma predeterminada, la opción WebCapture (sólo Windows) está seleccionada.
+**Conversor de reserva para conversiones de HTML a PDF:** Especifique el convertidor para conversiones de HTML a PDF si se produce un error en el convertidor principal. De forma predeterminada, la opción WebCapture (sólo Windows) está seleccionada.
 
-**Usar la conversión de imágenes de Acrobat (solo para Windows):** Si esta configuración es verdadera, el servicio Generate PDF usa Acrobat para todas las conversiones de imágenes a PDF. Esta configuración solo es útil si el mecanismo de conversión predeterminado de Java puro no puede convertir correctamente una proporción significativa de las imágenes de entrada. El valor predeterminado es False.
+**Usar la conversión de imágenes de Acrobat (solo Windows):** Si esta opción está establecida en true, el servicio Generate PDF usa Acrobat para todas las conversiones de imágenes a PDF. Esta configuración solo es útil si el mecanismo de conversión predeterminado de Java puro no puede convertir correctamente una proporción significativa de las imágenes de entrada. El valor predeterminado es False.
 
-**Habilitar conversiones de AutoCAD basadas en Acrobat (sólo para Windows):** Si esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat para todas las conversiones de DWG a PDF. Esta configuración sólo es útil si AutoCAD no está instalado en el servidor o si el mecanismo de conversión de AutoCAD no puede convertir archivos correctamente.
+**Habilitar conversiones de AutoCAD basadas en Acrobat (solo Windows):** Si esta configuración es verdadera, el servicio Generate PDF usa Acrobat para todas las conversiones de DWG a PDF. Esta configuración sólo es útil si AutoCAD no está instalado en el servidor o si el mecanismo de conversión de AutoCAD no puede convertir archivos correctamente.
 
 **Expresiones Regulares Para Averiguar La Oferta Especial Prohibida
-Caracteres en el nombre de usuario (sólo Windows):** Especifica caracteres que interfieren con las operaciones del Export PDF y del Optimize PDF cuando aparecen en el nombre de un usuario.
+Caracteres en el nombre de usuario (sólo Windows):** Especifica caracteres que interfieren con las operaciones de Export PDF y Optimizar PDF cuando los caracteres aparecen en el nombre de un usuario.
 
 **Tamaño del grupo ImageToPDF:** El tamaño del grupo del convertidor predeterminado (Java puro) de imagen a PDF en el servicio Generate PDF. Esta opción controla el número máximo de conversiones simultáneas de imagen a PDF que puede realizar el servicio Generate PDF. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores.
 
-**Tamaño del grupo de HTML a PDF:** El tamaño del grupo del convertidor de HTML a PDF en el servicio Generar PDF. Esta opción controla el número máximo de conversiones simultáneas de HTML a PDF que puede realizar el servicio Generate PDF. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores.
+**Tamaño del grupo de HTML a PDF:** El tamaño del grupo del convertidor de HTML a PDF en el servicio Generate PDF. Esta opción controla el número máximo de conversiones simultáneas de HTML a PDF que puede realizar el servicio Generate PDF. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores.
 
-**Tamaño del grupo de OCR:** El tamaño del grupo de PaperCaptureService que utiliza el PDF Generator para OCR. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores. Esta configuración sólo es válida en sistemas Windows.
+**Tamaño del grupo de OCR:** El tamaño del grupo de PaperCaptureService que PDF Generator usa para OCR. El valor predeterminado de esta configuración (recomendado para sistemas de un solo procesador) es 3, que se puede aumentar en sistemas de varios procesadores. Esta configuración sólo es válida en sistemas Windows.
 
 **Máximo de páginas de ImageToPDF en memoria para las conversiones de TIFF:** Esta configuración determina el número máximo de páginas de una imagen de TIFF que pueden permanecer en memoria antes de vaciarse en el disco durante la conversión a PDF. El valor predeterminado de esta configuración es 500, que se puede aumentar si se asigna memoria adicional al proceso de conversión de ImageToPDF.
 
-**Familia de fuentes de reserva para conversiones de HTML a PDF:** Nombre de la familia de fuentes que se utilizará en los documentos de PDF cuando la fuente utilizada en el HTML original no esté disponible para el servidor de AEM Forms. Especifique una familia de fuentes si espera convertir páginas de HTML que utilicen fuentes no disponibles. Por ejemplo, las páginas creadas en idiomas regionales podrían utilizar fuentes no disponibles.
+**Familia de fuentes de reserva para las conversiones de HTML a PDF:** Nombre de la familia de fuentes que se utilizará en los documentos de PDF cuando la fuente utilizada en el HTML original no esté disponible para el servidor de AEM Forms. Especifique una familia de fuentes si espera convertir páginas de HTML que utilicen fuentes no disponibles. Por ejemplo, las páginas creadas en idiomas regionales podrían utilizar fuentes no disponibles.
 
 **La lógica de reintento para conversiones nativas** rige los reintentos de generación de PDF si el primer intento de conversión ha fallado:
 
 * **Sin reintento**
 
-  No reintente la conversión del PDF si el primer intento de conversión ha fallado
+  No reintente la conversión de PDF si se ha producido un error en el primer intento de conversión
 
 * **Reintentar**
 
-  Reintentar la conversión del PDF independientemente de si se ha alcanzado el umbral de tiempo de espera. La duración de tiempo de espera predeterminada para el primer intento es 270 s.
+  Reintentar la conversión de PDF independientemente de si se ha alcanzado el umbral de tiempo de espera. La duración de tiempo de espera predeterminada para el primer intento es 270 s.
 
 * **Reintentar si el tiempo lo permite**
 
-  Reintente la conversión del PDF si el tiempo empleado para el primer intento de conversión fue menor que el tiempo de espera especificado. Por ejemplo, si la duración del tiempo de espera es de 270 segundos y el primer intento consumió 200 segundos, PDF Generator volverá a intentar la conversión. Si el primer intento consumió 270 segundos, no se volverá a intentar la conversión.
+  Vuelva a intentar la conversión de PDF si el tiempo empleado para el primer intento de conversión fue inferior a la duración de tiempo de espera especificada. Por ejemplo, si la duración del tiempo de espera es de 270 segundos y el primer intento consumió 200 segundos, PDF Generator volverá a intentar la conversión. Si el primer intento consumió 270 segundos, no se volverá a intentar la conversión.
 
 ## Guías ES4 Utilidades configuración del servicio {#guides-es4-utilities-service-settings}
 
@@ -306,7 +306,7 @@ Las operaciones de Utilidades de la guía permiten añadir las siguientes tareas
 * Determine si los datos están disponibles para rellenar la guía con
 * Incrustar los datos de la guía o convertirlos en un vínculo
 * Conversión del contenido referenciado en direcciones URL accesibles externamente
-* Sustituya los valores en un documento de HTML u otro contenedor, o conviértalos en direcciones URL a las que se pueda acceder externamente
+* Sustituya los valores de un documento de HTML u otro contenedor, o conviértalos en direcciones URL a las que se pueda acceder externamente
 * Definición de la ubicación de envío
 * Especificar valores de entrada
 * Cree un parámetro para representar contenido referenciado
@@ -314,7 +314,7 @@ Las operaciones de Utilidades de la guía permiten añadir las siguientes tareas
 
 Los valores predeterminados del servicio Utilidades de guía admiten la mayoría de los casos de uso. Sin embargo, si es necesario, puede cambiar los siguientes valores.
 
-**publicPaths:** Esta opción ha quedado obsoleta. AEM No utilice esta opción con formularios.
+**publicPaths:** Esta opción ha quedado obsoleta. No utilice esta opción con formularios AEM Forms.
 
 **pathInfoExpiryInSeconds:** Intervalo tras el cual caduca una solicitud de información de ruta de acceso de un cliente. El valor predeterminado es 1.
 
@@ -354,17 +354,17 @@ El servicio JDBC (`JdbcService`) permite que los procesos interactúen con las b
 
 La siguiente configuración está disponible para el servicio JDBC.
 
-**datasourceName:** Valor de cadena que representa el nombre JNDI del origen de datos que se va a utilizar para conectarse al servidor de base de datos. El origen de datos debe definirse en el servidor de aplicaciones que aloja el servidor de Forms. AEM El valor predeterminado es el nombre JNDI de la fuente de datos de la base de datos de formularios de la.
+**datasourceName:** Valor de cadena que representa el nombre JNDI del origen de datos que se va a utilizar para conectarse al servidor de base de datos. El origen de datos debe definirse en el servidor de aplicaciones que aloja el servidor de Forms. El valor predeterminado es el nombre JNDI del origen de datos de la base de datos de formularios AEM Forms.
 
 ## Configuración del servicio JMS {#jms-service-settings}
 
 El servicio JMS ( `JMS`) habilita la interacción con proveedores de Java Messaging System (JMS) que implementan la mensajería punto a punto y la mensajería de publicación/suscripción.
 
-Configure el servicio JMS con propiedades predeterminadas para que las operaciones del servicio puedan conectarse e interactuar con un proveedor JMS y un servicio JNDI asociado. Los valores de las propiedades del servicio se establecen en valores predeterminados basados en el servidor de aplicaciones JBoss. AEM Cambie estos valores si utiliza un servidor de aplicaciones diferente para alojar formularios en el servidor de la aplicación de la aplicación de la aplicación.
+Configure el servicio JMS con propiedades predeterminadas para que las operaciones del servicio puedan conectarse e interactuar con un proveedor JMS y un servicio JNDI asociado. Los valores de las propiedades del servicio se establecen en valores predeterminados basados en el servidor de aplicaciones JBoss. Cambie estos valores si utiliza un servidor de aplicaciones diferente para alojar formularios AEM.
 
 Las siguientes configuraciones están disponibles para el servicio JMS.
 
-**Dirección URL del proveedor:** Dirección URL del proveedor de servicios JNDI. El valor predeterminado se basa en el servidor de aplicaciones JBoss. AEM Las siguientes direcciones URL son valores predeterminados para los servidores de aplicaciones compatibles con los formularios de:
+**Dirección URL del proveedor:** Dirección URL del proveedor de servicios JNDI. El valor predeterminado se basa en el servidor de aplicaciones JBoss. Las siguientes direcciones URL son valores predeterminados para los servidores de aplicaciones compatibles con los formularios AEM Forms:
 
 **JBoss:** `<server name>:1099`
 
@@ -376,7 +376,7 @@ Las siguientes configuraciones están disponibles para el servicio JMS.
 
 **Contraseña JNDI:** La contraseña asociada al nombre de usuario especificado para el nombre de usuario JNDI. El valor predeterminado es invitado.
 
-**Fábrica de contexto inicial:** La clase Java que se va a utilizar como fábrica de contexto inicial. El servicio JMS utiliza esta clase para crear un contexto inicial, que es el punto de partida para resolver nombres de temas y colas. El valor predeterminado es la fábrica de contexto inicial para el servicio JMS en JBoss. AEM Las siguientes clases son las fábricas de contexto iniciales para los servidores de aplicaciones compatibles con los formularios de la aplicación de los formularios de la:
+**Fábrica de contexto inicial:** La clase Java que se va a utilizar como fábrica de contexto inicial. El servicio JMS utiliza esta clase para crear un contexto inicial, que es el punto de partida para resolver nombres de temas y colas. El valor predeterminado es la fábrica de contexto inicial para el servicio JMS en JBoss. Las siguientes clases son las fábricas de contexto iniciales para los servidores de aplicaciones compatibles con los formularios AEM Forms:
 
 **JBoss:** org.jnp.interfaces.NamingContextFactory
 
@@ -420,7 +420,7 @@ Según el servidor LDAP, el nombre de usuario podría ser un nombre de usuario s
 
 ## Ajustes del servicio de configuración de Microsoft SharePoint {#microsoft-sharepoint-configuration-service-settings}
 
-El servicio de configuración de Microsoft SharePoint AEM `(MSSharePointConfigService)` le permite especificar credenciales para el usuario de formularios de la aplicación que tiene permisos de suplantación. Para obtener información acerca de los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/es_ES/AEMForms/6.1/SharePointConfig/index.html).
+El servicio de configuración de Microsoft SharePoint `(MSSharePointConfigService)` le permite especificar credenciales para el usuario de formularios AEM que tiene permisos de suplantación. Para obtener información acerca de los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 Los siguientes ajustes están disponibles para el servicio de configuración de Microsoft SharePoint:
 
@@ -453,7 +453,7 @@ Los siguientes ajustes están disponibles para el servicio de configuración de 
 
 **BlackBerry:** permite que los dispositivos BlackBerry se conecten al servidor.
 
-**Se requiere Android Microsoft Exchange ActiveSync:** Especifica si el administrador de directivas de Microsoft EA Exchange ActiveSync () debe estar instalado y activo en los dispositivos Android. EA Cuando se selecciona esta opción, los deben aplicarse en el dispositivo Android. Cuando esta opción no está seleccionada, no se realiza ninguna comprobación, aunque siguen aplicándose otros requisitos.
+**Se requiere Android Microsoft Exchange ActiveSync:** Especifica si el administrador de directivas de Microsoft Exchange ActiveSync (EAS) debe estar instalado y activo en los dispositivos Android. Si se selecciona esta opción, el EAS debe aplicarse en el dispositivo Android. Cuando esta opción no está seleccionada, no se realiza ninguna comprobación, aunque siguen aplicándose otros requisitos.
 
 **Longitud mínima del PIN de Android:** Los dispositivos Android deben tener una configuración global que exija que el PIN o la contraseña tengan al menos esta longitud. No basta con tener un PIN de la longitud especificada. El sistema debe aplicar la longitud del PIN para que los usuarios no puedan quitarlo ni acortarlo más tarde. El valor predeterminado es 4.
 
@@ -463,7 +463,7 @@ Los siguientes ajustes están disponibles para el servicio de configuración de 
 
 ## Configuración del servicio de salida {#output-service-settings}
 
-AEM El servicio Output `(OutputService)` le permite combinar datos de formulario XML con un diseño de formulario creado en Designer de formularios de forma de formulario para crear una secuencia de salida de documento en uno de los siguientes formatos:
+El servicio Output `(OutputService)` le permite combinar datos de formulario XML con un diseño de formulario creado en AEM Forms Designer para crear una secuencia de salida de documento en uno de los siguientes formatos:
 
 * Flujo de salida de documento de PDF o PDF/A.
 * Un flujo de salida de Adobe PostScript.
@@ -494,19 +494,19 @@ Las siguientes opciones de configuración están disponibles para el servicio de
 
 **Archivo de inicio de PS:** Nombre del archivo de inicio requerido por Adobe Acrobat Distiller. El valor predeterminado es example.ps.
 
-**Tiempo de espera de conversión del servidor:** Tiempo de espera máximo de conversión del trabajo (en segundos) para el servicio Generar PDF y el servicio Distiller. Esta configuración limita el tiempo de espera máximo de conversión que se puede especificar en el archivo config.xml y en las páginas de la consola de administración de PDF Generator. El valor predeterminado es 270.
+**Tiempo de espera de conversión del servidor:** Tiempo de espera máximo de conversión del trabajo (en segundos) para el servicio Generate PDF y el servicio Distiller. Esta configuración limita el tiempo de espera máximo de conversión que se puede especificar en el archivo config.xml y en las páginas de la consola de administración de PDF Generator. El valor predeterminado es 270.
 
-**Tiempo de espera global del servidor:** Al realizar conversiones de PDF, un servidor de Forms tiene en cuenta el límite de tiempo de espera. Configure el valor timeout para resolver el problema.
+**Tiempo de espera global del servidor:** Mientras se realizan las conversiones de PDF, un servidor de Forms tiene en cuenta el límite de tiempo de espera. Configure el valor timeout para resolver el problema.
 
-**Prefijo de opciones de trabajo:** Prefijo utilizado por el servicio Generar PDF para anteponer una cadena corta a los archivos de opciones de trabajo que crea temporalmente para su uso en Acrobat Distiller. El valor predeterminado es pdfg.
+**Prefijo de opciones de trabajo:** Prefijo utilizado por el servicio Generate PDF para anteponer una cadena corta a los archivos de opciones de trabajo que crea temporalmente para su uso en Acrobat Distiller. El valor predeterminado es pdfg.
 
 **Aplicaciones no Unicode:** Lista separada por comas de nombres de aplicaciones que se sabe que no admiten Unicode. Esta lista se rellena previamente con los nombres de varias aplicaciones, cuya compatibilidad está preconfigurada en PDF Generator. Si decide añadir compatibilidad con las conversiones de PDF a través de otras aplicaciones de terceros que no admiten Unicode, debe añadirlas a esta lista. El valor predeterminado es Autocad, Excel, PowerPoint, Project, Publisher, Visio, Word y WordPerfect.
 
-**Recuento de grupos de subprocesos del servidor:** controla el tamaño del grupo de subprocesos que el servicio PDF de generación utiliza internamente para atender las solicitudes de conversión de HTML a PDF que implican el uso de un elemento de raíz (convertir páginas vinculadas accesibles desde la página principal). El valor predeterminado es 20.
+**Recuento de grupos de subprocesos del servidor:** controla el tamaño del grupo de subprocesos que el servicio Generate PDF utiliza internamente para atender las solicitudes de conversión de HTML a PDF que implican el uso de arañas (conversión de páginas vinculadas accesibles desde la página principal). El valor predeterminado es 20.
 
 **Segundos del análisis de limpieza de PDFG:** Consulte la sección Segundos de caducidad del trabajo para obtener más información.
 
-**Segundos de caducidad del trabajo:** El servicio Generar PDF elimina los archivos de entrada en cuanto se convierten. Almacena los archivos de salida temporalmente durante un periodo determinado por la configuración Segundos del análisis de limpieza de PDF Generator y Segundos de caducidad del trabajo.
+**Segundos de caducidad del trabajo:** El servicio Generate PDF elimina los archivos de entrada en cuanto se convierten. Almacena los archivos de salida temporalmente durante un periodo determinado por la configuración Segundos del análisis de limpieza de PDF Generator y Segundos de caducidad del trabajo.
 
 La configuración Segundos de caducidad del trabajo especifica la antigüedad de un archivo o carpeta vacía antes de que pueda eliminarse. La configuración Segundos del análisis de limpieza de PDF Generator especifica la frecuencia con la que un subproceso de limpieza analiza las carpetas temporales en busca de archivos que se pueden eliminar.
 
@@ -514,11 +514,11 @@ Por ejemplo, si Segundos de caducidad del trabajo se establece en 100 y Segundos
 
 El valor predeterminado de Segundos del análisis de limpieza de PDF Generator es `43200` (12 horas). El valor predeterminado de Segundos de caducidad del trabajo es `86400` (24 horas).
 
-**Configuración regional predeterminada:** Se usa para invalidar la configuración regional predeterminada (país + idioma) del servidor donde se implementa el servicio Generar PDF. Si no se especifica este parámetro, la configuración regional predeterminada se determina a partir del sistema operativo en el que se implementa el servicio. Este parámetro controla el idioma en el que se devuelven los mensajes de error a las API.
+**Configuración regional predeterminada:** Se usa para anular la configuración regional predeterminada (país + idioma) del servidor donde se implementa el servicio Generate PDF. Si no se especifica este parámetro, la configuración regional predeterminada se determina a partir del sistema operativo en el que se implementa el servicio. Este parámetro controla el idioma en el que se devuelven los mensajes de error a las API.
 
 ## Configuración del servicio de servicios de datos del flujo de trabajo Forms {#forms-workflow-data-services-service-settings}
 
-Los siguientes servicios amplían los servicios de datos y exponen ensambladores que Workspace utiliza para hablar con el servidor. No cambie las opciones de configuración de estos servicios a menos que el Soporte técnico de Adobe le indique que lo haga. Estos servicios no están destinados al acceso directo:
+Los siguientes servicios amplían los servicios de datos y exponen ensambladores que Workspace utiliza para hablar con el servidor. No cambie las opciones de configuración de estos servicios a menos que el Soporte técnico de Adobe se lo indique. Estos servicios no están destinados al acceso directo:
 
 * `ProcessManagementLcdsAttachmentService`
 * `ProcessManagementLcdsPropertyService`
@@ -526,19 +526,19 @@ Los siguientes servicios amplían los servicios de datos y exponen ensambladores
 
 ## Configuración del servicio remoto {#remoting-service-settings}
 
-AEM AEM La mayoría de los servicios están configurados para que pueda acceder a ellos a través de la comunicación remota (obsoleta para formularios de la lista de obsoletos) de los formularios de la lista de distribución remota de formularios de. AEM AEM AEM Para obtener información sobre la comunicación remota (obsoleta para formularios de la serie de formularios de la lista de formularios en uso), consulte [Programación con formularios de la lista de formularios en uso](https://adobe.com/go/learn_aemforms_programming_63).
+La mayoría de los servicios están configurados para que pueda acceder a ellos a través de (obsoleto para formularios AEM) Remoting de formularios AEM. Para obtener información sobre la comunicación remota de formularios AEM Forms (obsoleta en formularios AEM Forms), consulte [Programar con formularios AEM Forms](https://adobe.com/go/learn_aemforms_programming_63).
 
 Los siguientes ajustes están disponibles para el servicio Remoting.
 
 **Método de autenticación de cliente de Flex:** Determina el tipo de respuesta que el servidor devuelve al cliente cuando el servicio invocado está habilitado para la seguridad, la operación invocada no admite invocaciones anónimas y el cliente pasa credenciales no válidas. Elija entre Personalizado o Básico. El valor predeterminado es Básico.
 
-AEM **Permitir la serialización de clases no serializables:** La mayoría de los extremos de formularios de la mayoría de los formularios permiten que solo se utilicen clases serializables para la invocación. En versiones anteriores, el extremo remoto permitía que se utilizaran clases no serializables para la invocación desde clientes basados en Flex. Se ha cambiado para evitar una vulnerabilidad de seguridad descrita en APS11-15. Si desea seguir utilizando clases no serializables con el extremo de comunicación remota de Flex, active esta casilla de verificación.
+**Permitir la serialización de clases no serializables:** La mayoría de los extremos de los formularios AEM permiten que solo se usen clases serializables para la invocación. En versiones anteriores, el extremo remoto permitía que se utilizaran clases no serializables para la invocación desde clientes basados en Flex. Se ha cambiado para evitar una vulnerabilidad de seguridad descrita en APS11-15. Si desea seguir utilizando clases no serializables con el extremo de comunicación remota de Flex, active esta casilla de verificación.
 
 ## Configuración del servicio de repositorio {#repository-service-settings}
 
-AEM El servicio de repositorio (`RepositoryService`) proporciona servicios de administración y almacenamiento de recursos a los formularios de la. Cuando los desarrolladores crean una aplicación, pueden implementar los recursos en el repositorio en lugar de en un sistema de archivos. Los recursos pueden incluir cualquier tipo de material colateral, incluidos formularios XML, PDF forms (incluidos formularios Acrobat), fragmentos de formulario, imágenes, perfiles, directivas, archivos de SWF, archivos DDX, esquemas XML, archivos WSDL y datos de prueba.
+El servicio de repositorio ( `RepositoryService`) proporciona servicios de administración y almacenamiento de recursos a los formularios de AEM. Cuando los desarrolladores crean una aplicación, pueden implementar los recursos en el repositorio en lugar de en un sistema de archivos. Los recursos pueden incluir cualquier tipo de material colateral, incluidos formularios XML, PDF forms (incluidos formularios Acrobat), fragmentos de formulario, imágenes, perfiles, directivas, archivos SWF, archivos DDX, esquemas XML, archivos WSDL y datos de prueba.
 
-AEM Puede utilizar el repositorio predeterminado que se incluye con los formularios de la o utilizar un repositorio de terceros (EMC Documentum Content Server, IBM FileNet Content Manager o IBM Content Manager).
+Puede utilizar el repositorio predeterminado incluido con los formularios de AEM o utilizar un repositorio de terceros (EMC Documentum Content Server, IBM FileNet Content Manager o IBM Content Manager).
 
 El servicio Proveedor de repositorio es un delegado de servicio que actúa como interfaz para un servicio de proveedor. Esto le permite conectarse a una API común y no tiene que saber qué servicio de proveedor implementa las capacidades de almacenamiento. El servicio Proveedor de repositorios proporciona almacenamiento de base de datos para los recursos del servicio de repositorio.
 
@@ -552,15 +552,15 @@ El servicio Signature ( `SignatureService`) permite a su organización proteger 
 
 Los siguientes ajustes están disponibles para el servicio Signature.
 
-**Nombre del servicio SPI de HSM remoto:** Esta opción está destinada a utilizarse cuando el HSM está instalado en un equipo remoto. AEM Especifique esta opción cuando los formularios de la aplicación se instalen en un Windows de 64 bits y utilice dispositivos HSM para firmar.
+**Nombre del servicio SPI de HSM remoto:** Esta opción está destinada a utilizarse cuando el HSM está instalado en un equipo remoto. Especifique esta opción cuando los formularios AEM Forms estén instalados en un sistema Windows de 64 bits y utilice dispositivos HSM para firmar.
 
-AEM **URL del servicio web HSM remoto:** Especifique esta opción cuando se instalen formularios de la aplicación en Windows de 64 bits y utilice dispositivos HSM para firmar.
+**URL del servicio web HSM remoto:** Especifique esta opción cuando los formularios AEM Forms estén instalados en Windows de 64 bits y esté usando dispositivos HSM para firmar.
 
 **Certificación para incluir cambios en la carga de formularios:** Cuando se selecciona esta opción, el estado del formulario XFA se certifica además de la plantilla XFA. Tenga en cuenta que habilitar esta opción puede tener un impacto negativo en el rendimiento. El valor predeterminado es True.
 
 **Ejecutar scripts de Document JavaScript:** Especifica si se ejecutarán scripts de Document JavaScript durante operaciones de firma. El valor predeterminado es False.
 
-**Procesar documentos con compatibilidad con Acrobat 9:** Especifica si se habilita la compatibilidad con Acrobat 9. Por ejemplo, cuando se selecciona esta opción, se activa la certificación visible en PDF dinámicos. El valor predeterminado es False.
+**Procesar documentos con compatibilidad con Acrobat 9:** Especifica si se habilita la compatibilidad con Acrobat 9. Por ejemplo, cuando se selecciona esta opción, se habilita Certificación visible en archivos PDF dinámicos. El valor predeterminado es False.
 
 **Incrustar información de revocación al firmar:** Especifica si la información de revocación está incrustada al firmar el documento de PDF. El valor predeterminado es False.
 
@@ -571,20 +571,20 @@ Durante la firma o certificación:** Especifica si una operación de firma o cer
 
 **Orden de comprobación de revocación:** Especifica el orden de comprobación de revocación cuando es posible realizar la comprobación mediante los mecanismos Lista de revocación de certificados (CRL) y Protocolo de estado de certificado en línea (OCSP). El valor predeterminado es OCSPFirst.
 
-**Tamaño máximo de la información de archivo de revocación:** Tamaño máximo de la información de archivo de revocación en kilobytes. AEM Los formularios de intentan almacenar la mayor cantidad posible de información de revocación sin superar el límite. El valor predeterminado es 10 KB.
+**Tamaño máximo de la información de archivo de revocación:** Tamaño máximo de la información de archivo de revocación en kilobytes. Los formularios AEM Forms intentan almacenar la mayor cantidad de información de revocación posible sin superar el límite. El valor predeterminado es 10 KB.
 
 **Firmas De Soporte Creadas A Partir De Compilaciones Previas Al Lanzamiento De
-Productos de Adobe:** Si se selecciona esta opción, la firma creada con la versión preliminar de los productos de Adobe se validará correctamente. El valor predeterminado es False.
+Productos Adobe:** Si se selecciona esta opción, la firma creada con la versión preliminar de los productos Adobe se validará correctamente. El valor predeterminado es False.
 
 **Opción de tiempo de comprobación:** Especifica la hora de verificación del certificado de un firmante. El valor predeterminado es Proteger hora actual u otra hora.
 
 **Usar información de revocación archivada en la firma durante
-Validación:** Especifica si la información de revocación archivada con la firma se usa para la comprobación de revocación. El valor predeterminado es True.
+Validación:** Especifica si la información de revocación archivada con la firma se utiliza para la comprobación de revocación. El valor predeterminado es True.
 
 **Usar Información De Validación Almacenada En El Documento Para
 Validación de firmas:** Si se selecciona esta opción, se utiliza la información de validación (incluida la información de revocación y de marca de tiempo) incrustada en el documento para validar firmas. El valor predeterminado es True.
 
-**Máximo de sesiones de verificación anidadas permitidas:** Número máximo de sesiones de verificación anidadas permitidas. AEM Los formularios utilizan este valor para evitar un bucle infinito al verificar los certificados del firmante de OCSP o CRL cuando el certificado de OCSP o CRL no está configurado correctamente. El valor predeterminado es 10.
+**Máximo de sesiones de verificación anidadas permitidas:** Número máximo de sesiones de verificación anidadas permitidas. Los formularios de AEM utilizan este valor para evitar un bucle infinito al comprobar los certificados del firmante de OCSP o CRL cuando el certificado de OCSP o CRL no está configurado correctamente. El valor predeterminado es 10.
 
 **Desviación máxima del reloj para la verificación:** Tiempo máximo, en minutos, que puede ser posterior al tiempo de validación. Si la desviación del reloj es mayor que este valor, la firma no será válida. El valor predeterminado es 65 minutos.
 
@@ -696,7 +696,7 @@ Validación de firmas:** Si se selecciona esta opción, se utiliza la informaci�
 
 ## Configuración del servicio de carpetas inspeccionadas {#watched-folder-service-settings}
 
-El servicio de carpetas inspeccionadas (`WatchedFolder`) configura atributos que son comunes para todos los extremos de carpetas inspeccionadas. También proporciona valores predeterminados para los extremos de carpeta observados. (Consulte [Configuración de puntos finales de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) No es invocado por aplicaciones cliente externas ni se utiliza en procesos creados en Workbench.
+El servicio de carpetas inspeccionadas (`WatchedFolder`) configura atributos que son comunes para todos los extremos de carpetas inspeccionadas. También proporciona valores predeterminados para los extremos de carpeta observados. (Consulte [Configuración de puntos finales de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)). Las aplicaciones cliente externas no lo invocan ni lo utilizan en los procesos creados en Workbench.
 
 Las siguientes configuraciones están disponibles para el servicio de carpetas inspeccionadas.
 
@@ -757,7 +757,7 @@ Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carp
 
 **Conservar si se produce error:** Si el valor es True, los archivos originales se conservarán en la carpeta de errores si se produce un error.
 
-AEM **Aceleración:** Cuando se selecciona esta opción, limita el número de trabajos de carpetas vigiladas que procesa el formulario en un momento dado y que se pueden ver en un momento determinado. El valor Tamaño de lote determina el número máximo de trabajos (consulte Acerca de la restricción).
+**Aceleración:** Cuando se selecciona esta opción, limita el número de trabajos de carpetas vigiladas que procesan los formularios AEM Forms en un momento dado. El valor Tamaño de lote determina el número máximo de trabajos (consulte Acerca de la restricción).
 
 ## Configuración del servicio Web {#web-service-service-settings}
 
@@ -765,7 +765,7 @@ El servicio Web (`WebService`) habilita procesos para invocar operaciones de ser
 
 El servicio Web permite a los procesos invocar operaciones del servicio Web. Por ejemplo, una organización puede querer integrar un proceso para almacenar y recuperar información, como los detalles de contacto y cuenta, invocando los servicios web expuestos de un proveedor de servicios. El servicio Web Service invoca un servicio Web especificado y pasa los valores de cada uno de sus parámetros. A continuación, guarda los valores devueltos de la operación en una variable designada dentro de un proceso.
 
-SOAP El servicio Web Service interactúa con los servicios Web mediante el envío y la recepción de mensajes de. SOAP El servicio también es compatible con el envío de archivos adjuntos MIME, MTOM y SwaRef con mensajes de tipo mediante el protocolo WS-Attachment. Las interacciones del servicio Web son compatibles con los sistemas SAP y con los servicios Web .NET.
+El servicio Web interactúa con los servicios Web mediante el envío y la recepción de mensajes de SOAP. El servicio también admite el envío de archivos adjuntos MIME, MTOM y SwaRef con mensajes SOAP mediante el protocolo WS-Attachment. Las interacciones del servicio Web son compatibles con los sistemas SAP y con los servicios Web .NET.
 
 Las siguientes opciones de configuración están disponibles para el servicio Web.
 
@@ -846,9 +846,9 @@ Se instalan los perfiles de seguridad predeterminados, que se pueden configurar 
    * **DELETE_VERSION_PERM:** Para eliminar una versión del servicio
    * **MODIFY_VERSION_PERM:** Para modificar una versión del servicio
    * **READ_PERM:** Para ver el servicio
-   * AEM **PROCESS_OWNER_PERM:** Para su uso en una versión futura de formularios de la. No utilice este permiso.
-   * AEM **SERVICE_MANAGER_PERM:** Para su uso en una versión futura de formularios de la lista de distribución de formularios de la lista de distribución. No utilice este permiso.
-   * AEM **SERVICE_AGENT_PERM:** Para su uso en una versión futura de formularios de la lista de distribución de formularios de la lista de distribución. No utilice este permiso.
+   * **PROCESS_OWNER_PERM:** para su uso en una versión futura de formularios AEM. No utilice este permiso.
+   * **SERVICE_MANAGER_PERM:** para su uso en una versión futura de formularios AEM. No utilice este permiso.
+   * **SERVICE_AGENT_PERM:** para su uso en una versión futura de formularios AEM Forms. No utilice este permiso.
 
 1. Haga clic en Agregar.
 

@@ -1,5 +1,5 @@
 ---
-title: '“Tutorial: Crear plantillas”'
+title: 'Tutorial: Crear plantillas'
 description: Crear plantillas Imprimir y Web para comunicaciones interactivas
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1790'
-ht-degree: 54%
+source-wordcount: '1820'
+ht-degree: 55%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 54%
 
 Este tutorial es un paso en la serie [Crear su primera comunicación interactiva](/help/forms/using/create-your-first-interactive-communication.md). Se recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
 
-Para crear una comunicación interactiva, debe tener plantillas disponibles en el servidor de AEM para los canales Imprimir y Web.
+Para crear una comunicación interactiva, debe tener plantillas disponibles en el servidor de AEM para los canales web y de impresión.
 
 Las plantillas del canal Imprimir se crean en Adobe Forms Designer y se cargan en el servidor de AEM. Estas plantillas están disponibles para su uso durante la creación de una comunicación interactiva.
 
@@ -117,7 +117,7 @@ Para crear una plantilla XDP para el canal Imprimir, haga lo siguiente:
 Una vez creada una plantilla XDP con Forms Designer, debe cargarla en el servidor de AEM Forms para que esté disponible para usarla durante la creación de la comunicación interactiva.
 
 1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos]**.
-1. Seleccione **Crear** > **Carga de archivo**.
+1. Seleccione **Crear** > **Cargar archivo**.
 
    Desplácese y seleccione la plantilla **create_first_ic_print_template** (XDP) y seleccione **Abrir** para importar la plantilla XDP al servidor de AEM Forms.
 
@@ -143,7 +143,7 @@ Para crear un fragmento de diseño para el canal Imprimir de la comunicación in
 
 1. Haga clic en los campos de texto del encabezado en la **Vista de Designer** y cambie sus nombres a **Tiempo**, **Número**, **Duración** y **Gastos**.
 
-   ![Fragmento de diseño &#x200B;](assets/layout_fragment_print_new.png)
+   ![Fragmento de diseño ](assets/layout_fragment_print_new.png)
 
 1. Seleccione **Fila 1** en el panel izquierdo y seleccione **Objeto** > **Enlace** > **Repetir fila para cada elemento de datos**.
 
@@ -171,7 +171,7 @@ Cree y administre una plantilla para el canal Web de comunicaciones interactivas
 * [Crear carpeta para plantillas](../../forms/using/create-templates-print-web.md#create-folder-for-templates)
 * [Crear la plantilla](../../forms/using/create-templates-print-web.md#create-the-template)
 * [Habilitar la plantilla](../../forms/using/create-templates-print-web.md#enable-the-template)
-* [Activar botones en las comunicaciones interactivas](../../forms/using/create-templates-print-web.md#enabling-buttons-in-interactive-communications)
+* [Habilitar botones en las comunicaciones interactivas](../../forms/using/create-templates-print-web.md#enabling-buttons-in-interactive-communications)
 
 ### Crear una carpeta para plantillas {#create-folder-for-templates}
 
@@ -262,7 +262,7 @@ Para habilitar la plantilla web, haga lo siguiente:
 
    La plantilla está habilitada y su estado se muestra como Habilitada. Puede utilizar esta plantilla al crear la comunicación interactiva para el canal Web.
 
-### Activar botones en las comunicaciones interactivas {#enabling-buttons-in-interactive-communications}
+### Habilitar botones en las comunicaciones interactivas {#enabling-buttons-in-interactive-communications}
 
 En función del caso de uso, debe incluir los botones **Pagar ahora** y **Suscribirse** (componentes de formularios adaptables) en la comunicación interactiva. Para habilitar el uso de estos botones en la comunicación interactiva, haga lo siguiente:
 
