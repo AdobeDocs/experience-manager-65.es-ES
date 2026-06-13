@@ -1,6 +1,6 @@
 ---
-title: Configuración del Cloud Service de Adobe Mobile Services
-description: Siga esta página para configurar el Cloud Service de Adobe Mobile Services.
+title: Configuración de Adobe Mobile Services Cloud Service
+description: Siga esta página para configurar Adobe Mobile Services Cloud Service.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -12,12 +12,12 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 0%
+source-wordcount: '440'
+ht-degree: 3%
 
 ---
 
-# Configuración del Cloud Service de Adobe Mobile Services {#configure-your-adobe-mobile-services-cloud-service}
+# Configuración de Adobe Mobile Services Cloud Service {#configure-your-adobe-mobile-services-cloud-service}
 
 {{ue-over-mobile}}
 
@@ -40,17 +40,17 @@ Adobe Mobile Analytics SDK proporciona lo siguiente:
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-AEM Mosaico de métricas del centro de comandos
+Mosaico de métricas del centro de comandos de AEM
 
-## Configuración del Cloud Service {#configuring-the-cloud-service}
+## Configuración de Cloud Service {#configuring-the-cloud-service}
 
-Para aprovechar Adobe Mobile Services Analytics, debe configurar el servicio de AEM Mobile Analytics Cloud con la información de su cuenta de Adobe Analytics.
+Para aprovechar Adobe Mobile Services Analytics, debe configurar el servicio AEM Mobile Analytics Cloud con la información de su cuenta de Adobe Analytics.
 
-1. Haga clic en el icono de la parte superior derecha para agregar o editar los Cloud Service del mosaico **Administrar Cloud Service** del panel de aplicaciones.
+1. Haga clic en el icono superior derecho para agregar o editar Cloud Services desde el mosaico **Administrar servicios de nube** del panel de aplicaciones.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. Se muestra la pantalla **Agregar o editar Cloud Service**. Seleccione **Adobe Mobile Services** y haga clic en **Siguiente**.
+1. Se muestra la pantalla **Agregar o editar servicios en la nube**. Seleccione **Adobe Mobile Services** y haga clic en **Siguiente**.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 

@@ -66,7 +66,7 @@ La versión también incluye correcciones para más de 20 problemas notificados 
 
 ## Instalación del Service Pack
 
-El Service Pack ofrece nuevas funciones y correcciones de errores tanto para AEM Forms en JEE como para AEM Forms en OSGi. The installation instructions have changes in comparison to previous service packs, For installation instructions, see [AEM Forms service pack installation instructions](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es).
+El Service Pack ofrece nuevas funciones y correcciones de errores tanto para AEM Forms en JEE como para AEM Forms en OSGi. Las instrucciones de instalación tienen cambios en comparación con los Service Pack anteriores. Para obtener instrucciones de instalación, consulte [Instrucciones de instalación de Service Pack de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es).
 
 
 

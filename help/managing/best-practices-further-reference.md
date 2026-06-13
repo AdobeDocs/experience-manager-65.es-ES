@@ -11,7 +11,7 @@ feature: Compliance
 role: Admin,Developer,Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3699'
+source-wordcount: '3750'
 ht-degree: 100%
 
 ---
@@ -579,6 +579,6 @@ Adobe proporciona más prácticas recomendadas para todas las fases y públicos:
 
 * [Implementación](/help/sites-deploying/best-practices.md)
 * [Creación](/help/sites-authoring/best-practices.md)
-* [Administración ](/help/sites-administering/administer-best-practices.md)
+* [Administración](/help/sites-administering/administer-best-practices.md)
 * [Desarrollo](/help/sites-developing/best-practices.md)
 * [Administración de proyectos](/help/managing/best-practices.md)

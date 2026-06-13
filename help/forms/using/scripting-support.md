@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '3916'
-ht-degree: 92%
+source-wordcount: '3948'
+ht-degree: 91%
 
 ---
 
@@ -115,7 +115,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
   <tr>
    <td><code>title</code></td>
    <td>Especifica el título del documento. Solo está disponible para aplicaciones de cliente.</td>
-   <td>Devuelve el título del documento del HTML en formulario, en lugar del título de los metadatos del formulario como si hubiera PDF forms.</td>
+   <td>Devuelve el título del documento de HTML en formulario, en lugar del título de los metadatos del formulario como si hubiera PDF forms.</td>
   </tr>
   <tr>
    <td><code>version</code></td>
@@ -1280,12 +1280,12 @@ FormCalc es un lenguaje específico de XFA para crear una lógica y unos cálcul
   </tr>
   <tr>
    <td>app.setInterval()</td>
-   <td>Especifica una script JavaScript y un período de tiempo. El script se ejecuta cada vez que transcurre el periodo. El valor devuelto de este método debe mantenerse en una variable JavaScript. De lo contrario, el objeto de intervalo está sujeto a la colección de residuos, lo que haría que se detuviera el reloj. Para finalizar la ejecución periódica, pase el objeto de intervalo devuelto a clearInterval.</td>
+   <td>Especifica una script JavaScript y un período de tiempo. El script se ejecuta cada vez que transcurre el periodo. El valor devuelto de este método debe mantenerse en una variable JavaScript. De lo contrario, el objeto de intervalo está sujeto a la colección de residuos, lo que haría que se detuviera el reloj. Para terminar la ejecución periódica, pase el objeto de intervalo devuelto a clearInterval.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Especifica una script JavaScript y un período de tiempo. El script se ejecuta una sola vez, después de que transcurra el periodo. El valor devuelto de este método debe mantenerse en una variable JavaScript. De lo contrario, el objeto timeout está sujeto a la colección de residuos, lo que haría que se detuviera el reloj. Para cancelar el evento timeout, pase el objeto timeout devuelto a clearTimeOut.</td>
+   <td>Especifica una script JavaScript y un período de tiempo. El script se ejecuta una sola vez, después de que transcurra el periodo.El valor devuelto de este método debe mantenerse en una variable JavaScript. De lo contrario, el objeto timeout está sujeto a la colección de residuos, lo que haría que se detuviera el reloj. Para cancelar el evento timeout, pase el objeto timeout devuelto a clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>

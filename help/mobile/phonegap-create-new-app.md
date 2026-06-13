@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 1%
+source-wordcount: '574'
+ht-degree: 2%
 
 ---
 
@@ -25,11 +25,11 @@ Las aplicaciones de AEM Mobile se basan en un modelo que define una estructura y
 * **Título:** El título de la aplicación.
 * **Ruta de destino:** Ubicación en el repositorio donde se almacena la aplicación. Deje el valor predeterminado para crear una ruta basada en el nombre de la aplicación.
 
-* **Nombre:** El valor predeterminado es el valor de la propiedad Título con caracteres de espacio eliminados. AEM El nombre se utiliza dentro de la aplicación para hacer referencia a la aplicación, por ejemplo, para el nodo del repositorio que representa la aplicación.
+* **Nombre:** El valor predeterminado es el valor de la propiedad Título con caracteres de espacio eliminados. El nombre se utiliza en AEM para hacer referencia a la aplicación, por ejemplo, para el nodo del repositorio que representa la aplicación.
 * **Descripción:** Una descripción de la aplicación.
 * **URL del servidor:** URL que proporciona actualizaciones de contenido de transmisión (OTA) a la aplicación. El valor predeterminado es la URL del servidor de publicación de la instancia que se utiliza para crear una aplicación (tomada del servicio externalizador). Tenga en cuenta que debe ser una instancia del servidor de publicación en lugar de un autor, lo que requiere autenticación.
 
-También puede proporcionar un archivo de imagen para utilizarlo como miniatura de la aplicación, seleccionar la configuración de PhoneGap Build que desea utilizar y seleccionar la configuración de análisis de aplicaciones móviles que desea utilizar. Esta imagen solo se utiliza como miniatura para representar la aplicación móvil dentro de la consola de aplicaciones móviles en Experience Manager.
+También puede proporcionar un archivo de imagen para utilizarlo como miniatura de la aplicación, seleccionar la configuración de PhoneGap Build que se va a utilizar y seleccionar la configuración de análisis de aplicaciones móviles que se va a utilizar. Esta imagen solo se utiliza como miniatura para representar la aplicación móvil dentro de la consola de aplicaciones móviles en Experience Manager.
 
 Existen pestañas adicionales (y opcionales) para crear un servicio en la nube e integrar el complemento SDK de Adobe Mobile Services en su aplicación.
 
@@ -38,14 +38,14 @@ Existen pestañas adicionales (y opcionales) para crear un servicio en la nube e
 
 ## Uso de plantillas de aplicación {#using-app-templates}
 
-AEM Las plantillas de aplicación ofrecen una forma sencilla de utilizar los diseños existentes creados por desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de los programas de desarrollo de aplicaciones de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación.
+Las plantillas de aplicación proporcionan una forma sencilla de utilizar los diseños existentes creados por desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de AEM.
 
 ¿Qué es una plantilla de aplicación? Considérelo como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación.
 Al crear una aplicación basada en la plantilla de otra aplicación, obtiene una aplicación con un punto de partida representativo de la aplicación en la que se creó.
 
 Debe tener una plantilla de aplicación móvil existente (o una aplicación instalada que tenga una plantilla de aplicación) para utilizar esta función.
 
-AEM El último paquete de ejemplos de aplicaciones de la aplicación de la aplicación de la aplicación de la aplicación incluye una versión actualizada de la Geometrixx con una plantilla de aplicación. También puede instalar [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit), que también proporciona una plantilla.
+El último paquete de ejemplos de aplicaciones de AEM incluye una versión actualizada de la aplicación de Geometrixx con una plantilla de aplicación. También puede instalar [StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit), que también proporciona una plantilla.
 
 Pasos para crear una aplicación basada en una plantilla de aplicación:
 
@@ -54,7 +54,7 @@ Pasos para crear una aplicación basada en una plantilla de aplicación:
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
-AEM Seleccione una plantilla de aplicación que un desarrollador de aplicaciones haya puesto a su disposición para que la ejecute. Consulte [Estructura de una aplicación de AEM Mobile](/help/mobile/phonegap-structure-an-app.md) para obtener ayuda del desarrollador.
+Seleccione una plantilla de aplicación que un desarrollador de AEM haya puesto a su disposición. Consulte [Estructura de una aplicación de AEM Mobile](/help/mobile/phonegap-structure-an-app.md) para obtener ayuda del desarrollador.
 
 ![chlimage_1-159](assets/chlimage_1-159.png)
 
@@ -70,11 +70,11 @@ Consulte los siguientes recursos para obtener más información sobre otras func
 * [Edición de metadatos de aplicación](/help/mobile/phonegap-editmetadata.md)
 * [Definiciones de aplicación](/help/mobile/phonegap-app-definitions.md)
 * [Importar una aplicación híbrida existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
-* [Content Services](/help/mobile/develop-content-as-a-service.md)
+* [Servicios de contenido](/help/mobile/develop-content-as-a-service.md)
 
 ## Recursos adicionales {#additional-resources}
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [Desarrollo para Adobe PhoneGap AEM Enterprise con](/help/mobile/developing-in-phonegap.md)
-* [Administración de contenido para Adobe PhoneGap AEM Enterprise con el servicio de administración de](/help/mobile/administer-phonegap.md)
+* [Desarrollo para Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
+* [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)

@@ -9,8 +9,8 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 90%
+source-wordcount: '1436'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 
 ## Información general {#overview}
 
-We.Finance es una organización que permite a los candidatos solicitar el empleo a través del portal de referencia. La organización también utiliza el portal para administrar la programación de entrevistas, la lista de preseleccionados y la comunicación interna de los candidatos. El sitio administra lo siguiente:
+We.Finance es una organización que permite a los candidatos solicitar el empleo a través del portal del sitio de referencia. La organización también utiliza el portal para administrar la programación de entrevistas, la lista de preseleccionados y la comunicación interna de los candidatos. El sitio administra lo siguiente:
 
 * Los candidatos que buscan y solicitan trabajos
 * La selección y preselección de candidatos
@@ -91,7 +91,7 @@ Asegúrese de especificar un correo electrónico válido en la solicitud, ya que
 
 ## John Jacobs selecciona el perfil de Sarah Rose como candidata para el administrador de contrataciones {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-La organización recibe la solicitud de empleo presentada por Sarah. A John Jacobs, el reclutador, se le asigna la tarea de revisar el perfil de Sarah. AEM John revisa la tarea en su bandeja de entrada de la bandeja de entrada de la, encuentra el perfil que coincide con el requisito del trabajo y hace clic en Seleccionar. El perfil de Sarah se reenvía a Gloria Rios, la administradora de contrataciones, para su aprobación.
+La organización recibe la solicitud de empleo presentada por Sarah. A John Jacobs, el reclutador, se le asigna la tarea de revisar el perfil de Sarah. John revisa la tarea en su bandeja de entrada de AEM, encuentra el perfil que coincide con el requisito del trabajo y hace clic en Seleccionar. El perfil de Sarah se reenvía a Gloria Rios, la administradora de contrataciones, para su aprobación.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
@@ -115,7 +115,7 @@ Gloria, la administradora de contratación, recibe el perfil preseleccionado com
 
 ![gloriainbox](assets/gloriainbox.png)
 
-AEM Bandeja de entrada de de Gloria
+Bandeja de entrada de AEM de Gloria
 
 ![gloriaschedulesinterview](assets/gloriaschedulesinterview.png)
 
@@ -157,7 +157,7 @@ Después de que Sarah Rose revise las entrevistas y las borre, Gloria Rios, la a
 
 ![gloriariosinboxoffer](assets/gloriariosinboxoffer.png)
 
-AEM Bandeja de entrada de de Gloria
+Bandeja de entrada de AEM de Gloria
 
 ![gloriariosselectcandidate](assets/gloriariosselectcandidate.png)
 
@@ -207,7 +207,7 @@ John Jacobs ve la solicitud de comprobación de antecedentes en su bandeja de en
 
 ![johnjacobsbackgroundcheckinbox](assets/johnjacobsbackgroundcheckinbox.png)
 
-AEM Bandeja de entrada de la página de entrada de de John Jacobs
+Bandeja de entrada de AEM de John Jacobs
 
 ![johnjacobsbackgroundcheckgoahead](assets/johnjacobsbackgroundcheckgoahead.png)
 
@@ -215,7 +215,7 @@ Después de realizar la comprobación de antecedentes, John Jacobs hace clic en 
 
 ## John Doe envía la carta de unión a Sarah Rose {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
 
-AEM John Doe recibe una solicitud en su Bandeja de entrada de la Bandeja de entrada de para enviar la carta de unión. John abre la solicitud y ve los detalles. John Doe adjunta el PDF la carta de unión y, a continuación, hace clic en Adjuntar y enviar carta de unión.
+John Doe recibe una solicitud en su Bandeja de entrada de AEM para enviar la carta de unión. John abre la solicitud y ve los detalles. John Doe adjunta el PDF la carta de unión y, a continuación, hace clic en Adjuntar y enviar carta de unión.
 
 ![johndoejoiningletterinbox](assets/johndoejoiningletterinbox.png)
 

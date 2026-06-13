@@ -10,8 +10,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 0%
+source-wordcount: '977'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-AEM Las aplicaciones móviles deben poder utilizar todo el contenido en los segmentos según sea necesario para ofrecer la experiencia de la aplicación a la que van dirigidas.
+Las aplicaciones móviles deben poder utilizar todo el contenido en AEM según sea necesario para ofrecer la experiencia de aplicación segmentada.
 
 Esto incluye el uso de recursos, contenido del sitio, contenido de CaaS (aéreo) y contenido personalizado que puede tener su propia estructura.
 
@@ -29,7 +29,7 @@ Esto incluye el uso de recursos, contenido del sitio, contenido de CaaS (aéreo)
 
 Existen tres tipos principales de material que los servicios de contenido ofrecen:
 
-1. **Assets**
+1. **Recursos**
 1. **Contenido de HTML empaquetado (HTML/CSS/JS)**
 1. **Contenido independiente del canal**
 
@@ -37,7 +37,7 @@ Existen tres tipos principales de material que los servicios de contenido ofrece
 
 ## Recursos {#assets}
 
-AEM Las colecciones de recursos son construcciones de recursos que contienen referencias a otras colecciones.
+Las colecciones de recursos son construcciones de AEM que contienen referencias a otras colecciones.
 
 Una colección de recursos se puede exponer a través de Content Services. La llamada a una colección de recursos en una solicitud devuelve un objeto que es una lista de recursos, incluidas sus direcciones URL. Se accede a Assets a través de una dirección URL. La dirección URL se proporciona en un objeto. Por ejemplo:
 
@@ -54,7 +54,7 @@ La optimización de recursos es una función del lado del servidor, basada en la
 
 El flujo de trabajo de recursos es el siguiente:
 
-1. AEM Referencia de recursos disponible de forma predeterminada en el uso de la
+1. Referencia de recursos disponible de forma predeterminada en AEM
 1. Crear una entidad de referencia de recurso a partir de su modelo
 1. Editar entidad
 
@@ -67,7 +67,7 @@ El diagrama siguiente muestra el **Flujo de trabajo de referencia de Assets**:
 
 ### Administración de Assets {#managing-assets}
 
-AEM AEM Los servicios de contenido proporcionan acceso a recursos administrados por el usuario a los que no se puede hacer referencia a través de otro contenido de la administración de la.
+Content Services proporciona acceso a recursos administrados por AEM a los que no se puede hacer referencia mediante otro contenido de AEM.
 
 #### Assets administrado existente {#existing-managed-assets}
 
@@ -83,7 +83,7 @@ Actualmente se distribuyen por todo el repositorio de Assets. Los archivos a los
 
 #### Acceso a entidades de recursos CS {#accessing-cs-asset-entities}
 
-AEM Dejemos de lado los pasos de cómo la página está disponible a través de la API por ahora (está cubierta por la descripción de la interfaz de usuario de) y supongamos que se ha hecho. Se han creado y agregado entidades de recursos al espacio &quot;appImages&quot;. Se han creado carpetas adicionales en el espacio con fines de organización. AEM Por lo tanto, las entidades de recursos se almacenan en el JCR de la como:
+Dejemos de lado los pasos de cómo la página está disponible a través de la API por ahora (está cubierta por la descripción de la interfaz de usuario de AEM) y supongamos que se ha hecho. Se han creado y agregado entidades de recursos al espacio &quot;appImages&quot;. Se han creado carpetas adicionales en el espacio con fines de organización. Por lo tanto, las entidades de recursos se almacenan en el JCR de AEM como:
 
 * /content/entities/appImages/logos/logo_light
 * /content/entities/appImages/logos/logo_dark
@@ -107,36 +107,36 @@ Para obtener el binario de la imagen &quot;carrito&quot;, se vuelve a utilizar l
 
 ## Contenido de HTML empaquetado {#packaged-html-content}
 
-Se necesita contenido HTML para los clientes que deben mantener la presentación del contenido. Esto resulta útil para las aplicaciones nativas que utilizan un contenedor web (como una vista web de Cordova) para mostrar el contenido.
+El contenido de HTML es necesario para los clientes que deben mantener la presentación del contenido. Esto resulta útil para las aplicaciones nativas que utilizan un contenedor web (como una vista web de Cordova) para mostrar el contenido.
 
-AEM Los servicios de contenido proporcionan contenido de HTML a la aplicación móvil mediante la API de. AEM Los clientes que deseen exponer el contenido de la como HTML pueden crear una entidad de página del HTML AEM que apunte a la fuente de contenido de la.
+Los servicios de contenido de AEM proporcionan contenido de HTML a la aplicación móvil mediante la API. Los clientes que deseen exponer el contenido de AEM como HTML pueden crear una entidad de página de HTML que apunte a la fuente de contenido de AEM.
 
 Se tienen en cuenta las siguientes opciones:
 
-* **Archivo Zip:** Para tener la mejor oportunidad de mostrarse correctamente en el dispositivo, los recursos, css de material, JavaScript, etc. a los que se hace referencia en la página se incluyen en un único archivo comprimido con la respuesta. Las referencias de la página HTML se pueden ajustar para utilizar una ruta relativa a estos archivos.
-* AEM **Transmisión por secuencias:** Obteniendo un manifiesto de los archivos necesarios de los que se ha obtenido la notificación por parte de los. A continuación, utilice ese manifiesto para solicitar todos los archivos (HTML, CSS, JS, etc.) con solicitudes posteriores.
+* **Archivo Zip:** Para tener la mejor oportunidad de mostrarse correctamente en el dispositivo, los recursos, css de material, JavaScript, etc. a los que se hace referencia en la página se incluyen en un único archivo comprimido con la respuesta. Las referencias en la página de HTML se pueden ajustar para utilizar una ruta relativa a estos archivos.
+* **Transmisión:** Obtención de un manifiesto de los archivos necesarios de AEM. A continuación, utilice ese manifiesto para solicitar todos los archivos (HTML, CSS, JS, etc.) con solicitudes posteriores.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
 ## Contenido independiente del canal {#channel-independent-content}
 
-AEM El contenido independiente del canal es una forma de exponer construcciones de contenido de canal, como páginas, sin tener que preocuparse por el diseño, los componentes u otra información específica del canal.
+El contenido independiente del canal es una forma de exponer las construcciones de contenido de AEM, como las páginas, sin preocuparse por el diseño, los componentes u otra información específica del canal.
 
-AEM Estas entidades de contenido se generan mediante un modelo de contenido para traducir las estructuras de la a un formato JSON. AEM Los datos JSON resultantes contienen información sobre los datos del contenido que están disociados del repositorio de la. AEM Esto incluye la devolución de metadatos y vínculos de referencia a recursos, así como las relaciones entre estructuras de contenido, incluida la jerarquía de entidades.
+Estas entidades de contenido se generan mediante un modelo de contenido para traducir las estructuras de AEM a un formato JSON. Los datos JSON resultantes contienen información sobre los datos del contenido que se desacopla del repositorio de AEM. Esto incluye la devolución de metadatos y vínculos de referencia de AEM a recursos y las relaciones entre estructuras de contenido, incluida la jerarquía de entidades.
 
 ### Administración de contenido independiente del canal {#managing-channel-independent-content}
 
 El contenido puede llegar a la aplicación de varias formas.
 
-1. ZIPS de contenido de GET AEM por medio de la técnica de sobreexposición de la vía aérea de la
+1. OBTENCIÓN de archivos ZIPS de contenido mediante AEM Over-the-Air
 
    * Los controladores de sincronización de contenido pueden actualizar el paquete zip directamente o llamando a los procesadores de contenido existentes
 
       * Controladores de plataforma
-      * AEM Manejadores de
+      * Controladores de AEM
       * Controladores personalizados
 
-1. GET de contenido directamente mediante procesadores de contenido
+1. OBTENER contenido directamente mediante procesadores de contenido
 
    * Procesadores de Sling predeterminados de forma predeterminada
    * Procesadores de contenido de AEM Mobile/Content Services

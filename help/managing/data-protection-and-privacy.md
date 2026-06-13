@@ -12,8 +12,8 @@ feature: Compliance
 role: Developer, Leader, User
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 100%
+source-wordcount: '931'
+ht-degree: 99%
 
 ---
 
@@ -117,7 +117,7 @@ Para obtener más información, consulte lo siguiente:
 
 * [Adobe Target: Información general de privacidad](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=es)
 
-* [Flujo de trabajo de privacidad de datos de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=es)
+* [Flujo de trabajo de privacidad de datos Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=es)
 
 ## AEM Communities {#aem-communities}
 

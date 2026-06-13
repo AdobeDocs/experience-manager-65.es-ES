@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 0%
+source-wordcount: '803'
+ht-degree: 1%
 
 ---
 
@@ -30,9 +30,9 @@ Las colecciones representan un *espacio* bien definido con contenido como artíc
 >
 >Consulte los siguientes recursos en la Ayuda en línea para conocer los siguientes temas en las aplicaciones de AEM Mobile:
 >
->* [Consideraciones de diseño](https://helpx.adobe.com/es/digital-publishing-solution/help/design-app.html)
+>* [Consideraciones de diseño](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Administrar colecciones](https://helpx.adobe.com/es/digital-publishing-solution/help/creating-collections.html)
+>* [Administrar colecciones](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## Creación de una colección {#creating-a-collection}
@@ -50,7 +50,7 @@ El flujo de trabajo general para crear una colección es el siguiente:
 
 ## Importación de una nueva colección {#importing-a-new-collection}
 
-AEM El contenido existente de Mobile On-Demand se puede descargar (importar) de Mobile On-Demand a. Esto permite editar y ver el contenido local.
+El contenido existente de Mobile On-Demand se puede descargar (importar) de Mobile On-Demand a AEM. Esto permite editar y ver el contenido local.
 
 >[!NOTE]
 >
@@ -69,12 +69,12 @@ Flujo de trabajo para importar una nueva colección
 
 ## Edición de una colección {#editing-a-collection}
 
-AEM Utilice el editor integrado de arrastrar y soltar para agregar o cambiar un artículo de la lista de editores de la lista de editores de. Se pueden añadir o eliminar componentes como texto e imágenes. Se pueden insertar imágenes de DAM Assets.
+Utilice el editor de arrastrar y soltar integrado de AEM para agregar o cambiar un artículo. Se pueden añadir o eliminar componentes como texto e imágenes. Se pueden insertar imágenes de DAM Assets.
 
 Flujo de trabajo para editar una colección:
 
 1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
-1. AEM Seleccione un artículo con origen en el elemento **Administrar colecciones**.
+1. Seleccione un artículo de origen AEM del mosaico **Administrar colecciones**.
 1. Haga clic en la colección resaltada de la vista de lista para abrirla en el editor de contenido.
 1. Utilice el editor de contenido para arrastrar contenido de la colección (manuscritos, imágenes, texto, etc.).
 
@@ -106,7 +106,7 @@ Flujo de trabajo general para cargar una colección:
 
 ## Eliminación de una colección {#deleting-a-collection}
 
-AEM Esta operación elimina la colección seleccionada de Mobile On-Demand y, opcionalmente, de la instancia de la instancia de la aplicación local de la aplicación de la.
+Esta operación elimina la colección seleccionada de Mobile On-Demand y, opcionalmente, de la instancia local de AEM.
 
 Flujo de trabajo general para eliminar una colección:
 
@@ -114,7 +114,7 @@ Flujo de trabajo general para eliminar una colección:
 1. Seleccione el artículo que desea eliminar en el mosaico **Administrar colecciones**.
 1. Asegúrese de que esté seleccionado en la lista; seleccione otros para eliminarlos según sea necesario.
 1. Haga clic en **Eliminar** en la barra de acciones.
-1. AEM Seleccione si desea eliminar de la aplicación de Adobe y de Mobile On-Demand en la lista de dispositivos de la aplicación.
+1. Seleccione si desea eliminar de AEM y Mobile On-Demand.
 1. Haga clic en **Eliminar**.
 1. Su colección se eliminará de la lista.
 

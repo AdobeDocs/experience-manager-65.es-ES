@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 1%
+source-wordcount: '1206'
+ht-degree: 2%
 
 ---
 
@@ -47,13 +47,13 @@ Las plataformas mostradas se rigen por el contenido config.xml de PhoneGap:
 </widget>
 ```
 
-Cada tienda de aplicaciones de proveedores (por ejemplo, Apple App Store o Google Play Store) necesita una o más capturas de pantalla de su aplicación móvil para mostrar los detalles de su aplicación a los clientes. Estas capturas de pantalla pueden tener requisitos estrictos en cuanto a dimensiones y contenido (básicamente, deben representar realmente la aplicación). AEM Aplicaciones admite la selección y administración de estas capturas de pantalla para las plataformas admitidas y la visualización de dimensiones de puerto según lo requerido por la tienda de aplicaciones de cada proveedor.
+Cada tienda de aplicaciones de proveedores (por ejemplo, Apple App Store o Google Play Store) necesita una o más capturas de pantalla de su aplicación móvil para mostrar los detalles de su aplicación a los clientes. Estas capturas de pantalla pueden tener requisitos estrictos en cuanto a dimensiones y contenido (básicamente, deben representar realmente la aplicación). Las aplicaciones de AEM admiten la selección y administración de estas capturas de pantalla para las plataformas admitidas y la visualización de dimensiones de puerto según lo requerido por la tienda de aplicaciones de cada proveedor.
 
 >[!NOTE]
 >
->AEM AEM La aplicación Verificar el le permite enviar capturas de pantalla directamente a los detalles de la aplicación en la aplicación de la manera más sencilla y sencilla.
+>La aplicación AEM Verify le permite enviar capturas de pantalla directamente a los detalles de su aplicación en AEM.
 >
->AEM Consulte [Inicio rápido móvil para la verificación de la](/help/mobile/phonegap-mobile-quickstart.md) para obtener más información.
+>Consulte [Inicio rápido móvil para AEM Verify](/help/mobile/phonegap-mobile-quickstart.md) para obtener más detalles.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -87,15 +87,15 @@ En esta sección, defina la URL del servidor de actualización de contenido, la 
 
 #### Metadatos de plataforma {#platform-metadata}
 
-Cada plataforma definida en el archivo config.xml de PhoneGap puede contener propiedades de plataforma personalizadas. AEM Un desarrollador de debe contribuir con la estructura de contenido para capturar estas propiedades. Se puede encontrar un ejemplo proporcionado de propiedades específicas de la plataforma para iOS.
+Cada plataforma definida en el archivo config.xml de PhoneGap puede contener propiedades de plataforma personalizadas. Un desarrollador de AEM debe contribuir con la estructura de contenido para capturar estas propiedades. Se puede encontrar un ejemplo proporcionado de propiedades específicas de la plataforma para iOS.
 
 Los metadatos de todas las plataformas configuradas ahora se muestran al mismo tiempo en la ficha Avanzadas del mosaico `Manage App`.
 
 >[!NOTE]
 >
->PhoneGap no utiliza las secciones de metadatos de plataforma durante una CLI o la compilación de PhoneGap remoto. AEM En su lugar, intenta capturar metadatos para plataformas de modo que se puedan utilizar más adelante al enviarlos al almacén de aplicaciones del proveedor de destino.
+>PhoneGap no utiliza las secciones de metadatos de plataforma durante una CLI o la compilación de PhoneGap remoto. En su lugar, AEM intenta capturar metadatos para plataformas de modo que se puedan utilizar más adelante al enviarlos al almacén de aplicaciones del proveedor de destino.
 
-AEM AEM En el caso de las plataformas que no comprende el usuario, un desarrollador de aplicaciones aún puede ampliar la interfaz de usuario para capturar estos metadatos, que luego se pueden exportar y utilizar durante el proceso de envío de la aplicación.
+En el caso de las plataformas que AEM no comprende, un desarrollador de AEM puede ampliar la interfaz de usuario para capturar estos metadatos, que más adelante se pueden exportar y utilizar durante el proceso de envío de la aplicación.
 
 #### Metadatos de iOS {#ios-metadata}
 
@@ -119,7 +119,7 @@ La funcionalidad de exportación se utiliza para proporcionar una forma cómoda 
 
 ### URL de servidor de actualización de contenido {#content-update-server-url}
 
-AEM Una de las características clave de las aplicaciones de la es la capacidad de tener una aplicación móvil que solicite nuevo contenido a través de ContentSync, donde el contenido puede ser recursos HTML, páginas, vídeo, imágenes, texto, y más. Después de que un autor de contenido haya actualizado el contenido y luego lo publique, el servidor pone la actualización de contenido a disposición de la aplicación móvil para que la descargue.
+Una de las características clave de las aplicaciones de AEM es la capacidad de que una aplicación móvil solicite nuevo contenido a través de ContentSync, donde el contenido puede ser recursos HTML, páginas, vídeo, imágenes, texto y más. Después de que un autor de contenido haya actualizado el contenido y luego lo publique, el servidor pone la actualización de contenido a disposición de la aplicación móvil para que la descargue.
 
 La propiedad URL del servidor de actualización de contenido es la dirección URL que debe señalar a una instancia de publicación; directamente o a través de Dispatcher o CDN. El formato de la dirección URL es simplemente el siguiente:
 
@@ -127,7 +127,7 @@ La propiedad URL del servidor de actualización de contenido es la dirección UR
 
 >[!NOTE]
 >
->AEM Si la instancia del servidor de creación se está replicando en muchas instancias del servidor de publicación (arquitectura común para los servidores de publicación), cada servidor de publicación tendrá el mismo contenido de actualización. El motivo es que la actualización se basa en el autor y se replica en todas las instancias de publicación. Básicamente, el equilibrio de carga y la conmutación por error son totalmente compatibles.
+>Si la instancia del servidor de creación se está replicando en muchas instancias del servidor de publicación (arquitectura común para AEM), cada servidor de publicación tendrá el mismo contenido de actualización. El motivo es que la actualización se basa en el autor y se replica en todas las instancias de publicación. Básicamente, el equilibrio de carga y la conmutación por error son totalmente compatibles.
 
 ### La pestaña Plugins {#the-plugins-tab}
 
@@ -159,11 +159,11 @@ Una vez que haya aprendido a administrar el mosaico de la aplicación en el pane
 * [Definiciones de aplicación](/help/mobile/phonegap-app-definitions.md)
 * [Crear una aplicación nueva mediante el Asistente para crear aplicación](/help/mobile/phonegap-create-new-app.md)
 * [Importar una aplicación híbrida existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
-* [Content Services](/help/mobile/develop-content-as-a-service.md)
+* [Servicios de contenido](/help/mobile/develop-content-as-a-service.md)
 
 ### Otros recursos {#additional-resources}
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [Desarrollo para Adobe PhoneGap AEM Enterprise con](/help/mobile/developing-in-phonegap.md)
-* [Administración de contenido para Adobe PhoneGap AEM Enterprise con el servicio de administración de](/help/mobile/administer-phonegap.md)
+* [Desarrollo para Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
+* [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
