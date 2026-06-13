@@ -304,7 +304,7 @@ En AEM, los datos binarios se pueden almacenar de forma independiente de los nod
 
 >[!CAUTION]
 >
->El micronúcleo de la base de datos relacional tiene compatibilidad restringida. Póngase en contacto con el [Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support) antes de usar este tipo de microkernel.
+>El micronúcleo de la base de datos relacional tiene compatibilidad restringida. Póngase en contacto con el [Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support) antes de usar este tipo de microkernel.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -316,7 +316,7 @@ Para obtener más información sobre las opciones de configuración disponibles,
 
 >[!NOTE]
 >
->Adobe recomienda elegir la opción de implementar AEM en Azure o Amazon Web Service (AWS) con Adobe Managed Services. Los clientes se benefician de un equipo que tiene la experiencia y las habilidades de implementar y operar AEM en estos entornos de computación en la nube. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+>Adobe recomienda elegir la opción de implementar AEM en Azure o Amazon Web Service (AWS) con Adobe Managed Services. Los clientes se benefician de un equipo que tiene la experiencia y las habilidades de implementar y operar AEM en estos entornos de computación en la nube. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/es/products/experience-manager/managed-services.html?aemClk=t).
 >
 >Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera de Adobe Managed Services, Adobe recomienda trabajar directamente con el proveedor de la nube. O trabaje con uno de los socios de Adobe que admita la implementación de AEM en el entorno de nube que elija. El proveedor o socio de nube seleccionado es responsable de las especificaciones de tamaño, el diseño y la implementación de la arquitectura que admiten para satisfacer los requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
 >
