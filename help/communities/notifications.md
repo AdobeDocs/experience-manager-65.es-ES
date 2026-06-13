@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '610'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ A partir de las comunidades [FP1](/help/communities/deploy-communities.md#latest
 
 Los canales futuros son móviles y de escritorio.
 
-### Requisitos  {#requirements}
+### Requisitos {#requirements}
 
 **Configurar correo electrónico**
 
@@ -104,7 +104,7 @@ Puede ser activado por un miembro, pero aún depende de que se configure el corr
 
 ![notificaciones3](assets/notifications3.png)
 
-## Visualización de notificaciones  {#viewing-notifications}
+## Visualización de notificaciones {#viewing-notifications}
 
 ### Notificaciones web {#web-notifications}
 

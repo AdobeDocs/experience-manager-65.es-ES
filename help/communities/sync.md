@@ -12,8 +12,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2403'
-ht-degree: 0%
+source-wordcount: '2417'
+ht-degree: 1%
 
 ---
 
@@ -21,23 +21,23 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-En las comunidades de Adobe Experience Manager AEM (), desde el entorno de Publish (según los permisos que estén configurados), *los visitantes del sitio* pueden convertirse en *miembros*, crear *grupos de usuarios* y editar su *perfil de miembro*
+En las comunidades de Adobe Experience Manager (AEM), desde el entorno de publicación (según los permisos que estén configurados), *los visitantes del sitio* pueden convertirse en *miembros*, crear *grupos de usuarios* y editar su *perfil de miembro*
 
 *Los datos de usuario* hacen referencia a *usuarios*, *perfiles de usuario* y *grupos de usuarios*.
 
-*Los miembros* se refieren a *usuarios* registrados en el entorno de Publish, a diferencia de los usuarios registrados en el entorno de autor.
+*Los miembros* se refieren a *usuarios* registrados en el entorno de publicación, a diferencia de los usuarios registrados en el entorno de creación.
 
 Para obtener más información acerca de los datos de usuario, visite [Administrar usuarios y grupos de usuarios](/help/communities/users.md).
 
-## Sincronizar usuarios en una granja de Publish {#synchronizing-users-across-a-publish-farm}
+## Sincronizar usuarios en una granja de servidores de publicación {#synchronizing-users-across-a-publish-farm}
 
-Por diseño, los datos de usuario creados en el entorno de Publish no aparecen en el entorno de creación.
+Por diseño, los datos de usuario creados en el entorno de publicación no aparecen en el entorno de creación.
 
-La mayoría de los datos de usuario creados en el entorno de creación están pensados para permanecer en el entorno de creación y no se sincronizan ni replican en las instancias de Publish.
+La mayoría de los datos de usuario creados en el entorno de creación están pensados para permanecer en él y no se sincronizan ni replican en las instancias de publicación.
 
-Si [topology](/help/communities/topologies.md) es una [granja de servidores de publicación](/help/sites-deploying/recommended-deploys.md#tarmk-farm), el registro y las modificaciones realizadas en una instancia de Publish deben sincronizarse con otras instancias de Publish. Los miembros deben poder iniciar sesión y ver sus datos en cualquier nodo de Publish.
+Si [topology](/help/communities/topologies.md) es una [granja de servidores de publicación](/help/sites-deploying/recommended-deploys.md#tarmk-farm), el registro y las modificaciones realizadas en una instancia de publicación deben sincronizarse con otras instancias de publicación. Los miembros deben poder iniciar sesión y ver sus datos en cualquier nodo de publicación.
 
-Cuando la sincronización de usuarios está habilitada, los datos de usuario se sincronizan automáticamente en las instancias de Publish de la granja.
+Cuando la sincronización de usuarios está habilitada, los datos de usuario se sincronizan automáticamente en las instancias de publicación de la granja.
 
 ### Instrucciones de configuración de sincronización de usuarios {#user-sync-setup-instructions}
 
@@ -57,21 +57,21 @@ Para obtener instrucciones detalladas paso a paso sobre cómo habilitar la sincr
 
 ## ¿Qué sucede cuando...? {#what-happens-when}
 
-### Sitio de Publish desde la consola Sitios de Communities {#publish-site-from-communities-sites-console}
+### Publicar sitio desde la consola Sitios de Communities {#publish-site-from-communities-sites-console}
 
 En Autor, cuando se publica un sitio de la comunidad desde la consola [Sitios de comunidades](/help/communities/sites-console.md), el efecto es [replicar](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) las páginas asociadas y Sling distribuye los grupos de usuarios de la comunidad creados dinámicamente, incluida su pertenencia.
 
-### Se crea el usuario o se edita el perfil en Publish {#user-is-created-or-edits-profile-on-publish}
+### El usuario se ha creado o edita el perfil en la publicación {#user-is-created-or-edits-profile-on-publish}
 
-Por diseño, los usuarios y perfiles creados en el entorno de Publish (como por ejemplo, por autorregistro, inicio de sesión social o autenticación LDAP) no aparecen en el entorno de creación.
+Por diseño, los usuarios y perfiles creados en el entorno de publicación (como por ejemplo, por autorregistro, inicio de sesión en redes sociales o autenticación LDAP) no aparecen en el entorno de creación.
 
 Si la topología es una [granja de servidores de publicación](/help/communities/topologies.md) y la sincronización de usuarios se ha configurado correctamente, el *usuario* y el *perfil de usuario* se sincronizan en toda la granja de servidores de publicación mediante la distribución Sling.
 
-### Se crea un nuevo grupo de comunidad en Publish {#new-community-group-is-created-on-publish}
+### Se crea un nuevo grupo de comunidad en Publicar {#new-community-group-is-created-on-publish}
 
-Aunque se inicia desde una instancia de Publish, la creación de grupos de comunidad, que genera nuevas páginas de sitio y un nuevo grupo de usuarios, en realidad se produce en la instancia de autor.
+Aunque se inicia desde una instancia de publicación, la creación del grupo de comunidad, que genera nuevas páginas de sitio y un nuevo grupo de usuarios, en realidad se produce en la instancia de autor.
 
-Como parte del proceso, las nuevas páginas del sitio se replican en todas las instancias de Publish. El grupo de usuarios de la comunidad creado dinámicamente y sus miembros son Sling distribuido a todas las instancias de Publish.
+Como parte del proceso, las nuevas páginas del sitio se replican en todas las instancias de publicación. El grupo de usuarios de la comunidad creado dinámicamente y sus miembros son Sling distribuido a todas las instancias de publicación.
 
 ### Los usuarios o grupos de usuarios se crean mediante la consola de seguridad {#users-or-user-groups-are-created-using-security-console}
 
@@ -97,7 +97,7 @@ La sincronización de usuarios se basa en el entorno de creación para administr
 
 1. Asegúrese de que se ha instalado el código más reciente:
 
-   * AEM [Actualizaciones de la plataforma de](https://helpx.adobe.com/es/experience-manager/kb/aem62-available-hotfixes.html)
+   * [Actualizaciones de la plataforma AEM](https://helpx.adobe.com/es/experience-manager/kb/aem62-available-hotfixes.html)
    * [Actualizaciones de AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
 Las siguientes configuraciones son necesarias para habilitar la sincronización de usuarios en AEM Communities. Asegúrese de que estas configuraciones sean correctas para evitar que la distribución de contenido de Sling falle.
@@ -114,7 +114,7 @@ La instancia de autor envía un ping al extremo de exportador de los editores. C
 
 Para configurar los agentes de sincronización de Apache Sling:
 
-1. AEM Inicie sesión con privilegios de administrador en la instancia de autor de la.
+1. Inicie sesión con privilegios de administrador en la instancia de autor de AEM.
 1. Acceda a la [consola web](/help/sites-deploying/configuring-osgi.md). Por ejemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Busque **Agente de distribución Apache Sling - Fábrica de agentes de sincronización**.
 
@@ -130,7 +130,7 @@ Para configurar los agentes de sincronización de Apache Sling:
 
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Adobe Granite Distribution - Proveedor secreto de transporte con contraseña cifrada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Adobe Granite Distribution - Proveedor de secreto de transporte con contraseña cifrada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Permite al autor identificar al usuario autorizado, como si tuviera permiso para sincronizar datos de usuario del autor a la publicación.
 
@@ -140,11 +140,11 @@ Siempre que se van a instalar datos en los editores o recuperarlos de ellos, el 
 
 Para conectar el autor con los editores mediante un usuario autorizado:
 
-1. AEM Inicie sesión con privilegios de administrador en la instancia de autor de la.
+1. Inicie sesión con privilegios de administrador en la instancia de autor de AEM.
 1. Acceda a la [consola web](/help/sites-deploying/configuring-osgi.md).
 
    Por ejemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Localice **Adobe Granite Distribution - Proveedor de secreto de transporte con contraseña cifrada.**
+1. Busque **Adobe Granite Distribution - Proveedor de secreto de transporte con contraseña cifrada.**
 1. Seleccione la configuración existente para abrirla y editarla (icono de lápiz).
 
    Verificar propiedad **socialpubsync** - **publishUser.**
@@ -180,7 +180,7 @@ Para configurar los datos (rutas de nodos) para sincronizar:
 ### Adobe Granite Distribution - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
 
 Esta configuración sincroniza la pertenencia a grupos entre editores.
-Si al cambiar la pertenencia de un grupo en un editor no se actualiza la pertenencia a otros editores, asegúrese de que **ref :members** se agrega a **nombres de propiedades buscadas**.
+Si al cambiar la pertenencia de un grupo en un editor no se actualiza la pertenencia a otros editores, asegúrese de que **ref:members** se agrega a **nombres de propiedades que se han visto**.
 
 Para garantizar la sincronización de miembros:
 
@@ -207,7 +207,7 @@ El autor sondea a los editores cada 30 segundos (valor predeterminado). Si hay a
 
 Para modificar el intervalo de sondeo:
 
-1. AEM Inicie sesión con privilegios de administrador en la instancia de autor de la.
+1. Inicie sesión con privilegios de administrador en la instancia de autor de AEM.
 1. Acceda a la [consola web](/help/sites-deploying/configuring-osgi.md), por ejemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 1. Busque el **Déclencheur de distribución de Apache Sling - Fábrica de Déclencheur programados**
 
@@ -230,7 +230,7 @@ Para los problemas de distribución de Sling en los que hay una discrepancia en 
 
 Para sincronizar suscripciones, seguimientos y notificaciones
 
-AEM En cada instancia de publicación de la:
+En cada instancia de publicación de AEM:
 
 1. Iniciar sesión con privilegios de administrador.
 1. Acceda a la [consola web](/help/sites-deploying/configuring-osgi.md). Por ejemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
@@ -275,20 +275,20 @@ AEM En cada instancia de publicación de la:
 
 ### ID único de Sling {#unique-sling-id}
 
-AEM La instancia de autor de utiliza el ID de Sling para identificar de dónde provienen los datos y a qué editores debe (o no debe) enviar el paquete de vuelta.
+La instancia de autor de AEM utiliza el ID de Sling para identificar de dónde provienen los datos y a qué editores debe (o no debe) enviar el paquete de vuelta.
 
 Asegúrese de que todos los editores de un conjunto de servidores de publicación tengan un ID de Sling único. Si el ID de Sling es el mismo para varias instancias de publicación en un conjunto de servidores de publicación, la sincronización de usuarios falla. Como el autor no sabe de dónde obtener el paquete ni dónde instalarlo.
 
-Para garantizar un ID de Sling único de los editores del conjunto de servidores de publicación, en cada instancia de Publish:
+Para garantizar un ID de Sling único de los editores del conjunto de servidores de publicación, en cada instancia de publicación:
 
-1. Vaya a [https://_host:port_/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings).
+1. Vaya a [https://_host :port_/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings).
 1. Compruebe el valor de **Sling ID**.
 
    ![slingid](assets/slingid.png)
 
-   Si el ID de Sling de una instancia de Publish coincide con el ID de Sling de cualquier otra instancia de Publish, haga lo siguiente:
+   Si el ID de Sling de una instancia de publicación coincide con el ID de Sling de cualquier otra instancia de publicación, haga lo siguiente:
 
-1. Detenga una de las instancias de Publish que tenga un ID de Sling coincidente.
+1. Detenga una de las instancias de publicación que tenga un ID de Sling coincidente.
 1. En el directorio `crx-quickstart/launchpad/felix`, busque y elimine el archivo de nombre *sling.id.file.*
 
    Por ejemplo, en un sistema Linux:
@@ -302,7 +302,7 @@ Para garantizar un ID de Sling único de los editores del conjunto de servidores
 1. Inicie la instancia de Publish. Al inicio se le asigna un nuevo ID de Sling.
 1. Valide que **Sling ID** sea ahora único.
 
-Repita estos pasos hasta que todas las instancias de Publish tengan un ID de Sling único.
+Repita estos pasos hasta que todas las instancias de publicación tengan un ID de Sling único.
 
 ### Generador de paquetes Vault Factory {#vault-package-builder-factory}
 
@@ -311,7 +311,7 @@ En `/home/users`, se crea un nodo `*/rep:cache`. Es una caché que se utiliza pa
 
 La sincronización de usuarios se puede detener si se sincronizan `rep :cache` nodos entre editores.
 
-AEM Para asegurarse de que las actualizaciones se sincronizan correctamente entre los editores, en cada instancia de Publish de la:
+Para asegurarse de que las actualizaciones se sincronizan correctamente entre los editores, en cada instancia de publicación de AEM:
 
 1. Acceder a la [consola web](/help/sites-deploying/configuring-osgi.md)
 
@@ -325,7 +325,7 @@ AEM Para asegurarse de que las actualizaciones se sincronizan correctamente entr
    * `/home/users|-.*/.tokens`
    * `/home/users|-.*/rep:cache`
 1. Gestión de políticas
-   * Para sobrescribir los nodos de rep :policy existentes con los nuevos, agregue un tercer filtro de paquete: `/home/users|+.*/rep:policy`
+   * Para sobrescribir los nodos de la rep :policy existentes con los nuevos, agregue un tercer filtro de paquete: `/home/users|+.*/rep:policy`
    * Para evitar que se distribuyan directivas, establezca: `Acl Handling: IGNORE`
 
    ![Fábrica del generador de paquetes Vault](assets/vault-package-builder-factory.png)
@@ -339,25 +339,25 @@ Si la distribución de Sling falla, intente los siguientes pasos de depuración:
    Asegúrese de que no se agregan ni editan varias configuraciones y, en su lugar, se deben editar las configuraciones predeterminadas existentes.
 1. **Comprobar configuraciones**
 
-   AEM Asegúrese de que todas las [configuraciones](/help/communities/sync.md#bestpractices) estén correctamente configuradas en su instancia de autor de la, tal como se menciona en las [prácticas recomendadas](/help/communities/sync.md#main-pars-header-863110628).
+   Asegúrese de que todas las [configuraciones](/help/communities/sync.md#bestpractices) estén correctamente configuradas en la instancia de autor de AEM, tal como se menciona en las [prácticas recomendadas](/help/communities/sync.md#main-pars-header-863110628).
 
 1. **Comprobar permisos de usuario autorizados**
 
-   Si los paquetes no están instalados correctamente, compruebe que el [usuario autorizado](/help/sites-administering/sync.md#createauthuser) creado en la primera instancia de Publish tenga las ACL correctas.
+   Si los paquetes no están instalados correctamente, compruebe que el [usuario autorizado](/help/sites-administering/sync.md#createauthuser) creado en la primera instancia de publicación tenga las ACL correctas.
 
-   Para validar esto, en lugar de [crear usuario autorizado](/help/sites-administering/sync.md#createauthuser), cambie la configuración de [Adobe Granite Distribution - Encrypted Password Transport Secret Provider](/help/sites-administering/sync.md#adobegraniteencpasswrd) en la instancia de autor para usar las credenciales de usuario administrador. Ahora intente instalar los paquetes de nuevo. Si la sincronización de usuarios funciona correctamente con las credenciales del administrador, significa que el usuario de publicación creado no tenía las ACL adecuadas.
+   Para validarlo, en lugar de [crear un usuario autorizado](/help/sites-administering/sync.md#createauthuser), cambie la configuración de [Adobe Granite Distribution - Encrypted Password Transport Secret Provider](/help/sites-administering/sync.md#adobegraniteencpasswrd) en la instancia de autor para que use las credenciales del usuario administrador. Ahora intente instalar los paquetes de nuevo. Si la sincronización de usuarios funciona correctamente con las credenciales del administrador, significa que el usuario de publicación creado no tenía las ACL adecuadas.
 
 1. **Comprobar la configuración de fábrica de Diff Observer**
 
-   Si solo los nodos específicos no se sincronizan en el conjunto de servidores de publicación (por ejemplo, los miembros del grupo no se sincronizan), asegúrese de que la configuración de [Adobe Granite Distribution - Diff Observer Factory](/help/sites-administering/sync.md#diffobserver) esté habilitada y de que **rep: members** se establezcan en **nombres de propiedades buscadas**.
+   Si solo los nodos específicos no se sincronizan en el conjunto de servidores de publicación (por ejemplo, los miembros del grupo no se sincronizan), asegúrese de que la configuración de [Adobe Granite Distribution - Diff Observer Factory](/help/sites-administering/sync.md#diffobserver) esté habilitada y de que **rep: members** se establezca en **nombres de propiedades buscadas**.
 
-1. **Compruebe la configuración del Receptor de sincronización de usuarios de AEM Communities.** Si los usuarios creados están sincronizados, pero las suscripciones y las siguientes no funcionan, asegúrese de que la configuración del Receptor de sincronización de usuarios de AEM Communities tenga:
+1. **Comprobar la configuración del Receptor de sincronización de usuarios de AEM Communities.** Si los usuarios creados están sincronizados, pero las suscripciones y las siguientes no funcionan, asegúrese de que la configuración del Receptor de sincronización de usuarios de AEM Communities tenga:
 
    * Tipos de nodos- establecidos en **rep:User, nt:unstructured**, **nt:resource**, **rep:ACL**, **sling:Folder** y **sling:OrderedFolder**.
-   * Nodos ignorables- establecidos en **.tokens**, **system** y **rep :cache**.
+   * Nodos ignorables- establecidos en **.tokens**, **sistema** y **rep:cache**.
    * Carpetas distribuidas: establezca las carpetas que desea distribuir.
 
-1. **Registros de comprobación generados al crear usuarios en la instancia de Publish**
+1. **Registros de comprobación generados al crear el usuario en la instancia de publicación**
 
    Si las configuraciones anteriores están correctamente configuradas pero la sincronización de usuarios no funciona, compruebe los registros generados al crear el usuario.
 
@@ -378,7 +378,7 @@ Si la distribución de Sling falla, intente los siguientes pasos de depuración:
 Para depurar:
 
 1. Deshabilite la sincronización de usuarios:
-1. AEM En la instancia de autor de, inicie sesión con privilegios de administrador.
+1. En la instancia de autor de AEM, inicie sesión con privilegios de administrador.
 
    1. Acceda a la [consola web](/help/sites-deploying/configuring-osgi.md). Por ejemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
    1. Busque la configuración **Agente de distribución Apache Sling: fábrica de agentes de sincronización**.
@@ -391,6 +391,6 @@ Para depurar:
 1. Vaya a un editor y cree un usuario en él. Como resultado, se crean eventos.
 1. Compruebe el [orden de los registros](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities) creados al crear el usuario.
 1. Compruebe si se ha creado un paquete **vlt** en **/var/sling/distribution/packages/socialpubsync-vlt/data**.
-1. AEM Ahora, habilite la sincronización de usuarios en la instancia de autor de la.
+1. Ahora, habilite la sincronización de usuarios en la instancia de autor de AEM.
 1. En el publicador, cambie los extremos del exportador o del importador en **Apache Sling Distribution Agent - Sync Agents Factory**.
 Podemos descargar y extraer datos de paquetes para comprobar todas las propiedades que se insertan en otros editores y qué datos se pierden.

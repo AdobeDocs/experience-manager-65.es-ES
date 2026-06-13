@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 1%
+source-wordcount: '903'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Las funciones de AEM Communities suelen requerir que los visitantes del sitio se registren e inicien sesión antes de participar en una comunidad en el entorno de publicación. Su registro de usuario solo necesita existir en el entorno de publicación y comúnmente se les denomina *miembros* para distinguirlos de *usuarios* registrados en el entorno de creación.
 
-### Miembros (usuarios) en Publish {#members-users-on-publish}
+### Miembros (usuarios) al publicar {#members-users-on-publish}
 
 Mediante las consolas Miembros de comunidades y grupos, los miembros y grupos de miembros registrados en el entorno *publish* se pueden crear y administrar desde el entorno *author*. Esto solo es posible cuando el [servicio de túnel](deploy-communities.md#tunnel-service-on-author) está habilitado.
 
@@ -87,7 +87,7 @@ La mayoría de los campos son campos opcionales que el miembro puede rellenar po
 
 (*Obligatorio*) El identificador autorizado es el identificador de inicio de sesión del miembro.
 De forma predeterminada, el ID se establece en el valor de la dirección de correo electrónico requerida.
-*Una vez creado, es posible que el identificador no se modifique*.
+*Una vez creada, no se puede modificar la ID*.
 
 * **[!UICONTROL Dirección de correo electrónico]**
 
@@ -121,7 +121,7 @@ En Configuración de cuenta, un administrador de la comunidad puede hacer lo sig
    * Prohibido
 Un miembro no puede iniciar sesión, lo que le impide ver páginas o participar en actividades que requieran iniciar sesión. Todavía pueden visitar de forma anónima un sitio de la comunidad abierto.
 
-   * No prohibido
+   * Permitido
 Un miembro tiene acceso completo al sitio de la comunidad.
 
   El valor predeterminado es `Not Banned`.

@@ -13,7 +13,7 @@ feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6444'
 ht-degree: 4%
 
 ---
@@ -148,7 +148,7 @@ A menos que tenga una disposición especial para utilizar el servidor de su prop
    * **[!UICONTROL Modo de sincronización de Dynamic Media]**
       * **[!UICONTROL Habilitada de forma predeterminada]**: la configuración se aplica a todas las carpetas de forma predeterminada a menos que marque una carpeta específicamente para su exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Deshabilitado de forma predeterminada]**: la configuración no se aplicará a ninguna carpeta hasta que marque explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.
-Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]**, en la lista desplegable **[!UICONTROL Modo de sincronización de Dynamic Media]**, elija una de las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**[!UICONTROL Sincronizar todo el contenido]**&#x200B;anteriormente.* Consulte también [Trabajo con publicación selectiva en el nivel de carpeta en Dynamic Media](/help/assets/selective-publishing.md).
+Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]**, en la lista desplegable **[!UICONTROL Modo de sincronización de Dynamic Media]**, elija una de las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si ha seleccionado **[!UICONTROL Sincronizar todo el contenido]**&#x200B;anteriormente.* Vea también [Trabajar con publicación selectiva a nivel de carpeta en Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Heredado]**: no hay ningún valor de sincronización explícito en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de la nube. Estado detallado de los programas heredados mediante información sobre herramientas.
          * **[!UICONTROL Habilitar para subcarpetas]**: incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.
          * **[!UICONTROL Deshabilitado para subcarpetas]** - Excluye todo en este subárbol de la sincronización con Dynamic Media.
@@ -300,7 +300,7 @@ Si tiene intención de utilizar esta función, tenga en cuenta los siguientes re
 1. En la ficha **[!UICONTROL Propiedades]**, en la columna **[!UICONTROL Nombre]**, busque `sizeLimit`.
 1. A la derecha del nombre `sizeLimit`, en la columna **[!UICONTROL Valor]**, haga doble clic en el campo de valor.
 1. Introduzca el valor apropiado en bytes para poder aumentar el límite de tamaño al tamaño máximo de carga deseado. Por ejemplo, para aumentar el límite de tamaño del recurso de carga a 10 GB, escriba `10737418240` en el campo de valor.
-Puede escribir un valor de hasta 15 GB (`2013265920` bytes). En este caso, los recursos cargados que tengan más de 15 GB no se cargan.
+Puede introducir un valor de hasta 15 GB (`2013265920` bytes). En este caso, los recursos cargados que tengan más de 15 GB no se cargan.
 
    ![Valor límite de tamaño](/help/assets/assets-dm/uploadassets15gb_c.png)
 

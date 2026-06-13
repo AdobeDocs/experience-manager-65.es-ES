@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 0%
+source-wordcount: '1870'
+ht-degree: 1%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-El servicio Forms puede calcular los valores que un usuario introduce en un formulario y mostrar los resultados. Para calcular los datos del formulario, debe realizar dos tareas. En primer lugar, se crea un script de diseño de formulario que calcula los datos del formulario. Un diseño de formulario admite tres tipos de scripts. Un tipo de script se ejecuta en el cliente, otro se ejecuta en el servidor y el tercer tipo se ejecuta tanto en el servidor como en el cliente. El tipo de script que se describe en este tema se ejecuta en el servidor. Los cálculos del lado del servidor son compatibles con las transformaciones de HTML, PDF y Guía de formularios (obsoletas).
+El servicio Forms puede calcular los valores que un usuario introduce en un formulario y mostrar los resultados. Para calcular los datos del formulario, debe realizar dos tareas. En primer lugar, se crea un script de diseño de formulario que calcula los datos del formulario. Un diseño de formulario admite tres tipos de scripts. Un tipo de script se ejecuta en el cliente, otro se ejecuta en el servidor y el tercer tipo se ejecuta tanto en el servidor como en el cliente. El tipo de script que se describe en este tema se ejecuta en el servidor. Los cálculos del lado del servidor son compatibles con las transformaciones de HTML, PDF y la Guía de formularios (obsoletas).
 
 Como parte del proceso de diseño del formulario, puede utilizar cálculos y scripts para proporcionar una experiencia de usuario más rica. Los cálculos y las secuencias de comandos se pueden agregar a la mayoría de los campos y objetos de formulario. Cree una secuencia de comandos de diseño de formulario para realizar operaciones de cálculo con los datos que un usuario introduce en un formulario interactivo.
 
 El usuario introduce valores en el formulario y hace clic en el botón Calcular para ver los resultados. El siguiente proceso describe una aplicación de ejemplo que permite a un usuario calcular datos:
 
-* El usuario tiene acceso a una página de HTML denominada StartLoan.html que actúa como página de inicio de la aplicación web. Esta página invoca un servlet Java denominado `GetLoanForm`.
+* El usuario accede a una página de HTML denominada StartLoan.html que actúa como página de inicio de la aplicación web. Esta página invoca un servlet Java denominado `GetLoanForm`.
 * El servlet `GetLoanForm` procesa un formulario de préstamo. Este formulario contiene un script, campos interactivos, un botón de cálculo y un botón de envío.
 * El usuario introduce valores en los campos del formulario y hace clic en el botón Calcular. El formulario se enviará al servlet Java `CalculateData` donde se ejecutará el script. El formulario se devuelve al usuario con los resultados del cálculo mostrados en el formulario.
 * El usuario continúa introduciendo y calculando valores hasta que se muestra un resultado satisfactorio. Cuando esté satisfecho, el usuario hace clic en el botón Enviar para procesar el formulario. El formulario se enviará a otro servlet Java denominado `ProcessForm` responsable de recuperar los datos enviados. (Consulte [Gestión de Forms enviados](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
@@ -49,7 +49,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>El servlet Java <code>GetLoanForm</code> se invoca desde la página de inicio del HTML. </p></td>
+   <td><p>El servlet Java <code>GetLoanForm</code> se invoca desde la página de inicio de HTML. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
@@ -76,7 +76,7 @@ Para ilustrar el uso de una secuencia de comandos de diseño de formulario, esta
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-**A.** Un campo denominado NumericField1 **B.** Un campo denominado NumericField2 **C.** Un campo denominado NumericField3
+**A.** Campo denominado NumericField1 **B.** Campo denominado NumericField2 **C.** Campo denominado NumericField3
 
 La sintaxis de la secuencia de comandos en este diseño de formulario es la siguiente:
 
@@ -127,8 +127,8 @@ Después de comprobar que el estado de procesamiento asociado a un formulario en
 [Calcular datos de formulario mediante la API de Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Calcular datos de formulario mediante la API de servicio web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[Inicios rápidos de la API de servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Procesar PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Inicio rápido de la API del servicio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Procesamiento de PDF forms interactivo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Creación de aplicaciones web que procesan Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcular datos de formulario mediante la API de Java {#calculate-form-data-using-the-java-api}
@@ -150,7 +150,7 @@ Calcular datos de formulario mediante la API de Forms (Java):
    * Invoque el método `processFormSubmission` del objeto `FormsServiceClient` y pase los siguientes valores:
 
       * El objeto `com.adobe.idp.Document` que contiene los datos del formulario.
-      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que se va a administrar especificando uno o varios valores para la variable de entorno `CONTENT_TYPE`. Por ejemplo, para administrar datos XML y de PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * Un valor de cadena que especifica variables de entorno, incluidos todos los encabezados HTTP relevantes. Especifique el tipo de contenido que se va a administrar especificando uno o varios valores para la variable de entorno `CONTENT_TYPE`. Por ejemplo, para administrar datos XML y PDF, especifique el siguiente valor de cadena para este parámetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Valor de cadena que especifica el valor del encabezado `HTTP_USER_AGENT`; por ejemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Objeto `RenderOptionsSpec` que almacena opciones en tiempo de ejecución.
 
@@ -220,4 +220,4 @@ Calcular datos de formulario mediante la API de Forms (servicio web):
    * Invoque el método `write` del objeto `javax.servlet.http.HttpServletResponse` para enviar la secuencia de datos de formulario al explorador web del cliente. Pase la matriz de bytes al método `write`.
 
 **Ver también**
-[Invocar AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocando AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

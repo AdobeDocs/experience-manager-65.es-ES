@@ -13,7 +13,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2856'
+source-wordcount: '2911'
 ht-degree: 2%
 
 ---
@@ -181,8 +181,7 @@ Las puntuaciones se almacenan en SRP.
 >
 >Un ejemplo de lo que *no* debe hacer:
 >
->/libs/settings/community/scoring/rules/site1/forums-scoring
->/libs/settings/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### Subreglas de puntuación {#scoring-sub-rules}
 
@@ -290,7 +289,7 @@ En la versión se incluyen dos reglas de puntuación para la [Función Foro](/he
 
 **Notas:**
 
-* Los nodos `rules` y `sub-rules` son de tipo cq:Page.
+* Los nodos `rules` y `sub-rules` son del tipo cq:Page.
 
 * `subRules` es un atributo de tipo Cadena[] en el nodo `jcr:content` de la regla.
 
@@ -332,7 +331,7 @@ La propiedad `scoringRules` de una regla de distintivos simplemente restringe qu
 
 >[!NOTE]
 >
->AEM Práctica recomendada: crear imágenes de distintivo exclusivas de cada sitio de.
+>Práctica recomendada: crear imágenes de distintivo exclusivas de cada sitio de AEM.
 
 ![configuración-regla-distintivo](assets/badging-rule-configuration.png)
 
@@ -349,9 +348,9 @@ La propiedad `scoringRules` de una regla de distintivos simplemente restringe qu
    <td><em>(obligatorio)</em> Una cadena de varios valores con el formato 'número|ruta'
     <ul>
      <li>number = score</li>
-     <li>| = el gráfico de líneas verticales (U+007C)</li>
+     <li>| = gráfico de línea vertical (U+007C)</li>
      <li>ruta = ruta completa al recurso de imagen de distintivo</li>
-    </ul> Las cadenas deben ordenarse de modo que los números aumenten de valor y no aparezca ningún espacio en blanco entre el número y la ruta.<br /> Entrada de ejemplo:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> Las cadenas deben ordenarse de forma que los números aumenten de valor y no aparezca ningún espacio en blanco entre el número y la ruta de acceso.<br /> Ejemplo de entrada :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -396,7 +395,7 @@ cURL -i -X POST -H *encabezado* -u *inicio de sesión* -F *operación* -F *disti
 *header* = &quot;Accept:application/json&quot;
 encabezado personalizado para pasar al servidor (obligatorio)
 
-*inicio de sesión* = id. de administrador:contraseña
+*inicio de sesión* = id. de administrador:password
 por ejemplo, admin:admin
 
 *operación* = &quot;:operation=social:assignBadge&quot; O &quot;:operation=social:deleteBadge&quot;
@@ -455,17 +454,17 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | el miembro crea un evento de calendario |
+| PUBLICAR | el miembro crea un evento de calendario |
 | AÑADIR | comentarios de miembros sobre un evento de calendario |
 | ACTUALIZAR | el evento o comentario del calendario del miembro se ha editado |
 | ELIMINAR | se elimina el evento o comentario del calendario del miembro |
 
-**[Componente Comentarios](/help/communities/comments.md)**
+Componente **[Comentarios](/help/communities/comments.md)**
 SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | el miembro crea un comentario |
+| PUBLICAR | el miembro crea un comentario |
 | AÑADIR | el miembro responde al comentario |
 | ACTUALIZAR | el comentario del miembro se ha editado |
 | ELIMINAR | se ha eliminado el comentario del miembro |
@@ -475,7 +474,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | el miembro crea una carpeta |
+| PUBLICAR | el miembro crea una carpeta |
 | ADJUNTAR | el miembro carga un archivo |
 | ACTUALIZAR | el miembro actualiza una carpeta o archivo |
 | ELIMINAR | el miembro elimina una carpeta o archivo |
@@ -485,7 +484,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | miembro crea tema de foro |
+| PUBLICAR | miembro crea tema de foro |
 | AÑADIR | miembro responde al tema del foro |
 | ACTUALIZAR | se edita el tema del foro o la respuesta del miembro |
 | ELIMINAR | se elimina el tema o la respuesta del foro del miembro |
@@ -495,7 +494,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | el miembro crea un artículo de blog |
+| PUBLICAR | el miembro crea un artículo de blog |
 | AÑADIR | comentarios de los miembros sobre un artículo de blog |
 | ACTUALIZAR | se edita el artículo o comentario del blog del miembro |
 | ELIMINAR | se elimina el artículo o comentario del blog del miembro |
@@ -505,7 +504,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | el miembro crea una pregunta de control de calidad |
+| PUBLICAR | el miembro crea una pregunta de control de calidad |
 | AÑADIR | el miembro crea una respuesta de control de calidad |
 | ACTUALIZAR | se ha editado la pregunta o respuesta de control de calidad del miembro |
 | SELECT | la respuesta del miembro está seleccionada |
@@ -517,7 +516,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | el miembro crea una revisión |
+| PUBLICAR | el miembro crea una revisión |
 | ACTUALIZAR | se ha editado la revisión del miembro |
 | ELIMINAR | se ha eliminado la revisión del miembro |
 
@@ -579,7 +578,7 @@ Si la función no funciona como se espera, asegúrese de que los datos se hayan 
 
 Es posible probar rápidamente la puntuación y la insignia usando el sitio [Tutorial de introducción](/help/communities/getting-started.md) (participación) :
 
-* Acceder al CRXDE Lite en autor.
+* Acceda a CRXDE Lite en Autor.
 * Vaya a la página base:
 
    * /content/sites/engage/en/jcr:content
@@ -612,7 +611,7 @@ Es posible probar rápidamente la puntuación y la insignia usando el sitio [Tut
 
 A continuación, asegúrese de que los componentes foro y comentarios permiten que se muestren insignias:
 
-* Otra vez con el CRXDE Lite.
+* Nuevamente con CRXDE Lite.
 * Navegación al componente del foro
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -631,7 +630,7 @@ Finalmente,
 
 * Vaya al componente en la instancia de publicación.
 * Inicie sesión como miembro de la comunidad (por ejemplo, weston.mccall@dodgit.com / contraseña).
-* Post crea un nuevo tema de foro.
+* Publicar un nuevo tema de foro.
 * Se debe actualizar la página para que se muestre el distintivo.
 
    * Cierre la sesión e inicie sesión como otro miembro de la comunidad (por ejemplo: aaron.mcdonald@mailinator.com/password).

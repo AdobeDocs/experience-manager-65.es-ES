@@ -11,7 +11,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '508'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ En esta sección, creará las siguientes páginas, todas las cuales utilizan la 
 
    * Reproducción SCF: elemento secundario de la página principal en la que se va a reproducir.
 
-Este tutorial no profundiza en [copias de idioma](../../help/sites-administering/tc-prep.md). En su lugar, está diseñado para que la página raíz pueda implementar la detección del idioma preferido del usuario a través del encabezado del HTML y redirigir a la página principal adecuada para el idioma. La convención es utilizar el código de país de dos letras para el nombre del nodo de la página como, por ejemplo, &quot;en&quot; para inglés y &quot;fr&quot; para francés.
+Este tutorial no profundiza en [copias de idioma](../../help/sites-administering/tc-prep.md). En su lugar, está diseñado para que la página raíz pueda implementar la detección del idioma preferido del usuario a través del encabezado de HTML y redirigirlo a la página principal adecuada para el idioma. La convención es utilizar el código de país de dos letras para el nombre del nodo de la página como, por ejemplo, &quot;en&quot; para inglés y &quot;fr&quot; para francés.
 
 ## Crear primeras páginas {#create-first-pages}
 

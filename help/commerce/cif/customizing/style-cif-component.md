@@ -13,8 +13,8 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
 workflow-type: tm+mt
-source-wordcount: '2338'
-ht-degree: 16%
+source-wordcount: '2684'
+ht-degree: 19%
 
 ---
 
@@ -61,7 +61,7 @@ Clonamos el [proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y lu
 
 1. En este punto, debería tener una versión de trabajo de una tienda conectada a una instancia de Adobe Commerce. Vaya a la página `US` > `Home` en: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   Hay que ver que la tienda esté usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, verá varias categorías que indican que la conexión con Adobe Commerce está funcionando.
+   Hay que ver que el escaparate esté usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, verá varias categorías que indican que la conexión con Adobe Commerce está funcionando.
 
    ![Tienda configurada con tema de Venia](../assets/style-cif-component/venia-store-configured.png)
 
@@ -459,7 +459,7 @@ Una vez implementado el código del proyecto en AEM, debería poder ver los camb
 
    ![Varios teasers de producto](../assets/style-cif-component/multiple-teasers-final.png)
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 Puede comprobar en [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) que se ha implementado el archivo CSS actualizado: [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
@@ -467,7 +467,7 @@ Al implementar nuevos archivos CSS o JavaScript, también es importante asegurar
 
 AEM también intenta almacenar en caché las bibliotecas de cliente para el rendimiento. En ocasiones, tras una implementación de código, se muestran los archivos más antiguos. Puede invalidar manualmente la caché de la biblioteca de cliente de AEM con la herramienta [Reconstruir bibliotecas de cliente](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Invalidar cachés es el método preferido si sospecha que AEM ha almacenado en caché una versión antigua de una biblioteca de cliente. La reconstrucción de bibliotecas es ineficiente y lleva mucho tiempo.*
 
-## Felicitaciones {#congratulations}
+## Enhorabuena. {#congratulations}
 
 Ha diseñado su primer componente principal de CIF de AEM y ha utilizado un servidor de desarrollo de Webpack.
 
@@ -479,9 +479,9 @@ Utilice el [sistema de estilos de AEM](/help/sites-authoring/style-system.md) pa
 
 ## Recursos adicionales {#additional-resources}
 
-* [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
-* [Componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components)
-* [Configuración de un Entorno de desarrollo de AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
-* [Bibliotecas del cliente](/help/sites-developing/clientlibs.md)
+* [Arquetipo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
+* [Componentes principales de AEM CIF](https://github.com/adobe/aem-core-cif-components)
+* [Configurar un entorno de desarrollo de AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
+* [Bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md)
 * [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
 * [Desarrollo con el sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=es)
