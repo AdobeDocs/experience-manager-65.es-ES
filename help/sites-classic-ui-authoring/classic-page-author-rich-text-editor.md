@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
-workflow-type: ht
-source-wordcount: '1764'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1788'
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,7 @@ AEM guarda un registro de las últimas 50 acciones del componente actual, en ord
 
 ### Alineación {#alignment}
 
-![Barra de herramientas de alineación ](do-not-localize/cq55_rte_alignment.png)
+![Barra de herramientas de alineación &#x200B;](do-not-localize/cq55_rte_alignment.png)
 
 El texto puede estar alineado a la izquierda, al centro o a la derecha.
 

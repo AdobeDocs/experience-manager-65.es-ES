@@ -11,8 +11,8 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 0%
+source-wordcount: '954'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor. El servidor proxy realiza un seguimiento de todas las interacciones cliente-servidor y genera un registro de toda la comunicación TCP. Esto permite monitorizar exactamente lo que está pasando, sin tener que acceder al servidor principal.
 
-AEM Puede encontrar el servidor proxy en su instalación de la aquí:
+Puede encontrar el servidor proxy en su instalación de AEM aquí:
 
 `crx-quickstart/opt/helpers/proxy-2.1.jar`
 
@@ -31,7 +31,7 @@ Puede utilizar el servidor proxy para supervisar toda la interacción cliente-se
 * SMTP para mensajes de correo electrónico
 * LDAP para la administración de usuarios
 
-AEM Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualquiera que se comuniquen a través de una red TCP/IP; por ejemplo, un explorador web y un servidor de correo electrónico de la red de red (). Esto le permite monitorizar exactamente lo que sucede cuando solicita una página CQ.
+Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualquiera que se comuniquen a través de una red TCP/IP; por ejemplo, un explorador web y AEM. Esto le permite monitorizar exactamente lo que sucede cuando solicita una página CQ.
 
 ## Inicio de la herramienta de servidor proxy {#starting-the-proxy-server-tool}
 
@@ -47,7 +47,7 @@ Esta es la dirección de host de la instancia de CRX a la que desea conectarse. 
 
 `<remoteport>`
 
-Este es el puerto host de la instancia de CRX de destino. AEM AEM Por ejemplo, el valor predeterminado de una instalación recién instalada de la es **`4502`** y el valor predeterminado de una instancia de autor recién instalada es `4502`.
+Este es el puerto host de la instancia de CRX de destino. Por ejemplo, el valor predeterminado de una instalación de AEM recién instalada es **`4502`** y el de una instancia de autor de AEM recién instalada es `4502`.
 
 `<localport>`
 
@@ -103,7 +103,7 @@ Muestra el número de bytes que pasaron entre el cliente (`C`) y el servidor (`S
 
 Por ejemplo, considere una página que produzca el siguiente código cuando se solicite:
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 Por ejemplo, considere un documento HTML simple en el repositorio en
 
@@ -127,13 +127,13 @@ El contenido de `test.html` es:
 </html>
 ```
 
-AEM Suponiendo que la instancia de se esté ejecutando en `localhost:4502`, el proxy se inicia de esta manera:
+Suponiendo que la instancia de AEM se esté ejecutando en `localhost:4502`, el proxy se inicia de esta manera:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
 Ahora se puede acceder a la instancia de CQ/CRX a través del proxy en `localhost:4444` y toda la comunicación a través de este puerto se ha registrado en `test.log`.
 
-AEM Si ahora observa la salida del proxy, verá la interacción entre el explorador y la instancia de la.
+Si ahora observa la salida del proxy, verá la interacción entre el explorador y la instancia de AEM.
 
 Al inicio, el proxy genera lo siguiente:
 
@@ -163,7 +163,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-AEM La instancia responde con el contenido del archivo `test.html`:
+La instancia de AEM responde con el contenido del archivo `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]

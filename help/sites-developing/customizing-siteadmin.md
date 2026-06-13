@@ -1,5 +1,5 @@
 ---
-title: Personalización de la consola Sitios web (IU clásica)
+title: Personalización de la consola de sitios web (IU clásica)
 description: La consola Administración de sitios web se puede ampliar para mostrar columnas personalizadas
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 0%
+source-wordcount: '760'
+ht-degree: 1%
 
 ---
 
-# Personalización de la consola Sitios web (IU clásica){#customizing-the-websites-console-classic-ui}
+# Personalización de la consola de sitios web (IU clásica){#customizing-the-websites-console-classic-ui}
 
 ## Adición de una columna personalizada a la consola Sitios web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
@@ -25,7 +25,7 @@ La consola Administración de sitios web se puede ampliar para mostrar columnas 
 
 Este tutorial paso a paso explica cómo mostrar una nueva columna en la consola Administración de sitios web implementando la interfaz `ListInfoProvider`. Consiste en los siguientes pasos:
 
-1. AEM [Creando el servicio OSGI](#creating-the-osgi-service) e implementando el paquete que lo contiene en el servidor de.
+1. [Creando el servicio OSGI](#creating-the-osgi-service) e implementando el paquete que lo contiene en el servidor de AEM.
 1. (opcional) [Probando el nuevo servicio](#testing-the-new-service) emitiendo una llamada JSON para solicitar el objeto JSON que se usa para compilar la consola.
 1. [Mostrando la nueva columna](#displaying-the-new-column) ampliando la estructura de nodos de la consola en el repositorio.
 
@@ -58,7 +58,7 @@ La implementación de ejemplo es la siguiente:
 
 Para crear el servicio OSGI:
 
-1. En el CRXDE Lite, [cree un paquete](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
+1. En CRXDE Lite, [cree un paquete](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
 1. Agregue el código de ejemplo siguiente.
 1. Genere el paquete.
 
@@ -113,14 +113,14 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 ### Prueba del nuevo servicio {#testing-the-new-service}
 
-Cuando abre la consola de administración de sitios web y explora su sitio, el explorador emite una llamada Ajax para obtener el objeto JSON utilizado para crear la consola. AEM Por ejemplo, cuando se desplaza a la carpeta `/content/geometrixx`, se envía la siguiente solicitud al servidor para crear la consola:
+Cuando abre la consola de administración de sitios web y explora su sitio, el explorador emite una llamada Ajax para obtener el objeto JSON utilizado para crear la consola. Por ejemplo, cuando se desplaza a la carpeta `/content/geometrixx`, se envía la siguiente solicitud al servidor de AEM para crear la consola:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 Para asegurarse de que el nuevo servicio se está ejecutando después de haber implementado el paquete que lo contiene:
 
 1. Dirija el explorador a la siguiente dirección URL:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. La respuesta debe mostrar las nuevas propiedades como se indica a continuación:
 
@@ -130,7 +130,7 @@ Para asegurarse de que el nuevo servicio se está ejecutando después de haber i
 
 El último paso consiste en adaptar la estructura de nodos de la consola de administración de sitios web para mostrar la nueva propiedad para todas las páginas de Geometrixx superponiendo `/libs/wcm/core/content/siteadmin`. Proceda como se indica a continuación:
 
-1. En el CRXDE Lite, cree la estructura de nodos `/apps/wcm/core/content` con nodos de tipo `sling:Folder` para reflejar la estructura `/libs/wcm/core/content`.
+1. En CRXDE Lite, cree la estructura de nodos `/apps/wcm/core/content` con nodos de tipo `sling:Folder` para reflejar la estructura `/libs/wcm/core/content`.
 
 1. Copie el nodo `/libs/wcm/core/content/siteadmin` y péguelo debajo de `/apps/wcm/core/content`.
 
@@ -139,7 +139,7 @@ El último paso consiste en adaptar la estructura de nodos de la consola de admi
    * Quitar **pageText**
 
    * Establecer **pathRegex** en `/content/geometrixx(/.*)?`
-Esto activa la configuración de cuadrícula para todos los sitios web de Geometrixx.
+Esto hace que la configuración de cuadrícula esté activa para todos los sitios web de Geometrixx.
 
    * Establecer **storeProxySuffix** en `.pages.json`
 

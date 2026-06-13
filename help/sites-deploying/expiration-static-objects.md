@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 0%
+source-wordcount: '422'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ El estándar HTTP especifica las caducidades con respecto a la &quot;caducidad&q
 >
 >Esta configuración es independiente de (y no funcionará para) Dispatcher.
 >
->El propósito de Dispatcher es almacenar en caché los datos delante de Adobe Experience Manager AEM ().
+>El propósito de Dispatcher es almacenar en caché los datos delante de Adobe Experience Manager (AEM).
 
 Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pueden y deben almacenar en caché. La configuración del servidor HTTPD de Apache podría parecerse a una de las siguientes opciones, según el entorno:
 
@@ -51,11 +51,11 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pue
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la del explorador) almacene archivos CSS, JavaScript, PNG y de GIF durante un mes, hasta que caduquen. AEM Esto significa que no es necesario solicitarlas desde o desde el servidor web, pero pueden permanecer en la caché del explorador.
+   Esto permite que la caché intermedia (por ejemplo, la caché del explorador) almacene archivos CSS, JavaScript, PNG y GIF durante un máximo de un mes, hasta que caduquen. Esto significa que no es necesario solicitarlas a AEM o al servidor web, pero pueden permanecer en la memoria caché del explorador.
 
    Otras secciones del sitio no deben almacenarse en caché en una instancia de autor, ya que están sujetas a cambios en cualquier momento.
 
-1. **Para una instancia de Publish:**
+1. **Para una instancia de publicación:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -73,9 +73,9 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pue
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la caché del explorador) almacene archivos CSS, JavaScript, PNG y de GIF durante un máximo de un día en las cachés de cliente. Aunque este ejemplo ilustra la configuración global de todo lo que está por debajo de `/content` y `/etc/designs`, debería hacerlo más granular.
+   Esto permite que la caché intermedia (por ejemplo, la caché del explorador) almacene archivos CSS, JavaScript, PNG y GIF durante un máximo de un día en las cachés de cliente. Aunque este ejemplo ilustra la configuración global de todo lo que está por debajo de `/content` y `/etc/designs`, debería hacerlo más granular.
 
-   Dependiendo de la frecuencia con la que se actualice el sitio, también puede considerar el almacenamiento en caché de las páginas del HTML. Un período de tiempo razonable sería de una hora:
+   Dependiendo de la frecuencia con la que se actualice el sitio, también puede considerar almacenar en caché las páginas de HTML. Un período de tiempo razonable sería de una hora:
 
    ```xml
    <Location /content>

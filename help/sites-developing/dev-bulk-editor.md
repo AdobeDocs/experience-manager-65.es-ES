@@ -1,5 +1,5 @@
 ---
-title: Desarrollo del editor en bloque
+title: Desarrollo del editor masivo
 description: El etiquetado permite clasificar y organizar el contenido
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 1%
+source-wordcount: '1830'
+ht-degree: 2%
 
 ---
 
-# Desarrollo del editor en bloque{#developing-the-bulk-editor}
+# Desarrollo del editor masivo{#developing-the-bulk-editor}
 
 En esta sección se describe cómo desarrollar la herramienta Editor por lotes y cómo ampliar el componente Lista de productos, que se basa en el Editor por lotes.
 
@@ -163,15 +163,15 @@ A continuación se muestra una lista de los parámetros de consulta del Editor p
 
 ### Desarrollo de un componente basado en el editor por lotes: el componente Lista de productos {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Esta sección proporciona información general sobre cómo utilizar el Editor por lotes y ofrece una descripción del componente de Geometrixx existente basado en el Editor por lotes: el componente Lista de productos.
+En esta sección se proporciona información general sobre cómo utilizar el Editor por lotes y una descripción del componente de Geometrixx existente basado en el Editor por lotes: el componente Lista de productos.
 
-El componente Lista de productos permite a los usuarios mostrar y editar una tabla de datos. Por ejemplo, puede utilizar el componente Lista de productos para representar los productos en un catálogo. La información se presenta en una tabla de HTML estándar y cualquier edición se realiza en el cuadro de diálogo **Editar**, que contiene un widget de Editor en lotes. (Este editor en bloque es el mismo al que se puede acceder en /etc/importers/bulkeditor.html o a través del menú Herramientas). El componente Lista de productos se ha configurado para funciones específicas y limitadas del Editor por lotes. Se pueden configurar todas las partes del editor en bloque (o los componentes derivados del editor en bloque).
+El componente Lista de productos permite a los usuarios mostrar y editar una tabla de datos. Por ejemplo, puede utilizar el componente Lista de productos para representar los productos en un catálogo. La información se presenta en una tabla estándar de HTML y cualquier edición se realiza en el cuadro de diálogo **Editar**, que contiene un widget BulkEditor. (Este editor en bloque es el mismo al que se puede acceder en /etc/importers/bulkeditor.html o a través del menú Herramientas). El componente Lista de productos se ha configurado para funciones específicas y limitadas del Editor por lotes. Se pueden configurar todas las partes del editor en bloque (o los componentes derivados del editor en bloque).
 
 Con el editor en bloque, puede añadir, modificar, eliminar, filtrar y exportar las filas, guardar modificaciones e importar un conjunto de filas. Cada fila se almacena como un nodo en la propia instancia del componente Lista de productos. Cada celda es una propiedad de cada nodo. Esta es una opción de diseño y se puede cambiar fácilmente, por ejemplo, puede almacenar nodos en otro lugar del repositorio. La función del servlet de consulta es devolver la lista de los nodos que se van a mostrar; la ruta de búsqueda se define como una instancia de lista de productos.
 
-El código fuente del componente Lista de productos está disponible en el repositorio en /apps/geometrixx/components/productlist y se compone de varias partes, como todos los componentes de Adobe Experience Manager AEM ():
+El código fuente del componente Lista de productos está disponible en el repositorio en /apps/geometrixx/components/productlist y se compone de varias partes, como todos los componentes de Adobe Experience Manager (AEM):
 
-* Procesamiento de HTML: el procesamiento se realiza en un archivo JSP (/apps/geometrixx/components/productlist/productlist.jsp). El JSP lee los subnodos del componente de lista de productos actual y muestra cada uno de ellos como una fila de una tabla de HTML.
+* Renderización HTML: la renderización se realiza en un archivo JSP (/apps/geometrixx/components/productlist/productlist.jsp). El JSP lee los subnodos del componente de lista de productos actual y muestra cada uno de ellos como una fila de una tabla de HTML.
 * Cuadro de diálogo Editar, que es donde se define la configuración del Editor por lotes. Configure el cuadro de diálogo para que coincida con las necesidades del componente: columnas disponibles y posibles acciones realizadas en la cuadrícula o en la búsqueda. Consulte [Propiedades de configuración del editor en lotes](#bulk-editor-configuration-properties) para obtener información sobre todas las propiedades de configuración.
 
 Esta es una representación XML de los subnodos del cuadro de diálogo:
@@ -400,7 +400,7 @@ Se pueden configurar todas las partes del editor en bloque. En la tabla siguient
    <td>Configuración del widget del panel de búsqueda</td>
   </tr>
   <tr>
-   <td>rejilla</td>
+   <td>Cuadrícula</td>
    <td>Configuración del widget de cuadrícula</td>
   </tr>
   <tr>
@@ -459,7 +459,7 @@ Columnas CSS y de solo lectura
 El editor en bloque tiene tres configuraciones de columna:
 
 * Cell CSS class name (cellCls): un nombre de clase CSS que se agrega a cada celda de la columna configurada.
-* Estilo de celda (cellStyle): Un estilo de HTML que se añade a cada celda de la columna configurada.
+* Cell style (cellStyle): un estilo de HTML que se añade a cada celda de la columna configurada.
 * Solo lectura (readOnly): solo lectura se establece para cada celda de la columna configurada.
 
 La configuración debe definirse como la siguiente:
@@ -517,7 +517,7 @@ En el ejemplo anterior, la columna de selección contiene solo casillas de verif
 
 **Posición forzada**
 
-Los metadatos de posición forzada forcedPosition le permiten especificar dónde se coloca la columna dentro de la cuadrícula: 0 es el primer lugar y &lt;número de columnas>-1 es la última posición. Se ignora cualquier otro valor.
+Los metadatos de posición forzada forcedPosition le permiten especificar dónde se coloca la columna dentro de la cuadrícula: 0 es el primer lugar y &lt;número de columnas>-1 es la última posición. Se omite cualquier otro valor.
 
 En el ejemplo anterior, la columna de selección es la primera columna como forcedPosition=&quot;0&quot;.
 
@@ -555,7 +555,7 @@ Puede ampliar el servlet de consulta para devolver un modelo de herencia complej
 
 ### Guardar servlet {#save-servlet}
 
-En la configuración predeterminada del Editor por lotes, cada fila es un nodo y la ruta de este nodo se almacena en el registro de fila. El Editor por lotes mantiene el vínculo entre la fila y el nodo a través de la ruta jcr. Cuando un usuario edita la cuadrícula, se crea una lista de todas las modificaciones. Cuando un usuario hace clic en **Guardar**, se envía una consulta al POST a cada ruta con los valores de propiedades actualizados. Esta es la base del concepto de Sling y funciona bien si cada celda es una propiedad del nodo. Sin embargo, si el servlet de consulta está implementado para realizar el cálculo de herencia, este modelo no puede funcionar porque una propiedad devuelta por el servlet de consulta se puede heredar de otro nodo.
+En la configuración predeterminada del Editor por lotes, cada fila es un nodo y la ruta de este nodo se almacena en el registro de fila. El Editor por lotes mantiene el vínculo entre la fila y el nodo a través de la ruta jcr. Cuando un usuario edita la cuadrícula, se crea una lista de todas las modificaciones. Cuando un usuario hace clic en **Guardar**, se envía una consulta POST a cada ruta con los valores de propiedades actualizados. Esta es la base del concepto de Sling y funciona bien si cada celda es una propiedad del nodo. Sin embargo, si el servlet de consulta está implementado para realizar el cálculo de herencia, este modelo no puede funcionar porque una propiedad devuelta por el servlet de consulta se puede heredar de otro nodo.
 
 El concepto Guardar servlet implica que las modificaciones no se publican directamente en cada nodo, sino que se publican en un servlet que realiza el trabajo de guardado. Esto ofrece a este servlet la posibilidad de analizar las modificaciones y guardar las propiedades en el nodo derecho.
 
@@ -573,4 +573,4 @@ El servlet debe saber dónde se almacena la propiedad catalogCode.
 
 Una implementación predeterminada del servlet Guardar está disponible en /libs/wcm/bulkeditor/save/POST.jsp y se utiliza en el componente Lista de productos. Toma todos los parámetros de la solicitud (con un formato &lt;jcr path>/&lt;property name>) y escribe propiedades en los nodos mediante la API de JCR. También crea un nodo si no existen (filas insertadas en la cuadrícula).
 
-No utilice el código predeterminado tal cual, ya que reimplementa lo que hace el servidor de forma nativa (un POST en &lt;jcr path>/&lt;property name>) y, por lo tanto, solo es un buen punto de partida para crear un servlet de guardado que pueda administrar un modelo de herencia de propiedades.
+No utilice el código predeterminado tal cual, ya que reimplementa lo que hace el servidor de forma nativa (una POST en &lt;jcr path>/&lt;property name>) y, por lo tanto, solo es un buen punto de partida para crear un servlet de guardado que pueda administrar un modelo de herencia de propiedades.

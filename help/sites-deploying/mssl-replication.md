@@ -1,6 +1,6 @@
 ---
-title: Duplicación mediante SSL mutuo
-description: AEM Obtenga información sobre cómo configurar los para que un agente de replicación en la instancia de autor utilice SSL mutuo (MSSL) para conectarse a la instancia de publicación. Con MSSL, el agente de replicación y el servicio HTTP de la instancia de publicación utilizan certificados para autenticarse mutuamente.
+title: Replicación mediante SSL mutuo
+description: Obtenga información sobre cómo configurar AEM para que un agente de replicación en la instancia de autor utilice SSL mutuo (MSSL) para conectarse a la instancia de publicación. Con MSSL, el agente de replicación y el servicio HTTP de la instancia de publicación utilizan certificados para autenticarse mutuamente.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,24 +11,24 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 3%
+source-wordcount: '1409'
+ht-degree: 4%
 
 ---
 
-# Duplicación mediante SSL mutuo{#replicating-using-mutual-ssl}
+# Replicación mediante SSL mutuo{#replicating-using-mutual-ssl}
 
-AEM Configure de modo que un agente de replicación en la instancia de autor utilice SSL mutuo (MSSL) para conectarse a la instancia de publicación. Con MSSL, el agente de replicación y el servicio HTTP de la instancia de publicación utilizan certificados para autenticarse mutuamente.
+Configure AEM para que un agente de replicación en la instancia de autor utilice SSL mutuo (MSSL) para conectarse a la instancia de publicación. Con MSSL, el agente de replicación y el servicio HTTP de la instancia de publicación utilizan certificados para autenticarse mutuamente.
 
 La configuración de MSSL para la replicación implica realizar los siguientes pasos:
 
 1. Cree o consiga claves y certificados privados para las instancias de autor y publicación.
 1. Instale las claves y los certificados en las instancias de autor y publicación:
 
-   * Autor: Clave privada del autor y certificado de Publish.
-   * Publicación: clave privada de Publish y certificado de autor. El certificado está asociado a la cuenta de usuario autenticada con el agente de replicación.
+   * Autor: clave privada del autor y certificado de Publish.
+   * Publicar: la clave privada de Publish y el certificado de autor. El certificado está asociado a la cuenta de usuario autenticada con el agente de replicación.
 
-1. Configure el servicio HTTP basado en Jetty en la instancia de Publish.
+1. Configure el servicio HTTP basado en Jetty en la instancia de publicación.
 1. Configure las propiedades de transporte y SSL del agente de replicación.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
@@ -162,7 +162,7 @@ Para realizar el siguiente procedimiento, debe iniciar sesión como administrado
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Instalación del certificado de Publish {#install-the-publish-certificate}
+### Instalar el certificado de publicación {#install-the-publish-certificate}
 
 1. Abra la página Administración de usuarios de la instancia de autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Para abrir las propiedades de la cuenta de usuario, haga clic en el nombre de usuario.
@@ -186,7 +186,7 @@ Instale los siguientes elementos en la instancia de publicación:
 
 Para realizar el siguiente procedimiento, debe iniciar sesión como administrador de la instancia de publicación.
 
-### Instalación de la clave privada de Publish {#install-the-publish-private-key}
+### Instalación de la clave privada de publicación {#install-the-publish-private-key}
 
 1. Abra la página User Management de la instancia de publicación. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Para abrir las propiedades de la cuenta de usuario, haga clic en el nombre de usuario.

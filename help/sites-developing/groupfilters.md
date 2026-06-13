@@ -13,8 +13,8 @@ feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 0%
+source-wordcount: '782'
+ht-degree: 1%
 
 ---
 
@@ -107,7 +107,7 @@ El paquete `org.apache.commons.lang.math` proporciona la clase `NumberUtils`.
 
 >[!NOTE]
 >
->AEM Asegúrese de que la base de datos WURFL™ implementada para incluir las capacidades que utiliza como criterio de filtro. (Consulte [Detección de dispositivos](/help/sites-developing/mobile.md#server-side-device-detection).)
+>Asegúrese de que la base de datos WURFL™ implementada en AEM incluye las funcionalidades que utiliza como criterio de filtro. (Consulte [Detección de dispositivos](/help/sites-developing/mobile.md#server-side-device-detection).)
 
 ### Filtro De Ejemplo Para El Tamaño De Pantalla {#example-filter-for-screen-size}
 
@@ -186,9 +186,9 @@ El siguiente código POM es útil si utiliza Maven para crear sus aplicaciones. 
 
 * `org.apache.felix.scr.annotations.jar`: proporciona las anotaciones Componente y Servicio.
 
-Las interfaces DeviceGroup y DeviceGroupFilter se incluyen en el paquete de la API móvil de WCM de la comunicación de día 5. Las anotaciones de Felix se incluyen en el paquete de servicios declarativos de Apache Felix. Puede obtener este archivo JAR del repositorio de Adobe público.
+Las interfaces DeviceGroup y DeviceGroupFilter se incluyen en el paquete de la API móvil de WCM de la comunicación de día 5. Las anotaciones de Felix se incluyen en el paquete de servicios declarativos de Apache Felix. Puede obtener este archivo JAR del repositorio público de Adobe.
 
-AEM En el momento de la creación, 5.5.2 es la versión del paquete de la API móvil de WCM que se encuentra en la última versión de. Use la consola web de Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) para asegurarse de que esta sea la versión del paquete implementada en su entorno.
+En el momento de la creación, 5.5.2 es la versión del paquete de la API móvil de WCM que se encuentra en la última versión de AEM. Use la consola web de Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) para asegurarse de que esta sea la versión del paquete implementada en su entorno.
 
 **POM:** (su POM usa un groupId y una versión diferentes).
 
@@ -255,4 +255,4 @@ AEM En el momento de la creación, 5.5.2 es la versión del paquete de la API m�
 </project>
 ```
 
-Agregue el perfil que la sección [Obtención del complemento Maven del paquete de contenido](/help/sites-developing/vlt-mavenplugin.md) proporciona a su archivo de configuración de Maven para utilizar el repositorio de Adobe público.
+Agregue el perfil que la sección [Obtención del complemento Maven del paquete de contenido](/help/sites-developing/vlt-mavenplugin.md) proporciona a su archivo de configuración de Maven para utilizar el repositorio público de Adobe.
