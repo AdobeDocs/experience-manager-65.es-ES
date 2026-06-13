@@ -11,8 +11,8 @@ feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 46%
+source-wordcount: '549'
+ht-degree: 48%
 
 ---
 

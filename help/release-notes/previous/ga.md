@@ -7,8 +7,8 @@ feature: Release Information
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4477'
-ht-degree: 100%
+source-wordcount: '4981'
+ht-degree: 96%
 
 ---
 
@@ -74,9 +74,9 @@ Se han realizado varias mejoras en la IU para que sea más productiva y fácil d
 
 #### Actualizar {#upgrade}
 
-* La actualización directa local a AEM 6.5 es compatible con los clientes que ejecutan AEM 6.2, 6.3 y 6.4. Los clientes que usan 5.x o 6.0/6.1 y quieren aprovechar la actualización local deben actualizar primero a 6.4. A continuación, actualice a 6.5 o mediante la transferencia del contenido entre las instancias directamente a AEM 6.5.
+* La actualización directa in situ a AEM 6.5 es compatible con los clientes que ejecutan AEM 6.2, 6.3 y 6.4. Los clientes que usan 5.x o 6.0/6.1 y desean usar la actualización local deben actualizar primero a 6.4. A continuación, actualice a 6.5 o mediante la transferencia del contenido entre las instancias directamente a AEM 6.5.
 * El procedimiento de actualización sigue siendo en gran medida el mismo en 6.5.
-* Seguimos admitiendo las funciones Compatibilidad con versiones anteriores, Evaluación de la complejidad de la actualización y Actualizaciones sostenibles introducidas en la versión 6.4. Se han realizado actualizaciones específicas de la versión en aquellas áreas en las que era necesario.
+* Seguimos admitiendo las funciones de Compatibilidad con versiones anteriores, Evaluación de la complejidad de la actualización y Actualizaciones sostenibles introducidas en la versión 6.4. Se han realizado actualizaciones específicas de la versión en estas áreas donde es necesario.
 * Se ha simplificado el paquete del detector de patrones. Hay un paquete que evalúa las actualizaciones a 6.5 para las versiones de origen disponibles.
 * Para obtener detalles acerca del procedimiento de actualización, consulte la [documentación de actualización](/help/sites-deploying/upgrade.md).
 
@@ -87,7 +87,7 @@ Se han realizado varias mejoras en la IU para que sea más productiva y fácil d
 #### Repositorio {#repository}
 
 * La base de Adobe Experience Manager 6.5 son las versiones actualizadas del marco de trabajo basado en OSGi (Apache Sling y Apache Felix) y el repositorio de contenido Java™: Apache Jackrabbit Oak 1.10.2.
-* Para obtener información general sobre los problemas corregidos, consulte [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) y [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
+* Para obtener una descripción general de los problemas corregidos, consulte [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) y [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
 >
@@ -255,7 +255,7 @@ Para obtener más información sobre los cambios en AEM Screens, consulte las no
 
 #### AEM y Commerce {#aem-commerce}
 
-Las mejoras realizadas en Commerce Integration Framework se encuentran en un ciclo de lanzamiento más rápido desde AEM 6.4. Obtenga más información en [Integración de AEM y Adobe Commerce con Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=es).
+Las mejoras realizadas en Commerce integration framework se encuentran en un ciclo de lanzamiento más rápido desde AEM 6.4. Obtenga más información en [Integración de AEM y Adobe Commerce con Commerce integration framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=es).
 
 #### Complemento de Communities {#communities-add-on}
 
@@ -263,8 +263,8 @@ Para obtener la versión más reciente, consulte la sección [Implementación de
 
 ##### Mejoras en la participación de la comunidad {#enhancements-to-community-engagement}
 
-**Compatibilidad de @menciones**
-AEM Communities ahora permite a los usuarios registrados etiquetar (mencionar) a otros miembros registrados para atraer su atención en el contenido generado por el usuario. Los miembros etiquetados (mencionados) reciben entonces una notificación con un vínculo profundo al contenido generado por el usuario correspondiente. Sin embargo, los usuarios pueden optar por deshabilitar o habilitar las notificaciones del correo electrónico y de la web.
+**@Mentions asistencia**
+AEM Communities ahora permite a los usuarios registrados etiquetar (mencionar) a otros miembros registrados para atraer su atención, en el contenido generado por el usuario. Los miembros etiquetados (mencionados) reciben entonces una notificación con un vínculo profundo al contenido generado por el usuario correspondiente. Sin embargo, los usuarios pueden optar por deshabilitar o habilitar las notificaciones del correo electrónico y de la web.
 
 ![Compatibilidad con menciones con arroba](/help/release-notes/assets/at-mentions.png)
 

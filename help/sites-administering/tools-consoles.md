@@ -12,8 +12,8 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 26%
+source-wordcount: '597'
+ht-degree: 25%
 
 ---
 
@@ -197,7 +197,7 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
    <td>Configuración del sitio remoto DAM</td>
   </tr>
   <tr>
-   <td>Medios</td>
+   <td>Recursos</td>
    <td> </td>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
   </tr>
   <tr>
    <td> </td>
-   <td>Medios del desarrollador</td>
+   <td>Recursos del desarrollador</td>
   </tr>
   <tr>
    <td>Implementación</td>
@@ -306,15 +306,15 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
   </tr>
   <tr>
    <td> </td>
-   <td>Configuración de inicio de sesión social de facebook<br /> </td>
+   <td>Configuración de inicio de sesión social en Facebook<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Configuración de inicio de sesión social de twitter<br /> </td>
+   <td>Configuración de inicio de sesión social en Twitter<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Configuración de inicio de sesión social de pinterest<br /> </td>
+   <td>Configuración de inicio de sesión social de Pinterest<br /> </td>
   </tr>
   <tr>
    <td>Comunidades</td>
@@ -376,7 +376,7 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
    <td>Client Context representa una colección ensamblada dinámicamente de datos de usuario. Las configuraciones predeterminadas y de Experience Cloud se mantienen aquí.<br /> </td>
   </tr>
   <tr>
-   <td>Configuraciones de Cloud Service<br /> </td>
+   <td>Configuraciones de Cloud Services<br /> </td>
    <td>Contiene configuraciones relacionadas con la integración con Adobe Experience Cloud.</td>
   </tr>
   <tr>
@@ -388,7 +388,7 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
    <td>Proporciona acceso a los importadores y a diversos datos de productos.</td>
   </tr>
   <tr>
-   <td>DAM  </td>
+   <td>DAM </td>
    <td>Acceso a varias opciones.</td>
   </tr>
   <tr>
@@ -404,7 +404,7 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
    <td>No hay ninguna funcionalidad activa relacionada con esta entrada.</td>
   </tr>
   <tr>
-   <td>Envíos de formularios</td>
+   <td>Envío de formularios</td>
    <td>La lista de envíos de formularios recibidos.</td>
   </tr>
   <tr>
@@ -416,20 +416,20 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
    <td>Comprobador de vínculo externo.</td>
   </tr>
   <tr>
-   <td>Mobile</td>
+   <td>Dispositivo móvil</td>
    <td>Ayuda a crear sitios web diseñados para dispositivos móviles.</td>
   </tr>
   <tr>
    <td>Paquetes</td>
-   <td>AEM Un vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para el WCM de la. Es similar a la información que se muestra en el Administrador de paquetes de CRX.</td>
+   <td>Un vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para AEM WCM. Es similar a la información que se muestra en el Administrador de paquetes de CRX.</td>
   </tr>
   <tr>
    <td>Replicación: agentes de replicación</td>
-   <td>Se utiliza para replicar datos de la instancia de autor en Publish al publicar páginas, o con replicación inversa para devolver comentarios del usuario del entorno de publicación al autor.</td>
+   <td>Se utiliza para replicar datos de la instancia de autor en Publicar al publicar páginas, o con replicación inversa para devolver comentarios del usuario del entorno de publicación al autor.</td>
   </tr>
   <tr>
    <td>Informes</td>
-   <td>AEM proporciona una serie de informes personalizados, lo que le permite crear informes personalizados o desarrollar los suyos propios.</td>
+   <td>AEM proporciona una serie de informes personalizados, que le permiten crear informes personalizados o desarrollar los suyos propios.</td>
   </tr>
   <tr>
    <td>Andamiaje de página predeterminada</td>

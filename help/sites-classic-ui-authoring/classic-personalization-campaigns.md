@@ -1,5 +1,5 @@
 ---
-title: Campaign Management
+title: Administración de campañas
 description: La administración de campañas ofrece a los especialistas en marketing digital la oportunidad de ofrecer contenido personalizado y, por lo tanto, crear experiencias dedicadas para los visitantes. Permite organizar las campañas de marketing en la web, el correo electrónico y los servicios móviles, y así atraer a los visitantes.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,13 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 0%
+source-wordcount: '625'
+ht-degree: 4%
 
 ---
 
 
-# Campaign Management{#campaign-management}
+# Administración de campañas{#campaign-management}
 
 La administración de campañas ofrece a los especialistas en marketing digital la oportunidad de ofrecer contenido personalizado y, por lo tanto, crear experiencias dedicadas para los visitantes.
 
@@ -25,27 +25,26 @@ Permite organizar las campañas de marketing en la web, el correo electrónico y
 
 Este documento describe los distintos elementos que componen las campañas. Encontrará información más detallada en los siguientes documentos:
 
-* [Teasers and Strategies](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
+* [Teasers y estrategias](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
 * [Marketing por correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
 * [Páginas de destino](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Ofertas de Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
-* [Trabajar con el administrador de campañas de marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
-* [Información acerca de la segmentación](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
-* [Configuración de la campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
+* [Uso de Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
+* [Comprensión de la segmentación](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
+* [Configuración de su campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 La administración de campañas se compone de varios elementos:
 
 * **Marcas**
-En Adobe Experience Manager AEM (), las marcas son la unidad de nivel superior y forman una colección de **Campañas**.
+En Adobe Experience Manager (AEM), las marcas son la unidad de nivel superior y forman una colección de **Campañas**.
 
 * **Campañas**
 Una campaña es una colección de **experiencias** individuales.
 
 * **Experiencias**
-El contenido enfocado forma las distintas experiencias que se presentan al visitante en **puntos de contacto**. Hay varios tipos de experiencia disponibles:
+El contenido enfocado forma las distintas experiencias que se presentan al visitante en **Puntos de contacto**. Hay varios tipos de experiencia disponibles:
 
    * **Teasers**
-
      [Páginas teaser / Párrafos](#teasers) se usan para dirigir a visitantes específicos **Segmentos** a contenido que se centra en sus intereses.
 
      Las páginas teaser pueden:
@@ -57,7 +56,7 @@ El contenido enfocado forma las distintas experiencias que se presentan al visit
 
    * **Boletines**
 
-     Las [comunicaciones por correo electrónico](#emailmarketing) se utilizan para atraer a los usuarios y animarlos a que visiten su sitio web. Suelen adoptar la forma de una newsletter, que se envía a los **posibles clientes** (que se agrupan en **Listas**). **Nota:** el Adobe no planea mejorar más esta capacidad. Se recomienda [usar Adobe Campaign AEM y la integración para](/help/sites-administering/campaign.md).
+     Las [comunicaciones por correo electrónico](#emailmarketing) se utilizan para atraer a los usuarios y animarlos a que visiten su sitio web. Suelen adoptar la forma de una newsletter, que se envía a los **posibles clientes** (que se agrupan en **Listas**). **Nota:** Adobe no planea mejorar más esta capacidad. Se recomienda [usar Adobe Campaign y la integración en AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -71,15 +70,15 @@ El contenido enfocado forma las distintas experiencias que se presentan al visit
 
 * **Posibles clientes**
 
-  La información que ha recopilado sobre sus visitantes y cómo ponerse en contacto con ellos forma la base de sus posibles clientes. **Nota:** el Adobe no planea mejorar más esta capacidad.
+  La información que ha recopilado sobre sus visitantes y cómo ponerse en contacto con ellos forma la base de sus posibles clientes. **Nota:** Adobe no planea mejorar más esta capacidad.
 
-  Se recomienda [usar Adobe Campaign AEM y la integración para](/help/sites-administering/campaign.md).
+  Se recomienda [usar Adobe Campaign y la integración en AEM](/help/sites-administering/campaign.md).
 
 * **Listas**
 
-  Los posibles clientes se agrupan en listas para que pueda realizar acciones colectivas en consecuencia. Nota: **Nota:** El Adobe no planea mejorar más esta capacidad.
+  Los posibles clientes se agrupan en listas para que pueda realizar acciones colectivas en consecuencia. Nota: **Nota:** Adobe no planea mejorar más esta capacidad.
 
-  Se recomienda [usar Adobe Campaign AEM y la integración para.](/help/sites-administering/campaign.md)
+  Se recomienda [usar Adobe Campaign y la integración en AEM.](/help/sites-administering/campaign.md)
 
 * **Segmentos**
 
