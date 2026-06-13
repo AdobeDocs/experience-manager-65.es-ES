@@ -12,7 +12,7 @@ exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1432'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visor en la interfa
       </ul> <p><strong>Para obtener una vista previa del recurso en un visor concreto</strong></p>
       <ul>
       <li>Cerca de la esquina superior izquierda de la página, haga clic en el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> de la lista y, a continuación, seleccione un visualizador que desee aplicar al recurso.</li>
-      </ul> <p>Utilice los iconos <strong>+</strong> y <strong>-</strong> para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Seleccione <strong>Restablecer</strong> si desea que la imagen vuelva al zoom original.<br /> Si se encuentra en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+      </ul> <p>Utilice los iconos <strong>+</strong> y <strong>-</strong> para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Seleccione <strong>Restablecer</strong> si desea que la imagen vuelva al zoom original.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Multimedia</td>
@@ -99,7 +99,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visor en la interfa
       <td><p><strong>Para obtener una vista previa de un recurso en un visor concreto</strong></p>
       <ul>
       <li>Cerca de la esquina superior izquierda de la página, haga clic en el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> de la lista y, a continuación, seleccione un visualizador que desee aplicar al recurso.</li>
-      </ul> <p>Utilice los iconos <strong>+</strong> y <strong>-</strong> para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Seleccione <strong>Restablecer</strong> si desea que la imagen vuelva al zoom original.<br /> Si se encuentra en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+      </ul> <p>Utilice los iconos <strong>+</strong> y <strong>-</strong> para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Seleccione <strong>Restablecer</strong> si desea que la imagen vuelva al zoom original.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de giros</td>
@@ -108,7 +108,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visor en la interfa
       <td><p><strong>Para obtener una vista previa de un recurso en un visor concreto</strong></p>
       <ul>
       <li>Cerca de la esquina superior izquierda de la página, haga clic en el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> de la lista y, a continuación, seleccione un visualizador que desee aplicar al recurso.</li>
-      </ul> <p>Utilice los iconos <strong>+</strong> y <strong>-</strong> para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Seleccione <strong>Restablecer</strong> si desea que la imagen vuelva al zoom original.<br /> Si se encuentra en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+      </ul> <p>Utilice los iconos <strong>+</strong> y <strong>-</strong> para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Seleccione <strong>Restablecer</strong> si desea que la imagen vuelva al zoom original.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de medios mixtos</td>
@@ -117,7 +117,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visor en la interfa
       <td><p><strong>Para obtener una vista previa de un recurso en un visor concreto</strong></p>
       <ul>
       <li>Cerca de la esquina superior izquierda de la página, haga clic en el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> de la lista y, a continuación, seleccione un visualizador que desee aplicar al recurso.</li>
-      </ul> <p>Utilice los iconos <strong>+</strong> y <strong>-</strong> para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Seleccione <strong>Restablecer</strong> si desea que la imagen vuelva al zoom original.<br /> Si se encuentra en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+      </ul> <p>Utilice los iconos <strong>+</strong> y <strong>-</strong> para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Seleccione <strong>Restablecer</strong> si desea que la imagen vuelva al zoom original.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de carrusel</td>
@@ -138,7 +138,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visor en la interfa
       </ul> <p><strong>Para obtener una vista previa del recurso en un visor concreto</strong></p>
       <ul>
       <li>Cerca de la esquina superior izquierda de la página, seleccione el icono para que aparezca la lista desplegable. Seleccione <strong>Visualizadores</strong> y, a continuación, seleccione el visualizador que desee aplicar al recurso.</li>
-      </ul> <p>Utilice los iconos <strong>+</strong> y <strong>-</strong> para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Seleccione <strong>Restablecer</strong> si desea que la imagen vuelva al zoom original.<br /> Si se encuentra en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
+      </ul> <p>Utilice los iconos <strong>+</strong> y <strong>-</strong> para aumentar o disminuir el zoom de la imagen seleccionada, respectivamente. Seleccione <strong>Restablecer</strong> si desea que la imagen vuelva al zoom original.<br /> Si está en una pantalla táctil, seleccione dos veces la imagen para acercarla por pasos. Cuando alcance el zoom máximo, vuelva a seleccionar la imagen para restablecer el estado de zoom. Arrastre por la imagen para desplazarse.</p> </td>
       </tr>
     </tbody>
     </table>

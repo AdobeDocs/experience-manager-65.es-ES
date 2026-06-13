@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5839'
+source-wordcount: '5796'
 ht-degree: 5%
 
 ---
@@ -53,7 +53,7 @@ Familiarícese con la interfaz de búsqueda y las acciones disponibles.
 
 *Figura: Comprenda la interfaz de resultados de búsqueda de [!DNL Experience Manager Assets].*
 
-**A.** Guardar búsqueda como una colección inteligente. **B.** Filtros o predicados para reducir los resultados de búsqueda. **C.** Muestra archivos, carpetas o ambos. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Seleccione los resultados de búsqueda cargados. **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **I.** Cierre la búsqueda. **J.** Cambiar entre la vista de tarjeta y la vista de lista.
+**A.** Guardar búsqueda como una colección inteligente. **B.** Filtros o predicados para reducir los resultados de búsqueda. **C.** Muestra archivos, carpetas o ambos. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Seleccione los resultados de búsqueda cargados. **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **I.** Cierre la búsqueda. **J.** Cambiar entre la vista de tarjeta y la vista de lista.
 
 ### Facetas de búsqueda dinámica {#dynamicfacets}
 
@@ -124,9 +124,9 @@ Puede mejorar la relevancia de las palabras clave para recursos concretos para a
 1. En el cuadro **[!UICONTROL Buscar en promoción]**, especifique una palabra clave para la que desee aumentar la búsqueda de la imagen y, a continuación, haga clic en **[!UICONTROL Agregar]**. Puede especificar varias palabras clave del mismo modo.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**. El recurso que promocionó para esta palabra clave aparece entre los resultados de búsqueda principales.
 
-Puede utilizarlo para su ventaja al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [buscar en [!DNL Experience Manager]](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
+Puede utilizarlo para su ventaja al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [buscar en [!DNL Experience Manager]](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410335/?captions=spa&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Vídeo: comprenda cómo se clasifican los resultados de búsqueda y cómo se puede influir en la clasificación.*
 
@@ -210,15 +210,15 @@ Estos son algunos ejemplos de formatos de búsqueda para consultas complejas:
 
 ### Buscar recursos digitales desde el panel Adobe Asset Link {#aal}
 
-Con Adobe Asset Link, los profesionales creativos ahora pueden tener acceso al contenido almacenado en [!DNL Experience Manager Assets], sin salir de las aplicaciones de Adobe Creative Cloud admitidas. Los creativos pueden examinar, buscar, extraer y registrar recursos sin problemas mediante el panel en la aplicación de las aplicaciones [!DNL Adobe Creative Cloud]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] y [!DNL Adobe InDesign]. Asset Link también permite a los usuarios buscar visualmente resultados similares. Los resultados de la visualización de búsqueda visual utilizan algoritmos de aprendizaje automático de Adobe AI para ayudar a los usuarios a encontrar imágenes estéticamente similares. Consulte [buscar y examinar recursos](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
+Con Adobe Asset Link, los profesionales creativos ahora pueden tener acceso al contenido almacenado en [!DNL Experience Manager Assets], sin salir de las aplicaciones de Adobe Creative Cloud admitidas. Los creativos pueden examinar, buscar, extraer y registrar recursos sin problemas mediante el panel en la aplicación de las aplicaciones [!DNL Adobe Creative Cloud]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] y [!DNL Adobe InDesign]. Asset Link también permite a los usuarios buscar visualmente resultados similares. Los resultados de la visualización de búsqueda visual utilizan algoritmos de aprendizaje automático de Adobe AI para ayudar a los usuarios a encontrar imágenes estéticamente similares. Consulte [buscar y examinar recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
 
 ### Buscar recursos digitales en la aplicación de escritorio [!DNL Experience Manager] {#desktop-app}
 
-Los profesionales de Creative usan la aplicación de escritorio para que [!DNL Experience Manager Assets] sea fácil de buscar y esté disponible en el escritorio local (Win o Mac). Los creativos pueden mostrar fácilmente los recursos deseados en Mac Finder o Windows Explorer, abrirlos en aplicaciones de escritorio y cambiarlos localmente: los cambios se vuelven a guardar en [!DNL Experience Manager] con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas utilizando una o más palabras clave, caracteres comodín `*` y `?`, y el operador `AND`. Ver [examinar, buscar y obtener una vista previa de los recursos](https://experienceleague.adobe.com/es/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets) en la aplicación de escritorio.
+Los profesionales de Creative usan la aplicación de escritorio para que [!DNL Experience Manager Assets] sea fácil de buscar y esté disponible en el escritorio local (Win o Mac). Los creativos pueden mostrar fácilmente los recursos deseados en Mac Finder o Windows Explorer, abrirlos en aplicaciones de escritorio y cambiarlos localmente: los cambios se vuelven a guardar en [!DNL Experience Manager] con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas utilizando una o más palabras clave, caracteres comodín `*` y `?`, y el operador `AND`. Ver [examinar, buscar y obtener una vista previa de los recursos](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets) en la aplicación de escritorio.
 
 ### Buscar recursos digitales en [!DNL Brand Portal] {#brand-portal}
 
-Los usuarios y especialistas en marketing de la línea de negocios utilizan Brand Portal para compartir de forma eficiente y segura los recursos digitales aprobados con sus equipos internos ampliados, socios y distribuidores. Ver [buscar recursos en Brand Portal](https://experienceleague.adobe.com/es/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching).
+Los usuarios y especialistas en marketing de la línea de negocios utilizan Brand Portal para compartir de forma eficiente y segura los recursos digitales aprobados con sus equipos internos ampliados, socios y distribuidores. Ver [buscar recursos en Brand Portal](https://experienceleague.adobe.com/en/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching).
 
 ### Buscar [!DNL Adobe Stock] imágenes {#adobe-stock1}
 
@@ -366,11 +366,11 @@ La búsqueda visual utiliza etiquetas inteligentes. Después de configurar la fu
    Guarde los cambios.
 
 1. Obtenga acceso a `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` y agregue la propiedad `similarityTags` de tipo `Boolean` con el valor de `true`.
-1. Aplicar etiquetas inteligentes a los recursos del repositorio [!DNL Experience Manager]. Ver [cómo configurar etiquetas inteligentes](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/configuring/tagging#configuring).
+1. Aplicar etiquetas inteligentes a los recursos del repositorio [!DNL Experience Manager]. Ver [cómo configurar etiquetas inteligentes](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/tagging#configuring).
 1. En CRXDE, en el nodo `/oak-index/damAssetLucene`, establezca la propiedad `reindex` en `true`. Guarde los cambios.
 1. (Opcional) Si ha personalizado el formulario de búsqueda, copie el nodo `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` en `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Guarde los cambios.
 
-Para obtener información relacionada, consulte [comprender las etiquetas inteligentes en Experience Manager](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/metadata/image-smart-tags) y [cómo administrarlas](/help/assets/enhanced-smart-tags.md).
+Para obtener información relacionada, consulte [comprender las etiquetas inteligentes en Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags) y [cómo administrarlas](/help/assets/enhanced-smart-tags.md).
 
 >[!CAUTION]
 >
@@ -396,26 +396,26 @@ Los predicados se utilizan para crear facetas. Los administradores pueden person
 
 Puede buscar recursos digitales en función de una o varias de las siguientes propiedades. Los filtros que se aplican a algunas de estas propiedades están disponibles de forma predeterminada y algunos otros filtros se pueden crear a medida para aplicarlos a las otras propiedades.
 
-| Campo de búsqueda | Search property values |
+| Campo de búsqueda | Buscar valores de propiedad |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Tipos MIME | Images, Documents, Multimedia, Archives, or Other. |
-| Última modificación | Hour, Day, Week, Month, or Year. |
-| Tamaño del archivo | Small, Medium, or Large. |
-| Estado de publicación | Published or Unpublished. |
-| Approved Status | Approved or Rejected. |
-| Orientación | Horizontal, Vertical, or Square. |
-| Estilo | Color, or Black &amp; White. |
-| Altura del vídeo | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Anchura del vídeo | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Formato de vídeo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Códec de vídeo | x264. Value is stored in the metadata of video renditions only. |
-| Velocidad de bits de vídeo | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Códec de audio | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Velocidad de bits de audio | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Tipos MIME | Imágenes, documentos, multimedia, archivos u otros. |
+| Última modificación | Hora, día, semana, mes o año. |
+| Tamaño del archivo | Pequeño, Medium o Grande. |
+| Estado de publicación | Publicado o no publicado. |
+| Estado aprobado | Aprobado o rechazado. |
+| Orientación | Horizontal, Vertical o Cuadrado. |
+| Estilo | Color o en blanco y negro. |
+| Altura del vídeo | Especificado como valor mínimo y máximo. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
+| Anchura del vídeo | Especificado como valor mínimo y máximo. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
+| Formato de vídeo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. El valor se almacena en los metadatos del vídeo de origen y en las representaciones. |
+| Códec de vídeo | x264. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
+| Velocidad de bits de vídeo | Especificado como valor mínimo y máximo. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
+| Códec de audio | Libvorbis, Lame MP3, codificación AAC. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
+| Velocidad de bits de audio | Especificado como valor mínimo y máximo. El valor solo se almacena en los metadatos de las representaciones de vídeo. |
 
-## Work with asset search results {#aftersearch}
+## Trabajar con resultados de búsqueda de recursos {#aftersearch}
 
-You can do the following with the assets you&#39;ve searched in [!DNL Experience Manager]:
+Puede hacer lo siguiente con los recursos que ha buscado en [!DNL Experience Manager]:
 
 * Ver propiedades de metadatos y otra información.
 * Descargar uno o varios recursos.
@@ -489,10 +489,10 @@ Relacionar y desrelacionar recursos que se muestran en los resultados de búsque
 | No hay disponibles filtros de búsqueda ni predicados. | <ul><li>El filtro de búsqueda no está configurado.</li><li>No está disponible para su inicio de sesión.</li><li>(Menos probable) Las opciones de búsqueda no se personalizan en la implementación que está utilizando.</li></ul> | <ul><li>Póngase en contacto con el administrador para comprobar si las personalizaciones de búsqueda están disponibles o no.</li><li>Póngase en contacto con el administrador para comprobar si su cuenta tiene los privilegios y permisos para utilizar la personalización.</li><li>Póngase en contacto con el administrador y compruebe las personalizaciones disponibles para la implementación de [!DNL Assets] que está utilizando.</li></ul> |
 | Al buscar imágenes visualmente similares, falta una imagen esperada. | <ul><li>La imagen no está disponible en [!DNL Experience Manager].</li><li>La imagen no está indexada. Normalmente, cuando se carga recientemente.</li><li>La imagen no está etiquetada de forma inteligente.</li></ul> | <ul><li>Agregar la imagen a [!DNL Assets].</li><li>Póngase en contacto con el administrador para volver a indexar el repositorio. Además, asegúrese de que está utilizando el índice adecuado.</li><li>Póngase en contacto con el administrador para etiquetar de forma inteligente los recursos relevantes.</li></ul> |
 | Al buscar imágenes visualmente similares, se muestra una imagen irrelevante. | Comportamiento visual de búsqueda. | [!DNL Experience Manager] muestra tantos recursos potencialmente relevantes como sea posible. Las imágenes menos relevantes, si las hay, se añaden a los resultados pero con una clasificación de búsqueda más baja. La calidad de las coincidencias y la relevancia de los recursos buscados disminuyen al desplazarse hacia abajo en los resultados de búsqueda. |
-| Al seleccionar y operar en los resultados de búsqueda, todos los recursos buscados no se operan. | The [!UICONTROL Select All] option only selects the first 100 search results in card view and the first 200 search results in list view. | |
+| Al seleccionar y operar en los resultados de búsqueda, todos los recursos buscados no se operan. | La opción [!UICONTROL Seleccionar todo] solo selecciona los primeros 100 resultados de búsqueda en la vista de tarjeta y los primeros 200 resultados de búsqueda en la vista de lista. | |
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] search implementation guide](https://experienceleague.adobe.com/es/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
->* [Advanced configuration to boost search results](https://experienceleague.adobe.com/es/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
+>* [[!DNL Experience Manager] guía de implementación de búsqueda](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
+>* [Configuración avanzada para mejorar los resultados de búsqueda](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
 

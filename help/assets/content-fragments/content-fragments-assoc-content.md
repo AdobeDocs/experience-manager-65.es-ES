@@ -1,6 +1,6 @@
 ---
 title: Contenido asociado
-description: AEM Comprender cómo la función de contenido asociada de la aplicación proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento cuando se añada a una página de contenido, lo que añade flexibilidad adicional a la entrega de contenido sin encabezado.
+description: Comprenda cómo la función de contenido asociada de AEM proporciona la conexión para que los recursos se puedan utilizar opcionalmente con el fragmento cuando se añada a una página de contenido, lo que añade flexibilidad adicional a la entrega de contenido sin encabezado.
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
@@ -14,7 +14,7 @@ ht-degree: 49%
 
 # Contenido asociado{#associated-content}
 
-AEM función de contenido asociado proporciona la conexión para que los recursos se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad para la entrega de contenido sin encabezado al [proporcionar una amplia gama de recursos a los que tener acceso al usar el fragmento de contenido en una página,](/help/sites-authoring/content-fragments.md#using-associated-content) al tiempo que ayuda a reducir el tiempo necesario para buscar el recurso adecuado. Cualquier contenido asociado se puede configurar con el editor de fragmentos de contenido.
+La función de contenido asociado de AEM proporciona la conexión para que los recursos se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad para la entrega de contenido sin encabezado al [proporcionar una amplia gama de recursos a los que tener acceso al usar el fragmento de contenido en una página,](/help/sites-authoring/content-fragments.md#using-associated-content) al tiempo que ayuda a reducir el tiempo necesario para buscar el recurso adecuado. Cualquier contenido asociado se puede configurar con el editor de fragmentos de contenido.
 
 ## Adición de contenido asociado {#adding-associated-content}
 

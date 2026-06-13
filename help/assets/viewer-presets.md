@@ -11,21 +11,21 @@ exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 15%
+source-wordcount: '211'
+ht-degree: 17%
 
 ---
 
-# Aplicar ajustes preestablecidos de visualizador de Dynamic Media {#applying-viewer-presets}
+# Aplicar ajustes preestablecidos del visualizador de Dynamic Media {#applying-viewer-presets}
 
 Un ajuste preestablecido de visor es una colección de opciones que determinan cómo ven los usuarios los recursos de medios enriquecidos en las pantallas de sus equipos y dispositivos móviles. Puede aplicar cualquier ajuste preestablecido de visualizador creado por el administrador a un recurso.
 
 Si es administrador y debe administrar, crear, ordenar y eliminar ajustes preestablecidos de visor, consulte [Administrar ajustes preestablecidos de visor](managing-viewer-presets.md).
 
-Consulte también [Ajustes preestablecidos de visualizador de Publish](managing-viewer-presets.md#publishing-viewer-presets).
+Consulte también [Publicar ajustes preestablecidos del visor](managing-viewer-presets.md#publishing-viewer-presets).
 
 No es necesario publicar los ajustes preestablecidos del visualizador en función del modo de publicación que esté utilizando.
-Cualquier problema con los ajustes preestablecidos del visor, consulte [Solucionar problemas de Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
+Cualquier problema con los ajustes preestablecidos del visualizador, consulte [Solucionar problemas de Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
 
 ## Aplicar un ajuste preestablecido de visualizador de Dynamic Media a un recurso {#applying-a-viewer-preset-to-an-asset}
 

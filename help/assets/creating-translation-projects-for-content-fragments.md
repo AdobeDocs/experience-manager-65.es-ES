@@ -12,13 +12,13 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 7bf70ba18603bfd17dec391ddcd623e9085fbd04
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 # Creación de proyectos de traducción para fragmentos de contenido {#creating-translation-projects-for-content-fragments}
 
-Además de los recursos, Adobe Experience Manager AEM () Assets admite flujos de trabajo de copia de idioma para [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) (incluidas las variaciones). No se requiere ninguna optimización adicional para ejecutar flujos de trabajo de copia de idioma en fragmentos de contenido. En cada flujo de trabajo, todo el fragmento de contenido se envía para su traducción.
+Además de los recursos, Adobe Experience Manager (AEM) Assets admite flujos de trabajo de copia de idioma para [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) (incluidas las variaciones). No se requiere ninguna optimización adicional para ejecutar flujos de trabajo de copia de idioma en fragmentos de contenido. En cada flujo de trabajo, todo el fragmento de contenido se envía para su traducción.
 
 Los tipos de flujos de trabajo que se pueden ejecutar en fragmentos de contenido son exactamente similares a los tipos de flujo de trabajo que se ejecutan para los recursos. Además, las opciones disponibles dentro de cada tipo de flujo de trabajo coinciden con las opciones disponibles en los tipos de flujos de trabajo correspondientes para los recursos.
 
@@ -51,13 +51,13 @@ También puede crear copias de idioma temporales para fragmentos de forma simila
 
 ## Traducción de fragmentos de medios mixtos {#translating-mixed-media-fragments}
 
-AEM traducir fragmentos de contenido que incluyen varios tipos de recursos y colecciones de medios. Si traduce un fragmento de contenido que incluye recursos en línea, las copias traducidas de estos recursos se almacenan en la raíz del idioma de destino.
+AEM permite traducir fragmentos de contenido que incluyen varios tipos de recursos y colecciones de medios. Si traduce un fragmento de contenido que incluye recursos en línea, las copias traducidas de estos recursos se almacenan en la raíz del idioma de destino.
 
 Si el fragmento de contenido incluye una colección, los recursos de la colección se traducen junto con el fragmento de contenido. Las copias traducidas de los recursos se almacenan dentro de la raíz del idioma de destino adecuado en una ubicación que coincida con la ubicación física de los recursos de origen debajo de la raíz del idioma de origen.
 
 Para poder traducir fragmentos de contenido que incluyan medios mixtos, primero edite el marco de trabajo de traducción predeterminado para habilitar la traducción de recursos en línea y colecciones asociadas con fragmentos de contenido.
 
-1. AEM Haga clic en el logotipo de la y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Service]**.
+1. Haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Services]**.
 1. Busque **[!UICONTROL Integración de traducción]** en **[!UICONTROL Adobe Marketing Cloud]** y haga clic en **[!UICONTROL Mostrar configuraciones]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
