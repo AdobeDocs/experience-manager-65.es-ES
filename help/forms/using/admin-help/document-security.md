@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3301'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ La seguridad de los documentos garantiza que solo los usuarios autorizados pueda
 * Archivos Adobe PDF
 * Archivos de Microsoft® Word, Excel y PowerPoint
 
-Para obtener más información acerca de cómo las directivas protegen los tipos de archivo admitidos, vea [más información de seguridad de documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=es).
+Para obtener más información acerca de cómo las directivas protegen los tipos de archivo admitidos, vea [más información de seguridad de documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en).
 
 Con Document Security, puede crear, almacenar y aplicar fácilmente parámetros de confidencialidad predefinidos a sus documentos. Para evitar que la información se propague más allá de su alcance, también puede monitorizar y controlar cómo los destinatarios utilizan los documentos después de distribuirlos.
 
@@ -32,7 +32,7 @@ Puede proteger los documentos mediante políticas. Una *directiva* es una recopi
 
 Los usuarios de seguridad de los documentos crean directivas a través de las páginas web del usuario final. Los administradores utilizan las páginas web de Document Security para crear conjuntos de directivas que contienen directivas compartidas disponibles para todos los usuarios autorizados.
 
-Aunque las directivas se almacenan en Document Security, las aplica a los documentos a través de la aplicación cliente. En *Ayuda de Acrobat* se describe detalladamente cómo aplicar directivas a los documentos del PDF. La aplicación de directivas mediante otras aplicaciones, como Microsoft® Office, está documentada en la *Ayuda de extensiones de Acrobat Reader DC* para la aplicación.
+Aunque las directivas se almacenan en Document Security, las aplica a los documentos a través de la aplicación cliente. En *Ayuda de Acrobat* se describe detalladamente cómo aplicar directivas a documentos de PDF. La aplicación de directivas mediante otras aplicaciones, como Microsoft® Office, está documentada en la *Ayuda de extensiones de Acrobat Reader DC* para la aplicación.
 
 Cuando aplica una política a un documento, la configuración de confidencialidad especificada en la política protege la información que contiene el documento. La configuración de confidencialidad también protege cualquier archivo (texto, audio o vídeo) de un documento de PDF. Puede distribuir los documentos protegidos por una política a los destinatarios autorizados por esta.
 
@@ -134,7 +134,7 @@ Varios tipos de usuarios trabajan con Document Security para realizar diferentes
 * Los usuarios de la organización que tienen cuentas de seguridad de documentos válidas crean sus propias directivas, utilizan directivas para proteger documentos, rastrean y administran sus documentos protegidos por directivas y supervisan eventos relacionados con sus documentos.
 * Los coordinadores de conjuntos de directivas administran documentos, ven eventos y administran otros coordinadores de conjuntos de directivas (según sus permisos). Los administradores designan a los usuarios como coordinadores de conjuntos de directivas para conjuntos de directivas concretos.
 * Los usuarios externos a su organización (por ejemplo, un socio comercial) pueden utilizar documentos protegidos por directivas si se encuentran en el directorio de Document Security, si el administrador crea una cuenta para ellos o si se registran en Document Security mediante un proceso automatizado de invitación por correo electrónico. Según la forma en que el administrador habilite la configuración de acceso, los usuarios invitados también pueden tener permiso para aplicar directivas a los documentos, crear, modificar y eliminar sus directivas e invitar a otros usuarios externos a utilizar sus documentos protegidos por directivas.
-* Los desarrolladores utilizan el SDK de AEM Forms para integrar aplicaciones personalizadas con la seguridad de los documentos.
+* Los desarrolladores utilizan AEM Forms SDK para integrar aplicaciones personalizadas con la seguridad de los documentos.
 
 Los administradores de Document Security pueden crear funciones personalizadas mediante los siguientes permisos en Administración de usuarios:
 
@@ -176,7 +176,7 @@ Los pasos del diagrama son los siguientes:
 1. Document Security crea una licencia de documento y claves de documento y cifra la directiva. La licencia de documento, la directiva cifrada y la clave de documento se devuelven a la aplicación cliente.
 1. El documento se cifra con la clave del documento y esta se descarta. El documento ahora incrusta la licencia y la directiva. Estas tareas se realizan en la aplicación cliente admitida.
 
-Al aplicar una política a un documento, la información que contiene, incluidos los archivos contenidos (texto, audio o vídeo) en documentos de PDF, está protegida por la configuración de confidencialidad especificada en la política. Document Security genera una licencia e información de cifrado que luego se incrusta en el documento. Al distribuir el documento, Document Security puede autenticar los destinatarios que intentan abrir el documento y autorizar el acceso según los privilegios especificados en la directiva.
+Al aplicar una directiva a un documento, la información que contiene, incluidos los archivos contenidos (texto, audio o vídeo) en los documentos de PDF, está protegida por la configuración de confidencialidad especificada en la directiva. Document Security genera una licencia e información de cifrado que luego se incrusta en el documento. Al distribuir el documento, Document Security puede autenticar los destinatarios que intentan abrir el documento y autorizar el acceso según los privilegios especificados en la directiva.
 
 Si el uso sin conexión está habilitado, los destinatarios también pueden utilizar documentos protegidos por directivas sin conexión (sin una conexión activa a Internet o a la red) durante el período de tiempo especificado en la directiva.
 
@@ -235,7 +235,7 @@ Cuando se instala Document Security, se crea un conjunto de directivas predeterm
 
 Las directivas son conjuntos reutilizables de permisos y grupos de usuarios que se pueden aplicar a varios documentos. Para los documentos protegidos. Estas políticas garantizan que solo los usuarios autorizados puedan utilizar las funciones permitidas. Se espera que el número de directivas y conjuntos de directivas aumente con el aumento de diferentes funciones de usuario y documentos dentro de un departamento. Para crear y administrar directivas, estas son algunas consideraciones y prácticas recomendadas:
 
-* **Crear directivas reutilizables:** El Adobe recomienda reutilizar directivas en varios documentos. Ayuda a reducir al mínimo el número de directivas, proporciona un rendimiento óptimo y facilita su administración. Para crear una directiva reutilizable:
+* **Crear directivas reutilizables:** Adobe recomienda reutilizar directivas en varios documentos. Ayuda a reducir al mínimo el número de directivas, proporciona un rendimiento óptimo y facilita su administración. Para crear una directiva reutilizable:
 
 1. Identificar y definir los requisitos de control de acceso en los departamentos y organizaciones.
 
@@ -251,7 +251,7 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. F
 
   El uso de conjuntos de directivas facilita la asignación y administración de directivas relacionadas a usuarios específicos de una organización o departamento. Por ejemplo, los conjuntos de políticas independientes para el departamento de finanzas y recursos humanos pueden ayudar a administrar y aplicar fácilmente las políticas relacionadas a los documentos designados para los departamentos correspondientes.
 
-* **Use un autorizador externo para aplicar permisos de forma dinámica:** Puede usar [autorizador externo](https://help.adobe.com/es_ES/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para evaluar y aplicar permisos de forma dinámica según una condición externa. Cuando los permisos se evalúan dinámicamente en función de condiciones externas, puede:
+* **Use un autorizador externo para aplicar permisos de forma dinámica:** Puede usar [autorizador externo](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para evaluar y aplicar permisos de forma dinámica según una condición externa. Cuando los permisos se evalúan dinámicamente en función de condiciones externas, puede:
 
    * Proporcionar control de acceso centralizado a los documentos de su organización.
 
@@ -259,14 +259,14 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. F
 
    * Utilice un mecanismo de control de acceso que utilice el sistema de gestión de contenido, además del proceso de evaluación de directivas estándar. Por ejemplo, cuando el servicio determina si un usuario puede imprimir un documento protegido por una directiva, puede utilizar el proceso de evaluación de directivas estándar. También puede utilizar el mecanismo de control de acceso que utiliza su sistema de administración de contenido.
 
-  Aunque es posible reemplazar completamente el proceso de evaluación de directivas de Document Security por un controlador de autorización externo, se recomienda utilizar un controlador de autorización externa con el proceso de evaluación de directivas. Como resultado, el acceso a los documentos se puede controlar mediante el mismo mecanismo de control que utiliza el sistema de gestión de contenido. Por ejemplo, cuando el servicio Document Security determina si un usuario puede imprimir un documento protegido por una directiva, utiliza el proceso de evaluación de directivas estándar. También utiliza el mecanismo de control de acceso que utiliza el sistema de administración de contenido. Para obtener más información, vea [Crear controladores de autorización externos](https://help.adobe.com/es_ES/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Aunque es posible reemplazar completamente el proceso de evaluación de directivas de Document Security por un controlador de autorización externo, se recomienda utilizar un controlador de autorización externa con el proceso de evaluación de directivas. Como resultado, el acceso a los documentos se puede controlar mediante el mismo mecanismo de control que utiliza el sistema de gestión de contenido. Por ejemplo, cuando el servicio Document Security determina si un usuario puede imprimir un documento protegido por una directiva, utiliza el proceso de evaluación de directivas estándar. También utiliza el mecanismo de control de acceso que utiliza el sistema de administración de contenido. Para obtener más información, vea [Crear controladores de autorización externos](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Mantener los conjuntos de directivas en un número limitado:** Varios factores conducen al crecimiento constante de directivas y conjuntos de directivas. Algunos factores comunes son:
 
    * Aumento de los roles de usuario, departamentos y documentos dentro de una organización durante un periodo.
    * Los departamentos de una organización trabajan de forma aislada y mantienen un control estricto de las políticas específicas de cada departamento. Esto lleva a políticas idénticas dentro de una organización.
 
-  El Adobe recomienda mantener al mínimo el número de directivas y conjuntos de directivas. Ayuda a administrar fácilmente las políticas y los conjuntos de políticas y a proporcionar un mejor rendimiento. Para mantener el número al mínimo:
+  Adobe recomienda mantener al mínimo el número de directivas y conjuntos de directivas. Ayuda a administrar fácilmente las políticas y los conjuntos de políticas y a proporcionar un mejor rendimiento. Para mantener el número al mínimo:
 
    * Crear directivas reutilizables. Estas políticas se pueden compartir en varios departamentos.
    * Considere la posibilidad de crear conjuntos de directivas para toda la organización, si algunas directivas se aplican a varios departamentos en lugar de un conjunto de directivas individual para cada departamento.

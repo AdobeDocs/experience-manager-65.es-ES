@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '15394'
+source-wordcount: '15601'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,8 @@ Puede realizar estas tareas mediante el servicio Document Security:
 * Modificar directivas. Para obtener más información, consulte [Modificar directivas](protecting-documents-policies.md#modifying-policies).
 * Eliminar directivas. Para obtener más información, consulte [Eliminación de directivas](protecting-documents-policies.md#deleting-policies).
 * Aplicar directivas a documentos de PDF. Para obtener más información, vea [Aplicar directivas a documentos de PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents).
-* Quitar directivas de documentos de PDF. Para obtener más información, consulte [Quitar directivas de los documentos del PDF](protecting-documents-policies.md#removing-policies-from-pdf-documents).
-* Documentos protegidos por directivas de Inspect. Para obtener más información, consulte [Inspección de documentos de PDF protegidos por directivas](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
+* Quitar directivas de documentos de PDF. Para obtener más información, consulte [Quitar directivas de documentos de PDF](protecting-documents-policies.md#removing-policies-from-pdf-documents).
+* Inspeccionar documentos protegidos por directivas. Para obtener más información, consulte [Inspección de documentos de PDF protegidos por directivas](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
 * Revocar acceso a documentos de PDF. Para obtener más información, vea [Revocar acceso a documentos](protecting-documents-policies.md#revoking-access-to-documents).
 * Restablecer el acceso a los documentos revocados. Para obtener más información, consulte [Restablecer el acceso a documentos revocados](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
 * Crear marcas de agua. Para obtener más información, consulte [Creación de marcas de agua](protecting-documents-policies.md#creating-watermarks).
@@ -252,7 +252,7 @@ Cree una directiva mediante la API de seguridad de los documentos (Java):
 
    * Valor de cadena que representa el conjunto de directivas al que pertenece la directiva.
 
-   AEM Si usa una cuenta de administrador de formularios de la cuenta de usuario en la configuración de conexión para crear el objeto `DocumentSecurityClient`, especifique el nombre del conjunto de directivas cuando invoque el método `registerPolicy`. Si pasa un valor `null` para el conjunto de directivas, la directiva se crea en el conjunto de directivas *Mis directivas* de los administradores.
+   Si usa una cuenta de administrador de formularios AEM Forms en la configuración de conexión para crear el objeto `DocumentSecurityClient`, especifique el nombre del conjunto de directivas cuando invoque el método `registerPolicy`. Si pasa un valor `null` para el conjunto de directivas, la directiva se crea en el conjunto de directivas *Mis directivas* de los administradores.
 
    Si utiliza un usuario de Document Security en la configuración de conexión, puede invocar el método `registerPolicy` sobrecargado que solo acepta la directiva. Es decir, no es necesario especificar el nombre del conjunto de directivas. Sin embargo, la directiva se agrega al conjunto de directivas denominado *Mis directivas*. Si no desea agregar la nueva directiva a este conjunto de directivas, especifique un nombre de conjunto de directivas cuando invoque el método `registerPolicy`.
 
@@ -262,7 +262,7 @@ Cree una directiva mediante la API de seguridad de los documentos (Java):
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte lo siguiente:
 
-* SOAP &quot;Inicio rápido (modo de): Creación de una directiva mediante la API de Java&quot;
+* &quot;Inicio rápido (modo SOAP): Creación de una directiva con la API de Java&quot;
 
 ### Creación de una directiva mediante la API de servicio web {#create-a-policy-using-the-web-service-api}
 
@@ -284,7 +284,7 @@ Cree una directiva mediante la API de seguridad de los documentos (servicio web)
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
@@ -310,7 +310,7 @@ Cree una directiva mediante la API de seguridad de los documentos (servicio web)
    * El objeto `PolicySpec` que representa la directiva que se va a registrar.
    * Valor de cadena que representa el conjunto de directivas al que pertenece la directiva. Puede especificar un valor `null` que haga que la directiva se agregue al conjunto de directivas *MyPolices*.
 
-   AEM Si usa una cuenta de administrador de formularios de la cuenta de usuario en la configuración de conexión para crear el objeto `DocumentSecurityClient`, especifique el nombre del conjunto de directivas cuando invoque el método `registerPolicy`.
+   Si utiliza una cuenta de administrador de formularios AEM Forms en la configuración de conexión para crear el objeto `DocumentSecurityClient`, especifique el nombre del conjunto de directivas cuando invoque el método `registerPolicy`.
 
    Si utiliza un usuario de Document SecurityDocument Security en la configuración de conexión, puede invocar el método `registerPolicy` sobrecargado que solo acepta la directiva. Es decir, no es necesario especificar el nombre del conjunto de directivas. Sin embargo, la directiva se agrega al conjunto de directivas denominado *Mis directivas*. Si no desea agregar la nueva directiva a este conjunto de directivas, especifique un nombre de conjunto de directivas cuando invoque el método `registerPolicy`.
 
@@ -402,7 +402,7 @@ Modifique una directiva existente mediante la API de seguridad de los documentos
 
 **Ejemplos de código**
 
-SOAP Para obtener ejemplos de código utilizando el servicio Document Security, consulte la sección Inicio rápido (modo de): Modificación de una directiva mediante la API de Java.
+Para obtener ejemplos de código utilizando el servicio Document Security, consulte Inicio rápido (modo SOAP): Modificación de una directiva mediante la sección API de Java.
 
 ### Modificar directivas existentes mediante la API de servicio web {#modify-existing-policies-using-the-web-service-api}
 
@@ -424,7 +424,7 @@ Modifique una directiva existente mediante la API de seguridad de los documentos
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
@@ -505,7 +505,7 @@ Eliminar una directiva mediante la API de Document Security (Java):
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* SOAP &quot;Inicio rápido (modo de): Eliminación de una directiva mediante la API de Java&quot;
+* &quot;Inicio rápido (modo SOAP): Eliminación de una directiva mediante la API de Java&quot;
 
 ### Eliminar directivas mediante la API de servicio web {#delete-policies-using-the-web-service-api}
 
@@ -527,7 +527,7 @@ Eliminar una directiva mediante la API de Document Security (servicio web):
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
@@ -547,7 +547,7 @@ Para ver ejemplos de código utilizando el servicio Document Security, consulte 
 * &quot;Inicio rápido (MTOM): Eliminación de una directiva mediante la API del servicio web&quot;
 * &quot;Inicio rápido (SwaRef): Eliminación de una directiva mediante la API del servicio web&quot;
 
-## Aplicación de directivas a documentos de PDF {#applying-policies-to-pdf-documents}
+## Aplicar directivas a documentos de PDF {#applying-policies-to-pdf-documents}
 
 Puede aplicar una directiva a un documento de PDF para proteger el documento. Al aplicar una directiva a un documento de PDF, se restringe el acceso al documento. No puede aplicar una directiva a un documento si éste ya está protegido con una directiva.
 
@@ -567,7 +567,7 @@ Para aplicar una directiva a un documento de PDF, realice los siguientes pasos:
 1. Cree un objeto de la API de cliente de Document Security.
 1. Recupere un documento de PDF al que se aplique una directiva.
 1. Aplicar una directiva existente al documento de PDF.
-1. Guarde el documento de PDF protegido por una directiva.
+1. Guarde el documento de PDF protegido por políticas.
 
 **Incluir archivos de proyecto**
 
@@ -581,13 +581,13 @@ Para poder realizar mediante programación una operación del servicio Document 
 
 Puede recuperar un documento de PDF para aplicar una directiva. Después de aplicar una directiva al documento de PDF, los usuarios están restringidos al utilizar el documento. Por ejemplo, si la directiva no permite abrir el documento sin conexión, los usuarios deben estar en línea para abrirlo.
 
-**Aplicar una directiva existente al documento del PDF**
+**Aplicar una directiva existente al documento de PDF**
 
 Para aplicar una directiva a un documento de PDF, haga referencia a una directiva existente y especifique a qué conjunto de directivas pertenece la directiva. El usuario que configura las propiedades de conexión debe tener acceso a la directiva especificada. Si no es así, se produce una excepción.
 
-**Guardar el documento del PDF**
+**Guardar el documento de PDF**
 
-Una vez que el servicio Document Security aplica una directiva a un documento de PDF, puede guardar el documento de PDF protegido por una directiva como archivo de PDF.
+Una vez que el servicio Document Security aplica una directiva a un documento de PDF, puede guardar el documento de PDF protegido por directivas como archivo de PDF.
 
 **Consulte también**
 
@@ -599,7 +599,7 @@ Una vez que el servicio Document Security aplica una directiva a un documento de
 
 ### Aplicación de una directiva a un documento de PDF mediante la API de Java {#apply-a-policy-to-a-pdf-document-using-the-java-api}
 
-Aplicar una directiva a un documento de PDF mediante la API de Document Security (Java):
+Aplicar una directiva a un documento de PDF mediante la API de seguridad de los documentos (Java):
 
 1. Incluir archivos de proyecto.
 
@@ -612,7 +612,7 @@ Aplicar una directiva a un documento de PDF mediante la API de Document Security
 
 1. Recupere un documento de PDF.
 
-   * Cree un objeto `java.io.FileInputStream` que represente el documento del PDF mediante su constructor. Pase un valor de cadena que especifique la ubicación del documento del PDF.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF mediante su constructor. Pase un valor de cadena que especifique la ubicación del documento de PDF.
    * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Aplicar una directiva existente al documento de PDF.
@@ -628,12 +628,12 @@ Aplicar una directiva a un documento de PDF mediante la API de Document Security
       * Valor de cadena que representa el nombre canónico del usuario administrador de usuarios que es el editor del documento. Este valor de parámetro es opcional y puede ser `null` (si este parámetro es nulo, el valor del parámetro anterior debe ser `null`).
       * `com.adobe.livecycle.rightsmanagement.Locale` que representa la configuración regional utilizada para seleccionar la plantilla de MS Office. Este valor de parámetro es opcional y no se utiliza para documentos de PDF. Para proteger un documento de PDF, especifique `null`.
 
-     El método `protectDocument` devuelve un objeto `RMSecureDocumentResult` que contiene el documento de PDF protegido por una directiva.
+     El método `protectDocument` devuelve un objeto `RMSecureDocumentResult` que contiene el documento de PDF protegido por directivas.
 
-1. Guarde el documento del PDF.
+1. Guarde el documento de PDF.
 
    * Invoque el método `getProtectedDoc` del objeto `RMSecureDocumentResult` para obtener el documento de PDF protegido por directivas. Este método devuelve un objeto `com.adobe.idp.Document`.
-   * Cree un objeto `java.io.File` y asegúrese de que la extensión de archivo sea PDF.
+   * Cree un objeto `java.io.File` y asegúrese de que la extensión del archivo sea PDF.
    * Invoque el método `copyToFile` del objeto `com.adobe.idp.Document` para copiar el contenido del objeto `Document` en el archivo (asegúrese de utilizar el objeto `Document` devuelto por el método `getProtectedDoc`).
 
 **Ejemplos de código**
@@ -641,7 +641,7 @@ Aplicar una directiva a un documento de PDF mediante la API de Document Security
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
 * &quot;Inicio rápido (modo EJB): Aplicar una directiva a un documento de PDF mediante la API de Java&quot;
-* SOAP &quot;Inicio rápido (modo de): Aplicar una directiva a un documento de PDF mediante la API de Java&quot;
+* &quot;Inicio rápido (modo SOAP): Aplicar una directiva a un documento de PDF mediante la API de Java&quot;
 
 **Consulte también**
 
@@ -669,7 +669,7 @@ Aplicar una directiva a un documento de PDF mediante la API de Document Security
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
@@ -698,11 +698,11 @@ Aplicar una directiva a un documento de PDF mediante la API de Document Security
    * Un parámetro de salida de cadena que se utiliza para almacenar el valor del identificador protegido por una directiva.
    * Un parámetro de salida de cadena que se usa para almacenar el tipo MIME (por ejemplo, `application/pdf`).
 
-   El método `protectDocument` devuelve un objeto `BLOB` que contiene el documento de PDF protegido por una directiva.
+   El método `protectDocument` devuelve un objeto `BLOB` que contiene el documento de PDF protegido por directivas.
 
-1. Guarde el documento del PDF.
+1. Guarde el documento de PDF.
 
-   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF protegido por una directiva.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF protegido por directivas.
    * Cree una matriz de bytes que almacene el contenido de datos del objeto `BLOB` devuelto por el método `protectDocument`. Rellene la matriz de bytes obteniendo el valor del miembro de datos `MTOM` del objeto `BLOB`.
    * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
    * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `Write` del objeto `System.IO.BinaryWriter` y pasando la matriz de bytes.
@@ -724,12 +724,12 @@ Puede quitar una directiva de un documento protegido por una directiva para quit
 
 ### Resumen de los pasos {#summary_of_steps-4}
 
-Para quitar una directiva de un documento de PDF protegido por una directiva, realice los siguientes pasos:
+Para quitar una directiva de un documento de PDF protegido por directivas, realice los siguientes pasos:
 
 1. Incluir archivos de proyecto
 1. Cree un objeto de la API de cliente de Document Security.
-1. Recupere un documento de PDF protegido por una directiva.
-1. Quite la directiva del documento de PDF.
+1. Recupere un documento de PDF protegido por políticas.
+1. Elimine la directiva del documento de PDF.
 1. Guarde el documento de PDF no protegido.
 
 **Incluir archivos de proyecto**
@@ -740,7 +740,7 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando u
 
 Para poder realizar mediante programación una operación del servicio Document Security, cree un objeto de cliente del servicio Document Security.
 
-**Recuperar un documento de PDF protegido por una directiva**
+**Recuperar un documento de PDF protegido por directivas**
 
 Puede recuperar un documento de PDF protegido por una directiva para quitar una directiva. Si intenta quitar una directiva de un documento de PDF que no está protegido por una directiva, se producirá una excepción.
 
@@ -758,11 +758,11 @@ Una vez que el servicio Document Security quita una directiva de un documento de
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Aplicación de directivas a documentos de PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
+[Aplicar directivas a documentos de PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
 ### Eliminación de una directiva de un documento de PDF mediante la API de Java {#remove-a-policy-from-a-pdf-document-using-the-java-api}
 
-Elimine una directiva de un documento de PDF protegido por una directiva mediante la API de Document Security (Java):
+Elimine una directiva de un documento de PDF protegido por directivas mediante la API de seguridad de los documentos (Java):
 
 1. Incluir archivos de proyecto.
 
@@ -773,26 +773,26 @@ Elimine una directiva de un documento de PDF protegido por una directiva mediant
    * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
    * Cree un objeto `DocumentSecurityClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
-1. Recupere un documento de PDF protegido por una directiva.
+1. Recupere un documento de PDF protegido por políticas.
 
    * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF protegido por directivas utilizando su constructor y pasando un valor de cadena que especifique la ubicación del documento de PDF.
    * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
-1. Quite la directiva del documento de PDF.
+1. Elimine la directiva del documento de PDF.
 
    * Cree un objeto `DocumentManager` invocando el método `getDocumentManager` del objeto `DocumentSecurityClient`.
    * Quite una directiva del documento de PDF invocando el método `removeSecurity` del objeto `DocumentManager` y pasando el objeto `com.adobe.idp.Document` que contiene el documento de PDF protegido por directivas. Este método devuelve un objeto `com.adobe.idp.Document` que contiene un documento de PDF no protegido.
 
 1. Guarde el documento de PDF no protegido.
 
-   * Cree un objeto `java.io.File` y asegúrese de que la extensión de archivo sea PDF.
+   * Cree un objeto `java.io.File` y asegúrese de que la extensión del archivo sea PDF.
    * Invoque el método `copyToFile` del objeto `Document` para copiar el contenido del objeto `Document` en el archivo (asegúrese de utilizar el objeto `Document` devuelto por el método `removeSecurity`).
 
 **Ejemplos de código**
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* SOAP &quot;Inicio rápido (modo de): Eliminación de una directiva de un documento de PDF mediante la API de Java&quot;
+* &quot;Inicio rápido (modo SOAP): Eliminación de una directiva de un documento de PDF mediante la API de Java&quot;
 
 ### Eliminación de una directiva mediante la API de servicio web {#remove-a-policy-using-the-web-service-api}
 
@@ -814,21 +814,21 @@ Quitar una directiva de un documento de PDF protegido por una directiva mediante
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Recupere un documento de PDF protegido por una directiva.
+1. Recupere un documento de PDF protegido por políticas.
 
-   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar el documento de PDF protegido por una directiva del que se quita la directiva.
+   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar el documento de PDF protegido por directivas del que se quita la directiva.
    * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF y el modo en que se abrirá el archivo.
    * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
    * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream` y pasando la matriz de bytes, la posición inicial y la longitud de secuencia para que se lea.
    * Rellene el objeto `BLOB` asignando su campo `MTOM` con el contenido de la matriz de bytes.
 
-1. Quite la directiva del documento de PDF.
+1. Elimine la directiva del documento de PDF.
 
    Quite la directiva del documento de PDF invocando el método `removePolicySecurity` del objeto `DocumentSecurityServiceClient` y pasando el objeto `BLOB` que contiene el documento de PDF protegido por directivas. Este método devuelve un objeto `BLOB` que contiene un documento de PDF no protegido.
 
@@ -853,7 +853,7 @@ Para ver ejemplos de código utilizando el servicio Document Security, consulte 
 
 ## Revocar acceso a documentos {#revoking-access-to-documents}
 
-Puede revocar el acceso a un documento PDF protegido por una directiva, lo que hace que todas las copias del documento sean inaccesibles para los usuarios. Cuando un usuario intenta abrir un documento de PDF revocado, se le redirige a una URL especificada donde se puede ver un documento revisado. La dirección URL a la que se redirige al usuario debe especificarse mediante programación. Cuando se anula el acceso a un documento, el cambio surte efecto la próxima vez que el usuario se sincronice con el servicio de Document Security abriendo el documento protegido por políticas en línea.
+Puede revocar el acceso a un documento de PDF protegido por una directiva, lo que hace que todas las copias del documento sean inaccesibles para los usuarios. Cuando un usuario intenta abrir un documento de PDF revocado, se le redirige a una URL especificada donde se puede ver un documento revisado. La dirección URL a la que se redirige al usuario debe especificarse mediante programación. Cuando se anula el acceso a un documento, el cambio surte efecto la próxima vez que el usuario se sincronice con el servicio de Document Security abriendo el documento protegido por políticas en línea.
 
 La capacidad de revocar el acceso a un documento proporciona seguridad adicional. Por ejemplo, supongamos que hay disponible una versión más reciente de un documento y que ya no desea que nadie vea la versión obsoleta. En este caso, el acceso al documento anterior se puede revocar y nadie puede ver el documento a menos que se restablezca el acceso.
 
@@ -867,7 +867,7 @@ Para revocar un documento protegido por una directiva, realice los siguientes pa
 
 1. Incluir archivos de proyecto.
 1. Cree un objeto de la API de cliente de Document Security.
-1. Recupere un documento de PDF protegido por una directiva.
+1. Recupere un documento de PDF protegido por políticas.
 1. Revocar el documento protegido por una directiva.
 
 **Incluir archivos de proyecto**
@@ -878,11 +878,11 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando u
 
 Para poder realizar mediante programación una operación del servicio Document Security, debe crear un objeto de cliente del servicio Document Security.
 
-**Recuperar un documento de PDF protegido por una directiva**
+**Recuperar un documento de PDF protegido por directivas**
 
 Recupere un documento de PDF protegido por una directiva para revocarlo. No puede revocar un documento que ya se haya revocado o que no sea un documento protegido por una directiva.
 
-Si conoce el valor del identificador de licencia del documento protegido por una directiva, no es necesario recuperar el documento de PDF protegido por una directiva. Sin embargo, en la mayoría de los casos, debe recuperar el documento del PDF para obtener el valor del identificador de licencia.
+Si conoce el valor del identificador de licencia del documento protegido por políticas, no es necesario recuperar el documento de PDF protegido por políticas. Sin embargo, en la mayoría de los casos, debe recuperar el documento de PDF para obtener el valor del identificador de licencia.
 
 **Revocar el documento protegido por una directiva**
 
@@ -898,13 +898,13 @@ Para revocar un documento protegido por una directiva, especifique el identifica
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Aplicación de directivas a documentos de PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
+[Aplicar directivas a documentos de PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
 [Restablecer el acceso a los documentos revocados](protecting-documents-policies.md#reinstating-access-to-revoked-documents)
 
 ### Revocar acceso a documentos mediante la API de Java {#revoke-access-to-documents-using-the-java-api}
 
-Revocar acceso a un documento de PDF protegido por una directiva mediante la API de Document Security (Java):
+Revocar acceso a un documento de PDF protegido por políticas mediante la API de Document Security (Java):
 
 1. Incluir archivos de proyecto
 
@@ -915,7 +915,7 @@ Revocar acceso a un documento de PDF protegido por una directiva mediante la API
    * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
    * Cree un objeto `DocumentSecurityClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
-1. Recuperar un documento de PDF protegido por una directiva
+1. Recuperar un documento de PDF protegido por políticas
 
    * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF protegido por directivas utilizando su constructor y pasando un valor de cadena que especifique la ubicación del documento de PDF.
    * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
@@ -935,11 +935,11 @@ Revocar acceso a un documento de PDF protegido por una directiva mediante la API
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* SOAP &quot;Inicio rápido (modo de): Revocar un documento mediante la API de Java&quot;
+* &quot;Inicio rápido (modo SOAP): Revocar un documento mediante la API de Java&quot;
 
 ### Revocar acceso a documentos mediante la API de servicio web {#revoke-access-to-documents-using-the-web-service-api}
 
-Revocar acceso a un documento de PDF protegido por una directiva mediante la API de Document Security (servicio web):
+Revocar acceso a un documento de PDF protegido por políticas mediante la API de seguridad de los documentos (servicio web):
 
 1. Incluir archivos de proyecto
 
@@ -957,15 +957,15 @@ Revocar acceso a un documento de PDF protegido por una directiva mediante la API
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Recuperar un documento de PDF protegido por una directiva
+1. Recuperar un documento de PDF protegido por políticas
 
-   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar un documento de PDF protegido por una directiva que se ha revocado.
+   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar un documento de PDF protegido por directivas que se ha revocado.
    * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF protegido por una directiva que se va a revocar y el modo en que se va a abrir el archivo.
    * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
    * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream` y pasando la matriz de bytes, la posición inicial y la longitud de secuencia para que se lea.
@@ -1034,7 +1034,7 @@ Para restablecer el acceso a un documento de PDF revocado, debe especificar el i
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Aplicación de directivas a documentos de PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
+[Aplicar directivas a documentos de PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
 [Revocar acceso a documentos](protecting-documents-policies.md#revoking-access-to-documents)
 
@@ -1067,7 +1067,7 @@ Restablezca el acceso a un documento revocado mediante la API de seguridad de lo
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* SOAP &quot;Inicio rápido (modo de): Restablecimiento del acceso a un documento revocado mediante la API del servicio web&quot;
+* &quot;Inicio rápido (modo SOAP): Restablecer el acceso a un documento revocado mediante la API del servicio web&quot;
 
 ### Restablecer el acceso a los documentos revocados mediante la API del servicio web {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
@@ -1089,7 +1089,7 @@ Restablezca el acceso a un documento revocado mediante la API de seguridad de lo
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
@@ -1097,8 +1097,8 @@ Restablezca el acceso a un documento revocado mediante la API de seguridad de lo
 
 1. Recupere el identificador de licencia del documento de PDF revocado.
 
-   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar un documento de PDF revocado al que se restablece el acceso.
-   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF revocado y el modo en que se abrirá el archivo.
+   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar un documento de PDF revocado al que se ha restablecido el acceso.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF revocado y el modo en que se debe abrir el archivo.
    * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
    * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream` y pasando la matriz de bytes, la posición inicial y la longitud de secuencia para que se lea.
    * Rellene el objeto `BLOB` asignando su campo `MTOM` con el contenido de la matriz de bytes.
@@ -1121,11 +1121,11 @@ Para ver ejemplos de código utilizando el servicio Document Security, consulte 
 
 [Invocar AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Inspección de documentos de PDF protegidos por directivas {#inspecting-policy-protected-pdf-documents}
+## Inspeccionar documentos de PDF protegidos por directivas {#inspecting-policy-protected-pdf-documents}
 
-Puede utilizar la API del servicio de seguridad de los documentos (Java y servicio web) para inspeccionar documentos de PDF protegidos por políticas. La inspección de documentos de PDF protegidos por directivas devuelve información sobre el documento de PDF protegido por directivas. Por ejemplo, puede determinar la directiva que se utilizó para proteger el documento y la fecha en la que se protegió.
+Puede utilizar la API del servicio de seguridad de los documentos (Java y servicio web) para inspeccionar documentos de PDF protegidos por directivas. La inspección de documentos de PDF protegidos por directivas devuelve información sobre el documento de PDF protegido por directivas. Por ejemplo, puede determinar la directiva que se utilizó para proteger el documento y la fecha en la que se protegió.
 
-No puede realizar esta tarea si la versión del LiveCycle es 8.x o una versión anterior. La compatibilidad con la inspección de documentos protegidos por directivas se agrega en AEM Forms. Si intenta inspeccionar un documento protegido por una directiva mediante el LiveCycle 8.x (o una versión anterior), se genera una excepción.
+No puede realizar esta tarea si la versión de LiveCycle es 8.x o una versión anterior. La compatibilidad con la inspección de documentos protegidos por directivas se agrega en AEM Forms. Si intenta inspeccionar un documento protegido por una directiva mediante LiveCycle 8.x (o anterior), se produce una excepción.
 
 >[!NOTE]
 >
@@ -1133,7 +1133,7 @@ No puede realizar esta tarea si la versión del LiveCycle es 8.x o una versión 
 
 ### Resumen de los pasos {#summary_of_steps-7}
 
-Para inspeccionar un documento de PDF protegido por una directiva, realice los siguientes pasos:
+Para inspeccionar un documento de PDF protegido por políticas, realice los siguientes pasos:
 
 1. Incluir archivos de proyecto.
 1. Cree un objeto de la API de cliente de Document Security.
@@ -1152,13 +1152,13 @@ Para poder realizar mediante programación una operación del servicio Document 
 
 Para inspeccionar un documento protegido por una directiva, recupere el documento. Si intenta inspeccionar un documento que no está protegido con una directiva o que está revocado, se produce una excepción.
 
-**Inspect el documento**
+**Inspeccionar el documento**
 
 Después de recuperar un documento protegido por una directiva, puede inspeccionarlo.
 
 **Obtener información acerca del documento protegido por directivas**
 
-Después de inspeccionar un documento de PDF protegido por una directiva, puede obtener información sobre él. Por ejemplo, puede determinar la directiva que se utiliza para proteger el documento.
+Después de inspeccionar un documento de PDF protegido por políticas, puede obtener información sobre él. Por ejemplo, puede determinar la directiva que se utiliza para proteger el documento.
 
 Si protege un documento con una directiva que pertenece a Mis directivas y luego llama a `RMInspectResult.getPolicysetName` o `RMInspectResult.getPolicysetId`, se devuelve nulo.
 
@@ -1170,9 +1170,9 @@ Si el documento está protegido mediante una directiva contenida en un conjunto 
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Documentos de PDF protegidos por directivas de Inspect que utilizan la API de Java {#inspect-policy-protected-pdf-documents-using-the-java-api}
+### Inspeccionar documentos de PDF protegidos por directivas mediante la API de Java {#inspect-policy-protected-pdf-documents-using-the-java-api}
 
-Inspect crea un documento de PDF protegido por políticas mediante la API del servicio de seguridad de los documentos (Java):
+Inspeccione un documento de PDF protegido por políticas utilizando la API del servicio de seguridad de los documentos (Java):
 
 1. Incluir archivos de proyecto.
 
@@ -1185,13 +1185,13 @@ Inspect crea un documento de PDF protegido por políticas mediante la API del se
 
 1. Recupere un documento protegido por una directiva para inspeccionarlo.
 
-   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF protegido por directivas mediante su constructor. Pase un valor de cadena que especifique la ubicación del documento del PDF.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF protegido por directivas mediante su constructor. Pase un valor de cadena que especifique la ubicación del documento de PDF.
    * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
-1. Inspect el documento.
+1. Inspeccione el documento.
 
    * Cree un objeto `DocumentManager` invocando el método `getDocumentManager` del objeto `RightsManagementClient`.
-   * Inspect el documento protegido por directivas invocando el método `inspectDocument` del objeto `LicenseManager`. Pase el objeto `com.adobe.idp.Document` que contiene el documento de PDF protegido por directivas. Este método devuelve un objeto `RMInspectResult` que contiene información sobre el documento protegido por una directiva.
+   * Inspeccione el documento protegido por directivas invocando el método `inspectDocument` del objeto `LicenseManager`. Pase el objeto `com.adobe.idp.Document` que contiene el documento de PDF protegido por directivas. Este método devuelve un objeto `RMInspectResult` que contiene información sobre el documento protegido por una directiva.
 
 1. Obtenga información sobre el documento protegido por políticas.
 
@@ -1201,11 +1201,11 @@ Inspect crea un documento de PDF protegido por políticas mediante la API del se
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* SOAP &quot;Inicio rápido (modo de): Inspección de documentos de PDF protegidos por directivas mediante la API de Java&quot;
+* &quot;Inicio rápido (modo SOAP): Inspección de documentos de PDF protegidos por directivas mediante la API de Java&quot;
 
-### Documentos de PDF protegidos por directivas de Inspect que utilizan la API de servicio web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
+### Inspeccionar documentos de PDF protegidos por directivas mediante la API de servicio web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
-Inspect crea un documento de PDF protegido por políticas mediante la API del servicio de seguridad de los documentos (servicio web):
+Inspeccione un documento de PDF protegido por políticas utilizando la API del servicio de seguridad de los documentos (servicio web):
 
 1. Incluir archivos de proyecto.
 
@@ -1223,7 +1223,7 @@ Inspect crea un documento de PDF protegido por políticas mediante la API del se
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
@@ -1231,15 +1231,15 @@ Inspect crea un documento de PDF protegido por políticas mediante la API del se
 
 1. Recupere un documento protegido por una directiva para inspeccionarlo.
 
-   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar un documento de PDF para inspeccionar.
+   * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar un documento de PDF que inspeccionar.
    * Cree un objeto `System.IO.FileStream` invocando su constructor. Pase un valor de cadena que represente la ubicación del archivo del documento de PDF y el modo para abrir el archivo en.
    * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `Length` del objeto `System.IO.FileStream`.
    * Rellene la matriz de bytes con datos de secuencia invocando el método `Read` del objeto `System.IO.FileStream`. Pase la matriz de bytes, la posición inicial y la longitud de la secuencia a leer.
    * Rellene el objeto `BLOB` asignando su campo `MTOM` con el contenido de la matriz de bytes.
 
-1. Inspect el documento.
+1. Inspeccione el documento.
 
-   Inspect el documento protegido por directivas invocando el método `inspectDocument` del objeto `RightsManagementServiceClient`. Pase el objeto `BLOB` que contiene el documento de PDF protegido por directivas. Este método devuelve un objeto `RMInspectResult` que contiene información sobre el documento protegido por una directiva.
+   Inspeccione el documento protegido por directivas invocando el método `inspectDocument` del objeto `RightsManagementServiceClient`. Pase el objeto `BLOB` que contiene el documento de PDF protegido por directivas. Este método devuelve un objeto `RMInspectResult` que contiene información sobre el documento protegido por una directiva.
 
 1. Obtenga información sobre el documento protegido por políticas.
 
@@ -1389,7 +1389,7 @@ Se debe registrar una nueva marca de agua con el servicio Document Security para
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Aplicación de directivas a documentos de PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
+[Aplicar directivas a documentos de PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
 ### Creación de marcas de agua mediante la API de Java {#create-watermarks-using-the-java-api}
 
@@ -1421,7 +1421,7 @@ Crear una marca de agua mediante la API de seguridad de los documentos (Java):
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte los siguientes tutoriales rápidos:
 
-* SOAP &quot;Inicio rápido (modo de): Creación de una marca de agua mediante la API de Java&quot;
+* &quot;Inicio rápido (modo SOAP): Creación de una marca de agua con la API de Java&quot;
 
 ### Creación de marcas de agua mediante la API de servicio web {#create-watermarks-using-the-web-service-api}
 
@@ -1443,7 +1443,7 @@ Crear una marca de agua mediante la API de Document Security (servicio web):
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
@@ -1568,7 +1568,7 @@ Modifique una marca de agua mediante la API de seguridad de los documentos (Java
 
 **Ejemplos de código**
 
-SOAP Para obtener ejemplos de código utilizando el servicio Document Security, consulte la sección Inicio rápido (modo de): Modificación de una marca de agua mediante la API de Java.
+Para obtener ejemplos de código utilizando el servicio Document Security, consulte Inicio rápido (modo SOAP): Modificación de una marca de agua mediante la sección API de Java.
 
 ### Modificación de marcas de agua mediante la API de servicio web {#modify-watermarks-using-the-web-service-api}
 
@@ -1590,7 +1590,7 @@ Modificar una marca de agua mediante la API de seguridad de los documentos (serv
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
@@ -1620,20 +1620,20 @@ Para ver ejemplos de código utilizando el servicio Document Security, consulte 
 
 ## Búsqueda de eventos {#searching-for-events}
 
-El servicio Rights Management realiza un seguimiento de acciones específicas a medida que se producen, como aplicar una directiva a un documento, abrir un documento protegido por una directiva y revocar el acceso a documentos. La auditoría de eventos debe estar habilitada para el servicio de Rights Management o no se realiza un seguimiento de los eventos.
+El servicio Rights Management realiza un seguimiento de acciones específicas a medida que se producen, como aplicar una directiva a un documento, abrir un documento protegido por una directiva y revocar el acceso a documentos. La auditoría de eventos debe estar habilitada para el servicio Rights Management o no se realiza un seguimiento de los eventos.
 
 Los eventos se clasifican en una de las siguientes categorías:
 
 * Los eventos de administrador son acciones relacionadas con un administrador, como crear una cuenta de administrador.
 * Los eventos de documento son acciones relacionadas con un documento, como cerrar un documento protegido por una directiva.
 * Los eventos de directiva son acciones relacionadas con una directiva, como crear una directiva.
-* Los eventos de servicio son acciones relacionadas con el servicio de Rights Management, como la sincronización con el directorio de usuario.
+* Los eventos de servicio son acciones relacionadas con el servicio Rights Management, como la sincronización con el directorio de usuario.
 
-Puede buscar eventos específicos utilizando la API de Java de Rights Management o la API del servicio web. Al buscar eventos, puede realizar tareas como, por ejemplo, crear un archivo de registro de ciertos eventos.
+Puede buscar eventos específicos mediante la API de Java de Rights Management o la API de servicio web. Al buscar eventos, puede realizar tareas como, por ejemplo, crear un archivo de registro de ciertos eventos.
 
 >[!NOTE]
 >
->Para obtener más información acerca del servicio de Rights Management, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obtener más información acerca del servicio Rights Management, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumen de los pasos {#summary_of_steps-10}
 
@@ -1658,7 +1658,7 @@ Especifique el evento que desea buscar. Por ejemplo, puede buscar el evento de c
 
 **Buscar el evento**
 
-Una vez especificado el evento que se va a buscar, se puede utilizar la API de Java de Rights Management o la API del servicio web de Rights Management para buscar el evento.
+Después de especificar el evento que desea buscar, puede utilizar la API de Java de Rights Management o la API del servicio web de Rights Management para buscar el evento.
 
 **Consulte también**
 
@@ -1694,9 +1694,9 @@ Busque eventos mediante la API de Rights Management (Java):
 
 **Ejemplos de código**
 
-Para obtener ejemplos de código utilizando el servicio Rights Management, consulte los siguientes tutoriales rápidos:
+Para ver ejemplos de código utilizando el servicio Rights Management, consulte los siguientes tutoriales rápidos:
 
-* SOAP &quot;Inicio rápido (): Búsqueda de eventos mediante la API de Java&quot;
+* &quot;Inicio rápido (SOAP): Búsqueda de eventos mediante la API de Java&quot;
 
 ### Búsqueda de eventos mediante la API de servicio web {#search-for-events-using-the-web-service-api}
 
@@ -1718,7 +1718,7 @@ Busque eventos mediante la API de Rights Management (servicio web):
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
@@ -1938,7 +1938,7 @@ Busque eventos mediante la API de Rights Management (servicio web):
 
 **Ejemplos de código**
 
-Para obtener ejemplos de código utilizando el servicio Rights Management, consulte los siguientes tutoriales rápidos:
+Para ver ejemplos de código utilizando el servicio Rights Management, consulte los siguientes tutoriales rápidos:
 
 * &quot;Inicio rápido (MTOM): Búsqueda de eventos mediante la API de servicio web&quot;
 * &quot;Inicio rápido (SwaRef): Búsqueda de eventos mediante la API del servicio web&quot;
@@ -2040,7 +2040,7 @@ Aplicar una directiva a un documento de Word mediante la API de Document Securit
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte el siguiente Inicio rápido:
 
-* SOAP &quot;Inicio rápido (modo de): Aplicar una directiva a un documento de Word mediante la API de Java&quot;
+* &quot;Inicio rápido (modo SOAP): Aplicar una directiva a un documento de Word mediante la API de Java&quot;
 
 ### Aplicar una directiva a un documento de Word mediante la API de servicio web {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
@@ -2062,7 +2062,7 @@ Aplicar una directiva a un documento de Word mediante la API de Document Securit
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
@@ -2184,7 +2184,7 @@ Quitar una directiva de un documento de Word protegido por una directiva mediant
 
 Para ver ejemplos de código utilizando el servicio Document Security, consulte el siguiente Inicio rápido:
 
-* SOAP &quot;Inicio rápido (modo de): Quitar una directiva de un documento de Word mediante la API de Java&quot;
+* &quot;Inicio rápido (modo SOAP): Quitar una directiva de un documento de Word mediante la API de Java&quot;
 
 ### Quitar una directiva de un documento de Word mediante la API de servicio web {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 
@@ -2206,7 +2206,7 @@ Quitar una directiva de un documento de Word protegido por una directiva mediant
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 

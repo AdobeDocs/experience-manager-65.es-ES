@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 69%
+source-wordcount: '989'
+ht-degree: 64%
 
 ---
 
@@ -70,7 +70,7 @@ La siguiente tabla muestra cómo la seguridad de documentos organiza los datos e
   </tr>
   <tr>
    <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (Bases de datos de Oracle y MS® SQL)</p> </td>
-   <td>Almacena la asignación entre el conjunto de directivas y los usuarios.</td>
+   <td>Almacena la asignación entre el conjunto de políticas y los usuarios.</td>
   </tr>
   <tr>
    <td><code>EdcInvitedUserEntity</code></td>
@@ -194,8 +194,8 @@ Haga lo siguiente para eliminar los datos de seguridad del documento para un ID 
    **Usar la consola de administración**
 
    1. Inicie sesión como administrador en la consola de administración de Forms JEE en https://[*server*]:[*port*]/adminui.
-   1. Navegue hasta **[!UICONTROL Servicios > Seguridad de documentos > Conjuntos de directivas]**.
-   1. Abra un conjunto de directivas y elimine el usuario de la directiva.
+   1. Navegue hasta **[!UICONTROL Servicios > Seguridad de documentos > Conjuntos de políticas]**.
+   1. Abra un conjunto de políticas y elimine el usuario de la política.
 
    **Usar la página web de seguridad de documentos**
 

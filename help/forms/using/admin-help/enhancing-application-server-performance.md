@@ -1,6 +1,6 @@
 ---
 title: Mejorar el rendimiento del servidor de aplicaciones
-description: AEM En este documento se describen las opciones opcionales que puede configurar para mejorar el rendimiento del servidor de aplicaciones de formularios en la aplicación de la aplicación de la aplicación de formularios de la.
+description: En este documento se describen las opciones opcionales que se pueden configurar para mejorar el rendimiento del servidor de aplicaciones de AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
@@ -11,20 +11,20 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1904'
 ht-degree: 0%
 
 ---
 
 # Mejorar el rendimiento del servidor de aplicaciones{#enhancing-application-server-performance}
 
-AEM En este contenido se describen las opciones opcionales que puede configurar para mejorar el rendimiento del servidor de aplicaciones de Forms en modo de.
+En este contenido se describen las opciones opcionales que se pueden configurar para mejorar el rendimiento del servidor de aplicaciones de AEM Forms.
 
 ## Configuración de fuentes de datos del servidor de aplicaciones {#configuring-application-server-data-sources}
 
-AEM AEM La fuente de datos de la aplicación de formularios utiliza el repositorio de formularios de. AEM El repositorio de formularios almacena recursos de la aplicación y, en tiempo de ejecución, los servicios pueden recuperar recursos del repositorio como parte de la finalización de un proceso empresarial automatizado.
+AEM Forms utiliza el repositorio de formularios de AEM como fuente de datos. El repositorio de formularios de AEM almacena recursos de la aplicación y, en tiempo de ejecución, los servicios pueden recuperar recursos del repositorio como parte de la finalización de un proceso empresarial automatizado.
 
-AEM El acceso al origen de datos puede ser significativo, en función del número de módulos de formularios en el que se ejecuta y del número de usuarios simultáneos que acceden a la aplicación. El acceso a la fuente de datos se puede optimizar mediante la agrupación de conexiones. *Agrupación de conexiones* es una técnica que se usa para evitar la sobrecarga de realizar nuevas conexiones de base de datos cada vez que una aplicación o un objeto de servidor requiere acceso a la base de datos. La agrupación de conexiones se utiliza generalmente en aplicaciones empresariales y basadas en la web, y la gestiona, entre otras cosas, un servidor de aplicaciones.
+El acceso al origen de datos puede ser significativo, en función del número de módulos de formularios AEM Forms que se estén ejecutando y del número de usuarios simultáneos que accedan a la aplicación. El acceso a la fuente de datos se puede optimizar mediante la agrupación de conexiones. *Agrupación de conexiones* es una técnica que se usa para evitar la sobrecarga de realizar nuevas conexiones de base de datos cada vez que una aplicación o un objeto de servidor requiere acceso a la base de datos. La agrupación de conexiones se utiliza generalmente en aplicaciones empresariales y basadas en la web, y la gestiona, entre otras cosas, un servidor de aplicaciones.
 
 Es importante configurar correctamente los parámetros del grupo de conexiones para que nunca se quede sin conexiones, lo que puede provocar que el rendimiento de la aplicación se deteriore.
 
@@ -63,7 +63,7 @@ Cuando el administrador del servidor de aplicaciones determina la configuración
 
 ### Configuración del grupo de conexiones para WebSphere para DB2 {#configure-connection-pool-settings-for-websphere-for-db2}
 
-1. En el árbol de navegación, haga clic en Recursos > JDBC > Proveedores JDBC. En el panel derecho, haga clic en la fuente de datos que ha creado, ya sea Proveedor de controlador JDBC universal de DB2 o LiveCycle - db2 - IDP_DS.
+1. En el árbol de navegación, haga clic en Recursos > JDBC > Proveedores JDBC. En el panel derecho, haga clic en el origen de datos que ha creado, ya sea Proveedor de controlador JDBC universal de DB2 o LiveCycle - db2 - IDP_DS.
 1. En Propiedades adicionales, haga clic en Fuentes de datos y, a continuación, seleccione IDP_DS.
 1. En la siguiente pantalla, en Propiedades adicionales, haga clic en Propiedades del grupo de conexiones e introduzca un valor en el cuadro Máximo de conexiones y en el cuadro Mínimo de conexiones.
 1. Haga clic en Aceptar o Aplicar y, a continuación, haga clic en Guardar directamente en configuración maestra.
@@ -84,16 +84,16 @@ Cuando el administrador del servidor de aplicaciones determina la configuración
 
 ## Optimización de documentos en línea e impacto en la memoria JVM {#optimizing-inline-documents-and-impact-on-jvm-memory}
 
-Si normalmente procesa documentos de un tamaño relativamente pequeño, puede mejorar el rendimiento asociado con la velocidad de transferencia de documentos y el espacio de almacenamiento. AEM Para ello, implemente las siguientes configuraciones de producto de formularios en la forma que desee:
+Si normalmente procesa documentos de un tamaño relativamente pequeño, puede mejorar el rendimiento asociado con la velocidad de transferencia de documentos y el espacio de almacenamiento. Para ello, implemente las siguientes configuraciones de producto de los formularios AEM Forms:
 
-* AEM Aumente el tamaño máximo en línea del documento predeterminado para los formularios en línea de modo que sea mayor que el tamaño de la mayoría de los documentos.
+* Aumente el tamaño máximo en línea del documento predeterminado para los formularios de AEM de modo que sea mayor que el tamaño de la mayoría de los documentos.
 * Para procesar archivos de mayor tamaño, especifique los directorios de almacenamiento que se encuentran en un sistema de disco de alta velocidad o en un disco RAM.
 
-AEM El tamaño máximo en línea y los directorios de almacenamiento (el directorio de archivos temporales de formularios de la aplicación y el directorio GDS) se configuran en la consola de administración de.
+El tamaño máximo en línea y los directorios de almacenamiento (el directorio de archivos temporales de formularios AEM Forms y el directorio GDS) se configuran en la consola de administración.
 
 ### Tamaño de documento y tamaño máximo en línea {#document-size-and-maximum-inline-size}
 
-AEM Cuando un documento enviado para ser procesado por formularios en línea es menor o igual que el tamaño máximo en línea del documento predeterminado, el documento se almacena en el servidor en línea y el documento se serializa como un objeto de documento de Adobe. Almacenar documentos en línea puede tener importantes ventajas de rendimiento. Sin embargo, si utiliza el flujo de trabajo de formularios, el contenido también se puede almacenar en la base de datos para realizar un seguimiento. Por lo tanto, aumentar el tamaño máximo en línea puede afectar al tamaño de la base de datos.
+Cuando un documento enviado para su procesamiento por formularios AEM Forms tiene un tamaño en línea inferior o igual al tamaño en línea máximo del documento predeterminado, el documento se almacena en el servidor en línea y se serializa como un objeto de documento de Adobe. Almacenar documentos en línea puede tener importantes ventajas de rendimiento. Sin embargo, si utiliza el flujo de trabajo de formularios, el contenido también se puede almacenar en la base de datos para realizar un seguimiento. Por lo tanto, aumentar el tamaño máximo en línea puede afectar al tamaño de la base de datos.
 
 Un documento que es mayor que el tamaño máximo en línea se almacena en el sistema de archivos local. El objeto Documento de Adobe que se transfiere desde y hacia el servidor es sólo un puntero a ese archivo.
 

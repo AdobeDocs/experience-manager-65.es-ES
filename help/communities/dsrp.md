@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 0%
+source-wordcount: '628'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Cuando AEM Communities está configurado para utilizar una base de datos relacio
 
 Vea también [Características de las opciones de SRP](working-with-srp.md#characteristics-of-srp-options) y [Topologías recomendadas](topologies.md).
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 * [MySQL](#mysql-configuration), una base de datos relacional.
 * [Apache Solr](#solr-configuration), una plataforma de búsqueda.
@@ -37,7 +37,7 @@ Vea también [Características de las opciones de SRP](working-with-srp.md#chara
 
 ### Configuración de MySQL {#mysql-configuration}
 
-Una instalación de MySQL puede compartirse entre características de habilitación y almacén común (DSRP) dentro del mismo grupo de conexiones utilizando nombres de base de datos (esquema) diferentes y también diferentes conexiones (servidor:puerto).
+Una instalación de MySQL puede compartirse entre características de habilitación y almacén común (DSRP) dentro del mismo grupo de conexiones utilizando nombres de base de datos (esquema) diferentes y también diferentes conexiones (servidor :port).
 
 Para obtener detalles de instalación y configuración, consulte [Configuración de MySQL para DSRP](dsrp-mysql.md).
 
@@ -68,7 +68,7 @@ En autor, para acceder a la consola Configuración de almacenamiento
 
      >[!NOTE]
      >
-     >La configuración de almacenamiento predeterminada ahora se almacena en la ruta de acceso conf(`/conf/global/settings/community/srpc/defaultconfiguration`)      en lugar de la ruta de acceso `etc` (`/etc/socialconfig/srpc/defaultconfiguration`). Se le aconseja que siga los [pasos de migración](#zerodt-migration-steps) para que defaultsrp funcione según lo esperado.
+     >La configuración de almacenamiento predeterminada ahora se almacena en la ruta de acceso conf (`/conf/global/settings/community/srpc/defaultconfiguration`) en lugar de en la ruta de acceso `etc` (`/etc/socialconfig/srpc/defaultconfiguration`). Se le aconseja que siga los [pasos de migración](#zerodt-migration-steps) para que defaultsrp funcione según lo esperado.
 
   ![dsrp-config](assets/dsrp-config.png)
 
@@ -97,7 +97,7 @@ En autor, para acceder a la consola Configuración de almacenamiento
 
    * **[!UICONTROL URL de Solr]**
 
-     *valor predeterminado*: https://127.0.0.1:8983/solr/
+     *predeterminado*: https://127.0.0.1:8983/solr/
 
    * **[!UICONTROL Colección Solr]**
 

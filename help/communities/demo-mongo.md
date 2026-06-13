@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Esta configuración es adecuada para *entornos que no son de producción*, como 
    * La carpeta MongoDB instalada se llama &lt;mongo-install>.
    * La ruta del directorio de datos definida se denomina &lt;mongo-dbpath>.
 
-* AEM MongoDB se puede ejecutar en el mismo host que el de los servidores de red o ejecutar de forma remota.
+* MongoDB puede ejecutarse en el mismo host que AEM o de forma remota.
 
 ### Iniciar MongoDB {#start-mongodb}
 
@@ -70,7 +70,7 @@ Se inicia un servidor MongoDB mediante el 27017 de puerto predeterminado.
 
 >[!NOTE]
 >
->AEM AEM Si MongoDB se inicia *después de*, **reinicia** todas las instancias de **&#x200B;**&#x200B;para que se conecten correctamente a MongoDB.
+>Si MongoDB se inicia *después de* AEM, **reinicie** todas las instancias de **AEM** para que se conecten correctamente a MongoDB.
 
 ### Opción de producción de demostración: Configurar conjunto de réplicas de MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
@@ -140,9 +140,9 @@ Para ejecutar una configuración básica (que no sea de producción) de solrClou
 
 ## Identificar MongoDB como almacén común {#identify-mongodb-as-common-store}
 
-AEM Inicie las instancias de creación y publicación de la instancia de la publicación, si es necesario.
+Inicie las instancias de AEM de autor y publicación, si es necesario.
 
-AEM AEM Si se estaba ejecutando antes de que se iniciara MongoDB, entonces se deben reiniciar las instancias de.
+Si AEM se estaba ejecutando antes de que MongoDB se iniciara, entonces las instancias de AEM deben reiniciarse.
 
 Siga las instrucciones de la página de documentación principal: [MSRP - Almacén común de MongoDB](msrp.md)
 
@@ -152,7 +152,7 @@ Para probar y verificar el almacén común de MongoDB, publique un comentario en
 
 1. En la instancia de publicación, vaya a la página [Guía de componentes de la comunidad](http://localhost:4503/content/community-components/en/comments.html) y seleccione el componente Comentarios.
 1. Inicie sesión para publicar un comentario:
-1. Escriba texto en el cuadro de entrada de texto del comentario y haga clic en **[!UICONTROL Post]**
+1. Escriba texto en el cuadro de entrada de texto del comentario y haga clic en **[!UICONTROL Publicar]**
 
    ![comentario posterior](assets/post-comment.png)
 
@@ -183,9 +183,9 @@ Para probar y verificar el almacén común de MongoDB, publique un comentario en
 
 1. Asegúrese de que MSRP se ha configurado para ser el proveedor predeterminado:
 
-   * AEM AEM En todas las instancias de creación y publicación de la publicación, vuelva a visitar la [consola de configuración de almacenamiento](srp-config.md) o compruebe el repositorio de la:
+   * En todas las instancias de AEM de autor y publicación, vuelva a visitar la [consola de configuración de almacenamiento](srp-config.md) o compruebe el repositorio de AEM:
 
    * En JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) no contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa que el proveedor de almacenamiento es JSRP.
    * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), las propiedades de defaultconfiguration deben definir MSRP como el proveedor predeterminado.
 
-1. AEM Asegúrese de que se ha reiniciado la después de seleccionar MSRP.
+1. Asegúrese de que AEM se reinició después de seleccionar MSRP.

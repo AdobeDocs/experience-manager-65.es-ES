@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 0%
+source-wordcount: '1195'
+ht-degree: 1%
 
 ---
 
@@ -24,14 +24,14 @@ Cuando AEM Communities está configurado para utilizar MSRP como almacén común
 
 Vea también [Características de las opciones de SRP](working-with-srp.md#characteristics-of-srp-options) y [Topologías recomendadas](topologies.md).
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 * [MongoDB](https://www.mongodb.org/):
 
    * Versión 2.6 o superior
    * No es necesario configurar mongos ni el uso compartido
    * Recomendamos encarecidamente el uso de un [conjunto de réplicas](#mongoreplicaset)
-   * AEM Puede ejecutarse en el mismo host que el servidor de correo o puede ejecutarse de forma remota.
+   * Puede ejecutarse en el mismo host que AEM o de forma remota
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -100,7 +100,7 @@ Nombre de la colección Solr.
 
 >[!NOTE]
 >
->La base de datos mongoDB, cuyo nombre predeterminado es `communities`, no debe establecerse en el nombre de una base de datos que se esté usando para [almacenes de nodos o almacenes de datos (binarios)](../../help/sites-deploying/data-store-config.md). AEM Consulte también [Elementos de almacenamiento en la versión 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md) de la.
+>La base de datos mongoDB, cuyo nombre predeterminado es `communities`, no debe establecerse en el nombre de una base de datos que se esté usando para [almacenes de nodos o almacenes de datos (binarios)](../../help/sites-deploying/data-store-config.md). Consulte también [Elementos de almacenamiento en AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### Conjunto de réplicas de MongoDB {#mongodb-replica-set}
 
@@ -185,7 +185,7 @@ El formato básico es:
 
 cURL -u *iniciar sesión* -d *datos* *reindex-url*
 
-*inicio de sesión* = id. de administrador:contraseña
+*inicio de sesión* = id. de administrador:password
 Por ejemplo: admin:admin
 
 *datos* = &quot;batchSize=*size*&amp;path=*path&quot;*
@@ -222,7 +222,7 @@ Para configurar MSRP para un entorno de demostración o desarrollo, vea [Cómo c
 
 Asegúrese de que MSRP se ha configurado para ser el proveedor predeterminado comprobando la configuración de la opción de almacenamiento. De forma predeterminada, el proveedor de recursos de almacenamiento es JSRP.
 
-AEM AEM En todas las instancias de creación y publicación de la publicación, vuelva a visitar la [consola de configuración de almacenamiento](srp-config.md) o compruebe el repositorio de la:
+En todas las instancias de AEM de autor y publicación, vuelva a visitar la [consola de configuración de almacenamiento](srp-config.md) o compruebe el repositorio de AEM:
 
 * En JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -237,7 +237,7 @@ Hay una herramienta de código abierto disponible en GitHub para este fin:
 
 * [Herramienta de migración de UGC para AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-AEM La herramienta de migración se puede personalizar para exportar UGC desde versiones anteriores de comunidades sociales de la comunidad de la comunidad de la comunidad de la comunidad de la comunidad de la comunidad de la comunidad de la comunidad para importarlo en AEM Communities 6.1 o posterior.
+La herramienta de migración se puede personalizar para exportar UGC desde versiones anteriores de comunidades sociales de AEM para importarlos en AEM Communities 6.1 o posterior.
 
 ### Error - campo indefinido provider_id {#error-undefined-field-provider-id}
 
@@ -263,7 +263,7 @@ Para resolver el error, al seguir las instrucciones de [Instalación de MLS est�
 Si un intento de establecer una conexión segura con el servidor MongoDB falla debido a que falta una definición de clase, es necesario actualizar el paquete de controladores MongoDB, `mongo-java-driver`, disponible en el repositorio Maven público.
 
 1. Descargue el controlador de [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versión 2.13.2 o posterior).
-1. AEM Copie el paquete en la carpeta &quot;crx-quickstart/install&quot; para una instancia de.
+1. Copie el paquete en la carpeta &quot;crx-quickstart/install&quot; para una instancia de AEM.
 1. Reinicie la instancia de AEM.
 
 ## Recursos {#resources}

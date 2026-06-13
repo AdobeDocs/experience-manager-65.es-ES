@@ -11,7 +11,7 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 99%
 
 ---
@@ -46,7 +46,7 @@ En la vista de Backbone, hay un mapa de eventos que asigna los distintos eventos
 
 Cuando se inicializa una vista, esta llama a su modelo correspondiente para recuperar datos del servidor. Una vez que todos los datos requeridos por una vista estén disponibles, la vista procesará los datos en el formato especificado por la plantilla HTML. Varias vistas pueden compartir el mismo modelo para la comunicación.
 
-AEM ![Vista de red troncal de formularios de](do-not-localize/aem_forms_workflow.png)
+![Vista de Backbone de formularios AEM](do-not-localize/aem_forms_workflow.png)
 
 Un ejemplo:
 

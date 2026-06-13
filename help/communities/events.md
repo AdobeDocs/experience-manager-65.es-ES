@@ -11,8 +11,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 5%
+source-wordcount: '696'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 ## Información general {#overview}
 
-Cuando los miembros interactúan con las funciones de Communities, se envían eventos OSGi que pueden almacenar en déclencheur a los oyentes asincrónicos, como notificaciones o interacción (puntuación e insignias).
+Cuando los miembros interactúan con las funciones de Communities, se envían eventos OSGi que pueden almacenar en déclencheur a los oyentes asincrónicos, como notifications o gamification (puntuación e insignias).
 
 La instancia [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) de un componente registra los eventos como `actions` que ocurren para un `topic`. SocialEvent incluye un método para devolver `verb` asociado con la acción. Hay una relación *n-1* entre `actions` y `verbs`.
 
@@ -33,17 +33,17 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | El miembro crea un evento de calendario |
+| PUBLICAR | El miembro crea un evento de calendario |
 | AÑADIR | Comentarios de los miembros sobre un evento de calendario |
 | ACTUALIZAR | Se edita el evento o comentario del calendario del miembro |
 | ELIMINAR | Se elimina el evento o comentario del calendario del miembro |
 
-[Componente Comentarios](essentials-comments.md)
+Componente [Comentarios](essentials-comments.md)
 SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | El miembro crea un comentario |
+| PUBLICAR | El miembro crea un comentario |
 | AÑADIR | Respuestas de los miembros al comentario |
 | ACTUALIZAR | El comentario del miembro se ha editado |
 | ELIMINAR | Se ha eliminado el comentario del miembro |
@@ -53,7 +53,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | El miembro crea una carpeta |
+| PUBLICAR | El miembro crea una carpeta |
 | ADJUNTAR | El miembro carga un archivo |
 | ACTUALIZAR | El miembro actualiza una carpeta o un archivo |
 | ELIMINAR | El miembro elimina una carpeta o archivo |
@@ -63,7 +63,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | El miembro crea un tema de foro |
+| PUBLICAR | El miembro crea un tema de foro |
 | AÑADIR | Respuestas de los miembros al tema del foro |
 | ACTUALIZAR | Se edita el tema o la respuesta del foro del miembro |
 | ELIMINAR | Se elimina el tema o la respuesta del foro del miembro |
@@ -73,7 +73,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | El miembro crea un artículo de blog |
+| PUBLICAR | El miembro crea un artículo de blog |
 | AÑADIR | Comentarios de los miembros en un artículo de blog |
 | ACTUALIZAR | Se edita el artículo o comentario del blog del miembro |
 | ELIMINAR | Se elimina el artículo o comentario del blog del miembro |
@@ -83,7 +83,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | El miembro crea una pregunta de control de calidad |
+| PUBLICAR | El miembro crea una pregunta de control de calidad |
 | AÑADIR | El miembro crea una respuesta de control de calidad |
 | ACTUALIZAR | Se ha editado la pregunta o respuesta de control de calidad del miembro |
 | SELECT | La respuesta del miembro está seleccionada |
@@ -95,7 +95,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbo** | **Descripción** |
 |---|---|
-| POST | El miembro crea una revisión |
+| PUBLICAR | El miembro crea una revisión |
 | ACTUALIZAR | Se ha editado la revisión del miembro |
 | ELIMINAR | Se ha eliminado la revisión del miembro |
 
@@ -141,7 +141,7 @@ El evento personalizado anularía el método `getVerb()` para que se devuelva un
 
 [org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
-[com.adobe.granite.activity.streams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
+[com.adobe.granite.activitystreams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
 [com.adobe.granite.activitystreams.Verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
 
 ```java
@@ -242,7 +242,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 Es posible escuchar eventos con el fin de modificar lo que aparece en el flujo de actividad.
 
-El siguiente ejemplo de pseudocódigo quitará los eventos de DELETE del componente Comentarios del flujo de actividades.
+El siguiente ejemplo de pseudocódigo quitará los eventos de DELETE para el componente Comentarios del flujo de actividades.
 
 ### Pseudocódigo para EventListener {#pseudo-code-for-eventlistener}
 

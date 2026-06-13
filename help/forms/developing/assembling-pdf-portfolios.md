@@ -1,6 +1,6 @@
 ---
 title: Agrupar portfolios PDF
-description: Montar un portafolio de PDF para combinar varios documentos de varios tipos, incluidos archivos de Word, archivos de imagen y documentos de PDF. Puede combinar un catálogo de productos de PDF mediante una API de Java y una API de servicio web.
+description: Montar un portafolio de PDF para combinar varios documentos de varios tipos, incluidos archivos de Word, archivos de imagen y documentos de PDF. Puede combinar un portafolio de PDF mediante una API de Java y una API de servicio web.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1842'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-Puede ensamblar un Portfolio de PDF mediante la API de servicio web y Java del ensamblador. Un portafolio puede combinar varios documentos de varios tipos, incluidos archivos de Word, archivos de imagen (por ejemplo, un archivo JPEG) y documentos de PDF. El diseño del portafolio se puede establecer en diferentes estilos, como el diseño de *cuadrícula con vista previa*, el diseño de *en una imagen* o incluso *revolución*.
+Puede combinar un Portfolio de PDF mediante el Java del ensamblador y la API de servicio web. Un portafolio puede combinar varios documentos de varios tipos, incluidos archivos de Word, archivos de imagen (por ejemplo, un archivo JPEG) y documentos de PDF. El diseño del portafolio se puede establecer en diferentes estilos, como el diseño de *cuadrícula con vista previa*, el diseño de *en una imagen* o incluso *revolución*.
 
 La siguiente ilustración es una captura de pantalla de un portafolio con diseño de estilo *En una imagen*.
 
 ![ap_ap_portfolio](assets/ap_ap_portfolio.png)
 
-La creación de un Portfolio PDF sirve como una alternativa sin papel a pasar una colección de documentos. Con AEM Forms puede crear portafolios invocando el servicio Assembler con un documento DDX estructurado. El siguiente documento DDX es un ejemplo de documento DDX que crea un Portfolio PDF.
+La creación de una Portfolio de PDF sirve como alternativa sin papel a pasar una colección de documentos. Con AEM Forms puede crear portafolios invocando el servicio Assembler con un documento DDX estructurado. El siguiente documento DDX es un ejemplo de documento DDX que crea un PDF Portfolio.
 
 ```xml
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -63,7 +63,7 @@ El documento DXX debe contener una etiqueta `Portfolio` con una etiqueta `Naviga
 
 ## Resumen de los pasos {#summary-of-steps}
 
-Para crear un Portfolio PDF, realice las siguientes tareas:
+Para crear un Portfolio de PDF, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
 1. Cree un cliente de PDF Assembler.
@@ -85,19 +85,19 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 * adobe-utilities.jar (requerido si AEM Forms está implementado en JBoss)
 * jbossall-client.jar (requerido si AEM Forms está implementado en JBoss)
 
-**Crear un cliente de ensamblador de PDF**
+**Crear un cliente de PDF Assembler**
 
 Para poder realizar mediante programación una operación de Assembler, cree un cliente de servicio Assembler.
 
 **Hacer referencia a un documento DDX existente**
 
-Se debe hacer referencia a un documento DDX para ensamblar un Portfolio PDF. Este documento DDX debe contener los elementos `Portfolio`, `Navigator` y `PackageFiles`.
+Se debe hacer referencia a un documento DDX para ensamblar un Portfolio de PDF. Este documento DDX debe contener los elementos `Portfolio`, `Navigator` y `PackageFiles`.
 
 **Hacer referencia a los documentos necesarios**
 
 Para montar un Portfolio de PDF, haga referencia a todos los archivos que representan los documentos que se van a montar. Por ejemplo, pase todos los archivos de imagen especificados en el documento DDX al servicio Assembler. Observe que se hace referencia a estos archivos en el documento DDX especificado en esta sección: *myImage.png* y *saint_bernard.jpg*.
 
-Al combinar un Portfolio de PDF, pase un archivo NAV (un archivo del navegador) al servicio Assembler. El archivo NAV que pasa al servicio Assembler depende del tipo de Portfolio de PDF que se va a crear. Por ejemplo, para crear un diseño de *On an Image*, pase el archivo AdobeOnImage.nav. Puede localizar archivos NAV en la siguiente carpeta:
+Al combinar una Portfolio de PDF, pase un archivo NAV (un archivo del navegador) al servicio Assembler. El archivo NAV que pasa al servicio Assembler depende del tipo de PDF Portfolio que se va a crear. Por ejemplo, para crear un diseño de *On an Image*, pase el archivo AdobeOnImage.nav. Puede localizar archivos NAV en la siguiente carpeta:
 
 `<Install folder>\Acrobat 9.0\Acrobat\Navigators`
 
@@ -105,7 +105,7 @@ Copie el archivo NAV del directorio de instalación de Acrobat 9 (o posterior). 
 
 >[!NOTE]
 >
->Los inicios rápidos asociados con los Portfolio del PDF Assembling utilizan AdobeOnImage.nav.
+>Los inicios rápidos asociados con el ensamblado de portafolios de PDF utilizan AdobeOnImage.nav.
 
 **Establecer opciones en tiempo de ejecución**
 
@@ -113,17 +113,17 @@ Puede establecer opciones en tiempo de ejecución que controlen el comportamient
 
 **Montar el portafolio**
 
-Para ensamblar un Portfolio PDF, llame a la operación `invokeDDX`. El servicio Assembler devuelve el Portfolio PDF dentro de un objeto de colección.
+Para ensamblar un Portfolio de PDF, llame a la operación `invokeDDX`. El servicio Assembler devuelve el Portfolio de PDF dentro de un objeto de colección.
 
 **Guardar el portafolio ensamblado**
 
-Se devuelve un Portfolio PDF dentro de un objeto de colección. Itere por el objeto de colección y guarde el Portfolio de PDF como un archivo de PDF.
+Se devuelve un Portfolio de PDF dentro de un objeto de colección. Itere por el objeto de colección y guarde PDF Portfolio como archivo de PDF.
 
 **Consulte también**
 
-[Montar un Portfolio PDF mediante la API de Java](#assemble-a-pdf-portfolio-using-the-java-api)
+[Montar un Portfolio de PDF mediante la API de Java](#assemble-a-pdf-portfolio-using-the-java-api)
 
-[Montar un Portfolio PDF mediante la API de servicio web](#assemble-a-pdf-portfolio-using-the-web-service-api)
+[Montar un Portfolio de PDF mediante la API de servicio web](#assemble-a-pdf-portfolio-using-the-web-service-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -131,9 +131,9 @@ Se devuelve un Portfolio PDF dentro de un objeto de colección. Itere por el obj
 
 [Configuración programática de documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
-## Montar un Portfolio PDF mediante la API de Java {#assemble-a-pdf-portfolio-using-the-java-api}
+## Montar un Portfolio de PDF mediante la API de Java {#assemble-a-pdf-portfolio-using-the-java-api}
 
-Ensamble un Portfolio PDF mediante la API del servicio Assembler (Java):
+Montar un Portfolio de PDF mediante la API del servicio Assembler (Java):
 
 1. Incluir archivos de proyecto.
 
@@ -151,7 +151,7 @@ Ensamble un Portfolio PDF mediante la API del servicio Assembler (Java):
 
 1. Consulte los documentos necesarios.
 
-   * Cree un objeto `java.util.Map` que se use para almacenar documentos del PDF de entrada usando un constructor `HashMap`.
+   * Cree un objeto `java.util.Map` que se use para almacenar documentos de PDF de entrada mediante un constructor `HashMap`.
    * Crear un objeto `java.io.FileInputStream` mediante su constructor. Pase la ubicación del archivo NAV requerido (repita esta tarea con cada archivo necesario para crear un portafolio).
    * Cree un objeto `com.adobe.idp.Document` y pase el objeto `java.io.FileInputStream` que contiene el archivo NAV (repita esta tarea para cada archivo necesario para crear un portafolio).
    * Agregue una entrada al objeto `java.util.Map` invocando su método `put` y pasando los siguientes argumentos:
@@ -169,30 +169,30 @@ Ensamble un Portfolio PDF mediante la API del servicio Assembler (Java):
    Invoque el método `invokeDDX` del objeto `AssemblerServiceClient` y pase los siguientes valores necesarios:
 
    * Un objeto `com.adobe.idp.Document` que representa el documento DDX que se va a utilizar
-   * Objeto `java.util.Map` que contiene los archivos necesarios para generar un Portfolio de PDF.
+   * Un objeto `java.util.Map` que contiene los archivos necesarios para generar un Portfolio de PDF.
    * Un objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones de tiempo de ejecución, incluida la fuente predeterminada y el nivel de registro del trabajo
 
-   El método `invokeDDX` devuelve un objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contiene el Portfolio PDF ensamblado y las excepciones que se han producido.
+   El método `invokeDDX` devuelve un objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contiene el PDF Portfolio ensamblado y las excepciones que se han producido.
 
 1. Guarde el portafolio ensamblado.
 
-   Para obtener el Portfolio PDF, realice las siguientes acciones:
+   Para obtener PDF Portfolio, realice las siguientes acciones:
 
    * Invoque el método `getDocuments` del objeto `AssemblerResult`. Este método devuelve un objeto `java.util.Map`.
    * Recorra en iteración el objeto `java.util.Map` hasta encontrar el objeto `com.adobe.idp.Document` resultante.
-   * Invoque el método `copyToFile` del objeto `com.adobe.idp.Document` para extraer el Portfolio PDF.
+   * Invoque el método `copyToFile` del objeto `com.adobe.idp.Document` para extraer PDF Portfolio.
 
 **Consulte también**
 
-[SOAP Inicio rápido (modo de): Agrupación de Portfolio de PDF mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Inicio rápido (modo SOAP): Agrupar portafolios de PDF mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Montar un Portfolio PDF mediante la API de servicio web {#assemble-a-pdf-portfolio-using-the-web-service-api}
+## Montar un Portfolio de PDF mediante la API de servicio web {#assemble-a-pdf-portfolio-using-the-web-service-api}
 
-Ensamble un Portfolio PDF mediante la API del servicio Assembler (servicio web):
+Montar un Portfolio de PDF mediante la API del servicio Assembler (servicio web):
 
 1. Incluir archivos de proyecto.
 
@@ -210,7 +210,7 @@ Ensamble un Portfolio PDF mediante la API del servicio Assembler (servicio web):
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -253,7 +253,7 @@ Ensamble un Portfolio PDF mediante la API del servicio Assembler (servicio web):
 
 1. Guarde el portafolio ensamblado.
 
-   Para obtener el Portfolio PDF recién creado, realice las siguientes acciones:
+   Para obtener el PDF Portfolio recién creado, realice las siguientes acciones:
 
    * Obtenga acceso al campo `documents` del objeto `AssemblerResult`, que es un objeto `Map` que contiene los documentos de PDF resultantes.
    * Recorra en iteración el objeto `Map` para obtener cada documento resultante. A continuación, convierta el `value` de ese miembro de la matriz en un `BLOB`.

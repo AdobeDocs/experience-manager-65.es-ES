@@ -11,14 +11,14 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1534'
 ht-degree: 2%
 
 ---
 
 # Configuración de Solr para SRP {#solr-configuration-for-srp}
 
-## AEM Solr para plataforma de {#solr-for-aem-platform}
+## Solr para AEM Platform {#solr-for-aem-platform}
 
 Una instalación de [Apache Solr](https://solr.apache.org/) se puede compartir entre el [almacén de nodos](../../help/sites-deploying/data-store-config.md) (Oak) y el [almacén común](working-with-srp.md) (SRP) usando diferentes colecciones.
 
@@ -26,7 +26,7 @@ Si las colecciones Oak y SRP se utilizan de forma intensiva, se puede instalar u
 
 Para entornos de producción, [SolrCloud mode](#solrcloud-mode) proporciona un rendimiento mejorado con respecto al modo independiente (una única configuración de Solr local).
 
-### Requisitos  {#requirements}
+### Requisitos {#requirements}
 
 Descargue e instale Apache Solr:
 
@@ -65,20 +65,20 @@ JVM_OPTS="-server -Xmx2048m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnable
 
 Cuando se ejecuta en modo SolrCloud, antes de la instalación de MLS, es necesario usar y conocer los siguientes comandos de configuración de SolrCloud.
 
-#### 1. Cargue una configuración en ZooKeeper {#upload-a-configuration-to-zookeeper}
+#### &#x200B;1. Cargar una configuración a ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Referencia:
 [https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Uso:
-sh./scripts/cloud-scripts/zkcli.sh \
+sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd upconfig \
--zkhost *servidor:puerto* \
+-zkhost *servidor:port* \
 -confname *myconfig-name *\
 -solrhome *solr-home-path* \
 -confdir *config-dir*
 
-#### 2. Crear una colección {#create-a-collection}
+#### &#x200B;2. Crear una colección {#create-a-collection}
 
 Referencia:
 [https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
@@ -92,7 +92,7 @@ Uso:
 -s *número de fragmentos* \
 -rf *número-de-réplicas*
 
-#### 3. Vincule una colección a un conjunto de configuración {#link-a-collection-to-a-configuration-set}
+#### &#x200B;3. Vinculación de una colección a un conjunto de configuración {#link-a-collection-to-a-configuration-set}
 
 Vincula una colección a una configuración ya cargada en ZooKeeper.
 
@@ -100,9 +100,9 @@ Referencia:
 [https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Uso:
-sh./scripts/cloud-scripts/zkcli.sh \
+sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
--zkhost *servidor:puerto* \
+-zkhost *servidor:port* \
 -collection *nombre_colección* \
 -confname *nombre_configuración*
 
@@ -140,9 +140,9 @@ En total, los siguientes 33 idiomas son compatibles con MLS avanzado.
 | Finés | Letón | Tailandés |
 | Francés | Lituano | Turco |
 
-#### AEM Comparación de la búsqueda de Solr de la versión 6.1 de la versión de la aplicación, MLS estándar y MLS avanzado {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### Comparación de AEM 6.1 Solr search, Standard MLS y Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-AEM AEM **Nota**: la versión 6.1 de la se refiere a las versiones anteriores y posteriores del FP3 de las comunidades 6.1.
+**Nota**: AEM 6.1 se refiere a AEM 6.1 Communities FP3 y anteriores.
 
 ![compare-solr-mls](assets/compare-solr-mls.png)
 
@@ -157,7 +157,7 @@ Archivos MLS estándar (schema.xml, solrconfig.xml) para Solr 4.10.
 
 Archivos MLS estándar (schema.xml, solrconfig.xml) para Solr 5.x.
 
-AEM Los archivos MLS estándar se almacenan en el repositorio de la.
+Los archivos MLS estándar se almacenan en el repositorio de AEM.
 
 **Nota**: mientras que los archivos Solr se almacenan en la carpeta msrp/, también son para DSRP (no es necesario realizar cambios).
 
@@ -218,11 +218,11 @@ AEM Los archivos MLS estándar se almacenan en el repositorio de la.
 
 Para que la colección SRP (MSRP o DSRP) admita MLS avanzado, se requieren nuevos complementos de Solr, además de un esquema personalizado y una configuración de Solr. Todos los elementos necesarios se empaquetan en un archivo zip descargable. Además, se incluye una secuencia de comandos de instalación para utilizarla cuando Solr se implemente en modo independiente.
 
-AEM Para obtener el paquete MLS avanzado, consulte [MLS avanzado](deploy-communities.md#aem-advanced-mls) en la sección de implementación de la documentación de &lbrace;Advanced MLS.
+Para obtener el paquete Advanced MLS, consulte [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) en la sección de implementación de la documentación.
 
 Para empezar a instalar en SolrCloud o en modo independiente:
 
-* AEM Descargue el archivo zip de SOLR-MLS en el servidor que aloja Solr.
+* Descargue el archivo zip AEM-SOLR-MLS en el servidor que aloja Solr.
 * Desempaquete el archivo.
 
 #### Modo SolrCloud: MLS avanzado {#solrcloud-mode-advanced-mls}
