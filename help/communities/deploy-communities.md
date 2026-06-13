@@ -301,7 +301,7 @@ por ejemplo,
 
 >[!CAUTION]
 >
->Si ya se ha configurado otra característica de seguridad basada en las claves criptográficas, la replicación de las claves criptográficas podría dañar la configuración. Para obtener ayuda, [póngase en contacto con el Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support).
+>Si ya se ha configurado otra característica de seguridad basada en las claves criptográficas, la replicación de las claves criptográficas podría dañar la configuración. Para obtener ayuda, [póngase en contacto con el Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support).
 
 #### Replicación del repositorio {#repository-replication}
 
@@ -366,7 +366,7 @@ En particular, asegúrese de usar el nombre de servidor correcto, no `localhost`
 Si utiliza un Dispatcher, consulte:
 
 * Documentación de AEM [Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)
-* [Instalación de Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* [Instalación de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Configuración de Dispatcher para comunidades](/help/communities/dispatcher.md)
 * [Problemas conocidos](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
