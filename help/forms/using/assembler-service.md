@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2167'
 ht-degree: 94%
 
 ---
@@ -93,7 +93,7 @@ Documento de PDF que contiene un identificador único en el encabezado del docum
 
 ### Acoplar y combinar documentos {#flatten-and-assemble-documents}
 
-Puede utilizar el servicio Assembler para transformar un documento PDF interactivo (por ejemplo, un formulario) en un documento de PDF no interactivo. Un documento interactivo del PDF permite a los usuarios introducir o modificar datos en los campos del documento del PDF. El proceso de transformar un documento PDF interactivo en uno no interactivo se denomina aplanamiento. Cuando se aplana un documento PDF, los campos de formulario conservan su apariencia gráfica, pero ya no son interactivos. Una razón para acoplar un documento PDF es garantizar que no se puedan modificar los datos. Además, los scripts asociados a los campos ya no funcionan.
+Puede utilizar el servicio Assembler para transformar un documento PDF interactivo (por ejemplo, un formulario) en un documento de PDF no interactivo. Un documento interactivo de PDF permite a los usuarios introducir o modificar datos en los campos del documento de PDF. El proceso de transformar un documento PDF interactivo en uno no interactivo se denomina aplanamiento. Cuando se aplana un documento PDF, los campos de formulario conservan su apariencia gráfica, pero ya no son interactivos. Una razón para acoplar un documento PDF es garantizar que no se puedan modificar los datos. Además, los scripts asociados a los campos ya no funcionan.
 
 Cuando se crea un documento de PDF que se monta a partir de documentos PDF interactivos, el servicio Assembler aplana dichos formularios antes de combinarlos en el documento resultante.
 

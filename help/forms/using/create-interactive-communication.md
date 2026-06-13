@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '6130'
+source-wordcount: '6132'
 ht-degree: 83%
 
 ---
@@ -49,7 +49,7 @@ Los siguientes son los requisitos previos para crear una comunicación interacti
 
    * **[!UICONTROL Proceso posterior]**: seleccione el nombre del flujo de trabajo que desea activar. Cuando seleccione el flujo de trabajo de AEM, proporcione una ruta de datos adjuntos, una ruta de diseño, una ruta del PDF, una ruta de datos de impresión y una ruta de datos web.
    * **[!UICONTROL Etiquetas]**: seleccione las etiquetas que desea aplicar a la comunicación interactiva. También puede escribir un nombre de etiqueta nuevo/personalizado y pulsar Entrar para crearlo.
-   * **[!UICONTROL Autor]**: el nombre del autor se toma automáticamente del nombre de usuario que ha iniciado sesión.
+   * El nombre de autor **[!UICONTROL Author]**:The se toma automáticamente del nombre de usuario que inició sesión.
    * **[!UICONTROL Fecha de publicación:]** escriba la fecha de publicación de la comunicación interactiva.
    * **[!UICONTROL Cancelar publicación]**: escriba la fecha para cancelar la publicación de la comunicación interactiva.
 
@@ -78,7 +78,7 @@ Después de crear una comunicación interactiva, puede utilizar la interfaz de c
 
 Para obtener más información sobre la interfaz de creación de comunicaciones interactivas, consulte [Introducción a la creación de comunicaciones interactivas](/help/forms/using/introduction-interactive-communication-authoring.md).
 
-1. La interfaz de creación de comunicaciones interactivas se inicia al seleccionar Editar como se menciona en [Crear comunicación interactiva](#createic). AEM También puede navegar a un recurso de comunicación interactiva existente en la comunicación interactiva, seleccionarlo y seleccionar **[!UICONTROL Editar]** para iniciar la interfaz de creación de comunicaciones interactivas.
+1. La interfaz de creación de comunicaciones interactivas se inicia al seleccionar Editar como se menciona en [Crear comunicación interactiva](#createic). También puede navegar hasta un recurso de comunicación interactiva existente en AEM, seleccionarlo y seleccionar **[!UICONTROL Editar]** para iniciar la interfaz de creación de comunicaciones interactivas.
 
    De forma predeterminada, aparecerá el canal Imprimir de la comunicación interactiva, a menos que esta sea solo de canal Web. El canal Imprimir de la comunicación interactiva muestra las áreas de destino, tal como están disponibles en la plantilla de canal Imprimir/XDP seleccionada. En estas áreas y campos de destino, puede agregar componentes o recursos.
 
@@ -92,7 +92,7 @@ Para obtener más información sobre la interfaz de creación de comunicaciones 
 
    Arrastre y suelte los componentes en la comunicación interactiva y configúrelos según sea necesario.
 
-   También puede utilizar las operaciones de deshacer y rehacer mientras crea una comunicación interactiva para los canales de impresión y web.
+   También puede utilizar las operaciones de deshacer y rehacer mientras crea una comunicación interactiva para los canales web y de impresión.
 
    Utilice la operación de deshacer para descartar la última acción realizada y la operación de rehacer para incorporar de nuevo la acción descartada. Por ejemplo, si ha insertado una imagen o ha creado un enlace de datos en una comunicación interactiva y necesita descartarlo, utilice la operación Deshacer.
 
@@ -143,7 +143,7 @@ Es posible que a veces no se muestre una variable independiente utilizada en un 
 
 ![Variable sin enlazar &#x200B;](assets/df_unbound_variable_new.png)
 
-Seleccione el fragmento de documento, seleccione ![configure_icon](assets/configure_icon.png) (Configurar) y, a continuación, seleccione **[!UICONTROL Propiedades]** de la barra de tareas de la comunicación interactiva. La sección **[!UICONTROL Variables y objetos del modelo de datos]** enumera las variables, incluidas las variables ocultas y los objetos del modelo de datos utilizados en los fragmentos del documento. Utilice el icono ![editar](assets/edit.svg) (Editar) junto a cada objeto o variable del modelo de datos para editar las propiedades.
+Seleccione el fragmento de documento, seleccione ![configure_icon](assets/configure_icon.png) (Configurar) y, a continuación, seleccione **[!UICONTROL Propiedades]** de la barra de tareas de la comunicación interactiva. La sección **[!UICONTROL Variables y objetos de modelo de datos]** enumera las variables, incluidas las variables ocultas y los objetos de modelo de datos utilizados en los fragmentos del documento. Utilice el icono ![editar](assets/edit.svg) (Editar) junto a cada variable u objeto de modelo de datos para editar las propiedades.
 
 1. Para configurar el enlace de variables, seleccione una variable y seleccione ![configure_icon](assets/configure_icon.png) (Configurar) y luego configure las propiedades del enlace en el panel Propiedades de la barra lateral.
 
@@ -153,13 +153,13 @@ Seleccione el fragmento de documento, seleccione ![configure_icon](assets/config
    * **Valor predeterminado:** puede definir un valor predeterminado para la variable mediante este campo. El valor se muestra al obtener una vista previa de la comunicación interactiva o en la interfaz de usuario de Agente.
    * **Patrón de visualización:** también puede definir un formato de visualización para una variable. Seleccione cualquiera de las opciones predefinidas en la lista desplegable **Tipo** para aplicar un formato de visualización a una variable. Seleccione **Personalizar** para definir un patrón de visualización que no esté disponible en la lista. Para obtener más información, consulte [Patrones de visualización de datos](../../forms/using/create-interactive-communication.md#datadisplaypatterns).
 
-   Navegue hasta [Variables y objetos del modelo de datos](../../forms/using/create-interactive-communication.md#hiddenvariables) para configurar el enlace de variables ocultas en el fragmento de documento.
+   Navegue hasta [Variables y objetos de modelo de datos](../../forms/using/create-interactive-communication.md#hiddenvariables) para configurar el enlace de variables ocultas en el fragmento de documento.
 
-   También puede arrastrar y soltar elementos de la fuente de datos o fragmentos de documento de texto para configurar el enlace de variables. Para crear un enlace con cualquiera de los elementos de la fuente de datos, seleccione la pestaña **Fuentes de datos** y arrastre y suelte el elemento en el nombre de la variable. El elemento de la fuente de datos y la variable deben ser del mismo tipo para configurar el enlace correctamente. Si arrastra y suelta un elemento de fuente de datos en una variable ya enlazada, el nuevo elemento reemplazará al anterior para crear un enlace con la variable. Del mismo modo, seleccione la pestaña **Recursos** y arrastre y suelte el fragmento de documento de texto en el nombre de la variable para configurar el enlace entre ellos. El fragmento del documento de texto no debe contener ninguna variable.
+   También puede arrastrar y soltar elementos de la fuente de datos o fragmentos de documento de texto para configurar el enlace de variables.  Para crear un enlace con cualquiera de los elementos de la fuente de datos, seleccione la pestaña **Fuentes de datos** y arrastre y suelte el elemento en el nombre de la variable. El elemento de la fuente de datos y la variable deben ser del mismo tipo para configurar el enlace correctamente. Si arrastra y suelta un elemento de fuente de datos en una variable ya enlazada, el nuevo elemento reemplazará al anterior para crear un enlace con la variable. Del mismo modo, seleccione la pestaña **Recursos** y arrastre y suelte el fragmento de documento de texto en el nombre de la variable para configurar el enlace entre ellos. El fragmento del documento de texto no debe contener ninguna variable.
 
 1. Para agregar una tabla, con el canal Imprimir seleccionado, en la pestaña **[!UICONTROL Recursos]** aplique el filtro para mostrar solo los fragmentos de diseño. Arrastre y suelte el fragmento de diseño necesario en la comunicación interactiva. Un fragmento de diseño se basa en un XDP y se puede utilizar para crear diseños gráficos o tablas estáticas y dinámicas en comunicaciones interactivas que se rellenen con datos dinámicos.
 
-   Ejemplo: Una tabla de diseño para mostrar la prima bruta, el descuento por fidelidad % y la disponibilidad de asistencia de emergencia en carretera para las directivas antiguas y nuevas.
+   Ejemplo: Una tabla de diseño para mostrar la prima bruta, el descuento por lealtad % y la disponibilidad de asistencia de emergencia en carretera para las directivas antiguas y nuevas.
 
    Para obtener más información sobre fragmentos de diseño, consulte [Fragmentos de documento](/help/forms/using/document-fragments.md).
 
@@ -185,7 +185,7 @@ Seleccione el fragmento de documento, seleccione ![configure_icon](assets/config
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Seleccione el fragmento de documento, seleccione ![configure_icon](assets/configure_icon.png) (Configurar) y, a continuación, seleccione **[!UICONTROL Propiedades]** de la barra de tareas de la comunicación interactiva. La sección **[!UICONTROL Variables y objetos del modelo de datos]** enumera las variables, incluidas las variables ocultas y los objetos del modelo de datos utilizados en los fragmentos del documento. Utilice el icono ![editar](assets/edit.svg) (Editar) junto a cada objeto o variable del modelo de datos para editar las propiedades. Además, para los fragmentos de documento que se han [generado automáticamente](#synchronize) en el canal Web mediante el canal Imprimir utilice el icono ![cancelinheritance](assets/cancelinheritance.png) (Cancelar herencia) junto a cada objeto del modelo de datos y variable para [cancelar la herencia](#cancelinheritance) y poder editarlas.
+   Seleccione el fragmento de documento, seleccione ![configure_icon](assets/configure_icon.png) (Configurar) y, a continuación, seleccione **[!UICONTROL Propiedades]** de la barra de tareas de la comunicación interactiva. La sección **[!UICONTROL Variables y objetos de modelo de datos]** enumera las variables, incluidas las variables ocultas y los objetos de modelo de datos utilizados en los fragmentos del documento. Utilice el icono ![editar](assets/edit.svg) (Editar) junto a cada variable u objeto de modelo de datos para editar las propiedades. Además, para los fragmentos de documento que se han [generado automáticamente](#synchronize) en el canal Web mediante el canal Imprimir utilice el icono ![cancelinheritance](assets/cancelinheritance.png) (Cancelar herencia) junto a cada objeto de modelo de datos y variable para [cancelar la herencia](#cancelinheritance) y poder editarlas.
 
 1. Para agregar componentes adicionales al canal Web, con el canal Web seleccionado, seleccione **[!UICONTROL Componentes]**. Arrastre y suelte los componentes en el canal Web de la comunicación interactiva según sea necesario y proceda a configurarlos.
 
@@ -207,13 +207,13 @@ Seleccione el fragmento de documento, seleccione ![configure_icon](assets/config
 
 ## Previsualizar la comunicación interactiva {#previewic}
 
-Puede usar la **Opción de previsualización** para evaluar la apariencia de la comunicación interactiva. El canal Web de comunicaciones interactivas también ofrece la opción de emular la experiencia de una comunicación interactiva para varios dispositivos. Por ejemplo, iPhone, iPad y escritorio. Puede usar ambas reglas, **Vista previa** y **Emulador** ![regla](assets/ruler.png) junto con otras opciones para obtener una vista previa de las salidas web para dispositivos con diferentes tamaños de pantalla. Los datos de ejemplo de la vista previa se rellenan desde el modelo de datos de formulario especificado.
+Puede usar la **Opción de previsualización** para evaluar la apariencia de la comunicación interactiva. El canal Web de comunicaciones interactivas también ofrece la opción de emular la experiencia de una comunicación interactiva para varios dispositivos. Por ejemplo, iPhone, iPad y escritorio. Puede usar ambas reglas, **Vista previa** y **Emulador** ![regla](assets/ruler.png) junto con otras opciones para obtener una vista previa de las salidas web para dispositivos con diferentes tamaños de pantalla. Los datos de muestra de la vista previa se rellenan desde el modelo de datos de formulario especificado.
 
 1. Seleccione el canal (de impresión o web) para obtener una vista previa y seleccione Previsualizar. Aparecerá la comunicación interactiva.
 
    >[!NOTE]
    >
-   >La vista previa se rellenará con los datos de ejemplo del modelo de datos de formulario especificado. Para obtener más información sobre la vista previa de la comunicación interactiva con otros datos o el uso del servicio de rellenado previo, consulte [Usar el modelo de datos de formulario](/help/forms/using/using-form-data-model.md) y [Trabajar con el modelo de datos de formulario](/help/forms/using/work-with-form-data-model.md).
+   >La vista previa se rellenará con los datos de muestra del modelo de datos de formulario especificado. Para obtener más información sobre la vista previa de la comunicación interactiva con otros datos o el uso del servicio de rellenado previo, consulte [Usar el modelo de datos de formulario](/help/forms/using/using-form-data-model.md) y [Trabajar con el modelo de datos de formulario](/help/forms/using/work-with-form-data-model.md).
 
 1. Para el canal Web, utilice ![reglas](assets/ruler.png) para ver el aspecto de la comunicación interactiva en varios dispositivos.
 
@@ -237,7 +237,7 @@ En el canal Imprimir, puede configurar los archivos adjuntos y el acceso a la bi
 
 1. Expanda los **Archivos adjuntos** y especifique las siguientes propiedades:
 
-   * **[!UICONTROL Permitir acceso a la biblioteca]**: seleccione esta opción para habilitar el acceso a la biblioteca al agente en la interfaz de usuario de Agente. Si está activada, el agente podrá agregar archivos de la biblioteca mientras prepara la comunicación interactiva.
+   * **[!UICONTROL Permitir acceso a la biblioteca]**: seleccione esta opción para habilitar el acceso a la biblioteca al agente en la interfaz de usuario de Agente. Si está habilitada, el agente podrá agregar archivos de la biblioteca mientras prepara la comunicación interactiva.
    * **[!UICONTROL Permitir reordenar archivos adjuntos]**: seleccione esta opción para permitir que el agente vuelva a ordenar los archivos adjuntos con la comunicación interactiva.
    * **[!UICONTROL Número máximo de archivos adjuntos permitidos]**: especifique el número máximo de archivos adjuntos permitidos con la comunicación interactiva.
    * **[!UICONTROL Archivos que se adjuntarán]**: seleccione **[!UICONTROL Agregar]**, busque los archivos que desea adjuntar y especifique lo siguiente:
@@ -251,7 +251,7 @@ En el canal Imprimir, puede configurar los archivos adjuntos y el acceso a la bi
 
 ### Propiedades del campo XDP/Diseño {#xdplayoutfieldproperties}
 
-1. Al editar el canal Imprimir de una comunicación interactiva, pase el ratón sobre un campo creado en la plantilla del canal Imprimir y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
+1. Al editar el canal Imprimir de una comunicación interactiva, pase el puntero por encima de un campo creado en la plantilla del canal Imprimir y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
 
    El cuadro de diálogo Propiedades aparecerá en la barra lateral.
 
@@ -265,9 +265,9 @@ En el canal Imprimir, puede configurar los archivos adjuntos y el acceso a la bi
 
       * Ninguno: el agente rellenará el valor de la propiedad.
       * Fragmento de texto: si está seleccionado, puede buscar y seleccionar un fragmento de documento de texto cuyo contenido se procese en el campo. También puede arrastrar y soltar el fragmento de documento de texto en el nombre del campo para configurar el enlace entre ellos. El fragmento del documento de texto no debe contener ninguna variable.
-      * Objeto del modelo de datos: seleccione una propiedad del modelo de datos de formulario cuyo valor se rellene en el campo. Como alternativa, seleccione la pestaña **Fuentes de datos** y arrastre y suelte la propiedad en el campo.
+      * Objeto de modelo de datos: seleccione una propiedad del modelo de datos de formulario cuyo valor se rellene en el campo. Como alternativa, seleccione la pestaña **Fuentes de datos** y arrastre y suelte la propiedad en el campo.
 
-   * **[!UICONTROL Valores predeterminados]**: el valor predeterminado garantiza que el campo no esté vacío cuando no haya ningún valor proporcionado por el objeto del modelo de datos especificado o el fragmento de texto. Si el tipo de enlace de datos es Ninguno, el valor predeterminado se rellenará previamente en el campo.
+   * **[!UICONTROL Valores predeterminados]**: el valor predeterminado garantiza que el campo no esté vacío cuando no haya ningún valor proporcionado por el objeto de modelo de datos especificado o el fragmento de texto. Si el tipo de enlace de datos es Ninguno, el valor predeterminado se rellenará previamente en el campo.
    * **[!UICONTROL Patrón de visualización]**: también puede definir un formato de visualización para un campo. Seleccione cualquiera de las opciones predefinidas en la lista desplegable **Tipo** para aplicar un formato de visualización a un campo. Seleccione **Personalizar** para definir un patrón de visualización que no esté disponible en la lista. Para obtener más información, consulte [Patrones de visualización de datos](../../forms/using/create-interactive-communication.md#datadisplaypatterns)
 
    * **[!UICONTROL Editable por el agente]**: seleccione esta opción para permitir que el agente edite el valor en el campo de la interfaz de usuario de Agente. Esta configuración no es aplicable si el tipo de enlace es un fragmento de texto.
@@ -347,10 +347,10 @@ Puede agregar tablas dinámicas en la comunicación interactiva mediante fragmen
       * **[!UICONTROL Tipo de enlace]**: seleccione uno de los siguientes tipos de enlace para el campo.
 
          * **[!UICONTROL Ninguno]**
-         * **[!UICONTROL Objeto del modelo de datos]**: el valor de una propiedad del modelo de datos de formulario se rellena en el campo. Como alternativa, seleccione la pestaña **Fuentes de datos** y arrastre y suelte la propiedad en el campo.
+         * **[!UICONTROL Objeto de modelo de datos]**: el valor de una propiedad del modelo de datos de formulario se rellena en el campo. Como alternativa, seleccione la pestaña **Fuentes de datos** y arrastre y suelte la propiedad en el campo.
 
       * **[!UICONTROL Objeto de modelo de datos]**: propiedad del modelo de datos de formulario cuyo valor se rellena en el campo.
-      * **[!UICONTROL Valor predeterminado]**: el valor predeterminado garantiza que el campo no esté vacío cuando el objeto del modelo de datos especificado no proporcione ningún valor. El valor predeterminado se rellena previamente en el campo.
+      * **[!UICONTROL Valor predeterminado]**: el valor predeterminado garantiza que el campo no esté vacío cuando el objeto de modelo de datos especificado no proporcione ningún valor. El valor predeterminado se rellena previamente en el campo.
 
       * **[!UICONTROL Editable por el agente]**: seleccione esta opción para permitir que el agente edite el valor en el campo de la interfaz de usuario de Agente.
 
@@ -387,7 +387,7 @@ Seleccione el panel raíz en la plantilla web y seleccione **+** para agregar un
 1. Seleccione el cuadro de texto predeterminado en la celda de la tabla y seleccione ![editar](assets/edit.png) (Editar).
 1. Escriba el texto en la celda de la tabla y seleccione ![done_icon](assets/done_icon.png) para guardarlo.
 
-#### Crear enlaces entre celdas de la tabla y elementos de objeto del modelo de datos {#createbindingtablecells}
+#### Crear enlaces entre celdas de la tabla y elementos de objeto de modelo de datos {#createbindingtablecells}
 
 1. Seleccione el cuadro de texto predeterminado en la fila de la tabla y seleccione ![editar](assets/edit.png) (Editar).
 1. Seleccione la lista desplegable Objetos del modelo de datos y seleccione la propiedad.
@@ -419,8 +419,8 @@ Puede ordenar los datos en función de cualquier columna de una tabla en las com
 El orden se puede aplicar a columnas de la tabla que contengan lo siguiente:
 
 * Texto estático
-* Propiedades del objeto del modelo de datos
-* Combinación de texto estático y propiedades del objeto del modelo de datos
+* Propiedades del objeto de modelo de datos
+* Combinación de texto estático y propiedades del objeto de modelo de datos
 
 Para habilitar la ordenación:
 
@@ -435,7 +435,7 @@ Para habilitar la ordenación:
 
    Un encabezado de columna con una flecha hacia arriba representa lo siguiente:
 
-   * que se ordena en función de esa columna.
+   * la tabla se ordena en función de esa columna.
    * que los valores de la columna se muestran en orden ascendente.
 
    ![Orden ascendente](assets/sorting_ascending_new-1.png)
@@ -548,7 +548,7 @@ La herencia de los componentes de dentro del área de destino se cancelarán y p
 
 ### Volver a habilitar la herencia {#re-enable-inheritance}
 
-En el canal Web, si ha cancelado la herencia de un componente, puede volver a activarla. Para volver a habilitar la herencia, pase el ratón sobre el límite del área de destino correspondiente que incluye el componente y seleccione ![reenableinheritance](assets/reenableinheritance.png).
+En el canal Web, si ha cancelado la herencia de un componente, puede volver a habilitarla. Para volver a habilitar la herencia, pase el ratón sobre el límite del área de destino correspondiente que incluye el componente y seleccione ![reenableinheritance](assets/reenableinheritance.png).
 
 Aparecerá el cuadro de diálogo Revertir herencia.
 

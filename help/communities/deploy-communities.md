@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 0%
+source-wordcount: '1783'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Requisitos previos {#prerequisites}
 
-* [AEM Plataforma de.5](/help/sites-deploying/deploy.md)
+* [Plataforma de AEM 6.5](/help/sites-deploying/deploy.md)
 
 * Licencia de AEM Communities
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 ## Lista de comprobación de instalación {#installation-checklist}
 
-AEM **Para la [plataforma de](/help/sites-deploying/deploy.md#what-is-aem)**
+**Para la [plataforma AEM](/help/sites-deploying/deploy.md#what-is-aem)**
 
-* AEM Instalar las últimas [actualizaciones de la versión 6.5 de](#aem64updates)
+* Instalar las [últimas actualizaciones de AEM 6.5](#aem64updates)
 
 * Si no usa los puertos predeterminados (4502, 4503), [configure los agentes de replicación](#replication-agents-on-author)
 * [Replicar la clave criptográfica](#replicate-the-crypto-key)
-* Si es compatible con la globalización, [configure la traducción automatizada](/help/sites-administering/translation.md)
+* Si se admite la globalización, [configure la traducción automática](/help/sites-administering/translation.md)
 (se proporciona la configuración de muestra para el desarrollo)
 
 **Para la [capacidad Communities](/help/communities/overview.md)**
@@ -65,7 +65,7 @@ AEM **Para la [plataforma de](/help/sites-deploying/deploy.md#what-is-aem)**
       * [Configurar Solr](/help/communities/solr.md)
       * [Seleccionar DSRP](/help/communities/srp-config.md)
 
-   * Si el Adobe SRP [(ASRP)](/help/communities/asrp.md)
+   * Si Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
       * Póngase en contacto con su representante de cuentas para el aprovisionamiento
       * [Seleccionar ASRP](/help/communities/srp-config.md)
@@ -75,23 +75,23 @@ AEM **Para la [plataforma de](/help/sites-deploying/deploy.md#what-is-aem)**
       * No es un almacén de UGC (contenido generado por el usuario) compartido:
 
          * UGC nunca se replica
-         * AEM UGC solo es visible en la instancia o clúster de la instancia o clúster en el que se ha introducido.
+         * UGC solo está visible en la instancia o el clúster de AEM en el que se introdujo
 
          * El valor predeterminado es JSRP
 
 ## Últimas versiones {#latest-releases}
 
-AEM.5 Communities GA incluye el paquete Communities. AEM AEM Para obtener más información acerca de las actualizaciones de las [Comunidades](/help/release-notes/release-notes.md#experiencemanagercommunities) de la versión 6.5 de la versión, consulte las [Notas de la versión de la versión 6.5 de la versión](/help/release-notes/release-notes.md#communities-release-notes.html) de la versión de la versión 6..
+AEM 6.5 Communities GA incluye el paquete Communities. Para obtener más información acerca de las actualizaciones realizadas en las [Comunidades](/help/release-notes/release-notes.md#experiencemanagercommunities) de AEM 6.5, consulte las [Notas de la versión de AEM 6.5](/help/release-notes/release-notes.md#communities-release-notes.html).
 
-### AEM Actualizaciones de.5 {#aem-updates}
+### Actualizaciones de AEM 6.5 {#aem-updates}
 
-AEM AEM A partir de la versión 6.4, las actualizaciones de las comunidades se entregarán como parte de los paquetes de correcciones acumulativas y paquetes de servicio de la aplicación de, que se incluyen en la versión de.
+A partir de AEM 6.4, las actualizaciones de las comunidades se entregan como parte de los paquetes de correcciones acumulativas y de servicios de AEM.
 
-AEM Para obtener las últimas actualizaciones de la versión 6.5 de la versión, consulte [Paquetes de correcciones acumulativas y paquetes de servicio de Adobe Experience Manager 6.4](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
+Para obtener las últimas actualizaciones de AEM 6.5, consulte [Paquetes de correcciones acumulativas y paquetes de servicio de Adobe Experience Manager 6.4](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates).
 
 ### Historial de versiones {#version-history}
 
-AEM Al igual que en la versión 6.4 de y posteriores, las funciones y revisiones de AEM Communities forman parte de los paquetes de correcciones acumulativos y los paquetes de servicio de AEM Communities. Por lo tanto, no hay paquetes de funciones independientes.
+Al igual que en AEM 6.4 y versiones posteriores, las funciones y revisiones de AEM Communities forman parte de los paquetes de correcciones acumulativos y los paquetes de servicio de AEM Communities. Por lo tanto, no hay paquetes de funciones independientes.
 
 ### Controlador JDBC para MySQL {#jdbc-driver-for-mysql}
 
@@ -116,7 +116,7 @@ Los pasos necesarios son:
    * Compruebe que el controlador JDBC de *Oracle Corporation para MySQLcom.mysql.jdbc* esté activo y, en caso contrario, inícielo (o compruebe los registros)
 
 1. Si realiza la instalación en una implementación existente después de configurar JDBC, vuelva a enlazar JDBC al nuevo conector volviendo a guardar la configuración de JDBC desde la consola web :
-   * Por ejemplo, https://localhost:4502/system/console/configMgr
+   * Por ejemplo, https://localhost:4502/system/console/configMgr.
    * Buscar configuración de `Day Commons JDBC Connections Pool`
    * Seleccionar para abrir
    * Seleccionar `Save`
@@ -131,7 +131,7 @@ Encontrará más información sobre la instalación de paquetes en la página [C
 
 
 
-### AEM MLS avanzado de {#aem-advanced-mls}
+### MLS avanzado de AEM {#aem-advanced-mls}
 
 Para que la colección SRP (MSRP o DSRP) admita la búsqueda multilingüe avanzada (MLS), se requieren nuevos complementos de Solr, además de un esquema personalizado y una configuración de Solr. Todos los elementos necesarios se empaquetan en un archivo zip descargable.
 
@@ -139,10 +139,10 @@ La descarga avanzada de MLS (también conocida como `phasetwo`) está disponible
 
 * AEM-SOLR-MLS-phasettwo
 
-  AEM Para obtener el paquete MLS avanzado, consulte [MLS avanzado](deploy-communities.md#aem-advanced-mls) en la sección de implementación de la documentación de &lbrace;Advanced MLS.
+  Para obtener el paquete Advanced MLS, consulte [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) en la sección de implementación de la documentación.
 
    * Versión 1.2.40, 6 de abril de 2016
-   * AEM Descargar-SOLR-MLS-phasetwo-1.2.40.zip
+   * Descargar AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
 Para obtener detalles e información de instalación, visite [Configuración de Solr](/help/communities/solr.md) para SRP.
 
@@ -150,20 +150,20 @@ Para obtener detalles e información de instalación, visite [Configuración de 
 
 **Paquetes visibles en Adobe AEM Cloud**
 
-AEM Los vínculos a los paquetes de esta página no requieren la ejecución de instancias de, tal como se encuentran en el recurso compartido de paquetes de `adobeaemcloud.com`. Mientras los paquetes estén visibles, el botón `Install` sirve para instalar los paquetes en un sitio alojado en el Adobe. AEM Si se va a realizar la instalación en una instancia de la instancia local de la, al seleccionar `Install` se producirá un error.
+Los vínculos a los paquetes de esta página no requieren la ejecución de una instancia de AEM, ya que están disponibles para Package Share en `adobeaemcloud.com`. Mientras los paquetes estén visibles, el botón `Install` sirve para instalar los paquetes en un sitio alojado de Adobe. Si se va a realizar la instalación en una instancia local de AEM, al seleccionar `Install` se producirá un error.
 
-AEM **Cómo realizar la instalación en la instancia de la local**
+**Cómo realizar la instalación en una instancia local de AEM**
 
-AEM Para instalar los paquetes visibles en `adobeaemcloud.com` en una instancia local de, el paquete debe descargarse primero en un disco local:
+Para instalar los paquetes visibles en `adobeaemcloud.com` en una instancia local de AEM, primero debe descargarse el paquete en un disco local:
 
 * Seleccione la ficha **Assets**
 * Seleccionar **descargar en disco**
 
-AEM AEM En la instancia de la instancia local de la, use el Administrador de paquetes (por ejemplo, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)) para cargar en el repositorio de paquetes de la instancia local de la.
+En la instancia local de AEM, use el Administrador de paquetes (por ejemplo, [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)) para cargar en el repositorio de paquetes local de AEM.
 
-AEM AEM Como alternativa, al acceder al paquete mediante Package Share desde la instancia de la instancia de la instancia local de la instancia (por ejemplo, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), el botón `Download` se descarga en el repositorio de paquetes de la instancia de la instancia de la instancia local de la instancia de la instancia de la.
+Como alternativa, al acceder al paquete mediante Package Share desde la instancia local de AEM (por ejemplo, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), el botón `Download` se descarga en el repositorio de paquetes de la instancia local de AEM.
 
-AEM Una vez que esté en el repositorio de paquetes de la instancia de la instancia local de, utilice el Administrador de paquetes para instalar el paquete.
+Una vez en el repositorio de paquetes de la instancia local de AEM, utilice el Administrador de paquetes para instalar el paquete.
 
 Para obtener más información, visite [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md#package-share).
 
@@ -179,7 +179,7 @@ El almacén común admite la moderación y el análisis de UGC en el entorno de 
 
 ## Actualización {#upgrading}
 
-AEM AEM AEM Al actualizar a la plataforma de la versión 6.5 de la versión de la versión de la versión anterior de la versión de la versión de la versión de la versión de la versión de la versión, es importante leer [Actualización a la versión 6.5](/help/sites-deploying/upgrade.md) de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión de la versión de.
+Al actualizar a la plataforma AEM 6.5 desde versiones anteriores de AEM, es importante leer [Actualización a AEM 6.5](/help/sites-deploying/upgrade.md).
 
 Además de actualizar la plataforma, lea [Actualización a AEM Communities 6.5](/help/communities/upgrade.md) para obtener más información acerca de los cambios en las comunidades.
 
@@ -187,7 +187,7 @@ Además de actualizar la plataforma, lea [Actualización a AEM Communities 6.5](
 
 ### Editor principal {#primary-publisher}
 
-AEM Si la implementación elegida es una [granja de servidores de publicación](/help/communities/topologies.md#tarmk-publish-farm), se debe identificar una instancia de publicación como la **`primary publisher`** para las actividades que no deben producirse en todas las instancias. Por ejemplo, las características que dependen de **notifications** o **Adobe Analytics**.
+Si la implementación elegida es una [granja de servidores de publicación](/help/communities/topologies.md#tarmk-publish-farm), se debe identificar una instancia de publicación de AEM como **`primary publisher`** para las actividades que no deberían producirse en todas las instancias. Por ejemplo, las características que dependen de **notifications** o **Adobe Analytics**.
 
 De manera predeterminada, la configuración de OSGi `AEM Communities Publisher Configuration` está configurada con la casilla de verificación **`Primary Publisher`** marcada, de manera que todas las instancias de publicación de un conjunto de servidores de publicación se identificarían automáticamente como principales.
 
@@ -268,13 +268,13 @@ entonces [configure el agente de replicación](#replication-agents-on-author)
 
 ### Replicar la clave criptográfica {#replicate-the-crypto-key}
 
-Existen dos funciones de AEM Communities AEM que requieren que todas las instancias de servidor de la utilicen las mismas claves de cifrado. Estos son [Analytics](/help/communities/analytics.md) y [ASRP](/help/communities/asrp.md).
+Existen dos funciones de AEM Communities que requieren que todas las instancias del servidor de AEM utilicen las mismas claves de cifrado. Estos son [Analytics](/help/communities/analytics.md) y [ASRP](/help/communities/asrp.md).
 
-AEM A partir de la versión 6.3, el material clave se almacena en el sistema de archivos y ya no en el repositorio.
+A partir de AEM 6.3, el material clave se almacena en el sistema de archivos y ya no en el repositorio.
 
 Para copiar el material clave de Autor en todas las demás instancias, es necesario:
 
-* AEM Acceda a la instancia de (normalmente una instancia de autor) que contiene el material clave que desea copiar
+* Acceda a la instancia de AEM (normalmente una instancia de autor) que contiene el material clave que desea copiar
 
    * Busque el paquete `com.adobe.granite.crypto.file` en el sistema de archivos local,
 por ejemplo,
@@ -289,7 +289,7 @@ por ejemplo,
 
       * Copie los archivos hmac y del nodo principal
 
-* AEM Para cada instancia de destino de la
+* Para cada instancia de AEM de destino
 
    * Vaya a la carpeta de datos,
 por ejemplo,
@@ -297,15 +297,15 @@ por ejemplo,
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
    * Pegue los dos archivos copiados anteriormente
-   * AEM Es necesario [actualizar el paquete Granite Crypto](#refresh-the-granite-crypto-bundle) si se está ejecutando la instancia de destino
+   * Es necesario [actualizar el paquete Granite Crypto](#refresh-the-granite-crypto-bundle) si la instancia de AEM de destino se está ejecutando
 
 >[!CAUTION]
 >
->Si ya se ha configurado otra característica de seguridad basada en las claves criptográficas, la replicación de las claves criptográficas podría dañar la configuración. Para obtener ayuda, [póngase en contacto con el Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home&lang=es#support).
+>Si ya se ha configurado otra característica de seguridad basada en las claves criptográficas, la replicación de las claves criptográficas podría dañar la configuración. Para obtener ayuda, [póngase en contacto con el Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support).
 
 #### Replicación del repositorio {#repository-replication}
 
-AEM Se puede conservar el material clave almacenado en el repositorio, como era el caso de la versión 6.2 y anteriores de la. AEM Especifique la propiedad del sistema `-Dcom.adobe.granite.crypto.file.disable=true` en el primer inicio de cada instancia de la instancia de la (que crea el repositorio inicial).
+Se puede conservar el material clave almacenado en el repositorio, como fue el caso de AEM 6.2 y anteriores. Especifique la propiedad del sistema `-Dcom.adobe.granite.crypto.file.disable=true` en el primer inicio de cada instancia de AEM (que crea el repositorio inicial).
 
 >[!NOTE]
 >
@@ -338,7 +338,7 @@ Usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 * Después de un momento, debería aparecer un cuadro de diálogo **Correcto**:
   `Operation completed successfully.`
 
-### Servidor HTTP Apache {#apache-http-server}
+### Apache HTTP Server {#apache-http-server}
 
 Si utiliza el servidor HTTP de Apache, asegúrese de utilizar el nombre de servidor correcto para todas las entradas relevantes.
 
@@ -365,7 +365,7 @@ En particular, asegúrese de usar el nombre de servidor correcto, no `localhost`
 
 Si utiliza un Dispatcher, consulte:
 
-* AEM Documentación de [Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) de la
+* Documentación de AEM [Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)
 * [Instalación de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Configuración de Dispatcher para comunidades](/help/communities/dispatcher.md)
 * [Problemas conocidos](/help/communities/troubleshooting.md#dispatcher-refetch-fails)

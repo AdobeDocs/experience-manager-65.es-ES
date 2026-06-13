@@ -13,7 +13,7 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 96%
+ht-degree: 89%
 
 ---
 
@@ -47,7 +47,7 @@ Los formularios HTML5 proporcionan una implementación de la estructura de widge
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Devuelve un mapa para convertir eventos HTML en eventos XFA. <br /> {<br /> desenfoque: XFA_EXIT_EVENT,<br /> }<br /> Este ejemplo muestra que el desenfoque es un evento HTML y XFA_EXIT_EVENT es el evento XFA correspondiente. </td>
+   <td>Devuelve un mapa para convertir eventos de HTML en eventos XFA. <br /> {<br /> desenfoque: XFA_EXIT_EVENT,<br /> }<br /> Este ejemplo muestra que el desenfoque es un evento de HTML y XFA_EXIT_EVENT es el evento XFA correspondiente. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -104,5 +104,5 @@ Donde “identifier” es un selector de CSS jQuery que representa un campo en p
 | Tipo de identificador | Identificador | Descripción |
 |---|---|---|
 | Campo particular con nombre fieldname | Identificador: “div.fieldname” | Todos los campos con el nombre “fieldname” se representan con el widget. |
-| Todos los campos de tipo “type” (donde type es NumericField, DateField, etc.): | Identificador: “div.type” | Para Timefield y DateTimeField, el tipo es textfield, ya que estos campos no son compatibles. |
+| Todos los campos de tipo &quot;type&quot; (donde type es NumericField, DateField, etc.): | Identificador: “div.type” | Para Timefield y DateTimeField, el tipo es textfield, ya que estos campos no son compatibles. |
 | Todos los campos | Identificador: “div.field” |  |

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '9036'
+source-wordcount: '9089'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 **Acerca del servicio de repositorio**
 
-El servicio Repositorio proporciona servicios de gestión y almacenamiento de recursos a AEM Forms. Cuando los desarrolladores crean una aplicación *AEM Forms*, pueden implementar los recursos en el repositorio en lugar del sistema de archivos. Los recursos pueden incluir cualquier tipo de material colateral, incluidos formularios XML, PDF forms (incluidos formularios Acrobat), fragmentos de formulario, imágenes, perfiles, directivas, archivos de SWF, archivos DDX, esquemas XML, archivos WSDL y datos de prueba.
+El servicio Repositorio proporciona servicios de gestión y almacenamiento de recursos a AEM Forms. Cuando los desarrolladores crean una aplicación *AEM Forms*, pueden implementar los recursos en el repositorio en lugar del sistema de archivos. Los recursos pueden incluir cualquier tipo de material colateral, incluidos formularios XML, PDF forms (incluidos formularios Acrobat), fragmentos de formulario, imágenes, perfiles, directivas, archivos SWF, archivos DDX, esquemas XML, archivos WSDL y datos de prueba.
 
 Por ejemplo, vea la siguiente aplicación de Forms denominada *Applications/FormsApplication*:
 
@@ -46,7 +46,7 @@ Los siguientes valores muestran algunos ejemplos de valores de URI:
 
 >[!NOTE]
 >
->Puede examinar el repositorio de AEM Forms utilizando un explorador web. Para examinar el repositorio, escriba la siguiente URL en un explorador web `https://[server name]:[server port]/repository`. Puede comprobar los resultados de inicio rápido asociados a la sección Uso del repositorio de AEM Forms mediante un explorador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede verlo en un explorador web. SOAP (Consulte [Inicio rápido (modo de): Escritura de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
+>Puede examinar el repositorio de AEM Forms utilizando un explorador web. Para examinar el repositorio, escriba la siguiente URL en un explorador web `https://[server name]:[server port]/repository`. Puede comprobar los resultados de inicio rápido asociados a la sección Uso del repositorio de AEM Forms mediante un explorador web. Por ejemplo, si agrega contenido al repositorio de AEM Forms, puede verlo en un explorador web. (Consulte [Inicio rápido (modo SOAP): escritura de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
 La API del repositorio proporciona varias operaciones que puede utilizar para almacenar y recuperar información del repositorio. Por ejemplo, puede obtener una lista de recursos o recuperar recursos específicos almacenados en el repositorio cuando se necesite un recurso como parte del procesamiento de una aplicación.
 
@@ -72,7 +72,7 @@ Mediante la API del servicio de repositorio, puede realizar las siguientes tarea
 
 >[!NOTE]
 >
->Cuando se escribe un PDF cifrado en el repositorio, no se puede utilizar la función de extracción automatizada de relaciones. De lo contrario, se puede almacenar un PDF cifrado en el repositorio y recuperarlo más tarde. El recuperador puede optar por descifrar el PDF después de recuperarlo del repositorio.
+>Cuando se escribe un PDF cifrado en el repositorio, no se puede utilizar la función de extracción automatizada de relaciones. De lo contrario, se puede almacenar una PDF cifrada en el repositorio y recuperarla más tarde. El recuperador puede optar por descifrar la PDF después de recuperarla del repositorio.
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ Cree una carpeta mediante la API de servicio de repositorio (Java):
 
 [Creación de carpetas](aem-forms-repository.md#creating-folders)
 
-[SOAP Inicio rápido (modo de): Creación de una carpeta mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[Inicio rápido (modo SOAP): Creación de una carpeta con la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -309,7 +309,7 @@ Escriba un recurso mediante la API de servicio de repositorio (Java):
 
 [Recursos de escritura](aem-forms-repository.md#writing-resources)
 
-[SOAP Inicio rápido (modo de): Escritura de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[Inicio rápido (modo SOAP): Escritura de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -435,7 +435,7 @@ Enumerar recursos mediante la API de servicio de repositorio (Java):
 
 [Recursos de anuncio](aem-forms-repository.md#listing-resources).
 
-[SOAP Inicio rápido (modo de): Enumeración de recursos mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[Inicio rápido (modo SOAP): Enumeración de recursos mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -550,7 +550,7 @@ Leer un recurso mediante la API de servicio de repositorio (Java):
 
 [Leyendo recursos](aem-forms-repository.md#reading-resources)
 
-[SOAP Inicio rápido (modo de): Lectura de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
+[Inicio rápido (modo SOAP): Lectura de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -666,7 +666,7 @@ Actualizar un recurso mediante la API de servicio de repositorio (Java):
 
 [Actualización de recursos](aem-forms-repository.md#updating-resources)
 
-[SOAP Inicio rápido (modo de): Actualización de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
+[Inicio rápido (modo SOAP): Actualización de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -846,7 +846,7 @@ Busque un recurso mediante la API de servicio de repositorio (Java):
 
 [Búsqueda de recursos](aem-forms-repository.md#searching-for-resources)
 
-[SOAP Inicio rápido (modo de): Búsqueda de recursos mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[Inicio rápido (modo SOAP): Búsqueda de recursos mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -860,7 +860,7 @@ Puede especificar relaciones entre recursos en el repositorio. Existen tres tipo
 * **Pertenencia (sistema de archivos)**: relación en la que se encuentra un recurso dentro de una carpeta determinada.
 * **Personalizado**: una relación que usted especifica entre los recursos. Por ejemplo, si un recurso ha quedado obsoleto y otro introducido en el repositorio, puede especificar su propia relación de sustitución.
 
-Puede crear sus propias relaciones personalizadas. Por ejemplo, si almacena un archivo de HTML en el repositorio y utiliza una imagen, puede especificar una relación personalizada para relacionar el archivo de HTML con la imagen (ya que normalmente solo los archivos XML están asociados a imágenes mediante una relación de dependencia definida en el repositorio). Otro ejemplo de relación personalizada sería si desea crear una vista diferente del repositorio con una estructura de gráficos cíclica en lugar de una estructura de árbol. Puede definir un gráfico circular junto con un visor para recorrer esas relaciones. Por último, puede indicar que un recurso reemplaza a otro aunque los dos recursos sean completamente diferentes. En ese caso, puede definir un tipo de relación fuera del intervalo reservado y crear una relación entre esos dos recursos. Su aplicación sería el único cliente que podría detectar y procesar la relación y se podría utilizar para realizar búsquedas sobre esa relación.
+Puede crear sus propias relaciones personalizadas. Por ejemplo, si almacena un archivo HTML en el repositorio y utiliza una imagen, puede especificar una relación personalizada para relacionar el archivo HTML con la imagen (ya que normalmente solo los archivos XML están asociados a imágenes mediante una relación de dependencia definida en el repositorio). Otro ejemplo de relación personalizada sería si desea crear una vista diferente del repositorio con una estructura de gráficos cíclica en lugar de una estructura de árbol. Puede definir un gráfico circular junto con un visor para recorrer esas relaciones. Por último, puede indicar que un recurso reemplaza a otro aunque los dos recursos sean completamente diferentes. En ese caso, puede definir un tipo de relación fuera del intervalo reservado y crear una relación entre esos dos recursos. Su aplicación sería el único cliente que podría detectar y procesar la relación y se podría utilizar para realizar búsquedas sobre esa relación.
 
 Puede especificar mediante programación relaciones entre recursos mediante la API de Java del servicio de repositorio o la API del servicio web.
 
@@ -942,7 +942,7 @@ Cree recursos de relación mediante la API de Java del servicio de repositorio y
 
 [Creación de relaciones de recursos](aem-forms-repository.md#creating-resource-relationships)
 
-[SOAP Inicio rápido (modo de): Creación de relaciones entre recursos mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[Inicio rápido (modo SOAP): Creación de relaciones entre recursos mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1094,7 +1094,7 @@ Bloqueo de recursos mediante la API de servicio de repositorio (Java):
 
 [Bloqueo de recursos](aem-forms-repository.md#locking-resources)
 
-[SOAP Inicio rápido (modo de): Bloqueo de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[Inicio rápido (modo SOAP): Bloqueo de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1143,7 +1143,7 @@ Bloqueo de recursos mediante la API del servicio de repositorio (servicio web):
 
 ## Eliminación de recursos {#deleting-resources}
 
-SOAP Puede eliminar recursos mediante programación de una ubicación determinada del repositorio mediante la API de Java del servicio de repositorio (API) de Java. ()
+Puede eliminar recursos mediante programación de una ubicación determinada del repositorio mediante la API de Java del servicio de repositorio (SOAP).
 
 Cuando se elimina un recurso, la eliminación suele ser permanente, aunque en algunos casos los repositorios de ECM pueden almacenar las versiones del recurso según sus mecanismos de historial. Por lo tanto, al eliminar un recurso, es importante asegurarse de que nunca más necesitará ese recurso. Los motivos comunes para eliminar un recurso incluyen la necesidad de aumentar el espacio disponible en la base de datos. Puede eliminar una versión de un recurso, pero si lo hace debe especificar el identificador del recurso y no su identificador lógico (LID) o ruta de acceso. Si elimina una carpeta, se eliminará automáticamente todo el contenido de la misma, incluidas las subcarpetas y los recursos.
 
@@ -1196,7 +1196,7 @@ Invoque el método del servicio del repositorio para eliminar el recurso y espec
 
 [Inicio rápido de la API del servicio de repositorio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### SOAP Eliminación de recursos mediante la API de Java (API) {#delete-resources-using-the-java-api-soap}
+### Eliminación de recursos mediante la API de Java (SOAP) {#delete-resources-using-the-java-api-soap}
 
 Elimine un recurso mediante la API del repositorio (Java):
 
@@ -1220,7 +1220,7 @@ Elimine un recurso mediante la API del repositorio (Java):
 
 [Eliminación de recursos](aem-forms-repository.md#deleting-resources)
 
-[SOAP Inicio rápido (modo de): Búsqueda de recursos mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[Inicio rápido (modo SOAP): Búsqueda de recursos mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

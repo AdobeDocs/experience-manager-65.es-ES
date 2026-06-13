@@ -11,14 +11,14 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 3%
+source-wordcount: '436'
+ht-degree: 4%
 
 ---
 
 # Ajustar el rendimiento del monitor de estado{#fine-tuning-health-monitor-performance}
 
-AEM La recopilación de las estadísticas del sistema que rellenan el Monitor de estado afecta en cierta medida al rendimiento del entorno de formularios de la. Este impacto se puede controlar configurando las opciones de Java que se enumeran a continuación en su servidor de aplicaciones.
+La recopilación de estadísticas del sistema que rellenan el Monitor de estado afecta en cierto modo al rendimiento del entorno de los formularios AEM Forms. Este impacto se puede controlar configurando las opciones de Java que se enumeran a continuación en su servidor de aplicaciones.
 
 <table>
  <thead>

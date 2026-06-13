@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '6201'
-ht-degree: 0%
+source-wordcount: '6236'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +83,7 @@ En la tabla siguiente se describe cada paso del proceso de autenticación.
 
 >[!NOTE]
 >
->Si la zona horaria del servidor es diferente de la del cliente, al consumir el WSDL para el servicio AEM Forms Generate PDF SOAP en una pila nativa usando un cliente .NET en un clúster de Application Server para WebSphere, puede producirse el siguiente error de autenticación de User Management:
+>Si la zona horaria del servidor es diferente de la del cliente, al consumir el WSDL para el servicio AEM Forms Generate PDF en una pila nativa de SOAP con un cliente .NET en un clúster de servidor de aplicaciones de WebSphere, puede producirse el siguiente error de autenticación de User Management:
 
 `[com.adobe.idp.um.webservices.WSSecurityHandler] errorCode:12803 errorCodeHEX:0x3203 message:WSSecurityHandler: UM authenticate returns exception : An error was discovered processing the <wsse:Security> header. (WSSecurityEngine: Invalid timestamp The security semantics of message have expired).`
 
@@ -203,7 +203,7 @@ Agregar usuarios mediante la API del servicio de Directory Manager (Java):
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
-[SOAP Inicio rápido (modo de): Añadir usuarios mediante la API de Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[Inicio rápido (modo SOAP): Añadir usuarios mediante la API de Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -229,7 +229,7 @@ Agregar usuarios mediante la API del servicio Directory Manager Service (servici
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -336,7 +336,7 @@ Eliminar usuarios mediante la API del servicio de Directory Manager (Java):
 
 [Inicio rápido (modo EJB): Eliminación de usuarios mediante la API de Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[SOAP Inicio rápido (modo de): Eliminación de usuarios mediante la API de Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
+[Inicio rápido (modo SOAP): Eliminación de usuarios mediante la API de Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -358,7 +358,7 @@ Eliminar usuarios mediante la API del servicio Directory Manager Service (servic
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -602,7 +602,7 @@ Para administrar mediante programación usuarios, grupos y dominios mediante la 
 
 En este tema se describe cómo puede utilizar la API del servicio Administrador de autorización (Java) para asignar, quitar y determinar funciones y permisos mediante programación.
 
-En AEM Forms, una *función* es un grupo de permisos para acceder a uno o más recursos de nivel de sistema. Estos permisos se crean mediante Administración de usuarios y los aplican los componentes del servicio. Por ejemplo, un administrador podría asignar la función &quot;Autor del conjunto de directivas&quot; a un grupo de usuarios. El Rights Management permitiría a los usuarios de ese grupo con esa función crear conjuntos de directivas a través de la consola de administración.
+En AEM Forms, una *función* es un grupo de permisos para acceder a uno o más recursos de nivel de sistema. Estos permisos se crean mediante Administración de usuarios y los aplican los componentes del servicio. Por ejemplo, un administrador podría asignar la función &quot;Autor del conjunto de directivas&quot; a un grupo de usuarios. Rights Management permitiría a los usuarios de ese grupo con esa función crear conjuntos de directivas a través de la consola de administración.
 
 Existen dos tipos de funciones: *funciones predeterminadas* y *funciones personalizadas*. Los roles predeterminados (*roles del sistema)* ya residen en AEM Forms. Se da por hecho que el administrador no puede eliminar ni modificar las funciones predeterminadas y que, por lo tanto, son inmutables. Por lo tanto, las funciones personalizadas creadas por el administrador, que posteriormente puede modificarlas o eliminarlas, son mutables.
 
@@ -668,7 +668,7 @@ Para administrar roles y permisos mediante la API del servicio Administrador de 
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
-[SOAP Inicio rápido (modo de): Administración de funciones y permisos mediante la API de Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
+[Inicio rápido (modo SOAP): Administración de funciones y permisos mediante la API de Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -694,7 +694,7 @@ Administre funciones y permisos mediante la API del servicio Administrador de au
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
@@ -783,7 +783,7 @@ Una vez creado el cliente de servicios, puede invocar la operación de autentica
 
 **Recuperar el contexto de autenticación**
 
-Una vez autenticado el usuario, puede crear un contexto basado en el usuario autenticado. A continuación, puede utilizar el contenido para invocar otros servicios de AEM Forms. Por ejemplo, puede utilizar el contexto para crear un(a) `EncryptionServiceClient` y cifrar un documento de PDF con una contraseña. Asegúrese de que el usuario autenticado tenga la función denominada `Services User` necesaria para invocar un servicio de AEM Forms.
+Una vez autenticado el usuario, puede crear un contexto basado en el usuario autenticado. A continuación, puede utilizar el contenido para invocar otros servicios de AEM Forms. Por ejemplo, puede usar el contexto para crear un `EncryptionServiceClient` y cifrar un documento de PDF con una contraseña. Asegúrese de que el usuario autenticado tenga la función denominada `Services User` necesaria para invocar un servicio de AEM Forms.
 
 **Consulte también**
 
@@ -851,7 +851,7 @@ Autenticar a un usuario mediante la API del servicio Administrador de autenticac
 
 ## Sincronización de usuarios mediante programación {#programmatically-synchronizing-users}
 
-Puede sincronizar usuarios mediante programación utilizando la API de administración de usuarios. Al sincronizar usuarios, está actualizando AEM Forms con los datos de usuario que se encuentran en su repositorio de usuarios. Por ejemplo, supongamos que agrega nuevos usuarios al repositorio de usuarios. AEM Después de realizar una operación de sincronización, los nuevos usuarios se convierten en usuarios de formularios de la aplicación de la aplicación de la manera más rápida. Además, los usuarios que ya no estén en su repositorio de usuarios se eliminarán de AEM Forms.
+Puede sincronizar usuarios mediante programación utilizando la API de administración de usuarios. Al sincronizar usuarios, está actualizando AEM Forms con los datos de usuario que se encuentran en su repositorio de usuarios. Por ejemplo, supongamos que agrega nuevos usuarios al repositorio de usuarios. Después de realizar una operación de sincronización, los nuevos usuarios se convierten en usuarios de formularios AEM Forms. Además, los usuarios que ya no estén en su repositorio de usuarios se eliminarán de AEM Forms.
 
 El diagrama siguiente muestra la sincronización de AEM Forms con un repositorio de usuario.
 

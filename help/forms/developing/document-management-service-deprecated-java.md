@@ -11,42 +11,42 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '642'
 ht-degree: 2%
 
 ---
 
-# SOAP Inicio rápido (en desuso) de la API de Java del servicio Administración de documentos (en desuso) () {#document-management-service-deprecated-java-api-quick-start-soap}
+# Inicio rápido (SOAP) de la API de Java del servicio Administración de documentos (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
 
 Los siguientes tutoriales rápidos están disponibles para el servicio Administración de documentos (obsoleto).
 
 >[!NOTE]
 >
->A partir del 5 de agosto de 2011, Adobe migrará los clientes de Content Services ES a Adobe Digital Enterprise Platform Experience Services. La hoja de ruta del producto para los clientes que utilizan servicios de contenido es pasar al nuevo ADEP Experience Services - Core, que incluye un repositorio de contenido nativo creado sobre la arquitectura moderna y modular de CRX, adquirido durante la Adobe de la adquisición de Day Software.
+>A partir del 5 de agosto de 2011, Adobe migrará los clientes de Content Services ES a Adobe Digital Enterprise Platform Experience Services. La hoja de ruta del producto para los clientes que utilizan Content Services es pasar al nuevo ADEP Experience Services - Core, que incluye un repositorio de contenido nativo creado sobre la arquitectura moderna y modular de CRX, adquirido durante la adquisición por Adobe del software Day.
 
-[SOAP Inicio rápido (modo de): Crear espacios de servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
+[Inicio rápido (modo SOAP): Crear espacios de servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
-[SOAP Inicio rápido (modo de): Eliminar contenido de Content Services mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
+[Inicio rápido (modo SOAP): Eliminar contenido de servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
 
-[SOAP Inicio rápido (modo de): Añadir contenido a los servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
+[Inicio rápido (modo SOAP): Añadir contenido a los servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
 
-[SOAP Inicio rápido (modo de): Recuperar contenido de los servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
+[Inicio rápido (modo SOAP): Recuperar contenido de los servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
 
-[SOAP Inicio rápido (modo de): Mover contenido de Content Services mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
+[Inicio rápido (modo SOAP): Mover contenido de servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
 
-[SOAP Inicio rápido (modo de): Enumerar el contenido de los servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
+[Inicio rápido (modo SOAP): Enumerar contenido de servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
 
-[SOAP Inicio rápido (modo de): Buscar contenido de Content Services mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
+[Inicio rápido (modo SOAP): Buscar contenido de servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
 
-[SOAP Inicio rápido (modo de): Configuración de permisos de servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
+[Inicio rápido (modo SOAP): Definición de permisos de servicios de contenido mediante la API de Java](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms SOAP con establecimiento inflexible de tipos y el modo de conexión debe establecerse en.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->AEM Los inicios rápidos en Programación con formularios de se basan en el servidor de Forms que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Los inicios rápidos en Programación con formularios AEM se basan en el servidor de Forms que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Establecimiento de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## SOAP Inicio rápido (modo de): Crear espacios de Content Services con la API de Java (obsoleto) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Crear espacios de servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
 En el siguiente ejemplo de código Java se crea un nuevo espacio denominado *Directorio de pruebas* en la página de inicio de la compañía. El valor de identificación del nuevo espacio se escribe en la consola.
 
@@ -142,7 +142,7 @@ En el siguiente ejemplo de código Java se crea un nuevo espacio denominado *Dir
  
 ```
 
-## SOAP Inicio rápido (modo de): Eliminar contenido de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Eliminar contenido de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 El siguiente ejemplo de código Java elimina un espacio denominado /Company Home/Test Directory.
 
@@ -242,9 +242,9 @@ El siguiente ejemplo de código Java elimina un espacio denominado /Company Home
  
 ```
 
-## SOAP Inicio rápido (modo de): Añadir contenido a los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Añadir contenido a los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java agrega un archivo de PDF denominado *MortgageForm.pdf* a una carpeta denominada /Company Home/Test Directory. Se establecen los atributos creador y descripción. El valor de identificación del nuevo contenido se escribe en la consola.
+El siguiente ejemplo de código Java agrega un archivo PDF denominado *MortgageForm.pdf* a una carpeta denominada /Company Home/Test Directory. Se establecen los atributos creador y descripción. El valor de identificación del nuevo contenido se escribe en la consola.
 
 ```java
  /*
@@ -365,9 +365,9 @@ El siguiente ejemplo de código Java agrega un archivo de PDF denominado *Mortga
  
 ```
 
-## SOAP Inicio rápido (modo de): Recuperar contenido de los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Recuperar contenido de los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java recupera un archivo de PDF denominado *MortgageForm.pdf* de la página principal de /Company. El archivo del PDF se guardará en el sistema de archivos local y se llamará *UpdatedMortgageForm.pdf*.
+El siguiente ejemplo de código Java recupera un archivo de PDF llamado *MortgageForm.pdf* de la página principal de /Company. El archivo PDF se guardará en el sistema de archivos local y se llamará *UpdatedMortgageForm.pdf*.
 
 ```java
  /*
@@ -471,9 +471,9 @@ El siguiente ejemplo de código Java recupera un archivo de PDF denominado *Mort
  
 ```
 
-## SOAP Inicio rápido (modo de): Mover contenido de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Mover contenido de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-El siguiente ejemplo de código Java mueve un archivo de PDF llamado *MortgageForm.pdf* de /Company Home/Test Directory a /Company Home. El valor de identificación del contenido movido se escribe en la consola.
+El siguiente ejemplo de código Java mueve un archivo PDF llamado *MortgageForm.pdf* de /Company Home/Test Directory a /Company Home. El valor de identificación del contenido movido se escribe en la consola.
 
 ```java
  /*
@@ -572,7 +572,7 @@ El siguiente ejemplo de código Java mueve un archivo de PDF llamado *MortgageFo
  
 ```
 
-## SOAP Inicio rápido (modo de): Enumerar el contenido de los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Enumerar el contenido de los servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
 El siguiente ejemplo de código Java enumera el contenido que se encuentra en /Company Home. Se muestra cada tipo y nombre de nodo.
 
@@ -685,7 +685,7 @@ El siguiente ejemplo de código Java enumera el contenido que se encuentra en /C
  
 ```
 
-## SOAP Inicio rápido (modo de): Buscar contenido de Content Services mediante la API de Java (obsoleto) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Buscar contenido de servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
 El siguiente código Java busca en /Company Home un documento que contenga el texto MortgageForm. También se buscan las subcarpetas.
 
@@ -795,7 +795,7 @@ El siguiente código Java busca en /Company Home un documento que contenga el te
  
 ```
 
-## SOAP Inicio rápido (modo de): Configuración de permisos de servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Configuración de permisos de servicios de contenido mediante la API de Java (obsoleto) {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
 El siguiente ejemplo de código Java establece un permiso para un usuario denominado tony blue. El dominio especificado es el dominio predeterminado. Se especificó el permiso de Consumidor y el nodo es `/Company Home/Test Directory`.
 
@@ -905,9 +905,9 @@ El siguiente ejemplo de código Java establece un permiso para un usuario denomi
  
 ```
 
-## SOAP Inicio rápido (modo de): Creación de asociaciones mediante la API de Java (obsoleto) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
+## Inicio rápido (modo SOAP): Creación de asociaciones con la API de Java (obsoleto) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
-El siguiente código Java crea una asociación entre un archivo de datos XML y un formulario de PDF. Este tipo de asociación se denomina LinkedBy. El documento de PDF debe tener aplicado el elemento enlazable.
+El siguiente código Java crea una asociación entre un archivo de datos XML y un formulario de PDF. Este tipo de asociación se denomina LinkedBy. El documento de PDF debe tener aplicado el aspecto enlazable.
 
 ```java
  /*

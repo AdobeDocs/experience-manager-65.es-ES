@@ -9,7 +9,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5414'
 ht-degree: 8%
 
 ---

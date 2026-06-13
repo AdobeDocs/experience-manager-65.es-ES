@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 * adobe-utilities.jar (requerido si AEM Forms está implementado en JBoss)
 * jbossall-client.jar (requerido si AEM Forms está implementado en JBoss)
 
-**Crear un cliente de ensamblador de PDF**
+**Crear un cliente de PDF Assembler**
 
 Para poder realizar mediante programación una operación de Assembler, cree un cliente de servicio Assembler.
 
@@ -150,7 +150,7 @@ Se devuelve un documento XDP ensamblado dentro de un objeto de colección. Itere
 
 [Configuración programática de documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)
 
-[Creación de documentos de PDF mediante fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)
+[Crear documentos de PDF mediante fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
 ## Combinar varios fragmentos XDP mediante la API de Java {#assemble-multiple-xdp-fragments-using-the-java-api}
 
@@ -205,8 +205,8 @@ Ensamble varios fragmentos XDP utilizando la API del servicio Assembler (Java):
 **Consulte también**
 
 [Agrupar varios fragmentos XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-SOAP [Inicio rápido (modo de): ensamblar varios fragmentos XDP mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
-[Incluyendo archivos de la biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inicio rápido (modo SOAP): Agrupar varios fragmentos XDP mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[Incluyendo archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Combinar varios fragmentos XDP mediante la API de servicio web {#assemble-multiple-xdp-fragments-using-the-web-service-api}
@@ -233,7 +233,7 @@ Ensamble varios fragmentos XDP utilizando la API del servicio Assembler (servici
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario del formulario de la al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el nombre de usuario de los formularios AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.

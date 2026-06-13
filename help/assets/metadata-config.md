@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
 source-wordcount: '2005'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets] guarda los metadatos de cada recurso. Permite una categorización y organización más sencillas de los recursos y ayuda a las personas que buscan un recurso específico. Con la capacidad de mantener y administrar metadatos con sus recursos, puede organizar y procesar recursos automáticamente en función de sus metadatos. [!DNL Adobe Experience Manager Assets] permite que los administradores configuren y personalicen la funcionalidad de metadatos para modificar la oferta predeterminada de Adobe.
+[!DNL Adobe Experience Manager Assets] guarda los metadatos de cada recurso. Esto facilita la categorización y organización de los recursos y ayuda al buscar un recurso específico. Con la capacidad de mantener y administrar metadatos con sus recursos, puede organizar y procesar recursos automáticamente en función de sus metadatos. [!DNL Adobe Experience Manager Assets] permite que los administradores configuren y personalicen la funcionalidad de metadatos para modificar la oferta predeterminada de Adobe.
 
 ## Editar esquema de metadatos {#metadata-schema}
 

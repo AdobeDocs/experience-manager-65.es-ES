@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1670'
 ht-degree: 86%
 
 ---
@@ -80,7 +80,7 @@ Puede insertar una condición dentro de la línea en una carta si inserta la con
 
 1. Previsualice la carta correspondiente y observe que el texto se procesa según la condición dentro de la línea. Puede introducir el valor del elemento DD Género al utilizar:
 
-   * Un archivo de datos XML de ejemplo creado en función del diccionario de datos pertinente mientras se previsualiza la carta con datos de ejemplo.
+   * Un archivo de datos XML de muestra creado en función del diccionario de datos pertinente mientras se previsualiza la carta con datos de muestra.
    * Un archivo de datos XML adjunto al diccionario de datos pertinente.
 
    Para obtener más información, consulte [Diccionario de datos](../../forms/using/data-dictionary.md).
@@ -97,7 +97,7 @@ Además, puede especificar la regla/condición dentro de la construcción repeti
 
 El siguiente ejemplo le muestra los pasos para utilizar Repetir para estructurar y procesar las transacciones de tarjetas de crédito en una comunicación interactiva.
 
-1. En un fragmento de documento basado en modelos de datos de formulario, inserte los objetos correspondientes del modelo de datos de formulario (y el texto incrustado requerido para las etiquetas, como en este ejemplo):
+1. En un fragmento de documento basado en modelos de datos de formulario, inserte los objetos de modelo de datos de formulario correspondientes (y el texto incrustado requerido para las etiquetas, como en este ejemplo):
 
    ![1_elementstext](assets/1_elementstext.png)
 
@@ -197,7 +197,7 @@ En el siguiente ejemplo se proporcionan los pasos para utilizar Repetir para est
 
 1. Previsualice la carta correspondiente y observe que el texto se represente de acuerdo con la repetición. Puede introducir el valor de los elementos DD mediante lo siguiente:
 
-   * Un archivo de datos XML de ejemplo creado en función del diccionario de datos pertinente mientras se previsualiza la carta con datos de ejemplo.
+   * Un archivo de datos XML de muestra creado en función del diccionario de datos pertinente mientras se previsualiza la carta con datos de muestra.
    * Un archivo de datos XML adjunto al diccionario de datos pertinente.
 
    Para obtener más información, consulte [Diccionario de datos](https://helpx.adobe.com/es/aem-forms/6-2/data-dictionary.html).
