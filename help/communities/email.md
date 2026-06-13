@@ -184,7 +184,7 @@ Para que el correo electrónico se introduzca en el repositorio, es necesario co
 
   *(Obligatorio)* El servidor de correo saliente. Por ejemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL Importar a ruta]**&amp;ast;
+* **[!UICONTROL Importar a ruta]**&ast;
 
   *(obligatorio)* establecido en `/content/usergenerated/mailFolder/postEmails`
 navegue hasta la carpeta `postEmails`y seleccione **Aceptar**.
