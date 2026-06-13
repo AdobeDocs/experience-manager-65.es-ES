@@ -1,6 +1,6 @@
 ---
-title: Informes
-description: Aprenda a trabajar con los informes en Adobe Experience Manager AEM ().
+title: Creación de informes
+description: Aprenda a trabajar con los informes en Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -12,14 +12,14 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2782'
-ht-degree: 3%
+source-wordcount: '2806'
+ht-degree: 4%
 
 ---
 
-# Informes {#reporting}
+# Creación de informes {#reporting}
 
-Para ayudarle a monitorizar y analizar el estado de su instancia, Adobe Experience Manager AEM () proporciona una selección de informes predeterminados, que se pueden configurar para sus necesidades individuales:
+Para ayudarle a monitorizar y analizar el estado de su instancia, Adobe Experience Manager (AEM) proporciona una selección de informes predeterminados, que se pueden configurar para sus necesidades individuales:
 
 * [Informe sobre componentes](#component-report)
 * [Uso del disco](#disk-usage)
@@ -40,7 +40,7 @@ También se pueden crear nuevas instancias de un informe desde la consola **Herr
 
 >[!NOTE]
 >
->AEM Además de los informes de estándar disponibles de forma predeterminada, puede [desarrollar sus propios informes (nuevos)](/help/sites-developing/dev-reports.md).
+>Además de los informes estándar de AEM disponibles de forma predeterminada, puede [desarrollar sus propios informes (nuevos)](/help/sites-developing/dev-reports.md).
 
 ## Aspectos básicos de la personalización de informes {#the-basics-of-report-customization}
 
@@ -262,7 +262,7 @@ Esta es una ubicación en la que se define el período para recopilar instantán
 
      Cuando se selecciona esta opción, se muestra el botón **[Cargar datos](#load-data)** (junto a **Editar** en el informe). **Cargar datos** carga los datos y actualiza los datos del informe que se muestran.
 
-* **Instantáneas**
+* **instantáneas**
 Puede definir la frecuencia con la que se crean las instantáneas, diariamente, por hora o en absoluto.
 
 ### Cargar datos {#load-data}
@@ -366,7 +366,7 @@ Para generar el informe, puede especificar lo siguiente:
 
   Opcional; predeterminada: en blanco
 
-* **Ejecutar a diario a las (hh:mm)**
+* **Ejecutar diariamente a las (hh:mm)**
 
   Especifique la hora a la que el informe se ejecutará automáticamente a diario.
 
@@ -406,7 +406,7 @@ Este informe proporciona información sobre el contenido generado por el usuario
 * Fecha
 * Dirección IP
 * Página
-* Referencia
+* Remitente del reenvío
 * Tipo
 * Identificador de usuario
 
@@ -429,7 +429,7 @@ Este informe proporciona información sobre todos los usuarios que han registrad
 * Dominio
 * Correo electrónico
 * Apellido
-* Sexo
+* Género
 * [Genérica](#generic-column)
 * Nombre dado
 * Información
@@ -510,13 +510,13 @@ Esto proporciona estadísticas clave sobre los flujos de trabajo que se ejecutan
 
 ![flujo de trabajo del informe](assets/reportworkflow.png)
 
-## Uso de informes en un entorno de Publish {#using-reports-in-a-publish-environment}
+## Uso de informes en un entorno de publicación {#using-reports-in-a-publish-environment}
 
 Una vez configurados los informes según sus necesidades específicas, puede activarlos para transferir la configuración al entorno de publicación.
 
 >[!CAUTION]
 >
->Si desea **datos históricos** para el entorno de Publish, entonces **finalice** el informe en el entorno de Author antes de activar la página.
+>Si desea **datos históricos** para el entorno de publicación, **finalice** el informe en el entorno de creación antes de activar la página.
 
 A continuación, se puede acceder al informe correspondiente en
 
@@ -526,15 +526,15 @@ Por ejemplo, el informe Contenido generado por el usuario se encuentra en:
 
 `http://localhost:4503/etc/reports/ugcreport.html`
 
-Ahora informa sobre los datos recopilados del entorno de Publish.
+Ahora informa de los datos recopilados del entorno de publicación.
 
-Como no se permite ninguna configuración de informe en el entorno de Publish, los botones **Editar** y **Finalizar** no están disponibles. Sin embargo, puede seleccionar los informes **Periodo** e **Intervalo** para los **datos históricos** si se están recopilando instantáneas.
+Como no se permite ninguna configuración de informe en el entorno de publicación, los botones **Editar** y **Finalizar** no están disponibles. Sin embargo, puede seleccionar los informes **Periodo** e **Intervalo** para los **datos históricos** si se están recopilando instantáneas.
 
 ![reportsucgpublish](assets/reportsucgpublish.png)
 
 >[!CAUTION]
 >
->El acceso a estos informes puede ser un problema de seguridad; por lo tanto, Adobe recomienda configurar Dispatcher para que `/etc/reports` no esté disponible para los visitantes externos. Consulte la [Lista de comprobación de seguridad](security-checklist.md) para obtener más información.
+>El acceso a estos informes puede ser un problema de seguridad; por lo tanto, Adobe recomienda configurar Dispatcher para que `/etc/reports` no esté disponible para los visitantes externos. Consulte la [lista de comprobación de seguridad](security-checklist.md) para obtener más información.
 
 ## Permisos necesarios para ejecutar informes {#permissions-needed-for-running-reports}
 
@@ -543,7 +543,7 @@ Los permisos necesarios dependen de la acción:
 * Los datos del informe se recopilan con los privilegios del usuario actual.
 * Los datos históricos se recopilan con los privilegios del usuario que finalizó el informe.
 
-AEM En una instalación estándar, los siguientes permisos están preestablecidos para los informes:
+En una instalación estándar de AEM, los siguientes permisos están preestablecidos para los informes:
 
 * **Informe de usuario**
 

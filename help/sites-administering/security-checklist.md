@@ -11,9 +11,9 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
-workflow-type: ht
-source-wordcount: '2959'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3025'
+ht-degree: 98%
 
 ---
 
@@ -87,7 +87,7 @@ Para obtener más información sobre cómo cambiar la contraseña de la consola 
 Cambie la contraseña utilizada para acceder a la consola web. Use una [configuración de OSGI](/help/sites-deploying/configuring-osgi.md) para actualizar las siguientes propiedades de la **consola de administración de Apache Felix de OSGi**:
 
 * **Nombre de usuario** y **Contraseña**, las credenciales para acceder a la propia consola de administración web de Apache Felix.
-La contraseña debe cambiarse *después* de la instalación inicial para garantizar la seguridad de su instancia.
+La contraseña debe cambiarse *después de* la instalación inicial para garantizar la seguridad de su instancia.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ La contraseña debe cambiarse *después* de la instalación inicial para garanti
 
 **Para cambiar la contraseña de administrador de la consola web de OSGi**:
 
-1. Mediante el menú **Herramientas**, **Operaciones**, abra **Consola web** y vaya a la sección **Configuración**.
+1. Con el menú **Herramientas**, **Operaciones**, abra la **consola web** y vaya a la sección **Configuración**.
 Por ejemplo, en `<server>:<port>/system/console/configMgr`.
 1. Vaya a la entrada de **Consola de administración Apache Felix de OSGi** y ábrala.
 1. Cambie el **nombre de usuario** y la **contraseña**.
@@ -110,11 +110,11 @@ Adobe recomienda definir páginas de controladores de errores personalizados, es
 
 >[!NOTE]
 >
->Consulte [Cómo puedo crear scripts personalizados o controladores de errores](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=es) para obtener más información.
+>Consulte [Cómo puedo crear scripts personalizados o controladores de errores](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html) para obtener más información.
 
 ### Completar la lista de comprobación de seguridad de Dispatcher {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher es una parte esencial de su infraestructura. Adobe recomienda completar la [lista de comprobación de seguridad de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=es).
+AEM Dispatcher es una parte esencial de su infraestructura. Adobe recomienda completar la [lista de comprobación de seguridad de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
 
 >[!CAUTION]
 >
@@ -324,7 +324,7 @@ Para ayudar a evitar el uso indebido de DoS, puede hacer lo siguiente:
 >
 >Esta mitigación solo debe realizarse en entornos de AEM que no utilicen Forms.
 
-Dado que AEM no proporciona índices predeterminados para `FormChooserServlet`, el uso de selectores de formulario en las consultas puede provocar un costoso recorrido del repositorio, lo que generalmente paraliza la instancia de AEM. Los selectores de formularios se pueden detectar mediante la presencia de **&amp;ast;.form.Cadena &amp;ast;** en consultas.
+Dado que AEM no proporciona índices predeterminados para `FormChooserServlet`, el uso de selectores de formulario en las consultas puede provocar un costoso recorrido del repositorio, lo que generalmente paraliza la instancia de AEM. Los selectores de formularios se pueden detectar mediante la presencia de la cadena **&amp;ast;.form.&amp;ast;** en las consultas.
 
 Para mitigar este problema, puede realizar los siguientes pasos:
 
@@ -377,7 +377,7 @@ No se debe realizar ninguna configuración para habilitarla, ya que ahora es la 
 
 Aunque no se recomienda, puede deshabilitarla en caso de que necesite la implementación antigua para mantener la compatibilidad con las aplicaciones existentes. Para ello, debe hacer lo siguiente:
 
-1. Vaya a la consola web y elimine la entrada org**.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** de la propiedad **requiredServicePids** en **Apache Jackrabbit Oak SecurityProvider**.
+1. Vaya a la consola web y elimine la entrada org **.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** de la propiedad **requiredServicePids** en **Apache Jackrabbit Oak SecurityProvider**.
 
    También puede encontrar el proveedor de seguridad de Oak buscando el PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** en las configuraciones de OSGi.
 

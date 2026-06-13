@@ -12,7 +12,7 @@ feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6582'
 ht-degree: 0%
 
 ---
@@ -263,7 +263,7 @@ MongoDB se ejecuta en varios sistemas operativos, incluidos una amplia variedad 
    * valor andkernel.threads-max de 64000
 
 * Asegúrese de que el sistema tenga configurado el espacio de intercambio. Consulte la documentación del sistema operativo para obtener detalles sobre el tamaño adecuado.
-* Asegúrese de que el TCP keepalive predeterminado del sistema esté configurado correctamente. Un valor de 300 suele proporcionar un mejor rendimiento para conjuntos de réplicas y clústeres compartidos. Consulte: [¿Afecta el tiempo de mantenimiento de TCP a las implementaciones de MongoDB?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) en las Preguntas más frecuentes para obtener más información.
+* Asegúrese de que el TCP keepalive predeterminado del sistema esté configurado correctamente. Un valor de 300 suele proporcionar un mejor rendimiento para conjuntos de réplicas y clústeres compartidos. Ver: [¿Afecta el tiempo de mantenimiento de TCP a las implementaciones de MongoDB?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) en las Preguntas más frecuentes para obtener más información.
 
 #### Windows {#windows}
 
@@ -607,7 +607,7 @@ Se recomienda habilitar conexiones fijas para todas las solicitudes de enrutamie
 
 #### Caduca mucho {#long-expires}
 
-De forma predeterminada, el contenido enviado desde una Dispatcher de AEM tiene encabezados Last-Modified y Etag, sin indicación de la caducidad del contenido. Este flujo garantiza que la interfaz de usuario siempre obtenga la última versión del recurso. También significa que el explorador realiza una operación de GET para ver si el recurso ha cambiado. Como resultado, puede generar varias solicitudes a las que la respuesta HTTP es 304 (sin modificar), según la carga de la página. Para los recursos que no caducan, establecer un encabezado Expires y quitar los encabezados Last-Modified y ETag hacen que el contenido se almacene en caché. Además, no se realizan más solicitudes de actualización hasta que se cumpla la fecha del encabezado Caduca.
+De forma predeterminada, el contenido enviado desde una Dispatcher de AEM tiene encabezados Last-Modified y Etag, sin indicación de la caducidad del contenido. Este flujo garantiza que la interfaz de usuario siempre obtenga la última versión del recurso. También significa que el explorador realiza una operación GET para ver si el recurso ha cambiado. Como resultado, puede generar varias solicitudes a las que la respuesta HTTP es 304 (sin modificar), según la carga de la página. Para los recursos que no caducan, establecer un encabezado Expires y quitar los encabezados Last-Modified y ETag hacen que el contenido se almacene en caché. Además, no se realizan más solicitudes de actualización hasta que se cumpla la fecha del encabezado Caduca.
 
 Sin embargo, el uso de este método significa que no hay una manera razonable de hacer que el recurso caduque en el explorador antes de que caduque el encabezado Expires. Para mitigar este flujo de trabajo, HtmlClientLibraryManager se puede configurar para que utilice direcciones URL inmutables para las bibliotecas de cliente.
 
