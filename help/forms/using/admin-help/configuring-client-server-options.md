@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10377'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ Para ver cómo funciona la concesión y sincronización sin conexión, consulte 
 **Permitir autenticación extendida** Seleccione esta opción para habilitar la autenticación extendida y, a continuación, escriba la dirección URL de aterrizaje de autenticación extendida.
 
 Al seleccionar esta opción, las aplicaciones cliente pueden utilizar la autenticación extendida. La autenticación extendida proporciona procesos de autenticación personalizados y diferentes opciones de autenticación configuradas en el servidor de AEM Forms. Por ejemplo, ahora los usuarios pueden experimentar la autenticación basada en SAML en lugar del nombre de usuario y la contraseña de los formularios AEM, desde Acrobat y el cliente de Reader. De manera predeterminada, la dirección URL de aterrizaje contiene *localhost* como nombre de servidor. Sustituya el nombre del servidor por un nombre de host completo. El nombre de host de la dirección URL de aterrizaje se rellena automáticamente desde la dirección URL base si la autenticación extendida aún no está habilitada. Consulte [Agregar el proveedor de autenticación extendida](configuring-client-server-options.md#add-the-extended-authentication-provider).
+
+>[!NOTE]
+>
+> La autenticación de explorador externo está disponible en AEM Forms en el paquete de servicio JEE 6.5.25.0 y versiones posteriores. Si está en el Service Pack 6.5.24.0 o anterior, actualice al Service Pack 6.5.25.0 o instale la revisión JEE aplicable. Consulte [Configurar la autenticación extendida desde un explorador externo para la seguridad de los documentos](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md).
 
 ***nota &#x200B;**: La autenticación extendida es compatible con Apple Mac OS X con Adobe Acrobat versión 11.0.6 y posterior.*
 

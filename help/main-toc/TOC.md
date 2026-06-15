@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 606ea57b0e9c012b9bc87ac87910337c025038ee
+source-git-commit: 25928abbff3ed684fd1b7130c3f4f6095c33e0d2
 workflow-type: tm+mt
-source-wordcount: '8270'
+source-wordcount: '8279'
 ht-degree: 96%
 
 ---
@@ -1007,6 +1007,7 @@ ht-degree: 96%
          + [Acerca de la seguridad de los documentos](/help/forms/using/admin-help/document-security.md)
          + [Entregar información segura de gran volumen](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
          + [Configurar las opciones de cliente y servidor](/help/forms/using/admin-help/configuring-client-server-options.md)
+         + [Configurar la autenticación extendida desde un explorador externo para la seguridad de los documentos](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md)
          + [Administrar cuentas de usuario invitadas y locales](/help/forms/using/admin-help/invited-local-user-accounts.md)
          + [Controlar el acceso a documentos protegidos por directivas](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
          + [Supervisar eventos](/help/forms/using/admin-help/monitoring-events.md)
