@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: a452674c-aea0-45d6-88cd-438af539d355
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 98a772829d3568a5826ea9e3ae65760f1587040f
+source-git-commit: 89a07256cd5bb850aac19565ad86273322fa1f31
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1029'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,11 @@ Antes de configurar la autenticación de un explorador externo, asegúrese de qu
 
 * AEM Forms 6.5 en JEE con Service Pack 6.5.25.0 implementado o Service Pack 6.5.24.0 con la revisión de revisión JEE aplicable instalada en un servidor de aplicaciones compatible (JBoss, WebLogic o WebSphere). Consulte [Vínculos de distribución de software para la revisión JEE de AEM Forms2 6.5.24.0](#software-distribution-links).
 * La autenticación extendida (autenticación de terceros) ya está habilitada y funciona con un IDP. Consulte [Configuración del servidor](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings) y [Agregar el proveedor de autenticación extendida](/help/forms/using/admin-help/configuring-client-server-options.md#add-the-extended-authentication-provider).
-* Adobe Acrobat Pro o Adobe Acrobat Reader (64 bits) instalados en el equipo cliente Windows con la última actualización
+* Adobe Acrobat Pro o Adobe Acrobat Reader (64 bits) instalados en el equipo cliente Windows con la última actualización.
+
+>[!NOTE]
+>
+> La autenticación de explorador externo requiere una versión compatible de Adobe Acrobat o Adobe Acrobat Reader en el cliente. Consulte las [Notas de la versión de Acrobat (seguimiento continuo de marzo de 2026)](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix) para obtener detalles y actualizaciones de la versión.
 
 ### Vínculos de distribución de software para la revisión 2 de AEM Forms JEE 6.5.24.0 {#software-distribution-links}
 
@@ -115,7 +119,7 @@ Este vídeo muestra cómo comprobar la autenticación de un explorador externo: 
 ### Se abre el explorador incrustado en lugar del explorador del sistema {#embedded-browser-opens-instead-of-system-browser}
 
 * Compruebe que el servidor tiene habilitada la autenticación de explorador externo. Consulte [Habilitar la autenticación de explorador externo](#enable-external-browser-authentication).
-* Confirme que la versión de Acrobat o Reader admite esta función.
+* Confirme que la versión de Acrobat o Reader admite esta función. Ver [Acrobat](#acrobat).
 
 ### La autenticación se realiza correctamente en el explorador, pero el documento no se desbloquea {#authentication-succeeds-but-document-does-not-unlock}
 
