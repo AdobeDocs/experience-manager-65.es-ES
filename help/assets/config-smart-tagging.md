@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2294'
 ht-degree: 13%
 
 ---
@@ -146,7 +146,7 @@ Debe crear una configuración de cuenta técnica de IMS siguiendo los pasos a co
 
 1. Confirme el cuadro de diálogo Comprobar estado y haga clic en Cerrar cuando la configuración esté en buen estado.
 
-### Crear una nueva configuración {#configure-smart-content-service}
+### Crear una nueva configuración
 
 <!--
 >[!CAUTION]
@@ -175,7 +175,7 @@ Para configurar la integración, use los valores de los campos [!UICONTROL ID. D
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
-### Validar la configuración {#validate-the-configuration}
+### Validar la configuración
 
 Una vez completada la configuración, puede utilizar un MBean de JMX para validar la configuración. Para validar, siga estos pasos.
 
@@ -281,7 +281,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
    *Figure: Details of integration in Adobe Developer Console*
 
-### Configure Smart Content Service {#configure-smart-content-service}
+### Configure Smart Content Service
 
 >[!CAUTION]
 >
@@ -338,7 +338,7 @@ An authorization scope is an OAuth string that contains the following prerequisi
 6. Delete the old configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 7. Restart the console.
 
-### Validate the configuration {#validate-the-configuration}
+### Validate the configuration
 
 After you have completed the configuration, you can use a JMX MBean to validate the configuration. To validate, follow these steps.
 
