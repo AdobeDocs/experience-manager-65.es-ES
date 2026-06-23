@@ -1,5 +1,5 @@
 ---
-title: Día difícil
+title: Tough Day
 description: La prueba de Día difícil simula la carga diaria de unos 1000 autores en el peor de los casos, con todas las operaciones en marcha al mismo tiempo.
 topic-tags: testing
 content-type: reference
@@ -7,18 +7,18 @@ exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 0dc83f7613a7202658d2d2eda421cb58c7e0092a
 workflow-type: tm+mt
-source-wordcount: '1825'
-ht-degree: 1%
+source-wordcount: '1838'
+ht-degree: 2%
 
 ---
 
-# Día difícil{#tough-day}
+# Tough Day{#tough-day}
 
 ## Qué es el Día Duro 2 {#what-is-tough-day}
 
-AEM &quot;Tough Day 2&quot; es una aplicación que te permite probar los límites de tu instancia de. Se puede ejecutar de forma predeterminada con el grupo de pruebas predeterminado o se puede configurar para adaptarse a sus necesidades de prueba. Puedes ver [esta grabación](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=es) para ver una presentación de la aplicación.
+&quot;Tough Day 2&quot; es una aplicación que le permite probar los límites de su instancia de AEM. Se puede ejecutar de forma predeterminada con el grupo de pruebas predeterminado o se puede configurar para adaptarse a sus necesidades de prueba.
 
 >[!CAUTION]
 >
@@ -26,7 +26,7 @@ AEM &quot;Tough Day 2&quot; es una aplicación que te permite probar los límite
 
 ## Cómo correr duro día 2 {#how-to-run-tough-day}
 
-Descargue la versión más reciente de Día difícil 2 desde el [Repositorio de Adobe](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Después de descargar la aplicación, puede ejecutarla de forma predeterminada proporcionando el parámetro `host`. AEM En el ejemplo siguiente, la instancia de la se ejecuta localmente para que se utilice el valor `localhost`:
+Descargue la última versión de Día difícil 2 del [Repositorio de Adobe](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Después de descargar la aplicación, puede ejecutarla de forma predeterminada proporcionando el parámetro `host`. En el ejemplo siguiente, la instancia de AEM se ejecuta localmente para que se utilice el valor `localhost`:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -354,7 +354,7 @@ Actualmente, el Día 2 difícil informa de nueve métricas de prueba que puede e
 | **Nombre** | **Descripción** |
 |---|---|
 | Marca de tiempo | Marca de tiempo de la última ejecución de prueba finalizada. |
-| Superado | Número de ejecuciones correctas. |
+| Superados | Número de ejecuciones correctas. |
 | Error | Número de ejecuciones fallidas. |
 | Min&#42; | La duración más baja de la ejecución de pruebas. |
 | Máx.&#42; | Duración máxima de la ejecución de la prueba. |
