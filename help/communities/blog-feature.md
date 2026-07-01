@@ -1,6 +1,6 @@
 ---
 title: Función Blog
-description: Descubra cómo la función de blog admite el suministro de información de la comunidad en formato de diario. Los usuarios autorizados realizan las entradas en el entorno de Publish.
+description: Descubra cómo la función de blog admite el suministro de información de la comunidad en formato de diario. Los usuarios autorizados realizan las entradas en el entorno de publicación.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-La función de blog para AEM Communities se ha transformado de una actividad de creación a una verdadera actividad de la comunidad que tiene lugar en el entorno de Publish.
+La funcionalidad de blog para AEM Communities se ha transformado de una actividad de creación a una verdadera actividad de comunidad que se lleva a cabo en el entorno de publicación.
 
-La función de blog permite proporcionar información de la comunidad en formato de diario. Las entradas de blog las realizan en el entorno de Publish miembros autorizados (usuarios registrados y conectados).
+La función de blog permite proporcionar información de la comunidad en formato de diario. Las entradas de blog las realizan en el entorno de publicación miembros autorizados (usuarios registrados y conectados).
 
 La funcionalidad del blog proporciona :
 
-* Creación, en Publish, de artículos y comentarios de blogs
+* Creación en el lado de publicación de artículos y comentarios de blogs
 * Edición de texto enriquecido
 * Imágenes en línea (con compatibilidad para arrastrar y soltar)
 * Contenido de redes sociales incrustado ([Compatibilidad con incrustación](/help/communities/blog-developer-basics.md#allowing-rich-media))
@@ -38,14 +38,14 @@ La funcionalidad del blog proporciona :
 
 Esta sección de la documentación describe lo siguiente:
 
-* AEM Adición de la función de blog a un sitio de
+* Añadir la función de blog a un sitio de AEM
 * Ajustes de configuración para componentes del blog
 
 >[!NOTE]
 >
 >Los componentes `Journal` y `Journal Sidebar` se denominan `Blog` y `Blog Sidebar`.
 >
->AEM La función de blog encontrada en la versión 6.0 y versiones anteriores de se ha eliminado. Se basaba en una plantilla y solo permitía a los autores crear contenido en el entorno de creación.
+>La función de blog de AEM 6.0 y versiones anteriores ya no está disponible. Se basaba en una plantilla y solo permitía a los autores crear contenido en el entorno de creación.
 
 ## Adición de componentes de blog a una página {#adding-blog-components-to-a-page}
 
@@ -290,9 +290,9 @@ Otras capacidades dependen de si el visitante del sitio es un moderador, adminis
 
 Al crear un artículo de blog, existe la opción de hacer lo siguiente:
 
-1. Publish inmediatamente
-1. Publish a Draft
-1. Publish en una fecha y hora programadas
+1. Publicar inmediatamente
+1. Publicar un borrador
+1. Publicar en una fecha y hora programadas
 
 Los artículos del blog aparecen en la ficha adecuada (Publicado, Borradores o Programado) para que los miembros puedan crear en el momento de la publicación.
 
@@ -309,8 +309,8 @@ Cuando el usuario que inició sesión es un miembro de la comunidad o [miembro p
 Concretamente, pueden:
 
 * Creación de un artículo de blog
-* Post publica un nuevo artículo de blog en nombre de otro miembro
-* Post un comentario a un artículo de blog
+* Publicar un nuevo artículo de blog en nombre de otro miembro
+* Publicar un comentario en un artículo de blog
 * Editar su propio artículo o comentario del blog
 * Eliminar su propio artículo o comentario del blog
 * Marcar artículos o comentarios de blogs de otros usuarios

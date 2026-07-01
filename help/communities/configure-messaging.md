@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -63,14 +63,13 @@ Para modificar la configuración de la lista de mensajes de **Bandeja de entrada
 1. En el modo `Preview`, seleccione el vínculo **Mensajes** para abrir la página principal de mensajería. A continuación, seleccione **Bandeja de entrada**, **Elementos enviados** o **Papelera** para configurar el componente de esa lista de mensajes.
 
 1. En el modo `Edit`, seleccione el componente en la página.
-1. Para acceder al cuadro de diálogo de configuración, cancele la herencia seleccionando el icono `link`.
-Una vez cancelada la herencia, es posible seleccionar el icono de configuración para abrir el cuadro de diálogo de configuración.
+1. Para acceder al cuadro de diálogo de configuración, cancele la herencia seleccionando el icono `link`.Una vez cancelada la herencia, es posible seleccionar el icono de configuración para abrir el cuadro de diálogo de configuración.
 
 1. Una vez completada la configuración, es necesario restaurar la herencia seleccionando el icono `broken link`.
 
 ![configure-message-list](assets/configure-message-list.png)
 
-#### Pestaña Básico {#basic-tab}
+#### Pestaña Básicos {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
@@ -137,14 +136,13 @@ Para modificar la configuración de la página de redacción del mensaje, abra e
 * En el modo `Preview`, seleccione el vínculo **Mensajes** para abrir la página principal de mensajería. A continuación, seleccione el botón Nuevo mensaje para poder abrir la página `Compose Message`.
 
 * En el modo `Edit`, seleccione el componente principal de la página que contiene el cuerpo del mensaje.
-* Para acceder al cuadro de diálogo de configuración, cancele la herencia seleccionando el icono `link`.
-Una vez cancelada la herencia, es posible seleccionar el icono de configuración para abrir el cuadro de diálogo de configuración.
+* Para acceder al cuadro de diálogo de configuración, cancele la herencia seleccionando el icono `link`.Una vez cancelada la herencia, es posible seleccionar el icono de configuración para abrir el cuadro de diálogo de configuración.
 
 * Una vez completada la configuración, es necesario restaurar la herencia seleccionando el icono `broken link`.
 
 ![config-compose-message](assets/config-compose-message.png)
 
-#### Pestaña Básico {#basic-tab-1}
+#### Pestaña Básicos {#basic-tab-1}
 
 ![basic-tab-compose](assets/basic-tab-compose.png)
 
