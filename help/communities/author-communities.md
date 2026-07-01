@@ -1,6 +1,6 @@
 ---
 title: Componentes de Communities
-description: Obtenga información sobre cuándo se concede la licencia a AEM Communities AEM AEM, y es posible añadir funciones de Communities a cualquier sitio de la mediante herramientas de creación estándar.
+description: Obtenga información sobre cuándo se concede la licencia a AEM Communities, y es posible añadir funciones de Communities a cualquier sitio de AEM mediante las herramientas de creación estándar de AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 16%
 
 ## Introducción {#introduction}
 
-Con licencia de AEM Communities AEM AEM, además de crear sitios de la comunidad, es posible agregar características de Communities a cualquier sitio de la comunidad mediante herramientas estándar de creación de.
+Con licencia de AEM Communities, además de crear sitios de la comunidad, es posible agregar funciones de Communities a cualquier sitio de AEM mediante las herramientas de creación estándar de AEM.
 
 Para obtener más información sobre la creación de un sitio de la comunidad, visite:
 
@@ -42,7 +42,7 @@ Consulte también la [guía de componentes de la comunidad](/help/communities/co
 >
 >Lea [Conceptos básicos de componentes de comunidades](/help/communities/basics.md), ya que contiene la información necesaria para la creación con componentes de comunidades.
 
-| **Título del componente** | **Característica** |
+| **Título del componente** | **Función** |
 |---|---|
 | Flujos de actividad | [Flujos de actividad](/help/communities/activities.md) |
 | Blog | [Blog](/help/communities/blog-feature.md) |
@@ -51,7 +51,7 @@ Consulte también la [guía de componentes de la comunidad](/help/communities/co
 | Comentarios | [Comentarios](/help/communities/comments.md) |
 | Lista de actividades de la comunidad | [Tendencias de actividades](/help/communities/trends.md) |
 | Lista de miembros del grupo de la comunidad | [Grupos de la comunidad](/help/communities/creating-groups.md) |
-| Escribir mensaje | [Mensajes](/help/communities/configure-messaging.md) |
+| Componer mensaje | [Mensajes](/help/communities/configure-messaging.md) |
 | Contenido destacado | [Contenido destacado](/help/communities/featured.md) |
 | Biblioteca de archivos | [Biblioteca de archivos](/help/communities/file-library.md) |
 | Seguir | [Gráfico social](/help/communities/socialgraph.md) |

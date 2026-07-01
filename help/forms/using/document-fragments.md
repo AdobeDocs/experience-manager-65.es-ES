@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # Fragmentos de documento {#document-fragments}
 
-Los fragmentos de documento son partes/componentes reutilizables de una correspondencia mediante los cuales puede componer comunicaciones/cartas interactivas. Los fragmentos del documento son de los siguientes tipos:
+Los fragmentos de documento son partes/componentes reutilizables de una correspondencia mediante los cuales puede componer cartas/comunicaciones interactivas. Los fragmentos del documento son de los siguientes tipos:
 
 * **Texto**: un recurso de texto es un fragmento de contenido que consta de uno o más párrafos de texto. Un párrafo puede ser estático o dinámico.
 

@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Para agregar una configuración, seleccione el icono más &#39;**+**&#39; junto 
 
 * **lista de bloqueados de tipo de datos adjuntos**
 
-  Una lista de bloqueados de extensiones de nombre de archivo, con el prefijo &#39;**.**&#39;, que es rechazado por el sistema. Si no está incluida en la lista de bloqueados, se permite la extensión. Las extensiones se pueden agregar o quitar mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;.
+  Lista de bloqueados de extensiones de nombre de archivo, con el prefijo &#39;**.**&#39;, que el sistema rechaza. Si no está incluida en la lista de bloqueados, se permite la extensión. Las extensiones se pueden agregar o quitar mediante los iconos &#39;**+**&#39; y &#39;**-**&#39;.
 
 * **Tipos de archivos adjuntos permitidos**
 

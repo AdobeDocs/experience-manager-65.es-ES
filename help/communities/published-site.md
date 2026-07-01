@@ -12,19 +12,19 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
 
 # Experimente el sitio publicado {#experience-the-published-site}
 
-## Examinar el nuevo sitio en Publish {#browse-to-new-site-on-publish}
+## Examinar el nuevo sitio al publicar {#browse-to-new-site-on-publish}
 
 Ahora que se ha publicado el sitio de comunidades recién creado, vaya a la URL que se muestra al crear el sitio, pero en el servidor de publicación, por ejemplo:
 
 * URL del autor = https://localhost:4502/content/sites/engage/en.html
-* URL DE PUBLISH = https://localhost:4503/content/sites/engage/en.html
+* URL de publicación = https://localhost:4503/content/sites/engage/en.html
 
 Para minimizar la confusión sobre qué miembro ha iniciado sesión en Autor y Publicación, se recomienda utilizar diferentes exploradores para cada instancia.
 
@@ -55,7 +55,7 @@ Una limitación conocida expone el contenido del sitio de la comunidad a visitan
 
 Para proteger el contenido del sitio de su comunidad del acceso de usuarios anónimos a través del contenido jcr y json , siga estos pasos:
 
-1. AEM En la instancia de autor de la, vaya a https:// hostname:port/editor.html/content/site/sitename.html.
+1. En la instancia de autor de AEM, vaya a https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -193,7 +193,7 @@ Inicie sesión como Weston McCall (weston.mccall@dodgit.com / contraseña) y vay
 
 ### Vínculo de página web {#web-page-link}
 
-Ver la página web básica incluida en el sitio seleccionando el vínculo Página web. AEM Las herramientas de creación de contenido estándar se pueden utilizar para añadir contenido a esta página en el entorno de creación.
+Ver la página web básica incluida en el sitio seleccionando el vínculo Página web. Las herramientas de creación estándar de AEM se pueden utilizar para añadir contenido a esta página en el entorno de creación.
 
 Por ejemplo, vaya a la instancia **author**, abra la carpeta `engage` en la consola [Communities Sites](/help/communities/sites-console.md), seleccione el icono **Abrir sitio** para entrar en el modo de edición de autor. A continuación, seleccione el modo de vista previa para poder seleccionar el vínculo `Web Page` y, a continuación, seleccione el modo de edición para agregar los componentes Título y Texto. Por último, vuelva a publicar solo la página o todo el sitio.
 
