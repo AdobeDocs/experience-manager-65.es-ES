@@ -10,8 +10,8 @@ feature: Adaptive Forms,Foundation Components
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '7640'
-ht-degree: 91%
+source-wordcount: '7786'
+ht-degree: 90%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 91%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
 | AEM 6.5 | Este artículo |
 
 Los modelos de flujo de trabajo se utilizan para convertir una lógica empresarial en un proceso repetitivo automatizado. Un modelo le ayuda a definir y ejecutar una serie de pasos. También puede definir propiedades del modelo, como si el flujo de trabajo es transitorio o utiliza varios recursos. Puede [incluir varios pasos del flujo de trabajo AEM en un modelo para lograr establecer una lógica empresarial](/help/sites-developing/workflows-models.md#extending-aem).
 
 ## Pasos de Forms Workflow {#forms-workflow-steps}
 
-Los pasos del Forms Workflow realizan operaciones específicas de AEM Forms AEM en un flujo de trabajo de. Estos pasos le permiten crear rápidamente formularios adaptables basados en flujos de trabajo centrados en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall. También puede utilizar Forms Workflow para iniciar servicios de documentos, integrar con el flujo de trabajo de la firma de Adobe Sign y realizar otras operaciones de AEM Forms. Necesita el [complemento de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para utilizar estos pasos en un flujo de trabajo.
+Los pasos de Forms Workflow realizan operaciones específicas de AEM Forms en un flujo de trabajo de AEM. Estos pasos le permiten crear rápidamente formularios adaptables basados en flujos de trabajo centrados en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall. También puede utilizar Forms Workflow para iniciar servicios de documentos, integrar con el flujo de trabajo de la firma de Adobe Sign y realizar otras operaciones de AEM Forms. Necesita el [complemento de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para utilizar estos pasos en un flujo de trabajo.
 
 Los pasos del flujo de trabajo centrados en AEM Forms realizan operaciones específicas en un flujo de trabajo AEM. Estos pasos le permiten generar rápidamente un flujo de trabajo adaptable basado en Forms y centrado en Forms en OSGi. Estos flujos de trabajo se pueden utilizar para desarrollar flujos de trabajo básicos de revisión y aprobación, y procesos empresariales internos y a través del firewall.
 
@@ -57,22 +57,22 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **Utilizar formulario adaptable:** especifica el método para localizar el formulario adaptable de entrada. Esta opción está disponible si selecciona Formulario adaptable o Formulario adaptable de solo lectura en la lista desplegable Tipo. Puede utilizar el formulario adaptable enviado al flujo de trabajo, disponible en una ruta de acceso absoluta o disponible en una ruta de acceso de una variable. Puede utilizar una variable de tipo cadena para especificar la ruta.\
   Puede asociar varios formularios adaptables a un flujo de trabajo. Como resultado, puede especificar un formulario adaptable en tiempo de ejecución mediante los métodos de entrada disponibles.
 
-* **Utilizar comunicación interactiva:** especifica el método para localizar la comunicación interactiva de entrada. Puede utilizar el formulario adaptable enviado al flujo de trabajo, disponible en una ruta de acceso absoluta o disponible en una ruta de acceso de una variable. Puede utilizar una variable de tipo cadena para especificar la ruta. Esta opción estará disponible si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento del canal Web de comunicación interactiva en la lista desplegable Tipo.
+* **Utilizar comunicación interactiva:** especifica el método para localizar la comunicación interactiva de entrada. Puede utilizar la comunicación interactiva enviada al flujo de trabajo, disponible en una ruta de acceso absoluta o disponible en una ruta de acceso de una variable. Puede utilizar una variable de tipo cadena para especificar la ruta. Esta opción estará disponible si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento del canal Web de comunicación interactiva en la lista desplegable Tipo.
 
 >[!NOTE]
 >
->AEM Debe tener asignaciones de cm-agent-users y de grupo de flujo de trabajo-usuarios para acceder a la interfaz de usuario de agente de comunicaciones interactivas en la bandeja de entrada de la.
+>Debe tener asignaciones de cm-agent-users y de grupo de flujo de trabajo-usuarios para acceder a la interfaz de usuario de agente de comunicaciones interactivas en la bandeja de entrada de AEM.
 
 * **Formulario adaptable o ruta de comunicación interactiva:** especifica la ruta del formulario adaptable o la comunicación interactiva. Puede utilizar el formulario adaptable o la comunicación interactiva que se envía al flujo de trabajo, que está disponible en una ruta absoluta, o recuperar el formulario adaptable de una ruta almacenada en una variable de tipo de datos de cadena.
-* **Seleccionar el PDF de entrada mediante:** especifica la ruta de un documento de PDF no interactivo. El campo está disponible cuando se elige un documento PDF no interactivo en el campo Tipo. Puede seleccionar el PDF de entrada utilizando la ruta relativa a la carga útil, guardada en una ruta de acceso absoluta o utilizando una variable de tipo Doc. Por ejemplo, [Payload_Directory]/Workflow/PDF/credit-card.pdf. La ruta no existe en el repositorio CRX. Un administrador crea la ruta antes de utilizarla. Se necesita habilitar una opción de documento de registro o formulario adaptable basado en plantillas de formulario para usar la opción Ruta del PDF.
+* **Seleccionar el PDF de entrada mediante:** especifica la ruta de un documento de PDF no interactivo. El campo está disponible cuando se elige un documento PDF no interactivo en el campo Tipo. Puede seleccionar el PDF de entrada utilizando la ruta relativa a la carga útil, guardada en una ruta de acceso absoluta o utilizando una variable con un tipo de datos Doc. Por ejemplo, [Payload_Directory]/Workflow/PDF/credit-card.pdf. La ruta no existe en el repositorio CRX. Un administrador crea la ruta antes de utilizarla. Se necesita habilitar una opción de documento de registro o formulario adaptable basado en plantillas de formulario para usar la opción Ruta del PDF.
 * **Para las tareas completadas, procese el formulario adaptable como:** cuando se marca una tarea como completada, puede procesar el formulario adaptable como un formulario adaptable de solo lectura o un documento PDF. Se necesita habilitar una opción de documento de registro o formulario adaptable basado en plantillas de formulario para procesar el formulario adaptable como documento de registro.
 * **Rellenado previamente:** los siguientes campos sirven como entradas para la tarea:
 
-   * **[!UICONTROL Seleccionar el archivo de datos de entrada mediante]**: ruta del archivo de datos de entrada (.json, .xml, .doc o modelo de datos de formulario). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable de tipo Doc, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación de bandeja de entrada AEM. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
+   * **[!UICONTROL Seleccionar el archivo de datos de entrada mediante]**: ruta del archivo de datos de entrada (.json, .xml, .doc o modelo de datos de formulario). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable con un tipo de datos Doc, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación de bandeja de entrada AEM. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
 
    * **Seleccionar datos adjuntos de entrada mediante:** los archivos adjuntos disponibles en la ubicación se adjuntarán al formulario asociado a la tarea. La ruta puede ser relativa a la carga útil o recuperar los archivos adjuntos almacenados en una variable del tipo ArrayList of Document. Una ruta de ejemplo es [Payload_Directory]/attachments/. Puede especificar archivos adjuntos colocados en relación con la carga útil o utilizar una variable de tipo Doc (Lista de matriz > Documento) para especificar un archivo adjunto de entrada para el formulario adaptable.
 
-      * **Elegir el JSON de entrada:** selecciona un archivo JSON de entrada mediante una ruta relativa a la carga útil o almacenada en una variable de tipo de datos Document, JSON o Form Data Model. Esta opción estará disponible si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento del canal Web de comunicación interactiva en la lista desplegable Tipo.
+      * **Elegir el JSON de entrada:** selecciona un archivo JSON de entrada mediante una ruta relativa a la carga útil o almacenada en una variable de tipo de datos Documento, JSON o Modelo de datos de formulario. Esta opción estará disponible si selecciona la interfaz de usuario de agente de comunicación interactiva o el documento del canal Web de comunicación interactiva en la lista desplegable Tipo.
       * **Elegir un servicio de rellenado previo personalizado:** selecciona el servicio de rellenado previo para recuperar los datos y rellenar previamente el documento del canal Web de comunicación interactiva o la interfaz de usuario de agente.
       * **Utilizar el servicio de rellenado previo de la comunicación interactiva seleccionada arriba:** utilice esta opción para utilizar el servicio de rellenado previo de la comunicación interactiva definida en la lista desplegable Usar comunicación interactiva.
       * **Asignar atributos de solicitud:** utilice la sección Asignar atributos de solicitud para definir el [nombre y el valor del atributo de solicitud](../../forms/using/work-with-form-data-model.md#bindargument). Recupere los detalles de la fuente de datos en función del nombre del atributo y el valor especificados en la solicitud. Puede definir un valor de atributo de solicitud utilizando un valor literal o una variable de tipo de datos de cadena.\
@@ -80,11 +80,11 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 * **Información enviada:** los siguientes campos sirven como ubicaciones de salida para la tarea:
 
-   * **Guardar el archivo de datos de salida mediante:** guarda el archivo de datos (.json, .xml, .doc o modelo de datos de formulario). El archivo de datos contiene información enviada a través del formulario asociado. Puede guardar el archivo de datos de salida utilizando una ruta relativa a la carga útil o almacenarla en una variable de tipo Doc, XML o JSON. Por ejemplo, [Payload_Directory]/Workflow/data, donde los datos son un archivo.
-   * **Guardar archivos adjuntos mediante:** guarda los datos adjuntos del formulario proporcionados en una tarea. Puede guardar los archivos adjuntos mediante una ruta relativa a la carga útil o almacenarla en una variable de matriz de documento.
-   * **Guardar documento de registro mediante:** ruta para guardar un archivo de documento de registro. Por ejemplo, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puede guardar el documento de registro mediante una ruta relativa a la carga útil o almacenarlo en una variable de tipo Doc. Si selecciona **Relativo a la carga útil**, el documento de registro no se genera si el campo de ruta se deja vacío. Esta opción solo estará disponible si selecciona Formulario adaptable en la lista desplegable Tipo.
+   * **Guardar archivo de datos de salida mediante:** Guarde el archivo de datos (.json,. xml, .doc o modelo de datos de formulario). El archivo de datos contiene información enviada a través del formulario asociado. Puede guardar el archivo de datos de salida utilizando una ruta relativa a la carga útil o almacenarla en una variable con un tipo de datos Doc, XML o JSON. Por ejemplo, [Payload_Directory]/Workflow/data, donde los datos son un archivo.
+   * **Guardar archivos adjuntos mediante:** guarda los datos adjuntos del formulario proporcionados en una tarea. Puede guardar los archivos adjuntos mediante una ruta relativa a la carga útil o almacenarla en una variable de matriz con un tipo de datos documento.
+   * **Guardar documento de registro mediante:** ruta para guardar un archivo de documento de registro. Por ejemplo, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Puede guardar el documento de registro mediante una ruta relativa a la carga útil o almacenarlo en una variable con un tipo de datos Doc. Si selecciona **Relativo a la carga útil**, el documento de registro no se genera si el campo de ruta se deja vacío. Esta opción solo estará disponible si selecciona Formulario adaptable en la lista desplegable Tipo.
 
-   * **Guardar los datos del canal Web mediante:** guarda el archivo de datos del canal Web mediante una ruta relativa a la carga útil o lo almacena en una variable de tipo de datos de Document, JSON o Form Data Model. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
+   * **Guardar los datos del canal Web mediante:** guarda el archivo de datos del canal Web mediante una ruta relativa a la carga útil o lo almacena en una variable de tipo de datos de Documento, JSON o Modelo de datos de formulario. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
    * **Guardar el documento PDF mediante:** guarda el documento PDF mediante una ruta relativa a la carga útil o lo almacena en una variable del tipo de datos Document. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
    * **Guardar plantilla de diseño mediante:** guarda la plantilla de diseño mediante una ruta relativa a la carga útil o la almacena en una variable de tipo de datos Document. La variable [plantilla de diseño](../../forms/using/layout-design-details.md) hace referencia a un archivo XDP que crea con Forms Designer. Esta opción solo estará disponible si selecciona comunicación interactiva de la interfaz de usuario de agente en la lista desplegable Tipo.
 
@@ -107,7 +107,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **Plantilla de correo electrónico HTML**: seleccione la plantilla de correo electrónico para el correo electrónico de notificación. Para editar una plantilla, modifique el archivo ubicado en /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt en el repositorio CRX.
 * **Permitir delegación en:** la bandeja de entrada de AEM proporciona una opción al usuario que ha iniciado sesión para delegar el flujo de trabajo asignado a otro usuario. Se le permite delegar dentro del mismo grupo o al usuario del flujo de trabajo de otro grupo. Si la tarea está asignada a un único usuario y la opción **Permitir la delegación a los miembros del grupo de asignados** está seleccionada, no es posible delegar la tarea a otro usuario o grupo.
 * **Compartir configuración:** la bandeja de entrada de AEM proporciona opciones para compartir una o todas las tareas de la bandeja de entrada con otros usuarios:
-   * AEM Cuando la opción **Permitir que el usuario asignado comparta explícitamente en la bandeja de entrada** está seleccionada, el usuario puede hacer clic en la tarea y compartirla con otro usuario de la.
+   * Cuando la opción **Permitir que el usuario asignado comparta explícitamente en la bandeja de entrada** está seleccionada, el usuario puede hacer clic en la tarea y compartirla con otro usuario de AEM.
    * Cuando la opción **Permitir que el usuario asignado comparta a través del uso compartido de la bandeja de entrada** esté seleccionada y los usuarios compartan sus elementos de la bandeja de entrada o permitan que otros usuarios accedan a sus elementos de la bandeja de entrada, solo las tareas con la opción mencionada previamente se compartirán con otros usuarios.
 
 * **Acciones > Acciones predeterminadas:** las acciones Enviar, Guardar y Restablecer están disponibles por defecto. De forma predeterminada, todas estas acciones están habilitadas.
@@ -120,7 +120,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **Guardar comentario en la variable:** guarda el comentario en una variable de tipo de datos de cadena. Esta opción solo se mostrará si selecciona la casilla de verificación **Permitir que el usuario asignado agregue un comentario**.
 
 * **Permitir que el usuario asignado agregue archivos adjuntos a la tarea**: seleccione esta opción para habilitar los archivos adjuntos en la tarea. Un usuario asignado puede agregar los archivos adjuntos desde la bandeja de entrada de AEM en el momento del envío de la tarea.
-* **Guardar archivos adjuntos de tareas de salida mediante**: especifique la ubicación de la carpeta de archivos adjuntos. Puede guardar archivos adjuntos de tareas de salida utilizando una ruta relativa a la carga útil o en una variable de matriz de tipo Doc. Esta opción solo se mostrará si selecciona la casilla de verificación **Permitir que el usuario asignado agregue archivos adjuntos a la tarea** y selecciona **Formulario adaptable**, **Formulario adaptable de solo lectura** o **Documento PDF no interactivo** de la lista desplegable **Tipo** en la pestaña **Formulario/Documento**.
+* **Guardar archivos adjuntos de tareas de salida mediante**: especifique la ubicación de la carpeta de archivos adjuntos. Puede guardar archivos adjuntos de tareas de salida utilizando una ruta relativa a la carga útil o en una variable de matriz con un tipo de datos Doc. Esta opción solo se mostrará si selecciona la casilla de verificación **Permitir que el usuario asignado agregue archivos adjuntos a la tarea** y selecciona **Formulario adaptable**, **Formulario adaptable de solo lectura** o **Documento PDF no interactivo** de la lista desplegable **Tipo** en la pestaña **Formulario/Documento**.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 
 Utilice este paso para enviar un correo electrónico, por ejemplo, con un documento de registro, un vínculo de un formulario adaptable o con un documento de PDF adjunto. Este paso es compatible con el [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Los correos electrónicos HTML responden y se adaptan al cliente de correo electrónico y al tamaño de pantalla de los destinatarios. Puede utilizar una plantilla de correo electrónico HTML para definir el aspecto, el esquema de colores y el comportamiento del correo electrónico.
 
-El paso de correo electrónico utiliza el servicio de correo de Day CQ para enviar correos electrónicos. Antes de utilizar el paso de correo electrónico, asegúrese de que el [servicio de correo electrónico &#x200B;](../../forms/using/aem-forms-workflow.md)esté configurado. El paso de correo electrónico tiene las siguientes propiedades:
+El paso de correo electrónico utiliza el servicio de correo de Day CQ para enviar correos electrónicos. Antes de utilizar el paso de correo electrónico, asegúrese de que el [servicio de correo electrónico ](../../forms/using/aem-forms-workflow.md)esté configurado. El paso de correo electrónico tiene las siguientes propiedades:
 
 **Título:** el título ayuda a identificar el paso en el editor de flujo de trabajo.
 
@@ -166,7 +166,7 @@ El paso de correo electrónico utiliza el servicio de correo de Day CQ para envi
 
 **Archivo adjunto:** el recurso disponible en la ubicación especificada se adjunta al correo electrónico. La ruta del recurso puede ser relativa a la carga útil o a la ruta de acceso absoluta. Una ruta de ejemplo es [Payload_Directory]/attachments/.
 
-Seleccione la opción **Variable** para recuperar el archivo adjunto almacenado en una variable de tipo Doc, XML o JSON.
+Seleccione la opción **Variable** para recuperar el archivo adjunto almacenado en una variable con un tipo de datos Doc, XML o JSON.
 
 **Nombre del archivo:** nombre del archivo adjunto del correo electrónico. El paso de correo electrónico cambia el nombre de archivo original del archivo adjunto al nombre de archivo especificado. El nombre se puede especificar manualmente o recuperar a partir de una propiedad de metadatos de flujo de trabajo o una variable. Utilice la opción **Literal** cuando sepa el valor exacto que desea especificar. Utilice la opción **Variable** para recuperar el nombre de archivo del valor almacenado en una variable de tipo de datos de cadena. Utilice la variable **Recuperar a partir de metadatos de flujo de trabajo** cuando el valor que se va a utilizar se guarde en una propiedad de metadatos de flujo de trabajo.
 
@@ -181,13 +181,13 @@ Puede asociar varios formularios adaptables a un flujo de trabajo. Como resultad
 
 **Ruta de formulario adaptable:** especifica la ruta del formulario adaptable. El campo está disponible al seleccionar la variable **Disponible en una ruta de acceso absoluta** del campo **Utilizar formulario adaptable**.
 
-**Seleccionar datos de entrada mediante:** ruta de los datos de entrada para el formulario adaptable. Puede mantener los datos en una ubicación relativa a la carga útil, especificar una ruta absoluta de los datos o recuperar datos almacenados en una variable de tipo Doc, JSON o XML. Los datos de entrada se combinan con el formulario adaptable para crear un documento de registro.
+**Seleccionar datos de entrada mediante:** ruta de los datos de entrada para el formulario adaptable. Puede mantener los datos en una ubicación relativa a la carga útil, especificar una ruta absoluta de los datos o recuperar datos almacenados en una variable con un tipo de datos Doc, JSON o XML. Los datos de entrada se combinan con el formulario adaptable para crear un documento de registro.
 
-**Seleccionar ruta de acceso de los datos adjuntos de entrada mediante:** ruta de los archivos adjuntos. Estos archivos adjuntos se incluyen en el documento de registro. Puede mantener los archivos adjuntos en una ubicación relativa a la carga útil, especificar una ruta absoluta de los archivos adjuntos o recuperar los archivos adjuntos almacenados en una variable de matriz de tipo Doc.
+**Seleccionar ruta de acceso de los datos adjuntos de entrada mediante:** ruta de los archivos adjuntos. Estos archivos adjuntos se incluyen en el documento de registro. Puede mantener los archivos adjuntos en una ubicación relativa a la carga útil, especificar una ruta absoluta de los archivos adjuntos o recuperar los archivos adjuntos almacenados en una variable de matriz con un tipo de datos Doc.
 
 Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos los archivos disponibles directamente en la carpeta se adjuntan al documento de registro. Si hay archivos disponibles en las carpetas accesibles directamente en la ruta de datos de los archivos adjuntos especificada, los archivos se incluyen en el documento de registro como archivos adjuntos. Si hay carpetas en carpetas accesibles directamente, esas carpetas se omiten.
 
-**Guardar documento de registro generado mediante las siguientes opciones:** especifica la ubicación para mantener un archivo de documento de registro. Puede sobrescribir la carpeta de carga útil, colocar el documento de registro en una ubicación del directorio de carga útil o almacenar el documento de registro en una variable de tipo Doc.
+**Guardar documento de registro generado mediante las siguientes opciones:** especifica la ubicación para mantener un archivo de documento de registro. Puede sobrescribir la carpeta de carga útil, colocar el documento de registro en una ubicación del directorio de carga útil o almacenar el documento de registro en una variable con un tipo de datos Doc.
 
 **Configuración regional:** especifique el idioma del documento de registro. Seleccione **Literal** para elegir la configuración regional de una lista desplegable o seleccione **Variable** para recuperar la configuración regional a partir del valor almacenado en una variable de tipo de datos de cadena. Definir el código de configuración regional mientras almacena el valor de la configuración regional en una variable. Por ejemplo, especifique **en_US** para inglés y **fr_FR** para francés.
 
@@ -268,10 +268,10 @@ El paso para invocar el servicio de modelo de datos de formulario tiene los sigu
    * **Asignar campos de entrada desde la entrada JSON:** especifica la ruta de un archivo JSON para obtener el valor de entrada de algunos argumentos de servicio del archivo JSON. La ruta del archivo JSON puede ser relativa a la carga útil, una ruta de acceso absoluta o puede seleccionar un documento JSON de entrada mediante una variable de tipo JSON o un modelo de datos de formulario.
 
 * **Entrada para servicios > Proporcionar datos de entrada mediante una variable o un archivo JSON:** seleccione la opción para obtener valores para todos los argumentos de un archivo JSON guardado en una ruta de acceso absoluta, en una ruta relativa a la carga útil o en una variable.
-* **Seleccionar el documento JSON de entrada mediante:** el archivo JSON que contiene valores para todos los argumentos de servicio. La ruta del archivo JSON puede ser **relativa a la carga útil** o una **ruta de acceso absoluta.** También puede recuperar el documento JSON de entrada mediante una variable de tipo de datos JSON o un modelo de datos de formulario.
+* **Seleccionar el documento JSON de entrada mediante:** el archivo JSON que contiene valores para todos los argumentos de servicio. La ruta de acceso del archivo JSON puede ser **relativa a la carga útil** o una ruta de acceso **absoluta.** También puede recuperar el documento JSON de entrada mediante una variable de tipo de datos JSON o un modelo de datos de formulario.
 
 * **Notación de puntos JSON:** deja el campo en blanco para utilizar todos los objetos del archivo JSON especificado como entrada para argumentos de servicio. Para leer un objeto JSON específico del archivo JSON especificado como entrada para los argumentos del servicio, especifique la notación de puntos para el objeto JSON. Por ejemplo, si tiene un archivo JSON similar al listado al principio de la sección, especifique insurance.customerDetails para proporcionar todos los detalles de un cliente como entrada al servicio.
-* **Resultados del servicio > Asignación y escritura de valores de salida en variables o metadatos:** selecciona la opción para guardar los valores de salida como propiedades del nodo de metadatos de instancia del flujo de trabajo en el repositorio CRX. Especifique el nombre de la propiedad de metadatos y seleccione el atributo de salida del servicio correspondiente que se va a asignar con la propiedad de metadatos. Por ejemplo, asigne el número de teléfono devuelto por el servicio de salida con la propiedad phone_number (número de teléfono) de los metadatos del flujo de trabajo. Del mismo modo, se puede almacenar la salida en una variable de tipo de datos de registro. Al seleccionar una propiedad para la opción **[!UICONTROL Atributo de salida del servicio que se va a asignar]**, solo se rellenan las variables capaces de almacenar datos de la propiedad seleccionada para la opción **[!UICONTROL Guardar la salida en]**.
+* **Resultados del servicio > Asignación y escritura de valores de salida en variables o metadatos:** selecciona la opción para guardar los valores de salida como propiedades del nodo de metadatos de instancia del flujo de trabajo en el repositorio CRX. Especifique el nombre de la propiedad de metadatos y seleccione el atributo de salida del servicio correspondiente que se va a asignar con la propiedad de metadatos. Por ejemplo, asigne el número de teléfono devuelto por el servicio de salida con la propiedad phone_number (número de teléfono) de los metadatos del flujo de trabajo. Del mismo modo, se puede almacenar la salida en una variable de tipo de datos de registro. Al seleccionar una propiedad para la opción **[!UICONTROL Atributo de salida del servicio que se va a asignar]**, solo se rellenan las variables capaces de almacenar datos de la propiedad seleccionada para la opción **[!UICONTROL Guardar salida en]**.
 
 * **Resultados del servicio > Guardar resultados en una variable o un archivo JSON:** selecciona la opción para guardar los valores de salida en un archivo JSON en una ruta de acceso absoluta, en una ruta relativa a la carga útil o en una variable.
 * **Guardar documento JSON de salida con las siguientes opciones:** guarda el archivo JSON de salida. La ruta del archivo JSON de salida puede ser relativa a la carga útil o a una ruta de acceso absoluta. También puede guardar el archivo JSON de salida con una variable de tipo de datos JSON o un modelo de datos de formulario.
@@ -286,10 +286,10 @@ El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. 
 
 * **Configuración de Adobe Sign Cloud**: elige una configuración de Adobe Sign Cloud. Si no ha configurado Adobe Sign para AEM Forms, consulte [Integrar Adobe Sign con AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
-* **Seleccionar documento para firmar mediante:** puede elegir un documento de una ubicación relativa a la carga útil, utilizar la carga útil como documento, especificar una ruta de acceso absoluta del documento o recuperar el documento almacenado en una variable de tipo Doc.
+* **Seleccionar documento para firmar mediante:** puede elegir un documento de una ubicación relativa a la carga útil, utilizar la carga útil como documento, especificar una ruta de acceso absoluta del documento o recuperar el documento almacenado en una variable con un tipo de datos Doc.
 
 
-* **Seleccionar ruta de acceso de los datos adjuntos de entrada mediante:** ruta de los archivos adjuntos. Estos archivos adjuntos se incluyen en el documento de firma. Puede mantener los archivos adjuntos en una ubicación relativa a la carga útil, especificar una ruta absoluta de los archivos adjuntos o recuperar los archivos adjuntos almacenados en una variable de matriz de tipo Doc.
+* **Seleccionar ruta de acceso de los datos adjuntos de entrada mediante:** ruta de los archivos adjuntos. Estos archivos adjuntos se incluyen en el documento de firma. Puede mantener los archivos adjuntos en una ubicación relativa a la carga útil, especificar una ruta absoluta de los archivos adjuntos o recuperar los archivos adjuntos almacenados en una variable de matriz con un tipo de datos Doc.
 
 
   Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos los archivos disponibles directamente en la carpeta se adjuntarán al documento de firma. Si hay archivos disponibles en las carpetas accesibles directamente en la ruta de datos de los archivos adjuntos especificada, los archivos se incluirán en el documento de firma como archivos adjuntos. Si hay carpetas en carpetas accesibles directamente, esas carpetas se omiten.
@@ -323,7 +323,7 @@ El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. 
 
 Los Servicios de documentos de AEM son un conjunto de servicios para crear, combinar y asegurar documentos PDF. AEM Forms proporciona un paso de AEM Workflow independiente para cada servicio de documentos.
 
-Al igual que otros pasos del flujo de trabajo de AEM Forms AEM, como Asignar tarea, Enviar correo electrónico y Firmar documento, puede utilizar variables en todos los pasos de los servicios de documentos de. Para obtener información sobre la creación y la administración de variables, consulte [Variables en flujos de trabajo de AEM](../../forms/using/variable-in-aem-workflows.md).
+Al igual que otros pasos del flujo de trabajo de AEM Forms, como Asignar tarea, Enviar correo electrónico y Firmar documento, puede utilizar variables en todos los pasos de los servicios de documentos de AEM. Para obtener información sobre la creación y la administración de variables, consulte [Variables en flujos de trabajo de AEM](../../forms/using/variable-in-aem-workflows.md).
 
 ### Paso Aplicar marca de fecha y hora a un documento {#apply-document-time-stamp-step}
 
@@ -346,7 +346,7 @@ Convertir documentos PDF a PostScript. Al convertir a PostScript, puede utilizar
 
 ### Paso Crear PDF a partir del tipo especificado {#create-pdf-from-specified-type-step}
 
-Genere un documento PDF a partir de un archivo de entrada. El documento de entrada puede ser relativo a la carga útil, tener una ruta de acceso absoluta, puede proporcionarse como carga útil o almacenarse en una variable de tipo Doc.
+Genere un documento PDF a partir de un archivo de entrada. El documento de entrada puede ser relativo a la carga útil, tener una ruta de acceso absoluta, puede proporcionarse como carga útil o almacenarse en una variable con un tipo de datos Doc.
 
 ### Paso Crear PDF desde URL/HTML/ZIP {#create-pdf-from-url-html-zip-step}
 
@@ -404,7 +404,7 @@ Procesa un formulario creado en Forms Designer (XDP) en un formulario de PDF.
 
 ### Paso Proteger documento {#secure-document-step}
 
-Codificar, firmar y certificar un documento. AEM Forms admite el cifrado basado en contraseña y en certificado. También puede elegir entre varios algoritmos para firmar documentos. Por ejemplo, SHA-256 y SH-512. También puede utilizar el paso del flujo de trabajo para ampliar los documentos PDF. El paso del flujo de trabajo ofrece la opción de habilitar la descodificación de código de barras, las firmas digitales, la importación y exportación de datos de PDF y otras opciones.
+Cifrar, firmar y certificar un documento. AEM Forms admite el cifrado basado en contraseña y en certificado. También puede elegir entre varios algoritmos para firmar documentos. Por ejemplo, SHA-256 y SH-512. También puede utilizar el paso del flujo de trabajo para ampliar los documentos PDF. El paso del flujo de trabajo ofrece la opción de habilitar la descodificación de código de barras, las firmas digitales, la importación y exportación de datos de PDF y otras opciones.
 
 ### Paso Enviar a la impresora {#send-to-printer-step}
 
@@ -460,9 +460,11 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 * **[!UICONTROL Seleccionar el archivo XCI mediante]**: los archivos XCI se utilizan para describir fuentes y otras propiedades que se utilizan para elementos de diseño de formulario. Puede mantener un archivo XCI relativo a la carga útil, en una ruta absoluta o mediante una variable del tipo de datos Document.
 
 * **[!UICONTROL Configuración regional]**: especifica el idioma que se utiliza para generar el documento PDF. Si proporciona un valor literal, seleccione un idioma de la lista o seleccione uno de estos valores:
-   * **Para usar el servidor predeterminado**: (Predeterminado) Use la configuración regional configurada en el servidor de AEM Forms. La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)).
+   * **Para usar el servidor predeterminado**:
+(Predeterminado) Utilice la configuración regional configurada en el servidor de AEM Forms. La configuración regional se configura con la consola de administración. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_65)).
 
-   * **Para utilizar un valor personalizado**: escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+   * **Para usar el valor personalizado**:
+Escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copias]**: valor entero que especifica el número de copias que se generarán para la salida. El valor predeterminado es 1.
 

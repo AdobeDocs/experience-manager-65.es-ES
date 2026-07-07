@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 99%
+source-wordcount: '1032'
+ht-degree: 97%
 
 ---
 
@@ -75,7 +75,7 @@ Puede acceder a los datos de usuario de una instancia de flujo de trabajo del re
 Sin embargo, no puede identificar flujos de trabajo asociados a un iniciador (o los resultados pueden ser ambiguos) en los siguientes casos:
 
 * **Flujos de trabajo activados a través de una carpeta inspeccionada**: una instancia de flujo de trabajo no se puede identificar por su iniciador si el flujo de trabajo se activa mediante una carpeta inspeccionada. En este caso, la información del usuario se codifica en los datos almacenados.
-* **Flujos de trabajo iniciados desde una instancia de publicación de AEM**: todas las instancias de flujo de trabajo se crean mediante un usuario de servicio cuando se envían formularios adaptables y comunicaciones o cartas interactivas desde una instancia de publicación de AEM. En estos casos, el nombre de usuario del usuario que ha iniciado sesión no se captura en los datos de la instancia de flujo de trabajo.
+* **Flujos de trabajo iniciados desde una instancia de publicación de AEM**: todas las instancias de flujo de trabajo se crean mediante un usuario de servicio cuando se envían formularios adaptables y comunicaciones interactivas o cartas desde una instancia de publicación de AEM. En estos casos, el nombre de usuario del usuario que ha iniciado sesión no se captura en los datos de la instancia de flujo de trabajo.
 
 ### Acceder a los datos de usuario {#access}
 
@@ -138,7 +138,7 @@ Es necesario ser administrador de AEM para eliminar los datos de usuario de las 
 
    1. Vaya a `https://'[server]:[port]'/aem/start.html` e inicie sesión con las credenciales de administrador.
    1. Vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Instancias]**.
-   1. Seleccione las instancias de flujo de trabajo relevantes para el usuario y **[!UICONTROL Finalizar]** para finalizar las instancias en ejecución.
+   1. Seleccione las instancias de flujo de trabajo relevantes para el usuario y **[!UICONTROL Terminar]** para terminar las instancias en ejecución.
 
       Para obtener más información sobre cómo trabajar con instancias de flujo de trabajo, consulte [Administración de instancias de flujo de trabajo](/help/sites-administering/workflows-administering.md).
 
@@ -158,4 +158,4 @@ También puede utilizar API para acceder a los nodos y las propiedades y quitarl
 
 * [Cómo acceder mediante programación al JCR de AEM](/help/sites-developing/access-jcr.md)
 * [Eliminación de nodos y propiedades](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Referencia de la API](https://helpx.adobe.com/es/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [Referencia de API](https://helpx.adobe.com/es/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

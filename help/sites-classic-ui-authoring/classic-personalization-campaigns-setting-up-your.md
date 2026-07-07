@@ -1,5 +1,5 @@
 ---
-title: Configuración de la campaña
+title: Configuración de su campaña
 description: La configuración de una nueva campaña requiere la creación de una marca que contenga sus campañas, la creación de una campaña que incluya experiencias y la definición final de las propiedades de la nueva campaña.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2194'
-ht-degree: 0%
+source-wordcount: '2219'
+ht-degree: 1%
 
 ---
 
-# Configuración de la campaña{#setting-up-your-campaign}
+# Configuración de su campaña{#setting-up-your-campaign}
 
 La configuración de una nueva campaña incluye los siguientes pasos (genéricos):
 
@@ -89,14 +89,14 @@ Configure las propiedades de la campaña que controlan el comportamiento:
 
 * **Prioridad:** Prioridad de esta campaña en relación con otras campañas. Cuando se activan varias campañas simultáneamente, la campaña que tiene la prioridad más alta controla la experiencia del visitante.
 * **Tiempo de activación y desactivación:** estas propiedades controlan el período de tiempo en que la campaña controla la experiencia del visitante. La propiedad On Time controla el momento en el que la campaña empieza a controlar la experiencia. La propiedad Tiempo de inactividad controla cuándo las campañas dejan de controlar la experiencia.
-* AEM **Imagen:** La imagen que representa la campaña en la que se ha realizado la campaña en la.
-* **Cloud Services:** Las configuraciones de Cloud Service con las que está integrada la campaña. (Consulte [Integración con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
+* **Imagen:** La imagen que representa la campaña en AEM.
+* **Servicios de nube:** Las configuraciones de Cloud Service con las que está integrada la campaña. (Consulte [Integración con Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
 * **Adobe Target:** propiedades que configuran campañas integradas con Adobe Target. (Consulte [Integración con Adobe Target](/help/sites-administering/target.md).)
 
 1. De **Campañas**, selecciona tu marca. En el panel derecho, seleccione su campaña y haga clic en **Propiedades**.
 
-   Puede escribir varias propiedades, entre ellas **Title**, **Description** y cualquier **Cloud Service** que desee.
+   Puede introducir varias propiedades, entre ellas **Title**, **Description** y cualquier **servicio en la nube** que desee.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -152,10 +152,9 @@ Si tiene experiencias existentes, puede agregar un punto de contacto directament
 
 >[!NOTE]
 >
->El Adobe no tiene previsto seguir mejorando esta capacidad (gestión de posibles clientes).
->Se recomienda usar [Adobe Campaign AEM y la integración con &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
+>Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes).Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
-AEM En MCM, puede organizar y agregar posibles clientes introduciéndolos manualmente o importando una lista separada por comas, por ejemplo, una lista de correo. Otras formas de generar posibles clientes son las suscripciones a boletines informativos o las suscripciones a la comunidad (si se configuran, pueden almacenar en déclencheur un flujo de trabajo que rellene los posibles clientes).
+En AEM MCM, puede organizar y agregar posibles clientes introduciéndolos manualmente o importando una lista separada por comas, por ejemplo, una lista de correo. Otras formas de generar posibles clientes son las suscripciones a boletines informativos o las suscripciones a la comunidad (si se configuran, pueden almacenar en déclencheur un flujo de trabajo que rellene los posibles clientes).
 
 Los posibles clientes generalmente se clasifican y se colocan en una lista para que más tarde pueda realizar acciones en toda la lista, por ejemplo, enviar un correo electrónico personalizado a una lista determinada.
 
@@ -173,7 +172,7 @@ Después de crear nuevos clientes potenciales, asegúrese de [activarlos](#activ
 
 Para crear un posible cliente manualmente:
 
-1. AEM En la barra de herramientas, navegue hasta el MCM. En el panel, haga clic en **Posibles clientes**.
+1. En AEM, vaya al MCM. En el panel, haga clic en **Posibles clientes**.
 1. Haga clic en **Nuevo**. Se abre la ventana **Crear nuevo**.
 
    ![screen_shot_2012-02-21at115008am](assets/screen_shot_2012-02-21at115008am.png)
@@ -194,13 +193,13 @@ La activación de posibles clientes le ayuda a realizar un seguimiento de su act
 
 Para posibles clientes activos o desactivados:
 
-1. AEM En, navegue hasta el MCM y haga clic en **Posibles clientes**.
+1. En AEM, vaya al MCM y haga clic en **Posibles clientes**.
 
 1. Seleccione los posibles clientes que quiera activar o desactivar y haga clic en **Activar** o **Desactivar**.
 
    ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   AEM Al igual que con las páginas de la lista de distribución, el estado de publicación se indica en la columna **Publicado**.
+   Al igual que con las páginas de AEM, el estado de publicación se indica en la columna **Publicado**.
 
    ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 
@@ -210,7 +209,7 @@ Al importar nuevos posibles clientes, puede agregarlos automáticamente a una li
 
 Para importar posibles clientes de una lista separada por comas:
 
-1. AEM En, navegue hasta el MCM y haga clic en **Posibles clientes**.
+1. En AEM, vaya al MCM y haga clic en **Posibles clientes**.
 
    >[!NOTE]
    >
@@ -238,7 +237,7 @@ Para importar posibles clientes de una lista separada por comas:
 
    ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
-1. Haga clic en **Siguiente**. Seleccione la lista a la que desea que pertenezcan los posibles clientes. Si no desea que pertenezcan a una lista, elimine la información del campo. AEM De forma predeterminada, crea un nombre de lista que incluye la fecha y la hora. Haga clic en **Importar**.
+1. Haga clic en **Siguiente**. Seleccione la lista a la que desea que pertenezcan los posibles clientes. Si no desea que pertenezcan a una lista, elimine la información del campo. De forma predeterminada, AEM crea un nombre de lista que incluye la fecha y la hora. Haga clic en **Importar**.
 
    ![screen_shot_2012-02-21at123123pm](assets/screen_shot_2012-02-21at123123pm.png)
 
@@ -254,7 +253,7 @@ Para agregar posibles clientes a listas preexistentes:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. En el menú **Herramientas**, seleccione **Agregar a lista....** Se abre la ventana **Agregar a la lista**.
+1. En el menú **Herramientas**, seleccione **Agregar a lista....**. Se abrirá la ventana **Agregar a lista**.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -294,14 +293,13 @@ Para eliminar posibles clientes existentes en el MCM, seleccione la casilla de v
 
 >[!NOTE]
 >
->AEM Antes de eliminar, el usuario confirma que desea eliminar el posible cliente existente. Una vez eliminado, no se puede recuperar.
+>Antes de eliminar, AEM confirma que desea eliminar el posible cliente existente. Una vez eliminado, no se puede recuperar.
 
 ## Uso de listas {#working-with-lists}
 
 >[!NOTE]
 >
->El Adobe no tiene previsto seguir mejorando esta capacidad (gestión de listas).
->Se recomienda usar [Adobe Campaign AEM y la integración con &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
+>Adobe no planea mejorar esta capacidad (administración de listas).Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
 Las listas permiten organizar los posibles clientes en grupos. Con las listas, puede dirigir sus campañas de marketing a un grupo selecto de personas; por ejemplo, puede enviar una newsletter segmentada a una lista. Las listas son visibles en el MCM, ya sea en el panel o haciendo clic en **Listas**. Ambos le proporcionan el nombre de la lista y el número de miembros.
 
@@ -341,7 +339,7 @@ Para eliminar listas existentes, en el MCM, active la casilla de verificación s
 
 >[!NOTE]
 >
->AEM Antes de eliminarlas, el usuario confirma que desea eliminar las listas existentes. Una vez eliminado, no se puede recuperar.
+>Antes de eliminar, AEM confirma que desea eliminar las listas existentes. Una vez eliminado, no se puede recuperar.
 
 ### Combinación de listas {#merging-lists}
 
@@ -385,7 +383,7 @@ Para ver los posibles clientes en las listas:
 
 1. Active la casilla de verificación situada junto a la lista cuyos miembros desea ver.
 
-1. En el menú **Herramientas**, seleccione **Mostrar posibles clientes**. AEM Muestra los posibles clientes que son miembros de esa lista. Puede examinar la lista o buscar miembros.
+1. En el menú **Herramientas**, seleccione **Mostrar posibles clientes**. AEM muestra los posibles clientes que son miembros de esa lista. Puede examinar la lista o buscar miembros.
 
    >[!NOTE]
    >

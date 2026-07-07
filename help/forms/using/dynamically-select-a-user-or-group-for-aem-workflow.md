@@ -9,8 +9,8 @@ role: User, Developer
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 94%
+source-wordcount: '949'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Asignar tareas y pasos de Adobe Sign de [flujos de trabajo centrados en Forms en
 
 ECMAScript es un lenguaje de script. Se utiliza para scripts del lado del cliente y aplicaciones de servidor. Siga estos pasos para seleccionar dinámicamente un usuario o un grupo mediante ECMAScript:
 
-1. Abra CRXDE Lite. La URL es `https://'[server]:[port]'/crx/de/index.jsp`. 
+1. Abra CRXDE Lite. La URL es `https://'[server]:[port]'/crx/de/index.jsp`.
 1. Cree un archivo con la extensión .ecma en la siguiente ruta. Si la ruta (estructura de nodos) no existe, créela:
 
    * (Ruta para el paso Asignar tarea) `/apps/fd/dashboard/scripts/participantChooser`

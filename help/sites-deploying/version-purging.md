@@ -12,14 +12,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 0%
+source-wordcount: '732'
+ht-degree: 1%
 
 ---
 
 # Depuración de versiones{#version-purging}
 
-En una instalación estándar, Adobe Experience Manager AEM () crea una versión de una página o nodo cuando activa una página después de actualizar el contenido.
+En una instalación estándar, Adobe Experience Manager (AEM) crea una versión de una página o nodo cuando activa una página después de actualizar el contenido.
 
 >[!NOTE]
 >
@@ -29,20 +29,17 @@ Puede crear versiones adicionales si lo solicita mediante la ficha **Creación d
 
 Estas versiones nunca se depuran, por lo que el tamaño del repositorio aumenta con el tiempo y, por lo tanto, debe administrarse.
 
-AEM Se envía con varios mecanismos para ayudarle a administrar el repositorio:
+AEM incluye varios mecanismos para ayudarle a administrar el repositorio:
 
-* el [Administrador de versiones](#version-manager)
+* el administrador de versiones [](#version-manager)
 Esto se puede configurar para purgar versiones antiguas cuando se crean nuevas versiones.
 
 * la herramienta [Purgar versiones](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
-Se utiliza como parte de la monitorización y el mantenimiento del repositorio.
-Permite intervenir para eliminar versiones antiguas de un nodo o una jerarquía de nodos, según estos parámetros:
+Se utiliza como parte de la monitorización y el mantenimiento del repositorio.Permite intervenir para eliminar versiones antiguas de un nodo o una jerarquía de nodos, según estos parámetros:
 
-   * Número máximo de versiones que se guardarán en el repositorio.
-Cuando se supera este número, se elimina la versión más antigua.
+   * Número máximo de versiones que se guardarán en el repositorio.Cuando se supera este número, se elimina la versión más antigua.
 
-   * La antigüedad máxima de cualquier versión guardada en el repositorio.
-Cuando la antigüedad de una versión supera este valor, se depura del repositorio.
+   * La antigüedad máxima de cualquier versión guardada en el repositorio.Cuando la antigüedad de una versión supera este valor, se depura del repositorio.
 
 * la [tarea de mantenimiento de purga de versiones](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Puede planificar la tarea de mantenimiento Depuración de versiones para que se eliminen automáticamente las versiones antiguas. Como resultado, esto minimiza la necesidad de utilizar manualmente las herramientas de depuración de versiones.
 
@@ -61,9 +58,7 @@ Para configurar el Administrador de versiones, [cree una configuración](/help/s
 Las opciones disponibles son las siguientes:
 
 * `versionmanager.createVersionOnActivation` (booleano, predeterminado: true)
-Especifica si se crea una versión cuando se activan las páginas.
-Se crea una versión a menos que el agente de replicación esté configurado para suprimir la creación de versiones, algo que respeta el Administrador de versiones.
-Se crea una versión solo si la activación se produce en una ruta de acceso contenida en `versionmanager.ivPaths` (ver a continuación).
+Especifica si se crea una versión cuando se activan las páginas.Se crea una versión a menos que el agente de replicación esté configurado para suprimir la creación de versiones, algo que respeta el Administrador de versiones.Se crea una versión solo si la activación se produce en una ruta de acceso contenida en `versionmanager.ivPaths` (ver a continuación).
 
 * `versionmanager.ivPaths`(Cadena[], predeterminado: `{"/"}`)
 Especifica las rutas de acceso en las que se crean versiones implícitamente en la activación si `versionmanager.createVersionOnActivation` está establecido en true.
@@ -85,7 +80,7 @@ El número mínimo de versiones que se conservan independientemente de la edad. 
 
 >[!NOTE]
 >
->No se recomienda mantener muchas versiones en el repositorio. Por lo tanto, al configurar la operación de depuración de versiones, tenga en cuenta no excluir demasiadas versiones de la depuración; de lo contrario, el tamaño del repositorio no se optimiza correctamente. Si mantiene un gran número de versiones debido a requisitos comerciales, póngase en contacto con el servicio de asistencia de Adobes para buscar formas alternativas de optimizar el tamaño del repositorio.
+>No se recomienda mantener muchas versiones en el repositorio. Por lo tanto, al configurar la operación de depuración de versiones, tenga en cuenta no excluir demasiadas versiones de la depuración; de lo contrario, el tamaño del repositorio no se optimiza correctamente. Si mantiene un gran número de versiones debido a requisitos comerciales, póngase en contacto con el servicio de asistencia de Adobe para buscar formas alternativas de optimizar el tamaño del repositorio.
 
 ### Combinar opciones de retención {#combining-retention-options}
 

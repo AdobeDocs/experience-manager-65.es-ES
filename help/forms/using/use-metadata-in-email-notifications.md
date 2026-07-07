@@ -9,8 +9,8 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Puede utilizar metadatos en una plantilla de correo electrónico para rellenar d
 
 ![Plantilla de correo electrónico predeterminada](assets/default_email_template_metadata_new.png)
 
-Los metadatos se almacenan en pares clave-valor. Puede especificar la clave en la plantilla de correo electrónico y la clave se reemplaza por un valor en tiempo de ejecución (cuando se genera una notificación por correo electrónico). Por ejemplo, en el siguiente ejemplo de código, “$ {workitem_title} ” es una clave. Se reemplaza con el valor “Loan-Request” en el tiempo de ejecución.
+Los metadatos se almacenan en pares clave-valor. Puede especificar la clave en la plantilla de correo electrónico y la clave se reemplaza por un valor en tiempo de ejecución (cuando se genera una notificación por correo electrónico). Por ejemplo, en el siguiente ejemplo de código, &quot;$ {workitem_title}&quot; es una clave. Se reemplaza con el valor “Loan-Request” en el tiempo de ejecución.
 
 ```html
 subject=Task Assigned - ${workitem_title}

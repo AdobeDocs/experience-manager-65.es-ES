@@ -10,8 +10,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 1%
+source-wordcount: '1188'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 {{ue-over-mobile}}
 
-Un espacio es una ubicación conveniente para almacenar entidades que se exponen a través de la API de REST de servicios de contenido. Esto resulta especialmente útil porque una aplicación (o cualquier canal) puede asociarse con muchas entidades. Forzar a las entidades a estar dentro de un espacio fuerza la práctica recomendada de agrupar los requisitos de una aplicación. AEM De forma opcional, puede asociar una aplicación en la aplicación con un pequeño número de espacios.
+Un espacio es una ubicación conveniente para almacenar entidades que se exponen a través de la API de REST de servicios de contenido. Esto resulta especialmente útil porque una aplicación (o cualquier canal) puede asociarse con muchas entidades. Forzar a las entidades a estar dentro de un espacio fuerza la práctica recomendada de agrupar los requisitos de una aplicación. De forma opcional, puede asociar una aplicación en AEM con un pequeño número de espacios.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Por primera vez un usuario que no ha configurado los servicios de contenido para
 >
 >**Requisitos previos para agregar un espacio**
 >
->AEM Marque **Habilitar servicios de contenido de** para trabajar con espacios y habilitarlo en el panel de aplicaciones de AEM Mobile.
+>Marque **Habilitar AEM Content Services** para que funcione con Spaces y habilitarlo en el panel de aplicaciones de AEM Mobile.
 >
 >Consulte [Administración de servicios de contenido](/help/mobile/developing-content-services.md) para obtener más información.
 
@@ -55,7 +55,7 @@ Una vez configurados los espacios en el panel, siga estos pasos para crear espac
 
 Después de crear un espacio, haga clic en la izquierda para administrar el espacio en la lista.
 
-AEM Puede ver las propiedades del espacio, eliminarlo o publicar el espacio y su contenido en una instancia de publicación de la publicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de publicación de la aplicación.
+Puede ver las propiedades del espacio, eliminarlo o publicar el espacio y su contenido en una instancia de publicación de AEM.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -68,7 +68,7 @@ AEM Puede ver las propiedades del espacio, eliminarlo o publicar el espacio y su
 **Publicar un espacio** Cuando se publica un espacio, también se publican todas las carpetas y entidades de ese espacio.
 
 1. Seleccione el espacio haciendo clic en su icono en la lista de la consola de espacio
-1. Elegir **árbol de Publish**
+1. Elegir **árbol de publicación**
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ La característica **Copia de idioma** permite a los autores copiar su copia de 
    >
    >Los nodos de copia de idioma sólo pueden existir como secundarios directos del espacio.
 
-1. Elija **Idioma del paquete de contenido&ast;** e introduzca el **Título&ast;** en el cuadro de diálogo **Crear copia de idioma**.
+1. Elija **Idioma del paquete de contenido&amp;ast;** e introduzca el **Título&amp;ast;** en el cuadro de diálogo **Crear copia de idioma**.
 
    Haga clic en **Crear**.
 
@@ -143,7 +143,7 @@ La característica **Copia de idioma** permite a los autores copiar su copia de 
 
 ## Uso de entidades en un espacio {#working-with-entities-in-a-space}
 
-Las entidades representan el contenido que se expone a través del extremo del servicio web. AEM Las entidades se almacenan en espacios, de modo que se pueden encontrar fácilmente y se mantienen independientes de la estructura de repositorio de la que contiene su contenido relacionado.
+Las entidades representan el contenido que se expone a través del extremo del servicio web. Las entidades se almacenan en espacios, de modo que se pueden encontrar fácilmente y se mantienen independientes de la estructura del repositorio de AEM que contiene su contenido relacionado.
 
 Es posible que desee agrupar las entidades en una recopilación lógica. Para ello, puede crear cualquier número de carpetas.
 
@@ -235,12 +235,12 @@ Si se recopilan elementos secundarios de entidad, que son otras entidades, para 
 
 ### Publicación de una entidad {#publishing-an-entity}
 
-Tiene la opción de elegir **Publish Tree** o **Quick Publish** para publicar su entidad.
+Tiene la opción de elegir **Publicar árbol** o **Publicación rápida** para publicar su entidad.
 
-1. Seleccione una entidad de la lista de la consola de espacio y haga clic en **Árbol de Publish &#x200B;** para publicar esa entidad y sus hijos.
+1. Seleccione una entidad de la lista de la consola de espacio y haga clic en **Publicar árbol **para publicar esa entidad y sus hijos.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **O**,
 
-   Haga clic en **Quick Publish** para publicar esa entidad específica.
+   Haga clic en **Publicación rápida** para publicar esa entidad específica.

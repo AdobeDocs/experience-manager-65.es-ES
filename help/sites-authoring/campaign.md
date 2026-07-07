@@ -11,7 +11,7 @@ feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '2769'
+source-wordcount: '2794'
 ht-degree: 2%
 
 ---
@@ -260,7 +260,7 @@ Al hacerlo, puede enviar el contenido. Verá si un boletín informativo está vi
 
 Para vincular una página creada en AEM con un correo electrónico de Adobe Campaign:
 
-1. Cree un correo electrónico basado en una plantilla de correo electrónico específica de AEM. Consulte [Creación de correos electrónicos en Adobe Campaign Standard](https://helpx.adobe.com/es/campaign/standard/channels/using/creating-an-email.html) para obtener más información.
+1. Cree un correo electrónico basado en una plantilla de correo electrónico específica de AEM. Consulte [Creación de correos electrónicos en Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) para obtener más información.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

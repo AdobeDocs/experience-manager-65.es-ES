@@ -11,7 +11,7 @@ feature: Mobile
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '320'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 {{ue-over-mobile}}
 
-AEM Las aplicaciones se representan como *cq:Pages* en la lista de direcciones de correo electrónico de.
+Las aplicaciones se representan como *cq:Pages* en AEM.
 
 Comparten las mismas propiedades comunes que se encuentran en cualquier *cq:Page*, además de otras que se muestran a continuación y que representan propiedades compatibles con la integración.
 
@@ -38,7 +38,7 @@ La tabla siguiente muestra **Propiedades y nodos de la aplicación**.
   <tr>
    <td>dps-cloudConfig</td>
    <td>Cadena:Ruta</td>
-   <td><p>Ruta a un Cloud Service de Mobile On-Demand configurado. Se utiliza para acciones de AEM Mobile a Mobile On-Demand (invocación de API)</p> <p>Esta asociación se configura mediante el mosaico Administrar conexión cuando un autor elige un Cloud Service de Mobile On-Demand al que asociar la aplicación.</p> </td>
+   <td><p>Ruta a un Cloud Service Mobile On-Demand configurado. Se utiliza para acciones de AEM Mobile a Mobile On-Demand (invocación de API)</p> <p>Esta asociación se configura mediante el mosaico Administrar conexión cuando un autor elige un Cloud Service Mobile On-Demand al que asociar la aplicación.</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
@@ -48,7 +48,7 @@ La tabla siguiente muestra **Propiedades y nodos de la aplicación**.
   <tr>
    <td>dps-projectId</td>
    <td>Cadena</td>
-   <td><p>ID/URI del proyecto de Mobile On-Demand al que está vinculada esta aplicación o enlazada.</p> <p>Esta asociación se configura mediante el mosaico Administrar conexión cuando un autor elige el proyecto de una lista de proyectos disponibles para el Cloud Service de Mobile On-Demand asociado.</p> </td>
+   <td><p>ID/URI del proyecto de Mobile On-Demand al que está vinculada esta aplicación o enlazada.</p> <p>Esta asociación se configura mediante el mosaico Administrar conexión cuando un autor elige el proyecto de una lista de proyectos disponibles para el Cloud Service Mobile On-Demand asociado.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
@@ -63,12 +63,12 @@ La tabla siguiente muestra **Propiedades y nodos de la aplicación**.
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
    <td>Fecha</td>
-   <td>AEM Fecha de la última carga de recursos compartidos desde el servidor de recursos compartidos a AEM Mobile.</td>
+   <td>Fecha de la última carga de recursos compartidos de AEM a AEM Mobile.</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>
    <td>String:id de usuario</td>
-   <td>AEM El ID del usuario que realizó la última carga de la solicitud de recursos compartidos de los recursos compartidos de los usuarios de la red de distribución de datos de a AEM Mobile.</td>
+   <td>El ID del usuario que realizó la última carga de la solicitud de recursos compartidos de AEM a AEM Mobile.</td>
   </tr>
   <tr>
    <td>page-dashboard-config</td>

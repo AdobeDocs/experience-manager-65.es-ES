@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -82,11 +82,11 @@ Consulte los siguientes recursos para obtener más información sobre otras func
 * [Definiciones de aplicación](/help/mobile/phonegap-app-definitions.md)
 * [Crear una aplicación nueva mediante el Asistente para crear aplicación](/help/mobile/phonegap-create-new-app.md)
 * [Importar una aplicación híbrida existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
-* [Content Services](/help/mobile/develop-content-as-a-service.md)
+* [Servicios de contenido](/help/mobile/develop-content-as-a-service.md)
 
 ### Recursos adicionales {#additional-resources}
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [Desarrollo para Adobe PhoneGap AEM Enterprise con](/help/mobile/developing-in-phonegap.md)
-* [Administración de contenido para Adobe PhoneGap AEM Enterprise con el servicio de administración de](/help/mobile/administer-phonegap.md)
+* [Desarrollo para Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
+* [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
