@@ -1,6 +1,6 @@
 ---
-title: Solución de problemas de Dynamic Media - Modo Scene7
-description: Obtenga información sobre cómo solucionar y resolver problemas generales, de configuración y de instalación en Dynamic Media cuando se ejecuta en modo Scene7.
+title: Resolución de problemas de Dynamic Media, modo Scene7
+description: Obtenga información sobre cómo solucionar problemas y resolver problemas de instalación, configuración y generales en Dynamic Media cuando se ejecuta en modo Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -13,12 +13,12 @@ mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 0%
+source-wordcount: '1410'
+ht-degree: 1%
 
 ---
 
-# Solución de problemas de Dynamic Media - Modo Scene7{#troubleshooting-dynamic-media-scene-mode}
+# Resolución de problemas de Dynamic Media, modo Scene7{#troubleshooting-dynamic-media-scene-mode}
 
 En el siguiente documento se describe la solución de problemas de Dynamic Media que ejecuta el modo de ejecución **dynamicmedia_scene7**.
 
@@ -32,7 +32,7 @@ Asegúrese de que Dynamic Media se ha configurado correctamente haciendo lo sigu
 
   Este paquete de funciones opcional es compatible con FTP o si migra recursos a Dynamic Media desde Dynamic Media Classic.
 
-* Vaya a la interfaz de usuario de Cloud Service y confirme que la cuenta aprovisionada aparece en **[!UICONTROL Configuraciones disponibles]**.
+* Vaya a la interfaz de usuario de Cloud Services y confirme que la cuenta aprovisionada aparece en **[!UICONTROL Configuraciones disponibles]**.
 * Asegúrese de que el agente de replicación `Dynamic Media Asset Activation (scene7)` esté habilitado.
 
   Este agente de replicación se encuentra en Agentes de autor.
@@ -43,7 +43,7 @@ A continuación se ofrecen algunos consejos y trucos generales para todos los re
 
 ### Propiedades de estado de sincronización de recursos {#asset-synchronization-status-properties}
 
-Las siguientes propiedades de recurso se pueden revisar en CRXDE Lite para confirmar que la sincronización del recurso de Experience Manager a Dynamic Media se haya realizado correctamente:
+Las siguientes propiedades de recursos se pueden revisar en CRXDE Lite para confirmar que la sincronización del recurso de Experience Manager a Dynamic Media se ha realizado correctamente:
 
 | **Propiedad** | **Ejemplo** | **Descripción** |
 |---|---|---|
@@ -70,7 +70,7 @@ Al reemplazar un recurso de Dynamic Media existente (mismo nombre y ubicación),
 
 * Al mantener ambos, se crea un recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso que se acaba de cargar.
 
-* La creación de una versión no es compatible con el modo Dynamic Media - Scene7. La nueva versión reemplaza el recurso existente en la entrega.
+* La creación de una versión no se admite en Dynamic Media: entrega en modo Scene7. La nueva versión reemplaza el recurso existente en la entrega.
 
 ## Imágenes y conjuntos {#images-and-sets}
 
@@ -95,7 +95,7 @@ Si tiene problemas con imágenes y conjuntos, consulte las siguientes directrice
     </ol> </td>
    <td><p>Actualizar página/navegar a otra página y volver (se debe volver a compilar el JSP del carril lateral)</p> <p>Si esto no funciona:</p>
     <ul>
-     <li>Recurso de Publish.</li>
+     <li>Publicar recurso.</li>
      <li>Vuelva a cargar el recurso y publíquelo.</li>
     </ul> </td>
   </tr>
@@ -170,13 +170,13 @@ Si tiene problemas con el vídeo, consulte las siguientes directrices para la re
    <td>
     <ul>
      <li>Compruebe que el modo de ejecución sea <code>dynamicmedia_scene7</code>.</li>
-     <li>Compruebe si Dynamic Media Cloud Service está configurado.</li>
+     <li>Compruebe si el servicio en la nube de Dynamic Media está configurado.</li>
      <li>Compruebe si un perfil de vídeo está asociado a la carpeta de carga.</li>
     </ul> </td>
    <td>
     <ol>
-     <li>Compruebe la instancia de Experience Manager con <code>-r dynamicmedia_scene7</code></li>
-     <li>Compruebe que la Configuración de Dynamic Media en Cloud Service esté correctamente configurada.</li>
+     <li>Compruebe su instancia de Experience Manager con <code>-r dynamicmedia_scene7</code></li>
+     <li>Compruebe que la Configuración de Dynamic Media en Cloud Services esté configurada correctamente.</li>
      <li>Compruebe que la carpeta tenga un perfil de vídeo. Además, compruebe el perfil de vídeo.</li>
     </ol> </td>
   </tr>
@@ -225,7 +225,7 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para l
 **Solución**
 
 1. Vaya a la lista de ajustes preestablecidos de visor en las herramientas de administración: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
-1. Seleccione todos los ajustes preestablecidos de visor y, a continuación, seleccione **Publish**.
+1. Seleccione todos los ajustes preestablecidos de visor y, a continuación, seleccione **Publicar**.
 1. Vuelva al administrador de muestras y observe que el recuento de recursos no activados ahora es cero.
 
 ### Problema: La ilustración preestablecida del visualizador devuelve 404 desde Vista previa en los detalles del recurso o Copiar URL/Código incrustado {#viewer-preset-404}
@@ -254,15 +254,14 @@ Si los recursos de muestra o la ilustración preestablecida del visualizador no 
 1. Vaya al Administrador de paquetes de CRX: `https://localhost:4502/crx/packmgr/`.
 1. Busque el paquete de visor en la lista; comienza con `cq-dam-scene7-viewers-content`.
 1. Seleccione **Reinstalar**.
-1. En Cloud Service, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración de la configuración de Dynamic Media - S7.
-1. No realice cambios, seleccione **Guardar**.
-Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de muestra, el CSS preestablecido de visualizador y las ilustraciones.
+1. En Cloud Services, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo Configuración de Dynamic Media - S7.
+1. No realice cambios, seleccione **Guardar**.Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de muestra, el CSS preestablecido de visualizador y las ilustraciones.
 
 ### Problema: La previsualización de imagen no se carga en la creación de ajustes preestablecidos de visualizador {#image-preview-not-loading}
 
 **Solución**
 
-1. En Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. En Experience Manager, seleccione el logotipo de Experience Manager para acceder a la consola de navegación global y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. En el carril izquierdo, vaya a la carpeta de contenido de ejemplo en la siguiente ubicación:
 
    `/content/dam/_DMSAMPLE`
@@ -274,5 +273,5 @@ Esta acción de guardar vuelve a almacenar en déclencheur la lógica para crear
 
 1. Elimine la carpeta `viewer`.
 1. Cerca de la esquina superior izquierda de la página CRXDE Lite, seleccione **[!UICONTROL Guardar todo]**.
-1. En la esquina superior izquierda de la página del CRXDE Lite, seleccione el icono **Volver a inicio**.
-1. Volver a crear una configuración de [Dynamic Media en Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+1. En la esquina superior izquierda de la página CRXDE Lite, seleccione el icono **Volver a inicio**.
+1. Volver a crear una [configuración de Dynamic Media en Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).

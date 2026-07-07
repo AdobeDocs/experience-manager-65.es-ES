@@ -1,5 +1,5 @@
 ---
-title: Obtener información de página en formato JSON
+title: Obtención de información de página en formato JSON
 description: Para obtener la información de la página, envíe una solicitud al servlet PageInfo para obtener los metadatos de la página en formato JSON
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '952'
+ht-degree: 3%
 
 ---
 
-# Obtener información de página en formato JSON{#obtaining-page-information-in-json-format}
+# Obtención de información de página en formato JSON{#obtaining-page-information-in-json-format}
 
 Para obtener la información de la página, envíe una solicitud al servlet PageInfo para obtener los metadatos de la página en formato JSON.
 
@@ -28,11 +28,11 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->AEM Si necesita información de la página en formato JSON para proporcionar la entrega de contenido a canales que no son páginas web tradicionales, como, por ejemplo:
+>Si necesita información de la página en formato JSON para proporcionar la entrega de contenido a canales que no son páginas web tradicionales de AEM, como:
 >
 >* Aplicaciones de una sola página
 >* Aplicaciones móviles nativas
->* AEM Otros canales y puntos de contacto externos a los que se puede acceder mediante el uso de la
+>* Otros canales y puntos de contacto externos a AEM
 >
 >Consulte el documento [Exportador JSON para servicios de contenido](/help/sites-developing/json-exporter.md).
 
@@ -474,7 +474,7 @@ Configure el servicio Proveedor de información del paquete del flujo de trabajo
 
 >[!NOTE]
 >
->La pestaña Workflow del Sidekick utiliza el servlet PageInfo para obtener una lista de paquetes de flujo de trabajo. En la lista, puede seleccionar el paquete al que desea agregar la página actual. Los filtros que cree afectarán a esta lista.
+>La pestaña Workflow de Sidekick utiliza el servlet PageInfo para obtener una lista de paquetes de flujo de trabajo. En la lista, puede seleccionar el paquete al que desea agregar la página actual. Los filtros que cree afectarán a esta lista.
 >
 
 El identificador del servicio es `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Para crear un filtro, especifique un valor para una propiedad `workflowpackageinfoprovider.filter`.
@@ -494,11 +494,11 @@ El servicio aplica el resultado acumulado de todos los filtros. Por ejemplo, los
 
 >[!NOTE]
 >
->AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener información detallada.
+>Al trabajar con AEM, existen varios métodos para administrar los ajustes de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener información detallada.
 
 Por ejemplo, para configurar el servicio con CRXDE Lite:
 
-1. Abra el CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Abra CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. En la carpeta config de la aplicación, cree un nodo:
 
    * Nombre: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -514,7 +514,7 @@ Por ejemplo, para configurar el servicio con CRXDE Lite:
 
 Para configurar el servicio en el origen del proyecto:
 
-1. AEM Busque o cree la carpeta de configuración para la aplicación de en el origen del proyecto.
+1. Busque o cree la carpeta de configuración para la aplicación de AEM en el origen del proyecto.
 
    Por ejemplo, si utilizó el arquetipo multimodule del complemento Maven del paquete de contenido para crear el proyecto, la ruta de la carpeta es `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. En la carpeta de configuración, cree un archivo de texto llamado com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
@@ -538,7 +538,7 @@ Para configurar el servicio en el origen del proyecto:
 
 Cree un servicio de proveedor de información de página personalizado para agregar metadatos de página que la aplicación pueda obtener fácilmente.
 
-1. Implementar la interfaz `com.day.cq.wcm.api.PageInfoProvider`.
+1. Implemente la interfaz `com.day.cq.wcm.api.PageInfoProvider`.
 1. Agrupe e implemente la clase como un servicio OSGi.
 1. Cree un componente de página en la aplicación. Use `foundation/components/page` como valor de la propiedad `sling:resourceSuperType`.
 
@@ -601,7 +601,7 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 }
 ```
 
-El siguiente ejemplo, en CRXDE Lite, muestra el componente de página configurado para utilizar el servicio PageUrlInfoProvider:
+En el ejemplo siguiente, en CRXDE Lite, se muestra el componente de página configurado para utilizar el servicio PageUrlInfoProvider:
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
