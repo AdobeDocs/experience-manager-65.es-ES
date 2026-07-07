@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 69%
+source-wordcount: '997'
+ht-degree: 73%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 69%
 
 ¿Está buscando una experiencia de **formularios** compatible con dispositivos móviles que simplifique la inscripción, aumente la participación y reduzca el tiempo de respuesta? **los formularios adaptables** son perfectos para usted. Los formularios adaptables proporcionan una experiencia adaptada para móviles, automatizada y analítica. Puede crear fácilmente formularios que sean interactivos y adaptables, utilizar procesos automatizados para reducir las tareas administrativas y repetitivas y utilizar análisis de datos para mejorar y personalizar la experiencia que los clientes tienen con sus formularios.
 
-Este tutorial proporciona un marco de trabajo completo para crear un formulario adaptable. El tutorial está organizado en un caso de uso y en varias guías. Cada guía le ayuda a aprender y agregar nuevas características al formulario adaptable que cree en este tutorial. Después de cada guía, tendrá un formulario adaptable operativo. La guía para crear un formulario adaptable está disponible. Próximamente habrá más guías. Al final de este tutorial, debería poder hacer lo siguiente:
+Este tutorial proporciona un marco de trabajo completo para crear un formulario adaptable. El tutorial está organizado en un caso de uso y en varias guías. Cada guía le ayuda a aprender y agregar nuevas características al formulario adaptable que cree en este tutorial. Después de cada guía, tendrá un formulario adaptable operativo. La guía para crear un formulario adaptable está disponible. Próximamente habrá más guías. Al final de este tutorial, podrá hacer lo siguiente:
 
 * Crear un formulario adaptable y un modelo de datos de formulario.
 * Establecer el estilo de su formulario adaptable.
@@ -45,7 +45,7 @@ El sitio web se ejecuta en Adobe Experience Manager (AEM) y utiliza AEM [!DNL Fo
 
 ### Requisitos previos {#prerequisite}
 
-* AEM Configurar una [instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=es#author-and-publish-installs)
+* Configurar una [instancia de autor de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=es#author-and-publish-installs)
 * Instalar el [Complemento de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) en la instancia de autor.
 * Obtener el controlador de base de datos JDBC (archivo JAR) del proveedor de la base de datos. Los ejemplos del tutorial se basan en la base de datos [!DNL MySQL] y utiliza el [!DNL Oracle's] [Controlador de base de datos JDBC de MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -66,7 +66,7 @@ Objetivos:
 * Cree una acción de envío para enviar un correo electrónico que contenga contenido de formulario.
 * Previsualizar y enviar un formulario adaptable.
 
-[![Ver la guía](assets/see-the-guide-sm.png)](create-adaptive-form.md)
+[![Consulte la guía](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Paso 2: Crear un modelo de datos de formulario {#step-create-form-data-model}
 
@@ -82,7 +82,7 @@ Objetivos:
 * Configure los servicios de lectura y escritura para el modelo de datos de formulario.
 * Probar el modelo de datos de formulario y los servicios configurados con datos de prueba.
 
-[![Ver la guía](assets/see-the-guide-sm.png)](create-form-data-model.md)
+[![Consulte la guía](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Paso 3: Aplicar reglas a campos de formulario adaptables {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,7 +95,7 @@ Objetivos:
 * Cree y aplique reglas en los campos de formulario adaptables.
 * Utilice reglas para almacenar en déclencheur los servicios del modelo de datos de formulario para actualizar los datos a la base de datos.
 
-[![Ver la guía](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![Consulte la guía](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Paso 4: Estilo del formulario adaptable {#step-style-your-adaptive-form}
 
@@ -109,7 +109,7 @@ Objetivos:
 * Cree una temática para el formulario adaptable mediante el editor de temáticas.
 * Usar Web Fonts en una temática personalizada.
 
-[![Ver la guía](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![Consulte la guía](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Paso 5: Publicar el formulario adaptable {#step-publish-your-adaptive-form}
 
@@ -119,8 +119,8 @@ Puede publicar formularios adaptables como un formulario independiente (aplicaci
 
 Objetivos:
 
-* Publish AEM usa el formulario adaptable como una página de.
-* AEM Incruste el formulario adaptable en una página de [!DNL Sites] de la.
-* AEM AEM Incruste el formulario adaptable en una página web externa (una página web que no sea de tipo alojada fuera de la página).
+* Publique el formulario adaptable como una página de AEM.
+* Incruste el formulario adaptable en una página de AEM [!DNL Sites].
+* Incruste el formulario adaptable en una página web externa (una página web que no sea de AEM y esté alojada fuera de AEM).
 
-[![Ver la guía](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![Consulte la guía](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)

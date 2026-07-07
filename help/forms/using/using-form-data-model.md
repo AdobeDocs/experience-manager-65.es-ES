@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1268'
-ht-degree: 90%
+source-wordcount: '1314'
+ht-degree: 89%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 90%
 
 ![imagen a pantalla completa](do-not-localize/data-integration.png)
 
-La integración de datos de AEM Forms permite utilizar fuentes de datos de diferentes back-end para crear un modelo de datos de formulario que se puede utilizar como esquema en varios flujos de trabajo de formularios adaptables y comunicaciones interactivas. Para ello, es necesario configurar las fuentes de datos y crear un modelo de datos de formulario basado en los objetos y servicios de modelo de datos disponibles en las fuentes de datos. Para obtener más información, consulte:
+La integración de datos de AEM Forms permite utilizar fuentes de datos de diferentes back-end para crear un modelo de datos de formulario que se puede utilizar como esquema en varios flujos de trabajo de formularios adaptables y comunicaciones interactivas. Para ello, es necesario configurar las fuentes de datos y crear un modelo de datos de formulario basado en los servicios y objetos de modelo de datos disponibles en las fuentes de datos. Para obtener más información, consulte:
 
 * [Integración de datos de AEM Forms](../../forms/using/data-integration.md)
 * [Configurar fuentes de datos](../../forms/using/configure-data-sources.md)
@@ -36,7 +36,7 @@ Un modelo de datos de formulario es una extensión del esquema JSON que puede ut
 
 * [Crear formularios adaptables y fragmentos](#create-af)
 * [Crear comunicaciones interactivas y componentes básicos como fragmentos de texto, lista y condición](#create-ic)
-* [Previsualizar comunicaciones interactivas con datos de ejemplo](#preview-ic)
+* [Previsualizar comunicaciones interactivas con datos de muestra](#preview-ic)
 * [Prerrellenar formularios adaptables y comunicaciones interactivas](#prefill)
 * [Escribir en diferido datos de formulario adaptable en fuentes de datos](#write-af)
 * [Invocar servicios mediante reglas de formulario adaptable](#invoke-services)
@@ -59,7 +59,7 @@ Puede crear [formularios adaptables](../../forms/using/creating-adaptive-form.md
 
    ![create-af-3](assets/create-af-3.png)
 
-Una vez creado el formulario adaptable o el fragmento de formulario adaptable basado en un modelo de datos de formulario, los objetos de modelo de datos de formulario aparecen en la pestaña **[!UICONTROL Objetos del modelo de datos]** del Explorador de contenido en el Editor de formularios adaptables.
+Una vez creado el formulario adaptable o el fragmento de formulario adaptable basado en un modelo de datos de formulario, los objetos de modelo de datos de formulario aparecen en la pestaña **[!UICONTROL Objetos de modelo de datos]** del Explorador de contenido en el Editor de formularios adaptables.
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Para obtener más información, consulte:
 
 [Enumerar fragmentos](/help/forms/using/lists.md)
 
-## Usar una vista previa con datos de ejemplo {#preview-ic}
+## Usar una vista previa con datos de muestra {#preview-ic}
 
 El editor del modelo de datos de formulario permite generar y editar datos de ejemplo para objetos de modelo de datos en el modelo de datos de formulario. Puede utilizar estos datos para previsualizar y probar comunicaciones interactivas y formularios adaptables. Genere los datos de ejemplo antes de obtener la vista previa como se describe en [Trabajar con el modelo de datos de formulario](../../forms/using/work-with-form-data-model.md#sample).
 
@@ -99,7 +99,7 @@ Para previsualizar una comunicación interactiva con datos del modelo de datos d
 1. Seleccione una comunicación interactiva y seleccione **[!UICONTROL Vista previa]** en la barra de herramientas para seleccionar **[!UICONTROL Canal web]**, **[!UICONTROL Canal de impresión]** o **[!UICONTROL Ambos canales]** para previsualizar la comunicación interactiva.
 1. En el cuadro de diálogo Vista previa de [*canal*], asegúrese de que está seleccionado **[!UICONTROL Probar datos del modelo de datos de formulario]** y seleccione **[!UICONTROL Vista previa]**.
 
-La comunicación interactiva se abre con datos de ejemplo prerrellenados.
+La comunicación interactiva se abre con datos de muestra prerrellenados.
 
 ![web-preview](assets/web-preview.png)
 
@@ -129,7 +129,7 @@ Al enviar el formulario, los datos del objeto de modelo de datos configurado se 
 
 ![data-submission](assets/data-submission.png)
 
-También puede enviar los archivos adjuntos del formulario a una fuente de datos mediante la propiedad de objeto del modelo de datos binaria. Haga lo siguiente para enviar archivos adjuntos a una fuente de datos JDBC:
+También puede enviar los archivos adjuntos del formulario a una fuente de datos mediante la propiedad de objeto de modelo de datos binaria. Haga lo siguiente para enviar archivos adjuntos a una fuente de datos JDBC:
 
 1. Agregue un objeto de modelo de datos que incluya una propiedad binaria al modelo de datos de formulario.
 1. En el formulario adaptable, arrastre y coloque el componente **[!UICONTROL Archivo adjunto]** desde el Explorador de componente al formulario adaptable.
@@ -138,7 +138,7 @@ También puede enviar los archivos adjuntos del formulario a una fuente de datos
 
    Seleccione ![check-button](assets/check-button.png) para guardar las propiedades. El campo Datos adjuntos ahora está enlazado a la propiedad binaria del modelo de datos de formulario.
 
-1. En la sección Envío de las propiedades del contenedor de formulario adaptable, active **[!UICONTROL Enviar archivos adjuntos del formulario]**. Esto envía el archivo adjunto del campo de propiedad binaria a la fuente de datos al enviar el formulario.
+1. En la sección Envío de las propiedades del contenedor de formulario adaptable, habilite **[!UICONTROL Enviar archivos adjuntos del formulario]**. Esto envía el archivo adjunto del campo de propiedad binaria a la fuente de datos al enviar el formulario.
 
 ## Invocar servicios desde formularios adaptables mediante reglas {#invoke-services}
 
