@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: ec3941675081255879065c3be9d5af77474b2072
+source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
 workflow-type: tm+mt
-source-wordcount: '8286'
-ht-degree: 96%
+source-wordcount: '8300'
+ht-degree: 95%
 
 ---
 
@@ -1213,6 +1213,7 @@ ht-degree: 96%
       + [Procesamiento de documentos incluso si el servidor de AEM Forms no está completamente operativo](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [No se puede usar el servicio Output, el servicio Forms o el servicio Documento de registro (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Mitigación de vulnerabilidades RCE de Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [Mitigación de la vulnerabilidad del servicio web Apache Axis Document Security para Experience Manager Forms en JEE](/help/forms/using/mitigating-apache-axis-document-security-webservice-vulnerability-for-aem-forms-jee.md)
       + [Error al realizar la copia de seguridad de la base de datos durante la actualización a 6.5.12.0 para MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La generación de PDF no puede imprimir un gran número de PDF en Workbench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [¿Cómo reiniciar adecuadamente el SDK de AEM?](/help/forms/using/restart-aem-sdk.md)
