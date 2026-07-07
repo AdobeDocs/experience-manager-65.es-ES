@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '3135'
-ht-degree: 0%
+source-wordcount: '3248'
+ht-degree: 1%
 
 ---
 
@@ -20,37 +20,37 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-Poder alertar instantáneamente a los usuarios de aplicaciones móviles de Adobe Experience Manager AEM () con notificaciones importantes es crucial para el valor de una aplicación móvil y sus campañas de marketing. Aquí se describen los pasos que debe seguir para permitir que la aplicación reciba notificaciones push. También aprenderá a configurar y enviar mensajes push desde AEM Mobile a la aplicación instalada en el teléfono. Además, en esta sección se describe cómo configurar la función [vinculación profunda](#deeplinking) para las notificaciones push.
+Poder alertar instantáneamente a los usuarios de aplicaciones móviles de Adobe Experience Manager (AEM) con notificaciones importantes es crucial para el valor de una aplicación móvil y sus campañas de marketing. Aquí se describen los pasos que debe seguir para permitir que la aplicación reciba notificaciones push. También aprenderá a configurar y enviar mensajes push desde AEM Mobile a la aplicación instalada en el teléfono. Además, en esta sección se describe cómo configurar la función [vinculación profunda](#deeplinking) para las notificaciones push.
 
 >[!NOTE]
 >
 >*Las notificaciones push no se garantizan con la entrega; se parecen más a los anuncios. Se hace el mejor esfuerzo para asegurarse de que todos los usuarios los reciban, pero no se trata de un mecanismo de envío garantizado. Además, el tiempo para entregar una notificación push puede variar desde menos de un segundo hasta media hora.*
 
-AEM El uso de notificaciones push con requiere varias tecnologías diferentes. AEM En primer lugar, se debe utilizar un proveedor de servicios de notificaciones push para administrar notificaciones y dispositivos (aún no lo hace, por el momento). AEM Hay dos proveedores configurados de forma predeterminada con el servicio de notificaciones simples [Amazon](https://aws.amazon.com/sns/) (o SNS) y [Pushwoosh](https://www.pushwoosh.com/). En segundo lugar, la tecnología push para el sistema operativo móvil determinado debe pasar por el servicio adecuado: el servicio de notificaciones push de Apple (o APNS) para dispositivos iOS y la mensajería de Google Cloud (o GCM) para dispositivos Android™. AEM AEM Aunque no se comunica directamente con estos servicios específicos de la plataforma, el usuario debe proporcionar cierta información de configuración relacionada junto con las notificaciones para que estos servicios ejecuten la notificación push.
+El uso de notificaciones push con AEM requiere varias tecnologías diferentes. En primer lugar, se debe utilizar un proveedor de servicios de notificaciones push para administrar notificaciones y dispositivos (AEM aún no lo hace). Hay dos proveedores configurados de forma predeterminada con AEM: [Amazon Simple Notification Service](https://aws.amazon.com/sns/) (o SNS) y [Pushwoosh](https://www.pushwoosh.com/). En segundo lugar, la tecnología push para el sistema operativo móvil determinado debe pasar por el servicio adecuado: el servicio de notificaciones push de Apple (o APNS) para dispositivos iOS y la mensajería de Google Cloud (o GCM) para dispositivos Android™. Aunque AEM no se comunica directamente con estos servicios específicos de la plataforma, AEM debe proporcionar parte de la información de configuración relacionada junto con las notificaciones para que estos servicios ejecuten la notificación push.
 
 Una vez instalado y configurado (como se explica a continuación), funciona de esta manera:
 
-1. AEM Se crea una notificación push en el y se envía al proveedor de servicios (Amazon SNS o Pushwoosh).
+1. Se crea una notificación push en AEM y se envía al proveedor de servicios (Amazon SNS o Pushwoosh).
 1. El proveedor de servicios lo recibe y lo envía al proveedor principal (APNS o GCM).
 1. El proveedor principal inserta la notificación en todos los dispositivos registrados para esa notificación push. Para cada dispositivo, utiliza la red de datos móviles o WiFi, la que esté disponible en el dispositivo.
 1. La notificación se muestra en el dispositivo si la aplicación para la que está registrada no se está ejecutando. Un usuario que pulsa la notificación inicia la aplicación y muestra la notificación dentro de la aplicación. En caso de que la aplicación ya se esté ejecutando, solo se mostrará la notificación dentro de la aplicación.
 
-AEM Esta versión de es compatible con dispositivos móviles iOS y Android™.
+Esta versión de AEM es compatible con dispositivos móviles iOS y Android™.
 
 ## Información general y procedimiento {#overview-and-procedure}
 
 Para utilizar notificaciones push en una aplicación de AEM Mobile, se deben realizar los siguientes pasos generales.
 
-Normalmente, un desarrollador Experience Manager hace lo siguiente:
+Normalmente, un desarrollador de Experience Manager hace lo siguiente:
 
 1. Regístrese en los servicios de mensajería de Apple y Google
 1. Regístrese en un servicio de mensajería push y configúrelo
 1. Añadir la compatibilidad push a la aplicación
 1. Preparar un teléfono para probarlo
 
-Mientras que un Experience Manager Administrator hace lo siguiente:
+Mientras que un administrador de Experience Manager hace lo siguiente:
 
-1. AEM Configuración de notificaciones push en aplicaciones de
+1. Configuración de notificaciones push en aplicaciones de AEM
 1. Creación e implementación de la aplicación
 1. Enviar una notificación push
 1. Configurar vinculación profunda *(opcional)*
@@ -88,15 +88,15 @@ Los siguientes pasos muestran un método diferente de crear claves de API GCM:
 
 ### Paso 2: Registro y configuración de un servicio de mensajería push {#step-register-and-configure-a-push-messaging-service}
 
-AEM Se configura para que utilice uno de los tres servicios de notificaciones push:
+AEM está configurado para utilizar uno de los tres servicios para las notificaciones push:
 
 * SNS de Amazon
 * Pushwoosh
 * Adobe Mobile Services
 
-Las configuraciones de *Amazon AEM SNS* y *Pushwoosh* le permiten enviar mensajes insertados desde pantallas de la.
+Las configuraciones de *Amazon SNS* y *Pushwoosh* le permiten enviar mensajes insertados desde pantallas de AEM.
 
-La configuración de *Adobe Mobile Services* le permite configurar y enviar notificaciones push desde Adobe Mobile Services con una cuenta de Adobe Analytics (pero la aplicación debe crearse con este conjunto de configuración para habilitar las notificaciones push de AMS).
+La configuración de *Adobe Mobile Services* le permite configurar y enviar notificaciones push desde Adobe Mobile Services con una cuenta de Adobe Analytics (pero la aplicación debe crearse con esta configuración establecida para habilitar las notificaciones push de AMS).
 
 #### Uso del servicio de mensajería SNS de Amazon {#using-the-amazon-sns-messaging-service}
 
@@ -200,7 +200,7 @@ Para usar Pushwoosh:
 
 >[!NOTE]
 >
->AEM AEM *Si se configura una segunda aplicación en la aplicación con el mismo ID de aplicación (y otros valores relacionados: Token de acceso de API e Id de GCM), cualquier notificación push enviada a través de la segunda aplicación en la que se configure el ID de aplicación se enviará a cualquier otra aplicación con ese ID de aplicación.*
+>*Si se configura una segunda aplicación en AEM con el mismo ID de aplicación (y otros valores relacionados: Token de acceso de API e Id de GCM), cualquier notificación push enviada a través de la segunda aplicación en AEM se enviará a cualquier otra aplicación con ese ID de aplicación.*
 
 ### Paso 3: Agregar compatibilidad push a la aplicación {#step-add-push-support-to-the-app}
 
@@ -215,8 +215,7 @@ Con estas propiedades (archivos .content.xml):
 &lt;jcr:root xmlns:jcr=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot;
 jcr:primaryType=&quot;nt:unstructured&quot;
 excludeProperties=&quot;[appAPIAccessToken]&quot;
-path=&quot;../../../...&quot;
-targetRootDirectory=&quot;www&quot;
+path=&quot;../../../...&quot;targetRootDirectory=&quot;www&quot;
 type=&quot;notificationsconfig&quot;/>
 
 >[!NOTE]
@@ -227,7 +226,7 @@ type=&quot;notificationsconfig&quot;/>
 
 Las bibliotecas de cliente de notificaciones push deben agregarse a la aplicación siguiendo estos pasos:
 
-En el CRXDE Lite:
+En CRXDE Lite:
 
 1. Vaya a */etc/designs/phonegap/&lt;app name>/clientlibsall.*
 1. Haga doble clic en la sección incrustar del panel de propiedades.
@@ -256,17 +255,17 @@ Con XCode 8.1, antes de utilizar las notificaciones push debe ir a la pestaña F
 
 Para instalar la aplicación en un teléfono Android™ mediante CLI (consulte lo siguiente: **Paso 6 - Creación e implementación de la aplicación**), primero debe poner el teléfono en &quot;modo de desarrollador&quot;. Consulte [Activación de las opciones para desarrolladores en el dispositivo](https://developer.android.com/tools/device.html#developer-device-options) para obtener más información al respecto.
 
-### AEM Paso 5: Configuración de push en aplicaciones de {#step-configure-push-on-aem-apps}
+### Paso 5: Configuración de notificaciones push en aplicaciones de AEM {#step-configure-push-on-aem-apps}
 
 Antes de crear e implementar en el dispositivo móvil configurado, debe configurar los ajustes de notificación del servicio de mensajería que decidió utilizar.
 
 1. Cree los grupos de autorización adecuados para las notificaciones push.
-1. AEM Inicie sesión en la pestaña Aplicaciones, haga clic en la pestaña Aplicaciones, que es el usuario adecuado.
+1. Inicie sesión en AEM como el usuario adecuado y haga clic en la pestaña Aplicaciones.
 1. Haga clic en la aplicación.
-1. Busque el mosaico Administrar Cloud Service y haga clic en el lápiz para modificar las configuraciones de la nube.
+1. Busque el mosaico Administrar servicios de nube y haga clic en el lápiz para modificar las configuraciones de nube.
 1. Seleccione Conexión de Amazon SNS, Conexión Pushwoosh o Adobe Mobile Services como la configuración de notificación.
 1. Introduzca las propiedades del proveedor y haga clic en Enviar para guardarlas y en Listo. No se verifican a distancia en esta fase, excepto si hay AMS.
-1. Ahora debería ver la configuración que acaba de introducir en el mosaico Administrar Cloud Service.
+1. Ahora debería ver la configuración que acaba de introducir en el mosaico Administrar servicios de nube.
 
 ### Paso 6: Creación e implementación de la aplicación {#step-build-and-deploy-the-app}
 
@@ -276,7 +275,7 @@ Existen dos maneras de crear e implementar la aplicación mediante PhoneGap.
 
 **Nota:** Para las pruebas de notificaciones push, los emuladores no serán suficientes porque las notificaciones push utilizan un protocolo distinto entre el proveedor push (Apple o Google) y el dispositivo. El hardware y los emuladores actuales de Mac/PC no son compatibles con esto.
 
-1. *PhoneGap Build* es un servicio ofrecido por PhoneGap que compilará tu aplicación en sus servidores y te permitirá descargarla directamente en tu dispositivo. Consulte la documentación del PhoneGap Build en `https://build.phonegap.com/` para obtener información sobre cómo configurar y utilizar el PhoneGap Build.
+1. *PhoneGap Build* es un servicio ofrecido por PhoneGap que creará su aplicación en sus servidores y le permitirá descargarla directamente en su dispositivo. Consulte la documentación de PhoneGap Build en `https://build.phonegap.com/` para obtener información sobre cómo configurar y utilizar PhoneGap Build.
 
 1. *Interfaz de línea de comandos de PhoneGap* (CLI) le permite utilizar un completo conjunto de comandos de PhoneGap en su línea de comandos para generar, depurar e implementar su aplicación. Consulte la documentación para desarrolladores de PhoneGap (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) para obtener información sobre cómo configurar y utilizar la CLI de PhoneGap.
 
@@ -293,7 +292,7 @@ Para crear y enviar una notificación, siga estos pasos.
 1. Envío de la notificación
 
    * En el panel Aplicaciones, busque el mosaico Notificaciones push.
-   * Seleccione la notificación o haga clic en el botón de detalles en la parte inferior derecha (. ). .), para mostrar la lista de notificaciones. Esta lista también indica si una notificación está lista para enviarse, si ya se ha enviado o si se ha producido un error durante la entrega.
+   * Seleccione la notificación o haga clic en el botón de detalles en la parte inferior derecha ( ). . .), para mostrar la lista de notificaciones. Esta lista también indica si una notificación está lista para enviarse, si ya se ha enviado o si se ha producido un error durante la entrega.
    * Seleccione la casilla de verificación de una notificación (solo) y haga clic en el botón &quot;Enviar notificación&quot; situado encima de la lista. Tiene la oportunidad de &quot;Cancelar&quot; o &quot;Enviar&quot; la notificación en el cuadro de diálogo que aparece.
 
 1. Tratamiento de los resultados
@@ -305,7 +304,7 @@ Para crear y enviar una notificación, siga estos pasos.
       * La generación con CLI inicia la aplicación después de implementarla en Android™. En iOS, debe iniciarlo manualmente. Dado que el paso de registro push se produce al inicio, las aplicaciones de Android™ pueden recibir notificaciones push inmediatamente (porque ya se ha iniciado y registrado), mientras que las aplicaciones de iOS no pueden.
       * En Android™, el texto del botón Aceptar aparece en mayúsculas (y en cualquier otro botón añadido en la notificación en la aplicación), mientras que en iOS no lo está.
 
-Para las notificaciones push de AMS, las notificaciones deben redactarse y enviarse desde el servidor de AMS. AEM AMS proporciona funciones de notificación push adicionales, además de las proporcionadas por las notificaciones de con AWS y Pushwoosh.
+Para las notificaciones push de AMS, las notificaciones deben redactarse y enviarse desde el servidor de AMS. AMS proporciona funciones de notificación push adicionales además de las proporcionadas por las notificaciones de AEM con AWS y Pushwoosh.
 
 >[!NOTE]
 >
@@ -325,7 +324,7 @@ Cree la notificación, añada un texto de botón y una ruta de vínculo para el 
 >
 >Para acceder al mosaico Notificación push en el panel, siga los pasos a continuación.
 
-1. Haga clic en Editar en la esquina superior derecha del mosaico **Administrar Cloud Service**.
+1. Haga clic en Editar en la esquina superior derecha del mosaico **Administrar servicios de nube**.
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 

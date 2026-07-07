@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 0%
+source-wordcount: '692'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Por último, los administradores publican de forma estratégica el contenido act
 >
 >**Requisito previo**:
 >
->En [Implementación y mantenimiento](/help/sites-deploying/deploy.md), los desarrolladores se familiarizaron con los componentes y las plantillas del sistema en Adobe Experience Manager AEM ().
+>En [Implementación y mantenimiento](/help/sites-deploying/deploy.md), los desarrolladores se familiarizaron con los componentes y las plantillas del sistema en Adobe Experience Manager (AEM).
 
 ## El mosaico Administrar contenido de la página {#the-manage-page-content-tile}
 
@@ -50,17 +50,17 @@ Seleccione uno de los paquetes de contenido enumerados para crear o editar conte
 
 Nota *todo es contenido*, lo que significa que los estilos de aplicación, la copia (texto), los medios, las páginas, la navegación y la segmentación del contenido se pueden editar y actualizar en formato OTA, sin tener que ir a una tienda de aplicaciones.
 
-Para editar el contenido de AEM Mobile AEM AEM AEM, los autores de **necesitarán tener una comprensión sólida de la interfaz de edición de contenido de: [Creación de páginas en el.](/help/sites-authoring/qg-page-authoring.md)
+Para editar contenido de AEM Mobile, los autores de *AEM *necesitarán una comprensión sólida de la interfaz de edición de contenido de AEM: [Creación de páginas en AEM.](/help/sites-authoring/qg-page-authoring.md)
 
 ## El Mosaico Administrar Paquetes De Contenido {#the-manage-content-packages-tile}
 
-AEM En este caso, *Los administradores* pueden actualizar sus aplicaciones de forma rápida y sencilla para ofrecer experiencias atractivas y contenido actualizado que promuevan la participación de la marca y cumplan con los objetivos comerciales, todo sin necesidad de que los desarrolladores o las tiendas de aplicaciones vuelvan a enviarlas.
+Aquí, *Administradores de AEM* pueden actualizar sus aplicaciones de manera rápida y sencilla para ofrecer experiencias atractivas y contenido actualizado que promuevan la participación de la marca y cumplan con los objetivos comerciales, todo sin necesidad de que los desarrolladores o las tiendas de aplicaciones vuelvan a enviarlo.
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-AEM AEM Una vez que *autores* hayan agregado o modificado contenido a través del mosaico Administrar contenido, *Los administradores* pueden insertar esos cambios en los clientes con una actualización de paquetes de contenido.
+Una vez que *autores de AEM* hayan agregado o modificado contenido a través del mosaico Administrar contenido, *los administradores de AEM* pueden insertar esos cambios en los clientes con una actualización de paquetes de contenido.
 
-AEM La acción Paquete de contenido permite al *Autor de* crear y editar el contenido de la página mientras el equipo de desarrollo realiza cambios en el diseño y la implementación de una aplicación host, incluidos la navegación, el estilo, la lógica del lado del servidor, las plantillas y los componentes, y luego enviar esos cambios fuera de OTA a los clientes sin necesidad de volver a enviarlos a las distintas tiendas para su distribución.
+La acción Paquete de contenido permite que *AEM Author* cree y edite contenido de página mientras el equipo de desarrollo realiza cambios en el diseño y la implementación de una aplicación host, que incluye navegación, estilo, lógica del lado del servidor, plantillas y componentes, y luego envía esos cambios a OTA a los clientes sin necesidad de volver a enviarlos a las distintas tiendas para su distribución.
 
 **Para publicar contenido nuevo o actualizado**
 
@@ -78,13 +78,13 @@ El ensayo de una actualización de contenido permite realizar varias actualizaci
 
 >[!NOTE]
 >
->AEM El contenido ensayado se puede comprobar mediante la aplicación Verificar el antes de publicar.
+>El contenido ensayado se puede comprobar mediante la aplicación AEM Verify antes de publicar.
 >
->AEM AEM Consulte [Inicio rápido móvil para la verificación de datos](/help/mobile/phonegap-mobile-quickstart.md) para obtener más información sobre la aplicación de verificación de datos en el teléfono móvil.
+>Consulte [Inicio rápido móvil para AEM Verify](/help/mobile/phonegap-mobile-quickstart.md) para obtener más detalles sobre la aplicación AEM Verify.
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
-Cuando esté listo para entregar contenido nuevo a los usuarios de su aplicación con Content Sync OTA, seleccione **Publish** como se muestra a continuación.
+Cuando esté listo para entregar contenido nuevo a los usuarios de su aplicación con Content Sync OTA, seleccione **Publicar** como se muestra a continuación.
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -102,5 +102,5 @@ Una vez que haya aprendido a crear y administrar contenido de aplicación en el 
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [Desarrollo para Adobe PhoneGap AEM Enterprise con](/help/mobile/developing-in-phonegap.md)
-* [Administración de contenido para Adobe PhoneGap AEM Enterprise con el servicio de administración de](/help/mobile/administer-phonegap.md)
+* [Desarrollo para Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
+* [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)

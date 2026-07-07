@@ -1,6 +1,6 @@
 ---
-title: AEM Mantenimiento del registro de auditoría en el 6
-description: Obtenga información sobre el mantenimiento del registro de auditoría en Adobe Experience Manager AEM ().
+title: Mantenimiento del registro de auditoría en AEM 6
+description: Obtenga información sobre el mantenimiento del registro de auditoría en Adobe Experience Manager (AEM).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -12,13 +12,13 @@ role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '605'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# AEM Mantenimiento del registro de auditoría en el 6{#audit-log-maintenance-in-aem}
+# Mantenimiento del registro de auditoría en AEM 6{#audit-log-maintenance-in-aem}
 
-AEM Los eventos de que cumplen los requisitos para el registro de auditoría generan muchos datos archivados. Estos datos pueden crecer rápidamente con el tiempo debido a las replicaciones, las cargas de recursos y otras actividades del sistema.
+Los eventos de AEM que cumplen los requisitos para el registro de auditoría generan muchos datos archivados. Estos datos pueden crecer rápidamente con el tiempo debido a las replicaciones, las cargas de recursos y otras actividades del sistema.
 
 El mantenimiento del registro de auditoría incluye varias partes de funcionalidad que permiten automatizar el mantenimiento del registro de auditoría en directivas específicas.
 
@@ -32,7 +32,7 @@ Existen tres tipos de opciones de depuración de registros de auditoría:
 1. [Depuración del registro de auditoría DAM](/help/sites-administering/operations-audit-log.md#configure-dam-audit-log-purging)
 1. [Purga del registro de auditoría de replicación](/help/sites-administering/operations-audit-log.md#configure-replication-audit-log-purging)
 
-AEM Cada una de ellas se puede configurar creando reglas en la consola web de. Una vez configurados, puede almacenarlos en déclencheur en **Herramientas - Operaciones - Mantenimiento - Ventana de mantenimiento semanal** y ejecutando **Tarea de mantenimiento de AuditLog**.
+Cada una se puede configurar creando reglas en la consola web de AEM. Una vez configurados, puede almacenarlos en déclencheur en **Herramientas - Operaciones - Mantenimiento - Ventana de mantenimiento semanal** y ejecutando **Tarea de mantenimiento de AuditLog**.
 
 ## Configurar depuración del registro de auditoría de página {#configure-page-audit-log-purging}
 
@@ -56,7 +56,7 @@ Siga estos pasos para configurar la depuración del registro de auditoría:
    >La ruta de contenido solo se aplica a los elementos secundarios del nodo `/var/audit/com.day.cq.wcm.core.page` en el repositorio.
 
 1. Guarde la regla.
-1. La regla que ha creado debe exponerse en el tablero de operaciones para que se ejecute. AEM Para ello, vaya a **Herramientas - Operaciones - Mantenimiento** desde la pantalla de bienvenida de la pantalla de bienvenida de la página de inicio de la sesión de bienvenida.
+1. La regla que ha creado debe exponerse en el tablero de operaciones para que se ejecute. Para ello, vaya a **Herramientas - Operaciones - Mantenimiento** desde la pantalla de bienvenida de AEM.
 
 1. Presione la tarjeta **Ventana de mantenimiento semanal**.
 
@@ -66,9 +66,9 @@ Siga estos pasos para configurar la depuración del registro de auditoría:
 
 1. Puede inspeccionar la fecha de la siguiente ejecución, configurarla o ejecutarla manualmente pulsando el botón de reproducción.
 
-AEM En la versión 6.3, si la ventana de mantenimiento programado se cierra antes de que se complete la tarea Purga del registro de auditoría, la tarea se detendrá automáticamente. Se reanudará cuando se abra la siguiente ventana de mantenimiento.
+En AEM 6.3, si la ventana de mantenimiento programado se cierra antes de que se complete la tarea Purga del registro de auditoría, la tarea se detiene automáticamente. Se reanudará cuando se abra la siguiente ventana de mantenimiento.
 
-AEM **Con la versión 6.5**, puede detener manualmente una tarea de purga del registro de auditoría en ejecución haciendo clic en el icono **Detener**. En la siguiente ejecución, la tarea se reanudará de forma segura.
+**Con AEM 6.5**, puede detener manualmente una tarea de purga del registro de auditoría en ejecución si hace clic en el icono **Detener**. En la siguiente ejecución, la tarea se reanudará de forma segura.
 
 >[!NOTE]
 >

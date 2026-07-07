@@ -1,5 +1,5 @@
 ---
-title: Prácticas recomendadas para las pruebas de rendimiento
+title: Prácticas recomendadas para pruebas de rendimiento
 description: Conozca las estrategias generales y las metodologías utilizadas para las pruebas de rendimiento, así como algunas de las herramientas disponibles para ayudar en el proceso.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
+source-wordcount: '1827'
+ht-degree: 2%
 
 ---
 
-# Prácticas recomendadas para las pruebas de rendimiento{#best-practices-for-performance-testing}
+# Prácticas recomendadas para pruebas de rendimiento{#best-practices-for-performance-testing}
 
 ## Introducción {#introduction}
 
@@ -85,8 +85,7 @@ Para obtener un análisis más completo de los registros de solicitud de un sist
 
 **Herramientas de PageSpeed**
 
-Las herramientas PageSpeed de Google ofrecen análisis de sitio para la adherencia a las prácticas recomendadas para el rendimiento de la página y un complemento que se puede instalar junto con Dispatcher en una instancia de Apache para lograr optimizaciones adicionales.
-Ver el [sitio web de herramientas de PageSpeed](https://developers.google.com/speed).
+Las herramientas PageSpeed de Google ofrecen análisis de sitio para la adherencia a las prácticas recomendadas para el rendimiento de la página y un complemento que se puede instalar junto con Dispatcher en una instancia de Apache para lograr optimizaciones adicionales.Ver el [sitio web de herramientas de PageSpeed](https://developers.google.com/speed).
 
 ## Entorno de creación {#author-environment}
 

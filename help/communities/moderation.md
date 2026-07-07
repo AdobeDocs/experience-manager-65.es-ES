@@ -12,16 +12,16 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2073'
 ht-degree: 2%
 
 ---
 
 # Consola de moderación {#moderation-console}
 
-En AEM Communities, la [moderación masiva del contenido de la comunidad](/help/communities/moderate-ugc.md) es posible desde los entornos Author y Publish por administradores y moderadores de la comunidad (miembros de la comunidad de confianza asignados como moderadores).
+En AEM Communities, la [moderación masiva del contenido de la comunidad](/help/communities/moderate-ugc.md) es posible desde los entornos de creación y publicación por parte de los administradores y moderadores de la comunidad (miembros de la comunidad de confianza asignados como moderadores).
 
-Los administradores y los moderadores de la comunidad también pueden realizar [moderación en contexto](/help/communities/in-context.md) en el entorno de Publish.
+Los administradores y los moderadores de la comunidad también pueden realizar [moderación en contexto](/help/communities/in-context.md) en el entorno de publicación.
 
 Una característica de todos los [sitios de la comunidad](/help/communities/sites-console.md) es un elemento de menú `Administration` disponible para los usuarios que inicien sesión con privilegios administrativos. El vínculo `Administration` proporciona acceso a la consola de moderación.
 
@@ -38,7 +38,7 @@ La consola Moderación admite:
 
 Solamente cuando se haya iniciado sesión como administrador o un miembro con ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`, se podrán realizar las tareas de moderación.
 
-## Acceso al entorno de Publish {#publish-environment-access}
+## Acceso al entorno de publicación {#publish-environment-access}
 
 El acceso a la consola de moderación desde un sitio publicado de la comunidad se realiza mediante un vínculo de administración que aparece cuando se inicia sesión con un moderador de la comunidad.
 
@@ -58,13 +58,13 @@ Solo cuando se inicia sesión como administrador o como miembro con [permisos de
 
 >[!NOTE]
 >
->UGC del entorno de Publish solo es visible en Autor si el SRP elegido implementa un almacén común. Por ejemplo, de forma predeterminada, el almacenamiento es JSRP, que no es un almacén común para Author y Publish. Ver [Almacenamiento de contenido de la comunidad](/help/communities/working-with-srp.md).
+>UGC desde el entorno de publicación solo es visible en Autor si el SRP elegido implementa un almacén común. Por ejemplo, de forma predeterminada, el almacenamiento es JSRP, que no es un almacén común para Author y Publish. Ver [Almacenamiento de contenido de la comunidad](/help/communities/working-with-srp.md).
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## IU de consola de moderación {#moderation-console-ui}
 
-Dejando a un lado el carril izquierdo de navegación (que aparece en el autor, pero no en Publish), la interfaz de usuario de la moderación tiene las siguientes áreas principales:
+Dejando a un lado el carril izquierdo de navegación (que aparece en Autor, pero no en Publicación), la interfaz de usuario de la moderación tiene las siguientes áreas principales:
 
 * **[Barra de navegación superior](#top-navigation-bar)**
 * **[Barra de herramientas](#toolbar)**
@@ -150,7 +150,7 @@ El sitio limita el UGC al que se hace referencia mostrado a las publicaciones de
 >
 >Cuando un administrador accede a la consola de moderación masiva, se muestran todas las referencias a UGC, incluidos los sitios no creados con el [asistente para la creación de sitios](/help/communities/sites-console.md), como los ejemplos de Geometrixx.
 >
->Cuando un miembro de la comunidad de confianza accede a la consola de moderación en masa en Publish, solo se muestran las referencias a UGC creados para sitios de la comunidad que el miembro está autorizado a moderar. Además, puede filtrarse con el filtro del sitio.
+>Cuando un miembro de la comunidad de confianza accede a la consola de moderación en masa al publicar, solo se muestran las referencias a UGC creadas para sitios de la comunidad que el miembro está autorizado a moderar. Además, puede filtrarse con el filtro del sitio.
 
 #### Tipo de contenido {#content-type}
 
@@ -227,7 +227,7 @@ Publicado en los últimos límites que el UGC al que se hace referencia muestra 
 
 #### Opinión {#sentiment}
 
-[Opinión](/help/communities/moderate-ugc.md#sentiment) limita el UGC al que se hace referencia que se muestra a las publicaciones con un valor de opinión que sea positivo, negativo o neutro.
+[Opinión](/help/communities/moderate-ugc.md#sentiment) limita el UGC al que se hace referencia que se muestra a las publicaciones con un valor de opinión positivo, negativo o neutro.
 
 ![opinión](assets/sentiment.png)
 
@@ -241,11 +241,11 @@ El [proyecto de ejemplo](https://github.com/Adobe-Marketing-Cloud/aem-communitie
 
 Para instalar el ejemplo para el filtro Etiquetas:
 
-1. AEM AEM Abra el Administrador de paquetes en la instancia de autor de (`https://[aem-author]:4502/crx/packmgr/index.jsp`) y en la instancia de Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`) de la de paquetes.
+1. Abra el Administrador de paquetes en la instancia de autor de AEM (`https://[aem-author]:4502/crx/packmgr/index.jsp`) y en la instancia de publicación de AEM (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
 1. Genere el paquete `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` desde el código de GitHub e instale y habilite el mismo.
-1. AEM AEM Abra la consola de paquetes en la instancia de autor de la (`https://[aem-author]:4502/system/console/bundles`) y en la instancia de Publish (`https://[aem-publish]:4503/system/console/bundles`).
+1. Abra la consola de paquetes en la instancia de autor de AEM (`https://[aem-author]:4502/system/console/bundles`) y en la instancia de publicación de AEM (`https://[aem-publish]:4503/system/console/bundles`).
 1. Genere el paquete (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) desde GitHub e instale y habilite el mismo.
-1. AEM AEM Vaya al nodo **/apps/social/moderation/facets** en la instancia de autor (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) y de Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) de la.
+1. Vaya al nodo **/apps/social/moderation/facets** en la instancia de autor de AEM (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) y publicación de AEM (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
 1. Agregue un usuario técnico **communities-utility-reader** con `jcr:read` permisos.
 
 Para exponer los filtros personalizados en sitios de la comunidad existentes:

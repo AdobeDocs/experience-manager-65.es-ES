@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '4177'
+source-wordcount: '4204'
 ht-degree: 40%
 
 ---
@@ -88,7 +88,7 @@ Puede crear una Live Copy de cualquier página:
 
 * Páginas a las que hace referencia una [configuración de modelo](#creating-a-blueprint-configuration).
 * Y páginas que no tienen conexión con una configuración.
-* AEM también admite la creación de una live copy dentro de las páginas de otra live copy.
+* AEM también admite la creación de una Live Copy dentro de las páginas de otra Live Copy.
 
 La única diferencia es que la disponibilidad del comando **Despliegue** en las páginas de origen/modelo depende de si una configuración de modelo hace referencia al origen:
 
@@ -233,7 +233,7 @@ Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en
 
 >[!NOTE]
 >
->AEM El procesamiento asincrónico de despliegues requiere la versión 6.5.3.0 o superior de la. En versiones anteriores, las páginas se procesaban de forma inmediata y sincrónica.
+>El procesamiento asincrónico de despliegue requiere AEM 6.5.3.0 o superior. En versiones anteriores, las páginas se procesaban de forma inmediata y sincrónica.
 
 #### Despliegue un modelo desde el carril de referencia {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -259,7 +259,7 @@ Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en
 
 >[!NOTE]
 >
->AEM El procesamiento asincrónico de despliegues requiere la versión 6.5.3.0 o superior de la. En versiones anteriores, las páginas se procesaban de forma inmediata y sincrónica a menos que se marcara la opción **Despliegue en segundo plano**.
+>El procesamiento asincrónico de despliegue requiere AEM 6.5.3.0 o superior. En versiones anteriores, las páginas se procesaban de forma inmediata y sincrónica a menos que se marcara la opción **Despliegue en segundo plano**.
 
 #### Despliegue de un modelo desde la información general de Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -279,7 +279,7 @@ Los despliegues se procesan como trabajos asincrónicos y se pueden comprobar en
 
 >[!NOTE]
 >
->AEM El procesamiento asincrónico de despliegues requiere la versión 6.5.3.0 o superior de la. En versiones anteriores, las páginas se procesaban de forma inmediata y sincrónica.
+>El procesamiento asincrónico de despliegue requiere AEM 6.5.3.0 o superior. En versiones anteriores, las páginas se procesaban de forma inmediata y sincrónica.
 
 ### Creación de una Live Copy {#synchronizing-a-live-copy}
 

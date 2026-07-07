@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ El panel de AEM Mobile le permite crear, crear e implementar su aplicación móv
 
 Para crear su aplicación de AEM Mobile, consulte la página [Crear aplicaciones móviles](/help/mobile/building-app-mobile-phonegap.md).
 
-AEM AEM Para configurar su entorno y comenzar, consulte [Administración de la para usar PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
+Para configurar su entorno y empezar, consulte [Administración de AEM para usar AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
 ## El catálogo de aplicaciones de AEM Mobile {#the-aem-mobile-apps-catalog}
 
-El [catálogo de aplicaciones de AEM Mobile AEM](http://localhost:4502/aem/apps.html/content/phonegap) muestra toda la aplicación móvil administrada en la aplicación de forma que se pueda administrar de forma independiente.
+El [catálogo de aplicaciones de AEM Mobile](http://localhost:4502/aem/apps.html/content/phonegap) muestra toda la aplicación móvil administrada en AEM.
 
 Piense en este catálogo como en la &quot;página de aterrizaje&quot; de AEM Mobile, donde los administradores pueden iniciar una nueva aplicación de AEM Mobile creando a partir de una plantilla o cargando una aplicación existente ya iniciada por un desarrollador móvil.
 
@@ -66,7 +66,7 @@ El contenido se puede crear, actualizar y eliminar en AEM Mobile de la misma man
 
 Una vez que haya añadido o modificado el contenido a través del mosaico Administrar contenido de la página, puede insertar esos cambios en los clientes con una actualización de la versión de contenido.
 
-AEM AEM El paquete de contenido permite al autor de la aplicación de administrar el contenido de la página en los entornos de y, hacer que el equipo de desarrollo cambie la aplicación PhoneGap Shell (es decir, el marco de la aplicación o la infraestructura) y luego enviar esos cambios a los clientes de forma rápida y sin necesidad de inscribir a un desarrollador para que vuelva a enviarlos a las distintas tiendas para su distribución.
+El paquete de contenido permite al autor de la aplicación de AEM administrar el contenido de la página en AEM y, hacer que el equipo de desarrollo cambie la aplicación PhoneGap Shell (es decir, el marco de la aplicación o la infraestructura) y luego enviar esos cambios a los clientes rápidamente y sin necesidad de inscribir a un desarrollador para que vuelva a enviarlos a las distintas tiendas para su distribución.
 
 El paquete de contenido crea un archivo ZIP, considerado un paquete de liberación de contenido, para cada actualización. Estos paquetes contienen recursos html y páginas html que se generan al procesar la aplicación y son lo suficientemente inteligentes como para empaquetar solo aquellos archivos que se han modificado desde la última actualización.
 
@@ -88,9 +88,9 @@ Este icono representa un paquete de versión de contenido para el shell de la ap
 
 Estos iconos representan un paquete de publicación de contenido para el contenido de la aplicación
 
-### El mosaico del PhoneGap Build {#the-phonegap-build-tile}
+### Mosaico de PhoneGap Build {#the-phonegap-build-tile}
 
-El **Mosaico de PhoneGap Build** se conecta con `https://build.phonegap.com` para generar y alojar compilaciones remotas. Una vez creada, la compilación está disponible como descarga o directamente en el dispositivo mediante un código QR.
+El **mosaico de PhoneGap Build** se conecta con `https://build.phonegap.com` para generar y alojar compilaciones remotas. Una vez creada, la compilación está disponible como descarga o directamente en el dispositivo mediante un código QR.
 
 También puede descargar el origen del dispositivo para compilarlo localmente mediante la CLI de PhoneGap (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
@@ -102,7 +102,7 @@ También puede descargar el origen del dispositivo para compilarlo localmente me
 >
 >El mosaico Métricas solo se muestra después de configurar el servicio en la nube.
 >
->Consulte [Configuración del Cloud Service de Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md) para obtener más información.
+>Consulte [Configuración de la Cloud Service de Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md) para obtener más información.
 
 AEM Mobile se integra con Adobe Analytics mediante [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=es) (AMS).
 
@@ -124,5 +124,5 @@ Puede explorar en profundidad el panel de contenido de la entidad administrada h
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [Desarrollo para Adobe PhoneGap AEM Enterprise con](/help/mobile/developing-in-phonegap.md)
-* [Administración de contenido para Adobe PhoneGap AEM Enterprise con el servicio de administración de](/help/mobile/administer-phonegap.md)
+* [Desarrollo para Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
+* [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)

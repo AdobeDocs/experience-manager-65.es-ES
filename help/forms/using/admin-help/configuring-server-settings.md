@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ La página Configuración del servidor proporciona acceso a varias configuracion
 
 ## Configuración de correo electrónico {#configuring-email-settings}
 
-Puede especificar una cuenta de correo electrónico para el servidor de Forms AEM, a través de la cual enviará mensajes de correo electrónico a los usuarios y administradores de formularios de la aplicación de correo electrónico de la aplicación de correo electrónico a los usuarios y administradores de la aplicación. Estos mensajes de correo electrónico se utilizan para notificar y recordar a los usuarios las tareas que deben completar, notificar al usuario las tareas que han alcanzado un plazo y notificar al administrador de cualquier error de proceso que se produzca.
+Puede especificar una cuenta de correo electrónico para el servidor de Forms, a través de la cual enviará mensajes de correo electrónico a los usuarios y administradores de formularios AEM. Estos mensajes de correo electrónico se utilizan para notificar y recordar a los usuarios las tareas que deben completar, notificar al usuario las tareas que han alcanzado un plazo y notificar al administrador de cualquier error de proceso que se produzca.
 
-AEM Para habilitar el envío de mensajes de correo electrónico entre los formularios de y los usuarios, configure las opciones del correo electrónico saliente en la página Configuración de correo electrónico. El correo electrónico saliente debe utilizar un servidor SMTP.
+Para habilitar el envío de mensajes de correo electrónico entre los formularios de AEM y los usuarios, configure las opciones del correo electrónico saliente en la página Configuración de correo electrónico. El correo electrónico saliente debe utilizar un servidor SMTP.
 
-AEM Para permitir que los formularios de reciban y administren mensajes de correo electrónico entrantes de los usuarios, cree un extremo de correo electrónico para el servicio Tarea completa. (Consulte [Crear un extremo de correo electrónico para el servicio Tarea completa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
+Para permitir que los formularios AEM reciban y administren mensajes de correo electrónico entrantes de los usuarios, cree un extremo de correo electrónico para el servicio Tarea completa. (Consulte [Crear un extremo de correo electrónico para el servicio Tarea completa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
 
 Si los procesos están diseñados e implementados sin requerir correo electrónico, no tiene que configurar ninguna de las opciones de la página Configuración de correo electrónico.
 
@@ -60,9 +60,9 @@ Si los procesos están diseñados e implementados sin requerir correo electróni
 
 >[!NOTE]
 >
->Flex Workspace AEM ya no se utiliza para la versión de formularios en la que se puede utilizar el formulario.
+>Flex Workspace ya no se utiliza para la versión de formularios AEM.
 
-AEM AEM De forma predeterminada, los correos electrónicos enviados por los formularios de la contienen vínculos a (Obsoleto para formularios de la en JEE) Flex Workspace. AEM Puede configurar formularios para enviar correos electrónicos con vínculos a AEM Forms Workspace. Para obtener más información acerca de las ventajas de AEM Forms Workspace AEM a través de (obsoleto para formularios en JEE) Flex Workspace, consulte [este](/help/forms/using/features-html-workspace-available-flex.md) artículo.
+De forma predeterminada, los correos electrónicos enviados por los formularios de AEM contienen vínculos a (obsoleto para formularios de AEM en JEE) Flex Workspace. Puede configurar formularios AEM para enviar correos electrónicos con vínculos a AEM Forms Workspace. Para obtener más información sobre las ventajas de AEM Forms Workspace sobre (obsoleto para formularios AEM en JEE) Flex Workspace, consulte [este](/help/forms/using/features-html-workspace-available-flex.md) artículo.
 
 1. En la consola de administración, haga clic en Inicio > Servicios > Forms workflow > Configuración del servidor > Notificaciones de tareas.
 1. Abra la plantilla de asignación de tareas.
@@ -86,7 +86,7 @@ Para generar notificaciones por correo electrónico para un grupo, especifique u
 
 >[!NOTE]
 >
->Flex AEM Workspace está en desuso para la versión de formularios en la que se ha realizado un.
+>Flex Workspace está en desuso para la versión de formularios de AEM.
 
 ### Configurar recordatorios para usuarios o grupos {#configure-reminders-for-users-or-groups}
 
@@ -129,7 +129,7 @@ Puede enviar notificaciones de fecha límite a usuarios y grupos cuando haya pas
 1. En la lista Codificación de correo electrónico, seleccione el formato de codificación que se utilizará para el mensaje de correo electrónico. El valor predeterminado es UTF-8, que utilizarán la mayoría de los usuarios fuera de Japón. Los usuarios de Japón pueden seleccionar ISO2022-JP.
 1. Haga clic en Guardar.
 
-### Ocultar la etiqueta de DELETE DO NOT para todos los correos electrónicos {#hide-the-do-not-delete-tag-for-all-emails}
+### Ocultar la etiqueta DO NOT DELETE para todos los correos electrónicos {#hide-the-do-not-delete-tag-for-all-emails}
 
 Puede configurar el correo electrónico para que se oculte en la etiqueta de seguimiento DO NOT DELETE en todos los correos electrónicos enviados en un proceso centrado en el ser humano.
 
@@ -182,7 +182,7 @@ Las páginas Notificaciones de tareas y Notificaciones del administrador proporc
 
 ### Editor de texto enriquecido {#rich-text-editor}
 
-El área Plantilla de notificación es un editor de texto enriquecido que permite generar un HTML para los mensajes de notificación por correo electrónico. Proporciona opciones de formato de fuente y párrafo, que se encuentran debajo del cuadro Plantilla de notificación. Las opciones incluyen tipo de fuente, tamaño, estilo y color, y alineación de párrafo y viñetas.
+El área Plantilla de notificación es un editor de texto enriquecido que permite generar HTML para los mensajes de notificación por correo electrónico. Proporciona opciones de formato de fuente y párrafo, que se encuentran debajo del cuadro Plantilla de notificación. Las opciones incluyen tipo de fuente, tamaño, estilo y color, y alineación de párrafo y viñetas.
 
 ### Generación de URL {#url-generation}
 
@@ -198,7 +198,7 @@ Solo para las notificaciones de tareas, el flujo de trabajo de Forms incluye dos
 
 >[!NOTE]
 >
->Flex AEM Workspace está en desuso para la versión de formularios en la que se ha realizado un.
+>Flex Workspace está en desuso para la versión de formularios de AEM.
 
 Si la solución se implementa en un entorno en clúster, reemplace `@@notification-host@@` por la dirección del clúster.
 
@@ -206,7 +206,7 @@ Si la solución se implementa en un entorno en clúster, reemplace `@@notificati
 
 **JBoss:** 8080
 
-**Servidor WebLogic de Oracle:** 7001
+**Servidor Oracle WebLogic:** 7001
 
 **IBM WebSphere:** 9080
 
@@ -226,7 +226,7 @@ Para avisos, asignaciones de tareas y fechas límites para usuarios y grupos, pu
 
 **instrucciones** El contenido de la propiedad Instrucciones de tarea, tal como se define en el paso de usuario del proceso en Workbench.
 
-AEM **notification-host** El nombre de host del servidor de aplicaciones de formularios de la
+**notification-host** El nombre de host del servidor de aplicaciones de AEM Forms
 
 **process-name**: el nombre del proceso.
 
@@ -250,7 +250,7 @@ Para las ramas estancadas, puede utilizar las siguientes variables en los cuadro
 
 **process-id**: el identificador de la instancia de proceso.
 
-AEM **notification-host** El nombre de host del servidor de aplicaciones de formularios de la
+**notification-host** El nombre de host del servidor de aplicaciones de AEM Forms
 
 Para las operaciones estancadas, puede utilizar las siguientes variables en los cuadros Asunto y Plantilla de notificación:
 
@@ -260,7 +260,7 @@ Para las operaciones estancadas, puede utilizar las siguientes variables en los 
 
 **process-id**: el identificador de la instancia de proceso.
 
-AEM **notification-host** El nombre de host del servidor de aplicaciones de formularios de la
+**notification-host** El nombre de host del servidor de aplicaciones de AEM Forms
 
 ### Uso de una variable en el cuadro Asunto {#using-a-variable-in-the-subject-box}
 

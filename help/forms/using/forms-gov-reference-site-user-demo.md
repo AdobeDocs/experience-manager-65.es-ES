@@ -9,8 +9,8 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2478'
-ht-degree: 58%
+source-wordcount: '2522'
+ht-degree: 57%
 
 ---
 
@@ -81,7 +81,7 @@ También se incluyen los siguientes grupos:
 1. **Vínculos**: En la parte superior del menú principal del sitio de We.Gov.
 1. **Instrucciones para el usuario**: un conjunto de pasos numéricos a seguir cuando se navega por la historia del usuario.
 1. **Portal de Forms**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*.
-1. **Vista móvil**:El usuario de We.Gov debe replicar una vista móvil con un explorador cuyo tamaño se ha cambiado.
+1. **Vista móvil**:We.Gov del usuario para replicar una vista móvil con un explorador cuyo tamaño se ha cambiado.
 1. **Vista de escritorio**: el usuario de We.Gov para ver la demostración en un ordenador portátil o de escritorio.
 1. **Formulario de prefiltrado**: un formulario de la página de inicio del sitio de We.Gov.
 1. **Formulario adaptable**: el formulario de solicitud de la demostración de We.Gov.
@@ -100,7 +100,7 @@ También se incluyen los siguientes grupos:
 
 ## Conversión de formularios automatizada (Camila) {#automated-forms-conversion}
 
-**Esta sección**: Camila, la directora de CX, tiene un formulario basado en PDF existente que ha sido utilizado como parte de un proceso basado en el papel. Como parte del esfuerzo de modernización, Camila desea utilizar este formulario PDF para crear automáticamente un Forms adaptable moderno.
+**Esta sección**: Camila, la directora de CX, tiene un formulario basado en PDF existente que ha sido utilizado como parte de un proceso basado en el papel. Como parte del esfuerzo de modernización, Camila desea utilizar este formulario de PDF para crear automáticamente un Forms adaptable moderno.
 
 ### Conversión de formularios automatizada - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
@@ -227,7 +227,7 @@ Debe revisar algunos documentos en casa antes de poder completar la solicitud de
    1. **Casado**: mostrar el panel Cónyuge a cargo.
    1. **Divorciado**: mostrar el panel Familiares.
    1. **Viudo**: mostrar el panel Familiares.
-   1. **¿Tiene hijos?**: botón de selección (Sí/No) para mostrar el panel Hijos a cargo.
+   1. **¿Tiene hijos?**: botón de opción (Sí/No) para mostrar el panel Hijos a cargo.
 
       1. Botón (Agregar/quitar) para agregar/quitar varios paneles Hijos a cargo.
 
@@ -254,7 +254,7 @@ Debe revisar algunos documentos en casa antes de poder completar la solicitud de
 
    **Instrucciones para el usuario:**
 
-1. Haga clic con el botón derecho en Círculo CTA para pasar a la siguiente sección.
+1. Haga clic con el botón derecho en Circle CTA para pasar a la siguiente sección.
 
    ![CTA en forma de círculo de la derecha](/help/forms/using/assets/right_circle_cta_new.png)
 
@@ -266,7 +266,7 @@ Debe revisar algunos documentos en casa antes de poder completar la solicitud de
    >
    >Cuando Aya rellena el campo del número de teléfono, debe hacerlo con un número continuo de 11 dígitos sin rayas, espacios ni guiones.
 
-   Después de enviar, Aya recibe una página de agradecimiento. Opcionalmente, Aya también recibe un correo electrónico que puede abrir para firmar electrónicamente el documento de registro con Adobe Sign.
+   Después de enviar, Aya recibe una página de agradecimiento. De forma opcional, Aya también recibe un correo electrónico que puede abrir para firmar electrónicamente el documento de registro con Adobe Sign.
 
 ### Opcional: Adobe Sign (Aya) {#adobe-sign}
 
@@ -290,7 +290,7 @@ Debe revisar algunos documentos en casa antes de poder completar la solicitud de
 
 ![Funcionario público George](/help/forms/using/assets/george_lang-1.png)
 
-**Esta sección:** George es un analista empresarial de la agencia pública en la que Aya ha solicitado la prestación. George tiene un solo panel desde el que puede ver todas las solicitudes de prestaciones que se le han asignado para su revisión.
+**Esta sección:** George es un analista empresarial de la agencia pública en la que Aya ha solicitado la prestación. George tiene un solo panel de control desde el que puede ver todas las solicitudes de prestaciones que se le han asignado para su revisión.
 
 ### Bandeja de entrada de AEM (George) {#george-user-story-aem-inbox}
 
@@ -316,7 +316,7 @@ Debe revisar algunos documentos en casa antes de poder completar la solicitud de
 
    ![Revisión de solicitudes de prestaciones sanitarias](/help/forms/using/assets/health_benefits.png)
 
-### AEM Opcional: bandeja de entrada de la ® y MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
+### Opcional: Bandeja de entrada de AEM y MS® Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
 Gracias a las integraciones de datos y a los flujos de trabajo automatizados, la solicitud de Aya aparece junto con un registro CRM que se ha generado automáticamente al enviar los datos.
 
@@ -351,7 +351,7 @@ George aprueba la solicitud de Aya, y gracias a un flujo de trabajo automatizado
 
 **Esta sección:** Camila, la directora de CX, configura una llamada telefónica de bienvenida con Aya para explicarle cómo usar los servicios gubernamentales para los que está aprobada.
 
-### AEM (Opcional) Bandeja de entrada de ® y MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
+### (Opcional) Bandeja de entrada de AEM y MS® Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **Instrucciones para el usuario:**
 
@@ -387,7 +387,7 @@ George aprueba la solicitud de Aya, y gracias a un flujo de trabajo automatizado
    1. Agregue los datos de la llamada telefónica.
    1. Guarde su trabajo y cierre la ventana.
 
-1. AEM De vuelta a la página de inicio, navega a la esquina superior izquierda y haz clic en **Enviar** para enviar la solicitud.
+1. Cuando vuelva a AEM, vaya a la esquina superior izquierda y haga clic en **Enviar** para enviar la solicitud.
 1. En el modal, puede dejar un mensaje.
 1. Haga clic en Listo.
 

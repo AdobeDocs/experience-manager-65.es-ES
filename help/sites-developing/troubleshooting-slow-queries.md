@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2302'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Clasificaciones de consulta lenta {#slow-query-classifications}
 
-AEM Existen tres clasificaciones principales de consultas lentas en la, enumeradas por gravedad:
+Existen tres clasificaciones principales de consultas lentas en AEM, enumeradas por gravedad:
 
 1. **Consultas sin índice**
 
@@ -42,7 +42,7 @@ Dado que cada resultado potencial debe inspeccionarse, el coste para determinar 
 
 Añadir restricciones de consulta e índices de ajuste permite almacenar los datos del índice en un formato optimizado, lo que permite una recuperación rápida de los resultados y reduce o elimina la necesidad de realizar una inspección lineal de los conjuntos de resultados potenciales.
 
-AEM De forma predeterminada, en la versión 6.3, cuando se alcanza un recorrido de 100 000, la consulta falla y genera una excepción. AEM AEM Este límite no existe de forma predeterminada en versiones de la versión de la aplicación anteriores a la 6.3, pero se puede establecer mediante la configuración OSGi de la configuración del motor de consultas de Apache Jackrabbit y el bean JMX de QueryEngineSettings (propiedad LimitReads).
+En AEM 6.3, de forma predeterminada, cuando se alcanza un recorrido de 100 000, la consulta falla y genera una excepción. Este límite no existe de forma predeterminada en las versiones de AEM anteriores a AEM 6.3, pero se puede establecer mediante la configuración OSGi de Apache Jackrabbit Query Engine y el bean JMX de QueryEngineSettings (propiedad LimitReads).
 
 ### Detección de consultas sin índice {#detecting-index-less-queries}
 
@@ -52,14 +52,14 @@ Explique **todas** las consultas y asegúrese de que sus planes de consulta no c
 
 * **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
-#### Post-Implementación {#post-deployment}
+#### Posterior a la implementación {#post-deployment}
 
 * Supervise `error.log` para consultas de recorrido sin índice:
 
    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
    * Este mensaje solo se registra si no hay ningún índice disponible y si la consulta atraviesa potencialmente muchos nodos. Los mensajes no se registran si hay un índice disponible, pero la cantidad a recorrer es pequeña y, por lo tanto, rápida.
 
-* AEM Visite la consola de operaciones de [Rendimiento de la consulta](/help/sites-administering/operations-dashboard.md#query-performance) de la y [Explicar](/help/sites-administering/operations-dashboard.md#explain-query) consultas lentas que buscan explicaciones de consultas de recorrido o sin índice.
+* Visite la consola de operaciones [Rendimiento de la consulta](/help/sites-administering/operations-dashboard.md#query-performance) de AEM y [Explicar](/help/sites-administering/operations-dashboard.md#explain-query) consultas lentas que buscan explicaciones de consultas de recorrido o sin índice.
 
 ### Detección de consultas mal restringidas {#detecting-poorly-restricted-queries}
 
@@ -72,9 +72,9 @@ Explique todas las consultas y asegúrese de que se resuelven en un índice ajus
 
 #### Por ejemplo, el valor predeterminado `cqPageLucene` no tiene una regla de índice para `jcr:content/cq:tags` {#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}
 
-Antes de añadir la regla de índice cq:tags
+Antes de agregar la regla de índice cq:tags
 
-* **cq:etiquetas Regla de índice**
+* **cq:tags Regla de índice**
 
    * No existe de forma predeterminada
 
@@ -94,7 +94,7 @@ Esta consulta se resuelve en el índice `cqPageLucene`, pero como no existe ning
 
 Después de agregar la regla de índice cq:tags
 
-* **cq:etiquetas Regla de índice**
+* **cq:tags Regla de índice**
 
   ```js
   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
@@ -120,19 +120,19 @@ Cuando se realiza una consulta con la restricción `jcr:content/cq:tags`, el ín
 
 Más restricciones de consulta reducen los conjuntos de resultados aptos y optimizan aún más la optimización de la consulta.
 
-Del mismo modo, sin una regla de índice adicional para la propiedad `cq:tags`, incluso una consulta de texto completo con una restricción de `cq:tags` no funcionaría correctamente, ya que los resultados del índice devolverían todas las coincidencias de texto completo. La restricción de cq:tags se filtraría después de ella.
+Del mismo modo, sin una regla de índice adicional para la propiedad `cq:tags`, incluso una consulta de texto completo con una restricción de `cq:tags` no funcionaría correctamente, ya que los resultados del índice devolverían todas las coincidencias de texto completo. La restricción en cq:tags se filtraría después de ella.
 
 Otra causa del filtrado posterior a los índices son las Listas de control de acceso, que a menudo se pierden durante el desarrollo. Intente asegurarse de que la consulta no devuelva rutas que puedan ser inaccesibles para el usuario. Esto se puede hacer mediante una mejor estructura de contenido y proporcionando restricciones de ruta relevantes en la consulta.
 
 Una forma útil de identificar si el índice Lucene devuelve muchos resultados para devolver un pequeño subconjunto como resultado de la consulta es habilitar los registros de depuración para `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Al hacerlo, puede ver cuántos documentos se cargan desde el índice. El número de resultados posibles frente al número de documentos cargados no debe ser desproporcionado. Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md).
 
-#### Post-Implementación {#post-deployment-1}
+#### Posterior a la implementación {#post-deployment-1}
 
 * Supervisar `error.log` para consultas de recorrido:
 
    * `*WARN* org.apache.jackrabbit.oak.spi.query.Cursors$TraversingCursor Traversed ### nodes ... consider creating an index or changing the query`
 
-* AEM Visite la consola de operaciones de [Rendimiento de la consulta](/help/sites-administering/operations-dashboard.md#query-performance) de la y [Explicar](/help/sites-administering/operations-dashboard.md#explain-query) consultas lentas que buscan planes de consulta que no resuelven las restricciones de propiedad de consulta para indizar las reglas de propiedad.
+* Visite la consola de operaciones [Rendimiento de la consulta](/help/sites-administering/operations-dashboard.md#query-performance) de AEM y [Explicar](/help/sites-administering/operations-dashboard.md#explain-query) consultas lentas en busca de planes de consulta que no resuelvan las restricciones de propiedad de consulta para indizar las reglas de propiedad.
 
 ### Detección de consultas de conjuntos de resultados grandes {#detecting-large-result-set-queries}
 
@@ -142,7 +142,7 @@ Establezca umbrales bajos para oak.queryLimitInMemory (por ejemplo, 10000) y oak
 
 La configuración de umbrales bajos ayuda a evitar consultas que consuman muchos recursos (es decir, que no estén respaldadas por ningún índice o que estén respaldadas por un índice que cubra menos). Por ejemplo, una consulta que lee un millón de nodos produciría una gran cantidad de E/S y afectaría negativamente al rendimiento general de la aplicación. Por lo tanto, cualquier consulta que falle debido a límites superiores debe analizarse y optimizarse.
 
-#### Post-Implementación {#post-deployment-2}
+#### Posterior a la implementación {#post-deployment-2}
 
 * Monitorice los registros para consultas que activen un recorrido de nodos grande o un gran consumo de memoria de montón: &quot;
 
@@ -154,18 +154,18 @@ La configuración de umbrales bajos ayuda a evitar consultas que consuman muchos
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * Optimice la consulta para reducir el consumo de memoria.
 
-AEM AEM Para las versiones 6.0 - 6.2, puede ajustar el umbral para el recorrido de nodos a través de los parámetros JVM en el script de inicio de la para evitar que las consultas grandes se sobrecarguen en el entorno. Los valores recomendados son:
+En las versiones de AEM 6.0 a 6.2, puede ajustar el umbral para el recorrido de nodos mediante parámetros JVM en el script de inicio de AEM para evitar que las consultas grandes se sobrecarguen en el entorno. Los valores recomendados son:
 
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-AEM En 6.3, los dos parámetros anteriores están preconfigurados de forma predeterminada y se pueden modificar mediante OSGi QueryEngineSettings.
+En AEM 6.3, los dos parámetros anteriores están preconfigurados de forma predeterminada y se pueden modificar mediante OSGi QueryEngineSettings.
 
 Más información disponible en: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
 ## Ajuste del rendimiento de consultas {#query-performance-tuning}
 
-AEM El lema de la optimización del rendimiento de las consultas en la es:
+El lema de la optimización del rendimiento de las consultas en AEM es:
 
 **&quot;Cuantas más restricciones, mejor.&quot;**
 
@@ -173,13 +173,13 @@ A continuación se describen los ajustes recomendados para garantizar el rendimi
 
 ### Ajuste de la instrucción de consulta {#adjusting-the-query-statement}
 
-AEM Compatibilidad con los siguientes idiomas de consulta:
+AEM admite los siguientes lenguajes de consulta:
 
 * Query Builder
 * JCR-SQL2
 * XPath
 
-AEM El siguiente ejemplo utiliza Query Builder porque es el lenguaje de consulta más común utilizado por los desarrolladores de, aunque los mismos principios se aplican a JCR-SQL2 y XPath.
+El siguiente ejemplo utiliza Query Builder porque es el lenguaje de consulta más utilizado por los desarrolladores de AEM; sin embargo, los mismos principios se aplican a JCR-SQL2 y XPath.
 
 1. Añada una restricción nodetype para que la consulta se resuelva en un índice de propiedades de Lucene existente.
 
@@ -198,9 +198,9 @@ AEM El siguiente ejemplo utiliza Query Builder porque es el lenguaje de consulta
   property.value=article-page
   ```
 
-  AEM AEM Las consultas que carecen de una restricción nodetype obligan a los usuarios a asumir el tipo de nodo `nt:base`, del que todos los nodos de son un subtipo, lo que, en la práctica, no da como resultado ninguna restricción nodetype.
+  Las consultas que carecen de una restricción de tipo de nodo obligan a AEM a asumir el tipo de nodo `nt:base`, del que todos los nodos de AEM son un subtipo, lo que en la práctica no da como resultado ninguna restricción de tipo de nodo.
 
-  AEM AEM Al establecer `type=cq:Page`, se restringe esta consulta solo a `cq:Page` nodos y se resuelve la consulta para que se ejecute en cqPageLucene, lo que limita los resultados a un subconjunto de nodos (solo `cq:Page` nodos) en la.
+  Al establecer `type=cq:Page`, se restringe esta consulta solo a `cq:Page` nodos y se resuelve en cqPageLucene de AEM, limitando los resultados a un subconjunto de nodos (solo `cq:Page` nodos) en AEM.
 
 1. Ajuste la restricción nodetype de la consulta para que la consulta se resuelva en un índice de propiedades de Lucene existente.
 
@@ -223,9 +223,9 @@ AEM El siguiente ejemplo utiliza Query Builder porque es el lenguaje de consulta
   `nt:hierarchyNode` es el tipo de nodo primario de `cq:Page`. Suponiendo que `jcr:content/contentType=article-page` solo se aplica a los nodos `cq:Page` mediante la aplicación personalizada de Adobe, esta consulta solo devuelve `cq:Page` nodos donde `jcr:content/contentType=article-page`. Sin embargo, este flujo es una restricción subóptima, ya que:
 
    * Otros nodos heredan de `nt:hierarchyNode` (por ejemplo, `dam:Asset`) y se agregan innecesariamente al conjunto de resultados potenciales.
-   * AEM No existe ningún índice proporcionado por el usuario para `nt:hierarchyNode`, sin embargo, ya que existe un índice proporcionado para `cq:Page`.
+   * No existe ningún índice proporcionado por AEM para `nt:hierarchyNode`, sin embargo, ya que hay un índice proporcionado para `cq:Page`.
 
-  AEM AEM Al establecer `type=cq:Page`, se restringe esta consulta solo a `cq:Page` nodos y se resuelve la consulta para que se ejecute en cqPageLucene, lo que limita los resultados a un subconjunto de nodos (solo nodos cq:Page) en la.
+  Al establecer `type=cq:Page`, se restringe esta consulta solo a `cq:Page` nodos y se resuelve en cqPageLucene de AEM, limitando los resultados a un subconjunto de nodos (solo nodos cq:Page) en AEM.
 
 1. O bien, ajuste las restricciones de propiedades para que la consulta se resuelva en un índice de propiedades existente.
 
@@ -313,7 +313,7 @@ AEM El siguiente ejemplo utiliza Query Builder porque es el lenguaje de consulta
      p.guessTotal=100
      ```
 
-   En los casos en los que la ejecución de consultas es rápida pero el número de resultados es grande, la página `guessTotal` es una optimización crítica para las consultas del Generador de consultas.
+   En los casos en los que la ejecución de la consulta es rápida pero el número de resultados es grande, p. `guessTotal` es una optimización crítica para las consultas del Generador de consultas.
 
    `p.guessTotal=100` indica a Query Builder que solo recopile los primeros 100 resultados. Y, para establecer un indicador booleano que indique si existe al menos un resultado más (pero no cuántos más, ya que el recuento de este número resulta en lentitud). Esta optimización sobresale en los casos de uso de paginación o carga infinita, donde solo se muestra un subconjunto de resultados de forma incremental.
 
@@ -364,8 +364,8 @@ AEM El siguiente ejemplo utiliza Query Builder porque es el lenguaje de consulta
 1. Combine manualmente la definición generada en el índice de propiedades de Lucene existente de forma aditiva. Tenga cuidado de no eliminar las configuraciones existentes, ya que pueden utilizarse para satisfacer otras consultas.
 
    1. Busque el índice de propiedades de Lucene existente que cubre cq:Page (mediante el Administrador de índices). En este caso, `/oak:index/cqPageLucene`.
-   1. Identifique el delta de configuración entre la definición de índice optimizada (Paso #4) y el índice existente (/oak:index/cqPageLucene), y agregue las configuraciones que faltan del índice optimizado a la definición de índice existente.
-   1. Por cada Prácticas recomendadas de reindexación de AEM, se debe realizar una actualización o reindexación en función de si el contenido existente podría verse afectado por este cambio de configuración de índice.
+   1. Identifique la diferencia de configuración entre la definición de índice optimizada (Paso #4) y el índice existente (/oak:index/cqPageLucene), y agregue las configuraciones que faltan del índice optimizado a la definición de índice existente.
+   1. Según las Prácticas recomendadas de reindexación de AEM, se debe realizar una actualización o reindexar en orden, en función de si el contenido existente podría verse afectado por este cambio de configuración de índice.
 
 ## Crear un nuevo índice {#create-a-new-index}
 
@@ -405,43 +405,43 @@ AEM El siguiente ejemplo utiliza Query Builder porque es el lenguaje de consulta
 
 1. Implemente la definición de índice de propiedades de Lucene generada.
 
-   Agregue la definición XML proporcionada por el Generador de definiciones de índice de Oak AEM para el nuevo índice al proyecto de que administra las definiciones de índice de Oak (recuerde, trate las definiciones de índice de Oak como código, ya que el código depende de ellas).
+   Agregue la definición XML proporcionada por el Generador de definiciones de índice de Oak para el nuevo índice al proyecto de AEM que administra las definiciones de índice de Oak (recuerde, trate las definiciones de índice de Oak como código, ya que el código depende de ellas).
 
-   AEM Implemente y pruebe el nuevo índice siguiendo el ciclo de vida habitual de desarrollo de software de la aplicación, y compruebe que la consulta se resuelve en el índice y que la consulta es eficaz.
+   Implemente y pruebe el nuevo índice siguiendo el ciclo de vida habitual de desarrollo de software de AEM y compruebe que la consulta se resuelve en el índice y que la consulta es satisfactoria.
 
-   AEM En la implementación inicial de este índice, se rellena con los datos necesarios para que se rellene de manera correcta.
+   En la implementación inicial de este índice, AEM lo rellena con los datos necesarios.
 
 ## ¿Cuándo son correctas las consultas sin índice y las consultas de recorrido? {#when-index-less-and-traversal-queries-are-ok}
 
-AEM Debido a la arquitectura de contenido flexible que se ha puesto en marcha, es difícil predecir y garantizar que las ventas cruzadas de estructuras de contenido no evolucionen con el tiempo hasta ser inaceptablemente grandes.
+Debido a la arquitectura de contenido flexible de AEM, es difícil predecir y garantizar que las ventas cruzadas de estructuras de contenido no evolucionen con el tiempo para ser inaceptablemente grandes.
 
 Por lo tanto, asegúrese de que los índices satisfacen las consultas, excepto si la combinación de la restricción de ruta de acceso y la restricción de tipo de nodo garantiza que se atraviesen **menos de 20 nodos.**
 
 ## Herramientas de desarrollo de consultas {#query-development-tools}
 
-### Adobe compatible {#adobe-supported}
+### Compatible con Adobe {#adobe-supported}
 
 * **Depurador de Query Builder**
 
    * Interfaz de usuario web para ejecutar consultas del Generador de consultas y generar la XPath de compatibilidad (para su uso en Explicar consulta o el Generador de definiciones de índice de Oak).
-   * AEM El día de la fecha: [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+   * En AEM en [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
 * **CRXDE Lite - Herramienta de consulta**
 
    * Interfaz de usuario web para ejecutar consultas XPath y JCR-SQL2.
-   * AEM El día en [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > Herramientas > Consulta...
+   * En AEM en [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > Herramientas > Consulta...
 
 * **[Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query)**
 
-   * AEM Panel de operaciones de la que proporciona una explicación detallada (plan de consulta, tiempo de consulta y número de resultados) para cualquier consulta XPATH o JCR-SQL2 determinada.
+   * Un panel Operaciones de AEM que proporciona una explicación detallada (plan de consulta, tiempo de consulta y número de resultados) para cualquier consulta XPATH o JCR-SQL2 determinada.
 
 * **[Consultas lentas/populares](/help/sites-administering/operations-dashboard.md#query-performance)**
 
-   * AEM AEM Un panel de operaciones de la lista de las operaciones lentas y populares recientes ejecutadas en el.
+   * Un panel Operaciones de AEM que enumera las consultas lentas y populares recientes ejecutadas en AEM.
 
 * **[Administrador de índices](/help/sites-administering/operations-dashboard.md#the-index-manager)**
 
-   * AEM AEM Interfaz de usuario web de operaciones de que muestra los índices de la instancia de la aplicación; facilita la comprensión de qué índices existen; se puede dirigir o aumentar.
+   * Interfaz de usuario web de operaciones de AEM que muestra los índices en la instancia de AEM; facilita la comprensión de qué índices existen; se puede dirigir o aumentar.
 
 * **[Registro](/help/sites-administering/operations-dashboard.md#log-messages)**
 
@@ -456,12 +456,12 @@ Por lo tanto, asegúrese de que los índices satisfacen las consultas, excepto s
 * **Configuración OSGi de la configuración del motor de consultas Apache Jackrabbit**
 
    * Configuración de OSGi que configura el comportamiento de error para consultas de recorrido.
-   * AEM El día de la consulta: [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
+   * En AEM en [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
 
 * **MBean JMX de NodeCounter**
 
-   * AEM MBean de JMX utilizado para estimar el número de nodos en árboles de contenido en la.
-   * AEM El día de la semana en [/system/console/jmx/org.apache.jackrabbit.oak%3Name%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
+   * MBean de JMX utilizado para estimar el número de nodos en los árboles de contenido en AEM.
+   * En AEM en [/system/console/jmx/org.apache.jackrabbit.oak%3Name%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
 
 ### Admitido por la comunidad {#community-supported}
 
@@ -469,7 +469,7 @@ Por lo tanto, asegúrese de que los índices satisfacen las consultas, excepto s
 
    * Genere un índice de propiedades de Lucence óptimo a partir de instrucciones de consulta XPath o JCR-SQL2.
 
-* AEM **_Complemento de Chrome_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
+* **_Complemento de AEM Chrome_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
 
-   * AEM El _complemento de Chrome_ es una extensión del explorador web Google Chrome que expone datos de registro por solicitud, incluidas las consultas de ejecución y sus planes de consulta, en la consola de herramientas de desarrollo del explorador.
-   * AEM Requiere que instale y habilite [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) en el servidor de correo electrónico de OSGiAppMeasurementIDsAppMeasurement.
+   * El complemento _AEM Chrome_ es una extensión de explorador web Google Chrome que expone datos de registro por solicitud, incluidas las consultas de ejecución y sus planes de consulta, en la consola de herramientas de desarrollo del explorador.
+   * Requiere que instale y habilite [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) en AEM.

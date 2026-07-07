@@ -9,8 +9,8 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 56%
+source-wordcount: '854'
+ht-degree: 55%
 
 ---
 
@@ -65,7 +65,7 @@ En cualquier momento, Sarah puede seleccionar **Guardar** para guardar un borrad
 
 ## John Jacobs recibe y aprueba la solicitud. {#john-jacobs-receives-and-approves-the-application}
 
-John Jacobs recibe la solicitud y la redirige a la persona adecuada. AEM La bandeja de entrada de permite a John ver todas las solicitudes enviadas desde un mismo sitio.
+John Jacobs recibe la solicitud y la redirige a la persona adecuada. La bandeja de entrada AEM permite a John ver todas las solicitudes enviadas desde un mismo sitio.
 
 ### Funcionamiento {#how-it-works-1}
 
@@ -73,11 +73,11 @@ Cuando Sarah rellena y envía la solicitud FOIA, se envía un registro de la sol
 
 ### Puede verlo usted mismo {#see-it-yourself-1}
 
-AEM Puede obtener acceso a la Bandeja de entrada de la en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. AEM Inicie sesión en la Bandeja de entrada de la, utilizando jjacobs/password como el nombre de usuario/contraseña de John Jacobs y vea la solicitud FOIA. Para obtener información sobre el uso de la Bandeja de entrada AEM para tareas de flujo de trabajo centradas en Forms, consulte [Administrar aplicaciones y tareas de Forms en Bandeja de entrada AEM](/help/forms/using/manage-applications-inbox.md).
+Puede acceder a la bandeja de entrada de AEM en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Inicie sesión en la Bandeja de entrada AEM utilizando jjacobs/password como el nombre de usuario/contraseña de John Jacobs y vea la solicitud FOIA. Para obtener información sobre el uso de la Bandeja de entrada AEM para tareas de flujo de trabajo centradas en Forms, consulte [Administrar aplicaciones y tareas de Forms en Bandeja de entrada AEM](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
-John Jacobs puede ver, aprobar o rechazar la solicitud desde el panel de solicitudes. John Jacobs selecciona y abre los detalles de la solicitud y, después de revisarla, la aprueba.
+John Jacobs puede ver, aprobar o rechazar la solicitud desde el panel de control de solicitudes. John Jacobs selecciona y abre los detalles de la solicitud y, después de revisarla, la aprueba.
 
 ![johnjacobstaskdetail-1](assets/johnjacobstaskdetail-1.png)
 
@@ -99,7 +99,7 @@ Cuando John Jacobs aprueba la solicitud FOIA, se crea un PDF o un documento de 
 
 ### Véalo usted mismo {#see-for-yourself}
 
-AEM Puede obtener acceso a la Bandeja de entrada de la en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. AEM Inicie sesión en la Bandeja de entrada de la con grios/password como el nombre de usuario/contraseña de Gloria Ríos y vea la solicitud FOIA.
+Puede acceder a la bandeja de entrada de AEM en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Inicie sesión en la Bandeja de entrada de AEM utilizando grios/password como el nombre de usuario/contraseña de Gloria Ríos y vea la solicitud FOIA.
 
 Gloria abre la solicitud y examina los detalles de la solicitud FOIA. Después de revisar los detalles de la solicitud y estudiar la viabilidad de proporcionar los documentos requeridos, Gloria aprueba la solicitud.
 

@@ -1,6 +1,6 @@
 ---
 title: Paneles de control
-description: AEM Aprenda a crear, configurar y desarrollar nuevos paneles de datos de.
+description: Aprenda a crear, configurar y desarrollar nuevos paneles de AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -11,18 +11,18 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 3%
+source-wordcount: '834'
+ht-degree: 4%
 
 ---
 
 # Paneles de control{#dashboards}
 
-AEM Al utilizar la, puede administrar numerosos contenidos de diferentes tipos (por ejemplo, páginas o recursos). AEM Los paneles de DTM ofrecen una forma fácil de usar y personalizable de definir páginas que muestren datos consolidados.
+Al utilizar AEM, puede administrar numerosos contenidos de diferentes tipos (por ejemplo, páginas o recursos). Los paneles de AEM proporcionan una forma fácil de usar y personalizable de definir páginas que muestren datos consolidados.
 
 >[!NOTE]
 >
->AEM Los paneles de datos se crean por usuario, de modo que el usuario solo puede acceder a su propio panel.
+>Los paneles de AEM se crean por usuario, de modo que el usuario solo puede acceder a su propio panel.
 >
 >Sin embargo, [las plantillas de panel](#creating-a-dashboard-template) se pueden usar para compartir la configuración común y el diseño de panel.
 
@@ -40,7 +40,7 @@ AEM Al utilizar la, puede administrar numerosos contenidos de diferentes tipos (
 
 ### Clonación De Un Tablero {#cloning-a-dashboard}
 
-Es posible que desee tener varios paneles para ver rápidamente información sobre el contenido de diferentes vistas. AEM Para ayudarle a crear un nuevo tablero, proporciona una función de clonado que puede utilizar para duplicar un tablero existente. Para clonar un tablero, siga estos pasos:
+Es posible que desee tener varios paneles para ver rápidamente información sobre el contenido de diferentes vistas. Para ayudarle a crear un nuevo panel, AEM proporciona una función de clonación que puede utilizar para duplicar un panel existente. Para clonar un tablero, siga estos pasos:
 
 1. En la sección **Herramientas**, haga clic en **Consola de configuración**.
 
@@ -66,11 +66,11 @@ Es posible que desee tener varios paneles para ver rápidamente información sob
 
 ### Información general {#overview}
 
-AEM Los componentes del tablero no son más que [componentes de](/help/sites-developing/developing-components-samples.md) normales. AEM En esta sección se describen los componentes de sistema de informes que se envían con.
+Los componentes del panel no son más que [componentes de AEM](/help/sites-developing/developing-components-samples.md) normales. En esta sección se describen los componentes de sistema de informes que se envían con AEM.
 
 ### Componentes de informes de análisis web {#web-analytics-reporting-components}
 
-AEM La se envía con un conjunto de componentes que procesan varias métricas de sus datos de [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Estos componentes se enumeran en el Sidekick en la sección **Panel**.
+AEM se distribuye con un conjunto de componentes que procesan varias métricas de sus datos de [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Estos componentes se enumeran en Sidekick en la sección **Panel**.
 
 Cada componente del sistema de informes proporciona al menos tres pestañas:
 
@@ -89,7 +89,7 @@ La ficha **Básico** proporciona acceso a las siguientes entradas de configuraci
 
 **Tipo de solicitud** Forma en que se solicitan los datos.
 
-**Configuración de SiteCatalyst (opcional)** La configuración que desea utilizar para conectarse al SiteCatalyst. Si no se proporciona, se supone que la configuración está configurada en la página Tablero (a través de las propiedades de página).
+**Configuración de SiteCatalyst (opcional)** La configuración que desea usar para conectarse a SiteCatalyst. Si no se proporciona, se supone que la configuración está configurada en la página Tablero (a través de las propiedades de página).
 
 **ID del grupo de informes (opcional)** El grupo de informes de SiteCatalyst que desea utilizar para generar el gráfico.
 
@@ -173,7 +173,7 @@ Las plantillas de tablero se crean como otras plantillas de página, excepto que
 
 ### Desarrollo de un componente de panel {#developing-a-dashboard-component}
 
-AEM El desarrollo de un componente Panel consiste en crear un componente de normal. En esta sección se describe un ejemplo de un componente que muestra los 10 principales colaboradores.
+El desarrollo de un componente Panel consiste en crear un componente de AEM normal. En esta sección se describe un ejemplo de un componente que muestra los 10 principales colaboradores.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 

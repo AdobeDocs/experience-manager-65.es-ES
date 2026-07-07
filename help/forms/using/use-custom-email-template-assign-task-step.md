@@ -9,7 +9,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '518'
 ht-degree: 94%
 
 ---
@@ -56,7 +56,7 @@ De forma predeterminada, AEM Forms ofrece una plantilla para las notificaciones 
 
 1. Agregue código HTML personalizado al archivo.
 
-   Una plantilla de notificación de correo electrónico es un [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Puede agregar código de HTML personalizado al archivo para crear una plantilla.
+   Una plantilla de notificación de correo electrónico es un [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Puede agregar código HTML personalizado al archivo para crear una plantilla.
 
 1. Guarde el archivo. La plantilla está lista para utilizarse en el paso Asignar tarea.
 

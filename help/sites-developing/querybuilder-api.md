@@ -1,6 +1,6 @@
 ---
 title: API del Generador de consultas
-description: La funcionalidad del Generador de consultas de uso compartido de recursos se expone a través de una API de Java& trade; y una API de REST.
+description: La funcionalidad del Asset Share Query Builder se expone a través de una API de Java&trade; y una API de REST.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -13,7 +13,7 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2390'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ La API de REST proporciona acceso a las mismas funciones a través de HTTP con r
 
 ## Sesión de Gem {#gem-session}
 
-[Gems de Adobe Experience Manager AEM ()](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=es) es una serie de conocimientos técnicos sobre Adobe Experience Manager que ofrecen expertos en Adobe. Esta sesión dedicada al generador de consultas es útil para obtener una descripción general y utilizar la herramienta.
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=es) es una serie de conocimientos técnicos sobre Adobe Experience Manager que ofrecen expertos de Adobe. Esta sesión dedicada al generador de consultas es útil para obtener una descripción general y utilizar la herramienta.
 
 >[!NOTE]
 >
->AEM AEM sesión de Gem [Busque fácilmente formularios con el creador de consultas de](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=es) para obtener una descripción detallada del creador de consultas.
+>Sesión de AEM Gem [Busque fácilmente formularios con el generador de consultas de AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=es) para obtener una descripción detallada del generador de consultas.
 
 ## Consultas de muestra {#sample-queries}
 
@@ -116,7 +116,7 @@ La consulta devuelve el valor predeterminado `p.limit` de `10` resultados con un
 "offset": 0,
 ```
 
-AEM A partir de la versión 6.0 SP2, también puede utilizar un valor numérico para contar hasta un número personalizado de resultados máximos. Utilice la misma consulta que la anterior, pero cambie el valor de `p.guessTotal` a `50`:
+A partir de AEM 6.0 SP2, también puede utilizar un valor numérico para contar hasta un número personalizado de resultados máximos. Utilice la misma consulta que la anterior, pero cambie el valor de `p.guessTotal` a `50`:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=50&orderby=path`
 
@@ -324,7 +324,7 @@ Separado por un espacio:
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selectivo&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3primaryType&amp;property=jcr%3title&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) [p.hits=selectivo&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3primaryType&amp;property=jcr%3title&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -468,7 +468,7 @@ O bien, el servlet json de querybuilder en
 
 ( `path=/tmp` es solo un ejemplo).
 
-### Depuración general de Recommendations {#general-debugging-recommendations}
+### Recomendaciones generales de depuración {#general-debugging-recommendations}
 
 ### Obtener XPath explicable mediante el registro {#obtain-explain-able-xpath-via-logging}
 
@@ -487,7 +487,7 @@ Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al 
 
 ### Obtenga XPath explicable mediante el depurador de Query Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* AEM Use el depurador de QueryBuilder de la para generar una consulta XPath explicable:
+* Use AEM QueryBuilder Debugger para generar una consulta XPath explicable:
 
 Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al conjunto de índices objetivo.
 
@@ -506,7 +506,7 @@ Explicar **todas** las consultas durante el ciclo de desarrollo con respecto al 
 
 **Obtenga XPath explicable mediante el depurador de Query Builder**
 
-* AEM Use el depurador de QueryBuilder de la para generar una consulta XPath explicable:
+* Use AEM QueryBuilder Debugger para generar una consulta XPath explicable:
 
 ![chlimage_1-66](assets/chlimage_1-66a.png)
 

@@ -7,8 +7,8 @@ feature: Developing
 role: Developer
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 84%
+source-wordcount: '805'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ Puede ver el estado de los trabajos asincrónicos en el panel **[!UICONTROL Esta
 
 ## Supervisar el estado de las operaciones asincrónicas {#monitor-the-status-of-asynchronous-operations}
 
-Siempre que AEM procese una operación de manera asincrónica, recibirá una notificación en la [bandeja de entrada](/help/sites-authoring/inbox.md) y por correo electrónico (si está activada).
+Siempre que AEM procese una operación de manera asincrónica, recibirá una notificación en la [bandeja de entrada](/help/sites-authoring/inbox.md) y por correo electrónico (si está habilitada).
 
 Para ver en detalle el estado de las operaciones asincrónicas, vaya a la página **[!UICONTROL Estado del trabajo asincrónico]**.
 
@@ -74,7 +74,7 @@ Para ver en detalle el estado de las operaciones asincrónicas, vaya a la págin
 
 ## Purgar trabajos completados {#purging-completed-jobs}
 
-AEM ejecuta un trabajo de depuración todos los días a la 01:00 para eliminar los trabajos asincrónicos completados que tengan más de un día de antigüedad.
+AEM ejecuta un trabajo de depuración todos los días a las 01:00 para eliminar los trabajos asincrónicos completados que tengan más de un día de antigüedad.
 
 Puede modificar la programación del trabajo de depuración y la duración por la cual se conservan los detalles de los trabajos completados antes de que se eliminen. También puede configurar el número máximo de trabajos completados para los que se conservan los detalles en cualquier momento.
 
@@ -91,7 +91,7 @@ Puede modificar la programación del trabajo de depuración y la duración por l
 
 ## Configuración del procesamiento asincrónico {#configuring-asynchronous-processing}
 
-AEM Puede configurar el número de umbral de recursos, páginas o referencias para que los recursos se procesen de forma asíncrona para procesar una operación en particular y conmutar las notificaciones por correo electrónico cuando se procesen los trabajos.
+Puede configurar el número de umbral de recursos, páginas o referencias para que AEM procese una operación en particular de forma asíncrona y active las notificaciones por correo electrónico cuando se procesen los trabajos.
 
 ### Configurar operaciones asincrónicas de eliminación de recursos {#configuring-synchronous-delete-operations}
 
@@ -133,7 +133,7 @@ Si el número de recursos, carpetas o referencias que se van a mover supera el n
 >
 >* [Crear y organizar páginas](/help/sites-authoring/managing-pages.md)
 >* [Creación y sincronización de Live Copies](/help/sites-administering/msm-livecopy.md)
->* [Configurar correo electrónico en el Experience Manager](/help/sites-administering/notification.md).
+>* [Configurar correo electrónico en Experience Manager](/help/sites-administering/notification.md).
 >* [Importar metadatos de recursos](/help/assets/metadata.md#import-metadata).
 >* [Exportar metadatos de recursos](/help/assets/metadata.md#export-metadata).
 >* [Utilice Recursos conectados para compartir recursos DAM desde implementaciones remotas](/help/assets/use-assets-across-connected-assets-instances.md).
