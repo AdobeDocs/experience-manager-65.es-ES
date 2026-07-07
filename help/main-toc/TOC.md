@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: ec3941675081255879065c3be9d5af77474b2072
+source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
 workflow-type: tm+mt
-source-wordcount: '8286'
-ht-degree: 96%
+source-wordcount: '8300'
+ht-degree: 95%
 
 ---
 
@@ -448,7 +448,7 @@ ht-degree: 96%
       + [[!DNL Assets] y MediaLibrary](/help/assets/medialibrary.md)
       + [Usar rasterizador de PDF](/help/assets/aem-pdf-rasterizer.md)
       + [Configurar restricciones de carga](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Integración de [!DNL Experience Manager] y  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integración de [!DNL Experience Manager] y  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrar con  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management para recursos](/help/assets/drm.md)
       + [Uso del paquete de demostración para perspectivas de recursos](/help/assets/use-demo-package-for-asset-insights.md)
@@ -570,7 +570,7 @@ ht-degree: 96%
          + [Configurar la caché de los formularios adaptables](/help/forms/using/configure-adaptive-forms-cache.md)
          + [Configurar AEM DS](/help/forms/using/configuring-the-processing-server-url.md)
          + [Configurar el planificador de sincronización](/help/forms/using/configure-synchronization-scheduler.md)
-         + [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/es_ES/AEMForms/6.1/SharePointConfig/index.html)
+         + [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
          + [Conectar AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
          + [Configurar AEM Forms para enviar datos de formulario a un proceso de AEM Forms en JEE](/help/forms/using/submit-form-data-livecycle-process.md)
          + [Aplicación de escritorio para AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
@@ -881,9 +881,9 @@ ht-degree: 96%
       + [Proteger un documento en nombre de otro usuario](/help/forms/using/protect-document-on-behalf-of-another-user.md)
    + Forms Designer {#use-forms-designer}
       + [Ayuda de Forms Designer](/help/forms/using/forms-designer-help.md)
-      + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)
-      + [Tutoriales de inicio rápido de Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
-      + [Muestras de Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65_es)
+      + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
+      + [Tutoriales de inicio rápido de Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+      + [Muestras de Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
       + [Conceptos básicos de scripts Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_es)
       + [Referencia de scripts de Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_es)
       + [Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
@@ -1213,6 +1213,7 @@ ht-degree: 96%
       + [Procesamiento de documentos incluso si el servidor de AEM Forms no está completamente operativo](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [No se puede usar el servicio Output, el servicio Forms o el servicio Documento de registro (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Mitigación de vulnerabilidades RCE de Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [Mitigación de la vulnerabilidad del servicio web Apache Axis Document Security para Experience Manager Forms en JEE](/help/forms/using/mitigating-apache-axis-document-security-webservice-vulnerability-for-aem-forms-jee.md)
       + [Error al realizar la copia de seguridad de la base de datos durante la actualización a 6.5.12.0 para MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La generación de PDF no puede imprimir un gran número de PDF en Workbench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [¿Cómo reiniciar adecuadamente el SDK de AEM?](/help/forms/using/restart-aem-sdk.md)
