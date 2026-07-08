@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1773'
 ht-degree: 77%
 
 ---
@@ -44,7 +44,7 @@ Los servicios de Process Reporting publican los datos de la base de datos de AE
 
 Esta operación puede consumir muchos recursos y afectar al rendimiento de los servidores de AEM Forms. Se recomienda programarla fuera de las franjas temporales de mayor actividad del servidor de AEM Forms.
 
-De forma predeterminada, la publicación de datos está programada para ejecutarse todos los días a las 2:00 a. m.
+De manera predeterminada, la publicación de datos está programada para ejecutarse todos los días a las 2:00 a. m.
 
 Para cambiar la programación de publicación, realice los siguientes pasos:
 
@@ -134,7 +134,7 @@ Puede utilizar la consola de administración para configurar la ubicación raíz
 
 ### Servicio ReportConfiguration {#reportconfiguration-service}
 
-Process Reporting utiliza el servicio ReportConfiguration para configurar el servicio de consulta de informes de procesos.
+Process Reporting utiliza el servicio ReportConfiguration para configurar el Servicio de consultas de informes de procesos.
 
 #### Configuración del servicio ReportingConfiguration {#to-configure-the-reportingconfiguration-service}
 
@@ -179,7 +179,7 @@ El servicio ProcessDataPublisher importa los datos de proceso de la base de dato
 
 **Publicar datos**
 
-Active esta opción para iniciar el proceso de publicación de datos. Esta opción está desactivada de forma predeterminada.
+Habilite esta opción para iniciar el proceso de publicación de datos. Esta opción está desactivada de forma predeterminada.
 
 Habilite Process Reporting solo cuando todas las configuraciones relacionadas con sus componentes estén correctamente configuradas.
 
