@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 2493f25c9f22a165360107e9f642ef3f8c07e957
+source-git-commit: 06cdf1211a48838d1e578d1d804aad00cd01eb79
 workflow-type: tm+mt
-source-wordcount: '3772'
+source-wordcount: '3853'
 ht-degree: 12%
 
 ---
@@ -101,8 +101,7 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
 | Azul Zulu OpenJDK 11 de 64 bits | A: Compatible `[3]` | |
 | Azul Zulu OpenJDK 8 - 64 bits | A: Compatible `[3]` | |
 
-1. Oracle se ha trasladado a un modelo de &quot;Soporte a largo plazo&quot; (LTS) para los productos de Oracle Java™ SE. Java™ 9, Java™ 10 y Java™ 12 son versiones que no son de LTS de Oracle (consulte [Guía de asistencia de Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en un entorno de producción, Adobe solo es compatible con las versiones LTS de Java™. Adobe ofrece asistencia técnica y distribución del JDK de Oracle Java™ SE, incluidas todas las actualizaciones de mantenimiento de las versiones anteriores, directamente a todos los clientes de AEM que utilicen la tecnología Oracle Java™ SE. Consulte la [directiva de soporte de Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Importante: Oracle Java™ 17 y 21 son compatibles con [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+1. Oracle se ha trasladado a un modelo de &quot;Soporte a largo plazo&quot; (LTS) para los productos de Oracle Java™ SE. Java™ 9, Java™ 10 y Java™ 12 son versiones que no son de LTS de Oracle (consulte [Guía de asistencia de Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en un entorno de producción, Adobe solo es compatible con las versiones LTS de Java™. Adobe ofrece asistencia técnica y distribución del JDK de Oracle Java™ SE, incluidas todas las actualizaciones de mantenimiento de las versiones anteriores, directamente a todos los clientes de AEM que utilicen la tecnología Oracle Java™ SE. Consulte la [directiva de soporte de Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).   **Importante: Oracle Java™ 17 y 21 son compatibles con [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. El JRE de IBM® solo se admite junto con el servidor de aplicaciones WebSphere®.
 
@@ -123,7 +122,7 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | MongoDB Enterprise 8.0 | Repositorio | A: Compatible `[3, 4]` |
 | MongoDB Enterprise 7.0 | Repositorio | A: Compatible `[3, 4]` |
 | MongoDB Enterprise 6.0 | Repositorio | A: Compatible `[3, 4]` |
-| MongoDB Enterprise 5.0 | Repositorio | A: Compatible `[3, 4]` |
+| MongoDB Enterprise 5.0 | Repositorio | A: Compatible `[3, 4, 7]` |
 | MongoDB Enterprise 4.4 | Repositorio | A: Compatible `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.2 | Repositorio | A: Compatible `[2, 3, 4, 7]` |
 | MongoDB Enterprise 4.0 | Repositorio | Z: No compatible |
@@ -146,6 +145,7 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 6. Aplicable solo a AEM Forms:
    * Se ha eliminado la compatibilidad con la base de datos Oracle 12c y se ha agregado compatibilidad con la base de datos Oracle 19c.
    * Se ha eliminado la compatibilidad con Microsoft® SQL Server 2016 y se ha agregado compatibilidad con Microsoft® SQL Server 2019 y Microsoft® SQL Server 2022.
+7. No compatible con AEM Forms.
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ La versión mínima de la API de servlet requerida es Servlet 3.1
 | JBoss® EAP 7.2.x con el servidor de aplicaciones JBoss® | Z: No compatible |
 | JBoss® EAP 7.1.4 con el servidor de aplicaciones JBoss® | R: Compatibilidad restringida para nuevos contratos `[1]` `[2]` |
 | JBoss® EAP 7.0.x con el servidor de aplicaciones JBoss® | Z: No compatible |
-| JBoss® EAP 7.4 con el servidor de aplicaciones JBoss® <sup>[2] [3] [7] | A: Compatible |
+| JBoss® EAP 7.4 con el servidor de aplicaciones JBoss® <sup>[2] [3] | A: Compatible |
 
 1. Recomendado para implementaciones con AEM Forms.
 2. Al iniciar implementaciones de AEM 6.5 en servidores de aplicaciones, se pasa a Compatibilidad restringida. Los clientes existentes pueden actualizar a AEM 6.5 y seguir utilizando servidores de aplicaciones. Para nuevos clientes, incluye criterios de asistencia y un programa de asistencia, tal como se indica en la descripción del nivel R anterior.
@@ -253,7 +253,7 @@ Adobe Experience Manager es compatible con la ejecución en una máquina virtual
 
 Para un entorno nativo de la nube, revise la última oferta de la línea de productos de AEM: Adobe Experience Manager as a Cloud Service. Consulte [Documentación de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) para obtener más información.
 
-Adobe también ofrece Adobe Managed Services para implementar AEM en Azure o AWS. Adobe Managed Services ofrece a los expertos la experiencia y los conocimientos necesarios para implementar y utilizar AEM en estos entornos de cloud computing. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/es/products/experience-manager/managed-services.html?aemClk=t).
+Adobe también ofrece Adobe Managed Services para implementar AEM en Azure o AWS. Adobe Managed Services ofrece a los expertos la experiencia y los conocimientos necesarios para implementar y utilizar AEM en estos entornos de cloud computing. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
 En todos los demás casos de implementación de AEM en Azure o AWS, o en cualquier otro entorno de computación en la nube, la compatibilidad con Adobe se incluye en el entorno de computación virtual. Ese entorno virtual debe ejecutarse de acuerdo con las especificaciones técnicas enumeradas en esta página. Cualquier problema informado relativo a AEM que se ejecute en cualquiera de estos entornos de nube debe ser reproducible independientemente de cualquier servicio de nube específico para el entorno de computación en nube. Es decir, a menos que el servicio en la nube sea compatible como parte de los requisitos técnicos enumerados en esta página, por ejemplo, almacenamiento del blob de Azure o AWS S3.
 
