@@ -599,7 +599,7 @@ Para ello, siga las instrucciones en [Replicar la clave de cifrado](/help/commun
 
 ### Publicar sitio de la comunidad y servicio de Analytics Cloud {#publish-community-site-and-analytics-cloud-service}
 
-Una vez habilitado el servicio Analytics Cloud para un sitio de la comunidad y, si es necesario, ajustada la asignación [de Analytics a variables de AEM](#mapped-analytics-to-aem-variables), duplique la configuración en el entorno de publicación volviendo a publicar el sitio de la comunidad](/help/communities/sites-console.md#publishing-the-site) [.
+Una vez habilitado el servicio Analytics Cloud para un sitio de la comunidad y, si es necesario, ajustada la asignación [de Analytics a variables de AEM](#mapped-analytics-to-aem-variables), duplique la configuración en el entorno de publicación volviendo a publicar el sitio de la comunidad[&#128279;](/help/communities/sites-console.md#publishing-the-site) .
 
 ## Obtener informes de Analytics {#obtaining-reports-from-analytics}
 
