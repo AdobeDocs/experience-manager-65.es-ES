@@ -1,6 +1,6 @@
 ---
 title: Compatibilidad con cifrado para propiedades de configuración
-description: AEM Obtenga información acerca de la compatibilidad con el cifrado de las propiedades de configuración que se proporcionan en la documentación de.
+description: Obtenga información acerca de la compatibilidad con el cifrado de las propiedades de configuración proporcionadas en AEM.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,8 +11,8 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 0%
+source-wordcount: '280'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +32,7 @@ Se agregó compatibilidad con el complemento de configuración OSGi para descifr
 
 Estos pasos muestran cómo cifrar la contraseña SMTP del servicio de correo. Puede completar estos pasos para una propiedad OSGI que desee cifrar.
 
-1. AEM Vaya a la consola web de la en *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Vaya a la consola web de AEM en *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. En la esquina superior izquierda, vaya a **Principal - Crypto Support**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
@@ -42,7 +42,7 @@ Estos pasos muestran cómo cifrar la contraseña SMTP del servicio de correo. Pu
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
 1. En el campo **Texto sin formato**, escriba el texto de los datos confidenciales que desea proteger.
-1. Seleccione **Protect**. El texto protegido se muestra como texto cifrado.
+1. Seleccione **Proteger**. El texto protegido se muestra como texto cifrado.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
@@ -54,4 +54,4 @@ Estos pasos muestran cómo cifrar la contraseña SMTP del servicio de correo. Pu
 
 ## Compatibilidad con descifrado {#decryption-support}
 
-AEM ahora proporciona un complemento de configuración para descifrar las propiedades de configuración. AEM Este complemento de la descifrará y recuperará automáticamente las propiedades de texto no cifrado.
+AEM ahora proporciona un complemento de configuración para descifrar las propiedades de configuración. Este complemento de AEM descifrará y recuperará automáticamente las propiedades de texto no cifrado.
