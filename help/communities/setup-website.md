@@ -11,7 +11,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ El directorio /apps está protegido y no es accesible públicamente, como los di
 
    Al igual que con cualquier proceso de edición, debe guardar con frecuencia. Si tiene problemas para introducir datos, puede deberse a que se ha agotado el tiempo de espera de inicio de sesión o a que debe guardar las ediciones anteriores.
 
-1. La estructura del panel del explorador del CRXDE Lite debería tener un aspecto similar al siguiente:
+1. La estructura del panel del explorador de CRXDE Lite debería tener un aspecto similar al siguiente:
 
    ![crxde-template](assets/crxde-template.png)
 
@@ -89,7 +89,7 @@ El directorio /etc/designs contiene las imágenes, los scripts y las hojas de es
 
 1. Para usar la herramienta Designer en la IU clásica, vaya a [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
-   Nota: Si utiliza el CRXDE Lite para crear un nodo de tipo `cq:Page`, el control de acceso y la replicación no se establecerían en la configuración predeterminada de una página.
+   Nota: Si utiliza CRXDE Lite para crear un nodo de tipo `cq:Page`, el control de acceso y la replicación no se establecerían en la configuración predeterminada de una página.
 
 1. En el panel del explorador, seleccione la carpeta **[!UICONTROL Diseños]** y, a continuación, haga clic en **[!UICONTROL Nuevo]** > **[!UICONTROL Nueva página]**.
 
@@ -105,7 +105,7 @@ El directorio /etc/designs contiene las imágenes, los scripts y las hojas de es
 
 1. Actualice el panel del explorador si no aparece la carpeta &quot;Zona protegida de SCF&quot;.
 
-1. Vuelva al CRXDE Lite (http:// localhost:4502/crx/de) y expanda /etc/designs para ver el nodo llamado &quot;an-scf-sandbox&quot;.
+1. Vuelva a CRXDE Lite (http:// localhost:4502/crx/de) y expanda /etc/designs para ver el nodo denominado &quot;an-scf-sandbox&quot;.
 
    En el panel inferior derecho de CRXDE, puede ver las pestañas Propiedades, Control de acceso y Replicación para ver lo que se ha definido con la plantilla de la página de diseño.
 
