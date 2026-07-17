@@ -11,7 +11,7 @@ feature: Adaptive Forms,Foundation Components
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '761'
 ht-degree: 67%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 67%
 
 El sitio de We.Finance es un sitio de servicios financieros diseñado para ayudarle a conocer las capacidades de comunicaciones interactivas de AEM Forms.
 
-AEM Lea un tutorial detallado de un caso de uso de We.Finance Auto Insurance que muestra cómo los formularios de y su integración con Microsoft® Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros. El tutorial interactivo está diseñado para facilitar la implementación de transacciones digitales complejas y la comunicación con los clientes en una compañía financiera.
+Lea un tutorial detallado de un caso de uso de We.Finance Auto Insurance que muestra cómo AEM Forms y su integración con Microsoft® Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros. El tutorial interactivo está diseñado para facilitar la implementación de transacciones digitales complejas y la comunicación con los clientes en una compañía financiera.
 
 **El recorrido comienza con el caso de uso:**
 
@@ -37,7 +37,7 @@ El escenario de la solicitud de un seguro de coche de We.Finance es una narraci�
 
 ### Gloria envía una comunicación sobre la renovación de la póliza del seguro desde We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-AEM Gloria inicia sesión en la instancia de, hace clic en **Renovación del seguro del coche** y, a continuación, hace clic en **Abrir la interfaz de usuario del agente**. El clic rellena previamente el documento del seguro con los datos de la póliza de Sarah Rose. Gloria hace clic en **Enviar** y se muestra un mensaje en la pantalla &quot;Envío iniciado&quot; y luego, en unos segundos, &quot;Enviado correctamente&quot;.
+Gloria inicia sesión en una instancia de AEM, hace clic en **Renovación del seguro del coche** y luego en **Abrir la interfaz de usuario del agente**. El clic rellena previamente el documento del seguro con los datos de la póliza de Sarah Rose. Gloria hace clic en **Enviar** y se muestra un mensaje en la pantalla &quot;Envío iniciado&quot; y luego, en unos segundos, &quot;Enviado correctamente&quot;.
 
 Sarah recibe un correo electrónico con el asunto &quot;Renovación del seguro del coche&quot;.
 
@@ -53,13 +53,13 @@ Puede acceder a la comunicación interactiva Renovación del seguro del coche y 
 
 Sarah recibe un correo electrónico con un archivo adjunto de We.Finance, en el que se le recuerda que la póliza de su seguro del coche está a punto de caducar. El archivo adjunto es la versión impresa de la póliza de seguro del coche de Sarah.
 
-Sarah hace clic en **Renovar ahora** y es redirigida a la versión web de la póliza de su seguro del coche. Además de esta carta, Sarah encuentra la cantidad de tiempo que le queda para su póliza antes de que caduque. La página proporciona a Sarah una descripción general básica de los datos de la póliza de su seguro, como el número de póliza, el importe adeudado y otra información, como ofertas de descuento y recompensas de fidelización. Sarah vuelve a hacer clic **Renovar ahora** en la parte inferior de la póliza.
+Sarah hace clic en **Renovar ahora** y es redirigida a la versión web de la póliza de su seguro del coche. Además de esta carta, Sarah encuentra la cantidad de tiempo que le queda para su póliza antes de que caduque. La página proporciona a Sarah una descripción general básica de los datos de la póliza de su seguro, como el número de póliza, el importe adeudado y otra información, como ofertas de descuento y recompensas de lealtad. Sarah vuelve a hacer clic **Renovar ahora** en la parte inferior de la póliza.
 
 ![ref1](assets/ref1.png)
 
 #### Funcionamiento {#how-it-works}
 
-La salida web y la salida impresa de su póliza de seguro del coche se crean utilizando las capacidades multicanal de Interactive Communications.
+La salida web y la salida impresa de su póliza de seguro del coche se crean utilizando las capacidades multicanal de Comunicaciones interactivas.
 
 El botón Renovar ahora del correo electrónico está vinculado a la solicitud Renovación del seguro del coche, la cual es una comunicación interactiva en una instancia de publicación.
 
