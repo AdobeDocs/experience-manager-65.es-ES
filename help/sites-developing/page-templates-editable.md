@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 4%
+source-wordcount: '3269'
+ht-degree: 6%
 
 ---
 
@@ -23,8 +23,8 @@ Las plantillas editables se han introducido en:
 
 * Permitir que los autores especializados [creen y editen plantillas](/help/sites-authoring/templates.md).
 
-   * Estos autores especializados se denominan **autores de plantillas**
-   * Los autores de plantillas deben ser miembros del grupo `template-authors`.
+  * Estos autores especializados se denominan **autores de plantillas**
+  * Los autores de plantillas deben ser miembros del grupo `template-authors`.
 
 * Proporcione plantillas que mantengan una conexión dinámica con cualquier página creada a partir de ellas. Al hacerlo, se asegura de que los cambios realizados en la plantilla se reflejen en las propias páginas.
 * Hacer que el componente de página sea más genérico para que el componente de página principal se pueda utilizar sin personalización.
@@ -39,7 +39,7 @@ Este documento:
 
 * Ofrece información general sobre la creación de plantillas editables
 
-   * Para obtener más información, consulte [Creación de plantillas de página](/help/sites-authoring/templates.md)
+  * Para obtener más información, consulte [Creación de plantillas de página](/help/sites-authoring/templates.md)
 
 * Describe las tareas de administrador/desarrollador necesarias para crear plantillas editables
 * Describe los fundamentos técnicos de las plantillas editables
@@ -48,14 +48,13 @@ Este documento supone que ya está familiarizado con la creación y edición de 
 
 >[!NOTE]
 >
->El siguiente tutorial también puede ser de interés para configurar una plantilla de página editable en un nuevo proyecto:
->[Introducción a AEM Sites, parte 2: Creación de una página base y una plantilla](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=es)
+>El siguiente tutorial también puede ser de interés para configurar una plantilla de página editable en un nuevo proyecto: >[Introducción a AEM Sites, parte 2: Creación de una página base y una plantilla](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
 
 ## Creación de una nueva plantilla {#creating-a-new-template}
 
 La creación de plantillas editables se realiza principalmente con la [consola y el editor de plantillas](/help/sites-authoring/templates.md) por un autor de plantillas. En esta sección se ofrece una descripción general de este proceso y se incluye una descripción de lo que sucede a nivel técnico.
 
-AEM AEM Para obtener información sobre cómo usar plantillas editables en un proyecto de, consulte [Creación de un proyecto de con Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=es).
+Para obtener información sobre cómo usar plantillas editables en un proyecto de AEM, consulte [Creación de un proyecto de AEM con Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
 Al crear una plantilla editable, debe hacer lo siguiente:
 
@@ -73,7 +72,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
    * La estructura permite definir los componentes y el contenido de la plantilla.
    * Los componentes definidos en la estructura de la plantilla no se pueden mover a una página resultante ni eliminar de ninguna página resultante.
 
-      * Si está creando una plantilla en una carpeta personalizada fuera del contenido de muestra de `We.Retail`, puede elegir Componentes básicos o utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es).
+     * Si está creando una plantilla en una carpeta personalizada fuera del contenido de muestra de `We.Retail`, puede elegir Componentes básicos o utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 
    * Si desea que los autores de páginas puedan añadir y quitar componentes, agregue un sistema de párrafos a la plantilla.
    * Los componentes se pueden volver a desbloquear y bloquear para que pueda definir el contenido inicial.
@@ -86,7 +85,7 @@ Al crear una plantilla editable, debe hacer lo siguiente:
 
    * Las políticas de contenido definen las propiedades de diseño de un componente.
 
-      * Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas.
+     * Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas.
 
    * Estas políticas se aplican a la plantilla (y a las páginas creadas con la plantilla).
 
@@ -160,7 +159,7 @@ Las carpetas específicas del sitio que cree para organizar las plantillas se cr
 >
 >Aunque puede anidar las carpetas, cuando el usuario las vea en la consola **Templates**, se presentarán como una estructura plana.
 
-AEM En una instancia estándar de la plantilla, la carpeta **global** existe en la consola de plantillas. Esta carpeta contiene plantillas predeterminadas y actúa como alternativa si no se encuentran directivas ni tipos de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una carpeta (recomendado).
+En una instancia estándar de AEM, la carpeta **global** existe en la consola de plantillas. Esta carpeta contiene plantillas predeterminadas y actúa como alternativa si no se encuentran directivas ni tipos de plantilla en la carpeta actual. Puede agregar las plantillas predeterminadas a esta carpeta o crear una carpeta (recomendado).
 
 >[!NOTE]
 >
@@ -182,12 +181,12 @@ Se crea una lista de todas las entradas permitidas. Si alguna configuración se 
 
 Para crear una carpeta, haga lo siguiente:
 
-* Mediante programación o con el CRXDE Lite
+* Mediante programación o con CRXDE Lite
 * Uso del explorador de configuración
 
 ## Uso del CRXDE Lite {#using-crxde-lite}
 
-1. Se puede crear una nueva carpeta (en /conf) para su instancia mediante programación o con el CRXDE Lite.
+1. Se puede crear una nueva carpeta (en /conf) para su instancia mediante programación o con CRXDE Lite.
 
    Se debe utilizar la siguiente estructura:
 
@@ -240,11 +239,11 @@ Para crear una carpeta, haga lo siguiente:
 
 Una vez creadas las carpetas de plantilla (ya sea mediante CRXDE o con el Explorador de configuración), se deben definir ACL para los grupos adecuados para las carpetas de plantilla para garantizar la seguridad adecuada.
 
-Las carpetas de plantillas para la implementación de referencia [`We.Retail` &#x200B;](/help/sites-developing/we-retail.md) se pueden usar como ejemplo.
+Las carpetas de plantillas para la implementación de referencia [`We.Retail` ](/help/sites-developing/we-retail.md) se pueden usar como ejemplo.
 
 #### El grupo de autores de plantillas {#the-template-authors-group}
 
-AEM El grupo `template-authors` es el grupo que se usa para administrar el acceso a las plantillas y viene de serie con las plantillas, pero está vacío. Los usuarios deben agregarse al grupo para el proyecto o sitio.
+El grupo `template-authors` es el grupo que se usa para administrar el acceso a las plantillas y viene de serie con AEM, pero está vacío. Los usuarios deben agregarse al grupo para el proyecto o sitio.
 
 >[!CAUTION]
 >
@@ -374,18 +373,18 @@ Al crear una plantilla, especifique un tipo de plantilla:
 
 * Los tipos de plantilla proporcionan plantillas para una plantilla de forma eficaz. Al crear una plantilla, se utiliza la estructura y el contenido inicial del tipo de plantilla seleccionado para crearla.
 
-   * El tipo de plantilla se copia para crearla.
-   * Una vez realizada la copia, la única conexión entre la plantilla y el tipo de plantilla es una referencia estática con fines informativos.
+  * El tipo de plantilla se copia para crearla.
+  * Una vez realizada la copia, la única conexión entre la plantilla y el tipo de plantilla es una referencia estática con fines informativos.
 
 * Los tipos de plantilla permiten definir lo siguiente:
 
-   * El tipo de recurso del componente de página.
-   * La directiva del nodo raíz, que define los componentes permitidos en el editor de plantillas.
-   * El Adobe recomienda definir los puntos de interrupción para la cuadrícula adaptable y la configuración del emulador móvil en en el tipo de plantilla. Este paso es opcional porque la configuración también se puede definir en la plantilla individual (consulte [Tipo de plantilla y Grupos de dispositivos móviles](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
+  * El tipo de recurso del componente de página.
+  * La directiva del nodo raíz, que define los componentes permitidos en el editor de plantillas.
+  * Adobe recomienda definir los puntos de interrupción para la cuadrícula adaptable y la configuración del emulador móvil en en el tipo de plantilla. Este paso es opcional porque la configuración también se puede definir en la plantilla individual (consulte [Tipo de plantilla y Grupos de dispositivos móviles](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
 
 * AEM proporciona una pequeña selección de tipos de plantillas listas para usar, como Página de HTML5 y Página de formulario adaptable.
 
-   * Se proporcionan ejemplos adicionales como parte del contenido de muestra [`We.Retail`](/help/sites-developing/we-retail.md).
+  * Se proporcionan ejemplos adicionales como parte del contenido de muestra [`We.Retail`](/help/sites-developing/we-retail.md).
 
 * Los desarrolladores suelen definir los tipos de plantillas.
 
@@ -435,7 +434,7 @@ Al crear una plantilla editable, el valor se copia del tipo de plantilla en la p
 Si ha creado una plantilla que puede servir de base a otras plantillas, puede copiar esta plantilla como un tipo de plantilla.
 
 1. Cree una plantilla como lo haría con cualquier plantilla editable. Consulte [Creación de plantillas de página](/help/sites-authoring/templates.md#creating-a-new-template-template-author). Esto puede servir de base para el tipo de plantilla.
-1. Con el CRXDE Lite, copie la plantilla recién creada del nodo `templates` al nodo `template-types` en la [carpeta de plantillas](/help/sites-developing/page-templates-editable.md#template-folders).
+1. Con CRXDE Lite, copie la plantilla recién creada del nodo `templates` al nodo `template-types` en la [carpeta de plantillas](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Elimine la plantilla del nodo `templates` en la [carpeta de plantillas](/help/sites-developing/page-templates-editable.md#template-folders).
 1. En la copia de la plantilla que se encuentra bajo el nodo `template-types`, elimine todas las propiedades `cq:template` y `cq:templateType` de todos los nodos `jcr:content`.
 
@@ -445,7 +444,7 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir proyecto aem-sites-example-custom-template-type en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
+* [Abra el proyecto aem-sites-example-custom-template-type en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * Descargar el proyecto como [archivo ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/zip/refs/heads/master)
 
 ## Definiciones de plantilla {#template-definitions}
@@ -492,13 +491,13 @@ Los elementos principales son:
 
 * `<template-name>`
 
-   * ` [initial](#initial-content)`
-   * `jcr:content`
-   * ` [structure](#structure)`
-   * ` [policies](#policies)`
-   * `thumbnail.png`
+  * ` [initial](#initial-content)`
+  * `jcr:content`
+  * ` [structure](#structure)`
+  * ` [policies](#policies)`
+  * `thumbnail.png`
 
-### jcr:contenido {#jcr-content}
+### jcr:content {#jcr-content}
 
 Este nodo contiene propiedades para la plantilla:
 
@@ -506,9 +505,9 @@ Este nodo contiene propiedades para la plantilla:
 
 * **Nombre**: `status`
 
-   * **Tipo**: `String`
+  * **Tipo**: `String`
 
-   * **Valor**: `draft`, `enabled` o `disabled`
+  * **Valor**: `draft`, `enabled` o `disabled`
 
 ### Estructura {#structure}
 
@@ -518,10 +517,10 @@ Define la estructura de la página resultante:
 * Los cambios realizados en la estructura se reflejan en cualquier página creada con la plantilla.
 * El nodo `root` ( `structure/jcr:content/root`) define la lista de componentes disponibles en la página resultante.
 
-   * Los componentes definidos en la estructura de la plantilla no se pueden mover ni eliminar de ninguna página resultante.
-   * Una vez desbloqueado un componente, la propiedad `editable` se establece en `true`.
+  * Los componentes definidos en la estructura de la plantilla no se pueden mover ni eliminar de ninguna página resultante.
+  * Una vez desbloqueado un componente, la propiedad `editable` se establece en `true`.
 
-   * Después de desbloquear un componente que ya contiene contenido, este contenido se mueve a la rama `initial`.
+  * Después de desbloquear un componente que ya contiene contenido, este contenido se mueve a la rama `initial`.
 
 * El nodo `cq:responsive` contiene definiciones para el diseño interactivo.
 
@@ -545,7 +544,7 @@ Las políticas de contenido (o diseño) definen las propiedades de diseño de un
 
 * La propiedad `cq:policy`, en el nodo `root`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
-Proporciona una referencia relativa a la directiva de contenido para el sistema de párrafos de la página.
+  Proporciona una referencia relativa a la directiva de contenido para el sistema de párrafos de la página.
 
 * La propiedad `cq:policy`, en los nodos explícitos de componente en `root`, proporciona vínculos a las directivas de los componentes individuales.
 
@@ -580,23 +579,21 @@ Las directivas de página permiten definir la [directiva de contenido](#content-
 
    * Estableciendo la propiedad status en el nodo `jcr:content`.
 
-      * Por ejemplo, en:
+     * Por ejemplo, en:
+       `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
-        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+     * Defina la propiedad:
 
-      * Defina la propiedad:
-
-         * Nombre: estado
-         * Tipo: cadena
-         * Valor: `enabled`
+       * Nombre: estado
+       * Tipo: cadena
+       * Valor: `enabled`
 
 1. **Plantillas permitidas**
 
    * [Defina las rutas de plantilla permitidas en **Propiedades de página**](/help/sites-authoring/templates.md#allowing-a-template-author) de la página o página raíz apropiada de una subrama.
    * Establezca la propiedad:
-
      `cq:allowedTemplates`
-En el nodo `jcr:content` de la rama requerida.
+     En el nodo `jcr:content` de la rama requerida.
 
    Por ejemplo, con un valor de:
 
@@ -610,11 +607,11 @@ Páginas creadas a partir de plantillas editables:
 
 * Tener referencias a información contenida en la plantilla y el tipo de plantilla. Puede lograr esta funcionalidad con un nodo `jcr:content` con las propiedades:
 
-   * `cq:template`
-Proporciona la referencia dinámica a la plantilla real; permite que los cambios realizados en la plantilla se reflejen en las páginas reales.
+  * `cq:template`
+    Proporciona la referencia dinámica a la plantilla real; permite que los cambios realizados en la plantilla se reflejen en las páginas reales.
 
-   * `cq:templateType`
-Proporciona una referencia al tipo de plantilla.
+  * `cq:templateType`
+    Proporciona una referencia al tipo de plantilla.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -629,22 +626,22 @@ La [plantilla y las políticas de contenido relacionadas](#template-definitions)
 * Modelo: paquetes OSGi
 Los [paquetes OSGI](/help/sites-deploying/osgi-configuration-settings.md) implementan la funcionalidad.
 
-* Vista: `/apps/<my-site>/components`
+* Ver - `/apps/<my-site>/components`
 Tanto en el entorno de creación como en el de publicación, [components](/help/sites-developing/components.md) procesan el contenido.
 
 Al procesar una página:
 
 * **Plantillas**:
 
-   * Se hace referencia a la propiedad `cq:template` de su nodo `jcr:content` para obtener acceso a la plantilla que corresponde a esa página.
+  * Se hace referencia a la propiedad `cq:template` de su nodo `jcr:content` para obtener acceso a la plantilla que corresponde a esa página.
 
 * **Componentes**:
 
-   * El componente de página combina el árbol `structure/jcr:content` de la plantilla con el árbol `jcr:content` de la página.
+  * El componente de página combina el árbol `structure/jcr:content` de la plantilla con el árbol `jcr:content` de la página.
 
-   * El componente Página solo permite al autor editar los nodos de la estructura de la plantilla que se han marcado como editables (y los secundarios).
-   * Al procesar un componente en una página, la ruta relativa de ese componente se toma del nodo `jcr:content`; a continuación, se busca en la misma ruta bajo el nodo `policies/jcr:content` de la plantilla.
+  * El componente Página solo permite al autor editar los nodos de la estructura de la plantilla que se han marcado como editables (y los secundarios).
+  * Al procesar un componente en una página, la ruta relativa de ese componente se toma del nodo `jcr:content`; a continuación, se busca en la misma ruta bajo el nodo `policies/jcr:content` de la plantilla.
 
-      * La propiedad `cq:policy` de este nodo señala a la directiva de contenido real (es decir, contiene la configuración de diseño para ese componente).
+    * La propiedad `cq:policy` de este nodo señala a la directiva de contenido real (es decir, contiene la configuración de diseño para ese componente).
 
-      * Esta funcionalidad permite tener varias plantillas que reutilizan las mismas configuraciones de directiva de contenido.
+    * Esta funcionalidad permite tener varias plantillas que reutilizan las mismas configuraciones de directiva de contenido.

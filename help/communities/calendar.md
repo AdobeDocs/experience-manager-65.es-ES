@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ La función de calendario permite proporcionar información de eventos de la com
 
 Esta sección de la documentación describe
 
-* AEM Adición de la función de calendario a un sitio de
+* Agregar la función de calendario a un sitio de AEM
 * Ajustes de configuración para componentes de `Calendar`
 
 ## Agregar un calendario a una página {#adding-a-calendar-to-a-page}
@@ -92,7 +92,7 @@ En la ficha **Configuración**, especifique si desea permitir que se apliquen et
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
-  Solo es relevante si está marcada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 **&#x200B; &#x200B;**(2 Mb).
+  Solo es relevante si está marcada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152** **(2 Mb).
 
 * **Tipos de imagen de portada permitidos**
 
@@ -164,7 +164,7 @@ En la ficha **Campo de etiqueta**, las etiquetas que se pueden aplicar, si se pe
 
 * **Límite de sugerencias**
 
-  Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. El valor predeterminado es **-**&#x200B;1 (sin límites).
+  Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. El valor predeterminado es **-**1 (sin límites).
 
 >[!NOTE]
 >
@@ -199,7 +199,7 @@ Cuando el usuario que inició sesión es un miembro de la comunidad o [miembro p
 Concretamente, pueden:
 
 * Creación de un evento de calendario
-* Post un comentario a un evento de calendario
+* Publicar un comentario en un evento de calendario
 * Editar su propio evento o comentario del calendario
 * Eliminar su propio evento o comentario del calendario
 * Marcar los eventos o comentarios del calendario de otros usuarios

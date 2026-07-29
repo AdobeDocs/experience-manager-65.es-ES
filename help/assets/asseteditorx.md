@@ -1,5 +1,5 @@
 ---
-title: Ampliar editor de recursos
+title: Ampliación del editor de recursos
 description: Obtenga información sobre cómo ampliar las capacidades del Editor de recursos mediante componentes personalizados.
 contentOwner: AG
 role: User, Admin
@@ -8,12 +8,12 @@ exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '694'
 ht-degree: 12%
 
 ---
 
-# Ampliar editor de recursos {#extending-asset-editor}
+# Ampliación del editor de recursos {#extending-asset-editor}
 
 El editor de recursos es la página que se abre cuando se hace clic en un recurso encontrado a través del uso compartido de recursos, lo que permite al usuario editar aspectos del recurso, como metadatos, miniaturas, títulos y etiquetas.
 
@@ -116,7 +116,7 @@ Los identificadores de ejemplo de `head.jsp` (`/apps/geometrixx/components/asset
     }
 ```
 
-En la parte HTML, utilice el conjunto de títulos anterior (recurso o título de página):
+En la parte de HTML, utilice el conjunto de títulos anterior (recurso o título de página):
 
 ```html
 <title><%= title %></title>
@@ -197,7 +197,7 @@ En este ejemplo se describe cómo generar un componente que muestra y muestra lo
    </div>
    ```
 
-1. Para que el componente esté disponible, hace falta poder editarlo. Para poder editar un componente, en el CRXDE Lite, agregue un nodo `cq:editConfig` de tipo principal `cq:EditConfig`. Para poder quitar párrafos, agregue una propiedad de varios valores `cq:actions` con un solo valor de `DELETE`.
+1. Para que el componente esté disponible, hace falta poder editarlo. Para poder editar un componente, en CRXDE Lite, agregue un nodo `cq:editConfig` de tipo principal `cq:EditConfig`. Para poder quitar párrafos, agregue una propiedad de varios valores `cq:actions` con un solo valor de `DELETE`.
 
 1. Vaya al explorador y en la página de muestra (por ejemplo, `asseteditor.html`) cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos.
 

@@ -1,5 +1,5 @@
 ---
-title: Crear y configurar páginas del Editor de recursos
+title: Creación y configuración de páginas del Editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
 role: User, Admin
@@ -8,12 +8,12 @@ exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 1%
+source-wordcount: '2121'
+ht-degree: 2%
 
 ---
 
-# Crear y configurar páginas del Editor de recursos {#creating-and-configuring-asset-editor-pages}
+# Creación y configuración de páginas del Editor de recursos {#creating-and-configuring-asset-editor-pages}
 
 Este documento describe lo siguiente:
 
@@ -206,7 +206,7 @@ Al crear la página del Editor de recursos, se recomienda crear la página direc
 Para crear una página del editor de recursos:
 
 1. En la ficha **[!UICONTROL Sitios web]**, vaya al lugar donde desea crear una página del Editor de recursos y haga clic en **Nuevo**.
-1. Seleccione **Editor de recursos de Geometrixx** y haga clic en **Crear**. La nueva página se creará y aparecerá en la ficha **Sitios web**.
+1. Seleccione **Geometrixx Asset Editor** y haga clic en **Crear**. La nueva página se creará y aparecerá en la ficha **Sitios web**.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
@@ -214,7 +214,7 @@ La página básica creada con la plantilla del Editor de recursos de Geometrixx 
 
 ![recurso compartido5](assets/assetshare5.png)
 
-Para personalizar la página del Editor de recursos, utilice los elementos de la barra de tareas. La página del editor de recursos a la que se tiene acceso desde el **Centro de prensa** es una versión personalizada de una página basada en esta Geometrixx:
+Para personalizar la página del Editor de recursos, utilice los elementos de la barra de tareas. La página del editor de recursos a la que se tiene acceso desde el **Centro de prensa de Geometrixx** es una versión personalizada de una página basada en esta plantilla:
 
 ![recurso compartido6](assets/assetshare6.png)
 
@@ -330,7 +330,7 @@ El siguiente es un componente Etiquetas rellenado:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura    {#thumbnail}
+#### Miniaturas {#thumbnail}
 
 El componente Miniatura es el lugar donde el recurso muestra la miniatura seleccionada (para muchos de los formatos, la miniatura se extrae automáticamente). Además, el componente muestra el nombre de archivo y [acciones que puede modificar](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
@@ -393,7 +393,7 @@ Con [!DNL Experience Manager Assets], puede cambiar varios recursos a la vez. De
 
 Para realizar varias ediciones de recursos con la página Editor de recursos:
 
-1. Abrir la página del **Centro de prensa** de la Geometrixx:
+1. Abra la página del **Centro de prensa** de Geometrixx:
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Seleccione los recursos:
@@ -404,7 +404,7 @@ Para realizar varias ediciones de recursos con la página Editor de recursos:
    Para seleccionar un rango de recursos: haga clic en el primer recurso y, a continuación, `Shift + click` en el último.
 
 1. Haga clic en **Editar metadatos** en el campo **Acciones** (parte izquierda de la página).
-1. La página del Geometrixx **Editor de recursos del centro de prensa** se abre en una nueva pestaña. Los metadatos de los recursos se muestran de la siguiente manera:
+1. La página de Geometrixx **Editor de recursos del centro de prensa** se abre en una nueva pestaña. Los metadatos de los recursos se muestran de la siguiente manera:
 
    * Las etiquetas que no se apliquen a todos los recursos, sino solo a algunos, se muestran en cursiva.
    * Se muestra una etiqueta que se aplica a todos los recursos con una fuente normal.

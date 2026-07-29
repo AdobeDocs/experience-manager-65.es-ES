@@ -25,6 +25,6 @@ El etiquetado permite clasificar y organizar el contenido. Las etiquetas se pued
 
 La siguiente información está disponible para los desarrolladores:
 
-* AEM [Marco de etiquetado de](/help/sites-developing/framework.md): una descripción de los nodos y las propiedades utilizados para el etiquetado
+* [Marco de etiquetado de AEM](/help/sites-developing/framework.md): una descripción de los nodos y las propiedades utilizados para el etiquetado
 
-* AEM [Generando etiquetado en una aplicación de](/help/sites-developing/building.md): una descripción de las API que funcionan con el marco de etiquetado desde el código del lado del cliente y del lado del servidor
+* [Creación de etiquetas en una aplicación de AEM](/help/sites-developing/building.md): una descripción de las API que funcionan con el marco de etiquetado desde el código del lado del cliente y del lado del servidor

@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ La función de biblioteca de archivos proporciona un lugar para que los visitant
 
 Esta sección de la documentación describe lo siguiente:
 
-* AEM Agregar la función de biblioteca de archivos a un sitio de la.
+* Agregar la función de biblioteca de archivos a un sitio de AEM.
 * Ajustes de configuración para el componente `File Library`.
 
 ### Agregar una biblioteca de archivos a una página {#adding-a-file-library-to-a-page}
@@ -162,7 +162,7 @@ En la ficha **Moderación de usuarios**, configure la moderación de los comenta
 
 Ordenar por
 
-Establecer como predeterminado
+Establecer como predeterminada
 
 ### Información adicional {#additional-information}
 

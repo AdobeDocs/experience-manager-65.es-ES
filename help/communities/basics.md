@@ -1,6 +1,6 @@
 ---
 title: Conceptos básicos de componentes de comunidades
-description: AEM Agregar características de Communities a sitios de la comunidad en modo de edición y configurar componentes de la página
+description: Agregar características de Communities a los sitios de AEM en modo de edición y configurar componentes
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-AEM En la sección de creación de la documentación se describe cómo agregar funciones de comunidades a sitios de creación en el modo de edición de creación, así como la descripción de configuraciones de componentes.
+En la sección de creación de la documentación se describe cómo agregar funciones de comunidades a sitios de AEM en el modo de edición de autor, así como configuraciones de componentes.
 
-AEM Los componentes se pueden explorar mediante una instancia de y la [guía interactiva de componentes de la comunidad](components-guide.md).
+Los componentes se pueden explorar mediante una instancia de AEM y la [guía interactiva de componentes de la comunidad](components-guide.md).
 
 ## Acceder a componentes de Communities {#accessing-communities-components}
 
@@ -34,7 +34,7 @@ Consulte la lista en [Componentes de comunidades disponibles](author-communities
 >
 >Para obtener información general sobre la creación, consulte la [guía rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->AEM Si no está familiarizado con el uso de la, consulte la documentación sobre [gestión básica](../../help/sites-authoring/basic-handling.md).
+>Si no está familiarizado con AEM, consulte la documentación sobre [manejo básico](../../help/sites-authoring/basic-handling.md).
 
 ### Entrando en modo de diseño {#entering-design-mode}
 

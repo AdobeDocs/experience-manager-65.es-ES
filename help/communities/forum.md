@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 1%
+source-wordcount: '1249'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Introducción {#introduction}
 
-La función de foro proporciona un área para que los visitantes del sitio (miembros de la comunidad) conectados en el entorno de Publish puedan hacer lo siguiente:
+La función de foro proporciona un área para que los visitantes del sitio (miembros de la comunidad) que han iniciado sesión en el entorno de publicación puedan hacer lo siguiente:
 
 * Crear temas
 * Ver y responder a temas
@@ -32,7 +32,7 @@ La función de foro proporciona un área para que los visitantes del sitio (miem
 
 Esta sección de la documentación describe lo siguiente:
 
-* AEM Adición de la función de foro a un sitio de.
+* Añadir la función de foro a un sitio de AEM.
 * Ajustes de configuración para el componente `Forum`.
 
 ### Adición de un foro a una página {#adding-a-forum-to-a-page}
@@ -219,7 +219,7 @@ En la ficha **Campo de etiqueta**, las etiquetas que se pueden aplicar, si se pe
 
 * **Límite de sugerencias**
 
-  Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. El valor predeterminado es **-**&#x200B;1 (sin límites).
+  Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. El valor predeterminado es **-**1 (sin límites).
 
 #### Pestaña Traducción {#translation-tab}
 

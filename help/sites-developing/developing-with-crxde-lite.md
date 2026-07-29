@@ -1,6 +1,6 @@
 ---
 title: Desarrollo con CRXDE Lite
-description: CRXDE Lite está incrustado en Adobe Experience Manager AEM () y le permite realizar tareas de desarrollo estándar en el explorador
+description: CRXDE Lite está incrustado en Adobe Experience Manager (AEM) y le permite realizar tareas de desarrollo estándar en el explorador
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
@@ -12,35 +12,35 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2114'
+source-wordcount: '2053'
 ht-degree: 4%
 
 ---
 
 # Desarrollo con CRXDE Lite{#developing-with-crxde-lite}
 
-En esta sección se describe cómo desarrollar la aplicación de Adobe Experience Manager AEM () mediante CRXDE Lite.
+En esta sección se describe cómo desarrollar la aplicación de Adobe Experience Manager (AEM) mediante CRXDE Lite.
 
 Consulte la documentación general para obtener más información sobre los diferentes entornos de desarrollo disponibles.
 
-CRXDE Lite AEM está incrustado en la interfaz de usuario de y le permite realizar tareas de desarrollo estándar en el explorador. Con CRXDE Lite, puede crear un proyecto, crear y editar archivos (como .jsp y .java), carpetas, plantillas, componentes, cuadros de diálogo, nodos, propiedades y paquetes durante el registro.
-Se recomienda utilizar el CRXDE Lite AEM cuando no tenga acceso directo al servidor de la. O bien, cuando desarrolle una aplicación ampliando o modificando los componentes predeterminados y los paquetes Java™, o cuando no necesite un depurador dedicado, la finalización del código y el resaltado de la sintaxis.
+CRXDE Lite está incrustado en AEM y le permite realizar tareas de desarrollo estándar en el explorador. Con CRXDE Lite, puede crear un proyecto, crear y editar archivos (como .jsp y .java), carpetas, plantillas, componentes, cuadros de diálogo, nodos, propiedades y paquetes durante el registro.
+Se recomienda CRXDE Lite cuando no tiene acceso directo al servidor de AEM. O bien, cuando desarrolle una aplicación ampliando o modificando los componentes predeterminados y los paquetes Java™, o cuando no necesite un depurador dedicado, la finalización del código y el resaltado de la sintaxis.
 
 >[!NOTE]
 >
->AEM A partir de la versión 6.5.5.0, el acceso anónimo del CRXDE Lite ya no es posible.
->Los usuarios se redirigen a la pantalla de inicio de sesión.
+>A partir de AEM 6.5.5.0, el acceso anónimo de CRXDE Lite ya no es posible.
+>Los usuarios son redirigidos a la pantalla de inicio de sesión.
 
 
 >[!NOTE]
 >
->El Adobe AEM AEM recomienda que use las [Herramientas para desarrolladores para Eclipse](/help/sites-developing/aem-eclipse.md) y la [Extensión de corchetes de HTL de](/help/sites-developing/aem-brackets.md) durante el desarrollo del proyecto.
+>Adobe recomienda usar las [Herramientas para desarrolladores de AEM para Eclipse](/help/sites-developing/aem-eclipse.md) y la [Extensión de corchetes HTL de AEM](/help/sites-developing/aem-brackets.md) durante el desarrollo del proyecto.
 
 ## Introducción a CRXDE Lite {#getting-started-with-crxde-lite}
 
 Para empezar a usar CRXDE Lite, siga estos pasos:
 
-1. AEM Instalar.
+1. Instale AEM.
 1. En su explorador, escriba `https://<host>:<port>/crx/de`. De manera predeterminada es `https://localhost:4502/crx/de`.
 1. Escriba su **nombre de usuario** y su **contraseña**. De manera predeterminada es `admin` y `admin`.
 
@@ -50,7 +50,7 @@ La interfaz de usuario de CRXDE Lite tiene el siguiente aspecto en el explorador
 
 ![chlimage_1-18](assets/crx-interface.jpg)
 
-Ahora puede utilizar CRXDE Lite para desarrollar la aplicación.
+Ahora puede utilizar CRXDE Lite para desarrollar su aplicación.
 
 ## Información general sobre la interfaz de usuario {#overview-of-the-user-interface}
 
@@ -72,7 +72,7 @@ CRXDE Lite ofrece las siguientes funciones:
   </tr>
   <tr>
    <td>Panel de edición</td>
-   <td><p><strong>Página de inicio</strong>: le permite buscar contenido o documentación y acceder a recursos para desarrolladores (documentación, blog para desarrolladores, base de conocimiento) y asistencia (página de inicio y centro de asistencia de Adobe).<br /> </p> <p>Haga doble clic en un archivo en el panel <strong>Explorador</strong> para que pueda mostrar su contenido. Por ejemplo, un archivo .jsp o .java. A continuación, puede modificarla y guardar los cambios.</p> <p>Una vez editado un archivo en el panel <strong>Editar</strong>, las siguientes herramientas están disponibles en la barra de herramientas:<br /> </p> - <strong>Mostrar en árbol: </strong>muestra el archivo en el árbol del repositorio.<br /> - <strong>Buscar/Reemplazar...</strong>: no buscar ni reemplazar.<br /> <br /> Al hacer doble clic en la línea de estado del panel <strong>Editar</strong>, se abre el cuadro de diálogo <strong>Ir a la línea</strong> para que pueda escribir un número de línea específico al que dirigirse.<br /> </td>
+   <td><p><strong>Página de inicio</strong>: le permite buscar contenido o documentación y acceder a recursos para desarrolladores (documentación, blog para desarrolladores, base de conocimiento) y asistencia (página de inicio y centro de asistencia de Adobe).<br /> </p> <p>Haga doble clic en un archivo en el panel <strong>Explorador</strong> para que pueda mostrar su contenido. Por ejemplo, un archivo .jsp o .java. A continuación, puede modificarla y guardar los cambios.</p> <p>Una vez editado un archivo en el panel <strong>Editar</strong>, las siguientes herramientas están disponibles en la barra de herramientas:<br /> </p> - <strong>Mostrar en el árbol: </strong>muestra el archivo en el árbol del repositorio.<br /> - <strong>Buscar/Reemplazar...</strong>: no buscar ni reemplazar.<br /> <br /> Al hacer doble clic en la línea de estado del panel <strong>Editar</strong>, se abre el cuadro de diálogo <strong>Ir a la línea</strong> para que pueda especificar un número de línea específico al que dirigirse.<br /> </td>
   </tr>
   <tr>
    <td>Pestaña Propiedades <br /> </td>
@@ -80,7 +80,7 @@ CRXDE Lite ofrece las siguientes funciones:
   </tr>
   <tr>
    <td>Pestaña Control de acceso</td>
-   <td><p>Mostrar permisos basados en la ruta, el nivel de repositorio o el principal.</p> <p>Los permisos se desglosan en</p> <p>- <strong>Directiva de control de acceso aplicable</strong>: directivas que se pueden aplicar a la selección.</p> <p>- <strong>Directivas de control de acceso local</strong>: Las directivas aplicadas localmente a la selección.</p> <p>- <strong>Directivas efectivas de control de acceso</strong>: Las directivas aplicadas para la selección podrían establecerse localmente o heredarse de los nodos primarios.</p> <p>Nota. Para poder ver la información de control de acceso, el usuario que ha iniciado sesión en el CRXDE Lite debe tener derechos de lectura para las entradas ACL. El usuario anónimo no puede ver esta información de forma predeterminada: inicie sesión como administrador para ver la información, por ejemplo.</p> </td>
+   <td><p>Mostrar permisos basados en la ruta, el nivel de repositorio o el principal.</p> <p>Los permisos se desglosan en</p> <p>- <strong>Directiva de control de acceso aplicable</strong>: directivas que se pueden aplicar a la selección.</p> <p>- <strong>Directivas de control de acceso local</strong>: Las directivas aplicadas localmente a la selección.</p> <p>- <strong>Directivas efectivas de control de acceso</strong>: Las directivas aplicadas para la selección podrían establecerse localmente o heredarse de los nodos primarios.</p> <p>Nota. Para poder ver la información de control de acceso, el usuario que ha iniciado sesión en CRXDE Lite debe tener derechos de lectura para las entradas ACL. El usuario anónimo no puede ver esta información de forma predeterminada: inicie sesión como administrador para ver la información, por ejemplo.</p> </td>
   </tr>
   <tr>
    <td>Pestaña Replicación</td>
@@ -104,7 +104,7 @@ CRXDE Lite ofrece las siguientes funciones:
   </tr>
   <tr>
    <td>Crear...<br /> </td>
-   <td><p>Menú desplegable para crear lo siguiente bajo el nodo seleccionado:<br /> </p> <p>- <strong>Nodo</strong>: un nodo con un tipo de nodo arbitrario<br /> </p> <p>- <strong>Archivo</strong>: nt:nodo de archivo y su subnodo nt:resource</p> <p>- <strong>Carpeta</strong>: nt:nodo de carpeta</p> <p>AEM - <strong>Plantilla</strong>: plantilla de la</p> <p>AEM - <strong>Componente</strong>: componente de</p> <p>AEM - <strong>Cuadro de diálogo</strong>: Cuadro de diálogo de</p> </td>
+   <td><p>Menú desplegable para crear lo siguiente bajo el nodo seleccionado:<br /> </p> <p>- <strong>Nodo</strong>: un nodo con un tipo de nodo arbitrario<br /> </p> <p>- <strong>Archivo</strong>: nt:nodo de archivo y su subnodo nt:resource</p> <p>- <strong>Carpeta</strong>: nt:nodo de carpeta</p> <p>- <strong>Plantilla</strong>: Plantilla de AEM</p> <p>- <strong>Componente</strong>: componente de AEM</p> <p>- <strong>Diálogo</strong>: cuadro de diálogo de AEM</p> </td>
   </tr>
   <tr>
    <td>Eliminar <br /> </td>
@@ -143,9 +143,9 @@ CRXDE Lite ofrece las siguientes funciones:
 
 ## Creación de una carpeta {#creating-a-folder}
 
-Para crear una carpeta con el CRXDE Lite:
+Para crear una carpeta con CRXDE Lite:
 
-1. Abra el CRXDE Lite en el explorador.
+1. Abra CRXDE Lite en el explorador.
 1. En el panel de navegación, haga clic con el botón derecho en la carpeta en la que desea crear la carpeta, seleccione **Crear...**, luego **Crear carpeta...**.
 
 1. Escriba la carpeta **Name** y haga clic en **Aceptar**.
@@ -154,9 +154,9 @@ Para crear una carpeta con el CRXDE Lite:
 
 ## Creación de una plantilla {#creating-a-template}
 
-Para crear una plantilla con un CRXDE Lite:
+Para crear una plantilla con CRXDE Lite:
 
-1. Abra el CRXDE Lite en el explorador.
+1. Abra CRXDE Lite en el explorador.
 1. En el panel de navegación, haga clic con el botón derecho en la carpeta donde desea crear la plantilla, seleccione **Crear...**, luego **Crear plantilla...**.
 
 1. Escriba la **Etiqueta**, **Título**, **Descripción**, **Tipo de recurso** y **Clasificación** de la plantilla. Haga clic en **Siguiente**.
@@ -181,9 +181,9 @@ Puede agregar propiedades a la plantilla: consulte la sección [Creación de una
 
 La característica que se describe aquí solo está disponible si está instalado CQ5, es decir, si el tipo de nodo `cq:Component` está disponible en el repositorio.
 
-Para crear un componente con un CRXDE Lite:
+Para crear un componente con CRXDE Lite:
 
-1. Abra el CRXDE Lite en el explorador.
+1. Abra CRXDE Lite en el explorador.
 1. En el panel de navegación, haga clic con el botón derecho en la carpeta donde desee crear el componente, seleccione **Crear...**, luego **Crear componente...**.
 
 1. Escriba **Label**, **Title**, **Description**, **Super Resource Type** y **Group** del componente. Haga clic en **Siguiente**.
@@ -204,9 +204,9 @@ Esto crea lo siguiente:
 
 ## Creación de un cuadro de diálogo {#creating-a-dialog}
 
-Para crear un cuadro de diálogo con el CRXDE Lite:
+Para crear un cuadro de diálogo con CRXDE Lite:
 
-1. Abra el CRXDE Lite en el explorador.
+1. Abra CRXDE Lite en el explorador.
 1. En el panel de navegación, haga clic con el botón secundario en el componente donde desee crear el cuadro de diálogo, seleccione **Crear...** y, a continuación, **Crear cuadro de diálogo...**.
 
 1. Escriba **Label** y **Title**. Haga clic en **OK**.
@@ -219,13 +219,13 @@ Crea un cuadro de diálogo con la siguiente estructura:
 
 Ahora puede adaptar el cuadro de diálogo a sus necesidades modificando propiedades o creando nodos.
 
-También puede utilizar el Editor de cuadros de diálogo para editar un cuadro de diálogo. Al hacer doble clic en el nodo de diálogo en el CRXDE Lite, aparece el editor. Consulte [Editor de cuadros de diálogo](/help/sites-developing/dialog-editor.md) para obtener más información.
+También puede utilizar el Editor de cuadros de diálogo para editar un cuadro de diálogo. Al hacer doble clic en el nodo de diálogo en CRXDE Lite, aparece el editor. Consulte [Editor de cuadros de diálogo](/help/sites-developing/dialog-editor.md) para obtener más información.
 
 ## Creación de un nodo {#creating-a-node}
 
-Para crear un nodo con un CRXDE Lite:
+Para crear un nodo con CRXDE Lite:
 
-1. Abra el CRXDE Lite en el explorador.
+1. Abra CRXDE Lite en el explorador.
 1. En el panel de navegación, haga clic con el botón derecho en el nodo donde desee crear el nodo, seleccione **Crear ...** y, a continuación, **Crear nodo ...**.
 1. Escriba **Name** y **Type**. Haga clic en **OK**.
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
@@ -240,9 +240,9 @@ Ahora puede adaptar el nodo a sus necesidades modificando propiedades o creando 
 
 ## Creación de una propiedad {#creating-a-property}
 
-Para crear una propiedad con el CRXDE Lite:
+Para crear una propiedad con CRXDE Lite:
 
-1. Abra el CRXDE Lite en el explorador.
+1. Abra CRXDE Lite en el explorador.
 1. En el panel Navegación, seleccione el nodo al que desee agregar la nueva propiedad.
 1. En la ficha **Propiedades** del panel inferior, escriba **Nombre**, **Tipo** y **Valor**. Haga clic en **Agregar**.
 
@@ -252,7 +252,7 @@ Para crear una propiedad con el CRXDE Lite:
 
 Para crear una secuencia de comandos:
 
-1. Abra el CRXDE Lite en el explorador.
+1. Abra CRXDE Lite en el explorador.
 1. En el panel de navegación, haga clic con el botón derecho en el componente donde desee crear el script, seleccione **Crear...**, luego **Crear archivo...**.
 
 1. Escriba el archivo **Name**, incluida su extensión. Haga clic en **OK**.
@@ -263,11 +263,11 @@ Para crear una secuencia de comandos:
 
 ## Exportación e importación de tipos de nodo {#exporting-and-importing-node-types}
 
-Con CRXDE Lite, puede importar o exportar definiciones de tipo de nodo en [notación CND (Compact Namespace and Node Type Definition)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Con CRXDE Lite, puede importar o exportar definiciones de tipo de nodo en la notación [CND (Compact Namespace and Node Type Definition)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Para exportar una definición de tipo de nodo:
 
-1. Abra el CRXDE Lite en el explorador.
+1. Abra CRXDE Lite en el explorador.
 1. Seleccione el nodo requerido.
 1. Seleccione **Herramientas** y luego **Exportar tipo de nodo**.
 
@@ -275,7 +275,7 @@ Para exportar una definición de tipo de nodo:
 
 Para importar una definición de tipo de nodo:
 
-1. Abra el CRXDE Lite en el explorador.
+1. Abra CRXDE Lite en el explorador.
 1. Seleccione **Herramientas** y después **Importar tipo de nodo...**.
 
 1. Introduzca la notación CDN para la definición en el cuadro de texto.
@@ -286,7 +286,7 @@ Para importar una definición de tipo de nodo:
 
 Con CRXDE Lite, puede mostrar el archivo `error.log` que se encuentra en el sistema de archivos en `<crx-install-dir>/crx-quickstart/server/logs` y filtrarlo con el nivel de registro apropiado. Proceda como se indica a continuación:
 
-1. Abra el CRXDE Lite en el explorador.
+1. Abra CRXDE Lite en el explorador.
 1. En la ficha **Consola** de la parte inferior de la ventana, en el menú desplegable de la derecha, seleccione **Registros de servidor**.
 
 1. Haga clic en el icono **Detener** para mostrar los mensajes.

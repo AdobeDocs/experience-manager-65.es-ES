@@ -1,6 +1,6 @@
 ---
 title: Internacionalización de cadenas de IU
-description: Las API Java&trade; y JavaScript permiten internacionalizar cadenas
+description: Las API de Java&trade; y JavaScript permiten internacionalizar cadenas
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -29,7 +29,7 @@ Para obtener una descripción general del proceso de internacionalización y loc
 
 ## Internacionalización de cadenas en código Java™ y JSP {#internationalizing-strings-in-java-and-jsp-code}
 
-El paquete Java™ `com.day.cq.i18n` le permite mostrar cadenas localizadas en la interfaz de usuario. La clase `I18n` proporciona el método `get` que recupera cadenas localizadas del diccionario Adobe Experience Manager AEM (). El único parámetro requerido del método `get` es el literal de cadena en inglés. El idioma predeterminado de la interfaz de usuario es inglés. El ejemplo siguiente localiza la palabra `Search`:
+El paquete Java™ `com.day.cq.i18n` le permite mostrar cadenas localizadas en la interfaz de usuario. La clase `I18n` proporciona el método `get` que recupera cadenas localizadas del diccionario de Adobe Experience Manager (AEM). El único parámetro requerido del método `get` es el literal de cadena en inglés. El idioma predeterminado de la interfaz de usuario es inglés. El ejemplo siguiente localiza la palabra `Search`:
 
 `i18n.get("Search");`
 
@@ -177,7 +177,7 @@ Compruebe si ha internacionalizado todas las cadenas de la interfaz de usuario. 
 
 `USR_*Default-String*_尠`
 
-AEM La siguiente imagen muestra la traducción de código auxiliar de la página de inicio de la:
+La siguiente imagen muestra la traducción de código auxiliar de la página principal de AEM:
 
 ![chlimage_1](assets/chlimage_1a.jpeg)
 

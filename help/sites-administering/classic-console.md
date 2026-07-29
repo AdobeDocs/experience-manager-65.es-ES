@@ -12,8 +12,8 @@ feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 1%
+source-wordcount: '905'
+ht-degree: 2%
 
 ---
 
@@ -50,19 +50,19 @@ por ejemplo, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 1. En ambos casos, introduzca
 
    * **Título**
-(*Requerido*) El título para mostrar de la etiqueta. Aunque se puede introducir cualquier carácter,
-se recomienda no utilizar estos caracteres especiales:
+     (*Requerido*) El título para mostrar de la etiqueta. Aunque se puede introducir cualquier carácter,
+     se recomienda no utilizar estos caracteres especiales:
 
-      * `colon (:)` - delimitador de área de nombres
-      * `forward slash (/)` - delimitador de subetiqueta
+     * `colon (:)` - delimitador de área de nombres
+     * `forward slash (/)` - delimitador de subetiqueta
 
      Estos caracteres no se mostrarán si se introducen.
 
    * **Nombre**
-(*Requerido*) El nombre de nodo para la etiqueta.
+     (*Requerido*) El nombre de nodo para la etiqueta.
 
    * **Descripción**
-(*Opcional*) Una descripción para la etiqueta.
+     (*Opcional*) Una descripción para la etiqueta.
 
    * seleccionar **Crear**
 

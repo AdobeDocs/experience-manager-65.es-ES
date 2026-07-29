@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 93%
+source-wordcount: '844'
+ht-degree: 88%
 
 ---
 
@@ -153,7 +153,8 @@ Compruebe los siguientes parámetros:
 
    Probablemente, el motivo es que uno o más parámetros de la dirección URL sean incorrectos.
 
-   Compruebe los siguientes parámetros: Texto del paso
+   Compruebe los siguientes parámetros:
+   Texto del paso
 
 <table>
  <tbody>

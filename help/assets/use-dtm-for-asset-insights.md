@@ -1,6 +1,6 @@
 ---
 title: Habilitar Assets Insights mediante DTM
-description: Aprenda a utilizar la Dynamic Tag Management (DTM) de Adobe para habilitar Assets Insights.
+description: Aprenda a utilizar Adobe Dynamic Tag Management (DTM) para habilitar Assets Insights.
 contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
@@ -8,23 +8,23 @@ exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 0%
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
 # Habilitar Assets Insights mediante DTM {#enable-asset-insights-through-dtm}
 
-Adobe Dynamic Tag Management es una herramienta que activa sus herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics. Puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Assets Insights o puede utilizar DTM para insertar etiquetas de Assets Insights. Las perspectivas solo son compatibles y se proporcionan para las imágenes.
+Adobe Dynamic Tag Management es una herramienta que activa sus herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics. Puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen las perspectivas de Assets o puede utilizar la DTM para insertar etiquetas de perspectivas de Assets. Las perspectivas solo son compatibles y se proporcionan para las imágenes.
 
 >[!CAUTION]
 >
->La DTM de Adobe está obsoleta en favor de [!DNL Adobe Experience Platform] y pronto llegará al [fin de su vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). El Adobe recomienda [usar [!DNL Adobe Experience Platform] para las perspectivas de recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=es).
+>La DTM de Adobe está en desuso a favor de [!DNL Adobe Experience Platform] y pronto llegará al [final de su vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda [usar [!DNL Adobe Experience Platform] para las perspectivas de recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Siga estos pasos para habilitar Assets Insights mediante DTM.
 
-1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuración de perspectivas]**.
-1. [Configuración de la implementación del Experience Manager con el Cloud Service DTM](/help/sites-administering/dtm.md)
+1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuración de perspectivas]**.
+1. [Configuración de la implementación de Experience Manager con DTM Cloud Service](/help/sites-administering/dtm.md)
 
    El token de API debería estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite **[!UICONTROL Configuración de la cuenta]** en el perfil de usuario. Este paso no es necesario desde el punto de vista de Assets Insights, ya que la integración de Experience Manager Sites con Assets Insights aún está en proceso.
 
@@ -41,11 +41,11 @@ Siga estos pasos para habilitar Assets Insights mediante DTM.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Expanda **[!UICONTROL JavaScript /Etiquetas de terceros]**. A continuación, haga clic en **[!UICONTROL Agregar nuevo script]** en la ficha **[!UICONTROL HTML secuencial]** para abrir el cuadro de diálogo Script.
+1. Expanda **[!UICONTROL JavaScript /Etiquetas de terceros]**. A continuación, haga clic en **[!UICONTROL Agregar nuevo script]** en la pestaña **[!UICONTROL HTML secuencial]** para abrir el cuadro de diálogo Script.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]**.
+1. Haga clic en el logotipo de Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]**.
 1. Haga clic en **[!UICONTROL Rastreador de páginas de información]**, copie el código de seguimiento y péguelo en el cuadro de diálogo Script que abrió en el paso 6. Guarde los cambios.
 
    >[!NOTE]
@@ -53,7 +53,7 @@ Siga estos pasos para habilitar Assets Insights mediante DTM.
    >* `AppMeasurement.js` se ha eliminado. Se espera que esté disponible a través de la herramienta Adobe Analytics de DTM.
    >* Se eliminó la llamada a `assetAnalytics.dispatcher.init()`. Se espera llamar a la función una vez que la herramienta Adobe Analytics de DTM termine de cargarse.
    >* Dependiendo de dónde esté alojado el rastreador de páginas de Assets Insights (por ejemplo, Experience Manager, CDN, etc.), el origen del origen del script puede requerir cambios.
-   >* Para el rastreador de páginas alojado por el Experience Manager, el origen debe apuntar a una instancia de publicación utilizando el nombre de host de la instancia de Dispatcher.
+   >* Para el rastreador de páginas alojado en Experience Manager, el origen debe señalar a una instancia de publicación con el nombre de host de la instancia de Dispatcher.
 
 1. Acceso `https://dtm.adobe.com`. Haga clic en **[!UICONTROL Información general]** en la propiedad web y luego haga clic en **[!UICONTROL Agregar herramienta]** o abrir una herramienta Adobe Analytics existente. Al crear la herramienta, puede establecer **[!UICONTROL Método de configuración]** en **[!UICONTROL Automático]**.
 
@@ -111,7 +111,7 @@ Siga estos pasos para habilitar Assets Insights mediante DTM.
    * El código llama a `assetAnalytics.dispatcher.init()` después de asegurarse de que `_satellite.getToolsByType('sc')[0].getS()` se ha inicializado y de que `assetAnalytics,dispatcher.init` está disponible. Por lo tanto, puede omitir agregarlo en el paso 11.
    * Como se indica en los comentarios incluidos en el código del Rastreador de páginas de perspectivas (**[!UICONTROL Herramientas > Assets > Rastreador de páginas de perspectivas]**), cuando el Rastreador de páginas no crea un objeto `AppMeasurement`, los tres primeros argumentos (RSID, Servidor de seguimiento y Espacio de nombres del visitante) son irrelevantes. En su lugar, se pasan cadenas vacías para resaltar esto.\
      Los argumentos restantes corresponden a lo que está configurado en la página Configuración de perspectivas (**[!UICONTROL Herramientas > Assets > Configuración de perspectivas]**).
-   * El objeto de AppMeasurement se recupera consultando `satelliteLib` todos los motores de SiteCatalyst disponibles. Si hay varias etiquetas configuradas, cambie el índice del selector de matriz correctamente. Las entradas de la matriz se ordenan según las herramientas de SiteCatalyst disponibles en la interfaz de DTM.
+   * El objeto AppMeasurement se recupera consultando `satelliteLib` todos los motores SiteCatalyst disponibles. Si hay varias etiquetas configuradas, cambie el índice del selector de matriz correctamente. Las entradas de la matriz se ordenan según las herramientas de SiteCatalyst disponibles en la interfaz de DTM.
 
 1. Guarde y cierre la ventana Editor de código y, a continuación, guarde los cambios en la configuración de la herramienta.
 1. En la ficha **[!UICONTROL Aprobaciones]**, apruebe ambas aprobaciones pendientes. La etiqueta DTM está lista para insertarse en la página web.
