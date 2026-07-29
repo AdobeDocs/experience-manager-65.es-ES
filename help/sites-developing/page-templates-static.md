@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 1%
+source-wordcount: '1584'
+ht-degree: 2%
 
 ---
 
@@ -123,7 +123,7 @@ Se pueden configurar varias propiedades, en particular:
 * **jcr:title** - título de la plantilla; aparece en el cuadro de diálogo al crear una página.
 * **jcr:description**: descripción de la plantilla; aparece en el cuadro de diálogo al crear una página.
 
-Este nodo contiene un nodo jcr:content (cq:PageContent) que se utiliza como base para el nodo de contenido de las páginas resultantes; esto hace referencia, mediante sling:resourceType, al componente que se va a utilizar para procesar el contenido real de una nueva página.
+Este nodo contiene un nodo jcr:content (cq:PageContent) que se usa como base para el nodo de contenido de las páginas resultantes; esto hace referencia, mediante sling:resourceType, al componente que se va a usar para procesar el contenido real de una nueva página.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -133,7 +133,7 @@ Este componente se utiliza para definir la estructura y el diseño del contenido
 
 ### El contenido producido por una plantilla {#the-content-produced-by-a-template}
 
-Las plantillas se utilizan para crear páginas de tipo `cq:Page` (como se mencionó anteriormente, una página es un tipo especial de componente). AEM Cada página de la tiene un nodo estructurado `jcr:content`. Así pues:
+Las plantillas se utilizan para crear páginas de tipo `cq:Page` (como se mencionó anteriormente, una página es un tipo especial de componente). Cada página de AEM tiene un nodo estructurado `jcr:content`. Así pues:
 
 * es de tipo cq:PageContent
 * es un tipo de nodo estructurado que contiene una definición de contenido definida
@@ -141,32 +141,32 @@ Las plantillas se utilizan para crear páginas de tipo `cq:Page` (como se mencio
 
 ### Plantillas predeterminadas {#default-templates}
 
-AEM El paquete incluye varias plantillas predeterminadas disponibles de forma predeterminada. A veces, es posible que desee utilizar las plantillas tal cual. En ese caso, debe asegurarse de que la plantilla esté disponible para el sitio web.
+AEM incluye varias plantillas predeterminadas disponibles de forma predeterminada. A veces, es posible que desee utilizar las plantillas tal cual. En ese caso, debe asegurarse de que la plantilla esté disponible para el sitio web.
 
-AEM Por ejemplo, la viene con varias plantillas, incluidas una página de contenido y una página de inicio.
+Por ejemplo, AEM incluye varias plantillas, como una página de contenido y una página de inicio.
 
 | **Título** | **Componente** | **Ubicación** | **Propósito** |
 |---|---|---|---|
-| Página principal | homepage | geometrixx | Plantilla de la página de inicio de la Geometrixx. |
-| Página de contenido | contentpage | geometrixx | Plantilla de la página de contenido Geometrixx. |
+| Página principal | homepage | geometrixx | Plantilla de la página de inicio de Geometrixx. |
+| Página de contenido | contentpage | geometrixx | Plantilla de la página de contenido de Geometrixx. |
 
 #### Visualización de plantillas predeterminadas {#displaying-default-templates}
 
 Para ver una lista de todas las plantillas del repositorio, siga este procedimiento:
 
-1. En el CRXDE Lite, abra el menú **Herramientas** y haga clic en **Consulta**.
+1. En CRXDE Lite, abra el menú **Herramientas** y haga clic en **Consulta**.
 
 1. En la pestaña Consulta
 1. Como **Tipo**, seleccione **XPath**.
 
-1. En el campo de entrada **Consulta**, escriba la siguiente cadena:
+1. En el campo de entrada **Consulta**, escriba la cadena siguiente:
 //element(&#42;, cq:Template)
 
 1. Haga clic en **Ejecutar**. La lista se muestra en el cuadro de resultados.
 
 Normalmente, se toma una plantilla existente y se desarrolla una nueva para uso propio. Consulte [Desarrollo de plantillas de página](#developing-page-templates) para obtener más información.
 
-Para habilitar una plantilla existente para su sitio web y desea que se muestre en el cuadro de diálogo **Crear página** al crear una página directamente debajo de **Sitios web** desde la consola **Sitios web**, establezca la propiedad allowedPaths del nodo de la plantilla en: **/content(/.&#42;)?**
+Para habilitar una plantilla existente para su sitio web y desea que se muestre en el cuadro de diálogo **Crear página** al crear una página directamente en **Sitios web** desde la consola **Sitios web**, establezca la propiedad allowedPaths del nodo de la plantilla en: **/content(/.&#42;)?**
 
 ## Aplicación de los diseños de plantilla {#how-template-designs-are-applied}
 
@@ -174,7 +174,7 @@ Cuando los estilos se definen en la interfaz de usuario con [Modo de diseño](/h
 
 >[!CAUTION]
 >
->El Adobe recomienda aplicar únicamente diseños mediante [Modo de diseño](/help/sites-authoring/default-components-designmode.md).
+>Adobe solo recomienda aplicar diseños mediante [Modo de diseño](/help/sites-authoring/default-components-designmode.md).
 >
 >La modificación de diseños en CRXDE Lite, por ejemplo, no es una práctica recomendada y la aplicación de dichos diseños puede variar del comportamiento esperado.
 
@@ -182,7 +182,7 @@ Si los diseños solo se aplican mediante el modo de diseño, las siguientes secc
 
 ### Resolución de ruta de diseño {#design-path-resolution}
 
-AEM Al procesar contenido basado en una plantilla estática, intenta aplicar los estilos y el diseño más relevantes al contenido en función de un recorrido de la jerarquía de contenido.
+Al procesar contenido basado en una plantilla estática, AEM intenta aplicar el diseño y los estilos más relevantes al contenido en función de un recorrido de la jerarquía de contenido.
 
 AEM determina el estilo más relevante para un nodo de contenido en el siguiente orden:
 
@@ -198,13 +198,13 @@ Esta es una representación gráfica de la lógica [Resolución de ruta de dise�
 
 ![design_path_resolution](assets/design_path_resolution.png)
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 Considere una estructura de contenido simple como se muestra a continuación, donde un diseño podría aplicarse a cualquiera de los nodos:
 
 `/root/branch/leaf`
 
-AEM En la tabla siguiente se describe cómo elige el diseño el usuario.
+En la tabla siguiente se describe cómo elige AEM un diseño.
 
 <table>
  <tbody>
@@ -212,7 +212,7 @@ AEM En la tabla siguiente se describe cómo elige el diseño el usuario.
    <td><strong>Búsqueda De Diseño Para<br /> </strong></td>
    <td><strong>Hay Diseños Para<br /> </strong></td>
    <td><strong>Diseño elegido<br /> </strong></td>
-   <td><strong>Comentar</strong></td>
+   <td><strong>Comentario</strong></td>
   </tr>
   <tr>
    <td><code class="code">leaf
@@ -265,11 +265,11 @@ AEM En la tabla siguiente se describe cómo elige el diseño el usuario.
 
 ## Desarrollo de plantillas de página {#developing-page-templates}
 
-AEM Las plantillas de página de son simplemente modelos utilizados para crear páginas. Pueden contener tan poco contenido inicial como sea necesario, y su función es crear las estructuras de nodos iniciales correctas, con las propiedades necesarias (principalmente sling:resourceType) configuradas para permitir la edición y el procesamiento.
+Las plantillas de página de AEM son simplemente modelos utilizados para crear páginas. Pueden contener tan poco contenido inicial como sea necesario, y su función es crear las estructuras de nodos iniciales correctas, con las propiedades necesarias (principalmente sling:resourceType) configuradas para permitir la edición y el procesamiento.
 
 ### Creación de una plantilla (basada en una plantilla existente) {#creating-a-new-template-based-on-an-existing-template}
 
-Se puede crear una plantilla nueva completamente desde cero, pero a menudo se copia una plantilla existente y se actualiza para ahorrarle tiempo y esfuerzo. Por ejemplo, las plantillas dentro de Geometrixx se pueden utilizar para ayudarle a empezar.
+Se puede crear una plantilla nueva completamente desde cero, pero a menudo se copia una plantilla existente y se actualiza para ahorrarle tiempo y esfuerzo. Por ejemplo, las plantillas de Geometrixx se pueden utilizar para ayudarle a empezar.
 
 Para crear una plantilla basada en una plantilla existente:
 
@@ -319,7 +319,7 @@ Para crear una plantilla basada en una plantilla existente:
 
 Este ejemplo ilustra cómo permitir que se utilice una plantilla para determinadas rutas de contenido. Las plantillas disponibles para el autor de la página al crear páginas están determinadas por la lógica definida en [Disponibilidad de plantillas](/help/sites-developing/templates.md#template-availability).
 
-1. En CRXDE Lite, vaya a la plantilla que desee utilizar para la página, por ejemplo, la plantilla Newsletter.
+1. En CRXDE Lite, vaya a la plantilla que desee utilizar para la página como, por ejemplo, la plantilla Newsletter.
 1. Cambie la propiedad `allowedPaths` y otras propiedades utilizadas para [disponibilidad de la plantilla](/help/sites-developing/templates.md#template-availability). Por ejemplo, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` significa que esta plantilla está permitida en cualquier ruta de acceso bajo `/content/geometrixx-outdoors`.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)

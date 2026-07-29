@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ La función de foro QnA (preguntas y respuestas) proporciona un área para que l
 
 La documentación describe:
 
-* AEM Adición de la función de foro de control de calidad a un sitio de.
+* Añadir la función de foro de control de calidad a un sitio de AEM.
 * Ajustes de configuración para el componente `QnA`.
 
 ## Añadir un foro de preguntas y respuestas a una página {#adding-a-q-a-forum-to-a-page}
@@ -248,7 +248,7 @@ También pueden identificar respuestas.
 
 Cuando los visitantes del sitio inician sesión, según la configuración, pueden:
 
-* Post tiene una nueva pregunta.
+* Publicar una nueva pregunta.
 * Edite o elimine las preguntas que han creado.
 * Marcar preguntas o respuestas de otros miembros.
 * Identifique las respuestas a las preguntas que han creado.

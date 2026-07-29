@@ -1,6 +1,6 @@
 ---
 title: Marco de trabajo de etiquetado de AEM
-description: AEM Etiquetado de contenido y uso de la infraestructura de etiquetado de
+description: Etiquetado de contenido y uso de la infraestructura de etiquetado de AEM
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 0%
+source-wordcount: '1649'
+ht-degree: 1%
 
 ---
 
@@ -25,18 +25,18 @@ El etiquetado permite clasificar y organizar el contenido. Las etiquetas se pued
 * Consulte el documento [Uso de etiquetas](/help/sites-authoring/tags.md) para obtener información sobre cómo etiquetar contenido como autor de contenido.
 * Consulte el documento [Administración de etiquetas](/help/sites-administering/tags.md) para conocer la perspectiva del administrador sobre la creación y administración de etiquetas y sobre las etiquetas de contenido que se han aplicado.
 
-AEM Este artículo se centra en el marco de trabajo subyacente que admite el etiquetado en los entornos de y en cómo utilizarlo como desarrollador.
+Este artículo se centra en el marco de trabajo subyacente que admite el etiquetado en AEM y en cómo utilizarlo como desarrollador.
 
 ## Introducción {#introduction}
 
-AEM Para etiquetar contenido y utilizar la infraestructura de etiquetado de:
+Para etiquetar contenido y utilizar la infraestructura de etiquetado de AEM:
 
 * La etiqueta debe existir como un nodo de tipo `[cq:Tag](#tags-cq-tag-node-type)` bajo el [nodo raíz de taxonomía.](#taxonomy-root-node)
 
 * El nodo de contenido etiquetado `NodeType` debe incluir el mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 * [`TagID`](#tagid) se agrega a la propiedad [`cq:tags`](#tagged-content-cq-tags-property) del nodo de contenido y se resuelve en un nodo de tipo ` [cq:Tag](#tags-cq-tag-node-type)`.
 
-## Etiquetas : cq:Tipo de nodo de etiqueta  {#tags-cq-tag-node-type}
+## Etiquetas: cq:Tag tipo de nodo  {#tags-cq-tag-node-type}
 
 La declaración de una etiqueta se captura en el repositorio en un nodo de tipo `cq:Tag`.
 
@@ -74,7 +74,7 @@ El TagID consiste en un [área de nombres](#tag-namespace) seguido del TagID loc
 
 El nodo raíz de taxonomía es la ruta base para todas las etiquetas del repositorio. El nodo raíz de taxonomía no debe ser un nodo de tipo `cq:Tag`.
 
-AEM En la ruta de acceso base es `/content/cq:tags` y el nodo raíz es de tipo `cq:Folder`.
+En AEM, la ruta de acceso base es `/content/cq:tags` y el nodo raíz es del tipo `cq:Folder`.
 
 ### Área de nombres de etiqueta {#tag-namespace}
 
@@ -125,15 +125,15 @@ Además, la denegación de permisos de lectura para determinadas etiquetas o ár
 
 Una práctica típica incluye:
 
-* Permitiendo el acceso de escritura de grupo/función `tag-administrators` a todas las áreas de nombres (agregar/modificar en `/content/cq:tags`). AEM Este grupo incluye a los usuarios que ya están preparados para su uso en el momento de la compra.
+* Permitiendo el acceso de escritura de grupo/función `tag-administrators` a todas las áreas de nombres (agregar/modificar en `/content/cq:tags`). Este grupo incluye AEM de forma predeterminada.
 * Permite a los usuarios/autores acceder a todas las áreas de nombres que deben poder leerlas (principalmente todas).
 * Permitir que los usuarios o los autores escriban en aquellas áreas de nombres en las que los usuarios o los autores deben poder definir libremente las etiquetas (agregue un nodo en `/content/cq:tags/some_namespace`)
 
-## Contenido etiquetable : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## Contenido etiquetable: cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 Para que los desarrolladores de aplicaciones adjunten el etiquetado a un tipo de contenido, el registro del nodo ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) debe incluir el mixin `cq:Taggable` o el mixin `cq:OwnerTaggable`.
 
-El mixin `cq:OwnerTaggable`, que hereda de `cq:Taggable`, tiene la intención de indicar que el propietario/autor puede clasificar el contenido. AEM En el caso de los usuarios, solo es un atributo del nodo `cq:PageContent`. El marco de etiquetado no requiere el mixin `cq:OwnerTaggable`.
+El mixin `cq:OwnerTaggable`, que hereda de `cq:Taggable`, tiene la intención de indicar que el propietario/autor puede clasificar el contenido. En AEM, solo es un atributo del nodo `cq:PageContent`. El marco de etiquetado no requiere el mixin `cq:OwnerTaggable`.
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ El mixin `cq:OwnerTaggable`, que hereda de `cq:Taggable`, tiene la intención de
 
 Las definiciones de tipo de nodo existen en el repositorio como archivos CDN. La notación CND se define como parte de [Documentación de Jackrabbit](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
-AEM Las definiciones esenciales para los tipos de nodo incluidos en la lista de nombres de dominio son las siguientes:
+Las definiciones esenciales para los tipos de nodo incluidos en AEM son las siguientes:
 
 ```xml
 [cq:Tag] > mix:title, nt:base
@@ -164,13 +164,13 @@ AEM Las definiciones esenciales para los tipos de nodo incluidos en la lista de 
     mixin
 ```
 
-## Contenido etiquetado: cq:tags (propiedad) {#tagged-content-cq-tags-property}
+## Contenido etiquetado: propiedad cq:tags {#tagged-content-cq-tags-property}
 
 La propiedad `cq:tags` es una matriz `String` que se usa para almacenar uno o más TagID cuando los autores o visitantes del sitio los aplican al contenido. La propiedad solo tiene significado cuando se agrega a un nodo que se define con el mixin `[cq:Taggable](#taggable-content-cq-taggable-mixin)`.
 
 >[!NOTE]
 >
->AEM Para utilizar la funcionalidad de etiquetado de la etiqueta, las aplicaciones desarrolladas personalizadas no deben definir propiedades de etiqueta distintas de `cq:tags`.
+>Para utilizar la funcionalidad de etiquetado de AEM, las aplicaciones desarrolladas personalizadas no deben definir propiedades de etiquetas distintas de `cq:tags`.
 
 ## Mover y combinar etiquetas {#moving-and-merging-tags}
 
@@ -178,14 +178,14 @@ A continuación se describen los efectos que se producen en el repositorio al mo
 
 * Cuando una etiqueta A se mueve o se combina con la etiqueta B en `/content/cq:tags`:
 
-   * La etiqueta A no se ha eliminado y obtiene la propiedad `cq:movedTo`.
-   * La etiqueta B se crea (si se ha producido un movimiento) y obtiene una propiedad `cq:backlinks`.
+  * La etiqueta A no se ha eliminado y obtiene la propiedad `cq:movedTo`.
+  * La etiqueta B se crea (si se ha producido un movimiento) y obtiene una propiedad `cq:backlinks`.
 
 * `cq:movedTo` señala a la etiqueta B.
 
-   * Esta propiedad significa que la etiqueta A se ha movido o combinado en la etiqueta B. Al mover la etiqueta B, se actualiza esta propiedad en consecuencia. Por lo tanto, la etiqueta A está oculta y solo se mantiene en el repositorio para resolver los ID de etiqueta en los nodos de contenido que apuntan a la etiqueta A. El recolector de elementos no utilizados de etiquetas elimina las etiquetas como la etiqueta A una vez que los nodos de contenido no las señalan.
+  * Esta propiedad significa que la etiqueta A se ha movido o combinado en la etiqueta B. Al mover la etiqueta B, se actualiza esta propiedad en consecuencia. Por lo tanto, la etiqueta A está oculta y solo se mantiene en el repositorio para resolver los ID de etiqueta en los nodos de contenido que apuntan a la etiqueta A. El recolector de elementos no utilizados de etiquetas elimina las etiquetas como la etiqueta A una vez que los nodos de contenido no las señalan.
 
-   * Un valor especial para la propiedad `cq:movedTo` es `nirvana`. Se aplica cuando se elimina la etiqueta, pero no se puede eliminar del repositorio porque hay subetiquetas con un `cq:movedTo` que deben conservarse.
+  * Un valor especial para la propiedad `cq:movedTo` es `nirvana`. Se aplica cuando se elimina la etiqueta, pero no se puede eliminar del repositorio porque hay subetiquetas con un `cq:movedTo` que deben conservarse.
 
   >[!NOTE]
   >
@@ -205,13 +205,13 @@ A continuación se describen los efectos que se producen en el repositorio al mo
 
 * La lectura de una propiedad `cq:tags` de un nodo de contenido implica la siguiente resolución:
 
-   1. Si no hay ninguna coincidencia en `/content/cq:tags`, no se devuelve ninguna etiqueta.
+  1. Si no hay ninguna coincidencia en `/content/cq:tags`, no se devuelve ninguna etiqueta.
 
-   1. Si la etiqueta tiene una propiedad `cq:movedTo` establecida, se sigue el identificador de etiqueta al que se hace referencia.
+  1. Si la etiqueta tiene una propiedad `cq:movedTo` establecida, se sigue el identificador de etiqueta al que se hace referencia.
 
-      * Este paso se repite siempre que la etiqueta seguida tenga la propiedad `cq:movedTo`.
+     * Este paso se repite siempre que la etiqueta seguida tenga la propiedad `cq:movedTo`.
 
-   1. Si la etiqueta seguida no tiene una propiedad `cq:movedTo`, se leerá la etiqueta.
+  1. Si la etiqueta seguida no tiene una propiedad `cq:movedTo`, se leerá la etiqueta.
 
 * Para publicar el cambio cuando se haya movido o combinado una etiqueta, se debe replicar el nodo `cq:Tag` y todos sus backlinks. Esto se realiza automáticamente cuando la etiqueta se activa en la consola de administración de etiquetas.
 
@@ -225,4 +225,4 @@ A continuación se describen los efectos que se producen en el repositorio al mo
 
 Desde Adobe Experience Manager 6.4, las etiquetas se almacenan en `/content/cq:tags`, mientras que las versiones anteriores almacenaban etiquetas en `/etc/tags`.
 
-AEM Siempre que se actualice un sistema de desde una versión anterior a la 6.4, las etiquetas deben migrarse a `/content/cq:tags`. AEM Consulte [Reestructuración común de repositorios en la versión 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) de para obtener más información.
+Siempre que se actualice un sistema AEM desde una versión anterior a la 6.4, las etiquetas deben migrarse a `/content/cq:tags`. Consulte [Reestructuración común de repositorios en AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) para obtener más información.

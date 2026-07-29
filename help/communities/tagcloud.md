@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '579'
 ht-degree: 1%
 
 ---
@@ -53,8 +53,8 @@ En la ficha **[!UICONTROL Nube de etiquetas social]**, especifique qué etiqueta
 * **[!UICONTROL Etiquetas sociales para mostrar]**
 Identifique las etiquetas UGC que desea mostrar. Las opciones desplegables son:
 
-   * `From page and child pages`
-   * `All tags`
+  * `From page and child pages`
+  * `All tags`
 
   El valor predeterminado es `From page and child pages`, donde &quot;página&quot; hace referencia a la configuración de **Página** que aparece a continuación.
 
@@ -84,8 +84,8 @@ En la ficha **[!UICONTROL Nube de etiquetas social (Diseño)]**, especifique có
 
   Por ejemplo:
 
-   * Comprobado: `Geometrixx Media: Gadgets / Cars`
-   * Desactivado: `Cars`
+  * Comprobado: `Geometrixx Media: Gadgets / Cars`
+  * Desactivado: `Cars`
 
   No hay diferencia para una etiqueta simple.
 
@@ -103,8 +103,8 @@ En la ficha **[!UICONTROL Nube de etiquetas social (Diseño)]**, especifique có
 
   `Geometrixx Media (the namespace)`, `Gadgets` y `Cars`
 
-   * Activado: solo se muestran `Cars`, si se aplica.
-   * Desactivado: se muestran `Geometrixx Media`, `Gadgets` y `Cars`, si se aplican.
+  * Activado: solo se muestran `Cars`, si se aplica.
+  * Desactivado: se muestran `Geometrixx Media`, `Gadgets` y `Cars`, si se aplican.
 
   Una etiqueta simple es una etiqueta de hoja.
 

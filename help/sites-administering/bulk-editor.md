@@ -1,5 +1,5 @@
 ---
-title: Editor por lotes
+title: El editor masivo
 description: Aprenda a utilizar el Editor por lotes para una edición eficaz cuando el contexto de la página visual no sea necesario.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,13 +12,13 @@ feature: Configuring
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 0%
+source-wordcount: '1148'
+ht-degree: 1%
 
 ---
 
 
-# Editor por lotes{#the-bulk-editor}
+# El editor masivo{#the-bulk-editor}
 
 El editor en bloque permite una edición eficaz cuando el contexto de la página visual no es necesario, ya que le permite:
 
@@ -35,13 +35,13 @@ En esta sección se describe cómo trabajar con el editor en lotes en la consola
 
 >[!CAUTION]
 >
->AEM Con la [obsolescencia de la IU clásica](/help/release-notes/deprecated-removed-features.md) en la versión 6.4 de la versión, el editor en masa también se ha quedado obsoleto, por lo que el Adobe no tiene previsto mejorar aún más el editor en masa.
+>Con la [desaprobación de la IU clásica](/help/release-notes/deprecated-removed-features.md) en AEM 6.4, el editor en lotes también ha quedado obsoleto y, por lo tanto, Adobe no planea mejorar aún más el editor en lotes.
 
 ## Ejemplo de caso de uso para el editor en bloque {#example-use-case-for-the-bulk-editor}
 
 Por ejemplo, si necesita todos los nombres y direcciones de correo electrónico de los usuarios que han rellenado una encuesta determinada, el editor en masa puede proporcionar esa información y puede exportarla a una hoja de cálculo.
 
-En el sitio web del Geometrixx se incluye un ejemplo que ilustra un caso de uso de este tipo:
+En el sitio web de Geometrixx se incluye un ejemplo que ilustra un caso de uso de este tipo:
 
 1. Vaya a la página **Asistencia** y luego a la encuesta **Satisfacción con el servicio al cliente**.
 1. **Editar** el párrafo de **Inicio del formulario**. En el cuadro de diálogo, haga clic en la ficha **Avanzado**, expanda **Configuración de acción** y, a continuación, haga clic en **Ver datos...**.
@@ -77,7 +77,7 @@ Para utilizar el Editor por lotes para editar varios elementos a la vez:
   </tr>
   <tr>
    <td>Ruta de acceso raíz</td>
-   <td>Indica la ruta raíz que busca el editor en masa.<br /> Por ejemplo, <code>/content/geometrixx/en</code>. El editor en lotes busca en todos los nodos secundarios.</td>
+   <td>Indica la ruta de acceso raíz que busca el editor en masa.<br /> Por ejemplo, <code>/content/geometrixx/en</code>. El editor en lotes busca en todos los nodos secundarios.</td>
   </tr>
   <tr>
    <td>Parámetros de consulta</td>
@@ -93,7 +93,7 @@ Para utilizar el Editor por lotes para editar varios elementos a la vez:
   </tr>
   <tr>
    <td>Columnas y propiedades personalizadas</td>
-   <td>Escriba cualquier otra propiedad que no aparezca en el campo <strong>Propiedades/Columnas</strong>. Estas propiedades personalizadas aparecen en el panel de resultados. Puede agregar varias propiedades utilizando una coma para separar las propiedades. AEM <i>Nota:</i> Si agrega una propiedad personalizada que aún no existe, WCM muestra una celda vacía en la pantalla de WCM. Al modificar la celda vacía y guardarla, la propiedad se agrega al nodo. La propiedad recién creada debe respetar las restricciones de tipo de nodo y los espacios de nombres de propiedad.</td>
+   <td>Escriba cualquier otra propiedad que no aparezca en el campo <strong>Propiedades/Columnas</strong>. Estas propiedades personalizadas aparecen en el panel de resultados. Puede agregar varias propiedades utilizando una coma para separar las propiedades. <i>Nota:</i> Si agrega una propiedad personalizada que aún no existe, AEM WCM muestra una celda vacía. Al modificar la celda vacía y guardarla, la propiedad se agrega al nodo. La propiedad recién creada debe respetar las restricciones de tipo de nodo y los espacios de nombres de propiedad.</td>
   </tr>
  </tbody>
 </table>
@@ -122,7 +122,7 @@ En el ejemplo anterior, todas las páginas que cumplen los criterios de búsqued
 * **ruta de acceso:** solo busca nodos debajo de esta ruta de acceso. Si especifica más de un término con un prefijo de ruta, solo se tendrá en cuenta el último.
 * **tipo:** solo devuelve nodos del tipo de nodo dado. Esto incluye los tipos principal y de mezcla. Puede especificar varios tipos de nodos separados por comas. GQL devuelve nodos que son de cualquiera de los tipos especificados.
 * **ordenar:** ordenar el resultado por las propiedades dadas. Puede especificar varios nombres de propiedades separados por comas. Para ordenar el resultado en orden descendente, simplemente anteponga un signo menos al nombre de la propiedad. Por ejemplo, order:-name. El uso de un signo más devuelve el resultado en orden ascendente, que también es el valor predeterminado.
-* **límite:** limita el número de resultados usando un intervalo. Por ejemplo, límite:10..20 El intervalo está basado en cero, inicio es inclusivo y fin es exclusivo. También puede especificar un `interval:limit:10..` o `limit:..20` abierto
+* **límite:** limita el número de resultados usando un intervalo. Por ejemplo, límite:10..20 El intervalo está basado en cero, inicio es inclusivo y fin es exclusivo. También puede especificar un `interval:limit:10..` abierto o `limit:..20`
 Si se omiten los puntos y solo se especifica un valor, GQL devuelve como máximo este número de resultados. Por ejemplo, `limit:10` (devuelve los primeros diez resultados).
 
 ### Exportación de contenido {#exporting-content}

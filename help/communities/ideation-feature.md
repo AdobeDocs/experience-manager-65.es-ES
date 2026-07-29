@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-La función de ideación proporciona un área para que los visitantes del sitio (miembros de la comunidad) conectados en el entorno de Publish puedan hacer lo siguiente:
+La función de ideación proporciona un área para que los visitantes del sitio (miembros de la comunidad) conectados del entorno de publicación puedan hacer lo siguiente:
 
 * Cree ideas para compartir con la comunidad.
 * Ver y comentar ideas.
@@ -30,7 +30,7 @@ La función de ideación proporciona un área para que los visitantes del sitio 
 
 Esta sección de la documentación describe lo siguiente:
 
-* AEM Adición de la función de ideación a un sitio de.
+* Añadir la función de ideación a un sitio de AEM.
 * Ajustes de configuración del componente Ideación.
 
 ### Adición de una idea a una página {#adding-a-ideation-to-a-page}
