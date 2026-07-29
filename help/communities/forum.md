@@ -219,7 +219,7 @@ En la ficha **Campo de etiqueta**, las etiquetas que se pueden aplicar, si se pe
 
 * **Límite de sugerencias**
 
-  Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. El valor predeterminado es **-**1 (sin límites).
+  Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. El valor predeterminado es **-**&#x200B;1 (sin límites).
 
 #### Pestaña Traducción {#translation-tab}
 
