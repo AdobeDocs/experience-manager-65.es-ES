@@ -1,6 +1,6 @@
 ---
 title: Desarrollo (genérico)
-description: AEM El marco de trabajo de integración incluye una capa de integración con una API, lo que le permite crear componentes de para las capacidades de comercio electrónico.
+description: El marco de integración incluye una capa de integración con una API, que le permite crear componentes de AEM para las funciones de comercio electrónico.
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 solution: Experience Manager,Commerce
@@ -8,7 +8,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 >
 >[La documentación de la API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) también está disponible.
 
-El marco de integración incluye una capa de integración con una API. AEM Esto le permite crear componentes de para las capacidades de comercio electrónico (independientemente del motor específico de comercio electrónico). También le permite utilizar la base de datos interna de CRX AEM o conectar un sistema de comercio electrónico e incorporar datos de productos a la base de datos de productos de la red de comercio electrónico (eCommerce) de la que podrá acceder en cualquier momento
+El marco de integración incluye una capa de integración con una API. Esto permite crear componentes de AEM para las funciones de comercio electrónico (independientemente del motor de comercio electrónico específico). También le permite utilizar la base de datos interna de CRX o conectar un sistema de comercio electrónico y extraer datos de productos en AEM.
 
-AEM Se proporcionan varios componentes listos para usar para usar de la capa de integración de. Actualmente son:
+Se proporcionan varios componentes de AEM listos para usar para usar. Actualmente son:
 
 * Un componente de visualización de producto
 * Un carro de compras
@@ -30,37 +30,37 @@ AEM Se proporcionan varios componentes listos para usar para usar de la capa de 
 * Fecha de salida
 * Búsqueda
 
-Para la búsqueda, se proporciona un gancho de integración que le permite utilizar la búsqueda de Adobe Experience Manager AEM (), una búsqueda de terceros o una combinación de ellas.
+Para la búsqueda, se proporciona un gancho de integración que le permite utilizar la búsqueda de Adobe Experience Manager (AEM), una búsqueda de terceros o una combinación de ellas.
 
 ## Selección de motor de comercio electrónico {#ecommerce-engine-selection}
 
-AEM AEM El marco de comercio electrónico se puede utilizar con cualquier solución de comercio electrónico, el motor que se utiliza debe ser identificado por los siguientes, incluso cuando se utiliza el motor genérico:
+El marco de comercio electrónico se puede utilizar con cualquier solución de comercio electrónico, el motor que se utiliza debe ser identificado por AEM, incluso cuando se utiliza el motor genérico de AEM:
 
 * Los motores de comercio electrónico son servicios OSGi que admiten la interfaz `CommerceService`
 
-   * Los motores se pueden distinguir mediante una propiedad de servicio `commerceProvider`
+  * Los motores se pueden distinguir mediante una propiedad de servicio `commerceProvider`
 
-* AEM Compatibilidad con `Resource.adaptTo()` para `CommerceService` y `Product`
+* AEM admite `Resource.adaptTo()` para `CommerceService` y `Product`
 
-   * La implementación `adaptTo` busca una propiedad `cq:commerceProvider` en la jerarquía del recurso:
+  * La implementación `adaptTo` busca una propiedad `cq:commerceProvider` en la jerarquía del recurso:
 
-      * Si se encuentra, el valor se utiliza para filtrar la búsqueda del servicio de comercio.
-      * Si no se encuentra, se utiliza el servicio de comercio de mayor clasificación.
+    * Si se encuentra, el valor se utiliza para filtrar la búsqueda del servicio de comercio.
+    * Si no se encuentra, se utiliza el servicio de comercio de mayor clasificación.
 
-   * Se usa un mixin `cq:Commerce` para que `cq:commerceProvider` se pueda agregar a recursos con establecimiento inflexible de tipos.
+  * Se usa un mixin `cq:Commerce` para que `cq:commerceProvider` se pueda agregar a recursos con establecimiento inflexible de tipos.
 
 * La propiedad `cq:commerceProvider` también se usa para hacer referencia a la definición de fábrica de comercio adecuada.
 
-   * Por ejemplo, una propiedad `cq:commerceProvider` con el valor Geometrixx se correlaciona con la configuración OSGi para **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`), donde el parámetro `commerceProvider` también tiene el valor `geometrixx`.
-   * Aquí se pueden configurar más propiedades (cuando corresponda y estén disponibles).
+  * Por ejemplo, una propiedad `cq:commerceProvider` con el valor Geometrixx se correlaciona con la configuración OSGi para **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`), donde el parámetro `commerceProvider` también tiene el valor `geometrixx`.
+  * Aquí se pueden configurar más propiedades (cuando corresponda y estén disponibles).
 
-AEM En una instalación estándar se requiere una implementación específica, por ejemplo:
+En una instalación estándar de AEM se requiere una implementación específica, por ejemplo:
 
 |  |  |
 |---|---|
 | `cq:commerceProvider = geometrixx` | ejemplo de geometrixx; incluye extensiones mínimas a la API genérica |
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 ```shell
 /etc/commerce/products/geometrixx-outdoors
@@ -79,7 +79,7 @@ AEM En una instalación estándar se requiere una implementación específica, p
 
 >[!NOTE]
 >
->Con CRXDE Lite AEM puede ver cómo se gestiona esto en el componente de producto para la implementación genérica de la:
+>Con CRXDE Lite puede ver cómo se gestiona esto en el componente de producto para la implementación genérica de AEM:
 >
 >`/apps/geometrixx-outdoors/components/product`
 
@@ -91,10 +91,10 @@ La **sesión de comercio**:
 
 * Es propietario del **carro de compras**
 
-   * realiza operaciones add/remove/etc.
-   * realiza los distintos cálculos en el carro de compras;
+  * realiza operaciones add/remove/etc.
+  * realiza los distintos cálculos en el carro de compras;
 
-     `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
+    `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
 * Posee la persistencia de los datos **order**:
 
@@ -108,7 +108,7 @@ La **sesión de comercio**:
 
 #### Arquitectura de producto y variantes {#architecture-of-product-and-variants}
 
-Un solo producto puede tener varias variaciones; por ejemplo, puede variar según el color y/o el tamaño. Un producto debe definir qué propiedades provocan la variación; términos de Adobe para estos *ejes de variante*.
+Un solo producto puede tener varias variaciones; por ejemplo, puede variar según el color y/o el tamaño. Un producto debe definir qué propiedades impulsan la variación; Adobe denomina a estos *ejes de variante*.
 
 Sin embargo, no todas las propiedades son ejes de variante. Las variaciones también pueden afectar a otras propiedades; por ejemplo, el precio puede depender del tamaño. Estas propiedades no pueden ser seleccionadas por el comprador y, por lo tanto, no se consideran ejes de variante.
 
@@ -120,7 +120,7 @@ Cualquier recurso de producto se puede representar mediante un `Product API`. La
 >
 >De hecho, los ejes de variante están determinados por lo que devuelva `Product.getVariantAxes()`:
 >
->* AEM para la implementación genérica, lo lee de manera de una propiedad en los datos del producto ( `cq:productVariantAxes`)
+>* para la implementación genérica, AEM lo lee de una propiedad en los datos del producto ( `cq:productVariantAxes`)
 >
 >Aunque los productos (en general) pueden tener muchos ejes de variante, el componente de producto listo para usar solo gestiona dos:
 >
@@ -237,27 +237,27 @@ public class AxisFilter implements VariantFilter {
 
 * **Mecanismo de almacenamiento general**
 
-   * Los nodos de producto no son: desestructurados.
-   * Un nodo de producto puede ser:
+  * Los nodos de producto no son :unstructured.
+  * Un nodo de producto puede ser:
 
-      * Una referencia, con los datos del producto almacenados en otra parte:
+    * Una referencia, con los datos del producto almacenados en otra parte:
 
-         * Las referencias de productos contienen una propiedad `productData`, que apunta a los datos del producto (normalmente bajo `/etc/commerce/products`).
-         * Los datos del producto son jerárquicos; los atributos del producto se heredan de los antecesores de un nodo de datos del producto.
-         * Las referencias de producto también pueden contener propiedades locales, que anulan las especificadas en sus datos de producto.
+      * Las referencias de productos contienen una propiedad `productData`, que apunta a los datos del producto (normalmente bajo `/etc/commerce/products`).
+      * Los datos del producto son jerárquicos; los atributos del producto se heredan de los antecesores de un nodo de datos del producto.
+      * Las referencias de producto también pueden contener propiedades locales, que anulan las especificadas en sus datos de producto.
 
-      * Un producto en sí:
+    * Un producto en sí:
 
-         * Sin una propiedad `productData`.
-         * Un nodo de producto que contiene todas las propiedades localmente (y no contiene una propiedad productData) hereda directamente los atributos de producto de sus propios antecesores.
+      * Sin una propiedad `productData`.
+      * Un nodo de producto que contiene todas las propiedades localmente (y no contiene una propiedad productData) hereda directamente los atributos de producto de sus propios antecesores.
 
-* AEM **Estructura de producto no genérica de**
+* **Estructura de producto genérica para AEM**
 
-   * Cada variante debe tener su propio nodo de hoja.
-   * La interfaz de producto representa productos y variantes, pero el nodo de repositorio relacionado es específico sobre cuál es.
-   * El nodo de producto describe los atributos de producto y los ejes de variante.
+  * Cada variante debe tener su propio nodo de hoja.
+  * La interfaz de producto representa productos y variantes, pero el nodo de repositorio relacionado es específico sobre cuál es.
+  * El nodo de producto describe los atributos de producto y los ejes de variante.
 
-#### Ejemplos {#example-1}
+#### Ejemplo {#example-1}
 
 ```shell
 + banyan_shirt
@@ -306,37 +306,37 @@ public class AxisFilter implements VariantFilter {
 
 * El carro de compras es propiedad de `CommerceSession:`
 
-   * `CommerceSession` realiza las acciones de agregar, quitar, etc.
-   * `CommerceSession` también realiza los distintos cálculos en el carro de compras.
-   * `CommerceSession` también aplica cupones y promociones que se han activado en el carro de compras.
+  * `CommerceSession` realiza las acciones de agregar, quitar, etc.
+  * `CommerceSession` también realiza los distintos cálculos en el carro de compras.
+  * `CommerceSession` también aplica cupones y promociones que se han activado en el carro de compras.
 
 * Aunque no está directamente relacionado con el carro de compras, `CommerceSession` también debe proporcionar información sobre los precios del catálogo (ya que posee precios)
 
-   * Los precios pueden tener varios modificadores:
+  * Los precios pueden tener varios modificadores:
 
-      * Descuentos por cantidad.
-      * Diferentes monedas.
-      * Deudor de IVA y exento de IVA.
+    * Descuentos por cantidad.
+    * Diferentes monedas.
+    * Deudor de IVA y exento de IVA.
 
-   * Los modificadores están abiertos con la siguiente interfaz:
+  * Los modificadores están abiertos con la siguiente interfaz:
 
-      * `int CommerceSession.getQuantityBreakpoints(Product product)`
-      * `String CommerceSession.getProductPrice(Product product)`
+    * `int CommerceSession.getQuantityBreakpoints(Product product)`
+    * `String CommerceSession.getProductPrice(Product product)`
 
 **Almacenamiento**
 
 * Almacenamiento
 
-   * AEM En el caso genérico de la, los carros de compras se almacenan en el [ClientContext](/help/sites-administering/client-context.md)
+  * En el caso genérico de AEM, los carros de compras se almacenan en [ClientContext](/help/sites-administering/client-context.md)
 
 **Personalización**
 
-* Siempre dirija la personalización a través del [ClientContext](/help/sites-administering/client-context.md).
+* Siempre lleve a cabo la personalización a través de [ClientContext](/help/sites-administering/client-context.md).
 * Se crea un ClientContext `/version/` del carro de compras en todos los casos:
 
-   * Los productos deben agregarse usando el método `CommerceSession.addCartEntry()`.
+  * Los productos deben agregarse usando el método `CommerceSession.addCartEntry()`.
 
-* A continuación se muestra un ejemplo de información del carro de compras en el carro de ClientContexts:
+* A continuación se muestra un ejemplo de información del carro de compras en el carro de ClientContext:
 
 ![chlimage_1-33](/help/sites-developing/assets/chlimage_1-33a.png)
 
@@ -385,8 +385,8 @@ public class AxisFilter implements VariantFilter {
 * Los precios pueden estar basados en artículos y detalles del pedido, como el peso y/o la dirección de entrega.
 * `CommerceSession` tiene acceso a todas las dependencias, por lo que se puede tratar de manera similar a como se trata a los precios de los productos:
 
-   * `CommerceSession` posee precios de envío.
-   * Use `updateOrder(Map<String, Object> delta)` para recuperar o actualizar los detalles de la entrega.
+  * `CommerceSession` posee precios de envío.
+  * Use `updateOrder(Map<String, Object> delta)` para recuperar o actualizar los detalles de la entrega.
 
 ### Definición de búsqueda {#search-definition}
 
@@ -426,56 +426,56 @@ El punto de entrada para la API de búsqueda es el método `CommerceService#sear
 
 * Cupones:
 
-   * Un cupón es un componente basado en páginas que se crea/edita con la consola Sitios web y se almacena en:
+  * Un cupón es un componente basado en páginas que se crea/edita con la consola Sitios web y se almacena en:
 
-     `/content/campaigns`
+    `/content/campaigns`
 
-   * Suministro de cupones:
+  * Suministro de cupones:
 
-      * Un código de cupón (que el comprador debe escribir en el carro de compras).
-      * Una etiqueta de cupón (que se mostrará después de que el comprador la haya introducido en el carro de compras).
-      * Una ruta de promoción (que define la acción que aplica el cupón).
+    * Un código de cupón (que el comprador debe escribir en el carro de compras).
+    * Una etiqueta de cupón (que se mostrará después de que el comprador la haya introducido en el carro de compras).
+    * Una ruta de promoción (que define la acción que aplica el cupón).
 
-   * Los cupones no tienen sus propias fechas u horas de activación y desactivación, sino que utilizan las de sus campañas principales.
-   * Los motores de comercio externo también pueden proporcionar cupones, que requieren un mínimo de:
+  * Los cupones no tienen sus propias fechas u horas de activación y desactivación, sino que utilizan las de sus campañas principales.
+  * Los motores de comercio externo también pueden proporcionar cupones, que requieren un mínimo de:
 
-      * Un código de cupón
-      * Un método `isValid()`
+    * Un código de cupón
+    * Un método `isValid()`
 
-   * El componente **Cupón** (`/libs/commerce/components/voucher`) proporciona:
+  * El componente **Cupón** (`/libs/commerce/components/voucher`) proporciona:
 
-      * Un procesador para la administración de cupones; muestra todos los cupones que hay actualmente en el carro de compras.
-      * Los cuadros de diálogo de edición (formulario) para administrar (añadir/eliminar) los cupones.
-      * Las acciones necesarias para agregar o eliminar cupones en el carro de compras.
+    * Un procesador para la administración de cupones; muestra todos los cupones que hay actualmente en el carro de compras.
+    * Los cuadros de diálogo de edición (formulario) para administrar (añadir/eliminar) los cupones.
+    * Las acciones necesarias para agregar o eliminar cupones en el carro de compras.
 
 * Promociones:
 
-   * Una promoción es un componente basado en páginas que se crea/edita con la consola Sitios web y se almacena en:
+  * Una promoción es un componente basado en páginas que se crea/edita con la consola Sitios web y se almacena en:
 
-     `/content/campaigns`
+    `/content/campaigns`
 
-   * Oferta de promociones:
+  * Oferta de promociones:
 
-      * Una prioridad
-      * Una ruta del controlador de promoción
+    * Una prioridad
+    * Una ruta del controlador de promoción
 
-   * Puede conectar las promociones a una campaña para definir su fecha/hora de activación/desactivación.
-   * Puede conectar las promociones a una experiencia para definir sus segmentos.
-   * Las promociones que no están conectadas a una experiencia no se activan por sí solas, sino que se pueden activar mediante un cupón.
-   * El componente Promoción (`/libs/commerce/components/promotion`) contiene:
+  * Puede conectar las promociones a una campaña para definir su fecha/hora de activación/desactivación.
+  * Puede conectar las promociones a una experiencia para definir sus segmentos.
+  * Las promociones que no están conectadas a una experiencia no se activan por sí solas, sino que se pueden activar mediante un cupón.
+  * El componente Promoción (`/libs/commerce/components/promotion`) contiene:
 
-      * procesadores y cuadros de diálogo para la administración de promociones
-      * subcomponentes para procesar y editar parámetros de configuración específicos de los controladores de promoción
+    * procesadores y cuadros de diálogo para la administración de promociones
+    * subcomponentes para procesar y editar parámetros de configuración específicos de los controladores de promoción
 
-   * Se proporcionan dos controladores de promoción predeterminados:
+  * Se proporcionan dos controladores de promoción predeterminados:
 
-      * `DiscountPromotionHandler`, que aplica un descuento absoluto o porcentual en todo el carro de compras
-      * `PerfectPartnerPromotionHandler`, que aplica un descuento absoluto o porcentual del producto si el producto del socio también está en el carro de compras
+    * `DiscountPromotionHandler`, que aplica un descuento absoluto o porcentual en todo el carro de compras
+    * `PerfectPartnerPromotionHandler`, que aplica un descuento absoluto o porcentual del producto si el producto del socio también está en el carro de compras
 
-   * El ClientContext `SegmentMgr` resuelve segmentos y el ClientContext `CartMgr` resuelve promociones. Se activa cada promoción sujeta al menos a un segmento resuelto.
+  * ClientContext `SegmentMgr` resuelve segmentos y ClientContext `CartMgr` resuelve promociones. Se activa cada promoción sujeta al menos a un segmento resuelto.
 
-      * AJAX Las promociones activadas se envían de vuelta al servidor mediante una llamada de para volver a calcular el carro de compras.
-      * Las promociones activadas (y los cupones añadidos) también se muestran en el panel ClientContext.
+    * Las promociones activadas se envían de vuelta al servidor mediante una llamada de AJAX para volver a calcular el carro de compras.
+    * Las promociones activadas (y los cupones añadidos) también se muestran en el panel ClientContext.
 
 La adición o eliminación de un cupón de un carro se realiza mediante la API `CommerceSession`:
 
