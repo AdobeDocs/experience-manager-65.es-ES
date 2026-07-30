@@ -10,24 +10,24 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '788'
 ht-degree: 2%
 
 ---
 
-# eCommerce{#ecommerce}
+# Comercio electrónico{#ecommerce}
 
-* [Conceptos &#x200B;](/help/commerce/cif-classic/administering/concepts.md)
+* [Conceptos](/help/commerce/cif-classic/administering/concepts.md)
 * [Administración (genérica)](/help/commerce/cif-classic/administering/generic.md)
 
-Adobe proporciona dos versiones del Commerce integration framework:
+Adobe proporciona dos versiones de Commerce integration framework:
 
 <table>
  <tbody>
   <tr>
    <th><p> </p> </th>
-   <th><p>CIF local de la zona de trabajo</p> </th>
-   <th><p>CIF Nube de</p> </th>
+   <th><p>CIF local</p> </th>
+   <th><p>CIF Cloud</p> </th>
   </tr>
   <tr>
    <td><p>Versiones de AEM compatibles</p> </td>
@@ -51,15 +51,15 @@ Adobe proporciona dos versiones del Commerce integration framework:
   </tr>
   <tr>
    <td><p>Front-end</p> </td>
-   <td><p>AEM Páginas procesadas del lado del servidor de</p> </td>
+   <td><p>Páginas procesadas del lado del servidor de AEM</p> </td>
    <td>Aplicación de página mixta (procesamiento híbrido)</td>
   </tr>
   <tr>
    <td><p>Catálogo de productos</p> </td>
    <td>
     <ul>
-     <li>AEM Importador de productos, editor, almacenamiento en caché en la</li>
-     <li>AEM Catálogos normales con páginas de proxy o de la red de distribución de contenido</li>
+     <li>Importador, editor y almacenamiento en caché de productos en AEM</li>
+     <li>Catálogos normales con páginas de AEM o proxy</li>
     </ul> </td>
    <td>
     <ul>
@@ -88,7 +88,7 @@ Adobe proporciona dos versiones del Commerce integration framework:
   </tr>
   <tr>
    <td>Disponibilidad</td>
-   <td><p>Sí. COMMERCE CLOUD AEM de SAP (extensión actualizada para admitir la versión 6.4 y la versión 5 de Hybris (predeterminada)), que mantiene la compatibilidad con la versión 4 de Hybris).</p> <p>Commerce Cloud AEM de Salesforce (conector de código abierto para admitir la versión 6.4 de)</p> </td>
+   <td><p>Sí. SAP Commerce Cloud (extensión actualizada para admitir AEM 6.4 e Hybris 5 (predeterminado)) y mantiene la compatibilidad con Hybris 4</p> <p>Salesforce Commerce Cloud (conector de código abierto para admitir AEM 6.4)</p> </td>
    <td>Sí a través de código abierto mediante GitHub. Adobe Commerce (compatible con 2.3.2 (predeterminado) y con 2.3.1).</td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@ El comercio electrónico, junto con la gestión de la información de los produc
 * Registros de almacenamiento activos y centralizados
 * Interfaces web
 
-AEM eCommerce ayuda a los especialistas en marketing a ofrecer experiencias de compra personalizadas y de marca en puntos de contacto web, móviles y sociales. AEM El entorno de creación de segmentos le permite personalizar páginas y componentes en función del contexto del visitante de destino y de las estrategias de comercialización; por ejemplo:
+AEM eCommerce ayuda a los especialistas en marketing a ofrecer experiencias de compra personalizadas y de marca en puntos de contacto web, móviles y sociales. El entorno de creación AEM permite personalizar páginas y componentes en función del contexto del visitante de destino y de las estrategias de comercialización; por ejemplo:
 
 * Páginas de producto
 * Componentes del carro de compras
@@ -129,44 +129,44 @@ La implementación permite el acceso en tiempo real a la información del produc
 
 ## Características principales {#main-features}
 
-AEM eCommerce proporciona lo siguiente:
+AEM eCommerce proporciona:
 
-* AEM Una serie de **componentes listos para usar** para la aplicación de la aplicación de la aplicación para ilustrar lo que se puede lograr con su proyecto:
+* Una serie de **componentes listos para usar de AEM** para ilustrar lo que se puede lograr para su proyecto:
 
-   * Visualización del producto
-   * Carro de compras
-   * Fecha de salida
-   * Productos vistos recientemente
-   * Cupones
-   * y otros
+  * Visualización del producto
+  * Carro de compras
+  * Fecha de salida
+  * Productos vistos recientemente
+  * Cupones
+  * y otros
 
   ![ejemplo de componentes de geometrixx](/help/sites-administering/assets/chlimage_1-130.png)
 
   >[!NOTE]
   >
-  >AEM AEM El marco de trabajo de integración proporcionado por el usuario también le permite crear componentes de integración adicionales para las capacidades de comercio electrónico independientemente de su motor de comercio electrónico específico.
+  >El marco de integración proporcionado por AEM también le permite crear componentes adicionales de AEM para las capacidades de comercio independientemente del motor de comercio electrónico específico.
 
 * **Buscar** - usando:
 
-   * AEM la búsqueda de la
-   * la búsqueda del sistema de comercio electrónico
-   * una búsqueda de terceros
-   * o una combinación de los mismos.
+  * la búsqueda de AEM
+  * la búsqueda del sistema de comercio electrónico
+  * una búsqueda de terceros
+  * o una combinación de los mismos.
 
   ![ejemplo de búsqueda](/help/sites-administering/assets/chlimage_1-131.png)
 
-* AEM Utiliza la capacidad de **presentar el contenido en varios canales**, ya sea en una ventana completa del explorador o en un dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
+* Usa la capacidad de AEM para **presentar el contenido en varios canales**, ya sea en una ventana completa del explorador o en un dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
 
   ![ejemplo de vista móvil](/help/sites-administering/assets/chlimage_1-132.png)
 
-* AEM La capacidad de **desarrollar su propia implementación de integración basada en el marco de [comercio electrónico](#the-framework)**.
+* La capacidad de **desarrollar su propia implementación de integración basada en [AEM eCommerce framework](#the-framework)**.
 
   Las dos implementaciones disponibles actualmente se crean sobre la misma base, además de la API general (el marco de trabajo). La implementación de una nueva integración solo implica implementar las funciones que su integración necesita. Cualquier implementación nueva puede utilizar los componentes front-end, ya que utilizan interfaces (por lo que son independientes de la implementación).
 
 * La posibilidad de desarrollar **comercio impulsado por la experiencia en función de los datos y la actividad de los compradores**. Esto permite realizar muchos escenarios:
 
-   * Un ejemplo podría ser proporcionar reducciones en los costes de envío cuando el pedido total supera una cantidad específica.
-   * Otra opción podría permitirle proporcionar ofertas estacionales que utilicen datos de perfil (por ejemplo, ubicación). A continuación, se pueden resaltar, nuevamente en función de otros factores cuando sea necesario.
+  * Un ejemplo podría ser proporcionar reducciones en los costes de envío cuando el pedido total supera una cantidad específica.
+  * Otra opción podría permitirle proporcionar ofertas estacionales que utilicen datos de perfil (por ejemplo, ubicación). A continuación, se pueden resaltar, nuevamente en función de otros factores cuando sea necesario.
 
   En el ejemplo siguiente, se muestra un teaser porque el contenido del carro de compras es inferior a 75 $:
 
@@ -178,9 +178,9 @@ AEM eCommerce proporciona lo siguiente:
 
 * Y otras características que incluyen:
 
-   * Contenido del carro de compras conservado entre sesiones
-   * Historial completo de pedidos
-   * Actualización rápida del catálogo
+  * Contenido del carro de compras conservado entre sesiones
+  * Historial completo de pedidos
+  * Actualización rápida del catálogo
 
 ## El marco {#the-framework}
 
