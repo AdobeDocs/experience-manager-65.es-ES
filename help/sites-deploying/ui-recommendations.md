@@ -12,8 +12,8 @@ feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 0%
+source-wordcount: '790'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Este documento pretende guiar a los clientes para que elijan qué interfaz de us
 Términos de interés:
 
 * **IU (o IU estándar)**
-Interfaz de usuario moderna introducida en la versión 5.6.0 como vista previa tecnológica y ampliada en versiones posteriores. Se basa en la experiencia de usuario unificada para Adobe Experience Cloud, anteriormente conocida como IU táctil o IU táctil.
+Interfaz de usuario moderna introducida en la versión 5.6.0 como vista previa tecnológica y ampliada en versiones posteriores. Se basa en la experiencia de usuario unificada de Adobe Experience Cloud, anteriormente conocida como IU táctil o IU táctil.
 
 * **IU clásica**
 Interfaz de usuario basada en la tecnología ExtJS introducida con CQ 5.1 en 2008.
@@ -37,7 +37,7 @@ Capacidades para administrar la jerarquía del sitio (mover, activar, gestionar 
 * **Creación de páginas**
 Capacidad para añadir o editar el contenido de una página.
 
-* **Administrador de DAM/Assets**
+* Administrador de **DAM/Assets**
 Funciones para administrar recursos digitales (como imágenes, vídeos, documentos y descargas).
 
 * **ContextHub**
@@ -72,7 +72,7 @@ A continuación se muestra una lista de recomendaciones de Administración de pr
    <td>
     <ol>
      <li>Actualización a 6.5</li>
-     <li>Utilice la interfaz de usuario predeterminada para la administración de sitios, recursos, etc. etc.<br /> </li>
+     <li>Usar la interfaz de usuario predeterminada para la administración del sitio, los recursos, etc.<br /> </li>
      <li>Configure la acción "Editar página" para abrir el Editor de páginas de IU clásico. Consulte <a href="#selecting-your-ui">Selección de la interfaz de usuario</a>.</li>
     </ol> <p>A continuación, en una segunda fase:</p>
     <ol>
@@ -84,7 +84,7 @@ A continuación se muestra una lista de recomendaciones de Administración de pr
    <td>
     <ol>
      <li>Actualización a 6.5</li>
-     <li>Utilice la interfaz de usuario predeterminada para la administración de sitios, recursos, etc. etc.</li>
+     <li>Utilice la interfaz de usuario predeterminada para la administración de sitios, recursos, etc.</li>
      <li>Configure la acción "Editar página" para abrir el Editor de páginas de IU clásico. Consulte <a href="#selecting-your-ui">Selección de la interfaz de usuario</a>.</li>
     </ol> <p>A continuación, en una segunda fase:</p>
     <ol>
