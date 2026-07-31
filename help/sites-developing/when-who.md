@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 0%
+source-wordcount: '270'
+ht-degree: 3%
 
 ---
 
@@ -33,8 +33,8 @@ Se pueden desempeñar diversas funciones en las pruebas y en diversas etapas del
    <td>Estas pruebas son las primeras en la cadena, aunque se repiten / se extienden durante el desarrollo.</td>
   </tr>
   <tr>
-   <td>Equipo de control de calidad</td>
-   <td><p>Necesita un equipo de control de calidad (del tamaño que corresponda) para realizar pruebas funcionales y de rendimiento.</p> <p>Estos son probadores neutrales y dedicados; una regla de oro del software siempre establece que un desarrollador nunca debe probar su propio trabajo.</p> <p>Los miembros de este equipo pueden proceder del equipo del proyecto del día, del socio y/o de su equipo de clientes.</p> </td>
+   <td>Equipo de calidad de Assurance</td>
+   <td><p>Necesita un equipo de Quality Assurance (del tamaño que corresponda) para realizar pruebas funcionales y de rendimiento.</p> <p>Estos son probadores neutrales y dedicados; una regla de oro del software siempre establece que un desarrollador nunca debe probar su propio trabajo.</p> <p>Los miembros de este equipo pueden proceder del equipo del proyecto del día, del socio y/o de su equipo de clientes.</p> </td>
    <td><p>La primera versión de la función debe ponerse a disposición de los probadores (cuando sea posible). Aunque una versión provisional anticipada puede generar muchos errores, puede proporcionar comentarios anticipados sobre problemas críticos.</p> </td>
   </tr>
   <tr>

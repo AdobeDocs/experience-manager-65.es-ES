@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 97%
+source-wordcount: '470'
+ht-degree: 90%
 
 ---
 
@@ -54,14 +54,14 @@ Para editar el esquema de metadatos:
 
 ## Asociar revisores de envío con un formulario {#associating-submission-reviewers-with-a-form-1}
 
-Para asociar revisores de envío con un formulario adaptable, cree un grupo de revisores y agréguele usuarios. Agregue el grupo de revisores creado en el campo del revisor de envío de las propiedades avanzadas del formulario. 
+Para asociar revisores de envío con un formulario adaptable, cree un grupo de revisores y agréguele usuarios. Agregue el grupo de revisores creado en el campo del revisor de envío de las propiedades avanzadas del formulario.
 Los grupos de usuarios permiten asociar diferentes conjuntos de revisores de envío con diferentes formularios adaptables. Esta función evita que un usuario no autorizado revise el envío.
 
 Antes de realizar los siguientes pasos, consulte [Requisito previo](../../forms/using/adding-reviewers-form.md#prerequisite).
 
 Para crear un grupo y agregarle miembros, vaya a **Herramientas** > **Operaciones** > **Seguridad** > **Grupos**.
-Para obtener más información, consulte [Administración de usuarios y servicios](/help/sites-administering/security.md). 
-Asegúrese de agregar el grupo que crea como miembro del grupo de usuarios predeterminado: **forms-submit-reviewers**. Este grupo de usuarios está incluido en AEM Forms y garantiza que los usuarios se agregan como revisores de envío.
+Para obtener más información, consulte [Administración de usuarios y servicios](/help/sites-administering/security.md).
+Asegúrese de agregar el grupo que crea como miembro del grupo de usuarios predeterminado: **forms-submit-reviewers**. Este grupo de usuarios está incluido en AEM Forms y garantiza que los usuarios se añadan como revisores de envío.
 
 Para asociar grupos de usuarios con un formulario adaptable, haga lo siguiente:
 

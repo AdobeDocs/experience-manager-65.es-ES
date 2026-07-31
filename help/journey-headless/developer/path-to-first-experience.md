@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 91%
+source-wordcount: '2023'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ En esta parte del [Recorrido para desarrolladores de AEM sin encabezado](overvie
 
 ## La historia hasta ahora {#story-so-far}
 
-AEM En el documento anterior del recorrido AEM sin encabezado de la, [Introducción a la sin encabezado](getting-started.md), ha aprendido la teoría básica de lo que es un CMS sin encabezado y ahora debería hacer lo siguiente:
+En el documento anterior del recorrido sin encabezado de AEM, [Introducción a AEM Headless](getting-started.md), ha aprendido la teoría básica de lo que es un CMS sin encabezado y ahora debería hacer lo siguiente:
 
 * Comprender los conceptos básicos de las características de AEM sin encabezado.
 * Conozca los requisitos previos para utilizar las características de AEM sin encabezado.
@@ -36,9 +36,9 @@ Este documento le ayudará a comprender los pasos necesarios para implementar su
 * Conocer qué herramientas y configuraciones de AEM son necesarias.
 * Conocer las prácticas recomendadas para que su recorrido sin encabezado sea fluido, mantenga la eficiencia de la generación de contenido y asegurarse de que el contenido se entregue rápidamente.
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
-AEM Antes de continuar con este documento, asegúrese de haber revisado el documento anterior en el Recorrido AEM para desarrolladores sin encabezado, [Introducción a los desarrolladores sin encabezado](getting-started.md), y asegúrese de lo siguiente:
+Antes de continuar con este documento, asegúrese de haber revisado el documento anterior en el Recorrido para desarrolladores de AEM Headless, [Introducción a AEM Headless](getting-started.md), y de haber hecho lo siguiente:
 
 * Cumplir los requisitos enumerados.
 * Tener en cuenta su propia definición de proyecto, en la que se incluya ámbito, funciones y rendimiento.
@@ -47,7 +47,7 @@ AEM Antes de continuar con este documento, asegúrese de haber revisado el docum
 
 Para iniciar su primer proyecto de AEM sin encabezado debe asegurarse de que dispone de un modelo de contenido que admita la personalización y las actualizaciones que desee realizar en todos los canales.
 
-AEM AEM Independientemente de la, también debe asegurarse de que tiene configurado un entorno de desarrollo adecuado si está generando una aplicación del lado del cliente para poder probar las llamadas de API de su cliente a las llamadas de la API a las que se ha hecho clic en el botón de configuración de la interfaz de usuario de.
+Independientemente de AEM, también debe asegurarse de que tiene un entorno de desarrollo adecuado configurado si está generando una aplicación del lado del cliente para poder probar su cliente con llamadas de API a AEM.
 
 ### Definición de los modelos de contenido y las API {#defining-models}
 
@@ -107,8 +107,8 @@ Un proyecto sin encabezado no solo es exitoso debido a la tecnología implementa
 * Si tiene restricciones de acceso, intente alinear su modelo de contenido con los requisitos de acceso.
 * Cuando tiene requisitos de acceso, deben dirigir su jerarquía de contenido. Agrupe el contenido que edita el mismo grupo de personas.
 * Agrupe contenido similar en una carpeta.
-   * Es más probable que un autor de contenido copie y pegue el contenido existente para crear contenido nuevo. Por lo tanto, hacer esto en la misma carpeta lo hace más eficiente.
-   * AEM permite establecer los modelos permitidos por carpeta, de modo que el botón **Crear nuevo** solo muestra los modelos compatibles con esa ubicación.
+  * Es más probable que un autor de contenido copie y pegue el contenido existente para crear contenido nuevo. Por lo tanto, hacer esto en la misma carpeta lo hace más eficiente.
+  * AEM permite establecer los modelos permitidos por carpeta, de modo que el botón **Crear nuevo** solo muestra los modelos compatibles con esa ubicación.
 * La creación del editor de fragmentos de contenido en línea de nuevos fragmentos de contenido se puede simplificar si la carpeta raíz está configurada en el modelo. Entonces el profesional no tiene que elegir una ubicación, solo necesita proporcionar un nombre para comenzar a editar la referencia nueva.
 
 ### Creación de contenido {#authoring}
@@ -146,11 +146,11 @@ Sea cual sea su estilo de aprendizaje, Adobe quiere que tenga éxito a la hora d
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin encabezado revisando el documento [Modelo del contenido como modelos de contenido de AEM,](model-your-content.md) a continuación se incluyen algunos recursos opcionales adicionales que profundizan en varios conceptos mencionados en este documento, pero que no son necesarios para continuar el recorrido sin encabezado.
 
 * [Recorrido de traducción de AEM sin encabezado](/help/journey-headless/translation/overview.md): este recorrido de documentación le ofrece una amplia descripción de la tecnología sin encabezado, cómo sirve AEM el contenido sin encabezado y cómo puede traducirlo.
-* [Desarrollo sin encabezado para AEM Sites AEM](/help/sites-developing/headless/introduction.md): una introducción rápida para orientar al desarrollador sin encabezado con las características necesarias para el desarrollo sin encabezado de la aplicación de la aplicación de código de la aplicación de código de la aplicación de código de tiempo de ejecución de
+* [Desarrollo sin encabezado para AEM Sites](/help/sites-developing/headless/introduction.md): una introducción rápida para orientar al desarrollador sin encabezado de AEM con las características necesarias
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.
-* [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/es?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
+* [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
 * [AEM Guides de WKND, GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): este proyecto de GitHub incluye aplicaciones de ejemplo que destacan las API de GraphQL de AEM.
-* AEM AEM [Guía de introducción sin encabezado](/help/sites-developing/headless/introduction.md#getting-started): Una introducción rápida para la creación de funciones sin encabezado para los usuarios que ya conocen el uso de las funciones sin encabezado para los usuarios que ya tienen conocimientos de las funciones de la.
+* [Guía de introducción sin encabezado](/help/sites-developing/headless/introduction.md#getting-started): Una introducción rápida a las funciones sin encabezado de AEM para usuarios que ya conocen AEM.
 * [Crear modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md): documentación técnica sobre los modelos de fragmentos de contenido.
 * [Crear fragmentos de contenido](/help/assets/content-fragments/content-fragments.md): documentación técnica sobre fragmentos de contenido.
 * [Consulta de contenido con GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md): documentación técnica sobre la API de GraphQL.

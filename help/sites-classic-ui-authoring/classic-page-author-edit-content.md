@@ -12,8 +12,8 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 16%
+source-wordcount: '1843'
+ht-degree: 19%
 
 ---
 
@@ -29,7 +29,7 @@ El contenido se añade empleando los [componentes](/help/sites-classic-ui-author
 >
 >Si se producen problemas, le sugerimos que se ponga en contacto con el administrador del sistema.
 
-## Sidekick {#sidekick}
+## Barra de tareas {#sidekick}
 
 La barra de tareas es una herramienta clave al crear páginas. Flota al crear una página, por lo que siempre es visible.
 
@@ -42,7 +42,7 @@ Hay varias pestañas e iconos disponibles, entre ellos:
 * Flujo de trabajo
 * Modos
 * Andamiaje
-* Client Context
+* Contexto de cliente
 * Sitios web
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
@@ -121,7 +121,7 @@ Para editar un párrafo existente, realice una de las siguientes acciones:
 
 * **Haga clic con el botón derecho** en el párrafo y haga clic en **Editar**.
 
-* **Haga clic** dos veces en el párrafo (un doble clic lento) para entrar al modo de edición local. Podrá editar directamente el texto de la página, en lugar de hacerlo desde una ventana de diálogo. En este modo, se le proporcionará una barra de herramientas en la parte superior de la página. Simplemente realice los cambios y se guardarán automáticamente.
+* **Haga clic** dos veces en el párrafo (un doble clic lento) para entrar al modo de edición local. Podrá editar directamente el texto de la página, en lugar de hacerlo dentro de la ventana de un cuadro de diálogo. En este modo, se le proporcionará una barra de herramientas en la parte superior de la página. Simplemente realice los cambios y estos se guardarán automáticamente.
 
 ## Mover un componente {#moving-a-component}
 
@@ -135,7 +135,7 @@ Para mover un párrafo:
 
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
-1. AEM Arrastre el párrafo a la nueva ubicación: indica a dónde se puede mover el párrafo con una marca de verificación verde. Colóquelo en la ubicación que desee.
+1. Arrastre el párrafo a la nueva ubicación: AEM indica a dónde se puede mover el párrafo con una marca de verificación verde. Colóquelo en la ubicación que desee.
 1. Se mueve el párrafo:
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
@@ -148,7 +148,7 @@ Para eliminar un párrafo:
 
    ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. Seleccione **Eliminar** en el menú. AEM WCM solicita la confirmación de que desea eliminar el párrafo, ya que esta acción no se puede deshacer.
+1. Seleccione **Eliminar** en el menú. AEM WCM solicita confirmación para eliminar el párrafo, ya que esta acción no se puede deshacer.
 1. Haga clic en **OK**.
 
 >[!NOTE]
@@ -178,7 +178,7 @@ Los componentes heredados pueden ser el producto de distintos escenarios, como p
 * [Administración de varios sitios](/help/sites-administering/msm.md); también en combinación con [andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * [Inicios](/help/sites-classic-ui-authoring/classic-launches.md) (cuando se basan en Live Copy).
-* Componentes específicos; por ejemplo, el sistema de párrafos heredado dentro de Geometrixx.
+* Componentes específicos; por ejemplo, el sistema de párrafos heredado en Geometrixx.
 
 Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto puede estar disponible en:
 
@@ -196,7 +196,7 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
 1. **Un Sistema De Párrafos Heredado**
 
-   El cuadro de diálogo Configuración. Por ejemplo, como con el sistema de párrafos heredado en Geometrixx:
+   El cuadro de diálogo Configuración. Por ejemplo, como con el sistema de párrafos heredados en Geometrixx:
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -220,15 +220,15 @@ Hay dos iconos en el borde inferior de la barra de tareas que son importantes pa
 
   En el modo de vista previa, se reducirá la barra de tareas y haga clic en el icono de flecha abajo para volver al modo de edición:
 
-  AEM ![Barra con el título y un icono de modo de edición a la derecha del título indicado por un símbolo de flecha hacia abajo.](do-not-localize/chlimage_1-8.png)
+  ![Barra con AEM como título y un icono de modo de edición a la derecha del título indicado por un símbolo de flecha hacia abajo.](do-not-localize/chlimage_1-8.png)
 
 ## Buscar y reemplazar {#find-replace}
 
 Para ediciones a mayor escala de la misma frase, una opción de menú **[Buscar y reemplazar](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** le permite buscar y reemplazar varias instancias de una cadena, dentro de una sección del sitio web.
 
-## Bloquear una página   {#locking-a-page}
+## Bloquear una página {#locking-a-page}
 
-AEM permite bloquear páginas para que nadie más pueda cambiar su contenido. Esto resulta útil cuando realiza varias ediciones en una página específica o cuando necesita congelar una página durante un corto tiempo.
+AEM le permite bloquear páginas para que nadie más pueda cambiar su contenido. Esto resulta útil cuando realiza varias ediciones en una página específica o cuando necesita congelar una página durante un corto tiempo.
 
 >[!CAUTION]
 >
@@ -242,7 +242,7 @@ Para bloquear una página:
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Aparece un mensaje que indica que la página está bloqueada para otros usuarios. AEM Además, en el panel derecho de la consola **Sitios web**, WCM muestra la página como bloqueada e indica qué usuario ha bloqueado la página.
+   Aparece un mensaje que indica que la página está bloqueada para otros usuarios. Además, en el panel derecho de la consola **Sitios web**, AEM WCM muestra la página como bloqueada e indica qué usuario la ha bloqueado.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
@@ -273,7 +273,7 @@ Al deshacer o rehacer la eliminación, adición o reubicación de uno o más pá
 >
 >El administrador del sistema puede [configurar varios aspectos de las características Deshacer/Rehacer](/help/sites-administering/config-undo.md) según los requisitos de la instancia.
 
-AEM Almacena un historial de las acciones que realiza y la secuencia en que las realizó. Por lo tanto, deshace varias acciones en el orden en que las realizó. A continuación, puede utilizar rehacer para volver a aplicar una o varias acciones.
+AEM almacena un historial de las acciones que realiza y la secuencia en que las realizó. Por lo tanto, deshace varias acciones en el orden en que las realizó. A continuación, puede utilizar rehacer para volver a aplicar una o varias acciones.
 
 Si hay un elemento seleccionado en la página de contenido, el comando Deshacer y Rehacer se aplica al elemento seleccionado, como un componente de texto.
 
@@ -304,4 +304,4 @@ Los campos de formulario que representan los componentes de formulario no están
 
 >[!NOTE]
 >
->Se requieren permisos especiales para deshacer y rehacer cambios en archivos e imágenes. Además, el historial de deshacer para cambios en archivos e imágenes dura un mínimo de horas. No obstante, pasado ese tiempo, no se garantiza que se puedan deshacer los cambios. El administrador puede proporcionar permisos y cambiar el tiempo predeterminado de diez horas.
+>Se necesitan permisos especiales para deshacer y rehacer cambios en archivos e imágenes. Además, el historial de deshacer para cambios en archivos e imágenes dura un mínimo de horas. No obstante, pasado ese tiempo, no se garantiza que se puedan deshacer los cambios. El administrador puede proporcionar permisos y cambiar el tiempo predeterminado de diez horas.

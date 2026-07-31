@@ -11,7 +11,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Se puede crear un componente de recuento personalizado ampliando la clase de rec
 
 [Clasificación](rating-basics.md) es una implementación de recuento que usa un sistema de estrella para expresar una amplia gama de opiniones, desde positivas a negativas.
 
-AEM A partir de la versión 6.1, el componente de encuesta ya no está disponible.
+A partir de AEM 6.1, el componente de encuesta ya no está disponible.
 
 [Críticas](reviews-basics.md) es un componente SCF que es un híbrido de [comentarios](essentials-comments.md) y [clasificación](rating-basics.md).
 
@@ -40,7 +40,7 @@ AEM A partir de la versión 6.1, el componente de encuesta ya no está disponibl
 
 * [API de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Puntos finales de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Extremos de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
@@ -49,7 +49,7 @@ AEM A partir de la versión 6.1, el componente de encuesta ya no está disponibl
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de las comunidades de AEM 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
