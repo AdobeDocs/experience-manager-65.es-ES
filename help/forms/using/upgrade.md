@@ -9,10 +9,10 @@ role: Admin,User
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
-source-git-commit: 4f9129101f537e035b8a7ec52fbc046ae6f93f92
+source-git-commit: beb40e8e83b52b60d68dffecb95f3d877a47d397
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 79%
+source-wordcount: '427'
+ht-degree: 77%
 
 ---
 
@@ -45,7 +45,7 @@ También puede realizar una actualización multisalto desde
 
 El diagrama siguiente muestra las rutas de actualización disponibles para AEM Forms en JEE:
 
-![Actualización de JEE 6.5](do-not-localize/upgradepathjee.png)
+![Actualización de JEE 6.5](do-not-localize/upgradepathjee.svg)
 
 
 Puede realizar una actualización directa desde:
@@ -71,7 +71,7 @@ La siguiente imagen muestra los escenarios para utilizar el programa de instalac
 
 ![Programa de instalación completo y parche](/help/forms/using/assets/full-and-patch-installer.png)
 
-Consulte el artículo [Instrucciones de instalación del paquete de servicio de AEM Forms 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es) para instalar el paquete de servicio más reciente para el entorno JEE.
+Consulte el artículo [Instrucciones de instalación del paquete de servicio de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es) para instalar el paquete de servicio más reciente para el entorno JEE.
 
 <!--
 [Work in Progress]
