@@ -215,7 +215,8 @@ Con estas propiedades (archivos .content.xml):
 &lt;jcr:root xmlns:jcr=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot;
 jcr:primaryType=&quot;nt:unstructured&quot;
 excludeProperties=&quot;[appAPIAccessToken]&quot;
-path=&quot;../../../...&quot;targetRootDirectory=&quot;www&quot;
+path=&quot;../../../...&quot;
+targetRootDirectory=&quot;www&quot;
 type=&quot;notificationsconfig&quot;/>
 
 >[!NOTE]
@@ -301,8 +302,8 @@ Para crear y enviar una notificación, siga estos pasos.
    * Si el envío push falla, el cuadro de diálogo muestra un mensaje que indica el problema. En la lista de notificaciones, el estado de esa notificación se muestra como Error, pero si se corrige el problema, se puede volver a enviar la notificación. Si se produce un error, debería aparecer información adicional sobre el error en el registro de errores del servidor.
    * Tenga en cuenta que existen algunas diferencias de plataforma entre las notificaciones push de iOS y Android™. Entre ellos:
 
-      * La generación con CLI inicia la aplicación después de implementarla en Android™. En iOS, debe iniciarlo manualmente. Dado que el paso de registro push se produce al inicio, las aplicaciones de Android™ pueden recibir notificaciones push inmediatamente (porque ya se ha iniciado y registrado), mientras que las aplicaciones de iOS no pueden.
-      * En Android™, el texto del botón Aceptar aparece en mayúsculas (y en cualquier otro botón añadido en la notificación en la aplicación), mientras que en iOS no lo está.
+     * La generación con CLI inicia la aplicación después de implementarla en Android™. En iOS, debe iniciarlo manualmente. Dado que el paso de registro push se produce al inicio, las aplicaciones de Android™ pueden recibir notificaciones push inmediatamente (porque ya se ha iniciado y registrado), mientras que las aplicaciones de iOS no pueden.
+     * En Android™, el texto del botón Aceptar aparece en mayúsculas (y en cualquier otro botón añadido en la notificación en la aplicación), mientras que en iOS no lo está.
 
 Para las notificaciones push de AMS, las notificaciones deben redactarse y enviarse desde el servidor de AMS. AMS proporciona funciones de notificación push adicionales además de las proporcionadas por las notificaciones de AEM con AWS y Pushwoosh.
 
