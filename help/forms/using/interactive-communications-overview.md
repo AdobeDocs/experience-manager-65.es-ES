@@ -8,15 +8,20 @@ exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 2e13a0cd09477ccd5374f1850efad882c8222f0a
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 95%
+source-wordcount: '526'
+ht-degree: 93%
 
 ---
 
 
 # Información general sobre Comunicaciones interactivas {#interactive-communications-overview}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction) |
+| AEM 6.5 | Este artículo |
 
 Este artículo contiene información general, casos de uso de ejemplo, el flujo de trabajo de creación y las diferencias entre una comunicación interactiva y una carta.
 
