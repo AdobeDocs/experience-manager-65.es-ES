@@ -20,7 +20,7 @@ ht-degree: 93%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/es/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction) |
 | AEM 6.5 | Este artículo |
 
 Este artículo contiene información general, casos de uso de ejemplo, el flujo de trabajo de creación y las diferencias entre una comunicación interactiva y una carta.
