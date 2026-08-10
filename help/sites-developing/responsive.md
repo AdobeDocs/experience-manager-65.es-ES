@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '5461'
+source-wordcount: '5464'
 ht-degree: 0%
 
 ---
@@ -300,7 +300,7 @@ Obtenga las siguientes bibliotecas de JavaScript e inclúyalas en una carpeta de
 * jquery.js (disponible a través de la carpeta de biblioteca de cliente `/etc/clientlibs/granite/jquery` (category = jquery)
 * [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (un evento jquery que se produce una vez que se cambia el tamaño de la ventana)
 
-**Sugerencia:** Puede concatenar automáticamente varias carpetas de biblioteca de cliente incrustando [3&rbrace;.](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)
+**Sugerencia:** Puede concatenar automáticamente varias carpetas de biblioteca de cliente incrustando [3}.](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)
 
 **HTML**
 

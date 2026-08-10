@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6110'
+source-wordcount: '6118'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Para configurar el contenido de AEM para que aparezca en un portal, consulte [In
 
 >[!CAUTION]
 >
->AEM Portal Director ya no se utiliza en AEM 6.4. Ver [Funciones obsoletas y eliminadas](https://helpx.adobe.com/es/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>AEM Portal Director ya no se utiliza en AEM 6.4. Ver [Funciones obsoletas y eliminadas](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Administración del portlet de contenido de AEM {#administering-the-aem-content-portlet}
 
@@ -389,7 +389,7 @@ Para abrir la página de administración del sitio web o editar una página desd
    </LoginModule>
    ```
 
-1. En la consola de configuración de OSGi, ubicada de manera predeterminada en https://localhost:4502/system/console/configMgr, seleccione **Controlador de autenticación PIN de CQ** del menú desplegable.
+1. En la consola de configuración de OSGi, ubicada de manera predeterminada en https://localhost:4502/system/console/configMgr, seleccione **Controlador de autenticación PIN de CQ** en el menú desplegable.
 1. Edite el parámetro **URL Root Path** para que contenga únicamente el valor único **/**.
 
 ### Privilegios {#privileges}
@@ -526,7 +526,7 @@ title="{text}"/>
 
 #### Instalación de un diseño personalizado {#installing-a-custom-layout}
 
-Para instalar un diseño personalizado, acceda a la sección Consola web OSGI del portlet **Paquetes &#x200B;** y cargue el paquete.
+Para instalar un diseño personalizado, acceda a la sección Consola web OSGI del portlet **Paquetes ** y cargue el paquete.
 
 #### Paquetes {#packages}
 
@@ -610,7 +610,7 @@ Se pueden implementar servicios OSGi opcionales para personalizar varias partes 
 
 Los siguientes servicios tienen una implementación predeterminada en el portlet de contenido (con una interfaz Java correspondiente). Para personalizar, es necesario implementar un paquete que contenga la nueva implementación de servicio en la aplicación de portlet.
 
-Al implementar un servicio de este tipo, asegúrese de establecer la propiedad **service.ranking** del servicio en un valor positivo. La implementación predeterminada utiliza la clasificación **&#x200B; 0** y el portlet utiliza el servicio con la clasificación más alta.
+Al implementar un servicio de este tipo, asegúrese de establecer la propiedad **service.ranking** del servicio en un valor positivo. La implementación predeterminada utiliza la clasificación** 0** y el portlet utiliza el servicio con la clasificación más alta.
 
 | **Nombre** | **Descripción** | **Comportamiento predeterminado** |
 |---|---|---|
@@ -715,7 +715,7 @@ Utilice el componente Portal para añadir una ventana de portlet a la página we
 
 1. Haga doble clic en el componente para abrir las propiedades del portlet.
 1. En el menú desplegable **Entidad de portlet**, seleccione el portlet en la lista.
-1. Active o desactive la casilla de verificación **Ocultar barra de título &#x200B;** en función de si desea ver la barra de título del portlet.
+1. Active o desactive la casilla de verificación **Ocultar barra de título **en función de si desea ver la barra de título del portlet.
 1. En el campo **Ventana de portlet**, escriba un identificador de ventana de portlet único, si lo desea.
 
    >[!NOTE]
@@ -776,7 +776,7 @@ Para configurar el portlet:
    * **URL base del autor**: URL base de la instancia de autor de AEM.
    * **URL de base de publicación**: URL de base para la instancia de publicación de AEM.
    * **El autor se usa como publicación**: ¿la instancia del autor se usa como publicación?
-instancia de (para desarrollo)?
+     instancia de (para desarrollo)?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 
