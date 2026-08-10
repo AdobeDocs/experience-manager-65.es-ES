@@ -1,6 +1,6 @@
 ---
 title: Móvil con sincronización de contenido
-description: Siga esta página para obtener más información sobre la sincronización de contenido. Las páginas creadas en Adobe Experience Manager AEM () pueden utilizarse como contenido de la aplicación, incluso cuando el dispositivo está sin conexión. AEM Además, dado que las páginas de la se basan en estándares web, funcionan en plataformas múltiples, lo que permite incrustarlas en cualquier envoltorio nativo. Esta estrategia reduce el esfuerzo de desarrollo y le permite actualizar fácilmente el contenido de la aplicación.
+description: Siga esta página para obtener más información sobre la sincronización de contenido. Las páginas creadas en Adobe Experience Manager (AEM) pueden utilizarse como contenido de la aplicación, incluso cuando el dispositivo está sin conexión. Además, como las páginas de AEM se basan en estándares web, funcionan en plataformas múltiples, lo que permite incrustarlas en cualquier contenedor nativo. Esta estrategia reduce el esfuerzo de desarrollo y le permite actualizar fácilmente el contenido de la aplicación.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2950'
+source-wordcount: '2976'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-Utilice la sincronización de contenido para empaquetar contenido de modo que se pueda utilizar en aplicaciones móviles nativas. Las páginas creadas en Adobe Experience Manager AEM () pueden utilizarse como contenido de la aplicación, incluso cuando el dispositivo está sin conexión. AEM Además, dado que las páginas de la se basan en estándares web, funcionan en plataformas múltiples, lo que permite incrustarlas en cualquier envoltorio nativo. Esta estrategia reduce el esfuerzo de desarrollo y le permite actualizar fácilmente el contenido de la aplicación.
+Utilice la sincronización de contenido para empaquetar contenido de modo que se pueda utilizar en aplicaciones móviles nativas. Las páginas creadas en Adobe Experience Manager (AEM) pueden utilizarse como contenido de la aplicación, incluso cuando el dispositivo está sin conexión. Además, como las páginas de AEM se basan en estándares web, funcionan en plataformas múltiples, lo que permite incrustarlas en cualquier contenedor nativo. Esta estrategia reduce el esfuerzo de desarrollo y le permite actualizar fácilmente el contenido de la aplicación.
 
-El marco de trabajo de sincronización de contenido crea un archivo de almacenamiento que contiene el contenido web. El contenido puede ser desde páginas simples, imágenes y archivos de PDF, o aplicaciones web completas. La API de sincronización de contenido proporciona acceso al archivo desde aplicaciones móviles o procesos de compilación para que el contenido se pueda recuperar e incluir en la aplicación.
+El marco de trabajo de sincronización de contenido crea un archivo de almacenamiento que contiene el contenido web. El contenido puede ser desde páginas simples, imágenes y archivos PDF, o aplicaciones web completas. La API de sincronización de contenido proporciona acceso al archivo desde aplicaciones móviles o procesos de compilación para que el contenido se pueda recuperar e incluir en la aplicación.
 
 La siguiente secuencia de pasos ilustra un caso de uso típico para la sincronización de contenido:
 
-1. AEM El desarrollador de crea una configuración de sincronización de contenido que especifica el contenido que se va a incluir.
+1. El desarrollador de AEM crea una configuración de sincronización de contenido que especifica el contenido que se va a incluir.
 1. El marco de trabajo Sincronización de contenido recopila y almacena en caché el contenido.
 1. En un dispositivo móvil, la aplicación móvil se inicia y solicita contenido al servidor, que se entrega en un archivo ZIP.
 1. El cliente desempaqueta el contenido ZIP en el sistema de archivos local. La estructura de carpetas del archivo ZIP simula las rutas que un cliente (por ejemplo, un explorador) solicitaría normalmente al servidor.
@@ -39,7 +39,7 @@ Algunas de las directrices para desarrollar controladores de sincronización de 
 
 * Los controladores deben implementar *com.day.cq.contentsync.handler.ContentUpdateHandler* (ya sea directamente o ampliando una clase que sí lo haga)
 * Los controladores pueden extender *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* El controlador solo debe informar de true si actualiza la caché de ContentSync. AEM Informar de forma incorrecta sobre true ha creado una actualización cuando realmente no se ha producido.
+* El controlador solo debe informar de true si actualiza la caché de ContentSync. Informar de manera falsa sobre true hace que AEM cree una actualización cuando esta no se produce realmente.
 * El controlador solo debe actualizar la caché si ha cambiado el contenido. No escriba en la caché si no es necesario un blanco. Esto da como resultado la creación de una actualización innecesaria.
 
 >[!NOTE]
@@ -50,7 +50,7 @@ Algunas de las directrices para desarrollar controladores de sincronización de 
 
 Cree una configuración de sincronización de contenido para especificar el contenido del archivo ZIP que se envía al cliente. Puede crear cualquier cantidad de configuraciones de sincronización de contenido. Cada configuración tiene un nombre para fines de identificación.
 
-Para crear una configuración de sincronización de contenido, agregue un nodo `cq:ContentSyncConfig` al repositorio, con la propiedad `sling:resourceType` establecida en `contentsync/config`. AEM El nodo `cq:ContentSyncConfig` se puede ubicar en cualquier lugar del repositorio; sin embargo, los usuarios de la instancia de publicación de la deben tener acceso al nodo. Por lo tanto, debe agregar el nodo debajo de `/content`.
+Para crear una configuración de sincronización de contenido, agregue un nodo `cq:ContentSyncConfig` al repositorio, con la propiedad `sling:resourceType` establecida en `contentsync/config`. El nodo `cq:ContentSyncConfig` se puede encontrar en cualquier lugar del repositorio; sin embargo, los usuarios de la instancia de publicación de AEM deben tener acceso al nodo. Por lo tanto, debe agregar el nodo debajo de `/content`.
 
 Para especificar el contenido del archivo ZIP de sincronización de contenido, agregue nodos secundarios al nodo cq:ContentSyncConfig. Las siguientes propiedades de cada nodo secundario identifican un elemento de contenido para incluir y cómo se procesa al agregarlo:
 
@@ -69,7 +69,7 @@ Después de crear la configuración de sincronización de contenido, esta aparec
 
 Especifique un usuario o grupo que pueda descargar desde Sincronización de contenido. Puede configurar el usuario o grupo predeterminado que puede descargar de todas las cachés de sincronización de contenido, así como anular el valor predeterminado y configurar el acceso para una configuración de sincronización de contenido específica.
 
-AEM Cuando se instala la sincronización de contenido, los miembros del grupo del administrador pueden descargar desde Sincronización de contenido de forma predeterminada.
+Cuando AEM está instalado, los miembros del grupo del administrador pueden descargar desde Sincronización de contenido de forma predeterminada.
 
 #### Configuración del acceso predeterminado para descargas de sincronización de contenido {#setting-the-default-access-for-content-sync-downloads}
 
@@ -100,7 +100,7 @@ Cuando un usuario realiza una actualización de la caché de sincronización de 
 
 Puede anular el usuario predeterminado y especificar un usuario o grupo que actualice una caché de sincronización de contenido específica.
 
-Para anular el usuario predeterminado, especifique un usuario o grupo que realice actualizaciones para una configuración de sincronización de contenido específica agregando la siguiente propiedad al nodo cq:ContentSyncConfig:
+Para anular el usuario predeterminado, especifique un usuario o grupo que realice actualizaciones para una configuración específica de sincronización de contenido agregando la siguiente propiedad al nodo cq:ContentSyncConfig:
 
 * Nombre: `updateuser`
 * Tipo: `String`
@@ -140,7 +140,7 @@ Recopilar representaciones originales de recursos.
 
 El tipo de imagen se utiliza para incluir el logotipo de We Retail en el archivo zip.
 
-AEM **páginas** - Procesar páginas de la y recopilar recursos a los que se hace referencia.
+**páginas** - Procesar páginas de AEM y recopilar recursos a los que se hace referencia.
 
 * **ruta** - Ruta a una página.
 * **extensión** - Extensión que debe usarse en la solicitud. Para las páginas, esto es casi siempre *html*, pero otros son posibles.
@@ -168,11 +168,11 @@ Cada propiedad puede tener uno de los siguientes valores:
 
 * `REWRITE_RELATIVE`: reescribe la ruta de acceso con una posición relativa al archivo .html de la página en el sistema de archivos.
 
-* AEM `REWRITE_EXTERNAL`: reescribe la ruta de acceso señalando al recurso del servidor mediante el servicio [ExternalizerService](/help/sites-developing/externalizer.md) de la.
+* `REWRITE_EXTERNAL`: reescribe la ruta señalando al recurso en el servidor mediante el servicio AEM [Externalizer](/help/sites-developing/externalizer.md).
 
-AEM El servicio de correo llamado **PathRewriterTransformerFactory** le permite configurar los atributos html específicos que se reescribirán. El servicio se puede configurar en la consola web y tiene una configuración para cada propiedad del nodo `rewrite`: `clientlibs`, `images` y `links`.
+El servicio de AEM **PathRewriterTransformerFactory** le permite configurar los atributos HTML específicos que se volverán a escribir. El servicio se puede configurar en la consola web y tiene una configuración para cada propiedad del nodo `rewrite`: `clientlibs`, `images` y `links`.
 
-AEM Esta función se añadió en la versión 5.5 de.
+Esta función se añadió en AEM 5.5.
 
 ### Ejemplo de configuración de sincronización de contenido {#example-content-sync-configuration}
 
@@ -224,7 +224,7 @@ La lista siguiente muestra un ejemplo de configuración para la sincronización 
 
 En el ejemplo, se supone que la página con la lista de eventos es la página inicial. Esta información se proporciona en la propiedad **indexPage** y, por lo tanto, se puede cambiar fácilmente en cualquier momento. Una segunda propiedad define la ruta del archivo *events.plist*. Como verá más adelante, la aplicación cliente ahora puede leer el manifiesto y actuar según él.
 
-Cuando se establece la configuración, el contenido se puede descargar con un explorador o con cualquier otro cliente HTTP, o si está desarrollando para iOS, puede utilizar la biblioteca de cliente de WAppKitSync dedicada. AEM La ubicación de descarga se compone de la ruta de acceso de la configuración y de la extensión *.zip*, por ejemplo, al trabajar con una instancia de local: *http://localhost:4502/content/weretail_go.zip*
+Cuando se establece la configuración, el contenido se puede descargar con un explorador o con cualquier otro cliente HTTP, o si está desarrollando para iOS, puede utilizar la biblioteca de cliente de WAppKitSync dedicada. La ubicación de descarga está formada por la ruta de acceso de la configuración y la extensión *.zip*, por ejemplo, al trabajar con una instancia local de AEM: *http://localhost:4502/content/weretail_go.zip*
 
 ### La consola de sincronización de contenido {#the-content-sync-console}
 
@@ -282,7 +282,7 @@ Observe que la definición de *factory* contiene la interfaz común y el tipo pe
 
 ### Implementar un controlador de actualización personalizado {#implementing-a-custom-update-handler}
 
-Cada página de We.Retail Mobile contiene un logotipo en la esquina superior izquierda que debe incluirse en el archivo zip. AEM Sin embargo, para la optimización de caché, no hace referencia a la ubicación real del archivo de imagen en el repositorio, lo que nos impide usar simplemente el tipo de configuración **copy**. AEM Lo que debe hacer en su lugar es proporcionar su propio tipo de configuración de **logo** que haga que la imagen esté disponible en la ubicación solicitada por el usuario. La siguiente lista de códigos muestra la implementación completa del controlador de actualización de logotipos:
+Cada página de We.Retail Mobile contiene un logotipo en la esquina superior izquierda que debe incluirse en el archivo zip. Sin embargo, para optimizar la caché, AEM no hace referencia a la ubicación real del archivo de imagen en el repositorio, lo que nos impide usar simplemente el tipo de configuración **copy**. Lo que debe hacer en su lugar es proporcionar su propio tipo de configuración de **logo** que haga que la imagen esté disponible en la ubicación solicitada por AEM. La siguiente lista de códigos muestra la implementación completa del controlador de actualización de logotipos:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -364,14 +364,14 @@ A continuación, compruebe si el recurso se ha modificado desde la última actua
 
 Para utilizar contenido en una aplicación móvil proporcionada por la sincronización de contenido, debe solicitar contenido mediante una conexión HTTP o HTTPS. Como resultado, el contenido recuperado (empaquetado en un archivo ZIP) se puede extraer y almacenar localmente en el dispositivo móvil. El contenido no solo se refiere a los datos, sino también a la lógica, es decir, a las aplicaciones web completas; por lo tanto, permite al usuario móvil ejecutar aplicaciones web recuperadas y los datos correspondientes, incluso sin conectividad de red.
 
-La sincronización de contenido ofrece el contenido de forma inteligente: solo cambian los datos desde que se entregó una última sincronización de datos correcta, lo que reduce el tiempo necesario para la transferencia de datos. En la primera ejecución de una aplicación, se solicitan cambios de datos desde el 1 de enero de 1970, mientras que más adelante sólo se solicitan los datos que han cambiado desde la última sincronización correcta. AEM utiliza un marco de comunicación de cliente para iOS para simplificar la comunicación y transferencia de datos, de modo que se requiera una cantidad mínima de código nativo para habilitar una aplicación web basada en iOS.
+La sincronización de contenido ofrece el contenido de forma inteligente: solo cambian los datos desde que se entregó una última sincronización de datos correcta, lo que reduce el tiempo necesario para la transferencia de datos. En la primera ejecución de una aplicación, se solicitan cambios de datos desde el 1 de enero de 1970, mientras que más adelante sólo se solicitan los datos que han cambiado desde la última sincronización correcta. AEM utiliza un marco de comunicación de cliente para iOS para simplificar la comunicación y la transferencia de datos, de modo que se requiera una cantidad mínima de código nativo para habilitar una aplicación web basada en iOS.
 
 Todos los datos transferidos se pueden extraer en la misma estructura de directorio, no se requieren pasos adicionales (por ejemplo, comprobaciones de dependencia) al extraer datos. Si hay iOS, todos los datos se almacenan en una subcarpeta de la carpeta Documents de la aplicación de iOS.
 
 Ruta de ejecución típica de una aplicación de AEM Mobile basada en iOS:
 
 * El usuario inicia la aplicación en el dispositivo iOS.
-* AEM La aplicación intenta conectarse al back-end de la aplicación y solicita cambios de datos desde la última ejecución de la aplicación.
+* La aplicación intenta conectarse al backend de AEM y solicita cambios de datos desde la última ejecución.
 * El servidor recupera los datos en cuestión y los comprime en un archivo.
 * Los datos se devuelven al dispositivo cliente, donde se extraen en la carpeta de documentos.
 * Se inicia/actualiza el componente UIWebView.
@@ -382,5 +382,5 @@ Si no se ha podido establecer una conexión anteriormente, se muestran los datos
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un autor, consulte los siguientes recursos:
 
-* [AEM Creación de contenido de la para AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+* [Creación de contenido de AEM para AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
 * [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
