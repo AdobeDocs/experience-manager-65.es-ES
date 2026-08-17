@@ -210,7 +210,7 @@ Según la configuración [settings](/help/communities/sites-console.md#groupmana
 
 Cuando se crea un grupo de comunidad, se crea dinámicamente un grupo de miembros para el nuevo grupo, al que se pueden asignar o unir miembros. Para obtener más información, consulte [Administración de usuarios y grupos de usuarios](/help/communities/users.md).
 
-A partir del paquete de funciones 1](/help/communities/deploy-communities.md#latestfeaturepack) de las comunidades [se crean grupos de comunidades en el entorno de creación mediante la consola de grupos de [sitios de comunidades](/help/communities/groups.md), y se pueden crear en el entorno de publicación cuando está habilitada.
+A partir del paquete de funciones 1[&#128279;](/help/communities/deploy-communities.md#latestfeaturepack) de las comunidades se crean grupos de comunidades en el entorno de creación mediante la consola de grupos de [sitios de comunidades](/help/communities/groups.md), y se pueden crear en el entorno de publicación cuando está habilitada.
 
 Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 
