@@ -11,14 +11,14 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
 
 # Guía de componentes de la comunidad  {#community-components-guide}
 
-La guía de componentes de la comunidad es una herramienta de desarrollo interactiva para el [marco de trabajo de componentes sociales (SCF)](scf.md). Proporciona una lista de los componentes de comunidades de Adobe Experience Manager AEM () disponibles o las funciones más complejas creadas de varios componentes.
+La guía de componentes de la comunidad es una herramienta de desarrollo interactiva para el [marco de trabajo de componentes sociales (SCF)](scf.md). Proporciona una lista de los componentes de comunidades de Adobe Experience Manager (AEM) disponibles o las funciones más complejas creadas de varios componentes.
 
 Junto con la información básica de cada componente, la guía permite experimentar cómo funcionan los componentes o funciones de SCF y cómo se pueden configurar o personalizar.
 
@@ -59,7 +59,7 @@ En Autor, para entrar al modo de edición, inserte `editor.html` o `cf#` como el
 >
 >Para obtener información general sobre la creación, consulte la [guía rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->AEM Si no está familiarizado con el uso de la, consulte la documentación sobre [gestión básica](../../help/sites-authoring/basic-handling.md).
+>Si no está familiarizado con AEM, consulte la documentación sobre [manejo básico](../../help/sites-authoring/basic-handling.md).
 
 ### Página principal {#home-page}
 
@@ -107,15 +107,15 @@ En la ficha **Plantillas**:
 
   Si no se selecciona, la Guía de componentes utiliza el recurso existente en el repositorio (un nodo jcr que es secundario de un nodo par).
 
-   * El texto mostrado es: &quot;Este componente se incluye a través de su nodo de par&quot;.
+  * El texto mostrado es: &quot;Este componente se incluye a través de su nodo de par&quot;.
 
   Si se selecciona, la Guía de componentes utiliza sling para incluir dinámicamente un componente del resourceType del nodo secundario (recurso no existente).
 
-   * El texto mostrado es: &quot;Este componente se incluye dinámicamente&quot;.
+  * El texto mostrado es: &quot;Este componente se incluye dinámicamente&quot;.
 
   El valor predeterminado está desmarcado.
 
-### Interacciones de Publish {#publish-interactions}
+### Interacciones de publicación {#publish-interactions}
 
 Al utilizar la guía en una instancia de publicación, es posible experimentar los componentes y las funciones como un visitante del sitio (sin iniciar sesión) y como miembros con varios privilegios al iniciar sesión.
 
@@ -123,7 +123,7 @@ Al utilizar la guía en una instancia de publicación, es posible experimentar l
 >
 >Tenga en cuenta que si el SRP se deja en [JSRP](jsrp.md) de forma predeterminada, entonces el UGC introducido en la instancia de publicación solo estará visible en la publicación, y *no* estará visible desde la consola [moderación](moderate-ugc.md) en la instancia de autor.
 
-## Bibliotecas del cliente {#client-side-libraries}
+## Bibliotecas del lado del cliente {#client-side-libraries}
 
 Las bibliotecas del lado del cliente (clientlibs) enumeradas para cada componente son las *necesarias* a las que se hace referencia cuando el componente se coloca en una página. Los clientlibs proporcionan un medio para administrar y optimizar la descarga de JavaScript y CSS utilizados para procesar el componente en el explorador.
 
@@ -149,7 +149,7 @@ Para experimentar rápidamente con las personalizaciones, se debe agregar la pro
 
 Con el componente Comentarios como ejemplo, en la instancia de autor o publicación, ha iniciado sesión con privilegios de administrador:
 
-1. Buscar [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Vaya a [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
    Por ejemplo, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 

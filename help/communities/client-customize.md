@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Esto es diferente a [ampliar](#extensions) un componente predeterminado en el qu
 
 Para ver un ejemplo rápido de superposición del componente Comentarios, pruebe el [tutorial del componente Comentarios de superposición](overlay-comments.md).
 
-## Extensiones  {#extensions}
+## Extensiones {#extensions}
 
 Ampliar (anular) un componente es un método para realizar modificaciones para un uso específico sin afectar a todas las instancias que utilizan el predeterminado. El componente extendido tiene un nombre único en la carpeta /apps y hace referencia al componente predeterminado en la carpeta /libs, por lo que el diseño y el comportamiento predeterminados de un componente no se modifican.
 
@@ -111,7 +111,7 @@ Los estilos personalizados ahora anularán los estilos de marco de trabajo prede
 
 Para ampliar una implementación de JavaScript de componentes, debe:
 
-1. Cree un componente para su aplicación con un jcr:resourceSuperType establecido en el valor del jcr:resourceType del componente ampliado; por ejemplo, social/forum/components/hbs/forum.
+1. Cree un componente para su aplicación con un jcr:resourceSuperType establecido en el valor del jcr:resourceType del componente ampliado, por ejemplo, social/forum/components/hbs/forum.
 1. Examine la JavaScript del componente SCF predeterminado para determinar qué métodos deben registrarse con SCF.registerComponent().
 1. Copie el JavaScript del componente ampliado o comience desde cero.
 1. Amplíe el método.
@@ -146,7 +146,7 @@ Para ampliar una implementación de JavaScript de componentes, debe:
 
 Las etiquetas de script son una parte inherente del marco de trabajo del lado del cliente. Son el pegado que ayuda a enlazar el marcado generado en el servidor con los modelos y vistas del lado del cliente.
 
-Las etiquetas de script en los scripts SCF no deben eliminarse al superponer o anular componentes. Las etiquetas de script SCF creadas automáticamente para insertar JSON en el HTML se identifican con el atributo `data-scf-json=true`.
+Las etiquetas de script en los scripts SCF no deben eliminarse al superponer o anular componentes. Las etiquetas de script SCF creadas automáticamente para insertar JSON en HTML se identifican con el atributo `data-scf-json=true`.
 
 ## Clientlibs para SCF {#clientlibs-for-scf}
 
@@ -156,12 +156,12 @@ Los clientlibs para SCF siguen un patrón de nomenclatura muy específico para d
 
 | Variante de Clientlib | Patrón para la propiedad Categorías |
 |--- |--- |
-| clientlib completo | cq.social.hbs.&lt;nombre de componente> |
-| clientlib de autor | cq.social.author.hbs.&lt;nombre de componente> |
+| clientlib completo | cq.social.hbs.&lt;nombre del componente> |
+| clientlib de autor | cq.social.author.hbs.&lt;nombre del componente> |
 
 ### Completar Clientlibs {#complete-clientlibs}
 
-Los clientlibs completos (que no son de autor) incluyen dependencias y son prácticos para incluirlos en ui:includeClientLib.
+Los clientlibs completos (que no son de autor) incluyen dependencias y son convenientes para incluirlos con ui:includeClientLib.
 
 Estas versiones se encuentran en:
 

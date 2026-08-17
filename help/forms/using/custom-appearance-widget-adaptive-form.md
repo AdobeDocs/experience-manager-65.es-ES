@@ -11,8 +11,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 96%
+source-wordcount: '1744'
+ht-degree: 95%
 
 ---
 
@@ -130,9 +130,9 @@ Una vez creada la plantilla del proyecto, realice los siguientes cambios según 
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Devuelve un mapa para convertir eventos HTML en eventos XFA. <br /> <code class="code">&lbrace;
+   <td>Devuelve un mapa para convertir eventos de HTML en eventos XFA. <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> Este ejemplo muestra que <code>blur</code> es un evento HTML y <code>XFA_EXIT_EVENT</code> es el evento XFA correspondiente. </td>
+      &rbrace;</code><br /> Este ejemplo muestra que <code>blur</code> es un evento de HTML y <code>XFA_EXIT_EVENT</code> es el evento XFA correspondiente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

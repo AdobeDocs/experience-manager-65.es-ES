@@ -9,7 +9,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1531'
 ht-degree: 2%
 
 ---
@@ -112,7 +112,7 @@ Un asistente puede agregar dos espacios bajo un div, uno para el texto completo 
 
   (Opcional) Valor booleano que indica si se debe aplicar Handlebars.SafeString() antes de devolver el resultado. El valor predeterminado es false.
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 ```
 {{content-loadmore  context numChars=32  moreText="go on"  ellipsesText="..." }}
@@ -154,7 +154,7 @@ Un asistente para devolver una cadena de fecha con formato.
 // returns "03-18-2015"
 ```
 
-## Igual a {#equals}
+## Signo igual {#equals}
 
 Un asistente para devolver contenido en función de un condicional de igualdad.
 
@@ -168,7 +168,7 @@ Un asistente para devolver contenido en función de un condicional de igualdad.
 
   El valor de la derecha que se va a comparar.
 
-### Ejemplos {#example-1}
+### Ejemplo {#example-1}
 
 ```
 {{#equals  value "some-value"}}
@@ -192,7 +192,7 @@ Un asistente de bloque que prueba el valor actual de [modo WCM](https://develope
 
   (Opcional) Una lista separada por comas de [modos WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) para comprobar si están configurados.
 
-### Ejemplos {#example-2}
+### Ejemplo {#example-2}
 
 ```xml
 {{#if-wcm-mode mode="DESIGN, EDIT"}}
@@ -222,7 +222,7 @@ Consulte también [Internacionalización de cadenas en JavaScript Code](../../he
 
   (Opcional) Una sugerencia de traducción
 
-### Ejemplos {#example-3}
+### Ejemplo {#example-3}
 
 ```
 {{i18n "hello"}}
@@ -265,7 +265,7 @@ Este asistente, apropiado solo en el lado del servidor, proporciona una funciona
 
   (Opcional) El valor predeterminado es falso. Solo para uso interno.
 
-### Ejemplos {#example-4}
+### Ejemplo {#example-4}
 
 ```
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
@@ -275,7 +275,7 @@ Incluye un nuevo componente de comentarios en `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
-AEM Un asistente que incluye una biblioteca de cliente de HTML de, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en el script Handlebars.
+Un asistente que incluye una biblioteca de cliente HTML de AEM, que puede ser una biblioteca js, css o de temáticas. Para varias inclusiones de diferentes tipos, por ejemplo, js y css, esta etiqueta debe utilizarse varias veces en el script Handlebars.
 
 Este asistente, apropiado solo en el lado del servidor, proporciona una funcionalidad similar a [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
 
@@ -356,7 +356,7 @@ Por ejemplo:
 
   Número de días transcurridos antes de cambiar a una fecha real. El valor predeterminado es 60.
 
-### Ejemplos {#example-5}
+### Ejemplo {#example-5}
 
 ```
 {{pretty-time this.published daysCutoff=7}}
@@ -374,7 +374,7 @@ Depending on how long in the past, may return
 
 ## Xss-html {#xss-html}
 
-Un asistente que codifica una cadena de origen para el contenido de elementos HTML para ayudar a protegerse contra XSS.
+Un asistente que codifica una cadena de origen para el contenido de elementos de HTML para ayudar a protegerse contra XSS.
 
 NOTA: Este asistente no es un validador y no debe utilizarse para escribir valores de atributo.
 
@@ -384,7 +384,7 @@ NOTA: Este asistente no es un validador y no debe utilizarse para escribir valor
 
   HTML que se va a codificar.
 
-### Ejemplos {#example-6}
+### Ejemplo {#example-6}
 
 ```
 <p>{{xss-html forum-ugc}}</p>
@@ -402,7 +402,7 @@ NOTA: Este asistente no es un validador y no debe utilizarse para escribir atrib
 
   HTML que se va a codificar.
 
-### Ejemplos {#example-7}
+### Ejemplo {#example-7}
 
 ```
 <div id={{xss-htmlAttr id}} />
@@ -420,7 +420,7 @@ NOTA: Este asistente no es un validador y no debe usarse para escribir en JavaSc
 
   HTML que se va a codificar.
 
-### Ejemplos {#example-8}
+### Ejemplo {#example-8}
 
 ```
 var input = {{xss-jsString topic-title}}
@@ -428,7 +428,7 @@ var input = {{xss-jsString topic-title}}
 
 ## Xss-validHref {#xss-validhref}
 
-Un asistente que sanea una dirección URL para escribir como un valor de atributo HTML href o srce para ayudar a protegerse contra XSS.
+Un asistente que sanea una dirección URL para escribir como un valor de atributo href o srce de HTML para ayudar a protegerse contra XSS.
 
 NOTA: Este asistente puede devolver una cadena vacía.
 
@@ -438,7 +438,7 @@ NOTA: Este asistente puede devolver una cadena vacía.
 
   Dirección URL para sanear.
 
-### Ejemplos {#example-9}
+### Ejemplo {#example-9}
 
 ```
 <a href="{{xss-validHref url}}">my link</a>
@@ -458,12 +458,12 @@ NOTA: Este asistente puede devolver una cadena vacía.
 
 * Los Handlebars proporcionan un parámetro final a los ayudantes llamados &quot;options&quot;. El objeto especial &quot;options&quot; incluye
 
-   * Datos privados opcionales (options.data)
-   * Propiedades clave-valor opcionales de la llamada (options.hash)
-   * Capacidad para invocarse a sí mismo (options.fn())
-   * Capacidad para invocar lo contrario a sí mismo (options.inverse())
+  * Datos privados opcionales (options.data)
+  * Propiedades clave-valor opcionales de la llamada (options.hash)
+  * Capacidad para invocarse a sí mismo (options.fn())
+  * Capacidad para invocar lo contrario a sí mismo (options.inverse())
 
-* Se recomienda que el contenido de la cadena HTML devuelto por un asistente sea SafeString.
+* Se recomienda que el contenido de HTML String devuelto por un asistente sea un SafeString.
 
 ### Un ejemplo de un asistente simple de la documentación de Handlebars.js: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
@@ -488,7 +488,7 @@ template(context);
 Se renderizaría:
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Post!&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Publicación!&lt;/a>&lt;/li>
 &lt;/ul>
 
 ### Un ejemplo de un asistente de bloque de la documentación de Handlebars.js: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
@@ -519,7 +519,7 @@ Se renderizaría:
 
 ## Ayudantes de SCF personalizados {#custom-scf-helpers}
 
-Los asistentes personalizados deben implementarse en el lado del servidor y del cliente, especialmente al pasar datos. Para SCF, la mayoría de las plantillas se compilan y se representan en el servidor, ya que el servidor genera el HTML de un componente determinado cuando se solicita la página.
+Los asistentes personalizados deben implementarse en el lado del servidor y del cliente, especialmente al pasar datos. Para SCF, la mayoría de las plantillas se compilan y representan en el lado del servidor, ya que el servidor genera el HTML para un componente determinado cuando se solicita la página.
 
 ### Ayudantes personalizados del lado del servidor {#server-side-custom-helpers}
 

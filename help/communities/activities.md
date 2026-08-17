@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ La capacidad de seguir agrega otra vista de las actividades cuando los miembros 
 
 El documento describe:
 
-* AEM Adición del componente Flujos de actividad a un sitio de
+* Adición del componente Flujos de actividad a un sitio de AEM
 * Ajustes de configuración del componente Flujos de actividad
 
 ### Adición de flujos de actividad a una página {#adding-activity-streams-to-a-page}
@@ -89,11 +89,11 @@ Aparece el botón **Seguir**:
 * Al ver el perfil de otro usuario.
 * En una página de características principal, como foros, control de calidad y blogs.
 
-   * Sigue toda la actividad de para esa función general.
+  * Sigue toda la actividad de para esa función general.
 
 * Para una entrada específica, como un tema de foro, una pregunta de control de calidad o un artículo de blog.
 
-   * Sigue todas las actividades de esa entrada específica.
+  * Sigue todas las actividades de esa entrada específica.
 
 ### Información adicional {#additional-information}
 

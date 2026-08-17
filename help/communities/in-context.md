@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ La interfaz de usuario presentada al moderador en la instancia de publicación s
 1. Ha iniciado sesión, pero no es administrador, moderador ni autor del contenido.
 1. No se ha iniciado sesión.
 
-## Ejemplos {#example}
+## Ejemplo {#example}
 
-Con el sitio [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creado al [Comenzar con AEM Communities](getting-started.md), es posible configurar un hilo en un foro en el que experimentar diversas actividades de moderación en el entorno de Publish. Consulte a continuación.
+Con el sitio [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creado al [empezar con AEM Communities](getting-started.md), es posible configurar un hilo en un foro en el que experimentar diversas actividades de moderación en el entorno de publicación. Consulte a continuación.
 
 Aaron McDonald (`aaron.mcdonald@mailinator.com`) se identificó como un miembro de confianza de la comunidad agregándolo al grupo de moderadores de participación de la comunidad al crear el sitio.
 
@@ -50,40 +50,40 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
 
 * Iniciar sesión como Rebekah Larsen (rebekah.larsen@trashymail.com)
 
-   * Seleccionar foro
-   * Seleccione Nuevo Post
-   * Introduzca el asunto
+  * Seleccionar foro
+  * Seleccionar nueva publicación
+  * Introduzca el asunto
 
-     Cuándo cambiar el néctar en Humming Bird Feeder
+    Cuándo cambiar el néctar en Humming Bird Feeder
 
-   * Escriba el texto del cuerpo
+  * Escriba el texto del cuerpo
 
-     No he tenido mucho éxito cuando cuelgo un alimentador de colibrí cada año. Parece que vienen un día o dos, entonces eso es todo. Lo cambio una vez a la semana, ¿es demasiado largo? ¿Debo cambiarlo antes?
+    No he tenido mucho éxito cuando cuelgo un alimentador de colibrí cada año. Parece que vienen un día o dos, entonces eso es todo. Lo cambio una vez a la semana, ¿es demasiado largo? ¿Debo cambiarlo antes?
 
-   * Seleccionar Post
-   * Seleccione Cerrar sesión
+  * Seleccionar publicación
+  * Seleccione Cerrar sesión
 
 * Iniciar sesión como Aaron McDonald (aaron.mcdonald@mailinator.com)
 
-   * Seleccionar foro
-   * Para el tema de Hummingbird, seleccione Leer más
-   * Escriba el comentario para la respuesta de Post
+  * Seleccionar foro
+  * Para el tema de Hummingbird, seleccione Leer más
+  * Escriba el comentario para la respuesta de publicación
 
-     Me cambio la mía una vez a la semana y las recibo de mayo a octubre.
+    Me cambio la mía una vez a la semana y las recibo de mayo a octubre.
 
-   * Seleccionar respuesta
-   * Seleccione Cerrar sesión
+  * Seleccionar respuesta
+  * Seleccione Cerrar sesión
 
 * Inicie sesión como Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
-   * Seleccionar foro
-   * Para el tema de Hummingbird, seleccione Leer más
-   * Escriba el comentario para la respuesta de Post
+  * Seleccionar foro
+  * Para el tema de Hummingbird, seleccione Leer más
+  * Escriba el comentario para la respuesta de publicación
 
-     Vendo néctar y alimentadores - visita https://my.viral.url/
+    Vendo néctar y alimentadores - visita https://my.viral.url/
 
-   * Seleccionar respuesta
-   * Seleccione Cerrar sesión
+  * Seleccionar respuesta
+  * Seleccione Cerrar sesión
 
 ### Visitante anónimo del sitio (#5) {#anonymous-site-visitor}
 
@@ -122,9 +122,9 @@ Aviso:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Seleccione el elemento de menú Administración para poder acceder a la [consola de moderación](moderation.md) desde el entorno de Publish.
+Seleccione el elemento de menú Administración para poder acceder a la [consola de moderación](moderation.md) desde el entorno de publicación.
 
-Tenga en cuenta que, para un administrador, todo el contenido moderable es visible, no solo el contenido del sitio de la comunidad de Geometrixx Engage.
+Tenga en cuenta que, para un administrador, todo el contenido moderable es visible, no solo el contenido del sitio de la comunidad Geometrixx Engage.
 
 El filtro de búsqueda es un panel lateral que alterna entre abierto y cerrado.
 
@@ -145,11 +145,11 @@ Aviso:
 
 ![moderador-foro-comunidad](assets/community-forum-moderator.png)
 
-Seleccione el elemento de menú Administración para poder acceder a la [consola de moderación](moderation.md) desde el entorno de Publish.
+Seleccione el elemento de menú Administración para poder acceder a la [consola de moderación](moderation.md) desde el entorno de publicación.
 
-Tenga en cuenta que, para un moderador de la comunidad, solo está visible el contenido moderable del sitio de la comunidad de Geometrixx Engage.
+Tenga en cuenta que, para un moderador de la comunidad, solo está visible el contenido moderable del sitio de la comunidad Geometrixx Engage.
 
-AEM Observe que el moderador de la comunidad tiene las mismas opciones que el administrador (la imagen tiene la barra lateral de búsqueda activada o cerrada), pero no tiene acceso a otras consolas de la.
+Observe que el moderador de la comunidad tiene las mismas opciones que el administrador (la imagen se muestra con la barra lateral de búsqueda desactivada), pero no tiene acceso a otras consolas de AEM.
 
 Cerrar sesión.
 

@@ -11,8 +11,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 5723e9990969dff1b508062d69a68f68a20eb576
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 92%
+source-wordcount: '549'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 92%
 
 Cuando se crea un formulario adaptable, se puede especificar un diseño de la barra de herramientas para el formulario. El diseño de la barra de herramientas define los comandos y el diseño de la barra de herramientas del formulario.
 
-El diseño de la barra de herramientas se basa en gran medida en el procesamiento del lado del cliente impulsado por código complejo CSS y JavaScript. Organizar y optimizar el servicio de este código puede ser un problema complicado. AEM Para ayudar a resolver este problema, proporciona carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente. A continuación, el sistema de biblioteca del lado del cliente se encarga de producir los vínculos correctos en la página web final para cargar el código correcto. Para obtener información detallada, consulte [Cómo funcionan las bibliotecas del lado del cliente en AEM.](/help/sites-developing/clientlibs.md)
+El diseño de la barra de herramientas se basa en gran medida en el procesamiento del lado del cliente impulsado por código complejo CSS y JavaScript. Organizar y optimizar el servicio de este código puede ser un problema complicado. Para ayudar a resolver este problema, AEM proporciona carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente. A continuación, el sistema de biblioteca del lado del cliente se encarga de producir los vínculos correctos en la página web final para cargar el código correcto. Para obtener información detallada, consulte [Cómo funcionan las bibliotecas del lado del cliente en AEM.](/help/sites-developing/clientlibs.md)
 
 ![Diseño de muestra de la barra de herramientas](assets/default_toolbar_layout.png)
 
@@ -43,7 +43,7 @@ El paquete de contenido adjunto contiene todo el código que se describe a conti
 CustomToolbarLayoutDemo.zip
 
 [Obtener archivo](assets/customtoolbarlayoutdemo.zip)
-Diseño personalizado de la barra de herramientas 
+Diseño personalizado de la barra de herramientas de demostración
 
 ## Crear un diseño personalizado de la barra de herramientas {#layout-1}
 
@@ -65,7 +65,7 @@ Diseño personalizado de la barra de herramientas
 
 1. Cambie el nombre del nodo copiado. `mobileFixedToolbarLayout`, a `customToolbarLayout.`
 
-   Además, proporcione una descripción relevante para el nodo. Por ejemplo, cambie jcr:description del nodo a **Diseño personalizado para la barra de herramientas**.
+   Además, proporcione una descripción relevante para el nodo. Por ejemplo, cambie el jcr:description del nodo a **Diseño personalizado para la barra de herramientas**.
 
    La propiedad `guideComponentType` del nodo determina el tipo de diseño. En este caso, el tipo de diseño es la barra de herramientas, por lo que aparece en la lista desplegable de selección de diseño de la barra de herramientas.
 
