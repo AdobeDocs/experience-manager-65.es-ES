@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ La consola de plantillas de grupo es similar a la consola [Plantillas de sitio](
 
 Un grupo de comunidad se incorpora a una plantilla de sitio al incluir la función [Grupos](/help/communities/functions.md#groups-function) (que puede no ser la primera ni la única función de la plantilla).
 
-A partir del paquete de características 1[&#128279;](/help/communities/deploy-communities.md#latestfeaturepack) de Communities es posible anidar grupos incluyendo la función Grupos dentro de una plantilla de grupo.
+A partir del paquete de características 1](/help/communities/deploy-communities.md#latestfeaturepack) de Communities [es posible anidar grupos incluyendo la función Grupos dentro de una plantilla de grupo.
 
 En el momento en que se realiza una acción para crear un grupo de comunidad, se selecciona la plantilla (estructura) del grupo. La selección depende de cómo se configuró la función Grupos cuando se agregó al sitio o a la plantilla del grupo.
 
@@ -33,7 +33,7 @@ En el momento en que se realiza una acción para crear un grupo de comunidad, se
 
 ## Consola de plantillas de grupo {#group-templates-console}
 
-AEM Para llegar a la consola de plantillas de grupo en el entorno de autor de la:
+Para llegar a la consola de plantillas de grupo en el entorno de AEM Author:
 
 * Seleccionar **herramientas | Communities | Plantillas de grupo,** de navegación global.
 
@@ -65,7 +65,7 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 
   Conmutador que controla si la plantilla es referenciable.
 
-#### Miniatura    {#thumbnail}
+#### Miniaturas {#thumbnail}
 
 ![miniatura de sitio](assets/site-thumbnail.png)
 
@@ -75,7 +75,7 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 
 >[!CAUTION]
 >
->AEM Si trabaja con comunidades FP4 de 6.1 o versiones anteriores, no agregue una función de grupos a una plantilla de grupo.
+>Si trabaja con AEM 6.1 Communities FP4 o versiones anteriores, no agregue una función de grupos a una plantilla de grupo.
 >
 >La característica de grupos anidados está disponible a partir de las comunidades [FP1](/help/communities/communities.md#latestfeaturepack).
 >

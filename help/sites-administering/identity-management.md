@@ -1,6 +1,6 @@
 ---
 title: Administración de identidades
-description: AEM Obtenga información acerca del funcionamiento interno de la administración de identidades en la.
+description: Obtenga información acerca del funcionamiento interno de la administración de identidades en AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1254'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Se pueden configurar o desarrollar funciones adicionales:
 
 Se puede usar un [formulario](/help/sites-authoring/default-components.md#form-component) para recopilar la información de registro y generar la nueva cuenta y perfil.
 
-Por ejemplo, los usuarios pueden solicitar un nuevo perfil utilizando la página Geometrixx
+Por ejemplo, los usuarios pueden solicitar un perfil nuevo mediante la página de Geometrixx
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![Formulario de registro de muestra](assets/registerform.png)
@@ -75,7 +75,7 @@ El componente de inicio de sesión se puede utilizar para recopilar la informaci
 
 Esto proporciona al visitante los campos estándar de **Nombre de usuario** y **Contraseña**, con un botón de **Inicio de sesión** para activar el proceso de inicio de sesión cuando se ingresen las credenciales.
 
-Por ejemplo, los usuarios pueden iniciar sesión o crear una cuenta con la opción **Iniciar sesión** de la barra de herramientas Geometrixx, que usa la página:
+Por ejemplo, los usuarios pueden iniciar sesión o crear una cuenta con la opción **Iniciar sesión** de la barra de herramientas de Geometrixx, que usa la página:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -98,7 +98,7 @@ Para ver los detalles del perfil, haz clic en **Mi perfil** en la esquina superi
 
 Puede ver otro perfil usando el [contexto de cliente](/help/sites-administering/client-context.md) (en el entorno de creación y con privilegios suficientes):
 
-1. Abra una página; por ejemplo, la página Geometrixx:
+1. Abra una página; por ejemplo, la página de Geometrixx:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
@@ -120,7 +120,7 @@ Puede ver otro perfil usando el [contexto de cliente](/help/sites-administering/
 
 Puede añadir campos a la definición del perfil. Por ejemplo, para agregar un campo &quot;Color favorito&quot; al perfil de Geometrixx:
 
-1. Desde la consola Sitios web, vaya a Sitio de Geometrixx Outdoors > Inglés > Usuario > Mi perfil.
+1. En la consola Sitios web, vaya a Sitio de Geometrixx Outdoors > Inglés > Usuario > Mi perfil.
 1. Haga doble clic en la página **Mi perfil** para abrirla y editarla.
 1. En la ficha **Componentes** de la barra de tareas, expanda la sección **Formulario**.
 1. Arrastre una **lista desplegable** de la barra de tareas al formulario, justo debajo del campo **Acerca de mí**.
@@ -194,7 +194,7 @@ En una instalación estándar (de autor o publicación), todos tienen acceso de 
 
 Estos derechos de acceso se definen mediante la siguiente ACL comodín:
 
-/home todos permitir jcr:leer rep:glob = &#42;/perfil&#42;
+/home todos permitir jcr:read rep:glob = &#42;/perfil&#42;
 
 Esto permite:
 

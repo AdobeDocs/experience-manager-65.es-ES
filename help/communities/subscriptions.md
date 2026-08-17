@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '353'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Lo que distingue las suscripciones de las notificaciones es:
 * La única acción que deben realizar los miembros es seleccionar `Email Subscriptions` al seguir.
 * Cuando se configura la respuesta al correo electrónico, los miembros pueden publicar contenido de manera efectiva simplemente respondiendo al correo electrónico recibido.
 
-### Requisitos  {#requirements}
+### Requisitos {#requirements}
 
 **Configurar correo electrónico**
 

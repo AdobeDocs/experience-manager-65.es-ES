@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Esta consola muestra las plantillas a partir de las cuales se puede crear un [si
 
 ![plantilla del sitio](assets/site-template.png)
 
-## Crear plantilla del sitio {#create-site-template}
+## Crear plantilla de sitio {#create-site-template}
 
 Para empezar a crear una plantilla de sitio, seleccione `Create`.
 
@@ -58,7 +58,7 @@ En el panel Información básica, se configura un nombre, una descripción y si 
 
   Conmutador que controla si la plantilla es referenciable.
 
-### Miniatura    {#thumbnail}
+### Miniaturas {#thumbnail}
 
 ![miniatura de sitio](assets/site-thumbnail.png)
 

@@ -8,14 +8,14 @@ exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9014a7dd3c9279a4da3944c1b095fd60352fdbeb
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 0%
+source-wordcount: '1015'
+ht-degree: 1%
 
 ---
 
 # Biblioteca de transcodificación de imágenes {#imaging-transcoding-library}
 
-La biblioteca de transcodificación de imágenes de Adobe es una solución de procesamiento de imágenes propietaria que puede realizar funciones principales de administración de imágenes, entre ellas:
+La biblioteca de transcodificación de imágenes de Adobe es una solución de procesamiento de imágenes propietaria que puede realizar funciones principales de administración de imágenes, como las siguientes:
 
 * Codificación
 * Transcodificación (conversión de formatos compatibles)
@@ -24,14 +24,14 @@ La biblioteca de transcodificación de imágenes de Adobe es una solución de pr
 * Compresión de calidad JPEG
 * Cambio de tamaño de imagen
 
-La biblioteca de transcodificación de imágenes es compatible con CMYK y con alfa completo, excepto con el Alpha CMYK.
+La biblioteca de transcodificación de imágenes proporciona compatibilidad con CMYK y con alfa completo, excepto CMYK -Alpha.
 
 Además de admitir una amplia gama de formatos y perfiles de archivo, la biblioteca de transcodificación de imágenes tiene ventajas significativas respecto a otras soluciones de terceros en cuanto a rendimiento, escalabilidad y calidad. Estas son algunas de las ventajas clave de utilizar la biblioteca de transcodificación de imágenes:
 
 * **Escalas con mayor tamaño o resolución de archivo**: La escala se logra principalmente gracias a la capacidad patentada de la biblioteca de transcodificación de imágenes para cambiar el tamaño al descodificar archivos. Esta capacidad garantiza que el uso de la memoria en tiempo de ejecución siempre sea óptimo y no sea una función cuadrática de aumento del tamaño del archivo o de megapíxeles de resolución. La biblioteca de transcodificación de imágenes puede procesar archivos más grandes y de alta resolución (que contienen megapíxeles más altos). Las herramientas de terceros, como ImageMagick, no pueden gestionar archivos grandes ni bloqueos durante el procesamiento de dichos archivos.
 * **Algoritmos de compresión y cambio de tamaño con calidad Photoshop**: Coherencia con el estándar de la industria en términos de calidad de muestreo descendente (bicúbico suave, nítido y automático) y calidad de compresión. La biblioteca de transcodificación de imágenes evalúa aún más el factor de calidad de la imagen de entrada y utiliza de forma inteligente tablas y ajustes de calidad óptimos para la imagen de salida. Esta capacidad produce archivos de tamaño óptimo sin poner en riesgo la calidad visual.
 * **Alto rendimiento:** El tiempo de respuesta es menor y el rendimiento es consistentemente mayor que ImageMagick. Por lo tanto, la biblioteca de transcodificación de imágenes debe reducir el tiempo de espera de los usuarios y el coste del alojamiento.
-* **Escalar mejor con carga simultánea:** La biblioteca de transcodificación de imágenes funciona de manera óptima en condiciones de carga simultánea. Proporciona un alto rendimiento con un rendimiento óptimo de la CPU, uso de la memoria y bajo tiempo de respuesta, lo que ayuda a reducir el coste del alojamiento.
+* **Escalar mejor con carga simultánea:** La biblioteca de transcodificación de imágenes funciona de manera óptima en condiciones de carga simultánea. Proporciona un alto rendimiento con un rendimiento de CPU óptimo, uso de memoria y bajo tiempo de respuesta, lo que ayuda a reducir el coste del alojamiento.
 
 ## Plataformas compatibles {#supported-platforms}
 
@@ -122,7 +122,7 @@ Por ejemplo, si desea crear miniaturas para una imagen de TIFF mediante la bibli
 
 1. Alternar panel lateral y, en la lista de pasos, agregar **[!UICONTROL Controlador SWitchEngine]**.
 
-1. Agregue comandos al controlador [!UICONTROL SwitchEngine] en función de sus requisitos personalizados. Ajuste los parámetros de los comandos que especifique para satisfacer sus necesidades. Por ejemplo, si desea conservar el perfil de color de la imagen del JPEG, agregue los siguientes comandos a la lista **[!UICONTROL Comandos]**:
+1. Agregue comandos al controlador [!UICONTROL SwitchEngine] en función de sus requisitos personalizados. Ajuste los parámetros de los comandos que especifique para satisfacer sus necesidades. Por ejemplo, si desea conservar el perfil de color de la imagen de JPEG, agregue los siguientes comandos a la lista **[!UICONTROL Comandos]**:
 
    * `SWitchEngine -input ${file} -destMime PNG -resize 48 -output ${directory}cq5dam.thumbnail.48.48.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`

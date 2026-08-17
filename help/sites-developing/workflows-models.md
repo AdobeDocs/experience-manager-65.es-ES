@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2503'
 ht-degree: 4%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->AEM Para usar la IU clásica, consulte la [documentación de.3](https://helpx.adobe.com/es/experience-manager/6-3/help/sites-developing/workflows-models.html) como referencia.
+>Para usar la IU clásica, consulte la [documentación de AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) como referencia.
 
-Usted crea un [modelo de flujo de trabajo](/help/sites-developing/workflows.md#model) para definir la serie de pasos que se ejecutan cuando un usuario inicia el flujo de trabajo. También puede definir propiedades del modelo, como, por ejemplo, si el flujo de trabajo es transitorio o utiliza varios recursos. 
+Usted crea un [modelo de flujo de trabajo](/help/sites-developing/workflows.md#model) para definir la serie de pasos que se ejecutan cuando un usuario inicia el flujo de trabajo. También puede definir propiedades del modelo, como, por ejemplo, si el flujo de trabajo es transitorio o utiliza varios recursos.
 
 Cuando un usuario inicia un flujo de trabajo, se inicia una instancia; este es el modelo de tiempo de ejecución correspondiente, creado al [sincronizar](#sync-your-workflow-generate-a-runtime-model) los cambios.
 
@@ -39,7 +39,7 @@ Este paso está configurado para asignar un elemento de trabajo al iniciador del
 Para crear un flujo de trabajo con el editor:
 
 1. Abra la consola **Modelos de flujo de trabajo**; a través de **Herramientas**, **Flujo de trabajo**, **Modelos** o, por ejemplo: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
-1. Seleccione **Crear** y luego **Crear modelo**.
+1. Seleccione **Crear** y, a continuación, **Crear modelo**.
 1. Aparecerá el cuadro de diálogo **Agregar modelo de flujo de trabajo**. Escriba **Title** y **Name** (opcional) antes de seleccionar **Listo**.
 1. El nuevo modelo aparece en la consola **Modelos de flujo de trabajo**.
 1. Seleccione el nuevo flujo de trabajo y luego use [**Editar** para abrirlo y configurarlo](#editinganexistingworkflow):
@@ -85,9 +85,9 @@ Cuando abra un [modelo predeterminado o heredado](/help/sites-developing/workflo
 * El navegador de pasos no está disponible (lado izquierdo).
 * Hay una acción **Edit** disponible en la barra de herramientas (lado derecho).
 * Inicialmente, el modelo y sus propiedades se presentan en modo de solo lectura como:
-   * Los flujos de trabajo predeterminados están en `/libs`
-   * Los flujos de trabajo heredados están en `/etc`
-Si selecciona **Editar**:
+  * Los flujos de trabajo predeterminados están en `/libs`
+  * Los flujos de trabajo heredados están en `/etc`
+    Si selecciona **Editar**:
 * tomar una copia del flujo de trabajo en `/conf`
 * Hacer que el explorador de Pasos esté disponible
 * permite realizar cambios
@@ -100,7 +100,7 @@ Si selecciona **Editar**:
 
 ### Adición de un paso a un modelo {#adding-a-step-to-a-model}
 
-Agregue pasos al modelo para representar la actividad que desea realizar: cada paso realiza una actividad específica. AEM Hay una selección de componentes de paso disponibles en una instancia de estándar.
+Agregue pasos al modelo para representar la actividad que desea realizar: cada paso realiza una actividad específica. Hay una selección de componentes de paso disponibles en una instancia de AEM estándar.
 
 Cuando edita un modelo, los pasos disponibles aparecen en los distintos grupos del explorador de **Pasos**. Por ejemplo:
 
@@ -108,7 +108,7 @@ Cuando edita un modelo, los pasos disponibles aparecen en los distintos grupos d
 
 >[!NOTE]
 >
->AEM Para obtener información acerca de los componentes de paso principales instalados con el, vea [Pasos de flujo de trabajo de referencia](/help/sites-developing/workflows-step-ref.md).
+>Para obtener información acerca de los componentes de paso principales instalados con AEM, consulte [Pasos de flujo de trabajo de referencia](/help/sites-developing/workflows-step-ref.md).
 
 Para agregar pasos al modelo de flujo de trabajo:
 
@@ -153,7 +153,7 @@ Puede **Configurar** y personalizar el comportamiento de un paso del flujo de tr
 
    >[!NOTE]
    >
-   >AEM Para obtener información acerca de los componentes de paso principales instalados con el, vea [Pasos de flujo de trabajo de referencia](/help/sites-developing/workflows-step-ref.md).
+   >Para obtener información acerca de los componentes de paso principales instalados con AEM, consulte [Pasos de flujo de trabajo de referencia](/help/sites-developing/workflows-step-ref.md).
 
 1. Configure las **Propiedades del paso** según sea necesario; las propiedades disponibles dependen del tipo de paso; también puede haber varias pestañas disponibles. Por ejemplo, el **Paso de participante** predeterminado, presente en un nuevo flujo de trabajo como `Step 1`:
 
@@ -180,7 +180,7 @@ Puede crear un modelo de flujo de trabajo [Transient](/help/sites-developing/wor
 
 >[!NOTE]
 >
->AEM Cuando se ejecuta un flujo de trabajo en modo [transitorio](/help/sites-developing/workflows.md#transient-workflows), el modo no almacena ningún historial de flujo de trabajo. Por lo tanto, [Cronología](/help/sites-authoring/basic-handling.md#timeline) no muestra ninguna información relacionada con ese flujo de trabajo.
+>Cuando ejecuta un flujo de trabajo en modo [transitorio](/help/sites-developing/workflows.md#transient-workflows), AEM no almacena ningún historial de flujo de trabajo. Por lo tanto, [Cronología](/help/sites-authoring/basic-handling.md#timeline) no muestra ninguna información relacionada con ese flujo de trabajo.
 
 ## Hacer que los modelos de flujo de trabajo estén disponibles en la IU táctil {#classic2touchui}
 
@@ -253,7 +253,7 @@ Para definir **Stages** para su flujo de trabajo:
    | Etapa 3 | Revisión |
    | Etapa 4 | Aprobar |
    | Etapa 5 | Aprobar |
-   | Etapa 6 | Completado |
+   | Etapa 6 | Completar |
 
 1. Confirme los cambios con **Sync** (barra de herramientas del editor) para generar el modelo de tiempo de ejecución.
 
@@ -319,7 +319,7 @@ Por ejemplo, pruebe el nuevo flujo de trabajo de la siguiente manera:
 1. Realice las acciones necesarias para que el flujo de trabajo continúe.
 1. Supervise los archivos de registro mientras se ejecuta el flujo de trabajo.
 
-AEM También puede configurar la visualización de mensajes de **DEBUG** en los archivos de registro mediante la configuración de la configuración de la configuración. Consulte [Registro](/help/sites-deploying/configure-logging.md) para obtener más información y, cuando finalice el desarrollo, vuelva a establecer el **Nivel de registro** en **Información**.
+También puede configurar AEM para que muestre los mensajes **DEBUG** en los archivos de registro. Consulte [Registro](/help/sites-deploying/configure-logging.md) para obtener más información y, cuando finalice el desarrollo, vuelva a establecer el **Nivel de registro** en **Información**.
 
 ## Ejemplos {#examples}
 
@@ -391,7 +391,7 @@ Para ilustrar algunas de las posibilidades de creación de un flujo de trabajo, 
 
    ![wf-13](assets/wf-13.png)
 
-1. Aplique este flujo de trabajo a su página de modo que cuando el usuario pase a **Completar** el paso de **Validar contenido**, pueda seleccionar si desea **Publish Page as Requested** o **Rechazar solicitud de Publish**.
+1. Aplique este flujo de trabajo a su página de modo que cuando el usuario pase a **Completar** el paso de **Validar contenido**, pueda seleccionar si desea **Publicar página como solicitada** o **Rechazar solicitud de publicación**.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -407,7 +407,7 @@ Para definir una regla OR, siga este procedimiento:
 
    >[!NOTE]
    >
-   >Los scripts deben tener una función [&#x200B; `check()`](#function-check) que devuelva un valor booleano.
+   >Los scripts deben tener una función [ `check()`](#function-check) que devuelva un valor booleano.
 
 1. Edite el flujo de trabajo y agregue **OR Split** al modelo.
 1. Edite las propiedades de **Rama 1** de **OR Split**:
@@ -415,7 +415,6 @@ Para definir una regla OR, siga este procedimiento:
    * Defina esto como **Ruta predeterminada** al establecer **Value** en `true`.
 
    * Como **regla**, establezca la ruta en el script. Por ejemplo:
-
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -425,7 +424,6 @@ Para definir una regla OR, siga este procedimiento:
 1. Edite las propiedades de **la rama 2** de **OR Split**.
 
    * Como **regla**, establezca la ruta en el otro script. Por ejemplo:
-
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Establezca las propiedades de los pasos individuales en cada rama. Asegúrese de que **Usuario/Grupo** esté configurado.
