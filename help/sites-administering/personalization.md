@@ -11,7 +11,7 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1710'
 ht-degree: 2%
 
 ---
@@ -135,9 +135,9 @@ Sin embargo, el control de acceso se puede utilizar para crear una forma de pers
 
 ## Componentes disponibles para Personalization {#components-available-for-personalization}
 
-AEM Se proporcionan varios componentes con funciones para la personalización de la aplicación Algunos permiten a los usuarios iniciar sesión y editar sus perfiles, mientras que otros (como Mis gadgets) permiten a los usuarios configurar una página específica:
+Con AEM se proporcionan varios componentes para la personalización. Algunos permiten a los usuarios iniciar sesión y editar sus perfiles, mientras que otros (como Mis gadgets) permiten a los usuarios configurar una página específica:
 
-| Título en el Sidekick | Función |
+| Título en Sidekick | Función |
 |---|---|
 | Campo de contraseña activado | Solicita la contraseña y la confirmación de la misma. |
 | Registro de inicio de sesión combinado | Permite al usuario iniciar sesión en una cuenta existente o registrarse para obtener una nueva cuenta. |
@@ -170,7 +170,7 @@ AEM Se proporcionan varios componentes con funciones para la personalización de
 
 ## Personalization y contenido de la comunidad {#personalization-and-community-content}
 
-Las funciones de la comunidad, como blogs, foros y calendarios, resultan en la creación de contenido de la comunidad, comúnmente denominado contenido generado por el usuario (UGC). AEM Cuando se introduce UGC en un entorno de publicación que consta de varias instancias de (una [granja de servidores de publicación](/help/communities/topologies.md)), un problema importante ha sido cómo sincronizar UGC en todas las instancias.
+Las funciones de la comunidad, como blogs, foros y calendarios, resultan en la creación de contenido de la comunidad, comúnmente denominado contenido generado por el usuario (UGC). Cuando se introduce UGC en un entorno de publicación que consta de varias instancias de AEM (una [granja de servidores de publicación](/help/communities/topologies.md)), un problema importante ha sido cómo sincronizar UGC en todas las instancias.
 
 Con la extensión [AEM Communities 6.1](/help/communities/overview.md), este problema se resuelve usando un almacén común [para UGC](/help/communities/working-with-srp.md). En cuanto a la personalización, Communities incluye [Inicio de sesión social](/help/communities/social-login.md): la capacidad de proporcionar a los visitantes del sitio la opción de iniciar sesión con Facebook y Twitter.
 

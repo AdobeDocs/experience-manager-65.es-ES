@@ -7,8 +7,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 7%
+source-wordcount: '890'
+ht-degree: 10%
 
 ---
 
@@ -19,10 +19,10 @@ Cuando se procesa un componente de una página web, se puede generar un elemento
 * Un componente solo se puede editar cuando se envuelve con un elemento HTML.
 * El elemento envolvente se utiliza para aplicar clases de HTML que proporcionan:
 
-   * información de diseño
-   * información de estilo
+  * información de diseño
+  * información de estilo
 
-AEM Para los desarrolladores, el control de etiquetas de decoración que envuelven los componentes incluidos es lógico, claro y simple. El procesamiento de la etiqueta de decoración y cómo se realiza se define mediante la combinación de dos factores, en los que se sumergirá esta página:
+Para los desarrolladores, AEM tiene una lógica clara y sencilla para controlar las etiquetas de decoración que envuelven los componentes incluidos. El procesamiento de la etiqueta de decoración y cómo se realiza se define mediante la combinación de dos factores, en los que se sumergirá esta página:
 
 * Los propios componentes pueden configurar su etiqueta de decoración con un conjunto de propiedades.
 * Los scripts que incluyen componentes (HTL, JSP, Dispatcher, etc.) pueden definir los aspectos de la etiqueta de decoración con parámetros include.
@@ -39,13 +39,13 @@ Estas son algunas recomendaciones generales sobre cuándo incluir el elemento en
 
 Se pueden aplicar las siguientes propiedades y nodos a los componentes para controlar el comportamiento de su etiqueta de decoración:
 
-* AEM **`cq:noDecoration {boolean}`:** Esta propiedad se puede agregar a un componente, y un valor true obliga a los usuarios a no generar ningún elemento contenedor sobre el componente.
+* **`cq:noDecoration {boolean}`:** Esta propiedad se puede agregar a un componente y un valor true obliga a AEM a no generar ningún elemento envolvente sobre el componente.
 
 * **`cq:htmlTag`nodo :** Este nodo se puede agregar en un componente y puede tener las siguientes propiedades:
 
-   * **`cq:tagName {String}`:** Esto se puede usar para especificar una etiqueta de HTML personalizada que se usará para ajustar los componentes en lugar del elemento DIV predeterminado.
-   * **`class {String}`:** Esto se puede usar para especificar nombres de clase css que se agregarán al contenedor.
-   * Se agregarán otros nombres de propiedades como atributos de HTML con el mismo valor de cadena proporcionado.
+  * **`cq:tagName {String}`:** Esto se puede usar para especificar una etiqueta HTML personalizada que se usará para ajustar los componentes en lugar del elemento DIV predeterminado.
+  * **`class {String}`:** Esto se puede usar para especificar nombres de clase css que se agregarán al contenedor.
+  * Se agregarán otros nombres de propiedades como atributos de HTML con el mismo valor de cadena proporcionado.
 
 ## Controles de script {#script-controls}
 
@@ -142,10 +142,10 @@ Resultado resultante `/content/test.html`:
 
 ## JSP {#jsp}
 
-AEM Cuando se incluye un componente que usa `cq:includ`e o `sling:include`, el comportamiento predeterminado en la aplicación es usar un DIV para envolver el elemento. Sin embargo, este ajuste se puede personalizar de dos maneras:
+Cuando se incluye un componente que usa `cq:includ`e o `sling:include`, el comportamiento predeterminado en AEM es utilizar un DIV para envolver el elemento. Sin embargo, este ajuste se puede personalizar de dos maneras:
 
-* AEM Indica explícitamente a los usuarios que no deben ajustar el componente mediante `cq:noDecoration`.
-* Use una etiqueta de HTML personalizada para envolver el componente con `cq:htmlTag`/ `cq:tagName` o `decorationTagName`.
+* Indique explícitamente a AEM que no ajuste el componente mediante `cq:noDecoration`.
+* Use una etiqueta personalizada de HTML para envolver el componente con `cq:htmlTag`/ `cq:tagName` o `decorationTagName`.
 
 ### Árbol de decisión {#decision-tree-1}
 

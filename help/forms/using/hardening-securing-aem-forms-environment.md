@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1470'
 ht-degree: 98%
 
 ---
@@ -123,9 +123,9 @@ Puede configurar el cortafuegos interno para permitir que ciertos componentes de
 
 De forma predeterminada, los recursos disponibles en los nodos de publicación son accesibles para todos. El acceso de solo lectura está habilitado para todos los recursos. Es necesario para habilitar el acceso anónimo. Si planea restringir la vista de Forms y enviar el acceso solo a usuarios autenticados, utilice un grupo común para permitir que solo los usuarios autenticados tengan acceso de solo lectura a los recursos disponibles en los nodos de publicación. Las siguientes ubicaciones/directorios contienen recursos de Forms que requieren protección (acceso de solo lectura para usuarios autenticados):
 
-* /content/&ast;
-* /etc.clientlibs/fd/&ast;
-* /libs/fd/&ast;
+* /content/&amp;ast;
+* /etc.clientlibs/fd/&amp;ast;
+* /libs/fd/&amp;ast;
 
 ## Administrar de forma segura los datos de Forms  {#securely-handle-forms-data}
 
@@ -168,18 +168,18 @@ Se requiere un conjunto diferente de perfiles de usuario para las instancias de 
 
 * Hay un conjunto diferente de grupos predefinidos con privilegios específicos para cada perfil. Asigne usuarios al grupo.
 
-   * Un usuario del grupo forms-user:
+  * Un usuario del grupo forms-user:
 
-      * Puede crear, rellenar, publicar y enviar un formulario.
-      * No puede crear un formulario adaptable basado en XDP.
-      * No tiene permisos para escribir scripts para formularios adaptables.
-      * No puede importar XDP ni ningún paquete que contenga XDP.
+    * Puede crear, rellenar, publicar y enviar un formulario.
+    * No puede crear un formulario adaptable basado en XDP.
+    * No tiene permisos para escribir scripts para formularios adaptables.
+    * No puede importar XDP ni ningún paquete que contenga XDP.
 
-   * Un usuario del grupo forms-power-user puede crear, cumplimentar, publicar y enviar todo tipo de formularios, escribir scripts para formularios adaptables e importar paquetes que contengan XDP.
-   * Un usuario de template-authors y template-power-user puede previsualizar y crear una plantilla.
-   * Un usuario de fdm-authors puede crear y modificar un modelo de datos de formulario.
-   * Un usuario del grupo cm-user-agent puede crear, previsualizar y publicar cartas de Administración de correspondencia.
-   * Un usuario del grupo workflow-editors puede crear una aplicación de bandeja de entrada y un modelo de flujo de trabajo.
+  * Un usuario del grupo forms-power-user puede crear, cumplimentar, publicar y enviar todo tipo de formularios, escribir scripts para formularios adaptables e importar paquetes que contengan XDP.
+  * Un usuario de template-authors y template-power-user puede previsualizar y crear una plantilla.
+  * Un usuario de fdm-authors puede crear y modificar un modelo de datos de formulario.
+  * Un usuario del grupo cm-user-agent puede crear, previsualizar y publicar cartas de Administración de correspondencia.
+  * Un usuario del grupo workflow-editors puede crear una aplicación de bandeja de entrada y un modelo de flujo de trabajo.
 
 **En autor de procesamiento:**
 

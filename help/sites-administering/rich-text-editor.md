@@ -8,16 +8,16 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 0%
+source-wordcount: '3070'
+ht-degree: 1%
 
 ---
 
 # Configuración del editor de texto enriquecido {#configure-the-rich-text-editor}
 
-El Editor de texto enriquecido (RTE) proporciona a los autores una amplia gama de funcionalidades para editar el contenido de texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto WYSIWYG.
+El Editor de texto enriquecido (RTE) proporciona a los autores una amplia gama de funcionalidades para editar el contenido de texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto de WYSIWYG.
 
-Para saber cómo usar las características de RTE para la creación, consulte [Usar editor de texto enriquecido para la creación](/help/sites-authoring/rich-text-editor.md). RTE se puede configurar para habilitar, deshabilitar y ampliar las funciones disponibles en los componentes de creación. El siguiente flujo de trabajo ilustra el orden recomendado para completar las tareas de configuración de RTE en Experience Manager.
+Para saber cómo usar las características de RTE para la creación, consulte [Usar editor de texto enriquecido para la creación](/help/sites-authoring/rich-text-editor.md). RTE se puede configurar para habilitar, deshabilitar y ampliar las funciones disponibles en los componentes de creación. El siguiente flujo de trabajo ilustra el orden recomendado para completar las tareas de configuración RTE en Experience Manager.
 
 ![Secuencia de pasos para aprender a configurar RTE](assets/rte_workflow_v1.png)
 
@@ -25,7 +25,7 @@ Para saber cómo usar las características de RTE para la creación, consulte [U
 
 ## Explicación de la IU táctil y la IU clásica {#understand-touch-enabled-ui-and-classic-ui}
 
-La IU táctil es la interfaz de usuario estándar para Experience Manager. El Adobe introdujo la IU táctil con [diseño interactivo](/help/sites-authoring/responsive-layout.md) para el entorno de creación. La interfaz de usuario táctil está diseñada para dispositivos táctiles y de escritorio. La interfaz difiere considerablemente de la IU clásica original.
+La IU táctil es la interfaz de usuario estándar para Experience Manager. Adobe presentó la interfaz de usuario táctil con [diseño interactivo](/help/sites-authoring/responsive-layout.md) para el entorno de creación. La interfaz de usuario táctil está diseñada para dispositivos táctiles y de escritorio. La interfaz difiere considerablemente de la IU clásica original.
 
 ![Barra de herramientas del Editor de texto enriquecido en la interfaz táctil](assets/chlimage_1-35.png)
 
@@ -40,11 +40,11 @@ La IU táctil es la interfaz de usuario estándar para Experience Manager. El Ad
 >* [recomendaciones de IU](/help/sites-deploying/ui-recommendations.md)
 >* Para obtener información sobre cómo dejar de utilizar la IU clásica, consulte [Notas de la versión de Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md)
 >* Para ver la diferencia entre las interfaces, consulte [IU táctil e IU clásica](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Para comprender en detalle la IU táctil, consulte [Conceptos de la IU táctil del Experience Manager](/help/sites-developing/touch-ui-concepts.md)
+>* Para comprender en detalle la IU táctil, consulte [Conceptos de la IU táctil de Experience Manager](/help/sites-developing/touch-ui-concepts.md)
 
 ## Varios modos de edición {#editingmodes}
 
-Los autores pueden crear y editar contenido textual en Experience Manager utilizando los diferentes modos de componentes. Las opciones de la barra de herramientas para crear y dar formato al contenido, así como la experiencia del usuario con componentes con RTE en diferentes modos de edición, varían en función de las configuraciones de RTE.
+Los autores pueden crear y editar contenido de texto en Experience Manager utilizando los diferentes modos de componentes. Las opciones de la barra de herramientas para crear y dar formato al contenido, así como la experiencia del usuario con componentes con RTE en diferentes modos de edición, varían en función de las configuraciones de RTE.
 
 | Modo de edición | Área de edición | Funciones recomendadas que se deben habilitar | IU táctil | IU clásica |
 |--- |--- |--- |--- |--- |
@@ -69,7 +69,7 @@ En la IU clásica, un doble clic lento en el componente permite la edición en l
 
 ### Edición de pantalla completa {#full-screen-editing}
 
-Los componentes del Experience Manager se pueden abrir en la vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar a pantalla completa una versión detallada de la edición en línea, ya que ofrece la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se usa el modo de edición en línea.
+Los componentes de Experience Manager se pueden abrir en la vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar a pantalla completa una versión detallada de la edición en línea, ya que ofrece la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se usa el modo de edición en línea.
 
 En el modo de pantalla completa del cuadro de diálogo, junto con una barra de herramientas RTE detallada, también están disponibles las opciones y los componentes disponibles en un cuadro de diálogo. Solo es aplicable a un cuadro de diálogo que contenga RTE junto con otros componentes.
 
@@ -95,8 +95,8 @@ La funcionalidad está disponible a través de una serie de complementos, cada u
 
 * Una propiedad de `features`:
 
-   * Se utiliza para activar o desactivar la funcionalidad básica de ese complemento
-   * Esto se puede configurar mediante un procedimiento estandarizado
+  * Se utiliza para activar o desactivar la funcionalidad básica de ese complemento
+  * Esto se puede configurar mediante un procedimiento estandarizado
 
 * Si procede, propiedades y opciones adicionales que requieran una configuración especializada.
 
@@ -118,7 +118,7 @@ En la tabla siguiente se enumeran los complementos actuales, mostrando:
 | justificar | justifyleft justifycenter justifcopyright | Alineación de párrafo. |
 | vínculos | modificar delimitador de desvinculación de vínculo | [Hipervínculos y anclajes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
 | listas | anulación de sangría ordenada sin ordenar | Este complemento controla tanto la sangría [como las listas](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); incluidas las listas anidadas. |
-| herramientas diversas | specialchars sourceedit | Varias herramientas permiten a los autores introducir [caracteres especiales](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o editar el origen del HTML. Además, puede agregar un [rango completo de caracteres especiales](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) si desea definir su propia lista. |
+| herramientas diversas | specialchars sourceedit | Varias herramientas permiten a los autores introducir [caracteres especiales](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o editar el origen de HTML. Además, puede agregar un [rango completo de caracteres especiales](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) si desea definir su propia lista. |
 | Paraformato | paraformato | Los formatos de párrafo predeterminados son Párrafo, Encabezado 1, Encabezado 2 y Encabezado 3 (`<p>`, `<h1>`, `<h2>` y `<h3>`). Puede [agregar más formatos de párrafo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) o ampliar la lista. |
 | revisión ortográfica | texto de comprobación | [corrector ortográfico con reconocimiento de idioma](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
 | estilos | estilos | Compatibilidad con el estilo mediante una clase CSS. [Agregue nuevos estilos de texto](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) si desea agregar (o ampliar) su propio intervalo de estilos para usarlos con texto. |
@@ -168,8 +168,8 @@ Cuando se utiliza RTE en el cuadro de diálogo táctil, es obligatorio establece
 
 Puede definir en qué selector de HTML comienza el editor de texto configurando las siguientes propiedades:
 
-* **`editElementQuery`** - Definida en `cq:InplaceEditingConfig`, esta propiedad se utiliza para especificar un selector del elemento HTML en el que se iniciará la edición en línea del componente Texto. Si no se especifica, la edición en línea se inicia directamente en el HTML del componente Texto.
-* **`textPropertyName`** - Definida en `cq:InplaceEditingConfig`, esta propiedad se usa para especificar el nombre de la propiedad que se guardará en el nodo de contenido donde el valor de HTML del componente de texto se mantendrá después de la edición en línea.
+* **`editElementQuery`** - Definido en `cq:InplaceEditingConfig`, esta propiedad se utiliza para especificar un selector del elemento HTML en el que se iniciará la edición en línea del componente Texto. Si no se especifica, la edición en línea se inicia directamente en el HTML del componente Texto.
+* **`textPropertyName`** - Definido en `cq:InplaceEditingConfig`, esta propiedad se usa para especificar el nombre de la propiedad que se guardará en el nodo de contenido donde el valor HTML del componente de texto se mantendrá después de la edición en línea.
 
 La propiedad correspondiente para el modo de diálogo es `name`.
 
@@ -183,9 +183,9 @@ Para obtener configuraciones detalladas de los complementos RTE, consulte [cómo
 
 >[!NOTE]
 >
->El componente de texto [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=es#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE en una GUI como directivas de contenido, lo que elimina la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con configuraciones de IU RTE como se describe en este documento.
+>El componente de texto [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE en una GUI como directivas de contenido, lo que elimina la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con configuraciones de IU RTE como se describe en este documento.
 >
->Para obtener más información, consulte la sección [Configuración de la interfaz de usuario RTE y políticas de contenido](/help/sites-administering/rich-text-editor.md) de este documento, y [Creación de plantillas de página](/help/sites-authoring/templates.md) y la [documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=es).
+>Para obtener más información, consulte la sección [Configuración de la interfaz de usuario RTE y políticas de contenido](/help/sites-administering/rich-text-editor.md) de este documento, y [Creación de plantillas de página](/help/sites-authoring/templates.md) y la [documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ Para obtener configuraciones detalladas de los complementos RTE, consulte [cómo
 
 ## Configuración de la barra de herramientas RTE {#dialogfullscreen}
 
-AEM La interfaz del Editor de texto enriquecido se puede configurar de forma diferente para cada modo de edición, según el modo en que se use. A continuación se proporcionan los ajustes predeterminados. Puede sustituir estos valores predeterminados según sus necesidades. Puede personalizar únicamente las características de la barra de herramientas que desea proporcionar a los autores. No es necesario especificar todas las configuraciones de la barra de herramientas.
+AEM permite configurar la interfaz del Editor de texto enriquecido de forma diferente para los distintos modos de edición. A continuación se proporcionan los ajustes predeterminados. Puede sustituir estos valores predeterminados según sus necesidades. Puede personalizar únicamente las características de la barra de herramientas que desea proporcionar a los autores. No es necesario especificar todas las configuraciones de la barra de herramientas.
 
 Para configurar la barra de herramientas de `dialogFullScreen`, use la siguiente configuración de ejemplo.
 
@@ -261,7 +261,7 @@ Las opciones disponibles en RTE fluyen hacia abajo desde las configuraciones de 
 * Si la configuración de interfaz de usuario del RTE se ha eliminado o no habilita un elemento, la directiva de contenido no puede configurarlo.
 * Un autor solo tiene acceso a las funciones que están disponibles en las configuraciones de interfaz de usuario y en las directivas de contenido.
 
-Por ejemplo, puede ver la [documentación del componente principal Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=es#the-text-component-and-the-rich-text-editor).
+Por ejemplo, puede ver la [documentación del componente principal Texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar la asignación entre los iconos y comandos de la barra de herramientas {#iconstoolbar}
 
@@ -300,7 +300,7 @@ En una página, puede incluir CoralUI 2 RTE clientlib o CoralUI 3 RTE clientlib.
 
 >[!NOTE]
 >
->El Adobe no lo recomienda como práctica recomendada. Cambie a CoralUI 2 RTE como último recurso. Los complementos personalizados para CoralUI 2 RTE funcionan con CoralUI 3 RTE si los complementos no dependen de internos RTE, como clases.
+>Adobe no lo recomienda como práctica recomendada. Cambie a CoralUI 2 RTE como último recurso. Los complementos personalizados para CoralUI 2 RTE funcionan con CoralUI 3 RTE si los complementos no dependen de internos RTE, como clases.
 >
 >Si utiliza complementos personalizados para CoralUI3 RTE, utilice la biblioteca `rte.coralui3`.
 
@@ -325,27 +325,27 @@ En una página, puede incluir CoralUI 2 RTE clientlib o CoralUI 3 RTE clientlib.
 
 ## Información adicional {#further-information}
 
-AEM Para obtener más información sobre la configuración de RTE, consulte la [referencia de la API de widget de](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText).
+Para obtener más información sobre la configuración de RTE, consulte la referencia de la [API del widget de AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText).
 
 En particular, para ver los complementos y las opciones relacionadas disponibles:
 
 * El componente [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) proporciona un campo de formulario para editar información de texto con estilo (texto enriquecido). Para conocer todos los parámetros disponibles para el formulario de texto enriquecido, consulte las Opciones de configuración.
 * El componente RichText proporciona una amplia gama de funcionalidades mediante los complementos enumerados en [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Para cada complemento:
 
-   * consulte las Características para obtener detalles sobre la funcionalidad que se puede habilitar (o deshabilitar)
-   * Consulte las Opciones de configuración para todos los parámetros disponibles para obtener una configuración detallada del complemento correspondiente
+  * consulte las Características para obtener detalles sobre la funcionalidad que se puede habilitar (o deshabilitar)
+  * Consulte las Opciones de configuración para todos los parámetros disponibles para obtener una configuración detallada del complemento correspondiente
 
-* También hay disponible más información sobre las Reglas del HTML para los vínculos.
+* También hay disponible más información sobre las reglas de HTML para vínculos.
 
 Se pueden utilizar para ampliar y personalizar su propio RTE. Por ejemplo, para enumerar los anclajes disponibles en la página al crear un vínculo, puede proporcionar su propia implementación de `LinkPlugin`.
 
 ## Limitaciones conocidas {#known-limitations}
 
-AEM La capacidad de RTE tiene las siguientes limitaciones:
+La capacidad de AEM RTE tiene las siguientes limitaciones:
 
-* AEM Las funcionalidades de RTE solo son compatibles en los cuadros de diálogo de componentes de. RTE no es compatible con asistentes o formularios base como [Propiedades de página](/help/sites-developing/page-properties-views.md) y [Andamiaje](/help/sites-authoring/scaffolding.md) en IU táctil.
+* Las funcionalidades de RTE solo son compatibles con los cuadros de diálogo de componentes de AEM. RTE no es compatible con asistentes o formularios base como [Propiedades de página](/help/sites-developing/page-properties-views.md) y [Andamiaje](/help/sites-authoring/scaffolding.md) en IU táctil.
 
-* AEM No funciona en [Dispositivos híbridos](/help/release-notes/release-notes.md).
+* AEM no funciona en [dispositivos híbridos](/help/release-notes/release-notes.md).
 
 * No asigne un nombre al nodo de configuración de RTE `config`. De lo contrario, la configuración de RTE sólo surte efecto para los administradores y no para los usuarios del grupo `content-author`.
 
@@ -371,17 +371,17 @@ Agregue un hipervínculo en un componente de texto editándolo con el botón Con
 
 Una solución consiste en hacer clic en el componente de texto cuando el cuadro de diálogo de edición se muestre por segunda vez y, a continuación, ejecutar la validación del vínculo.
 
-AEM Este problema se resuelve en la versión 6.3 y posteriores de la versión de.
+Este problema se resuelve en AEM 6.3 y versiones posteriores.
 
-Se ha perdido **contenido de HTML agregado en el modo de edición de código fuente**
+**Se ha perdido el contenido de HTML agregado en el modo de edición de código fuente**
 
-No agregue un HTML propenso a XSS. AEM La, y no el RTE, puede eliminar parte del contenido del HTML para adherirse a las reglas de antisamía XSS.
+No agregue un HTML propenso a XSS. AEM, y no RTE, puede eliminar parte del contenido de HTML para adherirse a las reglas de antisamy XSS.
 
-Para comprobar que el HTML pegado está guardado, compruebe el contenido guardado en CRXDE (en el nodo de contenido).
+Para comprobar que la HTML pegada está guardada, compruebe el contenido guardado en CRXDE (en el nodo de contenido).
 
-Si no se guarda, RTE debe haber eliminado el HTML, ya que no se adhirió a las reglas del RTE.
+Si no se guarda, RTE debe haber eliminado HTML, ya que no se adhirió a las reglas del RTE.
 
-AEM Si se guarda en CRXDE pero no se procesa en la página (para comprobar la representación, consulte la [vista previa](/help/sites-authoring/editing-content.md#preview-mode) de la página, se elimina mediante reglas XSS de.
+Si se guarda en CRXDE pero no se representa en la página (para comprobar la renderización, consulte la [vista previa](/help/sites-authoring/editing-content.md#preview-mode) de la página, las reglas XSS de AEM lo eliminan).
 
 **El componente multicampo no funciona como se esperaba**
 
@@ -391,7 +391,7 @@ Compruebe también que el código de implementación de varios campos y la estru
 
 **La configuración disponible para los administradores no está disponible para los autores**
 
-Si las actualizaciones de las configuraciones de interfaz se reflejan para los administradores pero no para las cuentas de autor, asegúrese de que el nodo de configuración no se llame `config`. Usar la propiedad [`configPath` &#x200B;](/help/sites-developing/components-basics.md#cq-inplaceediting).
+Si las actualizaciones de las configuraciones de interfaz se reflejan para los administradores pero no para las cuentas de autor, asegúrese de que el nodo de configuración no se llame `config`. Usar la propiedad [`configPath` ](/help/sites-developing/components-basics.md#cq-inplaceediting).
 
 >[!MORELIKETHIS]
 >

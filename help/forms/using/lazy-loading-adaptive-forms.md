@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 91%
+source-wordcount: '1114'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html) |
 | AEM 6.5 | Este artículo |
 
 ## Introducción a la carga diferida {#introduction-to-lazy-loading}
@@ -39,13 +39,13 @@ Solo puede configurar fragmentos de formulario adaptable para la carga diferida.
 
   Para obtener más información sobre la creación de fragmentos, consulte [Fragmentos de formulario adaptables](../../forms/using/adaptive-form-fragments.md).
 
-* **Identificar y marcar los valores globales**
+* **Identificar y marcar valores globales**
 Las transacciones basadas en Forms implican elementos dinámicos para capturar datos relevantes de los usuarios y procesarlos para simplificar la experiencia de rellenado de los formularios. Por ejemplo, el formulario tiene el campo A en el fragmento X, cuyo valor determina la validez del campo B en otro fragmento. En este caso, si el fragmento X está marcado para la carga diferida, el valor del campo A debe estar disponible para validar el campo B incluso cuando el fragmento X no está cargado. Para conseguirlo, puede marcar el campo A como global, lo que garantiza que su valor esté disponible para validar el campo B cuando el fragmento X no está cargado.
 
   Para obtener información sobre cómo convertir un valor de campo en global, consulte [Configuración de la carga diferida](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
-* **Escribir reglas para controlar la visibilidad de los campos**
-Los formularios incluyen algunos campos y secciones que no son aplicables a todos los usuarios y en todas las condiciones. Los autores y desarrolladores de formularios utilizan la visibilidad o las reglas de Mostrar u ocultar para controlar su visibilidad en función de las entradas del usuario. Por ejemplo, el campo Dirección de la oficina no se muestra a los usuarios que eligen Desempleado en el campo Situación laboral en un formulario. Para obtener más información sobre cómo escribir reglas, consulte [Uso del Editor de reglas](../../forms/using/rule-editor.md).
+* **Escriba reglas para controlar la visibilidad de los campos**
+Forms incluye algunos campos y secciones que no son aplicables a todos los usuarios y en todas las condiciones. Los autores y desarrolladores de formularios utilizan la visibilidad o las reglas de Mostrar u ocultar para controlar su visibilidad en función de las entradas del usuario. Por ejemplo, el campo Dirección de la oficina no se muestra a los usuarios que eligen Desempleado en el campo Situación laboral en un formulario. Para obtener más información sobre cómo escribir reglas, consulte [Uso del Editor de reglas](../../forms/using/rule-editor.md).
 
   Puede utilizar reglas de visibilidad en los fragmentos cargados de forma diferida, de forma que los campos condicionales se muestren solo cuando sean necesarios. Además, puede marcar el campo condicional como global para hacer referencia a él en la expresión de visibilidad del fragmento cargado de forma diferida.
 

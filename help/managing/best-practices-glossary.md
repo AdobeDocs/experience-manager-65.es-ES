@@ -12,8 +12,8 @@ feature: Compliance
 role: Admin,Developer,Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '6926'
-ht-degree: 100%
+source-wordcount: '7022'
+ht-degree: 99%
 
 ---
 
@@ -109,8 +109,8 @@ Asegúrese de que su equipo esté formado por personal con la formación adecuad
 
 * al menos un desarrollador principal certificado por AEM
 * al menos un arquitecto certificado por AEM
-* al menos el 75 % de los desarrolladores certificados por AEM;
-esto permite a los desarrolladores certificados asesorar a los desarrolladores júnior y garantiza el intercambio de conocimientos y la transparencia
+* al menos el 75 % de los desarrolladores cuenta con la certificación AEM;
+esto permite a los desarrolladores certificados asesorar a los desarrolladores junior y garantiza el intercambio de conocimientos y la transparencia
 
 ### Diagrama de arquitectura {#architecture-diagram}
 
@@ -207,8 +207,8 @@ Los KPI empresariales definen valores mensurables que demuestran la eficacia con
 
 Un documento de requisitos empresariales (BRD, por sus siglas en inglés) detalla la solución empresarial para un proyecto, al tiempo que proporciona una especificación clara de las necesidades y expectativas empresariales del cliente. El BRD también distingue entre la solución empresarial y la solución técnica.
 
-Al examinar la solución empresarial, el BRD debe responder a la pregunta:
-“¿Qué quiere hacer el negocio?”
+Al examinar la solución empresarial, el BERD debe responder a la pregunta:
+&quot;¿Qué quiere hacer el negocio?&quot;
 
 ### Aprobación empresarial de cualquier ajuste necesario en la solución o arquitectura identificado y alineado con las expectativas de ROI y KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -358,10 +358,10 @@ Las personalizaciones o revisiones aplicadas deben documentarse, ya que pueden a
 * AEM se puede personalizar en gran medida para adaptarse a las necesidades empresariales. Cualquier personalización que pueda afectar a la actualización debe documentarse por completo. Por ejemplo, cualquier cambio importante en la interfaz de usuario (IU) de AEM.
 * Cualquier actualización necesaria para la solución actual debe documentarse por completo; estas pueden incluir:
 
-   * paquetes de correcciones acumulativas (CFP)
-   * Service Packs (SP)
-   * revisiones
-   * actualizaciones
+  * paquetes de correcciones acumulativas (CFP)
+  * Service Packs (SP)
+  * revisiones
+  * actualizaciones
 
 ### Informe de pruebas de aceptación del usuario diarias {#daily-user-acceptance-test-report}
 
