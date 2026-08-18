@@ -10,8 +10,8 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
-workflow-type: ht
-source-wordcount: '1740'
+workflow-type: tm+mt
+source-wordcount: '1802'
 ht-degree: 100%
 
 ---
@@ -41,31 +41,31 @@ Muchos problemas se pueden resolver reestructurando el contenido. Tenga en cuent
 
 * **Cambiar el control de acceso**
 
-   * Asegúrese de que los usuarios o grupos que de verdad necesiten acceso lo tengan;
+  * Asegúrese de que los usuarios o grupos que de verdad necesiten acceso lo tengan;
 
 * **Refinar la estructura de contenido**
 
-   * Muévalo a otras ubicaciones, por ejemplo, donde el control de acceso coincida con las sesiones de solicitud disponibles;
-   * Cambiar la granularidad del contenido;
+  * Muévalo a otras ubicaciones, por ejemplo, donde el control de acceso coincida con las sesiones de solicitud disponibles;
+  * Cambiar la granularidad del contenido;
 
 * **Refactorizar su código para que sea un servicio apropiado**
 
-   * Cambie la lógica empresarial del código JSP al servicio. Esto permite un modelado de contenido diferente.
+  * Cambie la lógica empresarial del código JSP al servicio. Esto permite un modelado de contenido diferente.
 
 Además, asegúrese de que todas las nuevas funciones que desarrolle se ajusten a estos principios:
 
 * **Los requisitos de seguridad deben dirigir la estructura de contenido**
 
-   * La administración del control de acceso debería ser natural
-   * El control de acceso lo debe aplicar el repositorio, no la aplicación
+  * La administración del control de acceso debería ser natural
+  * El control de acceso lo debe aplicar el repositorio, no la aplicación
 
 * **Utilizar tipos de nodos**
 
-   * Restrinja el conjunto de propiedades que se pueden establecer
+  * Restrinja el conjunto de propiedades que se pueden establecer
 
 * **Respetar la configuración de privacidad**
 
-   * Si hay perfiles privados, un ejemplo sería no exponer la imagen de perfil, el correo electrónico o el nombre completo que se encuentra en el nodo privado `/profile`.
+  * Si hay perfiles privados, un ejemplo sería no exponer la imagen de perfil, el correo electrónico o el nombre completo que se encuentra en el nodo privado `/profile`.
 
 ## Aplique un control de acceso estricto {#strict-access-control}
 
@@ -78,7 +78,7 @@ Tanto si aplica el control de acceso al reestructurar el contenido como si lo ha
 * Aplicar ACL para los tipos de nodos
 * Limitar permisos
 
-   * por ejemplo, cuando solo necesite escribir propiedades, no conceda el permiso `jcr:write`; use `jcr:modifyProperties` en su lugar
+  * por ejemplo, cuando solo necesite escribir propiedades, no conceda el permiso `jcr:write`; use `jcr:modifyProperties` en su lugar
 
 ## Usuarios de servicio y asignaciones {#service-users-and-mappings}
 
@@ -153,7 +153,7 @@ Al añadir el archivo .content.xml correspondiente al contenido del paquete, ase
 
 ## Adición de una modificación de configuración a la configuración de ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Para añadir una asignación desde su servicio a los usuarios del sistema correspondientes, cree una configuración de fábrica para el servicio [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html).  Para mantener este elemento modular, dicha configuración se puede proporcionar mediante el [mecanismo de modificación de Sling](https://issues.apache.org/jira/browse/SLING-3578). La manera recomendada de instalar estas configuraciones con su paquete es usando la [carga inicial de contenido de Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+Para añadir una asignación desde su servicio a los usuarios del sistema correspondientes, cree una configuración de fábrica para el servicio [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html). Para mantener este elemento modular, dicha configuración se puede proporcionar mediante el [mecanismo de modificación de Sling](https://issues.apache.org/jira/browse/SLING-3578). La manera recomendada de instalar estas configuraciones con su paquete es usando la [carga inicial de contenido de Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Cree una subcarpeta SLING-INF/content debajo de la carpeta src/main/resources del paquete
 1. En esta carpeta, cree un archivo llamado org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-&lt;algún nombre único para su configuración de fábrica>.xml con el contenido de su configuración de fábrica (incluidas todas las asignaciones de usuarios de subservicios). Ejemplo:

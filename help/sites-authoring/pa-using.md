@@ -11,7 +11,7 @@ feature: Authoring,Integration
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '655'
 ht-degree: 5%
 
 ---
@@ -137,23 +137,23 @@ El cuadro de diálogo **Configuración de Activity Map** proporciona una serie d
 
 * General
 
-   * Grupo de informes
-   * Nombre de página
-   * Idioma
-   * Superposiciones de etiquetas con
-   * Tamaño de fuente de etiqueta
-   * Color de degradado
-   * Color de burbuja
-   * Degradación de color basada en
-   * Transparencia de degradado
+  * Grupo de informes
+  * Nombre de página
+  * Idioma
+  * Superposiciones de etiquetas con
+  * Tamaño de fuente de etiqueta
+  * Color de degradado
+  * Color de burbuja
+  * Degradación de color basada en
+  * Transparencia de degradado
 
 * Estándar
 
-   * Visualización (tipo y número de vínculos)
-   * Ocultar superposiciones de vínculos que no hayan recibido visitas
+  * Visualización (tipo y número de vínculos)
+  * Ocultar superposiciones de vínculos que no hayan recibido visitas
 
 * Activo
 
-   * Mostrar arriba (Ganadores o perdedores)
-   * Excluir % inferior
-   * Actualización automática (datos y periodo)
+  * Mostrar arriba (Ganadores o perdedores)
+  * Excluir % inferior
+  * Actualización automática (datos y periodo)

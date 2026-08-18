@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 96%
+source-wordcount: '1468'
+ht-degree: 95%
 
 ---
 
@@ -51,7 +51,7 @@ Por lo tanto, reducir el tamaño de los recursos externos y utilizar solo los re
 Un formulario HTML5 puede tener cientos de páginas. Un formulario con un gran número de campos es lento de cargar en el explorador. Puede realizar las siguientes optimizaciones en un formulario XFA para optimizar los formularios con un gran número de campos y páginas:
 
 * Evaluar la división de los formularios grandes en varios formularios. También puede utilizar un conjunto de formularios para agrupar todos los formularios más pequeños y presentarlos como una sola unidad. Un conjunto de formularios solo carga los formularios necesarios. Además, en un conjunto de formularios, se pueden configurar campos comunes en distintos formularios para compartir enlaces de datos. Los enlaces de datos ayudan a los usuarios a rellenar la información común solo una vez; la información se rellenará automáticamente en formularios posteriores, lo que supone mejoras sustanciales del rendimiento. Para obtener más información sobre los conjuntos de formularios, consulte [Conjuntos de formularios en AEM Forms](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html).
-* Considere la posibilidad de dividir secciones y mover cada sección a una página diferente. Los formularios HTML5 se cargan dinámicamente en cada página en la solicitud de desplazamiento de la página. Solo la página desplazada (la página que se muestra y las que la preceden) se almacenan en la memoria; el resto de las páginas se cargan bajo demanda. Por lo tanto, dividir y mover una sección en una página por su cuenta reduce el tiempo necesario para cargar un formulario. También puede utilizar la primera página del formulario como página de aterrizaje. Es similar a la tabla de contenidos (TOC) de un libro. Una página de aterrizaje de un formulario solo contiene vínculos a las demás secciones del formulario. Mejora significativamente el tiempo de carga de la primera página del formulario y mejora la experiencia del usuario.
+* Considere la posibilidad de dividir secciones y mover cada sección a una página diferente. Los formularios HTML5 se cargan dinámicamente en cada página en la solicitud de desplazamiento de la página. Solo la página desplazada (la página que se muestra y las que la preceden) se almacenan en la memoria; el resto de las páginas se cargan bajo demanda. Por lo tanto, dividir y mover una sección en una página por su cuenta reduce el tiempo necesario para cargar un formulario. También puede utilizar la primera página del formulario como página de destino. Es similar a la tabla de contenidos (TOC) de un libro. Una página de destino de un formulario solo contiene vínculos a las demás secciones del formulario. Mejora significativamente el tiempo de carga de la primera página del formulario y mejora la experiencia del usuario.
 * Mantenga las secciones condicionales ocultas de forma predeterminada. Consiga que estas secciones solo sean visibles cuando se cumpla una determinada condición. Ayuda a reducir al mínimo el tamaño del DOM. También puede utilizar la navegación con pestañas para mostrar solo una sección a la vez.
 
 ## Menos es más, reduzca el número de páginas {#less-is-more-reduce-the-number-of-pages}
@@ -61,7 +61,7 @@ Los formularios HTML5 pueden contener campos impulsados por datos (tablas y subf
 * Utilice scripts XFA para lograr que la navegación por páginas muestre campos impulsados por datos (tablas y subformularios). En la navegación por páginas, solo se muestran datos específicos en una página. Limita la operación paint del explorador a los campos que se muestran a la vez y facilita el desplazamiento por el formulario. Además, los usuarios de los dispositivos móviles solo están interesados en un subconjunto de datos. Le ayuda a ofrecer una buena experiencia de usuario y a reducir el tiempo necesario para cargar los datos necesarios. Se obtienen dos soluciones por el precio de una.  Tenga en cuenta también que la navegación por páginas no está disponible de forma predeterminada. Puede utilizar scripts XFA para desarrollar la navegación por páginas.
 
 * Evalúe la combinación de varias columnas de solo lectura en una sola columna. Reduce la memoria necesaria para mostrar el formulario. Además, evite mostrar las columnas que no requieran ninguna entrada de los usuarios.
-* Evaluar la división del formulario basado en datos en un [conjunto de formularios](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html), si las sugerencias anteriores no le proporcionan muchas mejoras. Por ejemplo, si una tabla tiene más de 1000 filas, mueva cada 100 filas a un formulario diferente. Ayudaría a mejorar el tiempo de carga y el rendimiento de los formularios. Tenga en cuenta también que un conjunto de formularios genera un XML de envío consolidado para todos los formularios. Para diferenciar los datos de cada formulario, utilice diferentes fuentes de datos. Para obtener más información, consulte [Conjunto de formularios en AEM Forms](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html).
+* Evaluar la división del formulario basado en datos en un [conjunto de formularios](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html), si las sugerencias anteriores no le proporcionan muchas mejoras. Por ejemplo, si una tabla tiene más de 1000 filas, mueva cada 100 filas a un formulario diferente. Ayudaría a mejorar el tiempo de carga y el rendimiento de los formularios.  Tenga en cuenta también que un conjunto de formularios genera un XML de envío consolidado para todos los formularios. Para diferenciar los datos de cada formulario, utilice diferentes fuentes de datos. Para obtener más información, consulte [Conjunto de formularios en AEM Forms](https://helpx.adobe.com/es/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Poder de dos para Documentos de registro (DOR) {#power-of-two-for-document-of-record-dor}
 
@@ -75,10 +75,10 @@ Los formularios de Adobe Experience Manager (AEM) pueden ayudarle a transformar 
 * [Prácticas recomendadas para crear contenido](/help/sites-authoring/best-practices.md)
 * [Prácticas recomendadas para la administración de AEM](/help/sites-administering/administer-best-practices.md)
 * [Prácticas recomendadas para desarrollar soluciones](/help/sites-developing/best-practices.md)
-* [Prácticas recomendadas para usar formularios adaptables &#x200B;](/help/forms/using/adaptive-forms-best-practices.md)
-* [El servidor de AEM Forms no incrusta las fuentes en un formulario PDF dinámico](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
+* [Prácticas recomendadas para usar formularios adaptables](/help/forms/using/adaptive-forms-best-practices.md)
+* [El servidor de AEM Forms no incrusta las fuentes en un formulario de Dynamic PDF](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## Tarjeta de referencia rápida {#quick-reference-card}
 
 Puede imprimir la siguiente tarjeta (haga clic en tarjeta para descargar una versión de alta resolución) y mantenerla en su escritorio para una referencia rápida:
-[![Tarjeta de referencia rápida de prácticas recomendadas de Forms de HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[![Tarjeta de referencia rápida de las prácticas recomendadas de HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

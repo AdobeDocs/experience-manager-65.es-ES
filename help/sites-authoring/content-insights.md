@@ -30,9 +30,9 @@ La página Insight de contenido incluye informes que utilizan datos de Adobe Sit
 
 * SiteCatalyst: Hay disponibles informes para las siguientes métricas:
 
-   * Vistas de la página
-   * Tiempo promedio empleado en la página
-   * Orígenes
+  * Vistas de la página
+  * Tiempo promedio empleado en la página
+  * Orígenes
 
 * Target: informa sobre la actividad de campaña para la que la página incluye ofertas.
 * BrightEdge: informa sobre las funciones de la página que mejoran la visibilidad de la página para los motores de búsqueda y recomienda las funciones que deben implementarse.
@@ -62,8 +62,8 @@ El informe Vistas incluye las siguientes funciones para evaluar el tráfico de l
 * Número total de vistas de una página durante el período de informe.
 * Gráfico del número de vistas en el período de informe:
 
-   * Vistas totales.
-   * Visitantes únicos.
+  * Vistas totales.
+  * Visitantes únicos.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 

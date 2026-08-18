@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,9 @@ Si las pruebas unitarias tardan mucho tiempo en ejecutarse, los desarrolladores 
 
 Las herramientas de análisis de código pueden ser valiosas, pero solo si sus informes conducen a la acción por parte del equipo de desarrollo. Sin afinar el análisis que proporcionan estas herramientas, las recomendaciones que generan se vuelven irrelevantes y pierden su valor.
 
-### Sigue la regla del Scout {#follow-the-boy-scout-rule}
+### Sigue las reglas de los Boy Scout {#follow-the-boy-scout-rule}
 
-Los Boy Scout tienen una regla: &quot;Déjalo mejor de lo que lo encontraste&quot;. Mientras todos los miembros del equipo de desarrollo se adhieran a esta regla y limpien algo cuando se encuentren con un lío, el código mejorará constantemente.
+Los Boy Scouts tienen una regla: &quot;Déjalo mejor de lo que lo encontraste&quot;. Mientras todos los miembros del equipo de desarrollo se adhieran a esta regla y limpien algo cuando se encuentren con un lío, el código mejorará constantemente.
 
 ### Evitar la implementación de funciones YAGNI {#avoid-implementing-yagni-features}
 

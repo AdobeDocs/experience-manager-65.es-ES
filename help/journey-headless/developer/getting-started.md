@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '2999'
-ht-degree: 95%
+source-wordcount: '3072'
+ht-degree: 94%
 
 ---
 
@@ -39,25 +39,25 @@ Este documento le ayudará a comprender el contenido sin encabezado de AEM dentr
 
 Antes de poder definir el proyecto sin encabezado dentro de AEM, es importante comprender algunos conceptos básicos.
 
-### Ejemplo de autor {#author}
+### Instancia de autor {#author}
 
-En su versión más sencilla, AEM consta de un ejemplo de autor y un [ejemplo de publicación](#publish) que trabajan juntos para crear, gestionar y publicar el contenido.
+En su versión más sencilla, AEM consta de una instancia de autor y una [instancia de publicación](#publish) que trabajan juntos para crear, gestionar y publicar el contenido.
 
-El contenido comienza con el ejemplo del autor. Aquí es donde los autores crean su contenido. El entorno de creación ofrece varias herramientas para que los autores creen, organicen y reutilicen su contenido.
+El contenido comienza con la instancia de autor. Aquí es donde los autores crean su contenido. El entorno de creación ofrece varias herramientas para que los autores creen, organicen y reutilicen su contenido.
 
 ### Instancia de publicación {#publish}
 
-Una vez creado el contenido en el ejemplo de autor, debe publicarse para que esté disponible para otros servicios que lo consuman. Una instancia de publicación contiene todo el contenido que se ha publicado.
+Una vez creado el contenido en la instancia de autor, debe publicarse para que esté disponible para otros servicios que lo consuman. Una instancia de publicación contiene todo el contenido que se ha publicado.
 
 ### Replicación {#replication}
 
-La replicación es el acto de transferir contenido del ejemplo de autor al ejemplo de publicación. Esto se hace automáticamente AEM cuando un autor u otro usuario con los derechos adecuados publica contenido.
+La replicación es el acto de transferir contenido de la instancia de autor a la instancia de publicación. Esto se hace automáticamente AEM cuando un autor u otro usuario con los derechos adecuados publica contenido.
 
 ### Resumen de fundamentos de AEM {#aem-basics-summary}
 
 En su nivel más sencillo, la creación de experiencias digitales en AEM requiere los siguientes pasos:
 
-1. Sus autores de contenido crean su contenido sin encabezado en el ejemplo de autor.
+1. Los autores de contenido crean su contenido sin encabezado en la instancia de autor.
 1. Cuando este contenido está listo, se replica en el ejemplo de publicación.
 1. Luego se puede llamar a las API para recuperar este contenido.
 
@@ -110,7 +110,7 @@ Este nivel de integración se basa en el primer nivel, pero también permite que
 
 Este nivel tiene la ventaja de permitir que los autores de contenido creen contenido de forma flexible de AEM de forma progresiva, con su contenido presentado en contexto con una SPA externa integrada, a la vez que siguen entregando el contenido sin encabezado.
 
-#### Nivel 3: incrustar y activar completamente la SPA en AEM, modelo híbrido {#level-3}
+#### Nivel 3: incrustar y habilitar completamente la SPA en AEM, modelo híbrido {#level-3}
 
 Este nivel de integración se basa en el nivel dos al permitir que la mayoría del contenido de la SPA externa se pueda editar dentro de AEM.
 
@@ -144,7 +144,7 @@ Para que cualquier proyecto tenga éxito, es importante definir claramente no so
 
 Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa acerca de los criterios de aceptación y le permite establecer una definición de listo.
 
-La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” AEM La respuesta debería ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con las que no ha podido crear una aplicación de experiencia. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
+La primera pregunta que deben hacer es “¿Qué estoy tratando de lograr con el contenido sin encabezado de AEM?” La respuesta debería ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con AEM. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia orientada al cliente final. El objetivo de utilizar contenido sin encabezado de AEM es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con una API de última generación, la cual llama al contenido sin encabezado de AEM para recuperarlo o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es) y buscar la sección que mejor se adapte a lo que desea lograr.
 
 ### Funciones y responsabilidades {#roles-responsibilities}
 
@@ -159,7 +159,7 @@ Las funciones de cualquier proyecto individual varían, pero las importantes que
 
 El administrador es responsable de la configuración y configuración base de su sistema. Por ejemplo, el administrador configura su organización dentro del sistema de Adobe User Management, denominado Identity Management System (IMS). El administrador es el primer usuario de la organización que recibe una invitación por correo electrónico de Adobe una vez que su organización ha sido creada por Adobe dentro de IMS. El administrador puede iniciar sesión en IMS y agregar usuarios de otras personas.
 
-AEM AEM Una vez que el administrador configura los usuarios, se les otorgan los permisos para acceder a todos los recursos de la para realizar su trabajo como colaboradores en el envío de la aplicación de experiencia mediante el uso de sin encabezado.
+Una vez que el administrador configura los usuarios, se les conceden los permisos para acceder a todos los recursos de AEM y realizar su trabajo como colaboradores para ofrecer la aplicación de experiencia mediante AEM Headless.
 
 El administrador debe ser el usuario que configura AEM y prepara el entorno de tiempo de ejecución para que los [autores de contenido](#content-author) puedan crear y actualizan contenido y que los [desarrolladores](#developer) utilicen las API que recuperan o modifican contenido para sus aplicaciones de experiencia.
 
@@ -191,7 +191,7 @@ La jerarquía de carpetas puede resolver dos problemas importantes con respecto 
 * [Traducción](#translation): AEM administra la traducción del contenido manteniendo copias del contenido en carpetas específicas de la configuración regional.
 * Organización: las carpetas se utilizan para definir una jerarquía de contenido necesaria con el fin de satisfacer las necesidades de traducción y administrar lógicamente los fragmentos de contenido.
 
-AEM permite una estructura de contenido flexible, y una jerarquía puede ser arbitrariamente grande. Sin embargo, es importante darse cuenta de que cualquier cambio en la estructura de carpetas puede tener consecuencias no deseadas para las consultas existentes [basadas en la ruta de contenido.](#developer) Por lo tanto, una jerarquía bien definida y claramente establecida por adelantado, puede ser útil para sus autores de contenido.
+AEM permite una estructura de contenido flexible, y una jerarquía puede ser arbitrariamente grande. Sin embargo, es importante tener en cuenta que cualquier cambio en la estructura de carpetas puede tener consecuencias no deseadas para las consultas existentes que [dependen de la ruta de acceso de contenido.](#developer) Por lo tanto, una jerarquía bien definida y claramente establecida por adelantado puede ser útil para sus autores de contenido.
 
 Las carpetas también se pueden restringir para permitir solo ciertos tipos de contenido (según los modelos de fragmento de contenido). Se recomienda especificar siempre explícitamente qué modelos se permiten para todas las carpetas de la jerarquía. Especificación del contenido permitido para una carpeta determinada:
 
@@ -232,8 +232,8 @@ GraphQL sirve de nexo entre AEM y los consumidores de contenido sin encabezado. 
 Los desarrolladores deben tener en cuenta las siguientes recomendaciones básicas al planificar sus consultas:
 
 * Las consultas no deben depender de una ruta fija (`ByPath`) para recuperar fragmentos de contenido.
-   * [Los autores de contenido tienen control total sobre la jerarquía de fragmentos de contenido](#content-hierarchy) y podrían realizar cambios que podrían romper dicha consulta.
-   * Las consultas deben optar por referencias del modelo de fragmento de contenido con parámetros de consulta dinámicos para filtrar los resultados y generar la carga útil deseada.
+  * [Los autores de contenido tienen control total sobre la jerarquía de fragmentos de contenido](#content-hierarchy) y podrían realizar cambios que podrían romper dicha consulta.
+  * Las consultas deben optar por referencias del modelo de fragmento de contenido con parámetros de consulta dinámicos para filtrar los resultados y generar la carga útil deseada.
 * Para obtener el mejor rendimiento de las consultas, utilice siempre consultas persistentes en AEM. De esto se habla más adelante en el recorrido.
 * GraphQL es un lenguaje declarativo que sigue el lema “Pida exactamente lo que necesita, y obtenga exactamente eso”. Esto significa que, al crear consultas de GraphQL, evite siempre consultas de tipo `select *` que podría crear en una base de datos relacional.
 
