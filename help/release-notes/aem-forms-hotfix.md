@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 0f718a65a5aa0257a1507f3c9541dba84d861ea3
+source-git-commit: 15a33b28a5148473cf7942328a85c594249a3571
 workflow-type: tm+mt
-source-wordcount: '3491'
-ht-degree: 85%
+source-wordcount: '4046'
+ht-degree: 81%
 
 ---
 
@@ -32,7 +32,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
   <tr>
     <td>
       <strong>8 de junio de 2026</strong><br>
-      <em>Se aplica a:</em> implementaciones de AEM 6.5.25.0 WAR/JEE (incluido AEM Forms en JEE)<br>
+      <em>Se aplica a:</em> implementaciones de AEM 6.5.25.0 Forms JEE<br>
     </td>
     <td>
     <ul>
@@ -42,6 +42,30 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
     <td>
     <ul>
     <li><b>NPR-44100</b> Después de instalar el paquete de servicio 25.0 de AEM 6.5 en implementaciones WAR/JEE, el paquete <code>com.adobe.cq.screens.sessions</code> permanece en el estado Instalado y nunca se activa.</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>6 de enero de 2026</strong><br>
+      <em>Se aplica a:</em> implementaciones de AEM 6.5.24.0 Forms JEE (JBoss, WebLogic, WebSphere)<br>
+    </td>
+    <td>
+    <ul>
+    <strong>Jboss:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/es/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/jboss/adobe-aem-forms-jee-service-pack-6.5.24.0-win-jboss.zip">revisión para el paquete de servicio 6.5.24.0 de AEM en el servidor JEE de Windows para JBoss</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/es/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/jboss/adobe-aem-forms-jee-service-pack-6.5.24.0-linux-jboss.gz">revisión para AEM Service Pack 6.5.24.0 en Linux para el servidor JEE de JBoss</a></li>
+    <strong>Lógica Web:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/es/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/weblogic/adobe-aem-forms-jee-service-pack-6.5.24.0-win-weblogic.zip">revisión para AEM Service Pack 6.5.24.0 en el servidor JEE de Windows para Weblogic</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/es/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/weblogic/adobe-aem-forms-jee-service-pack-6.5.24.0-linux-weblogic.gz">revisión para AEM Service Pack 6.5.24.0 en Linux para el servidor JEE de Weblogic</a></li>
+    <strong>Esfera web:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/es/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/websphere/adobe-aem-forms-jee-service-pack-6.5.24.0-windows-websphere.zip">revisión para el paquete de servicio 6.5.24.0 de AEM en el servidor JEE de Windows para Websphere</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/es/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/websphere/adobe-aem-forms-jee-service-pack-6.5.24.0-linux-websphere.gz">revisión para AEM Service Pack 6.5.24.0 en Linux para el servidor JEE de Websphere</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-23491</b> mitiga la vulnerabilidad CVE-2025-64775 (vulnerabilidad de denegación de servicio de Apache Struts en el procesamiento de solicitudes de varias partes) al actualizar Struts a una versión que resuelva el problema.</li>
     </ul>
     </td>
   </tr>
@@ -91,7 +115,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
       <em>Se aplica a:</em> AEM 6.5 Forms Service Pack 23<br>
       <em>Instrucciones de instalación:</em>
       <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-1-for-users-on-version-65230-install-latest-hotfix">
-        Mitigación de vulnerabilidades de XXE, configuración y ejecución remota de código (CVE-2025-49533) para AEM Forms en JEE
+        Mitigación de vulnerabilidades de XE, configuración y ejecución remota de código (CVE-2025-49533) para AEM Forms en JEE
       </a>
     </td>
     <td>
@@ -110,7 +134,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
     <td>
     <ul>
     <li>Seguridad mejorada al abordar una vulnerabilidad de ejecución remota de código (RCE) en Adobe Experience Manager (AEM) Forms. El problema estaba relacionado con el modo de desarrollo Struts en la interfaz de usuario (IU) de administración, que permitía la evaluación arbitraria del lenguaje de navegación objeto-gráfico (OGNL) a través de la funcionalidad de depuración. Esta corrección garantiza que el modo de desarrollo de Struts esté deshabilitado y que se apliquen los filtros de seguridad adecuados para evitar el acceso no autorizado.</li>
-    <li>Se ha mejorado la protección contra las vulnerabilidades de entidad externa (XXE) de lenguaje de marcado extensible (XML) en el módulo de componente de documento electrónico (EDC) de Adobe Experience Manager (AEM) Forms. Las vulnerabilidades se debían a la administración incorrecta de documentos XML sin protecciones XE, lo que podría provocar lecturas de archivos locales. La corrección incluye lo siguiente:
+    <li>Se ha mejorado la protección contra las vulnerabilidades de entidad externa (XXE) de lenguaje de marcado extensible (XML) en el módulo de componente de documento electrónico (EDC) de Adobe Experience Manager (AEM) Forms. Las vulnerabilidades se debían a la administración incorrecta de documentos XML sin protecciones XXE, lo que podría provocar lecturas de archivos locales. La corrección incluye lo siguiente:
       <ul>
         <li>Asegurarse de que DocumentBuilderFactory utilizado en la clase SecurityCheckHandler está configurado para evitar ataques XXE.</li>
         <li>Actualizar el servicio web de EDC para gestionar documentos XML de forma segura, lo que evita el acceso no autorizado a archivos locales.</li>
@@ -136,7 +160,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
     <td>
     <ul>
     <li>Seguridad mejorada al abordar una vulnerabilidad de ejecución remota de código (RCE) en Adobe Experience Manager (AEM) Forms. El problema estaba relacionado con el modo de desarrollo Struts en la interfaz de usuario (IU) de administración, que permitía la evaluación arbitraria del lenguaje de navegación objeto-gráfico (OGNL) a través de la funcionalidad de depuración. Esta corrección garantiza que el modo de desarrollo de Struts esté deshabilitado y que se apliquen los filtros de seguridad adecuados para evitar el acceso no autorizado.</li>
-    <li>Se ha mejorado la protección contra las vulnerabilidades de entidad externa (XXE) del lenguaje de marcado extensible (XML) en el módulo Document Security de Adobe Experience Manager (AEM) Forms. Las vulnerabilidades se debían a la administración incorrecta de documentos XML sin protecciones XE, lo que podría provocar lecturas de archivos locales. La corrección incluye lo siguiente:
+    <li>Se ha mejorado la protección contra las vulnerabilidades de entidad externa (XXE) del lenguaje de marcado extensible (XML) en el módulo de seguridad de documentos de Adobe Experience Manager (AEM) Forms. Las vulnerabilidades se debían a la administración incorrecta de documentos XML sin protecciones XXE, lo que podría provocar lecturas de archivos locales. La corrección incluye lo siguiente:
       <ul>
         <li>Asegurarse de que DocumentBuilderFactory utilizado en la clase SecurityCheckHandler está configurado para evitar ataques XXE.</li>
         <li>Actualizar el servicio web de seguridad de documentos para gestionar documentos XML de forma segura, lo que evita el acceso no autorizado a archivos locales.</li>
@@ -206,7 +230,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
      </ul>
      </td>
     <td>
-    <ul><li>Cuando un usuario actualiza a AEM Forms Service Pack 20 (6.5.20.0) en el servidor JEE y genera archivos PDF mediante los servicios de salida, los archivos PDF se procesan con problemas de accesibilidad. (LC-3922112)</li><li>Los PDF etiquetados generados mediante el servicio de salida en AEM Forms JEE muestran “Advertencia de estructura inadecuada”. (LC-3922038)</li><li>Cuando se envía un formulario en AEM Forms JEE, las instancias de un elemento XML repetitivo se eliminan de los datos. (LC-3922017)</li><li>Cuando un usuario en un entorno Linux procesa un formulario adaptable (en JEE) en HTML, no se procesa correctamente. (LC-3921957)</li><li>Cuando un usuario convierte un archivo XTG al formato PostScript mediante el servicio de salida en AEM Forms JEE, se produce el siguiente error: AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Después de actualizar al paquete de servicio 18 de AEM Forms (6.5.18.0) en el servidor JEE, cuando un usuario envía un formulario, no puede procesar bloqueos de HTML5 o PDF forms y XMLFM. (LC-3921718)
+    <ul><li>Cuando un usuario actualiza a AEM Forms Service Pack 20 (6.5.20.0) en el servidor JEE y genera archivos PDF mediante los servicios de salida, los archivos PDF se procesan con problemas de accesibilidad. (LC-3922112)</li><li>Los PDF etiquetados generados mediante el servicio de salida en AEM Forms JEE muestran “Advertencia de estructura inadecuada”. (LC-3922038)</li><li>Cuando se envía un formulario en AEM Forms JEE, las instancias de un elemento XML repetitivo se eliminan de los datos. (LC-3922017)</li><li>Cuando un usuario en un entorno Linux procesa un formulario adaptable (en JEE) en HTML, no se procesa correctamente. (LC-3921957)</li><li>Cuando un usuario convierte un archivo XTG al formato PostScript mediante el servicio de salida en AEM Forms JEE, se produce el siguiente error: AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE. (LC-3921720)</li><li>Después de actualizar a AEM Forms Service Pack 18 (6.5.18.0) en el servidor JEE, cuando un usuario envía un formulario, no pueden procesar formularios HTML5 o PDF y se bloquea XMLFM. (LC-3921718)
     </ul>
     </td>    
   </tr>
@@ -214,10 +238,10 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
     <td>21 de junio de 2024</td>
      <td>
      <ul>
-     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Revisión para AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 en el servidor JBoss JEE </a> </li>
-      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Revisión para AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 en el servidor Weblogic JEE </a> </li>
-       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Revisión para AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 en el servidor Webshop JEE </a> </li>
-        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">Revisión para AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 en el servidor OSGi </a> </li>
+     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Revisión para AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 en el servidor JBoss JEE </a> </li>
+      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Revisión para AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 en el servidor Weblogic JEE </a> </li>
+       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Revisión para AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 en el servidor Webshop JEE </a> </li>
+        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">Revisión para AEM Service Pack 6.5.21.0 o AEM Forms Service Pack 6.5.22.0 en el servidor OSGi </a> </li>
      </ul>
      </td>
     <td>
