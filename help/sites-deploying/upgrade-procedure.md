@@ -1,6 +1,6 @@
 ---
 title: Procedimiento de actualización
-description: Obtenga información acerca del procedimiento para actualizar Adobe Experience Manager AEM ().
+description: Obtenga información acerca del procedimiento para actualizar Adobe Experience Manager (AEM).
 contentOwner: sarchiz
 topic-tags: upgrading
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La actualización requiere tiempo de inactividad para el nivel de Author, ya que la mayoría de las actualizaciones de Adobe Experience Manager AEM () se realizan in situ. Si sigue estas prácticas recomendadas, puede minimizar o eliminar el tiempo de inactividad del nivel de Publish.
+>La actualización requiere tiempo de inactividad para el nivel de Author, ya que la mayoría de las actualizaciones de Adobe Experience Manager (AEM) se realizan in situ. Si sigue estas prácticas recomendadas, puede minimizar o eliminar el tiempo de inactividad del nivel de publicación.
 
-AEM Al actualizar los entornos de creación, debe tener en cuenta las diferencias de enfoque entre la actualización de entornos de creación o de publicación para minimizar el tiempo de inactividad, tanto para los autores como para los usuarios finales. AEM AEM En esta página se describe el procedimiento de alto nivel para actualizar una topología en la que se está ejecutando actualmente en una versión de 6.x. Dado que el proceso difiere entre los niveles de creación y publicación y las implementaciones basadas en Mongo y TarMK, cada nivel y micronúcleo se han enumerado en una sección independiente. Al ejecutar la implementación, Adobe recomienda actualizar primero el entorno de creación, determinar el éxito y, a continuación, continuar con los entornos de publicación.
+Al actualizar los entornos de AEM, debe tener en cuenta las diferencias de enfoque entre actualizar los entornos de creación o los entornos de publicación para minimizar el tiempo de inactividad tanto para los autores como para los usuarios finales. Esta página describe el procedimiento de alto nivel para actualizar una topología de AEM que se esté ejecutando en una versión de AEM 6.x. Dado que el proceso difiere entre los niveles de creación y publicación y las implementaciones basadas en Mongo y TarMK, cada nivel y micronúcleo se han enumerado en una sección independiente. Al ejecutar la implementación, Adobe recomienda actualizar primero el entorno de creación, determinar el éxito y, a continuación, continuar con los entornos de publicación.
 
 <!--
 >[!IMPORTANT]
@@ -85,7 +85,7 @@ La topología supuesta para esta sección consiste en un servidor de creación q
 
 ### Iniciando topología {#starting-topology-1}
 
-AEM La topología supuesta para esta sección consiste en un clúster de creación de MongoMK con al menos dos instancias de autor de, respaldadas por al menos dos bases de datos MongoMK. Todas las instancias de autor comparten un almacén de datos. Estos pasos deben aplicarse tanto a los almacenes de datos S3 como a los de archivos. La replicación se produce desde los servidores de creación a la granja de Publish de TarMK.
+La topología supuesta para esta sección consiste en un clúster de creación de MongoMK con al menos dos instancias de autor de AEM, respaldadas por al menos dos bases de datos MongoMK. Todas las instancias de autor comparten un almacén de datos. Estos pasos deben aplicarse tanto a los almacenes de datos S3 como a los de archivos. La replicación se produce desde los servidores de creación a la granja de servidores de publicación TarMK.
 
 ![topología mongo](assets/mongo-topology.jpg)
 
@@ -95,7 +95,7 @@ AEM La topología supuesta para esta sección consiste en un clúster de creaci�
 
 1. Detener la creación de contenido.
 1. Clone el almacén de datos para la copia de seguridad.
-1. AEM Detenga todas las instancias de autor excepto una, la instancia de autor principal.
+1. Detenga todas las instancias de autor de AEM, excepto una, y su autor principal.
 1. Elimine todos los nodos MongoDB excepto uno del conjunto de réplicas, su instancia principal de Mongo.
 1. Actualice el archivo `DocumentNodeStoreService.cfg` en el autor principal para reflejar el conjunto de réplicas de un solo miembro.
 1. Reinicie el autor principal para asegurarse de que se reinicia correctamente.
@@ -143,11 +143,11 @@ AEM La topología supuesta para esta sección consiste en un clúster de creaci�
 
 1. Limpie las instancias de autor actualizadas, el nodo Mongo y el almacén de datos.
 
-## TarMK Publish Farm {#tarmk-publish-farm}
+## Granja de publicación TarMK {#tarmk-publish-farm}
 
-### TarMK Publish Farm {#tarmk-publish-farm-1}
+### Granja de publicación TarMK {#tarmk-publish-farm-1}
 
-La topología supuesta para esta sección consiste en dos instancias de publicación de TarMK, delante de Dispatcher y, a su vez, delante de un equilibrador de carga. La replicación se produce desde el servidor de creación a la granja de servidores de Publish TarMK.
+La topología supuesta para esta sección consiste en dos instancias de publicación de TarMK, delante de Dispatcher y, a su vez, delante de un equilibrador de carga. La replicación se produce desde el servidor de creación a la granja de servidores de publicación TarMK.
 
 ![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
 
@@ -160,22 +160,22 @@ La topología supuesta para esta sección consiste en dos instancias de publicac
 1. Ejecute una [actualización local](/help/sites-deploying/in-place-upgrade.md) en Publish 2.
 1. Actualice el Dispatcher o el módulo web *si es necesario*.
 1. Vacíe la caché de Dispatcher.
-1. El control de calidad valida Publish 2 a través de Dispatcher, detrás del cortafuegos.
-1. Cierre Publish 2.
+1. QA valida Publish 2 a través de Dispatcher, detrás del cortafuegos.
+1. Cerrar publicación 2.
 1. Copie la instancia de Publish 2.
-1. Inicie Publish 2.
+1. Iniciar publicación 2.
 
 ### Si se realiza correctamente {#if-successful-2}
 
 ![actualización-publicación1](assets/upgrade-publish1.png)
 
-1. Habilite el tráfico en Publish 2.
-1. Detener el tráfico a Publish 1.
-1. Detenga la instancia de Publish 1.
-1. Reemplace la instancia de Publish 1 por una copia de Publish 2.
+1. Habilitar tráfico en Publish 2.
+1. Detener el tráfico en Publish 1.
+1. Detenga la instancia Publish 1.
+1. Reemplace la instancia Publish 1 por una copia de Publish 2.
 1. Actualice el Dispatcher o el módulo web *si es necesario*.
 1. Vaciar la memoria caché de Dispatcher para Publish 1.
-1. Inicie Publish 1.
+1. Iniciar publicación 1.
 1. QA valida Publish 1 a través de Dispatcher, detrás del cortafuegos.
 
 ### Si no lo consigue (reversión) {#if-unsuccessful-rollback-1}
@@ -185,13 +185,13 @@ La topología supuesta para esta sección consiste en dos instancias de publicac
 1. Cree una copia de Publish 1.
 1. Reemplace la instancia de Publish 2 por una copia de Publish 1.
 1. Vaciar la memoria caché de Dispatcher para Publish 2.
-1. Inicie Publish 2.
-1. El control de calidad valida Publish 2 a través de Dispatcher, detrás del cortafuegos.
-1. Habilite el tráfico en Publish 2.
+1. Iniciar publicación 2.
+1. QA valida Publish 2 a través de Dispatcher, detrás del cortafuegos.
+1. Habilitar tráfico en Publish 2.
 
 ## Pasos finales de la actualización {#final-upgrade-steps}
 
-1. Habilitar el tráfico en Publish 1.
+1. Habilitar el tráfico en Publicar 1.
 1. QA realiza la validación final desde una dirección URL pública.
 1. Habilite los agentes de replicación desde el entorno de creación.
 1. Reanudar creación de contenido.

@@ -12,18 +12,18 @@ feature: Integration
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 9%
+source-wordcount: '533'
+ht-degree: 7%
 
 ---
 
 # Requisitos previos para la integración con Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
-AEM Como parte de la [integración de los recursos de Adobe Target y de la](/help/sites-administering/target.md), debe registrarse en Adobe Target, configurar el agente de replicación y asegurar la configuración de la actividad en el nodo de publicación.
+Como parte de la [integración de AEM y Adobe Target](/help/sites-administering/target.md), debe registrarse en Adobe Target, configurar el agente de replicación y asegurar la configuración de la actividad en el nodo de publicación.
 
 ## Registro en Adobe Target {#registering-with-adobe-target}
 
-AEM Para integrarse con Adobe Target, debe tener una cuenta de Adobe Target válida. Esta cuenta debe tener permisos de nivel **aprobador** como mínimo. Al registrarse en Adobe Target, recibirá un código de cliente. Necesita el código de cliente, el nombre de inicio de sesión de Adobe Target AEM y la contraseña para conectarse de forma directa a la interfaz de usuario de Adobe Target.
+Para integrar AEM con Adobe Target, debe tener una cuenta de Adobe Target válida. Esta cuenta debe tener permisos de nivel **aprobador** como mínimo. Al registrarse en Adobe Target, recibirá un código de cliente. Necesita el código de cliente, el nombre de inicio de sesión de Adobe Target y la contraseña para conectar AEM a Adobe Target.
 
 El código de cliente identifica la cuenta de cliente de Adobe Target al llamar al servidor de Adobe Target.
 
@@ -31,13 +31,13 @@ El código de cliente identifica la cuenta de cliente de Adobe Target al llamar 
 >
 >El equipo de Target también debe habilitar su cuenta para utilizar la integración.
 >
->Si no es el caso, comuníquese con el [Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=es).
+>Si no es así, comuníquese con el [Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
 
 ## Activación del agente de replicación de destino {#enabling-the-target-replication-agent}
 
-El agente de replicación [Test and Target](/help/sites-deploying/replication.md) debe estar habilitado en la instancia de autor. AEM Tenga en cuenta que este agente de replicación no está habilitado de forma predeterminada si utilizó el modo de ejecución [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) para realizar la instalación de la instalación de los elementos de la aplicación de la instalación de la aplicación de forma predeterminada. Para obtener más información sobre cómo proteger el entorno de producción, consulte la [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md).
+El agente de replicación [Test and Target](/help/sites-deploying/replication.md) debe estar habilitado en la instancia de autor. Tenga en cuenta que este agente de replicación no está habilitado de forma predeterminada si utilizó el modo de ejecución [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) para instalar AEM. Para obtener más información sobre cómo proteger el entorno de producción, consulte la [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md).
 
-1. AEM En la página de inicio de la, haga clic en **Herramientas** > **Implementación** > **Replicación**.
+1. En la página de inicio de AEM, haga clic en **Herramientas** > **Implementación** > **Replicación**.
 1. Haga Clic En **Agentes En Autor**.
 1. Haga clic en el agente de replicación **Test and Target (test and target)** y, a continuación, haga clic en **Editar**.
 1. Seleccione la opción Habilitado y luego haga clic en **Aceptar**.
@@ -50,27 +50,27 @@ El agente de replicación [Test and Target](/help/sites-deploying/replication.md
 
 ## Protección del nodo de configuración de actividad {#securing-the-activity-settings-node}
 
-Asegure el nodo de configuración de actividades **cq:ActivitySettings** de la instancia de publicación, para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
+Proteja el nodo de configuración de actividad **cq:ActivitySettings** en la instancia de publicación para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
 
-El nodo **cq:ActivitySettings** está disponible en CRXDE lite bajo `/content/campaigns/*nameofbrand*`* *bajo el nodo de actividades jcr:content;* *por ejemplo, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Este nodo solo se crea después de establecer como objetivo un componente.
+El nodo **cq:ActivitySettings** está disponible en CRXDE lite bajo `/content/campaigns/*nameofbrand*`** bajo el nodo jcr:content de actividades;* *por ejemplo, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Este nodo solo se crea después de establecer como objetivo un componente.
 
 El nodo **cq:ActivitySettings** bajo el jcr:content de la actividad está protegido por las siguientes ACL:
 
 * Denegar todo para todos
-* Permitir jcr:read, rep:write para &quot;target-activity-authors&quot; (el autor es miembro de este grupo de forma predeterminada)
-* Permitir jcr:read, rep:write para &quot;targetservice&quot;
+* Permitir jcr:read,rep:write para &quot;target-activity-authors&quot; (el autor es miembro de este grupo de forma predeterminada)
+* Permitir jcr:read,rep:write para &quot;targetservice&quot;
 
 Esta configuración garantiza que los usuarios normales no tengan acceso a las propiedades del nodo. Utilice las mismas ACL en autor y en publicación. Consulte [Administración de usuarios y seguridad](/help/sites-administering/security.md) para obtener más información.
 
-## AEM Configuración del externalizador de vínculos de la {#configuring-the-aem-link-externalizer}
+## Configuración del externalizador de vínculos de AEM {#configuring-the-aem-link-externalizer}
 
-Al editar una actividad en Adobe Target AEM, la dirección URL apunta a **localhost** a menos que cambie la dirección URL en el nodo de autor de la. AEM Puede configurar el Externalizador de vínculos de si desea que el contenido exportado apunte a un dominio *publish* específico.
+Al editar una actividad en Adobe Target, la URL apunta a **localhost** a menos que cambie la URL en el nodo de creación de AEM. Puede configurar el externalizador de vínculos de AEM si desea que el contenido exportado apunte a un dominio *publish* específico.
 
 >[!NOTE]
 >
 >Consulte también [Agregar la configuración de nube](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
-AEM Para configurar el externalizador de:
+Para configurar el externalizador de AEM:
 
 >[!NOTE]
 >

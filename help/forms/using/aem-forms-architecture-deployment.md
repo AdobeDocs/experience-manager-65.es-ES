@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2469'
-ht-degree: 96%
+source-wordcount: '2564'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html) |
 | AEM 6.5 | Este artículo |
 
 ## Arquitectura {#architecture}
@@ -35,9 +35,9 @@ La arquitectura para AEM Forms incluye los siguientes componentes:
 * **Servicios de Forms:** proporcionan funciones relacionadas con los formularios, como crear, combinar, distribuir y archivar documentos PDF, agregar firmas digitales para limitar el acceso a documentos y descodificar formularios de barras codificados. Estos servicios están disponibles públicamente para el consumo mediante el código personalizado que se ha implementado en AEM.
 * **Capa web:** JSP o servlets, creados sobre servicios comunes y de formularios, que proporcionan las siguientes funcionalidades:
 
-   * **Crear front-end**: una interfaz de usuario de creación y administración de formularios para crear y administrar formularios.
-   * **Front-end Procesar y enviar formularios**: interfaz de usuario final para que la utilicen los usuarios finales de AEM Forms (por ejemplo, los ciudadanos que acceden a un sitio web del Gobierno). Proporciona funciones de representación de formularios (formulario de visualización en un explorador web) y envío.
-   * **API de REST**: los JSP y los servlets exportan un subconjunto de servicios de formularios para el que lo consuman de manera remota clientes basados en HTTP, como el SDK móvil de formularios.
+  * **Crear front-end**: una interfaz de usuario de creación y administración de formularios para crear y administrar formularios.
+  * **Front-end Procesar y enviar formularios**: interfaz de usuario final para que la utilicen los usuarios finales de AEM Forms (por ejemplo, los ciudadanos que acceden a un sitio web del Gobierno). Proporciona funciones de representación de formularios (formulario de visualización en un explorador web) y envío.
+  * **API de REST**: los JSP y los servlets exportan un subconjunto de servicios de formularios para el que lo consuman de manera remota clientes basados en HTTP, como el SDK móvil de formularios.
 
 **AEM Forms en OSGi:** AEM Forms en un entorno OSGi es AEM Author estándar o AEM Publish con el paquete de AEM Forms implementado en él. Puede ejecutar AEM Forms en OSGi en un [entorno de servidor único, configuración de granjas y de clústeres](/help/sites-deploying/recommended-deploys.md). La configuración de clúster solo está disponible para instancias de autor de AEM.
 
@@ -64,7 +64,7 @@ La siguiente imagen muestra varias configuraciones del servidor de AEM Forms y s
 **Autor:** una instancia de autor es un servidor de AEM Forms que se ejecuta en el modo de ejecución estándar de Autor. Puede ser AEM Forms en JEE o AEM Forms en un entorno OSGi. Está dirigido a usuarios internos, diseñadores de formularios y de comunicaciones interactivas y desarrolladores. Habilita las siguientes funcionalidades:
 
 * **Crear y administrar formularios y comunicaciones interactivas:** los diseñadores y desarrolladores pueden crear y editar formularios adaptables y comunicaciones interactivas, cargar otros tipos de formularios creados externamente, por ejemplo, formularios creados en Adobe Forms Designer y administrar estos recursos mediante la consola de Forms Manager.
-* **Publicar formularios y comunicaciones interactivas:** los recursos alojados en una instancia de autor se pueden publicar en una instancia de publicación para realizar operaciones de tiempo de ejecución. AEM La publicación de recursos utiliza las funciones de replicación de la. Adobe recomienda que se configure un agente de replicación en todas las instancias de autor para insertar manualmente los formularios publicados en las instancias de procesamiento y que se configure otro agente de replicación en las instancias de procesamiento con el activador *Recepción* habilitado para replicar automáticamente los formularios recibidos en las instancias de publicación.
+* **Publicar formularios y comunicaciones interactivas:** los recursos alojados en una instancia de autor se pueden publicar en una instancia de publicación para realizar operaciones de tiempo de ejecución. La publicación de recursos utiliza las funciones de replicación de AEM. Adobe recomienda que se configure un agente de replicación en todas las instancias de autor para insertar manualmente los formularios publicados en las instancias de procesamiento y que se configure otro agente de replicación en las instancias de procesamiento con el activador *Recepción* habilitado para replicar automáticamente los formularios recibidos en las instancias de publicación.
 
 **Publicación:** una instancia de publicación es un servidor de AEM Forms que se ejecuta en el modo de ejecución de publicación estándar. Las instancias de publicación están destinadas a los usuarios finales de aplicaciones basadas en formularios como, por ejemplo, los usuarios que acceden a un sitio web público y envían formularios. Habilita las siguientes funcionalidades:
 
@@ -79,7 +79,7 @@ La siguiente imagen muestra varias configuraciones del servidor de AEM Forms y s
 
   >[!NOTE]
   >
-  >El Adobe AEM recomienda utilizar un repositorio de datos de terceros para guardar los datos procesados finales en lugar de utilizar el repositorio de datos de la aplicación de la versión de.
+  >Adobe recomienda utilizar un repositorio de datos de terceros para guardar los datos procesados finales en lugar de utilizar el repositorio de AEM.
 
 * **Almacenar y posprocesar los datos de correspondencia que llegan desde una instancia de publicación:** los flujos de trabajo de AEM realizan el posprocesamiento opcional de las definiciones de cartas correspondientes. Estos flujos de trabajo pueden guardar los datos procesados finales en un repositorio de datos externo adecuado.
 

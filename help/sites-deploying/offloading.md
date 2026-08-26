@@ -1,6 +1,6 @@
 ---
-title: Descargando trabajos
-description: AEM Obtenga información sobre cómo configurar y utilizar instancias de en una topología para realizar tipos específicos de procesamiento.
+title: Descarga de trabajos
+description: Obtenga información sobre cómo configurar y utilizar instancias de AEM en una topología para realizar tipos específicos de procesamiento.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -11,16 +11,16 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2386'
 ht-degree: 1%
 
 ---
 
-# Descargando trabajos{#offloading-jobs}
+# Descarga de trabajos{#offloading-jobs}
 
 ## Introducción {#introduction}
 
-La descarga distribuye las tareas de procesamiento entre las instancias de Experience Manager de una topología. Con la descarga, puede utilizar instancias de Experience Manager específicas para realizar tipos específicos de procesamiento. El procesamiento especializado le permite maximizar el uso de los recursos de servidor disponibles.
+La descarga distribuye las tareas de procesamiento entre las instancias de Experience Manager en una topología. Con la descarga, puede utilizar instancias de Experience Manager específicas para realizar tipos específicos de procesamiento. El procesamiento especializado le permite maximizar el uso de los recursos de servidor disponibles.
 
 La descarga se basa en las características de [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) y Sling JobManager. Para utilizar la descarga, agregue clústeres de Experience Manager a una topología e identifique los temas de trabajo que procesa el clúster. Los clústeres están formados por una o más instancias de Experience Manager, por lo que una sola instancia se considera un clúster.
 
@@ -33,7 +33,7 @@ Sling JobManager y JobConsumer permiten la creación de trabajos que se procesan
 * JobManager: servicio que crea trabajos para temas específicos.
 * JobConsumer: servicio que ejecuta trabajos de uno o más temas. Se pueden registrar varios servicios JobConsumer para el mismo tema.
 
-Cuando JobManager crea un trabajo, el módulo de descarga selecciona un clúster de Experience Manager en la topología para ejecutar el trabajo:
+Cuando JobManager crea un trabajo, el marco de trabajo de descarga selecciona un clúster de Experience Manager en la topología para ejecutar el trabajo:
 
 * El clúster debe incluir una o más instancias que ejecuten un JobConsumer registrado para el tema del trabajo.
 * El tema debe estar habilitado al menos para una instancia del clúster.
@@ -52,7 +52,7 @@ Al crear un trabajo, solo se garantiza que la carga útil se encuentre en la ins
 
 ## Administración de topologías {#administering-topologies}
 
-Las topologías son clústeres Experience Manager de correspondencia imprecisa que participan en la descarga. Un clúster consta de una o más instancias de servidor de Experience Manager (una sola instancia se considera un clúster).
+Las topologías son clústeres de Experience Manager de correspondencia imprecisa que participan en la descarga. Un clúster consta de una o más instancias de servidor de Experience Manager (una sola instancia se considera un clúster).
 
 Cada instancia de Experience Manager ejecuta los siguientes servicios relacionados con la descarga:
 
@@ -67,7 +67,7 @@ Cada clúster de la topología contiene una instancia que se reconoce como princ
 
 ### Visualización de la topología {#viewing-the-topology}
 
-Utilice el Explorador de topología para explorar el estado de la topología en la que participa la instancia de Experience Manager. El Explorador de topología muestra los clústeres y las instancias de la topología.
+Utilice el Explorador de topologías para explorar el estado de la topología en la que participa la instancia de Experience Manager. El Explorador de topología muestra los clústeres y las instancias de la topología.
 
 Para cada clúster, verá una lista de miembros del clúster que indica el orden en que cada miembro se unió al clúster y qué miembro es el líder. La propiedad Current indica la instancia que está administrando actualmente.
 
@@ -106,7 +106,7 @@ Utilice el siguiente procedimiento para abrir la página Topology Management de 
 
 El servicio de detección basado en recursos de Apache Sling se ejecuta en cada instancia para controlar cómo interactúan las instancias de Experience Manager con una topología.
 
-El servicio de detección envía solicitudes periódicas de POST (latidos) a los servicios del conector de topología para establecer y mantener conexiones con la topología. El servicio Conector de topología mantiene una lista de permitidos de direcciones IP o nombres de host que pueden unirse a la topología:
+El servicio de detección envía solicitudes POST periódicas (latidos) a los servicios del conector de topología para establecer y mantener conexiones con la topología. El servicio Conector de topología mantiene una lista de permitidos de direcciones IP o nombres de host que pueden unirse a la topología:
 
 * Para unir una instancia a una topología, especifique la dirección URL del servicio Conector de topología del miembro raíz.
 * Para permitir que una instancia se una a una topología, agregue la instancia a la lista de permitidos del servicio Conector de topología del miembro raíz.
@@ -176,7 +176,7 @@ Realice el siguiente procedimiento en el miembro raíz de la topología. El proc
 
 ## Configuración del consumo de temas {#configuring-topic-consumption}
 
-Utilice el Explorador de descargas para configurar el consumo de temas de las instancias de Experience Manager de la topología. Para cada instancia, puede especificar los temas que consume. Por ejemplo, para configurar la topología de modo que solo una instancia consuma temas de un tipo específico, deshabilite el tema en todas las instancias excepto en una.
+Utilice el Explorador de descarga para configurar el consumo de temas para las instancias de Experience Manager en la topología. Para cada instancia, puede especificar los temas que consume. Por ejemplo, para configurar la topología de modo que solo una instancia consuma temas de un tipo específico, deshabilite el tema en todas las instancias excepto en una.
 
 Los trabajos se distribuyen entre instancias que tienen el tema asociado habilitado mediante la lógica de operación por turnos.
 
@@ -203,12 +203,12 @@ Los trabajos se distribuyen entre instancias que tienen el tema asociado habilit
 
 ### Consumidores de trabajos instalados {#installed-job-consumers}
 
-Varias implementaciones de JobConsumer se instalan con Experience Manager. Los temas para los que se han registrado estos JobConsumers aparecen en el Explorador de descargas. Los temas adicionales que aparecen son los que JobConsumers personalizados han registrado. En la tabla siguiente se describen los JobConsumers predeterminados.
+Con Experience Manager se instalan varias implementaciones de JobConsumer. Los temas para los que se han registrado estos JobConsumers aparecen en el Explorador de descargas. Los temas adicionales que aparecen son los que JobConsumers personalizados han registrado. En la tabla siguiente se describen los JobConsumers predeterminados.
 
 | Tema de trabajo | PID de servicio | Descripción |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Se instala con Apache Sling. Procesa los trabajos que genera el administrador de eventos OSGi para garantizar la compatibilidad con versiones anteriores. |
-| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Agente de replicación que replica cargas útiles de trabajo. |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Agente de replicación que replica cargas útiles de trabajo. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Utilice la consola web o un nodo `sling:OsgiConfig` para configurar las siguient
 
 | Nombre de propiedad en la consola web | ID de OSGi | Descripción |
 |---|---|---|
-| Lista de permitidos del tema | job.consumermanager.whitelist | Lista de temas que procesa el servicio JobManager local. El valor predeterminado de &ast; hace que todos los temas se envíen al servicio TopicConsumer registrado. |
+| Lista de permitidos del tema | job.consumermanager.whitelist | Lista de temas que procesa el servicio JobManager local. El valor predeterminado de &amp;ast; hace que todos los temas se envíen al servicio TopicConsumer registrado. |
 | Lista de bloqueados del tema | job.consumermanager.blacklist | Lista de temas que el servicio JobManager local no procesa. |
 
 ## Creación De Agentes De Replicación Para Descargar {#creating-replication-agents-for-offloading}
@@ -284,7 +284,7 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Transporte > URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
    | Transporte > Usuario de transporte | Replicación del usuario en la instancia de destino |
    | Transporte > Contraseña de transporte | Contraseña de usuario de replicación en la instancia de destino |
-   | Extendido > Método HTTP | POST |
+   | Extendido > Método HTTP | PUBLICAR |
    | Déclencheur > Ignorar predeterminado | Verdadero |
 
 ### Creación del agente inverso {#creating-the-reverse-agent}
