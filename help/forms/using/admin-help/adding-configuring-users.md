@@ -7,9 +7,9 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1771'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Evite utilizar caracteres de subrayado (_) en nombres canónicos, por ejemplo, `
 
 **Configuración regional:** Configuración regional ISO del usuario
 
-**Clave de calendario empresarial:** Le permite asignar un calendario empresarial a un usuario, según el valor de esta configuración. Los calendarios comerciales definen días laborables y no laborables. AEM Los formularios de datos pueden utilizar calendarios comerciales al calcular las fechas y horas futuras para eventos como recordatorios, plazos y escalaciones. La forma de asignar claves de calendario empresarial a los usuarios depende de si utiliza un dominio empresarial, local o híbrido. (Consulte [Agregar dominios](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
+**Clave de calendario empresarial:** Le permite asignar un calendario empresarial a un usuario, según el valor de esta configuración. Los calendarios comerciales definen días laborables y no laborables. Los formularios AEM Forms pueden utilizar calendarios comerciales al calcular las fechas y horas futuras para eventos como recordatorios, plazos y escalaciones. La forma de asignar claves de calendario empresarial a los usuarios depende de si utiliza un dominio empresarial, local o híbrido. (Consulte [Agregar dominios](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
 Si utiliza un dominio local o híbrido, la información sobre los usuarios se almacena únicamente en la base de datos de Administración de usuarios. Para estos usuarios, establezca la Clave del calendario empresarial en una cadena. A continuación, asigne la clave del calendario empresarial (la cadena) a un calendario empresarial en el flujo de trabajo de Forms.
 
@@ -90,7 +90,7 @@ En los dominios de empresa, utilice un atributo que no sea DN como ID de usuario
 
 Asegúrese de que el ID de usuario sea único. No utilice uno que se haya asignado a un usuario eliminado.
 
-AEM Los formularios no pueden diferenciar entre cuentas de usuario que tienen ID y contraseñas de usuario idénticos, pero que pertenecen a dominios diferentes. Para evitar este problema, no cree cuentas con el mismo ID de usuario en varios dominios.
+Los formularios AEM Forms no pueden diferenciar entre cuentas de usuario que tienen ID de usuario y contraseñas idénticos, pero que pertenecen a dominios diferentes. Para evitar este problema, no cree cuentas con el mismo ID de usuario en varios dominios.
 
 Cuando se utiliza SQL Server como base de datos, no se puede crear un Id. de usuario que supere los 255 caracteres.
 
@@ -160,19 +160,19 @@ Evite crear nombres de usuario que comiencen con un signo de número (#). Al rea
 
 >[!NOTE]
 >
->AEM Forms AEM AEM en JEE también permite reconocer como usuarios a los usuarios del complemento de formularios en forma de que se ejecutan en un OSGi. Esto es necesario en los casos en los que se requiera el inicio de sesión único entre AEM Forms AEM en JEE y el complemento de formularios en el que se ejecuta en un OSGi (por ejemplo, en el espacio de trabajo del HTML). La operación de eliminación mencionada elimina un usuario solo de AEM Forms en JEE. El usuario no se elimina del complemento de AEM Forms que se ejecuta en el entorno OSGi. Sin embargo, cualquier intento de inicio de sesión realizado después de eliminar el usuario (un intento de inicio de sesión en el servidor JEE de complementos de AEM Forms o complementos de AEM Forms en el entorno OSGi) se deniega.
+>AEM Forms en JEE también permite que los usuarios del complemento de formularios AEM que se ejecutan en un OSGi se reconozcan como usuarios de AEM. Esto es necesario en los casos en los que se requiera el inicio de sesión único entre AEM Forms en JEE y el complemento de formularios de AEM que se ejecuta en un OSGi (por ejemplo, en HTML Workspace). La operación de eliminación mencionada elimina un usuario solo de AEM Forms en JEE. El usuario no se elimina del complemento de AEM Forms que se ejecuta en el entorno OSGi. Sin embargo, cualquier intento de inicio de sesión realizado después de eliminar el usuario (un intento de inicio de sesión en el servidor JEE de complementos de AEM Forms o complementos de AEM Forms en el entorno OSGi) se deniega.
 
 ## Crear controlador de errores de inicio de sesión personalizado {#create-custom-login-error-handler}
 
-AEM Si un usuario sin los formularios y los permisos de CQ necesarios intenta iniciar sesión en las siguientes aplicaciones incrustadas en CQ, se redirige al usuario a la página predeterminada de CQ 404 que contiene el seguimiento de errores:
+Si un usuario sin los formularios AEM Forms y los permisos CQ necesarios intenta iniciar sesión en las siguientes aplicaciones incrustadas en CQ, se redirige al usuario a la página predeterminada de CQ 404 que contiene el seguimiento de errores:
 
 * Solución de Administración de correspondencia
-* AEM Workspace de formularios
+* AEM forms Workspace
 
-  ***nota &#x200B;**: Flex AEM Workspace está en desuso para la versión de formularios de la versión de la versión de la aplicación de formularios de la versión de la aplicación.*
+  ***nota &#x200B;**: Flex Workspace está obsoleto para la versión de formularios AEM.*
 
 * administrador de formularios
-* Informes de procesos 
+* Informes de procesos
 
 CQ proporciona un mecanismo para anular el controlador jsp 404 predeterminado.
 

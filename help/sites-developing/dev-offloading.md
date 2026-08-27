@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 0%
+source-wordcount: '397'
+ht-degree: 3%
 
 ---
 
@@ -175,7 +175,7 @@ La clase MyJobConsumer genera los siguientes mensajes de registro para una carga
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-La propiedad Consumed se puede observar mediante el CRXDE Lite:
+La propiedad Consumed se puede observar mediante CRXDE Lite:
 
 ![chlimage_1-25](assets/chlimage_1-25a.png)
 
