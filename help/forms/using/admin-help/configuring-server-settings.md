@@ -9,7 +9,7 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
 source-wordcount: '2665'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Para generar notificaciones por correo electrónico para un grupo, especifique u
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios de AEM.
+>Flex Workspace ya no se utiliza para la versión de formularios AEM.
 
 ### Configurar recordatorios para usuarios o grupos {#configure-reminders-for-users-or-groups}
 
@@ -198,7 +198,7 @@ Solo para las notificaciones de tareas, el flujo de trabajo de Forms incluye dos
 
 >[!NOTE]
 >
->Flex Workspace está en desuso para la versión de formularios de AEM.
+>Flex Workspace ya no se utiliza para la versión de formularios AEM.
 
 Si la solución se implementa en un entorno en clúster, reemplace `@@notification-host@@` por la dirección del clúster.
 

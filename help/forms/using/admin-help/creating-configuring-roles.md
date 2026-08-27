@@ -9,9 +9,9 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2503'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Administración de usuarios tiene dos tipos de funciones:
 
 **Funciones inmutables:** Las funciones predeterminadas que se incluyen en Administración de usuarios son funciones inmutables. Estas funciones no se pueden editar ni eliminar. Sin embargo, puede agregar o quitar usuarios y grupos asignados a funciones inmutables.
 
-AEM Tanto las funciones mutables como las inmutables también se pueden crear mediante las API de formularios de la aplicación de la forma de.
+Las funciones mutables e inmutables también se pueden crear mediante las API de formularios AEM Forms.
 
 ## Funciones predeterminadas {#default-roles}
 
@@ -36,7 +36,7 @@ Las siguientes funciones predeterminadas se incluyen en la base de datos de admi
 
 **Administrador de aplicaciones:** puede usar todas las características de Workbench. Puede utilizar las páginas Aplicaciones y servicios de la consola de administración para configurar las propiedades, los extremos y la seguridad del servicio en tiempo de ejecución.
 
-AEM **Administrador de formularios de:** puede realizar todas las tareas para todos los servicios instalados.
+**Administrador de formularios AEM Forms:** puede realizar todas las tareas para todos los servicios instalados.
 
 **Administrador de seguridad:** controla la configuración de Administración de usuarios y administra los usuarios y grupos asociados a cualquier dominio de Administrador de usuarios
 
@@ -48,37 +48,37 @@ AEM **Administrador de formularios de:** puede realizar todas las tareas para to
 
 ### Funciones predeterminadas adicionales {#additional-default-roles}
 
-AEM Se pueden incluir las siguientes funciones predeterminadas adicionales, en función de los componentes de formularios de la aplicación que haya instalado
+Se pueden incluir las siguientes funciones predeterminadas adicionales, en función de los componentes de formularios AEM Forms que haya instalado
 
 **Usuario de aplicación de carga de documentos:** puede cargar documentos mediante Flex Remoting.
 
 **Administrador de Forms:** puede ver y modificar la configuración de la página de Forms en la consola de administración
 
-AEM **Administrador del espacio de contenido de formularios de:** Puede ver y modificar la configuración de la página Servicios de contenido (obsoleto) en la consola de administración
+**Administrador del espacio de contenido de formularios AEM Forms:** puede ver y modificar la configuración de la página Servicios de contenido (obsoleto) en la consola de administración
 
-AEM **Usuario de área de contenido de formularios de:** puede iniciar sesión en las páginas web de área de contenido (obsoletas)
+**Usuario de Contentspace de formularios AEM:** puede iniciar sesión en las páginas web de Contentspace (obsoleto)
 
 **Administrador de Conector de Documentum:** Puede ver y modificar la configuración desde la página Documentum de Connector para EMC en la consola de administración
 
-AEM **Administrador del conector FileNet de formularios:** Puede ver y modificar la configuración desde la página Conector para IBM FileNet en la consola de administración
+**Administrador del conector FileNet de formularios AEM:** puede ver y modificar la configuración de la página Conector para FileNet de IBM en la consola de administración
 
-AEM **Administrador de conectores de IBM CM de formularios:** puede ver y modificar la configuración de la página Conector para el Administrador de contenido de IBM en la consola de administración
+**Administrador del conector IBM CM de AEM Forms:** puede ver y modificar la configuración desde la página Conector para el administrador de contenido de IBM en la consola de administración
 
-**Rights Management:** realiza todas las tareas necesarias para todas las configuraciones de servidor en las páginas relevantes del Rights Management
+**Administrador de Rights Management:** realiza todas las tareas necesarias para todas las configuraciones de servidor en las páginas relevantes de Rights Management
 
-**Usuario final de Rights Management:** puede acceder a las páginas web del usuario final de Rights Management
+**Usuario final de Rights Management:** Puede acceder a las páginas web de los usuarios finales de Rights Management
 
-**Rights Management Invitar usuario:** Puede invitar usuarios
+**Usuario invitado de Rights Management:** puede invitar a usuarios
 
-**Rights Management Administrar usuarios invitados y locales:** puede realizar las tareas necesarias para administrar todos los usuarios invitados y locales en las páginas relevantes del Rights Management
+**Rights Management administra usuarios invitados y locales:** puede realizar las tareas necesarias para administrar todos los usuarios invitados y locales en las páginas relevantes de Rights Management
 
-**Administrador del conjunto de directivas de Rights Management:** realiza todas las tareas necesarias para todos los conjuntos de directivas en las páginas de Rights Management relevantes
+**Administrador de conjunto de directivas de Rights Management:** realiza todas las tareas necesarias para todos los conjuntos de directivas en las páginas relevantes de Rights Management
 
-**Rights Management Super Administrator:** realiza todas las tareas necesarias desde la página Rights Management
+**Superadministrador de Rights Management:** Realiza todas las tareas necesarias desde la página de Rights Management
 
-AEM **Administrador de Workspace de formularios de:** Puede ver y modificar la configuración desde la página de Workspace en la consola de administración
+**Administrador de AEM Forms Workspace:** Puede ver y modificar la configuración de la página de Workspace en la consola de administración
 
-***nota &#x200B;**: Flex AEM Workspace está en desuso para la versión de formularios de la versión de la versión de la aplicación de formularios de la versión de la aplicación.*
+***nota **: Flex Workspace está obsoleto para la versión de formularios AEM.*
 
 **Usuario de Workspace:** puede iniciar sesión en la aplicación de usuario final de Workspace
 
@@ -86,17 +86,17 @@ AEM **Administrador de Workspace de formularios de:** Puede ver y modificar la c
 
 **Administrador de PDFG:** puede ver y modificar la configuración desde la página de PDF Generator en la consola de administración
 
-**Usuario de PDFG:** puede acceder a todas las funciones que no sean de administración de PDF Generator
+**Usuario de PDFG:** puede acceder a todas las funciones que no sean administrativas de PDF Generator
 
-**Aplicación web Acrobat Reader DC extensions:** Puede usar la aplicación web Acrobat Reader DC extensions
-
->[!NOTE]
->
->Los usuarios con ciertos tipos de privilegios de administrador no pueden acceder a las páginas web del usuario final de Workspace por motivos de seguridad. Dado que estas páginas pueden existir fuera de un cortafuegos, permitir tareas de nivel de administración podría suponer un riesgo para la seguridad. AEM Solo los usuarios que tengan los privilegios de administrador de Workspace AEM de formularios de o de usuario de Workspace de formularios de formularios de formularios pueden acceder a las páginas web del usuario final de Workspace.
+**Aplicación web de extensiones de Acrobat Reader DC:** Puede usar la aplicación web de extensiones de Acrobat Reader DC
 
 >[!NOTE]
 >
->Flex AEM Workspace está en desuso para la versión de formularios en la que se ha realizado un.
+>Los usuarios con ciertos tipos de privilegios de administrador no pueden acceder a las páginas web del usuario final de Workspace por motivos de seguridad. Dado que estas páginas pueden existir fuera de un cortafuegos, permitir tareas de nivel de administración podría suponer un riesgo para la seguridad. Solo los usuarios que tengan los privilegios de administrador de AEM Forms Workspace o usuario de AEM Forms Workspace pueden acceder a las páginas web del usuario final de Workspace.
+
+>[!NOTE]
+>
+>Flex Workspace ya no se utiliza para la versión de formularios AEM.
 
 ## Crear una función {#create-a-role}
 
@@ -143,7 +143,7 @@ AEM **Administrador de Workspace de formularios de:** Puede ver y modificar la c
 
 ## Eliminar un rol {#delete-a-role}
 
-AEM Puede eliminar cualquiera de las funciones que ha creado, pero no las funciones predeterminadas de los formularios de la aplicación de forma de formulario que se incluyen en el producto.
+Puede eliminar cualquiera de las funciones que ha creado, pero no las funciones predeterminadas de los formularios AEM Forms que se incluyen en el producto.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de funciones y, a continuación, haga clic en Nombre de la función.
 
@@ -170,7 +170,7 @@ También puede asignar funciones mediante la página Administración de funcione
 
 ## Cambiar permisos de funciones {#change-role-permissions}
 
-Puede cambiar los permisos de cualquiera de las funciones que ha creado. AEM No puede cambiar los permisos de las funciones predeterminadas de los formularios de la que se incluyen en el producto.
+Puede cambiar los permisos de cualquiera de las funciones que ha creado. No puede cambiar los permisos de las funciones predeterminadas de los formularios AEM Forms que se incluyen en el producto.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de funciones y, a continuación, haga clic en Nombre de la función.
 
@@ -180,7 +180,7 @@ Puede cambiar los permisos de cualquiera de las funciones que ha creado. AEM No 
 1. Para cambiar estos permisos, haga clic en Buscar permisos, active las casillas de verificación de los permisos que desea agregar a la función, haga clic en Aceptar y, a continuación, haga clic en Guardar.
 1. Para eliminar un permiso, selecciónelo, haga clic en Eliminar y, a continuación, haga clic en Guardar.
 
-### AEM permisos de formularios de {#aem-forms-permissions}
+### Permisos de formularios AEM {#aem-forms-permissions}
 
 **ADD_REMOVE_ENDPOINT_PERM:** Agregar, quitar y modificar extremos de un servicio
 
@@ -222,7 +222,7 @@ Puede cambiar los permisos de cualquiera de las funciones que ha creado. AEM No 
 
 **DELETE_VERSION_PERM:** Eliminar una versión de un servicio
 
-AEM **Carga de documentos:** Cargar documentos en formularios de la
+**Carga de documentos:** Cargar documentos en formularios de AEM
 
 **Control de dominio:** Cree, elimine o modifique la configuración de cualquier dominio de administración de usuarios, incluidos los proveedores de autenticación y directorio
 
@@ -282,37 +282,37 @@ AEM **Carga de documentos:** Cargar documentos en formularios de la
 
 **Escritura del repositorio:** Escribir metadatos y contenido del repositorio
 
-**Propietario de directiva de cambio de Rights Management:** Cambiar propietario de directiva
+**Propietario de cambio de directiva de Rights Management:** Cambiar propietario de directiva
 
-**Inicio de sesión en la consola de usuario final de Rights Management:** Inicie sesión en la interfaz de usuario de usuario final de Rights Management
+**Inicio de sesión en la consola del usuario final de Rights Management:** Inicie sesión en la interfaz de usuario del usuario final de Rights Management
 
-**Rights Management Administrar configuración:** Administrar configuración de servidor
+**Configuración de administración de Rights Management:** Administrar la configuración del servidor
 
-**Rights Management Administrar usuarios invitados y locales:** Administrar usuarios invitados y locales
+**Rights Management administra usuarios invitados y locales:** administra usuarios invitados y locales
 
 **Rights Management Administrar conjuntos de directivas:** Administrar todas las directivas y documentos dentro de cualquier conjunto de directivas
 
-**Coordinador agregado del conjunto de directivas de Rights Management:** Agregue, quite y cambie permisos para coordinadores de conjuntos de directivas
+**Coordinador de adición del conjunto de directivas de Rights Management:** Agregar, quitar y cambiar permisos para coordinadores de conjuntos de directivas
 
 **Conjunto de directivas de Rights Management Crear directiva:** Cree una directiva para un conjunto de directivas
 
-**Conjunto de directivas de Rights Management Eliminar directiva:** Quitar una directiva de un conjunto de directivas
+**Directiva de eliminación de conjunto de directivas de Rights Management:** Quitar una directiva de un conjunto de directivas
 
-**Conjunto de directivas de Rights Management Editar directiva:** Editar una directiva en un conjunto de directivas
+**Editar conjunto de directivas de Rights Management:** Editar una directiva en un conjunto de directivas
 
 **Conjunto de directivas de Rights Management Administrar editor de documentos:** Cuando crea conjuntos de directivas, asigna a los usuarios la función de editor de documentos. El editor del documento es el usuario que protege el documento con una directiva.
 
 **Coordinador de eliminación de conjunto de directivas de Rights Management:** Quitar un coordinador de conjunto de directivas de un conjunto de directivas
 
-**Documento de revocación de conjunto de directivas de Rights Management:** Revocar acceso a documentos de un conjunto de directivas
+**Documento revocado del conjunto de directivas de Rights Management:** Revocar acceso a documentos de un conjunto de directivas
 
-**Directiva de Rights Management Establecer directiva de modificador:** Directivas de modificador para un documento
+**Directiva de modificador de conjunto de directivas de Rights Management:** directivas de modificador para un documento
 
 **Documento sin revocar conjunto de directivas de Rights Management:** anular la revocación de un documento
 
-**Evento de vista del conjunto de directivas del Rights Management:** vea los eventos de documentos y directivas de cualquier directiva o documento de un conjunto de directivas
+**Evento de vista del conjunto de directivas de Rights Management:** vea los eventos de directivas y documentos de cualquier directiva o documento de un conjunto de directivas
 
-**Eventos de servidor de vista de Rights Management:** Buscar y ver todos los eventos de auditoría
+**Eventos del servidor de vista de Rights Management:** Buscar y ver todos los eventos de auditoría
 
 **Control de roles:** Crear, eliminar y modificar roles en Administración de usuarios
 

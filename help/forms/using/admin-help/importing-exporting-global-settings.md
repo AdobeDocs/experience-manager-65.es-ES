@@ -9,9 +9,9 @@ exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1219'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Puede importar y exportar definiciones de plantillas de búsqueda y configuraci�
 
 >[!NOTE]
 >
->Flex AEM Workspace está en desuso para la versión de formularios en la que se ha realizado un.
+>Flex Workspace ya no se utiliza para la versión de formularios AEM.
 
 Por ejemplo, puede pasar de un entorno de desarrollo a un entorno de producción exportando las definiciones de plantillas de búsqueda y la configuración global de un entorno e importándolas en el otro.
 
@@ -70,7 +70,7 @@ Puede modificar el archivo de configuración global; sin embargo, los únicos va
 
 >[!NOTE]
 >
->Flex AEM Workspace está en desuso para la versión de formularios en la que se ha realizado un.
+>Flex Workspace ya no se utiliza para la versión de formularios AEM.
 
 El archivo de configuración global de Workspace incluye la siguiente configuración:
 
@@ -90,7 +90,7 @@ La configuración *specialRoutes* especifica las propiedades de las rutas especi
 
 ### Configuración de JGroup {#jgroup-settings}
 
-Esta configuración solo aparece si ha actualizado desde el LiveCycle de Adobe ES 2.5 o anterior.
+Esta configuración solo aparece si ha actualizado desde Adobe LiveCycle ES 2.5 o anterior.
 
 **server_remoteevents_ClientTimeoutMilliseconds:** Tiempo máximo que JGroup espera mensajes de evento. Esta configuración no debe cambiarse.
 
@@ -132,7 +132,7 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 **server_debugLevel:** No cambie esta configuración.
 
-AEM **client_pollingInterval:** Establece el intervalo de sondeo (en segundos) utilizado en el Workspace de Flex (obsoleto para formularios en JEE) para detectar tareas nuevas y modificadas. El valor predeterminado es de 3 segundos. Esto no funciona para AEM Forms Workspace.
+**client_pollingInterval:** establece el intervalo de sondeo (en segundos) utilizado en (obsoleto para formularios AEM en JEE) Flex Workspace para detectar tareas nuevas y modificadas. El valor predeterminado es de 3 segundos. Esto no funciona para AEM Forms Workspace.
 
 **client_systemContext_name:** Especifique un nombre personalizado (por ejemplo, Ciudadano) para mostrar en el campo Agregado por (en la pestaña Archivos adjuntos) para los archivos adjuntos de una tarea en AEM Forms Workspace.
 
