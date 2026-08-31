@@ -9,14 +9,20 @@ exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 96%
+source-wordcount: '1611'
+ht-degree: 92%
 
 ---
 
 # Analytics con el marco de trabajo de Cloud Service {#analyticsusingcloudframework}
+
+>[!CAUTION]
+>
+>El panel de Analytics para AEM Forms está obsoleto. Ya no puede ver informes de análisis dentro de AEM Forms. Para ver los datos de análisis de los formularios, utilice la IU de Adobe Analytics.
+>
+>Además, la API [Adobe Analytics 1.4 ha llegado al final de su vida útil](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Como resultado, ya no se admiten las configuraciones de Adobe Analytics que utilizan credenciales de usuario (nombre de usuario y contraseña).
 
 AEM Forms se integra con Analytics para permitirle capturar y realizar un seguimiento de las métricas de rendimiento de los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
 
@@ -111,7 +117,7 @@ Siga estos pasos para crear un grupo de informes.
 La configuración de Cloud Service es información sobre su cuenta de Adobe Analytics. La configuración permite que Adobe Experience Manager (AEM) se conecte a Adobe Analytics. Cree una configuración diferente para cada cuenta de Analytics que utilice.
 
 1. Inicie sesión en la instancia de autor de AEM como administrador.
-1. En la esquina superior izquierda, haga clic en **Adobe Experience Manager** > **Herramientas** ![icono de martillo](/help/forms/using/assets/tools.png) > **Cloud Service** > **Cloud Service heredados**.
+1. En la esquina superior izquierda, haga clic en **Adobe Experience Manager** > **Herramientas** ![icono de martillo](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services heredados**.
 1. Localice el icono de **Adobe Analytics**. Haga clic en **Mostrar configuraciones** y, a continuación, haga clic en **[+]** para agregar nueva configuración.
 
    Si es la primera vez que lo hace, haga clic en **Configurar ahora**.
@@ -177,14 +183,14 @@ Un marco de trabajo de Adobe Analytics es un conjunto de asignaciones entre vari
 
 Ahora puede habilitar Analytics para formularios y generar un informe de Analytics.
 
-## Activar Analytics para un formulario o documento {#enabling-analytics-for-a-form-or-document}
+## Habilitar Analytics para un formulario o documento {#enabling-analytics-for-a-form-or-document}
 
 1. Inicie sesión en el Portal de AEM en `https://[hostname]:'port'`.
 1. Haga clic en **Forms > Formularios y documentos**, seleccione un formulario o documento y haga clic en **Habilitar Analytics**. El análisis está habilitado.
 
-   ![Activar Analytics para un formulario o documento](assets/enable-analytics-1.png)
+   ![Habilitar Analytics para un formulario o documento](assets/enable-analytics-1.png)
 
-   Activar Analytics para un formulario
+   Habilitar Analytics para un formulario
 
    **A.** Botón Habilitar Analytics **B.** Formulario seleccionado
 

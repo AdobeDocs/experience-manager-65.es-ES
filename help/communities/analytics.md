@@ -10,9 +10,9 @@ role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 86ce8d1ead6f2b760eb0d037042ddfc2af418913
 workflow-type: tm+mt
-source-wordcount: '2785'
+source-wordcount: '2821'
 ht-degree: 1%
 
 ---
@@ -31,14 +31,14 @@ Además, el análisis es necesario para lo siguiente:
 
 * En el entorno de publicación:
 
-   * Informando sobre [tendencias](/help/communities/trends.md) de la comunidad
-   * Permitir que los visitantes del sitio ordenen por &quot;más visitados&quot;, &quot;más activos&quot;, &quot;más gustados&quot;
-   * Ver recuentos en listas UGC (contenido generado por el usuario)
+  * Informando sobre [tendencias](/help/communities/trends.md) de la comunidad
+  * Permitir que los visitantes del sitio ordenen por &quot;más visitados&quot;, &quot;más activos&quot;, &quot;más gustados&quot;
+  * Ver recuentos en listas UGC (contenido generado por el usuario)
 
 * En el entorno de creación:
 
-   * Visualización de datos de participación en la [consola de administración de miembros](/help/communities/members.md) (vistas, publicaciones, seguimientos, me gusta)
-   * Resumen de tendencias, latido de vídeo y dispositivo de vídeo para el recurso de habilitación [informes](/help/communities/reports.md)
+  * Visualización de datos de participación en la [consola de administración de miembros](/help/communities/members.md) (vistas, publicaciones, seguimientos, me gusta)
+  * Resumen de tendencias, latido de vídeo y dispositivo de vídeo para el recurso de habilitación [informes](/help/communities/reports.md)
 
 Entre las funciones compatibles de Communities se incluyen:
 
@@ -71,7 +71,7 @@ Para configurar las características de Analytics para Communities, es necesario
 * **Nombre de usuario**
 
   El nombre de usuario de inicio de sesión del usuario autorizado para administrar la cuenta de Analytics
-(debe incluir privilegios de acceso al servicio web).
+  (debe incluir privilegios de acceso al servicio web).
 
 * **Contraseña**
 
@@ -93,31 +93,31 @@ Al iniciar sesión en [Adobe Experience Cloud](https://experienceleague.adobe.co
 
 * [11 Variables de conversión](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=es) (eVars)
 
-   * **`evar1`** a través de **`evar11`** habilitado
+  * **`evar1`** a través de **`evar11`** habilitado
 
-   * Puede cambiar el propósito (cambiar el nombre) de las eVars existentes o crear otras que quiera usar para las funciones de Communities
+  * Puede cambiar el propósito (cambiar el nombre) de las eVars existentes o crear otras que quiera usar para las funciones de Communities
 
 * [7 eventos de éxito](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=es) (eventos)
 
-   * **`event1`** a través de **`event7`** habilitado
+  * **`event1`** a través de **`event7`** habilitado
 
-   * tipo **`Counter`**
+  * tipo **`Counter`**
 
-      * no **`Counter (no subrelations)`**
+    * no **`Counter (no subrelations)`**
 
-   * Puede reutilizar (cambiar el nombre) de eventos existentes o crear otros que se utilizarán para las funciones de Communities
+  * Puede reutilizar (cambiar el nombre) de eventos existentes o crear otros que se utilizarán para las funciones de Communities
 
 * [Administración de vídeo](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=es)
 
-   * Consola de informes de vídeo
+  * Consola de informes de vídeo
 
-      * Habilitar `Video Core`
-      * Seleccione Guardar
+    * Habilitar `Video Core`
+    * Seleccione Guardar
 
-   * Consola de medición de Video Core
+  * Consola de medición de Video Core
 
-      * Seleccionar `Use Solution Variables`
-      * Seleccione Guardar
+    * Seleccionar `Use Solution Variables`
+    * Seleccione Guardar
 
 Si usa **un nuevo grupo de informes**, es posible que un nuevo grupo de informes solo tenga 4 evars y 6 variables de eventos, mientras que se requieren 11 evars y 7 variables de eventos para las comunidades.
 
@@ -159,6 +159,10 @@ Si no está habilitado, el código de latido de vídeo nunca se crea una instanc
 
 ## Configuración del servicio de AEM Analytics Cloud {#aem-analytics-cloud-service-configuration}
 
+>[!CAUTION]
+>
+>La API [Adobe Analytics 1.4 ha llegado al final de su vida útil](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Como resultado, ya no se admiten las configuraciones de Adobe Analytics que utilizan credenciales de usuario (nombre de usuario y contraseña).
+
 Para crear una integración de Analytics, que integre Adobe Analytics con el sitio de la comunidad de AEM, mediante la interfaz de usuario estándar en la instancia de autor:
 
 * Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Services]**
@@ -177,11 +181,13 @@ En el cuadro de diálogo Crear configuración, los valores que se van a introduc
 
 * **Título**
 
-  (Obligatorio) Un título para mostrar para la configuración.Por ejemplo, *Análisis de la comunidad*
+  (Obligatorio) Un título para mostrar para la configuración.
+  Por ejemplo, *Análisis de la comunidad*
 
 * **Nombre**
 
-  (Opcional) Si no se especifica, el nombre predeterminado es un nombre de nodo válido derivado del título.Por ejemplo, ingrese *comunidades*
+  (Opcional) Si no se especifica, el nombre predeterminado es un nombre de nodo válido derivado del título.
+  Por ejemplo, ingrese *comunidades*
 
 * **Plantilla**
 
@@ -189,7 +195,7 @@ En el cuadro de diálogo Crear configuración, los valores que se van a introduc
 
 * Seleccionar **Crear**
 
-   * Inicia la página de configuración y abre el diálogo `Analytics Settings`
+  * Inicia la página de configuración y abre el diálogo `Analytics Settings`
 
 ### Cuadro de diálogo Configuración de Analytics {#analytics-settings-dialog}
 
@@ -233,10 +239,10 @@ Para guardar la configuración:
 
 * Seleccione **Conectarse a Analytics**
 
-   * Si no se realiza correctamente,
+  * Si no se realiza correctamente,
 
-      * Compruebe que las entradas no contienen espacios iniciales.
-      * Pruebe con otro centro de datos.
+    * Compruebe que las entradas no contienen espacios iniciales.
+    * Pruebe con otro centro de datos.
 
 * Seleccione **Aceptar**.
 
@@ -253,11 +259,12 @@ Después de configurar correctamente la conexión básica a Adobe Analytics, es 
 * **Título**
 
   (Obligatorio) Un título para mostrar para el marco de trabajo
-Por ejemplo, escriba *Community Framework*.
+  Por ejemplo, escriba *Community Framework*.
 
 * **Nombre**
 
-  (Opcional) Si no se especifica, el nombre predeterminado es un nombre de nodo válido derivado del título.Por ejemplo, ingrese *comunidades*.
+  (Opcional) Si no se especifica, el nombre predeterminado es un nombre de nodo válido derivado del título.
+  Por ejemplo, ingrese *comunidades*.
 
 * *Plantilla*
 
@@ -316,8 +323,8 @@ El servicio en la nube y el marco de Analytics ya están completos. Las asignaci
 Para agregar el servicio Analytics Cloud al [crear un sitio de la comunidad](/help/communities/sites-console.md):
 
 * En el paso 3, en la [pestaña ANALYTICS](/help/communities/sites-console.md#analytics):
-   * Seleccione la casilla de verificación **Habilitar Analytics**.
-   * Seleccione el marco de trabajo en el cuadro desplegable.
+  * Seleccione la casilla de verificación **Habilitar Analytics**.
+  * Seleccione el marco de trabajo en el cuadro desplegable.
 
 * De forma opcional, vuelva a la configuración del marco de trabajo de Analytics para ajustar las asignaciones de variables.
 
@@ -329,8 +336,8 @@ Para agregar el servicio Analytics Cloud a un [sitio de comunidad existente](/he
 * Seleccione el icono de la comunidad Editar sitio.
 * Seleccione la opción CONFIGURACIÓN.
 * En la sección Analytics:
-   * Seleccione la casilla de verificación **Habilitar Analytics**.
-   * Elija el marco de trabajo en el cuadro desplegable.
+  * Seleccione la casilla de verificación **Habilitar Analytics**.
+  * Elija el marco de trabajo en el cuadro desplegable.
 
 * De forma opcional, vuelva a la configuración del marco de trabajo de Analytics para ajustar las asignaciones de variables.
 
@@ -634,18 +641,19 @@ El tema del foro es actualmente el único ejemplo de esta personalización:
 * En el editor principal, inicie sesión con privilegios administrativos.
 * Vaya a [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por ejemplo, [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
-* En el nodo `jcr:content` de la raíz del idioma (por ejemplo, `/content/sites/engage/en/jcr:content`), vaya al componente configurado para los informes de Analytics.Por ejemplo, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+* En el nodo `jcr:content` de la raíz del idioma (por ejemplo, `/content/sites/engage/en/jcr:content`), vaya al componente configurado para los informes de Analytics.
+Por ejemplo, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Observe los periodos de tiempo creados:
 
-   * `last30Days`
-   * `last90Days`
-   * `thisYear`
+  * `last30Days`
+  * `last90Days`
+  * `thisYear`
 
 * Observe el nodo `total`.
 
-   * Si se modifica la propiedad **`interval`**, se anulará el intervalo del importador de informes.
-   * El valor se establece en cuatro horas (14400 segundos) en segundos.
+  * Si se modifica la propiedad **`interval`**, se anulará el intervalo del importador de informes.
+  * El valor se establece en cuatro horas (14400 segundos) en segundos.
 
 ![informe-componente](assets/component-report.png)
 
