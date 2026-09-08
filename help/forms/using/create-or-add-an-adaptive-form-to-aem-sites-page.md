@@ -6,10 +6,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: f67bc6dce0f923294fba7d543eb3b170f992182f
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 92%
+source-wordcount: '3002'
+ht-degree: 90%
 
 ---
 
@@ -32,11 +32,11 @@ AEM Forms proporciona el contenedor del formulario adaptable y los componentes i
 
 ## Ventajas del uso del componente Contenedor de formulario adaptable en el editor de páginas o en el fragmento de experiencia de AEM
 
-AEM El uso del contenedor de formulario adaptable en el editor de páginas de permite crear experiencias de captura de datos sin problemas dentro de una página de Sites mediante la potencia de los componentes de Forms adaptable, que incluyen comportamiento dinámico, validaciones, integración de datos, generación de documentos de registro y automatización de procesos empresariales. También le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios, lo que mejora la experiencia general de creación y administración de formularios. Vamos a explorar algunas de estas características:
+El uso del contenedor de formulario adaptable en el editor de páginas de AEM permite crear experiencias de captura de datos sin problemas dentro de una página de Sites gracias a la potencia de los componentes de Forms adaptable, que incluyen comportamiento dinámico, validaciones, integración de datos, generación de documentos de registro y automatización de procesos empresariales. También le permite utilizar varias funciones de las páginas de AEM Sites, como versiones, segmentación, traducción y administrador de varios sitios, lo que mejora la experiencia general de creación y administración de formularios. Vamos a explorar algunas de estas características:
 
-* **Versiones:** Las páginas de AEM Sites ofrecen [sólidas capacidades de versiones](/help/sites-authoring/working-with-page-versions.md), lo que le permite realizar un seguimiento y administrar diferentes versiones de los formularios. Esto le permite realizar cambios y mejoras en los formularios al tiempo que se mantiene la capacidad de revertir a versiones anteriores si es necesario. El control de versiones garantiza un enfoque controlado y organizado del desarrollo y la evolución de los formularios.
-* **Segmentación (integración con Adobe Target):** Con las funcionalidades de segmentación de páginas de AEM Sites, también puede [personalizar la experiencia del formulario para diferentes audiencias](/help/sites-administering/target.md). Al aprovechar los segmentos de usuario y los criterios de segmentación, puede adaptar el contenido, diseño o comportamiento del formulario a grupos específicos de usuarios. Esto le permite proporcionar una experiencia de formulario personalizada y relevante, lo que aumenta las tasas de participación y conversión.
-* **Traducción: Integración perfecta de** AEM Sites [con los servicios de traducción](/help/sites-administering/translation.md), lo que le permite traducir fácilmente formularios a varios idiomas. Esta función simplifica el proceso de localización y garantiza que los formularios sean accesibles para una audiencia global. Puede administrar las traducciones de forma eficaz dentro de los proyectos de traducción de AEM, lo que reduce el tiempo y el esfuerzo necesarios para la asistencia con formularios multilingües. Consulte la sección de consideraciones para obtener más información sobre la traducción.
+* **Versiones:** Las páginas de AEM Sites ofrecen [sólidas capacidades de versiones](/help/sites-authoring/working-with-page-versions.md), lo que le permite realizar un seguimiento y administrar diferentes versiones de los formularios. Esto le permite realizar cambios y mejoras en los formularios al tiempo que se mantiene la capacidad de restablecer versiones anteriores si es necesario. El control de versiones garantiza un enfoque controlado y organizado del desarrollo y la evolución de los formularios.
+* **Segmentación (integración con Adobe Target):** Con las funcionalidades de segmentación de páginas de AEM Sites, también puede [personalizar la experiencia del formulario para diferentes públicos](/help/sites-administering/target.md). Al aprovechar los segmentos de usuario y los criterios de segmentación, puede adaptar el contenido, diseño o comportamiento del formulario a grupos específicos de usuarios. Esto le permite proporcionar una experiencia de formulario personalizada y relevante, lo que aumenta las tasas de participación y conversión.
+* **Traducción: Integración perfecta de** AEM Sites [con los servicios de traducción](/help/sites-administering/translation.md), lo que le permite traducir fácilmente formularios a varios idiomas. Esta función simplifica el proceso de localización y garantiza que los formularios sean accesibles para un público global. Puede administrar las traducciones de forma eficaz dentro de los proyectos de traducción de AEM, lo que reduce el tiempo y el esfuerzo necesarios para la asistencia con formularios multilingües. Consulte la sección de consideraciones para obtener más información sobre la traducción.
 * **Administración de varios sitios y Live Copy:** AEM Sites proporciona [Funciones de administración de varios sitios y Live Copy](/help/sites-administering/msm.md) sólidas, lo que permite crear y administrar varios sitios web en un único entorno. Ahora esta función le permite reutilizar formularios en diferentes sitios, lo que garantiza la consistencia y reduce los esfuerzos de duplicación. Con el control y la administración centralizados, puede mantener y actualizar de forma eficaz los formularios en varios sitios web.
 * **Temáticas:** Las páginas de AEM Sites proporcionan un marco de trabajo para diseñar y mantener estilos visuales coherentes en varias páginas web. Estas definen colores, fuentes, hojas de estilo y otros elementos visuales que contribuyen a la apariencia general del sitio web. [Puede utilizar las temáticas diseñadas para una página de AEM Sites para un formulario adaptable, lo que ahorra tiempo y esfuerzo](/help/sites-authoring/style-system.md).
 * **Etiquetado:** las páginas de AEM Sites le permiten [asignar etiquetas a una página, a un recurso o a otro contenido](/help/sites-authoring/tags.md). Las etiquetas son palabras clave o etiquetas de metadatos que proporcionan una forma de categorizar y organizar el contenido en función de criterios específicos. Puede asignar una o más etiquetas a páginas, recursos o a cualquier otro elemento de contenido dentro de AEM para mejorar la búsqueda y la clasificación de los archivos.
@@ -72,13 +72,13 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 Asegúrese de que los [componentes principales de Forms adaptable estén habilitados para su entorno](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=es).
 
-+++
++++ 
 
-+++  Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites y de la página de Fragmento de experiencia.
++++  Añada bibliotecas de cliente de formularios adaptables a los componentes de la página de AEM Sites y de la página de Fragmento de experiencia. 
 
 Para habilitar la funcionalidad completa del componente Contenedor de formularios adaptables, añada las bibliotecas de cliente Customheaderlibs y Customfooterlibs a la página de AEM Sites mediante la canalización de implementación. Para añadir las bibliotecas:
 
-1. AEM Inicie sesión en la instancia de autor de la y abra CRX DE. La dirección URL predeterminada de una instancia de autor que se ejecuta localmente es `http://localhost:4502/crx/de`.
+1. Inicie sesión en la instancia de autor de AEM y abra CRX DE. La dirección URL predeterminada de una instancia de autor que se ejecuta localmente es `http://localhost:4502/crx/de`.
 
 1. Abra el archivo `/apps/[your-sites-project]/components/page/customheaderlibs.html` y añada el siguiente código al archivo:
 
@@ -88,6 +88,10 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
        <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
        </sly> 
    ```
+
+   >[!NOTE]
+   >
+   >`core.forms.components.runtime.all` incluye todos los componentes predeterminados (OOTB). En su lugar, cree una biblioteca de cliente personalizada que incluya solo los componentes que forman parte de la directiva de diseño y que se van a incluir en el formulario, y agréguela a la página.
 
 1. Abra el archivo `/apps/[your-sites-project]/components/page/customfooterlibs.html` y añada el siguiente código al archivo:
 
@@ -116,9 +120,9 @@ Para habilitar la funcionalidad completa del componente Contenedor de formulario
        </sly> 
    ```
 
-1. Repita los pasos anteriores para todas las instancias de autor y Publish de su entorno.
+1. Repita los pasos anteriores para todas las instancias de autor y publicación del entorno.
 
-+++
++++ 
 
 +++ Habilitar el contenedor de formularios adaptables
 
@@ -202,7 +206,7 @@ Una acción de envío permite elegir el destino de los datos capturados mediante
 
 ## Configurar un esquema o un modelo de datos de formulario para un formulario {#configure-schema-or-data-model-for-form}
 
-Puede utilizar el modelo de datos del formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido.
+Puede utilizar el modelo de datos de formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido.
 
 Antes de conectar un formulario a un esquema o a un modelo de datos de formulario
 
