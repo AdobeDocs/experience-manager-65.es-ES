@@ -127,9 +127,9 @@ Revise los requisitos mínimos del sistema que aparecen en la tabla siguiente pa
 ### Novedades {#what-is-new-july}
 
 * Componentes principales de CIF v2
-   * Configuraciones simplificadas y mejoradas para URL de PDP/PLP y SEO
-   * Indicador visual para datos de productos clasificados en el modo de creación para una mejor visibilidad de los próximos cambios
-   * Nuevo componente de mapa del sitio para páginas de contenido y comercio
+  * Configuraciones simplificadas y mejoradas para URL de PDP/PLP y SEO
+  * Indicador visual para datos de productos clasificados en el modo de creación para una mejor visibilidad de los próximos cambios
+  * Nuevo componente de mapa del sitio para páginas de contenido y comercio
 
 * Compatibilidad con [Adobe Commerce AI Product Recommendations, con tecnología Adobe AI](https://business.adobe.com/ai/adobe-genai.html) en AEM Storefront y recomendaciones predefinidas o creadas sobre la marcha
 
