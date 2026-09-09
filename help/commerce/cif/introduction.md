@@ -8,7 +8,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '891'
 ht-degree: 88%
 
 ---
@@ -75,8 +75,8 @@ Conecte el ecosistema (por ejemplo, la solución de comercio) con Experience Clo
 CIF admite clientes con patrones de integración estandarizados basados en prácticas recomendadas. Esto ayuda a los clientes a tener éxito hoy y tener la flexibilidad para crecer con el cliente y adaptarse a los requisitos futuros:
 
 * Elimina los desafíos típicos relacionados con las integraciones de catálogos de productos que pueden producirse. Por ejemplo:
-   * Problemas de rendimiento con mayor volumen o complejidad del catálogo
-   * No tener acceso a los datos clasificados
-   * Necesidad de experiencias y datos de productos en tiempo real
+  * Problemas de rendimiento con mayor volumen o complejidad del catálogo
+  * No tener acceso a los datos clasificados
+  * Necesidad de experiencias y datos de productos en tiempo real
 * La creciente madurez digital hace necesaria la administración de la experiencia. CIF incluye capacidades de administración de experiencia de producto que se pueden incorporar gradualmente sin necesidad de un esfuerzo adicional en TI.
 * Listo para el omnicanal: CIF admite una variedad de tecnologías de puntos de contacto (del lado del servidor, híbridas, del lado del cliente) con patrones, aceleradores y componentes principales.

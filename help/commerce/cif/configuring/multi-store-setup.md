@@ -1,6 +1,6 @@
 ---
 title: Configuración de varias tiendas de Commerce
-description: Obtenga información sobre cómo asignar varias vistas de tiendas de Adobe Commerce AEM a la lista de vistas de la tienda de. Esto permite que los proyectos admitan casos de uso de varios inquilinos y multilingües.
+description: Obtenga información sobre cómo asignar varias vistas de tiendas de Adobe Commerce a AEM. Esto permite que los proyectos admitan casos de uso de varios inquilinos y multilingües.
 sub-product: Commerce
 doc-type: technical-video
 activity: setup
@@ -11,34 +11,34 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 15%
+source-wordcount: '416'
+ht-degree: 11%
 
 ---
 
 # Configuración de varias tiendas de Commerce {#multi-store}
 
-AEM CIF AEM Los componentes principales de la se pueden utilizar en varias estructuras de sitio de la y la implementación de cliente de GraphQL subyacente se puede conectar a diferentes tiendas de Adobe Commerce o vistas de tiendas. Esto permite que los proyectos implementen configuraciones complejas de varias tiendas y sitios.
+Los componentes principales de AEM CIF se pueden utilizar en varias estructuras del sitio de AEM y la implementación de cliente de GraphQL subyacente se puede conectar a diferentes tiendas de Adobe Commerce o vistas de tiendas. Esto permite que los proyectos implementen configuraciones complejas de varias tiendas y sitios.
 
 Un tutorial en vídeo que detalla las opciones para integrar varias vistas de la tienda Adobe Commerce con Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/32819/?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-AEM Las funciones de administración de varios sitios de Live Copy y de copia de idioma se utilizan con el Commerce integration framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
+Las funciones de administración de varios sitios de AEM de Live Copy y de copia de idioma se utilizan con Commerce integration framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
 
-AEM La configuración recomendada es utilizar una relación 1:1 entre el sitio de y la vista de la tienda de Adobe Commerce.
+La configuración recomendada es utilizar una relación 1:1 entre el sitio de AEM y la vista de la tienda de Adobe Commerce.
 
-AEM AEM CIF Para conectar un sitio de y los componentes principales de la a una vista de tienda dedicada, siga los pasos a continuación:
+Para conectar un sitio de AEM y los componentes principales de AEM CIF también a una vista de tienda dedicada, siga los pasos a continuación:
 
 ## Configuración {#configuration}
 
-1. Configure varias tiendas y vistas de tiendas según el patrón descrito en [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es)
+1. Configure varias tiendas y vistas de tiendas según el patrón descrito en [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
-2. AEM Asegúrese de que funcione la conexión entre y Adobe Commerce.
+2. Asegúrese de que funcione la conexión entre AEM y Adobe Commerce.
 
 3. Cree una configuración secundaria de la configuración del CIF de Cloud Service siguiendo estos pasos:
 
-   * AEM En la página de inicio, vaya a Herramientas > General > [Explorador de configuración](/help/sites-administering/configurations.md#using-configuration-browser)
+   * En AEM, vaya a Herramientas > General > [Explorador de configuración](/help/sites-administering/configurations.md#using-configuration-browser)
    * Seleccione la configuración base que ha creado
    * Cree una configuración siguiendo los pasos descritos anteriormente en el punto 2
 
@@ -58,7 +58,7 @@ AEM AEM CIF Para conectar un sitio de y los componentes principales de la a una 
 
 ## Recursos adicionales
 
-* [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es)
-* [Componentes principales del CIF de AEM: configuración de varias tiendas y sitios](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [Uso del administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=es)
+* [Sitios web, tiendas y vistas de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [Componentes principales de AEM CIF: configuración de varias tiendas y sitios](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
+* [Uso del Administrador de varios sitios](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-administering/msm.md)

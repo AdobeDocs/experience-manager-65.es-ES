@@ -1,5 +1,5 @@
 ---
-title: Notas de la versión 2022 de AEM Commerce y contenido de
+title: Notas de la versión 2022 de AEM Content and Commerce
 description: Contenido de Adobe Experience Manager y notas de la versión de Commerce 2022.
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 solution: Experience Manager,Commerce
@@ -7,8 +7,8 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 38%
+source-wordcount: '962'
+ht-degree: 33%
 
 ---
 
@@ -16,21 +16,21 @@ ht-degree: 38%
 
 ## Descripción general de los requisitos del sistema
 
-CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguiente para la versión del sistema que está utilizando actualmente o que planea utilizar en el futuro.
+Revise los requisitos mínimos del sistema que aparecen en la tabla siguiente para la versión de CIF que está utilizando o que planea utilizar en el futuro.
 
 | Componente | Requisitos del sistema |
 |:-------|:-----:|
-| CIF complemento de | AEM Mínimo: 6.5.7, Adobe Commerce 2.3.5 Esquemas de GraphQL |
-| CIF Componentes principales | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
-| Tipo de archivo del proyecto AEM | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+| Complemento de CIF | Mínimo: AEM 6.5.7, Adobe Commerce 2.3.5 Esquemas de GraphQL |
+| Componentes principales de CIF | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
+| Arquetipo del proyecto AEM | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
 ## Fecha de versión: septiembre de 2022
 
 | Componente | Versión | Detalles |
 |:-------|:-----:|---------------------:|
-| CIF complemento de | 2022.09.20.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.09.20.00.zip) |
-| CIF Componentes principales | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
-| CIF Sitio de referencia de Venia en | 2022.09.02 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.09.02) |
+| Complemento de CIF | 2022.09.20.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.09.20.00.zip) |
+| Componentes principales de CIF | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
+| Sitio de referencia de Venia en CIF | 2022.09.02 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.09.02) |
 
 ### Novedades {#what-is-new-september}
 
@@ -43,28 +43,28 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 | Componente | Versión | Detalles |
 |:-------|:-----:|---------------------:|
-| CIF complemento de | 2022.08.02.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.08.02.00.zip) |
+| Complemento de CIF | 2022.08.02.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.08.02.00.zip) |
 
 ### Novedades {#what-is-new-july}
 
-* AEM AEM Asociación de páginas de productos a productos y categorías a través de las propiedades de página de la página de productos más información general en la cabina de productos
+* Asociación de páginas de AEM a productos y categorías a través de las propiedades de página de AEM, además de información general sobre la cabina de productos
   ![asociación de páginas de la cabina de productos](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Fecha de versión: junio de 2022
 
 | Componente | Versión | Detalles |
 |:-------|:-----:|---------------------:|
-| CIF complemento de | 2022.07.05.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
-| CIF Componentes principales | 2.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
-| CIF Sitio de referencia de Venia en | 2022.07.04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
+| Complemento de CIF | 2022.07.05.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
+| Componentes principales de CIF | 2.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
+| Sitio de referencia de Venia en CIF | 2022.07.04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
 
 ### Novedades {#what-is-new-june}
 
-* AEM Ahora, el enriquecimiento del catálogo de productos admite páginas de productos, lo que permite a los autores administrar la asociación entre páginas y productos.
+* El enriquecimiento del catálogo de productos ahora admite páginas de AEM, lo que permite a los autores administrar la asociación página - producto.
 
-* CIF Varias mejoras en los componentes principales de la
+* Varias mejoras en los componentes principales de CIF
 
-### Corrección de errores {#bug-fixes-june}
+### Correcciones de errores {#bug-fixes-june}
 
 * Añadir token de inicio de sesión a la recuperación de precios del lado del cliente
 
@@ -74,9 +74,9 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 | Componente | Versión | Detalles |
 |:-------|:-----:|---------------------:|
-| CIF complemento de | 2022.05.31.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.05.31.00.zip) |
-| CIF Componentes principales | 2.9.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.9.0) |
-| CIF Sitio de referencia de Venia en | 2022.05.30 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.05.30) |
+| Complemento de CIF | 2022.05.31.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.05.31.00.zip) |
+| Componentes principales de CIF | 2.9.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.9.0) |
+| Sitio de referencia de Venia en CIF | 2022.05.30 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.05.30) |
 
 ### Novedades {#what-is-new-may}
 
@@ -88,7 +88,7 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 * Mejorar la compatibilidad con las sobrescrituras de configuración del cliente GQL (por ejemplo, establecer el comportamiento de almacenamiento en caché personalizado)
 
-### Corrección de errores {#bug-fixes-may}
+### Correcciones de errores {#bug-fixes-may}
 
 * El campo de selección de varios valores muestra el segundo producto y los productos adicionales como no válidos
 
@@ -98,9 +98,9 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 | Componente | Versión | Detalles |
 |:-------|:-----:|---------------------:|
-| CIF complemento de | 2022.04.28.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.04.28.00.zip) |
-| CIF Componentes principales | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
-| CIF Sitio de referencia de Venia en | 28.4.2022 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
+| Complemento de CIF | 2022.04.28.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.04.28.00.zip) |
+| Componentes principales de CIF | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
+| Sitio de referencia de Venia en CIF | 2022.04.28 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
 
 ### Novedades {#what-is-new-april}
 
@@ -116,9 +116,9 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 | Componente | Versión | Detalles |
 |:-------|:-----:|---------------------:|
-| CIF complemento de | 2022.02.24.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.02.24.00.zip) |
-| CIF Componentes principales | 2.6.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) |
-| CIF Sitio de referencia de Venia en | 24.02.2022 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.02.24) |
+| Complemento de CIF | 2022.02.24.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.02.24.00.zip) |
+| Componentes principales de CIF | 2.6.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) |
+| Sitio de referencia de Venia en CIF | 2022.02.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.02.24) |
 
 ### Novedades {#what-is-new-march}
 
@@ -132,18 +132,18 @@ CIF Revise los requisitos mínimos del sistema que aparecen en la tabla siguient
 
 | Componente | Versión | Detalles |
 |:-------|:-----:|---------------------:|
-| CIF complemento de | 2022.01.20.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.01.20.00.zip) |
-| CIF Componentes principales | 2.5.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.5.0) |
-| CIF Sitio de referencia de Venia en | 2022.01.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.01.27) |
+| Complemento de CIF | 2022.01.20.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.01.20.00.zip) |
+| Componentes principales de CIF | 2.5.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.5.0) |
+| Sitio de referencia de Venia en CIF | 2022.01.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.01.27) |
 
 ### Novedades {#what-is-new-january}
 
 * Componentes myAccount mejorados
 * El componente Recomendación de producto admite tipos de página adicionales (página de inicio, carro de compras, confirmación de pedido)
 * **Lista de deseos**
-   * Los visitantes con sesión iniciada pueden añadir productos a una lista de deseos
-   * Es posible administrar la lista de deseos y sus productos a través de myAccount
-   * El botón Añadir a la lista de deseos se puede activar o desactivar en un nivel de componente mediante una directiva (por ejemplo, teaser de productos, detalles de productos
-   * Disponible como componente principal y en la AEM Venia Storefront
+  * Los visitantes con sesión iniciada pueden añadir productos a una lista de deseos
+  * Es posible administrar la lista de deseos y sus productos a través de myAccount
+  * El botón Añadir a la lista de deseos se puede habilitar o deshabilitar en un nivel de componente mediante una directiva (por ejemplo, teaser de productos, detalles de productos
+  * Disponible como componente principal y en la AEM Venia Storefront
 
 ![Lista de deseos](/help/assets/CIF/wishlist.png)
