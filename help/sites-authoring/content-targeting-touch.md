@@ -14,9 +14,7 @@ source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 71%
-
 ---
-
 # Creación de contenido segmentado mediante el modo Segmentación{#authoring-targeted-content-using-targeting-mode}
 
 Con el modo de segmentación puede crear contenido de destino para AEM. El modo segmentación y el componente de Target proporcionan herramientas para crear contenido para experiencias:
@@ -26,7 +24,7 @@ Con el modo de segmentación puede crear contenido de destino para AEM. El modo 
 * Añada o elimine experiencias de una actividad.
 * Realice pruebas A/B y convierta a los ganadores (solo Adobe Target).
 * Añada ofertas a una experiencia creando ofertas o utilizando ofertas de una biblioteca.
-* Configure objetivos y supervise el rendimiento.
+* Configure objetivos y monitorice el rendimiento.
 * Simule la experiencia del usuario.
 * Para obtener más personalización, configure el componente de Target.
 
