@@ -8,14 +8,12 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 61cce7cd8290156bec6dcc351a59093f545a4ec7
+exl-id: f704b58a-7bd8-401e-8d7e-2cc3b580c570
+source-git-commit: d2ae4817720cae92b038789804124e0c2465f9c8
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 1%
-
+source-wordcount: '672'
+ht-degree: 6%
 ---
-
-
 # Mitigación de vulnerabilidades de Spring Framework para AEM Forms en JEE
 
 Este documento proporciona instrucciones para abordar dos vulnerabilidades críticas del marco de trabajo de primavera que afectan a AEM Forms en JEE:
@@ -34,9 +32,9 @@ Este documento proporciona instrucciones para abordar dos vulnerabilidades crít
 
 | Versión de AEM Forms | Acción necesaria |
 |-------------------|-----------------|
-| 6.5.22.0 | 1. [Descargue la revisión para su entorno](/help/release-notes/aem-forms-hotfix.md). </br> 2. Para instalar esta corrección, siga las instrucciones para [instalar Service Pack en un formulario de AEM en JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). |
+| 6.5.22.0 | &#x200B;1. [Descargue la revisión para su entorno](/help/release-notes/aem-forms-hotfix.md). </br> 2. Para instalar esta corrección, siga las instrucciones para [instalar Service Pack en un formulario de AEM en JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). |
 | 6.5.17.0 - 6.5.21.0 | [Aplicar pasos de mitigación manuales](#manual-mitigation-steps). |
-| 6.5 - 6.5.16.0 | 1. [Instale el Service Pack más reciente](/help/release-notes/release-notes.md)<br>2. [Implemente la solución adecuada](#version-specific-solutions) según su versión actualizada. |
+| 6.5 - 6.5.16.0 | &#x200B;1. [Instale el Service Pack más reciente](/help/release-notes/release-notes.md)<br>2. [Implemente la solución adecuada](#version-specific-solutions) según su versión actualizada. |
 
 > **Nota**: AEM Forms solo admite oficialmente los seis Service Packs más recientes. Los usuarios con versiones anteriores deben actualizar primero al Service Pack más reciente y, a continuación, instalar la revisión necesaria.
 
@@ -68,16 +66,16 @@ Al trabajar con una implementación independiente:
    1. Navegue hasta `[Adobe_Experience_Manager_Forms installation directory]/deploy`.
    1. Abra el archivo `adobe-core-<appserver>.ear` con una herramienta de administración de archivos. Donde `<appserver>` puede ser JBoss, WebLogic o WebSphere, según su entorno:
    - **Para JBoss:** Vaya a la carpeta `ear/lib` y elimine los siguientes archivos JAR:
-- `spring-core-<version>.jar`
-- `spring-web-<version>.jar`
+     - `spring-core-<version>.jar`
+     - `spring-web-<version>.jar`
 
    - **Para WebLogic o WebSphere:** Elimine los siguientes archivos JAR de la raíz de EAR:
-- `spring-core-<version>.jar`
-- `spring-web-<version>.jar`
+     - `spring-core-<version>.jar`
+     - `spring-web-<version>.jar`
 
    - **Para todos los servidores de aplicaciones:** En el nivel raíz de `adobe-core-<appserver>.ear`, abra el archivo `adobe-dscf.jar` y edite el archivo `META-INF/MANIFEST.MF` para quitar cualquier referencia a los siguientes archivos JAR:
-- `spring-core-<version>.jar`
-- `spring-web-<version>.jar`
+     - `spring-core-<version>.jar`
+     - `spring-web-<version>.jar`
 
 1. Reemplazar archivos JAR de la distribución Geode:
    1. Navegue hasta `<Adobe_Experience_Manager_Forms>/lib/caching/lib`
@@ -99,11 +97,11 @@ Al trabajar con una implementación independiente:
    - Busque y extraiga el archivo `META-INF/MANIFEST.MF`
    - Edite el archivo MANIFEST.MF en un editor de texto
    - Busque la sección &quot;Ruta de clase&quot; y actualice todas las referencias del marco de trabajo de primavera:
-      - `spring-core-<version>.jar` a `spring-core-6.1.14.jar`
-      - `spring-web-<version>.jar` a `spring-web-6.1.14.jar`
-      - `spring-context-<version>.jar` a `spring-context-6.1.14.jar`
-      - `spring-beans-<version>.jar` a `spring-beans-6.1.14.jar`
-      - `spring-jcl-<version>.jar` a `spring-jcl-6.1.14.jar`
+     - `spring-core-<version>.jar` a `spring-core-6.1.14.jar`
+     - `spring-web-<version>.jar` a `spring-web-6.1.14.jar`
+     - `spring-context-<version>.jar` a `spring-context-6.1.14.jar`
+     - `spring-beans-<version>.jar` a `spring-beans-6.1.14.jar`
+     - `spring-jcl-<version>.jar` a `spring-jcl-6.1.14.jar`
    - Guarde el archivo MANIFEST.MF modificado
    - Reemplace el MANIFEST.MF original en el JAR por su versión actualizada
    - Guarde el archivo JAR
