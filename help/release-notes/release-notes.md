@@ -1,18 +1,16 @@
 ---
-title: Notas de la versión para  [!DNL Adobe Experience Manager]  6.5
+title: Notas de la versión para [!DNL Adobe Experience Manager] 6.5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: b30bc6ce844cacce396a09c5195c48083b96a9ec
+source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
 workflow-type: tm+mt
-source-wordcount: '7444'
-ht-degree: 21%
-
+source-wordcount: '7679'
+ht-degree: 20%
 ---
-
 # Notas de la versión del Service Pack de [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
 
 <!-- For an itemized list of all issues found in this release information, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
@@ -64,6 +62,8 @@ Los fragmentos de contenido y la API de GraphQL también reciben mejoras de fiab
   > Para actualizar JBoss EAP de 7.4.10 a 7.4.23, consulte:
   > * [Actualice JBoss EAP de 7.4.10 a 7.4.23 para AEM Forms en JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) para entornos independientes.
   > * [Actualizar el clúster EAP JBoss de 7.4.10 a 7.4.23 para AEM Forms en JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) para entornos de clúster.
+
+* **Solicitud de credenciales de modo rápido del Administrador de configuración (LCM):** Al configurar AEM Forms en JEE mediante el Administrador de configuración (LCM) en modo rápido, LCM ahora muestra una nueva pantalla que le pide que especifique las credenciales de administrador de AEM durante la configuración en lugar de usar las credenciales predeterminadas integradas. Este cambio está disponible a través del [hotfix](/help/release-notes/aem-forms-hotfix.md) para AEM Service Pack 6.5.25.0. Para ver los pasos de configuración, consulte [Instalación e implementación de AEM Forms en JEE mediante JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_es). (FORMS-26365)
 
 ## Se han corregido problemas en el Service Pack 25 {#fixed-issues}
 
@@ -607,6 +607,10 @@ Fragmentos de contenido: la previsualización falla debido a la protección DoS 
 Los siguientes problemas incluyen una revisión disponible para su descarga e instalación. Puede [descargar e instalar la revisión](/help/release-notes/aem-forms-hotfix.md) para resolver los siguientes problemas:
 
 * **NPR-44100** Después de instalar el paquete de servicio 25 de AEM 6.5 en implementaciones WAR/JEE (incluido AEM Forms en JEE), el paquete `com.adobe.cq.screens.sessions` permanece en el estado Instalado y nunca se activa. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Service Pack 6.5.25.0.
+* **FORMS-26802** Después de la protección de autenticación de SOAP SDK, el Administrador de configuración de LCM, Workbench y Designer no se pueden conectar al servidor AEM Forms en JEE con el error `ALC-LCM-200-001` porque el extremo `/soap/sdk` rechaza las solicitudes no autenticadas. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Service Pack 6.5.25.0.
+* **FORMS-26679** En AEM Forms Document Security, las cookies de autenticación se pierden después de una redirección de Microsoft Entra ID (MFA), lo que provoca el error &quot;Es posible que las cookies no estén habilitadas&quot; al abrir documentos protegidos por directivas. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Service Pack 6.5.25.0.
+* **FORMS-26617** En AEM Forms en JEE con WebLogic, la configuración de la base de datos mediante Configuration Manager falla con &quot;No se encontró un controlador adecuado&quot; al usar el controlador JDBC 12.10.0 de Microsoft SQL Server. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Service Pack 6.5.25.0.
+* Los archivos PDF de **FORMS-27869** se abren lentamente después de instalar la última versión de AEM Forms 6.5. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Service Pack 6.5.25.0.
 * **FORMS-23491** Las implementaciones de AEM Forms 6.5.24.0 JEE (JBoss, WebLogic, WebSphere) se ven afectadas por CVE-2025-64775, una vulnerabilidad de denegación de servicio de Apache Struts en el procesamiento de solicitudes de varias partes. Para resolver este problema, [descargue e instale la revisión](/help/release-notes/aem-forms-hotfix.md) para AEM Service Pack 6.5.24.0.
 * **FORMS-14926** Después de instalar AEM Forms JEE Service Pack 21 (6.5.21.0), si encuentra entradas duplicadas de Jars Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` en la carpeta `<AEM_Forms_Installation>/lib/caching/lib`, realice los siguientes pasos para resolver el problema:
 

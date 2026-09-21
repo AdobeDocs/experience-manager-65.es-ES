@@ -8,14 +8,13 @@ topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 2856a470ceb45fbdc6852c016386c465ee1b4930
 workflow-type: tm+mt
-source-wordcount: '5557'
-ht-degree: 0%
-
+source-wordcount: '5599'
+ht-degree: 1%
 ---
-
 # Invocar AEM Forms mediante la API de Java {#invoking-aem-forms-using-the-javaapi}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -62,6 +61,10 @@ Para invocar mediante programación un servicio de AEM Forms mediante la API de 
 >(Solo llave en mano) Inicie el servidor de AEM Forms con el comando `standalone.bat -b <Server IP> -c lc_turnkey.xml` para especificar una IP de servidor para EJB
 
 * Servidor de aplicaciones J2EE en el que está implementado AEM Forms.
+
+>[!NOTE]
+>
+>Si encuentra problemas al usar archivos de biblioteca de cliente de AEM Forms como `adobe-livecycle-client.jar`, consulte la página [revisiones de AEM Forms](/help/release-notes/aem-forms-hotfix.md) para ver si una revisión proporciona una versión actualizada del archivo. Si es así, utilice el archivo actualizado en la ruta de clase del proyecto.
 
 ### Archivos JAR específicos del servicio {#service-specific-jar-files}
 
@@ -223,7 +226,7 @@ En la tabla siguiente se enumeran los archivos JAR que dependen del modo de cone
   <tr>
    <th><p>Archivo</p> </th>
    <th><p>Descripción</p> </th>
-   <th><p>Lugar de residencia</p> </th>
+   <th><p>Ubicación</p> </th>
   </tr>
  &lt;/thead align="left"&gt;
  <tbody>
@@ -422,21 +425,21 @@ Para invocar correctamente un servicio de AEM Forms, establezca las siguientes p
 
 * **DSC_DEFAULT_EJB_ENDPOINT:** Si está utilizando el modo de conexión EJB, este valor representa la URL del servidor de aplicaciones J2EE en el que está implementado AEM Forms. Para invocar AEM Forms de forma remota, especifique el nombre del servidor de aplicaciones J2EE en el que está implementado AEM Forms. Si la aplicación cliente se encuentra en el mismo servidor de aplicaciones J2EE, puede especificar `localhost`. En función del servidor de aplicaciones J2EE en el que esté implementado AEM Forms, especifique uno de los siguientes valores:
 
-   * JBoss: `https://<ServerName>:8080 (default port)`
-   * WebSphere: `iiop://<ServerName>:2809 (default port)`
-   * WebLogic: `t3://<ServerName>:7001 (default port)`
+  * JBoss: `https://<ServerName>:8080 (default port)`
+  * WebSphere: `iiop://<ServerName>:2809 (default port)`
+  * WebLogic: `t3://<ServerName>:7001 (default port)`
 
 * **DSC_DEFAULT_SOAP_ENDPOINT**: Si está usando el modo de conexión de SOAP, este valor representa el extremo al que se envía una solicitud de invocación. Para invocar AEM Forms de forma remota, especifique el nombre del servidor de aplicaciones J2EE en el que está implementado AEM Forms. Si la aplicación cliente se encuentra en el mismo servidor de aplicaciones J2EE, puede especificar `localhost` (por ejemplo, `http://localhost:8080`).
 
-   * El valor de puerto `8080` es aplicable si la aplicación J2EE es JBoss. Si el servidor de aplicaciones J2EE es IBM® WebSphere®, utilice el puerto `9080`. Igualmente, si el servidor de aplicaciones J2EE es WebLogic, utilice el puerto `7001`. (Estos valores son valores de puerto predeterminados. Si cambia el valor del puerto, utilice el número de puerto aplicable).
+  * El valor de puerto `8080` es aplicable si la aplicación J2EE es JBoss. Si el servidor de aplicaciones J2EE es IBM® WebSphere®, utilice el puerto `9080`. Igualmente, si el servidor de aplicaciones J2EE es WebLogic, utilice el puerto `7001`. (Estos valores son valores de puerto predeterminados. Si cambia el valor del puerto, utilice el número de puerto aplicable).
 
 * **DSC_TRANSPORT_PROTOCOL**: Si está usando el modo de conexión EJB, especifique `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` para este valor. Si está usando el modo de conexión de SOAP, especifique `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
 * **DSC_SERVER_TYPE**: Especifica el servidor de aplicaciones J2EE en el que AEM Forms está implementado. Los valores válidos son `JBoss`, `WebSphere`, `WebLogic`.
 
-   * Si establece esta propiedad de conexión en `WebSphere`, el valor `java.naming.factory.initial` se establece en `com.ibm.ws.naming.util.WsnInitCtxFactory`.
-   * Si establece esta propiedad de conexión en `WebLogic`, el valor `java.naming.factory.initial` se establece en `weblogic.jndi.WLInitialContextFactory`.
-   * Del mismo modo, si establece esta propiedad de conexión en `JBoss`, el valor `java.naming.factory.initial` se establece en `org.jnp.interfaces.NamingContextFactory`.
-   * Puede establecer la propiedad `java.naming.factory.initial` en un valor que cumpla sus requisitos si no desea utilizar los valores predeterminados.
+  * Si establece esta propiedad de conexión en `WebSphere`, el valor `java.naming.factory.initial` se establece en `com.ibm.ws.naming.util.WsnInitCtxFactory`.
+  * Si establece esta propiedad de conexión en `WebLogic`, el valor `java.naming.factory.initial` se establece en `weblogic.jndi.WLInitialContextFactory`.
+  * Del mismo modo, si establece esta propiedad de conexión en `JBoss`, el valor `java.naming.factory.initial` se establece en `org.jnp.interfaces.NamingContextFactory`.
+  * Puede establecer la propiedad `java.naming.factory.initial` en un valor que cumpla sus requisitos si no desea utilizar los valores predeterminados.
 
   >[!NOTE]
   >
@@ -474,12 +477,12 @@ Para establecer las propiedades de conexión, realice las siguientes tareas:
    * El valor de enumeración `ServiceClientFactoryProperties.DSC_SERVER_TYPE`
    * Valor de cadena que especifica el servidor de aplicaciones J2EE que aloja AEM Forms (por ejemplo, si AEM Forms está implementado en JBoss, especifique `JBoss`).
 
-      1. Para establecer la propiedad de conexión `DSC_CREDENTIAL_USERNAME`, invoque el método `setProperty` del objeto `java.util.Properties` y pase los siguientes valores:
+     1. Para establecer la propiedad de conexión `DSC_CREDENTIAL_USERNAME`, invoque el método `setProperty` del objeto `java.util.Properties` y pase los siguientes valores:
 
    * El valor de enumeración `ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME`
    * Valor de cadena que especifica el nombre de usuario necesario para invocar AEM Forms
 
-      1. Para establecer la propiedad de conexión `DSC_CREDENTIAL_PASSWORD`, invoque el método `setProperty` del objeto `java.util.Properties` y pase los siguientes valores:
+     1. Para establecer la propiedad de conexión `DSC_CREDENTIAL_PASSWORD`, invoque el método `setProperty` del objeto `java.util.Properties` y pase los siguientes valores:
 
    * El valor de enumeración `ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD`
    * Un valor de cadena que especifica el valor de contraseña correspondiente
@@ -886,7 +889,7 @@ Determine el tipo MIME de un objeto `com.adobe.idp.Document` invocando el métod
 <table>
  <thead>
   <tr>
-   <th><p>Tipo MIME</p></th>
+   <th><p>Tipo de MIME</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>

@@ -5,13 +5,11 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 15a33b28a5148473cf7942328a85c594249a3571
+source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 81%
-
+source-wordcount: '4751'
+ht-degree: 69%
 ---
-
 # Revisiones de Adobe Experience Manager Forms{#aem-form-hotfix}
 
 Este artículo enumera las correcciones esenciales implementadas para abordar los problemas conocidos, mejorar la estabilidad del sistema y mejorar el rendimiento general de AEM Forms.
@@ -19,6 +17,8 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
 >[!NOTE]
 >
 > Las revisiones están diseñadas para ser acumulativas e incluyen todas las correcciones anteriores. Al aplicar la revisión más reciente a una versión, no solo se aborda el problema más reciente, sino que también incorpora todas las correcciones de errores y mejoras anteriores.
+>
+> Como la revisión es acumulativa, al aplicarla mientras se encuentra en un Service Pack anterior, la implementación se actualiza con todas las correcciones publicadas hasta el Service Pack en el que está integrada la revisión, no solo con los problemas enumerados para esa revisión.
 
 ## Revisiones de AEM Forms {#hotfix-for-aem-forms}
 
@@ -28,6 +28,52 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
     <td><strong>Fecha</strong></td>
     <td><strong>Vínculo de descarga de revisión (vínculo de distribución de software de AEM)</strong></td>
     <td><strong>Problemas solucionados</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <strong>18 de septiembre de 2026</strong><br>
+      <em>Se aplica a:</em> implementaciones de AEM 6.5.25.0 Forms JEE (JBoss, WebLogic, WebSphere)<br>
+    </td>
+    <td>
+    <p><strong>Para instalar esta revisión, complete estos pasos en orden:</strong></p>
+    <p><strong>Paso 1: Instalar el parche</strong></p>
+    <ul>
+    <strong>JBoss:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.25.0-win-jboss.zip">revisión para el paquete de servicio 6.5.25.0 de AEM en el servidor JEE de Windows para JBoss</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-jboss.tar.gz">revisión para AEM Service Pack 6.5.25.0 en Linux para el servidor JEE de JBoss</a></li>
+    <strong>WebLogic:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.25.0-win-weblogic.zip">revisión para AEM Service Pack 6.5.25.0 en el servidor JEE de Windows para Weblogic</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-weblogic.tar.gz">revisión para AEM Service Pack 6.5.25.0 en Linux para el servidor JEE de Weblogic</a></li>
+    <strong>WebSphere:</strong>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix2-6.5.25.0-win-websphere.zip">revisión para el paquete de servicio 6.5.25.0 de AEM en el servidor JEE de Windows para Websphere</a></li>
+    <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-websphere.tar.gz">revisión para AEM Service Pack 6.5.25.0 en Linux para el servidor JEE de Websphere</a></li>
+    </ul>
+    <p>Siga las <a href="/help/release-notes/jee-patch-installer-65.md">instrucciones estándar de instalación de parches de AEM Forms JEE</a>.</p>
+    <p><strong>Paso 2: Instalar el paquete de corrección de vulnerabilidades</strong></p>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/SP25Bundles_VULN-36670.zip">Paquete de correcciones de vulnerabilidades para AEM 6.5.25.0</a></li>
+    </ul>
+    <ol>
+    <li>Abra la consola OSGi en <code>http://&lt;host&gt;:&lt;port&gt;/lc/system/console/bundles</code>.</li>
+    <li>Haga clic en <strong>Instalar/actualizar</strong>.</li>
+    <li>Seleccione las casillas de verificación <strong>Iniciar paquete</strong> y <strong>Actualizar paquetes</strong>.</li>
+    <li>Haga clic en <strong>Elegir archivo</strong> y, a continuación, cargue el paquete descargado.</li>
+    <li>Espere hasta que el registro se establezca y el paquete se muestre como <strong>Activo</strong>.</li>
+    </ol>
+    <p><strong>Paso 3: Actualización del instalador de AEM Forms Workbench</strong></p>
+    <p>Debe actualizar al instalador más reciente de AEM Forms Workbench (6.5.25.0). Para obtener más información, consulte <a href="https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases">Versiones de AEM Forms</a>.</p>
+    <p><strong>Paso 4: Actualización de archivos de biblioteca de cliente (desarrolladores)</strong></p>
+    <p>Este parche incluye una actualización importante de la biblioteca de cliente de SDK <code>adobe-livecycle-client.jar</code> (consulte <a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">Inclusión de archivos de biblioteca Java de AEM Forms</a>). Si el proyecto usa este archivo JAR, actualice <code>adobe-livecycle-client.jar</code> en la ruta de clase del proyecto después de instalar la revisión. La versión más reciente está disponible en <code>&lt;AEM_Forms_Installation_dir&gt;\sdk\client-libs\common\adobe-livecycle-client.jar</code>.</p>
+    <p>La revisión es acumulativa, por lo que puede aplicarla en el Service Pack 25 (6.5.25.0) o en un Service Pack anterior sin instalar primero el Service Pack 25.</p>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-26802</b> Después de la protección de autenticación de SOAP SDK, el Administrador de configuración de LCM, Workbench y Designer no se pueden conectar al servidor con el error <code>ALC-LCM-200-001</code> (el extremo <code>/soap/sdk</code> rechaza una solicitud no autenticada). Esta revisión restaura la conectividad y mantiene la autenticación forzada en el punto de conexión.</li>
+    <li><b>FORMS-26679</b> En AEM Forms Document Security, las cookies de autenticación se pierden después de una redirección de Microsoft Entra ID (MFA), lo que provoca el error "Es posible que las cookies no estén habilitadas" al abrir documentos protegidos por directivas. Este hotfix mantiene las cookies de sesión en el redireccionamiento entre sitios.</li>
+    <li><b>FORMS-26617</b> En WebLogic, la configuración de la base de datos mediante el Administrador de configuración produce el error "No se encontró un controlador adecuado" al usar el controlador JDBC 12.10.0 de Microsoft SQL Server. Esta revisión restaura la configuración correcta de la fuente de datos.</li>
+    <li>Los archivos PDF de <b>FORMS-27869</b> se abren lentamente después de instalar la última versión de AEM Forms 6.5. Esta revisión mejora el rendimiento de la apertura del documento.</li>
+    </ul>
+    </td>
   </tr>
   <tr>
     <td>
@@ -53,7 +99,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
     <td>
     <ul>
     <strong>Jboss:</strong>
-    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/es/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/jboss/adobe-aem-forms-jee-service-pack-6.5.24.0-win-jboss.zip">revisión para el paquete de servicio 6.5.24.0 de AEM en el servidor JEE de Windows para JBoss</a></li>
+    <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/jboss/adobe-aem-forms-jee-service-pack-6.5.24.0-win-jboss.zip">revisión para el paquete de servicio 6.5.24.0 de AEM en el servidor JEE de Windows para JBoss</a></li>
     <li>Linux: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/es/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/jboss/adobe-aem-forms-jee-service-pack-6.5.24.0-linux-jboss.gz">revisión para AEM Service Pack 6.5.24.0 en Linux para el servidor JEE de JBoss</a></li>
     <strong>Lógica Web:</strong>
     <li>Windows: <a href="https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/es/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-115/weblogic/adobe-aem-forms-jee-service-pack-6.5.24.0-win-weblogic.zip">revisión para AEM Service Pack 6.5.24.0 en el servidor JEE de Windows para Weblogic</a></li>
