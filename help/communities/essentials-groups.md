@@ -18,7 +18,7 @@ ht-degree: 1%
 
 La función de grupos de comunidad es la capacidad de una subcomunidad para que los usuarios autorizados de los entornos de publicación y creación la creen dinámicamente dentro de un sitio de comunidad.
 
-A partir del paquete de funciones 1](deploy-communities.md#latestfeaturepack) de las comunidades [es posible anidar grupos dentro de otros grupos.
+A partir del paquete de funciones 1[&#128279;](deploy-communities.md#latestfeaturepack) de las comunidades es posible anidar grupos dentro de otros grupos.
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
