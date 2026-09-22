@@ -11,16 +11,14 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '399'
 ht-degree: 5%
-
 ---
-
 # Desarrollo de comunidades  {#developing-communities}
 
 ## Información general {#overview}
 
-Las comunidades de Adobe Experience Manager AEM () simplifican la creación y personalización de funciones de la comunidad, como foros, grupos de usuarios, blogs, preguntas y respuestas, calendarios, comentarios, revisiones, votaciones, clasificaciones y asignaciones. Estas funciones hacen que el contenido generado por el usuario (UGC) se introduzca en el entorno de publicación.
+Las comunidades de Adobe Experience Manager (AEM) simplifican la creación y personalización de funciones de la comunidad como foros, grupos de usuarios, blogs, preguntas y respuestas, calendarios, comentarios, revisiones, votaciones, clasificaciones y asignaciones. Estas funciones hacen que el contenido generado por el usuario (UGC) se introduzca en el entorno de publicación.
 
 La base de un [sitio de comunidad](overview.md#communitiessites) es el [marco de trabajo de componente social](scf.md) (SCF). La creación de un sitio de la comunidad comienza con la selección de una [plantilla del sitio de la comunidad](sites-console.md) compuesta por [funciones de la comunidad](functions.md).
 

@@ -11,14 +11,12 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # Crear una página de muestra {#create-a-sample-page}
 
-AEM Como en las comunidades de 6.1, la forma más sencilla de crear una página de muestra es crear un sitio de comunidad simple que consista simplemente en una función Página.
+En las comunidades de AEM 6.1, la forma más sencilla de crear una página de muestra es crear un sitio de comunidad sencillo que consista simplemente en una función Page.
 
 Esto incluye un componente parsys para que pueda [habilitar componentes para la creación](basics.md#accessing-communities-components).
 
@@ -41,19 +39,19 @@ Desde la navegación global en una instancia de autor, seleccione **[!UICONTROL 
 * Seleccionar `Create button`
 * INFORMACIÓN BÁSICA
 
-   * `Name`: plantilla de una sola página
-   * `Description`: una plantilla que consta de una sola función Página.
-   * Seleccionar `Enabled`
+  * `Name`: plantilla de una sola página
+  * `Description`: una plantilla que consta de una sola función Página.
+  * Seleccionar `Enabled`
 
 ![editor-plantilla-sitio](assets/site-template-editor.png)
 
 * ESTRUCTURA
 
-   * Arrastre una función `Page` al Generador de plantillas
-   * Para Detalles de la función de configuración, introduzca
+  * Arrastre una función `Page` al Generador de plantillas
+  * Para Detalles de la función de configuración, introduzca
 
-      * `Title`: una sola página
-      * `URL`: página
+    * `Title`: una sola página
+    * `URL`: página
 
 ![estructura-editor-de-plantillas-de-sitio](assets/site-template-editor1.png)
 
@@ -72,22 +70,22 @@ Después de crear la plantilla del sitio, en navegación global, seleccione **[!
 
 * Paso `1 - Site Template`
 
-   * `Title`: sitio de comunidad simple
-   * `Description`: sitio de la comunidad que consta de una sola página para experimentación.
-   * `Community Site Root: (leave blank)`
-   * `Community Site Base Language: English`
-   * `Name`: ejemplo
+  * `Title`: sitio de comunidad simple
+  * `Description`: sitio de la comunidad que consta de una sola página para experimentación.
+  * `Community Site Root: (leave blank)`
+  * `Community Site Base Language: English`
+  * `Name`: ejemplo
 
-      * url = http://localhost:4502/content/sites/sample
+    * url = http://localhost:4502/content/sites/sample
 
-      * `Template`: elija `Single Page Template`
+    * `Template`: elija `Single Page Template`
 
-     ![create-community-site-template](assets/create-community-site-template.png)
+    ![create-community-site-template](assets/create-community-site-template.png)
 
 * Seleccionar `Next`
 * Paso `2 - Design`
 
-   * Seleccione cualquier diseño
+  * Seleccione cualquier diseño
 
 * Seleccionar `Next`
 * Seleccionar `Next`
@@ -98,7 +96,7 @@ Después de crear la plantilla del sitio, en navegación global, seleccione **[!
 
   ![create-community-site](assets/create-community-site.png)
 
-## Publish el sitio {#publish-the-site}
+## Publicación del sitio {#publish-the-site}
 
 ![sitio de publicación](assets/publish-site.png)
 
@@ -116,6 +114,6 @@ La dirección URL es [http://localhost:4502/editor.html/content/sites/sample/en.
 
 En la página de inicio simple, es posible ver lo que está preconfigurado a través de las funciones y plantillas de la comunidad, y jugar con la adición y configuración de componentes de la comunidad.
 
-## Ver sitio en Publish {#view-site-on-publish}
+## Ver sitio al publicar {#view-site-on-publish}
 
 Después de publicar la página, ábrala en la [instancia de publicación](http://localhost:4503/content/sites/sample/en.html) para experimentar con las características como visitante anónimo del sitio, miembro con sesión iniciada o administrador. El vínculo Administración visible en el entorno de creación no aparece en el entorno de publicación a menos que un administrador inicie sesión.
