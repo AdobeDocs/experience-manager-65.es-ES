@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '442'
 ht-degree: 1%
-
 ---
-
 # Elementos esenciales del grupo de comunidad  {#community-group-essentials}
 
 La función de grupos de comunidad es la capacidad de una subcomunidad para que los usuarios autorizados de los entornos de publicación y creación la creen dinámicamente dentro de un sitio de comunidad.
@@ -34,7 +32,7 @@ A partir del paquete de funciones 1[&#128279;](deploy-communities.md#latestfeatu
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.hbs.communitygroups</td>
+   <td>cq.social.hbs.community.groups</td>
   </tr>
   <tr>
    <td> <strong>plantillas</strong></td>
@@ -61,7 +59,7 @@ A partir del paquete de funciones 1[&#128279;](deploy-communities.md#latestfeatu
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.hbs.communitygroups</td>
+   <td>cq.social.hbs.community.groups</td>
   </tr>
   <tr>
    <td> <strong>plantillas</strong></td>
@@ -78,7 +76,7 @@ A partir del paquete de funciones 1[&#128279;](deploy-communities.md#latestfeatu
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API del grupo de la comunidad](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [API del grupo de comunidad](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
 * [Puntos finales de grupo de comunidad](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 

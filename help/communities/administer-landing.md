@@ -1,6 +1,6 @@
 ---
 title: Sitios de comunidades
-description: Obtenga información acerca de los aspectos básicos de las comunidades de Adobe Experience Manager AEM () para administradores que ya están familiarizados con sus funciones básicas.
+description: Obtenga información acerca de los aspectos básicos de las comunidades de Adobe Experience Manager (AEM) para administradores que ya están familiarizados con sus funciones básicas.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 4%
-
+source-wordcount: '453'
+ht-degree: 5%
 ---
-
 # Sitios de comunidades {#communities-sites}
 
 Esta sección es para aquellos que administran AEM Communities y supone que están familiarizados con las funciones de AEM Communities.
@@ -33,22 +31,22 @@ Para obtener información general y tutoriales de introducción, visite:
 
 * Comunidades [consolas](consoles.md)
 
-   * [Sites](sites-console.md)
+  * [Sites](sites-console.md)
 
-      * [Grupos (subcomunidades)](groups.md)
+    * [Grupos (subcomunidades)](groups.md)
 
-   * [Moderación](moderation.md)
-   * [Administración de miembros y grupos](members.md)
-   * [Informes](reports.md)
+  * [Moderación](moderation.md)
+  * [Administración de miembros y grupos](members.md)
+  * [Informes](reports.md)
 
 * Comunidades [*herramientas*](tools.md):
 
-   * [Plantillas de sitios](sites.md)
-   * [Plantillas de grupo](tools-groups.md)
-   * [Funciones de la comunidad](functions.md)
-   * [Configuración de almacenamiento](srp-config.md)
-   * [Guía de componentes](components-guide.md)
-   * [Insignias](badges.md)
+  * [Plantillas de sitios](sites.md)
+  * [Plantillas de grupo](tools-groups.md)
+  * [Funciones de la comunidad](functions.md)
+  * [Configuración de almacenamiento](srp-config.md)
+  * [Guía de componentes](components-guide.md)
+  * [Insignias](badges.md)
 
 
 ### Contenido generado por el usuario {#user-generated-content}
@@ -68,7 +66,7 @@ Una característica principal de AEM Communities es la generación de contenido 
 * [Servicio de túnel](deploy-communities.md#tunnel-service-on-author): permite el acceso a los miembros y grupos de miembros del lado de publicación desde el entorno de creación.
 * [Consolas de miembros y grupos](members.md): permite crear y administrar miembros y grupos de miembros del lado de publicación desde el entorno de creación.
 * [Sincronización de usuarios](sync.md): para sincronizar miembros y grupos de miembros en varias instancias de publicación.
-* [Iniciar sesión en medios sociales con Facebook y el Twitter](social-login.md): permite que los visitantes del sitio se conviertan en miembros de la comunidad con sus credenciales de Facebook o Twitter.
+* [Iniciar sesión en medios sociales con Facebook y Twitter](social-login.md): la capacidad de los visitantes del sitio para convertirse en miembros de la comunidad usando sus credenciales de Facebook o Twitter.
 * [Puntuación e insignias](implementing-scoring.md): capacidad para que se asignen insignias a fin de identificar las funciones de un miembro y para que los miembros obtengan insignias mediante su participación en la comunidad.
 * [Notificaciones](notifications.md): capacidad para que se notifique a los miembros la actividad que siguen.
 * [Suscripciones](subscriptions.md): capacidad para que los miembros interactúen con la comunidad mediante correo electrónico externo.
@@ -82,7 +80,7 @@ La naturaleza del trabajo con contenido de la comunidad influye en la estructura
 
 * [Topologías recomendadas para comunidades](topologies.md)
 
-AEM Es importante instalar la versión más reciente de Communities en la plataforma de la:
+Es importante instalar la versión más reciente de Communities en la plataforma AEM:
 
 * [Último paquete de funciones de Communities](deploy-communities.md#latestfeaturepack)
 

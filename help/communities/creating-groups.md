@@ -1,6 +1,6 @@
 ---
 title: Grupos de la comunidad
-description: Descubra cómo la función de grupos de comunidad permite crear dinámicamente una subcomunidad dentro de un sitio de comunidad mediante usuarios autorizados en Publish y Author.
+description: Descubra cómo la función de grupos de comunidad permite crear dinámicamente una subcomunidad dentro de un sitio de comunidad mediante usuarios autorizados en Publicar y Autor.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '565'
 ht-degree: 1%
-
 ---
-
 # Grupos de la comunidad {#community-groups}
 
 La función de grupos de comunidad permite que usuarios autorizados (miembros y autores de la comunidad) creen dinámicamente una subcomunidad en un sitio de comunidad desde los entornos de publicación y creación.

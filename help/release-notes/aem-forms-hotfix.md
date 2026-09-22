@@ -1,18 +1,20 @@
 ---
-title: Revisiones de AEM Forms
-description: Proporciona información sobre cómo descargar e instalar una revisión para AEM Forms.
+title: Revisiones para AEM 6.5 Forms
+description: Proporciona información sobre cómo descargar e instalar una revisión para AEM 6.5 Forms. Para AEM 6.5 LTS, consulte el artículo Revisiones de AEM Forms 6.5 LTS.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
+source-git-commit: 8133fcba5caddc7c0054766a92a32e28bfbc6b21
 workflow-type: tm+mt
-source-wordcount: '4751'
-ht-degree: 69%
+source-wordcount: '4809'
+ht-degree: 68%
 ---
-# Revisiones de Adobe Experience Manager Forms{#aem-form-hotfix}
+# Revisiones de Adobe Experience Manager 6.5 Forms{#aem-form-hotfix}
 
 Este artículo enumera las correcciones esenciales implementadas para abordar los problemas conocidos, mejorar la estabilidad del sistema y mejorar el rendimiento general de AEM Forms.
+
+Este artículo se aplica a AEM 6.5 Forms (no LTS). Para implementaciones de AEM 6.5 LTS, consulte [Revisiones de Adobe Experience Manager Forms 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes).
 
 >[!NOTE]
 >
@@ -73,6 +75,7 @@ Este artículo enumera las correcciones esenciales implementadas para abordar lo
     <li><b>FORMS-26617</b> En WebLogic, la configuración de la base de datos mediante el Administrador de configuración produce el error "No se encontró un controlador adecuado" al usar el controlador JDBC 12.10.0 de Microsoft SQL Server. Esta revisión restaura la configuración correcta de la fuente de datos.</li>
     <li>Los archivos PDF de <b>FORMS-27869</b> se abren lentamente después de instalar la última versión de AEM Forms 6.5. Esta revisión mejora el rendimiento de la apertura del documento.</li>
     </ul>
+    <p><strong>Compilación:</strong> AEMForms-6.5.0-0134</p>
     </td>
   </tr>
   <tr>

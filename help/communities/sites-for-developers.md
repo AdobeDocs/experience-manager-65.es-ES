@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 2%
-
+source-wordcount: '520'
+ht-degree: 1%
 ---
-
 # Elementos esenciales del sitio de comunidad {#community-site-essentials}
 
 ## Plantilla de sitio personalizada {#custom-site-template}
@@ -72,13 +70,13 @@ Identifique la plantilla personalizada agregando una propiedad `page-template` a
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Asegúrese de **Guardar todo** y replicar el código personalizado en todas las instancias de Adobe Experience Manager AEM () (el código personalizado no se incluye cuando el contenido del sitio de la comunidad se publica desde la consola).
+Asegúrese de **Guardar todo** y replicar el código personalizado en todas las instancias de Adobe Experience Manager (AEM) (el código personalizado no se incluye cuando el contenido del sitio de la comunidad se publica desde la consola).
 
 La práctica recomendada para replicar el código personalizado es [crear un paquete](../../help/sites-administering/package-manager.md#creating-a-new-package) e implementarlo en todas las instancias.
 
 ## Exportar un sitio de la comunidad {#exporting-a-community-site}
 
-AEM Una vez creado un sitio de la comunidad, es posible exportar el sitio como un paquete de almacenado en el Administrador de paquetes y disponible para descargar y cargar.
+Una vez creado un sitio de la comunidad, es posible exportar el sitio como un paquete de AEM almacenado en el Administrador de paquetes y disponible para descargar y cargar.
 
 Está disponible en la [consola Sitios de comunidades](sites-console.md#exporting-the-site).
 
@@ -106,9 +104,9 @@ Para identificar el ID único del sitio asociado al sitio de la comunidad median
 
   Por ejemplo, si `rep:principalName = community-enable-nrh9h-members`
 
-   * **nombre del sitio** = *habilitar*
-   * **Id. de sitio** = *nrh9h*
-   * **ID de sitio único** = *enable-nrh9h*
+  * **nombre del sitio** = *habilitar*
+  * **Id. de sitio** = *nrh9h*
+  * **ID de sitio único** = *enable-nrh9h*
 
 ### Contenido generado por el usuario {#user-generated-content}
 
