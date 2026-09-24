@@ -1,6 +1,6 @@
 ---
 title: Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización
-description: AEM Aprenda a utilizar la metodología de reindexación sin conexión para reducir el tiempo de inactividad del sistema al realizar una actualización de la.
+description: Aprenda a utilizar la metodología de reindexación sin conexión para reducir el tiempo de inactividad del sistema al realizar una actualización de AEM.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
@@ -11,30 +11,28 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 0%
-
+source-wordcount: '1384'
+ht-degree: 2%
 ---
-
 # Uso de la reindexación sin conexión para reducir el tiempo de inactividad durante una actualización {#offline-reindexing-to-reduce-downtime-during-upgrades}
 
 ## Introducción {#introduction}
 
 Uno de los desafíos clave para actualizar Adobe Experience Manager es el tiempo de inactividad asociado con el entorno de creación cuando se realiza una actualización in situ. Los autores de contenido no podrán acceder al entorno durante una actualización. Por lo tanto, es deseable minimizar la cantidad de tiempo que se tarda en realizar la actualización. En el caso de repositorios grandes, especialmente proyectos de AEM Assets, que suelen tener grandes almacenes de datos y un alto nivel de cargas de recursos por hora, la reindexación de índices de Oak tarda un porcentaje significativo del tiempo de actualización.
 
-En esta sección se describe cómo utilizar la herramienta ejecutada por Oak para reindexar el repositorio **antes de** que realice la actualización, reduciendo así la cantidad de tiempo de inactividad durante la actualización real. AEM Los pasos presentados se pueden aplicar a [índices Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) para las versiones 6.4 y posteriores de la aplicación.
+En esta sección se describe cómo utilizar la herramienta ejecutada por Oak para reindexar el repositorio **antes de** que realice la actualización, reduciendo así la cantidad de tiempo de inactividad durante la actualización real. Los pasos presentados se pueden aplicar a [índices Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) para las versiones AEM 6.4 y superiores.
 
 ## Información general {#overview}
 
-AEM Las nuevas versiones de la introducen cambios en las definiciones de índice de Oak a medida que se expande el conjunto de funciones. Los cambios en los índices de Oak AEM obligan a la reindexación al actualizar la instancia de. La reindexación es costosa para las implementaciones de recursos, ya que el texto de los recursos (por ejemplo, el texto del archivo pdf) se extrae y se indexa. Con los repositorios MongoMK, los datos se mantienen en la red, lo que aumenta aún más la cantidad de tiempo que tarda la reindexación.
+Las nuevas versiones de AEM introducen cambios en las definiciones de índice de Oak a medida que se expande el conjunto de funciones. Los cambios en los índices de Oak obligan a la reindexación al actualizar la instancia de AEM. La reindexación es costosa para las implementaciones de recursos, ya que el texto de los recursos (por ejemplo, el texto del archivo pdf) se extrae y se indexa. Con los repositorios MongoMK, los datos se mantienen en la red, lo que aumenta aún más la cantidad de tiempo que tarda la reindexación.
 
 El problema al que se enfrentan la mayoría de los clientes durante una actualización es la reducción del tiempo de inactividad. La solución es **omitir** la actividad de reindexación durante la actualización. Esto se puede lograr creando los nuevos índices **anteriores** a la actualización y después importándolos simplemente durante la actualización.
 
-## Aproximación {#approach}
+## Enfoque {#approach}
 
 ![extracción de texto para actualización y reindexación sin conexión](assets/offline-reindexing-upgrade-process.png)
 
-AEM La idea es crear el índice antes de la actualización, comparándolo con las definiciones de índice de la versión de la aplicación de destino utilizando la herramienta [Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md). El diagrama anterior muestra el método de reindexación sin conexión.
+La idea es crear el índice antes de la actualización, comparándolo con las definiciones de índice de la versión de AEM de destino con la herramienta [Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md). El diagrama anterior muestra el método de reindexación sin conexión.
 
 Además, este es el orden de los pasos que se describen en el enfoque:
 
@@ -45,7 +43,7 @@ Además, este es el orden de los pasos que se describen en el enfoque:
 
 ### Extracción de texto {#text-extraction}
 
-AEM Para habilitar la indexación completa en los, el texto de los binarios, como el PDF, se extrae y se añade al índice. Esto suele ser un paso costoso en el proceso de indexación. La extracción de texto es un paso de optimización recomendado especialmente para reindexar repositorios de recursos, ya que almacenan un gran número de binarios.
+Para habilitar la indexación completa en AEM, el texto de los binarios como PDF se extrae y se añade al índice. Esto suele ser un paso costoso en el proceso de indexación. La extracción de texto es un paso de optimización recomendado especialmente para reindexar repositorios de recursos, ya que almacenan un gran número de binarios.
 
 ![extracción de texto para actualización y reindexación sin conexión](assets/offline-reindexing-upgrade-text-extraction.png)
 
@@ -105,11 +103,11 @@ Cree el índice Lucene sin conexión antes de la actualización. Si utiliza Mong
 
 Para crear el índice sin conexión, siga los siguientes pasos:
 
-**1. Genere definiciones de índice de Oak AEM Lucene para la versión de la aplicación de destino**
+**1. Generar definiciones de índice de Oak Lucene para la versión de AEM de destino**
 
-Volcar las definiciones de índice existentes. Las definiciones de índice que sufrieron cambios se generaron utilizando el paquete de repositorio de Adobe AEM Granite de la versión de destino y la versión de Oak-run.
+Volcar las definiciones de índice existentes. Las definiciones de índice que sufrieron cambios se generaron utilizando el paquete de repositorio Adobe Granite de la versión de AEM de destino y oak-run.
 
-AEM Para volcar la definición del índice desde la instancia de **source**, ejecute este comando:
+Para volcar la definición del índice desde la instancia de AEM **source**, ejecute este comando:
 
 >[!NOTE]
 >
@@ -119,9 +117,9 @@ AEM Para volcar la definición del índice desde la instancia de **source**, eje
 java -jar oak-run.jar index --fds-path <datastore path> <nodestore path> --index-definitions
 ```
 
-AEM Donde `datastore path` y `nodestore path` provienen de la instancia de origen **origen** de la instancia de.
+Donde `datastore path` y `nodestore path` son de la instancia de AEM **origen**.
 
-AEM A continuación, genere definiciones de índice a partir de la versión de **target** mediante el paquete de repositorio Granite de la versión de target.
+A continuación, genere definiciones de índice a partir de la versión de AEM **target** mediante el paquete de repositorio Granite de la versión de target.
 
 ```
 java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabbit.oak.index.IndexDefinitionUpdater --in indexing-definitions_source.json --out merge-index-definitions_target.json --initializer com.adobe.granite.repository.impl.GraniteContent
@@ -135,7 +133,7 @@ Los pasos anteriores crean un archivo JSON llamado `merge-index-definitions_targ
 
 **2. Crear un punto de comprobación en el repositorio**
 
-AEM Cree un punto de comprobación en la instancia de producción **source** con una duración larga. Esto debe hacerse antes de clonar el repositorio.
+Cree un punto de comprobación en la instancia de AEM **source** de producción con una larga duración. Esto debe hacerse antes de clonar el repositorio.
 
 Mediante la consola JMX ubicada en `http://serveraddress:serverport/system/console/jmx`, vaya a `CheckpointMBean` y cree un punto de comprobación con una duración suficiente (por ejemplo, 200 días). Para esto, invoque `CheckpointMBean#createCheckpoint` con `17280000000` como argumento para la duración en milisegundos.
 
@@ -149,7 +147,7 @@ Para obtener más información, consulte [creación de puntos de comprobación](
 
 **Realizar indexación sin conexión para las definiciones de índice generadas**
 
-La reindexación de Lucene se puede realizar sin conexión mediante oak-run. Este proceso crea datos de índice en el disco en `indexing-result/indexes`. AEM No **no** escribe en el repositorio y, por lo tanto, no requiere detener la instancia de ejecución de la. El almacén de texto creado se inserta en este proceso:
+La reindexación de Lucene se puede realizar sin conexión mediante oak-run. Este proceso crea datos de índice en el disco en `indexing-result/indexes`. **no** escribe en el repositorio y, por lo tanto, no requiere detener la instancia de AEM en ejecución. El almacén de texto creado se inserta en este proceso:
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
@@ -168,7 +166,7 @@ Encontrará más detalles técnicos en la [documentación de oak-run para la ind
 
 ### Importación de índices {#importing-indexes}
 
-AEM AEM Con la versión 6.4 y versiones más recientes, el usuario tiene la capacidad integrada para importar índices desde el disco en la secuencia de inicio de la aplicación. La carpeta `<repository>/indexing-result/indexes` está vigilada para detectar la presencia de datos de índice durante el inicio. AEM Puede copiar el índice creado previamente en la ubicación anterior durante el [proceso de actualización](in-place-upgrade.md#performing-the-upgrade) antes de comenzar con la nueva versión del JAR de **target** de la. AEM lo importa al repositorio y elimina el punto de comprobación correspondiente del sistema. Por lo tanto, se evita completamente un reíndice.
+Con AEM 6.4 y versiones más recientes, AEM tiene la capacidad integrada de importar índices desde el disco en la secuencia de inicio. La carpeta `<repository>/indexing-result/indexes` está vigilada para detectar la presencia de datos de índice durante el inicio. Puede copiar el índice creado previamente en la ubicación anterior durante el [proceso de actualización](in-place-upgrade.md#performing-the-upgrade) antes de comenzar con la nueva versión del JAR de AEM **target**. AEM lo importa al repositorio y elimina el punto de comprobación correspondiente del sistema. Por lo tanto, se evita completamente un reíndice.
 
 ## Sugerencias y solución de problemas adicionales {#troubleshooting}
 
@@ -180,7 +178,7 @@ Se recomienda clonar el sistema de producción y crear el índice sin conexión 
 
 ### Preparar un Runbook y una ejecución de prueba {#prepare-a-runbook-and-trial-run}
 
-Se recomienda preparar un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=es#building-the-upgrade-and-rollback-runbook) y realizar algunas pruebas antes de ejecutar la actualización en producción.
+Se recomienda preparar un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) y realizar algunas pruebas antes de ejecutar la actualización en producción.
 
 ### Modo de recorrido de documentos con indexación sin conexión {#doc-traversal-mode-with-offline-indexing}
 
