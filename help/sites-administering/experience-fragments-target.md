@@ -1,6 +1,6 @@
 ---
 title: Exportación de fragmentos de experiencias a Adobe Target
-description: Obtenga información sobre cómo exportar Fragmentos de experiencias de Adobe Experience Manager AEM () a Adobe Target.
+description: Obtenga información sobre cómo exportar fragmentos de experiencias de Adobe Experience Manager (AEM) a Adobe Target.
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -12,14 +12,12 @@ feature: Integration
 role: Admin
 source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 41%
-
+source-wordcount: '1487'
+ht-degree: 40%
 ---
-
 # Exportación de fragmentos de experiencias a Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
-Puede exportar [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md), creados en Adobe Experience Manager AEM (), a Adobe Target (Target). Luego pueden utilizarse como ofertas en actividades de Target para probar y personalizar experiencias a escala.
+Puede exportar [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) creados en Adobe Experience Manager (AEM) a Adobe Target (Target). Luego pueden utilizarse como ofertas en actividades de Target para probar y personalizar experiencias a escala.
 
 Hay tres opciones de formato disponibles para exportar un fragmento de experiencia a Adobe Target:
 
@@ -27,7 +25,7 @@ Hay tres opciones de formato disponibles para exportar un fragmento de experienc
 * JSON: Compatibilidad con entrega de contenido sin encabezado
 * HTML y JSON
 
-AEM Los fragmentos de experiencias se pueden exportar al espacio de trabajo predeterminado en Adobe Target o a espacios de trabajo definidos por el usuario para Adobe Target. Esto se hace con Adobe Developer Console AEM, para lo cual se debe [integrar con Adobe Target mediante IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+Los fragmentos de experiencias de AEM se pueden exportar al espacio de trabajo predeterminado en Adobe Target o a espacios de trabajo definidos por el usuario para Adobe Target. Esto se hace con Adobe Developer Console, para el cual AEM debe estar [integrado con Adobe Target mediante IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 
 >[!NOTE]
 >
@@ -55,7 +53,7 @@ AEM Los fragmentos de experiencias se pueden exportar al espacio de trabajo pred
 
 Se requieren varias acciones:
 
-1. AEM Tiene que [integrar con Adobe Target mediante el uso de IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+1. Tiene que [integrar AEM con Adobe Target mediante IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 
    >[!NOTE]
    >
@@ -63,7 +61,7 @@ Se requieren varias acciones:
    >
    >Las configuraciones anteriores se realizaron con [credenciales de JWT que ahora están sujetas a desaprobación en Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
-1. AEM AEM Los fragmentos de experiencias se exportan desde la instancia de autor de la, por lo que debe [Configurar el externalizador de vínculos de la instancia de autor](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) para garantizar que todas las referencias dentro del fragmento de experiencias se externalicen para la entrega web.
+1. Los fragmentos de experiencias se exportan desde la instancia de autor de AEM, por lo que debe [configurar el externalizador de vínculos de AEM](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) en la instancia de autor para garantizar que todas las referencias dentro del fragmento de experiencia se externalicen para la entrega web.
 
    >[!NOTE]
    >
@@ -113,7 +111,7 @@ Las opciones requeridas se pueden seleccionar en **Propiedades de página** de l
    >
    >El dominio externalizador es opcional.
    >
-   >AEM Se configura un externalizador de fechas cuando desea que el contenido exportado apunte a un dominio *publish* específico. AEM Para obtener más información, consulte [Configuración del externalizador de vínculos de](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >Se configura un externalizador de AEM cuando desea que el contenido exportado apunte a un dominio *publish* específico. Para obtener más información, consulte [Configuración del externalizador de vínculos de AEM](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
    >
    >Tenga en cuenta también que los dominios externalizadores solo son relevantes para el contenido del fragmento de experiencia que se envía a Target y no para los metadatos como Ver contenido de la oferta.
 
@@ -131,7 +129,7 @@ Las opciones requeridas se pueden seleccionar en **Propiedades de página** de l
 >
 >Debido a esto, el fragmento de experiencia, con todos los recursos relacionados, debe publicarse antes de exportarse a Target.
 
-AEM Para exportar un fragmento de experiencia de Target a Target (después de especificar la Configuración de nube):
+Para exportar un fragmento de experiencia de AEM a Target (después de especificar la configuración de nube):
 
 1. Vaya a la consola Fragmento de experiencias.
 1. Seleccione el fragmento de experiencia que desea exportar a target.
@@ -146,11 +144,11 @@ AEM Para exportar un fragmento de experiencia de Target a Target (después de es
    >
    >Si el fragmento de experiencia ya se ha exportado, seleccione **Actualización del estado en Adobe Target**.
 
-1. Haga clic en **Exportar sin publicar** o **Publish** según sea necesario.
+1. Haga clic en **Exportar sin publicar** o **Publicar** según sea necesario.
 
    >[!NOTE]
    >
-   >Al seleccionar **Publish**, se publica el fragmento de experiencia de inmediato y se envía a Target.
+   >Al seleccionar **Publicar**, se publica el fragmento de experiencia de inmediato y se envía a Target.
 
 1. Haga clic en **Aceptar** en el cuadro de diálogo de confirmación.
 
@@ -183,23 +181,23 @@ La eliminación de un fragmento de experiencia que ya se ha exportado a Target p
 Para evitar estas situaciones, haga lo siguiente:
 
 * Si el fragmento de experiencia no se está utilizando en una actividad, AEM permite al usuario eliminar el fragmento sin un mensaje de advertencia.
-* Si una actividad de Adobe Target AEM está utilizando el fragmento de experiencia, un mensaje de error advierte al usuario sobre las posibles consecuencias que tendrá la eliminación del fragmento en la actividad.
+* Si una actividad de Adobe Target está utilizando el fragmento de experiencia, un mensaje de error advierte al usuario de AEM de las posibles consecuencias que tendrá la eliminación del fragmento en la actividad.
 
   El mensaje de error de AEM no impide que el usuario elimine (a la fuerza) el fragmento de experiencia. Si se elimina el fragmento de experiencia:
 
-   * La oferta de Target con el fragmento de experiencia de AEM puede mostrar un comportamiento no deseado
+  * La oferta de Target con el fragmento de experiencia de AEM puede mostrar un comportamiento no deseado
 
-      * Es probable que la oferta se siga procesando, ya que el HTML del fragmento de experiencia se insertó en Target
-      * Puede que cualquier referencia en el fragmento de experiencia no funcione correctamente si también se eliminaron activos a los que se hace referencia en AEM.
+    * Es probable que la oferta se siga procesando, ya que el HTML del fragmento de experiencia se insertó en Target
+    * Puede que cualquier referencia en el fragmento de experiencia no funcione correctamente si también se eliminaron activos a los que se hace referencia en AEM.
 
-   * AEM Es imposible realizar más modificaciones en el Fragmento de experiencia, ya que el Fragmento de experiencia ya no existe en la.
+  * Es imposible realizar más modificaciones en el fragmento de experiencia, ya que el fragmento de experiencia ya no existe en AEM.
 
 
 ## Eliminación de ClientLibs de fragmentos de experiencias exportados a Target {#removing-clientlibs-from-fragments-exported-target}
 
 Los fragmentos de experiencias contienen etiquetas html completas y todas las bibliotecas de cliente (CSS/JS) necesarias para procesar el fragmento exactamente como lo creó el autor del contenido del fragmento de experiencia. Esto es por diseño.
 
-Cuando se utiliza una oferta de fragmento de experiencia con Adobe Target AEM en una página que está siendo entregada por, la página de destino ya contiene todas las bibliotecas de cliente necesarias. Además, el HTML superfluo en la oferta de Fragmento de experiencia tampoco es necesario (consulte [Consideraciones](#considerations)).
+Cuando se utiliza una oferta de fragmento de experiencia con Adobe Target en una página que AEM está entregando, la página de destino ya contiene todas las bibliotecas de cliente necesarias. Además, el HTML superfluo en la oferta de Fragmento de experiencia tampoco es necesario (consulte [Consideraciones](#considerations)).
 
 El siguiente es un pseudoejemplo del html de una oferta de fragmento de experiencia:
 
@@ -217,7 +215,7 @@ El siguiente es un pseudoejemplo del html de una oferta de fragmento de experien
 </html>
 ```
 
-AEM En un nivel superior, cuando se exporta un fragmento de experiencia a Adobe Target, lo hace utilizando varios selectores de Sling adicionales. Por ejemplo, la dirección URL del fragmento de experiencia exportado podría tener el siguiente aspecto (aviso `nocloudconfigs.atoffer`):
+En un nivel superior, cuando AEM exporta un fragmento de experiencia a Adobe Target, lo hace utilizando varios selectores de Sling adicionales. Por ejemplo, la dirección URL del fragmento de experiencia exportado podría tener el siguiente aspecto (aviso `nocloudconfigs.atoffer`):
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
@@ -227,7 +225,7 @@ El selector `nocloudconfigs` se define mediante HTL y se puede superponer copiá
 
 El selector `atoffer` se aplica después del procesamiento mediante [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Se puede utilizar para eliminar las bibliotecas de cliente.
 
-### Ejemplos {#example}
+### Ejemplo {#example}
 
 Para este propósito, vamos a ilustrar cómo hacerlo con `nocloudconfigs`.
 
@@ -269,7 +267,7 @@ El contenido de estos archivos es el siguiente:
 
 ### Consideraciones {#considerations}
 
-AEM AEM Si necesita admitir sitios de y sitios que no sean de mediante Ofertas de fragmentos de experiencias en Adobe Target, debe crear dos fragmentos de experiencias (dos tipos de plantillas diferentes):
+Si necesita admitir sitios de AEM y sitios que no sean de AEM mediante Ofertas de fragmentos de experiencias en Adobe Target, debe crear dos fragmentos de experiencias (dos tipos de plantillas diferentes):
 
 * Uno con la superposición para eliminar clientlibs/html extra
 

@@ -11,20 +11,18 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 0%
-
+source-wordcount: '534'
+ht-degree: 1%
 ---
-
 # Configuración del componente de vídeo {#configure-the-video-component}
 
 El [componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) le permite colocar un recurso de vídeo predefinido y listo para usar en su página.
 
-Para que se produzca la transcodificación adecuada, un administrador instala FFmpeg por separado. AEM Consulte [Instalar FFmpeg y configurar la configuración de la aplicación](#install-ffmpeg). Los administradores también [configuran perfiles de vídeo](#configure-video-profiles) para usarlos con elementos de HTML5.
+Para que se produzca la transcodificación adecuada, un administrador instala FFmpeg por separado. Consulte [Instalar FFmpeg y configurar AEM](#install-ffmpeg). Los administradores también [configuran perfiles de vídeo](#configure-video-profiles) para usarlos con elementos de HTML5.
 
 >[!CAUTION]
 >
->Este componente de base se ha desaprobado. El Adobe recomienda usar el [componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=es) en su lugar.
+>Este componente de base se ha desaprobado. Adobe recomienda usar el [componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=es) en su lugar.
 
 >[!CAUTION]
 >
@@ -32,22 +30,22 @@ Para que se produzca la transcodificación adecuada, un administrador instala FF
 
 ## Configuración de perfiles de vídeo {#configure-video-profiles}
 
-Para utilizar los elementos de HTML5, defina los perfiles de vídeo. Los elegidos aquí se utilizan por orden. Para acceder a, usa [Modo de diseño](/help/sites-authoring/default-components-designmode.md) (solo IU clásica) y selecciona la pestaña **[!UICONTROL Perfiles]**:
+Para utilizar elementos de HTML5, defina perfiles de vídeo. Los elegidos aquí se utilizan por orden. Para acceder a, usa [Modo de diseño](/help/sites-authoring/default-components-designmode.md) (solo IU clásica) y selecciona la pestaña **[!UICONTROL Perfiles]**:
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
 Desde este cuadro de diálogo, también puede configurar el diseño del componente de vídeo y los parámetros de [!UICONTROL Reproducción], [!UICONTROL Flash] y [!UICONTROL Avanzado].
 
-## AEM Instalación de FFmpeg y configuración de la {#install-ffmpeg}
+## Instalar FFmpeg y configurar AEM {#install-ffmpeg}
 
-El componente de vídeo se basa en el producto de código abierto de terceros FFmpeg para transcodificar vídeos. Descargado de [https://ffmpeg.org/](https://ffmpeg.org/). AEM Después de instalar FFmpeg, configure la configuración para utilizar un códec de audio específico y opciones específicas de tiempo de ejecución.
+El componente de vídeo se basa en el producto de código abierto de terceros FFmpeg para transcodificar vídeos. Descargado de [https://ffmpeg.org/](https://ffmpeg.org/). Después de instalar FFmpeg, configure AEM para que utilice un códec de audio específico y opciones de tiempo de ejecución específicas.
 
 Para instalar FFmpeg en **Windows**, siga estos pasos:
 
 1. Descargue el binario compilado como `ffmpeg.zip`.
 1. Desarchivar en una carpeta.
 1. Establezca la variable de entorno del sistema `PATH` en &lt;*your-ffmpeg-location*>`\bin`.
-1. AEM Reinicie la sesión.
+1. Reinicie AEM.
 
 Para instalar FFmpeg en **macOS X**, siga estos pasos:
 
@@ -62,7 +60,7 @@ Para instalar FFmpeg en **macOS X 10.6**, usando la versión precompilada, siga 
 1. Desarchivarlo en el directorio `/usr/local`.
 1. En la consola, ejecute `sudo ln -s /usr/local/Cellar/ffmpeg/0.6/bin/ffmpeg /usr/bin/ffmpeg`. Cambie la ruta según corresponda.
 
-AEM Para **configurar la configuración de**, siga estos pasos:
+Para **configurar AEM**, siga estos pasos:
 
 >[!NOTE]
 >
@@ -84,4 +82,4 @@ AEM Para **configurar la configuración de**, siga estos pasos:
 
 >[!NOTE]
 >
->AEM Los cambios en los modelos de flujo de trabajo predeterminados no se conservan al actualizar la instancia de. El Adobe recomienda copiar los modelos de flujo de trabajo modificados antes de editarlos. Por ejemplo, copie el modelo [!UICONTROL DAM Update Asset] incorporado antes de editar el paso de transcodificación FFmpeg en el modelo [!UICONTROL DAM Update Asset] para elegir los nombres de perfil de vídeo que existían antes de la actualización. AEM A continuación, puede superponer el nodo `/apps` para permitir recuperar de forma predeterminada los cambios personalizados del modelo de datos.
+>Los cambios en los modelos de flujo de trabajo predeterminados no se conservan al actualizar la instancia de AEM. Adobe recomienda copiar los modelos de flujo de trabajo modificados antes de editarlos. Por ejemplo, copie el modelo [!UICONTROL DAM Update Asset] incorporado antes de editar el paso de transcodificación FFmpeg en el modelo [!UICONTROL DAM Update Asset] para elegir los nombres de perfil de vídeo que existían antes de la actualización. A continuación, puede superponer el nodo `/apps` para permitir que AEM recupere los cambios personalizados del modelo predeterminado.

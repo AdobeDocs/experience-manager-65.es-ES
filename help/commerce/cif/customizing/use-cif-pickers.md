@@ -12,11 +12,9 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '632'
 ht-degree: 0%
-
 ---
-
 # Seleccionadores de creación de contenido y Commerce de AEM {#cif-pickers}
 
 La creación de contenido y Commerce de AEM proporciona un conjunto de herramientas de creación para ayudar a los autores y especialistas en marketing de AEM a trabajar de forma eficaz con los datos y catálogos de productos de comercio. El selector de productos y el selector de categorías forman parte del complemento de CIF y los utilizan los componentes principales de CIF. Los proyectos pueden utilizar estos selectores en cualquier cuadro de diálogo de componente para seleccionar productos o categorías.

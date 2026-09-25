@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1306'
 ht-degree: 0%
-
 ---
-
 # Uso del resumen de críticas y comentarios (visualización) {#using-reviews-and-reviews-summary-display}
 
 El componente `Reviews` es una combinación de [Comentarios](comments.md) y [Clasificación](rating.md) componentes listos para usar.
@@ -224,7 +222,7 @@ Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o admin
 
 Cuando el visitante del sitio inicia sesión, según la configuración, puede:
 
-* Post ofrece una nueva revisión
+* Publicar una nueva revisión
 * Editar su propia revisión
 * Eliminar su propia revisión
 * Marcar comentarios de críticas de otros usuarios

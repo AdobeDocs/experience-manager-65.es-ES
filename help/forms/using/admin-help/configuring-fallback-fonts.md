@@ -1,24 +1,24 @@
 ---
 title: Configurar fuentes de reserva
 description: Obtenga información sobre cómo configurar fuentes de reserva para AEM Forms. Puede utilizar el archivo FontManagerResources.properties para asignar manualmente las fuentes predeterminadas a las fuentes de reserva.
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: PDF Generator
 exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '271'
 ht-degree: 2%
-
 ---
-
 # Configurar fuentes de reserva {#configuring-fallback-fonts}
 
-AEM Puede configurar manualmente el archivo FontManagerResources.properties para asignar las fuentes predeterminadas de los formularios de la fuente predeterminada a la reserva (o sustituto) si las fuentes predeterminadas no están disponibles en el servidor. Este archivo de propiedades se encuentra en el archivo adobe-fontmanager.jar.
+Puede configurar manualmente el archivo FontManagerResources.properties para asignar las fuentes predeterminadas de los formularios AEM Forms a una alternativa (o un sustituto) si las fuentes predeterminadas no están disponibles en el servidor. Este archivo de propiedades se encuentra en el archivo adobe-fontmanager.jar.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ AEM Puede configurar manualmente el archivo FontManagerResources.properties para
 1. Busque el archivo FontManagerResources.properties y ábralo en un editor de texto.
 1. Modifique las ubicaciones y los nombres de las fuentes genéricas y de reserva según sea necesario y guarde el archivo.
 
-   Las entradas de fuente del archivo FontManagerResources.properties son relativas al directorio *`[aem-forms root]`*/fonts. AEM Si especifica fuentes que no son fuentes de formularios predeterminadas, debe instalarlas dentro de esta estructura de directorios (ya sea en un directorio existente o en uno recién creado).
+   Las entradas de fuente del archivo FontManagerResources.properties son relativas al directorio *`[aem-forms root]`*/fonts. Si especifica fuentes que no son fuentes predeterminadas de formularios AEM Forms, debe instalarlas dentro de esta estructura de directorios (en un directorio existente o en uno recién creado).
 
    >[!NOTE]
    >
@@ -44,4 +44,4 @@ AEM Puede configurar manualmente el archivo FontManagerResources.properties para
 
 >[!NOTE]
 >
->AEM No utilice el Administrador de configuración para volver a empaquetar el archivo adobe-livecycle-`[appserver]`.ear, ya que sobrescribirá las modificaciones con los valores predeterminados de los formularios de la forma de la aplicación de la forma de la.
+>No utilice el Administrador de configuración para volver a empaquetar el archivo adobe-livecycle-`[appserver]`.ear, ya que sobrescribirá las modificaciones con los valores predeterminados de los formularios de AEM.

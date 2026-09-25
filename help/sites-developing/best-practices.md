@@ -1,37 +1,39 @@
 ---
-title: AEM Prácticas recomendadas para desarrolladores de
-description: Los equipos de ingeniería y consultoría de Adobe AEM han desarrollado un conjunto completo de prácticas recomendadas para los desarrolladores de.
+title: Prácticas recomendadas para desarrolladores de AEM
+
+description: Los equipos de ingeniería y consultoría de Adobe han desarrollado un conjunto completo de prácticas recomendadas para los desarrolladores de AEM.
+
+
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 3%
-
+source-wordcount: '497'
+ht-degree: 7%
 ---
-
 # Prácticas recomendadas{#best-practices}
 
 ## Prácticas recomendadas para desarrolladores: Introducción {#best-practices-for-developers-getting-started}
 
-Los equipos de ingeniería y consultoría de Adobe AEM han desarrollado un conjunto completo de prácticas recomendadas para los desarrolladores de. Los desarrolladores de Adobe AEM se adhieren a estas prácticas recomendadas a medida que desarrollan actualizaciones principales de productos y códigos de cliente para implementaciones de clientes.
+Los equipos de ingeniería y consultoría de Adobe han desarrollado un conjunto completo de prácticas recomendadas para los desarrolladores de AEM. Los desarrolladores de Adobe se adhieren a estas prácticas recomendadas a medida que desarrollan actualizaciones principales de productos de AEM y códigos de cliente para implementaciones de clientes.
 
-AEM Antes de iniciar el proyecto de desarrollo de la, revise primero estas prácticas recomendadas:
+Antes de iniciar el proyecto de desarrollo de AEM, revise primero estas prácticas recomendadas:
 
 * [Prácticas de desarrollo](/help/sites-developing/development-practices.md)
 * [Arquitectura de contenido](/help/sites-developing/content-architecture.md)
 * [Arquitectura de software](/help/sites-developing/software-architecture.md)
-* [Sugerencias de codificación](/help/sites-developing/coding-tips.md)
+* [Sugerencias de programación](/help/sites-developing/coding-tips.md)
 * [Problemas de código](/help/sites-developing/code-pitfalls.md)
 * [Interacción JCR](/help/sites-developing/jcr-integration.md)
 * [Paquetes OSGi](/help/sites-developing/osgi-bundles.md)
-* [Prácticas recomendadas para la API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=es)
+* [Prácticas recomendadas de API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=es)
 
 ### Información adicional sobre prácticas recomendadas {#additional-best-practices-information}
 
@@ -45,8 +47,8 @@ En las tablas siguientes se describen y vinculan documentos específicos.
 
 Para conocer las prácticas recomendadas sobre la administración, la implementación, el mantenimiento o la creación, consulte una de las siguientes opciones:
 
-* [Prácticas recomendadas de administración](/help/sites-administering/administer-best-practices.md)
-* [Prácticas recomendadas de creación](/help/sites-authoring/best-practices.md)
+* [Administración de prácticas recomendadas](/help/sites-administering/administer-best-practices.md)
+* [Creación de prácticas recomendadas](/help/sites-authoring/best-practices.md)
 * [Implementación de prácticas recomendadas](/help/sites-deploying/best-practices.md)
 
 ## Sites {#sites}
@@ -73,7 +75,7 @@ La administración y creación del contenido del sitio web tiene algunas prácti
   <tr>
    <td>Flujos de trabajo</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md">Desarrollo y ampliación de flujos de trabajo</a></td>
-   <td><p>Los flujos de trabajo le permiten automatizar las actividades de Adobe Experience Manager AEM AEM () y pueden representar una gran cantidad del procesamiento que se produce en un entorno de trabajo, por lo que es muy recomendable planificar las implementaciones de flujos de trabajo con cuidado.</p> </td>
+   <td><p>Los flujos de trabajo le permiten automatizar las actividades de Adobe Experience Manager (AEM) y pueden representar una gran cantidad del procesamiento que se produce en un entorno de AEM, por lo que es muy recomendable planificar las implementaciones de flujos de trabajo con cuidado.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -91,7 +93,7 @@ Algunas prácticas recomendadas para las comunidades se describen aquí:
 
 ## Herramientas/HTL {#tooling-htl}
 
-El lenguaje de plantilla de HTML (HTL) es un nuevo sistema de plantillas de HTML AEM, incluido en la versión 6.0 de la versión, que se ha introducido con la versión 6.0 de la aplicación. AEM Sustituye a JSP y ESP como sistema de creación de plantillas preferido de los.
+El lenguaje de plantilla HTML (HTL) es un nuevo sistema de plantillas de HTML, introducido con AEM 6.0. Sustituye a JSP y ESP como sistema de plantillas preferido de AEM.
 
 |  |  |  |
 |---|---|---|
@@ -100,5 +102,5 @@ El lenguaje de plantilla de HTML (HTL) es un nuevo sistema de plantillas de HTML
 
 >[!NOTE]
 >
->AEM Los siguientes tutoriales de varias partes pueden ser de interés para la práctica recomendada de configurar un nuevo proyecto de, que detalla los componentes principales, las plantillas editables, las bibliotecas de clientes y el desarrollo de componentes:
+>Los siguientes tutoriales de varias partes pueden ser de interés para la práctica recomendada de configuración de un nuevo proyecto de AEM, que detalla los componentes principales, las plantillas editables, las bibliotecas de clientes y el desarrollo de componentes:
 >[Introducción a AEM Sites: Tutorial de WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)

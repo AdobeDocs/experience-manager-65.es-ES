@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2593'
-ht-degree: 94%
-
+source-wordcount: '2691'
+ht-degree: 93%
 ---
-
 # Configurar la acción de envío {#configuring-the-submit-action}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -126,7 +124,7 @@ Para obtener información sobre cómo configurar la acción Enviar a la acción 
 
 ## Enviar mediante modelo de datos de formulario {#submit-using-form-data-model}
 
-La acción de envío **Enviar mediante el modelo de datos de formulario** escribe los datos del formulario adaptable enviados para el objeto del modelo de datos especificado en un modelo de datos de formulario en su fuente de datos. Al configurar la acción de envío, puede elegir un objeto de modelo de datos cuyos datos enviados desee volver a escribir en su fuente de datos.
+La acción de envío **Enviar mediante el modelo de datos de formulario** escribe los datos del formulario adaptable enviados para el objeto de modelo de datos especificado en un modelo de datos de formulario en su fuente de datos. Al configurar la acción de envío, puede elegir un objeto de modelo de datos cuyos datos enviados desee volver a escribir en su fuente de datos.
 
 Además, puede enviar a la fuente de datos un archivo adjunto de formulario mediante un modelo de datos de formulario y un documento de registro (DoR).
 
@@ -173,7 +171,7 @@ Después de una configuración correcta, utilice la acción de envío [Invocar u
 
 >[!NOTE]
 >
->La función Enviar a Microsoft® SharePoint AEM List se introdujo con el paquete de servicio 19 (6.5.19.0) de Forms de 6.5.
+> La característica Enviar a Microsoft® SharePoint List se introdujo con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 La acción de envío **[!UICONTROL Enviar a SharePoint]** conecta un formulario adaptable con un almacenamiento de Microsoft® SharePoint. Puede enviar el archivo de datos de formulario, los archivos adjuntos o el documento de registro al almacenamiento de Microsoft® SharePoint conectado.
 
@@ -199,7 +197,7 @@ Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 
      >[!NOTE]
      >
-     >El campo **secreto de cliente** es obligatorio u opcional dependiendo de su configuración de la aplicación de Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar dicho secreto.
+     > El campo **secreto de cliente** es obligatorio u opcional dependiendo de su configuración de la aplicación de Azure Active Directory. Si la aplicación está configurada para utilizar un secreto de cliente, es obligatorio proporcionar dicho secreto.
 
 1. Haga clic en **[!UICONTROL Conectar]**. Si la conexión se realiza correctamente, aparece el mensaje `Connection Successful`.
 1. Seleccionar **[!UICONTROL Sitio de SharePoint]** y **[!UICONTROL Lista de SharePoint]** en la lista desplegable.
@@ -209,7 +207,7 @@ Para conectar AEM Forms a su lista de Sharepoint de Microsoft®:
 
 Puede utilizar la configuración de lista de SharePoint creada en un formulario adaptable para guardar datos o el documento de registro generado en una lista de SharePoint. Siga estos pasos para usar una configuración de almacenamiento de lista de SharePoint en un formulario adaptable como:
 
-1. [Crear un modelo de datos de formulario con Microsoft](/help/forms/using/create-form-data-model.md)
+1. [Crear un modelo de datos de formulario con la configuración de Microsoft® SharePoint List](/help/forms/using/create-form-data-model.md)
 1. [Configurar el modelo de datos de formulario para recuperar y enviar datos](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Crear un formulario adaptable](/help/forms/using/create-adaptive-form.md).
 1. [Configurar la acción de envío mediante un modelo de datos de formulario](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
@@ -218,16 +216,16 @@ Al enviar el formulario, los datos se guardan en el almacenamiento de lista de S
 
 >[!NOTE]
 >
->En la lista de Microsoft® SharePoint, no se admiten los siguientes tipos de columnas:
->* columna de imagen
->* columna de metadatos
->* columna de persona
->* columna de datos externos
+> En la lista de Microsoft® SharePoint, no se admiten los siguientes tipos de columnas:
+> * columna de imagen
+> * columna de metadatos
+> * columna de persona
+> * columna de datos externos
 
 
 >[!NOTE]
 >
->Para establecer los valores de una configuración, [Generar configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
+> Para establecer los valores de una configuración, [Genere las configuraciones OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=es#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implemente la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es#deployment-process) a su instancia de Cloud Service.
 
 ## Revalidación del lado del servidor en formularios adaptables {#server-side-revalidation-in-adaptive-form}
 
@@ -239,7 +237,7 @@ La característica de revalidación del lado del servidor permite ejecutar tambi
 
 Todas las validaciones de campo listas para usar de un formulario adaptable que se vuelven a ejecutar en el servidor son las siguientes:
 
-* Requerido
+* Necesario
 * Cláusula de imagen de validación
 * Expresión de validación
 

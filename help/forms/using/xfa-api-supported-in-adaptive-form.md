@@ -1,8 +1,12 @@
 ---
 title: Compatibilidad con XFA en formularios adaptables basados en XDP
+
 description: Enumera los eventos XFA admitidos, las propiedades, los scripts y la validación en los formularios adaptables.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
@@ -10,11 +14,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '748'
 ht-degree: 97%
-
 ---
-
 # Compatibilidad con XFA en formularios adaptables basados en XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Introducción {#introduction}

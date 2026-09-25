@@ -1,21 +1,24 @@
 ---
 title: Trabajar con credenciales
+
 description: Importe credenciales en AEM Forms mediante la API de Trust Manager y la API de Java. Además, aprenda a eliminar credenciales mediante la API de Trust Manager y la API de Java.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1100'
 ht-degree: 1%
-
 ---
-
 # Trabajar con credenciales {#working-with-credentials}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -25,7 +28,7 @@ ht-degree: 1%
 Una credencial contiene la información de clave privada necesaria para firmar o identificar documentos. Un certificado es información de clave pública que se configura para la confianza. AEM Forms utiliza certificados y credenciales para varios fines:
 
 * Las extensiones de Acrobat Reader DC utilizan una credencial para habilitar los derechos de uso de Adobe Reader en documentos de PDF. (Consulte [Aplicar derechos de uso a documentos de PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
-* El servicio Signature accede a los certificados y las credenciales mientras realiza operaciones como firmar digitalmente documentos de PDF. (Consulte [Documentos de PDF de firma digital](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+* El servicio Signature accede a los certificados y las credenciales mientras realiza operaciones como firmar digitalmente documentos de PDF. (Consulte [Firmar digitalmente documentos de PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 Puede interactuar mediante programación con el servicio de credenciales mediante la API de Java de Administrador de confianza. Puede realizar las siguientes tareas:
 
@@ -38,7 +41,7 @@ Puede interactuar mediante programación con el servicio de credenciales mediant
 
 ## Importación de credenciales mediante la API de Trust Manager {#importing-credentials-by-using-the-trust-manager-api}
 
-Puede importar mediante programación una credencial en AEM Forms mediante la API de Administrador de confianza. Por ejemplo, puede importar una credencial utilizada para firmar un documento de PDF. (Consulte [Documentos de PDF de firma digital](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
+Puede importar mediante programación una credencial en AEM Forms mediante la API de Administrador de confianza. Por ejemplo, puede importar una credencial utilizada para firmar un documento de PDF. (Consulte [Firmar digitalmente documentos de PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
 Al importar una credencial, se especifica un alias para la credencial. El alias se utiliza para realizar una operación de Forms que requiere credenciales. Una vez importadas, las credenciales se pueden ver en la consola de administración, como se muestra en la siguiente ilustración. Observe que el alias de la credencial es *Secure*.
 
@@ -118,16 +121,16 @@ Importe una credencial en AEM Forms mediante la API de Trust Manager (Java):
    * Cree una matriz de cadenas que contenga un elemento. Asigne el valor `truststore.usage.type.sign` al elemento.
    * Invoque el método `importCredential` del objeto `CredentialServiceClient` y pase los siguientes valores:
 
-      * Valor de cadena que especifica el valor de alias de la credencial.
-      * La instancia `com.adobe.idp.Document` que almacena la credencial.
-      * Valor de cadena que especifica la contraseña asociada a la credencial.
-      * Matriz de cadenas que contiene el valor de uso. Por ejemplo, puede especificar este valor `truststore.usage.type.sign`. Para importar una credencial de extensión de Reader, especifique `truststore.usage.type.lcre`.
+     * Valor de cadena que especifica el valor de alias de la credencial.
+     * La instancia `com.adobe.idp.Document` que almacena la credencial.
+     * Valor de cadena que especifica la contraseña asociada a la credencial.
+     * Matriz de cadenas que contiene el valor de uso. Por ejemplo, puede especificar este valor `truststore.usage.type.sign`. Para importar una credencial de extensión de Reader, especifique `truststore.usage.type.lcre`.
 
 **Consulte también**
 
 [Importación de credenciales mediante la API de Trust Manager](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
-[SOAP Inicio rápido (modo de): Importación de credenciales mediante la API de Java](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Inicio rápido (modo SOAP): Importación de credenciales mediante la API de Java](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -200,7 +203,7 @@ Eliminar una credencial de AEM Forms mediante la API de Administrador de confian
 
 [Eliminación de credenciales mediante la API de Administrador de confianza](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-[SOAP Inicio rápido (modo de): Eliminación de credenciales mediante la API de Java](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Inicio rápido (modo SOAP): Eliminación de credenciales mediante la API de Java](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

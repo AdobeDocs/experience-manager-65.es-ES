@@ -7,18 +7,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 95%
-
+source-wordcount: '1181'
+ht-degree: 93%
 ---
-
 # Usar el modo Diseño para cambiar el tamaño de los componentes {#use-layout-mode-to-resize-components}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/resize-using-layout-mode.html?lang=es&) |
+| AEM as a Cloud Service | [Haga clic aquí] (¿https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/resize-using-layout-mode.html?lang=es&) |
 | AEM 6.5 | Este artículo |
 
 
@@ -79,7 +77,8 @@ Ejecute los siguientes pasos si desea cambiar el tamaño de todo el panel en lug
 
    Los puntos azules se muestran al principio y al final de la cuadrícula adaptable.
 
-1. Arrastre y suelte los puntos azules para definir la posición del panel en la cuadrícula adaptable. Puede repetir los pasos 1 y 2 y seleccionar ![Seleccionar principal](assets/float_to_new_line_icon.svg) para desplazar el panel cuyo tamaño se ha cambiado a la línea siguiente.
+1. Arrastre y suelte los puntos azules para definir la posición del panel en la cuadrícula adaptable.
+Puede repetir los pasos 1 y 2 y seleccionar ![Seleccionar principal](assets/float_to_new_line_icon.svg) para desplazar el panel cuyo tamaño se ha cambiado a la línea siguiente.
 
 ## Definir el diseño de varias columnas para un panel
 
@@ -108,15 +107,15 @@ Realice los siguientes pasos para habilitar la nueva cuadrícula adaptable:
 1. Seleccione **Diseño** en la lista desplegable que aparece en la parte superior junto a la opción **Vista previa**. Aparece una confirmación para habilitar el modo Diseño.
 1. Seleccione **Sí** para habilitar el modo **Diseño** para el formulario.
 
-### Integrar un fragmento antiguo en un formulario adaptable con un nuevo diseño adaptable {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
+### Incrustar un fragmento antiguo en un formulario adaptable con un nuevo diseño adaptable {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
 El nuevo diseño adaptable del formulario adaptable le permite agregar un fragmento de formulario adaptable con el diseño antiguo al formulario. Con todo, el nuevo diseño descarta las propiedades de diseño ya definidas para los componentes utilizados en el fragmento. Puede cambiar al modo Diseño para definir las propiedades de diseño de los componentes utilizados en el fragmento.
 
-### Integrar un fragmento con un nuevo diseño adaptable en un formulario adaptable antiguo  {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
+### Incrustar un fragmento con un nuevo diseño adaptable en un formulario adaptable antiguo {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 
-Si integra un fragmento con el nuevo diseño adaptable en un formulario adaptable con un diseño antiguo, el sistema le indicará que habilite el modo Diseño para el formulario y que vuelva a integrar el fragmento.
+Si incrusta un fragmento con el nuevo diseño adaptable en un formulario adaptable con un diseño antiguo, el sistema le indicará que habilite el modo Diseño para el formulario y que vuelva a incrustar el fragmento.
 
-Para habilitar el modo Diseño, seleccione **Diseño** en la lista desplegable que aparece en la parte superior junto a la opción **Vista previa** y seleccione **Sí** para confirmar. Seleccione el modo **Editar** para volver a integrar el fragmento.
+Para habilitar el modo Diseño, seleccione **Diseño** en la lista desplegable que aparece en la parte superior junto a la opción **Vista previa** y seleccione **Sí** para confirmar. Seleccione el modo **Editar** para volver a incrustar el fragmento.
 
 ## Desactivar el modo Diseño para formularios con un diseño adaptable antiguo {#disable-layout-mode-for-forms-with-old-responsive-layout}
 

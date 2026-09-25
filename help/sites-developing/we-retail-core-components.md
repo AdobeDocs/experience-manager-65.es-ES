@@ -1,5 +1,5 @@
 ---
-title: Prueba de los componentes principales en We.Retail
+title: Prueba de componentes principales en We.Retail
 description: Obtenga información sobre cómo probar los componentes principales en Adobe Experience Manager mediante We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,18 +11,16 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 0%
-
+source-wordcount: '561'
+ht-degree: 8%
 ---
-
-# Prueba de los componentes principales en We.Retail{#trying-out-core-components-in-we-retail}
+# Prueba de componentes principales en We.Retail{#trying-out-core-components-in-we-retail}
 
 Los componentes principales son componentes modernos y flexibles que ofrecen una extensibilidad sencilla y permiten una integración sencilla en sus proyectos. Los componentes principales se han creado en torno a varios principios de diseño principales, como HTL, facilidad de uso predeterminada, configurabilidad, versiones y extensibilidad. We.Retail se ha creado a partir de componentes principales.
 
 ## Probando a cabo {#trying-it-out}
 
-1. Inicie Adobe Experience Manager AEM () con el contenido de muestra de We.Retail y abra la [consola Componentes](/help/sites-authoring/default-components-console.md).
+1. Inicie Adobe Experience Manager (AEM) con el contenido de muestra de We.Retail y abra la [consola Componentes](/help/sites-authoring/default-components-console.md).
 
    **Navegación global > Herramientas > Componentes**
 
@@ -35,7 +33,7 @@ Los componentes principales son componentes modernos y flexibles que ofrecen una
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Todos los componentes principales se denominan **v1**, lo que refleja que esta es la primera versión de este componente principal. AEM Las versiones regulares se lanzarán a partir de ahora, lo que será compatible con la versión de los programas y permitirá realizar actualizaciones sencillas para poder aprovechar las últimas funciones.
+1. Todos los componentes principales se denominan **v1**, lo que refleja que esta es la primera versión de este componente principal. Las versiones regulares se lanzarán a partir de ahora, que serán compatibles con AEM y permitirán una actualización sencilla para que pueda aprovechar las últimas funciones.
 1. Haga clic en **Texto (v1)**.
 
    Observe que el **Tipo de recurso** del componente es `/apps/core/wcm/components/text/v1/text`. Los componentes principales se encuentran en `/apps/core/wcm/components` y se crean versiones por componente.

@@ -1,6 +1,6 @@
 ---
 title: Aplicar firmas electrónicas a un formulario utilizando firmas manuscritas
-description: AEM Obtenga información sobre cómo firmar en Forms adaptable con la firma a mano alzada. Puede utilizar la firma manuscrita y el paso de firma para dibujar la firma en un formulario.
+description: Obtenga información sobre cómo firmar el Forms adaptable de AEM con la firma manuscrita. Puede utilizar la firma manuscrita y el paso de firma para dibujar la firma en un formulario.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 87%
-
+source-wordcount: '763'
+ht-degree: 85%
 ---
-
 # Aplicar firmas electrónicas a un formulario utilizando firmas manuscritas{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -26,7 +24,7 @@ ht-degree: 87%
 | AEM 6.5 | Este artículo |
 
 
-Puede usar los componentes **Firma manuscrita** y **Paso de firma** para dibujar la firma (manuscrita) en un formulario adaptable. El componente Paso de firma muestra una versión PDF del formulario adaptable. Para utilizar el componente Paso de firma, necesita activar la opción Documento de registro o un formulario adaptable basado en una plantilla de formulario.
+Puede usar los componentes **Firma manuscrita** y **Paso de firma** para dibujar la firma (manuscrita) en un formulario adaptable. El componente Paso de firma muestra una versión PDF del formulario adaptable. Para utilizar el componente Paso de firma, necesita habilitar la opción Documento de registro o un formulario adaptable basado en una plantilla de formulario.
 
 ![Cuadro de diálogo Firma manuscrita](/help/forms/using/assets/scribble-signature.png)
 
@@ -54,7 +52,7 @@ Puede seleccionar el icono **Configurar** ![configurar](assets/configure.png) pa
 
 ## Configurar un formulario adaptable para utilizar una firma manuscrita {#configure-an-adaptive-form-to-use-scribble-signature}
 
-1. Active la opción Documento de registro o utilice un formulario adaptable basado en una plantilla de formulario. Para obtener información paso a paso, consulte [Crear un formulario adaptable](../../forms/using/creating-adaptive-form.md).
+1. Habilite la opción Documento de registro o utilice un formulario adaptable basado en una plantilla de formulario. Para obtener información paso a paso, consulte [Crear un formulario adaptable](../../forms/using/creating-adaptive-form.md).
 1. Arrastre y suelte el componente **Firma manuscrita** desde el explorador de componentes al formulario adaptable.
 1. Seleccione el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del componente Firma manuscrita. Configure las propiedades del componente Firma manuscrita.
 1. Arrastre y suelte el componente Paso de firma desde el explorador de componentes al formulario adaptable.

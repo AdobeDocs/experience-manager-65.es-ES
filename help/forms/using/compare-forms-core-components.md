@@ -6,11 +6,9 @@ role: User, Developer, Admin
 exl-id: bcd6e9cf-b33b-4468-8b99-0da196f65eaa
 source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 7%
-
+source-wordcount: '222'
+ht-degree: 14%
 ---
-
 # Comparar formularios adaptables {#compare-two-forms}
 
 <!--
@@ -23,7 +21,7 @@ La función Comparar de los componentes principales de Forms adaptable ayuda a l
 
 ## Requisitos previos {#prerequisite-versioning}
 
-AEM Para usar la característica Comparar en un formulario adaptable basado en componentes principales, asegúrese de que [Componentes principales de un formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) esté habilitado en su entorno de Forms de 6.5.
+Para usar la característica Comparar en un formulario adaptable basado en componentes principales, asegúrese de que [Componentes principales de un formulario adaptable](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) esté habilitado en su entorno de Forms de AEM 6.5.
 
 ## Comparar distintos formularios adaptables {#compare-af-65}
 
@@ -37,6 +35,6 @@ Para comparar dos formularios adaptables distintos según sus campos, contenido 
 
    ![Formularios comparados](/help/forms/using/assets/compared-forms.png)
 
-## Consulte también
+## Ver también
 
 * [Añadir versiones, comentarios y anotaciones a un formulario adaptable](/help/forms/using/add-versioning-reviews-comments.md)

@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1078'
 ht-degree: 1%
-
 ---
-
 # Referencia del proceso de flujo de trabajo{#workflow-process-reference}
 
 AEM proporciona varios pasos de proceso que se pueden utilizar para crear modelos de flujo de trabajo. También se pueden agregar pasos de proceso personalizados para tareas que no estén cubiertas por los pasos integrados (consulte [Creación de modelos de flujo de trabajo](/help/sites-developing/workflows-models.md)).
@@ -35,9 +33,9 @@ Los pasos del proceso se definen mediante una clase Java™ o ECMAScript.
 
 La carga útil es la entidad en la que actúa una instancia de flujo de trabajo. La carga útil se selecciona implícitamente mediante el contexto en el que se inicia una instancia de flujo de trabajo.
 
-AEM Por ejemplo, si se aplica un flujo de trabajo a una página de *P*, *P* se pasa de un paso a otro a medida que avanza el flujo de trabajo, y cada paso opcionalmente actúa en *P* de alguna manera.
+Por ejemplo, si se aplica un flujo de trabajo a una página de AEM *P*, *P* se pasa de un paso a otro a medida que el flujo de trabajo avanza y cada paso actúa de alguna manera de manera opcional en *P*.
 
-AEM En el caso más común, la carga útil es un nodo JCR en el repositorio (por ejemplo, una página o un recurso de la página o el recurso). La carga útil de un nodo JCR se pasa como una cadena que es una ruta JCR o un identificador JCR (UUID). A veces, la carga útil puede ser una propiedad JCR (pasada como ruta JCR), una URL, un objeto binario o un objeto Java™ genérico. Los pasos de proceso individuales que sí actúan en la carga útil generalmente esperan una carga útil de un tipo determinado o actúan de forma diferente según el tipo de carga útil. Para cada proceso descrito a continuación, se describe el tipo de carga útil esperado, de haber.
+En el caso más común, la carga útil es un nodo JCR en el repositorio (por ejemplo, una página o un recurso de AEM). La carga útil de un nodo JCR se pasa como una cadena que es una ruta JCR o un identificador JCR (UUID). A veces, la carga útil puede ser una propiedad JCR (pasada como ruta JCR), una URL, un objeto binario o un objeto Java™ genérico. Los pasos de proceso individuales que sí actúan en la carga útil generalmente esperan una carga útil de un tipo determinado o actúan de forma diferente según el tipo de carga útil. Para cada proceso descrito a continuación, se describe el tipo de carga útil esperado, de haber.
 
 ### Argumentos {#arguments}
 
@@ -72,7 +70,7 @@ La manera recomendada de hacerlo es utilizar un usuario de servicio creado con e
 
 >[!CAUTION]
 >
->AEM Si está actualizando desde una versión anterior a la 6.2, es posible que tenga que actualizar la implementación de.
+>Si actualiza desde una versión anterior a AEM 6.2, es posible que tenga que actualizar la implementación.
 >
 >En versiones anteriores, la sesión de administración se pasaba a las implementaciones de `WorkflowProcess` y, a continuación, podía tener acceso completo al repositorio sin tener que definir ACL específicas.
 >
@@ -115,7 +113,7 @@ El proceso `ProcessAssembler` ejecuta varios subprocesos secuencialmente en un s
 
 * **Clase Java™**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* AEM **Carga útil**: Un recurso DAM, una página de la página de la base de datos o ninguna carga útil (depende de los requisitos de los subprocesos).
+* **Carga útil**: Un recurso DAM, una página AEM o ninguna carga útil (depende de los requisitos de los subprocesos).
 * **Argumentos**:
 
 ```
@@ -135,7 +133,7 @@ Por ejemplo:
 
 * Extraiga los metadatos del recurso.
 * Cree tres miniaturas de los tres tamaños especificados.
-* Cree una imagen de JPEG a partir del recurso, suponiendo que este no sea originalmente un GIF o un PNG (en cuyo caso no se crea ningún JPEG).
+* Cree una imagen de JPEG a partir del recurso, suponiendo que este no sea originalmente un GIF ni un PNG (en cuyo caso no se crea ningún JPEG).
 * Establezca la fecha de la última modificación del recurso.
 
 ```shell
@@ -231,7 +229,7 @@ El siguiente proceso realiza una tarea relacionada con la versión.
 
 ### CreateVersionProcess {#createversionprocess}
 
-AEM Crea una versión de la carga útil del flujo de trabajo (página de o recurso DAM).
+Crea una versión de la carga útil del flujo de trabajo (página AEM o recurso DAM).
 
 * **Clase Java™**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 

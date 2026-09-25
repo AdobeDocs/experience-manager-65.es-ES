@@ -1,6 +1,6 @@
 ---
 title: Componentes para fragmentos de contenido
-description: Los fragmentos de contenido de Adobe Experience Manager AEM () se crean y administran como recursos independientes de la página
+description: Los fragmentos de contenido de Adobe Experience Manager (AEM) se crean y administran como recursos independientes de la página
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -13,11 +13,9 @@ feature: Developing,Content Fragments
 role: Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1003'
+ht-degree: 5%
 ---
-
 # Componentes para fragmentos de contenido{#components-for-content-fragments}
 
 ## Componentes para la creación de fragmentos {#components-for-fragment-authoring}
@@ -40,11 +38,11 @@ Consulte la [API de administración de fragmentos de contenido - del lado del cl
 >
 >Consulte también [Fragmentos de contenido que configuran componentes para procesamiento](/help/sites-developing/content-fragments-config-components-rendering.md) para obtener más información.
 
-Los fragmentos de contenido de Adobe Experience Manager AEM () se [crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). [Al crear páginas de contenido, puede usar estos fragmentos y sus variaciones](/help/sites-authoring/content-fragments.md). También puede usar un recurso de fragmento de contenido existente al [arrastrarlo desde el explorador de recursos a la página](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (como para otros componentes basados en recursos, como el componente de base Imagen). El componente de fragmento de contenido predeterminado muestra solo un [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del fragmento de contenido al que se hace referencia. Con el cuadro de diálogo de componentes puede definir el [elemento, variación y rango de párrafos de fragmento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) que desea mostrar en la página.
+Los fragmentos de contenido de Adobe Experience Manager (AEM) se [crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). [Al crear páginas de contenido, puede usar estos fragmentos y sus variaciones](/help/sites-authoring/content-fragments.md). También puede usar un recurso de fragmento de contenido existente al [arrastrarlo desde el explorador de recursos a la página](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (como para otros componentes basados en recursos, como el componente de base Imagen). El componente de fragmento de contenido predeterminado muestra solo un [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del fragmento de contenido al que se hace referencia. Con el cuadro de diálogo de componentes puede definir el [elemento, variación y rango de párrafos de fragmento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) que desea mostrar en la página.
 
 >[!NOTE]
 >
->AEM Este componente Fragmento de contenido se introdujo en la versión 6.2 de como una versión mejorada del componente Artículo, que ha quedado obsoleto.
+>Este componente Fragmento de contenido se introdujo en AEM 6.2 como una versión mejorada del componente Artículo, que ha quedado obsoleto.
 
 >[!NOTE]
 >
@@ -81,21 +79,21 @@ Para ilustrar esto, tenga en cuenta lo siguiente:
 * Instancia de un fragmento de contenido compuesto por tres párrafos
 * Y que parte del contenido ya se ha insertado después del segundo párrafo
 
-   * Esto significa que el contenido se almacena en el segundo parsys.
+  * Esto significa que el contenido se almacena en el segundo parsys.
 
 Básicamente, si la estructura de párrafos de esta instancia cambia (al cambiar la variación, el elemento o el intervalo de párrafos mostrados), podría afectar al contenido intermedio que se muestra cuando se reproduce el contenido del fragmento de contenido:
 
 * Se edita y se añade otro párrafo antes del segundo párrafo:
 
-   * El contenido intermedio se muestra después del párrafo recién creado (el segundo parsys ahora contiene el párrafo recién creado).
+  * El contenido intermedio se muestra después del párrafo recién creado (el segundo parsys ahora contiene el párrafo recién creado).
 
 * Se edita y se elimina el segundo párrafo:
 
-   * El contenido intermedio se muestra después del párrafo que antes era el tercero (el segundo parsys ahora contiene el tercer párrafo anterior).
+  * El contenido intermedio se muestra después del párrafo que antes era el tercero (el segundo parsys ahora contiene el tercer párrafo anterior).
 
 * Está configurado para que solo se muestre el primer párrafo:
 
-   * No se muestra el contenido intermedio (el segundo parsys ya no se procesa debido a la nueva configuración).
+  * No se muestra el contenido intermedio (el segundo parsys ya no se procesa debido a la nueva configuración).
 
 ### Personalización del componente Fragmento de contenido {#customizing-the-content-fragment-component}
 
@@ -104,13 +102,13 @@ Para utilizar el componente de fragmento de contenido listo para usar como model
 * Reutilice el script de procesamiento HTL y su POJO asociado para poder ver cómo se implementa la función de contenido intermedio.
 * Reutilizar el nodo de fragmento de contenido: `cq:editConfig`
 
-   * Los oyentes `afterinsert`/ `afteredit`/ `afterdelete` se usan para almacenar en déclencheur eventos JS. Estos eventos se controlan en la biblioteca de cliente `cq.authoring.editor.plugin.cfm` para mostrar el contenido asociado en el panel lateral.
-   * Los `cq:dropTargets` están configurados para admitir el arrastre de recursos de fragmentos de contenido.
-   * `cq:inplaceEditing` está configurado para admitir la creación de un fragmento de contenido en el editor de páginas. El editor local de fragmentos está definido en la biblioteca de cliente `cq.authoring.editor.plugin.cfm` y permite abrir mediante un vínculo rápido el [elemento/variación](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) actual en el [editor de fragmentos](/help/assets/content-fragments/content-fragments-variations.md).
+  * Los oyentes `afterinsert`/ `afteredit`/ `afterdelete` se usan para almacenar en déclencheur eventos JS. Estos eventos se controlan en la biblioteca de cliente `cq.authoring.editor.plugin.cfm` para mostrar el contenido asociado en el panel lateral.
+  * Los `cq:dropTargets` están configurados para admitir el arrastre de recursos de fragmentos de contenido.
+  * `cq:inplaceEditing` está configurado para admitir la creación de un fragmento de contenido en el editor de páginas. El editor local de fragmentos está definido en la biblioteca de cliente `cq.authoring.editor.plugin.cfm` y permite abrir mediante un vínculo rápido el [elemento/variación](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) actual en el [editor de fragmentos](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Reescritura de recursos antes del procesamiento {#asset-rewriting-before-rendering}
 
-La administración de fragmentos de contenido utiliza un proceso de renderización interna para generar la salida final del HTML para una página. Esto lo utiliza internamente el componente Fragmento de contenido, pero también el proceso en segundo plano que actualiza los fragmentos a los que se hace referencia en las páginas que hacen referencia.
+La administración de fragmentos de contenido utiliza un proceso de renderización interna para generar la salida final de HTML para una página. Esto lo utiliza internamente el componente Fragmento de contenido, pero también el proceso en segundo plano que actualiza los fragmentos a los que se hace referencia en las páginas que hacen referencia.
 
 Internamente, la reescritura de Sling se utiliza para esa renderización. La configuración respectiva se encuentra en `/libs/dam/config/rewriter/cfm` y se puede ajustar, si es necesario. Consulte [Reescritor de Apache Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) para obtener más información.
 

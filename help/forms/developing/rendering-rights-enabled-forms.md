@@ -1,31 +1,34 @@
 ---
-title: Procesar formularios con derechos activados
+title: Procesar formularios con derechos habilitados
+
 description: Utilice el servicio Forms para procesar formularios a los que se les han aplicado derechos de uso. Puede procesar formularios con derechos activados mediante la API de Java y la API de servicio web.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1488'
 ht-degree: 4%
-
 ---
-
-# Procesar formularios con derechos activados {#rendering-rights-enabled-forms}
+# Procesar formularios con derechos habilitados {#rendering-rights-enabled-forms}
 
 El servicio Forms puede procesar formularios a los que se les han aplicado derechos de uso. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Las Forms a las que se les han aplicado derechos de uso se denominan formularios con derechos activados. Un usuario que abre un formulario con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese formulario.
 
-Para aplicar derechos de uso a un formulario, el servicio de extensiones de Acrobat Reader DC AEM debe formar parte de la instalación de los formularios de la aplicación de la aplicación de la aplicación de la aplicación de la. Además, debe tener una credencial válida que le permita aplicar derechos de uso a documentos de PDF. Es decir, debe configurar correctamente el servicio de extensiones de Acrobat Reader DC para poder procesar un formulario con los derechos activados. (Ver [Acerca del servicio de extensiones de Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
+Para aplicar derechos de uso a un formulario, el servicio de extensiones de Acrobat Reader DC debe formar parte de la instalación de formularios AEM Forms. Además, debe tener una credencial válida que le permita aplicar derechos de uso a documentos de PDF. Es decir, debe configurar correctamente el servicio de extensiones de Acrobat Reader DC para poder procesar un formulario con los derechos activados. (Consulte [Acerca del servicio de extensiones de Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)).
 
 >[!NOTE]
 >
->Para procesar un formulario que contenga derechos de uso, debe utilizar un archivo XDP como entrada, no un archivo de PDF. Si utiliza un archivo de PDF como entrada, el formulario se seguirá representando; sin embargo, no será un formulario con derechos habilitados.
+>Para procesar un formulario que contenga derechos de uso, debe utilizar un archivo XDP como entrada, no un archivo PDF. Si utiliza un archivo PDF como entrada, el formulario se seguirá representando; sin embargo, no será un formulario con derechos habilitados.
 
 >[!NOTE]
 >
@@ -67,7 +70,7 @@ Para procesar un formulario con derechos activados, se utiliza la misma lógica 
 
 **Escriba el flujo de datos del formulario en el explorador web del cliente**
 
-Cuando el servicio Forms procesa un formulario con derechos habilitados, devuelve un flujo de datos de formulario que debe escribir en el explorador web del cliente. Una vez escrito en el explorador web del cliente, el formulario es visible para el usuario. Un usuario que visualiza el formulario con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese formulario.
+Cuando el servicio Forms procesa un formulario con derechos habilitados, devuelve un flujo de datos de formulario que debe escribir en el explorador web del cliente. Una vez escrito en el explorador web del cliente, el formulario es visible para el usuario. Un usuario que ve el formulario con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese formulario.
 
 **Consulte también**
 
@@ -132,7 +135,7 @@ Procesar un formulario con derechos activados mediante la API de Forms (Java):
 
 **Consulte también**
 
-[SOAP Inicio rápido (modo de): Procesamiento de un formulario con derechos activados mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[Inicio rápido (modo SOAP): Procesamiento de un formulario con derechos activados mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -180,6 +183,6 @@ Procesar un formulario con derechos activados mediante la API de Forms (servicio
 
 **Consulte también**
 
-[Procesar formularios con derechos activados](#rendering-rights-enabled-forms)
+[Procesar formularios con derechos habilitados](#rendering-rights-enabled-forms)
 
 [Invocar AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

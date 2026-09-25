@@ -8,14 +8,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 943a855f8eb46837e122c3bf2c2deb3f109b2ea9
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 40%
-
+source-wordcount: '1461'
+ht-degree: 41%
 ---
-
 # Configuración del marco de trabajo de integración de traducción{#configuring-the-translation-integration-framework}
 
-AEM El marco de trabajo de integración de traducciones se integra con los servicios de traducción de terceros para organizar la traducción de contenido de la.
+El marco de trabajo de integración de traducciones se conecta con los servicios de traducción de terceros para organizar la traducción de contenido de AEM.
 
 * Conéctese a su proveedor de servicios de traducción.
 * Cree una configuración del marco de trabajo de integración de traducción.
@@ -25,9 +23,9 @@ Para obtener una descripción general de las funciones de traducción de conteni
 
 ## Conexión a un proveedor de servicios de traducción {#connecting-to-a-translation-service-provider}
 
-AEM Cree una configuración en la nube que se conecte con su proveedor de servicios de traducción de forma que pueda acceder a la.
+Cree una configuración en la nube que conecte AEM con su proveedor de servicios de traducción.
 
-AEM De forma predeterminada, incluye la capacidad de [conectar con Microsoft® Translator](/help/sites-administering/tc-msconf.md). AEM Hay otros proveedores de tecnología de traducción con conectores de trabajo que son miembros del programa de socios de Adobe Exchange [aquí](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
+AEM incluye la capacidad de [conectarse a Microsoft® Translator](/help/sites-administering/tc-msconf.md) de forma predeterminada. Otros proveedores de tecnología de traducción con conectores de AEM que son miembros del programa de socios de Adobe Exchange se encuentran [aquí](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
 
 Después de instalar un paquete de conector, puede crear una configuración de la nube para él. Normalmente, debe proporcionar sus credenciales para autenticarse en el servicio de traducción. Para obtener información acerca de cómo añadir una configuración de la nube para el conector de Microsoft Translator, consulte [Integración con Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
@@ -49,7 +47,7 @@ Cuando las diferentes secciones del sitio web tengan distintos requisitos de tra
 
 Después de configurar un marco de trabajo de integración de traducciones, puede [asociarlo a las páginas](/help/sites-administering/tc-prep.md) que lo usan.
 
-AEM **Nota:** Para obtener una descripción general de las características de traducción de contenido de, consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md).
+**Nota:** Para obtener una descripción general de las características de traducción de contenido de AEM, consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md).
 
 Una sola configuración del marco de trabajo controla cómo traducir contenido de página, contenido de la comunidad y recursos.
 ![chlimage_1-386](assets/translation-config-65.jpg)
@@ -161,7 +159,7 @@ Las propiedades de recursos controlan cómo se configuran los recursos. Para obt
  </tbody>
 </table>
 
-1. En la barra lateral, haga clic en Herramientas > Operaciones > Cloud > Cloud Service.
+1. En la barra lateral, haga clic en Herramientas > Operaciones > Cloud > Cloud Services.
 1. En el área Integración de traducción, si se ha creado alguna configuración, determina qué vínculo aparece:
 
    * Si no se ha creado ninguna configuración, haga clic en Configurar ahora.
@@ -190,7 +188,7 @@ Además, para cualquier comunidad [componentes de SCF](/help/communities/scf.md)
 Asocie una página al proveedor de traducción que esté utilizando para traducir la página y las páginas descendientes.
 
 1. En la consola Sitios, seleccione la página que desea configurar y haga clic en Ver propiedades.
-1. Haga clic en Editar y luego en la pestaña Cloud Service.
+1. Haga clic en Editar y luego en la pestaña Cloud Services.
 1. Haga clic en Agregar configuración > Integración de traducción.
 1. Seleccione el proveedor de traducción que desee utilizar y, a continuación, haga clic en Listo.
 
@@ -199,6 +197,6 @@ Asocie una página al proveedor de traducción que esté utilizando para traduci
 Asocie una página al marco de trabajo de integración de traducción que define cómo desea realizar la traducción de la página y de las páginas descendientes.
 
 1. En la consola Sitios, seleccione la página que desea configurar y haga clic en Ver propiedades.
-1. Haga clic en Editar y luego en la pestaña Cloud Service.
+1. Haga clic en Editar y luego en la pestaña Cloud Services.
 1. Haga clic en Agregar configuración > Integración de traducción.
 1. Seleccione el marco de trabajo de integración de traducciones que desea utilizar y haga clic en Listo.

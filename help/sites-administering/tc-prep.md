@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 44%
-
+source-wordcount: '681'
+ht-degree: 42%
 ---
-
 # Preparación del contenido para su traducción{#preparing-content-for-translation}
 
 Por lo general, los sitios web multilingües ofrecen contenido en varios idiomas. El sitio es creado en un idioma y luego traducido a otros idiomas. Por lo general, los sitios multilingües constan de ramas de páginas, donde cada rama contiene las páginas del sitio en un idioma diferente.
@@ -31,7 +29,7 @@ El sitio de muestra de Geometrixx incluye varias ramas de idioma y utiliza la si
              |- zh
 ```
 
-Cada rama de idioma de un sitio se denomina copia de idioma. La página raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, `/content/geometrixx/fr` es la raíz del idioma para la copia en francés. Las copias de idioma deben usar una [raíz de idioma configurada correctamente](/help/sites-administering/tc-prep.md#creating-a-language-root) para que el idioma correcto se dirija cuando se realicen traducciones de un sitio de origen.
+Cada rama de idioma de un sitio se denomina copia de idioma. La página raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, `/content/geometrixx/fr` es la raíz del idioma para la copia de idioma en francés. Las copias de idioma deben usar una [raíz de idioma configurada correctamente](/help/sites-administering/tc-prep.md#creating-a-language-root) para que el idioma correcto se dirija cuando se realicen traducciones de un sitio de origen.
 
 La copia de idioma para la que creó originalmente el contenido del sitio es el maestro de idioma. El maestro de idiomas es la fuente que se traduce a otros idiomas.
 
@@ -39,13 +37,13 @@ Siga estos pasos para preparar su sitio para la traducción:
 
 1. Cree la raíz de idioma del maestro de idioma. Por ejemplo, la raíz de idioma del sitio de demostración de Geometrixx en inglés es /content/geometrixx/en. Asegúrese de que la raíz del idioma esté configurada correctamente según la información de [Creación de una raíz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
 1. Cree el contenido del maestro de idioma.
-1. Cree la raíz de idioma de cada copia de idioma para su sitio. Por ejemplo, la copia en francés del sitio de muestra del Geometrixx es /content/geometrixx/fr.
+1. Cree la raíz de idioma de cada copia de idioma para su sitio. Por ejemplo, la copia en francés del sitio de muestra de Geometrixx es /content/geometrixx/fr.
 
 Después de preparar el contenido para la traducción, puede crear automáticamente las páginas que faltan en las copias de idioma y en los proyectos de traducción asociados. (Consulte [Creación de un proyecto de traducción](/help/sites-administering/tc-manage.md).) Para obtener una descripción general del proceso de traducción de contenido en AEM, consulte [Traducción de contenido para sitios web multilingües](/help/sites-administering/translation.md).
 
 ## Creación de una raíz de idioma {#creating-a-language-root}
 
-Cree una raíz de idioma como la página raíz de una copia de idioma que identifique el idioma del contenido. Después de crear la raíz del idioma, puede crear proyectos de traducción que incluyan la copia del idioma.
+Cree una raíz de idioma como la página raíz de una copia de idioma que identifique el idioma del contenido. Después de crear la raíz del idioma, puede crear proyectos de traducción que incluyan la copia de idioma.
 
 Para crear la raíz de idioma, cree una página y utilice un código de idioma ISO como valor para la propiedad Nombre. El código de idioma debe tener uno de los siguientes formatos:
 

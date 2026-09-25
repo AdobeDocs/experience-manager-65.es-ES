@@ -1,8 +1,12 @@
 ---
 title: Crear ayuda en contexto para campos de formulario
+
 description: AEM Forms permite agregar ayuda en contexto a los campos y paneles de los formularios adaptables, como texto o medios enriquecidos, incluidos vídeos.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
@@ -10,11 +14,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 95%
-
+source-wordcount: '444'
+ht-degree: 90%
 ---
-
 # Crear ayuda en contexto para campos de formulario{#authoring-in-context-help-for-form-fields}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -56,7 +58,7 @@ Puede utilizar el campo Descripción larga para especificar texto largo o incrus
 
 ![Adición de medios enriquecidos como ayuda en contexto para campos de formulario](assets/long-descriptions.png)
 
-Al añadir una descripción larga, se muestra el icono **?** junto al campo. Al hacer clic en el icono, se muestra el contenido añadido en la sección Descripción larga.
+Si agrega una descripción larga, se muestra **?** junto al campo. Al hacer clic en el icono, se muestra el contenido añadido en la sección Descripción larga.
 
 ![Ejemplo de ayuda en contexto con medios enriquecidos](assets/photoshop.png)
 
@@ -66,6 +68,6 @@ Además de la ayuda en contexto de los campos de formulario, puede especificar a
 
 ![Adición de ayuda en contexto para el panel de un formulario](assets/panel-level-help.png)
 
-Al añadir ayuda al panel, se muestra el icono **?** junto a la descripción del panel. Al hacer clic en el icono, se muestra el contenido añadido en la sección Contenido de ayuda del cuadro de diálogo de edición del panel.
+Si agrega ayuda al panel, se muestra **?** junto a la descripción del panel. Al hacer clic en el icono, se muestra el contenido añadido en la sección Contenido de ayuda del cuadro de diálogo de edición del panel.
 
 ![Ejemplo de ayuda en contexto a nivel del panel de formulario](assets/photoshop-1.png)

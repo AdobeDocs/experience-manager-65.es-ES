@@ -11,11 +11,9 @@ exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 48%
-
+source-wordcount: '1079'
+ht-degree: 50%
 ---
-
 # Habilitar los componentes principales de Forms adaptable en AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
 | Versión | Vínculo del artículo |

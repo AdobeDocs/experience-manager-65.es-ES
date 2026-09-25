@@ -1,8 +1,10 @@
 ---
 title: Sincronizar formularios adaptables con plantillas de formularios XFA
 description: Obtenga información sobre cómo sincronizar formularios con archivos XFA/XDP. Reutiliza campos de formularios sincronizados con los cambios realizados en los campos correspondientes de los archivos XFA/XDP.
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
@@ -10,18 +12,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 86%
-
+source-wordcount: '1241'
+ht-degree: 87%
 ---
-
 # Sincronizar formularios adaptables con plantillas de formularios XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 ## Introducción {#introduction}
 
-Puede crear un formulario adaptable basado en una plantilla de formulario XFA (archivo `*.XDP`). Esta reutilización le permite conservar su inversión en formularios XFA existentes. Para obtener información sobre cómo utilizar una plantilla de formulario XFA para crear un formulario adaptable, consulte [Crear un formulario adaptable basado en una plantilla](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Puede crear un formulario adaptable basado en una plantilla de formulario XFA (archivo `*.XDP`). Esta reutilización le permite conservar su inversión en los formularios XFA existentes. Para obtener información sobre cómo utilizar una plantilla de formulario XFA para crear un formulario adaptable, consulte [Crear un formulario adaptable basado en una plantilla](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 Puede reutilizar campos del archivo XDP en su formulario adaptable. Estos campos se denominan campos vinculados. Las propiedades de los campos vinculados (como scripts, etiquetas y formato de visualización) se copian del archivo XDP. También puede optar por anular el valor de algunas de estas propiedades.
 
@@ -59,7 +59,7 @@ El paquete contiene los siguientes recursos:
 
 1. Vaya a https://&lt;server>:&lt;port>/aem/forms.html. Especifique sus credenciales si se le solicita.
 1. Abra sample-af-xfa para editarlo en modo de creación.
-1. En el explorador de contenido de la barra lateral, seleccione la pestaña Objetos del modelo de datos. Arrastre NumericField1 y TextField1 al formulario adaptable.
+1. En el explorador de contenido de la barra lateral, seleccione la pestaña Objetos de modelo de datos. Arrastre NumericField1 y TextField1 al formulario adaptable.
 1. Cambie el título de NumericField1 de **Numeric Field** a **AF Numeric Field.**
 
 >[!NOTE]
@@ -88,7 +88,7 @@ Si se actualiza un archivo XDP, verá un icono en el editor cuando edite los for
 
 ## Sincronizar formularios adaptables con el archivo XDP más reciente {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
-Cuando se abre un formulario adaptable que no está sincronizado con el archivo XDP para la creación la siguiente vez, se muestra el mensaje: **Se ha actualizado la plantilla del esquema/formulario del formulario adaptable. `Click Here` para volver a basarlo con la nueva versión.**
+Cuando se abre un formulario adaptable que no está sincronizado con el archivo XDP para la creación la siguiente vez, se muestra el mensaje: **Se ha actualizado la plantilla de formulario/esquema del formulario adaptable. `Click Here` para volver a basarlo con la nueva versión.**
 
 Al hacer clic en el mensaje, se sincronizan los campos del formulario adaptable con los campos correspondientes del archivo XDP.
 
@@ -122,7 +122,7 @@ Los siguientes pasos ilustran este flujo de uso para los recursos en el ejemplo 
 
 1. Actualice el archivo `sample-form.xdp` y elimine NumericField1.
 1. Cargue el archivo `sample-form.xdp` en la interfaz de usuario de AEM Forms
-1. Abra el formulario adaptable `sample-xfa-af` para la creación. Se muestra el siguiente mensaje de error: Se ha actualizado la plantilla del esquema/formulario del formulario adaptable. `Click Here` para volver a basarlo con la nueva versión.
+1. Abra el formulario adaptable `sample-xfa-af` para la creación. Se muestra el siguiente mensaje de error: Se ha actualizado la plantilla de formulario/esquema del formulario adaptable. `Click Here` para volver a basarlo con la nueva versión.
 
 1. Haga clic en el enlace (con la etiqueta “`Click Here`”) en el mensaje. Se muestra un mensaje de error indicando que el campo ya no existe en el archivo XDP.
 
