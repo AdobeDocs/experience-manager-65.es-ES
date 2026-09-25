@@ -11,14 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '196'
 ht-degree: 4%
-
 ---
-
 # Revisar información del uso de credenciales {#review-credential-use-information}
 
-Las credenciales contienen información que describe su uso previsto y a la que se puede acceder mediante la aplicación web de extensiones de Acrobat Reader DC dirigida a usuarios finales. Puede utilizar esta información para determinar el tipo de credencial instalada (ya sea de evaluación o de producción) y sus fechas de validez.
+La credencial contiene información que describe su uso previsto y a la que se puede acceder mediante la aplicación web de usuario final de extensiones de Acrobat Reader DC. Puede utilizar esta información para determinar el tipo de credencial instalada (ya sea de evaluación o de producción) y sus fechas de validez.
 
 1. Abra un explorador web e introduzca esta dirección URL:
 
@@ -32,7 +30,7 @@ Las credenciales contienen información que describe su uso previsto y a la que 
 
    >[!NOTE]
    >
-   >Debe tener privilegios de administrador o superusuario para iniciar sesión con el nombre de usuario y la contraseña predeterminados. Para permitir que otros usuarios accedan a las extensiones de Acrobat Reader DC, cree las cuentas de usuario en Administración de usuarios y otorgue a los usuarios la función Aplicación web de extensiones de Acrobat Reader DC.
+   >Debe tener privilegios de administrador o superusuario para iniciar sesión con el nombre de usuario y la contraseña predeterminados. Para permitir que otros usuarios tengan acceso a las extensiones de Acrobat Reader DC, cree las cuentas de usuario en Administración de usuarios y conceda a los usuarios la función Aplicación web de extensiones de Acrobat Reader DC.
 
 1. Seleccione el alias de credencial de la lista Seleccionar credencial y revise la información incluida en Fecha de caducidad y Aviso de uso previsto.
 

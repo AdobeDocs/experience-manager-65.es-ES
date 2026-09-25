@@ -10,18 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 99%
-
+source-wordcount: '629'
+ht-degree: 96%
 ---
-
 # Reutilizar formularios adaptables {#reusing-adaptive-forms}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/reusing-adaptive-forms.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/reusing-adaptive-forms.html) |
 | AEM 6.5 | Este artículo |
 
 ## Introducción {#introduction}
@@ -62,7 +60,7 @@ Si pega el formulario en la misma carpeta o existe otro archivo con el mismo nom
 
 Después de hacer clic en el icono Pegar ![aem6forms_paste](assets/aem6forms_paste.png), este se volverá a ocultar. Solo puede utilizar la opción Pegar una vez simultáneamente. Para volver a crear una copia del mismo recurso, cópielo de nuevo.
 
-### Cambiar el contenido del formulario adaptable nuevo  {#change-contents-of-new-adaptive-form}
+### Cambiar el contenido del formulario adaptable nuevo {#change-contents-of-new-adaptive-form}
 
 El contenido de un formulario adaptable pegado se puede cambiar mediante los siguientes métodos para diferenciarlo del formulario copiado:
 

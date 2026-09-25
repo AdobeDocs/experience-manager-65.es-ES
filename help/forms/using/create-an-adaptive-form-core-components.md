@@ -1,6 +1,6 @@
 ---
 title: Crear un formulario adaptable
-description: Obtenga información sobre cómo crear un formulario adaptable mediante  [!DNL Experience Manager Forms]. Los formularios adaptables son formularios HTML5 interactivos que agilizan la recopilación y el procesamiento de la información. Descubra más información sobre cómo crear un formulario adaptable basado en un modelo de datos de formulario y un esquema XML o JSON.
+description: Aprenda a crear un formulario adaptable con [!DNL Experience Manager Forms]. Los formularios adaptables son formularios HTML5 interactivos que agilizan la recopilación y el procesamiento de la información. Descubra más información sobre cómo crear un formulario adaptable basado en un modelo de datos de formulario y un esquema XML o JSON.
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 contentOwner: Khushwant Singh
@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1794'
+source-wordcount: '1928'
 ht-degree: 77%
-
 ---
-
 # Crear componentes principales basados en Forms adaptable {#creating-an-adaptive-form-core-components}
 
 
@@ -35,13 +33,13 @@ Antes de empezar, obtenga información sobre el tipo de componentes de Forms dis
 
 * [Componentes principales de formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es): son componentes estandarizados de captura de datos. Estos componentes proporcionan funcionalidades de personalización, un tiempo de desarrollo reducido y costes de mantenimiento más bajos para sus experiencias de inscripción digital. Un desarrollador puede personalizar y aplicar estilo fácilmente a estos componentes. Adobe recomienda aprovechar estos componentes modernos y ampliables para desarrollar formularios adaptables.
 
-* [Componentes de base de formularios adaptables](creating-adaptive-form.md): estos son componentes clásicos (antiguos) de captura de datos. Puede seguir utilizándolos para editar su Formulario adaptable basado en componentes de base existentes. Si está creando formularios, el Adobe recomienda usar [Componentes principales de Forms adaptable](/help/forms/using/create-adaptive-form.md) para crear un Forms adaptable.
+* [Componentes de base de formularios adaptables](creating-adaptive-form.md): estos son componentes clásicos (antiguos) de captura de datos. Puede seguir utilizándolos para editar su Formulario adaptable basado en componentes de base existentes. Si está creando formularios, Adobe recomienda usar [Componentes principales de Forms adaptable](/help/forms/using/create-adaptive-form.md) para crear un Forms adaptable.
 
 ## Requisitos previos
 
 Para crear un formulario adaptable, es necesario lo siguiente:
 
-* **Habilite los componentes principales adaptables de Forms AEM para su entorno**: Se requiere la versión 41 o posterior del proyecto Archetype para [habilitar los componentes principales para su entorno](/help/forms/using/enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, se agregarán a su entorno la plantilla **Forms adaptable (componente principal)** y el tema Lienzo.
+* **Habilite los componentes principales de Forms adaptable para su entorno**: se requiere la versión 41 o posterior del proyecto de tipo de archivo de AEM para [habilitar los componentes principales para su entorno](/help/forms/using/enable-adaptive-forms-core-components.md). Al habilitar los componentes principales para su entorno, se agregarán a su entorno la plantilla **Forms adaptable (componente principal)** y el tema Lienzo.
 
 * **Una plantilla de formulario adaptable**: Una plantilla ofrece una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. También ofrece opciones para definir una temática y una acción de envío. La temática define la apariencia, y la acción de envío define la acción que debe realizarse al enviar un Formulario adaptable. También puede implementar [plantillas de muestra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) en su entorno. Esto le ayuda a empezar a crear formularios rápidamente.
 
@@ -57,12 +55,12 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Creación de un formulario adaptable {#create-an-adaptive-form}
 
-1. AEM Inicie sesión en su [instancia de autor local](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=es#author-and-publish-installs).
+1. Inicie sesión en [AEM author instance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs) local.
 
 1. Introduzca sus credenciales en la página de inicio de sesión de Experience Manager. Cuando haya iniciado sesión, en la esquina superior izquierda, seleccione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formularios]** > **[!UICONTROL Formularios y documentos]**.
 
@@ -86,7 +84,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 
 ## Utilice los componentes principales de Forms adaptable para crear el formulario
 
-Después de abrir el formulario para editarlo, puede utilizar los componentes principales adaptables de Forms disponibles para agregar campos de formulario al formulario. Puede arrastrar y soltar o utilizar la opción + [insertar componente] para agregar estos componentes a un formulario. AEM Consulte la documentación de componentes principales de para obtener más información sobre los [componentes principales de Forms adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#components) disponibles. También puede visitar [https://aemcomponents.dev/](https://aemcomponents.dev/) para ver los componentes principales disponibles en acción.
+Después de abrir el formulario para editarlo, puede utilizar los componentes principales adaptables de Forms disponibles para agregar campos de formulario al formulario. Puede arrastrar y soltar o utilizar la opción + [insertar componente] para agregar estos componentes a un formulario. Consulte la documentación de componentes principales de AEM para obtener más información sobre los [componentes principales de Forms adaptables](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es#components) disponibles. También puede visitar [https://aemcomponents.dev/](https://aemcomponents.dev/) para ver los componentes principales disponibles en acción.
 
 ## Configuración de una acción de envío para un formulario adaptable {#configure-submit-action-for-form}
 
@@ -95,7 +93,7 @@ Una acción de envío permite elegir el destino de los datos capturados mediante
 1. Abra el Explorador de contenido y seleccione el componente **[!UICONTROL Contenedor de guía]** del formulario adaptable.
 1. Haga clic en el icono de propiedades del contenedor de guía ![Propiedades de guía](/help/forms/using/assets/configure-icon.svg). Se abre el cuadro de diálogo Contenedor de formulario adaptable.
 
-1. Abra la pestaña **[!UICONTROL Envío]**.
+1. Haga clic en la pestaña **[!UICONTROL Envío]**.
 
    ![Haga clic en el icono Llave inglesa para abrir el cuadro de diálogo Contenedor de formulario adaptable y configurar una acción de envío](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
@@ -123,7 +121,7 @@ Al enviar un formulario, puede redirigir al usuario a otra página web o a un me
 
 ## Configuración de un esquema o un modelo de datos de formulario para un formulario adaptable {#configure-schema-or-data-model-for-form}
 
-Puede utilizar el modelo de datos del formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido. En función del requisito, conecte el formulario a un esquema JSON o a un modelo de datos de formulario:
+Puede utilizar el modelo de datos de formulario para conectar un formulario a una fuente de datos para enviar y recibir datos en función de las acciones del usuario. También puede conectar un formulario a un esquema JSON para recibir los datos enviados en un formato predefinido. En función del requisito, conecte el formulario a un esquema JSON o a un modelo de datos de formulario:
 
 * [Crear un esquema JSON y cargarlo en su entorno](/help/forms/using/adaptive-form-json-schema-form-model.md)
 * [Crear modelo de datos de formulario](/help/forms/using/create-form-data-models.md)
@@ -202,4 +200,4 @@ Para cambiar el nombre de un formulario adaptable, realice los siguientes pasos:
 
 * [Crear un formulario adaptable basado en componentes principales](create-an-adaptive-form-core-components.md)
 * [Crear o agregar un formulario adaptable a una página de AEM Sites o a un fragmento de experiencia](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Plantillas temáticas y modelos de datos de formularios de ejemplo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)
+* [Plantillas de temáticas de muestra y modelos de datos de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=es)

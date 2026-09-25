@@ -1,21 +1,24 @@
 ---
 title: Validar un documento DDX mediante la API de servicio web
+
 description: Utilice la API del servicio Assembler para validar un documento DDX.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/validating_ddx_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 role: Developer
 exl-id: 069e5b10-ab93-4492-a70d-6a0d462105a6
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '642'
 ht-degree: 2%
-
 ---
-
 # Validar un documento DDX mediante la API de servicio web {#validate-a-ddx-document-using-theweb-service-api}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -38,10 +41,10 @@ Valide un documento DDX mediante la API del servicio Assembler (servicio web):
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Hacer referencia a un documento DDX existente.
 

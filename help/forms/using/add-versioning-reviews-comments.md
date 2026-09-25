@@ -6,11 +6,9 @@ role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
 source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 50%
-
+source-wordcount: '652'
+ht-degree: 52%
 ---
-
 # Versiones, revisión y comentarios de un formulario adaptable
 
 <!--
@@ -64,7 +62,7 @@ Los autores de formularios pueden comparar dos versiones diferentes de un formul
 
 ## Añadir comentarios {#add-comments}
 
-Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre los formularios.  Cualquier usuario de un formulario puede realizar comentarios en un formulario o revisarlo mediante comentarios. Para realizar comentarios en un formulario, seleccione un **[!UICONTROL Formulario]** y añada un **[!UICONTROL Comentario]** al formulario.
+Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre los formularios. Cualquier usuario de un formulario puede realizar comentarios en un formulario o revisarlo mediante comentarios. Para realizar comentarios en un formulario, seleccione un **[!UICONTROL Formulario]** y añada un **[!UICONTROL Comentario]** al formulario.
 
 >[!NOTE]
 > Cuando se usan comentarios en los componentes principales de los formularios adaptables, como se ha indicado anteriormente, la funcionalidad del formulario [agregar revisores a los formularios](/help/forms/using/create-reviews-forms.md) está deshabilitada.
@@ -91,6 +89,6 @@ Para añadir anotaciones a un formulario, siga los siguientes pasos:
 
    ![Ver anotaciones añadidas](assets/see-annotations.png)
 
-## Véase también
+## Ver también
 
 * [Comparar componentes principales de Forms adaptable](/help/forms/using/compare-forms-core-components.md)

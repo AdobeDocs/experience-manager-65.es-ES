@@ -1,22 +1,25 @@
 ---
 title: Validar documentos DDX
+
 description: Valide un documento DDX mediante programación utilizando la API de Java y la API de servicio web.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1542'
 ht-degree: 2%
-
 ---
-
 # Validar documentos DDX {#validating-ddx-documents}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -56,7 +59,7 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-utilities.jar y jbossall-client.jar con archivos JAR específicos del servidor de aplicaciones J2EE en el que AEM Forms está implementado.
 
-**Crear un cliente de ensamblador de PDF**
+**Crear un cliente de PDF Assembler**
 
 Para poder realizar mediante programación una operación de Assembler, debe crear un cliente de servicio Assembler.
 
@@ -138,7 +141,7 @@ Valide un documento DDX mediante la API del servicio Assembler (Java):
 
 [Validar documentos DDX](#validating-ddx-documents)
 
-SOAP SOAP [Inicio rápido (modo de): validación de documentos DDX mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) (modo de)
+[Inicio rápido (modo SOAP): Validación de documentos DDX mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) (modo SOAP)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -164,10 +167,10 @@ Valide un documento DDX mediante la API del servicio Assembler (servicio web):
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Hacer referencia a un documento DDX existente.
 

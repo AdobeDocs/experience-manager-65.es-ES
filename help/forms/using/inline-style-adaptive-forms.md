@@ -1,8 +1,12 @@
 ---
 title: Aplicar estilos dentro de la línea a los componentes de un formulario adaptable
+
 description: Aunque puede aplicar estilos personalizados a un formulario adaptable, también puede aplicar propiedades CSS en línea a los componentes individuales de un formulario adaptable.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
@@ -10,18 +14,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 99%
-
+source-wordcount: '638'
+ht-degree: 95%
 ---
-
 # Aplicar estilos dentro de la línea a los componentes de un formulario adaptable {#inline-styling-of-adaptive-form-components}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html) |
 | AEM 6.5 | Este artículo |
 
 Puede definir el aspecto y el estilo generales de un formulario adaptable especificando los estilos mediante el [Editor de temas](../../forms/using/themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptable individuales y previsualizar los cambios sobre la marcha. Los estilos en línea reemplazan el estilo proporcionado en el tema.

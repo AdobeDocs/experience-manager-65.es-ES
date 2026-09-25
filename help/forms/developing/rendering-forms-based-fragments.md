@@ -1,22 +1,25 @@
 ---
 title: Procesar formularios basados en fragmentos
+
 description: Utilice el servicio Forms para procesar formularios basados en fragmentos creados con Designer.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 3%
-
+source-wordcount: '2204'
+ht-degree: 4%
 ---
-
 # Procesar formularios basados en fragmentos {#rendering-forms-based-on-fragments}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -41,7 +44,7 @@ Estas son las ventajas de utilizar fragmentos:
 
 ### Combinar un diseño de formulario ensamblado mediante fragmentos {#assembling-a-form-design-assembled-using-fragments}
 
-Puede combinar un diseño de formulario para pasarlo al servicio de Forms en función de varios fragmentos. Para ensamblar varios fragmentos, utilice el servicio Assembler. Para ver un ejemplo de cómo usar el servicio Assembler para crear un diseño de formulario utilizado por otros servicios de Forms (el servicio Output), vea [Crear documentos de PDF mediante fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). En lugar de utilizar el servicio Output, puede realizar el mismo flujo de trabajo mediante el servicio Forms.
+Puede combinar un diseño de formulario para pasarlo al servicio de Forms en función de varios fragmentos. Para ensamblar varios fragmentos, utilice el servicio Assembler. Para ver un ejemplo de cómo usar el servicio Assembler para crear un diseño de formulario usado por otros servicios de Forms (el servicio Output), vea [Crear documentos de PDF mediante fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). En lugar de utilizar el servicio Output, puede realizar el mismo flujo de trabajo mediante el servicio Forms.
 
 Al utilizar el servicio Assembler, pasa un diseño de formulario que se ensambló mediante fragmentos. El diseño de formulario creado no hace referencia a otros fragmentos. Por el contrario, este tema trata sobre cómo pasar un diseño de formulario que hace referencia a otros fragmentos al servicio de Forms. Sin embargo, Assembler no ensambló el diseño de formulario. Se creó en Designer.
 
@@ -81,7 +84,7 @@ Al procesar un formulario basado en fragmentos, solo debe hacer referencia al pr
 
 **Procesar el formulario**
 
-Un formulario basado en fragmentos se puede procesar del mismo modo que los formularios no fragmentados. Es decir, puede procesar el formulario como PDF, HTML o guías del formulario (obsoleto). El ejemplo de esta sección procesa un formulario basado en fragmentos como un formulario PDF interactivo. (Consulte [Procesamiento de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+Un formulario basado en fragmentos se puede procesar del mismo modo que los formularios no fragmentados. Es decir, puede procesar el formulario como PDF, HTML o guías del formulario (obsoleto). El ejemplo de esta sección procesa un formulario basado en fragmentos como un formulario interactivo de PDF. (Consulte [Procesamiento de PDF forms interactivo](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 **Escriba el flujo de datos del formulario en el explorador web del cliente**
 
@@ -149,7 +152,7 @@ Procesar un formulario basado en fragmentos mediante la API de Forms (Java):
 
 [Procesar formularios basados en fragmentos](#rendering-forms-based-on-fragments)
 
-[SOAP Inicio rápido (modo de): Procesamiento de un formulario basado en fragmentos mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[Inicio rápido (modo SOAP): Procesamiento de un formulario basado en fragmentos mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -181,7 +184,7 @@ Procesar un formulario basado en fragmentos mediante la API de Forms (servicio w
 
    * Un valor de cadena que especifica el nombre del diseño del formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta de acceso completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Objeto `BLOB` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`.
-   * Objeto `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. La opción de PDF etiquetado no se puede definir si el documento de entrada es un documento de PDF. Si el archivo de entrada es un archivo XDP, se puede establecer la opción de PDF etiquetado.
+   * Objeto `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. La opción PDF etiquetada no se puede establecer si el documento de entrada es un documento de PDF. Si el archivo de entrada es un archivo XDP, se puede establecer la opción PDF etiquetado.
    * Un objeto `URLSpec` que contiene valores de URI requeridos por el servicio Forms.
    * Objeto `java.util.HashMap` que almacena datos adjuntos de archivos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
    * Un objeto `com.adobe.idp.services.holders.BLOBHolder` vacío que ha rellenado el método. Este parámetro se utiliza para almacenar el formulario procesado.

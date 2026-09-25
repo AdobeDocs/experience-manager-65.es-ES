@@ -11,20 +11,18 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 1%
-
+source-wordcount: '612'
+ht-degree: 2%
 ---
-
 # Aprovisionar usuarios justo a tiempo {#just-in-time-user-provisioning}
 
-AEM Los formularios adaptables admiten el aprovisionamiento Just-In-Time de usuarios que aún no existen en Administración de usuarios. Con el aprovisionamiento Just-In-Time, los usuarios se agregan automáticamente a Administración de usuarios después de que sus credenciales se hayan autenticado correctamente. Además, las funciones y los grupos relevantes se asignan dinámicamente al nuevo usuario.
+Los formularios AEM Forms admiten el aprovisionamiento Just-In-Time de usuarios que aún no existen en Administración de usuarios. Con el aprovisionamiento Just-In-Time, los usuarios se agregan automáticamente a Administración de usuarios después de que sus credenciales se hayan autenticado correctamente. Además, las funciones y los grupos relevantes se asignan dinámicamente al nuevo usuario.
 
 ## Necesidad de aprovisionamiento de usuarios justo a tiempo {#need-for-just-in-time-user-provisioning}
 
 Así es como funciona la autenticación tradicional:
 
-1. AEM Cuando un usuario intenta iniciar sesión en los formularios de la, Administración de usuarios pasa las credenciales del usuario de forma secuencial a todos los proveedores de autenticación disponibles. (Las credenciales de inicio de sesión incluyen una combinación de nombre de usuario y contraseña, vale Kerberos, firma PKCS7, etc.).
+1. Cuando un usuario intenta iniciar sesión en los formularios de AEM, Administración de usuarios pasa las credenciales del usuario secuencialmente a todos los proveedores de autenticación disponibles. (Las credenciales de inicio de sesión incluyen una combinación de nombre de usuario y contraseña, vale Kerberos, firma PKCS7, etc.).
 1. El proveedor de autenticación valida las credenciales.
 1. A continuación, el proveedor de autenticación comprueba si el usuario existe en la base de datos de administración de usuarios. Los siguientes resultados son posibles:
 
@@ -43,7 +41,7 @@ Cuando se implementa el aprovisionamiento Just-In-Time, se crea un nuevo usuario
 
 ### API para el aprovisionamiento justo a tiempo {#apis-for-just-in-time-provisioning}
 
-AEM Los formularios de proporcionan las siguientes API para el aprovisionamiento Just-In-Time:
+Los formularios AEM Forms proporcionan las siguientes API para el aprovisionamiento Just-In-Time:
 
 ```java
 package com.adobe.idp.um.spi.authentication  ;
@@ -99,7 +97,7 @@ public Boolean assign(User user);
 
 ## Entre bastidores {#behind-the-scenes}
 
-AEM Supongamos que un usuario está intentando iniciar sesión en formularios y que un proveedor de autenticación acepta sus credenciales de usuario. Si el usuario aún no existe en la base de datos de administración de usuarios, se produce un error en la comprobación de identidad del usuario. AEM Ahora, los formularios de realizan las siguientes acciones:
+Supongamos que un usuario está intentando iniciar sesión en formularios AEM y que un proveedor de autenticación acepta sus credenciales de usuario. Si el usuario aún no existe en la base de datos de administración de usuarios, se produce un error en la comprobación de identidad del usuario. AEM Forms ahora realiza las siguientes acciones:
 
 1. Cree un objeto `UserProvisioningBO` con los datos de autenticación y colóquelo en un mapa de credenciales.
 1. Según la información de dominio devuelta por `UserProvisioningBO`, recupere e invoque los dominios registrados `IdentityCreator` y `AssignmentProvider` para el dominio.

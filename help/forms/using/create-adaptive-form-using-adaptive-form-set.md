@@ -1,8 +1,12 @@
 ---
 title: Crear un formulario adaptable mediante un conjunto de formularios adaptables
+
 description: Con AEM Forms, puede juntar formularios adaptables para crear un único formulario de gran tamaño y comprender sus características.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
@@ -10,11 +14,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '636'
 ht-degree: 96%
-
 ---
-
 # Crear un formulario adaptable mediante un conjunto de formularios adaptables{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>

@@ -11,24 +11,22 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '372'
 ht-degree: 3%
-
 ---
-
 # Aspectos básicos de la administración de certificados y credenciales {#basics-of-managing-certificates-and-credentials}
 
-Una *credencial* contiene la información de clave privada necesaria para firmar o identificar documentos. Un *certificado* es información de clave pública configurada para confianza. AEM Los formularios de datos utilizan certificados y credenciales para varios fines:
+Una *credencial* contiene la información de clave privada necesaria para firmar o identificar documentos. Un *certificado* es información de clave pública configurada para confianza. Los formularios AEM Forms utilizan certificados y credenciales de para varios fines:
 
-* Las extensiones de Acrobat Reader DC utilizan una credencial para habilitar los derechos de uso de Adobe Reader en documentos de PDF. (Consulte [Configuración de credenciales para usarlas con extensiones de Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)).
-* Puede configurar Rights Management para que muestre las credenciales de uso en Acrobat únicamente de emisores de confianza. (Consulte [Configuración de la pantalla del Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) El nombre común (CN) debe estar presente en el certificado.
+* Las extensiones de Acrobat Reader DC utilizan una credencial para habilitar los derechos de uso de Adobe Reader en documentos de PDF. (Consulte [Configuración de credenciales para usarlas con las extensiones de Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)).
+* Puede configurar Rights Management para que muestre las credenciales de uso en Acrobat únicamente de emisores de confianza. (Consulte [Configuración de la pantalla de Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) El nombre común (CN) debe estar presente en el certificado.
 * El servicio Signature accede a los certificados y credenciales. Para obtener más información sobre el servicio Signature, consulte [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_65).
 
 **Generando una clave de par**
 
-AEM Forms utiliza su almacén de confianza para almacenar y administrar certificados, credenciales y listas de revocación de certificados (CRL). Además, puede utilizar un dispositivo HSM (Hardware Security Module) independiente para almacenar claves privadas.
+Los formularios AEM Forms utilizan su almacén de confianza para almacenar y administrar certificados, credenciales y listas de revocación de certificados (CRL). Además, puede utilizar un dispositivo HSM (Hardware Security Module) independiente para almacenar claves privadas.
 
-AEM Los formularios no proporcionan ninguna opción para generar un par de claves. AEM Sin embargo, puede generarla con herramientas como Java keytool e importarla en el almacén de confianza de formularios de la red de herramientas de la red de formularios de la organización de formularios de la. Para obtener más información sobre la herramienta clave de Java, consulte lo siguiente:
+Los formularios de AEM no proporcionan ninguna opción para generar un par de claves. Sin embargo, puede generarla con herramientas como Java keytool e importarla en el almacén de confianza de formularios AEM Forms. Para obtener más información sobre la herramienta clave de Java, consulte lo siguiente:
 
 [https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html](https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html)
 
@@ -36,7 +34,7 @@ AEM Los formularios no proporcionan ninguna opción para generar un par de clave
 
 [https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
-AEM Se admiten los siguientes tipos de firma, que se pueden importar en formularios:
+Los siguientes tipos de firma son compatibles y se pueden importar en formularios AEM Forms:
 
 * Firma XML
 * XMLTimeStampToken

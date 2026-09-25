@@ -13,28 +13,26 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 24%
-
+source-wordcount: '958'
+ht-degree: 30%
 ---
-
 # Configuraciones de URL avanzadas {#url}
 
 >[!NOTE]
 >
->La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. AEM Como resultado, las preocupaciones de SEO deben ser abordadas en muchos Proyectos de. Consulte [Prácticas recomendadas para la administración de direcciones URL y SEO](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=es) para obtener más información.
+>La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. Como resultado, las cuestiones relacionadas con el SEO deben abordarse en muchos proyectos de AEM. Consulte [Prácticas recomendadas para la administración de direcciones URL y SEO](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) para obtener más información.
 
 Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) proporcionan configuraciones avanzadas para personalizar las direcciones URL de las páginas de productos y categorías. Muchas implementaciones personalizan estas direcciones URL con fines de optimización de los motores de búsqueda (SEO). En el siguiente vídeo se explica cómo configurar el `UrlProvider` servicio y las funciones de las [Asignaciones de Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar las direcciones URL de las páginas de productos y categorías.
 
->[!VIDEO](https://video.tv.adobe.com/v/38582/?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuración {#configuration}
 
-CIF Para configurar el servicio `UrlProvider` según los requisitos de SEO y las necesidades, un proyecto debe proporcionar una configuración OSGI para la &quot;configuración del proveedor de URL&quot;.
+Para configurar el servicio `UrlProvider` según los requisitos de SEO y las necesidades, un proyecto debe proporcionar una configuración OSGI para la &quot;configuración del proveedor de URL de CIF&quot;.
 
 >[!NOTE]
 >
->AEM CIF Desde la versión 2.0.0 de los componentes principales de la de trabajo, la configuración del proveedor de URL solo proporciona formatos de URL predefinidos, en lugar de los formatos configurables de texto libre conocidos en las versiones 1.x. Además, el uso de selectores para pasar datos en direcciones URL se ha sustituido por sufijos.
+>Desde la versión 2.0.0 de los componentes principales de AEM CIF, la configuración del proveedor de URL solo proporciona formatos de URL predefinidos, en lugar de los formatos configurables de texto libre conocidos en las versiones 1.x. Además, el uso de selectores para pasar datos en direcciones URL se ha sustituido por sufijos.
 
 ### Formato de URL de página de producto {#product}
 
@@ -83,7 +81,7 @@ Es posible crear [varias categorías y páginas de productos](multi-template-usa
 
 `UrlProvider` está preconfigurado para generar vínculos profundos a dichas páginas en instancias de nivel de creación. Esto resulta útil para los editores que exploran un sitio mediante el modo de vista previa, navegan a una página de producto o categoría específica y vuelven al modo de edición para editar la página.
 
-En las instancias de nivel de publicación, por otro lado, las direcciones URL de la página del catálogo deben mantenerse estables para no perder ganancias en las clasificaciones de los motores de búsqueda, por ejemplo. Debido a esto, las instancias del nivel de publicación no procesarán vínculos profundos a páginas de catálogo específicas de forma predeterminada. CIF Para cambiar este comportamiento, la _Estrategia de página específica del proveedor de URL de_ se puede configurar para que siempre genere direcciones URL de página específicas.
+En las instancias de nivel de publicación, por otro lado, las direcciones URL de la página del catálogo deben mantenerse estables para no perder ganancias en las clasificaciones de los motores de búsqueda, por ejemplo. Debido a esto, las instancias del nivel de publicación no procesarán vínculos profundos a páginas de catálogo específicas de forma predeterminada. Para cambiar este comportamiento, se puede configurar la _estrategia de página específica del proveedor de URL de CIF_ para que siempre genere direcciones URL de página específicas.
 
 ## Formatos de URL personalizados {#custom-url-format}
 
@@ -93,11 +91,11 @@ Las implementaciones de formato de URL personalizadas deben implementar un par d
 
 ## Combinación con asignaciones de Sling {#sling-mapping}
 
-Además de `UrlProvider`, también es posible configurar [Asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para reescribir y procesar direcciones URL. AEM El proyecto de tipo de archivo también proporciona [una configuración de ejemplo](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para configurar algunas asignaciones de Sling para el puerto 4503 (publicación) y 80 (Dispatcher).
+Además de `UrlProvider`, también es posible configurar [Asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para reescribir y procesar direcciones URL. El proyecto AEM Archetype también proporciona [una configuración de ejemplo](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para configurar algunas asignaciones de Sling para el puerto 4503 (publicación) y 80 (Dispatcher).
 
-## AEM Combinación con el Dispatcher de {#dispatcher}
+## Combinación con AEM Dispatcher {#dispatcher}
 
-AEM Las reescrituras de URL también se pueden lograr usando el servidor HTTP de Dispatcher con el módulo `mod_rewrite` de la interfaz de usuario. El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona una referencia a la configuración de AEM Dispatcher que ya incluye las [reglas de reescritura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para el tamaño generado.
+Las reescrituras de URL también se pueden lograr utilizando el servidor HTTP AEM Dispatcher con el módulo `mod_rewrite`. El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona una referencia a la configuración de AEM Dispatcher que ya incluye las [reglas de reescritura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para el tamaño generado.
 
 ## Ejemplo
 
@@ -110,5 +108,5 @@ El proyecto [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-gui
 ## Recursos adicionales
 
 * [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia)
-* [Asignación de recursos de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=es)
+* [Asignación de recursos de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

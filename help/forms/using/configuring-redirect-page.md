@@ -1,8 +1,12 @@
 ---
 title: Configurar la página de redireccionamiento
+
 description: Después de rellenar un formulario adaptable, los usuarios pueden ser redirigidos a una página web que los autores del formulario pueden configurar mientras lo crean..
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: be1a774f-5681-443f-b195-28e89a020547
@@ -10,18 +14,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 99%
-
+source-wordcount: '342'
+ht-degree: 92%
 ---
-
 # Configurar la página de redireccionamiento{#configuring-redirect-page}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-redirect-page.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-redirect-page.html) |
 | AEM 6.5 | Este artículo |
 
 Los autores de formularios pueden configurar una página para cada formulario, a la cual se redirigirá a los usuarios una vez enviado.
@@ -41,7 +43,7 @@ Los autores de formularios pueden utilizar los siguientes parámetros, los cuale
 
 * **Acción Almacenar contenido** (obsoleto) `contentPath`: se aprueba la ruta del nodo en el repositorio donde se almacenan los datos enviados.
 
-* **Acción Almacenar PDF** (obsoleto): `contentPath`de los datos enviados y la ruta al nodo que almacena el archivo PDF en el repositorio, se aprueba 
+* **Acción Almacenar PDF** (obsoleto): `contentPath`de los datos enviados y la ruta al nodo que almacena el archivo PDF en el repositorio, se aprueba
 
 * **Enviar al flujo de trabajo de Forms**: se aprueban los parámetros de salida devueltos por el flujo de trabajo de Forms.
 
