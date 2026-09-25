@@ -1,38 +1,40 @@
 ---
 title: Desarrollo y ampliación de flujos de trabajo
+
 description: AEM proporciona varias herramientas y recursos para crear modelos de flujo de trabajo, desarrollar pasos de flujo de trabajo y para interactuar mediante programación con flujos de trabajo
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1460'
-ht-degree: 3%
-
+source-wordcount: '1494'
+ht-degree: 4%
 ---
-
 
 # Desarrollo y ampliación de flujos de trabajo{#developing-and-extending-workflows}
 
 AEM proporciona varias herramientas y recursos para crear modelos de flujo de trabajo, desarrollar pasos de flujo de trabajo y para interactuar mediante programación con flujos de trabajo.
 
-AEM Los flujos de trabajo permiten automatizar los procesos para administrar recursos y publicar contenido en el entorno de la. Los flujos de trabajo se componen de una serie de pasos, en los que cada paso realiza una tarea discreta. Puede utilizar la lógica y los datos de tiempo de ejecución para decidir cuándo puede continuar un proceso y seleccionar el siguiente paso de uno de los múltiples pasos posibles.
+Los flujos de trabajo permiten automatizar procesos para administrar recursos y publicar contenido en el entorno de AEM. Los flujos de trabajo se componen de una serie de pasos, en los que cada paso realiza una tarea discreta. Puede utilizar la lógica y los datos de tiempo de ejecución para decidir cuándo puede continuar un proceso y seleccionar el siguiente paso de uno de los múltiples pasos posibles.
 
-Por ejemplo, los procesos empresariales para crear y publicar páginas web incluyen tareas de aprobación y firma de varios participantes. AEM Estos procesos se pueden modelar mediante flujos de trabajo de la y aplicarse a contenido específico.
+Por ejemplo, los procesos empresariales para crear y publicar páginas web incluyen tareas de aprobación y firma de varios participantes. Estos procesos se pueden modelar con flujos de trabajo de AEM y aplicarse a contenido específico.
 
 Los aspectos clave se tratan a continuación, mientras que las siguientes páginas tratan más detalles:
 
 * [Creación de modelos de flujo de trabajo](/help/sites-developing/workflows-models.md)
 * [Ampliación de la funcionalidad del flujo de trabajo](/help/sites-developing/workflows-customizing-extending.md)
-* [Interactuar con flujos de trabajo mediante programación](/help/sites-developing/workflows-program-interaction.md)
+* [Interacción con flujos de trabajo mediante programación](/help/sites-developing/workflows-program-interaction.md)
 * [Referencia de pasos de flujo de trabajo](/help/sites-developing/workflows-step-ref.md)
 * [Referencia del proceso de flujo de trabajo](/help/sites-developing/workflows-process-ref.md)
-* [Prácticas recomendadas de flujo de trabajo](/help/sites-developing/workflows-best-practices.md)
+* [Prácticas recomendadas de flujos de trabajo](/help/sites-developing/workflows-best-practices.md)
 
 >[!NOTE]
 >
@@ -41,8 +43,8 @@ Los aspectos clave se tratan a continuación, mientras que las siguientes págin
 >* Al participar en flujos de trabajo, consulte [Uso de flujos de trabajo](/help/sites-authoring/workflows.md).
 >* Para administrar flujos de trabajo e instancias de flujo de trabajo, consulte [Administrar flujos de trabajo](/help/sites-administering/workflows.md).
 >* Para ver un artículo completo de la comunidad, consulte [Modificación de Digital Assets mediante flujos de trabajo de Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=es)
->* AEM Consulte [Preguntar al seminario web de expertos de la sobre los flujos de trabajo](https://communities.adobeconnect.com/p5s33iburd54/).
->* AEM Cambios en las ubicaciones de la información. Consulte [Reestructuración de repositorios en la versión 6.5](/help/sites-deploying/repository-restructuring.md) de la biblioteca de recursos y [Prácticas recomendadas de flujo de trabajo - Ubicaciones](/help/sites-developing/workflows-best-practices.md#locations).
+>* Consulte [Preguntar al seminario web de expertos de AEM sobre flujos de trabajo](https://communities.adobeconnect.com/p5s33iburd54/).
+>* Cambios en las ubicaciones de la información. Consulte [Reestructuración de repositorios en AEM 6.5](/help/sites-deploying/repository-restructuring.md) y [Prácticas recomendadas de flujo de trabajo - Ubicaciones](/help/sites-developing/workflows-best-practices.md#locations).
 >
 
 ## Modelo {#model}
@@ -124,7 +126,7 @@ Existen varios tipos de flujo de trabajo como se indica en la consola Modelos de
 
 * **Predeterminado**
 
-  AEM Estos tipos son los flujos de trabajo listos para usar incluidos en una instancia estándar de la interfaz de usuario de la aplicación de.
+  Estos tipos son los flujos de trabajo predeterminados incluidos en una instancia estándar de AEM.
 
 * Flujos de trabajo personalizados (sin indicador en la consola)
 
@@ -132,7 +134,7 @@ Existen varios tipos de flujo de trabajo como se indica en la consola Modelos de
 
 * **Heredado**
 
-  AEM Flujos de trabajo creados en una versión anterior de. Estos flujos de trabajo se pueden retener durante una actualización o exportarse como un paquete de flujo de trabajo de la versión anterior y luego importarse en la nueva versión.
+  Flujos de trabajo creados en una versión anterior de AEM. Estos flujos de trabajo se pueden retener durante una actualización o exportarse como un paquete de flujo de trabajo de la versión anterior y luego importarse en la nueva versión.
 
 ### Flujos de trabajo transitorios {#transient-workflows}
 
@@ -199,14 +201,14 @@ Por ejemplo, para un flujo de trabajo con seis pasos y cuatro fases:
    | Etapa 2 | Crear |
    | Etapa 3 | Revisión |
    | Etapa 4 | Aprobar |
-   | Etapa 5 | Completado |
-   | Etapa 6 | Completado |
+   | Etapa 5 | Completar |
+   | Etapa 6 | Completar |
 
 1. Cuando se ejecuta el flujo de trabajo, el usuario puede ver el progreso según los nombres de las fases (en lugar de los nombres de las fases). El progreso del flujo de trabajo se muestra en la pestaña [WORKFLOW INFO de la ventana de detalles de la tarea del elemento de flujo de trabajo](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) enumerado en la [bandeja de entrada](/help/sites-authoring/inbox.md).
 
 ### Flujos de trabajo y Forms {#workflows-and-forms}
 
-AEM Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en la. AEM Se puede combinar con los [componentes principales de los componentes de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=es) disponibles en una instancia de estándar o con la [solución de AEM Forms](/help/forms/using/aem-forms-workflow.md).
+Normalmente, los flujos de trabajo se utilizan para procesar los envíos de formularios en AEM. Se puede combinar con los [componentes principales de los componentes de formulario](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponibles en una instancia de AEM estándar o con la [solución de AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Al crear un formulario, el envío del formulario se puede asociar fácilmente a un modelo del flujo de trabajo. Por ejemplo, para almacenar el contenido en una ubicación concreta del repositorio o para notificar a un usuario el envío del formulario y su contenido.
 

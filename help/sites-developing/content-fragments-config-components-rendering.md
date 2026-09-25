@@ -1,9 +1,13 @@
 ---
 title: Fragmentos de contenido Configurar componentes para procesamiento
+
 description: Fragmentos de contenido Configurar componentes para procesamiento
+
+
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
 solution: Experience Manager, Experience Manager Sites
@@ -11,11 +15,9 @@ feature: Content Fragments
 role: Developer
 source-git-commit: 2e141ab04be33fea09ed7f6608dc9dcfaf2e50f1
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 6%
-
+source-wordcount: '475'
+ht-degree: 5%
 ---
-
 # Fragmentos de contenido Configurar componentes para procesamiento{#content-fragments-configuring-components-for-rendering}
 
 Hay varios [servicios avanzados](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) relacionados con la representación de fragmentos de contenido. Para utilizar estos servicios, los tipos de recurso de dichos componentes deben darse a conocer al marco de trabajo de fragmentos de contenido.
@@ -73,7 +75,7 @@ La configuración de OSGi es:
    <td>Descripción</td>
   </tr>
   <tr>
-   <td><strong>Tipo de medio</strong></td>
+   <td><strong>Tipo de recurso</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
    <td>El tipo de recurso que se va a registrar; por ejemplo, <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
@@ -130,9 +132,9 @@ Para algunas funciones (por ejemplo, para procesar solo un intervalo de párrafo
 >
 >Esto puede cambiar en los hitos 6.5 posteriores.
 
-## Ejemplos {#example}
+## Ejemplo {#example}
 
-AEM Por ejemplo, consulte lo siguiente (en una instancia de aplicación predeterminada de la interfaz de usuario de la interfaz de usuario de la aplicación de configuración de la aplicación de configuración de la aplicación de configuración de la aplicación):
+Por ejemplo, consulte lo siguiente (en una instancia de AEM predeterminada):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config

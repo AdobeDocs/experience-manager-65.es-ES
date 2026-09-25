@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 0%
-
+source-wordcount: '328'
+ht-degree: 5%
 ---
-
 # Creación de una raíz de idioma mediante la IU clásica{#creating-a-language-root-using-the-classic-ui}
 
 El siguiente procedimiento utiliza la IU clásica para crear una raíz de idioma de un sitio. Para obtener más información, vea [Crear una raíz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).

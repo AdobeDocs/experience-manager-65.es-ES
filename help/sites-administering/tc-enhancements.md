@@ -1,6 +1,6 @@
 ---
 title: Mejoras de traducción
-description: AEM Mejoras y refinamientos incrementales de las capacidades de administración de traducciones de la.
+description: Mejoras y refinamientos incrementales de las funciones de administración de traducciones de AEM.
 topic-tags: site-features
 content-type: reference
 feature: Language Copy
@@ -9,14 +9,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 26%
-
+source-wordcount: '687'
+ht-degree: 29%
 ---
-
 # Mejoras de traducción{#translation-enhancements}
 
-AEM Esta página presenta mejoras y refinamientos incrementales en las capacidades de administración de traducciones de la.
+Esta página presenta mejoras y ampliaciones progresivas de las funciones de administración de traducciones de AEM.
 
 ## Automatización del proyecto de traducción {#translation-project-automation}
 
@@ -80,8 +78,8 @@ Para usar esta función, haga lo siguiente:
 
 * Configure un sistema de administración de etiquetas para su uso con AEM.
 * El conector debe implementar el método [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
-   * El código dentro de este método determina qué sucede con la solicitud de actualización de memoria de traducción.
-   * El marco de traducción de AEM envía los pares de valor de cadena (traducción original y actualizada) al sistema de gestión de etiquetas mediante esta implementación de método.
+  * El código dentro de este método determina qué sucede con la solicitud de actualización de memoria de traducción.
+  * El marco de traducción de AEM envía los pares de valor de cadena (traducción original y actualizada) al sistema de gestión de etiquetas mediante esta implementación de método.
 
 Las actualizaciones de la memoria de traducción se pueden interceptar y enviar a un destino personalizado, en los casos en que se utilice una memoria de traducción propia.
 
@@ -102,7 +100,7 @@ Las raíces de los idiomas ahora se pueden agrupar en nodos, por ejemplo, por re
 
 >[!NOTE]
 >
->Las raíces de idioma pueden tener cualquier nombre de página, en lugar de solo el código ISO del idioma. AEM AEM siempre comprobará primero la ruta y el nombre, pero si el nombre de la página no identifica un idioma, comprobará la propiedad cq:language de la página para la identificación del idioma.
+>Las raíces de idioma pueden tener cualquier nombre de página, en lugar de solo el código ISO del idioma. AEM comprobará siempre primero la ruta y el nombre, pero si el nombre de la página no identifica un idioma, AEM comprobará la propiedad cq:language de la página para identificar el idioma.
 
 ## Informes de estado de traducción {#translation-status-reporting}
 

@@ -1,22 +1,24 @@
 ---
-title: Configurar la página para la edición masiva de propiedades de página
+title: Configuración de la página para la edición masiva de las propiedades de página
+
 description: La edición masiva de propiedades de página permite editar las propiedades de varias páginas a la vez
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Developer
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 3%
-
+source-wordcount: '419'
+ht-degree: 9%
 ---
-
-# Configurar la página para la edición masiva de propiedades de página {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configuración de la página para la edición masiva de las propiedades de página {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 [La edición masiva de propiedades de página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) le permite editar las propiedades de varias páginas a la vez.
 
@@ -56,7 +58,7 @@ Debido a la posibilidad de que existan diferentes valores, las propiedades de p�
 
 Los campos están habilitados en el componente de página (*no* en la plantilla):
 
-1. Con un CRXDE Lite (o un método equivalente), abra el componente de página.
+1. Con CRXDE Lite (o un método equivalente), abra el componente de página.
 
    Por ejemplo: `/apps/core/wcm/components/page/v1/page`
 

@@ -7,11 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 22%
-
+source-wordcount: '220'
+ht-degree: 35%
 ---
-
 # Asistente para copia de idioma{#language-copy-wizard}
 
 El asistente de copia de idioma es una experiencia guiada para crear e instrumentar la estructura de contenido multilingüe. Ahora es mucho más sencillo y rápido crear una copia de idioma.

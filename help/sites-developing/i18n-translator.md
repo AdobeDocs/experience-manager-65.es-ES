@@ -1,5 +1,5 @@
 ---
-title: Usar Translator para administrar diccionarios
+title: Uso de Translator para administrar diccionarios
 description: AEM proporciona una consola para administrar las distintas traducciones de textos utilizados en la interfaz de usuario del componente
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 0%
-
+source-wordcount: '2350'
+ht-degree: 2%
 ---
-
-# Usar Translator para administrar diccionarios{#using-translator-to-manage-dictionaries}
+# Uso de Translator para administrar diccionarios{#using-translator-to-manage-dictionaries}
 
 AEM proporciona una consola para administrar las distintas traducciones de textos utilizados en la interfaz de usuario del componente. Esta consola está disponible en
 
@@ -30,13 +28,13 @@ La herramienta de traducción y los diccionarios que administra se utilizan para
 >
 >Solo edite los diccionarios creados para su proyecto y que residan en `/apps`.
 >
->AEM Los diccionarios del sistema también están disponibles en esta herramienta. AEM AEM No cambie los diccionarios del sistema de la, ya que esto puede causar problemas con la interfaz de usuario de la interfaz de usuario de la aplicación. Además, los cambios se pueden perder tras la actualización. AEM Los diccionarios del sistema de la aplicación se encuentran en `/libs`.
+>Los diccionarios del sistema de AEM también están disponibles en esta herramienta. No cambie los diccionarios del sistema de AEM, ya que esto puede causar problemas con la interfaz de usuario de AEM. Además, los cambios se pueden perder tras la actualización. Los diccionarios del sistema de AEM se encuentran en `/libs`.
 
 >[!NOTE]
 >
 >Aunque la herramienta de traducción tiene una interfaz de usuario clásica, se utiliza para la traducción de frases independientemente de la interfaz en la que se encuentren.
 
-AEM El traductor enumera los textos utilizados en la traducción con las distintas traducciones lingüísticas en paralelo:
+El traductor enumera los textos utilizados en AEM con las distintas traducciones lingüísticas:
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
@@ -64,7 +62,7 @@ También es posible añadir diccionarios i18n a un proyecto de traducción desde
 
 Cree un diccionario para administrar las cadenas de IU localizadas. Después de crear un diccionario, puede utilizar la herramienta de traducción para administrarlo.
 
-1. Usando el CRXDE Lite, agregue el nodo raíz (`sling:Folder`) para el nuevo diccionario como la estructura que contendrá las definiciones de idioma:
+1. Con CRXDE Lite, agregue el nodo raíz ( `sling:Folder`) del nuevo diccionario como la estructura que contendrá las definiciones de idioma:
 
    ` /apps/<projectName>/i18n`
 
@@ -100,7 +98,7 @@ Utilice la herramienta de traducción para administrar las cadenas de los diccio
 >
 >Solo edite los diccionarios creados para su proyecto y que residan en `/apps`.
 >
->AEM AEM No cambie los diccionarios del sistema de la, ya que esto puede causar problemas con la interfaz de usuario de la interfaz de usuario de la aplicación. Además, los cambios se pueden perder tras la actualización. AEM Los diccionarios del sistema de la aplicación se encuentran en `/libs`.
+>No cambie los diccionarios del sistema de AEM, ya que esto puede causar problemas con la interfaz de usuario de AEM. Además, los cambios se pueden perder tras la actualización. Los diccionarios del sistema de AEM se encuentran en `/libs`.
 
 ### Adición, cambio y eliminación de cadenas {#adding-changing-and-removing-strings}
 
@@ -178,11 +176,11 @@ La barra de búsqueda situada en la parte inferior de la herramienta Traductor p
 * **Filtrar por texto:** Un patrón que coincida con la cadena, comentario o traducciones en inglés. En la tabla solo aparecen los elementos que coinciden con todo o parte del patrón.
 * **Cambios: Cualquiera, Modificado, Nuevo, Eliminado:** Mostrar elementos que se han cambiado y no se han guardado.
 
-   * Cualquiera: muestra los elementos que se han modificado, añadido o eliminado.
-   * Modificado: mostrar los elementos modificados.
-   * Nuevo: mostrar los elementos añadidos.
-   * Eliminados: muestra los elementos que se van a eliminar.
-   * Varias selecciones: muestra los elementos que tienen todas las propiedades seleccionadas.
+  * Cualquiera: muestra los elementos que se han modificado, añadido o eliminado.
+  * Modificado: mostrar los elementos modificados.
+  * Nuevo: mostrar los elementos añadidos.
+  * Eliminados: muestra los elementos que se van a eliminar.
+  * Varias selecciones: muestra los elementos que tienen todas las propiedades seleccionadas.
 
 * **Tiene comentario**: mostrar elementos que tienen comentarios para los traductores.
 * **Faltan traducciones:** Mostrar elementos en los que al menos un idioma no tiene traducción.
@@ -205,7 +203,7 @@ Después de agregar la cadena en inglés a un diccionario, puede agregar traducc
    >
    >Solo edite los diccionarios creados para su proyecto y que residan en `/apps`.
    >
-   >AEM Los diccionarios del sistema también están disponibles en esta herramienta. AEM AEM No cambie los diccionarios del sistema de la, ya que esto puede causar problemas con la interfaz de usuario de la interfaz de usuario de la aplicación. Además, los cambios se pueden perder tras la actualización. AEM Los diccionarios del sistema de la aplicación se encuentran en `/libs`.
+   >Los diccionarios del sistema de AEM también están disponibles en esta herramienta. No cambie los diccionarios del sistema de AEM, ya que esto puede causar problemas con la interfaz de usuario de AEM. Además, los cambios se pueden perder tras la actualización. Los diccionarios del sistema de AEM se encuentran en `/libs`.
 
 1. Para editar los textos traducidos para una de las cadenas, puede hacer lo siguiente:
 
@@ -282,7 +280,7 @@ La herramienta Traductor incluye los siguientes idiomas en la tabla del dicciona
 
 Utilice el siguiente procedimiento para añadir o quitar idiomas.
 
-1. Con el CRXDE Lite, cree un nodo:
+1. Con CRXDE Lite, cree un nodo:
 
    `/etc/languages`
 
@@ -292,14 +290,14 @@ Utilice el siguiente procedimiento para añadir o quitar idiomas.
    * **Tipo**: `Multi-String`
    * **Valor**: la lista de idiomas que desea mostrar. Por ejemplo:
 
-      * fr
-      * es
+     * fr
+     * es
 
    >[!NOTE]
    >
    >Los códigos de idioma deben escribirse en minúsculas.
 
-1. Haga clic en **Guardar todo** en el CRXDE Lite y vuelva a cargar el traductor. La cuadrícula se actualizará para mostrar los idiomas definidos.
+1. Haga clic en **Guardar todo** en CRXDE Lite y vuelva a cargar el traductor. La cuadrícula se actualizará para mostrar los idiomas definidos.
 
    >[!NOTE]
    >
@@ -309,7 +307,7 @@ Utilice el siguiente procedimiento para añadir o quitar idiomas.
 
 ### Disponibilidad de idiomas para los autores {#making-languages-available-to-authors}
 
-AEM Después de definir un diccionario para un idioma nuevo en la instancia de la, debe hacer que este esté disponible para que lo seleccionen los autores (por ejemplo, para usarlo en **Preferencias**):
+Después de definir un diccionario para un idioma nuevo en su instancia de AEM, debe hacer que este esté disponible para que lo seleccionen los autores (por ejemplo, para usarlo en **Preferencias**):
 
 1. Para cambiar la lista de idiomas disponibles en **Preferencias** de la consola **Seguridad**:
 
@@ -372,7 +370,7 @@ Para cambiar las definiciones predeterminadas:
 
 ## Publicar diccionarios {#publishing-dictionaries}
 
-AEM Incorpore sus diccionarios en el proceso de gestión de versiones de sus aplicaciones de. Por ejemplo, incluya el diccionario en el paquete de contenido de la aplicación para su implementación en la instancia de publicación. Esta estrategia ofrece las siguientes ventajas:
+Incorpore sus diccionarios al proceso de administración de versiones de sus aplicaciones de AEM. Por ejemplo, incluya el diccionario en el paquete de contenido de la aplicación para su implementación en la instancia de publicación. Esta estrategia ofrece las siguientes ventajas:
 
 * Los diccionarios están disponibles para los componentes en su entorno de publicación.
 * Los cambios en las cadenas de la interfaz de usuario de los componentes se implementan junto con las traducciones actualizadas.
@@ -385,4 +383,4 @@ Del mismo modo, la prueba de las cadenas de diccionario debe realizarse como par
 
 >[!NOTE]
 >
->Al usar Dispatcher, debe [invalidar las páginas en caché](https://helpx.adobe.com/es/experience-manager/dispatcher/using/page-invalidate.html) para incluir nuevas cadenas de diccionario en las cadenas de componentes procesadas.
+>Al usar Dispatcher, debe [invalidar las páginas en caché](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) para incluir nuevas cadenas de diccionario en las cadenas de componentes procesadas.

@@ -1,6 +1,8 @@
 ---
 title: Herramientas de modernización de AEM
-description: AEM AEM Las herramientas de modernización le ayudan a convertir las funciones de la versión heredada de la a la tecnología más reciente
+
+description: Las herramientas de modernización de AEM le ayudan a convertir sus funciones heredadas de AEM a la tecnología más reciente
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
@@ -9,14 +11,12 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 46%
-
+source-wordcount: '95'
+ht-degree: 54%
 ---
-
 # Herramientas de modernización de AEM {#modernization-tools}
 
-AEM [Las herramientas de modernización de](https://opensource.adobe.com/aem-modernize-tools/) facilitan la conversión de:
+[Las herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/) facilitan la conversión de:
 
 * [Plantillas estáticas](page-templates-static.md) a [plantillas editables](page-templates-editable.md)
 * [Configuraciones de diseño](page-templates-static.md) a [directivas](page-templates-editable.md)

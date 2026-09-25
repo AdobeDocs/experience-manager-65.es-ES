@@ -7,11 +7,9 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1352'
 ht-degree: 93%
-
 ---
-
 # Cómo acceder al contenido a través de las API de entrega de AEM {#access-your-content}
 
 En esta parte del [Recorrido para desarrolladores de contenido de AEM sin encabezado,](overview.md) puede aprender a utilizar las consultas de GraphQL para acceder al contenido de sus fragmentos de contenido y alimentarlo en su aplicación (entrega sin encabezado).
@@ -27,11 +25,11 @@ En el documento anterior del recorrido sin encabezado de AEM, [Cómo modelar el 
 
 Este artículo se centra en estos aspectos básicos para que entienda cómo acceder al contenido sin encabezado existente en AEM mediante GraphQL, la API de AEM.
 
-* **Audiencia**: principiante
+* **Público**: principiante
 * **Objetivo**: aprender a acceder al contenido de los fragmentos de contenido mediante consultas en GraphQL de AEM.
-   * Introducción a GraphQL y a la API de AEM, GraphQL.
-   * Descubrir los detalles de la API de AEM, GraphQL.
-   * Observar algunas consultas de ejemplo para ver cómo funcionan las cosas en la práctica.
+  * Introducción a GraphQL y a la API de AEM, GraphQL.
+  * Descubrir los detalles de la API de AEM, GraphQL.
+  * Observar algunas consultas de ejemplo para ver cómo funcionan las cosas en la práctica.
 
 ## Acceso a su contenido {#so-youd-like-to-access-your-content}
 
@@ -39,7 +37,7 @@ Así que tiene mucho contenido bien estructurado (en fragmentos de contenido) pa
 
 Lo que necesita es una forma de segmentar el contenido específico, seleccionar lo que necesita y devolverlo a su aplicación para un procesamiento posterior.
 
-Con Adobe Experience Manager AEM AEM (), puede acceder de forma selectiva a sus fragmentos de contenido mediante la API de GraphQL de para devolver solo el contenido que necesita. Esto significa que puede realizar entrega de contenido sin encabezado estructurado para utilizarlo en sus aplicaciones.
+Con Adobe Experience Manager (AEM), puede acceder selectivamente a sus fragmentos de contenido mediante la API de AEM GraphQL para devolver únicamente el contenido que necesita. Esto significa que puede realizar entrega sin encabezado de contenido estructurado para utilizarlo en sus aplicaciones.
 
 >[!NOTE]
 >
@@ -82,12 +80,12 @@ GraphQL is used in various locations in AEM; for example:
 
 ## GraphQL, la API de AEM {#aem-graphql-api}
 
-AEM La API de GraphQL es una versión personalizada basada en la especificación de API de GraphQL estándar, especialmente configurada para permitirle realizar consultas (complejas) en sus fragmentos de contenido.
+La API de AEM GraphQL es una versión personalizada basada en la especificación de la API de GraphQL estándar, especialmente configurada para permitirle realizar consultas (complejas) en sus fragmentos de contenido.
 
 Se utilizan fragmentos de contenido, ya que el contenido está estructurado según los modelos de fragmento de contenido. Esto cumple un requisito básico de GraphQL.
 
 * Un modelo de fragmento de contenido está formado por uno o más campos.
-   * Cada campo se define según el tipo de datos.
+  * Cada campo se define según el tipo de datos.
 * Los modelos de fragmento de contenido se utilizan para generar los esquemas de GraphQL de AEM correspondientes.
 
 Para acceder realmente a GraphQL para AEM (y el contenido) se utiliza un punto final para proporcionar la ruta de acceso.
@@ -138,7 +136,7 @@ La **Referencia de fragmento**:
 * Hace referencia a otro fragmento, según un modelo de fragmento de contenido específico.
 * Permite crear datos estructurados y luego recuperarlos.
 
-   * Cuando se define como **multifuente**, el fragmento principal puede hacer referencia (recuperar) a varios subfragmentos.
+  * Cuando se define como **multifuente**, el fragmento principal puede hacer referencia (recuperar) a varios subfragmentos.
 
 ### Previsualización de JSON {#json-preview}
 
@@ -245,23 +243,23 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Antes de comenzar con consultas sobre el contenido, debe realizar lo siguiente:
 
 * Habilitar el punto final
-   * Utilice Herramientas > Assets > GraphQL
-   * [Activación del punto final de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
+  * Utilice Herramientas > Assets > GraphQL
+  * [Habilitación del punto final de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * Acceder a GraphiQL (si es necesario)
-   * [AEM Interfaz de GraphiQL de](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
+  * [Interfaz de GraphiQL de AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Estructura de muestra {#sample-structure}
 
 Para utilizar GraphQL, la API de AEM en una consulta, podemos utilizar las dos estructuras básicas del modelo de fragmento de contenido:
 
 * Compañía
-   * Nombre: texto
-   * CEO (Persona): referencia de fragmento
-   * Empleados (personas): referencias de fragmento
+  * Nombre: texto
+  * CEO (Persona): referencia de fragmento
+  * Empleados (personas): referencias de fragmento
 * Persona
-   * Nombre: texto
-   * Nombre: texto
+  * Nombre: texto
+  * Nombre: texto
 
 Como puede ver, los campos CEO y Empleados hacen referencia a los fragmentos Persona.
 
@@ -314,7 +312,7 @@ query {
 }
 ```
 
-También se pueden crear consultas más complejas. Por ejemplo, realizar una consulta de todas las empresas que tengan al menos un empleado con el apellido “Smith”. Esta consulta ilustra el filtrado de cualquier persona con el apellido “Smith”, y devuelve información de todos los fragmentos anidados: 
+También se pueden crear consultas más complejas. Por ejemplo, realizar una consulta de todas las empresas que tengan al menos un empleado con el apellido “Smith”. Esta consulta ilustra el filtrado de cualquier persona con el apellido “Smith”, y devuelve información de todos los fragmentos anidados:
 
 ```xml
 query {
@@ -361,22 +359,22 @@ Ahora que ha aprendido a acceder al contenido sin encabezado y consultarlo media
 ## Recursos adicionales {#additional-resources}
 
 * [GraphQL.org](https://graphql.org)
-   * [Esquemas](https://graphql.org/learn/schema/)
-   * [Variables](https://graphql.org/learn/queries/#variables)
-   * [Bibliotecas Java de GraphQL](https://graphql.org/code/#java)
+  * [Esquemas](https://graphql.org/learn/schema/)
+  * [Variables](https://graphql.org/learn/queries/#variables)
+  * [Bibliotecas Java de GraphQL](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [Formación para utilizar GraphQL con AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
-   * [Activación del punto final de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
-   * [Instalación de la interfaz de GraphiQL de AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface)
+  * [Habilitación del punto final de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
+  * [Instalación de la interfaz de GraphiQL de AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface)
 * [La estructura de fragmento de contenido de muestra](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Formación para utilizar GraphQL con AEM: contenido y consultas de muestra](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
-   * [Consulta de muestra: un solo fragmento de ciudad específico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-   * [Consulta de muestra para metadatos: enumera los metadatos de los premios titulados GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-   * [Consulta de muestra: todas las ciudades con una variación con nombre](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
+  * [Consulta de muestra: un solo fragmento de ciudad específico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
+  * [Consulta de muestra para metadatos: enumera los metadatos de los premios titulados GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
+  * [Consulta de muestra: todas las ciudades con una variación con nombre](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
 * [Habilitación de la funcionalidad de fragmento de contenido en el explorador de la configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
-   * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
-   * [Salida JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+  * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
+  * [Salida JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Comprender el uso compartido de recursos de origen cruzado (Cross-Origin Resource Sharing, CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es#understand-cross-origin-resource-sharing-(cors))
 * [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es): una breve serie de tutoriales de vídeo que ofrecen información general sobre el uso de las funciones de AEM sin encabezado, incluidos el modelado de contenido y GraphQL.
 

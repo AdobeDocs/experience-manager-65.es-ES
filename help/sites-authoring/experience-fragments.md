@@ -7,14 +7,12 @@ feature: Authoring,Experience Fragments
 role: User
 source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 71%
-
+source-wordcount: '1541'
+ht-degree: 70%
 ---
-
 # Fragmentos de experiencias{#experience-fragments}
 
-En Adobe Experience Manager AEM (), un fragmento de experiencia es un grupo de uno o más componentes, incluidos contenido y diseño, a los que se puede hacer referencia dentro de las páginas. Pueden contener cualquier componente.
+En Adobe Experience Manager (AEM), un fragmento de experiencia es un grupo de uno o más componentes, incluido el contenido y el diseño, a los que se puede hacer referencia dentro de las páginas. Pueden contener cualquier componente.
 
 Un fragmento de experiencia:
 
@@ -32,7 +30,7 @@ Un fragmento de experiencia:
 Puede utilizar los fragmentos de experiencias:
 
 * Si un autor desea reutilizar partes de una página (un fragmento de una experiencia), debe copiar y pegar ese fragmento. Crear y mantener estas experiencias de copia y pegado es un proceso laborioso y es posible que el usuario cometa errores. Los fragmentos de experiencias eliminan la necesidad de copiar y pegar.
-* Para admitir el caso práctico de CMS sin encabezado. Los autores quieren utilizar AEM solo para la creación, pero no para la entrega al cliente. Un punto de contacto o sistema de terceros consumiría esa experiencia y luego la entregaría al usuario final.
+* Para admitir el caso práctico de CMS descentralizado. Los autores quieren utilizar AEM solo para la creación, pero no para la entrega al cliente. Un punto de contacto o sistema de terceros consumiría esa experiencia y luego la entregaría al usuario final.
 * Con [Multi Site Management (MSM)](/help/sites-administering/msm.md); como fragmento de experiencia forma parte de una página. Esto se aplica tanto a los fragmentos individuales como a las carpetas en las que residen.
 
 >[!NOTE]
@@ -43,28 +41,28 @@ Puede utilizar los fragmentos de experiencias:
 >
 >Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
-## ¿Cuándo se deben utilizar los fragmentos de experiencias?   {#when-should-you-use-experience-fragments}
+## ¿Cuándo se deben utilizar los fragmentos de experiencias? {#when-should-you-use-experience-fragments}
 
 Los fragmentos de experiencias deben usarse en las siguientes situaciones:
 
 * Siempre que quiera reutilizar experiencias.
 
-   * Experiencias que se reutilizarán con contenido igual o similar
+  * Experiencias que se reutilizarán con contenido igual o similar
 
 * Cuando se utiliza AEM como plataforma de envío de contenido para terceros.
 
-   * AEM Cualquier solución que desee utilizar como plataforma de envío de contenido
-   * Incrustación de contenido en puntos de contacto de terceros
+  * Cualquier solución que desee utilizar AEM como plataforma de entrega de contenido
+  * Incrustación de contenido en puntos de contacto de terceros
 
 * Si tiene una experiencia con diferentes variaciones o representaciones.
 
-   * Variaciones específicas de canal o contexto
-   * Experiencias que tiene sentido agrupar (por ejemplo, una campaña con diferentes experiencias en diferentes canales)
+  * Variaciones específicas de canal o contexto
+  * Experiencias que tiene sentido agrupar (por ejemplo, una campaña con diferentes experiencias en diferentes canales)
 
 * Al utilizar el comercio omnicanal.
 
-   * Compartir contenido relacionado con el comercio en [medios sociales](/help/sites-developing/experience-fragments.md#social-variations) canales a escala
-   * Hacer transaccionales los puntos de contacto
+  * Compartir contenido relacionado con el comercio en [medios sociales](/help/sites-developing/experience-fragments.md#social-variations) canales a escala
+  * Hacer transaccionales los puntos de contacto
 
 ## Organización de los fragmentos de experiencias {#organizing-your-experience-fragments}
 
@@ -336,31 +334,31 @@ Se pueden ver los detalles del fragmento:
 
    * **Básico**
 
-      * **Título**: obligatorio
+     * **Título**: obligatorio
 
-      * **Descripción**
-      * **Etiquetas**
-      * **Número total de variantes**: solo información
+     * **Descripción**
+     * **Etiquetas**
+     * **Número total de variantes**: solo información
 
-      * **Número de variantes web**: solo información
-      * **Número de variantes que no son de web** - solo inf **formación**
+     * **Número de variantes web**: solo información
+     * **Número de variantes que no son de web** - solo inf **formación**
 
-      * **Número de páginas que utilizan este fragmento**: solo información
+     * **Número de páginas que utilizan este fragmento**: solo información
 
    * **Cloud Services**
 
-      * **Configuración de la nube**
-      * **Configuraciones de Cloud Service**
-      * **ID de página de Facebook**
-      * **Tablero de Pinterest**
+     * **Configuración de la nube**
+     * **Configuraciones de Cloud Service**
+     * **ID de página de Facebook**
+     * **Tablero de Pinterest**
 
    * **Referencias**
 
-      * Una lista de referencias.
+     * Una lista de referencias.
 
    * **Estado de medios sociales**
 
-      * Detalles de las variaciones de las redes sociales.
+     * Detalles de las variaciones de las redes sociales.
 
 ## Representación HTML sin formato {#the-plain-html-rendition}
 
@@ -370,7 +368,7 @@ Uso del selector de `.plain.` en la URL; puede acceder a la representación HTML
 >
 >Aunque esta opción está disponible directamente desde el explorador, [el objetivo principal es permitir a otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) acceder al contenido del fragmento de experiencia directamente, únicamente mediante la URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
-## Exportación de fragmentos de experiencias   {#exporting-experience-fragments}
+## Exportación de fragmentos de experiencias {#exporting-experience-fragments}
 
 De forma predeterminada, los fragmentos de experiencias se envían en formato HTML. Esto se puede utilizar tanto en AEM como en canales de terceros por igual.
 
