@@ -11,16 +11,14 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 0%
-
+source-wordcount: '816'
+ht-degree: 1%
 ---
-
 # Segmentación de Adobe Campaign{#targeting-your-adobe-campaign}
 
 Para dirigirse al boletín informativo de Adobe Campaign, primero debe configurar la segmentación, que solo está disponible en la IU clásica. Después, puede crear experiencias segmentadas para Adobe Campaign.
 
-## AEM Configuración de la segmentación en las {#setting-up-segmentation-in-aem}
+## Configuración de la segmentación en AEM {#setting-up-segmentation-in-aem}
 
 La configuración de la segmentación incluye la creación de segmentos, una marca, una campaña y experiencias. Solo puede crear un segmento en la IU clásica. Puede crear marcas, campañas y experiencias en la interfaz de usuario táctil.
 
@@ -77,7 +75,7 @@ Para crear una newsletter con contenido de destino:
 
    >[!NOTE]
    >
-   >[Las muestras de correo electrónico solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md#weretail). Descargar contenido de Geometrixx de muestra desde Package Share.
+   >[Las muestras de correo electrónico solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md#weretail). Descargue contenido de Geometrixx de muestra desde Package Share.
 
 1. En la newsletter, añada un componente Texto y Personalization.
 1. Agregue texto al componente Texto y Personalization, como &quot;Este es el valor predeterminado&quot;.
@@ -87,7 +85,7 @@ Para crear una newsletter con contenido de destino:
 
    >[!NOTE]
    >
-   >AEM De forma predeterminada, los ejemplos de correo electrónico incluidos con el uso de Adobe Campaign como motor de segmentación de datos utilizan el. Para los boletines personalizados, es posible que tenga que seleccionar Adobe Campaign como motor de segmentación. Cuando establezca como objetivo, haga clic en + en la barra de herramientas, escriba un título para la nueva actividad y seleccione **Adobe Campaign** como motor de orientación.
+   >De forma predeterminada, los ejemplos de correo electrónico incluidos con AEM utilizan Adobe Campaign como motor de segmentación. Para los boletines personalizados, es posible que tenga que seleccionar Adobe Campaign como motor de segmentación. Cuando establezca como objetivo, haga clic en + en la barra de herramientas, escriba un título para la nueva actividad y seleccione **Adobe Campaign** como motor de orientación.
 
 1. Haga clic en **Predeterminado** y, a continuación, en el componente Texto y Personalization que agregó y verá la diana con una flecha. Haga clic en el icono para orientar este componente.
 
@@ -97,9 +95,9 @@ Para crear una newsletter con contenido de destino:
 1. Vaya a otro segmento (Femenino) y haga clic en **Agregar oferta** y luego en el icono de signo +. Luego edite esta oferta.
 1. Haga clic en **Siguiente** para ver la asignación y, a continuación, haga clic en **Siguiente** para ver la configuración, que no se aplica a Adobe Campaign, y haga clic en **Guardar**.
 
-   AEM El genera automáticamente el código de segmentación correcto para Adobe Campaign cuando el contenido se utiliza en una entrega dentro de Adobe Campaign
+   AEM genera automáticamente el código de objetivo correcto para Adobe Campaign cuando el contenido se utiliza en una entrega dentro de Adobe Campaign
 
-1. En Adobe Campaign AEM AEM, cree su entrega: seleccione **Entrega de correo electrónico con contenido de** y seleccione la cuenta de usuario local, según corresponda, y confirme los cambios.
+1. En Adobe Campaign, cree su envío: seleccione **Envío de correo electrónico con contenido de AEM** y seleccione la cuenta local de AEM, según corresponda, y confirme los cambios.
 
    En la vista de HTML, las diferentes experiencias de los componentes segmentados se incluyen en el código de segmentación de Adobe Campaign.
 

@@ -7,11 +7,9 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1639'
 ht-degree: 90%
-
 ---
-
 # Obtenga más información acerca del desarrollo de CMS sin encabezado {#learn-about}
 
 En esta parte del [recorrido para desarrolladores sin encabezado de AEM,](overview.md) aprenda sobre la tecnología sin encabezado y por qué la utilizaría.
@@ -30,7 +28,7 @@ Desde que han surgido los sistemas de administración de contenido (CMS) a gran 
 
 ![El CMS de pila completa clásico](assets/full-stack.png)
 
-En un CMS de pila completa, toda la funcionalidad para manipular el contenido se encuentra en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
+En un CMS de pila completa, toda la funcionalidad para manipular el contenido se encuentra en CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
 
 * Tiene un sistema que mantener.
 * El contenido se administra de forma centralizada.
@@ -89,9 +87,9 @@ La entrega de contenido sin encabezado suele utilizar las API de GraphQL. GraphQ
 
 Independientemente de cuál sea su API elegida, al definir un sistema sin encabezado basado en API comunes, puede utilizar el explorador más reciente y otras tecnologías web, como aplicaciones web progresivas (PWA). Las API crean una interfaz estándar que es fácilmente ampliable y adaptable.
 
-Normalmente, el contenido se representa en el lado del cliente. Esto suele significar que alguien llama a su contenido en un dispositivo móvil, su CMS envía el contenido y, a continuación, el dispositivo móvil (el cliente) es responsable de procesar el contenido que ha servido. Si el dispositivo es antiguo o lento, la experiencia digital también es lenta.
+Normalmente, el contenido se representa en el lado del cliente. Esto suele significar que alguien llama al contenido en un dispositivo móvil, que el CMS lo envía y que el dispositivo móvil (el cliente) es el responsable de procesar el contenido que ha servido. Si el dispositivo es antiguo o lento, la experiencia digital también es lenta.
 
-Desvincular contenido de la presentación significa que puede haber más control sobre estas preocupaciones de rendimiento del lado del cliente. El procesamiento del lado del servidor (SSR) transfiere la responsabilidad de procesar el contenido desde el explorador del cliente al servidor. Esto le permite, como proveedor del contenido, ofrecer un nivel de rendimiento garantizado a la audiencia si es necesario.
+Desvincular contenido de la presentación significa que puede haber más control sobre estas preocupaciones de rendimiento del lado del cliente. El procesamiento del lado del servidor (SSR) transfiere la responsabilidad de procesar el contenido desde el explorador del cliente al servidor. Esto le permite, como proveedor del contenido, ofrecer un nivel de rendimiento garantizado al público si es necesario.
 
 ## Desafíos organizativos {#organization}
 
@@ -123,11 +121,11 @@ Gracias por empezar con el recorrido de contenido sin encabezado de AEM Ahora qu
 * Comprenda por qué y cuándo es necesario el contenido sin encabezado.
 * Conocer en un nivel superior cómo se utilizan los conceptos del contenido sin encabezado y cómo se interrelacionan.
 
-AEM Aproveche este conocimiento y continúe con su recorrido AEM AEM sin encabezado de la revisando el documento [Introducción a la sin encabezado](getting-started.md) donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en cómo aborda la entrega de contenido sin encabezado y sus requisitos previos.
+Aproveche este conocimiento y continúe con su recorrido sin encabezado de AEM revisando el documento [Introducción a AEM Headless](getting-started.md), donde aprenderá a configurar las herramientas necesarias y a pensar en cómo AEM aborda la entrega de contenido sin encabezado y sus requisitos previos.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido AEM de desarrollo sin encabezado revisando el documento [Introducción a la tecnología sin encabezado](getting-started.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar con el recorrido sin encabezado.
+Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin encabezado revisando el documento [Introducción a AEM Headless](getting-started.md), los siguientes son algunos recursos opcionales extra. Profundizan en varios conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
 * Una [Introducción a AEM como CMS sin encabezado](/help/sites-developing/headless/introduction.md)
 * El [Portal para desarrolladores de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=es)

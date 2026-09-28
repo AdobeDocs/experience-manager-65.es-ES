@@ -1,20 +1,23 @@
 ---
-title: '“Tutorial: Crear comunicaciones interactivas”'
+title: 'Tutorial: Crear comunicaciones interactivas '
+
 description: Crear una comunicación interactiva con todos los componentes básicos
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1914'
 ht-degree: 75%
-
 ---
-
 # Tutorial: Crear comunicaciones interactivas {#tutorial-create-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
@@ -78,14 +81,14 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
 
    1. Especifique un nombre para el gráfico.
    1. Seleccione **Circular** de la lista desplegable **Tipo de gráfico**.
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **Eje X**. Seleccione ![done_icon](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto de modelo de datos **llamadas** en la sección **Eje X**. Seleccione ![done_icon](assets/done_icon.png).
    1. Seleccione la variable **Frecuencia** de la lista desplegable **Función**.
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **Eje Y**. Seleccione ![done_icon](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto de modelo de datos **llamadas** en la sección **Eje Y**. Seleccione ![done_icon](assets/done_icon.png).
    1. Seleccione ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
 
 1. Vaya a la pestaña **Recursos** y aplique el filtro para mostrar solo los fragmentos de diseño en el panel izquierdo. Arrastre y suelte el fragmento de diseño **table_lf** hasta el área de destino **Llamadas desglosadas**.
 1. Seleccione el campo de texto en la columna **Fecha** y seleccione ![configure_icon](assets/configure_icon.png) (Configurar).
-1. Seleccione **Objeto del modelo de datos** de la lista desplegable **Tipo de enlace** y seleccione **llamadas** > **calldate**. Seleccione ![done_icon](assets/done_icon.png) dos veces para guardar las propiedades.
+1. Seleccione **Objeto de modelo de datos** de la lista desplegable **Tipo de enlace** y seleccione **llamadas** > **calldate**. Seleccione ![done_icon](assets/done_icon.png) dos veces para guardar las propiedades.
 
    Del mismo modo, cree un enlace con **calltime**, **callnumber**, **callduration** y **callcharges** para campos de texto en las columnas **Tiempo**, **Número**, **Duración** y **Gastos** respectivamente.
 
@@ -141,15 +144,15 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    1. Especifique un nombre para el gráfico.
    1. Seleccione **Circular** de la lista desplegable **Tipo de gráfico**.
 
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **Eje X**. Seleccione ![done_icon](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto de modelo de datos **llamadas** en la sección **Eje X**. Seleccione ![done_icon](assets/done_icon.png).
 
    1. Seleccione la variable **Frecuencia** de la lista desplegable **Función**.
 
-   1. Seleccione la propiedad **calltype** del tipo de objeto del modelo de datos **llamadas** en la sección **Eje Y**. Seleccione ![done_icon](assets/done_icon.png).
+   1. Seleccione la propiedad **calltype** del tipo de objeto de modelo de datos **llamadas** en la sección **Eje Y**. Seleccione ![done_icon](assets/done_icon.png).
 
    1. Seleccione ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
 
-1. Seleccione la pestaña **Fuentes de datos** del panel izquierdo y arrastre y suelte el objetos del modelo de datos **llamadas** en el área de destino **Llamadas desglosadas**. Todas las propiedades del objeto del modelo de datos **llamadas** se mostrarán como columnas de tabla en el área de destino **Llamadas desglosadas** en el panel derecho.
+1. Seleccione la pestaña **Fuentes de datos** del panel izquierdo y arrastre y suelte el objeto de modelo de datos **llamadas** en el área de destino **Llamadas desglosadas**. Todas las propiedades del objeto de modelo de datos **llamadas** se mostrarán como columnas de tabla en el área de destino **Llamadas desglosadas** en el panel derecho.
 
    En función del caso de uso, se requieren las columnas Fecha de la llamada, Hora de la llamada, Número de la llamada, Duración de la llamada y Gastos de la llamada en la tabla.
 
@@ -179,7 +182,7 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
    1. En la sección **Borde**, especifique **1,5 px** como **Anchura del borde**, seleccione **Sólido** como **Estilo del borde** y especifique **46 px** como **Radio del borde**.
 
    1. Seleccione Rojo como color de fondo para el botón en la sección **Contexto**.
-   1. En el campo **Margen** para la sección **Dimension y posición**, seleccione el icono **Editar simultáneamente** y establezca el margen **Derecho** como **450px**. Los campos Superior, Inferior e Izquierda se definen como en blanco.
+   1. En el campo **Margen** para la sección **Dimensiones y posición**, seleccione el icono **Editar simultáneamente** y establezca el margen **Derecho** como **450px**. Los campos Superior, Inferior e Izquierda se definen como en blanco.
 
    ![Insertar hipervínculo en comunicación interactiva](assets/ic_web_hyperlink_new.png)
 
@@ -198,7 +201,7 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
 
 ## Crear comunicaciones interactivas para Imprimir y Web con sincronización automática {#create-interactive-communications-for-print-and-web-with-auto-synchronization}
 
-También puede crear una comunicación interactiva si habilita la sincronización automática entre los canales Imprimir y Web. Para habilitar la sincronización automática, seleccione la opción Imprimir como principal al crear la comunicación interactiva. Al seleccionar la opción Imprimir como principal, se garantiza que el contenido, la herencia y el enlace de datos del canal Web se deriven del canal Imprimir. También garantiza que los cambios realizados en el canal Imprimir se reflejen en el canal Web.
+También puede crear una comunicación interactiva si habilita la sincronización automática entre los canales web y de impresión. Para habilitar la sincronización automática, seleccione la opción Imprimir como principal al crear la comunicación interactiva. Al seleccionar la opción Imprimir como principal, se garantiza que el contenido, la herencia y el enlace de datos del canal Web se deriven del canal Imprimir. También garantiza que los cambios realizados en el canal Imprimir se reflejen en el canal Web.
 
 Siga estos pasos para derivar el contenido del canal Web mediante el canal Imprimir:
 

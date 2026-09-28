@@ -1,6 +1,6 @@
 ---
-title: Configuración de segmentación
-description: AEM Obtenga información sobre cómo configurar la segmentación para la campaña de.
+title: Configuración de la segmentación
+description: Obtenga información sobre cómo configurar la segmentación para AEM Campaign.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -12,13 +12,11 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 7%
-
+source-wordcount: '1139'
+ht-degree: 8%
 ---
 
-
-# Configuración de segmentación {#configuring-segmentation}
+# Configuración de la segmentación {#configuring-segmentation}
 
 >[!NOTE]
 >
@@ -30,7 +28,7 @@ Según la información que ya haya recopilado acerca de los visitantes del sitio
 
 Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la sección [Campañas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) del sitio web. Las páginas de teaser definidas aquí se pueden incluir como párrafos de teaser en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
-AEM le permite crear y actualizar fácilmente segmentos, teasers y campañas. También le permite verificar los resultados de sus definiciones.
+AEM permite crear y actualizar fácilmente segmentos, teasers y campañas. También le permite verificar los resultados de sus definiciones.
 
 El **Editor de segmentos** le permite definir fácilmente un segmento:
 
@@ -146,7 +144,7 @@ Para definir el nuevo segmento:
 
 ### Uso de contenedores AND y OR {#using-and-and-or-containers}
 
-AEM Puede construir segmentos complejos en la. Es útil tener en cuenta algunos puntos básicos:
+Puede construir segmentos complejos en AEM. Es útil tener en cuenta algunos puntos básicos:
 
 * El nivel superior de la definición es siempre el contenedor AND que se crea inicialmente; esto no se puede cambiar, pero no afecta al resto de la definición del segmento.
 * Asegúrese de que tenga sentido anidar el contenedor. Los contenedores pueden verse como los corchetes de su expresión boolean.
