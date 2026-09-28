@@ -1,21 +1,24 @@
 ---
 title: Proxy de servicio de formularios HTML5
+
 description: El proxy de servicio de formularios HTML5 es una configuración para registrar un proxy para el servicio de envío. Para configurar el proxy de servicio, especifique la URL del servicio de envío mediante el parámetro de solicitud submissionServiceProxy.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
+
 docset: aem65
+
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # Proxy de servicio de formularios HTML5{#html-forms-service-proxy}
 
 El proxy de servicio de formularios HTML5 es una configuración para registrar un proxy para el servicio de envío. Para configurar el proxy de servicio, especifique la URL del servicio de envío mediante el parámetro de solicitud *submissionServiceProxy*.
@@ -24,7 +27,7 @@ El proxy de servicio de formularios HTML5 es una configuración para registrar u
 
 El proxy de servicio elimina lo siguiente:
 
-* El flujo de trabajo de formularios HTML5 requiere la apertura del servicio de envío “/content/xfaforms/submission/default” para los usuarios de formularios HTML5. Expone servidores de AEM a una audiencia no deseada más amplia.
+* El flujo de trabajo de formularios HTML5 requiere la apertura del servicio de envío “/content/xfaforms/submission/default” para los usuarios de formularios HTML5. Expone servidores de AEM a un público no deseado más amplio.
 * La URL del servicio está incrustada en el modelo de tiempo de ejecución del formulario. No es posible cambiar la ruta de la URL del servicio.
 * El envío es un proceso de dos pasos. Para enviar los datos del formulario, el envío requiere al menos dos recorridos para el servidor. Por lo tanto, aumenta la carga en el servidor.
 * Los formularios HTML5 envían datos en la solicitud POST en lugar de en la solicitud PDF. Para el flujo de trabajo que incluye formularios PDF y HTML5, se requieren dos métodos diferentes de procesamiento de los envíos.
