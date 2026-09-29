@@ -6,20 +6,18 @@ feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2174'
-ht-degree: 55%
-
+source-wordcount: '2193'
+ht-degree: 54%
 ---
-
 # Aplicar estilo a un formulario adaptable {#do-not-publish-style-your-adaptive-form}
 
 Aprenda a crear una temática personalizada, aplicar estilo a componentes individuales y utilizar Web Fonts en una temática.
 
 ![imagen a pantalla completa](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Este tutorial es un paso en la serie [Crear su primer formulario adaptable](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
+Este tutorial es un paso en la serie [Crear su primer formulario adaptable](Https://helpx.adobe.com/es/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Adobe recomienda seguir la serie en secuencia cronológica para comprender, realizar y mostrar el caso de uso completo del tutorial.
 
 ## Información sobre el tutorial  {#about-the-tutorial}
 
@@ -425,7 +423,7 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Contexto</td> 
+      <td>Fondo</td> 
       <td>Color de fondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -444,16 +442,18 @@ Algunos estilos solo se aplican a un componente específico. Estos componentes e
 Puede utilizar varias fuentes para diseñar un formulario adaptable. Es posible que no todos los dispositivos en los que se visualiza el formulario adaptable tengan las fuentes utilizadas para diseñar el formulario adaptable. Puede utilizar un servicio de fuentes web para enviar las fuentes necesarias al dispositivo de destino.
 
 [!DNL Adobe Fonts] es un servicio de Web Fonts. Puede configurar y utilizar el servicio con formularios adaptables. Para usar [!DNL Adobe Fonts] en un formulario adaptable, haga lo siguiente:
-1. Examine la [biblioteca de fuentes de Adobe](https://fonts.adobe.com/) y elija una fuente para aplicar estilo al formulario.
+
 <!--
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
 -->
 
->[!NOTE]
->
-> Puede añadir etiquetas o filtros para restringir la lista de fuentes.
+1. Examine la [biblioteca de fuentes de Adobe](https://fonts.adobe.com/) y elija una fuente para aplicar estilo al formulario.
+
+   >[!NOTE]
+   >
+   > Puede añadir etiquetas o filtros para restringir la lista de fuentes.
 
 1. Haga clic en el botón &lt;/> para añadir la familia a un proyecto web, en caso de que encuentre una fuente que le guste.
 
@@ -465,23 +465,25 @@ Puede utilizar varias fuentes para diseñar un formulario adaptable. Es posible 
    >
    > Solo puede añadir fuentes al proyecto web si tienen el botón &lt;/> disponible.
 
-2. Asigne un nombre al proyecto web.
-3. Seleccione las casillas de verificación para seleccionar los pesos y estilos de fuente que desee incluir.
+1. Asigne un nombre al proyecto web.
+1. Seleccione las casillas de verificación para seleccionar los pesos y estilos de fuente que desee incluir.
 
    ![agregar una biblioteca de fuentes](assets/add-a-font-window.png)
 
-4. Seleccione **Haga clic** para crear el proyecto.
-5. Copie el código incrustado y la dirección URL desde la pantalla.
+1. Seleccione **Haga clic** para crear el proyecto.
+1. Copie el código incrustado y la dirección URL desde la pantalla.
    ![código incrustado y dirección URL](assets/font-add-url.png)
 
-6. Haga clic en **Listo** para cerrar la ventana del proyecto web.
-7. Inicie sesión en la instancia de AEM y vaya a la URL `http://server:port/crx/de/index.jsp#`
-8. Cree una estructura de carpetas en CRXDE, por ejemplo `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
-9. Vaya a la carpeta `clientlibs` recién creada y agregue las propiedades `allowProxy` y `categories`.
-10. Vaya a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` y cree una carpeta css.
-11. Vaya a la carpeta CSS creada y cree un archivo. Por ejemplo, cree un archivo como `fonts.css` y pegue el código incrustado junto con la dirección URL.
-    ![Estructura de carpetas](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. Guarde los cambios.
+1. Haga clic en **Listo** para cerrar la ventana del proyecto web.
+1. Inicie sesión en la instancia de AEM y vaya a la URL `http://server:port/crx/de/index.jsp#`
+1. Cree una estructura de carpetas en CRXDE, por ejemplo `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
+1. Vaya a la carpeta `clientlibs` recién creada y agregue las propiedades `allowProxy` y `categories`.
+1. Vaya a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` y cree una carpeta css.
+1. Vaya a la carpeta CSS creada y cree un archivo. Por ejemplo, cree un archivo como `fonts.css` y pegue el código incrustado junto con la dirección URL.
+
+   ![Estructura de carpetas](/help/forms/using/assets/fonts-add-in-crxde.png)
+
+1. Guarde los cambios.
 
 >[!NOTE]
 >

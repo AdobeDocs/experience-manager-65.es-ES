@@ -6,13 +6,11 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 38e3439b5b9f3b4bc56bb1618d33e570ca0603f5
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1920'
 ht-degree: 94%
-
 ---
-
 # Analytics con [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
 AEM Forms se integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=es) para permitirle capturar y hacer un seguimiento de las métricas de rendimiento de sus formularios publicados. El objetivo detrás del análisis de estas métricas es permitir que los usuarios empresariales obtengan información sobre el comportamiento del usuario final y optimizar la experiencia de captura de datos. Puede capturar y hacer un seguimiento del comportamiento de los usuarios que iniciaron sesión y no los que iniciaron sesión (anónimos) mediante Adobe Analytics para formularios adaptables.
@@ -165,7 +163,7 @@ Realice los siguientes pasos para crear reglas basadas en la extensión **[!UICO
 
 1. En la sección **[!UICONTROL Acciones]**, seleccione + y especifique **[!UICONTROL Adobe Analytics]** como el nombre de la extensión.
 
-1. Seleccione **[!UICONTROL Borrar variables]** como tipo de acción. Seleccione **[!UICONTROL Conservar cambios]**. Después de realizar estos pasos, la sección **[!UICONTROL Acciones]** se muestra de la siguiente manera:
+1. Seleccione **[!UICONTROL Borrar variables]** como tipo de acción. Seleccione **[!UICONTROL Conservar cambios]**. Después de realizar estos pasos, la sección **[!UICONTROL Acciones]** se muestra de la siguiente forma:
    ![Configuración de acciones](/help/forms/using/assets/actions-config.png)
 
    Personalice la sección **[!UICONTROL Acciones]** según sus necesidades. Por ejemplo, puede definir dos pasos **Enviar señalización** en un flujo de acciones para enviar datos a [!DNL Adobe Analytics] y que se trate como una vista de página en un paso y enviar datos a [!DNL Adobe Analytics] y que no se trate como una vista de página en el segundo paso.
@@ -223,7 +221,7 @@ Realice los siguientes pasos para crear una configuración de Adobe Launch:
 
 >[!NOTE]
 >
-> Cuando [incrusta AEM Forms en una página de AEM Sites](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites), no se admiten las configuraciones de Adobe Launch en un iFrame para formularios adaptables. Para resolver esto, configure las reglas de Adobe Launch directamente en la página de Sites o migre las configuraciones de Adobe Launch existentes de AEM Forms a la página de Sites.
+> Cuando [incrusta AEM Forms en una página de AEM Sites](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites), no se admiten las configuraciones de Adobe Launch en un iFrame para formularios adaptables. Para resolver esto, configure las reglas de Adobe Launch directamente en la página de Sites o migre las configuraciones de Adobe Launch existentes de AEM Forms a la página de Sites.
 
 
 ### Habilitar [!DNL Adobe Analytics] para un formulario adaptable {#enable-analytics-adaptive-form}
@@ -239,8 +237,8 @@ Para usar la configuración de [!DNL Adobe Launch] en un formulario adaptable ex
 Tras habilitar [!DNL Adobe Analytics] para un formulario adaptable, puede [validar](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=es#validate-the-page-view-beacon) si hay un flujo de eventos de datos adecuado entre AEM Forms y [!DNL Adobe Analytics]. La integración de AEM Forms con Adobe Analytics ha finalizado. Ahora puede [configurar y ver informes en Adobe Analytics](#view-reports-adobe-analytics).
 
 >[!NOTE]
+>
 >En caso afirmativo, si las funciones [Analytics con Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) y **Analytics con Adobe Launch** se habilitan simultáneamente, **Analytics con Adobe Launch** tendrá prioridad.
-> 
 
 ### Crear reglas para capturar eventos personalizados (opcional) {#capture-custom-events}
 

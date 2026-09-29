@@ -6,13 +6,11 @@ feature: Adaptive Forms,Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f67bc6dce0f923294fba7d543eb3b170f992182f
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '3002'
 ht-degree: 90%
-
 ---
-
 # Crear o agregar un formulario adaptable mediante la página de AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -70,7 +68,7 @@ Puede aprovechar al máximo esta función utilizando las siguientes opciones:
 
 +++  Habilitar los componentes principales de formularios adaptables para su entorno
 
-Asegúrese de que los [componentes principales de Forms adaptable estén habilitados para su entorno](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=es).
+Asegúrese de que los [componentes principales de Forms adaptable estén habilitados para su entorno](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
 +++ 
 

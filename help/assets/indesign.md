@@ -1,18 +1,16 @@
 ---
 title: Integrar [!DNL Assets] con [!DNL InDesign Server]
-description: Aprenda a integrar [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
+description: Obtenga información sobre cómo integrar [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
 contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1584'
 ht-degree: 2%
-
 ---
-
 # Integrar [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] utiliza:
@@ -25,7 +23,7 @@ Para cargar completamente los archivos a [!DNL Experience Manager Assets] que cr
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] se ofrece como dos ofertas independientes. [Aplicación de escritorio Adobe InDesign](https://www.adobe.com/es/products/indesign.html) que se usa para diseñar diseños de página para impresión y distribución digital. [Adobe InDesign Server](https://www.adobe.com/es/products/indesignserver.html) le permite crear documentos automatizados mediante programación basándose en lo que ha creado con [!DNL InDesign]. Funciona como un servicio que ofrece una interfaz a su motor ExtendScript. Los scripts se escriben en [!DNL ExtendScript], que es similar a [!DNL JavaScript].
+>[!DNL Adobe InDesign] se ofrece como dos ofertas independientes. [Aplicación de escritorio Adobe InDesign](https://www.adobe.com/products/indesign.html) que se usa para diseñar diseños de página para impresión y distribución digital. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) le permite crear documentos automatizados mediante programación basándose en lo que ha creado con [!DNL InDesign]. Funciona como un servicio que ofrece una interfaz a su motor ExtendScript. Los scripts se escriben en [!DNL ExtendScript], que es similar a [!DNL JavaScript].
 
 ## Funcionamiento de la extracción {#how-the-extraction-works}
 
@@ -42,9 +40,9 @@ Esta secuencia de comandos:
    * Recupere el archivo INDD.
    * Ejecutar [!DNL InDesign Server] comandos:
 
-      * Se extraerán la estructura, el texto y los archivos multimedia.
-      * Se generan las representaciones de PDF y JPG.
-      * Se generan las representaciones HTML e IDML.
+     * Se extraerán la estructura, el texto y los archivos multimedia.
+     * Se generan las representaciones de PDF y JPG.
+     * Se generan las representaciones HTML e IDML.
 
    * Volver a publicar los archivos resultantes en [!DNL Experience Manager Assets].
 
@@ -137,7 +135,7 @@ Para personalizar, puede editar la pestaña **[!UICONTROL Argumentos]** del paso
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **Controlador de extracción de página**: en la lista emergente, seleccione el controlador que desee utilizar. Un controlador de extracción funciona en una representación específica, elegida por un elemento relacionado `RenditionPicker` (consulte la API `ExtractionHandler`). En una instalación estándar de [!DNL Experience Manager] está disponible lo siguiente:
-   * Controlador de extracción de exportación IDML: opera en la representación `IDML` generada en el paso MediaExtract.
+  * Controlador de extracción de exportación IDML: opera en la representación `IDML` generada en el paso MediaExtract.
 
 * **Nombre de página**: especifique el nombre que desea asignar a la página resultante. Si se deja en blanco, el nombre es &quot;página&quot; (o un derivado si &quot;página&quot; ya existe).
 
@@ -164,7 +162,7 @@ Para personalizar, puede editar la pestaña **[!UICONTROL Argumentos]** del paso
    ![proxy_disworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **Grupo IDS**
-Los extremos de SOAP usados para comunicarse con [!DNL InDesign Server]. Puede añadir, quitar y ordenar los elementos que sean necesarios.
+     Los extremos de SOAP usados para comunicarse con [!DNL InDesign Server]. Puede añadir, quitar y ordenar los elementos que sean necesarios.
 
 1. Haga clic en Aceptar para guardar.
 
@@ -204,19 +202,20 @@ Para configurar el número de trabajos de IDS paralelos:
 
    Si hay varios equipos que ejecutan [!DNL InDesign Server], agregue puntos finales de SOAP (número de procesadores por equipo -1) para cada equipo.
 
+   >[!NOTE]
+   >
+   >Al trabajar con un grupo de trabajadores, puede habilitar una lista de bloqueados de trabajadores IDS.
+   >
+   >Para ello, habilite la casilla de verificación **[!UICONTROL enable.retry.name]**, en la configuración `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, que habilita los reintentos de trabajos de IDS.
+   >
+   >Además, en la configuración `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, establezca un valor positivo para el parámetro `max.errors.to.blacklist` que determina el número de reintentos de trabajos antes de excluir un ID de la lista de controladores de trabajos.
+   >
+   >De forma predeterminada, después del tiempo configurable (`retry.interval.to.whitelist.name`) en minutos, el trabajador de IDS se vuelve a validar. Si el trabajador se encuentra en línea, se elimina de la lista de bloqueados.
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
 
->[!NOTE]
->
->Al trabajar con un grupo de trabajadores, puede habilitar una lista de bloqueados de trabajadores IDS.
->
->Para ello, habilite la casilla de verificación **[!UICONTROL enable.retry.name]**, en la configuración `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, que habilita los reintentos de trabajos de IDS.
->
->Además, en la configuración `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, establezca un valor positivo para el parámetro `max.errors.to.blacklist` que determina el número de reintentos de trabajos antes de excluir un ID de la lista de controladores de trabajos.
->
->De forma predeterminada, después del tiempo configurable (`retry.interval.to.whitelist.name`) en minutos, el trabajador de IDS se vuelve a validar. Si el trabajador se encuentra en línea, se elimina de la lista de bloqueados.
 
 ## Habilitar compatibilidad con [!DNL InDesign Server] 10.0 o posterior {#enabling-support-for-indesign-server-or-later}
 
@@ -240,4 +239,4 @@ Puede cambiar las credenciales de administrador predeterminadas (nombre de usuar
 
 >[!MORELIKETHIS]
 >
->* [Acerca del Adobe InDesign Server](https://www.adobe.com/es/products/indesignserver/faq.html)
+>* [Acerca del Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

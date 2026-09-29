@@ -8,13 +8,11 @@ exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 97%
-
+source-wordcount: '1537'
+ht-degree: 94%
 ---
-
 # Ejemplo para integrar el componente Borradores y envíos con la base de datos {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Información general sobre el ejemplo {#sample-overview}
@@ -37,15 +35,15 @@ Realice los siguientes pasos en todas las instancias de autor y publicación par
 
    Paquete de muestra para la integración de bases de datos
 
-[Obtener archivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Obtener archivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Vaya a al Administrador de paquetes de AEM en https://[*host*]:[*port*]/crx/packmgr/.
 1. Haga clic en **[!UICONTROL Cargar paquete]**.
 
 1. Busque y seleccione el paquete **aem-fp-db-integration-sample-pkg-6.1.2.zip** y haga clic en **[!UICONTROL Aceptar]**.
 1. Haga clic en la opción **[!UICONTROL Instalar]** que aparece junto al paquete para instalarlo.
-1. Vaya a la página de **[!UICONTROL configuración de la consola web de AEM]**
-en https://[*host*]:[*port*]/system/console/configMgr.
+1. Ir a la configuración de la consola web de **[!UICONTROL AEM]**
+página en https://[*host*]:[*port*]/system/console/configMgr.
 1. Haga clic para abrir **[!UICONTROL Configuración de borradores y envíos del portal de formularios]** en el modo Edición.
 
 1. Especifique los valores de las propiedades tal como se describe en la siguiente tabla:
@@ -89,79 +87,79 @@ en https://[*host*]:[*port*]/system/console/configMgr.
 1. La conexión a la base de datos se puede realizar mediante la fuente de datos agrupada de la conexión de Apache Sling.
 1. Para utilizar la conexión de Apache Sling, busque y haga clic en la **[!UICONTROL Fuente de datos obtenida de una conexión Apache Sling]** para abrirla en el modo de edición en la configuración de la consola web. Especifique los valores de las propiedades tal como se describe en la siguiente tabla:
 
-<table>
- <tbody>
-  <tr>
+   <table>
+   <tbody>
+   <tr>
    <td><strong>Propiedad</strong></td>
    <td><strong>Valor</strong></td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nombre de la fuente de datos</td>
    <td><p>Un nombre de fuente de datos para filtrar los controladores del grupo de fuentes de datos</p> <p><strong>Nota: </strong><em>La implementación de ejemplo utiliza el portal de formularios como nombre de la fuente de datos.</em></p> </td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Clase de controlador JDBC</td>
    <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>URI de conexión JDBC<br /> </td>
    <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nombre de usuario</td>
    <td>Un nombre de usuario para autenticar y realizar acciones en tablas de base de datos</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Contraseña</td>
    <td>La contraseña asociada al nombre de usuario</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Aislamiento de transacciones</td>
    <td>READ_COMMITTED</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Máximo de conexiones activas</td>
    <td>1000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Conexiones máximas inactivas</td>
    <td>100</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Conexiones mínimas inactivas</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Tamaño inicial</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Espera máxima</td>
    <td>100 000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Prueba a la vista previa</td>
    <td>Comprobado</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Prueba mientras está inactiva</td>
    <td>Comprobado</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Consulta de validación</td>
    <td>Los valores de ejemplo son SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Tiempo de espera de consulta de validación</td>
    <td>10 000</td>
-  </tr>
- </tbody>
-</table>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->* El controlador JDBC para MySQL no se proporciona con el ejemplo. Asegúrese de que lo ha aprovisionado y proporcione la información necesaria para configurar el grupo de conexiones JDBC.
->* Asigne instancias de autor y publicación para utilizar la misma base de datos. El valor del campo URI de conexión JDBC debe ser el mismo para todas las instancias de autor y publicación.
+   >[!NOTE]
+   >
+   >* El controlador JDBC para MySQL no se proporciona con el ejemplo. Asegúrese de que lo ha aprovisionado y proporcione la información necesaria para configurar el grupo de conexiones JDBC.
+   >* Asigne instancias de autor y publicación para utilizar la misma base de datos. El valor del campo URI de conexión JDBC debe ser el mismo para todas las instancias de autor y publicación.
 
 1. Deje el resto de las configuraciones tal como están y haga clic en **[!UICONTROL Guardar]**.
 
@@ -304,7 +302,7 @@ La implementación de ejemplo ya está configurada. Puede utilizarla para ver un
 Realice los siguientes pasos en todas las instancias de autor y publicación para instalar el archivo mysql-connector-java-5.1.39-bin.jar:
 
 1. Vaya a `https://'[server]:[port]'/system/console/depfinder` y busque el paquete com.mysql.jdbc.
-1. En la columna Exportado por, compruebe si el paquete lo exporta algún otro paquete.
+1. En la columna Exportado por, compruebe si el paquete fue exportado por algún otro paquete.
 
    Continúe si el paquete no se exporta mediante ningún paquete.
 
@@ -330,7 +328,7 @@ La implementación de la base de datos del portal de formularios utiliza tablas 
 Siga los siguientes pasos para crear [una biblioteca cliente](/help/sites-developing/clientlibs.md) y utilizar el script:
 
 1. Inicie sesión en CRXDE y vaya a /etc/clientlibs/.
-1. Cree un nodo de tipo **cq:ClientLibraryFolder** y proporcione un nombre para él. Por ejemplo, `validation`.
+1. Cree un nodo de tipo **cq:ClientLibraryFolder** y proporcione su nombre. Por ejemplo, `validation`.
 
    Haga clic en **[!UICONTROL Guardar todo]**.
 
@@ -412,12 +410,12 @@ Siga los siguientes pasos para crear [una biblioteca cliente](/help/sites-develo
 
    * **[!UICONTROL multiopción:]** Habilitado
 
-1. Vaya a `/libs/fd/af/runtime/clientlibs/guideRuntime` y añada el valor `fp.validation` a la propiedad embed.
+1. Vaya a `/libs/fd/af/runtime/clientlibs/guideRuntime` y añada el valor `fp.validation` a la propiedad de incrustación.
 
-1. Vaya a /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA y añada el valor `fp.validation` a la propiedad embed.
+1. Vaya a /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA y añada el valor `fp.validation` a la propiedad de incrustación.
 
    >[!NOTE]
    >
    >Si está utilizando bibliotecas de cliente personalizadas en lugar de las bibliotecas de cliente guideRuntime y guideRuntimeWithXfa, utilice el nombre de categoría para incrustar la biblioteca de cliente creada en este procedimiento en las bibliotecas personalizadas cargadas durante la ejecución.
 
-1. Haga clic en **[!UICONTROL Guardar todo.]** A partir de ahora, cuando el nombre de archivo tiene más de 150 caracteres (incluyendo la extensión), se muestra un mensaje.
+1. Haga clic en **[!UICONTROL Guardar todo.]** Ahora, cuando el nombre de archivo tiene más de 150 caracteres (incluida la extensión), se muestra un mensaje.

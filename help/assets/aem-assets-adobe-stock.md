@@ -1,24 +1,22 @@
 ---
 title: Administrar [!DNL Adobe Stock] recursos
-description: Busque, recupere, conceda licencias y administre  [!DNL Adobe Stock] recursos dentro de [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
+description: Busque, recupere, conceda licencias y administre [!DNL Adobe Stock] recursos en [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
 contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2253'
 ht-degree: 4%
-
 ---
-
 # Usar [!DNL Adobe Stock] recursos en [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 <!--
@@ -108,7 +106,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 Como desarrollador, ejecute los siguientes pasos para integrar [!DNL Adobe Experience Manager] y [!DNL Adobe Stock].
 
 1. [Configurar un programa en  [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Agregar configuración en la instancia de autor  [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Agregar configuración en la instancia de autor  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configurar un programa en [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -119,9 +117,9 @@ Ejecute los siguientes pasos para configurar un programa en [!DNL Developer Cons
 1. Haga clic en **[!UICONTROL Agregar al proyecto]** y seleccione **[!UICONTROL API]**.
 1. Seleccione **[!UICONTROL Adobe Stock]** y haga clic en **[!UICONTROL Siguiente]**.
 1. Especifique un **[!UICONTROL nombre de credencial]**, compruebe que está seleccionado **[!UICONTROL Servidor a servidor OAuth]** y haga clic en **[!UICONTROL Siguiente]**.
-1. Seleccione **[!UICONTROL AEM Assets]** **[!UICONTROL Perfil del producto]** y haga clic en **[!UICONTROL Guardar la API configurada]**. Aparece un mensaje de confirmación para confirmar que ha creado un proyecto en [!DNL Developer Console]. Se abre el tablero del proyecto, con el nombre del proyecto en la parte superior, **[!UICONTROL Adobe Stock]** en **[!UICONTROL API]** y **[!UICONTROL AEM Assets]** en **[!UICONTROL Perfil del producto]** y la tarjeta de credenciales de **[!UICONTROL OAuth de servidor a servidor]** en **[!UICONTROL Credenciales conectadas]**.
+1. Seleccione **[!UICONTROL AEM Assets]** **[!UICONTROL Perfil del producto]** y haga clic en **[!UICONTROL Guardar la API configurada]**. Aparece un mensaje de confirmación para confirmar que creó un proyecto en [!DNL Developer Console]. Se abre el tablero del proyecto, con el nombre del proyecto en la parte superior, **[!UICONTROL Adobe Stock]** en **[!UICONTROL API]** y **[!UICONTROL AEM Assets]** en **[!UICONTROL Perfil del producto]** y la tarjeta de credenciales de **[!UICONTROL OAuth de servidor a servidor]** en **[!UICONTROL Credenciales conectadas]**.
    ![integrar aem assets y adobe stock](/help/assets/assets/adc-project-name.png)
-1. Seleccione la tarjeta de credenciales **[!UICONTROL OAuth Server-to-Server]** y se mostrarán los **[!UICONTROL detalles de credenciales]**. Use estos detalles de credenciales de [!DNL OAuth Server-to-Server] de su proyecto, como **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto de cliente]**, **[!UICONTROL Ámbito]**, **[!UICONTROL Nombre de credencial]**, **[!UICONTROL ID de cuenta técnica]**, **[!UICONTROL ID de organización]** para [agregar configuración en la instancia de autor de AEM](#add-configuration-in-the-aem-author-instance).
+1. Seleccione la tarjeta de credenciales **[!UICONTROL OAuth Server-to-Server]** y se mostrarán los **[!UICONTROL detalles de credenciales]**. Use estos [!DNL OAuth Server-to-Server] detalles de credenciales de su proyecto, como **[!UICONTROL ID de cliente]**, **[!UICONTROL Secreto de cliente]**, **[!UICONTROL Ámbito]**, **[!UICONTROL Nombre de credencial]**, **[!UICONTROL ID de cuenta técnica]**, **[!UICONTROL ID de organización]** para [agregar configuración en la instancia de autor de AEM](#add-configuration-in-the-aem-author-instance).
    ![recursos aem y adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
 ### Agregar configuración en la instancia de autor [!DNL AEM] {#add-configuration-in-the-aem-author-instance}
@@ -163,6 +161,7 @@ Ejecute los siguientes pasos para agregar la configuración de nube para conecta
    * **[!UICONTROL Configuración regional]**: seleccione **[!UICONTROL Inglés (Estados Unidos)]**.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
    ![usando adobe stock con aem](/help/assets/assets/adobe-stock-config-page.png)
+
 <!--
 old content
 ## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
@@ -306,7 +305,8 @@ To configure the [!DNL Adobe Stock] cloud service:
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
 1. Click **[!UICONTROL Save & Close]**. 
- -->
+-->
+
 Su instancia de autor de [!DNL Experience Manager Assets] ahora está integrada con [!DNL Adobe Stock]. Puede crear varias configuraciones de [!DNL Adobe Stock] (por ejemplo, configuraciones basadas en la configuración regional). Ahora puede obtener acceso, buscar y obtener una licencia de los recursos de [!DNL Adobe Stock] desde la interfaz de usuario de [!DNL Experience Manager].
 
 ![search-stock-assets](assets/aem-stock-searchstocks.png)
@@ -472,9 +472,9 @@ Los usuarios pueden ver las propiedades de los recursos con y sin licencia.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial de vídeo sobre el uso de [!DNL Adobe Stock] recursos con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=es)
->* [[!DNL Adobe Stock] ayuda de plan empresarial](https://helpx.adobe.com/es/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] Preguntas más frecuentes](https://helpx.adobe.com/es/stock/faq.html)
+>* [Tutorial de vídeo sobre el uso de [!DNL Adobe Stock] recursos con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] ayuda de plan empresarial](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Preguntas más frecuentes](https://helpx.adobe.com/stock/faq.html)
 
 
 <!--

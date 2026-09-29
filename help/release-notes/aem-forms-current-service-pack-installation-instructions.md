@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2149'
 ht-degree: 91%
-
 ---
-
 # Instrucciones de instalación de AEM 6.5 Forms Service Pack {#aem-form-patch-installation-instructions}
 
 ## Información de la versión
@@ -95,15 +93,15 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. Extraiga el **archivo del programa de instalación del Service Pack de AEM Forms en JEE** en el disco duro:
 
    * **Windows**
-Vaya al directorio apropiado del medio de instalación o a la carpeta del disco duro donde copió el instalador y haga doble clic en el archivo `aemforms65_cfp_install.exe`.
+     Vaya al directorio apropiado del medio de instalación o a la carpeta del disco duro donde copió el instalador y haga doble clic en el archivo `aemforms65_cfp_install.exe`.
 
-      * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
-      * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
+     * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Vaya al directorio apropiado, y desde un shell y escriba `./aem65_cfp_install.bin`.
+     Vaya al directorio apropiado, y desde un shell y escriba `./aem65_cfp_install.bin`.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Esto inicia un asistente de instalación que le guiará a través de la instalación.
 
@@ -177,7 +175,7 @@ Para descargar e instalar el fragmento de servlet:
 Existen dos métodos diferentes que puede utilizar para instalar automáticamente el Service Pack de [!DNL ExperienceManager].<!--       UPDATE FOR EACH NEW RELEASE -->
 
 * Coloque el paquete en la carpeta `../crx-quickstart/install` cuando el servidor esté disponible en línea.
-El paquete se instala automáticamente.
+El paquete se instala de forma automática.
 
 * Use la API [HTTP del Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es). Use `cmd=install&recursive=true` para que se instalen los paquetes anidados.
 
@@ -189,9 +187,9 @@ El paquete se instala automáticamente.
 
   Para conocer las plataformas que están certificadas para funcionar con esta versión, consulte los [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-   1. La página de información del producto (`/system/console/productinfo`) muestra la cadena de versión actualizada `Adobe Experience Manager (spversion)` en [!UICONTROL Productos instalados].<!-- UPDATE FOR EACH NEW RELEASE -->
-   1. Todos los paquetes OSGi tienen el valor **[!UICONTROL ACTIVO]** o **[!UICONTROL FRAGMENTO]** en la consola OSGi (utilice la consola web: `/system/console/bundles`).
-   1. El paquete OSGi `org.apache.jackrabbit.oak-core` es de la versión 1.22.14 o posterior (utilice WebConsole: `/system/console/bundles`).
+  1. La página de información del producto (`/system/console/productinfo`) muestra la cadena de versión actualizada `Adobe Experience Manager (spversion)` en [!UICONTROL Productos instalados].<!-- UPDATE FOR EACH NEW RELEASE -->
+  1. Todos los paquetes OSGi tienen el valor **[!UICONTROL ACTIVO]** o **[!UICONTROL FRAGMENTO]** en la consola OSGi (utilice la consola web: `/system/console/bundles`).
+  1. El paquete OSGi `org.apache.jackrabbit.oak-core` es de la versión 1.22.14 o posterior (utilice WebConsole: `/system/console/bundles`).
 
 +++
 
@@ -262,11 +260,11 @@ Existen dos métodos diferentes que puede utilizar para instalar automáticament
 
   Para conocer las plataformas que están certificadas para funcionar con esta versión, consulte los [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-   1. La página de información del producto (`/system/console/productinfo`) muestra la cadena de versión actualizada `Adobe Experience Manager (spversion)` en [!UICONTROL Productos instalados]. <!-- UPDATE FOR EACH NEW RELEASE -->
+  1. La página de información del producto (`/system/console/productinfo`) muestra la cadena de versión actualizada `Adobe Experience Manager (spversion)` en [!UICONTROL Productos instalados]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-   1. Todos los paquetes OSGi tienen el valor **[!UICONTROL ACTIVO]** o **[!UICONTROL FRAGMENTO]** en la consola OSGi (utilice la consola web: `/system/console/bundles`).
+  1. Todos los paquetes OSGi tienen el valor **[!UICONTROL ACTIVO]** o **[!UICONTROL FRAGMENTO]** en la consola OSGi (utilice la consola web: `/system/console/bundles`).
 
-      1. El paquete OSGi `org.apache.jackrabbit.oak-core` es de la versión 1.22.14 o posteriores (utilice la consola web: `/system/console/bundles`).
+     1. El paquete OSGi `org.apache.jackrabbit.oak-core` es de la versión 1.22.14 o posteriores (utilice la consola web: `/system/console/bundles`).
 
 +++
 
