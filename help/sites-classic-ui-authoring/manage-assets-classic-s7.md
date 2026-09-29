@@ -1,10 +1,12 @@
 ---
 title: Añadir funciones de Dynamic Media Classic (Scene7) a la página
 description: Adobe Dynamic Media Classic (Scene7) es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
+
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
+
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 solution: Experience Manager, Experience Manager Sites
@@ -12,16 +14,14 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3545'
-ht-degree: 0%
-
+source-wordcount: '3578'
+ht-degree: 2%
 ---
-
 # Añadir funciones de Dynamic Media Classic (Scene7) a la página{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=es) es una solución hospedada para administrar, mejorar, publicar y entregar recursos de medios enriquecidos en pantallas e impresoras web, móviles, de correo electrónico y conectadas a Internet.
+[Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=es) es una solución hospedada para administrar, mejorar, publicar y entregar recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
 
-Puede ver los recursos del Experience Manager publicados en Dynamic Media Classic (Scene7) en varios visores:
+Puede ver los recursos de Experience Manager publicados en Dynamic Media Classic (Scene7) en varios visores:
 
 * Zoom
 * Flotante
@@ -29,7 +29,7 @@ Puede ver los recursos del Experience Manager publicados en Dynamic Media Classi
 * Plantilla de imagen
 * Imagen
 
-Puede publicar recursos digitales directamente desde Experience Manager a Dynamic Media Classic (Scene7) y publicar recursos digitales desde Dynamic Media Classic (Scene7) a Experience Manager.
+Puede publicar recursos digitales directamente desde Experience Manager en Dynamic Media Classic (Scene7) y publicar recursos digitales desde Dynamic Media Classic (Scene7) en Experience Manager.
 
 En este documento se describe cómo publicar recursos digitales de Experience Manager en Dynamic Media Classic (Scene7) y a la inversa. Los espectadores también se describen en detalle. Para obtener información sobre la configuración de Experience Manager para Dynamic Media Classic (Scene7), consulte [Integración de Dynamic Media Classic (Scene7) con Experience Manager](/help/sites-administering/scene7.md).
 
@@ -41,7 +41,7 @@ Para obtener más información sobre el uso de componentes de vídeo con Experie
 
 >[!NOTE]
 >
->Si los recursos de Dynamic Media Classic (Scene7) no se muestran correctamente, asegúrese de que Dynamic Media esté [deshabilitado](/help/assets/config-dynamic.md#disabling-dynamic-media) y luego actualice la página.
+>Si los recursos de Dynamic Media Classic (Scene7) no se muestran correctamente, asegúrese de que Dynamic Media esté [deshabilitado](/help/assets/config-dynamic.md#disabling-dynamic-media) y, a continuación, actualice la página.
 
 ## Publicación manual en Dynamic Media Classic (Scene7) desde Assets {#manually-publishing-to-scene-from-assets}
 
@@ -49,7 +49,7 @@ Puede publicar recursos digitales en Dynamic Media Classic (Scene7) desde la con
 
 >[!NOTE]
 >
->Experience Manager publica en Dynamic Media Classic (Scene7) de forma asíncrona. Después de seleccionar **[!UICONTROL Publish]**, su recurso puede tardar varios segundos en publicarse en Dynamic Media Classic (Scene7).
+>Experience Manager publica en Dynamic Media Classic (Scene7) de forma asincrónica. Después de seleccionar **[!UICONTROL Publicar]**, su recurso puede tardar varios segundos en publicarse en Dynamic Media Classic (Scene7).
 >
 
 ### Publicación desde la consola de Assets {#publishing-from-the-assets-console}
@@ -58,7 +58,7 @@ Puede publicar en Dynamic Media Classic (Scene7) desde la consola de Assets si l
 
 1. En la IU de Experience Manager Classic, seleccione **[!UICONTROL Assets digital]** para acceder al administrador de recursos digitales.
 
-1. Seleccione el recurso (o los recursos) o la carpeta en la carpeta de destino que desea publicar en Dynamic Media Classic (Scene7), haga clic con el botón derecho y seleccione **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]**. También puede seleccionar **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]** en el menú **[!UICONTROL Herramientas]**.
+1. Seleccione el recurso (o los recursos) o la carpeta que desee publicar en Dynamic Media Classic (Scene7), haga clic con el botón derecho y seleccione **[!UICONTROL Publicar en Dynamic Media Classic (Scene7)]**. También puede seleccionar **[!UICONTROL Publicar en Dynamic Media Classic (Scene7)]** en el menú **[!UICONTROL Herramientas]**.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -66,15 +66,15 @@ Puede publicar en Dynamic Media Classic (Scene7) desde la consola de Assets si l
 
    >[!NOTE]
    >
-   >Si los recursos no están sincronizados en una carpeta de Dynamic Media Classic (Scene7), **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]** en ambos menús está visible pero deshabilitado.
+   >Si los recursos no están sincronizados en una carpeta de Dynamic Media Classic (Scene7), **[!UICONTROL Publicar en Dynamic Media Classic (Scene7)]** en ambos menús está visible pero deshabilitado.
 
-### Publish desde un recurso {#publishing-from-an-asset}
+### Publicar desde un recurso {#publishing-from-an-asset}
 
 Puede publicar manualmente un recurso siempre que esté ubicado dentro de la carpeta sincronizada de Dynamic Media Classic (Scene7).
 
 >[!NOTE]
 >
->Si el recurso no está en la carpeta sincronizada de Dynamic Media Classic (Scene7), el vínculo a **[!UICONTROL Publish a Dynamic Media Classic (Scene7)]** no aparecerá.
+>Si el recurso no está en la carpeta sincronizada de Dynamic Media Classic (Scene7), no aparecerá el vínculo a **[!UICONTROL Publicar en Dynamic Media Classic (Scene7)]**.
 
 Para publicar en Dynamic Media Classic (Scene7) directamente desde un recurso digital:
 
@@ -82,7 +82,7 @@ Para publicar en Dynamic Media Classic (Scene7) directamente desde un recurso di
 
 1. Haga doble clic para abrir un recurso.
 
-1. En el panel de detalles del recurso, seleccione **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]**.
+1. En el panel de detalles del recurso, seleccione **[!UICONTROL Publicar en Dynamic Media Classic (Scene7)]**.
 
    ![screen_shot_2012-02-22at34828pm](assets/screen_shot_2012-02-22at34828pm.png)
 
@@ -90,15 +90,15 @@ Para publicar en Dynamic Media Classic (Scene7) directamente desde un recurso di
 
    >[!NOTE]
    >
-   >Si el recurso no se publica correctamente en Dynamic Media Classic (Scene7), el vínculo cambia a **[!UICONTROL Error de publicación]**. Si el recurso ya se ha publicado en Dynamic Media Classic (Scene7), el vínculo indica **[!UICONTROL Volver a Publish en Dynamic Media Classic (Scene7)]**. La republicación permite cambiar recursos en Experience Manager y volver a publicarlos.
+   >Si el recurso no se publica correctamente en Dynamic Media Classic (Scene7), el vínculo cambia a **[!UICONTROL Error de publicación]**. Si el recurso ya se ha publicado en Dynamic Media Classic (Scene7), el vínculo indica **[!UICONTROL Volver a publicar en Dynamic Media Classic (Scene7)]**. La republicación permite cambiar recursos en Experience Manager y volver a publicarlos.
 
-### Recursos de Publish desde fuera de la carpeta de destino de CQ {#publishing-assets-from-outside-the-cq-target-folder}
+### Publicar recursos desde fuera de la carpeta de destino de CQ {#publishing-assets-from-outside-the-cq-target-folder}
 
-El Adobe recomienda publicar los recursos en Dynamic Media Classic (Scene7) únicamente desde los recursos de la carpeta de destino de Dynamic Media Classic (Scene7). Sin embargo, si debe cargar recursos desde una carpeta fuera de la carpeta de destino, aún puede hacerlo cargándolos en una carpeta bajo demanda en Dynamic Media Classic (Scene7). En primer lugar, configure Cloud para la página en la que desea que aparezca el recurso. A continuación, agregue un componente de Dynamic Media Classic (Scene7) a la página y arrastre y suelte un recurso en el componente. Una vez definidas las propiedades de página para esa página, aparecerá un vínculo de **[!UICONTROL Publish a Dynamic Media Classic (Scene7)]** que se cargará a los déclencheur seleccionados en Dynamic Media Classic (Scene7).
+Adobe recomienda publicar recursos en Dynamic Media Classic (Scene7) únicamente desde recursos de la carpeta de destino de Dynamic Media Classic (Scene7). Sin embargo, si debe cargar recursos desde una carpeta que no pertenezca a la carpeta de destino, puede hacerlo cargándolos en una carpeta bajo demanda en Dynamic Media Classic (Scene7). En primer lugar, configure Cloud para la página en la que desea que aparezca el recurso. A continuación, agregue un componente de Dynamic Media Classic (Scene7) a la página y arrastre y suelte un recurso en el componente. Una vez establecidas las propiedades de página para esa página, aparece un vínculo **[!UICONTROL Publicar en Dynamic Media Classic (Scene7)]** que aparece al cargar los déclencheur seleccionados en Dynamic Media Classic (Scene7).
 
 >[!NOTE]
 >
->Los Assets que se encuentran en la carpeta bajo demanda no aparecen en el Explorador de contenido de Dynamic Media Classic (Scene7).
+>Los Assets que se encuentran en la carpeta bajo demanda no aparecen en el explorador de contenido de Dynamic Media Classic (Scene7).
 
 **Para publicar recursos desde fuera de la carpeta de destino de CQ:**
 
@@ -106,14 +106,14 @@ El Adobe recomienda publicar los recursos en Dynamic Media Classic (Scene7) úni
 
 1. En la barra de tareas, seleccione el icono **[!UICONTROL Página]** y seleccione **[!UICONTROL Propiedades de página]**.
 
-1. Seleccionar **[!UICONTROL Cloud Service]**.
+1. Seleccione **[!UICONTROL Cloud Services]**.
 1. Seleccione **[!UICONTROL Agregar servicios]**.
 1. Seleccione **[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. En la lista desplegable **[!UICONTROL Adobe Dynamic Media Classic (Scene7)]**, seleccione la configuración que desee y seleccione **[!UICONTROL Aceptar]**.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
-1. En la página web, agregue un componente Dynamic Media Classic (Scene7) a la ubicación deseada en la página.
+1. En la página web, añada un componente Dynamic Media Classic (Scene7) a la ubicación deseada en la página.
 1. Desde el buscador de contenido, arrastre un recurso digital al componente. Verá un vínculo a **[!UICONTROL Comprobar el estado de publicación de Dynamic Media Classic (Scene7)]**.
 
    >[!NOTE]
@@ -142,25 +142,25 @@ Los siguientes componentes de Dynamic Media Classic (Scene7) están disponibles 
 >
 >Estos componentes no están disponibles de forma predeterminada y deben seleccionarse en el modo Diseño antes de utilizar.
 
-Una vez que estén disponibles en el modo Diseño, puede agregar los componentes a la página como cualquier otro componente del Experience Manager. Las Assets que aún no se hayan publicado en Dynamic Media Classic (Scene7) se publican en Dynamic Media Classic (Scene7) si se encuentran en una carpeta sincronizada o en una página, o con una configuración de nube de Dynamic Media Classic (Scene7).
+Una vez que estén disponibles en el modo Diseño, puede agregar los componentes a la página como cualquier otro componente de Experience Manager. Las Assets que aún no se han publicado en Dynamic Media Classic (Scene7) se publican en Dynamic Media Classic (Scene7) si se encuentran en una carpeta sincronizada o en una página, o con una configuración de nube de Dynamic Media Classic (Scene7).
 
 >[!NOTE]
 >
 >Si está creando y desarrollando visores S7 personalizados y está utilizando el buscador de contenido, debe agregar explícitamente el parámetro `allowfullscreen`.
 
-### Aviso de fin de vida útil para el visualizador de Flashes {#flash-viewers-end-of-life-notice}
+### Aviso de fin de vida útil de los visores Flash {#flash-viewers-end-of-life-notice}
 
-A partir del 31 de enero de 2017, Adobe Dynamic Media Classic (Scene7) dejará de ofrecer oficialmente asistencia para la plataforma de visor de Flash.
+A partir del 31 de enero de 2017, Adobe Dynamic Media Classic (Scene7) dejará de ofrecer asistencia oficial para la plataforma de visor Flash.
 
-### Añadir un componente Dynamic Media Classic (Scene7) a una página {#adding-a-scene-component-to-a-page}
+### Adición de un componente de Dynamic Media Classic (Scene7) a una página {#adding-a-scene-component-to-a-page}
 
 Añadir un componente de Dynamic Media Classic (Scene7) a una página es lo mismo que añadir un componente a cualquier página. Los componentes de Dynamic Media Classic (Scene7) se describen en detalle en las secciones siguientes.
 
 Para añadir un componente o visor de Dynamic Media Classic (Scene7) a una página en la IU clásica:
 
-1. En Experience Manager, abra la página donde desea agregar el componente Dynamic Media Classic (Scene7).
+1. En Experience Manager, abra la página donde desee agregar el componente Dynamic Media Classic (Scene7).
 
-1. Si no hay componentes de Dynamic Media Classic (Scene7) disponibles, seleccione la regla de la barra de tareas para entrar en el modo **Diseño**, seleccione **[!UICONTROL Editar]** parsys y todos los componentes de **[!UICONTROL Dynamic Media Classic (Scene7)]** para que estén disponibles.
+1. Si no hay componentes de Dynamic Media Classic (Scene7) disponibles, selecciona la regla de la barra de tareas para entrar en el modo **Diseño**, selecciona **[!UICONTROL Editar]** parsys y selecciona todos los componentes de **[!UICONTROL Dynamic Media Classic (Scene7)]** para que estén disponibles.
 
 1. Vuelva al modo **Editar** seleccionando el lápiz en la barra de tareas.
 
@@ -176,13 +176,13 @@ El diseño interactivo para sus recursos significa que los recursos se adaptará
 
 Para agregar una experiencia de visualización interactiva a un sitio adaptable en la IU clásica:
 
-1. Inicie sesión en el Experience Manager y asegúrese de que ha [configurado los Cloud Service de Adobe Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#configuring-scene-integration) y que los componentes de Dynamic Media Classic (Scene7) están disponibles.
+1. Inicie sesión en Experience Manager y compruebe que ha [configurado los servicios en la nube de Adobe Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#configuring-scene-integration) y que los componentes de Dynamic Media Classic (Scene7) están disponibles.
 
    >[!NOTE]
    >
    >Si los componentes WCM de Dynamic Media Classic (Scene7) no están disponibles, asegúrese de activarlos en el modo Diseño.
 
-1. En un sitio web con los componentes de Dynamic Media Classic (Scene7) habilitados, arrastre un visor de **[!UICONTROL Imagen]** a la página.
+1. En un sitio web con los componentes de Dynamic Media Classic (Scene7) habilitados, arrastra un visor de **[!UICONTROL Imagen]** a la página.
 1. Edite el componente y ajuste los puntos de interrupción en la ficha **[!UICONTROL Configuración de Dynamic Media Classic (Scene7)]**.
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
@@ -193,17 +193,17 @@ Para agregar una experiencia de visualización interactiva a un sitio adaptable 
 
 Aunque las opciones de configuración varían, los siguientes elementos son comunes a todos los componentes de Dynamic Media Classic (Scene7):
 
-* **Referencia de archivo**: busque un archivo al que desee hacer referencia. La referencia de archivo muestra la URL del recurso y no necesariamente la URL completa de Dynamic Media Classic (Scene7), incluidos los comandos y parámetros de URL. No puede añadir comandos y parámetros de URL de Dynamic Media Classic (Scene7) en este campo. En su lugar, se deben agregar a través de la funcionalidad correspondiente en el componente.
+* **Referencia de archivo**: busque un archivo al que desee hacer referencia. La referencia de archivo muestra la URL del recurso y no necesariamente la URL completa de Dynamic Media Classic (Scene7), incluidos los comandos y parámetros de URL. No se pueden añadir comandos y parámetros de URL de Dynamic Media Classic (Scene7) en este campo. En su lugar, se deben agregar a través de la funcionalidad correspondiente en el componente.
 * **Anchura** - Le permite establecer la anchura.
 * **Altura**: le permite establecer la altura.
 
-Estas opciones de configuración se establecen abriendo (haciendo doble clic) en un componente de Dynamic Media Classic (Scene7), por ejemplo, al abrir un componente **Zoom**:
+Estas opciones de configuración se establecen abriendo (haciendo doble clic) en un componente de Dynamic Media Classic (Scene7); por ejemplo, al abrir un componente **Zoom**:
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
 ### Zoom {#zoom}
 
-El componente Zoom HTML 5 muestra una imagen más grande al pulsar el botón +.
+El componente Zoom HTML5 muestra una imagen más grande al pulsar el botón +.
 
 El recurso tiene herramientas de zoom en la parte inferior. Seleccione **[!UICONTROL +]** para ampliar. Seleccione **[!UICONTROL -]** para reducir. Si se selecciona **[!UICONTROL x]** o la flecha de zoom de restablecimiento, la imagen recuperará el tamaño original con el que se importó. Seleccione las flechas diagonales para que pueda hacerlo a pantalla completa. Seleccione **[!UICONTROL Editar]** para poder configurar el componente. Con este componente, puede configurar [opciones comunes a todos los componentes de Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
 
@@ -211,7 +211,7 @@ El recurso tiene herramientas de zoom en la parte inferior. Seleccione **[!UICON
 
 ### Flotante {#flyout}
 
-En el componente flotante HTML 5, el recurso se muestra como una pantalla dividida; dejó el recurso en el tamaño especificado; a la derecha, se muestra la parte de zoom. Seleccione **[!UICONTROL Editar]** para poder configurar el componente. Con este componente, puede configurar [opciones comunes a todos los componentes de Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components).
+En el componente flotante de HTML5, el recurso se muestra como una pantalla dividida; dejó el recurso en el tamaño especificado; a la derecha, se muestra la parte de zoom. Seleccione **[!UICONTROL Editar]** para poder configurar el componente. Con este componente, puede configurar [opciones comunes a todos los componentes de Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components).
 
 >[!NOTE]
 >
@@ -223,7 +223,7 @@ En el componente flotante HTML 5, el recurso se muestra como una pantalla dividi
 
 ### Imagen {#image}
 
-El componente Imagen de Dynamic Media Classic (Scene7) permite añadir la funcionalidad de Dynamic Media Classic (Scene7) a las imágenes, como los modificadores de Dynamic Media Classic (Scene7), los ajustes preestablecidos de imagen o visualizador y la función de enfoque. El componente de imagen de Dynamic Media Classic (Scene7) es similar a otros componentes de imagen en Experience Manager con funcionalidad especial de Dynamic Media Classic (Scene7). En este ejemplo, la imagen tiene el modificador de URL Dynamic Media Classic (Scene7), `&op_invert=1` aplicado.
+El componente Imagen de Dynamic Media Classic (Scene7) permite añadir la funcionalidad de Dynamic Media Classic (Scene7) a las imágenes, como los modificadores de Dynamic Media Classic (Scene7), los ajustes preestablecidos de imagen o visualizador y el enfoque. El componente de imagen Dynamic Media Classic (Scene7) es similar a otros componentes de imagen de Experience Manager con funcionalidad especial de Dynamic Media Classic (Scene7). En este ejemplo, la imagen tiene aplicado el modificador de URL Dynamic Media Classic (Scene7) `&op_invert=1`.
 
 ![Imagen de una esfera dentro del componente de imagen de Dynamic Media Classic (Scene7)](do-not-localize/chlimage_1-4.png)
 
@@ -235,7 +235,7 @@ El componente Imagen de Dynamic Media Classic (Scene7) permite añadir la funcio
 
 **Ajuste preestablecido de visor**: seleccione un ajuste preestablecido de visor existente en el menú desplegable. Si el ajuste preestablecido de visualizador que busca no está visible, debe hacerlo visible. Consulte Administración de ajustes preestablecidos de visor. No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
-**Configuración de Dynamic Media Classic (Scene7)**: seleccione la configuración de Dynamic Media Classic (Scene7) que desee utilizar para recuperar ajustes preestablecidos de imagen activos de SPS.
+**Configuración de Dynamic Media Classic (Scene7)**: seleccione la configuración de Dynamic Media Classic (Scene7) que desee usar para recuperar los ajustes preestablecidos de imagen activos de SPS.
 
 **Ajuste preestablecido de imagen**: seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte Administración de ajustes preestablecidos de imagen. No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
@@ -249,7 +249,7 @@ El componente Imagen de Dynamic Media Classic (Scene7) permite añadir la funcio
 
 ### Plantilla de imagen {#image-template}
 
-Las plantillas de imagen de Dynamic Media Classic (Scene7) son contenidos de Photoshop por capas que se importaron a Dynamic Media Classic (Scene7), donde el contenido y las propiedades se parametrizaron para tener en cuenta la variabilidad. El componente **[!UICONTROL Image template]** permite importar imágenes y cambiar el texto dinámicamente en el Experience Manager. Además, puede configurar el componente **[!UICONTROL Plantilla de imagen]** para que utilice valores del contexto del cliente, de modo que cada usuario experimente la imagen de forma personalizada.
+Las plantillas de imagen de Dynamic Media Classic (Scene7) son contenidos de Photoshop con capas que se importaron en Dynamic Media Classic (Scene7), donde el contenido y las propiedades se parametrizaron para tener en cuenta la variabilidad. El componente **[!UICONTROL Image template]** permite importar imágenes y cambiar el texto dinámicamente en Experience Manager. Además, puede configurar el componente **[!UICONTROL Plantilla de imagen]** para que utilice valores del contexto del cliente, de modo que cada usuario experimente la imagen de forma personalizada.
 
 Seleccione **[!UICONTROL Editar]** - para configurar el componente. Puede configurar [opciones comunes a todos los componentes de Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components) y otras opciones que se describen en esta sección.
 
@@ -295,7 +295,7 @@ El texto refleja el nombre del usuario que ha iniciado sesión actualmente. Para
 
 Puede hacer que el componente de plantilla de imagen de Dynamic Media Classic (Scene7) sea un vínculo en el que se puede hacer clic.
 
-1. En la página con el componente de plantilla de imagen de Dynamic Media Classic (Scene7), seleccione **[!UICONTROL Editar]**.
+1. En la página con el componente de plantilla de imagen Dynamic Media Classic (Scene7), seleccione **[!UICONTROL Editar]**.
 1. En el campo **[!UICONTROL URL]**, escriba la URL a la que se dirigirán los usuarios cuando se haga clic en la imagen. En el campo **[!UICONTROL Abrir en]**, seleccione si desea que se abra el destino (una nueva ventana o la misma ventana).
 
    ![chlimage_1-62](assets/chlimage_1-62.png)
@@ -304,17 +304,17 @@ Puede hacer que el componente de plantilla de imagen de Dynamic Media Classic (S
 
 ### Componente de vídeo {#video-component}
 
-El componente **[!UICONTROL Vídeo]** de Dynamic Media Classic (Scene7) (disponible en la sección Dynamic Media Classic (Scene7) de la barra de tareas) usa la detección de dispositivo y ancho de banda para proporcionar el vídeo adecuado a cada pantalla. Este componente es un reproductor de vídeo HTML5; es un visualizador único que se puede utilizar en canales múltiples.
+El componente **[!UICONTROL Vídeo]** de Dynamic Media Classic (Scene7) (disponible en la sección Dynamic Media Classic (Scene7) de la barra de tareas) utiliza la detección del dispositivo y el ancho de banda para proporcionar el vídeo adecuado a cada pantalla. Este componente es un reproductor de vídeo HTML5; es un visualizador único que se puede utilizar en canales múltiples.
 
 Se puede utilizar para conjuntos de vídeos adaptables, un solo vídeo MP4 o un solo vídeo F4V.
 
-Consulte [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) para obtener más información sobre cómo funcionan los vídeos con la integración de Dynamic Media Classic (Scene7). Además, vea cómo se compara [el componente de vídeo **Dynamic Media Classic (Scene7)** con el componente de base **video**](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
+Consulte [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) para obtener más información sobre cómo funcionan los vídeos con la integración de Dynamic Media Classic (Scene7). Además, vea cómo se compara [el componente de vídeo **Dynamic Media Classic (Scene7)** con el componente **video** de base](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ### Limitaciones conocidas del componente de vídeo {#known-limitations-for-the-video-component}
 
-DAM de Adobe y WCM muestran si se ha cargado un vídeo de origen principal. No muestran estos recursos proxy:
+Adobe DAM y WCM muestran si se ha cargado un vídeo de origen principal. No muestran estos recursos proxy:
 
 * Representaciones codificadas en Dynamic Media Classic (Scene7)
 * Conjuntos de vídeos adaptables de Dynamic Media Classic (Scene7)
@@ -323,7 +323,7 @@ Cuando se utiliza un conjunto de vídeos adaptable con el componente de vídeo d
 
 ## Explorador de contenido de Dynamic Media Classic (Scene7) {#scene-content-browser}
 
-El explorador de contenido Dynamic Media Classic (Scene7) le permite ver contenido de Dynamic Media Classic (Scene7) directamente en Experience Manager. Para acceder al navegador de contenido, en el Buscador de contenido, selecciona **Dynamic Media Classic (Scene7)** en la interfaz de usuario táctil o el icono **S7** en la interfaz de usuario clásica. La funcionalidad es idéntica entre ambas interfaces de usuario.
+El explorador de contenido Dynamic Media Classic (Scene7) permite ver contenido de Dynamic Media Classic (Scene7) directamente en Experience Manager. Para acceder al navegador de contenido, en el Buscador de contenido, selecciona **Dynamic Media Classic (Scene7)** en la interfaz de usuario táctil o el icono **S7** en la interfaz de usuario clásica. La funcionalidad es idéntica entre ambas interfaces de usuario.
 
 Si tiene varias configuraciones, Experience Manager muestra de forma predeterminada la [configuración predeterminada](/help/sites-administering/scene7.md#configuring-a-default-configuration). Puede seleccionar diferentes configuraciones directamente en el explorador de contenido de Dynamic Media Classic (Scene7) en el menú desplegable.
 
@@ -331,7 +331,7 @@ Si tiene varias configuraciones, Experience Manager muestra de forma predetermin
 >
 >* Assets en la carpeta bajo demanda no aparece en el explorador de contenido de Dynamic Media Classic (Scene7).
 >* Cuando [Vista previa segura está habilitada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), los recursos publicados y no publicados en Dynamic Media Classic (Scene7) no aparecen en el explorador de contenido de Dynamic Media Classic (Scene7).
->* Si no ves **[!UICONTROL Dynamic Media Classic (Scene7)]** o el icono **[!UICONTROL S7]** como opción en el navegador de contenido, debes [configurar Dynamic Media Classic (Scene7) para que funcione con el Experience Manager](/help/sites-administering/scene7.md).
+>* Si no ve **[!UICONTROL Dynamic Media Classic (Scene7)]** o el icono **[!UICONTROL S7]** como opción en el explorador de contenido, debe [configurar Dynamic Media Classic (Scene7) para que funcione con Experience Manager](/help/sites-administering/scene7.md).
 >* Para vídeo, el explorador de contenido de Dynamic Media Classic (Scene7) admite:
 >   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para una reproducción perfecta en varias pantallas
 >   * Vídeo MP4 único
@@ -351,16 +351,16 @@ De forma predeterminada, los recursos se muestran por nombre de archivo. Sin emb
 
 >[!NOTE]
 >
->Para el vídeo, el explorador de contenido Dynamic Media Classic (Scene7) de WCM admite:
+>Para vídeo, el explorador de contenido Dynamic Media Classic (Scene7) de WCM admite:
 >
 >* Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para una reproducción perfecta en varias pantallas
 >* Vídeo MP4 único
 >* Vídeo F4V único
 >
 
-### Busque recursos de Dynamic Media Classic (Scene7) con el explorador de contenido {#searching-for-scene-assets-with-the-content-browser}
+### Búsqueda de recursos de Dynamic Media Classic (Scene7) con el explorador de contenido {#searching-for-scene-assets-with-the-content-browser}
 
-La búsqueda de recursos de Dynamic Media Classic (Scene7) es similar a la búsqueda de recursos de Experience Manager. La excepción es que, al realizar una búsqueda, realmente ve una vista remota de los recursos en el sistema de Dynamic Media Classic (Scene7), en lugar de importarlos directamente a Experience Manager.
+La búsqueda de recursos de Dynamic Media Classic (Scene7) es similar a la búsqueda de recursos de Experience Manager. La excepción es que, al realizar una búsqueda, realmente está viendo una vista remota de los recursos en el sistema de Dynamic Media Classic (Scene7), en lugar de importarlos directamente a Experience Manager.
 
 Puede utilizar la IU clásica o la UI táctil optimizada para ver y buscar recursos. Según la interfaz, la forma de buscar es ligeramente diferente.
 
@@ -372,7 +372,7 @@ Al buscar en cualquiera de las interfaces de usuario, puede filtrar por los sigu
 
 **Carpeta/ruta**: el nombre de la carpeta se basa en la configuración seleccionada. Puede explorar en profundidad los niveles inferiores seleccionando el icono de carpeta y una subcarpeta, y después la marca de verificación para seleccionarla.
 
-Si introduce una palabra clave y selecciona una carpeta, Experience Manager busca en ella y en las subcarpetas. Sin embargo, si no introduce ninguna palabra clave al buscar, al seleccionar la carpeta solo se muestran los recursos de esa carpeta y no se incluye ninguna subcarpeta.
+Si introduce una palabra clave y selecciona una carpeta, Experience Manager busca en esa carpeta y en las subcarpetas. Sin embargo, si no introduce ninguna palabra clave al buscar, al seleccionar la carpeta solo se muestran los recursos de esa carpeta y no se incluye ninguna subcarpeta.
 
 De forma predeterminada, Experience Manager busca en la carpeta seleccionada y en todas las subcarpetas.
 
@@ -382,7 +382,7 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configuración**: si tiene más de una configuración de Dynamic Media Classic (Scene7) definida en Cloud Service, puede seleccionarla aquí. Como resultado, la carpeta cambia según la configuración elegida.
+**Configuración**: si tiene más de una configuración de Dynamic Media Classic (Scene7) definida en Cloud Services, puede seleccionarla aquí. Como resultado, la carpeta cambia según la configuración elegida.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -395,9 +395,9 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 >* En la IU clásica, también puedes buscar **Flash** y **FXG**. No se admite el filtrado para estos dos términos en la IU táctil optimizada.
 >
 >* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (solo &#42;.mp4) y la representación codificada.
->* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido una palabra clave, Experience Manager no busca en las subcarpetas.
+>* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha agregado una palabra clave, Experience Manager no busca en las subcarpetas.
 >
 
-**Estado de Publish**: puede filtrar recursos en función del estado de la publicación: No publicado o Publicado. Si no selecciona ningún Estado de Publish, Experience Manager busca de forma predeterminada en todos los estados de publicación.
+**Estado de publicación**: puede filtrar recursos en función del estado de publicación: No publicado o Publicado. Si no selecciona ningún estado de publicación, Experience Manager busca de forma predeterminada en todos los estados de publicación.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)

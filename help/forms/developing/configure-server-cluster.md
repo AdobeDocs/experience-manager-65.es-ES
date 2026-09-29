@@ -1,26 +1,24 @@
 ---
 title: Configuración y solución de problemas de AEM Forms en un clúster de servidores JEE
-description: Obtenga información sobre cómo configurar y solucionar problemas de Adobe Experience Manager AEM () Forms en un clúster de servidores JEE.
+description: Obtenga información sobre cómo configurar y solucionar problemas de Adobe Experience Manager (AEM) Forms en un clúster de servidores JEE.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '3945'
+source-wordcount: '3986'
 ht-degree: 0%
-
 ---
-
 # Configurar y solucionar problemas de AEM Forms en un clúster de servidores JEE {#configuring-troubleshooting-aem-forms-jee-server-cluster}
 
 ## Conocimientos previos requeridos {#prerequisites}
 
-Familiaridad con Adobe Experience Manager AEM () Forms en servidores de aplicaciones JEE, JBoss®, WebSphere® y WebLogic, servidores de bases de datos Red Hat® Linux®, SUSE® Linux®, Microsoft® Windows, IBM® AIX® o Sun Solaris™, Oracle, IBM® DB2® o SQL Server y entornos web.
+Familiaridad con Adobe Experience Manager (AEM) Forms en servidores de aplicaciones JEE, JBoss®, WebSphere® y WebLogic, servidores de bases de datos Red Hat® Linux®, SUSE® Linux®, Microsoft® Windows, IBM® AIX® o Sun Solaris™, servidores de bases de datos Oracle, IBM® DB2® o SQL Server y entornos web.
 
 ## Nivel de usuario {#user-level}
 
-Avanzado 
+Avanzado
 
 Un clúster de AEM Forms en JEE es una topología diseñada para permitir que AEM Forms en JEE sea resistente al error de un clúster. También permite a la topología escalar la capacidad del sistema más allá de las capacidades de un solo nodo. Un clúster combina varios nodos en un único sistema lógico que comparte datos y permite que las transacciones abarquen varios nodos en su ejecución. Un clúster es la forma más general de escalar AEM Forms en JEE, ya que se puede admitir cualquier combinación de servicios que administren cualquier combinación de cargas de trabajo. Un clúster de AEM Forms en JEE no es necesariamente la mejor opción para todos los tipos de implementaciones y, una arquitectura de equilibrio de carga de servidor no agrupada puede ser apropiada.
 
@@ -154,7 +152,7 @@ En el otro nodo, AP-HP7:
 
 Cada clúster distinto que comparte una red corporativa debe utilizar un conjunto independiente de localizadores TCP, si se utilizan localizadores TCP, o un número de puerto UDP independiente si se utiliza la configuración UDP de multidifusión. Debido a que la detección automática de UDP es la configuración predeterminada para AEM Forms en JEE y que el mismo puerto predeterminado 33456 está siendo utilizado por varios clústeres, es posible que los clústeres que no deberían intentar comunicarse lo estén haciendo de forma inesperada. Por ejemplo, los clústeres de producción y control de calidad deben permanecer separados, pero pueden conectarse entre sí mediante multidifusión UDP.
 
-La situación más común en la que se pueden detectar puertos duplicados en una red en la que GemFire está creando clústeres incorrectamente es durante el Bootstrap de un clúster. Lo que puede encontrar es que el proceso de Bootstrap falla sin una causa clara. Normalmente, se ven errores como este:
+La situación más común en la que se pueden detectar puertos duplicados en una red en la que GemFire está creando clústeres incorrectamente es durante la Bootstrap de un clúster. Lo que puede encontrar es que el proceso de Bootstrap falla sin una causa clara. Normalmente, se ven errores como este:
 
 ```xml
 Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com.adobe.pof.schema.ObjectTypeNotFoundException: Object Type: dsc.sc_service_configuration not found.
@@ -168,7 +166,7 @@ Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com
 
 En este caso, el programa previo está trabajando con GemFire para acceder a las tablas requeridas. Además, existe una incoherencia entre las tablas a las que se accede a través de JDBC y la información de tablas en caché devuelta por GemFire, que proviene de un clúster diferente con una base de datos subyacente diferente.
 
-Aunque un puerto duplicado suele ser evidente durante el Bootstrap, es posible que esta situación se muestre más adelante. Esto puede ocurrir cuando se reinicia un clúster después de estar inactivo cuando se produjo el Bootstrap del otro clúster. O bien, cuando se cambia la configuración de red para que los clústeres que antes estaban aislados, con fines de multidifusión, sean visibles entre sí.
+Aunque un puerto duplicado suele ser evidente durante Bootstrap, es posible que esta situación se muestre más adelante. Esto puede ocurrir cuando se reinicia un clúster después de estar inactivo cuando se produjo la Bootstrap del otro clúster. O bien, cuando se cambia la configuración de red para que los clústeres que antes estaban aislados, con fines de multidifusión, sean visibles entre sí.
 
 Para diagnosticar estas situaciones, observe los registros de GemFire y considere cuidadosamente si solo se encuentran los nodos esperados. Para corregir el problema, es necesario cambiar la propiedad `adobe.cache.multicast-port` a un valor diferente en uno o ambos clústeres.
 
@@ -226,7 +224,7 @@ Referencias:
 
 * [Servicios empresariales de alta disponibilidad mediante clústeres JBoss®](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Clústeres de uso de servidor de WebLogic de Oracle](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Clústeres de Oracle WebLogic Server-Using](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### ¿Cómo puedo comprobar si JBoss® se está agrupando correctamente? {#check-jboss-clustering}
 
@@ -320,7 +318,7 @@ Ciertas configuraciones de ruta de archivo dentro de AEM Forms en JEE se estable
 Se deben comprobar las siguientes configuraciones:
 
 1. Ubicación del directorio temporal
-1. Ubicación del directorio de fuentes del servidor de Adobe
+1. Ubicación del directorio de Adobe Server Fonts
 1. Ubicación del directorio de fuentes del cliente
 1. Ubicación del directorio de fuentes del sistema
 1. Ubicación del archivo de configuración de los servicios de datos

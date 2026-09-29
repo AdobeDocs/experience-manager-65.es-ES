@@ -1,6 +1,6 @@
 ---
 title: Adición de recursos de Dynamic Media a las páginas
-description: Para añadir la funcionalidad Dynamic Media a los recursos que utiliza en sus sitios web, puede añadir el componente Dynamic Media o Interactive Media directamente en la página.
+description: Para añadir la funcionalidad Dynamic Media a los recursos que utiliza en sus sitios web, puede agregar el componente Dynamic Media o Interactive Media directamente en la página.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
@@ -11,11 +11,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 2%
-
+source-wordcount: '1708'
+ht-degree: 3%
 ---
-
 # Adición de recursos de Dynamic Media a las páginas{#adding-dynamic-media-assets-to-pages}
 
 Para agregar la funcionalidad Dynamic Media a los recursos que uses en tus sitios web, puedes agregar el componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Interactive Media]** directamente en la página. Active el modo **[!UICONTROL Diseño]** y habilite los componentes de Dynamic Media. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media y medios interactivos son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones disponibles cambian en consecuencia.
@@ -33,7 +31,7 @@ Añadir el componente [!UICONTROL Dynamic Media] o [!UICONTROL Interactive Media
 Para agregar un componente o visualizador de Dynamic Media a una página:
 
 1. En Experience Manager, abra la página donde desee agregar el componente Dynamic Media.
-1. Si no hay ningún componente Dynamic Media disponible, seleccione la regla en el [!UICONTROL Sidekick] para entrar en el modo **[!UICONTROL Diseño]**.
+1. Si no hay ningún componente de Dynamic Media disponible, seleccione la regla en [!UICONTROL Sidekick] para entrar en el modo **[!UICONTROL Diseño]**.
 1. Seleccione **[!UICONTROL Edit]** parsys.
 1. Seleccione **[!UICONTROL Dynamic Media]** para que pueda hacer que los componentes de Dynamic Media estén disponibles.
 
@@ -41,32 +39,32 @@ Para agregar un componente o visualizador de Dynamic Media a una página:
    >
    >Consulte [Configuración de componentes en el modo Diseño](/help/sites-authoring/default-components-designmode.md) para obtener más información.
 
-1. Vuelva al modo **[!UICONTROL Editar]** haciendo clic en el icono de lápiz en el [!UICONTROL Sidekick].
-1. Arrastre el componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Interactive Media]** del grupo **[!UICONTROL Other]** de la barra de tareas a la página en la ubicación deseada.
+1. Vuelva al modo **[!UICONTROL Editar]** haciendo clic en el icono de lápiz en [!UICONTROL Sidekick].
+1. Arrastre el componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Interactive Media]** desde el grupo **[!UICONTROL Other]** de la barra de tareas a la página en la ubicación deseada.
 1. Seleccione **[!UICONTROL Editar]** para que se abra el componente.
 1. [Edite el componente](#dynamic-media-component) según sea necesario.
 1. Seleccione **[!UICONTROL Aceptar]** para guardar los cambios.
 
 ## Componentes de Dynamic Media {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] y [!UICONTROL Interactive Media] están disponibles en el [!UICONTROL Sidekick] en **[!UICONTROL Dynamic Media]**. Utiliza el componente **[!UICONTROL Medios interactivos]** para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para el resto de los componentes de Dynamic Media, use el componente **[!UICONTROL Dynamic Media]**.
+[!UICONTROL Dynamic Media] y [!UICONTROL Interactive Media] están disponibles en [!UICONTROL Sidekick] en **[!UICONTROL Dynamic Media]**. Utiliza el componente **[!UICONTROL Medios interactivos]** para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para el resto de los componentes de Dynamic Media, use el componente **[!UICONTROL Dynamic Media]**.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
->Estos componentes no están disponibles de forma predeterminada y deben seleccionarse en el modo Diseño antes de utilizar. [Una vez que estén disponibles en el modo de diseño](/help/sites-authoring/default-components-designmode.md), puede agregar los componentes a su página como lo haría con cualquier otro componente del Experience Manager.
+>Estos componentes no están disponibles de forma predeterminada y deben seleccionarse en el modo Diseño antes de utilizar. [Una vez que estén disponibles en el modo de diseño](/help/sites-authoring/default-components-designmode.md), puede agregar los componentes a su página como lo haría con cualquier otro componente de Experience Manager.
 
-### componente de Dynamic Media {#dynamic-media-component}
+### Componente de Dynamic Media {#dynamic-media-component}
 
-El componente Dynamic Media es inteligente: según si agrega una imagen o un vídeo, tiene varias opciones. El componente admite ajustes preestablecidos de imagen, visores basados en imágenes como conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos y vídeo. Además, el visualizador es adaptable. Es decir, el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visualizadores son visualizadores basados en HTML5.
+El componente Dynamic Media es inteligente: según si agrega una imagen o un vídeo, tiene varias opciones. El componente admite ajustes preestablecidos de imagen, visores basados en imágenes como conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos y vídeo. Además, el visualizador es adaptable. Es decir, el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visores son visores basados en HTML5.
 
 >[!NOTE]
 >
 >Cuando agregue el componente [!UICONTROL Dynamic Media] y **[!UICONTROL Configuración de Dynamic Media]** esté en blanco o no pueda agregar un recurso correctamente, compruebe lo siguiente:
 >
->* Ha [habilitado Dynamic Media](/help/assets/config-dynamic.md). Dynamic Media está deshabilitado de forma predeterminada.
->* La imagen tiene un archivo tiff piramidal. Las imágenes importadas antes de que Dynamic Media esté habilitado no tienen un archivo tiff piramidal.
+>* Ha [habilitado Dynamic Media](/help/assets/config-dynamic.md). Dynamic Media está desactivado de forma predeterminada.
+>* La imagen tiene un archivo tiff piramidal. Las imágenes importadas antes de habilitar Dynamic Media no tienen un archivo tiff piramidal.
 >
 
 #### Al trabajar con imágenes {#when-working-with-images}
@@ -77,7 +75,7 @@ También puede configurar el ajuste preestablecido de visualizador, el ajuste pr
 
 ![chlimage_1-72](assets/chlimage_1-72a.png)
 
-Para editar la siguiente configuración de Dynamic Media, haz clic en **[!UICONTROL Editar]** en el componente y, a continuación, haz clic en la pestaña **[!UICONTROL Configuración de Dynamic Media]**.
+Para editar la siguiente configuración de Dynamic Media, haga clic en **[!UICONTROL Editar]** en el componente y, a continuación, en la ficha **[!UICONTROL Configuración de Dynamic Media]**.
 
 ![chlimage_1-73](assets/chlimage_1-73a.png)
 
@@ -145,7 +143,7 @@ Para obtener más información sobre la entrega de vídeo seguro y el uso del at
 
 El componente de medios interactivos es para aquellos recursos que tienen interactividad en ellos, como zonas interactivas o mapas de imagen. Si tiene una imagen interactiva, un vídeo interactivo o un banner de carrusel, use el componente **[!UICONTROL Medios interactivos]**.
 
-El componente [!UICONTROL Medios interactivos] es inteligente; dependiendo de si agrega una imagen o un vídeo, tiene varias opciones. Además, el visualizador es adaptable. Es decir, el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visualizadores son visualizadores basados en HTML5.
+El componente [!UICONTROL Medios interactivos] es inteligente; dependiendo de si agrega una imagen o un vídeo, tiene varias opciones. Además, el visualizador es adaptable. Es decir, el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visores son visores basados en HTML5.
 
 ![chlimage_1-75](assets/chlimage_1-75a.png)
 

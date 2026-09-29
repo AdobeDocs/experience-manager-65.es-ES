@@ -11,11 +11,9 @@ exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 11%
-
+source-wordcount: '343'
+ht-degree: 13%
 ---
-
 # Distribución de imágenes optimizadas para un sitio adaptable {#delivering-optimized-images-for-a-responsive-site}
 
 Utilice la función de código interactivo cuando desee compartir el código para un servicio interactivo con el desarrollador web. Copia el código interactivo (**[!UICONTROL RESS]**) en el portapapeles para poder compartirlo con el desarrollador web.
@@ -40,7 +38,7 @@ Vea también [Vincular direcciones URL a su aplicación web](linking-urls-to-you
    >
    >El recurso seleccionado *y* el ajuste preestablecido de imagen o visualizador seleccionado deben publicarse para que los botones **[!UICONTROL URL]** o **[!UICONTROL RESS]** estén disponibles.
    >
-   >Dynamic Media: el modo híbrido requiere la publicación de ajustes preestablecidos de imagen; Dynamic Media: el modo Scene7 publica automáticamente ajustes preestablecidos de imagen.
+   >Dynamic Media: el modo híbrido requiere que publique ajustes preestablecidos de imagen; Dynamic Media: el modo Scene7 publica automáticamente ajustes preestablecidos de imagen.
 
 1. Seleccione **[!UICONTROL RESS]**.
 
@@ -53,4 +51,4 @@ Vea también [Vincular direcciones URL a su aplicación web](linking-urls-to-you
 
 HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que los exploradores y servidores se comunican. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. La entrega de recursos de Dynamic Media se admite mediante HTTP/2, que proporciona mejores tiempos de respuesta y carga.
 
-Consulte [Entrega de contenido HTTP2](http2.md) para obtener información detallada sobre cómo empezar a usar HTTP/2 con su cuenta de Dynamic Media.
+Consulte [Entrega HTTP2 de contenido](http2.md) para obtener información detallada sobre cómo empezar a usar HTTP/2 con su cuenta de Dynamic Media.
