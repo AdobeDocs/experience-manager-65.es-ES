@@ -12,11 +12,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '825'
 ht-degree: 1%
-
 ---
-
 # ASRP: proveedor de recursos de almacenamiento de Adobe {#asrp-adobe-storage-resource-provider}
 
 ## Acerca de ASRP {#about-asrp}
@@ -25,7 +23,7 @@ Cuando AEM Communities está configurado para utilizar ASRP como almacén común
 
 Vea también [Características de las opciones de SRP](/help/communities/working-with-srp.md#characteristics-of-srp-options) y [Topologías recomendadas](/help/communities/topologies.md).
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 Se requiere una licencia adicional para el uso de ASRP.
 
@@ -44,9 +42,9 @@ Las claves secreta y de consumidor se comparten en todos los grupos de informes 
 
 La [consola de configuración de almacenamiento](/help/communities/srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica qué implementación de SRP utilizar.
 
-AEM **En instancia de autor de la:**
+**En la instancia de autor de AEM:**
 
-* En la navegación global, vaya a **[!UICONTROL Herramientas > Comunidades > Configuración de almacenamiento]** y seleccione **[!UICONTROL Proveedor de recursos de almacenamiento en Adobe (ASRP)]**.
+* En la navegación global, vaya a **[!UICONTROL Herramientas > Comunidades > Configuración de almacenamiento]** y seleccione **[!UICONTROL Proveedor de recursos de almacenamiento de Adobe (ASRP)]**.
 
 ![asrp-default](assets/asrp-default.png)
 
@@ -73,7 +71,7 @@ Después de enviar la configuración, pruebe la conexión:
 
 ### Replicar la clave criptográfica {#replicate-the-crypto-key}
 
-La clave del consumidor y la clave secreta están cifradas. AEM Para que las claves se cifren/descifren correctamente, la clave principal de Granite Crypto debe ser la misma en todas las instancias de.
+La clave del consumidor y la clave secreta están cifradas. Para que las claves se cifren/descifren correctamente, la clave principal de criptografía de Granite debe ser la misma en todas las instancias de AEM.
 
 Siga las instrucciones en [Replicar la clave criptográfica](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
@@ -93,7 +91,7 @@ ASRP debe identificarse como el almacén común en todas las instancias de autor
 
 Para que la configuración idéntica esté disponible en el entorno de publicación:
 
-AEM En la instancia de autor de:
+En la instancia de autor de AEM:
 
 * Vaya del menú principal a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Replicación]**
 * Seleccionar **Activar árbol**
@@ -101,13 +99,13 @@ AEM En la instancia de autor de:
 * Anular la selección de **Solo modificadas**
 * Seleccionar **Activar**
 
-## AEM Actualización desde la versión 6.0 de {#upgrading-from-aem}
+## Actualización desde AEM 6.0 {#upgrading-from-aem}
 
 >[!CAUTION]
 >
 >Si habilita ASRP en un sitio de comunidad publicado, cualquier UGC almacenado en [JCR](/help/communities/jsrp.md) ya no será visible, ya que no habrá sincronización de datos entre el almacenamiento local y el almacenamiento en la nube.
 
-AEM **`AEM Communities Extension`** se había introducido anteriormente en comunidades sociales como servicio en la nube de 6.0. AEM A partir de comunidades de 6.1, no se requiere ninguna configuración de nube, simplemente seleccione ASRP en la [consola de configuración de almacenamiento](/help/communities/srp-config.md).
+**`AEM Communities Extension`** se había introducido anteriormente en las comunidades sociales de AEM 6.0 como servicio en la nube. En las comunidades de AEM 6.1 no es necesaria ninguna configuración de nube; simplemente seleccione ASRP en la [consola de configuración de almacenamiento](/help/communities/srp-config.md).
 
 Debido a la nueva estructura de almacenamiento, es necesario seguir las instrucciones de [actualización](/help/communities/upgrade.md#adobe-cloud-storage) al actualizar de comunidades sociales a comunidades.
 
@@ -122,17 +120,17 @@ Para obtener información sobre *usuarios*, *perfiles de usuario* y *grupos de u
 
 ### UGC desaparece tras la actualización {#ugc-disappears-after-upgrade}
 
-AEM Si actualiza desde un sitio de comunidad social existente de la versión 6.0 de la, asegúrese de seguir las [instrucciones de actualización](/help/communities/upgrade.md#adobe-cloud-storage); de lo contrario, UGC parecerá perderse.
+Si actualiza desde un sitio existente de la comunidad social de AEM 6.0, asegúrese de seguir las [instrucciones de actualización](/help/communities/upgrade.md#adobe-cloud-storage); de lo contrario, parece que se perderá el UGC.
 
 ### Errores de autenticación {#authentication-errors}
 
-AEM Si se reciben errores de autenticación en la dirección URL del centro de datos y el error.log de la contiene mensajes sobre marcas de tiempo antiguas, compruebe que se esté realizando la sincronización horaria.
+Si se reciben errores de autenticación en la dirección URL del centro de datos y el error.log de AEM contiene mensajes sobre marcas de tiempo antiguas, compruebe que se esté realizando la sincronización horaria.
 
-AEM Use una herramienta como el [Protocolo de tiempo de red (NTP)](https://www.ntp.org/) para sincronizar la hora de todos los servidores de autor y publicación de la red de la red (NTP) para la sincronización de todos los servidores de publicación y creación de la red ().
+Use una herramienta como el [Protocolo de tiempo de red (NTP)](https://www.ntp.org/) para sincronizar la hora de todos los servidores de publicación y creación de AEM.
 
 ### El contenido nuevo no aparece en las búsquedas {#new-content-does-not-appear-in-searches}
 
-La infraestructura de almacenamiento de la nube de Adobe usa *una eventual coherencia* para lograr sus objetivos de escalabilidad y rendimiento. Por este motivo, el nuevo contenido no está disponible de forma inmediata y tarda varios segundos en aparecer en los resultados de búsqueda.
+La infraestructura de almacenamiento en la nube de Adobe usa *una eventual coherencia* para lograr sus objetivos de escalado y rendimiento. Por este motivo, el nuevo contenido no está disponible de forma inmediata y tarda varios segundos en aparecer en los resultados de búsqueda.
 
 Mientras se supervisa el intervalo que afecta a la coherencia final, póngase en contacto con el representante de la cuenta si el nuevo contenido tarda más de unos segundos en aparecer en las búsquedas.
 
@@ -140,7 +138,7 @@ Mientras se supervisa el intervalo que afecta a la coherencia final, póngase en
 
 Asegúrese de que ASRP se ha configurado para ser el proveedor predeterminado comprobando la configuración de la opción de almacenamiento. De forma predeterminada, el proveedor de recursos de almacenamiento es JSRP, no ASRP.
 
-AEM AEM En todas las instancias de creación y publicación de la interfaz de usuario, vuelva a visitar la consola Configuración de almacenamiento o compruebe el repositorio de.
+En todas las instancias de autor y publicación de AEM, vuelva a la consola Configuración de almacenamiento o compruebe el repositorio de AEM.
 
 En JCR, si [/conf/global/settings/communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 

@@ -1,5 +1,5 @@
 ---
-title: Implementación de un evaluador de predicados personalizado para el Generador de consultas
+title: Implementación de un evaluador de predicados personalizado para Query Builder
 description: El Generador de consultas es una forma sencilla de consultar el repositorio de contenido
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,10 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 0%
-
+source-wordcount: '816'
+ht-degree: 2%
 ---
-
-# Implementación de un evaluador de predicados personalizado para el Generador de consultas{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
+# Implementación de un evaluador de predicados personalizado para Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 En esta sección se describe cómo ampliar [Query Builder](/help/sites-developing/querybuilder-api.md) implementando un evaluador de predicados personalizado.
 
@@ -44,7 +42,7 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub.
 
-* [Abrir proyecto aem-search-custom-predicate-evaluator en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+* [Abra el proyecto aem-search-custom-predicate-evaluator en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * Descargar el proyecto como [archivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
 ### Evaluador de predicados en detalle {#predicate-evaluator-in-detail}
@@ -105,7 +103,7 @@ Agrupar predicados de metadatos de replicación con un evaluador de predicados p
 
 >[!NOTE]
 >
->La configuración de nuevos proyectos de Adobe Experience Manager AEM AEM () que usan Maven está documentada por [Cómo crear proyectos de con Apache Maven](/help/sites-developing/ht-projects-maven.md).
+>[How to Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md) ha documentado la configuración de nuevos proyectos de Adobe Experience Manager (AEM) usando maven.
 
 En primer lugar, actualice las dependencias Maven del proyecto. El elemento `PredicateEvaluator` forma parte del artefacto `cq-search`, por lo que debe agregarse al archivo pom.xml de Maven.
 

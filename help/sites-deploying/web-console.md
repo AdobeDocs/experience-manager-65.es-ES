@@ -1,6 +1,6 @@
 ---
 title: Consola web en Adobe Experience Manager
-description: Aprenda a utilizar la consola web de Adobe Experience Manager AEM ().
+description: Aprenda a utilizar la consola web de Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,14 +11,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 0%
-
+source-wordcount: '718'
+ht-degree: 1%
 ---
-
 # Consola web{#web-console}
 
-La consola web de Adobe Experience Manager AEM () se basa en [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo de la comunidad para implementar la plataforma de servicio OSGi R4, que incluye el marco OSGi y los servicios estándar.
+La consola web de Adobe Experience Manager (AEM) se basa en [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo de la comunidad para implementar la plataforma de servicio OSGi R4, que incluye el marco OSGi y los servicios estándar.
 
 >[!NOTE]
 >
@@ -28,9 +26,9 @@ La consola web de Adobe Experience Manager AEM () se basa en [Apache Felix Web M
 
 La consola web ofrece una selección de pestañas para mantener los paquetes OSGi, que incluyen:
 
-* AEM [Configuración](#configuration): se usa para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar parámetros del sistema de la
+* [Configuración](#configuration): se usa para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar los parámetros del sistema de AEM
 * [Paquetes](#bundles): utilizados para instalar paquetes
-* AEM [Componentes](#components): se usan para controlar el estado de los componentes necesarios para el uso de los elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos necesarios para la
+* [Componentes](#components): utilizados para controlar el estado de los componentes necesarios para AEM
 
 Los cambios realizados se aplican inmediatamente al sistema en ejecución. No es necesario reiniciar.
 
@@ -40,7 +38,7 @@ Se puede tener acceso a la consola desde `../system/console`; por ejemplo:
 
 ## Configuración {#configuration}
 
-AEM La pestaña **Configuration** se usa para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar parámetros del sistema de la.
+La pestaña **Configuration** se usa para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar los parámetros del sistema de AEM.
 
 >[!NOTE]
 >
@@ -65,8 +63,8 @@ Hay dos tipos de configuraciones disponibles en las listas desplegables de esta 
 * **Configuraciones**
 Permite actualizar las configuraciones existentes. Tienen una identidad persistente (PID) y pueden ser las siguientes:
 
-   * AEM estándar e integral para la; estos son obligatorios; si se eliminan, los valores vuelven a la configuración predeterminada.
-   * instancias creadas a partir de Configuraciones de fábrica; estas instancias las crea el usuario, la eliminación elimina la instancia.
+  * estándar e integral para AEM; estos son obligatorios; si se eliminan, los valores vuelven a la configuración predeterminada.
+  * instancias creadas a partir de Configuraciones de fábrica; estas instancias las crea el usuario, la eliminación elimina la instancia.
 
 * **Configuraciones de fábrica**
 Permite crear una instancia del objeto de funcionalidad requerido.
@@ -103,7 +101,7 @@ A continuación, puede actualizar los parámetros según sea necesario y:
 
 ## Paquetes {#bundles}
 
-AEM La pestaña **Paquetes** es el mecanismo para instalar los paquetes OSGi necesarios para la instalación de los paquetes OSGi que se requieren para la instalación de los. Se puede acceder a la pestaña mediante cualquiera de los siguientes métodos:
+La pestaña **Paquetes** es el mecanismo para instalar los paquetes OSGi necesarios para AEM. Se puede acceder a la pestaña mediante cualquiera de los siguientes métodos:
 
 * El menú desplegable:
 
@@ -151,7 +149,7 @@ Con esta pestaña puede:
 
 >[!NOTE]
 >
->Después de **Actualizar**, el Adobe recomienda que realice **Actualizar paquetes**.
+>Después de **actualizar**, Adobe recomienda que realice **Actualizar paquetes**.
 
 ## Componentes {#components}
 
@@ -175,6 +173,6 @@ Al hacer clic en el nombre de un componente en particular, se muestra más infor
 
 >[!NOTE]
 >
->AEM Activar o desactivar un componente solo se aplica hasta que se reinicia el usuario o el usuario de CRX en el equipo de la aplicación.
+>Activar o desactivar un componente solo se aplica hasta que se reinicia AEM/CRX.
 >
 >El estado de inicio se define dentro del descriptor del componente, que se genera durante el desarrollo y se almacena en el paquete en el momento de la creación del paquete.

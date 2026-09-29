@@ -11,11 +11,9 @@ exl-id: 7020343a-b556-4091-9717-93fcc55e623b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '737'
 ht-degree: 13%
-
 ---
-
 # Invalidación de la caché de la red de distribución de contenido mediante Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
 La CDN (red de distribución de contenido) almacena en caché los recursos de Dynamic Media para agilizar la entrega. Sin embargo, cuando realiza actualizaciones en un recurso, desea que los cambios surtan efecto inmediatamente. La invalidación del contenido en caché de la CDN le permite actualizar rápidamente los recursos que entrega Dynamic Media, en lugar de esperar a que la caché caduque.
@@ -32,9 +30,9 @@ La CDN (red de distribución de contenido) almacena en caché los recursos de Dy
 
 **Para invalidar la caché de la CDN mediante Dynamic Media Classic:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=es#system-requirements-dmc-app) y luego inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) y luego inicie sesión en su cuenta.
 
-   Las credenciales y el inicio de sesión se proporcionaron mediante el Adobe en el momento de la provisión. Si no dispone de esta información, póngase en contacto con el Servicio de atención al cliente de Adobe.
+   Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con Asistencia al cliente de Adobe.
 
 1. Cerca de la esquina superior derecha de la página, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 1. En la página Configuración general de la aplicación, en el encabezado del grupo Servidores, busque el cuadro de texto **[!UICONTROL Plantilla de invalidación de CDN]**.
@@ -45,7 +43,7 @@ La CDN (red de distribución de contenido) almacena en caché los recursos de Dy
 
    `https://server.com/is/image/Company/<ID>?$product$`
 
-   Si la plantilla solo contiene `<ID>`, Dynamic Media rellena `https://<server>/is/image` donde `<server>` es el nombre del servidor de Publish que se define en Configuración general y &lt;ID> son los recursos seleccionados para invalidar.
+   Si la plantilla solo contiene `<ID>`, Dynamic Media rellena `https://<server>/is/image`, donde `<server>` es el nombre del servidor de publicación definido en Configuración general y &lt;ID> son los recursos seleccionados para invalidar.
 
 1. En la esquina inferior derecha de la página, seleccione **[!UICONTROL Cerrar]**.
 1. En la interfaz de usuario de Dynamic Media Classic, seleccione uno o varios recursos y, a continuación, vaya a **[!UICONTROL Archivo]** > **[!UICONTROL Invalidar CDN]**. Verá una lista de una o más direcciones URL generadas a partir de la plantilla que creó y los recursos seleccionados. Utiliza la URL del servidor que aparece en &quot;Nombre de servidor publicado&quot; en la Configuración general de la aplicación.

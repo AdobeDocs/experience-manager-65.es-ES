@@ -1,24 +1,26 @@
 ---
 title: Prácticas recomendadas para ayudar a los administradores a ponerse en marcha
-description: Encuentre prácticas recomendadas recopiladas por los equipos de consultoría e ingeniería de Adobes para ayudar a los administradores a ponerse en marcha.
+
+description: Descubra las prácticas recomendadas recopiladas por los equipos de consultoría e ingeniería de Adobe para ayudar a los administradores a ponerse en marcha.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 6%
-
+source-wordcount: '533'
+ht-degree: 13%
 ---
-
 # Prácticas recomendadas{#best-practices}
 
-AEM Las prácticas recomendadas describen cómo desarrollar, administrar o utilizar los recursos de la manera más eficiente y eficaz posible, de la manera más eficiente y eficaz que se puede utilizar. AEM Esta creciente lista de temas incluye una variedad de áreas en el área de la.
+Las prácticas recomendadas describen cómo desarrollar, administrar o utilizar AEM de la manera más eficiente y eficaz posible. Esta lista cada vez más extensa de temas incluye diversas áreas de AEM.
 
 Las siguientes áreas tienen documentación disponible sobre las prácticas recomendadas:
 
@@ -27,7 +29,7 @@ Las siguientes áreas tienen documentación disponible sobre las prácticas reco
 
 Para conocer las prácticas recomendadas sobre la creación, la implementación, el mantenimiento o el desarrollo, consulte una de las siguientes opciones:
 
-* [Prácticas recomendadas de creación](/help/sites-authoring/best-practices.md)
+* [Creación de prácticas recomendadas](/help/sites-authoring/best-practices.md)
 * [Desarrollo de prácticas recomendadas](/help/sites-developing/best-practices.md)
 * [Implementación de prácticas recomendadas](/help/sites-deploying/best-practices.md)
 
@@ -35,7 +37,7 @@ En las tablas siguientes se describen y vinculan documentos específicos.
 
 ## Recursos {#assets}
 
-Las prácticas recomendadas en Assets, incluidas la capacidad Dynamic Media y la integración Dynamic Media Classic, se describen en los siguientes temas:
+Las prácticas recomendadas en Assets, incluidas la capacidad Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
 
 <table>
  <tbody>
@@ -50,8 +52,8 @@ Las prácticas recomendadas en Assets, incluidas la capacidad Dynamic Media y la
    <td>La mayoría de los perfiles de procesamiento se basan en carpetas, ya que el vídeo, los metadatos y el procesamiento de imágenes siempre se aplican a las carpetas. Este documento de prácticas recomendadas describe cómo definir y configurar la jerarquía de carpetas, ya que la jerarquía tiene un impacto significativo en la forma en que se procesa el contenido. </td>
   </tr>
   <tr>
-   <td>Integración de Scene7 AEM y</td>
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Prácticas recomendadas para integrar Scene7 AEM con el servicio de integración de</a></td>
+   <td>Integración de Scene7 y AEM</td>
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Prácticas recomendadas para integrar Scene7 con AEM</a></td>
    <td><p>Describe cuándo activar el importador de encuestas, cómo probar la integración y cuándo utilizar el explorador de contenido en lugar de una carga directa en Assets.</p> </td>
   </tr>
   <tr>
@@ -61,8 +63,8 @@ Las prácticas recomendadas en Assets, incluidas la capacidad Dynamic Media y la
   </tr>
   <tr>
    <td>Dynamic Media frente a la integración directa con Scene7</td>
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integración de Scene7 AEM/con Dynamic Media</a></td>
-   <td>Describe cuándo es mejor utilizar la solución de Dynamic Media AEM, cuándo integrar S7 con o cuándo usar ambas soluciones</td>
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integración de Scene7/AEM con Dynamic Media</a></td>
+   <td>Describe cuándo es mejor utilizar la solución Dynamic Media, cuándo integrar S7 con AEM o cuándo utilizar ambas.</td>
   </tr>
  </tbody>
 </table>
@@ -76,12 +78,12 @@ La administración y creación del contenido del sitio web tiene algunas prácti
   <tr>
    <td>Cumplimiento del RGPD</td>
    <td><a href="/help/sites-administering/gdpr-compliance-sites.md">Cumplimiento del RGPD de AEM Sites</a></td>
-   <td>El Reglamento General de Protección de Datos de la Unión Europea sobre los derechos de privacidad de datos entra en vigor en mayo de 2018. AEM Sites es compatible con el RGPD. Esta página guía a los clientes a través de los procedimientos para gestionar las solicitudes de RGPD en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o mediante programación.</td>
+   <td>El Reglamento General de Protección de Datos de la Unión Europea sobre los derechos de privacidad de datos entra en vigor en mayo de 2018. AEM Sites es compatible con el RGPD. Esta página guía a los clientes a través de los procedimientos para tratar las solicitudes del RGPD en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o mediante programación.</td>
   </tr>
   <tr>
    <td>Defina la interfaz de usuario predeterminada para su instancia.</td>
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">Configuración de la interfaz de usuario predeterminada para la instancia</a></p> </td>
-   <td>AEM Tiene dos IUs: táctil optimizada y clásica. Esta sección detalla cómo definir la interfaz de usuario predeterminada para la instancia.</td>
+   <td>AEM tiene dos interfaces de usuario: táctil y clásica. Esta sección detalla cómo definir la interfaz de usuario predeterminada para la instancia.</td>
   </tr>
   <tr>
    <td>Administración de varios sitios</td>
@@ -101,7 +103,7 @@ La administración y creación del contenido del sitio web tiene algunas prácti
   <tr>
    <td>Flujos de trabajo</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">Prácticas recomendadas de flujo de trabajo: configuración</a></td>
-   <td>Los flujos de trabajo le permiten automatizar las actividades de Adobe Experience Manager AEM AEM () y pueden representar una gran cantidad del procesamiento que se produce en un entorno de trabajo, por lo que es muy recomendable planificar y configurar las implementaciones de flujos de trabajo con cuidado.</td>
+   <td>Los flujos de trabajo le permiten automatizar las actividades de Adobe Experience Manager (AEM) y pueden representar una gran cantidad del procesamiento que se produce en un entorno de AEM, por lo que es muy recomendable planificar y configurar las implementaciones de flujos de trabajo con cuidado.</td>
   </tr>
  </tbody>
 </table>

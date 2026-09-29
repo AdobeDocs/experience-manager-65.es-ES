@@ -1,6 +1,6 @@
 ---
-title: Acerca de la administración de recursos Dynamic Media
-description: Aprenda a trabajar con recursos de Dynamic Media, como vídeos e imágenes, una vez cargados. Puede obtener una vista previa, descargar o publicar recursos.
+title: Acerca de la administración de recursos de Dynamic Media
+description: Aprenda a trabajar con recursos de Dynamic Media, como vídeos e imágenes, después de cargarlos. Puede obtener una vista previa, descargar o publicar recursos.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -11,12 +11,10 @@ exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 7%
-
+source-wordcount: '129'
+ht-degree: 6%
 ---
-
-# Acerca de la administración de recursos Dynamic Media {#managing-assets}
+# Acerca de la administración de recursos de Dynamic Media {#managing-assets}
 
 La administración de recursos de Dynamic Media (imágenes, vídeo y recursos interactivos) una vez cargados implica muchas tareas, como previsualizarlos, descargarlos o publicarlos.
 
