@@ -12,14 +12,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 2%
-
+source-wordcount: '542'
+ht-degree: 4%
 ---
-
 # Asignación de recursos{#resource-mapping}
 
-La asignación de recursos se utiliza para definir redirecciones, URL personalizadas y hosts virtuales para Adobe Experience Manager AEM ().
+La asignación de recursos se utiliza para definir redirecciones, URL personales y hosts virtuales para Adobe Experience Manager (AEM).
 
 Por ejemplo, puede utilizar estas asignaciones para lo siguiente:
 
@@ -88,9 +86,9 @@ Se crean nuevas definiciones de asignación dentro del repositorio.
 >
 >Hay muchos recursos disponibles para explicar cómo definir las expresiones regulares. Por ejemplo, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
-### AEM Creación de Definiciones de Asignación en el {#creating-mapping-definitions-in-aem}
+### Creación de definiciones de asignación en AEM {#creating-mapping-definitions-in-aem}
 
-AEM En una instalación estándar de la carpeta de carpetas, puede encontrar la siguiente carpeta:
+En una instalación estándar de AEM puede encontrar la carpeta:
 
 `/etc/map/http`
 
@@ -105,7 +103,7 @@ Para crear la asignación que prefija cualquier solicitud a https://localhost:45
 1. Cree un nodo:
 
    * **Tipo** `sling:Mapping`
-Este tipo de nodo está diseñado para este tipo de asignaciones, aunque su uso no es obligatorio.
+     Este tipo de nodo está diseñado para este tipo de asignaciones, aunque su uso no es obligatorio.
 
    * **Nombre** `localhost_any`
 
@@ -114,15 +112,15 @@ Este tipo de nodo está diseñado para este tipo de asignaciones, aunque su uso 
 
    * **Nombre** `sling:match`
 
-      * **Tipo** `String`
+     * **Tipo** `String`
 
-      * **Valor** `localhost.4503/`
+     * **Valor** `localhost.4503/`
 
    * **Nombre** `sling:internalRedirect`
 
-      * **Tipo** `String[]`
+     * **Tipo** `String[]`
 
-      * **Valor** `/content/`
+     * **Valor** `/content/`
 
 1. Haga clic en **Guardar todo**.
 
