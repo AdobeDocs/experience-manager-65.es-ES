@@ -7,13 +7,11 @@ exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1534'
 ht-degree: 2%
-
 ---
-
 # SCF Handlebars Helpers {#scf-handlebars-helpers}
 
 | **[⇐ elementos esenciales de la característica](essentials.md)** | **[⇒ de personalización del lado del servidor](server-customize.md)** |
@@ -180,7 +178,7 @@ Un asistente para devolver contenido en función de un condicional de igualdad.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Un asistente de bloque que prueba el valor actual de [modo WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) con una lista de modos separados por cadenas.
+Un asistente de bloque que prueba el valor actual de [modo WCM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) con una lista de modos separados por cadenas.
 
 ### Parámetros {#parameters-4}
 
@@ -190,7 +188,7 @@ Un asistente de bloque que prueba el valor actual de [modo WCM](https://develope
 
 * **modo**: cadena
 
-  (Opcional) Una lista separada por comas de [modos WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) para comprobar si están configurados.
+  (Opcional) Una lista separada por comas de [modos WCM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) para comprobar si están configurados.
 
 ### Ejemplo {#example-2}
 
@@ -523,7 +521,7 @@ Los asistentes personalizados deben implementarse en el lado del servidor y del 
 
 ### Ayudantes personalizados del lado del servidor {#server-side-custom-helpers}
 
-Para implementar y registrar un asistente SCF personalizado en el lado del servidor, simplemente implemente la interfaz Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), conviértala en un [servicio OSGi](../../help/sites-developing/the-basics.md#osgi) e instálelo como parte de un paquete OSGi.
+Para implementar y registrar un asistente SCF personalizado en el lado del servidor, simplemente implemente la interfaz Java™ [TemplateHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), conviértala en un [servicio OSGi](../../help/sites-developing/the-basics.md#osgi) e instálelo como parte de un paquete OSGi.
 
 Por ejemplo:
 

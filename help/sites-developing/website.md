@@ -10,13 +10,11 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4923'
+source-wordcount: '5032'
 ht-degree: 4%
-
 ---
-
 # Crear un sitio web con todas las funciones (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -140,7 +138,7 @@ Una plantilla define el contenido predeterminado de una nueva página. Los sitio
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   El valor de la propiedad path permitida es una expresión regular *.* Las páginas que tienen una ruta de acceso que coincide con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta de la carpeta **/content** y todas las subpáginas.
+   El valor de la propiedad de ruta de acceso permitida es una *expresión regular.* Las páginas que tienen una ruta que coincide con la expresión pueden utilizar la plantilla. En este caso, la expresión regular coincide con la ruta de la carpeta **/content** y todas las subpáginas.
 
    Cuando un autor crea una página debajo de /content, la plantilla **contentpage** aparece en una lista de plantillas disponibles para usar.
 
@@ -329,7 +327,7 @@ En esta sección se crean varios scripts que generan una parte del cuerpo de la 
 
 1. En CRXDE Lite, cree el archivo `left.jsp` en `/apps/mywebsite/components/contentpage`:
 
-   1. Haga clic con el botón derecho en el nodo `/apps/mywebsite/components/contentpage` y, a continuación, seleccione **Crear &#x200B;** luego **Crear archivo**.
+   1. Haga clic con el botón derecho en el nodo `/apps/mywebsite/components/contentpage` y, a continuación, seleccione **Crear** luego **Crear archivo**.
 
    1. En la ventana, escriba `left.jsp` como **Nombre** y haga clic en **Aceptar**.
 
@@ -523,9 +521,9 @@ En este ejercicio, Sling hace coincidir estas direcciones URL con el script /app
 
 1. Copie el código siguiente en `navimage.png.java.`El código amplía la clase AbstractImageServlet:
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crea un objeto ImageContext que almacena las propiedades del recurso actual.
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crea un objeto ImageContext que almacena las propiedades del recurso actual.
    * La página principal del recurso se extrae del objeto ImageContext. A continuación, se obtienen el título y el subtítulo de la página.
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) se usa para generar la imagen a partir del archivo navimage_bg.jpg del diseño del sitio, el título de la página y el subtítulo de la página.
+   * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/ImageHelper.html) se usa para generar la imagen a partir del archivo navimage_bg.jpg del diseño del sitio, el título de la página y el subtítulo de la página.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -795,7 +793,7 @@ Cree el cuadro de diálogo que se utiliza para configurar las propiedades del co
 
 1. Agregue propiedades al nodo listroot para configurarlo como un campo de texto. Cada fila de la siguiente tabla representa una propiedad. Cuando termine, haga clic en Guardar todo.
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | fieldLabel | Cadena | Ruta de raíz de lista |
    | name | Cadena | ./listroot |
@@ -924,7 +922,7 @@ Cree el cuadro de diálogo para configurar el componente de logotipo en el modo 
 1. Haga clic con el botón derecho en el nodo tab1 de la rama design_dialog y haga clic en Eliminar. Haga clic en Guardar todo.
 1. En el nodo `design_dialog/items/items`, cree un nodo denominado `img` de tipo `cq:Widget`. Agregue las siguientes propiedades y haga clic en Guardar todo:
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | fileNameParameter | Cadena | ./imageName |
    | fileReferenceParameter | Cadena | ./imageReference |
@@ -938,7 +936,7 @@ Cree el cuadro de diálogo para configurar el componente de logotipo en el modo 
 
 Cree la secuencia de comandos que recupera la imagen del logotipo y la escribe en la página.
 
-1. Haga clic con el botón derecho en el nodo del componente logotipo y haga clic en Crear > Crear archivo para crear el archivo de script denominado img.GET.java.
+1. Haga clic con el botón derecho en el nodo del componente Logotipo y haga clic en Crear > Crear archivo para crear el archivo de script llamado img.GET.java.
 1. Abra el archivo, copie el siguiente código en el archivo y, a continuación, haga clic en Guardar todo:
 
 ```java
@@ -1195,7 +1193,7 @@ En esta sección, se utiliza un nodo cq:editConfig para permitir arrastrar recur
 
 1. En CRXDE, establezca las propiedades como se indica a continuación:
 
-| Nombre | Tipo | Valor  |
+| Nombre | Tipo | Valor |
 |---|---|---|
 | aceptar | Cadena | image/(gif\|jpeg\|png) |
 | grupos | Cadena | medios |
@@ -1530,6 +1528,6 @@ Para este componente, puede establecer varios parámetros tanto en el modo de ed
    ```
 
 1. Guarde los cambios.
-1. En el explorador, vuelva a cargar la página **&#x200B; productos &#x200B;**. Toda la página tiene el siguiente aspecto:
+1. En el explorador, vuelva a cargar la página ** productos **. Toda la página tiene el siguiente aspecto:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

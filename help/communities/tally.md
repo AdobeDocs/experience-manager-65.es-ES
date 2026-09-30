@@ -9,13 +9,11 @@ exl-id: 0b508df9-1a24-4728-a254-f913eeb9b391
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '339'
 ht-degree: 0%
-
 ---
-
 # Tally Essentials {#tally-essentials}
 
 Tally es una clase abstracta que proporciona un método estándar de recopilar comentarios de los miembros sobre cómo valoran productos y servicios específicos. No se admiten comentarios anónimos. Los visitantes del sitio deben registrarse e iniciar sesión para participar e iniciar sesión para cambiar sus comentarios. El requisito de iniciar sesión facilita la moderación y aumenta el valor de los comentarios al evitar varias publicaciones.
@@ -38,9 +36,9 @@ A partir de AEM 6.1, el componente de encuesta ya no está disponible.
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API de recuento](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Extremos de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Extremos de recuento](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 

@@ -9,13 +9,11 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2739'
 ht-degree: 1%
-
 ---
-
 # Contribución a AEM{#contributing-to-aem}
 
 ## Metodología de desarrollo {#development-methodology}
@@ -44,7 +42,7 @@ En el nivel más alto, debería comprender bien lo siguiente:
 * Cookies del explorador
 * y otros conceptos modernos de desarrollo web
 
-La pila de tecnología de Adobe Experience Manager se basa en el contenedor OSGI [Apache Felix](https://felix.apache.org/documentation/index.html) con el marco web [Apache Sling](https://sling.apache.org/index.html) e incrusta un repositorio de contenido Java™ ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basado en [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Familiarícese con estos proyectos individuales y con cualquier otro componente de código abierto (por ejemplo, Apache Lucene) que se utilice en el área en la que pretenda contribuir.
+La pila de tecnología de Adobe Experience Manager se basa en el contenedor OSGI [Apache Felix](https://felix.apache.org/documentation/index.html) con el marco web [Apache Sling](https://sling.apache.org/index.html) e incrusta un repositorio de contenido Java™ ([JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)) basado en [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html). Familiarícese con estos proyectos individuales y con cualquier otro componente de código abierto (por ejemplo, Apache Lucene) que se utilice en el área en la que pretenda contribuir.
 
 ## Conocimiento tribal {#tribal-knowledge}
 

@@ -9,13 +9,11 @@ exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5297'
+source-wordcount: '5299'
 ht-degree: 2%
-
 ---
-
 
 # Desarrollo de informes {#developing-reports}
 
@@ -87,7 +85,7 @@ La página del informe es:
 
 ### Base del informe {#report-base}
 
-El componente [`reportbase` &#x200B;](#report-base-component) forma la base de cualquier informe porque:
+El componente [`reportbase` ](#report-base-component) forma la base de cualquier informe porque:
 
 * Conserva la definición de [query](#the-query-and-data-retrieval) que entrega el conjunto de resultados de datos subyacente.
 
@@ -97,7 +95,7 @@ El componente [`reportbase` &#x200B;](#report-base-component) forma la base de c
 
 ### Base de columna {#column-base}
 
-Cada columna es una instancia del componente [`columnbase` &#x200B;](#column-base-component) que:
+Cada columna es una instancia del componente [`columnbase` ](#column-base-component) que:
 
 * Es un párrafo que usa el parsys (`reportbase`) del informe respectivo.
 * Define el vínculo al [conjunto de resultados subyacente](#the-query-and-data-retrieval). Es decir, define los datos específicos a los que se hace referencia dentro de este conjunto de resultados y cómo se procesan.
@@ -108,7 +106,7 @@ Cada columna es una instancia del componente [`columnbase` &#x200B;](#column-bas
 La consulta:
 
 * Se define como parte del componente [`reportbase`](#report-base).
-* Se basa en [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
+* Se basa en [CQ QueryBuilder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
 * Recupera los datos utilizados como base del informe. Cada fila del conjunto de resultados (tabla) está vinculada a un nodo tal como lo devuelve la consulta. A continuación, se extrae información específica para [columnas individuales](#column-base-component) de este conjunto de datos.
 
 * Por lo general consta de:
@@ -190,7 +188,7 @@ Donde los pasos y elementos detallados son:
 Para construir y configurar un informe, es necesario lo siguiente:
 
 * una [ubicación para la definición de los componentes del informe](#location-of-report-components)
-* un componente [`reportbase` &#x200B;](#report-base-component)
+* un componente [`reportbase` ](#report-base-component)
 * uno o más [`columnbase` componentes](#column-base-component)
 * un [componente de página](#page-component)
 * un [diseño de informe](#report-design)
@@ -382,7 +380,7 @@ N:charting
 
 Cada informe puede tener un cuadro de diálogo de configuración, que permite al usuario especificar varios parámetros para el informe. Se puede acceder a este cuadro de diálogo a través del botón **Editar** cuando la página del informe esté abierta.
 
-Este cuadro de diálogo es un [cuadro de diálogo](/help/sites-developing/components-basics.md#dialogs) de CQ estándar y se puede configurar como tal (consulte [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) para obtener más información).
+Este cuadro de diálogo es un [cuadro de diálogo](/help/sites-developing/components-basics.md#dialogs) de CQ estándar y se puede configurar como tal (consulte [CQ.Dialog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Dialog) para obtener más información).
 
 Un cuadro de diálogo de ejemplo puede tener el siguiente aspecto:
 

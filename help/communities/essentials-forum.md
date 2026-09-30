@@ -9,13 +9,11 @@ exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 2%
-
+source-wordcount: '280'
+ht-degree: 1%
 ---
-
 # Forum Essentials {#forum-essentials}
 
 Esta página proporciona la información esencial para trabajar con la función de foro.
@@ -55,9 +53,9 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de foro](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
+* [API de foro](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
-* [Puntos finales de foro](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
+* [Puntos finales de foro](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 

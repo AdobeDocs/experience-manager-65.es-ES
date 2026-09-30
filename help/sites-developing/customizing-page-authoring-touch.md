@@ -9,13 +9,11 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 3%
-
+source-wordcount: '1471'
+ht-degree: 2%
 ---
-
 # Personalización de la creación de páginas{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,16 +26,16 @@ Adobe Experience Manager (AEM) proporciona varios mecanismos para permitirle per
 
   Clientlibs le permite ampliar la implementación predeterminada para obtener nuevas funcionalidades, mientras reutiliza las funciones, los objetos y los métodos estándar. Al personalizar, puede crear su propia clientlib en `/apps.`. La nueva clientlib debe:
 
-   * dependen de la clientlib de creación `cq.authoring.editor.sites.page`
-   * formar parte de la categoría `cq.authoring.editor.sites.page.hook` apropiada
+  * dependen de la clientlib de creación `cq.authoring.editor.sites.page`
+  * formar parte de la categoría `cq.authoring.editor.sites.page.hook` apropiada
 
 * Superposiciones
 
-  Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la [fusión de recursos de sling](/help/sites-developing/sling-resource-merger.md) permite la herencia.
+  Las superposiciones se basan en definiciones de nodo y le permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no es necesaria una copia 1:1 del original, ya que la [fusión de recursos de sling](/help/sites-developing/sling-resource-merger.md) permite la herencia.
 
 >[!NOTE]
 >
->Para obtener más información, consulte [Conjunto de documentación de JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+>Para obtener más información, consulte [Conjunto de documentación de JS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creación de páginas en la instancia de AEM. A continuación se cubre una selección (en un nivel superior).
 
@@ -47,7 +45,7 @@ Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creación 
 >
 >* Usando y creando [clientlibs](/help/sites-developing/clientlibs.md).
 >* Usando y creando [superposiciones](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Estructura de la IU táctil de AEM](/help/sites-developing/touch-ui-structure.md) para obtener detalles de las áreas estructurales utilizadas para la creación de páginas.
 >
 
@@ -107,9 +105,9 @@ Puede encontrar el código de esta página en GitHub
 
 Al crear páginas, el usuario debe seleccionar a menudo entre recursos (por ejemplo, páginas, componentes y recursos). Esto puede adoptar la forma de una lista, por ejemplo, desde la que el autor debe elegir un elemento.
 
-Para mantener la lista a un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Por ejemplo, si se usa el componente [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) para permitir que el usuario seleccione la ruta de acceso a un recurso concreto, las rutas presentadas se pueden filtrar de la siguiente manera:
+Para mantener la lista a un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Por ejemplo, si se usa el componente [`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) para permitir que el usuario seleccione la ruta de acceso a un recurso concreto, las rutas presentadas se pueden filtrar de la siguiente manera:
 
-* Implemente el predicado personalizado implementando la interfaz [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
+* Implemente el predicado personalizado implementando la interfaz [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Especifique un nombre para el predicado y haga referencia a ese nombre cuando use `pathbrowser`.
 
 Para obtener más información sobre la creación de un predicado personalizado, consulte [Implementación de un evaluador de predicados personalizado para el Generador de consultas](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -151,12 +149,12 @@ En una instalación estándar de AEM:
 
      por ejemplo:
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * propiedad: `editorType`
+       * propiedad: `editorType`
 
-           Define el tipo de editor en línea que se utiliza cuando se activa la edición in situ para ese componente; por ejemplo, `text`, `textimage`, `image`, `title`.
+         Define el tipo de editor en línea que se utiliza cuando se activa la edición in situ para ese componente; por ejemplo, `text`, `textimage`, `image`, `title`.
 
 1. Se pueden configurar detalles de configuración adicionales del editor mediante un nodo `config` que contenga configuraciones y un nodo `plugin` que contenga los detalles de configuración del complemento necesarios.
 

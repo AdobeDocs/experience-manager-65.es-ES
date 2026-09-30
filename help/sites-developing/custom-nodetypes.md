@@ -9,18 +9,16 @@ exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1803'
 ht-degree: 5%
-
 ---
-
 # Tipos de nodos personalizados{#custom-node-types}
 
 Dado que Adobe Experience Manager (AEM) se basa en Sling y utiliza un repositorio JCR, los tipos de nodo que ofrecen ambos están disponibles para su uso:
 
-* [Tipos de nodos JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Tipos de nodos JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipos de nodos de Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Además de estos tipos de nodos, AEM proporciona una serie de tipos de nodos personalizados.
@@ -43,9 +41,9 @@ Define el tipo de nodo de un nodo de evento de auditoría.
 **Definición**
 
 * `[cq:AuditEvent]`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
-   * `+ * (nt:base) = nt:base multiple version`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
+  * `+ * (nt:base) = nt:base multiple version`
 * `- cq:time (date)`
 * `- cq:userid (string)`
 * `- cq:path (string)`
@@ -83,8 +81,8 @@ Define el tipo de nodo de un nodo `commentattachment`
 **Definición**
 
 * `[cq:CommentAttachment] > nt:file`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
 
 ### cq:CommentContent {#cq-commentcontent}
 
@@ -141,8 +139,8 @@ Define la página de CQ predeterminada.
 **Definición**
 
 * `[cq:Page] > nt:hierarchyNode orderable`
-   * `+ jcr:content (nt:base) = nt:unstructured copy primary`
-   * `+ * (nt:base) = nt:base version`
+  * `+ jcr:content (nt:base) = nt:unstructured copy primary`
+  * `+ * (nt:base) = nt:base version`
 
 ### cq:PseudoPage {#cq-pseudopage}
 
@@ -179,17 +177,17 @@ Define el nodo predeterminado para el contenido de la página, con las propiedad
 
 **Definición**
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
-   * `- cq:template (string)`
-   * `- cq:allowedTemplates (string) multiple`
-   * `- pageTitle (string)`
-   * `- navTitle (string)`
-   * `- hideInNav (boolean)`
-   * `- onTime (date)`
-   * `- offTime (date)`
-   * `- cq:lastModified (date)`
-   * `- cq:lastModifiedBy (string)`
-   * `- cq:designPath (string)`
-   * `- jcr:language (string)`
+  * `- cq:template (string)`
+  * `- cq:allowedTemplates (string) multiple`
+  * `- pageTitle (string)`
+  * `- navTitle (string)`
+  * `- hideInNav (boolean)`
+  * `- onTime (date)`
+  * `- offTime (date)`
+  * `- cq:lastModified (date)`
+  * `- cq:lastModifiedBy (string)`
+  * `- cq:designPath (string)`
+  * `- jcr:language (string)`
 
 ### cq:Template {#cq-template}
 
@@ -201,10 +199,10 @@ Define una plantilla de CQ.
 * `@node icon.png`: archivo que contiene un icono característico.
 * `@node thumbnail.png`: archivo que contiene una imagen en miniatura característica.
 * `@node workflows` - Asignar automáticamente la configuración del flujo de trabajo. La configuración sigue la estructura siguiente:
-   * `+ workflows`
-      * `+ name1`
-         * `- cq:path`
-            * `- cq:workflowName`
+  * `+ workflows`
+    * `+ name1`
+      * `- cq:path`
+        * `- cq:workflowName`
 * `@prop allowedParents`: patrones de expresión regular para determinar las rutas a las plantillas permitidas como plantillas principales.
 * `@prop allowedChildren`: patrones de expresión regular para determinar las rutas a las plantillas permitidas como plantillas secundarias.
 * `@prop ranking`: posición en la lista de plantillas en el cuadro de diálogo Crear página.
@@ -212,16 +210,16 @@ Define una plantilla de CQ.
 **Definición**
 
 * `[cq:Template] > nt:hierarchyNode, mix:title`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
-   * `+ * (nt:base) = nt:base multiple version`
-   * `+ jcr:content (nt:base) copy`
-   * `+ icon.png (nt:file) copy`
-   * `+ thumbnail.png (nt:file) copy`
-   * `+ workflows (nt:base) copy`
-   * `- allowedParents (string) multiple`
-   * `- allowedChildren (string) multiple`
-   * `- ranking (long)`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
+  * `+ * (nt:base) = nt:base multiple version`
+  * `+ jcr:content (nt:base) copy`
+  * `+ icon.png (nt:file) copy`
+  * `+ thumbnail.png (nt:file) copy`
+  * `+ workflows (nt:base) copy`
+  * `- allowedParents (string) multiple`
+  * `- allowedChildren (string) multiple`
+  * `- ranking (long)`
 
 ### cq:Component {#cq-component}
 
@@ -251,25 +249,25 @@ Define un componente CQ.
 **Definición**
 
 * `[cq:Component] > nt:folder, mix:title, sling:ResourceSuperType`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
-   * `+ * (nt:base) = nt:base multiple version`
-   * `+ dialog (nt:base) = nt:unstructured copy`
-   * `- dialogPath (string)`
-   * `+ design_dialog (nt:base) = nt:unstructured copy`
-   * `- cq:cellName (string)`
-   * `- cq:isContainer (boolean)`
-   * `- cq:noDecoration (boolean)`
-   * `+ cq:editConfig (cq:EditConfig) = cq:EditConfig copy`
-   * `+ cq:childEditConfig (cq:EditConfig) = cq:EditConfig copy`
-   * `+ cq:htmlTag (nt:base) = nt:unstructured copy`
-   * `+ icon.png (nt:file) copy`
-   * `+ thumbnail.png (nt:file) copy`
-   * `- allowedParents (string) multiple`
-   * `- allowedChildren (string) multiple`
-   * `+ virtual (nt:base) = sling:Folder copy`
-   * `- componentGroup (string)`
-   * `+ cq:infoProviders (nt:base) = nt:unstructured copy`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
+  * `+ * (nt:base) = nt:base multiple version`
+  * `+ dialog (nt:base) = nt:unstructured copy`
+  * `- dialogPath (string)`
+  * `+ design_dialog (nt:base) = nt:unstructured copy`
+  * `- cq:cellName (string)`
+  * `- cq:isContainer (boolean)`
+  * `- cq:noDecoration (boolean)`
+  * `+ cq:editConfig (cq:EditConfig) = cq:EditConfig copy`
+  * `+ cq:childEditConfig (cq:EditConfig) = cq:EditConfig copy`
+  * `+ cq:htmlTag (nt:base) = nt:unstructured copy`
+  * `+ icon.png (nt:file) copy`
+  * `+ thumbnail.png (nt:file) copy`
+  * `- allowedParents (string) multiple`
+  * `- allowedChildren (string) multiple`
+  * `+ virtual (nt:base) = sling:Folder copy`
+  * `- componentGroup (string)`
+  * `+ cq:infoProviders (nt:base) = nt:unstructured copy`
 
 ### cq:ComponentMixin {#cq-componentmixin}
 
@@ -288,14 +286,14 @@ Define un componente CQ como tipo de mezcla.
 Define la configuración de la &quot;barra de edición&quot;.
 
 * `@prop cq:dialogMode` - Modo de diálogo:
-   * `floating`: para un cuadro de diálogo flotante normal
-   * `inline` - edición en línea
-   * `auto` - detección automática (según el espacio disponible)
+  * `floating`: para un cuadro de diálogo flotante normal
+  * `inline` - edición en línea
+  * `auto` - detección automática (según el espacio disponible)
 * `@node cq:inplaceEditing` - Configuración de edición local para este componente.
 * `@prop cq:layout`- Diseño de la barra de edición:
-   * `editbar` - barra de edición
-   * `rollover` - cuadro de rollover
-   * `auto` - detección automática
+  * `editbar` - barra de edición
+  * `rollover` - cuadro de rollover
+  * `auto` - detección automática
 * `@node cq:formParameters`: parámetros adicionales para agregar al formulario de diálogo.
 * `@prop cq:actions`: lista de acciones (botones de barra de edición o elementos de menú).
 * `@node cq:actionConfigs`: configuraciones de widget para elementos de barra de edición o de menú.
@@ -305,13 +303,13 @@ Define la configuración de la &quot;barra de edición&quot;.
 **Definición**
 
 * `[cq:EditConfig] > nt:unstructured, nt:hierarchyNode orderable`
-   * `- cq:dialogMode (string) < 'auto', 'floating', 'inline'`
-   * `- cq:layout (string) < 'editbar', 'rollover', 'auto' + cq:formParameters (nt:base) = nt:unstructured`
-   * `- cq:actions (string) multiple`
-   * `+ cq:actionConfigs (nt:base) = nt:unstructured`
-   * `- cq:emptyText (string)`
-   * `+ cq:dropTargets (nt:base) = nt:unstructured`
-   * `+ cq:listeners (nt:base) = cq:EditListenersConfig`
+  * `- cq:dialogMode (string) < 'auto', 'floating', 'inline'`
+  * `- cq:layout (string) < 'editbar', 'rollover', 'auto' + cq:formParameters (nt:base) = nt:unstructured`
+  * `- cq:actions (string) multiple`
+  * `+ cq:actionConfigs (nt:base) = nt:unstructured`
+  * `- cq:emptyText (string)`
+  * `+ cq:dropTargets (nt:base) = nt:unstructured`
+  * `+ cq:listeners (nt:base) = cq:EditListenersConfig`
 
 ### cq:DropTargetConfig {#cq-droptargetconfig}
 
@@ -326,10 +324,10 @@ Configura un destino de colocación de un componente. El nombre de este nodo se 
 **Definición**
 
 * `[cq:DropTargetConfig] > nt:unstructured orderable`
-   * `- accept (string) multiple`
-   * `- groups (string) multiple`
-   * `- propertyName (string)`
-   * `+ parameters (nt:base) = nt:unstructured`
+  * `- accept (string) multiple`
+  * `- groups (string) multiple`
+  * `- propertyName (string)`
+  * `+ parameters (nt:base) = nt:unstructured`
 
 ### cq:VirtualComponent {#cq-virtualcomponent}
 
@@ -380,15 +378,15 @@ Define los oyentes (del lado del cliente) que se ejecutan en un evento de edici�
 **Definición**
 
 * `[cq:EditListenersConfig]`
-   * `- &ast; (undefined)`
-   * `- &ast; (undefined) multiple`
-   * `+ &ast; (nt:base) = nt:base multiple version`
-   * `- aftercreate (string)`
-   * `- afteredit (string)`
-   * `- afterdelete (string)`
-   * `- afterinsert (string)`
-   * `- afterremove (string)`
-   * `- aftermove (string)`
+  * `- &ast; (undefined)`
+  * `- &ast; (undefined) multiple`
+  * `+ &ast; (nt:base) = nt:base multiple version`
+  * `- aftercreate (string)`
+  * `- afteredit (string)`
+  * `- afterdelete (string)`
+  * `- afterinsert (string)`
+  * `- afterremove (string)`
+  * `- aftermove (string)`
 
 ## DAM {#dam}
 
@@ -401,8 +399,8 @@ Contenido de un recurso DAM.
 **Definición**
 
 * `[dam:AssetContent] > nt:unstructured`
-   * `+ metadata (nt:unstructured)`
-   * `+ renditions (nt:folder)`
+  * `+ metadata (nt:unstructured)`
+  * `+ renditions (nt:folder)`
 
 ### dam:Asset {#dam-asset}
 
@@ -425,8 +423,8 @@ Miniatura que representa un recurso DAM.
 **Definición**
 
 * `[dam:Thumbnails]`
-   * `mixin`
-   * `+ dam:thumbnails (nt:folder)`
+  * `mixin`
+  * `+ dam:thumbnails (nt:folder)`
 
 ## Lista de contenedores de envío {#delivery-container-list}
 
@@ -439,7 +437,7 @@ Lista de contenedores.
 **Definición**
 
 * `[cq:containerList]`
-   * `mixin`
+  * `mixin`
 
 ## Página de envío {#delivery-page}
 
@@ -457,10 +455,10 @@ El tipo de nodo `cq:attributes` es para las etiquetas de versión de ContentBus.
 **Definición**
 
 * `[cq:Cq4PageAttributes] > nt:base`
-   * `- created (long) mandatory copy`
-   * `- csd (string) mandatory copy`
-   * `- timestamp (long) mandatory copy`
-   * `- &ast; (string) copy`
+  * `- created (long) mandatory copy`
+  * `- csd (string) mandatory copy`
+  * `- timestamp (long) mandatory copy`
+  * `- &ast; (string) copy`
 
 ### cq:Cq4ContentPage {#cq-cq-contentpage}
 
@@ -477,8 +475,8 @@ Los elementos de un(a) `cq:Cq4ContentPage` son:
 **Definición**
 
 * `[cq:Cq4ContentPage]`
-   * `- cq:csd (string) mandatory copy`
-   * `+ cq:attributes (cq:Cq4PageAttributes)`
+  * `- cq:csd (string) mandatory copy`
+  * `+ cq:attributes (cq:Cq4PageAttributes)`
 
 ## Importador {#importer}
 
@@ -496,10 +494,10 @@ Configuración de encuesta.
 **Definición**
 
 * `[cq:PollConfig]`
-   * `mixin`
-   * `- source (String) mandatory`
-   * `- target (String)`
-   * `- interval (Long)`
+  * `mixin`
+  * `- source (String) mandatory`
+  * `- target (String)`
+  * `- interval (Long)`
 
 ### cq:PollConfigFolder {#cq-pollconfigfolder}
 
@@ -525,9 +523,9 @@ Mezcla que define una ubicación geográfica en grados decimales (DD).
 **Definición**
 
 * `[cq:GeoLocation]`
-   * `mixin`
-   * `- latitude (double)`
-   * `- longitude (double)`
+  * `mixin`
+  * `- latitude (double)`
+  * `- longitude (double)`
 
 ## Mailer {#mailer}
 
@@ -540,10 +538,10 @@ Tipos de nodos MailerService. El administrador de correo utiliza nodos que tiene
 **Definición**
 
 * `[cq:mailerMessage]`
-   * `mixin`
-   * `- messageStatus (string)`
-   * `= 'new'`
-   * `mandatory autocreated`
+  * `mixin`
+  * `- messageStatus (string)`
+  * `= 'new'`
+  * `mandatory autocreated`
 
 ## MSM {#msm}
 
@@ -556,9 +554,9 @@ Define un mixin de LiveRelationship. Un nodo de origen principal (control) y un 
 **Definición**
 
 * `[cq:LiveRelationship] mixin`
-   * `- cq:lastRolledout (date)`
-   * `- cq:lastRolledoutBy (string)`
-   * `- cq:sourceUUID (string)`
+  * `- cq:lastRolledout (date)`
+  * `- cq:lastRolledoutBy (string)`
+  * `- cq:sourceUUID (string)`
 
 ### cq:LiveSync {#cq-livesync}
 
@@ -588,7 +586,7 @@ Define un mixin de LiveSyncCanceled. Cancele el comportamiento de LiveSync de un
 **Definición**
 
 * `[cq:LiveSyncCancelled] > cq:LiveRelationship mixin`
-   * `- cq:isCancelledForChildren (boolean)`
+  * `- cq:isCancelledForChildren (boolean)`
 
 ### cq:LiveSyncAction {#cq-livesyncaction}
 
@@ -612,9 +610,9 @@ Configuración de Live Sync.
 **Definición**
 
 * `[cq:LiveSyncConfig]`
-   * `- cq:master (string) mandatory`
-   * `- cq:isDeep (boolean)`
-   * `- cq:trigger (string) /** deprecated **/`
+  * `- cq:master (string) mandatory`
+  * `- cq:isDeep (boolean)`
+  * `- cq:trigger (string) /** deprecated **/`
 
 Para AEM 5.4, añada al final de la lista:
 
@@ -641,7 +639,7 @@ Define el tipo de nodo de un nodo de consola.
 **Definición**
 
 * `[cq:Console] > sling:VanityPath, mix:title`
-   * `mixin`
+  * `mixin`
 
 ## Replicación {#replication}
 
@@ -661,13 +659,13 @@ Define el mixin de información de estado de replicación.
 **Definición**
 
 * `[cq:ReplicationStatus]`
-   * `mixin`
-   * `- cq:lastPublished (date) ignore`
-   * `- cq:lastPublishedBy (string) ignore`
-   * `- cq:lastReplicated (date) ignore`
-   * `- cq:lastReplicatedBy (string) ignore`
-   * `- cq:lastReplicationAction (string) ignore`
-   * `- cq:lastReplicationStatus (string) ignore`
+  * `mixin`
+  * `- cq:lastPublished (date) ignore`
+  * `- cq:lastPublishedBy (string) ignore`
+  * `- cq:lastReplicated (date) ignore`
+  * `- cq:lastReplicatedBy (string) ignore`
+  * `- cq:lastReplicationAction (string) ignore`
+  * `- cq:lastReplicationStatus (string) ignore`
 
 ## Seguridad {#security}
 
@@ -693,14 +691,14 @@ Define una ACL de privilegio de aplicación.
 **Definición**
 
 * `[cq:PrivilegeAcl] > cq:ApplicationPrivilege mixin orderable`
-   * `- cq:isPathDependent (boolean)`
-   * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
+  * `- cq:isPathDependent (boolean)`
+  * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
 ### cq:PrivilegeAce {#cq-privilegeace}
 
 **Descripción**
 
-Define una ACE de privilegio de aplicación.
+Define un ACE de privilegios de aplicación.
 
 * `@prop path`
 * `@prop deny`
@@ -708,8 +706,8 @@ Define una ACE de privilegio de aplicación.
 **Definición**
 
 * `[cq:PrivilegeAce]`
-   * `- path mandatory`
-   * `- deny (boolean)`
+  * `- path mandatory`
+  * `- deny (boolean)`
 
 ### cq:ApplicationPrivilege {#cq-applicationprivilege-1}
 
@@ -733,14 +731,14 @@ Define una ACL de privilegio de aplicación.
 **Definición**
 
 * `[cq:PrivilegeAcl] > cq:ApplicationPrivilege mixin orderable`
-   * `- cq:isPathDependent (boolean)`
-   * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
+  * `- cq:isPathDependent (boolean)`
+  * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
 ### cq:PrivilegeAce {#cq-privilegeace-1}
 
 **Descripción**
 
-Define una ACE de privilegio de aplicación.
+Define un ACE de privilegios de aplicación.
 
 * `@prop path`
 * `@prop deny`
@@ -748,8 +746,8 @@ Define una ACE de privilegio de aplicación.
 **Definición**
 
 * `[cq:PrivilegeAce]`
-   * `- path mandatory`
-   * `- deny (boolean)`
+  * `- path mandatory`
+  * `- deny (boolean)`
 
 ## Importador de sitios {#site-importer}
 
@@ -774,10 +772,10 @@ Define una sola etiqueta, pero también puede contener etiquetas, lo que crea un
 **Definición**
 
 * `[cq:Tag] > nt:base, mix:title`
-   * `- sling:resourceType (String)`
-   * `- * (undefined) multiple`
-   * `- * (undefined)`
-   * `+ * (nt:base) = cq:Tag version`
+  * `- sling:resourceType (String)`
+  * `- * (undefined) multiple`
+  * `- * (undefined)`
+  * `+ * (nt:base) = cq:Tag version`
 
 ### cq:Taggable {#cq-taggable}
 
@@ -790,7 +788,7 @@ Mezcla de base abstracta para contenido etiquetable.
 **Definición**
 
 * `[cq:Taggable]`
-   * `- cq:tags (string) multiple`
+  * `- cq:tags (string) multiple`
 
 ### cq:OwnerTaggable {#cq-ownertaggable}
 
@@ -811,7 +809,7 @@ Cualquier usuario o sitio web público puede etiquetar el contenido (estilo Web2
 **Definición**
 
 * `[cq:UserTaggable] > cq:Taggable`
-   * `mixin`
+  * `mixin`
 
 ### cq:AllowsUserContent {#cq-allowsusercontent}
 
@@ -822,14 +820,14 @@ Agrega un subnodo `cq:userContent` que los usuarios pueden modificar. Cada usuar
 **Definición**
 
 * `[cq:AllowsUserContent]`
-   * `mixin`
-   * `+ cq:userContent (nt:unstructured)`
+  * `mixin`
+  * `+ cq:userContent (nt:unstructured)`
 
 Variante extendida que define de forma más explícita el árbol `cq:userContent`
 
 * `[cq:AllowsUserContent]`
-   * `mixin`
-   * `+ cq:userContent (cq:UserContent)`
+  * `mixin`
+  * `+ cq:userContent (cq:UserContent)`
 
 ### cq:UserContent {#cq-usercontent}
 
@@ -840,10 +838,10 @@ Los usuarios pueden modificarla.
 **Definición**
 
 * `[cq:UserContent] > nt:unstructured`
-   * `// userids`
-   * `+ * (cq:UserData)`
-   * `// other content`
-   * `+ * (nt:base)`
+  * `// userids`
+  * `+ * (cq:UserData)`
+  * `// other content`
+  * `+ * (nt:base)`
 
 ### cq:UserData {#cq-userdata}
 
@@ -866,8 +864,8 @@ Carpeta de biblioteca de cliente
 **Definición**
 
 * `[cq:ClientLibraryFolder] > sling:Folder`
-   * `- categories (string) multiple`
-   * `- dependencies (string) multiple`
+  * `- categories (string) multiple`
+  * `- dependencies (string) multiple`
 
 ### cq:Widget {#cq-widget}
 
@@ -878,10 +876,10 @@ Widget
 **Definición**
 
 * `[cq:Widget] > nt:unstructured orderable`
-   * `- xtype (string)`
-   * `- name (string)`
-   * `- title (string)`
-   * `+ items (nt:base) = cq:WidgetCollection copy`
+  * `- xtype (string)`
+  * `- name (string)`
+  * `- title (string)`
+  * `+ items (nt:base) = cq:WidgetCollection copy`
 
 ### cq:WidgetCollection {#cq-widgetcollection}
 
@@ -892,8 +890,8 @@ Colección de widgets
 **Definición**
 
 * `[cq:WidgetCollection] > nt:unstructured`
-   * `orderable`
-   * `+ * (cq:Widget) = cq:Widget copy`
+  * `orderable`
+  * `+ * (cq:Widget) = cq:Widget copy`
 
 ### cq:Dialog {#cq-dialog}
 
@@ -924,7 +922,7 @@ Panel de fichas
 **Definición**
 
 * `[cq:TabPanel]` > `cq:Panel orderable`
-   * `- activeTab (long)`
+  * `- activeTab (long)`
 
 ### cq:Field {#cq-field}
 
@@ -935,9 +933,9 @@ Campo
 **Definición**
 
 * `[cq:Field] > cq:Widget orderable`
-   * `- fieldLabel (string)`
-   * `- value (string)`
-   * `- ignoreData (boolean)`
+  * `- fieldLabel (string)`
+  * `- value (string)`
+  * `- ignoreData (boolean)`
 
 ## Wiki {#wiki}
 
@@ -950,17 +948,17 @@ Tema Wiki
 **Definición**
 
 * `[wiki:Topic] > nt:unstructured, nt:hierarchyNode, mix:versionable, mix:lockable`
-   * `+ * (wiki:Topic) version`
-   * `+ wiki:attachments (nt:folder) = nt:folder version`
-   * `+ wiki:properties (wiki:Properties) = wiki:Properties copy`
-   * `- wiki:text (string) mandatory primary`
-   * `- wiki:lastModified (date) mandatory`
-   * `- wiki:lastModifiedBy (string) mandatory`
-   * `- wiki:topicName`
-   * `- wiki:topicTitle`
-   * `- wiki:lockedBy`
-   * `- wiki:logMessage (string)`
-   * `- wiki:quietSave (boolean)`
+  * `+ * (wiki:Topic) version`
+  * `+ wiki:attachments (nt:folder) = nt:folder version`
+  * `+ wiki:properties (wiki:Properties) = wiki:Properties copy`
+  * `- wiki:text (string) mandatory primary`
+  * `- wiki:lastModified (date) mandatory`
+  * `- wiki:lastModifiedBy (string) mandatory`
+  * `- wiki:topicName`
+  * `- wiki:topicTitle`
+  * `- wiki:lockedBy`
+  * `- wiki:logMessage (string)`
+  * `- wiki:quietSave (boolean)`
 
 ### wiki:User {#wiki-user}
 
@@ -971,7 +969,7 @@ Usuario de wiki
 **Definición**
 
 * `[wiki:User] mixin`
-   * `- wiki:subscriptions (string) multiple`
+  * `- wiki:subscriptions (string) multiple`
 
 ### wiki:Properties {#wiki-properties}
 
@@ -982,8 +980,8 @@ Propiedades de wiki
 **Definición**
 
 * `[wiki:Properties]`
-   * `- wiki:isGlobal (boolean)`
-   * `- * (undefined)`
+  * `- wiki:isGlobal (boolean)`
+  * `- * (undefined)`
 
 ## Flujo de trabajo {#workflow}
 
@@ -996,21 +994,21 @@ Representa una instancia de flujo de trabajo.
 **Definición**
 
 * `[cq:Workflow] > nt:base, mix:referenceable`
-   * `- modelId (String)`
-   * `- modelVersion (String)`
-   * `- startTime (Date)`
-   * `- endTime (Date)`
-   * `- initiator (String)`
-   * `- &ast; (undefined)`
-   * `- &ast; (undefined) multiple`
-   * `- sling:resourceType (String) = "cq/workflow/components/instance" mandatory autocreated`
-   * `+ workflowStack (nt:unstructured)`
-   * `+ wait (nt:unstructured)`
-   * `+ orTab (nt:unstructured)`
-   * `+ data (cq:WorkflowData)`
-   * `+ history (nt:unstructured)`
-   * `+ metaData (nt:unstructured)`
-   * `+ workItems (nt:unstructured)`
+  * `- modelId (String)`
+  * `- modelVersion (String)`
+  * `- startTime (Date)`
+  * `- endTime (Date)`
+  * `- initiator (String)`
+  * `- &ast; (undefined)`
+  * `- &ast; (undefined) multiple`
+  * `- sling:resourceType (String) = "cq/workflow/components/instance" mandatory autocreated`
+  * `+ workflowStack (nt:unstructured)`
+  * `+ wait (nt:unstructured)`
+  * `+ orTab (nt:unstructured)`
+  * `+ data (cq:WorkflowData)`
+  * `+ history (nt:unstructured)`
+  * `+ metaData (nt:unstructured)`
+  * `+ workItems (nt:unstructured)`
 
 ### cq:WorkItem {#cq-workitem}
 
@@ -1021,14 +1019,14 @@ Elemento de trabajo.
 **Definición**
 
 * `[cq:WorkItem]`
-   * `- assignee (String)`
-   * `- workflowId (String)`
-   * `- nodeId (String)`
-   * `- startTime (Date)`
-   * `- endTime (Date)`
-   * `- dueTime (Date)`
-   * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
-   * `+ metaData (nt:unstructured)`
+  * `- assignee (String)`
+  * `- workflowId (String)`
+  * `- nodeId (String)`
+  * `- startTime (Date)`
+  * `- endTime (Date)`
+  * `- dueTime (Date)`
+  * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
+  * `+ metaData (nt:unstructured)`
 
 ### cq:Payload {#cq-payload}
 
@@ -1039,13 +1037,13 @@ Carga útil
 **Definición**
 
 * `[cq:Payload]`
-   * `- path (Path)`
-   * `- uuid (String)`
-   * `- jcr:url (String)`
-   * `- binary (Binary)`
-   * `- javaObject (String)`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
+  * `- path (Path)`
+  * `- uuid (String)`
+  * `- jcr:url (String)`
+  * `- binary (Binary)`
+  * `- javaObject (String)`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
 
 ### cq:WorkflowData {#cq-workflowdata}
 
@@ -1056,10 +1054,10 @@ Datos de flujo de trabajo
 **Definición**
 
 * `[cq:WorkflowData]`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
-   * `+ payload (cq:Payload)`
-   * `+ metaData (nt:unstructured) copy`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
+  * `+ payload (cq:Payload)`
+  * `+ metaData (nt:unstructured) copy`
 
 ### cq:WorkflowModel {#cq-workflowmodel}
 
@@ -1067,24 +1065,24 @@ Datos de flujo de trabajo
 
 Asignar automáticamente la configuración del flujo de trabajo. La configuración sigue esta estructura a continuación:
 * `workflows`
-   * `+ name1`
-      * `- cq:path`
-      * `- cq:workflowName`
-   * `+ workflows (nt:base)`
+  * `+ name1`
+    * `- cq:path`
+    * `- cq:workflowName`
+  * `+ workflows (nt:base)`
 
 **Definición**
 
 * `[cq:WorkflowModel] > nt:base, mix:versionable`
-   * `orderable`
-   * `- title (String)`
-   * `- description (String)`
-   * `- sling:resourceType (String) = "cq/workflow/components/model" mandatory autocreated`
-   * `+ nodes (nt:unstructured)`
-      * `copy`
-   * `+ transitions (nt:unstructured)`
-      * `copy`
-   * `+ metaData (nt:unstructured)`
-      * `copy`
+  * `orderable`
+  * `- title (String)`
+  * `- description (String)`
+  * `- sling:resourceType (String) = "cq/workflow/components/model" mandatory autocreated`
+  * `+ nodes (nt:unstructured)`
+    * `copy`
+  * `+ transitions (nt:unstructured)`
+    * `copy`
+  * `+ metaData (nt:unstructured)`
+    * `copy`
 
 ### cq:WorkflowNode {#cq-workflownode}
 
@@ -1095,16 +1093,16 @@ nodo de flujo de trabajo
 **Definición**
 
 * `[cq:WorkflowNode] orderable`
-   * `- title (String)`
-   * `- description (String)`
-   * `- maxIdleTime (long)`
-   * `- type (String)`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
-   * `+ metaData (nt:unstructured)`
-      * `copy`
-   * `+ timeoutConfiguration (nt:unstructured)`
-      * `copy`
+  * `- title (String)`
+  * `- description (String)`
+  * `- maxIdleTime (long)`
+  * `- type (String)`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`
+  * `+ metaData (nt:unstructured)`
+    * `copy`
+  * `+ timeoutConfiguration (nt:unstructured)`
+    * `copy`
 
 ### cq:WorkflowTransition {#cq-workflowtransition}
 
@@ -1115,11 +1113,11 @@ Transición de flujo de trabajo
 **Definición**
 
 * `[cq:WorkflowTransition] orderable`
-   * `- from (String)`
-   * `- to (String)`
-   * `- rule (String)`
-   * `+ metaData (nt:unstructured)`
-      * `copy`
+  * `- from (String)`
+  * `- to (String)`
+  * `- rule (String)`
+  * `+ metaData (nt:unstructured)`
+    * `copy`
 
 ### cq:OrTab {#cq-ortab}
 
@@ -1130,8 +1128,8 @@ Pestaña O
 **Definición**
 
 * `[cq:OrTab]`
-   * `- workflowId (String) // not compulsory as this node will already be attached to the workflow node`
-   * `- nodeId (String)`
+  * `- workflowId (String) // not compulsory as this node will already be attached to the workflow node`
+  * `- nodeId (String)`
 
 ### cq:Wait {#cq-wait}
 
@@ -1142,9 +1140,9 @@ Esperar
 **Definición**
 
 * `[cq:Wait]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
-   * `- destNodeId (String)`
-   * `- fromNodeId (String)`
+  * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+  * `- destNodeId (String)`
+  * `- fromNodeId (String)`
 
 ### cq:WorkflowStack {#cq-workflowstack}
 
@@ -1155,9 +1153,9 @@ Pila de flujo de trabajo
 **Definición**
 
 * `[cq:WorkflowStack]`
-   * `- containeeInstanceId (String)`
-   * `- parentInstanceId (String)`
-   * `- nodeId (String)`
+  * `- containeeInstanceId (String)`
+  * `- parentInstanceId (String)`
+  * `- nodeId (String)`
 
 ### cq:ProcessStack {#cq-processstack}
 
@@ -1168,10 +1166,10 @@ Pila de procesos
 **Definición**
 
 * `[cq:ProcessStack]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
-   * `- containerWorkflowModelId (String)`
-   * `- containerWorkflowNodeId`
-   * `- containerWorkflowEndNodeId // still needed (if name already defines that id)`
+  * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+  * `- containerWorkflowModelId (String)`
+  * `- containerWorkflowNodeId`
+  * `- containerWorkflowEndNodeId // still needed (if name already defines that id)`
 
 ### cq:WorkflowLauncher {#cq-workflowlauncher}
 
@@ -1182,11 +1180,11 @@ Iniciador de flujo de trabajo
 **Definición**
 
 * `[cq:WorkflowLauncher]`
-   * `- nodetype (String)`
-   * `- glob (String)`
-   * `- eventType (Long)`
-   * `- description (String)`
-   * `- condition (String)`
-   * `- workflow (String)`
-   * `- * (undefined)`
-   * `- * (undefined) multiple`
+  * `- nodetype (String)`
+  * `- glob (String)`
+  * `- eventType (Long)`
+  * `- description (String)`
+  * `- condition (String)`
+  * `- workflow (String)`
+  * `- * (undefined)`
+  * `- * (undefined) multiple`

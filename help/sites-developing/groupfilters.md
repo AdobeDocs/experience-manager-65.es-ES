@@ -11,13 +11,11 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '785'
 ht-degree: 1%
-
 ---
-
 # Creación de filtros de grupo de dispositivos{#creating-device-group-filters}
 
 {{ue-over-mobile}}
@@ -30,7 +28,7 @@ Después de crear un filtro, puede utilizarlo en la configuración de [grupo.](/
 
 ## La clase Filter Java™ {#the-filter-java-class}
 
-Un filtro de grupo de dispositivos es un componente OSGi que implementa la interfaz [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Cuando se implementa, la clase de implementación proporciona un servicio de filtro disponible para las configuraciones de grupo de dispositivos.
+Un filtro de grupo de dispositivos es un componente OSGi que implementa la interfaz [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Cuando se implementa, la clase de implementación proporciona un servicio de filtro disponible para las configuraciones de grupo de dispositivos.
 
 La solución descrita en este artículo utiliza el complemento Apache Felix Maven SCR para facilitar el desarrollo del componente y el servicio. Por lo tanto, la clase Java™ de ejemplo utiliza las anotaciones `@Component` y `@Service`. La clase tiene la siguiente estructura:
 
@@ -94,7 +92,7 @@ La función `matches` devuelve `true` si las capacidades del dispositivo cumplen
 * El nombre del agente de usuario
 * Objeto Map que contiene las funciones del dispositivo. Las claves de mapa son los nombres de capacidad WURFL™ y los valores son los valores correspondientes de la base de datos WURFL™.
 
-La interfaz [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contiene un subconjunto de los nombres de capacidad WURFL™ en campos estáticos. Utilice estas constantes de campo como claves al recuperar valores desde el Mapa de capacidades de dispositivo.
+La interfaz [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contiene un subconjunto de los nombres de capacidad WURFL™ en campos estáticos. Utilice estas constantes de campo como claves al recuperar valores desde el Mapa de capacidades de dispositivo.
 
 Por ejemplo, el siguiente ejemplo de código determina si el dispositivo admite CSS:
 

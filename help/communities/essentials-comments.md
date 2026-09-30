@@ -9,13 +9,11 @@ exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 4%
-
+source-wordcount: '373'
+ht-degree: 3%
 ---
-
 # Comments Essentials {#comments-essentials}
 
 Esta página proporciona los aspectos básicos del trabajo con el sistema de comentarios (componente de comentarios) y las opciones para administrar el contenido generado por el usuario (UGC) que se produce cuando los miembros publican comentarios o respuestas.
@@ -78,9 +76,9 @@ Esto se aplica a cualquier componente que amplía un sistema de comentarios.
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de comentarios](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [API de comentarios](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Puntos finales de comentarios](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [Extremos de comentarios](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
@@ -89,7 +87,7 @@ Esto se aplica a cualquier componente que amplía un sistema de comentarios.
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderar contenido generado por el usuario](moderate-ugc.md).
 
-AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de las comunidades de AEM 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 

@@ -9,13 +9,11 @@ exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 1%
-
+source-wordcount: '321'
+ht-degree: 0%
 ---
-
 # Voting Essentials {#voting-essentials}
 
 El componente de votación, una subclase [tally](tally.md), es una herramienta útil que permite a los miembros clasificar un contenido determinado simplemente seleccionando flechas arriba o abajo para indicar su opinión.
@@ -38,7 +36,7 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
-   <td> cq.social.hbs.voting</td>
+   <td> cq.social.hbs.vote</td>
   </tr>
   <tr>
    <td> <strong>plantillas</strong></td>
@@ -59,9 +57,9 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API de recuento](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Puntos finales de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Extremos de recuento](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
@@ -70,7 +68,7 @@ No se admite la publicación anónima de un voto. Los visitantes del sitio deben
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de las comunidades de AEM 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 

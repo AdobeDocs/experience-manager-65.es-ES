@@ -1,25 +1,23 @@
 ---
 title: Integrar [!DNL Assets] con el flujo de actividad
-description: Describe las capacidades de grabación de  [!DNL Experience Manager]  y cómo configurarlo para que registre eventos específicos.
+description: Describe las capacidades de grabación de [!DNL Experience Manager] y cómo configurarlo para que registre eventos específicos.
 contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
-
 # Integrar [!DNL Assets] con el flujo de actividad {#integrating-assets-with-activity-stream}
 
 [!DNL Adobe Experience Manager Assets] usuarios realizan muchas acciones, como crear, cargar y eliminar Assets. Estas acciones se pueden registrar para que pueda proporcionar un historial de lo que ha hecho un usuario. En esta sección se describen las capacidades de grabación de [!DNL Experience Manager] y cómo configurar [!DNL Experience Manager] para que registre eventos específicos.
 
 ## Consideraciones de rendimiento y comportamiento predeterminado {#performance-considerations-and-default-behavior}
 
-Esta integración podría consumir CPU y espacio en disco, por ejemplo, al realizar una importación masiva. Por estos motivos, la integración de [!DNL Assets] con el flujo de actividad está deshabilitada de manera predeterminada.
+Esta integración podría consumir espacio en CPU y en disco, por ejemplo, al realizar una importación masiva. Por estos motivos, la integración de [!DNL Assets] con el flujo de actividad está deshabilitada de manera predeterminada.
 
 ## Eventos de acción admitidos {#supported-action-events}
 
@@ -59,4 +57,4 @@ La [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso a
 
 ## Leer eventos grabados {#reading-recorded-events}
 
-Los eventos registrados se almacenan como actividades. Puede leerlas mediante programación usando la [API de Activity Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Los eventos registrados se almacenan como actividades. Puede leerlas mediante programación usando la [API de Activity Manager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

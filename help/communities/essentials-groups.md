@@ -9,16 +9,16 @@ exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 1%
 ---
 # Elementos esenciales del grupo de comunidad  {#community-group-essentials}
 
 La función de grupos de comunidad es la capacidad de una subcomunidad para que los usuarios autorizados de los entornos de publicación y creación la creen dinámicamente dentro de un sitio de comunidad.
 
-A partir del paquete de funciones 1[&#128279;](deploy-communities.md#latestfeaturepack) de las comunidades es posible anidar grupos dentro de otros grupos.
+A partir del paquete de funciones 1](deploy-communities.md#latestfeaturepack) de las comunidades [es posible anidar grupos dentro de otros grupos.
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
@@ -76,9 +76,9 @@ A partir del paquete de funciones 1[&#128279;](deploy-communities.md#latestfeatu
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API del grupo de comunidad](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [API del grupo de comunidad](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Puntos finales de grupo de comunidad](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Puntos finales de grupo de comunidad](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 

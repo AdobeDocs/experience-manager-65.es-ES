@@ -1,26 +1,28 @@
 ---
-title: AEM Creación de etiquetas en una aplicación de
-description: AEM Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de personalizada
+title: Creación de etiquetas en una aplicación de AEM
+
+description: Trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de AEM personalizada
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
+
 feature: Developing,Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 0%
-
+source-wordcount: '936'
+ht-degree: 6%
 ---
+# Creación de etiquetas en una aplicación de AEM{#building-tagging-into-an-aem-application}
 
-# AEM Creación de etiquetas en una aplicación de{#building-tagging-into-an-aem-application}
+Para trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de AEM personalizada, esta página describe el uso de
 
-AEM Para trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación personalizada, esta página describe el uso de la variable
-
-* [API de etiquetado](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
+* [API de etiquetado](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/tagging/package-summary.html)
 
 Que interactúa con el
 
@@ -33,7 +35,7 @@ Para obtener información relacionada con el etiquetado, consulte:
 
 ## Información general sobre la API de etiquetado {#overview-of-the-tagging-api}
 
-AEM La implementación del [marco de etiquetado](/help/sites-developing/framework.md) en las etiquetas permite la administración de etiquetas y el contenido de etiquetas mediante la API de JCR. TagManager garantiza que las etiquetas introducidas como valores en la propiedad de matriz de cadenas `cq:tags` no se dupliquen, elimina los TagID que apuntan a etiquetas no existentes y actualiza los TagID para las etiquetas movidas o combinadas. TagManager utiliza un detector de observación JCR que revierte cualquier cambio incorrecto. Las clases principales se encuentran en el paquete [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html):
+La implementación del [marco de etiquetado](/help/sites-developing/framework.md) en AEM permite administrar las etiquetas y el contenido de las etiquetas mediante la API de JCR TagManager garantiza que las etiquetas introducidas como valores en la propiedad de matriz de cadenas `cq:tags` no se dupliquen, elimina los TagID que apuntan a etiquetas no existentes y actualiza los TagID para las etiquetas movidas o combinadas. TagManager utiliza un detector de observación JCR que revierte cualquier cambio incorrecto. Las clases principales se encuentran en el paquete [com.day.cq.tagging](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html):
 
 * JcrTagManagerFactory: devuelve una implementación basada en JCR de `TagManager`. Es la implementación de referencia de la API de etiquetado.
 * `TagManager`: permite resolver y crear etiquetas por rutas y nombres.
@@ -156,31 +158,31 @@ Cuando se agrega la etiqueta **Animals** a la página **Productos**, el valor `s
 
 La API del lado del servidor ha localizado `title` métodos relacionados:
 
-* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
-   * getLocalizedTitle(Configuración regional)
-   * getLocalizedTitlePaths()
-   * getLocalizedTitles()
-   * getTitle(Configuración regional)
-   * getTitlePath(Locale locale)
+  * getLocalizedTitle(Configuración regional)
+  * getLocalizedTitlePaths()
+  * getLocalizedTitles()
+  * getTitle(Configuración regional)
+  * getTitlePath(Locale locale)
 
-* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
-   * canCreateTagByTitle(String tagTitlePath, Configuración regional)
-   * createTagByTitle(String tagTitlePath, Configuración regional)
-   * resolveByTitle(String tagTitlePath, Configuración regional)
+  * canCreateTagByTitle(String tagTitlePath, Configuración regional)
+  * createTagByTitle(String tagTitlePath, Configuración regional)
+  * resolveByTitle(String tagTitlePath, Configuración regional)
 
-AEM En la práctica, el idioma se puede obtener en el idioma de la página o en el idioma del usuario:
+En AEM, el idioma se puede obtener del idioma de la página o del idioma del usuario:
 
 * para recuperar el idioma de la página en un JSP:
 
-   * `currentPage.getLanguage(false)`
+  * `currentPage.getLanguage(false)`
 
 * para recuperar el idioma del usuario en un JSP:
 
-   * `slingRequest.getLocale()`
+  * `slingRequest.getLocale()`
 
-`currentPage` y `slingRequest` están disponibles en un JSP a través de la etiqueta [&lt;cq:definedObjects>](/help/sites-developing/taglib.md).
+`currentPage` y `slingRequest` están disponibles en un JSP a través de la etiqueta [&lt;cq:definedObjects](/help/sites-developing/taglib.md).
 
 Para el etiquetado, la localización depende del contexto, ya que la etiqueta `titles` se puede mostrar en el idioma de la página, en el idioma del usuario o en cualquier otro idioma.
 
@@ -196,8 +198,8 @@ El nuevo idioma (finés) ya está disponible en el cuadro de diálogo de etiquet
 
 >[!NOTE]
 >
->AEM El nuevo idioma debe ser uno de los idiomas reconocidos por la comunidad de idiomas de los que se dispone en la. Es decir, debe estar disponible como nodo debajo de `/libs/wcm/core/resources/languages`.
+>El nuevo idioma debe ser uno de los idiomas reconocidos por AEM. Es decir, debe estar disponible como nodo debajo de `/libs/wcm/core/resources/languages`.
 
 >[!CAUTION]
 >
->La instalación del etiquetado relacionado con el contenido listo para usar a través de un paquete de actualización oficial (incluidos los paquetes de servicio, los paquetes de servicio de seguridad, los paquetes de funciones ampliadas, los paquetes de funciones acumulativas, los parches y similares), restablece la propiedad de idiomas del nodo `/content/cq:tags` de forma predeterminada. Por lo tanto, es necesario agregarlo desde las propiedades antes de la instalación.
+>La instalación del etiquetado relacionado con el contenido listo para usar a través de un paquete de actualización oficial (incluidos los paquetes de servicio, los paquetes de servicio de seguridad, los paquetes de funciones ampliadas, los paquetes de funciones acumulativas, los parches y similares) restablece la propiedad de idiomas del nodo `/content/cq:tags` de forma predeterminada. Por lo tanto, es necesario añadirlo desde las propiedades antes de la instalación.
