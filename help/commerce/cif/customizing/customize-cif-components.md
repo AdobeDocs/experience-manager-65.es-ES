@@ -5,13 +5,11 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2667'
 ht-degree: 14%
-
 ---
-
 # Personalizar los componentes principales de Adobe Experience Manager CIF {#customize-cif-components}
 
 El [Proyecto Venia de CIF](https://github.com/adobe/aem-cif-guides-venia) es una base de código de referencia para usar [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components). En este tutorial, se amplía aún más el componente [teaser de productos](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para mostrar un atributo personalizado de Adobe Commerce. También obtendrá más información sobre la integración de GraphQL entre Adobe Experience Manager (AEM) y Adobe Commerce y los enlaces de extensión que proporcionan los componentes principales de CIF.

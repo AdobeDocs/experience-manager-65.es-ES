@@ -9,13 +9,11 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 76%
-
 ---
-
 # Usar CAPTCHA en formularios adaptables{#using-captcha-in-adaptive-forms}
 
 | Versión | Vínculo del artículo |
@@ -63,7 +61,7 @@ Los usuarios de AEM Forms pueden utilizar el servicio reCAPTCHA de Google para i
 1. Configure el servicio en la nube para reCAPTCHA Enterprise.
 
    1. En la instancia de autor Experience Manager, vaya a ![herramientas-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
-   1. Selecciona **[!UICONTROL reCAPTCHA]**. Se abre la página de configuración. Seleccione el contenedor de configuración creado en el paso anterior y seleccione **[!UICONTROL Crear]**.
+   1. Seleccione **[!UICONTROL reCAPTCHA]**. Se abre la página de configuración. Seleccione el contenedor de configuración creado en el paso anterior y seleccione **[!UICONTROL Crear]**.
    1. Seleccione la versión como reCAPTCHA Enterprise y especifique el nombre, el ID de proyecto, la clave del sitio y la clave de API (obtenida en los pasos 2 y 3) para el servicio reCAPTCHA Enterprise.
    1. Seleccione el tipo de clave, el tipo de clave debe ser el mismo que la clave del sitio configurada en el proyecto de Google Cloud, por ejemplo, **Clave de sitio de casilla de verificación** o **Clave de sitio basada en la puntuación**.
    1. Especifique una puntuación de umbral en el intervalo de 0 a 1 ([Haga clic para obtener más información sobre la puntuación](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Las puntuaciones superiores o iguales a las puntuaciones de umbral identifican la interacción humana; de lo contrario, se considera interacción de bots.
@@ -100,7 +98,7 @@ Una vez habilitado el servicio empresarial de reCAPTCHA, estará disponible para
 1. Configure el servicio en la nube para el reCAPTCHA v2.
 
    1. En la instancia de autor de AEM, vaya a ![tools-1](assets/tools-1.png) > **Cloud Services**.
-   1. Seleccione **[!UICONTROL reCAPTCHA]**. Se abre la página de configuración. Seleccione el contenedor de configuración creado en el paso anterior y seleccione **[!UICONTROL Crear]**.
+   1. Selecciona **[!UICONTROL reCAPTCHA]**. Se abre la página de configuración. Seleccione el contenedor de configuración creado en el paso anterior y seleccione **[!UICONTROL Crear]**.
    1. Seleccione la versión como reCAPTCHA v2, especifique el nombre, la clave del sitio y la clave secreta para el servicio reCAPTCHA (obtenido en el paso 1) y seleccione **[!UICONTROL Crear]** para crear la configuración del servicio en la nube.
    1. En el cuadro de diálogo Editar componente, especifique el sitio y las claves secretas obtenidas en el paso 1. Selecciona **[!UICONTROL Guardar configuración]** y, a continuación, **OK** para completar la configuración.
 
@@ -238,7 +236,7 @@ Selecciona **[!UICONTROL Valor de moneda]** en el formulario y crea las siguient
 
 >[!NOTE]
 >
-> * Si selecciona la configuración de reCAPTCHA v2 con un tamaño de **[!UICONTROL Invisible]** o claves basadas en la puntuación empresarial de reCAPTCHA, la opción mostrar/ocultar no es aplicable.
+>* Si selecciona la configuración de reCAPTCHA v2 con un tamaño de **[!UICONTROL Invisible]** o claves basadas en la puntuación empresarial de reCAPTCHA, la opción mostrar/ocultar no es aplicable.
 
 ### Validar CAPTCHA {#validate-captcha}
 

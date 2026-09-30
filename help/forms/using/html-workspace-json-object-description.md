@@ -8,13 +8,11 @@ exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 96%
-
+source-wordcount: '2168'
+ht-degree: 89%
 ---
-
 # Descripción de los objetos JSON de AEM Forms Workspace {#aem-forms-workspace-json-object-description}
 
 A continuación, se describen los objetos JSON utilizados en AEM Forms Workspace.
@@ -23,49 +21,49 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
 
    Las categorías se encuentran en la pestaña Iniciar proceso del espacio de trabajo. Estas categorías se utilizan para clasificar los puntos de inicio.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propiedad</strong></td>
-   <td><strong>Solo cliente</strong></td>
-   <td><strong>Comentarios</strong></td>
-  </tr>
-  <tr>
-   <td>name</td>
-   <td>F</td>
-   <td>Nombre de categoría</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>F</td>
-   <td>ID de categoría<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>Descripción<br type="_moz" /> </td>
-   <td>F</td>
-   <td>Descripción de la categoría<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>F</td>
-   <td>Contiene el OID de la categoría principal.<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>T</td>
-   <td>Contiene una lista de todos los puntos de inicio presentes en una categoría.</td>
-  </tr>
-  <tr>
-   <td>categoryList</td>
-   <td>T</td>
-   <td>Contiene la lista de categorías secundarias directas de una categoría.<br type="_moz" /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Propiedad</strong></td>
+      <td><strong>Solo cliente</strong></td>
+      <td><strong>Comentarios</strong></td>
+   </tr>
+   <tr>
+      <td>name</td>
+      <td>F</td>
+      <td>Nombre de categoría</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>F</td>
+      <td>ID de categoría<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>description<br type="_moz" /> </td>
+      <td>F</td>
+      <td>Descripción de la categoría<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>F</td>
+      <td>Contiene el OID de la categoría principal.<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>T</td>
+      <td>Contiene una lista de todos los puntos de inicio presentes en una categoría.</td>
+   </tr>
+   <tr>
+      <td>categoryList</td>
+      <td>T</td>
+      <td>Contiene la lista de categorías secundarias directas de una categoría.<br type="_moz" /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Todos los puntos de inicio y Favoritos son categorías que se definen en el lado del cliente. La categoría Favorito contiene todos los puntos de inicio que el usuario ha marcado como favoritos. La categoría Todos los puntos de inicio contiene todos los puntos de inicio.
+   >[!NOTE]
+   >
+   >Todos los puntos de inicio y Favoritos son categorías que se definen en el lado del cliente. La categoría Favorito contiene todos los puntos de inicio que el usuario ha marcado como favoritos. La categoría Todos los puntos de inicio contiene todos los puntos de inicio.
 
 1. Punto de inicio
 
@@ -193,7 +191,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>priority<br /> </td>
    <td>F</td>
-   <td>Contiene la prioridad de la tarea.<br /> 1 = Prioridad más alta<br /> 2 = Prioridad alta<br /> 3 = Prioridad Normal<br /> 4 = Prioridad baja<br /> 5 = Prioridad más baja<br /> </td>
+   <td>Contiene la prioridad de la tarea.<br /> 1 = Prioridad más alta<br /> 2 = Prioridad alta<br /> 3 = Prioridad normal<br /> 4 = Prioridad baja<br /> 5 = Prioridad más baja<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -238,7 +236,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>status<br /> </td>
    <td>F</td>
-   <td>1 = Creada (la tarea se ha creado desde el punto de inicio).<br /> 2 = Creada y guardada (la tarea se ha creado desde el punto de inicio y se ha guardado).<br /> 3 = Asignada (la tarea se ha asignado al usuario una vez iniciado el proceso).<br /> 4 = Asignada y guardada (la tarea se ha asignado y guardado).<br /> 100 = Completada (la tarea se ha completado).<br /> 101 = Con fecha límite (la tarea ha alcanzado la fecha límite).<br /> 102 = Terminada<br /> </td>
+   <td>1 = Creada (la tarea se ha creado desde el punto de inicio)<br /> 2 = Creada y guardada (la tarea se ha creado desde el punto de inicio y se ha guardado)<br /> 3 = Asignada (la tarea se ha asignado al usuario una vez iniciado el proceso)<br /> 4 = Asignada y guardada (la tarea se ha asignado y guardado).<br /> 100 = Completada (la tarea se ha completado)<br /> 101 = Con fecha límite (la tarea ha alcanzado la fecha límite).<br /> 102 = Terminado<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
@@ -412,7 +410,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>type</td>
    <td>F</td>
-   <td>Contiene el tipo de la cola.<br /> 0 - Cola de usuario<br /> 1. Cola compartida<br /> 2. Cola de grupo<br type="_moz" /> </td>
+   <td>Contiene el tipo de la cola.<br /> 0 - Cola de usuario.<br /> 1. Cola compartida.<br /> 2. Cola de grupo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>query</td>
@@ -525,7 +523,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = Iniciado<br /> 1 = En ejecución<br /> 2 = Completo<br /> 3 = Finalizado<br /> 4 = Terminado<br /> 5 = Finalización<br /> 6 = Suspendido<br /> 7 = Suspender<br /> 8 = Sin suspensión<br type="_moz" /> </td>
+   <td>0 = Iniciado<br /> 1 = En ejecución<br /> 2 = Completo<br /> 3 = Completándose<br /> 4 = Terminado<br /> 5 = Terminándose<br /> 6 = Suspendido<br /> 7 = Suspendiéndose<br /> 8 = Sin suspensión<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td>
@@ -606,7 +604,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = Asignación inicial<br /> 1 = Reenviada (la tarea se ha reenviado al propietario actual de la tarea)<br /> 2 = Devuelta (el propietario anterior de la tarea ha devuelto la tarea a su propietario actual)<br /> 3 = Reclamada (la tarea ha sido reclamada por el propietario actual de la tarea)<br /> 4 = Escalación (la tarea se ha asignado al propietario actual de la tarea después de la escalación)<br /> 5 = Administrador asignado (el administrador ha asignado la tarea a su propietario actual)<br /> 6 = Consultada (Se ha consultado la tarea a su propietario actual)<br type="_moz" /> </td>
+   <td>0 = Asignación inicial <br /> 1 = Reenviada (la tarea se ha reenviado al propietario actual de la tarea)<br /> 2 = Devuelta (el propietario anterior de la tarea ha devuelto la tarea a su propietario actual)<br /> 3 = Reclamada (la tarea ha sido reclamada por el propietario actual de la tarea)<br /> 4 = Escalación (la tarea se ha asignado al propietario actual de la tarea después de la escalación)<br /> 5 = Administrador asignado (el administrador ha asignado la tarea a su propietario actual)<br /> 6 = Consultada (Se ha consultado la tarea a su propietario actual)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>
@@ -702,7 +700,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
    <td>El nombre del usuario que agregó el archivo adjunto.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>Descripción<br type="_moz" /> </td>
+   <td>description<br type="_moz" /> </td>
    <td>F</td>
    <td>La descripción del archivo adjunto.<br type="_moz" /> </td>
   </tr>
@@ -808,7 +806,7 @@ A continuación, se describen los objetos JSON utilizados en AEM Forms Workspa
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
    <td>F</td>
-   <td>El valor es True si el usuario está fuera de la oficina<br type="_moz" /> </td>
+   <td>El valor es True si el usuario está fuera de la oficina.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>lastName<br type="_moz" /> </td>

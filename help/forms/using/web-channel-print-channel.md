@@ -1,20 +1,23 @@
 ---
 title: Canal de impresión y canal web
-description: Importar plantillas del canal de impresión y crear y activar plantillas del canal web
+
+description: Importar plantillas del canal de impresión y crear y habilitar plantillas del canal web
+
+
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 86%
-
 ---
-
 # Canal de impresión y canal web{#print-channel-and-web-channel}
 
 Las comunicaciones interactivas se pueden entregar mediante dos canales: impresión y web. El canal de impresión se utiliza para crear PDF y comunicaciones en papel, como una carta impresa como recordatorio de pago de primas de seguro, mientras que el canal web se utiliza para ofrecer experiencias en línea, como un extracto de tarjeta de crédito en un sitio web.
@@ -33,7 +36,7 @@ Para cargar la plantilla, debe ser miembro del grupo de usuarios de formularios.
 
 1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos]**.
 
-1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Carga de archivo]**.
+1. Seleccione **[!UICONTROL Crear]** > **[!UICONTROL Cargar archivo]**.
 
    Desplácese, seleccione la plantilla de canal de impresión (XDP) adecuada y seleccione **[!UICONTROL Abrir]**.
 

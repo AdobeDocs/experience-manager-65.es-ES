@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 85%
@@ -38,6 +38,7 @@ Puede usar los componentes **Firma manuscrita** y **Paso de firma** para dibujar
 Una vez que seleccione el icono Listo![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) en la ventana Firma manuscrita, no podrá editar la firma. Si desea editar la firma, ignore la firma actual y vuelva a firmar el formulario con las opciones Pincel/Teclado mencionadas anteriormente.
 
 Puede seleccionar el icono **Configurar** ![configurar](assets/configure.png) para establecer la relación de aspecto del lienzo de la firma manuscrita.
+
 * Cuando la relación de aspecto del lienzo de firma manuscrita es menor que 1, la información de geolocalización se agrega en la parte inferior del lienzo de firma manuscrita.
 
 * Cuando la proporción de aspecto del lienzo de firma manuscrita es mayor que 1, la información de geolocalización se agrega en el lado derecho del lienzo de firma manuscrita.
@@ -48,7 +49,6 @@ Puede seleccionar el icono **Configurar** ![configurar](assets/configure.png) pa
 >[!NOTE]
 >
 >Las firmas se guardan siempre en formato PNG.
->
 
 ## Configurar un formulario adaptable para utilizar una firma manuscrita {#configure-an-adaptive-form-to-use-scribble-signature}
 

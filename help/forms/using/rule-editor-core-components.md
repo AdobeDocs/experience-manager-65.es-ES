@@ -5,13 +5,11 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '5734'
+source-wordcount: '5748'
 ht-degree: 81%
-
 ---
-
 # Agregar reglas a componentes principales de un formulario adaptable {#adaptive-forms-rule-editor}
 
 Este artículo contiene las últimas funciones del Editor de reglas de los componentes principales de Forms adaptables, que son:
@@ -536,17 +534,11 @@ Para escribir las reglas, realice los siguientes pasos:
 
 1. Seleccione **[!UICONTROL Listo]** para guardar la regla.
 
-<!--
-1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
+   >[!NOTE]
+   >
+   > Como alternativa, puede escribir una regla Show en el campo Spouse Salary, en lugar de reglas When en el campo Marital Status, para implementar el mismo comportamiento.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
-   -->
-
->[!NOTE]
->
-> Como alternativa, puede escribir una regla Show en el campo Spouse Salary, en lugar de reglas When en el campo Marital Status, para implementar el mismo comportamiento.
-
-![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
+   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
 1. A continuación, escriba una regla para calcular el importe de idoneidad para el préstamo, que es el 50 % del salario total, y muéstrela en el campo Loan Eligibility. Para lograr este resultado, cree reglas **[!UICONTROL Set Value Of]** sobre el campo Loan Eligibility.
 
@@ -611,6 +603,12 @@ También puede utilizar la regla Set Value Of para calcular la idoneidad del pr�
 Puede escribir una regla combinada para controlar la visibilidad del campo Spouse Salary y calcular la idoneidad del préstamo cuando el estado civil sea Married con la condición Else.
 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
+
+<!--
+1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
+
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+-->
 
 
 <!--

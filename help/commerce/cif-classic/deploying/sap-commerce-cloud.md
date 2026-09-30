@@ -1,5 +1,5 @@
 ---
-title: Implementar eCommerce con el Commerce Cloud de SAP
+title: Implementación del comercio electrónico con SAP Commerce Cloud
 description: Obtenga información sobre cómo implementar Adobe Experience Manager eCommerce con SAP Commerce Cloud.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
@@ -10,12 +10,10 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 1%
-
+source-wordcount: '742'
+ht-degree: 2%
 ---
-
-# COMMERCE CLOUD SAP{#sap-commerce-cloud}
+# SAP Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -48,7 +46,7 @@ La extensión hybris de eCommerce Integration Framework se ha actualizado para a
 >
 >* Compatible con las versiones 18.11 y posteriores.
 >* Necesita Java™ 7 para ejecutar el servidor [hybris 5.](https://www.sap.com/products/crm.html)
->* AEM El complemento hybris, [Acelerador de telecomunicaciones](https://www.sap.com/products/crm.html), no es compatible con la extensión de.
+>* El complemento hybris [Telco Accelerator](https://www.sap.com/products/crm.html) no es compatible con la extensión de AEM.
 >
 
 ### Paquetes necesarios para el comercio electrónico con hybris {#packages-needed-for-ecommerce-with-hybris}
@@ -56,26 +54,26 @@ La extensión hybris de eCommerce Integration Framework se ha actualizado para a
 Para instalar la funcionalidad de comercio electrónico, necesita:
 
 * Su servidor hybris
-* AEM Marco de eCommerce de:
+* Marco de AEM eCommerce:
 
-   * AEM esto forma parte de una instalación estándar de la
+  * esto forma parte de una instalación estándar de AEM
 
-* AEM Paquete de todo el Geometrixx:
+* Paquete Geometrixx-all de AEM:
 
-   * `cq-geometrixx-all-pkg`
+  * `cq-geometrixx-all-pkg`
 
-* AEM paquetes de contenido de hybris:
+* Paquetes de contenido de AEM hybris:
 
-   * `cq-hybris-content-6.3.2`
-   * implementación de API específica de hybris
-   * `cq-geometrixx-hybris-content-6.3.2`
-   * una implementación de referencia para ilustrar el uso de hybris ( `geometrixx-outdoors/en_US`)
+  * `cq-hybris-content-6.3.2`
+  * implementación de API específica de hybris
+  * `cq-geometrixx-hybris-content-6.3.2`
+  * una implementación de referencia para ilustrar el uso de hybris ( `geometrixx-outdoors/en_US`)
 
 ### Instalación de comercio electrónico con hybris {#installation-of-ecommerce-with-hybris}
 
 Para instalar una configuración completa (con el catálogo de demostración, Geometrixx Outdoors), los pasos básicos son los siguientes:
 
-1. AEM [Instalar](/help/sites-deploying/deploy.md).
+1. [Instalar AEM](/help/sites-deploying/deploy.md).
 1. Instalación del paquete Geometrixx-all
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
@@ -88,9 +86,9 @@ Para instalar una configuración completa (con el catálogo de demostración, Ge
 1. [Descargue y cree su servidor hybris](#download-and-build-your-hybris-server).
 1. Construya su catálogo en su motor de comercio electrónico:
 
-   1. [Configurar la tienda de Geometrixx para exteriores](#setup-the-geometrixx-outdoors-store).
+   1. [Configurar la Tienda Geometrixx Outdoor](#setup-the-geometrixx-outdoors-store).
 
-1. AEM [Autor](/help/sites-authoring/qg-page-authoring.md) cualquier página adicional que necesite en el trabajo de la creación de la página de la página de la página de la página de la página de la página de la página de la.
+1. [Autor](/help/sites-authoring/qg-page-authoring.md) cualquier página complementaria que necesite en AEM.
 
 >[!CAUTION]
 >
@@ -143,7 +141,7 @@ Los pasos de este procedimiento permiten descargar y crear el servidor hybris. T
    ```
 
 
-[Obtener archivo](/help/sites-deploying/assets/setup.groovy)
+   [Obtener archivo](/help/sites-deploying/assets/setup.groovy)
 
    >[!NOTE]
    >
@@ -151,7 +149,7 @@ Los pasos de este procedimiento permiten descargar y crear el servidor hybris. T
 
    5.6.0 y versiones posteriores
 
-[Obtener archivo](/help/sites-deploying/assets/setup-1.groovy)
+   [Obtener archivo](/help/sites-deploying/assets/setup-1.groovy)
 
 1. Desde la línea de comandos, ejecute lo siguiente en:
 
@@ -182,7 +180,7 @@ Los pasos de este procedimiento permiten descargar y crear el servidor hybris. T
    >
    >En función del sistema, esta operación puede tardar varios minutos en completarse.
 
-### Configuración del almacén de Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
+### Configuración de la Tienda Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
 
 Este procedimiento carga y configura el almacén de demostración: Geometrixx Online.
 
@@ -204,7 +202,7 @@ Este procedimiento carga y configura el almacén de demostración: Geometrixx On
 1. Desde la barra lateral, expanda **Sistema** y **Herramientas**. A continuación, seleccione **Importar** para abrir la ventana **Asistente: Importar CSV**.
 1. En la ficha **Configuración**, **Cargar** el siguiente **archivo de importación**:
 
-[Obtener archivo](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
+   [Obtener archivo](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
 
 1. Establecer la **configuración regional** en:
 
@@ -213,7 +211,7 @@ Este procedimiento carga y configura el almacén de demostración: Geometrixx On
 1. Abra la ficha **Recursos**.
 1. **Cargar** los siguientes **medios-zip**:
 
-[Obtener archivo](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
+   [Obtener archivo](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
 1. Haga clic en **Iniciar** para importar los archivos especificados. La ficha **Result** muestra las entradas de registro.
 
@@ -223,11 +221,11 @@ Este procedimiento carga y configura el almacén de demostración: Geometrixx On
 
 1. **Cargar** el siguiente **archivo de importación**:
 
-[Obtener archivo](/help/sites-deploying/assets/base-store.csv)
+   [Obtener archivo](/help/sites-deploying/assets/base-store.csv)
 
    Para hybris 5.7, utilice lo siguiente:
 
-[Obtener archivo](/help/sites-deploying/assets/base-store-5_7.csv)
+   [Obtener archivo](/help/sites-deploying/assets/base-store-5_7.csv)
 
 1. Establecer la **configuración regional** en:
 

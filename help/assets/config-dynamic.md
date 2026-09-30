@@ -12,13 +12,11 @@ role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '8511'
+source-wordcount: '8519'
 ht-degree: 4%
-
 ---
-
 # Configuración de Dynamic Media, modo híbrido {#configuring-dynamic-media-hybrid-mode}
 
 ## Dynamic Media: paquete de complemento híbrido (AEM 6.5.23 y posterior)
@@ -239,7 +237,7 @@ Para habilitar Dynamic Media, debe habilitar el modo de ejecución de Dynamic Me
    >
    >Ejemplo de nombre de archivo de registro de Image Server: `ImageServer-57346-2020-07-25.log`
    >
-   >* s7access-&lt;yyyy>&lt;mm>&lt;dd>.log: El registro de acceso de s7registra todas las solicitudes realizadas a Dynamic Media mediante `/is/image` y `/is/content`.
+   >* s7access-&lt;yyyy>&lt;mm>&lt;dd>.log: el registro de acceso de s7registra todas las solicitudes realizadas a Dynamic Media a través de `/is/image` y `/is/content`.
    >
    >Estos registros solo se utilizan cuando Dynamic Media está habilitado. No se incluyen en el paquete **Descargar completo** que se genera desde la página `system/console/status-Bundlelist`; cuando llame a la atención al cliente si tiene un problema de Dynamic Media, anexe ambos registros al problema.
 
@@ -629,7 +627,7 @@ Asegúrese de que se puede acceder al paquete de ajustes preestablecidos de Vide
 1. Realice una de las siguientes acciones para verificar y, si es necesario, depurar la instalación del paquete:
 
    * **Compruebe el ajuste preestablecido de Video Analytics mediante el JCR**
-Para comprobar el ajuste preestablecido de Video Analytics mediante el JCR, debe tener acceso a CRXDE Lite.
+     Para comprobar el ajuste preestablecido de Video Analytics mediante el JCR, debe tener acceso a CRXDE Lite.
 
      Experience Manager: en CRXDE Lite, vaya a `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
@@ -640,7 +638,7 @@ Para comprobar el ajuste preestablecido de Video Analytics mediante el JCR, debe
    * **Compruebe el ajuste preestablecido de Video Analytics a través del servidor de imágenes**
 
      Puede validar el ajuste preestablecido de Video Analytics directamente realizando una solicitud req=userdata de Image Server.
-Por ejemplo, para ver el ajuste preestablecido de Analytics en el nodo Autor, puede realizar la siguiente solicitud:
+     Por ejemplo, para ver el ajuste preestablecido de Analytics en el nodo Autor, puede realizar la siguiente solicitud:
 
      `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
@@ -654,7 +652,7 @@ Por ejemplo, para ver el ajuste preestablecido de Analytics en el nodo Autor, pu
      ```
 
    * **Compruebe el ajuste preestablecido de Video Analytics con la herramienta Informes de vídeo en Experience Manager**
-Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo]**
+     Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -946,46 +944,46 @@ Configuración de tabla de manifiesto y sus valores predeterminados:
 | `maxpix` | `2000,2000` | Límite de tamaño de imagen de respuesta. Anchura y altura máximas para la imagen de respuesta que se devuelve al cliente.<br>El servidor devuelve un error si una solicitud genera una imagen de respuesta cuya anchura o altura sea mayor que el atributo::MaxPix.<br>Vea también [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=es#image-serving-api) en la API del servicio de imágenes. |
 | `resmode` | `SHARP2` | Modo de remuestreo predeterminado. Especifica los atributos predeterminados de remuestreo e interpolación que se utilizarán para escalar los datos de imagen.<br>Se usa cuando `resMode=` no se especifica en una solicitud.<br>Los valores permitidos incluyen `BILIN`, `BICUB` o `SHARP2`.<br>Enum. Establezca como 2 para `bilin`, 3 para `bicub` o 4 para el modo de interpolación `sharp2`. Use `sharp2` para obtener mejores resultados.<br>Consulte también [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=es#image-serving-api) en la API de servicio de imágenes. |
 | `resolution` | `72` | Resolución de objeto predeterminada. Proporciona una resolución de objeto predeterminada en el caso de que el valor de catálogo::Resolution no sea válido en un registro de catálogo determinado.<br>Número real, mayor que 0. Normalmente se expresa como píxeles por pulgada, pero también puede expresarse en otras unidades, como píxeles por metro.<br>Consulte también [Resolución](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=es#image-serving-api) en la API del servicio de imágenes. |
-| `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | These values represent a snapshot of video playtime and are passed to [encoding.com](https://www.encoding.com/). See [About video thumbnail](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) for more information. |
+| `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Estos valores representan una instantánea del tiempo de reproducción del vídeo y se pasan a [encoding.com](https://www.encoding.com/). Consulte [Acerca de la miniatura de vídeo](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) para obtener más información. |
 
-## Configuring Dynamic Media Color Management {#configuring-dynamic-media-color-management}
+## Configuración de la administración de color de Dynamic Media {#configuring-dynamic-media-color-management}
 
-Dynamic Media color management lets you color correct assets for previewing.
+La administración de color de Dynamic Media le permite corregir el color de los recursos para previsualizarlos.
 
-With color correction, ingested assets retain their color space (RGB, CMYK, Gray) and embedded color profile in the generated pyramid TIFF rendition. When you request a dynamic rendition, the image color is corrected into the target color space. You configure the output color profile in the Dynamic Media publish settings in the JCR.
+Con la corrección de color, los recursos ingeridos conservan su espacio de color (RGB, CMYK, gris) y el perfil de color incrustado en la representación piramidal de TIFF generada. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino. El perfil de color de salida se configura en la configuración de publicación de Dynamic Media en el JCR.
 
-Adobe&#39;s color management uses ICC (International Color Consortium) profiles, a format defined by the  ICC.
+La gestión del color de Adobe utiliza perfiles ICC (International Color Consortium), un formato definido por ICC.
 
-You can configure Dynamic Media color management and configure image presets using CMYK, RGB, or Gray output. See [Configuring Image Presets](/help/assets/managing-image-presets.md).
+Puede configurar la administración de color de Dynamic Media y los ajustes preestablecidos de imagen mediante la salida CMYK, RGB o Gris. Consulte [Configuración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md).
 
-Advanced use cases could use a manual configure `icc=` modifier to explicitly select an output color profile:
+Los casos de uso avanzados podrían utilizar un modificador `icc=` de configuración manual para seleccionar explícitamente un perfil de color de salida:
 
-* `icc` – [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=es)
+* `icc` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=es)
 
-* `iccEmbed` – [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=es)
+* `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=es)
 
 >[!NOTE]
 >
->The standard set of Adobe&#39;s color profiles is only available if you have [Feature Pack 12445 from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installed. All feature packs and service packs are available at [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). Feature Pack 12445 provides Adobe&#39;s color profiles.
+>El conjunto estándar de perfiles de color de Adobe solo está disponible si tiene instalado [Feature Pack 12445 de Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445). Todos los paquetes de funciones y paquetes de servicio están disponibles en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). Feature Pack 12445 proporciona los perfiles de color de Adobe.
 
 
-### Installing Feature Pack 12445 {#installing-feature-pack}
+### Instalación del paquete de funciones 12445 {#installing-feature-pack}
 
-To use the Dynamic Media color management capabilities, install feature pack 12445.
+Para utilizar las funcionalidades de administración de color de Dynamic Media, instale el paquete de funciones 12445.
 
-**To install feature pack 12445:**
+**Para instalar el paquete de funciones 12445:**
 
-1. Navigate to [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) and download either `cq-6.3.0-featurepack-12445`.
+1. Vaya a [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) y descargue `cq-6.3.0-featurepack-12445`.
 
-   See [How to work with packages](/help/sites-administering/package-manager.md) for more information on using packages in [!DNL Adobe Experience Manager].
+   Consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md) para obtener más información sobre cómo usar paquetes en [!DNL Adobe Experience Manager].
 
-1. Install the feature pack.
+1. Instale el paquete de funciones.
 
-### Configuring the default color profiles {#configuring-the-default-color-profiles}
+### Configuración de los perfiles de color predeterminados {#configuring-the-default-color-profiles}
 
-After you install the feature pack, configure the appropriate default color profiles to enable color correction when requesting RGB or CMYK image data.
+Después de instalar el paquete de funciones, configure los perfiles de color predeterminados adecuados para habilitar la corrección de color al solicitar datos de imagen RGB o CMYK.
 
-**To configure the default color profiles:**
+**Para configurar los perfiles de color predeterminados:**
 
 1. En **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**, vaya a `/conf/global/settings/dam/dm/imageserver/jcr:content` que contiene los perfiles de Adobe Color predeterminados.
 
@@ -1001,248 +999,248 @@ After you install the feature pack, configure the appropriate default color prof
 
    **Tabla de propiedades de corrección de color**
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propiedad</strong></td>
-   <td><strong>Tipo</strong></td>
-   <td><strong>Predeterminado</strong></td>
-   <td><strong>Descripción</strong></td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=es">iccprofilergb</a></td>
-   <td>Cadena</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nombre del perfil de color predeterminado de RGB.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=es">iccprofilecmyk</a></td>
-   <td>Cadena</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nombre del perfil de color CMYK predeterminado.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=es">iccprofilegray</a></td>
-   <td>Cadena</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nombre del perfil de color gris predeterminado.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=es">iccprofilesrcrgb</a></td>
-   <td>Cadena</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nombre del perfil de color predeterminado de RGB utilizado para las imágenes de RGB que no tienen un perfil de color incrustado</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=es">iccprofilesrccmyk</a></td>
-   <td>Cadena</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nombre del perfil de color CMYK predeterminado utilizado para imágenes CMYK que no tienen un perfil de color incrustado.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=es">iccprofilesrcgray</a></td>
-   <td>Cadena</td>
-   <td>&lt;empty&gt;</td>
-   <td>Nombre del perfil de color gris predeterminado utilizado para imágenes CMYK que no tienen un perfil de color incrustado.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=es">iccblackpointcompensación</a></td>
-   <td>Booleano</td>
-   <td>Verdadero</td>
-   <td>Especifica si la compensación del punto negro se realiza durante la corrección de color. Adobe recomienda que esta configuración esté activada.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=es">icoditera</a></td>
-   <td>Booleano</td>
-   <td>Falso</td>
-   <td>Especifica si el tramado se realiza durante la corrección de color.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=es">iccrenderIntent</a></td>
-   <td>Cadena</td>
-   <td>relativo</td>
-   <td><p>Especifica la intención de procesamiento. Los valores aceptables son: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recomienda <strong>relativo </strong><i></i> como valor predeterminado.</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Propiedad</strong></td>
+      <td><strong>Tipo</strong></td>
+      <td><strong>Predeterminado</strong></td>
+      <td><strong>Descripción</strong></td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=es">iccprofilergb</a></td>
+      <td>Cadena</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nombre del perfil de color predeterminado de RGB.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=es">iccprofilecmyk</a></td>
+      <td>Cadena</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nombre del perfil de color CMYK predeterminado.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=es">iccprofilegray</a></td>
+      <td>Cadena</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nombre del perfil de color gris predeterminado.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=es">iccprofilesrcrgb</a></td>
+      <td>Cadena</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nombre del perfil de color predeterminado de RGB utilizado para las imágenes de RGB que no tienen un perfil de color incrustado</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=es">iccprofilesrccmyk</a></td>
+      <td>Cadena</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nombre del perfil de color CMYK predeterminado utilizado para imágenes CMYK que no tienen un perfil de color incrustado.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=es">iccprofilesrcgray</a></td>
+      <td>Cadena</td>
+      <td>&lt;empty&gt;</td>
+      <td>Nombre del perfil de color gris predeterminado utilizado para imágenes CMYK que no tienen un perfil de color incrustado.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=es">iccblackpointcompensación</a></td>
+      <td>Booleano</td>
+      <td>Verdadero</td>
+      <td>Especifica si la compensación del punto negro se realiza durante la corrección de color. Adobe recomienda que esta configuración esté activada.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=es">icoditera</a></td>
+      <td>Booleano</td>
+      <td>Falso</td>
+      <td>Especifica si el tramado se realiza durante la corrección de color.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=es">iccrenderIntent</a></td>
+      <td>Cadena</td>
+      <td>relativo</td>
+      <td><p>Especifica la intención de procesamiento. Los valores aceptables son: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recomienda <strong>relativo </strong><i></i> como valor predeterminado.</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Los nombres de propiedad distinguen entre mayúsculas y minúsculas y deben estar en minúscula.
+   >[!NOTE]
+   >
+   >Los nombres de propiedad distinguen entre mayúsculas y minúsculas y deben estar en minúscula.
 
-**Tabla de perfiles de color**
+   **Tabla de perfiles de color**
 
-Se instalan los siguientes perfiles de color:
+   Se instalan los siguientes perfiles de color:
 
-<table>
- <tbody>
-  <tr>
-   <th><p>Nombre</p> </th>
-   <th><p>Ritmo de colores</p> </th>
-   <th><p>Descripción</p> </th>
-  </tr>
-  <tr>
-   <td>Adobe RGB</td>
-   <td>RGB</td>
-   <td>Adobe RGB (1998)</td>
-  </tr>
-  <tr>
-   <td>AppleRGB</td>
-   <td>RGB</td>
-   <td>Apple RGB</td>
-  </tr>
-  <tr>
-   <td>CIERGB</td>
-   <td>RGB</td>
-   <td>CIE RGB</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra27</td>
-   <td>CMYK</td>
-   <td>FOGRA27 recubierto (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra39</td>
-   <td>CMYK</td>
-   <td>FOGRA39 recubierto (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedGraCol</td>
-   <td>CMYK</td>
-   <td>Revestido GRACoL 2006 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>ColorMatchRGB</td>
-   <td>RGB</td>
-   <td>ColorMatch RGB</td>
-  </tr>
-  <tr>
-   <td>EuropeISOCoated</td>
-   <td>CMYK</td>
-   <td>Europa ISO Coated FOGRA27</td>
-  </tr>
-  <tr>
-   <td>EuroscaleCoated</td>
-   <td>CMYK</td>
-   <td>Euro scale Coated v2</td>
-  </tr>
-  <tr>
-   <td>EuroscaleUncovered</td>
-   <td>CMYK</td>
-   <td>Escala de euro sin recubrir v2</td>
-  </tr>
-  <tr>
-   <td>JapanColorCoated</td>
-   <td>CMYK</td>
-   <td>Japón Color 2001 Revestido</td>
-  </tr>
-  <tr>
-   <td>JapanColorNewspaper</td>
-   <td>CMYK</td>
-   <td>Japón Color 2002 Periódico</td>
-  </tr>
-  <tr>
-   <td>JapanColorUncovered</td>
-   <td>CMYK</td>
-   <td>Japón Color 2001 Sin recubrimiento</td>
-  </tr>
-  <tr>
-   <td>JapanColorWebCoated</td>
-   <td>CMYK</td>
-   <td>Japón Color 2003 Web Coated</td>
-  </tr>
-  <tr>
-   <td>JapanWebCoated</td>
-   <td>CMYK</td>
-   <td>Japón Web Coated (Ad)</td>
-  </tr>
-  <tr>
-   <td>NewsprintSNAP2007</td>
-   <td>CMYK</td>
-   <td>Boletín de Estados Unidos (SNAP 2007)</td>
-  </tr>
-  <tr>
-   <td>NTSC</td>
-   <td>RGB</td>
-   <td>NTSC (1953)</td>
-  </tr>
-  <tr>
-   <td>AMIGO</td>
-   <td>RGB</td>
-   <td>PAL/SECAM</td>
-  </tr>
-  <tr>
-   <td>ProPhoto</td>
-   <td>RGB</td>
-   <td>ProPhoto RGB</td>
-  </tr>
-  <tr>
-   <td>PS4Predeterminado</td>
-   <td>CMYK</td>
-   <td>CMYK predeterminado de Photoshop 4</td>
-  </tr>
-  <tr>
-   <td>PS5Default</td>
-   <td>CMYK</td>
-   <td>CMYK predeterminado de Photoshop 5</td>
-  </tr>
-  <tr>
-   <td>Revestido Con Hojas</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Coated v2</td>
-  </tr>
-  <tr>
-   <td>Con hojasSin recubrir</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Uncovered v2</td>
-  </tr>
-  <tr>
-   <td>SMPTE</td>
-   <td>RGB</td>
-   <td>SMPTE-C</td>
-  </tr>
-  <tr>
-   <td>sRGB</td>
-   <td>RGB</td>
-   <td>sRGB IEC61966-2.1</td>
-  </tr>
-  <tr>
-   <td>Fogra29 sin recubrimiento</td>
-   <td>CMYK</td>
-   <td>FOGRA29 sin recubrimiento (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoated</td>
-   <td>CMYK</td>
-   <td>U.S. Web Coated (SWOP) v2</td>
-  </tr>
-  <tr>
-   <td>WebCoatedFogra28</td>
-   <td>CMYK</td>
-   <td>Revestimiento Web FOGRA28 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade3</td>
-   <td>CMYK</td>
-   <td>Papel SWOP 2006 Grado 3 Revestido por Web</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade5</td>
-   <td>CMYK</td>
-   <td>Papel SWOP 2006 Grado 5 Revestido por Web</td>
-  </tr>
-  <tr>
-   <td>WebUncovered</td>
-   <td>CMYK</td>
-   <td>U.S. Web Uncovered v2</td>
-  </tr>
-  <tr>
-   <td>WideGamutRGB</td>
-   <td>RGB</td>
-   <td>RGB de gama amplia</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <th><p>Nombre</p> </th>
+      <th><p>Ritmo de colores</p> </th>
+      <th><p>Descripción</p> </th>
+   </tr>
+   <tr>
+      <td>Adobe RGB</td>
+      <td>RGB</td>
+      <td>Adobe RGB (1998)</td>
+   </tr>
+   <tr>
+      <td>AppleRGB</td>
+      <td>RGB</td>
+      <td>Apple RGB</td>
+   </tr>
+   <tr>
+      <td>CIERGB</td>
+      <td>RGB</td>
+      <td>CIE RGB</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra27</td>
+      <td>CMYK</td>
+      <td>FOGRA27 recubierto (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra39</td>
+      <td>CMYK</td>
+      <td>FOGRA39 recubierto (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedGraCol</td>
+      <td>CMYK</td>
+      <td>Revestido GRACoL 2006 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>ColorMatchRGB</td>
+      <td>RGB</td>
+      <td>ColorMatch RGB</td>
+   </tr>
+   <tr>
+      <td>EuropeISOCoated</td>
+      <td>CMYK</td>
+      <td>Europa ISO Coated FOGRA27</td>
+   </tr>
+   <tr>
+      <td>EuroscaleCoated</td>
+      <td>CMYK</td>
+      <td>Euro scale Coated v2</td>
+   </tr>
+   <tr>
+      <td>EuroscaleUncovered</td>
+      <td>CMYK</td>
+      <td>Escala de euro sin recubrir v2</td>
+   </tr>
+   <tr>
+      <td>JapanColorCoated</td>
+      <td>CMYK</td>
+      <td>Japón Color 2001 Revestido</td>
+   </tr>
+   <tr>
+      <td>JapanColorNewspaper</td>
+      <td>CMYK</td>
+      <td>Japón Color 2002 Periódico</td>
+   </tr>
+   <tr>
+      <td>JapanColorUncovered</td>
+      <td>CMYK</td>
+      <td>Japón Color 2001 Sin recubrimiento</td>
+   </tr>
+   <tr>
+      <td>JapanColorWebCoated</td>
+      <td>CMYK</td>
+      <td>Japón Color 2003 Web Coated</td>
+   </tr>
+   <tr>
+      <td>JapanWebCoated</td>
+      <td>CMYK</td>
+      <td>Japón Web Coated (Ad)</td>
+   </tr>
+   <tr>
+      <td>NewsprintSNAP2007</td>
+      <td>CMYK</td>
+      <td>Boletín de Estados Unidos (SNAP 2007)</td>
+   </tr>
+   <tr>
+      <td>NTSC</td>
+      <td>RGB</td>
+      <td>NTSC (1953)</td>
+   </tr>
+   <tr>
+      <td>AMIGO</td>
+      <td>RGB</td>
+      <td>PAL/SECAM</td>
+   </tr>
+   <tr>
+      <td>ProPhoto</td>
+      <td>RGB</td>
+      <td>ProPhoto RGB</td>
+   </tr>
+   <tr>
+      <td>PS4Predeterminado</td>
+      <td>CMYK</td>
+      <td>CMYK predeterminado de Photoshop 4</td>
+   </tr>
+   <tr>
+      <td>PS5Default</td>
+      <td>CMYK</td>
+      <td>CMYK predeterminado de Photoshop 5</td>
+   </tr>
+   <tr>
+      <td>Revestido Con Hojas</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Coated v2</td>
+   </tr>
+   <tr>
+      <td>Con hojasSin recubrir</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Uncovered v2</td>
+   </tr>
+   <tr>
+      <td>SMPTE</td>
+      <td>RGB</td>
+      <td>SMPTE-C</td>
+   </tr>
+   <tr>
+      <td>sRGB</td>
+      <td>RGB</td>
+      <td>sRGB IEC61966-2.1</td>
+   </tr>
+   <tr>
+      <td>Fogra29 sin recubrimiento</td>
+      <td>CMYK</td>
+      <td>FOGRA29 sin recubrimiento (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Web Coated (SWOP) v2</td>
+   </tr>
+   <tr>
+      <td>WebCoatedFogra28</td>
+      <td>CMYK</td>
+      <td>Revestimiento Web FOGRA28 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade3</td>
+      <td>CMYK</td>
+      <td>Papel SWOP 2006 Grado 3 Revestido por Web</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade5</td>
+      <td>CMYK</td>
+      <td>Papel SWOP 2006 Grado 5 Revestido por Web</td>
+   </tr>
+   <tr>
+      <td>WebUncovered</td>
+      <td>CMYK</td>
+      <td>U.S. Web Uncovered v2</td>
+   </tr>
+   <tr>
+      <td>WideGamutRGB</td>
+      <td>RGB</td>
+      <td>RGB de gama amplia</td>
+   </tr>
+   </tbody>
+   </table>
 
 1. Seleccione **[!UICONTROL Guardar todo]**.
 

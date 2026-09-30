@@ -1,21 +1,23 @@
 ---
 title: Optimización de rendimiento
+
 description: Aprenda a configurar ciertos aspectos de AEM para optimizar el rendimiento.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
+
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '6649'
 ht-degree: 14%
-
 ---
-
 # Optimización de rendimiento {#performance-optimization}
 
 >[!NOTE]

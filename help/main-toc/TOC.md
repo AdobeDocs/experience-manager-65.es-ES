@@ -10,9 +10,7 @@ source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
 workflow-type: tm+mt
 source-wordcount: '8300'
 ht-degree: 95%
-
 ---
-
 
 # Documentación de Adobe Experience Manager 6.5 {#content}
 
@@ -61,7 +59,7 @@ ht-degree: 95%
   + [Creación de un grupo de usuarios cerrado](/help/sites-administering/cug.md)
   + [Mitigación de problemas de serialización en AEM](/help/sites-administering/mitigating-serialization-issues.md)
   + [Sincronización de usuarios](/help/sites-administering/sync.md)
-  + [Compatibilidad con tókenes encapsulados](/help/sites-administering/encapsulated-token.md)
+  + [Compatibilidad con tokens encapsulados](/help/sites-administering/encapsulated-token.md)
   + [Inicio de sesión único](/help/sites-deploying/single-sign-on.md)
   + [Cómo auditar las operaciones de administración de usuarios en AEM](/help/sites-administering/audit-user-management-operations.md)
   + [SSL predeterminado](/help/sites-administering/ssl-by-default.md)
@@ -1011,7 +1009,7 @@ ht-degree: 95%
       + [Configurar la autenticación extendida desde un explorador externo para la seguridad de los documentos](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md)
       + [Administrar cuentas de usuario invitadas y locales](/help/forms/using/admin-help/invited-local-user-accounts.md)
       + [Controlar el acceso a documentos protegidos por directivas](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
-      + [Supervisar eventos](/help/forms/using/admin-help/monitoring-events.md)
+      + [Monitorizar eventos](/help/forms/using/admin-help/monitoring-events.md)
       + [Crear y administrar directivas](/help/forms/using/admin-help/creating-policies.md)
       + [Usar las páginas web de seguridad de los documentos](/help/forms/using/admin-help/using-document-security-web-pages.md)
       + [Crear y administrar conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
@@ -1061,7 +1059,7 @@ ht-degree: 95%
     + Mantenimiento de AEM Forms {#maintain-aem-forms}
       + [Archivos de registro](/help/forms/using/admin-help/log-files.md)
       + [Administración de usuarios](/help/forms/using/admin-help/user-management.md)
-      + [Supervisar las implementaciones de AEM Forms](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
+      + [Monitorizar las implementaciones de AEM Forms](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
       + [Administrador de trabajo y regulación](/help/forms/using/admin-help/manager-throttling.md)
       + [Ejecutar AEM Forms en modo de mantenimiento](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
     + Mantenimiento de la base de datos de AEM Forms {#maintain-aem-forms-database}
