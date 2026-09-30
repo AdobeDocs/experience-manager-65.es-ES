@@ -1,22 +1,25 @@
 ---
 title: Propiedades de configuración de comunicaciones interactivas
+
 description: Editar propiedades de configuración predeterminadas para comunicaciones interactivas
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: interactive-communications
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '614'
 ht-degree: 82%
-
 ---
-
 # Propiedades de configuración de comunicaciones interactivas{#interactive-communications-configuration-properties}
 
 Comunicaciones interactivas incluye propiedades que se configuran automáticamente después de instalar el paquete de [complementos de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Los autores de comunicaciones interactivas pueden editar estas propiedades de configuración predeterminadas mediante la página **Configuración de la consola web de Adobe Experience Manager**.
@@ -46,7 +49,7 @@ Seleccione **Configuración de fragmentos de documento** en la página **Configu
   </tr> 
   <tr> 
    <td>Formatos de visualización de datos</td> 
-   <td>El formato de visualización específico de la configuración regional para los campos, las variables y los elementos del modelo de datos de formulario disponibles al crear una comunicación interactiva para los canales impreso y web.</td> 
+   <td>El formato de visualización específico de la configuración regional para los campos, las variables y los elementos del modelo de datos de formulario disponibles al crear una comunicación interactiva para los canales web y de impresión.</td> 
    <td> 
     <ul> 
      <li>configuración regional = en_US, de_DE, fr_FR y ja_JP</li> 
@@ -104,7 +107,7 @@ Seleccione **Crear configuración de correspondencia** en la página **Configura
   </tr> 
   <tr> 
    <td>Habilitar incrustación de fuentes en PDF</td> 
-   <td><p>Seleccione la casilla de verificación para activar la incrustación de fuentes en los documentos PDF. Después de seleccionar esta opción, puede incrustar nuevas fuentes después de generar o previsualizar los documentos PDF mediante la interfaz de usuario del agente. Utilice el canal de impresión de la comunicación interactiva para generar y previsualizar documentos PDF.</p> <p>La incrustación de fuentes en un documento PDF resulta útil si una fuente está disponible en el equipo que se utiliza para generar el PDF y no está disponible en el equipo cliente que accede a él.</p> <p>Para obtener más información sobre cómo incrustar fuentes, consulte <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizar editor de texto</a>.</p> </td> 
+   <td><p>Seleccione la casilla de verificación para habilitar la incrustación de fuentes en los documentos PDF. Después de seleccionar esta opción, puede incrustar nuevas fuentes después de generar o previsualizar los documentos PDF mediante la interfaz de usuario del agente. Utilice el canal de impresión de la comunicación interactiva para generar y previsualizar documentos PDF.</p> <p>La incrustación de fuentes en un documento PDF resulta útil si una fuente está disponible en el equipo que se utiliza para generar el PDF y no está disponible en el equipo cliente que accede a él.</p> <p>Para obtener más información sobre cómo incrustar fuentes, consulte <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizar editor de texto</a>.</p> </td> 
    <td>No seleccionado</td> 
    <td>No aplicable</td> 
   </tr> 
@@ -113,11 +116,11 @@ Seleccione **Crear configuración de correspondencia** en la página **Configura
 
 ## Configuración del canal web de comunicaciones interactivas y formularios adaptables {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Seleccione **Configuración del canal web de comunicaciones interactivas y formularios adaptables** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración del canal web de comunicaciones interactivas y Forms adaptable. En la siguiente tabla se describen las propiedades relacionadas con Interactive Communications:
+Seleccione **Configuración del canal web de comunicaciones interactivas y formularios adaptables** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración del canal web de comunicaciones interactivas y Forms adaptable. En la siguiente tabla se describen las propiedades relacionadas con Comunicaciones interactivas:
 
 | Propiedad | Descripción | Predeterminado | Valores aceptables |
 |---|---|---|---|
-| Mostrar marcador de posición | Seleccione la casilla de verificación para activar la visualización de los marcadores de posición de los campos incluidos en los formularios adaptables y las comunicaciones interactivas. | Seleccionado | No aplicable |
+| Mostrar marcador de posición | Seleccione la casilla de verificación para habilitar la visualización de los marcadores de posición de los campos incluidos en los formularios adaptables y las comunicaciones interactivas. | Seleccionado | No aplicable |
 | Número máximo de entradas de caché | Establezca el número máximo de formularios adaptables y comunicaciones interactivas que se pueden recuperar mediante la memoria caché. | 100 | Número |
 | Convertir el nombre de archivo en único | Seleccione la casilla de verificación para asignar un nombre único a los archivos agregados como archivos adjuntos en los formularios adaptables y las comunicaciones interactivas. | No seleccionado | No aplicable |
 

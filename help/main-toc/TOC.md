@@ -10,9 +10,7 @@ source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
 workflow-type: tm+mt
 source-wordcount: '8300'
 ht-degree: 95%
-
 ---
-
 
 # Documentación de Adobe Experience Manager 6.5 {#content}
 
@@ -61,7 +59,7 @@ ht-degree: 95%
   + [Creación de un grupo de usuarios cerrado](/help/sites-administering/cug.md)
   + [Mitigación de problemas de serialización en AEM](/help/sites-administering/mitigating-serialization-issues.md)
   + [Sincronización de usuarios](/help/sites-administering/sync.md)
-  + [Compatibilidad con tókenes encapsulados](/help/sites-administering/encapsulated-token.md)
+  + [Compatibilidad con tokens encapsulados](/help/sites-administering/encapsulated-token.md)
   + [Inicio de sesión único](/help/sites-deploying/single-sign-on.md)
   + [Cómo auditar las operaciones de administración de usuarios en AEM](/help/sites-administering/audit-user-management-operations.md)
   + [SSL predeterminado](/help/sites-administering/ssl-by-default.md)
@@ -448,7 +446,7 @@ ht-degree: 95%
     + [[!DNL Assets] y MediaLibrary](/help/assets/medialibrary.md)
     + [Usar rasterizador de PDF](/help/assets/aem-pdf-rasterizer.md)
     + [Configurar restricciones de carga](/help/assets/configuring-asset-upload-restrictions.md)
-    + [Integración de [!DNL Experience Manager] y  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+    + [Integración de [!DNL Experience Manager] y  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
     + [Integrar con  [!DNL InDesign Server]](/help/assets/indesign.md)
     + [Digital Rights Management para recursos](/help/assets/drm.md)
     + [Uso del paquete de demostración para perspectivas de recursos](/help/assets/use-demo-package-for-asset-insights.md)
@@ -570,7 +568,7 @@ ht-degree: 95%
       + [Configurar la caché de los formularios adaptables](/help/forms/using/configure-adaptive-forms-cache.md)
       + [Configurar AEM DS](/help/forms/using/configuring-the-processing-server-url.md)
       + [Configurar el planificador de sincronización](/help/forms/using/configure-synchronization-scheduler.md)
-      + [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/es_ES/AEMForms/6.1/SharePointConfig/index.html)
+      + [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Conectar AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
       + [Configurar AEM Forms para enviar datos de formulario a un proceso de AEM Forms en JEE](/help/forms/using/submit-form-data-livecycle-process.md)
       + [Aplicación de escritorio para AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
@@ -881,9 +879,9 @@ ht-degree: 95%
     + [Proteger un documento en nombre de otro usuario](/help/forms/using/protect-document-on-behalf-of-another-user.md)
   + Forms Designer {#use-forms-designer}
     + [Ayuda de Forms Designer](/help/forms/using/forms-designer-help.md)
-    + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)
-    + [Tutoriales de inicio rápido de Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
-    + [Muestras de Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65_es)
+    + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
+    + [Tutoriales de inicio rápido de Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+    + [Muestras de Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
     + [Conceptos básicos de scripts Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_es)
     + [Referencia de scripts de Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_es)
     + [Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
@@ -1011,7 +1009,7 @@ ht-degree: 95%
       + [Configurar la autenticación extendida desde un explorador externo para la seguridad de los documentos](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md)
       + [Administrar cuentas de usuario invitadas y locales](/help/forms/using/admin-help/invited-local-user-accounts.md)
       + [Controlar el acceso a documentos protegidos por directivas](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
-      + [Supervisar eventos](/help/forms/using/admin-help/monitoring-events.md)
+      + [Monitorizar eventos](/help/forms/using/admin-help/monitoring-events.md)
       + [Crear y administrar directivas](/help/forms/using/admin-help/creating-policies.md)
       + [Usar las páginas web de seguridad de los documentos](/help/forms/using/admin-help/using-document-security-web-pages.md)
       + [Crear y administrar conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
@@ -1061,7 +1059,7 @@ ht-degree: 95%
     + Mantenimiento de AEM Forms {#maintain-aem-forms}
       + [Archivos de registro](/help/forms/using/admin-help/log-files.md)
       + [Administración de usuarios](/help/forms/using/admin-help/user-management.md)
-      + [Supervisar las implementaciones de AEM Forms](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
+      + [Monitorizar las implementaciones de AEM Forms](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
       + [Administrador de trabajo y regulación](/help/forms/using/admin-help/manager-throttling.md)
       + [Ejecutar AEM Forms en modo de mantenimiento](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
     + Mantenimiento de la base de datos de AEM Forms {#maintain-aem-forms-database}
