@@ -1,6 +1,6 @@
 ---
-title: El administrador de paquetes
-description: AEM Conozca los conceptos básicos de la administración de paquetes de con el Administrador de paquetes.
+title: Administrador de paquetes
+description: Conozca los conceptos básicos de la administración de paquetes de AEM con el Administrador de paquetes.
 feature: Administering
 role: Admin
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,15 @@ exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 1%
-
+source-wordcount: '3576'
+ht-degree: 2%
 ---
 
-
-# El administrador de paquetes {#working-with-packages}
+# Administrador de paquetes {#working-with-packages}
 
 Los paquetes permiten importar y exportar el contenido del repositorio. Puede utilizar paquetes para instalar contenido nuevo, instalar funcionalidad nueva, transferir contenido entre instancias y realizar copias de seguridad del contenido del repositorio.
 
-AEM Con el Administrador de paquetes, puede transferir paquetes entre la instancia de y el sistema de archivos local para fines de desarrollo.
+Con el Administrador de paquetes, puede transferir paquetes entre la instancia de AEM y el sistema de archivos local para fines de desarrollo.
 
 ## ¿Qué son los paquetes? {#what-are-packages}
 
@@ -31,11 +29,11 @@ Un paquete también contiene metainformación de Vault, incluidas las definicion
 
 >[!NOTE]
 >
->Los paquetes representan la versión actual del contenido en el momento en que se crea el paquete. AEM No incluyen ninguna versión anterior del contenido que se mantiene en el repositorio de la que se haya hecho clic en el botón de la barra de herramientas de la aplicación de la aplicación de la aplicación de la.
+>Los paquetes representan la versión actual del contenido en el momento en que se crea el paquete. No incluyen ninguna versión anterior del contenido que AEM mantiene en el repositorio.
 
-## El administrador de paquetes {#package-manager}
+## Administrador de paquetes {#package-manager}
 
-AEM El Administrador de paquetes administra los paquetes en la instalación de la. Una vez que [haya asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager), podrá usar el Administrador de paquetes para diversas acciones, como configurar, generar, descargar e instalar los paquetes.
+El Administrador de paquetes administra los paquetes en la instalación de AEM. Una vez que [haya asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager), podrá usar el Administrador de paquetes para diversas acciones, como configurar, generar, descargar e instalar los paquetes.
 
 ### Permisos necesarios {#required-permissions}
 
@@ -54,8 +52,8 @@ Para crear, modificar, cargar e instalar paquetes, los usuarios deben tener los 
 
 Puede acceder al Administrador de paquetes de tres formas:
 
-1. AEM Desde el menú principal de la > **Herramientas** > **Implementación** > **Paquetes**
-1. De [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) mediante la barra de conmutación superior
+1. En el menú principal de AEM > **Herramientas** > **Implementación** > **Paquetes**
+1. Desde [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) con la barra de cambio superior
 1. Accediendo directamente a `http://<host>:<port>/crx/packmgr/`
 
 ### IU del Administrador de paquetes {#ui}
@@ -65,8 +63,8 @@ El Administrador de paquetes se divide en cuatro áreas funcionales principales:
 * **Panel de navegación izquierdo**: este panel le permite filtrar y ordenar la lista de paquetes.
 * **Lista de paquetes**: esta es la lista de paquetes de su instancia filtrados y ordenados por selecciones en el panel de navegación izquierdo.
 * **Registro de actividad**: este panel se minimiza al principio y se amplía para detallar la actividad del Administrador de paquetes, como cuándo se crea o instala un paquete. Hay botones adicionales en la pestaña Registro de actividad para:
-   * **Borrar registro**
-   * **Mostrar/Ocultar**
+  * **Borrar registro**
+  * **Mostrar/Ocultar**
 * **Barra de herramientas**: La barra de herramientas contiene botones de actualización para el panel de navegación izquierdo y la lista de paquetes, así como botones para buscar, crear y cargar paquetes.
 
 ![IU del Administrador de paquetes](assets/package-manager-ui.png)
@@ -94,7 +92,7 @@ Hay más acciones disponibles debajo del botón **Más**.
 * [Otras versiones](#other-versions)
 * [Desinstalar](#uninstalling-packages)
 * [Probar instalación](#viewing-package-contents-and-testing-installation)
-* [Validate](#validating-packages)
+* [Validar](#validating-packages)
 * [Replicar](#replicating-packages)
 
 ### Estado del paquete {#package-status}
@@ -128,8 +126,8 @@ El cuadro de diálogo **Configuración del paquete** está disponible a través 
 | Nombre | El nombre del paquete |
 | Grupo | Para organizar paquetes, puede escribir el nombre de un grupo nuevo o seleccionar uno existente |
 | Versión | Texto que se utilizará para la versión |
-| Descripción | Una breve descripción del paquete que permite el marcado del HTML para el formato |
-| Miniatura    | El icono que aparece con la lista de paquetes |
+| Descripción | Una breve descripción del paquete que permite el marcado de HTML para dar formato |
+| Miniaturas | El icono que aparece con la lista de paquetes |
 
 #### Miniaturas de paquetes {#thumbnails}
 
@@ -141,15 +139,15 @@ Revisión oficial
 
 ![Miniatura de revisión oficial](assets/official-hotfix.png)
 
-AEM Instalación oficial de la extensión de
+Instalación oficial de AEM de la extensión
 
-AEM ![Miniatura oficial de instalación o extensión](assets/official-installation.png)
+![Miniatura de instalación o extensión oficial de AEM](assets/official-installation.png)
 
 Paquete de servicio oficial
 
-AEM ![Icono oficial de Service Pack](assets/official-service-pack.png)
+![Icono oficial del Service Pack de AEM](assets/official-service-pack.png)
 
-Utilice un icono único para el paquete. No reutilice un icono utilizado por el Adobe.
+Utilice un icono único para el paquete. No reutilice ningún icono utilizado por Adobe.
 
 ### Filtros de paquetes {#package-filters}
 
@@ -175,7 +173,7 @@ Al crear reglas, defina una expresión regular (también conocida como regex, re
 | include | Include incluirá todos los archivos y carpetas del directorio especificado que coincidan con la expresión regular. Incluir **no** incluirá otros archivos o carpetas de la ruta raíz especificada. |
 | excluir | Excluir excluirá todos los archivos y carpetas que coincidan con la expresión regular. |
 
-Los filtros de paquetes se definen con mayor frecuencia la primera vez que [crea el paquete.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a generarse para actualizar su contenido en función de las nuevas definiciones de filtro.
+Los filtros de paquetes se definen con mayor frecuencia cuando [crea el paquete por primera vez.](#creating-a-new-package) Sin embargo, también se pueden editar más adelante, después de lo cual el paquete debe volver a crearse para actualizar su contenido en función de las nuevas definiciones de filtro.
 
 >[!TIP]
 >
@@ -183,7 +181,7 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [crea
 
 >[!TIP]
 >
->Para obtener información básica, consulte la [Documentación de Apache Jackrabbit - Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html).
+>Para obtener información básica, consulte la [Documentación de Apache Jackrabbit - Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html?lang=es).
 
 ### Dependencias {#dependencies}
 
@@ -205,7 +203,7 @@ Los filtros de paquetes se definen con mayor frecuencia la primera vez que [crea
 | Nombre | El nombre del proveedor del paquete | `WKND Media Group` |
 | URL | URL del proveedor | `https://wknd.site` |
 | Vínculo | Vínculo específico del paquete a una página de proveedor | `https://wknd.site/package/` |
-| Requiere | Define si hay alguna restricción al instalar el paquete | AEM **Administrador** - El paquete solo debe instalarse con privilegios de administrador <br>**Reiniciar** - se debe reiniciar después de instalar el paquete, por lo que se requiere un reinicio de la instalación del paquete. |
+| Requiere | Define si hay alguna restricción al instalar el paquete | **Administrador** - El paquete solo debe instalarse con privilegios de administrador <br>**Reiniciar** - AEM debe reiniciarse después de instalar el paquete |
 | Administración de AC | Especifica cómo se administra la información de control de acceso definida en el paquete cuando se importa el paquete | **Ignorar** - Conservar ACL en el repositorio <br>**Sobrescribir** - Sobrescribir ACL en el repositorio <br>**Combinar** - Combinar ambos conjuntos de ACL <br>**MergePreserve** - Combinar el control de acceso en el contenido con el proporcionado con el paquete agregando las entradas de control de acceso de las principales que no están presentes en el contenido <br>**Borrar** - Borrar ACL |
 
 ### Capturas de pantalla de paquetes {#package-screenshots}
@@ -240,11 +238,11 @@ Se pueden realizar muchas acciones en un paquete.
 
 1. Haga clic en **Aceptar** para crear el paquete.
 
-1. AEM La lista de paquetes nuevos se encuentra en la parte superior de la lista de paquetes.
+1. AEM enumera el nuevo paquete en la parte superior de la lista de paquetes.
 
    ![Nuevo paquete](assets/new-package.png)
 
-1. Haga clic en **Editar** para definir el contenido del [paquete.](#package-contents) Haz clic en **Guardar** cuando hayas terminado de editar la configuración.
+1. Haga clic en **Editar** para definir el [contenido del paquete.](#package-contents) Haga clic en **Guardar** cuando termine de editar la configuración.
 
 1. Ahora puede [compilar](#building-a-package) su paquete.
 
@@ -260,11 +258,11 @@ Un paquete se crea a menudo al mismo tiempo que [crea el paquete](#creating-a-ne
 
 1. Haga clic en **Generar**. Un cuadro de diálogo le pedirá que confirme que desea crear el paquete, ya que el contenido existente se sobrescribirá.
 
-1. Haga clic en **Aceptar**. AEM crea el paquete, enumerando todo el contenido añadido al paquete tal y como lo hace en la lista de actividad. AEM Cuando se completa, muestra una confirmación de que el paquete se ha creado y (al cerrar el cuadro de diálogo) actualiza la información de la lista de paquetes.
+1. Haga clic en **Aceptar**. AEM crea el paquete e incluye todo el contenido añadido a este, tal como lo hace, en la lista de actividades. Al finalizar, AEM muestra una confirmación de que el paquete se ha creado y (cuando cierra el cuadro de diálogo) actualiza la información de la lista de paquetes.
 
 ### Edición de un paquete {#edit-package}
 
-AEM Una vez cargado un paquete en el repositorio de, puede modificar su configuración.
+Una vez cargado un paquete en AEM, puede modificar su configuración.
 
 1. [Acceda al Administrador de paquetes.](#accessing)
 
@@ -324,7 +322,7 @@ Una vez creado un paquete, puede ver su contenido.
 
 1. Haga clic en el botón **Descargar** o en el nombre de archivo vinculado del paquete en el área de detalles del paquete.
 
-1. AEM Descarga el paquete en su equipo.
+1. AEM descarga el paquete en el equipo.
 
 ### Uso compartido de un paquete {#share}
 
@@ -347,7 +345,7 @@ Package Share era un servicio público centralizado para distribuir paquetes de 
 
 1. Haga clic en **Aceptar**, el paquete seleccionado se cargará y la lista de paquetes se actualizará en consecuencia.
 
-AEM El contenido del paquete ahora existe en la, pero para que el contenido esté disponible para su uso, asegúrese de [instalar el paquete](#installing-packages).
+El contenido del paquete ya existe en AEM, pero para que esté disponible para su uso, asegúrese de [instalar el paquete](#installing-packages).
 
 ### Validación de paquetes {#validating-packages}
 
@@ -365,11 +363,11 @@ El Administrador de paquetes puede realizar las siguientes validaciones:
 
 **Lo que se ha comprobado**
 
-AEM Esta validación inspecciona el paquete para todos los archivos JAR (paquetes OSGi), extrae sus `manifest.xml` (que contienen las dependencias con versiones de las que depende dicho paquete OSGi) y verifica la instancia que exporta las exportaciones de las instancias mencionadas dependencias con las versiones correctas.
+Esta validación inspecciona el paquete para todos los archivos JAR (paquetes OSGi), extrae sus `manifest.xml` (que contienen las dependencias con versiones de las que depende dicho paquete OSGi) y verifica que la instancia de AEM exporta dichas dependencias con las versiones correctas.
 
 **Cómo se informa**
 
-AEM Cualquier dependencia con versiones que la instancia de la instancia de la aplicación no pueda satisfacer se enumera en el registro de actividad del administrador de paquetes.
+Las dependencias con versiones que la instancia de AEM no puede satisfacer se enumeran en el registro de actividad del administrador de paquetes.
 
 **Estados de error**
 
@@ -383,7 +381,7 @@ Para resolver errores debido a paquetes OSGi no satisfechos, se debe ajustar la 
 
 **Lo que se ha comprobado**
 
-AEM Esta validación determina si el paquete que se está instalando contiene un archivo que ya se superpone en la instancia de destino de la.
+Esta validación determina si el paquete que se está instalando contiene un archivo que ya se superpone en la instancia de AEM de destino.
 
 Por ejemplo, dada una superposición existente en `/apps/sling/servlet/errorhandler/404.jsp`, un paquete que contiene `/libs/sling/servlet/errorhandler/404.jsp`, de forma que cambiará el archivo existente en `/libs/sling/servlet/errorhandler/404.jsp`.
 
@@ -423,14 +421,14 @@ Con la información proporcionada por la validación, los nodos afectados se pue
 
 >[!CAUTION]
 >
->AEM Como práctica recomendada, se recomienda que los paquetes no afecten a las ACL proporcionadas por el usuario, ya que esto puede provocar un comportamiento inesperado.
+>Como práctica recomendada, los paquetes no deben afectar a las ACL proporcionadas por AEM, ya que esto puede provocar un comportamiento inesperado.
 
 #### Realización de validación {#performing-validation}
 
 La validación de paquetes se puede realizar de dos formas diferentes:
 
 * [A través de la IU del Administrador de paquetes](#via-package-manager)
-* [Mediante una solicitud del POST HTTP como con cURL](#via-post-request)
+* [A través de una petición HTTP POST como con cURL](#via-post-request)
 
 La validación siempre debe producirse después de cargar el paquete, pero antes de instalarlo.
 
@@ -446,9 +444,9 @@ La validación siempre debe producirse después de cargar el paquete, pero antes
 
 1. Las validaciones seleccionadas se ejecutan y los resultados se muestran en el registro de actividad del administrador de paquetes.
 
-##### Validación de paquetes mediante solicitud de POST HTTP {#via-post-request}
+##### Validación de paquetes mediante solicitud HTTP POST {#via-post-request}
 
-La solicitud del POST tiene la siguiente forma.
+La solicitud de POST adopta el siguiente formulario.
 
 ```
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
@@ -468,7 +466,7 @@ Cuando utilice cURL, ejecute una instrucción similar a la siguiente:
 curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.components.all-1.1.0.zip 'http://localhost:4502/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls'
 ```
 
-Al validar mediante una solicitud de POST, la respuesta se devuelve como un objeto JSON.
+Al validar mediante una petición POST, la respuesta se devuelve como un objeto JSON.
 
 ### Visualización de cobertura del paquete {#package-coverage}
 
@@ -528,9 +526,9 @@ La reinstalación de paquetes realiza los mismos pasos en un paquete ya instalad
 
 ### Carga e instalación basadas en el sistema de archivos {#file-system-based-upload-and-installation}
 
-Puede renunciar por completo al Administrador de paquetes al instalar paquetes. AEM Puede detectar paquetes colocados en una ubicación específica del sistema de archivos local del equipo host y cargarlos e instalarlos automáticamente.
+Puede renunciar por completo al Administrador de paquetes al instalar paquetes. AEM puede detectar paquetes colocados en una ubicación específica del sistema de archivos local del equipo host y cargarlos e instalarlos automáticamente.
 
-1. AEM En la carpeta de instalación de la, hay una carpeta `crx-quicksart` junto al archivo jar y `license.properties`. Cree una carpeta con el nombre `install` en `crx-quickstart`, dando como resultado la ruta de acceso `<aem-home>/crx-quickstart/install`.
+1. En la carpeta de instalación de AEM, hay una carpeta `crx-quicksart` junto al archivo jar y `license.properties`. Cree una carpeta con el nombre `install` en `crx-quickstart`, dando como resultado la ruta de acceso `<aem-home>/crx-quickstart/install`.
 
 1. En esta carpeta, añada los paquetes. Se cargarán e instalarán automáticamente en su instancia.
 
@@ -580,9 +578,9 @@ Repita el contenido de un paquete para instalarlo en la instancia de publicació
 
 ## Distribución de software {#software-distribution}
 
-AEM AEM Los paquetes de se pueden utilizar para crear y compartir contenido entre entornos de trabajo de la comunidad de la comunidad de usuarios.
+Los paquetes AEM se pueden utilizar para crear y compartir contenido en entornos de AEM.
 
-AEM [Distribución de software](https://downloads.experiencecloud.adobe.com) es un servicio centralizado diseñado para simplificar la búsqueda y la descarga de paquetes de software de la red de distribución de software.
+[Distribución de software](https://downloads.experiencecloud.adobe.com) es un servicio centralizado diseñado para simplificar la búsqueda y descarga de paquetes de AEM.
 
 Para obtener más información, consulte la [documentación de distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
 
