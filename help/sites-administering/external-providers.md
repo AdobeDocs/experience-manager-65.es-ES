@@ -12,11 +12,9 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 1%
-
+source-wordcount: '451'
+ht-degree: 3%
 ---
-
 
 # Analytics con proveedores externos {#analytics-with-external-providers}
 
@@ -67,14 +65,14 @@ Estos fragmentos permiten recopilar datos y generar informes. Los datos reales r
 Para la configuración básica:
 
 1. Abra la consola **Herramientas**.
-1. En el panel izquierdo, expanda **Configuraciones de Cloud Service**.
+1. En el panel izquierdo, expanda **Configuraciones de Cloud Services**.
 1. Haga doble clic en **Fragmento genérico de Analytics** para abrir la página:
 
    ![Fragmento genérico de Analytics](assets/analytics_genericoverview.png)
 
 1. Haga clic en + para agregar una nueva configuración mediante el cuadro de diálogo. Como mínimo, asigne un nombre, por ejemplo, Google Analytics:
 
-   ![Crear configuración](assets/analytics_addconfig.png)
+   ![Creación de configuración](assets/analytics_addconfig.png)
 
 1. Haga clic en **Crear**, el cuadro de diálogo del fragmento se abrirá inmediatamente. Pegue el fragmento de código de JavaScript correspondiente en el campo:
 
@@ -87,13 +85,13 @@ Para la configuración básica:
 Una vez creada la configuración del servicio, debe configurar las páginas necesarias para utilizarlo:
 
 1. Navegue hasta la página.
-1. Abra **Propiedades de página** desde la barra de tareas y luego la ficha **Cloud Service**.
+1. Abra **Propiedades de página** desde la barra de tareas y luego la ficha **Servicios de nube**.
 1. Haga clic en **Agregar servicio** y, a continuación, seleccione el servicio requerido. Por ejemplo, el **fragmento genérico de Analytics**:
 
    ![Agregando un servicio en la nube](assets/analytics_selectservice.png)
 
 1. Haga clic en **Aceptar** para guardar.
-1. Ha vuelto a la ficha **Cloud Service**. El **fragmento genérico de Analytics** aparece ahora con el mensaje `Configuration reference missing`. Utilice la lista desplegable para seleccionar la instancia de servicio específica. Por ejemplo, google-analytics:
+1. Ha vuelto a la ficha **Cloud Services**. El **fragmento genérico de Analytics** aparece ahora con el mensaje `Configuration reference missing`. Utilice la lista desplegable para seleccionar la instancia de servicio específica. Por ejemplo, google-analytics:
 
    ![Agregando configuración de servicio en la nube](assets/analytics_selectspecificservice.png)
 

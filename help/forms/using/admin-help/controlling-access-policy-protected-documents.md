@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2196'
 ht-degree: 0%
-
 ---
-
 # Controlar el acceso a documentos protegidos por directivas {#controlling-access-to-policy-protected-documents}
 
 Puede controlar la forma en que los destinatarios utilizan los documentos protegidos por directivas, independientemente de la amplitud de su distribución.
@@ -194,8 +192,8 @@ Puede utilizar la compatibilidad con la Página 0 (Documento envolvente) para pe
 
 Utilice los siguientes procesos en Workbench:
 
-**Protect
-Documento con portada:** asegura un documento de PDF con la directiva especificada y agrega una portada al documento
+**Proteger
+Documento con portada:** Protege un documento de PDF con la directiva especificada y agrega una portada al documento
 
 **Extraer documento protegido:** Extrae el documento de PDF protegido por directivas del documento de PDF con portada
 

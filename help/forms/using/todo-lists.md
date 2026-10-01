@@ -12,11 +12,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '4024'
+source-wordcount: '4125'
 ht-degree: 97%
-
 ---
-
 # Usar listas de tareas pendientes{#working-with-to-do-lists}
 
 Al visualizar las listas de tareas pendientes, puede ver las tareas de un proceso empresarial que esté asignado a usted, a cualquier grupo al que pertenezca o que sean las tareas compartidas de otros usuarios. Puede abrir, trabajar y completar las tareas según sea necesario, como aprobar o rechazar una solicitud o agregar más información. Una vez finalizada una tarea, se envía a la siguiente persona en el proceso empresarial.
@@ -45,10 +43,10 @@ Al abrir y trabajar en una tarea, las herramientas disponibles dependen de la ta
 
 * **Revisión multiusuario**: recibe una tarea al mismo tiempo que otros usuarios. Usted y los demás usuarios deben proporcionar información o revisar el contenido, o ambos. Con este tipo de tarea pueden estar disponibles las siguientes herramientas:
 
-   * Visualizar las instrucciones de la tarea
-   * Visualizar el estado de finalización de todos los usuarios asignados a la tarea
-   * Visualizar los comentarios de todos los usuarios asignados a la tarea
-   * Agregar comentarios a la tarea
+  * Visualizar las instrucciones de la tarea
+  * Visualizar el estado de finalización de todos los usuarios asignados a la tarea
+  * Visualizar los comentarios de todos los usuarios asignados a la tarea
+  * Agregar comentarios a la tarea
 
 Las herramientas adicionales que pueden estar disponibles con cualquiera de las tareas anteriores incluyen las siguientes:
 

@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '223'
 ht-degree: 1%
-
 ---
-
 # Uso de clasificaciones {#using-ratings}
 
 El componente `Rating` se usa de forma independiente o con otras características de Communities. Este componente permite a los miembros de la comunidad que iniciaron sesión expresar sus opiniones mediante la clasificación de contenido.

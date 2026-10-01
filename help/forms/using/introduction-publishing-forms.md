@@ -11,11 +11,9 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 63%
-
+source-wordcount: '1066'
+ht-degree: 62%
 ---
-
 # Introducción a la publicación de formularios en un portal{#introduction-to-publishing-forms-on-a-portal}
 
 | Versión | Vínculo del artículo |
@@ -68,7 +66,7 @@ El componente Vínculo permite crear un vínculo a un formulario en cualquier pa
 El portal de Forms permite mostrar una lista de los formularios del repositorio de formularios en la página del portal. También permite especificar criterios de búsqueda para permitir que los usuarios del portal busquen en la lista de formularios. También puede utilizar el componente Borradores y envíos para mostrar los formularios guardados como borrador para completarlos posteriormente y los formularios enviados. Realice un conjunto determinado de operaciones antes de que estas funcionalidades estén disponibles en una página de Sites. Siga los pasos de la secuencia indicada para poder acceder a los componentes y las funcionalidades correspondientes desde una página de Sites:
 
 1. **Habilitar componentes del portal de Forms**: los componentes del portal de Forms no están disponibles para su uso de forma predeterminada. [Habilite los componentes de la barra de tareas de AEM](/help/forms/using/enabling-forms-portal-components.md) en una página de AEM Sites.
-1. **Mostrar una lista de formularios en una página (cree la página del portal de Forms):** Los formularios se pueden mostrar en forma de lista en páginas de AEM Sites AEM y de sitios que no sean de tipo de sitio de. La lista contiene los formularios disponibles en la instancia de publicación. Un usuario puede abrir los formularios y empezar a rellenarlos. Cada vez que un usuario abre un formulario, se crea una nueva instancia del formulario:
+1. **Mostrar una lista de formularios en una página (cree la página del portal de Forms):** Los formularios se pueden mostrar en forma de lista en páginas de sitios de AEM Sites y que no sean de AEM. La lista contiene los formularios disponibles en la instancia de publicación. Un usuario puede abrir los formularios y empezar a rellenarlos. Cada vez que un usuario abre un formulario, se crea una nueva instancia del formulario:
 
    1. **Mostrar una lista de formularios en una página de AEM Sites**: agregue el componente **[Búsqueda y lista](../../forms/using/creating-form-portal-page.md)** a la página y configure el **[Panel Lista](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** para mostrar una lista de formularios en una página. Agregue también el componente **Panel Buscar** al componente **Búsqueda y lista** y configúrelo para añadir la funcionalidad de búsqueda a la página. La página con el componente Forms Portal se conoce como [página Forms Portal](../../forms/using/creating-form-portal-page.md).
 
@@ -76,12 +74,12 @@ El portal de Forms permite mostrar una lista de los formularios del repositorio 
 
 1. **Enumerar borradores y formularios enviados en una página del portal de Forms**: agregue y configure el componente Borradores y envíos en la página del portal de Forms. El componente muestra una lista de todos los formularios que están en estado de borrador y los formularios que ya se han enviado.
 
-   Para permitir que un formulario adaptable enviado aparezca en la pestaña Envíos, establezca la acción **Acción de envío** en **[Acción de envío del portal de formularios](configuring-submit-actions.md).** También puede habilitar la opción Enviar del portal de Forms. Cada vez que un usuario envía el formulario, este se agrega a la pestaña Envíos.
+   Para permitir que un formulario adaptable enviado aparezca en la pestaña Envíos, establezca la **acción de envío** en **[Acción de envío del portal de Forms](configuring-submit-actions.md).** También puede activar la opción Forms Portal Submit. Cada vez que un usuario envía el formulario, este se agrega a la pestaña Envíos.
 
 1. **Configurar el almacenamiento de los datos de los borradores y los formularios enviados:** los datos de los borradores y los envíos se almacenan en el repositorio de AEM de forma predeterminada. En un entorno de producción, se recomienda no almacenar datos de formularios en borradores o enviados en el repositorio de AEM. [Configure el componente Portal de Forms para guardar datos en una ubicación segura](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Opcional) Personalización de los componentes del portal de Forms:** [Personalice las plantillas de página del portal de Forms](../../forms/using/customizing-templates-forms-portal-components.md) para proporcionar un aspecto distintivo a los componentes.
 1. **(Opcional) Añadir metadatos personalizados a los formularios:** [agregue metadatos personalizados a los formularios](../../forms/using/customizing-templates-forms-portal-components.md) para mejorar la experiencia de búsqueda y listado.
-1. **Publish en la página del portal de Forms:** Su página del portal de Forms ya está lista. Publique la página.
+1. **Publicar la página del portal de Forms:** Su página del portal de Forms ya está lista. Publique la página.
 
 ## Artículos relacionados {#related-articles}
 

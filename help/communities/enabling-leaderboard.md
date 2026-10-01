@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '425'
 ht-degree: 2%
-
 ---
-
 # Función de clasificación {#leaderboard-feature}
 
 ## Introducción {#introduction}
@@ -59,22 +57,22 @@ En la ficha **[!UICONTROL Configuración]**, especifique qué información relac
 * **Nombre para mostrar**
 
   Un nombre descriptivo para mostrar para el tablero, que refleje las reglas seleccionadas para mostrar insignias y puntuaciones.
-El valor predeterminado es `Leaderboard` si no se escribe nada.
+  El valor predeterminado es `Leaderboard` si no se escribe nada.
 
 * **Insignia**
 
   Si se selecciona, se incluye una columna para los iconos de distintivo en la tabla de clasificación.
-El valor predeterminado está desmarcado.
+  El valor predeterminado está desmarcado.
 
 * **Nombre de distintivo**
 
   Si se selecciona, se incluye una columna para el nombre del distintivo en la tabla de clasificación.
-El valor predeterminado está desmarcado.
+  El valor predeterminado está desmarcado.
 
 * **Usar avatar**
 
   Si se selecciona, la imagen de avatar del miembro se incluirá en la tabla de clasificación, junto al vínculo de su nombre a su perfil de miembro.
-El valor predeterminado está desmarcado.
+  El valor predeterminado está desmarcado.
 
 #### Pestaña Reglas {#rules-tab}
 
@@ -104,19 +102,19 @@ Configuración de componentes de clasificación:
 
 * Pestaña Configuración:
 
-   * Nombre para mostrar = `Participation Board`
-   * `checked`:
+  * Nombre para mostrar = `Participation Board`
+  * `checked`:
 
-      * Distintivo
-      * Nombre de distintivo
-      * Usar avatar
+    * Distintivo
+    * Nombre de distintivo
+    * Usar avatar
 
 * Pestaña Reglas:
 
-   * Ubicación de la regla = `/content/sites/<site name>/jcr:content`
-   * Regla de puntuación = `/libs/settings/community/scoring/rules/forums-scoring`
-   * Regla de distintivos = `/libs/settings/community/badging/rules//reference-badging`
-   * Límite de visualización = `10`
+  * Ubicación de la regla = `/content/sites/<site name>/jcr:content`
+  * Regla de puntuación = `/libs/settings/community/scoring/rules/forums-scoring`
+  * Regla de distintivos = `/libs/settings/community/badging/rules//reference-badging`
+  * Límite de visualización = `10`
 
 ![participantes-tabla de clasificación](assets/participants-leaderboard.png)
 
@@ -128,18 +126,18 @@ Configuración de componentes de clasificación:
 
 * Pestaña Configuración:
 
-   * Nombre para mostrar = `Expertise Board`
-   * `checked`:
+  * Nombre para mostrar = `Expertise Board`
+  * `checked`:
 
-      * Distintivo
-      * Usar avatar
+    * Distintivo
+    * Usar avatar
 
 * Pestaña Reglas:
 
-   * Ubicación de la regla = `/content/sites/<site name>/jcr:content`
-   * Regla de puntuación = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * Regla de distintivos = `/libs/settings/community/badging/rules/adv-forums-badging`
-   * Límite de visualización = `10`
+  * Ubicación de la regla = `/content/sites/<site name>/jcr:content`
+  * Regla de puntuación = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+  * Regla de distintivos = `/libs/settings/community/badging/rules/adv-forums-badging`
+  * Límite de visualización = `10`
 
 ![tabla de clasificación de expertos](assets/experts-leaderboard.png)
 

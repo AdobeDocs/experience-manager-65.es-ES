@@ -12,12 +12,10 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1342'
 ht-degree: 19%
-
 ---
-
-# Uso de versiones de página  {#working-with-page-versions}
+# Uso de versiones de página{#working-with-page-versions}
 
 Al generar una versión, se crea una “instantánea” de una página en un momento determinado. Con las versiones, se pueden realizar las siguientes operaciones:
 
@@ -30,7 +28,7 @@ Al generar una versión, se crea una “instantánea” de una página en un mom
 Para crear una versión de una página:
 
 1. En el explorador, abra la página para la que desea crear una versión.
-1. En el Sidekick, seleccione la pestaña **Versiones** y, a continuación, la subpestaña **Crear versión**.
+1. En Sidekick, seleccione la pestaña **Control de versiones** y, a continuación, la subpestaña **Crear versión**.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -43,7 +41,7 @@ Versión 1.2 creada para: Camisetas.
 >
 >Se crea automáticamente una versión cuando se activa la página.
 
-## Restablecer una versión de página desde el Sidekick {#restoring-a-page-version-from-sidekick}
+## Restablecer una versión de la página desde Sidekick {#restoring-a-page-version-from-sidekick}
 
 Para restaurar la página a una versión anterior:
 
@@ -86,7 +84,7 @@ Este método se puede utilizar para restaurar una versión de la página. Tambi�
 Para comparar la versión actual de la página con una versión anterior:
 
 1. En el explorador, abra la página para la que desea comparar con una versión anterior.
-1. En el Sidekick, seleccione la ficha **Versiones** y, a continuación, la subpestaña **Restaurar versión** n.
+1. En Sidekick, seleccione la pestaña **Versiones** y, a continuación, la subpestaña **Restaurar versión** n.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -99,9 +97,9 @@ Para comparar la versión actual de la página con una versión anterior:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. En el Sidekick, seleccione la subpestaña **Restaurar versión** y haga clic en el botón **&lt;&lt;Atrás** para mostrar la versión actual.
+1. En Sidekick, seleccione la subpestaña **Restaurar versión** y haga clic en el botón **&lt;&lt;Atrás** para mostrar la versión actual.
 
-## Deformación de tiempo   {#timewarp}
+## Deformación de tiempo {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado ***publicado*** de una página en periodos específicos en el pasado.
 
@@ -170,8 +168,8 @@ Si desea ver la cronología del documento:
 1. Seleccione y mueva (mantenga pulsada y arrastre) la línea de tiempo para desplazarse por la línea de tiempo del documento.
 
    * Todas las líneas indican versiones publicadas.
-Cuando se activa una página, se inicia una nueva línea. Cada vez que se edita el documento, aparece un nuevo color.
-En el ejemplo siguiente, la línea roja indica que la página se editó durante el periodo de tiempo de la versión inicial verde. La línea amarilla indica que la página se editó en algún momento durante la versión roja, etc.
+     Cuando se activa una página, se inicia una nueva línea. Cada vez que se edita el documento, aparece un nuevo color.
+     En el ejemplo siguiente, la línea roja indica que la página se editó durante el periodo de tiempo de la versión inicial verde. La línea amarilla indica que la página se editó en algún momento durante la versión roja, etc.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 

@@ -11,11 +11,9 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '384'
 ht-degree: 91%
-
 ---
-
 # Funciones de AEM Forms Workspace no disponibles en espacio de trabajo de Flex {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
 Las innovaciones de AEM Forms Workspace van más allá del espacio de trabajo basado en Flex para ofrecer funciones y capacidades que contribuyen a mejorar la integración empresarial y la productividad del usuario.
@@ -40,4 +38,4 @@ La capacidad de integración con aplicaciones de terceros se puede utilizar para
 
 ## Compatibilidad con el procesamiento de tareas personalizadas basado en el dispositivo del usuario final {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-El espacio de trabajo de AEM Forms admite la representación HTML de formularios XDP. Esta compatibilidad, cuando se utiliza en un proceso de renderización que enruta a diferentes representaciones de XDP en función del dispositivo o del agente de usuario, permite a los usuarios ver un formulario XDP como HTML en los dispositivos móviles y como PDF en un equipo de escritorio. Esto ayuda a proporcionar una cobertura perfecta de Process Management a los usuarios que trabajan en una variedad de entornos y en diferentes dispositivos.
+El espacio de trabajo de AEM Forms admite la representación de formularios XDP por HTML. Esta compatibilidad, cuando se utiliza en un proceso de renderización que enruta a diferentes representaciones de XDP en función del dispositivo o del agente de usuario, permite a los usuarios ver un formulario XDP como HTML en los dispositivos móviles y como PDF en un equipo de escritorio. Esto ayuda a proporcionar una cobertura perfecta de Process Management a los usuarios que trabajan en una variedad de entornos y en diferentes dispositivos.

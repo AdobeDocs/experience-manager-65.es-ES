@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '993'
 ht-degree: 1%
-
 ---
-
 # Uso de comentarios {#using-comments}
 
 ## Introducción {#introduction}
@@ -190,7 +188,7 @@ Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o admin
 
 Cuando el visitante del sitio inicia sesión, según la configuración, puede ser
 
-* Post agrega un nuevo comentario
+* Publicar un nuevo comentario
 * Editar su propio comentario
 * Eliminar su propio comentario
 * Marcar comentarios de otros usuarios

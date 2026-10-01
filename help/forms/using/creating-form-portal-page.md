@@ -1,9 +1,13 @@
 ---
 title: Crear una página de portal de formularios
+
 description: El portal de formularios proporciona a los desarrolladores web componentes para crear y personalizar un portal de formularios en sitios web creados con Adobe Experience Manager (AEM).
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
+
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
@@ -11,11 +15,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1702'
 ht-degree: 94%
-
 ---
-
 # Crear una página de portal de formularios{#creating-a-forms-portal-page}
 
 | Versión | Vínculo del artículo |

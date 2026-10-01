@@ -11,15 +11,13 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '198'
 ht-degree: 8%
-
 ---
-
 # Reconocer certificados válidos y caducados en documentos PDF {#recognizing-valid-and-expired-certificates-in-pdf-documents}
 
-Cuando se abre en Adobe Reader un documento de PDF con derechos de uso aplicados por Extensiones de Reader, aparece una barra de estado que describe los derechos de uso específicos habilitados en el documento de PDF.
+Cuando se abre en Adobe Reader un documento de PDF con derechos de uso aplicados por las extensiones de Reader, aparece una barra de estado que describe los derechos de uso específicos habilitados en el documento de PDF.
 
-Cuando caduca el certificado digital que especifica los derechos de uso de un documento de PDF PDF y este se abre en Adobe Reader, un cuadro de diálogo informa al usuario de que el documento de PDF tiene derechos de uso, pero estos derechos están desactivados. Aunque el mensaje indica que el documento del PDF se ha alterado o alterado, no es necesariamente el caso. Adobe Reader muestra este mensaje cuando caduca un certificado o se modifica un documento. En Adobe Reader 7.0.x o posterior, no puede determinar en qué caso se produce el problema actualmente.
+Cuando caduca el certificado digital que especifica los derechos de uso de un documento de PDF y el documento de PDF se abre en Adobe Reader, un cuadro de diálogo informa al usuario de que el documento de PDF tiene derechos de uso, pero estos derechos están desactivados. Aunque el mensaje indica que el documento de PDF se alteró o alteró, no es necesariamente el caso. Adobe Reader muestra este mensaje cuando caduca un certificado o se modifica un documento. En Adobe Reader 7.0.x o posterior, no puede determinar qué caso es el problema actualmente.
 
-Después de cerrar el cuadro de diálogo, Adobe Reader abre el documento del PDF. Los derechos de uso aplicados con las extensiones de Acrobat Reader DC no están disponibles, según lo esperado. Si el documento del PDF es un formulario interactivo, los campos del formulario se bloquean y el usuario no puede cambiar los datos del formulario.
+Después de cerrar el cuadro de diálogo, Adobe Reader abre el documento de PDF. Los derechos de uso aplicados con las extensiones de Acrobat Reader DC no están disponibles, según lo esperado. Si el documento de PDF es un formulario interactivo, los campos del formulario se bloquean y el usuario no puede cambiar los datos del formulario.

@@ -1,22 +1,24 @@
 ---
-title: Supervisar eventos
+title: Monitorizar eventos
+
 description: Cuando la capacidad de auditoría está habilitada, Document Security permite supervisar ciertos tipos de eventos. Puede buscar y ordenar fácilmente la lista de eventos mediante la seguridad de documentos.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '968'
 ht-degree: 0%
-
 ---
-
-# Supervisar eventos {#monitoring-events}
+# Monitorizar eventos {#monitoring-events}
 
 Cuando la capacidad de auditoría está habilitada, Document Security permite supervisar ciertos tipos de eventos. Los eventos que puede ver dependen de su función:
 
@@ -59,7 +61,7 @@ Puede buscar eventos en la página Eventos usando una combinación de criterios 
 **Usuarios:** pueden ver eventos auditados para sus documentos protegidos por directivas y para cualquier documento protegido que reciban y utilicen. Estas opciones de búsqueda están disponibles:
 
 **Eventos relacionados
-para mí:** Los usuarios pueden encontrar eventos para cualquier documento protegido por directivas que hayan creado o recibido. Por ejemplo, si un usuario abre, visualiza o imprime un documento protegido por otra persona, solo verá estos eventos para ese documento.
+para mí:** Los usuarios pueden encontrar eventos para cualquier documento protegido por una directiva que hayan creado o recibido. Por ejemplo, si un usuario abre, visualiza o imprime un documento protegido por otra persona, solo verá estos eventos para ese documento.
 
 **Eventos relacionados con mis documentos:** Los usuarios pueden encontrar todos los eventos relacionados con sus propios documentos protegidos por directivas. Los usuarios ven los eventos que generan todas las personas que administran sus documentos.
 

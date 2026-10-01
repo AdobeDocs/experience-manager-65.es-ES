@@ -13,12 +13,10 @@ source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 1%
-
 ---
-
 # Diagnóstico de ContextHub {#contexthub-diagnostics}
 
-ContextHub proporciona una página de diagnóstico en la que puede ver una descripción general del marco de trabajo de ContextHub. AEM Para abrir la página, vaya a la página `contexthub.diagnostics.html` de la instancia de autor de la, por ejemplo:
+ContextHub proporciona una página de diagnóstico en la que puede ver una descripción general del marco de trabajo de ContextHub. Para abrir la página, vaya a la página `contexthub.diagnostics.html` de la instancia de autor de AEM, por ejemplo:
 
 `http://<host>:<port>/conf/<tenant>/settings/cloudsettings/default/contexthub.diagnostics.html`
 

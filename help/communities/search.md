@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '463'
 ht-degree: 1%
-
 ---
-
 # Función de búsqueda {#search-feature}
 
 La función de búsqueda funciona con varias otras funciones, como foros, para proporcionar la capacidad de buscar contenido.
@@ -53,7 +51,7 @@ En la ficha **[!UICONTROL Configuración de búsqueda]**, especifique las rutas 
 * **[!UICONTROL Rutas de búsqueda]**
 Al agregar rutas de búsqueda mediante el botón Agregar elemento, la búsqueda de contenido está limitada. Por ejemplo, para limitar la búsqueda a un foro específico, seleccione un componente de foro ubicado en una página:
 
-   * `/content/community-components/en/forum/jcr:content/content/forum`
+  * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Página de resultados]**
 Los resultados aparecerán en una página independiente especificada mediante el explorador para seleccionar una página que contenga el componente `Search Results`.

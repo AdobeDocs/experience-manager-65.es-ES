@@ -1,10 +1,12 @@
 ---
 title: Publicación de páginas
 description: Después de crear y revisar el contenido en el entorno de creación, haga que esté disponible en el sitio web público.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
+
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
 solution: Experience Manager, Experience Manager Sites
@@ -12,12 +14,10 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 9%
-
+source-wordcount: '1032'
+ht-degree: 8%
 ---
-
-# Publicar páginas{#publishing-pages}
+# Publicación de páginas{#publishing-pages}
 
 Después de crear y revisar el contenido en el entorno de creación, debe publicarlo en su sitio web público (el entorno de publicación).
 
@@ -29,13 +29,13 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >
 >Algunos términos relacionados con la publicación pueden confundirse:
 >
->* **Publicar o cancelar la publicación**
+>* **Publicar/Cancelar publicación**
 >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
->* **Activar o desactivar**
+>* **Activar/Desactivar**
 >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
->* **Replicar o replicación**
+>* **Replicar/replicación**
 >  Son los términos técnicos que describen el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 >
 
@@ -71,11 +71,11 @@ Puede activar páginas en la consola Sitios web. Después de abrir una página y
 
    >[!NOTE]
    >
-   >AEM Si es necesario, solicita que se active o se reactive cualquier recurso vinculado a la página. Puede activar o desactivar las casillas de verificación para activar esos recursos.
+   >Si es necesario, AEM solicita que active o reactive cualquier recurso vinculado a la página. Puede activar o desactivar las casillas de verificación para activar esos recursos.
    >
    >
 
-1. AEM Si es necesario, solicita que se active o se reactive cualquier recurso vinculado a la página. Puede activar o desactivar las casillas de verificación para activar esos recursos.
+1. Si es necesario, AEM solicita que active o reactive cualquier recurso vinculado a la página. Puede activar o desactivar las casillas de verificación para activar esos recursos.
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
@@ -83,13 +83,13 @@ Puede activar páginas en la consola Sitios web. Después de abrir una página y
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
-### Activar una página desde el Sidekick {#activating-a-page-from-sidekick}
+### Activación de una página desde Sidekick {#activating-a-page-from-sidekick}
 
 También puede activar una página cuando la tenga abierta para editarla.
 
 Después de abrir la página y modificar su contenido, debe hacer lo siguiente:
 
-1. Seleccione la ficha **Página** en el Sidekick.
+1. Seleccione la ficha **Página** en Sidekick.
 1. Haga clic en **Activar página**.
 Aparece un mensaje en la parte superior derecha de la ventana que confirma que la página se ha activado.
 

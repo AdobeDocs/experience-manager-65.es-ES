@@ -9,9 +9,7 @@ source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 88%
-
 ---
-
 # Árbol de estructura de fragmento de contenido {#content-fragment-structure-tree}
 
 Utilice la funcionalidad Árbol de estructura del Editor de fragmentos de contenido en AEM para comprender mejor el contenido sin encabezado.
