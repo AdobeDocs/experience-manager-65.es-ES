@@ -9,13 +9,11 @@ exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3109'
 ht-degree: 3%
-
 ---
-
 # Administración de derechos de usuario, grupo y acceso{#user-group-and-access-rights-administration}
 
 La activación del acceso a un repositorio de CRX implica varios temas:
@@ -60,7 +58,7 @@ CRX permite configurar los derechos de acceso para las cuentas de usuario y de g
 
 >[!NOTE]
 >
->CRX implementa [control de acceso según lo definido por JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implementa [control de acceso según lo definido por JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Una instalación estándar de un repositorio de CRX está configurada para utilizar listas de control de acceso basadas en recursos. Esta es una posible implementación del control de acceso JSR-283 y una de las implementaciones presentes con Jackrabbit.
 
@@ -70,22 +68,22 @@ CRX utiliza dos conceptos clave al evaluar los derechos de acceso:
 
 * **principal** es una entidad que cuenta con derechos de acceso. Las entidades principales incluyen:
 
-   * Una cuenta de usuario
-   * Una cuenta de grupo
+  * Una cuenta de usuario
+  * Una cuenta de grupo
 
-     Si una cuenta de usuario pertenece a uno o más grupos, también se asocia a cada una de esas entidades de seguridad de grupo.
+    Si una cuenta de usuario pertenece a uno o más grupos, también se asocia a cada una de esas entidades de seguridad de grupo.
 
 * Se usa un **asunto** para representar el origen de una solicitud.
 
   Se utiliza para consolidar los derechos de acceso aplicables a esa solicitud. Estas se toman de:
 
-   * Principal de usuario
+  * Principal de usuario
 
-     Los derechos que asigna directamente a la cuenta de usuario.
+    Los derechos que asigna directamente a la cuenta de usuario.
 
-   * Todas las entidades de seguridad de grupo asociadas a ese usuario
+  * Todas las entidades de seguridad de grupo asociadas a ese usuario
 
-     Todos los derechos se asignan a cualquiera de los grupos a los que pertenece el usuario.
+    Todos los derechos se asignan a cualquiera de los grupos a los que pertenece el usuario.
 
   A continuación, el resultado se utiliza para permitir o denegar el acceso al recurso solicitado.
 
@@ -124,8 +122,8 @@ Los derechos de acceso en CRX se evalúan de la siguiente manera:
 
 * Las entidades de seguridad de usuario siempre tienen prioridad sobre las de grupo, independientemente de:
 
-   * su orden en la lista de control de acceso
-   * su posición en la jerarquía del nodo
+  * su orden en la lista de control de acceso
+  * su posición en la jerarquía del nodo
 
 * Para un principal determinado, existe (como máximo) una entrada denegada y 1 permitida en un nodo determinado. La implementación siempre borra las entradas redundantes y se asegura de que el mismo privilegio no aparezca en las entradas de permiso y de denegación.
 
@@ -491,7 +489,7 @@ Se pueden seleccionar las políticas para:
 
 ### Privilegios {#privileges}
 
-Los siguientes privilegios están disponibles para seleccionarlos al agregar una entrada de control de acceso (consulte la [API de seguridad](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) para obtener información detallada):
+Los siguientes privilegios están disponibles para seleccionarlos al agregar una entrada de control de acceso (consulte la [API de seguridad](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) para obtener información detallada):
 
 <table>
  <tbody>

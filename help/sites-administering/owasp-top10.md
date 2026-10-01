@@ -9,13 +9,11 @@ exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 5%
-
 ---
-
 # OWASP Top 10{#owasp-top}
 
 El [Proyecto Open Web Application Security](https://owasp.org/) (OWASP) mantiene una lista de lo que consideran los [Diez riesgos principales de seguridad de aplicaciones web](https://owasp.org/www-project-top-ten/).
@@ -62,7 +60,7 @@ Los datos confidenciales, como las credenciales de terceros, se almacenan en for
 
 ## &#x200B;8. Error al restringir el acceso a URL {#failure-to-restrict-url-access}
 
-El repositorio permite la configuración de [privilegios específicos (según lo especificado por JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para cualquier usuario o grupo en cualquier ruta de acceso, mediante entradas de control de acceso. El repositorio aplica las restricciones de acceso.
+El repositorio permite la configuración de [privilegios específicos (según lo especificado por JCR)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) para cualquier usuario o grupo en cualquier ruta de acceso, mediante entradas de control de acceso. El repositorio aplica las restricciones de acceso.
 
 ## &#x200B;9. Protección insuficiente de la capa de transporte {#insufficient-transport-layer-protection}
 

@@ -9,55 +9,53 @@ exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 0%
-
+source-wordcount: '627'
+ht-degree: 1%
 ---
-
 # Superposiciones{#overlays}
 
-Adobe Experience Manager AEM (), y antes de eso, CQ, ha usado el principio de superposiciones por mucho tiempo para permitirle ampliar y personalizar las [consolas](/help/sites-developing/customizing-consoles-touch.md) y otras funcionalidades (por ejemplo, [creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)).
+Adobe Experience Manager (AEM), y antes de eso, CQ, ha usado por mucho tiempo el principio de las superposiciones para permitirle ampliar y personalizar las [consolas](/help/sites-developing/customizing-consoles-touch.md) y otras funcionalidades (por ejemplo, [creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)).
 
-Superposición es un término que se utiliza en muchos contextos. AEM En este contexto (ampliación de la funcionalidad), una superposición significa tomar la funcionalidad predefinida e imponer sus propias definiciones sobre ella (para personalizar la funcionalidad estándar).
+Superposición es un término que se utiliza en muchos contextos. En este contexto (ampliación de AEM), una superposición significa tomar la funcionalidad predefinida e imponer sus propias definiciones sobre ella (para personalizar la funcionalidad estándar).
 
-En una instancia estándar, la funcionalidad predefinida se mantiene en `/libs` y se recomienda definir la superposición (personalizaciones) en la rama `/apps`. AEM utiliza una ruta de búsqueda para encontrar un recurso, buscando primero la rama `/apps` y, a continuación, la rama `/libs` (la ruta de búsqueda [se puede configurar](#configuring-the-search-paths)). Este mecanismo significa que la superposición (y las personalizaciones definidas) tienen prioridad.
+En una instancia estándar, la funcionalidad predefinida se mantiene en `/libs` y se recomienda definir la superposición (personalizaciones) en la rama `/apps`. AEM usa una ruta de búsqueda para encontrar un recurso, buscando primero la rama `/apps` y luego la rama `/libs` (la ruta de búsqueda [se puede configurar](#configuring-the-search-paths)). Este mecanismo significa que la superposición (y las personalizaciones definidas) tienen prioridad.
 
-AEM Desde la versión 6.0, se han realizado cambios en la implementación y el uso de las superposiciones:
+Desde AEM 6.0, se han realizado cambios en la implementación y el uso de las superposiciones:
 
-* AEM 6.0 y posteriores: para superposiciones relacionadas con [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (es decir, la IU táctil)
+* AEM 6.0 y posteriores: para superposiciones relacionadas con [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (es decir, la IU táctil)
 
-   * Método
+  * Método
 
-      * Reconstruir la estructura `/libs` adecuada en `/apps`.
+    * Reconstruir la estructura `/libs` adecuada en `/apps`.
 
-        Esto no requiere una copia 1:1; se usa la [fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md) para hacer referencia a las definiciones originales que se requieren. La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos con mecanismos de diferencia.
+      Esto no requiere una copia 1:1; se usa la [fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md) para hacer referencia a las definiciones originales que se requieren. La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos con mecanismos de diferencia.
 
-      * En `/apps`, realice cualquier cambio.
+    * En `/apps`, realice cualquier cambio.
 
-   * Ventajas
+  * Ventajas
 
-      * Más seguro para los cambios en `/libs`.
-      * Redefina solo lo que sea necesario.
+    * Más seguro para los cambios en `/libs`.
+    * Redefina solo lo que sea necesario.
 
-* AEM Superposiciones y superposiciones que no son de Granite antes de la versión 6 0
+* Superposiciones y superposiciones que no son de Granite antes de AEM 6.0
 
-   * Método
+  * Método
 
-      * Copiar el contenido de `/libs` a `/apps`
+    * Copiar el contenido de `/libs` a `/apps`
 
-        Copie toda la subrama, incluidas las propiedades.
+      Copie toda la subrama, incluidas las propiedades.
 
-      * En `/apps`, realice cualquier cambio.
+    * En `/apps`, realice cualquier cambio.
 
-   * Desventajas
+  * Desventajas
 
-      * Aunque los cambios no se perderán cuando algo cambie en `/libs`, es posible que tenga que volver a crear ciertos cambios que se producen en la superposición en `/apps`.
+    * Aunque los cambios no se perderán cuando algo cambie en `/libs`, es posible que tenga que volver a crear ciertos cambios que se producen en la superposición en `/apps`.
 
 >[!CAUTION]
 >
->La [Fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md) y los métodos relacionados solo se pueden usar con [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Esto significa que la creación de una superposición con una estructura de esqueleto solo es adecuada para la IU táctil estándar.
+>La [Fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md) y los métodos relacionados solo se pueden usar con [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Esto significa que la creación de una superposición con una estructura de esqueleto solo es adecuada para la IU táctil estándar.
 >
 >Las superposiciones de otras áreas (incluida la IU clásica) implican copiar el nodo adecuado y toda la subestructura y, a continuación, realizar los cambios necesarios.
 
@@ -65,9 +63,9 @@ Las superposiciones son el método recomendado para muchos cambios, como [config
 
 * ***No* realice cambios en la rama `/libs`**&#x200B;Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
 
-   * actualice en su instancia
-   * aplicar una revisión
-   * instalación de un paquete de funciones
+  * actualice en su instancia
+  * aplicar una revisión
+  * instalación de un paquete de funciones
 
 * Concentran los cambios en una ubicación, lo que facilita el seguimiento, la migración, la copia de seguridad o la depuración de los cambios, según sea necesario.
 
@@ -77,8 +75,8 @@ En el caso de las superposiciones, el recurso enviado es un agregado de los recu
 
 * El recurso **Ruta de búsqueda de Resolver** según se define en la [configuración OSGi](/help/sites-deploying/configuring-osgi.md) para la **fábrica de Apache Sling Resource Resolver**.
 
-   * El orden descendente de las rutas de búsqueda indica sus respectivas prioridades.
-   * En una instalación estándar, los valores predeterminados principales son `/apps`, `/libs`, por lo que el contenido de `/apps` tiene una prioridad mayor que la de `/libs` (es decir, lo *superpone*).
+  * El orden descendente de las rutas de búsqueda indica sus respectivas prioridades.
+  * En una instalación estándar, los valores predeterminados principales son `/apps`, `/libs`, por lo que el contenido de `/apps` tiene una prioridad mayor que la de `/libs` (es decir, lo *superpone*).
 
 * Dos usuarios del servicio necesitan acceso JCR:READ a la ubicación donde se almacenan los scripts. Estos usuarios son: components-search-service (utilizado por los componentes com.day.cq.wcm.core access/cache) y sling-scripting (utilizado por org.apache.sling.servlets.resolver para buscar servlets).
 * La siguiente configuración también debe configurarse según dónde coloque los scripts (en este ejemplo, en /etc, /libs o /apps).

@@ -9,13 +9,11 @@ exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '371'
 ht-degree: 0%
-
 ---
-
 # Solución de problemas de comunidad {#troubleshooting}
 
 Esta sección contiene preocupaciones comunes y problemas conocidos al solucionar problemas de la comunidad.
@@ -51,7 +49,7 @@ Por lo tanto, cualquier código que utilice la API RelativeTimeFormat() debe cam
 
 El error es diferente en Autor y Publicación. En Autor, falla de forma silenciosa y simplemente no muestra los temas del foro. En Publish, se muestra el error en la página.
 
-Consulte la API [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) para obtener más información.
+Consulte la API [com.day.cq.commons.date.RelativeTimeFormat](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) para obtener más información.
 
 ## Inquietudes comunes {#common-concerns}
 

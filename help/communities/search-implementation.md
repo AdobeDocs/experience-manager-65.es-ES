@@ -9,13 +9,11 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1210'
 ht-degree: 3%
-
 ---
-
 # Search Essentials {#search-essentials}
 
 ## Información general {#overview}
@@ -26,11 +24,11 @@ Para Communities, las dos cosas que se buscan generalmente son:
 
 * Contenido publicado por miembros de la comunidad
 
-   * Utiliza la API de búsqueda UGC de AEM Communities.
+  * Utiliza la API de búsqueda UGC de AEM Communities.
 
 * Usuarios y grupos de usuarios (datos de usuario)
 
-   * Utiliza las funcionalidades de búsqueda de la plataforma AEM.
+  * Utiliza las funcionalidades de búsqueda de la plataforma AEM.
 
 Esta sección de la documentación es de interés para los desarrolladores que crean componentes personalizados que crean o administran UGC.
 
@@ -44,7 +42,7 @@ Consulte [SRP y UGC Essentials](srp-and-ugc.md) para obtener información sobre 
 
 ## API de búsqueda UGC {#ugc-search-api}
 
-El almacén común [UGC](working-with-srp.md) lo proporciona uno de varios proveedores de recursos de almacenamiento (SRP), cada uno de los cuales posiblemente tenga un idioma de consulta nativo diferente. Por lo tanto, independientemente del SRP elegido, el código personalizado debe utilizar métodos del [paquete de API de UGC](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) que invoca el idioma de consulta apropiado para el SRP elegido.
+El almacén común [UGC](working-with-srp.md) lo proporciona uno de varios proveedores de recursos de almacenamiento (SRP), cada uno de los cuales posiblemente tenga un idioma de consulta nativo diferente. Por lo tanto, independientemente del SRP elegido, el código personalizado debe utilizar métodos del [paquete de API de UGC](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) que invoca el idioma de consulta apropiado para el SRP elegido.
 
 ### Búsquedas ASRP {#asrp-searches}
 
@@ -160,8 +158,8 @@ Solr es un ejemplo de lenguaje de consulta que utiliza un esquema.
 
 * Para los tipos de varios valores, agregue &quot;s&quot; al sufijo, por ejemplo:
 
-   * `viewDate_dt`: propiedad de fecha única
-   * `viewDates_dts`: lista de propiedad de fechas
+  * `viewDate_dt`: propiedad de fecha única
+  * `viewDates_dts`: lista de propiedad de fechas
 
 ## Filtros {#filters}
 
@@ -171,11 +169,11 @@ La sintaxis del filtro para la lógica AND y OR se expresa de la siguiente maner
 
 * Para especificar OR, utilice un parámetro de filtro con valores separados por comas:
 
-   * `filter=name eq 'Jennifer',name eq 'Jen'`
+  * `filter=name eq 'Jennifer',name eq 'Jen'`
 
 * Para especificar AND, utilice varios parámetros de filtro:
 
-   * `filter = name eq 'Jackson'&filter=message eq 'testing'`
+  * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
 La implementación predeterminada de [Search component](search.md) usa esta sintaxis, como se puede ver en la dirección URL que abre la página de resultados de búsqueda en la [guía de componentes de la comunidad](components-guide.md). Para experimentar, vaya a [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
 
@@ -193,9 +191,9 @@ Los operadores de filtro son:
 Es importante que la dirección URL haga referencia al componente (recurso) de Communities y no a la página en la que se coloca el componente:
 
 * Correcto: componente de foro
-   * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
+  * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
 * Incorrecto: página de foro
-   * `/content/community-components/en/forum.social.json`
+  * `/content/community-components/en/forum.social.json`
 
 ## Herramientas SRP {#srp-tools}
 

@@ -10,13 +10,11 @@ exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2240'
 ht-degree: 1%
-
 ---
-
 # Conceptos de la IU táctil de Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager (AEM) cuenta con una interfaz de usuario táctil con [diseño interactivo](/help/sites-authoring/responsive-layout.md) para el entorno de creación, que está diseñada para funcionar tanto en dispositivos táctiles como de escritorio.
@@ -28,24 +26,24 @@ Adobe Experience Manager (AEM) cuenta con una interfaz de usuario táctil con [d
 La IU táctil incluye lo siguiente:
 
 * El encabezado de grupo indica que:
-   * Muestra el logotipo
-   * Proporciona un vínculo a la navegación global
-   * Proporciona un vínculo a otras acciones genéricas, como Buscar, Ayuda, Soluciones de Experience Cloud, Notificaciones y Configuración de usuario.
+  * Muestra el logotipo
+  * Proporciona un vínculo a la navegación global
+  * Proporciona un vínculo a otras acciones genéricas, como Buscar, Ayuda, Soluciones de Experience Cloud, Notificaciones y Configuración de usuario.
 * El carril izquierdo (se muestra cuando es necesario y se puede ocultar), que puede mostrar:
-   * Escala de cronología
-   * Referencias
-   * Filtros
+  * Escala de cronología
+  * Referencias
+  * Filtros
 * El encabezado de navegación, que de nuevo distingue entre contextos y puede mostrar:
-   * Indica la consola que está utilizando actualmente, su ubicación o ambas dentro de esa consola
-   * Selección para el carril izquierdo
-   * Rutas de exploración
-   * Acceso a **Crear** acciones apropiadas
-   * Ver selecciones
+  * Indica la consola que está utilizando actualmente, su ubicación o ambas dentro de esa consola
+  * Selección para el carril izquierdo
+  * Rutas de exploración
+  * Acceso a **Crear** acciones apropiadas
+  * Ver selecciones
 * El área de contenido que:
-   * Enumera los elementos de contenido (ya sean páginas, recursos, publicaciones en foros, etc.)
-   * Puede tener el formato solicitado, por ejemplo, columna, tarjeta o lista
-   * Utiliza un diseño interactivo (la pantalla cambia de tamaño automáticamente según el tamaño del dispositivo o la ventana)
-   * Utiliza desplazamiento infinito (no más paginación, todos los elementos se muestran en una ventana)
+  * Enumera los elementos de contenido (ya sean páginas, recursos, publicaciones en foros, etc.)
+  * Puede tener el formato solicitado, por ejemplo, columna, tarjeta o lista
+  * Utiliza un diseño interactivo (la pantalla cambia de tamaño automáticamente según el tamaño del dispositivo o la ventana)
+  * Utiliza desplazamiento infinito (no más paginación, todos los elementos se muestran en una ventana)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -200,7 +198,7 @@ Las diferencias entre la interfaz de usuario de Granite y ExtJS (utilizadas para
 
 ### Componentes de Granite UI Foundation {#granite-ui-foundation-components}
 
-Los [componentes básicos de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) proporcionan los componentes básicos necesarios para crear cualquier interfaz de usuario. Entre ellos se incluyen:
+Los [componentes básicos de Granite UI](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) proporcionan los componentes básicos necesarios para crear cualquier interfaz de usuario. Entre ellos se incluyen:
 
 * Botón
 * Hipervínculo
@@ -257,7 +255,7 @@ Al actualizar el código ExtJS para utilizar la interfaz de usuario de Granite, 
 
 ### Componentes de administración de Granite UI {#granite-ui-administration-components}
 
-Los [componentes de administración de Granite UI](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) se basan en los componentes básicos para proporcionar bloques de creación genéricos que cualquier aplicación de administración pueda implementar. Estas incluyen, entre otras:
+Los [componentes de administración de Granite UI](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) se basan en los componentes básicos para proporcionar bloques de creación genéricos que cualquier aplicación de administración pueda implementar. Estas incluyen, entre otras:
 
 * Barra de navegación global
 * Carril (esqueleto)

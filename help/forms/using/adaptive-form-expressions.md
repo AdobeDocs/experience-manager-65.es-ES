@@ -8,20 +8,18 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2779'
-ht-degree: 92%
-
+source-wordcount: '2871'
+ht-degree: 91%
 ---
-
 # Expresiones de formularios adaptables{#adaptive-form-expressions}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
 
 Los formularios adaptables ofrecen una experiencia de cumplimentación de formularios optimizada y simplificada para los usuarios finales con funciones de scripts dinámicos. Permiten escribir expresiones para agregar varios comportamientos, como mostrar u ocultar campos y paneles dinámicos. También permiten agregar campos calculados, crear campos de solo lectura, agregar lógica de validación y mucho más. El comportamiento dinámico se basa en los datos introducidos por el usuario o rellenados previamente.
 
-JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de scripts de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener la lista completa de clases, eventos, objetos y API públicas de los formularios adaptables, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de scripts de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener la lista completa de clases, eventos, objetos y API públicas de los formularios adaptables, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 
 ## Prácticas recomendadas para escribir expresiones {#best-practices-for-writing-expressions}
 
@@ -36,13 +34,13 @@ Los paneles de repetición son instancias de un panel que se agregan o quitan de
 * Para crear un panel de repetición, en el cuadro de diálogo del panel, abra la configuración y establezca el valor del campo de recuento máximo en más de uno.
 * El valor de recuento mínimo de la configuración de repetición del panel puede ser uno o más, pero no puede ser superior al valor del recuento máximo.
 * Cuando una expresión haga referencia a un campo de panel de repetición, los nombres de campo de la expresión se resolverán en el elemento de repetición más cercano.
-* Los formularios adaptables proporcionan algunas funciones especiales para simplificar el cálculo de paneles repetibles, como suma, recuento, mínimo, máximo, filtrar y mucho más. Para obtener la lista completa de funciones, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+* Los formularios adaptables proporcionan algunas funciones especiales para simplificar el cálculo de paneles repetibles, como suma, recuento, mínimo, máximo, filtrar y mucho más. Para obtener la lista completa de funciones, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 * Las API para manipular instancias de panel de repetición son las siguientes:
 
-   * Para agregar una instancia de panel: `panel1.instanceManager.addInstance()`
-   * Para obtener un índice de repetición de panel: `panel1.instanceIndex`
-   * Para obtener el instanceManager de un panel: `_panel1 or panel1.instanceManager`
-   * Para quitar una instancia de un panel: `_panel1.removeInstance(panel1.instanceIndex)`
+  * Para agregar una instancia de panel: `panel1.instanceManager.addInstance()`
+  * Para obtener un índice de repetición de panel: `panel1.instanceIndex`
+  * Para obtener el instanceManager de un panel: `_panel1 or panel1.instanceManager`
+  * Para quitar una instancia de un panel: `_panel1.removeInstance(panel1.instanceIndex)`
 
 ## Tipos de expresión {#expression-types}
 
@@ -77,12 +75,12 @@ La expresión “calculate” se utiliza para calcular automáticamente el valor
 
 **Tipo de devolución**: la expresión devuelve un valor compatible con el campo en el que se muestra el resultado de la expresión (por ejemplo, decimal).
 
-**Ejemplo**: La expresión “calculate” para mostrar la suma de dos campos en **field1** es:
+**Ejemplo**: la expresión &quot;calculate&quot; para mostrar la suma de dos campos en **campo1** es:
 `field2.value + field3.value`
 
 ### Expresión “click” {#click-expression}
 
-La expresión “click” administra las acciones realizadas al hacer clic con un botón. GuideBridge proporciona API para realizar varias funciones, como enviar y validar, que se utilizan junto con la expresión “click”. Para obtener una lista completa de las API, consulte [API de GuideBridge.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
+La expresión “click” administra las acciones realizadas al hacer clic con un botón. GuideBridge proporciona API para realizar varias funciones, como enviar y validar, que se utilizan junto con la expresión “click”. Para obtener una lista completa de las API, consulte [API de GuideBridge.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)
 
 **Se aplica a**: campos de botón
 
@@ -102,7 +100,7 @@ El script de inicialización se activa cuando se inicializa un formulario adapta
 
 **Tipo de devolución:** El script de inicialización no devuelve ningún valor. Si alguna expresión devuelve un valor, este se ignorará.
 
-**Ejemplo:** En un escenario de rellenado previo de datos, para rellenar campos con valor predeterminado `'Adaptive Forms'` cuando su valor se guarda como nulo, la expresión del script de inicialización es:
+**Ejemplo:** En un escenario de rellenado previo de datos, para rellenar campos con el valor predeterminado `'Adaptive Forms'` cuando su valor se guarda como nulo, la expresión del script de inicialización es:
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Expresión “options” {#options-expression}
@@ -137,7 +135,7 @@ La expresión “validate” se utiliza para validar los campos mediante la expr
 
 **Se aplica a**: campos
 
-**Tipo de devolución**: La expresión devuelve un valor Boolean, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
+**Tipo de devolución**: La expresión devuelve un valor Booleano, que representa el estado de validación del campo. El valor **false** representa que el campo no es válido y **true** representa que el campo es válido.
 **Ejemplo**: Para un campo que representa el código postal del Reino Unido, la expresión de validación es:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -159,7 +157,7 @@ El script de implementación de valor se activa cuando:
 
 **Tipo de devolución:** El valor script de implementación de valor no devuelve ningún valor. Si alguna expresión devuelve un valor, este se ignorará.
 
-**Ejemplo:**&#x200B;Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
+**Ejemplo:** Para convertir el caso de los alfabetos introducidos en el campo a mayúsculas en el momento de la confirmación, la expresión de implementación de valor es:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -184,7 +182,7 @@ La expresión “step completion” se utiliza para evitar que un usuario vaya a
 
 **Tipo de devolución**: La expresión devuelve un valor Booleano, que representa si el panel actual es válido o no. **True** representa que el panel actual es válido y el usuario puede navegar hasta el siguiente panel.
 
-**Ejemplo**: en un formulario organizado en varios paneles, antes de navegar al siguiente panel, se valida el panel actual. En estos casos, se utiliza la expresión &quot;step completion&quot;. Por lo general, estas expresiones utilizan la API de validación de GuideBridge. Un ejemplo de expresión &quot;step completion&quot; es:
+**Ejemplo**: En un formulario organizado en varios paneles, antes de navegar hasta el panel siguiente, se valida el panel actual. En estos casos, se utiliza la expresión “step completion”. Por lo general, estas expresiones utilizan la API de validación de GuideBridge. Un ejemplo de expresión &quot;step completion&quot; es:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Validaciones en formularios adaptables {#validations-in-adaptive-form}
@@ -213,7 +211,7 @@ El formato de visualización puede utilizarse para mostrar los datos en distinto
 
 ### GuideBridge: API y eventos {#guidebridge-apis-and-events}
 
-GuideBridge es una colección de API que se pueden usar para interactuar con formularios adaptables en el modelo de memoria en un explorador. Para obtener una introducción detallada a la API de Guide Bridge, los métodos de clase y los eventos expuestos, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+GuideBridge es una colección de API que se pueden usar para interactuar con formularios adaptables en el modelo de memoria en un explorador. Para obtener una introducción detallada a la API de Guide Bridge, los métodos de clase y los eventos expuestos, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 
 >[!NOTE]
 >
@@ -259,7 +257,7 @@ Para utilizar GuideBridge después de inicializar el formulario (el evento `brid
 
 #### Eventos de GuideBridge {#guidebridge-events}
 
-GuideBridge también proporciona ciertos eventos para scripts externos en la página de alojamiento. Los scripts externos pueden escuchar estos eventos y realizar diversas operaciones. Por ejemplo, cada vez que cambia el nombre de usuario en un formulario, también cambia el nombre que se muestra en el encabezado de la página. Para obtener más información sobre estos eventos, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
+GuideBridge también proporciona ciertos eventos para scripts externos en la página de alojamiento. Los scripts externos pueden escuchar estos eventos y realizar diversas operaciones. Por ejemplo, cada vez que cambia el nombre de usuario en un formulario, también cambia el nombre que se muestra en el encabezado de la página. Para obtener más información sobre estos eventos, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)
 
 Utilice el siguiente código para registrar los controladores:
 

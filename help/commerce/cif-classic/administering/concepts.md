@@ -6,13 +6,11 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4534'
+source-wordcount: '4567'
 ht-degree: 1%
-
 ---
-
 # Conceptos{#concepts}
 
 El marco de integración proporciona los mecanismos y componentes para:
@@ -60,33 +58,33 @@ Para optimizar el funcionamiento, tanto AEM como el motor de comercio electróni
 
 * AEM puede:
 
-   * Solicitud:
+  * Solicitud:
 
-      * Información del producto del motor de comercio electrónico.
+    * Información del producto del motor de comercio electrónico.
 
-   * Proporcionar:
+  * Proporcionar:
 
-      * Vistas del usuario para obtener información del producto, el carro de compras y el cierre de compra.
-      * Información del carro de compras y del cierre de compra al motor de comercio electrónico.
-      * Optimización del motor de búsqueda (SEO).
-      * Funcionalidad de la comunidad.
-      * Interacciones de marketing no estructuradas.
+    * Vistas del usuario para obtener información del producto, el carro de compras y el cierre de compra.
+    * Información del carro de compras y del cierre de compra al motor de comercio electrónico.
+    * Optimización del motor de búsqueda (SEO).
+    * Funcionalidad de la comunidad.
+    * Interacciones de marketing no estructuradas.
 
 * El motor de comercio electrónico puede:
 
-   * Proporcionar:
+  * Proporcionar:
 
-      * Información del producto de la base de datos.
-      * Administración de variantes de producto.
-      * Order Management.
-      * ERP (planificación de recursos empresariales).
-      * Buscar en la información del producto.
+    * Información del producto de la base de datos.
+    * Administración de variantes de producto.
+    * Order Management.
+    * ERP (planificación de recursos empresariales).
+    * Buscar en la información del producto.
 
-   * Proceso:
+  * Proceso:
 
-      * El carro de compras.
-      * El pago.
-      * Cumplimiento del pedido.
+    * El carro de compras.
+    * El pago.
+    * Cumplimiento del pedido.
 
 >[!NOTE]
 >
@@ -126,7 +124,7 @@ AEM eCommerce se implementa con un motor de comercio electrónico:
 >
 >AEM eCommerce implementado en AEM mediante desarrollo genérico basado en JCR:
 >
->* Un ejemplo de comercio electrónico independiente y nativo de AEM para ilustrar el uso de la API. Esto se puede utilizar para controlar los datos del producto, los carros de compras y el cierre de compra con la visualización de datos y las campañas de marketing existentes. En este caso, la base de datos de productos se almacena en el repositorio nativo de AEM (implementación de Adobe de [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
+>* Un ejemplo de comercio electrónico independiente y nativo de AEM para ilustrar el uso de la API. Esto se puede utilizar para controlar los datos del producto, los carros de compras y el cierre de compra con la visualización de datos y las campañas de marketing existentes. En este caso, la base de datos de productos se almacena en el repositorio nativo de AEM (implementación de Adobe de [JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)).
 >
 >  La instalación estándar de AEM contiene los conceptos básicos de la [implementación genérica de comercio electrónico](/help/commerce/cif-classic/administering/generic.md).
 
@@ -150,7 +148,7 @@ Aunque normalmente un proyecto necesita desarrollar su propio proveedor de comer
 >
 >Los importadores de Geometrixx utilizan archivos CSV; hay una descripción del esquema aceptado (con propiedades personalizadas permitidas) en los comentarios anteriores a su implementación.
 
-[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantiene (a través de [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) una lista de implementaciones de las interfaces [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) y [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html). Se enumeran en el campo desplegable **Importador/Proveedor de Commerce** del asistente del importador (con la propiedad `commerceProvider` como nombre).
+[ProductServicesManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantiene (a través de [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) una lista de implementaciones de las interfaces [ProductImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) y [CatalogBlueprintImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html). Se enumeran en el campo desplegable **Importador/Proveedor de Commerce** del asistente del importador (con la propiedad `commerceProvider` como nombre).
 
 Cuando un importador/proveedor comercial específico está disponible en la lista desplegable, los datos suplementarios que necesite se deben definir (según el tipo de importador) en:
 
@@ -169,24 +167,24 @@ El sistema integrado se encarga de las siguientes funciones para mantener los da
 
 * Usuario de gestión de información del producto (PIM) que mantiene:
 
-   * Información del producto.
-   * Taxonomía, categorización, aprobación.
-   * Interactúa con la administración de recursos digitales.
-   * Precios: a menudo proviene de un sistema ERP y no se mantiene explícitamente en el sistema comercial.
+  * Información del producto.
+  * Taxonomía, categorización, aprobación.
+  * Interactúa con la administración de recursos digitales.
+  * Precios: a menudo proviene de un sistema ERP y no se mantiene explícitamente en el sistema comercial.
 
 * Autor/responsable de marketing que mantiene lo siguiente:
 
-   * Contenido de marketing para todos los canales.
-   * Promociones.
-   * Cupones.
-   * Campañas.
+  * Contenido de marketing para todos los canales.
+  * Promociones.
+  * Cupones.
+  * Campañas.
 
 * Internauta/comprador que:
 
-   * Consulta la información del producto.
-   * Coloca artículos en el carro de compras.
-   * Comprueba sus pedidos.
-   * Se espera el cumplimiento del pedido.
+  * Consulta la información del producto.
+  * Coloca artículos en el carro de compras.
+  * Comprueba sus pedidos.
+  * Se espera el cumplimiento del pedido.
 
 Aunque la ubicación real puede depender de la implementación; por ejemplo, genérica o con un motor de comercio electrónico:
 
@@ -265,15 +263,15 @@ Los atributos individuales que se mantienen sobre cada producto pueden depender 
 
   Información sobre planificación de recursos empresariales (ERP).
 
-   * **SKU**
+  * **SKU**
 
-     Información sobre la unidad de almacén (SKU).
+    Información sobre la unidad de almacén (SKU).
 
-   * **Color**
-   * **Tamaño**
-   * **Precio**
+  * **Color**
+  * **Tamaño**
+  * **Precio**
 
-     El precio unitario del producto.
+    El precio unitario del producto.
 
 * **Resumen**
 
@@ -394,19 +392,19 @@ Tenga en cuenta que estas pruebas de rendimiento requieren conocer y analizar el
 
 * Volúmenes de contenido
 
-   * Recursos
-   * Productos y SKU de I18ned localizados
+  * Recursos
+  * Productos y SKU de I18ned localizados
 
 * Actividad de usuario:
 
-   * Edición masiva
-   * Publicación masiva
-   * Solicitudes de búsqueda intensas
+  * Edición masiva
+  * Publicación masiva
+  * Solicitudes de búsqueda intensas
 
 * Procesos de fondo
 
-   * Importaciones
-   * Actualizaciones de sincronización (por ejemplo, precios)
+  * Importaciones
+  * Actualizaciones de sincronización (por ejemplo, precios)
 
 * Requisitos de mantenimiento (copia de seguridad, optimización de Tar PM, recopilación de residuos del almacén de datos, etc.)
 
@@ -505,9 +503,9 @@ Los cupones son un método probado y probado de ofrecer descuentos para atraer a
 
 * Suministro de cupones:
 
-   * Un código de cupón (que el comprador debe escribir en el carro de compras).
-   * Una etiqueta de cupón (que se mostrará después de que el comprador la haya introducido en el carro de compras).
-   * Una ruta de promoción (que define la acción que aplica el cupón).
+  * Un código de cupón (que el comprador debe escribir en el carro de compras).
+  * Una etiqueta de cupón (que se mostrará después de que el comprador la haya introducido en el carro de compras).
+  * Una ruta de promoción (que define la acción que aplica el cupón).
 
 * Los motores de comercio externo también pueden proporcionar cupones.
 
@@ -516,9 +514,9 @@ En AEM:
 * Un cupón es un componente basado en páginas que se crea o edita con la consola Sitios web.
 * El componente **Cupón** proporciona:
 
-   * Un procesador para la administración de cupones; muestra todos los cupones que hay actualmente en el carro de compras.
-   * Los cuadros de diálogo de edición (formulario) para administrar (añadir/eliminar) los cupones.
-   * Las acciones necesarias para agregar o eliminar cupones en el carro de compras.
+  * Un procesador para la administración de cupones; muestra todos los cupones que hay actualmente en el carro de compras.
+  * Los cuadros de diálogo de edición (formulario) para administrar (añadir/eliminar) los cupones.
+  * Las acciones necesarias para agregar o eliminar cupones en el carro de compras.
 
 * Los cupones no tienen sus propias fechas u horas de activación y desactivación, sino que utilizan las de sus campañas principales.
 
@@ -541,16 +539,16 @@ Las promociones no las mantienen los gestores de información de productos, sino
 * Una promoción es un componente basado en páginas que se crea o edita con la consola Sitios web. &quot;
 * Oferta de promociones:
 
-   * Una prioridad
-   * Una ruta del controlador de promoción
+  * Una prioridad
+  * Una ruta del controlador de promoción
 
 * Puede conectar las promociones a una campaña para definir su fecha/hora de activación/desactivación.
 * Puede conectar las promociones a una experiencia para definir sus segmentos.
 * Las promociones que no estén conectadas a una experiencia no se activarán por sí solas, sino que se podrán activar mediante un cupón.
 * El componente Promoción contiene:
 
-   * procesadores y cuadros de diálogo para la administración de promociones
-   * subcomponentes para procesar y editar parámetros de configuración específicos de los controladores de promoción
+  * procesadores y cuadros de diálogo para la administración de promociones
+  * subcomponentes para procesar y editar parámetros de configuración específicos de los controladores de promoción
 
 En AEM, las promociones también están integradas en [Campaign Management](/help/sites-authoring/personalization.md):
 
@@ -707,8 +705,8 @@ El carro de compras proporciona lo siguiente:
 * vínculos a las páginas de productos de los elementos seleccionados
 * la capacidad de:
 
-   * actualizar el número/cantidad de artículos individuales
-   * quitar elementos individuales
+  * actualizar el número/cantidad de artículos individuales
+  * quitar elementos individuales
 
 ![ecommerce_shoppingcart](/help/sites-administering/assets/ecommerce_shoppingcart.png)
 

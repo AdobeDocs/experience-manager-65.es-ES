@@ -10,13 +10,11 @@ exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '327'
 ht-degree: 0%
-
 ---
-
 # Aspectos básicos {#liking-essentials}
 
 El componente Me gusta, una subclase [tally](tally.md), es una herramienta útil que permite a los miembros expresar una opinión positiva sobre un contenido determinado simplemente seleccionando el icono del corazón.
@@ -60,9 +58,9 @@ No se admite la publicación anónima de elementos similares. Los visitantes del
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API de recuento](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Extremos de recuento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Extremos de recuento](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 

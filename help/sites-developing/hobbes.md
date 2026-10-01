@@ -1,41 +1,41 @@
 ---
 title: Prueba de la IU
-description: AEM AEM proporciona un marco de trabajo para automatizar pruebas para la interfaz de usuario de la
+description: AEM proporciona un marco para automatizar pruebas para la interfaz de usuario de AEM
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components, testing
+
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 1%
-
+source-wordcount: '795'
+ht-degree: 4%
 ---
-
 # Prueba de la IU{#testing-your-ui}
 
 >[!NOTE]
 >
->AEM A partir de la versión 6.5, el marco de prueba de la interfaz de usuario de hobbes.js quedará obsoleto. Adobe no planea realizar más mejoras en él y recomienda a los clientes utilizar la automatización de Selenium.
+>A partir de AEM 6.5, el marco de prueba de la interfaz de usuario de hobbes.js quedará obsoleto. Adobe no planea realizar más mejoras en él y recomienda a los clientes utilizar la automatización de Selenium.
 >
 >Ver [Funciones obsoletas y eliminadas](/help/release-notes/deprecated-removed-features.md).
 
-AEM AEM proporciona un marco de trabajo para automatizar pruebas para la interfaz de usuario de la. Con el marco de trabajo, puede escribir y ejecutar pruebas de interfaz de usuario directamente en un explorador web. El marco de trabajo proporciona una API de JavaScript para crear pruebas.
+AEM proporciona un marco para automatizar pruebas para la interfaz de usuario de AEM. Con el marco de trabajo, puede escribir y ejecutar pruebas de interfaz de usuario directamente en un explorador web. El marco de trabajo proporciona una API de JavaScript para crear pruebas.
 
-AEM El marco de trabajo de prueba utiliza Hobbes.js, una biblioteca de prueba escrita en JavaScript. AEM El marco de Hobbes.js se desarrolló para realizar pruebas de la manera de hacer las pruebas de los productos de la red como parte del proceso de desarrollo. AEM El marco de trabajo ya está disponible para uso público para probar sus aplicaciones de.
+El marco de prueba de AEM utiliza Hobbes.js, una biblioteca de prueba escrita en JavaScript. El marco de Hobbes.js se desarrolló para probar AEM como parte del proceso de desarrollo. El marco de trabajo ya está disponible para uso público para probar las aplicaciones de AEM.
 
 >[!NOTE]
 >
->Consulte la [documentación](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) de Hobbes.js para obtener información detallada sobre la API.
+>Consulte la [documentación](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html) de Hobbes.js para obtener información detallada sobre la API.
 
 ## Estructura de las pruebas {#structure-of-tests}
 
-AEM Al utilizar pruebas automatizadas en el marco de la aplicación de, es importante comprender los términos siguientes:
+Al utilizar pruebas automatizadas en AEM, es importante comprender los siguientes términos:
 
 | Acción | Una **acción** es una actividad específica de una página web, como hacer clic en un vínculo o en un botón. |
 |---|---|
@@ -104,7 +104,7 @@ Los grupos de pruebas se ejecutan secuencialmente en el orden en que aparecen en
 
 El siguiente procedimiento lo guía durante la creación y ejecución de un grupo de pruebas con [contenido de We.Retail](/help/sites-developing/we-retail.md), pero puede modificar fácilmente la prueba para que utilice una página web diferente.
 
-Para obtener información detallada sobre cómo crear sus propios grupos de pruebas, consulte la [documentación de la API de Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+Para obtener información detallada sobre cómo crear sus propios grupos de pruebas, consulte la [documentación de la API de Hobbes.js](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
 1. Abra CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Haga clic con el botón derecho en la carpeta `/etc/clientlibs` y haga clic en **Crear > Crear carpeta**. Escriba `myTests` para el nombre y haga clic en **Aceptar**.
@@ -115,7 +115,7 @@ Para obtener información detallada sobre cómo crear sus propios grupos de prue
 
 1. Agregue las siguientes propiedades al nodo myFirstTest:
 
-   | Nombre | Tipo | Valor  |
+   | Nombre | Tipo | Valor |
    |---|---|---|
    | `categories` | Cadena [] | `granite.testing.hobbes.tests` |
    | `dependencies` | Cadena [] | `granite.testing.hobbes.testrunner` |

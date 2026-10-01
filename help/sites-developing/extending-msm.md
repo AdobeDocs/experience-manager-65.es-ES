@@ -10,13 +10,11 @@ exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2718'
 ht-degree: 2%
-
 ---
-
 # Ampliación del administrador de varios sitios{#extending-the-multi-site-manager}
 
 Esta página le ayuda a ampliar las funcionalidades del Administrador de varios sitios:
@@ -43,8 +41,8 @@ Esta página le ayuda a ampliar las funcionalidades del Administrador de varios 
 
 Multi Site Management consta de los siguientes paquetes:
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 Los objetos principales de la API de MSM interactúan de la siguiente manera (consulte también [Términos utilizados](/help/sites-administering/msm.md#terms-used)):
 
@@ -56,28 +54,28 @@ Los objetos principales de la API de MSM interactúan de la siguiente manera (co
 
   ![Modelo](assets/chlimage_1-74.png)
 
-   * El uso de una configuración de modelo ( `Blueprint`) es opcional, pero:
+  * El uso de una configuración de modelo ( `Blueprint`) es opcional, pero:
 
-      * Permite al autor utilizar la opción **Despliegue** en el origen (para insertar (explícitamente) modificaciones en Live Copies que heredan de este origen).
-      * Permite al autor utilizar **Crear sitio**; esto permite al usuario seleccionar idiomas fácilmente y configurar la estructura de la Live Copy.
-      * Define la configuración de despliegue predeterminada para cualquier Live Copies resultante.
+    * Permite al autor utilizar la opción **Despliegue** en el origen (para insertar (explícitamente) modificaciones en Live Copies que heredan de este origen).
+    * Permite al autor utilizar **Crear sitio**; esto permite al usuario seleccionar idiomas fácilmente y configurar la estructura de la Live Copy.
+    * Define la configuración de despliegue predeterminada para cualquier Live Copies resultante.
 
 * **`LiveRelationship`**
 
   El `LiveRelationship` especifica la conexión (relación) entre un recurso de la rama de Live Copy y su recurso de origen/modelo equivalente.
 
-   * Las relaciones se utilizan para realizar la herencia y el despliegue.
-   * Los objetos de `LiveRelationship` proporcionan acceso (referencias) a los objetos de las configuraciones de despliegue (`RolloutConfig`), `LiveCopy` y `LiveStatus` relacionados con la relación.
+  * Las relaciones se utilizan para realizar la herencia y el despliegue.
+  * Los objetos de `LiveRelationship` proporcionan acceso (referencias) a los objetos de las configuraciones de despliegue (`RolloutConfig`), `LiveCopy` y `LiveStatus` relacionados con la relación.
 
-   * Por ejemplo, se crea una Live Copy en `/content/copy/us` a partir del origen/modelo en `/content/we-retail/language-masters`. Los recursos `/content/we.retail/language-masters/en/jcr:content` y `/content/copy/us/en/jcr:content` forman una relación.
+  * Por ejemplo, se crea una Live Copy en `/content/copy/us` a partir del origen/modelo en `/content/we-retail/language-masters`. Los recursos `/content/we.retail/language-masters/en/jcr:content` y `/content/copy/us/en/jcr:content` forman una relación.
 
 * **`LiveCopy`**
 
   `LiveCopy` contiene los detalles de configuración para las relaciones ( `LiveRelationship`) entre los recursos de live copy y sus recursos de origen/modelo.
 
-   * Utilice la clase `LiveCopy` para acceder a la ruta de acceso de la página, la ruta de acceso de la página de origen/modelo, las configuraciones de despliegue y si las páginas secundarias también se incluyen en `LiveCopy`.
+  * Utilice la clase `LiveCopy` para acceder a la ruta de acceso de la página, la ruta de acceso de la página de origen/modelo, las configuraciones de despliegue y si las páginas secundarias también se incluyen en `LiveCopy`.
 
-   * Se crea un nodo `LiveCopy` cada vez que se usa **Crear sitio** o **Crear Live Copy**.
+  * Se crea un nodo `LiveCopy` cada vez que se usa **Crear sitio** o **Crear Live Copy**.
 
 * **`LiveStatus`**
 
@@ -87,7 +85,7 @@ Los objetos principales de la API de MSM interactúan de la siguiente manera (co
 
   Un `LiveAction` es una acción que se ejecuta en cada recurso involucrado en el despliegue.
 
-   * Las LiveActions solo se generan mediante RolloutConfigs.
+  * Las LiveActions solo se generan mediante RolloutConfigs.
 
 * **`LiveActionFactory`**
 
@@ -97,29 +95,29 @@ Los objetos principales de la API de MSM interactúan de la siguiente manera (co
 
   El `RolloutConfig` contiene una lista de `LiveActions`, que se utilizará cuando se active. `LiveCopy` hereda `RolloutConfig` y el resultado está presente en `LiveRelationship`.
 
-   * La configuración de una Live Copy por primera vez también utiliza un RolloutConfig (que almacena en déclencheur las LiveActions).
+  * La configuración de una Live Copy por primera vez también utiliza un RolloutConfig (que almacena en déclencheur las LiveActions).
 
 ## Creación de una nueva acción de sincronización {#creating-a-new-synchronization-action}
 
 Cree acciones de sincronización personalizadas para utilizarlas con las configuraciones de despliegue. Cree una acción de sincronización cuando las [acciones instaladas](/help/sites-administering/msm-sync.md#installed-synchronization-actions) no cumplan con los requisitos específicos de la aplicación. Para ello, cree dos clases:
 
-* Implementación de la interfaz [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) que realiza la acción.
-* Componente OSGI que implementa la interfaz [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) y crea instancias de su clase `LiveAction`.
+* Implementación de la interfaz [`com.day.cq.wcm.msm.api.LiveAction`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) que realiza la acción.
+* Componente OSGI que implementa la interfaz [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) y crea instancias de su clase `LiveAction`.
 
 `LiveActionFactory` crea instancias de la clase `LiveAction` para una configuración determinada:
 
 * `LiveAction` clases incluyen los siguientes métodos:
 
-   * `getName`: Devuelve el nombre de la acción. El nombre se utiliza para hacer referencia a la acción, por ejemplo, en las configuraciones de despliegue.
-   * `execute`: realiza las tareas de la acción.
+  * `getName`: Devuelve el nombre de la acción. El nombre se utiliza para hacer referencia a la acción, por ejemplo, en las configuraciones de despliegue.
+  * `execute`: realiza las tareas de la acción.
 
 * `LiveActionFactory` clases incluyen los siguientes miembros:
 
-   * `LIVE_ACTION_NAME`: un campo que contiene el nombre del `LiveAction` asociado. Este nombre debe coincidir con el valor devuelto por el método `getName` de la clase `LiveAction`.
+  * `LIVE_ACTION_NAME`: un campo que contiene el nombre del `LiveAction` asociado. Este nombre debe coincidir con el valor devuelto por el método `getName` de la clase `LiveAction`.
 
-   * `createAction`: crea una instancia de `LiveAction`. El parámetro `Resource` opcional se puede usar para proporcionar información de configuración.
+  * `createAction`: crea una instancia de `LiveAction`. El parámetro `Resource` opcional se puede usar para proporcionar información de configuración.
 
-   * `createsAction`: devuelve el nombre del `LiveAction` asociado.
+  * `createsAction`: devuelve el nombre del `LiveAction` asociado.
 
 ### Acceso al nodo de configuración de LiveAction {#accessing-the-liveaction-configuration-node}
 
@@ -127,7 +125,7 @@ Utilice el nodo de configuración `LiveAction` del repositorio para almacenar in
 
 Por ejemplo, un `LiveAction` necesita almacenar el nombre del autor del modelo. Una propiedad del nodo de configuración incluye el nombre de la propiedad de la página de modelo que almacena la información. En tiempo de ejecución, `LiveAction` recupera el nombre de propiedad de la configuración y, a continuación, obtiene el valor de propiedad.
 
-El parámetro del método [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) es un objeto `Resource`. Este objeto `Resource` representa el nodo `cq:LiveSyncAction` para esta acción activa en la configuración de despliegue; consulte [Creación de una configuración de despliegue](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Como de costumbre al utilizar un nodo de configuración, debe adaptarlo a un objeto `ValueMap`:
+El parámetro del método [`LiveActionFactory.createAction`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) es un objeto `Resource`. Este objeto `Resource` representa el nodo `cq:LiveSyncAction` para esta acción activa en la configuración de despliegue; consulte [Creación de una configuración de despliegue](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Como de costumbre al utilizar un nodo de configuración, debe adaptarlo a un objeto `ValueMap`:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -145,9 +143,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 Se proporcionan los objetos siguientes como parámetros del método `execute` del objeto `LiveAction`:
 
-* Un objeto [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) que representa el origen de Live Copy.
+* Un objeto [`Resource`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/api/resource/Resource.html) que representa el origen de Live Copy.
 * Un objeto `Resource` que representa el destino de Live Copy.
-* El objeto [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) para Live Copy.
+* El objeto [`LiveRelationship`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) para Live Copy.
 * El valor `autoSave` indica si su `LiveAction` debe guardar los cambios realizados en el repositorio.
 
 * El valor reset indica el modo reset del despliegue.
@@ -164,7 +162,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->Los argumentos `Resource` pueden ser objetos `null` o `Resources` que no se adaptan a objetos `Node`, como objetos [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
+>Los argumentos `Resource` pueden ser objetos `null` o `Resources` que no se adaptan a objetos `Node`, como objetos [`NonExistingResource`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
 
 ## Creación de una nueva configuración de despliegue {#creating-a-new-rollout-configuration}
 
@@ -216,10 +214,10 @@ La nueva configuración de despliegue está disponible al establecer configuraci
    * **Nombre**: `cq:trigger`
      **Tipo**: `String`
      **Value**: [Déclencheur de despliegue](/help/sites-administering/msm-sync.md#rollout-triggers) que se va a usar. Seleccionar de:
-      * `rollout`
-      * `modification`
-      * `publish`
-      * `deactivate`
+     * `rollout`
+     * `modification`
+     * `publish`
+     * `deactivate`
 
 1. Haga clic en **Guardar todo**.
 
@@ -237,7 +235,7 @@ Agregue nodos secundarios de tipo `cq:LiveSyncAction` para agregar acciones de s
 1. **Crear** un nodo con las siguientes propiedades de nodo:
 
    * **Nombre**: El nombre de nodo de la acción de sincronización.
-El nombre debe ser el mismo que **Action Name** de la tabla bajo [Acciones de sincronización](/help/sites-administering/msm-sync.md#installed-synchronization-actions), por ejemplo, `contentCopy` o `workflow`.
+     El nombre debe ser el mismo que **Action Name** de la tabla bajo [Acciones de sincronización](/help/sites-administering/msm-sync.md#installed-synchronization-actions), por ejemplo, `contentCopy` o `workflow`.
    * **Tipo**: `cq:LiveSyncAction`
 
 1. Añada y configure tantos nodos de acción de sincronización como sea necesario. Reorganice los nodos de acción para que su orden coincida con el orden en que desea que se produzcan. El nodo de acción superior se produce primero.
@@ -659,11 +657,11 @@ Por ejemplo, si se agregan dos propiedades de página nuevas:
 
 * Correo electrónico de contacto:
 
-   * No es necesario desplegar esta propiedad, ya que será diferente en cada país (o marca, etc.).
+  * No es necesario desplegar esta propiedad, ya que será diferente en cada país (o marca, etc.).
 
 * Estilo visual clave:
 
-   * El requisito del proyecto es que esta propiedad se implemente, ya que es (generalmente) común a todos los países (o marcas, etc.).
+  * El requisito del proyecto es que esta propiedad se implemente, ya que es (generalmente) común a todos los países (o marcas, etc.).
 
 A continuación, debe asegurarse de que:
 
@@ -679,28 +677,28 @@ La propiedad dialog controla si una propiedad de página está sujeta a desplieg
 
 * `cq-msm-lockable`
 
-   * es aplicable a los elementos de un cuadro de diálogo de IU táctil
-   * creará el símbolo de vínculo de cadena en el cuadro de diálogo
-   * solo permite editar si se cancela la herencia (el vínculo de cadena está roto)
-   * solo se aplica al primer nivel secundario del recurso
-      * **Tipo**: `String`
+  * es aplicable a los elementos de un cuadro de diálogo de IU táctil
+  * creará el símbolo de vínculo de cadena en el cuadro de diálogo
+  * solo permite editar si se cancela la herencia (el vínculo de cadena está roto)
+  * solo se aplica al primer nivel secundario del recurso
+    * **Tipo**: `String`
 
-      * **Value**: contiene el nombre de la propiedad en consideración (y es comparable al valor de la propiedad `name`; por ejemplo, vea
-        `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+    * **Value**: contiene el nombre de la propiedad en consideración (y es comparable al valor de la propiedad `name`; por ejemplo, vea
+      `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Cuando se ha definido `cq-msm-lockable`, romper/cerrar la cadena interactuará con MSM de la siguiente manera:
 
 * si el valor de `cq-msm-lockable` es:
 
-   * **Relativo** (por ejemplo, `myProperty` o `./myProperty`)
+  * **Relativo** (por ejemplo, `myProperty` o `./myProperty`)
 
-      * agregará y quitará la propiedad de `cq:propertyInheritanceCancelled`.
+    * agregará y quitará la propiedad de `cq:propertyInheritanceCancelled`.
 
-   * **Absoluto** (por ejemplo, `/image`)
+  * **Absoluto** (por ejemplo, `/image`)
 
-      * romper la cadena cancelará la herencia agregando el mixin `cq:LiveSyncCancelled` a `./image` y estableciendo `cq:isCancelledForChildren` en `true`.
+    * romper la cadena cancelará la herencia agregando el mixin `cq:LiveSyncCancelled` a `./image` y estableciendo `cq:isCancelledForChildren` en `true`.
 
-      * al cerrar la cadena, se revierte la herencia.
+    * al cerrar la cadena, se revierte la herencia.
 
 >[!NOTE]
 >

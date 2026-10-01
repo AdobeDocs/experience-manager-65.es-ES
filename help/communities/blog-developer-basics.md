@@ -10,16 +10,14 @@ exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 2%
-
+source-wordcount: '475'
+ht-degree: 1%
 ---
-
 # Blog Essentials {#blog-essentials}
 
-AEM A partir de las comunidades de 6.1 de, un blog es una actividad de la comunidad. Los artículos del blog ahora se publican desde el entorno de publicación, donde anteriormente, los artículos de blog solo se podían crear y publicar en el entorno de creación.
+A partir de las comunidades de AEM 6.1, un blog es una actividad de la comunidad. Los artículos del blog ahora se publican desde el entorno de publicación, donde anteriormente, los artículos de blog solo se podían crear y publicar en el entorno de creación.
 
 Los artículos de blog ahora pueden ser creados por cualquier miembro de la comunidad, a menos que estén restringidos a miembros privilegiados.
 
@@ -78,9 +76,9 @@ La función de blog está compuesta por dos componentes principales que están d
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [API de blog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Extremos de blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Extremos del blog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](/help/communities/server-customize.md)
 
@@ -93,7 +91,7 @@ Una estructura de sitio de comunidad que incluye la [función Blog](/help/commun
 La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](/help/communities/working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de las comunidades de AEM 6.1, el uso de un [almacén común](/help/communities/working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
@@ -112,11 +110,11 @@ Consulte [Editor principal](/help/communities/deploy-communities.md#primary-publ
 
 ## Permitir medios enriquecidos {#allowing-rich-media}
 
-AEM La plataforma bloquea los vínculos de otros sitios web para evitar ataques XSS como se describe en
+La plataforma AEM bloquea los vínculos de otros sitios web para evitar ataques XSS como se describe en
 
-* [Protect con scripts en sitios múltiples (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Proteger contra scripts en sitios múltiples (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-AEM A partir de la versión 6.2 de la versión, las modificaciones que se requerían anteriormente para realizarse manualmente se incluyen en el archivo de configuración predeterminado de AntiSamy.
+A partir de AEM 6.2, las modificaciones que se requerían anteriormente para realizarse manualmente se incluyen en el archivo de configuración predeterminado de AntiSamy.
 
 Los medios enriquecidos están incrustados en un artículo de blog al seleccionar el icono `Embed Media from External Sites`:
 

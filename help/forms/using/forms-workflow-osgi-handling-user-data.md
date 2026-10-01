@@ -1,19 +1,20 @@
 ---
 title: Flujos de trabajo centrados en Forms en OSGi | Gestión de datos de usuario
+
 description: Flujos de trabajo centrados en Forms en OSGi | Gestión de datos de usuario
+
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 role: Admin,User
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1033'
 ht-degree: 97%
-
 ---
-
 # Flujos de trabajo centrados en Forms en OSGi | Gestión de datos de usuario {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Los flujos de trabajo de AEM centrados en Forms le permiten automatizar procesos empresariales reales centrados en Forms. Los flujos de trabajo constan de una serie de pasos que se ejecutan en el orden especificado en el modelo de flujo de trabajo asociado. Cada paso realiza una acción específica, como asignar una tarea a un usuario o enviar un mensaje de correo electrónico. Los flujos de trabajo pueden interactuar con los recursos del repositorio, las cuentas de usuario y los servicios. Por lo tanto, los flujos de trabajo pueden coordinar actividades complejas que implican cualquiera de los aspectos de Experience Manager.
@@ -157,5 +158,5 @@ Es necesario ser administrador de AEM para eliminar los datos de usuario de las 
 También puede utilizar API para acceder a los nodos y las propiedades y quitarlos. Consulte los siguientes documentos para obtener más información.
 
 * [Cómo acceder mediante programación al JCR de AEM](/help/sites-developing/access-jcr.md)
-* [Eliminación de nodos y propiedades](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Eliminación de nodos y propiedades](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [Referencia de API](https://helpx.adobe.com/es/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

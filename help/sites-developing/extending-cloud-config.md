@@ -9,20 +9,18 @@ exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '570'
 ht-degree: 4%
-
 ---
-
 # Configuraciones de Cloud Service{#cloud-service-configurations}
 
 Las configuraciones están diseñadas para proporcionar la lógica y la estructura para almacenar configuraciones de servicio.
 
 Puede ampliar las instancias existentes para crear sus propias configuraciones.
 
-## Conceptos  {#concepts}
+## Conceptos {#concepts}
 
 Los principios utilizados para desarrollar las configuraciones se han basado en los siguientes conceptos:
 
@@ -49,8 +47,8 @@ Para proporcionar una configuración para nuevos servicios, haga lo siguiente:
 
 * En esta sección:
 
-   * una plantilla de configuración
-   * un componente de configuración
+  * una plantilla de configuración
+  * un componente de configuración
 
 La plantilla y el componente deben heredar `sling:resourceSuperType` de la plantilla base:
 
@@ -136,11 +134,11 @@ propertyname
 
 ### API {#api}
 
-Para obtener documentación de referencia sobre la API, consulte [com.day.cq.wcm.webserviceSupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Para obtener documentación de referencia sobre la API, consulte [com.day.cq.wcm.webserviceSupport](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
-### AEM Integración de {#aem-integration}
+### Integración de AEM {#aem-integration}
 
-Los servicios disponibles se enumeran en la ficha **Cloud Service** del cuadro de diálogo **Propiedades de página** (de cualquier página que herede de `foundation/components/page` o `wcm/mobile/components/page`).
+Los servicios disponibles se enumeran en la ficha **Cloud Services** del cuadro de diálogo **Propiedades de página** (de cualquier página que herede de `foundation/components/page` o `wcm/mobile/components/page`).
 
 La pestaña también proporciona lo siguiente:
 
@@ -165,7 +163,7 @@ La propiedad será cifrada automáticamente (mediante el servicio `CryptoSupport
 >
 >De manera predeterminada, `EcryptionPostProcessor` solo cifra `POST` solicitudes realizadas a `/etc/cloudservices`.
 
-#### Propiedades adicionales para la página de servicio jcr:nodos de contenido {#additional-properties-for-service-page-jcr-content-nodes}
+#### Propiedades adicionales para los nodos jcr:content de la página de servicio {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table>
  <tbody>
@@ -175,7 +173,7 @@ La propiedad será cifrada automáticamente (mediante el servicio `CryptoSupport
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Ruta de referencia a un componente que se incluirá automáticamente en la página.<br />: se utiliza para funcionalidad adicional e inclusiones de JS.<br /> Esto incluye el componente en la página donde se incluye <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente antes de la etiqueta <code>body</code>).<br /> En caso de que Adobe Analytics y Adobe Target se comporten de esta manera, se usa para incluir funcionalidades adicionales, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td>
+   <td>Ruta de acceso de referencia a un componente que se incluirá automáticamente en la página.<br /> Se usa para funcionalidad adicional e inclusiones de JS.<br /> Esto incluye el componente en la página donde se incluye <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente antes de la etiqueta <code>body</code>).<br /> En caso de que se publique Adobe Analytics y Adobe Target, se usa para incluir funcionalidades adicionales, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td>
   </tr>
   <tr>
    <td>descripción</td>

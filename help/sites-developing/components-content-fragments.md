@@ -11,9 +11,9 @@ exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1004'
 ht-degree: 5%
 ---
 # Componentes para fragmentos de contenido{#components-for-content-fragments}
@@ -129,4 +129,4 @@ La configuración predeterminada utiliza los siguientes transformadores:
 * `transformer-cfm-parfilter`: elimina los párrafos no deseados si se especifica un intervalo de párrafos (como se puede hacer con el componente Fragmento de contenido)
 * `transformer-cfm-assetprocessor`: se utiliza internamente para recuperar una lista de los recursos incrustados en el fragmento
 
-El proceso de representación se expone a través de [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) y los componentes personalizados lo pueden utilizar (por ejemplo), si es necesario.
+El proceso de representación se expone a través de [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) y los componentes personalizados lo pueden utilizar (por ejemplo), si es necesario.

@@ -1,6 +1,6 @@
 ---
 title: Gestión básica
-description: Información general sobre la administración básica al utilizar el entorno de creación de Adobe Experience Manager. Utiliza la consola Sitios como base.
+description: Información general sobre la administración básica al utilizar el entorno de creación de Adobe Experience Manager. Utiliza la consola de Sites como base.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -9,21 +9,19 @@ exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 4%
-
+source-wordcount: '1189'
+ht-degree: 5%
 ---
-
 # Gestión básica{#basic-handling}
 
 >[!NOTE]
 >
->* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de Adobe Experience Manager AEM (). Utiliza la consola **Sitios** como base. 
+>* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de Adobe Experience Manager (AEM). Utiliza la consola **Sitios** como base.
 >
 >* Algunas funcionalidades no están disponibles en todas las consolas y otras adicionales en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se trata con más detalle en otras páginas.
->* AEM Los métodos abreviados del teclado están disponibles en todo el mundo En particular cuando [usa las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [edita páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* Los métodos abreviados del teclado están disponibles mediante AEM. En particular cuando [usa las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [edita páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## La pantalla de bienvenida {#the-welcome-screen}
@@ -46,15 +44,15 @@ Las consolas principales son:
   </tr>
   <tr>
    <td><strong>Bienvenido</strong></td>
-   <td>AEM Proporciona información general y acceso directo (mediante vínculos) a la funcionalidad principal de los recursos de la.</td>
+   <td>Proporciona información general y acceso directo (mediante vínculos) a las funciones principales de AEM.</td>
   </tr>
   <tr>
    <td><strong>Assets digital</strong><br /> </td>
-   <td>Estas consolas le permiten importar y <a href="/help/sites-classic-ui-authoring/classicui-assets.md">administrar recursos digitales</a>, como imágenes, vídeos, documentos y archivos de audio. AEM Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de. </td>
+   <td>Estas consolas le permiten importar y <a href="/help/sites-classic-ui-authoring/classicui-assets.md">administrar recursos digitales</a>, como imágenes, vídeos, documentos y archivos de audio. Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. </td>
   </tr>
   <tr>
    <td><strong>Lanzamientos</strong></td>
-   <td>Esto le ayuda a administrar sus <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanzamientos</a>; lo cual le permite desarrollar el contenido para una versión futura de una o más páginas web activadas.<br /> <i>Nota: en la IU táctil, gran parte de la misma funcionalidad está disponible en la consola Sitios, junto con el carril Referencias.</i> <i>Si es necesario, esta consola está disponible en la consola Herramientas; seleccione Operaciones y luego Inicios.</i></td>
+   <td>Esto le ayuda a administrar sus <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanzamientos</a>; lo que le permite desarrollar el contenido para una versión futura de una o más páginas web activadas.<br /> <i>Nota: en la IU táctil, gran parte de la misma funcionalidad está disponible en la consola Sitios, junto con el carril Referencias.</i> <i>Si es necesario, esta consola está disponible en la consola Herramientas; seleccione Operaciones y luego Inicios.</i></td>
   </tr>
   <tr>
    <td><strong>Bandeja de entrada </strong></td>
@@ -74,7 +72,7 @@ Las consolas principales son:
   </tr>
   <tr>
    <td><strong>Sitios web</strong></td>
-   <td>AEM Las consolas Sitios web/Sitios web le permiten <a href="/help/sites-classic-ui-authoring/classic-page-author.md">crear, ver y administrar sitios web</a> que se ejecuten en su instancia de. A través de estas consolas puede crear, copiar, mover y eliminar páginas del sitio web, iniciar flujos de trabajo y activar (publicar) páginas. También puede abrir una página para editarla.<br /> </td>
+   <td>Las consolas Sitios/Sitios web le permiten <a href="/help/sites-classic-ui-authoring/classic-page-author.md">crear, ver y administrar sitios web</a> que se ejecuten en su instancia de AEM. A través de estas consolas puede crear, copiar, mover y eliminar páginas del sitio web, iniciar flujos de trabajo y activar (publicar) páginas. También puede abrir una página para editarla.<br /> </td>
   </tr>
   <tr>
    <td><strong>Flujos de trabajo</strong></td>
@@ -89,7 +87,7 @@ La consola **Sitios web** proporciona dos paneles para que pueda navegar y admin
 
   Esto muestra la estructura de árbol de los sitios web y las páginas dentro de esos sitios web.
 
-  AEM También muestra información sobre otros aspectos o recursos, incluidos proyectos, modelos y recursos.
+  También muestra información sobre otros aspectos de AEM, incluidos proyectos, modelos y recursos.
 
 * Panel derecho
 
@@ -103,7 +101,7 @@ Desde aquí puede [administrar sus páginas](/help/sites-authoring/managing-page
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Acceso a la Ayuda   {#accessing-help}
+## Acceso a la Ayuda {#accessing-help}
 
 En varias consolas (por ejemplo, sitios web), hay disponible un botón **Ayuda**. Al hacer clic en **Ayuda**, se abre Package Share o el sitio de documentación.
 
@@ -117,10 +115,10 @@ La consola **Sitios web** enumera las páginas de contenido en una estructura de
 
 * Al hacer clic en el nombre de página en el panel izquierdo, se hace lo siguiente:
 
-   * Muestra las páginas secundarias del panel derecho
-   * Expande la estructura en el panel izquierdo.
+  * Muestra las páginas secundarias del panel derecho
+  * Expande la estructura en el panel izquierdo.
 
-     Por motivos de rendimiento, esta acción depende del número de nodos secundarios. Con una instalación estándar, este método de expansión funciona cuando hay `30` o menos nodos secundarios.
+    Por motivos de rendimiento, esta acción depende del número de nodos secundarios. Con una instalación estándar, este método de expansión funciona cuando hay `30` o menos nodos secundarios.
 
 * Al hacer doble clic en el nombre de la página (panel izquierdo), se expande el árbol, aunque este efecto no es tan obvio cuando se abre la página al mismo tiempo.
 
@@ -141,7 +139,7 @@ La consola **Sitios web** enumera las páginas de contenido en una estructura de
 >en:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Consulte [SiteAdmin en la API del widget CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obtener más información.
+>Consulte [SiteAdmin en la API del widget CQ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obtener más información.
 
 ## Información de página en la consola Sitios web {#page-information-on-the-websites-console}
 
@@ -158,7 +156,7 @@ Están disponibles los siguientes campos; se muestra un subconjunto de ellos com
    <td><strong>Descripción</strong></td>
   </tr>
   <tr>
-   <td>Miniatura   </td>
+   <td>Miniaturas</td>
    <td>Muestra una miniatura para la página.</td>
   </tr>
   <tr>
@@ -167,7 +165,7 @@ Están disponibles los siguientes campos; se muestra un subconjunto de ellos com
   </tr>
   <tr>
    <td>Nombre</td>
-   <td>AEM El nombre hace referencia a la página.</td>
+   <td>El nombre AEM hace referencia a la página</td>
   </tr>
   <tr>
    <td>Publicado</td>
@@ -178,7 +176,7 @@ Están disponibles los siguientes campos; se muestra un subconjunto de ellos com
    <td>Indica si la página se ha modificado y proporciona la fecha y hora de modificación. Para guardar cualquier modificación, debe activar la página.</td>
   </tr>
   <tr>
-   <td>Scene7 Publish</td>
+   <td>Publicación en Scene7</td>
    <td>Indica si la página se ha publicado en Scene7.<br /> </td>
   </tr>
   <tr>

@@ -9,13 +9,11 @@ exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2385'
 ht-degree: 1%
-
 ---
-
 # Referencia de predicados del generador de consultas{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -229,7 +227,7 @@ Conceptualmente es `fulltext AND ( (path AND type) OR (path AND type) )`. Estas 
 
 ### hasPermission {#haspermission}
 
-Restringe el resultado a elementos en los que la sesión actual tiene los [privilegios JCR especificados.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Restringe el resultado a elementos en los que la sesión actual tiene los [privilegios JCR especificados.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Este es un predicado solo de filtrado y no puede utilizar un índice de búsqueda. No admite la extracción de facetas.
 
@@ -269,7 +267,7 @@ Admite la extracción de facetas y proporciona dos contenedores para recursos pr
 
 ### memberOf {#memberof}
 
-Busca elementos que sean miembros de una [colección de recursos de sling](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
+Busca elementos que sean miembros de una [colección de recursos de sling](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
 
 Este es un predicado solo de filtrado y no puede utilizar un índice de búsqueda. No admite la extracción de facetas.
 
@@ -473,17 +471,17 @@ El nombre &quot;root&quot; nunca se utiliza en una consulta, está implícito.
 
   (solo para el servlet JSON) seleccione la forma en que se escriben las visitas como JSON, con estas estándar (ampliables mediante el servicio ResultHitWriter):
 
-   * **simple**:
+  * **simple**:
 
-     Elementos mínimos como `path`, `title`, `lastmodified`, `excerpt` (si se establecieron).
+    Elementos mínimos como `path`, `title`, `lastmodified`, `excerpt` (si se establecieron).
 
-   * **completo**:
+  * **completo**:
 
-     Representación del nodo JSON de Sling, con `jcr:path` indicando la ruta de la visita: de forma predeterminada solo enumera las propiedades directas del nodo, incluya un árbol más profundo con `p.nodedepth=N`, con 0 que significa todo el subárbol infinito; agregue `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado dado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+    Representación del nodo JSON de Sling, con `jcr:path` indicando la ruta de la visita: de forma predeterminada solo enumera las propiedades directas del nodo, incluya un árbol más profundo con `p.nodedepth=N`, con 0 que significa todo el subárbol infinito; agregue `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado dado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
-   * **selectivo**:
+  * **selectivo**:
 
-     Solo las propiedades especificadas en `p.properties`, que es una lista de rutas relativas separadas por espacio (utilice &quot;+&quot; en las direcciones URL); si la ruta relativa tiene una profundidad > 1, estas se representan como objetos secundarios; la propiedad especial jcr:path incluye la ruta de la visita
+    Solo las propiedades especificadas en `p.properties`, que es una lista de rutas relativas separadas por espacio (utilice &quot;+&quot; en las direcciones URL); si la ruta relativa tiene una profundidad > 1, estas se representan como objetos secundarios; la propiedad especial jcr:path incluye la ruta de la visita
 
 ### savedquery {#savedquery}
 

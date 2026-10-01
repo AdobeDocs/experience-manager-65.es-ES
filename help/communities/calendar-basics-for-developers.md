@@ -1,6 +1,6 @@
 ---
 title: Calendar Essentials
-description: Aprenda a trabajar con la función Calendario en las comunidades de Experience Manager. El calendario admite la identificación de grupos de usuarios miembros privilegiados.
+description: Aprenda a trabajar con la función Calendario en Experience Manager Communities. El calendario admite la identificación de grupos de usuarios miembros privilegiados.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,13 +9,11 @@ exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '244'
 ht-degree: 2%
-
 ---
-
 # Calendar Essentials {#calendar-essentials}
 
 Esta página proporciona información esencial sobre cómo trabajar con la función de calendario.
@@ -56,9 +54,9 @@ Esta página proporciona información esencial sobre cómo trabajar con la funci
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de calendario](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [API de calendario](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
-* [Extremos de calendario](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
+* [Extremos de calendario](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
@@ -68,7 +66,7 @@ Una estructura de sitio de comunidad que incluye la [función Calendario](functi
 
 ### Acceso a las publicaciones del calendario (UGC) {#accessing-calendar-posts-ugc}
 
-AEM A partir de las comunidades de la versión 6.1 de, el uso de un [almacén común](working-with-srp.md) para UGC incluye el acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir de las comunidades de AEM 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
