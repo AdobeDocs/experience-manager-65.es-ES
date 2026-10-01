@@ -1,21 +1,24 @@
 ---
 title: Trabajar con formularios con códigos de barras
-description: Descodificar datos de un formulario de PDF o una imagen que contenga un código de barras mediante la API de Java y la API de servicio web.
+
+description: Descodificar datos de un formulario PDF o una imagen que contenga un código de barras mediante la API de Java y la API de servicio web.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations,Barcoded Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1934'
 ht-degree: 0%
-
 ---
-
 # Trabajar con formularios con códigos de barras {#working-with-barcoded-forms}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -24,7 +27,7 @@ ht-degree: 0%
 
 El servicio de formularios con códigos de barras automatiza la captura de datos de los formularios de cumplimentación e impresión e integra la información capturada en los sistemas informáticos principales de una organización.
 
-Con el servicio de formularios con códigos de barras, puede agregar códigos de barras unidimensionales y bidimensionales a los PDF forms interactivos. A continuación, puede publicar los formularios con códigos de barras en un sitio web o distribuirlos por correo electrónico o CD. Cuando un usuario rellena un formulario con códigos de barras con Adobe Reader, Acrobat Professional o Acrobat Standard, el código de barras se actualiza automáticamente para codificar los datos del formulario proporcionados por el usuario. El usuario puede enviar el formulario electrónicamente o imprimirlo en papel y enviarlo por correo, fax o mano. Posteriormente, puede extraer los datos suministrados por el usuario como parte de un flujo de trabajo automatizado, y enrutar los datos entre procesos de aprobación y sistemas empresariales.
+Con el servicio de formularios con códigos de barras, puede agregar códigos de barras unidimensionales y bidimensionales a PDF forms interactivo. A continuación, puede publicar los formularios con códigos de barras en un sitio web o distribuirlos por correo electrónico o CD. Cuando un usuario rellena un formulario con códigos de barras con Adobe Reader, Acrobat Professional o Acrobat Standard, el código de barras se actualiza automáticamente para codificar los datos del formulario proporcionados por el usuario. El usuario puede enviar el formulario electrónicamente o imprimirlo en papel y enviarlo por correo, fax o mano. Posteriormente, puede extraer los datos suministrados por el usuario como parte de un flujo de trabajo automatizado, y enrutar los datos entre procesos de aprobación y sistemas empresariales.
 
 Para obtener más información sobre el servicio de formularios con códigos de barras, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
@@ -74,7 +77,7 @@ Obtenga un formulario de PDF que contenga un código de barras que se haya relle
 
 Después de obtener un formulario (o una imagen) de PDF que contiene un código de barras, puede descodificar los datos. El servicio de Forms con códigos de barras es compatible con los siguientes tipos de códigos de barras:
 
-* Códigos de barras PDF 417.
+* Códigos de barras PDF417.
 * Códigos de barras de matriz de datos.
 * Códigos de barras QR.
 * Códigos de barras de Codabar.
@@ -121,7 +124,7 @@ Descodificar datos de formulario mediante la API de formularios con códigos de 
 
 1. Obtenga un formulario de PDF que contenga datos con códigos de barras
 
-   * Cree un objeto `java.io.FileInputStream` que represente el formulario de PDF que contiene datos con códigos de barras utilizando su constructor y pasando un valor de cadena que especifica la ubicación del documento de PDF.
+   * Cree un objeto `java.io.FileInputStream` que represente el formulario de PDF que contiene datos con códigos de barras utilizando su constructor y pasando un valor de cadena que especifique la ubicación del documento de PDF.
    * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Descodificar los datos del formulario de PDF
@@ -129,7 +132,7 @@ Descodificar datos de formulario mediante la API de formularios con códigos de 
    Descodificar los datos del formulario invocando el método `decode` del objeto `BarcodedFormsServiceClient` y pasando los siguientes valores:
 
    * El objeto `com.adobe.idp.Document` que contiene el formulario de PDF.
-   * Un objeto `java.lang.Boolean` que especifica si se va a descodificar un código de barras PDF 417.
+   * Un objeto `java.lang.Boolean` que especifica si se va a descodificar un código de barras PDF417.
    * Un objeto `java.lang.Boolean` que especifica si se debe descodificar un código de barras de matriz de datos.
    * Un objeto `java.lang.Boolean` que especifica si se debe descodificar un código de barras de código QR.
    * Un objeto `java.lang.Boolean` que especifica si se va a descodificar un código de barras de la barra de códigos.
@@ -164,7 +167,7 @@ Descodificar datos de formulario mediante la API de formularios con códigos de 
 
 **Consulte también**
 
-[SOAP Inicio rápido (modo de): Descodificación de datos de formulario con códigos de barras mediante la API de Java](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Inicio rápido (modo SOAP): Descodificación de datos de formulario con códigos de barras mediante la API de Java](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -196,7 +199,7 @@ Descodificar datos de formulario mediante la API de formularios con códigos de 
    Descodificar los datos del formulario invocando el método `decode` del objeto `BarcodedFormsServiceService` y pasando los siguientes valores:
 
    * El objeto `BLOB` que contiene el formulario de PDF.
-   * Un objeto `Boolean` que especifica si se va a descodificar un código de barras PDF 417.
+   * Un objeto `Boolean` que especifica si se va a descodificar un código de barras PDF417.
    * Un objeto `Boolean` que especifica si se debe descodificar un código de barras de matriz de datos.
    * Un objeto `Boolean` que especifica si se debe descodificar un código de barras de código QR.
    * Un objeto `Boolean` que especifica si se va a descodificar un código de barras de la barra de códigos.

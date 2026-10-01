@@ -1,29 +1,32 @@
 ---
 title: Trabajar con documentos PDF/A
-description: Utilice el servicio DocConverter para determinar si un documento de PDF es un documento de PDF PDF/A y convertirlo en documentos de PDF/A.
+
+description: Utilice el servicio DocConverter para determinar si un documento de PDF es un documento de PDF/A y convertir documentos de PDF en documentos de PDF/A.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: 4df88fc37b86b6ff3b3a9b788c91b61e2aa7b07f
 workflow-type: tm+mt
-source-wordcount: '2347'
-ht-degree: 2%
-
+source-wordcount: '2398'
+ht-degree: 3%
 ---
-
 # Trabajar con documentos PDF/A {#working-with-pdf-a-documents}
 
 **Acerca del servicio DocConverter**
 
-El servicio DocConverter puede convertir documentos de PDF en documentos de PDA/A. Puede realizar estas tareas con este servicio:
+El servicio DocConverter puede convertir documentos de PDF en documentos PDA/A. Puede realizar estas tareas con este servicio:
 
-* Conversión de documentos de PDF en documentos de PDF/A. (Consulte [Conversión de documentos a documentos de PDF/A](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
-* Determine si los documentos del PDF son documentos del PDF/A. (Consulte [Determinación Programática De La Conformidad De PDF/A](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+* Convierta documentos de PDF en documentos de PDF/A. (Consulte [Conversión de documentos a documentos de PDF/A](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+* Determine si los documentos de PDF son documentos de PDF/A. (Consulte [Determinación Programática De La Conformidad Con PDF/A](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 >[!NOTE]
 >
@@ -31,13 +34,13 @@ El servicio DocConverter puede convertir documentos de PDF en documentos de PDA/
 
 ## Conversión de documentos a documentos de PDF/A {#converting-documents-to-pdf-a-documents}
 
-Puede utilizar el servicio DocConverter para convertir un documento de PDF en un documento de PDF/A. Como PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento de PDF/A no contiene contenido de audio y vídeo. Antes de convertir un documento de PDF en un documento de PDF/A, asegúrese de que el documento de PDF no sea un documento de PDF/A.
+Puede utilizar el servicio DocConverter para convertir un documento de PDF en un documento de PDF/A. Dado que PDF/A es un formato de archivo para la preservación a largo plazo del contenido del documento, todas las fuentes están incrustadas y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo. Antes de convertir un documento de PDF en un documento de PDF/A, asegúrese de que el documento de PDF no sea un documento de PDF/A.
 
-La especificación PDF/A-1 consta de dos niveles de conformidad, a saber, A y B. La principal diferencia entre los dos es la compatibilidad con la estructura lógica (accesibilidad), que no es necesaria para el nivel de conformidad B. Independientemente del nivel de conformidad, PDF/A-1 dicta que todas las fuentes estén incrustadas en el documento PDF/A generado. En este momento, solo se admite el PDF/A-1b en la validación (y conversión).
+La especificación PDF/A-1 consta de dos niveles de conformidad, a saber, A y B. La principal diferencia entre los dos es la compatibilidad con la estructura lógica (accesibilidad), que no es necesaria para el nivel de conformidad B. Independientemente del nivel de conformidad, PDF/A-1 dicta que todas las fuentes estén incrustadas en el documento PDF/A generado. En este momento, solo se admite PDF/A-1b en la validación (y conversión).
 
-Aunque PDF/A es el estándar para archivar documentos de PDF, no es obligatorio que PDF/A se utilice para archivar si un documento de PDF estándar cumple los requisitos de su empresa. El propósito de la norma PDF/A es crear un archivo PDF destinado a las necesidades de archivo y conservación de documentos a largo plazo.
+Aunque PDF/A es el estándar para archivar documentos de PDF, no es obligatorio que PDF/A se utilice para archivar si un documento estándar de PDF cumple los requisitos de su empresa. El propósito del estándar PDF/A es crear un archivo PDF diseñado para las necesidades de archivado y conservación de documentos a largo plazo.
 
-Los estándares de conformidad PDF/A admitidos incluyen PDF/A-1a, 1b, 2a, 2b, 3a y 3b.
+Los estándares de conformidad de PDF/A admitidos incluyen PDF/A-1a, 1b, 2a, 2b, 3a y 3b.
 
 >[!NOTE]
 >
@@ -52,7 +55,7 @@ Para convertir un documento de PDF en un documento de PDF/A, realice los siguien
 1. Hacer referencia a un documento de PDF para convertirlo en un documento de PDF/A.
 1. Configure la información de seguimiento.
 1. Convertir el documento.
-1. Guarde el documento PDF/A.
+1. Guarde el documento de PDF/A.
 
 **Incluir archivos de proyecto**
 
@@ -72,7 +75,7 @@ Para obtener información sobre la ubicación de estos archivos JAR, consulte [I
 
 Para poder realizar mediante programación una operación DocConverter, debe crear un cliente DocConverter. Si está usando la API de Java, cree un objeto `DocConverterServiceClient`. Si está usando la API del servicio web DocConverter, cree un objeto `DocConverterServiceService`.
 
-**Hacer referencia a un documento PDF para convertirlo en un documento PDF/A**
+**Hacer referencia a un documento de PDF para convertirlo en un documento de PDF/A**
 
 Recupere un documento de PDF para convertirlo en un documento de PDF/A. Si intenta convertir un documento de PDF, como un formulario de Acrobat, en un documento de PDF/A, se producirá una excepción.
 
@@ -82,11 +85,11 @@ Puede establecer una opción en tiempo de ejecución que determine la cantidad d
 
 **Convertir el documento**
 
-Después de crear el cliente de servicio DocConverter, haga referencia al documento de PDF para convertir y establezca la opción de tiempo de ejecución que especifica cuánta información se rastrea, puede convertir el documento de PDF en un documento de PDF/A.
+Después de crear el cliente del servicio DocConverter, haga referencia al documento de PDF para convertir y establezca la opción en tiempo de ejecución que especifica la cantidad de información de la que se realiza el seguimiento, puede convertir el documento de PDF en un documento de PDF/A.
 
 **Guardar el documento de PDF/A**
 
-Puede guardar el documento de PDF/A como un archivo de PDF.
+Puede guardar el documento de PDF/A como archivo de PDF.
 
 **Consulte también**
 
@@ -98,7 +101,7 @@ Puede guardar el documento de PDF/A como un archivo de PDF.
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Determinación programática de la conformidad de PDF/A](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)
+[Determinación programática de la compatibilidad con PDF/A](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)
 
 ### Conversión de documentos en documentos de PDF/A mediante la API de Java {#convert-documents-to-pdf-a-documents-using-the-java-api}
 
@@ -115,7 +118,7 @@ Conversión de un documento de PDF en un documento de PDF/A mediante la API de J
 
 1. Hacer referencia a un documento de PDF para convertirlo en un documento de PDF/A
 
-   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF que se va a convertir utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo de PDF.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF que se va a convertir mediante su constructor y pasando un valor de cadena que especifique la ubicación del archivo de PDF.
    * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Establecer información de seguimiento
@@ -125,16 +128,16 @@ Conversión de un documento de PDF en un documento de PDF/A mediante la API de J
 
 1. Convertir el documento
 
-   Convierta el documento de PDF en un documento PDF/A invocando el método `toPDFA` del objeto `DocConverterServiceClient` y pasando los siguientes valores:
+   Convierta el documento de PDF en un documento de PDF/A invocando el método `toPDFA` del objeto `DocConverterServiceClient` y pasando los siguientes valores:
 
    * El objeto `com.adobe.idp.Document` que contiene el documento de PDF que se va a convertir
    * El objeto `PDFAConversionOptionSpec` que especifica la información de seguimiento
 
    El método `toPDFA` devuelve un objeto `PDFAConversionResult` que contiene el documento PDF/A.
 
-1. Guarde el documento PDF/A.
+1. Guardar el documento de PDF/A
 
-   * Recupere el documento PDF/A invocando el método `getPDFA` del objeto `PDFAConversionResult`. Este método devuelve un objeto `com.adobe.idp.Document` que representa el documento PDF/A.
+   * Recupere el documento PDF/A invocando el método `getPDFA` del objeto `PDFAConversionResult`. Este método devuelve un objeto `com.adobe.idp.Document` que representa el documento de PDF/A.
    * Cree un objeto `java.io.File` que represente el archivo PDF/A. Asegúrese de que la extensión del nombre de archivo sea .pdf.
    * Rellene el archivo con datos de PDF/A invocando el método `copyToFile` del objeto `com.adobe.idp.Document` y pasando el objeto `java.io.File`.
 
@@ -142,7 +145,7 @@ Conversión de un documento de PDF en un documento de PDF/A mediante la API de J
 
 [Trabajar con documentos PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[SOAP Inicio rápido (modo de): Conversión de un documento a un documento de PDF/A mediante la API de Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Inicio rápido (modo SOAP): Conversión de un documento a un documento de PDF/A mediante la API de Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -177,18 +180,18 @@ Conversión de un documento de PDF en un documento de PDF/A mediante la API de D
 
 1. Convertir el documento
 
-   Convierta el documento de PDF en un documento PDF/A invocando el método `toPDFA` del objeto `DocConverterServiceService` y pasando los siguientes valores:
+   Convierta el documento de PDF en un documento de PDF/A invocando el método `toPDFA` del objeto `DocConverterServiceService` y pasando los siguientes valores:
 
    * El objeto `BLOB` que contiene el documento de PDF que se va a convertir
    * El objeto `PDFAConversionOptionSpec` que especifica la información de seguimiento
 
    El método `toPDFA` devuelve un objeto `PDFAConversionResult` que contiene el documento PDF/A.
 
-1. Guarde el documento PDF/A.
+1. Guardar el documento de PDF/A
 
    * Cree un objeto `BLOB` que almacene el documento PDF/A obteniendo el valor del miembro de datos `PDFADocument` del objeto `PDFAConversionResult`.
    * Cree una matriz de bytes que almacene el contenido del objeto `BLOB` devuelto mediante el objeto `PDFAConversionResult`. Rellene la matriz de bytes obteniendo el valor del miembro de datos `binaryData` del objeto `BLOB`.
-   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento PDF/A.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF/A.
    * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
    * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `Write` del objeto `System.IO.BinaryWriter` y pasando la matriz de bytes.
 
@@ -200,9 +203,9 @@ Conversión de un documento de PDF en un documento de PDF/A mediante la API de D
 
 [Crear un ensamblado de cliente .NET que utilice codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
-## Determinación programática de la conformidad de PDF/A {#programmatically-determining-pdf-a-compliancy}
+## Determinación programática de la compatibilidad con PDF/A {#programmatically-determining-pdf-a-compliancy}
 
-Puede utilizar el servicio DocConverter para determinar si un documento de PDF es compatible con el PDF/A. Para obtener información sobre un documento de PDF PDF/A y cómo convertirlo en un documento de PDF/A, consulte [Conversión de documentos a documentos de PDF/A](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
+Puede utilizar el servicio DocConverter para determinar si un documento de PDF es compatible con PDF/A. Para obtener información sobre un documento de PDF/A y cómo convertir un documento de PDF en un documento de PDF/A, consulte [Conversión de documentos a documentos de PDF/A](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
 
 >[!NOTE]
 >
@@ -210,13 +213,13 @@ Puede utilizar el servicio DocConverter para determinar si un documento de PDF e
 
 ### Resumen de los pasos {#summary_of_steps-1}
 
-Para determinar la conformidad del PDF/A, realice los siguientes pasos:
+Para determinar la conformidad con PDF/A, realice los siguientes pasos:
 
 1. Incluir archivos de proyecto.
 1. Crear un cliente DocConvert
-1. Hacer referencia a un documento de PDF utilizado para determinar la conformidad de PDF/A.
+1. Hacer referencia a un documento de PDF utilizado para determinar la conformidad con PDF/A.
 1. Establecer opciones en tiempo de ejecución.
-1. Recupere información sobre el documento del PDF.
+1. Recupere información sobre el documento de PDF.
 
 **Incluir archivos de proyecto**
 
@@ -236,31 +239,31 @@ Para obtener información sobre la ubicación de estos archivos JAR, consulte [I
 
 Para poder realizar mediante programación una operación DocConverter, debe crear un cliente DocConverter. Si está usando la API de Java, cree un objeto `DocConverterServiceClient`. Si está usando la API del servicio web DocConverter, cree un objeto `DocConverterServiceService`.
 
-**Hacer referencia a un documento de PDF utilizado para determinar la conformidad del PDF/A**
+**Hacer referencia a un documento de PDF utilizado para determinar la conformidad con PDF/A**
 
-Se debe hacer referencia a un documento de PDF y pasarlo al servicio DocConverter para determinar si el documento de PDF es compatible con el PDF/A.
+Se debe hacer referencia a un documento de PDF y pasarlo al servicio DocConverter para determinar si el documento de PDF es compatible con PDF/A.
 
 **Establecer opciones en tiempo de ejecución**
 
 Puede establecer una opción en tiempo de ejecución que determine la cantidad de información que se rastreará durante el proceso de conversión. Es decir, puede establecer nueve niveles diferentes que especifiquen cuánta información rastrea el servicio DocConverter cuando convierte un documento de PDF en un documento de PDF/A.
 
-**Recuperar información sobre el documento del PDF**
+**Recuperar información acerca del documento de PDF**
 
-Después de crear el cliente de servicio DocConverter, hacer referencia al documento de PDF y establecer las opciones en tiempo de ejecución, puede determinar si el documento de PDF es un documento compatible con el PDF/A.
+Después de crear el cliente de servicio DocConverter, hacer referencia al documento de PDF y establecer las opciones en tiempo de ejecución, puede determinar si el documento de PDF es un documento compatible con PDF/A.
 
 **Consulte también**
 
-[Determinar la conformidad del PDF/A mediante la API de Java](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-java-api)
+[Determinar la conformidad de PDF/A mediante la API de Java](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-java-api)
 
-[Determinar la conformidad del PDF/A mediante la API del servicio web](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-web-service-api)
+[Determinar la conformidad de PDF/A mediante la API del servicio web](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-web-service-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Determinar la conformidad del PDF/A mediante la API de Java {#determine-pdf-a-compliancy-using-the-java-api}
+### Determinar la conformidad de PDF/A mediante la API de Java {#determine-pdf-a-compliancy-using-the-java-api}
 
-Determine la conformidad del PDF/A mediante la API de Java:
+Determine la conformidad con PDF/A mediante la API de Java:
 
 1. Incluir archivos de proyecto
 
@@ -271,9 +274,9 @@ Determine la conformidad del PDF/A mediante la API de Java:
    * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
    * Cree un objeto `DocConverterServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
-1. Hacer referencia a un documento de PDF utilizado para determinar la conformidad de PDF/A.
+1. Hacer referencia a un documento de PDF utilizado para determinar la conformidad con PDF/A
 
-   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF que se va a convertir utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo de PDF.
+   * Cree un objeto `java.io.FileInputStream` que represente el documento de PDF que se va a convertir mediante su constructor y pasando un valor de cadena que especifique la ubicación del archivo de PDF.
    * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
 1. Establecer opciones en tiempo de ejecución
@@ -282,9 +285,9 @@ Determine la conformidad del PDF/A mediante la API de Java:
    * Defina el nivel de cumplimiento invocando el método `setCompliance` del objeto `PDFAValidationOptionSpec` y pasando `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
    * Establezca el nivel de seguimiento de la información invocando el método `setLogLevel` del objeto `PDFAValidationOptionSpec` y pasando un valor de cadena que especifique el nivel de seguimiento. Por ejemplo, pase el valor `FINE`. Para obtener información acerca de los distintos valores, vea el método `setLogLevel` en la [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-1. Recuperar información sobre el documento del PDF
+1. Recuperar información sobre el documento de PDF
 
-   Determine la conformidad del PDF/A invocando el método `isPDFA` del objeto `DocConverterServiceClient` y pasando los siguientes valores:
+   Para determinar la compatibilidad con PDF/A, invoque el método `isPDFA` del objeto `DocConverterServiceClient` y pase los siguientes valores:
 
    * El objeto `com.adobe.idp.Document` que contiene el documento de PDF.
    * El objeto `PDFAValidationOptionSpec` que especifica las opciones en tiempo de ejecución.
@@ -295,15 +298,15 @@ Determine la conformidad del PDF/A mediante la API de Java:
 
 [Trabajar con documentos PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[SOAP Inicio rápido (modo de): Determinación del cumplimiento de PDF/A mediante la API de Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Inicio rápido (modo SOAP): Determinación del cumplimiento de PDF/A mediante la API de Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Determinar la conformidad del PDF/A mediante la API del servicio web {#determine-pdf-a-compliancy-using-the-web-service-api}
+### Determinar la conformidad de PDF/A mediante la API del servicio web {#determine-pdf-a-compliancy-using-the-web-service-api}
 
-Determine la conformidad del PDF/A mediante la API del servicio web:
+Determine la conformidad de PDF/A mediante la API del servicio web:
 
 1. Incluir archivos de proyecto
 
@@ -315,7 +318,7 @@ Determine la conformidad del PDF/A mediante la API del servicio web:
    * Mediante el ensamblado de cliente de Microsoft .NET, cree un objeto `DocConverterServiceService` invocando su constructor predeterminado.
    * Establezca el miembro de datos `Credentials` del objeto `DocConverterServiceService` con un valor `System.Net.NetworkCredential` que especifique el valor de nombre de usuario y contraseña.
 
-1. Hacer referencia a un documento de PDF utilizado para determinar la conformidad de PDF/A.
+1. Hacer referencia a un documento de PDF utilizado para determinar la conformidad con PDF/A
 
    * Crear un objeto `BLOB` mediante su constructor. El objeto `BLOB` se usa para almacenar el documento de PDF convertido en un documento de PDF/A.
    * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación de archivo del documento de PDF y el modo para abrir el archivo en.
@@ -329,9 +332,9 @@ Determine la conformidad del PDF/A mediante la API del servicio web:
    * Establezca el nivel de cumplimiento asignando el miembro de datos `compliance` del objeto `PDFAValidationOptionSpec` con el valor `PDFAConversionOptionSpec_Compliance.PDFA_1B`.
    * Establezca el nivel de seguimiento de la información asignando el miembro de datos `resultLevel` del objeto `PDFAValidationOptionSpec` con el valor `PDFAValidationOptionSpec_ResultLevel.DETAILED`.
 
-1. Recuperar información sobre el documento del PDF
+1. Recuperar información sobre el documento de PDF
 
-   Determine la conformidad del PDF/A invocando el método `isPDFA` del objeto `DocConverterServiceService` y pasando los siguientes valores:
+   Para determinar la compatibilidad con PDF/A, invoque el método `isPDFA` del objeto `DocConverterServiceService` y pase los siguientes valores:
 
    * El objeto `BLOB` que contiene el documento de PDF.
    * El objeto `PDFAValidationOptionSpec` que contiene opciones en tiempo de ejecución.

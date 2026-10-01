@@ -1,6 +1,6 @@
 ---
 title: Procesar formularios PDF interactivos
-description: Utilice el servicio Forms para representar PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Puede utilizar el servicio Forms para procesar formularios interactivos mediante la API de Java y la API de servicio web.
+description: Utilice el servicio Forms para representar PDF forms interactivo en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Puede utilizar el servicio Forms para procesar formularios interactivos mediante la API de Java y la API de servicio web.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,19 +9,18 @@ topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2471'
 ht-degree: 0%
-
 ---
-
 # Procesar formularios PDF interactivos {#rendering-interactive-pdf-forms}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-El servicio Forms procesa PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Una vez procesado un formulario interactivo, un usuario puede introducir datos en los campos de formulario y hacer clic en un botón de envío ubicado en el formulario para enviar información de vuelta al servicio de Forms. Adobe Reader o Acrobat deben estar instalados en el equipo que aloja el explorador web del cliente para que un formulario de PDF interactivo sea visible.
+El servicio Forms procesa PDF forms interactivo en los dispositivos cliente, normalmente en los navegadores web, para recopilar información de los usuarios. Una vez procesado un formulario interactivo, un usuario puede introducir datos en los campos de formulario y hacer clic en un botón de envío ubicado en el formulario para enviar información de vuelta al servicio de Forms. Adobe Reader o Acrobat deben estar instalados en el equipo que hospeda el explorador web del cliente para que un formulario interactivo de PDF sea visible.
 
 >[!NOTE]
 >
@@ -45,11 +44,11 @@ En la tabla siguiente se describen los pasos de este diagrama.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>El servlet Java <code>GetLoanForm</code> se invoca desde una página de HTML. </p></td>
+   <td><p>El servlet Java <code>GetLoanForm</code> se invoca desde una página HTML. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>El servlet Java <code>GetLoanForm</code> utiliza la API de cliente del servicio Forms para procesar el formulario de préstamo en el explorador web del cliente. (Consulte <a href="#render-an-interactive-pdf-form-using-the-java-api">Procesar un formulario de PDF interactivo mediante la API de Java</a>).</p></td>
+   <td><p>El servlet Java <code>GetLoanForm</code> utiliza la API de cliente del servicio Forms para procesar el formulario de préstamo en el explorador web del cliente. (Consulte <a href="#render-an-interactive-pdf-form-using-the-java-api">Procesar un formulario interactivo de PDF mediante la API de Java</a>).</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -106,7 +105,7 @@ Normalmente, no colocaría el código de la API del cliente del servicio de Form
 
 **Resumen de los pasos**
 
-Para procesar un formulario de PDF interactivo, realice las siguientes tareas:
+Para procesar un formulario interactivo de PDF, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
 1. Cree un objeto de API de cliente de Forms.
@@ -160,23 +159,23 @@ Si tiene un formulario que contiene un botón de envío y un botón de cálculo 
 
 **Adjuntar archivos al formulario**
 
-Puede adjuntar archivos a un formulario. Cuando procesa un formulario de PDF con archivos adjuntos, los usuarios pueden recuperar los archivos adjuntos en Acrobat mediante el panel de archivos adjuntos. JPG Puede adjuntar distintos tipos de archivo a un formulario, como un archivo de texto, o a un archivo binario, como un archivo de.
+Puede adjuntar archivos a un formulario. Cuando procesa un formulario de PDF con archivos adjuntos, los usuarios pueden recuperar los archivos adjuntos en Acrobat mediante el panel de archivos adjuntos. Puede adjuntar distintos tipos de archivo a un formulario, como un archivo de texto, o a un archivo binario, como un archivo JPG.
 
 >[!NOTE]
 >
 >Adjuntar archivos adjuntos a un formulario es opcional.
 
-**Procesar un formulario de PDF interactivo**
+**Procesar un formulario interactivo de PDF**
 
-Para procesar un formulario, utilice un diseño de formulario creado en Designer y guardado como archivo XDP o de PDF. Además, puede procesar un formulario creado con Acrobat y guardado como archivo de PDF. Para procesar un formulario de PDF interactivo, invoque el método `renderPDFForm` o `renderPDFForm2` del objeto `FormsServiceClient`.
+Para procesar un formulario, utilice un diseño de formulario creado en Designer y guardado como archivo XDP o PDF. Además, puede procesar un formulario creado con Acrobat y guardado como archivo de PDF. Para procesar un formulario PDF interactivo, invoque el método `renderPDFForm` o el método `renderPDFForm2` del objeto `FormsServiceClient`.
 
 `renderPDFForm` usa un objeto `URLSpec`. La raíz de contenido del archivo XDP se pasa al servicio Forms mediante el método `setContentRootURI` del objeto `URLSpec`. El nombre del diseño del formulario ( `formQuery`) se pasa como un valor de parámetro independiente. Los dos valores se concatenan para obtener la referencia absoluta al diseño de formulario.
 
-El método `renderPDFForm2` acepta una instancia `com.adobe.idp.Document` que contiene el documento XDP o de PDF que se va a procesar.
+El método `renderPDFForm2` acepta una instancia `com.adobe.idp.Document` que contiene el documento XDP o PDF que se va a procesar.
 
 >[!NOTE]
 >
->La opción de tiempo de ejecución del PDF etiquetado no se puede establecer si el documento de entrada es un documento del PDF. Si el archivo de entrada es un archivo XDP, se puede establecer la opción de PDF etiquetado.
+>La opción de tiempo de ejecución de PDF etiquetada no se puede establecer si el documento de entrada es un documento de PDF. Si el archivo de entrada es un archivo XDP, se puede establecer la opción PDF etiquetado.
 
 ## Procesar un formulario interactivo de PDF mediante la API de Java {#render-an-interactive-pdf-form-using-the-java-api}
 
@@ -203,7 +202,7 @@ Procesar un formulario interactivo de PDF mediante la API de Forms (Java):
    * Cree un objeto `java.util.HashMap` para almacenar los archivos adjuntos mediante su constructor.
    * Invoque el método `put` del objeto `java.util.HashMap` para que cada archivo se adjunte al formulario procesado. Pase los siguientes valores a este método:
 
-      * Valor de cadena que especifica el nombre del archivo adjunto, incluida la extensión del nombre de archivo.
+     * Valor de cadena que especifica el nombre del archivo adjunto, incluida la extensión del nombre de archivo.
 
    * Objeto `com.adobe.idp.Document` que contiene el archivo adjunto.
 
@@ -258,7 +257,7 @@ Procesar un formulario interactivo de PDF mediante la API de Forms (servicio web
    * Cree un objeto `java.util.HashMap` para almacenar los archivos adjuntos mediante su constructor.
    * Invoque el método `put` del objeto `java.util.HashMap` para que cada archivo se adjunte al formulario procesado. Pase los siguientes valores a este método:
 
-      * Valor de cadena que especifica el nombre del archivo adjunto, incluida la extensión del nombre de archivo
+     * Valor de cadena que especifica el nombre del archivo adjunto, incluida la extensión del nombre de archivo
 
    * Objeto `BLOB` que contiene el archivo adjunto
 

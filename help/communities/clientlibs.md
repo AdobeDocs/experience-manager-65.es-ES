@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # Componentes de Clientlibs para Communities {#clientlibs-for-communities-components}
 
 ## Introducción {#introduction}
@@ -49,12 +47,12 @@ Cuando faltan los clientlibs necesarios, [agregar un componente de Communities a
 
 La información sobre funciones esenciales para los desarrolladores de identifica los clientlibs necesarios.
 
-AEM Además, desde una instancia de, si navega hasta la [Guía de componentes de la comunidad](/help/communities/components-guide.md), obtendrá acceso a una lista de categorías clientlib necesarias para un componente.
+Además, desde una instancia de AEM, si navega hasta la [Guía de componentes de la comunidad](/help/communities/components-guide.md), obtendrá acceso a una lista de categorías clientlib necesarias para un componente.
 
 Por ejemplo, en la parte superior de la [página de revisiones](https://localhost:4502/content/community-components/en/reviews.html), los clientlibs requeridos son
 
 * cq.ckeditor
-* cq.social.hbs.reviews
+* cq.social.hbs.review
 
 ![clientlibs-review](assets/clientlibs-reviews.png)
 
@@ -69,21 +67,21 @@ Para agregar una clientlib para un sitio de la comunidad usando [CRXDE Lite](/he
 * Vaya a [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
 * Busque el nodo `clientlibslist` para la página en la que desea agregar el componente:
 
-   * `/content/sites/sample/en/page/jcr:content/clientlibslist`
+  * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
 * Con el nodo `clientlibslist` seleccionado:
 
-   * Busque la propiedad `scg:requiredClientLibs` String[].
-   * Seleccione su `Value` para poder acceder al cuadro de diálogo Matriz de cadenas.
+  * Busque la propiedad `scg:requiredClientLibs` String[].
+  * Seleccione su `Value` para poder acceder al cuadro de diálogo Matriz de cadenas.
 
-      * Desplácese hacia abajo si es necesario.
-      * Seleccione + para introducir una nueva biblioteca de cliente.
+    * Desplácese hacia abajo si es necesario.
+    * Seleccione + para introducir una nueva biblioteca de cliente.
 
-         * Repita el proceso para agregar más bibliotecas de cliente.
+      * Repita el proceso para agregar más bibliotecas de cliente.
 
-         * Seleccione **Aceptar**.
+      * Seleccione **Aceptar**.
 
-   * Seleccione **Guardar todo**.
+  * Seleccione **Guardar todo**.
 
 >[!NOTE]
 >

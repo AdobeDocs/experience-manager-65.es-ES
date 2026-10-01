@@ -1,22 +1,25 @@
 ---
 title: Optimizar el rendimiento del servicio de Forms
+
 description: Establezca opciones en tiempo de ejecución al procesar un formulario y almacenar archivos XDP en el repositorio para optimizar el rendimiento del servicio de Forms.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1442'
 ht-degree: 1%
-
 ---
-
 # Optimización del rendimiento del servicio de Forms {#optimizing-the-performance-of-theforms-service}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -54,9 +57,9 @@ Puede establecer las siguientes opciones de tiempo de ejecución de rendimiento 
 * **Almacenamiento en caché de formularios**: puede almacenar en caché un formulario que se represente como PDF en la memoria caché del servidor. Cada formulario se almacena en caché después de generarse por primera vez. En un procesamiento posterior, si el formulario en caché es más reciente que la marca de tiempo del diseño de formulario, el formulario se recuperará de la caché. Al almacenar en caché los formularios, se mejora el rendimiento del servicio de Forms porque no tiene que recuperar el diseño de formulario de un repositorio.
 * Las guías del formulario (obsoletas) pueden tardar más en procesarse que otros tipos de transformación. Se recomienda almacenar en caché las guías del formulario (obsoletas) para mejorar el rendimiento.
 * **Opción independiente**: si no necesita que el servicio Forms realice cálculos del lado del servidor, puede establecer la opción Independiente en `true`, lo que hace que los formularios se representen sin información de estado. La información de estado es necesaria si desea procesar un formulario interactivo para un usuario final que luego introduzca información en el formulario y lo envíe de nuevo al servicio de Forms. A continuación, el servicio Forms realiza una operación de cálculo y devuelve el formulario al usuario con los resultados mostrados en el formulario. Si se devuelve un formulario sin información de estado al servicio Forms, solo estarán disponibles los datos XML y no se realizarán cálculos en el servidor.
-* **PDF linearizado**: se organiza un archivo de PDF linearizado para habilitar el acceso incremental eficiente en un entorno de red. El archivo de PDF es un PDF válido en todos los aspectos y es compatible con todos los visores existentes y otras aplicaciones de PDF. Es decir, se puede ver un PDF linealizado mientras se sigue descargando.
+* **PDF linearizado**: un archivo PDF linearizado está organizado para habilitar un acceso incremental eficiente en un entorno de red. El archivo PDF es válido en PDF en todos los aspectos y es compatible con todos los visores existentes y otras aplicaciones de PDF. Es decir, se puede ver una PDF linealizada mientras se sigue descargando.
 * Esta opción no mejora el rendimiento cuando se procesa un formulario de PDF en el cliente.
-* **Opción GuideRSL**: habilita la generación de guías de formulario (obsoleta) mediante bibliotecas compartidas en tiempo de ejecución. Esto significa que la primera solicitud descargará un archivo de SWF más pequeño, además de bibliotecas compartidas más grandes almacenadas en la caché del explorador. Para obtener más información, consulte RSL en la documentación de Flex.
+* **Opción GuideRSL**: habilita la generación de guías de formulario (obsoleta) mediante bibliotecas compartidas en tiempo de ejecución. Esto significa que la primera solicitud descargará un archivo SWF más pequeño, además de bibliotecas compartidas más grandes almacenadas en la caché del explorador. Para obtener más información, consulte RSL en la documentación de Flex.
 * También puede mejorar el rendimiento del servicio Forms al procesar un formulario en el cliente. (Consulte [Renderización de Forms en el cliente](/help/forms/developing/rendering-forms-client.md)).
 
 **Procesar el formulario**
@@ -122,7 +125,7 @@ Procese un formulario con un rendimiento optimizado mediante la API de Forms (Ja
 
 **Consulte también**
 
-[SOAP Inicio rápido (modo de): Optimización del rendimiento mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[Inicio rápido (modo SOAP): Optimización del rendimiento mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

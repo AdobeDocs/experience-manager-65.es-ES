@@ -1,27 +1,30 @@
 ---
 title: Pasar documentos a FormsService
+
 description: Pase un objeto com.adobe.idp.Document que contenga el diseño de formulario al servicio Forms. El servicio Forms procesa el diseño de formulario en el objeto com.adobe.idp.Document.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1689'
 ht-degree: 0%
-
 ---
-
 # Pasar documentos al servicio de Forms {#passing-documents-to-the-formsservice}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-El servicio AEM Forms procesa PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Un formulario PDF interactivo se basa en un diseño de formulario que normalmente se guarda como archivo XDP y se crea en Designer. A partir de AEM Forms, puede pasar un objeto `com.adobe.idp.Document` que contenga el diseño de formulario al servicio Forms. A continuación, el servicio Forms procesa el diseño de formulario en el objeto `com.adobe.idp.Document`.
+El servicio AEM Forms procesa PDF forms interactivo en los dispositivos cliente, normalmente en los navegadores web, para recopilar información de los usuarios. Un formulario interactivo de PDF se basa en un diseño de formulario que normalmente se guarda como archivo XDP y se crea en Designer. A partir de AEM Forms, puede pasar un objeto `com.adobe.idp.Document` que contenga el diseño de formulario al servicio Forms. A continuación, el servicio Forms procesa el diseño de formulario en el objeto `com.adobe.idp.Document`.
 
 Una ventaja de pasar un objeto `com.adobe.idp.Document` al servicio Forms es que otras operaciones del servicio devuelven una instancia `com.adobe.idp.Document`. Es decir, puede obtener una instancia de `com.adobe.idp.Document` de otra operación de servicio y procesarla. Por ejemplo, supongamos que un archivo XDP se almacena en un nodo de Content Services (obsoleto) denominado `/Company Home/Form Designs`, como se muestra en la siguiente ilustración.
 
@@ -38,7 +41,7 @@ Para pasar un documento obtenido de Content Services (obsoleto) (obsoleto) al se
 1. Incluir archivos de proyecto.
 1. Cree un objeto de API de cliente de Forms y de Administración de documentos.
 1. Recupere el diseño de formulario de Content Services (obsoleto).
-1. Procese el formulario interactivo del PDF.
+1. Procese el formulario interactivo de PDF.
 1. Realice una acción con el flujo de datos del formulario.
 
 **Incluir archivos de proyecto**
@@ -53,7 +56,7 @@ Para poder realizar mediante programación una operación de API de servicio de 
 
 Recupere el archivo XDP de los servicios de contenido (obsoleto) mediante Java o la API de servicio web. El archivo XDP se devuelve en una instancia `com.adobe.idp.Document` (o en una instancia `BLOB` si utiliza servicios web). A continuación, puede pasar la instancia `com.adobe.idp.Document` al servicio Forms.
 
-**Procesar un formulario de PDF interactivo**
+**Procesar un formulario interactivo de PDF**
 
 Para procesar un formulario interactivo, pase la instancia `com.adobe.idp.Document` devuelta por Content Services (obsoleta) al servicio Forms.
 
@@ -63,7 +66,7 @@ Para procesar un formulario interactivo, pase la instancia `com.adobe.idp.Docume
 
 **Realizar una acción con el flujo de datos del formulario**
 
-Según el tipo de aplicación cliente, puede escribir el formulario en un explorador web de cliente o guardarlo como archivo de PDF. Una aplicación basada en web suele escribir el formulario en el explorador web. Sin embargo, una aplicación de escritorio suele guardar el formulario como un archivo de PDF.
+Según el tipo de aplicación cliente, puede escribir el formulario en un explorador web de cliente o guardarlo como archivo PDF. Una aplicación basada en web suele escribir el formulario en el explorador web. Sin embargo, una aplicación de escritorio suele guardar el formulario como un archivo PDF.
 
 **Consulte también**
 
@@ -121,7 +124,7 @@ Pase un documento obtenido de Content Services (obsoleto) mediante el servicio F
 
 **Consulte también**
 
-[SOAP Inicio rápido (modo de): Pasar documentos al servicio de Forms mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Inicio rápido (modo SOAP): Pasar documentos al servicio Forms mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -151,9 +154,9 @@ Pase un documento obtenido de Content Services (obsoleto) mediante el servicio F
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * AEM Asigne el nombre de usuario de los formularios de la al campo `FormsServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `FormsServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `FormsServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `FormsServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -184,14 +187,14 @@ Pase un documento obtenido de Content Services (obsoleto) mediante el servicio F
    * Objeto `Map` que almacena datos adjuntos de archivos. Este valor es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
    * Un parámetro de salida largo que se utiliza para almacenar el recuento de páginas.
    * Un parámetro de salida de cadena que se utiliza para almacenar el valor de configuración regional.
-   * Un parámetro de salida `FormsResult` que se usa para almacenar el formulario de PDF interactivo `.`
+   * Un parámetro de salida `FormsResult` que se usa para almacenar el formulario PDF interactivo `.`
 
    El método `renderPDFForm2` devuelve un objeto `FormsResult` que contiene el formulario PDF interactivo.
 
 1. Realizar una acción con el flujo de datos del formulario
 
    * Cree un objeto `BLOB` que contenga datos de formulario obteniendo el valor del campo `outputContent` del objeto `FormsResult`.
-   * Cree un objeto `System.IO.FileStream` invocando su constructor. Pase un valor de cadena que represente la ubicación del archivo del documento interactivo del PDF y el modo en que se abrirá el archivo.
+   * Cree un objeto `System.IO.FileStream` invocando su constructor. Pase un valor de cadena que represente la ubicación del archivo del documento interactivo de PDF y el modo en que se abrirá el archivo.
    * Cree una matriz de bytes que almacene el contenido del objeto `BLOB` recuperado del objeto `FormsResult`. Rellene la matriz de bytes obteniendo el valor del miembro de datos `MTOM` del objeto `BLOB`.
    * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
    * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `Write` del objeto `System.IO.BinaryWriter` y pasando la matriz de bytes.

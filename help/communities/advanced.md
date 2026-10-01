@@ -12,11 +12,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1104'
 ht-degree: 1%
-
 ---
-
 # Puntuación avanzada y distintivos{#advanced-scoring-and-badges}
 
 ## Información general {#overview}
@@ -33,7 +31,7 @@ La configuración de la puntuación avanzada es prácticamente la misma que la p
 
 * Las reglas de puntuación e insignias básicas y avanzadas se [aplican al contenido](/help/communities/implementing-scoring.md#apply-rules-to-content) de la misma manera.
 
-   * Se pueden aplicar reglas básicas y avanzadas de puntuación e insignias al mismo contenido.
+  * Se pueden aplicar reglas básicas y avanzadas de puntuación e insignias al mismo contenido.
 
 * [La habilitación de distintivos para componentes](/help/communities/implementing-scoring.md#enable-badges-for-component) es genérica.
 
@@ -42,14 +40,14 @@ Las diferencias al configurar las reglas de puntuación e insignias son las sigu
 * Motor de puntuación avanzado configurable
 * Reglas de puntuación avanzadas:
 
-   * `scoringType` se estableció en `advanced`
-   * Requiere `stopwords`
+  * `scoringType` se estableció en `advanced`
+  * Requiere `stopwords`
 
 * Reglas avanzadas de distintivo:
 
-   * `badgingType` se estableció en `advanced`
-   * `badgingLevels` se ha establecido en **número de niveles de expertos para otorgar**
-   * Requiere una matriz de distintivos `badgingPaths` en lugar de umbrales y puntos de asignación de matrices a distintivos.
+  * `badgingType` se estableció en `advanced`
+  * `badgingLevels` se ha establecido en **número de niveles de expertos para otorgar**
+  * Requiere una matriz de distintivos `badgingPaths` en lugar de umbrales y puntos de asignación de matrices a distintivos.
 
 >[!NOTE]
 >
@@ -66,7 +64,7 @@ El motor de puntuación avanzada proporciona una configuración OSGi con paráme
   Para un tema, especifique el verbo que debe tener la prioridad más alta al calcular la puntuación. Se pueden introducir uno o más temas, pero con un límite de **un verbo por tema**. Ver [temas y verbos](/help/communities/implementing-scoring.md#topics-and-verbs).
 Se ingresó como `topic,verb` con la coma sin escape. Por ejemplo:
   `/social/forum/hbs/social/forum\,ADD`
-De forma predeterminada, se establece el verbo ADD para los componentes de foro y control de calidad.
+  De forma predeterminada, se establece el verbo ADD para los componentes de foro y control de calidad.
 
 * **Intervalo de puntuación**
 
@@ -148,7 +146,7 @@ En lugar de asociar puntos con una imagen de distintivo, solo es necesario ident
   <tr>
    <td>scoringRules</td>
    <td>String[]</td>
-   <td><em>(Opcional)</em> Una cadena de varios valores para restringir la regla de identificación a los eventos de puntuación identificados por una o más reglas de puntuación enumeradas.<br /> Entrada de ejemplo:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> El valor predeterminado no es ninguna restricción.</td>
+   <td><em>(Opcional)</em> Una cadena de varios valores para restringir la regla de identificación a los eventos de puntuación identificados por una o más reglas de puntuación enumeradas.<br /> Entrada de ejemplo: <br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> El valor predeterminado no es ninguna restricción.</td>
   </tr>
  </tbody>
 </table>

@@ -1,22 +1,25 @@
 ---
 title: Procesar formularios en el cliente
+
 description: Optimizar la entrega de contenido de PDF y mejorar la capacidad del servicio Forms para gestionar la carga de red mediante la capacidad de procesamiento del lado del cliente de Acrobat o Adobe Reader
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 1%
-
+source-wordcount: '1715'
+ht-degree: 2%
 ---
-
 # Procesar formularios en el cliente {#rendering-forms-at-the-client}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -53,17 +56,17 @@ Para poder realizar mediante programación una operación de API de cliente de s
 
 Establezca la opción de tiempo de ejecución de representación de cliente para procesar un formulario en el cliente estableciendo la opción de tiempo de ejecución `RenderAtClient` en `true`. Esto hace que el formulario se envíe al dispositivo cliente donde se representa. Si `RenderAtClient` es `auto` (el valor predeterminado), el diseño de formulario determina si el formulario se procesará en el cliente. El diseño de formulario debe ser un diseño de formulario con un diseño fluido.
 
-Una opción de tiempo de ejecución opcional que puede establecer es la opción `SeedPDF`. La opción `SeedPDF` combina el contenedor de PDF (documento de PDF semilla) con el diseño de formulario y los datos XML. Tanto el diseño de formulario como los datos XML se envían a Acrobat o Adobe Reader, donde se procesa el formulario. La opción `SeedPDF` se puede usar cuando el equipo cliente no tiene fuentes que se usen en el formulario, como cuando un usuario final no tiene licencia para usar una fuente para la que el propietario del formulario tiene licencia.
+Una opción de tiempo de ejecución opcional que puede establecer es la opción `SeedPDF`. La opción `SeedPDF` combina el contenedor de PDF (documento PDF semilla) con el diseño de formulario y los datos XML. Tanto el diseño de formulario como los datos XML se envían a Acrobat o Adobe Reader, donde se procesa el formulario. La opción `SeedPDF` se puede usar cuando el equipo cliente no tiene fuentes que se usen en el formulario, como cuando un usuario final no tiene licencia para usar una fuente para la que el propietario del formulario tiene licencia.
 
-Puede utilizar Designer para crear un archivo de PDF dinámico simple para utilizarlo como archivo de PDF semilla. Se requieren los siguientes pasos para realizar esta tarea:
+Puede utilizar Designer para crear un archivo PDF dinámico simple para utilizarlo como archivo PDF semilla. Se requieren los siguientes pasos para realizar esta tarea:
 
-1. Determine si necesita incrustar alguna fuente dentro del archivo del PDF semilla. El archivo del PDF semilla debe contener las fuentes adicionales que requiere el formulario que se está procesando. Al incrustar fuentes en el archivo del PDF semilla, asegúrese de que no infringe ningún acuerdo de licencia de fuentes. En Designer, puede determinar si puede incrustar fuentes legalmente. Al guardar, si hay fuentes que no se pueden incrustar en el formulario, Designer muestra un mensaje con las fuentes que no se pueden incrustar. Este mensaje no se muestra en Designer para documentos de PDF estáticos.
-1. Si está creando el archivo del PDF semilla en Designer, se recomienda que, como mínimo, añada un campo de texto que contenga un mensaje. El mensaje debe dirigirse a los usuarios de versiones anteriores de Adobe Reader para informarles de que necesitan Acrobat 7.0 o posterior, o Adobe Reader 7.0 o posterior, para ver el documento.
-1. Guarde el archivo del PDF semilla como un archivo de PDF dinámico con la extensión de nombre de archivo del PDF.
+1. Determine si necesita incrustar alguna fuente dentro del archivo PDF semilla. El archivo PDF semilla debe contener las fuentes adicionales que requiere el formulario que se está procesando. Al incrustar fuentes en el archivo PDF semilla, asegúrese de que no infringe ningún acuerdo de licencia de fuentes. En Designer, puede determinar si puede incrustar fuentes legalmente. Al guardar, si hay fuentes que no se pueden incrustar en el formulario, Designer muestra un mensaje con las fuentes que no se pueden incrustar. Este mensaje no se muestra en Designer para documentos estáticos de PDF.
+1. Si está creando el archivo de PDF semilla en Designer, se recomienda que, como mínimo, añada un campo de texto que contenga un mensaje. El mensaje debe dirigirse a los usuarios de versiones anteriores de Adobe Reader para informarles de que necesitan Acrobat 7.0 o posterior, o Adobe Reader 7.0 o posterior, para ver el documento.
+1. Guarde el archivo PDF semilla como un archivo PDF dinámico con la extensión de nombre de archivo PDF.
 
 >[!NOTE]
 >
->No es necesario definir la opción del PDF semilla en tiempo de ejecución para procesar un formulario en el cliente. Si no especifica un PDF semilla, el servicio Forms crea un PDF de shell que no contendrá objetos COS, pero sí un envoltorio de PDF con el contenido XDP real incrustado en él. Los pasos de esta sección no establecen la opción del PDF semilla en tiempo de ejecución. Para obtener información sobre los objetos COS, consulte la Guía de referencia de Adobe PDF.
+>No es necesario definir la opción de tiempo de ejecución de PDF semilla para procesar un formulario en el cliente. Si no especifica un PDF semilla, el servicio Forms crea un PDF de shell que no contendrá objetos COS, pero sí un envoltorio PDF con el contenido XDP real incrustado en él. Los pasos de esta sección no establecen la opción del tiempo de ejecución de PDF semilla. Para obtener información sobre los objetos COS, consulte la Guía de referencia de Adobe PDF.
 
 **Procesar un formulario en el cliente**
 
@@ -131,7 +134,7 @@ Procesar un formulario en el cliente mediante la API de Forms (Java):
 
 **Consulte también**
 
-[SOAP Inicio rápido (modo de): Procesar un formulario en el cliente mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[Inicio rápido (modo SOAP): Procesar un formulario en el cliente mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
