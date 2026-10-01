@@ -11,11 +11,9 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '412'
 ht-degree: 97%
-
 ---
-
 # Incrustar un componente de vínculo en una página{#embedding-link-component-in-a-page}
 
 ## Requisitos previos {#prerequisites}
@@ -56,6 +54,6 @@ Siga estos pasos para agregar un componente Vínculo a la página:
 * Asegúrese de seleccionar PDF como tipo de procesamiento si la ruta especificada en Ruta de formulario apunta a un documento que tiene PDF como formato de procesamiento permitido.
 * La dirección URL de envío de un formulario se puede especificar en varios lugares y su orden de prioridad es el siguiente:
 
-   1. La dirección URL de envío incrustada en el formulario (en el botón de envío) tiene la prioridad más alta.
-   1. La dirección URL de envío que se menciona en el Administrador de Forms tiene la prioridad media.
-   1. Enviar URL mencionada en el portal de formularios tiene la prioridad más baja.
+  1. La dirección URL de envío incrustada en el formulario (en el botón de envío) tiene la prioridad más alta.
+  1. La dirección URL de envío que se menciona en el Administrador de Forms tiene la prioridad media.
+  1. Enviar URL mencionada en el portal de formularios tiene la prioridad más baja.

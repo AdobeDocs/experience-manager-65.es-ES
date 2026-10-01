@@ -1,5 +1,5 @@
 ---
-title: Sugerencias de codificación
+title: Sugerencias de programación
 description: Conozca algunas sugerencias para codificar las prácticas recomendadas en Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
-# Sugerencias de codificación{#coding-tips}
+# Sugerencias de programación{#coding-tips}
 
 ## Utilice etiquetas o HTL tanto como sea posible {#use-taglibs-or-htl-as-much-as-possible}
 
@@ -30,7 +28,7 @@ El código se escribe una vez, pero se lee muchas veces. Dedicar un poco de tiem
 
 Lo ideal es que otro programador no tenga que abrir un módulo para comprender lo que hace. Del mismo modo, deberían poder saber qué hace un método sin leerlo. Cuanto mejor pueda suscribirse a estas ideas, más fácil será leer el código y más rápido podrá escribirlo y cambiarlo.
 
-AEM En el código base de la, se utilizan las siguientes convenciones:
+En la base de código de AEM, se utilizan las siguientes convenciones:
 
 
 * Una sola implementación de una interfaz se denomina `<Interface>Impl`, es decir, `ReaderImpl`.
@@ -75,7 +73,7 @@ Cuando una API está en desuso, siempre es mejor encontrar el nuevo método reco
 
 ### Escribir código localizable {#write-localizable-code}
 
-AEM Las cadenas que no proporcione un autor deben incluirse en una llamada al diccionario de i18n que se va a usar con el formato *I18n.get()* en JSP/Java y *CQ.I18n.get()* en JavaScript. Esta implementación devolverá la cadena que se le pasó si no se encuentra ninguna implementación, por lo que ofrece la flexibilidad de implementar la localización después de implementar las funciones en el idioma principal.
+Las cadenas que no proporcione un autor deben incluirse en una llamada al diccionario i18n de AEM a través de *I18n.get()* en JSP/Java y *CQ.I18n.get()* en JavaScript. Esta implementación devolverá la cadena que se le pasó si no se encuentra ninguna implementación, por lo que ofrece la flexibilidad de implementar la localización después de implementar las funciones en el idioma principal.
 
 ### Escape de rutas de recursos por seguridad {#escape-resource-paths-for-safety}
 
@@ -87,7 +85,7 @@ AEM proporciona una API XSS para limpiar fácilmente parámetros y garantizar la
 
 ### Implementar el registro adecuado {#implement-appropriate-logging}
 
-AEM En el caso del código Java™, admite slf4j como API estándar para registrar mensajes y debe utilizarse con las configuraciones disponibles a través de la consola OSGi para mantener la coherencia en la administración. Slf4j expone cinco niveles de registro diferentes. El Adobe recomienda utilizar las siguientes directrices al elegir el nivel en el que registrar un mensaje:
+Para el código Java™, AEM admite slf4j como API estándar para registrar mensajes y debe utilizarse con las configuraciones disponibles a través de la consola OSGi para mantener la coherencia en la administración. Slf4j expone cinco niveles de registro diferentes. Adobe recomienda utilizar las siguientes directrices al elegir el nivel en el que registrar un mensaje:
 
 * ERROR: cuando algo se ha roto en el código y el procesamiento no puede continuar. Esto suele ocurrir como resultado de una excepción inesperada. Es útil incluir los seguimientos de pila en estos escenarios.
 * ADVERTENCIA: Cuando algo no ha funcionado correctamente, pero el procesamiento puede continuar. A menudo, esto será el resultado de una excepción que esperábamos, como una *PathNotFoundException*.

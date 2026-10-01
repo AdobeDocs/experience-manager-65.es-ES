@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '257'
 ht-degree: 1%
-
 ---
-
 # Uso de la votación {#using-voting}
 
 El componente `Voting` es una herramienta útil que permite a los miembros de la comunidad clasificar un contenido en particular, como una respuesta dentro de un componente de control de calidad. Con el componente `Voting`, los miembros seleccionan las flechas arriba o abajo para indicar su opinión.

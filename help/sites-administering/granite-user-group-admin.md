@@ -1,27 +1,29 @@
 ---
 title: 'Operaciones de Granite: administración de usuarios y grupos'
+
 description: Obtenga información sobre la administración de usuarios y grupos de Granite.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
+
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 1%
-
+source-wordcount: '956'
+ht-degree: 3%
 ---
-
 
 # Operaciones de Granite: administración de usuarios y grupos{#granite-operations-user-and-group-administration}
 
 Granite incorpora la implementación del repositorio de CRX de la especificación de API de JCR y tiene su propia administración de usuarios y grupos.
 
-AEM AEM Estas cuentas son la base subyacente de las [cuentas de](/help/sites-administering/security.md) y cualquier cambio de cuenta realizado con la administración de Granite se reflejará si/cuando se accede a las cuentas desde la consola [Usuarios de](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (por ejemplo, `http://localhost:4502/useradmin`). AEM AEM Desde la consola Usuarios de la también puede administrar los privilegios y otros detalles de la.
+Estas cuentas son la base subyacente de las [cuentas de AEM](/help/sites-administering/security.md) y cualquier cambio de cuenta realizado con la administración Granite se reflejará si/cuando se accede a las cuentas desde la [consola Usuarios de AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (por ejemplo, `http://localhost:4502/useradmin`). Desde la consola Usuarios de AEM también puede administrar los privilegios y otras características específicas de AEM.
 
 Las consolas de administración de grupos y usuarios de Granite están disponibles en la consola **[Herramientas](/help/sites-administering/tools-consoles.md)** de la interfaz de usuario táctil optimizada:
 
@@ -35,9 +37,9 @@ Si elige **Usuarios** o **Grupos** de la consola Herramientas, se abrirá la con
 
   La consola **Usuarios** enumera:
 
-   * el nombre de usuario
-   * el nombre de inicio de sesión del usuario (nombre de cuenta)
-   * cualquier título que se haya dado a la cuenta
+  * el nombre de usuario
+  * el nombre de inicio de sesión del usuario (nombre de cuenta)
+  * cualquier título que se haya dado a la cuenta
 
 * [Administración de grupos](#group-administration)
 
@@ -45,9 +47,9 @@ Si elige **Usuarios** o **Grupos** de la consola Herramientas, se abrirá la con
 
   La consola **Grupos** enumera:
 
-   * el nombre del grupo
-   * la descripción del grupo
-   * el número de usuarios/grupos del grupo
+  * el nombre del grupo
+  * la descripción del grupo
+  * el número de usuarios/grupos del grupo
 
 ## Administración de usuarios {#user-administration}
 
@@ -91,8 +93,8 @@ Si elige **Usuarios** o **Grupos** de la consola Herramientas, se abrirá la con
    * **Acerca de**
    * **Configuración de la cuenta**
 
-      * **Estado**
-Puede marcar la cuenta como **activa** o **inactiva**.
+     * **Estado**
+       Puede marcar la cuenta como **activa** o **inactiva**.
 
    * **Foto**
 

@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '251'
 ht-degree: 1%
-
 ---
-
 # Uso de Me gusta {#using-liking}
 
 El componente `Liking` es una herramienta útil que permite a los usuarios expresar una opinión sobre un fragmento de contenido en particular, como un comentario dentro de un foro. Con el componente `Liking`, los miembros seleccionan el icono de corazón para indicar una opinión positiva.

@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 93%
-
+source-wordcount: '266'
+ht-degree: 92%
 ---
-
 # Visualizar información en el panel Resumen de tareas {#displaying-information-in-the-task-summary-pane}
 
 Cuando se abre una tarea en AEM Forms Workspace, el panel Resumen de tareas puede mostrar un resumen de la tarea. Esta información adicional y relevante para una tarea agrega más valor para el usuario final de AEM Forms Workspace.

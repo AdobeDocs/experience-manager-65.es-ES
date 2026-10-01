@@ -1,5 +1,5 @@
 ---
-title: Personalizar Adobe Analytics Framework
+title: Personalización del marco de trabajo de Adobe Analytics
 description: Obtenga información sobre cómo personalizar el marco de trabajo de Adobe Analytics para Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Integration
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1638'
 ht-degree: 0%
-
 ---
-
-# Personalizar Adobe Analytics Framework{#customizing-the-adobe-analytics-framework}
+# Personalización del marco de trabajo de Adobe Analytics{#customizing-the-adobe-analytics-framework}
 
 El marco de Adobe Analytics determina la información de la que se realiza un seguimiento con Adobe Analytics. Para personalizar el marco predeterminado, utilice JavaScript para agregar un seguimiento personalizado, integrar complementos de Adobe Analytics y cambiar la configuración general dentro del marco utilizado para el seguimiento.
 
@@ -126,7 +124,7 @@ El código del archivo [analytics.sitecatalyst.js](/help/sites-developing/extend
 
 `if (s.usePlugins) s.doPlugins(s)`
 
-En el siguiente procedimiento se muestra cómo utilizar el cuadro JavaScript para personalizar el seguimiento de Adobe Analytics. Si tu JavaScript necesita usar complementos de Adobe Analytics AEM, [inclúyalos](/help/sites-administering/adobeanalytics.md) en el sistema de administración de etiquetas de la red de.
+En el siguiente procedimiento se muestra cómo utilizar el cuadro JavaScript para personalizar el seguimiento de Adobe Analytics. Si tu JavaScript necesita usar complementos de Adobe Analytics, [inclúyalos](/help/sites-administering/adobeanalytics.md) en AEM.
 
 1. Agregue el siguiente código JavaScript al cuadro para que se ejecute `s.doPlugins`:
 
@@ -189,11 +187,11 @@ El código del archivo analytics.sitecatalyst.js (que incluye el contenido del a
 
 if (s.usePlugins) s.doPlugins
 
-Por lo tanto, su JavaScript debe establecer `s.usePlugins` en `true` para que se ejecute cualquier código de la función `s_doPlugins`. Para personalizar el código, superponga el archivo config.js.jsp con uno que utilice su propio JavaScript. Si tu JavaScript necesita usar complementos de Adobe Analytics AEM, [inclúyalos](/help/sites-administering/adobeanalytics.md) en el sistema de administración de etiquetas de la red de.
+Por lo tanto, su JavaScript debe establecer `s.usePlugins` en `true` para que se ejecute cualquier código de la función `s_doPlugins`. Para personalizar el código, superponga el archivo config.js.jsp con uno que utilice su propio JavaScript. Si tu JavaScript necesita usar complementos de Adobe Analytics, [inclúyalos](/help/sites-administering/adobeanalytics.md) en AEM.
 
 >[!NOTE]
 >
->No edite el archivo /libs/cq/analytics/components/sitecatalyst/config.js.jsp. AEM Ciertas tareas de actualización o mantenimiento pueden reinstalar el archivo original y eliminar los cambios.
+>No edite el archivo /libs/cq/analytics/components/sitecatalyst/config.js.jsp. Algunas tareas de actualización o mantenimiento de AEM pueden reinstalar el archivo original y eliminar los cambios.
 
 1. En CRXDE Lite, cree la estructura de carpetas /apps/cq/analytics/components:
 
@@ -238,11 +236,11 @@ Por lo tanto, su JavaScript debe establecer `s.usePlugins` en `true` para que se
 >
 >Si hay texto presente en el JavaScript de forma libre del marco de trabajo de una página (incluso solo espacios en blanco), se omite config.js.jsp.
 
-### Uso de complementos de Adobe Analytics AEM en la {#using-adobe-analytics-plugins-in-aem}
+### Uso de complementos de Adobe Analytics en AEM {#using-adobe-analytics-plugins-in-aem}
 
-Obtenga el código de JavaScript para los complementos de Adobe Analytics e integre estos complementos en el marco de trabajo de Adobe Analytics AEM en la. Agregue el código a una carpeta de la biblioteca de cliente de la categoría `sitecatalyst.plugins` para que esté disponible para el código personalizado de JavaScript.
+Obtenga el código JavaScript de los complementos de Adobe Analytics e integre estos complementos en el marco de trabajo de Adobe Analytics en AEM. Agregue el código a una carpeta de la biblioteca de cliente de la categoría `sitecatalyst.plugins` para que esté disponible para el código personalizado de JavaScript.
 
-Por ejemplo, si integra el complemento `getQueryParams`, puede llamar al complemento desde la función `s_doPlugins` de su JavaScript personalizado. El siguiente código de ejemplo envía la cadena de consulta en **&quot;pid&quot;** desde la dirección URL del referente como **eVar 1**, cuando se activa una llamada de Adobe Analytics.
+Por ejemplo, si integra el complemento `getQueryParams`, puede llamar al complemento desde la función `s_doPlugins` de su JavaScript personalizado. El siguiente código de ejemplo envía la cadena de consulta en **&quot;pid&quot;** desde la dirección URL del referente como **eVar1**, cuando se activa una llamada de Adobe Analytics.
 
 ```
 s.usePlugins=true;
@@ -253,7 +251,7 @@ function s_doPlugins(s) {
 s.doPlugins=s_doPlugins;
 ```
 
-AEM instala los siguientes complementos de Adobe Analytics, de modo que estén disponibles de forma predeterminada:
+AEM instala los siguientes complementos de Adobe Analytics para que estén disponibles de forma predeterminada:
 
 * getQueryParam()
 * getPreviousValue()
@@ -263,11 +261,11 @@ La carpeta de biblioteca de cliente /libs/cq/analytics/clientlibs/sitecatalyst/p
 
 >[!NOTE]
 >
->Cree una carpeta de biblioteca de cliente para los complementos. No agregue complementos a la carpeta `/libs/cq/analytics/clientlibs/sitecatalyst/plugins`. AEM Esta práctica garantiza que su contribución a la categoría `sitecatalyst.plugins` no se sobrescriba durante las tareas de reinstalación o actualización de la instalación de los elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista de elementos de la lista.
+>Cree una carpeta de biblioteca de cliente para los complementos. No agregue complementos a la carpeta `/libs/cq/analytics/clientlibs/sitecatalyst/plugins`. Esta práctica garantiza que su contribución a la categoría `sitecatalyst.plugins` no se sobrescriba durante las tareas de reinstalación o actualización de AEM.
 
 Utilice el siguiente procedimiento para crear la carpeta de la biblioteca de cliente para sus complementos. Solo debe realizar este procedimiento una vez. Para añadir un complemento a la carpeta de biblioteca del cliente, utilice el procedimiento siguiente.
 
-1. En un explorador web, abra el CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. En un explorador web, abra CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 
 1. Haga clic con el botón derecho en la carpeta /apps/my-app/clientlibs y haga clic en Crear > Crear nodo. Introduzca los siguientes valores de propiedad y haga clic en Aceptar:
 
@@ -288,7 +286,7 @@ Utilice el siguiente procedimiento para crear la carpeta de la biblioteca de cli
 
 1. Haga clic en Guardar todo.
 
-AEM Utilice el siguiente procedimiento para obtener el código del complemento, almacenarlo en el repositorio de y agregarlo a la carpeta de la biblioteca de cliente.
+Utilice el siguiente procedimiento para obtener el código del complemento, almacenarlo en el repositorio de AEM y agregarlo a la carpeta de la biblioteca de cliente.
 
 1. Inicie sesión en [sc.omniture.com](https://sc.omniture.com/login/) con su cuenta de Adobe Analytics.
 1. En la página de aterrizaje, vaya a Ayuda > Página principal de ayuda.

@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1010'
 ht-degree: 95%
-
 ---
-
 # Introducción a AEM Forms Workspace {#getting-started-with-aem-forms-workspace}
 
 Puede utilizar AEM Forms Workspace para realizar las siguientes tareas:

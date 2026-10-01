@@ -11,11 +11,9 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 0%
-
+source-wordcount: '478'
+ht-degree: 1%
 ---
-
 # Editor de diálogos{#dialog-editor}
 
 El editor de diálogos proporciona una interfaz gráfica para crear y editar fácilmente cuadros de diálogo y andamios.
@@ -33,7 +31,7 @@ El nodo de diálogo se abre en **editor de diálogos**:
 La interfaz del editor de diálogos se compone de cuatro paneles:
 
 * La **paleta**, en la esquina superior izquierda. Este panel contiene los widgets disponibles para crear un cuadro de diálogo, como paneles de pestañas, campos de texto, listas de selección y botones. Puede expandir las diferentes categorías dentro de la paleta haciendo clic en la barra divisoria deseada.
-* El panel **structure**, en la esquina inferior izquierda. Este panel muestra la estructura jerárquica de nodos que conforman la definición del cuadro de diálogo. Puede ver la misma estructura expandiendo el nodo de diálogo en el CRXDE Lite o en el Explorador de contenido de CRX.
+* El panel **structure**, en la esquina inferior izquierda. Este panel muestra la estructura jerárquica de nodos que conforman la definición del cuadro de diálogo. Puede ver la misma estructura expandiendo el nodo de diálogo en CRXDE Lite o en el Explorador de contenido de CRX.
 * El panel **render**, en el centro de la ventana. Este panel muestra cómo se representa la definición de cuadro de diálogo definida en el panel de estructura como un cuadro de diálogo real.
 * El panel **propiedades**. Este panel muestra las propiedades del nodo resaltado en el panel de estructura.
 
@@ -45,7 +43,7 @@ Una vez completada la estructura deseada, el usuario hace clic en **Guardar**, e
 
 >[!CAUTION]
 >
->El editor de diálogos sirve para crear diálogos simples. Es posible que no pueda editar definiciones de cuadros de diálogo más complejas. En los casos en los que el editor de diálogos no permite la edición de una estructura de diálogo, la definición del diálogo debe crearse, editarse o ambos manualmente. Para ello, edite directamente la estructura del nodo mediante CRXDE Lite o el Explorador de contenido de CRX, por ejemplo.
+>El editor de diálogos sirve para crear diálogos simples. Es posible que no pueda editar definiciones de cuadros de diálogo más complejas. En los casos en los que el editor de diálogos no permite la edición de una estructura de diálogo, la definición del diálogo debe crearse, editarse o ambos manualmente. Para ello, edite directamente la estructura del nodo con CRXDE Lite o el Explorador de contenido de CRX, por ejemplo.
 
 ### Creación de un nuevo cuadro de diálogo {#creating-a-new-dialog}
 

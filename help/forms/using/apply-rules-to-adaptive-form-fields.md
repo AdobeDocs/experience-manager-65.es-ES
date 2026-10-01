@@ -9,11 +9,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 87%
-
+source-wordcount: '1176'
+ht-degree: 88%
 ---
-
 # Tutorial: Aplicar reglas a campos de formularios adaptables {#tutorial-apply-rules-to-adaptive-form-fields}
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
@@ -63,7 +61,7 @@ A cada cliente se le asigna un número de ID de cliente único, que ayuda a iden
 
    ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Seleccione **[!UICONTROL Listo]** para guardar la regla. En la ventana del editor de reglas, seleccione **[!UICONTROL Cerrar]**.
+   Seleccione **[!UICONTROL Listo]** para guardar la regla. En la ventana del editor de reglas, seleccione **[!UICONTROL Cerrar]**.
 
 1. Previsualice el formulario adaptable. Introduzca un ID en el campo **[!UICONTROL ID de cliente]**. El formulario ahora puede recuperar los detalles del cliente de la base de datos.
 
@@ -95,8 +93,8 @@ Una vez recuperados los detalles del cliente de la base de datos, puede actualiz
    >
    >No arrastre y suelte los campos **[!UICONTROL Nombre]** ni **[!UICONTROL ID del cliente]** hasta la propiedad tablename.property correspondiente (por ejemplo, customerdetails.name). Ayuda a evitar actualizar el nombre y el ID del cliente por error.
 
-1. Arrastre y suelte el campo **[!UICONTROL ID de cliente]** desde la pestaña [!UICONTROL Objetos de formulario] hasta el cuadro de diálogo **[!UICONTROL ENTRADA]**. Los campos sin un nombre de tabla prefijado (por ejemplo, detalles del cliente en este caso de uso) sirven como parámetro de búsqueda para el servicio de actualización. El campo **[!UICONTROL ID]** en este caso de uso identifica de forma exclusiva un registro de la tabla **detalles del cliente**.
-1. Seleccione **[!UICONTROL Listo]** para guardar la regla. En la ventana del editor de reglas, seleccione **[!UICONTROL Cerrar]**.
+1. Arrastre y suelte el campo **[!UICONTROL ID de cliente]** desde la pestaña [!UICONTROL Objetos de formulario] hasta el cuadro de diálogo **[!UICONTROL ENTRADA]**. Los campos sin un nombre de tabla como prefijo (por ejemplo, detalles del cliente en este caso de uso) sirven como parámetro de búsqueda para el servicio de actualización. El campo **[!UICONTROL ID]** en este caso de uso identifica de forma exclusiva un registro de la tabla **detalles del cliente**.
+1. Seleccione **[!UICONTROL Listo]** para guardar la regla. En la ventana del editor de reglas, seleccione **[!UICONTROL Cerrar]**.
 1. Previsualice el formulario adaptable. Recuperar detalles de un cliente, actualizar la dirección de envío y enviar el formulario. Cuando recupere los detalles del mismo cliente de nuevo, se mostrará la dirección de envío actualizada.
 
 ## Paso 3: (Sección bonus) Utilice el editor de código para ejecutar las validaciones y mostrar los mensajes de error {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}

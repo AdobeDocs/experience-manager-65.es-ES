@@ -7,11 +7,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 1%
-
 ---
-
 # Product Cockpit {#product-cockpit}
 
 ## Información general {#overview}
@@ -26,7 +24,7 @@ Los datos de productos clasificados incluyen cualquier mutación futura, como nu
 
 ## Configuración {#configuration}
 
-AEM Los catálogos de productos deben configurarse en la opción de configuración de la. Consulte [configurar el almacén y los catálogos](/help/commerce/cif/getting-started.md#catalog) para obtener más información.
+Los catálogos de productos deben configurarse en AEM. Consulte [configurar el almacén y los catálogos](/help/commerce/cif/getting-started.md#catalog) para obtener más información.
 
 La activación de las funciones de catálogo organizadas requiere autenticación. Consulte [Introducción](/help/commerce/cif/getting-started.md) para obtener más información.
 
@@ -36,9 +34,9 @@ La activación de las funciones de catálogo organizadas requiere autenticación
 
 ## Apertura de la cabina de productos {#opening-product-cockpit}
 
-La forma más fácil de acceder a la cabina del producto es a través del menú &quot;Commerce AEM&quot; en el menú principal de la barra de herramientas, que se encuentra en la parte superior de la pantalla, en la parte superior de la pantalla. También es posible usar Omnisearch (buscar Commerce) o abrir `https://<yourAEMInstance>/commerce.html`.
+La forma más sencilla de acceder a la cabina del producto es a través del menú &quot;Commerce&quot; del menú principal de AEM. También es posible usar Omnisearch (buscar Commerce) o abrir `https://<yourAEMInstance>/commerce.html`.
 
-AEM ![menú de la](/help/commerce/cif/assets/aem-menu.png)
+![menú AEM](/help/commerce/cif/assets/aem-menu.png)
 
 ## Exploración de catálogos de productos {#browsing-product-catalogs}
 
@@ -56,7 +54,7 @@ Al hacer clic en un producto, se cargan variaciones de productos si están dispo
 
 >[!NOTE]
 >
->AEM Los datos del catálogo de productos en la son datos que se recuperan en tiempo real a través del punto de conexión comercial configurado. AEM No se almacenan datos del catálogo de productos en la.
+>Los datos del catálogo de productos en AEM son datos que se recuperan en tiempo real a través del punto de conexión comercial configurado. No se almacenan datos del catálogo de productos en AEM.
 
 ## Buscando catálogos de productos {#searching-product-catalog}
 
@@ -76,12 +74,12 @@ Al hacer clic en el icono de propiedades de un producto o categoría, se abre la
 
 ### Fichas de Commerce {#tabs}
 
-Las pestañas general y de variante muestran propiedades de comercio predefinidas que provienen del backend del comercio. Estos datos (incl. AEM variantes) son datos de solo lectura en el caso de los datos, ya que el sistema de registro es el back-end de comercio. La pestaña variante solo aparece para productos con variantes y muestra una lista de todas las variantes.
+Las pestañas general y de variante muestran propiedades de comercio predefinidas que provienen del backend del comercio. Estos datos (incluidas las variantes) son datos de solo lectura en AEM, ya que el sistema de registro es el servidor comercial. La pestaña variante solo aparece para productos con variantes y muestra una lista de todas las variantes.
 
 ![propiedades de catálogo](/help/commerce/cif/assets/catalog-properties.png)
 
-### AEM Pestañas de contenido {#content-tabs}
+### Pestañas de contenido de AEM {#content-tabs}
 
-AEM Estas pestañas, agrupadas por tipos de contenido de (Fragmentos de experiencias, Fragmentos de contenido, Assets AEM asociado), muestran contenido de la lista de contenido asociado con el objeto de comercio, que está asociado con el contenido de la lista de distribución de contenido. La acción &quot;Ver detalles&quot; abre una nueva pestaña del explorador con el contenido seleccionado.
+Estas pestañas, agrupadas por tipos de contenido de AEM (fragmentos de experiencias, fragmentos de contenido, Assets asociado), muestran contenido de AEM asociado al objeto de comercio. La acción &quot;Ver detalles&quot; abre una nueva pestaña del explorador con el contenido seleccionado.
 
 ![propiedades de contenido](/help/commerce/cif/assets/content-properties.png)

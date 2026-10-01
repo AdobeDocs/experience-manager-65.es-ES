@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 100%
-
+source-wordcount: '1356'
+ht-degree: 98%
 ---
-
 # Iniciar procesos {#starting-processes}
 
 El espacio de trabajo de AEM Forms organiza los procesos según las categorías que configuren el administrador o el diseñador de procesos. También puede colocar procesos que utilice con frecuencia en la categoría Favoritos para poder encontrarlos rápidamente.
