@@ -11,11 +11,9 @@ feature: Configuring
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 0%
-
+source-wordcount: '1224'
+ht-degree: 5%
 ---
-
 # Guía de rendimiento de Assets{#assets-performance-guide}
 
 La administración de activos digitales (DAM) se utiliza a menudo en casos en los que el rendimiento es importante. Sin embargo, la configuración típica de DAM contiene varios componentes de hardware y software que pueden afectar al rendimiento. Este documento proporciona lo siguiente:
