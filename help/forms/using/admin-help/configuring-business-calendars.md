@@ -11,24 +11,22 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1949'
 ht-degree: 0%
-
 ---
-
 # Configurar calendarios comerciales {#configuring-business-calendars}
 
-*Los calendarios comerciales* definen los días laborables y no laborables (por ejemplo, los feriados legales, los fines de semana y los días de cierre de la empresa) de su organización. AEM Cuando se utilizan calendarios comerciales, los formularios de datos omiten los días no laborables al realizar determinados cálculos de fechas. En Workbench, puede especificar si desea utilizar calendarios comerciales para eventos asociados a usuarios, como recordatorios de tareas, plazos y escalaciones, o para acciones no asociadas a usuarios, como Eventos de temporizador y el Servicio de espera.
+*Los calendarios comerciales* definen los días laborables y no laborables (por ejemplo, los feriados legales, los fines de semana y los días de cierre de la empresa) de su organización. Al utilizar los calendarios comerciales, los formularios AEM Forms omiten los días no laborables al realizar determinados cálculos de fechas. En Workbench, puede especificar si desea utilizar calendarios comerciales para eventos asociados a usuarios, como recordatorios de tareas, plazos y escalaciones, o para acciones no asociadas a usuarios, como Eventos de temporizador y el Servicio de espera.
 
 Por ejemplo, se configura un recordatorio de tarea para que se produzca tres días hábiles después de que la tarea se asigne a un usuario. La tarea se asigna el jueves. Sin embargo, los tres días siguientes no son días laborables porque el viernes es feriado nacional y los dos días siguientes son días de fin de semana. Por lo tanto, el recordatorio se envía el miércoles de la semana siguiente.
 
 >[!NOTE]
 >
->AEM Al calcular fechas y horas mediante calendarios comerciales, los formularios de datos utilizan la fecha y la hora del servidor en el que se están ejecutando y no se ajustan a la diferencia entre las zonas horarias. Por ejemplo, si un recordatorio de tarea está programado para producirse a las 10:00 a. m. en un servidor que se ejecute en Londres, pero el usuario que recibe el recordatorio está en la ciudad de Nueva York, recibirá el recordatorio a las 5:00 a. m. hora local.
+>Al calcular fechas y horas mediante calendarios comerciales, los formularios AEM Forms utilizan la fecha y la hora del servidor en el que se está ejecutando y no se ajustan a la diferencia entre las zonas horarias. Por ejemplo, si un recordatorio de tarea está programado para producirse a las 10:00 a. m. en un servidor que se ejecute en Londres, pero el usuario que recibe el recordatorio está en la ciudad de Nueva York, recibirá el recordatorio a las 5:00 a. m. hora local.
 
 ## Usar el calendario empresarial predeterminado {#using-the-default-business-calendar}
 
-AEM Los formularios de datos proporcionan un calendario empresarial predeterminado (denominado *Calendario integrado*) que designa los sábados y domingos como días no laborables. Si todos los usuarios de su organización tienen los mismos días no laborables, puede actualizar el calendario laboral predeterminado para adaptarlo a su organización. Al utilizar únicamente el calendario empresarial predeterminado, no es necesario habilitar los calendarios comerciales en Administración de usuarios ni proporcionar asignaciones. AEM Cuando no se definen otros calendarios comerciales, los formularios de la aplicación utilizan el calendario empresarial predeterminado.
+Los formularios AEM Forms proporcionan un calendario empresarial predeterminado (denominado *Calendario integrado*) que designa los sábados y los domingos como días no laborables. Si todos los usuarios de su organización tienen los mismos días no laborables, puede actualizar el calendario laboral predeterminado para adaptarlo a su organización. Al utilizar únicamente el calendario empresarial predeterminado, no es necesario habilitar los calendarios comerciales en Administración de usuarios ni proporcionar asignaciones. Cuando no se definen otros calendarios comerciales, los formularios AEM Forms utilizan el calendario empresarial predeterminado.
 
 ## Configurar varios calendarios comerciales {#setting-up-multiple-business-calendars}
 
@@ -40,27 +38,27 @@ Si algunos usuarios de su organización tienen diferentes días no laborables, p
 
    **Pertenencia a un grupo:** Puede asignar un calendario empresarial a un usuario según la pertenencia a un grupo del usuario. En este caso, cada usuario del grupo utilizará el mismo calendario empresarial.
 
-   AEM Si un usuario es miembro de dos grupos diferentes y esos grupos están asignados a dos calendarios comerciales diferentes, los formularios de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación utilizarán el primer calendario que encuentre en sus resultados de búsqueda. En este caso, considere la posibilidad de utilizar claves de calendario empresarial para asociar usuarios con calendarios comerciales.
+   Si un usuario es miembro de dos grupos diferentes y esos grupos están asignados a dos calendarios comerciales diferentes, los formularios AEM Forms utilizarán el primer calendario que encuentre en sus resultados de búsqueda. En este caso, considere la posibilidad de utilizar claves de calendario empresarial para asociar usuarios con calendarios comerciales.
 
    **Claves del calendario empresarial:** Puede asignar un calendario empresarial a un usuario basándose en una clave de calendario empresarial, que es una configuración especificada en Administración de usuarios. A continuación, asigne la clave del calendario empresarial a un calendario empresarial en el flujo de trabajo de formularios.
 
    La forma de asignar claves de calendario empresarial a los usuarios depende de si utiliza un dominio empresarial, local o híbrido. Para obtener más información sobre la configuración de dominios, consulte [Agregar dominios](/help/forms/using/admin-help/adding-domains.md#adding-domains).
 
-   Si utiliza un dominio local o híbrido, la información sobre los usuarios se almacena únicamente en la base de datos de Administración de usuarios. Para establecer la clave del calendario empresarial para estos usuarios, escriba una cadena en el campo Clave del calendario empresarial al agregar o editar un usuario en Administración de usuarios. (Consulte [Agregar y configurar usuarios](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) A continuación, asigne las claves del calendario empresarial (las cadenas) a los calendarios comerciales en el flujo de trabajo de formularios. (Consulte [Asignación de usuarios y grupos a un calendario empresarial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Si utiliza un dominio local o híbrido, la información sobre los usuarios se almacena únicamente en la base de datos de Administración de usuarios. Para establecer la clave del calendario empresarial para estos usuarios, escriba una cadena en el campo Clave del calendario empresarial al agregar o editar un usuario en Administración de usuarios. (Consulte [Agregar y configurar usuarios](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) A continuación, asigne las claves del calendario empresarial (las cadenas) a los calendarios empresariales del flujo de trabajo de Forms. (Consulte [Asignación de usuarios y grupos a un calendario empresarial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Si utiliza un dominio de empresa, la información sobre los usuarios reside en un sistema de almacenamiento de terceros, como un directorio LDAP, que Administración de usuarios sincroniza con la base de datos Administración de usuarios. Esto permite asignar una clave de calendario empresarial a un campo del directorio LDAP. Por ejemplo, si cada registro de usuario del directorio contiene un campo &quot;país&quot; y desea asignar calendarios comerciales basados en el país donde se encuentra el usuario, especifique el nombre del campo &quot;país&quot; en el campo Clave de calendario empresarial al especificar la configuración de usuario para el directorio. (Consulte [Configuración de directorios](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) A continuación, puede asignar las claves del calendario empresarial (los valores definidos para el campo &quot;país&quot; en el directorio LDAP) a los calendarios empresariales del flujo de trabajo de formularios. (Consulte [Asignación de usuarios y grupos a un calendario empresarial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Si utiliza un dominio de empresa, la información sobre los usuarios reside en un sistema de almacenamiento de terceros, como un directorio LDAP, que Administración de usuarios sincroniza con la base de datos Administración de usuarios. Esto permite asignar una clave de calendario empresarial a un campo del directorio LDAP. Por ejemplo, si cada registro de usuario del directorio contiene un campo &quot;país&quot; y desea asignar calendarios comerciales basados en el país donde se encuentra el usuario, especifique el nombre del campo &quot;país&quot; en el campo Clave de calendario empresarial al especificar la configuración de usuario para el directorio. (Consulte [Configuración de directorios](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) A continuación, puede asignar las claves del calendario empresarial (los valores definidos para el campo &quot;país&quot; en el directorio LDAP) a los calendarios comerciales en el flujo de trabajo de Forms. (Consulte [Asignación de usuarios y grupos a un calendario empresarial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. En el flujo de trabajo de Forms, defina un calendario para cada conjunto de usuarios que compartan los mismos días no laborables. (Consulte [Crear o actualizar un calendario empresarial](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. En el flujo de trabajo de Forms, asigne las claves del calendario empresarial o las pertenencias de grupo de cada calendario. (Consulte [Asignación de usuarios y grupos a un calendario empresarial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 1. En Workbench, el desarrollador de procesos elige si desea utilizar calendarios comerciales para recordatorios, plazos y escalaciones. (Consulte la [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)).
 
-   AEM Si el desarrollador de procesos decide utilizar calendarios empresariales, los formularios de la aplicación seleccionarán dinámicamente el calendario empresarial adecuado según la configuración de Administración de usuarios y las asignaciones de calendario empresarial definidas en la Consola de administración o, si no existe ninguna asignación, utilizarán el calendario predeterminado.
+   Si el desarrollador de procesos decide utilizar calendarios comerciales, los formularios AEM Forms seleccionarán dinámicamente el calendario empresarial adecuado en función de la configuración de Administración de usuarios y las asignaciones de calendario empresarial definidas en la Consola de administración o, si no existe ninguna asignación, utilizarán el calendario predeterminado.
 
    Si el desarrollador de procesos no utiliza calendarios comerciales, el cálculo de fecha del evento trata cada día como un día hábil. Por ejemplo, se configura una fecha límite de tarea para que se produzca tres días después de que la tarea se asigne a un usuario. La tarea se asigna el jueves. La fecha límite de la tarea es el domingo, aunque sea fin de semana.
 
 ## Crear o actualizar un calendario empresarial {#create-or-update-a-business-calendar}
 
-Si su organización contiene diferentes conjuntos de usuarios con diferentes días no laborables, puede definir varios calendarios comerciales. AEM También puede cambiar los calendarios existentes, incluido el calendario integrado predeterminado que se proporciona con los formularios de.
+Si su organización contiene diferentes conjuntos de usuarios con diferentes días no laborables, puede definir varios calendarios comerciales. También puede cambiar los calendarios existentes, incluido el calendario integrado predeterminado que se proporciona con los formularios AEM Forms.
 
 >[!NOTE]
 >
@@ -95,7 +93,7 @@ Si su organización contiene diferentes conjuntos de usuarios con diferentes dí
 
 ## Asignación de usuarios y grupos a un calendario empresarial {#mapping-users-and-groups-to-a-business-calendar}
 
-Puede utilizar dos métodos para asociar un calendario empresarial a un usuario. Puede asignar calendarios comerciales a los usuarios en función de una clave de calendario empresarial o del grupo de directorios al que pertenezca el usuario. AEM La ficha Asignación se utiliza para especificar el método que utilizarán los formularios de datos y también para asignar las claves y los grupos del calendario empresarial a los calendarios empresariales. Para obtener más información sobre cómo asociar claves de calendario empresarial con usuarios, consulte [Configuración de varios calendarios empresariales](configuring-business-calendars.md#setting-up-multiple-business-calendars).
+Puede utilizar dos métodos para asociar un calendario empresarial a un usuario. Puede asignar calendarios comerciales a los usuarios en función de una clave de calendario empresarial o del grupo de directorios al que pertenezca el usuario. La ficha Asignación se utiliza para especificar el método que utilizarán los formularios AEM Forms y también para asignar las claves y los grupos del calendario empresarial a los calendarios empresariales. Para obtener más información sobre cómo asociar claves de calendario empresarial con usuarios, consulte [Configuración de varios calendarios empresariales](configuring-business-calendars.md#setting-up-multiple-business-calendars).
 
 ### Asociar calendarios comerciales con usuarios según las claves del calendario empresarial {#associate-business-calendars-with-users-based-on-business-calendar-keys}
 
@@ -118,18 +116,18 @@ Puede utilizar dos métodos para asociar un calendario empresarial a un usuario.
 
    >[!NOTE]
    >
-   >AEM En Workbench, si ha configurado un servicio de usuario para utilizar calendarios comerciales y el servicio está asignado a un grupo, los formularios de la aplicación utilizan las asignaciones de grupo especificadas aquí para resolver el calendario del grupo. AEM Los formularios siempre utilizan asignaciones de grupos para resolver el calendario de los grupos, incluso cuando se utilizan claves de calendario empresarial para resolver el calendario de los usuarios. Si no se encuentra ninguna asignación de grupo, se utiliza el calendario empresarial predeterminado.
+   >En Workbench, si ha configurado un servicio de usuario para utilizar calendarios comerciales y el servicio está asignado a un grupo, los formularios de AEM Forms utilizan las asignaciones de grupo especificadas aquí para resolver el calendario del grupo. Los formularios de AEM siempre utilizan asignaciones de grupos para resolver el calendario de los grupos, incluso cuando se utilizan claves de calendario empresarial para resolver el calendario de los usuarios. Si no se encuentra ninguna asignación de grupo, se utiliza el calendario empresarial predeterminado.
 
 1. Para cada elemento de la lista Grupo de Servicios de Directorio, seleccione un Calendario.
 1. Haga clic en Guardar.
 
 ## Exportar e importar calendarios comerciales {#exporting-and-importing-business-calendars}
 
-AEM Los formularios de datos le permiten exportar e importar calendarios comerciales como archivos XML. Puede utilizar esta función para mover calendarios de un sistema de ensayo a un sistema de producción.
+Los formularios AEM Forms permiten exportar e importar calendarios empresariales como archivos XML. Puede utilizar esta función para mover calendarios de un sistema de ensayo a un sistema de producción.
 
 >[!NOTE]
 >
->AEM Esta característica exporta e importa todos los calendarios comerciales definidos, incluido el calendario empresarial predeterminado proporcionado por los formularios de la aplicación de la aplicación de datos de la aplicación de datos de la aplicación de datos de la aplicación. Un calendario empresarial importado con el mismo nombre que un calendario existente sobrescribe el calendario existente.
+>Esta característica exporta e importa todos los calendarios comerciales definidos, incluido el calendario empresarial predeterminado proporcionado por los formularios AEM Forms. Un calendario empresarial importado con el mismo nombre que un calendario existente sobrescribe el calendario existente.
 
 ### Exportar calendarios comerciales {#export-business-calendars}
 
