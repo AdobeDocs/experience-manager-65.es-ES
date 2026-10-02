@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2045'
 ht-degree: 6%
-
 ---
-
 # Gráficos de formulario adaptable {#af-charts}
 
 ![Hero_Image](assets/charts_hero_image.jpg)
@@ -23,7 +21,7 @@ El paquete de complementos de AEM Forms proporciona un componente de gráfico pr
 
 1. Circular
 1. Columna
-1. Gráfico de sectores
+1. Anillo
 1. Barra
 1. Línea
 1. Línea y punto
@@ -36,7 +34,7 @@ Ahora veamos cómo agregar y configurar el componente Gráfico:
 
 ## Agregar gráfico {#add-chart}
 
-AEM El componente Gráfico está disponible en la barra lateral de la de forma predeterminada. AEM Puede arrastrar y soltar el componente Gráfico desde la barra lateral de la barra de herramientas hasta el formulario o documento adaptable en modo de creación. Al soltar el componente, se crea un marcador de posición para un gráfico.
+El componente Gráfico está disponible en la barra lateral de AEM de forma predeterminada. Puede arrastrar y soltar el componente Gráfico de la barra lateral de AEM en el formulario o documento adaptable en el modo Autor. Al soltar el componente, se crea un marcador de posición para un gráfico.
 
 ## Configurar gráfico {#configure-chart}
 
@@ -63,7 +61,7 @@ En la pestaña Básico, puede configurar las siguientes propiedades:
 * **Eje Y > Usar función**: especifica la función estadística que se utilizará para calcular los valores en el eje Y. En el ejemplo, se añade la cantidad gastada en cada categoría y el valor calculado se traza en el eje Y. Por lo tanto, seleccione Suma de la lista desplegable Usar función. Para obtener más información sobre las funciones, consulte Usar funciones en el gráfico.
 * **Posición de leyenda**: especifica la posición del pie de ilustración con respecto al gráfico. Las opciones disponibles son Derecha, Izquierda, Superior e Inferior.
 * **Mostrar leyenda**: muestra una leyenda para el gráfico cuando está habilitado.
-* **Información de objeto**: especifica el formato en el que aparece la información de objeto al pasar el ratón sobre un punto de datos del gráfico. El valor predeterminado es **\${x}(\${y})**. Según el tipo de gráfico, cuando el ratón señala un punto, barra o fracción del gráfico, las variables **\${x}** y **\${y}** se reemplazarán dinámicamente con los valores correspondientes del eje X y del eje Y y se mostrarán en la información del objeto. Como se muestra en el ejemplo siguiente, la información del objeto se muestra como **Tiendas minoristas(5870)** al apuntar con el ratón a la columna Tiendas minoristas. Para deshabilitar la información del objeto, deje en blanco el campo Información del objeto. Esta opción no es aplicable a los gráficos de líneas y áreas.
+* **Información de objeto**: especifica el formato en el que aparece la información de objeto al pasar el ratón sobre un punto de datos del gráfico. El valor predeterminado es **\${x}(\${y})**. Según el tipo de gráfico, cuando el ratón señala un punto, barra o fracción del gráfico, las variables **\${x}** y **\${y}** se reemplazarán dinámicamente con los valores correspondientes del eje X y del eje Y y se mostrarán en la información del objeto. Como se muestra en el ejemplo siguiente, la información del objeto se muestra como **Tiendas minoristas(5870)** al apuntar con el ratón a la columna Tiendas minoristas. Para deshabilitar la información del objeto, deje en blanco el campo Información del objeto. Esta opción no se aplica a los gráficos de líneas y áreas.
 * **Configuraciones específicas de gráficos**: además de las configuraciones comunes, está disponible la siguiente configuración específica de gráficos:
 * **Radio interior**: disponible para gráficos de anillo para especificar el radio (en píxeles) del círculo interior del gráfico.
 * **Color de línea**: disponible para gráficos de líneas, líneas y puntos y áreas para especificar el valor hexadecimal del color de la línea del gráfico.
@@ -173,7 +171,7 @@ La propiedad chartType especifica el tipo de gráfico. Los valores posibles son 
 
 Tenga en cuenta que ha configurado un gráfico de columnas. Sin embargo, también desea proporcionar a los usuarios una opción para seleccionar un tipo de gráfico diferente de una lista desplegable y volver a dibujar el gráfico. Puede conseguirlo utilizando la propiedad chartType en una regla de la siguiente manera:
 
-1. AEM Arrastre y suelte un componente de lista desplegable desde la barra lateral del formulario adaptable, en la barra de herramientas de la barra de herramientas de la aplicación.
+1. Arrastre y suelte un componente de lista desplegable desde la barra lateral de AEM en el formulario adaptable.
 1. Seleccione el componente y pulse ![Configuración](cmppr1.png).
 1. Especifique un título para la lista desplegable. Por ejemplo, Seleccionar tipo de gráfico.
 1. Agregue los tipos de gráficos admitidos en la sección Elementos para rellenar la lista desplegable. Haga clic en **Listo**.

@@ -1,22 +1,25 @@
 ---
 title: Crear aplicaciones web que procesen Forms
+
 description: Cree una aplicación basada en web que utilice servlets Java para invocar el servicio de Forms y procesar formularios. El servlet Java sirve como vínculo entre el servicio de Forms que devuelve un formulario y un explorador web de cliente.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Workbench,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1870'
 ht-degree: 0%
-
 ---
-
 # Crear aplicaciones web que procesen Forms {#creating-web-applications-thatrenders-forms}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -82,7 +85,7 @@ Para crear aplicaciones basadas en web que procesen formularios basados en fragm
 
 ### Creación de un proyecto web {#creating-a-web-project}
 
-El primer paso para crear una aplicación web que contenga un servlet Java que pueda invocar el servicio Forms es crear un proyecto web. El IDE de Java en el que se basa este documento es Eclipse 3.3. Con el IDE de Eclipse, cree un proyecto web y agregue los archivos JAR necesarios al proyecto. Finalmente, agregue una página de HTML llamada *index.html* y un servlet Java al proyecto.
+El primer paso para crear una aplicación web que contenga un servlet Java que pueda invocar el servicio Forms es crear un proyecto web. El IDE de Java en el que se basa este documento es Eclipse 3.3. Con el IDE de Eclipse, cree un proyecto web y agregue los archivos JAR necesarios al proyecto. Finalmente, agregue una página HTML llamada *index.html* y un servlet Java al proyecto.
 
 La siguiente lista especifica los archivos JAR que debe agregar al proyecto web:
 
@@ -119,7 +122,7 @@ Para obtener la ubicación de estos archivos JAR, consulte [Inclusión de archiv
 
 >[!NOTE]
 >
->Para obtener información sobre cómo crear la página del HTML que invoca el servlet Java `RenderFormFragment`, consulte [Creación de la página web](/help/forms/developing/rendering-forms.md#creating-the-web-page).
+>Para obtener información sobre cómo crear la página de HTML que invoca el servlet Java `RenderFormFragment`, consulte [Creación de la página web](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
 ### Creación de la lógica de la aplicación Java para el servlet {#creating-java-application-logic-for-the-servlet}
 
@@ -307,9 +310,9 @@ El siguiente ejemplo de código representa el servlet Java que invoca el servici
 
 ### Creación de la página web {#creating-the-web-page}
 
-La página web index.html proporciona un punto de entrada al servlet Java e invoca el servicio Forms. Esta página web es un formulario básico para HTML que contiene dos botones de opción y un botón de envío. El nombre de los botones de opción es radio. Cuando el usuario hace clic en el botón Enviar, los datos del formulario se publican en el servlet Java `RenderFormFragment`.
+La página web index.html proporciona un punto de entrada al servlet Java e invoca el servicio Forms. Esta página web es un formulario básico de HTML que contiene dos botones de opción y un botón de envío. El nombre de los botones de opción es radio. Cuando el usuario hace clic en el botón Enviar, los datos del formulario se publican en el servlet Java `RenderFormFragment`.
 
-El servlet Java captura los datos publicados desde la página del HTML mediante el siguiente código Java:
+El servlet Java captura los datos publicados desde la página de HTML mediante el siguiente código Java:
 
 ```java
              Document oInputData = null;
@@ -329,7 +332,7 @@ El servlet Java captura los datos publicados desde la página del HTML mediante 
              }
 ```
 
-El siguiente código de HTML se encuentra en el archivo index.html que se creó durante la configuración del entorno de desarrollo. (Consulte [Creación de un proyecto web](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
+El siguiente código HTML se encuentra en el archivo index.html que se creó durante la configuración del entorno de desarrollo. (Consulte [Creación de un proyecto web](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -383,7 +386,7 @@ Para implementar el servlet Java que invoca el servicio Forms, empaquete la apli
 
 ### Implementación del archivo WAR en el servidor de aplicaciones J2EE {#deploying-the-war-file-to-the-j2ee-application-server}
 
-Puede implementar el archivo WAR en el servidor de aplicaciones J2EE en el que está implementado AEM Forms. Una vez implementado el archivo WAR, puede acceder a la página web del HTML mediante un explorador web.
+Puede implementar el archivo WAR en el servidor de aplicaciones J2EE en el que está implementado AEM Forms. Una vez implementado el archivo WAR, puede acceder a la página web de HTML mediante un explorador web.
 
 **Para implementar el archivo WAR en el servidor de aplicaciones J2EE:**
 

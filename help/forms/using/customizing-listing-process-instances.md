@@ -10,11 +10,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '294'
 ht-degree: 100%
-
 ---
-
 # Personalizar la lista de instancias de proceso {#customizing-the-listing-of-process-instances}
 
 La lista de instancias de proceso se muestra en la pestaña Seguimiento de AEM Forms Workspace.
@@ -49,7 +47,7 @@ En la lista de instancias de proceso, para cada instancia de proceso, AEM Forms 
   </tr>
   <tr>
    <td>processInstanceStatus</td>
-   <td>0 = Iniciado<br /> 1 = En ejecución<br /> 2 = Completo<br /> 3 = Finalizado<br /> 4 = Terminado<br /> 5 = Finalización<br /> 6 = Suspendido<br /> 7 = Suspender<br /> 8 = Sin suspensión</td>
+   <td>0 = Iniciado<br /> 1 = En ejecución<br /> 2 = Completo<br /> 3 = Completándose<br /> 4 = Terminado<br /> 5 = Terminándose<br /> 6 = Suspendido<br /> 7 = Suspendiéndose<br /> 8 = Sin suspensión</td>
   </tr>
   <tr>
    <td>processName</td>

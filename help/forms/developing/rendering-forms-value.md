@@ -9,14 +9,13 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1848'
 ht-degree: 1%
-
 ---
-
 # Procesar formularios por valor {#rendering-forms-by-value}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -35,11 +34,11 @@ Cuando se pasa un diseño de formulario por valor, se aplican las siguientes lim
 
 * No se puede incluir contenido vinculado relativo dentro del diseño de formulario. Todas las imágenes y fragmentos deben incrustarse dentro del diseño de formulario o deben mencionarse absolutamente.
 * Los cálculos del lado del servidor no se pueden realizar después de procesar el formulario. Si el formulario se devuelve al servicio Forms, los datos se extraen y se devuelven sin ningún cálculo del lado del servidor.
-* Como HTML solo puede utilizar imágenes vinculadas en tiempo de ejecución, no es posible generar un HTML con imágenes incrustadas. Esto se debe a que el servicio Forms admite imágenes incrustadas con HTML al recuperar las imágenes de un diseño de formulario al que se hace referencia. Dado que un diseño de formulario transferido por un valor no tiene una ubicación a la que se haga referencia, las imágenes incrustadas no se pueden extraer cuando se muestra la página del HTML. Por lo tanto, las referencias de imagen deben ser rutas absolutas para que se representen en HTML.
+* Como HTML solo puede utilizar imágenes vinculadas en tiempo de ejecución, no es posible generar HTML con imágenes incrustadas. Esto se debe a que el servicio Forms admite imágenes incrustadas con HTML al recuperar las imágenes de un diseño de formulario al que se hace referencia. Dado que un diseño de formulario transferido por un valor no tiene una ubicación a la que se haga referencia, las imágenes incrustadas no se pueden extraer cuando se muestra la página de HTML. Por lo tanto, las referencias de imagen deben ser rutas absolutas para que se representen en HTML.
 
 >[!NOTE]
 >
->Aunque se pueden procesar distintos tipos de formularios por valor (por ejemplo, formularios de HTML o formularios que contengan derechos de uso), en esta sección se describe la representación de PDF forms interactivos.
+>Aunque se pueden procesar distintos tipos de formularios por valor (por ejemplo, formularios HTML o formularios que contengan derechos de uso), en esta sección se describe la representación de formularios interactivos de PDF forms.
 
 >[!NOTE]
 >
@@ -61,7 +60,7 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando u
 
 **Crear un objeto de API de cliente de Forms**
 
-Para poder importar datos mediante programación en una API de cliente de formulario de PDF, debe crear un cliente de servicio de integración de datos. Al crear un cliente de servicios, define la configuración de conexión necesaria para invocar un servicio.
+Para poder importar datos mediante programación en una API de cliente de formulario de PDF, debe crear un cliente del servicio de integración de datos. Al crear un cliente de servicios, define la configuración de conexión necesaria para invocar un servicio.
 
 **Hacer referencia al diseño de formulario**
 
@@ -144,7 +143,7 @@ Procesar un formulario por valor mediante la API de Forms (Java):
 
 [Procesar formularios por valor](/help/forms/developing/rendering-forms.md)
 
-[SOAP Inicio rápido (modo de): Procesamiento por valor mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[Inicio rápido (modo SOAP): Procesamiento por valor mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

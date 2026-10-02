@@ -10,18 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 57%
-
+source-wordcount: '337'
+ht-degree: 58%
 ---
-
 # Almacenamiento personalizado para borradores y componentes de envíos {#custom-storage-for-drafts-and-submissions-component}
 
 ## Información general {#overview}
 
 AEM Forms permite guardar un formulario como borrador. La funcionalidad de borrador le permite mantener un formulario de trabajo en curso, que puede completar y enviar más tarde desde cualquier dispositivo.
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo `/content/forms/fp` de la instancia de Publish. Además, los componentes del portal de AEM Forms proporcionan servicios de datos, que puede utilizar para personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar datos de usuario en un repositorio de datos.
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo `/content/forms/fp` de la instancia de publicación. Además, los componentes del portal de AEM Forms proporcionan servicios de datos, que puede utilizar para personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar datos de usuario en un repositorio de datos.
 
 ## Requisitos previos  {#prerequisites}
 

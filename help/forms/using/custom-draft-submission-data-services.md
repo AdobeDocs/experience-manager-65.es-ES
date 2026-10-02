@@ -1,6 +1,6 @@
 ---
 title: Personalizar los servicios de datos Borradores y envíos
-description: AEM Forms, de forma predeterminada, almacena los borradores de formularios adaptables y los formularios enviados en un nodo predeterminado en la instancia de Publish. Sin embargo, puede configurar los servicios de datos de borrador y envío de AEM Forms para personalizar el almacenamiento de formularios adaptables en Borradores y Enviados.
+description: De forma predeterminada, AEM Forms almacena los borradores de formularios adaptables y los formularios enviados en un nodo predeterminado en la instancia de publicación. Sin embargo, puede configurar los servicios de datos de borrador y envío de AEM Forms para personalizar el almacenamiento de formularios adaptables en Borradores y Enviados.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -10,18 +10,16 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 47%
-
+source-wordcount: '272'
+ht-degree: 48%
 ---
-
 # Personalizar los servicios de datos Borradores y envíos {#customizing-draft-and-submission-data-services}
 
 ## Información general {#overview}
 
 AEM Forms permite a los usuarios guardar un formulario adaptable como borrador. La funcionalidad Borrador proporciona a los usuarios la opción de mantener un formulario de trabajo en curso. Un usuario puede completar y enviar el formulario en cualquier momento desde cualquier dispositivo.
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío en la instancia de Publish en el nodo `/content/forms/fp`.
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío en la instancia de publicación en el nodo `/content/forms/fp`.
 
 Sin embargo, los componentes del portal de AEM Forms proporcionan servicios de datos que le permiten personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar los datos en un repositorio de datos implementado en su organización actualmente.
 

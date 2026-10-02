@@ -1,22 +1,20 @@
 ---
 title: Crear un controlador de usuarios externos de invitación
-description: Obtenga información sobre cómo crear un controlador de usuarios externos de invitación. Permite al servicio Rights Management invitar a usuarios externos para que se conviertan en usuarios Rights Management.
+description: Obtenga información sobre cómo crear un controlador de usuarios externos de invitación. Permite al servicio Rights Management invitar a usuarios externos para que se conviertan en usuarios de Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1165'
 ht-degree: 4%
-
 ---
-
 # Crear un controlador de usuarios externos de invitación {#create-invite-external-users-handler}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-Puede crear un controlador de usuarios externos de invitación para el servicio de Rights Management. El controlador de usuarios externos de invitación permite al servicio de Rights Management invitar a usuarios externos para que se conviertan en usuarios de Rights Management. Una vez que un usuario se convierte en un usuario Rights Management, puede realizar tareas como abrir un documento de PDF protegido por políticas. Una vez implementado el controlador de usuarios externos de invitación en AEM Forms, puede utilizar la consola de administración para interactuar con él.
+Puede crear un controlador de usuarios externos de invitación para el servicio Rights Management. El controlador de usuarios externos de invitación permite al servicio Rights Management invitar a usuarios externos para que se conviertan en usuarios de Rights Management. Una vez que un usuario se convierte en usuario de Rights Management, puede realizar tareas como abrir un documento de PDF protegido por políticas. Una vez implementado el controlador de usuarios externos de invitación en AEM Forms, puede utilizar la consola de administración para interactuar con él.
 
 >[!NOTE]
 >
@@ -36,13 +34,13 @@ Para desarrollar un controlador de usuarios externos de invitación, debe realiz
 
 Para configurar el entorno de desarrollo, debe crear un proyecto Java, como un proyecto Eclipse. La versión de Eclipse compatible es `3.2.1` o posterior.
 
-La SPI del Rights Management requiere que el archivo `edc-server-spi.jar` se establezca en la ruta de clase del proyecto. Si no hace referencia a este archivo JAR, no puede utilizar el SPI de Rights Management en su proyecto Java. Este archivo JAR se instala con el SDK de AEM Forms en la carpeta `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
+La SPI de Rights Management requiere que el archivo `edc-server-spi.jar` se establezca en la ruta de clase del proyecto. Si no hace referencia a este archivo JAR, no puede utilizar el SPI de Rights Management en su proyecto Java. Este archivo JAR se instala con AEM Forms SDK en la carpeta `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
 
-Además de agregar el archivo `edc-server-spi.jar` a la ruta de clase del proyecto, también debe agregar los archivos JAR necesarios para utilizar la API del servicio de Rights Management. Estos archivos son necesarios para utilizar la API del servicio de Rights Management dentro del controlador de usuarios externos de invitación.
+Además de agregar el archivo `edc-server-spi.jar` a la ruta de clase del proyecto, también debe agregar los archivos JAR necesarios para utilizar la API del servicio de Rights Management. Estos archivos son necesarios para utilizar la API del servicio de Rights Management en el controlador de usuarios externos de invitación.
 
 ## Definición de la implementación del controlador de usuarios externos de invitación {#define-invite-external-users-handler}
 
-Para desarrollar un controlador de usuarios externos de invitación, debe crear una clase Java que implemente la interfaz `com.adobe.edc.server.spi.ersp.InvitedUserProvider`. Esta clase contiene un método denominado `invitedUser`, que el servicio de Rights Management invoca cuando se envían direcciones de correo electrónico utilizando la página **Agregar usuarios invitados** a la que se puede acceder mediante la consola de administración.
+Para desarrollar un controlador de usuarios externos de invitación, debe crear una clase Java que implemente la interfaz `com.adobe.edc.server.spi.ersp.InvitedUserProvider`. Esta clase contiene un método denominado `invitedUser`, que el servicio Rights Management invoca cuando se envían direcciones de correo electrónico utilizando la página **Agregar usuarios invitados** a la que se puede acceder mediante la consola de administración.
 
 El método `invitedUser` acepta una instancia de `java.util.List`, que contiene direcciones de correo electrónico con tipo de cadena enviadas desde la página **Agregar usuarios invitados**. El método `invitedUser` devuelve una matriz de objetos `InvitedUserProviderResult`, que generalmente es una asignación de direcciones de correo electrónico a objetos User (no devuelven null).
 
@@ -234,7 +232,7 @@ Para probar el controlador de usuarios externos de invitación, puede agregar us
 Para agregar usuarios externos a los que invitar mediante la consola de administración:
 
 1. Implemente el archivo JAR del controlador de usuarios externos invitados mediante Workbench.
-1. Reinicie el servidor de la aplicación.
+1. Reinicie el servidor de aplicaciones.
 
    >[!NOTE]
    >
