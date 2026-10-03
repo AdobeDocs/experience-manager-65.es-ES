@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1407'
 ht-degree: 80%
-
 ---
-
 # Flujos de trabajo JEE de Forms | Gestión de datos de usuario {#forms-jee-workflows-handling-user-data}
 
 Los flujos de trabajo de AEM Forms JEE proporcionan herramientas para diseñar, crear y administrar procesos empresariales. Un proceso de flujo de trabajo consiste en una serie de pasos que se ejecutan en un orden especificado. Cada paso realiza una acción específica, como asignar una tarea a un usuario o enviar un mensaje de correo electrónico. Un proceso puede interactuar con recursos, cuentas de usuario y servicios, y se puede activar mediante cualquiera de los siguientes métodos:

@@ -1,9 +1,13 @@
 ---
 title: Descargar una plantilla de formulario XFA o un PDF
+
 description: Puede exportar formularios del repositorio al sistema local y migrar los formularios descargados al nuevo repositorio.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 role: Admin,User
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 solution: Experience Manager, Experience Manager Forms
@@ -12,9 +16,7 @@ source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
-
 ---
-
 # Descargar una plantilla de formulario XFA o un PDF {#download-an-xfa-or-a-pdf-form-template}
 
 La operación de descarga, como su nombre indica, permite exportar formularios desde el repositorio al sistema local. Junto con la operación de carga, esta operación le ayuda a migrar los formularios de un repositorio a otro.

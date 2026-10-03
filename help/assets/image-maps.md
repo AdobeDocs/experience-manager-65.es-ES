@@ -8,11 +8,9 @@ exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 0%
-
+source-wordcount: '273'
+ht-degree: 3%
 ---
-
 # Añadir mapas de imagen {#adding-image-maps}
 
 Los mapas de imágenes permiten agregar una o más áreas hipervinculadas que funcionan como otros hipervínculos.

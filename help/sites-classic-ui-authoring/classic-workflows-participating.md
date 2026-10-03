@@ -1,21 +1,21 @@
 ---
 title: Participación en flujos de trabajo
 description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
+
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 39%
-
+source-wordcount: '544'
+ht-degree: 47%
 ---
-
 # Participación en flujos de trabajo{#participating-in-workflows}
 
 Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para realizar la actividad y asigna un elemento de trabajo a esa persona o grupo.
@@ -34,9 +34,9 @@ Puede realizar las siguientes acciones para procesar un elemento de trabajo:
 
   Los usuarios que están disponibles para la delegación dependen de quién haya sido asignado el elemento de trabajo:
 
-   * Si el elemento de trabajo se asignó a un grupo, los miembros del grupo están disponibles.
-   * Si el elemento de trabajo se ha asignado a un grupo y luego se ha delegado a un usuario, los miembros del grupo y el grupo están disponibles.
-   * Si el elemento de trabajo se asignó a un único usuario, el elemento de trabajo no se puede delegar.
+  * Si el elemento de trabajo se asignó a un grupo, los miembros del grupo están disponibles.
+  * Si el elemento de trabajo se ha asignado a un grupo y luego se ha delegado a un usuario, los miembros del grupo y el grupo están disponibles.
+  * Si el elemento de trabajo se asignó a un único usuario, el elemento de trabajo no se puede delegar.
 
 * **Retroceder**
 
@@ -52,7 +52,7 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
 
   ![workflowstatus-1](assets/workflowstatus-1.png)
 
-* AEM Cuando a usted o a un grupo al que pertenezca se le asigna un elemento de trabajo como parte de un flujo de trabajo, este aparece en la Bandeja de entrada del flujo de trabajo de flujo de trabajo de la.
+* Cuando a usted o a un grupo al que pertenece se le asigna un elemento de trabajo como parte de un flujo de trabajo, este aparece en la bandeja de entrada del flujo de trabajo de AEM.
 
   ![workflowinbox](assets/workflowinbox.png)
 
@@ -69,7 +69,7 @@ Después de realizar la acción indicada, puede completar el elemento de trabajo
 
 1. Haga clic en **Aceptar** para confirmar la acción.
 
-### Delegación de una etapa de participante  {#delegating-a-participant-step}
+### Delegación de una etapa de participante {#delegating-a-participant-step}
 
 Utilice el siguiente procedimiento para delegar un elemento de trabajo.
 

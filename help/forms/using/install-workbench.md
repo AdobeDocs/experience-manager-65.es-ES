@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 65%
-
+source-wordcount: '2298'
+ht-degree: 63%
 ---
-
 # Instalación de Workbench {#install-workbench}
 
 Este documento contiene instrucciones para instalar y configurar AEM Forms Workbench. El programa de instalación también instala Forms Designer.
@@ -37,11 +35,11 @@ Los recursos de esta tabla pueden ayudarle a obtener más información y a empez
   </tr>
   <tr>
    <td><p>Información general sobre AEM Forms y su integración con otros productos de Adobe</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=es">Información general sobre AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Información general sobre AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Toda la documentación disponible para AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=es">Documentación de AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Documentación de AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Actualizaciones de parches, notas técnicas e información adicional sobre esta versión del producto</p> </td>
@@ -76,7 +74,7 @@ Esta sección describe los requisitos de hardware y software y las plataformas c
 
 ### Requisitos mínimos de hardware y software {#minimum-hardware-software-requirements}
 
-**Workbench**
+**Área de trabajo**
 Se recomiendan los siguientes requisitos mínimos:
 Espacio en disco para la instalación:
 * 680 MB solo para Workbench.
@@ -100,7 +98,7 @@ Espacio en disco para la instalación:
 
 ### Plataformas compatibles {#supported-platforms}
 
-Consulte la lista completa de plataformas compatibles con Workbench en [Plataformas compatibles con AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_es).
+Consulte la lista completa de plataformas compatibles con Workbench en [Plataformas compatibles con AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Consideraciones sobre la instalación de Designer {#designer-installation-considerations}
 
@@ -115,8 +113,8 @@ La siguiente tabla contiene una lista completa de los posibles escenarios de ins
   </tr>
   <tr>
    <td><p>Acrobat Pro o Acrobat Pro Extended (incluye Designer)</p> </td>
-   <td><p>Ninguna.<br /> 
-La instalación de Workbench detecta una instancia de Designer instalada en el equipo con Acrobat Pro o Acrobat Pro Extended.<br />
+   <td><p>Ninguno.<br /> 
+La instalación de Workbench detecta una instancia de Designer instalada en el equipo con Acrobat Pro o Acrobat Pro Extended.<br />
 En el mismo sistema pueden coexistir distintas versiones de Designer, por ejemplo, Designer 6.4.x para Workbench 6.4 y Designer 6.5.0.x para Workbench 6.5. No es necesario desinstalar la versión de Designer instalada con Acrobat 10 Pro, Acrobat 10 Pro Extended o superior.
 <br /></p> </td>
   </tr>
@@ -153,7 +151,7 @@ Antes de instalar Workbench, debe asegurarse de que su entorno incluye el softwa
 
    >[!NOTE]
    >
-   >Si aparece el error &quot;No se pudo crear la máquina virtual Java™&quot;, cree una variable de entorno denominada _JAVA_OPTIONS con valor -Xmx512M y ejecute el programa de instalación.
+   >Si aparece el error &quot;No se pudo crear la máquina virtual Java™&quot;, cree una variable de entorno llamada _JAVA_OPTIONS con valor -Xmx512M y ejecute el programa de instalación.
 
 1. En la pantalla Introducción, haga clic en Siguiente.
 1. Lea el Acuerdo de licencia del producto, seleccione Acepto los términos del Acuerdo de licencia y, a continuación, haga clic en Siguiente.
@@ -187,11 +185,11 @@ Para utilizar Workbench, debe tener una instancia de AEM Forms en ejecución, n
 
 >[!NOTE]
 >
->Si configuró AEM Forms para utilizar el proveedor de repositorios EMC Documentum® o IBMAEM ® FileNet y desea iniciar sesión en un repositorio que no sea el repositorio configurado como predeterminado en la consola de administración de formularios de forma predeterminada, proporcione el nombre de usuario username@Repository.
+>Si configuró AEM Forms para utilizar el proveedor de repositorios EMC Documentum® o IBM® FileNet y desea iniciar sesión en un repositorio que no sea el repositorio configurado como predeterminado en la consola de administración de AEM Forms, proporcione el nombre de usuario username@Repository.
 
 ### Configuración del tiempo de espera {#configuring-timeout-settings}
 
-De forma predeterminada, el valor del tiempo de espera de Workbench es de dos horas, independientemente de la actividad o la inactividad. Para editar la configuración de tiempo de espera, consulte &quot;Configuración de la administración de usuarios > Configuración de atributos de sistema avanzados&quot; en la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=es">Ayuda de la consola de administración</a>.
+De forma predeterminada, el valor del tiempo de espera de Workbench es de dos horas, independientemente de la actividad o la inactividad. Para editar la configuración de tiempo de espera, consulte &quot;Configuración de la administración de usuarios > Configuración de atributos de sistema avanzados&quot; en la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Ayuda de la consola de administración</a>.
 
 ### Configurar Workbench para que se conecte a través de HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
@@ -214,7 +212,7 @@ Asegúrese de conectarse a HTTPS utilizando el nombre especificado en el certifi
 
 1. Abra una ventana del Símbolo del sistema, vaya a [Workbench_HOME]/workbench/jre/bin y luego escriba el siguiente comando:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-donde:
+   donde:
    * `changeit` es la contraseña predeterminada para el almacén de claves cacerts.
    * certname es el certificado seleccionado en el paso 1.
    * Por ejemplo, el alias que elija para el certificado. Este valor se puede cambiar.
@@ -258,8 +256,8 @@ En el caso de los documentos no pasivados en los que el nombre de archivo y la r
 * En el caso de las plantillas de entrada no pasivadas, el almacenamiento en caché depende de la raíz de contenido y del nombre de archivo a partir del cual se generó el documento.
 La misma caché solo se utiliza para solicitudes con la misma raíz de contenido y el mismo nombre de archivo de plantilla.
 Las siguientes prácticas recomendadas garantizan que la caché no crezca constantemente al pasar plantillas generadas dinámicamente al servicio Forms:
-   * Elimine el UUID o pase el mismo UUID en todas las plantillas generadas dinámicamente.
-   * Genere el documento desde bytes de plantilla o desde el mismo nombre de archivo en disco.
+  * Elimine el UUID o pase el mismo UUID en todas las plantillas generadas dinámicamente.
+  * Genere el documento desde bytes de plantilla o desde el mismo nombre de archivo en disco.
 
 ### Desinstalación de Workbench {#uninstalling-workbench}
 

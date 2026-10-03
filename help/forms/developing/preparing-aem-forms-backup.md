@@ -1,21 +1,24 @@
 ---
 title: Preparar AEM Forms para copia de seguridad
+
 description: Aprenda a utilizar el servicio de copia de seguridad y restauración para entrar y salir del modo de copia de seguridad del servidor de AEM Forms mediante la API de Java y la API del servicio web.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2536'
 ht-degree: 0%
-
 ---
-
 # Preparar AEM Forms para copia de seguridad {#preparing-aem-forms-for-backup}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -141,7 +144,7 @@ Inicie el modo de copia de seguridad mediante la API del servicio de copia de se
 
 1. Realizar la copia de seguridad del GDS y la base de datos
 
-   Haga una copia de seguridad de Global Document Storage (GDS) y de la base de datos a la que está conectado Forms Server. Las acciones para realizar la copia de seguridad no forman parte del SDK de AEM Forms y pueden incluso incluir pasos manuales específicos de los procedimientos de copia de seguridad de su organización.
+   Haga una copia de seguridad de Global Document Storage (GDS) y de la base de datos a la que está conectado Forms Server. Las acciones para realizar la copia de seguridad no forman parte de AEM Forms SDK y pueden incluso incluir pasos manuales específicos de los procedimientos de copia de seguridad de su organización.
 
 ### Acceder al modo de copia de seguridad mediante la API de servicio web {#enter-backup-mode-using-the-web-service-api}
 
@@ -176,7 +179,7 @@ Inicie el modo de copia de seguridad mediante el servicio web proporcionado por 
 
 1. Realizar la copia de seguridad del GDS y la base de datos
 
-   Haga una copia de seguridad de Global Document Storage (GDS) y de la base de datos a la que está conectado Forms Server. Las acciones para realizar la copia de seguridad no forman parte del SDK de AEM Forms y pueden incluso incluir pasos manuales específicos de los procedimientos de copia de seguridad de su organización.
+   Haga una copia de seguridad de Global Document Storage (GDS) y de la base de datos a la que está conectado Forms Server. Las acciones para realizar la copia de seguridad no forman parte de AEM Forms SDK y pueden incluso incluir pasos manuales específicos de los procedimientos de copia de seguridad de su organización.
 
 ## Dejar el modo de copia de seguridad en Forms Server {#leaving-backup-mode-on-the-forms-server}
 

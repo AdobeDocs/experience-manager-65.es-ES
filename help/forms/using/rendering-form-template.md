@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '543'
 ht-degree: 100%
-
 ---
-
 # Representar la plantilla de formulario para formularios HTML5 {#rendering-form-template-for-html-forms}
 
 ## Punto final de procesamiento {#render-endpoint}
@@ -24,7 +22,7 @@ Los formularios HTML5 tienen la noción **Perfiles** que se exponen como extremo
 
 Ruta https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*de la carpeta que contiene el formulario xdp*>&amp;template=&lt;*name of the xdp*>
 
-Por ejemplo, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`. 
+Por ejemplo, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`.
 
 Para un perfil personalizado, el punto final cambia en consecuencia. Por ejemplo, el punto final del perfil personalizado con el nombre hrforms es el siguiente:
 

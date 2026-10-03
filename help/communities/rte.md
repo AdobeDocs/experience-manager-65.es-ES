@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '240'
 ht-degree: 3%
-
 ---
-
 # Elementos básicos del editor de texto enriquecido {#rich-text-editor-essentials}
 
 ## Información general {#overview}
@@ -60,7 +58,7 @@ Por motivos de seguridad, las opciones de hipervínculos no se incluyen en el co
 Para agregar las opciones de hipervínculo a la barra de herramientas:
 
 * Agregar una barra de herramientas denominada &quot; `links`&quot;
-   * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
+  * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Seleccionar **[!UICONTROL Guardar todo]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}

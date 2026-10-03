@@ -12,24 +12,22 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 5%
-
+source-wordcount: '2564'
+ht-degree: 7%
 ---
-
 # Componentes de Adobe Campaign{#adobe-campaign-components}
 
 Al integrar con Adobe Campaign, tiene componentes disponibles para cuando trabaja con boletines informativos y con formularios. Ambos se describen en este documento.
 
 >[!CAUTION]
 >
->AEM Los componentes de correo electrónico de la se han desaprobado. AEM Debido a la naturaleza del correo electrónico, que combina contenido y estilo, los componentes de correo electrónico proporcionados de forma predeterminada se convierten en de reutilización limitada para los clientes debido a la necesidad de implementar estilos personalizados en los componentes que sean necesarios para los proyectos.
+>Los componentes de correo electrónico de AEM se han quedado obsoletos. Debido a la naturaleza del correo electrónico, que combina contenido y estilo, los componentes de correo electrónico proporcionados de forma predeterminada por AEM se vuelven de reutilización limitada para los clientes debido a la necesidad de implementar estilos personalizados en los componentes que sean necesarios para los proyectos.
 >
->AEM Los componentes de correo electrónico se pueden implementar en el nivel de proyecto, y los componentes de correo electrónico de la obsoleta ilustran cómo se puede lograr. Sin embargo, no utilice estos componentes obsoletos en proyectos.
+>Los componentes de correo electrónico se pueden implementar en el nivel de proyecto y los componentes de correo electrónico de AEM obsoletos ilustran cómo se puede lograr. Sin embargo, no utilice estos componentes obsoletos en proyectos.
 
 ## Componentes de newsletter de Adobe Campaign {#adobe-campaign-newsletter-components}
 
-Todos los componentes de Campaign siguen las prácticas recomendadas descritas en [Prácticas recomendadas para plantillas de correo electrónico](/help/sites-administering/best-practices-for-email-templates.md) y se basan en el lenguaje de marcado de Adobe [HTL](https://helpx.adobe.com/es/experience-manager/htl/using/overview.html).
+Todos los componentes de Campaign siguen las prácticas recomendadas descritas en [Prácticas recomendadas para plantillas de correo electrónico](/help/sites-administering/best-practices-for-email-templates.md) y se basan en el lenguaje de marcado Adobe [HTL](https://helpx.adobe.com/es/experience-manager/htl/using/overview.html).
 
 Cuando abra una newsletter o un correo electrónico configurados para integrarse con Adobe Campaign, debería ver los siguientes componentes en la sección **Newsletter de Adobe Campaign**:
 
@@ -62,7 +60,7 @@ Puede configurar lo siguiente:
 Si desea utilizar un nombre que no sea el título de la página, introdúzcalo aquí.
 
 * **Nivel de encabezado (1, 2, 3, 4)**
-El nivel de encabezado basado en los tamaños de encabezado del HTML 1-4.
+El nivel de encabezado basado en los tamaños de encabezado de HTML 1-4.
 
 El siguiente ejemplo muestra un componente Encabezado (Campaign).
 
@@ -83,7 +81,7 @@ Cuando se carga una imagen, puede configurar lo siguiente:
 * **Mapa**
 Para asignar una imagen, seleccione Mapa. Puede especificar cómo desea crear el mapa de imagen (rectángulo, polígono, etc.) y hacia dónde debe apuntar el área.
 
-* **Recortar**
+* **Recorte**
 Seleccione Recortar para recortar una imagen. Utilice el ratón para recortar la imagen.
 
 * **Rotar**
@@ -100,7 +98,7 @@ Título de la imagen.
 * **Texto alternativo**
 Texto alternativo que se puede utilizar al crear contenido accesible.
 
-* **Vincular A**
+* **Vincular a**
 Cree un vínculo a recursos u otras páginas dentro del sitio web.
 
 * **Descripción**
@@ -176,20 +174,20 @@ Arrastre una imagen desde el buscador de contenido o haga clic para buscar una i
 * **Propiedades de imagen** (**Propiedades de imagen avanzadas**)
 Permite especificar lo siguiente:
 
-   * **Título**
-Título del bloque; se muestra con el ratón.
+  * **Título**
+    Título del bloque; se muestra con el ratón.
 
-   * **Texto alternativo**
-Texto alternativo que se mostrará si no se puede mostrar la imagen.
+  * **Texto alternativo**
+    Texto alternativo que se mostrará si no se puede mostrar la imagen.
 
-   * **Vínculo a**
-Cree un vínculo a recursos u otras páginas dentro del sitio web.
+  * **Vincular a**
+    Cree un vínculo a recursos u otras páginas dentro del sitio web.
 
-   * **Descripción**
-Una descripción de la imagen.
+  * **Descripción**
+    Una descripción de la imagen.
 
-   * **Tamaño**
-Establece la altura y anchura de la imagen.
+  * **Tamaño**
+    Establece la altura y anchura de la imagen.
 
 >[!NOTE]
 >
@@ -204,7 +202,7 @@ El siguiente ejemplo muestra un componente Texto e imagen (Campaign).
 
 ### Texto y personalización (Campaign) {#text-personalization-campaign}
 
-El componente Texto y Personalization (Campaign) le permite introducir un bloque de texto mediante un editor WYSIWYG, con la funcionalidad proporcionada por el [Editor de texto enriquecido](/help/sites-authoring/rich-text-editor.md). Además, este componente le permite utilizar campos de contexto y bloques de personalización disponibles en Adobe Campaign; consulte también [Inserción de Personalization](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
+El componente Texto y Personalization (Campaign) le permite introducir un bloque de texto mediante un editor de WYSIWYG, con la funcionalidad proporcionada por el [editor de texto enriquecido](/help/sites-authoring/rich-text-editor.md). Además, este componente le permite utilizar campos de contexto y bloques de personalización disponibles en Adobe Campaign; consulte también [Inserción de Personalization](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
 La selección de iconos le permite dar formato al texto, incluidas las características de la fuente, la alineación, los vínculos, las listas y la sangría.
 
@@ -227,7 +225,7 @@ Cada campo de componente se puede vincular a un campo de base de datos de Adobe 
 Cuando abra un formulario configurado para integrarse con Adobe Campaign, verá los siguientes componentes en la sección **Adobe Campaign**:
 
 * Casilla (Campaign)
-* Campo de fecha (Campaign) y Campo de fecha/HTML 5 (Campaign)
+* Campo de fecha (Campaign) y Campo de fecha/HTML5 (Campaign)
 * Clave principal cifrada (Campaign)
 * Visualización de error (Campaign)
 * Clave de conciliación oculta (Campaign)
@@ -267,7 +265,7 @@ En la tabla siguiente se describen los componentes disponibles para mostrar y mo
   <tr>
    <td><p>Campo de opción (Campaign)</p> </td>
    <td><p>byte con valores asociados</p> </td>
-   <td><p>Sexo</p> </td>
+   <td><p>Género</p> </td>
   </tr>
   <tr>
    <td><p>Campo de texto (Campaign)</p> </td>
@@ -301,7 +299,7 @@ Solo muestra el valor, si hay uno
 
 Puede configurar lo siguiente:
 
-* **Asignación**
+* Asignación de ****
 Seleccione un campo de personalización de Adobe Campaign, si corresponde.
 
 * **Clave de reconciliación**

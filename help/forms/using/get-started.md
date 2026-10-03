@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '236'
 ht-degree: 100%
-
 ---
-
 # Introducción a los formularios HTML5 {#getting-started-with-html-forms}
 
 Los formularios HTML5 ofrecen numerosas funciones compatibles con dispositivos móviles. Esto le permite ampliar sus soluciones y flujos de trabajo actuales a tabletas o smartphones con exploradores HTML5. Ofrece, entre otras, las siguientes funcionalidades se encuentran:

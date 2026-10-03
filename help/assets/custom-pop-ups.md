@@ -11,11 +11,9 @@ exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
-
+source-wordcount: '1279'
+ht-degree: 1%
 ---
-
 # Creación de ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, donde se muestra una ventana emergente con información del producto para impulsar una compra. Sin embargo, puede almacenar en déclencheur el contenido personalizado para que se muestre en los elementos emergentes. En función del visor, esta funcionalidad permite a los usuarios seleccionar un punto interactivo, una imagen en miniatura o un mapa de imagen para ver información o contenido relacionado.
@@ -83,7 +81,7 @@ Aunque la funcionalidad de cada visualizador es diferente, el proceso de creaci�
    El visor usa un controlador denominado `QuickViewActive`.
 
    **Ejemplo**
-Supongamos que utiliza el siguiente código incrustado de muestra en la página web para una imagen interactiva:
+   Supongamos que utiliza el siguiente código incrustado de muestra en la página web para una imagen interactiva:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -106,15 +104,15 @@ Supongamos que utiliza el siguiente código incrustado de muestra en la página 
 
    Obtenga más información acerca del método `setHandlers()` en los siguientes enlaces:
 
-   * Visor de imágenes interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=es)
-   * Visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=es)
+   * Visor de imágenes interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. Configure el controlador `quickViewActivate`.
 
    El controlador `quickViewActivate` controla la vista rápida en el visor. El controlador contiene la lista de variables y las llamadas a funciones para su uso con la vista rápida. El código incrustado proporciona asignación para la variable SKU establecida en la vista rápida y una llamada a la función `loadQuickView` de ejemplo.
 
    **Asignación de variables**
-Asigne variables para su uso en la página web al valor SKU y a las variables genéricas contenidas en la vista rápida:
+   Asigne variables para su uso en la página web al valor SKU y a las variables genéricas contenidas en la vista rápida:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -130,7 +128,7 @@ Asigne variables para su uso en la página web al valor SKU y a las variables ge
    ```
 
    **Llamada de función**
-El controlador también requiere una llamada a la función para que funcione la vista rápida. La página host supone que puede acceder a la función. El código incrustado proporciona una llamada a una función de ejemplo:
+   El controlador también requiere una llamada a la función para que funcione la vista rápida. La página host supone que puede acceder a la función. El código incrustado proporciona una llamada a una función de ejemplo:
 
    `loadQuickView(sku)`
 
@@ -138,16 +136,16 @@ El controlador también requiere una llamada a la función para que funcione la 
 
    Obtenga más información acerca del método `quickViewActivate` en los siguientes enlaces:
 
-   * Visor de imágenes interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html?lang=es)
-   * Visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html?lang=es)
-   * Compatibilidad con datos interactivos en el visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html?lang=es)
+   * Visor de imágenes interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * Compatibilidad con datos interactivos en el visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Haga lo siguiente:
 
    * Elimine los comentarios de la sección setHandlers del código incrustado.
    * Asigne cualquier variable adicional contenida en la vista rápida.
 
-      * Actualice la llamada a `loadQuickView(sku,*var1*,*var2*)` si agrega variables adicionales.
+     * Actualice la llamada a `loadQuickView(sku,*var1*,*var2*)` si agrega variables adicionales.
 
    * Cree una función `loadQuickView` () simple en la página, fuera del visor.
 
@@ -159,7 +157,7 @@ El controlador también requiere una llamada a la función para que funcione la 
    }
    ```
 
-   * Cargue una página de HTML de pruebas en un servidor web y ábrala.
+   * Cargue una página de HTML de prueba en un servidor web y ábrala.
 
      Con las variables de la vista rápida asignadas y la llamada a la función configurada, la consola del explorador escribe el valor de la variable en la consola del explorador mediante la función de ejemplo proporcionada.
 
@@ -200,7 +198,7 @@ El controlador también requiere una llamada a la función para que funcione la 
    </script>
    ```
 
-1. Cargue una página del HTML de pruebas en el servidor web y abra. El visor muestra la ventana emergente `DIV` cuando un usuario invoca una vista rápida.
+1. Cargue una página de HTML de prueba en el servidor web y abra. El visor muestra la ventana emergente `DIV` cuando un usuario invoca una vista rápida.
 1. **Cómo mostrar la ventana emergente personalizada en modo de pantalla completa**
 
    Algunos visores, como el visualizador de vídeo interactivo, admiten la visualización en modo de pantalla completa. Sin embargo, el uso de la ventana emergente como se describe en los pasos anteriores hace que se muestre detrás del visor mientras está en modo de pantalla completa.
@@ -215,8 +213,8 @@ El controlador también requiere una llamada a la función para que funcione la 
 
    Obtenga más información acerca del método `init()` en los siguientes enlaces:
 
-   * Visor de imágenes interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html?lang=es)
-   * Visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html?lang=es](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html?lang=es)
+   * Visor de imágenes interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * Visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. Para adjuntar al visor la ventana emergente descrita en los pasos anteriores, utilice el siguiente código:
 
@@ -261,7 +259,7 @@ El controlador también requiere una llamada a la función para que funcione la 
    `*viewerInstance.*init()`
 
    **Ejemplo**
-Este ejemplo utiliza el visualizador de imágenes interactivo.
+   Este ejemplo utiliza el visualizador de imágenes interactivo.
 
    `s7interactiveimageviewer.init()`
 
