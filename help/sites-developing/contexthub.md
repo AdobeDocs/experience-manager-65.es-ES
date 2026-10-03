@@ -11,11 +11,9 @@ feature: Developing,Personalization
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '285'
 ht-degree: 1%
-
 ---
-
 # ContextHub{#contexthub}
 
 ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de contexto. La API de JavaScript del lado del cliente le permite acceder a los datos para personalizar el contenido.
@@ -37,7 +35,7 @@ ContextHub almacena datos de contexto persistentes en el cliente. La API de Java
 Cada tienda de ContextHub es una instancia de un tipo de tienda predefinido:
 
 * ContextHub proporciona [tipos de almacén de muestra](/help/sites-developing/ch-samplestores.md).
-* AEM Use consolas de consola para [crear tiendas](ch-configuring.md#creating-a-contexthub-store).
+* Use las consolas de AEM para [crear tiendas](ch-configuring.md#creating-a-contexthub-store).
 * Los desarrolladores pueden [crear tipos de almacén personalizados](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Los desarrolladores pueden [acceder a los datos del almacén](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) a través de JavaScript.
 
@@ -52,7 +50,7 @@ La [barra de herramientas de ContextHub](/help/sites-authoring/ch-previewing.md)
 Cada módulo de IU de ContextHub es una instancia de un tipo de módulo predefinido:
 
 * ContextHub proporciona [tipos de módulos de ejemplo](/help/sites-developing/ch-samplemodules.md).
-* AEM Use consolas de consola para [agregar módulos de interfaz de usuario](ch-configuring.md#adding-a-ui-module) y para [agruparlas en modos de interfaz de usuario](ch-configuring.md#adding-a-ui-mode).
+* Use las consolas de AEM para [agregar módulos de interfaz de usuario](ch-configuring.md#adding-a-ui-module) y [agruparlos en modos de interfaz de usuario](ch-configuring.md#adding-a-ui-mode).
 
 * Los desarrolladores pueden [crear tipos de módulos personalizados](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
