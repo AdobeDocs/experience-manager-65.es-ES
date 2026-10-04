@@ -11,16 +11,14 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '263'
 ht-degree: 3%
-
 ---
-
 # Descripción general del servicio de salida {#overview-of-output-service}
 
 La salida permite combinar los datos del formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento en varios formatos. La secuencia de salida se puede enviar a una impresora de red, a una impresora local o a un archivo de disco
 
-Puede utilizar la página Salida en la consola de administración para administrar el servicio Salida. AEM La configuración que configure se utiliza en tiempo de ejecución cuando la configuración equivalente no se especificó a través de la API de formularios en la que se utiliza el formulario de la. AEM La configuración realizada a través del SDK de formularios en la aplicación de la anula la configuración establecida mediante la consola de administración.
+Puede utilizar la página Salida en la consola de administración para administrar el servicio Salida. La configuración que configure se utiliza en tiempo de ejecución cuando la configuración equivalente no se especificó a través de la API de formularios AEM Forms. La configuración realizada a través de AEM Forms SDK anula la configuración establecida mediante la consola de administración.
 
 Para obtener información adicional acerca del servicio Output, vea [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_61).
 
