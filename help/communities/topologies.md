@@ -11,18 +11,16 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 1%
-
+source-wordcount: '552'
+ht-degree: 3%
 ---
-
 # Topologías recomendadas para comunidades {#recommended-topologies-for-communities}
 
 A partir de AEM Communities 6.1, se ha adoptado un enfoque único para la gestión del contenido generado por el usuario (UGC) enviado por los visitantes del sitio (miembros) desde el entorno de publicación.
 
-AEM Este enfoque es fundamentalmente diferente de la forma en que la plataforma de la gestiona el contenido del sitio que, por lo general, se administra desde el entorno de creación.
+Este enfoque es fundamentalmente diferente de la forma en que la plataforma de AEM gestiona el contenido del sitio que, por lo general, se administra desde el entorno de creación.
 
-AEM La plataforma de utiliza un almacén de nodos que replica el contenido del sitio desde el autor hasta la publicación, mientras que AEM Communities utiliza un único almacén común para UGC que nunca se replica.
+La plataforma de AEM utiliza un almacén de nodos que replica el contenido del sitio desde el autor hasta la publicación, mientras que AEM Communities utiliza un único almacén común para UGC que nunca se replica.
 
 Para el almacén UGC común, es necesario elegir un [proveedor de recursos de almacenamiento (SRP)](working-with-srp.md). Las opciones recomendadas son:
 
@@ -38,12 +36,12 @@ Si se requiere un almacén común, se recomiendan las siguientes topologías.
 >
 >Para AEM Communities, [UGC nunca se replicará](working-with-srp.md#ugc-never-replicated).
 >
->AEM Cuando la implementación no incluye un [almacén común](working-with-srp.md), UGC solo será visible en la instancia de publicación o autor en la que se ingresó en la publicación o en la instancia de autor en la que se haya ingresado.
+>Cuando la implementación no incluye un [almacén común](working-with-srp.md), UGC solo será visible en la instancia de autor o publicación de AEM en la que se ingresó.
 >
 
 >[!NOTE]
 >
->AEM AEM Para obtener más información acerca de la plataforma de, consulte [Implementaciones recomendadas](../../help/sites-deploying/recommended-deploys.md) e [Introducción a la plataforma de la](../../help/sites-deploying/data-store-config.md).
+>Para obtener más información sobre la plataforma AEM, consulte [Implementaciones recomendadas](../../help/sites-deploying/recommended-deploys.md) e [Introducción a la plataforma AEM](../../help/sites-deploying/data-store-config.md).
 
 ## Para producción {#for-production}
 
@@ -61,7 +59,7 @@ Para elegir el almacén común apropiado, tenga en cuenta las [características]
 
 Para obtener más información sobre los microkernals de Oak, visite [Implementaciones recomendadas](../../help/sites-deploying/recommended-deploys.md).
 
-### TarMK Publish Farm {#tarmk-publish-farm}
+### Granja de publicación TarMK {#tarmk-publish-farm}
 
 Cuando la topología es un conjunto de servidores de publicación, los temas importantes relevantes son:
 
@@ -74,7 +72,7 @@ Cuando la topología es un conjunto de servidores de publicación, los temas imp
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | cualquiera | JCR | MySQL | DSRP | Sí |
 | cualquiera | JCR | MongoDB | MSRP | Sí |
-| cualquiera | JCR | Adobe de almacenamiento bajo demanda | ASRP | Sí |
+| cualquiera | JCR | almacenamiento bajo demanda de Adobe | ASRP | Sí |
 
 ### JSRP {#jsrp}
 
@@ -88,7 +86,7 @@ Cuando la topología es un conjunto de servidores de publicación, los temas imp
 
 En los entornos que no son de producción, [JSRP](jsrp.md) proporciona una configuración sencilla de un entorno de desarrollo con una instancia de autor y una instancia de publicación.
 
-Si elige [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) para producción, también es posible configurar un entorno de desarrollo similar usando almacenamiento bajo demanda de Adobe o MongoDB. Para ver un ejemplo, vea [Cómo configurar MongoDB para la demostración](demo-mongo.md).
+Si elige [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) para producción, también es posible configurar un entorno de desarrollo similar usando el almacenamiento bajo demanda de Adobe o MongoDB. Para ver un ejemplo, vea [Cómo configurar MongoDB para la demostración](demo-mongo.md).
 
 ## Referencias {#references}
 

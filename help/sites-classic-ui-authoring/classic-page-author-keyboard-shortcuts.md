@@ -11,11 +11,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 15%
-
+source-wordcount: '308'
+ht-degree: 17%
 ---
-
 # Métodos abreviados de teclado al editar páginas{#keyboard-shortcuts-when-editing-pages}
 
 Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros, en el [uso de las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
@@ -94,7 +92,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forzar el menú contextual predeterminado (explorador).AEM <br /> <strong>Nota:</strong> los menús contextuales de la solo se producen en la IU clásica.</td>
+   <td>Forzar menú contextual predeterminado (explorador).<br /> <strong>Nota:</strong> Los menús contextuales de AEM solo se producen en la IU clásica.</td>
   </tr>
   <tr>
    <td> </td>

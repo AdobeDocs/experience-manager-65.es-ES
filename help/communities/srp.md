@@ -11,16 +11,14 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1154'
 ht-degree: 0%
-
 ---
-
 # Resumen del proveedor de recursos de almacenamiento {#storage-resource-provider-overview}
 
 ## Introducción {#introduction}
 
-A partir de Adobe Experience Manager AEM () Communities 6.1, el contenido de la comunidad, comúnmente denominado contenido generado por el usuario (UGC), se almacena en un único almacén común proporcionado por un [proveedor de recursos de almacenamiento](working-with-srp.md) (SRP).
+A partir de Adobe Experience Manager (AEM) Communities 6.1, el contenido de la comunidad, comúnmente denominado contenido generado por el usuario (UGC), se almacena en un único almacén común proporcionado por un [proveedor de recursos de almacenamiento](working-with-srp.md) (SRP).
 
 Hay varias opciones de SRP, todas las cuales tienen acceso a UGC a través de una nueva interfaz de AEM Communities, la [API de SocialResourceProvider](srp-and-ugc.md) (SRP), que incluye todas las operaciones de creación, lectura, actualización y eliminación (CRUD).
 
@@ -40,23 +38,23 @@ Consulte también lo siguiente:
 
 ## Acerca del repositorio {#about-the-repository}
 
-AEM Para comprender el SRP, es útil comprender el papel del repositorio de la (Oak AEM) en un sitio de comunidad de la.
+Para comprender el SRP, resulta útil comprender la función del repositorio de AEM (Oak) en un sitio de la comunidad de AEM.
 
 **Repositorio de contenido Java™ (JCR)**
 Este estándar define un modelo de datos y una interfaz de programación de aplicaciones ([API JCR](https://jackrabbit.apache.org/jcr/jcr-api.html)) para repositorios de contenido. Combina las características de los sistemas de archivos convencionales con las de las bases de datos relacionales y agrega varias características adicionales que las aplicaciones de contenido suelen necesitar.
 
-AEM Una implementación de JCR es el repositorio de, Oak.
+Una implementación de JCR es el repositorio de AEM, Oak.
 
 **Apache Jackrabbit Oak**
 [Oak](../../help/sites-deploying/platform.md) es una implementación de JCR 2.0 que es un sistema de almacenamiento de datos diseñado para aplicaciones centradas en el contenido. Es un tipo de base de datos jerárquica diseñada para datos no estructurados y semiestructurados. El repositorio almacena no solo el contenido orientado al usuario, sino también todo el código, las plantillas y los datos internos utilizados por la aplicación. La interfaz de usuario para acceder al contenido es [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-Tanto JCR como Oak AEM se utilizan normalmente para hacer referencia al repositorio de.
+Tanto JCR como Oak se utilizan normalmente para hacer referencia al repositorio de AEM.
 
 Después de desarrollar el contenido del sitio en el entorno privado de creación, debe copiarse en el entorno público de publicación. Esto suele hacerse mediante una operación llamada *[replicación](deploy-communities.md#replication-agents-on-author)*. Esto sucede bajo el control del autor, desarrollador o administrador.
 
 Para UGC, el contenido lo introducen visitantes registrados del sitio (miembros de la comunidad) en el entorno de publicación público. Esto sucede al azar.
 
-Para fines de administración y creación de informes, es útil tener acceso a UGC desde el entorno de Author privado. Con SRP, el acceso a UGC desde Autor es más coherente y eficaz, ya que la replicación inversa de Publish a Autor no es necesaria.
+Para fines de administración y creación de informes, es útil tener acceso a UGC desde el entorno de Author privado. Con SRP, el acceso a UGC desde Autor es más coherente y eficaz, ya que la replicación inversa de Publicar en Autor no es necesaria.
 
 ## Acerca de SRP {#about-srp}
 
@@ -70,9 +68,9 @@ Cuando UGC se guarda en un almacenamiento compartido, hay una sola instancia de 
 
 ### ASRP {#asrp}
 
-Si hay ASRP, UGC no se almacena en JCR, sino que se almacena en un servicio en la nube alojado y administrado por el Adobe. No se puede ver con CRXDE Lite ni acceder a los UGC almacenados en ASRP mediante la API de JCR.
+Si hay ASRP, UGC no se almacena en JCR, sino en un servicio en la nube alojado y administrado por Adobe. No se puede ver el UGC almacenado en ASRP con CRXDE Lite ni acceder a él mediante la API JCR.
 
-Consulte [ASRP - Proveedor de recursos de almacenamiento en Adobe](asrp.md).
+Consulte [ASRP - Proveedor de recursos de almacenamiento de Adobe](asrp.md).
 
 Los desarrolladores no pueden acceder directamente al UGC.
 
@@ -80,23 +78,23 @@ ASRP utiliza la nube de Adobe para las consultas.
 
 ### MSRP {#msrp}
 
-Si existe, MSRP, UGC no se almacena en JCR, sino en MongoDB. No se puede ver con el CRXDE Lite el UGC almacenado en el MSRP ni acceder a él mediante la API JCR.
+Si existe, MSRP, UGC no se almacena en JCR, sino en MongoDB. No se puede ver el UGC almacenado en el MSRP con CRXDE Lite ni acceder a él mediante la API JCR.
 
 Consulte [MSRP - Proveedor de recursos de almacenamiento de MongoDB](msrp.md).
 
-AEM Aunque el MSRP es comparable al ASRP, ya que todas las instancias de servidor de acceden al mismo UGC, es posible utilizar herramientas comunes para acceder directamente al UGC almacenado en MongoDB.
+Aunque MSRP es comparable a ASRP, ya que todas las instancias del servidor de AEM acceden al mismo UGC, es posible utilizar herramientas comunes para acceder directamente al UGC almacenado en MongoDB.
 
 MSRP utiliza Solr para las consultas.
 
 ### JSRP {#jsrp}
 
-AEM JSRP es el proveedor predeterminado para acceder a todos los UGC en una sola instancia de. Permite experimentar rápidamente AEM Communities 6.1 sin necesidad de configurar MSRP o ASRP.
+JSRP es el proveedor predeterminado para acceder a todos los UGC en una sola instancia de AEM. Permite experimentar rápidamente AEM Communities 6.1 sin necesidad de configurar MSRP o ASRP.
 
 Consulte [JSRP - Proveedor de recursos de almacenamiento JCR](jsrp.md).
 
-Si hay JSRP mientras que UGC está almacenado en JCR y es accesible en el CRXDE Lite y la API JCR, Adobe recomienda que nunca utilice la API JCR para hacerlo. Si lo hace, los cambios futuros pueden afectar al código personalizado.
+Si hay JSRP mientras que UGC está almacenado en JCR y es accesible en CRXDE Lite y la API JCR, Adobe recomienda que nunca utilice la API JCR para hacerlo. Si lo hace, los cambios futuros pueden afectar al código personalizado.
 
-Además, el repositorio de los entornos Author y Publish no se comparte. Aunque un clúster de instancias de publicación genera un repositorio de publicación compartido, el UGC introducido en Publish no es visible en Author, por lo que no es posible administrar el UGC desde Author. AEM UGC solo persiste en el repositorio de la instancia en la que se ingresó, es decir, en el repositorio de la instancia en la que se ingresó.
+Además, el repositorio de los entornos Author y Publish no se comparte. Aunque un clúster de instancias de publicación genera un repositorio de publicación compartido, el UGC introducido en la publicación no es visible en el autor, por lo que no es posible administrar el UGC desde el autor. UGC solo persiste en el repositorio de AEM (JCR) de la instancia en la que se introdujo.
 
 JSRP utiliza los índices Oak para las consultas.
 

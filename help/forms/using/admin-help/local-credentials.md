@@ -1,6 +1,6 @@
 ---
 title: Administrar credenciales locales
-description: Obtenga información sobre cómo administrar las credenciales locales mediante la administración del almacén de confianza. AEM Los formularios de datos admiten credenciales RSA y DSA en formularios PKCS12 estándar.
+description: Obtenga información sobre cómo administrar las credenciales locales mediante la administración del almacén de confianza. Los formularios AEM admiten credenciales RSA y DSA en un formulario PKCS12 estándar.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
@@ -11,11 +11,9 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '545'
 ht-degree: 1%
-
 ---
-
 # Administrar credenciales locales {#managing-local-credentials}
 
 >[!NOTE]
@@ -24,11 +22,11 @@ ht-degree: 1%
 
 Las credenciales locales son credenciales de clave privada alojadas en Administración de almacén de confianza. Una *credencial local* identifica dónde se almacena la credencial DES de un usuario. Con la administración de almacén de confianza, puede importar y administrar sus credenciales locales utilizando, por ejemplo, archivos PFX existentes, de modo que pueda importar, editar y eliminar credenciales locales.
 
-AEM Los formularios de datos admiten credenciales RSA y DSA de hasta 4096 bits en formato PKCS12 estándar (archivos .pfx y .p12).
+Los formularios AEM admiten credenciales RSA y DSA de hasta 4096 bits en formato PKCS12 estándar (archivos .pfx y .p12).
 
 Puede importar y exportar cualquier número de credenciales. Si desea reemplazar una credencial caducada con el mismo alias, elimine la credencial y, a continuación, importe la nueva con el mismo alias.
 
-Para obtener información e instrucciones relacionadas con las extensiones de Acrobat Reader DC, consulte [Configuración de credenciales para usarlas con extensiones de Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
+Para obtener información e instrucciones relacionadas con las extensiones de Acrobat Reader DC, consulte [Configuración de credenciales para usarlas con las extensiones de Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
 ## Importar una credencial {#import-a-credential}
 
@@ -36,12 +34,12 @@ Para obtener información e instrucciones relacionadas con las extensiones de Ac
 1. Haga clic en Importar. En Tipo de almacén de confianza, seleccione una de estas opciones:
 
    * **Credencial de firma de documento:** Credencial utilizada para emitir una firma digital en un documento.
-   * **Credencial de extensiones de Acrobat Reader DC:** Certificado digital específico de las extensiones de Acrobat Reader DC que permite activar los derechos de uso de Adobe Reader en los documentos de PDF producidos.
+   * **Credencial de las extensiones de Acrobat Reader DC:** Certificado digital específico de las extensiones de Acrobat Reader DC que permite activar los derechos de uso de Adobe Reader en los documentos de PDF producidos.
    * **Valor predeterminado:** Indica que esta es la credencial predeterminada que se debe usar con las extensiones de Acrobat Reader DC.
 
-   AEM Para obtener información sobre cómo obtener una credencial, consulte [Preparar la instalación de formularios de la](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
+   Para obtener información sobre cómo obtener una credencial, consulte [Preparación para instalar formularios de AEM](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de la credencial en las extensiones de Acrobat Reader DC y en el servicio Signature. AEM Este alias también se utiliza para acceder a las credenciales mediante programación mediante el uso de la SDK de formularios de la.
+1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de la credencial en las extensiones de Acrobat Reader DC y en el servicio Signature. Este alias también se utiliza para acceder a las credenciales mediante programación utilizando AEM Forms SDK.
 
    >[!NOTE]
    >

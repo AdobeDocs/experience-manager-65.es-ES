@@ -1,6 +1,6 @@
 ---
-title: Aplicación de escritorio de Adobe Experience Manager AEM () para AEM Forms
-description: Aplicación de escritorio de Adobe Experience Manager AEM () para AEM Forms
+title: Aplicación de escritorio de Adobe Experience Manager (AEM) para AEM Forms
+description: Aplicación de escritorio de Adobe Experience Manager (AEM) para AEM Forms
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: manage
@@ -11,12 +11,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '484'
 ht-degree: 47%
-
 ---
-
-# Aplicación de escritorio de Adobe Experience Manager AEM () para AEM Forms {#aem-desktop-app-for-aem-forms}
+# Aplicación de escritorio de Adobe Experience Manager (AEM) para AEM Forms {#aem-desktop-app-for-aem-forms}
 
 La aplicación de escritorio de AEM le permite asignar el repositorio de recursos de Adobe Experience Manager (AEM) y los archivos binarios de AEM Forms a un directorio de red del sistema. Puede ver los recursos sincronizados y los archivos binarios en un explorador de archivos y usar varias aplicaciones para editar los archivos como desee. Además de ver los archivos, también puede crear, cargar y eliminar los archivos binarios. También puede abrir, editar y guardar archivos directamente desde el software. Por ejemplo, puede abrir y editar directamente un archivo XDP desde Designer. Los cambios que realice en los recursos localmente se reflejarán en el repositorio de AEM Assets y en la interfaz de usuario de AEM Forms.
 
@@ -32,13 +30,13 @@ Puede utilizar la aplicación para sincronizar archivos binarios de AEM Forms de
 
 ## Habilitar AEM Forms para la aplicación de escritorio de AEM {#enable-aem-forms-for-aem-desktop-app}
 
-AEM La aplicación de escritorio de ® utiliza el protocolo WebDAV en MicrosoftWindows y SMB1 en macOS X para conectarse a un servidor de AEM Forms. De forma predeterminada, el servidor de AEM Forms no está habilitado para sincronizar archivos binarios y otros recursos con un cliente WebDAV o SMB. Siga estos pasos para habilitar AEM Forms AEM para la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de:
+La aplicación de escritorio de AEM utiliza el protocolo WebDAV en Microsoft® Windows y SMB1 en macOS X para conectarse a un servidor de AEM Forms. De forma predeterminada, el servidor de AEM Forms no está habilitado para sincronizar archivos binarios y otros recursos con un cliente WebDAV o SMB. Siga estos pasos para poder habilitar AEM Forms para la aplicación de escritorio de AEM:
 
 1. Inicie sesión en AEM Forms como administrador.
 1. En la instancia de autor, haga clic en ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Herramientas]** ![hammer](assets/hammer.png) **[!UICONTROL > Implementación > Operaciones> Consola Web]**. La consola web se abre en una nueva ventana.
 1. En la ventana Consola web, busque y abra la opción **[!UICONTROL Configuración del complemento FormsManager]**.
 1. En el cuadro de diálogo Configuración del complemento FormsManager, anule la selección de **[!UICONTROL Sincronizar recursos asincrónicamente]** y haga clic en **[!UICONTROL Guardar]**.
-1. Reinicie AEM Forms Server. Después del reinicio, el servidor de AEM Forms AEM está habilitado para aceptar y compartir contenido con la aplicación de escritorio de la aplicación de escritorio de la aplicación de escritorio de la.
+1. Reinicie el servidor de AEM Forms. Después del reinicio, el servidor de AEM Forms está habilitado para aceptar y compartir contenido con la aplicación de escritorio de AEM.
 1. Abra la aplicación y conéctese al servidor de AEM Forms.
 
    >[!NOTE]

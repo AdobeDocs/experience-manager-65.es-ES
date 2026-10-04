@@ -12,11 +12,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '291'
 ht-degree: 4%
-
 ---
-
 # Consola Insignias {#badges-console}
 
 ## Acerca de los distintivos {#about-badges}
@@ -51,7 +49,7 @@ Si el entorno de publicación es una granja de editores, es necesario configurar
 
 * **Cargar imagen**
 
-  (*Obligatorio*) Una imagen de distintivo con un tamaño recomendado de 32 x 32 píxeles a 72 ppp en formato JPEG o PNG.
+  (*Requerido*) Una imagen de distintivo con un tamaño recomendado de 32 x 32 píxeles a 72 ppp en formato JPEG o PNG.
 
 * **Nombre**
 

@@ -1,6 +1,7 @@
 ---
 title: Introducción a los formularios HTML5
-description: HTML5 forms es una nueva funcionalidad del software Adobe Experience Manager AEM 6.0 (6.0) que puede procesar plantillas de formulario XFA en formato HTML 5.
+
+description: HTML5 forms es una nueva funcionalidad del software Adobe Experience Manager 6.0 (AEM 6.0) que puede procesar plantillas de formulario XFA en formato HTML5.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
@@ -10,18 +11,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '422'
 ht-degree: 88%
-
 ---
-
 # Introducción a los formularios HTML5{#introduction-to-html-forms}
 
-HTML5 forms es una nueva funcionalidad del software Adobe Experience Manager AEM 6.0 (6.0) que puede procesar plantillas de formulario XFA en formato HTML 5. Esta capacidad permite procesar formularios tanto en dispositivos móviles como en exploradores de equipos de escritorio no compatibles con PDF basados en XFA. Los formularios HTML5 no solo son compatibles con las capacidades existentes de las plantillas de formulario XFA, sino que también agregan capacidades nuevas para dispositivos móviles, como la firma manuscrita.
+HTML5 forms es una nueva funcionalidad del software Adobe Experience Manager 6.0 (AEM 6.0) que puede procesar plantillas de formulario XFA en formato HTML5. Esta capacidad permite procesar formularios tanto en dispositivos móviles como en exploradores de equipos de escritorio no compatibles con PDF basados en XFA. Los formularios HTML5 no solo son compatibles con las capacidades existentes de las plantillas de formulario XFA, sino que también agregan capacidades nuevas para dispositivos móviles, como la firma manuscrita.
 
 Los formularios HTML5 generan documentos basados en construcciones HTML5 estándares. Puede ver los formularios HTML5 en todos los navegadores modernos compatibles con HTML5. No es necesario instalar ningún complemento de explorador adicional en los exploradores. Para obtener más información sobre los exploradores compatibles, consulte [Plataformas de cliente compatibles](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
-![vista previa del formulario HTML 5](do-not-localize/mobile_form_on_an_ipad_date_14.png)
+![Vista previa del formulario HTML5](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
 ## Capacidades clave de los formularios HTML5 {#key-capabilities-of-html-forms-br}
 

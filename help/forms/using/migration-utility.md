@@ -1,6 +1,6 @@
 ---
 title: Migrar recursos y documentos de AEM Forms
-description: La utilidad de migración le permite migrar recursos y documentos de Adobe Experience Manager AEM Forms AEM () desde la versión 6.3 de Forms AEM o versiones anteriores a la versión 6.4 de Forms, de la versión 6.4 de la aplicación, de la que se dispone en la versión 6.4.
+description: La utilidad de migración permite migrar recursos y documentos de Adobe Experience Manager (AEM) Forms desde AEM 6.3 Forms o versiones anteriores a AEM 6.4 Forms.
 content-type: reference
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
@@ -13,14 +13,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1789'
 ht-degree: 53%
-
 ---
-
 # Migrar recursos y documentos de AEM Forms{#migrate-aem-forms-assets-and-documents}
 
-La utilidad de migración convierte los [recursos adaptables de Forms](../../forms/using/introduction-forms-authoring.md), las [configuraciones en la nube](/help/sites-developing/extending-cloud-config.md) y los [recursos de Administración de correspondencia](/help/forms/using/cm-overview.md) del formato utilizado en versiones anteriores al formato utilizado en Adobe Experience Manager AEM () 6.5 Forms. Al ejecutar la utilidad de migración, se migran los siguientes elementos:
+La utilidad de migración convierte los [recursos adaptables de Forms](../../forms/using/introduction-forms-authoring.md), las [configuraciones en la nube](/help/sites-developing/extending-cloud-config.md) y los [recursos de Administración de correspondencia](/help/forms/using/cm-overview.md) del formato utilizado en versiones anteriores al formato utilizado en Adobe Experience Manager (AEM) 6.5 Forms. Al ejecutar la utilidad de migración, se migran los siguientes elementos:
 
 * Componentes personalizados para formularios adaptables
 * Plantillas de formularios adaptables y Administración de correspondencia
@@ -53,10 +51,10 @@ Debido a [cambios relacionados con la compatibilidad con versiones anteriores](/
 
 Para los recursos de Administración de correspondencia:
 
-* En el caso de los recursos importados de la plataforma anterior, se agrega una propiedad, **fd:version=1.0**.
+* Para los recursos importados de la plataforma anterior, se agrega una propiedad: **fd:version=1.0**.
 * A partir de AEM 6.1 Forms, los comentarios no están disponibles de forma predeterminada. Los comentarios que se agregaron anteriormente están disponibles en los recursos, pero no son visibles en la interfaz automáticamente. Personalice la propiedad extendedProperties en la interfaz de usuario de AEM Forms para que los comentarios sean visibles.
 * En algunas versiones anteriores, como LiveCycle ES4, el texto se editaba con RichTextEditor de Flex, pero desde AEM 6.1 Forms, se utiliza un editor HTML. Debido a esta renderización y al aspecto de las fuentes, los tamaños y los márgenes de fuente pueden diferir de las versiones anteriores en la interfaz de usuario del Autor. Sin embargo, las cartas tienen el mismo aspecto cuando se representan.
-* Las listas de los módulos de texto se han mejorado, y ahora se procesan de forma diferente. Es posible que haya diferencias visuales. El Adobe recomienda procesar y ver las cartas en las que utiliza listas en módulos de texto.
+* Las listas de los módulos de texto se han mejorado, y ahora se procesan de forma diferente. Es posible que haya diferencias visuales. Adobe recomienda procesar y ver las cartas en las que utiliza listas en módulos de texto.
 * Dado que los módulos de contenido de imagen se convierten en recursos DAM, y que los diseños y los fragmentos se añaden a los formularios durante la migración, la propiedad Updated By de estos módulos cambia a admin.
 * El historial de versiones de los recursos no se migra y no está disponible después de la migración. El historial de versiones posterior a la migración se conserva.
 * El estado Listo para publicación está obsoleto desde AEM Forms 6.1, por lo que todos los recursos con este estado se cambian al estado Modificado.
@@ -78,7 +76,7 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 >
 >Antes de ejecutar la utilidad de migración, asegúrese de haber realizado una copia de seguridad del repositorio CRX.
 
-1. AEM En una sesión del explorador, inicie sesión en la instancia de autor de la como administrador.
+1. En una sesión del explorador, inicie sesión en la instancia de autor de AEM como administrador.
 
 1. Abra la siguiente URL en el explorador:
 
@@ -95,11 +93,11 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 
    * Para migrar **recursos**, seleccione Migración de AEM Forms Assets y, en la siguiente pantalla, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
-      * Formularios adaptables
-      * Fragmentos de documento
-      * Temas
-      * Cartas
-      * Diccionarios de datos
+     * Formularios adaptables
+     * Fragmentos de documento
+     * Temas
+     * Cartas
+     * Diccionarios de datos
 
    >[!NOTE]
    >
@@ -107,12 +105,12 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 
    * Para migrar componentes de formulario adaptable personalizados, seleccione **Migración de componentes personalizados de Forms adaptable** y, en la página Migración de componentes personalizados, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
-      * Componentes personalizados escritos para formularios adaptables
-      * Superposiciones de componentes, si las hay.
+     * Componentes personalizados escritos para formularios adaptables
+     * Superposiciones de componentes, si las hay.
 
    * Para migrar plantillas de formulario adaptable, seleccione **Migración de plantillas de Forms adaptable** y, en la página Migración de componentes personalizados, seleccione **Iniciar migración**. Se migrarán los siguiente elementos:
 
-      * Plantillas de formulario adaptable creadas en `/apps` o `/conf` con el Editor de plantillas de AEM.
+     * Plantillas de formulario adaptable creadas en `/apps` o `/conf` con el Editor de plantillas de AEM.
 
    * Migre los servicios de configuración de AEM Forms Cloud para utilizar el nuevo paradigma de servicios en la nube sensibles al contexto, que incluye la interfaz de usuario táctil (en `/conf`). Cuando migre los servicios de configuración de AEM Forms Cloud, los servicios en la nube de `/etc` se mueven a `/conf`. Si no tiene personalizaciones de servicios en la nube que dependan de rutas heredadas (`/etc`), Adobe recomienda ejecutar la utilidad de migración después de actualizar a la versión 6.5; usar la interfaz de usuario táctil de la configuración en la nube para cualquier trabajo posterior. Si tiene personalizaciones de servicios en la nube existentes, continúe usando la IU clásica en la configuración actualizada hasta que las personalizaciones se actualicen para que se alineen con las rutas migradas (`/conf`) y luego ejecute la utilidad de migración.
 
@@ -120,23 +118,23 @@ Cuando ejecuta la utilidad de migración por primera vez, se crea un registro co
 
    * Servicios en la nube del modelo de datos de formulario
 
-      * Ruta de origen: `/etc/cloudservices/fdm`
-      * Ruta de destino: `/conf/global/settings/cloudconfigs/fdm`
+     * Ruta de origen: `/etc/cloudservices/fdm`
+     * Ruta de destino: `/conf/global/settings/cloudconfigs/fdm`
 
    * Recaptcha
 
-      * Ruta de origen: `/etc/cloudservices/recaptcha`
-      * Ruta de destino: `/conf/global/settings/cloudconfigs/recaptcha`
+     * Ruta de origen: `/etc/cloudservices/recaptcha`
+     * Ruta de destino: `/conf/global/settings/cloudconfigs/recaptcha`
 
    * Adobe Sign
 
-      * Ruta de origen: `/etc/cloudservices/echosign`
-      * Ruta de destino: `/conf/global/settings/cloudconfigs/echosign`
+     * Ruta de origen: `/etc/cloudservices/echosign`
+     * Ruta de destino: `/conf/global/settings/cloudconfigs/echosign`
 
    * Servicios de nube de Typekit
 
-      * Ruta de origen: `/etc/cloudservices/typekit`
-      * Ruta de destino: `/conf/global/settings/cloudconfigs/typekit`
+     * Ruta de origen: `/etc/cloudservices/typekit`
+     * Ruta de destino: `/conf/global/settings/cloudconfigs/typekit`
 
    La ventana del explorador muestra lo siguiente a medida que se produce el proceso de migración:
 
@@ -156,15 +154,15 @@ Estos componentes se pueden migrar abriéndolos en el Editor de reglas desde el 
 
 * Para migrar reglas y scripts (no es necesario si se actualiza desde la versión 6.3) de componentes personalizados, seleccione Migración de componentes personalizados de Forms adaptable y, en la pantalla siguiente, seleccione Iniciar migración. Se migrarán los siguiente elementos:
 
-   * Reglas y scripts creados con el Editor de reglas (6.1 FP1 y versiones posteriores)
+  * Reglas y scripts creados con el Editor de reglas (6.1 FP1 y versiones posteriores)
 
-   * Scripts creados con la pestaña Script en la IU de 6.1 y versiones anteriores
+  * Scripts creados con la pestaña Script en la IU de 6.1 y versiones anteriores
 
 * Para migrar plantillas (no es necesario si se actualiza desde las versiones 6.3 y 6.4), seleccione Migración de plantillas de Forms adaptable y, en la pantalla siguiente, seleccione Iniciar migración. Se migrarán los siguiente elementos:
 
-   * Plantillas antiguas: las plantillas de formulario adaptable creadas en /apps con AEM 6.1 Forms o versiones anteriores. Eso incluye los scripts definidos en los componentes de plantilla.
+  * Plantillas antiguas: las plantillas de formulario adaptable creadas en /apps con AEM 6.1 Forms o versiones anteriores. Eso incluye los scripts definidos en los componentes de plantilla.
 
-   * Nuevas plantillas: las plantillas de formulario adaptable creadas con el editor de plantillas en `/conf`. Eso incluye la migración de reglas y scripts creados con el Editor de reglas.
+  * Nuevas plantillas: las plantillas de formulario adaptable creadas con el editor de plantillas en `/conf`. Eso incluye la migración de reglas y scripts creados con el Editor de reglas.
 
 ### Tareas de mantenimiento después de ejecutar la utilidad de migración. {#housekeepingtasks}
 
@@ -177,6 +175,6 @@ Después de ejecutar la utilidad de migración, debe encargarse de las siguiente
    1. Abra el archivo XFA en la última versión de Designer y guárdelo. El XFA se actualiza a la versión más reciente.
    1. Cargue el XFA en la interfaz de usuario de Forms.
 
-1. Publique todos los recursos publicados en el sistema anterior antes de la migración. La utilidad de migración actualiza los recursos solo en la instancia de autor. Para actualizar los recursos en las instancias de Publish, debe publicarlos.
+1. Publique todos los recursos publicados en el sistema anterior antes de la migración. La utilidad de migración actualiza los recursos solo en la instancia de autor. Para actualizar los recursos en las instancias de publicación, debe publicarlos.
 
 1. En AEM Forms 6.4 y 6.5, se cambian algunos derechos de los grupos forms users. Si desea que cualquiera de los usuarios pueda cargar XDP y Forms adaptable que contengan scripts o utilizar un editor de código, debe agregarlos al grupo forms-power-users. Del mismo modo, los autores de plantillas ya no pueden utilizar el editor de código del Editor de reglas. Para que los usuarios puedan utilizar un editor de código, agréguelos al grupo af-template-script-writers. Para obtener instrucciones sobre cómo agregar usuarios a grupos, consulte [Administración de usuarios y grupos de usuarios](/help/communities/users.md).

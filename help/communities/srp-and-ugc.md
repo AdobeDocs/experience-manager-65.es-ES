@@ -11,11 +11,9 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '693'
 ht-degree: 0%
-
 ---
-
 # SRP y UGC Essentials {#srp-and-ugc-essentials}
 
 ## Introducción {#introduction}
@@ -36,7 +34,7 @@ La API de SRP no es una clase abstracta, es una interfaz. Una implementación pe
 
 Los medios para utilizar la API de SRP son a través de las utilidades proporcionadas, como las que se encuentran en el paquete SocialResourceUtilities.
 
-AEM Al actualizar desde la versión 6.0 o anterior, será necesario migrar el UGC para todos los SRP, para los que hay disponible una herramienta Open Source. Ver [Actualización a AEM Communities 6.3](upgrade.md).
+Al actualizar desde AEM 6.0 o anterior, será necesario migrar el UGC para todos los SRP, para los que hay disponible una herramienta Open Source. Ver [Actualización a AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
@@ -100,11 +98,11 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 ## Ubicaciones de almacenamiento relacionadas con UGC {#ugc-related-storage-locations}
 
-Las siguientes descripciones de la ubicación de almacenamiento pueden ser de ayuda al desarrollar con JSRP o quizás MSRP. Actualmente no hay ninguna interfaz de usuario para acceder a UGC almacenada en ASRP, como lo hay para JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) y MSRP (herramientas MongoDB).
+Las siguientes descripciones de la ubicación de almacenamiento pueden ser de ayuda al desarrollar con JSRP o quizás MSRP. Actualmente no hay ninguna interfaz de usuario que acceda a UGC almacenada en ASRP, como lo hay para JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) y MSRP (herramientas MongoDB).
 
 **Ubicación del componente**
 
-AEM Cuando un miembro introduce UGC en el entorno de publicación, está interactuando con un componente como parte de un sitio de.
+Cuando un miembro introduce UGC en el entorno de publicación, interactúa con un componente como parte de un sitio de AEM.
 
 Un ejemplo de este componente es el componente [comments](http://localhost:4502/content/community-components/en/comments.html) que existe en el sitio [Community Components Guide](components-guide.md). La ruta al nodo de comentarios del repositorio local es la siguiente:
 
@@ -124,7 +122,7 @@ El UGC no se crea en ninguna de esas ubicaciones y solo se debe acceder a él me
 * Ruta raíz = `/content/usergenerated/asi/srp-choice`
 * Nodo UGC para JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-AEM *Tenga en cuenta* que, para JSRP, el nodo UGC *solo* estará presente en la instancia de (ya sea de autor o publicación) en la que se ingresó. Si se introduce en una instancia de publicación, la moderación no será posible desde la consola de moderación del autor.
+*Tenga en cuenta* que, para JSRP, el nodo UGC *solo* estará presente en la instancia de AEM (ya sea de autor o publicación) en la que se ingresó. Si se introduce en una instancia de publicación, la moderación no será posible desde la consola de moderación del autor.
 
 ## Información relacionada {#related-information}
 
