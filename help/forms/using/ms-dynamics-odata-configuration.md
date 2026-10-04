@@ -1,6 +1,6 @@
 ---
 title: Configuración de OData de Microsoft Dynamics
-description: Aprenda a utilizar, integrar y trabajar con servicios en línea y locales de Microsoft Dynamics mediante el modelo de datos de formulario.
+description: Aprenda a utilizar, integrar y trabajar con servicios de Microsoft Dynamics en línea y locales a través del modelo de datos de formulario.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -10,16 +10,14 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 93%
-
+source-wordcount: '1271'
+ht-degree: 92%
 ---
-
 # Configuración de OData de Microsoft Dynamics{#microsoft-dynamics-odata-configuration}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html) |
 | AEM 6.5 | Este artículo |
 
 ![integración de datos](assets/data-integeration.png)
@@ -46,8 +44,8 @@ Antes de comenzar a configurar Microsoft Dynamics, asegúrese de que dispone de
 * Se ha instalado el [paquete de complementos de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 * Se ha configurado Microsoft Dynamics 365 en línea o se ha instalado una instancia de una de las siguientes versiones de Microsoft Dynamics:
 
-   * Microsoft Dynamics 365 local
-   * Microsoft Dynamics 2016 local
+  * Microsoft Dynamics 365 local
+  * Microsoft Dynamics 2016 local
 
 * [Se ha registrado la aplicación del servicio en línea de Microsoft Dynamics con Microsoft Azure Active Directory](https://docs.microsoft.com/es-es/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Tome nota de los valores del ID de cliente (también denominado ID de aplicación) y del secreto de cliente del servicio registrado. Estos valores se utilizan para [configurar el servicio en la nube del servicio de Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
@@ -103,7 +101,6 @@ Haga lo siguiente para registrar un cliente de OAuth en el equipo de los Servici
 
    * `Client-ID` es un ID de cliente que puede generar con cualquier generador GUID.
    * `redirect-uri` es la dirección URL del servicio en la nube de OData de Microsoft Dynamics en AEM Forms. El servicio en la nube predeterminado instalado con el paquete de AEM Forms se implementa en la siguiente URL:
-
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Ejecute el siguiente comando para conceder acceso desde el equipo AD FS:
@@ -120,8 +117,8 @@ Haga lo siguiente para registrar un cliente de OAuth en el equipo de los Servici
 
 La configuración del **servicio en la nube de OData de MS Dynamics (servicio OData)** viene con las opciones de configuración predeterminadas de OData. Para configurarlo para que se conecte con el servicio de Microsoft Dynamics, siga los siguientes pasos.
 
-1. Vaya a **[!UICONTROL Herramientas > Cloud Service > Fuentes de datos]** y seleccione la carpeta de configuración `global`.
-1. Seleccione la configuración **Cloud Service OData de MS Dynamics (servicio OData)** y seleccione **[!UICONTROL Propiedades]**. Se abre el cuadro de diálogo de las propiedades de configuración del servicio en la nube.
+1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]** y seleccione la carpeta de configuración `global`.
+1. Seleccione la configuración **MS Dynamics OData Cloud Service (servicio OData)** y seleccione **[!UICONTROL Propiedades]**. Se abre el cuadro de diálogo de las propiedades de configuración del servicio en la nube.
 
    En la pestaña **Configuración de autenticación**:
 
