@@ -1,10 +1,12 @@
 ---
-title: 'Creación: el entorno y las herramientas'
+title: 'Creación: entorno y herramientas'
 description: La consola Sitios web permite administrar y navegar por el sitio web. Con dos paneles, la estructura del sitio web se puede expandir y realizar acciones en los elementos necesarios.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
+
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
@@ -12,16 +14,14 @@ feature: Authoring
 role: User
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 5%
-
+source-wordcount: '952'
+ht-degree: 6%
 ---
+# Creación: entorno y herramientas {#authoring-the-environment-and-tools}
 
-# Creación: el entorno y las herramientas {#authoring-the-environment-and-tools}
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
 
-El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
-
-## Administración del sitio {#site-administration}
+## Administración de sitios {#site-administration}
 
 La consola **Sitios web** le permite administrar y navegar por el sitio web. Mediante los dos paneles, se puede expandir la estructura del sitio web y realizar acciones en el elemento requerido:
 
@@ -35,7 +35,7 @@ Hay un editor de páginas independiente con la IU clásica, que utiliza el busca
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Acceso a la Ayuda   {#accessing-help}
+## Acceso a la Ayuda {#accessing-help}
 
 Se puede acceder directamente a varios recursos de **Ayuda** desde AEM:
 
@@ -45,7 +45,7 @@ Además de obtener acceso a [ayuda desde las barras de herramientas de la consol
 
 O usando el botón **Ayuda** en el cuadro de diálogo de edición de componentes específicos; esto mostrará ayuda contextual.
 
-## Barra de tareas  {#sidekick}
+## Barra de tareas {#sidekick}
 
 La pestaña **Componentes** de la barra de tareas le permite examinar los componentes disponibles para agregarlos a la página actual. El grupo requerido se puede expandir y, a continuación, un componente se arrastra a la ubicación requerida en la página.
 
@@ -189,7 +189,7 @@ Se puede acceder al **Registro de auditoría** desde la ficha **Información** d
 
 La consola del sitio web también [proporciona información sobre el estado actual de la página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), como publicación, modificación, bloqueado, Live Copy, etc.
 
-## Modos de página   {#page-modes}
+## Modos de página {#page-modes}
 
 Al editar una página con la IU clásica, hay varios modos a los que se puede acceder mediante los iconos de la parte inferior de la barra de tareas:
 

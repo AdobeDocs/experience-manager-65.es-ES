@@ -1,6 +1,6 @@
 ---
 title: Creación para Adobe PhoneGap Enterprise en Adobe Experience Manager
-description: Obtenga información sobre la creación de Adobe PhoneGap Enterprise mediante plantillas y componentes para agregar y editar páginas, arrastrar y soltar componentes y agregar medios.
+description: Obtenga información sobre la creación de para Adobe PhoneGap Enterprise mediante plantillas y componentes para agregar y editar páginas, arrastrar y soltar componentes y agregar medios.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -10,16 +10,14 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 3%
-
+source-wordcount: '210'
+ht-degree: 4%
 ---
-
 # PhoneGap{#phonegap}
 
 {{ue-over-mobile}}
 
-Adobe Experience Manager AEM AEM () Mobile es solo uno de los pilares que conforman la plataforma completa de la plataforma de la.
+Adobe Experience Manager (AEM) Mobile es solo uno de los pilares que conforman la plataforma completa de AEM.
 
 El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una cohesión de funciones antes de que esté lista para la edición de contenido. Las siguientes funciones proporcionan un punto de partida para crear una aplicación de AEM Mobile:
 
@@ -29,7 +27,7 @@ El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una coh
 
 ## Creación de aplicaciones de PhoneGap {#authoring-phonegap-applications}
 
-AEM Un ***Autor de* (o *Especialista en marketing*)**&#x200B;puede usar las plantillas y los componentes predeterminados para agregar y editar páginas. Puede arrastrar y soltar componentes y añadir medios de todos los tipos desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido).
+Un ***autor de AEM* (o *experto en marketing*)**puede usar las plantillas y los componentes predeterminados para agregar y editar páginas. Puede arrastrar y soltar componentes y añadir medios de todos los tipos desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido).
 
 Consulte los siguientes recursos:
 
@@ -47,5 +45,5 @@ Para obtener más información sobre **Content Services**, consulte [Informació
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [Desarrollo para Adobe PhoneGap AEM Enterprise con](/help/mobile/developing-in-phonegap.md)
-* [Administración de contenido para Adobe PhoneGap AEM Enterprise con el servicio de administración de](/help/mobile/administer-phonegap.md)
+* [Desarrollo para Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
+* [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)

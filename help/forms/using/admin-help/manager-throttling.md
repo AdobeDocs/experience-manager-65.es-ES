@@ -11,28 +11,26 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 0%
-
+source-wordcount: '1053'
+ht-degree: 1%
 ---
-
 # Administrador de trabajo y regulación{#work-manager-and-throttling}
 
 >[!NOTE]
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-AEM Los formularios de (y las versiones anteriores) utilizaban colas de JMS para ejecutar operaciones de forma asíncrona. AEM En los formularios, las colas de JMS se han sustituido por Work Manager. Este documento proporciona información general sobre Work Manager y proporciona instrucciones sobre cómo configurar las opciones de regulación de Work Manager.
+Los formularios de AEM (y las versiones anteriores) utilizaban colas de JMS para ejecutar operaciones de forma asíncrona. En los formularios AEM, las colas de JMS se han reemplazado por Work Manager. Este documento proporciona información general sobre Work Manager y proporciona instrucciones sobre cómo configurar las opciones de regulación de Work Manager.
 
 ## Acerca de las operaciones de larga duración (asincrónicas) {#about-long-lived-asynchronous-operations}
 
-AEM En los formularios de datos, las operaciones realizadas por los servicios pueden ser de corta duración (sincrónicas) o de larga duración (asincrónicas). Las operaciones de corta duración se completan sincrónicamente en el mismo subproceso desde el que se invocaron. Estas operaciones esperan una respuesta antes de continuar.
+En los formularios AEM Forms, las operaciones realizadas por los servicios pueden ser de corta duración (sincrónicas) o de larga duración (asincrónicas). Las operaciones de corta duración se completan sincrónicamente en el mismo subproceso desde el que se invocaron. Estas operaciones esperan una respuesta antes de continuar.
 
 Las operaciones de larga duración pueden abarcar sistemas o incluso extenderse más allá de la organización, como cuando un cliente debe completar y enviar un formulario de solicitud de préstamo como parte de una solución más grande que integra múltiples tareas automatizadas y humanas. Estas operaciones deben continuar mientras se espera una respuesta. Las operaciones de larga duración realizan su trabajo subyacente de forma asíncrona, lo que permite comprometer los recursos mientras esperan su finalización. A diferencia de las operaciones de corta duración, Work Manager no considera que una operación de larga duración se haya completado una vez que se invoca. Para completar la operación, debe producirse un déclencheur externo, como un sistema que solicita otra operación en el mismo servicio o un usuario que envía un formulario.
 
 ## Acerca de Work Manager {#about-work-manager}
 
-AEM Los formularios de (y las versiones anteriores) utilizaban colas de JMS para ejecutar operaciones de forma asíncrona. AEM Forms utiliza Work Manager para programar y ejecutar operaciones asincrónicas a través de subprocesos administrados.
+Los formularios de AEM (y las versiones anteriores) utilizaban colas de JMS para ejecutar operaciones de forma asíncrona. Los formularios AEM Forms utilizan Work Manager para programar y ejecutar operaciones asincrónicas mediante subprocesos administrados.
 
 Las operaciones asincrónicas se gestionan de esta manera:
 
@@ -40,7 +38,7 @@ Las operaciones asincrónicas se gestionan de esta manera:
 1. Work Manager almacena el elemento de trabajo en una tabla de la base de datos y le asigna un identificador único. El registro de la base de datos contiene toda la información necesaria para ejecutar el elemento de trabajo.
 1. Los hilos del Administrador de trabajos extraen elementos de trabajo cuando los hilos quedan libres. Antes de extraer los elementos de trabajo, los subprocesos pueden comprobar si se han iniciado los servicios necesarios, si hay suficiente tamaño de pila para extraer el siguiente elemento de trabajo y si hay suficientes ciclos de CPU para procesar el elemento de trabajo. Work Manager también evalúa los atributos del elemento de trabajo (como su prioridad) al programar su ejecución.
 
-AEM Los administradores de formularios pueden utilizar el Monitor de estado para comprobar las estadísticas de Work Manager, como el número de elementos de trabajo en la cola y sus estados. También puede utilizar el Monitor de estado para pausar, reanudar, reintentar o eliminar elementos de trabajo. (Consulte [Ver estadísticas relacionadas con Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+Los administradores de formularios de AEM pueden utilizar el Monitor de estado para comprobar las estadísticas de Work Manager, como el número de elementos de trabajo en la cola y sus estados. También puede utilizar el Monitor de estado para pausar, reanudar, reintentar o eliminar elementos de trabajo. (Consulte [Ver estadísticas relacionadas con Work Manager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
 ## Configurar las opciones de regulación de Work Manager {#configuring-work-manager-throttling-options}
 
@@ -68,7 +66,7 @@ Puede configurar la restricción para Work Manager, de modo que los elementos de
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.high-limit</code></td>
-   <td><p>Especifica el porcentaje máximo de memoria que puede estar en uso antes de que Work Manager restrinja los trabajos entrantes.</p><p>El valor predeterminado de esta opción es <code>95</code>. Este valor debería ser correcto para la mayoría de los sistemas. Auméntelo solo si su sistema necesita alcanzar su capacidad máxima. Pero tenga en cuenta que, a medida que aumenta este valor, también aumenta el riesgo de problemas de Memoria insuficiente.</p><p>AEM Si está ejecutando formularios en un entorno agrupado, puede que desee establecer la configuración del límite de control de memoria de forma diferente en distintos nodos del clúster. Por ejemplo, podría tener un límite superior inferior en los nodos A y B, que están programados en el equilibrador de carga para el trabajo interactivo. Y podría tener límites altos más altos establecidos en los nodos C y D, que no son utilizados por el equilibrador de carga, sino reservados para el trabajo asincrónico.</p></td>
+   <td><p>Especifica el porcentaje máximo de memoria que puede estar en uso antes de que Work Manager restrinja los trabajos entrantes.</p><p>El valor predeterminado de esta opción es <code>95</code>. Este valor debería ser correcto para la mayoría de los sistemas. Auméntelo solo si su sistema necesita alcanzar su capacidad máxima. Pero tenga en cuenta que, a medida que aumenta este valor, también aumenta el riesgo de problemas de Memoria insuficiente.</p><p>Si está ejecutando formularios AEM Forms en un entorno en clúster, puede que desee establecer la configuración del límite de control de memoria de forma diferente en distintos nodos del clúster. Por ejemplo, podría tener un límite superior inferior en los nodos A y B, que están programados en el equilibrador de carga para el trabajo interactivo. Y podría tener límites altos más altos establecidos en los nodos C y D, que no son utilizados por el equilibrador de carga, sino reservados para el trabajo asincrónico.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.low-limit</code></td>

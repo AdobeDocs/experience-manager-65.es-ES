@@ -11,11 +11,9 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '382'
 ht-degree: 1%
-
 ---
-
 # Plantillas y componentes de aplicación{#app-templates-and-components}
 
 {{ue-over-mobile}}
@@ -29,7 +27,7 @@ Cada plantilla le presenta una selección de componentes disponibles para su uso
 
 >[!NOTE]
 >
->Para obtener información sobre cómo desarrollar la aplicación de Adobe Experience Manager AEM () mediante CRXDE Lite, consulte [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Para aprender a desarrollar la aplicación de Adobe Experience Manager (AEM) con CRXDE Lite, consulte [Desarrollo con CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Una plantilla es la base de una página.
 
@@ -51,11 +49,11 @@ Se pueden configurar varias propiedades, en particular:
 * **jcr:title** - título de la plantilla; aparece en el cuadro de diálogo al crear una página.
 * **jcr:description**: descripción de la plantilla; aparece en el cuadro de diálogo al crear una página.
 
-Este nodo contiene *un nodo jcr:content (cq:PageContent)* que se usa como base para el nodo de contenido de las páginas resultantes. Esto hace referencia, usando *sling:resourceType*, al componente que se va a usar para procesar el contenido real de una nueva página.
+Este nodo contiene *un nodo jcr:content (cq:PageContent)* que se usa como base para el nodo de contenido de las páginas resultantes. Esto hace referencia, usando *sling:resourceType*, al componente que se utilizará para representar el contenido real de una nueva página.
 
 >[!NOTE]
 >
->AEM Para conocer los conceptos básicos de las plantillas y los componentes en las plantillas de, consulte los recursos que aparecen a continuación:
+>Para conocer los conceptos básicos de las plantillas y los componentes en AEM, consulte los recursos siguientes:
 >
 >* [Plantillas](/help/sites-developing/templates.md)
 >* [Componentes](/help/sites-developing/components.md)

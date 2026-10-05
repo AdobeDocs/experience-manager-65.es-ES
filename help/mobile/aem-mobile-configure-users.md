@@ -11,11 +11,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 0%
-
+source-wordcount: '521'
+ht-degree: 2%
 ---
-
 # Configuración de usuarios y grupos de usuarios {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -26,27 +24,27 @@ En este capítulo se describen las funciones de usuario y cómo configurar los u
 
 ### Autores de contenido de aplicaciones de AEM Mobile (grupo de autores de aplicaciones) {#aem-mobile-application-content-authors-app-author-group}
 
-AEM Los miembros del grupo de creación de aplicaciones son responsables de la creación de contenido de aplicaciones móviles, incluido contenido de aplicaciones móviles, páginas, texto, imágenes y vídeos.
+Los miembros del grupo de autores de aplicaciones son responsables de la creación de contenido de aplicaciones móviles de AEM, como páginas, textos, imágenes y vídeos.
 
 #### Configuración de grupo: app-authors {#group-configuration-app-authors}
 
 1. Cree un grupo de usuarios llamado &quot;autores de aplicaciones&quot;:
 
-   Vaya al Admin Console de usuario: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Vaya a la Admin Console de usuario: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    En la consola de grupos de usuarios, seleccione el botón &quot;+&quot; para crear un grupo.
 
-   AEM Establezca el ID de este grupo en &quot;autores de aplicaciones&quot; para indicar que es un tipo específico de grupo de usuarios de autores específico para la creación de aplicaciones móviles dentro de los dispositivos de creación de usuarios de la aplicación de creación de aplicaciones de la aplicación de la aplicación de la aplicación de creación de usuarios de la aplicación de la aplicación de.
+   Establezca el ID de este grupo en &quot;autores de aplicaciones&quot; para indicar que es un tipo específico de grupo de usuarios de creación específico para crear aplicaciones móviles en AEM.
 
 1. Añadir miembro al grupo: Autores
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Ahora que ha creado el grupo de usuarios de autores de aplicaciones, puede agregar integrantes individuales del equipo a este nuevo grupo a través de [Admin Console de usuarios](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Ahora que ha creado el grupo de usuarios de autores de aplicaciones, puede agregar integrantes individuales del equipo a este nuevo grupo a través de [User Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. AEM A continuación, se permite agregar al grupo Autores de contenido de:
+1. Lo siguiente le permite agregar al grupo de autores de contenido de AEM:
 
    (Lectura) el
 
@@ -63,7 +61,7 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 
 >[!NOTE]
 >
->AEM Los permisos determinan la disponibilidad de algunas acciones del usuario en el Centro de comandos de la aplicación de.
+>Los permisos determinan la disponibilidad de algunas acciones del usuario en el Centro de comandos de la aplicación de AEM.
 >
 >Tenga en cuenta que algunas opciones no están disponibles para los autores de aplicaciones que están disponibles para los administradores de aplicaciones.
 
@@ -79,7 +77,7 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 
    >[!NOTE]
    >
-   >los usuarios del flujo de trabajo deben realizar la compilación remota con el servicio de PhoneGap Build
+   >Los usuarios de flujo de trabajo deben realizar la compilación remota con el servicio PhoneGap Build
 
 1. Vaya a la consola [Permisos](http://localhost:4502/useradmin) y agregue permisos para administrar cloudservices
 
@@ -111,5 +109,5 @@ Los miembros del grupo de administradores de aplicaciones pueden crear contenido
 
 Para obtener más información sobre las otras dos funciones y responsabilidades a la hora de crear una aplicación de AEM Mobile On-demand Services, consulte los siguientes recursos:
 
-* [AEM Desarrollo de contenido para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [AEM Creación de contenido de la aplicación de para AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+* [Desarrollo del contenido de AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Creación de contenido de AEM para la aplicación de AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

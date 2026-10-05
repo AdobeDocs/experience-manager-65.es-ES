@@ -1,6 +1,6 @@
 ---
 title: Diseños y Designer
-description: AEM Aprenda a crear un diseño para su sitio web y a crear un diseño en mediante el uso de Designer.
+description: Aprenda a crear un diseño para su sitio web y en AEM mediante Designer.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -11,22 +11,20 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
-
+source-wordcount: '359'
+ht-degree: 1%
 ---
-
 # Diseños y Designer{#designs-and-the-designer}
 
 >[!CAUTION]
 >
->Este artículo describe cómo crear un sitio web basado en la IU clásica. El Adobe AEM recomienda usar las últimas tecnologías de la para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md).
+>Este artículo describe cómo crear un sitio web basado en la IU clásica. Adobe recomienda usar las últimas tecnologías de AEM para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md).
 
-El Designer AEM se usa para crear un diseño para tu sitio web usando la [IU clásica](/help/release-notes/touch-ui-features-status.md) en la interfaz de usuario de la aplicación .
+Designer se usa para crear un diseño para tu sitio web usando la [IU clásica](/help/release-notes/touch-ui-features-status.md) en AEM.
 
 >[!NOTE]
 >
->AEM Para obtener más información acerca de la accesibilidad Web, vea [y las Directrices de accesibilidad Web](/help/managing/web-accessibility.md).
+>Para obtener más información acerca de la accesibilidad web, vea [AEM y las Directrices de accesibilidad web](/help/managing/web-accessibility.md).
 
 ## Uso de Designer {#using-the-designer}
 
@@ -44,7 +42,7 @@ Los diseños se almacenan en `/apps/<your-project>`. La ruta de acceso al diseñ
 >
 >Todos los cambios realizados en una página en modo de diseño se mantienen debajo del nodo de diseño del sitio y se aplican automáticamente a todas las páginas que tienen el mismo diseño.
 
-## Lo que necesita {#what-you-will-need}
+## Lo que necesitará {#what-you-will-need}
 
 Para realizar su diseño necesitará:
 
