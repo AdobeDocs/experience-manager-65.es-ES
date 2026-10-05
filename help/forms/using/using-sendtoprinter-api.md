@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '362'
 ht-degree: 100%
-
 ---
-
 # Usar la API sendToPrinter {#using-the-sendtoprinter-api}
 
 ## Información general {#overview}
@@ -27,11 +25,11 @@ En AEM Forms, puede utilizar el servicio SendToPrinter para enviar un documento 
 
   Cuando envíe un documento a una impresora, especifique uno de estos protocolos de impresión:
 
-   * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
-   * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIFS**: El Servicio de salida es compatible con el protocolo de impresión del Sistema común de archivos de Internet (CIFS).
+  * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
+  * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+  * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+  * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
+  * **CIFS**: El Servicio de salida es compatible con el protocolo de impresión del Sistema común de archivos de Internet (CIFS).
 
 ## Uso del servicio SendToPrinter {#using-sendtoprinter-service}
 

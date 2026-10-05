@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 1%
-
+source-wordcount: '831'
+ht-degree: 2%
 ---
-
 # Explicar los procesos de AEM Forms {#understanding-aem-forms-processes}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -50,9 +48,9 @@ La siguiente ilustración es un ejemplo de un proceso de corta duración denomin
 
 Cuando se invoca este proceso de corta duración, realiza las siguientes acciones:
 
-1. Obtiene el documento de PDF no protegido que se pasa al proceso como un valor de entrada.
-1. Cifra el documento del PDF con una contraseña. El nombre del parámetro de entrada para este proceso es `inDoc` y el tipo de datos es document.
-1. Guarda el documento de PDF cifrado con contraseña como un archivo de PDF en el sistema de archivos local. Este proceso devuelve el documento PDF cifrado como un valor de salida. El nombre del parámetro de salida para este proceso es `outDoc` y el tipo de datos es document.
+1. Obtiene el documento de PDF no protegido que se pasa al proceso como valor de entrada.
+1. Cifra el documento de PDF con una contraseña. El nombre del parámetro de entrada para este proceso es `inDoc` y el tipo de datos es document.
+1. Guarda el documento de PDF cifrado con contraseña como un archivo PDF en el sistema de archivos local. Este proceso devuelve el documento de PDF cifrado como un valor de salida. El nombre del parámetro de salida para este proceso es `outDoc` y el tipo de datos es document.
 
    Este proceso se completa sincrónicamente en el mismo subproceso de ejecución desde el que se invocó. El nombre de este proceso de corta duración es `MyApplication/EncryptDocument` y su operación es `invoke`.
 
@@ -60,7 +58,7 @@ Cuando se invoca este proceso de corta duración, realiza las siguientes accione
    >
    >Normalmente, un proceso de corta duración consta de más de tres acciones. Puede crear un proceso mediante Workbench. (Consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)).
 
-   AEM *Programar con formularios de* describe las siguientes maneras de invocar mediante programación este proceso de corta duración:
+   *La programación con formularios AEM Forms* describe las siguientes maneras de invocar mediante programación este proceso de corta duración:
 
    * [Invocación de un proceso de corta duración al pasar un documento no seguro mediante AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (mediante una aplicación de Flex)
    * [Invocación de un proceso de corta duración mediante la API de invocación](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API de invocación de Java™)

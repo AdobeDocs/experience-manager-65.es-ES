@@ -1,21 +1,24 @@
 ---
 title: Consideraciones generales de seguridad para AEM Forms en JEE
+
 description: Aprenda a prepararse para proteger AEM Forms en un entorno JEE.
+
+
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
+
 docset: aem65
+
 role: Admin,User
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1135'
 ht-degree: 82%
-
 ---
-
 # Consideraciones generales de seguridad para AEM Forms en JEE{#general-security-considerations-for-aem-forms-on-jee}
 
 Este artículo proporciona información introductoria que le ayudará a prepararse para proteger su entorno de AEM Forms. Incluye información sobre los requisitos previos de AEM Forms en JEE, el sistema operativo, el servidor de aplicaciones y la seguridad de la base de datos. Revise esta información antes de seguir bloqueando el entorno.

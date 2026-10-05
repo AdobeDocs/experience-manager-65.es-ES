@@ -1,21 +1,23 @@
 ---
 title: Crear y administrar directivas
-description: Una directiva es un conjunto de configuraciones de confidencialidad y usuarios que pueden acceder a un documento al que se aplica. AEM Puede crear y administrar varios tipos de directivas mediante formularios en forma de.
+
+description: Una directiva es un conjunto de configuraciones de confidencialidad y usuarios que pueden acceder a un documento al que se aplica. Puede crear y administrar varios tipos de directivas mediante formularios AEM Forms.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '4725'
+source-wordcount: '4769'
 ht-degree: 0%
-
 ---
-
 # Crear y administrar directivas {#creating-and-managing-policies}
 
 >[!NOTE]
@@ -166,29 +168,29 @@ La pestaña Permisos y opciones se muestra en Document Security.
 
 Estos permisos de documento están disponibles en la pestaña Permisos. Puede aplicar estos permisos a archivos de PDF, PTC Pro/E y Microsoft Office.
 
-**Imprimir:** permite al usuario imprimir un documento protegido por esta directiva. Para los archivos de Office y Pro/E, puede activar la casilla de verificación Imprimir para permitir la impresión o desactivarla para evitar la impresión. Si activa la casilla de verificación Mostrar permisos personalizados para el PDF, puede seleccionar una de estas opciones:
+**Imprimir:** permite al usuario imprimir un documento protegido por esta directiva. Para los archivos de Office y Pro/E, puede activar la casilla de verificación Imprimir para permitir la impresión o desactivarla para evitar la impresión. Si activa la casilla de verificación Mostrar permisos personalizados para PDF, puede seleccionar una de estas opciones:
 
-**No permitido:** El usuario no tiene permiso para imprimir el PDF.
+**No permitido:** El usuario no tiene permiso para imprimir PDF.
 
 **Permitido:** El usuario tiene permiso para imprimir el PDF.
 
-**Baja resolución. Solamente:** El usuario puede imprimir el PDF a baja resolución.
+**Baja resolución. Solamente:** El usuario tiene permiso para imprimir el PDF en baja resolución.
 
-**Modificar:** Permite al usuario modificar un documento protegido con esta directiva. Para los archivos de Office y Pro/E, puede activar la casilla de verificación Modificar para permitir modificaciones o desactivarla para evitar modificaciones. Si activa la casilla de verificación Mostrar permisos personalizados para el PDF, puede seleccionar una de estas opciones:
+**Modificar:** Permite al usuario modificar un documento protegido con esta directiva. Para los archivos de Office y Pro/E, puede activar la casilla de verificación Modificar para permitir modificaciones o desactivarla para evitar modificaciones. Si activa la casilla de verificación Mostrar permisos personalizados para PDF, puede seleccionar una de estas opciones:
 
-**No permitido:** El usuario no tiene permiso para modificar el PDF.
+**No permitido:** El usuario no tiene permiso para modificar PDF.
 
 **Cualquiera:** El usuario puede modificar el PDF.
 
 **Colaborar:** El usuario puede colaborar con otros usuarios mediante las opciones de Colaborar de Adobe Acrobat. Este permiso permite al usuario copiar datos de formulario incluso si el permiso de copia no se proporciona explícitamente en la directiva.
 
-**Modificar páginas:** El usuario tiene permiso para agregar y quitar páginas y editar contenido en el PDF.
+**Modificar páginas:** El usuario tiene permiso para agregar y quitar páginas y editar contenido en PDF.
 
-**Fill &amp; Sign:** El usuario tiene permiso para rellenar campos de formulario en el PDF y firmarlos.
+**Rellenar y firmar:** El usuario tiene permiso para rellenar campos de formulario en PDF y firmarlos.
 
 **Copiar:** permite al usuario copiar texto de un documento protegido por esta directiva.
 
-**Reader de pantalla:** Este permiso se muestra si activa la casilla de verificación Mostrar permisos personalizados para el PDF. Cuando se selecciona esta opción, Adobe Acrobat tiene permiso para agregar etiquetas temporales al PDF para mejorar su legibilidad con un lector de pantalla.
+**Reader de pantalla:** Este permiso se muestra si activa la casilla de verificación Mostrar permisos personalizados para PDF. Cuando se selecciona esta opción, Adobe Acrobat tiene permiso para agregar etiquetas temporales al PDF para mejorar su legibilidad con un lector de pantalla.
 
 Estos permisos de documento están disponibles en la ficha Opciones. Puede aplicar estos permisos a archivos de PDF, PTC Pro/E y Microsoft Office:
 
@@ -226,7 +228,7 @@ El área Configuración general contiene la siguiente configuración:
 >
 >El administrador también debe habilitar la auditoría de servidores en la página Configuración de auditoría y privacidad para que funcione la función de auditoría.
 
-**Seguimiento de uso extendido:** Habilite o deshabilite el seguimiento de uso extendido. La seguridad de los documentos admite el seguimiento de eventos de usuario asociados con varias operaciones realizadas en un archivo de PDF. Se puede acceder al objeto de seguridad del documento mediante un JavaScript. Un clic en un botón, un archivo multimedia que se está reproduciendo o el guardado de un archivo son algunos ejemplos de eventos que se activan desde un PDF protegido por una directiva. Con el objeto Document Security, también puede recuperar información del usuario. El seguimiento de eventos puede habilitarse desde el servidor de Document Security a nivel global o de directiva.
+**Seguimiento de uso extendido:** Habilite o deshabilite el seguimiento de uso extendido. La seguridad de los documentos admite el seguimiento de eventos de usuario asociados con varias operaciones realizadas en un archivo PDF. Se puede acceder al objeto de seguridad del documento mediante un JavaScript. Un clic en un botón, un archivo multimedia que se está reproduciendo o el guardado de un archivo son algunos ejemplos de eventos que se activan desde un PDF protegido por una directiva. Con el objeto Document Security, también puede recuperar información del usuario. El seguimiento de eventos puede habilitarse desde el servidor de Document Security a nivel global o de directiva.
 
 **Período de concesión sin conexión automática:** El número máximo de días que el destinatario puede utilizar el documento sin conexión protegido por directivas (sin una conexión activa a Internet o a la red). Cuando caduca el período de concesión, el destinatario debe sincronizar de nuevo el documento para seguir utilizándolo.
 
@@ -266,9 +268,9 @@ Si está editando una directiva y el administrador eliminó una marca de agua co
 >
 >En el caso de las directivas que proporcionan acceso de usuario anónimo, el nombre de usuario y el identificador de un usuario anónimo no se muestran como una marca de agua aunque seleccione este tipo de marca de agua.
 
-**Usar solo complementos de Acrobat certificados para el PDF:** Si se selecciona para una directiva, esta opción especifica que Acrobat 8.0 y versiones posteriores deben ejecutarse en modo certificado al abrir documentos protegidos con la directiva. Cuando Acrobat se ejecuta en modo certificado, no carga ningún complemento de terceros.
+**Usar solo complementos de Acrobat certificados para PDF:** Si se selecciona esta opción para una directiva, esta opción especifica que Acrobat 8.0 y posterior debe ejecutarse en modo certificado al abrir documentos protegidos con la directiva. Cuando Acrobat se ejecuta en modo certificado, no carga ningún complemento de terceros.
 
-Seleccione esta opción si le preocupa que un destinatario de documentos escriba un complemento que pueda eludir cualquiera de las protecciones de documentos de Acrobat 8.0 y posteriores. No seleccione esta opción si los destinatarios del documento deben utilizar complementos de terceros en Acrobat para interactuar con documentos.
+Seleccione esta opción si le preocupa que un destinatario de documento escriba un complemento que pueda eludir cualquiera de las protecciones de documentos de Acrobat 8.0 y posteriores. No seleccione esta opción si los destinatarios del documento deben utilizar complementos de terceros en Acrobat para interactuar con documentos.
 
 Esta opción solo habilita el modo certificado en Acrobat 8.0 o posterior; el administrador debe deshabilitar el acceso para Acrobat 7.0.
 
@@ -288,11 +290,11 @@ El área Configuración avanzada inmodificable contiene la siguiente configuraci
 * AES de 256 bits. Solo Acrobat 9.0 y versiones posteriores admiten esta opción. Para utilizar el cifrado AES 256 en archivos PDF, obtenga e instale los archivos de política de jurisdicción de fuerza ilimitada de la Extensión de criptografía de Java (JCE). Estos archivos reemplazan los archivos local_policy.jar y US_export_policy.jar en la carpeta [JAVE_HOME]/lib/security. Por ejemplo, si está utilizando Sun JDK 1.6, copie los archivos descargados en la carpeta [dep root]/Java/jdk1.6.0_26/lib/security. Puede descargar estos archivos desde [Descargas de Java SE](https://java.sun.com/javase/downloads/index.jsp).
 * Sin cifrado. Actualmente, Acrobat 9.0 y versiones posteriores admiten esta opción. Si selecciona esta opción, las opciones de Restricciones de documento estarán desactivadas. Esta opción puede resultar útil si desea utilizar Document Security para la auditoría de documentos o el control de versiones, pero no desea cifrar el documento.
 
-**Restricciones de documento:** Seleccione los componentes de documento de PDF que desea cifrar. Otras aplicaciones cliente cifran todo el documento, pero no los archivos vinculados o incrustados. Puede elegir entre estas opciones:
+**Restricciones de documentos:** Seleccione los componentes de documentos de PDF que desea cifrar. Otras aplicaciones cliente cifran todo el documento, pero no los archivos vinculados o incrustados. Puede elegir entre estas opciones:
 
-* Todo el documento, incluidos los archivos adjuntos y metadatos. *Metadatos* es información sobre el documento y su contenido que puede ver a través del cuadro de diálogo Propiedades del documento o del menú Avanzado de Acrobat. En Acrobat, puede adjuntar archivos de distintos tipos (por ejemplo, archivos de texto, audio y vídeo) a documentos de PDF.
+* Todo el documento, incluidos los archivos adjuntos y metadatos. *Metadatos* es información sobre el documento y su contenido que puede ver a través del cuadro de diálogo Propiedades del documento o del menú Avanzado de Acrobat. En Acrobat, puede adjuntar archivos de diferentes tipos (por ejemplo, archivos de texto, audio y vídeo) a documentos de PDF.
 * El documento y sus archivos adjuntos, pero no los metadatos.
-* Sólo los documentos adjuntos. Puede cifrar los archivos adjuntos en un archivo de PDF sin cifrar el contenido del documento.
+* Sólo los documentos adjuntos. Puede cifrar los archivos adjuntos en un archivo PDF sin cifrar el contenido del documento.
 
 ## Habilitar o deshabilitar directivas compartidas {#enable-or-disable-shared-policies}
 
