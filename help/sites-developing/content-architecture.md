@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '425'
 ht-degree: 0%
-
 ---
-
 # Arquitectura de contenido{#content-architecture}
 
 ## Seguir el modelo de David {#follow-david-s-model}
@@ -46,22 +44,22 @@ Los servlets deben definirse en función de resourceTypes en lugar de rutas. Est
 
 ### Evite definir nuevos tipos de nodo {#avoid-defining-new-node-types}
 
-Los tipos de nodo funcionan en un nivel bajo en la capa de infraestructura y la mayoría de los requisitos se pueden cumplir mediante un tipo de nodo sling:resourceType asignado a un tipo de nodo nt:unstructured, oak:Unstructured, sling:Folder o cq:Page. Los tipos de nodo equivalen al esquema en el repositorio y cambiar los tipos de nodo puede resultar caro en el futuro.
+Los tipos de nodo funcionan en un nivel bajo en la capa de infraestructura y la mayoría de los requisitos se pueden cumplir usando un tipo de nodo sling:resourceType asignado a nt:unstructured, oak:Unstructured, sling:Folder o cq:Page. Los tipos de nodo equivalen al esquema en el repositorio y cambiar los tipos de nodo puede resultar caro en el futuro.
 
 ### Respetar las convenciones de nomenclatura en JCR. {#adhere-to-naming-conventions-in-the-jcr}
 
-El cumplimiento de las convenciones de nomenclatura agrega coherencia a la base de código, reduciendo la tasa de incidencia de defectos y aumentando la velocidad de los desarrolladores que trabajan en el sistema. El Adobe AEM utiliza las siguientes convenciones para desarrollar la:
+El cumplimiento de las convenciones de nomenclatura agrega coherencia a la base de código, reduciendo la tasa de incidencia de defectos y aumentando la velocidad de los desarrolladores que trabajan en el sistema. Adobe utiliza las siguientes convenciones para desarrollar AEM:
 
 * Nombres de nodo
 
-   * Todas las minúsculas
-   * Separación de palabras mediante guiones
+  * Todas las minúsculas
+  * Separación de palabras mediante guiones
 
 * Nombres de propiedades
 
-   * Mayúsculas y minúsculas, a partir de una letra minúscula
+  * Mayúsculas y minúsculas, a partir de una letra minúscula
 
 * Componentes (JSP/HTML)
 
-   * Todas las minúsculas
-   * Separación de palabras mediante guiones
+  * Todas las minúsculas
+  * Separación de palabras mediante guiones

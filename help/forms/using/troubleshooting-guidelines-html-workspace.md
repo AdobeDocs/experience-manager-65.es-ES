@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 94%
-
+source-wordcount: '788'
+ht-degree: 90%
 ---
-
 # Directrices para la resolución de problemas de AEM Forms Workspace {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 Este artículo explica cómo depurar AEM Forms Workspace habilitando el registro y utilizando el depurador en un explorador. También se explican algunos problemas comunes que se pueden encontrar al utilizar AEM Forms Workspace y sus soluciones.
@@ -26,14 +24,14 @@ Tras instalar el parche, abra AEM Forms Workspace. Si experimenta el error No se
 
 Al instalar el paquete, si se produce un error `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, realice los pasos siguientes:
 
-1. Inicie sesión en el CRXDE Lite. La URL predeterminada es `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Inicie sesión en CRXDE Lite. La URL predeterminada es `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Elimine el siguiente nodo:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
 1. Vaya al Administrador de paquetes. La URL predeterminada es `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Busque e instale el paquete `adobe-lc-workspace-pkg-[version].zip`.
-1. Reinicie el servidor de la aplicación.
+1. Reinicie el servidor de aplicaciones.
 
 >[!NOTE]
 >

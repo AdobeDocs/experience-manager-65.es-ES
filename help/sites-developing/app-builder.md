@@ -1,17 +1,15 @@
 ---
-title: Ampliación de  [!DNL Adobe Experience Manager] 6.5 mediante Adobe Developer App Builder.
-description: Ampliación de  [!DNL Adobe Experience Manager] 6.5 mediante Adobe Developer App Builder.
+title: Ampliación de [!DNL Adobe Experience Manager] 6.5 mediante Adobe Developer App Builder.
+description: Ampliación de [!DNL Adobe Experience Manager] 6.5 mediante Adobe Developer App Builder.
 exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '528'
 ht-degree: 0%
-
 ---
-
 # Ampliar [!DNL Adobe Experience Manager] mediante Adobe Developer App Builder {#extend-using-app-builder}
 
 ## Qué es App Builder para AEM {#project-appbuilder}

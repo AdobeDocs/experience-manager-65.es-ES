@@ -1,21 +1,23 @@
 ---
 title: Carga de recursos compartidos
+
 description: Las acciones de Content Management son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Siga esta página para obtener más información sobre la carga de recursos compartidos.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
+
 exl-id: 4b3acc7c-f1f7-4837-ae3a-9435d6ce1349
 solution: Experience Manager
 feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # Carga de recursos compartidos {#uploading-shared-resources}
 
 {{ue-over-mobile}}
@@ -24,7 +26,7 @@ Las acciones de Content Management son los componentes básicos que ayudan a cre
 
 >[!NOTE]
 >
->Para obtener más información sobre las consideraciones de diseño de las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño de las aplicaciones de AEM Mobile](https://helpx.adobe.com/es/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
+>Para obtener más información sobre las consideraciones de diseño de las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño de las aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
 
 >[!CAUTION]
 >
@@ -51,9 +53,9 @@ Siga estos pasos para cargar los recursos compartidos de un artículo:
 
 Una vez que haya aprendido a crear y publicar contenido, consulte
 
-* [AEM Desarrollo de contenido para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Desarrollo del contenido de AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 O bien, todavía tiene que aprender acerca de los temas de creación. Consulte
 
-[AEM Creación de contenido de la para aplicaciones AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+[Creación de contenido de AEM para aplicaciones de AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

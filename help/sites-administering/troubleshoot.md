@@ -1,10 +1,14 @@
 ---
 title: Solución de problemas de Adobe Experience Manager
+
 description: Obtenga información sobre la resolución de algunos problemas que pueden surgir con Adobe Experience Manager.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
+
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +16,9 @@ feature: Administering
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 2%
-
+source-wordcount: '553'
+ht-degree: 1%
 ---
-
 # Solución de problemas de Adobe Experience Manager {#troubleshooting-aem}
 
 La siguiente sección trata algunos problemas que pueden producirse al utilizar AEM (Adobe Experience Manager), así como sugerencias para solucionarlos.
@@ -108,7 +110,7 @@ Consulte la documentación de [Cómo tomar volcados de procesos de una JVM](http
 Cuando la funcionalidad está desarrollada para AEM WCM, se pueden abrir sesiones JCR (comparables a la apertura de una conexión a base de datos). Si las sesiones abiertas nunca se cierran, su sistema puede experimentar los siguientes síntomas:
 
 * El sistema se vuelve más lento.
-* Puede ver gran parte de CacheManager: resizeAll entradas en el archivo de registro; el siguiente número (size=&lt;x>) muestra el número de cachés, cada sesión abre varias cachés.
+* Puede ver gran parte de las entradas de CacheManager: resizeAll en el archivo de registro; el siguiente número (size=&lt;x>) shows the number of caches, each session opens several caches.
 * De vez en cuando, el sistema se queda sin memoria (después de unas pocas horas, días o semanas, según la gravedad).
 
 Para empezar a analizar las sesiones no cerradas, consulte el artículo de Knowledge Base [Unclosed Resource Resolver](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-23761).

@@ -1,21 +1,23 @@
 ---
 title: Uso del entorno de creación
+
 description: El entorno de creación permite realizar tareas relacionadas con la creación (incluida la creación de páginas y la administración de recursos) y las tareas de administración que necesite al generar y mantener el contenido del sitio web.
+
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
+
 exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 0%
-
+source-wordcount: '256'
+ht-degree: 7%
 ---
-
 # Uso del entorno de creación{#working-with-the-author-environment}
 
 >[!NOTE]
@@ -32,7 +34,7 @@ Se proporcionan dos interfaces gráficas de usuario para conseguirlo, a las que 
 
 1. IU clásica
 
-   * AEM Esta interfaz de usuario siempre ha estado disponible en la interfaz de usuario de durante muchos años.
+   * Esta interfaz de usuario siempre ha estado disponible en AEM durante muchos años.
    * Es predominantemente verde.
    * Fue diseñado para su uso en dispositivos de escritorio.
    * Ya no se mantiene.
@@ -42,7 +44,7 @@ Se proporcionan dos interfaces gráficas de usuario para conseguirlo, a las que 
 
 1. IU táctil.
 
-   * AEM Esta es la interfaz de usuario moderna y estándar de la interfaz de usuario de la.
+   * Esta es la interfaz de usuario moderna y estándar de AEM.
    * Es predominantemente gris, con una interfaz limpia y plana.
    * Está diseñado para su uso tanto en dispositivos táctiles como de escritorio (optimizado para el tacto). El aspecto es el mismo en todos los dispositivos, aunque [ver y seleccionar tus recursos](/help/sites-authoring/basic-handling.md) difiere un poco (se puede tocar o hacer clic).
    * Consulte la [documentación de creación estándar](/help/sites-authoring/author.md) para obtener más información sobre cómo crear contenido mediante la interfaz de usuario táctil. La siguiente documentación se centra en la IU clásica.

@@ -1,21 +1,23 @@
 ---
 title: Entregar información segura de gran volumen
+
 description: La seguridad de los documentos admite la asociación de licencias a usuarios, en lugar de a documentos en entornos de producción masiva.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 2%
-
+source-wordcount: '326'
+ht-degree: 4%
 ---
-
 # Entregar información segura de gran volumen {#high-volume-secure-information-delivery}
 
 En un entorno de producción masiva, como el que genera facturas mensuales seguras para una empresa de telecomunicaciones, la creación de licencias específicas para cada documento puede convertirse en un proceso que requiera muchos recursos. En estos casos, Document Security admite la asociación de licencias a usuarios, en lugar de a documentos. La licencia generada para un usuario se utiliza para todos los documentos protegidos para ese usuario.
@@ -26,6 +28,6 @@ La seguridad de los documentos también admite directivas abstractas. Las direct
 
 Si una empresa de telecomunicaciones genera una factura mensual, se crea una directiva abstracta, se crean usuarios y, a continuación, se generan licencias únicas para cada usuario. Las licencias se aplican posteriormente a los documentos de cada usuario.
 
-La creación de una directiva abstracta solo se admite mediante el SDK de Java de seguridad de documentos. Sin embargo, puede administrar las directivas que cree a partir de la directiva abstracta de las páginas web de Document Security. Las directivas creadas con este método tienen un comportamiento idéntico al de las páginas web de Document Security.
+La creación de una política abstracta solo es compatible mediante la seguridad de los documentos Java SDK. Sin embargo, puede administrar las directivas que cree a partir de la directiva abstracta de las páginas web de Document Security. Las directivas creadas con este método tienen un comportamiento idéntico al de las páginas web de Document Security.
 
-AEM Consulte [Programación con formularios de la lista de distribución](https://www.adobe.com/go/learn_aemforms_programming_63) para obtener más información.
+Consulte [Programar con formularios AEM](https://www.adobe.com/go/learn_aemforms_programming_63) para obtener más información.

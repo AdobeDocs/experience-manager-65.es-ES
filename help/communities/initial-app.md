@@ -11,11 +11,9 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '637'
 ht-degree: 1%
-
 ---
-
 # Aplicación de zona protegida inicial {#initial-sandbox-application}
 
 En esta sección, cree lo siguiente:
@@ -29,7 +27,7 @@ Una plantilla define el contenido predeterminado de una nueva página. Los sitio
 
 En este ejercicio, todas las páginas se basan en una plantilla simple.
 
-1. En el panel del explorador del CRXDE Lite:
+1. En el panel del explorador de CRXDE Lite:
 
    * Seleccionar `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Crear]** > **[!UICONTROL Crear plantilla]**
@@ -86,7 +84,7 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
 
 Cree el *componente* que define el contenido y procesa cualquier página creada en función de la [plantilla playpage](#createthepagetemplate).
 
-1. En el CRXDE Lite, haga clic con el botón secundario en **`/apps/an-scf-sandbox/components`** y haga clic en **[!UICONTROL Crear > Componente]**.
+1. En CRXDE Lite, haga clic con el botón derecho en **`/apps/an-scf-sandbox/components`** y haga clic en **[!UICONTROL Crear > Componente]**.
 1. Al establecer el nombre del nodo (Label) en *playpage*, la ruta al componente es
 
    `/apps/an-scf-sandbox/components/playpage`

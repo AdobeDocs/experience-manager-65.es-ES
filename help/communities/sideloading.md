@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '402'
 ht-degree: 0%
-
 ---
-
 # Descarga de componentes {#component-sideloading}
 
 ## Información general {#overview}
@@ -35,9 +33,9 @@ Los pasos para añadir dinámicamente componentes de SCF son los siguientes:
 1. [Descarga el componente](#sideload-by-invoking-scf) mediante uno de los dos métodos siguientes:
 
 * [Inclusión dinámica](#dynamic-inclusion)
-   * Reactivar todos los componentes añadidos dinámicamente
+  * Reactivar todos los componentes añadidos dinámicamente
 * [Carga dinámica](#dynamic-loading)
-   * Añadir un componente específico bajo demanda
+  * Añadir un componente específico bajo demanda
 
 >[!NOTE]
 >

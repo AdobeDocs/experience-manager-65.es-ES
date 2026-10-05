@@ -1,5 +1,5 @@
 ---
-title: Evaluación de la complejidad de la actualización con Pattern Detector
+title: Evaluación de la complejidad de la actualización con el detector de patrones
 description: Aprenda a utilizar Pattern Detector para evaluar la complejidad de la actualización.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,25 +12,23 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
-
+source-wordcount: '532'
+ht-degree: 4%
 ---
-
-# Evaluación de la complejidad de la actualización con Pattern Detector
+# Evaluación de la complejidad de la actualización con el detector de patrones
 
 ## Información general {#overview}
 
-AEM Esta función le permite comprobar la posibilidad de actualización de las instancias de existentes mediante la detección de patrones en uso que:
+Esta función le permite comprobar las instancias de AEM existentes para ver si se pueden actualizar detectando patrones en uso que:
 
 1. Infringen ciertas reglas y se realizan en áreas que se verán afectadas o sobrescritas por la actualización
-1. AEM AEM Utilice una función de 6.x o una API que no sea compatible con versiones anteriores en la versión 6.5 y que pueda romperse después de la actualización.
+1. Utilice una función de AEM 6.x o una API que no sea compatible con versiones anteriores en AEM 6.5 y que pueda romperse después de la actualización.
 
-AEM Esto podría servir como evaluación de las actividades de desarrollo que se realizan para pasar a la categoría de 6,5 en el caso de los países en desarrollo, que son los que están en la fase de desarrollo, que es la de la.
+Esto podría servir para evaluar las actividades de desarrollo que se realizan para actualizar a AEM 6.5.
 
 ## Configuración {#how-to-set-up}
 
-AEM AEM Pattern Detector se presenta por separado como [un paquete](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona en cualquier versión de origen desde la versión 6.1 a la versión 6.5, con objetivo de actualización a la versión 6.5 de la versión 6.1000000000000000000000000000000000000000000000. Se puede instalar usando el [Administrador de paquetes](/help/sites-administering/package-manager.md).
+Pattern Detector se presenta por separado como [un paquete](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona en cualquier versión de AEM de origen desde la versión 6.1 a la 6.5 con la actualización a AEM 6.5 como objetivo. Se puede instalar usando el [Administrador de paquetes](/help/sites-administering/package-manager.md).
 
 ## Usos {#how-to-use}
 
@@ -47,7 +45,7 @@ Puede utilizar varios métodos para comprobar el resultado de Pattern Detector:
 
 * **A través de la consola Felix Inventory:**
 
-1. AEM Vaya a la consola web de la navegando a *https://serveraddress:serverport/system/console/configMgr*
+1. Vaya a la consola web de AEM y navegue hasta *https://serveraddress:serverport/system/console/configMgr*
 1. Seleccione **Estado - Detector de patrones** como se muestra en la siguiente imagen:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
@@ -218,7 +216,7 @@ Actualmente, Pattern Detector permite comprobar lo siguiente:
 * Sobreutilización de tipos de recursos y supertipos de Sling (con superposiciones de contenido de ruta de búsqueda)
 * definiciones de índices Oak (compatibilidad)
 * Paquetes VLT (uso excesivo)
-* rep: Compatibilidad de nodos de usuario (en el contexto de la configuración de OAuth)
+* compatibilidad de nodos rep:User (en el contexto de la configuración de OAuth)
 
 >[!NOTE]
 >

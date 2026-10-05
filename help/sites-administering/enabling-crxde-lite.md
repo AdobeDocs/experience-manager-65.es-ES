@@ -1,5 +1,5 @@
 ---
-title: Activación del CRXDE Lite AEM en la
+title: Habilitación de CRXDE Lite en AEM
 description: Obtenga información sobre cómo habilitar CRXDE Lite en Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,17 +12,15 @@ role: Admin
 source-git-commit: a3587d248569982a8f9b137602ba95dd40c47012
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 0%
-
+ht-degree: 6%
 ---
+# Habilitación de CRXDE Lite en AEM{#enabling-crxde-lite-in-aem}
 
-# Activación del CRXDE Lite AEM en la{#enabling-crxde-lite-in-aem}
+Para garantizar que las instalaciones de AEM sean lo más seguras posible, la lista de comprobación de seguridad recomienda [deshabilitar WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) en entornos de producción.
 
-AEM Para asegurarse de que las instalaciones de la son lo más seguras posible, la lista de comprobación de seguridad recomienda [deshabilitar WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) en entornos de producción.
+Sin embargo, CRXDE Lite depende del paquete `org.apache.sling.jcr.davex` para funcionar correctamente, por lo que al deshabilitar WebDAV también se deshabilitará CRXDE Lite.
 
-Sin embargo, el CRXDE Lite depende del paquete `org.apache.sling.jcr.davex` para funcionar correctamente, por lo que al deshabilitar WebDAV también se deshabilitará el CRXDE Lite.
-
-Cuando esto sucede, al examinar `https://serveraddress:4502/crx/de/index.jsp` se muestra un nodo raíz vacío, y todas las solicitudes HTTP a los recursos del CRXDE Lite producirán un error:
+Cuando esto sucede, al examinar `https://serveraddress:4502/crx/de/index.jsp` se muestra un nodo raíz vacío, y todas las solicitudes HTTP a los recursos de CRXDE Lite producirán un error:
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
@@ -30,7 +28,7 @@ Cuando esto sucede, al examinar `https://serveraddress:4502/crx/de/index.jsp` se
 
 Aunque esta recomendación pretende reducir las superficies de ataque en la medida de lo posible, los administradores del sistema a veces pueden necesitar acceso a CRXDE Lite para examinar el contenido o depurar problemas en instancias de producción.
 
-Puede habilitar el CRXDE Lite con [configuración OSGi](#enabling-crxde-lite-osgi) o con un [comando cURL](#enabling-crxde-lite-curl).
+Puede habilitar CRXDE Lite con [configuración OSGi](#enabling-crxde-lite-osgi) o con un [comando cURL](#enabling-crxde-lite-curl).
 
 >[!WARNING]
 >
@@ -38,9 +36,9 @@ Puede habilitar el CRXDE Lite con [configuración OSGi](#enabling-crxde-lite-osg
 >
 >Los dos métodos son ***no*** intercambiables.
 
-## Habilitar el CRXDE Lite con OSGI {#enabling-crxde-lite-osgi}
+## Habilitar CRXDE Lite con OSGI {#enabling-crxde-lite-osgi}
 
-Si está desactivado, puede activar el CRXDE Lite siguiendo el siguiente procedimiento:
+Si está desactivado, puede activar CRXDE Lite siguiendo el siguiente procedimiento:
 
 1. Vaya a la consola Componentes de OSGi en `http://localhost:4502/system/console/components`
 1. Busque el siguiente componente:
@@ -58,7 +56,7 @@ Si está desactivado, puede activar el CRXDE Lite siguiendo el siguiente procedi
 
 1. Cuando termine de usar CRXDE Lite, asegúrese de volver a deshabilitar WebDAV.
 
-## Habilitar el CRXDE Lite con cURL {#enabling-crxde-lite-curl}
+## Habilitar CRXDE Lite con cURL {#enabling-crxde-lite-curl}
 
 También puede habilitar CRXDE Lite mediante cURL ejecutando (ambos) estos dos comandos:
 
@@ -76,7 +74,7 @@ También puede habilitar CRXDE Lite mediante cURL ejecutando (ambos) estos dos c
 
 ## Otros recursos {#other-resources}
 
-AEM Para obtener más información sobre las funciones de seguridad de la versión 6 de la aplicación, consulte las páginas siguientes:
+Para obtener más información sobre las funciones de seguridad de AEM 6, consulte las siguientes páginas:
 
-* [AEM La lista de comprobación de seguridad](/help/sites-administering/security-checklist.md)
-* [AEM Ejecución en modo listo para la producción](/help/sites-administering/production-ready.md)
+* [La lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
+* [Ejecución de AEM en el modo listo para la producción](/help/sites-administering/production-ready.md)

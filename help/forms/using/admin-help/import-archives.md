@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1457'
 ht-degree: 0%
-
 ---
-
 # Importar y administrar archivos {#import-and-manage-archives}
 
 >[!NOTE]
@@ -31,7 +29,7 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 1. Haga clic en Examinar para buscar el archivo que desea importar y, a continuación, haga clic en Vista previa.
 1. Revise la lista de recursos y objetos que se instalarán con el archivo. Asegúrese de que no haya conflictos con los recursos, objetos y configuraciones de servicio existentes porque no hay capacidad de deshacer disponible.
 
-   AEM Si selecciona importar las configuraciones del servicio, los formularios de datos de la aplicación importan todos los archivos de configuración del proceso (extremos, perfiles de seguridad y parámetros de configuración del servicio) utilizados por los procesos en el LCA.
+   Si selecciona importar las configuraciones del servicio, AEM Forms importará todos los archivos de configuración de proceso (extremos, perfiles de seguridad y parámetros de configuración de servicio) utilizados por los procesos en el LCA.
 
 1. Haga clic en Importar.
 1. Revise los resultados de la importación y haga clic en Omitir configuración para finalizar el proceso de importación o haga clic en Configurar para configurar el archivo.
@@ -47,7 +45,7 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
    * Para agregar un punto final de carpeta inspeccionada, haga clic en Agregar carpeta inspeccionada. Para obtener más información acerca de la configuración de la carpeta inspeccionada, consulte [Configuración del extremo de la carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Para añadir un extremo de correo electrónico, haga clic en Añadir correo electrónico. Para obtener más información acerca de la configuración de correo electrónico, consulte [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para agregar un extremo de EJB, haga clic en Agregar EJB y especifique un nombre y una descripción para el extremo.
-   * SOAP SOAP Para agregar un punto final de, haga clic en Agregar y especifique un nombre y una descripción para el punto final.
+   * Para agregar un extremo de SOAP, haga clic en Agregar SOAP y especifique un nombre y una descripción para el extremo.
    * Para agregar un extremo Remoting, haga clic en Agregar Remoting. Para obtener detalles acerca de la configuración de Remoting, consulte [Configuración de extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para agregar un extremo REST, haga clic en Agregar REST y especifique un nombre y una descripción para el extremo. Tenga en cuenta la URL de invocación de REST que se muestra en la página Agregar extremo de REST.
    * Para quitar un extremo, seleccione la casilla que hay junto a él y haga clic en Quitar.
@@ -96,14 +94,14 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
 
 1. Haga clic en Finalizado para completar la configuración.
 
-## AEM Configurar los formularios de la que forman parte de un archivo {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Configurar los formularios de AEM que forman parte de un archivo {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de aplicaciones y, a continuación, haga clic en la pestaña de archivos.
 1. En la página Administración de archivos, seleccione el archivo que desea configurar.
 1. En la página Ver archivo, seleccione el recurso de archivo resaltado.
 1. Configure el archivo de proceso importado.
 
-## AEM Utilice el asistente de configuración para configurar los formularios de que forman parte de un archivo de almacenamiento {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Utilice el asistente de configuración para configurar los formularios de AEM que forman parte de un archivo {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de aplicaciones y, a continuación, haga clic en la pestaña de archivos.
 1. Haga clic en Configurar junto al archivo para configurarlo.
@@ -114,7 +112,7 @@ Utilice la pestaña de archivos para importar y administrar los LCA creados en W
    * Para agregar un punto final de carpeta inspeccionada, haga clic en Agregar carpeta inspeccionada. Para obtener más información acerca de la configuración de la carpeta inspeccionada, consulte [Configuración del extremo de la carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Para añadir un extremo de correo electrónico, haga clic en Añadir correo electrónico. Para obtener más información acerca de la configuración de correo electrónico, consulte [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para agregar un extremo de EJB, haga clic en Agregar EJB y especifique un nombre y una descripción para el extremo.
-   * SOAP SOAP Para agregar un punto final de, haga clic en Agregar y especifique un nombre y una descripción para el punto final.
+   * Para agregar un extremo de SOAP, haga clic en Agregar SOAP y especifique un nombre y una descripción para el extremo.
    * Para agregar un extremo Remoting, haga clic en Agregar Remoting. Para obtener detalles acerca de la configuración de Remoting, consulte [Configuración de extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para agregar un extremo REST, haga clic en Agregar REST y especifique un nombre y una descripción para el extremo. Tenga en cuenta la URL de invocación de REST que se muestra en la página Agregar extremo de REST.
    * Para quitar un extremo, seleccione la casilla que hay junto a él y haga clic en Quitar.

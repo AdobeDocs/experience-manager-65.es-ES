@@ -7,11 +7,9 @@ exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 58%
-
+source-wordcount: '767'
+ht-degree: 57%
 ---
-
 # Solución de problemas y preguntas más frecuentes sobre MSM {#troubleshooting-msm}
 
 ## Primeros pasos en la solución de problemas {#first-steps}
@@ -28,14 +26,12 @@ MSM registra varios servlets que se pueden solicitar con selectores en las direc
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Utilícelo en una página de modelo para recuperar la lista de todas las Live Copies vinculadas a ella, con información del estado de Live Copy adicional.
    * por ejemplo:
-
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Utilícelo en páginas de Live Copy para recuperar información avanzada sobre su conexión con sus páginas de modelo. Si la página no es una Live Copy, no se devuelve nada.
    * por ejemplo:
-
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Estos servlets generan mensajes de registro de depuración a través del registrador `com.day.cq.wcm.msm` que también puede ser útil.
@@ -45,17 +41,17 @@ Estos servlets generan mensajes de registro de depuración a través del registr
 Los servlets anteriores devolvían información calculada basada en los nodos y mezclas específicos de MSM. La información se almacena en el repositorio de la siguiente manera.
 
 * `cq:LiveSync` tipo de mezcla
-   * Esto está configurado en los nodos `jcr:content` y define las páginas raíz de Live Copy.
-   * Estas páginas tienen un nodo secundario `cq:LiveSyncConfig` de tipo `cq:LiveCopy` que contiene información básica y obligatoria sobre Live Copy a través de las siguientes propiedades:
-      * `cq:master` apunta a la página de modelo de Live Copy.
-      * `cq:rolloutConfigs` indica las configuraciones de despliegue activas aplicadas a Live Copy.
-      * `cq:isDeep` es verdadero si las páginas secundarias de esta página raíz de Live Copy están incluidas en Live Copy.
+  * Esto está configurado en los nodos `jcr:content` y define las páginas raíz de Live Copy.
+  * Estas páginas tienen un nodo secundario `cq:LiveSyncConfig` de tipo `cq:LiveCopy` que contiene información básica y obligatoria sobre Live Copy a través de las siguientes propiedades:
+    * `cq:master` apunta a la página de modelo de Live Copy.
+    * `cq:rolloutConfigs` indica las configuraciones de despliegue activas aplicadas a Live Copy.
+    * `cq:isDeep` es verdadero si las páginas secundarias de esta página raíz de Live Copy están incluidas en Live Copy.
 * `cq:LiveRelationship` tipo de mezcla
-   * Cualquier página de Live Copy tiene este tipo de mezcla en su nodo`jcr:content`.
-   * Si no es así, la página en algún momento se ha separado o creado manualmente mediante la interfaz de creación fuera de una acción de Live Copy (crear o desplegar).
+  * Cualquier página de Live Copy tiene este tipo de mezcla en su nodo`jcr:content`.
+  * Si no es así, la página en algún momento se ha separado o creado manualmente mediante la interfaz de creación fuera de una acción de Live Copy (crear o desplegar).
 * `cq:LiveSyncCancelled` tipo de mezcla
-   * Se ha añadido a nodos `jcr:content` de páginas de Live Copy que se suspendieron.
-   * Si la suspensión es efectiva también para páginas secundarias, `cq:isCancelledForChildren` la propiedad se establece en true en el mismo nodo.
+  * Se ha añadido a nodos `jcr:content` de páginas de Live Copy que se suspendieron.
+  * Si la suspensión es efectiva también para páginas secundarias, `cq:isCancelledForChildren` la propiedad se establece en true en el mismo nodo.
 
 La información presente en estas propiedades debe reflejarse en la interfaz de usuario, sin embargo, al solucionar problemas, puede resultar útil observar el comportamiento de MSM directamente en el repositorio a medida que se producen acciones de MSM.
 

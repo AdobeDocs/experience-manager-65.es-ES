@@ -1,21 +1,23 @@
 ---
 title: Creando configuración de exportación del artículo
-description: Siga esta página para obtener más información sobre la exportación de contenido desde Adobe Experience Manager AEM () para su carga en AEM Mobile.
+
+description: Siga esta página para obtener más información sobre la exportación de contenido desde Adobe Experience Manager (AEM) para su carga en AEM Mobile.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
+
 exl-id: 5295f383-3b46-4456-9177-65de68e39a85
 solution: Experience Manager
 feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '294'
 ht-degree: 0%
-
 ---
-
 # Creando configuración de exportación del artículo{#creating-article-export-configuration}
 
 {{ue-over-mobile}}
@@ -30,7 +32,7 @@ Los usuarios de AEM Mobile utilizan la sincronización de contenido para exporta
 
 La propiedad ***dps-exportTemplate*** mencionada en la tabla anterior define la ruta a las configuraciones de exportación de la aplicación. Establezca esta propiedad para crear y modificar recursos compartidos.
 
-En los siguientes recursos se describe la exportación de contenido desde Adobe Experience Manager AEM () para su carga en AEM Mobile.
+En los siguientes recursos se describe la exportación de contenido desde Adobe Experience Manager (AEM) para su carga en AEM Mobile.
 
 Los artículos tienen contenido que debe exportarse y cargarse. Parte de este contenido se puede compartir entre artículos.
 
@@ -43,13 +45,13 @@ La configuración de ContentSync encontrada en **&lt;dps-exportTemplate>/dps-art
 >Puede realizar los pasos siguientes para ver recursos compartidos de ejemplo, solo si tiene lo siguiente:
 >
 >* instaló el contenido de muestra
->* AEM instancia de ejecución
+>* ejecutar la instancia de AEM
 >* no hay contexto personalizado configurado ni puerto diferente
 >
 
 Para ver un ejemplo de recurso compartido, consulte los pasos a continuación:
 
-1. Abra el CRXDE Lite AEM en el servidor de la.
+1. Abra CRXDE Lite en el servidor de AEM.
 1. Vaya a esta ruta [/etc/contentsync/templates/dps-we-ilimitado-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article) para ver los recursos compartidos de ejemplo.
 
    Puede ver todas las propiedades necesarias para crear los recursos compartidos, como se muestra en la figura siguiente:

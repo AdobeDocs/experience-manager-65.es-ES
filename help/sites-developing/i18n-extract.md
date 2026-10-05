@@ -1,21 +1,23 @@
 ---
 title: Extracción de cadenas para traducir
+
 description: Utilice xgettext-maven-plugin para extraer cadenas del código fuente que necesiten traducción
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
+
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 1%
-
+source-wordcount: '482'
+ht-degree: 2%
 ---
-
 # Extracción de cadenas para traducir{#extracting-strings-for-translating}
 
 Utilice xgettext-maven-plugin para extraer cadenas del código fuente que necesiten traducción. El complemento Maven extrae cadenas a un archivo XLIFF que envía para su traducción. Las cadenas se extraen de las siguientes ubicaciones:
@@ -83,7 +85,7 @@ Cuando se utiliza dentro de un patrón, el carácter / indica un subdirectorio y
   </tr>
   <tr>
    <td><code>{ /exclude "*.pdf" }</code></td>
-   <td>Excluya todos los archivos del PDF.</td>
+   <td>Excluya todos los archivos de PDF.</td>
   </tr>
   <tr>
    <td><code> { /exclude "*/pom.xml" }</code></td>

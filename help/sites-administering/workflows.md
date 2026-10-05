@@ -11,18 +11,16 @@ feature: Operations
 role: Admin
 source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 2%
-
 ---
-
 # Administración de flujos de trabajo{#administering-workflows}
 
 Los flujos de trabajo permiten automatizar las actividades de Adobe Experience Manager (AEM). Flujos de trabajo:
 
 * Consiste en una serie de pasos que se ejecutan en un orden específico.
 
-   * Cada paso realiza una actividad distinta, como esperar los datos introducidos por el usuario, activar una página o enviar un mensaje de correo electrónico.
+  * Cada paso realiza una actividad distinta, como esperar los datos introducidos por el usuario, activar una página o enviar un mensaje de correo electrónico.
 
 * Puede interactuar con recursos del repositorio, cuentas de usuario y servicios de AEM.
 * Puede coordinar actividades complejas que implican cualquier aspecto de AEM.

@@ -1,6 +1,6 @@
 ---
-title: Configurar OSGi
-description: OSGi es un elemento fundamental en la pila tecnológica de Adobe Experience Manager AEM (). AEM Se utiliza para controlar los paquetes compuestos de y su configuración de los paquetes de componentes de la interfaz de usuario de la interfaz de usuario de. Este artículo detalla cómo puede administrar los ajustes de configuración para estos paquetes.
+title: Configuración de OSGi
+description: OSGi es un elemento fundamental de la pila tecnológica de Adobe Experience Manager (AEM). Se utiliza para controlar los paquetes compuestos de AEM y su configuración. Este artículo detalla cómo puede administrar los ajustes de configuración para estos paquetes.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -11,14 +11,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1954'
+source-wordcount: '1999'
 ht-degree: 0%
-
 ---
+# Configuración de OSGi{#configuring-osgi}
 
-# Configurar OSGi{#configuring-osgi}
-
-[OSGi](https://www.osgi.org/) es un elemento fundamental en la pila de tecnología de Adobe Experience Manager AEM (). AEM Se utiliza para controlar los paquetes compuestos de y su configuración de los paquetes de componentes de la interfaz de usuario de la interfaz de usuario de.
+[OSGi](https://www.osgi.org/) es un elemento fundamental en la pila de tecnología de Adobe Experience Manager (AEM). Se utiliza para controlar los paquetes compuestos de AEM y su configuración.
 
 OSGi &quot;*proporciona las primitivas estandarizadas que permiten construir aplicaciones a partir de componentes pequeños, reutilizables y de colaboración. Estos componentes se pueden componer en una aplicación e implementarse*&quot;.
 
@@ -34,22 +32,22 @@ Se puede usar cualquiera de los métodos aunque existen diferencias sutiles, pri
 
 * [Consola web de Adobe CQ](#osgi-configuration-with-the-web-console)
 
-   * La consola web es la interfaz estándar para la configuración de OSGi. Proporciona una interfaz de usuario para editar las distintas propiedades, donde es posible seleccionar valores de listas predefinidas.
+  * La consola web es la interfaz estándar para la configuración de OSGi. Proporciona una interfaz de usuario para editar las distintas propiedades, donde es posible seleccionar valores de listas predefinidas.
 
-     Como tal, es el método más fácil de usar.
+    Como tal, es el método más fácil de usar.
 
-   * Cualquier configuración realizada con la consola web se aplica inmediatamente y se aplica a la instancia actual, independientemente del modo de ejecución actual o de cualquier cambio posterior en el modo de ejecución.
+  * Cualquier configuración realizada con la consola web se aplica inmediatamente y se aplica a la instancia actual, independientemente del modo de ejecución actual o de cualquier cambio posterior en el modo de ejecución.
 
 * [archivos de configuración](#osgi-configuration-with-configuration-files)
 
-   * Contiene la configuración definida en la consola web.
-   * Se puede incluir en paquetes de contenido para usarlos en otras instancias.
+  * Contiene la configuración definida en la consola web.
+  * Se puede incluir en paquetes de contenido para usarlos en otras instancias.
 
 * [content-nodes (sling:osgiConfig) en el repositorio](#osgi-configuration-in-the-repository)
 
-   * Requiere configuración manual con el CRXDE Lite.
-   * Debido a las convenciones de nomenclatura de los nodos `sling:OsgiConfig`, puede enlazar la configuración a un [modo de ejecución](/help/sites-deploying/configure-runmodes.md) específico. Incluso puede guardar configuraciones para más de un modo de ejecución en el mismo repositorio.
-   * Las configuraciones adecuadas se aplican inmediatamente (según el modo de ejecución).
+  * Requiere una configuración manual con CRXDE Lite.
+  * Debido a las convenciones de nomenclatura de los nodos `sling:OsgiConfig`, puede enlazar la configuración a un [modo de ejecución](/help/sites-deploying/configure-runmodes.md) específico. Incluso puede guardar configuraciones para más de un modo de ejecución en el mismo repositorio.
+  * Las configuraciones adecuadas se aplican inmediatamente (según el modo de ejecución).
 
 Sea cual sea el método que utilice, todos estos métodos de configuración:
 
@@ -64,7 +62,7 @@ Sea cual sea el método que utilice, todos estos métodos de configuración:
 
 ## Configuración de OSGi con la consola web {#osgi-configuration-with-the-web-console}
 
-AEM La [consola web](/help/sites-deploying/web-console.md) de la aplicación proporciona una interfaz estandarizada para configurar los paquetes. AEM La pestaña **Configuration** se usa para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar parámetros del sistema de la.
+La [consola web](/help/sites-deploying/web-console.md) de AEM proporciona una interfaz estandarizada para configurar los paquetes. La pestaña **Configuration** se usa para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar los parámetros del sistema de AEM.
 
 Los cambios realizados se aplican inmediatamente a la configuración de OSGi correspondiente, no se requiere reiniciar.
 
@@ -132,7 +130,7 @@ Estos archivos se pueden incluir en paquetes de contenido y reutilizarse en otra
 La consola web no muestra ninguna indicación de en qué parte del repositorio se han guardado los cambios, pero se pueden localizar fácilmente:
 
 1. Cree el archivo de configuración [realizando un cambio inicial en la consola web](#osgi-configuration-with-the-web-console).
-1. Abra el CRXDE Lite.
+1. Abra CRXDE Lite.
 1. En el menú **Herramientas**, seleccione **Consulta...** .
 1. Para buscar el PID de la configuración que ha actualizado, envíe una consulta de **Tipo** `SQL`.
 
@@ -174,7 +172,7 @@ Como el mismo parámetro de configuración se encuentra en varios lugares, el si
 
 >[!NOTE]
 >
->Lea también [cómo definir una configuración basada en el repositorio solo para una instancia específica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=es).
+>Lea también [cómo definir una configuración basada en el repositorio solo para una instancia específica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
 
 ### Adición de una nueva configuración al repositorio {#adding-a-new-configuration-to-the-repository}
 
@@ -186,7 +184,7 @@ Para agregar una configuración al repositorio, debe saber lo siguiente:
 
    Haga referencia al campo **Configuraciones** en la consola web. El nombre se muestra entre corchetes después del nombre del paquete (o en la **Información de configuración**, en la parte inferior de la página).
 
-   AEM Por ejemplo, cree un nodo `com.day.cq.wcm.core.impl.VersionManagerImpl.` para configurar el **Administrador de versiones de WCM de WCM de la**.
+   Por ejemplo, cree un nodo `com.day.cq.wcm.core.impl.VersionManagerImpl.` para configurar **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -207,7 +205,7 @@ Para agregar una configuración al repositorio, debe saber lo siguiente:
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. ¿Existe una configuración en `/libs`? Para enumerar todas las configuraciones en su instancia, use la herramienta **Query** en el CRXDE Lite para enviar la siguiente consulta SQL:
+1. ¿Existe una configuración en `/libs`? Para enumerar todas las configuraciones en su instancia, utilice la herramienta **Query** de CRXDE Lite para enviar la siguiente consulta SQL:
 
    `select * from sling:OsgiConfig`
 
@@ -217,7 +215,7 @@ Para agregar una configuración al repositorio, debe saber lo siguiente:
 
 Para agregar realmente la nueva configuración al repositorio:
 
-1. Utilice el CRXDE Lite para ir a:
+1. Utilice CRXDE Lite para desplazarse a:
 
    ` /apps/<yourProject>`
 
@@ -231,7 +229,7 @@ Para agregar realmente la nueva configuración al repositorio:
    * Tipo: `sling:OsgiConfig`
    * Nombre: la identidad persistente (PID);
 
-     AEM por ejemplo, para el Administrador de versiones de WCM de la aplicación de datos de la aplicación, utilice `com.day.cq.wcm.core.impl.VersionManagerImpl`
+     por ejemplo, para el Administrador de versiones de AEM WCM, use `com.day.cq.wcm.core.impl.VersionManagerImpl`
 
    >[!NOTE]
    >
@@ -249,7 +247,7 @@ Para agregar realmente la nueva configuración al repositorio:
    * Tipo: según corresponda.
    * Valor: según sea necesario.
 
-   AEM Solo debe crear propiedades para los parámetros que desea configurar; otros siguen tomando los valores predeterminados establecidos por el usuario, según lo establecido por el método de configuración de la variable de parámetros de la lista de parámetros.
+   Solo debe crear propiedades para los parámetros que desea configurar; otros siguen tomando los valores predeterminados establecidos por AEM.
 
 1. Guarde todos los cambios.
 
@@ -310,15 +308,15 @@ La configuración con el número más alto de modos de ejecución coincidentes e
 
 La siguiente lista muestra una pequeña selección de las configuraciones disponibles (en una instalación estándar) en el repositorio:
 
-* AEM Autor - Filtro de WCM de:
+* Autor - Filtro WCM de AEM:
 
   `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Publish AEM - Filtro de WCM de la:
+* Publicar - Filtro WCM de AEM:
 
   `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Publish AEM - Estadísticas de página de WCM de:
+* Publicar - Estadísticas de página de AEM WCM:
 
   `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
 
@@ -326,7 +324,7 @@ La siguiente lista muestra una pequeña selección de las configuraciones dispon
 >
 >Como estas configuraciones residen en `/libs`, no deben editarse directamente, sino copiarse en el área de aplicación ( `/apps`) antes de la personalización.
 
-Para enumerar todos los nodos de configuración de la instancia, use la funcionalidad **Query** en el CRXDE Lite para enviar la siguiente consulta SQL:
+Para enumerar todos los nodos de configuración de la instancia, use la funcionalidad **Query** en CRXDE Lite para enviar la siguiente consulta SQL:
 
 `select * from sling:OsgiConfig`
 
@@ -336,17 +334,17 @@ Para enumerar todos los nodos de configuración de la instancia, use la funciona
 
   `/apps/{somewhere}`
 
-   * De forma predeterminada `{somewhere}` es `system/config`, por lo que la configuración se escribe en
+  * De forma predeterminada `{somewhere}` es `system/config`, por lo que la configuración se escribe en
 
-     `/apps/system/config`
+    `/apps/system/config`
 
-   * Sin embargo, si está editando una configuración que inicialmente provino de otra parte del repositorio: por ejemplo:
+  * Sin embargo, si está editando una configuración que inicialmente provino de otra parte del repositorio: por ejemplo:
 
-     /libs/foo/config/someconfig
+    /libs/foo/config/someconfig
 
-     A continuación, la configuración actualizada se escribe en la ubicación original; por ejemplo:
+    A continuación, la configuración actualizada se escribe en la ubicación original; por ejemplo:
 
-     `/apps/foo/config/someconfig`
+    `/apps/foo/config/someconfig`
 
 * La configuración que ha cambiado `admin` se guarda en `*.config` archivos en:
 
@@ -354,17 +352,17 @@ Para enumerar todos los nodos de configuración de la instancia, use la funciona
      /crx-quickstart/launchpad/config
   ```
 
-   * Esta área son los datos privados del administrador de configuración de OSGi y contiene todos los detalles de configuración especificados por `admin`, independientemente de cómo hayan entrado al sistema.
-   * Esta área es un detalle de implementación y nunca debe editar este directorio directamente.
-   * Sin embargo, es útil conocer la ubicación de estos archivos de configuración para que se puedan realizar copias de seguridad, instalaciones múltiples o ambas:
+  * Esta área son los datos privados del administrador de configuración de OSGi y contiene todos los detalles de configuración especificados por `admin`, independientemente de cómo hayan entrado al sistema.
+  * Esta área es un detalle de implementación y nunca debe editar este directorio directamente.
+  * Sin embargo, es útil conocer la ubicación de estos archivos de configuración para que se puedan realizar copias de seguridad, instalaciones múltiples o ambas:
 
-      * Consola de administración de Apache Felix OSGi
+    * Consola de administración de Apache Felix OSGi
 
-        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+      `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
-      * Repositorio de cliente de CRX Sling
+    * Repositorio de cliente de CRX Sling
 
-        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+      `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >

@@ -9,11 +9,9 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '415'
 ht-degree: 72%
-
 ---
-
 # Configurar Microsoft Dynamics 365 para el flujo de trabajo de la hipoteca de vivienda del sitio de referencia We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Aprenda a utilizar los servicios de Microsoft® Dynamics 365 mediante formularios adaptables en el flujo de trabajo de las hipotecas del sitio de referencia de We.Finance

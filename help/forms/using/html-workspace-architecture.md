@@ -11,11 +11,9 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 100%
-
 ---
-
 # Arquitectura de AEM Forms Workspace {#aem-forms-workspace-architecture}
 
 AEM Forms Workspace es una aplicación web alojada en CRX™. Cuando se abre Workspace en un explorador, se accede a un recurso CRX y la aplicación se representa como una página HTML en el explorador.

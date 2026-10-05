@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1025'
 ht-degree: 0%
-
 ---
-
 
 # Sincronizar directorios {#synchronizing-directories}
 
@@ -25,7 +23,7 @@ La sincronización de directorios se utiliza para extraer detalles de los servid
 
 También puede establecer una programación de sincronización diaria para sincronizar automáticamente la base de datos de administración de usuarios con cambios o actualizaciones en los servidores de directorio de origen. Sin embargo, este proceso utiliza recursos de red y de servidor. Elija períodos de tiempo de bajo uso y evite programar sincronizaciones innecesarias que atan los recursos del sistema y de la red. Para minimizar las sincronizaciones innecesarias, utilice la opción de sincronización inmediata en su lugar.
 
-También puede especificar si desea insertar información de usuarios y grupos en el LiveCycle de Adobe de Content Services 9 (obsoleto) al sincronizar dominios.
+También puede especificar si desea insertar información de usuarios y grupos en Adobe LiveCycle Content Services 9 (obsoleto) al sincronizar dominios.
 
 >[!NOTE]
 >
@@ -37,7 +35,7 @@ También puede especificar si desea insertar información de usuarios y grupos e
 
 >[!NOTE]
 >
->Adobe LiveCycle® ® Content Services ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Ver [documento de ciclo de vida del producto de Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Ver [documento del ciclo de vida del producto Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Habilitar sincronización de directorios delta {#enable-delta-directory-synchronization}
 

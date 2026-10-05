@@ -11,16 +11,14 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '213'
 ht-degree: 4%
-
 ---
-
 # Configuración de almacenamiento {#storage-configuration}
 
 La configuración de almacenamiento es el medio para identificar el almacenamiento elegido para el contenido de la comunidad, también conocido como contenido generado por el usuario (UGC).
 
-Esta configuración informa al código AEM Communities de qué implementación del proveedor de recursos de almacenamiento (SRP) se utiliza al acceder a UGC. Debe reflejar la topología establecida cuando se implementó Adobe Experience Manager AEM ().
+Esta configuración informa al código AEM Communities de qué implementación del proveedor de recursos de almacenamiento (SRP) se utiliza al acceder a UGC. Debe reflejar la topología establecida cuando se implementó Adobe Experience Manager (AEM).
 
 Para ver un análisis de las opciones de almacenamiento y las topologías de implementación, visite:
 
@@ -40,17 +38,17 @@ Para seleccionar una opción de almacenamiento que no sea el JCR predeterminado:
 * Seleccione una opción
 * Configure correctamente
 
-   * Ver detalles de [seleccionar MSRP](msrp.md#select-msrp)
-   * Ver detalles de [seleccionar DSRP](dsrp.md#select-dsrp)
-   * Ver detalles de [seleccionar ASRP](asrp.md#select-asrp)
+  * Ver detalles de [seleccionar MSRP](msrp.md#select-msrp)
+  * Ver detalles de [seleccionar DSRP](dsrp.md#select-dsrp)
+  * Ver detalles de [seleccionar ASRP](asrp.md#select-asrp)
 
 * Seleccione **[!UICONTROL Enviar]**.
 
 ### Acerca del almacenamiento JCR {#about-jcr-storage}
 
-AEM Si no se realiza ninguna selección, el valor predeterminado es el repositorio de, JCR.
+Si no se realiza ninguna selección, el valor predeterminado es el repositorio de AEM, JCR.
 
-JCR *no es* un almacén común compartido por los entornos Author y Publish. El contenido de la comunidad solo es visible desde el entorno de autor o Publish en el que se creó.
+JCR *no es* un almacén común compartido por los entornos Author y Publish. El contenido de la comunidad solo es visible desde el entorno de creación o publicación en el que se creó.
 
 Visite [Tienda JCR](jsrp.md) para obtener más información.
 

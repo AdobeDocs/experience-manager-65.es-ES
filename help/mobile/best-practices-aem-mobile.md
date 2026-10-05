@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas para AEM Mobile On-demand Services
-description: Conozca las prácticas recomendadas y las directrices que ayudan a los desarrolladores competentes de Adobe Experience Manager AEM () para sitios que desean crear plantillas y componentes de aplicaciones móviles.
+description: Conozca las prácticas recomendadas y las directrices que ayudan a los desarrolladores competentes de Adobe Experience Manager (AEM) para sitios que desean crear plantillas y componentes de aplicaciones móviles.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,45 +11,43 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # Prácticas recomendadas {#best-practices}
 
 {{ue-over-mobile}}
 
 Crear una aplicación de AEM Mobile On-demand Services es diferente a crear una aplicación que se ejecute directamente en el shell de Cordova (o PhoneGap). Los desarrolladores deben estar familiarizados con lo siguiente:
 
-* Complementos admitidos de forma predeterminada y los complementos específicos de Adobe Experience Manager AEM () Mobile.
+* Complementos compatibles de forma predeterminada y complementos específicos de Adobe Experience Manager (AEM) Mobile.
 
 >[!NOTE]
 >
 >Para obtener información detallada sobre los complementos, consulte los siguientes recursos:
 >
->* [Uso de complementos de Cordova en AEM Mobile](https://helpx.adobe.com/es/digital-publishing-solution/help/cordova-api.html)
->* [Uso de complementos habilitados para Cordova específicos de AEM Mobile](https://helpx.adobe.com/es/digital-publishing-solution/help/app-runtime-api.html)
+>* [Uso de complementos de Cordova en AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [Uso de complementos habilitados para Cordova específicos de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * Las plantillas que utilizan la funcionalidad del complemento deben escribirse de tal manera que se puedan crear en el explorador, sin que esté presente el puente del complemento.
 
-   * Por ejemplo, asegúrese de esperar a la función *deviceready* antes de intentar obtener acceso a la API de un complemento.
+  * Por ejemplo, asegúrese de esperar a la función *deviceready* antes de intentar obtener acceso a la API de un complemento.
 
-## AEM Directrices para desarrolladores de {#guidelines-for-aem-developers}
+## Directrices para desarrolladores de AEM {#guidelines-for-aem-developers}
 
-AEM Las siguientes directrices ayudan a los desarrolladores competentes de la aplicación para sitios que deseen crear plantillas y componentes de aplicaciones móviles:
+Las siguientes directrices ayudan a los desarrolladores competentes de AEM para sitios que desean crear plantillas y componentes de aplicaciones móviles:
 
-AEM **Estructurar plantillas de sitios para fomentar la reutilización y la extensibilidad**
+**Estructurar plantillas de sitios AEM para fomentar su reutilización y extensibilidad**
 
 * Preferir varios archivos de script de componente sobre uno monolítico
 
-   * Se proporcionan varios puntos de extensión vacíos, como *customheaderlibs.html* y *customfoterlibs.html*, que permiten al desarrollador cambiar la plantilla de página al duplicar el menor código principal posible
-   * Las plantillas se pueden ampliar y personalizar mediante el mecanismo *sling:resourceSuperType* de Sling
+  * Se proporcionan varios puntos de extensión vacíos, como *customheaderlibs.html* y *customfoterlibs.html*, que permiten al desarrollador cambiar la plantilla de página al duplicar el menor código principal posible
+  * Las plantillas se pueden ampliar y personalizar mediante el mecanismo *sling:resourceSuperType* de Sling
 
 * Preferir Sightly/HTL sobre JSP como idioma de creación de plantillas
 
-   * El uso de esto promueve la separación del código del marcado, ofrece protección XSS integrada y tiene una sintaxis más familiar
+  * El uso de esto promueve la separación del código del marcado, ofrece protección XSS integrada y tiene una sintaxis más familiar
 
 **Optimizar para el rendimiento en el dispositivo**
 
@@ -73,7 +71,7 @@ AEM **Estructurar plantillas de sitios para fomentar la reutilización y la exte
 **Prefiere las microbibliotecas sobre las de pila completa**
 
 * El tiempo que se tarda en poner el contenido en el cristal del dispositivo se ralentiza con cada biblioteca de la que dependen los artículos. Esta ralentización se agrava cuando se utiliza una nueva vista web para procesar cada artículo, por lo que cada biblioteca debe inicializarse de nuevo desde cero
-* SPA Si los artículos no están diseñados como tal (aplicaciones de una sola página), probablemente no necesite incluir una biblioteca de pila completa como Angular
+* Si los artículos no están creados como SPA (aplicaciones de una sola página), probablemente no necesite incluir una biblioteca de pila completa como Angular
 * Prefiera bibliotecas de un solo propósito más pequeñas que ayuden a agregar la interactividad que requiere su página, como [Fastclick](https://github.com/ftlabs/fastclick) o [Velocity.js](https://velocityjs.org)
 
 **Minimizar tamaño de carga útil de artículo**
