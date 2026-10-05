@@ -12,11 +12,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 7%
-
+source-wordcount: '770'
+ht-degree: 9%
 ---
-
 # Anotaciones al editar una página{#annotations-when-editing-a-page}
 
 La adición de contenido a las páginas del sitio web suele estar sujeta a discusiones antes de publicarse. Para ayudarle, muchos componentes directamente relacionados con el contenido (a diferencia, por ejemplo, del diseño) le permiten añadir una anotación.
@@ -86,13 +84,13 @@ Los bocetos son una función de las anotaciones que permiten crear gráficos de 
 * El cursor cambia a una cruz cuando se encuentra en modo de esbozo. Puede dibujar varias líneas distintas.
 * La línea del boceto refleja el color de la anotación y puede ser:
 
-   * a pulso
+  * a pulso
 
-     el modo predeterminado; termine soltando el botón del mouse.
+    el modo predeterminado; termine soltando el botón del mouse.
 
-   * recto:
+  * recto:
 
-     mantenga presionado `ALT` y haga clic en los puntos inicial y final; finalice con un doble clic.
+    mantenga presionado `ALT` y haga clic en los puntos inicial y final; finalice con un doble clic.
 
 * Una vez que haya salido del módulo de esbozo, puede pulsar en una línea de esbozo para seleccionarla.
 * Para mover un boceto, selecciónelo y arrástrelo a la posición que desee.

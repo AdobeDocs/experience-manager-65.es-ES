@@ -1,6 +1,6 @@
 ---
 title: Ver información del sistema
-description: AEM Obtenga información sobre cómo ver gráficos de monitorización de recursos e información sobre el servidor que ejecuta formularios en la aplicación de la versión de la aplicación de datos de la aplicación de la versión de.
+description: Obtenga información sobre cómo ver gráficos de monitorización de recursos e información sobre el servidor que ejecuta formularios AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -11,14 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '546'
 ht-degree: 1%
-
 ---
-
 # Ver información del sistema {#view-system-information}
 
-AEM La pestaña Sistema muestra gráficos de monitorización de recursos e información sobre el servidor que ejecuta los formularios de la. Para acceder a esta información, en la consola de administración, haga clic en Monitor de estado en la esquina superior derecha de la página. AEM Si está ejecutando formularios en un entorno agrupado, la información mostrada es para el nodo seleccionado en la lista Servidor.
+La pestaña Sistema muestra gráficos de monitorización de recursos e información sobre el servidor que ejecuta los formularios AEM Forms. Para acceder a esta información, en la consola de administración, haga clic en Monitor de estado en la esquina superior derecha de la página. Si está ejecutando formularios AEM Forms en un entorno en clúster, la información mostrada es para el nodo seleccionado de la lista Servidor.
 
 Para guardar la información actual del sistema como un archivo de propiedades, haga clic en Guardar.
 
@@ -42,7 +40,7 @@ El panel izquierdo de la ficha Sistema muestra la siguiente información sobre e
 
 **Versión de máquina virtual:** Número de versión de JVM
 
-AEM **Nombre de equipo:** Nombre de host del servidor donde se instalaron los formularios de la.
+**Nombre de equipo:** Nombre de host del servidor donde están instalados los formularios AEM Forms.
 
 **Tiempo de actividad:** El tiempo, en horas y minutos, que el servidor ha estado funcionando.
 
@@ -50,7 +48,7 @@ AEM **Nombre de equipo:** Nombre de host del servidor donde se instalaron los fo
 
 **Tiempo de compilación:** Cantidad de tiempo empleado en la compilación.
 
-**Número de subprocesos de Live Threads AEM:** Número total de subprocesos presentes actualmente en el sistema de formularios de la.
+**Número de subprocesos de Live Threads:** Número total de subprocesos presentes actualmente en el sistema de AEM Forms.
 
 **Número máximo de Threads:** El mayor número de subprocesos activos registrados en el sistema.
 
@@ -78,21 +76,21 @@ AEM **Nombre de equipo:** Nombre de host del servidor donde se instalaron los fo
 
 **Ruta de clase de arranque:** Ruta de clase de arranque utilizada por JVM.
 
-AEM **Tipo de servidor de aplicaciones:** Tipo de servidor de aplicaciones usado para ejecutar formularios de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación.
+**Tipo de servidor de aplicaciones:** Tipo de servidor de aplicaciones utilizado para ejecutar formularios AEM.
 
-AEM **Versión del servidor de aplicaciones:** Número de versión del servidor de aplicaciones utilizado para ejecutar formularios de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación.
+**Versión del servidor de aplicaciones:** Número de versión del servidor de aplicaciones utilizado para ejecutar formularios AEM.
 
-AEM **Proveedor del servidor de aplicaciones:** Fabricante del servidor de aplicaciones que se usa para ejecutar formularios de la.
+**Proveedor del servidor de aplicaciones:** Fabricante del servidor de aplicaciones que se usa para ejecutar formularios AEM.
 
-AEM **Fecha de instalación:** Fecha (en formato aaaa-mm-dd) en la que se instalaron los formularios de la.
+**Fecha de instalación:** Fecha (en formato aaaa-mm-dd) en la que se instalaron los formularios AEM.
 
-AEM AEM **Versión de formularios de:** Versión de los formularios de formularios instalados.
+**Versión de formularios de AEM:** Versión de formularios de AEM que está instalada.
 
-AEM **Versión del parche:** número de parche de formularios de la aplicación de formularios de la aplicación.
+**Versión del parche:** número de parche de formularios AEM.
 
-AEM **Nombre de base de datos:** Tipo de base de datos usada por los formularios de la base de datos de los formularios de la.
+**Nombre de base de datos:** Tipo de base de datos utilizada por los formularios de AEM.
 
-AEM **Versión de la base de datos:** Número de versión de la base de datos usada por los formularios de la base de datos de los formularios de la base de datos de los formularios de datos.
+**Versión de base de datos:** Número de versión de la base de datos utilizada por los formularios de AEM.
 
 **Nombre de la unidad de base de datos:** Nombre del controlador utilizado por JVM para conectarse a la base de datos.
 

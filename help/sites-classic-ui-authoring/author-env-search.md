@@ -1,10 +1,12 @@
 ---
 title: Búsqueda
 description: El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
+
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +14,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 12%
-
+source-wordcount: '474'
+ht-degree: 11%
 ---
-
 # Búsqueda{#searching}
 
 El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
@@ -92,6 +92,6 @@ El ámbito se puede cambiar mediante la consola de administración web de Apache
 
 >[!NOTE]
 >
->AEM En una instalación estándar, Buscar y reemplazar utiliza Lucene para la funcionalidad de búsqueda.
+>En una instalación estándar de AEM, Buscar y reemplazar utiliza Lucene para la funcionalidad de búsqueda.
 >
 >Lucene indexa propiedades de cadena de hasta 16 K de longitud. No se buscarán las cadenas que superen este límite.

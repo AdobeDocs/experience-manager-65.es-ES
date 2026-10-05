@@ -1,22 +1,24 @@
 ---
-title: Personalizar vistas de propiedades de página
+title: Personalización de las vistas de propiedades de página
+
 description: Cada página tiene un conjunto de propiedades que puede editar según sea necesario
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 0%
-
+source-wordcount: '500'
+ht-degree: 2%
 ---
-
-# Personalizar vistas de propiedades de página{#customizing-views-of-page-properties}
+# Personalización de las vistas de propiedades de página{#customizing-views-of-page-properties}
 
 Cada página tiene un conjunto de [propiedades](/help/sites-authoring/editing-page-properties.md) que los usuarios pueden ver y editar; algunas son necesarias al crear la página (crear vista), otras se pueden ver y editar (editar vista) en una etapa posterior. Estas propiedades de página se definen y se ponen a disposición mediante el cuadro de diálogo ( `cq:dialog`) del componente de página correspondiente.
 
@@ -34,13 +36,13 @@ Los campos deben configurarse específicamente si se requiere algún cambio. Est
 
 * Propiedad de página que estará disponible en la vista de creación (por ejemplo, **Asistente para crear página**):
 
-   * Nombre: `cq:showOnCreate`
-   * Tipo: `Boolean`
+  * Nombre: `cq:showOnCreate`
+  * Tipo: `Boolean`
 
 * Propiedad de página que estará disponible en la vista de edición (por ejemplo, **Vista**/**Editar**) **Propiedades** (opción)):
 
-   * Nombre: `cq:hideOnEdit`
-   * Tipo: `Boolean`
+  * Nombre: `cq:hideOnEdit`
+  * Tipo: `Boolean`
 
 Por ejemplo, vea la configuración de los campos agrupados en **Más títulos y descripción** en la ficha **Básico** para el componente Página base. Están visibles en el asistente para **Crear página**, ya que `cq:showOnCreate` se ha establecido en `true`:
 
@@ -50,7 +52,7 @@ Por ejemplo, vea la configuración de los campos agrupados en **Más títulos y 
 
 >[!TIP]
 >
->Consulte el tutorial [Ampliación de propiedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=es) para obtener una guía sobre cómo personalizar las propiedades de página.
+>Consulte el tutorial [Ampliación de propiedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obtener una guía sobre cómo personalizar las propiedades de página.
 
 ## Configuración de las propiedades de página {#configuring-your-page-properties}
 
@@ -112,4 +114,4 @@ CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir proyecto aem-authoring-extension-page-dialog en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+* [Abra el proyecto aem-authoring-extension-page-dialog en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

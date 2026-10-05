@@ -11,11 +11,9 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 4%
-
 ---
-
 # Desarrollar aplicación de zona protegida  {#develop-sandbox-application}
 
 En esta sección, ahora que la plantilla está configurada en la sección [aplicación inicial](initial-app.md) y las páginas iniciales establecidas en la sección [contenido inicial](initial-content.md), puede desarrollar la aplicación. Para ello, utilice scripts de base que incluyan la capacidad de habilitar la creación con componentes de Communities. Al final de esta sección, tiene un sitio web que funciona completamente.
@@ -28,7 +26,7 @@ El script predeterminado, creado cuando se añadió el componente que procesa la
 
 El primer paso es agregar una propiedad de supertipo de recurso al nodo `/apps/an-scf-sandbox/components/playpage` para que herede los scripts y las propiedades del supertipo.
 
-Uso del CRXDE Lite:
+Uso de CRXDE Lite:
 
 1. Seleccione el nodo `/apps/an-scf-sandbox/components/playpage`.
 1. En la pestaña Propiedades, introduzca una nueva propiedad con los siguientes valores:
@@ -65,7 +63,7 @@ Uso del CRXDE Lite:
    %>
    ```
 
-1. Al tener en cuenta las etiquetas de script de apertura/cierre, reemplace &quot; // TODO ...&quot; por `includes` de scripts para las partes del encabezado y del cuerpo de &lt;html>.
+1. Teniendo en cuenta las etiquetas de script de apertura/cierre, reemplace &quot; // TODO ...&quot; con `includes` de scripts para las partes de encabezado y cuerpo de &lt;html>.
 
    Con un supertipo de `foundation/components/page`, cualquier script no definido en esta misma carpeta se resuelve en un script de la carpeta `/apps/foundation/components/page` (si existe) o en un script de la carpeta `/libs/foundation/components/page`.
 
@@ -175,11 +173,11 @@ Cambiar la dirección URL del explorador a la página raíz: `http://localhost:4
 * Seleccione **[!UICONTROL Abrir propiedades]**
 * En la pestaña AVANZADAS
 
-   * Para la entrada de redireccionamiento, vaya a **[!UICONTROL Sitios web]** > **[!UICONTROL Sitio de espacio aislado de SCF]** > **[!UICONTROL Espacio aislado de SCF]**
-   * Haga clic en **[!UICONTROL Aceptar]**
+  * Para la entrada de redireccionamiento, vaya a **[!UICONTROL Sitios web]** > **[!UICONTROL Sitio de espacio aislado de SCF]** > **[!UICONTROL Espacio aislado de SCF]**
+  * Haga clic en **[!UICONTROL Aceptar]**
 
 * Haga clic en **[!UICONTROL Aceptar]**
 
 Una vez publicado el sitio, si navega a la página raíz de una instancia de publicación, se redirige a la página en inglés.
 
-El último paso antes de jugar con los componentes del SCF de Communities es añadir una carpeta de biblioteca de cliente (clientlibs) .... [Agregar Clientlibs](add-clientlibs.md)
+El último paso antes de jugar con los componentes SCF de Communities es agregar una carpeta de biblioteca de cliente (clientlibs) .... [Agregar clientlibs](add-clientlibs.md)

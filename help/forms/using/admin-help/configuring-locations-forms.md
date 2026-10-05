@@ -1,6 +1,6 @@
 ---
 title: Configurar ubicaciones para Forms
-description: AEM Obtenga información sobre cómo configurar la ubicación del formulario. Puede especificar las ubicaciones de archivo del atributo, la ubicación del formulario, el archivo del PDF semilla y la ubicación de la caché.
+description: Obtenga información sobre cómo configurar la ubicación de los formularios AEM Forms. Puede especificar las ubicaciones de archivo del atributo, la ubicación del formulario, el archivo PDF semilla y la ubicación de la caché.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '838'
 ht-degree: 2%
-
 ---
-
 # Configurar ubicaciones para Forms {#configuring-locations-for-forms}
 
 >[!NOTE]
@@ -30,7 +28,7 @@ Puede especificar la dirección URL, el URI y las ubicaciones de los archivos de
 
 ## Configuración de ubicaciones {#locations-settings}
 
-**Dirección URL base:** Dirección URL base donde se encuentran los recursos de formularios, como imágenes y scripts. Este valor es necesario para las transformaciones de HTML que incluyen referencias HREF a dependencias externas, como imágenes o secuencias de comandos. Uno de estos scripts es xfasubset.js, que es necesario para que los formularios de HTML realicen inteligencia XFA. Este valor debe ser el equivalente HTTP del URI de raíz de contenido.
+**Dirección URL base:** Dirección URL base donde se encuentran los recursos de formularios, como imágenes y scripts. Este valor es necesario para las transformaciones de HTML que incluyen referencias HREF a dependencias externas, como imágenes o secuencias de comandos. Uno de estos scripts es xfasubset.js, que es necesario para que los formularios HTML realicen inteligencia XFA. Este valor debe ser el equivalente HTTP del URI de raíz de contenido.
 
 >[!NOTE]
 >
@@ -56,7 +54,7 @@ Donde `host name` y `port` son el nombre de servidor y el número de puerto del 
 
 El valor predeterminado es una cadena vacía.
 
-**URI de raíz web:** Raíz web de la aplicación. AEM Este valor se combina con el parámetro sTargetURL (cuando sTargetURL se proporciona como relativo), especificado mediante la SDK de formularios de la aplicación, para construir una URL absoluta para acceder al contenido web específico de la aplicación.
+**URI de raíz web:** Raíz web de la aplicación. Este valor se combina con el parámetro sTargetURL (cuando sTargetURL se proporciona como relativo), especificado mediante la SDK de formularios AEM Forms, para construir una URL absoluta para acceder al contenido web específico de la aplicación.
 
 El valor predeterminado es una cadena vacía.
 
@@ -64,11 +62,11 @@ El valor predeterminado es una cadena vacía.
 
 El valor predeterminado es una cadena vacía.
 
-**URI de configuración de XCI:** Ubicación relativa o absoluta en la que se encuentra el archivo XCI utilizado para la representación. AEM Para un valor relativo, se da por hecho que el archivo XCI reside en el archivo EAR de formularios implementable de la aplicación de formularios de la aplicación de datos.
+**URI de configuración de XCI:** Ubicación relativa o absoluta en la que se encuentra el archivo XCI utilizado para la representación. Para un valor relativo, se supone que el archivo XCI reside en el archivo EAR de formularios AEM Forms implementable.
 
 El valor predeterminado es `com/adobe/formServer/PA/pa.xci`.
 
-**URI de mapa de fuente:** Ubicación relativa o absoluta del archivo de asignación de fuentes. AEM Para un valor relativo, se da por hecho que este archivo reside en el archivo EAR de formularios implementable que se puede implementar en el formulario de la aplicación.
+**URI de mapa de fuente:** Ubicación relativa o absoluta del archivo de asignación de fuentes. Para un valor relativo, se supone que este archivo reside en el archivo EAR de formularios AEM Forms implementable.
 
 El archivo de asignación de fuentes se utiliza para crear asignaciones de fuentes personalizadas para las transformaciones de HTML en formularios, lo que le permite especificar qué fuente se sustituirá cuando una fuente no esté disponible en el equipo del cliente.
 
@@ -78,7 +76,7 @@ La siguiente entrada es un ejemplo de una entrada en el archivo de asignación d
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Archivo de PDF raíz:** El archivo de PDF inicial que se utiliza en una transformación de PDF Form para optimizar la entrega. El archivo del PDF semilla especifica un archivo de PDF personalizado (que contiene únicamente recursos de fuente, imagen y flujo XFA) que se anexa al diseño de formulario y a los datos. Acrobat 7 o posterior procesa el formulario y se aplica a la transformación de PDF Forms.
+**Archivo PDF semilla:** El archivo PDF inicial que se usa en una transformación de PDFForm para optimizar la entrega. El archivo PDF semilla especifica un archivo PDF personalizado (que contiene únicamente recursos de fuente, imagen y flujo XFA) que se anexa al diseño de formulario y a los datos. Acrobat 7 o posterior procesa el formulario y se aplica a la transformación de PDF Forms.
 
 El valor predeterminado es una cadena vacía.
 
@@ -90,8 +88,8 @@ El valor predeterminado es una cadena vacía.
 * **WebLogic:** [Directorio raíz de WebLogic]\user_projects\domains\[nombre de dominio de aem-forms]\adobe\[nombre de servidor de Forms]\FormServer\Cache
 * **WebSphere:** [Página principal de IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-AEM **Directorio temporal LC:** La caché se crea en un subdirectorio del directorio temporal de Forms, que se especifica en la consola de administración en Configuración > Configuración del sistema principal > Configuraciones > Ubicación del directorio temporal. El subdirectorio se denomina adobeform_[servername].
+**Directorio temporal LC:** La caché se crea en un subdirectorio del directorio temporal de AEM Forms, que se especifica en la consola de administración en Configuración > Configuración del sistema principal > Configuraciones > Ubicación del directorio temporal. El subdirectorio se denomina adobeform_[servername].
 
 >[!NOTE]
 >
->Si utiliza una utilidad de limpieza temporal, mientras que la eliminación de estos directorios no afecta a la funcionalidad, puede afectar significativamente al rendimiento durante un corto tiempo hasta que se cree la nueva caché. AEM Para evitar este problema, no elimine estos directorios mientras borra el directorio temporal de los formularios de la.
+>Si utiliza una utilidad de limpieza temporal, mientras que la eliminación de estos directorios no afecta a la funcionalidad, puede afectar significativamente al rendimiento durante un corto tiempo hasta que se cree la nueva caché. Para evitar este problema, no elimine estos directorios mientras borra el directorio temporal de los formularios AEM Forms.

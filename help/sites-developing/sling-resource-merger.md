@@ -1,22 +1,24 @@
 ---
-title: AEM Uso de la fusión de recursos de Sling en la
+title: Uso de la fusión de recursos de Sling en AEM
+
 description: La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
+
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 0%
-
+source-wordcount: '1273'
+ht-degree: 2%
 ---
-
-# AEM Uso de la fusión de recursos de Sling en la{#using-the-sling-resource-merger-in-aem}
+# Uso de la fusión de recursos de Sling en AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Función {#purpose}
 
@@ -38,9 +40,9 @@ Con la fusión de recursos de Sling, los recursos de superposición/anulación o
 >
 >Las superposiciones/anulaciones para otras áreas (incluidos otros aspectos de un componente táctil o de la IU clásica) implican copiar el nodo y la estructura adecuados del original al lugar donde se definirá la personalización.
 
-### AEM Metas para la {#goals-for-aem}
+### Objetivos para AEM {#goals-for-aem}
 
-AEM Los objetivos para utilizar la fusión de recursos de Sling en son los siguientes:
+Los objetivos para utilizar la fusión de recursos de Sling en AEM son:
 
 * asegúrese de que no se realicen cambios de personalización en `/libs`.
 * reduzca la estructura que se replica desde `/libs`.
@@ -51,7 +53,7 @@ AEM Los objetivos para utilizar la fusión de recursos de Sling en son los sigui
 >
 >Las invalidaciones no dependen de las rutas de búsqueda, utilizan la propiedad `sling:resourceSuperType` para establecer la conexión.
 >
->AEM Sin embargo, las invalidaciones se definen a menudo en `/apps`, ya que la práctica recomendada en la práctica de la definición de personalizaciones en `/apps` es definir las invalidaciones en `/libs`; esto se debe a que no debe cambiar nada en .
+>Sin embargo, las invalidaciones a menudo se definen en `/apps`, ya que la práctica recomendada en AEM es definir personalizaciones en `/apps`; esto se debe a que no debe cambiar nada en `/libs`.
 
 >[!CAUTION]
 >
@@ -76,7 +78,7 @@ La combinación de recursos proporciona las siguientes propiedades:
 
   El comodín `*` oculta todo.
 
-* `sling:hideResource` (`Boolean`)
+* `sling:hideResource` ( `Boolean`)
 
   Indica si los recursos deben estar completamente ocultos, incluidos sus elementos secundarios.
 
@@ -86,7 +88,7 @@ La combinación de recursos proporciona las siguientes propiedades:
 
   El comodín `*` oculta todo.
 
-* `sling:orderBefore` (`String`)
+* `sling:orderBefore` ( `String`)
 
   Contiene el nombre del nodo del mismo nivel en el que el nodo actual debe colocarse delante de.
 
@@ -98,25 +100,25 @@ Para crear una superposición o invalidación, debe volver a crear el nodo origi
 
 * Superposición
 
-   * La definición de la entrada de navegación para la consola Sitios, como se muestra en el carril, se define en:
+  * La definición de la entrada de navegación para la consola Sitios, como se muestra en el carril, se define en:
 
-     `/libs/cq/core/content/nav/sites/jcr:title`
+    `/libs/cq/core/content/nav/sites/jcr:title`
 
-   * Para superponer esto, cree el siguiente nodo:
+  * Para superponer esto, cree el siguiente nodo:
 
-     `/apps/cq/core/content/nav/sites`
+    `/apps/cq/core/content/nav/sites`
 
-     A continuación, actualice la propiedad `jcr:title` según sea necesario.
+    A continuación, actualice la propiedad `jcr:title` según sea necesario.
 
 * Omitir
 
-   * La definición del cuadro de diálogo táctil para la consola Textos se define en:
+  * La definición del cuadro de diálogo táctil para la consola Textos se define en:
 
-     `/libs/foundation/components/text/cq:dialog`
+    `/libs/foundation/components/text/cq:dialog`
 
-   * Para anular esto, cree el siguiente nodo, por ejemplo:
+  * Para anular esto, cree el siguiente nodo, por ejemplo:
 
-     `/apps/the-project/components/text/cq:dialog`
+    `/apps/the-project/components/text/cq:dialog`
 
 Para crear cualquiera de estos elementos, sólo es necesario volver a crear la estructura del esqueleto. Para simplificar la recreación de la estructura, todos los nodos intermedios pueden ser del tipo `nt:unstructured` (no tienen que reflejar el tipo de nodo original; por ejemplo, en `/libs`).
 
@@ -143,20 +145,20 @@ Estas funciones, junto con las funciones estándar, permiten:
 
   La propiedad no existe en la definición de `/libs`, pero es necesaria en la superposición/invalidación de `/apps`.
 
-   1. Crear el nodo correspondiente en `/apps`
-   1. Crear la nueva propiedad en este nodo &quot;
+  1. Crear el nodo correspondiente en `/apps`
+  1. Crear la nueva propiedad en este nodo &quot;
 
 * **Redefinir una propiedad (no propiedades creadas automáticamente)**
 
   La propiedad está definida en `/libs`, pero se requiere un nuevo valor en la superposición/invalidación de `/apps`.
 
-   1. Crear el nodo correspondiente en `/apps`
-   1. Cree la propiedad coincidente en este nodo (en / `apps`)
+  1. Crear el nodo correspondiente en `/apps`
+  1. Cree la propiedad coincidente en este nodo (en / `apps`)
 
-      * La propiedad tendrá una prioridad basada en la configuración de Sling Resource Resolver.
-      * Se admite el cambio del tipo de propiedad.
+     * La propiedad tendrá una prioridad basada en la configuración de Sling Resource Resolver.
+     * Se admite el cambio del tipo de propiedad.
 
-        Si utiliza un tipo de propiedad distinto del utilizado en `/libs`, se utilizará el tipo de propiedad definido.
+       Si utiliza un tipo de propiedad distinto del utilizado en `/libs`, se utilizará el tipo de propiedad definido.
 
   >[!NOTE]
   >
@@ -166,67 +168,67 @@ Estas funciones, junto con las funciones estándar, permiten:
 
   De manera predeterminada, las propiedades creadas automáticamente (como `jcr:primaryType`) no están sujetas a una superposición/invalidación para garantizar que se respete el tipo de nodo que se encuentra actualmente en `/libs`. Para imponer una superposición o invalidación, debe volver a crear el nodo en `/apps`, ocultar explícitamente la propiedad y redefinirla:
 
-   1. Cree el nodo correspondiente en `/apps` con el `jcr:primaryType` deseado
-   1. Cree la propiedad `sling:hideProperties` en ese nodo, con el valor establecido en la propiedad creada automáticamente; por ejemplo, `jcr:primaryType`
+  1. Cree el nodo correspondiente en `/apps` con el `jcr:primaryType` deseado
+  1. Cree la propiedad `sling:hideProperties` en ese nodo, con el valor establecido en la propiedad creada automáticamente; por ejemplo, `jcr:primaryType`
 
-      Esta propiedad, definida en `/apps`, tendrá ahora prioridad sobre la definida en `/libs`
+     Esta propiedad, definida en `/apps`, tendrá ahora prioridad sobre la definida en `/libs`
 
 * **Redefinir un nodo y sus elementos secundarios**
 
   El nodo y sus elementos secundarios se definen en `/libs`, pero se requiere una nueva configuración en la superposición/invalidación de `/apps`.
 
-   1. Combine las acciones de:
+  1. Combine las acciones de:
 
-      1. Ocultar tareas secundarias de un nodo (conservando las propiedades del nodo)
-      1. Redefinir la propiedad o las propiedades
+     1. Ocultar tareas secundarias de un nodo (conservando las propiedades del nodo)
+     1. Redefinir la propiedad o las propiedades
 
 * **Ocultar una propiedad**
 
   La propiedad está definida en `/libs`, pero no es necesaria en la superposición/invalidación de `/apps`.
 
-   1. Crear el nodo correspondiente en `/apps`
-   1. Crear una propiedad `sling:hideProperties` de tipo `String` o `String[]`. Utilice esta opción para especificar las propiedades que se ocultarán o ignorarán. También se pueden utilizar caracteres comodín. Por ejemplo:
+  1. Crear el nodo correspondiente en `/apps`
+  1. Crear una propiedad `sling:hideProperties` de tipo `String` o `String[]`. Utilice esta opción para especificar las propiedades que se ocultarán o ignorarán. También se pueden utilizar caracteres comodín. Por ejemplo:
 
-      * `*`
-      * `["*"]`
-      * `jcr:title`
-      * `["jcr:title", "jcr:description"]`
+     * `*`
+     * `["*"]`
+     * `jcr:title`
+     * `["jcr:title", "jcr:description"]`
 
 * **Ocultar un nodo y sus elementos secundarios**
 
   El nodo y sus elementos secundarios se definen en `/libs`, pero no son necesarios en la superposición/invalidación de `/apps`.
 
-   1. Cree el nodo correspondiente en /apps
-   1. Crear una propiedad `sling:hideResource`
+  1. Cree el nodo correspondiente en /apps
+  1. Crear una propiedad `sling:hideResource`
 
-      * tipo: `Boolean`
-      * valor: `true`
+     * tipo: `Boolean`
+     * valor: `true`
 
 * **Ocultar elementos secundarios de un nodo (conservando las propiedades del nodo)**
 
   El nodo, sus propiedades y sus elementos secundarios se definen en `/libs`. El nodo y sus propiedades son necesarios en la superposición/invalidación de `/apps`, pero algunos o todos los nodos secundarios no son necesarios en la superposición/invalidación de `/apps`.
 
-   1. Cree el nodo correspondiente en `/apps`
-   1. Crear la propiedad `sling:hideChildren`:
+  1. Cree el nodo correspondiente en `/apps`
+  1. Crear la propiedad `sling:hideChildren`:
 
-      * tipo: `String[]`
-      * value: una lista de los nodos secundarios (tal como se definen en `/libs`) que se deben ocultar o omitir
+     * tipo: `String[]`
+     * value: una lista de los nodos secundarios (tal como se definen en `/libs`) que se deben ocultar o omitir
 
-      El comodín &ast; se puede usar para ocultar o ignorar todos los nodos secundarios.
+     El comodín &amp;ast; se puede usar para ocultar o ignorar todos los nodos secundarios.
 
 * **Reordenar nodos**
 
   El nodo y sus hermanos se definen en `/libs`. Se requiere una nueva posición para que el nodo se vuelva a crear en la superposición/invalidación de `/apps`, donde la nueva posición se define en referencia al nodo del mismo nivel apropiado en `/libs`.
 
-   * Usar la propiedad `sling:orderBefore`:
+  * Usar la propiedad `sling:orderBefore`:
 
-      1. Cree el nodo correspondiente en `/apps`
-      1. Crear la propiedad `sling:orderBefore`:
+    1. Cree el nodo correspondiente en `/apps`
+    1. Crear la propiedad `sling:orderBefore`:
 
-         Esto especifica el nodo (como en `/libs`) antes del cual se debe colocar el nodo actual:
+       Esto especifica el nodo (como en `/libs`) antes del cual se debe colocar el nodo actual:
 
-         * tipo: `String`
-         * valor: `<before-SiblingName>`
+       * tipo: `String`
+       * valor: `<before-SiblingName>`
 
 ### Invocar la fusión de recursos de Sling desde el código {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -240,21 +242,21 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
 
 * Superposición:
 
-   * objetivo: combinar recursos en función de su ruta de búsqueda
-   * punto de montaje: `/mnt/overlay`
-   * uso: `mount point + relative path`
-   * ejemplo:
+  * objetivo: combinar recursos en función de su ruta de búsqueda
+  * punto de montaje: `/mnt/overlay`
+  * uso: `mount point + relative path`
+  * ejemplo:
 
-      * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
+    * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
 * Anular:
 
-   * objetivo: combinar recursos en función de su supertipo
-   * punto de montaje: `/mnt/overide`
-   * uso: `mount point + absolute path`
-   * ejemplo:
+  * objetivo: combinar recursos en función de su supertipo
+  * punto de montaje: `/mnt/overide`
+  * uso: `mount point + absolute path`
+  * ejemplo:
 
-      * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
+    * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
 ### Ejemplo de uso {#example-of-usage}
 
@@ -262,9 +264,9 @@ Se tratan algunos ejemplos:
 
 * Superposición:
 
-   * [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md)
-   * [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)
+  * [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md)
+  * [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)
 
 * Anular:
 
-   * [Configuración de las propiedades de página](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
+  * [Configuración de las propiedades de página](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)

@@ -11,11 +11,9 @@ feature: Integration
 role: Admin
 source-git-commit: c4133584e9c2328b3a55042902c67770d78afcf7
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 1%
-
+source-wordcount: '1625'
+ht-degree: 3%
 ---
-
 # Conector de SharePoint{#sharepoint-connector}
 
 Este artículo incluye detalles sobre el conector JCR de Adobe para Microsoft SharePoint 2010 y Microsoft SharePoint 2013, versión 4.0.
@@ -25,14 +23,14 @@ El conector SharePoint admite las siguientes funcionalidades básicas:
 * Lectura de contenido y metadatos desde SharePoint.
 * Reconocimiento de la configuración de seguridad de SharePoint para el contenido accedido mediante la aplicación de la autenticación y autorización nativas de SharePoint
 * Integración de contenido mediante el buscador de contenido
-* AEM Uso de componentes de, como Recurso externo, para mostrar imágenes y vídeos de SharePoint
+* Uso de componentes de AEM, como Recurso externo, para mostrar imágenes y vídeos de SharePoint
 * Sincronización de SharePoint con AEM Assets
 
 Todas las funcionalidades se implementan utilizando los servicios web nativos de SharePoint como interfaz para el contenido y los servicios de SharePoint.
 
 >[!NOTE]
 >
->El conector de SharePoint AEM también es compatible con el paquete de servicio 2 de 6.1. El conector ya no admite el montaje del repositorio virtual y, por lo tanto, no se puede montar. Si desea acceder al repositorio de Sharepoint mediante las API de Java, utilice la implementación del repositorio JCR del conector de Sharepoint en su proyecto.
+>SharePoint Connector también es compatible con AEM 6.1 service pack 2. El conector ya no admite el montaje del repositorio virtual y, por lo tanto, no se puede montar. Si desea acceder al repositorio de Sharepoint mediante las API de Java, utilice la implementación del repositorio JCR del conector de Sharepoint en su proyecto.
 >
 >La instalación, configuración, administración y operaciones de TI del servidor de SharePoint y la infraestructura de TI relacionada están fuera del ámbito de este documento. Consulte la documentación del proveedor de [SharePoint](https://www.microsoft.com/sharepoint) para obtener información sobre estos temas. El conector requiere que estas partes de la infraestructura se instalen, configuren y operen correctamente.
 >
@@ -45,14 +43,14 @@ Para empezar a usar el conector, haga lo siguiente:
 * Descargue el archivo de distribución del paquete del conector desde Distribución de software.
 * Copie un archivo *license.properties* válido en el directorio que contiene el archivo *cq-quickstart-6.4.0.jar*.
 
-* AEM Haga doble clic en el archivo .jar para iniciarlo o iniciarlo desde la línea de comandos.
+* Haga doble clic en el archivo .jar para iniciar AEM o inícielo desde la línea de comandos.
 * Instale el paquete del conector desde el Administrador de paquetes.
 * Configure las opciones del conector.
 
 ## Instalación del conector de SharePoint {#installing-sharepoint-connector}
 
 El conector es un paquete de contenido que facilita la instalación. Instale el paquete mediante el Administrador de paquetes y, a continuación, defina la URL del servidor de SharePoint
-y otras opciones de configuración. El contenido de SharePoint AEM está disponible en el repositorio de.
+y otras opciones de configuración. El contenido de SharePoint está disponible en el repositorio de AEM.
 
 ### Requisitos de instalación {#installation-requirements}
 
@@ -70,14 +68,14 @@ El conector SharePoint está disponible para su descarga desde [Distribución de
 
 El conector admite lo siguiente:
 
-* AEM Versiones de:
+* Versiones de AEM:
 
-   * AEM.4, 6.3
+  * AEM 6.4, 6.3
 
 * Versiones de Microsoft SharePoint:
 
-   * Microsoft Office SharePoint Server (MOSS) 2010
-   * Microsoft Office SharePoint Server (MOSS) 2013
+  * Microsoft Office SharePoint Server (MOSS) 2010
+  * Microsoft Office SharePoint Server (MOSS) 2013
 
 * Si necesita soporte para implementaciones personalizadas del conector (OEM, requisitos especiales, métodos de autenticación personalizados), póngase en contacto con la oficina de Adobe de su región.
 
@@ -87,15 +85,15 @@ El conector admite lo siguiente:
 
 ### Instalación estándar {#standard-installation}
 
-Distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es#software-distribution).
+Distribución de software se utiliza para distribuir funciones de productos, ejemplos y correcciones rápidas. Para obtener más información, consulte la [documentación de distribución de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
 
 
-#### AEM Integración con la {#integrating-with-aem}
+#### Integración con AEM {#integrating-with-aem}
 
 Para instalar el paquete de contenido del conector.
 
-1. Abra un ticket de soporte de Adobe para solicitar el paquete de funciones del conector.
-1. AEM Descargue el paquete cuando esté disponible y, a continuación, abra el Administrador de paquetes para la instancia de la.
+1. Abra un ticket de asistencia de Adobe para solicitar el paquete de funciones del conector.
+1. Descargue el paquete cuando esté disponible y, a continuación, abra el Administrador de paquetes de la instancia de AEM.
 1. Haga clic en **Instalar** en la página de descripción del paquete.
 1. En el cuadro de diálogo **Instalar paquete**, haga clic en **Instalar**.
 
@@ -130,9 +128,9 @@ El conector también se puede configurar para varios espacios de trabajo. En est
 `<name>` es el nombre del espacio de trabajo JCR y
 `<url>` es la dirección URL del servidor de SharePoint para ese espacio de trabajo.
 
-AEM En, realice un paso más aparte de los pasos de configuración anteriores. Lista de permitidos el paquete &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
+En AEM, realice un paso más aparte de los pasos de configuración anteriores. Lista de permitidos el paquete &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
 
-Para realizar la lista de permitidos AEM de paquetes en la, realice los siguientes pasos:
+Para realizar la lista de permitidos de paquetes en AEM, realice los siguientes pasos:
 
 1. Vaya a la consola de administración de OSGi: http://localhost:4502/system/console/configMgr.
 1. Busque el servicio &quot;Lista blanca de administración de inicio de sesión de Apache Sling&quot;.
@@ -158,7 +156,7 @@ Después de configurar el conector, compruebe lo siguiente:
 
 ### Configuración de la sincronización DAM con el servidor de SharePoint {#configuring-dam-sync-with-the-sharepoint-server}
 
-Para sincronizar el SharePoint Assets AEM con el usuario, realice los siguientes pasos:
+Para sincronizar SharePoint Assets con AEM, realice los siguientes pasos:
 
 1. Vaya a la consola de administración de OSGi: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Busque el servicio &quot;Default DAMAsetSynchronization&quot;.
@@ -194,7 +192,7 @@ En particular, están disponibles los siguientes tipos de autenticación:
 * Reclamaciones básicas
 * Argumentos basados en Forms
 
-AEM El conector JCR de la aplicación para Microsoft SharePoint 2010 y Microsoft SharePoint 2013, versión 4.0. admite la autenticación basada en notificaciones (sugerida por Microsoft), que funciona de los siguientes modos:
+El conector JCR de AEM para Microsoft SharePoint 2010 y Microsoft SharePoint 2013, versión 4.0. admite la autenticación basada en notificaciones (sugerida por Microsoft), que funciona de los siguientes modos:
 
 * **Autenticación básica/NTLM**: El conector intenta conectarse primero mediante la autenticación básica. Si no está disponible, cambia a la autenticación basada en NTLM.
 * **Autenticación basada en Forms**: Sharepoint valida a los usuarios basándose en las credenciales que los usuarios escriben en un formulario de inicio de sesión (normalmente una página web). El sistema emite un token para solicitudes autenticadas que contiene una clave para restablecer la identidad en solicitudes posteriores.
@@ -219,11 +217,11 @@ Ir a: [http://localhost:4502/system/console/bundles](http://localhost:4502/syste
 1. Establezca el valor de la Fábrica de conexiones de Sharepoint en `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
 1. Haga clic en **Guardar**.
 
-AEM Solo un usuario autenticado tanto en el usuario como en el SharePoint puede acceder al contenido de SharePoint a través del conector.
+Solo un usuario autenticado en AEM y SharePoint puede acceder al contenido de SharePoint a través del conector.
 
-AEM También puede utilizar la extensión del conector para la autenticación con el fin de crear un módulo de autenticación personalizado que, por ejemplo, asigne el acceso de los usuarios de a usuarios específicos de SharePoint. AEM Cree los usuarios correspondientes de SharePoint (el nombre de usuario y la contraseña deben coincidir) para poder ver el contenido de SharePoint asignado a la instancia del conector.
+También puede utilizar la extensión de conector para la autenticación con el fin de crear un módulo de autenticación personalizado que, por ejemplo, asigne el acceso de los usuarios de AEM a usuarios específicos de SharePoint. Cree los usuarios de AEM correspondientes a los usuarios de SharePoint (el nombre de usuario y la contraseña deben coincidir) para poder ver el contenido de SharePoint asignado a la instancia del conector.
 
-AEM Para crear un usuario en el entorno de trabajo de:
+Para crear un usuario en AEM:
 
 1. Inicie sesión en http://localhost:9502/with el usuario administrador.
 1. Haga clic en Herramientas.

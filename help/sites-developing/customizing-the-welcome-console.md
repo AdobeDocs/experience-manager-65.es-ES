@@ -1,21 +1,23 @@
 ---
 title: Personalización de la consola de bienvenida (IU clásica)
-description: AEM La consola de bienvenida proporciona una lista de vínculos a las distintas consolas y funcionalidades dentro de las distintas funciones de la aplicación de la aplicación de la interfaz de usuario de
+
+description: La consola de bienvenida proporciona una lista de vínculos a las distintas consolas y funcionalidades de AEM
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 6%
-
+source-wordcount: '466'
+ht-degree: 8%
 ---
-
 # Personalización de la consola de bienvenida (IU clásica){#customizing-the-welcome-console-classic-ui}
 
 >[!CAUTION]
@@ -24,7 +26,7 @@ ht-degree: 6%
 >
 >Consulte [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md) para obtener más información sobre la IU táctil estándar.
 
-AEM La consola de bienvenida proporciona una lista de vínculos a las distintas consolas y funcionalidades de la aplicación de.
+La consola de bienvenida proporciona una lista de vínculos a las distintas consolas y funcionalidades de AEM.
 
 ![cq_welcomescreen](assets/cq_welcomescreen.png)
 
@@ -35,7 +37,7 @@ Es posible configurar los vínculos que son visibles. Esto se puede definir para
 
 ## Vínculos en la consola principal (panel izquierdo) {#links-in-main-console-left-pane}
 
-AEM Esta lista enumera las consolas principales de los usuarios de.
+Esta lista enumera las consolas principales de AEM.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
@@ -120,7 +122,7 @@ Hay tres secciones (separadas ligeramente) proporcionadas de forma predeterminad
    <td><code>/libs/cq/core/content/welcome/docs/docs</code></td>
   </tr>
   <tr>
-   <td> Medios del desarrollador</td>
+   <td> Recursos del desarrollador</td>
    <td><code>/libs/cq/core/content/welcome/docs/dev</code></td>
   </tr>
   <tr>

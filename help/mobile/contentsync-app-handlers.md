@@ -1,21 +1,23 @@
 ---
 title: Controladores de aplicaciones listos para usar
-description: Siga esta página para obtener más información sobre los controladores predeterminados para Adobe PhoneGap AEM Enterprise con el servicio de soporte de la aplicación de la interfaz de usuario de Adobe.
+
+description: Siga esta página para obtener más información sobre los controladores predeterminados para Adobe PhoneGap Enterprise con AEM.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
+
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1419'
 ht-degree: 0%
-
 ---
-
 # Controladores de aplicaciones listos para usar{#out-of-the-box-app-handlers}
 
 {{ue-over-mobile}}
@@ -24,7 +26,7 @@ Consulte las siguientes directrices para desarrollar controladores de sincroniza
 
 * Los controladores deben implementar *com.day.cq.contentsync.handler.ContentUpdateHandler* (ya sea directamente o ampliando una clase que sí lo haga)
 * Los controladores pueden extender *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* El controlador solo debe informar de true si ha actualizado la caché de ContentSync. AEM Informar de forma incorrecta sobre true permitirá crear una actualización de forma.
+* El controlador solo debe informar de true si ha actualizado la caché de ContentSync. Informar de manera incorrecta sobre true permitirá a AEM crear una actualización.
 * El controlador solo debe actualizar la caché si el contenido ha cambiado. No escriba en la caché si no es necesario un espacio en blanco y evite la creación de actualizaciones innecesarias.
 
 ## Controladores predeterminados {#out-of-the-box-handlers}
@@ -43,7 +45,7 @@ A continuación se enumeran los controladores de aplicación predeterminados:
 
 * ***includeImages - Boolean*** - Propiedad booleana opcional que determina si se deben incluir las imágenes. El valor predeterminado es *true*.
 
-   * De forma predeterminada, solo se tienen en cuenta para la inclusión los componentes de imagen con un tipo de recurso de foundation/components/image.
+  * De forma predeterminada, solo se tienen en cuenta para la inclusión los componentes de imagen con un tipo de recurso de foundation/components/image.
 
 * ***includeVideos - Boolean*** - Propiedad booleana opcional para determinar si los vídeos deben incluirse. El valor predeterminado es *true*.
 
@@ -53,18 +55,18 @@ A continuación se enumeran los controladores de aplicación predeterminados:
 
 >[!NOTE]
 >
->El tipo de recurso de los componentes de imagen y vídeo afectados por este controlador se establece configurando las propiedades de *com.adobe.cq.mobile.platform.impl.contentsync.handler*.*Servicio OSGi de MobilePagesUpdateHandler*.
+>El tipo de recurso de los componentes de imagen y vídeo afectados por este controlador se establece mediante la configuración de las propiedades de *com.adobe.cq.mobile.platform.impl.contentsync.handler*.*MobilePagesUpdateHandler OSGi service*.
 
 **mobilepageassets** recopila recursos de página de la aplicación.
 
-**mobilecontentlisting** enumera el contenido del archivo zip de ContentSync. AEM Lo utiliza el js del lado del cliente en el dispositivo para realizar la copia inicial del archivo necesaria para las aplicaciones de la aplicación de la aplicación de.
+**mobilecontentlisting** enumera el contenido del archivo zip de ContentSync. Lo utiliza el js del lado del cliente en el dispositivo para realizar la copia inicial del archivo necesaria para las aplicaciones de AEM.
 
-AEM Este controlador debe agregarse a cualquier configuración de ContentSync de aplicaciones de la aplicación de la aplicación.
+Este controlador debe agregarse a cualquier configuración ContentSync de aplicaciones de AEM.
 
 * ***type - String - mobilecontentlisting***
 * ***ruta*** - Cadena - mantener vacío, debe estar presente para que se vea como un controlador válido, pero se infiere que la ruta es la caché de ContentSync actual. Este valor se ignora.
-* ***targetRootDirectory* -**&#x200B;String: el prefijo que se agregará a las rutas como raíz de destino para la actualización de contenido de este controlador.
-* ***pedido - Largo* -**&#x200B;Pedido para que ContentSync ejecute este controlador. Este número debe establecerse por encima de todos los demás controladores, como 100. Debe ejecutarse después de los controladores de contenido tradicionales.
+* ***targetRootDirectory* -**String: el prefijo que se agregará a las rutas como raíz de destino para la actualización de contenido de este controlador.
+* ***pedido - Largo* -**Pedido para que ContentSync ejecute este controlador. Este número debe establecerse por encima de todos los demás controladores, como 100. Debe ejecutarse después de los controladores de contenido tradicionales.
 
 ```xml
 {
@@ -84,14 +86,14 @@ AEM Este controlador debe agregarse a cualquier configuración de ContentSync de
 }
 ```
 
-AEM **mobilecontentpackageslisting** Enumera el paquete de contenido de la aplicación en cuestión y la URL del servidor en la que se van a realizar las solicitudes de actualización. Se utiliza en el lado del cliente js en el dispositivo para solicitar actualizaciones de contenido
+**mobilecontentpackageslisting** enumera el paquete de contenido de AEM en una aplicación determinada y la dirección URL del servidor en la que se realizarán solicitudes de actualización. Se utiliza en el lado del cliente js en el dispositivo para solicitar actualizaciones de contenido
 
-AEM El controlador debe usarse en la configuración de ContentSync de App Shell (nodo con page-type=app-instance)
+El controlador debe usarse en la configuración ContentSync del shell de la aplicación de AEM (nodo con page-type=app-instance)
 
 * ***type - String - mobilecontentpackageslisting***
-* ***ruta &#x200B;**-**Cadena*** - Ruta a un shell de aplicación (nodo con pge-type=app-instance).
+* ***ruta **-**Cadena*** - Ruta a un shell de aplicación (nodo con pge-type=app-instance).
 * ***targetRootDirectory - String*** - el prefijo que se agrega a las rutas como raíz de destino para la actualización de contenido de este controlador.
-* ***order - Long* -**&#x200B;Order para que ContentSync ejecute este controlador. Este número debe establecerse por encima de todos los demás controladores, como 100. Debe ejecutarse después de los controladores de contenido tradicionales.
+* ***order - Long* -**Order para que ContentSync ejecute este controlador. Este número debe establecerse por encima de todos los demás controladores, como 100. Debe ejecutarse después de los controladores de contenido tradicionales.
 
 >[!NOTE]
 >
@@ -121,10 +123,10 @@ AEM El controlador debe usarse en la configuración de ContentSync de App Shell 
 
 **widgetconfig** incluye un config.xml actualizado que combina las ediciones realizadas a través del Centro de comandos con un config.xml proporcionado. Si no se incluye este controlador, los detalles de la aplicación que se cambien a través de la interfaz de administración no se incluirán en la caché.
 
-AEM Este controlador debe usarse en una configuración de ContentSync de App Shell de la aplicación (nodo con page-type=[app-instance]).
+Este controlador debe usarse en una configuración de ContentSync de shell de aplicación de AEM (nodo con page-type=[app-instance]).
 
-* ***type - String* - &#x200B;** widgetconfig
-* ***ruta &#x200B;**-**Cadena*** - Ruta a cualquier nodo secundario del shell de la aplicación (nodo con tipo de página=[instancia de aplicación]).
+* ***type - String* - **widgetconfig
+* ***ruta **-**Cadena*** - Ruta a cualquier nodo secundario del shell de la aplicación (nodo con tipo de página=[instancia de aplicación]).
 * ***targetRootDirectory - String*** - el prefijo que se agrega a las rutas como raíz de destino para la actualización de contenido de este controlador.
 * ***targetIconDirectory - String*** - el directorio donde colocar los iconos de la aplicación
 
@@ -132,7 +134,7 @@ AEM Este controlador debe usarse en una configuración de ContentSync de App She
 
 Se utiliza en tiempo de compilación para configurar el complemento AMS para la compatibilidad con análisis.
 
-AEM El controlador debe usarse en la configuración de ContentSync de App Shell (nodo con page-type=app-instance)
+El controlador debe usarse en la configuración ContentSync del shell de la aplicación de AEM (nodo con page-type=app-instance)
 
 * ***type - String*** - mobileADBMobileConfigJSON
 * ***ruta - Cadena*** - Ruta a un shell de aplicación (nodo con tipo de página=instancia de aplicación o RT que amplía /libs/mobileapps/core/components/instance)
@@ -140,9 +142,9 @@ AEM El controlador debe usarse en la configuración de ContentSync de App Shell 
 
 **notificationsconfig** Extrae las configuraciones de notificaciones requeridas en el dispositivo. Las propiedades se extraen de la configuración respectiva del servicio en la nube de servicios push asociado a la aplicación.
 
-AEM Las propiedades que no son de la nube en el nodo jcr:content del servicio se extraen y se agregan al archivo JSON **pge-notifications-config.json** para su inclusión en la raíz www del contenido de la aplicación.
+Las propiedades que no son de AEM en el nodo jcr:content del servicio en la nube se extraen y agregan al archivo JSON **pge-notifications-config.json** para su inclusión en la raíz www del contenido de la aplicación.
 
-AEM Las propiedades de son aquellas que se espacian con nombres como &quot;cq&quot;, &quot;sling&quot; o &quot;jcr&quot;. Otras propiedades se pueden excluir mediante la propiedad excludeProperties en el nodo de configuración de sincronización de contenido.
+Las propiedades de AEM son aquellas que tienen un espacio de nombre con &quot;cq&quot;, &quot;sling&quot; o &quot;jcr&quot;. Otras propiedades se pueden excluir mediante la propiedad excludeProperties en el nodo de configuración de sincronización de contenido.
 
 * ***type - String*** - notificationsconfig
 * ***excludeProperties - String[]*** - propiedades que se van a excluir
@@ -152,9 +154,9 @@ AEM Las propiedades de son aquellas que se espacian con nombres como &quot;cq&qu
 * ***type - String*** - contentsyncconfigcontent
 * ***ruta de acceso - Cadena*** - Ruta de acceso a uno de:
 
-   * otra configuración de ContentSync
-   * a un paquete de contenido (se utilizará su propiedad phonegap-exportTemplate para encontrar su configuración ContentSync)
-   * a un recurso móvil (los de app-content se encuentran debajo de ese recurso y, si esos paquetes de contenido tienen una propiedad page-includeInBuild que es true, se utiliza phonegap-exportTemplate para encontrar su configuración de ContentSync)
+  * otra configuración de ContentSync
+  * a un paquete de contenido (se utilizará su propiedad phonegap-exportTemplate para encontrar su configuración ContentSync)
+  * a un recurso móvil (los de app-content se encuentran debajo de ese recurso y, si esos paquetes de contenido tienen una propiedad page-includeInBuild que es true, se utiliza phonegap-exportTemplate para encontrar su configuración de ContentSync)
 
 * ***autoCreateFirstUpdateBeforeImport - Boolean*** - si es true, cree una **actualización** inicial en la configuración de destino antes de importar si una vez no existe ya
 
@@ -165,7 +167,7 @@ AEM Las propiedades de son aquellas que se espacian con nombres como &quot;cq&qu
 
 * ***type - String*** - app-assets
 
-* ***ruta &#x200B;**-**cadena*** - ruta a una ubicación bajo una instancia de aplicación donde se almacenan los recursos de la aplicación
+* ***ruta **-**cadena*** - ruta a una ubicación bajo una instancia de aplicación donde se almacenan los recursos de la aplicación
 
 **mobileappoffers**: se ha introducido un nuevo controlador de sincronización de contenido para el caso de uso de Personalization para procesar contenido de destino. El controlador &quot;mobileapps&quot; sabe cómo procesar las ofertas de destino asociadas que ha creado el autor del contenido. El controlador mobileapps amplía el controlador de actualización de páginas abstractas, por lo que muchas de las propiedades son similares. Los detalles del controlador mobileapps tienen las siguientes propiedades.
 
@@ -178,7 +180,7 @@ El controlador mobileappsoffers amplía el controlador mobileappspages y agrega 
 
 **mobileappconfig**: El controlador de sincronización de contenido mobileappconfig proporciona una forma de insertar datos JSON en MobileAppsConfig.json. Para registrar una clase de proveedor, los desarrolladores agregarán su clase MobileAppsInfoProvider a la lista de proveedores. El controlador iterará en la lista de MobileAppsInfoProviders y permitirá al proveedor insertar datos en el archivo json resultante. La lista de propiedades que admite este controlador es la siguiente:
 
-* ***ruta &#x200B;**-**Cadena*** - la ruta a un nodo de instancia de aplicación con tipo de página=instancia de aplicación o un RT que extienda /libs/mobileapps/core/components/instance
+* ***ruta **-**Cadena*** - la ruta a un nodo de instancia de aplicación con tipo de página=instancia de aplicación o un RT que extienda /libs/mobileapps/core/components/instance
 * ***proveedores - Cadena*** `[]` - la lista de MobileAppsInfoProviders completos
 * ***targetRootDirectory - String*** - el directorio donde escribir el archivo MobileAppsConfig.json.
 * **fileName - String** - nombre opcional del archivo en el que escribir el JSON, el valor predeterminado es MobileAppsConfig.json
@@ -205,8 +207,8 @@ Es posible tener varios controladores de configuración mobileappconfig configur
 
 Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [Creación para Adobe PhoneGap AEM Enterprise con](/help/mobile/phonegap.md)
-* [Administración de contenido para Adobe PhoneGap AEM Enterprise con el servicio de administración de](/help/mobile/administer-phonegap.md)
+* [Creación para Adobe PhoneGap Enterprise con AEM](/help/mobile/phonegap.md)
+* [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
 
 >[!NOTE]
 >

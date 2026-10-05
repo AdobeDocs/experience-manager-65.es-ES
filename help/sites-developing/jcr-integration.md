@@ -1,21 +1,23 @@
 ---
 title: Integración de JCR
+
 description: Conozca algunas sugerencias para cuándo necesita integrarse con Adobe Experience Manager en el nivel JCR.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: 170474c1-c7f4-446c-bda4-84768d44a078
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 0%
-
+source-wordcount: '304'
+ht-degree: 1%
 ---
-
 # Integración de JCR{#jcr-integration}
 
 ## Preferir la API de recursos de Sling a la API de JCR {#prefer-the-sling-resource-api-to-jcr-api}
@@ -32,4 +34,4 @@ Al escuchar eventos en el repositorio, es importante reducir el ámbito lo más 
 
 ## Eliminar el uso del acceso de administrador de JCR {#eliminate-use-of-jcr-admin-access}
 
-AEM A partir del 6 de, el inicio de sesión administrativo ha quedado obsoleto, al igual que la obtención de una sesión administrativa de ResourceResolverFactory. En su lugar, las cuentas de servicio deben crearse para las operaciones de back office que requerirían este tipo de acceso y ResourceResolverFactory puede utilizarse para obtener un ResourceResolver para esta cuenta.
+A partir de AEM 6, el inicio de sesión administrativo ha quedado obsoleto, al igual que la obtención de una sesión administrativa de ResourceResolverFactory. En su lugar, las cuentas de servicio deben crearse para las operaciones de back office que requerirían este tipo de acceso y ResourceResolverFactory puede utilizarse para obtener un ResourceResolver para esta cuenta.

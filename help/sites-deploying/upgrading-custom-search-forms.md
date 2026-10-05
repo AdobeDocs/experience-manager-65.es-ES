@@ -1,24 +1,26 @@
 ---
-title: Actualización de Forms de búsqueda personalizada
+title: Actualización de formularios de búsqueda personalizados
+
 description: Este artículo detalla los ajustes necesarios después de una actualización para que funcionen los formularios de búsqueda personalizados.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
+
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 2%
-
+source-wordcount: '1796'
+ht-degree: 3%
 ---
+# Actualización de formularios de búsqueda personalizados{#upgrading-custom-search-forms}
 
-# Actualización de Forms de búsqueda personalizada{#upgrading-custom-search-forms}
-
-AEM En la versión 6.2, la ubicación donde Forms de búsqueda personalizada se almacena en el repositorio ha cambiado. Al realizar la actualización, se les trasladará de su ubicación en 6.1 en:
+En AEM 6.2, la ubicación donde se almacenan los Forms de búsqueda personalizados en el repositorio ha cambiado. Al realizar la actualización, se les trasladará de su ubicación en 6.1 en:
 
 * /apps/cq/gui/content/facets
 
@@ -38,7 +40,7 @@ A menos que se indique lo contrario, la mayoría de los ajustes que deben realiz
 
 Puede cambiar la propiedad haciendo lo siguiente:
 
-1. Abra el CRXDE Lite yendo a `https://server:port/crx/de/index.jsp`
+1. Abra CRXDE Lite; para ello, vaya a `https://server:port/crx/de/index.jsp`
 1. Vaya a la ubicación del nodo que debe ajustarse, como se especifica en la lista de [Forms de búsqueda personalizada](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) que aparece a continuación.
 1. Haga clic en el nodo. En el panel de propiedades derecho, haga clic en y modifique la propiedad **sling:resourceType**.
 1. Finalmente, guarde los cambios presionando el botón **Guardar todo**.
@@ -66,7 +68,7 @@ A continuación, encontrará una lista de todos los Forms de búsqueda personali
  </tbody>
 </table>
 
-AEM En la versión 6.1, el predicado de texto completo estándar formaba parte del formulario de búsqueda. En la versión 6.2, el campo de texto completo se ha sustituido por OmniSearch. Este predicado se omite mediante programación y se puede eliminar.
+En AEM 6.1, el predicado de texto completo estándar formaba parte del formulario de búsqueda. En la versión 6.2, el campo de texto completo se ha sustituido por OmniSearch. Este predicado se omite mediante programación y se puede eliminar.
 
 **Acción:** Elimine el nodo por completo.
 
@@ -97,7 +99,7 @@ AEM En la versión 6.1, el predicado de texto completo estándar formaba parte d
  <tbody>
   <tr>
    <td>Nodos en el formulario de búsqueda predeterminado en 6.1<br /> <br /> </td>
-   <td>path</td>
+   <td>ruta</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso en 6.1</p> </td>
@@ -159,13 +161,13 @@ El estado de página se ha reemplazado por dos predicados de propiedad de opcion
 * Quitar el nodo `pagestatuspredicate`
 * Copiar nodo
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * hasta `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * hasta `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Copiar nodo
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * hasta `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * hasta `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Asegúrese de establecer la propiedad `listOrder` para el nodo `analyticspredicate` en &quot;**8**&quot;. Esto es necesario para evitar conflictos.
 
@@ -413,7 +415,7 @@ En la versión 6.1, el predicado de texto completo estándar formaba parte del f
 
 Acción: ajuste la propiedad resourceType (agregue &quot;/coral&quot; como en la ubicación 6.2 indicada arriba).
 
-### Predicado de Publish {#publish-predicate}
+### Publicar predicado {#publish-predicate}
 
 | Nodo/s en el formulario de búsqueda predeterminado en 6.1 | publicación |
 |---|---|

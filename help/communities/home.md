@@ -8,10 +8,8 @@ role: User
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '67'
-ht-degree: 0%
-
+ht-degree: 41%
 ---
-
-# Guía de Adobe Experience Manager AEM () 6.5 Communities
+# Guía de Adobe Experience Manager (AEM) 6.5 Communities
 
 Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. Examine esta guía que explica cómo implementar, administrar, desarrollar y crear comunidades.

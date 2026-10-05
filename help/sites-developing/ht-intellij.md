@@ -1,37 +1,37 @@
 ---
-title: AEM Cómo desarrollar proyectos de con IntelliJ IDEA
+title: Cómo desarrollar proyectos AEM con IntelliJ IDEA
 description: Aprenda a utilizar IntelliJ IDEA para desarrollar proyectos de Adobe Experience Manager.
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
+
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 0%
-
+source-wordcount: '663'
+ht-degree: 4%
 ---
-
-# AEM Cómo desarrollar proyectos de con IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
+# Cómo desarrollar proyectos AEM con IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
 ## Información general {#overview}
 
-AEM Para empezar a desarrollar la aplicación de la aplicación en IntelliJ, es necesario realizar los pasos siguientes.
+Para comenzar con el desarrollo de AEM en IntelliJ, se requieren los siguientes pasos.
 
 Cada paso se explica con más detalle en el resto de este tema.
 
 * Instalar IntelliJ
-* AEM Configurar el proyecto de en función de Maven
+* Configurar el proyecto de AEM en función de Maven
 * Preparar la compatibilidad con JSP para IntelliJ en el POM de Maven
 * Importar el proyecto Maven en IntelliJ
 
 >[!NOTE]
 >
->AEM Esta guía se basa en IntelliJ IDEA Ultimate Edition 12.1.4 y en la versión 5.6.1 de la versión en inglés de la versión en inglés de.
+>Esta guía se basa en IntelliJ IDEA Ultimate Edition 12.1.4 y AEM 5.6.1.
 
 ### Instalar IntelliJ IDEA {#install-intellij-idea}
 
@@ -39,11 +39,11 @@ Descargue IntelliJ IDEA desde [la página Descargas en JetBrains](https://www.je
 
 A continuación, siga las instrucciones de instalación de esa página.
 
-### AEM Configurar el proyecto de en función de Maven {#set-up-your-aem-project-based-on-maven}
+### Configurar el proyecto de AEM en función de Maven {#set-up-your-aem-project-based-on-maven}
 
-AEM A continuación, configure su proyecto mediante Maven tal como se describe en [Cómo crear proyectos de mediante Apache Maven](/help/sites-developing/ht-projects-maven.md).
+A continuación, configure su proyecto mediante Maven tal como se describe en [Creación de proyectos de AEM mediante Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-AEM Para comenzar a trabajar con proyectos de la aplicación de la aplicación IntelliJ IDEA, la configuración básica de [Introducción en 5 minutos](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) es suficiente.
+Para empezar a trabajar con proyectos de AEM en IntelliJ IDEA, la configuración básica de [Introducción en 5 minutos](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) es suficiente.
 
 ### Preparar compatibilidad con JSP para IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
@@ -52,7 +52,7 @@ IntelliJ IDEA también puede proporcionar soporte en el trabajo con JSP, por eje
 * finalización automática de bibliotecas de etiquetas
 * reconocimiento de objetos definidos por `<cq:defineObjects />` y `<sling:defineObjects />`
 
-AEM Para que esto funcione, siga las instrucciones de [Cómo trabajar con JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) en [Cómo crear proyectos de con Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Para que esto funcione, siga las instrucciones de [Cómo trabajar con JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) en [Cómo crear proyectos de AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ### Importación del proyecto Maven {#import-the-maven-project}
 
@@ -70,7 +70,7 @@ AEM Para que esto funcione, siga las instrucciones de [Cómo trabajar con JSP](/
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
 1. Continúe con los siguientes cuadros de diálogo haciendo clic en **Siguiente** y **Finalizar**.
-1. AEM Ya está configurado para el desarrollo de la aplicación de desarrollo de la aplicación de desarrollo de IntelliJ IDEA
+1. Ya está configurado para el desarrollo de AEM mediante IntelliJ IDEA
 
    ![chlimage_1-47](assets/chlimage_1-47a.png)
 
@@ -81,7 +81,7 @@ Los siguientes pasos son necesarios para depurar JSP con IntelliJ IDEA
 * Configurar una faceta web en el proyecto
 * Instalación del complemento de soporte para JSR45
 * Configuración de un perfil de depuración
-* AEM Configurar para el modo de depuración
+* Configuración de AEM para el modo de depuración
 
 #### Configurar una faceta web en el proyecto {#set-up-a-web-facet-in-the-project}
 
@@ -115,11 +115,11 @@ IntelliJ IDEA debe saber dónde encontrar los JSP para la depuración. Como IDEA
 
 ![chlimage_1-50](assets/chlimage_1-50a.png) ![chlimage_1-51](assets/chlimage_1-51a.png)
 
-#### AEM Configurar para el modo de depuración {#configure-aem-for-debug-mode}
+#### Configuración de AEM para el modo de depuración {#configure-aem-for-debug-mode}
 
-AEM El último paso requerido es comenzar a utilizar las opciones de JVM propuestas por IntelliJ IDEA.
+El último paso necesario es iniciar AEM con las opciones de JVM propuestas por IntelliJ IDEA.
 
-AEM Inicie el archivo jar de directamente y agregue estas opciones, por ejemplo, con la siguiente línea de comandos:
+Inicie el archivo jar de AEM directamente y agregue estas opciones, por ejemplo, con la siguiente línea de comandos:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 
@@ -140,7 +140,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 #### Iniciar depuración {#start-debugging}
 
-AEM Ya está todo configurado para depurar los JSP en el modo de depuración de la.
+Ya está todo configurado para depurar los JSP en AEM.
 
 1. Seleccione **Ejecutar > Depurar > Su perfil de depuración**
 1. Establecer puntos de interrupción en el código del componente
