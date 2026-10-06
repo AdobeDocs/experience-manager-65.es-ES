@@ -1,6 +1,6 @@
 ---
 title: Importar y administrar aplicaciones
-description: Obtenga información sobre cómo importar y administrar aplicaciones. AEM Una aplicación es un contenedor para almacenar los recursos necesarios para implementar una solución de formularios en la que se puede usar el formato de formularios en la aplicación de formularios de.
+description: Obtenga información sobre cómo importar y administrar aplicaciones. Una aplicación es un contenedor para almacenar los recursos necesarios para implementar una solución de formularios AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
@@ -11,22 +11,20 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '855'
 ht-degree: 0%
-
 ---
-
 # Importar y administrar aplicaciones{#import-and-manage-applications}
 
-AEM AEM En los formularios de, una *aplicación* es un contenedor para almacenar los recursos necesarios para implementar una solución de formularios de la aplicación de la aplicación de formularios de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de datos. Algunos ejemplos de recursos son diseños de formulario, fragmentos de formulario, imágenes, procesos, archivos DDX, guías de formulario, páginas de HTML y archivos de SWF. Durante la fase de desarrollo de un proyecto, los usuarios de Workbench pueden desplegar aplicaciones directamente desde la vista Aplicaciones en Workbench. Una vez desplegadas, estas aplicaciones aparecen en la consola de administración, en la ficha Aplicaciones de la página Administración de aplicaciones.
+En los formularios AEM Forms, una *aplicación* es un contenedor para almacenar los recursos necesarios para implementar una solución de formularios AEM Forms. Algunos ejemplos de recursos son diseños de formulario, fragmentos de formulario, imágenes, procesos, archivos DDX, guías de formulario, páginas HTML y archivos SWF. Durante la fase de desarrollo de un proyecto, los usuarios de Workbench pueden desplegar aplicaciones directamente desde la vista Aplicaciones en Workbench. Una vez desplegadas, estas aplicaciones aparecen en la consola de administración, en la ficha Aplicaciones de la página Administración de aplicaciones.
 
-AEM Cuando una aplicación está completa y lista para su implementación en un servidor de producción, el usuario de Workbench empaqueta la aplicación en un *archivo de aplicación de formularios* (.lca). A continuación, un administrador utiliza la consola de administración para importar e implementar el archivo de aplicación mediante el separador Aplicaciones de la página Administración de aplicaciones.
+Cuando una aplicación está completa y lista para su implementación en un servidor de producción, el usuario de Workbench empaqueta la aplicación en un *archivo de aplicación de formularios de AEM* (.lca). A continuación, un administrador utiliza la consola de administración para importar e implementar el archivo de aplicación mediante el separador Aplicaciones de la página Administración de aplicaciones.
 
 También puede utilizar la pestaña Archivos de la página Administración de aplicaciones para importar los LCA creados con Workbench 8.x.
 
 >[!NOTE]
 >
->Existe un problema conocido que indica que los archivos LCA de una versión futura no son necesariamente compatibles con versiones anteriores. AEM Aunque es posible ver e importar archivos LCA desde una versión futura de formularios (por ejemplo, una versión de vista previa), no se admite y puede provocar un comportamiento aberrante.
+>Existe un problema conocido que indica que los archivos LCA de una versión futura no son necesariamente compatibles con versiones anteriores. Aunque es posible ver e importar archivos LCA de una versión futura de formularios AEM (por ejemplo, una versión de vista previa), no se admite y puede provocar un comportamiento aberrante.
 
 Utilice la pestaña Aplicaciones para importar y gestionar aplicaciones creadas en Workbench. Los administradores de aplicaciones también pueden exportar la configuración en tiempo de ejecución de una aplicación. Exportar la configuración en tiempo de ejecución elimina la necesidad de volver a configurar manualmente las opciones en el entorno de producción antes de iniciar las aplicaciones implementadas. El archivo de configuración de tiempo de ejecución contiene:
 
@@ -102,7 +100,7 @@ Puede exportar la información de configuración en tiempo de ejecución para la
 1. Haga clic en el nombre de la aplicación.
 1. Haga clic en Exportar configuración de tiempo de ejecución y guarde el archivo de configuración (XML) producido.
 
-## AEM Implementación con scripts de aplicaciones de formularios de {#scripted-deployment-of-aem-forms-applications}
+## Implementación mediante scripts de aplicaciones de formularios AEM Forms {#scripted-deployment-of-aem-forms-applications}
 
 También puede utilizar una herramienta de implementación con scripts para implementar archivos de aplicación, incluido un archivo settings.xml que especifica la siguiente configuración:
 
@@ -116,4 +114,4 @@ La implementación con scripts elimina la necesidad de reconfigurar manualmente 
 1. Desde un símbolo del sistema, vaya a *[aem-forms root]*/sdk/misc/Foundation/ArchiveManagement.
 1. Revise el archivo ReadMe.txt para obtener instrucciones más detalladas.
 1. Modifique manualmente los archivos scriptedDeploy.bat y sample-files/sample.xml tal como se describe en el archivo readme.txt.
-1. Ejecute el archivo scriptedDeploy.bat. AEM Esta acción implementa el archivo de formularios de la aplicación con la configuración de invalidación.
+1. Ejecute el archivo scriptedDeploy.bat. Esta acción implementa el archivo de formularios AEM Forms con la configuración de anulación.

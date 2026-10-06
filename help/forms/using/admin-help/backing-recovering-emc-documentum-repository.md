@@ -1,6 +1,6 @@
 ---
 title: Copia de seguridad y recuperación del repositorio de Documentum de EMC
-description: AEM En este documento se describen las tareas necesarias para realizar copias de seguridad y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios de la aplicación de la aplicación de la manera más rápida y sencilla.
+description: En este documento se describen las tareas necesarias para realizar una copia de seguridad y recuperar el repositorio de Documentum de EMC configurado para el entorno de AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -11,27 +11,25 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '792'
 ht-degree: 3%
-
 ---
-
 # Copia de seguridad y recuperación del repositorio de Documentum de EMC {#backing-up-and-recovering-the-emc-documentum-repository}
 
-AEM En esta sección se describen las tareas necesarias para realizar una copia de seguridad y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios de la versión de la aplicación de la aplicación de la versión en formato de formulario de la aplicación de la aplicación.
+En esta sección se describen las tareas necesarias para realizar una copia de seguridad y recuperar el repositorio de Documentum de EMC configurado para el entorno de AEM Forms.
 
 >[!NOTE]
 >
->AEM En estas instrucciones se da por sentado que los formularios con conectores para ECM y EMC Documentum Content Server están instalados y configurados según sea necesario.
+>Estas instrucciones suponen que los formularios de AEM con Connectors for ECM y EMC Documentum Content Server están instalados y configurados según sea necesario.
 
 Tanto para los procesos de copia de seguridad como de restauración, hay dos tareas principales:
 
-* AEM Realizar una copia de seguridad (o restaurar) del entorno de formularios de la.
+* Realizar una copia de seguridad (o restaurar) del entorno de formularios AEM Forms.
 * Copia de seguridad (o restauración) de EMC Documentum Content Server.
 
 >[!NOTE]
 >
->AEM AEM Realice una copia de seguridad de los datos de formularios de la aplicación antes de realizar una copia de seguridad del sistema Documentum de EMC y, a continuación, restaure el sistema Documentum de EMC antes de restaurar el entorno de formularios de la aplicación de la aplicación de la aplicación de la aplicación de la aplicación de la manera más sencilla.
+>Realice una copia de seguridad de los datos de los formularios de AEM antes de realizar una copia de seguridad del sistema Documentum de EMC y, posteriormente, restaure el sistema Documentum de EMC antes de restaurar el entorno de formularios de AEM.
 
 ## Requisitos de software {#software-requirements}
 
@@ -197,15 +195,15 @@ Esta sección describe la instalación y configuración del software EMC NetWork
 
    * Copia de seguridad completa de la base de datos (nsrnmddbf.bat):
 
-     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U` `[username]` `-P`*[contraseña ]*`-l full`*&lt;nombre_base_datos>*
+     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P`*[contraseña ]*`-l full`*&lt;nombre_base_datos>*
 
    * Copia de seguridad incremental de la base de datos (nsrnmddbi.bat):
 
-     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * Copia de seguridad del registro de base de datos (nsrnmdbl.bat):
 
-     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;nombre_base_datos>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nombre_base_datos>*
 
      Donde:
 
@@ -235,7 +233,7 @@ Se agrega un dispositivo en el que se guardarán los archivos de copia de seguri
 
 ## Copia de seguridad de EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
-AEM Realice las siguientes tareas después de completar una copia de seguridad completa de los datos de los formularios de la. AEM (Consulte [Copia de seguridad de los datos de formularios de la](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
+Realice las siguientes tareas después de completar una copia de seguridad completa de los datos de los formularios AEM Forms. (Consulte [Copia de seguridad de los datos de formularios AEM](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data)).
 
 >[!NOTE]
 >
@@ -250,7 +248,7 @@ AEM Realice las siguientes tareas después de completar una copia de seguridad c
 
 ## Restaurar EMC Documentum Content Server {#restore-the-emc-documentum-content-server}
 
-AEM Realice las siguientes tareas antes de restaurar los datos de los formularios en la. AEM (Consulte [Recuperación de los datos de formularios de la](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
+Realice las siguientes tareas antes de restaurar los datos de los formularios AEM Forms. (Consulte [Recuperar los datos de formularios AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
 
 >[!NOTE]
 >

@@ -1,5 +1,5 @@
 ---
-title: "DB2&reg; database: Ejecución de un proceso semanal"
+title: 'DB2&reg; database: Ejecución semanal de un proceso'
 description: Descubra cómo puede mejorar el rendimiento de su base de datos AEM Forms DB2&reg;.
 contentOwner: admin
 content-type: reference
@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '149'
 ht-degree: 0%
-
 ---
-
 # Base de datos DB2®: Ejecución semanal de un proceso{#db-database-running-a-process-weekly}
 
 Si la base de datos AEM Forms DB2® empieza a ejecutarse lentamente, la ejecución semanal del siguiente proceso puede mejorar su rendimiento:
