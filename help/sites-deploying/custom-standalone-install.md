@@ -9,11 +9,9 @@ feature: Deploying
 role: Admin
 source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 0%
-
+source-wordcount: '1637'
+ht-degree: 1%
 ---
-
 # Instalación independiente personalizada{#custom-standalone-install}
 
 En esta sección se describen las opciones disponibles al instalar una instancia de AEM independiente. También puede leer [Elementos de almacenamiento](/help/sites-deploying/storage-elements-in-aem-6.md) para obtener más información sobre cómo elegir el tipo de almacenamiento back-end después de instalar AEM 6.
@@ -368,11 +366,11 @@ o para la página Paquetes
 
 Consulte [Configuración de OSGi con la consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) para obtener más información.
 
-## Solución de problemas {#troubleshooting}
+## Resolución de problemas {#troubleshooting}
 
 Para obtener información acerca de cómo solucionar los problemas que pueden producirse durante la instalación, consulte:
 
-* [Solución de problemas](/help/sites-deploying/troubleshooting.md)
+* [Resolución de problemas](/help/sites-deploying/troubleshooting.md)
 
 ## Desinstalación de Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 

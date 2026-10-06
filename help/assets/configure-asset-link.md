@@ -8,11 +8,9 @@ exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 6ab943894398733d178f561430d3f391e8722195
 workflow-type: tm+mt
-source-wordcount: '3059'
-ht-degree: 0%
-
+source-wordcount: '3255'
+ht-degree: 2%
 ---
-
 # Configuración de Experience Manager Assets para Adobe Asset Link {#adobe-asset-link}
 
 [Adobe Asset Link (AAL)](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html) optimiza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Conecta Adobe Experience Manager Assets con aplicaciones de escritorio de Creative Cloud, Adobe InDesign, Adobe Photoshop y Adobe Illustrator. El panel Adobe Asset Link permite a los creativos acceder al contenido almacenado en los AEM Assets y modificarlo sin salir de las aplicaciones creativas con las que están más familiarizados.
@@ -73,10 +71,10 @@ Para configurar Experience Manager manualmente:
 
    Establezca la siguiente configuración y haga clic en **[!UICONTROL Guardar]**.
 
-   * [!UICONTROL Punto final de autorización]: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
-   * [!UICONTROL Extremo de token]: ` https://ims-na1.adobelogin.com/ims/token/v1`
-   * [!UICONTROL Extremo de perfil]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
-   * [!UICONTROL URL de validación]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
+   * [!UICONTROL Punto final de autorización]&#x200B;: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
+   * [!UICONTROL Extremo de token]&#x200B;: ` https://ims-na1.adobelogin.com/ims/token/v1`
+   * [!UICONTROL Extremo de perfil]&#x200B;: ` https://ims-na1.adobelogin.com/ims/profile/v1`
+   * [!UICONTROL URL de validación]&#x200B;: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
    * [!UICONTROL Organización]: establecida en el identificador de organización en [Adobe Admin Console](https://adminconsole.adobe.com/).
    * [!UICONTROL Asignaciones de grupos]: déjelo vacío a menos que tenga un caso especial. Para obtener más información, consulte [Asignación de grupo](#group-mapping).
 
@@ -90,10 +88,10 @@ Para configurar Experience Manager manualmente:
 
    * [!UICONTROL ID de cliente]: no cambiar
    * [!UICONTROL Secreto de cliente]: No cambiar
-   * [!UICONTROL Id. de configuración]: ` ims`
+   * [!UICONTROL Id. de configuración]&#x200B;: ` ims`
    * [!UICONTROL Ámbito]: `AdobeID, OpenID, read_organizations` (otros valores también pueden estar en la configuración)
-   * [!UICONTROL Id. de proveedor]: ` ims`
-   * [!UICONTROL Crear usuarios]: ` Checked`
+   * [!UICONTROL Id. de proveedor]&#x200B;: ` ims`
+   * [!UICONTROL Crear usuarios]&#x200B;: ` Checked`
    * [!UICONTROL Propiedad de ID de usuario]: `Email` para la configuración recién creada. De lo contrario, no cambie.
 
 1. Busque la configuración del **[!UICONTROL Controlador de sincronización predeterminado de Apache Jackrabbit Oak]** con el **[!UICONTROL Nombre del controlador de sincronización]** `ims` y haga clic para editarlo.
@@ -102,7 +100,7 @@ Para configurar Experience Manager manualmente:
 
    * [!UICONTROL Tiempo de caducidad del usuario y caducidad de la pertenencia al usuario]: Tiempo en minutos seguido de &#39;m&#39; sin espacio. Por ejemplo, `15m` durante 15 minutos. Para obtener más información, consulte [Asignación de grupo](#group-mapping).
    * [!UICONTROL Inscripción automática de usuario]: No cambiar
-   * [!UICONTROL Pertenencia dinámica de usuario]: ` Deslect`
+   * [!UICONTROL Pertenencia dinámica de usuario]&#x200B;: ` Deslect`
 
 1. Busque la configuración **[!UICONTROL Controlador de autenticación OAuth de Adobe Granite]** y haga clic para editarlo. Sin realizar ningún cambio, haz clic en **[!UICONTROL Guardar]**.
 
@@ -116,7 +114,7 @@ Para configurar Experience Manager manualmente:
 
 ## Configuración adicional después de la migración a Perfiles de empresa {#configure-migration-activity}
 
-Los usuarios de Adobe Asset Link pueden conectarse a Experience Manager para permitir el inicio de sesión de IMS desde la organización principal de Creative Cloud for Enterprise (CCE). Experience Manager utiliza los ID de cliente para identificar la organización de IMS permitida. Después de la migración a los perfiles empresariales, se debe configurar el ID de cliente y la clave secreta de la organización de IMS en Experience Manager para el controlador de autenticación del portador. Para obtener más información sobre los perfiles empresariales, consulte [introducción a los perfiles de Adobe](https://helpx.adobe.com/es/enterprise/kb/introducing-adobe-profiles.html).
+Los usuarios de Adobe Asset Link pueden conectarse a Experience Manager para permitir el inicio de sesión de IMS desde la organización principal de Creative Cloud for Enterprise (CCE). Experience Manager utiliza los ID de cliente para identificar la organización de IMS permitida. Después de la migración a los perfiles empresariales, se debe configurar el ID de cliente y la clave secreta de la organización de IMS en Experience Manager para el controlador de autenticación del portador. Para obtener más información sobre los perfiles empresariales, consulte [introducción a los perfiles de Adobe](https://helpx.adobe.com/es/enterprise/kb/introducing-adobe-profiles.html?lang=es).
 
 Solo se requiere una configuración adicional si utiliza diferentes organizaciones de Adobe IMS para Experience Manager y Creative Cloud para empresas (CCE) y se establece una relación de confianza de dominio entre estas dos organizaciones.
 
@@ -131,7 +129,7 @@ Solo se requiere una configuración adicional si utiliza diferentes organizacion
 1. Una instancia de Experience Manager en funcionamiento con la autenticación del portador configurada para AAL.
 1. Instale el siguiente paquete (Service Pack 11) en su instancia de Experience Manager 6.5.
 
-   [Descargar Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+   [Descargar Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. Póngase en contacto con el [!UICONTROL Servicio de atención al cliente] para obtener el ID de cliente y la clave secreta para la autenticación del portador de su organización de IMS.
 
@@ -270,7 +268,7 @@ Experience Manager proporciona representaciones que se utilizan solo para ubicac
 
 ## Integración con Adobe Stock {#adobe-stock-integration}
 
-Las organizaciones integran sus cuentas de Adobe Stock con Experience Manager Assets. Ayuda a los especialistas en marketing a poner a disposición de sus proyectos creativos y de marketing fotografías, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad y libres de derechos de autor. Los profesionales creativos pueden utilizar estos recursos mediante el panel Asset Link.
+Las organizaciones integran sus cuentas de Adobe Stock con Experience Manager Assets. Ayuda a los especialistas en marketing a poner a disposición de sus proyectos creativos y de marketing fotografías, vectores, ilustraciones, vídeos, plantillas y recursos 3D de alta calidad y libres de derechos de autor. Los profesionales de Creative pueden utilizar estos recursos mediante el panel Asset Link.
 
 Para integrar con Adobe Stock, consulte [Recursos de Adobe Stock en Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md). Se requiere Experience Manager 6.4.2 o posterior para la integración con Adobe Stock.
 
@@ -288,6 +286,6 @@ Si tiene problemas al configurar o utilizar Adobe Asset Link, intente lo siguien
 
 >[!MORELIKETHIS]
 >
->* [Acerca de Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
+>* [Acerca de Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html?lang=es)
 >* [Use Asset Link en la aplicación de escritorio de Creative Cloud y administre recursos](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html)
 >* [Configurar Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/es/enterprise/using/configure-aem-assets-for-asset-link.html).

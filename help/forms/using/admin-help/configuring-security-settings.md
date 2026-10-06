@@ -1,24 +1,24 @@
 ---
 title: Configurar la seguridad
-description: Obtenga información sobre cómo establecer la configuración de seguridad. Puede proteger los documentos del PDF limitando el acceso. Puede cifrar, certificar o proteger el documento con contraseña.
+description: Obtenga información sobre cómo establecer la configuración de seguridad. Puede proteger los documentos de PDF limitando el acceso. Puede cifrar, certificar o proteger el documento con contraseña.
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: PDF Generator,Document Security
 exl-id: be076477-2681-4570-953d-6c44d3c30843
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1443'
 ht-degree: 0%
-
 ---
-
 # Configurar la seguridad{#configuring-security-settings}
 
-Puede limitar el acceso a los documentos del PDF estableciendo contraseñas y restringiendo determinadas funciones, como imprimir y editar. Cuando un documento de PDF tiene funciones restringidas, las herramientas y los elementos de menú relacionados con esas funciones se atenúan. También puede utilizar otros métodos para crear documentos seguros, como cifrar o certificar un documento. Una configuración de seguridad contiene la contraseña y opciones específicas que se deben utilizar para determinadas conversiones de PDF.
+Puede limitar el acceso a los documentos de PDF estableciendo contraseñas y restringiendo determinadas funciones, como la impresión y la edición. Cuando un documento de PDF tiene funciones restringidas, las herramientas y los elementos de menú relacionados con esas funciones se atenúan. También puede utilizar otros métodos para crear documentos seguros, como cifrar o certificar un documento. Una configuración de seguridad contiene la contraseña y opciones específicas que se deben utilizar para determinadas conversiones de PDF.
 
 En la página Configuración de seguridad, puede realizar las siguientes tareas:
 
@@ -51,9 +51,9 @@ Estas opciones configuran la compatibilidad y el cifrado. Para obtener instrucci
 
 **Acrobat 9.0 y posterior:** utiliza cifrado alto (AES de 256 bits). Esta opción permite habilitar los metadatos para buscar y cifrar solo los archivos adjuntos.
 
-Una versión anterior de Acrobat no puede abrir un documento de PDF que tenga una configuración de compatibilidad más alta. Por ejemplo, si selecciona la opción Acrobat 7.0 y posterior, no podrá abrir el documento en Acrobat 6.0 o versiones anteriores.
+Una versión anterior de Acrobat no puede abrir un documento de PDF que tenga una configuración de compatibilidad más alta. Por ejemplo, si selecciona la opción Acrobat 7.0 And later, no podrá abrir el documento en Acrobat 6.0 o anterior.
 
-Asegúrese de que el nivel de compatibilidad sea coherente con el nivel de compatibilidad del PDF para la misma fuente. Por ejemplo, si tiene una carpeta vigilada configurada para utilizar la configuración de PDF estándar, que es compatible con Acrobat 5.0 o posterior, su nivel de compatibilidad de seguridad no debe ser superior a Acrobat 5.0.
+Asegúrese de que el nivel de compatibilidad es coherente con el nivel de compatibilidad de PDF para la misma fuente. Por ejemplo, si tiene una carpeta vigilada configurada para utilizar la configuración de PDF estándar, que es compatible con Acrobat 5.0 o posterior, su nivel de compatibilidad de seguridad no debe ser superior a Acrobat 5.0.
 
 **Restricción de documento:** Las restricciones de documento disponibles dependen de la opción de compatibilidad seleccionada.
 
@@ -75,7 +75,7 @@ Esta configuración configura la seguridad de contraseña:
 
 **Requerir Una Contraseña Para Abrir El Documento:** Habilita las opciones de contraseña.
 
-**Contraseña para abrir el documento:** Impide que los usuarios abran el documento a menos que escriban la contraseña especificada. Las contraseñas distinguen entre mayúsculas y minúsculas. Acrobat utiliza el método de seguridad RC4 de RSA Security Inc. para proteger con contraseña los documentos del PDF. Si restringe la impresión y edición, se recomienda agregar una contraseña de apertura de documento para mejorar la seguridad.
+**Contraseña para abrir el documento:** Impide que los usuarios abran el documento a menos que escriban la contraseña especificada. Las contraseñas distinguen entre mayúsculas y minúsculas. Acrobat utiliza el método de seguridad RC4 de RSA Security Inc. para proteger los documentos de PDF con contraseña. Si restringe la impresión y edición, se recomienda agregar una contraseña de apertura de documento para mejorar la seguridad.
 
 **Contraseña para abrir documentos de Retype:** Garantiza que la contraseña para abrir documentos es correcta.
 
@@ -90,7 +90,7 @@ Estas opciones configuran los permisos:
 **Usar Una Contraseña Para Restringir La Impresión Y Edición De
 El documento y su configuración de seguridad:** habilita las restricciones de permisos.
 
-**Contraseña de permisos:** Restringe a los usuarios de la impresión y edición. Los usuarios no pueden cambiar esta configuración de seguridad a menos que escriban la contraseña especificada. No puede utilizar la misma contraseña que se utiliza para Contraseña de apertura de documento. Cuando establece una contraseña de permisos, sólo las personas que escriben esa contraseña pueden cambiar la configuración de seguridad. Si el documento del PDF tiene ambos tipos de contraseñas, cualquiera de ellas la abrirá. Sin embargo, un usuario solo puede establecer o cambiar las funciones restringidas con la contraseña de permisos. Si el documento de PDF sólo tiene la contraseña de permiso o si un usuario abre el documento utilizando la contraseña de apertura del documento, la solicitud de contraseña aparece cuando el usuario intenta cambiar la configuración de seguridad.
+**Contraseña de permisos:** Restringe a los usuarios de la impresión y edición. Los usuarios no pueden cambiar esta configuración de seguridad a menos que escriban la contraseña especificada. No puede utilizar la misma contraseña que se utiliza para Contraseña de apertura de documento. Cuando establece una contraseña de permisos, sólo las personas que escriben esa contraseña pueden cambiar la configuración de seguridad. Si el documento de PDF tiene ambos tipos de contraseñas, cualquiera de ellas la abrirá. Sin embargo, un usuario solo puede establecer o cambiar las funciones restringidas con la contraseña de permisos. Si el documento de PDF sólo tiene la contraseña de permiso o si un usuario abre el documento utilizando la contraseña de apertura del documento, la solicitud de contraseña aparece cuando el usuario intenta cambiar la configuración de seguridad.
 
 **Contraseña de permisos de Retype:** Garantiza que la contraseña de permisos sea correcta.
 
@@ -102,7 +102,7 @@ El documento y su configuración de seguridad:** habilita las restricciones de p
 
 **Alta resolución:** Permite a los usuarios imprimir a cualquier resolución, dirigiendo la salida vectorial de alta calidad a PostScript y otras impresoras que admiten características de impresión avanzadas de alta calidad.
 
-**Cambios permitidos:** define qué acciones de edición se permiten en el documento del PDF:
+**Cambios permitidos:** define qué acciones de edición se permiten en el documento de PDF:
 
 **Ninguno:** Impide que los usuarios cambien el documento, incluidos los campos de formulario y de firma.
 
@@ -115,14 +115,14 @@ Campos:** Permite que los usuarios rellenen formularios y agreguen firmas digita
 Campos de firma:** permite a los usuarios rellenar formularios y agregar firmas digitales y comentarios.
 
 **Diseño De Página, Retoque, Rellenado De Campos De Formulario Y Firma
-Campos de firma existentes:** permite a los usuarios insertar, rotar o eliminar páginas y crear marcadores o imágenes en miniatura, rellenar formularios y agregar firmas digitales. Esta opción no permite a los usuarios crear campos de formulario. Esta opción solo está disponible si se selecciona un nivel de cifrado bajo (Acrobat 3.0).
+Campos de firma existentes:** Permite a los usuarios insertar, rotar o eliminar páginas y crear marcadores o imágenes en miniatura, rellenar formularios y agregar firmas digitales. Esta opción no permite a los usuarios crear campos de formulario. Esta opción solo está disponible si se selecciona un nivel de cifrado bajo (Acrobat 3.0).
 
 **Cualquiera excepto Extraer páginas:** Permite a los usuarios cambiar el documento utilizando cualquier método en la Lista de permitidos Cambios, excepto quitar páginas.
 
-**Habilitar la copia de texto, imágenes y otro contenido:** Permite a los usuarios seleccionar y copiar el contenido del documento de PDF. También permite a las utilidades que necesitan acceder al contenido de un archivo de PDF, como Acrobat Catalog, acceder a dicho contenido. Esta opción solo está disponible si se selecciona un nivel de cifrado alto.
+**Habilitar la copia de texto, imágenes y otro contenido:** Permite a los usuarios seleccionar y copiar el contenido del documento de PDF. También permite a las utilidades que necesitan acceder al contenido de un archivo PDF, como Acrobat Catalog, acceder a dicho contenido. Esta opción solo está disponible si se selecciona un nivel de cifrado alto.
 
 **Habilitar El Acceso De Texto De Los Dispositivos Reader De Pantalla Para
-Con deficiencias visuales:** permite a los usuarios con deficiencias visuales leer el documento usando lectores de pantalla. Sin embargo, los usuarios no pueden copiar ni extraer el contenido del documento. Esta opción solo está disponible si se selecciona un nivel de cifrado alto.
+Con deficiencias visuales:** permite que los usuarios con deficiencias visuales lean el documento con lectores de pantalla. Sin embargo, los usuarios no pueden copiar ni extraer el contenido del documento. Esta opción solo está disponible si se selecciona un nivel de cifrado alto.
 
 ## Eliminar una configuración de seguridad {#delete-a-security-setting}
 

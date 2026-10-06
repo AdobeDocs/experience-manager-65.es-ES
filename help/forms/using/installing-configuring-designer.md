@@ -12,11 +12,9 @@ exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: 8f14518117b3aff1cdb2e033fbfe40d0a903d53f
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 22%
-
+source-wordcount: '969'
+ht-degree: 31%
 ---
-
 # Instalar y configurar Designer{#installing-and-configuring-designer}
 
 ## Requisitos previos {#pre-requisites}
@@ -78,7 +76,7 @@ Como alternativa, puede instalar AEM Forms Designer a través de la línea de co
 msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-****-****-****
 ```
 
-* Instalación silenciosa desde la línea de comandos: el programa de instalación ejecuta la instalación sin mostrar una interfaz de usuario. No se muestran avisos, mensajes ni cuadros de diálogo. Una vez iniciada, no puede cancelar la instalación.
+* Instalación silenciosa desde la línea de comandos: el programa de instalación ejecuta la instalación sin mostrar una interfaz de usuario. No se muestran indicaciones, mensajes ni cuadros de diálogo. Una vez iniciada, no puede cancelar la instalación.
 
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
@@ -112,19 +110,18 @@ Si utiliza un programa de instalación independiente para AEM Forms Designer, re
 ## Preguntas frecuentes {#fandq}
 
 * **¿Puede un usuario actualizar o instalar directamente el diseñador de 64 bits?**
-   * Sí, los usuarios pueden actualizar o instalar directamente Designer de 64 bits. Para actualizar, instale el programa de instalación completo del diseñador [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) y aplique la versión posterior del parche del diseñador sobre eso.
+  * Sí, los usuarios pueden actualizar o instalar directamente Designer de 64 bits. Para actualizar, instale el programa de instalación completo del diseñador [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) y aplique la versión posterior del parche del diseñador sobre eso.
 
-     >[!NOTE]
-     > Antes de actualizar a Designer de 64 bits, desinstale primero Designer de 32 bits, si existe.
+    >[!NOTE]
+    > Antes de actualizar a Designer de 64 bits, desinstale primero Designer de 32 bits, si existe.
 
 * **¿Pueden los usuarios mantener instalados en el sistema tanto los de 32 bits como los de 64 bits?**
-   * No, la instalación de 32 y 64 bits no funcionará en el mismo equipo. El usuario puede tener un diseñador de 32 bits o uno de 64 bits.
+  * No, la instalación de 32 y 64 bits no funcionará en el mismo equipo. El usuario puede tener un diseñador de 32 bits o uno de 64 bits.
 
 * **¿Cómo comprueba si un usuario tiene un diseñador de 64 bits o de 32 bits?**
-   * Existen dos formas de comprobar la versión de Forms Designer:
+  * Existen dos formas de comprobar la versión de Forms Designer:
 
-      1. Abra Designer, vaya a la Ayuda, haga clic en Acerca de Designer y verá información sobre la versión del diseñador junto con la información de bits. Por ejemplo, verá que 64 bits está escrito al final de la versión, como se muestra a continuación:
-
-         `6.5.21.20240522.1.161 | 64 bit`
-      1. Abra Designer, en la parte superior izquierda verá un icono de marca que contiene información de 64 bits con el nombre del producto.
+    1. Abra Designer, vaya a la Ayuda, haga clic en Acerca de Designer y verá información sobre la versión del diseñador junto con la información de bits. Por ejemplo, verá que 64 bits está escrito al final de la versión, como se muestra a continuación:
+       `6.5.21.20240522.1.161 | 64 bit`
+    1. Abra Designer, en la parte superior izquierda verá un icono de marca que contiene información de 64 bits con el nombre del producto.
 

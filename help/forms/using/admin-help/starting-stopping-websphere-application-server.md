@@ -1,6 +1,6 @@
 ---
 title: Iniciar y detener del servidor de aplicaciones WebSphere
-description: AEM Varios procedimientos requieren que detenga o inicie la instancia de WebSphere en la que desea implementar productos de formularios de la forma que desee. Este documento describe cómo iniciar y detener el servidor de aplicaciones WebSphere.
+description: Varios procedimientos requieren que detenga o inicie la instancia de WebSphere en la que desea implementar productos de formularios AEM Forms. Este documento describe cómo iniciar y detener el servidor de aplicaciones WebSphere.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
@@ -13,12 +13,10 @@ source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 6%
-
 ---
-
 # Iniciar y detener del servidor de aplicaciones WebSphere {#starting-and-stopping-websphere-application-server}
 
-AEM Varios procedimientos requieren que detenga o inicie la instancia de WebSphere en la que desea implementar productos de formularios de la forma que desee. Si no está seguro de si el servidor de aplicaciones se ha iniciado, puede ver primero el estado del servidor de aplicaciones de WebSphere.
+Varios procedimientos requieren que detenga o inicie la instancia de WebSphere en la que desea implementar productos de formularios AEM Forms. Si no está seguro de si el servidor de aplicaciones se ha iniciado, puede ver primero el estado del servidor de aplicaciones de WebSphere.
 
 ## Ver el estado del servidor de aplicaciones WebSphere {#view-the-status-of-websphere-application-server}
 

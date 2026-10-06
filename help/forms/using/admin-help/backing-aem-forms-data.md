@@ -1,6 +1,6 @@
 ---
 title: Copia de seguridad de los datos de Adobe Experience Manager Forms
-description: En este documento se describen los pasos necesarios para realizar una copia de seguridad activa o en línea de la base de datos de formularios de Adobe Experience Manager AEM (), el GDS y los directorios raíz del almacenamiento de contenido.
+description: En este documento se describen los pasos necesarios para realizar una copia de seguridad activa o en línea de la base de datos de formularios de Adobe Experience Manager (AEM), el GDS y los directorios raíz del almacenamiento de contenido.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -11,12 +11,10 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1555'
 ht-degree: 0%
-
 ---
-
-# Copia de seguridad de los datos de Adobe Experience Manager AEM () Forms {#backing-up-the-aem-forms-data}
+# Copia de seguridad de los datos de Forms de Adobe Experience Manager (AEM) {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
 
@@ -26,9 +24,9 @@ Una vez instalado AEM Forms e implementado en las áreas de producción, el admi
 
 Para garantizar una copia de seguridad y una recuperación correctas, siempre debe estar disponible una copia de seguridad de imagen del sistema. A continuación, si se produce una pérdida, puede recuperar todo el entorno a un estado coherente.
 
-AEM Realizar una copia de seguridad de la base de datos al mismo tiempo que las copias de seguridad del directorio raíz de GDS, repositorio de y almacenamiento de contenido ayuda a mantener estos sistemas sincronizados si alguna vez se requiere recuperación.
+Realizar una copia de seguridad de la base de datos al mismo tiempo que las copias de seguridad del directorio GDS, del repositorio de AEM y del directorio raíz de almacenamiento de contenido ayuda a mantener estos sistemas sincronizados si alguna vez es necesaria la recuperación.
 
-El procedimiento de copia de seguridad descrito en esta sección requiere que introduzca el modo de copia de seguridad segura antes de realizar la copia de seguridad de la base de datos de AEM Forms AEM, el repositorio de datos, GDS y los directorios raíz del almacenamiento de contenido. Cuando se complete la copia de seguridad, debe salir del modo de copia de seguridad segura. El modo de copia de seguridad segura se utiliza para marcar documentos persistentes y de larga duración que residen en el GDS. Este modo garantiza que el mecanismo automatizado de limpieza de archivos (el Recolector de archivos) no elimine los archivos caducados hasta que se libere el modo de copia de seguridad segura. Es necesario mantener una copia de seguridad de GDS sincronizada con una copia de seguridad de la base de datos.
+El procedimiento de copia de seguridad descrito en esta sección requiere que introduzca el modo de copia de seguridad segura antes de realizar la copia de seguridad de la base de datos de AEM Forms, el repositorio de AEM, GDS y los directorios raíz del almacenamiento de contenido. Cuando se complete la copia de seguridad, debe salir del modo de copia de seguridad segura. El modo de copia de seguridad segura se utiliza para marcar documentos persistentes y de larga duración que residen en el GDS. Este modo garantiza que el mecanismo automatizado de limpieza de archivos (el Recolector de archivos) no elimine los archivos caducados hasta que se libere el modo de copia de seguridad segura. Es necesario mantener una copia de seguridad de GDS sincronizada con una copia de seguridad de la base de datos.
 
 La frecuencia con la que se debe realizar una copia de seguridad de la ubicación de GDS depende de cómo se utilice AEM Forms y de las ventanas de copia de seguridad disponibles. La ventana de copia de seguridad puede verse afectada por procesos de larga duración, ya que pueden ejecutarse durante varios días. Si cambia, agrega y quita continuamente archivos de este directorio, debe realizar copias de seguridad de la ubicación de GDS con más frecuencia.
 
@@ -38,7 +36,7 @@ Si la base de datos se está ejecutando en modo de registro, como se describe en
 >
 >Los archivos a los que no se hace referencia pueden persistir en el directorio GDS después del proceso de recuperación. Actualmente, esta es una limitación conocida.
 
-## AEM Haga una copia de seguridad de la base de datos, GDS, repositorio de la y directorios raíz del almacenamiento de contenido {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
+## Haga una copia de seguridad de la base de datos, GDS, repositorio de AEM y directorios raíz de almacenamiento de contenido {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
 Ponga AEM Forms en modo de copia de seguridad segura (instantánea) o de copia de seguridad móvil (cobertura continua). Antes de configurar AEM Forms para que entre en cualquiera de los modos de copia de seguridad, asegúrese de lo siguiente:
 
@@ -49,25 +47,25 @@ Además de esto, observe las siguientes directrices para el proceso de copia de 
 
 * Realice una copia de seguridad del directorio GDS mediante un sistema operativo disponible o una utilidad de copia de seguridad de terceros. (Consulte [Ubicación de GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
 * (Opcional) Realice una copia de seguridad del directorio raíz de almacenamiento de contenido mediante un sistema operativo disponible o una copia de seguridad y una utilidad de terceros. (Consulte [Ubicación raíz del almacenamiento de contenido (entorno independiente)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) o [Ubicación raíz del almacenamiento de contenido (entorno en clúster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Copia de seguridad   instancias de autor y publicación (copia de seguridad del repositorio crx).
+* Hacer una copia de seguridad de las instancias de autor y publicación (copia de seguridad del repositorio crx).
 
   Para realizar una copia de seguridad del entorno de la solución Administración de correspondencia, realice los pasos en las instancias de autor y publicación que se describen en [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md).
 
   Tenga en cuenta los siguientes puntos al realizar copias de seguridad de las instancias de autor y publicación:
 
-   * Asegúrese de que la copia de seguridad de las instancias de autor y publicación se sincronice para iniciarse al mismo tiempo. Aunque puede seguir utilizando instancias de autor y publicación mientras se realiza la copia de seguridad, se recomienda no publicar ningún recurso durante la copia de seguridad para evitar cualquier cambio no capturado. Espere a que finalice la copia de seguridad de las instancias de autor y publicación antes de publicar nuevos recursos.
-   * La copia de seguridad completa del nodo Autor incluye una copia de seguridad de los datos de Forms Manager y AEM Forms Workspace.
-   * Los desarrolladores de Workbench pueden seguir trabajando en sus procesos localmente. No deben implementar ningún proceso nuevo durante la fase de copia de seguridad.
-   * La decisión sobre la duración de cada sesión de copia de seguridad (para el modo de copia de seguridad móvil) debe basarse en el tiempo total necesario para realizar una copia de seguridad de todos los datos de AEM Forms AEM (BD, GDS, repositorio de y cualquier otro dato personalizado adicional).
+  * Asegúrese de que la copia de seguridad de las instancias de autor y publicación se sincronice para iniciarse al mismo tiempo. Aunque puede seguir utilizando instancias de autor y publicación mientras se realiza la copia de seguridad, se recomienda no publicar ningún recurso durante la copia de seguridad para evitar cualquier cambio no capturado. Espere a que finalice la copia de seguridad de las instancias de autor y publicación antes de publicar nuevos recursos.
+  * La copia de seguridad completa del nodo Autor incluye una copia de seguridad de los datos de Forms Manager y AEM Forms Workspace.
+  * Los desarrolladores de Workbench pueden seguir trabajando en sus procesos localmente. No deben implementar ningún proceso nuevo durante la fase de copia de seguridad.
+  * La decisión sobre la duración de cada sesión de copia de seguridad (para el modo de copia de seguridad móvil) debe basarse en el tiempo total necesario para realizar una copia de seguridad de todos los datos de AEM Forms (BD, GDS, repositorio de AEM y cualquier otro dato personalizado adicional).
 
 Haga una copia de seguridad de la base de datos de AEM Forms, incluidos los registros de transacciones. Ver [base de datos de AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 
 Para obtener más información, consulte el artículo de la base de conocimiento correspondiente a su base de datos:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
-* [Copia de seguridad y recuperación en Oracle para AEM Forms](https://www.adobe.com/go/kb403624)
+* [Copia de seguridad y recuperación de Oracle para AEM Forms](https://www.adobe.com/go/kb403624)
 * [Copia de seguridad y recuperación de MySQL para AEM Forms](https://www.adobe.com/go/kb403625)
 * [Copia de seguridad y recuperación de Microsoft® SQL Server para AEM Forms](https://www.adobe.com/go/kb403623)
-* Copia de seguridad y recuperación de [DB2® para AEM Forms](https://www.adobe.com/go/kb403626)
+* [Copia de seguridad y recuperación de DB2® para AEM Forms](https://www.adobe.com/go/kb403626)
 
 En estos artículos se proporciona orientación sobre las funciones básicas de la base de datos para la copia de seguridad y recuperación de datos. No están pensados como guías técnicas inclusivas de la función de copia de seguridad y recuperación de la base de datos de un proveedor específico. Describen los comandos necesarios para crear una estrategia de copia de seguridad de base de datos fiable para los datos de la aplicación AEM Forms.
 
