@@ -11,11 +11,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 61%
-
+source-wordcount: '1763'
+ht-degree: 62%
 ---
-
 # Configuración de la segmentación con ContextHub{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
@@ -29,7 +27,7 @@ Según la información que ya haya recopilado acerca de los visitantes del sitio
 
 Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la sección [Personalization](/help/sites-authoring/personalization.md) del sitio web. Las [Actividades](/help/sites-authoring/activitylib.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
-AEM Le permite personalizar fácilmente la experiencia de sus usuarios. También le permite verificar los resultados de las definiciones de segmentos.
+AEM permite personalizar fácilmente la experiencia de los usuarios. También le permite verificar los resultados de las definiciones de segmentos.
 
 ## Acceso a segmentos {#accessing-segments}
 
@@ -243,8 +241,8 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 1. Proporcione un **Título** y **Nombre** para su carpeta.
    * El **Título** debe ser descriptivo.
    * El **Nombre** se convertirá en el nombre de nodo en el repositorio.
-      * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](/help/sites-developing/naming-conventions.md)
-      * Se puede modificar si es necesario.
+     * Se generará automáticamente en función del título y se ajustará según las [convenciones de nomenclatura de AEM.](/help/sites-developing/naming-conventions.md)
+     * Se puede modificar si es necesario.
 
    ![Crear carpeta](assets/contexthub-create-folder.png)
 
@@ -255,7 +253,6 @@ Si tiene muchos segmentos, puede que sea difícil administrarlos como una lista 
 1. La carpeta aparece en la lista de segmentos.
    * La forma en que ordene las columnas afectará a dónde aparece la nueva carpeta en la lista.
    * Puede hacer clic en los encabezados de columna para ajustar la ordenación.
-
      ![La nueva carpeta](assets/contexthub-folder.png)
 
 ### Modificar carpetas existentes {#modify-folders}
@@ -339,4 +336,4 @@ Si ha configurado una actividad y experiencia utilizando el ejemplo de segmento 
 
 ## Uso del segmento {#using-your-segment}
 
-Los segmentos se utilizan para dirigir el contenido real que ven determinadas audiencias de destino. Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md) para obtener más información sobre audiencias y segmentos, y [Creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md) acerca del uso de audiencias y segmentos para segmentar contenido.
+Los segmentos se utilizan para dirigir el contenido real que ven determinadas audiencias de destino. Consulte [Administración de públicos](/help/sites-authoring/managing-audiences.md) para obtener más información sobre públicos y segmentos, y [Creación de contenido objetivo](/help/sites-authoring/content-targeting-touch.md) acerca del uso de públicos y segmentos para segmentar contenido.

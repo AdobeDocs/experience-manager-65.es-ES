@@ -1,5 +1,5 @@
 ---
-title: Client Context
+title: Contexto de cliente
 description: Aprenda a utilizar Client Context para ver información sobre la página actual y el visitante en Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,13 +12,11 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '2007'
 ht-degree: 0%
-
 ---
 
-
-# Client Context{#client-context}
+# Contexto de cliente{#client-context}
 
 >[!NOTE]
 >
@@ -63,7 +61,7 @@ Client Context puede mostrar las siguientes propiedades ([según lo que se haya 
 * la posición **mouse X**
 * la posición **Y** del ratón
 
-AEM **Flujo de actividad**: Proporciona información sobre la actividad social del usuario en varias plataformas; por ejemplo, los foros de la, blogs, clasificaciones, etc.
+**Flujo de actividad** Proporciona información sobre la actividad social del usuario en varias plataformas; por ejemplo, foros de AEM, blogs, clasificaciones, etc.
 
 **Campaign** permite a los autores simular una experiencia específica para una campaña. Este componente anula la resolución normal de la campaña y la selección de experiencias para habilitar la prueba de varias permutaciones.
 
@@ -87,7 +85,7 @@ Cuando se muestra en Context Cloud, el componente utiliza una API de Google para
 
 >[!NOTE]
 >
->AEM En la versión 6.1, el almacén de geolocalización ya no proporciona la función de geocodificación inversa. Por lo tanto, el almacén de geolocalización ya no recupera detalles sobre la ubicación actual, como el nombre de la ciudad o el código de país. Los segmentos que utilicen estos datos de almacén no funcionarán correctamente. El almacén de geolocalización solo contiene la latitud y longitud de una ubicación.
+>En AEM 6.1, el almacén de geolocalización ya no proporciona la función de geocodificación inversa. Por lo tanto, el almacén de geolocalización ya no recupera detalles sobre la ubicación actual, como el nombre de la ciudad o el código de país. Los segmentos que utilicen estos datos de almacén no funcionarán correctamente. El almacén de geolocalización solo contiene la latitud y longitud de una ubicación.
 
 **Almacén JSONP** Componente que muestra contenido que depende de la instalación.
 
@@ -211,25 +209,25 @@ La edición de un contexto de cliente se puede utilizar para establecer (o resta
 
 ### Añadir un componente de propiedad {#adding-a-property-component}
 
-Después de abrir la **página de diseño del ClientContext**, también puede **agregar** una propiedad completamente nueva mediante los componentes disponibles (los componentes se enumeran en la barra de tareas o en el cuadro de diálogo **Insertar nuevo componente** que se abre después de hacer doble clic en el cuadro **Arrastrar componentes o recursos aquí**):
+Después de abrir la **página de diseño de ClientContext**, también puede **agregar** una propiedad completamente nueva mediante los componentes disponibles (los componentes se enumeran en la barra de tareas o en el cuadro de diálogo **Insertar nuevo componente** que se abre después de hacer doble clic en el cuadro **Arrastrar componentes o recursos aquí**):
 
 ![Agregar una propiedad a la ventana Client Context](assets/clientcontext_alisonparker_new.png)
 
 ### Eliminación de un componente de propiedad {#removing-a-property-component}
 
-Después de abrir la **página de diseño del ClientContext**, también puede **quitar** una propiedad si ya no es necesaria. Esto incluye propiedades proporcionadas de forma predeterminada; **Reset** las restablecerá si se han eliminado.
+Después de abrir la **página de diseño de ClientContext**, también puede **quitar** una propiedad si ya no es necesaria. Esto incluye propiedades proporcionadas de forma predeterminada; **Reset** las restablecerá si se han eliminado.
 
 ## Almacenamiento de datos en Client Context mediante JSONP {#storing-data-in-client-context-via-jsonp}
 
 Siga este ejemplo para utilizar el componente de almacén de contexto JSONP Store para agregar datos externos a Client Context. A continuación, cree un segmento basado en la información de esos datos. El ejemplo utiliza el servicio JSONP que proporciona WIPmania.com. El servicio devuelve información de geolocalización basada en la dirección IP del cliente web.
 
-En este ejemplo se utiliza el sitio web de ejemplo Geometrixx Outdoors para acceder a Client Context y probar el segmento creado. Puede utilizar un sitio web diferente siempre y cuando la página tenga habilitado Client Context. (Consulte [Agregar Client Context a una página](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
+En este ejemplo se utiliza el sitio web de ejemplo de Geometrixx Outdoors para acceder a Client Context y probar el segmento creado. Puede utilizar un sitio web diferente siempre y cuando la página tenga habilitado Client Context. (Consulte [Agregar Client Context a una página](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
 ### Añadir el componente de tienda JSONP {#add-the-jsonp-store-component}
 
 Agregue el componente Almacenamiento JSONP a Client Context y utilícelo para recuperar y almacenar información de geolocalización sobre el cliente web.
 
-1. Abra la página de inicio en inglés del sitio de Geometrixx Outdoors AEM en la instancia de autor de la. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Abra la página de inicio en inglés del sitio de Geometrixx Outdoors en la instancia de autor de AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Para abrir Client Context, pulse Ctrl-Alt-c (Windows) o control-opción-c (Mac).
 1. Haga clic en el icono de edición en la parte superior de Client Context para abrir Client Context Designer.
 
@@ -249,7 +247,7 @@ Agregue el componente Almacenamiento JSONP a Client Context y utilícelo para re
    ![Las propiedades del servicio JSONP](assets/chlimage_1-40.png)
 
 1. Haga clic en Aceptar.
-1. Vuelva a la página principal de los Geometrixx Outdoors y actualice la página. Client Context ahora incluye la información del componente Tienda JSONP.
+1. Vuelva a la página principal de Geometrixx Outdoors y actualice la página. Client Context ahora incluye la información del componente Tienda JSONP.
 
    ![Ejemplo del componente JSONP rellenado con datos](assets/chlimage_1-41.png)
 

@@ -12,11 +12,9 @@ feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 0%
-
+source-wordcount: '3524'
+ht-degree: 1%
 ---
-
 # Ampliación y configuración del importador de diseños para páginas de destino{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 En esta sección se describe cómo configurar y, si lo desea, ampliar el importador de diseños para páginas de aterrizaje. El trabajo con páginas de aterrizaje después de la importación se cubre en [páginas de aterrizaje.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
@@ -27,7 +25,7 @@ Estos son los pasos lógicos para que el importador de diseños reconozca el com
 
 1. Crear un TagHandler
 
-   * Un controlador de etiquetas es un POJO que administra etiquetas de HTML de un tipo específico. El &quot;tipo&quot; de HTML que TagHandler puede gestionar se define mediante la propiedad OSGi de TagHandlerFactory &quot;tagpattern.name&quot;. Esta propiedad OSGi es esencialmente una regex que debe coincidir con la etiqueta html de entrada que desee administrar. Todas las etiquetas anidadas se lanzarán al controlador de etiquetas para su gestión. Por ejemplo, si se registra en un div que contiene una etiqueta &lt;p> anidada, la etiqueta &lt;p> también se lanzará a su TagHandler y depende de usted cómo desee encargarse de ella.
+   * Un controlador de etiquetas es un POJO que administra etiquetas de HTML de un tipo específico. El &quot;tipo&quot; de etiquetas de HTML que puede gestionar TagHandler se define mediante la propiedad OSGi de TagHandlerFactory &quot;tagpattern.name&quot;. Esta propiedad OSGi es esencialmente una regex que debe coincidir con la etiqueta html de entrada que desee administrar. Todas las etiquetas anidadas se lanzarán al controlador de etiquetas para su gestión. Por ejemplo, si se registra en un div que contiene una etiqueta &lt;p> anidada, la etiqueta &lt;p> también se lanzará a su TagHandler y depende de usted cómo desee encargarse de ella.
    * La interfaz del controlador de etiquetas es similar a una interfaz del controlador de contenido SAX. Recibe eventos SAX para cada etiqueta html. Como proveedor de controladores de etiquetas, debe implementar ciertos métodos del ciclo vital a los que llama automáticamente el marco de trabajo del importador de diseños.
 
 1. Cree su TagHandlerFactory correspondiente.
@@ -41,13 +39,13 @@ Estos son los pasos lógicos para que el importador de diseños reconozca el com
 
 >[!CAUTION]
 >
->AEM El importador de diseños, usado para importar páginas de aterrizaje, [ha quedado obsoleto con la versión 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features) de la aplicación.
+>El importador de diseño, usado para importar páginas de aterrizaje [, ha quedado obsoleto con AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
-## Preparación del HTML para la importación {#preparing-the-html-for-import}
+## Preparación de HTML para su importación {#preparing-the-html-for-import}
 
-Después de crear una página de importador, puede importar la página de aterrizaje completa del HTML. Para importar la página de aterrizaje del HTML, primero debe comprimir su contenido en un paquete de diseño. El paquete de diseño contiene la página de aterrizaje del HTML junto con los recursos a los que se hace referencia (imágenes, css, iconos, scripts, etc.).
+Después de crear una página de importador, puede importar la página de aterrizaje completa de HTML. Para importar la página de aterrizaje de HTML, primero debe comprimir su contenido en un paquete de diseño. El paquete de diseño contiene la página de aterrizaje de HTML junto con los recursos a los que se hace referencia (imágenes, css, iconos, secuencias de comandos, etc.).
 
-La siguiente hoja de trucos proporciona un ejemplo de cómo preparar el HTML para la importación:
+La siguiente hoja de trucos proporciona un ejemplo de cómo preparar HTML para la importación:
 
 Hoja de características clave de página de aterrizaje
 
@@ -72,13 +70,13 @@ El diseño se basa en el diseño de prácticas recomendadas de HTML5 Boilerplate
 >
 >Como mínimo, el paquete de diseño **debe** contener un archivo **index.html** en el nivel raíz. Si la página de aterrizaje que se va a importar también tiene una versión móvil, el zip debe contener **mobile.index.html** junto con **index.html** en el nivel raíz.
 
-### Preparación del HTML de página de aterrizaje {#preparing-the-landing-page-html}
+### Preparación de la página de aterrizaje en HTML {#preparing-the-landing-page-html}
 
-Para poder importar el HTML, debe agregar un div de lienzo al HTML de la página de aterrizaje.
+Para poder importar HTML, debe añadir un div de lienzo a la página de aterrizaje de HTML.
 
-El div lienzo es un html **div** con `id="cqcanvas"` que debe insertarse dentro de la etiqueta de HTML `<body>` y debe envolver el contenido que se va a convertir.
+El div lienzo es un html **div** con `id="cqcanvas"` que debe insertarse dentro de la etiqueta HTML `<body>` y debe envolver el contenido que se va a convertir.
 
-A continuación se muestra un fragmento de ejemplo del HTML de la página de aterrizaje después de agregar el div de lienzo:
+A continuación se muestra un fragmento de ejemplo de la página de aterrizaje de HTML después de agregar el div de lienzo:
 
 ```xml
 <!doctype html>
@@ -96,25 +94,25 @@ A continuación se muestra un fragmento de ejemplo del HTML de la página de ate
 </html>
 ```
 
-### Preparación del HTML AEM para incluir componentes editables de la {#preparing-the-html-to-include-editable-aem-components}
+### Preparación de HTML para incluir componentes editables de AEM {#preparing-the-html-to-include-editable-aem-components}
 
-AEM AEM Al importar una página de aterrizaje, tiene la opción de importar la página tal cual, lo que significa que después de importar la página de aterrizaje no puede editar ninguno de los elementos importados en (aún puede agregar componentes de adicionales en la página).
+Al importar una página de aterrizaje, tiene la opción de importar la página tal cual, lo que significa que después de importar la página de aterrizaje no puede editar ninguno de los elementos importados en AEM (aún puede agregar componentes de AEM adicionales en la página).
 
-AEM Antes de importar la página de aterrizaje, es posible que desee convertir algunas partes de la página de aterrizaje para que sean componentes editables de la página de aterrizaje, por lo que es posible que no se puedan editar en la página de aterrizaje. Esto permite editar rápidamente partes de la página de aterrizaje incluso después de importar el diseño de esta.
+Antes de importar la página de aterrizaje, es posible que desee convertir algunas partes de la página de aterrizaje para que sean componentes editables de AEM. Esto permite editar rápidamente partes de la página de aterrizaje incluso después de importar el diseño de esta.
 
-Para ello, agregue `data-cq-component` al componente apropiado en el archivo de HTML que importa.
+Para ello, agregue `data-cq-component` al componente apropiado en el archivo HTML que importa.
 
-En la siguiente sección se describe cómo editar el archivo de HTML AEM para convertir determinadas partes de las páginas de aterrizaje en diferentes componentes editables de la. Los componentes se describen en detalle en [Componentes de páginas de aterrizaje](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
+En la siguiente sección se describe cómo editar el archivo HTML para convertir determinadas partes de las páginas de aterrizaje en diferentes componentes editables de AEM. Los componentes se describen en detalle en [Componentes de páginas de aterrizaje](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
 
 >[!NOTE]
 >
->El marcado del HTML AEM para convertir partes de la página de aterrizaje en componentes de la página de aterrizaje tiene un formulario largo y una declaración de etiqueta abreviada. Ambos se describen para cada componente.
+>El marcado de HTML para convertir partes de la página de aterrizaje en componentes de AEM tiene una declaración de etiqueta de formato largo y otra de forma abreviada. Ambos se describen para cada componente.
 
 ### Limitaciones {#limitations}
 
 Antes de realizar la importación, tenga en cuenta las siguientes limitaciones:
 
-### No se conserva ningún atributo como class o id aplicado en la etiqueta &lt;body> {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### No se conserva ningún atributo como clase o id aplicado en la etiqueta &lt;body> {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 Si se aplica algún atributo como id o class en la etiqueta body por ejemplo, `<body id="container">`, no se conservará después de la importación. Por lo tanto, el diseño que se esté importando no debería tener dependencias en los atributos aplicados en la etiqueta `<body>`.
 
@@ -132,22 +130,22 @@ Los navegadores que admiten &quot;arrastrar y soltar&quot; del zip de diseño so
 
 Cualquier propiedad de página (por ejemplo, Dominio personalizado, Aplicación de HTTPS, etc.) establecida para una página (que utiliza la plantilla Página de aterrizaje en blanco) antes de importar el paquete de diseño se pierde después de importar el diseño. Por lo tanto, la práctica recomendada es establecer las propiedades de la página después de importar el paquete de diseño.
 
-### Se supone un marcado solo de HTML {#html-only-markup-assumed}
+### Se supone solo marcado de HTML {#html-only-markup-assumed}
 
-En la importación, el marcado se sanea por motivos de seguridad y para evitar la importación y publicación de marcado no válido. Esto supone un marcado solo de HTML y que se filtrarán todas las demás formas de elementos, como SVG en línea o componentes web.
+En la importación, el marcado se sanea por motivos de seguridad y para evitar la importación y publicación de marcado no válido. Esto supone que solo hay marcado de HTML y que se filtrarán todas las demás formas de elementos, como SVG en línea o componentes web.
 
 ### Texto {#text}
 
-Marcado de HTML para insertar un componente de texto (`foundation/components/text`) en el HTML dentro del paquete de diseño:
+Marcado de HTML para insertar un componente de texto (`foundation/components/text`) en HTML en el paquete de diseño:
 
 ```xml
 <div data-cq-component="text"> <p>This is some editable text</p> </div>
 ```
 
-Si se incluye el marcado anterior en el HTML, se hace lo siguiente:
+Si se incluye el marcado anterior en HTML, se hace lo siguiente:
 
-* AEM Crea un componente de texto editable de la ( `sling:resourceType=foundation/components/text`) en la página de aterrizaje creada después de importar el paquete de diseño.
-* Establece la propiedad `text` del componente de texto creado en el HTML incluido en `div`.
+* Crea un componente de texto de AEM editable ( `sling:resourceType=foundation/components/text`) en la página de aterrizaje creada después de importar el paquete de diseño.
+* Establece la propiedad `text` del componente de texto creado en el HTML incluido dentro de `div`.
 
 **Declaración de etiqueta de componente abreviada**:
 
@@ -178,15 +176,15 @@ Para añadir un texto con color (rosa) que se pueda editar en el editor RTE:
 
 ### Título {#title}
 
-Marcado de HTML para insertar un componente de título (`wcm/landingpage/components/title`) en el HTML dentro del paquete de diseño:
+Marcado de HTML para insertar un componente de título (`wcm/landingpage/components/title`) en HTML en el paquete de diseño:
 
 ```xml
 <div data-cq-component="title"> <h1>This is some editable title text</h1> </div>
 ```
 
-Si se incluye el marcado anterior en el HTML, se hace lo siguiente:
+Si se incluye el marcado anterior en HTML, se hace lo siguiente:
 
-* AEM Crea un componente de título de editable ( `sling:resourceType=wcm/landingpage/components/title`) en la página de aterrizaje creada después de importar el paquete de diseño.
+* Crea un componente de título de AEM editable ( `sling:resourceType=wcm/landingpage/components/title`) en la página de aterrizaje creada después de importar el paquete de diseño.
 * Establece la propiedad `jcr:title` del componente de título creado en el texto de la etiqueta de encabezado incluida en div.
 * Establece la propiedad `type` en la etiqueta de encabezado, en este caso `h1`.
 
@@ -200,7 +198,7 @@ El componente de título admite siete tipos: `h1, h2, h3, h4, h5, h6` y `default
 
 ### Imagen {#image}
 
-marcado del HTML para insertar un componente de imagen (base/componentes/imagen) en el HTML dentro del paquete de diseño:
+Marcado de HTML para insertar un componente de imagen (base/componentes/imagen) en HTML en el paquete de diseño:
 
 ```xml
 <div data-cq-component="image">
@@ -208,9 +206,9 @@ marcado del HTML para insertar un componente de imagen (base/componentes/imagen)
 </div>
 ```
 
-Si se incluye el marcado anterior en el HTML, se hace lo siguiente:
+Si se incluye el marcado anterior en HTML, se hace lo siguiente:
 
-* AEM Crea un componente de imagen de editable ( `sling:resourceType=foundation/components/image`) en la página de aterrizaje creada después de importar el paquete de diseño.
+* Crea un componente de imagen de AEM editable ( `sling:resourceType=foundation/components/image`) en la página de aterrizaje creada después de importar el paquete de diseño.
 * Establece la propiedad `fileReference` del componente de imagen creado en la ruta a la que se importa la imagen especificada en el atributo src.
 * Establece la propiedad `alt` en el valor del atributo alt de la etiqueta img.
 * Establece la propiedad `title` al valor del atributo title en la etiqueta img.
@@ -235,9 +233,9 @@ Si se intenta la conversión de un componente con una etiqueta `<img>` con un sr
 
 Sin embargo, en caso contrario, las imágenes de URL absolutas son compatibles con las etiquetas img que no forman parte del div Componente de imagen.
 
-### Componentes de llamada a la acción {#call-to-action-components}
+### Componentes de call-to-action {#call-to-action-components}
 
-Puede marcar parte de la página de aterrizaje para importarla como un &quot;componente editable de llamada a la acción&quot;; estos componentes importados se pueden editar después de importar la página de aterrizaje. AEM La incluye los siguientes componentes de CTA:
+Puede marcar parte de la página de aterrizaje para importarla como un &quot;componente editable de Call to action&quot;; estos componentes importados de call-to-action se pueden editar después de importar la página de aterrizaje. AEM incluye los siguientes componentes de CTA:
 
 * Vínculo de pulsación: Permite añadir un vínculo de texto que, cuando se hace clic, lleva al visitante a una URL de destino.
 * Vínculo gráfico: le permite añadir una imagen que, cuando se hace clic, lleva al visitante a una dirección URL de destino.
@@ -249,10 +247,10 @@ Este componente de CTA se puede utilizar para agregar un vínculo de texto en la
 Propiedades compatibles
 
 * Etiquetar con negrita, cursiva y opciones de subrayado
-* AEM URL de destino, admite URL de terceros y de la
+* URL de destino, admite URL de terceros y de AEM
 * Opciones de procesamiento de páginas (misma ventana, nueva ventana, etc.)
 
-HTML para incluir el componente de pulsaciones en el zip importado. Aquí href se asigna a la dirección URL de destino, &quot;Ver detalles del producto&quot; se asigna a la etiqueta, etc.
+Etiqueta de HTML para incluir el componente de pulsaciones en el zip importado. Aquí href se asigna a la dirección URL de destino, &quot;Ver detalles del producto&quot; se asigna a la etiqueta, etc.
 
 ```xml
 <div id="cqcanvas">
@@ -276,16 +274,16 @@ Este componente se puede utilizar en cualquier aplicación independiente o se pu
 
 #### Vínculo gráfico {#graphical-link}
 
-Este componente de CTA se puede utilizar para añadir cualquier imagen gráfica con vínculo en la página de aterrizaje. La imagen puede ser un botón simple o cualquier imagen gráfica como fondo. Al hacer clic en la imagen, el usuario se dirige a la URL de destino especificada en las propiedades del componente. Forma parte del grupo &quot;Llamada a la acción&quot;.
+Este componente de CTA se puede utilizar para añadir cualquier imagen gráfica con vínculo en la página de aterrizaje. La imagen puede ser un botón simple o cualquier imagen gráfica como fondo. Al hacer clic en la imagen, el usuario se dirige a la URL de destino especificada en las propiedades del componente. Forma parte del grupo &quot;Call to action&quot;.
 
 Propiedades compatibles
 
 * Recorte, rotación de imágenes
 * Texto, descripción y tamaño de desplazamiento en píxeles
-* AEM URL de destino, admite URL de terceros y de la
+* URL de destino, admite URL de terceros y de AEM
 * Opciones de procesamiento de páginas (misma ventana, nueva ventana, etc.)
 
-HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí href se asigna a la dirección URL de destino, img src es la imagen de renderización, &quot;título&quot; se toma como texto de desplazamiento, etc.
+Etiqueta de HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí href se asigna a la dirección URL de destino, img src es la imagen de renderización, &quot;título&quot; se toma como texto de desplazamiento, etc.
 
 ```xml
 <div id="cqcanvas">
@@ -323,9 +321,9 @@ Un formulario de posible cliente es un formulario que se utiliza para recopilar 
 **Funciones compatibles**
 
 * Campos de posibles clientes predefinidos: nombre, apellido, dirección, dob, sexo, acerca de, userId, emailId, botón de envío están disponibles en la barra de tareas. Basta con arrastrar y soltar el componente necesario en el formulario de posible cliente.
-* Con la ayuda de estos componentes, el autor puede diseñar un formulario de posible cliente independiente, estos campos corresponden a campos de formulario de posible cliente. En la aplicación zip independiente o importada, el usuario puede añadir campos adicionales utilizando los campos cq:form o cta del formulario de posibles clientes, asignarles un nombre y diseñarlos según los requisitos.
+* Con la ayuda de estos componentes, el autor puede diseñar un formulario de posible cliente independiente, estos campos corresponden a campos de formulario de posible cliente. En la aplicación zip independiente o importada, el usuario puede agregar campos adicionales utilizando los campos de formulario cq:form o cta lead, asignarles un nombre y diseñarlos de acuerdo con los requisitos.
 * Asigne campos de formulario de posibles clientes con nombres predefinidos específicos de formularios de posibles clientes de CTA, por ejemplo, - firstName para el nombre en el formulario de posibles clientes, etc.
-* Los campos que no están asignados al formulario principal se asignan a los componentes cq:form: texto, radio, casilla de verificación, lista desplegable, oculto, contraseña.
+* Los campos que no están asignados al formulario de posibles clientes se asignan a componentes cq:form: texto, radio, casilla de verificación, lista desplegable, oculto, contraseña.
 * El usuario puede proporcionar el título con la etiqueta &quot;label&quot; y puede proporcionar estilo utilizando el atributo de estilo &quot;class&quot; (solo disponible para componentes de formulario de posibles clientes de CTA).
 * La página de agradecimiento y la lista de suscripción se pueden proporcionar como un parámetro oculto del formulario (presente en el index.htm) o se pueden agregar o editar desde la barra de edición de Inicio del formulario de posibles clientes
 
@@ -335,7 +333,7 @@ Un formulario de posible cliente es un formulario que se utiliza para recopilar 
 
 * Las restricciones como - obligatorio se pueden proporcionar desde la configuración de edición de cada uno de los componentes.
 
-HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí, &quot;firstName&quot; está asignado al nombre del formulario principal, y así sucesivamente, excepto para las casillas de verificación: estas dos casillas de verificación se asignan al componente desplegable cq:form.
+Etiqueta de HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí &quot;firstName&quot; está asignado al nombre del formulario de posible cliente, etc., excepto para las casillas de verificación: estas dos casillas de verificación se asignan al componente desplegable cq:form.
 
 ```xml
 <div id="cqcanvas">
@@ -368,11 +366,11 @@ HTML para incluir el componente de vínculo gráfico en el zip importado. Aquí,
 
 ### Parsys {#parsys}
 
-AEM AEM El componente de sistema de datos de Parsys es un componente de contenedor que puede contener otros componentes de la. Es posible añadir un componente Parsys en el HTML importado. AEM Esto permite al usuario añadir o eliminar componentes editables de la a la página de aterrizaje incluso después de importarlos.
+El componente Parsys de AEM es un componente contenedor que puede contener otros componentes de AEM. Es posible añadir un componente Parsys en el HTML importado. Esto permite al usuario añadir o eliminar componentes editables de AEM en la página de aterrizaje incluso después de importarlos.
 
 El sistema de párrafos permite a los usuarios añadir componentes mediante la barra de tareas.
 
-Marcado de HTML para insertar un componente Parsys (`foundation/components/parsys`) en el HTML dentro del paquete de diseño:
+Marcado de HTML para insertar un componente Parsys (`foundation/components/parsys`) en HTML dentro del paquete de diseño:
 
 ```xml
 <div data-cq-component="parsys">
@@ -381,9 +379,9 @@ Marcado de HTML para insertar un componente Parsys (`foundation/components/parsy
 </div>
 ```
 
-Incluir el marcado anterior en el HTML hace lo siguiente:
+Incluir el marcado anterior en HTML hace lo siguiente:
 
-* AEM Inserta un componente Parsys de la (foundation/components/parsys) en la página de aterrizaje creada después de importar el paquete de diseño.
+* Inserta un componente Parsys de AEM (foundation/components/parsys) en la página de aterrizaje creada después de importar el paquete de diseño.
 * Inicializa la barra de tareas con componentes predeterminados. Se pueden añadir nuevos componentes a la página de aterrizaje arrastrando componentes de la barra de tareas al componente Parsys.
 * Dos componentes de título también forman parte de Parsys.
 
@@ -411,15 +409,15 @@ El marcado html para insertar un componente de destinatario y también crear dif
 
 ## Opciones de importación adicionales {#additional-importing-options}
 
-AEM Además de especificar si los componentes importados son editables, también puede configurar lo siguiente antes de importar el paquete de diseño:
+Además de especificar si los componentes importados son componentes editables de AEM, también puede configurar lo siguiente antes de importar el paquete de diseño:
 
-* Configurar las propiedades de la página extrayendo los metadatos definidos en el HTML importado.
-* Especificar la codificación charset en el HTML.
+* Configurar las propiedades de la página extrayendo los metadatos definidos en la HTML importada.
+* Especificar la codificación charset en HTML.
 * Superponiendo la plantilla de página del importador.
 
-### Configuración de propiedades de página mediante la extracción de metadatos definidos en el HTML importado {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
+### Configuración de propiedades de página mediante la extracción de metadatos definidos en HTML importado {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-El importador de diseños extraerá y conservará como propiedad &quot;jcr:description&quot; los metadatos siguientes declarados en el encabezado del HTML importado:
+El importador de diseños extraerá y conservará los metadatos siguientes declarados en el encabezado de HTML importado como la propiedad &quot;jcr:description&quot;:
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
@@ -429,7 +427,7 @@ El importador de diseños extraerá y conservará el atributo de idioma establec
 
 ### Especificar la codificación charset en el html {#specifying-the-charset-encoding-in-the-html}
 
-El importador de diseño lee la codificación especificada en el HTML importado. La codificación se puede especificar de la siguiente manera:
+El importador de diseño lee la codificación especificada en la HTML importada. La codificación se puede especificar de la siguiente manera:
 
 `<meta charset="UTF-8">`
 
@@ -437,17 +435,17 @@ El importador de diseño lee la codificación especificada en el HTML importado.
 
 `<meta http-equiv="content-type" content="text/html;charset=utf-8">`
 
-Si no se especifica ninguna codificación en el HTML importado, la codificación predeterminada establecida por el importador de diseño es UTF-8.
+Si no se especifica ninguna codificación en la HTML importada, la predeterminada establecida por el importador de diseño es UTF-8.
 
 ### Plantilla superpuesta {#overlaying-template}
 
 La plantilla Página de aterrizaje en blanco se puede reproducir creando una en: `/apps/<appName>/designimporter/templates/<templateName>`
 
-AEM Los pasos para crear una plantilla en la se explican en [Plantillas](/help/sites-developing/templates.md).
+Los pasos para crear una plantilla en AEM se explican en [Plantillas](/help/sites-developing/templates.md).
 
 ### Referencia a un componente desde la página de aterrizaje {#referring-a-component-from-landing-page}
 
-Supongamos que tiene un componente al que desea hacer referencia en el HTML mediante el atributo data-cq-component tal que el importador de diseños procesa un componente incluido en este lugar. Por ejemplo, desea hacer referencia al componente de tabla ( `resourceType = /libs/foundation/components/table`). Se debe añadir lo siguiente en el HTML:
+Supongamos que tiene un componente al que desea hacer referencia en HTML mediante el atributo data-cq-component y que el importador de diseños procesa un componente incluido en este lugar. Por ejemplo, desea hacer referencia al componente de tabla ( `resourceType = /libs/foundation/components/table`). Se debe añadir lo siguiente en HTML:
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -461,7 +459,7 @@ No se recomienda el uso de selectores CSS similares a los siguientes para elemen
 |---|---|---|
 | E + F | un elemento F precedido inmediatamente por un elemento E | [Combinador adyacente del mismo nivel](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | un elemento F precedido de un elemento E | [Combinador general del mismo nivel](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:raíz | un elemento E, raíz del documento | [pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:root | un elemento E, raíz del documento | [pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-child(n) | un elemento E, el número n secundario de su elemento principal | [pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-child(n) | un elemento E, el número n secundario de su elemento principal, contando desde el último | [pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-of-type(n) | un elemento E, el número n del mismo nivel de su tipo | [pseudoclases estructurales](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
@@ -469,9 +467,9 @@ No se recomienda el uso de selectores CSS similares a los siguientes para elemen
 
 Esto se debe a que elementos html adicionales como la etiqueta &lt;div> se añaden al HTML generado después de la importación.
 
-* AEM Tampoco se recomiendan los scripts que dependen de la estructura similar a la anterior para usarlos con elementos marcados para la conversión a componentes de la.
+* Tampoco se recomiendan los scripts que dependen de una estructura similar a la anterior para su uso con elementos marcados para su conversión a componentes de AEM.
 * No se recomienda el uso de estilos en las etiquetas de marcado para la conversión de componentes como &lt;div data-cq-component=&quot;&ast;&quot;>.
-* El diseño debe seguir las prácticas recomendadas de las plantillas de HTML5. Más información sobre: [https://html5boilerplate.com/](https://html5boilerplate.com/).
+* El diseño debe seguir las prácticas recomendadas de las plantillas HTML5. Más información sobre: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuración de módulos OSGI {#configuring-osgi-modules}
 
@@ -494,17 +492,17 @@ En la tabla siguiente se describen brevemente las propiedades:
   <tr>
    <td>Importador de diseños de página de aterrizaje</td>
    <td>Extraer filtro</td>
-   <td>La lista de expresiones regulares que se utilizarán para filtrar archivos de extracción. <br />: se excluyen de la extracción las entradas zip que coincidan con cualquiera de los patrones especificados</td>
+   <td>La lista de expresiones regulares que se utilizarán para filtrar archivos de extracción. <br /> Las entradas zip que coincidan con cualquiera de los patrones especificados se excluirán de la extracción</td>
   </tr>
   <tr>
    <td>Generador de páginas de aterrizaje</td>
    <td>Patrón de archivos</td>
-   <td>El Generador de páginas de aterrizaje se puede configurar para que gestione los archivos de HTML que coinciden con una expresión regular según se define en el patrón de archivo.</td>
+   <td>El Generador de páginas de aterrizaje se puede configurar para que gestione los archivos HTML que coinciden con una expresión regular según se define en el patrón de archivo.</td>
   </tr>
   <tr>
    <td>Generador de páginas de aterrizaje móviles</td>
    <td>Patrón de archivos</td>
-   <td>El Generador de páginas de aterrizaje se puede configurar para que gestione los archivos de HTML que coinciden con una expresión regular según se define en el patrón de archivo.</td>
+   <td>El Generador de páginas de aterrizaje se puede configurar para que gestione los archivos HTML que coinciden con una expresión regular según se define en el patrón de archivo.</td>
   </tr>
   <tr>
    <td> </td>
@@ -514,7 +512,7 @@ En la tabla siguiente se describen brevemente las propiedades:
   <tr>
    <td>Preprocesador de entrada de página de aterrizaje</td>
    <td>Patrón de búsqueda </td>
-   <td>El patrón que se va a buscar en el contenido de la entrada del archivo. Esta expresión regular coincide con la entrada de contenido línea a línea. Tras la coincidencia, el texto coincidente se reemplaza con el patrón de reemplazo especificado.<br /> <br /> Consulte la nota siguiente con respecto a las limitaciones actuales del preprocesador de entrada de página de aterrizaje.</td>
+   <td>El patrón que se va a buscar en el contenido de la entrada del archivo. Esta expresión regular coincide con la entrada de contenido línea a línea. Tras la coincidencia, el texto coincidente se reemplaza con el patrón de reemplazo especificado.<br /> <br /> Consulte la nota siguiente sobre las limitaciones actuales del preprocesador de entrada de página de aterrizaje.</td>
   </tr>
   <tr>
    <td> </td>
@@ -556,13 +554,13 @@ Si hay algún error (por ejemplo, el paquete importado no es un zip válido), la
 
 Si hay advertencias (por ejemplo, HTML se refiere a imágenes que no existen dentro del paquete), el importador de diseños importa el zip pero al mismo tiempo muestra una lista de problemas/advertencias en el panel de resultados. Al hacer clic en el vínculo de problemas, se muestra una lista de advertencias que señalan cualquier problema dentro del paquete de diseño. Los distintos escenarios en los que el importador de diseños captura y muestra advertencias son los siguientes:
 
-* El HTML hace referencia a imágenes que no existen dentro del paquete.
-* El HTML hace referencia a scripts que no existen dentro del paquete.
+* HTML se refiere a imágenes que no existen dentro del paquete.
+* HTML hace referencia a scripts que no existen dentro del paquete.
 * HTML hace referencia a estilos que no existen dentro del paquete.
 
-### AEM ¿Dónde se almacenan los archivos del archivo ZIP en el que se ha guardado el archivo {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
+### ¿Dónde se almacenan los archivos del archivo ZIP en AEM? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-AEM Una vez importada la página de aterrizaje, los archivos (imágenes, css, js, etc.) del paquete de diseño se almacenan en la siguiente ubicación de:
+Una vez importada la página de aterrizaje, los archivos (imágenes, css, js, etc.) del paquete de diseño se almacenan en la siguiente ubicación de AEM:
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
@@ -591,7 +589,7 @@ con un archivo CSS aplicado en la clase `box` de la siguiente manera:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-Entonces `box img` se usa en el importador de diseño, la página de aterrizaje resultante parece no haber conservado el formato. AEM Para solucionar esto, agrega etiquetas div en el CSS y, en consecuencia, reescribe el código. De lo contrario, algunas reglas CSS no serán válidas.
+Entonces `box img` se usa en el importador de diseño, la página de aterrizaje resultante parece no haber conservado el formato. Para evitarlo, AEM agrega etiquetas div en CSS y reescribe el código en consecuencia. De lo contrario, algunas reglas CSS no serán válidas.
 
 ```xml
 .box img
