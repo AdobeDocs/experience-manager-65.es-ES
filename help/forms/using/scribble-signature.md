@@ -1,22 +1,25 @@
 ---
 title: Usar la firma manuscrita en formularios HTML5
+
 description: Los formularios HTML5 se utilizan cada vez más en dispositivos táctiles y uno de los requisitos comunes es ser compatibles con firmas. La firma de documentos en dispositivos móviles es una forma aceptada de firmar formularios en dispositivos móviles.
+
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
+
 docset: aem65
+
 feature: Forms Designer,Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '657'
 ht-degree: 96%
-
 ---
-
 # Usar la firma manuscrita en formularios HTML5{#using-scribble-signature-in-html-forms}
 
 Los formularios HTML5 se utilizan cada vez más en dispositivos táctiles y uno de los requisitos comunes es ser compatibles con firmas. Garabatear (escribir con un lápiz o un dedo) se está convirtiendo en una forma aceptada de firmar formularios en dispositivos móviles. Los formularios HTML5 y Forms Designer ahora habilitan la opción de tener un campo de firma de anotaciones en el formulario. Cuando el formulario se procesa en el explorador, se puede iniciar sesión en estos campos con un lápiz, ratón o contacto.
@@ -102,4 +105,4 @@ Haga clic en el icono **Pinceles** para mostrar una lista de los tamaños de plu
 Para eliminar las firmas del formulario, haga lo siguiente:
 
 * (Dispositivos móviles) Presione durante mucho tiempo el campo de firma y, en el cuadro de diálogo de confirmación, seleccione **Sí**.
-* (Escritorio) Pase el ratón sobre el campo de firma y haga clic en el botón **Cancelar** y, en el cuadro de diálogo de confirmación, haga clic en **Sí**.
+* (Escritorio) Pase el puntero por encima del campo de firma y haga clic en el botón **Cancelar** y, en el cuadro de diálogo de confirmación, haga clic en **Sí**.
