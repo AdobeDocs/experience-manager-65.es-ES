@@ -13,16 +13,14 @@ source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 7%
-
 ---
-
 # Especificar la configuración de seguridad {#specify-security-settings}
 
 >[!NOTE]
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-Output permite controlar si se resuelven las entidades externas en las entradas XML. AEM De forma predeterminada, se resuelven, pero puede cambiar este comportamiento para aumentar la seguridad del sistema de formularios de la aplicación de formularios de la.
+Output permite controlar si se resuelven las entidades externas en las entradas XML. De forma predeterminada, se resuelven, pero puede cambiar este comportamiento para aumentar la seguridad del sistema de formularios de AEM.
 
 **Impedir el procesamiento de archivos de datos XML que contengan referencias a entidades externas**
 

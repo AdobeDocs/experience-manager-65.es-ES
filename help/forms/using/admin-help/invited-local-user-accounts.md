@@ -1,21 +1,23 @@
 ---
 title: Administrar cuentas de usuario invitadas y locales
+
 description: Con Document Security, puede buscar, ver, editar, bloquear, desbloquear y eliminar cuentas de usuario invitadas y locales.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1211'
 ht-degree: 1%
-
 ---
-
 # Administrar cuentas de usuario invitadas y locales {#managing-invited-and-local-user-accounts}
 
 >[!NOTE]
@@ -99,7 +101,7 @@ Si elimina una cuenta de usuario, sólo usted u otro administrador podrán resta
 
 >[!NOTE]
 >
->AEM Los usuarios invitados que se eliminaron a través de la interfaz de administración de usuarios de formularios en el que se ha realizado la invitación no pueden volver a invitarse hasta que se hayan eliminado de nuevo mediante el siguiente procedimiento.
+>Los usuarios invitados que se eliminaron a través de la interfaz de administración de usuarios de formularios AEM Forms no pueden volver a ser invitados hasta que se hayan eliminado de nuevo mediante el siguiente procedimiento.
 
 1. En la consola de administración, haga clic en Servicios > Document Security > Usuarios invitados y locales y, a continuación, haga clic en la pestaña Usuarios invitados.
 1. Active la casilla de verificación situada junto a uno o varios usuarios, haga clic en Eliminar y, a continuación, haga clic en Aceptar.
@@ -132,6 +134,6 @@ Puede encontrar usuarios más fácilmente ordenando la lista de usuarios por enc
 * Un triángulo que señala hacia arriba indica un orden ascendente.
 * Un triángulo que señala hacia abajo indica un orden descendente.
 
-   1. En la consola de administración, haga clic en Servicios > Document Security > Usuarios invitados y locales.
-   1. Para ordenar los usuarios invitados, haga clic en la pestaña Usuarios invitados y seleccione el encabezado de columna correspondiente.
-   1. Para ordenar los usuarios locales, haga clic en la ficha Usuarios locales y seleccione el encabezado de columna correspondiente.
+  1. En la consola de administración, haga clic en Servicios > Document Security > Usuarios invitados y locales.
+  1. Para ordenar los usuarios invitados, haga clic en la pestaña Usuarios invitados y seleccione el encabezado de columna correspondiente.
+  1. Para ordenar los usuarios locales, haga clic en la ficha Usuarios locales y seleccione el encabezado de columna correspondiente.

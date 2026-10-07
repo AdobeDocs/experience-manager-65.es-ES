@@ -8,14 +8,12 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
-release-date: 2025-08-05T00:00:00Z
+release-date: 2025-08-05
 source-git-commit: 3f64cfa688ef1f0090b7ce0d821324593cbea693
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 5%
-
+source-wordcount: '699'
+ht-degree: 8%
 ---
-
 # Mitigación de RCE (CVE-2025-49533), configuración del modo de desarrollo de Struts (CVE-2025-54253), XXE (CVE-2025-54254) y vulnerabilidades para AEM Forms en JEE {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 
 ## Referencia rápida
@@ -81,7 +79,7 @@ Esta precaución le permite restaurar el estado original en caso de que encuentr
 
 **Paso 1: Descargar y extraer el paquete de revisión**
 
-- Descargar la revisión [para 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md) desde el Portal de distribución de software de Adobe
+- Descargar la revisión [para 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md) desde el portal de distribución de software de Adobe
 - Extraerlo localmente
 
 **Paso 2: Vaya a la carpeta de versiones correcta**

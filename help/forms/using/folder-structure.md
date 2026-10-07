@@ -13,9 +13,7 @@ source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
-
 ---
-
 # Explicación de la estructura de carpetas {#understanding-the-folder-structure}
 
 Los componentes de AEM Forms Workspace han sido diseñados sobre arquitectura MVC mediante Backbone. Cada componente tiene un archivo para:
