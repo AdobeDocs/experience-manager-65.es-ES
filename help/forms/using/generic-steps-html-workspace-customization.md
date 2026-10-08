@@ -12,11 +12,9 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 73%
-
 ---
-
 # Pasos genéricos para la personalización de AEM Forms Workspace {#generic-steps-for-aem-forms-workspace-customization}
 
 Los pasos genéricos para realizar cualquier personalización son los siguientes:

@@ -1,20 +1,18 @@
 ---
 title: Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL
-description: AEM Aprenda a utilizar los fragmentos de contenido de la aplicación de con GraphQL para la entrega de contenido sin encabezado.
+description: Aprenda a utilizar los fragmentos de contenido de AEM con GraphQL para la entrega de contenido sin encabezado.
 feature: Content Fragments,Headless,GraphQL
 role: User,Developer
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 74%
-
+source-wordcount: '697'
+ht-degree: 72%
 ---
-
 # Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Con Adobe Experience Manager AEM AEM (), puede utilizar fragmentos de contenido, junto con la API de GraphQL de la aplicación (una implementación personalizada, basada en GraphQL estándar), para ofrecer contenido estructurado sin encabezado para su uso en aplicaciones. La capacidad de personalizar una sola consulta de API le permite recuperar y entregar el contenido específico que desea o necesita procesar (como respuesta a la consulta de API única).
+Con Adobe Experience Manager (AEM), puede utilizar fragmentos de contenido, junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar), para ofrecer contenido estructurado sin encabezado para su uso en aplicaciones. La capacidad de personalizar una sola consulta de API le permite recuperar y entregar el contenido específico que desea o necesita procesar (como respuesta a la consulta de API única).
 
 <!--
 >[!NOTE]
@@ -24,7 +22,7 @@ Con Adobe Experience Manager AEM AEM (), puede utilizar fragmentos de contenido,
 
 >[!NOTE]
 >
->GraphQL se utiliza actualmente en dos escenarios (independientes) en Adobe Experience Manager AEM ():
+>GraphQL se utiliza actualmente en dos escenarios (independientes) en Adobe Experience Manager (AEM):
 >
 >* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce/cif/integrating/magento.md).
 >* [Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
@@ -51,11 +49,11 @@ GraphQL es lo siguiente:
 
   Consulte [GraphQL.org](https://graphql.org)
 
-AEM La [API de GraphQL](#aem-graphql-api) le permite realizar consultas (complejas) en sus [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md); cada consulta depende de un tipo de modelo específico. Las aplicaciones pueden utilizar el contenido devuelto.
+La [API de AEM GraphQL](#aem-graphql-api) le permite realizar consultas (complejas) en sus [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md); y cada consulta se realiza según un tipo de modelo específico. Las aplicaciones pueden utilizar el contenido devuelto.
 
 ## API de AEM GraphQL {#aem-graphql-api}
 
-Para la experiencia de Adobe, se ha desarrollado una implementación personalizada de la API estándar de GraphQL. Consulte [AEM API de GraphQL para su uso con fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) para obtener más información.
+Para Adobe Experience Platform, se ha desarrollado una implementación personalizada de la API estándar de GraphQL. Consulte [AEM API de GraphQL para su uso con fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) para obtener más información.
 
 La implementación de la API de AEM GraphQL se basa en las [Bibliotecas Java de GraphQL](https://graphql.org/code/#java).
 
@@ -99,7 +97,7 @@ La **[Referencia de fragmento](/help/assets/content-fragments/content-fragments-
 
 * Permite recuperar datos estructurados.
 
-   * Cuando se define como **multifuente**, el fragmento principal puede hacer referencia (recuperar) a varios subfragmentos.
+  * Cuando se define como **multifuente**, el fragmento principal puede hacer referencia (recuperar) a varios subfragmentos.
 
 ### Previsualización de JSON {#json-preview}
 
