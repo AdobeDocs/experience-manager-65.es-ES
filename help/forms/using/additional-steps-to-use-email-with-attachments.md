@@ -7,11 +7,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 66%
-
+source-wordcount: '281'
+ht-degree: 67%
 ---
-
 # No se puede obtener correo electrónico con archivos adjuntos para AEM Forms en plataformas JEE{#unable-to-get-email-with-attachments}
 
 El problema se aplica a la siguiente versión:
@@ -41,7 +39,7 @@ El usuario no puede realizar operaciones como Enviar PDF por correo electrónico
 
 1. Instale `java.mail-1.5.jar` obtenido del paso 3. Este paso reinicia las propiedades sling de la implementación JEE. Espere a que se instalen los paquetes en `http://<server name>:<port>/lc/system/console/bundles` para mostrar el estado como **Activo**.
 
-   >Si el estado sigue siendo **InActive**, reinicie   **JBoss®** de la **Consola de servicios**.
+   >Si el estado sigue siendo **InActive**, reinicie **JBoss®** desde la **Consola de servicios**.
 
 
 1. Instale el archivo `javax.mail-1.5.6.redhat-1.jar` descargado mediante el paso 5.
