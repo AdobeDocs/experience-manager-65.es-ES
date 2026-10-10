@@ -1,5 +1,5 @@
 ---
-title: Herramientas de prueba y seguimiento
+title: Herramientas de pruebas y seguimiento
 description: AEM proporciona un marco de trabajo para probar la interfaz de usuario de los componentes y un mecanismo para probar y depurar componentes
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 1%
-
+source-wordcount: '293'
+ht-degree: 5%
 ---
-
-# Herramientas de prueba y seguimiento{#testing-and-tracking-tools}
+# Herramientas de pruebas y seguimiento{#testing-and-tracking-tools}
 
 ## Pruebas {#testing}
 
@@ -30,7 +39,7 @@ Las siguientes son dos herramientas de prueba de Open Source:
 
 **Selenio**
 
-Selenium se utiliza para probar funciones en un navegador con un usuario por actividad. Registra los pasos de prueba (clics) como tablas de HTML o clases de Java™.
+Selenium se utiliza para probar funciones en un navegador con un usuario por actividad. Registra los pasos de prueba (clics) como tablas HTML o clases Java™.
 
 Para obtener más información, consulte [https://www.selenium.dev/](https://www.selenium.dev/).
 

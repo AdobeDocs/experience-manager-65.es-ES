@@ -10,13 +10,22 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 56%
-
+source-wordcount: '289'
+ht-degree: 59%
 ---
-
 # Integración con Adobe Analytics{#integrating-with-adobe-analytics}
 
 La integración de Adobe Analytics y AEM permite rastrear la actividad de la página web:
@@ -34,7 +43,7 @@ Los datos incluyen datos de páginas y usuarios; por ejemplo:
 Las siguientes páginas le ayudan a configurar la integración:
 
 * [Conectarse a Adobe Analytics y crear marcos](/help/sites-administering/adobeanalytics-connect.md)
-* [Configuración del seguimiento de vínculos para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
+* [Configuración de Seguimiento de vínculos para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
 * [Asignación de datos de componente con propiedades de Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
 * [Configuración del seguimiento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 * [Clasificaciones de Adobe](/help/sites-administering/adobeanalytics-classifications.md)
@@ -56,8 +65,8 @@ Consulte:
 >Si utiliza Adobe Analytics con una configuración proxy personalizada, debe [configurar dos paquetes](/help/sites-deploying/configuring-osgi.md) OSGi (por ejemplo, con la consola web) necesarios para las configuraciones proxy del cliente **HTTP de Apache**. Ambas son necesarias, ya que algunas funcionalidades de AEM utilizan las API 3.x, mientras que otras utilizan las API 4.x. Configuración de:
 >
 >* **Cliente HTTP 3.1 de Day Commons** para configurar la API 3.x;
->  &#x200B;>  por ejemplo, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>  por ejemplo, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* **Configuración proxy de componentes HTTP de Apache** para configurar la API 4.x;
->  &#x200B;>  por ejemplo, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>  por ejemplo, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
