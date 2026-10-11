@@ -10,7 +10,18 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '5471'
 ht-degree: 0%
@@ -298,7 +309,7 @@ Obtenga las siguientes bibliotecas de JavaScript e inclúyalas en una carpeta de
 * jquery.js (disponible a través de la carpeta de biblioteca de cliente `/etc/clientlibs/granite/jquery` (category = jquery)
 * [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (un evento jquery que se produce una vez que se cambia el tamaño de la ventana)
 
-**Sugerencia:** Puede concatenar automáticamente varias carpetas de biblioteca de cliente incrustando [3&rbrace;.](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)
+**Sugerencia:** Puede concatenar automáticamente varias carpetas de biblioteca de cliente incrustando [3}.](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)
 
 **HTML**
 

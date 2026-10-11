@@ -1,6 +1,6 @@
 ---
 title: Purgar registros de la base de datos de Job Manager
-description: AEM Los datos de proceso grandes pueden reducir el rendimiento de los formularios en la. Se recomienda depurar los datos de proceso cuando ya no son necesarios los registros.
+description: Los datos de proceso grandes pueden reducir el rendimiento de los formularios AEM. Se recomienda depurar los datos de proceso cuando ya no son necesarios los registros.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -9,20 +9,34 @@ exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '487'
 ht-degree: 2%
-
 ---
-
 # Purgar registros de la base de datos de Job Manager {#purge-records-from-the-job-manager-database}
 
 >[!NOTE]
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-AEM Los datos de proceso que se generan cuando se invoca un proceso de larga duración pueden llegar a ser demasiado grandes, lo que da como resultado un rendimiento de formularios más bajo y el uso de espacio en disco innecesario. Se recomienda depurar los datos de proceso cuando ya no son necesarios los registros.
+Los datos de proceso que se generan cuando se invoca un proceso de larga duración pueden llegar a ser demasiado grandes, lo que da como resultado un menor rendimiento de los formularios AEM Forms y el uso de espacio en disco innecesario. Se recomienda depurar los datos de proceso cuando ya no son necesarios los registros.
 
 Puede utilizar la consola de administración para realizar una depuración única de registros obsoletos o para programar depuraciones automáticas regulares. En [Depuración de datos de proceso](/help/forms/using/admin-help/purging-process-data.md#purging-process-data) se describen otros métodos para purgar registros obsoletos.
 
@@ -67,6 +81,6 @@ La información sobre cualquier depuración programada actualmente se muestra en
 
    >[!NOTE]
    >
-   >AEM Si especifica una fecha y una hora de inicio que sean anteriores, los formularios de datos de la aplicación calcularán la fecha de inicio siguiente lógica en función de la fecha especificada. Por ejemplo, si programa las depuraciones del trabajo para que se produzcan semanalmente a partir del 7 de abril y ahora es el 9 de abril, la primera depuración se producirá el 14 de abril.
+   >Si especifica una fecha y una hora de inicio que sean anteriores, los formularios AEM Forms calcularán la siguiente fecha de inicio lógica en función de la fecha especificada. Por ejemplo, si programa las depuraciones del trabajo para que se produzcan semanalmente a partir del 7 de abril y ahora es el 9 de abril, la primera depuración se producirá el 14 de abril.
 
 1. Haga clic en Iniciar planificador. Cualquier configuración del programador programada anteriormente se reemplaza por la nueva configuración.

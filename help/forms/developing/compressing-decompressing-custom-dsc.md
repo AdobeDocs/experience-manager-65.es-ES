@@ -5,13 +5,27 @@ exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
 # Comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE {#compressing-decompressing-files}
 
 ## Conocimientos previos requeridos {#prerequisites}
@@ -192,38 +206,38 @@ Unique name for service descriptor.
 </component>
 ```
 
-## Packaging and deploying the component {#packaging-deploying-component}
+## Empaquetado e implementación del componente {#packaging-deploying-component}
 
-1. Compile the Java™ project and create a .JAR file.
-1. Deploy the component (.JAR file) to the AEM Forms on JEE runtime through Workbench.
-1. Start the service from Workbench (see Figure below).
+1. Compile el proyecto Java™ y cree un archivo .JAR.
+1. Implemente el componente (archivo .JAR) en el tiempo de ejecución de AEM Forms en JEE a través de Workbench.
+1. Inicie el servicio desde Workbench (consulte la figura siguiente).
 
-![Process Design](assets/process-design.jpg)
+![Diseño de procesos](assets/process-design.jpg)
 
-## Using the ZIP service in workflows {#using-zip-service-in-workflows}
+## Uso del servicio ZIP en flujos de trabajo {#using-zip-service-in-workflows}
 
-The UnzipDocument operation of the custom service can now accept a document variable as input and return a list of document variables as output.
+La operación UnzipDocument del servicio personalizado ahora puede aceptar una variable de documento como entrada y devolver una lista de variables de documento como salida.
 
-![Unzip Document](assets/unzip-doc.jpg)
+![Descomprimir documento](assets/unzip-doc.jpg)
 
-Similarly the ZipDocuments operation of the custom component can accept a list of documents as input, compress them as a zip file and return the compressed document.
+Del mismo modo, la operación ZipDocuments del componente personalizado puede aceptar una lista de documentos como entrada, comprimirlos como archivo zip y devolver el documento comprimido.
 
-![Zip Document](assets/zip-doc.jpg)
+![Documento Zip](assets/zip-doc.jpg)
 
-The following workflow orchestration shows how to decompress the given ZIP file, compress it back to another ZIP file, and return output (see Figure below).
+La siguiente orquestación del flujo de trabajo muestra cómo descomprimir el archivo ZIP, comprimirlo de nuevo en otro archivo ZIP y devolver la salida (consulte la figura siguiente).
 
-![Unzip Zip workflow](assets/unzip-zip-process.jpg)
+![Descomprimir flujo de trabajo ZIP](assets/unzip-zip-process.jpg)
 
-## Some business use cases {#business-use-cases}
+## Algunos casos de uso empresariales {#business-use-cases}
 
-You can use this ZIP Service for the following use cases:
+Puede utilizar este servicio ZIP para los siguientes casos de uso:
 
-* Find all files in a given folder and return the files as a compressed document.
+* Busque todos los archivos de una carpeta determinada y devuélvalos como un documento comprimido.
 
-* Supply a ZIP file containing several PDF documents which can be reader extended after decompressing them. This requires AEM Forms on JEE Reader Extensions module.
+* Proporcione un archivo ZIP que contenga varios documentos de PDF que se puedan leer y ampliar después de descomprimirlos. Esto requiere AEM Forms en el módulo de extensiones de Reader JEE.
 
-* Supply a ZIP file containing a heterogeneous type of document that can be decompressed and converted as PDF document using the Generate PDF service.
+* Suministre un archivo ZIP que contenga un tipo heterogéneo de documento que se pueda descomprimir y convertir como documento de PDF mediante el servicio Generate PDF.
 
-* Policy protect a list of documents and return as a ZIP file.
+* Política de proteger una lista de documentos y devolver como archivo ZIP.
 
-* Let users download all the attachments of a process instance as a single ZIP file.
+* Permite a los usuarios descargar todos los archivos adjuntos de una instancia de proceso como un solo archivo ZIP.

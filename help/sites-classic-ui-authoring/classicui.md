@@ -1,6 +1,6 @@
 ---
 title: Creación en la IU clásica
-description: La IU clásica es la interfaz de usuario orientada al escritorio que ha estado disponible desde CQ5. La siguiente documentación sobre la creación de informes se centra en esta interfaz de usuario. AEM La interfaz de usuario táctil es la nueva interfaz de usuario estándar para los dispositivos de escritorio y táctiles, diseñada para su uso en dispositivos táctiles y de escritorio. Consulte la documentación de creación estándar para obtener más información.
+description: La IU clásica es la interfaz de usuario orientada al escritorio que ha estado disponible desde CQ5. La siguiente documentación sobre la creación de informes se centra en esta interfaz de usuario. La IU táctil es la nueva interfaz de usuario estándar para AEM, diseñada para utilizarse tanto en dispositivos táctiles como de escritorio. Consulte la documentación de creación estándar para obtener más información.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -9,24 +9,33 @@ exl-id: 05286d1e-4266-4521-bbb5-0bd51de4d552
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 0%
-
+source-wordcount: '190'
+ht-degree: 5%
 ---
-
 # Creación en la IU clásica{#authoring-in-the-classic-ui}
 
 ## IU clásica e IU táctil {#classic-ui-and-touch-enabled-ui}
 
-AEM La IU clásica es la interfaz de usuario orientada al escritorio que ha estado disponible desde CQ5 (la interfaz predecesora de la interfaz de usuario de). La siguiente documentación sobre la creación de informes se centra en esta interfaz de usuario.
+La IU clásica es la interfaz de usuario orientada al escritorio que ha estado disponible desde CQ5 (la predecesora de AEM). La siguiente documentación sobre la creación de informes se centra en esta interfaz de usuario.
 
-AEM La interfaz de usuario táctil es la nueva interfaz de usuario estándar para los dispositivos de escritorio y táctiles, diseñada para su uso en dispositivos táctiles y de escritorio. Consulte la [documentación de creación estándar](/help/sites-authoring/author.md) para obtener más información.
+La interfaz de usuario táctil es la nueva interfaz de usuario estándar para AEM, diseñada para utilizarse tanto en dispositivos táctiles como de escritorio. Consulte la [documentación de creación estándar](/help/sites-authoring/author.md) para obtener más información.
 
 >[!NOTE]
 >
->AEM Debido a que la IU táctil es la IU estándar de los, la IU clásica ya no se mantiene. Esto significa que hay ciertas funciones que no están disponibles en la IU clásica.
+>Dado que la IU táctil es la IU estándar de AEM, la IU clásica ya no se mantiene. Esto significa que hay ciertas funciones que no están disponibles en la IU clásica.
 
 ## Concepto de creación (y publicación) {#concept-of-authoring-and-publishing}
 

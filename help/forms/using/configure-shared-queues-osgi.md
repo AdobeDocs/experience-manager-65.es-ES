@@ -8,13 +8,31 @@ exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '847'
 ht-degree: 100%
-
 ---
-
 # Compartir y solicitar acceso a los elementos de la bandeja de entrada de un usuario {#share-and-request-access}
 
 Una cola es una lista de elementos de la Bandeja de entrada de AEM de un usuario. Pueden ser elementos asignados a un usuario o elementos compartidos con el grupo al que pertenece un usuario. Puede acceder a la Bandeja de entrada para ver y realizar acciones con un elemento de la Bandeja de entrada. Por ejemplo, compartir un elemento con otro usuario.
@@ -34,14 +52,14 @@ La bandeja de entrada AEM permite compartir uno o todos los elementos de la band
 Siga estos pasos para compartir todos los elementos de una Bandeja de entrada con otro usuario:
 
 1. Inicie sesión en la instancia de AEM. Seleccione el icono ![Bandeja de entrada](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
-1. Seleccione ![Selector de vista](assets/viewlist.svg) o el icono ![Selector de vista](assets/calendar.svg) junto al botón **[!UICONTROL Crear]** y luego seleccione **[!UICONTROL Configuración]**.  Aparece el cuadro de diálogo Configuración.
+1. Seleccione ![Selector de vista](assets/viewlist.svg) o el icono ![Selector de vista](assets/calendar.svg) junto al botón **[!UICONTROL Crear]** y luego seleccione **[!UICONTROL Configuración]**. Aparece el cuadro de diálogo Configuración.
 1. Abra la pestaña **[!UICONTROL Compartir]** en el cuadro de diálogo Configuración.
 1. Introduzca el nombre de un usuario en el cuadro de texto **[!UICONTROL Conceder acceso a los elementos de la Bandeja de entrada]** y seleccione **[!UICONTROL Conceder]**. Repita el paso para agregar más usuarios. Todos los usuarios con acceso a sus elementos aparecen en la sección **Nombre de usuario**.
 1. Seleccione **[!UICONTROL Guardar]**.
 
 >[!NOTE]
 >
->(Solo para elementos de los flujos de trabajo centrados en formularios) Active la opción **[Permitir que el usuario asignado comparta elementos a través del uso compartido de la Bandeja de entrada](aem-forms-workflow-step-reference.md)** del paso **Asignar tarea** del flujo de trabajo. Solo se mostrarán a los demás usuarios los elementos que tengan la opción mencionada activada.
+>(Solo para elementos de los flujos de trabajo centrados en formularios) Active la opción **[Permitir que el usuario asignado comparta elementos a través del uso compartido de la Bandeja de entrada](aem-forms-workflow-step-reference.md)** del paso **Asignar tarea** del flujo de trabajo. Solo se mostrarán a los demás usuarios los elementos que tengan la opción mencionada habilitada.
 
 ### Compartir elementos individuales
 
@@ -55,7 +73,7 @@ Realice los siguientes pasos para compartir un elemento de la Bandeja de entrada
 
 >[!NOTE]
 >
->(Solo para elementos de los flujos de trabajo centrados en formularios) Active la opción **[Permitir que el usuario asignado comparta explícitamente elementos en la Bandeja de entrada](aem-forms-workflow-step-reference.md)** del paso **Asignar tarea** del flujo de trabajo. Solo se mostrarán a los demás usuarios los elementos que tengan la opción mencionada activada.
+>(Solo para elementos de los flujos de trabajo centrados en formularios) Active la opción **[Permitir que el usuario asignado comparta explícitamente elementos en la Bandeja de entrada](aem-forms-workflow-step-reference.md)** del paso **Asignar tarea** del flujo de trabajo. Solo se mostrarán a los demás usuarios los elementos que tengan la opción mencionada habilitada.
 
 ## Solicitar acceso a los elementos de la bandeja de entrada {#request-access}
 
@@ -78,11 +96,11 @@ Solo puede empezar a trabajar en un elemento compartido una vez que lo ha reclam
 
 ## Liberar elementos reclamados {#release-items}
 
-Solo puede trabajar en un elemento compartido una vez que lo ha reclamado. El resto de los usuarios no pueden ver los elementos que ha reclamado ni trabajar en ellos. Si no puede continuar trabajando en un elemento, puede volver a liberarlo en el grupo. Una vez liberado, otros usuarios podrán reclamarlo y trabajar con él:
+Solo puede trabajar en un elemento compartido una vez que lo ha reclamado. El resto de los usuarios no pueden ver los elementos que ha reclamado ni trabajar en ellos. Si no puede continuar trabajando en un elemento, puede volver a liberarlo en el grupo.   Una vez liberado, otros usuarios podrán reclamarlo y trabajar con él:
 
 Realice los siguientes pasos para liberar un elemento:
 
-1. Inicie sesión en la instancia de AEM. Seleccione el icono Bandeja de entrada ![Bandeja de entrada](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**.  Aparecerá una lista de los elementos de la Bandeja de entrada.
+1. Inicie sesión en la instancia de AEM. Seleccione el icono Bandeja de entrada ![Bandeja de entrada](assets/bell.svg) y luego seleccione **[!UICONTROL Ver todo]**. Aparecerá una lista de los elementos de la Bandeja de entrada.
 1. Seleccione el elemento que desea liberar y seleccione **[!UICONTROL Anular reclamación]**. El elemento volverá a agregarse al grupo. Ahora otros podrán reclamar el elemento.
 
 ## Restricciones {#limitations}

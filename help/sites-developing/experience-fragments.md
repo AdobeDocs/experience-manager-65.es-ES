@@ -10,13 +10,22 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1824'
 ht-degree: 1%
-
 ---
-
 # Fragmentos de experiencias {#experience-fragments}
 
 ## Conceptos básicos {#the-basics}
@@ -64,11 +73,11 @@ El selector de representación sin formato usa un transformador en lugar de scri
 La representación de HTML se genera mediante las canalizaciones de reescritura de Sling. La canalización se ha definido en `/libs/experience-fragments/config/rewriter/experiencefragments`. El transformador de HTML admite las siguientes opciones:
 
 * `allowedCssClasses`
-   * Expresión de RegEx que coincide con las clases CSS que deben dejarse en la representación final.
-   * Esto resulta útil si el cliente desea eliminar algunas clases CSS específicas
+  * Expresión de RegEx que coincide con las clases CSS que deben dejarse en la representación final.
+  * Esto resulta útil si el cliente desea eliminar algunas clases CSS específicas
 * `allowedTags`
-   * Una lista de etiquetas HTML que se permitirán en la representación final.
-   * De forma predeterminada, se permiten las siguientes etiquetas (no se necesita configuración): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link y script
+  * Una lista de etiquetas HTML que se permitirán en la representación final.
+  * De forma predeterminada, se permiten las siguientes etiquetas (no se necesita configuración): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link y script
 
 Se recomienda configurar la reescritura mediante una superposición. Ver [Superposiciones](/help/sites-developing/overlays.md)
 
@@ -86,12 +95,12 @@ Para ello, se deben utilizar las siguientes propiedades:
 
 * Para extraer la imagen
 
-   * `fileReference`
-   * `fileName`
+  * `fileReference`
+  * `fileName`
 
 * Para extraer el texto
 
-   * `text`
+  * `text`
 
 Los componentes que no utilizan esta convención no se tienen en cuenta.
 
@@ -114,7 +123,7 @@ Para crear una plantilla de fragmento de experiencia detectada por el asistente 
 
    1. Y el nombre de la plantilla debe comenzar por:
       `experience-fragments`
-Esto permite a los usuarios crear fragmentos de experiencias en /content/experience-fragments, ya que la propiedad `cq:allowedTemplates` de esta carpeta incluye todas las plantillas que tienen nombres que comienzan por `experience-fragment`. Los clientes pueden actualizar esta propiedad para incluir sus propios esquemas de nomenclatura o ubicaciones de plantillas.
+      Esto permite a los usuarios crear fragmentos de experiencias en /content/experience-fragments, ya que la propiedad `cq:allowedTemplates` de esta carpeta incluye todas las plantillas que tienen nombres que comienzan por `experience-fragment`. Los clientes pueden actualizar esta propiedad para incluir sus propios esquemas de nomenclatura o ubicaciones de plantillas.
 
 1. [Las plantillas permitidas](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) se pueden configurar en la consola Fragmentos de experiencias.
 <!--
@@ -257,7 +266,7 @@ Para que el servicio funcione, ahora hay tres métodos que deben implementarse d
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
 
-   * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
 * ` [getPriority](#priorities-getpriority)`
 

@@ -9,20 +9,36 @@ exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 0%
-
+source-wordcount: '739'
+ht-degree: 1%
 ---
-
 # Configurar la autenticación basada en certificados {#configuring-certificate-based-authentication}
 
 >[!NOTE]
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-Administración de usuarios suele realizar la autenticación con un nombre de usuario y una contraseña. Administración de usuarios también admite la autenticación basada en certificados, que puede utilizar para autenticar a los usuarios mediante Acrobat o para autenticar a los usuarios mediante programación. AEM Para obtener más información sobre cómo autenticar usuarios mediante programación, vea [Programar con formularios de la aplicación de la manera de usar y de usar la aplicación de código de tiempo](https://www.adobe.com/go/learn_aemforms_programming_63).
+Administración de usuarios suele realizar la autenticación con un nombre de usuario y una contraseña. Administración de usuarios también admite la autenticación basada en certificados, que puede utilizar para autenticar a los usuarios mediante Acrobat o para autenticar a los usuarios mediante programación. Para obtener más información sobre cómo autenticar usuarios mediante programación, vea [Programar con formularios AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 
 Para utilizar la autenticación basada en certificados, importe un certificado de entidad emisora de certificados (CA) de confianza en el almacén de confianza y, a continuación, cree una asignación de certificado.
 
@@ -39,7 +55,7 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 * El certificado es válido.
 * El emisor especificado puede comprobar el certificado.
 * El certificado contiene el atributo necesario para la asignación.
-* AEM La asignación especificada asigna el certificado solo a un usuario de la base de datos de formularios en la que se haya realizado la asignación de forma. Se comprueban los usuarios actuales y obsoletos (eliminados) para determinar si coinciden con los criterios de asignación. Por lo tanto, la prueba de certificado falla si más de un usuario, incluidos los usuarios obsoletos, tiene el valor de atributo en consideración.
+* La asignación especificada asigna el certificado solo a un usuario de la base de datos de formularios de AEM. Se comprueban los usuarios actuales y obsoletos (eliminados) para determinar si coinciden con los criterios de asignación. Por lo tanto, la prueba de certificado falla si más de un usuario, incluidos los usuarios obsoletos, tiene el valor de atributo en consideración.
 
 >[!NOTE]
 >
@@ -51,7 +67,7 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 1. Haga clic en Nueva asignación de certificado y, en la lista Para emisor, seleccione el alias de certificado según se ha configurado en Administración de almacén de confianza.
 1. Asigne uno de los atributos del certificado al atributo de un usuario. Por ejemplo, puede asignar el nombre común del certificado al ID de inicio de sesión del usuario.
 
-   Si el contenido del atributo en el certificado es diferente del contenido en el atributo del usuario en la base de datos de User Management, puede utilizar una expresión regular de Java (regex) para hacer coincidir los dos atributos. Por ejemplo, si los nombres comunes de los certificados son *Alex Pink (Authentication)* y *Alex Pink (Signing)* y el nombre común de la base de datos de User Management es *Alex Pink*, use una expresión regular para extraer la parte necesaria del atributo del certificado (en este ejemplo, *Alex Pink*). La expresión regular que especifique debe ajustarse a la especificación de Java regex.
+   Si el contenido del atributo en el certificado es diferente del contenido en el atributo del usuario en la base de datos de User Management, puede utilizar una expresión regular de Java (regex) para hacer coincidir los dos atributos. Por ejemplo, si los nombres comunes de los certificados son *Alex Pink (Authentication)* y *Alex Pink (Signing)* y el nombre común de la base de datos de administración de usuarios es *Alex Pink*, use una expresión regular para extraer la parte necesaria del atributo del certificado (en este ejemplo, *Alex Pink*). La expresión regular especificada debe ajustarse a la especificación regex de Java.
 
    Puede transformar la expresión especificando el orden de los grupos en el cuadro Orden personalizado. El orden personalizado se usa con el método `java.util.regex.Matcher.replaceAll()`. El comportamiento que se ve se corresponderá con el comportamiento de ese método y la cadena de entrada (el orden personalizado) debe especificarse en consecuencia.
 
@@ -60,7 +76,7 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
    Puede utilizar los siguientes caracteres en la regex:
 
    * . (cualquier carácter)
-   * &ast; (0 o más ocurrencias)
+   * &amp;ast; (0 o más ocurrencias)
    * () (especifique el grupo entre corchetes)
    * \ (se utiliza para convertir un carácter regex en un carácter normal)
    * $n (se usa para hacer referencia al grupo nth)
@@ -69,21 +85,21 @@ Al probar un certificado, Administración de usuarios carga las comprobaciones d
 
    * Para extraer &quot;Alex Pink&quot; de &quot;Alex Pink (Authentication)&quot;
 
-     **Regex:** (.&ast;) \(Authentication\)
+     **Regex:** (.&amp;ast;) \(Autenticación\)
 
    * Para extraer &quot;Alex Pink&quot; de &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Autenticación\) (.&amp;ast;)
 
    * Para extraer &quot;Pink Alex&quot; de &quot;Alex (Authentication) Pink&quot;
 
-     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Autenticación\) (.&amp;ast;)
 
      Pedido personalizado: $2 $1 (devuelve el segundo grupo, concatenado al primer grupo, capturado por el carácter de espacio en blanco)
 
    * Para extraer &quot;apink@sampleorg.com&quot; de &quot;smtp:apink@sampleorg.com&quot;
 
-     **Regex:** smtp:(.&ast;)
+     **Regex:** smtp:(.&amp;ast;)
 
    Para obtener más información sobre el uso de expresiones regulares, consulte [Tutorial de Java sobre expresiones regulares](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

@@ -1,6 +1,6 @@
 ---
 title: Supervisar las implementaciones de AEM Forms
-description: AEM Puede monitorizar las implementaciones de formularios de desde el nivel del sistema y desde un nivel interno. AEM Obtenga más información sobre la monitorización de implementaciones de formularios en el documento.
+description: Puede supervisar las implementaciones de formularios AEM Forms tanto a nivel del sistema como a nivel interno. Obtenga más información sobre la supervisión de implementaciones de formularios AEM Forms en este documento.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
@@ -9,16 +9,30 @@ exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 1%
-
 ---
+# Monitorizar las implementaciones de AEM Forms {#monitoring-aem-forms-deployments}
 
-# Supervisar las implementaciones de AEM Forms {#monitoring-aem-forms-deployments}
-
-AEM Puede monitorizar las implementaciones de formularios de desde el nivel del sistema y desde un nivel interno. Puede utilizar herramientas de administración especializadas como HP OpenView, IBM® Tivoli, CA UniCenter y un monitor JMX de terceros llamado *JConsole* para supervisar específicamente la actividad de Java™. AEM La implementación de una estrategia de monitorización mejora la disponibilidad, la fiabilidad y el rendimiento de las implementaciones de los formularios de la.
+Puede supervisar las implementaciones de formularios AEM Forms tanto a nivel del sistema como a nivel interno. Puede utilizar herramientas de administración especializadas como HP OpenView, IBM® Tivoli, CA UniCenter y un monitor JMX de terceros llamado *JConsole* para supervisar específicamente la actividad de Java™. La implementación de una estrategia de monitorización mejora la disponibilidad, la fiabilidad y el rendimiento de las implementaciones de los formularios AEM Forms.
 
 <!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
@@ -138,7 +152,7 @@ Para ver MBeans desde JConsole, configure los parámetros de inicio de JVM del s
 
 **WebSphere® 6.1: configurar el inicio de JVM**
 
-1. En el Admin Console (Servidor de aplicaciones > server1 > Definición de proceso > JVM), añada la siguiente línea al campo Argumento de JVM genérico:
+1. En Admin Console (Application server > server1 > Process Definition > JVM), añada la línea siguiente al campo Argumento de JVM genérico:
 
    ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote

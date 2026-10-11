@@ -9,13 +9,27 @@ exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '496'
 ht-degree: 2%
-
 ---
-
 # Administrar las categorías mostradas en Workspace {#managing-the-categories-displayed-in-workspace}
 
 >[!NOTE]
@@ -32,7 +46,7 @@ Cuando especifique nombres de categorías, créelos de modo que aparezcan correc
 
 En Workspace, los procesos dentro de una categoría generalmente se muestran como tarjetas en la página Iniciar proceso. En general, se pueden mostrar seis tarjetas en la pantalla para una categoría antes de que el usuario tenga que desplazarse para ver las tarjetas restantes. Dado que el desplazamiento dificulta la búsqueda de un proceso, considere la posibilidad de limitar cada categoría a seis procesos o, según la resolución, limitar el número de procesos que se pueden mostrar en la pantalla sin necesidad de ningún desplazamiento.
 
-AEM Si utiliza MySQL como base de datos de formularios de la aplicación, la consola de administración no puede diferenciar entre dos nombres de categoría que solo difieren en el uso de caracteres extendidos. Por ejemplo, si crea una categoría denominada abcde y otra denominada âbcdè, se considerarán iguales.
+Si utiliza MySQL como base de datos de formularios AEM Forms, la consola de administración no puede diferenciar entre dos nombres de categoría que solo difieren en el uso de caracteres extendidos. Por ejemplo, si crea una categoría denominada abcde y otra denominada âbcdè, se considerarán iguales.
 
 ## Agregar una categoría {#add-a-category}
 
@@ -41,7 +55,7 @@ AEM Si utiliza MySQL como base de datos de formularios de la aplicación, la con
 1. En el cuadro Nombre, escriba un nombre para la categoría y, en el cuadro Descripción, escriba una descripción de la categoría.
 1. Haga clic en Agregar. La categoría se muestra en la página Administración de categorías.
 
-   ***nota &#x200B;**: solo puede agregar hasta cinco niveles de jerarquía al crear categorías.*
+   ***nota **: solo puede agregar hasta cinco niveles de jerarquía al crear categorías.*
 
 ## Editar una categoría {#edit-a-category}
 

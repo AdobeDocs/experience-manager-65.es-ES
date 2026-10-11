@@ -5,13 +5,22 @@ exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 5%
-
 ---
-
 # Configuraciones y el explorador de configuración {#configuration-browser}
 
 Las configuraciones de AEM sirven para administrar la configuración en AEM y sirven como espacios de trabajo.
@@ -79,8 +88,8 @@ Es sencillo crear una configuración en AEM mediante el Explorador de configurac
 
    * El **Título** debe ser descriptivo.
    * El **nombre** se convierte en el nombre de nodo del repositorio.
-      * Se genera automáticamente en función del título y se ajusta según las [convenciones de nomenclatura de AEM.](/help/sites-developing/naming-conventions.md)
-      * Se puede modificar si es necesario.
+     * Se genera automáticamente en función del título y se ajusta según las [convenciones de nomenclatura de AEM.](/help/sites-developing/naming-conventions.md)
+     * Se puede modificar si es necesario.
 1. Compruebe el tipo de configuraciones que desea permitir.
    * [Configuraciones en la nube](/help/sites-administering/configurations.md)
    * [Segmentos de Context Hub](/help/sites-administering/segmentation.md)

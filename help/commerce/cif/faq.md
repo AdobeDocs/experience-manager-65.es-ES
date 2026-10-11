@@ -5,13 +5,21 @@ exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 51%
-
 ---
-
 # Preguntas frecuentes sobre la integración de AEM con Commerce mediante Commerce Integration Framework
 
 ## &#x200B;1. ¿CIF GraphQL solo se utiliza para fines comerciales o está disponible para consultar contenido creado en JCR de AEM?
@@ -70,7 +78,7 @@ Adobe recomienda administrar los datos y el contenido relacionados con el market
 
 ## &#x200B;14. ¿Cómo garantiza una empresa la conformidad con PCI al utilizar AEM para toda la capa de presentación?
 
-Adobe recomienda utilizar métodos de pago abstractos. Al hacerlo, el cliente del explorador se pone en comunicación directa con el proveedor de la puerta de enlace de pago para que Adobe no tenga ni pase la fecha del titular de la tarjeta ni las soluciones comerciales. Este enfoque solo requiere un nivel 3 de conformidad con PCI. Sin embargo, hay cosas adicionales que considerar para que sea totalmente compatible con PCI, como por ejemplo cómo los empleados interactúan con el sistema y los datos. Para obtener más información acerca del cumplimiento de PCI Adobe Commerce, consulte [Cumplimiento de PCI](https://business.adobe.com/es/products/magento/pci-compliance.html?lang=es)
+Adobe recomienda utilizar métodos de pago abstractos. Al hacerlo, el cliente del explorador se pone en comunicación directa con el proveedor de la puerta de enlace de pago para que Adobe no tenga ni pase la fecha del titular de la tarjeta ni las soluciones comerciales. Este enfoque solo requiere un nivel 3 de conformidad con PCI. Sin embargo, hay cosas adicionales que considerar para que sea totalmente compatible con PCI, como por ejemplo cómo los empleados interactúan con el sistema y los datos. Para obtener más información acerca del cumplimiento de PCI Adobe Commerce, consulte [Cumplimiento de PCI](https://business.adobe.com/products/magento/pci-compliance.html?lang=es)
 
 ## &#x200B;15. Si utilizo las versiones en la nube de AEM y Adobe Commerce, ¿es compatible esta solución conjunta con PCI?
 

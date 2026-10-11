@@ -1,18 +1,29 @@
 ---
 title: Plantillas de recursos
-description: Obtenga información acerca de las plantillas de recursos en  [!DNL Adobe Experience Manager Assets]  y cómo usar plantillas de recursos para crear material promocional.
+description: Obtenga información acerca de las plantillas de recursos de [!DNL Adobe Experience Manager Assets] y cómo usar plantillas de recursos para crear material promocional.
 contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1572'
 ht-degree: 2%
-
 ---
-
 # Plantillas de recursos {#asset-templates}
 
 Las plantillas de recursos son una clase especial de recursos que facilitan la reutilización rápida de contenido visualmente enriquecido para medios digitales e impresos. Una plantilla de activos consta de dos partes, la sección de mensajería fija y la sección editable. La sección de mensajería fija puede contener contenido de propiedad, como el logotipo de la marca y la información de copyright, que no se pueden editar. La sección editable puede contener contenido visual y textual en campos que se pueden editar para personalizar la mensajería.
@@ -124,7 +135,7 @@ Puede editar un material colateral inmediatamente después de crearlo. También 
    >
    >Para permitir que [!DNL Experience Manager] resuelva imágenes, haga lo siguiente:
    >
-   >* Incrustar imágenes al crear [!DNL InDesign] plantillas (vea [Acerca de los vínculos y los gráficos incrustados](https://helpx.adobe.com/es/indesign/using/graphics-links.html)).
+   >* Incrustar imágenes al crear [!DNL InDesign] plantillas (vea [Acerca de los vínculos y los gráficos incrustados](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Monte [!DNL Experience Manager] en el sistema de archivos local y, a continuación, asigne los iconos que faltan con los recursos existentes en [!DNL Experience Manager].
    >
 

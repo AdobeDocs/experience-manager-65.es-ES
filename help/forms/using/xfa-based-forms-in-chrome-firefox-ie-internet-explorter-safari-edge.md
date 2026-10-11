@@ -1,12 +1,29 @@
 ---
 title: No se puede abrir PDF forms basado en XFA en Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer o Apple Safari
 description: No se puede abrir PDF forms basado en XFA en Google Chrome, Firefox, Microsoft&reg; Edge, Microsoft&reg; Internet Explorer o Apple Safari
-
 feature: Adaptive Forms,Document Services
 exl-id: fdd15315-e0d6-4d80-acb4-2e0ecec716c4
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 2ffd69c153c60ada3fcb586ed5aa5bda48f645fc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -19,6 +36,6 @@ Muchas versiones recientes de exploradores han incluido su propia compatibilidad
 * Acrobat y Reader, en Microsoft® Windows®, le permiten configurar para abrir archivos PDF en modo de Vista protegida, lo que evita que se abra PDF forms basado en XFA. Asegúrese de que el modo Vista protegida de su Acrobat o Reader esté deshabilitado. Para obtener más información, consulte [Vista protegida (solo Windows)](https://helpx.adobe.com/in/reader/using/protected-mode-windows.html).
 * (Para desarrolladores de Forms) Adobe Experience Manager Forms también proporciona asistencia para lo siguiente:
 
-  * [procese formularios basados en XFA en HTML5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/introduction.html?lang=es&#key-capabilities-of-html-forms-br) de forma que se puedan abrir en exploradores compatibles con HTML5, incluidos los que se ejecuten en dispositivos móviles como iPad. La representación HTML5 de los formularios mantiene la presentación del diseño de formulario y admite la mayoría de las lógicas de formulario (como JavaScript, cálculo de formulario y validaciones de formulario) incrustadas en la plantilla de formulario XFA.
-  * [convertir formularios basados en XFA a Forms adaptable con capacidad de respuesta móvil](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=es&#create-an-adaptive-form-based-on-an-xfa-form-template). Estos formularios proporcionan un diseño interactivo, funciones de personalización y se adaptan de forma dinámica a las respuestas del usuario añadiendo o eliminando campos o secciones según sea necesario. También proporcionan conectores predeterminados para varias fuentes de datos, funciones de documento de registro y una conexión sencilla a Adobe Analytics para evaluar el rendimiento. Para obtener más información, vea [Características y características clave](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=es)
-    De este modo, sus inversiones en tecnología en formularios XFA están protegidas y siguen proporcionando una experiencia óptima a los usuarios finales. Para obtener más información, consulte [Documentación del producto de Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=es).
+  * [procese formularios basados en XFA en HTML5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/introduction.html?#key-capabilities-of-html-forms-br) de forma que se puedan abrir en exploradores compatibles con HTML5, incluidos los que se ejecuten en dispositivos móviles como iPad. La representación HTML5 de los formularios mantiene la presentación del diseño de formulario y admite la mayoría de las lógicas de formulario (como JavaScript, cálculo de formulario y validaciones de formulario) incrustadas en la plantilla de formulario XFA.
+  * [convertir formularios basados en XFA a Forms adaptable con capacidad de respuesta móvil](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?#create-an-adaptive-form-based-on-an-xfa-form-template). Estos formularios proporcionan un diseño interactivo, funciones de personalización y se adaptan de forma dinámica a las respuestas del usuario añadiendo o eliminando campos o secciones según sea necesario. También proporcionan conectores predeterminados para varias fuentes de datos, funciones de documento de registro y una conexión sencilla a Adobe Analytics para evaluar el rendimiento. Para obtener más información, vea [Características y características clave](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=en)
+    De este modo, sus inversiones en tecnología en formularios XFA están protegidas y siguen proporcionando una experiencia óptima a los usuarios finales. Para obtener más información, consulte [Documentación del producto de Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html).

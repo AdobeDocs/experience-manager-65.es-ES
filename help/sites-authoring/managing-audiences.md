@@ -10,13 +10,28 @@ exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 63%
-
+source-wordcount: '969'
+ht-degree: 65%
 ---
-
 # Administrar públicos{#managing-audiences}
 
 La consola Audiencias permite crear, organizar y administrar las audiencias de la cuenta de Adobe Target o administrar segmentos de ContextHub o Client Context:
@@ -65,7 +80,7 @@ Al utilizar más de una regla, estas reglas se combinan según el operador boole
 
 >[!NOTE]
 >
->Si no ve **Crear audiencia de Target &#x200B;** en el menú **Crear**, no tiene los permisos necesarios para crear una audiencia. Necesita permisos de escritura en **/etc/segmentation** para poder crear audiencias. Los autores de contenido del grupo tienen permisos de escritura de forma predeterminada.
+>Si no ve **Crear audiencia de Target** en el menú **Crear**, no tiene los permisos necesarios para crear una audiencia. Necesita permisos de escritura en **/etc/segmentation** para poder crear audiencias. Los autores de contenido del grupo tienen permisos de escritura de forma predeterminada.
 
 Para crear un público de Adobe Target:
 
@@ -73,7 +88,7 @@ Para crear un público de Adobe Target:
 
    ![captura de pantalla_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. En la consola Audiencias, haga clic en **Crear** y, a continuación **&#x200B; Crear audiencia de destino**.
+1. En la consola Audiencias, haga clic en **Crear** y, a continuación** Crear audiencia de destino**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 

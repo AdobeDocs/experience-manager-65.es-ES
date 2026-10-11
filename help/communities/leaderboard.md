@@ -9,13 +9,20 @@ exl-id: fd1b1749-13f9-4079-ae39-348676105852
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '114'
 ht-degree: 4%
-
 ---
-
 # Leaderboard Essentials {#leaderboard-essentials}
 
 Esta página proporciona información esencial para trabajar con la función de clasificación.
@@ -30,7 +37,7 @@ Ver [Aspectos básicos de puntuación e insignias](configure-scoring.md).
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/gamification/components/hbs/scoreboard</td>
+   <td>social/gamification/components/hbs/clasificación</td>
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
@@ -38,7 +45,7 @@ Ver [Aspectos básicos de puntuación e insignias](configure-scoring.md).
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
-   <td>cq.social.gamification.hbs.leaderboard</td>
+   <td>cq.social.gamification.hbs.scoreboard</td>
   </tr>
   <tr>
    <td> <strong>plantillas</strong></td>

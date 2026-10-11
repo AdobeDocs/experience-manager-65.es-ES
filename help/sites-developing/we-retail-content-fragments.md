@@ -9,24 +9,38 @@ exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,Developing
 role: Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 12%
-
+source-wordcount: '516'
+ht-degree: 15%
 ---
-
 # Prueba de fragmentos de contenido en We.Retail{#trying-out-content-fragments-in-we-retail}
 
 Los fragmentos de contenido permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). **We.Retail** (disponible en una instancia predeterminada de Adobe Experience Manager) proporciona el fragmento **Arctic Surfing en Lofoten** como una muestra básica. Esto ilustra lo siguiente:
 
-* Los fragmentos de contenido de Adobe Experience Manager AEM () se [crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal).
+* Los fragmentos de contenido de Adobe Experience Manager (AEM) se [crean y administran como recursos independientes de la página](/help/assets/content-fragments/content-fragments.md). Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal).
 
-   * Ver [Dónde encontrar los recursos de fragmentos de contenido en We.Retail](#where-to-find-content-fragments-in-we-retail)
+  * Ver [Dónde encontrar los recursos de fragmentos de contenido en We.Retail](#where-to-find-content-fragments-in-we-retail)
 
 * A continuación, [puede usar estos fragmentos y sus variaciones al crear](/help/sites-authoring/content-fragments.md) sus páginas de contenido.
 
-   * Consulte [Uso de fragmentos de contenido en We.Retail](#where-content-fragments-are-used-in-we-retail)
+  * Consulte [Uso de fragmentos de contenido en We.Retail](#where-content-fragments-are-used-in-we-retail)
 
 Para obtener la documentación completa sobre la creación, administración, uso y desarrollo de fragmentos de contenido:
 
@@ -49,7 +63,7 @@ Entre ellas se encuentra **Arctic Surfing in Lofoten**, un fragmento junto con r
 
 * Vaya por **Assets**, **Archivos**, **We.Retail**, **English**, **Experiencias**, **Surf ártico en Lofoten**:
 
-   * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
+  * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
 ![cf-44](assets/cf-44.png)
 
@@ -77,7 +91,7 @@ Por ejemplo, se hace referencia al fragmento de contenido **Arctic Surfing in Lo
 
 * Vaya por **Sites**, **We.Retail**, **Language Masters**, **English**, **Experience**. A continuación, abra **Arctic Surfing en Lofoten** para editarlo:
 
-   * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
+  * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 
 ![cf-53](assets/cf-53.png)
 
@@ -87,16 +101,16 @@ Para obtener más información, consulte:
 
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 
-   * Obtenga información sobre cómo crear, editar y administrar los recursos de fragmentos de contenido.
+  * Obtenga información sobre cómo crear, editar y administrar los recursos de fragmentos de contenido.
 
 * [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md)
 
-   * Utilice el fragmento de contenido al crear una página.
+  * Utilice el fragmento de contenido al crear una página.
 
-* [AEM Desarrollo: componentes para fragmentos de contenido](/help/sites-developing/components-content-fragments.md)
+* [Desarrollo de AEM: componentes para fragmentos de contenido](/help/sites-developing/components-content-fragments.md)
 
-   * Información general sobre los componentes de los fragmentos de contenido.
+  * Información general sobre los componentes de los fragmentos de contenido.
 
 * [Desarrollo y ampliación de fragmentos de contenido](/help/sites-developing/customizing-content-fragments.md)
 
-   * Información para ayudarle a desarrollar y ampliar fragmentos de contenido.
+  * Información para ayudarle a desarrollar y ampliar fragmentos de contenido.

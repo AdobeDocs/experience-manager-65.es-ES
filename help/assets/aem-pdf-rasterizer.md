@@ -6,26 +6,42 @@ role: Developer, Admin
 feature: Developer Tools,Renditions
 exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '731'
 ht-degree: 1%
-
 ---
-
 # Usar PDF Rasterizer {#using-pdf-rasterizer}
 
-Cuando se cargan archivos AI o PDF de gran tamaño y gran cantidad de contenido en [!DNL Adobe Experience Manager Assets], es posible que la biblioteca predeterminada no genere un resultado preciso. La biblioteca Rasterizer de PDF de Adobe puede generar una salida más fiable y precisa en comparación con la salida de una biblioteca predeterminada. El Adobe recomienda utilizar la biblioteca Rasterizer de PDF para los siguientes casos:
+Cuando se cargan archivos PDF o AI de gran tamaño y gran cantidad de contenido en [!DNL Adobe Experience Manager Assets], es posible que la biblioteca predeterminada no genere un resultado preciso. La biblioteca PDF Rasterizer de Adobe puede generar un resultado más fiable y preciso en comparación con el resultado de una biblioteca predeterminada. Adobe recomienda utilizar la biblioteca PDF Rasterizer para los siguientes casos:
 
-El Adobe recomienda utilizar la biblioteca Rasterizer de PDF para lo siguiente:
+Adobe recomienda utilizar la biblioteca PDF Rasterizer para lo siguiente:
 
-* Archivos AI o archivos de PDF pesados y con gran cantidad de contenido.
-* Archivos AI y archivos del PDF con miniaturas que no se generan de forma predeterminada.
+* Archivos AI o archivos PDF pesados y con gran cantidad de contenido.
+* Archivos AI y archivos PDF con miniaturas que no se generan de forma predeterminada.
 * Archivos AI con colores del Sistema de coincidencia de Pantone (PMS).
 
-Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calidad en comparación con la salida predeterminada y, por lo tanto, proporcionan una experiencia de visualización uniforme en todos los dispositivos. La biblioteca Rasterizer de Adobe PDF no admite ninguna conversión de espacio de color. Siempre se envía al RGB independientemente del espacio de color del archivo de origen.
+Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calidad en comparación con la salida predeterminada y, por lo tanto, proporcionan una experiencia de visualización uniforme en todos los dispositivos. La biblioteca Rasterizer de Adobe PDF no admite ninguna conversión de espacio de color. Siempre se envía a RGB independientemente del espacio de color del archivo de origen.
 
-1. Instale el paquete Rasterizer de PDF en su implementación de [!DNL Adobe Experience Manager] desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
+1. Instale el paquete PDF Rasterizer en su implementación de [!DNL Adobe Experience Manager] desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
 
    >[!NOTE]
    >
@@ -33,7 +49,7 @@ Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calida
 
 1. Acceda a la consola de flujo de trabajo [!DNL Assets] en `https://[aem_server]:[port]/workflow`. Abra el flujo de trabajo [!UICONTROL DAM Update Asset].
 
-1. Para evitar la generación de miniaturas y representaciones web para archivos de PDF y archivos AI mediante los métodos predeterminados, siga estos pasos:
+1. Para evitar la generación de miniaturas y representaciones web para archivos PDF y archivos AI mediante los métodos predeterminados, siga estos pasos:
 
    * Abra el paso **[!UICONTROL Procesar miniaturas]** y agregue `application/pdf` o `application/postscript` en el campo **[!UICONTROL Omitir tipos MIME]** en la pestaña **[!UICONTROL Miniaturas]** según sea necesario.
 
@@ -43,7 +59,7 @@ Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calida
 
    ![Configuración para omitir el procesamiento de miniaturas para un formato de imagen](assets/web_enabled_imageskiplist.png)
 
-1. Abra el paso **[!UICONTROL Rasterizar PDF/AI Image Preview Rendition]** y quite el tipo MIME para el que desea omitir la generación predeterminada de representaciones de imágenes de vista previa. Por ejemplo, quite el tipo MIME `application/pdf`, `application/postscript` o `application/illustrator` de la lista **[!UICONTROL Tipos MIME]**.
+1. Abra el paso **[!UICONTROL Rasterizar representación de vista previa de imágenes de PDF/AI]** y quite el tipo MIME para el que desea omitir la generación predeterminada de representaciones de imágenes de vista previa. Por ejemplo, quite el tipo MIME `application/pdf`, `application/postscript` o `application/illustrator` de la lista **[!UICONTROL Tipos MIME]**.
 
    ![argumentos_de_proceso](assets/process_arguments.png)
 
@@ -62,7 +78,7 @@ Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calida
 
    * `-t`: tipo de imagen de salida. Los tipos válidos son JPEG, PNG, GIF y BMP. El valor predeterminado es JPEG.
 
-   * `-i`: ruta de acceso del PDF de entrada. Es un parámetro obligatorio.
+   * `-i`: ruta de acceso para PDF de entrada. Es un parámetro obligatorio.
 
    * `-h`: Ayuda
 
@@ -92,7 +108,7 @@ Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calida
 
    * `-t`: tipo de imagen de salida. Los tipos válidos son JPEG, PNG, GIF y BMP. El valor predeterminado es JPEG.
 
-   * `-i`: ruta de acceso del PDF de entrada. Es un parámetro obligatorio.
+   * `-i`: ruta de acceso para PDF de entrada. Es un parámetro obligatorio.
 
    * `-h`: Ayuda
 
@@ -106,4 +122,4 @@ Las miniaturas y vistas previas generadas con PDF Rasterizer son de mejor calida
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Guarde el flujo de trabajo.
-1. Cargar un archivo de PDF o un archivo AI a [!DNL Experience Manager Assets]. PDF Rasterizer genera las miniaturas y representaciones web del archivo.
+1. Cargar un archivo PDF o un archivo AI a [!DNL Experience Manager Assets]. PDF Rasterizer genera las miniaturas y representaciones web del archivo.

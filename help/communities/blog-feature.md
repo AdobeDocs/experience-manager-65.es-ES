@@ -10,13 +10,20 @@ exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 0%
-
 ---
-
 # Función Blog {#blog-feature}
 
 ## Introducción {#introduction}
@@ -250,11 +257,11 @@ En la ficha **Configuración de la barra lateral del diario**, especifique el fo
 
   Formato utilizado para mostrar los archivos de las entradas de blog. El formato utiliza marcadores de posición siguiendo la convención de Java™.
 
-   * yyyy : año completo, como &#39;2015&#39;
-   * aa : año corto, como &#39;15&#39;
-   * MMMMM : mes completo, como junio
-   * MMM : mes corto, como junio
-   * MM : número de mes, como 06
+  * yyyy : año completo, como &#39;2015&#39;
+  * aa : año corto, como &#39;15&#39;
+  * MMMMM : mes completo, como junio
+  * MMM : mes corto, como junio
+  * MM : número de mes, como 06
 
   El valor predeterminado es &quot;yyyy MMMMM&quot;, que muestra, por ejemplo, &quot;2015 June&quot;
 
@@ -262,15 +269,15 @@ En la ficha **Configuración de la barra lateral del diario**, especifique el fo
 
   Título y tipo de entradas de blog que se mostrarán en la barra lateral. La elección es entre
 
-   * Autores
-   * Categorías
-   * Archivos
+  * Autores
+  * Categorías
+  * Archivos
 
 * **Ruta del componente Blog**
 
   *(Opcional)* Ubicación del recurso de blog desde el que se enumerarán los artículos de blog. Si se deja en blanco, se utiliza el componente de resourceType `social/journal/components/hbs/journal` que aparece en la misma página.
 
-   * Por ejemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+  * Por ejemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Límite de sugerencias**
 

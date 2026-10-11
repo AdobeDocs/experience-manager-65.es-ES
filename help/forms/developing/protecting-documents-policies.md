@@ -9,13 +9,29 @@ role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '15601'
 ht-degree: 0%
-
 ---
-
 # Proteger documentos mediante directivas {#protecting-documents-with-policies}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -248,7 +264,7 @@ Cree una directiva mediante la API de seguridad de los documentos (Java):
    * Cree un objeto `PolicyManager` invocando el método `getPolicyManager` del objeto `DocumentSecurityClient`.
    * Registre la directiva invocando el método `registerPolicy` del objeto `PolicyManager` y pasando los siguientes valores:
 
-      * El objeto `Policy` que representa la directiva que se va a registrar.
+     * El objeto `Policy` que representa la directiva que se va a registrar.
 
    * Valor de cadena que representa el conjunto de directivas al que pertenece la directiva.
 
@@ -284,9 +300,9 @@ Cree una directiva mediante la API de seguridad de los documentos (servicio web)
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -389,8 +405,8 @@ Modifique una directiva existente mediante la API de seguridad de los documentos
    * Cree un objeto `PolicyManager` invocando el método `getPolicyManager` del objeto `RightsManagementClient`.
    * Cree un objeto `Policy` que represente la directiva que se va a actualizar invocando el método `getPolicy` del objeto `PolicyManager` y pasando los siguientes valores&quot;
 
-      * Valor de cadena que representa el nombre del conjunto de directivas al que pertenece la directiva. Puede especificar `null` de modo que se utilice el conjunto de directivas `MyPolicies`.
-      * Valor de cadena que representa el nombre de la directiva.
+     * Valor de cadena que representa el nombre del conjunto de directivas al que pertenece la directiva. Puede especificar `null` de modo que se utilice el conjunto de directivas `MyPolicies`.
+     * Valor de cadena que representa el nombre de la directiva.
 
 1. Establezca los atributos de la directiva.
 
@@ -424,9 +440,9 @@ Modifique una directiva existente mediante la API de seguridad de los documentos
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -498,8 +514,8 @@ Eliminar una directiva mediante la API de Document Security (Java):
    * Cree un objeto `PolicyManager` invocando el método `getPolicyManager` del objeto `RightsManagementClient`.
    * Elimine la directiva invocando el método `deletePolicy` del objeto `PolicyManager` y pasando los siguientes valores:
 
-      * Valor de cadena que especifica el nombre del conjunto de directivas al que pertenece la directiva. Puede especificar `null` de modo que se utilice el conjunto de directivas `MyPolicies`.
-      * Valor de cadena que especifica el nombre de la directiva que se va a eliminar.
+     * Valor de cadena que especifica el nombre del conjunto de directivas al que pertenece la directiva. Puede especificar `null` de modo que se utilice el conjunto de directivas `MyPolicies`.
+     * Valor de cadena que especifica el nombre de la directiva que se va a eliminar.
 
 **Ejemplos de código**
 
@@ -527,9 +543,9 @@ Eliminar una directiva mediante la API de Document Security (servicio web):
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -620,13 +636,13 @@ Aplicar una directiva a un documento de PDF mediante la API de seguridad de los 
    * Cree un objeto `DocumentManager` invocando el método `getDocumentManager` del objeto `RightsManagementClient`.
    * Aplique una directiva al documento de PDF invocando el método `protectDocument` del objeto `DocumentManager` y pasando los siguientes valores:
 
-      * El objeto `com.adobe.idp.Document` que contiene el documento de PDF al que se aplica la directiva.
-      * Valor de cadena que especifica el nombre del documento.
-      * Valor de cadena que especifica el nombre del conjunto de directivas al que pertenece la directiva. Puede especificar un valor `null` que haga que se utilice el conjunto de directivas `MyPolicies`.
-      * Valor de cadena que especifica el nombre de la directiva.
-      * Valor de cadena que representa el nombre del dominio del administrador de usuarios del usuario que es el editor del documento. Este valor de parámetro es opcional y puede ser nulo (si este parámetro es nulo, el siguiente valor de parámetro debe ser nulo).
-      * Valor de cadena que representa el nombre canónico del usuario administrador de usuarios que es el editor del documento. Este valor de parámetro es opcional y puede ser `null` (si este parámetro es nulo, el valor del parámetro anterior debe ser `null`).
-      * `com.adobe.livecycle.rightsmanagement.Locale` que representa la configuración regional utilizada para seleccionar la plantilla de MS Office. Este valor de parámetro es opcional y no se utiliza para documentos de PDF. Para proteger un documento de PDF, especifique `null`.
+     * El objeto `com.adobe.idp.Document` que contiene el documento de PDF al que se aplica la directiva.
+     * Valor de cadena que especifica el nombre del documento.
+     * Valor de cadena que especifica el nombre del conjunto de directivas al que pertenece la directiva. Puede especificar un valor `null` que haga que se utilice el conjunto de directivas `MyPolicies`.
+     * Valor de cadena que especifica el nombre de la directiva.
+     * Valor de cadena que representa el nombre del dominio del administrador de usuarios del usuario que es el editor del documento. Este valor de parámetro es opcional y puede ser nulo (si este parámetro es nulo, el siguiente valor de parámetro debe ser nulo).
+     * Valor de cadena que representa el nombre canónico del usuario administrador de usuarios que es el editor del documento. Este valor de parámetro es opcional y puede ser `null` (si este parámetro es nulo, el valor del parámetro anterior debe ser `null`).
+     * `com.adobe.livecycle.rightsmanagement.Locale` que representa la configuración regional utilizada para seleccionar la plantilla de MS Office. Este valor de parámetro es opcional y no se utiliza para documentos de PDF. Para proteger un documento de PDF, especifique `null`.
 
      El método `protectDocument` devuelve un objeto `RMSecureDocumentResult` que contiene el documento de PDF protegido por directivas.
 
@@ -669,9 +685,9 @@ Aplicar una directiva a un documento de PDF mediante la API de Document Security
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -814,9 +830,9 @@ Quitar una directiva de un documento de PDF protegido por una directiva mediante
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -927,9 +943,9 @@ Revocar acceso a un documento de PDF protegido por políticas mediante la API de
    * Cree un objeto `LicenseManager` invocando el método `getLicenseManager` del objeto `DocumentSecurityClient`.
    * Revocar el documento protegido por una directiva invocando el método `revokeLicense` del objeto `LicenseManager` y pasando los siguientes valores:
 
-      * Valor de cadena que especifica el valor del identificador de licencia del documento protegido por una directiva (especifique el valor devuelto del método `getLicenseId` del objeto `DocumentManager`).
-      * Un miembro de datos estáticos de la interfaz `License` que especifica el motivo para revocar el documento. Por ejemplo, puede especificar `License.DOCUMENT_REVISED`.
-      * Un valor `java.net.URL` que especifica la ubicación donde se encuentra un documento revisado. Si no desea redirigir a un usuario a otra dirección URL, puede pasar `null`.
+     * Valor de cadena que especifica el valor del identificador de licencia del documento protegido por una directiva (especifique el valor devuelto del método `getLicenseId` del objeto `DocumentManager`).
+     * Un miembro de datos estáticos de la interfaz `License` que especifica el motivo para revocar el documento. Por ejemplo, puede especificar `License.DOCUMENT_REVISED`.
+     * Un valor `java.net.URL` que especifica la ubicación donde se encuentra un documento revisado. Si no desea redirigir a un usuario a otra dirección URL, puede pasar `null`.
 
 **Ejemplos de código**
 
@@ -957,9 +973,9 @@ Revocar acceso a un documento de PDF protegido por políticas mediante la API de
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -976,9 +992,9 @@ Revocar acceso a un documento de PDF protegido por políticas mediante la API de
    * Recupere el valor del identificador de licencia del documento protegido por directivas invocando el método `getLicenseID` del objeto `DocumentSecurityServiceClient` y pasando el objeto `BLOB` que representa el documento protegido por directivas. Este método devuelve un valor de cadena que representa el identificador de licencia.
    * Revocar el documento protegido por una directiva invocando el método `revokeLicense` del objeto `DocumentSecurityServiceClient` y pasando los siguientes valores:
 
-      * Valor de cadena que especifica el valor del identificador de licencia del documento protegido por una directiva (especifique el valor devuelto del método `getLicenseId` del objeto `DocumentSecurityServiceService`).
-      * Un miembro de datos estáticos de la enumeración `Reason` que especifica el motivo para revocar el documento. Por ejemplo, puede especificar `Reason.DOCUMENT_REVISED`.
-      * Valor de `string` que especifica la ubicación de la dirección URL donde se encuentra un documento revisado. Si no desea redirigir a un usuario a otra dirección URL, puede pasar `null`.
+     * Valor de cadena que especifica el valor del identificador de licencia del documento protegido por una directiva (especifique el valor devuelto del método `getLicenseId` del objeto `DocumentSecurityServiceService`).
+     * Un miembro de datos estáticos de la enumeración `Reason` que especifica el motivo para revocar el documento. Por ejemplo, puede especificar `Reason.DOCUMENT_REVISED`.
+     * Valor de `string` que especifica la ubicación de la dirección URL donde se encuentra un documento revisado. Si no desea redirigir a un usuario a otra dirección URL, puede pasar `null`.
 
 **Ejemplos de código**
 
@@ -1089,9 +1105,9 @@ Restablezca el acceso a un documento revocado mediante la API de seguridad de lo
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1223,9 +1239,9 @@ Inspeccione un documento de PDF protegido por políticas utilizando la API del s
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1443,9 +1459,9 @@ Crear una marca de agua mediante la API de Document Security (servicio web):
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1590,9 +1606,9 @@ Modificar una marca de agua mediante la API de seguridad de los documentos (serv
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1718,9 +1734,9 @@ Busque eventos mediante la API de Rights Management (servicio web):
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -2020,13 +2036,13 @@ Aplicar una directiva a un documento de Word mediante la API de Document Securit
    * Cree un objeto `DocumentManager` invocando el método `getDocumentManager` del objeto `DocumentSecurityClient`.
    * Aplique una directiva al documento de Word invocando el método `protectDocument` del objeto `DocumentManager` y pasando los siguientes valores:
 
-      * El objeto `com.adobe.idp.Document` que contiene el documento de Word al que se aplica la directiva.
-      * Valor de cadena que especifica el nombre del documento.
-      * Valor de cadena que especifica el nombre del conjunto de directivas al que pertenece la directiva. Puede especificar un valor `null` que haga que se utilice el conjunto de directivas `MyPolicies`.
-      * Valor de cadena que especifica el nombre de la directiva.
-      * Valor de cadena que representa el nombre del dominio del administrador de usuarios del usuario que es el editor del documento. Este valor de parámetro es opcional y puede ser nulo (si este parámetro es nulo, el siguiente valor de parámetro debe ser nulo).
-      * Valor de cadena que representa el nombre canónico del usuario administrador de usuarios que es el editor del documento. Este valor de parámetro es opcional y puede ser `null` (si este parámetro es `null`, el valor del parámetro anterior debe ser `null`).
-      * `com.adobe.livecycle.rightsmanagement.Locale` que representa la configuración regional utilizada para seleccionar la plantilla de MS Office. Este valor de parámetro es opcional y puede especificar `null`.
+     * El objeto `com.adobe.idp.Document` que contiene el documento de Word al que se aplica la directiva.
+     * Valor de cadena que especifica el nombre del documento.
+     * Valor de cadena que especifica el nombre del conjunto de directivas al que pertenece la directiva. Puede especificar un valor `null` que haga que se utilice el conjunto de directivas `MyPolicies`.
+     * Valor de cadena que especifica el nombre de la directiva.
+     * Valor de cadena que representa el nombre del dominio del administrador de usuarios del usuario que es el editor del documento. Este valor de parámetro es opcional y puede ser nulo (si este parámetro es nulo, el siguiente valor de parámetro debe ser nulo).
+     * Valor de cadena que representa el nombre canónico del usuario administrador de usuarios que es el editor del documento. Este valor de parámetro es opcional y puede ser `null` (si este parámetro es `null`, el valor del parámetro anterior debe ser `null`).
+     * `com.adobe.livecycle.rightsmanagement.Locale` que representa la configuración regional utilizada para seleccionar la plantilla de MS Office. Este valor de parámetro es opcional y puede especificar `null`.
 
      El método `protectDocument` devuelve un objeto `RMSecureDocumentResult` que contiene el documento de Word protegido por directivas.
 
@@ -2062,9 +2078,9 @@ Aplicar una directiva a un documento de Word mediante la API de Document Securit
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -2206,9 +2222,9 @@ Quitar una directiva de un documento de Word protegido por una directiva mediant
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 

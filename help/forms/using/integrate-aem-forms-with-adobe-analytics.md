@@ -6,7 +6,25 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 94%
@@ -221,7 +239,7 @@ Realice los siguientes pasos para crear una configuración de Adobe Launch:
 
 >[!NOTE]
 >
-> Cuando [incrusta AEM Forms en una página de AEM Sites](https://experienceleague.adobe.com/es/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites), no se admiten las configuraciones de Adobe Launch en un iFrame para formularios adaptables. Para resolver esto, configure las reglas de Adobe Launch directamente en la página de Sites o migre las configuraciones de Adobe Launch existentes de AEM Forms a la página de Sites.
+> Cuando [incrusta AEM Forms en una página de AEM Sites](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites), no se admiten las configuraciones de Adobe Launch en un iFrame para formularios adaptables. Para resolver esto, configure las reglas de Adobe Launch directamente en la página de Sites o migre las configuraciones de Adobe Launch existentes de AEM Forms a la página de Sites.
 
 
 ### Habilitar [!DNL Adobe Analytics] para un formulario adaptable {#enable-analytics-adaptive-form}

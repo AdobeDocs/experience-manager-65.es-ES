@@ -4,13 +4,23 @@ description: AEM Forms admite funciones personalizadas que permiten a los usuari
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 37%
-
+source-wordcount: '1104'
+ht-degree: 32%
 ---
-
 # Funciones personalizadas en el Forms adaptable
 
 ## Introducción
@@ -59,49 +69,49 @@ Asegúrese de que la función personalizada que escriba esté acompañada de `js
 
 Etiquetas `jsdoc` compatibles:
 
-* **Sintaxis**
-privada: `@private`
-una función privada no se incluye como función personalizada.
+* **Privado**
+Sintaxis: `@private`
+Una función privada no se incluye como función personalizada.
 
-* **Sintaxis**
-de nombre: `@name funcName <Function Name>`
-O bien, `,` puede usar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
+* **Nombre**
+Sintaxis: `@name funcName <Function Name>`
+Como alternativa `,`, puede usar: `@function funcName <Function Name>` **o** `@func` `funcName <Function Name>`.
   `funcName` es el nombre de la función (no se permiten espacios).
   `<Function Name>` es el nombre para mostrar de la función.
 
-* **Sintaxis**
-de abonado: `@memberof namespace`
-adjunta un espacio de nombres a la función.
+* **Miembro**
+Sintaxis: `@memberof namespace`
+Adjunta un área de nombres a la función.
 
-* **Sintaxis**
-de parámetro: `@param {type} name <Parameter Description>`
-O bien, puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
+* **Parámetro**
+Sintaxis: `@param {type} name <Parameter Description>`
+También puede usar: `@argument` `{type} name <Parameter Description>` **o** `@arg` `{type}` `name <Parameter Description>`.
 Muestra los parámetros utilizados por la función. Una función puede tener varias etiquetas de parámetro, una etiqueta para cada parámetro en el orden de ocurrencia.
   `{type}` representa el tipo de parámetro. Los tipos de parámetros permitidos son:
 
-   1. cadena
-   2. número
-   3. booleano
-   4. ámbito
+  1. cadena
+  2. número
+  3. booleano
+  4. ámbito
 
   El ámbito se utiliza para hacer referencia a los campos de un formulario adaptable. Cuando un formulario utiliza la carga diferida, puede utilizar `scope` para acceder a sus campos. Puede acceder a los campos cuando se cargan o si están marcados como globales.
 
   Todos los demás tipos de parámetro se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Sintaxis**
-de tipo de retorno: `@return {type}`
-O bien, puede usar `@returns {type}`.
+* **Tipo de devolución**
+Sintaxis: `@return {type}`
+También puede usar `@returns {type}`.
 Añade información sobre la función, como su objetivo.
   {type} representa el tipo de valor devuelto de la función. Los tipos de valor devuelto permitidos son:
 
-   1. cadena
-   1. número
-   1. booleano
+  1. cadena
+  1. número
+  1. booleano
 
   Todos los demás tipos de valor devuelto se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de devolución no distinguen entre mayúsculas y minúsculas.
 
-* **Esta**
-sintaxis: `@this currentComponent`
+* **Esto**
+Sintaxis: `@this currentComponent`
 
   Utilice @this para hacer referencia al componente de formulario adaptable en el que se escribe la regla.
 

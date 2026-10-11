@@ -1,17 +1,29 @@
 ---
 title: Configuración de LDAP con AEM 6
 description: Aprenda a utilizar y configurar servicios LDAP con AEM.
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 4%
@@ -41,7 +53,7 @@ Para que LDAP funcione con AEM, debe crear tres configuraciones OSGi:
 
 >[!NOTE]
 >
->Vea [Módulo de inicio de sesión externo de Oak: autenticación con LDAP y posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=es) para profundizar en los módulos de inicio de sesión externo.
+>Vea [Módulo de inicio de sesión externo de Oak: autenticación con LDAP y posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) para profundizar en los módulos de inicio de sesión externo.
 >
 >Para leer un ejemplo de configuración de Experience Manager con Apache DS, consulte [Configuración de Adobe Experience Manager 6.5 para usar el servicio de directorio Apache.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
@@ -244,7 +256,7 @@ Los certificados autofirmados se pueden utilizar al configurar AEM para autentic
 
 1. Asegúrese de tener una biblioteca SSL instalada y en funcionamiento. Este procedimiento utiliza OpenSSL como ejemplo.
 
-1. Cree un archivo de configuración OpenSSL (cnf) personalizado. Esta configuración se puede realizar copiando el archivo de configuración **openssl.cnf &#x200B;** predeterminado y personalizándolo. En sistemas UNIX®, se encuentra en `/usr/lib/ssl/openssl.cnf`
+1. Cree un archivo de configuración OpenSSL (cnf) personalizado. Esta configuración se puede realizar copiando el archivo de configuración **openssl.cnf ** predeterminado y personalizándolo. En sistemas UNIX®, se encuentra en `/usr/lib/ssl/openssl.cnf`
 
 1. Continúe creando la clave raíz de la CA ejecutando el siguiente comando en un terminal:
 
@@ -280,12 +292,12 @@ Para habilitar el registro de depuración, debe hacer lo siguiente:
 
 * Nivel de registro: depuración
 * Archivo de registro logs/ldap.log
-* Patrón de mensaje: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
+* Patrón de mensaje: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Nivel de registro: depuración
 * Archivo de registro: logs/external.log
-* Patrón de mensaje: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
+* Patrón de mensaje: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Una palabra sobre afiliación grupal {#a-word-on-group-affiliation}

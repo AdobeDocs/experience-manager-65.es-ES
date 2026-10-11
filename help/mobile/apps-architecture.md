@@ -9,13 +9,17 @@ exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2675'
 ht-degree: 0%
-
 ---
-
 # Plantillas de página para aplicaciones móviles {#page-templates-for-mobile-apps}
 
 {{ue-over-mobile}}
@@ -368,7 +372,7 @@ El directorio www contiene todo el contenido web (archivos HTML, JS y CSS) que i
 
 #### www/config.xml {#www-config-xml}
 
-La documentación de PhoneGap (`https://docs.phonegap.com`) hace referencia a este archivo como un &quot;archivo de configuración global&quot;. El archivo config.xml contiene muchas propiedades de aplicación, como el nombre de la aplicación, las &quot;preferencias&quot; de la aplicación (por ejemplo, si una vista web de iOS permite el overscroll o no) y las dependencias del complemento que PhoneGap Build solo consume *1&rbrace;.*
+La documentación de PhoneGap (`https://docs.phonegap.com`) hace referencia a este archivo como un &quot;archivo de configuración global&quot;. El archivo config.xml contiene muchas propiedades de aplicación, como el nombre de la aplicación, las &quot;preferencias&quot; de la aplicación (por ejemplo, si una vista web de iOS permite el overscroll o no) y las dependencias del complemento que PhoneGap Build solo consume *1}.*
 
 El archivo config.xml es un archivo estático en AEM que se exporta tal cual mediante la sincronización de contenido.
 

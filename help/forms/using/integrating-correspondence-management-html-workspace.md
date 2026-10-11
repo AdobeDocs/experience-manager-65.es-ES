@@ -8,13 +8,33 @@ exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 80%
-
+source-wordcount: '642'
+ht-degree: 77%
 ---
-
 # Integración de aplicaciones de terceros en AEM Forms Workspace{#integrating-third-party-applications-in-aem-forms-workspace}
 
 AEM Forms Workspace admite la administración de las actividades de asignación y finalización de tareas en formularios y documentos. Estos formularios y documentos pueden ser formularios XDP, formularios de Flex® o guías (obsoletos) que se han procesado en los formatos XDP, PDF, HTML o Flex.
@@ -101,7 +121,7 @@ Siga estos pasos para crear una tarea para procesar y enviar una carta en AEM W
    ```
 
    [Obtener archivo](assets/dscsample.zip)
-Descargar DSC: hay disponible un DSC de ejemplo en el archivo DSCSample.zip adjunto anteriormente. Descargue y descomprima el archivo DSCSample.zip. Antes de utilizar el servicio DSC, debe configurarlo. Consulte [Configurar el servicio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   Descargar DSC: Hay disponible un DSC de ejemplo en el archivo DSCSample.zip adjunto anteriormente. Descargue y descomprima el archivo DSCSample.zip. Antes de utilizar el servicio DSC, debe configurarlo. Consulte [Configurar el servicio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    En el cuadro de diálogo Definir actividad, seleccione la actividad adecuada, como getLetterInstanceInfo, y haga clic en **Aceptar**.
 

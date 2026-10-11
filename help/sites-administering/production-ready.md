@@ -1,6 +1,6 @@
 ---
-title: AEM Ejecución en modo listo para la producción
-description: AEM Obtenga información sobre cómo ejecutar la en el modo Producción lista.
+title: Ejecución de AEM en el modo listo para la producción
+description: Obtenga información sobre cómo ejecutar AEM en el modo Producción lista.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -9,28 +9,40 @@ exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 3%
-
+source-wordcount: '383'
+ht-degree: 7%
 ---
+# Ejecución de AEM en el modo listo para la producción{#running-aem-in-production-ready-mode}
 
-# AEM Ejecución en modo listo para la producción{#running-aem-in-production-ready-mode}
-
-AEM Con 6.1, Adobe AEM introduce el nuevo modo de ejecución de `"nosamplecontent"` destinado a automatizar los pasos necesarios para preparar una instancia de para su implementación en un entorno de producción.
+Con AEM 6.1, Adobe introduce el nuevo modo de ejecución de `"nosamplecontent"`, que tiene como objetivo automatizar los pasos necesarios para preparar una instancia de AEM para su implementación en un entorno de producción.
 
 El nuevo modo de ejecución no solo configurará automáticamente la instancia para que se adhiera a las prácticas recomendadas de seguridad descritas en la lista de comprobación de seguridad, sino que también eliminará todas las aplicaciones y configuraciones de Geometrixx de ejemplo en el proceso.
 
 >[!NOTE]
 >
->AEM Dado que, por motivos prácticos, el modo listo para la producción de la solo cubrirá la mayoría de las tareas necesarias para proteger una instancia, es muy recomendable que consulte la [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md) antes de lanzarse a su entorno de producción.
+>Dado que, por motivos prácticos, el modo Producción lista de AEM solo cubrirá la mayoría de las tareas necesarias para proteger una instancia, es muy recomendable que consulte la [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md) antes de lanzarse a su entorno de producción.
 >
->AEM Además, tenga en cuenta que ejecutar el modo de producción lista para la producción deshabilitará de forma eficaz el acceso a CRXDE Lite. Si lo necesita con fines de depuración, consulte [Habilitación del CRXDE Lite en &#x200B;](/help/sites-administering/enabling-crxde-lite.md). Para obtener más información, consulte la sección sobre cómo habilitar el servicio de depuración en AEM en .
+>Tenga en cuenta también que ejecutar AEM en el modo Producción lista deshabilitará de forma eficaz el acceso a CRXDE Lite. Si lo necesita con fines de depuración, consulte [Habilitar CRXDE Lite en AEM](/help/sites-administering/enabling-crxde-lite.md).
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-AEM Para ejecutar la ejecución en modo listo para la producción, todo lo que debe hacer es agregar `nosamplecontent` mediante el modificador de modo de ejecución `-r` a los argumentos de inicio existentes:
+Para ejecutar AEM en modo listo para la producción, lo único que debe hacer es agregar `nosamplecontent` mediante el modificador de modo de ejecución `-r` a los argumentos de inicio existentes:
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -44,9 +56,9 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 ## Cambia parte del modo Producción lista {#changes-part-of-the-production-ready-mode}
 
-AEM Más específicamente, los siguientes cambios de configuración se realizan cuando se ejecuta la en modo listo para la producción:
+Más específicamente, se realizan los siguientes cambios de configuración cuando AEM se ejecuta en modo listo para la producción:
 
-1. El **paquete de soporte CRXDE** (`com.adobe.granite.crxde-support`) está deshabilitado de manera predeterminada en el modo listo para la producción. Se puede instalar en cualquier momento desde el repositorio Maven público de Adobe. AEM Se requiere la versión 3.0.0 para la versión 6.1 de.
+1. El **paquete de soporte CRXDE** (`com.adobe.granite.crxde-support`) está deshabilitado de manera predeterminada en el modo listo para la producción. Se puede instalar en cualquier momento desde el repositorio Maven público de Adobe. Se requiere la versión 3.0.0 para AEM 6.1.
 
 1. El paquete **Acceso simple de Apache Sling WebDAV a repositorios** ( `org.apache.sling.jcr.webdav`) solo estará disponible en **instancias de autor**.
 
@@ -57,7 +69,7 @@ AEM Más específicamente, los siguientes cambios de configuración se realizan 
 
 1. El filtro **Day CQ WCM Filter** se ha establecido en `edit` en **author** y `disabled` en **publish** instancias.
 
-1. El **Administrador de bibliotecas de Granite HTML de Adobe** está configurado con la siguiente configuración:
+1. El **Administrador de bibliotecas Adobe Granite HTML** está configurado con la siguiente configuración:
 
    1. **Minificar:** `enabled`
    1. **Depuración:** `disabled`
@@ -66,10 +78,10 @@ AEM Más específicamente, los siguientes cambios de configuración se realizan 
 
 1. **Apache Sling GET Servlet** está configurado para admitir configuraciones seguras de forma predeterminada, de la siguiente manera:
 
-| **Configuración** | **Autor** | **Publish** |
+| **Configuración** | **Autor** | **Publicar** |
 |---|---|---|
 | Representación TXT | desactivado | desactivado |
-| representación del HTML | desactivado | desactivado |
+| Representación de HTML | desactivado | desactivado |
 | Representación JSON | enabled | enabled |
 | Representación XML | desactivado | desactivado |
 | json.maximumresults | 1000 | 100 |

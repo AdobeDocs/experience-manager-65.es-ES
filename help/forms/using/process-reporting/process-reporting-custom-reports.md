@@ -9,13 +9,27 @@ exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 94%
-
+source-wordcount: '1053'
+ht-degree: 90%
 ---
-
 # Informes personalizados en informes de procesos{#custom-reports-in-process-reporting}
 
 Puede utilizar la interfaz de REST de QueryBuilder o crear un servicio OSGi mediante la API de QueryBuilder para crear un informe personalizado.
@@ -25,18 +39,18 @@ Puede utilizar la interfaz de REST de QueryBuilder o crear un servicio OSGi medi
 Antes de agregar cualquier informe personalizado, realice el siguiente procedimiento de plantilla:
 
 1. Los datos utilizados en los informes personalizados deben estar disponibles en Process Reporting. Para garantizar la disponibilidad de los datos, programe un trabajo cron o utilice la opción **[Sincronizar](https://helpx.adobe.com/es/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** en la interfaz de usuario de Process Reporting.
-1. La solicitud de URL (que encapsula la consulta deseada) debe devolver un objeto de resultado de consulta adecuado. Para crear una consulta, puede utilizar la interfaz de REST de [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=es) para crear un servicio OSGi mediante la API de QueryBuilder. Puede crear consultas dinámicas o estáticas.
+1. La solicitud de URL (que encapsula la consulta deseada) debe devolver un objeto de resultado de consulta adecuado. Para crear una consulta, puede utilizar la interfaz de REST de [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) para crear un servicio OSGi mediante la API de QueryBuilder. Puede crear consultas dinámicas o estáticas.
 
 1. Cree una interfaz de usuario personalizada para mostrar los resultados. Puede crear una interfaz de usuario independiente o integrar los resultados con la interfaz de usuario de Process Reporting existente.
 
 ## Uso de la interfaz de REST de QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-La interfaz de REST de CRX QueryBuilder expone la funcionalidad de Asset Share Query Builder a través de una API de Java y una API de REST. Aprenda a utilizar la [interfaz de REST de CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=es) antes de realizar los siguientes pasos:
+La interfaz de REST de CRX QueryBuilder expone la funcionalidad de Asset Share Query Builder a través de una API de Java y una API de REST. Aprenda a utilizar la [interfaz de REST de CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) antes de realizar los siguientes pasos:
 
 1. Vaya a la URL `https://'[server]:[port]'/lc/bin/querybuilder.json`.
 1. Cree una consulta basada en la estructura y las propiedades del nodo de almacenamiento de Process Reporting.
 
-   Puede especificar parámetros opcionales para especificar el desplazamiento, el límite, las visitas y las propiedades. Puede codificar los argumentos de los informes estáticos y recuperar los parámetros de la interfaz de usuario para los informes dinámicos.
+   Puede especificar parámetros opcionales para especificar el desplazamiento, el límite, los hits y las propiedades. Puede codificar los argumentos de los informes estáticos y recuperar los parámetros de la interfaz de usuario para los informes dinámicos.
 
    Para recuperar todos los nombres de proceso, la consulta es:
 
@@ -48,7 +62,7 @@ La interfaz de REST de CRX QueryBuilder expone la funcionalidad de Asset Share�
 
 ## Creación de un servicio mediante la API de Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-El requisito previo para crear un servicio mediante la API de Query Builder es [crear e implementar el paquete CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) y [usar la API de Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=es).
+El requisito previo para crear un servicio mediante la API de Query Builder es [crear e implementar el paquete CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) y [usar la API de Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
 
 1. Cree un servicio OSGi con las anotaciones adecuadas. Para acceder a QueryBuilder, utilice:
 
@@ -642,7 +656,7 @@ Los requisitos previos para crear una interfaz de usuario independiente para mos
    * **description**: especifica la descripción de una línea del informe. Puede dejar vacío el campo de la descripción.
    * **icon**: especifica la imagen que representa el informe de forma gráfica. Puede dejar vacío el campo del icono.
 
-   ![Propiedades del nodo &#x200B;](assets/node_properties_new.png)
+   ![Propiedades del nodo ](assets/node_properties_new.png)
 
    Propiedades del nodo
 

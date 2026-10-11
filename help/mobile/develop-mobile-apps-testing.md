@@ -9,13 +9,17 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
-
 ---
-
 # Prueba de aplicaciones móviles{#testing-mobile-apps}
 
 {{ue-over-mobile}}
@@ -49,12 +53,12 @@ Además de las pruebas automatizadas, la aplicación debe pasar por un ciclo de 
 * realizar pruebas con un gran grupo de dispositivos (idealmente, dispositivos reales, pero simuladores/emuladores si no hay dispositivos reales disponibles),
 * proporcione comentarios informativos:
 
-   * informes de bloqueo,
-   * análisis/seguimiento,
-   * facilidad de uso,
-   * áreas de atención,
-   * rendimiento,
-   * consumo de datos/energía, etc.
+  * informes de bloqueo,
+  * análisis/seguimiento,
+  * facilidad de uso,
+  * áreas de atención,
+  * rendimiento,
+  * consumo de datos/energía, etc.
 
 ## Herramientas {#tools}
 

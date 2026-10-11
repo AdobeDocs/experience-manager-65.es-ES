@@ -1,6 +1,6 @@
 ---
-title: Lista de paquetes obsoletos desinstalados después de la actualización
-description: AEM Una lista que detalla los paquetes que se desinstalan automáticamente al actualizar a la versión 6.3 de.
+title: Lista de paquetes obsoletos desinstalados tras la actualización
+description: Una lista que detalla los paquetes que se desinstalan automáticamente al actualizar a AEM 6.3.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
@@ -9,22 +9,31 @@ feature: Upgrading
 exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 0%
-
+source-wordcount: '235'
+ht-degree: 6%
 ---
-
-# Lista de paquetes obsoletos desinstalados después de la actualización{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+# Lista de paquetes obsoletos desinstalados tras la actualización{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
 >[!NOTE]
 >
->Si el código se basa en estos paquetes, asegúrese de ponerse en contacto con el servicio de asistencia de Adobe y solicitar un paquete de compatibilidad para el área afectada.
+>Si el código depende de estos paquetes, asegúrese de ponerse en contacto con el Soporte técnico de Adobe y solicitar un paquete de compatibilidad para el área afectada.
 
-AEM AEM Al actualizar a la versión 6.3 de, se desinstalarán automáticamente los siguientes paquetes, según la versión en la que se haya realizado la actualización:
+Al actualizar a AEM 6.3, los siguientes paquetes se desinstalarán automáticamente, según la versión de AEM desde la que se haya realizado la actualización:
 
-AEM **6.1:**
+**AEM 6.1:**
 
 * org.eclipse.equinox.region, versión 1.1.0.v20120522-1841, activa
 * org.apache.sling.installer.factory.subsystems, versión 1.0.0, Active
@@ -40,7 +49,7 @@ AEM **6.1:**
 * com.day.cq.dam.commons.nekohtml, versión 0.9.5, Activo
 * com.day.cq.mcm.cq-mcm-silverpop-integration, versión 1.2.2, Active
 
-AEM **6.0:**
+**AEM 6.0:**
 
 * org.apache.sling.discovery.impl, versión 1.1.6, Activo
 * com.adobe.granite.installer.patch, versión 0.4.0, Activo

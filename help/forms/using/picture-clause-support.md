@@ -10,18 +10,33 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 96%
-
+source-wordcount: '652'
+ht-degree: 94%
 ---
-
 # Compatibilidad con cláusula de imagen para formularios HTML5 {#picture-clause-support-for-html-forms}
 
 Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visualización y el valor formateado de símbolos numéricos, texto y fecha. Se admiten las siguientes expresiones de cláusula de imagen:
 
-* category(locale){picture-subscription} | category(locale){picture-subscription} | category(locale){picture-subscription}
+* category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
@@ -37,7 +52,7 @@ Expresión admitida para la cláusula de imagen de fecha:
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{símbolos de la cláusula de imagen de fecha}
+* fecha{date Picture Clause symbols}
 
 >[!NOTE]
 >
@@ -116,7 +131,7 @@ Las expresiones compatibles con la cláusula de imagen numérica de los **formul
 * num.decimal{}
 * num.currency{}
 * num.percent{}
-* num{símbolos de la cláusula de imagen numérica}
+* num{Numeric Picture Clause Symbols}
 
 <table>
  <tbody>
@@ -207,7 +222,7 @@ Las expresiones compatibles con la cláusula de imagen numérica de los **formul
 
 Los formularios HTML5 admiten las siguientes expresiones de cláusula de imagen de texto:
 
-* text{símbolos de la cláusula de imagen de texto}
+* text{text Picture clause symbols}
 
 | **Símbolo** | **Interpretación** |
 |---|---|

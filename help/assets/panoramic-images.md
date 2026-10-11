@@ -10,13 +10,29 @@ feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: d61a43e0-1563-4df1-9eb3-9ab3d5eab8b2
+    internal-label: Panoramic images
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '597'
 ht-degree: 0%
-
 ---
-
 # Imágenes panorámicas{#panoramic-images}
 
 En esta sección se describe el trabajo con el visualizador de imágenes panorámicas para procesar imágenes panorámicas esféricas y obtener una experiencia de visualización inmersiva de 360 grados de una habitación, propiedad, ubicación o paisaje.
@@ -30,7 +46,7 @@ Consulte también [Administrar ajustes preestablecidos de visor](/help/assets/ma
 Para que un recurso cargado se califique como imagen panorámica esférica que desea utilizar con el visualizador de imágenes panorámicas, el recurso debe tener uno o ambos de los siguientes elementos:
 
 * Una proporción de aspecto de 2.
-Puede anular la configuración de proporción de aspecto predeterminada de 2 en el CRXDE Lite en los siguientes casos:
+Puede anular la configuración de proporción de aspecto predeterminada de 2 en CRXDE Lite en los siguientes casos:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Etiquetado con las palabras clave `equirectangular`, o `spherical` y `panorama`, o `spherical` y `panoramic`. Consulte [Uso de etiquetas](/help/sites-authoring/tags.md).
@@ -43,12 +59,12 @@ Para cargar recursos para usarlos con el visor de imágenes panorámicas, consul
 
 Para que el visualizador de imágenes panorámicas funcione correctamente en Adobe Experience Manager, sincronice los ajustes preestablecidos del visualizador de imágenes panorámicas con Dynamic Media Classic y metadatos específicos de Dynamic Media Classic para que los ajustes preestablecidos del visualizador se actualicen en el JCR. Para realizar esta sincronización, configure Dynamic Media Classic de la siguiente manera:
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=es#getting-started) y luego inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
-1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de aplicación]** > **[!UICONTROL Configuración de Publish]** > **[!UICONTROL Servidor de imágenes]**.
-1. En la página Publish del servidor de imágenes, en el menú desplegable **[!UICONTROL Contexto de Publish]** que se encuentra cerca de la parte superior, seleccione **[!UICONTROL Servicio de imágenes]**.
+1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
+1. En la página Publicar en el servidor de imágenes, en el menú desplegable **[!UICONTROL Contexto de publicación]**, cerca de la parte superior, seleccione **[!UICONTROL Servicio de imágenes]**.
 
-1. En la misma página de Publish del servidor de imágenes, busque el encabezado **[!UICONTROL Atributos de solicitud]**.
+1. En la misma página de publicación del servidor de imágenes, busque el encabezado **[!UICONTROL Atributos de solicitud]**.
 1. Bajo el encabezado de Solicitar atributos, busque **[!UICONTROL Límite de tamaño de imagen de respuesta]**. A continuación, en los campos asociados Anchura y Altura, aumente el tamaño máximo de imagen permitido para las imágenes panorámicas.
 
    Dynamic Media Classic tiene un límite de 25 000 000 de píxeles. El tamaño máximo permitido para imágenes con una relación de aspecto 2:1 es de 7000 x 3500. Sin embargo, para las pantallas de escritorio típicas, 4096 x 2048 píxeles es suficiente.
@@ -62,9 +78,9 @@ Para que el visualizador de imágenes panorámicas funcione correctamente en Ado
    * Definir modo de confusión de solicitud en **[!UICONTROL Deshabilitado]**.
    * Establecer el modo de bloqueo de solicitud en **[!UICONTROL Deshabilitado]**.
 
-   Esta configuración es necesaria para usar el componente WCM `Panoramic Media` en el Experience Manager.
+   Esta configuración es necesaria para usar el componente WCM `Panoramic Media` en Experience Manager.
 
-1. En la parte inferior izquierda de la página Publish del servidor de imágenes, seleccione **[!UICONTROL Guardar]**.
+1. En la parte inferior izquierda de la página Publicación del servidor de imágenes, seleccione **[!UICONTROL Guardar]**.
 
 1. En la esquina inferior derecha, seleccione **[!UICONTROL Cerrar]**.
 
@@ -76,12 +92,12 @@ Si ha colocado una imagen en el componente de medios panorámicos del WCM y el m
 
 * Para ver un &quot;bloqueo no válido&quot; en el recurso o un &quot;error de análisis&quot; en la página, marque los modos Ofuscación de solicitud y Bloqueo de solicitud para asegurarse de que estén desactivados.
 * Para un error de lienzo contaminado, configure una ruta de archivo de definición de conjunto de reglas e invalide CTN para las solicitudes anteriores del recurso de imagen.
-* Si la calidad de la imagen se vuelve baja después de una solicitud de imagen con un tamaño superior al límite admitido, compruebe que la configuración **[!UICONTROL Atributos de codificación del JPEG > Calidad]** no esté vacía. Una configuración típica para el campo **[!UICONTROL Calidad]** es `95`. Puede encontrar la configuración en la página Publish del servidor de imágenes. Para obtener acceso a la página, consulte [Configuración de Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Si la calidad de la imagen se vuelve baja después de una solicitud de imagen con un tamaño superior al límite admitido, compruebe que la configuración **[!UICONTROL Atributos de codificación de JPEG > Calidad]** no esté vacía. Una configuración típica para el campo **[!UICONTROL Calidad]** es `95`. Puede encontrar la configuración en la página Publicación del servidor de imágenes. Para obtener acceso a la página, consulte [Configuración de Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Previsualizar imágenes panorámicas {#previewing-panoramic-images}
 
 Ver [Vista previa de Assets](/help/assets/previewing-assets.md).
 
-## Imágenes panorámicas de Publish {#publishing-panoramic-images}
+## Publicar imágenes panorámicas {#publishing-panoramic-images}
 
-Consulte [Publish Assets](/help/assets/publishing-dynamicmedia-assets.md).
+Ver [Publicar Assets](/help/assets/publishing-dynamicmedia-assets.md).

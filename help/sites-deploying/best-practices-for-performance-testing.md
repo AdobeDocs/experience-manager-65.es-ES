@@ -9,13 +9,22 @@ exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1827'
 ht-degree: 2%
-
 ---
-
 # Prácticas recomendadas para pruebas de rendimiento{#best-practices-for-performance-testing}
 
 ## Introducción {#introduction}
@@ -62,8 +71,8 @@ Hay muchas herramientas de prueba de rendimiento disponibles comercialmente en e
 * También se pueden usar herramientas de prueba de carga del sitio web como [Vercara](https://vercara.com/website-performance-management).
 * Al probar sitios web móviles o adaptables, se debe utilizar un conjunto independiente de herramientas. Funcionan limitando el ancho de banda de la red, simulando conexiones móviles más lentas como 3G o EDGE. Entre las herramientas más utilizadas se encuentran las siguientes:
 
-   * **[Acondicionador de vínculos de red](https://nshipster.com/network-link-conditioner/)**: proporciona una interfaz de usuario fácil de usar y funciona a un nivel bastante bajo en la pila de redes. Incluye versiones para OS X y iOS;
-   * [**Charles**](https://www.charlesproxy.com/): una aplicación proxy de depuración web que, además de otros usos, proporciona limitación de red. Se proporcionan versiones para Windows, OS X y Linux®.
+  * **[Acondicionador de vínculos de red](https://nshipster.com/network-link-conditioner/)**: proporciona una interfaz de usuario fácil de usar y funciona a un nivel bastante bajo en la pila de redes. Incluye versiones para OS X y iOS;
+  * [**Charles**](https://www.charlesproxy.com/): una aplicación proxy de depuración web que, además de otros usos, proporciona limitación de red. Se proporcionan versiones para Windows, OS X y Linux®.
 
 #### Herramientas de optimización {#optimization-tools}
 
@@ -73,7 +82,7 @@ La documentación de [Monitorización del rendimiento](/help/sites-deploying/mon
 
 **Modo de desarrollador en la IU táctil**
 
-Una de las nuevas funciones de la IU táctil de AEM 6 es el modo de desarrollador. Del mismo modo que los autores pueden cambiar entre los modos de edición y vista previa, los desarrolladores pueden cambiar al modo de desarrollador en la interfaz de usuario del autor. Al hacerlo, puede ver el tiempo de procesamiento de cada uno de los componentes de la página y los seguimientos de pila de los errores. Para obtener más información sobre el modo de desarrollador, consulte esta [presentación de CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=es).
+Una de las nuevas funciones de la IU táctil de AEM 6 es el modo de desarrollador. Del mismo modo que los autores pueden cambiar entre los modos de edición y vista previa, los desarrolladores pueden cambiar al modo de desarrollador en la interfaz de usuario del autor. Al hacerlo, puede ver el tiempo de procesamiento de cada uno de los componentes de la página y los seguimientos de pila de los errores. Para obtener más información sobre el modo de desarrollador, consulte esta [presentación de CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Uso del archivo log.jar para leer los registros de solicitud**
 
@@ -85,7 +94,8 @@ Para obtener un análisis más completo de los registros de solicitud de un sist
 
 **Herramientas de PageSpeed**
 
-Las herramientas PageSpeed de Google ofrecen análisis de sitio para la adherencia a las prácticas recomendadas para el rendimiento de la página y un complemento que se puede instalar junto con Dispatcher en una instancia de Apache para lograr optimizaciones adicionales.Ver el [sitio web de herramientas de PageSpeed](https://developers.google.com/speed).
+Las herramientas PageSpeed de Google ofrecen análisis de sitio para la adherencia a las prácticas recomendadas para el rendimiento de la página y un complemento que se puede instalar junto con Dispatcher en una instancia de Apache para lograr optimizaciones adicionales.
+Ver el [sitio web de herramientas de PageSpeed](https://developers.google.com/speed).
 
 ## Entorno de creación {#author-environment}
 

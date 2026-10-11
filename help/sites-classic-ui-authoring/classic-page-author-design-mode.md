@@ -1,6 +1,6 @@
 ---
 title: Configuración de componentes en el modo Diseño
-description: AEM Cuando se instala la instancia de forma predeterminada, una selección de componentes está disponible inmediatamente en la barra de tareas. Además de estos, también hay otros componentes disponibles. Puede utilizar el modo Diseño para habilitar o deshabilitar estos componentes.
+description: Cuando se instala una instancia de AEM de forma predeterminada, una selección de componentes está disponible inmediatamente en la barra de tareas. Además de estos, también hay otros componentes disponibles. Puede utilizar el modo Diseño para habilitar o deshabilitar estos componentes.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,16 +10,25 @@ exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 0%
-
+source-wordcount: '514'
+ht-degree: 1%
 ---
-
 # Configuración de componentes en el modo Diseño{#configuring-components-in-design-mode}
 
-AEM Cuando se instala la instancia de forma predeterminada, una selección de componentes está disponible inmediatamente en la barra de tareas.
+Cuando se instala una instancia de AEM de forma predeterminada, una selección de componentes está disponible inmediatamente en la barra de tareas.
 
 Además de estos, también hay otros componentes disponibles. Puede usar el modo Diseño para [habilitar o deshabilitar estos componentes](#enabledisablecomponentsusingdesignmode). Cuando esté habilitado y ubicado en su página, puede usar el modo de diseño para [configurar aspectos del diseño del componente](#configuringcomponentsusingdesignmode) al editar los parámetros de atributo.
 
@@ -44,7 +53,7 @@ Por ejemplo, el contenido de una página de producto puede contener un sistema d
 
 En el modo Diseño, la barra de tareas se minimiza y tiene la posibilidad de configurar los componentes accesibles para la creación:
 
-1. Para entrar en el modo Diseño, abra una página para editarla y utilice el icono del Sidekick:
+1. Para entrar en el modo Diseño, abra una página para editarla y utilice el icono de Sidekick:
 
    ![Modo de diseño](do-not-localize/chlimage_1.png)
 
@@ -52,13 +61,13 @@ En el modo Diseño, la barra de tareas se minimiza y tiene la posibilidad de con
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
-1. Se abrirá un cuadro de diálogo que enumera los grupos de componentes que se muestran en el Sidekick junto con los componentes individuales que contienen.
+1. Se abrirá un cuadro de diálogo que enumera los grupos de componentes que se muestran en Sidekick junto con los componentes individuales que contienen.
 
    Seleccione según sea necesario para agregar o quitar los componentes que deben estar disponibles en la barra de tareas.
 
    ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
-1. El Sidekick minimiza en modo de diseño. Al hacer clic en la flecha, puede maximizar el Sidekick y volver al modo de edición:
+1. Sidekick se minimiza en el modo Diseño. Al hacer clic en la flecha, puede maximizar la Sidekick y volver al modo de edición:
 
    ![Sidekick minimizado](do-not-localize/sidekick-collapsed.png)
 
@@ -66,7 +75,7 @@ En el modo Diseño, la barra de tareas se minimiza y tiene la posibilidad de con
 
 En el modo Diseño, también puede configurar atributos para los componentes individuales. Cada componente tiene sus propios parámetros. El siguiente ejemplo muestra el componente **Image**:
 
-1. Para entrar en el modo Diseño, abra una página para editarla y utilice el icono del Sidekick:
+1. Para entrar en el modo Diseño, abra una página para editarla y utilice el icono de Sidekick:
 
    ![Modo de diseño - Sidekick](do-not-localize/chlimage_1-1.png)
 
@@ -78,6 +87,6 @@ En el modo Diseño, también puede configurar atributos para los componentes ind
 
 1. Haga clic en **Aceptar** para guardar los cambios.
 
-1. El Sidekick minimiza en modo de diseño. Al hacer clic en la flecha, puede maximizar el Sidekick y volver al modo de edición:
+1. Sidekick se minimiza en el modo Diseño. Al hacer clic en la flecha, puede maximizar la Sidekick y volver al modo de edición:
 
    ![Sidekick minimizado](do-not-localize/sidekick-collapsed-1.png)

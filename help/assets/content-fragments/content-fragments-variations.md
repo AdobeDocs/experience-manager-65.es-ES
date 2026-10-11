@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
-
+source-wordcount: '2442'
+ht-degree: 60%
 ---
-
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
 Las [variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido de AEM, ya que le permiten crear y editar copias del contenido principal para su uso en canales específicos o escenarios, lo que hace que la entrega de contenido sin encabezado sea aún más flexible.
@@ -51,22 +63,22 @@ Puede hacer lo siguiente:
 
 * Edite el contenido directamente en la pestaña de **Variaciones**; cada tipo de datos proporciona diferentes opciones de edición, por ejemplo:
 
-   * para los campos **Texto multilínea**, también puede abrir el [editor de pantalla completa](#full-screen-editor) para:
+  * para los campos **Texto multilínea**, también puede abrir el [editor de pantalla completa](#full-screen-editor) para:
 
-      * seleccione el [Formato](#formats)
-      * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
-      * acceder a una amplia gama de [acciones](#actions)
+    * seleccione el [Formato](#formats)
+    * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
+    * acceder a una amplia gama de [acciones](#actions)
 
-   * Para los campos **Referencia de fragmento**, la opción [Editar fragmento de contenido](#fragment-references-edit-content-fragment) puede estar disponible, según la definición del modelo.
+  * Para los campos **Referencia de fragmento**, la opción [Editar fragmento de contenido](#fragment-references-edit-content-fragment) puede estar disponible, según la definición del modelo.
 
 * Asigne **Etiquetas** a la variación actual; las etiquetas se pueden agregar, actualizar y eliminar
 
-   * Las [etiquetas](/help/sites-authoring/tags.md) son útiles a la hora de organizar los fragmentos, ya que se pueden usar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para buscar contenido (mediante etiquetas) y aplicar operaciones por lotes.
+  * Las [etiquetas](/help/sites-authoring/tags.md) son útiles a la hora de organizar los fragmentos, ya que se pueden usar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para buscar contenido (mediante etiquetas) y aplicar operaciones por lotes.
 
-      * La búsqueda de una etiqueta devuelve el fragmento, con la variación de etiqueta resaltada.
-      * Las etiquetas de variación también se pueden utilizar para agrupar variaciones para un perfil específico de la red de distribución de contenido (CDN) (para el almacenamiento en caché de CDN), en lugar de utilizar el nombre de variación.
+    * La búsqueda de una etiqueta devuelve el fragmento, con la variación de etiqueta resaltada.
+    * Las etiquetas de variación también se pueden utilizar para agrupar variaciones para un perfil específico de la red de distribución de contenido (CDN) (para el almacenamiento en caché de CDN), en lugar de utilizar el nombre de variación.
 
-     Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
+    Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
 
   >[!NOTE]
   >
@@ -130,10 +142,10 @@ La edición de texto enriquecido le permite dar formato:
 * Estilo de párrafo: Párrafo, Encabezado 1/2/3
 * [Insertar recurso](#inserting-assets-into-your-fragment)
 * Abra el editor de pantalla completa, donde están disponibles las siguientes opciones de formato:
-   * Búsqueda
-   * Buscar/Reemplazar
-   * Corrector ortográfico
-   * [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * Búsqueda
+  * Buscar/Reemplazar
+  * Corrector ortográfico
+  * [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Insertar fragmento de contenido](#inserting-content-fragment-into-your-fragment); disponible cuando su campo **Texto de varias líneas** está configurado con **Permitir referencia a fragmento**.
 
 Las [acciones](#actions) también son accesibles desde el editor de pantalla completa.
@@ -468,7 +480,7 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 
 >[!CAUTION]
 >
->La sincronización solo está disponible para copiar cambios *de **Principal**&#x200B;a la variación*.
+>La sincronización solo está disponible para copiar cambios *de **Principal**a la variación*.
 >
 >Solo se sincroniza el elemento actual de la variación.
 >

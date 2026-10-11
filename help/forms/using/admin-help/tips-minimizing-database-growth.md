@@ -1,6 +1,6 @@
 ---
 title: Sugerencias para minimizar el crecimiento de las bases de datos
-description: AEM Los procesos de larga duración almacenan datos de procesos en la base de datos de formularios de la. AEM El crecimiento de la base de datos de formularios de la se puede minimizar mediante unas sencillas estrategias de diseño de procesos y configuración de productos.
+description: Los procesos de larga duración almacenan datos de procesos en la base de datos de formularios de AEM. El crecimiento de la base de datos de formularios de AEM se puede minimizar mediante unas sencillas estrategias de diseño de procesos y configuración de productos.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -9,16 +9,30 @@ exl-id: f64efb06-815a-4608-ba1c-39e22f344ebb
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '419'
 ht-degree: 2%
-
 ---
-
 # Sugerencias para minimizar el crecimiento de las bases de datos {#tips-for-minimizing-database-growth}
 
-AEM Los procesos de larga duración almacenan datos de procesos en la base de datos de formularios de la. AEM El crecimiento de la base de datos de formularios de la se puede minimizar mediante unas sencillas estrategias de diseño de procesos y configuración de productos.
+Los procesos de larga duración almacenan datos de procesos en la base de datos de formularios de AEM. El crecimiento de la base de datos de formularios de AEM se puede minimizar mediante unas sencillas estrategias de diseño de procesos y configuración de productos.
 
 ## Sugerencias de diseño de procesos {#process-design-tips}
 
@@ -32,6 +46,6 @@ Utilice tipos de variables simples (por ejemplo, string o int) y evite utilizar 
 
 ## Sugerencias de administración de productos {#product-administration-tips}
 
-Utilice el almacenamiento global de documentos (GDS) de forma eficaz. El directorio GDS del servidor de Forms AEM se utiliza para almacenar, entre otras cosas, los archivos que se pasan a servicios que forman parte de formularios en proceso de la. Para mejorar el rendimiento, los documentos más pequeños se almacenan en la memoria y se conservan en la base de datos.
+Utilice el almacenamiento global de documentos (GDS) de forma eficaz. El directorio GDS del servidor de Forms se utiliza para almacenar, entre otras cosas, archivos que se pasan a servicios que forman parte de formularios AEM en procesos. Para mejorar el rendimiento, los documentos más pequeños se almacenan en la memoria y se conservan en la base de datos.
 
-La consola de administración expone la propiedad Tamaño máximo en línea del documento predeterminado para configurar el tamaño máximo de los documentos almacenados en memoria y conservados en la base de datos. AEM (Consulte [Configurar la configuración general de los formularios en la página de inicio de sesión](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)). Si establece esta propiedad en un valor bajo, la mayoría de los documentos se conservan en el directorio GDS en lugar de en la base de datos. La ventaja es que puede eliminar más fácilmente los archivos cuando ya no los necesita cuando están almacenados en el directorio GDS.
+La consola de administración expone la propiedad Tamaño máximo en línea del documento predeterminado para configurar el tamaño máximo de los documentos almacenados en memoria y conservados en la base de datos. (Consulte [Configurar la configuración general de los formularios AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)). Si establece esta propiedad en un valor bajo, la mayoría de los documentos se conservan en el directorio GDS en lugar de en la base de datos. La ventaja es que puede eliminar más fácilmente los archivos cuando ya no los necesita cuando están almacenados en el directorio GDS.

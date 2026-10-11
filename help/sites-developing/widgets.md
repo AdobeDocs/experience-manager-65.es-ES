@@ -1,20 +1,27 @@
 ---
 title: Uso y ampliación de widgets (IU clásica)
-
 description: La interfaz basada en web de Adobe Experience Manager utiliza AJAX y otras tecnologías modernas de explorador para permitir que los autores editen y apliquen formato al contenido desde WYSIWYG directamente en la página web
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '5049'
 ht-degree: 0%
@@ -645,7 +652,7 @@ Al instalar el paquete, `content.jsp` del componente **Información general de c
 * Se basa en los datos recuperados del repositorio mediante una llamada a un servlet.
 * Las celdas de la última columna se pueden editar. El valor se mantiene en una propiedad `test` debajo del nodo definido por la ruta mostrada en la primera columna.
 
-Como se explica en la sección anterior, el objeto window obtiene su objeto ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` llamando al método `getGridPanel()` definido en el archivo `defaultgrid.js` en `/apps/extjstraining/components/gridoverview/defaultgrid.js`. El componente **Información general de cuadrícula &#x200B;** proporciona una implementación diferente para el método `getGridPanel()`, definido en el archivo `referencesearch.js` en `/apps/extjstraining/components/gridoverview/referencesearch.js`. Al cambiar el archivo .js al que se hace referencia en el componente jsp, la cuadrícula se basa en los datos recuperados del repositorio.
+Como se explica en la sección anterior, el objeto window obtiene su objeto ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` llamando al método `getGridPanel()` definido en el archivo `defaultgrid.js` en `/apps/extjstraining/components/gridoverview/defaultgrid.js`. El componente **Información general de cuadrícula ** proporciona una implementación diferente para el método `getGridPanel()`, definido en el archivo `referencesearch.js` en `/apps/extjstraining/components/gridoverview/referencesearch.js`. Al cambiar el archivo .js al que se hace referencia en el componente jsp, la cuadrícula se basa en los datos recuperados del repositorio.
 
 Cambie el archivo .js al que se hace referencia en el componente jsp:
 

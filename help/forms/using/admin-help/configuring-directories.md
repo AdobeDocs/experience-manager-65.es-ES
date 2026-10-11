@@ -9,13 +9,27 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3263'
 ht-degree: 0%
-
 ---
-
 
 # Configurar directorios {#configuring-directories}
 
@@ -47,7 +61,7 @@ Para cada dominio de empresa que configure, especifique los directorios que el p
 
 ### Añadir un SPI personalizado {#add-a-custom-spi}
 
-AEM AEM Para obtener información acerca de cómo crear un SPI personalizado, vea el tema sobre el desarrollo de SPI para formularios en la sección de programación de [formularios en la sección de programación con formularios en la sección de formularios en la página de inicio de &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_63). Para que un SPI personalizado recién implementado esté disponible para asociarlo al dominio, reinicie el servidor.
+Para obtener información sobre cómo crear un SPI personalizado, consulte &quot;Desarrollo de SPI para formularios AEM&quot; en [Programación con formularios AEM](https://www.adobe.com/go/learn_aemforms_programming_63). Para que un SPI personalizado recién implementado esté disponible para asociarlo al dominio, reinicie el servidor.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. Haga clic en Nuevo dominio de empresa o seleccione un dominio de empresa existente.
@@ -140,7 +154,7 @@ Aunque DN base es una configuración obligatoria en la consola de administració
 
 **Iniciales:** Atributo de esquema para las iniciales del usuario
 
-**Calendario empresarial:** Le permite asignar un calendario empresarial a un usuario, según el valor de esta configuración (la clave del calendario empresarial). Los calendarios comerciales definen días laborables y no laborables. AEM Los formularios de datos pueden utilizar calendarios comerciales al calcular las fechas y horas futuras para eventos como recordatorios, plazos y escalaciones. La forma de asignar claves de calendario empresarial a los usuarios depende de si utiliza un dominio empresarial, local o híbrido. (Consulte Configuración de calendarios comerciales.)
+**Calendario empresarial:** Le permite asignar un calendario empresarial a un usuario, según el valor de esta configuración (la clave del calendario empresarial). Los calendarios comerciales definen días laborables y no laborables. Los formularios AEM Forms pueden utilizar calendarios comerciales al calcular las fechas y horas futuras para eventos como recordatorios, plazos y escalaciones. La forma de asignar claves de calendario empresarial a los usuarios depende de si utiliza un dominio empresarial, local o híbrido. (Consulte Configuración de calendarios comerciales.)
 
 Si utiliza un dominio de empresa, puede asignar la configuración del Calendario empresarial a un campo del directorio LDAP. Por ejemplo, si cada registro de usuario del directorio contiene un campo *país* y desea asignar calendarios comerciales basados en el país donde se encuentra el usuario, especifique el nombre de campo *país* como valor de la configuración del Calendario empresarial. A continuación, puede asignar las claves del calendario empresarial (los valores definidos para el campo *country* en el directorio LDAP) a los calendarios empresariales del flujo de trabajo de formularios.
 
@@ -162,7 +176,7 @@ La cantidad de espacio utilizado para mostrar el nombre de la clave del calendar
 
 **Zona horaria:** Atributo de esquema que contiene la zona horaria donde se encuentra el usuario. El valor es una cadena como Ciudad/País.
 
-AEM **Habilitar el control de vista de lista virtual (VLV):** Un control LDAP que permite a los formularios de datos recuperar datos por lotes desde el servidor de directorio. Si utiliza Sun One como directorio LDAP y el directorio contiene muchos usuarios, al activar VLV se crea un índice que Administración de usuarios puede utilizar al buscar usuarios. Esta función es útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede habilitar VLV para grupos. Si selecciona Habilitar el control de vista de lista virtual (VLV), especifique un nombre en el cuadro Ordenar campo.
+**Habilitar el control de vista de lista virtual (VLV):** Un control LDAP que permite a los formularios de AEM recuperar datos por lotes del servidor de directorio. Si utiliza Sun One como directorio LDAP y el directorio contiene muchos usuarios, al activar VLV se crea un índice que Administración de usuarios puede utilizar al buscar usuarios. Esta función es útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede habilitar VLV para grupos. Si selecciona Habilitar el control de vista de lista virtual (VLV), especifique un nombre en el cuadro Ordenar campo.
 
 >[!NOTE]
 >
@@ -204,7 +218,7 @@ Si DN se especifica como identificador único, no es necesario configurar el ide
 
 **Modificar marca de tiempo:** Para habilitar la sincronización de directorios delta, establezca este valor para modificar la marca de tiempo. (Consulte Habilitar la sincronización de directorios delta.)
 
-AEM **Habilitar el control de vista de lista virtual (VLV):** Un control LDAP que permite a los formularios de datos recuperar datos por lotes desde el servidor de directorio. Si utiliza Sun One como directorio LDAP y el directorio contiene muchos grupos, al activar VLV se crea un índice que Administración de usuarios puede utilizar al buscar grupos. Esta función es útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede habilitar VLV para usuarios de. Si selecciona Habilitar el control de vista de lista virtual (VLV), especifique un nombre de campo de ordenación.
+**Habilitar el control de vista de lista virtual (VLV):** Un control LDAP que permite a los formularios de AEM recuperar datos por lotes del servidor de directorio. Si utiliza Sun One como directorio LDAP y el directorio contiene muchos grupos, al activar VLV se crea un índice que Administración de usuarios puede utilizar al buscar grupos. Esta función es útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede habilitar VLV para usuarios de. Si selecciona Habilitar el control de vista de lista virtual (VLV), especifique un nombre de campo de ordenación.
 
 >[!NOTE]
 >
@@ -224,9 +238,9 @@ Si se devuelven usuarios y grupos, los resultados muestran los valores asignados
 
 ## Configuración de la administración de usuarios para utilizar la vista de lista virtual (VLV) {#configure-user-management-to-use-virtual-list-view-vlv}
 
-La sincronización de directorios es un requisito importante para la administración de usuarios. AEM Los usuarios y grupos se sincronizan desde un directorio empresarial a la base de datos de formularios de la aplicación para asignar funciones y permisos. El número de usuarios varía de 100 a 100000 o más según los requisitos y plantea un desafío de ingeniería para sincronizar los datos de forma eficaz.
+La sincronización de directorios es un requisito importante para la administración de usuarios. Los usuarios y grupos se sincronizan desde un directorio empresarial a la base de datos de formularios de AEM para asignar funciones y permisos. El número de usuarios varía de 100 a 100000 o más según los requisitos y plantea un desafío de ingeniería para sincronizar los datos de forma eficaz.
 
-El protocolo LDAP proporciona un mecanismo para consultar conjuntos de datos grandes de forma paginada mediante controles de solicitud. Cuando se utiliza Microsoft AEM Active Directory, LDAP para la sincronización de la base de datos de formularios de la aplicación utiliza PagedResultsControl para recuperar datos en lotes de un tamaño concreto. Sun ONE Directory Server no admite este control. Para completar una consulta paginada con Sun ONE Directory Server, utilice el control Vista de lista virtual (VLV). Este control implica tanto la configuración del lado del servidor como la implementación del lado del cliente.
+El protocolo LDAP proporciona un mecanismo para consultar conjuntos de datos grandes de forma paginada mediante controles de solicitud. Al utilizar Microsoft Active Directory, la sincronización de LDAP con la base de datos de formularios de AEM utiliza PagedResultsControl para recuperar datos en lotes de un tamaño determinado. Sun ONE Directory Server no admite este control. Para completar una consulta paginada con Sun ONE Directory Server, utilice el control Vista de lista virtual (VLV). Este control implica tanto la configuración del lado del servidor como la implementación del lado del cliente.
 
 >[!NOTE]
 >
@@ -238,7 +252,7 @@ El protocolo LDAP proporciona un mecanismo para consultar conjuntos de datos gra
 
 ### Configuración de Sun ONE Directory Server para VLV {#configuring-the-sun-one-directory-server-for-vlv}
 
-La creación de un VLV requiere un par de entradas que incluyan las clases de objeto `vlvSearch` y `vlvIndex`. La entrada vlvSearch incluye una base de búsqueda y el atributo `vlvFilter`, que especifica la clase de objeto que contiene los atributos que desea ordenar. La clase de objeto `vlvIndex` incluye el atributo `vlvSort`, que especifica uno o más atributos para ordenar y el orden para ordenarlos. (Un signo menos (-) indica el orden alfabético inverso). AEM El uso de VLV con formularios requiere entradas independientes para usuarios y grupos.
+La creación de un VLV requiere un par de entradas que incluyan las clases de objeto `vlvSearch` y `vlvIndex`. La entrada vlvSearch incluye una base de búsqueda y el atributo `vlvFilter`, que especifica la clase de objeto que contiene los atributos que desea ordenar. La clase de objeto `vlvIndex` incluye el atributo `vlvSort`, que especifica uno o más atributos para ordenar y el orden para ordenarlos. (Un signo menos (-) indica el orden alfabético inverso). El uso de VLV con formularios AEM Forms requiere entradas independientes para usuarios y grupos.
 
 >[!NOTE]
 >
@@ -265,7 +279,7 @@ Este es un ejemplo de script LDIF para la entrada VLV para usuarios:
 
 **Cree las entradas del objeto mediante un script**
 
-1. El script de ejemplo tiene una entrada LDAP denominada `lcuser`. AEM Esta entrada es para la configuración relacionada con VLV para la sincronización de usuarios en formularios. Modifique las siguientes propiedades en consecuencia:
+1. El script de ejemplo tiene una entrada LDAP denominada `lcuser`. Esta entrada es para la configuración relacionada con VLV para la sincronización de usuarios en formularios AEM Forms. Modifique las siguientes propiedades en consecuencia:
 
    **Nombre de entrada:** El nombre de entrada de este ejemplo es `lcuser`. Si se cambia `lcuser`, debe cambiarse en todas las áreas del script de ejemplo.
 
@@ -279,7 +293,7 @@ Este es un ejemplo de script LDIF para la entrada VLV para usuarios:
 
    >[!NOTE]
    >
-   >Como norma, el nombre de la entrada vlvIndex también está establecido en `lcuser`, pero puede darle un nombre diferente. Utilice el mismo nombre en la herramienta vlvindex. (Consulte [Crear el índice del servidor de directorios para VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Como norma, el nombre de la entrada vlvIndex también está establecido en `lcuser`, pero puede darle un nombre diferente. Utilice el mismo nombre en la herramienta vlvindex. (Consulte [Crear el índice del servidor de directorios para VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Con la herramienta `ldapmodify` proporcionada con Sun ONE Server, cree una entrada similar para los grupos utilizando el DN base del grupo, el filtro de búsqueda y el campo de ordenación respectivamente:
 

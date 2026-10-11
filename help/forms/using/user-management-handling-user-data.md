@@ -7,13 +7,27 @@ role: Admin,User
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '913'
 ht-degree: 72%
-
 ---
-
 # Administrar usuarios de Forms | Administración de datos de usuario {#forms-user-management-handling-user-data}
 
 La administración de usuarios es un componente JEE de AEM Forms que permite crear, administrar y autorizar a los usuarios de AEM Forms para que accedan a AEM Forms. La administración de usuarios utiliza los dominios como directorios para obtener información del usuario. Se admiten los siguientes tipos de dominio:
@@ -91,7 +105,7 @@ Los datos de administración de usuarios para usuarios que hayan accedido al men
 
 ## Acceder y eliminar datos de usuario {#access-and-delete-user-data}
 
-AEM Puede acceder a los datos de administración de usuarios y exportarlos para los usuarios de las bases de datos de administración de usuarios y el repositorio de y, si es necesario, eliminarlos de forma permanente.
+Puede acceder a los datos de administración de usuarios y exportarlos para los usuarios de las bases de datos de administración de usuarios y repositorio de AEM y, si es necesario, eliminarlos de forma permanente.
 
 ### Base de datos {#database-1}
 
@@ -182,5 +196,5 @@ Para eliminar un usuario:
 
 1. Vaya a `https://'[server]:[port]'/lc/useradmin` con las credenciales de administrador de AEM.
 1. Busque un usuario y haga doble clic en el nombre de usuario para abrir las propiedades de usuario. Copie la propiedad `Path`.
-1. AEM Vaya al CRXDE Lite de la en `https://'[server]:[port]'/lc/crx/de/index.jsp` y navegue o busque la ruta del usuario.
+1. Vaya a AEM CRXDE Lite en `https://'[server]:[port]'/lc/crx/de/index.jsp` y navegue o busque la ruta del usuario.
 1. Elimine la ruta y haga clic en **[!UICONTROL Guardar todo]** para eliminar permanentemente el usuario del repositorio de AEM.

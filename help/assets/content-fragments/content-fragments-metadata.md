@@ -1,20 +1,32 @@
 ---
 title: 'Metadatos: propiedades del fragmento'
-description: AEM Consulte cómo puede ver y editar las propiedades de los metadatos de los fragmentos de contenido en la documentación de para ajustar el contenido sin encabezado en la documentación de la documentación de.
+description: Consulte cómo puede ver y editar las propiedades de metadatos de los fragmentos de contenido en AEM para ajustar el contenido sin encabezado.
 feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 79%
-
 ---
-
 # Metadatos: propiedades del fragmento {#metadata-fragment-properties}
 
-AEM Consulte cómo puede utilizar el editor de fragmentos de contenido para ver y editar las propiedades de metadatos de los fragmentos de contenido en para ajustar el contenido sin encabezado en la.
+Consulte cómo puede utilizar el editor de fragmentos de contenido para ver y editar las propiedades de metadatos de los fragmentos de contenido en AEM para ajustar el contenido sin encabezado.
 
 ## Edición de propiedades/metadatos {#editing-properties-meta-data}
 
@@ -35,8 +47,8 @@ Puede ver y editar los metadatos (propiedades) de los fragmentos de contenido:
    * **Título**
    * **Descripción**
    * **Etiquetas**
-      * Las [Etiquetas](/help/sites-authoring/tags.md) son especialmente potentes a la hora de organizar los fragmentos, ya que se pueden utilizar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para encontrar contenido (mediante etiquetas) y aplicar operaciones por lotes.
-Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
+     * Las [Etiquetas](/help/sites-authoring/tags.md) son especialmente potentes a la hora de organizar los fragmentos, ya que se pueden utilizar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para encontrar contenido (mediante etiquetas) y aplicar operaciones por lotes.
+       Por ejemplo, puede etiquetar fragmentos relevantes como “lanzamiento de Navidad” para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
 
      >[!NOTE]
      >

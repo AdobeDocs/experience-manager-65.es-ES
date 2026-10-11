@@ -10,13 +10,20 @@ role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 1%
-
 ---
-
 # Notificaciones de Communities {#communities-notifications}
 
 ## Información general {#overview}
@@ -34,13 +41,13 @@ Lo que distingue las notificaciones de las actividades y las suscripciones es:
 
 * Un vínculo a la sección de notificaciones siempre está presente en el encabezado de un sitio de la comunidad:
 
-   * Las actividades requieren que [la función de flujo de actividad](/help/communities/functions.md#activity-stream-function) se incluya en la estructura del sitio de la comunidad.
-   * Las suscripciones requieren [la configuración del correo electrónico](/help/communities/email.md).
+  * Las actividades requieren que [la función de flujo de actividad](/help/communities/functions.md#activity-stream-function) se incluya en la estructura del sitio de la comunidad.
+  * Las suscripciones requieren [la configuración del correo electrónico](/help/communities/email.md).
 
 * La implementación de las notificaciones se realiza a través de canales escalables y conectables:
 
-   * Las actividades solo están disponibles en la web.
-   * Las suscripciones solo están disponibles por correo electrónico.
+  * Las actividades solo están disponibles en la web.
+  * Las suscripciones solo están disponibles por correo electrónico.
 
 A partir de las comunidades [FP1](/help/communities/deploy-communities.md#latestfeaturepack), los canales de notificación disponibles son:
 
@@ -80,11 +87,11 @@ Aparecerá el botón **[!UICONTROL Seguir]**:
 * Al ver el perfil de otro miembro.
 * En una página de funciones principal, como foros, control de calidad y blogs:
 
-   * Sigue toda la actividad de para esa función general.
+  * Sigue toda la actividad de para esa función general.
 
 * Para una entrada específica, como un tema de foro, una pregunta de control de calidad o un artículo de blog:
 
-   * Sigue todas las actividades de esa entrada específica.
+  * Sigue todas las actividades de esa entrada específica.
 
 ## Administración de configuración de notificación {#managing-notification-settings}
 

@@ -10,13 +10,22 @@ exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '6118'
 ht-degree: 0%
-
 ---
-
 # Portales y portlets de AEM{#aem-portals-and-portlets}
 
 Este documento describe lo siguiente:
@@ -46,7 +55,7 @@ Para configurar el contenido de AEM para que aparezca en un portal, consulte [In
 
 >[!CAUTION]
 >
->AEM Portal Director ya no se utiliza en AEM 6.4. Ver [Funciones obsoletas y eliminadas](https://helpx.adobe.com/es/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>AEM Portal Director ya no se utiliza en AEM 6.4. Ver [Funciones obsoletas y eliminadas](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Administración del portlet de contenido de AEM {#administering-the-aem-content-portlet}
 
@@ -526,7 +535,7 @@ title="{text}"/>
 
 #### Instalación de un diseño personalizado {#installing-a-custom-layout}
 
-Para instalar un diseño personalizado, acceda a la sección Consola web OSGI del portlet **Paquetes &#x200B;** y cargue el paquete.
+Para instalar un diseño personalizado, acceda a la sección Consola web OSGI del portlet **Paquetes ** y cargue el paquete.
 
 #### Paquetes {#packages}
 
@@ -610,7 +619,7 @@ Se pueden implementar servicios OSGi opcionales para personalizar varias partes 
 
 Los siguientes servicios tienen una implementación predeterminada en el portlet de contenido (con una interfaz Java correspondiente). Para personalizar, es necesario implementar un paquete que contenga la nueva implementación de servicio en la aplicación de portlet.
 
-Al implementar un servicio de este tipo, asegúrese de establecer la propiedad **service.ranking** del servicio en un valor positivo. La implementación predeterminada utiliza la clasificación **&#x200B; 0** y el portlet utiliza el servicio con la clasificación más alta.
+Al implementar un servicio de este tipo, asegúrese de establecer la propiedad **service.ranking** del servicio en un valor positivo. La implementación predeterminada utiliza la clasificación** 0** y el portlet utiliza el servicio con la clasificación más alta.
 
 | **Nombre** | **Descripción** | **Comportamiento predeterminado** |
 |---|---|---|
@@ -715,7 +724,7 @@ Utilice el componente Portal para añadir una ventana de portlet a la página we
 
 1. Haga doble clic en el componente para abrir las propiedades del portlet.
 1. En el menú desplegable **Entidad de portlet**, seleccione el portlet en la lista.
-1. Active o desactive la casilla de verificación **Ocultar barra de título &#x200B;** en función de si desea ver la barra de título del portlet.
+1. Active o desactive la casilla de verificación **Ocultar barra de título **en función de si desea ver la barra de título del portlet.
 1. En el campo **Ventana de portlet**, escriba un identificador de ventana de portlet único, si lo desea.
 
    >[!NOTE]

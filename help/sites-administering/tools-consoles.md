@@ -10,13 +10,22 @@ exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 25%
-
 ---
-
 # Consolas de herramientas{#tools-consoles}
 
 Las consolas **Herramientas** proporcionan acceso a varias herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. Actualmente hay dos tipos de consola **Tools** que dependen de la interfaz de usuario que está usando:
@@ -134,7 +143,7 @@ Las consolas **Herramientas** proporcionan acceso a varias herramientas especial
   </tr>
   <tr>
    <td> </td>
-   <td>Monitoreo</td>
+   <td>Monitorización</td>
   </tr>
   <tr>
    <td> </td>

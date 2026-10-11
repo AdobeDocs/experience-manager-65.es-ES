@@ -8,13 +8,26 @@ feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '890'
 ht-degree: 93%
-
 ---
-
 # Ver y comprender los informes de transacciones de AEM Forms en OSGi{#viewing-and-understanding-transaction-reports}
 
 Los informes de transacciones permiten capturar y realizar un seguimiento de la cantidad de formularios enviados, documentos procesados y documentos representados. El objetivo detrás del seguimiento de estas transacciones es tomar una decisión informada sobre el uso del producto y reequilibrar las inversiones en hardware y software. Para obtener más información, consulte [Información general sobre los informes de transacciones de AEM Forms](../../forms/using/transaction-reports-overview.md).
@@ -26,7 +39,7 @@ La función de informes de transacciones está disponible como parte del paquete
 * Habilite la replicación inversa en todas las instancias de publicación
 * Habilite los informes de transacciones
 * Proporcione derechos para ver un informe de transacciones
-* (Opcional) Configure el período de vaciado de transacción y las bandejas de salida [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* (Opcional) Configure el período de vaciado de transacción y las bandejas de salida [](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >

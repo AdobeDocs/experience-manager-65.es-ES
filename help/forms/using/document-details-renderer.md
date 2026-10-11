@@ -8,13 +8,33 @@ exl-id: 946f0f6d-86af-41c1-98ef-98c8f5566e95
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '675'
 ht-degree: 62%
-
 ---
-
 # Detalles del documento para el procesador {#document-details-for-renderer}
 
 ## Introducción {#introduction}
@@ -46,7 +66,7 @@ Este método es la forma estándar de comunicación entre un marco principal y u
 
 Se comunica mediante `pdfObject.postMessage` / `pdfObject.messageHandler`
 
-Este método es la forma estándar de comunicación con un PDFJavaScript de un HTML. La vista PdfTaskForm también se encarga de un PDF plano y lo procesa sin formato.
+Este método es la forma estándar de comunicación con un PDFJavaScript de un HTML. La vista PdfTaskForm también se encarga de una PDF plana y la procesa sin formato.
 
 >[!NOTE]
 >
@@ -58,17 +78,17 @@ La vista de NewHTMLTaskForm representa los nuevos formularios HTML.
 
 Cuando un formulario XDP se procesa como HTML mediante el paquete de formularios móviles implementado en CRX, también agrega `FormBridge` JavaScript para el formulario, que expone diferentes métodos para guardar y enviar datos de formulario.
 
-Esta JavaScript es diferente de la mencionada en los PDF forms anteriores, pero tiene un propósito similar.
+Esta JavaScript es diferente de la mencionada en PDF forms anterior, pero tiene un propósito similar.
 
 >[!NOTE]
 >
->El Adobe no recomienda editar el contenido de la vista de NewHTMLTaskForm.
+>Adobe no recomienda editar el contenido de la vista de NewHTMLTaskForm.
 
 ## Formularios Flex y guías {#flex-forms-and-guides}
 
 SwfTaskForm procesa los formularios Flex, y las vistas de HtmlTaskFormlas procesan las guías, respectivamente.
 
-En AEM Forms Workspace, estas vistas se comunican con el SWF Flex® real que conforma el formulario o la guía mediante un SWF intermedio presente en `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+En AEM Forms Workspace, estas vistas se comunican con el SWF real que conforma el formulario o la guía de Flex® mediante un SWF intermedio presente en `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 La comunicación se produce mediante `swfObject.postMessage` / `window.flexMessageHandler`.
 

@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a77b577341050316ce60ae809a4912bbbbce974c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '519'
 ht-degree: 72%
-
 ---
-
 # Fragmentos de contenido: Eliminar consideraciones {#content-fragments-delete-considerations}
 
 Revise estas consideraciones importantes antes de definir las políticas de eliminación de fragmentos de contenido en AEM. Los fragmentos de contenido son una potente herramienta para ofrecer contenido sin encabezado, y las implicaciones de eliminarlos deben examinarse detenidamente.
@@ -72,15 +84,15 @@ Los permisos previos para permitir que un usuario o grupo específico edite o ac
 
 * Para los nodos o carpetas del fragmento de contenido:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`
+  * `jcr:addChildNodes`, `jcr:modifyProperties`
 
 * Para el nodo `jcr:content` de todos los fragmentos de contenido:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`
 
 * Para todos los nodos siguientes `jcr:content` de todos los fragmentos de contenido:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`, `jcr:removeNode`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` y `jcr:removeChildNodes`, `jcr:removeNode`
 
 Estos privilegios de `remove` deben ser [administrados mediante Listas de control de acceso, dentro de CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 

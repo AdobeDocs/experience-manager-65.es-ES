@@ -9,16 +9,25 @@ exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8d7c5b4962ea0dbd80cf78faa31238b2252f4a5c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
-
+source-wordcount: '278'
+ht-degree: 6%
 ---
-
 # El marco de protección CSRF{#the-csrf-protection-framework}
 
-Además del filtro de referente de Apache Sling, Adobe también proporciona un nuevo marco de protección CSRF para protegerse contra este tipo de ataque.
+Además del Filtro de referente de Apache Sling, Adobe también proporciona un nuevo marco de protección CSRF para protegerse contra este tipo de ataque.
 
 El marco de trabajo utiliza tokens para garantizar que la solicitud del cliente sea legítima. Los tokens se generan cuando el formulario se envía al cliente y se validan cuando se devuelve al servidor.
 
@@ -26,7 +35,7 @@ El marco de trabajo utiliza tokens para garantizar que la solicitud del cliente 
 >
 >No hay tokens en las instancias de publicación para usuarios anónimos.
 
-## Requisitos  {#requirements}
+## Requisitos {#requirements}
 
 ### Dependencias {#dependencies}
 
@@ -40,11 +49,11 @@ Para utilizar los tokens, debe replicar el binario HMAC en todas las instancias 
 >
 >Asegúrese de realizar también los cambios de configuración necesarios en Dispatcher para utilizar el marco de protección CSRF:
 >
->* [Configuración de Adobe Experience Manager Dispatcher para prevenir ataques de tipo CSRF](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [Configuración de Adobe Experience Manager Dispatcher para prevenir ataques de tipo CSRF](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
 >* [Información general de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >
->Si usa la caché de manifiesto con su aplicación web, asegúrese de agregar &quot;**&ast;**&quot; al manifiesto para asegurarse de que el token no desconecte la llamada de generación de token CSRF. Para obtener más información, consulte este [vínculo](https://www.w3.org/TR/offline-webapps/).
+>Si usa la caché de manifiesto con su aplicación web, asegúrese de agregar &quot;**&amp;ast;**&quot; al manifiesto para asegurarse de que el token no desconecte la llamada de generación de token CSRF. Para obtener más información, consulte este [vínculo](https://www.w3.org/TR/offline-webapps/).
 >
->Para obtener más información sobre los ataques de CSRF y las formas de mitigarlos, consulte la [página OWASP de falsificación de solicitud en sitios múltiples](https://owasp.org/www-community/attacks/csrf).
+>Para obtener más información sobre los ataques de CSRF y las formas de mitigarlos, consulte la [página de OWASP de falsificación de solicitud en sitios múltiples](https://owasp.org/www-community/attacks/csrf).

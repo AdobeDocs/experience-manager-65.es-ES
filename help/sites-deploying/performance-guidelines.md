@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 6%
-
 ---
-
 # Directrices de rendimiento{#performance-guidelines}
 
 Esta página proporciona directrices generales sobre cómo optimizar el rendimiento de la implementación de AEM. Si es nuevo en AEM, revise las siguientes páginas antes de empezar a leer las directrices de rendimiento:
@@ -304,7 +313,7 @@ En AEM, los datos binarios se pueden almacenar de forma independiente de los nod
 
 >[!CAUTION]
 >
->El micronúcleo de la base de datos relacional tiene compatibilidad restringida. Póngase en contacto con el [Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support) antes de usar este tipo de microkernel.
+>El micronúcleo de la base de datos relacional tiene compatibilidad restringida. Póngase en contacto con el [Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support) antes de usar este tipo de microkernel.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -316,11 +325,11 @@ Para obtener más información sobre las opciones de configuración disponibles,
 
 >[!NOTE]
 >
->Adobe recomienda elegir la opción de implementar AEM en Azure o Amazon Web Service (AWS) con Adobe Managed Services. Los clientes se benefician de un equipo que tiene la experiencia y las habilidades de implementar y operar AEM en estos entornos de computación en la nube. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/es/products/experience-manager/managed-services.html?aemClk=t).
+>Adobe recomienda elegir la opción de implementar AEM en Azure o Amazon Web Service (AWS) con Adobe Managed Services. Los clientes se benefician de un equipo que tiene la experiencia y las habilidades de implementar y operar AEM en estos entornos de computación en la nube. Ver [documentación adicional sobre Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 >
 >Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera de Adobe Managed Services, Adobe recomienda trabajar directamente con el proveedor de la nube. O trabaje con uno de los socios de Adobe que admita la implementación de AEM en el entorno de nube que elija. El proveedor o socio de nube seleccionado es responsable de las especificaciones de tamaño, el diseño y la implementación de la arquitectura que admiten para satisfacer los requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
 >
->&#x200B;>Consulte también la página [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms).
+>>Consulte también la página [requisitos técnicos](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
 ### Búsqueda {#search-features}
 
@@ -354,12 +363,12 @@ Desarrollo para AEM con el objetivo de **rendimiento y escalabilidad**. Las sigu
 * No utilice consultas siempre que sea posible
 * No utilice enlaces de Sling para obtener servicios OSGi en código Java™, sino que utilice:
 
-   * @Reference en un componente DS
-   * @Inject en un modelo Sling
-   * sling.getService() en una clase de uso de Sightly
-   * sling.getService() en un JSP
-   * un ServiceTracker
-   * acceso directo al registro de servicios OSGi
+  * @Reference en un componente DS
+  * @Inject en un modelo Sling
+  * sling.getService() en una clase de uso de Sightly
+  * sling.getService() en un JSP
+  * un ServiceTracker
+  * acceso directo al registro de servicios OSGi
 
 Para obtener más información sobre el desarrollo en AEM, lea [Desarrollo: Conceptos básicos](/help/sites-developing/the-basics.md). Para ver prácticas recomendadas adicionales, consulte [Prácticas recomendadas de desarrollo](/help/sites-developing/best-practices.md).
 
@@ -834,24 +843,24 @@ Las directrices presentadas en esta página se pueden resumir de la siguiente ma
 
 * **TarMK con almacén de datos de archivos** - La arquitectura recomendada para la mayoría de los clientes:
 
-   * Topología mínima: una instancia de autor, dos instancias de publicación, dos instancias de Dispatcher
-   * Replicación sin binarios activada si se comparte el almacén de datos de archivos
+  * Topología mínima: una instancia de autor, dos instancias de publicación, dos instancias de Dispatcher
+  * Replicación sin binarios activada si se comparte el almacén de datos de archivos
 
 * **MongoMK con almacén de datos de archivos** - La arquitectura recomendada para la escalabilidad horizontal del nivel de Author:
 
-   * Topología mínima: tres instancias de autor, tres instancias de MongoDB, dos instancias de publicación, dos instancias de Dispatcher
-   * Replicación sin binarios activada si se comparte el almacén de datos de archivos
+  * Topología mínima: tres instancias de autor, tres instancias de MongoDB, dos instancias de publicación, dos instancias de Dispatcher
+  * Replicación sin binarios activada si se comparte el almacén de datos de archivos
 
 * **Nodestore**: almacenado en el disco local, no en un almacenamiento conectado a la red (NAS)
 * Al usar **Amazon S3**:
 
-   * El almacén de datos de Amazon S3 se comparte entre los niveles Author y Publish
-   * La replicación sin binarios debe estar activada
-   * La recolección de elementos no utilizados del almacén de datos requiere una primera ejecución en todos los nodos de autor y publicación y, a continuación, una segunda ejecución en autor
+  * El almacén de datos de Amazon S3 se comparte entre los niveles Author y Publish
+  * La replicación sin binarios debe estar activada
+  * La recolección de elementos no utilizados del almacén de datos requiere una primera ejecución en todos los nodos de autor y publicación y, a continuación, una segunda ejecución en autor
 
 * **Se debe crear un índice personalizado además del índice predeterminado**, basado en las búsquedas más comunes
 
-   * Los índices de Lucene deben utilizarse para los índices personalizados
+  * Los índices de Lucene deben utilizarse para los índices personalizados
 
 * **La personalización del flujo de trabajo puede mejorar considerablemente el rendimiento**: elimine el paso de vídeo del flujo de trabajo &quot;Actualizar recurso&quot;, deshabilite los agentes de escucha que no se usen, etc.
 

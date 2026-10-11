@@ -1,5 +1,5 @@
 ---
-title: Crear y administrar conjuntos de directivas
+title: Crear y administrar conjuntos de políticas
 description: Los conjuntos de directivas se utilizan para agrupar directivas que tienen un propósito comercial común. Puede crear, editar y eliminar directivas en un conjunto de directivas.
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,25 @@ feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1311'
 ht-degree: 0%
-
 ---
-
-# Crear y administrar conjuntos de directivas {#creating-and-managing-policy-sets}
+# Crear y administrar conjuntos de políticas {#creating-and-managing-policy-sets}
 
 >[!NOTE]
 > 
@@ -70,11 +81,11 @@ Durante la creación del conjunto de directivas, puede utilizar el botón Atrás
    * Seleccione la casilla de verificación del usuario o grupo que desee agregar y haga clic en Siguiente.
    * Seleccione los permisos de coordinador del conjunto de directivas y haga clic en Agregar. Se pueden configurar los siguientes permisos:
 
-      * Ver eventos
-      * Administrar documentos (revocar y restablecer el acceso a los documentos y cambiar las directivas de los documentos)
-      * Administrar directivas (crear, editar y eliminar directivas)
-      * Administrar editores de documentos (agregar y quitar editores de documentos)
-      * Delegar (agregar y quitar coordinadores de conjuntos de directivas)
+     * Ver eventos
+     * Administrar documentos (revocar y restablecer el acceso a los documentos y cambiar las directivas de los documentos)
+     * Administrar directivas (crear, editar y eliminar directivas)
+     * Administrar editores de documentos (agregar y quitar editores de documentos)
+     * Delegar (agregar y quitar coordinadores de conjuntos de directivas)
 
 1. Repita el paso 5 para agregar más coordinadores de conjuntos de directivas.
 1. Revise la configuración del coordinador de conjuntos de directivas y haga clic en Siguiente.

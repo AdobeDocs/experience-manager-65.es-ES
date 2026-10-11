@@ -1,6 +1,6 @@
 ---
 title: Controlador de autenticación SAML 2.0
-description: AEM Obtenga información acerca del controlador de autenticación SAML 2.0 en la documentación de.
+description: Obtenga información acerca del Controlador de autenticación SAML 2.0 en AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -9,13 +9,25 @@ exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '864'
 ht-degree: 1%
-
 ---
-
 # Controlador de autenticación SAML 2.0{#saml-authentication-handler}
 
 AEM se envía con un controlador de autenticación [SAML](https://saml.xml.org/saml-specifications). Este controlador admite el protocolo de solicitud de autenticación [SAML](https://saml.xml.org/saml-specifications) 2.0 (perfil Web-SSO) mediante el enlace `HTTP POST`.
@@ -24,24 +36,24 @@ Admite lo siguiente:
 
 * firma y cifrado de mensajes
 * creación automática de usuarios
-* AEM sincronización de grupos con los existentes en la
+* sincronización de grupos con los existentes en AEM
 * Autenticación iniciada por el proveedor de servicios y el proveedor de identidad
 
 Este controlador almacena el mensaje de respuesta SAML cifrado en el nodo de usuario ( `usernode/samlResponse`) para facilitar la comunicación con un proveedor de servicios de terceros.
 
 >[!NOTE]
 >
->AEM Ver [una demostración de la integración de y SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=es).
+>Ver [una demostración de la integración de AEM y SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
 
 ## Configuración del controlador de autenticación SAML 2.0 {#configuring-the-saml-authentication-handler}
 
-La [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso a la configuración del Controlador de autenticación [SAML](https://saml.xml.org/saml-specifications) 2.0 llamada Controlador de autenticación **Adobe Granite SAML 2.0**. Se pueden configurar las siguientes propiedades.
+La [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso a la configuración del Controlador de autenticación [SAML](https://saml.xml.org/saml-specifications) 2.0 llamada **Controlador de autenticación Adobe Granite SAML 2.0**. Se pueden configurar las siguientes propiedades.
 
 >[!NOTE]
 >
 >El Controlador de autenticación SAML 2.0 está deshabilitado de forma predeterminada. Establezca al menos una de las siguientes propiedades para habilitar el controlador:
 >
->* La URL del POST del proveedor de identidad o la URL del IDP.
+>* La URL POST del proveedor de identidad o la URL de IDP.
 >* El ID de entidad de Service Provider.
 >
 
@@ -53,7 +65,7 @@ La [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso a
 
 **Clasificación del servicio** Valor de clasificación del servicio del marco OSGi para indicar el orden en que se debe llamar a este servicio. Es un valor entero en el que los valores más altos designan una prioridad mayor.
 
-**Alias de certificado IDP** El alias del certificado del IdP en el almacén de confianza global. Si esta propiedad está vacía, el controlador de autenticación está deshabilitado. AEM Consulte el capítulo &quot;Añadir el certificado IdP al almacén de confianza de&quot; a continuación sobre cómo configurarlo.
+**Alias de certificado IDP** El alias del certificado del IdP en el almacén de confianza global. Si esta propiedad está vacía, el controlador de autenticación está deshabilitado. Consulte el capítulo &quot;Añadir el certificado IdP al almacén de confianza de AEM&quot; a continuación sobre cómo configurarlo.
 
 **URL de IDP** URL del IDP al que se debe enviar la solicitud de autenticación SAML. Si esta propiedad está vacía, el controlador de autenticación está deshabilitado.
 
@@ -86,13 +98,13 @@ La [consola web](/help/sites-deploying/configuring-osgi.md) proporciona acceso a
 
 **Agregar a grupos** Indica si un usuario debe agregarse automáticamente a los grupos de CRX después de la autenticación correcta.
 
-**Pertenencia a grupo** El nombre del saml:Atributo que contiene una lista de grupos de CRX a los que este usuario debe agregarse.
+**Pertenencia a grupo** El nombre del saml:Attribute que contiene una lista de grupos de CRX a los que este usuario debe agregarse.
 
-## AEM Añadir el certificado IdP al almacén de confianza de la {#add-the-idp-certificate-to-the-aem-truststore}
+## Agregar el certificado IdP al almacén de confianza de AEM {#add-the-idp-certificate-to-the-aem-truststore}
 
 Las afirmaciones de SAML están firmadas y pueden cifrarse de forma opcional. Para que esto funcione, debe proporcionar al menos el certificado público del IdP en el repositorio. Para ello, debe:
 
-1. Ir a *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
+1. Vaya a *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
 1. Presione el vínculo **[!UICONTROL Crear TrustStore]**
 1. Escriba la contraseña de TrustStore y presione **[!UICONTROL Guardar]**.
 1. Haz clic en **[!UICONTROL Administrar almacén de confianza]**.
@@ -101,7 +113,7 @@ Las afirmaciones de SAML están firmadas y pueden cifrarse de forma opcional. Pa
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## AEM Agregue la cadena de certificado y la clave del proveedor de servicios al almacén de claves de la {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## Agregue la cadena de certificado y clave de Service Provider al repositorio de claves de AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
@@ -115,11 +127,11 @@ Las afirmaciones de SAML están firmadas y pueden cifrarse de forma opcional. Pa
 >
 >Los siguientes pasos solo son necesarios si el controlador debe poder firmar o descifrar mensajes.
 
-1. AEM Cree el certificado/par de claves para la. El comando para generarlo mediante openssl debe ser similar al ejemplo siguiente:
+1. Cree el certificado/par de claves para AEM. El comando para generarlo mediante openssl debe ser similar al ejemplo siguiente:
 
    `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
 
-1. Convertir la clave al formato PKCS#8 con codificación DER. AEM Este es el formato que requiere el almacén de claves de la.
+1. Convertir la clave al formato PKCS#8 con codificación DER. Este es el formato que requiere el almacén de claves de AEM.
 
    `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
 
@@ -131,7 +143,7 @@ Las afirmaciones de SAML están firmadas y pueden cifrarse de forma opcional. Pa
 
 ## Configuración de un registrador para SAML {#configure-a-logger-for-saml}
 
-Puede configurar un registrador para depurar cualquier problema que pueda surgir por una configuración incorrecta de SAML. Para ello:
+Puede configurar un registrador para depurar cualquier problema que pueda surgir por una configuración incorrecta de SAML. Para ello, haga lo siguiente:
 
 1. Va a la consola web, en *http://localhost:4502/system/console/configMgr*
 1. Busque y haga clic en la entrada **Configuración del registrador de Apache Sling**

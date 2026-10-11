@@ -10,13 +10,22 @@ exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 56%
-
+ht-degree: 64%
 ---
-
 # Promoción de lanzamientos{#promoting-launches}
 
 Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada. Las siguientes opciones están disponibles al promocionar una página de lanzamiento:
@@ -29,7 +38,7 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 
 Para promocionar páginas, realice los siguientes pasos mientras edita la página de lanzamiento que desea promocionar:
 
-1. En la ficha **Página** del Sidekick, haga clic en **Promocionar lanzamiento**.
+1. En la ficha **Página** de Sidekick, haga clic en **Promocionar lanzamiento**.
 1. Especifique las páginas que promocionar:
 
    * (Predeterminado) Para promocionar solo la página actual, seleccione **Promocionar cambios de página a la versión de producción**.

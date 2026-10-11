@@ -5,13 +5,29 @@ exl-id: f3746b8e-4c38-447a-b5bf-d11fc77556f7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 role: User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '809'
 ht-degree: 0%
-
 ---
-
 # La generación de PDF no puede imprimir un gran número de PDF a través de Workbench {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
 
 ## Problema {#issue}
@@ -49,39 +65,39 @@ Factores adicionales que se deben tener en cuenta al diseñar la plantilla de fo
 
 1. Evite utilizar texto estático para etiquetar un campo. En su lugar, utilice subtítulos en el campo de texto.
 2. No utilice en exceso rectángulos, líneas, objetos y tablas.
-3. Avoid using RichText and Choice Subforms if possible.
-4. Avoid excessive use of Subforms and nested Subforms.
+3. Evite utilizar subformularios de texto enriquecido y de opciones, si es posible.
+4. Evite el uso excesivo de subformularios y subformularios anidados.
 
-### Data size Limitation {#data-size-limitations}
+### Limitación de tamaño de datos {#data-size-limitations}
 
-As we are limited by the max process memory and the memory consumed by the process does not only depend on the size of the data file. It is very closely linked to the form design, and to some extent, to the actual amount of data being merged in the form.
+Como estamos limitados por la memoria de proceso máxima y la memoria consumida por el proceso no solo depende del tamaño del archivo de datos. Está muy estrechamente relacionado con el diseño de formulario y, en cierta medida, con la cantidad real de datos que se combinan en el formulario.
 
-If the form has many small nodes with small data, the process consumes more memory (and hence go out of memory faster), than a form that has less number of nodes (even) with large data.
+Si el formulario tiene muchos nodos pequeños con datos pequeños, el proceso consume más memoria (y, por lo tanto, se queda sin memoria más rápido) que un formulario que tiene menos nodos (incluso) con datos grandes.
 
-Read the [Appendix below](#appendix) for more information, where test results are based on Print form (Non-Tagged PDF). Using tagged PDF process memory requirement increases. It also depends on the number of fields in the form - roughly the process memory requirement would be slightly more than 1.5 times of non-tagged PDF.
+Lea el [Apéndice siguiente](#appendix) para obtener más información, donde los resultados de las pruebas se basan en Imprimir formulario (PDF no etiquetado). El uso de PDF etiquetados aumenta los requisitos de memoria de proceso. También depende del número de campos del formulario: aproximadamente, el requisito de memoria de proceso sería algo más de 1,5 veces el de PDF no etiquetado.
 
-### Interactive Forms {#interactive-forms}
+### Forms interactivo {#interactive-forms}
 
-Interactive forms would consume more memory than Print Forms as interactive fields are rendered again. In the tests carried out, the memory consumption increased by a factor of 1.5 approximately as compared to print forms and these were static interactive forms.
+Los formularios interactivos consumirían más memoria que Imprimir Forms a medida que se vuelvan a procesar los campos interactivos. En las pruebas realizadas, el consumo de memoria se incrementó en un factor de 1,5 aproximadamente en comparación con los formularios impresos y estos fueron formularios interactivos estáticos.
 
-### Image formats {#image-formats}
+### Formatos de imagen {#image-formats}
 
-Adobe does not recommend any specific image format. But it would be nice to have a smaller size of image, e.g.,  PNG (Portable Network Graphics). It is also not advisable to use images of high resolutions whose sizes vary several hundreds of MegaBytes. Also, it is not advisable to use compressed images whose size upon decompression expands to several hundreds of Megabytes of data.
+Adobe no recomienda ningún formato de imagen específico. Pero sería bueno tener un tamaño de imagen más pequeño, por ejemplo, PNG (Portable Network Graphics). Tampoco es aconsejable utilizar imágenes de alta resolución cuyos tamaños varían varios cientos de MegaBytes. Además, no es aconsejable utilizar imágenes comprimidas cuyo tamaño tras la descompresión se expanda a varios cientos de Megabytes de datos.
 
-### Appendix {#appendix}
+### Apéndice {#appendix}
 
-**Table Examples**
+**Ejemplos de tablas**
 
-Different variants for tables are shown below that show rendering number of pages versus data size for simple table and complex table.
+A continuación se muestran diferentes variantes para tablas que muestran el número de páginas representadas en comparación con el tamaño de los datos para tablas simples y tablas complejas.
 
-1. A Table with a single column where 5000 pages of PDFs are generated, data file size 24 MB and 30-K records.
+1. Una tabla con una sola columna en la que se generan 5000 páginas de PDF, con un tamaño de archivo de datos de 24 MB y registros de 30 KB.
 
-   ![table_single_column](/help/forms/using/assets/table_single_column.png)
+   ![tabla_columna_única](/help/forms/using/assets/table_single_column.png)
 
-1. A table with many small columns where 800 pages of PDFs are generated, data file size is 4.6 MB and 20-K records.
+1. Una tabla con muchas columnas pequeñas donde se generan 800 páginas de PDF, el tamaño del archivo de datos es de 4,6 MB y registros de 20-K.
    ![table_many_small_columns](/help/forms/using/assets/table_many_small_columns.png)
 
-1. A table with many small columns, but bigger data file because of usage of bigger xmlTag names.
+1. Una tabla con muchas columnas pequeñas, pero un archivo de datos más grande debido al uso de nombres xmlTag más grandes.
 En este caso, todo es igual que el anterior, pero los nombres de etiquetas xml se han hecho grandes (por lo que el tamaño del archivo de datos aumentará sin ningún aumento en los datos efectivos reales), el resultado final (límite superior) es casi el mismo. Aunque el tamaño del archivo de datos aumentó de 4,6 MB a 44,6 MB. Aquí se generan 800 páginas de PDF, el tamaño del archivo de datos es de 44,6 MB y los registros de 20-K.
 
    ![nombre_etiqueta_xml_table_greater_table](/help/forms/using/assets/table_bigger_xml_tagname.png)

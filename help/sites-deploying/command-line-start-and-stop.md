@@ -1,5 +1,5 @@
 ---
-title: Inicio y parada de la línea de comandos
+title: Inicio y detención de la línea de comandos
 description: Obtenga información sobre cómo iniciar y detener Adobe Experience Manager desde la línea de comandos.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,20 +9,29 @@ exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
-
+source-wordcount: '358'
+ht-degree: 4%
 ---
-
-# Inicio y parada de la línea de comandos{#command-line-start-and-stop}
+# Inicio y detención de la línea de comandos{#command-line-start-and-stop}
 
 ## Iniciar Adobe Experience Manager desde la línea de comandos {#starting-adobe-experience-manager-from-the-command-line}
 
 El script `start` está disponible en *el directorio &lt;cq-installation>/bin*. Se proporcionan las versiones UNIX® y Windows. El script inicia la instancia instalada en el directorio *&lt;cq-installation>*.
 
-Estas dos versiones admiten una lista de variables de entorno que pueden utilizarse para iniciar y ajustar la instancia de Adobe Experience Manager AEM ().
+Estas dos versiones admiten una lista de variables de entorno que pueden utilizarse para iniciar y ajustar la instancia de Adobe Experience Manager (AEM).
 
 <table>
  <tbody>
@@ -67,7 +76,7 @@ Estas dos versiones admiten una lista de variables de entorno que pueden utiliza
 
 >[!CAUTION]
 >
->AEM Algunos modos de ejecución, entre ellos autor y publicación, deben configurarse antes de comenzar la ejecución por primera vez y no se pueden cambiar posteriormente. AEM Antes de configurar una instancia de que se usa en la producción, consulte [documentación sobre los modos de ejecución](/help/sites-deploying/configure-runmodes.md) para obtener más información.
+>Algunos modos de ejecución, entre ellos autor y publicación, deben configurarse antes de iniciar AEM por primera vez y no pueden cambiarse posteriormente. Antes de configurar una instancia de AEM que se use en la producción, consulte [documentación sobre los modos de ejecución](/help/sites-deploying/configure-runmodes.md) para obtener más información.
 
 ### Ejemplo de script start.bat de la plataforma Windows {#windows-platform-start-bat-script-example}
 
@@ -83,18 +92,18 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->AEM El script de inicio inicia el inicio rápido de la aplicación instalado en la carpeta &lt;cq-installation>/app *de*.
+>El script de inicio inicia Quickstart de AEM instalado en *la carpeta &lt;cq-installation>/app*.
 
 ## Detención de Adobe Experience Manager {#stopping-adobe-experience-manager}
 
-AEM Para detener la, siga uno de estos procedimientos:
+Para detener AEM, siga uno de estos procedimientos:
 
 * Según la plataforma que utilice:
 
-   * AEM Si ha iniciado el proceso desde un script o desde la línea de comandos, presione **Ctrl+C** para apagar el servidor.
-   * AEM Si ha utilizado la secuencia de comandos de inicio en UNIX®, debe utilizar la secuencia de comandos de detención para detener la ejecución de los programas de la aplicación de la.
+  * Si inició AEM desde un script o desde la línea de comandos, presione **Ctrl+C** para apagar el servidor.
+  * Si ha utilizado el script de inicio en UNIX®, debe utilizar el script de detención para detener AEM.
 
-* AEM Si ha empezado a hacer clic en el archivo jar, haga clic en el botón **Activar** de la ventana de inicio (el botón cambia a **Desactivar**) para cerrar el servidor.
+* Si inició AEM haciendo doble clic en el archivo jar, haga clic en el botón **Activar** de la ventana de inicio (el botón cambia a **Desactivar**) para apagar el servidor.
 
   ![chlimage_1-63](assets/chlimage_1-63.png)
 

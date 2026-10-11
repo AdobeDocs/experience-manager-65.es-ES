@@ -9,13 +9,22 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: d4b1cd8bc04ea21378c8084f4fac8cd66d6c1d3c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2083'
 ht-degree: 7%
-
 ---
-
 
 # Configurar formularios de búsqueda{#configuring-search-forms}
 
@@ -27,9 +36,9 @@ Puede [configurar los formularios de búsqueda](#configuring-your-search-forms) 
 
 * **Herramientas**
 
-   * **General**
+  * **General**
 
-      * **Buscar en Forms**
+    * **Buscar en Forms**
 
 Cuando acceda por primera vez a esta consola, verá que todas las configuraciones tienen un símbolo de candado. Esto indica que la configuración adecuada es la predeterminada (predeterminada) y no se puede eliminar. Después de haber personalizado la configuración, el bloqueo desaparece a menos que [elimine su configuración personalizada](#deleting-a-configuration-to-reinstate-the-default). En tal caso, se restablece el valor predeterminado (y el indicador de candado).
 
@@ -394,7 +403,7 @@ Si se selecciona, las opciones se representan como casillas de verificación que
 * **Nombres de propiedades de publicación y Live Copy**
 Las etiquetas de las casillas de verificación de publicación y Live Copy para el predicado específico de Sites.
 
-* &ast; en las etiquetas de campo de la ficha **Settings** indica que los campos son obligatorios y, si se deja en blanco, aparece un mensaje de error.
+* &amp;ast; en las etiquetas de campo de la ficha **Settings** indica que los campos son obligatorios y, si se deja en blanco, aparece un mensaje de error.
 
 ## Configuración de Search Forms {#configuring-your-search-forms}
 

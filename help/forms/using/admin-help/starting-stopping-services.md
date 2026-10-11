@@ -9,27 +9,41 @@ exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 13%
-
 ---
-
 # Iniciar y detener servicios {#starting-and-stopping-services}
 
 >[!NOTE]
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-AEM Existen dos tipos de servicios que forman parte de los formularios de:
+Existen dos tipos de servicios que forman parte de los formularios AEM:
 
-* AEM Servicios que controlan el servidor de aplicaciones y la base de datos de formularios de la.
-* AEM Servicios que controlan los módulos de formularios de
+* Servicios que controlan el servidor de aplicaciones y la base de datos de AEM Forms.
+* Servicios que controlan los módulos de formularios AEM
 
-## AEM Iniciar o detener los servicios asociados con módulos de formularios de la {#start-or-stop-the-services-associated-with-aem-forms-modules}
+## Iniciar o detener los servicios asociados a los módulos de formularios AEM Forms {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
-AEM Los módulos de formularios de datos (por ejemplo, Forms, Rights Management, Output) funcionan como servicios. AEM A veces, es posible que tenga que detener o iniciar los servicios para estos módulos de formularios de la forma en la que se utilizan los formularios de la. AEM Por ejemplo, debe detener y reiniciar un servicio de formularios de la después de cambiar una configuración del servicio.
+Los módulos de formularios de AEM (por ejemplo, Forms, Rights Management, Output) funcionan como servicios. A veces, es posible que tenga que detener o iniciar los servicios para estos módulos de formularios AEM Forms. Por ejemplo, debe detener y reiniciar un servicio de formularios AEM Forms después de cambiar una configuración del servicio.
 
 >[!NOTE]
 >
@@ -40,12 +54,12 @@ AEM Los módulos de formularios de datos (por ejemplo, Forms, Rights Management,
 
 ## Iniciar o detener servicios para el servidor de aplicaciones y la base de datos {#start-or-stop-services-for-the-application-server-and-database}
 
-AEM Una implementación completa de los formularios de incluye un servidor de aplicaciones y servicios de base de datos:
+Una implementación completa de AEM Forms incluye un servidor de aplicaciones y servicios de base de datos:
 
-* AEM *`[application server]`* para formularios de
-* AEM *`[database]`* para formularios de
+* *`[application server]`* para formularios AEM
+* *`[database]`* para formularios AEM
 
-En Windows, se puede acceder a estos servicios a través de **Herramientas administrativas** > **Panel de servicios**. AEM Por ejemplo, si ha instalado formularios en JBoss mediante el método llave en mano, los siguientes servicios están disponibles en el sistema:
+En Windows, se puede acceder a estos servicios a través de **Herramientas administrativas** > **Panel de servicios**. Por ejemplo, si ha instalado formularios AEM Forms en JBoss mediante el método llave en mano, los siguientes servicios están disponibles en el sistema:
 
 * JBoss para formularios Adobe Experience Manager
 * MySQL para formularios Adobe Experience Manager

@@ -9,16 +9,25 @@ exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 38%
-
+source-wordcount: '115'
+ht-degree: 29%
 ---
+# Métodos abreviados de teclado para las consolas{#keyboard-shortcuts-for-consoles}
 
-# Métodos abreviados del teclado para las consolas  {#keyboard-shortcuts-for-consoles}
-
-Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas, mientras que otros se refieren a la [edición de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas y otros, a la [edición de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -41,7 +50,7 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
   <tr>
    <td>Consola</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (en la página requerida)</td>
-   <td>Abrir página en una nueva ventana.<br /> <strong>Nota:</strong> esto está operativo si las <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propiedades de usuario</a> están configuradas como Ventana única; si Varias ventanas, este es el comportamiento predeterminado.</td>
+   <td>Abrir página en ventana nueva.<br /> <strong>Nota:</strong> esto está operativo si las <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">propiedades de usuario</a> están configuradas en una sola ventana; si varias ventanas, este es el comportamiento predeterminado.</td>
   </tr>
  </tbody>
 </table>

@@ -10,13 +10,20 @@ exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1790'
 ht-degree: 3%
-
 ---
-
 # Implementación de comunidades {#deploying-communities}
 
 ## Requisitos previos {#prerequisites}
@@ -27,9 +34,9 @@ ht-degree: 3%
 
 * Licencias opcionales para:
 
-   * [Funciones de Adobe Analytics para comunidades](/help/communities/analytics.md)
-   * [MongoDB para MSRP](/help/communities/msrp.md)
-   * [Adobe Cloud para ASRP](/help/communities/asrp.md)
+  * [Funciones de Adobe Analytics para comunidades](/help/communities/analytics.md)
+  * [MongoDB para MSRP](/help/communities/msrp.md)
+  * [Adobe Cloud para ASRP](/help/communities/asrp.md)
 
 ## Lista de comprobación de instalación {#installation-checklist}
 
@@ -52,32 +59,32 @@ ht-degree: 3%
 * Configurar un [servicio de correo electrónico predeterminado](/help/communities/email.md)
 * Identificar la opción de [almacenamiento UGC compartido](/help/communities/working-with-srp.md) (**SRP**)
 
-   * Si MongoDB SRP [(MSRP)](/help/communities/msrp.md)
+  * Si MongoDB SRP [(MSRP)](/help/communities/msrp.md)
 
-      * [Instalación y configuración de MongoDB](/help/communities/msrp.md#mongodb-configuration)
-      * [Configurar Solr](/help/communities/solr.md)
-      * [Seleccionar MSRP](/help/communities/srp-config.md)
+    * [Instalación y configuración de MongoDB](/help/communities/msrp.md#mongodb-configuration)
+    * [Configurar Solr](/help/communities/solr.md)
+    * [Seleccionar MSRP](/help/communities/srp-config.md)
 
-   * Si la base de datos relacional SRP [(DSRP)](/help/communities/dsrp.md)
+  * Si la base de datos relacional SRP [(DSRP)](/help/communities/dsrp.md)
 
-      * [Instalar el controlador JDBC para MySQL](#jdbc-driver-for-mysql)
-      * [Instalar y configurar MySQL para DSRP](/help/communities/dsrp-mysql.md)
-      * [Configurar Solr](/help/communities/solr.md)
-      * [Seleccionar DSRP](/help/communities/srp-config.md)
+    * [Instalar el controlador JDBC para MySQL](#jdbc-driver-for-mysql)
+    * [Instalar y configurar MySQL para DSRP](/help/communities/dsrp-mysql.md)
+    * [Configurar Solr](/help/communities/solr.md)
+    * [Seleccionar DSRP](/help/communities/srp-config.md)
 
-   * Si Adobe SRP [(ASRP)](/help/communities/asrp.md)
+  * Si Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
-      * Póngase en contacto con su representante de cuentas para el aprovisionamiento
-      * [Seleccionar ASRP](/help/communities/srp-config.md)
+    * Póngase en contacto con su representante de cuentas para el aprovisionamiento
+    * [Seleccionar ASRP](/help/communities/srp-config.md)
 
-   * Si JCR SRP [(JSRP)](/help/communities/jsrp.md)
+  * Si JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-      * No es un almacén de UGC (contenido generado por el usuario) compartido:
+    * No es un almacén de UGC (contenido generado por el usuario) compartido:
 
-         * UGC nunca se replica
-         * UGC solo está visible en la instancia o el clúster de AEM en el que se introdujo
+      * UGC nunca se replica
+      * UGC solo está visible en la instancia o el clúster de AEM en el que se introdujo
 
-         * El valor predeterminado es JSRP
+      * El valor predeterminado es JSRP
 
 ## Últimas versiones {#latest-releases}
 
@@ -116,7 +123,7 @@ Los pasos necesarios son:
    * Compruebe que el controlador JDBC de *Oracle Corporation para MySQLcom.mysql.jdbc* esté activo y, en caso contrario, inícielo (o compruebe los registros)
 
 1. Si realiza la instalación en una implementación existente después de configurar JDBC, vuelva a enlazar JDBC al nuevo conector volviendo a guardar la configuración de JDBC desde la consola web :
-   * Por ejemplo, https://localhost:4502/system/console/configMgr.
+   * Por ejemplo, https://localhost:4502/system/console/configMgr
    * Buscar configuración de `Day Commons JDBC Connections Pool`
    * Seleccionar para abrir
    * Seleccionar `Save`
@@ -141,8 +148,8 @@ La descarga avanzada de MLS (también conocida como `phasetwo`) está disponible
 
   Para obtener el paquete Advanced MLS, consulte [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) en la sección de implementación de la documentación.
 
-   * Versión 1.2.40, 6 de abril de 2016
-   * Descargar AEM-SOLR-MLS-phasetwo-1.2.40.zip
+  * Versión 1.2.40, 6 de abril de 2016
+  * Descargar AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
 Para obtener detalles e información de instalación, visite [Configuración de Solr](/help/communities/solr.md) para SRP.
 
@@ -200,7 +207,7 @@ Para todas las demás instancias de publicación (secundarias) de un conjunto de
 * Iniciar sesión con privilegios de administrador
 * Acceder a la [consola web](/help/sites-deploying/configuring-osgi.md)
 
-   * Por ejemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+  * Por ejemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * Buscar `AEM Communities Publisher Configuration`
 * Seleccione el icono de edición
@@ -219,19 +226,19 @@ Hay dos agentes de replicación en el entorno de creación que necesitan que la 
 
 * Acceso a la consola de replicación en el autor
 
-   * En la navegación global, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Replicación]** > **[!UICONTROL Agentes en el autor]**
+  * En la navegación global, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Replicación]** > **[!UICONTROL Agentes en el autor]**
 
 * Siga el mismo procedimiento para ambos agentes:
 
-   * **Agente predeterminado (publicar)**
-   * **Agente de replicación inversa (publicación inversa)**
+  * **Agente predeterminado (publicar)**
+  * **Agente de replicación inversa (publicación inversa)**
 
-      1. Seleccione el agente
-      1. Seleccionar **editar**
-      1. Seleccione la ficha **Transporte**
-      1. Si no es el puerto `4503`, edite el **URI** para especificar el puerto correcto
+    1. Seleccione el agente
+    1. Seleccionar **editar**
+    1. Seleccione la ficha **Transporte**
+    1. Si no es el puerto `4503`, edite el **URI** para especificar el puerto correcto
 
-      1. Si no es el usuario `admin`, edite **Usuario** y **Contraseña** para especificar un miembro del grupo de usuarios `administrators`
+    1. Si no es el usuario `admin`, edite **Usuario** y **Contraseña** para especificar un miembro del grupo de usuarios `administrators`
 
 Las siguientes imágenes muestran los resultados de cambiar el puerto de 4503 a 6103 por:
 
@@ -257,7 +264,7 @@ entonces [configure el agente de replicación](#replication-agents-on-author)
 
 * Acceder a la [consola web](/help/sites-deploying/configuring-osgi.md)
 
-   * Por ejemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+  * Por ejemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
 * Buscar `AEM Communities Publish Tunnel Service`
 * Seleccione el icono de edición
@@ -276,32 +283,32 @@ Para copiar el material clave de Autor en todas las demás instancias, es necesa
 
 * Acceda a la instancia de AEM (normalmente una instancia de autor) que contiene el material clave que desea copiar
 
-   * Busque el paquete `com.adobe.granite.crypto.file` en el sistema de archivos local,
-por ejemplo,
+  * Busque el paquete `com.adobe.granite.crypto.file` en el sistema de archivos local,
+    por ejemplo,
 
-      * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
-      * El archivo `bundle.info` identifica el paquete
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+    * El archivo `bundle.info` identifica el paquete
 
-   * Vaya a la carpeta de datos,
-por ejemplo,
+  * Vaya a la carpeta de datos,
+    por ejemplo,
 
-      * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-      * Copie los archivos hmac y del nodo principal
+    * Copie los archivos hmac y del nodo principal
 
 * Para cada instancia de AEM de destino
 
-   * Vaya a la carpeta de datos,
-por ejemplo,
+  * Vaya a la carpeta de datos,
+    por ejemplo,
 
-      * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-   * Pegue los dos archivos copiados anteriormente
-   * Es necesario [actualizar el paquete Granite Crypto](#refresh-the-granite-crypto-bundle) si la instancia de AEM de destino se está ejecutando
+  * Pegue los dos archivos copiados anteriormente
+  * Es necesario [actualizar el paquete Granite Crypto](#refresh-the-granite-crypto-bundle) si la instancia de AEM de destino se está ejecutando
 
 >[!CAUTION]
 >
->Si ya se ha configurado otra característica de seguridad basada en las claves criptográficas, la replicación de las claves criptográficas podría dañar la configuración. Para obtener ayuda, [póngase en contacto con el Servicio de atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home?lang=es#support).
+>Si ya se ha configurado otra característica de seguridad basada en las claves criptográficas, la replicación de las claves criptográficas podría dañar la configuración. Para obtener ayuda, [póngase en contacto con el Servicio de atención al cliente](https://experienceleague.adobe.com/?support-solution=General&support-tab=home?lang=es#support).
 
 #### Replicación del repositorio {#repository-replication}
 
@@ -328,7 +335,7 @@ Usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * En cada instancia de publicación, acceda a la [consola web](/help/sites-deploying/configuring-osgi.md)
 
-   * Por ejemplo, [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
+  * Por ejemplo, [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
 
 * Busque el paquete `Adobe Granite Crypto Support` (com.adobe.granite.crypto)
 * Seleccionar **Actualizar**
@@ -366,7 +373,7 @@ En particular, asegúrese de usar el nombre de servidor correcto, no `localhost`
 Si utiliza un Dispatcher, consulte:
 
 * Documentación de AEM [Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)
-* [Instalación de Dispatcher](https://experienceleague.adobe.com/es/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* [Instalación de Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Configuración de Dispatcher para comunidades](/help/communities/dispatcher.md)
 * [Problemas conocidos](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

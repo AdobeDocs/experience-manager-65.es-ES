@@ -8,13 +8,27 @@ exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 96%
-
+source-wordcount: '432'
+ht-degree: 92%
 ---
-
 # Obtener variables de tarea en la URL de resumen {#getting-task-variables-in-summary-url}
 
 La página Resumen muestra información relacionada con las tareas. Este artículo describe cómo reutilizar la información relacionada con las tareas en la página Resumen.
@@ -68,7 +82,7 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
 
       Las claves de esta asignación deben ser las mismas que las establecidas en el procesador de HTML del paso anterior.
 
-      Asimismo, agregue una clave **sling:resourceType** con el valor **Employees/PtoApplication** a la asignación.
+      Además, agregue una clave **sling:resourceType** con el valor **Employees/PtoApplication** en el mapa.
 
    1. Utilice el subproceso **storeContent** del servicio **ContentRepositoryConnector** en el proceso **Crear resumen de PTO**. Este subproceso crea un nodo CRX.
 
@@ -76,7 +90,7 @@ En esta orquestación de ejemplo, un empleado envía un formulario de solicitud 
 
       * **Ruta de carpeta**: la ruta en la que se crea el nuevo nodo CRX. Establezca la ruta como **/content**.
       * **Nombre del nodo**: asigne la variable de entrada nodeName a este campo. Es una cadena de nombre de nodo única.
-      * **Tipo de nodo**: establezca el tipo como **nt:unstructured**. La salida de este proceso es nodePath. nodePath es la ruta CRX del nodo recién creado. ndoePath es la salida final del proceso **Crear resumen de PTO**.
+      * **Tipo de nodo**: defina el tipo como **nt:unstructured**. La salida de este proceso es nodePath. nodePath es la ruta CRX del nodo recién creado. ndoePath es la salida final del proceso **Crear resumen de PTO**.
 
    1. Pase los datos de formulario enviados (**employeeName**, **employeeID**, **ptoReason** y **totalDays**) como entrada al nuevo proceso **Crear resumen de PTO**. Tome la salida como **ptoSummaryNodePath**.
 

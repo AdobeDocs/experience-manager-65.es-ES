@@ -9,13 +9,22 @@ exl-id: e14a9cda-890f-46b7-9433-1b52eb91eae3
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 2%
-
+source-wordcount: '172'
+ht-degree: 6%
 ---
-
 # Script de análisis de solicitud{#request-analysis-script}
 
 ## Descargar {#download}
@@ -28,9 +37,9 @@ Este script se crea para facilitar el análisis de los archivos de `access.log` 
 
 Este script se crea para facilitar el análisis de los archivos de `access.log` y generar un informe legible para su procesamiento posterior.
 
-Genera el número de solicitudes generales, GET frente a POST, distribución de solicitudes a lo largo del tiempo y más.
+Produce el número de solicitudes generales, GET frente a POST, la distribución de solicitudes a lo largo del tiempo y más.
 
-La salida está en sintaxis Markdown por lo tanto será más fácil convertirla en PDF con herramientas como pandoc o mostrarla en un navegador con complementos como Markdown viewer.
+El resultado está en sintaxis Markdown, por lo tanto, será más fácil convertirlo a PDF con herramientas como pandoc o mostrarlo en un navegador con complementos como Markdown viewer.
 
 Puede analizar una ruta personalizada proporcionada en la línea de comandos.
 

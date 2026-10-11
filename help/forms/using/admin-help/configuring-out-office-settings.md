@@ -1,6 +1,6 @@
 ---
 title: Configurar Fuera de la oficina
-description: AEM La función Fuera de la oficina le permite especificar cuándo un usuario estará fuera de la oficina y no podrá completar las tareas asignadas por los formularios de.
+description: La función Fuera de la oficina permite especificar cuándo un usuario estará fuera de la oficina y no podrá completar las tareas asignadas por los formularios de AEM.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
@@ -9,16 +9,30 @@ exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 2%
-
 ---
-
 # Configurar Fuera de la oficina {#configuring-out-of-office-settings}
 
-AEM La función Fuera de la oficina permite a los usuarios o administradores especificar cuándo estará fuera de la oficina y cuándo no podrá completar las tareas asignadas por los formularios de. Mientras un usuario está configurado en Fuera de la oficina, sus tareas se asignan a uno o más usuarios designados. Los usuarios pueden cambiar su configuración de Fuera de la oficina en Workspace o los administradores pueden cambiar la configuración en nombre de un usuario en el flujo de trabajo de formularios.
+La función Fuera de la oficina permite a los usuarios o administradores especificar cuándo estará fuera de la oficina y no podrá completar las tareas asignadas por los formularios de AEM. Mientras un usuario está configurado en Fuera de la oficina, sus tareas se asignan a uno o más usuarios designados. Los usuarios pueden cambiar su configuración de Fuera de la oficina en Workspace o los administradores pueden cambiar la configuración en nombre de un usuario en el flujo de trabajo de formularios.
 
 Al crear un proceso, el usuario de Workbench puede especificar si una tarea se puede redirigir debido a la configuración de Fuera de la oficina.
 
@@ -65,11 +79,11 @@ Mientras un usuario está fuera de la oficina, puede asignar uno o más usuarios
 * Asigne un usuario predeterminado que recibirá la mayoría de las tareas del usuario, pero especifique que las tareas de ciertos procesos se reasignen a otros usuarios o permanezcan asignadas al usuario que esté fuera de la oficina.
 * No asigne un usuario predeterminado, sino que asigne determinadas tareas de determinados procesos a usuarios específicos.
 
-   1. Busque el usuario, tal como se describe en [Ver la información de Fuera de la oficina de un usuario](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
-   1. Haga clic en el nombre del usuario que desea cambiar.
-   1. En la lista Usuario predeterminado para tareas fuera de la oficina, seleccione un usuario de la lista. Si no desea designar un usuario predeterminado para recibir los elementos reasignados, seleccione No asignar.
+  1. Busque el usuario, tal como se describe en [Ver la información de Fuera de la oficina de un usuario](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+  1. Haga clic en el nombre del usuario que desea cambiar.
+  1. En la lista Usuario predeterminado para tareas fuera de la oficina, seleccione un usuario de la lista. Si no desea designar un usuario predeterminado para recibir los elementos reasignados, seleccione No asignar.
 
-      Si el nombre de usuario apropiado no aparece en la lista, haga clic en Buscar usuario y utilice el cuadro de diálogo Buscar usuario para buscar el usuario. Seleccione el usuario adecuado de la lista y haga clic en Seleccionar usuario. También puede hacer clic en Ver programación del usuario en el cuadro de diálogo Buscar usuario para ver la programación de Fuera de la oficina del usuario seleccionado.
+     Si el nombre de usuario apropiado no aparece en la lista, haga clic en Buscar usuario y utilice el cuadro de diálogo Buscar usuario para buscar el usuario. Seleccione el usuario adecuado de la lista y haga clic en Seleccionar usuario. También puede hacer clic en Ver programación del usuario en el cuadro de diálogo Buscar usuario para ver la programación de Fuera de la oficina del usuario seleccionado.
 
-   1. Si hay algún proceso que no se debe enviar al usuario predeterminado, haga clic en Añadir una excepción, seleccione el proceso y seleccione otro usuario en la lista. También puede seleccionar No asignar para que la tarea permanezca asignada al usuario que está fuera de la oficina.
-   1. Haga clic en Guardar.
+  1. Si hay algún proceso que no se debe enviar al usuario predeterminado, haga clic en Añadir una excepción, seleccione el proceso y seleccione otro usuario en la lista. También puede seleccionar No asignar para que la tarea permanezca asignada al usuario que está fuera de la oficina.
+  1. Haga clic en Guardar.

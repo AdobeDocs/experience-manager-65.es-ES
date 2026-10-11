@@ -9,13 +9,27 @@ exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1590'
 ht-degree: 1%
-
 ---
-
 # Crear y configurar grupos{#creating-and-configuring-groups}
 
 >[!NOTE]
@@ -26,7 +40,7 @@ La creación de grupos de usuarios permite asignar funciones al grupo en lugar d
 
 Hay dos tipos diferentes de grupos disponibles. Puede crear manualmente un grupo y agregarle usuarios y otros grupos. También puede crear grupos dinámicos que incluyan automáticamente a todos los usuarios que cumplan un conjunto especificado de reglas.
 
-Los usuarios pueden experimentar un tiempo de respuesta más lento si pertenecen a muchos grupos (por ejemplo, 500 o más) o si los grupos están profundamente anidados (por ejemplo, 30 niveles). AEM Si tiene este problema, puede configurar los formularios de la para que recuperen previamente información de ciertos dominios. AEM (Consulte [Configurar formularios de para recuperar previamente información de dominio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)).
+Los usuarios pueden experimentar un tiempo de respuesta más lento si pertenecen a muchos grupos (por ejemplo, 500 o más) o si los grupos están profundamente anidados (por ejemplo, 30 niveles). Si tiene este problema, puede configurar los formularios de AEM para que recuperen previamente información de ciertos dominios. (Consulte [Configuración de formularios de AEM para recuperar previamente información de dominio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)).
 
 ## Crear un grupo manualmente {#create-a-group-manually}
 
@@ -66,7 +80,7 @@ En un grupo dinámico, no selecciona individualmente los usuarios que pertenecen
 
 Utilice una de estas dos formas de crear grupos dinámicos:
 
-* Habilite la creación automática de grupos dinámicos basados en dominios de correo electrónico, como @adobe.com. AEM Al habilitar esta función, Administración de usuarios crea un grupo dinámico para cada dominio de correo electrónico único de la base de datos de formularios de la. AEM Utilice una expresión CRON para especificar la frecuencia con la que Administración de usuarios busca nuevos dominios de correo electrónico en la base de datos de formularios. Estos grupos dinámicos se agregan al dominio local DefaultDom y se denominan &quot;Todos los usuarios con un ID de correo *`[email domain]`*&quot;.
+* Habilite la creación automática de grupos dinámicos basados en dominios de correo electrónico, como @adobe.com. Al habilitar esta función, Administración de usuarios crea un grupo dinámico para cada dominio de correo electrónico único en la base de datos de formularios de AEM. Utilice una expresión CRON para especificar la frecuencia con la que Administración de usuarios busca nuevos dominios de correo electrónico en la base de datos de formularios AEM Forms. Estos grupos dinámicos se agregan al dominio local DefaultDom y se denominan &quot;Todos los usuarios con un ID de correo *`[email domain]`*&quot;.
 * Cree un grupo dinámico en función de criterios especificados, incluidos el dominio de correo electrónico, la descripción, el nombre canónico y el nombre de dominio del usuario. Para pertenecer al grupo dinámico, un usuario debe cumplir todos los criterios especificados. Para configurar una condición &quot;o&quot;, cree dos grupos dinámicos independientes y agréguelos a un grupo local. Por ejemplo, utilice ese método para crear un grupo de usuarios que pertenezcan al dominio de correo electrónico @adobe.com o cuyo nombre canónico contenga ou=adobe.com. Sin embargo, los usuarios no necesariamente tienen que cumplir ambas condiciones.
 
 Un grupo dinámico contiene sólo usuarios. No puede contener otros grupos. Sin embargo, un grupo dinámico puede pertenecer a un grupo principal.

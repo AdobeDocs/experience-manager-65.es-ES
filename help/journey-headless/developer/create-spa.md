@@ -1,20 +1,36 @@
 ---
-title: 'SPA Opcional: cómo crear aplicaciones de una sola página () con Adobe Experience Manager'
-description: En esta continuación opcional del Recorrido AEM para desarrolladores de Adobe Experience Manager () sin encabezado, aprenderá a combinar la entrega sin encabezado con las funciones tradicionales de CMS SPA AEM SPA full-stack y a crear plantillas editables mediante el AEM de trabajo Editor de de trabajo.
+title: 'Opcional: cómo crear aplicaciones de una sola página (SPA) con Adobe Experience Manager'
+description: En esta continuación opcional del Recorrido para desarrolladores de Adobe Experience Manager (AEM) sin encabezado, aprenderá cómo AEM puede combinar la entrega sin encabezado con las funciones tradicionales de CMS de pila completa y cómo puede crear SPA editables mediante el marco de trabajo del Editor de SPA de AEM.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 76%
-
+source-wordcount: '1281'
+ht-degree: 75%
 ---
-
 # Creación de aplicaciones de una sola página (SPA) con AEM {#create-spa}
 
-En esta continuación opcional del Recorrido para desarrolladores sin encabezado [,](overview.md) aprenderá cómo Adobe Experience Manager AEM () puede combinar la entrega sin encabezado con las funciones tradicionales de CMS SPA AEM SPA SPA full-stack y cómo puede crear plantillas editables utilizando el AEM de trabajo de Editor de de encabezado, así como integrar las funcionalidades de edición externas, habilitando las funcionalidades de edición según sea necesario.
+En esta continuación opcional del [Recorrido para desarrolladores sin encabezado de AEM](overview.md), aprenderá cómo Adobe Experience Manager (AEM) puede combinar la entrega sin encabezado con las funciones tradicionales de CMS full-stack y cómo puede crear SPA editables utilizando el marco de trabajo del Editor de SPA de AEM, así como integrar SPA externas, habilitando las capacidades de edición según sea necesario.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -27,11 +43,11 @@ En este punto, debería haber completado todo el [Recorrido para desarrolladores
 * Cómo recuperar y actualizar contenido sin encabezado en AEM.
 * Cómo poner en marcha un proyecto de AEM sin encabezado.
 
-AEM Por lo tanto, ahora ya está en funcionamiento con su primer proyecto sin encabezado de la red de trabajo o tiene el conocimiento necesario para hacerlo. Enhorabuena.
+Por lo tanto, ya ha puesto en marcha su primer proyecto de AEM sin encabezado o tiene los conocimientos necesarios para hacerlo. Enhorabuena.
 
-Entonces, ¿por qué está leyendo esta continuación adicional y opcional del recorrido? AEM Probablemente, recuerde que en [Introducción](getting-started.md#integration-levels), hubo una breve discusión sobre cómo no solo admite la entrega sin encabezado y los modelos full-stack tradicionales, sino también admite modelos híbridos que combinan las ventajas de ambos. Aunque no es el modelo tradicional sin encabezado, estos modelos híbridos pueden ofrecer una flexibilidad sin precedentes a ciertos proyectos.
+Entonces, ¿por qué está leyendo esta continuación adicional y opcional del recorrido? Es probable que recuerde que en [Introducción](getting-started.md#integration-levels) hubo una breve discusión sobre cómo AEM no solo admite la entrega sin encabezado y los modelos full-stack tradicionales, sino que también admite modelos híbridos que combinan las ventajas de ambos. Aunque no es el modelo tradicional sin encabezado, estos modelos híbridos pueden ofrecer una flexibilidad sin precedentes a ciertos proyectos.
 
-Este artículo se basa en sus conocimientos de AEM sin encabezado para explorar en profundidad cómo puede crear sus propias aplicaciones de una sola página (SPA) que se pueden editar en AEM. SPA SPA AEM De este modo, puede crear contenido y enviarlo sin encabezado a un, pero ese contenido sigue siendo editable en los entornos de trabajo de los que se puede hacer una.
+Este artículo se basa en sus conocimientos de AEM sin encabezado para explorar en profundidad cómo puede crear sus propias aplicaciones de una sola página (SPA) que se pueden editar en AEM. De este modo, puede crear contenido y enviarlo sin encabezado a una SPA, pero esa SPA sigue siendo editable en AEM.
 
 ## Objetivo {#objective}
 
@@ -50,7 +66,7 @@ Antes de empezar a trabajar con las SPA en AEM hay varios requisitos.
 
 * Experiencia en desarrollo creando SPA con marcos de trabajo React o Angular.
 * Conocimientos básicos de AEM para crear fragmentos de contenido y utilizar el editor.
-* AEM SPA No olvide revisar el documento [Con encabezado y sin encabezado en la sección de la página de inicio de sesión de la página &#x200B;](/help/sites-developing/headful-headless.md) para comprender los diversos niveles de integración de la posibles.
+* No olvide revisar el documento [Con encabezado y sin encabezado en AEM](/help/sites-developing/headful-headless.md) para comprender los distintos niveles de integración de SPA posibles.
 
 ### Herramientas {#tools}
 
@@ -69,13 +85,13 @@ El Editor de SPA de AEM permite a los desarrolladores de front-end crear SPA que
 
 ## ¿Por qué una SPA? {#why-spa}
 
-SPA SPA Al ser más rápido, fluido y más parecido a una aplicación nativa, una aplicación se convierte en una experiencia atractiva no solo para el visitante de la página web, sino también para los especialistas en marketing y desarrolladores debido a la naturaleza de cómo funcionan los.
+Al ser más rápido, fluido y más parecido a una aplicación nativa, un SPA se convierte en una experiencia atractiva no solo para el visitante de la página web, sino también para los especialistas en marketing y desarrolladores debido a la naturaleza de cómo funcionan los SPA.
 
 Para obtener una descripción completa de las SPA y por qué las utilizaría, consulte los [recursos adicionales](#additional-resources) para obtener vínculos a más documentación detallada.
 
 ## Cómo AEM gestiona las SPA
 
-El desarrollo de aplicaciones de una sola página en AEM supone que el desarrollador front-end sigue las prácticas recomendadas estándar al crear una SPA. AEM SPA AEM Como desarrollador front-end, si sigue estas prácticas recomendadas generales y algunos principios específicos de la, su equipo de trabajo funcionará con las capacidades de creación de contenido y de las que se utilizan para la creación de contenido de la interfaz de usuario de.
+El desarrollo de aplicaciones de una sola página en AEM supone que el desarrollador front-end sigue las prácticas recomendadas estándar al crear una SPA. Como desarrollador front-end, si sigue estas prácticas recomendadas generales y algunos principios específicos de AEM, su SPA funcionará con AEM y sus funciones de creación de contenido.
 
 * **Portabilidad**: al igual que con cualquier componente, los componentes de SPA deben estar creados para ser lo más portátiles posible. La SPA debe crearse con componentes transferibles y reutilizables.
 * **AEM impulsa la estructura del sitio**: el desarrollador front-end crea componentes y posee su estructura interna, pero depende de AEM para definir la estructura de contenido del sitio.
@@ -124,7 +140,7 @@ Consulte los [recursos adicionales](#additional-resources) para profundizar en l
 A continuación se muestran algunos recursos adicionales que profundizan en algunos conceptos mencionados en este documento.
 
 * [Con encabezado y sin encabezado en AEM](/help/sites-developing/headful-headless.md): una descripción de los diferentes modelos de entrega disponibles en AEM.
-* [Introducción y tutorial de SPA.](/help/sites-developing/spa-walkthrough.md): una buena introducción a las SPA en AEM
+* [Introducción y tutorial de SPA.](/help/sites-developing/spa-walkthrough.md) - Una buena introducción a las SPA en AEM
 * [Desarrollo de las SPA para AEM](/help/sites-developing/spa-architecture.md): directrices sobre cómo desarrollar las SPA para AEM
 * [Información general del editor de SPA](/help/sites-developing/spa-overview.md): detalles del funcionamiento del editor de SPA.
 * [Documentos de referencia de SPA](/help/sites-developing/spa-reference-materials.md): referencias de la API de JavaScript y vínculos a los proyectos de GitHub de SPA en AEM de código abierto

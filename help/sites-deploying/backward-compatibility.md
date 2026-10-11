@@ -1,6 +1,6 @@
 ---
-title: AEM Compatibilidad con versiones anteriores en 6.5
-description: Obtenga información sobre cómo mantener las aplicaciones y configuraciones compatibles con Adobe Experience Manager AEM () 6.5
+title: Compatibilidad con versiones anteriores en AEM 6.5
+description: Descubra cómo mantener sus aplicaciones y configuraciones compatibles con Adobe Experience Manager (AEM) 6.5
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
@@ -10,58 +10,67 @@ feature: Upgrading
 exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 1%
-
+source-wordcount: '526'
+ht-degree: 2%
 ---
-
-# AEM Compatibilidad con versiones anteriores en 6.5{#backward-compatibility-in-aem}
+# Compatibilidad con versiones anteriores en AEM 6.5{#backward-compatibility-in-aem}
 
 ## Información general {#overview}
 
 >[!NOTE]
 >
->AEM Para obtener una lista de los cambios de contenido y configuración que no están dentro del ámbito del paquete de compatibilidad, vea [Reestructuración del repositorio en el espacio de trabajo](/help/sites-deploying/repository-restructuring.md).
+>Para obtener una lista de los cambios de contenido y configuración que no están dentro del ámbito del paquete de compatibilidad, vea [Reestructuración del repositorio en AEM](/help/sites-deploying/repository-restructuring.md).
 
-En Adobe Experience Manager AEM () 6.5, todas las funciones se han desarrollado teniendo en cuenta la compatibilidad con versiones anteriores.
+En Adobe Experience Manager (AEM) 6.5, todas las funciones se han desarrollado teniendo en cuenta la compatibilidad con versiones anteriores.
 
-AEM Normalmente, los clientes que ejecutan la versión 6.3 no deberían tener que cambiar el código o las personalizaciones al realizar la actualización. AEM Para los clientes de la versión 6.1 y 6.2, no hay cambios importantes adicionales a los que se enfrentaría durante una actualización a la versión 6.3.
+Normalmente, los clientes que ejecutan AEM 6.3 no deben tener que cambiar el código o las personalizaciones al realizar la actualización. Para los clientes de AEM 6.1 y 6.2, no hay cambios importantes adicionales a los que se enfrentaría durante una actualización a 6.3.
 
-En el caso de las excepciones en las que las funciones no se podían mantener compatibles con versiones anteriores, se pueden mitigar los problemas de incompatibilidad con versiones anteriores para paquetes y contenido. Para ello, instale un paquete de compatibilidad para 6.4 (consulte cómo configurarlo a continuación para obtener más información sobre dónde descargarlo). AEM Este paquete de compatibilidad ayuda a restaurar la compatibilidad normalmente para las aplicaciones compatibles con la versión 6.4 de la aplicación de.
+En el caso de las excepciones en las que las funciones no se podían mantener compatibles con versiones anteriores, se pueden mitigar los problemas de incompatibilidad con versiones anteriores para paquetes y contenido. Para ello, instale un paquete de compatibilidad para 6.4 (consulte cómo configurarlo a continuación para obtener más información sobre dónde descargarlo). Este paquete de compatibilidad ayuda a restaurar la compatibilidad normalmente para aplicaciones compatibles con AEM 6.4.
 
-AEM AEM El paquete de compatibilidad permite ejecutar la compatibilidad en modo de compatibilidad y diferir el desarrollo personalizado respecto a las nuevas funciones de la aplicación
+El paquete de compatibilidad permite ejecutar AEM en modo de compatibilidad y retrasar el desarrollo personalizado respecto a las nuevas funciones de AEM:
 
 >[!NOTE]
 >
->AEM El paquete de compatibilidad es solo una solución temporal para aplazar el desarrollo necesario para ser compatible con la versión 6.5 de la versión de. El Adobe solo lo recomienda como última opción si no puede abordar los problemas de compatibilidad mediante el desarrollo inmediatamente después de la actualización. Además, Adobe recomienda cambiar al modo nativo y desinstalar el paquete de compatibilidad una vez que decida continuar con el desarrollo personalizado basado en 6.5 y disponer de la funcionalidad completa de 6.5.
+>El paquete de compatibilidad es solo una solución temporal para retrasar el desarrollo necesario para ser compatible con AEM 6.5. Adobe solo lo recomienda como última opción si no puede solucionar los problemas de compatibilidad mediante el desarrollo inmediatamente después de la actualización. Además, Adobe recomienda cambiar al modo nativo y desinstalar el paquete de compatibilidad una vez que decida continuar con el desarrollo personalizado basado en 6.5 y disponer de la funcionalidad completa de 6.5.
 
 ![sase](assets/sase.png)
 
 El paquete de compatibilidad tiene dos modos: **Enrutamiento habilitado** y **Enrutamiento deshabilitado**.
 
-AEM Esto permite que la versión 6.5 se ejecute en tres modos:
+Esto permite que AEM 6.5 se ejecute en tres modos:
 
 **Modo nativo:**
 
-AEM El modo nativo es para los clientes que desean utilizar todas las nuevas funciones de la versión 6.5 y están listos para realizar algún desarrollo a fin de que sus personalizaciones funcionen con todas las nuevas funciones.
+El modo nativo es para los clientes que desean utilizar todas las nuevas funciones de AEM 6.5 y están listos para realizar algún desarrollo para que sus personalizaciones funcionen con todas las funciones nuevas.
 
 Esto significa que debe ajustar la aplicación inmediatamente después de la actualización.
 
 **Modo de compatibilidad: paquete de compatibilidad instalado con enrutamiento habilitado**
 
-El modo de compatibilidad es para clientes que tienen personalizaciones de interfaces que no son compatibles con versiones anteriores. AEM AEM Esto permite a los usuarios ejecutar en modo de compatibilidad y retrasar el desarrollo personalizado requerido en relación con las nuevas funciones de la aplicación que no son compatibles con algunos de sus códigos personalizados.
+El modo de compatibilidad es para clientes que tienen personalizaciones de interfaces que no son compatibles con versiones anteriores. Esto permite que AEM se ejecute en modo de compatibilidad y aplace el desarrollo personalizado necesario para nuevas funciones de AEM que no son compatibles con algunos de sus códigos personalizados.
 
 **Modo heredado: paquete de compatibilidad instalado con enrutamiento deshabilitado**
 
-AEM El modo heredado es para clientes que tienen interfaces personalizadas basadas en código heredado o obsoleto de los que se ha movido el código del paquete de compatibilidad.
+El modo heredado es para clientes con interfaces personalizadas basadas en código heredado o obsoleto de AEM que se ha eliminado del paquete de compatibilidad.
 
 ![sapte](assets/sapte.png)
 
 ## Configuración {#how-to-set-up}
 
-AEM El paquete de compatibilidad de **6.4 para 6.5** se puede instalar como paquete mediante el Administrador de paquetes. AEM Puede descargar el [Paquete de compatibilidad de 6.4 para 6.5 de desde el sitio Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64).
+El **Paquete de compatibilidad de AEM 6.4 para 6.5** se puede instalar como paquete usando el Administrador de paquetes. Puede descargar el [Paquete de compatibilidad de AEM 6.4 para 6.5 desde el sitio Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64).
 
 Una vez instalado el paquete de compatibilidad, el enrutamiento se puede habilitar o deshabilitar mediante un conmutador en la configuración OSGI, como se muestra a continuación:
 

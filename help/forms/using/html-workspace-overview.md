@@ -9,13 +9,31 @@ exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1056'
 ht-degree: 97%
-
 ---
-
 # Usar AEM Forms Workspace{#working-with-aem-forms-workspace}
 
 ## Introducción {#introduction}
@@ -28,7 +46,7 @@ Para obtener más información, consulte [Introducción al espacio de trabajo de
 
 ## Primeros pasos {#getting-familiar}
 
-Para familiarizarse con el proceso completo de creación de una aplicación de Forms para automatizar un proceso empresarial, realice el tutorial. Puede crear, administrar y probar una aplicación mediante Workbench, Designer y AEM Forms Workspace después de completar el tutorial. Para obtener más información sobre la implementación, consulte [Creación de la primera aplicación de AEM Forms](https://help.adobe.com/es_ES/livecycle/11.0/CreateFirstApp/index.html).
+Para familiarizarse con el proceso completo de creación de una aplicación de Forms para automatizar un proceso empresarial, realice el tutorial. Puede crear, administrar y probar una aplicación mediante Workbench, Designer y AEM Forms Workspace después de completar el tutorial. Para obtener más información sobre la implementación, consulte [Creación de la primera aplicación de AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Información general funcional {#functional-overview}
 
@@ -133,7 +151,7 @@ Puede personalizar la mayor parte de la interfaz y las principales funcionalidad
 
 En cada nuevo proceso, los formularios XDP se representan de forma predeterminada en formato PDF en los equipos de escritorio y en formato HTML en las tabletas. Siempre es posible procesar un formulario XDP en formato HTML. Para obtener más información, consulte [Nuevos servicios de renderización y envío](/help/forms/using/new-render-submit-service.md).
 
-La funcionalidad [Mobile Forms](https://helpx.adobe.com/es/livecycle/help/mobile-forms/introduction.html), que funciona con [perfiles](https://helpx.adobe.com/es/livecycle/help/mobile-forms/creating-profile.html), habilita la representación HTML de formularios XDP. De forma predeterminada, la opción &quot;Renderizar nuevo formulario de HTML&quot; utiliza el perfil `default.html`, el cual puede cambiar. También puede agregar cambios personalizados que se produzcan antes de procesar un formulario XDP en formato de HTML.
+La funcionalidad [Mobile Forms](https://helpx.adobe.com/es/livecycle/help/mobile-forms/introduction.html), que funciona con [perfiles](https://helpx.adobe.com/es/livecycle/help/mobile-forms/creating-profile.html), habilita la representación HTML de formularios XDP. De forma predeterminada, la opción &quot;Renderizar nuevo formulario HTML&quot; utiliza el perfil `default.html`, el cual puede cambiar. También puede agregar cambios personalizados que se produzcan antes de procesar un formulario XDP en formato de HTML.
 
 ## Aplicación de AEM Forms Workspace {#aem-forms-workspace-app}
 

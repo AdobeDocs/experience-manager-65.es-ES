@@ -8,13 +8,17 @@ exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 1%
-
 ---
-
 # PhoneGap{#phonegap}
 
 {{ue-over-mobile}}
@@ -33,9 +37,9 @@ Los siguientes recursos le ayudarán a iniciarse en el uso de AEM Mobile PhoneGa
 
 * [Servicios De Contenido De AEM Mobile: Información General](/help/mobile/develop-content-as-a-service.md)
 
-   * Para habilitar los servicios de contenido y los modelos de datos, consulte [Administración de servicios de contenido](/help/mobile/developing-content-services.md)
-   * Para obtener más información sobre la creación de modelos, consulte [Desarrollo de modelos](/help/mobile/administer-mobile-apps.md)
-   * Para obtener más información sobre procesamiento y entrega, consulte [Procesamiento y entrega de servicios de contenido](/help/mobile/rendering-and-delivery.md)
+  * Para habilitar los servicios de contenido y los modelos de datos, consulte [Administración de servicios de contenido](/help/mobile/developing-content-services.md)
+  * Para obtener más información sobre la creación de modelos, consulte [Desarrollo de modelos](/help/mobile/administer-mobile-apps.md)
+  * Para obtener más información sobre procesamiento y entrega, consulte [Procesamiento y entrega de servicios de contenido](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >

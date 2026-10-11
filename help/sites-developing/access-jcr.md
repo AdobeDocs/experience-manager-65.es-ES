@@ -1,6 +1,6 @@
 ---
 title: Cómo acceder mediante programación al JCR de AEM
-description: AEM Puede modificar mediante programación los nodos y las propiedades ubicados dentro del repositorio de, que forma parte de Adobe Experience Cloud
+description: Puede modificar mediante programación nodos y propiedades ubicados en el repositorio de AEM, que forma parte de Adobe Experience Cloud
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -9,20 +9,34 @@ exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: cd14456d-a492-4b5c-8a82-1fbd4460dbd2
+    internal-label: Java Content Repository
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '603'
 ht-degree: 2%
-
 ---
-
 # Cómo acceder mediante programación al JCR de AEM{#how-to-programmatically-access-the-aem-jcr}
 
 Puede modificar mediante programación los nodos y las propiedades ubicados en el repositorio de Adobe CQ, que forma parte de Adobe Experience Cloud. Para acceder al repositorio de CQ, utilice la API de repositorio de contenido Java™ (JCR). Puede utilizar la API JCR de Java™ para crear, reemplazar, actualizar y eliminar contenido (CRUD) ubicado en el repositorio de Adobe CQ. Para obtener más información acerca de la API JCR de Java™, consulte [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Este artículo de desarrollo modifica el JCR de Adobe CQ desde una aplicación Java™ externa. Por el contrario, puede modificar el JCR desde un paquete OSGi mediante la API JCR. Para obtener más información, consulte [Conservación de datos CQ en el repositorio de contenido Java™](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
+>Este artículo de desarrollo modifica el JCR Adobe CQ desde una aplicación Java™ externa. Por el contrario, puede modificar el JCR desde un paquete OSGi mediante la API JCR. Para obtener más información, consulte [Conservación de datos CQ en el repositorio de contenido Java™](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html).
 
 >[!NOTE]
 >
@@ -34,7 +48,7 @@ Puede modificar mediante programación los nodos y las propiedades ubicados en e
 
 ## Crear una instancia de repositorio {#create-a-repository-instance}
 
-Aunque hay diferentes maneras de conectarse a un repositorio y establecer una conexión, este artículo de desarrollo utiliza un método estático que pertenece a la clase `org.apache.jackrabbit.commons.JcrUtils`. El nombre del método es `getRepository`. Este método toma un parámetro de cadena que representa la dirección URL del servidor de Adobe CQ. Por ejemplo, `http://localhost:4503/crx/server`.
+Aunque hay diferentes maneras de conectarse a un repositorio y establecer una conexión, este artículo de desarrollo utiliza un método estático que pertenece a la clase `org.apache.jackrabbit.commons.JcrUtils`. El nombre del método es `getRepository`. Este método toma un parámetro de cadena que representa la dirección URL del servidor Adobe CQ. Por ejemplo, `http://localhost:4503/crx/server`.
 
 El método `getRepository` devuelve una instancia `Repository`, como se muestra en el ejemplo de código siguiente.
 
@@ -141,6 +155,6 @@ try {
 }
 ```
 
-Después de ejecutar el ejemplo de código completo y crear los nodos, puede ver los nuevos nodos en el **[!UICONTROL CRXDE Lite]**, como se muestra en la siguiente ilustración.
+Después de ejecutar el ejemplo de código completo y crear los nodos, puede ver los nuevos nodos en **[!UICONTROL CRXDE Lite]**, como se muestra en la siguiente ilustración.
 
 ![chlimage_1-68](assets/chlimage_1-68a.png)

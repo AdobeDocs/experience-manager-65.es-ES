@@ -1,5 +1,5 @@
 ---
-title: AEM Extensión de corchetes de
+title: Extensión de AEM para Brackets
 description: Aprenda a utilizar la extensión de Adobe Experience Manager para corchetes.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,34 +9,45 @@ exl-id: 829d8256-b415-4a44-a353-455ac16950f3
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
-
+source-wordcount: '987'
+ht-degree: 4%
 ---
-
-# AEM Extensión de corchetes de{#aem-brackets-extension}
+# Extensión de AEM para Brackets{#aem-brackets-extension}
 
 ## Información general {#overview}
 
-AEM AEM La extensión de brackets proporciona un flujo de trabajo fluido para editar componentes y bibliotecas de cliente, y usa la potencia del editor de código [Brackets](https://brackets.io/), que proporciona acceso desde el editor de código a archivos y capas de Photoshop. AEM La fácil sincronización que proporciona la extensión (no se requiere Maven ni File Vault) aumenta la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos limitados a participar en proyectos. Esta extensión también proporciona cierta compatibilidad con el [Lenguaje de HTML de plantillas (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es), que elimina la complejidad de JSP para facilitar el desarrollo de componentes y hacerlos más seguros.
+La extensión de AEM Brackets proporciona un flujo de trabajo fluido para editar componentes de AEM y bibliotecas de cliente, y utiliza la potencia del editor de código [Brackets](https://brackets.io/), que proporciona acceso desde el editor de código a archivos y capas de Photoshop. La fácil sincronización que proporciona la extensión (no se requiere Maven ni File Vault) aumenta la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos limitados de AEM a participar en proyectos. Esta extensión también proporciona cierta compatibilidad con el [Lenguaje de plantilla de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es), que elimina la complejidad de JSP para que el desarrollo de componentes sea más fácil y seguro.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
 ### Características {#features}
 
-AEM Las principales características de la extensión de corchetes de la son:
+Las principales características de la extensión de AEM Brackets son:
 
-* AEM Sincronización automatizada de los archivos modificados en la instancia de desarrollo de la.
+* Sincronización automatizada de los archivos modificados en la instancia de desarrollo de AEM.
 * Sincronización bidireccional manual de archivos y carpetas.
 * Sincronización completa del paquete de contenido del proyecto.
 * Finalización de código HTL para expresiones e instrucciones de bloque `data-sly-*`.
 
-AEM Además, Brackets incluye muchas funciones útiles para los desarrolladores de front-end de:
+Además, Brackets incluye muchas funciones útiles para desarrolladores de front-end de AEM:
 
-* Compatibilidad con archivos Photoshop para extraer información de un archivo de PSD, como capas, medidas, colores, fuentes, textos, etc.
-* Sugerencias para el código del PSD para reutilizar fácilmente esta información extraída en el código.
+* Compatibilidad con archivos Photoshop para extraer información de un archivo PSD, como capas, medidas, colores, fuentes, textos, etc.
+* Sugerencias para el código de PSD para reutilizar fácilmente esta información extraída en el código.
 * Compatibilidad con preprocesadores CSS, como LESS y SCSS.
 * Y cientos de extensiones adicionales que cubren necesidades más específicas.
 
@@ -44,7 +55,7 @@ AEM Además, Brackets incluye muchas funciones útiles para los desarrolladores 
 
 ### Corchetes {#brackets}
 
-AEM La extensión de corchetes de la serie admite corchetes de la versión 1.0 o posterior.
+La extensión de AEM Brackets es compatible con la versión 1.0 o superior de Brackets.
 
 Descargue la versión más reciente de Brackets de [brackets.io](https://brackets.io/).
 
@@ -53,36 +64,36 @@ Descargue la versión más reciente de Brackets de [brackets.io](https://bracket
 Para instalar la extensión, siga estos pasos:
 
 1. Abra los corchetes. En el menú **Archivo**, seleccione **Extension Manager...**
-1. AEM AEM Escriba **&#x200B;**&#x200B;en la barra de búsqueda y busque **Extensión de los corchetes de la**.
+1. Escribe **AEM** en la barra de búsqueda y busca **AEM Brackets Extension**.
 
    ![chlimage_1-54](assets/chlimage_1-54a.png)
 
 1. Haga clic en **Instalar**.
-1. Cierre el cuadro de diálogo y el Extension Manager una vez finalizada la instalación.
+1. Cierre el cuadro de diálogo y Extension Manager después de completar la instalación.
 
 ## Introducción {#getting-started}
 
 ### El proyecto del paquete de contenido {#the-content-package-project}
 
-AEM Una vez instalada la extensión, puede empezar a desarrollar componentes de la abriendo una carpeta de paquete de contenido desde el sistema de archivos con corchetes.
+Una vez instalada la extensión, puede empezar a desarrollar componentes de AEM abriendo una carpeta de paquete de contenido desde el sistema de archivos con corchetes.
 
 El proyecto debe contener al menos:
 
 1. una carpeta `jcr_root` (por ejemplo, `myproject/jcr_root`)
 
-1. un archivo de `filter.xml` (por ejemplo, `myproject/META-INF/vault/filter.xml`); para obtener más detalles acerca de la estructura del archivo de `filter.xml`, vea la [definición del filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html).
+1. un archivo de `filter.xml` (por ejemplo, `myproject/META-INF/vault/filter.xml`); para obtener más detalles acerca de la estructura del archivo de `filter.xml`, vea la [definición del filtro de Workspace](https://jackrabbit.apache.org/filevault/filter.html?lang=es).
 
 En el menú **Archivo** de Brackets, elija **Abrir carpeta...** y elija la carpeta `jcr_root` o la carpeta del proyecto principal.
 
 >[!NOTE]
 >
->Si no dispone de su propio proyecto con un paquete de contenido, puede probar el [Ejemplo de HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). En GitHub, haga clic en **Descargar ZIP**, extraiga los archivos localmente y, como se indica más arriba, abra la carpeta `jcr_root` entre corchetes. AEM A continuación, siga los pasos a continuación para configurar **Configuración del proyecto** y, finalmente, cargue todo el paquete en su instancia de desarrollo de haciendo un **Paquete de contenido de exportación** según se indica más adelante en la sección Sincronización completa del paquete de contenido.
+>Si no dispone de su propio proyecto con un paquete de contenido, puede probar el [Ejemplo de HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). En GitHub, haga clic en **Descargar ZIP**, extraiga los archivos localmente y, como se indica más arriba, abra la carpeta `jcr_root` entre corchetes. A continuación, siga los pasos a continuación para configurar **Configuración del proyecto** y, finalmente, cargue todo el paquete en la instancia de desarrollo de AEM haciendo un **Paquete de contenido de exportación** según se indica más adelante en la sección Sincronización completa del paquete de contenido.
 >
->AEM AEM Después de estos pasos, debería poder obtener acceso a la dirección URL `/content/todo.html` en su instancia de desarrollo de y puede empezar a realizar modificaciones en el código entre corchetes y ver cómo, después de realizar una actualización en el explorador web, los cambios se sincronizaron inmediatamente con el servidor de la.
+>Después de estos pasos, debería poder acceder a la dirección URL `/content/todo.html` en la instancia de desarrollo de AEM y puede empezar a realizar modificaciones en el código entre corchetes y ver cómo, después de realizar una actualización en el explorador web, los cambios se sincronizaron inmediatamente con el servidor de AEM.
 
 ### Configuración de proyecto {#project-settings}
 
-AEM Para sincronizar el contenido con y desde una instancia de desarrollo de, debe definir la Configuración del proyecto. AEM Para ello, vaya al menú **&#x200B;**&#x200B;y elija **Configuración del proyecto...**
+Para sincronizar el contenido con y desde una instancia de desarrollo de AEM, debe definir la configuración del proyecto. Para ello, ve al menú **AEM** y elige **Configuración del proyecto...**
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
@@ -95,11 +106,11 @@ La Configuración del proyecto permite definir lo siguiente:
 
 ## Sincronización de contenido {#synchronizing-content}
 
-AEM La extensión Brackets proporciona los siguientes tipos de sincronización de contenido para archivos y carpetas permitidos por las reglas de filtrado definidas en `filter.xml`:
+La extensión AEM Brackets proporciona los siguientes tipos de sincronización de contenido para archivos y carpetas permitidos por las reglas de filtrado definidas en `filter.xml`:
 
 ### Sincronización Automática De Archivos Cambiados {#automated-synchronization-of-changed-files}
 
-AEM Esto solo sincronizará los cambios de Paréntesis a la instancia de la, pero nunca al revés.
+Esto solo sincronizará los cambios de Brackets a la instancia de AEM, pero nunca al contrario.
 
 ### Sincronización bidireccional manual {#manual-bidirectional-synchronization}
 
@@ -113,13 +124,13 @@ En el Explorador del proyecto, abra el menú contextual haciendo clic con el bot
 
 ### Sincronización completa del paquete de contenido {#full-content-package-synchronization}
 
-AEM En el menú **&#x200B;**, las opciones **Exportar paquete de contenido** o **Importar paquete de contenido** le permiten sincronizar todo el proyecto con el servidor.
+En el menú **AEM**, las opciones **Exportar paquete de contenido** o **Importar paquete de contenido** le permiten sincronizar todo el proyecto con el servidor.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 
 ### Estado de sincronización {#synchronization-status}
 
-AEM La extensión de corchetes de la barra de herramientas de la parte derecha de la ventana Corchetes, que muestra un icono de notificación que indica el estado de la última sincronización, incluye la siguiente información:
+La extensión de AEM Brackets muestra un icono de notificación en la barra de herramientas a la derecha de la ventana Brackets, que indica el estado de la última sincronización:
 
 * verde: todos los archivos se han sincronizado correctamente
 * azul: hay una operación de sincronización en curso
@@ -138,7 +149,7 @@ Al hacer clic en el icono de notificación, se abre el cuadro de diálogo Inform
 
 ## Edición de código HTL {#editing-htl-code}
 
-AEM La extensión Brackets también incluye algunas características de finalización automática para facilitar la escritura de atributos y expresiones HTL.
+La extensión AEM Brackets también incluye algunas funciones de finalización automática para facilitar la escritura de atributos y expresiones HTL.
 
 ### Atributo de finalización automática {#attribute-auto-completion}
 
@@ -151,7 +162,7 @@ Dentro de una expresión `${}`, los nombres de variables comunes se completan au
 
 ## Más información {#more-information}
 
-AEM La extensión Brackets es un proyecto de código abierto, alojado en GitHub por la organización [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud), con licencia Apache, versión 2.0:
+La extensión AEM Brackets es un proyecto de código abierto, alojado en GitHub por la organización [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud), con licencia Apache, versión 2.0:
 
 * Repositorio de códigos: [https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension](https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension)
 * Licencia de Apache, versión 2.0: [https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)

@@ -8,13 +8,27 @@ feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 91%
-
 ---
-
 # Incrustar un formulario adaptable o una comunicación interactiva en una aplicación de una sola página de AEM Sites{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
 <span class="preview"> Adobe recomienda utilizar la captura de datos moderna y ampliable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=es) para [crear un nuevo formulario adaptable](/help/forms/using/create-an-adaptive-form-core-components.md) o [añadir formularios adaptables a páginas de AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Estos componentes representan un avance significativo en la creación de formularios adaptables, lo que garantiza experiencias de usuario impresionantes. Este artículo describe un enfoque más antiguo para crear Formularios adaptables con componentes de base. </span>
@@ -23,7 +37,7 @@ ht-degree: 91%
 
 AEM Forms permite a los desarrolladores de formularios incrustar fácilmente formularios adaptables y comunicaciones interactivas en una aplicación de una sola página (SPA) de AEM Sites. El formulario adaptable y la comunicación interactiva incrustados son completamente funcionales y los usuarios pueden rellenarlos y enviarlos sin abandonar la página. Esto permite al usuario mantenerse en el contexto de otros elementos de la página web e interactuar simultáneamente con el formulario o la comunicación interactiva.
 
-En la aplicación de una sola página de AEM Sites, puede agregar un formulario adaptable o una comunicación interactiva mediante el [componente Contenedor de la SPA de AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es un componente de AEM Forms para la SPA de AEM Sites que puede agregar a su página de Sites.
+En la aplicación de una sola página de AEM Sites, puede agregar un formulario adaptable o una comunicación interactiva mediante el [componente Contenedor de la SPA de AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) Es un componente de AEM Forms para la SPA de AEM Sites que puede agregar a su página de Sites.
 
 Para obtener información sobre la incrustación de un formulario adaptable en una página de AEM Sites que no sea una SPA, consulte [Incrustar un formulario adaptable o una comunicación interactiva en una página de AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 

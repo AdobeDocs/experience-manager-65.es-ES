@@ -1,27 +1,36 @@
 ---
-title: Personalizar y ampliar  [!DNL Assets]
+title: Personalizar y ampliar [!DNL Assets]
 description: Conozca las formas en que puede personalizar y ampliar Asset Share y el Editor de recursos, que presenta a los usuarios una interfaz y un conjunto de funcionalidades específicamente adaptados.
 contentOwner: AG
 role: Developer
 feature: Developer Tools
 exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 0%
-
+source-wordcount: '252'
+ht-degree: 1%
 ---
-
 # Personalizar y ampliar [!DNL Assets] {#customizing-and-extending-assets}
 
-El editor de recursos es el principal punto de acceso que los usuarios de un sitio web de Enterprise Manager de Adobe utilizan para buscar, ver y manipular los recursos digitales del repositorio.
+El editor de recursos es el principal punto de acceso que los usuarios de un sitio web de Adobe Enterprise Manager utilizan para buscar, ver y manipular los recursos digitales del repositorio.
 
 Como desarrollador de [!DNL Experience Manager], puede personalizar y ampliar el Editor de recursos de varias formas, presentando a los usuarios una interfaz específicamente diseñada y un conjunto de funcionalidades.
 
 Los siguientes aspectos de la funcionalidad se pueden personalizar o mejorar:
 
-* [Ampliar editor de recursos](asseteditorx.md)
+* [Ampliación del editor de recursos](asseteditorx.md)
 * [Ampliar búsqueda de Assets](searchx.md)
 * [Procesar Assets mediante controladores de medios y flujos de trabajo](media-handlers.md)
 * [Integrar Assets con el flujo de actividad](extending-activity-stream.md)
@@ -34,7 +43,7 @@ Los siguientes aspectos de la apariencia del editor de recursos son personalizab
 
 * Logotipo: puede agregar el logotipo de su propia organización a la interfaz.
 * Colores y fuentes: puede cambiar los colores y las fuentes utilizados en la interfaz.
-* Código de HTML: para una personalización más detallada, puede cambiar el código de HTML subyacente que define las interfaces.
+* Código HTML: para una personalización más detallada, puede cambiar el código HTML subyacente que define las interfaces.
 
 ## Personalizar representaciones {#customizing-renditions}
 

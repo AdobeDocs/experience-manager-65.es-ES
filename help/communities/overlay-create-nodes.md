@@ -9,13 +9,20 @@ exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 0%
-
+source-wordcount: '301'
+ht-degree: 1%
 ---
-
 # Crear nodos {#create-nodes}
 
 Superponga el sistema de comentarios con una versión personalizada copiando el número mínimo de archivos necesarios de `/libs` en `/apps` y modificándolos en `/apps`.
@@ -36,34 +43,34 @@ Algunos nodos de la ruta son carpetas y otros son componentes.
 1. Crear `/apps/social` (si aún no existe)
    * Seleccionar nodo `/apps`
    * **[!UICONTROL Crear > Carpeta]**
-      * Escriba el nombre: `social`
+     * Escriba el nombre: `social`
 1. Seleccionar nodo `social`
    * **[!UICONTROL Crear]** > **[!UICONTROL Carpeta]**
-      * Escriba el nombre: `commons`
+     * Escriba el nombre: `commons`
 1. Seleccionar nodo `commons`
    * **[!UICONTROL Crear > Carpeta]**
-      * Escriba el nombre: `components`
+     * Escriba el nombre: `components`
 1. Seleccionar nodo `components`
    * **[!UICONTROL Crear > Carpeta]**.
-      * Escriba el nombre: `hbs`
+     * Escriba el nombre: `hbs`
 1. Seleccionar nodo `hbs`
    * **[!UICONTROL Crear]** > **[!UICONTROL Crear componente]**
-      * Especifique la etiqueta: `comments`
-      * Escriba el título: `Comments`
-      * Escriba la descripción: `List of comments without showing avatars`
-      * Supertipo: `social/commons/components/comments`
-      * Introducir grupo: `Communities`
-      * Haga clic en **[!UICONTROL Siguiente]** hasta **[!UICONTROL Aceptar]**
+     * Especifique la etiqueta: `comments`
+     * Escriba el título: `Comments`
+     * Escriba la descripción: `List of comments without showing avatars`
+     * Supertipo: `social/commons/components/comments`
+     * Introducir grupo: `Communities`
+     * Haga clic en **[!UICONTROL Siguiente]** hasta **[!UICONTROL Aceptar]**
 1. Seleccionar nodo `comments`
 
    * **[!UICONTROL Crear]** > **[!UICONTROL Crear componente]**
 
-      * Especifique la etiqueta: `comment`
-      * Escriba el título: `Comment`
-      * Escriba la descripción: `A comment instance without avatars`
-      * Supertipo: `social/commons/components/comments/comment`
-      * Introducir grupo: `.hidden`
-      * Haga clic en **[!UICONTROL Siguiente]** hasta **[!UICONTROL Aceptar]**
+     * Especifique la etiqueta: `comment`
+     * Escriba el título: `Comment`
+     * Escriba la descripción: `A comment instance without avatars`
+     * Supertipo: `social/commons/components/comments/comment`
+     * Introducir grupo: `.hidden`
+     * Haga clic en **[!UICONTROL Siguiente]** hasta **[!UICONTROL Aceptar]**
    * Seleccionar **[!UICONTROL Guardar todo]**
 1. Eliminar el valor predeterminado `comments.jsp`
    * Seleccionar nodo `/apps/social/commons/components/hbs/comments/comments.jsp`

@@ -1,6 +1,6 @@
 ---
 title: Importar y exportar archivos de configuración
-description: AEM Obtenga información sobre cómo importar y exportar el archivo de configuración para editar las preferencias del servidor o configurar otra instancia de producto de formularios en la que se puede usar la plantilla de formularios de.
+description: Obtenga información sobre cómo importar y exportar el archivo de configuración para editar las preferencias del servidor o configurar otra instancia de producto de formularios AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
@@ -9,26 +9,40 @@ exl-id: 225dbeb5-a21c-4338-98c7-e10c32973721
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 4%
-
 ---
-
 # Importar y exportar archivos de configuración {#importing-and-exporting-the-configuration-file}
 
 >[!NOTE]
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-Utilice la página Configuración Manual para descargar una copia de los ajustes de configuración en formato XML. La configuración de este archivo controla todas las preferencias del servidor. A continuación, puede editar el archivo y cargarlo de nuevo en el servidor. AEM También puede utilizar el archivo para configurar otra instancia de producto de formularios en formato.
+Utilice la página Configuración Manual para descargar una copia de los ajustes de configuración en formato XML. La configuración de este archivo controla todas las preferencias del servidor. A continuación, puede editar el archivo y cargarlo de nuevo en el servidor. También puede utilizar el archivo para configurar otra instancia de producto de formularios AEM Forms.
 
 Para evitar riesgos de seguridad, el valor de la contraseña de enlace para el servidor de directorios no se incluye en un archivo de configuración exportado. Actualice la contraseña en el archivo XML antes de importar el archivo a un nuevo sistema.
 
 >[!NOTE]
 >
->AEM La importación del archivo de configuración vuelve a configurar formularios de datos en función de la información del archivo de configuración. AEM Solamente un administrador del sistema o un consultor de servicios profesionales familiarizado con el producto de formularios de la y el XML debe considerar la posibilidad de modificar el archivo de configuración. Es posible que tengan que editar el archivo de configuración, por ejemplo, para volver a configurar una configuración dañada.
+>La importación del archivo de configuración reconfigura los formularios de AEM en función de la información del archivo. Solamente un administrador del sistema o un consultor de servicios profesionales familiarizado con el producto de formularios AEM Forms y el XML debe considerar la posibilidad de modificar el archivo de configuración. Es posible que tengan que editar el archivo de configuración, por ejemplo, para volver a configurar una configuración dañada.
 
 **Exportar la información de configuración**
 

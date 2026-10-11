@@ -10,13 +10,20 @@ exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1631'
 ht-degree: 1%
-
 ---
-
 # Crear un sitio de la comunidad{#author-a-new-community-site}
 
 ## Crear un sitio de la comunidad {#create-a-community-site}
@@ -44,14 +51,14 @@ En el [paso Plantilla del sitio](/help/communities/sites-console.md#step2013asit
 * **Descripción del sitio de la comunidad**: `A site for engaging with the community.`
 * **Raíz del sitio de la comunidad**: (dejar en blanco para la raíz predeterminada `/content/sites`)
 * **Configuraciones de nube**: (déjelo en blanco si no se especifican configuraciones de nube) proporcione la ruta a las configuraciones de nube especificadas.
-* **Idioma base del sitio de la comunidad**: (no tocar para un solo idioma: inglés) use la lista desplegable para elegir uno o más *3&rbrace; idiomas base entre los idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado).* Se crea un sitio de la comunidad para cada idioma agregado y existe en la misma carpeta del sitio según la práctica recomendada descrita en [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md). La página raíz de cada sitio contiene una página secundaria denominada por el código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
+* **Idioma base del sitio de la comunidad**: (no tocar para un solo idioma: inglés) use la lista desplegable para elegir uno o más *3} idiomas base entre los idiomas disponibles: alemán, italiano, francés, japonés, español, portugués (Brasil), chino (tradicional) y chino (simplificado).* Se crea un sitio de la comunidad para cada idioma agregado y existe en la misma carpeta del sitio según la práctica recomendada descrita en [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md). La página raíz de cada sitio contiene una página secundaria denominada por el código de idioma de uno de los idiomas seleccionados, como &quot;en&quot; para inglés o &quot;fr&quot; para francés.
 
 * **Nombre del sitio de la comunidad**: engarzar
 
-   * Compruebe el nombre, ya que no se cambia fácilmente después de crear el sitio
-   * La dirección URL inicial se muestra debajo del Nombre del sitio de la comunidad
-   * Para una URL válida, añada un código de idioma base + &quot;.html&quot;
-   * *Por ejemplo*, https://localhost:4502/content/sites/ `engage/en.html`
+  * Compruebe el nombre, ya que no se cambia fácilmente después de crear el sitio
+  * La dirección URL inicial se muestra debajo del Nombre del sitio de la comunidad
+  * Para una URL válida, añada un código de idioma base + &quot;.html&quot;
+  * *Por ejemplo*, https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Plantilla**: desplegar para elegir `Reference Site`
 
@@ -119,7 +126,7 @@ Por ejemplo,
 
 >[!NOTE]
 >
->[El servicio de túnel](https://helpx.adobe.com/es/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) permite la selección de miembros y grupos que sólo existen en el entorno de publicación.
+>[El servicio de túnel](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) permite la selección de miembros y grupos que sólo existen en el entorno de publicación.
 
 ![roles de usuario en el nuevo sitio](assets/site-admin-1.png)
 
@@ -184,7 +191,7 @@ De izquierda a derecha son:
 
 * **Publicar sitio**
 
-  Al seleccionar el icono del mundo, se publica el sitio de la comunidad (por ejemplo, si el servidor de publicación se está ejecutando en el equipo local, a continuación, en localhost:4503 de forma predeterminada).
+  Al seleccionar el icono del mundo, se publica el sitio de la comunidad (por ejemplo, si el servidor de publicación se está ejecutando en el equipo local y, a continuación, en localhost:4503 de forma predeterminada).
 
 * **Exportar sitio**
 
@@ -269,25 +276,25 @@ Para empezar:
 
    * Seleccionar **Crear nodo:**
 
-      * **Nombre** localhost.4503
-(no *no* usa &#39;:&#39;)
+     * **Nombre** localhost.4503
+       (no *no* usa &#39;:&#39;)
 
-      * **Tipo** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+     * **Tipo** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. Con el nodo `localhost.4503` recién creado seleccionado:
 
    * Agregar propiedad:
 
    * **Nombre** sling:match
-      * Cadena **Type**
-      * **Valor** localhost.4503/$
-(debe finalizar con &#39;$$&#39; char)
+     * Cadena **Type**
+     * **Valor** localhost.4503/$
+       (debe finalizar con &#39;$$&#39; char)
 
    * Agregar propiedad:
 
-      * **Nombre** sling:internalRedirect
-      * Cadena **Type**
-      * **Valor** /content/sites/engage/en.html
+     * **Nombre** sling:internalRedirect
+     * Cadena **Type**
+     * **Valor** /content/sites/engage/en.html
 
 1. Seleccione **Guardar todo.**
 1. (Opcional) Elimine el historial de exploración.

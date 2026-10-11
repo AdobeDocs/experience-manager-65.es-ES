@@ -10,13 +10,22 @@ exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 7%
-
+source-wordcount: '293'
+ht-degree: 8%
 ---
-
 # Edición de lanzamientos{#editing-launches}
 
 ## Edición de páginas de lanzamiento {#editing-launch-pages}
@@ -45,9 +54,9 @@ Después de crear un lanzamiento, puede cambiar su nombre y la fecha. También p
 
    * En la ficha **General**, puede editar:
 
-      * **Título**
-      * **Fecha de lanzamiento**: es equivalente a la fecha de lanzamiento
-      * **Producción lista**
+     * **Título**
+     * **Fecha de lanzamiento**: es equivalente a la fecha de lanzamiento
+     * **Producción lista**
 
      Consulte [Lanzamientos: el orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obtener información sobre el propósito y la interacción de estos campos.
 
@@ -57,7 +66,7 @@ Después de crear un lanzamiento, puede cambiar su nombre y la fecha. También p
 
 ## Descubrimiento del estado de lanzamiento de una página {#discovering-the-launch-status-of-a-page}
 
-Cuando está editando el lanzamiento de una página, la información sobre el lanzamiento aparece en la parte inferior de la pestaña **Versiones** del Sidekick:
+Cuando está editando el lanzamiento de una página, la información sobre el lanzamiento aparece en la parte inferior de la pestaña **Versiones** de Sidekick:
 
 * Nombre del lanzamiento.
 * La hora desde el último cambio.

@@ -1,18 +1,27 @@
 ---
 title: Ampliación de la funcionalidad de búsqueda
-description: Extienda las capacidades de búsqueda de  [!DNL Adobe Experience Manager Assets]  más allá de los valores predeterminados.
+description: Extender las capacidades de búsqueda de [!DNL Adobe Experience Manager Assets] más allá de los valores predeterminados.
 contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 16%
-
+source-wordcount: '830'
+ht-degree: 7%
 ---
-
 # Ampliar búsqueda de recursos {#extending-assets-search}
 
 Puede ampliar las capacidades de búsqueda de [!DNL Adobe Experience Manager Assets]. De serie, [!DNL Experience Manager Assets] busca recursos por cadenas.
@@ -23,7 +32,7 @@ También puede agregar fichas adicionales al panel de administración de [!DNL A
 
 >[!CAUTION]
 >
->A partir de [!DNL Experience Manager] 6.4, la interfaz de usuario clásica queda obsoleta. El Adobe recomienda utilizar la IU táctil. Para personalizar, vea [facetas de búsqueda](/help/assets/search-facets.md).
+>A partir de [!DNL Experience Manager] 6.4, la interfaz de usuario clásica queda obsoleta. Adobe recomienda utilizar la IU táctil. Para personalizar, vea [facetas de búsqueda](/help/assets/search-facets.md).
 
 ## Superposición {#overlaying}
 
@@ -140,7 +149,7 @@ Para generar un predicado de propiedad:
    </script>
    ```
 
-1. Para que el componente esté disponible, hace falta poder editarlo. Para que un componente se pueda editar, en CRXDE, agregue un nodo **cq:editConfig** de tipo principal **cq:EditConfig**. Para poder eliminar párrafos, agregue una propiedad de varios valores **cq:actions** con un único valor de **ELIMINAR**.
+1. Para que el componente esté disponible, hace falta poder editarlo. Para que un componente se pueda editar, en CRXDE, agregue un nodo **cq:editConfig** de tipo principal **cq:EditConfig**. Para poder quitar párrafos, agregue una propiedad de varios valores **cq:actions** con un solo valor de **DELETE**.
 1. Vaya al explorador y en la página de muestra (por ejemplo, **press.html**) cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos de predicado (por ejemplo, **left**).
 
 1. En el modo **Editar**, el nuevo componente ya está disponible en la barra de tareas (que se encuentra en el grupo **Buscar**). Inserte el componente en la columna **Predicados**, escriba una palabra de búsqueda, por ejemplo **Diamante**, y haga clic en la lupa para iniciar la búsqueda.
@@ -244,7 +253,7 @@ Para generar un predicado de grupo:
        });
    ```
 
-1. Para que el componente esté disponible, hace falta poder editarlo. Para que un componente se pueda editar, en CRXDE, agregue un nodo **cq:editConfig** de tipo principal **cq:EditConfig**. Para poder eliminar párrafos, agregue una propiedad de varios valores **cq:actions** con un único valor de **ELIMINAR**.
+1. Para que el componente esté disponible, hace falta poder editarlo. Para que un componente se pueda editar, en CRXDE, agregue un nodo **cq:editConfig** de tipo principal **cq:EditConfig**. Para poder quitar párrafos, agregue una propiedad de varios valores **cq:actions** con un solo valor de **DELETE**.
 1. Vaya al explorador y en la página de muestra (por ejemplo, **press.html**) cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos de predicado (por ejemplo, **left**).
 1. En el modo **Editar**, el nuevo componente ya está disponible en la barra de tareas (que se encuentra en el grupo **Buscar**). Inserte el componente en la columna **Predicados**.
 

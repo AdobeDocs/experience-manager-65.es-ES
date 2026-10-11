@@ -9,7 +9,13 @@ exl-id: f37f239f-065b-44f8-acb1-93485b713b49
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 0%
@@ -32,7 +38,7 @@ Por convención de AEM, la primera página de la aplicación debe ser una redire
 
 La plantilla y el código de componente de la aplicación deben estar en /apps/&lt;brand name>/&lt;app name>. De conformidad con la convención, debe colocar la plantilla y el código del componente en /apps/&lt;brand name>/&lt;app name>. Este patrón debe resultarles familiar a los desarrolladores que ya han trabajado con Site en AEM. Suele ir seguido de /apps/, que está bloqueado para el acceso anónimo de forma predeterminada en instancias de publicación. Por lo tanto, su código JSP sin procesar se oculta de los atacantes potenciales.
 
-Las plantillas específicas de la aplicación se pueden configurar para que solo se presenten mediante el nodo de propiedad `allowedPaths` en la propia plantilla y estableciendo su valor en &#39;/content/mobileapps(/.&ast;)?&#39;, o incluso algo más específico si la plantilla solo debe utilizarse para una sola aplicación. Las propiedades `allowedParents` y `allowedChildren` también se pueden usar para el control detallado de las plantillas disponibles para un autor en función de dónde se esté creando la nueva página.
+Las plantillas específicas de la aplicación se pueden configurar para que solo se presenten mediante el nodo de propiedad `allowedPaths` en la propia plantilla y estableciendo su valor en &#39;/content/mobileapps(/.&amp;ast;)?&#39;, o incluso algo más específico si la plantilla solo debe utilizarse para una sola aplicación. Las propiedades `allowedParents` y `allowedChildren` también se pueden usar para el control detallado de las plantillas disponibles para un autor en función de dónde se esté creando la nueva página.
 
 Al crear un componente de página de aplicación desde cero, se recomienda establecer su propiedad `sling:resourceSuperType` en &quot;mobileapps/components/angular/ng-page&quot;. Esto configura la página para la creación y el procesamiento como una aplicación de una sola página y permite superponer los archivos .jsp que el componente pueda necesitar cambiar. Dado que ng-page no incluye ningún marco de interfaz de usuario, un desarrollador suele terminar superponiendo (al menos) &quot;template.jsp&quot; (superpuesto desde /libs/mobileapps/components/angular/ng-page/template.jsp).
 

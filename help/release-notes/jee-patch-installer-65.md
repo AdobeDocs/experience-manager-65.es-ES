@@ -7,18 +7,32 @@ hide: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 90%
-
 ---
-
 # Programa de instalación de parches de AEM Forms JEE {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
 >
->[Contacte con Asistencia](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home&lang=es#support) para obtener más información o el parche.
+>[Contacte con Asistencia](https://experienceleague.adobe.com/?support-solution=General&support-tab=home&lang=es#support) para obtener más información o el parche.
 
 ## Acerca del programa de instalación de parches {#about-the-patch-installer}
 
@@ -36,15 +50,15 @@ El programa de instalación de parches de AEM 6.5 Forms JEE incluye todos los pr
 1. En el directorio denominado según el sistema operativo que esté utilizando:
 
    * **Windows**
-Vaya al directorio correspondiente del medio de instalación o a la carpeta del disco duro donde copió el programa de instalación y haga doble clic en el archivo aemforms65_cfp_install.exe.
+     Vaya al directorio correspondiente del medio de instalación o a la carpeta del disco duro donde copió el programa de instalación y haga doble clic en el archivo aemforms65_cfp_install.exe.
 
-      * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
-      * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
+     * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Vaya al directorio apropiado y, desde un símbolo del sistema, escriba `./aem65_cfp_install.bin`.
+     Vaya al directorio apropiado y, desde un símbolo del sistema, escriba `./aem65_cfp_install.bin`.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Esto inicia un asistente de instalación que le guiará a través de la instalación.
 
@@ -96,4 +110,4 @@ Si tiene configurada la autenticación SAML y tiene problemas con metadatos de I
 * Seguridad de los documentos
 * Base JEE
 
-[Atención al cliente](https://experienceleague.adobe.com/es?support-solution=General&support-tab=home&lang=es#support)
+[Atención al cliente](https://experienceleague.adobe.com/?support-solution=General&support-tab=home&lang=es#support)

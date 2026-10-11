@@ -8,13 +8,31 @@ exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 82%
-
 ---
-
 # Alojar dos instancias de espacio de trabajo de AEM Forms en un servidor {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
 La instalación y configuración predeterminadas de AEM Forms permiten que solo haya un espacio de trabajo de AEM Forms disponible en el servidor. Sin embargo, es posible que necesite alojar dos instancias diferentes de AEM Forms Workspace en un único servidor de AEM Forms. Se puede acceder a las dos instancias desde direcciones URL diferentes.
@@ -24,7 +42,7 @@ Los administradores de AEM Forms personalizan el espacio de trabajo para crear d
 Siga estos pasos para configurar AEM Forms Workspace.
 
 1. Instale el paquete dev de AEM Forms Workspace en su servidor. Consulte el [paquete dev](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) para obtener instrucciones sobre cómo crearlo.
-1. Inicie sesión en el CRXDE Lite como administrador al obtener acceso a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Inicie sesión en CRXDE Lite como administrador al obtener acceso a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copie el nodo ws en /content y pegue en /content. Cambie el nombre del nodo a ws2. Haga clic en **[!UICONTROL Guardar todo]**. En las propiedades de este nodo, cambie el valor de `sling:resourceType` a ws2. Haga clic en **[!UICONTROL Guardar todo]**.
 
 1. Copie la carpeta ws de /libs y péguela en /apps. Cambie el nombre de la carpeta a ws2. Haga clic en **[!UICONTROL Guardar todo]**.

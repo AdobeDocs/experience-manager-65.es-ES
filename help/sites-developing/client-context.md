@@ -10,13 +10,29 @@ feature: Context Hub,Developing,Personalization
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2996'
+source-wordcount: '3030'
 ht-degree: 1%
-
 ---
-
 # Contexto de cliente en detalle{#client-context-in-detail}
 
 >[!NOTE]
@@ -190,15 +206,15 @@ AEM proporciona los componentes genericstore y genericstoreproperties del almac�
 
 * Pares propiedad-valor: ampliar el componente `GenericStoreProperties`. Este componente procesa automáticamente los almacenes de pares propiedad-valor. Se proporcionan varios puntos de interacción:
 
-   * `prolog.jsp` y `epilog.jsp`: interacción de componentes que permite agregar lógica del lado del servidor antes o después del procesamiento del componente.
+  * `prolog.jsp` y `epilog.jsp`: interacción de componentes que permite agregar lógica del lado del servidor antes o después del procesamiento del componente.
 
 * Datos complejos: ampliar el componente `GenericStore`. El almacén de sesiones necesita un método de &quot;procesador&quot; al que se llame cada vez que se deba representar el componente. La función de procesamiento se llama con dos parámetros:
 
-   * `@param {String} store`
-El almacén que se procesará
+  * `@param {String} store`
+    El almacén que se procesará
 
-   * `@param {String} divId`
-El ID del div en el que se debe procesar el almacén.
+  * `@param {String} divId`
+    El ID del div en el que se debe procesar el almacén.
 
 >[!NOTE]
 >
@@ -618,11 +634,11 @@ Para crear un segundo contexto de cliente, duplique la rama:
 
 * La subcarpeta:
   `/content`
-contiene el contenido del contexto de cliente personalizado.
+  contiene el contenido del contexto de cliente personalizado.
 
 * La carpeta:
   `/contextstores`
-permite definir diferentes configuraciones para las tiendas de contexto.
+  permite definir diferentes configuraciones para las tiendas de contexto.
 
 Para utilizar el contexto de cliente personalizado, edite la propiedad
 `path`

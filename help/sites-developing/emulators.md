@@ -10,20 +10,29 @@ exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '618'
 ht-degree: 0%
-
 ---
-
 # Emuladores{#emulators}
 
 {{ue-over-mobile}}
 
-Adobe Experience Manager AEM () permite a los autores ver una página en un emulador que simula el entorno en el que un usuario final verá la página, como en un dispositivo móvil o en un cliente de correo electrónico.
+Adobe Experience Manager (AEM) permite a los autores ver una página en un emulador que simula el entorno en el que un usuario final verá la página, como en un dispositivo móvil o en un cliente de correo electrónico.
 
-AEM El marco del emulador de:
+El marco del emulador de AEM:
 
 * Proporciona la creación de contenido dentro de una interfaz de usuario (IU) simulada, como un dispositivo móvil o un cliente de correo electrónico (utilizado para crear boletines informativos).
 * Adapta el contenido de la página según la IU simulada.
@@ -46,7 +55,7 @@ Un emulador:
 
 ### Cómo el emulador transforma el contenido {#how-the-emulator-transforms-the-content}
 
-El emulador funciona envolviendo el contenido del cuerpo del HTML en DIV de emulador. Por ejemplo, el siguiente código HTML:
+El emulador funciona envolviendo el contenido del cuerpo de HTML en DIV de emulador. Por ejemplo, el siguiente código HTML:
 
 ```xml
 <body>
@@ -98,7 +107,7 @@ De este modo, se puede controlar el aspecto completo del emulador teniendo clase
 
 >[!NOTE]
 >
->Se recomienda que el HTML del proyecto ajuste el contenido del cuerpo en un solo div, como en el ejemplo anterior. Si el contenido del cuerpo contiene varias etiquetas, puede haber resultados impredecibles.
+>Se recomienda que el proyecto HTML ajuste el contenido del cuerpo en un solo div, como en el ejemplo anterior. Si el contenido del cuerpo contiene varias etiquetas, puede haber resultados impredecibles.
 
 ### Emuladores móviles {#mobile-emulators}
 
@@ -119,14 +128,14 @@ Cuando el componente de página depende del componente de página móvil ( `/lib
 
 * El script de inicio del emulador base móvil define a través de JavaScript:
 
-   * La configuración de todos los emuladores definidos para la página (emulatorConfigs)
-   * El administrador del emulador, que integra la funcionalidad del emulador en la página mediante:
+  * La configuración de todos los emuladores definidos para la página (emulatorConfigs)
+  * El administrador del emulador, que integra la funcionalidad del emulador en la página mediante:
 
-     `emulatorMgr.launch(config)`;
+    `emulatorMgr.launch(config)`;
 
-     El administrador del emulador se define mediante:
+    El administrador del emulador se define mediante:
 
-     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+    `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### Creación de un emulador móvil personalizado {#creating-a-custom-mobile-emulator}
 

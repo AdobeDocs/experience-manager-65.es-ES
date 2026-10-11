@@ -9,13 +9,17 @@ exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
-
 ---
-
 # Añadir Adobe Analytics a la aplicación móvil{#add-adobe-analytics-to-your-mobile-application}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ ht-degree: 0%
 
 ¿Los usuarios están accediendo a todo el contenido? ¿Están abandonando la aplicación y, si es así, dónde? ¿Con qué frecuencia permanecen en la aplicación y con qué frecuencia regresan para utilizarla? ¿Qué cambios puede introducir y luego medir ese aumento de la retención? ¿Qué sucede con las tasas de bloqueo? ¿Se bloquea la aplicación para los usuarios?
 
-Aproveche [Análisis de aplicaciones móviles](https://business.adobe.com/es/products/analytics/mobile-marketing.html) en sus aplicaciones de Adobe Experience Manager (AEM) al integrarse con [Adobe Mobile Services](https://business.adobe.com/es/products/campaign/mobile-marketing.html).
+Aproveche [Análisis de aplicaciones móviles](https://business.adobe.com/products/analytics/mobile-marketing.html) en sus aplicaciones de Adobe Experience Manager (AEM) al integrarse con [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
 
 Instrumente sus aplicaciones de AEM para realizar un seguimiento, generar informes y comprender cómo los usuarios interactúan con su aplicación y contenido móviles, así como para medir métricas clave del ciclo vital como inicios, tiempo en la aplicación y tasa de bloqueo.
 

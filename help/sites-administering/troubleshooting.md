@@ -1,6 +1,6 @@
 ---
 title: Uso de registros
-description: AEM Obtenga información sobre cómo solucionar problemas de los registros de trabajo de la aplicación de.
+description: Obtenga información sobre cómo solucionar problemas de AEM trabajando con registros.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -10,13 +10,22 @@ exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 3%
-
+source-wordcount: '253'
+ht-degree: 5%
 ---
-
 # Uso de registros{#working-with-logs}
 
 Esta sección incluye información detallada sobre los registros disponibles para ayudarle a solucionar problemas.
@@ -25,7 +34,7 @@ Esta sección incluye información detallada sobre los registros disponibles par
 >
 >Para obtener más información sobre los registros, consulte:
 >
->* AEM [Mantenimiento del registro de auditoría en el](/help/sites-administering/operations-audit-log.md)
+>* [Mantenimiento del registro de auditoría en AEM](/help/sites-administering/operations-audit-log.md)
 >* [Trabajando con registros de auditoría y archivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 CRX registra los registros detallados. Después de desempaquetar e iniciar Quickstart, puede encontrar registros en las siguientes ubicaciones:

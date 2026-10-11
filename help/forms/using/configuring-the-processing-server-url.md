@@ -9,21 +9,35 @@ role: Admin,User
 exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 62%
-
+source-wordcount: '242'
+ht-degree: 61%
 ---
-
 # Configurar AEM DS{#configuring-aem-ds-settings}
 
-AEM Este artículo describe cómo configurar el **Servicio de configuración de DS** de. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
+Este artículo describe cómo configurar el **Servicio de configuración de AEM DS**. Esta configuración se puede utilizar en varios escenarios, por ejemplo:
 
 * En Administración de correspondencia
 
-   * Para configurar el flujo de trabajo de AEM Forms
-   * Al utilizar el portal de Forms para el guardado remoto del borrador/envío
+  * Para configurar el flujo de trabajo de AEM Forms
+  * Al utilizar el portal de Forms para el guardado remoto del borrador/envío
 
 * En formularios adaptables, para casos en los que se envía un formulario adaptable desde una instancia de publicación
 
@@ -32,7 +46,7 @@ A continuación se indican los pasos para establecer la **[!UICONTROL Configurac
 1. Abra el Administrador de configuración en la instancia de publicación mediante la URL:\
    *https://localhost:port/system/console/configMgr*.
 
-   ![Configuración de la consola web AEM &#x200B;](assets/web_configuration_console_new.png)
+   ![Configuración de la consola web AEM ](assets/web_configuration_console_new.png)
 
 1. En la **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]**, busque y haga clic en la opción **[!UICONTROL Configuración de AEM DS]**.
 
@@ -44,7 +58,7 @@ A continuación se indican los pasos para establecer la **[!UICONTROL Configurac
 
 1. Agregue la siguiente información en los campos respectivos:
 
-   **[!UICONTROL URL del servidor de procesamiento]**: el servidor de procesamiento es el servidor donde se debe activar el flujo de trabajo de Forms AEM o de la. AEM Puede ser la misma URL que la de la instancia de autor del o que la otra URL del servidor (es decir, https://localhost:port/).
+   **[!UICONTROL URL del servidor de procesamiento]**: el servidor de procesamiento es el servidor donde se debe activar el flujo de trabajo de Forms o AEM. Puede ser la misma URL que la de la instancia de autor de AEM o que la otra URL del servidor (es decir, https://localhost:port/).
 
    **[!UICONTROL Nombre de usuario del servidor de procesamiento]**: nombre de usuario del usuario del flujo de trabajo [en función de la URL del servidor que se utilice]
 

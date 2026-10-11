@@ -9,13 +9,20 @@ exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1512'
 ht-degree: 0%
-
 ---
-
 # Marco del componente social {#social-component-framework}
 
 El marco de trabajo de componentes sociales (SCF) simplifica el proceso de configuración, personalización y ampliación de los componentes de las comunidades en el lado del servidor y del cliente.
@@ -23,7 +30,7 @@ El marco de trabajo de componentes sociales (SCF) simplifica el proceso de confi
 Las ventajas del marco:
 
 * **Funcional**: facilidad de integración predeterminada con poca o ninguna personalización en el 80% de los casos de uso.
-* **Aspirable**: Uso coherente de atributos de HTML para el estilo CSS.
+* **Aspirable**: Uso coherente de los atributos de HTML para el estilo CSS.
 * **Extensible**: La implementación de componentes está orientada a objetos y es ligera en cuanto a lógica empresarial. Es fácil agregar el inicio de sesión empresarial incremental en el servidor.
 * **Flexible**: Plantillas de JavaScript simples sin lógica que se superponen y personalizan fácilmente.
 * **Accesible**: la API HTTP admite la publicación desde cualquier cliente, incluidas las aplicaciones móviles.
@@ -50,19 +57,19 @@ La API de SocialComponent se puede ampliar para proporcionar los datos requerido
 Para personalizar o ampliar los componentes, solo escribe las superposiciones y extensiones en el directorio /apps, lo que simplifica el proceso de actualización a futuras versiones.
 
 * Para el desollado:
-   * Solo [CSS necesita editarse](client-customize.md#skinning-css).
+  * Solo [CSS necesita editarse](client-customize.md#skinning-css).
 * Para el aspecto:
-   * Cambie la plantilla JS y CSS.
+  * Cambie la plantilla JS y CSS.
 * Para Look, Feel y UX:
-   * Cambie la plantilla JS, CSS y [extender/anular JavaScript](client-customize.md#extending-javascript).
-* Para modificar la información disponible para la plantilla JS o para el extremo de GET:
-   * Extender [SocialComponent](server-customize.md#socialcomponent-interface).
+  * Cambie la plantilla JS, CSS y [extender/anular JavaScript](client-customize.md#extending-javascript).
+* Para modificar la información disponible para la plantilla JS o para el extremo GET:
+  * Extender [SocialComponent](server-customize.md#socialcomponent-interface).
 * Para agregar un procesamiento personalizado durante las operaciones:
-   * Escriba una [OperationExtension](server-customize.md#operationextension-class).
+  * Escriba una [OperationExtension](server-customize.md#operationextension-class).
 * Para agregar una operación personalizada:
-   * Crear una [operación de Sling Post](server-customize.md#postoperation-class).
-   * Use [OperationServices](server-customize.md#operationservice-class) existentes según sea necesario.
-   * Agregue código JavaScript para invocar la operación desde el lado del cliente según sea necesario.
+  * Crear una [operación Sling Post](server-customize.md#postoperation-class).
+  * Use [OperationServices](server-customize.md#operationservice-class) existentes según sea necesario.
+  * Agregue código JavaScript para invocar la operación desde el lado del cliente según sea necesario.
 
 ## Marco del lado del servidor {#server-side-framework}
 
@@ -76,13 +83,13 @@ Las clases principales se describen en la página [Personalización del lado del
 
 Visite [Resumen del proveedor de recursos de almacenamiento](srp.md) para obtener más información sobre cómo trabajar con UGC.
 
-### API del HTTP {#http-api}
+### API HTTP {#http-api}
 
 La API HTTP admite la facilidad de personalización y la elección de plataformas de cliente para aplicaciones PhoneGap, aplicaciones nativas y otras integraciones y mezclas. Además, la API HTTP permite que un sitio de la comunidad se ejecute como un servicio sin un cliente, de modo que los componentes de marco de trabajo se puedan integrar en cualquier página web basada en cualquier tecnología.
 
-### API HTTP: solicitudes de GET {#http-api-get-requests}
+### API HTTP: solicitudes GET {#http-api-get-requests}
 
-Para cada SocialComponent, el marco de trabajo proporciona un extremo de API basado en HTTP. Se accede al extremo enviando una solicitud de GET al recurso con un selector + extensión &#39;.social.json&#39;. Con Sling, la solicitud se entrega a `DefaultSocialGetServlet`.
+Para cada SocialComponent, el marco de trabajo proporciona un extremo de API basado en HTTP. Se accede al extremo enviando una petición GET al recurso con un selector + extensión &#39;.social.json&#39;. Con Sling, la solicitud se entrega a `DefaultSocialGetServlet`.
 
 **`DefaultSocialGetServlet`**
 
@@ -94,19 +101,19 @@ Para cada SocialComponent, el marco de trabajo proporciona un extremo de API bas
 
 **`GET Request`**
 
-Un servlet de GET predeterminado escucha solicitudes .social.json a las que el componente social responde con un JSON personalizable.
+Un servlet GET predeterminado escucha solicitudes .social.json a las que el componente social responde con un JSON personalizable.
 
 ![scf-framework](assets/scf-framework.png)
 
-### API HTTP: solicitudes del POST {#http-api-post-requests}
+### API HTTP - Solicitudes POST {#http-api-post-requests}
 
-Además de las operaciones de GET (lectura), el marco de trabajo define un patrón de extremo para habilitar otras operaciones en un componente, como Crear, Actualizar y Eliminar. Estos extremos son API HTTP que aceptan entradas y responden con un código de estado HTTP o con un objeto de respuesta JSON.
+Además de las operaciones GET (lectura), el marco de trabajo define un patrón de extremo para habilitar otras operaciones en un componente, como Crear, Actualizar y Eliminar. Estos extremos son API HTTP que aceptan entradas y responden con un código de estado HTTP o con un objeto de respuesta JSON.
 
 Este patrón de extremo de marco de trabajo hace que las operaciones de CUD sean extensibles, reutilizables y comprobables.
 
 **`POST Request`**
 
-Hay una operación Sling POST:para cada operación de SocialComponent. La lógica empresarial y el código de mantenimiento de cada operación se encapsulan en un OperationService, al que se puede acceder a través de la API HTTP o desde cualquier otro lugar como servicio OSGi. Se proporcionan enlaces que admiten extensiones de operación conectables para acciones antes/después.
+Hay un Sling POST:operation para cada operación de SocialComponent. La lógica empresarial y el código de mantenimiento de cada operación se encapsulan en un OperationService, al que se puede acceder a través de la API HTTP o desde cualquier otro lugar como servicio OSGi. Se proporcionan enlaces que admiten extensiones de operación conectables para acciones antes/después.
 
 ![scf-post-request](assets/scf-post-request.png)
 
@@ -130,7 +137,7 @@ Los scripts HBS son simples, sin lógica, se compilan tanto en el servidor como 
 
 El marco de trabajo proporciona varios [ayudantes de Handlebars](handlebars-helpers.md) que son útiles al desarrollar SocialComponents.
 
-En el servidor, cuando Sling resuelve una solicitud de GET, identifica el script que se utiliza para responder a la solicitud. Si el script es una plantilla HBS (.hbs), Sling delegará la solicitud al motor de Handlebars. El motor de Handlebars obtiene el SocialComponent desde el SocialComponentFactory adecuado, crea un contexto y procesa el HTML.
+En el servidor, cuando Sling resuelve una solicitud GET, identifica el script que se utiliza para responder a la solicitud. Si el script es una plantilla HBS (.hbs), Sling delegará la solicitud al motor de Handlebars. El motor de Handlebars obtiene el SocialComponent desde el SocialComponentFactory adecuado, crea un contexto y procesa el HTML.
 
 ### Sin restricciones de acceso {#no-access-restriction}
 
@@ -154,9 +161,9 @@ El resultado es un nodo secundario JCR bajo un nodo par, que es direccionable po
 
 **Incluir un componente**
 
-Incluir un componente hace referencia al proceso de agregar una referencia a un recurso [&#x200B; &quot;no existente&quot;](srp.md#for-non-existing-resources-ners) (sin nodo JCR) dentro de la plantilla, como el uso de un lenguaje de script.
+Incluir un componente hace referencia al proceso de agregar una referencia a un recurso [ &quot;no existente&quot;](srp.md#for-non-existing-resources-ners) (sin nodo JCR) dentro de la plantilla, como el uso de un lenguaje de script.
 
-A partir de Adobe Experience Manager AEM () 6.1, cuando se incluye dinámicamente un componente en lugar de agregarlo, es posible editar las propiedades del componente en el modo de autor *design*.
+A partir de Adobe Experience Manager (AEM) 6.1, cuando se incluye dinámicamente un componente en lugar de agregarlo, es posible editar las propiedades del componente en el modo de autor *design*.
 
 Solo se pueden incluir dinámicamente algunos de los componentes de AEM Communities. Estos son:
 
@@ -207,7 +214,7 @@ Se recomiendan las siguientes convenciones para definir y utilizar clases CSS:
 Para personalizar el aspecto y el comportamiento de un componente de Communities en el lado del cliente, haga referencia a [Personalizaciones del lado del cliente](client-customize.md), que incluye información sobre:
 
 * [Superposiciones](client-customize.md#overlays)
-* [Extensiones &#x200B;](client-customize.md#extensions)
+* [Extensiones](client-customize.md#extensions)
 * [Marcado de HTML](client-customize.md#htmlmarkup)
 * [Aplicación de máscara CSS](client-customize.md#skinning-css)
 * [Ampliación de JavaScript](client-customize.md#extending-javascript)

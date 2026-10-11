@@ -10,13 +10,20 @@ role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2253'
 ht-degree: 2%
-
 ---
-
 # Funciones de la comunidad{#community-functions}
 
 El tipo de funciones que se esperan de una experiencia de comunidad son bien conocidas. Las funciones de la comunidad están disponibles como funciones de la comunidad. Básicamente, son una o más páginas precableadas para implementar una función de la comunidad, lo que requiere algo más que simplemente agregar un componente a una página en modo de autor. Son los componentes básicos utilizados para definir la estructura de una [plantilla del sitio de la comunidad](/help/communities/sites.md) a partir de la cual se [crean](/help/communities/sites-console.md) los sitios de la comunidad.
@@ -210,7 +217,7 @@ Según la configuración [settings](/help/communities/sites-console.md#groupmana
 
 Cuando se crea un grupo de comunidad, se crea dinámicamente un grupo de miembros para el nuevo grupo, al que se pueden asignar o unir miembros. Para obtener más información, consulte [Administración de usuarios y grupos de usuarios](/help/communities/users.md).
 
-A partir del paquete de funciones 1[&#128279;](/help/communities/deploy-communities.md#latestfeaturepack) de las comunidades se crean grupos de comunidades en el entorno de creación mediante la consola de grupos de [sitios de comunidades](/help/communities/groups.md), y se pueden crear en el entorno de publicación cuando está habilitada.
+A partir del paquete de funciones 1](/help/communities/deploy-communities.md#latestfeaturepack) de las comunidades [se crean grupos de comunidades en el entorno de creación mediante la consola de grupos de [sitios de comunidades](/help/communities/groups.md), y se pueden crear en el entorno de publicación cuando está habilitada.
 
 Cuando se añade a una plantilla, se abre el siguiente cuadro de diálogo:
 

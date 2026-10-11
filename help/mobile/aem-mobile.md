@@ -9,13 +9,17 @@ exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 1%
-
 ---
-
 # AEM Mobile On-Demand {#aem-mobile-on-demand}
 
 {{ue-over-mobile}}
@@ -42,10 +46,10 @@ Un administrador de AEM es responsable de las siguientes tareas al crear una apl
 
 * [Configurando AEM Mobile](/help/mobile/aem-mobile-setup.md) que cubre
 
-   * Aprovisionamiento de AEM Mobile
-   * Creación de proyectos para AEM Mobile
-   * Configuración de un conector de AEM Mobile
-   * Adición de funciones de usuario de AEM Mobile y asignación de permisos
+  * Aprovisionamiento de AEM Mobile
+  * Creación de proyectos para AEM Mobile
+  * Configuración de un conector de AEM Mobile
+  * Adición de funciones de usuario de AEM Mobile y asignación de permisos
 
 * [Configuración de los usuarios y grupos de usuarios](/help/mobile/aem-mobile-configure-users.md)
 * [Vista previa con comprobación preliminar](/help/mobile/aem-mobile-manage-ondemand-services.md)

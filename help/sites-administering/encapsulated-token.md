@@ -1,6 +1,6 @@
 ---
-title: Compatibilidad con tokens encapsulados
-description: AEM Obtenga información acerca de la compatibilidad con tokens encapsulados en el servicio de asistencia de.
+title: Compatibilidad con tókenes encapsulados
+description: Obtenga información acerca de la compatibilidad con tokens encapsulados en AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -9,18 +9,30 @@ exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 0%
-
+source-wordcount: '794'
+ht-degree: 8%
 ---
-
 # Compatibilidad con tokens encapsulados{#encapsulated-token-support}
 
 ## Introducción {#introduction}
 
-AEM De forma predeterminada, utiliza el controlador de autenticación de token para autenticar cada solicitud. Sin embargo, para servir solicitudes de autenticación, el Controlador de autenticación de token requiere acceso al repositorio para cada solicitud. Esto sucede porque las cookies se utilizan para mantener el estado de autenticación. Lógicamente, el estado debe persistir en el repositorio para validar las solicitudes posteriores. De hecho, esto significa que el mecanismo de autenticación es de estado.
+De forma predeterminada, AEM utiliza el Controlador de autenticación de token para autenticar cada solicitud. Sin embargo, para servir solicitudes de autenticación, el Controlador de autenticación de token requiere acceso al repositorio para cada solicitud. Esto sucede porque las cookies se utilizan para mantener el estado de autenticación. Lógicamente, el estado debe persistir en el repositorio para validar las solicitudes posteriores. De hecho, esto significa que el mecanismo de autenticación es de estado.
 
 Esto es de especial importancia para la escalabilidad horizontal. En una configuración de varias instancias como la granja de servidores de publicación que se muestra a continuación, el equilibrio de carga no se puede lograr de una manera óptima. Con la autenticación con estado, el estado de autenticación persistente solo estará disponible en la instancia en la que el usuario se autentique por primera vez.
 
@@ -36,9 +48,9 @@ En caso de que una instancia de publicación deje de estar disponible, todos los
 
 ## Autenticación sin estado con el token encapsulado {#stateless-authentication-with-the-encapsulated-token}
 
-AEM La solución para la escalabilidad horizontal es la autenticación sin estado con el uso de la nueva compatibilidad con token encapsulado en el sistema de autenticación de la base de datos (ENcapsulated Token) de la base de datos de.
+La solución para la escalabilidad horizontal es la autenticación sin estado con el uso de la nueva compatibilidad con tokens encapsulados en AEM.
 
-AEM El token encapsulado es un fragmento de criptografía que permite a los usuarios crear y validar de forma segura la información de autenticación sin conexión, sin acceder al repositorio. De este modo, se puede realizar una solicitud de autenticación en todas las instancias de publicación sin necesidad de conexiones fijas. También tiene la ventaja de mejorar el rendimiento de la autenticación porque no es necesario acceder al repositorio de para cada solicitud de autenticación.
+El token encapsulado es un fragmento de criptografía que permite a AEM crear y validar de forma segura la información de autenticación sin conexión, sin acceder al repositorio. De este modo, se puede realizar una solicitud de autenticación en todas las instancias de publicación sin necesidad de conexiones fijas. También tiene la ventaja de mejorar el rendimiento de la autenticación porque no es necesario acceder al repositorio de para cada solicitud de autenticación.
 
 Puede ver cómo funciona esto en una implementación distribuida geográficamente con autores MongoMK e instancias de publicación TarMK a continuación:
 
@@ -58,25 +70,25 @@ Puede ver cómo funciona esto en una implementación distribuida geográficament
 >
 >* Las sesiones duraderas están habilitadas, o
 >
->* AEM Los usuarios ya se han creado en la cuando se inicia la sincronización. Esto significa que no se admitirán tokens encapsulados en situaciones en las que los controladores **creen** usuarios durante el proceso de sincronización.
+>* Los usuarios ya se han creado en AEM cuando se inicia la sincronización. Esto significa que no se admitirán tokens encapsulados en situaciones en las que los controladores **creen** usuarios durante el proceso de sincronización.
 
 Hay algunas cosas que debe tener en cuenta al configurar el token encapsulado:
 
-1. Debido a la criptografía implicada, todas las instancias deben tener la misma clave HMAC. AEM A partir de la versión 6.3, el material clave ya no se almacena en el repositorio, sino en el sistema de archivos real. Con esto en mente, la mejor manera de replicar las claves es copiarlas del sistema de archivos de la instancia de origen a la de la instancia de destino a la que desee replicar las claves. Consulte más información en &quot;Duplicación de la clave HMAC&quot; a continuación.
+1. Debido a la criptografía implicada, todas las instancias deben tener la misma clave HMAC. A partir de AEM 6.3, el material clave ya no se almacena en el repositorio, sino en el sistema de archivos real. Con esto en mente, la mejor manera de replicar las claves es copiarlas del sistema de archivos de la instancia de origen a la de la instancia de destino a la que desee replicar las claves. Consulte más información en &quot;Duplicación de la clave HMAC&quot; a continuación.
 1. El token encapsulado debe estar habilitado. Esto se puede hacer a través de la consola web.
 
 ### Duplicación de la clave HMAC {#replicating-the-hmac-key}
 
 Para replicar la clave en todas las instancias, debe:
 
-1. AEM Acceda a la instancia de la, normalmente una instancia de autor, que contiene el material clave que se va a copiar;
+1. Acceda a la instancia de AEM, normalmente una instancia de autor, que contiene el material clave que se va a copiar;
 1. Busque el paquete `com.adobe.granite.crypto.file` en el sistema de archivos local. Por ejemplo, en esta ruta:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
    El archivo `bundle.info` dentro de cada carpeta identificará el nombre del paquete.
 
-1. Vaya a la carpeta de datos. Por ejemplo:
+1. Navegue hasta la carpeta de datos. Por ejemplo:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 

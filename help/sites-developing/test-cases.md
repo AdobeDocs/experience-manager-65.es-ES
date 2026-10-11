@@ -1,5 +1,5 @@
 ---
-title: Definición de los casos de prueba
+title: Definición de casos de prueba
 description: Los casos de prueba deben basarse en los casos de uso y en la especificación de requisitos detallada
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
-
+source-wordcount: '532'
+ht-degree: 2%
 ---
-
-# Definición de los casos de prueba{#defining-your-test-cases}
+# Definición de casos de prueba{#defining-your-test-cases}
 
 Los casos de prueba deben basarse en lo siguiente:
 
@@ -50,13 +59,13 @@ Sin embargo, automatizar los casos de prueba es una inversión significativa, po
 
 ## Prueba de aspectos específicos {#testing-specific-aspects}
 
-AEM Al realizar pruebas de la, algunos detalles específicos son de especial interés:
+Al probar AEM, algunos detalles específicos son de especial interés:
 
-**Entornos de autor y Publish**
+**Entornos de creación y publicación**
 
-AEM Aunque se trata en [Entornos](/help/sites-developing/the-basics.md#environments), vale la pena resaltar un factor decisivo de la evaluación con respecto a las pruebas.
+Aunque se trata en [Entornos](/help/sites-developing/the-basics.md#environments), vale la pena destacar un factor decisivo de AEM con respecto a las pruebas.
 
-AEM Considere la posibilidad de utilizar dos aplicaciones:
+Considere AEM como dos aplicaciones:
 
 * el entorno *Author*
 Esta instancia permite a los autores introducir y publicar contenido.
@@ -97,15 +106,15 @@ Asegúrese de que el sitio web sigue estando disponible cuando se apaga un servi
 * **Clústeres**
 Se utiliza para proporcionar lo siguiente:
 
-   * **Conmutación por error**
-Si falla un servidor, los demás servidores del clúster se harán cargo del procesamiento.
+  * **Conmutación por error**
+    Si falla un servidor, los demás servidores del clúster se harán cargo del procesamiento.
 
-   * **Rendimiento**
-Equilibrio de carga con conmutación por error completa aumenta el rendimiento de un clúster.
-Cuando se utiliza para un proyecto de cliente, el clúster debe probarse para confirmar el funcionamiento correcto de la configuración.
+  * **Rendimiento**
+    Equilibrio de carga con conmutación por error completa aumenta el rendimiento de un clúster.
+    Cuando se utiliza para un proyecto de cliente, el clúster debe probarse para confirmar el funcionamiento correcto de la configuración.
 
 ## Prueba de software de terceros {#testing-third-party-software}
 
-AEM Se hará referencia a cualquier software de terceros conectado a la red de proveedores en las especificaciones de requisitos detalladas.
+Se hará referencia a cualquier software de terceros conectado a AEM en las especificaciones detalladas de los requisitos.
 
 Se analizarán todos los ensayos necesarios (en función del ámbito de aplicación definido) y se obtendrán ensayos limpios.

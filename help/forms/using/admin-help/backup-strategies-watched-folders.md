@@ -9,13 +9,27 @@ exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1082'
 ht-degree: 1%
-
 ---
-
 # Estrategias de copia de seguridad para carpetas vigiladas {#backup-strategies-for-watched-folders}
 
 Este contenido describe cómo las carpetas vigiladas se ven afectadas por diferentes escenarios de copia de seguridad y recuperación, las limitaciones y los resultados de estos escenarios y cómo minimizar la pérdida de datos.
@@ -159,11 +173,11 @@ Las siguientes estrategias pueden minimizar la pérdida de datos de la carpeta d
 * Si la copia de seguridad de la carpeta inspeccionada que está disponible es anterior al tiempo que tarda en procesar el trabajo, debe permitir al sistema crear una carpeta inspeccionada y colocar automáticamente los archivos en la carpeta de entrada.
 * Si la última copia de seguridad disponible no es lo suficientemente reciente, el tiempo de copia de seguridad es menor que el tiempo que tarda en procesar los archivos y se restaura la carpeta vigilada, el archivo se manipuló en una de las siguientes fases diferentes:
 
-   * **Fase 1:** en la carpeta de entrada
-   * **Fase 2:** Se copió en la carpeta de fase, pero el proceso aún no se ha invocado
-   * **Fase 3:** copiado en la carpeta de fase y se invoca el proceso
-   * **Fase 4:** manipulación en curso
-   * **Fase 5:** resultados devueltos
+  * **Fase 1:** en la carpeta de entrada
+  * **Fase 2:** Se copió en la carpeta de fase, pero el proceso aún no se ha invocado
+  * **Fase 3:** copiado en la carpeta de fase y se invoca el proceso
+  * **Fase 4:** manipulación en curso
+  * **Fase 5:** resultados devueltos
 
   Si los archivos se encuentran en la fase 1, se manipularán. Si los archivos se encuentran en las fases 2 o 3, colóquelos en la carpeta de entrada para que la manipulación tenga lugar de nuevo.
 

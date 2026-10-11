@@ -10,18 +10,32 @@ role: Admin,User
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 85%
-
+source-wordcount: '377'
+ht-degree: 77%
 ---
-
 # Paquete de compatibilidad{#compatibility-package}
 
 ## Información general {#overview}
 
-La comunicación interactiva es el método predeterminado y recomendado para crear comunicaciones con los clientes en AEM Forms 6.5. Para seguir utilizando cartas en AEM Forms 6.5, debe instalar el último [Paquete de compatibilidad de AEMFD](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html).
+Interactive Communications es la forma predeterminada y recomendada de crear comunicaciones con los clientes en AEM Forms 6.5. Para seguir usando cartas en AEM Forms 6.5, debes instalar el [paquete de compatibilidad de AEMFD](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) más reciente.
 
 El paquete de compatibilidad de AEMFD también le permite [usar los siguientes recursos de AEM Forms 6.4, 6.3 y 6.2 en AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
@@ -57,24 +71,24 @@ Al instalar el paquete Compatibilidad, puede hacer que los siguientes recursos y
 
 * Recursos de Administración de correspondencia de AEM 6.4 y anteriores:
 
-   * [Cartas](../../forms/using/create-letter.md)
-   * [Diccionarios de datos](/help/forms/using/data-dictionary.md)
-   * Fragmentos de documento
+  * [Cartas](../../forms/using/create-letter.md)
+  * [Diccionarios de datos](/help/forms/using/data-dictionary.md)
+  * Fragmentos de documento
 
 * Plantillas de formularios adaptables obsoletas:
 
-   * /libs/fd/af/templates/blankTemplate2
-   * /libs/fd/af/templates/simpleEnrollmentTemplate
-   * /libs/fd/af/templates/simpleEnrollmentTemplate2
-   * /libs/fd/af/templates/surveyTemplate
-   * /libs/fd/af/templates/surveyTemplate2
-   * /libs/fd/af/templates/tabbedEnrollmentTemplate
-   * /libs/fd/af/templates/tabbedEnrollmentTemplate2
-   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
-   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
+  * /libs/fd/af/templates/blankTemplate2
+  * /libs/fd/af/templates/simpleEnrollmentTemplate
+  * /libs/fd/af/templates/simpleEnrollmentTemplate2
+  * /libs/fd/af/templates/surveyTemplate
+  * /libs/fd/af/templates/surveyTemplate2
+  * /libs/fd/af/templates/tabbedEnrollmentTemplate
+  * /libs/fd/af/templates/tabbedEnrollmentTemplate2
+  * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
+  * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
 
 * Páginas obsoletas de formularios adaptables:
 
-   * /libs/fd/af/components/page/survey
-   * /libs/fd/af/components/page/tabbedenrollment
-   * /libs/fd/afaddon/components/page/advancedenrollment
+  * /libs/fd/af/components/page/survey
+  * /libs/fd/af/components/page/tabbedenrollment
+  * /libs/fd/afaddon/components/page/advancedenrollment

@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 83%
-
+source-wordcount: '307'
+ht-degree: 84%
 ---
-
 # Configurar una solución de Administración de correspondencia {#configuring-a-correspondence-management-solution}
 
 ## Definir la URL de instancia de autor para VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
@@ -23,7 +36,7 @@ Siga los siguientes pasos para definir un URL de instancia de autor para la rest
 
 1. Vaya a *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Inicie sesión con las credenciales de usuario de la consola de administración OSGi. Las credenciales predeterminadas son admin/admin.
 1. Busque y haga clic en el icono **[!UICONTROL Editar]** junto a la configuración **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]**.
-1. En el campo **[!UICONTROL URL de autor de VersionRestoreManager]** especifique la dirección URL de la instancia de autor de VersionRestoreManager.
+1. En el campo **[!UICONTROL URL del autor de VersionRestoreManager]** especifique la dirección URL de la instancia de autor de VersionRestoreManager.
 
    **Cadena de URL**:
 
@@ -31,13 +44,13 @@ Siga los siguientes pasos para definir un URL de instancia de autor para la rest
 
    >[!NOTE]
    >
-   >Si hay varias instancias de autor (agrupadas) delante de un equilibrador de carga, especifique la URL del equilibrador de carga en el campo **[!UICONTROL URL de autor de VersionRestoreManager]**.
+   >Si hay varias instancias de autor (agrupadas) delante de un equilibrador de carga, especifique la URL del equilibrador de carga en el campo **[!UICONTROL URL del autor de VersionRestoreManager]**.
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
 ## Definir la URL de instancia de publicación para ActivationManagerImpl (administrador de activación de instancias públicas) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
-Siga estos pasos para poder definir la URL de instancia de Publish para el administrador de activación de instancias públicas:
+Siga estos pasos para poder definir la URL de instancia de publicación para el administrador de activación de instancias públicas:
 
 1. Vaya a *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Inicie sesión con las credenciales de usuario de la consola de administración OSGi. Las credenciales predeterminadas son admin/admin.
 1. Busque y haga clic en el icono **[!UICONTROL Editar]** junto a la configuración **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]**.

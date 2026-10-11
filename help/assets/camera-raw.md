@@ -1,21 +1,30 @@
 ---
-title: "Compatibilidad de [!DNL Adobe Camera Raw] para procesar recursos digitales"
-description: Aprenda a habilitar la compatibilidad con  [!DNL Adobe Camera Raw] en [!DNL Adobe Experience Manager Assets]
+title: Compatibilidad con [!DNL Adobe Camera Raw] para procesar recursos digitales
+description: Obtenga información sobre cómo habilitar la compatibilidad con [!DNL Adobe Camera Raw] en [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 0%
-
+source-wordcount: '396'
+ht-degree: 3%
 ---
-
 # Procesar imágenes con [!DNL Adobe Camera Raw] {#camera-raw-support}
 
-Puede habilitar la compatibilidad con [!DNL Adobe Camera Raw] para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad es compatible con [!DNL Adobe Experience Manager Assets] mediante el [paquete Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible en Distribución de software.
+Puede habilitar la compatibilidad con [!DNL Adobe Camera Raw] para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad es compatible con [!DNL Adobe Experience Manager Assets] mediante el [paquete de Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible en Distribución de software.
 
 >[!NOTE]
 >
@@ -43,10 +52,10 @@ Para habilitar la compatibilidad con [!DNL Camera Raw] en [!DNL Experience Manag
    * **[!UICONTROL Tipos MIME]**: `image/dng` y `image/x-raw-(.*)`
    * **[!UICONTROL Comando]**:
 
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
-      * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
+     * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
 
    ![chlimage_1-130](assets/chlimage_1-336.png)
 
@@ -54,9 +63,9 @@ Para habilitar la compatibilidad con [!DNL Camera Raw] en [!DNL Experience Manag
 
 >[!NOTE]
 >
->Asegúrese de que la configuración anterior sea la misma que la del **[!UICONTROL Recurso de actualización DAM de muestra con paso de control Camera Raw y DNG]**.
+>Asegúrese de que la configuración anterior sea la misma que la configuración del **[!UICONTROL Recurso de actualización DAM de muestra con Camera Raw y el paso de administración DNG]**.
 
-Ahora puede importar archivos RAW de cámara en Assets. Después de instalar el paquete Camera Raw y configurar el flujo de trabajo necesario, la opción **[!UICONTROL Ajuste de imagen]** aparece en la lista de paneles laterales.
+Ahora puede importar archivos RAW de cámara en Assets. Después de instalar el paquete de Camera Raw y configurar el flujo de trabajo necesario, la opción **[!UICONTROL Ajuste de imagen]** aparece en la lista de paneles laterales.
 
 ![chlimage_1-131](assets/chlimage_1-337.png)
 

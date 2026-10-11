@@ -9,13 +9,17 @@ exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 2%
-
 ---
-
 # Configuración de AEM Mobile{#aem-mobile-setup}
 
 {{ue-over-mobile}}
@@ -36,11 +40,11 @@ Para empezar a configurar AEM Mobile, debe hacer lo siguiente:
 
 * **Generar el ID de dispositivo y el token de dispositivo**: Una vez que haya recibido la clave de API, puede generar el ID de dispositivo y el token de dispositivo. Vaya a `https://aex.aemmobile.adobe.com` y haga lo siguiente:
 
-   * Proporcione la clave API
-   * Inicie sesión con un Adobe ID que haya agregado a un proyecto de AEM Mobile con los siguientes permisos (consulte los pasos a continuación para crear un proyecto)
+  * Proporcione la clave API
+  * Inicie sesión con un Adobe ID que haya agregado a un proyecto de AEM Mobile con los siguientes permisos (consulte los pasos a continuación para crear un proyecto)
 
-      * Administración > Administrar proyectos y usuarios
-      * Contenido > Añadir y editar contenido, Eliminar contenido, Ver contenido, Publicar contenido
+    * Administración > Administrar proyectos y usuarios
+    * Contenido > Añadir y editar contenido, Eliminar contenido, Ver contenido, Publicar contenido
 
 Si se cumplen todas las condiciones, se generan un ID de dispositivo y un token de dispositivo.
 

@@ -10,20 +10,27 @@ role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 2%
-
 ---
-
 # Plantillas de grupo {#group-templates}
 
 La consola de plantillas de grupo es similar a la consola [Plantillas de sitio](/help/communities/sites.md). Ambos son modelos para un conjunto de páginas precableadas y funciones que forman un sitio de la comunidad. La diferencia es que una plantilla de sitio es para la comunidad principal y una plantilla de grupo es para un grupo de comunidad, una subcomunidad anidada dentro de la comunidad principal.
 
 Un grupo de comunidad se incorpora a una plantilla de sitio al incluir la función [Grupos](/help/communities/functions.md#groups-function) (que puede no ser la primera ni la única función de la plantilla).
 
-A partir del paquete de características 1[&#128279;](/help/communities/deploy-communities.md#latestfeaturepack) de Communities es posible anidar grupos incluyendo la función Grupos dentro de una plantilla de grupo.
+A partir del paquete de características 1](/help/communities/deploy-communities.md#latestfeaturepack) de Communities [es posible anidar grupos incluyendo la función Grupos dentro de una plantilla de grupo.
 
 En el momento en que se realiza una acción para crear un grupo de comunidad, se selecciona la plantilla (estructura) del grupo. La selección depende de cómo se configuró la función Grupos cuando se agregó al sitio o a la plantilla del grupo.
 

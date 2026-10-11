@@ -10,13 +10,24 @@ exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2898'
 ht-degree: 3%
-
 ---
-
 # Uso de bibliotecas del lado del cliente{#using-client-side-libraries}
 
 Los sitios web modernos dependen en gran medida del procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. Organizar y optimizar el servicio de este código puede ser un problema complicado.
@@ -66,7 +77,7 @@ Como HTL es la tecnología preferida para desarrollar sitios de AEM, HTL debe ut
 
 ### Uso de HTL {#using-htl}
 
-En HTL, las bibliotecas de cliente se cargan a través de una plantilla de ayuda proporcionada por AEM, a la que se puede acceder mediante [`data-sly-use`](https://helpx.adobe.com/es/experience-manager/htl/using/block-statements.html#use). Hay tres plantillas disponibles en este archivo a las que se puede llamar mediante [`data-sly-call`](https://helpx.adobe.com/es/experience-manager/htl/using/block-statements.html#template-call):
+En HTL, las bibliotecas de cliente se cargan a través de una plantilla de ayuda proporcionada por AEM, a la que se puede acceder mediante [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Hay tres plantillas disponibles en este archivo a las que se puede llamar mediante [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css**: carga solo los archivos CSS de las bibliotecas de cliente a las que se hace referencia.
 * **js** - Carga solamente los archivos JavaScript de las bibliotecas cliente a las que se hace referencia.
@@ -74,7 +85,7 @@ En HTL, las bibliotecas de cliente se cargan a través de una plantilla de ayuda
 
 Cada plantilla de ayuda espera una opción `categories` para hacer referencia a las bibliotecas de cliente deseadas. Esa opción puede ser una matriz de valores de cadena o una cadena que contenga una lista de valores separados por comas.
 
-Para obtener más información y un ejemplo de uso, consulte el documento [Introducción al lenguaje de plantilla de HTML](https://helpx.adobe.com/es/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Para obtener más información y un ejemplo de uso, consulte el documento [Introducción al lenguaje de plantilla de HTML](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### Uso de JSP {#using-jsp}
 

@@ -9,7 +9,18 @@ feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 2%
@@ -178,7 +189,7 @@ Se recomienda clonar el sistema de producción y crear el índice sin conexión 
 
 ### Preparar un Runbook y una ejecución de prueba {#prepare-a-runbook-and-trial-run}
 
-Se recomienda preparar un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=es#building-the-upgrade-and-rollback-runbook) y realizar algunas pruebas antes de ejecutar la actualización en producción.
+Se recomienda preparar un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) y realizar algunas pruebas antes de ejecutar la actualización en producción.
 
 ### Modo de recorrido de documentos con indexación sin conexión {#doc-traversal-mode-with-offline-indexing}
 

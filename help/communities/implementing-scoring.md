@@ -11,13 +11,20 @@ role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2911'
+source-wordcount: '2919'
 ht-degree: 2%
-
 ---
-
 # Puntuación y distintivos de comunidades {#communities-scoring-and-badges}
 
 ## Información general {#overview}
@@ -68,7 +75,7 @@ En la versión se incluyen tres distintivos basados en funciones:
 * **administrador de grupo**
   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
-* **miembro con privilegios**
+* **miembro privilegiado**
   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
   ![insignias asignadas](assets/assigned-badges.png)
@@ -164,8 +171,8 @@ Las reglas de puntuación se heredan, pero no son aditivas. Por ejemplo:
 * Una acción en un componente de página 2 invoca rule1 y rule2.
 * Si ambas reglas contienen subreglas aplicables para el mismo `topic/verb`:
 
-   * Solo la subregla de rule2 afecta a la puntuación.
-   * No se añaden las puntuaciones de ambas subreglas.
+  * Solo la subregla de rule2 afecta a la puntuación.
+  * No se añaden las puntuaciones de ambas subreglas.
 
 Cuando hay más de una regla de puntuación, las puntuaciones se mantienen por separado para cada regla.
 
@@ -181,7 +188,8 @@ Las puntuaciones se almacenan en SRP.
 >
 >Un ejemplo de lo que *no* debe hacer:
 >
->/libs/settings/community/scoring/rules/site1/forums-scoring>/libs/settings/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### Subreglas de puntuación {#scoring-sub-rules}
 
@@ -274,18 +282,18 @@ En la versión se incluyen dos reglas de puntuación para la [Función Foro](/he
 1. /libs/settings/community/scoring/rules/comments-scoring
 
    * subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/member-comment-create
-/libs/settings/community/scoring/rules/sub-rules/member-receive-vote
-/libs/settings/community/scoring/rules/sub-rules/member-given-vote
-/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
+     /libs/settings/community/scoring/rules/sub-rules/member-comment-create
+     /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-given-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 1. /libs/settings/community/scoring/rules/forums-scoring
 
    * subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/member-forum-create
-/libs/settings/community/scoring/rules/sub-rules/member-receive-vote
-/libs/settings/community/scoring/rules/sub-rules/member-given-vote
-/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
+     /libs/settings/community/scoring/rules/sub-rules/member-forum-create
+     /libs/settings/community/scoring/rules/sub-rules/member-receive-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-given-vote
+     /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 **Notas:**
 
@@ -296,7 +304,7 @@ En la versión se incluyen dos reglas de puntuación para la [Función Foro](/he
 * `sub-rules` se puede compartir entre varias reglas de puntuación.
 * `rules` debe estar en una ubicación de repositorio con permiso de lectura para todos.
 
-   * Los nombres de las reglas deben ser únicos independientemente de la ubicación.
+  * Los nombres de las reglas deben ser únicos independientemente de la ubicación.
 
 ### Activar reglas de puntuación personalizadas {#activating-custom-scoring-rules}
 
@@ -315,15 +323,15 @@ Las reglas para el distintivo consisten en una propiedad obligatoria `thresholds
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * Se otorga una insignia de bronce por ganar un punto.
+  * Se otorga una insignia de bronce por ganar un punto.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
-   * Se otorga una insignia de plata cuando se han acumulado 60 puntos.
+  * Se otorga una insignia de plata cuando se han acumulado 60 puntos.
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-   * Se otorga una insignia de oro cuando se han acumulado 80 puntos.
+  * Se otorga una insignia de oro cuando se han acumulado 80 puntos.
 
 Las reglas de distintivos están emparejadas con las reglas de puntuación, que determinan cómo se acumulan los puntos. Consulte la sección titulada [Aplicar reglas al contenido](#apply-rules-to-content).
 
@@ -378,7 +386,7 @@ Esta versión incluye dos reglas de identificación que corresponden a las [regl
 * `rules` nodos son de tipo cq:Page.
 * `rules` debe estar en una ubicación de repositorio con permiso de lectura para todos.
 
-   * Los nombres de las reglas deben ser únicos independientemente de la ubicación.
+  * Los nombres de las reglas deben ser únicos independientemente de la ubicación.
 
 ### Activar reglas de distintivos personalizadas {#activating-custom-badging-rules}
 
@@ -581,29 +589,29 @@ Es posible probar rápidamente la puntuación y la insignia usando el sitio [Tut
 * Acceda a CRXDE Lite en Autor.
 * Vaya a la página base:
 
-   * /content/sites/engage/en/jcr:content
+  * /content/sites/engage/en/jcr:content
 
 * Agregue la propiedad badgingRules:
 
-   * **Nombre**: `badgingRules`
-   * **Tipo**: `String`
-   * Seleccionar **Multi**
-   * Seleccionar **Agregar**
-   * Ingresar `/libs/settings/community/badging/rules/forums-badging`
-   * Seleccionar **+**
-   * Ingresar `/libs/settings/community/badging/rules/comments-badging`
-   * Seleccionar **Aceptar**
+  * **Nombre**: `badgingRules`
+  * **Tipo**: `String`
+  * Seleccionar **Multi**
+  * Seleccionar **Agregar**
+  * Ingresar `/libs/settings/community/badging/rules/forums-badging`
+  * Seleccionar **+**
+  * Ingresar `/libs/settings/community/badging/rules/comments-badging`
+  * Seleccionar **Aceptar**
 
 * Agregue la propiedad scoringRules:
 
-   * **Nombre**: `scoringRules`
-   * **Tipo**: `String`
-   * Seleccionar **Multi**
-   * Seleccionar **Agregar**
-   * Ingresar `/libs/settings/community/scoring/rules/forums-scoring`
-   * Seleccionar **+**
-   * Ingresar `/libs/settings/community/scoring/rules/comments-scoring`
-   * Seleccionar **Aceptar**
+  * **Nombre**: `scoringRules`
+  * **Tipo**: `String`
+  * Seleccionar **Multi**
+  * Seleccionar **Agregar**
+  * Ingresar `/libs/settings/community/scoring/rules/forums-scoring`
+  * Seleccionar **+**
+  * Ingresar `/libs/settings/community/scoring/rules/comments-scoring`
+  * Seleccionar **Aceptar**
 
 * Seleccione **Guardar todo**.
 
@@ -614,13 +622,13 @@ A continuación, asegúrese de que los componentes foro y comentarios permiten q
 * Nuevamente con CRXDE Lite.
 * Navegación al componente del foro
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+  * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
 * Agregue la propiedad booleana allowBadges, si es necesario, y asegúrese de que sea verdadera.
 
-   * **Nombre**: `allowBadges`
-   * **Tipo**: `Boolean`
-   * **Valor**: `true`
+  * **Nombre**: `allowBadges`
+  * **Tipo**: `Boolean`
+  * **Valor**: `true`
 
 ![test-forum-component](assets/test-forum-component.png)
 
@@ -633,7 +641,7 @@ Finalmente,
 * Publicar un nuevo tema de foro.
 * Se debe actualizar la página para que se muestre el distintivo.
 
-   * Cierre la sesión e inicie sesión como otro miembro de la comunidad (por ejemplo: aaron.mcdonald@mailinator.com/password).
+  * Cierre la sesión e inicie sesión como otro miembro de la comunidad (por ejemplo: aaron.mcdonald@mailinator.com/password).
 
 * Seleccione el foro.
 

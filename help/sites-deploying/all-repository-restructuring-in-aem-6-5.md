@@ -9,13 +9,22 @@ exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
 solution: Experience Manager, Experience Manager Sites
 feature: Upgrading
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2770'
 ht-degree: 4%
-
 ---
-
 # Reestructuración de repositorios comunes en AEM 6.5 {#common-repository-restructuring-in-aem}
 
 Como se describe en la página principal [Reestructuración del repositorio en AEM 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a AEM 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que pueden afectar a todas las soluciones. Algunos cambios requieren esfuerzo durante el proceso de actualización de AEM 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
@@ -189,7 +198,7 @@ Es decir, el `sling:resourceType` de la configuración de ContextHub debe ser re
    <td><strong>Directrices de reestructuración</strong></td>
    <td><p>Cualquier script de flujo de trabajo nuevo o modificado debe migrarse a la nueva ubicación y los modelos de flujo de trabajo de referencia deben actualizarse para reflejar la nueva ubicación.</p>
     <ol>
-     <li>Copie cualquier script de flujo de trabajo nuevo o modificado de la ubicación anterior a la nueva ubicación.
+     <li>Copie cualquier script de flujo de trabajo nuevo o modificado de la ubicación anterior a la nueva ubicación.<br />
       <ul>
        <li><code>/apps/workflow/scripts</code> debe mantenerse en SCM.</li>
       </ul> </li>
@@ -581,7 +590,8 @@ Es decir, el `sling:resourceType` de la configuración de ContextHub debe ser re
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td><p>Al reiniciar el paquete OSGi de etiquetado comunitario de día, solo se registrará la nueva ubicación como raíz de etiqueta si la ubicación anterior está vacía.</p> <p>Las referencias a la ubicación anterior seguirán funcionando después de migrar a la nueva ubicación para todas las funcionalidades que utilicen la API TagManager de AEM para la resolución de etiquetas.</p> <p>Cualquier código personalizado que haga referencia explícita a la ruta de acceso <code>/etc/tags</code> debe actualizarse a <span class="code">/content/<code>
+   <td><p>Al reiniciar el paquete OSGi de etiquetado comunitario de día, solo se registrará la nueva ubicación como raíz de etiqueta si la ubicación anterior está vacía.</p> <p>Las referencias a la ubicación anterior seguirán funcionando después de migrar a la nueva ubicación para todas las funcionalidades que utilicen la API TagManager de AEM para la resolución de etiquetas.</p> <p>Cualquier código personalizado que haga referencia explícita a la ruta de acceso <code>/etc/tags</code> debe actualizarse a <span class="code">/content/
+      <code>
        cq
       </code>
       <code>

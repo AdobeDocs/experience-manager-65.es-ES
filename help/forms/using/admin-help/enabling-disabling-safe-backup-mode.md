@@ -1,6 +1,6 @@
 ---
 title: Habilitar y deshabilitar el modo de copia de seguridad
-description: AEM En la página Configuración de copia de seguridad, puede utilizar formularios en modo de copia de seguridad segura para realizar copias de seguridad fiables de la base de datos y del directorio de almacenamiento global de documentos (GDS) (GDS). Obtenga información sobre cómo habilitar y deshabilitar el modo de copia de seguridad segura.
+description: En la página Configuración de copia de seguridad, puede utilizar los formularios de AEM en el modo de copia de seguridad segura para poder realizar copias de seguridad fiables de la base de datos y del directorio de almacenamiento global de documentos (GDS) (GDS). Obtenga información sobre cómo habilitar y deshabilitar el modo de copia de seguridad segura.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -9,22 +9,36 @@ exl-id: f0ab712f-ecd9-4be8-a7a5-fd1a7a8c9a0b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 5%
-
 ---
-
 # Habilitar y deshabilitar el modo de copia de seguridad {#enabling-and-disabling-safe-backup-mode}
 
 >[!NOTE]
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-AEM En la página Configuración de copia de seguridad, puede utilizar formularios en modo de copia de seguridad segura para realizar copias de seguridad fiables de la base de datos y del directorio de almacenamiento global de documentos (GDS) (GDS).
+En la página Configuración de copia de seguridad, puede utilizar los formularios de AEM en el modo de copia de seguridad segura para poder realizar copias de seguridad fiables de la base de datos y del directorio de almacenamiento global de documentos (GDS) (GDS).
 
-AEM Mientras que los formularios de datos se encuentran en modo de copia de seguridad seguro, funcionan normalmente, excepto que no eliminan activamente los archivos del directorio GDS.
+Mientras los formularios AEM Forms están en modo de copia de seguridad segura, funcionan normalmente, excepto que no quitan activamente los archivos del directorio GDS.
 
 >[!NOTE]
 >

@@ -6,13 +6,17 @@ exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 2%
-
 ---
-
 # AEM Mobile: Preparación para el RGPD {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -29,7 +33,7 @@ AEM Mobile está preparado para ayudar a los clientes con sus obligaciones de cu
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-El producto de publicación digital de Adobe (que precede a AEM Mobile) admite las iniciativas de preparación para el RGPD de Adobe. Consulte [https://business.adobe.com/es/privacy/general-data-protection-regulation.html](https://business.adobe.com/es/privacy/general-data-protection-regulation.html). A continuación se proporcionan detalles específicos sobre la compatibilidad con las funciones relevantes del RGPD en el producto Digital Publishing Suite, incluido cómo trabajar con Adobe para iniciar solicitudes de RGPD.
+El producto de publicación digital de Adobe (que precede a AEM Mobile) admite las iniciativas de preparación para el RGPD de Adobe. Consulte [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). A continuación se proporcionan detalles específicos sobre la compatibilidad con las funciones relevantes del RGPD en el producto Digital Publishing Suite, incluido cómo trabajar con Adobe para iniciar solicitudes de RGPD.
 
 Para asegurarse de que no confunde AEM Mobile con el producto Digital Publishing Suite anterior, puede iniciar sesión en el producto Digital Publishing Suite aquí:
 

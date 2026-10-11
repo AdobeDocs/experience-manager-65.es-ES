@@ -9,13 +9,22 @@ exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2326'
 ht-degree: 0%
-
 ---
-
 # Copia de seguridad y restauración{#backup-and-restore}
 
 Existen dos formas de realizar copias de seguridad y restaurar el contenido del repositorio en AEM:
@@ -192,7 +201,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->También se puede activar una copia de seguridad [&#x200B; con los MBeans proporcionados por AEM](/help/sites-administering/jmx-console.md).
+>También se puede activar una copia de seguridad [ con los MBeans proporcionados por AEM](/help/sites-administering/jmx-console.md).
 
 ### Copia de seguridad de instantáneas del sistema {#filesystem-snapshot-backup}
 

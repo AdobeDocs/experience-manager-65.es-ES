@@ -1,17 +1,31 @@
 ---
-title: Notas de la versión generales de  [!DNL Adobe Experience Manager]  6.5
+title: Notas de la versión generales de [!DNL Adobe Experience Manager] 6.5
 description: Notas de la versión de [!DNL Adobe Experience Manager] 6.5 que describen la información de la versión, las novedades, la instalación y las listas de cambios detalladas.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 96%
-
 ---
-
 # Notas de la versión generales de [!DNL Adobe Experience Manager] 6.5{#general-release-notes-for-adobe-experience-manager}
 
 ## Información de la versión {#release-information}
@@ -246,12 +260,12 @@ Para obtener más información sobre los cambios en AEM Screens, consulte las no
 
 * La integración de Adobe Target ahora utiliza la API de Target Standard. Las versiones anteriores de AEM emplean la API HTTP de Target Classic, que ahora está en desuso.
 * Se ha incluido la versión 63 de Adobe Target `mbox.js`. Adobe recomienda cambiar la implementación a `at.js` v1.x.
-* Ahora se ha incluido la versión 1.5.0 de `at.js`. Adobe recomienda usar [Adobe Experience Platform Launch](https://business.adobe.com/es/products/experience-platform/launch.html?lang=es) para aprovisionar `at.js` v1.x en el sitio.
+* Ahora se ha incluido la versión 1.5.0 de `at.js`. Adobe recomienda usar [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html?lang=es) para aprovisionar `at.js` v1.x en el sitio.
 
 #### AEM y Adobe Analytics {#aem-amp-adobe-analytics}
 
 * Se ha incluido `s_code.js` H.27.5. Adobe recomienda cambiar la implementación a `AppMeasurement.js`
-* Se ha incluido `AppMeasurement.js` v1.8.0. Adobe recomienda usar [Adobe Experience Platform Launch](https://business.adobe.com/es/products/experience-platform/launch.html?lang=es) para aprovisionar AppMeasurement.js en el sitio.
+* Se ha incluido `AppMeasurement.js` v1.8.0. Adobe recomienda usar [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html?lang=es) para aprovisionar AppMeasurement.js en el sitio.
 
 #### AEM y Commerce {#aem-commerce}
 
@@ -435,7 +449,7 @@ Consulte el [Resumen de las nuevas funciones y mejoras de AEM 6.5 Forms](/help/f
 
 Adobe utiliza un modelo de desarrollo centrado en el cliente que permite a los clientes contribuir en todas las etapas del proceso, durante la especificación, el desarrollo y las pruebas. Agradecemos a todos los clientes y socios que hayan contribuido en este proceso.
 
-Adobe dispone de los procedimientos y procesos para permitir la recopilación, la priorización y el seguimiento de la resolución de errores centrada en el cliente y el desarrollo de solicitudes de mejora. El [Portal de asistencia de Experience Manager](https://experienceleague.adobe.com/es?support-solution=Experience+Manager?lang=es#support) está integrado con el sistema de seguimiento de defectos y mejoras de Adobe. El equipo de Asistencia al cliente identifica y resuelve las preguntas del cliente siempre que es posible. Cuando se pasa a I+D, toda la información del cliente se recopila y se utiliza con fines de priorización y creación de informes. En el desarrollo, se da prioridad a la asistencia de pago, los problemas de garantía y las mejoras financiadas por el cliente.
+Adobe dispone de los procedimientos y procesos para permitir la recopilación, la priorización y el seguimiento de la resolución de errores centrada en el cliente y el desarrollo de solicitudes de mejora. El [Portal de asistencia de Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager?lang=es#support) está integrado con el sistema de seguimiento de defectos y mejoras de Adobe. El equipo de Asistencia al cliente identifica y resuelve las preguntas del cliente siempre que es posible. Cuando se pasa a I+D, toda la información del cliente se recopila y se utiliza con fines de priorización y creación de informes. En el desarrollo, se da prioridad a la asistencia de pago, los problemas de garantía y las mejoras financiadas por el cliente.
 
 Este proceso de priorización ha dado lugar a más de 750 cambios centrados en el cliente corregidos en AEM 6.5.
 

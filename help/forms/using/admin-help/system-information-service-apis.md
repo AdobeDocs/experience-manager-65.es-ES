@@ -9,13 +9,27 @@ exl-id: 4da96c8f-8bd0-4cad-9087-18e324f084e7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 3%
-
+source-wordcount: '336'
+ht-degree: 2%
 ---
-
 # API del servicio de información del sistema {#system-information-service-apis}
 
 El servicio de información del sistema proporciona un conjunto de API de REST para recuperar información. La siguiente tabla proporciona información detallada sobre las API:
@@ -52,7 +66,7 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.services</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.services</p></td>
-   <td><p>AEM Recupera el estado y los parámetros de configuración de los servicios de formularios de.</p></td>
+   <td><p>Recupera el estado y los parámetros de configuración de los servicios de AEM Forms.</p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.vitalDetails</p></td>
@@ -86,7 +100,7 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.licenseInfo</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.licenseInfo</p></td>
-   <td><p>AEM Recupera la información de la versión y la licencia de los componentes de formularios instalados de la. </p></td>
+   <td><p>Recupera la información de versión y licencia de los componentes de formularios AEM instalados. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfNo.serverConfig</p></td>

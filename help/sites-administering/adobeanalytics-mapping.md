@@ -10,13 +10,22 @@ exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1461'
 ht-degree: 1%
-
 ---
-
 # Asignación de datos de componente con propiedades de Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
 Agregue componentes al marco de trabajo que recopilen los datos para enviarlos a Adobe Analytics. Los componentes diseñados para recopilar datos de análisis almacenan los datos en la **variable CQ** correspondiente. Cuando se agrega un componente de este tipo a un marco de trabajo, el marco de trabajo muestra la lista de variables de CQ para que pueda agregarlas a la **variable de Analytics** correspondiente.
@@ -180,25 +189,26 @@ Tomando la imagen anterior como ejemplo, la **vista de AEM** tiene las siguiente
 
    * **Tráfico**:
 
-      * Variable de tráfico (`prop1`) asignada a una variable de CQ (`eventdata.downloadLink`)
+     * Variable de tráfico (`prop1`) asignada a una variable de CQ (`eventdata.downloadLink`)
 
-      * Cuando el componente tiene un candado junto a él, significa que se hereda de un marco principal y, por lo tanto, no se puede editar
+     * Cuando el componente tiene un candado junto a él, significa que se hereda de un marco principal y, por lo tanto, no se puede editar
 
    * **Conversión**:
 
-      * Variable de conversión (`eVar1`) asignada a una variable de CQ (`pagedata.title`)
+     * Variable de conversión (`eVar1`) asignada a una variable de CQ (`pagedata.title`)
 
-      * La variable de conversión (`eVar3`) asignada a una expresión de JavaScript se agregó en línea al hacer doble clic en el campo de la variable CQ e ingresar el código manualmente
+     * La variable de conversión (`eVar3`) asignada a una expresión de JavaScript se agregó en línea al hacer doble clic en el campo de la variable CQ e ingresar el código manualmente
 
    * **Evento**:
 
-      * Variable de evento (`event1`) asignada a un evento CQ ( `eventdata.events.pageView`)
+     * Variable de evento (`event1`) asignada a un evento CQ ( `eventdata.events.pageView`)
 
 >[!NOTE]
 >
 >La columna de variable CQ de cualquier tabla también se puede rellenar en línea, haciendo doble clic en el campo y agregándole texto. Estos campos aceptan JavaScript como entrada.
 >
->Por ejemplo, junto a `prop3` puede agregar:> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>Por ejemplo, junto a `prop3` puede agregar lo siguiente:
+>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >para enviar el *título* de una página concatenada con su *sección del sitio* usando *:* (dos puntos) y con el prefijo *Adobe* como `prop3`
 >
 

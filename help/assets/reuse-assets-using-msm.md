@@ -8,18 +8,31 @@ feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3312'
 ht-degree: 9%
-
 ---
-
 # Reutilizar recursos usando MSM para [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=es) |
+| AEM as a Cloud Service | [Haga clic aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 La funcionalidad Administrador de varios sitios (MSM) en [!DNL Adobe Experience Manager] permite a los usuarios reutilizar contenido creado una vez y reutilizado en varias ubicaciones web. Lo mismo está disponible para los recursos digitales que MSM para la funcionalidad [!DNL Assets]. Con MSM para [!DNL Assets], puede:
@@ -261,37 +274,37 @@ Puede deshacer todas las modificaciones locales y revertir el recurso al estado 
 
 ## Quitar relación activa {#detach}
 
-Puede eliminar por completo la relación entre un origen y una Live Copy mediante la acción Desasociar. La Live Copy se convierte en un recurso o carpeta independiente después de desasociarse. Se muestra como un nuevo recurso en la interfaz [!DNL Experience Manager], inmediatamente después de la desasociación. To detach a live copy from its source, follow these steps.
+Puede eliminar por completo la relación entre un origen y una Live Copy mediante la acción Desasociar. La Live Copy se convierte en un recurso o carpeta independiente después de desasociarse. Se muestra como un nuevo recurso en la interfaz [!DNL Experience Manager], inmediatamente después de la desasociación. Para separar una Live Copy de su origen, siga estos pasos.
 
-1. Select a live copy asset or folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
+1. Seleccione una carpeta o un recurso de Live Copy. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. También puede usar el método abreviado de teclado `p`.
 
-1. Click **[!UICONTROL Live Copy]**. Click **[!UICONTROL Detach]** in the toolbar. Click **[!UICONTROL Detach]** from the dialog presented.
+1. Haga clic en **[!UICONTROL Live Copy]**. Haga clic en **[!UICONTROL Desasociar]** en la barra de herramientas. Haga clic en **[!UICONTROL Desasociar]** del cuadro de diálogo presentado.
 
-   ![Detach action completely removes the relationship between source and live copy](assets/livecopy_detach.png)
+   ![La acción Desasociar elimina completamente la relación entre el origen y la Live Copy](assets/livecopy_detach.png)
 
-   *Figure: Detach action completely removes the relationship between source and live copy.*
+   *Imagen: la acción de desasociar elimina por completo la relación entre el origen y la Live Copy.*
 
    >[!CAUTION]
    >
-   >The relationship is removed immediately when you click **[!UICONTROL Detach]** from the dialog. You cannot undo it by clicking **[!UICONTROL Cancel]** on the Properties page.
+   >La relación se quita inmediatamente al hacer clic en **[!UICONTROL Desasociar]** del cuadro de diálogo. No puede deshacer la acción haciendo clic en **[!UICONTROL Cancelar]** en la página Propiedades.
 
-Alternatively, you can quickly detach multiple assets in a live copy folder from the **[!UICONTROL Live Copy Overview]** console. Consulte [Realizar acciones en varios recursos de las carpetas de Live Copy](#bulk-actions).
+También puede desasociar rápidamente varios recursos de una carpeta de Live Copy desde la consola **[!UICONTROL Información general de Live Copy]**. Consulte [Realizar acciones en varios recursos de las carpetas de Live Copy](#bulk-actions).
 
-## Bulk actions in a live copy folder {#bulk-actions}
+## Acciones masivas en una carpeta de Live Copy {#bulk-actions}
 
-If you have multiple assets in a live copy folder, initiating actions on each asset can be tedious. You can quickly initiate the basic actions on many assets from [!UICONTROL Live Copy Console]. The above methods continue to work for individual assets.
+Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada recurso puede resultar tedioso. Puede iniciar rápidamente las acciones básicas en muchos recursos desde [!UICONTROL Live Copy Console]. Los métodos anteriores siguen funcionando para recursos individuales.
 
-1. Select a source folder. Click **[!UICONTROL Properties]** from the toolbar. Alternatively, use the keyboard shortcut `p`.
+1. Seleccione una carpeta de origen. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. También puede usar el método abreviado de teclado `p`.
 1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**.
-1. En este panel de control, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. The actions available are **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, and **[!UICONTROL Detach]**. You can quickly initiate these actions on any asset in any number of live copy folders that are in a live relationship with the selected source folder.
+1. En este panel de control, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. Las acciones disponibles son **[!UICONTROL Sincronizar]**, **[!UICONTROL Restablecer]**, **[!UICONTROL Suspender]** y **[!UICONTROL Desasociar]**. Puede iniciar rápidamente estas acciones en cualquier recurso de cualquier número de carpetas de Live Copy que estén en una relación activa con la carpeta de origen seleccionada.
 
-   ![Easily update many assets in live copy folders from the Live Copy Overview console](assets/livecopyconsole_update_many_assets.png)
+   ![Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola de información general de Live Copy](assets/livecopyconsole_update_many_assets.png)
 
-   *Figure: Easily update many assets in live copy folders from the [!UICONTROL Live Copy Overview] console.*
+   *Imagen: actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola [!UICONTROL Información general de Live Copy].*
 
-## Impact of asset management tasks on live copies {#manage-assets}
+## Impacto de las tareas de administración de recursos en Live Copies {#manage-assets}
 
-Live copies and sources are assets or folders that can be managed, to a certain extent, as digital assets. Algunas tareas de administración de recursos en [!DNL Experience Manager] tienen un impacto específico en las Live Copies.
+Las Live Copies y fuentes son recursos o carpetas que se pueden administrar, en cierta medida, como recursos digitales. Algunas tareas de administración de recursos en [!DNL Experience Manager] tienen un impacto específico en las Live Copies.
 
 * Al copiar una Live Copy, se crea un recurso de Live Copy con el mismo origen que la primera Live Copy.
 * Cuando mueve un origen o su Live Copy, la relación dinámica se conserva.

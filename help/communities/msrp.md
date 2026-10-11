@@ -9,13 +9,20 @@ role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1220'
 ht-degree: 1%
-
 ---
-
 # MSRP: proveedor de recursos de almacenamiento de MongoDB {#msrp-mongodb-storage-resource-provider}
 
 ## Acerca de MSRP {#about-msrp}
@@ -28,22 +35,22 @@ Vea también [Características de las opciones de SRP](working-with-srp.md#chara
 
 * [MongoDB](https://www.mongodb.org/):
 
-   * Versión 2.6 o superior
-   * No es necesario configurar mongos ni el uso compartido
-   * Recomendamos encarecidamente el uso de un [conjunto de réplicas](#mongoreplicaset)
-   * Puede ejecutarse en el mismo host que AEM o de forma remota
+  * Versión 2.6 o superior
+  * No es necesario configurar mongos ni el uso compartido
+  * Recomendamos encarecidamente el uso de un [conjunto de réplicas](#mongoreplicaset)
+  * Puede ejecutarse en el mismo host que AEM o de forma remota
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
-   * Solr versión 7.0
-   * Solr requiere Java 1.7 o superior
-   * No se necesita ningún servicio
-   * Elección de los modos de ejecución:
-      * Modo independiente
-      * [Modo SolrCloud](solr.md#solrcloud-mode) (recomendado para entornos de producción)
-   * Opción de búsqueda multilingüe (MLS):
-      * [Instalación de MLS estándar](solr.md#installing-standard-mls)
-      * [Instalación de MLS avanzado](solr.md#installing-advanced-mls)
+  * Solr versión 7.0
+  * Solr requiere Java 1.7 o superior
+  * No se necesita ningún servicio
+  * Elección de los modos de ejecución:
+    * Modo independiente
+    * [Modo SolrCloud](solr.md#solrcloud-mode) (recomendado para entornos de producción)
+  * Opción de búsqueda multilingüe (MLS):
+    * [Instalación de MLS estándar](solr.md#installing-standard-mls)
+    * [Instalación de MLS avanzado](solr.md#installing-advanced-mls)
 
 ## Configuración de MongoDB {#mongodb-configuration}
 
@@ -60,41 +67,41 @@ En autor, para acceder a la consola Configuración de almacenamiento:
 * Seleccione **[!UICONTROL Proveedor de recursos de almacenamiento de MongoDB (MSRP)]**
 * **[!UICONTROL Configuración de mongoDB]**
 
-   * **[!UICONTROL URI de mongoDB]**
+  * **[!UICONTROL URI de mongoDB]**
 
-     *valor predeterminado*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+    *valor predeterminado*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
-   * **[!UICONTROL base de datos mongoDB]**
+  * **[!UICONTROL base de datos mongoDB]**
 
-     *predeterminado*: comunidades
+    *predeterminado*: comunidades
 
-   * **[!UICONTROL Colección de UGC mongoDB]**
+  * **[!UICONTROL Colección de UGC mongoDB]**
 
-     *predeterminado*: contenido
+    *predeterminado*: contenido
 
-   * **[!UICONTROL Colección de datos adjuntos mongoDB]**
+  * **[!UICONTROL Colección de datos adjuntos mongoDB]**
 
-     *predeterminado*: archivos adjuntos
+    *predeterminado*: archivos adjuntos
 
 * **[!UICONTROL ConfiguraciónSolr]**
 
-   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
+  * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
-     Cuando se ejecuta en [modo SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper externo, establezca este valor en `HOST:PORT` para el ZooKeeper, como *my.server.com:2181*
+    Cuando se ejecuta en [modo SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper externo, establezca este valor en `HOST:PORT` para el ZooKeeper, como *my.server.com:2181*
 
-     Para un conjunto ZooKeeper, introduzca valores `HOST:PORT` separados por comas, como *host1:2181,host2:2181*
+    Para un conjunto ZooKeeper, introduzca valores `HOST:PORT` separados por comas, como *host1:2181,host2:2181*
 
-     Déjelo en blanco si ejecuta Solr en modo independiente utilizando el ZooKeeper interno.
-     *Predeterminado*: *&lt;en blanco>*
+    Déjelo en blanco si ejecuta Solr en modo independiente utilizando el ZooKeeper interno.
+    *Predeterminado*: *&lt;en blanco>*
 
-      * **[!UICONTROL URL de Solr]**
+    * **[!UICONTROL URL de Solr]**
 Dirección URL utilizada para comunicarse con Solr en modo independiente.
 Déjelo en blanco si se ejecuta en el modo SolrCloud.
-        *Predeterminado*: https://127.0.0.1:8983/solr/
+      *Predeterminado*: https://127.0.0.1:8983/solr/
 
-      * **[!UICONTROL Colección Solr]**
+    * **[!UICONTROL Colección Solr]**
 Nombre de la colección Solr.
-        *Predeterminado*: colección1
+      *Predeterminado*: colección1
 
 * Seleccionar **[!UICONTROL Enviar]**
 
@@ -150,7 +157,7 @@ Para que la configuración idéntica esté disponible en el entorno de publicaci
 * Vaya del menú principal a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**.
 * Seleccionar **[!UICONTROL Activar árbol]**
 * **[!UICONTROL Ruta de inicio]**:
-   * Examinar `/etc/socialconfig/srpc/`
+  * Examinar `/etc/socialconfig/srpc/`
 * Seleccionar **[!UICONTROL Activar]**
 
 ## Administración de datos de usuario {#managing-user-data}
@@ -226,8 +233,8 @@ En todas las instancias de AEM de autor y publicación, vuelva a visitar la [con
 
 * En JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
-   * No contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), lo que significa que el proveedor de almacenamiento es JSRP.
-   * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), las propiedades de defaultconfiguration deben definir MSRP como el proveedor predeterminado.
+  * No contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), lo que significa que el proveedor de almacenamiento es JSRP.
+  * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), las propiedades de defaultconfiguration deben definir MSRP como el proveedor predeterminado.
 
 ### UGC desaparece tras la actualización {#ugc-disappears-after-upgrade}
 
