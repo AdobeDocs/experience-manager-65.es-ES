@@ -35,7 +35,7 @@ ht-degree: 30%
 
 ## Problema {#issue}
 
-Después de instalar el Service Pack [AEM 6.5.15.0 ](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), el error se produce de la siguiente manera:
+Después de instalar el Service Pack [AEM 6.5.15.0 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), el error se produce de la siguiente manera:
 * ERROR [FelixDispatchQueue] org.apache.sling.scripting.console FrameworkEvent ERROR (org.osgi.framework.BundleException: No se puede resolver org.apache.sling.scripting.console
 
 Después de instalar el Service Pack de AEM 6.5.15.0, el CRX/paquete y la página de inicio muestran errores de servicio no disponible.
