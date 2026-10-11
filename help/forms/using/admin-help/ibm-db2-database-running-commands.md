@@ -1,6 +1,6 @@
 ---
-title: "Base de datos IBM DB2: Ejecución de comandos para el mantenimiento regular"
-description: Este documento enumera los comandos de IBM AEM DB2 recomendados para realizar un mantenimiento regular de la base de datos de formularios en la que se realiza un seguimiento de los formularios en la.
+title: 'Base de datos IBM DB2: Ejecución de comandos para el mantenimiento regular'
+description: Este documento enumera los comandos de IBM DB2 recomendados para el mantenimiento regular de la base de datos de formularios AEM.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -9,18 +9,32 @@ exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 2%
-
+ht-degree: 4%
 ---
-
 # Base de datos IBM DB2: Ejecución de comandos para el mantenimiento regular {#ibm-db-database-running-commands-for-regular-maintenance}
 
-Se recomiendan los siguientes comandos de IBM AEM DB2 para el mantenimiento regular de la base de datos de formularios de la aplicación de formularios de la. Para obtener información detallada sobre el mantenimiento y la optimización del rendimiento de la base de datos DB2, consulte *Guía de administración de IBM DB2*.
+Se recomiendan los siguientes comandos de IBM DB2 para el mantenimiento regular de la base de datos de formularios AEM. Para obtener información detallada sobre el mantenimiento y la optimización del rendimiento de la base de datos DB2, consulte *Guía de administración de IBM DB2*.
 
-* **runstats:** Este comando actualiza estadísticas que describen las características físicas de una tabla de base de datos, junto con sus índices asociados. AEM Las instrucciones SQL dinámicas generadas por los formularios utilizan automáticamente estas estadísticas actualizadas, pero las instrucciones SQL estáticas generadas dentro de una base de datos requieren que también se ejecute el comando `db2rbind`.
+* **runstats:** Este comando actualiza estadísticas que describen las características físicas de una tabla de base de datos, junto con sus índices asociados. Las instrucciones SQL dinámicas generadas por los formularios AEM utilizan automáticamente estas estadísticas actualizadas, pero las instrucciones SQL estáticas generadas dentro de una base de datos requieren que el comando `db2rbind` también se ejecute.
 * **db2rbind:** Este comando vuelve a enlazar todos los paquetes de la base de datos. Use este comando después de ejecutar la utilidad `runstats` para volver a validar todos los paquetes de la base de datos.
 * **reorganizar tabla o índice:** Este comando comprueba si es necesaria una reorganización de algunas tablas e índices.
 
@@ -34,9 +48,9 @@ Para una base de datos pequeña, como para 10.000 usuarios o 2.500 grupos, es su
 
 Para bases de datos de mayor tamaño, como para 100.000 usuarios o 10.000 grupos, ejecute el comando `reorg` antes de ejecutar el comando `runstats`.
 
-## AEM Utilice el comando runstats de la base de datos de formularios de la {#use-the-runstats-command-on-your-aem-forms-database}
+## Utilice el comando runstats de la base de datos de formularios AEM Forms {#use-the-runstats-command-on-your-aem-forms-database}
 
-AEM Ejecute el comando `runstats` en las siguientes tablas e índices de la base de datos de formularios de la siguiente manera:
+Ejecute el comando `runstats` en las siguientes tablas e índices de la base de datos de formularios AEM.
 
 >[!NOTE]
 >
@@ -66,9 +80,9 @@ Para obtener información sobre la sintaxis y el uso correctos, consulte la docu
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY FOR INDEXES ALL
 ```
 
-## AEM Ejecute el comando reorg en la base de datos de formularios de la {#run-the-reorg-command-on-your-aem-forms-database}
+## Ejecute el comando reorg en la base de datos de formularios AEM Forms {#run-the-reorg-command-on-your-aem-forms-database}
 
-AEM Ejecute el comando `reorg` en las siguientes tablas e índices de la base de datos de formularios de la siguiente manera: Para obtener información sobre la sintaxis y el uso correctos, consulte la documentación del fabricante de la base de datos.
+Ejecute el comando `reorg` en las siguientes tablas e índices de la base de datos de formularios AEM. Para obtener información sobre la sintaxis y el uso correctos, consulte la documentación del fabricante de la base de datos.
 
 ```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY

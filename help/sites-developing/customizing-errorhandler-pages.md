@@ -1,5 +1,5 @@
 ---
-title: Personalizar páginas mostradas por el controlador de error
+title: Personalización de páginas mostradas por el controlador de errores
 description: Adobe Experience Manager incluye un controlador de error estándar para administrar errores HTTP.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,16 +9,25 @@ exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 0%
-
+source-wordcount: '545'
+ht-degree: 3%
 ---
+# Personalización de páginas mostradas por el controlador de errores{#customizing-pages-shown-by-the-error-handler}
 
-# Personalizar páginas mostradas por el controlador de error{#customizing-pages-shown-by-the-error-handler}
-
-Adobe Experience Manager AEM () viene con un controlador de error estándar para administrar errores HTTP; por ejemplo, mostrando:
+Adobe Experience Manager (AEM) viene con un controlador de error estándar para administrar errores HTTP; por ejemplo, mostrando:
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
@@ -29,7 +38,7 @@ Los scripts proporcionados por el sistema existen (en `/libs/sling/servlet/error
 
 >[!NOTE]
 >
->AEM Se basa en Apache Sling. Como tal, consulte [Control de errores](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html) para obtener información detallada sobre el control de errores de Sling.
+>AEM se basa en Apache Sling. Como tal, consulte [Control de errores](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html) para obtener información detallada sobre el control de errores de Sling.
 
 >[!NOTE]
 >
@@ -72,13 +81,13 @@ Los errores de HTTP 500 se deben a excepciones del lado del servidor.
 * **[Error interno del servidor 500](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
 El servidor encontró una condición inesperada que le impedía cumplir la solicitud.
 
-AEM Cuando el procesamiento de solicitudes resulta en una excepción, el marco de trabajo de Apache Sling (en el que se basa ese):
+Cuando el procesamiento de solicitudes resulta en una excepción, el marco de Apache Sling (en el que está basado AEM):
 
 * registra la excepción
 * devuelve:
 
-   * el código de respuesta HTTP 500
-   * el seguimiento de pila de excepciones
+  * el código de respuesta HTTP 500
+  * el seguimiento de pila de excepciones
 
   en el cuerpo de la respuesta.
 

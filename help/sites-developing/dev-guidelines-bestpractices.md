@@ -1,6 +1,6 @@
 ---
 title: 'Desarrollo de AEM: directrices y prácticas recomendadas'
-description: AEM Directrices y prácticas recomendadas para el desarrollo de soluciones en el área de la
+description: Directrices y prácticas recomendadas para el desarrollo en AEM
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -9,18 +9,27 @@ exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 1%
-
+source-wordcount: '1091'
+ht-degree: 2%
 ---
-
 # Desarrollo de AEM: directrices y prácticas recomendadas{#aem-development-guidelines-and-best-practices}
 
 ## Directrices para el uso de plantillas y componentes {#guidelines-for-using-templates-and-components}
 
-Los componentes y plantillas de Adobe Experience Manager AEM () conforman un potente conjunto de herramientas. Los desarrolladores pueden utilizarlas para proporcionar a los usuarios, editores y administradores de sitios web la funcionalidad de adaptar sus sitios web a las cambiantes necesidades comerciales (agilidad de contenido). Todo esto manteniendo el diseño uniforme de los sitios (protección de marca).
+Los componentes y las plantillas de Adobe Experience Manager (AEM) conforman un potente conjunto de herramientas. Los desarrolladores pueden utilizarlas para proporcionar a los usuarios, editores y administradores de sitios web la funcionalidad de adaptar sus sitios web a las cambiantes necesidades comerciales (agilidad de contenido). Todo esto manteniendo el diseño uniforme de los sitios (protección de marca).
 
 Un desafío típico para una persona responsable de un sitio web o un conjunto de sitios web (por ejemplo, en una sucursal de una empresa global) es introducir un nuevo tipo de presentación de contenido en sus sitios web.
 
@@ -36,7 +45,7 @@ La manera recomendada de abordar ese problema sería la siguiente:
 
 Esto ilustra cómo este enfoque permite a los usuarios y administradores colaboradores del sitio web responder a las necesidades comerciales rápidamente, sin requerir la participación de equipos de desarrollo. Los métodos alternativos, como la creación de una plantilla, suelen ser un ejercicio costoso, que requiere un proceso de gestión del cambio y la participación del equipo de desarrollo. Esto hace que todo el proceso sea más largo y costoso.
 
-AEM Por lo tanto, los desarrolladores de sistemas basados en el uso de deben utilizar:
+Por lo tanto, los desarrolladores de sistemas basados en AEM deben utilizar:
 
 * plantillas y control de acceso al diseño del sistema de párrafos para la uniformidad y la protección de la marca
 * sistema de párrafos, incluidas sus opciones de configuración para una mayor flexibilidad.
@@ -45,11 +54,11 @@ Las siguientes reglas generales para desarrolladores tienen sentido en la mayor�
 
 * Mantenga el número de plantillas bajo, tan bajo como el número de estructuras de página fundamentalmente diferentes en los sitios web.
 * Proporcione la flexibilidad y las capacidades de configuración necesarias a los componentes personalizados.
-* AEM Maximice el uso de la potencia y la flexibilidad del sistema de párrafos de la: los componentes parsys e iparsys.
+* Maximice el uso de la potencia y la flexibilidad del sistema de párrafos de AEM: los componentes parsys e iparsys.
 
 ### Personalizar componentes y otros elementos {#customizing-components-and-other-elements}
 
-Al crear sus propios componentes o personalizar un componente existente, a menudo es más fácil (y seguro) reutilizar las definiciones existentes. AEM Los mismos principios se aplican también a otros elementos dentro de la aplicación de, por ejemplo, el controlador de errores.
+Al crear sus propios componentes o personalizar un componente existente, a menudo es más fácil (y seguro) reutilizar las definiciones existentes. Los mismos principios se aplican también a otros elementos de AEM, por ejemplo, el gestor de errores.
 
 Esto se puede hacer copiando y superponiendo la definición existente. En otras palabras, copiando la definición de `/libs` a `/apps/<your-project>`. Esta nueva definición, en `/apps`, se puede actualizar según sus necesidades.
 
@@ -63,21 +72,21 @@ Por ejemplo:
 
   Esto implicaba superponer una definición de componente:
 
-   * Cree una carpeta de componentes en `/apps/<website-name>/components/<MyComponent>` copiando un componente existente:
+  * Cree una carpeta de componentes en `/apps/<website-name>/components/<MyComponent>` copiando un componente existente:
 
-      * Por ejemplo, para personalizar la copia del componente Texto:
+    * Por ejemplo, para personalizar la copia del componente Texto:
 
-         * de `/libs/foundation/components/text`
-         * hasta `/apps/myProject/components/text`
+      * de `/libs/foundation/components/text`
+      * hasta `/apps/myProject/components/text`
 
 * [Personalizar páginas mostradas por el Controlador de errores](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   Este caso implica la superposición de un servlet:
 
-   * En el repositorio, copie uno o más scripts predeterminados:
+  * En el repositorio, copie uno o más scripts predeterminados:
 
-      * de `/libs/sling/servlet/errorhandler/`
-      * hasta `/apps/sling/servlet/errorhandler/`
+    * de `/libs/sling/servlet/errorhandler/`
+    * hasta `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
@@ -112,7 +121,7 @@ Para procesar contenido, utilice el acceso de navegación al árbol de contenido
 >Si usa el [Generador de consultas](/help/sites-developing/querybuilder-api.md), usará Consultas JCR, ya que el Generador de consultas genera Consultas JCR bajo el capó.
 >
 
-## Consideraciones de seguridad {#security-considerations}
+## Consideraciones sobre la seguridad {#security-considerations}
 
 >[!NOTE]
 >
@@ -126,19 +135,19 @@ Utilice la sesión del usuario, no la sesión administrativa. Esto significa que
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Protect con scripts en sitios múltiples (XSS) {#protect-against-cross-site-scripting-xss}
+### Proteger contra scripts en sitios múltiples (XSS) {#protect-against-cross-site-scripting-xss}
 
 El proceso de ejecución de scripts en sitios múltiples (XSS) permite a los atacantes insertar código en páginas web que han visto otros usuarios. Los usuarios web malintencionados pueden aprovechar esta vulnerabilidad de seguridad para evitar los controles de acceso.
 
-AEM Se aplica el principio de filtrado de todo el contenido proporcionado por el usuario en la salida. La prevención de XSS tiene la máxima prioridad tanto durante el desarrollo como durante las pruebas.
+AEM aplica el principio de filtrar todo el contenido proporcionado por el usuario al generar la salida. La prevención de XSS tiene la máxima prioridad tanto durante el desarrollo como durante las pruebas.
 
 Además, un firewall de aplicaciones web, como [mod_security para Apache](https://modsecurity.org), puede proporcionar un control central y confiable sobre la seguridad del entorno de implementación y protegerlo contra ataques de scripts entre sitios que no se habían detectado anteriormente.
 
 >[!CAUTION]
 >
->AEM El código de ejemplo proporcionado con puede no protegerse contra estos ataques y, por lo general, se basa en el filtrado de solicitudes por un cortafuegos de aplicaciones web.
+>El código de ejemplo proporcionado con AEM puede no protegerse contra estos ataques y generalmente depende del filtrado de solicitudes por un cortafuegos de aplicaciones web.
 
-AEM La hoja de trucos de la API XSS contiene información que debe saber para utilizar la API XSS y hacer que una aplicación de sea más segura. Puede descargarlo aquí:
+La hoja de trucos de la API XSS contiene información que debe saber para utilizar la API XSS y hacer que una aplicación de AEM sea más segura. Puede descargarlo aquí:
 
 La hoja de trucos de XSSAPI.
 
@@ -149,7 +158,7 @@ La hoja de trucos de XSSAPI.
 Como para cualquier aplicación de Internet, asegúrese de que al transportar información confidencial
 
 * el tráfico está protegido mediante SSL
-* Se utiliza el POST HTTP si corresponde
+* HTTP POST se utiliza si corresponde
 
 Esto se aplica a la información que es confidencial para el sistema (como la configuración o el acceso administrativo) y a la información confidencial para sus usuarios (como sus datos personales)
 
@@ -157,12 +166,12 @@ Esto se aplica a la información que es confidencial para el sistema (como la co
 
 ### Personalización de páginas de error {#customizing-error-pages}
 
-AEM Las páginas de error se pueden personalizar para la creación de informes de. Esto es aconsejable para que la instancia no muestre los seguimientos de sling en los errores internos del servidor.
+Las páginas de error se pueden personalizar para AEM. Esto es aconsejable para que la instancia no muestre los seguimientos de sling en los errores internos del servidor.
 
 Consulte [Personalización de páginas de error mostradas por el controlador de error](/help/sites-developing/customizing-errorhandler-pages.md) para obtener información detallada.
 
 ### Abrir archivos en el proceso de Java™ {#open-files-in-the-java-process}
 
-AEM AEM Debido a que puede acceder a muchos archivos, se recomienda que el número de [archivos abiertos para un proceso Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) se configure explícitamente para su.
+Dado que AEM puede acceder a muchos archivos, se recomienda que el número de [archivos abiertos para un proceso Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) se configure explícitamente para AEM.
 
 Para minimizar este problema, el desarrollo debe garantizar que cualquier archivo abierto se cierre correctamente cuando (de forma significativa) sea posible.
