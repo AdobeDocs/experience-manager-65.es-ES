@@ -9,13 +9,26 @@ exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '747'
 ht-degree: 91%
-
 ---
-
 # Componente Borradores y envíos{#drafts-and-submissions-component}
 
 El componente Borradores y envíos enumera todos los formularios que están en estado de borrador y los que ya se han enviado. El componente tiene secciones independientes (pestañas) para formularios en borrador y enviados. Los usuarios solo pueden ver los formularios en borrador y los enviados.
@@ -94,9 +107,9 @@ Siga estos pasos para agregar y configurar el componente Borradores y envíos:
 
 ## Personalizar el almacenamiento {#customizing-the-storage}
 
-Cuando se utiliza la acción de envío del portal de formularios o se activa la opción Almacenar datos en el portal de formularios en formularios adaptables, los datos del formulario se almacenan en el repositorio de AEM. En un entorno de producción, se recomienda no almacenar datos de formularios en borradores o enviados en el repositorio de AEM. En lugar de ello, debe integrar los borradores y el componente de envío con un almacenamiento seguro, como la base de datos empresarial, para almacenar borradores y datos de formularios enviados.
+Cuando se utiliza la acción de envío del portal de formularios o se habilita la opción Almacenar datos en el portal de formularios en formularios adaptables, los datos del formulario se almacenan en el repositorio de AEM. En un entorno de producción, se recomienda no almacenar datos de formularios en borradores o enviados en el repositorio de AEM. En lugar de ello, debe integrar los borradores y el componente de envío con un almacenamiento seguro, como la base de datos empresarial, para almacenar borradores y datos de formularios enviados.
 
-El portal de Forms AEM AEM le permite almacenar datos en el repositorio local de la, en el repositorio remoto de la misma o en una base de datos. AEM Forms permite personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Puede anular los métodos predeterminados para especificar cómo se almacenan los datos de borradores y envíos en el almacenamiento que elija. Por ejemplo, puede almacenar los datos en un repositorio de datos implementado en su organización actualmente.
+El portal de Forms permite almacenar datos en el repositorio local de AEM, en el repositorio remoto de AEM o en una base de datos. AEM Forms permite personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Puede anular los métodos predeterminados para especificar cómo se almacenan los datos de borradores y envíos en el almacenamiento que elija. Por ejemplo, puede almacenar los datos en un repositorio de datos implementado en su organización actualmente.
 
 El portal de formularios proporciona servicios listos para usar (API) para almacenar datos en el repositorio crx de instancias de publicación locales y remotas de AEM Forms. Puede reemplazar las implementaciones predeterminadas que se describen en [Configurar servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md), con implementaciones personalizadas para reemplazar la funcionalidad predeterminada. Para obtener información detallada sobre los métodos necesarios en una implementación personalizada para almacenar contenido en una ubicación segura, consulte [Personalizar los servicios de datos de Borradores y envíos](/help/forms/using/custom-draft-submission-data-services.md) y [Almacenamiento personalizado para el componente Borradores y envíos.](/help/forms/using/adding-custom-storage-provider-forms.md)
 

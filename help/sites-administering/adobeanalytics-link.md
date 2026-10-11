@@ -1,6 +1,6 @@
 ---
-title: Configuración del seguimiento de vínculos para Adobe Analytics
-description: Obtenga información acerca de la configuración del seguimiento de vínculos para el SiteCatalyst.
+title: Configuración de Seguimiento de vínculos para Adobe Analytics
+description: Obtenga información acerca de la configuración del seguimiento de vínculos para SiteCatalyst.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -9,21 +9,30 @@ exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 0%
-
+source-wordcount: '1645'
+ht-degree: 1%
 ---
 
-
-# Configuración del seguimiento de vínculos para Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
+# Configuración de Seguimiento de vínculos para Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
 Cuando los usuarios hacen clic en vínculos en páginas del sitio web, puede capturar información relacionada en Adobe Analytics. Por ejemplo, utilice el seguimiento de vínculos para conocer cómo interactúan los usuarios con el sitio, realizar un seguimiento de las descargas de archivos y realizar un seguimiento de los vínculos de salida.
 
 ## Configuración del seguimiento de vínculos para un módulo de Adobe Analytics {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Con **navegación**, vaya a través de **implementación**, **Cloud Service** a la sección **Adobe Analytics**.
+1. Con **Navegación**, vaya a través de **Implementación**, **Cloud Services** hasta la sección **Adobe Analytics**.
 
 1. Con **Mostrar configuraciones**, abra el marco de trabajo de Adobe Analytics necesario.
 1. Expanda la sección **Configuración de seguimiento de vínculos** y configúrela según sea necesario (esta página proporciona más detalles):
@@ -48,7 +57,7 @@ De forma predeterminada, se realiza un seguimiento de las descargas de los sigui
 * pdf
 * xls
 
-Por ejemplo, con el seguimiento de descargas habilitado para archivos de PDF, cada vez que los usuarios hacen clic en vínculos a archivos de PDF, se realiza un seguimiento de la descarga del PDF.
+Por ejemplo, con el seguimiento de descargas habilitado para archivos de PDF, cada vez que los usuarios hacen clic en vínculos a archivos de PDF, se realiza un seguimiento de la descarga de PDF.
 
 Las propiedades de seguimiento de descarga del marco de trabajo se implementan como código en el archivo `analytics.sitecatalyst.js` generado para una página. El siguiente ejemplo de código representa la configuración de seguimiento de descarga predeterminada:
 
@@ -109,7 +118,7 @@ s.linkLeaveQueryString= false;
 
 ## Envío de datos de variables con clics en vínculos {#sending-variable-data-with-link-clicks}
 
-AEM Puede configurar los datos para enviar datos de eventos y variables a Adobe Analytics cuando un usuario haga clic en un vínculo. Las propiedades de **Configuración de seguimiento de vínculos** permiten especificar los eventos y variables de Adobe Analytics que se van a rastrear cuando se producen clics en vínculos.
+Puede configurar AEM para que envíe datos de eventos y variables a Adobe Analytics cuando un usuario haga clic en un vínculo. Las propiedades de **Configuración de seguimiento de vínculos** permiten especificar los eventos y variables de Adobe Analytics que se van a rastrear cuando se producen clics en vínculos.
 
 Las asignaciones de marco de trabajo determinan los valores de evento y de variable. Puede asignar variables de Adobe Analytics a las variables de los componentes de contenido que almacenan los datos de los que desea hacer un seguimiento cuando se hace clic en los vínculos.
 
@@ -148,7 +157,7 @@ Realice los siguientes procedimientos para explorar el comportamiento de seguimi
 Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimiento y el depurador:
 
 1. Abra el marco de trabajo asociado a una página web.
-1. Arrastre el componente **Página** al área de asignaciones del marco de trabajo. El componente **Page** pertenece al grupo de componentes **General** del Sidekick.
+1. Arrastre el componente **Página** al área de asignaciones del marco de trabajo. El componente **Page** pertenece al grupo de componentes **General** en Sidekick.
 
    >[!NOTE]
    >
@@ -156,7 +165,7 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
    >
    >Si no es así, debe tener su propio componente expuesto allí (definiendo un subnodo de Analytics en su componente de página).
 
-   Configure la asignación según la tabla siguiente arrastrando la variable de Analytics (SiteCatalyst) desde el panel lateral izquierdo:
+   Configure la asignación según la siguiente tabla, arrastrando la variable de Analytics (SiteCatalyst) desde el panel lateral izquierdo:
 
 <table>
  <tbody>
@@ -167,8 +176,8 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
   </tr>
   <tr>
    <td>pagedata.title</td>
-   <td>EVar personalizado 1 (eVar 1)</td>
-   <td>EVAR 1</td>
+   <td>EVar personalizado 1 (eVar1)</td>
+   <td>EVAR1</td>
   </tr>
   <tr>
    <td>eventdata.events.pageView</td>
@@ -178,7 +187,7 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
  </tbody>
 </table>
 
-1. Arrastre el componente Buscar al área de asignaciones del marco de trabajo. El componente Buscar pertenece al grupo de componentes General de Sidekick. Configure la asignación según la tabla siguiente arrastrando la variable de Analytics (SiteCatalyst) desde el panel lateral izquierdo:
+1. Arrastre el componente Buscar al área de asignaciones del marco de trabajo. El componente Buscar pertenece al grupo de componentes General en Sidekick. Configure la asignación según la siguiente tabla, arrastrando la variable de Analytics (SiteCatalyst) desde el panel lateral izquierdo:
 
 <table>
  <tbody>
@@ -189,13 +198,13 @@ Este ejemplo ilustra cómo funciona la asignación en el contexto del seguimient
   </tr>
   <tr>
    <td>eventdata.keyword</td>
-   <td>EVar personalizado 2 (eVar 2)</td>
-   <td>EVAR 2</td>
+   <td>EVar personalizado 2 (eVar2)</td>
+   <td>EVAR2</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
-   <td>EVar personalizado 3 (eVar 3)</td>
-   <td>EVAR 3</td>
+   <td>EVar personalizado 3 (eVar3)</td>
+   <td>EVAR3</td>
   </tr>
   <tr>
    <td>eventdata.events.search</td>

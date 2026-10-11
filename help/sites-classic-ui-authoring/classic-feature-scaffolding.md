@@ -10,16 +10,25 @@ exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 0%
-
 ---
-
 # Andamiaje{#scaffolding}
 
-A veces, es posible que tenga que crear un gran conjunto de páginas que compartan estructura pero que tengan contenido diferente. A través de la interfaz estándar de Adobe Experience Manager AEM (), debe crear cada página, arrastrar los componentes adecuados a la página y rellenarlos individualmente.
+A veces, es posible que tenga que crear un gran conjunto de páginas que compartan estructura pero que tengan contenido diferente. A través de la interfaz estándar de Adobe Experience Manager (AEM), debe crear cada página, arrastrar los componentes adecuados a la página y rellenarlos individualmente.
 
 Con el andamiaje, puede crear un formulario (un andamio) con campos que reflejen la estructura que desee para sus páginas y, a continuación, utilizar este formulario para crear fácilmente páginas basadas en esta estructura.
 
@@ -32,8 +41,8 @@ Con el andamiaje, puede crear un formulario (un andamio) con campos que reflejen
 Los andamios se almacenan en la consola **Tools** del administrador del sitio.
 
 * Abra la consola **Herramientas** y haga clic en **Andamiaje de página predeterminado**.
-* En esta sección, haga clic en **Geometrixx**.
-* En **Geometrixx**, se encuentra una *página de andamio* llamada **Noticias**. Haga doble clic para abrir esta página.
+* En esta sección, haz clic en **Geometrixx**.
+* En **Geometrixx**, encontrará una *página de andamio* llamada **Noticias**. Haga doble clic para abrir esta página.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
@@ -45,7 +54,7 @@ Las propiedades de la página de andamiaje son:
 
 * **Texto de título**: Este es el nombre de la página de andamiaje. En este ejemplo, se llama &quot;News&quot;.
 * **Descripción**: esto aparece debajo del título en la página de andamiaje.
-* **Plantilla de destino**: Esta es la plantilla que este andamio usará cuando cree una página. En este ejemplo, es una plantilla *Página de contenido de Geometrixx*.
+* **Plantilla de destino**: Esta es la plantilla que este andamio usará cuando cree una página. En este ejemplo, se trata de una plantilla *Geometrixx Content Page*.
 * **Ruta de destino**: Esta es la ruta de la página principal por debajo de la cual este andamio creará páginas. En este ejemplo, la ruta es */content/geometrixx/en/news*.
 
 El cuerpo del andamio es la forma. Cuando un usuario desea crear una página con el andamio, rellena el formulario y hace clic en *Crear*, en la parte inferior. En el ejemplo **Noticias** anterior, el formulario tiene los campos siguientes:
@@ -91,7 +100,7 @@ Observe la propiedad name de este campo. Tiene el valor
 
 `./jcr:content/par/text/text`
 
-Es el nombre de la propiedad en la que se escribirá el contenido de este campo cuando se utilice el andamio para crear una página. La propiedad se indica como una ruta relativa desde el nodo que representa la página que se va a crear. Especifica el texto de la propiedad, debajo del texto del nodo, que está debajo de la parte del nodo, que es a su vez un elemento secundario del nodo jcr:content debajo del nodo de la página.
+Es el nombre de la propiedad en la que se escribirá el contenido de este campo cuando se utilice el andamio para crear una página. La propiedad se indica como una ruta relativa desde el nodo que representa la página que se va a crear. Especifica el texto de la propiedad, debajo del texto del nodo, que está debajo de la parte del nodo, que es en sí misma un elemento secundario del nodo jcr:content debajo del nodo de la página.
 
 Define la ubicación del almacenamiento de contenido para el texto que se introduce en este campo. Sin embargo, también es necesario especificar dos características más para este contenido:
 
