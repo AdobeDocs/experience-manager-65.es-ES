@@ -1,19 +1,31 @@
 ---
 title: Carpetas privadas para compartir recursos
-description: Obtenga información sobre cómo crear una carpeta privada en  [!DNL Adobe Experience Manager Assets] , compartirla con otros usuarios y asignarles varios privilegios.
+description: Obtenga información sobre cómo crear una carpeta privada en [!DNL Adobe Experience Manager Assets], compartirla con otros usuarios y asignarles varios privilegios.
 contentOwner: AG
 role: User
 feature: Collaboration
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: f7212149-7f65-4e43-89c2-1f075f45be16
+    internal-label: Collaboration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '604'
 ht-degree: 3%
-
 ---
-
 # Carpeta privada en [!DNL Adobe Experience Manager Assets] {#private-folder}
 
 | Versión | Vínculo del artículo |

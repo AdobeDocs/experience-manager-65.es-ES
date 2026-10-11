@@ -9,13 +9,24 @@ exl-id: 7689b0e7-9da3-467f-8e53-f056040391d8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 2%
-
+source-wordcount: '128'
+ht-degree: 27%
 ---
-
 # Uso de Adobe Campaign{#working-with-adobe-campaign}
 
 Adobe Campaign es un conjunto de soluciones que le permite personalizar y entregar campañas en todos sus canales en línea y sin conexión.
@@ -27,7 +38,7 @@ En esta documentación se describe cómo trabajar con Adobe Campaign:
 
 Consulte lo siguiente:
 
-* [Uso de Adobe Campaign 6.1 y Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
+* [Uso de Adobe Campaign Classic 6.1 y Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
 * [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
 * [Segmentación de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
@@ -36,4 +47,4 @@ Antes debe tener [AEM integrado con Adobe Campaign](/help/sites-administering/ca
 Además, si desea personalizar las integraciones, consulte los temas siguientes:
 
 * [Extensiones de Adobe Campaign personalizadas](/help/sites-developing/extending-campaign-extensions.md)
-* [Crear asignaciones de formularios personalizadas](/help/sites-developing/extending-campaign-form-mapping.md)
+* [Creación de asignaciones de formularios personalizadas](/help/sites-developing/extending-campaign-form-mapping.md)

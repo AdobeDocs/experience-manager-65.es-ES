@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '604'
 ht-degree: 62%
-
 ---
-
 # API para acceder a instancias de carta {#apis-to-access-letter-instances}
 
 ## Información general {#overview}
@@ -137,7 +150,7 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 La instancia de carta puede ser del tipo Enviado o Borrador. Al abrir ambos tipos de instancias de cartas, se muestran comportamientos diferentes:
 
-* Si hay una instancia de carta Enviada, se abre un PDF que representa la instancia de carta. La instancia de carta enviada que persiste en el servidor también contiene el dataXML y el XDP procesados, que se pueden utilizar para llevar a cabo y utilizar un caso personalizado como la creación de un PDF/A.
+* Si hay una instancia de carta Enviada, se abre una PDF que representa la instancia de carta. La instancia de carta enviada que persiste en el servidor también contiene el dataXML y el XDP procesados, que se pueden utilizar para llevar a cabo y utilizar un caso personalizado como la creación de un PDF/A.
 * Si hay una instancia de carta Borrador, la interfaz de usuario de Crear correspondencia se vuelve a cargar al estado anterior exacto, tal como estaba durante el momento en que se creó el borrador
 
 ### Abrir instancia de carta Borrador  {#opening-draft-letter-instance-nbsp}
@@ -152,6 +165,6 @@ La interfaz de usuario de CCR admite el parámetro cmLetterInstanceId, que se pu
 
 ### Abrir la instancia de la carta enviada {#opening-submitted-letter-instance}
 
-El PDF enviado se puede abrir directamente mediante el ID de instancia de carta:
+El PDF enviado se puede abrir directamente utilizando el ID de instancia de carta:
 
 `https://[hostName]:[portNo]/[contextPath]/[letterInstanceId]`

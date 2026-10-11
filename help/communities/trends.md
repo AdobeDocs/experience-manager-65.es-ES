@@ -10,13 +10,20 @@ exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '346'
 ht-degree: 1%
-
 ---
-
 # Tendencias de actividades {#activity-trends}
 
 ## Introducción {#introduction}
@@ -61,29 +68,29 @@ En la ficha **Comentarios**, especifique si los comentarios de los archivos carg
 
   Seleccionar de:
 
-   * `Members`
-   * `Content`
+  * `Members`
+  * `Content`
 
   El valor predeterminado es `Members`.
 
 * **Título para mostrar**
 
   Título descriptivo que se mostrará sobre los datos, como `Trending Content`.
-El valor predeterminado es sin título.
+  El valor predeterminado es sin título.
 
 * **Recuento de pantalla**
 
   Número de elementos que se van a enumerar.
-El valor predeterminado es 10.
+  El valor predeterminado es 10.
 
 * **Tipo de actividad**
 
   Seleccione una de las siguientes opciones:
 
-   * `Views`(visitas a la página)
-   * `Posts`(creando UGC)
-   * `Follows`
-   * `Likes`
+  * `Views`(visitas a la página)
+  * `Posts`(creando UGC)
+  * `Follows`
+  * `Likes`
 
   El valor predeterminado es Vistas.
 
@@ -91,24 +98,24 @@ El valor predeterminado es 10.
 
   Seleccione una de las siguientes opciones:
 
-   * `Last 24 hours`
-   * `Last 7 days`
-   * `Last 30 days`
-   * `Last 90 days`
-   * `This year (since Jan 1)`
-   * `Total`
+  * `Last 24 hours`
+  * `Last 7 days`
+  * `Last 30 days`
+  * `Last 90 days`
+  * `This year (since Jan 1)`
+  * `Total`
 
   El valor predeterminado es `Total`.
 
 * **Ruta de acceso de contexto**
 
   Esto permite definir el ámbito de la actividad en un subconjunto del sitio, como un blog específico, por ejemplo.
-De forma predeterminada, se muestra todo el sitio de la comunidad.
+  De forma predeterminada, se muestra todo el sitio de la comunidad.
 
 * **Agregación de recuento de miembros**
 
   Cuando no está seleccionada (desactivada), solo se cuentan las publicaciones de nivel superior. Por ejemplo, si el contexto es la página raíz (la predeterminada), entonces un `Activity Type` de `Posts` nunca mostrará ninguna actividad, ya que no hay capacidad para publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
-La opción predeterminada está activada.
+  La opción predeterminada está activada.
 
 ### Página de ejemplo con cuatro componentes {#example-page-with-components}
 

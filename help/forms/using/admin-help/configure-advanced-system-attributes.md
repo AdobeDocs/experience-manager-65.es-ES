@@ -9,13 +9,27 @@ exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '480'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
 # Configurar atributos de sistema avanzados {#configure-advanced-system-attributes}
 
 Utilice la página Configurar Atributos Avanzados del Sistema para modificar ciertas opciones del archivo de configuración sin necesidad de exportar, editar ni importar el archivo. (Consulte [Importación y exportación del archivo de configuración](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
@@ -23,13 +37,13 @@ Utilice la página Configurar Atributos Avanzados del Sistema para modificar cie
 1. En la consola de administración, haga clic en **[!UICONTROL Configuración > Administración de usuarios > Configuración > Configurar atributos avanzados del sistema]**.
 1. (Opcional) Cambie cualquiera de los siguientes atributos de sesión:
 
-   **Límite de tiempo de espera de sesión (minutos):** Cantidad de tiempo, en minutos, antes de que un usuario cierre sesión automáticamente en el sistema. AEM De forma predeterminada, los componentes de formularios de la aplicación, como Workbench, agotan el tiempo de espera después de dos horas, independientemente de la actividad o la inactividad, y el usuario debe volver a iniciar sesión. Los valores válidos son de `1` a `1440`. El valor predeterminado es `120` (2 horas). Esta opción actualiza la clave de entrada `SAML/Producer/assertionValidityInMinutes` en el archivo de configuración.
+   **Límite de tiempo de espera de sesión (minutos):** Cantidad de tiempo, en minutos, antes de que un usuario cierre sesión automáticamente en el sistema. De forma predeterminada, los componentes de formularios AEM, como Workbench, agotan el tiempo de espera después de dos horas, independientemente de la actividad o la inactividad, y el usuario debe iniciar sesión de nuevo. Los valores válidos son de `1` a `1440`. El valor predeterminado es `120` (2 horas). Esta opción actualiza la clave de entrada `SAML/Producer/assertionValidityInMinutes` en el archivo de configuración.
 
    >[!NOTE]
    >
    >No debe establecer el límite de tiempo de espera de sesión por debajo de 10 minutos, ya que es posible que el sistema no se comporte correctamente. El valor recomendado es 10-120 (minutos).
 
-   AEM **Umbral de aserción (segundos):** Un tiempo de búfer para compensar los retrasos debido a las diferencias de tiempo del sistema entre servidores de aplicaciones de Forms que se encuentran en un clúster. AEM Los formularios antedatan el tiempo de inicio de sesión de un usuario en función del tiempo (en segundos) especificado en esta propiedad. Los valores válidos son de `0` a `3600`. El valor predeterminado es `60`. Esta opción actualiza la clave de entrada `SAML/Producer/assertionThresholdInSeconds` en el archivo de configuración.
+   **Umbral de aserción (segundos):** Un tiempo de búfer para compensar los retrasos debido a las diferencias de tiempo del sistema entre el servidor de aplicaciones de formularios de AEM en un clúster. Los formularios AEM antedatan el tiempo de inicio de sesión de un usuario en la cantidad de tiempo (en segundos) especificada en esta propiedad. Los valores válidos son de `0` a `3600`. El valor predeterminado es `60`. Esta opción actualiza la clave de entrada `SAML/Producer/assertionThresholdInSeconds` en el archivo de configuración.
 
    **Máximo de renovaciones permitidas de una afirmación:** El número máximo de veces que la sesión de un usuario se puede renovar de forma transparente sin necesidad de iniciar sesión. Los valores válidos son de `0` a `9999`. Un valor de `0` significa que no se renuevan las aserciones. El valor predeterminado es 10. Esta opción actualiza la clave de entrada `SAML/Producer/maxAssertionRenewalCount` en el archivo de configuración.
 

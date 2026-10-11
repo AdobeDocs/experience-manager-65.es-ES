@@ -9,16 +9,30 @@ exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '293'
 ht-degree: 77%
-
 ---
-
 # Registrar flujos de trabajo de AEM Forms{#logging-in-aem-forms-workflows}
 
-Los pasos del Forms Workflow proporcionan registros detallados para depurar convenientemente los problemas relacionados con el flujo de trabajo. Habilite el registro de depuración de los flujos de trabajo de AEM Forms para ver los registros.
+Los pasos de Forms Workflow proporcionan registros detallados para depurar convenientemente los problemas relacionados con los flujos de trabajo. Habilite el registro de depuración de los flujos de trabajo de AEM Forms para ver los registros.
 
 De forma predeterminada, toda la información del registro está disponible en el archivo **error.log** del directorio */crx-repository/logs/*.
 
@@ -69,7 +83,7 @@ El siguiente ejemplo ilustra los registros del paso Firmar documento:
 
 Utilice los registros para evaluar lo siguiente:
 
-* Está usando una configuración de Adobe Sign correcta.
+* Utiliza una configuración correcta de Adobe Sign.
 * El servicio de Adobe Sign se cierra después de crear correctamente un acuerdo.
 * El paso Firmar documento se cierra con un mensaje de éxito.
 
@@ -81,7 +95,7 @@ Haga lo siguiente para poder habilitar el registro de depuración para los flujo
 
 1. Vaya al Administrador de configuración de la consola web de AEM en:
 
-   https://&#39;[server]:[puerto]&#39;/system/console/configMgr
+   https://'[server]:[puerto]'/system/console/configMgr
 
 1. Seleccione **[!UICONTROL Sling]** > **[!UICONTROL Compatibilidad de registros]**.
 1. Seleccione **[!UICONTROL Agregar nuevo registrador.]**

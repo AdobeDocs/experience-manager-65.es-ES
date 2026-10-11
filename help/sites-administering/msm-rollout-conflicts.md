@@ -9,13 +9,25 @@ feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 18%
-
 ---
-
 # Conflictos de despliegue de MSM{#msm-rollout-conflicts}
 
 Pueden producirse conflictos si se crean nuevas páginas con el mismo nombre en la rama del modelo y en una rama de Live Copy dependiente.
@@ -32,7 +44,7 @@ Para garantizar que el despliegue no esté bloqueado, las definiciones posibles 
 * qué páginas se cambian de nombre (y cómo),
 * cómo afecta esto a cualquier contenido publicado.
 
-  El comportamiento predeterminado de Adobe Experience Manager AEM (de forma predeterminada) es que el contenido publicado no se ve afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, ese contenido se sigue publicando después de la gestión y el despliegue del conflicto.
+  El comportamiento predeterminado de Adobe Experience Manager (AEM) (predeterminado) es que el contenido publicado no se ve afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, ese contenido se sigue publicando después de la gestión y el despliegue del conflicto.
 
 Además de la funcionalidad estándar, se pueden agregar controladores de conflicto personalizados para implementar distintas reglas. También pueden permitir acciones de publicación como un proceso individual.
 
@@ -48,7 +60,7 @@ En las secciones siguientes, debe utilizar el ejemplo de una nueva página `b`, 
 
   Una página creada manualmente en la rama de Live Copy; con una página secundaria, `lc-level-1`.
 
-   * Se activó al publicar como `/b`, junto con la página secundaria.
+  * Se activó al publicar como `/b`, junto con la página secundaria.
 
 **Antes del despliegue**
 
@@ -94,7 +106,7 @@ AEM proporciona lo siguiente:
 
 * El [controlador de conflictos predeterminado](#default-conflict-handler):
 
-   * `ResourceNameRolloutConflictHandler`
+  * `ResourceNameRolloutConflictHandler`
 
 * La posibilidad de implementar un [controlador personalizado](#customized-handlers).
 * Mecanismo de clasificación de servicios que permite establecer la prioridad de cada controlador individual. Se utiliza el servicio con la clasificación más alta.
@@ -114,13 +126,13 @@ Este controlador de conflictos da prioridad al modelo. La página Live Copy `/b`
 
   Se mueve (dentro de la Live Copy) a `/b_msm_moved`. Esto actúa como una copia de seguridad y garantiza que no se pierda contenido.
 
-   * `lc-level-1` no se mueve.
+  * `lc-level-1` no se mueve.
 
 * modelo: `/b`
 
   Se despliega en la página de Live Copy `/b`.
 
-   * `bp-level-1` se ha implementado en la Live Copy.
+  * `bp-level-1` se ha implementado en la Live Copy.
 
 **Después del despliegue**
 
@@ -160,15 +172,15 @@ Los controladores de conflicto personalizados pueden tener lo siguiente:
 * Desarrollado/configurado según sus necesidades; por ejemplo, puede desarrollar un controlador para que la página de Live Copy tenga prioridad.
 * Diseñado para configurarse con la [configuración OSGi](/help/sites-deploying/configuring-osgi.md); en particular:
 
-   * **Clasificación del servicio**:
+  * **Clasificación del servicio**:
 
-     Define el orden relacionado con otros controladores de conflictos ( `service.ranking`).
+    Define el orden relacionado con otros controladores de conflictos ( `service.ranking`).
 
-     El valor predeterminado es 0.
+    El valor predeterminado es 0.
 
 ### Comportamiento Cuando Se Desactiva La Gestión De Conflictos {#behavior-when-conflict-handling-deactivated}
 
-AEM Si [desactiva manualmente la administración de conflictos](#rollout-manager-and-conflict-handling), entonces no realiza ninguna acción en ninguna página en conflicto (las páginas que no entran en conflicto se despliegan según lo esperado).
+Si [desactiva manualmente la administración de conflictos](#rollout-manager-and-conflict-handling), AEM no realiza ninguna acción en ninguna página en conflicto (las páginas que no entran en conflicto se despliegan según lo esperado).
 
 >[!CAUTION]
 >

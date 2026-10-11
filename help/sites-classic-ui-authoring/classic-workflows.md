@@ -1,6 +1,6 @@
 ---
 title: Uso de flujos de trabajo
-description: AEM Los flujos de trabajo le permiten automatizar una serie de pasos que se realizan en una página o un recurso. Por ejemplo, al publicar, un editor debe revisar el contenido antes de que un administrador del sitio active la página. Un flujo de trabajo que automatiza este ejemplo notifica a cada participante cuándo es el momento de realizar el trabajo necesario.
+description: Los flujos de trabajo de AEM le permiten automatizar una serie de pasos que se realizan en una página o recurso. Por ejemplo, al publicar, un editor debe revisar el contenido antes de que un administrador del sitio active la página. Un flujo de trabajo que automatiza este ejemplo notifica a cada participante cuándo es el momento de realizar el trabajo necesario.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,16 +9,25 @@ exl-id: 298fcfeb-dc8d-4edc-8743-83c0e5e5bc08
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 75%
-
 ---
-
 # Uso de flujos de trabajo{#working-with-workflows}
 
-AEM Los flujos de trabajo le permiten automatizar una serie de pasos que se realizan en una página o un recurso. Por ejemplo, al publicar, un editor debe revisar el contenido antes de que un administrador del sitio active la página. Un flujo de trabajo que automatiza este ejemplo notifica a cada participante cuándo es el momento de realizar el trabajo necesario:
+Los flujos de trabajo de AEM le permiten automatizar una serie de pasos que se realizan en una página o recurso. Por ejemplo, al publicar, un editor debe revisar el contenido antes de que un administrador del sitio active la página. Un flujo de trabajo que automatiza este ejemplo notifica a cada participante cuándo es el momento de realizar el trabajo necesario:
 
 1. El autor aplica el flujo de trabajo a la página.
 1. El editor recibe un elemento de trabajo que indica que es necesario para revisar el contenido de la página. Al terminar, indican que el elemento de trabajo se ha completado.

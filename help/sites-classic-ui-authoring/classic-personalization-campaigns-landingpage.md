@@ -1,6 +1,6 @@
 ---
 title: Páginas de destino
-description: AEM La función de páginas de aterrizaje permite importar rápida y fácilmente un diseño y contenido directamente en una página de. Un desarrollador web puede preparar el HTML y recursos adicionales que se pueden importar como una página completa o solo como parte de una página.
+description: La función de páginas de aterrizaje permite importar rápida y fácilmente un diseño y contenido directamente a una página de AEM. Un desarrollador web puede preparar HTML y recursos adicionales que se pueden importar como una página completa o solo como parte de una página.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,29 +10,40 @@ exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 1%
-
+source-wordcount: '3376'
+ht-degree: 2%
 ---
-
 # Páginas de destino{#landing-pages}
 
-AEM La función de páginas de aterrizaje permite importar rápida y fácilmente un diseño y contenido directamente en una página de. Un desarrollador web puede preparar el HTML y recursos adicionales que se pueden importar como una página completa o solo como parte de una página. La funcionalidad es útil para crear páginas de aterrizaje de marketing que solo estén activas durante un tiempo limitado y que necesiten crearse rápidamente.
+La función de páginas de aterrizaje permite importar rápida y fácilmente un diseño y contenido directamente a una página de AEM. Un desarrollador web puede preparar HTML y recursos adicionales que se pueden importar como una página completa o solo como parte de una página. La funcionalidad es útil para crear páginas de aterrizaje de marketing que solo estén activas durante un tiempo limitado y que necesiten crearse rápidamente.
 
 Esta página describe lo siguiente:
 
-* AEM aspecto de las páginas de aterrizaje en la inclusión de componentes disponibles en la
+* aspecto de las páginas de aterrizaje en AEM, incluidos los componentes disponibles
 * cómo crear una página de aterrizaje y cómo importar un paquete de diseño
-* AEM cómo trabajar con páginas de aterrizaje en el servicio de asistencia de
+* cómo trabajar con páginas de aterrizaje en AEM
 * configuración de páginas de aterrizaje móviles
 
 La preparación del paquete de diseño para la importación se explica en [Ampliación y configuración del importador de diseños](/help/sites-administering/extending-the-design-importer-for-landingpages.md). La integración con Adobe Analytics se explica en [Integración de páginas de aterrizaje con Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
 
 >[!CAUTION]
 >
->AEM El importador de diseños, usado para importar páginas de aterrizaje, [ha quedado obsoleto con la versión 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features) de la aplicación.
+>El importador de diseño, usado para importar páginas de aterrizaje [, ha quedado obsoleto con AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >
@@ -42,20 +53,20 @@ La preparación del paquete de diseño para la importación se explica en [Ampli
 
 Las páginas de aterrizaje son sitios de una o varias páginas que son el &quot;punto final&quot; de una campaña de marketing, por ejemplo, con correo electrónico, anuncios/banners o medios sociales. Una página de aterrizaje puede servir para varios fines, pero todos tienen una cosa en común: el visitante debe cumplir una tarea y que define el éxito de una página de aterrizaje.
 
-AEM AEM AEM La función Páginas de destino en la permite a los especialistas en marketing trabajar con diseñadores web de agencias o equipos creativos internos para crear diseños de página que se puedan importar fácilmente a las páginas de destino y que los especialistas en marketing puedan seguir editando, y que se publiquen bajo el mismo gobierno que el resto de los sitios con tecnología de la web. La función de página de destino en la página de destino es la siguiente:
+La función Páginas de destino de AEM permite a los especialistas en marketing trabajar con diseñadores web de agencias o equipos creativos internos para crear diseños de página que se puedan importar fácilmente en AEM y que los especialistas en marketing puedan editar y publicar bajo el mismo control que el resto de sitios con tecnología de AEM.
 
-AEM En, cree páginas de aterrizaje realizando los siguientes pasos:
+En AEM, puede crear páginas de aterrizaje realizando los siguientes pasos:
 
-1. AEM Cree una página en el lienzo que contenga las páginas de destino AEM Se envía con una muestra denominada **Página de importador**.
+1. Cree una página en AEM que contenga el lienzo de páginas de aterrizaje. AEM se enviará con una muestra llamada **Página de importador**.
 
-1. [Prepare el HTML y los recursos.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+1. [Prepare HTML y los recursos.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Empaquete los recursos en un archivo ZIP denominado aquí Paquete de diseño.
 1. Importe el paquete de diseño en la página del importador.
 1. Modifique y publique la página.
 
 ### Páginas de destino de escritorio {#desktop-landing-pages}
 
-AEM Una página de aterrizaje de ejemplo en la que se muestra el siguiente aspecto:
+Una página de aterrizaje de ejemplo en AEM tiene el siguiente aspecto:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -75,24 +86,24 @@ La página de aterrizaje móvil se crea como una página secundaria de la págin
 
 ## Componentes de página de aterrizaje {#landing-page-components}
 
-Para que las partes del HTML AEM que se importan se puedan editar dentro de los recursos, puede asignar contenido dentro del HTML AEM Páginas de destino directamente a los componentes de la. El importador de diseños comprende los siguientes componentes de forma predeterminada:
+Para que las partes de HTML que se importan puedan editarse en AEM, puede asignar contenido de las páginas de aterrizaje de HTML directamente a los componentes de AEM. El importador de diseños comprende los siguientes componentes de forma predeterminada:
 
 * Texto, para cualquier texto
 * Título, para contenido en etiquetas H1-6
 * Imagen, para imágenes que deben hacerse intercambiables
 * Llamadas a la acción:
 
-   * Vínculo de pulsación
-   * Vínculo gráfico
+  * Vínculo de pulsación
+  * Vínculo gráfico
 
-* Formulario de cliente potencial de CTA, para capturar información del usuario
+* Formulario de posible cliente de CTA para recopilar información del usuario
 * Sistema de párrafos (Parsys), para permitir que se añada cualquier componente o se convierta el componente anterior
 
 Además, es posible ampliar esto y admitir componentes personalizados. En esta sección se describen los componentes en detalle.
 
 ### Texto {#text}
 
-El componente Texto permite introducir un bloque de texto mediante un editor WYSIWYG. Consulte [Componente de texto](/help/sites-authoring/default-components.md#text) para obtener más información.
+El componente Texto permite introducir un bloque de texto mediante un editor de WYSIWYG. Consulte [Componente de texto](/help/sites-authoring/default-components.md#text) para obtener más información.
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
@@ -120,11 +131,11 @@ El siguiente es un ejemplo de un componente de imagen en una página de aterriza
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-#### Llamada a la acción (CTA) {#call-to-action-cta}
+#### Call to action (CTA) {#call-to-action-cta}
 
 Un diseño de página de aterrizaje puede tener varios vínculos, algunos de los cuales pueden denominarse &quot;Llamadas a la acción&quot;.
 
-La llamada a la acción (CTA) se utiliza para lograr que el visitante realice acciones inmediatas en la página de aterrizaje, como &quot;Suscribirse ahora&quot;, &quot;Ver este vídeo&quot;, &quot;Solo tiempo limitado&quot;, etc.
+Call to action (CTA) se utiliza para que el visitante tome medidas inmediatas en la página de aterrizaje, como &quot;Suscribirse ahora&quot;, &quot;Ver este vídeo&quot;, &quot;Solo tiempo limitado&quot;, etc.
 
 * Vínculo de pulsación: Permite añadir un vínculo de texto que, cuando se hace clic, lleva al visitante a una URL de destino.
 * Vínculo gráfico: le permite añadir una imagen que, cuando se hace clic, lleva al visitante a una dirección URL de destino.
@@ -133,7 +144,7 @@ Ambos componentes de CTA tienen opciones similares. El vínculo Pulsación tiene
 
 #### Vínculo de pulsación {#click-through-link}
 
-Este componente de CTA se puede utilizar para agregar un vínculo de texto en la página de aterrizaje. Se puede hacer clic en ese vínculo para llevar al usuario a la URL de destino especificada en las propiedades del componente. Forma parte del grupo &quot;Llamada a la acción&quot;.
+Este componente de CTA se puede utilizar para agregar un vínculo de texto en la página de aterrizaje. Se puede hacer clic en ese vínculo para llevar al usuario a la URL de destino especificada en las propiedades del componente. Forma parte del grupo &quot;Call to action&quot;.
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -158,7 +169,7 @@ El siguiente es un ejemplo de vínculo de pulsación:
 
 #### Vínculo gráfico {#graphical-link}
 
-Este componente de CTA se puede utilizar para añadir cualquier imagen gráfica con vínculo en la página de aterrizaje. La imagen puede ser un botón simple o cualquier imagen gráfica como fondo. Al hacer clic en la imagen, el usuario se dirige a la URL de destino especificada en las propiedades del componente. Forma parte del grupo **Llamada a la acción**.
+Este componente de CTA se puede utilizar para añadir cualquier imagen gráfica con vínculo en la página de aterrizaje. La imagen puede ser un botón simple o cualquier imagen gráfica como fondo. Al hacer clic en la imagen, el usuario se dirige a la URL de destino especificada en las propiedades del componente. Forma parte del grupo **Call to action**.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -181,9 +192,9 @@ A continuación se muestra un ejemplo de vínculo gráfico:
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
-### Formulario de cliente potencial de llamada a la acción (CTA) {#call-to-action-cta-lead-form}
+### Formulario de posible cliente de call to action (CTA) {#call-to-action-cta-lead-form}
 
-Un formulario de posible cliente es un formulario que se utiliza para recopilar información del perfil de un visitante o posible cliente. Esta información se puede almacenar y utilizar más adelante para realizar un marketing eficaz basado en la información. Esta información generalmente incluye título, nombre, correo electrónico, fecha de nacimiento, dirección, interés, etc. Forma parte del grupo **Formulario de posible cliente de CTA**.
+Un formulario de posible cliente es un formulario que se utiliza para recopilar información del perfil de un visitante o posible cliente. Esta información se puede almacenar y utilizar más adelante para realizar un marketing eficaz basado en la información. Esta información generalmente incluye título, nombre, correo electrónico, fecha de nacimiento, dirección, interés, etc. Forma parte del grupo **Formulario de posibles clientes de CTA**.
 
 Un ejemplo de formulario de posible cliente de CTA tiene este aspecto:
 
@@ -202,7 +213,7 @@ Los componentes de perfil están relacionados con los perfiles de visitante util
 
 El anterior muestra un formulario de ejemplo; se compone del componente **Formulario de posible cliente** (inicio y final), con **Nombre** y **ID de correo electrónico** campos utilizados para la entrada y un campo **Enviar**
 
-Desde la barra de tareas, los siguientes componentes están disponibles para el formulario de posibles clientes de CTA:
+Desde la barra de tareas, están disponibles los siguientes componentes para el formulario de posibles clientes de CTA:
 
 ![chlimage_1-34](assets/chlimage_1-34.png)
 
@@ -232,7 +243,7 @@ Indica el tamaño y el estilo de los campos.
 
 #### Componentes de formulario de posibles clientes {#lead-form-components}
 
-En la siguiente sección se describen los componentes disponibles para los formularios de posibles clientes con llamadas a la acción.
+En la siguiente sección se describen los componentes disponibles para los formularios de Call-to-action.
 
 **Acerca de** permite que los usuarios agreguen información.
 
@@ -282,7 +293,7 @@ Hay dos fichas disponibles para la configuración **Formulario** y **Avanzado**:
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-**Opciones de Post** Las siguientes opciones de publicación están disponibles:
+**Opciones de publicación** Las siguientes opciones de publicación están disponibles:
 
 * Crear posible cliente
 * Servicio de correo electrónico: crear suscriptor y agregar a la lista: utilícelo si utiliza un proveedor de servicios de correo electrónico como ExactTarget.
@@ -308,17 +319,17 @@ Si está validando el formulario completo, incluya también una de las siguiente
 * Una secuencia de comandos para la validación en el servidor:
   ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-**Configuración de la acción** Dependiendo de la selección en Opciones de Post, la Configuración de la acción cambia. Por ejemplo, al seleccionar Crear posible cliente, puede configurar a qué lista se agrega el posible cliente.
+**Configuración de la acción** Dependiendo de la selección en Opciones de publicación, la Configuración de la acción cambia. Por ejemplo, al seleccionar Crear posible cliente, puede configurar a qué lista se agrega el posible cliente.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-* **Mostrar botón de envío**
+* **Mostrar botón Enviar**
 Indica si se debe mostrar o no un botón Enviar.
 
 * **Nombre de envío**
 Un identificador si utiliza varios botones de envío en un formulario.
 
-* **Título de envío**
+* **Enviar título**
 Nombre que aparece en el botón, como Enviar o Enviar.
 
 * **Mostrar botón Restablecer**
@@ -335,22 +346,22 @@ Información que aparece debajo del botón.
 Al crear una página de aterrizaje, debe realizar tres pasos:
 
 1. Cree una página de importador.
-1. [Prepare el HTML para la importación.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+1. [Prepare HTML para la importación.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Importe el paquete de diseño.
 
 ### Uso del importador de diseños {#use-of-the-design-importer}
 
-Dado que la importación de páginas implica la preparación del HTML, la verificación y la prueba de las páginas, la importación de páginas de aterrizaje está pensada como una tarea de administración. Como administrador, los usuarios que realizan la importación necesitan permisos de lectura, escritura, creación y eliminación en `/apps`. Si el usuario no tiene estos permisos, la importación fallará.
+Dado que la importación de páginas implica la preparación de HTML, la verificación y la prueba de las páginas, la importación de páginas de aterrizaje está pensada como una tarea de administración. Como administrador, los usuarios que realizan la importación necesitan permisos de lectura, escritura, creación y eliminación en `/apps`. Si el usuario no tiene estos permisos, la importación fallará.
 
 >[!NOTE]
 >
 >Dado que el importador de diseño está diseñado como herramienta de administración que requiere permisos de lectura, escritura, creación y eliminación en `/apps`, Adobe no recomienda el uso del importador de diseño en producción.
 
-El Adobe recomienda utilizar el importador de diseños en una instancia de ensayo. En una instancia de ensayo, la importación puede probarla y validarla un desarrollador que luego sea responsable de implementar el código en la instancia de producción.
+Adobe recomienda utilizar el importador de diseño en una instancia de ensayo. En una instancia de ensayo, la importación puede probarla y validarla un desarrollador que luego sea responsable de implementar el código en la instancia de producción.
 
 ### Creación de una página de importador {#creating-an-importer-page}
 
-Para poder importar el diseño de la página de aterrizaje, debe crear una página de importador, por ejemplo, en una campaña. La plantilla Página del importador permite importar la página de aterrizaje completa del HTML. La página contiene un cuadro desplegable en el que se puede importar el paquete de diseño de la página de aterrizaje arrastrando y soltando.
+Para poder importar el diseño de la página de aterrizaje, debe crear una página de importador, por ejemplo, en una campaña. La plantilla Página del importador permite importar la página de aterrizaje completa de HTML. La página contiene un cuadro desplegable en el que se puede importar el paquete de diseño de la página de aterrizaje arrastrando y soltando.
 
 >[!NOTE]
 >
@@ -367,9 +378,9 @@ Para crear una página de aterrizaje:
 
    Se muestra la nueva página del importador.
 
-### Preparación del HTML para la importación {#preparing-the-html-for-import}
+### Preparación de HTML para su importación {#preparing-the-html-for-import}
 
-Antes de importar el paquete de diseño, es necesario preparar al HTML. Consulte [Ampliación y configuración de la importación de diseño](/help/sites-administering/extending-the-design-importer-for-landingpages.md) para obtener más información.
+Antes de importar el paquete de diseño, es necesario preparar HTML. Consulte [Ampliación y configuración de la importación de diseño](/help/sites-administering/extending-the-design-importer-for-landingpages.md) para obtener más información.
 
 ### Importación del paquete de diseño {#importing-the-design-package}
 
@@ -382,13 +393,13 @@ Si tiene preparado el paquete de diseño, los pasos siguientes describen cómo i
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
 1. Arrastre y suelte el paquete de diseño en el cuadro desplegable. Observe que la flecha cambia de dirección cuando se arrastra un paquete sobre ella.
-1. Al arrastrar y soltar, verá la página de aterrizaje en lugar de la página del importador. La página de aterrizaje del HTML se ha importado correctamente.
+1. Al arrastrar y soltar, verá la página de aterrizaje en lugar de la página del importador. La página de aterrizaje de HTML se ha importado correctamente.
 
    ![chlimage_1-2-1](assets/chlimage_1-2-1.png)
 
 >[!NOTE]
 >
->Al importar, el marcado se sanea por motivos de seguridad y para evitar la importación y publicación de marcado no válido. Esto supone un marcado solo de HTML y que se filtrarán todas las demás formas de elementos, como SVG en línea o componentes web.
+>Al importar, el marcado se sanea por motivos de seguridad y para evitar la importación y publicación de marcado no válido. Esto supone que solo hay marcado de HTML y que se filtrarán todas las demás formas de elementos, como SVG en línea o componentes web.
 
 >[!NOTE]
 >
@@ -396,9 +407,9 @@ Si tiene preparado el paquete de diseño, los pasos siguientes describen cómo i
 
 ## Uso de páginas de destino {#working-with-landing-pages}
 
-El diseño y los activos de una página de aterrizaje suelen ser creados por un diseñador, posiblemente en una agencia, con herramientas a las que están acostumbrados, como Adobe Photoshop o Adobe Dreamweaver. Cuando se completa el diseño, el diseñador envía un archivo zip con todos los recursos a marketing. AEM A continuación, el contacto de marketing es responsable de soltar el archivo zip en la publicación y la publicación del contenido de la aplicación.
+El diseño y los activos de una página de aterrizaje suelen ser creados por un diseñador, posiblemente en una agencia, con herramientas a las que están acostumbrados, como Adobe Photoshop o Adobe Dreamweaver. Cuando se completa el diseño, el diseñador envía un archivo zip con todos los recursos a marketing. A continuación, el contacto de marketing es responsable de soltar el archivo zip en AEM y publicar el contenido.
 
-Además, es posible que el diseñador tenga que realizar modificaciones en la página de aterrizaje después de importarla editando o eliminando contenido y configurando los componentes de llamada a la acción. Por último, el experto en marketing debe obtener una vista previa de la página de aterrizaje y, a continuación, activar la campaña para asegurarse de que se publique la página de aterrizaje.
+Además, es posible que el diseñador tenga que realizar modificaciones en la página de aterrizaje después de importarla editando o eliminando contenido y configurando los componentes de call-to-action. Por último, el experto en marketing debe obtener una vista previa de la página de aterrizaje y, a continuación, activar la campaña para asegurarse de que se publique la página de aterrizaje.
 
 En esta sección se describe cómo realizar las siguientes acciones:
 
@@ -406,7 +417,7 @@ En esta sección se describe cómo realizar las siguientes acciones:
 * Descargar el paquete de diseño
 * Ver información de importación
 * Restablecer una página de aterrizaje
-* [Configure los componentes de CTA y añada contenido a la página](#call-to-action-cta)
+* [Configuración de los componentes de CTA y adición de contenido a la página](#call-to-action-cta)
 * Previsualización de la página de aterrizaje
 * Activar/publicar una página de aterrizaje
 
@@ -448,11 +459,11 @@ Para agregar componentes a la página de aterrizaje, arrastre y suelte los compo
 
 >[!NOTE]
 >
->Si un componente de la página de aterrizaje no se puede editar, debe volver a importar el archivo zip después de [modificar el archivo HTML.AEM &#x200B;](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Significa que durante la importación, las partes no editables no se convirtieron en componentes de la.
+>Si un componente de la página de aterrizaje no se puede editar, deberá volver a importar el archivo zip después de [modificar el archivo HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Esto significa que durante la importación, las partes no editables no se convirtieron en componentes de AEM.
 
 ### Eliminación de una página de aterrizaje {#deleting-a-landing-page}
 
-AEM Eliminar una página de aterrizaje es como eliminar una página de normal.
+Eliminar una página de aterrizaje es como eliminar una página de AEM normal.
 
 La única excepción es que, al eliminar una página de aterrizaje de escritorio, también se elimina la página de aterrizaje móvil correspondiente (si está presente), pero no a la inversa.
 

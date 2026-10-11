@@ -1,6 +1,6 @@
 ---
 title: Acceder y cumplimentar formularios publicados
-description: El portal de Forms proporciona a los desarrolladores web componentes para crear y personalizar un portal de Forms en sitios web creados con Adobe Experience Manager AEM ().
+description: Forms Portal proporciona a los desarrolladores web componentes para crear y personalizar un portal de Forms en sitios web creados con Adobe Experience Manager (AEM).
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -9,20 +9,33 @@ exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '942'
 ht-degree: 59%
-
 ---
-
 # Acceder y cumplimentar formularios publicados{#accessing-and-filling-published-forms}
 
 En una configuración de implementación del portal centrado en formularios, el desarrollo de los formularios y del portal son dos actividades distintas. Mientras los diseñadores de formularios diseñan y almacenan formularios en un repositorio, los desarrolladores web crean una aplicación web para enumerar formularios y controlar los envíos. Los formularios se copian en el nivel web, ya que no hay ninguna comunicación entre el repositorio de formularios y la aplicación web.
 
 Esto suele provocar problemas con la administración de los retrasos de configuración y producción. Por ejemplo, si hay una versión más reciente de un formulario disponible en el repositorio, el formulario Designer reemplazará el formulario en el nivel web, modificará la aplicación web y volverá a implementar el formulario en el sitio público. Volver a implementar la aplicación web puede causar cierto tiempo de inactividad en el servidor. Dado que el tiempo de inactividad del servidor es una actividad planificada, los cambios no pueden ser enviados al sitio público inmediatamente.
 
-El portal de formularios reduce los gastos generales de administración y los retrasos en la producción. Proporciona a los desarrolladores web componentes para crear y personalizar un portal de Forms en sitios web creados con Adobe Experience Manager AEM ().
+El portal de formularios reduce los gastos generales de administración y los retrasos en la producción. Proporciona a los desarrolladores web componentes para crear y personalizar un portal de Forms en sitios web creados con Adobe Experience Manager (AEM).
 
 Para obtener más información acerca del portal de Forms y sus características, vea [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
 
@@ -30,7 +43,7 @@ Para obtener más información acerca del portal de Forms y sus características
 
 Navegue hasta la página publicada del portal de Forms. Para obtener más información sobre cómo crear una página de portal de Forms, consulte [Crear una página de portal de Forms](../../forms/using/creating-form-portal-page.md).
 
-El componente Buscar y listar del portal de Forms muestra los formularios disponibles en la instancia de Publish AEM del servidor de. Esta lista incluye todos los formularios o los formularios definidos en el filtro en el momento de crear la página del portal de Forms. Una página del portal de Forms tiene un aspecto similar al que se muestra en la siguiente imagen:
+El componente Buscar y listar del portal de Forms muestra los formularios disponibles en la instancia de publicación del servidor de AEM. Esta lista incluye todos los formularios o los formularios definidos en el filtro en el momento de crear la página del portal de Forms. Una página del portal de Forms tiene un aspecto similar al que se muestra en la siguiente imagen:
 
 ![Página de ejemplo del portal de formularios &#x200B;](assets/forms-portal-page.png)
 

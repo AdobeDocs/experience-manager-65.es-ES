@@ -10,21 +10,30 @@ exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 0%
-
+source-wordcount: '471'
+ht-degree: 3%
 ---
-
 # Integración con ExactTarget{#integrating-with-exacttarget}
 
-Al integrar Adobe Experience Manager AEM AEM () con Exact Target, puede administrar y enviar los correos electrónicos creados en a través de Exact Target. En el caso de los mensajes de correo electrónico, se puede acceder a los mensajes de correo electrónico creados a través de Exact Target. AEM AEM También le permite utilizar las funciones de administración de posibles clientes de Exact Target mediante formularios en forma de.
+La integración de Adobe Experience Manager (AEM) con Exact Target permite administrar y enviar los correos electrónicos creados en AEM mediante Exact Target. También le permite utilizar las funciones de administración de posibles clientes de Exact Target mediante formularios AEM en páginas de AEM.
 
 La integración ofrece las siguientes funciones:
 
-* AEM La capacidad de crear correos electrónicos en las listas de distribución y publicarlos en Exact Target para su distribución.
-* AEM La capacidad de establecer la acción de un formulario de para crear un suscriptor de Target exacto.
+* La capacidad de crear correos electrónicos en AEM y publicarlos en Exact Target para su distribución.
+* La capacidad de establecer la acción de un formulario de AEM para crear un suscriptor de Target exacto.
 
 Una vez configurado ExactTarget, puede publicar boletines informativos o correos electrónicos en ExactTarget. Ver [Publicar boletines en un servicio de correo electrónico](/help/sites-authoring/personalization.md).
 
@@ -34,9 +43,9 @@ Las configuraciones de ExactTarget se pueden agregar mediante Cloud Services o H
 
 ### Configuración de ExactTarget mediante Cloud Services {#configuring-exacttarget-via-cloudservices}
 
-Para crear una configuración de ExactTarget en Cloud Service:
+Para crear una configuración de ExactTarget en Cloud Services:
 
-1. En la página de bienvenida, haga clic en **Cloud Service**. (O acceda directamente a en `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. En la página de bienvenida, haga clic en **Cloud Services**. (O acceda directamente a en `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Haga clic en **ExactTarget** y luego en **Configurar**. Se abre la ventana de configuración de ExactTarget.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
@@ -54,7 +63,7 @@ Para crear una configuración de ExactTarget en Cloud Service:
 
    Se ha configurado ExactTarget. Puede editar la configuración haciendo clic en **Editar**. Para ir a ExactTarget, haga clic en **Ir a ExactTarget**.
 
-1. AEM ahora proporciona una función de extensión de datos de. Puede importar columnas de extensión de datos de ExactTarget. Se puede configurar haciendo clic en el signo &quot;+&quot; que aparece además de la configuración de ExactTarget creada correctamente. Cualquiera de las extensiones de datos existentes se puede seleccionar en la lista desplegable. Para obtener más información sobre cómo configurar extensiones de datos, consulte [Documentación de ExactTarget](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&type=5).
+1. AEM ahora proporciona una función de extensión de datos. Puede importar columnas de extensión de datos de ExactTarget. Se puede configurar haciendo clic en el signo &quot;+&quot; que aparece además de la configuración de ExactTarget creada correctamente. Cualquiera de las extensiones de datos existentes se puede seleccionar en la lista desplegable. Para obtener más información sobre cómo configurar extensiones de datos, consulte [Documentación de ExactTarget](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&type=5).
 
    Las columnas de extensión de datos importadas se pueden usar posteriormente mediante el componente **Texto y Personalization**.
 
@@ -65,7 +74,7 @@ Para crear una configuración de ExactTarget en Cloud Service:
 Para crear una configuración de ExactTarget en Herramientas:
 
 1. En la página de bienvenida, haga clic en **Herramientas**. O bien, vaya directamente a `https://<hostname>:<port>/misadmin#/etc`.
-1. Seleccione **Herramientas**, luego **Configuraciones de Cloud Service** y después **ExactTarget**.
+1. Seleccione **Herramientas**, luego **Configuraciones de Cloud Services** y después **ExactTarget**.
 1. Haga clic en **Nuevo** para abrir la ventana **Crear página &#x200B;**.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
@@ -77,5 +86,5 @@ Para crear una configuración de ExactTarget en Herramientas:
 
 Para agregar varias configuraciones:
 
-1. En la página de bienvenida, haga clic en **Cloud Service** y luego en **ExactTarget**. Haga clic en **Mostrar configuraciones** que aparece si hay una o más configuraciones de ExactTarget disponibles. Se muestran todas las configuraciones disponibles.
+1. En la página de bienvenida, haga clic en **Cloud Services** y luego en **ExactTarget**. Haga clic en **Mostrar configuraciones** que aparece si hay una o más configuraciones de ExactTarget disponibles. Se muestran todas las configuraciones disponibles.
 1. Haga clic en el signo **+** junto a Configuraciones disponibles. Esto abre la ventana **Crear configuraciones**. Siga el procedimiento de configuración anterior para crear una configuración.

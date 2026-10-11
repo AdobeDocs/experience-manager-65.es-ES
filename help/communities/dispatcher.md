@@ -9,13 +9,20 @@ exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '687'
 ht-degree: 15%
-
 ---
-
 # Configuración de Dispatcher para comunidades {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
@@ -45,8 +52,8 @@ Cuando se configura para admitir el almacenamiento en caché de Dispatcher, se a
 * Dispatcher versión 4.1.2 o posterior (consulte [Instalación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=es) para obtener la versión más reciente)
 * [Paquete ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
-   * Versión 3.3.2 o posterior
-   * Configuración de OSGi `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
+  * Versión 3.3.2 o posterior
+  * Configuración de OSGi `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 
 ### Configuración {#configuration}
 
@@ -54,7 +61,7 @@ La configuración de OSGi **ACS AEM Commons - Encabezado de control de caché de
 
 * Desde la [consola web](../../help/sites-deploying/configuring-osgi.md).
 
-   * Por ejemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Por ejemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Buscar `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Seleccione el icono &quot;+&quot; para poder crear una configuración de conexión.

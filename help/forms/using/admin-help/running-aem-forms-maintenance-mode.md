@@ -1,6 +1,6 @@
 ---
 title: Ejecutar AEM Forms en modo de mantenimiento
-description: AEM El modo de mantenimiento es útil cuando se realizan tareas como aplicar parches a un DSC, actualizar formularios de la aplicación o aplicar un Service Pack. AEM Obtenga más información acerca de la ejecución de formularios en modo de mantenimiento.
+description: El modo de mantenimiento es útil cuando se realizan tareas como aplicar parches a un DSC, actualizar formularios AEM o aplicar un service pack. Obtenga más información sobre la ejecución de formularios AEM en modo de mantenimiento.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
@@ -9,23 +9,37 @@ exl-id: 6f5ce18b-26b4-4c31-b48a-43ccbb3912f6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '259'
 ht-degree: 4%
-
 ---
-
 # Ejecutar AEM Forms en modo de mantenimiento {#running-aem-forms-in-maintenance-mode}
 
-AEM El modo de mantenimiento es útil cuando se realizan tareas como aplicar parches a un DSC, actualizar formularios de la aplicación o aplicar un Service Pack.
+El modo de mantenimiento es útil cuando se realizan tareas como aplicar parches a un DSC, actualizar formularios AEM o aplicar un service pack.
 
 Evite invocar procesos mientras el servidor se encuentra en modo de mantenimiento. Esto es lo que sucede si se invoca un proceso mientras el servidor está en modo de mantenimiento:
 
-* Si el proceso es de larga duración, se añade a la base de datos de trabajos, pero no se inicia. AEM Al salir del modo de mantenimiento, los formularios de la procesan los trabajos de larga duración en su cola, incluso si el servidor se reinició mientras estaba en modo de mantenimiento.
+* Si el proceso es de larga duración, se añade a la base de datos de trabajos, pero no se inicia. Al salir del modo de mantenimiento, los formularios AEM Forms procesan los trabajos de larga duración en su cola, incluso si el servidor se reinició mientras estaba en modo de mantenimiento.
 * Si el proceso es de corta duración, se procesa de inmediato.
 
-AEM **Poner formularios en modo de mantenimiento**
+**Poner formularios AEM en modo de mantenimiento**
 
 1. En un explorador web, introduzca:
 
@@ -37,7 +51,7 @@ AEM **Poner formularios en modo de mantenimiento**
    >
    >Si apaga el servidor mientras está en modo de mantenimiento, cuando se reinicia aún estará en modo de mantenimiento. Desactive el modo de mantenimiento cuando haya terminado sus tareas de mantenimiento.
 
-AEM **Compruebe si formularios en la que se está ejecutando el servicio de mantenimiento**
+**Compruebe si AEM Forms se está ejecutando en modo de mantenimiento**
 
 1. En un explorador web, introduzca:
 

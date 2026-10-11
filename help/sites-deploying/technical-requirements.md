@@ -6,13 +6,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 06cdf1211a48838d1e578d1d804aad00cd01eb79
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3853'
 ht-degree: 12%
-
 ---
-
 # Requisitos técnicos{#technical-requirements}
 
 Adobe admite (AEM) Adobe Experience Manager en las plataformas, tal como se detalla en la siguiente información de este documento.
@@ -101,7 +113,8 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
 | Azul Zulu OpenJDK 11 de 64 bits | A: Compatible `[3]` | |
 | Azul Zulu OpenJDK 8 - 64 bits | A: Compatible `[3]` | |
 
-1. Oracle se ha trasladado a un modelo de &quot;Soporte a largo plazo&quot; (LTS) para los productos de Oracle Java™ SE. Java™ 9, Java™ 10 y Java™ 12 son versiones que no son de LTS de Oracle (consulte [Guía de asistencia de Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en un entorno de producción, Adobe solo es compatible con las versiones LTS de Java™. Adobe ofrece asistencia técnica y distribución del JDK de Oracle Java™ SE, incluidas todas las actualizaciones de mantenimiento de las versiones anteriores, directamente a todos los clientes de AEM que utilicen la tecnología Oracle Java™ SE. Consulte la [directiva de soporte de Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).   **Importante: Oracle Java™ 17 y 21 son compatibles con [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+1. Oracle se ha trasladado a un modelo de &quot;Soporte a largo plazo&quot; (LTS) para los productos de Oracle Java™ SE. Java™ 9, Java™ 10 y Java™ 12 son versiones que no son de LTS de Oracle (consulte [Guía de asistencia de Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en un entorno de producción, Adobe solo es compatible con las versiones LTS de Java™. Adobe ofrece asistencia técnica y distribución del JDK de Oracle Java™ SE, incluidas todas las actualizaciones de mantenimiento de las versiones anteriores, directamente a todos los clientes de AEM que utilicen la tecnología Oracle Java™ SE. Consulte la [directiva de soporte de Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+   **Importante: Oracle Java™ 17 y 21 son compatibles con [AEM 6.5 LTS](https://experienceleague.adobe.com/es/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. El JRE de IBM® solo se admite junto con el servidor de aplicaciones WebSphere®.
 
@@ -525,10 +538,10 @@ La reescritura de XMP es compatible y está habilitada para las siguientes plata
 
 * **Sistemas operativos:**
 
-   * Linux® (compatibilidad con aplicaciones de 32 y 32 bits en sistemas de 64 bits).
+  * Linux® (compatibilidad con aplicaciones de 32 y 32 bits en sistemas de 64 bits).
 
-   * Windows Server
-   * macOS X (64 bits)
+  * Windows Server
+  * macOS X (64 bits)
 
 * **Formatos de archivo**: JPEG, PNG, TIFF, PDF, INDD, AI y EPS.
 

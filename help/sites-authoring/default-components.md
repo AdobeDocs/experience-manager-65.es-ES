@@ -5,13 +5,26 @@ exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 34%
-
+source-wordcount: '442'
+ht-degree: 37%
 ---
-
 # Componentes{#components}
 
 Adobe Experience Manager (AEM) incorpora varios componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web. Están disponibles durante [la edición de una página](/help/sites-authoring/editing-content.md) y se agrupan por áreas funcionales principales (denominadas grupos de componentes) para ayudar a efectuar la filtración.
@@ -24,7 +37,7 @@ Los componentes están disponibles cuando [edita una página](/help/sites-author
 >
 >Según la instancia, puede tener componentes personalizados desarrollados explícitamente para sus necesidades. Pueden incluso tener el mismo nombre que algunos de los componentes mencionados aquí.
 
-## Uso general   {#general-usage}
+## Uso general {#general-usage}
 
 Los componentes están disponibles en la pestaña **Componentes** del panel lateral del editor de página al [editar una página](/help/sites-authoring/editing-content.md).
 
@@ -35,7 +48,7 @@ Puede seleccionar un componente y arrastrarlo a la ubicación requerida en la p�
 
 * [Editar contenido: modo pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Para obtener más información sobre cómo agregar componentes a una página, consulte [Edición del contenido de la página](/help/sites-authoring/editing-content.md).
+Para obtener más información sobre cómo añadir componentes a una página, consulte [Edición del contenido de la página](/help/sites-authoring/editing-content.md).
 Los componentes se ordenan según varias categorías denominadas grupos de componentes. Algunos ejemplos de estos grupos de componentes son:
 
 * **We.Retail**: incluye los componentes principales procesados como proxy para usarlos con la [implementación de referencia de We.Retail](/help/sites-developing/we-retail.md).

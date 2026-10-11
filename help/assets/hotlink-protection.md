@@ -9,18 +9,29 @@ role: User, Admin
 exl-id: 698e8bdb-9b31-49ab-8560-26b05109bb23
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 0%
-
+source-wordcount: '206'
+ht-degree: 3%
 ---
-
 # Activar la protección de vínculos interactivos en Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-La vinculación activa se produce cuando un sitio web de terceros utiliza un código de HTML para mostrar una imagen del sitio web. Utilizan el ancho de banda cada vez que se solicita la imagen, ya que el explorador del visitante accede a ella directamente desde el servidor. La protección de vínculos interactivos *protection* es un método para evitar que otros sitios web se vinculen directamente a imágenes, CSS o JavaScript en sus páginas web. Este tipo de escudo ayuda a reducir el uso innecesario del ancho de banda en su cuenta de Dynamic Media.
+La vinculación activa se produce cuando un sitio web de terceros utiliza código HTML para mostrar una imagen del sitio web. Utilizan el ancho de banda cada vez que se solicita la imagen, ya que el explorador del visitante accede a ella directamente desde el servidor. La protección de vínculos interactivos *protection* es un método para evitar que otros sitios web se vinculen directamente a imágenes, CSS o JavaScript en sus páginas web. Este tipo de escudo ayuda a reducir el uso innecesario del ancho de banda en su cuenta de Dynamic Media.
 
-[Atención al cliente Experience Manager](https://experienceleague.adobe.com/es?support-solution=Experience+Manager&lang=es#support) puede configurar un filtro de referente en el nivel de CDN (red de distribución de contenido) para que el contenido de Dynamic Media solo se ofrezca a los sitios web de su lista de sitios web permitidos para el dominio.
+[Atención al cliente de Experience Manager](https://experienceleague.adobe.com/es?support-solution=Experience+Manager?lang=es#support) puede configurar un filtro de referente en el nivel CDN (red de distribución de contenido) para que el contenido de Dynamic Media solo se ofrezca a los sitios web de su lista de sitios web permitidos para el dominio.
 
 >[!NOTE]
 >

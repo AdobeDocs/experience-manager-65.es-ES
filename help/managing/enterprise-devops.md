@@ -9,13 +9,27 @@ exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: ht
-source-wordcount: '983'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '988'
 ht-degree: 100%
-
 ---
-
 # Operaciones de desarrollo empresarial{#enterprise-devops}
 
 Las DevOps abarcan los procesos, métodos y comunicaciones necesarios para lo siguiente:
@@ -124,9 +138,9 @@ Los proyectos de AEM suelen activar la implementación del código:
 
 ![chlimage_1](assets/chlimage_1.png)
 
-## Movimiento de contenido  {#content-movement}
+## Movimiento de contenido {#content-movement}
 
-El contenido que se esté creando para la producción **siempre** se debe crear en la instancia de creación de producción.
+El contenido que se esté creando para la producción **siempre** se debe crear en la instancia de autor de producción.
 
 El contenido no debe seguir el movimiento del código de entornos inferiores a los superiores, ya que hacer que los autores creen contenido en máquinas locales o entornos inferiores y luego moverlo al entorno de producción no es una buena práctica y es probable que presente errores e incoherencias.
 

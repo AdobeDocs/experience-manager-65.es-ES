@@ -10,13 +10,20 @@ exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '285'
 ht-degree: 0%
-
 ---
-
 # Modificar el aspecto visual (HBS) {#alter-the-appearance-hbs}
 
 Ahora que los componentes del sistema de comentarios personalizado del directorio de aplicaciones (/apps) están instalados, con un resourceSuperType que hace referencia al sistema de comentarios predeterminado y el modelo/vista personalizado registrado, puede editar la implementación.
@@ -33,23 +40,23 @@ Usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Abrir [/apps/custom/components/comments/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-   * Comente la etiqueta que incluye el avatar para una publicación de comentario (~ línea 21):
+  * Comente la etiqueta que incluye el avatar para una publicación de comentario (~ línea 21):
 
-     ```
-       <!--
-        <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-        -->
-     ```
+    ```
+      <!--
+       <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+       -->
+    ```
 
 * Abrir [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
-   * Convierta en comentario la etiqueta que incluye el avatar para la siguiente entrada de comentario (~ línea 44):
+  * Convierta en comentario la etiqueta que incluye el avatar para la siguiente entrada de comentario (~ línea 44):
 
-     ```
-       <!--
-        <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
-        -->
-     ```
+    ```
+      <!--
+       <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
+       -->
+    ```
 
 * Seleccionar **Guardar todo**
 
@@ -61,11 +68,11 @@ Una forma de hacerlo es:
 
 * Desde el menú principal
 
-   * Seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**.
-   * Seleccione **[!UICONTROL Activar árbol]**.
-   * Establezca `Start Path` en `/apps/custom`.
-   * Anular la selección de **[!UICONTROL Solo modificadas]**.
-   * Seleccione el botón **[!UICONTROL Activar]**.
+  * Seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**.
+  * Seleccione **[!UICONTROL Activar árbol]**.
+  * Establezca `Start Path` en `/apps/custom`.
+  * Anular la selección de **[!UICONTROL Solo modificadas]**.
+  * Seleccione el botón **[!UICONTROL Activar]**.
 
 ### Ver comentario modificado en la página de muestra publicada {#view-modified-comment-on-published-sample-page}
 

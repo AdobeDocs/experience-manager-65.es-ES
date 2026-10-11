@@ -12,13 +12,27 @@ feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: a16e03b7-8456-4383-8860-31ab5ab00e9e
+    internal-label: Image presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3900'
+source-wordcount: '3995'
 ht-degree: 7%
-
 ---
-
 # Administrar ajustes preestablecidos de imagen de Dynamic Media{#managing-image-presets}
 
 Los ajustes preestablecidos de imagen permiten a Adobe Experience Manager Assets entregar dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
@@ -329,7 +343,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
       Elección
      <strong>GIF</strong> o
      <strong>GIF con alfa</strong> proporciona estos elementos adicionales
-     Opciones de <strong>cuantificación de color GIF</strong>:
+     <strong>Cuantificación de color GIF</strong> opciones:
     </div>
     <ul>
      <li><strong>Escriba </strong>- Seleccione <strong>Adaptable</strong> (predeterminado), <strong>Web</strong> o <strong>Macintosh</strong>. Si selecciona <strong>GIF con Alpha</strong>, la opción Macintosh no estará disponible.</li>
@@ -404,7 +418,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
     </ul>
     <div>
       El enfoque se describe en
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=es">Imágenes de enfoque</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">Imágenes de enfoque</a>.
     </div> </td>
   </tr>
   <tr>

@@ -1,19 +1,33 @@
 ---
 title: Descarga de recursos
-description: Obtenga información sobre cómo descargar recursos de  [!DNL Adobe Experience Manager]  y habilitar o deshabilitar la funcionalidad de descarga.
+description: Obtenga información sobre cómo descargar recursos de [!DNL Adobe Experience Manager] y habilitar o deshabilitar la funcionalidad de descarga.
 contentOwner: AG
 role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: d2b070a9-76bf-4422-902f-be20e963fd42
+    internal-label: Asset distribution
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 3%
-
+source-wordcount: '968'
+ht-degree: 7%
 ---
-
 # Descargar recursos de [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
 | Versión | Vínculo del artículo |

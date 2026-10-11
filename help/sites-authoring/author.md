@@ -5,13 +5,26 @@ exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 26%
-
+source-wordcount: '560'
+ht-degree: 28%
 ---
-
 # Creación{#authoring}
 
 ## Concepto de creación (y publicación) {#concept-of-authoring-and-publishing}
@@ -72,14 +85,14 @@ Si el sitio de AEM es un [sitio de la comunidad](/help/communities/overview.md) 
 >
 >Lamentablemente, a veces se produce una superposición en la terminología utilizada. Esto puede ocurrir con:
 >
->* **Publicar / Cancelar publicación**
->  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los usuarios en su entorno de publicación.
+>* **Publicar/Cancelar publicación**
+>  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
 >* **Activar/Desactivar**
 >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
->* **Replicar/Replicación**
->  Estos son los términos técnicos utilizados para indicar el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
+>* **Replicar/replicación**
+>  Son los términos técnicos utilizados para indicar el movimiento de datos (por ejemplo, contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
 >
 
 #### Dispatcher {#dispatcher}

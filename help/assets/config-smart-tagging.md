@@ -1,17 +1,31 @@
 ---
 title: Configuración del etiquetado de recursos mediante el servicio de contenido inteligente
-description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en  [!DNL Adobe Experience Manager] mediante el servicio de contenido inteligente.
+description: Obtenga información sobre cómo configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager] mediante el servicio de contenido inteligente.
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2294'
-ht-degree: 13%
-
+source-wordcount: '2325'
+ht-degree: 14%
 ---
-
 # Preparar [!DNL Assets] para el etiquetado inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
 Para poder empezar a etiquetar recursos con Smart Content Services, integre [!DNL Experience Manager Assets] con Adobe Developer Console para usar el servicio inteligente de [!DNL Adobe AI]. Una vez configurado, entrene el servicio con algunas imágenes y una etiqueta.
@@ -429,7 +443,7 @@ Puede habilitar el Servicio de contenido inteligente para que se imparta formaci
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Una vez seleccionada esta opción para una carpeta, [!DNL Experience Manager] ejecuta un flujo de trabajo de formación automáticamente para entrenar el servicio de contenido inteligente en los recursos de la carpeta y sus etiquetas. De manera predeterminada, el flujo de trabajo de formación se ejecuta semanalmente a las 12:30 a.m. los sábados.
+Una vez seleccionada esta opción para una carpeta, [!DNL Experience Manager] ejecuta un flujo de trabajo de formación automáticamente para entrenar el servicio de contenido inteligente en los recursos de la carpeta y sus etiquetas. De forma predeterminada, el flujo de trabajo de formación se ejecuta semanalmente a las 12:30 los sábados.
 
 ### Formación a la carta {#on-demand-training}
 
@@ -467,9 +481,9 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 
 * Las etiquetas inteligentes mejoradas se basan en modelos de aprendizaje de imágenes y sus etiquetas. Estos modelos no siempre son perfectos para identificar etiquetas. La versión actual del servicio de contenido inteligente tiene las siguientes limitaciones:
 
-   * Incapacidad para reconocer diferencias sutiles en las imágenes. Por ejemplo, camisetas ajustadas delgadas versus regulares.
-   * Incapacidad para identificar etiquetas en función de patrones o partes diminutos de una imagen. Por ejemplo, logotipos en camisetas.
-   * El etiquetado es compatible con las configuraciones regionales que admiten [!DNL Experience Manager].
+  * Incapacidad para reconocer diferencias sutiles en las imágenes. Por ejemplo, camisetas ajustadas delgadas versus regulares.
+  * Incapacidad para identificar etiquetas en función de patrones o partes diminutos de una imagen. Por ejemplo, logotipos en camisetas.
+  * El etiquetado es compatible con las configuraciones regionales que admiten [!DNL Experience Manager].
 
 * Para buscar recursos con etiquetas inteligentes (regulares o mejoradas), use el Omnisearch [!DNL Assets] (búsqueda de texto completo). No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
 

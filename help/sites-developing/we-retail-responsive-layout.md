@@ -9,13 +9,22 @@ exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 6%
-
+source-wordcount: '261'
+ht-degree: 13%
 ---
-
 # Prueba del diseño interactivo en We.Retail{#trying-out-responsive-layout-in-we-retail}
 
 Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseño proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se usa junto con el modo **Diseño** en el editor de páginas, lo que le permite crear y editar su diseño interactivo en función del dispositivo.

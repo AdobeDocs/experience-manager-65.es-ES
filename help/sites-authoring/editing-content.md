@@ -10,13 +10,26 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3030'
 ht-degree: 45%
-
 ---
-
 # Edición del contenido de una página{#editing-page-content}
 
 Una vez creada la página (nueva o como parte de un lanzamiento o Live Copy), puede editar el contenido para realizar las actualizaciones que requiera.
@@ -269,9 +282,9 @@ Las acciones disponibles para el usuario se muestran según corresponda y es pos
 
   Esto pega el componente del portapapeles en la página. El hecho de que el original permanezca depende de si ha utilizado copiar o cortar.
 
-   * Puede pegar componentes en la misma página o en otra distinta.
-   * El elemento se pegará sobre el elemento en el que seleccione la acción de pegar.
-   * La acción Pegar solo se muestra si hay contenido en el portapapeles.
+  * Puede pegar componentes en la misma página o en otra distinta.
+  * El elemento se pegará sobre el elemento en el que seleccione la acción de pegar.
+  * La acción Pegar solo se muestra si hay contenido en el portapapeles.
 
   ![Pegar](assets/screen_shot_2018-03-22at113553.png)
 
@@ -514,15 +527,15 @@ Las páginas se pueden bloquear desde:
 
 * consola **Sitios**
 
-   1. Seleccione la página con el [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Seleccione el icono de bloqueo.
+  1. Seleccione la página con el [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+  1. Seleccione el icono de bloqueo.
 
   ![Icono de candado](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
 
-   1. Para abrir el menú, seleccione el icono **Información de la página**.
-   1. Seleccione la opción **bloquear página**.
+  1. Para abrir el menú, seleccione el icono **Información de la página**.
+  1. Seleccione la opción **bloquear página**.
 
 Una vez bloqueada, la información de la vista de la consola se actualiza y, al editar, se muestra un símbolo de bloqueo en la barra de herramientas.
 

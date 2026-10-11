@@ -8,18 +8,32 @@ role: Admin,User
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '878'
 ht-degree: 51%
-
 ---
-
 # Portal de Forms | Gestión de datos de usuario {#forms-portal-handling-user-data}
 
-El portal [!DNL AEM Forms] proporciona componentes que puede utilizar para ver una lista de los formularios adaptables, los formularios de HTML5 y otros recursos de Forms en la página [!DNL AEM Sites]. Asimismo, puede configurarla para que muestre los borradores, los formularios adaptables enviados y los formularios HTML5 de un usuario que ha iniciado sesión. Para obtener más información sobre el portal de Forms, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
+El portal [!DNL AEM Forms] proporciona componentes que puede utilizar para ver una lista de los formularios adaptables, los formularios HTML5 y otros recursos de Forms en la página [!DNL AEM Sites]. Asimismo, puede configurarla para que muestre los borradores, los formularios adaptables enviados y los formularios HTML5 de un usuario que ha iniciado sesión. Para obtener más información sobre el portal de Forms, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
 
-Cuando un usuario que ha iniciado sesión guarda un formulario adaptable como borrador o lo envía, se muestra en las pestañas Borradores y Envíos del portal de Forms. AEM Los datos de los formularios redactados o enviados se almacenan en el almacén de datos configurado para la implementación de la. Los borradores y los envíos de los usuarios anónimos no se muestran en la página del portal de Forms; sin embargo, los datos se almacenan en el almacén de datos configurado. Consulte [Configuración de servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
+Cuando un usuario que ha iniciado sesión guarda un formulario adaptable como borrador o lo envía, se muestra en las pestañas Borradores y Envíos del portal de Forms. Los datos de los formularios redactados o enviados se almacenan en el almacén de datos configurado para la implementación de AEM. Los borradores y los envíos de los usuarios anónimos no se muestran en la página del portal de Forms; sin embargo, los datos se almacenan en el almacén de datos configurado. Consulte [Configuración de servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Almacenamiento de datos y datos de usuarios {#user-data-and-data-stores}
 
@@ -45,17 +59,17 @@ Según la persistencia del almacén de datos configurado, los datos de los borra
   </tr>
   <tr>
    <td><p>Predeterminado</p> </td>
-   <td><p>AEM Repositorio de instancias de autor y Publish de</p> </td>
+   <td><p>Repositorio de instancias de autor y publicación de AEM</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Remoto</p> </td>
-   <td><p>AEM AEM Repositorio de instancias de autor y de remoto</p> </td>
+   <td><p>Repositorio de AEM de instancias de autor y remotas de AEM</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Base de datos</p> </td>
-   <td><p>AEM Repositorio de instancias de autor y tablas de bases de datos de</p> </td>
+   <td><p>Repositorio de instancias de autor y tablas de bases de datos de AEM</p> </td>
    <td><code>data</code>, <code>metadata</code> y tablas de bases de datos <code>additionalmetadata</code></td>
   </tr>
  </tbody>
@@ -93,13 +107,13 @@ La siguiente tabla explica cómo se almacenan los datos de todos los borradores 
 
 #### Eliminar los datos de usuario {#delete-user-data}
 
-Para eliminar por completo los datos de usuario de los borradores y los envíos de un usuario que ha iniciado sesión de los sistemas de AEM, debe eliminar el nodo `user ID` de un usuario específico del nodo Autor. AEM Elimine manualmente los datos de todas las instancias de aplicables.
+Para eliminar por completo los datos de usuario de los borradores y los envíos de un usuario que ha iniciado sesión de los sistemas de AEM, debe eliminar el nodo `user ID` de un usuario específico del nodo Autor. Elimine manualmente los datos de todas las instancias de AEM aplicables.
 
-Los datos de los borradores y los envíos de todos los usuarios anónimos se almacenan en los nodos comunes `drafts` y `submit` en `/content/forms/fp/anonymous`. No existe ningún método para buscar los datos de un usuario anónimo en particular a menos que se conozca algún tipo de información identificable. AEM AEM AEM En este caso, puede buscar información que identifique al usuario anónimo en el repositorio de y eliminar manualmente el nodo que lo contiene de todas las instancias de aplicables para eliminar los datos del sistema de la. Sin embargo, si desea eliminar los datos de todos los usuarios anónimos, puede eliminar el nodo `anonymous` para eliminar los datos de los borradores y los envíos de todos los usuarios anónimos.
+Los datos de los borradores y los envíos de todos los usuarios anónimos se almacenan en los nodos comunes `drafts` y `submit` en `/content/forms/fp/anonymous`. No existe ningún método para buscar los datos de un usuario anónimo en particular a menos que se conozca algún tipo de información identificable. En este caso, puede buscar información que identifique al usuario anónimo en el repositorio de AEM y eliminar manualmente el nodo que lo contiene de todas las instancias de AEM aplicables para eliminar los datos del sistema de AEM. Sin embargo, si desea eliminar los datos de todos los usuarios anónimos, puede eliminar el nodo `anonymous` para eliminar los datos de los borradores y los envíos de todos los usuarios anónimos.
 
 ### Base de datos {#database}
 
-AEM Cuando se configura el almacenamiento de datos en una base de datos, los datos de los borradores y los envíos del portal de Forms se almacenan en las siguientes tablas de bases de datos para los usuarios que han iniciado sesión y los usuarios anónimos:
+Cuando AEM está configurado para almacenar datos en una base de datos, los datos de los borradores y los envíos del portal de Forms se almacenan en las siguientes tablas de bases de datos para los usuarios que han iniciado sesión y los usuarios anónimos:
 
 * data
 * metadatos

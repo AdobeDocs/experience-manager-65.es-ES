@@ -10,16 +10,25 @@ exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 0%
-
+source-wordcount: '943'
+ht-degree: 3%
 ---
-
 # Plantillas{#templates}
 
-AEM Las plantillas se utilizan en varios puntos de la lista de elementos
+Las plantillas se utilizan en distintos puntos de AEM:
 
 * [Cuando crea una página, selecciona una plantilla](#templates-pages). Esta plantilla se utiliza como base para la nueva página. La plantilla define la estructura de la página, cualquier contenido inicial y los [componentes](/help/sites-authoring/default-components.md) que se pueden usar (propiedades de diseño).
 
@@ -29,8 +38,8 @@ Las siguientes plantillas se tratan en detalle:
 
 * [Plantillas de página: editables](/help/sites-developing/page-templates-editable.md)
 * [Plantillas de página: estáticas](/help/sites-developing/page-templates-static.md)
-* [Plantillas de fragmentos de contenido](/help/sites-developing/content-fragment-templates.md)
-* [Representación de plantilla adaptable](/help/sites-developing/templates-adaptive-rendering.md)
+* [Lanzamiento de fragmentos de contenido](/help/sites-developing/content-fragment-templates.md)
+* [Renderizado de plantilla adaptable](/help/sites-developing/templates-adaptive-rendering.md)
 
 ## Plantillas - Páginas {#templates-pages}
 
@@ -42,7 +51,7 @@ AEM ahora ofrece dos tipos básicos de plantillas para crear páginas:
 
 ### Plantillas editables {#editable-templates}
 
-AEM Ahora, las plantillas editables se consideran prácticas recomendadas para desarrollar con los.
+Las plantillas editables ahora se consideran prácticas recomendadas para el desarrollo con AEM.
 
 Las ventajas de las plantillas editables:
 
@@ -50,9 +59,9 @@ Las ventajas de las plantillas editables:
 
 * Se han introducido para permitirle definir lo siguiente para cualquier página creada con la plantilla:
 
-   * la estructura
-   * el contenido inicial
-   * políticas de contenido
+  * la estructura
+  * el contenido inicial
+  * políticas de contenido
 
 * Una vez creada la nueva página, se mantiene una conexión dinámica entre la página y la plantilla. Esta conexión significa que los cambios en la estructura de la plantilla se reflejan en cualquier página creada con esa plantilla; los cambios en el contenido inicial no se reflejan.
 * Utiliza directivas de contenido (editadas desde el editor de plantillas) para mantener las propiedades de diseño (no utiliza el modo Diseño en el editor de páginas).
@@ -61,14 +70,14 @@ Las ventajas de las plantillas editables:
 
 >[!NOTE]
 >
->Consulte [Uso de plantillas de página editables para desarrollar un sitio de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=es).
+>Vea [Uso de plantillas de página editables para desarrollar un sitio Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=es).
 
 ### Plantillas estáticas {#static-templates}
 
 Plantillas estáticas:
 
 * Los desarrolladores deben definirlo y configurarlo.
-* AEM El sistema de creación de plantillas original de la aplicación de plantillas de que ha estado disponible para muchas versiones.
+* El sistema de creación de plantillas original de AEM que ha estado disponible para muchas versiones.
 * Una plantilla estática es una jerarquía de nodos que tiene la misma estructura que la página que se va a crear, pero sin contenido real.
 * Se copian para crear la página, no existe ninguna conexión dinámica posteriormente.
 * Utiliza [Modo de diseño](/help/sites-authoring/default-components-designmode.md) para mantener las propiedades de diseño.
@@ -77,9 +86,9 @@ Plantillas estáticas:
 
 >[!NOTE]
 >
->AEM A partir de la versión 6.5, el uso de plantillas estáticas no se considera una práctica recomendada. En su lugar, utilice Plantillas editables.
+>A partir de la versión 6.5 de AEM, el uso de plantillas estáticas no se considera una práctica recomendada. En su lugar, utilice Plantillas editables.
 >
->AEM Las herramientas de [modernización de la](modernization-tools.md) pueden ayudarle a migrar de plantillas estáticas a editables.
+>Las herramientas de [modernización de AEM](modernization-tools.md) pueden ayudarle a migrar de plantillas estáticas a editables.
 
 ### Disponibilidad de la plantilla {#template-availability}
 

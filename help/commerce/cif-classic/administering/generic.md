@@ -1,6 +1,6 @@
 ---
 title: Administración de comercio electrónico genérico
-description: AEM La solución genérica de la aplicación proporciona métodos para administrar la información comercial que se mantiene dentro del repositorio.
+description: La solución genérica de AEM proporciona métodos para administrar la información comercial que se mantiene dentro del repositorio.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
@@ -9,16 +9,24 @@ exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2907'
+source-wordcount: '2961'
 ht-degree: 2%
-
 ---
-
 # Administración de comercio electrónico genérico {#administering-generic-ecommerce}
 
-La solución genérica de Adobe Experience Manager AEM () proporciona métodos para administrar la información comercial que se mantiene dentro del repositorio (en lugar de utilizar un motor de comercio electrónico externo). Esto incluye:
+La solución genérica de Adobe Experience Manager (AEM) proporciona métodos para administrar la información comercial que se mantiene dentro del repositorio (en lugar de utilizar un motor de comercio electrónico externo). Esto incluye lo siguiente:
 
 * [Productos](/help/commerce/cif-classic/administering/concepts.md#products)
 * [Variantes del producto](/help/commerce/cif-classic/administering/concepts.md#product-variants)
@@ -30,7 +38,7 @@ La solución genérica de Adobe Experience Manager AEM () proporciona métodos p
 
 >[!NOTE]
 >
->AEM AEM La instalación estándar de la incluye la implementación genérica de comercio electrónico de (JCR).
+>La instalación estándar de AEM incluye la implementación genérica de AEM (JCR) eCommerce.
 >
 >Se ha diseñado con fines de demostración o como base básica para una implementación personalizada según sus necesidades.
 
@@ -49,7 +57,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 
 >[!NOTE]
 >
->La tienda de Geometrixx-Outdoors tiene un solo tipo de producto (y por lo tanto un solo andamio):
+>La tienda Geometrixx-Outdoors tiene un solo tipo de producto (y, por lo tanto, un solo andamio):
 >
 >`/etc/scaffolding/geometrixx-outdoors`
 >
@@ -118,7 +126,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 
    * **Proveedor de Commerce**
 
-     Geometrixx El importador de su [proveedor comercial](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); de forma predeterminada.
+     El importador de su [proveedor comercial](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); de forma predeterminada, Geometrixx.
 
    * **Archivo Source**
 
@@ -220,7 +228,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 
 #### Ampliación de la búsqueda {#extending-search}
 
-Puede modificar una faceta existente o agregar otras nuevas mediante el CRXDE Lite:
+Puede modificar una faceta existente o agregar otras nuevas mediante CRXDE Lite:
 
 1. Vaya a:
 
@@ -254,7 +262,7 @@ Puede agregar varios recursos en el componente del producto y, a continuación, 
 
    ![Agregando captura de pantalla de datos del producto](/help/sites-administering/assets/chlimage_1-91.png)
 
-1. Seleccione **Agregar**. Aparece un nuevo marcador de posición de recurso.
+1. Seleccione **Añadir**. Aparece un nuevo marcador de posición de recurso.
 1. Al seleccionar **Cambiar**, se abre un cuadro de diálogo que le permite elegir un recurso.
 1. Seleccione el recurso que desea agregar.
 
@@ -300,7 +308,7 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
 1. Vaya a la página del producto.
 1. **Editar** el componente del producto.
 1. Escriba la **Categoría de imagen** que eligió (`cat1` por ejemplo).
-1. Seleccione **Listo**.  La página se actualiza y se debe mostrar el recurso correcto.
+1. Seleccione **Listo**. La página se actualiza y se debe mostrar el recurso correcto.
 
 #### Catálogo  {#catalog}
 
@@ -327,9 +335,9 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
 
 >[!NOTE]
 >
->A menudo, la información del producto se publica a través de las páginas que hacen referencia a ella. AEM Por ejemplo, al publicar la página X que hace referencia al producto Y, el usuario pregunta si también desea publicar el producto Y.
+>A menudo, la información del producto se publica a través de las páginas que hacen referencia a ella. Por ejemplo, al publicar la página X que hace referencia al producto Y, AEM le pregunta si también desea publicar el producto Y.
 >
->AEM Para casos especiales, también admite la publicación directa desde los datos del producto de, lo que también es compatible con la.
+>Para casos especiales, AEM también admite la publicación directa desde los datos del producto.
 
 1. Con la consola **Productos** (a través de **Commerce**), desplácese hasta la información de su producto.
 1. Con:
@@ -337,7 +345,7 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Seleccione el icono **Publish** o **Cancelar publicación** según sea necesario:
+   Seleccione el icono **Publicar** o **Cancelar la publicación** según sea necesario:
 
    ![icono del mundo](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![icono del mundo con una cruz - sin signo](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
@@ -373,7 +381,7 @@ Puede verlas en la consola web en eventos OSGI ( `/system/console/events`), por 
 
 >[!NOTE]
 >
->AEM Lea también [Control de eventos en el &#x200B;](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/) de la página de la aplicación de eventos de la página de.
+>Lea también [Control de eventos en AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/).
 
 ### La imagen con vínculos Añadir a carro {#image-with-add-to-cart-links}
 
@@ -384,7 +392,7 @@ Al hacer clic en el punto interactivo se abre un cuadro de diálogo que le permi
 1. Vaya a la página en la que desea agregar el componente.
 1. Arrastre y suelte el componente en la página.
 1. Arrastre y suelte una imagen en el componente desde el [explorador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. Puede:
+1. Puede realizar una de las acciones siguientes:
 
    * haga clic en el componente y, a continuación, en el icono Editar
    * hacer un doble clic lento
@@ -498,7 +506,7 @@ Para generar un catálogo:
 
 1. Abra la nueva página de `Swimwear` y luego haga clic en **Editar modelo**. Se abre el cuadro de diálogo **Propiedades** para que pueda configurar la selección de **Productos**.
 
-   Por ejemplo, abra el campo **Etiquetas/Palabras clave** para seleccionar Actividad y, a continuación, Natación en la sección Geometrixx-Naturaleza.
+   Por ejemplo, abra el campo **Etiquetas/Palabras clave** para seleccionar Actividad y, a continuación, Natación en la sección Geometrixx-Outdoors.
 
 1. Haga clic en **Aceptar** para guardar las propiedades; los productos de ejemplo se muestran bajo los **criterios de selección de productos** en la página de modelo.
 1. Haga clic en **Cambios de despliegue...**, seleccione **Página de despliegue y todas las páginas secundarias**, luego haga clic en **Siguiente** y después en **Despliegue**. Una vez que el despliegue se complete correctamente, el indicador **Status** se mostrará en verde.
@@ -637,15 +645,15 @@ Para cambiar las propiedades de un cupón o promoción, puedes hacer doble clic 
 
 Para permitir que los usuarios agreguen cupones a sus carros de compras, puede usar el componente integrado **Cupones** (categoría Commerce). Añádalo a la misma página donde se muestra el carro de compras (pero esto no es obligatorio). El componente de cupones es simplemente una forma en la que el usuario puede introducir un código de cupón, es el componente del carro de compras el que realmente muestra la lista de cupones aplicados y su descuento.
 
-En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formulario de cupón en la página del carro de compras, debajo del carro de compras real.
+En el sitio de muestra (Geometrixx Outdoors - Inglés) puede ver el formulario de cupón en la página del carro de compras, debajo del carro de compras real.
 
 ## Pedidos {#orders}
 
 >[!NOTE]
 >
->AEM Debe tenerse en cuenta que el servicio preestablecido no tiene las acciones necesarias para la funcionalidad estándar relacionada con los pedidos, como devolver mercancía, actualizar el estado del pedido, realizar el cumplimiento o generar albaranes. Está pensado principalmente como una previsualización tecnológica.
+>Debe tenerse en cuenta que AEM no dispone de las acciones necesarias para la funcionalidad estándar relacionada con los pedidos, como devolver mercancías, actualizar el estado del pedido, realizar el cumplimiento y generar albaranes. Está pensado principalmente como una previsualización tecnológica.
 >
->El Order Management AEM genérico en el que se ha mantenido la configuración se ha mantenido básica; los campos disponibles en el asistente dependen del andamio:
+>El Order Management genérico en AEM se ha mantenido básico; los campos disponibles en el asistente dependen del andamio:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >Si crea un andamio personalizado, puede almacenar más información sobre los pedidos.

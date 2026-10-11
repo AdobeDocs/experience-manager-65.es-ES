@@ -8,13 +8,27 @@ feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c73531c3-4c05-471e-beff-cefb35857910
+    internal-label: Collections
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2201'
 ht-degree: 15%
-
 ---
-
 # Administrar colecciones {#managing-collections}
 
 | Versión | Vínculo del artículo |
@@ -117,7 +131,7 @@ Para crear una colección inteligente, siga los pasos:
 Puede agregar recursos a una colección que contenga una lista de recursos o carpetas a los que se hace referencia. Las colecciones inteligentes utilizan una consulta de búsqueda para rellenar recursos. Por lo tanto, las referencias estáticas a recursos y carpetas no son aplicables a ellos.
 
 1. En la interfaz de usuario de [!DNL A]Assets, seleccione el recurso y haga clic en **[!UICONTROL Agregar a la colección]** ![agregar a la colección](assets/do-not-localize/add-to-collection.png) desde la barra de herramientas.
-También puede arrastrar el recurso al área **[!UICONTROL Colocar en la colección]** de la interfaz. Agregue los recursos cuando la etiqueta de la región cambie a **[!UICONTROL Colocar para agregar]**.
+También puede arrastrar el recurso al área **[!UICONTROL Colocar en colección]** de la interfaz. Agregue los recursos cuando la etiqueta de la región cambie a **[!UICONTROL Colocar para agregar]**.
 
 1. En la página **[!UICONTROL Agregar a colección]**, seleccione la colección a la que desea agregar el recurso.
 

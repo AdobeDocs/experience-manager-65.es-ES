@@ -9,13 +9,25 @@ role: Admin
 exl-id: 73b5aff2-1320-4d9a-8972-54c4fdd3a2c2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '689'
 ht-degree: 1%
-
 ---
-
 # Mitigación de vulnerabilidades de Struts 2 para Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
 ## Problema
@@ -33,12 +45,12 @@ La siguiente tabla muestra la resolución de todas las versiones afectadas:
 | Versión | Versión actual | Acción del usuario |
 |---|---|---|
 | Experience Manager 6.5 Forms en JEE | 6.5.19.0 | [Instalar el Service Pack más reciente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es) |
-| Experience Manager 6.5 Forms en JEE | 6.5.13.0: 6.5.18.0 | Utilice uno de los siguientes métodos: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es"> Instalar el Service Pack más reciente </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Usar pasos de mitigación manuales </a> |
-| Experience Manager 6.5 Forms en JEE | 6.5 - 6.5.12.0 | [Instalar el Service Pack más reciente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es) </br> </br> **NOTA:** AEM Forms admite actualmente las versiones 6.5.13.0 a 6.5.19.0. Si utiliza una versión anterior, le recomendamos que la actualice a la versión 6.5.13.0 o una posterior. AEM Para obtener instrucciones para instalar la versión 6.5.13.0 de o posterior, consulte las notas de la versión. |
+| Experience Manager 6.5 Forms en JEE | 6.5.13.0 - 6.5.18.0 | Utilice uno de los siguientes métodos: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es"> Instalar el Service Pack más reciente </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Usar pasos de mitigación manuales </a> |
+| Experience Manager 6.5 Forms en JEE | 6.5 - 6.5.12.0 | [Instalar el Service Pack más reciente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=es) </br> </br> **NOTA:** AEM Forms admite actualmente las versiones 6.5.13.0 hasta 6.5.19.0. Si utiliza una versión anterior, le recomendamos que la actualice a 6.5.13.0 o a una versión posterior. Para obtener instrucciones para instalar AEM 6.5.13.0 o una versión posterior, consulte las notas de la versión. |
 
 ### Uso de pasos de mitigación manuales {#use-manual-mitigation-steps}
 
-AEM AEM Puede utilizar los pasos de mitigación manuales para resolver el problema en el servidor de formularios 6.5 que ejecuta el paquete de servicio 13 a servidor de formularios 6.5 que ejecuta el paquete de servicio 18 (6.5.13.0 - 6.5.18.0):
+Puede utilizar los pasos de mitigación manuales para resolver el problema en el servidor de formularios AEM 6.5 que ejecuta el Service Pack 13 en el servidor de formularios AEM 6.5 que ejecuta el Service Pack 18 (6.5.13.0 - 6.5.18.0):
 
 1. Descargue [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) a una carpeta local. Por ejemplo, C:\Users\labuser\Desktop\struts2-core-2.5.33.jar.
 1. Descargue la herramienta de revisión manual de AEM Forms en JEE desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).

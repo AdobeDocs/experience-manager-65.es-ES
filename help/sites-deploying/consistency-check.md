@@ -8,13 +8,22 @@ feature: Configuring
 exl-id: 10dde29b-5dc7-4d4e-80ae-3d4fd0397f7e
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 0%
-
+source-wordcount: '156'
+ht-degree: 6%
 ---
-
 # Comprobaciones de coherencia y recorrido{#consistency-and-traversal-checks}
 
 Al actualizar, puede haber problemas debido a incoherencias en el espacio de trabajo. Puede ejecutar una actualización de prueba para ver si se trata de un problema o ejecutar las comprobaciones de coherencia como acción preventiva.
@@ -31,7 +40,7 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Realizar una comprobación de coherencia {#perform-a-consistency-check}
 
-Para realizar una comprobación de coherencia, vaya a la página de administración del Mbean JMX **com.adobe.granite (Repository)**. AEM En la pantalla principal de la, vaya a:
+Para realizar una comprobación de coherencia, vaya a la página de administración del Mbean JMX **com.adobe.granite (Repository)**. En la pantalla principal de AEM, vaya a:
 
 **Herramientas > Consola web > Principal (en la barra de menús) > JMX > com.adobe.granite (Repositorio)**
 

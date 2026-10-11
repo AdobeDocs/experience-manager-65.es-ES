@@ -9,13 +9,20 @@ role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 2%
-
+source-wordcount: '969'
+ht-degree: 1%
 ---
-
 
 # Consolas de administración de miembros y grupos {#members-groups-management-consoles}
 
@@ -87,7 +94,7 @@ La mayoría de los campos son campos opcionales que el miembro puede rellenar po
 
 (*Obligatorio*) El identificador autorizado es el identificador de inicio de sesión del miembro.
 De forma predeterminada, el ID se establece en el valor de la dirección de correo electrónico requerida.
-*Una vez creada, no se puede modificar la ID*.
+*Una vez creado, es posible que el identificador no se modifique*.
 
 * **[!UICONTROL Dirección de correo electrónico]**
 
@@ -118,19 +125,19 @@ Si la dirección de correo electrónico es la predeterminada, la ID *no* cambiar
 En Configuración de cuenta, un administrador de la comunidad puede hacer lo siguiente:
 
 * **[!UICONTROL Estado]**
-   * Prohibido
-Un miembro no puede iniciar sesión, lo que le impide ver páginas o participar en actividades que requieran iniciar sesión. Todavía pueden visitar de forma anónima un sitio de la comunidad abierto.
+  * Prohibido
+    Un miembro no puede iniciar sesión, lo que le impide ver páginas o participar en actividades que requieran iniciar sesión. Todavía pueden visitar de forma anónima un sitio de la comunidad abierto.
 
-   * Permitido
-Un miembro tiene acceso completo al sitio de la comunidad.
+  * Permitido
+    Un miembro tiene acceso completo al sitio de la comunidad.
 
   El valor predeterminado es `Not Banned`.
 
 * **[!UICONTROL Límites de contribución]**
 
   Si se selecciona, la capacidad del miembro para publicar contenido es limitada.
-El valor predeterminado depende de la configuración de los límites de contribución.
-Ver [Límites de contribución de miembros](limits.md).
+  El valor predeterminado depende de la configuración de los límites de contribución.
+  Ver [Límites de contribución de miembros](limits.md).
 
 * **[!UICONTROL Cambiar contraseña]**
 
@@ -157,10 +164,10 @@ Ver también [Puntuación e insignias](implementing-scoring.md).
 ![Ventana Editar configuración de pertenencia](assets/create-member2.png)
 
 * **[!UICONTROL Agregar insignias]**
-   * Empiece a escribir para seleccionar entre [insignias disponibles](badges.md). Una vez seleccionado un distintivo, elija cada sitio, o todos los sitios, en los que el distintivo debe mostrarse junto con el avatar del miembro.
-   * Se pueden elegir varios distintivos y sitios.
+  * Empiece a escribir para seleccionar entre [insignias disponibles](badges.md). Una vez seleccionado un distintivo, elija cada sitio, o todos los sitios, en los que el distintivo debe mostrarse junto con el avatar del miembro.
+  * Se pueden elegir varios distintivos y sitios.
 * **[!UICONTROL Quitar insignias]**
-   * Seleccione el icono de la papelera que hay junto a un distintivo para eliminarlo.
+  * Seleccione el icono de la papelera que hay junto a un distintivo para eliminarlo.
 
 ## Consola de grupos {#groups-console}
 

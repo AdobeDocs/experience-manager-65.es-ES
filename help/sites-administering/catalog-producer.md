@@ -9,13 +9,22 @@ exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
-workflow-type: ht
-source-wordcount: '846'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '859'
+ht-degree: 97%
 ---
-
 # Productor de catálogos{#catalog-producer}
 
 Aprenda a utilizar el Productor de catálogos en AEM Assets para generar catálogos de productos con sus recursos digitales.
@@ -94,8 +103,8 @@ El Productor de catálogos utiliza datos de administración de la información d
 1. Haga clic en **Siguiente**. Para añadir un archivo de InDesign existente como portada, haga clic en **Examinar** junto al cuadro **Elegir portada** y especifique la ruta de acceso para la plantilla de portada.
 1. Haga clic en **Guardar** y, a continuación, en **Listo** para cerrar el cuadro de diálogo de confirmación.
 Al seleccionar la opción **Listo**, se abre un cuadro de diálogo para seleccionar si desea la representación de .pdf.
-   ![Exportar a PDF](assets/CatalogPDF.png)
-Si se selecciona la opción Acrobat (PDF), se crea una representación del PDF en **/jcr:content/renditions**, además de la representación de InDesign. Puede descargar todas las representaciones seleccionando la casilla “Representaciones” en el cuadro de diálogo de descarga.
+   ![exportar a pdf](assets/CatalogPDF.png)
+   Si se selecciona la opción Acrobat(PDF), se crea una representación del PDF en **/jcr:content/renditions** además de la representación de indesign. Puede descargar todas las representaciones seleccionando la casilla “Representaciones” en el cuadro de diálogo de descarga.
 
 1. Para generar una vista previa del catálogo que ha creado, selecciónelo en la consola **Catálogos** y, a continuación, haga clic en el icono **Vista previa** de la barra de herramientas.
 

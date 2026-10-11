@@ -8,13 +8,22 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3615'
+source-wordcount: '3617'
 ht-degree: 2%
-
 ---
-
 # Configuración de almacenes de nodos y de datos en AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Introducción {#introduction}

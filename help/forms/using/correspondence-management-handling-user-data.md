@@ -7,13 +7,29 @@ role: Admin,User
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Form Data Model
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '555'
 ht-degree: 94%
-
 ---
-
 # Administración de correspondencia | Administrar datos de usuario {#correspondence-management-handling-user-data}
 
 Administración de correspondencia de AEM Forms le permite crear, administrar y optimizar las correspondencias seguras y personalizadas de clientes. Proporciona una interfaz de usuario intuitiva para que los usuarios de la empresa creen correspondencias mediante bloques de contenido y elementos multimedia aprobados previamente. Para obtener más información sobre la creación de correspondencias, consulte [Crear correspondencia](/help/forms/using/create-correspondence.md).
@@ -73,7 +89,7 @@ Puede acceder a los datos de correspondencia en Borradores y enviados en los rep
 
 Administración de correspondencia proporciona una API que puede utilizar para buscar y acceder a instancias de carta en Borradores y enviados. Con las API, puede encontrar y abrir instancias de carta mediante el ID de instancia de la carta o el usuario que guardó o envió la correspondencia. Para obtener más información, consulte [API para acceder a instancias de carta](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-AEM Como alternativa, puede navegar a la instancia de carta en el repositorio de mediante CRXDE Lite. Consulte [Almacenamiento de datos y datos de usuarios](/help/forms/using/correspondence-management-handling-user-data.md#data) para obtener información sobre los datos almacenados y la ubicación del repositorio.
+También puede navegar a la instancia de carta en el repositorio de AEM mediante CRXDE Lite. Consulte [Almacenamiento de datos y datos de usuarios](/help/forms/using/correspondence-management-handling-user-data.md#data) para obtener información sobre los datos almacenados y la ubicación del repositorio.
 
 ### Eliminar los datos de usuario {#delete-user-data}
 

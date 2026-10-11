@@ -9,13 +9,29 @@ exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1217'
 ht-degree: 100%
-
 ---
-
 # Descripción de los componentes reutilizables {#description-of-reusable-components}
 
 El espacio de trabajo de AEM Forms está compuesto por componentes [reutilizables](/help/forms/using/integrating-html-ws-components-web.md) organizados en una [estructura de carpetas](/help/forms/using/folder-structure.md) en CRX™. Cada componente tiene un modelo, una vista y una plantilla en la ubicación especificada en la estructura de carpetas, dependencias JavaScript™ de otros archivos de componentes, eventos escuchados por el componente y objetos JavaScript que activan estos eventos en AEM Forms Workspace. La lista completa de componentes reutilizables con nombres de archivo y dependencias constituyentes se proporciona aquí.
@@ -616,7 +632,7 @@ El espacio de trabajo de AEM Forms está compuesto por componentes [reutilizable
   </tr>
   <tr>
    <td><p>Eventos escuchados (Nombre del evento: Activador)</p></td>
-   <td><p>cambiar: modelo processname  </p></td>
+   <td><p>cambiar: modelo processname </p></td>
   </tr>
  </tbody>
 </table>
@@ -686,7 +702,7 @@ El espacio de trabajo de AEM Forms está compuesto por componentes [reutilizable
   </tr>
   <tr>
    <td><p>Eventos escuchados (Nombre del evento: Activador)</p></td>
-   <td><p>cambiar: modelo processinstance  </p></td>
+   <td><p>cambiar: modelo processinstance </p></td>
   </tr>
  </tbody>
 </table>
@@ -725,7 +741,7 @@ El espacio de trabajo de AEM Forms está compuesto por componentes [reutilizable
     <ul>
      <li><p>Processname:selected: modelo processnamelist </p></li>
      <li><p>Processinstance:selected: modelo processinstancelist </p></li>
-     <li><p>tasksFetched: modelo processinstance  </p></li>
+     <li><p>tasksFetched: modelo processinstance </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -764,9 +780,9 @@ El espacio de trabajo de AEM Forms está compuesto por componentes [reutilizable
    <td>
     <ul>
      <li><p>outOfOfficeSettingsFetched: modelo outofoffice</p> </li>
-     <li><p>outOfOfficeSettingsSaved: modelo outofoffice </p> </li>
-     <li><p>processesFetched: modelo outofoffice </p> </li>
-     <li><p>principalSelected: vista principalsearch </p> </li>
+     <li><p>outOfOfficeSettingsSaved: modelo outofoffice</p> </li>
+     <li><p>processesFetched: modelo outofoffice</p> </li>
+     <li><p>principalSelected: vista principalsearch</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -849,7 +865,7 @@ El espacio de trabajo de AEM Forms está compuesto por componentes [reutilizable
    <td>
     <ul>
      <li><p>preferencesFetched: modelo uisettings </p></li>
-     <li><p>settingUpdated: modelo uisettings  </p></li>
+     <li><p>settingUpdated: modelo uisettings </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -993,8 +1009,8 @@ El espacio de trabajo de AEM Forms está compuesto por componentes [reutilizable
    <td><p>Eventos escuchados (Nombre del evento: Activador)</p> </td>
    <td>
     <ul>
-     <li>principalSearched: modelo principalsearch </li>
-     <li>outOfOfficeInfoFetched: modelo usersearch </li>
+     <li>principalSearched: modelo principalsearch</li>
+     <li>outOfOfficeInfoFetched: modelo usersearch</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -1026,7 +1042,7 @@ El espacio de trabajo de AEM Forms está compuesto por componentes [reutilizable
   </tr>
   <tr>
    <td><p>Eventos escuchados (Nombre del evento: Activador)</p> </td>
-   <td><p>templateFetched: modelo searchtemplate </p> </td>
+   <td><p>templateFetched: modelo searchtemplate</p> </td>
   </tr>
  </tbody>
 </table>

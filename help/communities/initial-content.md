@@ -9,22 +9,29 @@ exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
-
 ---
-
 # Contenido inicial de zona protegida {#initial-sandbox-content}
 
 En esta sección, creará las siguientes páginas, todas las cuales utilizan la [plantilla de página](initial-app.md#createthepagetemplate):
 
 * Sitio de zona protegida de SCF, que redirige a la versión en inglés de la página principal.
 
-   * Zona protegida de SCF: página principal de la versión en inglés del sitio.
+  * Zona protegida de SCF: página principal de la versión en inglés del sitio.
 
-   * Reproducción SCF: elemento secundario de la página principal en la que se va a reproducir.
+  * Reproducción SCF: elemento secundario de la página principal en la que se va a reproducir.
 
 Este tutorial no profundiza en [copias de idioma](../../help/sites-administering/tc-prep.md). En su lugar, está diseñado para que la página raíz pueda implementar la detección del idioma preferido del usuario a través del encabezado de HTML y redirigirlo a la página principal adecuada para el idioma. La convención es utilizar el código de país de dos letras para el nombre del nodo de la página como, por ejemplo, &quot;en&quot; para inglés y &quot;fr&quot; para francés.
 
@@ -90,9 +97,9 @@ Se definió, lo que proporciona la capacidad opcional de hacer referencia a los 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
-   * Nombre: `cq:designPath`
-   * Tipo: `String`
-   * Valor: `/etc/designs/an-scf-sandbox`
+  * Nombre: `cq:designPath`
+  * Tipo: `String`
+  * Valor: `/etc/designs/an-scf-sandbox`
 
 * Haga clic en el elemento verde `[+] Add`
 

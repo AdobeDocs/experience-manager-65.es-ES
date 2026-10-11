@@ -9,13 +9,20 @@ role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '633'
 ht-degree: 1%
-
 ---
-
 # DSRP: proveedor de recursos de almacenamiento de base de datos relacional {#dsrp-relational-database-storage-resource-provider}
 
 ## Acerca de DSRP {#about-dsrp}
@@ -60,48 +67,48 @@ En autor, para acceder a la consola Configuración de almacenamiento
 * Iniciar sesión con privilegios de administrador
 * Desde el **menú principal**
 
-   * Seleccione **[!UICONTROL Herramientas]** (en el panel izquierdo)
-   * Seleccionar **[!UICONTROL comunidades]**
-   * Seleccionar **[!UICONTROL configuración de almacenamiento]**
+  * Seleccione **[!UICONTROL Herramientas]** (en el panel izquierdo)
+  * Seleccionar **[!UICONTROL comunidades]**
+  * Seleccionar **[!UICONTROL configuración de almacenamiento]**
 
-      * Por ejemplo, la ubicación resultante es: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
+    * Por ejemplo, la ubicación resultante es: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
 
-     >[!NOTE]
-     >
-     >La configuración de almacenamiento predeterminada ahora se almacena en la ruta de acceso conf (`/conf/global/settings/community/srpc/defaultconfiguration`) en lugar de en la ruta de acceso `etc` (`/etc/socialconfig/srpc/defaultconfiguration`). Se le aconseja que siga los [pasos de migración](#zerodt-migration-steps) para que defaultsrp funcione según lo esperado.
+    >[!NOTE]
+    >
+    >La configuración de almacenamiento predeterminada ahora se almacena en la ruta de acceso conf (`/conf/global/settings/community/srpc/defaultconfiguration`) en lugar de en la ruta de acceso `etc` (`/etc/socialconfig/srpc/defaultconfiguration`). Se le aconseja que siga los [pasos de migración](#zerodt-migration-steps) para que defaultsrp funcione según lo esperado.
 
   ![dsrp-config](assets/dsrp-config.png)
 
 * Seleccione **[!UICONTROL Proveedor de recursos de almacenamiento de la base de datos (DSRP)]**
 * **Configuración de base de datos**
 
-   * **[!UICONTROL Nombre de origen de datos JDBC]**
+  * **[!UICONTROL Nombre de origen de datos JDBC]**
 
-     El nombre dado a la conexión MySQL debe ser el mismo que se introdujo en [Configuración OSGi de JDBC](dsrp-mysql.md#configurejdbcconnections)
+    El nombre dado a la conexión MySQL debe ser el mismo que se introdujo en [Configuración OSGi de JDBC](dsrp-mysql.md#configurejdbcconnections)
 
-     *predeterminado*: comunidades
+    *predeterminado*: comunidades
 
-   * **[!UICONTROL Nombre de base de datos]**
+  * **[!UICONTROL Nombre de base de datos]**
 
-     Nombre dado al esquema en el script [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)
+    Nombre dado al esquema en el script [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)
 
-     *predeterminado*: comunidades
+    *predeterminado*: comunidades
 
 * **ConfiguraciónSolr**
 
-   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
+  * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
-     Deje este valor en blanco si ejecuta Solr con el ZooKeeper interno. De lo contrario, cuando se ejecuta en [modo SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper externo, establezca este valor en el URI del ZooKeeper, como *my.server.com:80*
+    Deje este valor en blanco si ejecuta Solr con el ZooKeeper interno. De lo contrario, cuando se ejecuta en [modo SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper externo, establezca este valor en el URI del ZooKeeper, como *my.server.com:80*
 
-     *predeterminado*: *&lt;en blanco>*
+    *predeterminado*: *&lt;en blanco>*
 
-   * **[!UICONTROL URL de Solr]**
+  * **[!UICONTROL URL de Solr]**
 
-     *predeterminado*: https://127.0.0.1:8983/solr/
+    *predeterminado*: https://127.0.0.1:8983/solr/
 
-   * **[!UICONTROL Colección Solr]**
+  * **[!UICONTROL Colección Solr]**
 
-     *predeterminado*: colección1
+    *predeterminado*: colección1
 
 * Seleccione **[!UICONTROL Enviar]**.
 
@@ -123,14 +130,14 @@ Para que la configuración idéntica esté disponible en el entorno de publicaci
 
 * En autor:
 
-   * Vaya del menú principal a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**
-   * Haga doble clic en **[!UICONTROL Activar árbol]**
-   * **Ruta de inicio**:
+  * Vaya del menú principal a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**
+  * Haga doble clic en **[!UICONTROL Activar árbol]**
+  * **Ruta de inicio**:
 
-      * Examinar `/etc/socialconfig/srpc/`
+    * Examinar `/etc/socialconfig/srpc/`
 
-   * Asegúrese de que `Only Modified` no esté seleccionado.
-   * Seleccione **[!UICONTROL Activar]**.
+  * Asegúrese de que `Only Modified` no esté seleccionado.
+  * Seleccione **[!UICONTROL Activar]**.
 
 ## Administración de datos de usuario {#managing-user-data}
 

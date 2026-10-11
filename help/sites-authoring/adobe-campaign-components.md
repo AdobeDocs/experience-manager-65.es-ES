@@ -11,13 +11,30 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 7%
-
 ---
-
 
 # Componentes de Adobe Campaign{#adobe-campaign-components}
 
@@ -162,57 +179,57 @@ Añada cualquier parámetro de URL adicional. Haga clic en Agregar elemento para
 
 >[!NOTE]
 >
->Enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>Escriba información en el campo **Tipo de vínculo** de la ficha **Información de dirección URL** o el componente no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
 
-The following example shows a Link (Campaign) component being displayed.
+El siguiente ejemplo muestra un componente Vínculo (campaña).
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-### Dynamic Media Classic (Scene7) Image Template (Campaign) {#scene-image-template-campaign}
+### Plantilla de imagen de Dynamic Media Classic (Scene7) (Campaign) {#scene-image-template-campaign}
 
-Dynamic Media Classic (Scene7) Image Templates are layered are layered image files, where content and properties can be parameterized for variability. The **[!UICONTROL Image template]** component lets you use Scene7 templates within newsletters and change the values of template parameters. In addition, you can use Adobe Campaign metadata variables inside the parameters, so that each user experiences the image in a personalized way.
+Las plantillas de imagen de Dynamic Media Classic (Scene7) se superponen a archivos de imagen superpuestos, donde el contenido y las propiedades pueden parametrizarse en función de la variabilidad. El componente **[!UICONTROL Image template]** le permite usar plantillas de Scene7 en boletines informativos y cambiar los valores de los parámetros de plantilla. Además, puede utilizar variables de metadatos de Adobe Campaign dentro de los parámetros para que cada usuario experimente la imagen de forma personalizada.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-Click **Edit** to configure the component. You can configure the settings described in this section. This Scene7 Image template is described in detail in [Scene7 Image Template component](/help/assets/scene7.md#image-template).
+Haga clic en **Editar** para configurar el componente. Puede configurar las opciones descritas en esta sección. Esta plantilla de imagen de Scene7 se describe en detalle en [Componente de plantilla de imagen de Scene7](/help/assets/scene7.md#image-template).
 
-In addition, the parameter panel lists all template parameters that have been defined for the template in Scene7. For each of these parameters, you can adapt the value, insert variables, or reset them to their default value.
+Además, el panel de parámetros enumera todos los parámetros de plantilla que se han definido para la plantilla en Scene7. Para cada uno de estos parámetros, puede adaptar el valor, insertar variables o restablecerlas a su valor predeterminado.
 
 ![chlimage_1-50](assets/chlimage_1-50.png)
 
 ### Referencia de destino (Campaign) {#targeted-reference-campaign}
 
-The Targeted Reference (Campaign) component lets you create a reference to a targeted paragraph.
+El componente Referencia de destino (Campaign) permite crear una referencia a un párrafo de destino.
 
-In this component, you navigate to the targeted paragraph to select it.
+En este componente, se desplaza al párrafo de destino para seleccionarlo.
 
-Click the folder icon to navigate to the paragraph that you want to reference. When finished, click the check mark.
+Haga clic en el icono de carpeta para desplazarse hasta el párrafo al que desee hacer referencia. Cuando termine, haga clic en la marca de verificación.
 
 ### Texto e imagen (Campaign) {#text-image-campaign}
 
-The Text &amp; Image (Campaign) component adds a text block and an image.
+El componente Texto e imagen (Campaign) añade un bloque de texto y una imagen.
 
-When you click to configure the component, you select Text or Image.
+Al hacer clic en para configurar el componente, se selecciona Texto o Imagen.
 
 ![chlimage_1-51](assets/chlimage_1-51.png)
 
-Selecting **Text** displays an in-line editor:
+Al seleccionar **Texto**, se muestra un editor en línea:
 
 ![Barra de herramientas de texto](do-not-localize/chlimage_1-12.png)
 
-Selecting **Image** displays the in-place editor for images:
+Al seleccionar **Imagen**, se muestra el editor local de imágenes:
 
-![Image toolbar](do-not-localize/chlimage_1-13.png)
+![Barra de herramientas de imágenes](do-not-localize/chlimage_1-13.png)
 
-See [Image (Campaign) component](#image-campaign) for more information on working with images. See [Text &amp; Personalization (Campaign) component](#text-personalization-campaign) for more information on working with text.
+Consulte [Componente de imagen (Campaign)](#image-campaign) para obtener más información sobre cómo trabajar con imágenes. Consulte [Componente Texto y Personalization (Campaign)](#text-personalization-campaign) para obtener más información sobre cómo trabajar con texto.
 
-As with the Text &amp; Personalization (Campaign) and Image (Campaign) components, you can configure:
+Al igual que con los componentes Texto y Personalization (Campaign) e Imagen (Campaign), puede configurar lo siguiente:
 
-* **Text**
-Enter text. Utilice la barra de herramientas para modificar el formato, crear listas y añadir vínculos.
+* **Texto**
+Escriba texto. Utilice la barra de herramientas para modificar el formato, crear listas y añadir vínculos.
 
 * **Imagen**
 Arrastre una imagen desde el buscador de contenido o haga clic para buscar una imagen. Recorte o gire según sea necesario.
@@ -220,20 +237,20 @@ Arrastre una imagen desde el buscador de contenido o haga clic para buscar una i
 * **Propiedades de imagen** (**Propiedades de imagen avanzadas**)
 Permite especificar lo siguiente:
 
-   * **Título**
-Título del bloque; se muestra con el ratón.
+  * **Título**
+    Título del bloque; se muestra con el ratón.
 
-   * **Texto alternativo**
-Texto alternativo que se mostrará si no se puede mostrar la imagen.
+  * **Texto alternativo**
+    Texto alternativo que se mostrará si no se puede mostrar la imagen.
 
-   * **Vincular a**
-Cree un vínculo a recursos u otras páginas dentro del sitio web.
+  * **Vincular a**
+    Cree un vínculo a recursos u otras páginas dentro del sitio web.
 
-   * **Descripción**
-Una descripción de la imagen.
+  * **Descripción**
+    Una descripción de la imagen.
 
-   * **Tamaño**
-Establece la altura y anchura de la imagen.
+  * **Tamaño**
+    Establece la altura y anchura de la imagen.
 
 >[!NOTE]
 >

@@ -9,13 +9,27 @@ role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 98%
-
+source-wordcount: '1998'
+ht-degree: 95%
 ---
-
 # Administrar metadatos de formulario{#manage-form-metadata}
 
 | Versión | Vínculo del artículo |
@@ -295,11 +309,11 @@ AEM Forms expone los esquemas de metadatos de los tipos de formularios compatib
 1. Haga clic en un componente que acabe de arrastrar. En la pestaña Configuración que se abre en el panel derecho, rellene los campos siguientes:
 
    1. Especifique una Etiqueta de campo que se utilice como nombre para mostrar encima del campo colocado en el esquema (Por ejemplo: Departamento)
-   1. En el campo Asignar a propiedad, puede ver un valor rellenado previamente **&#39;./jcr:content/metadata/default&#39;**. Cambie “**default**” a un nombre de propiedad deseado, que se utiliza para almacenar la propiedad en el repositorio crx (por ejemplo: &#39;./jcr:content/metadata/department&#39;)
+   1. En el campo Asignar a propiedad, puede ver un valor rellenado previamente **&#39;./jcr:content/metadata/default&#39;**. Cambie ‘**default**’ a un nombre de propiedad deseado, que se usa para almacenar la propiedad en el repositorio crx (por ejemplo: &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >No cambie el prefijo ‘./jcr:content/metadata/’, ya que define la ruta en la que se almacena la propiedad.
+      >No cambie el prefijo ‘./jcr:content/metadata/’, ya que define la ruta donde se almacena la propiedad.
       >
       >Además, el nombre de la propiedad debe ser único para evitar escribir valores para dos o más propiedades en la misma ubicación del repositorio. Por lo tanto, se recomienda cambiar el valor “default”.
 

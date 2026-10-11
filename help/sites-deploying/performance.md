@@ -1,6 +1,6 @@
 ---
 title: Rendimiento y escalabilidad
-description: AEM En este documento técnico se analizan las formas en las que se ha incorporado la escalabilidad junto con los indicadores de rendimiento y las funciones de recuperación ante desastres.
+description: En esta documentación técnica se analizan las formas en que se ha incorporado la escalabilidad en AEM junto con los indicadores de rendimiento y las funciones de recuperación ante desastres.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,16 +9,25 @@ exl-id: d68a3219-5d2c-4150-9b9c-b9fb1e815bad
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 2%
-
+ht-degree: 8%
 ---
-
 # Rendimiento y escalabilidad{#performance-scalability}
 
-## AEM Documentación técnica: Escalabilidad, rendimiento y recuperación ante desastres de la {#white-paper-aem-scalability-performance-and-disaster-recovery}
+## Documentación técnica: escalabilidad, rendimiento y recuperación ante desastres de AEM {#white-paper-aem-scalability-performance-and-disaster-recovery}
 
 En esta documentación técnica se analizan las formas en que se ha incorporado la escalabilidad en Adobe Experience Manager, junto con unos indicadores de rendimiento excepcionales y unas funciones de recuperación ante desastres excelentes.
 

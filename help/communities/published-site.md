@@ -10,13 +10,20 @@ exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1212'
 ht-degree: 0%
-
 ---
-
 # Experimente el sitio publicado {#experience-the-published-site}
 
 ## Examinar el nuevo sitio al publicar {#browse-to-new-site-on-publish}
@@ -87,8 +94,8 @@ Una vez que haya iniciado sesión como miembro registrado de la comunidad, obser
 * La opción **Perfil** le permite ver y editar su perfil.
 * La opción [Mensajes](/help/communities/configure-messaging.md) le dirige a la sección de mensajería directa, donde puede hacer lo siguiente:
 
-   1. Ver los mensajes directos recibidos (Bandeja de entrada), enviados (Elementos enviados) y eliminados (Papelera).
-   1. Componga nuevos mensajes directos para que pueda enviarlos a particulares y grupos.
+  1. Ver los mensajes directos recibidos (Bandeja de entrada), enviados (Elementos enviados) y eliminados (Papelera).
+  1. Componga nuevos mensajes directos para que pueda enviarlos a particulares y grupos.
 
 * La opción [Notificaciones](/help/communities/notifications.md) le dirige a la sección de notificaciones, donde puede ver los eventos de interés y editar la configuración de las notificaciones.
 * [Administración](/help/communities/published-site.md#moderationlink) le dirige a la página de moderación de AEM Communities, si tiene privilegios de moderación.
@@ -154,13 +161,13 @@ Por ejemplo, agregue dos `new groups`.
 
 * Uno de nombre `Baseball`
 
-   * Déjelo establecido como `Open Group` (suscripción requerida).
-   * En la ficha Plantillas, seleccione `Conversational Group`.
+  * Déjelo establecido como `Open Group` (suscripción requerida).
+  * En la ficha Plantillas, seleccione `Conversational Group`.
 
 * Uno de nombre `Gymnastics`
 
-   * Cambie su configuración a `Member Only Group` (pertenencia restringida).
-   * En la ficha Plantillas, seleccione `Conversational Group`.
+  * Cambie su configuración a `Member Only Group` (pertenencia restringida).
+  * En la ficha Plantillas, seleccione `Conversational Group`.
 
 **Aviso**:
 

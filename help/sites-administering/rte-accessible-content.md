@@ -6,16 +6,25 @@ exl-id: d2451710-5abf-4816-8052-57d8f04a228e
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 0%
-
+source-wordcount: '970'
+ht-degree: 2%
 ---
-
 # Configuración de RTE para crear páginas web y sitios accesibles {#configure-rte-for-accessibility}
 
-Adobe Experience Manager admite muchas funciones de accesibilidad estándar de acuerdo con varios estándares de accesibilidad. Además, los desarrolladores pueden personalizar o ampliar para proporcionar funciones que ayuden a crear contenido accesible mediante componentes de Experience Manager que utilicen el Editor de texto enriquecido (RTE).
+Adobe Experience Manager admite muchas funciones de accesibilidad estándar de acuerdo con varios estándares de accesibilidad. Además, los desarrolladores pueden personalizar o ampliar para proporcionar funciones que ayuden a crear contenido accesible mediante componentes de Experience Manager que utilizan el Editor de texto enriquecido (RTE).
 
 Al diseñar páginas web y agregar contenido a las páginas, los desarrolladores y autores de contenido pueden utilizar las funciones de RTE para proporcionar información relacionada con la accesibilidad. Por ejemplo, agregue información estructural mediante encabezados y elementos de párrafo.
 
@@ -42,9 +51,9 @@ Para obtener las instrucciones completas para configurar el RTE, consulte [confi
 * [Activar un complemento y configurar la propiedad de características](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 * [Configurar otras funcionalidades de RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 
-Si configura un complemento dentro de la subrama `rtePlugins` adecuada en CRXDE Lite, puede activar todas las características de ese complemento o algunas específicas.
+Al configurar un complemento dentro de la subrama `rtePlugins` adecuada en CRXDE Lite, puede activar todas las funciones o las específicas para ese complemento.
 
-![CRXDE Lite que muestra un ejemplo rtePlugin.](assets/chlimage_1-208.png)
+![CRXDE Lite muestra un ejemplo de rtePlugin.](assets/chlimage_1-208.png)
 
 ### Ejemplo: especificar formatos de párrafo disponibles en el campo de selección RTE {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
@@ -58,19 +67,19 @@ Los nuevos formatos de bloque semántico pueden estar disponibles para su selecc
    * Uso del icono de fila de párrafo en la IU táctil.
    * Usando el campo **Formato** (selector emergente) en la IU clásica.
 
-AEM Con los elementos estructurales disponibles en RTE a través de las opciones de formato de párrafo, el formato de párrafo proporciona una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente, los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, deben seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales elegidos desde la opción Estilos. Esto garantiza un marcado limpio, mejores opciones para los usuarios que exploran con sus propias hojas de estilo y contenido correctamente estructurado.
+Con los elementos estructurales disponibles en RTE a través de las opciones de formato de párrafo, AEM proporciona una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente, los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, deben seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales elegidos desde la opción Estilos. Esto garantiza un marcado limpio, mejores opciones para los usuarios que exploran con sus propias hojas de estilo y contenido correctamente estructurado.
 
 ## Uso de la función de edición de origen {#use-of-the-source-edit-feature}
 
-En algunos casos, los autores de contenido encontrarán necesario examinar y ajustar el código fuente del HTML creado con RTE. Por ejemplo, un fragmento de contenido creado dentro de RTE puede requerir un marcado adicional para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la opción [source edit](/help/sites-administering/rich-text-editor.md#aboutplugins) de RTE. Puede especificar la característica [`sourceedit` en el complemento `misctools`](/help/sites-administering/rich-text-editor.md#aboutplugins).
+En algunos casos, los autores de contenido deberán examinar y ajustar el código fuente de HTML creado con RTE. Por ejemplo, un fragmento de contenido creado dentro de RTE puede requerir un marcado adicional para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la opción [source edit](/help/sites-administering/rich-text-editor.md#aboutplugins) de RTE. Puede especificar la característica [`sourceedit` en el complemento `misctools`](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
 >Utilice la característica `sourceedit` con cuidado. Escribir errores y/o funciones no admitidas puede presentar más problemas.
 
-## Agregar compatibilidad para más elementos y atributos del HTML {#add-support-for-more-html-elements-and-attributes}
+## Añadir compatibilidad con más elementos y atributos de HTML {#add-support-for-more-html-elements-and-attributes}
 
-AEM Para ampliar aún más las características de accesibilidad de los componentes existentes basados en el RTE (como los componentes **Text** y **Table**) es posible ampliarlos con elementos y atributos adicionales.
+Para ampliar aún más las características de accesibilidad de AEM, es posible ampliar los componentes existentes basados en RTE (como los componentes **Text** y **Table**) con elementos y atributos adicionales.
 
 El siguiente procedimiento ilustra cómo extender el componente **Table** con un elemento **Caption** que proporciona información sobre una tabla de datos a los usuarios de tecnología de asistencia:
 
@@ -84,7 +93,7 @@ En **Tabla**, establezca o quite explícitamente el atributo del elemento DOM. E
 >
 >Este procedimiento solo es adecuado para la interfaz de usuario clásica.
 
-### Ejemplo: Crear un HTML accesible al utilizar énfasis en el texto {#create-accessible-html-for-text}
+### Ejemplo: crear una HTML accesible al utilizar énfasis en el texto {#create-accessible-html-for-text}
 
 RTE puede usar etiquetas `strong` y `em` en lugar de `b` y `i`. Agregue el siguiente nodo como secundario a los nodos `uiSettings` y `rtePlugins` del cuadro de diálogo.
 
@@ -103,7 +112,7 @@ RTE puede usar etiquetas `strong` y `em` en lugar de `b` y `i`. Agregue el sigui
 
 ### Instrucciones paso a paso {#step-by-step-instructions}
 
-1. Iniciar CRXDE Lite. Por ejemplo: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Inicie CRXDE Lite. Por ejemplo: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copiar:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`

@@ -9,13 +9,20 @@ role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 2%
-
 ---
-
 # Configuración de Solr para SRP {#solr-configuration-for-srp}
 
 ## Solr para AEM Platform {#solr-for-aem-platform}
@@ -36,13 +43,13 @@ Descargue e instale Apache Solr:
 * No se necesita ningún servicio
 * Elección de los modos de ejecución:
 
-   * Modo independiente
-   * [Modo SolrCloud](#solrcloud-mode) (recomendado para entornos de producción)
+  * Modo independiente
+  * [Modo SolrCloud](#solrcloud-mode) (recomendado para entornos de producción)
 
 * Opción de búsqueda multilingüe (MLS)
 
-   * [Instalación de MLS estándar](#installing-standard-mls)
-   * [Instalación de MLS avanzado](#installing-advanced-mls)
+  * [Instalación de MLS estándar](#installing-standard-mls)
+  * [Instalación de MLS avanzado](#installing-advanced-mls)
 
 ## Modo SolrCloud {#solrcloud-mode}
 
@@ -288,35 +295,35 @@ Una vez extraído el contenido del paquete en el servidor que aloja el servidor 
 * Instale Solr en modo independiente.
 * Si ejecuta Solr5, cree una colección1 (similar a Solr4):
 
-   * `./bin/solr start`
-   * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
+  * `./bin/solr start`
+  * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
 
 * Ejecutar el script de instalación: Instalar [-v 4|5] [-d solrhome] [-c collectionPath]
 donde:
 
-   * -d solrhome
+  * -d solrhome
 
-     Directorio de instalación de Solr
+    Directorio de instalación de Solr
 
-   * -c rutaDeColección
+  * -c rutaDeColección
 
-     Ruta de recopilación en solr
+    Ruta de recopilación en solr
 
-   * —help
+  * —help
 
-     Imprimir opciones de línea de comandos
+    Imprimir opciones de línea de comandos
 
-   * -v [4|5]
+  * -v [4|5]
 
-     Establecer versión para solr
+    Establecer versión para solr
 
 * Ejemplo de Solr 4.10.4:
 
-   * Install.bat -v 4 -d c:/solr-4.10.4 -c c:/solr-4.10.4/example/solr/collection1
+  * Install.bat -v 4 -d c:/solr-4.10.4 -c c:/solr-4.10.4/example/solr/collection1
 
 * Ejemplo de Solr 5.4.0:
 
-   * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
+  * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
 
 **Nota**:
 

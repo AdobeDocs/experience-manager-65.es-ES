@@ -9,13 +9,24 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10377'
+source-wordcount: '10381'
 ht-degree: 0%
-
 ---
-
 # Configuración del servidor de Document Security {#configure-the-document-security-server}
 
 >[!NOTE]
@@ -474,10 +485,10 @@ Es posible que algunas aplicaciones cliente no admitan marcas de agua dinámicas
 * No puede utilizar un documento de PDF protegido por contraseña como elemento de marca de agua.
 * Las versiones de Acrobat y Adobe Reader anteriores a la 10 no admiten las siguientes funciones de marca de agua:
 
-   * Marcas de agua PDF
-   * Varios elementos en la marca de agua (texto/PDF)
-   * Opciones avanzadas como intervalo de páginas u opciones de visualización
-   * Opciones de formato de texto como la fuente especificada, el nombre de la fuente y el color. Sin embargo, las versiones anteriores de Acrobat y Reader mostrarán el contenido de texto con la fuente y el color predeterminados.
+  * Marcas de agua PDF
+  * Varios elementos en la marca de agua (texto/PDF)
+  * Opciones avanzadas como intervalo de páginas u opciones de visualización
+  * Opciones de formato de texto como la fuente especificada, el nombre de la fuente y el color. Sin embargo, las versiones anteriores de Acrobat y Reader mostrarán el contenido de texto con la fuente y el color predeterminados.
 
 * Acrobat 9.0 y versiones anteriores: Acrobat 9.0 y versiones anteriores no admiten nombres de directivas en marcas de agua dinámicas. Si Acrobat 9.0 abre un documento protegido por una directiva con una marca de agua dinámica que incluye un nombre de directiva y otros datos dinámicos, la marca de agua se muestra sin el nombre de la directiva. Si la marca de agua dinámica incluye solo el nombre de la directiva, Acrobat muestra un mensaje de error
 

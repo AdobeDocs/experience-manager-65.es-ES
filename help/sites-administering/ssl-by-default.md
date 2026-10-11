@@ -1,6 +1,6 @@
 ---
 title: SSL/TLS de forma predeterminada
-description: AEM Aprenda a utilizar SSL de la función predeterminada en la versión 6.5 de la versión de.
+description: Aprenda a utilizar SSL de la función predeterminada en AEM 6.5.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,32 @@ exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '871'
 ht-degree: 0%
-
 ---
-
 # SSL/TLS de forma predeterminada{#ssl-tls-by-default}
 
-AEM En un esfuerzo por mejorar continuamente la seguridad de los recursos, Adobe ha introducido una función llamada SSL de forma predeterminada. AEM El propósito es fomentar el uso de HTTPS para conectarse a instancias de.
+En un esfuerzo por mejorar continuamente la seguridad de AEM, Adobe ha introducido una función llamada SSL de forma predeterminada. El propósito es fomentar el uso de HTTPS para conectarse a instancias de AEM.
 
 ## Habilitar SSL/TLS de forma predeterminada {#enabling-ssl-tls-by-default}
 
-AEM Puede comenzar a configurar SSL/TLS de forma predeterminada haciendo clic en el mensaje de la bandeja de entrada correspondiente en la pantalla de inicio de la. Para llegar a la bandeja de entrada, pulse el icono de campana en la esquina superior derecha de la pantalla. A continuación, haga clic en **Ver todo**. Esto mostrará una lista de todas las alertas ordenadas en una vista de lista.
+Puede empezar a configurar SSL/TLS de forma predeterminada haciendo clic en el mensaje de la bandeja de entrada correspondiente en la pantalla de inicio de AEM. Para llegar a la bandeja de entrada, pulse el icono de campana en la esquina superior derecha de la pantalla. A continuación, haga clic en **Ver todo**. Esto mostrará una lista de todas las alertas ordenadas en una vista de lista.
 
 En la lista, seleccione y abra la alerta **Configurar HTTPS**:
 
@@ -55,7 +67,7 @@ Se ha creado un usuario de servicio llamado **ssl-service** para esta caracterí
 
 Existen tres formas de automatizar SSL/TLS de forma predeterminada.
 
-### Mediante el POST HTTP {#via-http-post}
+### A través de HTTP POST {#via-http-post}
 
 El primer método implica publicar en el servidor SSLSetup que está utilizando el asistente de configuración:
 
@@ -63,7 +75,7 @@ El primer método implica publicar en el servidor SSLSetup que está utilizando 
 POST /libs/granite/security/post/sslSetup.html
 ```
 
-Puede utilizar la siguiente carga útil en el POST para automatizar la configuración:
+Puede utilizar la siguiente carga útil en su POST para automatizar la configuración:
 
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
@@ -92,7 +104,7 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-El servlet, como cualquier servlet del POST sling, responderá con 200 OK o un código de estado HTTP de error. Puede encontrar detalles sobre el estado en el cuerpo del HTML de la respuesta.
+El servlet, como cualquier servlet Sling POST, responderá con 200 OK o un código de estado HTTP de error. Puede encontrar detalles sobre el estado en el cuerpo de HTML de la respuesta.
 
 A continuación se muestran ejemplos de una respuesta correcta y de un error.
 
@@ -195,7 +207,7 @@ A continuación encontrará un ejemplo para crear un certificado autofirmado en 
 
 >[!NOTE]
 >
->AEM AEM Consulte [Uso de cURL con la dirección de correo electrónico &#x200B;](https://helpx.adobe.com/es/experience-manager/6-4/sites/administering/using/curl.html) para obtener una lista centralizada de los comandos cURL útiles en la sección de comandos de la dirección de correo electrónico.
+>Consulte [Uso de cURL con AEM](https://helpx.adobe.com/es/experience-manager/6-4/sites/administering/using/curl.html) para obtener una lista centralizada de comandos cURL útiles en AEM.
 
 También puede automatizar la configuración SSL/TLS mediante la herramienta cURL. Para ello, publique los parámetros de configuración en esta dirección URL:
 

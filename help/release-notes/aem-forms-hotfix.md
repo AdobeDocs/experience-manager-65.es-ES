@@ -5,7 +5,23 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 8133fcba5caddc7c0054766a92a32e28bfbc6b21
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4809'
 ht-degree: 68%
@@ -314,7 +330,7 @@ Este artículo se aplica a AEM 6.5 Forms (no LTS). Para implementaciones de AEM 
      <li> Las filas del widget selector de fechas se truncan al recorrer los meses en el widget emergente de los campos con el patrón Editar/Mostrar. Hay una revisión disponible para este problema. (FORMS-13620) </li>
      <li>Los envíos de formularios fallan al intentar utilizar el servicio DOR (documento de registro) en el backend. Aparece este mensaje de error: “No se pudo completar la acción de envío porque el recurso de formulario no se ha asignado correctamente”. (FORMS-13798) </li>
      <li>Cuando se envía un formulario adaptable desde una instancia de publicación de Adobe Experience Manager a un flujo de trabajo de Adobe Experience Manager, el flujo de trabajo no guarda los archivos adjuntos.  (FORMS-14209) </li>
-     <li> Al instalar AEM 6.5 Forms Service Pack 20 (el paquete de complemento de AEM Forms para SP20), la IU de AEM Sites muestra una degradación significativa del rendimiento.  (FORMS-13791) </li>
+     <li> Al instalar AEM 6.5 Forms Service Pack 20 (el paquete de complemento de AEM Forms para SP20), la interfaz de usuario (IU) de AEM Sites muestra una degradación significativa del rendimiento.  (FORMS-13791) </li>
      <li>El servicio de rellenado previo falla con una excepción de puntero nulo en las comunicaciones interactivas. (CQDOC-21355)</li>
     </ul>
     </td>    

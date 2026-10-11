@@ -8,13 +8,17 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 5%
-
+source-wordcount: '571'
+ht-degree: 6%
 ---
-
 # Procesamiento y entrega{#rendering-and-delivery}
 
 {{ue-over-mobile}}
@@ -156,7 +160,7 @@ En la tabla siguiente se muestran las propiedades:
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Para los siguientes tipos de recursos de sling, no devuelva la exportación JSON de CaaS predeterminada.<br /> devolvió una exportación json de cliente representando el recurso como;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Para los siguientes tipos de recursos de sling, no devuelva la exportación JSON de CaaS predeterminada.<br /> Devolver una exportación json del cliente representando el recurso como;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>

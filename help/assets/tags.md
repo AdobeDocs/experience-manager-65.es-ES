@@ -11,13 +11,29 @@ feature: Viewers
 role: User, Admin, Developer
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d17d085a-e808-49dd-b9a6-85a996b999bd
+    internal-label: Viewers
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '6942'
+source-wordcount: '6946'
 ht-degree: 7%
-
 ---
-
 # Integración de visualizadores de Dynamic Media con etiquetas de Adobe Analytics y Experience Platform {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## ¿Qué es la integración de visualizadores de Dynamic Media con las etiquetas de Adobe Analytics y Experience Platform? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
@@ -225,13 +241,13 @@ El valor exacto devuelto por el elemento de datos depende del contexto. Si el el
 * El elemento de datos **[!UICONTROL ZoomScale]** señala al evento **[!UICONTROL ZOOM]** y a su argumento &quot;scale&quot;.
 * Regla **[!UICONTROL TrackPan]** con lo siguiente:
 
-   * Utiliza el evento **[!UICONTROL PAN]** del visualizador de Dynamic Media como déclencheur.
-   * Envía el valor del elemento de datos **[!UICONTROL ZoomScale]** a Adobe Analytics.
+  * Utiliza el evento **[!UICONTROL PAN]** del visualizador de Dynamic Media como déclencheur.
+  * Envía el valor del elemento de datos **[!UICONTROL ZoomScale]** a Adobe Analytics.
 
 * Regla **[!UICONTROL TrackKey]** con:
 
-   * Utiliza el evento de pulsación de teclas de la extensión de etiquetas de Experience Platform principal como déclencheur.
-   * Envía el valor del elemento de datos **[!UICONTROL ZoomScale]** a Adobe Analytics.
+  * Utiliza el evento de pulsación de teclas de la extensión de etiquetas de Experience Platform principal como déclencheur.
+  * Envía el valor del elemento de datos **[!UICONTROL ZoomScale]** a Adobe Analytics.
 
 Ahora, supongamos que el usuario final carga la página web con los dos visores. En *viewer1*, se amplía a una escala del 50%; a continuación, en *viewer2*, se amplía a una escala del 25%. En *viewer1*, recorren la imagen y finalmente seleccionan una tecla del teclado.
 
@@ -448,7 +464,7 @@ Consulte también [Guía de implementación de Analytics](https://experienceleag
 
    Ahora, seleccione un grupo de informes.
 
-### Selección de un grupo de informes {#selecting-a-report-suite}
+### Seleccionar un grupo de informes {#selecting-a-report-suite}
 
 1. Cerca de la esquina superior derecha de la página Adobe Analytics, a la derecha del campo **[!UICONTROL Buscar informes]**, seleccione el grupo de informes correcto en la lista desplegable. Si hay varios grupos de informes disponibles y no está seguro de cuál usar, póngase en contacto con el administrador de Adobe Analytics, que le ayudará a seleccionar qué grupo de informes utilizar.
 
@@ -758,8 +774,8 @@ La configuración de Experience Manager consta de los dos pasos principales sigu
    * **[!UICONTROL Servidor de autorización]** - Vuelva a la página de detalles de integración que abrió anteriormente. Seleccione la ficha **[!UICONTROL JWT]**. Copie el nombre del servidor (sin la ruta) como se indica a continuación.
 
    Vuelva a la página **[!UICONTROL Cuenta]** y pegue el nombre en el campo correspondiente.
-Por ejemplo, `https://ims-na1.adobelogin.com/`
-(el nombre del servidor es solo un ejemplo)
+   Por ejemplo, `https://ims-na1.adobelogin.com/`
+   (el nombre del servidor es solo un ejemplo)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 

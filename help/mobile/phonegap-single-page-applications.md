@@ -9,34 +9,38 @@ exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '997'
 ht-degree: 0%
-
 ---
-
 # Aplicaciones de una sola página{#single-page-applications}
 
 {{ue-over-mobile}}
 
-SPA Las [aplicaciones de una sola página](https://en.wikipedia.org/wiki/Single-page_application) () han alcanzado una masa crítica, ampliamente consideradas como el patrón más efectivo para crear experiencias sin problemas con la tecnología web. SPA Al seguir un patrón de, puede crear una aplicación que funcione de forma idéntica a una aplicación de escritorio o móvil, pero que alcance una multitud de plataformas de dispositivo y factores de formulario debido a su base en los estándares web abiertos.
+Las [aplicaciones de una sola página](https://en.wikipedia.org/wiki/Single-page_application) (SPA) han alcanzado una masa crítica, ampliamente consideradas como el patrón más efectivo para crear experiencias sin problemas con la tecnología web. Al seguir un patrón SPA, puede crear una aplicación que funcione de forma idéntica a una aplicación de escritorio o móvil, pero que alcance una multitud de plataformas de dispositivo y factores de formulario debido a su base en los estándares web abiertos.
 
-SPA En términos generales, los sitios web basados en páginas suelen tener un rendimiento mayor que el de los sitios web basados en páginas tradicionales, ya que suelen cargar una página de HTML completa **solo una vez** (incluidos CSS, JS y el contenido de fuentes de compatibilidad) y, a continuación, cargan solo lo que sea necesario exactamente cada vez que se produce un cambio de estado en la aplicación. Lo que se necesita para este cambio de estado puede variar en función del conjunto de tecnologías elegidas, pero normalmente incluye un solo fragmento de HTML para reemplazar la &quot;vista&quot; existente y la ejecución de un bloque de código JS para cablear la nueva vista y realizar cualquier procesamiento de plantillas del lado del cliente que sea necesario. La velocidad de este cambio de estado se puede mejorar aún más si se admiten mecanismos de almacenamiento en caché de plantillas o incluso si se utiliza Adobe PhoneGap, se puede acceder sin conexión al contenido de las plantillas.
+En términos generales, las SPA parecen tener un mayor rendimiento que los sitios web basados en páginas tradicionales, ya que suelen cargar una página de HTML completa **solo una vez** (incluido CSS, JS y contenido de fuentes de compatibilidad) y, a continuación, cargan solo lo que es necesario exactamente cada vez que se produce un cambio de estado en la aplicación. Lo que se necesita para este cambio de estado puede variar en función del conjunto de tecnologías elegidas, pero generalmente incluye un solo fragmento de HTML para reemplazar la &quot;vista&quot; existente y la ejecución de un bloque de código JS para cablear la nueva vista y realizar cualquier procesamiento de plantillas del lado del cliente que sea necesario. La velocidad de este cambio de estado se puede mejorar aún más mediante la compatibilidad con mecanismos de almacenamiento en caché de plantillas, o incluso el acceso sin conexión al contenido de la plantilla si se utiliza Adobe PhoneGap.
 
-AEM SPA AEM.1 1 soporta la construcción y gestión de los recursos de las aplicaciones de la red a través de las aplicaciones de la. SPA Este artículo proporciona una introducción a los conceptos subyacentes a la y a cómo utilizan [AngularJS](https://angularjs.org/) para llevar su marca a App Store y Google Play.
+AEM 6.1 admite la creación y administración de SPA a través de aplicaciones AEM. Este artículo presenta los conceptos subyacentes a la SPA y cómo utilizan [AngularJS](https://angularjs.org/) para llevar su marca a App Store y Google Play.
 
-## SPA AEM en aplicaciones de {#spa-in-aem-apps}
+## SPA en aplicaciones de AEM {#spa-in-aem-apps}
 
-AEM El marco de aplicación de una sola página en las aplicaciones de permite el alto rendimiento de una aplicación AngularJS, a la vez que permite a los autores (u otro personal no técnico) crear y administrar el contenido de la aplicación mediante el entorno de editor de arrastrar y soltar optimizado para el contacto que tradicionalmente se ha reservado para administrar sitios web. AEM ¿Ya tiene un sitio creado con la opción de creación de la? AEM Reutilizar el contenido, los componentes, los flujos de trabajo, los recursos y los permisos es fácil con las aplicaciones de.
+El marco de aplicación de una sola página en las aplicaciones de AEM permite el alto rendimiento de una aplicación AngularJS, a la vez que permite a los autores (u otro personal no técnico) crear y administrar el contenido de la aplicación mediante el entorno de editor de arrastrar y soltar optimizado para el contacto que tradicionalmente se ha reservado para administrar sitios web. ¿Ya tiene un sitio creado con AEM? Reutilizar el contenido, los componentes, los flujos de trabajo, los recursos y los permisos es fácil con las aplicaciones de AEM.
 
 ## Módulo de aplicación AngularJS {#angularjs-application-module}
 
-AEM Las aplicaciones de AppMeasurement administran gran parte de la configuración de AngularJS por usted, incluida la creación del módulo de nivel superior de su aplicación. De forma predeterminada, este módulo se denomina &quot;AEMAngularApp&quot; y el script responsable de su generación se puede encontrar (y superponer) en /libs/mobileapps/components/angular/ng-page/angular-app-module.js.jsp.
+Las aplicaciones de AEM se encargan de gran parte de la configuración de AngularJS, incluida la creación del módulo de nivel superior de la aplicación. De forma predeterminada, este módulo se denomina &quot;AEMAngularApp&quot; y el script responsable de su generación se puede encontrar (y superponer) en /libs/mobileapps/components/angular/ng-page/angular-app-module.js.jsp.
 
-Parte de la inicialización de la aplicación implica especificar de qué módulos AngularJS depende la aplicación. La lista de módulos que utiliza la aplicación está especificada por un script ubicado en /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp y la puede superponer el componente de página de la aplicación para extraer los módulos AngularJS adicionales que requiera la aplicación. Por ejemplo, compare la secuencia de comandos anterior con la implementación de Geometrixx (ubicada en /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp).
+Parte de la inicialización de la aplicación implica especificar de qué módulos AngularJS depende la aplicación. La lista de módulos que utiliza la aplicación está especificada por un script ubicado en /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp y la puede superponer el componente de página de la aplicación para extraer los módulos AngularJS adicionales que requiera la aplicación. Por ejemplo, compare el script anterior con la implementación de Geometrixx (ubicada en /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp).
 
-Para admitir la navegación entre los distintos estados de la aplicación, el script angular-app-module se repite en todas las páginas descendientes de la página de la aplicación de nivel superior para generar un conjunto de &quot;rutas&quot; y configura cada ruta en el servicio $routeProvider de Angular. Para ver un ejemplo del aspecto que tendrá en la práctica, consulte el script angular-app-module generado por el ejemplo de la aplicación para Geometrixx Outdoors: (el vínculo requiere una instancia local) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+Para admitir la navegación entre los distintos estados de la aplicación, el script angular-app-module se repite en todas las páginas descendientes de la página de la aplicación de nivel superior para generar un conjunto de &quot;rutas&quot; y configura cada ruta en el servicio $routeProvider de Angular. Para ver un ejemplo del aspecto que tendrá en la práctica, consulte el script angular-app-module generado por el ejemplo de la aplicación de Geometrixx Outdoors: (el vínculo requiere una instancia local) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
 Al iniciar sesión en la AEMngularApp generada, encontrará una serie de rutas especificadas de la siguiente manera:
 
@@ -48,13 +52,13 @@ $routeProvider
 })
 ```
 
-La muestra anterior ilustra, en particular, un ejemplo de paso de un parámetro como parte de la ruta. En este ejemplo, indica que cuando se solicita una ruta que cumple el patrón especificado (/content/phonegap/geometrixx-outdoors/en/home/products/:id), debe gestionarla la plantilla home/products.template.html y utilizar el controlador &quot;contentphonegapgeometrixxoutdoorsenhomeproducts&quot;.
+La muestra anterior ilustra, en particular, un ejemplo de paso de un parámetro como parte de la ruta. En este ejemplo, indica que cuando se solicita una ruta que cumple el patrón especificado (/content/phonegap/geometrixx-outdoors/en/home/products/:id), la plantilla home/products.template.html debe administrarla y utilizar el controlador &quot;contentphonegapgeometrixxoutdoorsenhomeproducts&quot;.
 
-La propiedad templateUrl especifica la plantilla que se cargará cuando se solicite esta ruta. Esta plantilla contiene el HTML AEM de los componentes de la aplicación que se han incluido en la página, así como cualquier directiva de AngularJS necesaria para conectar el lado del cliente de la aplicación. Para ver un ejemplo de una directiva AngularJS en un componente de Geometrixx, consulte la línea 45 del template.jsp del carrusel de barrido (/apps/geometrixx-outdoors-app/components/swipe-carousel/template.jsp).
+La propiedad templateUrl especifica la plantilla que se cargará cuando se solicite esta ruta. Esta plantilla contiene el HTML de los componentes de AEM que se han incluido en la página y cualquier directiva de AngularJS necesaria para conectar el lado del cliente de la aplicación. Para ver un ejemplo de una directiva AngularJS en un componente de Geometrixx, consulte la línea 45 del template.jsp del carrusel de barrido (/apps/geometrixx-outdoors-app/components/swipe-carousel/template.jsp).
 
 ## Controladores de página {#page-controllers}
 
-En palabras del propio Angular, &quot;un controlador es una función constructora de JavaScript que se utiliza para aumentar el ámbito del Angular&quot;. AEM ([origen](https://docs.angularjs.org/guide/controller)) Cada página de una aplicación de se conecta automáticamente a un controlador que se puede aumentar con cualquier controlador que especifique un `frameworkType` de `angular`. Observe el componente ng-text como ejemplo (/libs/mobileapps/components/angular/ng-text), incluido el nodo cq:template, que se asegura de que cada vez que se añade este componente a una página incluye esta propiedad importante.
+En las propias palabras de Angular, &quot;un controlador es una función constructora de JavaScript que se utiliza para aumentar el ámbito de Angular&quot;. ([origen](https://docs.angularjs.org/guide/controller)) Cada página de una aplicación de AEM se conecta automáticamente a un controlador que se puede aumentar con cualquier controlador que especifique un `frameworkType` de `angular`. Observe el componente ng-text como un ejemplo (/libs/mobileapps/components/angular/ng-text), incluido el nodo cq:template, que se asegura de que cada vez que se agrega este componente a una página incluye esta propiedad importante.
 
 Para ver un ejemplo de controlador más complejo, abra el script ng-template-page controller.jsp (en /apps/geometrixx-outdoors-app/components/angular/ng-template-page). De particular interés es el código JavaScript que genera cuando se ejecuta, que se procesa de la siguiente manera:
 
@@ -81,7 +85,7 @@ Para ver un ejemplo de controlador más complejo, abra el script ng-template-pag
 
 En el ejemplo anterior, el parámetro del servicio `$routeParams` se toma y, a continuación, se analiza en la estructura de directorio en la que se almacenan los datos JSON. Al tratar con el SKU `id` de esta manera, puede entregar una sola plantilla de producto que puede procesar los datos de productos para miles de productos diferentes. Este es un modelo mucho más escalable que requiere una ruta individual para cada elemento en una base de datos de productos (potencialmente) masiva.
 
-Aquí también hay dos componentes: ng-product aumenta el ámbito con los datos que extrae de la llamada `$http` anterior. También hay una imagen ng en esta página que a su vez aumenta el ámbito con el valor que recupera de la respuesta. En virtud del servicio `$http` de Angular, cada componente espera pacientemente hasta que la solicitud finalice y se cumpla la promesa que creó.
+Aquí también hay dos componentes: ng-product aumenta el ámbito con los datos que extrae de la llamada `$http` anterior. También hay una imagen ng en esta página que a su vez aumenta el ámbito con el valor que recupera de la respuesta. En virtud del servicio `$http` de Angular, cada componente espera pacientemente hasta que finalice la solicitud y se cumpla la promesa que creó.
 
 ## Pasos siguientes {#the-next-steps}
 

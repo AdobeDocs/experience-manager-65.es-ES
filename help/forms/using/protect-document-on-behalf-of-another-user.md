@@ -6,16 +6,29 @@ feature: Document Security
 exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 53%
-
 ---
-
 # Proteger un documento en nombre de otro usuario {#protect-a-document-on-behalf-of-another-user}
 
-El SDK de Java™ de AEM Forms Document Security proporciona API que permiten a una cuenta de usuario proteger un documento en nombre de otro usuario sin obtener permisos para editar el documento. Puede utilizar las API en un proceso de flujo de trabajo o programáticamente como un servicio de documentos. Las nuevas API son:
+AEM Forms Document Security Java™ SDK proporciona API que permiten a una cuenta de usuario proteger un documento en nombre de otro usuario sin obtener permisos para editar el documento. Puede utilizar las API en un proceso de flujo de trabajo o programáticamente como un servicio de documentos. Las nuevas API son:
 
 * **protectDocumentUse** usa la API ProtectDocument para que pueda aplicar una directiva a un documento en nombre de
 
@@ -31,7 +44,7 @@ Haga lo siguiente para poder proteger un documento en nombre de otro usuario y s
 1. Cree un conjunto de políticas. Por ejemplo, el ConjuntodePolíticas1.
 1. Cree una política en el conjunto de políticas que acaba de crear. Por ejemplo, la Política1 en ConjuntodePolíticas1.
 1. Cree un usuario con la función Rights Management End User; por ejemplo, el Usuario1. Proporcione permisos para ver los documentos protegidos con la Política1 al usuario que acaba de crear.
-1. Cree una función. por ejemplo, la Función1. Proporcione el permiso Invocar servicio a la función recién creada. Cree un usuario con la función que acaba de crear; Por ejemplo, Usuario2. Puede utilizar el Usuario2 o un administrador para crear una conexión del SDK e invocar el servicio protectDocument.
+1. Cree una función. por ejemplo, la Función1. Proporcione el permiso Invocar servicio a la función recién creada. Cree un usuario con la función que acaba de crear; Por ejemplo, Usuario2. Puede utilizar el Usuario2 o un administrador para crear una conexión de SDK e invocar el servicio protectDocument.
 
    Ahora, puede ejecutar el siguiente código de ejemplo para proteger un documento sin proporcionar permisos para editarlo al usuario que lo protege:
 

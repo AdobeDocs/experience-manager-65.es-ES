@@ -8,13 +8,24 @@ feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 4%
-
+source-wordcount: '706'
+ht-degree: 7%
 ---
-
 # Registrarse como usuario {#registering-as-a-user}
 
 Puede utilizar documentos protegidos por directivas que reciba de un usuario de Document Security, incluso si es externo a la organización del usuario. Para utilizar un documento protegido por una directiva, debe registrarse en Document Security. Si no se le ha invitado anteriormente a registrarse, Document Security inicia el proceso de registro cuando se producen estos eventos:
@@ -24,7 +35,7 @@ Puede utilizar documentos protegidos por directivas que reciba de un usuario de 
 
   Después de registrarse y activar la cuenta, puede utilizar documentos protegidos por directivas que esté autorizado a utilizar mediante una directiva. Si el administrador de Document Security habilita estas funciones para usuarios invitados, es posible que tenga permiso para realizar estas tareas:
 
-* Documentos de Protect mediante directivas de seguridad de documentos.
+* Proteger documentos mediante directivas de seguridad de documentos.
 * Cree sus propias directivas de usuario que pueda aplicar a sus documentos.
 * Invitar a otros usuarios externos a utilizar un documento protegido por una directiva agregándolos a la directiva.
 

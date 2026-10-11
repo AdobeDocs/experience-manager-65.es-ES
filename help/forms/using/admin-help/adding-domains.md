@@ -9,13 +9,27 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '956'
 ht-degree: 0%
-
 ---
-
 # Agregar dominios {#adding-domains}
 
 >[!NOTE]
@@ -27,7 +41,7 @@ ht-degree: 0%
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. Haga clic en Nuevo dominio de empresa.
 1. En el cuadro Id., escriba un identificador único para el dominio y, en el cuadro Nombre, escriba un nombre descriptivo para el dominio. (Consulte [Consideraciones importantes acerca de los nombres de dominio y los identificadores](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Especifique si desea habilitar el bloqueo de cuentas. (Consulte [Configurar las opciones de bloqueo de cuentas](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) De forma predeterminada, la opción Habilitar bloqueo de cuentas está seleccionada.
+1. Especifique si desea habilitar el bloqueo de cuentas. (Consulte [Configurar el bloqueo de cuentas](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) De forma predeterminada, la opción Habilitar bloqueo de cuentas está seleccionada.
 1. Haga clic en Agregar autenticación y, en la lista Proveedor de autenticación, seleccione un proveedor, según el mecanismo de autenticación que utilice su organización. Los valores posibles son LDAP, Kerberos, SAML o un proveedor de autenticación personalizado.
 
    Si selecciona LDAP, puede utilizar el servidor LDAP especificado en la configuración del directorio, o bien puede elegir otro servidor LDAP para la autenticación. Si elige un servidor diferente, los usuarios deben existir en ambos servidores LDAP.
@@ -43,7 +57,7 @@ Después de crear un dominio de empresa, sincronice manualmente el directorio o 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. Haga clic en Nuevo dominio local.
 1. En el cuadro Id., escriba un identificador único para el dominio y, en el cuadro Nombre, escriba un nombre descriptivo para el dominio. (Consulte [Consideraciones importantes acerca de los nombres de dominio y los identificadores](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Especifique si desea habilitar el bloqueo de cuentas y haga clic en Aceptar. (Consulte [Configurar las opciones de bloqueo de cuentas](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) De forma predeterminada, la opción Habilitar bloqueo de cuentas está seleccionada.
+1. Especifique si desea habilitar el bloqueo de cuentas y haga clic en Aceptar. (Consulte [Configurar el bloqueo de cuentas](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) De forma predeterminada, la opción Habilitar bloqueo de cuentas está seleccionada.
 
 ## Añadir un dominio híbrido {#add-a-hybrid-domain}
 
@@ -60,12 +74,12 @@ Tenga en cuenta las siguientes consideraciones al elegir un nombre de dominio y 
 
 ### Consideraciones generales {#general-considerations}
 
-* Si utiliza un proveedor de base de datos distinto de DB2, el identificador de dominio puede contener hasta 50 bytes. Si utiliza caracteres ASCII de un solo byte, el límite es de 50 caracteres. Si el identificador de dominio contiene caracteres multibyte, este límite se reduce. Por ejemplo, si crea un dominio cuyo identificador contiene caracteres de 3 bytes, el límite es de 16 caracteres. Además, no se pueden crear dominios que contengan caracteres de 4 bytes. AEM Si crea un ID de dominio que supere este límite, los formularios de la se encontrarán en un estado inestable. Para recuperarse de este estado inestable, consulte &quot;[Quitar un dominio que contenga caracteres extendidos o multibyte](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&quot; en esta página.
-* AEM El número de dominios de empresa y dominios locales que se pueden crear en los formularios de la aplicación depende de la longitud de cada uno de los ID de dominio. AEM Cuando se agrega un dominio empresarial o híbrido, Administración de usuarios actualiza la cadena configInstance en el nodo AuthProviders del archivo de configuración de formularios de la aplicación (config.xml). La cadena configInstance contiene una lista separada por dos puntos de las rutas absolutas de todos los dominios asociados al proveedor de autorización. Esta cadena tiene un límite de tamaño de 8192 caracteres. Cuando se alcanza ese límite, no se pueden crear dominios adicionales.
+* Si utiliza un proveedor de base de datos distinto de DB2, el identificador de dominio puede contener hasta 50 bytes. Si utiliza caracteres ASCII de un solo byte, el límite es de 50 caracteres. Si el identificador de dominio contiene caracteres multibyte, este límite se reduce. Por ejemplo, si crea un dominio cuyo identificador contiene caracteres de 3 bytes, el límite es de 16 caracteres. Además, no se pueden crear dominios que contengan caracteres de 4 bytes. Si crea un ID de dominio que supere este límite, los formularios de AEM se encontrarán en un estado inestable. Para recuperarse de este estado inestable, consulte &quot;[Quitar un dominio que contenga caracteres extendidos o multibyte](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&quot; en esta página.
+* El número de dominios empresariales y dominios locales que se pueden crear en los formularios AEM Forms depende de la longitud de cada uno de los ID de dominio. Cuando se agrega un dominio empresarial o híbrido, Administración de usuarios actualiza la cadena configInstance en el nodo AuthProviders del archivo de configuración de formularios de AEM (config.xml). La cadena configInstance contiene una lista separada por dos puntos de las rutas absolutas de todos los dominios asociados al proveedor de autorización. Esta cadena tiene un límite de tamaño de 8192 caracteres. Cuando se alcanza ese límite, no se pueden crear dominios adicionales.
 
 ### Consideraciones al utilizar DB2 {#considerations-when-using-db2}
 
-AEM Cuando se utiliza DB2 para la base de datos de formularios de la, la longitud máxima permitida del ID de dominio depende del tipo de caracteres utilizados:
+Al utilizar DB2 para la base de datos de formularios de AEM, la longitud máxima permitida del ID de dominio depende del tipo de caracteres utilizados:
 
 * 100 byte simple (ASCII) (por ejemplo, caracteres utilizados en inglés, francés o alemán)
 * 50 bytes dobles (por ejemplo, caracteres utilizados en chino, japonés o coreano)
@@ -73,9 +87,9 @@ AEM Cuando se utiliza DB2 para la base de datos de formularios de la, la longitu
 
 ### Consideraciones al utilizar MySQL {#considerations-when-using-mysql}
 
-AEM Al utilizar MySQL como base de datos de formularios de la, se aplican las siguientes limitaciones:
+Al utilizar MySQL como base de datos de formularios AEM Forms, se aplican las siguientes limitaciones:
 
-* Utilice únicamente caracteres de byte único (ASCII) para el identificador y el nombre de dominio. AEM Si utiliza caracteres ASCII extendidos, los formularios de la aplicación se encontrarán en un estado inestable y podrían generar una excepción si intenta eliminar el dominio. Para recuperarse de este estado inestable, consulte el tema &quot;[Quitar un dominio que contenga caracteres extendidos o multibyte](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&quot; en esta página.
+* Utilice únicamente caracteres de byte único (ASCII) para el identificador y el nombre de dominio. Si utiliza caracteres ASCII extendidos, los formularios AEM Forms estarán en un estado inestable y podrían producir una excepción si intenta eliminar el dominio. Para recuperarse de este estado inestable, consulte el tema &quot;[Quitar un dominio que contenga caracteres extendidos o multibyte](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&quot; en esta página.
 * No puede crear dos dominios que tengan el mismo nombre pero que difieran en mayúsculas y minúsculas. Por ejemplo, si intenta crear un dominio con el nombre *Adobe* cuando ya existe un dominio con el nombre *adobe*, se producirá un error.
 * Administración de usuarios no puede diferenciar dos nombres de dominio que solo difieren en el uso de caracteres extendidos. Por ejemplo, si crea un dominio denominado *abcde* y un dominio denominado *âbcdè*, se considerarán iguales.
 

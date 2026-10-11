@@ -1,6 +1,6 @@
 ---
 title: Marketing por correo electrónico
-description: El marketing por correo electrónico (por ejemplo, los boletines informativos) es una parte importante de cualquier campaña de marketing, ya que los utiliza para insertar contenido en los posibles clientes. AEM AEM En el caso de los boletines informativos, puede crear boletines informativos a partir de contenido existente de la red de contenido y añadir contenido nuevo, específico para los boletines informativos.
+description: El marketing por correo electrónico (por ejemplo, los boletines informativos) es una parte importante de cualquier campaña de marketing, ya que los utiliza para insertar contenido en los posibles clientes. En AEM, puede crear boletines a partir del contenido existente de AEM y agregar contenido nuevo, específico para los boletines.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,41 +10,52 @@ exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1802'
+ht-degree: 2%
 ---
-
 
 # Marketing por correo electrónico{#e-mail-marketing}
 
 >[!NOTE]
 >
->El Adobe AEM de no planea mejorar aún más el seguimiento por correo electrónico de los envíos abiertos/rechazados (no entregables) por el servicio SMTP de la.
->Se recomienda usar [Adobe Campaign AEM y la integración con &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
+>Adobe no planea mejorar aún más el seguimiento por correo electrónico de los envíos abiertos/rechazados (no entregables) por el servicio SMTP de AEM.
+>Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
-El marketing por correo electrónico (por ejemplo, los boletines informativos) es una parte importante de cualquier campaña de marketing, ya que los utiliza para insertar contenido en los posibles clientes. AEM AEM En el caso de los boletines informativos, puede crear boletines informativos a partir de contenido existente de la red de contenido y añadir contenido nuevo, específico para los boletines informativos.
+El marketing por correo electrónico (por ejemplo, los boletines informativos) es una parte importante de cualquier campaña de marketing, ya que los utiliza para insertar contenido en los posibles clientes. En AEM, puede crear boletines a partir del contenido existente de AEM y agregar contenido nuevo, específico para los boletines.
 
 Una vez creados, puede enviar boletines informativos al grupo específico de usuarios inmediatamente o en otra hora programada (mediante un flujo de trabajo). Además, los usuarios pueden suscribirse a los boletines en el formato que elijan.
 
-AEM Además, le permite administrar la funcionalidad de la newsletter, lo que incluye el mantenimiento de los temas, el archivado de los boletines informativos y la visualización de las estadísticas de la newsletter.
+Además, AEM le permite administrar la funcionalidad de la newsletter, lo que incluye el mantenimiento de los temas, el archivado de los boletines informativos y la visualización de las estadísticas de la newsletter.
 
 >[!NOTE]
 >
 >En Geometrixx, la plantilla de la newsletter abre automáticamente el editor de correo electrónico. Puede utilizar el editor de correo electrónico en otras plantillas en las que desee enviar correos electrónicos, por ejemplo, invitaciones. El editor de correo electrónico se muestra cada vez que se hereda una página de **mcm/components/newsletter/page**.
 
-AEM En este documento se describen los conceptos básicos para crear boletines informativos en la creación de informes de correo electrónico en la. Para obtener información más detallada sobre cómo trabajar con el marketing por correo electrónico, consulte los siguientes documentos:
+En este documento se describen los conceptos básicos para crear boletines informativos en AEM. Para obtener información más detallada sobre cómo trabajar con el marketing por correo electrónico, consulte los siguientes documentos:
 
-* [Creación de una página de aterrizaje de newsletter efectiva](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+* [Creación de una página de destino de newsletter efectiva](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
 * [Administración de suscripciones](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
 * [Publicación de un correo electrónico para proveedores de servicios de correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
 * [Seguimiento de correos electrónicos rechazados](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
 >
->Si actualiza los proveedores de correo electrónico, realiza una prueba de vuelo o envía una newsletter, estas operaciones fallan si la newsletter no se publica primero en la instancia de Publish o si la instancia de Publish no está disponible. Asegúrese de publicar la newsletter y de que la instancia de Publish esté activa y en funcionamiento.
+>Si actualiza los proveedores de correo electrónico, realiza una prueba de vuelo o envía una newsletter, estas operaciones fallan si la newsletter no se publica primero en la instancia de publicación o si la instancia de publicación no está disponible. Asegúrese de publicar la newsletter y de que la instancia de publicación esté activa y en ejecución.
 
 ## Creación de una experiencia de newsletter {#creating-a-newsletter-experience}
 
@@ -72,26 +83,26 @@ AEM En este documento se describen los conceptos básicos para crear boletines i
 
    ![Cuadro de diálogo de propiedades de página](assets/mcm_newnewsletterdialog.png)
 
-   * **De Nombre**
-Nombre que debe aparecer como remitente de la newsletter.
+   * **De nombre**
+     Nombre que debe aparecer como remitente de la newsletter.
 
-   * **Dirección desde**
-Dirección de correo que debe aparecer como remitente de la newsletter.
+   * **Dirección De**
+     Dirección de correo que debe aparecer como remitente de la newsletter.
 
    * **Asunto**
-Asunto de la newsletter.
+     Asunto de la newsletter.
 
-   * **Responder A**
-Dirección de correo que enviará las respuestas de la newsletter enviada.
+   * **Responder a**
+     Dirección de correo que enviará las respuestas de la newsletter enviada.
 
    * **Descripción**
-Descripción de la newsletter.
+     Descripción de la newsletter.
 
-   * **A Tiempo**
-El tiempo de activación para enviar la newsletter.
+   * **A tiempo**
+     El tiempo de activación para enviar la newsletter.
 
    * **Lista de destinatarios predeterminada**
-Lista predeterminada que debe recibir la newsletter.
+     Lista predeterminada que debe recibir la newsletter.
 
    Se pueden actualizar en una etapa posterior desde el cuadro de diálogo **Propiedades...**.
 
@@ -99,7 +110,7 @@ Lista predeterminada que debe recibir la newsletter.
 
 ## Añadir contenido a los boletines {#adding-content-to-newsletters}
 
-AEM Puede agregar contenido, incluido contenido dinámico, al boletín informativo como lo haría en cualquier componente de la lista de distribución de contenido de la lista de componentes de la lista de distribución de contenido En Geometrixx, la plantilla Newsletter tiene ciertos componentes disponibles para añadir y modificar contenido en los boletines.
+Puede añadir contenido a la newsletter, incluido el contenido dinámico, como lo haría en cualquier componente de AEM. En Geometrixx, la plantilla Newsletter tiene ciertos componentes disponibles para añadir y modificar contenido en los boletines.
 
 1. En el MCM, haga clic en la ficha **Campañas** y haga doble clic en el boletín al que desee agregar contenido o editarlo. Se abre la newsletter.
 
@@ -108,7 +119,7 @@ AEM Puede agregar contenido, incluido contenido dinámico, al boletín informati
 
    >[!NOTE]
    >
-   >Los boletines se personalizan mediante variables. En el boletín informativo de Geometrixx, las variables están disponibles en el componente Texto. Los valores de las variables se heredan de la información del perfil de usuario.
+   >Los boletines se personalizan mediante variables. En la newsletter de Geometrixx, las variables están disponibles en el componente Texto. Los valores de las variables se heredan de la información del perfil de usuario.
 
    ![Editando contenido de la newsletter](assets/mcm_newsletter_content.png)
 
@@ -116,7 +127,7 @@ AEM Puede agregar contenido, incluido contenido dinámico, al boletín informati
 
 ## Personalización de boletines {#personalizing-newsletters}
 
-Puede personalizar los boletines insertando variables predefinidas en el componente Texto de los boletines en Geometrixx. Los valores de las variables se heredan de la información del perfil de usuario.
+Los boletines se personalizan insertando variables predefinidas en el componente Texto de los boletines en Geometrixx. Los valores de las variables se heredan de la información del perfil de usuario.
 
 También puede simular cómo se personaliza un boletín utilizando el contexto de cliente y cargando un perfil.
 
@@ -205,7 +216,7 @@ Las pruebas de vuelo le permiten hacer lo siguiente:
 
 >[!NOTE]
 >
->Si actualiza los proveedores de correo electrónico, realiza una prueba de vuelo o envía una newsletter, estas operaciones fallan si la newsletter no se publica primero en la instancia de Publish o si la instancia de Publish no está disponible. Asegúrese de publicar la newsletter y de que la instancia de Publish esté activa y en funcionamiento.
+>Si actualiza los proveedores de correo electrónico, realiza una prueba de vuelo o envía una newsletter, estas operaciones fallan si la newsletter no se publica primero en la instancia de publicación o si la instancia de publicación no está disponible. Asegúrese de publicar la newsletter y de que la instancia de publicación esté activa y en ejecución.
 
 Para enviar boletines de prueba:
 
@@ -221,8 +232,8 @@ Para enviar boletines de prueba:
 
 >[!NOTE]
 >
->El Adobe AEM de no planea mejorar aún más el seguimiento por correo electrónico de los envíos abiertos/rechazados (no entregables) por el servicio SMTP de la.
->Se recomienda usar [Adobe Campaign AEM y la integración con &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
+>Adobe no planea mejorar aún más el seguimiento por correo electrónico de los envíos abiertos/rechazados (no entregables) por el servicio SMTP de AEM.
+>Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
 Puede enviar una newsletter desde la newsletter o desde la lista. Se describen ambos procedimientos.
 
@@ -234,7 +245,7 @@ Puede enviar una newsletter desde la newsletter o desde la lista. Se describen a
 
 >[!NOTE]
 >
->Si actualiza los proveedores de correo electrónico, realiza una prueba de vuelo o envía una newsletter, estas operaciones fallan si la newsletter no se publica primero en la instancia de Publish o si la instancia de Publish no está disponible. Asegúrese de publicar la newsletter y de que la instancia de Publish esté activa y en funcionamiento.
+>Si actualiza los proveedores de correo electrónico, realiza una prueba de vuelo o envía una newsletter, estas operaciones fallan si la newsletter no se publica primero en la instancia de publicación o si la instancia de publicación no está disponible. Asegúrese de publicar la newsletter y de que la instancia de publicación esté activa y en ejecución.
 
 ### Envío de boletines informativos desde una campaña {#sending-newsletters-from-a-campaign}
 
@@ -295,10 +306,10 @@ En esta sección se describe cómo suscribirse a un boletín informativo.
 
 ### Suscripción a una newsletter {#subscribing-to-a-newsletter-1}
 
-Para suscribirse a una newsletter (utilizando el sitio web del Geometrixx como ejemplo):
+Para suscribirse a una newsletter (con el sitio web de Geometrixx como ejemplo):
 
-1. Haga clic en **Sitios web**, vaya a la **Barra de herramientas** de la Geometrixx y ábrala.
+1. Haga clic en **Sitios web**, vaya a la **Barra de herramientas** de Geometrixx y ábrala.
 
    ![Muestra de suscripción](assets/chlimage_1-121.png)
 
-1. En el campo de la Newsletter de Geometrixx **Registrarse**, escriba su dirección de correo electrónico y haga clic en **Registrarse**. Ahora está suscrito a la newsletter.
+1. En el campo **Registrarse** de la newsletter de Geometrixx, escriba su dirección de correo electrónico y haga clic en **Registrarse**. Ahora está suscrito a la newsletter.

@@ -1,6 +1,6 @@
 ---
 title: Componentes
-description: AEM El servicio incluye una variedad de componentes listos para usar que proporcionan una amplia funcionalidad para creadores de sitios web.
+description: AEM incorpora una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,25 @@ exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 20%
-
+source-wordcount: '227'
+ht-degree: 30%
 ---
-
 # Componentes{#components}
 
-Adobe Experience Manager AEM () viene con una variedad de componentes listos para usar que proporcionan una funcionalidad completa para los autores de sitios web. Están disponibles cuando [edita una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) y se agrupan por área funcional principal (es decir, grupo de componentes) para ayudar a filtrar.
+Adobe Experience Manager (AEM) incorpora una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web. Están disponibles cuando [edita una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) y se agrupan por área funcional principal (es decir, grupo de componentes) para ayudar a filtrar.
 
 >[!CAUTION]
 >
@@ -35,9 +44,9 @@ Las siguientes páginas proporcionan vínculos rápidos a algunas de las áreas 
 
   Los componentes utilizados para crear contenido de página estándar están contenidos principalmente en los grupos **General**, **Columns** y **Forms**.
 
-* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
+* [Comercio electrónico](/help/commerce/cif-classic/administering/ecommerce.md)
 
-  AEM La funcionalidad de comercio electrónico de la también incluye una serie de componentes, incluidos en el grupo **Commerce**. El uso real puede depender del motor de comercio que se utilice.
+  La funcionalidad de comercio electrónico de AEM también incluye una serie de componentes, incluidos en el grupo **Commerce**. El uso real puede depender del motor de comercio que se utilice.
 
 ## Uso del modo Diseño para configurar componentes {#using-design-mode-to-configure-components}
 

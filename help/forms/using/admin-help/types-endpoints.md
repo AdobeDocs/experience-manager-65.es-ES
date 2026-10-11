@@ -9,13 +9,27 @@ exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 1%
-
 ---
-
 # Tipos de extremos {#types-of-endpoints}
 
 Para poder utilizar un servicio, debe configurar y habilitar un extremo. Un extremo especifica cómo se va a invocar un servicio.
@@ -32,16 +46,16 @@ Se pueden agregar los siguientes tipos de extremos a los servicios. No todos los
 
 **TaskManager:** Permite que un usuario de Workspace invoque el servicio.
 
-**Remoting:** Habilita una aplicación creada con Flex AEM AEM para invocar el servicio mediante (obsoleto para formularios de la serie de formularios de la serie de formularios de la serie de trabajo Remoting) de la serie de formularios de la serie de trabajo de. Se crea automáticamente un extremo remoto para cada servicio activado. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio correspondiente.
+**Remoting:** habilita una aplicación creada con Flex para invocar el servicio mediante (obsoleto para formularios AEM) AEM Forms Remoting. Se crea automáticamente un extremo remoto para cada servicio activado. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio correspondiente.
 
-SOAP AEM SOAP **:** Habilita una aplicación cliente desarrollada mediante las API de programación de formularios de la aplicación de formularios de la aplicación para invocar el servicio mediante el modo de. SOAP Se crea automáticamente un punto final de para cada servicio activado.
+**SOAP:** habilita una aplicación cliente desarrollada mediante las API de programación de formularios de AEM para invocar el servicio mediante el modo SOAP. Se crea automáticamente un punto final de SOAP para cada servicio activado.
 
-SOAP **nota**: *La seguridad se puede quitar de los documentos de Document Security cuando se usa el punto final de la mientras se visualizan los documentos en Adobe Acrobat o Adobe Reader. SOAP SOAP Para obtener más información sobre cómo deshabilitar los puntos de conexión de los documentos de LCRM, consulte [Deshabilitar puntos de conexión de los documentos de seguridad de los documentos](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)* para obtener información sobre cómo deshabilitar los puntos de conexión de la
+**nota**: *Se puede quitar la seguridad de los documentos de seguridad cuando se utiliza el extremo de SOAP mientras se visualizan los documentos en Adobe Acrobat o Adobe Reader. Para obtener más información sobre cómo deshabilitar los extremos de SOAP en sus documentos de CRM, consulte [Deshabilitar los extremos de SOAP para documentos de seguridad de documentos](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
 
-AEM **EJB:** Habilita una aplicación cliente desarrollada mediante las API de programación de formularios de la aplicación para invocar el servicio mediante Enterprise JavaBeans (EJB). Se crea automáticamente un extremo de EJB para cada servicio activado.
+**EJB:** Habilita una aplicación cliente desarrollada mediante las API de programación de formularios AEM Forms para invocar el servicio mediante el modo Enterprise JavaBeans (EJB). Se crea automáticamente un extremo de EJB para cada servicio activado.
 
-AEM **WSDL:**: habilita una aplicación cliente desarrollada mediante las API de programación de formularios de la aplicación de formularios de la aplicación para invocar el servicio mediante el Lenguaje de definición de servicios web (WSDL). AEM La página Configuraciones principales contiene una opción para habilitar la generación de WSDL para todos los servicios que forman parte de los formularios de. AEM (Consulte Configuración general de los formularios de ).
+**WSDL:** habilita una aplicación cliente desarrollada mediante las API de programación de formularios de AEM para invocar el servicio mediante el Lenguaje de definición de servicios web (WSDL). La página Configuraciones principales contiene una opción para habilitar la generación de WSDL para todos los servicios que forman parte de los formularios de AEM. (Consulte Configuración general de formularios AEM Forms ).
 
-**REST:** Los procesos creados en Workbench se pueden configurar para que pueda invocarlos mediante solicitudes de transferencia de estado representacional (REST). Las solicitudes REST se envían desde páginas del HTML. AEM Es decir, puede invocar un proceso de formularios de la aplicación de la forma directa desde una página web utilizando una petición REST.
+**REST:** Los procesos creados en Workbench se pueden configurar para que pueda invocarlos mediante solicitudes de transferencia de estado representacional (REST). Las solicitudes REST se envían desde páginas de HTML. Es decir, puede invocar un proceso de formularios AEM Forms directamente desde una página web mediante una solicitud REST.
 
 Los extremos Correo electrónico, TaskManager, Carpeta inspeccionada y Remoting exponen únicamente una operación específica del servicio. Para agregar estos extremos, es necesario realizar un segundo paso de configuración para seleccionar un método para invocar el servicio, establecer parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.

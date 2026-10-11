@@ -9,13 +9,29 @@ exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: c1f5f41ce7127c7f3e7193295d55c91b151d2146
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3750'
 ht-degree: 100%
-
 ---
-
 # La lista de comprobación: referencia adicional{#the-checklist-further-reference}
 
 Esta página proporciona más información sobre los detalles que amplían o complementan los documentos y principios tratados en la [lista de verificación de prácticas recomendadas para la administración de proyectos](/help/managing/best-practices.md).
@@ -207,7 +223,7 @@ Si cree que el diseño no sigue las directrices o si no está seguro de algunas 
 Para definir o evaluar la infraestructura, ayuda a definir valores objetivo como:
 
 * visitantes/día; promedio y pico
-* visitas individuales/día; promedio y pico
+* hits/día; promedio y pico
 * número de páginas web puestas a disposición
 * volumen de contenido web
 

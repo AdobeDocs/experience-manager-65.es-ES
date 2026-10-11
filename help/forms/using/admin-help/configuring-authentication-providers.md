@@ -9,13 +9,27 @@ exl-id: d72a3977-1423-49e0-899b-234bb76be378
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1614'
 ht-degree: 0%
-
 ---
-
 # Configurar proveedores de autenticación {#configuring-authentication-providers}
 
 >[!NOTE]
@@ -85,7 +99,7 @@ Para utilizar un servidor LDAP diferente para realizar la autenticación, selecc
 
 Si está configurando la autenticación para un dominio empresarial o híbrido y selecciona la autenticación Kerberos, está disponible la siguiente configuración.
 
-AEM **IP de DNS:** Dirección IP de DNS del servidor donde se ejecutan los formularios de la. En Windows, puede determinar esta dirección IP ejecutando ipconfig /all en la línea de comandos.
+**IP DNS:** Dirección IP DNS del servidor donde se ejecutan los formularios AEM. En Windows, puede determinar esta dirección IP ejecutando ipconfig /all en la línea de comandos.
 
 **Host KDC:** Nombre de host completo o dirección IP del servidor Active Directory que se usa para la autenticación.
 
@@ -112,7 +126,7 @@ Archivo para importar:** Haga clic en Examinar para seleccionar un archivo de me
 
 Se requieren las siguientes propiedades personalizadas si se utiliza el enlace de artefactos.
 
-* AEM Agregue la siguiente propiedad personalizada para especificar un nombre de usuario que represente al proveedor de servicios de Forms, que se utiliza para autenticarse en el servicio de resolución de artefactos IDP.
+* Agregue la siguiente propiedad personalizada para especificar un nombre de usuario que represente al proveedor de servicios de AEM Forms, que se utiliza para autenticarse en el servicio de resolución de artefactos IDP.
   `saml.idp.resolve.username=<username>`
 
 * Agregue la siguiente propiedad personalizada para especificar la contraseña del usuario especificado en `saml.idp.resolve.username`.
@@ -129,9 +143,9 @@ Si está configurando la autenticación para un dominio empresarial o híbrido y
 
 El aprovisionamiento Just-In-Time crea un usuario en la base de datos de Administración de usuarios automáticamente después de que el usuario se autentique correctamente mediante un proveedor de autenticación. Los roles y grupos relevantes también se asignan dinámicamente al nuevo usuario. Puede habilitar el aprovisionamiento justo a tiempo para dominios empresariales e híbridos.
 
-AEM Este procedimiento describe el modo en que funciona la autenticación tradicional en los formularios de:
+Este procedimiento describe el funcionamiento de la autenticación tradicional en los formularios AEM Forms:
 
-1. AEM Cuando un usuario intenta iniciar sesión en los formularios de la, Administración de usuarios pasa sus credenciales secuencialmente a todos los proveedores de autenticación disponibles. (Las credenciales de inicio de sesión incluyen la combinación de nombre de usuario y contraseña, vale Kerberos, firma PKCS7, etc.).
+1. Cuando un usuario intenta iniciar sesión en los formularios de AEM, Administración de usuarios pasa sus credenciales secuencialmente a todos los proveedores de autenticación disponibles. (Las credenciales de inicio de sesión incluyen la combinación de nombre de usuario y contraseña, vale Kerberos, firma PKCS7, etc.).
 1. El proveedor de autenticación valida las credenciales.
 1. A continuación, el proveedor de autenticación comprueba si el usuario existe en la base de datos de administración de usuarios. Los siguientes estados son posibles:
 
@@ -150,7 +164,7 @@ Sin el aprovisionamiento Just-In-Time, cuando un usuario se autentica correctame
 
 ### Habilitar el aprovisionamiento justo a tiempo para un dominio {#enable-just-in-time-provisioning-for-a-domain}
 
-1. Escriba un contenedor de servicio que implemente las interfaces IdentityCreator y AssignmentProvider. AEM (Consulte [Programar con formularios de la lista de distribución de formularios &#x200B;](https://www.adobe.com/go/learn_aemforms_programming_63)).
+1. Escriba un contenedor de servicio que implemente las interfaces IdentityCreator y AssignmentProvider. (Consulte [Programar con formularios AEM](https://www.adobe.com/go/learn_aemforms_programming_63)).
 1. Implemente el contenedor de servicios en el servidor de Forms.
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 

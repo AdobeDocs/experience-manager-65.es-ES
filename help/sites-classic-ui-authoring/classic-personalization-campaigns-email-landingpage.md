@@ -1,5 +1,5 @@
 ---
-title: Creación de una página de aterrizaje de newsletter efectiva
+title: Creación de una página de destino de newsletter efectiva
 description: Una página de aterrizaje de newsletter efectiva le ayuda a que el mayor número de personas posible se suscriban a su newsletter (u otra campaña de marketing por correo electrónico). Puede utilizar la información que recopila de las suscripciones a la newsletter para obtener posibles clientes.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,25 @@ exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 0%
-
+source-wordcount: '612'
+ht-degree: 2%
 ---
-
-# Creación de una página de aterrizaje de newsletter efectiva{#creating-an-effective-newsletter-landing-page}
+# Creación de una página de destino de newsletter efectiva{#creating-an-effective-newsletter-landing-page}
 
 Una página de aterrizaje de newsletter efectiva le ayuda a que el mayor número de personas posible se suscriban a su newsletter (u otra campaña de marketing por correo electrónico). Puede utilizar la información que recopila de las suscripciones a la newsletter para obtener posibles clientes.
 
@@ -30,12 +41,12 @@ Para crear una página de aterrizaje de newsletter efectiva, debe hacer lo sigui
 
 >[!NOTE]
 >
->El Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
->Se recomienda usar [Adobe Campaign AEM y la integración con &lbrace;100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000](/help/sites-administering/campaign.md)
+>Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
+>Se recomienda usar [Adobe Campaign y la integración con AEM](/help/sites-administering/campaign.md).
 
 ## Creación de una lista para la newsletter {#creating-a-list-for-the-newsletter}
 
-Cree una lista, por ejemplo, **Boletín de Geometrixx**, en MCM para el boletín al que las personas deben suscribirse. La creación de listas se describe en [Creación de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
+Cree una lista, por ejemplo, **Geometrixx Newsletter**, en MCM para el boletín al que las personas deben suscribirse. La creación de listas se describe en [Creación de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
 
 A continuación se muestra un ejemplo de lista:
 
@@ -65,7 +76,7 @@ El siguiente ejemplo es un formulario creado en https://localhost:4502/cf#/conte
 
 ### Creación de una página de agradecimiento {#creating-a-thank-you-page}
 
-Cuando los usuarios hagan clic en **Suscribirse ahora**, desearán que se abra automáticamente una página de agradecimiento. Cree la página de agradecimiento en la página de la newsletter de Geometrixx. Después de crear el formulario de la newsletter, edite el componente Formulario y añada la ruta a la página de agradecimiento.
+Cuando los usuarios hagan clic en **Suscribirse ahora**, desearán que se abra automáticamente una página de agradecimiento. Cree la página de agradecimiento en la página de newsletter de Geometrixx. Después de crear el formulario de la newsletter, edite el componente Formulario y añada la ruta a la página de agradecimiento.
 
 Al enviar la solicitud, el usuario pasará a una página de **Gracias** tras la cual recibirá un correo electrónico. Esta página de agradecimiento se ha creado en /content/geometrixx/en/toolbar/newsletter/thank_you.
 

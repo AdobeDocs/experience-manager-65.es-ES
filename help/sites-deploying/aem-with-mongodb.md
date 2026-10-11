@@ -10,13 +10,25 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6582'
+source-wordcount: '6584'
 ht-degree: 0%
-
 ---
-
 # Adobe Experience Manager con MongoDB{#aem-with-mongodb}
 
 Este artículo tiene como objetivo mejorar el conocimiento sobre las tareas y consideraciones necesarias para implementar correctamente AEM (Adobe Experience Manager) con MongoDB.
@@ -93,7 +105,7 @@ Aunque las mismas limitaciones se aplican al motor de almacenamiento WiredTiger 
 
 Debido a las limitaciones del conjunto de trabajo de MongoDB, se recomienda que el almacén de datos se mantenga independiente de MongoDB. En la mayoría de los entornos, se debe usar un `FileDataStore` que usa un NAS disponible para todas las instancias de AEM. En las situaciones en las que se usa Amazon Web Service, también existe `S3 DataStore`. Si, por cualquier motivo, el almacén de datos se mantiene dentro de MongoDB, el tamaño del almacén de datos debe añadirse al tamaño total de la base de datos y los cálculos del conjunto de trabajo deben ajustarse correctamente. Este tamaño puede significar el aprovisionamiento de más RAM para mantener el rendimiento sin errores de página.
 
-## Monitoreo {#monitoring}
+## Monitorización {#monitoring}
 
 La supervisión es vital para una implementación exitosa del proyecto. Con los conocimientos suficientes, es posible ejecutar AEM en MongoDB sin monitorización. Sin embargo, ese conocimiento normalmente se encuentra en ingenieros especializados para cada sección del despliegue.
 
@@ -244,8 +256,8 @@ MongoDB se ejecuta en varios sistemas operativos, incluidos una amplia variedad 
 * Desactive las páginas transparentes y desarrástrelas. Para obtener más información, consulte [Configuración de páginas transparentes de gran tamaño](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/).
 * [Ajuste la configuración de lectura anticipada](https://docs.mongodb.com/manual/administration/production-notes/#readahead) en los dispositivos que almacenan los archivos de la base de datos para que se ajuste a su caso de uso.
 
-   * Para el motor de almacenamiento MMAPv1, si el conjunto de trabajo es mayor que la RAM disponible y el patrón de acceso a documentos es aleatorio, considere la posibilidad de reducir la lectura anticipada a 32 o 16. Evalúe diferentes configuraciones para poder encontrar un valor óptimo que maximice la memoria residente y reduzca el número de errores de página.
-   * Para el motor de almacenamiento WiredTiger, establezca la lectura anticipada en 0 independientemente del tipo de medio de almacenamiento (giratorio, SSD, etc.). En general, utilice la configuración de lectura anticipada recomendada a menos que las pruebas muestren un beneficio mensurable, repetible y fiable en un valor de lectura anticipada más alto. [El Soporte Profesional de MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) puede proporcionar consejos y orientación sobre configuraciones de lectura anticipada distintas a cero.
+  * Para el motor de almacenamiento MMAPv1, si el conjunto de trabajo es mayor que la RAM disponible y el patrón de acceso a documentos es aleatorio, considere la posibilidad de reducir la lectura anticipada a 32 o 16. Evalúe diferentes configuraciones para poder encontrar un valor óptimo que maximice la memoria residente y reduzca el número de errores de página.
+  * Para el motor de almacenamiento WiredTiger, establezca la lectura anticipada en 0 independientemente del tipo de medio de almacenamiento (giratorio, SSD, etc.). En general, utilice la configuración de lectura anticipada recomendada a menos que las pruebas muestren un beneficio mensurable, repetible y fiable en un valor de lectura anticipada más alto. [El Soporte Profesional de MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) puede proporcionar consejos y orientación sobre configuraciones de lectura anticipada distintas a cero.
 
 * Deshabilite la herramienta optimizada si ejecuta RHEL 7/CentOS 7 en un entorno virtual.
 * Cuando RHEL 7/CentOS 7 se ejecuta en un entorno virtual, la herramienta optimizada invoca automáticamente un perfil de rendimiento derivado del rendimiento de rendimiento, que establece automáticamente la configuración de lectura anticipada en 4 MB. Esta configuración puede afectar negativamente al rendimiento.
@@ -258,9 +270,9 @@ MongoDB se ejecuta en varios sistemas operativos, incluidos una amplia variedad 
 * Use noatime para el punto de montaje [dbPath](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath).
 * Configure suficientes identificadores de archivo (fs.file-max), límite pid de kernel (kernel.pid_max) y el máximo de subprocesos por proceso (kernel.threads-max) para su implementación. Para los sistemas grandes, los siguientes valores proporcionan un buen punto de partida:
 
-   * valor fs.file-max de 98000,
-   * valor kernel.pid_max de 64000,
-   * valor andkernel.threads-max de 64000
+  * valor fs.file-max de 98000,
+  * valor kernel.pid_max de 64000,
+  * valor andkernel.threads-max de 64000
 
 * Asegúrese de que el sistema tenga configurado el espacio de intercambio. Consulte la documentación del sistema operativo para obtener detalles sobre el tamaño adecuado.
 * Asegúrese de que el TCP keepalive predeterminado del sistema esté configurado correctamente. Un valor de 300 suele proporcionar un mejor rendimiento para conjuntos de réplicas y clústeres compartidos. Ver: [¿Afecta el tiempo de mantenimiento de TCP a las implementaciones de MongoDB?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) en las Preguntas más frecuentes para obtener más información.

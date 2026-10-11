@@ -10,13 +10,20 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '415'
 ht-degree: 6%
-
 ---
-
 # Consola Informes {#reports-console}
 
 ## Información general {#overview}
@@ -43,17 +50,17 @@ Los informes tabulares se pueden exportar en formato .csv para su posterior proc
 
 * Elija entre:
 
-   * **[!UICONTROL Informe de asignaciones]**
+  * **[!UICONTROL Informe de asignaciones]**
 
-      * Genere un informe para el sitio, el usuario o el grupo y la asignación de la comunidad seleccionados.
+    * Genere un informe para el sitio, el usuario o el grupo y la asignación de la comunidad seleccionados.
 
-   * **[!UICONTROL Informe de entradas]**
+  * **[!UICONTROL Informe de entradas]**
 
-      * Genere un informe para el sitio de la comunidad, el tipo de contenido y el período de tiempo seleccionados.
+    * Genere un informe para el sitio de la comunidad, el tipo de contenido y el período de tiempo seleccionados.
 
-   * **[!UICONTROL Informe de vistas]**
+  * **[!UICONTROL Informe de vistas]**
 
-      * genere un informe para el sitio de la comunidad, el tipo de contenido y el período de tiempo seleccionados.
+    * genere un informe para el sitio de la comunidad, el tipo de contenido y el período de tiempo seleccionados.
 
 ![informes](assets/reports1.png)
 
@@ -77,10 +84,10 @@ Seleccione los criterios del informe:
 
   Seleccione una de las siguientes opciones:
 
-   * Últimos 7 días
-   * Últimos 30 días
-   * Últimos 90 días
-   * Año pasado
+  * Últimos 7 días
+  * Últimos 30 días
+  * Últimos 90 días
+  * Año pasado
 
 Seleccione **[!UICONTROL Generar]** para crear el informe.
 
@@ -106,10 +113,10 @@ Seleccione los criterios del informe:
 
   Seleccione una de las siguientes opciones:
 
-   * Últimos 7 días
-   * Últimos 30 días
-   * Últimos 90 días
-   * Año pasado
+  * Últimos 7 días
+  * Últimos 30 días
+  * Últimos 90 días
+  * Año pasado
 
 Seleccione **[!UICONTROL Generar]** para crear el informe.
 
@@ -121,8 +128,8 @@ Seleccione **[!UICONTROL Generar]** para crear el informe.
 
 Si no aparece ningún sitio de la comunidad, asegúrese de que Adobe Analytics se haya habilitado para un sitio. Si elige informes sobre las asignaciones, asegúrese de que la función de asignaciones se encuentra en la estructura del sitio de la comunidad.
 
-### AEM Los informes no se muestran en instancia de autor {#reports-do-not-show-in-aem-author-instance}
+### Los informes no se muestran en la instancia de autor de AEM {#reports-do-not-show-in-aem-author-instance}
 
-AEM Si los informes no aparecen en la instancia de autor de la, compruebe las personalizaciones, como la asignación de URL en la instancia de Publish. AEM Si la asignación de direcciones URL solo se realiza en la instancia de Publish AEM de la comunidad de, asegúrese de que se haya configurado lo mismo en la instancia de autor de la comunidad en la configuración de **Fábrica de componentes sociales de informe de tendencias del sitio**.
+Si los informes no se muestran en la instancia de autor de AEM, compruebe las personalizaciones, como la asignación de URL en la instancia de publicación. Si la asignación de URL solo se realiza en la instancia de publicación de AEM del sitio de comunidades, asegúrese de que se haya configurado lo mismo en la instancia de autor de AEM en la configuración de **Fábrica de componentes sociales de informe de tendencias del sitio**.
 
-AEM ![Asignación de URL en el autor de la](assets/sitetrend.png)
+![Asignación de URL en AEM Author](assets/sitetrend.png)

@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 91%
-
+source-wordcount: '2051'
+ht-degree: 92%
 ---
-
 # Arquitectura de los formularios HTML5{#architecture-of-html-forms}
 
 ## Arquitectura {#architecture}
@@ -178,9 +193,9 @@ El nodo Perfil tiene una propiedad **sling:resourceSuperType** con el valor **xf
 * **xfaforms.profile**: esta biblioteca contiene la implementación para el motor de diseño y los scripts XFA.
 
 Estas bibliotecas están modeladas como bibliotecas de cliente de CQ que aprovechan las capacidades de concatenación, minificación y compresión automáticas de las bibliotecas JavaScript del marco de CQ.
-Para obtener más información sobre las bibliotecas de cliente de CQ, consulte [Documentación de CQ Clientlib](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
+Para obtener más información sobre las bibliotecas de cliente de CQ, consulte [Documentación la biblioteca de cliente de CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
 Como se ha descrito anteriormente, el procesador de perfiles JSP llama al servicio Forms a través de una inclusión sling. Este JSP también establece varias opciones de depuración en función de la configuración de administración o los parámetros de solicitud.
 
-Los formularios HTML5 permiten a los desarrolladores crear un procesador de perfiles y perfiles para personalizar el aspecto de los formularios. Por ejemplo, los formularios HTML Forms permiten a los desarrolladores integrar formularios en un panel o una sección &lt;div> de un portal de HTML existente.
-Para obtener más información sobre cómo crear perfiles personalizados, consulte [Crear un perfil personalizado](/help/forms/using/custom-profile.md).
+Los formularios HTML5 permiten a los desarrolladores crear un procesador de perfiles y perfiles para personalizar la apariencia de los formularios. Por ejemplo, los formularios HTML permiten a los desarrolladores integrar formularios en un panel o una sección &lt;div> de un portal HTML.
+Para obtener más información sobre la creación de perfiles personalizados, consulte [Creación de un perfil personalizado](/help/forms/using/custom-profile.md).

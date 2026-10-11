@@ -9,13 +9,29 @@ exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 96%
-
+source-wordcount: '1082'
+ht-degree: 94%
 ---
-
 # Ver y comprender los informes de análisis de AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms se integra con Adobe Analytics para permitirle capturar y realizar un seguimiento de las métricas de rendimiento de los formularios y documentos publicados. El objetivo detrás del análisis de estas métricas es tomar decisiones informadas basadas en los datos sobre los cambios necesarios para que los formularios o documentos sean más utilizables.
@@ -63,7 +79,7 @@ AEM Forms muestra los informes de análisis del formulario y de cada panel del f
 
 ![Informe de resumen de un formulario adaptable](assets/analyticsdashboard_callout.png)
 
-**A.** Conversiones **B.** Resumen de nivel de formulario **C.** Resumen a nivel de panel **D.** Exploradores de visitantes: filtro **E.** SO de los visitantes: filtro **F.** Idioma de los visitantes: filtro
+**A.** Conversiones **B.** Resumen de nivel de formulario **C.** Resumen de nivel de panel **D.** Exploradores de visitantes: filtro **E.** SO de los visitantes: filtro **F.** Idioma de los visitantes: filtro
 
 De forma predeterminada, se muestra el informe de análisis de los últimos siete días. Puede ver los informes de los últimos 15 días, el último mes, etc., o especificar un intervalo de fechas.
 

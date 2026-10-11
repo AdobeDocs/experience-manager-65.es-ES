@@ -8,13 +8,22 @@ feature: Upgrading
 exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 3%
-
 ---
-
 # Reestructuración del repositorio de Assets en AEM 6.5 {#assets-repository-restructuring-in-aem}
 
 Como se describe en la página principal [Reestructuración del repositorio en AEM 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a Adobe Experience Manager (AEM) 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de AEM Assets. Algunos cambios requieren esfuerzo durante el proceso de actualización de AEM 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
@@ -144,7 +153,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
       <ol>
        <li>Dado que el destino se encuentra en <strong> <code>/apps</code></strong>, este cambio debe persistir en SCM.</li>
       </ol> </li>
-     <li>Quitar la carpeta: <code>/etc/dam/workflow/notification/email/downloadasset </code>después de mover las plantillas de correo electrónico que contiene.<br />
+     <li>Quitar la carpeta: <code>/etc/dam/workflow/notification/email/downloadasset </code> después de mover las plantillas de correo electrónico que contiene.<br />
       <ol>
        <li>Si no se han realizado actualizaciones en la plantilla de correo electrónico en <strong> <code>/etc</code></strong>, la carpeta se puede quitar porque la plantilla de correo electrónico original existe en <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> como parte de la instalación de AEM 6.4.</li>
       </ol> </li>

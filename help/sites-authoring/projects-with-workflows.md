@@ -9,13 +9,28 @@ exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 40%
-
+source-wordcount: '787'
+ht-degree: 37%
 ---
-
 
 # Uso de flujos de trabajo de proyecto {#working-with-project-workflows}
 
@@ -39,12 +54,12 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 | Solicitar lanzamiento | x |  |  |  |
 | Solicitar página de destino | x |  |  |  |
 | Solicitar correo electrónico | x |  |  |  |
-| Creación de copia de idioma de DAM&ast; |  |  |  | x |
+| Crear copia de idioma DAM&ast; |  |  |  | x |
 | Creación y traducción de copia de idioma de DAM&ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para Assets.](/help/sites-administering/tc-manage.md)
+>&ast; Estos flujos de trabajo no se inician desde el mosaico **Workflow** en Proyectos. Consulte [Creación de copias de idioma para Assets.](/help/sites-administering/tc-manage.md)
 
 Los pasos para iniciar y completar flujos de trabajo son los mismos independientemente del flujo de trabajo que se elija. Solo cambian los pasos.
 
@@ -54,7 +69,7 @@ Para obtener más información sobre cómo trabajar con flujos de trabajo en AEM
 
 * [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md)
 * [Aplicación de flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md)
-* [Configuración de flujos de trabajo &#x200B;](/help/sites-administering/workflows.md)
+* [Configuración de flujos de trabajo](/help/sites-administering/workflows.md)
 
 En esta sección se describen los flujos de trabajo disponibles para Proyectos.
 

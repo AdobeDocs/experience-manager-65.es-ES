@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6847'
+source-wordcount: '6948'
 ht-degree: 86%
-
 ---
-
 # Fragmentos de documento{#document-fragments}
 
 ## Fragmentos de documento {#document-fragments-1}
@@ -202,10 +215,10 @@ La función Buscar y reemplazar permite buscar (y reemplazar) cualquier cadena d
 * Utilice el enlace de diccionario de datos adecuado en los módulos de texto.
 * Al usar el Editor de texto para cambiar un recurso de texto, se aplican las siguientes reglas:
 
-   * **Adición de variable:** permitido
-   * **Eliminación de variable:** permitido
-   * **Actualización de propiedades:** permitido
-   * **Cambio del diccionario de datos:** permitido hasta que no se utilice el elemento de diccionario de datos. No se puede cambiar el diccionario de datos al actualizar.
+  * **Adición de variable:** permitido
+  * **Eliminación de variable:** permitido
+  * **Actualización de propiedades:** permitido
+  * **Cambio del diccionario de datos:** permitido hasta que no se utilice el elemento de diccionario de datos. No se puede cambiar el diccionario de datos al actualizar.
 
 ## Lista {#list}
 
@@ -283,8 +296,8 @@ Para cambiar el orden de los recursos dentro de la lista, seleccione y mantenga 
 * Use un enlace de diccionario de datos adecuado.
 * Al usar el Editor de listas para cambiar una lista, se aplican las siguientes reglas:
 
-   * Actualización de propiedades: permitido
-   * **Cambio del diccionario de datos:** permitido hasta que no haya ningún elemento que utilice el diccionario de datos asociado a él. No se puede cambiar el diccionario de datos al actualizar.
+  * Actualización de propiedades: permitido
+  * **Cambio del diccionario de datos:** permitido hasta que no haya ningún elemento que utilice el diccionario de datos asociado a él. No se puede cambiar el diccionario de datos al actualizar.
 
 ## Condiciones {#conditions}
 
@@ -340,10 +353,10 @@ El Editor de condiciones permite especificar una condición predeterminada. Si e
 * Use un enlace de diccionario de datos adecuado.
 * Al usar el Editor de condiciones para editar una condición, se aplican las siguientes reglas:
 
-   * **Adición de variable:** permitido
-   * **Eliminación de variable:** permitido
-   * **Actualización de propiedades:** permitido
-   * **Cambio del diccionario de datos:** permitido hasta que no se utilice el elemento de diccionario de datos.
+  * **Adición de variable:** permitido
+  * **Eliminación de variable:** permitido
+  * **Actualización de propiedades:** permitido
+  * **Cambio del diccionario de datos:** permitido hasta que no se utilice el elemento de diccionario de datos.
 
 ## Fragmentos de diseños {#layoutfragments}
 
@@ -375,18 +388,18 @@ Tenga en cuenta los siguientes puntos al diseñar tablas:
 
 * En este tipo de tablas, puede personalizar las siguientes propiedades en el momento de la creación del fragmento.
 
-   * recuento de filas
-   * recuento de columnas
-   * encabezado y pie de página de cada columna
-   * tipo (área/campo de destino) de cada columna
-   * proporción de anchura de cada columna
+  * recuento de filas
+  * recuento de columnas
+  * encabezado y pie de página de cada columna
+  * tipo (área/campo de destino) de cada columna
+  * proporción de anchura de cada columna
 
 * En las tablas que no son de marcador de posición, puede personalizar las siguientes propiedades:
 
-   * recuento de filas
-   * recuento de columnas
-   * encabezado y pie de página de una columna adicional
-   * proporción de anchura de cada columna
+  * recuento de filas
+  * recuento de columnas
+  * encabezado y pie de página de una columna adicional
+  * proporción de anchura de cada columna
 
 Puede anidar fragmentos en una carta. Eso significa que puede agregar un fragmento dentro de otro. La solución Administración de correspondencia admite hasta cuatro niveles de anidamiento dentro de una carta: **Carta *>*Fragmento *>*Fragmento *>*Fragmento *>*Fragmento.**
 
@@ -508,8 +521,8 @@ En este ejemplo se muestra cómo crear una tabla dinámica y una tabla estática
 
    También puede utilizar los XDP estáticos y dinámicos adjuntos a este paso.
 
-   Para obtener más información sobre cómo trabajar con fragmentos de diseño, consulte [Fragmentos de diseño](#layoutfragments).
-Para obtener más información sobre el diseño de diseños, consulte [Ayuda de Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
+   Para obtener más información sobre cómo trabajar con fragmentos de diseño, consulte [Fragmentos de diseños](#layoutfragments).
+   Para obtener más información sobre la creación de diseños, consulte [Ayuda de Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
    [Obtener archivo](assets/static.xdp.zip)
 
@@ -526,7 +539,7 @@ Para obtener más información sobre el diseño de diseños, consulte [Ayuda de 
 
 1. Cree un fragmento de diseño basado en el XDP estático. La ficha Tabla de las propiedades muestra que la tabla es estática (campo Configuración para ). El número de filas (1) y columnas (3) se deriva del fragmento de diseño o XDP.
 
-   Aquí puede cambiar el número de columnas y filas. Según lo que elija en esta pantalla, el número de filas y columnas de una tabla estática permanecerán fijos en la carta que se crea con este diseño.
+   Aquí puede cambiar el número de columnas y filas. Según lo que elija en esta pantalla, el número de filas y columnas de la tabla estática permanecerán fijos en la carta que se crea con este diseño.
    [![Pantalla Creación de un fragmento de diseño](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Cree una carta utilizando ambos fragmentos de diseño. Cuando inserte el XDP dinámico en la carta, establezca el enlace de sus campos en los elementos de colección del diccionario de datos.

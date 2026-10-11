@@ -10,13 +10,20 @@ role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2963'
-ht-degree: 1%
-
+source-wordcount: '3201'
+ht-degree: 0%
 ---
-
 # Consola Sitios de comunidades {#communities-sites-console}
 
 La consola Sitios de Communities proporciona acceso a:
@@ -103,12 +110,12 @@ En el panel Plantilla del sitio, se especifican el Título, la Descripción, la 
 
   Nombre de la página raíz del sitio que aparece en la dirección URL.
 
-   * Compruebe el nombre, ya que no se cambia fácilmente después de crear el sitio.
-   * La dirección URL base ( `https://server:port/site root/site name)`) se muestra debajo de `Community Site Name`.
+  * Compruebe el nombre, ya que no se cambia fácilmente después de crear el sitio.
+  * La dirección URL base ( `https://server:port/site root/site name)`) se muestra debajo de `Community Site Name`.
 
-   * Para una URL válida, añada un código de idioma base + &quot;.html&quot;
+  * Para una URL válida, añada un código de idioma base + &quot;.html&quot;
 
-     *Por ejemplo*, `https://localhost:4502/content/sites/mysight/en.html`
+    *Por ejemplo*, `https://localhost:4502/content/sites/mysight/en.html`
 
 * Menú **Plantilla de sitio de la comunidad**
 
@@ -144,8 +151,8 @@ Al crear o seleccionar una imagen, tenga en cuenta lo siguiente:
 * La imagen se fija al borde izquierdo de la ventana del explorador.
 * No se cambia el tamaño de la imagen, de modo que cuando el ancho de la imagen es...
 
-   * Menor que el ancho del explorador, la imagen se repite horizontalmente.
-   * Con un ancho mayor que el del explorador, la imagen parece recortada.
+  * Menor que el ancho del explorador, la imagen se repite horizontalmente.
+  * Con un ancho mayor que el del explorador, la imagen parece recortada.
 
 * Seleccione **Siguiente**.
 
@@ -179,32 +186,32 @@ El panel Configuración contiene varios subpaneles que presentan las funciones q
 * **Permitir el registro de usuarios**
 
   Si se selecciona, los visitantes del sitio pueden convertirse en miembros de la comunidad mediante el registro automático.
-Si no se selecciona, el sitio de la comunidad está *restringido* y los visitantes del sitio deben asignarse al grupo de miembros del sitio de la comunidad, realizar una solicitud o recibir una invitación por correo electrónico. Si no se selecciona, no se debe permitir el acceso anónimo.
-Desmarque un sitio de la comunidad *private*. La opción predeterminada está activada.
+  Si no se selecciona, el sitio de la comunidad está *restringido* y los visitantes del sitio deben asignarse al grupo de miembros del sitio de la comunidad, realizar una solicitud o recibir una invitación por correo electrónico. Si no se selecciona, no se debe permitir el acceso anónimo.
+  Desmarque un sitio de la comunidad *private*. La opción predeterminada está activada.
 
 * **Permitir acceso anónimo**
 
   Si se selecciona, el sitio de la comunidad está *abierto* y cualquier visitante del sitio puede acceder al sitio.
-Si no se selecciona, solo los miembros que han iniciado sesión pueden acceder al sitio.
-Desmarque un sitio de la comunidad *private*. La opción predeterminada está activada.
+  Si no se selecciona, solo los miembros que han iniciado sesión pueden acceder al sitio.
+  Desmarque un sitio de la comunidad *private*. La opción predeterminada está activada.
 
 * **Permitir mensajes**
 
   Si esta opción está activada, los miembros pueden enviarse mensajes entre sí y al grupo dentro del sitio de la comunidad.
-Si no se selecciona, la mensajería no está configurada para la comunidad.
-El valor predeterminado está desmarcado.
+  Si no se selecciona, la mensajería no está configurada para la comunidad.
+  El valor predeterminado está desmarcado.
 
 * **Permitir inicios de sesión sociales: Facebook**
 
   Si se selecciona esta opción, se permite que los visitantes del sitio inicien sesión con las credenciales de su cuenta de Facebook. La [configuración de nube de Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez que se haya creado el sitio de la comunidad.
-Si no se selecciona, no se muestra ningún inicio de sesión de Facebook.
-Deje sin marcar un sitio de la comunidad *private*. El valor predeterminado está desmarcado.
+  Si no se selecciona, no se muestra ningún inicio de sesión de Facebook.
+  Deje sin marcar un sitio de la comunidad *private*. El valor predeterminado está desmarcado.
 
 * **Permitir inicios de sesión sociales: Twitter**
 
   Si se selecciona esta opción, se permite a los visitantes del sitio iniciar sesión con las credenciales de su cuenta de Twitter. La [configuración de nube de Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez que se haya creado el sitio de la comunidad.
-Si no se selecciona, no se muestra ningún inicio de sesión de Twitter.
-Deje sin marcar un sitio de la comunidad *private*. El valor predeterminado está desmarcado.
+  Si no se selecciona, no se muestra ningún inicio de sesión de Twitter.
+  Deje sin marcar un sitio de la comunidad *private*. El valor predeterminado está desmarcado.
 
 >[!NOTE]
 >
@@ -267,7 +274,7 @@ La configuración global para moderar el contenido generado por el usuario (UGC)
 * **Habilitar Analytics**
 
   Solo está disponible cuando Adobe Analytics se ha [configurado](/help/communities/analytics.md) para las características de Communities.
-El valor predeterminado está desmarcado. Cuando se selecciona, aparece un menú de selección adicional:
+  El valor predeterminado está desmarcado. Cuando se selecciona, aparece un menú de selección adicional:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
@@ -304,39 +311,39 @@ El valor predeterminado está desmarcado. Cuando se selecciona, aparece un menú
 
 * **Seleccione las opciones de traducción para el sitio de la comunidad**
 
-   * **Traducir toda la página**
+  * **Traducir toda la página**
 
-     Si se selecciona, todos los UGC de una página se traducen al idioma base de la página.
+    Si se selecciona, todos los UGC de una página se traducen al idioma base de la página.
 
-     El valor predeterminado es *no seleccionado*.
+    El valor predeterminado es *no seleccionado*.
 
-   * **Traducir solo la selección**
+  * **Traducir solo la selección**
 
-     Si se selecciona, aparece una opción de traducción junto a cada entrada que permite traducir entradas individuales al idioma base de la página.
-El valor predeterminado es *seleccionado*.
+    Si se selecciona, aparece una opción de traducción junto a cada entrada que permite traducir entradas individuales al idioma base de la página.
+    El valor predeterminado es *seleccionado*.
 
 * **Seleccionar opciones de persistencia**
 
-   * **Traducir contribuciones a petición del usuario y continuar después**
-Si se selecciona, el contenido no se traduce hasta que se realiza una solicitud. Una vez traducida, la traducción se almacena en el repositorio.
+  * **Traducir contribuciones a petición del usuario y continuar después**
+    Si se selecciona, el contenido no se traduce hasta que se realiza una solicitud. Una vez traducida, la traducción se almacena en el repositorio.
 
-     El valor predeterminado es *no seleccionado*.
+    El valor predeterminado es *no seleccionado*.
 
-   * **No mantener traducciones**
+  * **No mantener traducciones**
 
-     Si se selecciona, las traducciones no se almacenan en el repositorio.
+    Si se selecciona, las traducciones no se almacenan en el repositorio.
 
-     Si no se selecciona, las traducciones se mantienen.
+    Si no se selecciona, las traducciones se mantienen.
 
-     El valor predeterminado es *no seleccionado*.
+    El valor predeterminado es *no seleccionado*.
 
 * **Procesamiento inteligente**
 
   Seleccione una de las siguientes opciones:
 
-   * `Always show contributions in the original language` (predeterminada)
-   * `Always show contributions in user preferred language`
-   * `Show contributions in user preferred language for only logged-in users`
+  * `Always show contributions in the original language` (predeterminada)
+  * `Always show contributions in user preferred language`
+  * `Show contributions in user preferred language for only logged-in users`
 
 ### Paso 4: Crear sitio de comunidades {#step-create-communities-site}
 
@@ -409,17 +416,17 @@ El panel ESTRUCTURA permite modificar la estructura creada inicialmente a partir
 * Arrastre y suelte [funciones de la comunidad](/help/communities/functions.md) adicionales en la estructura del sitio.
 * En una instancia de una función de comunidad en la estructura del sitio:
 
-   * **`gear icon`**
+  * **`gear icon`**
 
-     Editar la configuración, incluidos el título para mostrar y el nombre de dirección URL, y [grupos de miembros privilegiados](/help/communities/users.md#privilegedmembersgroups).
+    Editar la configuración, incluidos el título para mostrar y el nombre de dirección URL, y [grupos de miembros privilegiados](/help/communities/users.md#privilegedmembersgroups).
 
-   * **`trashcan icon`**
+  * **`trashcan icon`**
 
-     Quitar (eliminar) funciones de la estructura del sitio.
+    Quitar (eliminar) funciones de la estructura del sitio.
 
-   * **`grid icon`**
+  * **`grid icon`**
 
-     Modifique el orden de las funciones tal como se muestran en la barra de navegación de nivel superior del sitio.
+    Modifique el orden de las funciones tal como se muestran en la barra de navegación de nivel superior del sitio.
 
 >[!NOTE]
 >
@@ -448,7 +455,7 @@ El panel DISEÑO permite aplicar una nueva temática:
 * [Tema del sitio de la comunidad](#community-site-theme)
 * [Marca del sitio de la comunidad](#community-site-branding)
 
-   * Desplácese hasta la parte inferior del panel para poder cambiar la imagen de marca.
+  * Desplácese hasta la parte inferior del panel para poder cambiar la imagen de marca.
 
 ### Modificar configuración {#modify-settings}
 
@@ -523,7 +530,7 @@ Para redirigir correctamente, una vez que se ha configurado un sitio y se ha ins
 * Iniciar sesión con privilegios de administrador.
 * Acceda a la [consola web](/help/sites-deploying/configuring-osgi.md).
 
-   * Por ejemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+  * Por ejemplo, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
 * Busque `Adobe Granite Login Selector Authentication Handler`.
 * Seleccione el icono `pencil` para poder abrir la configuración y editarla.
@@ -544,7 +551,7 @@ En la misma instancia de publicación de AEM configurada con una asignación de 
 
 * Vaya a la página de inicio del sitio de la comunidad.
 
-   * Por ejemplo, [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
+  * Por ejemplo, [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
 
 * Seleccione Cerrar sesión.
 * Seleccione Iniciar sesión.

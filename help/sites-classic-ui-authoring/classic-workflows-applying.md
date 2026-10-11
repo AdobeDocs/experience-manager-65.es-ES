@@ -1,6 +1,6 @@
 ---
 title: Aplicación de flujos de trabajo a páginas
-description: Los flujos de trabajo se pueden iniciar desde la consola Sitios web o, al editar una página, desde el Sidekick.
+description: Los flujos de trabajo se pueden iniciar desde la consola Sitios web o, al editar una página, desde Sidekick.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,13 +9,22 @@ exl-id: d8b604c5-a6da-47c4-9422-b519e224c7ca
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 15%
-
+source-wordcount: '255'
+ht-degree: 14%
 ---
-
 # Aplicación de flujos de trabajo a páginas{#applying-workflows-to-pages}
 
 A la hora de aplicar el flujo de trabajo, se especifica la siguiente información:
@@ -25,16 +34,16 @@ A la hora de aplicar el flujo de trabajo, se especifica la siguiente informació
   Puede aplicar cualquier flujo de trabajo (al que tenga acceso, según lo haya asignado el administrador de AEM).
 * Opcionalmente:
 
-   * Un comentario que proporciona información sobre por qué ha iniciado el flujo de trabajo.
-   * Título que ayuda a identificar la instancia de flujo de trabajo en la bandeja de entrada de un usuario.
+  * Un comentario que proporciona información sobre por qué ha iniciado el flujo de trabajo.
+  * Título que ayuda a identificar la instancia de flujo de trabajo en la bandeja de entrada de un usuario.
 
 >[!NOTE]
 >
->AEM Los administradores de la aplicación pueden iniciar flujos de trabajo utilizando [otros métodos](/help/sites-administering/workflows-starting.md).
+>Los administradores de AEM pueden iniciar flujos de trabajo utilizando [otros métodos](/help/sites-administering/workflows-starting.md).
 
 ## Aplicación de flujos de trabajo {#applying-workflows}
 
-Los flujos de trabajo se pueden iniciar desde la consola Sitios web o, al editar una página, desde el Sidekick.
+Los flujos de trabajo se pueden iniciar desde la consola Sitios web o, al editar una página, desde Sidekick.
 
 La columna **Estado** de la consola **Sitios web** indica si se ha aplicado un flujo de trabajo a una página:
 
@@ -47,11 +56,11 @@ La columna **Estado** de la consola **Sitios web** indica si se ha aplicado un f
 1. En la lista de la página, seleccione la página y haga clic en Flujo de trabajo.
 1. En el cuadro de diálogo Iniciar flujo de trabajo, seleccione el flujo de trabajo que desea aplicar. Opcionalmente, introduzca un comentario y un título. A continuación, haga clic en Start.
 
-### Iniciar un flujo de trabajo con el Sidekick {#starting-a-workflow-using-sidekick}
+### Iniciar un flujo de trabajo con Sidekick {#starting-a-workflow-using-sidekick}
 
 1. Abra la consola Sitios web.
 1. Abra la página requerida.
-1. Seleccione la pestaña Workflow del Sidekick.
+1. Seleccione la pestaña Flujo de trabajo de Sidekick.
 1. Expanda el cuadro de diálogo **Flujo de trabajo**, lo que le permite seleccionar **Flujo de trabajo** y, opcionalmente, escribir **Título del flujo de trabajo** y **Comentario**.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)

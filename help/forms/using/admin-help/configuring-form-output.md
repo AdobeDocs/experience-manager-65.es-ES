@@ -9,31 +9,45 @@ exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '257'
 ht-degree: 8%
-
 ---
-
 # Configurar la salida del formulario{#configuring-form-output}
 
-## Especifique el tipo de salida del HTML devuelta al explorador web {#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Especifique el tipo de salida de HTML que se devuelve al explorador web {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
 1. En la consola de administración, haga clic en Servicios > Formularios.
 1. En Salida de formulario, en la lista Tipo de salida, seleccione una de las siguientes opciones:
 
-   **HTML completo:** Para procesar el formulario con etiquetas de HTML completas (una página de HTML completa). Este valor es el predeterminado.
+   **HTML completo:** Para procesar el formulario con etiquetas HTML completas (una página HTML completa). Este valor es el predeterminado.
 
-   **Cuerpo del formulario:** Para procesar el formulario en `<BODY>` etiquetas (no es una página de HTML completa).
+   **Cuerpo del formulario:** Para procesar el formulario con `<BODY>` etiquetas (no es una página de HTML completa).
 
 1. Haga clic en Guardar.
 
-## Especifique la ubicación donde se procesa el contenido del PDF {#specify-the-location-where-pdf-content-is-rendered}
+## Especifique la ubicación donde se renderiza el contenido de PDF {#specify-the-location-where-pdf-content-is-rendered}
 
 1. En Salida de formulario, en la lista Procesar en, seleccione una de las siguientes opciones:
 
-   **Cliente:** para procesar PDF forms en Adobe Acrobat o Adobe Reader. AEM El procesamiento del lado del cliente mejora el rendimiento de los formularios de la y se aplica solo a la transformación del formulario PDF.
+   **Cliente:** para procesar PDF forms en Adobe Acrobat o Adobe Reader. El procesamiento del lado del cliente mejora el rendimiento de los formularios de AEM y se aplica solo a la transformación del formulario PDF.
 
    **Servidor:** para procesar PDF forms en el servidor de aplicaciones.
 
@@ -53,7 +67,7 @@ Siga los siguientes pasos para habilitar la función:
 1. Vaya a **Servicios** > **formularios**.
 1. Especifique el Tipo de salida como Cuerpo del formulario.
 1. Guarde la configuración.
-1. Declare una variable de JavaScript, __CUSTOM_SCRIPTS_VERSION, en la sección del encabezado del código del HTML y establezca su valor en 1.
+1. Declare una variable de JavaScript, __CUSTOM_SCRIPTS_VERSION, en la sección del encabezado del código de HTML y establezca su valor en 1.
 
    >[!NOTE]
    >

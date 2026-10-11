@@ -9,13 +9,27 @@ role: Admin,User
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '690'
 ht-degree: 98%
-
 ---
-
 # Buscar formularios y recursos{#searching-for-forms-and-assets}
 
 Puede buscar formularios o recursos de formulario, mediante una cadena de texto o una cadena de texto junto con caracteres comodín. También puede limitar la búsqueda mediante los criterios disponibles en varias categorías en el panel Buscar.
@@ -49,7 +63,7 @@ En los criterios de búsqueda, además de la consulta, puede especificar algunos
 
 ![Campo de búsqueda y parámetros o filtros para buscar formularios y recursos de AEM &#x200B;](assets/search_forms_assets.png)
 
-Campo de búsqueda y parámetros o filtros para buscar formularios y recursos de AEM 
+Campo de búsqueda y parámetros o filtros para buscar formularios y recursos de AEM
 
 ### Ruta de recursos {#asset-path}
 

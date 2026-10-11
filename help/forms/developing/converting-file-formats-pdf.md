@@ -9,13 +9,27 @@ role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7942'
 ht-degree: 0%
-
 ---
-
 # Conversión entre formatos de archivo y PDF {#converting-between-file-formatsand-pdf}
 
 **Las muestras y los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
@@ -134,41 +148,41 @@ Una vez convertido el archivo en un documento de PDF, puede recuperar los result
 
 [Conversión de documentos de Word en documentos de PDF mediante la API de servicio web](converting-file-formats-pdf.md#convert-word-documents-to-pdf-documents-using-the-web-service-api)
 
-[Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Generate PDF Service API Quick Starts](/help/forms/developing/generate-pdf-service-java-api.md#generate-pdf-service-java-api-quick-start-soap)
+[Inicio rápido de la API Generar servicio de PDF](/help/forms/developing/generate-pdf-service-java-api.md#generate-pdf-service-java-api-quick-start-soap)
 
-### Convert Word documents to PDF documents using the Java API {#convert-word-documents-to-pdf-documents-using-the-java-api}
+### Convertir documentos de Word en documentos de PDF mediante la API de Java {#convert-word-documents-to-pdf-documents-using-the-java-api}
 
-Convert a Microsoft Word document to a PDF document by using the Generate PDF API (Java):
+Convierta un documento de Microsoft Word en un documento de PDF mediante la API Generate PDF (Java):
 
-1. Include project files.
+1. Incluir archivos de proyecto.
 
-   Include client JAR files, such as adobe-generatepdf-client.jar, in your Java project&#39;s class path.
+   Incluya archivos JAR de cliente, como adobe-generatepdf-client.jar, en la ruta de clase del proyecto Java.
 
-1. Create a Generate PDF client.
+1. Cree un cliente Generate PDF.
 
-   * Create a `ServiceClientFactory` object that contains connection properties.
-   * Create a `GeneratePdfServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
+   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
+   * Cree un objeto `GeneratePdfServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
 
-1. Retrieve the file to convert to a PDF document.
+1. Recupere el archivo para convertirlo en un documento de PDF.
 
-   * Create a `java.io.FileInputStream` object that represents the Word file to convert by using its constructor. Pass a string value that specifies the file location.
-   * Create a `com.adobe.idp.Document` object by using its constructor and passing the `java.io.FileInputStream` object.
+   * Cree un objeto `java.io.FileInputStream` que represente el archivo de Word que se va a convertir mediante su constructor. Pase un valor de cadena que especifique la ubicación del archivo.
+   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
 
-1. Convert the file to a PDF document.
+1. Convertir el archivo en un documento de PDF.
 
-   Convert the file to a PDF document by invoking the `GeneratePdfServiceClient` object&#39;s `createPDF2` method and passing the following values:
+   Convierta el archivo en un documento de PDF invocando el método `createPDF2` del objeto `GeneratePdfServiceClient` y pasando los siguientes valores:
 
-   * A `com.adobe.idp.Document` object that represents the file to convert.
-   * A `java.lang.String` object that contains the file extension.
-   * A `java.lang.String` object that contains the file type settings to be used in the conversion. File type settings provide conversion settings for different file types, such as .doc or .xls.
-   * A `java.lang.String` object that contains the name of the PDF settings to be used. For example, you can specify `Standard`.
-   * A `java.lang.String` object that contains the name of the security settings to be used.
-   * An optional `com.adobe.idp.Document` object that contains settings to be applied while generating the PDF document.
-   * An optional `com.adobe.idp.Document` object that contains metadata information to be applied to the PDF document.
+   * Objeto `com.adobe.idp.Document` que representa el archivo que se va a convertir.
+   * Objeto `java.lang.String` que contiene la extensión de archivo.
+   * Objeto `java.lang.String` que contiene la configuración de tipo de archivo que se utilizará en la conversión. La configuración de tipo de archivo proporciona opciones de conversión para diferentes tipos de archivo, como .doc o .xls.
+   * Objeto `java.lang.String` que contiene el nombre de la configuración de PDF que se va a usar. Por ejemplo, puede especificar `Standard`.
+   * Objeto `java.lang.String` que contiene el nombre de la configuración de seguridad que se va a utilizar.
+   * Un objeto `com.adobe.idp.Document` opcional que contiene la configuración que se aplicará durante la generación del documento de PDF.
+   * Un objeto `com.adobe.idp.Document` opcional que contiene información de metadatos que se aplicará al documento de PDF.
 
    El método `createPDF2` devuelve un objeto `CreatePDFResult` que contiene el nuevo documento de PDF y la información de registro. El archivo de registro suele contener mensajes de error o advertencia generados por la solicitud de conversión.
 
@@ -214,10 +228,10 @@ Convertir un documento de Microsoft Word en un documento de PDF mediante la API 
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere el archivo para convertirlo en un documento de PDF.
 
@@ -371,10 +385,10 @@ Convierta contenido de HTML en un documento de PDF mediante la API Generate PDF 
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere el contenido de HTML para convertirlo en un documento de PDF.
 
@@ -522,10 +536,10 @@ Conversión de un documento de PDF en un archivo RTF mediante la API Generate PD
    * Establezca el campo `MessageEncoding` del objeto `System.ServiceModel.BasicHttpBinding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM Forms al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Asigne el nombre de usuario de los formularios AEM Forms al campo `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+     * Asigne el valor de contraseña correspondiente al campo `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
+     * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere el documento de PDF que desea convertir.
 

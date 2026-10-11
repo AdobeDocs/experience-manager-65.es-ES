@@ -9,38 +9,54 @@ exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 solution: Experience Manager, Experience Manager Sites
 feature: Multi Site Manager, Language Copy
 role: Admin
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 33%
-
+source-wordcount: '370'
+ht-degree: 40%
 ---
-
 # Traducción y Administrador de varios sitios {#msm-and-translation}
 
 Las siguientes herramientas de administración están disponibles para administrar sitios web y páginas:
 
 * El Administrador de varios sitios (MSM) le permite usar el mismo contenido del sitio en varias ubicaciones, a la vez que permite variaciones:
 
-   * [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-administering/msm.md)
+  * [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-administering/msm.md)
 
 * La traducción permite automatizar la traducción del contenido de la página, los activos y el contenido generado por el usuario para crear y mantener sitios web multilingües:
 
-   * [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md)
+  * [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md)
 
 * Estas dos características se pueden combinar para adaptarse a los sitios web que son [Multinacionales y Multilingües](#multinational-and-multilingual-sites).
 
 ## Sitios multinacionales y multilingües {#multinational-and-multilingual-sites}
 
-Puede crear contenido de forma eficaz para sitios multinacionales y multilingües mediante el uso combinado del Administrador de varios sitios y el flujo de trabajo de traducción. Cree un sitio principal en un idioma para un país específico y luego utilice ese contenido como base para los demás sitios, traduciendo lo que sea necesario:
+Puede crear contenido de forma eficaz para sitios multinacionales y multilingües mediante el uso combinado de Administrador de varios sitios y el flujo de trabajo de traducción. Cree un sitio principal en un idioma para un país específico y luego utilice ese contenido como base para los demás sitios, traduciendo lo que sea necesario:
 
 * [Traducir](/help/sites-administering/translation.md) el sitio principal a diferentes idiomas.
 
 * Use [Administrador de varios sitios](/help/sites-administering/msm.md) para lo siguiente:
 
-   * Reutilice el contenido del sitio principal y las traducciones para crear sitios destinados a otros países y culturas.
-   * Asegúrese de limitar el uso del Administrador de varios sitios al contenido en un idioma, por ejemplo, inglés principal > ramas en inglés en sitios de países, francés principal > ramas en francés en sitios de países.
-   * Cuando sea necesario, desasocie elementos de las Live Copies para añadir detalles de localización.
+  * Reutilice el contenido del sitio principal y las traducciones para crear sitios destinados a otros países y culturas.
+  * Asegúrese de limitar el uso del Administrador de varios sitios al contenido en un idioma, por ejemplo, inglés principal > ramas en inglés en sitios de países, francés principal > ramas en francés en sitios de países.
+  * Cuando sea necesario, desasocie elementos de las Live Copies para añadir detalles de localización.
 
 El diagrama siguiente ilustra cómo se cruzan los conceptos principales (pero no muestra todos los niveles/elementos implicados):
 

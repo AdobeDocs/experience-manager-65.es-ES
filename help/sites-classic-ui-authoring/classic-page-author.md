@@ -1,6 +1,6 @@
 ---
 title: Creación de páginas
-description: 'AEM La creación con el servicio de información general tiene dos aspectos (1) Primeros pasos para los autores: una introducción para los nuevos autores y (2) Guía rápida para la creación de páginas: una guía rápida (de alto nivel) para las acciones principales.'
+description: 'La creación con AEM ofrece dos descripciones generales. (1) Primeros pasos para los autores: una introducción para los nuevos autores y (2) Guía rápida para la creación de páginas: una guía rápida (de alto nivel) para las acciones principales.'
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,16 +9,25 @@ exl-id: a3606d72-1bd8-4886-9285-6457dae66486
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '304'
 ht-degree: 0%
-
 ---
-
 # Creación de páginas{#authoring-pages}
 
-AEM A continuación se ofrece una descripción general de la creación con la ayuda de la creación de:
+A continuación se ofrece una descripción general de la creación con AEM:
 
 * [Primeros pasos para los autores](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md): introducción para nuevos autores
 
@@ -43,10 +52,10 @@ Los componentes Texto e Imagen se pueden editar directamente en la página web s
 Ventana &quot;inspector&quot; flotante que aparece en la página editable. Desde aquí se pueden arrastrar nuevos componentes a la página y se pueden ejecutar acciones específicas de página.
 
 * **[Buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
-En la parte izquierda de cada página legible, el buscador de contenido proporciona acceso rápido a una amplia gama de recursos, incluidos recursos digitales (como otras imágenes, elementos de Flash y documentos), otras páginas y párrafos. Estos elementos se pueden arrastrar a la página; por ejemplo, para colocar recursos o crear vínculos a otras páginas.
+En la parte izquierda de cada página legible, el buscador de contenido proporciona acceso rápido a una amplia gama de recursos, incluidos recursos digitales (como otras imágenes, elementos Flash y documentos), otras páginas y párrafos. Estos elementos se pueden arrastrar a la página; por ejemplo, para colocar recursos o crear vínculos a otras páginas.
 
 * **Menú contextual**
 Al hacer clic con el botón derecho en la mayoría de los elementos de la pantalla (por ejemplo, los párrafos de la página), aparece un menú contextual con las opciones de acción adecuadas.
 
 * **Buscar mientras escribe**
-AEM En determinados casos (por ejemplo, la selección de rutas en los cuadros de diálogo de edición), la búsqueda de contenido a través de la interfaz de la interfaz de la aplicación presenta coincidencias dinámicas al escribir la consulta.
+En determinados casos (por ejemplo, la selección de rutas en los cuadros de diálogo de edición), la búsqueda de contenido a través de la interfaz de AEM presenta coincidencias dinámicas al escribir la consulta.

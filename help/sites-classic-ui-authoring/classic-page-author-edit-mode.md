@@ -10,13 +10,22 @@ exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5721'
-ht-degree: 4%
-
+source-wordcount: '6064'
+ht-degree: 3%
 ---
-
 # Componentes para la creación de páginas{#components-for-page-authoring}
 
 Los siguientes componentes están pensados para utilizarse al crear contenido para una página web estándar. Los componentes forman un subconjunto de los componentes disponibles de forma predeterminada para una instalación estándar de AEM.
@@ -183,7 +192,7 @@ Aquí puede especificar cómo se incluyen las páginas en el carrusel:
 
       * **Notación de predicado de Querybuilder**
         Puede introducir una consulta de búsqueda utilizando la notación de predicado de Querybuilder. Por ejemplo, puede introducir &quot;fulltext=Marketing&quot; para que todas las páginas con &quot;Marketing&quot; en su contenido se muestren en el carrusel.
-        Consulte la [API de QueryBuilder](/help/sites-developing/querybuilder-api.md) para obtener un análisis completo de las expresiones de consulta y más ejemplos.
+        Consulte [API de QueryBuilder](/help/sites-developing/querybuilder-api.md) para obtener información detallada sobre las expresiones de consulta y otros ejemplos.
 
   * **Ordenar por**
     Seleccione `jcr:title`, `jcr:created`, `cq:lastModified` o `cq:template` del menú desplegable.
@@ -1014,7 +1023,7 @@ Este componente necesario define el inicio de un nuevo formulario en una página
 
     Ruta a las propiedades del nodo utilizada para cargar valores predefinidos en los campos del formulario.
     Este campo es opcional y especifica la ruta a un nodo del repositorio. Cuando este nodo tiene propiedades que coinciden con los nombres de campo, los campos adecuados del formulario se precargan con el valor de esas propiedades. Si no existe ninguna coincidencia, el campo contiene el valor predeterminado.
-    Con **Cargar ruta** puede precargar el formulario con valores en los campos obligatorios. Consulte [Precarga de valores de formulario](/help/sites-developing/developing-forms.md#preloading-form-values).
+    Con **Cargar ruta** puede precargar el formulario con valores en los campos obligatorios. Consulte [Precargar valores de formulario](/help/sites-developing/developing-forms.md#preloading-form-values).
 
   * **Validación de cliente**
 

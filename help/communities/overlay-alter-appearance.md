@@ -1,6 +1,6 @@
 ---
 title: Modificar el aspecto
-description: Aprenda a editar el script comment.hbs responsable de crear el HTML general para cada comentario en las comunidades de Adobe Experience Manager.
+description: Aprenda a editar el script comment.hbs responsable de crear la HTML general para cada comentario en las comunidades de Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -10,18 +10,25 @@ exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
-
 # Modificar el aspecto {#alter-the-appearance}
 
 ## Modificación del script {#modify-the-script}
 
-El script `comment.hbs` es responsable de crear el HTML general para cada comentario.
+El script `comment.hbs` es responsable de crear la HTML general para cada comentario.
 
 Para no mostrar el avatar junto a cada comentario publicado:
 

@@ -9,24 +9,35 @@ feature: PDF Generator
 exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '390'
 ht-degree: 3%
-
 ---
-
 # Importar y exportar archivos de configuración del generador de PDF {#importing-and-exporting-pdf-generator-configuration-files}
 
 >[!NOTE]
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-El archivo de configuración contiene la información de conversión del PDF Generator, incluidos el PDF, el tipo de archivo y la configuración de seguridad.
+El archivo de configuración contiene la información de conversión de PDF Generator, incluidos el PDF, el tipo de archivo y la configuración de seguridad.
 
 >[!NOTE]
 >
->No puede cambiar la configuración de tiempo de espera para PDF Generator importando un archivo native2pdfconfig.xml personalizado. La configuración de tiempo de espera de ese archivo es solo informativa y muestra la configuración actual en PDF Generator. Para cambiar la configuración de tiempo de espera, consulte &quot;Configuración de parámetros de rendimiento del PDF Generator AEM&quot; en [Instalación e implementación de formularios de la](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>No puede cambiar la configuración de tiempo de espera para PDF Generator importando un archivo native2pdfconfig.xml personalizado. La configuración de tiempo de espera de ese archivo es solo informativa y muestra la configuración actual en PDF Generator. Para cambiar la configuración de tiempo de espera, consulte &quot;Configuración de parámetros de rendimiento de PDF Generator&quot; en [Instalación e implementación de formularios AEM](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
 ## Exportar el archivo de configuración actual {#export-your-current-configuration-file}
 
@@ -52,7 +63,7 @@ El archivo de configuración contiene la información de conversión del PDF Gen
 
 ## Convertir todas las capas de los archivos de AutoCAD {#convert-all-layers-within-autocad-files}
 
-De forma predeterminada, PDF Generator convierte sólo la capa predeterminada de archivos de AutoCAD en PDF en lugar de todas las capas del archivo. Para convertir todas las capas, siga este procedimiento.
+De forma predeterminada, PDF Generator convierte sólo la capa predeterminada de archivos de AutoCAD en PDF, en lugar de todas las capas del archivo. Para convertir todas las capas, siga este procedimiento.
 
 1. En la consola de administración, haga clic en Servicios > PDF Generator > Archivos de configuración > Exportar configuración.
 1. Seleccione Descargar configuración completa y haga clic en Descargar.
@@ -62,7 +73,7 @@ De forma predeterminada, PDF Generator convierte sólo la capa predeterminada de
 
    Todos los archivos de AutoCAD que se conviertan mediante el fichero de configuración modificado tendrán convertidas todas las capas.
 
-## Restablezca la configuración original instalada con PDF Generator {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
+## Restablezca la configuración a la configuración original instalada con PDF Generator {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
 
 1. En la consola de administración, haga clic en Servicios > PDF Generator > Archivos de configuración > Importar configuración.
 1. Seleccione Restablecer configuración a la configuración predeterminada y haga clic en Importar.

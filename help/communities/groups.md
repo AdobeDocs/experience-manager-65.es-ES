@@ -11,13 +11,20 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1739'
 ht-degree: 1%
-
 ---
-
 # Consola de grupos de la comunidad {#community-groups-console}
 
 La consola Grupos proporciona acceso para crear grupos de comunidad cuando la [estructura de plantillas](/help/communities/sites-console.md#step1) de un sitio de comunidad incluye la función [grupos](/help/communities/functions.md#groups-function).
@@ -56,8 +63,8 @@ Para acceder a la consola de grupos:
 * Seleccione una carpeta existente del sitio de la comunidad para poder abrirla.
 * Seleccione una instancia de un sitio de la comunidad dentro de la carpeta.
 
-   * La estructura del sitio de la comunidad debe incluir una función de grupos.
-   * Estas capturas de pantalla son del tutorial de Introducción después de [crear grupos en la publicación](/help/communities/published-site.md).
+  * La estructura del sitio de la comunidad debe incluir una función de grupos.
+  * Estas capturas de pantalla son del tutorial de Introducción después de [crear grupos en la publicación](/help/communities/published-site.md).
 
   ![crear-grupo](assets/create-group.png)
 
@@ -78,7 +85,7 @@ Para acceder a la consola de grupos:
 * **Título del grupo de la comunidad**
 
   Título para mostrar del grupo.
-El título aparece en el sitio publicado para el grupo.
+  El título aparece en el sitio publicado para el grupo.
 
 * **Descripción del grupo de la comunidad**
 
@@ -87,7 +94,7 @@ El título aparece en el sitio publicado para el grupo.
 * **Raíz de grupo de comunidad**
 
   Ruta de acceso raíz del grupo.
-La raíz predeterminada es el sitio principal, pero la raíz se puede mover a cualquier ubicación del sitio web. No se recomienda cambiarlo.
+  La raíz predeterminada es el sitio principal, pero la raíz se puede mover a cualquier ubicación del sitio web. No se recomienda cambiarlo.
 
 * Menú **Idiomas de grupo de comunidad adicionales disponibles**
 
@@ -97,10 +104,10 @@ La raíz predeterminada es el sitio principal, pero la raíz se puede mover a cu
 
   Nombre de la página raíz del grupo que aparece en la dirección URL. Evite utilizar caracteres de subrayado (_) y palabras clave como recursos y configuración en el nombre del grupo.
 
-   * Compruebe el nombre, ya que no se cambia fácilmente después de crear el grupo.
-   * La dirección URL base se muestra debajo de `Community Group Name`.
-   * Para una URL válida, añada &quot;.html&quot;
-     *por ejemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+  * Compruebe el nombre, ya que no se cambia fácilmente después de crear el grupo.
+  * La dirección URL base se muestra debajo de `Community Group Name`.
+  * Para una URL válida, añada &quot;.html&quot;
+    *por ejemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * Menú **Plantilla de grupo de la comunidad**
 
@@ -134,8 +141,8 @@ Al crear o seleccionar una imagen, tenga en cuenta lo siguiente:
 * La imagen se fija al borde izquierdo de la ventana del explorador
 * No se cambia el tamaño de la imagen, de modo que cuando el ancho de la imagen es:
 
-   * Menor que el ancho del explorador, la imagen se repite horizontalmente.
-   * Mayor que el ancho del explorador, la imagen aparece recortada.
+  * Menor que el ancho del explorador, la imagen se repite horizontalmente.
+  * Mayor que el ancho del explorador, la imagen aparece recortada.
 
 ### Paso 3: Configuración {#step-settings}
 
@@ -239,14 +246,14 @@ El panel ESTRUCTURA permite modificar la estructura creada inicialmente a partir
 * Arrastre y suelte [funciones de la comunidad](/help/communities/functions.md) adicionales en la estructura del sitio.
 * En una instancia de una función de comunidad en la estructura del sitio:
 
-   * **`Gear icon`**
-Edite la configuración, incluidos el título para mostrar, la dirección URL y los [grupos de miembros privilegiados](/help/communities/users.md#privilegedmembersgroups).
+  * **`Gear icon`**
+    Edite la configuración, incluidos el título para mostrar, la dirección URL y los [grupos de miembros privilegiados](/help/communities/users.md#privilegedmembersgroups).
 
-   * **`Trashcan icon`**
-Quitar (eliminar) funciones de la estructura del sitio.
+  * **`Trashcan icon`**
+    Quitar (eliminar) funciones de la estructura del sitio.
 
-   * **`Grid icon`**
-Modifique el orden de las funciones tal como se muestran en la barra de navegación de nivel superior del sitio.
+  * **`Grid icon`**
+    Modifique el orden de las funciones tal como se muestran en la barra de navegación de nivel superior del sitio.
 
 >[!CAUTION]
 >
@@ -271,7 +278,7 @@ El panel DISEÑO permite modificar la temática:
 * [Tema del grupo de la comunidad](#community-group-theme)
 * [Marca del grupo de la comunidad](#community-group-branding)
 
-   * Desplácese hasta la parte inferior del panel para poder cambiar la imagen de marca.
+  * Desplácese hasta la parte inferior del panel para poder cambiar la imagen de marca.
 
 ### Modificar configuración {#modify-settings}
 

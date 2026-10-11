@@ -1,6 +1,6 @@
 ---
 title: Seguimiento de correos electrónicos rechazados
-description: Cuando envía una newsletter a muchos usuarios, suele haber algunas direcciones de correo electrónico no válidas en la lista. El envío de boletines a esas direcciones se recupera. AEM Puede administrar esas devoluciones y puede dejar de enviar boletines informativos a esas direcciones después de que se exceda el contador de devoluciones configurado.
+description: Cuando envía una newsletter a muchos usuarios, suele haber algunas direcciones de correo electrónico no válidas en la lista. El envío de boletines a esas direcciones se recupera. AEM puede administrar esas devoluciones y puede dejar de enviar boletines informativos a esas direcciones después de superar el contador de devoluciones configurado.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -9,28 +9,39 @@ exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 0%
-
+source-wordcount: '714'
+ht-degree: 1%
 ---
-
 # Seguimiento de correos electrónicos rechazados{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->El Adobe AEM de no planea mejorar aún más el seguimiento de los correos electrónicos abiertos/rechazados enviados por el servicio SMTP de la.
+>Adobe no planea mejorar aún más el seguimiento de los correos electrónicos abiertos/rechazados enviados por el servicio SMTP de AEM.
 >
->Se recomienda [usar Adobe Campaign AEM y su integración con el servicio de asistencia técnica](/help/sites-administering/campaign.md).
+>Se recomienda [usar Adobe Campaign y su integración con AEM](/help/sites-administering/campaign.md).
 
-Cuando envía una newsletter a muchos usuarios, suele haber algunas direcciones de correo electrónico no válidas en la lista. El envío de boletines a esas direcciones se recupera. AEM Puede administrar esas devoluciones y puede dejar de enviar boletines informativos a esas direcciones después de que se exceda el contador de devoluciones configurado. De forma predeterminada, la tasa de salida hacia otro sitio se establece en 3, pero se puede configurar.
+Cuando envía una newsletter a muchos usuarios, suele haber algunas direcciones de correo electrónico no válidas en la lista. El envío de boletines a esas direcciones se recupera. AEM puede administrar esas devoluciones y puede dejar de enviar boletines informativos a esas direcciones después de superar el contador de devoluciones configurado. De forma predeterminada, la tasa de salida hacia otro sitio se establece en 3, pero se puede configurar.
 
-AEM AEM Para configurar el seguimiento de correos electrónicos rechazados, configure la configuración de la opción para sondear un buzón de correo existente en el que se reciban los correos electrónicos rechazados. Normalmente, esta ubicación es la dirección de correo electrónico de origen que especifica dónde envía la newsletter. AEM sondea esta bandeja de entrada e importa todos los correos electrónicos por debajo de la ruta especificada en la configuración de sondeo. A continuación, se activa un flujo de trabajo para buscar las direcciones de correo electrónico rechazadas dentro de los usuarios y se actualiza el valor de la propiedad bounceCounter del usuario en consecuencia. Una vez superados los rebotes máximos configurados, el usuario se elimina de la lista del boletín informativo.
+Para configurar AEM para que rastree los correos electrónicos rechazados, configure AEM para sondear un buzón existente en el que se reciben los correos electrónicos rechazados. Normalmente, esta ubicación es la dirección de correo electrónico de origen que especifica dónde envía la newsletter. AEM sondea esta bandeja de entrada e importa todos los correos electrónicos por debajo de la ruta especificada en la configuración de sondeo. A continuación, se activa un flujo de trabajo para buscar las direcciones de correo electrónico rechazadas dentro de los usuarios y se actualiza el valor de la propiedad bounceCounter del usuario en consecuencia. Una vez superados los rebotes máximos configurados, el usuario se elimina de la lista del boletín informativo.
 
 ## Configuración del importador de fuentes {#configuring-the-feed-importer}
 
-El importador de fuentes le permite importar repetidamente contenido de fuentes externas al repositorio. AEM Con esta configuración del importador de fuentes, comprueba en el buzón del remitente si hay correos electrónicos devueltos.
+El importador de fuentes le permite importar repetidamente contenido de fuentes externas al repositorio. Con esta configuración del importador de fuentes, AEM comprueba el buzón del remitente para ver si hay correos electrónicos rechazados.
 
 Para configurar el importador de fuentes para el seguimiento de correos electrónicos rechazados, haga lo siguiente:
 
@@ -64,7 +75,7 @@ Para configurar el importador de fuentes para el seguimiento de correos electró
 
    Permite establecer marcas para buscar.
 
-   `imap.flag.SEEN`: establecer falso para mensaje nuevo/no visto, verdadero para mensajes ya leídos
+   `imap.flag.SEEN`:Set falso para mensaje nuevo/no visto, verdadero para mensajes ya leídos
 
    Consulte [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) para obtener la lista completa de indicadores.
 

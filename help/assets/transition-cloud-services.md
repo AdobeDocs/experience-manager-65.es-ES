@@ -5,13 +5,25 @@ role: Admin
 feature: Translation
 exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ee8e0f18-03e5-48ca-a013-04a577cd9a60
+    internal-label: Translation
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 42%
-
+source-wordcount: '398'
+ht-degree: 48%
 ---
-
 # Aplicación de servicios de nube de traducción a carpetas {#applying-translation-cloud-services-to-folders}
 
 [!DNL Adobe Experience Manager] le permite aprovechar los servicios de traducción basados en la nube que le ofrece el proveedor de traducción que elija para garantizar que los recursos se traduzcan según sus necesidades.
@@ -28,7 +40,7 @@ La aplicación de servicios de nube de traducción directamente a la carpeta de 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Vaya a la pestaña **[!UICONTROL Cloud Services]**.
-1. En la lista Configuraciones del Cloud Service, seleccione el proveedor de traducción deseado. Por ejemplo, si desea utilizar los servicios de traducción de Microsoft, elija **[!UICONTROL Microsoft Translator]**.
+1. En la lista Configuraciones de Cloud Service, elija el proveedor de traducción deseado. Por ejemplo, si desea utilizar los servicios de traducción de Microsoft, elija **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -36,14 +48,14 @@ La aplicación de servicios de nube de traducción directamente a la carpeta de 
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. En la barra de herramientas, haga clic en **[!UICONTROL Guardar]** y, a continuación, haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo. El servicio de traducción se aplica a la carpeta.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Guardar]** y, a continuación, haga clic en **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo.El servicio de traducción se aplica a la carpeta.
 
 ## Aplicar conector de traducción personalizado  {#applying-custom-translation-connector}
 
 Si desea aplicar un conector personalizado para los servicios de traducción que desea utilizar en los flujos de trabajo de traducción. Para aplicar un conector personalizado, primero instale el conector desde el Administrador de paquetes. A continuación, configure el conector desde la consola de Cloud Services. Después de configurar el conector, estará disponible en la lista de conectores de la pestaña Cloud Services que se describe en [Aplicación de los serviciosde traducción](transition-cloud-services.md#applying-the-translation-services). Después de aplicar el conector personalizado y ejecutar los flujos de trabajo de traducción, el mosaico **[!UICONTROL Resumen de traducción]** del proyecto de traducción muestra los detalles del conector en los encabezados **[!UICONTROL Proveedor]** y **[!UICONTROL Método]**.
 
 1. Instale el conector desde el Administrador de paquetes.
-1. Haga clic en el logotipo de [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Service]**.
+1. Haga clic en el logotipo de [!DNL Experience Manager] y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Services]**.
 1. Coloque el conector que instaló en **[!UICONTROL Servicios de terceros]** en la página **[!UICONTROL Cloud Services]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

@@ -1,18 +1,29 @@
 ---
 title: Administrar recursos compuestos con referencias y varias páginas
-description: Obtenga información sobre cómo crear referencias a recursos digitales desde  [!DNL Adobe InDesign], [!DNL Adobe Illustrator] y [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para ver páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX e AI.
+description: Obtenga información sobre cómo crear referencias a recursos digitales desde [!DNL Adobe InDesign], [!DNL Adobe Illustrator] y [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para ver páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 0%
-
 ---
-
 # Administración de recursos compuestos y de varias páginas {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets] puede identificar si un archivo cargado contiene referencias a recursos que ya existen en el repositorio. Esta función solo está disponible para formatos de archivo compatibles. Si el recurso cargado contiene referencias a [!DNL Experience Manager] recursos, se crea un vínculo bidireccional entre los recursos cargados y los referenciados.

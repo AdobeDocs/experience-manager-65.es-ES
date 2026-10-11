@@ -9,13 +9,17 @@ exl-id: fbeceb70-b199-478b-907b-253ed212ff99
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 0%
-
+source-wordcount: '649'
+ht-degree: 2%
 ---
-
 # Desarrollo de aplicaciones con CLI de PhoneGap{#developing-apps-with-phonegap-cli}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ En cualquier momento dado, como desarrollador, puede ejecutar la aplicación en 
 
 Para ejecutar los siguientes ejemplos, necesita un sistema que ejecute macOS X con Xcode o un sistema Mac/Win/Linux con Android™ SDK instalado.
 
-## Bootstrap de su entorno de desarrollo {#bootstrap-your-development-environment}
+## Bootstrap en su entorno de desarrollo {#bootstrap-your-development-environment}
 
 Configurar la CLI de PhoneGap (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface`)
 
@@ -40,9 +44,9 @@ Para Android™: Para desarrollar para iPhone y iPads, necesita Android™ Studi
 
 ## Descargar Source {#download-the-source}
 
-AEM Cuando haya arrancado correctamente su entorno de desarrollo, descargue el origen desde el mosaico de creación de la aplicación de la aplicación de la:
+Cuando haya arrancado correctamente su entorno de desarrollo, descargue el origen desde el mosaico de AEM App Build:
 
-* Haga clic en las comillas angulares desplegables del mosaico PhoneGap Build.
+* Haga clic en las comillas angulares desplegables del mosaico de PhoneGap Build.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -86,7 +90,7 @@ phonegap run ios
 >
 >1. Crear una carpeta (prueba mkdir)
 >1. Vaya a esta nueva carpeta (prueba de CD)
->1. Ejecutar `phonegap create helloWorld`
+>1. Ejecute `phonegap create helloWorld`
 >1. Navegar a helloWorld (cd helloWorld)
 >1. Ejecute `phonegap run android` (o reemplace Android™ con iOS como se ha indicado anteriormente).
 >1. El emulador se abre ejecutando la aplicación PhoneGap recién creada y dice &quot;Dispositivo listo&quot; si la JavaScript Bridge a nativa está operativa.
@@ -103,8 +107,8 @@ Para habilitar las herramientas para desarrolladores:
 
 * Abrir las preferencias de Safari
 
-   * Haga clic en Safari en la barra de menús
-   * Haga clic en Preferencias
+  * Haga clic en Safari en la barra de menús
+  * Haga clic en Preferencias
 
 * Haga clic en Avanzadas en la ventana Preferencia
 

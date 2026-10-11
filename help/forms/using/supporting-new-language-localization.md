@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 90%
-
+source-wordcount: '869'
+ht-degree: 87%
 ---
-
 # Compatibilidad con configuraciones regionales nuevas para la localización de formularios adaptables{#supporting-new-locales-for-adaptive-forms-localization}
 
 | Versión | Vínculo del artículo |
@@ -39,18 +55,18 @@ Existen dos métodos para identificar la configuración regional del formulario 
 
 * observando los siguientes parámetros en el orden especificado:
 
-   * Parámetro de solicitud `afAcceptLang`
+  * Parámetro de solicitud `afAcceptLang`
 Para anular la configuración regional del explorador de los usuarios, puede pasar el parámetro de solicitud `afAcceptLang` para forzar la configuración regional. Por ejemplo, la siguiente URL obligó a procesar el formulario en la configuración regional japonesa:
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * La configuración regional del explorador establecida para el usuario, que se especifica en la solicitud utilizando el encabezado `Accept-Language`.
+  * La configuración regional del explorador establecida para el usuario, que se especifica en la solicitud utilizando el encabezado `Accept-Language`.
 
-   * La configuración de idioma del usuario especificada en AEM.
+  * La configuración de idioma del usuario especificada en AEM.
 
-   * La configuración regional del explorador está habilitada de forma predeterminada. Para cambiar la configuración regional del explorador,
-      * Abra el Administrador de configuración. La URL es `http://[server]:[port]/system/console/configMgr`.
-      * Busque y abra la configuración del **[!UICONTROL Canal web de formularios adaptables y comunicaciones interactivas]**.
-      * Cambie el estado de la opción **[!UICONTROL Usar configuración regional del explorador]** y pulse **[!UICONTROL Guardar]** para guardar la configuración.
+  * La configuración regional del explorador está habilitada de forma predeterminada. Para cambiar la configuración regional del explorador,
+    * Abra el Administrador de configuración. La URL es `http://[server]:[port]/system/console/configMgr`.
+    * Busque y abra la configuración del **[!UICONTROL Canal web de formularios adaptables y comunicaciones interactivas]**.
+    * Cambie el estado de la opción **[!UICONTROL Usar configuración regional del explorador]** y pulse **[!UICONTROL Guardar]** para guardar la configuración.
 
 Una vez identificada la configuración regional, el formulario adaptable selecciona el diccionario específico del formulario. Si no se encuentra el diccionario específico del formulario para la configuración regional solicitada, utiliza el diccionario del idioma en el que se creó el formulario adaptable.
 

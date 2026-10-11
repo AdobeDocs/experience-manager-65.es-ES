@@ -1,6 +1,6 @@
 ---
 title: Configurar el tipo de archivo
-description: Obtenga información sobre cómo configurar los ajustes de tipo de archivo. En PDF Generator, puede establecer la configuración de la aplicación para los tipos de archivo compatibles y la configuración del tipo de archivo.
+description: Obtenga información sobre cómo configurar los ajustes de tipo de archivo. En PDF Generator, puede establecer la configuración de la aplicación para los tipos de archivo compatibles y establecer la configuración del tipo de archivo.
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -8,13 +8,24 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6281'
 ht-degree: 0%
-
 ---
-
 # Configurar el tipo de archivo {#configuring-file-type-settings}
 
 >[!NOTE]
@@ -26,14 +37,14 @@ En PDF Generator, puede establecer la configuración de la aplicación para los 
 En la página Configuración de tipo de archivo, puede realizar estas tareas:
 
 * [Crear o editar una configuración de Tipo de archivo](#create-or-edit-file-type-settings)
-* Especifique qué configuración de tipo de archivo se usará de forma predeterminada (consulte [Importación y exportación de archivos de configuración del PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md))
+* Especifique qué configuración de tipo de archivo se usará de forma predeterminada (consulte [Importación y exportación de archivos de configuración de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md))
 * [Cambiar la configuración predeterminada](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings)
 * [Habilitar compatibilidad con PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
 * [Eliminar una configuración de tipo de archivo](/help/forms/using/admin-help/enable-pdf-a-support.md)
 
 >[!NOTE]
 >
->La configuración del tipo de archivo no está disponible para los convertidores de reserva, como Acrobat para la conversión de HTML a PDF, Microsoft PowerPoint, Microsoft Word y Microsoft Excel.
+>La configuración del tipo de archivo no está disponible para los convertidores de reserva, como Acrobat para HTML a PDF, Microsoft PowerPoint, Microsoft Word y Microsoft Excel.
 
 ## Crear o editar la configuración de Tipo de archivo {#create-or-edit-file-type-settings}
 
@@ -46,47 +57,47 @@ Cree o edite una configuración de tipo de archivo para especificar cómo admini
 
 **Idioma principal de OCR:** Idioma que debe usar el motor de OCR para identificar los caracteres. El valor predeterminado es Inglés (EE.UU.).
 
-**Estilo de salida del PDF:** Seleccione Imagen que permite búsquedas para tener una imagen de mapa de bits de las páginas en primer plano y el texto digitalizado en una capa invisible debajo. El aspecto de la página no cambia, pero el texto se puede seleccionar y leer. Seleccione Texto y gráficos con formato para reconstruir la página original utilizando texto, fuentes, imágenes y otros elementos gráficos reconocidos. El valor predeterminado es Imagen que permite búsquedas (Exacta).
+**Estilo de salida de PDF:** Seleccione la imagen que permite búsquedas para tener una imagen de mapa de bits de las páginas en primer plano y el texto digitalizado en una capa invisible debajo. El aspecto de la página no cambia, pero el texto se puede seleccionar y leer. Seleccione Texto y gráficos con formato para reconstruir la página original utilizando texto, fuentes, imágenes y otros elementos gráficos reconocidos. El valor predeterminado es Imagen que permite búsquedas (Exacta).
 
-**Imágenes con disminución de resolución:** Disminuye el número de píxeles en las imágenes en color, en escala de grises y monocromas. La disminución de resolución de imágenes escaneadas se realiza una vez completado el OCR. El valor predeterminado es El más bajo (600 ppp). Esta opción no está disponible si establece el estilo de salida del PDF en Imagen que se puede buscar (Exacta).
+**Imágenes con disminución de resolución:** Disminuye el número de píxeles en las imágenes en color, en escala de grises y monocromas. La disminución de resolución de imágenes escaneadas se realiza una vez completado el OCR. El valor predeterminado es El más bajo (600 ppp). Esta opción no está disponible si establece el estilo de salida de PDF en Imagen que se puede buscar (Exacto).
 
 1. Rellene la información necesaria en estas secciones:
 
-[Importar y exportar archivos de configuración del generador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+   [Importar y exportar archivos de configuración del generador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-[Configuración de exportación de Adobe PDF (solo Windows)](#adobe-pdf-export-settings-windows-only)
+   [Configuración de exportación de Adobe PDF (solo Windows)](#adobe-pdf-export-settings-windows-only)
 
-[configuración de HTML a PDF](#html-to-pdf-settings)
+   [Configuración de HTML a PDF](#html-to-pdf-settings)
 
-[Configuración de vídeos de Flash a PDF](#flash-videos-to-pdf-settings)
+   [Flash de vídeos en la configuración de PDF](#flash-videos-to-pdf-settings)
 
-[Configuración de XPS a PDF](#xps-to-pdf-settings)
+   [Configuración de XPS a PDF](#xps-to-pdf-settings)
 
-[Configuración del optimizador del PDF](/help/forms/using/admin-help/configuring-file-type-settings.md)
+   [Configuración del optimizador de PDF](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
-[Configuración de Microsoft Excel (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
+   [Configuración de Microsoft Excel (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
 
-[Configuración de Microsoft PowerPoint (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
+   [Configuración de Microsoft PowerPoint (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
 
-[Configuración del proyecto de Microsoft (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
+   [Configuración del proyecto de Microsoft (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
 
-[Configuración de Microsoft Word (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
+   [Configuración de Microsoft Word (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-[Configuración de Microsoft Visio (sólo Windows)](#visio)
+   [Configuración de Microsoft Visio (sólo Windows)](#visio)
 
-[Configuración de Microsoft Publisher (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
+   [Configuración de Microsoft Publisher (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
-[Configuración de AutoCAD (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
+   [Configuración de AutoCAD (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
 
-[Configuración de OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
+   [Configuración de OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[Configuración de otras aplicaciones (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [Configuración de otras aplicaciones (sólo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    Para ir a otra sección, haga clic en su vínculo en la página web o use los botones **[!UICONTROL Siguiente]** o **[!UICONTROL Anterior]**.
 
 1. Después de completar todas las secciones, haz clic en **[!UICONTROL Guardar]** o **[!UICONTROL Guardar como]** y proporciona un nombre para la configuración.
 
-Se puede personalizar la compatibilidad con varios tipos de archivo. AEM (Consulte &quot;[Agregar compatibilidad con formatos de archivo nativos adicionales](https://help.adobe.com/es_ES/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot; en [Programar con formularios de la lista de distribución de formularios](https://www.adobe.com/go/learn_lc_programming_11)&quot;.)
+Se puede personalizar la compatibilidad con varios tipos de archivo. (Consulte &quot;[Agregar compatibilidad con formatos de archivo nativos adicionales](https://help.adobe.com/es_ES/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot; en [Programar con formularios AEM](https://www.adobe.com/go/learn_lc_programming_11).)
 
 ## Cambiar la configuración predeterminada {#change-the-default-settings}
 
@@ -114,23 +125,23 @@ Puede eliminar una configuración de tipo de archivo que ya no se utilice.
 
 ## Configuración de imagen a PDF {#image-to-pdf-settings}
 
-Las siguientes opciones determinan cómo se convierten los archivos de imagen en PDF. Para obtener instrucciones sobre cómo obtener acceso a esta configuración, consulte [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+Las siguientes opciones determinan cómo se convierten los archivos de imagen a PDF. Para obtener instrucciones sobre cómo obtener acceso a esta configuración, consulte [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Extensiones de nombre de archivo:** Lista separada por comas de las extensiones de nombre de archivo que se pueden convertir.
 
-**Pruebe el convertidor de reserva:** El PDF Generator puede usar Java™ o Acrobat para convertir archivos de imagen en PDF. Cuando se selecciona esta opción y una conversión falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión utilizando el método alternativo. Si el método alternativo falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
+**Pruebe el convertidor de reserva:** PDF Generator puede usar Java™ o Acrobat para convertir archivos de imagen a PDF. Cuando se selecciona esta opción y una conversión falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión utilizando el método alternativo. Si el método alternativo falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
 
 >[!NOTE]
 >
 >Los archivos de JPEG 2000 sólo se pueden convertir con Acrobat.
 
-**Usar OCR:** Especifica si se debe aplicar OCR (reconocimiento óptico de caracteres) al PDF. El software OCR permite buscar, corregir y copiar el texto en el PDF.
+**Usar OCR:** Especifica si se debe aplicar OCR (reconocimiento óptico de caracteres) a PDF. El software OCR le permite buscar, corregir y copiar el texto en PDF.
 
-***nota &#x200B;**: La característica de PDF de OCR (PDF en el que se pueden realizar búsquedas) solo es compatible con Microsoft Windows.*
+***nota &#x200B;**: La característica PDF de OCR (PDF en el que se pueden realizar búsquedas) solo es compatible con Microsoft Windows.*
 
 **Idioma principal de OCR:** Especifica el idioma que el motor de OCR utilizará para identificar los caracteres.
 
-**Estilo de salida del PDF:** Determina el tipo de PDF que se va a producir. Todos los formatos aplican OCR y reconocimiento de fuentes y páginas a las imágenes de texto y las convierten en texto normal.
+**Estilo de salida de PDF:** Determina el tipo de PDF que se va a producir. Todos los formatos aplican OCR y reconocimiento de fuentes y páginas a las imágenes de texto y las convierten en texto normal.
 
 **Imagen que permite búsquedas:** Garantiza que el texto se pueda buscar y seleccionar. Esta opción mantiene la imagen original, la recorta según sea necesario y coloca una capa de texto invisible sobre ella. La opción Reducir resolución de imágenes determina si la imagen se reduce de resolución y hasta qué punto.
 
@@ -142,19 +153,19 @@ Las siguientes opciones determinan cómo se convierten los archivos de imagen en
 
 ## Configuración de exportación de Adobe PDF (solo Windows) {#adobe-pdf-export-settings-windows-only}
 
-La configuración Tipo de archivo de exportación de la sección Configuración de exportación de Adobe PDF se utiliza para convertir un archivo de PDF a otro formato. El valor predeterminado es HTML 4.01 con hojas de estilos en cascada (CSS) 1.0 (*.htm, *.html).
+La configuración Tipo de archivo de exportación de la sección Configuración de exportación de Adobe PDF se utiliza para convertir un archivo PDF a otro formato. El valor predeterminado es HTML 4.01 con hojas de estilos en cascada (CSS) 1.0 (*.htm, *.html).
 
 Para obtener instrucciones sobre cómo obtener acceso a esta configuración, consulte [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-## configuración de HTML a PDF {#html-to-pdf-settings}
+## Configuración de HTML a PDF {#html-to-pdf-settings}
 
 Las siguientes opciones determinan cómo se convierten los archivos de HTML en PDF. Para obtener instrucciones sobre cómo obtener acceso a estas opciones, vea [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**Pruebe el convertidor de reserva:** El PDF Generator puede usar Java™ o Acrobat para convertir los archivos del HTML en PDF. Cuando se selecciona esta opción y una conversión falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión utilizando el método alternativo. Si el método alternativo falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
+**Pruebe el convertidor de reserva:** PDF Generator puede usar Java™ o Acrobat para convertir archivos de HTML a PDF. Cuando se selecciona esta opción y una conversión falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión utilizando el método alternativo. Si el método alternativo falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
 
-**Codificación predeterminada:** Establece la codificación de entrada del texto del archivo desde un menú de sistemas operativos y alfabetos. Utiliza la selección mostrada en la opción Codificación predeterminada sólo si el archivo de origen del HTML no especifica ningún tipo de codificación.
+**Codificación predeterminada:** Establece la codificación de entrada del texto del archivo desde un menú de sistemas operativos y alfabetos. Utiliza la selección que se muestra en la opción Codificación predeterminada sólo si el archivo de origen de HTML no especifica ningún tipo de codificación.
 
-**Forzar codificación seleccionada:** Omite cualquier codificación especificada en el archivo de origen del HTML y utiliza la selección mostrada en la opción Codificación predeterminada.
+**Forzar codificación seleccionada:** Omite cualquier codificación especificada en el archivo de origen de HTML y utiliza la selección mostrada en la opción Codificación predeterminada.
 
 ### Configuración de Spidering {#spidering-settings}
 
@@ -170,7 +181,7 @@ Las siguientes opciones determinan cómo se convierten los archivos de HTML en P
 
 ### Configuración de conversión de página {#page-conversion-settings}
 
-Active estas opciones para especificar cómo se convierten las páginas del HTML. En función del tamaño de página, los valores de anchura, altura y margen se ajustan en consecuencia.
+Active estas opciones para especificar cómo se convierten las páginas de HTML. En función del tamaño de página, los valores de anchura, altura y margen se ajustan en consecuencia.
 
 **Tamaño de página:** Elija personalizado y especifique el ancho y el alto, o seleccione dimensiones predefinidas.
 
@@ -178,15 +189,15 @@ Active estas opciones para especificar cómo se convierten las páginas del HTML
 
 **Márgenes:** Especifica los márgenes (superior, inferior, izquierdo y derecho) del documento de PDF generado.
 
-**Agregar marcadores al PDF:** Agrega marcadores al documento del PDF.
+**Agregar marcadores a PDF:** Agrega marcadores al documento de PDF.
 
-**Habilitar PDF etiquetado:** incrusta etiquetas en el documento del PDF.
+**Habilitar PDF etiquetado:** incrusta etiquetas en el documento de PDF.
 
 **Establecer configuración de vista inicial:** Permite configurar opciones de documento, opciones de ventana y opciones de interfaz de usuario. Esta configuración determina cómo se muestra inicialmente el contenido.
 
 ### Opciones de documento {#document-options}
 
-Active estas opciones para especificar cómo mostrar el contenido, cómo mostrar las páginas en el documento de PDF y cómo especificar el nivel de ampliación:
+Habilite estas opciones para especificar cómo mostrar el contenido, cómo mostrar las páginas en el documento de PDF y cómo especificar el nivel de ampliación:
 
 **Mostrar:** Seleccione los paneles que se abrirán en Acrobat cuando se abra el documento de PDF.
 
@@ -194,7 +205,7 @@ Active estas opciones para especificar cómo mostrar el contenido, cómo mostrar
 
 **Ampliación:** Elija la ampliación preestablecida para la vista inicial del documento de PDF o seleccione un valor personalizado. Si se elige una configuración predeterminada, se utilizará la ampliación de Acrobat predeterminada.
 
-**Abrir a número de página:** Especifique el número de página al que se abre el PDF.
+**Abrir a número de página:** Especifique el número de página al que se abre PDF.
 
 ### Opciones de ventana {#window-options}
 
@@ -212,27 +223,27 @@ Active estas opciones para especificar el tamaño y la visualización de la vent
 
 Active estas opciones para especificar el aspecto de la ventana:
 
-**Ocultar barra de menús:** oculta la barra de menús en el documento del PDF.
+**Ocultar barra de menús:** Oculta la barra de menús del documento de PDF.
 
-**Ocultar barras de herramientas:** oculta las barras de herramientas en el documento de PDF.
+**Ocultar barras de herramientas:** Oculta las barras de herramientas del documento de PDF.
 
 **Ocultar controles de ventana:** oculta los controles de ventana en el documento de PDF.
 
-## Configuración de vídeos de Flash a PDF {#flash-videos-to-pdf-settings}
+## Flash de vídeos en la configuración de PDF {#flash-videos-to-pdf-settings}
 
-PDF Generator admite la capacidad de enviar un vídeo para el Flash de Adobe (archivo SWF o FLV) y crear un archivo PDF con un vídeo para el Flash de Adobe incrustado en él. Esta conversión no requiere que el Flash Player de Adobe esté instalado en el servidor de Forms. Para obtener instrucciones sobre cómo obtener acceso a esta opción, vea [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator admite la capacidad de enviar un vídeo para Adobe Flash (archivo SWF o FLV) y crear un archivo PDF con un vídeo para Adobe Flash incrustado en él. Esta conversión no requiere que Adobe Flash Player esté instalado en el servidor de Forms. Para obtener instrucciones sobre cómo obtener acceso a esta opción, vea [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Extensiones de nombre de archivo:** Lista separada por comas de las extensiones de nombre de archivo que se pueden convertir.
 
 ## Configuración de XPS a PDF {#xps-to-pdf-settings}
 
-XML Paper Specification (XPS) se utiliza en la máquina de impresión de Windows. Este es un formato de Microsoft y se puede crear desde cualquier aplicación de Microsoft Office. AEM Los formularios de permiten convertir archivos XPS en un PDF.
+XML Paper Specification (XPS) se utiliza en la máquina de impresión de Windows. Este es un formato de Microsoft y se puede crear desde cualquier aplicación de Microsoft Office. Los formularios AEM permiten convertir archivos XPS a PDF.
 
 **Extensiones de nombre de archivo:** Lista separada por comas de todas las extensiones de nombre de archivo XPS que se pueden convertir. Actualmente hay un formato: .xps.
 
-## Configuración del optimizador del PDF {#pdf-optimizer-settings}
+## Configuración del optimizador de PDF {#pdf-optimizer-settings}
 
-PDF Generator admite la capacidad de reducir el tamaño de los archivos de PDF. El uso de todos estos ajustes o sólo unos pocos depende de cómo se van a utilizar los archivos y de las propiedades esenciales que debe tener un archivo. En la mayoría de los casos, los ajustes predeterminados son adecuados para lograr la máxima eficacia: se ahorra espacio al eliminar fuentes incrustadas, comprimir imágenes y eliminar elementos de los archivos que ya no son necesarios.
+PDF Generator admite la capacidad de reducir el tamaño de los archivos PDF. El uso de todos estos ajustes o sólo unos pocos depende de cómo se van a utilizar los archivos y de las propiedades esenciales que debe tener un archivo. En la mayoría de los casos, los ajustes predeterminados son adecuados para lograr la máxima eficacia: se ahorra espacio al eliminar fuentes incrustadas, comprimir imágenes y eliminar elementos de los archivos que ya no son necesarios.
 
 >[!NOTE]
 >
@@ -240,7 +251,7 @@ PDF Generator admite la capacidad de reducir el tamaño de los archivos de PDF. 
 
 Para obtener instrucciones sobre cómo obtener acceso a esta configuración, consulte [Crear o editar la configuración de tipo de archivo](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**Versión del PDF de destino:** Especifica la versión de Acrobat con la que es compatible el PDF.
+**Versión de PDF de destino:** Especifica la versión de Acrobat con la que PDF es compatible.
 
 ### Fuentes {#fonts}
 
@@ -277,9 +288,9 @@ Si el documento de PDF incluye ilustraciones que contienen transparencias, puede
 
 >[!NOTE]
 >
->Si se selecciona Acrobat 4.0 y posterior como versión de PDF de Target, se acoplan todos los objetos transparentes. Para otras versiones de PDF de Target, se admite la transparencia y se puede configurar la configuración de transparencia.
+>Si Acrobat 4.0 y posterior está seleccionado como la versión de Target PDF, todos los objetos transparentes se acoplan. Para otras versiones de Target PDF, se admite la transparencia y se puede configurar la configuración de transparencia.
 
-Seleccione **Transparencia** para establecer la configuración de transparencia mientras se optimizan los documentos del PDF.
+Seleccione **Transparencia** para establecer la configuración de transparencia mientras se optimizan los documentos de PDF.
 
 **Nivel de transparencia** Especifica la cantidad de información vectorial que se conservará. Los valores más altos conservan más objetos vectoriales, mientras que los valores más bajos rasterizan más objetos vectoriales; los valores intermedios conservan las áreas simples en forma vectorial y rasterizan las complejas. Seleccione la configuración más baja para rasterizar todas las ilustraciones.
 
@@ -317,7 +328,7 @@ Conservar sobreimpresión: fusiona el color de la ilustración transparente con 
 
 En la tabla siguiente se muestran los tipos comunes de impresoras y su resolución medida en ppp, su resolución de pantalla predeterminada medida en líneas por pulgada (lpp) y una resolución de remuestreo para imágenes medidas en píxeles por pulgada (ppi). Por ejemplo, si estuviera imprimiendo en una impresora láser de 600 ppp, escribiría 170 para la resolución con la que volver a muestrear las imágenes.
 
-**Imágenes** Seleccione Imágenes para especificar las opciones de compresión y remuestreo de las imágenes monocromas, en escala de grises y en color. Es posible que desee experimentar con estas opciones para encontrar un equilibrio adecuado entre el tamaño del archivo y la calidad de la imagen. La configuración de resolución para las imágenes en color y escala de grises debe ser de 1,5 a 2 veces la regla de pantalla de línea en la que se imprimirá el archivo. La resolución de las imágenes monocromas debe ser la misma que la del dispositivo de salida, pero si guarda una imagen monocroma con una resolución superior a 1500 ppp, el tamaño del archivo aumenta sin mejorar de forma notable la calidad de la imagen. Las imágenes que se ampliarán, como los mapas, pueden requerir resoluciones más altas.
+**Imágenes** Seleccione Imágenes para especificar las opciones de compresión y remuestreo de las imágenes monocromas, en escala de grises y en color. Es posible que desee experimentar con estas opciones para encontrar un equilibrio adecuado entre el tamaño del archivo y la calidad de la imagen.La configuración de resolución para las imágenes en color y escala de grises debe ser de 1,5 a 2 veces la resolución de pantalla de línea a la que se imprimirá el archivo. La resolución de las imágenes monocromas debe ser la misma que la del dispositivo de salida, pero si guarda una imagen monocroma con una resolución superior a 1500 ppp, el tamaño del archivo aumenta sin mejorar de forma notable la calidad de la imagen. Las imágenes que se ampliarán, como los mapas, pueden requerir resoluciones más altas.
 
 >[!NOTE]
 >
@@ -355,15 +366,15 @@ En la tabla siguiente se muestran los tipos comunes de impresoras y su resoluci�
 
 #### Descartar objetos {#discard-objects}
 
-* Seleccione **Descartar objetos** para especificar los objetos que se quitarán del PDF y optimizar las líneas curvas en los dibujos CAD.
+* Seleccione **Descartar objetos** para especificar los objetos que desea quitar de PDF y optimizar las líneas curvas en los dibujos CAD.
 * **Descartar todas las acciones de envío, importación y restablecimiento de formularios**: deshabilita todas las acciones relacionadas con el envío o la importación de datos de formularios y restablece los campos de formulario. Esta opción conserva los objetos de formulario a los que están vinculadas las acciones.
-* **Descartar todas las acciones de JavaScript**: quita del PDF todas las acciones que utilizan JavaScript.
+* **Descartar todas las acciones de JavaScript**: quita de PDF todas las acciones que usan JavaScript.
 * **Descartar miniaturas de página incrustadas**: quita las miniaturas de página incrustadas. Esta opción es útil para documentos grandes, que pueden tardar mucho tiempo en dibujar miniaturas de página después de hacer clic en el botón Páginas.
 * **Convertir líneas suavizadas en curvas**: reduce el número de puntos de control utilizados para crear curvas en dibujos CAD, lo que da como resultado archivos PDF más pequeños y una representación en pantalla más rápida.
 * **Descartar configuración de impresión incrustada**: quita del documento la configuración de impresión incrustada, como el escalado de página y el modo dúplex.
 * **Descartar marcadores**: quita todos los marcadores del documento.
 * **Acoplar campos de formulario**: hace que los campos de formulario no se puedan utilizar sin cambiar su apariencia. Los datos del formulario se combinan con la página para convertirse en contenido de página.
-* **Descartar todas las imágenes alternativas**: quita todas las versiones de una imagen excepto la versión destinada a la visualización en pantalla. Algunos PDF incluyen varias versiones de la misma imagen para distintos fines, como la visualización en pantalla de baja resolución y la impresión de alta resolución.
+* **Descartar todas las imágenes alternativas**: quita todas las versiones de una imagen excepto la versión destinada a la visualización en pantalla. Algunos PDF incluyen varias versiones de la misma imagen para diferentes fines, como la visualización en pantalla de baja resolución y la impresión de alta resolución.
 * **Descartar etiquetas de documento**: quita etiquetas del documento, lo que también quita la accesibilidad y las capacidades de reflujo del texto.
 * **Detectar y combinar fragmentos de imagen**: busca imágenes o máscaras fragmentadas en sectores finos e intenta combinar los sectores en una sola imagen o máscara.
 * **Descartar índice de búsqueda incrustada**: quita los índices de búsqueda incrustados, lo que reduce el tamaño del archivo.
@@ -372,18 +383,18 @@ En la tabla siguiente se muestran los tipos comunes de impresoras y su resoluci�
 
 Seleccione **Descartar datos de usuario** para quitar la información personal que no desee distribuir o compartir con otros usuarios.
 
-* **Descartar todos los comentarios, Forms y multimedia**: quita todos los comentarios, formularios, campos de formulario y multimedia del PDF.
-* **Descartar todos los datos de objeto**: quita todos los objetos del PDF.
-* **Descartar referencias cruzadas externas**: quita los vínculos a otros documentos. Los vínculos que saltan a otras ubicaciones dentro del PDF no se eliminan.
+* **Descartar todos los comentarios, Forms y multimedia**: quita todos los comentarios, formularios, campos de formulario y multimedia de PDF.
+* **Descartar todos los datos de objeto**: quita todos los objetos de PDF.
+* **Descartar referencias cruzadas externas**: quita los vínculos a otros documentos. Los vínculos que saltan a otras ubicaciones dentro de PDF no se eliminan.
 * **Descartar Contenido De Capas Ocultas Y Acoplar Capas Visibles**: Reduce El Tamaño Del Archivo. El documento optimizado se parece al PDF original, pero no contiene información de capas.
-* **Descartar información y metadatos de documentos**: quita información del diccionario de información de documentos y de todas las secuencias de metadatos. (Utilice el comando Guardar como para restaurar las secuencias de metadatos en una copia del PDF).
-* **Descartar archivos adjuntos**: quita todos los archivos adjuntos, incluidos los adjuntos agregados al PDF como comentarios. (PDF Optimizer no optimiza los archivos adjuntos).
-* **Descartar datos privados de otras aplicaciones**: quita información de un documento de PDF que sólo es útil para la aplicación que creó el documento. Esta configuración no afecta a la funcionalidad del PDF, pero reduce el tamaño del archivo.
+* **Descartar información y metadatos de documentos**: quita información del diccionario de información de documentos y de todas las secuencias de metadatos. (Utilice el comando Guardar como para restaurar las secuencias de metadatos en una copia de PDF).
+* **Descartar archivos adjuntos**: quita todos los archivos adjuntos, incluidos los adjuntos agregados a PDF como comentarios. (PDF Optimizer no optimiza los archivos adjuntos).
+* **Descartar datos privados de otras aplicaciones**: quita información de un documento de PDF que sólo es útil para la aplicación que creó el documento. Esta configuración no afecta a la funcionalidad de PDF, pero reduce el tamaño del archivo.
 
 ### Limpiar {#clean-up}
 
 Seleccione **Limpiar** para eliminar los elementos innecesarios del documento.
-Estos elementos incluyen elementos obsoletos o innecesarios para el uso previsto del documento. La eliminación de ciertos elementos puede afectar gravemente a la funcionalidad del PDF. De forma predeterminada, solo se seleccionan los elementos que no afectan a la funcionalidad. Si no está seguro de las implicaciones de eliminar otras opciones, utilice las selecciones predeterminadas.
+Estos elementos incluyen elementos obsoletos o innecesarios para el uso previsto del documento. La eliminación de ciertos elementos puede afectar gravemente a la funcionalidad de PDF. De forma predeterminada, solo se seleccionan los elementos que no afectan a la funcionalidad. Si no está seguro de las implicaciones de eliminar otras opciones, utilice las selecciones predeterminadas.
 
 **Compresión**
 
@@ -400,7 +411,7 @@ Seleccione una de las siguientes opciones de compresión Flotante en el menú de
 
 **Descartar destinos con nombre sin referencia**: quita los destinos con nombre a los que no se hace referencia internamente desde el documento de PDF. Esta opción no comprueba la existencia de vínculos de otros archivos o sitios web de PDF.
 
-**Optimizar el PDF para la vista rápida en la web**: reestructura un documento de PDF para la descarga página a página (servicio de bytes) desde servidores web.
+**Optimizar PDF para la vista rápida en la web**: Reestructura un documento de PDF para la descarga página a página (servicio de bytes) desde servidores web.
 
 **En los flujos que usan codificación LZW, use Flate en su lugar**: aplica compresión Flate a todos los flujos de contenido e imágenes que usan codificación LZW.
 
@@ -412,11 +423,11 @@ Seleccione una de las siguientes opciones de compresión Flotante en el menú de
 
 Estas opciones determinan cómo se convierten los archivos de Microsoft Excel. Para obtener instrucciones sobre cómo obtener acceso a estas opciones, vea [Crear o editar la configuración de tipo de archivo](#create-or-edit-file-type-settings).
 
-**Probar OpenOffice como conversor alternativo**: cuando se selecciona esta opción y una conversión que utiliza Microsoft Excel falla o alcanza el límite de tiempo de espera especificado, el PDF Generator intenta la conversión mediante OpenOffice. Si la conversión mediante OpenOffice falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
+**Intentar OpenOffice como convertidor de reserva**: cuando se selecciona esta opción y una conversión que utiliza Microsoft Excel falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión mediante OpenOffice. Si la conversión mediante OpenOffice falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
 
 **Extensiones de nombre de archivo**: Especifica las extensiones de nombre de archivo para los tipos de archivo, separados por comas, que se aceptan en esta aplicación. El valor predeterminado es `xls,xlsx`. No incluya un punto antes o un espacio entre las extensiones.
 
-**Crear archivo compatible con PDF PDF/A-1a**: Fuerza el uso de la configuración Adobe PDF de RGB/A-1b:2005.
+**Crear archivo compatible con PDF/A-1a**: Fuerza el uso de la configuración de PDF/A-1b:2005 RGB Adobe PDF.
 
 **Agregar marcadores a Adobe PDF**: Convierte los nombres de las hojas de cálculo de Excel en marcadores. Esta opción está seleccionada de forma predeterminada.
 
@@ -430,11 +441,11 @@ Estas opciones determinan cómo se convierten los archivos de Microsoft Excel. P
 
 **Agregar vínculos a Adobe PDF**: convierte los hipervínculos del archivo de origen en hipervínculos del documento de PDF.
 
-**Adjuntar archivo de Source a Adobe PDF**: cuando se selecciona esta opción, la hoja de cálculo original de Excel se inserta como datos adjuntos dentro del documento de PDF generado.
+**Adjuntar archivo de Source a Adobe PDF**: cuando se selecciona esta opción, la hoja de cálculo original de Excel se inserta como un archivo adjunto dentro del documento de PDF generado.
 
-**Habilitar Accesibilidad Y Reflow Con Adobe PDF Etiquetado**: Incrusta etiquetas dentro del documento del PDF para habilitar la accesibilidad y el reflujo.
+**Habilitar accesibilidad y reflujo con Adobe PDF etiquetado**: incrusta etiquetas en el documento de PDF para habilitar la accesibilidad y el reflujo.
 
-**Lista de complementos de Excel para cargar**: de forma predeterminada (por motivos de seguridad), no se ejecutan complementos de Excel cuando un archivo de Excel se convierte en PDF. Para permitir que determinados complementos de Excel se ejecuten durante la conversión, proporcione una lista separada por comas de los nombres de los complementos.
+**Lista de complementos de Excel para cargar**: de forma predeterminada (por motivos de seguridad), no se ejecutan complementos de Excel cuando se convierte un archivo de Excel a PDF. Para permitir que determinados complementos de Excel se ejecuten durante la conversión, proporcione una lista separada por comas de los nombres de los complementos.
 
 **Lista de hojas de cálculo para convertir**: cuando este cuadro está vacío, todas las hojas de cálculo de la hoja de cálculo de Excel se incluyen en el PDF generado. Para convertir selectivamente un subconjunto de las hojas de cálculo, proporcione una lista de nombres de hoja de cálculo separados por comas.
 
@@ -442,7 +453,7 @@ Estas opciones determinan cómo se convierten los archivos de Microsoft Excel. P
 
 Estas opciones determinan cómo se convierten los archivos de Microsoft PowerPoint. Para obtener instrucciones sobre cómo obtener acceso a estas opciones, vea [Crear o editar la configuración de tipo de archivo](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**[!UICONTROL Probar OpenOffice como conversor alternativo]**: cuando se selecciona esta opción y una conversión que utiliza Microsoft PowerPoint falla o alcanza el límite de tiempo de espera especificado, el PDF Generator intenta la conversión mediante OpenOffice. Si la conversión mediante OpenOffice falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
+**[!UICONTROL Probar OpenOffice como conversor alternativo]**: cuando se selecciona esta opción y una conversión que utiliza Microsoft PowerPoint falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión mediante OpenOffice. Si la conversión mediante OpenOffice falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
 
 **[!UICONTROL Extensiones de nombre de archivo]**: Especifica las extensiones de nombre de archivo para los tipos de archivo, separados por comas, que se aceptan en esta aplicación. El valor predeterminado es ppt,pptx. No incluya un punto antes o un espacio entre las extensiones.
 
@@ -452,25 +463,25 @@ Estas opciones determinan cómo se convierten los archivos de Microsoft PowerPoi
 
 **[!UICONTROL Adjuntar archivo de Source a Adobe PDF]**: agrega el archivo de origen al archivo de PDF como datos adjuntos. Esta opción no está seleccionada de forma predeterminada.
 
-**[!UICONTROL Habilitar Accesibilidad Y Reflow Con Adobe PDF Etiquetado]**: Incrusta etiquetas en el archivo de PDF. Esta opción no está seleccionada de forma predeterminada.
+**[!UICONTROL Habilitar Accesibilidad Y Reflujo Con Etiquetas Adobe PDF]**: Incrusta Etiquetas En El Archivo PDF. Esta opción no está seleccionada de forma predeterminada.
 
-**[!UICONTROL Convertir multimedia en multimedia PDF]**: convierte multimedia en multimedia PDF, siempre que sea posible. Esta opción está seleccionada de forma predeterminada.
+**[!UICONTROL Convertir multimedia a multimedia PDF]**: convierte multimedia a multimedia PDF, siempre que sea posible. Esta opción está seleccionada de forma predeterminada.
 
-**[!UICONTROL Convertir notas del orador]**: Convierte las notas del orador en PDF.
+**[!UICONTROL Convertir notas del orador]**: Convierte las notas del orador a PDF.
 
 **[!UICONTROL Ejecutar macros automáticamente]**: ejecuta todas las macros del documento de PowerPoint (como una macro que inserta la hora actual) antes de convertir el documento.
 
-**[!UICONTROL Diseño de PDF basado en la configuración de impresora de PowerPoint]**: Utiliza la configuración de impresora de PowerPoint para diseñar el documento de PDF.
+**[!UICONTROL Diseño de PDF basado en la configuración de impresora de PowerPoint]**: utiliza la configuración de impresora de PowerPoint para diseñar el documento de PDF.
 
 **[!UICONTROL Agregar vínculos a Adobe PDF]**: conserva los vínculos existentes cuando se convierte el archivo. El aspecto de los vínculos generalmente no cambia. Los vínculos solo se pueden crear si también está seleccionada la opción Habilitar accesibilidad. Esta opción no está seleccionada de forma predeterminada.
 
 **[!UICONTROL Guardar Transiciones De Diapositivas En Adobe PDF]**: Convierte Las Transiciones De Diapositivas. Esta opción está seleccionada de forma predeterminada.
 
-**[!UICONTROL Guardar animaciones en Adobe PDF]**: guarda las animaciones convertidas en el archivo de PDF.
+**[!UICONTROL Guardar animaciones en Adobe PDF]**: guarda las animaciones convertidas en el archivo PDF.
 
-**[!UICONTROL Convertir diapositivas ocultas en páginas PDF]**: convierte las diapositivas ocultas.
+**[!UICONTROL Convertir diapositivas ocultas en páginas de PDF]**: convierte las diapositivas ocultas.
 
-**[!UICONTROL Crear archivo compatible con PDF PDF/A-1a]**: Fuerza el uso de la configuración Adobe PDF de RGB/A-1b:2005. Algunas funciones de PowerPoint no se convierten cuando se produce un archivo de PDF. Si una transición de PowerPoint no tiene una transición equivalente en Acrobat, se sustituye una transición similar. Si hay varios efectos de animación en la misma diapositiva, se utiliza un solo efecto. Las transiciones de página y los desplazamientos de viñetas se convierten.
+**[!UICONTROL Crear archivo compatible con PDF/A-1a]**: Fuerza el uso de la configuración de PDF/A-1b:2005 RGB Adobe PDF. Algunas funciones de PowerPoint no se convierten al producir un archivo de PDF. Si una transición de PowerPoint no tiene una transición equivalente en Acrobat, se sustituye una transición similar. Si hay varios efectos de animación en la misma diapositiva, se utiliza un solo efecto. Las transiciones de página y los desplazamientos de viñetas se convierten.
 
 ## Configuración del proyecto de Microsoft (solo Windows) {#microsoft-project-settings-windows-only}
 
@@ -480,14 +491,14 @@ Estas opciones determinan cómo se convierten los archivos de Microsoft Project.
 
 1. **[!UICONTROL Convertir información del documento]**: agrega información del documento desde el cuadro de diálogo Propiedades del archivo de origen, incluidos título, asunto, autor, palabras clave, administrador, compañía, categoría y comentarios. Esta opción está seleccionada de forma predeterminada.
 1. **[!UICONTROL Adjuntar archivo de Source a Adobe PDF]**: agrega el archivo de origen al archivo de PDF como datos adjuntos.
-1. **[!UICONTROL Crear archivo compatible con PDF PDF/A-1a]**: Fuerza el uso de la configuración Adobe PDF de RGB/A-1b:2005.
+1. **[!UICONTROL Crear archivo compatible con PDF/A-1a]**: Fuerza el uso de la configuración de PDF/A-1b:2005 RGB Adobe PDF.
 1. **[!UICONTROL Ejecutar macros automáticamente]**: ejecuta todas las macros del documento de Microsoft Project (como una macro que inserta la hora actual) antes de convertir el documento.
 
 ## Configuración de Microsoft Word (sólo Windows) {#microsoft-word-settings-windows-only}
 
 Estas opciones determinan cómo se convierten los archivos de Microsoft Word. Para obtener instrucciones sobre cómo obtener acceso a estas opciones, vea [Crear o editar la configuración de tipo de archivo](#create-or-edit-file-type-settings).
 
-**[!UICONTROL Probar OpenOffice como conversor alternativo]**: Cuando se selecciona esta opción y una conversión con Microsoft Word falla o alcanza el límite de tiempo de espera especificado, el PDF Generator intenta la conversión mediante OpenOffice. Si la conversión mediante OpenOffice falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
+**[!UICONTROL Intentar OpenOffice como conversor alternativo]**: cuando se selecciona esta opción y una conversión con Microsoft Word falla o alcanza el límite de tiempo de espera especificado, PDF Generator intenta la conversión mediante OpenOffice. Si la conversión mediante OpenOffice falla o alcanza el límite de tiempo de espera especificado, se escribe una excepción en el archivo de registro.
 
 **[!UICONTROL Extensiones de nombre de archivo]**: Especifica las extensiones de nombre de archivo para los tipos de archivo, separados por comas, que se aceptan en esta aplicación. El valor predeterminado es `doc,docx,rtf,txt`. No incluya un punto antes o un espacio entre las extensiones.
 
@@ -499,9 +510,9 @@ Estas opciones determinan cómo se convierten los archivos de Microsoft Word. Pa
 
 **[!UICONTROL Convertir referencias cruzadas y tablas de contenido en vínculos]**: Convierte todas las referencias cruzadas y las entradas de tabla de contenido en vínculos. Esta opción está seleccionada de forma predeterminada.
 
-**[!UICONTROL Habilitar Accesibilidad Y Reflow Con Adobe PDF Etiquetado]**: Incrusta etiquetas en el archivo de PDF. Esta opción está seleccionada de forma predeterminada.
+**[!UICONTROL Habilitar Accesibilidad Y Reflujo Con Etiquetas Adobe PDF]**: Incrusta Etiquetas En El Archivo PDF. Esta opción está seleccionada de forma predeterminada.
 
-**[!UICONTROL Crear archivo compatible con PDF/A-1a]**: si se selecciona, se fuerza el uso de la configuración Adobe PDF de RGB de PDF/A-1b:2005.
+**[!UICONTROL Crear archivo compatible con PDF/A-1a]**: si se selecciona, se fuerza el uso de la configuración de PDF/A-1b:2005 RGB Adobe PDF.
 
 **[!UICONTROL Ejecutar macros automáticamente]**: ejecuta todas las macros del documento de Word (como una macro que inserta la hora actual) antes de convertir el documento.
 
@@ -541,9 +552,9 @@ Si un nombre de estilo de Microsoft Word incluye una coma (,) o un signo igual (
 
 **Convertir todas las páginas**: convierte todas las páginas del archivo de Visio.
 
-**Abrir el panel Capas cuando se ve en Adobe Acrobat**: Si las capas de Visio no están aplanadas, abre una ventana en la que puede especificar las capas que se conservan en el archivo PDF al abrirlas con Acrobat. Esta opción está seleccionada de forma predeterminada.
+**Abrir el panel Capas cuando se ve en Adobe Acrobat**: Si las capas de Visio no están aplanadas, abre una ventana en la que puede especificar las capas que se conservan en el archivo de PDF al abrirlo con Acrobat. Esta opción está seleccionada de forma predeterminada.
 
-**Crear archivo compatible con PDF/A-1b**: Fuerza el uso del PDF de configuración de Adobe PDF/A-1b:2005 (RGB).
+**Crear archivo compatible con PDF/A-1b**: Fuerza el uso de la configuración de Adobe PDF PDF/A-1b:2005 (RGB).
 
 **Convertir comentarios en comentarios de Adobe PDF**: Convierte las notas de Visio en comentarios de PDF.
 
@@ -565,25 +576,25 @@ Estas opciones determinan cómo se convierten los archivos de AutoCAD. Para obte
 
 **[!UICONTROL Acoplar siempre capas en Adobe PDF]**: Acoplar todas las capas de AutoCAD.
 
-**[!UICONTROL Abrir panel de capas cuando se ve en Adobe Acrobat]**: muestra la estructura de las capas cuando se abre el PDF en Acrobat.
+**[!UICONTROL Abrir panel de capas cuando se ve en Adobe Acrobat]**: muestra la estructura de capas cuando se abre PDF en Acrobat.
 
-**[!UICONTROL Convertir todos los diseños]**: incluye todos los diseños en el PDF.
+**[!UICONTROL Convertir todos los diseños]**: incluye todos los diseños en PDF.
 
-**[!UICONTROL Convertir espacio del modelo en 3D]**: cuando se selecciona, el diseño del espacio del modelo se convierte en una anotación 3D en el PDF.
+**[!UICONTROL Convertir espacio del modelo en 3D]**: cuando se selecciona, el diseño del espacio del modelo se convierte en una anotación 3D en PDF.
 
 **[!UICONTROL Agregar vínculos a Adobe PDF]**: si está seleccionado, conserva todos los vínculos.
 
 **[!UICONTROL Adjuntar archivo de Source a Adobe PDF]**: agrega el archivo de origen al archivo de PDF como datos adjuntos.
 
-**[!UICONTROL Crear archivo compatible con PDF/A-1b]**: Fuerza el uso de la configuración de Adobe PDF PDF/A-1b.
+**[!UICONTROL Crear archivo compatible con PDF/A-1b]**: Fuerza el uso de la configuración de Adobe PDF de PDF/A-1b.
 
-**[!UICONTROL Convertir todas las capas]**: De forma predeterminada, PDF Generator convierte sólo la capa predeterminada de archivos de AutoCAD en PDF en lugar de todas las capas del archivo. Seleccione esta opción para convertir todas las capas del archivo.
+**[!UICONTROL Convertir todas las capas]**: De forma predeterminada, PDF Generator convierte sólo la capa predeterminada de archivos de AutoCAD a PDF en lugar de todas las capas del archivo. Seleccione esta opción para convertir todas las capas del archivo.
 
 **[!UICONTROL Incrustar información de escala]**: conserva la información de escala de dibujo.
 
-**[!UICONTROL Convertir diseño actual]**: incluye solo el diseño actual en el PDF.
+**[!UICONTROL Convertir diseño actual]**: incluye solo el diseño actual en PDF.
 
-**[!UICONTROL Lista de diseños de AutoCAD que convertir]**: un dibujo de AutoCAD puede tener varios diseños. Cuando este cuadro está vacío, todos los diseños del plano de AutoCAD se incluyen en el documento de PDF generado. Para convertir selectivamente un subconjunto de los diseños, proporcione una lista de nombres de diseño separados por comas.
+**[!UICONTROL Lista de diseños de AutoCAD que convertir]**: un dibujo de AutoCAD puede tener varios diseños. Cuando este cuadro está vacío, todos los diseños del dibujo de AutoCAD se incluyen en el documento de PDF generado. Para convertir selectivamente un subconjunto de los diseños, proporcione una lista de nombres de diseño separados por comas.
 
 ## Configuración de OpenOffice {#openoffice-settings}
 
@@ -595,11 +606,11 @@ Estas opciones determinan cómo se convierten los archivos de OpenOffice. Para o
 
 **Intervalo**: convierta todas las páginas o especifique páginas concretas o un intervalo de páginas. Si no se define un intervalo de páginas, se convierten todas las páginas. Para exportar un intervalo de páginas, utilice el formato 3-6. Para exportar páginas únicas, utilice el formato 7;9;11. Puede exportar una combinación de intervalos de páginas y páginas únicas utilizando un formato como 3-6;8;10;12.
 
-**Orientación de página**: solo para archivos de texto sin formato, seleccione vertical u horizontal para el documento de PDF convertido.
+**Orientación de página**: para archivos de texto sin formato solamente, seleccione vertical u horizontal para el documento de PDF convertido.
 
-**Imágenes**: configure cómo se convierten las imágenes. Las imágenes de EPS con vistas previas incrustadas se exportan únicamente como vistas previas. Las imágenes de EPS sin vistas previas incrustadas se exportan como marcadores de posición vacíos. Con la compresión sin pérdidas de las imágenes, se conservan todos los píxeles. Con una compresión JPEG de las imágenes y un nivel de alta calidad, se conservan casi todos los píxeles. Con un nivel de baja calidad, se pierden algunos píxeles y se introducen artefactos, pero se reducen los tamaños de archivo.
+**Imágenes**: configure cómo se convierten las imágenes. Las imágenes de EPS con vistas previas incrustadas se exportan únicamente como vistas previas. Las imágenes de EPS sin vistas previas incrustadas se exportan como marcadores de posición vacíos. Con la compresión sin pérdidas de las imágenes, se conservan todos los píxeles. Con la compresión de imágenes de JPEG y un nivel de alta calidad, se conservan casi todos los píxeles. Con un nivel de baja calidad, se pierden algunos píxeles y se introducen artefactos, pero se reducen los tamaños de archivo.
 
-**General**: Habilite las opciones para convertir un PDF etiquetado o para exportar notas de documentos de Writer y FormCalc, efectos de transición de diapositivas Impress o páginas en blanco al PDF. Cuando se exportan las etiquetas, el tamaño del archivo puede aumentar en grandes cantidades. Algunas etiquetas exportadas son tablas de contenido, hipervínculos y controles.
+**General**: Habilite las opciones para convertir un PDF etiquetado o para exportar notas de documentos de Writer y FormCalc, efectos de transición de diapositivas Impress o páginas en blanco a PDF. Cuando se exportan las etiquetas, el tamaño del archivo puede aumentar en grandes cantidades. Algunas etiquetas exportadas son tablas de contenido, hipervínculos y controles.
 
 También puede especificar cómo se envían los formularios. Las opciones son XML, FDF, PDF o HTML. Esta configuración anula la propiedad URL del control que se establece en el documento. Solo se puede seleccionar una configuración común para el documento de PDF:
 
@@ -608,15 +619,15 @@ También puede especificar cómo se envían los formularios. Las opciones son XM
 * HTML
 * XML
 
-**PDF etiquetado**: permite crear PDF etiquetado a partir de documentos de OpenOffice. El PDF etiquetado contiene información sobre la estructura del contenido del documento. Esto puede resultar útil cuando se muestra el documento en dispositivos con distintas pantallas y cuando se utiliza software de lector de pantalla. También ayuda al software de accesibilidad a realizar varias operaciones útiles con el documento del PDF, como leer en voz alta el contenido del documento del PDF.
+**PDF etiquetado**: permite crear PDF etiquetado a partir de documentos de OpenOffice. El PDF etiquetado contiene información sobre la estructura del contenido del documento. Esto puede resultar útil cuando se muestra el documento en dispositivos con distintas pantallas y cuando se utiliza software de lector de pantalla. También ayuda al software de accesibilidad a realizar varias operaciones útiles con el documento de PDF, como leer en voz alta el contenido del documento de PDF.
 
 **Exportar notas**: convierte las notas de los documentos de OpenOffice en notas del documento de PDF generado.
 
-**Usar efectos de transición**: Convierte los efectos de transición de diapositivas de las presentaciones de OpenOffice en los correspondientes efectos de transición de PDF.
+**Usar efectos de transición**: Convierte los efectos de transición de diapositivas de las presentaciones de OpenOffice en los efectos de transición de PDF correspondientes.
 
 **Enviar Forms en formato**: crea un formulario de PDF que el usuario del documento de PDF puede rellenar e imprimir.
 
-**Exportar páginas en blanco insertadas automáticamente**: cuando se selecciona esta opción, las páginas en blanco insertadas automáticamente se incluyen en el documento de PDF generado. Esto resulta útil si va a imprimir un documento de PDF a doble cara. Por ejemplo, se puede configurar un libro para que la primera página del capítulo empiece siempre en una página impar. Si el capítulo anterior termina en una página impar, OpenOffice inserta una página par en blanco. Esta opción controla si se debe incluir esa página par en el PDF generado.
+**Exportar páginas en blanco insertadas automáticamente**: cuando se selecciona esta opción, las páginas en blanco insertadas automáticamente se incluyen en el documento de PDF generado. Esto resulta útil si imprime un documento de PDF a doble cara. Por ejemplo, se puede configurar un libro para que la primera página del capítulo empiece siempre en una página impar. Si el capítulo anterior termina en una página impar, OpenOffice inserta una página par en blanco. Esta opción controla si se debe incluir esa página par en el PDF generado.
 
 ## Otra configuración de la aplicación (sólo Windows) {#other-applications-settings-windows-only}
 
@@ -627,6 +638,6 @@ No puede cambiar la configuración de otras aplicaciones a través de la consola
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Es posible que sea necesario personalizar la compatibilidad con estos tipos de archivos. AEM Para obtener más información, vea &quot;Agregar compatibilidad con formatos de archivo nativos adicionales&quot; en [Programar con formularios de la lista de permitidos](https://www.adobe.com/go/learn_aemforms_programming_62).
+Es posible que sea necesario personalizar la compatibilidad con estos tipos de archivos. Para obtener más información, vea &quot;Agregar compatibilidad con formatos de archivo nativos adicionales&quot; en [Programar con formularios AEM](https://www.adobe.com/go/learn_aemforms_programming_62).
 
 Para obtener ayuda sobre cómo configurar una impresora de red PDFG, consulte [Configuración de una impresora de red PDFG (solo Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).

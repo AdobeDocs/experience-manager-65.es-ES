@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 6%
-
 ---
-
 
 # Desarrollo de SPA para AEM{#developing-spas-for-aem}
 
@@ -192,8 +206,8 @@ La arquitectura general de AEM, incluidos los entornos de desarrollo, creación 
 
   Aquí es donde se extrae el origen de la fuente de la aplicación SPA y del origen del componente.
 
-   * El generador clientlib de NPM crea una biblioteca de cliente a partir del proyecto de SPA.
-   * Esa biblioteca la toma Maven y la implementa el complemento de compilación de Maven junto con el componente al autor de AEM.
+  * El generador clientlib de NPM crea una biblioteca de cliente a partir del proyecto de SPA.
+  * Esa biblioteca la toma Maven y la implementa el complemento de compilación de Maven junto con el componente al autor de AEM.
 
 * **Autor de AEM**
 
@@ -201,11 +215,11 @@ La arquitectura general de AEM, incluidos los entornos de desarrollo, creación 
 
   Cuando se edita una SPA con el Editor de SPA en el entorno de creación:
 
-   1. La SPA solicita la HTML externa.
-   1. Se carga el CSS.
-   1. Se carga la JavaScript de la aplicación SPA.
-   1. Cuando se ejecuta la aplicación SPA, se solicita el JSON, lo que permite a la aplicación crear el DOM de la página, incluidos los atributos `cq-data`.
-   1. Estos atributos de `cq-data` permiten al editor cargar información de página adicional para saber qué configuraciones de edición están disponibles para los componentes.
+  1. La SPA solicita la HTML externa.
+  1. Se carga el CSS.
+  1. Se carga la JavaScript de la aplicación SPA.
+  1. Cuando se ejecuta la aplicación SPA, se solicita el JSON, lo que permite a la aplicación crear el DOM de la página, incluidos los atributos `cq-data`.
+  1. Estos atributos de `cq-data` permiten al editor cargar información de página adicional para saber qué configuraciones de edición están disponibles para los componentes.
 
 * **Publicación de AEM**
 
@@ -215,8 +229,8 @@ La arquitectura general de AEM, incluidos los entornos de desarrollo, creación 
 
   Dispatcher sirve como capa de almacenamiento en caché de AEM para los visitantes del sitio.
 
-   * Las solicitudes se procesan de forma similar a como se encuentran en el Autor de AEM; sin embargo, no hay ninguna solicitud de información de página porque solo la necesita el editor.
-   * JavaScript, CSS, JSON y HTML se almacenan en caché, lo que optimiza la página para una entrega rápida.
+  * Las solicitudes se procesan de forma similar a como se encuentran en el Autor de AEM; sin embargo, no hay ninguna solicitud de información de página porque solo la necesita el editor.
+  * JavaScript, CSS, JSON y HTML se almacenan en caché, lo que optimiza la página para una entrega rápida.
 
 >[!NOTE]
 >

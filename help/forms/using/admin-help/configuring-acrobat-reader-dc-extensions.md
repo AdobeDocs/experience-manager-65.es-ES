@@ -1,5 +1,5 @@
 ---
-title: Configuración de extensiones de Acrobat Reader DC para capturar datos
+title: Configurar extensiones de Acrobat Reader DC para capturar datos
 description: Obtenga información sobre cómo configurar extensiones de Acrobat Reader DC para capturar datos.
 contentOwner: admin
 content-type: reference
@@ -9,24 +9,42 @@ exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services,Reader Extensions
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 0%
-
+source-wordcount: '339'
+ht-degree: 1%
 ---
-
-# Configuración de extensiones de Acrobat Reader DC para capturar datos {#configuring-acrobat-reader-dc-extensions-for-data-capture}
+# Configurar extensiones de Acrobat Reader DC para capturar datos {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
 >[!NOTE]
 > 
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
-AEM Si los usuarios de la instalación de los formularios en la que está el usuario utilizan la funcionalidad de captura de datos de Content Services (Obsoleto), se recomienda crear una función con acceso de solo lectura para estos usuarios.
+Si los usuarios de la instalación de formularios AEM Forms utilizan la funcionalidad de captura de datos de Content Services (Obsoleto), se recomienda crear una función con acceso de solo lectura para estos usuarios.
 
-***Nota &#x200B;**: Adobe ® Servicios de contenido de LiveCycle® ES (obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Ver [documento de ciclo de vida del producto de Adobe](https://helpx.adobe.com/es/support/programs/eol-matrix.html).*
+***Nota &#x200B;**: Adobe® LiveCycle® Content Services ES (Obsoleto) es un sistema de administración de contenido instalado con LiveCycle. Permite a los usuarios diseñar, administrar, supervisar y optimizar procesos centrados en las personas. La compatibilidad con los servicios de contenido (obsoleto) finaliza el 31/12/2014. Ver [documento del ciclo de vida del producto Adobe](https://helpx.adobe.com/es/support/programs/eol-matrix.html).*
 
-La captura de datos requiere que asigne una función de usuario para acceder a SampleReaderExtensionsCredential. Puede asignar la función estándar Administrador de confianza. AEM Sin embargo, tenga en cuenta que esta función otorga a los usuarios no administrativos privilegios de administrador generales que controlan la configuración de confianza de PKI y administran las credenciales de PKI, lo que podría poner en peligro la seguridad de la instalación de los formularios de la en un entorno de producción. AEM Se recomienda que el administrador del sistema de formularios de cree una función que conceda solo acceso de solo lectura al Almacén de confianza y asigne esta nueva función a usuarios que no sean administradores y que utilicen la captura de datos.
+La captura de datos requiere que asigne una función de usuario para acceder a SampleReaderExtensionsCredential. Puede asignar la función estándar Administrador de confianza. Sin embargo, tenga en cuenta que esta función proporciona a los usuarios no administradores privilegios generales de administrador que controlan la configuración de confianza de PKI y administran las credenciales de PKI, lo que podría poner en peligro la seguridad de la instalación de los formularios AEM Forms en un entorno de producción. Se recomienda que el administrador del sistema de AEM Forms cree una función que conceda acceso de solo lectura al Almacén de confianza y asigne esta nueva función a usuarios que no sean administradores y que utilicen la captura de datos.
 
 ## Cree una función para los usuarios de captura de datos {#create-a-role-for-data-capture-users}
 

@@ -6,13 +6,29 @@ role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 23%
-
 ---
-
 # Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 | Versión | Vínculo del artículo |
@@ -67,9 +83,9 @@ La API de REST de Assets ofrece acceso de tipo [REST](https://en.wikipedia.org/w
 Utiliza el extremo `/api/assets` y requiere la ruta del recurso para acceder a él (sin el `/content/dam` inicial).
 
 * Esto significa que para acceder al recurso en:
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * Debe solicitar:
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -251,9 +267,9 @@ El uso puede variar en función de si utiliza un entorno de publicación o autor
 * Se recomienda encarecidamente que la creación esté enlazada a una instancia de autor ([&#x200B; y actualmente no hay medios para replicar un fragmento para publicarlo mediante esta API &#x200B;](/help/assets/assets-api-content-fragments.md#limitations)).
 * La entrega es posible desde ambos, ya que AEM sirve contenido solicitado solo en formato JSON.
 
-   * El almacenamiento y el envío desde una instancia de autor de AEM deben ser suficientes para las aplicaciones de la biblioteca de medios, detrás del cortafuegos.
+  * El almacenamiento y el envío desde una instancia de autor de AEM deben ser suficientes para las aplicaciones de la biblioteca de medios, detrás del cortafuegos.
 
-   * Para la entrega web activa, se recomienda una instancia de publicación de AEM.
+  * Para la entrega web activa, se recomienda una instancia de publicación de AEM.
 
 >[!CAUTION]
 >
@@ -319,18 +335,18 @@ Los siguientes códigos de estado se pueden ver en las circunstancias relevantes
 * **200** (OK)
 Devuelto cuando:
 
-   * solicitando un fragmento de contenido mediante `GET`
-   * se actualizó correctamente un fragmento de contenido mediante `PUT`
+  * solicitando un fragmento de contenido mediante `GET`
+  * se actualizó correctamente un fragmento de contenido mediante `PUT`
 
 * **201** (Creado)
 Devuelto cuando:
 
-   * se creó correctamente un fragmento de contenido mediante `POST`
+  * se creó correctamente un fragmento de contenido mediante `POST`
 
 * **404** (no encontrado)
 Devuelto cuando:
 
-   * el fragmento de contenido solicitado no existe
+  * el fragmento de contenido solicitado no existe
 
 * **500** (error interno del servidor)
 
@@ -343,28 +359,28 @@ Devuelto cuando:
 
   A continuación se enumeran los escenarios comunes en los que se devuelve este estado de error, junto con el mensaje de error (monoespacio) generado:
 
-   * La carpeta principal no existe (al crear un fragmento de contenido mediante `POST`)
-   * No se proporcionó ningún modelo de fragmento de contenido (falta cq:model), no se puede leer (debido a una ruta de acceso no válida o a un problema de permisos) o no hay ningún modelo de fragmento válido:
+  * La carpeta principal no existe (al crear un fragmento de contenido mediante `POST`)
+  * No se proporcionó ningún modelo de fragmento de contenido (falta cq:model), no se puede leer (debido a una ruta de acceso no válida o a un problema de permisos) o no hay ningún modelo de fragmento válido:
 
-      * `No content fragment model specified`
-      * `Cannot create a resource of given model '/foo/bar/qux'`
+    * `No content fragment model specified`
+    * `Cannot create a resource of given model '/foo/bar/qux'`
 
-   * No se ha podido crear el fragmento de contenido (potencialmente un problema de permisos):
+  * No se ha podido crear el fragmento de contenido (potencialmente un problema de permisos):
 
-      * `Could not create content fragment`
+    * `Could not create content fragment`
 
-   * No se han podido actualizar el título o la descripción:
+  * No se han podido actualizar el título o la descripción:
 
-      * `Could not set value on content fragment`
+    * `Could not set value on content fragment`
 
-   * No se pudieron establecer los metadatos:
+  * No se pudieron establecer los metadatos:
 
-      * `Could not set metadata on content fragment`
+    * `Could not set metadata on content fragment`
 
-   * El elemento de contenido no se ha podido encontrar o actualizar
+  * El elemento de contenido no se ha podido encontrar o actualizar
 
-      * `Could not update content element`
-      * `Could not update fragment data of element`
+    * `Could not update content element`
+    * `Could not update fragment data of element`
 
   Los mensajes de error detallados suelen devolverse de la siguiente manera:
 
@@ -388,7 +404,7 @@ Consulte aquí las referencias detalladas de la API:
 * [API de Adobe Experience Manager Assets: fragmentos de contenido](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [API HTTP de recursos](/help/assets/mac-api-assets.md)
 
-   * [Funciones disponibles](/help/assets/mac-api-assets.md#assets)
+  * [Funciones disponibles](/help/assets/mac-api-assets.md#assets)
 
 ## Recursos adicionales {#additional-resources}
 

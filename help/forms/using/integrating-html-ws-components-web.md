@@ -9,13 +9,33 @@ exl-id: bb4a500d-c34f-4586-83f0-ad7ef69b4fb1
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 94%
-
+source-wordcount: '342'
+ht-degree: 86%
 ---
-
 # Integración de componentes de AEM Forms Workspace en aplicaciones web {#integrating-aem-forms-workspace-components-in-web-applications}
 
 Puede utilizar los [componentes](/help/forms/using/description-reusable-components.md) de AEM Forms Workspace en su propia aplicación web. La siguiente implementación de ejemplo utiliza componentes de un paquete dev de AEM Forms Workspace instalado en una instancia CRX™ para crear una aplicación web. Personalice la siguiente solución para adaptarla a sus necesidades específicas. La implementación de ejemplo reutiliza los componentes `UserInfo`, `FilterList` y `TaskList` en un portal web.
@@ -41,7 +61,7 @@ Puede utilizar los [componentes](/help/forms/using/description-reusable-componen
        });
    ```
 
-1. Cree un nodo en /content con el nombre `sampleApplication` y el tipo `nt:unstructured`. En las propiedades de este nodo, agregue `sling:resourceType` de tipo Cadena y valor `sampleApplication`. En la Lista de control de acceso de este nodo, agregue una entrada para `PERM_WORKSPACE_USER` para permitir privilegios jcr:read. Además, en la Lista de control de acceso de `/apps/sampleApplication`, agregar una entrada para `PERM_WORKSPACE_USER` para permitir privilegios jcr:read.
+1. Cree un nodo en /content con el nombre `sampleApplication` y el tipo `nt:unstructured`. En las propiedades de este nodo, agregue `sling:resourceType` de tipo Cadena y valor `sampleApplication`. En la Lista de control de acceso de este nodo, agregue una entrada para `PERM_WORKSPACE_USER` que permita privilegios jcr:read. Además, en la Lista de control de acceso de `/apps/sampleApplication`, agregue una entrada para `PERM_WORKSPACE_USER` que permita privilegios jcr:read.
 1. En `/apps/sampleApplication/wscomponents/js/registry.js`, actualice las rutas de `/lc/libs/ws/` a `/lc/apps/sampleApplication/wscomponents/` para los valores de plantilla.
 1. En el archivo JSP de la página de inicio del portal, añada el siguiente código en `/apps/sampleApplication/GET.jsp` para incluir los componentes necesarios en el portal.
 

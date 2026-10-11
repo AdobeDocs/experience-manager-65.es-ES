@@ -1,5 +1,5 @@
 ---
-title: Configuración de credenciales para usarlas con extensiones de Acrobat Reader DC
+title: Configurar credenciales para usarlas con extensiones de Acrobat Reader DC
 description: Obtenga información sobre cómo configurar credenciales para utilizarlas con extensiones de Acrobat Reader DC.
 contentOwner: admin
 content-type: reference
@@ -9,31 +9,45 @@ exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 0%
-
+source-wordcount: '583'
+ht-degree: 2%
 ---
+# Configurar credenciales para usarlas con extensiones de Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
-# Configuración de credenciales para usarlas con extensiones de Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
+Para aplicar derechos de uso a documentos de PDF, configure formularios de AEM con una credencial válida para las extensiones de Acrobat Reader DC. Es posible que se haya configurado una credencial durante la instalación de los formularios AEM. Si no configuró la credencial de las extensiones de Acrobat Reader DC mientras ejecutaba el Administrador de configuración o si necesita importar una credencial nueva o de reemplazo, puede hacerlo usando las páginas de Administración del almacén de confianza.
 
-Para aplicar derechos de uso a documentos de PDF AEM, configure formularios de con una credencial válida para las extensiones de Acrobat Reader DC. AEM Es posible que se haya configurado una credencial durante la instalación de los formularios de. Si no configuró la credencial de las extensiones de Acrobat Reader DC al ejecutar el Administrador de configuración o si necesita importar una credencial nueva o de reemplazo, puede hacerlo mediante las páginas Administración del almacén de confianza.
+Si utiliza una credencial de evaluación, reemplácela por una credencial de producción al pasar al entorno de producción. Para actualizar una credencial caducada o de evaluaciones, elimine primero la credencial antigua de las extensiones de Acrobat Reader DC.
 
-Si utiliza una credencial de evaluación, reemplácela por una credencial de producción al pasar al entorno de producción. Para actualizar una credencial caducada o de evaluaciones, primero elimine la credencial antigua de extensiones de Acrobat Reader DC.
-
-AEM Para obtener información acerca de cómo obtener una credencial, vea [Preparar la instalación de formularios en un solo servidor (Single Server)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
+Para obtener información sobre cómo obtener una credencial, consulte [Preparación para instalar formularios de AEM (un solo servidor)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
 El almacén de confianza puede contener más de una credencial de extensiones de Acrobat Reader DC. Designe una de esas credenciales como credencial predeterminada de las extensiones de Reader. La credencial predeterminada se utiliza cuando un usuario de Workbench no puede determinar qué credencial utilizar durante la creación del proceso. Estas reglas se aplican a las credenciales predeterminadas:
 
 * Si importa una credencial de extensiones de Acrobat Reader DC y el almacén de confianza no contiene otras credenciales de extensiones de Acrobat Reader DC, se establece como predeterminada.
-* Si importa una credencial de extensiones de Acrobat Reader DC con la opción predeterminada seleccionada, el tipo predeterminado se elimina de una credencial predeterminada existente. La credencial importada se convierte en la predeterminada.
-* No puede eliminar una credencial de extensiones de Acrobat Reader DC predeterminada. Para eliminar la credencial predeterminada, primero establezca otra credencial como predeterminada. Una excepción a esta regla es que si solo hay una credencial, puede eliminarla aunque sea la predeterminada.
+* Si importa una credencial de extensiones de Acrobat Reader DC con la opción predeterminada seleccionada, el tipo predeterminado se quita de una credencial predeterminada existente. La credencial importada se convierte en la predeterminada.
+* No puede eliminar una credencial predeterminada de extensiones de Acrobat Reader DC. Para eliminar la credencial predeterminada, primero establezca otra credencial como predeterminada. Una excepción a esta regla es que si solo hay una credencial, puede eliminarla aunque sea la predeterminada.
 * No puede actualizar una credencial predeterminada de extensiones de Acrobat Reader DC.
 
 >[!NOTE]
 >
->También puede importar y eliminar credenciales mediante programación. AEM (Consulte [Programar con formularios de la lista de distribución de formularios &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es)).
+>También puede importar y eliminar credenciales mediante programación. (Consulte [Programar con formularios AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es)).
 
 ## Importar una credencial de extensiones de Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
 
@@ -42,9 +56,9 @@ El almacén de confianza puede contener más de una credencial de extensiones de
 > Asegúrese de que el usuario tenga privilegios de administrador para acceder a la consola de administrador.
 
 1. En la consola de administración, haga clic en Configuración > Administración del almacén de confianza > Credenciales locales.
-1. Haga clic en Importar y, en Tipo de almacén de confianza, seleccione Credenciales de extensiones de Acrobat Reader DC.
-1. (Opcional) Para indicar que esta credencial es la credencial predeterminada que se utiliza con las extensiones de Acrobat Reader DC, seleccione Predeterminada.
-1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de la credencial en las extensiones de Acrobat Reader DC. AEM Este alias también se utiliza para acceder a las credenciales mediante programación mediante el uso de la SDK de formularios de la.
+1. Haga clic en Importar y, en Tipo de almacén de confianza, seleccione Credencial de extensiones de Acrobat Reader DC.
+1. (Opcional) Para indicar que esta credencial es la predeterminada para usar con las extensiones de Acrobat Reader DC, seleccione Predeterminada.
+1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar de la credencial en las extensiones de Acrobat Reader DC. Este alias también se utiliza para acceder a las credenciales mediante programación utilizando AEM Forms SDK.
 
    >[!NOTE]
    >
@@ -54,7 +68,7 @@ El almacén de confianza puede contener más de una credencial de extensiones de
 
    Si aparece el mensaje de error &quot;No se pudieron importar las credenciales debido a un formato de archivo incorrecto o a una contraseña incorrecta&quot;, compruebe que la contraseña sea válida.
 
-## Eliminar una credencial de extensiones de Acrobat Reader DC {#remove-a-acrobat-reader-dc-extensions-credential}
+## Quitar una credencial de extensiones de Acrobat Reader DC {#remove-a-acrobat-reader-dc-extensions-credential}
 
 1. En la consola de administración, haga clic en Configuración > Administración del almacén de confianza > Credenciales locales.
 1. Seleccione la credencial y haga clic en Eliminar.

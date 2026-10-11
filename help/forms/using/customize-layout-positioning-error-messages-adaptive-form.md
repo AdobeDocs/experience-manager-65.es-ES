@@ -9,13 +9,29 @@ exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '530'
 ht-degree: 56%
-
 ---
-
 # Personalizar la presentación y la colocación de los mensajes de error de un formulario adaptable{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
 Puede personalizar la presentación y la posición de los mensajes de error de un formulario adaptable. Puede realizar las siguientes personalizaciones:
@@ -45,8 +61,7 @@ Con AEM Forms, ahora puede crear una temática y aplicarla al formulario. El edi
 
 Cree una temática con el Editor de temáticas para personalizar la presentación de todos los campos del formulario. Después de crear una temática, realice los siguientes pasos para aplicarla a un formulario:
 
-1. Abra el formulario en modo de edición. 
-
+1. Abra el formulario en modo de edición.
 1. En el modo de edición, seleccione un componente y, a continuación, ![field-level](assets/field-level.png) > **Contenedor de formulario adaptable** y ![cmppr](assets/cmppr.png).
 1. En la barra lateral, en Temática de formulario adaptable, seleccione la temática que ha creado con el Editor de temáticas.
 

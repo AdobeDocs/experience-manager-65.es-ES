@@ -1,17 +1,31 @@
 ---
 title: Estado de la función de la IU táctil
-description: Notas de la versión específicas de la  [!DNL Adobe Experience Manager] IU táctil.
+description: Notas de la versión específicas de la IU táctil de [!DNL Adobe Experience Manager].
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 98%
-
+source-wordcount: '1137'
+ht-degree: 97%
 ---
-
 # Estado de la función de la IU táctil {#touch-ui-feature-status}
 
 La [IU clásica de Adobe Experience Manager (AEM) 6.4 y posteriores ha quedado obsoleta](../release-notes/deprecated-removed-features.md). Adobe no está realizando más mejoras en la IU clásica y se recomienda a los usuarios utilizar las potentes nuevas funciones disponibles en la IU táctil.

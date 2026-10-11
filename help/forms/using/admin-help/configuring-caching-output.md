@@ -9,13 +9,27 @@ exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1463'
 ht-degree: 1%
-
 ---
-
 # Configurar el almacenamiento en caché para la salida  {#configuring-caching-for-output}
 
 >[!NOTE]
@@ -43,7 +57,7 @@ La salida admite dos modos de almacenamiento en caché:
 * incondicional
 * uso del punto de comprobación de caché
 
-Si cambia entre los modos de caché, reinicie el Servicio de salida para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
+Si cambia entre los modos de caché, reinicie el Servicio de salida para que el cambio surta efecto. Para reiniciar este servicio, usa Workbench o consulta [Iniciar o detener los servicios asociados con módulos de formularios AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
 El tiempo del punto de comprobación de caché se restablece automáticamente al cambiar entre modos.
 
@@ -83,7 +97,7 @@ Puede borrar el contenido de la caché en cualquier momento. Después de restabl
 
 ## Configuración de caché {#configuring-cache-settings}
 
-AEM Puede especificar la configuración que utiliza Output para el almacenamiento en caché, lo que puede optimizar el rendimiento del entorno de formularios de la aplicación de forma de.
+Puede especificar la configuración que utiliza Output para el almacenamiento en caché, lo que puede optimizar el rendimiento del entorno de los formularios AEM Forms.
 
 Para acceder a esta configuración, en la consola de administración, haga clic en Services > output.
 
@@ -93,7 +107,7 @@ Para acceder a esta configuración, en la consola de administración, haga clic 
 
 ### Especificar la configuración de caché global {#specifying-global-cache-settings}
 
-La configuración del área **Configuración de caché global** afecta a todos los tipos de cachés. Si cambia cualquiera de estas opciones, reinicie el Servicio de salida para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
+La configuración del área **Configuración de caché global** afecta a todos los tipos de cachés. Si cambia cualquiera de estas opciones, reinicie el Servicio de salida para que el cambio surta efecto. Para reiniciar este servicio, usa Workbench o consulta [Iniciar o detener los servicios asociados con módulos de formularios AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
 **Tamaño máximo de documento de caché (KB):** Tamaño máximo, en kilobytes, de un diseño de formulario u otro recurso que se puede almacenar en cualquier caché en memoria. Se trata de una configuración global que se aplica a todas las cachés en memoria. Si el recurso es mayor que este valor, no se almacena en caché. El valor predeterminado es 1024 kilobytes. Esta configuración no afecta a la caché del disco.
 
@@ -103,7 +117,7 @@ La configuración del área **Configuración de caché global** afecta a todos l
 
 Cuando el servicio Output recibe una solicitud de procesamiento, recupera el diseño de formulario del repositorio o de una fuente HTTP y lo almacena en caché. Este almacenamiento en caché mejora el rendimiento porque, para las solicitudes de procesamiento posteriores, el servicio Output recupera el diseño de formulario de la caché en lugar de hacerlo del repositorio.
 
-El servicio Output siempre almacena en caché los diseños de formulario en el disco. Si los diseños de formulario se almacenan en el servidor, esos archivos se consideran la caché de disco. El servicio Output también almacena en caché los diseños de formulario en la memoria, según la configuración del área **En caché de plantilla de memoria**. Si cambia cualquiera de estas opciones, reinicie el Servicio de salida para que el cambio surta efecto. AEM Para reiniciar este servicio, use Workbench o vea [Iniciar o detener los servicios asociados con módulos de formularios de la aplicación &#x200B;](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
+El servicio Output siempre almacena en caché los diseños de formulario en el disco. Si los diseños de formulario se almacenan en el servidor, esos archivos se consideran la caché de disco. El servicio Output también almacena en caché los diseños de formulario en la memoria, según la configuración del área **En caché de plantilla de memoria**. Si cambia cualquiera de estas opciones, reinicie el Servicio de salida para que el cambio surta efecto. Para reiniciar este servicio, usa Workbench o consulta [Iniciar o detener los servicios asociados con módulos de formularios AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
 **Tamaño de caché de configuración de plantilla:** Número máximo de objetos de configuración de plantilla que se guardarán en la memoria. El valor predeterminado es 100. Se recomienda establecer este valor en mayor o igual que el valor de Tamaño de caché de la plantilla. Esta configuración no afecta a la caché del disco.
 
@@ -125,7 +139,7 @@ Puede utilizar la siguiente configuración para controlar el almacenamiento en c
 
 **Deshabilitado:** El servicio Output no almacena en caché fragmentos o imágenes.
 
-**Intervalo de limpieza (segundos):** Especifica la frecuencia con la que el Servicio de salida quita los archivos de caché antiguos no válidos. El servicio Output no quita los archivos de caché válidos. Si cambia el intervalo de limpieza, reinicie el Servicio de salida para que el cambio surta efecto. AEM Para reiniciar este servicio, utilice Workbench o consulte Inicio o parada de los servicios asociados con módulos de formularios de la aplicación para obtener instrucciones.
+**Intervalo de limpieza (segundos):** Especifica la frecuencia con la que el Servicio de salida quita los archivos de caché antiguos no válidos. El servicio Output no quita los archivos de caché válidos. Si cambia el intervalo de limpieza, reinicie el Servicio de salida para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte Iniciar o detener los servicios asociados con módulos de formularios AEM Forms para obtener instrucciones.
 
 ## Consideraciones de clúster para cachés {#clustering-considerations-for-caches}
 
