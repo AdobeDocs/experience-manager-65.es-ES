@@ -47,7 +47,7 @@ Antes de configurar la autenticación de un explorador externo, asegúrese de qu
 
 >[!NOTE]
 >
-> La autenticación de explorador externo requiere una versión compatible de Adobe Acrobat o Adobe Acrobat Reader en el cliente. Consulte las [Notas de la versión de Acrobat (seguimiento continuo de marzo de 2026)](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix) para obtener detalles y actualizaciones de la versión.
+> La autenticación de explorador externo requiere una versión compatible de Adobe Acrobat o Adobe Acrobat Reader en el cliente. Consulte las [Notas de la versión de Acrobat (seguimiento continuo de marzo de 2026)](https://www.adobe.com/es/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix) para obtener detalles y actualizaciones de la versión.
 
 ### Vínculos de distribución de software para la revisión 2 de AEM Forms JEE 6.5.24.0 {#software-distribution-links}
 

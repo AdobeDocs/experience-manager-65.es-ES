@@ -32,7 +32,7 @@ ht-degree: 8%
 
 Consulte por los siguientes motivos si no puede abrir un formulario de PDF basado en XFA o un documento protegido por una directiva mediante Adobe LiveCycle Rights Management:
 
-* Los documentos protegidos por directivas y PDF forms basados en XFA requieren Adobe® Acrobat® o Adobe® Reader®, versión 8 y posteriores. Consulte [Descargas de Adobe](https://www.adobe.com/downloads.html) para descargar la última versión de Reader o Acrobat.
+* Los documentos protegidos por directivas y PDF forms basados en XFA requieren Adobe® Acrobat® o Adobe® Reader®, versión 8 y posteriores. Consulte [Descargas de Adobe](https://www.adobe.com/es/downloads.html) para descargar la última versión de Reader o Acrobat.
 * Navegadores como Mozilla Firefox y Google Chrome ofrecen un visor de PDF integrado que no admite PDF forms basado en XFA. Para ver PDF forms basado en XFA en estos exploradores, debe configurar para abrir archivos PDF con Acrobat o Reader. Para obtener más información, consulte PDF forms basado en XFA en Mozilla Firefox y Google Chrome.
 * Acrobat y Reader, en Microsoft® Windows®, le permiten configurar para abrir archivos PDF en modo de Vista protegida, lo que impide que se abran documentos protegidos por directivas y PDF forms basados en XFA. Asegúrese de que el modo Vista protegida de su Acrobat o Reader esté deshabilitado. Para obtener más información, consulte [Vista protegida (solo Windows)](https://helpx.adobe.com/es/acrobat/kb/end-of-support-acrobat-x-reader-x.html).
 * Si intenta acceder a documentos protegidos por directivas o PDF forms basados en XFA en su dispositivo móvil, tenga en cuenta lo siguiente:
