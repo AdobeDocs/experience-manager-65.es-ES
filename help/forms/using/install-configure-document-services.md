@@ -230,7 +230,7 @@ Si va a utilizar el servicio PDF Generator para convertir formatos de archivo na
 >* Adobe Acrobat, Microsoft® Word, Excel y PowerPoint solo están disponibles para Microsoft® Windows. Si está utilizando el sistema operativo basado en UNIX, instale OpenOffice para convertir archivos de texto enriquecido y archivos compatibles de Microsoft® Office en documentos PDF.
 >* Descarte todos los cuadros de diálogo que se muestran después de instalar Adobe Acrobat y el software de terceros en todos los usuarios configurados para utilizar el servicio PDF Generator.
 >* Inicie todo el software instalado al menos una vez. Descarte todos los cuadros de diálogo de todos los usuarios configurados para utilizar el servicio PDF Generator.
->* [Compruebe la fecha de caducidad de los números de serie de Adobe Acrobat](https://helpx.adobe.com/es/enterprise/kb/volume-license-expiration-check.html) y establezca una fecha para actualizar la licencia o [migrar su número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) en función de la fecha de caducidad.
+>* [Compruebe la fecha de caducidad de los números de serie de Adobe Acrobat](https://helpx.adobe.com/es/enterprise/kb/volume-license-expiration-check.html) y establezca una fecha para actualizar la licencia o [migrar su número de serie](https://www.adobe.com/es/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) en función de la fecha de caducidad.
 
 ### Instalar Adobe Acrobat Pro DC {#install-adobe-acrobat-pro-dc}
 
@@ -1533,9 +1533,9 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 <!--
 (Legacy Acrobat guidance — retained for reference only) License of Adobe Acrobat installed on AEM Forms Server expires
 
-* If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+* If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/es/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Use the following commands to generate prov.xml and reserialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
+   * Use the following commands to generate prov.xml and reserialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/es/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
 
       ```
 
@@ -1550,7 +1550,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
          
       ```
 
-* For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
+* For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/es/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
 
 (Legacy Acrobat guidance — retained for reference only) AEM Forms Server is in an offline or secure environment and internet is not available to activate Acrobat.
 
