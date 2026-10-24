@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 9eee0eef3e19a4787b7104f470d35b4c98fd53db
 workflow-type: tm+mt
-source-wordcount: '7612'
+source-wordcount: '7673'
 ht-degree: 18%
 ---
 # Notas de la versión del Service Pack de [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -64,7 +64,7 @@ Los fragmentos de contenido y la API de GraphQL también reciben mejoras de fiab
 
 * [Conversiones de PDF Generator con subprocesos múltiples](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): se agregó compatibilidad para ejecutar conversiones simultáneas de Microsoft Word (doc/docx) y Excel (xls/xlsx) cuando AEM Forms se ejecuta como un servicio de Windows con una sola cuenta de servicio configurada.
 
-* [Marcadores jerárquicos para PDF basados en XFA](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/pdf/using-designer.pdf): El servicio Output y AEM Forms Designer ahora generan jerarquías de marcadores estructuradas en PDF estáticos interactivos y planos basados en XFA. Los marcadores siguen a los niveles de encabezado (H1-H6) establecidos en las propiedades de accesibilidad de los cuadros de texto, por lo que las entradas H1-H6 se anidan bajo el elemento principal correcto en lugar de aparecer en paralelo.
+* [Marcadores jerárquicos para PDF basados en XFA](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf): El servicio Output y AEM Forms Designer ahora generan jerarquías de marcadores estructuradas en PDF estáticos interactivos y planos basados en XFA. Los marcadores siguen a los niveles de encabezado (H1-H6) establecidos en las propiedades de accesibilidad de los cuadros de texto, por lo que las entradas H1-H6 se anidan bajo el elemento principal correcto en lugar de aparecer en paralelo.
 
 * [Detalles de nivel de formulario en registros de transacciones JEE](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms en JEE registra detalles de nivel de formulario en `transaction_log.log` para cada transacción, junto con información de servicio y operación. Los administradores pueden correlacionar los datos de informes de transacciones con formularios específicos al analizar envíos, representaciones y conversiones. (FORMS-21574)
 
@@ -618,6 +618,8 @@ Fragmentos de contenido: la previsualización falla debido a la protección DoS 
 
 * **FORMS-23722** Cuando un formulario que contiene un campo de **Archivo adjunto** que usa `bindref` se envía a un flujo de trabajo de AEM con un paso de **Asignar tarea**, no se muestran los archivos adjuntos. Como resultado, no aparecen cuando la tarea se abre desde la Bandeja de entrada. Los archivos se guardan correctamente en el repositorio, pero la interfaz de usuario del paso Asignar tarea no muestra los archivos adjuntos.
 
+* **FORMS-28517** Cuando se adjunta un PDF firmado digitalmente a una tarea en AEM Forms JEE Workspace, la carga permanece atascada en el estado de carga o falla con un error &quot;Archivo no válido&quot;. Como resultado, no se pueden agregar a la tarea archivos adjuntos de PDF más grandes y firmados. Este problema se corrigió en una versión posterior. Para obtener una revisión de la versión actual/existente, póngase en contacto con el Soporte técnico de Adobe.
+
 #### Problemas conocidos con revisiones disponibles {#aem-forms-issues-with-hotfixes}
 
 Los siguientes problemas incluyen una revisión disponible para su descarga e instalación. Puede [descargar e instalar la revisión](/help/release-notes/aem-forms-hotfix.md) para resolver los siguientes problemas:
@@ -651,13 +653,13 @@ Los siguientes archivos zip contienen los documentos de texto que enumeran los p
 Estos sitios web solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga del producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
->* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/es/subscription/priority-product-update.html)
+>* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
