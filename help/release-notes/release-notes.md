@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 9eee0eef3e19a4787b7104f470d35b4c98fd53db
 workflow-type: tm+mt
-source-wordcount: '7612'
+source-wordcount: '7673'
 ht-degree: 18%
 ---
 # Notas de la versión del Service Pack de [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -617,6 +617,8 @@ Fragmentos de contenido: la previsualización falla debido a la protección DoS 
 ### Problemas conocidos de AEM Forms {#known-issues-aem-forms-6525}
 
 * **FORMS-23722** Cuando un formulario que contiene un campo de **Archivo adjunto** que usa `bindref` se envía a un flujo de trabajo de AEM con un paso de **Asignar tarea**, no se muestran los archivos adjuntos. Como resultado, no aparecen cuando la tarea se abre desde la Bandeja de entrada. Los archivos se guardan correctamente en el repositorio, pero la interfaz de usuario del paso Asignar tarea no muestra los archivos adjuntos.
+
+* **FORMS-28517** Cuando se adjunta un PDF firmado digitalmente a una tarea en AEM Forms JEE Workspace, la carga permanece atascada en el estado de carga o falla con un error &quot;Archivo no válido&quot;. Como resultado, no se pueden agregar a la tarea archivos adjuntos de PDF más grandes y firmados. Este problema se corrigió en una versión posterior. Para obtener una revisión de la versión actual/existente, póngase en contacto con el Soporte técnico de Adobe.
 
 #### Problemas conocidos con revisiones disponibles {#aem-forms-issues-with-hotfixes}
 
