@@ -21,7 +21,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 40%
@@ -42,7 +42,7 @@ Los fragmentos de experiencias de AEM se pueden exportar al espacio de trabajo p
 >
 >[Las integraciones de IMS ya están configuradas con S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 >
->Las configuraciones anteriores se realizaron con [credenciales de JWT que ahora están sujetas a desaprobación en Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Las configuraciones anteriores se realizaban con credenciales de JWT que ahora están sujetas a desaprobación en Adobe Developer Console.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Los fragmentos de experiencias de AEM se pueden exportar al espacio de trabajo p
 >Para obtener más información, consulte:
 >
 >* [Desarrollo de Adobe Target](https://developers.adobetarget.com/)
->* [Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=es)
+>* [Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 >
 
 ## Requisitos previos {#prerequisites}
@@ -70,7 +70,7 @@ Se requieren varias acciones:
    >
    >[Las integraciones de IMS ya están configuradas con S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
    >
-   >Las configuraciones anteriores se realizaron con [credenciales de JWT que ahora están sujetas a desaprobación en Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+   >Las configuraciones anteriores se realizaban con credenciales de JWT que ahora están sujetas a desaprobación en Adobe Developer Console.
 
 1. Los fragmentos de experiencias se exportan desde la instancia de autor de AEM, por lo que debe [configurar el externalizador de vínculos de AEM](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) en la instancia de autor para garantizar que todas las referencias dentro del fragmento de experiencia se externalicen para la entrega web.
 
@@ -109,7 +109,7 @@ Las opciones requeridas se pueden seleccionar en **Propiedades de página** de l
    >
    >Consulte el componente principal:
    >
-   >[Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=es)
+   >[Componentes principales: fragmentos de experiencias](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 
    En **Adobe Target** seleccione:
 
@@ -179,7 +179,7 @@ Para exportar un fragmento de experiencia de AEM a Target (después de especific
 
 ## Uso de los fragmentos de experiencias en Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Después de realizar las tareas anteriores, el fragmento de experiencia se muestra en la página Ofertas de Adobe Target. Consulte la [documentación específica de Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=es) para saber lo que puede lograr allí.
+Después de realizar las tareas anteriores, el fragmento de experiencia se muestra en la página Ofertas de Adobe Target. Consulte la [documentación específica de Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) para saber lo que puede lograr allí.
 
 >[!NOTE]
 >
