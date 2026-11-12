@@ -23,10 +23,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d777049ff8873ab60b286ec268fd544dc61fb038
+source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
 workflow-type: tm+mt
-source-wordcount: '7172'
-ht-degree: 16%
+source-wordcount: '7273'
+ht-degree: 15%
 ---
 # Notas de la versión del Service Pack de [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
 
@@ -365,7 +365,7 @@ Mejora: La integración de Adobe Analytics con Adobe Experience Manager Launch u
 
 #### Plataforma{#foundation-platform-6526}
 
-* El vínculo de Ayuda situado en el pie de página de la página de inicio de sesión de AEM ahora abre una página de trabajo. Anteriormente, el vínculo apuntaba a una dirección URL de marketing.adobe.com que ya no existe. La configuración del pie de página ahora usa la URL [Adobe Experience Manager documentation](https://experienceleague.adobe.com/es/docs/experience-manager). (NPR-44388)
+* El vínculo de Ayuda situado en el pie de página de la página de inicio de sesión de AEM ahora abre una página de trabajo. Anteriormente, el vínculo apuntaba a una dirección URL de marketing.adobe.com que ya no existe. La configuración del pie de página ahora usa la URL [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager). (NPR-44388)
 * Mejora: Una solicitud del cliente pedía la API de Microsoft Graph como alternativa a SMTP cuando AEM envía correos electrónicos. El ticket se ha resuelto como duplicado porque otro ticket ya implementa el flujo de API de Graph. SMTP con OAuth 2.0 sigue estando disponible para los clientes que necesitan dejar de utilizar la autenticación básica SMTP. (GRANITE-57478)
 
 * Las cadenas del cuadro de diálogo Permisos efectivos ahora se alinean correctamente en **Herramientas** > **General** > Explorador **Configuración**. Anteriormente, se mostraba una cadena sin conexión después de seleccionar una carpeta, hacer clic en Propiedades y hacer clic en Permisos efectivos. Las reglas de diseño actualizadas restauran la alineación. (CQ-4359166)
@@ -428,7 +428,7 @@ Mejora: El editor de páginas de IU táctil ahora procesa el árbol de contenido
 
 >[!NOTE]
 >
->El cuadro de diálogo de la IU del administrador de paquetes a veces se cierra durante la instalación del Service Pack. Adobe recomienda esperar a que los registros de errores dejen de cambiar antes de acceder a la implementación. Espere los registros específicos relacionados con la desinstalación del paquete de actualización antes de confirmar que la instalación se ha realizado correctamente. Este problema se produce en el explorador [!DNL Safari], pero puede ocurrir ocasionalmente en cualquier explorador.
+>El cuadro de diálogo de la interfaz de usuario del administrador de paquetes a veces se cierra durante la instalación del paquete de servicio. Adobe recomienda esperar a que los registros de errores dejen de cambiar antes de acceder a la implementación. Espere los registros específicos relacionados con la desinstalación del paquete de actualización antes de confirmar que la instalación se ha realizado correctamente. Este problema se produce en el explorador [!DNL Safari], pero puede ocurrir ocasionalmente en cualquier explorador.
 
 **Instalación automática**
 
@@ -594,13 +594,9 @@ Para garantizar el funcionamiento correcto, debe añadir las siguientes propieda
 
 ### Problema conocido de AEM Sites {#known-issues-aem-sites-6526}
 
-<!--
-* Known issue with a hotfix available for AEM Foundation {#known-issue-foundation-hotfix-6526}
+* **Problema conocido con una revisión disponible para AEM Foundation**
 
-  After you upgrade from an earlier service pack to Experience Manager 6.5.26.0, the OSGi version ordering for CRXDE Lite can prevent Experience Manager from selecting the intended bundle. An earlier service pack contains a higher CRXDE Lite version than the artifact that Service Pack 26 includes (`com.adobe.granite.crxde-lite-1.1.44-CQ651-B00024`).
-  
-  To resolve this issue, download and install the hotfix [cq-6.5.26-hotfix-GRANITE-76725.zip](https://artifactory.corp.adobe.com/ui/native/maven-aem-release-local/com/adobe/cq/hotfix/cq-6.5.26-hotfix-GRANITE-76725/1.0/cq-6.5.26-hotfix-GRANITE-76725.zip). The hotfix updates CRXDE Lite to `com.adobe.granite.crxde-lite-1.1.44-CQ651-B0026`, and it contains a version change only, with no code or functional changes. (GRANITE-76725)
--->
+  Después de actualizar desde un Service Pack anterior a Experience Manager 6.5.26.0, el pedido de versiones del paquete de CRXDE Lite puede impedir que Experience Manager seleccione el paquete deseado. Para corregir el pedido de la versión, instale Service Pack 26 y, a continuación, descargue e instale la revisión [`CRXDE Lite hotfix GRANITE-76725`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fgranite-76725%2Fcq-6.5.26-hotfix-GRANITE-76725-1.0.zip) desde Distribución de software. La revisión es una actualización de solo versión. No contiene código ni cambios funcionales. (GRANITE-76725)
 
 * Fragmentos de contenido: la previsualización falla debido a la protección DoS para un gran árbol de fragmentos. Consulte el [artículo de KB sobre las opciones de configuración predeterminadas del ejecutor de consultas de GraphQL](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
@@ -637,13 +633,13 @@ Los siguientes archivos zip contienen los documentos de texto que enumeran los p
 Estos sitios web solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga del producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
->* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/es/subscription/priority-product-update.html)
+>* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
