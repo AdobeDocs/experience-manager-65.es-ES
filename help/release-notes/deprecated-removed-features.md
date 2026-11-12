@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
 source-wordcount: '1909'
 ht-degree: 92%
@@ -51,7 +51,6 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | Área | Característica | Reemplazo | Versión (SP) |
 |---|---|---|---|
 | Sites | Compatibilidad con fragmentos de contenido en la API REST de AEM Assets | AEM 6.5 LTS SP2 proporciona OpenAPI modernas para la administración de modelos y fragmentos de contenido, por lo que los puntos finales de compatibilidad de fragmentos de contenido más antiguos en la API de REST de AEM Assets ya no se utilizan.<br>Adobe tiene la intención de mantener estos puntos finales más antiguos disponibles hasta que se anuncie el fin de la vida útil. Adobe no planea más mejoras para los puntos finales obsoletos. | 6.5.24 |
-| Sites | Resumen del texto del fragmento de contenido | No hay sustitución disponible. | |
 | Sites | [Editor de SPA](/help/sites-developing/spa-editor-deprecation.md) | Para casos de uso sin encabezado, utilice el [Editor universal](/help/sites-developing/universal-editor/introduction.md) para la edición visual o el [Editor de fragmentos de contenido](/help/sites-developing/universal-editor/introduction.md) para la edición basada en formularios. | 6.5.23 |
 | Sites | El servicio **Configuración de encuestas administradas por Adobe AEM**: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | El servicio **Importador de Sling de informes de AEM Analytics de Adobe**. Consulte Conectarse a Adobe Analytics y crear marcos de trabajo: [Configuración del intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | ActiveMQ en Adobe Experience Manager (AEM). ActiveMQ se utilizaba para la comunicación entre dos instancias de publicación de AEM. | Adobe recomienda que los clientes ahora utilicen un equilibrador de carga. | 6.5.18.0 |
@@ -87,6 +86,7 @@ Esta sección enumera las funciones que se han eliminado de AEM 6.5. Las version
 
 | Área | Característica | Reemplazo | Versión (SP) |
 |--- |--- |--- |--- |
+| Sites | Resumen del texto del fragmento de contenido | No hay sustitución disponible. | 6.5.26.0 |
 | Comercio | Se ha eliminado AEM CIF Classic. | Debe migrar a [AEM CIF](/help/commerce/cif/migration.md). Si todavía necesita CIF Classic, se ha creado un paquete de compatibilidad, [comuníquese con atención al cliente de Adobe](https://experienceleague.adobe.com/es/home?support-solution=General#support). | 6.5.22.0 |
 | Integración con [!DNL Experience Cloud] | Puede sincronizar sus recursos con [!DNL Experience Cloud] mediante una configuración a través de [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] se llamaba anteriormente [!DNL Adobe Experience Cloud]. | Si tiene alguna pregunta, [póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/home?support-solution=General#support). |  |
 | Analytics Activity Map | La versión de Activity Map que se incluye en AEM. | Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM. Use el [complemento ActivityMap proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es). |  |
