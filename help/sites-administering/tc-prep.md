@@ -20,10 +20,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+source-git-commit: 6fb39326f3a012bb7e774f65200feae143d2d30d
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 42%
+source-wordcount: '780'
+ht-degree: 36%
 ---
 # Preparación del contenido para su traducción{#preparing-content-for-translation}
 
@@ -64,6 +64,14 @@ Para crear la raíz de idioma, cree una página y utilice un código de idioma I
 * `<language-code>`El código de idioma admitido es un código de dos letras como se define en ISO-639-1, por ejemplo, `en`.
 
 * `<language-code>_<country-code>` o `<language-code>-<country-code>`El código de país admitido es un código de dos letras en minúsculas o mayúsculas, tal como se define en la norma ISO 3166, por ejemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
+
+>[!NOTE]
+>
+>Para las instalaciones de AEM que se ejecutan en Java 17 o Java 21, la asignación de configuración regional de Java predeterminada utiliza `he` para hebreo, `yi` para yiddish y `id` para indonesio en lugar de los códigos heredados `iw`, `ji` y `in`. Es posible que no se encuentren diccionarios de i18n existentes que utilicen códigos heredados.
+>
+>Use los códigos actuales para raíces de idioma y diccionarios i18n: reemplace `iw` por `he`, `ji` por `yi` y `in` por `id`.
+>
+>Si necesita conservar los códigos heredados como solución de compatibilidad, establezca la propiedad del sistema Java `java.locale.useOldISOCodes` en `true` al iniciar AEM, con el argumento JVM `-Djava.locale.useOldISOCodes=true`. La propiedad es de solo lectura al inicio del tiempo de ejecución de Java; cambiarla mientras se ejecuta AEM no tiene ningún efecto.
 
 Puede utilizar cualquiera de los dos formatos, según la estructura que haya elegido para el sitio global.  Por ejemplo, la página raíz de la copia en francés del sitio de Geometrixx tiene `fr` como propiedad Nombre. La propiedad Name se utiliza como nombre del nodo de página en el repositorio y, por lo tanto, determina la ruta de la página. (http://localhost:4502/content/geometrixx/fr.html)
 
