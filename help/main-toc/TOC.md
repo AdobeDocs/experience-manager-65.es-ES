@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilice la documentación de Adobe Experience Manager 6.5 para conocer cómo funciona y qué puede hacer el software por usted.
 breadcrumb-title: Guía del usuario
 user-guide-title: AEM 6.5
-source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
+source-git-commit: 1c210b464a0da67ebe016cb3e78b2e94cf90549b
 workflow-type: tm+mt
-source-wordcount: '8303'
+source-wordcount: '8304'
 ht-degree: 95%
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 95%
 + Notas de la versión {#release-notes}
   + [Notas de la versión](/help/release-notes/release-notes.md)
   + Notas de la versión anteriores {#service-pack}
+    + [6.5.25](/help/release-notes/previous/6-5-25.md)
     + [6.5.24](/help/release-notes/previous/6-5-24.md)
     + [6.5.23](/help/release-notes/previous/6-5-23.md)
     + [6.5.22](/help/release-notes/previous/6-5-22.md)
@@ -446,7 +447,7 @@ ht-degree: 95%
     + [[!DNL Assets] y MediaLibrary](/help/assets/medialibrary.md)
     + [Usar rasterizador de PDF](/help/assets/aem-pdf-rasterizer.md)
     + [Configurar restricciones de carga](/help/assets/configuring-asset-upload-restrictions.md)
-    + [Integración de [!DNL Experience Manager] y  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+    + [Integración de [!DNL Experience Manager] y  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
     + [Integrar con  [!DNL InDesign Server]](/help/assets/indesign.md)
     + [Digital Rights Management para recursos](/help/assets/drm.md)
     + [Uso del paquete de demostración para perspectivas de recursos](/help/assets/use-demo-package-for-asset-insights.md)
@@ -569,7 +570,7 @@ ht-degree: 95%
       + [Configurar la caché de los formularios adaptables](/help/forms/using/configure-adaptive-forms-cache.md)
       + [Configurar AEM DS](/help/forms/using/configuring-the-processing-server-url.md)
       + [Configurar el planificador de sincronización](/help/forms/using/configure-synchronization-scheduler.md)
-      + [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/es_ES/AEMForms/6.1/SharePointConfig/index.html)
+      + [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
       + [Conectar AEM Forms con Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)
       + [Configurar AEM Forms para enviar datos de formulario a un proceso de AEM Forms en JEE](/help/forms/using/submit-form-data-livecycle-process.md)
       + [Aplicación de escritorio para AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
@@ -881,9 +882,9 @@ ht-degree: 95%
     + [Proteger un documento en nombre de otro usuario](/help/forms/using/protect-document-on-behalf-of-another-user.md)
   + Forms Designer {#use-forms-designer}
     + [Ayuda de Forms Designer](/help/forms/using/forms-designer-help.md)
-    + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65_es)
-    + [Tutoriales de inicio rápido de Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_es)
-    + [Muestras de Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65_es)
+    + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
+    + [Tutoriales de inicio rápido de Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+    + [Muestras de Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
     + [Conceptos básicos de scripts Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_es)
     + [Referencia de scripts de Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_es)
     + [Referencia de FormCalc de Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_es)
