@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
+source-git-commit: b910e5ac8537f465d7cab85670de8557c2529a32
 workflow-type: tm+mt
-source-wordcount: '7273'
+source-wordcount: '7369'
 ht-degree: 15%
 ---
 # Notas de la versión del Service Pack de [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -48,7 +48,6 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | Fecha | 12 de noviembre de 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Descargar URL | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-
 <!-- REWRITE AI GENERATED SUMMARY OF NOTES BELOW FOR EACH NEW SERVICE PACK RELEASE -->
 
 Experience Manager 6.5.26.0 incluye nuevas características, mejoras clave solicitadas por el cliente y correcciones de errores. También incluye mejoras de accesibilidad, localización, rendimiento, estabilidad y seguridad basadas en la versión 6.5 disponible desde abril de 2019.
@@ -62,6 +61,13 @@ Los aspectos destacados del Service Pack 26 son los siguientes:
 * Fiabilidad. Corrige la contención del bloqueo de GraphQL de la dirección en las instancias de publicación, los despliegues de MSM, las acciones de la barra de herramientas del Editor de texto enriquecido y la activación de páginas en la IU clásica.
 * Analytics. La integración de Launch utiliza la API de Adobe Analytics 2.0 antes de que Analytics 1.4 finalice su vida útil el 31 de agosto de 2026.
 
+>[!IMPORTANT]
+>
+>Adobe ofrece Service Packs trimestrales para AEM 6.5 LTS, con una estrategia de correcciones de seguridad acumulativas para los paquetes de servicio admitidos, a fin de dar cabida a la frecuencia de actualizaciones en esta área.
+>
+> Para los que usan la versión clásica de AEM 6.5, el Service Pack 26 proporciona continuidad, mientras que la asistencia y el mantenimiento continúan a través del flujo de trabajo AEM 6.5 LTS. La asistencia estándar (febrero de 2027) y ampliada (febrero de 2028) cubre el Service Pack 26, que solo recibe correcciones de seguridad.
+>
+>Adobe ofrece recursos para ayudarle con la transición a AEM 6.5 LTS o AEM as a Cloud Service y utilizar las últimas innovaciones de IA para aumentar la productividad y optimizar para nuevas audiencias.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -87,26 +93,26 @@ Los aspectos destacados del Service Pack 26 son los siguientes:
 
 * El iframe de ContextHub en el editor de páginas ahora tiene un atributo de título descriptivo. Anteriormente, el elemento `contexthub-ui-iframe` no tenía título, por lo que los usuarios del lector de pantalla no pudieron identificarlo cuando el enfoque se movió a él. El título ahora aparece en todas las páginas y vistas del editor, incluido Lienzo, Carril lateral y Vista previa del diseño. (SITES-24650)
 * El botón Filtros del carril del filtro de la consola Sitios no agrega etiquetas visibles encima de los campos Búsquedas guardadas y Seleccionar directorio de búsqueda. Una auditoría informó de que las etiquetas aparecían cuando el foco salía del botón, cuando se presionaba una tecla o cuando se hacía clic en el botón. Las pruebas no reprodujeron el comportamiento, por lo que no fue necesario realizar ningún cambio. (SITES-24706)
-* Los vínculos de la consola Sitios y la navegación de la aplicación ahora se destacan con mayor claridad. El texto del vínculo cumplía la relación de contraste de 4.5:1, pero el grosor de fuente delgada y el tamaño pequeño dificultaban la visualización de los vínculos. Un mayor peso de fuente y un tamaño mayor facilitan la lectura del texto a los usuarios con deficiencias visuales. (SITES-24723)
+* Los vínculos de la consola Sitios y la navegación de la aplicación ahora son más visibles. El texto del vínculo cumplía la relación de contraste de 4.5:1, pero el grosor de fuente delgada y el tamaño pequeño dificultaban la visualización de los vínculos. Un mayor peso de fuente y un tamaño mayor facilitan la lectura del texto a los usuarios con problemas de visión. (SITES-24723)
 * Los lectores de pantalla ya no anuncian &quot;en blanco&quot; antes del contenido de información sobre herramientas en el modal Preferencias de usuario. Anteriormente, el icono de información usaba `role="tooltip"` con una referencia de `aria-labelledby`, por lo que NVDA leía primero una etiqueta vacía. El icono ahora utiliza `role="button"` y un `aria-label` de &quot;información&quot;, y el cambio se aplica a los componentes del formulario de Coral que comparten el patrón. (SITES-24732)
-* El botón Eliminar del modal Delete ahora cumple el requisito de contraste 4.5:1 de WCAG 1.4.3. Anteriormente, el texto en blanco sobre fondo rojo proporcionaba una relación de 3,9:1 después de que los autores seleccionaran un elemento y hicieran clic en Eliminar en la barra de herramientas de acciones. El color más oscuro del botón hace que la etiqueta sea legible para autores con deficiencias visuales. (SITES-24772)
+* El botón Eliminar del modal Delete ahora cumple el requisito de contraste 4.5:1 de WCAG 1.4.3. Anteriormente, el texto en blanco sobre fondo rojo proporcionaba una relación de 3,9:1 después de que los autores seleccionaran un elemento y hicieran clic en Eliminar en la barra de herramientas de acciones. El color más oscuro del botón hace que la etiqueta sea legible para autores con visión reducida. (SITES-24772)
 * El encabezado Referencias de la consola Sitios del carril Referencias ahora utiliza un elemento de encabezado en lugar de `div`. Anteriormente, los lectores de pantalla no anunciaban el texto como un encabezado, por lo que los usuarios no podían navegar por encabezados. El encabezado también aparece en la parte superior de la vista Referencias inicial. (SITES-24967)
 * El indicador de enfoque de los botones de acordeón en el carril del filtro de la consola Sites ahora cumple el requisito de contraste 3:1 de WCAG 1.4.11. Anteriormente, el indicador azul mostraba una relación de 2,3:1 en el fondo, lo que hacía que el botón de acordeón Etiquetas fuera difícil de encontrar para los usuarios del teclado. El color actualizado proporciona a los usuarios de teclado una señal de enfoque clara. (SITES-24986)
 * El indicador de enfoque de los botones de opción del carril del filtro de la consola Sites ahora cumple el requisito de contraste 3:1 de WCAG 1.4.11. Anteriormente, el indicador azul claro mostraba una relación de 1,7:1 contra el fondo. Los usuarios del teclado ahora pueden rastrear su posición en el acordeón de fecha Modificado. (SITES-24987)
 * El botón Seleccionar situado junto a los campos Ruta y Etiquetas en el carril lateral del Editor de páginas ya no utiliza un icono de casilla de verificación. Anteriormente, el icono sugería un conmutador, pero al activar el botón se abría un modal que contenía el Directorio de árbol. El botón Seleccionar ahora comunica correctamente su función, y lo mismo se aplica a los modelos Imagen y Teaser. (SITES-25210)
 * Los lectores de pantalla ahora omiten las imágenes en miniatura de los recursos en el carril lateral del Editor de páginas. Anteriormente, cada imagen llevaba un texto alternativo que duplicaba el nombre del recurso visible, por lo que los usuarios escuchaban el mismo texto dos veces. Un atributo `alt` vacío marca la imagen como decorativa y mantiene el nombre en el título de la tarjeta. (SITES-25213)
 * Los lectores de pantalla reconocen la lista Componentes del carril lateral como una lista. Una auditoría informó de los elementos como elementos no relacionados, pero la prueba confirmó que el marcado utiliza un elemento de lista y elementos de lista. No fue necesario ningún cambio de código. (SITES-25214)
-* Los iconos de información de los componentes del carril lateral del Editor de páginas son más grandes y fáciles de ver. Anteriormente, los iconos utilizaban el tamaño extra pequeño de unos 12 píxeles, que los usuarios con deficiencias visuales encontraban difícil de ver. Los iconos ahora utilizan el tamaño medio.(SITES-25217)
-* El indicador de enfoque del botón Muestra en el modal Anotación ahora se destaca del botón. Anteriormente, el indicador coincidía con el color de la muestra. Esto dificultaba a los usuarios del teclado ver qué botón estaba enfocado. Un desplazamiento proporciona al indicador suficiente contraste con el fondo y lo mantiene claramente visible. (SITES-25253)
+* Los iconos de información de los componentes del carril lateral del Editor de páginas son más grandes y fáciles de ver. Anteriormente, los iconos utilizaban el tamaño extra pequeño de unos 12 píxeles, que los usuarios con visión reducida encontraban difícil de ver. Los iconos ahora utilizan el tamaño medio.(SITES-25217)
+* El indicador de enfoque del botón Muestra en el modal Anotación ahora se distingue claramente del botón. Anteriormente, el indicador coincidía con el color de la muestra. Esto dificultaba a los usuarios del teclado ver qué botón estaba enfocado. Un desplazamiento proporciona al indicador suficiente contraste con el fondo y lo mantiene claramente visible. (SITES-25253)
 * El campo Fecha del modal Deformación de tiempo ya no lleva `aria-haspopup="dialog"`. Anteriormente, los lectores de pantalla anunciaban que el campo abría un cuadro de diálogo, aunque no fuera así. La eliminación del atributo proporciona a los usuarios del lector de pantalla información precisa. (SITES-25263)
 * Las etiquetas de texto de la barra de herramientas Demografía, como &quot;Recomendado&quot;, ahora cumplen el requisito de contraste 4.5:1 de WCAG 1.4.3. Anteriormente, el texto gris sobre un fondo gris oscuro proporcionaba una relación de 2,8:1 en el modo de vista previa. El texto más oscuro o más claro, según el fondo, hace que cada etiqueta sea legible. (SITES-25307)
 * El indicador de enfoque de los botones Commerce, Persona y Dispositivo de la barra de herramientas Demografía ahora cumple el requisito de contraste WCAG 1.4.11 de 3:1. Anteriormente, el indicador mostraba una relación de 1,9:1 con respecto al fondo de la barra de herramientas. Los usuarios del teclado ahora pueden rastrear su posición. (SITES-25308)
-* El texto que los autores escriben en los campos de texto de la barra de herramientas Demografía ahora cumple el requisito de contraste 4.5:1 de WCAG 1.4.3. Anteriormente, el texto blanco sobre fondo gris producía una relación de 2,9:1 en campos como, por ejemplo, el campo desplegable Perfil `displayName` en modo de vista previa. Los colores actualizados hacen que los valores escritos sean legibles para los autores con deficiencias visuales. (SITES-25318)
+* El texto que los autores escriben en los campos de texto de la barra de herramientas Demografía ahora cumple el requisito de contraste 4.5:1 de WCAG 1.4.3. Anteriormente, el texto blanco sobre fondo gris producía una relación de 2,9:1 en campos como, por ejemplo, el campo desplegable Perfil `displayName` en modo de vista previa. Los colores actualizados hacen que los valores escritos sean legibles para los autores con problemas de visión. (SITES-25318)
 * Los lectores de pantalla ahora leen la información del objeto de descripción cuando el enfoque alcanza las casillas de verificación en los cuadros de diálogo Teaser, Imagen y Carrusel. Anteriormente, el texto no estaba asociado mediante programación con la casilla de verificación, por lo que los usuarios no podían oír la instrucción. Un atributo `aria-describedby` ahora vincula cada casilla de verificación con su descripción. (SITES-25364)
 * Los lectores de pantalla ahora anuncian qué botón Formatos de párrafo está activo en el Editor de texto enriquecido. Anteriormente, al seleccionar una opción de la lista, la tecnología de asistencia no indicaba la opción actual. El botón activo ahora lleva `aria-current="true"`, y la opción Destino de hipervínculo activo lleva `aria-selected="true"`. (SITES-25367)
-* Los botones Ordenar del encabezado de tabla de la vista de lista de la consola Sitios ahora cumplen el requisito de contraste 3:1 de WCAG 1.4.11. Anteriormente, los iconos de color gris claro mostraban una relación de 1,5:1 frente al fondo del encabezado. El color más oscuro del icono hace que los botones sean visibles para los autores con deficiencias visuales. (SITES-25372)
+* Los botones Ordenar del encabezado de tabla de la vista de lista de la consola Sitios ahora cumplen el requisito de contraste 3:1 de WCAG 1.4.11. Anteriormente, los iconos de color gris claro mostraban una relación de 1,5:1 frente al fondo del encabezado. El color más oscuro del icono hace que los botones sean visibles para los autores con poca visión. (SITES-25372)
 * La pestaña Assets del carril lateral del Editor de páginas ya no se vuelve a cargar cuando el enfoque se mueve al campo Filtro. Anteriormente, al tabular en el campo vacío, se activaba una recarga y los lectores de pantalla anunciaban un mensaje de carga cada vez. La pestaña ahora solo se vuelve a cargar después de cambiar el valor del filtro y pulsar Intro. (SITES-25377)
-* El icono de muestra seleccionado en el modal Anotación ahora cumple el requisito de contraste WCAG 1.4.11 de 3:1. Anteriormente, la marca de verificación blanca mostraba una proporción tan baja como 1,58:1 frente a las muestras amarillas, naranjas y verdes. El icono actualizado ofrece a los autores con deficiencias visuales un indicador claro. (SITES-25523)
+* El icono de muestra seleccionado en el modal Anotación ahora cumple el requisito de contraste WCAG 1.4.11 de 3:1. Anteriormente, la marca de verificación blanca mostraba una proporción tan baja como 1,58:1 frente a las muestras amarillas, naranjas y verdes. El icono actualizado ofrece a los autores con visión reducida un indicador claro. (SITES-25523)
 * La lista Componentes del panel lateral del Editor de páginas ya no utiliza el foco del teclado. Los usuarios del teclado seleccionan y mueven componentes con los controles de la ventana de contenido, por lo que la lista del panel lateral repite la función. Una nota bajo el filtro de componentes informa a los usuarios del teclado dónde encontrar los controles. (SITES-40752)
 
 
@@ -404,11 +410,11 @@ Mejora: El editor de páginas de IU táctil ahora procesa el árbol de contenido
 
 * [!DNL Experience Manager] 6.5.26.0 requiere [!DNL Experience Manager] 6.5. Consulte [documentación de actualización](/help/sites-deploying/upgrade.md) para obtener instrucciones detalladas. <!-- UPDATE FOR EACH NEW RELEASE -->
 * La descarga del Service Pack está disponible en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) de Adobe.
-* En una implementación con MongoDB y varias instancias, instale [!DNL Experience Manager] 6.5.26.0 en una de las instancias de autor mediante el administrador de paquetes.<!-- UPDATE FOR EACH NEW RELEASE -->
+* En una implementación con MongoDB y varias instancias, instale [!DNL Experience Manager] 6.5.26.0 en una de las instancias de creación mediante el Administrador de paquetes.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe recomienda no quitar ni desinstalar el paquete [!DNL Experience Manager] 6.5.26.0. Para revertir si es necesario, cree una copia de seguridad de `crx-repository` antes de instalar el paquete. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe recomienda no eliminar ni desinstalar el paquete [!DNL Experience Manager] 6.5.26.0. Para revertir si es necesario, cree una copia de seguridad de `crx-repository` antes de instalar el paquete. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- FORMS For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
@@ -428,7 +434,7 @@ Mejora: El editor de páginas de IU táctil ahora procesa el árbol de contenido
 
 >[!NOTE]
 >
->El cuadro de diálogo de la interfaz de usuario del administrador de paquetes a veces se cierra durante la instalación del paquete de servicio. Adobe recomienda esperar a que los registros de errores dejen de cambiar antes de acceder a la implementación. Espere los registros específicos relacionados con la desinstalación del paquete de actualización antes de confirmar que la instalación se ha realizado correctamente. Este problema se produce en el explorador [!DNL Safari], pero puede ocurrir ocasionalmente en cualquier explorador.
+>El cuadro de diálogo de la interfaz de usuario del administrador de paquetes a veces se cierra durante la instalación del paquete de servicio. Adobe recomienda esperar a que los registros de errores dejen de actualizarse antes de acceder a la implementación. Espere los registros específicos relacionados con la desinstalación del paquete de actualización antes de confirmar que la instalación se ha realizado correctamente. Este problema se produce en el explorador [!DNL Safari], pero puede ocurrir ocasionalmente en cualquier explorador.
 
 **Instalación automática**
 
@@ -488,7 +494,7 @@ Para utilizar UberJar en un proyecto de Maven, consulte [cómo usar UberJar](/he
 
 >[!NOTE]
 >
->UberJar y los demás artefactos relacionados están disponibles en el repositorio de Maven Central, en lugar del repositorio Maven público de Adobe (`repo.adobe.com`). Se ha cambiado el nombre del archivo principal de UberJar a `uber-jar-<version>.jar`. Por lo tanto, no hay `classifier`, con `apis` como valor, para la etiqueta `dependency`.
+>UberJar y los demás artefactos relacionados están disponibles en el repositorio de Maven Central, en lugar del repositorio Maven público de Adobe (`repo.adobe.com`). Se ha cambiado el nombre del archivo principal de UberJar a `uber-jar-<version>.jar`. No hay `classifier`, con `apis` como valor, para la etiqueta `dependency`.
 
 
 
@@ -564,7 +570,7 @@ En Service Pack 13 y versiones posteriores, ha comenzado a aparecer el siguiente
 
   Una vez modificada la definición del índice, se requiere una reindexación (`reindex` = `true`).
 
-  Después de estos pasos, las consultas de GraphQL funcionan con una velocidad mejorada.
+  Después de estos pasos, las consultas de GraphQL funcionan más rápido.
 
 * Al intentar mover, eliminar o publicar fragmentos de contenido, sitios o páginas, hay un problema cuando se recuperan las referencias de fragmentos de contenido. La consulta en segundo plano falla; la funcionalidad no funciona.
 Para garantizar el funcionamiento correcto, debe añadir las siguientes propiedades al nodo de definición de índice `/oak:index/damAssetLucene` (no se requiere la reindexación):
