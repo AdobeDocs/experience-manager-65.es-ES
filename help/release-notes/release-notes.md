@@ -371,7 +371,7 @@ Mejora: La integración de Adobe Analytics con Adobe Experience Manager Launch u
 
 #### Plataforma{#foundation-platform-6526}
 
-* El vínculo de Ayuda situado en el pie de página de la página de inicio de sesión de AEM ahora abre una página de trabajo. Anteriormente, el vínculo apuntaba a una dirección URL de marketing.adobe.com que ya no existe. La configuración del pie de página ahora usa la URL [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager). (NPR-44388)
+* El vínculo de Ayuda situado en el pie de página de la página de inicio de sesión de AEM ahora abre una página de trabajo. Anteriormente, el vínculo apuntaba a una dirección URL de marketing.adobe.com que ya no existe. La configuración del pie de página ahora usa la URL [Adobe Experience Manager documentation](https://experienceleague.adobe.com/es/docs/experience-manager). (NPR-44388)
 * Mejora: Una solicitud del cliente pedía la API de Microsoft Graph como alternativa a SMTP cuando AEM envía correos electrónicos. El ticket se ha resuelto como duplicado porque otro ticket ya implementa el flujo de API de Graph. SMTP con OAuth 2.0 sigue estando disponible para los clientes que necesitan dejar de utilizar la autenticación básica SMTP. (GRANITE-57478)
 
 * Las cadenas del cuadro de diálogo Permisos efectivos ahora se alinean correctamente en **Herramientas** > **General** > Explorador **Configuración**. Anteriormente, se mostraba una cadena sin conexión después de seleccionar una carpeta, hacer clic en Propiedades y hacer clic en Permisos efectivos. Las reglas de diseño actualizadas restauran la alineación. (CQ-4359166)
@@ -639,13 +639,13 @@ Los siguientes archivos zip contienen los documentos de texto que enumeran los p
 Estos sitios web solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga del producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
->* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
+>* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/es/subscription/priority-product-update.html)
 
 
 
