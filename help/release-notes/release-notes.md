@@ -23,10 +23,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 383a6624329826101fc85861ee31d34ae7e59d71
+source-git-commit: 3e77f49e02762b555aa7acc821a8307daf2b27df
 workflow-type: tm+mt
-source-wordcount: '7975'
-ht-degree: 14%
+source-wordcount: '7369'
+ht-degree: 15%
 ---
 # Notas de la versión del Service Pack de [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
 
@@ -312,24 +312,27 @@ Ver carga útil ahora abre el editor de paquetes de la IU táctil para los flujo
 ### [!DNL Forms]{#forms-6526}
 
 * Nueva función: Compatibilidad con etiquetas de accesibilidad en listas de texto enriquecido. Anteriormente, las etiquetas de lista solo aparecían en el árbol de etiquetas de accesibilidad cuando la plantilla seguía una estructura específica. La solicitud se cerró como duplicado de un ticket relacionado que ofrece la función. (LC-3923202)
-* Mejora: AEM Forms agrega una API en tiempo de ejecución que selecciona el modo de exportación de datos heredado o predeterminado del Lenguaje de marcado extensible (XML) para cada solicitud. Anteriormente, solo el parámetro de máquina virtual Java (JVM) `-Dcom.adobe.fd.forms.export.legacy` controlaba el modo y se aplicaba la configuración a cada exportación en el servidor. Cuando una solicitud no utiliza la API, el parámetro JVM sigue controlando el comportamiento. (FORMS-23114, FORMS-22983)
-* Los archivos de formato de documento portátil (PDF) certificados con una firma de certificación invisible ya no se abren lentamente en Adobe Acrobat. La corrección que anteriormente se aplicaba solo a firmas de certificación visibles ahora también cubre las invisibles. (FORMS-25171)
-* En Forms adaptable basado en componentes de base, el componente Archivo adjunto ahora comprueba los archivos con la lista de tipos de archivo permitidos al cargar. Anteriormente, los archivos como `.xsd` pasaban el paso de carga incluso cuando la lista solo permitía `application/pdf`, `image/jpeg` y `image/png`. El formulario los rechazó únicamente al enviarlos con una alerta de archivo genérica no compatible. (FORMS-24295)
+
+<!--
+* Enhancement: AEM Forms adds a runtime API that selects the legacy or default Extensible Markup Language (XML) data export mode for each request. Previously, only the `-Dcom.adobe.fd.forms.export.legacy` Java Virtual Machine (JVM) parameter controlled the mode, and the setting applied to every export on the server. When a request does not use the API, the JVM parameter continues to control the behavior. (FORMS-23114, FORMS-22983)
+* Portable Document Format (PDF) files certified with an invisible certification signature no longer open slowly in Adobe Acrobat. The fix that earlier applied only to visible certification signatures now also covers invisible ones. (FORMS-25171)
+* In Foundation Components based Adaptive Forms, the File Attachment component now checks files against the allowed file types list at upload. Previously, files such as `.xsd` passed the upload step even when the list allowed only `application/pdf`, `image/jpeg`, and `image/png`. The form rejected them only on submit with a generic unsupported file alert. (FORMS-24295)
 
 #### Forms JEE {#forms-jee-6526}
 
-* Mejora: AEM Forms Document Security agrega compatibilidad con claves de paso (autenticación web o WebAuthn) para Adobe Acrobat (PPKLite). (FORMS-21762)
-* Mejora: El conector del Administrador de contenido de IBM ahora es compatible con el Administrador de contenido de IBM 8.7, ya que IBM dejó de ser compatible con las versiones 8.5 y 8.6. (FORMS-6827)
-* En Windows, el servicio ConvertPDF ya no se bloquea al convertir ciertos archivos de formato de documento portátil (PDF) en imágenes como TIFF. (FORMS-25796)
-* La autenticación de lenguaje de marcado de aserción de seguridad (SAML) ahora valida las firmas de aserción con el certificado de los metadatos del proveedor de identidad (IdP) cargados. Se produce un error de autenticación cuando cambia el certificado IdP y no se actualizan los metadatos. (FORMS-24679)
-* Después de actualizar a AEM Forms Service Pack 6.5.24.0, `server.log` y `error.log` ya no se rellenan con `[XMLSecurity]` mensajes WARN como &quot;Error al crear la fábrica del analizador seguro, cualquier analizador XML creado puede ser vulnerable a vulnerabilidades basadas en XML&quot;. Los mensajes aparecían varias veces por segundo, incluso en servidores inactivos, y consumían espacio en disco rápidamente. (FORMS-23717)
-* Los componentes del lado JEE ahora empaquetan Apache POI 5.4.0. Anteriormente, algunos paquetes seguían incluyendo Apache POI 3.17 y 3.9, que los análisis de seguridad marcaban después de actualizar a AEM Forms Service Pack 6.5.24.0. (FORMS-23678)
+* Enhancement: AEM Forms Document Security adds passkey (Web Authentication, or WebAuthn) support for Adobe Acrobat (PPKLite). (FORMS-21762)
+* Enhancement: The IBM Content Manager connector now supports IBM Content Manager 8.7, because IBM ended support for versions 8.5 and 8.6. (FORMS-6827)
+* On Windows, the ConvertPDF service no longer hangs when converting certain Portable Document Format (PDF) files to images such as TIFF. (FORMS-25796)
+* Security Assertion Markup Language (SAML) authentication now validates assertion signatures with the certificate from the uploaded identity provider (IdP) metadata. Authentication fails when the IdP certificate changes and the metadata is not updated. (FORMS-24679)
+* After upgrading to AEM Forms Service Pack 6.5.24.0, `server.log` and `error.log` no longer fill with `[XMLSecurity]` WARN messages such as "Secure parser factory creation failed, any XML parser created may be vulnerable to XML-based exploits." The messages appeared several times per second, even on idle servers, and consumed disk space quickly. (FORMS-23717)
+* Components on the JEE side now package Apache POI 5.4.0. Previously, some bundles still included Apache POI 3.17 and 3.9, which security scans flagged after upgrading to AEM Forms Service Pack 6.5.24.0. (FORMS-23678)
 
 #### Forms Designer {#forms-designer-6526}
 
-* Mejora: Forms Designer y el servicio de salida generan marcadores anidados de formato de documento portátil (PDF) desde las funciones de accesibilidad del nivel 1 hasta el nivel 6 de encabezado en archivos estáticos, interactivos y planos de PDF. El encabezado de Nivel 1 se convierte en el marcador de nivel superior, sin la entrada vacía o duplicada que los autores eliminaban manualmente en Adobe Acrobat. Para restaurar el comportamiento del marcador anterior, agregue `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` a un archivo XCI personalizado. (LC-3923490, LC-3922369)
-* Mejora: al seleccionar un marcador en un archivo estático interactivo o plano con formato de documento portátil (PDF), ahora se desplaza el encabezado correspondiente a la parte superior de la página. (LC-3923489, LC-3923289)
-* Mejora: Forms Designer puede agregar el elemento del marcador `extras` a objetos de texto que utilizan una función de accesibilidad de Nivel de encabezado 1 a Nivel de encabezado 6. Anteriormente, los autores tenían que agregar `<extras name="bookmark">` manualmente en XML Source para cada encabezado a fin de generar marcadores. (FORMS-24361)
+* Enhancement: Forms Designer and Output Service generate nested Portable Document Format (PDF) bookmarks from Heading Level 1 through Heading Level 6 accessibility roles in static interactive and flat PDF files. Heading Level 1 becomes the top-level bookmark, without the empty or duplicate entry that authors previously removed manually in Adobe Acrobat. To restore the earlier bookmark behavior, add `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` to a custom XCI file. (LC-3923490, LC-3922369)
+* Enhancement: Selecting a bookmark in a static interactive or flat Portable Document Format (PDF) file now scrolls the matching heading to the top of the page. (LC-3923489, LC-3923289)
+* Enhancement: Forms Designer can add the bookmark `extras` element to text objects that use a Heading Level 1 through Heading Level 6 accessibility role. Previously, authors had to add `<extras name="bookmark">` manually in XML Source for each heading to generate bookmarks. (FORMS-24361)
+-->
 
 
 ### Foundation {#foundation-6526}
@@ -382,7 +385,7 @@ Mejora: La integración de Adobe Analytics con Adobe Experience Manager Launch u
 
 #### Plataforma{#foundation-platform-6526}
 
-* El vínculo de Ayuda situado en el pie de página de la página de inicio de sesión de AEM ahora abre una página de trabajo. Anteriormente, el vínculo apuntaba a una dirección URL de marketing.adobe.com que ya no existe. La configuración del pie de página ahora usa la URL [Adobe Experience Manager documentation](https://experienceleague.adobe.com/es/docs/experience-manager). (NPR-44388)
+* El vínculo de Ayuda situado en el pie de página de la página de inicio de sesión de AEM ahora abre una página de trabajo. Anteriormente, el vínculo apuntaba a una dirección URL de marketing.adobe.com que ya no existe. La configuración del pie de página ahora usa la URL [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager). (NPR-44388)
 * Mejora: Una solicitud del cliente pedía la API de Microsoft Graph como alternativa a SMTP cuando AEM envía correos electrónicos. El ticket se ha resuelto como duplicado porque otro ticket ya implementa el flujo de API de Graph. SMTP con OAuth 2.0 sigue estando disponible para los clientes que necesitan dejar de utilizar la autenticación básica SMTP. (GRANITE-57478)
 
 * Las cadenas del cuadro de diálogo Permisos efectivos ahora se alinean correctamente en **Herramientas** > **General** > Explorador **Configuración**. Anteriormente, se mostraba una cadena sin conexión después de seleccionar una carpeta, hacer clic en Propiedades y hacer clic en Permisos efectivos. Las reglas de diseño actualizadas restauran la alineación. (CQ-4359166)
@@ -623,19 +626,21 @@ Para garantizar el funcionamiento correcto, debe añadir las siguientes propieda
 
 * Cuando se adjunta un PDF firmado digitalmente a una tarea en AEM Forms JEE Workspace, la carga permanece atascada en el estado de carga o falla con un error de &quot;Archivo no válido&quot;. Como resultado, no se pueden agregar a la tarea archivos adjuntos de PDF más grandes y firmados. Este problema se corrigió en una versión posterior. Para obtener una revisión de la versión, póngase en contacto con el Soporte técnico de Adobe. (FORMS-28517)
 
-* En IBM WebSphere, la carga de un archivo de Lenguaje de descripción de servicios web (WSDL) a través de la actividad Invocar servicio web en AEM Forms Workbench puede fallar con AEM Forms JEE 6.5.26.0 (Service Pack 26), como se indica en el parche 135. La misma operación funciona en JBoss. (FORMS-29972)
+<!--
+* On IBM WebSphere, loading a Web Services Description Language (WSDL) file through the Invoke Web Service activity in AEM Forms Workbench can fail with AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The same operation works on JBoss. (FORMS-29972)
 
-  **Solución alternativa:** Agregue un argumento Máquina virtual Java (JVM) en el servidor de aplicaciones WebSphere que hospeda AEM Forms JEE. Es una configuración del lado del servidor, no de cliente de Workbench.
+  **Workaround:** Add a Java Virtual Machine (JVM) argument on the WebSphere application server that hosts AEM Forms JEE. This is a server-side setting, not a Workbench client setting.
 
-  1. Abra la configuración de JVM para el servidor de aplicaciones WebSphere que aloja AEM Forms JEE.
-  1. Agregue el siguiente argumento a los argumentos JVM del servidor. Conservar los argumentos existentes.
+  1. Open the JVM configuration for the WebSphere application server that hosts AEM Forms JEE.
+  1. Add the following argument to the server JVM arguments. Keep the existing arguments.
 
      ```shell
      -Dcom.adobe.idp.dsc.webservice.loadSOAPClasses=true
      ```
 
-  1. Guarde la configuración y reinicie el servidor de aplicaciones WebSphere para que el argumento surta efecto.
-  1. Vuelva a conectarse desde AEM Forms Workbench y, a continuación, cargue el WSDL en la actividad Invocar servicio web de nuevo.
+  1. Save the configuration, and then restart the WebSphere application server so that the argument takes effect.
+  1. Reconnect from AEM Forms Workbench, and then load the WSDL in the Invoke Web Service activity again.
+-->
 
 #### Problemas conocidos con revisiones disponibles {#aem-forms-issues-with-hotfixes}
 
@@ -664,13 +669,13 @@ Los siguientes archivos zip contienen los documentos de texto que enumeran los p
 Estos sitios web solo están disponibles para los clientes. Si es cliente y necesita acceso, póngase en contacto con el administrador de cuentas de Adobe.
 
 * [Descarga del producto en licensing.adobe.com](https://licensing.adobe.com/)
-* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Póngase en contacto con Atención al cliente de Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] página de productos](https://business.adobe.com/es/products/experience-manager/adobe-experience-manager.html?lang=es)
+>* [[!DNL Experience Manager] página de productos](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html?lang=es)
 >* Documentación de [[!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/es/docs/experience-manager-65)
->* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/es/subscription/priority-product-update.html)
+>* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
