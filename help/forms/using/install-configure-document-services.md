@@ -22,10 +22,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1695a13865ac21e7827e36bccb67a2f877c42c1a
 workflow-type: tm+mt
-source-wordcount: '10825'
-ht-degree: 42%
+source-wordcount: '11350'
+ht-degree: 40%
 ---
 # Instalación y configuración de Document Services {#installing-and-configuring-document-services}
 
@@ -296,6 +296,10 @@ Estos pasos suponen que tiene los privilegios administrativos necesarios tanto e
 
 Estos pasos se deben realizar con acceso de *Administrador del sistema* a Adobe Admin Console.
 
+>[!NOTE]
+>
+>Los paquetes FRL suelen ejecutarse en un ciclo anual de renovación de suscripción (1 año). Cuando la licencia deba renovarse, cree un nuevo paquete FRL, elimine la licencia caducada del servidor de AEM Forms y, a continuación, implemente y active el nuevo paquete. Para ver los pasos detallados, consulte [La licencia de Adobe Acrobat caducó o se desactivó en AEM Forms Server](#troubleshooting).
+
 ###### Paso 1: Inicio de sesión en Adobe Admin Console
 
 1. Abra un explorador web y vaya a [Adobe Admin Console](https://adminconsole.adobe.com/)
@@ -445,6 +449,10 @@ Estos pasos suponen que tiene los privilegios administrativos necesarios tanto e
 ##### Preparación del paquete FRL (Adobe Admin Console)
 
 Estos pasos se deben realizar con acceso de *Administrador del sistema* a Adobe Admin Console.
+
+>[!NOTE]
+>
+>Los paquetes FRL suelen ejecutarse en un ciclo anual de renovación de suscripción (1 año). Cuando la licencia deba renovarse, cree un nuevo paquete FRL, elimine la licencia caducada del servidor de AEM Forms y, a continuación, implemente y active el nuevo paquete. Para ver los pasos detallados, consulte [La licencia de Adobe Acrobat caducó o se desactivó en AEM Forms Server](#troubleshooting).
 
 ###### Paso 1: Inicio de sesión en Adobe Admin Console
 
@@ -602,6 +610,10 @@ Estos pasos suponen que tiene los privilegios administrativos necesarios tanto e
 
 Estos pasos se deben realizar con acceso de *Administrador del sistema* a Adobe Admin Console.
 
+>[!NOTE]
+>
+>Los paquetes FRL suelen ejecutarse en un ciclo anual de renovación de suscripción (1 año). Cuando la licencia deba renovarse, cree un nuevo paquete FRL, elimine la licencia caducada del servidor de AEM Forms y, a continuación, implemente y active el nuevo paquete. Para ver los pasos detallados, consulte [La licencia de Adobe Acrobat caducó o se desactivó en AEM Forms Server](#troubleshooting).
+
 ###### Paso 1: Inicio de sesión en Adobe Admin Console
 
 1. Abra un explorador web y vaya a [Adobe Admin Console](https://adminconsole.adobe.com/)
@@ -758,6 +770,10 @@ Estos pasos suponen que tiene los privilegios administrativos necesarios tanto e
 ##### Preparación del paquete FRL (Adobe Admin Console)
 
 Estos pasos se deben realizar con acceso de *Administrador del sistema* a Adobe Admin Console.
+
+>[!NOTE]
+>
+>Los paquetes FRL suelen ejecutarse en un ciclo anual de renovación de suscripción (1 año). Cuando la licencia deba renovarse, cree un nuevo paquete FRL, elimine la licencia caducada del servidor de AEM Forms y, a continuación, implemente y active el nuevo paquete. Para ver los pasos detallados, consulte [La licencia de Adobe Acrobat caducó o se desactivó en AEM Forms Server](#troubleshooting).
 
 ###### Paso 1: Inicio de sesión en Adobe Admin Console
 
@@ -1558,6 +1574,52 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 +++
 -->
+
++++ Licencia de Adobe Acrobat caducada o desactivada en AEM Forms Server
+
+Cuando la licencia restringida de funciones (FRL) de Adobe Acrobat en el servidor de AEM Forms caduca o está desactivada, PDF Generator no puede utilizar Acrobat PDFMaker para convertir documentos de Microsoft® Office. La conversión vuelve a OpenOffice y, si OpenOffice no está configurado, falla con los siguientes errores:
+
+*Mensaje de error del convertidor principal:
+ALC-PDG-010-012-PDFMaker informó de un error al imprimir el documento.*
+
+*Mensaje de error del convertidor de reserva:
+ALC-PDG-011-030-El documento de OpenOffice enviado no se pudo convertir a PDF. OpenOffice no está instalado en este sistema o la variable de entorno OpenOffice_PATH no está establecida en la ruta correcta.*
+
+Para resolver el problema, compruebe el estado de la licencia y reactívela:
+
+1. Inicie sesión en el servidor de AEM Forms como administrador y abra el Símbolo del sistema como administrador.
+1. Vaya al directorio en el que ha extraído el paquete FRL. Por ejemplo, `C:\AcrobatFRL`.
+1. Ejecute el siguiente comando para comprobar el estado de la licencia:
+
+   ```cmd
+   adobe-licensing-toolkit.exe -l
+   ```
+
+1. Si la licencia ha caducado, sustituya el paquete FRL. Los paquetes FRL suelen ejecutarse en un ciclo anual de renovación de suscripción (1 año).
+   1. En [Adobe Admin Console](https://adminconsole.adobe.com/), cree y descargue un nuevo paquete FRL. Para obtener más información, consulte los pasos del 2 al 7 en [Instalar Adobe Acrobat Pro DC](#install-adobe-acrobat-pro-dc).
+   1. Ejecute el siguiente comando para eliminar la licencia caducada:
+
+      ```cmd
+      adobe-licensing-toolkit.exe --precondition --uninstall --all
+      ```
+
+      >[!NOTE]
+      >
+      >Para borrar todos los datos de licencia del servidor, ejecute `adobe-licensing-toolkit.exe --deactivate --all`.
+
+   1. Extraiga el nuevo paquete FRL en un directorio del servidor y vaya a ese directorio.
+
+1. Ejecute el siguiente comando para activar la licencia. Reemplace `ngl-preconditioning-data.json` con el nombre exacto (que distingue entre mayúsculas y minúsculas) del archivo JSON en su paquete FRL.
+
+   ```cmd
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+1. Abra Adobe Acrobat e instale las actualizaciones disponibles.
+1. Reinicie el servidor de AEM Forms para detener cualquier proceso PDFMaker de Acrobat en ejecución.
+1. Convierta un documento de Microsoft® Office a PDF para comprobar que PDF Generator utiliza Acrobat para la conversión.
+
++++
 
 +++ No se pueden convertir archivos de Word o Excel a PDF en Windows Server
 
