@@ -22,10 +22,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1695a13865ac21e7827e36bccb67a2f877c42c1a
 workflow-type: tm+mt
-source-wordcount: '10825'
-ht-degree: 42%
+source-wordcount: '11350'
+ht-degree: 40%
 ---
 # Instalación y configuración de Document Services {#installing-and-configuring-document-services}
 
@@ -230,7 +230,7 @@ Si va a utilizar el servicio PDF Generator para convertir formatos de archivo na
 >* Adobe Acrobat, Microsoft® Word, Excel y PowerPoint solo están disponibles para Microsoft® Windows. Si está utilizando el sistema operativo basado en UNIX, instale OpenOffice para convertir archivos de texto enriquecido y archivos compatibles de Microsoft® Office en documentos PDF.
 >* Descarte todos los cuadros de diálogo que se muestran después de instalar Adobe Acrobat y el software de terceros en todos los usuarios configurados para utilizar el servicio PDF Generator.
 >* Inicie todo el software instalado al menos una vez. Descarte todos los cuadros de diálogo de todos los usuarios configurados para utilizar el servicio PDF Generator.
->* [Compruebe la fecha de caducidad de los números de serie de Adobe Acrobat](https://helpx.adobe.com/es/enterprise/kb/volume-license-expiration-check.html) y establezca una fecha para actualizar la licencia o [migrar su número de serie](https://www.adobe.com/es/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) en función de la fecha de caducidad.
+>* [Compruebe la fecha de caducidad de los números de serie de Adobe Acrobat](https://helpx.adobe.com/es/enterprise/kb/volume-license-expiration-check.html) y establezca una fecha para actualizar la licencia o [migrar su número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) en función de la fecha de caducidad.
 
 ### Instalar Adobe Acrobat Pro DC {#install-adobe-acrobat-pro-dc}
 
@@ -295,6 +295,10 @@ Estos pasos suponen que tiene los privilegios administrativos necesarios tanto e
 ##### Preparación del paquete FRL (Adobe Admin Console)
 
 Estos pasos se deben realizar con acceso de *Administrador del sistema* a Adobe Admin Console.
+
+>[!NOTE]
+>
+>Los paquetes FRL suelen ejecutarse en un ciclo anual de renovación de suscripción (1 año). Cuando la licencia deba renovarse, cree un nuevo paquete FRL, elimine la licencia caducada del servidor de AEM Forms y, a continuación, implemente y active el nuevo paquete. Para ver los pasos detallados, consulte [La licencia de Adobe Acrobat caducó o se desactivó en AEM Forms Server](#troubleshooting).
 
 ###### Paso 1: Inicio de sesión en Adobe Admin Console
 
@@ -445,6 +449,10 @@ Estos pasos suponen que tiene los privilegios administrativos necesarios tanto e
 ##### Preparación del paquete FRL (Adobe Admin Console)
 
 Estos pasos se deben realizar con acceso de *Administrador del sistema* a Adobe Admin Console.
+
+>[!NOTE]
+>
+>Los paquetes FRL suelen ejecutarse en un ciclo anual de renovación de suscripción (1 año). Cuando la licencia deba renovarse, cree un nuevo paquete FRL, elimine la licencia caducada del servidor de AEM Forms y, a continuación, implemente y active el nuevo paquete. Para ver los pasos detallados, consulte [La licencia de Adobe Acrobat caducó o se desactivó en AEM Forms Server](#troubleshooting).
 
 ###### Paso 1: Inicio de sesión en Adobe Admin Console
 
@@ -602,6 +610,10 @@ Estos pasos suponen que tiene los privilegios administrativos necesarios tanto e
 
 Estos pasos se deben realizar con acceso de *Administrador del sistema* a Adobe Admin Console.
 
+>[!NOTE]
+>
+>Los paquetes FRL suelen ejecutarse en un ciclo anual de renovación de suscripción (1 año). Cuando la licencia deba renovarse, cree un nuevo paquete FRL, elimine la licencia caducada del servidor de AEM Forms y, a continuación, implemente y active el nuevo paquete. Para ver los pasos detallados, consulte [La licencia de Adobe Acrobat caducó o se desactivó en AEM Forms Server](#troubleshooting).
+
 ###### Paso 1: Inicio de sesión en Adobe Admin Console
 
 1. Abra un explorador web y vaya a [Adobe Admin Console](https://adminconsole.adobe.com/)
@@ -758,6 +770,10 @@ Estos pasos suponen que tiene los privilegios administrativos necesarios tanto e
 ##### Preparación del paquete FRL (Adobe Admin Console)
 
 Estos pasos se deben realizar con acceso de *Administrador del sistema* a Adobe Admin Console.
+
+>[!NOTE]
+>
+>Los paquetes FRL suelen ejecutarse en un ciclo anual de renovación de suscripción (1 año). Cuando la licencia deba renovarse, cree un nuevo paquete FRL, elimine la licencia caducada del servidor de AEM Forms y, a continuación, implemente y active el nuevo paquete. Para ver los pasos detallados, consulte [La licencia de Adobe Acrobat caducó o se desactivó en AEM Forms Server](#troubleshooting).
 
 ###### Paso 1: Inicio de sesión en Adobe Admin Console
 
@@ -927,7 +943,7 @@ Siga estos pasos:
 >
 >Deshabilitar el modo protegido es necesario en situaciones de automatización del lado del servidor como AEM Forms PDF Generator. Esta configuración solo debe cambiarse en entornos de servidor dedicados, no en escritorios de usuarios finales.
 
-Para obtener más información, consulte [Documentación de Adobe sobre el modo protegido](https://helpx.adobe.com/es/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Para obtener más información, consulte [Documentación de Adobe sobre el modo protegido](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1533,9 +1549,9 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 <!--
 (Legacy Acrobat guidance — retained for reference only) License of Adobe Acrobat installed on AEM Forms Server expires
 
-* If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/es/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+* If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Use the following commands to generate prov.xml and reserialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/es/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
+   * Use the following commands to generate prov.xml and reserialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
 
       ```
 
@@ -1550,7 +1566,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
          
       ```
 
-* For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/es/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
+* For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
 
 (Legacy Acrobat guidance — retained for reference only) AEM Forms Server is in an offline or secure environment and internet is not available to activate Acrobat.
 
@@ -1558,6 +1574,52 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 +++
 -->
+
++++ Licencia de Adobe Acrobat caducada o desactivada en AEM Forms Server
+
+Cuando la licencia restringida de funciones (FRL) de Adobe Acrobat en el servidor de AEM Forms caduca o está desactivada, PDF Generator no puede utilizar Acrobat PDFMaker para convertir documentos de Microsoft® Office. La conversión vuelve a OpenOffice y, si OpenOffice no está configurado, falla con los siguientes errores:
+
+*Mensaje de error del convertidor principal:
+ALC-PDG-010-012-PDFMaker informó de un error al imprimir el documento.*
+
+*Mensaje de error del convertidor de reserva:
+ALC-PDG-011-030-El documento de OpenOffice enviado no se pudo convertir a PDF. OpenOffice no está instalado en este sistema o la variable de entorno OpenOffice_PATH no está establecida en la ruta correcta.*
+
+Para resolver el problema, compruebe el estado de la licencia y reactívela:
+
+1. Inicie sesión en el servidor de AEM Forms como administrador y abra el Símbolo del sistema como administrador.
+1. Vaya al directorio en el que ha extraído el paquete FRL. Por ejemplo, `C:\AcrobatFRL`.
+1. Ejecute el siguiente comando para comprobar el estado de la licencia:
+
+   ```cmd
+   adobe-licensing-toolkit.exe -l
+   ```
+
+1. Si la licencia ha caducado, sustituya el paquete FRL. Los paquetes FRL suelen ejecutarse en un ciclo anual de renovación de suscripción (1 año).
+   1. En [Adobe Admin Console](https://adminconsole.adobe.com/), cree y descargue un nuevo paquete FRL. Para obtener más información, consulte los pasos del 2 al 7 en [Instalar Adobe Acrobat Pro DC](#install-adobe-acrobat-pro-dc).
+   1. Ejecute el siguiente comando para eliminar la licencia caducada:
+
+      ```cmd
+      adobe-licensing-toolkit.exe --precondition --uninstall --all
+      ```
+
+      >[!NOTE]
+      >
+      >Para borrar todos los datos de licencia del servidor, ejecute `adobe-licensing-toolkit.exe --deactivate --all`.
+
+   1. Extraiga el nuevo paquete FRL en un directorio del servidor y vaya a ese directorio.
+
+1. Ejecute el siguiente comando para activar la licencia. Reemplace `ngl-preconditioning-data.json` con el nombre exacto (que distingue entre mayúsculas y minúsculas) del archivo JSON en su paquete FRL.
+
+   ```cmd
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+1. Abra Adobe Acrobat e instale las actualizaciones disponibles.
+1. Reinicie el servidor de AEM Forms para detener cualquier proceso PDFMaker de Acrobat en ejecución.
+1. Convierta un documento de Microsoft® Office a PDF para comprobar que PDF Generator utiliza Acrobat para la conversión.
+
++++
 
 +++ No se pueden convertir archivos de Word o Excel a PDF en Windows Server
 
