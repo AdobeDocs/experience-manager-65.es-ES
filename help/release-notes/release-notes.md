@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
+source-wordcount: '8294'
 ht-degree: 13%
 ---
 # Notas de la versión del Service Pack de [!DNL Adobe Experience Manager] 6.5 {#aem-service-pack-release-notes}
@@ -625,8 +625,6 @@ Para garantizar el funcionamiento correcto, debe añadir las siguientes propieda
 * En WebLogic con AEM Forms en el paquete de servicio 136 de JEE, el paso `validateApplicationServerTopology` de Configuration Manager falla tanto en el modo GUI como en el modo CLI. Para aplicar la solución manual, expanda **4. Instale AEM Forms en el Service Pack de JEE** en las [instrucciones de instalación del Service Pack de JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack) y siga la solución de validación de la topología de WebLogic. (FORMS-30037)
 
 * Cuando un formulario que contiene un campo de **Archivo adjunto** que utiliza `bindref` se envía a un flujo de trabajo de AEM con un paso de **Asignar tarea**, no se muestran los archivos adjuntos. Como resultado, no aparecen cuando la tarea se abre desde la Bandeja de entrada. Los archivos se guardan correctamente en el repositorio, pero la interfaz de usuario del paso Asignar tarea no muestra los archivos adjuntos. (FORMS-23722)
-
-* Cuando se adjunta un PDF firmado digitalmente a una tarea en AEM Forms JEE Workspace, la carga permanece atascada en el estado de carga o falla con un error de &quot;Archivo no válido&quot;. Como resultado, no se pueden agregar a la tarea archivos adjuntos de PDF más grandes y firmados. Este problema se corrigió en una versión posterior. Para obtener una revisión de la versión, póngase en contacto con el Soporte técnico de Adobe. (FORMS-28517)
 
 * La importación de un archivo de LiveCycle (LCA) a través de la consola de administración o del código Java (EJB/SOA) puede provocar errores en las operaciones posteriores de PDF Generator (PDFG) y ConvertPDF. Este problema afecta a la pila de JDK y Oracle WebLogic 14c en Windows y Linux con una instancia de autor de AEM incrustada. (FORMS-30031)
 
